@@ -1,9 +1,11 @@
 ---
 title: _execvpe, _wexecvpe
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _execvpe
 - _wexecvpe
+- _o__execvpe
+- _o__wexecvpe
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-process-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -30,19 +33,19 @@ helpviewer_keywords:
 - _wexecvpe function
 - _execvpe function
 ms.assetid: c0c3c986-d9c0-4814-a96c-10f0b3092766
-ms.openlocfilehash: 49b7f4c55dd0c84807d6ed754ae9b45d63f37dcf
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: dd2e4c91affe211cc58a2f1c147646172f3f34c4
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443015"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81347653"
 ---
 # <a name="_execvpe-_wexecvpe"></a>_execvpe, _wexecvpe
 
-Yeni alt süreçler yükler ve çalıştırır.
+Yükler ve yeni alt işlemler çalışır.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,54 +64,56 @@ intptr_t _wexecvpe(
 
 ### <a name="parameters"></a>Parametreler
 
-*cmdname*<br/>
-Yürütülecek dosyanın yolu.
+*Cmdname*<br/>
+Dosyanın yürütülme yolu.
 
-*argv*<br/>
+*Argv*<br/>
 Parametrelere işaretçiler dizisi.
 
-*envp*<br/>
+*Envp*<br/>
 Ortam ayarlarına işaretçiler dizisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, bu işlevler çağıran işleme geri dönmez. -1 ' in dönüş değeri bir hatayı gösterir, bu durumda **errno** genel değişkeni ayarlanır.
+Başarılı olursa, bu işlevler arama işlemine dönmez. -1'in geri dönüş değeri bir hatayı gösterir ve bu durumda **errno** global değişkeni ayarlanır.
 
 |**errno** değeri|Açıklama|
 |-------------------|-----------------|
-|**E2BIG**|Bağımsız değişkenler ve ortam ayarları için gereken alan 32 KB 'yi aşıyor.|
-|**EACCES**|Belirtilen dosyada bir kilitleme veya paylaşım ihlali vardır.|
-|**EMFıLE**|Çok fazla dosya açık. (Çalıştırılabilir olup olmadığını anlamak için belirtilen dosyanın açılması gerekir.)|
-|**ENOENT**|Dosya veya yol bulunamadı.|
-|**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz bir yürütülebilir dosya biçimine sahip.|
-|**ENOMEM**|Yeni işlemi yürütmek için yeterli kullanılabilir bellek yok; kullanılabilir bellek bozulmuş; ya da çağıran işlemin doğru şekilde ayrılmadığını gösteren geçersiz bir blok var.|
+|**E2BIG**|Bağımsız değişkenler ve ortam ayarları için gereken alan 32 KB'yi aşıyor.|
+|**EACCES**|Belirtilen dosyada kilitleme veya paylaşma ihlali vardır.|
+|**EMFILE**|Çok fazla dosya açık. (Belirtilen dosya, yürütülebilir olup olmadığını belirlemek için açılmalıdır.)|
+|**Enoent**|Dosya veya yol bulunamadı.|
+|**ENOEXEC**|Belirtilen dosya yürütülemez veya geçersiz yürütülebilir dosya biçimine sahiptir.|
+|**ENOMEM**|Yeni işlemi yürütmek için yeterli bellek kullanılabilir değildir; kullanılabilir bellek bozuldu; veya arama işleminin doğru şekilde tahsis olmadığını gösteren geçersiz bir blok vardır.|
 
-Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer iade kodları hakkında daha fazla bilgi için [errno, _doserrno, _sys_errlist ve _sys_nerr'a](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri yeni bir işlem yükler ve yürütür ve komut satırı bağımsız değişkenlerine bir işaretçiler dizisi ve ortam ayarlarına işaretçiler dizisi geçirir. Bu işlevler, yürütülecek dosyayı bulmak için **Path** ortam değişkenini kullanır.
+Bu işlevlerin her biri yeni bir işlem yükler ve yürütür ve komut satırı bağımsız değişkenlerine bir dizi işaretçi ve ortam ayarlarına bir dizi işaretçi geçirir. Bu işlevler, yürütülecek dosyayı bulmak için **PATH** ortamı değişkenini kullanır.
 
-**_Execvpe** işlevleri parametrelerini doğrular. *Cmdname* null bir işaretçiyse veya *argv* boş bir işaretçi, boş bir diziye yönelik bir işaretçi veya ilk bağımsız değişken olarak boş bir dize içeren bir dizi işaretçisi Ise, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür. Hiçbir işlem başlatılmadı.
+**_execvpe** işlevleri parametrelerini doğrular. *Cmdname* null işaretçisi ise veya *argv* null işaretçisi, boş bir diziiçin işaretçi veya ilk bağımsız değişken olarak boş bir dize içeren bir dizi işaretçisiise, bu işlevler [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmedevam etmesine izin verilirse, bu işlevler **EINVAL** ve return -1 **için errno** ayarlayın. Hiçbir işlem başlatılmadı.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli başlık|İsteğe bağlı başlık|
+|İşlev|Gerekli başlık|İsteğe bağlı üstbilgi|
 |--------------|---------------------|---------------------|
-|**_execvpe**|\<Process. h >|\<errno. h >|
-|**_wexecvpe**|\<Process. h > veya \<wchar. h >|\<errno. h >|
+|**_execvpe**|\<process.h>|\<errno.h>|
+|**_wexecvpe**|\<process.h> \<veya wchar.h>|\<errno.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
-[_Exec, _Wexec işlevlerde](../../c-runtime-library/exec-wexec-functions.md)örneğe bakın.
+_exec, [_wexec İşlevler'deki](../../c-runtime-library/exec-wexec-functions.md)örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_exec, _wexec İşlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[abort](abort.md)<br/>
+[_exec, _wexec Fonksiyonlar](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[Iptal](abort.md)<br/>
 [atexit](atexit.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>

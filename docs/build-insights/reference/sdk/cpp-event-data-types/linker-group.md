@@ -1,6 +1,6 @@
 ---
 title: LinkerGroup sınıfı
-description: C++ BUILD Insights SDK LinkerGroup sınıfı başvurusu.
+description: C++ Build Insights SDK LinkerGroup sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 95b0dcc3a771ec07ee60185a79a5ddbc29434b5d
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: c59d62938e5bd7b839ad12a321a03510e708e0fd
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333211"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81324654"
 ---
 # <a name="linkergroup-class"></a>LinkerGroup sınıfı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`LinkerGroup` sınıfı, [Matcheventstack](../functions/match-event-stack.md) ve [Matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [Bağlayıcı](../event-table.md#linker) olaylarının gruplarıyla eşleştirmek için bunu kullanın.
+Sınıf `LinkerGroup` MatchEventStack ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [MatchEventStack](../functions/match-event-stack.md) [LINKER](../event-table.md#linker) etkinlik gruplarını eşleştirmek için kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-' In [EventGroup\<bağlayıcı\>](event-group.md) temel sınıftan devralınan üyeleri ile birlikte `LinkerGroup` sınıfı aşağıdaki üyeleri içerir:
+[OlayGrubu\<Bağlayıcı\> ](event-group.md) taban sınıfından devralınan üyelerle birlikte, `LinkerGroup` sınıf aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
 [LinkerGroup](#linker-group)
 
-## <a name="linker-group"></a>LinkerGroup
+## <a name="linkergroup"></a><a name="linker-group"></a>LinkerGroup
 
 ```cpp
 LinkerGroup(std::deque<Linker>&& group);
@@ -53,7 +53,7 @@ LinkerGroup(std::deque<Linker>&& group);
 
 ### <a name="parameters"></a>Parametreler
 
-*grup*\
-[Bağlayıcı](../event-table.md#linker) olayları grubu.
+*Grup*\
+BIR grup [LINKER](../event-table.md#linker) olayı.
 
 ::: moniker-end

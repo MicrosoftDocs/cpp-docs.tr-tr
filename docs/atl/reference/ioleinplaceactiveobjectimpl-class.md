@@ -1,5 +1,5 @@
 ---
-title: IOleInPlaceActiveObjectImpl sınıfı
+title: IOleInPlaceActiveObjectImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IOleInPlaceActiveObjectImpl
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - ActiveX controls [C++], communication between container and control
 - IOleInPlaceActiveObject, ATL implementation
 ms.assetid: 44e6cc6d-a2dc-4187-98e3-73cf0320dea9
-ms.openlocfilehash: f52638c8a28652cc958ebb3d774319ab37a3c46d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b39ba2845a5483444dac53d1616654e902969c77
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69495753"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81326593"
 ---
-# <a name="ioleinplaceactiveobjectimpl-class"></a>IOleInPlaceActiveObjectImpl sınıfı
+# <a name="ioleinplaceactiveobjectimpl-class"></a>IOleInPlaceActiveObjectImpl Sınıfı
 
-Bu sınıf, yerinde denetim ve kapsayıcısı arasındaki iletişimi yardım etmek için yöntemler sağlar.
+Bu sınıf, yerinde denetim ve kapsayıcı arasındaki iletişimi yardımcı olmak için yöntemler sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,28 +39,28 @@ class IOleInPlaceActiveObjectImpl
 
 #### <a name="parameters"></a>Parametreler
 
-*ŞI*<br/>
-Sınıfınız, öğesinden `IOleInPlaceActiveObjectImpl`türetilir.
+*T*<br/>
+Sınıfınızdan `IOleInPlaceActiveObjectImpl`türetilmiştir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[IOleInPlaceActiveObjectImpl:: ContextSensitiveHelp](#contextsensitivehelp)|Bağlama duyarlı yardımı etkinleştirilir. ATL uygulama E_NOTIMPL döndürür.|
-|[IOleInPlaceActiveObjectImpl:: Enablemodsuz](#enablemodeless)|Kalıcı olmayan iletişim kutularını izin vermez. ATL uygulamaları S_OK döndürür.|
-|[IOleInPlaceActiveObjectImpl:: GetWindow](#getwindow)|Bir pencere tutamacı alır.|
-|[IOleInPlaceActiveObjectImpl:: OnDocWindowActivate](#ondocwindowactivate)|Kapsayıcının belge penceresi etkinleştirildiğinde veya devre dışı bırakıldığında denetimi bilgilendirir. ATL uygulamaları S_OK döndürür.|
-|[IOleInPlaceActiveObjectImpl:: OnFrameWindowActivate](#onframewindowactivate)|Kapsayıcının en üst düzey çerçeve penceresi etkinleştirildiğinde veya devre dışı bırakıldığında denetimi bilgilendirir. ATL uygulamasının döndürdüğü|
-|[IOleInPlaceActiveObjectImpl:: ResizeBorder](#resizeborder)|Kenarlığını yeniden boyutlandırmak için gereken denetimi bilgilendirir. ATL uygulamaları S_OK döndürür.|
-|[IOleInPlaceActiveObjectImpl:: TranslateAccelerator](#translateaccelerator)|Kapsayıcıdan menü hızlandırıcının anahtar iletilerini işler. ATL uygulama E_NOTIMPL döndürür.|
+|[IOleInPlaceActiveObjectImpl::ContextSensitiveHelp](#contextsensitivehelp)|İçeriğe duyarlı yardımı sağlar. ATL uygulaması E_NOTIMPL döndürür.|
+|[IOleInPlaceActiveObjectImpl::EnableModeless](#enablemodeless)|Modeless iletişim kutularını etkinleştirin. ATL uygulaması S_OK döndürür.|
+|[IOleInPlaceActiveObjectImpl::GetWindow](#getwindow)|Pencere kolu alır.|
+|[IOleInPlaceActiveObjectImpl::OnDocWindowEtkinleştir](#ondocwindowactivate)|Kapsayıcının belge penceresi etkinleştirildiğinde veya devre dışı bırakıldığında denetimi haberver. ATL uygulaması S_OK döndürür.|
+|[IOleInPlaceActiveObjectImpl::OnFrameWindowEtkinleştir](#onframewindowactivate)|Kapsayıcının üst düzey çerçeve penceresi etkinleştirildiğinde veya devre dışı bırakıldığında denetimi haberver. ATL uygulaması döndürür|
+|[IOleInPlaceActiveObjectImpl::ResizeBorder](#resizeborder)|Sınırlarını yeniden boyutlandırmak için ihtiyaç duyduğu denetimi bildirir. ATL uygulaması S_OK döndürür.|
+|[IOleInPlaceActiveObjectImpl::TranslateAccelerator](#translateaccelerator)|Kapsayıcıdan menü hızlandırıcı anahtar iletilerini işler. ATL uygulaması E_NOTIMPL döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IOleInPlaceActiveObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceactiveobject) arabirimi bir yerinde denetim ve kapsayıcısı arasındaki iletişime yardımcı olur; Örneğin, denetimin ve kapsayıcının etkin durumunu iletişim kurmak ve denetimin kendisini yeniden boyutlandırmak için gereken denetimi bilgilendirmesi. Sınıfı `IOleInPlaceActiveObjectImpl` , hata ayıklama yapılarında döküm `IOleInPlaceActiveObject` cihazına bilgi `IUnknown` göndererek varsayılan bir uygulamasını sağlar ve destekler.
+[IOleInPlaceActiveObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceactiveobject) arabirimi yerinde denetim ve kapsayıcı arasındaki iletişimi yardımcı olur; örneğin, denetim ve kapsayıcının etkin durumunu iletmek ve kendisini yeniden boyutlandırmak için ihtiyaç duyduğu denetimi bildirmek. Sınıf `IOleInPlaceActiveObjectImpl` varsayılan bir `IOleInPlaceActiveObject` uygulama `IUnknown` sağlar ve hata ayıklama oluştururda dökümü aygıtına bilgi göndererek destekler.
 
-**Ilgili makaleler** ATL [öğreticisi](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
+**İlgili Makaleler** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -70,11 +70,11 @@ Sınıfınız, öğesinden `IOleInPlaceActiveObjectImpl`türetilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlctl. h
+**Üstbilgi:** atlctl.h
 
-##  <a name="contextsensitivehelp"></a>IOleInPlaceActiveObjectImpl:: ContextSensitiveHelp
+## <a name="ioleinplaceactiveobjectimplcontextsensitivehelp"></a><a name="contextsensitivehelp"></a>IOleInPlaceActiveObjectImpl::ContextSensitiveHelp
 
-Bağlama duyarlı yardımı etkinleştirilir.
+İçeriğe duyarlı yardımı sağlar.
 
 ```
 HRESULT ContextSensitiveHelp(BOOL fEnterMode);
@@ -86,11 +86,11 @@ E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [IOleWindow:: ContextSensitiveHelp](/windows/win32/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp) .
+Bkz. [IOleWindow::ContextSensitiveHelp](/windows/win32/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp) windows SDK içinde.
 
-##  <a name="enablemodeless"></a>IOleInPlaceActiveObjectImpl:: Enablemodsuz
+## <a name="ioleinplaceactiveobjectimplenablemodeless"></a><a name="enablemodeless"></a>IOleInPlaceActiveObjectImpl::EnableModeless
 
-Kalıcı olmayan iletişim kutularını izin vermez.
+Modeless iletişim kutularını etkinleştirin.
 
 ```
 HRESULT EnableModeless(BOOL fEnable);
@@ -102,11 +102,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [IOleInPlaceActiveObject:: Enablemodsuz](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless) .
+Bkz. [IOleInPlaceActiveObject::Windows SDK'da Modemodless'ı etkinleştirin.](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless)
 
-##  <a name="getwindow"></a>IOleInPlaceActiveObjectImpl:: GetWindow
+## <a name="ioleinplaceactiveobjectimplgetwindow"></a><a name="getwindow"></a>IOleInPlaceActiveObjectImpl::GetWindow
 
-Kapsayıcı, denetimin pencere tanıtıcısını almak için bu işlevi çağırır.
+Kapsayıcı, denetimin pencere tutamacını almak için bu işlevi çağırır.
 
 ```
 HRESULT GetWindow(HWND* phwnd);
@@ -114,13 +114,13 @@ HRESULT GetWindow(HWND* phwnd);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bazı kapsayıcılar, şu anda pencereli olsa bile, penceresiz olan bir denetimle çalışmayacaktır. ATL 'nin uygulamasında, `CComControl::m_bWasOnceWindowless` veri üyesi true ise, işlev E_FAIL döndürür. Aksi takdirde, \* *phwnd* null değilse, `GetWindow` denetim sınıfının veri üyesine `m_hWnd` *phwnd* atar ve s_ok döndürür.
+Bazı kapsayıcılar, şu anda pencereli olsa bile penceresiz olan bir denetimle çalışmaz. ATL'nin uygulamasında, `CComControl::m_bWasOnceWindowless` veri üyesi TRUE ise, işlev E_FAIL döndürür. Aksi \* takdirde, *phwnd* NULL `GetWindow` değilse, denetim sınıfının veri üyesine `m_hWnd` *phwnd* atar ve S_OK döndürür.
 
-Windows SDK için bkz. [IOleWindow:: GetWindow](/windows/win32/api/oleidl/nf-oleidl-iolewindow-getwindow) .
+Bkz. [IOleWindow::Windows](/windows/win32/api/oleidl/nf-oleidl-iolewindow-getwindow) SDK'daki GetWindow.
 
-##  <a name="ondocwindowactivate"></a>IOleInPlaceActiveObjectImpl:: OnDocWindowActivate
+## <a name="ioleinplaceactiveobjectimplondocwindowactivate"></a><a name="ondocwindowactivate"></a>IOleInPlaceActiveObjectImpl::OnDocWindowEtkinleştir
 
-Kapsayıcının belge penceresi etkinleştirildiğinde veya devre dışı bırakıldığında denetimi bilgilendirir.
+Kapsayıcının belge penceresi etkinleştirildiğinde veya devre dışı bırakıldığında denetimi haberver.
 
 ```
 HRESULT OnDocWindowActivate(BOOL fActivate);
@@ -132,11 +132,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [IOleInPlaceActiveObject:: OnDocWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate) .
+Bkz. [IOleInPlaceActiveObject::OnDocWindowWindows](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate) SDK'da etkinleştirin.
 
-##  <a name="onframewindowactivate"></a>IOleInPlaceActiveObjectImpl:: OnFrameWindowActivate
+## <a name="ioleinplaceactiveobjectimplonframewindowactivate"></a><a name="onframewindowactivate"></a>IOleInPlaceActiveObjectImpl::OnFrameWindowEtkinleştir
 
-Kapsayıcının en üst düzey çerçeve penceresi etkinleştirildiğinde veya devre dışı bırakıldığında denetimi bilgilendirir.
+Kapsayıcının üst düzey çerçeve penceresi etkinleştirildiğinde veya devre dışı bırakıldığında denetimi haberver.
 
 ```
 HRESULT OnFrameWindowActivate(BOOL fActivate);
@@ -148,11 +148,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [IOleInPlaceActiveObject:: OnFrameWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) .
+Bkz. [IOleInPlaceActiveObject::OnFrameWindowWindows](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) SDK'da etkinleştirin.
 
-##  <a name="resizeborder"></a>IOleInPlaceActiveObjectImpl:: ResizeBorder
+## <a name="ioleinplaceactiveobjectimplresizeborder"></a><a name="resizeborder"></a>IOleInPlaceActiveObjectImpl::ResizeBorder
 
-Kenarlığını yeniden boyutlandırmak için gereken denetimi bilgilendirir.
+Sınırlarını yeniden boyutlandırmak için ihtiyaç duyduğu denetimi bildirir.
 
 ```
 HRESULT ResizeBorder(
@@ -167,11 +167,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [IOleInPlaceActiveObject:: ResizeBorder](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder) .
+Bkz. [IOleInPlaceActiveObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder) SDK'da ResizeBorder.
 
-##  <a name="translateaccelerator"></a>IOleInPlaceActiveObjectImpl:: TranslateAccelerator
+## <a name="ioleinplaceactiveobjectimpltranslateaccelerator"></a><a name="translateaccelerator"></a>IOleInPlaceActiveObjectImpl::TranslateAccelerator
 
-Kapsayıcıdan menü hızlandırıcının anahtar iletilerini işler.
+Kapsayıcıdan menü hızlandırıcı anahtar iletilerini işler.
 
 ```
 HRESULT TranslateAccelerator(LPMSG lpmsg);
@@ -179,18 +179,18 @@ HRESULT TranslateAccelerator(LPMSG lpmsg);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem aşağıdaki dönüş değerlerini destekler:
+Bu yöntem aşağıdaki iade değerlerini destekler:
 
-İleti başarıyla çevrilmişse S_OK.
+İleti başarılı bir şekilde tercüme edilip S_OK.
 
-İleti çevrilmişse S_FALSE.
+İleti çevrilmediyse S_FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [IOleInPlaceActiveObject:: TranslateAccelerator](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) .
+Bkz. [IOleInPlaceActiveObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) SDK'da TranslateAccelerator.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
-[ActiveX denetimleri arabirimleri](/windows/win32/com/activex-controls-interfaces)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[ActiveX Arayüzleri Kontrol Eder](/windows/win32/com/activex-controls-interfaces)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

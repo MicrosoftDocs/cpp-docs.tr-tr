@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::marshal_context class [C++]
 ms.assetid: 241b0cf6-4ca4-4812-aaee-d671c11dc034
-ms.openlocfilehash: 146a0f7a7cc1402f7c28e6bf09fead1914c7c6be
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 110fe4abf7eb90b05e7feef563efa4882bed0fc6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80208539"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81332005"
 ---
 # <a name="marshal_context-class"></a>marshal_context Sınıfı
 
@@ -27,34 +27,34 @@ class marshal_context
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bağlam gerektiren veri dönüştürmeleri için `marshal_context` sınıfını kullanın. Hangi dönüştürmelerin bağlam gerektirdiğini ve hangi sıralama dosyasının dahil edileceğini hakkında daha fazla bilgi için bkz. [ C++sıralamaya genel bakış ](../dotnet/overview-of-marshaling-in-cpp.md). Bağlam kullandığınızda sıralama sonucu yalnızca `marshal_context` nesnesi yok edilene kadar geçerlidir. Sonucu korumak için verileri kopyalamanız gerekir.
+Bağlam `marshal_context` gerektiren veri dönüşümleri için sınıfı kullanın. Hangi dönüşümlerin bir bağlam gerektirdiği ve hangi dosyalama dosyasının eklenmesi gerektiği hakkında daha fazla bilgi için [bkz.](../dotnet/overview-of-marshaling-in-cpp.md) Bir bağlam kullandığınızda mareşallik sonucu yalnızca `marshal_context` nesne yok edilene kadar geçerlidir. Sonucunuzu korumak için verileri kopyalamanız gerekir.
 
-Aynı `marshal_context` çok sayıda veri dönüştürmesi için de kullanılabilir. Bağlam bu şekilde yeniden kullanmak, önceki sıralama çağrılarındaki sonuçları etkilemez.
+Aynı `marshal_context` durum çok sayıda veri dönüşümü için de kullanılabilir. Bağlamı bu şekilde yeniden kullanmak, önceki mareşal aramalarından elde edilen sonuçları etkilemez.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak oluşturucular
+### <a name="public-constructors"></a>Kamu yapıcılar
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |---------|-----------|
-|[marshal_context::marshal_context](#marshal-context)|Yönetilen ve yerel veri türleri arasında veri dönüştürme için kullanılacak bir `marshal_context` nesnesi oluşturur.|
-|[marshal_context::~marshal_context](#tilde-marshal-context)|`marshal_context` nesnesini yok eder.|
+|[marshal_context::marshal_context](#marshal-context)|Yönetilen ve `marshal_context` yerel veri türleri arasında veri dönüştürme için kullanılacak bir nesne oluşturuyor.|
+|[marshal_context::~marshal_context](#tilde-marshal-context)|Bir `marshal_context` nesneyi yok eder.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |---------|-----------|
-|[marshal_context::marshal_as](#marshal-as)|Yönetilen ve yerel bir veri türü arasında dönüştürmek için belirli bir veri nesnesi üzerinde sıralama gerçekleştirir.|
+|[marshal_context::marshal_as](#marshal-as)|Yönetilen ve yerel bir veri türü arasında dönüştürmek için belirli bir veri nesnesi üzerinde mareşal gerçekleştirir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi dosyası:** \<msclr\marshal.h >, \<msclr \ marshal_windows. h >, \<msclr \ marshal_cppstd. h > veya \<msclr \ marshal_atl. h >
+**Başlık dosyası:** \<msclr\marshal.h \<>, msclr\marshal_windows.h>, \<msclr\marshal_cppstd.h> veya \<msclr\marshal_atl.h>
 
-**Ad alanı:** msclr:: Interop
+**İsim alanı:** msclr::interop
 
-## <a name="marshal_contextmarshal_context"></a><a name="marshal-context"></a>marshal_context:: marshal_context
+## <a name="marshal_contextmarshal_context"></a><a name="marshal-context"></a>marshal_context:marshal_context
 
-Yönetilen ve yerel veri türleri arasında veri dönüştürme için kullanılacak bir `marshal_context` nesnesi oluşturur.
+Yönetilen ve `marshal_context` yerel veri türleri arasında veri dönüştürme için kullanılacak bir nesne oluşturuyor.
 
 ```cpp
 marshal_context();
@@ -62,15 +62,15 @@ marshal_context();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bazı veri dönüştürmeleri bir sıralama bağlamı gerektirir. Hangi çevirilerin bağlam gerektirdiğini ve uygulamanıza dahil etmeniz gereken dosyayı sıralama hakkında daha fazla bilgi için bkz. [ C++sıralamaya genel bakış ](../dotnet/overview-of-marshaling-in-cpp.md).
+Bazı veri dönüşümleri bir mareşal bağlamı gerektirir. Hangi çevirilerin bir bağlam gerektirdiği ve uygulamanıza hangi dosyalama dosyasını eklemeniz gerektiği hakkında daha fazla bilgi için [Bkz.](../dotnet/overview-of-marshaling-in-cpp.md)
 
 ### <a name="example"></a>Örnek
 
-[Marshal_context:: marshal_as](../dotnet/marshal-context-marshal-as.md)için örneğe bakın.
+marshal_context örneğine [bakın:marshal_as](../dotnet/marshal-context-marshal-as.md).
 
-## <a name="marshal_contextmarshal_context"></a><a name="tilde-marshal-context"></a>marshal_context:: ~ marshal_context
+## <a name="marshal_contextmarshal_context"></a><a name="tilde-marshal-context"></a>marshal_context::~marshal_context
 
-`marshal_context` nesnesini yok eder.
+Bir `marshal_context` nesneyi yok eder.
 
 ```cpp
 ~marshal_context();
@@ -78,13 +78,13 @@ Bazı veri dönüştürmeleri bir sıralama bağlamı gerektirir. Hangi çeviril
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bazı veri dönüştürmeleri bir sıralama bağlamı gerektirir. Hangi çevirilerin bağlam gerektirdiğini ve uygulamanıza eklenmesi gereken sıralama dosyasını öğrenmek için bkz. [ C++ sıralamaya genel bakış](../dotnet/overview-of-marshaling-in-cpp.md) .
+Bazı veri dönüşümleri bir mareşal bağlamı gerektirir. Hangi çevirilerin bir bağlam gerektirdiği ve uygulamanıza hangi dosyalama dosyasının eklenmesi gerektiği hakkında daha fazla bilgi için [C++'da mareşallik](../dotnet/overview-of-marshaling-in-cpp.md) genel görünümüne bakın.
 
-Bir `marshal_context` nesnenin silinmesi, bu bağlam tarafından dönüştürülen verileri geçersiz kılar. `marshal_context` nesnesi yok edildikten sonra verilerinizi korumak istiyorsanız, verileri kalıcı olacak bir değişkene el ile kopyalamanız gerekir.
+Bir `marshal_context` nesneyi silerken, bu bağlam tarafından dönüştürülen verileri geçersiz kılın. Bir `marshal_context` nesne yok edildikten sonra verilerinizi korumak istiyorsanız, verilerinizi kalıcı bir değişkene el ile kopyalamanız gerekir.
 
-## <a name="marshal_contextmarshal_as"></a><a name="marshal-as"></a>marshal_context:: marshal_as
+## <a name="marshal_contextmarshal_as"></a><a name="marshal-as"></a>marshal_context:marshal_as
 
-Yönetilen ve yerel bir veri türü arasında dönüştürmek için belirli bir veri nesnesi üzerinde sıralama gerçekleştirir.
+Yönetilen ve yerel bir veri türü arasında dönüştürmek için belirli bir veri nesnesi üzerinde mareşal gerçekleştirir.
 
 ```cpp
 To_Type marshal_as<To_Type>(
@@ -94,24 +94,24 @@ To_Type marshal_as<To_Type>(
 
 ### <a name="parameters"></a>Parametreler
 
-*girişinin*<br/>
-'ndaki `To_Type` değişkenine sıralamak istediğiniz değer.
+*Giriş*<br/>
+[içinde] Bir `To_Type` değişkene almak istediğiniz değer.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-`input`dönüştürülmüş değeri olan `To_Type` türünde bir değişken.
+Dönüştürülen değeri `To_Type` olan bir tür değişkeni. `input`
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, belirli bir veri nesnesi üzerinde sıralama gerçekleştirir. Bu işlevi yalnızca, [içindeki C++sıralamaya genel bakış ](../dotnet/overview-of-marshaling-in-cpp.md)içindeki tablo tarafından belirtilen dönüştürmelerde kullanın.
+Bu işlev, belirli bir veri nesnesi üzerinde mareşal gerçekleştirir. Bu işlevi yalnızca [C++'da mareşallik genel bakışı](../dotnet/overview-of-marshaling-in-cpp.md)tablosunda gösterilen dönüşümlerle kullanın.
 
-Desteklenmeyen bir çift veri türü oluşturmayı denerseniz `marshal_as`, derleme zamanında bir hata [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) oluşturur. Daha fazla bilgi için bu hatayla sağlanan iletiyi okuyun. `C4996` hatası, yalnızca kullanım dışı bırakılmış işlevlerden daha fazla şekilde oluşturulabilir. Bu hatayı oluşturan iki koşul, desteklenmeyen bir veri türü çifti oluşturmaya çalışıyor ve bağlam gerektiren bir dönüştürme için `marshal_as` kullanmaya çalışıyor.
+Desteklenmeyen bir çift veri türünü deftere göremeye `marshal_as` çalışırsanız, derleme zamanında [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) hatası oluşturur. Daha fazla bilgi için bu hatayı sağlayan iletiyi okuyun. Hata, `C4996` amortismana alınan işlevlerden daha fazlası için oluşturulabilir. Bu hatayı oluşturan iki koşul, desteklenmeyen bir çift veri türünü dağıtmaya `marshal_as` çalışmak ve bağlam gerektiren bir dönüştürme için kullanmaya çalışmak.
 
-Sıralama kitaplığı, çeşitli üst bilgi dosyalarından oluşur. Herhangi bir dönüştürme yalnızca bir dosya gerektirir, ancak başka dönüştürmeler için gerekiyorsa ek dosyalar ekleyebilirsiniz. `Marshaling Overview in C++` tablo, her dönüştürme için hangi sıralama dosyasının ekleneceğini gösterir.
+Mareşal kitaplığı birkaç üstbilgi dosyasından oluşur. Herhangi bir dönüştürme yalnızca bir dosya gerektirir, ancak diğer dönüşümler için gerekirse ek dosyalar ekleyebilirsiniz. Tablo, `Marshaling Overview in C++` her dönüşüm için hangi dosyalama dosyasının dahil edilmesi gerektiğini gösterir.
 
 ### <a name="example"></a>Örnek
 
-Bu örnek, bir `System::String` `const char *` değişken türüne sıralama için bir bağlam oluşturur. Dönüştürülmüş veriler, bağlamı silen satırdan sonra geçerli olmayacaktır.
+Bu örnek, bir `System::String` değişken türünden bir `const char *` değişken türüne marshaling için bir bağlam oluşturur. Dönüştürülen veriler, bağlamı silen satırdan sonra geçerli olmaz.
 
 ```cpp
 // marshal_context_test.cpp

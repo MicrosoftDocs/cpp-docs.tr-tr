@@ -1,11 +1,13 @@
 ---
 title: isalpha, iswalpha, _isalpha_l, _iswalpha_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - iswalpha
 - _iswalpha_l
 - isalpha
 - _isalpha_l
+- _o_isalpha
+- _o_iswalpha
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -18,6 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -41,16 +44,16 @@ helpviewer_keywords:
 - istalpha function
 - _istalpha function
 ms.assetid: ed6cc2be-c4b0-4475-87ac-bc06d8c23064
-ms.openlocfilehash: 9a7de0ba1316a6c0155a46eed0564792ee6256f2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 187031adc0b22aff2c5418cd7e0f3e64075f1745
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954580"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81343924"
 ---
 # <a name="isalpha-iswalpha-_isalpha_l-_iswalpha_l"></a>isalpha, iswalpha, _isalpha_l, _iswalpha_l
 
-Bir tamsayının alfabetik bir karakteri temsil edip etmediğini belirler.
+Bir arastacının alfabetik bir karakteri temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -73,40 +76,44 @@ int _iswalpha_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
-Sınanacak tamsayı.
+*C*<br/>
+Test etmek için sonda.
 
-*ayarlar*<br/>
-Geçerli yerel ayar yerine kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Geçerli yerel alan yerine kullanılacak yerel alan.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her biri, *c* , alfabetik bir karakterin belirli bir gösterimiyse sıfır olmayan bir değer döndürür. *c* , a-z veya a-z aralıkları içindeyse, **ısalpha** sıfır dışında bir değer döndürür. **iswalpha** sıfır dışında bir değeri yalnızca [ıswupper](isupper-isupper-l-iswupper-iswupper-l.md) veya **ıswlower** 'in sıfır dışında olduğu geniş karakterler için döndürür; diğer bir deyişle, **iswcnyy**, **ıswdigit**, **ıswpunct**veya **ıswspace** 'in sıfır dışında olmadığı, uygulama tanımlı bir küme olan herhangi bir geniş karakter için. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
+*C* alfabetik bir karakterin belirli bir temsili ise, bu yordamların her biri sıfırsız döndürür. **isalpha,** A - *c* Z veya a - z aralıkları içinde yse sıfır olmayan bir değer döndürür. **iswalpha** yalnızca [iswupper](isupper-isupper-l-iswupper-iswupper-l.md) veya **iswlower** sıfır olmayan geniş karakterler için sıfır olmayan bir değer döndürür; yani, herhangi bir uygulama tanımlı kümesinden biri olan herhangi bir geniş karakter için hangi **iswcntrl**hiçbiri **, iswdigit**, **iswpunct**, veya **iswspace** sıfır değildir. *C* test koşulunu karşılamazsa bu yordamların her biri 0 döndürür.
 
-**_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**_l** sonek olan bu işlevlerin sürümleri, geçerli yerel yerine geçen yerel parametreyi kullanır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-*C* , EOF veya 0 ile 0xFF (dahil) arasında değilse, **isalpha** ve **_ısharflerden _l** davranışı tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
+isalpha **isalpha** ve **_isalpha_l** *davranışı, c* EOF değilse veya 0 ile 0xFF aralığında, dahil ise tanımsızdır. Hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir iddiayı yükseltir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_istalpha**|**isalpha**|**_ismbcalpha**|**iswalpha**|
-|**_istalpha_l**|**_ısharfler _l**|**_ismbcalpha_l**|**_iswalpha_l**|
+|**_istalpha_l**|**_isalpha_l**|**_ismbcalpha_l**|**_iswalpha_l**|
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isalpha**|\<CType. h >|
-|**iswalpha**|\<CType. h > veya \<wchar. h >|
-|**_ısharfler _l**|\<CType. h >|
-|**_iswalpha_l**|\<CType. h > veya \<wchar. h >|
+|**isalpha**|\<ctype.h>|
+|**iswalpha**|\<ctype.h> \<veya wchar.h>|
+|**_isalpha_l**|\<ctype.h>|
+|**_iswalpha_l**|\<ctype.h> \<veya wchar.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter Sınıflaması](../../c-runtime-library/character-classification.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)<br/>
+[Karakter Sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[olduğunu, isw Rutinleri](../../c-runtime-library/is-isw-routines.md)<br/>

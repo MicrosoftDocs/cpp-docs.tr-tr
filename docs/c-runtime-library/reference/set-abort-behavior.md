@@ -1,8 +1,9 @@
 ---
 title: _set_abort_behavior
-ms.date: 01/02/2018
+ms.date: 4/2/2020
 api_name:
 - _set_abort_behavior
+- _o__set_abort_behavior
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -26,19 +28,19 @@ helpviewer_keywords:
 - aborting programs
 - _set_abort_behavior function
 - set_abort_behavior function
-ms.openlocfilehash: a63d4e77a91dafa4500d5fef8e9b5e94ee28cfbd
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: fd3a3c2f99d1702cdccf68328c2122b965b2d078
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948660"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81337876"
 ---
 # <a name="_set_abort_behavior"></a>_set_abort_behavior
 
-Bir program anormal olarak sonlandırıldığı zaman gerçekleştirilecek eylemi belirtir.
+Bir program anormal şekilde sonlandırıldığında yapılacak eylemi belirtir.
 
 > [!NOTE]
-> Test veya hata ayıklama senaryoları dışında Microsoft Store uygulamasını kapatmak için [Abort](abort.md) işlevini kullanmayın. Bir mağaza uygulamasını kapatmak için programlı veya Kullanıcı arabirimi yollarına [Microsoft Store ilkelerine](/legal/windows/agreements/store-policies)göre izin verilmez. Daha fazla bilgi için bkz. [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle).
+> Test veya hata ayıklama senaryoları dışında bir Microsoft Mağazası uygulamasını kapatmak için [iptal](abort.md) işlevini kullanmayın. Bir Mağaza uygulamasını kapatmanın programlı veya uI yollarına [Microsoft Mağazası ilkelerine](/legal/windows/agreements/store-policies)göre izin verilmez. Daha fazla bilgi için [UWP uygulama yaşam döngüsüne](/windows/uwp/launch-resume/app-lifecycle)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,11 +53,11 @@ unsigned int _set_abort_behavior(
 
 ### <a name="parameters"></a>Parametreler
 
-*larına*<br/>
-[Durdurma](abort.md) bayraklarının yeni değeri.
+*bayraklar*<br/>
+[İptal](abort.md) bayraklarının yeni değeri.
 
-*maskesi*<br/>
-Ayarlanacak [durdurma](abort.md) bayrakları bitlerinin maskesi.
+*maske*<br/>
+İptal [bayrakları](abort.md) bitlerinin ayarlanışması için maske.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -63,15 +65,17 @@ Bayrakların eski değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İki [iptal](abort.md) bayrağı vardır: **_WRITE_ABORT_MSG** ve **_call_reportfault**. **_WRITE_ABORT_MSG** , bir program anormal olarak sonlandırıldığı zaman bir faydalı metin mesajının yazdırılıp yazdırılmadığını belirler. İleti, uygulamanın [Abort](abort.md) işlevini çağırdığını belirtir. Varsayılan davranış, iletiyi yazdırdır. **_Call_reportfault**, ayarlanırsa, [Iptal](abort.md) çağrıldığında bir Watson kilitlenme dökümünün oluşturulup bildirildiğini belirtir. Varsayılan olarak, kilitlenme bilgi döküm raporlaması hata ayıklama olmayan derlemelerde etkindir.
+İki [iptal](abort.md) bayrağı vardır: **_WRITE_ABORT_MSG** ve **_CALL_REPORTFAULT.** **_WRITE_ABORT_MSG,** bir program anormal şekilde sonlandırıldığında yararlı bir metin iletisi yazdırılıp yazdırılmadığını belirler. İleti, uygulamanın [iptal](abort.md) işlevini çağırdığını belirtir. Varsayılan davranış iletiyi yazdırmaktır. **_CALL_REPORTFAULT,** eğer ayarlanırsa, Watson kilitlenme dökümü oluşturulur ve [iptal](abort.md) çağrıldığında rapor belirtir. Varsayılan olarak, hata ayıklama bildirimi hata ayıklama olmayan yapılarda etkinleştirilir.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_abort_behavior**|\<Stdlib. h >|
+|**_set_abort_behavior**|\<stdlib.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -96,4 +100,4 @@ Suppressing the abort message. If successful, this message will be the only outp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[abort](abort.md)<br/>
+[Iptal](abort.md)<br/>

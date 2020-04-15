@@ -1,8 +1,9 @@
 ---
 title: _get_tzname
-ms.date: 10/22/2018
+ms.date: 4/2/2020
 api_name:
 - _get_tzname
+- _o__get_tzname
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -27,16 +29,16 @@ helpviewer_keywords:
 - time zones
 - get_tzname function
 ms.assetid: df0065ff-095f-4237-832c-2fe9ab913875
-ms.openlocfilehash: 9f86a4997c328e86597e3bad8a7f7a3a5f5f50b6
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 50f1f6e4320e3ef905b4eda67ba1d458a5b1df08
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955620"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81344883"
 ---
 # <a name="_get_tzname"></a>_get_tzname
 
-Saat dilimi adının veya yaz standart saat dilimi adının (DST) karakter dizesi gösterimini alır.
+Saat dilimi adının veya gün ışığı standart saat dilimi adının (DST) karakter dizesini alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,49 +53,51 @@ errno_t _get_tzname(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ön kapatma değeri*<br/>
-Null Sonlandırıcı dahil olmak üzere *timeZoneName* dize uzunluğu.
+*pReturnValue*<br/>
+Null terminator dahil *zamanZoneName* dize uzunluğu.
 
 *timeZoneName*<br/>
-*Dizine*bağlı olarak, saat dilimi adının temsili için bir karakter dizesinin adresi veya yaz standart saat dilimi adı (DST).
+Dizin bağlı olarak saat dilimi adı veya gün ışığı standart saat dilimi adı (DST) gösterimi için bir karakter dize *adresi.*
 
-*sizeInBytes*<br/>
-Bayt cinsinden *timeZoneName* karakter dizesinin boyutu.
+*sizeBytes*<br/>
+Baytlar'daki *zamanZoneName* karakter dizesinin boyutu.
 
-*indeks*<br/>
-Alınacak iki saat dilimi adından birinin dizini.
+*Dizin*<br/>
+Alınacak iki saat dilimi adıarasından birinin dizini.
 
-|*indeks*|*TimeZoneName* içeriği|*timeZoneName* varsayılan değeri|
+|*Dizin*|*zamanZoneName* içeriği|*timeZoneName* varsayılan değer|
 |-|-|-|
 |0|Saat dilimi adı|"PST"|
-|1\.|Günışığı standart saat dilimi adı|SAATI|
-|> 1 veya < 0|**errno** , **EINVAL** olarak ayarlandı|değiştirilmedi|
+|1|Gün ışığı standart saat dilimi adı|"PDT"|
+|> 1 veya < 0|**errno** **EINVAL** için ayarlayın|değiştirilmemiş|
 
-Çalışma zamanında değerler açıkça değiştirilmediği takdirde, varsayılan değerler sırasıyla "PST" ve "pasıfık" dir.
+Çalışma süresi sırasında değerler açıkça değiştirilmediği sürece, varsayılan değerler sırasıyla "PST" ve "PDT" olur.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır, aksi durumda bir **errno** türü değeri.
+Sıfır başarılı, aksi takdirde bir **errno** türü değeri.
 
-Her iki *timeZoneName* de **null**veya *sizeInBytes* sıfır veya sıfırdan küçükse (her Ikisi birden değilse), [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+*ZamanZoneName* **NULL**ise veya *sizeInBytes* sıfır veya sıfırdan az (ama her ikisi değil), geçersiz bir parametre işleyicisi çağrılır, [Parametre Doğrulama](../../c-runtime-library/parameter-validation.md)açıklandığı gibi . Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL için errno** ayarlar ve **EINVAL** döndürür. **EINVAL**
 
-### <a name="error-conditions"></a>Hata koşulları
+### <a name="error-conditions"></a>Hata Koşulları
 
-|*Ön kapatma değeri*|*timeZoneName*|*sizeInBytes*|*indeks*|Dönüş değeri|*TimeZoneName* içeriği|
+|*pReturnValue*|*timeZoneName*|*sizeBytes*|*Dizin*|Döndürülen değer|*zamanZoneName* içeriği|
 |--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|
-|TZ adının boyutu|**DEĞER**|0|0 veya 1|0|değiştirilmedi|
-|TZ adının boyutu|Kaydedilmemiş|> 0|0 veya 1|0|TZ adı|
-|değiştirilmedi|**DEĞER**|> 0|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
-|değiştirilmedi|Kaydedilmemiş|sıfır|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
-|değiştirilmedi|Kaydedilmemiş|> 0|> 1|**EINVAL**|değiştirilmedi|
+|TZ adının boyutu|**Null**|0|0 veya 1|0|değiştirilmemiş|
+|TZ adının boyutu|herhangi bir|> 0|0 veya 1|0|TZ adı|
+|değiştirilmemiş|**Null**|> 0|herhangi bir|**Eınval**|değiştirilmemiş|
+|değiştirilmemiş|herhangi bir|sıfır|herhangi bir|**Eınval**|değiştirilmemiş|
+|değiştirilmemiş|herhangi bir|> 0|> 1|**Eınval**|değiştirilmemiş|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Get_tzname** işlevi, geçerli saat dilimi adının karakter dizesi gösterimini veya gün standart saat dilimi adını (DST) dizin değerine bağlı olarak *timeZoneName* adresine, içindeki dize boyutuyla birlikte alır. *ön kapatma değeri*. *TimeZoneName* **null** Ise ve *sizeInBytes* sıfırsa, belirtilen saat dilimini tutmak için gereken dize boyutu ve bayt cinsinden bir Sonlandırıcı null *değeri ön işlem değerinde*döndürülür. Dizin değerleri standart saat dilimi için 0 ya da Günışığı standart saat dilimi için 1 olmalıdır; Tüm diğer *Dizin* değerleri belirlenmeyen sonuçlara sahiptir.
+**_get_tzname** işlevi, dizin değerine bağlı olarak geçerli saat dilimi adının veya gün ışığı standart saat dilimi adının (DST) karakter dizesini ve *pReturnValue'daki*dize boyutuyla birlikte *zaman Dilimi Adı'nın* adresine alır. *timeZoneName* **NULL** ve *sizeInBytes* sıfır ise, belirtilen saat dilimini tutmak için gerekli dize boyutu ve bayt bir sonlandırıcı null *pReturnValue*döndürülür. Dizin değerleri standart saat dilimi için 0 veya gün ışığı standart saat dilimi için 1 olmalıdır; *dizin* diğer değerleri belirsiz sonuçlar var.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, geçerli yaz standart saat dilimi adını göstermek için gerekli arabellek boyutunu almak üzere **_get_tzname** çağırır, bu boyutta bir arabellek ayırır, adı arabelleğe yüklemek için **_get_tzname** öğesini çağırır ve konsola yazdırır.
+Bu örnek, geçerli Gün Işığı standart saat dilimi adını görüntülemek için gerekli arabellek boyutunu almak için **_get_tzname** çağırır, bu boyutta bir arabellek ayırır, arabellek adını yüklemek için **_get_tzname** tekrar çağırır ve konsola yazdırır.
 
 ```C
 // crt_get_tzname.c
@@ -129,7 +133,7 @@ int main()
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 The current Daylight standard time zone name is PDT.
@@ -139,9 +143,9 @@ The current Daylight standard time zone name is PDT.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_tzname**|\<Time. h >|
+|**_get_tzname**|\<time.h>|
 
-Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için [Uyumluluk'a](../../c-runtime-library/compatibility.md)bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

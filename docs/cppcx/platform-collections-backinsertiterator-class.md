@@ -1,5 +1,5 @@
 ---
-title: 'Platform:: Collections:: Backınsertıterator sınıfı'
+title: Platform::Koleksiyonlar::BackInsertIterator Sınıfı
 ms.date: 03/27/2019
 ms.topic: reference
 f1_keywords:
@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - BackInsertIterator Class
 ms.assetid: aecee1ff-100d-4129-b84b-1966f0923dbf
-ms.openlocfilehash: 79854d8ead089aeba88fbdc151fdc0788dd181c1
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: fcb680c8f43a50801d081762bb5b546cb110c52d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445786"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81354764"
 ---
-# <a name="platformcollectionsbackinsertiterator-class"></a>Platform:: Collections:: Backınsertıterator sınıfı
+# <a name="platformcollectionsbackinsertiterator-class"></a>Platform::Koleksiyonlar::BackInsertIterator Sınıfı
 
-Öğelerin üzerine yazmak yerine, ardışık bir koleksiyonun arka ucuna kadar eklenen bir yineleyiciyi temsil eder.
+Sıralı bir koleksiyonun arka ucuna öğeleri yazmak yerine ekleyen bir yineleyiciyi temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,12 +28,12 @@ public ::std::iterator<::std::output_iterator_tag, void, void, void, void>;
 
 #### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Geçerli Koleksiyondaki öğenin türü.
+*T*<br/>
+Geçerli koleksiyondaki öğe türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Backınsertıterator sınıfı, [Back_insert_iterator sınıfının](../standard-library/back-insert-iterator-class.md)gerektirdiği kuralları uygular.
+BackInsertIterator sınıfı [back_insert_iterator Sınıfı'nın](../standard-library/back-insert-iterator-class.md)gerektirdiği kuralları uygular.
 
 ### <a name="members"></a>Üyeler
 
@@ -41,15 +41,15 @@ Backınsertıterator sınıfı, [Back_insert_iterator sınıfının](../standard
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[Backınsertıterator:: Backınsertıterator](#ctor)|Backınsertıterator sınıfının yeni bir örneğini başlatır.|
+|[BackInsertIterator::BackInsertIterator](#ctor)|BackInsertIterator sınıfının yeni bir örneğini başolarak karşılar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[Backınsertıterator:: operator * Işleci](#operator-dereference)|Geçerli Backınsertıterator öğesine bir başvuru alır.|
-|[Backınsertıterator:: operator + + Işleci](#operator-increment)|Geçerli Backınsertıterator öğesine bir başvuru döndürür. Yineleyici değiştirilmemiş.|
-|[Backınsertıterator:: operator = Işleci](#operator-assign)|Belirtilen nesneyi geçerli sıralı koleksiyonun sonuna ekler.|
+|[BackInsertIterator::operator* Operatör](#operator-dereference)|Geçerli BackInsertIterator bir başvuru alır.|
+|[BackInsertIterator::operator++ Operatör](#operator-increment)|Geçerli BackInsertIterator bir başvuru döndürür. Yineleyici değiştirilmemiş.|
+|[BackInsertIterator::operator= Operatör](#operator-assign)|Belirtilen nesneyi geçerli sıralı koleksiyonun sonuna ekler.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -57,11 +57,11 @@ Backınsertıterator sınıfı, [Back_insert_iterator sınıfının](../standard
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** Collection. h
+**Üstbilgi:** collection.h
 
-**Ad alanı:** Platform:: Collections
+**Ad alanı:** Platform::Koleksiyonlar
 
-## <a name="ctor"></a>Backınsertıterator:: Backınsertıterator Oluşturucusu
+## <a name="backinsertiteratorbackinsertiterator-constructor"></a><a name="ctor"></a>BackInsertIterator::BackInsertIterator Constructor
 
 `BackInsertIterator` sınıfının yeni bir örneğini başlatır.
 
@@ -74,14 +74,14 @@ explicit BackInsertIterator(
 
 #### <a name="parameters"></a>Parametreler
 
-*Yönetim*<br/>
-IVector\<T > nesnesi.
+*v*<br/>
+Bir IVector\<T> nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`BackInsertIterator`, `v`parametresi tarafından belirtilen nesnenin son öğesinden sonra öğeleri ekler.
+Bir `BackInsertIterator` parametre `v`ile belirtilen nesnenin son öğesi sonra öğeleri ekler.
 
-## <a name="operator-assign"></a>Backınsertıterator:: operator = Işleci
+## <a name="backinsertiteratoroperator-operator"></a><a name="operator-assign"></a>BackInsertIterator::operator= Operatör
 
 Belirtilen nesneyi geçerli sıralı koleksiyonun sonuna ekler.
 
@@ -93,16 +93,16 @@ BackInsertIterator& operator=( const T& t);
 
 #### <a name="parameters"></a>Parametreler
 
-*şı*<br/>
-Geçerli koleksiyona eklenecek nesne.
+*T*<br/>
+Geçerli koleksiyona eklenen nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli Backınsertıterator öğesine bir başvuru.
+Geçerli BackInsertIterator bir başvuru.
 
-## <a name="operator-dereference"></a>Backınsertıterator:: operator * Işleci
+## <a name="backinsertiteratoroperator-operator"></a><a name="operator-dereference"></a>BackInsertIterator::operator* Operatör
 
-Geçerli Backınsertıterator öğesine bir başvuru alır.
+Geçerli BackInsertIterator bir başvuru alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -112,15 +112,15 @@ BackInsertIterator& operator*();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli Backınsertıterator öğesine bir başvuru.
+Geçerli BackInsertIterator bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç geçerli Backınsertıterator öğesine bir başvuru döndürür. geçerli koleksiyonda hiçbir öğe değil.
+Bu işleç geçerli BackInsertIterator bir referans döndürür; geçerli koleksiyondaki herhangi bir öğeye değil.
 
-## <a name="operator-increment"></a>Backınsertıterator:: operator + + Işleci
+## <a name="backinsertiteratoroperator-operator"></a><a name="operator-increment"></a>BackInsertIterator::operator++ Operatör
 
-Geçerli Backınsertıterator öğesine bir başvuru döndürür. Yineleyici değiştirilmemiş.
+Geçerli BackInsertIterator bir başvuru döndürür. Yineleyici değiştirilmemiş.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -132,14 +132,14 @@ BackInsertIterator operator++(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli Backınsertıterator öğesine bir başvuru.
+Geçerli BackInsertIterator bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tasarım yaparak, ilk sözdizimi örneği geçerli Backınsertıterator ' ı önceden artırır ve ikinci sözdizimi geçerli Backınsertıterator ' ı artırır. İkinci sözdiziminde `int` türü, gerçek bir tamsayı işleneni değil, bir artırma sonrası işlemi gösterir.
+Tasarım olarak, ilk sözdizimi örneği geçerli BackInsertIterator'u, ikinci sözdizimi sonrası ise geçerli BackInsertIterator'u öne doğru atar. İkinci `int` sözdiziminde tür, gerçek bir tamsayı operand değil, artış sonrası işlemi gösterir.
 
-Ancak, bu işleç aslında Backınsertıterator öğesini değiştirmez. Bunun yerine, bu işleç değiştirilmemiş, geçerli Yineleyici için bir başvuru döndürür. Bu, [işleç *](#operator-dereference)ile aynı davranıştır.
+Ancak, bu işleç aslında BackInsertIterator değiştirmez. Bunun yerine, bu işleç değiştirilmemiş, geçerli yineleyicibir başvuru döndürür. Bu işleç le aynı [davranıştır*](#operator-dereference).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform ad alanı](platform-namespace-c-cx.md)
+[Platform İsim Alanı](platform-namespace-c-cx.md)

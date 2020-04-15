@@ -1,10 +1,11 @@
 ---
 title: cos, cosf, cosl
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - cos
 - cosf
 - cosl
+- _o_cos
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -34,16 +36,16 @@ helpviewer_keywords:
 - trigonometric functions
 - cosines, calculating
 ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16
-ms.openlocfilehash: 9ec612aa9f8c6eaf1731d62b654d45841cdfa159
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 536d9a235ef0d4b2bb68362645b5b4e03d8f37a7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170261"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81348464"
 ---
 # <a name="cos-cosf-cosl"></a>cos, cosf, cosl
 
-Kosinüsü hesaplar.
+Kosinüshesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,33 +62,35 @@ long double cos( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Radyan cinsinden açı.
+*X*<br/>
+Radyanlarda açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*X*'in kosinüsü. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
+*x*kosinüs . *X* 263'ten büyük veya eşitse veya -263'ten daha az veya eşitse, sonuçta bir önem kaybı oluşur.
 
-|Girdi|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH Özel Durumu|Matherr İstisnası|
 |-----------|-------------------|-----------------------|
 |± QNAN, IND|yok|**_DOMAIN**|
 |± INF|**Geçersiz**|**_DOMAIN**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerleri alıp döndüren **cos** 'un aşırı yüklerini çağırabilirsiniz. C programında **cos** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** veya uzun **long** **çift** değerleri alan ve **döndüren** aşırı yüklerini arayabilirsiniz. C programında, **çünkü** her zaman alır ve bir **çift**döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgi|
+|Yordam|Gerekli C üstbilgi|Gerekli C++ üstbilgi|
 |-------------|---------------------|-|
-|**cos**, **cosh**, **cosf**|\<Math. h >|\<cmath > veya \<Math. h >|
+|**cos**, **cosh**, **cosf**|\<math.h>|\<cmath> \<veya math.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
-Bkz. [Sin, sinf, sinl](sin-sinf-sinl.md).
+Günah, [günah, günah](sin-sinf-sinl.md)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

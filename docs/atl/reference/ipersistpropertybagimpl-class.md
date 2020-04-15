@@ -1,5 +1,5 @@
 ---
-title: Ipersistpropertybagimpl sınıfı
+title: IPersistPropertyBagImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IPersistPropertyBagImpl
@@ -11,19 +11,19 @@ f1_keywords:
 helpviewer_keywords:
 - IPersistPropertyBagImpl class
 ms.assetid: 712af24d-99f8-40f2-9811-53b3ff6e5b19
-ms.openlocfilehash: 15b9c9738d921c4c6f7837f9280c6dd6b09392d6
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f656ecc76b175eae523059c60bb8a3efc6f0b312
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69495770"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81326482"
 ---
-# <a name="ipersistpropertybagimpl-class"></a>Ipersistpropertybagimpl sınıfı
+# <a name="ipersistpropertybagimpl-class"></a>IPersistPropertyBagImpl Sınıfı
 
-Bu sınıf, `IUnknown` bir nesnenin özelliklerini istemci tarafından sağlanan özellik paketine kaydetmesine izin verir ve uygular.
+Bu sınıf, `IUnknown` bir nesnenin özelliklerini istemci tarafından sağlanan özellik çantasına kaydetmesine olanak tanır.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,27 +34,27 @@ class ATL_NO_VTABLE IPersistPropertyBagImpl : public IPersistPropertyBag
 
 #### <a name="parameters"></a>Parametreler
 
-*ŞI*<br/>
-Sınıfınız, öğesinden `IPersistPropertyBagImpl`türetilir.
+*T*<br/>
+Sınıfınızdan `IPersistPropertyBagImpl`türetilmiştir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Ipersistpropertybagimpl:: GetClassID](#getclassid)|Nesnenin CLSID 'sini alır.|
-|[Ipersistpropertybagimpl:: InitNew](#initnew)|Yeni oluşturulan bir nesneyi başlatır. ATL uygulamaları S_OK döndürür.|
-|[Ipersistpropertybagimpl:: Load](#load)|İstemcinin sağladığı Özellik çantasından nesnenin özelliklerini yükler.|
-|[Ipersistpropertybagimpl:: Save](#save)|Nesnenin özelliklerini, istemci tarafından sağlanan bir özellik paketine kaydeder.|
+|[IPersistPropertyBagImpl::GetClassID](#getclassid)|Nesnenin CLSID'sini alır.|
+|[IPersistPropertyBagImpl::InitNew](#initnew)|Yeni oluşturulan bir nesneyi başharfe ait hale leştirir. ATL uygulaması S_OK döndürür.|
+|[IPersistPropertyBagImpl::Yük](#load)|Nesnenin özelliklerini istemci tarafından sağlanan bir özellik çantasından yükler.|
+|[IPersistPropertyBagImpl::Kaydet](#save)|Nesnenin özelliklerini istemci tarafından sağlanan bir özellik çantasına kaydeder.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IPersistPropertyBag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768205\(v=vs.85\)) arabirimi bir nesnenin özelliklerini istemci tarafından sağlanan bir özellik paketine kaydetmesine izin verir. Sınıfı `IPersistPropertyBagImpl` , bu arabirimin varsayılan bir uygulamasını sağlar ve hata `IUnknown` ayıklama yapılarında döküm cihazına bilgi göndererek uygular.
+[IPersistPropertyBag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768205\(v=vs.85\)) arabirimi, bir nesnenin özelliklerini istemci tarafından sağlanan özellik çantasına kaydetmesine olanak tanır. Sınıf `IPersistPropertyBagImpl` bu arabirimin varsayılan bir `IUnknown` uygulamasını sağlar ve hata ayıklama oluştururda dökümü aygıtına bilgi göndererek uygular.
 
-`IPersistPropertyBag`[IPropertyBag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768196\(v=vs.85\)) ve [Ihata günlüğü](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768231\(v=vs.85\))ile birlikte çalışarak. Bu ikinci iki arabirimin istemci tarafından uygulanması gerekir. Aracılığıyla `IPropertyBag`, istemci nesnenin ayrı özelliklerini kaydeder ve yükler. Aracılığıyla `IErrorLog`, hem nesne hem de istemci karşılaşılan hataları bildirebilir.
+`IPersistPropertyBag`[IPropertyBag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768196\(v=vs.85\)) ve [iErrorLog](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768231\(v=vs.85\))ile birlikte çalışır. Bu son iki arabirim istemci tarafından uygulanmalıdır. Bu `IPropertyBag`nedenle, istemci nesnenin tek tek özelliklerini kaydeder ve yükler. Aracılığıyla, `IErrorLog`hem nesne hem de istemci karşılaşılan hataları bildirebilir.
 
-**Ilgili makaleler** ATL [öğreticisi](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
+**İlgili Makaleler** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -64,11 +64,11 @@ Sınıfınız, öğesinden `IPersistPropertyBagImpl`türetilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcom. h
+**Başlık:** atlcom.h
 
-##  <a name="getclassid"></a>Ipersistpropertybagimpl:: GetClassID
+## <a name="ipersistpropertybagimplgetclassid"></a><a name="getclassid"></a>IPersistPropertyBagImpl::GetClassID
 
-Nesnenin CLSID 'sini alır.
+Nesnenin CLSID'sini alır.
 
 ```
 STDMETHOD(GetClassID)(CLSID* pClassID);
@@ -76,11 +76,11 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK bkz. [IPersist:: GetClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) .
+Bkz. IPersist::Windows SDK'da [ClassID'yi alın.](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid)
 
-##  <a name="initnew"></a>Ipersistpropertybagimpl:: InitNew
+## <a name="ipersistpropertybagimplinitnew"></a><a name="initnew"></a>IPersistPropertyBagImpl::InitNew
 
-Yeni oluşturulan bir nesneyi başlatır.
+Yeni oluşturulan bir nesneyi başharfe ait hale leştirir.
 
 ```
 STDMETHOD(InitNew)();
@@ -92,11 +92,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK bkz. [IPersistPropertyBag:: InitNew](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768204\(v=vs.85\)) .
+Bkz. [IPersistPropertyBag::Windows](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768204\(v=vs.85\)) SDK'da Yeni.
 
-##  <a name="load"></a>Ipersistpropertybagimpl:: Load
+## <a name="ipersistpropertybagimplload"></a><a name="load"></a>IPersistPropertyBagImpl::Yük
 
-İstemcinin sağladığı Özellik çantasından nesnenin özelliklerini yükler.
+Nesnenin özelliklerini istemci tarafından sağlanan bir özellik çantasından yükler.
 
 ```
 STDMETHOD(Load)(LPPROPERTYBAG pPropBag, LPERRORLOG pErrorLog);
@@ -104,13 +104,13 @@ STDMETHOD(Load)(LPPROPERTYBAG pPropBag, LPERRORLOG pErrorLog);
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL bu bilgileri almak için nesnenin özellik eşlemesini kullanır.
+ATL bu bilgileri almak için nesnenin özellik eşlemi kullanır.
 
-Windows SDK [IPersistPropertyBag:: Load](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768206\(v=vs.85\)) öğesine bakın.
+Bkz. [IPersistPropertyBag::Windows](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768206\(v=vs.85\)) SDK'da yükleyin.
 
-##  <a name="save"></a>Ipersistpropertybagimpl:: Save
+## <a name="ipersistpropertybagimplsave"></a><a name="save"></a>IPersistPropertyBagImpl::Kaydet
 
-Nesnenin özelliklerini, istemci tarafından sağlanan bir özellik paketine kaydeder.
+Nesnenin özelliklerini istemci tarafından sağlanan bir özellik çantasına kaydeder.
 
 ```
 STDMETHOD(Save)(
@@ -121,11 +121,11 @@ STDMETHOD(Save)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL bu bilgileri depolamak için nesnenin özellik eşlemesini kullanır. Varsayılan olarak, bu yöntem *fSaveAllProperties*değerinden bağımsız olarak tüm özellikleri kaydeder.
+ATL, bu bilgileri depolamak için nesnenin özellik eşlesini kullanır. Varsayılan olarak, bu *yöntem, fSaveAllProperties*değeri ne olursa olsun tüm özellikleri kaydeder.
 
-Windows SDK [IPersistPropertyBag:: Save](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768207\(v=vs.85\)) öğesine bakın.
+Bkz. [IPersistPropertyBag::Windows](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768207\(v=vs.85\)) SDK'da kaydedin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [BEGIN_PROP_MAP](property-map-macros.md#begin_prop_map)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

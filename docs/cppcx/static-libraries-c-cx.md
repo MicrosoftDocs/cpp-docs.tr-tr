@@ -1,31 +1,31 @@
 ---
-title: Statik kitaplıklar (C++/CX)
+title: Statik Kitaplıklar (C++/CX)
 ms.date: 02/03/2017
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
-ms.openlocfilehash: 42c247650f778dcc9dbfa13d27cbb0244c0ebbc2
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 3c4bfd28b805903a2e596ef6d648ff31b0b8261c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80077971"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81358106"
 ---
-# <a name="static-libraries-ccx"></a>Statik kitaplıklar (C++/CX)
+# <a name="static-libraries-ccx"></a>Statik Kitaplıklar (C++/CX)
 
-Evrensel Windows Platformu (UWP) uygulamasında kullanılan statik bir kitaplık, STL türleri dahil olmak üzere ISO standardı C++ kodu ve ayrıca Windows çalışma zamanı uygulama platformundan hariç tutulan Win32 API 'lerine çağrılar içerebilir. Statik Kitaplık Windows Çalışma Zamanı bileşenleri kullanır ve belirli kısıtlamalara sahip Windows Çalışma Zamanı bileşenleri oluşturabilir.
+Evrensel Windows Platformu (UWP) uygulamasında kullanılan statik kitaplık, STL türleri de dahil olmak üzere ISO standardı C++ kodu içerebilir ve Windows Runtime uygulama platformunun dışında olmayan Win32 API'lerini de çağırabilir. Statik kitaplık Windows Runtime bileşenlerini tüketir ve belirli kısıtlamalarla Windows Runtime bileşenleri oluşturabilir.
 
 ## <a name="creating-static-libraries"></a>Statik kitaplıklar oluşturma
 
-Yeni bir proje oluşturmak için yönergeler, yüklediğiniz Visual Studio sürümüne bağlı olarak farklılık gösterir. Sol üstteki sürüm seçicisine doğru sürüme sahip olduğunuzdan emin olun.
+Yeni bir proje oluşturma yönergeleri Visual Studio'nun hangi sürümünü yüklediğinize bağlı olarak değişir. Visual Studio'nun tercih ettiğiniz sürümüiçin belgeleri görmek için **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker range="vs-2019"
 
-### <a name="to-create-a-uwp-static-library-in-visual-studio-2019"></a>Visual Studio 2019 ' de UWP statik kitaplığı oluşturmak için
+### <a name="to-create-a-uwp-static-library-in-visual-studio-2019"></a>Visual Studio 2019'da UWP statik kitaplığı oluşturmak için
 
-1. **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda **dosya** > **Yeni** > **Proje** ' yi seçin.
+1. Menü çubuğunda, **Yeni Proje Oluştur** iletişim kutusunu açmak için **Yeni** > **Proje** **Dosyası'nı** > seçin.
 
-1. İletişim kutusunun üst kısmında, **dili** olarak **C++** ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **UWP**olarak ayarlayın.
+1. İletişim kutusunun üst kısmında, **Dil'i** **C++** olarak ayarlayın, **Platform'u** **Windows'a**ayarlayın ve **Project türünü** **UWP**olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **statik kitaplık (Evrensel Windows- C++/CX)** öğesini seçin ve ardından **İleri**' yi seçin. Sonraki sayfada, projeye bir ad verin ve isterseniz proje konumunu belirtin.
+1. Filtre uygulanmış proje türleri listesinden **Statik Kitaplık'ı (Evrensel Windows - C++/CX)** seçin ve **ardından İleri'yi**seçin. Bir sonraki sayfada, projeye bir ad verin ve istenirse proje konumunu belirtin.
 
 1. Projeyi oluşturmak için **Oluştur** düğmesini seçin.
 
@@ -33,23 +33,23 @@ Yeni bir proje oluşturmak için yönergeler, yüklediğiniz Visual Studio sür�
 
 ::: moniker range="<=vs-2017"
 
-### <a name="to-create-a-uwp-static-library-in-visual-studio-2017-or-visual-studio-2015"></a>Visual Studio 2017 veya Visual Studio 2015 ' de UWP statik kitaplığı oluşturmak için
+### <a name="to-create-a-uwp-static-library-in-visual-studio-2017-or-visual-studio-2015"></a>Visual Studio 2017 veya Visual Studio 2015'te UWP statik kitaplığı oluşturmak için
 
-1. Menü çubuğunda **dosya** > **Yeni** > **Proje**' yi seçin. **Visual C++**  > **Windows Universal** altında **statik kitaplık (Evrensel Windows)** seçeneğini belirleyin.
+1. Menü çubuğunda**Yeni** > **Proje** **yi seçin.** >  **Visual C++** > **Windows Universal** altında Statik **Kitaplık (Evrensel Windows)** seçin.
 
-1. **Çözüm Gezgini**' de, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin. **Özellikler** iletişim kutusunda, **yapılandırma özellikleri** > **CC++ /** sayfasında, kullanım **Windows çalışma zamanı uzantısını** **Evet (/ZW)** olarak ayarlayın.
+1. **Çözüm Gezgini'nde,** proje için kısayol menüsünü açın ve ardından **Özellikler'i**seçin. **Özellikler** iletişim kutusunda, Configuration **Properties** > **C/C++** sayfasında, **Windows Runtime Extension'ı** Evet **(/ZW)** olarak ayarlayın.
 
 ::: moniker-end
 
-Yeni bir statik kitaplık derlerken, UWP uygulamaları için dışlanan bir Win32 API çağrısı yaparsanız, derleyici hata C3861, "tanımlayıcı bulunamadı" olarak oluşturulur. Windows Çalışma Zamanı için desteklenen alternatif bir yöntemi aramak için bkz. [UWP uygulamalarında Windows API 'Lerinin alternatifleri](/uwp/win32-and-com/alternatives-to-windows-apis-uwp).
+Yeni bir statik kitaplık derlediğinizde, UWP uygulamaları için hariç olan Win32 API'sini ararsanız, derleyici C3861 hatasını yükseltir, "Tanımlayıcı bulunamadı." Windows Runtime için desteklenen alternatif bir yöntem aramak için [UWP uygulamalarında Windows API'larına Alternatifler'e](/uwp/win32-and-com/alternatives-to-windows-apis-uwp)bakın.
 
-UWP uygulama çözümüne bir C++ statik kitaplık projesi eklersenız, UWP support özelliğinin **Evet**olarak ayarlanması için kitaplık projesinin özellik ayarlarını güncelleştirmeniz gerekebilir. Bu ayar olmadan kod oluşturulur ve bağlar, ancak uygulamayı Microsoft Store doğrulamaya çalıştığınızda bir hata oluşur. Statik LIB, kendisini kullanan projeyle aynı derleyici ayarları ile derlenmelidir.
+UWP uygulaması çözümüne C++ statik kitaplık projesi eklerseniz, UWP destek özelliğinin **Evet**olarak ayarlanması için kitaplık projesinin özellik ayarlarını güncelleştirmeniz gerekebilir. Bu ayar olmadan, kod oluşturur ve bağlantılar, ancak Microsoft Mağazası için uygulamayı doğrulamaya çalıştığınızda bir hata oluşur. Statik lib, onu tüketen projeyle aynı derleyici ayarlarıyla derlenmelidir.
 
-Ortak `ref` sınıfları, genel arabirim sınıfları veya ortak değer sınıfları oluşturan bir statik kitaplık kullanıyorsanız, bağlayıcı şu uyarıyı oluşturur:
+Ortak sınıflar, ortak `ref` arabirim sınıfları veya ortak değer sınıfları oluşturan statik bir kitaplık tüketirseniz, bağlayıcı şu uyarıyı yükseltir:
 
-> **Uyarı LNK4264:** /ZW ile derlenen nesne dosyasını statik bir kitaplığa arşivleme; Windows Çalışma Zamanı türler yazarken Windows Çalışma Zamanı meta verileri içeren bir statik kitaplıkla bağlantı önerilmediğini unutmayın.
+> **uyarı LNK4264:** /ZW ile derlenen nesne dosyasının statik bir kitaplığa arşivleme; Windows Runtime türlerini yazarken, Windows Runtime meta verilerini içeren statik bir kitaplıkla bağlantı kurmanın önerilmediğini unutmayın.
 
-Yalnızca statik kitaplık, kitaplığın kendisi dışında tüketilen Windows Çalışma Zamanı bileşenleri üretilmediği takdirde uyarıyı güvenle yoksayabilirsiniz. Kitaplık, tanımladığı bir bileşeni tüketmezse, genel meta veriler tür bilgilerini içerse de bağlayıcı, uygulamayı iyileştirebilirler. Bu, bir statik kitaplıktaki ortak bileşenlerin derlenmesi, ancak çalışma zamanında etkinleştirilmeyeceği anlamına gelir. Bu nedenle, diğer bileşenler veya uygulamalar tarafından tüketimi için tasarlanan tüm Windows Çalışma Zamanı bileşenleri dinamik bağlantı kitaplığı 'nda (DLL) uygulanmalıdır.
+Yalnızca statik kitaplık kitaplığın kendisi dışında tüketilen Windows Runtime bileşenlerini üretmiyorsa, uyarıyı güvenle yoksayabilirsiniz. Kitaplık tanımladığı bir bileşeni tüketmiyorsa, ortak meta veriler tür bilgilerini içerse bile bağlayıcı uygulamayı en iyi duruma getirebilir. Bu, statik kitaplıktaki ortak bileşenlerin derleşeceği, ancak çalışma zamanında etkinleştirilen anlamına gelir. Bu nedenle, diğer bileşenler veya uygulamalar tarafından tüketilmesi amaçlanan herhangi bir Windows Runtime bileşeni dinamik bağlantı kitaplığında (DLL) uygulanmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -12,47 +12,47 @@ helpviewer_keywords:
 - upgrading ActiveX controls
 - licensing ActiveX controls
 ms.assetid: 4d12ddfa-b491-4f9f-a0b7-b51458e05651
-ms.openlocfilehash: 06c39240d3718f6fbaa15b46abeb8ac9132b5945
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 802640d5132c28dbda564afcb63c12d8a4133042
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69510865"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81353550"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>Varolan Bir ActiveX Denetimini Güncelleştirme
 
-Mevcut ActiveX denetimleri (eski adıyla OLE denetimleri), Internet üzerinde değişiklik yapılmadan kullanılabilir. Ancak, performansını geliştirmek için denetimleri değiştirmek isteyebilirsiniz.
+Varolan ActiveX denetimleri (eski adıyla OLE denetimleri) Internet'te değişiklik yapılmadan kullanılabilir. Ancak, performanslarını artırmak için denetimleri değiştirmek isteyebilirsiniz.
 
 > [!IMPORTANT]
-> ActiveX, yeni geliştirme için kullanılması gereken eski bir teknolojidir. ActiveX 'in yerini alan modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimleri](activex-controls.md).
+> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
 
-Denetiminizi bir Web sayfasında kullanırken, ek hususlar vardır. . Ocx dosyası ve tüm destekleyici dosyalar hedef makinede olmalı veya Internet üzerinden indirilmelidir. Bu, kod boyutunu ve indirme süresini önemli bir şekilde oluşturur. İndirilenler imzalı bir. cab dosyasında paketlenebilir. Denetiminizi betik için güvenli olarak işaretleyebilir ve başlatma için güvenli olarak işaretleyebilirsiniz.
+Denetiminizi bir Web sayfasında kullanırken, başka hususlar da vardır. .ocx dosyası ve tüm destekleyici dosyalar hedef makinede olmalı veya Internet üzerinden indirilmelidir. Bu kod boyutu ve indirme süresi önemli bir husus yapar. İndirmeler imzalı bir .cab dosyasında paketlenebilir. Denetiminizi komut dosyası için güvenli ve başlatma için güvenli olarak işaretleyebilirsiniz.
 
-Bu makalede, aşağıdaki konular ele alınmaktadır:
+Bu makalede aşağıdaki konular tartışılmaktadır:
 
-- [Indirme için paketleme kodu](#_core_packaging_code_for_downloading)
+- [İndirme için Ambalaj Kodu](#_core_packaging_code_for_downloading)
 
-- [Bir denetimi betik oluşturma ve başlatma için güvenli olarak işaretleme](#_core_marking_a_control_safe_for_scripting_and_initializing)
+- [Komut Dosyası Ve Başlatma için Denetim Güvenli İşaretleme](#_core_marking_a_control_safe_for_scripting_and_initializing)
 
-- [Lisanslama sorunları](#_core_licensing_issues)
+- [Lisans Sorunları](#_core_licensing_issues)
 
-- [İmzalama kodu](#_core_signing_code)
+- [İmza Kodu](#_core_signing_code)
 
-- [Paleti yönetme](#_core_managing_the_palette)
+- [Paletin Yönetimi](#_core_managing_the_palette)
 
-- [Internet Explorer tarayıcı güvenlik düzeyleri ve denetim davranışı](#_core_internet_explorer_browser_safety_levels_and_control_behavior)
+- [Internet Explorer Tarayıcı Güvenlik Düzeyleri ve Kontrol Davranışı](#_core_internet_explorer_browser_safety_levels_and_control_behavior)
 
-Ayrıca, [ActiveX denetimlerinde açıklandığı gibi iyileştirmeler da ekleyebilirsiniz: İyileştirme](../mfc/mfc-activex-controls-optimization.md). Bilinen adlar, [Internet 'Teki ActiveX denetimlerinde](../mfc/activex-controls-on-the-internet.md)açıklandığı gibi, özellikleri ve büyük Blobları zaman uyumsuz olarak indirmek için kullanılabilir.
+[ActiveX Denetimleri: Optimizasyon'da](../mfc/mfc-activex-controls-optimization.md)açıklandığı gibi optimizasyonlar da ekleyebilirsiniz. Monikers özellikleri ve büyük BLOBs asynchronously indirmek için kullanılabilir, [Internet üzerinde ActiveX Denetimleri](../mfc/activex-controls-on-the-internet.md)açıklandığı gibi.
 
-##  <a name="_core_packaging_code_for_downloading"></a>Indirme için paketleme kodu
+## <a name="packaging-code-for-downloading"></a><a name="_core_packaging_code_for_downloading"></a>İndirme için Ambalaj Kodu
 
-Bu konu hakkında daha fazla bilgi için bkz. [paketleme ActiveX denetimleri](https://docs.microsoft.com//previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa751974%28v%3dvs.85%29).
+Bu konuda daha fazla bilgi için [Packaging ActiveX Controls](https://docs.microsoft.com//previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa751974%28v%3dvs.85%29)'e bakın.
 
-### <a name="the-codebase-tag"></a>CODEBASE etiketi
+### <a name="the-codebase-tag"></a>CODEBASE Etiketi
 
-ActiveX denetimleri `<OBJECT>` etiketi kullanılarak Web sayfalarına katıştırılır. `<OBJECT>` Etiketin parametresi ,denetimin`CODEBASE` indirileceği konumu belirtir. `CODEBASE`, bir dizi farklı dosya türünü başarıyla işaret edebilir.
+ActiveX denetimleri etiketi kullanarak `<OBJECT>` Web sayfalarına gömülür. `<OBJECT>` Etiketin `CODEBASE` parametresi, denetimi karşıdan yükleyecek yeri belirtir. `CODEBASE`başarılı bir şekilde farklı dosya türleri bir dizi işaret edebilir.
 
-### <a name="using-the-codebase-tag-with-an-ocx-file"></a>Bir OCX dosyası ile CODEBASE etiketini kullanma
+### <a name="using-the-codebase-tag-with-an-ocx-file"></a>OCX Dosyasıyla CODEBASE Etiketini Kullanma
 
 ```
 CODEBASE="http://example.microsoft.com/mycontrol.ocx#version=4,
@@ -61,17 +61,17 @@ CODEBASE="http://example.microsoft.com/mycontrol.ocx#version=4,
     1086"
 ```
 
-Bu çözüm yalnızca denetimin. ocx dosyasını indirir ve istemci makinesine zaten yüklü olan destekleyen dll 'Leri gerektirir. Internet Explorer görsel C++ denetimler Için destekleme dll 'leriyle birlikte geldiği için, bu C++, Visual ile oluşturulan Internet Explorer ve MFC ActiveX denetimleri için de çalışır. Bu denetimi görüntülemek için ActiveX denetimi özellikli başka bir Internet tarayıcısı kullanılırsa bu çözüm çalışmaz.
+Bu çözüm yalnızca denetimin .ocx dosyasını karşıdan yükler ve istemci makinesine zaten yüklenmiş olan destekleyici DL'lerin olmasını gerektirir. Bu, Visual C++ ile oluşturulmuş Internet Explorer ve MFC ActiveX denetimleri için çalışır, çünkü Internet Explorer, Visual C++ denetimleri için destekleyici DL'lerle birlikte çalışır. ActiveX denetimine sahip başka bir Internet tarayıcısı bu denetimi görüntülemek için kullanılırsa, bu çözüm çalışmaz.
 
-### <a name="using-the-codebase-tag-with-an-inf-file"></a>KOD temelı etiketini bir INF dosyası ile kullanma
+### <a name="using-the-codebase-tag-with-an-inf-file"></a>CODEBASE Etiketini INF Dosyasıyla Kullanma
 
 ```
 CODEBASE="http://example.microsoft.com/trustme.inf"
 ```
 
-Bir. inf dosyası, bir. ocx ve destekleyici dosyalarının yüklenmesini denetler. Bu yöntem, bir. inf dosyasını imzalamak mümkün olmadığından önerilmez (bkz. kod imzalama işaretçileri için [Imzalama kodu](#_core_signing_code) ).
+Bir .inf dosyası bir .ocx ve destekleyici dosyalarının yüklenmesini denetler. Bir .inf dosyasını imzalamak mümkün olmadığından bu yöntem önerilmez (kod imzalama işaretçileri için [İmzalama Kodu'na](#_core_signing_code) bakın).
 
-### <a name="using-the-codebase-tag-with-a-cab-file"></a>KOD temelı etiketini bir CAB dosyası ile kullanma
+### <a name="using-the-codebase-tag-with-a-cab-file"></a>CAB Dosyasıyla CODEBASE Etiketini Kullanma
 
 ```
 CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,
@@ -80,19 +80,19 @@ CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,
     0"
 ```
 
-Dolap dosyaları, MFC kullanan ActiveX denetimlerini paketlemek için önerilen yoldur. Bir dolap dosyasında MFC ActiveX denetimi paketleme, ActiveX denetiminin ve bağımlı dll 'lerin (MFC DLL 'Leri gibi) yüklenmesine yönelik bir. inf dosyasının eklenmesini sağlar. CAB dosyası kullanmak, daha hızlı indirme için kodu otomatik olarak sıkıştırır. Bileşen indirme için bir. cab dosyası kullanıyorsanız, tüm. cab dosyasını tek bir bileşenden imzalamanız daha hızlıdır.
+Dolap dosyaları, MFC kullanan ActiveX denetimlerini paketlemenin önerilen yoludur. Bir mfc ActiveX denetimini bir dolap dosyasında paketlemek, ActiveX denetiminin ve bağımlı DLL'lerin (MFC DL'ler gibi) yüklenmesini denetlemek için bir .inf dosyasının eklenmesine olanak tanır. CAB dosyası kullanmak, kodu daha hızlı indirmek için otomatik olarak sıkıştırır. Bileşen indirmek için bir .cab dosyası kullanıyorsanız, .cab dosyasının tamamını imzalamak her bir bileşenden daha hızlıdır.
 
-### <a name="creating-cab-files"></a>CAB dosyaları oluşturuluyor
+### <a name="creating-cab-files"></a>CAB Dosyaları Oluşturma
 
-Dolap dosyalarını oluşturmaya yönelik araçlar artık [Windows 10 SDK 'sının](https://dev.windows.com/downloads/windows-10-sdk)bir parçasıdır.
+Araçlar dolap dosyaları oluşturmak için artık [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)parçasıdır.
 
-Tarafından `CODEBASE` işaret edilen dolap dosyası, ActiveX denetiminizin. ocx dosyasını ve yüklemesini denetlemek için bir. inf dosyasını içermelidir. Denetim dosyanızın adını ve bir. inf dosyasını belirterek dolap dosyasını oluşturursunuz. Bu dolap dosyasında sistemde zaten mevcut olabilecek bağımlı dll 'Leri eklemeyin. Örneğin, MFC DLL 'Leri ayrı bir dolap dosyasında paketlenir ve denetleyen. inf dosyası tarafından başvurulur.
+Tarafından işaret edilen `CODEBASE` dolap dosyası, ActiveX denetiminiz için .ocx dosyasını ve yüklemesini denetlemek için bir .inf dosyasını içermelidir. Denetim dosyanızın adını ve .inf dosyasını belirterek kabine dosyasını oluşturursunuz. Bu kabine dosyasında sistemde zaten var olabilecek bağımlı DL'leri eklemeyin. Örneğin, MFC DL'ler ayrı bir dolap dosyasında paketlenir ve .inf dosyası nın denetlenen tarafından yönlendirilir.
 
-CAB dosyası oluşturma hakkında ayrıntılı bilgi için bkz. [cab dosyası oluşturma](/windows/win32/devnotes/cabinet-api-functions).
+CAB dosyası oluşturma hakkında ayrıntılı bilgi için cab [dosyası oluşturma](/windows/win32/devnotes/cabinet-api-functions)bilgisine bakın.
 
-### <a name="the-inf-file"></a>INF dosyası
+### <a name="the-inf-file"></a>INF Dosyası
 
-Aşağıdaki örnek, spındial. inf, desteklenen dosyaları ve MFC Spındial denetimi için gereken sürüm bilgilerini listeler. MFC DLL 'Lerinin bir Microsoft Web sitesi olduğunu unutmayın. Mfc42. cab, Microsoft tarafından sağlanır ve imzalanır.
+Aşağıdaki örnek, spindial.inf, destekleyen dosyaları ve MFC Spindial denetimi için gerekli sürüm bilgilerini listeler. MFC DLS'lerin konumunun bir Microsoft Web sitesi olduğuna dikkat edin. mfc42.cab Microsoft tarafından sağlanır ve imzalanır.
 
 ```
 Contents of spindial.inf:
@@ -112,9 +112,9 @@ file-win32-x86=http://activex.microsoft.com/controls/vc/mfc42.cab
     0
 ```
 
-### <a name="the-object-tag"></a>\<Nesne > etiketi
+### <a name="the-object-tag"></a>\<NESNE> Etiketi
 
-Aşağıdaki örnek, MFC spındial örnek denetimini paketlemek için `<OBJECT>` etiketinin kullanımını gösterir.
+Aşağıdaki örnek, MFC `<OBJECT>` Spindial örnek denetimini paketlemek için etiketi kullanarak gösteriş göstermektedir.
 
 ```
 <OBJECT ID="Spindial1" WIDTH=100 HEIGHT=51
@@ -128,72 +128,72 @@ Aşağıdaki örnek, MFC spındial örnek denetimini paketlemek için `<OBJECT>`
 </OBJECT>
 ```
 
-Bu durumda, spındial. cab dosyası, spındial. ocx ve spındial. inf olmak üzere iki dosya içerir. Aşağıdaki komut, dolap dosyasını oluşturacak:
+Bu durumda, spindial.cab iki dosya, spindial.ocx ve spindial.inf içerecektir. Aşağıdaki komut kabine dosyasını oluşturur:
 
 ```
 C:\CabDevKit\cabarc.exe -s 6144 N spindial.cab spindial.ocx spindial.inf
 ```
 
-`-s 6144` Parametresi kod imzalama için dolapta alan ayırır.
+Parametre, `-s 6144` kod imzalama için dolapta yer ayırır.
 
-### <a name="the-version-tag"></a>Sürüm etiketi
+### <a name="the-version-tag"></a>Sürüm Etiketi
 
-Buraya `#Version` , bir cab dosyası ile belirtilen bilgilerin, `<OBJECT>` etiketin *ClassID* parametresi tarafından belirtilen denetime uygulandığını unutmayın.
+Burada, CAB `#Version` dosyasıyla belirtilen bilgilerin etiketin *CLASSID* parametresi tarafından `<OBJECT>` belirtilen denetime uygulandığını unutmayın.
 
-Belirtilen sürüme bağlı olarak, denetiminizin indirilmesini zorla indirebilirsiniz. *Kod temeli* parametresi dahil olmak `OBJECT` üzere etiketin tüm özellikleri için bkz. W3C başvurusu.
+Belirtilen sürüme bağlı olarak, denetiminizin karşıdan yüklerini indirmeye zorlanabilirsiniz. `OBJECT` *CODEBASE* parametresi de dahil olmak üzere etiketin tam özellikleri için W3C referansına bakın.
 
-##  <a name="_core_marking_a_control_safe_for_scripting_and_initializing"></a>Bir denetimi betik oluşturma ve başlatma için güvenli olarak işaretleme
+## <a name="marking-a-control-safe-for-scripting-and-initializing"></a><a name="_core_marking_a_control_safe_for_scripting_and_initializing"></a>Komut Dosyası Ve Başlatma için Denetim Güvenli İşaretleme
 
-Web sayfalarında kullanılan ActiveX denetimleri, komut dosyası oluşturma için güvenli olarak işaretlenmelidir ve gerçek güvende olmaları durumunda başlatma için güvenlidir. Güvenli denetim, disk GÇ gerçekleştirmez veya bir makinenin belleğine veya kayıt defterlerine doğrudan erişemez.
+Web sayfalarında kullanılan ActiveX denetimleri komut dosyası için güvenli ve aslında güvenliyse başlatma için güvenli olarak işaretlenmelidir. Güvenli bir denetim disk IO gerçekleştirmez veya doğrudan bir makinenin belleği veya kayıtlarına erişmez.
 
-Denetimler, komut dosyası ve kayıt defteri aracılığıyla başlatılması için güvenli olarak işaretlenebilir. Denetim `DllRegisterServer` , kayıt defterinde betik oluşturma ve kalıcılık için güvenli olarak işaretlemek üzere aşağıdakine benzer girdileri eklemek için değiştirin. Alternatif bir yöntem uygulamaktır `IObjectSafety`.
+Denetimler komut dosyası için güvenli ve kayıt defteri üzerinden başlatma için güvenli olarak işaretlenebilir. Denetimi `DllRegisterServer` komut dosyası ve kayıt defterinde kalıcılık için güvenli olarak işaretlemek için aşağıdakilere benzer girişler eklemek için değiştirin. Alternatif bir yöntem `IObjectSafety`uygulamaktır.
 
-Komut dosyası oluşturma ve kalıcılık için güvenli olarak işaretlemek üzere denetiminizin GUID 'Leri (genel benzersiz tanımlayıcılar) tanımlayacaksınız. Güvenli bir şekilde komut dosyasıyla kullanılabilecek denetimler aşağıdakine benzer bir kayıt defteri girişi içerir:
+Komut dosyası ve kalıcılık için güvenli işaretlemek için denetiminiz için GUID'leri (Global Olarak Benzersiz Tanımlayıcılar) tanımlarsınız. Güvenli bir şekilde komut dosyası yla yazılabilir denetimler, aşağıdakilere benzer bir kayıt defteri girişi içerir:
 
 ```
 HKEY_CLASSES_ROOT\Component Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}
 ```
 
-Kalıcı verilerden güvenle başlatılan denetimler şuna benzer bir kayıt defteri girdisiyle Kalıcılık için güvenli olarak işaretlenir:
+Kalıcı verilerden güvenli bir şekilde başharfe atılabilir denetimler, benzer bir kayıt defteri girişiyle kalıcılık için güvenli olarak işaretlenir:
 
 ```
 HKEY_CLASSES_ROOT\Component Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}
 ```
 
-Anahtarlarınızı aşağıdaki sınıf kimliğiyle ilişkilendirmek için aşağıdakine benzer girdileri ekleyin (denetiminizin sınıf kimliğini `{06889605-B8D0-101A-91F1-00608CEAD5B3}`yerine).
+Anahtarlarınızı aşağıdaki sınıf kimliğiyle ilişkilendirmek için aşağıdakilere benzer `{06889605-B8D0-101A-91F1-00608CEAD5B3}`girişler ekleyin (denetiminizin sınıf kimliğinin yerine) ekleyin:
 
 ```
 HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}
 HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}
 ```
 
-##  <a name="_core_licensing_issues"></a>Lisanslama sorunları
+## <a name="licensing-issues"></a><a name="_core_licensing_issues"></a>Lisans Sorunları
 
-Bir Web sayfasında lisanslı bir denetim kullanmak istiyorsanız, lisans sözleşmesinin Internet 'te kullanılmasına izin verdiğini ve bunun için bir lisans paketi dosyası (LPK) oluşturup oluşturmadığını doğrulamanız gerekir.
+Bir Web sayfasında lisanslı bir denetim kullanmak istiyorsanız, lisans sözleşmesinin Internet'te kullanımına izin verdiğini doğrulamanız ve bunun için bir lisans paketi dosyası (LPK) oluşturmanız gerekir.
 
-Internet Explorer çalıştıran bilgisayarın denetimi kullanmak üzere lisansı yoksa, bir HTML sayfasında lisanslı bir ActiveX denetimi düzgün yüklenmez. Örneğin, lisanslı bir denetim görsel C++kullanılarak oluşturulduysa, denetımı kullanan html sayfası, denetimin oluşturulduğu bilgisayara düzgün şekilde yüklenir, ancak lisanslama bilgileri dahil edilmedikleri takdirde farklı bir bilgisayara yüklenmeyecektir.
+Internet Explorer çalıştıran bilgisayar denetimi kullanmak için lisanslı değilse, lisanslı ActiveX denetimi HTML sayfasında düzgün yüklenmez. Örneğin, Visual C++ kullanılarak lisanslı bir denetim oluşturulmuşsa, denetimi kullanan HTML sayfası denetimin oluşturulduğu bilgisayara düzgün yüklenir, ancak lisans bilgileri dahil edilmedikçe farklı bir bilgisayara yüklenmez.
 
-Internet Explorer 'da lisanslı bir ActiveX denetimini kullanmak için, denetimin lisansının izin verdiğinden emin olmak üzere satıcının lisans sözleşmesini denetlemeniz gerekir:
+Internet Explorer'da lisanslı activex denetimini kullanmak için, denetim lisansının izin verdiğini doğrulamak için satıcının lisans sözleşmesini denetlemeniz gerekir:
 
 - Yeniden Dağıtım
 
-- Internet 'te denetim kullanımı
+- Internet'te denetimin kullanımı
 
-- CodeBase parametresinin kullanımı
+- Codebase parametresinin kullanımı
 
-Lisanslı olmayan bir makinede bir HTML sayfasında lisanslı bir denetim kullanmak için, bir lisans paketi dosyası (LPK) oluşturmanız gerekir. LPK dosyası, HTML sayfasındaki lisanslı denetimlerin çalışma zamanı lisanslarını içerir. Bu dosya LPK_TOOL aracılığıyla oluşturulur. ActiveX SDK ile birlikte gelen EXE.
+Lisanssız bir makinedeki HTML sayfasında lisanslı bir denetim kullanmak için bir lisans paketi dosyası (LPK) oluşturmanız gerekir. LPK dosyası, HTML sayfasında lisanslı denetimler için çalışma zamanı lisansları içerir. Bu dosya LPK_TOOL üzerinden oluşturulur. ActiveX SDK ile birlikte gelen EXE.
 
-#### <a name="to-create-an-lpk-file"></a>Bir LPK dosyası oluşturmak için
+#### <a name="to-create-an-lpk-file"></a>LPK dosyası oluşturmak için
 
-1. LPK_TOOL çalıştırın. EXE ' yi kullanarak denetleyin.
+1. LPK_TOOL koş. EXE denetimi kullanmak için lisanslı bir bilgisayarda.
 
-1. **Lisans paketi yazma aracı** iletişim kutusunda, **kullanılabilir denetimler** liste kutusunda, HTML sayfasında kullanılacak olan her lisanslı ActiveX denetimini seçin ve **Ekle**' ye tıklayın.
+1. Lisans **Paketi Yazma Aracı** iletişim kutusunda, **Kullanılabilir Denetimler** liste kutusunda, HTML sayfasında kullanılacak her lisanslı ActiveX denetimini seçin ve **Ekle'yi**tıklatın.
 
-1. **Kaydet & çıkış** ' a tıklayın ve lpk dosyası için bir ad yazın. Bu, LPK dosyasını oluşturur ve uygulamayı kapatır.
+1. **Çıkış & Kaydet'i** tıklatın ve LPK dosyası için bir ad yazın. Bu, LPK dosyasını oluşturur ve uygulamayı kapatır.
 
-#### <a name="to-embed-a-licensed-control-on-an-html-page"></a>Lisanslı bir denetimi HTML sayfasına eklemek için
+#### <a name="to-embed-a-licensed-control-on-an-html-page"></a>Html sayfasına lisanslı denetim gömmek için
 
-1. HTML sayfanızı düzenleyin. HTML sayfasında, diğer \< \<herhangi bir nesne > etiketini kullanmadan önce, Lisans Yöneticisi nesnesi için bir nesne > etiketi ekleyin. Lisans Yöneticisi, Internet Explorer ile yüklenen bir ActiveX denetimidir. Sınıf KIMLIĞI aşağıda gösterilmiştir. Lisans Yöneticisi nesnesinin LPKPath özelliğini LPK dosyasının yolu ve adı olarak ayarlayın. HTML sayfası başına yalnızca bir LPK dosyasına sahip olabilirsiniz.
+1. HTML sayfanızı edin. HTML sayfasında, diğer \< \<OBJECT> etiketlerinden önce Lisans Yöneticisi nesnesi için object> etiketi ekleyin. Lisans Yöneticisi, Internet Explorer yüklü bir ActiveX denetimidir. Sınıf kimliği aşağıda gösterilmiştir. Lisans Yöneticisi nesnesinin LPKPath özelliğini LPK dosyasının yol ve adına ayarlayın. HTML sayfası başına yalnızca bir LPK dosyanız olabilir.
 
 ```
 <OBJECT CLASSID = "clsid:5220cb21-c88d-11cf-b347-00aa00a28331">
@@ -201,13 +201,13 @@ Lisanslı olmayan bir makinede bir HTML sayfasında lisanslı bir denetim kullan
 </OBJECT>
 ```
 
-1. Lisans Yöneticisi etiketinden sonra lisanslı denetiminizin Nesne>etiketiniekleyin.\<
+1. Lisans Yöneticisi \<etiketinden sonra lisanslı denetiminiz için OBJECT> etiketini ekleyin.
 
-   Örneğin, Microsoft maskelenmiş düzenleme denetimini görüntüleyen bir HTML sayfası aşağıda gösterilmiştir. İlk sınıf KIMLIĞI, Lisans Yöneticisi denetimine yöneliktir, ikinci sınıf KIMLIĞI maskelenmiş düzenleme denetimine yöneliktir. Etiketleri, daha önce oluşturduğunuz. lpk dosyasının göreli yolunu işaret etmek üzere değiştirin ve denetiminizin sınıf KIMLIĞINI içeren bir nesne etiketi ekleyin.
+   Örneğin, Microsoft Maskeli Edit denetimini görüntüleyen bir HTML sayfası aşağıda gösterilmiştir. Birinci sınıf kimlik Lisans Yöneticisi denetimi için, ikinci sınıf kimlik maskeli edit denetimi içindir. Etiketleri daha önce oluşturduğunuz .lpk dosyasının göreli yoluna işaret etmek için değiştirin ve denetiminiz için sınıf kimliğini içeren bir nesne etiketi ekleyin.
 
-1. Npusula ActiveX eklentisini kullanıyorsanız, LPK dosyanız için ekleme>özniteliğiniekleyin.\<
+1. NCompass \<ActiveX eklentisini kullanıyorsanız, LPK dosyanız için EMBED> özniteliğini ekleyin.
 
-   Denetiminiz, diğer etkin etkin tarayıcılarda görüntülenebilir — Örneğin, npusula ActiveX eklentisini kullanan Netscape — ekleme > sözdizimini aşağıda gösterildiği gibi eklemeniz \<gerekir.
+   Denetiminiz diğer Etkin özellikli tarayıcılarda görüntülenebiliyorsa (örneğin, NCompass ActiveX eklentisini kullanan \<Netscape), embed> sözdizimini aşağıda gösterildiği gibi eklemeniz gerekir.
 
 ```
 <OBJECT CLASSID="clsid:5220cb21-c88d-11cf-b347-00aa00a28331">
@@ -220,58 +220,58 @@ Lisanslı olmayan bir makinede bir HTML sayfasında lisanslı bir denetim kullan
 </OBJECT>
 ```
 
-Denetim lisanslama hakkında daha fazla bilgi için bkz [. ActiveX denetimleri: ActiveX denetimini](../mfc/mfc-activex-controls-licensing-an-activex-control.md)lisanslama.
+Denetim lisanslama hakkında daha fazla bilgi için [ActiveX Denetimleri: ActiveX Denetimi'ni lisanslama.](../mfc/mfc-activex-controls-licensing-an-activex-control.md)
 
-##  <a name="_core_signing_code"></a>İmzalama kodu
+## <a name="signing-code"></a><a name="_core_signing_code"></a>İmza Kodu
 
-Kod imzalama kod kaynağını belirlemek ve kodun imzalanmasından bu yana değiştirilmediğinden emin olmak için tasarlanmıştır. Tarayıcı güvenlik ayarlarına bağlı olarak, kullanıcılar Kod indirilmeden önce uyarı verebilir. Kullanıcılar belirli sertifika sahiplerine veya şirketlere güvenmeyi seçebilir ve bu durum, güvenilir tarafından imzalanan kodun uyarı olmadan indirileceği durumdur. Değişiklik yapmaktan kaçınmak için kod dijital olarak imzalandı.
+Kod imzalama, kodun kaynağını belirlemek ve kod imzalandığı tarihten bu yana değişmediğini garanti etmek için tasarlanmıştır. Tarayıcı güvenlik ayarlarına bağlı olarak, kod indirilmeden önce kullanıcılar uyarılabilir. Kullanıcılar belirli sertifika sahiplerine veya şirketlere güvenmeyi seçebilir, bu durumda güvenilenler tarafından imzalanmış kod uyarı yapılmadan indirilir. Kod, kurcalanmayı önlemek için dijital olarak imzalanır.
 
-Denetiminizin, güven uyarı iletileri görüntülenmeden otomatik olarak indirilebilmesi için son kodunuzun imzalandığından emin olun. Kodu imzalama hakkında daha fazla bilgi için, ActiveX SDK 'da Authenticode ile ilgili belgelere bakın ve [BIR cab dosyasını imzalama](/windows/win32/devnotes/cabinet-api-functions)bölümüne bakın.
+Denetiminizin güven uyarı iletileri görüntülemeden otomatik olarak indirilebilmesini sağlamak için son kodunuzun imzalandığından emin olun. Kodu niçin imzalayacağınız hakkında ayrıntılı bilgi için ActiveX SDK'daki Authenticode ile ilgili belgeleri kontrol edin ve [CAB Dosyasını İmzalama](/windows/win32/devnotes/cabinet-api-functions)bölümüne bakın.
 
-Güven ve tarayıcı güvenlik düzeyi ayarlarına bağlı olarak, imzalayan kişiyi veya şirketi belirlemek için bir sertifika görüntülenebilir. Güvenlik düzeyi none ise veya imzalanmış denetimin sertifika sahibi güvenilirse, bir sertifika gösterilmeyecektir. Tarayıcı güvenliği ayarının denetiminizin indirilip indirilmediğini ve bir sertifikanın görüntülendiğini nasıl belirleyeceğini öğrenmek için bkz. [Internet Explorer tarayıcı güvenlik düzeyleri ve denetim davranışı](#_core_internet_explorer_browser_safety_levels_and_control_behavior) .
+Güven ve tarayıcı güvenlik düzeyi ayarlarına bağlı olarak, imzalayan kişi veya şirketi tanımlamak için bir sertifika görüntülenebilir. Güvenlik düzeyi yoksa veya imzalı denetimin sertifika sahibine güvenilirse, sertifika görüntülenmez. Tarayıcı güvenlik ayarının denetiminizin indirilip indirilmediğini ve sertifikanın görüntülenip görüntülenmediğini nasıl belirleyeceği hakkında ayrıntılar için [Internet Explorer Tarayıcı Güvenlik Düzeyleri ve Denetim Davranışı'na](#_core_internet_explorer_browser_safety_levels_and_control_behavior) bakın.
 
-Dijital imzalama kodu, imzalandığından bu yana değiştirilmiyor. Kod karması, sertifikaya alınır ve sertifikayı katıştırılır. Bu karma daha sonra kod indirildikten sonra, ancak çalıştırılmadan önce alınan kodun karması ile karşılaştırılır. VeriSign gibi şirketler, kodu imzalamak için gereken özel ve ortak anahtarları sağlayabilir. ActiveX SDK, test sertifikaları oluşturmaya yönelik bir yardımcı program olan MakeCert ile birlikte gelir.
+Dijital imzalama garanti kodu imzalandıktan sonra değişmedi. Kodun bir karma alınır ve sertifikaya gömülür. Bu karma daha sonra kod indirildikten sonra ancak çalıştırmadan önce alınan kodun bir karma ile karşılaştırılır. Verisign gibi şirketler, kodu imzalamak için gereken özel ve ortak anahtarları sağlayabilir. ActiveX SDK, test sertifikaları oluşturmak için bir yardımcı program olan MakeCert ile birlikte gelir.
 
-##  <a name="_core_managing_the_palette"></a>Paleti yönetme
+## <a name="managing-the-palette"></a><a name="_core_managing_the_palette"></a>Paletin Yönetimi
 
-Kapsayıcılar, paleti ve **DISPID_AMBIENT_PALETTE**ortam özelliği olarak kullanılabilir hale getirir. Bir kapsayıcı (örneğin, Internet Explorer) kendi paletini belirleyebilmek için bir sayfadaki tüm ActiveX denetimleri tarafından kullanılan bir paleti seçer. Bu, ekran titreşmesini engeller ve tutarlı bir görünüm sunar.
+Kapsayıcılar paletbelirlemek ve bir ortam özelliği olarak kullanılabilir hale, **DISPID_AMBIENT_PALETTE.** Kapsayıcı (örneğin, Internet Explorer), bir sayfadaki tüm ActiveX denetimleri tarafından kendi paletlerini belirlemek için kullanılan bir palet seçer. Bu, ekranın titremesini önler ve tutarlı bir görünüm sunar.
 
-Bir denetim, paletteki `OnAmbientPropertyChange` değişikliklerin bildirimini işlemek için geçersiz kılınabilir.
+Bir denetim, `OnAmbientPropertyChange` paletteki değişikliklerin bildirimini işlemek için geçersiz kılınabilir.
 
-Bir denetim, paleti `OnGetColorSet` çizmek üzere bir renk kümesi döndürmek için geçersiz kılınabilir. Kapsayıcılar, bir denetimin palet duyarlı olup olmadığını anlamak için dönüş değerini kullanır.
+Bir denetim palet `OnGetColorSet` çizmek için bir renk kümesi döndürmek için geçersiz kılınabilir. Kapsayıcılar, denetimin palet farkında olup olmadığını belirlemek için iade değerini kullanır.
 
-OCX 96 yönergeleri altında, bir denetim her zaman arka planda paletini sağlamalıdır.
+OCX 96 yönergeleri altında, bir denetim her zaman arka planda paletini gerçekleştirmek gerekir.
 
-Çevresel palet özelliğini kullanmayan eski kapsayıcılar, WM_QUERYNEWPALETTE ve WM_PALETTECHANGED iletilerini gönderir. Bir denetim, bu `OnQueryNewPalette` iletileri `OnPaletteChanged` geçersiz kılabilir ve işleyebilir.
+Ortam paleti özelliğini kullanmayan eski kapsayıcılar WM_QUERYNEWPALETTE ve WM_PALETTECHANGED iletileri gönderir. Denetim geçersiz `OnQueryNewPalette` kılınabilir `OnPaletteChanged` ve bu iletileri işleyebilir.
 
-##  <a name="_core_internet_explorer_browser_safety_levels_and_control_behavior"></a>Internet Explorer tarayıcı güvenlik düzeyleri ve denetim davranışı
+## <a name="internet-explorer-browser-safety-levels-and-control-behavior"></a><a name="_core_internet_explorer_browser_safety_levels_and_control_behavior"></a>Internet Explorer Tarayıcı Güvenlik Düzeyleri ve Kontrol Davranışı
 
-Tarayıcı, Kullanıcı tarafından yapılandırılabilen güvenlik düzeyi seçeneklerine sahiptir. Web sayfaları, bir kullanıcının bilgisayarına zarar verebilecek etkin içerikleri içerebildiğinden, tarayıcılar kullanıcının güvenlik düzeyi seçeneklerini seçmesine izin verir. Tarayıcının güvenlik düzeylerini uygulayan yönteme bağlı olarak, bir denetim hiç indirilemeyebilir veya kullanıcının denetimin indirilip indirilmeyeceğini, çalışma zamanında seçmesine izin vermek için bir sertifika veya uyarı iletisi görüntüler. Internet Explorer 'da yüksek, orta ve düşük güvenlik seviyeleri altında ActiveX denetimlerinin davranışı aşağıda listelenmiştir.
+Tarayıcıda güvenlik düzeyi için kullanıcı tarafından yapılandırılabilen seçenekler vardır. Web sayfaları kullanıcının bilgisayarına zarar verebilecek etkin içerik içerebildiği için, tarayıcılar kullanıcının güvenlik düzeyi için seçenekler seçmesine olanak tanır. Bir tarayıcının güvenlik düzeylerini uygulama şekline bağlı olarak, bir denetim hiç indirilmeyebilir veya kullanıcının denetimi karşıdan yükleyip indirmeyeceğini çalışma zamanında seçmesine izin verecek bir sertifika veya uyarı iletisi görüntüler. ActiveX denetimlerinin Internet Explorer'daki yüksek, orta ve düşük güvenlik düzeyleri altında davranışı aşağıda listelenmiştir.
 
-### <a name="high-safety-mode"></a>Yüksek güvenlik modu
+### <a name="high-safety-mode"></a>Yüksek Güvenlik Modu
 
-- İmzasız denetimler indirilmez.
+- İmzasız denetimler karşıdan yüklenmez.
 
-- İmzalı denetimler, güvenilir değilse bir sertifika görüntüler (Kullanıcı bu sertifika sahibinden her zaman koda her zaman güvenmek için bir seçenek seçebilir).
+- İmzalanan denetimler, güvenilmemişse bir sertifika görüntüler (kullanıcı bundan böyle bu sertifika sahibinden her zaman koda güvenebileceğibir seçenek seçebilir).
 
-- Yalnızca güvenli olarak işaretlenen denetimlerin kalıcı verileri olur ve/veya komut dosyası oluşturulabilir.
+- Yalnızca güvenli olarak işaretlenmiş denetimlerde kalıcı veriler ve/veya komut dosyası olabilir.
 
-### <a name="medium-safety-mode"></a>Orta düzey güvenlik modu
+### <a name="medium-safety-mode"></a>Orta Güvenlik Modu
 
-- İmzasız denetimler, indirilmeden önce bir uyarı görüntüler.
+- İmzalanmamış denetimler indirmeden önce bir uyarı görüntüler.
 
-- İmzalı denetimler, güvenilir değilse bir sertifika görüntüler.
+- İmzalı denetimler, güvenilmemişse bir sertifika görüntüler.
 
-- Güvenli olarak işaretlenmemiş denetimler, bir uyarı görüntüler.
+- Güvenli olarak işaretlenmemiş denetimler bir uyarı görüntüler.
 
-### <a name="low-safety-mode"></a>Düşük güvenlik modu
+### <a name="low-safety-mode"></a>Düşük Güvenlik Modu
 
-- Denetimler uyarı vermeden indirilir.
+- Denetimler uyarı yapılmadan karşıdan yüklenir.
 
-- Betik oluşturma ve kalıcılık uyarı olmadan oluşur.
+- Komut dosyası ve kalıcılık uyarı olmadan oluşur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
-[MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
-[MFC ActiveX Denetimleri: ActiveX Denetimi Lisanslama](../mfc/mfc-activex-controls-licensing-an-activex-control.md)
+[MFC İnternet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
+[MFC ActiveX Denetimleri: ActiveX Denetimini Lisanslama](../mfc/mfc-activex-controls-licensing-an-activex-control.md)

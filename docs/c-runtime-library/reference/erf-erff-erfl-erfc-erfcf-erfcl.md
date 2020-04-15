@@ -1,6 +1,6 @@
 ---
 title: erf, erff, erfl, erfc, erfcf, erfcl
-ms.date: 01/31/2019
+ms.date: 4/2/2020
 api_name:
 - erff
 - erfl
@@ -8,6 +8,12 @@ api_name:
 - erfc
 - erfcf
 - erfcl
+- _o_erf
+- _o_erfc
+- _o_erfcf
+- _o_erfcl
+- _o_erff
+- _o_erfl
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,6 +26,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -39,16 +46,16 @@ helpviewer_keywords:
 - erfcf function
 - erfc function
 ms.assetid: 144d90d3-e437-41c2-a659-cd57596023b5
-ms.openlocfilehash: df724ed056c02d79b5b51f97ae4aaf8ae267fde5
-ms.sourcegitcommit: 8178d22701047d24f69f10d01ba37490e3d67241
+ms.openlocfilehash: ad7ad279d3686e4f33a6f5f901c60348c131b89a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "70937612"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81347917"
 ---
 # <a name="erf-erff-erfl-erfc-erfcf-erfcl"></a>erf, erff, erfl, erfc, erfcf, erfcl
 
-Hata işlevini veya bir değerin tamamlayıcı hata işlevini hesaplar.
+Bir değerin hata işlevini veya tamamlayıcı hata işlevini hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -87,30 +94,32 @@ long double erfcl(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*X*<br/>
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**HATAİŞLEV** Işlevleri *x*Gauss hata işlevini döndürür. **Erfc** işlevleri, *x*öğesinin tamamlayıcı Gauss hata işlevini döndürür.
+**Erf** fonksiyonları *x*Gauss hata işlevini döndürmektedir. **Erfc** fonksiyonları *x*tamamlayıcı Gauss hata işlevini döndürmektedir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**HATAİŞLEV** işlevleri, şöyle tanımlanan *x*Gauss hata işlevini hesaplar:
+**Erf** fonksiyonları *x'in*Gauss hata işlevini hesaplar:
 
-![X öğesinin hata işlevi](media/crt_erf_formula.PNG "X öğesinin hata işlevi")
+![x'in hata fonksiyonu](media/crt_erf_formula.PNG "x'in hata fonksiyonu")
 
-Tamamlayıcı Gauss Error işlevi, 1-HATAİŞLEV (x) olarak tanımlanır. **HATAİŞLEV** işlevleri-1,0 ile 1,0 arasında bir değer döndürür. Hata döndürme yok. **Erfc** işlevleri 0 ile 2 aralığında bir değer döndürür. *X* , **erfc**için çok büyükse, **errno** değişkeni **ERANGE**olarak ayarlanır.
+Tamamlayıcı Gauss hata fonksiyonu 1 - erf(x) olarak tanımlanır. **Erf** işlevleri -1,0 ile 1,0 aralığında bir değer döndürer. Hata iadesi yok. **Erfc** işlevleri 0 ile 2 aralığında bir değer döndürdü. *x* **erfc**için çok büyükse, **errno** değişkeni **ERANGE**olarak ayarlanır.
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **HATAİŞLEV** ve **erfc** aşırı yüklerini çağırabilirsiniz. C programında, **HATAİŞLEV** ve **erfc** her zaman bir **Double**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** ve **uzun** **çift** türleri alıp alan **aşırı erf** ve **erfc** yükleri arayabilirsiniz. Bir C programında, **erf** ve **erfc** her zaman almak ve bir **çift**dönmek .
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**HATAİŞLEV**, **erff**, **ERFL**, **erfc**, **erfcf**, **erfcl**|\<math. h >|
+|**erf**, **erff**, **erfl**, **erfc**, **erfcf**, **erfcl**|\<math.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

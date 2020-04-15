@@ -5,12 +5,12 @@ helpviewer_keywords:
 - tokens
 - translation units
 ms.assetid: 05e5f6f1-b8ea-4f74-af17-c0b9b5dbd3b5
-ms.openlocfilehash: 44d8956313053ca6c7a55994f241c00bd71092b4
-ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
+ms.openlocfilehash: 3984fe84e1761c785f3b3c4d7c5ef3c43d2528a2
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68340985"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81334619"
 ---
 # <a name="c-tokens"></a>C Belirteçleri
 
@@ -18,22 +18,22 @@ C kaynak programında, derleyici tarafından tanınan temel öğe "belirteçtir"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*belirteç*: *anahtar sözcük*
+*belirteç*: *anahtar kelime*
 
-*Tanımlayıcısını*
+*Tanımlayıcı*
 
-*sabit*
+*Sabit*
 
-*dize sabit değeri*
+*string-literal*
 
 *operator*
 
-*noktalama işareti*
+*noktalama*
 
 > [!NOTE]
->  ANSI sözdizimi kurallarının açıklaması için [C dili sözdizimi özetine](../c-language/c-language-syntax-summary.md) giriş bölümüne bakın.
+> ANSI sözdizimi sözleşmelerinin açıklaması için [C Dili Sözdizimi Özeti'ne](../c-language/c-language-syntax-summary.md) giriş bölümüne bakın.
 
-Bu bölümde açıklanan anahtar sözcükler, tanımlayıcılar, sabitler, dize sabit değerleri ve işleçler belirteçlerin örnekleridir. Köşeli ayraç ( **[]** ), küme ayracı ( **{}** ), parantez ( **()** ) ve virgül ( **,** ) gibi noktalama karakterleri de belirteçlerdir.
+Bu bölümde açıklanan anahtar sözcükler, tanımlayıcılar, sabitler, dize sabit değerleri ve işleçler belirteçlerin örnekleridir. Parantez (**[ ]**), parantez (**{ }**), parantez ( **( ) )** ) ) ve virgül ( , ) gibi noktalama karakterleri de belirteçlerdir.**,**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

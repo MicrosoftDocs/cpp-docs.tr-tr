@@ -1,6 +1,6 @@
 ---
 title: lround, lroundf, lroundl, llround, llroundf, llroundl
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - llround
 - llroundf
@@ -8,6 +8,12 @@ api_name:
 - lroundf
 - lround
 - lroundl
+- _o_llround
+- _o_llroundf
+- _o_llroundl
+- _o_lround
+- _o_lroundf
+- _o_lroundl
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,6 +26,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -39,16 +46,16 @@ helpviewer_keywords:
 - llroundf function
 - lroundl function
 ms.assetid: cfb88a35-54c6-469f-85af-f7d695dcfdd8
-ms.openlocfilehash: d849e838811abbed83499d6da283148650bab875
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: e73ae490fcd3e7d88228136b57d34491f0150764
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952995"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81341628"
 ---
 # <a name="lround-lroundf-lroundl-llround-llroundf-llroundl"></a>lround, lroundf, lroundl, llround, llroundf, llroundl
 
-Kayan noktalı bir değeri en yakın tamsayıya yuvarlar.
+Kayan nokta değerini en yakın tamsayıya yuvarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -87,28 +94,30 @@ long long llroundl(
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*X*<br/>
 Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Lround** ve **llround** işlevleri, en yakın **Long** veya **Long** **Long** tamsayıyı *x*öğesine döndürür. Kayan nokta yuvarlama modunun ayarı ne olursa olsun, yarı çift değerler sıfırdan uzağa yuvarlanır. Hata döndürme yok.
+**Lround** ve **llround** fonksiyonları x'e en yakın *x* **uzun** veya **uzun** **tümseci** döndürer. Kayan nokta yuvarlama modunun ayarına bakılmaksızın, yarı düzey değerleri sıfırdan yuvarlanır. Hata iadesi yok.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH Özel Durumu|Matherr İstisnası|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **IND**|yok|**_ETKI ALANI**|
+|± **QNAN**, **IND**|yok|**_DOMAIN**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** değerleri alıp döndüren **lround** veya **llround** aşırı yüklerini çağırabilirsiniz. C programında, **lround** ve **llround** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** ve **uzun** **çift** değerleri alan ve döndüren aşırı **lround** veya **llround** yükleri arayabilirsiniz. Bir C programında, **lround** ve **llround** her zaman almak ve bir **çift**dönmek .
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**lround**, **lroundf**, **lroundl**, **llround**, **llroundf**, **llroundl**|\<Math. h >|
+|**lround**, **lroundf**, **lroundl**, **llroundf**, **llroundf**, **llroundl**|\<math.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

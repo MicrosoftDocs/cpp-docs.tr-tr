@@ -1,124 +1,124 @@
 ---
-title: 'İzlenecek yol: (2. bölüm) MFC karalama uygulamasını güncelleştirme'
+title: 'İzlenecek yol: MFC Karalama Uygulamasını Güncelleştirme (2. Bölüm)'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - walkthroughs [MFC]
 ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
-ms.openlocfilehash: d4655c0a4a8847642b75575e324a291e39bbf42a
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: bc204a152168accf3731eede8ca9ef960ab121d2
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64558168"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81360224"
 ---
-# <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>İzlenecek yol: (2. bölüm) MFC karalama uygulamasını güncelleştirme
+# <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>İzlenecek yol: MFC Karalama Uygulamasını Güncelleştirme (2. Bölüm)
 
-[1. bölüm](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md) Klasik'ten Office Fluent Şerit ekleme gösterdi bu kılavuzun uygulama karalama. Bu bölüm, Şerit paneli ve kullanıcıların, menüler ve komutlar yerine kullanabileceği denetimler ekleme işlemi gösterilmektedir.
+Bu izbin [bölüm 1'i,](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md) klasik Karalama uygulamasına Office Fluent Ribbon'un nasıl ekleyeceğini gösterdi. Bu bölümde, menüler ve komutlar yerine kullanıcıların kullanabileceği şerit panelleri ve denetimleri nasıl ekleyeceğiniz gösterilmektedir.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Ön koşullar
 
 [Visual C++ Örnekleri](../overview/visual-cpp-samples.md)
 
-##  <a name="top"></a> Bölümleri
+## <a name="sections"></a><a name="top"></a>Bölüm
 
-Kılavuzun bu bölümü aşağıdaki bölümleri içerir:
+Bu bölümün bu bölümü aşağıdaki bölümlere sahiptir:
 
-- [Şerit için yeni bir panel ekleme](#addnewpanel)
+- [Şerite Yeni Paneller Ekleme](#addnewpanel)
 
-- [Şerit için bir Yardım Masası ekleme](#addhelppanel)
+- [Şerite Yardım Paneli Ekleme](#addhelppanel)
 
-- [Şerit için bir kalem Panel ekleme](#addpenpanel)
+- [Şerite Kalem Paneli Ekleme](#addpenpanel)
 
-- [Şerit rengi düğmesi ekleme](#addcolorbutton)
+- [Şerite Renk Düğmesi Ekleme](#addcolorbutton)
 
-- [Belge sınıfına renk üye ekleme](#addcolormember)
+- [Belge Sınıfına Renkli Üye Ekleme](#addcolormember)
 
-- [Kalemler başlatma ve tercihlerini kaydediliyor](#initpensave)
+- [Kalemleri Başlatma ve Tercihleri Kaydetme](#initpensave)
 
-##  <a name="addnewpanel"></a> Şerit için yeni bir panel ekleme
+## <a name="adding-new-panels-to-the-ribbon"></a><a name="addnewpanel"></a>Şerite Yeni Paneller Ekleme
 
-Bu adımları nasıl ekleneceğini göstermektedir bir **görünümü** araç çubuğu ve durum çubuğunun görünürlüğünü denetleme iki onay kutuları içeren paneli ve ayrıca bir **penceresi** dikey yönlendirilmiş bir bölme içeren paneli denetimleri oluşturma ve düzenleme Windows Çok Belgeli Arabirim (MDI) düğmesi.
+Bu adımlar, araç çubuğunun ve durum çubuğunun görünürlüğünü kontrol eden iki onay kutusu içeren bir **Görünüm** paneli nin ve ayrıca birden çok belge arabirimi (MDI) penceresinin oluşturulmasını ve düzenlenmesini kontrol eden dikey olarak yönlendirilmiş bölünmüş düğme içeren bir **Pencere** panelini gösterir.
 
-### <a name="to-add-a-view-panel-and-window-panel-to-the-ribbon-bar"></a>Görüntüleme paneli ve pencere paneli Şerit çubuğuna eklemek için
+### <a name="to-add-a-view-panel-and-window-panel-to-the-ribbon-bar"></a>Şerit çubuğuna Görünüm paneli ve Pencere paneli eklemek için
 
-1. Adlı bir panel oluşturma `View`, araç çubuğu ve durum çubuğu geçiş iki onay kutularını sahiptir.
+1. Durum çubuğunu `View`ve araç çubuğunu değiştiren iki onay kutusu olan , adlı bir panel oluşturun.
 
-   1. Gelen **araç kutusu**, sürükleyin bir **paneli** için **giriş** kategorisi. İki sürükleyin **onay kutularını** paneline.
+   1. Araç **Kutusundan,** Bir **Paneli** **Ana Sayfa** kategorisine sürükleyin. Ardından iki **Onay Kutusu'nu** panele sürükleyin.
 
-   1. Bölmenin özelliklerini değiştirmek için tıklayın. Değişiklik **açıklamalı alt yazı** için `View`.
+   1. Özelliklerini değiştirmek için paneli tıklatın. **Resim Yazısını** ' ile `View`değiştir
 
-   1. Özelliklerini değiştirmek için onay kutusuna tıklayın. Değişiklik **kimliği** için `ID_VIEW_TOOLBAR` ve **açıklamalı alt yazı** için `Toolbar`.
+   1. Özelliklerini değiştirmek için ilk onay kutusunu tıklatın. **Kimliği** `ID_VIEW_TOOLBAR` ve **Resim Yazısını** ' olarak `Toolbar`değiştirin
 
-   1. Özelliklerini değiştirmek için ikinci onay kutusuna tıklayın. Değişiklik **kimliği** için `ID_VIEW_STATUS_BAR` ve **açıklamalı alt yazı** için `Status Bar`.
+   1. Özelliklerini değiştirmek için ikinci onay kutusunu tıklatın. **Kimliği** `ID_VIEW_STATUS_BAR` ve **Resim Yazısını** ' olarak `Status Bar`değiştirin
 
-1. Adlı bir panel oluşturma `Window` , Bölünmüş düğme vardır. Kullanıcı bölünmüş düğmeye tıkladığında bir kısayol menüsünü karalama uygulamada zaten tanımlanmış olan üç komutları görüntüler.
+1. Bölünmüş düğmesi `Window` olan adlandırılmış bir panel oluşturun. Bir kullanıcı bölme düğmesini tıklattığında, kısayol menüsü Karalama uygulamasında zaten tanımlanmış üç komut görüntüler.
 
-   1. Gelen **araç kutusu**, sürükleyin bir **paneli** için **giriş** kategorisi. Ardından bir **düğmesi** paneline.
+   1. Araç **Kutusundan,** Bir **Paneli** **Ana Sayfa** kategorisine sürükleyin. Ardından bir **Düğmeyi** panele sürükleyin.
 
-   1. Bölmenin özelliklerini değiştirmek için tıklayın. Değişiklik **açıklamalı alt yazı** için `Window`.
+   1. Özelliklerini değiştirmek için paneli tıklatın. **Resim Yazısını** ' ile `Window`değiştir
 
-   1. Düğmesine tıklayın. Değişiklik **açıklamalı alt yazı** için `Windows`, **anahtarları** için `w`, **büyük görüntü dizini** için `1`, ve **ayırma modu** için `False`. Ardından üç nokta simgesine tıklayın (**...** ) yanındaki **menü öğeleri** açmak için **öğe düzenleyici** iletişim kutusu.
+   1. Düğmeyi tıklatın. Resim Yazı `Windows`Resim **Yazısını** , `1` **Anahtarlar** `w`için, `False`Büyük Görüntü **Dizini'ni** ve Split Mode **'u** ' ya değiştirin. Ardından **Öğeler Düzenleyicisi** iletişim kutusunu açmak için **Menü Öğeleri'nin** yanındaki elipsis (**...**) öğesini tıklatın.
 
-   1. Tıklayın **Ekle** üç düğme eklemek için üç kez.
+   1. Üç düğme eklemek için üç kez **Ekle'yi** tıklatın.
 
-   1. İlk düğmeyi tıklayın ve ardından değiştirmek **açıklamalı alt yazı** için `New Window`, ve **kimliği** için `ID_WINDOW_NEW`.
+   1. İlk düğmeyi tıklatın ve `New Window`ardından Resim `ID_WINDOW_NEW` **Yazısı'nı** ve **kimliği** ' olarak değiştirin.
 
-   1. İkinci düğmeye tıklayın ve ardından değiştirmek **açıklamalı alt yazı** için `Cascade`, ve **kimliği** için `ID_WINDOW_CASCADE`.
+   1. İkinci düğmeyi tıklatın ve `Cascade`ardından Resim `ID_WINDOW_CASCADE` **Yazısı'nı** ve **kimliği** ' olarak değiştirin.
 
-   1. Üçüncü düğmeye tıklayın ve ardından değiştirmek **açıklamalı alt yazı** için `Tile`, ve **kimliği** için `ID_WINDOW_TILE_HORZ`.
+   1. Üçüncü düğmeyi tıklatın ve `Tile`ardından Resim `ID_WINDOW_TILE_HORZ` **Yazısı'nı** ve **kimliği** ' olarak değiştirin.
 
-1. Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. **Görünümü** ve **penceresi** panelleri görüntülenmesi gerekir. Düğmeleri düzgün şekilde çalıştıklarını doğrulamak için tıklayın.
+1. Değişiklikleri kaydedin ve uygulamayı oluşturun ve çalıştırın. **Görünüm** ve **Pencere** panelleri görüntülenmelidir. Doğru çalıştığını doğrulamak için düğmeleri tıklatın.
 
-##  <a name="addhelppanel"></a> Şerit için bir Yardım Masası ekleme
+## <a name="adding-a-help-panel-to-the-ribbon"></a><a name="addhelppanel"></a>Şerite Yardım Paneli Ekleme
 
-Artık, adlandırılmış Şerit düğmeleri karalama uygulama tanımlı iki menü öğesi atayabilirsiniz **Yardım konuları** ve **hakkında karalama**. Düğmeleri adlı yeni bir panel eklenen **yardımcı**.
+Şimdi, Karalama uygulamasında tanımlanan iki menü öğesini **Yardım Konuları** ve **Karalama Hakkında**adlı şerit düğmelerine atayabilirsiniz. Düğmeler **Yardım**adlı yeni bir panele eklenir.
 
-### <a name="to-add-a-help-panel"></a>Yardım Masası eklemek için
+### <a name="to-add-a-help-panel"></a>Yardım paneli eklemek için
 
-1. Gelen **araç kutusu**, sürükleyin bir **paneli** için **giriş** kategorisi. İki sürükleyin **düğmeleri** paneline.
+1. Araç **Kutusundan,** Bir **Paneli** **Ana Sayfa** kategorisine sürükleyin. Ardından panele iki **Düğme** sürükleyin.
 
-1. Bölmenin özelliklerini değiştirmek için tıklayın. Değişiklik **açıklamalı alt yazı** için `Help`.
+1. Özelliklerini değiştirmek için paneli tıklatın. **Resim Yazısını** ' ile `Help`değiştir
 
-1. İlk düğmeyi tıklayın. Değişiklik **açıklamalı alt yazı** için `Help Topics`, ve **kimliği** için `ID_HELP_FINDER`.
+1. İlk düğmeyi tıklatın. **Resim Yazısını** `Help Topics`ve `ID_HELP_FINDER` **Kimliğini** ' olarak değiştirin
 
-1. İkinci düğmeye tıklayın. Değişiklik **açıklamalı alt yazı** için `About Scribble...`, ve **kimliği** için `ID_APP_ABOUT`.
+1. İkinci düğmeyi tıklatın. **Resim Yazısını** `About Scribble...`ve `ID_APP_ABOUT` **Kimliğini** ' olarak değiştirin
 
-1. Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. A **yardımcı** iki Şerit düğmeleri içeren bir panel görüntülenmesi gerekir.
+1. Değişiklikleri kaydedin ve uygulamayı oluşturun ve çalıştırın. İki şerit düğmesi içeren bir **Yardım** paneli görüntülenmelidir.
 
    > [!IMPORTANT]
-   > Tıkladığınızda **Yardım konuları** düğme, karalama uygulamasını açar adlı bir sıkıştırılmış (.chm) HTML Yardım dosyasını *your_project_name*. chm. Sonuç olarak, projenizin karalama adlı değil, proje adınız Yardım dosyasını adlandırmalısınız.
+   > **Yardım Konuları** düğmesini tıklattığınızda, Karalama uygulaması sıkıştırılmış bir HTML (.chm) yardım *dosyasını*your_project_name.chm olarak açar. Sonuç olarak, projenizin adı Karalama değilse, yardım dosyasını proje adınıza yeniden adlandırmanız gerekir.
 
-##  <a name="addpenpanel"></a> Şerit için bir kalem Panel ekleme
+## <a name="adding-a-pen-panel-to-the-ribbon"></a><a name="addpenpanel"></a>Şerite Kalem Paneli Ekleme
 
-Bir paneli kalınlığı ve kalem rengini denetlemek düğmeleri görüntülemek için şimdi ekleyin. Bu panelde kalın ve ince kalemler arasında değişen bir onay kutusu içerir. İşlevselliğini değeriyle benzer **Kalın çizgi** karalama uygulamasını menü öğesi.
+Şimdi, kalemin kalınlığını ve rengini kontrol eden düğmeleri görüntülemek için bir panel ekleyin. Bu panel, kalın ve ince kalemler arasında geçiş yapan bir onay kutusu içerir. İşlevselliği, Karalama uygulamasındaki **Kalın Satır** menü öğesine benzer.
 
-Özgün karalama uygulamasını kalem genişliği kullanıcı tıkladığında görüntülenen iletişim kutusundan seçmesine izin verir **kalem genişliği** menüsünde. Şerit çubuğuna yeni denetimler için yeterli alan olduğundan, Şerit üzerinde iki birleşik giriş kutuları kullanarak iletişim kutusunda değiştirebilirsiniz. Tek bir birleşik giriş kutusu genişliği ince Kalem, ayarlar ve bir birleşik giriş kutusu kalın kalem genişliği ayarlar.
+Özgün Karalama uygulaması, kullanıcı nın menüde **Kalem Genişlikleri'ni** tıklattığında görünen bir iletişim kutusundan kalem genişliklerini seçmesine olanak tanır. Şerit çubuğunda yeni denetimler için yeterli alan olduğundan, şeritteki iki açılan kutuyu kullanarak iletişim kutusunu değiştirebilirsiniz. Bir açılan kutu ince kalemin genişliğini, diğer açılan kutu ise kalın kalemin genişliğini ayarlar.
 
-#### <a name="to-add-a-pen-panel-and-combo-boxes-to-the-ribbon"></a>Şerit kalem paneli ve birleşik giriş kutuları eklemek için
+#### <a name="to-add-a-pen-panel-and-combo-boxes-to-the-ribbon"></a>Şerite Kalem paneli ve açılan kutular eklemek için
 
-1. Gelen **araç kutusu**, sürükleyin bir **paneli** için **giriş** kategorisi. Ardından bir **onay kutusunu** ve iki **birleşik giriş kutuları** paneline.
+1. Araç **Kutusundan,** Bir **Paneli** **Ana Sayfa** kategorisine sürükleyin. Ardından bir **Onay Kutusu** ve iki Açılan **Kutu'yu** panele sürükleyin.
 
-1. Bölmenin özelliklerini değiştirmek için tıklayın. Değişiklik **açıklamalı alt yazı** için `Pen`.
+1. Özelliklerini değiştirmek için paneli tıklatın. **Resim Yazısını** ' ile `Pen`değiştir
 
-1. Onay kutusuna tıklayın. Değişiklik **açıklamalı alt yazı** için `Use Thick`, ve **kimliği** için `ID_PEN_THICK_OR_THIN`.
+1. Onay kutusunu tıklatın. **Resim Yazısını** `Use Thick`ve `ID_PEN_THICK_OR_THIN` **Kimliğini** ' olarak değiştirin
 
-1. İlk birleşik giriş kutusuna tıklayın. Değişiklik **açıklamalı alt yazı** için `Thin Pen`, **kimliği** için `ID_PEN_THIN_WIDTH`, **türü** için `Drop List`, **veri** için `1;2;3;4;5;6;7;8;9;`, ve **metin** için `2`.
+1. İlk açılan kutuyu tıklatın. Resim Yazı `Thin Pen`resim **yazısını** `Drop List`, **ID'ye,** `ID_PEN_THIN_WIDTH` `2` **Yazın,** **Veri'ye** `1;2;3;4;5;6;7;8;9;`ve **Metin'e** ' olarak değiştirin.
 
-1. İkinci birleşik giriş kutusuna tıklayın. Değişiklik **açıklamalı alt yazı** için `Thick Pen`, **kimliği** için `ID_PEN_THICK_WIDTH`, **türü** için `Drop List`, **veri** için `5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;`, ve **metin** için `5`.
+1. İkinci açılan kutuyu tıklatın. Resim Yazı `Thick Pen`resim **yazısını** `Drop List`, **ID'ye,** `ID_PEN_THICK_WIDTH` `5` **Yazın,** **Veri'ye** `5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;`ve **Metin'e** ' olarak değiştirin.
 
-1. Her kalem seçeneği için bir menü öğesi oluşturmanız gerekir, yeni birleşik giriş kutuları mevcut tüm menü öğelerine karşılık gelmeyen.
+1. Yeni açılan kutular varolan menü öğelerine karşılık gelmez, bu nedenle her kalem seçeneği için bir menü öğesi oluşturmanız gerekir.
 
-   1. İçinde **kaynak görünümü** penceresini açık **IDR_SCRIBBTYPE** menü kaynağı.
+   1. Kaynak **Görünümü** penceresinde, **IDR_SCRIBBTYPE** menü kaynağını açın.
 
-   1. Tıklayın **kalem** kalem menüsünü açmak için. Ardından **türü burada** ve türü `Thi&n Pen`.
+   1. Kalem menüsünü açmak için **Kalem'i** tıklatın. Ardından **Buraya Yazın'ı** tıklatın ve yazın. `Thi&n Pen`
 
-   1. Açmak için yazdığınız metnin sağ **özellikleri** penceresi ve değişiklik kimliği özelliğini `ID_PEN_THIN_WIDTH`.
+   1. **Özellikler** penceresini açmak için yazdığınız metni sağ tıklatın ve ardından `ID_PEN_THIN_WIDTH`kimlik özelliğini '' olarak değiştirin
 
-   1. Her bir kalem menü öğesi için bir olay işleyicisi oluşturun. Sağ **düzeltmeyi & n kalem** oluşturduğunuz ve ardından menü öğesi **olay işleyici Ekle**. **Olay işleyici Sihirbazı** görüntülenir.
+   1. Her kalem menü öğesi için bir olay işleyicisi oluşturun. Oluşturduğunuz **Thi&n Pen** menü öğesini sağ tıklatın ve ardından **Olay İşleyicisi Ekle'yi**tıklatın. **Olay Işleyicisihirbazı** görüntülenir.
 
-   1. İçinde **sınıf listesi** Sihirbazı, seçim kutusunda **CScribbleDoc** ve ardından **ekleme ve düzenleme**. Komut adlı bir olay işleyicisi oluşturur `CScribbleDoc::OnPenThinWidth`.
+   1. Sihirbazdaki **Sınıf listesi** kutusunda **CScribbleDoc'u** seçin ve ardından **Ekle ve Edit'i**tıklatın. Komut, adlı `CScribbleDoc::OnPenThinWidth`bir olay işleyicisi oluşturur.
 
-   1. Aşağıdaki kodu ekleyin `CScribbleDoc::OnPenThinWidth`.
+   1. Aşağıdaki kodu `CScribbleDoc::OnPenThinWidth` içine ekleyin.
 
         ```cpp
         // Get a pointer to the ribbon bar
@@ -140,19 +140,19 @@ Bir paneli kalınlığı ve kalem rengini denetlemek düğmeleri görüntülemek
         ReplacePen();
         ```
 
-1. Ardından, bir menü öğesi ve olay işleyicileri için kalın kalem oluşturun.
+1. Ardından, kalın kalem için bir menü öğesi ve olay işleyicileri oluşturun.
 
-   1. İçinde **kaynak görünümü** penceresini açık **IDR_SCRIBBTYPE** menü kaynağı.
+   1. Kaynak **Görünümü** penceresinde, **IDR_SCRIBBTYPE** menü kaynağını açın.
 
-   1. Tıklayın **kalem** kalem menüsünü açmak için. Ardından **türü burada** ve türü `Thic&k Pen`.
+   1. Kalem menüsünü açmak için **Kalem'i** tıklatın. Ardından **Buraya Yazın'ı** tıklatın ve yazın. `Thic&k Pen`
 
-   1. Görüntülenecek yazdığınız metnin sağ **özellikleri** penceresi. Kimliği özelliğini değiştirmek `ID_PEN_THICK_WIDTH`.
+   1. **Özellikler** penceresini görüntülemek için yazdığınız metni sağ tıklatın. Kimlik özelliğini `ID_PEN_THICK_WIDTH`' ' olarak değiştirin
 
-   1. Sağ **kalın kalem** oluşturduğunuz ve ardından menü öğesi **olay işleyici Ekle**. **Olay işleyici Sihirbazı** görüntülenir.
+   1. Oluşturduğunuz **Kalın Kalem** menü öğesini sağ tıklatın ve ardından **Olay İşleyicisi Ekle'yi**tıklatın. **Olay Işleyicisihirbazı** görüntülenir.
 
-   1. İçinde **sınıf listesi** kutusu seçme Sihirbazı'nın **CScribbleDoc** ve ardından **ekleme ve düzenleme**. Komut adlı bir olay işleyicisi oluşturur `CScribbleDoc::OnPenThickWidth`.
+   1. Sihirbazın **Sınıf listesi** kutusunda **CScribbleDoc'u** seçin ve ardından **Ekle ve Edit'i**tıklatın. Komut, adlı `CScribbleDoc::OnPenThickWidth`bir olay işleyicisi oluşturur.
 
-   1. Aşağıdaki kodu ekleyin `CScribbleDoc::OnPenThickWidth`.
+   1. Aşağıdaki kodu `CScribbleDoc::OnPenThickWidth` içine ekleyin.
 
         ```cpp
         // Get a pointer to the ribbon bar
@@ -172,49 +172,49 @@ Bir paneli kalınlığı ve kalem rengini denetlemek düğmeleri görüntülemek
         ReplacePen();
         ```
 
-1. Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. Yeni düğmeler ve birleşik giriş kutusu görüntülenmelidir. Farklı kalem genişliği karalama kullanmayı deneyin.
+1. Değişiklikleri kaydedin ve uygulamayı oluşturun ve çalıştırın. Yeni düğmeler ve açılan kutular görüntülenmelidir. Karalamak için farklı kalem genişlikleri kullanmayı deneyin.
 
-##  <a name="addcolorbutton"></a> Kalem paneline bir renk düğmesi ekleme
+## <a name="adding-a-color-button-to-the-pen-panel"></a><a name="addcolorbutton"></a>Kalem Paneline Renk Düğmesi Ekleme
 
-Ardından, ekleme bir [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbutton-class.md) kullanıcının sağlayan nesne karalama renk.
+Ardından, kullanıcının renkli karalamasına izin veren bir [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbutton-class.md) nesnesi ekleyin.
 
-### <a name="to-add-a-color-button-to-the-pen-panel"></a>Kalem paneline bir renk düğmesi eklemek için
+### <a name="to-add-a-color-button-to-the-pen-panel"></a>Kalem paneline renk düğmesi eklemek için
 
-1. Renk düğmesi eklemeden önce bir menü öğesi için oluşturun. İçinde **kaynak görünümü** penceresini açık **IDR_SCRIBBTYPE** menü kaynağı. Tıklayın **kalem** kalem menüsünü açmak için menü öğesi. Ardından **türü burada** ve türü `&Color`. Görüntülenecek yazdığınız metnin sağ **özellikleri** penceresi. Kimliği değiştirme `ID_PEN_COLOR`.
+1. Renk düğmesini eklemeden önce, bunun için bir menü öğesi oluşturun. Kaynak **Görünümü** penceresinde, **IDR_SCRIBBTYPE** menü kaynağını açın. Kalem menüsünü açmak için **Kalem** menüsü öğesini tıklatın. Ardından **Buraya Yazın'ı** tıklatın ve yazın. `&Color` **Özellikler** penceresini görüntülemek için yazdığınız metni sağ tıklatın. Kimliği ' `ID_PEN_COLOR`yi ' olarak değiştirin
 
-1. Şimdi renk düğmesi ekleyin. Gelen **araç kutusu**, sürükleyin bir **rengi düğmesi** için **kalem** paneli.
+1. Şimdi renk düğmesini ekleyin. Araç **Kutusundan,** **Renk Düğmesini** **Kalem** paneline sürükleyin.
 
-1. Renk düğmesine tıklayın. Değişiklik **açıklamalı alt yazı** için `Color`, **kimliği** için `ID_PEN_COLOR`, **basit görünüş** için `True`, **büyük görüntü dizini** için `1`, ve **ayırma modu** için `False`.
+1. Renk düğmesini tıklatın. Resim Yazı `Color`Resim **Yazısını** , **ID** `ID_PEN_COLOR`için `1`, Simple **Look** to `True`, Büyük Görüntü **Dizini** için ve Split **Mode** için `False`değiştirin.
 
-1. Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. Yeni renk düğmesinin görüntülenmesi **kalem** paneli. Ancak, henüz bir olay işleyicisi olmadığı için kullanılamaz. Sonraki adımlarda, bir renk düğmesi olay işleyicisi eklemek gösterilmektedir.
+1. Değişiklikleri kaydedin ve uygulamayı oluşturun ve çalıştırın. Yeni renk düğmesi **Kalem** panelinde görüntülenmelidir. Ancak, henüz bir olay işleyicisi olmadığından kullanılamaz. Sonraki adımlar, renk düğmesi için bir olay işleyicisi eklemek için nasıl gösterir.
 
-##  <a name="addcolormember"></a> Belge sınıfına renk üye ekleme
+## <a name="adding-a-color-member-to-the-document-class"></a><a name="addcolormember"></a>Belge Sınıfına Renkli Üye Ekleme
 
-Özgün karalama uygulamasını renkli kalemler olmadığından, bunlar için bir uygulama yazması gerekir. Belge kalem rengini depolamak eklemek için yeni bir üye belge sınıfına `CscribbleDoc`.
+Özgün Karalama uygulamasında renkli kalemler olmadığından, bunlar için bir uygulama yazmanız gerekir. Belgenin kalem rengini depolamak için belge sınıfına yeni `CscribbleDoc`bir üye ekleyin.
 
-### <a name="to-add-a-color-member-to-the-document-class"></a>Belge sınıfına bir renk üye eklemek için
+### <a name="to-add-a-color-member-to-the-document-class"></a>Belge sınıfına renk üyesi eklemek için
 
-1. İçinde scribdoc.h, içinde `CScribbleDoc` sınıfı, Bul `// Attributes` bölümü. Aşağıdaki kod satırlarını sonra tanımını ekleyin `m_nThickWidth` veri üyesi.
+1. Scribdoc.h olarak, `CScribbleDoc` sınıfta, `// Attributes` bölümü bulun. `m_nThickWidth` Veri üyesinin tanımından sonra aşağıdaki kod satırlarını ekleyin.
 
    ```cpp
    // Current pen color
    COLORREF m_penColor;
    ```
 
-1. Her belgenin bir listesini içeren bir kullanıcı zaten çizilmiştir çok tuş vuruşu. Her vuruş tarafından tanımlanan bir `CStroke` nesne. `CStroke` Sınıfı, Kalem rengi hakkında bilgi içermez, bu nedenle sınıf değiştirmeniz gerekir. İçinde scribdoc.h, içinde `CStroke` sınıfı, sonra tanımını aşağıdaki kod satırlarını ekleme `m_nPenWidth` veri üyesi.
+1. Her belge, kullanıcının zaten çizdiği bir stokes listesi içerir. Her kontur bir `CStroke` nesne tarafından tanımlanır. Sınıf `CStroke` kalem rengi yle ilgili bilgiler içermez, bu nedenle sınıfı değiştirmeniz gerekir. Scribdoc.h'de, `CStroke` sınıfta, `m_nPenWidth` veri üyesinin tanımından sonra aşağıdaki kod satırlarını ekleyin.
 
    ```cpp
    // Pen color for the stroke
    COLORREF m_penColor;
    ```
 
-1. Scribdoc.h içinde yeni bir ekleme `CStroke` Oluşturucusu genişliği ve rengine parametreleri belirtin. Kod sonra aşağıdaki satırı ekleyin `CStroke(UINT nPenWidth);` deyimi.
+1. Scribdoc.h olarak, parametreleri bir genişlik ve renk belirten yeni `CStroke` bir yapıcı ekleyin. İfadeden sonra aşağıdaki kod `CStroke(UINT nPenWidth);` satırını ekleyin.
 
    ```cpp
    CStroke(UINT nPenWidth, COLORREF penColor);
    ```
 
-1. Scribdoc.cpp içinde yeni uygulama Ekle `CStroke` Oluşturucusu. Uygulamasını sonra aşağıdaki kodu ekleyin `CStroke::CStroke(UINT nPenWidth)` Oluşturucusu.
+1. Scribdoc.cpp olarak, yeni `CStroke` yapıcı nın uygulanmasını ekleyin. `CStroke::CStroke(UINT nPenWidth)` Oluşturucunun uygulanmasından sonra aşağıdaki kodu ekleyin.
 
    ```cpp
    // Constructor that uses the document's current width and color
@@ -226,40 +226,40 @@ Ardından, ekleme bir [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbu
    }
    ```
 
-1. İkinci satırı değiştirin `CStroke::DrawStroke` yöntemini aşağıdaki şekilde.
+1. Yöntemin ikinci satırını aşağıdaki gibi değiştirin. `CStroke::DrawStroke`
 
    ```cpp
    if (!penStroke.CreatePen(PS_SOLID, m_nPenWidth, m_penColor))
    ```
 
-1. Belge sınıfı için varsayılan kalem rengini ayarlayın. Scribdoc.cpp aşağıdaki satırları ekleyin `CScribbleDoc::InitDocument`, sonra `m_nThickWidth = 5;` deyimi.
+1. Belge sınıfı için varsayılan kalem rengini ayarlayın. Scribdoc.cpp olarak, aşağıdaki satırları `CScribbleDoc::InitDocument`ekleyin `m_nThickWidth = 5;` , ifadeden sonra.
 
    ```cpp
    // default pen color is black
    m_penColor = RGB(0, 0, 0);
    ```
 
-1. İlk satırı scribdoc.cpp içinde değiştirmek `CScribbleDoc::NewStroke` aşağıdaki yöntemi.
+1. Scribdoc.cpp olarak, aşağıdaki yöntemin `CScribbleDoc::NewStroke` ilk satırı değiştirin.
 
    ```cpp
    CStroke* pStrokeItem = new CStroke(m_nPenWidth, m_penColor);
    ```
 
-1. Son satırının değiştirme `CScribbleDoc::ReplacePen` aşağıdaki yöntemi.
+1. Yöntemin son satırını `CScribbleDoc::ReplacePen` aşağıdakiyle değiştirin.
 
    ```cpp
    m_penCur.CreatePen(PS_SOLID, m_nPenWidth, m_penColor);
    ```
 
-1. Eklediğiniz `m_penColor` üyesi bir önceki adımda. Artık üyesini ayarlar rengi düğmesi için bir olay işleyicisi oluşturun.
+1. Üyeyi `m_penColor` önceki bir adıma eklediniz. Şimdi, üyeyi ayarlayan renk düğmesi için bir olay işleyicisi oluşturun.
 
-   1. İçinde **kaynak görünümü** penceresinde IDR_SCRIBBTYPE menü kaynağı açın.
+   1. Kaynak **Görünümü** penceresinde, IDR_SCRIBBTYPE menü kaynağını açın.
 
-   1. Sağ **renk** menü öğesi ve tıklatın **olay işleyici Ekle**. **Olay işleyici Sihirbazı** görünür.
+   1. **Renk** menüsü öğesini sağ tıklatın ve **Olay İşleyicisi Ekle'yi**tıklatın. **Olay Işleyicisihirbazı** görüntülenir.
 
-   1. İçinde **sınıf listesi** Sihirbazı, seçim kutusunda **CScribbleDoc** ve ardından **ekleme ve düzenleme** düğmesi. Komut oluşturur `CScribbleDoc::OnPenColor` olay işleyicisi taslağı.
+   1. Sihirbazdaki **Sınıf listesi** kutusunda **CScribbleDoc'u** seçin ve ardından Ekle ve **Edit** düğmesini tıklatın. Komut `CScribbleDoc::OnPenColor` olay işleyicisi saplaması oluşturur.
 
-1. Yer tutucusu için değiştirin `CScribbleDoc::OnPenColor` aşağıdaki kod ile olay işleyicisi.
+1. Olay işleyicisi `CScribbleDoc::OnPenColor` için saplamayı aşağıdaki kodla değiştirin.
 
    ```cpp
    void CScribbleDoc::OnPenColor()
@@ -277,17 +277,17 @@ Ardından, ekleme bir [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbu
    }
    ```
 
-1. Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. Şimdi renk düğmesine basın ve Kalem rengi değiştirebilirsiniz.
+1. Değişiklikleri kaydedin ve uygulamayı oluşturun ve çalıştırın. Artık renk düğmesine basabilir ve kalemin rengini değiştirebilirsiniz.
 
-##  <a name="initpensave"></a> Kalemler başlatma ve tercihlerini kaydediliyor
+## <a name="initializing-pens-and-saving-preferences"></a><a name="initpensave"></a>Kalemleri Başlatma ve Tercihleri Kaydetme
 
-Ardından, rengini ve genişliğini kalemler başlatın. Son olarak, kaydedin ve bir dosyadan çizim bir renk yükleyin.
+Ardından, kalemlerin rengini ve genişliğini başlangıç olarak algıla. Son olarak, bir dosyadan renkli çizim kaydedin ve yükleyin.
 
-### <a name="to-initialize-controls-on-the-ribbon-bar"></a>Şerit çubuğundaki denetimleri başlatılamadı
+### <a name="to-initialize-controls-on-the-ribbon-bar"></a>Şerit çubuğundaki denetimleri başlatma
 
-1. Şerit çubuğunda kalemler başlatın.
+1. Şerit çubuğundaki kalemleri baş harfe doğru açın.
 
-   Scribdoc.cpp için aşağıdaki kodu ekleyin `CScribbleDoc::InitDocument` yöntemi, sonra `m_sizeDoc = CSize(200,200)` deyimi.
+   `m_sizeDoc = CSize(200,200)` Açıklamadan sonra `CScribbleDoc::InitDocument` yöntemde scribdoc.cpp'ye aşağıdaki kodu ekleyin.
 
    ```cpp
    // Reset the ribbon UI to its initial values
@@ -317,23 +317,23 @@ Ardından, rengini ve genişliğini kalemler başlatın. Son olarak, kaydedin ve
    pThickComboBox->SelectItem(0);
    ```
 
-1. Bir dosyaya çizim bir renk kaydedin. Scribdoc.cpp, aşağıdaki deyime ekleme `CStroke::Serialize` yöntemi, sonra `ar << (WORD)m_nPenWidth;` deyimi.
+1. Renkli çizimi dosyaya kaydedin. Açıklamadan sonra yöntemde scribdoc.cpp'ye aşağıdaki `ar << (WORD)m_nPenWidth;` ifadeyi `CStroke::Serialize` ekleyin.
 
    ```cpp
    ar << (COLORREF)m_penColor;
    ```
 
-1. Son olarak, bir dosyadan çizim bir renk yükleyin. Aşağıdaki kod satırını ekleyin `CStroke::Serialize` yöntemi, sonra `m_nPenWidth = w;` deyimi.
+1. Son olarak, bir dosyadan renk çizimi yükleyin. İfadeden sonra `CStroke::Serialize` yönteme aşağıdaki kod satırını `m_nPenWidth = w;` ekleyin.
 
    ```cpp
    ar >> m_penColor;
    ```
 
-1. Şimdi renk karalama ve çiziminize bir dosyaya kaydedin.
+1. Şimdi renkli karalama ve bir dosyaya çizim kaydedin.
 
 ## <a name="conclusion"></a>Sonuç
 
-MFC karalama uygulamasını güncelleştirdik. Bu izlenecek yol, mevcut uygulamalarınızı değiştirdiğinizde bir kılavuz olarak kullanın.
+MFC Karalama uygulamasını güncellediniz. Varolan uygulamalarınızı değiştirirken bu izbiyi kılavuz olarak kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

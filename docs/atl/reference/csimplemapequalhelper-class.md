@@ -1,5 +1,5 @@
 ---
-title: CSimpleMapEqualHelper sınıfı
+title: CSimpleMapEqualHelper Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSimpleMapEqualHelper
@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleMapEqualHelper class
 ms.assetid: 9bb2968a-d609-405c-8272-ff3b42df6164
-ms.openlocfilehash: c614cbb11376c5ae338762c0feaa54c8f1bb3e27
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d137a35a517ea93139f036f6e9a7a8de06d518a7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62277937"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330755"
 ---
-# <a name="csimplemapequalhelper-class"></a>CSimpleMapEqualHelper sınıfı
+# <a name="csimplemapequalhelper-class"></a>CSimpleMapEqualHelper Sınıfı
 
-Bu sınıf için Yardımcısı, [CSimpleMap](../../atl/reference/csimplemap-class.md) sınıfı.
+Bu sınıf [CSimpleMap](../../atl/reference/csimplemap-class.md) sınıfı için bir yardımcıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,8 +29,8 @@ class CSimpleMapEqualHelper
 
 #### <a name="parameters"></a>Parametreler
 
-*TKey*<br/>
-Anahtar öğesi.
+*Tkey*<br/>
+Anahtar unsur.
 
 *TVal*<br/>
 Değer öğesi.
@@ -39,22 +39,22 @@ Değer öğesi.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSimpleMapEqualHelper::IsEqualKey](#isequalkey)|(Statik) İki anahtar eşitlik için test eder.|
-|[CSimpleMapEqualHelper::IsEqualValue](#isequalvalue)|(Statik) Eşitlik için iki değeri test eder.|
+|[CSimpleMapEqualHelper::IsEqualKey](#isequalkey)|(Statik) Eşitlik için iki anahtar test ediyor.|
+|[CSimpleMapEqualHelper::IsEqualValue](#isequalvalue)|(Statik) Eşitlik için iki değeri sınar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu nitelikler sınıfı için bir ektir `CSimpleMap` sınıfı. İki karşılaştırma yöntemlerini sağlar `CSimpleMap` nesne eşitliği (özellikle, anahtar ve değer bileşenleri) öğeleri. Varsayılan olarak, anahtarları ve değerleri kullanılarak karşılaştırılır **operator==()**, ancak fazladan gerekli işlevselliği sağlamak için eşleme eksik kendi eşitlik işleci karmaşık veri türleri içeriyorsa, bu sınıf kılınabilir.
+Bu özellikler sınıfı `CSimpleMap` sınıfın bir ekidir. Eşitlik için iki `CSimpleMap` nesne öğesini (özellikle anahtar ve değer bileşenleri) karşılaştırma yöntemleri sağlar. Varsayılan olarak, anahtarlar ve değerler **işleç==()** kullanılarak karşılaştırılır, ancak harita kendi eşitlik işleci olmayan karmaşık veri türleri içeriyorsa, bu sınıf gerekli ekstra işlevselliği sağlamak için geçersiz kılınabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 **Başlık:** atlsimpcoll.h
 
-##  <a name="isequalkey"></a>  CSimpleMapEqualHelper::IsEqualKey
+## <a name="csimplemapequalhelperisequalkey"></a><a name="isequalkey"></a>CSimpleMapEqualHelper::IsEqualKey
 
-İki anahtar eşitlik için test eder.
+Eşitlik için iki anahtar test ediyor.
 
 ```
 static bool IsEqualKey(const TKey& k1, const TKey& k2);
@@ -62,19 +62,19 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 
 ### <a name="parameters"></a>Parametreler
 
-*K1*<br/>
+*k1*<br/>
 İlk anahtar.
 
-*K2*<br/>
-İkinci anahtarı.
+*k2*<br/>
+İkinci anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anahtarları false, eşitse true döndürür.
+Anahtarlar eşitse doğru döndürür, aksi takdirde yanlış.
 
-##  <a name="isequalvalue"></a>  CSimpleMapEqualHelper::IsEqualValue
+## <a name="csimplemapequalhelperisequalvalue"></a><a name="isequalvalue"></a>CSimpleMapEqualHelper::IsEqualValue
 
-Eşitlik için iki değeri test eder.
+Eşitlik için iki değeri sınar.
 
 ```
 static bool IsEqualValue(const TVal& v1, const TVal& v2);
@@ -90,9 +90,9 @@ static bool IsEqualValue(const TVal& v1, const TVal& v2);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değerler yanlış Aksi takdirde, eşitse true döndürür.
+Değerler eşitse doğru döndürür, aksi takdirde yanlış.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CSimpleMapEqualHelperFalse Sınıfı](../../atl/reference/csimplemapequalhelperfalse-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

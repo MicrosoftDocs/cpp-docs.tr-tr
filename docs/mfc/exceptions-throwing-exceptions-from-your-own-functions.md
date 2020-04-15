@@ -1,44 +1,44 @@
 ---
-title: 'Özel durumlar: Kendi İşlevlerinizden özel durumları atma'
+title: 'Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - throwing exceptions [MFC], from functions
 - functions [MFC], throwing exceptions
 - exceptions [MFC], throwing
 ms.assetid: 492976e8-8804-4234-8e8f-30dffd0501be
-ms.openlocfilehash: 030bf3db9ff305f35cbfb0b518c8704114ce083d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6484594df7636fd52ac46ab1cc212c8e2ec0278e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405865"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81359283"
 ---
-# <a name="exceptions-throwing-exceptions-from-your-own-functions"></a>Özel durumlar: Kendi İşlevlerinizden özel durumları atma
+# <a name="exceptions-throwing-exceptions-from-your-own-functions"></a>Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma
 
-Yalnızca MFC veya diğer kitaplıkları olarak işlevleri tarafından gönderilen özel durumları yakalamasını MFC özel durum işleme paradigma kullanmak mümkündür. Özel durumları olarak sınırlamasıyla işlevleri yazıyorsanız kitaplık kodu tarafından oluşturulan özel durumları yakalama ek olarak, özel durumlar kendi kodunuza oluşturabilecek.
+MFC özel durum işleme paradigmasını yalnızca MFC veya diğer kitaplıklarda işlevler tarafından atılan özel durumları yakalamak için kullanmak mümkündür. Kitaplık kodu tarafından atılan özel durumları yakalamaya ek olarak, olağanüstü koşullarla karşılaşabilecek işlevler yazıyorsanız, kendi kodunuzdan özel durumlar atabilirsiniz.
 
-Bir özel durum oluştuğunda yürütme geçerli işlevin durdurulur ve doğrudan atlar **catch** en içteki özel durum çerçevenin blok. Özel durum mekanizması, normal bir çıkış yolu bir işlevden atlar. Bu nedenle normal bir çıkış silineceğini bu bellek blokları silmek istediğinizden emin olmalıdır.
+Bir özel durum atıldığında, geçerli işlevin yürütülmesi durdurulur ve doğrudan en içteki özel durum çerçevesinin **catch** bloğuna atlar. Özel durum mekanizması, normal çıkış yolunu bir işlevden atlar. Bu nedenle, normal bir çıkışta silinecek bellek bloklarını sildiğimden emin olmalısınız.
 
-#### <a name="to-throw-an-exception"></a>Bir özel durum oluşturmak için
+#### <a name="to-throw-an-exception"></a>Bir özel durum atmak için
 
-1. MFC yardımcı işlevleri gibi birini `AfxThrowMemoryException`. Bu işlevler, uygun türde bir ön tahsis özel durum nesnesi atar.
+1. MFC yardımcı işlevlerinden birini kullanın, `AfxThrowMemoryException`örneğin. Bu işlevler, uygun türde önceden ayrılmış bir özel durum nesnesi atar.
 
-   Aşağıdaki örnekte, bir işlev, iki bellek blokları ayırmaya çalışır ve her iki ayırma başarısız olursa bir özel durum oluşturur:
+   Aşağıdaki örnekte, bir işlev iki bellek bloğu ayırmaya çalışır ve her iki ayırma başarısız olursa bir özel durum atar:
 
    [!code-cpp[NVC_MFCExceptions#17](../mfc/codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_1.cpp)]
 
-   İlk ayırma başarısız olursa, yetersiz bellek özel durum yeterlidir. İlk ayırma başarılı olur ancak ikincisi başarısız olursa, özel durum atmadan önce ilk ayırma öbeğini serbest gerekir. Her iki ayırma başarılı olursa, normal şekilde devam etmek ve işlev çıkarken blokları serbest.
+   İlk ayırma başarısız olursa, bellek özel durum atabilirsiniz. İlk ayırma başarılı olursa, ancak ikincisi başarısız olursa, özel durumu atmadan önce ilk ayırma bloğunu serbest kaldırmanız gerekir. Her iki ayırma da başarılı olursa, normal bir şekilde ilerleyebilir ve işlevden çıkarken blokları serbest kalabilirsiniz.
 
      - veya -
 
-1. Kullanıcı tanımlı bir özel durum bir sorun koşulu belirtmek için kullanın. Tüm bir sınıf bile, her tür bir öğe, özel durum oluşturabilecek.
+1. Sorun durumunu belirtmek için kullanıcı tanımlı bir özel durum kullanın. Herhangi bir türden bir öğeyi, hatta tüm bir sınıfı özel durum olarak atabilirsiniz.
 
-   Aşağıdaki örnek, wave aygıttan Çıkart dener ve bir hata varsa, bir özel durum oluşturur.
+   Aşağıdaki örnek, bir dalga aygıtı üzerinden bir ses çalmaya çalışır ve bir hata varsa bir özel durum atar.
 
    [!code-cpp[NVC_MFCExceptions#18](../mfc/codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_2.cpp)]
 
 > [!NOTE]
->  MFC'nin varsayılan özel durumların işlenmesiyle uygulandığı yalnızca işaretçiler `CException` nesneleri (ve nesnelerin `CException`-türetilmiş sınıflar). Yukarıdaki örnekte, özel durum mekanizması MFC'nin atlar.
+> MFC'nin varsayılan özel durum işlemesi yalnızca `CException` nesnelere (ve `CException`türetilmiş sınıfların nesneleri) işaretçilere uygulanır. Yukarıdaki örnek, MFC'nin özel durum mekanizmasını atlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

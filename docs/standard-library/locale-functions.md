@@ -1,5 +1,5 @@
 ---
-title: '&lt;yerel ayar&gt; işlevleri'
+title: '&lt;yerel&gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - locale/std::has_facet
@@ -34,24 +34,24 @@ helpviewer_keywords:
 - std::tolower [C++]
 - std::toupper [C++]
 - std::use_facet [C++]
-ms.openlocfilehash: 3c5d81aecb5e78a8fd3c3f32da82f6048ae4fac8
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 6ebb1b1c80d5c2da19610a15e628fcbab5220719
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420024"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81351724"
 ---
-# <a name="ltlocalegt-functions"></a>&lt;yerel ayar&gt; işlevleri
+# <a name="ltlocalegt-functions"></a>&lt;yerel&gt; işlevleri
 
 ||||
 |-|-|-|
 |[has_facet](#has_facet)|[isalnum](#isalnum)|[isalpha](#isalpha)|
-|[iscntrl](#iscntrl)|[isdigit](#isdigit)|[isgraph](#isgraph)|
-|[islower](#islower)|[isprint](#isprint)|[ispunct](#ispunct)|
+|[iscntrl](#iscntrl)|[ısdigit](#isdigit)|[isgraph](#isgraph)|
+|[ıslower](#islower)|[isprint](#isprint)|[ispunct](#ispunct)|
 |[isspace](#isspace)|[isupper](#isupper)|[isxdigit](#isxdigit)|
-|[ToLower](#tolower)|[ToUpper](#toupper)|[use_facet](#use_facet)|
+|[Tolower](#tolower)|[Toupper](#toupper)|[use_facet](#use_facet)|
 
-## <a name="has_facet"></a>has_facet
+## <a name="has_facet"></a><a name="has_facet"></a>has_facet
 
 Belirli bir modelin belirtilen yerel ayarda depolanıp depolanmadığını sınar.
 
@@ -63,15 +63,15 @@ bool has_facet(const locale& Loc);
 ### <a name="parameters"></a>Parametreler
 
 *Loc*\
-Bir modelin varlığı için sınanacak yerel ayar.
+Bir fason varlığı için test edilecek yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-yerel ayarın için test edilen modeli varsa **doğru** ; değilse **yanlış** .
+yerel yüz için test varsa **doğrudur;** **false** yanlış değilse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, mevcut değilse oluşturulacak özel durumdan kaçınmak için `use_facet` çağrılmadan önce, zorunlu olmayan modellerin bir yerel ayarda listelenip listelenmediğini denetlemek için yararlıdır.
+Şablon işlevi, zorunlu olmayan fatların yoksa atılacak özel `use_facet` durumlardan kaçınmak için çağrılmadan önce bir yerel alanda listelenip listelenmediğini denetlemek için yararlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -94,7 +94,7 @@ int main( )
 1
 ```
 
-## <a name="isalnum"></a>isalnum
+## <a name="isalnum"></a><a name="isalnum"></a>isalnum
 
 Bir yerel ayardaki öğenin alfabetik bir karakter mi yoksa sayısal bir karakter mi olduğunu sınar.
 
@@ -105,15 +105,15 @@ bool isalnum(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Sınanacak alfasayısal öğe.
+*Caner*\
+Test edilecek alfasayısal eleman.
 
 *Loc*\
-Sınanacak alfasayısal öğeyi içeren yerel ayar.
+Test edilecek alfasayısal öğeyi içeren yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-test edilen öğe alfasayısal ise **true** ; değilse **yanlış** .
+test edilen eleman alfanümerik ise **doğrudur;** değilse **yanlış.**
 
 ### <a name="example"></a>Örnek
 
@@ -161,9 +161,9 @@ The character '@' in the locale is  not alphanumeric.
 The character '3' in the locale is alphanumeric.
 ```
 
-## <a name="isalpha"></a>isalpha
+## <a name="isalpha"></a><a name="isalpha"></a>isalpha
 
-Bir yerel ayarda bulunan öğenin alfabetik bir karakter olup olmadığını sınar.
+Bir yerel alandaki bir öğenin alfabetik bir karakter olup olmadığını sınar.
 
 ```cpp
 template <class CharType>
@@ -172,19 +172,19 @@ bool isalpha(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Sınanacak öğe.
+*Caner*\
+Test edilecek öğe.
 
 *Loc*\
-Sınanacak alfabetik öğeyi içeren yerel ayar.
+Test edilecek alfabetik öğeyi içeren yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-test edilen öğe alfabetik ise **doğru** ; değilse **yanlış** .
+test edilen öğe alfabetik ise **doğrudur;** değilse **yanlış.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [use_facet](../standard-library/locale-functions.md#use_facet)< [CType](../standard-library/ctype-class.md)\< **CharType**> > (`Loc`) döndürür. [(](../standard-library/ctype-class.md#is) **CType**\< **CharType**>:: **Alpha**, `Ch`).
+Şablon işlevi use_facet[ctype](../standard-library/ctype-class.md) \< **CharType**> >() `Loc`döndürür. [use_facet](../standard-library/locale-functions.md#use_facet)<  [(](../standard-library/ctype-class.md#is) **ctype** \< **CharType**>:: `Ch` **alfa**, ).
 
 ### <a name="example"></a>Örnek
 
@@ -226,7 +226,7 @@ int main( )
 }
 ```
 
-## <a name="iscntrl"></a>iscntrl
+## <a name="iscntrl"></a><a name="iscntrl"></a>iscntrl
 
 Bir yerel ayardaki bir öğenin bir denetim karakteri olup olmadığını sınar.
 
@@ -237,19 +237,19 @@ bool iscntrl(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Sınanacak öğe.
+*Caner*\
+Test edilecek öğe.
 
 *Loc*\
-Sınanacak öğeyi içeren yerel ayar.
+Test edilecek öğeyi içeren yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-test edilen öğe bir denetim karakteri ise **true** . değilse **yanlış** .
+test edilen öğe bir denetim karakteri ise **doğrudur;** değilse **yanlış.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [use_facet](../standard-library/locale-functions.md#use_facet)< [CType](../standard-library/ctype-class.md)\< **CharType**> > (`Loc`) döndürür. [(](../standard-library/ctype-class.md#is) **CType**\< **CharType**>:: **CNU**, `Ch`).
+Şablon işlevi use_facet[ctype](../standard-library/ctype-class.md) \< **CharType**> >() `Loc`döndürür. [use_facet](../standard-library/locale-functions.md#use_facet)<  [(](../standard-library/ctype-class.md#is) **ctype** \< **CharType**>:: **cntrl**, `Ch`).
 
 ### <a name="example"></a>Örnek
 
@@ -291,7 +291,7 @@ int main( )
 }
 ```
 
-## <a name="isdigit"></a>isdigit
+## <a name="isdigit"></a><a name="isdigit"></a>ısdigit
 
 Bir yerel ayardaki bir öğenin sayısal bir karakter olup olmadığını sınar.
 
@@ -302,19 +302,19 @@ bool isdigit(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Sınanacak öğe.
+*Caner*\
+Test edilecek öğe.
 
 *Loc*\
-Sınanacak öğeyi içeren yerel ayar.
+Test edilecek öğeyi içeren yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-test edilen öğe sayısal bir karakter ise **true** . değilse **yanlış** .
+test edilen öğe sayısal bir karakterise **doğrudur;** değilse **yanlış.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [use_facet](../standard-library/locale-functions.md#use_facet)< [CType](../standard-library/ctype-class.md)\< **CharType**> > (`Loc`) döndürür. [(](../standard-library/ctype-class.md#is) **CType**\< **CharType**>:: **digit**, `Ch`).
+Şablon işlevi use_facet[ctype](../standard-library/ctype-class.md) \< **CharType**> >() `Loc`döndürür. [use_facet](../standard-library/locale-functions.md#use_facet)<  [(](../standard-library/ctype-class.md#is) **ctype** \< **CharType**>:: `Ch` **basamak**, ).
 
 ### <a name="example"></a>Örnek
 
@@ -356,7 +356,7 @@ int main( )
 }
 ```
 
-## <a name="isgraph"></a>isgraph
+## <a name="isgraph"></a><a name="isgraph"></a>isgraph
 
 Bir yerel ayardaki öğenin alfasayısal bir karakter mi yoksa noktalama işareti mi olduğunu sınar.
 
@@ -367,19 +367,19 @@ bool isgraph(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Sınanacak öğe.
+*Caner*\
+Test edilecek öğe.
 
 *Loc*\
-Sınanacak öğeyi içeren yerel ayar.
+Test edilecek öğeyi içeren yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-test edilen öğe alfasayısal bir veya noktalama karakteri ise **true** . değilse **yanlış** .
+test edilen öğe alfanümerik veya noktalama karakteri ise **doğrudur;** değilse **yanlış.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [use_facet](../standard-library/locale-functions.md#use_facet)< [CType](../standard-library/ctype-class.md)\< **CharType**> > (`Loc`) döndürür. [(](../standard-library/ctype-class.md#is) **CType**\< **CharType**>:: **Graph**, `Ch`).
+Şablon işlevi use_facet[ctype](../standard-library/ctype-class.md) \< **CharType**> >() `Loc`döndürür. [use_facet](../standard-library/locale-functions.md#use_facet)<  [(](../standard-library/ctype-class.md#is) **ctype** \< **CharType**>:: `Ch` **grafik**, ).
 
 ### <a name="example"></a>Örnek
 
@@ -421,7 +421,7 @@ int main( )
 }
 ```
 
-## <a name="islower"></a>islower
+## <a name="islower"></a><a name="islower"></a>ıslower
 
 Bir yerel ayardaki bir öğenin küçük harf olup olmadığını sınar.
 
@@ -432,19 +432,19 @@ bool islower(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Sınanacak öğe.
+*Caner*\
+Test edilecek öğe.
 
 *Loc*\
-Sınanacak öğeyi içeren yerel ayar.
+Test edilecek öğeyi içeren yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-test edilen öğe küçük harfli bir karakter ise **doğru** ; değilse **yanlış** .
+test edilen öğe küçük bir karakterise **doğrudur;** değilse **yanlış.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [use_facet](../standard-library/locale-functions.md#use_facet)< [CType](../standard-library/ctype-class.md)\< **CharType**> > (`Loc`) döndürür. [(](../standard-library/ctype-class.md#is) **CType**\< **CharType**>:: **Lower**, `Ch`).
+Şablon işlevi use_facet[ctype](../standard-library/ctype-class.md) \< **CharType**> >() `Loc`döndürür. [use_facet](../standard-library/locale-functions.md#use_facet)<  [(](../standard-library/ctype-class.md#is) **ctype** \< **CharType**>:: `Ch` **alt**, ).
 
 ### <a name="example"></a>Örnek
 
@@ -486,7 +486,7 @@ int main( )
 }
 ```
 
-## <a name="isprint"></a>isprint
+## <a name="isprint"></a><a name="isprint"></a>isprint
 
 Bir yerel ayardaki bir öğenin yazdırılabilir bir karakter olup olmadığını sınar.
 
@@ -497,19 +497,19 @@ bool isprint(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Sınanacak öğe.
+*Caner*\
+Test edilecek öğe.
 
 *Loc*\
-Sınanacak öğeyi içeren yerel ayar.
+Test edilecek öğeyi içeren yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-test edilen öğe yazdırılabilir ise **doğru** . değilse **yanlış** .
+test edilen öğe yazdırılabilirise **doğrudur;** değilse **yanlış.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [use_facet](../standard-library/locale-functions.md#use_facet)< [CType](../standard-library/ctype-class.md)\< **CharType**> > (`Loc`) döndürür. [:](../standard-library/ctype-class.md#is)( **CType**\< **chartype**>: **Print**, `Ch`).
+Şablon işlevi use_facet[ctype](../standard-library/ctype-class.md) \< **CharType**> >() `Loc`döndürür. [use_facet](../standard-library/locale-functions.md#use_facet)<  [(](../standard-library/ctype-class.md#is) **ctype** \< **CharType**>:: `Ch` **yazdırma**, ).
 
 ### <a name="example"></a>Örnek
 
@@ -550,7 +550,7 @@ int main( )
 }
 ```
 
-## <a name="ispunct"></a>ispunct
+## <a name="ispunct"></a><a name="ispunct"></a>ispunct
 
 Bir yerel ayardaki bir öğenin bir noktalama işareti olup olmadığını sınar.
 
@@ -561,19 +561,19 @@ bool ispunct(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Sınanacak öğe.
+*Caner*\
+Test edilecek öğe.
 
 *Loc*\
-Sınanacak öğeyi içeren yerel ayar.
+Test edilecek öğeyi içeren yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-test edilen öğe bir noktalama karakteri ise **true** . değilse **yanlış** .
+test edilen öğe bir noktalama karakteri ise **doğrudur;** değilse **yanlış.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [use_facet](../standard-library/locale-functions.md#use_facet)`<`[CType](../standard-library/ctype-class.md)\< **CharType**> > (`Loc`) döndürür. [(](../standard-library/ctype-class.md#is) **CType**\< **CharType**>:: **punct**, `Ch`).
+Şablon işlevi use_facet[ctype](../standard-library/ctype-class.md) \< **CharType**> >() `Loc`döndürür. [use_facet](../standard-library/locale-functions.md#use_facet)`<` [(](../standard-library/ctype-class.md#is) **ctype** \< **CharType**>:: `Ch` **punct**, ).
 
 ### <a name="example"></a>Örnek
 
@@ -615,7 +615,7 @@ int main( )
 }
 ```
 
-## <a name="isspace"></a>isspace
+## <a name="isspace"></a><a name="isspace"></a>isspace
 
 Bir yerel ayardaki bir öğenin bir boşluk olup olmadığını sınar.
 
@@ -626,19 +626,19 @@ bool isspace(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Sınanacak öğe.
+*Caner*\
+Test edilecek öğe.
 
 *Loc*\
-Sınanacak öğeyi içeren yerel ayar.
+Test edilecek öğeyi içeren yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-test edilen öğe bir boşluk karakteri ise **true** . değilse **yanlış** .
+test edilen öğe bir boşluk karakteri ise **doğrudur;** değilse **yanlış.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [use_facet](../standard-library/locale-functions.md#use_facet)< [CType](../standard-library/ctype-class.md)\< **CharType**> > (`Loc`) döndürür. [(](../standard-library/ctype-class.md#is) **CType**\< **CharType**>:: **Space**, `Ch`).
+Şablon işlevi use_facet[ctype](../standard-library/ctype-class.md) \< **CharType**> >() `Loc`döndürür. [use_facet](../standard-library/locale-functions.md#use_facet)<  [(](../standard-library/ctype-class.md#is) **ctype** \< **CharType**>:: `Ch` **boşluk**, ).
 
 ### <a name="example"></a>Örnek
 
@@ -680,9 +680,9 @@ int main( )
 }
 ```
 
-## <a name="isupper"></a>isupper
+## <a name="isupper"></a><a name="isupper"></a>isupper
 
-Bir yerel ayarda bulunan öğenin büyük harfle olup olmadığını sınar.
+Bir yerel alandaki bir öğenin büyük harfolup olmadığını sınar.
 
 ```cpp
 template <class CharType>
@@ -691,19 +691,19 @@ bool isupper(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Sınanacak öğe.
+*Caner*\
+Test edilecek öğe.
 
 *Loc*\
-Sınanacak öğeyi içeren yerel ayar.
+Test edilecek öğeyi içeren yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-test edilen öğe bir büyük karakter ise **doğru** ; değilse **yanlış** .
+test edilen öğe bir büyük harf karakter ise **doğrudur;** değilse **yanlış.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [use_facet](../standard-library/locale-functions.md#use_facet)< [CType](../standard-library/ctype-class.md)\< **CharType**> > (`Loc`) döndürür. [(](../standard-library/ctype-class.md#is) **CType**\< **CharType**>:: **Upper**, `Ch`).
+Şablon işlevi use_facet[ctype](../standard-library/ctype-class.md) \< **CharType**> >() `Loc`döndürür. [use_facet](../standard-library/locale-functions.md#use_facet)<  [(](../standard-library/ctype-class.md#is) **ctype** \< **CharType**>:: `Ch` **üst**, ).
 
 ### <a name="example"></a>Örnek
 
@@ -745,7 +745,7 @@ int main( )
 }
 ```
 
-## <a name="isxdigit"></a>isxdigit
+## <a name="isxdigit"></a><a name="isxdigit"></a>isxdigit
 
 Bir yerel ayardaki bir öğenin onaltılık bir sayıyı temsil etmek için kullanılan bir karakter olup olmadığını sınar.
 
@@ -756,21 +756,21 @@ bool isxdigit(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Sınanacak öğe.
+*Caner*\
+Test edilecek öğe.
 
 *Loc*\
-Sınanacak öğeyi içeren yerel ayar.
+Test edilecek öğeyi içeren yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-test edilen öğe, onaltılı bir sayıyı temsil etmek için kullanılan bir karakter ise **true** . değilse **yanlış** .
+test edilen öğe hexadecimal bir sayıyı temsil etmek için kullanılan bir karakterise **doğrudur;** değilse **yanlış.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [use_facet](../standard-library/locale-functions.md#use_facet)< [CType](../standard-library/ctype-class.md)\< **CharType**> > (`Loc`) döndürür. [(](../standard-library/ctype-class.md#is) **CType**\< **CharType**>:: **xdigit**, `Ch`).
+Şablon işlevi use_facet[ctype](../standard-library/ctype-class.md) \< **CharType**> >() `Loc`döndürür. [use_facet](../standard-library/locale-functions.md#use_facet)<  [(](../standard-library/ctype-class.md#is) **ctype** \< **CharType**>:: `Ch` **xdigit**, ).
 
-Onaltılık basamaklar sayıları temsil eden 16 ' yı, 0 ile 9 arasındaki sayıların yanı sıra 0 ile 15 arasında ondalık sayıları temsil eden büyük/küçük harf duyarsız harflerin kullanıldığı sayı olarak kullanır.
+Hexadecimal basamaklar sayıları temsil etmek için 16 tabanını kullanır, 0'dan 9'a kadar olan sayıları ve 0'dan 15'e kadar olan ondalık sayıları temsil etmek için A'dan F'ye kadar olan duyarlılıksız harfleri kullanırlar.
 
 ### <a name="example"></a>Örnek
 
@@ -812,7 +812,7 @@ int main( )
 }
 ```
 
-## <a name="tolower"></a>ToLower
+## <a name="tolower"></a><a name="tolower"></a>Tolower
 
 Bir karakteri küçük harfe dönüştürür.
 
@@ -823,11 +823,11 @@ CharType tolower(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Küçük harfe Dönüştürülecek karakter.
+*Caner*\
+Küçük harfe dönüştürülecek karakter.
 
 *Loc*\
-Dönüştürülecek karakteri içeren yerel ayar.
+Dönüştürülecek karakteri içeren yerel ada.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -835,7 +835,7 @@ Karakter küçük harfe dönüştürüldü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [use_facet](../standard-library/locale-functions.md#use_facet)< [CType](../standard-library/ctype-class.md)\< **CharType**> > (`Loc`) döndürür. [ToLower](../standard-library/ctype-class.md#tolower)(`Ch`).
+Şablon işlevi use_facet[ctype](../standard-library/ctype-class.md) \< **CharType**> >() `Loc`döndürür. [use_facet](../standard-library/locale-functions.md#use_facet)<  [tolower](../standard-library/ctype-class.md#tolower) `Ch`( ).
 
 ### <a name="example"></a>Örnek
 
@@ -861,7 +861,7 @@ int main( )
 }
 ```
 
-## <a name="toupper"></a>ToUpper
+## <a name="toupper"></a><a name="toupper"></a>Toupper
 
 Bir karakteri büyük harfe dönüştürür.
 
@@ -872,11 +872,11 @@ CharType toupper(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*\
-Büyük harfe Dönüştürülecek karakter.
+*Caner*\
+Büyük harfe dönüştürülecek karakter.
 
 *Loc*\
-Dönüştürülecek karakteri içeren yerel ayar.
+Dönüştürülecek karakteri içeren yerel ada.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -884,7 +884,7 @@ Karakter büyük harfe dönüştürüldü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [use_facet](../standard-library/locale-functions.md#use_facet)< [CType](../standard-library/ctype-class.md)\< **CharType**> > (`Loc`) döndürür. [ToUpper](../standard-library/ctype-class.md#toupper)(`Ch`).
+Şablon işlevi use_facet[ctype](../standard-library/ctype-class.md) \< **CharType**> >() `Loc`döndürür. [use_facet](../standard-library/locale-functions.md#use_facet)<  [toupper](../standard-library/ctype-class.md#toupper) `Ch`( ).
 
 ### <a name="example"></a>Örnek
 
@@ -910,7 +910,7 @@ int main( )
 }
 ```
 
-## <a name="use_facet"></a>use_facet
+## <a name="use_facet"></a><a name="use_facet"></a>use_facet
 
 Bir başvuruyu yerel ayarda depolanan belirtilen türdeki bir modele döndürür.
 
@@ -922,15 +922,15 @@ const Facet& use_facet(const locale& Loc);
 ### <a name="parameters"></a>Parametreler
 
 *Loc*\
-Başvurulmakta olan modelin türünü içeren const yerel ayarı.
+Başvurulan fatür türünü içeren const yerel.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağımsız değişken yerel ayarında bulunan `Facet` sınıf modeli başvurusu.
+Bağımsız değişken yerelinde `Facet` bulunan sınıfın falı bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi tarafından döndürülen model başvurusu, kapsayan yerel ayarın herhangi bir kopyası mevcut olduğu sürece geçerli kalır. Bağımsız değişken yerel ayarında `Facet` sınıfının böyle bir model nesnesi listelenmiyorsa, işlev bir `bad_cast` özel durumu atar.
+Şablon işlevi tarafından döndürülen fason başvurusu, içeren yerel anın herhangi bir kopyası olduğu sürece geçerli kalır. Bağımsız değişken yerel'inde `Facet` sınıfın bu tür bir fason nesnesi listelenmemişse, işlev bir `bad_cast` özel durum oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -973,4 +973,4 @@ The character '!' in locale loc2 is not alphabetic.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<yerel ayar >](../standard-library/locale.md)
+[\<yerel>](../standard-library/locale.md)

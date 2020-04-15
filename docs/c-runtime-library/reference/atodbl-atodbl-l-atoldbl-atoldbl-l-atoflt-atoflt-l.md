@@ -1,6 +1,6 @@
 ---
 title: _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - _atoldbl
 - _atoldbl_l
@@ -8,6 +8,12 @@ api_name:
 - _atoflt
 - _atoflt_l
 - _atodbl_l
+- _o__atodbl
+- _o__atodbl_l
+- _o__atoflt
+- _o__atoflt_l
+- _o__atoldbl
+- _o__atoldbl_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,6 +26,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -52,16 +59,16 @@ helpviewer_keywords:
 - _atoflt function
 - _atodbl_l function
 ms.assetid: 2d2530f4-4bd4-42e3-8083-f2d2fbc8432a
-ms.openlocfilehash: 3f3b164042006cab22d0dfd9a7968e2d2e494f5c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 5f304fd163c2ba1c57a4daee8c2a3307d8ba870a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943619"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81348957"
 ---
 # <a name="_atodbl-_atodbl_l-_atoldbl-_atoldbl_l-_atoflt-_atoflt_l"></a>_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 
-Bir dizeyi çift ( **_atodbl**), Long Double ( **_atoldbl**) ya da float ( **_atoflt**) olarak dönüştürür.
+Bir dizeyi çift **(_atodbl),** uzun çift **(_atoldbl**) veya float **(_atoflt)** olarak dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,32 +83,34 @@ int _atoflt_l( _CRT_FLOAT * value, const char * str, locale_t locale );
 
 ### <a name="parameters"></a>Parametreler
 
-*value*<br/>
-Dizeyi bir kayan nokta değerine dönüştürerek üretilen Double, Long Double veya float değeri. Bu değerler bir yapıya sarmalanır.
+*Değer*<br/>
+Dize kayan nokta değerine dönüştürülerek üretilen çift, uzun çift veya float değeri. Bu değerler bir yapıya sarılır.
 
-*üstbilgisine*<br/>
-Bir kayan noktalı değere dönüştürülecek şekilde Ayrıştırılacak dize.
+*Str*<br/>
+Kayan nokta değerine dönüştürmek için ayrıştılacak dize.
 
-*ayarlar*<br/>
+*Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa 0 döndürür. Olası hata kodları, Math. h > üst bilgi dosyasında \<tanımlanan **_yetersiz** veya **_taşma**olur.
+Başarılı olursa 0 döndürür. Olası hata kodları **_UNDERFLOW** veya **_OVERFLOW**, hangi \<başlık dosyası math.h> tanımlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler bir dizeyi kayan noktalı değere dönüştürür. Bu işlevler ve **atof** işlevleri arasındaki fark, bu işlevlerin kayan nokta kodu oluşturmamasıdır ve donanım özel durumlarına neden olmaz. Bunun yerine, hata koşulları hata kodu olarak bildirilir.
+Bu işlevler bir dizeyi kayan nokta değerine dönüştürür. Bu işlevler ile **atof of** işlevleri arasındaki fark, bu işlevlerin kayan nokta kodu oluşturmaması ve donanım özel durumlarına neden olmamasıdır. Bunun yerine, hata koşulları hata kodları olarak bildirilir.
 
-Bir dizenin kayan nokta değeri olarak geçerli bir yorumu yoksa, *değer* sıfır olarak ayarlanır ve dönüş değeri sıfırdır.
+Bir dize kayan nokta değeri olarak geçerli bir yorumu yoksa, *değer* sıfıra ayarlanır ve döndürme değeri sıfırdır.
 
-**_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen *yerel ayar* parametresini kullanmaları dışında, son eki olmayan sürümlerden aynıdır.
+**_l** sonek olan bu işlevlerin sürümleri, geçerli iş parçacığı yerel liği yerine geçirilen *yerel* parametreyi kullanmaları dışında, sonek olmayan sürümlerle aynıdır.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Çalıştırmasını|Gerekli başlık|
+|Rutin|Gerekli başlık|
 |--------------|---------------------|
-|**_atodbl**, **_atoldbl**, **_atoflt**<br /><br /> **_atodbl_l**, **_atoldbl_l**, **_atoflt_l**|\<Stdlib. h >|
+|**_atodbl**, **_atoldbl**, **_atoflt**<br /><br /> **_atodbl_l**, **_atoldbl_l**, **_atoflt_l**|\<stdlib.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -163,5 +172,5 @@ Return value: 3
 
 [Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>

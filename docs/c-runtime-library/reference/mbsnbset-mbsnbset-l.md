@@ -1,9 +1,11 @@
 ---
 title: _mbsnbset, _mbsnbset_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _mbsnbset
 - _mbsnbset_l
+- _o__mbsnbset
+- _o__mbsnbset_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -35,19 +38,19 @@ helpviewer_keywords:
 - tcsnset_l function
 - mbsnbset function
 ms.assetid: 8e46ef75-9a56-42d2-a522-a08450c67c19
-ms.openlocfilehash: 8ba619dba07f102387d70c3bb3a2af729e44b495
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 57c6d1a81c9aac817b0028e8eccad38d03b0eef7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952162"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81340553"
 ---
 # <a name="_mbsnbset-_mbsnbset_l"></a>_mbsnbset, _mbsnbset_l
 
-Çok baytlı karakter dizesinin ilk **n** baytını belirtilen karaktere ayarlar. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_mbsnbset_s, _mbsnbset_s_l](mbsnbset-s-mbsnbset-s-l.md).
+Çok bayt karakterli dizedeki ilk **n** baytlarını belirli bir karaktere ayarlar. Bu işlevlerin daha güvenli sürümleri mevcuttur; [_mbsnbset_s, _mbsnbset_s_l](mbsnbset-s-mbsnbset-s-l.md)bakın.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,33 +70,35 @@ unsigned char *_mbsnbset_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*<br/>
-Değiştirilecek dize.
+*Str*<br/>
+Dize değiştirilecek.
 
-*c*<br/>
-Tek baytlı veya çok baytlı karakter ayarı.
+*C*<br/>
+Tek bayt veya çok bayt karakterli ayar.
 
-*biriktirme*<br/>
+*Sayısı*<br/>
 Ayarlanacak bayt sayısı.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbsnbset** değiştirilen dizeye bir işaretçi döndürür.
+**_mbsnbset** değiştirilmiş dize için bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbset** ve **_mbsnbset_l** işlevleri, en çok, *Str* 'nin ilk *sayı* baytlarını *c*'ye ayarlar. *Count* değeri *Str*uzunluğundan büyükse, *Str* uzunluğu *sayı*yerine kullanılır. *C* çok baytlı bir karakter ise ve *sayı*ile belirtilen son bayta tamamen ayarlanmıyorsa, son bayt boş bir karakterle doldurulur. **_mbsnbset** ve **_mbsnbset_l** , *Str*sonuna bir Sonlandırıcı null değeri yerleştirmiyor.
+**_mbsnbset** ve **_mbsnbset_l** fonksiyonları, en fazla, *str* c ilk *c* *sayısı* bayt ayarlayın. *Sayım* *str*uzunluğundan büyükse, *str* uzunluğu *sayı*yerine kullanılır. *C* çok bayt karakterliyse ve *sayıyla*belirtilen son bayta tamamen ayarlanamıyorsa, son bayt boş bir karakterle eklenir. **_mbsnbset** ve **_mbsnbset_l** *str*sonunda bir sonlandırıcı null yer almaz.
 
-**_mbsnbset** ve **_mbsnbset_l** , **_mbsnset**ile benzerdir, hariç, *Count* baytlarını *c*'nin karakter *sayısı* yerine ayarlar.
+**_mbsnbset** ve **_mbsnbset_l** **_mbsnset**benzer , c karakter *saymak* yerine *bayt saymak* ayarlar dışında *.*
 
-*Str* **null** veya *sayı* sıfırsa, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklanan şekilde geçersiz bir parametre özel durumu oluşturur. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür. Ayrıca, *c* geçerli bir çok baytlı karakter değilse, **errno** **EINVAL** olarak ayarlanır ve bunun yerine bir boşluk kullanılır.
+*str* **NULL** ise veya *sayı* sıfır ise, bu işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre özel durumu oluşturur. Yürütmedevam etmesine izin verilirse, **errno** **EINVAL** olarak ayarlanır ve işlev **NULL**döndürür. Ayrıca, *c* geçerli bir çok bayt karakter değilse, **errno** **EINVAL** olarak ayarlanır ve bunun yerine bir boşluk kullanılır.
 
-Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . Bu işlevin **_mbsnbset** sürümü, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_mbsnbset_l** sürümü, bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Çıktı değeri, yerel LC_CTYPE **kategori** ayarı ayarı etkilenir; daha fazla bilgi için [setlocale'ye](setlocale-wsetlocale.md) bakın. Bu işlevin **_mbsnbset** sürümü, bu yerele bağımlı davranış için geçerli yerel eşkullanır; **_mbsnbset_l** sürümü, bunun yerine geçirilen yerel parametreyi kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-**Güvenlik notunun** Bu API, bir arabellek taşması sorunu ile ilgili olası bir tehdit doğurur. Arabellek taşması sorunları, sistem saldırılarına karşı sık kullanılan bir yöntemdir ve bu da garanti edilmemiş ayrıcalık yükselmesine neden olur. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+**Güvenlik Notu** Bu API, arabellek taşma sorununun getirdiği potansiyel bir tehdide neden olabilir. Arabellek taşma sorunları, sık karşılaşılan bir sistem saldırısı yöntemidir ve bu da haksız bir ayrıcalık yükselmesine neden olabilir. Daha fazla bilgi için [bkz.](/windows/win32/SecBP/avoiding-buffer-overruns)
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -106,10 +111,10 @@ Kullanılacak yerel ayar.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbset**|\<mbstring. h >|
-|**_mbsnbset_l**|\<mbstring. h >|
+|**_mbsnbset**|\<mbstring.h>|
+|**_mbsnbset_l**|\<mbstring.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -130,7 +135,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Before: This is a test
@@ -139,7 +144,7 @@ After:  **** is a test
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
 [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>

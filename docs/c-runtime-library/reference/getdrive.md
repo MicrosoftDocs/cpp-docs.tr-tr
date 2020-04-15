@@ -1,8 +1,9 @@
 ---
 title: _getdrive
-ms.date: 09/19/2019
+ms.date: 4/2/2020
 api_name:
 - _getdrive
+- _o__getdrive
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -28,19 +30,19 @@ helpviewer_keywords:
 - disk drives
 - _getdrive function
 ms.assetid: e40631a0-8f1a-4897-90ac-e1037ff30bca
-ms.openlocfilehash: 94d6c15270827cf61ec6086de8fa11251b435e2c
-ms.sourcegitcommit: f907b15f50a6b945d0b87c03af0050946157d701
+ms.openlocfilehash: 239bad8ef492396d713d81611e8d4c00da1697af
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71158760"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81344329"
 ---
 # <a name="_getdrive"></a>_getdrive
 
-Geçerli disk sürücüsünü alır.
+Geçerli disk sürücüsünün alır.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,15 +52,19 @@ int _getdrive( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli (varsayılan) sürücüyü döndürür (1 = A, 2 = B vb.). Sıfır dönüş değeri, geçerli yolun UNC yolu gibi bir harf sürücü adı ile başlamamasıdır. Ya da bir iç arabellek ayırma başarısız olduğu anlamına gelir. Bir iç ayırma başarısız olursa, `errno` ENOMEM olarak ayarlanır.
+Geçerli (varsayılan) sürücüyü (1=A, 2=B vb.) döndürür. Sıfırın dönüş değeri, geçerli yolun UNC yolu gibi bir harf sürücü adı ile başlamadığı anlamına gelir. Veya, bir iç arabellek ayırma başarısız olduğu anlamına gelir. Bir iç ayırma `errno` başarısız olursa, ENOMEM olarak ayarlanır.
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getdrive**|\<Direct. h >|
+|**_getdrive**|\<direct.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -112,7 +118,7 @@ G: (Current directory is G:\)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dizin Denetimi](../../c-runtime-library/directory-control.md)<br/>
+[Dizin Kontrolü](../../c-runtime-library/directory-control.md)<br/>
 [_chdrive](chdrive.md)<br/>
 [_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
 [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)<br/>

@@ -1,9 +1,11 @@
 ---
 title: _mbsnbcat_s, _mbsnbcat_s_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _mbsnbcat_s_l
 - _mbsnbcat_s
+- _o__mbsnbcat_s
+- _o__mbsnbcat_s_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -35,19 +38,19 @@ helpviewer_keywords:
 - mbsnbcat_s_l function
 - tcsncat function
 ms.assetid: 2c9e9be7-d979-4a54-8ada-23428b6648a9
-ms.openlocfilehash: a148f4be503ee793e4e36855233edfc8fa8f165a
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: b4a9540025ad039458203eec1cc950187b6316a4
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73624328"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81340777"
 ---
 # <a name="_mbsnbcat_s-_mbsnbcat_s_l"></a>_mbsnbcat_s, _mbsnbcat_s_l
 
-Çok baytlı bir karakter dizesine, en fazla bir çok baytlı karakter dizesinin ilk **n** baytını ekler. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri olan [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md) 'nin sürümleridir.
+Çok bayt karakter dizesi, en fazla, başka bir çok bayt karakter dizesinin ilk **n** baytları için ekler. Bunlar, [CRT'deki Güvenlik Özellikleri'nde](../../c-runtime-library/security-features-in-the-crt.md)açıklandığı [gibi,](mbsnbcat-mbsnbcat-l.md) güvenlik geliştirmeleri olan _mbsnbcat_l _mbsnbcat sürümleridir.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -82,44 +85,46 @@ errno_t _mbsnbcat_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*HD*<br/>
-Null ile sonlandırılmış çok baytlı karakter hedef dizesi.
+*Dest*<br/>
+Null-sonlandırılan çok bayt karakterli hedef dize.
 
-*sizeInBytes*<br/>
-*Hedef* arabelleğin bayt cinsinden boyutu.
+*sizeBytes*<br/>
+Baytlarda *dest* tamponboyutu.
 
-*YN*<br/>
-Null ile sonlandırılmış çok baytlı karakter kaynak dizesi.
+*src*<br/>
+Null-sonlandırılan multibyt karakter kaynak dizesi.
 
-*biriktirme*<br/>
-*Src* 'den *hedefe*eklenecek bayt sayısı.
+*Sayısı*<br/>
+*Src'den* *dest'e*ek bayt sayısı.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; Aksi takdirde, bir hata kodu.
+Başarılı olursa sıfır; aksi takdirde, bir hata kodu.
 
-### <a name="error-conditions"></a>Hata koşulları
+### <a name="error-conditions"></a>Hata Koşulları
 
-|**HD**|*sizeInBytes*|*YN*|Dönüş değeri|
+|**Dest**|*sizeBytes*|*src*|Döndürülen değer|
 |------------|-------------------|-----------|------------------|
-|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EıNVAL**|
-|Kaydedilmemiş|< = 0|Kaydedilmemiş|**EıNVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|**EıNVAL**|
+|**Null**|herhangi bir|herhangi bir|**Eınval**|
+|Herhangi biri|<= 0|herhangi bir|**Eınval**|
+|Herhangi biri|herhangi bir|**Null**|**Eınval**|
 
-Hata koşullarından herhangi biri gerçekleşirse, işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklanan şekilde geçersiz bir parametre hatası oluşturur. Hata işlenirse, işlev **EINVAL** döndürür ve **errno** 'u **EINVAL**olarak ayarlar.
+Hata koşullarından herhangi biri oluşursa, işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre hatası oluşturur. Hata işlenirse, işlev **EINVAL** döndürür ve **EINVAL** **için errno** ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbcat_s** işlevi, en çok *,* *src*'nin ilk *sayım* baytlarına ekler. *Hedef* karakterdeki null karakterden hemen önce gelen bayt bir ön bayt ise, *src*'nin ilk baytından üzerine yazılır. Aksi takdirde, *src* 'nin ilk baytı, *hedef*alanının Sonlandırıcı null karakterinin üzerine yazar. Count baytları eklenmeden önce *src* içinde null bir bayt *görünürse,* **_mbsnbcat_s** tüm bayt *sayısını* null karaktere kadar ekler. *Count* değeri *src*'nin uzunluğundan büyükse, *src* 'nin uzunluğu *Count*yerine kullanılır. Elde edilen dize, null bir karakter tarafından sonlandırılır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
+**_mbsnbcat_s** fonksiyonu *dest*ekler , en fazla, *src*ilk *sayısı* bayt . *Dest'teki* null karakterinden hemen önce gelen bayt bir kurşun bayt ise, *src'nin*baş bayt'ı tarafından yazılır. Aksi takdirde, *src'nin* ilk baytdede *destin*sonlandırıcı null karakterini yazar. *Sayım* baytları eklenmeden önce *src'de* null bayt görünürse, **_mbsnbcat_s** *src'den*null karaktere kadar tüm baytları ekler. *Sayım* *src*uzunluğundan büyükse, *sayım*yerine *src* uzunluğu kullanılır. Elde edilen dize null bir karakter tarafından sonlandırılır. Kopyalama çakışan dizeleri arasında gerçekleşirse, davranış tanımsız.
 
-Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . Bu işlevlerin sürümleri aynıdır, ancak **_l** sonekine sahip olmayan geçerli yerel ayarı kullanır ve bunun yerine **_l** sonekine sahip olanlar, geçirilen yerel ayar parametresini kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Çıktı değeri, yerel LC_CTYPE **kategori** ayarı ayarı etkilenir; daha fazla bilgi için [setlocale, _wsetlocale](setlocale-wsetlocale.md) bakın. Bu işlevlerin sürümleri aynıdır, **ancak _l** soneki olmayanlar geçerli yerel alanı kullanır ve **_l** soneki olanlar bunun yerine geçirilen yerel parametreyi kullanır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-' C++De, bu işlevlerin kullanımı şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve böylece bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir ve daha eski, daha az güvenli işlevlerini değiştirmek için daha yeni, daha güvenli işlevlerini otomatik olarak kullanabilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevlerin kullanımı şablon aşırı yükleri ile basitleştirilir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkartabilir ve böylelikle boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir ve daha eski, daha az güvenli işlevleri değiştirmek için daha yeni, daha güvenli işlevlerini otomatik olarak kullanabilirler. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
 
-Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevlerin hata ayıklama kitaplığı sürümleri önce arabelleği 0xFE ile doldurur. Bu davranışı devre dışı kullanabilirsiniz, [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)kullanın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -132,14 +137,14 @@ Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0x
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbcat_s**|\<mbstring. h >|
-|**_mbsnbcat_s_l**|\<mbstring. h >|
+|**_mbsnbcat_s**|\<mbstring.h>|
+|**_mbsnbcat_s_l**|\<mbstring.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)<br/>
 [_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l](strncnt-wcsncnt-mbsnbcnt-mbsnbcnt-l-mbsnccnt-mbsnccnt-l.md)<br/>
 [_mbsnbcpy, _mbsnbcpy_l](mbsnbcpy-mbsnbcpy-l.md)<br/>

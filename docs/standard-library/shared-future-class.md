@@ -18,16 +18,16 @@ helpviewer_keywords:
 - std::shared_future [C++], wait
 - std::shared_future [C++], wait_for
 - std::shared_future [C++], wait_until
-ms.openlocfilehash: 3b08a1341ed450dd5d5cee93cdfcbab57f8d6760
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 65ea01a9ced1ca69cd1b1526e7594c4b54387553
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450501"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81336777"
 ---
-# <a name="sharedfuture-class"></a>shared_future Sınıfı
+# <a name="shared_future-class"></a>shared_future Sınıfı
 
-*Zaman uyumsuz bir dönüş nesnesi*tanımlar. [Gelecekteki](../standard-library/future-class.md) bir nesnenin aksine, *zaman uyumsuz bir sağlayıcı* `shared_future` herhangi bir sayıda nesneyle ilişkilendirilebilir.
+Bir *eşzamanlı geri dönüş nesnesi*açıklar. [Gelecekteki](../standard-library/future-class.md) bir nesnenin aksine, *bir eşzamanlı sağlayıcı* herhangi bir `shared_future` sayıda nesneyle ilişkilendirilebilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,43 +38,43 @@ class shared_future;
 
 ## <a name="remarks"></a>Açıklamalar
 
-`valid` *Boş*bir nesne üzerindeki, `operator=`, ve yıkıcının dışında herhangi bir `shared_future` yöntemi çağırmayın.
+Boş bir nesnenin `valid`üzerinde `operator=`, ve yıkıcı dışında herhangi `shared_future` bir yöntem *empty*aramayın.
 
-`shared_future`nesneler eşitlenmemiş. Birden çok iş parçacığından aynı nesne üzerindeki yöntemlerin çağrılması öngörülemeyen sonuçlara sahip bir veri Race tanıtır.
+`shared_future`nesneler eşitlenmez. Birden çok iş parçacığı aynı nesne üzerinde arama yöntemleri öngörülemeyen sonuçları olan bir veri yarışı tanıtır.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[shared_future](#shared_future)|Bir `shared_future` nesnesi oluşturur.|
+|[Shared_future](#shared_future)|Bir `shared_future` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[get](#get)|*İlişkili zaman uyumsuz durumda*depolanan sonucu alır.|
-|[valid](#valid)|Nesnenin boş olup olmadığını belirtir.|
-|[bekleneceğini](#wait)|İlişkili zaman uyumsuz durum hazırlanana kadar geçerli iş parçacığını engeller.|
-|[wait_for](#wait_for)|İlişkili zaman uyumsuz duruma kadar veya belirtilen süre geçene kadar engeller.|
-|[wait_until](#wait_until)|İlişkili zaman uyumsuz durum hazırlanana veya belirli bir zaman noktasına kadar engeller.|
+|[get](#get)|*İlişkili eşzamanlı durumda*depolanan sonucu alır.|
+|[Geçerli](#valid)|Nesnenin boş olup olmadığını belirtir.|
+|[Bekle](#wait)|İlişkili asenkron durum hazır olana kadar geçerli iş parçacığı engeller.|
+|[wait_for](#wait_for)|İlişkili eşzamanlı durum hazır olana veya belirtilen süre geçene kadar engeller.|
+|[wait_until](#wait_until)|İlişkili eşzamanlı durum hazır olana veya belirli bir zaman alanına kadar engeller.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[shared_future:: operator =](#op_eq)|Yeni bir ilişkili zaman uyumsuz durum atar.|
+|[shared_future::operator=](#op_eq)|Yeni ilişkili bir eşzamanlı durum atar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<gelecekte >
+**Üstbilgi:** \<gelecek>
 
 **Ad alanı:** std
 
-## <a name="get"></a>shared_future:: Get
+## <a name="shared_futureget"></a><a name="get"></a>shared_future::get
 
-*İlişkili zaman uyumsuz durumda*depolanan sonucu alır.
+*İlişkili eşzamanlı durumda*depolanan sonucu alır.
 
 ```cpp
 const Ty& get() const;
@@ -86,17 +86,17 @@ void get() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sonuç bir özel durumdur, yöntemi onu yeniden atar. Aksi takdirde sonuç döndürülür.
+Sonuç bir özel durumsa, yöntem onu yeniden atar. Aksi takdirde, sonuç döndürülür.
 
-Bu yöntem, sonucu almadan önce, ilişkili zaman uyumsuz durum hazırlanana kadar geçerli iş parçacığını engeller.
+Sonucu almadan önce, ilişkili asynchronous durumu hazır olana kadar geçerli iş parçacığı engeller.
 
-Kısmi özelleşme `shared_future<Ty&>`için, saklı değer, geri dönüş değeri olarak *zaman uyumsuz sağlayıcıya* geçirilen nesneye bir başvuru sağlar.
+Kısmi uzmanlık için, `shared_future<Ty&>`depolanan değer etkili bir geri dönüş değeri olarak *asynchronous sağlayıcısına* geçirilen nesneye bir başvurudur.
 
-Özelleştirme `shared_future<void>`için depolanan değer olmadığından, yöntem **void**döndürüyor.
+Uzmanlık için depolanan değer `shared_future<void>`olmadığından, yöntem **geçersiz**döndürür.
 
-## <a name="op_eq"></a>shared_future:: operator =
+## <a name="shared_futureoperator"></a><a name="op_eq"></a>shared_future::operator=
 
-Belirtilen bir nesneden *ilişkili bir zaman uyumsuz durumu* aktarır.
+*İlişkili* bir eşzamanlı durumu belirtilen bir nesneden aktarın.
 
 ```cpp
 shared_future& operator=(shared_future&& Right) noexcept;
@@ -105,8 +105,8 @@ shared_future& operator=(const shared_future& Right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-A `shared_future` nesne.
+*Doğru*\
+Bir `shared_future` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -114,13 +114,13 @@ A `shared_future` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk operatör için, artık işlemden sonra ilişkili bir zaman uyumsuz duruma *sahip değildir.*
+İlk işleç *için, Sağ* artık işlemden sonra ilişkili bir eşzamanlı durum vardır.
 
-İkinci yöntemde, ilişkili zaman uyumsuz durumunu *sağ* sürdürür.
+İkinci yöntem *için, Sağ* ilişkili asynchronous durumunu korur.
 
-## <a name="shared_future"></a>shared_future:: shared_future Oluşturucusu
+## <a name="shared_futureshared_future-constructor"></a><a name="shared_future"></a>shared_future::shared_future Yapıcı
 
-Bir `shared_future` nesnesi oluşturur.
+Bir `shared_future` nesne inşa eder.
 
 ```cpp
 shared_future() noexcept;
@@ -131,20 +131,20 @@ shared_future(const shared_future& Right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-[Gelecek](../standard-library/future-class.md) veya `shared_future` nesne.
+*Doğru*\
+Bir [future](../standard-library/future-class.md) gelecek `shared_future` ya da nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, `shared_future` *ilişkili zaman uyumsuz durumu*olmayan bir nesne oluşturur.
+İlk oluşturucu, ilişkili `shared_future` *asynchronous durumu*olmayan bir nesne yi inşa eder.
 
-İkinci ve üçüncü oluşturucular bir `shared_future` nesne oluşturur ve ilişkili zaman uyumsuz durumu *sağdan*aktarır. Artık ilişkili bir zaman uyumsuz duruma *sahip değil.*
+İkinci ve üçüncü kurucular `shared_future` bir nesne oluşturmak ve *sağ*ilişkili asynchronous durumu aktarın. *Sağ* artık ilişkili bir eşzamanlı durum vardır.
 
-Dördüncü Oluşturucu, ilişkili zaman `shared_future` uyumsuz duruma sahip bir nesneyi *sağ*olarak oluşturur.
+Dördüncü oluşturucu, `shared_future` *Sağ*ile aynı ilişkili asenkron duruma sahip bir nesne inşa eder.
 
-## <a name="valid"></a>shared_future:: geçerli
+## <a name="shared_futurevalid"></a><a name="valid"></a>shared_future::geçerli
 
-Nesnenin *ilişkili bir zaman uyumsuz duruma*sahip olup olmadığını belirtir.
+Nesnenin ilişkili bir *asynchronous durumu*olup olmadığını belirtir.
 
 ```cpp
 bool valid() noexcept;
@@ -152,11 +152,11 @@ bool valid() noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-nesnenin ilişkili bir zaman uyumsuz durumu varsa **doğru** ; Aksi takdirde, **false**.
+nesnenin ilişkili bir eşzamanlı durumu varsa **doğru;** aksi takdirde, **yanlış**.
 
-## <a name="wait"></a>shared_future:: wait
+## <a name="shared_futurewait"></a><a name="wait"></a>shared_future::bekle
 
-*İlişkili zaman uyumsuz durum* hazırlanana kadar geçerli iş parçacığını engeller.
+*İlişkili asynchronous durumu* *hazır*olana kadar geçerli iş parçacığı engeller.
 
 ```cpp
 void wait() const;
@@ -164,11 +164,11 @@ void wait() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişkili bir zaman uyumsuz durum, yalnızca zaman uyumsuz sağlayıcısı bir dönüş değeri depolamışsa veya bir özel durum depolamışsa kullanılabilir.
+İlişkili bir eşzamanlı durum, yalnızca eşzamanlı sağlayıcısı bir iade değeri depolanmışsa veya bir özel durum depolarsa hazırdır.
 
-## <a name="wait_for"></a>shared_future::wait_for
+## <a name="shared_futurewait_for"></a><a name="wait_for"></a>shared_future:wait_for
 
-İlişkili zaman uyumsuz durum hazırlanana veya belirli bir süre  geçene kadar geçerli iş parçacığını engeller.
+İlişkili eşzamanlı durum *hazır* olana veya belirli bir süre geçene kadar geçerli iş parçacığı engeller.
 
 ```cpp
 template <class Rep, class Period>
@@ -179,19 +179,19 @@ future_status wait_for(
 ### <a name="parameters"></a>Parametreler
 
 *Rel_time*\
-Bir zaman hatası: iş parçacığının engellediği maksimum zaman aralığını belirten [:d uration](../standard-library/duration-class.md) nesnesi.
+İş parçacığının bloklar ettiği maksimum zaman aralığını belirten [bir kronometre::duration](../standard-library/duration-class.md) nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürme nedenini gösteren bir [future_status](../standard-library/future-enums.md#future_status) .
+Geri dönme nedenini gösteren [bir future_status.](../standard-library/future-enums.md#future_status)
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişkili bir zaman uyumsuz durum *, yalnızca zaman* uyumsuz sağlayıcısı bir dönüş değeri depolamışsa veya bir özel durum depolamışsa kullanılabilir.
+İlişkili bir eşzamanlı durum, yalnızca eşzamanlı sağlayıcısı bir iade değeri depolanmışsa veya bir özel durum depolarsa *hazırdır.*
 
-## <a name="wait_until"></a>shared_future::wait_until
+## <a name="shared_futurewait_until"></a><a name="wait_until"></a>shared_future:wait_until
 
-İlişkili zaman uyumsuz durum hazırlanana veya belirtilen bir zaman  noktasına gelene kadar geçerli iş parçacığını engeller.
+İlişkili eşzamanlı durum *hazır* olana veya belirli bir zaman noktasına gelene kadar geçerli iş parçacığı engeller.
 
 ```cpp
 template <class Clock, class Duration>
@@ -202,17 +202,17 @@ future_status wait_until(
 ### <a name="parameters"></a>Parametreler
 
 *Abs_time*\
-İş parçacığının engellemesini kaldırmak için geçen süreyi belirten bir zamanından [o:: time_point](../standard-library/time-point-class.md) nesnesi.
+Bir [kronometre:time_point](../standard-library/time-point-class.md) nesnesi, iş parçacığının engelini kaldırabileceği bir süre yi belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürme nedenini gösteren bir [future_status](../standard-library/future-enums.md#future_status) .
+Geri dönme nedenini gösteren [bir future_status.](../standard-library/future-enums.md#future_status)
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişkili bir zaman uyumsuz durum, yalnızca zaman uyumsuz sağlayıcısı bir dönüş değeri depolamışsa veya bir özel durum depolamışsa kullanılabilir.
+İlişkili bir eşzamanlı durum, yalnızca eşzamanlı sağlayıcısı bir iade değeri depolanmışsa veya bir özel durum depolarsa hazırdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[\<gelecekte >](../standard-library/future.md)
+[Üstbilgi Dosyaları Başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<gelecek>](../standard-library/future.md)

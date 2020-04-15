@@ -3,512 +3,512 @@ title: Bağlayıcı Özellik Sayfaları
 ms.date: 07/24/2019
 ms.topic: article
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
-ms.openlocfilehash: fd0befd7b8ed4e7a4209c3c80602be2f2a99422f
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 2f2068c6c51fc6bf4e4104213e946e243fc6df2e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079604"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81336582"
 ---
 # <a name="linker-property-pages"></a>Bağlayıcı Özellik Sayfaları
 
-Aşağıdaki özellikler, **proje** > **özellikleri** > **yapılandırma özellikleri** > **bağlayıcı**altında bulunur. Bağlayıcı hakkında daha fazla bilgi için bkz. [CL 'Yi bağlayıcı](cl-invokes-the-linker.md) ve [bağlayıcı seçeneklerini](linker-options.md)çağırır.
+Aşağıdaki özellikler **Project** > **Properties** > **Configuration Properties** > **Linker**altında bulunur. Bağlayıcı hakkında daha fazla bilgi için, [cl Linker](cl-invokes-the-linker.md) ve [Bağlayıcı Seçenekleri](linker-options.md)çağırır bakın.
 
-## <a name="general-property-page"></a>Genel özellik sayfası
+## <a name="general-property-page"></a>Genel Özellik Sayfası
 
-### <a name="output-file"></a>Çıkış Dosyası
+### <a name="output-file"></a>Çıktı Dosyası
 
-[/Out](out-output-file-name.md) seçeneği, bağlayıcının oluşturduğu programın varsayılan adını ve konumunu geçersiz kılar.
+[/OUT](out-output-file-name.md) seçeneği, bağlayıcının oluşturduğu programın varsayılan adını ve konumunu geçersiz kılar.
 
-### <a name="show-progress"></a>Ilerlemeyi göster
+### <a name="show-progress"></a>İlerlemeyi Göster
 
-Bağlayıcı Ilerleme Iletilerini yazdırır
+Bağlayıcı İlerleme Mesajlarını Yazdırır
 
-**Yapabileceği**
+**Seçenekler**
 
-- **Ayarlanmadı** ; ayrıntı düzeyi yok.
-- **Tüm ilerleme Iletilerini görüntüle** -tüm ilerleme iletilerini görüntüler.
-- **Aranan kitaplıklar için** -yalnızca aranan kitaplıkları gösteren ilerleme mesajlarını görüntüler.
-- **İyileştirilmiş bağlama SıRASıNDA COMDAT katlama hakkında** -iyileştirilmiş bağlama sırasında COMDAT katlaması hakkındaki bilgileri görüntüler.
-- **İyileştirilmiş bağlantı sırasında kaldırılan veriler hakkında** -iyileştirilmiş bağlama sırasında kaldırılan işlevler ve veriler hakkındaki bilgileri görüntüler.
-- **SEH ile uyumsuz modüller hakkında** -güvenli özel durum işleme ile uyumsuz modüllerle ilgili bilgileri görüntüler.
-- **Yönetilen kodla ilişkili bağlayıcı etkinliği hakkında** -yönetilen kodla ilişkili bağlayıcı etkinliği hakkında bilgi görüntüle.
+- **Set değil** - Hayır ayrıntılılık.
+- **Tüm ilerleme iletilerini görüntüler** - Tüm ilerleme iletilerini görüntüler.
+- **Aranan Kütüphaneler İçin** - Yalnızca aranan kitaplıkları gösteren ilerleme iletilerini görüntüler.
+- **Optimize edilmiş bağlantı sırasında COMDAT katlama hakkında** - Optimize edilmiş bağlantı sırasında COMDAT katlama hakkındaki bilgileri görüntüler.
+- **En iyi duruma getirilmiş bağlantı sırasında kaldırılan veriler hakkında** - En iyi duruma getirilmiş bağlantı sırasında kaldırılan işlevler ve veriler le ilgili bilgileri görüntüler.
+- **SEH ile uyumsuz modüller hakkında** - Güvenli Özel Durum Kullanımıyla uyumsuz modüller hakkındaki bilgileri görüntüler.
+- **Yönetilen kodla ilgili bağlayıcı etkinliği hakkında** - Yönetilen kodla ilgili bağlayıcı etkinliği hakkında bilgi görüntüleyin.
 
 ### <a name="version"></a>Sürüm
 
-[/Version](version-version-information.md) seçeneği, bağlayıcının. exe veya. dll dosyasının üstbilgisine bir sürüm numarası vermesini söyler. **/Version**'nin etkisini görmek IÇIN, Isteğe bağlı üst bilgi değerlerinin görüntü sürümü alanını görmek IÇIN dumpbin/Headers komutunu kullanın.
+[/VERSION](version-version-information.md) seçeneği, bağlayıcıya .exe veya .dll dosyasının üstbilgisine bir sürüm numarası koymasını söyler. **/VERSION'un**etkisini görmek için İsteğE BAĞLI ÜSTBILGI DEĞERLerinin görüntü sürüm alanını görmek için DUMPBIN /HEADERS'ı kullanın.
 
-### <a name="enable-incremental-linking"></a>Artımlı bağlamayı etkinleştir
+### <a name="enable-incremental-linking"></a>Artımlı Bağlamayı Etkinleştir
 
-Artımlı bağlamayı mümkün. ([/ıncreıncre/ıncreıncre:](incremental-link-incrementally.md)No)
+Artımlı bağlantı sağlar. ([/ARTıMLı](incremental-link-incrementally.md), /ArtıMLı:HAYıR)
 
-### <a name="suppress-startup-banner"></a>Başlangıç başlığını gösterme
+### <a name="suppress-startup-banner"></a>Başlangıç Banner'ı bastır
 
-[/Nologo](nologo-suppress-startup-banner-linker.md) seçeneği telif hakkı iletisi ve sürüm numarasını görüntülemeyi önler.
+[/NOLOGO](nologo-suppress-startup-banner-linker.md) seçeneği, telif hakkı iletisinin ve sürüm numarasının görüntülenmesini engeller.
 
-### <a name="ignore-import-library"></a>Içeri aktarma kitaplığını yoksay
+### <a name="ignore-import-library"></a>Alma Kitaplığını Yoksay
 
-Bu özellik, bağlayıcının bu derlemeden oluşturulan herhangi bir. lib çıkışını herhangi bir bağımlı projeye bağmayacağını söyler. Proje sisteminin, inşa edildiğinde. lib dosyası üretmeyen. dll dosyalarını işlemesini sağlar. Bir proje DLL üreten başka bir projeye bağımlıysa, proje sistemi otomatik olarak bu alt proje tarafından oluşturulan. lib dosyasını bağlar. Bu dll 'Ler anlamlı dışarı aktarmalar olmadığından, bu özellik COM DLL 'Leri veya yalnızca kaynak dll 'Leri üreten projelerde gereksiz olabilir. Bir DLL 'nin dışarı aktarmaları yoksa, bağlayıcı bir. lib dosyası oluşturmaz. Export. lib dosyası yoksa ve proje sistemi bağlayıcıya eksik DLL ile bağlantı oluşturmasını söyler, bağlantı başarısız olur. Bu sorunu çözmek için **Içeri aktarma kitaplığını yoksay** özelliğini kullanın. **Evet**olarak ayarlandığında, proje sistemi. lib dosyasının varlığını veya yokluğunu yok sayar ve bu projeye bağımlı tüm projenin varolmayan. lib dosyasıyla bağlantı kurma izni vermesine neden olur.
+Bu özellik, bağlayıcıya bu yapıdan oluşturulan herhangi bir .lib çıktısını bağımlı bir projeye bağlamamasını söyler. Proje sisteminin ,.lib dosyası oluşturmadığında .lib dosyasını oluşturmayan .dll dosyalarını işlemesini sağlar. Bir proje DLL üreten başka bir projeye bağlıysa, proje sistemi otomatik olarak o alt proje tarafından üretilen .lib dosyasını bağlar. Bu özellik, com dls veya kaynak yalnızca DLLs üreten projelerde gereksiz olabilir, bu DLs anlamlı bir dışa aktarma yok çünkü. Bir DLL'nin dışa aktarımları yoksa, bağlayıcı .lib dosyası oluşturmaz. Dışa aktarma .lib dosyası yoksa ve proje sistemi bağlantıcıya eksik DLL ile bağlantı kurmasını söylüyorsa, bağlantı başarısız olur. Bu sorunu gidermek için **İçe Aktarma Özelliği'ni** kullanın. **Evet**olarak ayarlandığında, proje sistemi .lib dosyasının varlığını veya yokluğunu yoksayarlar ve bu projeye bağlı olan herhangi bir projenin var olmayan .lib dosyasıyla bağlantı kurmamasını sağlar.
 
-Bu özelliğe programlı bir şekilde erişmek için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreImportLibrary%2A>.
+Bu özelliğe programlı olarak <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreImportLibrary%2A>erişmek için bkz.
 
-### <a name="register-output"></a>Çıktıyı Kaydet
+### <a name="register-output"></a>Kayıt Çıktısı
 
-Yapı çıkışında yalnızca. dll projelerinde geçerli olan `regsvr32.exe /s $(TargetPath)` çalıştırır. . Exe projeleri için bu özellik yok sayılır. Bir. exe çıkışını kaydetmek için, her zaman kayıtlı. exe dosyaları için gereken özel kaydı yapmak üzere yapılandırmada bir postbuild olayı ayarlayın.
+Yalnızca `regsvr32.exe /s $(TargetPath)` .dll projelerinde geçerli olan yapı çıktısı üzerinde çalışır. .exe projeleri için bu özellik yoksayılır. Bir .exe çıktısı kaydetmek için, kayıtlı .exe dosyaları için her zaman gerekli olan özel kaydı yapmak için yapılandırmada bir postbuild olayı ayarlayın.
 
-Bu özelliğe programlı bir şekilde erişmek için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RegisterOutput%2A>.
+Bu özelliğe programlı olarak <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RegisterOutput%2A>erişmek için bkz.
 
-### <a name="per-user-redirection"></a>Kullanıcı başına yeniden yönlendirme
+### <a name="per-user-redirection"></a>Kullanıcı Başına Yeniden Yönlendirme
 
-Visual Studio 'da kayıt, HKEY_CLASSES_ROOT (HKCR) içinde geleneksel olarak yapılır. Windows Vista ve sonraki işletim sistemleriyle, HKCR 'ye erişmek için Visual Studio 'Yu Yükseltilmiş modda çalıştırmalısınız. Geliştiriciler her zaman Yükseltilmiş modda çalıştırmak istemiyor, ancak yine de kayıt ile çalışmak zorunda değildir. Kullanıcı başına yeniden yönlendirme, yükseltilmiş modda çalıştırmak zorunda kalmadan kaydetmenize izin verir.
+Visual Studio'ya kayıt geleneksel olarak HKEY_CLASSES_ROOT 'de (HKCR) yapılmıştır. Windows Vista ve daha sonraki işletim sistemleri ile HKCR'a erişmek için Visual Studio'yı yüksek modda çalıştırmanız gerekir. Geliştiriciler her zaman yükseltilmiş modda çalıştırmak istemiyorum, ancak yine de kayıt ile çalışması gerekir. Kullanıcı başına yeniden yönlendirme, yükseltilmiş modda çalıştırmak zorunda kalmadan kaydolmanıza olanak tanır.
 
-Kullanıcı başına yeniden yönlendirme, HKCR 'ye yapılan yazmaları, GEÇERLI\_KULLANıCıSı (HKCU)\_HKEY 'e yeniden yönlendirmeye zorlar. Kullanıcı başına yeniden yönlendirme kapatılmışsa, program HKCR 'ye yazmaya çalıştığında [proje derleme hatası PRJ0050](../../error-messages/tool-errors/project-build-error-prj0050.md) neden olabilir.
+Kullanıcı başına yeniden yönlendirme, herhangi bir yazının HKEY\_CURRENT\_USER'a (HKCU) yönlendirilmesi için HKCR'ye yönlendirilmesine zorlar. Kullanıcı başına yeniden yönlendirme kapatılırsa, program HKCR'a yazmaya çalıştığında [Proje Oluşturma Hatası PRJ0050'ye](../../error-messages/tool-errors/project-build-error-prj0050.md) neden olabilir.
 
-### <a name="additional-library-directories"></a>Ek kitaplık dizinleri
+### <a name="additional-library-directories"></a>Ek Kütüphane Dizinleri
 
-Kullanıcının ortam kitaplık yolunu geçersiz kılmasına izin verir. ([/LIBPATH](libpath-additional-libpath.md): klasör)
+Kullanıcının çevre kitaplığı yolunu geçersiz kılmasına olanak tanır. ([/LIBPATH](libpath-additional-libpath.md):klasör)
 
-### <a name="link-library-dependencies"></a>Bağlantı kitaplığı bağımlılıkları
+### <a name="link-library-dependencies"></a>Bağlantı Kitaplığı Bağımlılıkları
 
-Bağımlı projeler tarafından üretilen. lib dosyalarının bağlantısının yapılıp yapılmayacağını belirtir. Genellikle,. lib dosyalarında bağlamak istersiniz, ancak belirli dll 'Ler için bu durum olmayabilir.
+Bağımlı projeler tarafından üretilen .lib dosyalarının bağlanıp bağlanmayacağını belirtir. Genellikle,.lib dosyalarına bağlanmak istersiniz, ancak belirli DL'ler için durum böyle olmayabilir.
 
-Ayrıca, dosya adı ve göreli yol (örneğin, ") sağlayarak bir. obj dosyası da belirtebilirsiniz.\\.. \Mylibproject\myobjfile.exe ". . Obj dosyasının kaynak kodu önceden derlenmiş bir üst bilgi #includes (örneğin, pch. h), pch. obj dosyası MyObjFile. obj ile aynı klasörde bulunur. Ayrıca, pch. obj ' i ek bir bağımlılık olarak eklemeniz gerekir.
+Ayrıca, dosya adı ve göreli yol sağlayarak bir .obj dosyası belirtebilirsiniz, örneğin "... \\.. \MyLibProject\MyObjFile.obj". .obj dosyasının kaynak kodu önceden derlenmiş bir üstbilgi #includes varsa, örneğin pch.h, pch.obj dosyası MyObjFile.obj ile aynı klasörde bulunur. Ayrıca ek bir bağımlılık olarak pch.obj eklemeniz gerekir.
 
-### <a name="use-library-dependency-inputs"></a>Kitaplık Bağımlılığı Girişlerini Kullan
+### <a name="use-library-dependency-inputs"></a>Kitaplık Bağımlılık Girişlerini Kullanma
 
-Proje bağımlılıklarının kitaplık çıkışları arasında bağlantı sırasında, kitaplık dosyasının kendisi yerine kütüphaneian aracında girişlerin kullanılıp kullanılmayacağını belirtir. Büyük bir projede, bağımlı bir proje. lib dosyası üretdiğinde, artımlı bağlama devre dışıdır. . Lib dosyaları üreten çok sayıda bağımlı proje varsa, uygulamayı oluşturmak uzun sürebilir. Bu özellik **Evet**olarak ayarlandığında, proje sistemi bağımlı projeler tarafından üretilen. LIBS için. obj dosyalarında, artımlı bağlamayı etkinleştirerek bağlantı sağlar.
+Proje bağımlılıklarının kitaplık çıktılarına bağlantı verirken, girişleri kitaplık dosyasının kendisi yerine kütüphaneci aracına kullanıp kullanmayacağımı belirtir. Büyük bir projede, bağımlı bir proje bir .lib dosyası üretirken, artımlı bağlantı devre dışı bırakılır. .lib dosyaları üreten çok sayıda bağımlı proje varsa, uygulamanın oluşturulması uzun sürebilir. Bu özellik **Evet**olarak ayarlandığında, proje sistemi .obj dosyalarına bağımlı projeler tarafından üretilen .libs'i bağlar ve artımlı bağlamayı sağlar.
 
-**Genel** bağlayıcı özellik sayfasına erişme hakkında daha fazla bilgi için bkz. [Visual Studio C++ 'Da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+**Genel** bağlayıcı özellik sayfasına nasıl erişici görünebilirsiniz hakkında bilgi için [Bkz. C++ derleyicisi ayarlanın ve Visual Studio'da özellikler oluşturun.](../working-with-project-properties.md)
 
-### <a name="link-status"></a>Bağlantı durumu
+### <a name="link-status"></a>Bağlantı Durumu
 
-Bağlayıcının bağlantının yüzdesinin tamamlandığını gösteren bir ilerleme göstergesi görüntüleyip görüntülemeyeceği meyeceğini belirtir. Varsayılan değer bu durum bilgilerini göstermemelidir. ([/LTCG](ltcg-link-time-code-generation.md): durum | LTCG: NOSTATUS)
+Bağlayıcının bağlantının yüzde kaçının tamamolduğunu gösteren bir ilerleme göstergesi gösterip göstermeyeceğini belirtir. Varsayılan olarak bu durum bilgilerini görüntülememektir. ([/LTCG](ltcg-link-time-code-generation.md):DURUM| LTCG:NOSTATUS)
 
-### <a name="prevent-dll-binding"></a>DLL bağlamasını engelle
+### <a name="prevent-dll-binding"></a>DLL Bağlanmasını Önleme
 
-[/Allowbind](allowbind-prevent-dll-binding.md): No, dll 'nin üst bilgisinde, görüntünün bağlı olmasına izin verilmediğini belirten bir bit belirler. Dijital olarak imzalanmışsa DLL 'nin bağlanmasını istemeyebilirsiniz (bağlama imzayı geçersiz kılar).
+[/ALLOWBIND](allowbind-prevent-dll-binding.md):NO, Bind.exe'ye görüntünün bağlanmasına izin verilmediğini gösteren bir DLL başlığında biraz ayarlar. Dijital olarak imzalanmışsa (bağlama imzayı geçersiz kılar) bir DLL'nin bağlanmasını istemeyebilirsiniz.
 
-### <a name="treat-linker-warning-as-errors"></a>Bağlayıcı uyarısını hata olarak değerlendir
+### <a name="treat-linker-warning-as-errors"></a>Bağlayıcı Uyarıyı Hata Olarak Ele
 
-[/WX](wx-treat-linker-warnings-as-errors.md) , bağlayıcı bir uyarı oluşturursa hiçbir çıkış dosyası oluşturulmasına neden olur.
+[/WX,](wx-treat-linker-warnings-as-errors.md) bağlayıcı bir uyarı oluşturursa hiçbir çıktı dosyasının oluşturulmasına neden olur.
 
-### <a name="force-file-output"></a>Dosya çıkışını zorla
+### <a name="force-file-output"></a>Kuvvet Dosyası Çıktısı
 
-[/Force](force-force-file-output.md) seçeneği bağlayıcıya bir. exe dosyası veya dll oluşturulmasını söyler, ancak tanımlanmamış ya da tanımlanmış çarpma olur. Geçersiz. exe dosyası oluşturabilir.
+[/FORCE](force-force-file-output.md) seçeneği, bir sembol başvurulsa ancak tanımlanmamış olsa veya tanımlanan çarpsa bile bağlayıcıya bir .exe dosyası veya DLL oluşturmasını söyler. Geçersiz .exe dosyası oluşturabilir.
 
-**Yapabileceği**
+**Seçenekler**
 
-- **Enabled** -/Force bağımsız değişken olmadan hem birden çok hem de çözülmemiş anlamına gelir.
-- **Yalnızca tanımlanmış sembolü çarpın** -bağlantı, bir sembol için birden fazla tanım bulsa bile, çıkış dosyası oluşturmak için/Force: MULTIPLE kullanın.
-- **Yalnızca tanımsız sembol** -bağlantının tanımsız bir sembol bulmadığını bir çıkış dosyası oluşturmak için/Force: çözümlenmemiş kullanın. /FORCE: giriş noktası simgesi çözülmedi ise ÇÖZÜMLENMEMIŞ yok sayılır.
+- **Etkin** - /FORCE bağımsız değişkeni olmadan hem birden çok hem de çözümlenmemiş anlamına gelir.
+- **Yalnızca Tanımlı Simgeyi Çarpın** - LINK bir sembol için birden fazla tanım bulsa bile çıktı dosyası oluşturmak için /FORCE:MULTIPLE kullanın.
+- **Tanımsız Sembol Yalnızca** - LINK tanımsız bir sembol bulunup bulunmadığını bir çıktı dosyası oluşturmak için /FORCE:UNRESOLVED kullanın. /FORCE:Giriş noktası simgesi çözülmezse ÇÖZÜMSÜZ dür.
 
-### <a name="create-hot-patchable-image"></a>Etkin bir Patchımage oluştur
+### <a name="create-hot-patchable-image"></a>Sıcak Yamalanabilir Görüntü Oluşturma
 
-Anında düzeltme için bir görüntü hazırlar.
+Hotpatching için bir görüntü hazırlar.
 
-**Yapabileceği**
+**Seçenekler**
 
-- **Enabled** -bir görüntüyü anında düzeltme için hazırlar.
-- **Yalnızca x86 görüntüsü** -anında düzeltme Için bir x86 görüntüsü hazırlar.
-- **Yalnızca x64 görüntüsü** -anında düzeltme Için bir x64 görüntüsü hazırlar.
-- **Yalnızca Itanium görüntüsü** -anında düzeltme için Itanium görüntüsü hazırlar.
+- **Etkin** - Hotpatching için bir görüntü hazırlar.
+- **Yalnızca X86 Image** - Hotpatching için bir X86 görüntüsü hazırlar.
+- **Yalnızca X64 Image** - Hotpatching için bir X64 görüntüsü hazırlar.
+- **Sadece Itanium Image** - Hotpatching için bir Itanium görüntü hazırlar.
 
-### <a name="specify-section-attributes"></a>Bölüm özniteliklerini belirt
+### <a name="specify-section-attributes"></a>Bölüm Özniteliklerini Belirt
 
-[/Section](section-specify-section-attributes.md) seçeneği bir bölümün özniteliklerini değiştirir, bölüm için. obj dosyası derlendiğinde ayarlanan öznitelikleri geçersiz kılar.
+[/SECTION](section-specify-section-attributes.md) seçeneği, bölümün .obj dosyası derlendiğinde ayarlanan öznitelikleri geçersiz kılarak bir bölümün özniteliklerini değiştirir.
 
-## <a name="input-property-page"></a>Giriş özellik sayfası
+## <a name="input-property-page"></a>Giriş Özelliği Sayfası
 
-### <a name="additional-dependencies"></a>{1&gt;Ek Bağımlılıklar&lt;1}
+### <a name="additional-dependencies"></a>Ek Bağımlılıklar
 
-Bağlantı komut satırına eklenecek ek öğeleri belirtir, örneğin *Kernel32. lib*.
+Bağlantı komut satırına eklemek için ek öğeler belirtir, örneğin *kernel32.lib*.
 
-### <a name="ignore-all-default-libraries"></a>Tüm varsayılan kitaplıkları Yoksay
+### <a name="ignore-all-default-libraries"></a>Tüm Varsayılan Kitaplıkları Yoksay
 
-[/NODEFAULTLIB](nodefaultlib-ignore-libraries.md) seçeneği bağlayıcıya, dış başvuruları çözümlerken aradığı kitaplık listesinden bir veya daha fazla varsayılan kitaplığı kaldırmasını söyler.
+[/NODEFAULTLIB](nodefaultlib-ignore-libraries.md) seçeneği, bağlayıcıya dış başvuruları çözerken aradığı kitaplıklar listesinden bir veya daha fazla varsayılan kitaplık kaldırmasını söyler.
 
-### <a name="ignore-specific-default-libraries"></a>Belirli varsayılan kitaplıkları Yoksay
+### <a name="ignore-specific-default-libraries"></a>Belirli Varsayılan Kitaplıkları Yoksay
 
-Yoksayılacak bir veya daha fazla varsayılan kitaplık adını belirtir. Birden çok kitaplığı noktalı virgülle ayırın. (/NODEFAULTLıB: [ad, ad,...])
+Varsayılan kitaplıkların bir veya daha fazla adını yoksaymak için belirtir. Birden çok kitaplıkları yarı iki nokta lı olarak ayırın. (/NODEFAULTLIB:[isim, isim, ...])
 
-### <a name="module-definition-file"></a>Modül tanım dosyası
+### <a name="module-definition-file"></a>Modül Tanım Dosyası
 
-[/Def](def-specify-module-definition-file.md) seçeneği bir modül tanım dosyasını (. def) bağlayıcıya geçirir. BAĞLAMAK için yalnızca bir. def dosyası belirtilebilir.
+[/DEF](def-specify-module-definition-file.md) seçeneği bir modül tanımlı dosyayı (.def) bağlayıcıya geçirir. LINK'e yalnızca bir .def dosyası belirtilebilir.
 
-### <a name="add-module-to-assembly"></a>Modülü derlemeye Ekle
+### <a name="add-module-to-assembly"></a>Derlemeye Modül Ekle
 
-[/ASSEMBLYMODULE](assemblymodule-add-a-msil-module-to-the-assembly.md) seçeneği bir derlemeye modül başvurusu eklemenize olanak tanır. Modüldeki tür bilgileri, modül başvurusunu ekleyen derleme programı tarafından kullanılamaz. Ancak, modüldeki tür bilgileri derlemeye başvuran tüm programlar için kullanılabilir olacaktır.
+[/ASSEMBLYMODULE](assemblymodule-add-a-msil-module-to-the-assembly.md) seçeneği, bir derlemeye modül referansı eklemenize olanak tanır. Modüldeki tür bilgileri, modül referansını ekleyen montaj programında kullanılamaz. Ancak, modüldeki tür bilgileri derlemeye başvuran herhangi bir program için kullanılabilir olacaktır.
 
-### <a name="embed-managed-resource-file"></a>Yönetilen kaynak dosyasını katıştır
+### <a name="embed-managed-resource-file"></a>Yönetilen Kaynak Dosyayı Gömme
 
-[/ASSEMBLYRESOURCE](assemblyresource-embed-a-managed-resource.md) bir kaynak dosyasını çıkış dosyasına katıştırır.
+[/ASSEMBLYRESOURCE](assemblyresource-embed-a-managed-resource.md) çıktı dosyasına bir kaynak dosyası gömer.
 
-### <a name="force-symbol-references"></a>Sembol başvurularını zorla
+### <a name="force-symbol-references"></a>Kuvvet Sembolü Referansları
 
-[/Include](include-force-symbol-references.md) seçeneği bağlayıcıya sembol tablosuna belirtilen bir sembol eklemesini söyler.
+[/INCLUDE](include-force-symbol-references.md) seçeneği, bağlayıcıya sembol tablosuna belirli bir sembol eklemesini söyler.
 
-### <a name="delay-loaded-dlls"></a>Yüklenen dll 'Leri geciktir
+### <a name="delay-loaded-dlls"></a>Gecikme Yüklü DL'ler
 
-[/Delayload](delayload-delay-load-import.md) seçeneği dll 'lerin gecikmeli yüklenmesine neden olur. DLL adı, yükü geciktirmek için bir DLL belirtir.
+[/DELAYLOAD](delayload-delay-load-import.md) seçeneği, DL'lerin gecikmeli yüklenmesine neden olur. DLL adı, yükü geciktirmek için bir DLL belirtir.
 
-### <a name="assembly-link-resource"></a>Derleme bağlantısı kaynağı
+### <a name="assembly-link-resource"></a>Derleme Bağlantı Kaynağı
 
-[/Assemblylinkresource](assemblylinkresource-link-to-dotnet-framework-resource.md) seçeneği, çıkış dosyasında bir .NET Framework kaynağına bir bağlantı oluşturur; kaynak dosyası çıkış dosyasına yerleştirilmez.
+[/ASSEMBLYLINKRESOURCE](assemblylinkresource-link-to-dotnet-framework-resource.md) seçeneği, çıktı dosyasındaki bir .NET Framework kaynağına bağlantı oluşturur; kaynak dosyası çıktı dosyasına yerleştirilmez.
 
-## <a name="manifest-file-property-page"></a>Bildirim dosyası özellik sayfası
+## <a name="manifest-file-property-page"></a>Manifest Dosya Özelliği Sayfası
 
-### <a name="generate-manifest"></a>Bildirim oluştur
+### <a name="generate-manifest"></a>Manifesto Oluştur
 
-[/Manifest](manifest-create-side-by-side-assembly-manifest.md) bağlayıcının yan yana bildirim dosyası oluşturması gerektiğini belirtir.
+[/MANIFEST,](manifest-create-side-by-side-assembly-manifest.md) bağlayıcının yan yana bir bildirim dosyası oluşturması gerektiğini belirtir.
 
-### <a name="manifest-file"></a>Bildirim dosyası
+### <a name="manifest-file"></a>Manifesto Dosyası
 
-[/ManifestFile](manifestfile-name-manifest-file.md) bildirim dosyasının varsayılan adını değiştirmenize olanak sağlar. Bildirim dosyasının varsayılan adı. manifest eklenmiş dosya adıdır.
+[/MANIFESTFILE,](manifestfile-name-manifest-file.md) bildirim dosyasının varsayılan adını değiştirmenize olanak tanır. Bildirim dosyasının varsayılan adı .manifest eklenen dosya adıdır.
 
-### <a name="additional-manifest-dependencies"></a>Ek bildirim bağımlılıkları
+### <a name="additional-manifest-dependencies"></a>Ek Bildirim Bağımlılıkları
 
-[/Manifestdependency](manifestdependency-specify-manifest-dependencies.md) , bildirim dosyasının bağımlılık bölümüne yerleştirilecek öznitelikleri belirtmenize olanak tanır.
+[/MANIFESTDEPENDENCY,](manifestdependency-specify-manifest-dependencies.md) bildirim dosyasının bağımlılık bölümüne yerleştirilecek öznitelikleri belirtmenizi sağlar.
 
-### <a name="allow-isolation"></a>Yalıtıma izin ver
+### <a name="allow-isolation"></a>Yalıtıma İzin Ver
 
-Bildirim arama için davranışı belirtir. ([/ALLOWISOLATION](allowisolation-manifest-lookup.md): No)
+Bildirim araması için davranışı belirtir. ([/İzOLASYON](allowisolation-manifest-lookup.md):NO)
 
-### <a name="enable-user-account-control-uac"></a>Kullanıcı hesabı denetimini etkinleştir (UAC)
+### <a name="enable-user-account-control-uac"></a>Kullanıcı Hesabı Denetimini Etkinleştir (UAC)
 
-Kullanıcı hesabı denetiminin etkinleştirilip etkinleştirilmeyeceğini belirtir.  ([/Limestuac](manifestuac-embeds-uac-information-in-manifest.md),/MANIFESTUAC: No)
+Kullanıcı Hesabı Denetimi'nin etkin olup olmadığını belirtir.  ([/MANIFESTUAC](manifestuac-embeds-uac-information-in-manifest.md), /MANIFESTUAC:NO)
 
-### <a name="uac-execution-level"></a>UAC yürütme düzeyi
+### <a name="uac-execution-level"></a>UAC Yürütme Düzeyi
 
-Kullanıcı hesabı denetimiyle çalışırken uygulama için istenen yürütme düzeyini belirtir.  (/BILDIRIMLI estuac: Level = [değer])
+Kullanıcı Hesabı Denetimi ile çalışırken uygulama için istenen yürütme düzeyini belirtir.  (/MANIFESTUAC:level=[değer])
 
-**Yapabileceği**
+**Seçenekler**
 
-- **asInvoker** -UAC yürütme düzeyi: başlatıcı olarak.
-- **highestAvailable** -UAC yürütme düzeyi: en yüksek kullanılabilir.
-- **requireAdministrator** -UAC yürütme düzeyi: yönetici gerektir.
+- **asInvoker** - UAC Yürütme Düzeyi: invoker olarak.
+- **en yüksek Kullanılabilir** - UAC Yürütme Düzeyi: en yüksek kullanılabilir.
+- **administrator** gerektirir - UAC Yürütme Düzeyi: yönetici gerektirir.
 
-### <a name="uac-bypass-ui-protection"></a>UAC UI korumasını atla
+### <a name="uac-bypass-ui-protection"></a>UAC Bypass UI Koruması
 
-Masaüstündeki diğer pencereler için Kullanıcı arabirimi koruma düzeylerinin atlanıp atlanmayacağını belirtir.  Bu özelliği yalnızca erişilebilirlik uygulamaları için ' Yes ' olarak ayarlayın.  ([/Bildirimli estuac](manifestuac-embeds-uac-information-in-manifest.md): UIAccess = [true | false])
+Masaüstündeki diğer pencereler için kullanıcı arabirimi koruma düzeylerini atlayıp atlamayacağı belirtir.  Bu özelliği yalnızca erişilebilirlik uygulamaları için 'Evet' olarak ayarlayın.  ([/MANIFESTUAC](manifestuac-embeds-uac-information-in-manifest.md):uiAccess=[true | false])
 
-## <a name="debugging-property-page"></a>Özellik sayfasında hata ayıklama
+## <a name="debugging-property-page"></a>Hata Ayıklama Özellik Sayfası
 
-### <a name="generate-debug-info"></a>Hata ayıklama bilgisi oluştur
+### <a name="generate-debug-info"></a>Hata Ayıklama Bilgileri Oluştur
 
-Bu seçenek,. exe dosyası veya DLL için hata ayıklama bilgisi oluşturmayı sağlar.
+Bu seçenek,.exe dosyası veya DLL için hata ayıklama bilgilerinin oluşturulmasını sağlar.
 
-**Yapabileceği**
+**Seçenekler**
 
-- **Hayır** -hata ayıklama bilgisi üretmez.
-- **Hata ayıklama bilgileri oluştur** -Microsoft sembol sunucusu 'na dağıtım için ideal olan tam bir program VERITABANı (pdb) oluşturun.
-- **Daha hızlı bağlantılar için Iyileştirilmiş hata ayıklama bilgileri oluştur** -düzenleme-bağlantı-hata ayıklama çevrimi için ideal bir program VERITABANı (pdb) oluşturur.
-- **Paylaşım ve yayımlama için Iyileştirilmiş hata ayıklama bilgileri oluştur** -düzenleme-bağlantı-hata ayıklama çevrimi için ideal bir program VERITABANı (pdb) oluşturur.
+- **Hayır** - Hata ayıklama bilgisi üretmez.
+- **Hata Ayıklama Bilgileri Oluşturma** - Microsoft Symbol Server'a dağıtım için ideal olan tam bir Program Veritabanı (PDB) oluşturun.
+- **Daha hızlı bağlantılar için optimize edilmiş Hata Ayıklama Bilgileri oluşturma** - Edit-link hata ayıklama döngüsü için ideal bir program veritabanı (PDB) üretir.
+- **Paylaşım ve yayımlama için en iyi duruma getirilmiş Hata Ayıklama Bilgileri oluşturma** - Edit-link hata ayıklama döngüsü için ideal bir program veritabanı (PDB) üretir.
 
-### <a name="generate-program-database-file"></a>Program veritabanı dosyası oluştur
+### <a name="generate-program-database-file"></a>Program Veritabanı Dosyası Oluştur
 
-Varsayılan olarak, [/Debug](debug-generate-debug-info.md) belirtildiğinde, bağlayıcı hata ayıklama bilgilerini tutan bir program VERITABANı (pdb) oluşturur. PDB için varsayılan dosya adı programın temel adına ve. pdb uzantısına sahiptir.
+Varsayılan olarak, [/DEBUG](debug-generate-debug-info.md) belirtildiğinde, bağlayıcı hata ayıklama bilgilerini tutan bir program veritabanı (PDB) oluşturur. PDB için varsayılan dosya adı programın temel adı ve uzantısı .pdb vardır.
 
-### <a name="strip-private-symbols"></a>Özel sembolleri sök
+### <a name="strip-private-symbols"></a>Şerit Özel Semboller
 
-[/Pdbçıkarıldı](pdbstripped-strip-private-symbols.md) seçeneği, bir PDB dosyası (/Debug,/Z7,/ZD veya/Zi) oluşturan derleyici veya bağlayıcı seçeneklerinden herhangi biriyle program görüntünüzü oluştururken ikinci program VERITABANı (pdb) dosyası oluşturur.
+[/PDBSTRIPPED](pdbstripped-strip-private-symbols.md) seçeneği, program görselinizi bir PDB dosyası (/DEBUG, /Z7, /Zd veya /Zi) oluşturan derleyici veya bağlayıcı seçeneklerinden herhangi biriyle oluşturduğunuzda ikinci bir program veritabanı (PDB) dosyası oluşturur.
 
-### <a name="generate-map-file"></a>Eşleme dosyası oluştur
+### <a name="generate-map-file"></a>Harita Dosyası Oluştur
 
-[/Map](map-generate-mapfile.md) seçeneği, bağlayıcıya bir mapfile oluşturmasını söyler.
+[/MAP](map-generate-mapfile.md) seçeneği bağlayıcıya bir mapfile oluşturmasını söyler.
 
-### <a name="map-file-name"></a>Eşleme dosyası adı
+### <a name="map-file-name"></a>Harita Dosya Adı
 
-Mapfile için Kullanıcı tarafından belirtilen bir ad. Varsayılan adı değiştirir.
+Harita dosyası için kullanıcı tarafından belirtilen bir ad. Varsayılan adın yerini alır.
 
-### <a name="map-exports"></a>Eşleme dışarı aktarmaları
+### <a name="map-exports"></a>Harita İhracat
 
-[/MapInfo](mapinfo-include-information-in-mapfile.md) seçeneği, bağlayıcıya,/Map seçeneğini belirtirseniz oluşturulan bir mapfile öğesine belirtilen bilgileri dahil etmek üzere söyler. Dışarı aktarmalar, bağlayıcıya dışarı aktarılan işlevleri eklemesini söyler.
+[/MAPINFO](mapinfo-include-information-in-mapfile.md) seçeneği, /MAP seçeneğini belirtirseniz oluşturulan bir mapfile'ye belirtilen bilgileri eklemesini bağlayıcıya bildirir. İhRACAT bağlayıcıya dışa aktarılan işlevleri eklemesini söyler.
 
-### <a name="debuggable-assembly"></a>Hata ayıklanabilir derlemesi
+### <a name="debuggable-assembly"></a>Hata Ayıklanabilir Montaj
 
-[/ASSEMBLYDEBUG](assemblydebug-add-debuggableattribute.md) hata ayıklama bilgileri izleme ile hata ayıklayıcı ggableattribute özniteliğini yayar ve JIT iyileştirmelerini devre dışı bırakır.
+[/ASSEMBLYDEBUG](assemblydebug-add-debuggableattribute.md) hata ayıklama bilgi izleme ile Hata Ayıklama Özniteliği yayar ve JIT optimizasyonları devre dışı kılabilir.
 
-## <a name="system-property-page"></a>Sistem özellik sayfası
+## <a name="system-property-page"></a>Sistem Özelliği Sayfası
 
-### <a name="subsystem"></a>Sistemin
+### <a name="subsystem"></a>Alt
 
-[/Subsystem](subsystem-specify-subsystem.md) seçeneği işletim sistemine. exe dosyasını nasıl çalıştıracağını söyler. Alt sistem seçimi, bağlayıcının seçim kullanacağı giriş noktası sembolünü (veya giriş noktası işlevini) etkiler.
+[/SUBSYSTEM](subsystem-specify-subsystem.md) seçeneği işletim sistemine .exe dosyasının nasıl çalıştırılabildiğini söyler. Alt sistem seçimi, bağlayıcının seçeceği giriş noktası simgesini (veya giriş noktası işlevini) etkiler.
 
-**Yapabileceği**
+**Seçenekler**
 
-- **Ayarlanmadı** -alt sistem ayarlanmadı.
-- **Konsol** -Win32 karakter modu uygulaması. Konsol uygulamalarına, işletim sistemi tarafından bir konsol verilir. Main veya wmain tanımlanmışsa, konsol varsayılandır.
-- **Windows** -uygulama, büyük olasılıkla Kullanıcı etkileşimi için kendi pencerelerini oluşturduğundan, bir konsol gerektirmez. WinMain veya wWinMain tanımlanmışsa, WINDOWS varsayılandır.
-- Windows NT için **Yerel** cihaz sürücüleri. /DRıVER: WDM belirtilmişse, yerel varsayılandır.
-- **EFI uygulaması** -EFI uygulaması.
-- **EFI Önyükleme hizmeti sürücüsü** -EFI Önyükleme hizmeti sürücüsü.
-- **EFı ROM** -EFı ROM 'u.
-- **EFI çalışma zamanı** -EFI çalışma zamanı.
-- **POSIX** -Windows NT 'de POSIX alt sistemi ile çalışan uygulama.
+- **Ayarlı Değil** - Alt sistem kümesi yok.
+- **Konsol** - Win32 karakter modu uygulaması. Konsol uygulamalarına işletim sistemi tarafından bir konsol verilir. Main veya wmain tanımlanırsa, CONSOLE varsayılandır.
+- **Windows** - Uygulama, kullanıcıyla etkileşim için kendi pencerelerini oluşturduğundan, büyük olasılıkla bir konsol gerektirmez. WinMain veya wWinMain tanımlanırsa, WINDOWS varsayılandır.
+- **Yerel** - Windows NT için aygıt sürücüleri. /DRIVER:WDM belirtilirse, varsayılan yereldir.
+- **EFI Uygulaması** - EFI Uygulaması.
+- **EFI Boot Service Driver** - EFI Boot Servis Sürücüsü.
+- **EFI ROM** - EFI ROM.
+- **EFI Çalışma Zamanı** - EFI Çalışma Zamanı.
+- **POSIX** - Windows NT'deki POSIX alt sistemiyle çalışan uygulama.
 
-### <a name="minimum-required-version"></a>Gerekli en düşük sürüm
+### <a name="minimum-required-version"></a>Minimum Gerekli Sürüm
 
-Alt sistemin gerekli en düşük sürümünü belirtin. Bağımsız değişkenler 0 ile 65.535 aralığındaki ondalık sayılardır.
+Alt sistemin en az gerekli sürümünü belirtin. Bağımsız değişkenler 0 ile 65.535 aralığındaki ondalık sayılardır.
 
-### <a name="heap-reserve-size"></a>Yığın ayırma boyutu
+### <a name="heap-reserve-size"></a>Yığın Rezerv Boyutu
 
-Sanal bellekte toplam yığın ayırma boyutunu belirtir. Varsayılan değer 1 MB 'tır.    ([/Heap](heap-set-heap-size.md): Reserve)
+Sanal bellekte toplam yığın ayırma boyutunu belirtir. Varsayılan değer 1 MB'dır.    ([/HEAP](heap-set-heap-size.md):rezerv)
 
-### <a name="heap-commit-size"></a>Yığın kayıt boyutu
+### <a name="heap-commit-size"></a>Yığın Commit Boyutu
 
-Fiziksel bellekte toplam yığın ayırma boyutunu belirtir. Varsayılan değer 4 KB 'tır.    ([/Heap](heap-set-heap-size.md): Reserve, COMMIT)
+Fiziksel bellekte toplam yığın ayırma boyutunu belirtir. Varsayılan değer 4 KB'dir.    ([/HEAP](heap-set-heap-size.md):rezerv,taahhüt)
 
-### <a name="stack-reserve-size"></a>Yığın ayırma boyutu
+### <a name="stack-reserve-size"></a>Yığın Rezerv Boyutu
 
-Sanal bellekteki toplam yığın ayırma boyutunu belirtir. Varsayılan değer 1 MB 'tır.     ([/Stack](stack-stack-allocations.md): Reserve)
+Sanal bellekteki toplam yığın ayırma boyutunu belirtir. Varsayılan değer 1 MB'dır.     ([/STACK](stack-stack-allocations.md):rezerv)
 
-### <a name="stack-commit-size"></a>Yığın kayıt boyutu
+### <a name="stack-commit-size"></a>Yığın Commit Boyutu
 
-Fiziksel bellekte toplam yığın ayırma boyutunu belirtir. Varsayılan değer 4 KB 'tır.     ([/Stack](stack-stack-allocations.md): Reserve, COMMIT)
+Fiziksel bellekteki toplam yığın ayırma boyutunu belirtir. Varsayılan değer 4 KB'dir.     ([/STACK](stack-stack-allocations.md):rezerv,taahhüt)
 
-### <a name="enable-large-addresses"></a>Büyük adresleri etkinleştir
+### <a name="enable-large-addresses"></a>Büyük Adresleri Etkinleştir
 
-[/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md) seçeneği, bağlayıcıya uygulamanın 2 gigabayt 'tan daha büyük adresler işleyebileceğini söyler. Varsayılan olarak, bağlayıcı satırında/LARGEADDRESSAWARE belirtilmemişse,/LARGEADDRESSAWARE: NO etkin değildir.
+[/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md) seçeneği, bağlantı cının 2 gigabayttan daha büyük adresleri işleyebilir olduğunu söyler. Varsayılan olarak, /LARGEADDRESSAWARE:/LARGEADDRESSAWARE bağlantı satırında aksi belirtilmemişse NO etkindir.
 
 ### <a name="terminal-server"></a>Terminal Sunucusu
 
-[/TSAWARE](tsaware-create-terminal-server-aware-application.md) seçeneği, program görüntüsünün isteğe bağlı üstbilgisindeki IMAGE_OPTIONAL_HEADER dllözellikler alanında bir bayrak ayarlar. Bu bayrak ayarlandığında, Terminal sunucusu uygulamada belirli değişiklikler yapmayacak.
+[/TSAWARE](tsaware-create-terminal-server-aware-application.md) seçeneği, program görüntüsünün isteğe bağlı üstbilgisinde IMAGE_OPTIONAL_HEADER DllCharacteristics alanına bir bayrak ayarlar. Bu bayrak ayarlandığında, Terminal Server uygulamada belirli değişiklikler yapmaz.
 
-### <a name="swap-run-from-cd"></a>CD 'Den takas Çalıştır
+### <a name="swap-run-from-cd"></a>CD'den Çalıştır'ı değiştir
 
-[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md) seçeneği işletim sistemine ilk olarak bağlayıcı çıkışını bir takas dosyasına kopyalamasını söyler ve sonra görüntüyü oradan çalıştırır. Bu seçenek bir Windows NT 4,0 (ve üzeri) özelliğidir. **CD** belirtildiğinde, işletim sistemi çıkarılabilir bir diskteki görüntüyü bir sayfa dosyasına kopyalar ve ardından yükler.
+[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md) seçeneği, işletim sistemine önce bağlayıcı çıktısını bir takas dosyasına kopyalamasını ve ardından görüntüyü oradan çalıştırmasını söyler. Bu seçenek bir Windows NT 4.0 (ve sonrası) özelliğidir. **CD** belirtildiğinde, işletim sistemi çıkarılabilir bir diskteki görüntüyü bir sayfa dosyasına kopyalar ve sonra yükler.
 
-### <a name="swap-run-from-network"></a>Ağdan takas çalıştırması
+### <a name="swap-run-from-network"></a>Ağdan Çalıştır'ı Değiştir
 
-[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md) seçeneği işletim sistemine ilk olarak bağlayıcı çıkışını bir takas dosyasına kopyalamasını söyler ve sonra görüntüyü oradan çalıştırır. Bu seçenek bir Windows NT 4,0 (ve üzeri) özelliğidir. **Net** belirtilirse, işletim sistemi ilk olarak ağdan ikili görüntüyü bir takas dosyasına kopyalar ve buradan yükler. Bu seçenek, ağ üzerinden uygulama çalıştırmak için yararlıdır.
+[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md) seçeneği, işletim sistemine önce bağlayıcı çıktısını bir takas dosyasına kopyalamasını ve ardından görüntüyü oradan çalıştırmasını söyler. Bu seçenek bir Windows NT 4.0 (ve sonrası) özelliğidir. **NET** belirtilirse, işletim sistemi önce ikili görüntüyü ağdan bir takas dosyasına kopyalar ve oradan yükler. Bu seçenek, uygulamaları ağ üzerinden çalıştırmak için yararlıdır.
 
 ### <a name="driver"></a>Sürücü
 
-Windows NT Çekirdek modu sürücüsü oluşturmak için [/Driver](driver-windows-nt-kernel-mode-driver.md) bağlayıcı seçeneğini kullanın.
+Windows NT çekirdek modu sürücüsü oluşturmak için [/DRIVER](driver-windows-nt-kernel-mode-driver.md) bağlayıcı seçeneğini kullanın.
 
-**Yapabileceği**
+**Seçenekler**
 
-- **Ayarlanmadı** -varsayılan sürücü ayarı.
-- **Sürücü** sürücüsü
-- **Yalnızca yukarı** -/sürücü: uponly, bağlayıcının bir tek IŞLEMCILI (up) sürücü olduğunu belirtmek için çıkış üstbilgisindeki özelliklere IMAGE_FILE_UP_SYSTEM_ONLY bitini eklemesine neden olur. İşletim sistemi, çok işlemcili (MP) bir sisteme bir UP sürücüsü yüklemeyi reddeder.
-- **WDM** -/Driver: WDM, bağlayıcının isteğe bağlı üstbilginin dllözellikler alanındaki IMAGE_DLLCHARACTERISTICS_WDM_DRIVER bitini ayarlamaya neden olur.
+- **Ayarlı Değil** - Varsayılan sürücü ayarı.
+- **Sürücü** - Sürücü
+- **Yalnızca UP** - /DRIVER:UPONLY, bağlayıcının çıkış başlığındaki özelliklere IMAGE_FILE_UP_SYSTEM_ONLY bitini eklemesine ve tek işlemcili (UP) bir sürücü olduğunu belirtilmesine neden olur. İşletim sistemi, bir UP sürücüsünü çok işlemcili (MP) sisteme yüklemeyi reddeder.
+- **WDM** - /DRIVER:WDM, bağlayıcının isteğe bağlı üstbilginin DllCharacteristics alanında IMAGE_DLLCHARACTERISTICS_WDM_DRIVER bitini ayarlamasına neden olur.
 
-## <a name="optimization-property-page"></a>İyileştirme Özellik sayfası
+## <a name="optimization-property-page"></a>Optimizasyon Özellik Sayfası
 
 ### <a name="references"></a>Başvurular
 
-[/Opt](opt-optimizations.md): ref hiçbir şekilde başvurulmayan işlevleri ve/veya verileri ortadan kaldırır; ancak hiçbir şekilde başvurulmayan işlevleri ve/veya verileri tutar.
+[/OPT](opt-optimizations.md):REF, /OPT:NOREF hiç başvurulamayan işlevleri ve/veya verileri tutarken hiç başvurulamayan işlevleri ve/veya verileri ortadan kaldırır.
 
 ### <a name="enable-comdat-folding"></a>COMDAT Katlamasını Etkinleştir
 
-Aynı COMDAT katlamayı gerçekleştirmek için [/opt](opt-optimizations.md): ICF\[= yinelemeler] kullanın.
+Aynı COMDAT\[katlama gerçekleştirmek için [/OPT](opt-optimizations.md):ICF =yinelemeler' kullanın.
 
-### <a name="function-order"></a>İşlev sırası
+### <a name="function-order"></a>İşlev Sırası
 
-[/Order](order-put-functions-in-order.md)seçeneği, belirli Comtts 'yi önceden belirlenmiş bir sırada görüntüye YERLEŞTIREREK, bağlantıyı programınızı iyileştirmenize söyler. BAĞLANTı, işlevleri görüntüdeki her bölüm içinde belirtilen sırada koyar.
+[/ORDER](order-put-functions-in-order.md)seçeneği, belirli COMDAT'ları görüntüye önceden belirlenmiş bir sırada yerleştirerek programınızı optimize etmesi için LINK'e söyler. LINK, görüntüdeki her bölümdeki işlevleri belirtilen sırada yerleştirir.
 
-### <a name="profile-guided-database"></a>Profil temelli veritabanı
+### <a name="profile-guided-database"></a>Profil Rehberli Veritabanı
 
-Profil temelli iyileştirmeler için. pgd dosyası belirtin. ([/PGD](pgd-specify-database-for-profile-guided-optimizations.md))
+Profil kılavuzlu optimizasyonlar için .pgd dosyalarını belirtin. ([/PGD](pgd-specify-database-for-profile-guided-optimizations.md))
 
-### <a name="link-time-code-generation"></a>Bağlama zaman kodu oluşturma
+### <a name="link-time-code-generation"></a>Bağlantı Zaman Kodu Oluşturma
 
-Bağlantı zamanı kod oluşturmayı belirtir. ([/LTCG](ltcg-link-time-code-generation.md))
+Bağlantı zamanı kodu oluşturmayı belirtir. ([/LTCG](ltcg-link-time-code-generation.md))
 
-**Yapabileceği**
+**Seçenekler**
 
-- **Varsayılan** -varsayılan LTCG ayarı.
-- **Hızlı bağlama zaman kodu oluşturma kullan** - [/Fastgenprofile](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)Ile bağlama zaman kodu üretimini kullanın.
-- **Bağlama sırasında kod oluşturmayı kullan** - [bağlantı zaman kodu oluşturmayı](ltcg-link-time-code-generation.md)kullan.
-- **Profil temelli iyileştirme-gereç** -:P gınstrumle [Profil temelli iyileştirme](../profile-guided-optimizations.md) kullanın.
-- **Profil temelli iyileştirme-iyileştirme** -en iyi duruma getirilmiş bir görüntü oluşturmak için, bağlayıcının izlenen ikiliyi çalıştırdıktan sonra oluşturulan profil verilerini kullanması gerektiğini belirtir.
-- **Profil temelli iyileştirme-Güncelleştir** -:P gınstrumm aşamasında belirtilenden eklenecek veya değiştirilecek giriş dosyalarının listesine izin verir ve bunları izler.
+- **Varsayılan** - Varsayılan LTCG ayarı.
+- **Hızlı Bağlantı Zaman Kodu Oluşturma kullanın** - / [FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)ile Bağlantı Zaman Kodu Oluşturma kullanın.
+- **Bağlantı Zaman Kodu Oluşturma kullanın** - Bağlantı Zaman Kodu [Oluşturma](ltcg-link-time-code-generation.md)kullanın.
+- **Profil Güdümlü Optimizasyon - Enstrüman** - :PGINSTRUMENT ile profil güdümlü [optimizasyon](../profile-guided-optimizations.md) kullanın.
+- **Profil Güdümlü Optimizasyon - Optimizasyon** - Bağlayıcının en iyi duruma getirilmiş bir görüntü oluşturmak için enstrümantize ikiliyi çalıştırdıktan sonra oluşturulan profil verilerini kullanması gerektiğini belirtir.
+- **Profil Güdümlü Optimizasyon - Güncelleme -** :PGINSTRUMENT aşamasında belirtilenlerden eklenecek veya değiştirilecek giriş dosyalarının listesini verir ve izler.
 
-## <a name="embedded-idl-property-page"></a>Katıştırılmış IDL özellik sayfası
+## <a name="embedded-idl-property-page"></a>Gömülü IDL Özellik Sayfası
 
-### <a name="midl-commands"></a>MıDL komutları
+### <a name="midl-commands"></a>MIDL Komutları
 
-MıDL komut satırı seçeneklerini belirtin. ([/MIDL](midl-specify-midl-command-line-options.md):@responsefile)
+MIDL komut satırı Seçenekleri belirtin. ([/MIDL](midl-specify-midl-command-line-options.md):@responsefile)
 
-### <a name="ignore-embedded-idl"></a>Gömülü IDL 'yi yoksay
+### <a name="ignore-embedded-idl"></a>Gömülü IDL'yi Yoksay
 
-[/IGNOREIDL](ignoreidl-don-t-process-attributes-into-midl.md) seçeneği, kaynak KODUNDAKI tüm IDL özniteliklerinin bir. IDL dosyasına işlenmediğini belirtir.
+[/IGNOREIDL](ignoreidl-don-t-process-attributes-into-midl.md) seçeneği, kaynak kodundaki herhangi bir IDL özniteliklerinin .idl dosyasında işlenmemesi gerektiğini belirtir.
 
-### <a name="merged-idl-base-file-name"></a>Birleştirilmiş IDL taban dosyası adı
+### <a name="merged-idl-base-file-name"></a>Birleştirilmiş IDL Temel Dosya Adı
 
-[/IDLOUT](idlout-name-midl-output-files.md) seçeneği,. IDL dosyasının adını ve uzantısını belirtir.
+[/IDLOUT](idlout-name-midl-output-files.md) seçeneği .idl dosyasının adını ve uzantısını belirtir.
 
-### <a name="type-library"></a>Tür kitaplığı
+### <a name="type-library"></a>Tür Kitaplığı
 
-[/Tlhakkında](tlbout-name-dot-tlb-file.md) seçeneği. tlb dosyasının adını ve uzantısını belirtir.
+[/TLBOUT](tlbout-name-dot-tlb-file.md) seçeneği .tlb dosyasının adını ve uzantısını belirtir.
 
-### <a name="typelib-resource-id"></a>Tür kitaplığı kaynak KIMLIĞI
+### <a name="typelib-resource-id"></a>TypeLib Kaynak Kimliği
 
-Bağlayıcı tarafından oluşturulan tür kitaplığının kaynak KIMLIĞINI belirtmenize olanak tanır. ([/Tldeklarasyon](tlbid-specify-resource-id-for-typelib.md): kimlik)
+Bağlayıcı tarafından oluşturulan tür kitaplığın kaynak kimliğini belirtmenizi sağlar. ([/TLBID](tlbid-specify-resource-id-for-typelib.md):id)
 
-## <a name="windows-metadata-property-page"></a>Windows meta verileri özellik sayfası
+## <a name="windows-metadata-property-page"></a>Windows Metadata Özellik Sayfası
 
-### <a name="generate-windows-metadata"></a>Windows meta verileri oluştur
+### <a name="generate-windows-metadata"></a>Windows Meta verileri oluşturma
 
-Windows meta verilerinin oluşturulmasını etkinleştirilir veya devre dışı bırakır.
+Windows Meta verilerinin oluşumuna olanak tanır veya devre dışı kılabilir.
 
-**Yapabileceği**
+**Seçenekler**
 
-- **Evet** -Windows meta veri dosyalarının oluşturulmasını etkinleştirin.
-- **Hayır** -Windows meta veri dosyalarının oluşturulmasını devre dışı bırak.
+- **Evet** - Windows Meta veri dosyalarının oluşumuna olanak sağlar.
+- **Hayır** - Windows Meta veri dosyalarının oluşumunu devre dışı kınayın.
 
-### <a name="windows-metadata-file"></a>Windows meta veri dosyası
+### <a name="windows-metadata-file"></a>Windows Meta veri dosyası
 
-[/WinMDFile](winmdfile-specify-winmd-file.md) seçenek anahtarı.
+[/WINMDFILE](winmdfile-specify-winmd-file.md) seçenek anahtarı.
 
-### <a name="windows-metadata-key-file"></a>Windows meta verileri anahtar dosyası
+### <a name="windows-metadata-key-file"></a>Windows Metadata Anahtar Dosyası
 
-Bir Windows meta verilerini imzalamak için anahtar veya anahtar çiftini belirtin. ([/Winmdkeyfile](winmdkeyfile-specify-winmd-key-file.md): filename)
+Windows Meta verilerini imzalamak için anahtar veya anahtar çiftini belirtin. ([/WINMDKEYFILE](winmdkeyfile-specify-winmd-key-file.md):dosya adı)
 
-### <a name="windows-metadata-key-container"></a>Windows meta verileri anahtar kapsayıcısı
+### <a name="windows-metadata-key-container"></a>Windows Metaveri Anahtar Kapsayıcısı
 
-Windows meta verilerini imzalamak için bir anahtar kapsayıcısı belirtin. ([/Winmdkeycontainer](winmdkeycontainer-specify-key-container.md): ad)
+Windows Meta verilerini imzalamak için bir anahtar kapsayıcı belirtin. ([/WINMDKEYCONTAINER](winmdkeycontainer-specify-key-container.md):isim)
 
-### <a name="windows-metadata-delay-sign"></a>Windows meta veri gecikmesi Işareti
+### <a name="windows-metadata-delay-sign"></a>Windows Meta veri gecikme işareti
 
-Windows meta verilerini kısmen imzala. Yalnızca ortak anahtarı Windows meta verilerine yerleştirmek istiyorsanız [/Winmddelaysign](winmddelaysign-partially-sign-a-winmd.md) kullanın. Varsayılan değer/WINMDDELAYSIGN: NO ' dır.
+Kısmen bir Windows Meta verisi imzalayın. Ortak anahtarı yalnızca Windows Meta verilerine yerleştirmek istiyorsanız [/WINMDDELAYSIGN'ı](winmddelaysign-partially-sign-a-winmd.md) kullanın. Varsayılan /WINMDDELAYSIGN:NO.
 
-## <a name="advanced-property-page"></a>Gelişmiş özellik sayfası
+## <a name="advanced-property-page"></a>Gelişmiş Özellik Sayfası
 
 ### <a name="entry-point"></a>Girdi Noktası
 
-[/Entry](entry-entry-point-symbol.md) seçeneği bir. exe dosyası veya dll için başlangıç adresi olarak bir giriş noktası işlevi belirtir.
+[/ENTRY](entry-entry-point-symbol.md) seçeneği, bir .exe dosyasının veya DLL'nin başlangıç adresi olarak bir giriş noktası işlevini belirtir.
 
-### <a name="no-entry-point"></a>Giriş noktası yok
+### <a name="no-entry-point"></a>Giriş Noktası Yok
 
-Yalnızca kaynak DLL oluşturmak için [/NOENTRY](noentry-no-entry-point.md)seçeneği gereklidir. BAĞLANTıNıN `_main` bir başvuruyu DLL 'ye bağlamasını engellemek için bu seçeneği kullanın.
+[/NOENTRY](noentry-no-entry-point.md)seçeneği yalnızca kaynak DLL oluşturmak için gereklidir. LINK'in bir başvuruyu DLL'ye bağlamasını önlemek için `_main` bu seçeneği kullanın.
 
-### <a name="set-checksum"></a>Sağlama toplamını ayarla
+### <a name="set-checksum"></a>Checksum'u ayarla
 
-[/Release](release-set-the-checksum.md) seçeneği,. exe dosyasının üst bilgisindeki sağlama toplamını ayarlar.
+[/RELEASE](release-set-the-checksum.md) seçeneği, Checksum'u bir .exe dosyasının üstbilgisinde ayarlar.
 
-### <a name="base-address"></a>Temel adres
+### <a name="base-address"></a>Taban Adresi
 
-Program için bir temel adres ayarlar. ([/Base](base-base-address.md): {Address\[, size] | @filename, Key})
+Programın temel adresini ayarlar. ([/BASE](base-base-address.md):{adres\[,boyut] | @filename,anahtar})
 
-### <a name="randomized-base-address"></a>Rastgele temel adres
+### <a name="randomized-base-address"></a>Randomize Taban Adresi
 
-Rastgele temel adres. ([/DynamicBase](dynamicbase-use-address-space-layout-randomization.md)\[: No])
+Randomize Üs Adresi. ([/DYNAMICBASE](dynamicbase-use-address-space-layout-randomization.md)\[:NO])
 
-### <a name="fixed-base-address"></a>Sabit temel adres
+### <a name="fixed-base-address"></a>Sabit Taban Adresi
 
-Yalnızca tercih edilen temel adresinde yüklenebilen bir program oluşturur. ([/Fixed](fixed-fixed-base-address.md)\[: No])
+Yalnızca tercih ettiği temel adrese yüklenebilen bir program oluşturur. ([/SABIT](fixed-fixed-base-address.md)\[:NO])
 
-### <a name="data-execution-prevention-dep"></a>Veri Yürütme Engellemesi (DEP)
+### <a name="data-execution-prevention-dep"></a>Veri Yürütme Önleme (DEP)
 
-Bir yürütülebilir dosyayı Windows Veri Yürütme Engellemesi özelliği ile uyumlu olacak şekilde işaretler. ([/NXCOMPAT](nxcompat-compatible-with-data-execution-prevention.md)\[: No])
+Yürütülebilir bir özelliği, Windows Veri Yürütme Önleme özelliğiyle uyumlu olacak şekilde sınanmış olarak işaretler. ([/NXCOMPAT](nxcompat-compatible-with-data-execution-prevention.md)\[:NO])
 
-### <a name="turn-off-assembly-generation"></a>Derleme oluşturmayı kapat
+### <a name="turn-off-assembly-generation"></a>Montaj Oluşturmayı Kapat
 
-[/NoAssembly](noassembly-create-a-msil-module.md) seçeneği, bağlayıcıya .NET Framework bütünleştirilmiş kodu olmadan geçerli çıkış dosyası için bir görüntü oluşturmasını söyler.
+[/NOASSEMBLY](noassembly-create-a-msil-module.md) seçeneği, bağlayıcıya .NET Framework derlemesi olmadan geçerli çıktı dosyası için bir görüntü oluşturmasını söyler.
 
-### <a name="unload-delay-loaded-dll"></a>Yüklenen DLL 'yi kaldırma gecikmesi
+### <a name="unload-delay-loaded-dll"></a>DLL yüklü boşaltma gecikmesi
 
-**Kaldırma** niteleyicisi, gecikme Yükleme Yardımcısı işlevine dll 'nin açıkça kaldırılmasını desteklememesini söyler. ([/Delay](delay-delay-load-import-settings.md): Unload)
+**UNLOAD** niteleyicisi, DLL'nin açık bir şekilde boşaltılmasını desteklemek için gecikme yükü yardımcı işlevini söyler. ([/DELAY](delay-delay-load-import-settings.md):BOŞALT)
 
-### <a name="nobind-delay-loaded-dll"></a>Nobind gecikmeli yüklendi DLL
+### <a name="nobind-delay-loaded-dll"></a>Nobind gecikme dll yüklü
 
-**Nobind** niteleyicisi, bağlayıcının son görüntüde bağlanabilir bir IAT içermeyeceğini söyler. Varsayılan olarak, Gecikmeli yüklenen dll 'Ler için bağlanabilir ıAT oluşturulur. ([/Delay](delay-delay-load-import-settings.md): nobind)
+**NOBIND** niteleyici, bağlayıcıya son görüntüye bağlanabilir bir IAT eklememesi gerektiğini söyler. Varsayılan, gecikme yüklü DL'ler için bağlanabilir IAT'yi oluşturmaktır. ([/DELAY](delay-delay-load-import-settings.md):NOBIND)
 
-### <a name="import-library"></a>Kitaplığı İçeri Aktar
+### <a name="import-library"></a>İthalat Kütüphanesi
 
-Varsayılan içeri aktarma kitaplığı adını geçersiz kılar. ([/IMPLIB](implib-name-import-library.md): filename)
+Varsayılan içe aktarma kitaplığı adını geçersiz kılar. ([/IMPLIB](implib-name-import-library.md):dosya adı)
 
-### <a name="merge-sections"></a>Bölümleri Birleştir
+### <a name="merge-sections"></a>Bölümleri Birleştirme
 
-[/Merge](merge-combine-sections.md) seçeneği, ilk bölümü (öğesinden) ikinci bölümle birleştirir, sonuç bölümünü olarak adlandırın. Örneğin,/merge:. rdata =. Text.
+[/MERGE](merge-combine-sections.md) seçeneği, birinci bölümü (from) ikinci bölümle (to) birleştirerek, elde edilen bölümü Örneğin, /merge:.rdata=.text.
 
-### <a name="target-machine"></a>Hedef makine
+### <a name="target-machine"></a>Hedef Makine
 
-[/MACHINE](machine-specify-target-platform.md) seçeneği program için hedef platformu belirtir.
+[/MACHINE](machine-specify-target-platform.md) seçeneği, programın hedef platformını belirtir.
 
-**Yapabileceği**
+**Seçenekler**
 
 - **Ayarlanmadı**
-- **Machineard**
-- **MachineARM64**
+- **MakineARM**
+- **MakineARM64**
 - **MachineEBC**
-- **MachineIA64**
-- **Machinemıps**
-- **MachineMIPS16**
-- **Machinemıpsfpu**
-- **MachineMIPSFPU16**
-- **MachineSH4**
-- **MachineTHUMB**
-- **MachineX64**
-- **MachineX86**
+- **MakineIA64**
+- **MakineMIPS**
+- **MakineMIPS16**
+- **MakineMIPSFPU**
+- **MakineMIPSFPU16**
+- **MakineSH4**
+- **MakineBAŞPARMAK**
+- **MakineX64**
+- **MakineX86**
 
 ### <a name="profile"></a>Profil
 
-Performans araçları Profilcisi ile kullanılabilecek bir çıkış dosyası üretir. GenerateDebugInformation (/[/Debug](debug-generate-debug-info.md)) ayarlanmasını gerektirir. ([/Profile](profile-performance-tools-profiler.md))
+Performans Araçları profilleyicisiyle kullanılabilecek bir çıktı dosyası üretir. Generate DebugInformation (/[HATA Hata)](debug-generate-debug-info.md)ayarlanmalıdır. ([/PROFIL](profile-performance-tools-profiler.md))
 
-### <a name="clr-thread-attribute"></a>CLR Iş parçacığı özniteliği
+### <a name="clr-thread-attribute"></a>CLR Konu Özniteliği
 
-CLR programınızın giriş noktası için iş parçacığı oluşturma özniteliğini açıkça belirtin.
+CLR programınızın giriş noktası için iş parçacığı özniteliğini açıkça belirtin.
 
-**Yapabileceği**
+**Seçenekler**
 
-- **MTA iş parçacığı özniteliği** -MTAThreadAttribute özniteliğini programınızın giriş noktasına uygular.
-- **STA iş parçacığı özniteliği** -, programınızın giriş noktasına STAThreadAttribute özniteliğini uygular.
-- **Varsayılan iş parçacığı özniteliği** - [/CLRTHREADATTRIBUTE](clrthreadattribute-set-clr-thread-attribute.md)Belirtmemeye benzer. Ortak dil çalışma zamanının (CLR) varsayılan iş parçacığı özniteliğini ayarlamaya izin verir.
+- **MTA iş parçacığı özniteliği** - MTAThreadÖzöz özniteliğini programınızın giriş noktasına uygular.
+- **STA iş parçacığı özniteliği** - STAThreadÖz özniteliğini programınızın giriş noktasına uygular.
+- **Varsayılan iş parçacığı özniteliği** - [/CLRTHREADATTRIBUTE](clrthreadattribute-set-clr-thread-attribute.md)belirtmeme gibi. Ortak Dil Çalışma Süresi'nin (CLR) varsayılan iş parçacığı özniteliğini ayarlamasına izin verir.
 
-### <a name="clr-image-type"></a>CLR görüntü türü
+### <a name="clr-image-type"></a>CLR Görüntü Türü
 
-CLR görüntüsünün türünü (ıJW, saf veya güvenli) ayarlar.
+CLR görüntüsünün türünü (IJW, saf veya güvenli) ayarlar.
 
-**Yapabileceği**
+**Seçenekler**
 
-- **IJW görüntüsünü zorla**
-- **Saf Il görüntüsünü zorla**
-- **Güvenli Il görüntüsünü zorla**
+- **Force IJW görüntü**
+- **Force Pure IL Görüntü**
+- **Force Safe IL Görüntü**
 - **Varsayılan görüntü türü**
 
-### <a name="key-file"></a>Anahtar dosyası
+### <a name="key-file"></a>Anahtar Dosyası
 
-Bir derlemeyi imzalamak için anahtar veya anahtar çiftini belirtin. ([/Keyfile](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md): filename)
+Derlemeyi imzalamak için anahtar veya anahtar çiftini belirtin. ([/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md):dosya adı)
 
-### <a name="key-container"></a>Anahtar kapsayıcısı
+### <a name="key-container"></a>Anahtar Konteyner
 
-Bir derlemeyi imzalamak için bir anahtar kapsayıcısı belirtin. ([/Keycontainer](keycontainer-specify-a-key-container-to-sign-an-assembly.md): ad)
+Derlemeyi imzalamak için anahtar kapsayıcı belirtin. ([/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-assembly.md):isim)
 
-### <a name="delay-sign"></a>Gecikmeli Imza
+### <a name="delay-sign"></a>Gecikme İşareti
 
-Bir derlemeyi kısmen imzalayın. Yalnızca ortak anahtarı derlemeye koymak istiyorsanız [/delaysign](delaysign-partially-sign-an-assembly.md) kullanın. Varsayılan değer/DELAYSIGN: NO ' dır.
+Kısmen bir derleme imzalayın. Ortak anahtarı yalnızca derlemeye yerleştirmek istiyorsanız [/DELAYSIGN'ı](delaysign-partially-sign-an-assembly.md) kullanın. Varsayılan /DELAYSIGN:NO.
 
-### <a name="clr-unmanaged-code-check"></a>CLR yönetilmeyen kod denetimi
+### <a name="clr-unmanaged-code-check"></a>CLR Yönetilmeyen Kod Denetimi
 
-[/CLRUNMANAGEDCODECHECK](clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md) , bağlayıcının SuppressUnmanagedCodeSecurityAttribute ' i yönetilen koddan yerel dll 'lere, bağlayıcı tarafından oluşturulan PInvoke çağrılarına uygulayıp uygulayamayacağını belirtir.
+[/CLRUNMANAGEDCODECHECK,](clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md) bağlayıcının yönetilen koddan yerel DL'lere bağlı olarak oluşturulan PInvoke çağrılarına SuppressUnmanagedCodeSecurityAttribute uygulayıp uygulamayacağı belirtir.
 
 ### <a name="error-reporting"></a>Hata Raporlama
 
-İç derleyici hatası (ıCE) bilgilerini doğrudan görsel C++ ekibe sağlamanıza olanak tanır.
+İç derleyici hatası (ICE) bilgilerini doğrudan Visual C++ ekibine sağlamanızı sağlar.
 
-**Yapabileceği**
+**Seçenekler**
 
-- **Hemen sor** -hemen sor.
-- Sonraki oturum açma kuyruğunun **sonraki oturum açma** sırası.
-- **Hata raporu gönder** -hata raporu gönder.
-- **Hata raporu yok** -hata raporu yok.
+- **PromptImmediately** - Hemen istem.
+- **Sonraki Giriş İçin Sıra** - Sonraki giriş için sıra.
+- **Hata Raporu Gönder** - Hata raporu gönder.
+- **Hata Raporu Yok** - Hata raporu yok.
 
-### <a name="sectionalignment"></a>Sectionhizalaması
+### <a name="sectionalignment"></a>Bölüm Hizalama
 
-[/ALIGN](align-section-alignment.md) seçeneği, programın doğrusal adres alanındaki her bölümün hizalamasını belirtir. Sayı bağımsız değişkeni bayt cinsinden ve ikinin üssü olmalıdır.
+[/ALIGN](align-section-alignment.md) seçeneği, programın doğrusal adres alanı içindeki her bölümün hizalanmasını belirtir. Sayı bağımsız değişkeni baytlardadır ve iki güç olmalıdır.
 
-### <a name="preserve-last-error-code-for-pinvoke-calls"></a>PInvoke çağrıları için son hata kodunu koru
+### <a name="preserve-last-error-code-for-pinvoke-calls"></a>PInvoke Çağrıları için Son Hata Kodunu Koru
 
-Varsayılan olarak açık olan [/CLRSUPPORTLASTERROR](clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md), P/Invoke mekanizması aracılığıyla çağrılan işlevlerin son hata kodunu korur, bu da/clrile derlenen koddan dll 'lerde yerel işlevleri çağırmanıza olanak sağlar.
+[/CLRSUPPORTLASTERROR](clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md), varsayılan olarak, /clr ile derlenen koddan, DLLS'de yerel işlevleri aramanızı sağlayan P/Invoke mekanizması aracılığıyla çağrılan işlevlerin son hata kodunu korur.
 
-**Yapabileceği**
+**Seçenekler**
 
-- **Etkin** -CLRSUPPORTLASTERROR 'ü etkinleştirin.
-- **Devre dışı** -CLRSUPPORTLASTERROR 'ü devre dışı bırakın.
-- **Yalnızca sistem dll** 'leri-yalnızca sistem dll 'Leri için CLRSUPPORTLASTERROR 'ü 'ı etkinleştirin.
+- **Etkin** - CLRSupportLastError'ı etkinleştirin.
+- **Devre Dışı -** CLRSupportLastError'ı devre dışı.
+- **Yalnızca Sistem Dlls** - Yalnızca sistem dlls için CLRSupportLastError etkinleştirin.
 
-### <a name="image-has-safe-exception-handlers"></a>Görüntüde güvenli özel durum Işleyicileri vardır
+### <a name="image-has-safe-exception-handlers"></a>Görüntü Güvenli Özel Durum İşleyicileri var
 
-[/SafeSEH](safeseh-image-has-safe-exception-handlers.md) belirtildiğinde, bağlayıcı yalnızca görüntünün güvenli özel durum işleyicilerinin bir tablosunu oluşturmak için bir görüntü oluşturur. Bu tablo, görüntü için geçerli olan özel durum işleyicilerinin hangi işletim sistemini belirtir.
+[/SAFESEH](safeseh-image-has-safe-exception-handlers.md) belirtildiğinde, bağlayıcı yalnızca görüntünün güvenli özel durum işleyicilerinin tablosunu da oluşturabiliyorsa bir görüntü oluşturur. Bu tablo, görüntü için geçerli olan özel durum işleyicilerinin işletim sistemi için geçerli olduğunu belirtir.

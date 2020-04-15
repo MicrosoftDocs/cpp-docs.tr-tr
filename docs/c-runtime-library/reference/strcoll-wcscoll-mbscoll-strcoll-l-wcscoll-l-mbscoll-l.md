@@ -1,6 +1,6 @@
 ---
 title: strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - wcscoll
 - _mbscoll
@@ -8,6 +8,12 @@ api_name:
 - strcoll
 - _strcoll_l
 - _wcscoll_l
+- _o__mbscoll
+- _o__mbscoll_l
+- _o__strcoll_l
+- _o__wcscoll_l
+- _o_strcoll
+- _o_wcscoll
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,6 +27,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -46,19 +53,19 @@ helpviewer_keywords:
 - strcoll functions
 - strings [C++], comparing by code page
 ms.assetid: 900a7540-c7ec-4c2f-b292-7a85f63e3fe8
-ms.openlocfilehash: 7519b8f41d77ed668bb7da1e8ced18ee13c0a5bf
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 9cbf24fafa78ac6a53a99abf0d1bb1ab3a0625c3
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957889"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81358122"
 ---
 # <a name="strcoll-wcscoll-_mbscoll-_strcoll_l-_wcscoll_l-_mbscoll_l"></a>strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
 
-Geçerli yerel ayarı veya belirtilen LC_COLLATE dönüştürme durumu kategorisini kullanarak dizeleri karşılaştırır.
+Geçerli yerel alanı veya belirli bir LC_COLLATE dönüşüm durumu kategorisini kullanarak dizeleri karşılaştırır.
 
 > [!IMPORTANT]
-> **_mbscoll** ve **_mbscoll_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscoll** ve **_mbscoll_l,** Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -94,35 +101,37 @@ int _mbscoll_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dize1*, *dize2*<br/>
-Karşılaştırılacak null ile sonlandırılmış dizeler.
+*string1*, *string2*<br/>
+Karşılaştırmak için null-sonlandırılan dizeleri.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, aşağıdaki gibi, *Dize1* to *dize2*arasındaki ilişkiyi gösteren bir değer döndürür.
+Bu işlevlerin her biri *string1* ile *string2*arasındaki ilişkiyi gösteren bir değer döndürür , aşağıdaki gibi.
 
-|Dönüş değeri|Dize1 ile dize2 arasındaki ilişki|
+|Döndürülen değer|String1 ile string2 arasındaki ilişki|
 |------------------|----------------------------------------|
-|< 0|*Dize1* küçüktür *dize2*|
-|0|*Dize1* ile *dize2* özdeş|
-|> 0|*dize2* 'den büyük *Dize1*|
+|< 0|*string1* *string2'den* daha az|
+|0|*string1* *string2* ile özdeş|
+|> 0|*string1* *string2'den* büyük|
 
-Bu işlevlerin her biri bir hata üzerinde **_Nlscmperror** döndürür. **_Nlscmperror**kullanmak için, HERHANGI bir dize ekleyin. H veya MBSTRING. Olsun. **wcscoll** , *Dize1* veya *dize2* **null** ise veya harmanlama sırasının etki alanı dışındaki geniş karakter kodlarını içerirse başarısız olabilir. Bir hata oluştuğunda, **wcscoll** **errno** 'u **EINVAL**olarak ayarlayabilir. **Wcscoll**çağrısında bir hata olup olmadığını denetlemek için **errno** ' ı 0 olarak ayarlayın ve ardından **wcscoll**çağrıldıktan sonra **errno** ' u denetleyin.
+Bu işlevlerin her biri bir hata **_NLSCMPERROR** döndürür. **_NLSCMPERROR**kullanmak için, string içerir. H veya MBSTRING. H. *string1* veya *string2* **NULL** ise veya harmanlama dizisinin etki alanı dışında geniş karakter kodları içeriyorsa **wcscoll** başarısız olabilir. Bir hata oluştuğunda, **wcscoll** **Errno'u EINVAL**olarak ayarlayabilir. **errno** **wcscoll**bir çağrı bir hata olup olmadığını kontrol etmek için , 0 **errno** ayarlayın ve sonra **wcscoll**aradıktan sonra **errno** kontrol edin.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri, şu anda kullanımda olan kod sayfasına göre *Dize1* ve *dize2* 'nin büyük küçük harfe duyarlı bir karşılaştırmasını yapar. Bu işlevler yalnızca, geçerli kod sayfasındaki karakter kümesi sırası ve lexicographic karakter sırası arasında bir fark olduğunda ve bu fark dize karşılaştırmasının farklılığı olduğunda kullanılmalıdır.
+Bu işlevlerin her biri, şu anda kullanılmakta olan kod sayfasına göre *string1* ve *string2'nin* büyük/küçük harf duyarlı bir karşılaştırmasını gerçekleştirir. Bu işlevler yalnızca geçerli kod sayfasındaki karakter kümesi sırası ile lexicographic karakter sırası arasında bir fark olduğunda kullanılmalıdır ve bu fark dize karşılaştırması için ilgi çekicidir.
 
-Bu işlevlerin hepsi parametrelerini doğrular. *Dize1* veya *dize2* , null bir Işaretçiyse veya *Count* değeri **INT_MAX**büyükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **_Nlscmperror** döndürür ve **errno** öğesini **EINVAL**olarak ayarlayın.
+Tüm bu işlevler parametrelerini doğrular. *String1* veya *string2* null işaretçisi ise veya *sayı* **INT_MAX**büyükse, geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md) açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlevler **_NLSCMPERROR** döndürdü ve **EINVAL'e** **errno** ayarlayın.
 
-Her yerel ayarın karakterleri sıralamak için farklı kurallara sahip olduğundan, iki dizenin karşılaştırılması yerel ayara bağlı bir işlemdir. **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli iş parçacığının yerel ayarını kullanır; **_l** sonekine sahip sürümler, geçerli yerel ayar yerine bir parametre olarak geçirilen yerel ayarı kullanmaları dışında, ilgili işlevle birlikte karşılık gelen işlevle aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Her yerel yerin karakter sıralamak için farklı kuralları olduğundan, iki dizenin karşılaştırılması yerel e-bağımlı bir işlemdir. Bu işlevlerin **_l** sonek olmayan sürümleri, bu yerelliğe bağımlı davranış için geçerli iş parçacığının yerelsini kullanır; **_l** soneki olan sürümler, geçerli yerel alan yerine parametre olarak geçirilen yerelliği kullanmaları dışında, sonek olmadan karşılık gelen işlek ile aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcscoll**|**strcoll**|**_mbscoll**|**wcscoll**|
 
@@ -130,18 +139,18 @@ Her yerel ayarın karakterleri sıralamak için farklı kurallara sahip olduğun
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strcoll**|\<String. h >|
-|**wcscoll**|\<wchar. h >, \<String. h >|
-|**_mbscoll**, **_mbscoll_l**|\<mbstring. h >|
-|**_strcoll_l**|\<String. h >|
-|**_wcscoll_l**|\<wchar. h >, \<String. h >|
+|**strcoll**|\<string.h>|
+|**wcscoll**|\<wchar.h>, \<string.h>|
+|**_mbscoll**, **_mbscoll_l**|\<mbstring.h>|
+|**_strcoll_l**|\<string.h>|
+|**_wcscoll_l**|\<wchar.h>, \<string.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[locale](../../c-runtime-library/locale.md)<br/>
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strcoll İşlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
 [localeconv](localeconv.md)<br/>
 [_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)<br/>

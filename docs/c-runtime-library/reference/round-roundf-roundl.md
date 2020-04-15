@@ -1,10 +1,13 @@
 ---
 title: round, roundf, roundl
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - round
 - roundl
 - roundf
+- _o_round
+- _o_roundf
+- _o_roundl
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -30,16 +34,16 @@ helpviewer_keywords:
 - round function
 - roundf function
 ms.assetid: 6be90877-193c-4b80-a32b-c3eca33f9c6f
-ms.openlocfilehash: b92f4a94fff06fe6948701240b61040a610981f3
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 7b502a02b540a6d2e659ba0e89263bf521be1d82
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949112"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81337986"
 ---
 # <a name="round-roundf-roundl"></a>round, roundf, roundl
 
-Kayan noktalı bir değeri en yakın tamsayıya yuvarlar.
+Kayan nokta değerini en yakın tamsayıya yuvarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,28 +67,30 @@ long double roundl(
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*X*<br/>
 Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Round** işlevleri, *x*için en yakın tamsayıyı temsil eden bir kayan nokta değeri döndürür. Kayan nokta yuvarlama modunun ayarı ne olursa olsun, yarı çift değerler sıfırdan uzağa yuvarlanır. Hata döndürme yok.
+**Yuvarlak** işlevler, *x'e*en yakın tamsayıyı temsil eden kayan nokta değerini döndürer. Kayan nokta yuvarlama modunun ayarına bakılmaksızın, yarı düzey değerleri sıfırdan yuvarlanır. Hata iadesi yok.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH Özel Durumu|Matherr İstisnası|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **IND**|yok|**_ETKI ALANI**|
+|± **QNAN**, **IND**|yok|**_DOMAIN**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** değerleri alıp döndüren **yuvarlak** aşırı yüklerini çağırabilirsiniz. C programında, **hepsini** her zaman alır ve bir **Double**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** ve uzun **long** **çift** değerleri alan ve döndüren **aşırı yuvarlak** yükleri arayabilirsiniz. C **programında, yuvarlak** her zaman alır ve bir **çift**döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**round**, **roundf**, **roundl**|\<Math. h >|
+|**yuvarlak**, **roundf**, **yuvarlak**|\<math.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

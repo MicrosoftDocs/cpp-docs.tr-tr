@@ -13,16 +13,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Semaphore::operator= operator
 - Microsoft::WRL::Wrappers::Semaphore::Semaphore, constructor
 ms.assetid: ded53526-17b4-4381-9c60-ea5e77363db6
-ms.openlocfilehash: 10357bb1cd46a33a8d4090c1ccc30050584d1816
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e017b1b6316c4b6d49563d9a543950ab28961d90
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403145"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81359352"
 ---
 # <a name="semaphore-class"></a>Semafor Sınıfı
 
-Sınırlı sayıda kullanıcıları destekleyen bir paylaşılan kaynak denetleyen bir eşitleme nesnesi temsil eder.
+Sınırlı sayıda kullanıcıyı destekleyebilen paylaşılan bir kaynağı denetleyen bir eşitleme nesnesini temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,29 +32,29 @@ class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Genel Typedefs
 
-Ad       | Açıklama
+Adı       | Açıklama
 ---------- | ------------------------------------------------------
-`SyncLock` | Zaman uyumlu kilitleri destekleyen bir sınıf için bir eşanlamlı.
+`SyncLock` | Senkron kilitleri destekleyen bir sınıfın eşanlamlısı.
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Ad                               | Açıklama
+Adı                               | Açıklama
 ---------------------------------- | ----------------------------------------------------
-[Semaphore::Semaphore](#semaphore) | Yeni bir örneğini başlatır `Semaphore` sınıfı.
+[Semafor::Semafor](#semaphore) | `Semaphore` sınıfının yeni bir örneğini başlatır.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                     | Açıklama
+Adı                     | Açıklama
 ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------
-[Semaphore::LOCK](#lock) | Geçerli nesne ya da belirtilen işleyici ile ilişkili nesne kadar bekler sinyal verilmiş duruma dönmesine ya da belirtilen zaman aşımı aralığı geçti.
+[Semafor::Kilit](#lock) | Geçerli nesnenin veya belirtilen tanıtıcıyla ilişkili nesnesinyal durumunda olana veya belirtilen zaman aşımı aralığı geçene kadar bekler.
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-Ad                                     | Açıklama
+Adı                                     | Açıklama
 ---------------------------------------- | ---------------------------------------------------------------------------------------
-[Semaphore::operator =](#operator-assign) | Belirtilen tanıtıcıdan taşır bir `Semaphore` geçerli nesneye `Semaphore` nesne.
+[Semafor::operator=](#operator-assign) | Belirtilen tutamacı bir `Semaphore` nesneden `Semaphore` geçerli nesneye taşır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -62,13 +62,13 @@ Ad                                     | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrappers.h
 
-**Namespace:** Microsoft::wrl:: Wrappers
+**Ad alanı:** Microsoft::WRL::Sarmalayıcılar
 
-## <a name="lock"></a>Semaphore::LOCK
+## <a name="semaphorelock"></a><a name="lock"></a>Semafor::Kilit
 
-Geçerli nesne kadar bekler veya `Semaphore` nesne ile ilişkili belirtilen işleyici içinde sinyal verilmiş duruma dönmesine ya da belirtilen zaman aşımı aralığı geçti.
+Geçerli nesnenin veya belirtilen `Semaphore` tanıtıcıyla ilişkili nesnesinyal durumunda olana veya belirtilen zaman aşımı aralığı geçene kadar bekler.
 
 ```cpp
 SyncLock Lock(
@@ -83,19 +83,19 @@ static SyncLock Lock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Milisaniye*<br/>
-Milisaniye cinsinden zaman aşımı aralığı. Varsayılan değer süresiz olarak bekler sonsuzdur.
+*milisaniye*<br/>
+Zaman aralığı, milisaniye cinsinden. Varsayılan değer, süresiz olarak bekleyen SONSUZ'dur.
 
-*h*<br/>
-İçin bir tanıtıcı bir `Semaphore` nesne.
+*H*<br/>
+Bir `Semaphore` nesneye tutamak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `Details::SyncLockWithStatusT<HandleTraits::SemaphoreTraits>`
+Bir `Details::SyncLockWithStatusT<HandleTraits::SemaphoreTraits>`
 
-## <a name="operator-assign"></a>Semaphore::operator =
+## <a name="semaphoreoperator"></a><a name="operator-assign"></a>Semafor::operator=
 
-Belirtilen tanıtıcıdan taşır bir `Semaphore` geçerli nesneye `Semaphore` nesne.
+Belirtilen tutamacı bir `Semaphore` nesneden `Semaphore` geçerli nesneye taşır.
 
 ```cpp
 Semaphore& operator=(
@@ -105,16 +105,16 @@ Semaphore& operator=(
 
 ### <a name="parameters"></a>Parametreler
 
-*h*<br/>
-Rvalue başvuru için bir `Semaphore` nesne.
+*H*<br/>
+Bir `Semaphore` nesneye rvalue-reference.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir başvuru `Semaphore` nesne.
+Geçerli `Semaphore` nesneye bir başvuru.
 
-## <a name="semaphore"></a>Semaphore::Semaphore
+## <a name="semaphoresemaphore"></a><a name="semaphore"></a>Semafor::Semafor
 
-Yeni bir örneğini başlatır `Semaphore` sınıfı.
+`Semaphore` sınıfının yeni bir örneğini başlatır.
 
 ```cpp
 explicit Semaphore(
@@ -128,5 +128,5 @@ WRL_NOTHROW Semaphore(
 
 ### <a name="parameters"></a>Parametreler
 
-*h*<br/>
-Tanıtıcı ya da bir rvalue başvurusuna bir `Semaphore` nesne.
+*H*<br/>
+Bir `Semaphore` nesneye bir tanıtıcı veya rvalue-reference.

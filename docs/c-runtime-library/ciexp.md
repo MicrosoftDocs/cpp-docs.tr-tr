@@ -1,8 +1,9 @@
 ---
 title: _CIexp
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _CIexp
+- _o__CIexp
 api_location:
 - msvcr120.dll
 - msvcr80.dll
@@ -12,6 +13,7 @@ api_location:
 - msvcr110_clr0400.dll
 - msvcr90.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -23,16 +25,16 @@ helpviewer_keywords:
 - CIexp intrinsic
 - _CIexp intrinsic
 ms.assetid: f8a3e3b7-fa57-41a3-9983-6c81914cbb55
-ms.openlocfilehash: c901442bc7874e75dc0be03c72953dbacb67add3
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b694479c7a69ec2c4da82a584e55398771536df6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944697"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81334236"
 ---
 # <a name="_ciexp"></a>_CIexp
 
-Yığındaki en üstteki değerin üstel değerini hesaplar.
+Yığındaki en üst değerin üstel kısmını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,9 +44,11 @@ void __cdecl _CIexp();
 
 ## <a name="remarks"></a>Açıklamalar
 
-`exp` İşlevin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
+İşlevin `exp` bu sürümüderleyicinin anladığı özel bir çağrı kuralına sahiptir. Kopyaların oluşturulmasını önlediği ve kayıt tahsisine yardımcı olduğu için yürütmeyi hızlandırıyor.
 
-Elde edilen değer yığının en üstüne gönderilir.
+Elde edilen değer yığının üstüne itilir.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -1,6 +1,6 @@
 ---
 title: FileOutput sınıfı
-description: C++ BUILD Insights SDK dosyası çıkış sınıfı başvurusu.
+description: C++ Build Insights SDK FileOutput sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 1c4053d0378ddb9d5dd061bbc9889c454dc9b52c
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 37823da8a4aaac0ce4094583b8aee8ac1eb04aaa
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333344"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81324812"
 ---
 # <a name="fileoutput-class"></a>FileOutput sınıfı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`FileOutput` sınıfı [Matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [EXECUTABLE_IMAGE_OUTPUT](../event-table.md#executable-image-output), [EXP_OUTPUT](../event-table.md#exp-output), [IMP_LIB_OUTPUT](../event-table.md#imp-lib-output), [LIB_OUTPUT](../event-table.md#lib-output)veya [OBJ_OUTPUT](../event-table.md#obj-output) olayını eşleştirmek için kullanın.
+Sınıf `FileOutput` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. Bir [EXECUTABLE_IMAGE_OUTPUT,](../event-table.md#executable-image-output) [EXP_OUTPUT,](../event-table.md#exp-output) [IMP_LIB_OUTPUT,](../event-table.md#imp-lib-output) [LIB_OUTPUT](../event-table.md#lib-output)veya [OBJ_OUTPUT](../event-table.md#obj-output) olay maç için kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,18 +52,18 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[SimpleEvent](simple-event.md) temel sınıfından devralınan üyelerle birlikte `FileOutput` sınıfı aşağıdaki üyeleri içerir:
+[SimpleEvent](simple-event.md) taban sınıfından devralınan üyelerle `FileOutput` birlikte, sınıf aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[Dosya çıkışı](#file-output)
+[Dosya Çıktısı](#file-output)
 
 ### <a name="functions"></a>İşlevler
 
 [Yol](#path)
-[türü](#type)
+[Türü](#type)
 
-## <a name="file-output"></a>Dosya çıkışı
+## <a name="fileoutput"></a><a name="file-output"></a>Dosya Çıktısı
 
 ```cpp
 FileOutput(const RawEvent& event);
@@ -71,10 +71,10 @@ FileOutput(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*olay*\
-[EXECUTABLE_IMAGE_OUTPUT](../event-table.md#executable-image-output), [EXP_OUTPUT](../event-table.md#exp-output), [IMP_LIB_OUTPUT](../event-table.md#imp-lib-output), [LIB_OUTPUT](../event-table.md#lib-output)veya [OBJ_OUTPUT](../event-table.md#obj-output) olay.
+*Olay*\
+Bir [EXECUTABLE_IMAGE_OUTPUT](../event-table.md#executable-image-output), [EXP_OUTPUT](../event-table.md#exp-output), [IMP_LIB_OUTPUT](../event-table.md#imp-lib-output), [LIB_OUTPUT](../event-table.md#lib-output), veya [OBJ_OUTPUT](../event-table.md#obj-output) olay.
 
-## <a name="path"></a>Yolun
+## <a name="path"></a><a name="path"></a>Yolu
 
 ```cpp
 const wchar_t Path() const;
@@ -82,9 +82,9 @@ const wchar_t Path() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çıkış dosyasının mutlak yolu.
+Çıktı dosyasına giden mutlak yol.
 
-## <a name="type"></a>Türüyle
+## <a name="type"></a><a name="type"></a>Türü
 
 ```cpp
 Type Type() const;
@@ -92,6 +92,6 @@ Type Type() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çıkış dosyasının türünü tanımlayan bir kod.
+Çıktı dosyasının türünü açıklayan bir kod.
 
 ::: moniker-end

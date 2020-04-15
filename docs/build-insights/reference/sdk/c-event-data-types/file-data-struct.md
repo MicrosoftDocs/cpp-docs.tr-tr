@@ -1,6 +1,6 @@
 ---
 title: FILE_DATA yapısı
-description: C++ Derleme ÖNGÖRÜLERI SDK FILE_DATA yapısı başvurusu.
+description: C++ Build Insights SDK FILE_DATA yapı referansı.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 72cae8c8eb81bdb8d94897c46c5af90c89e92ab4
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 6b7b0129c54fa4b1d5285bafb38761da45bab4e5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333757"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81325583"
 ---
 # <a name="file_data-structure"></a>FILE_DATA yapısı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`FILE_DATA` yapısı bir dosya girişi veya çıkışı tanımlar.
+Yapı, `FILE_DATA` bir dosya girişini veya çıktısını açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,6 +43,6 @@ typedef struct FILE_DATA_TAG
 |  |  |
 |--|--|
 | `Path` | Dosyanın mutlak yolu |
-| `TypeCode` | Dosyanın türünü tanımlayan bir kod. Daha fazla bilgi için bkz. [FILE_TYPE_CODE](file-type-code-enum.md). |
+| `TypeCode` | Dosyanın türünü açıklayan bir kod. Daha fazla bilgi için [FILE_TYPE_CODE.](file-type-code-enum.md) |
 
 ::: moniker-end

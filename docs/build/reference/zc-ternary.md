@@ -7,32 +7,32 @@ helpviewer_keywords:
 - /Zc:ternary
 - Zc:ternary
 - -Zc:ternary
-ms.openlocfilehash: 5c38a09b92b4173ca962412a413abc283db590ff
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 7c95f061e195ccf7fef8a6a21d193b257baa5f39
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927503"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81335674"
 ---
 # <a name="zcternary-enforce-conditional-operator-rules"></a>/Zc:ternary (Koşullu işleç kurallarını zorla)
 
-Bir koşullu operatör C++ ifadesinde ikinci ve üçüncü işlenenlerinin türleri ve const veya volatile (CV) niteliği için standart kuralların uygulanmasını etkinleştirin.
+Koşullu işleç ifadesinde ikinci ve üçüncü operandların türleri ve const veya uçucu (cv) niteliği için C++ Standart kurallarının uygulanmasını etkinleştirin.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc: Üçlü** [ **-** ]
+> **/Zc:ternary****-**[ ]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio 2017 ' den başlayarak, derleyici standart C++ *koşullu işleç* ( **?:** ) davranışını destekler. *Üçlü işleç*olarak da bilinir. C++ Standart üçlü işlenenleri üç koşuldan birini karşılayacak şekilde gerektirir: İşlenenler aynı türde ve **const** ya da **volatile** (MF-nitelik) türünde olmalıdır ya da yalnızca bir işlenen, diğeri ile aynı türe ve CV niteliğine kesin bir şekilde dönüştürülebilir olmalıdır. Ya da, bir veya her iki işlenen de bir throw ifadesi olmalıdır. Visual Studio 2017 sürüm 15,5 ' den önceki sürümlerde, derleyici standart tarafından belirsiz olarak kabul edilen Dönüştürmelere izin verilir.
+Visual Studio 2017'den başlayarak derleyici C++ standart *koşullu işleci* **(?:**) davranışını destekler. Üçüncül *işleç*olarak da bilinir. C++ Standardı, üçüncül operandların üç koşuldan birini karşılamasını gerektirir: Operandlar aynı tip ve **const** veya **uçucu** kalifikasyonda (cv-yeterlilik) olmalıdır veya sadece bir operand, diğeri ile aynı tipe ve cv-kalifikasyona açık bir şekilde dönüştürülebilir olmalıdır. Ya da, bir veya her iki operands bir atmak ifade olmalıdır. Visual Studio 2017 sürüm 15.5'ten önceki sürümlerde, derleyici standart tarafından belirsiz kabul edilen dönüşümlere izin verdi.
 
-**/Zc: Üçlü** seçeneği belirtildiğinde, derleyici standarda uygun olur. Bu, eşleşen türler ve ikinci ve üçüncü işlenenlerde CV niteliği için kuralları karşılamayan kodu reddeder.
+**/Zc:üçüncül** seçeneği belirtildiğinde, derleyici standarda uygundur. Eşleşen türleri ve ikinci ve üçüncü operands cv-nitelik için kuralları uymayan kodu reddeder.
 
-**/Zc: Üçlü** seçenek, Visual Studio 2017 ' de varsayılan olarak kapalıdır. Uygun davranışı etkinleştirmek için **/Zc: Üçlü** ve önceki bir uyumsuz derleyici davranışını açıkça belirtmek için **/ZC** : Üçlü öğeli kullanın. [/Permissive-](permissive-standards-conformance.md) seçeneği bu seçeneği örtülü olarak sunar, ancak **/Zc: Üçlü-** kullanılarak geçersiz kılınabilir.
+**/Zc:ternary** seçeneği Visual Studio 2017'de varsayılan olarak kapalıdır. Uygun davranışı etkinleştirmek için **/Zc:ternary'yi** veya önceki uyumsuz derleyici davranışını açıkça belirtmek için **/Zc:ternary'yi** kullanın. [/izin-](permissive-standards-conformance.md) seçeneği dolaylı olarak bu seçeneği sağlar, ancak **/Zc:ternary-**.
 
 ### <a name="examples"></a>Örnekler
 
-Bu örnek, bir türden hem açık olmayan başlatma hem de türe dönüştürme sağlayan bir sınıfın, belirsiz Dönüştürmelere neden olabileceği gösterilmektedir. Bu kod, varsayılan olarak derleyici tarafından kabul edilir, ancak **/Zc: Üçlü** veya **/Permissive-** belirtildiğinde reddedilir.
+Bu örnek, hem bir türden açık olmayan başlatma hem de bir türe dönüştürme sağlayan bir sınıfın belirsiz dönüşümlere nasıl yol açabileceğini gösterir. Bu kod varsayılan olarak derleyici tarafından kabul edilir, ancak **/Zc:ternary** veya **/izin-** belirtildiğinde reddedilir.
 
 ```cpp
 // zcternary1.cpp
@@ -56,9 +56,9 @@ int main()
 }
 ```
 
-Bu kodu onarmak için, tercih edilen ortak türe açık bir dönüştürme yapın veya tür dönüştürmesinin bir yönünü önleyin. Derleyiciyi açıkça dönüştürmeyi yaparak derleyicinin tür dönüştürmesinin eşleşmesini sağlayabilirsiniz.
+Bu kodu düzeltmek için, tercih edilen ortak türe açık bir döküm yapın veya bir tür dönüştürme yönünü önleyin. Dönüştürmeyi açık hale getirerek derleyicinin tür dönüştürmeyle eşleşmesini engelleyebilirsiniz.
 
-Bu ortak model için önemli bir özel durum, işlenen türünün, ve gibi null sonlandırılmış dize türlerinden `const char*` `const char16_t*`biri olduğu durumdur. Ayrıca, dizi türleri ve işaret ettikleri işaretçi türleri ile efekti yeniden oluşturabilirsiniz. ' Ye `?:` gerçek ikinci veya üçüncü işlenen, karşılık gelen türden bir dize sabit değeri olduğunda, kullanılan dil standardına göre değişir. C++ 17, C++ 14 ' ten bu durum için semantiğini değiştirdi. Sonuç olarak, derleyici varsayılan **/std: c++ 14**altında aşağıdaki örnekteki kodu kabul eder, ancak **/std: c++ 17**' i belirttiğinizde bunu reddeder.
+Bu yaygın desen için önemli bir istisna operands türü gibi null-sonlandırılan dize türleri, biri , `const char*`, `const char16_t*`ve benzeri olmasıdır. Ayrıca, dizi türleri ve bozunan işaretçi türleri ile efekti çoğaltabilirsiniz. Gerçek ikinci veya üçüncü operand `?:` karşılık gelen tür bir dize literal olduğunda davranış kullanılan dil standardına bağlıdır. C++17 bu durum için C++14'ten anlamsal olarak değiştirmiştir. Sonuç olarak, derleyici kodu varsayılan **/std:c++14**altında aşağıdaki örnekte kabul eder, ancak **/std:c++17**belirttiğiniz zaman kodu reddeder.
 
 ```cpp
 // zcternary2.cpp
@@ -78,9 +78,9 @@ int main()
 }
 ```
 
-Bu kodu onarmak için işlenenlerinin birini açık olarak atayın.
+Bu kodu düzeltmek için, operands açıkça birini döküm.
 
-**/Zc: Üçlü**altında, derleyici bağımsız değişkenlerden birinin **void**türünde olduğu ve diğeri bir throw ifadesi olmadığı koşullu işleçleri reddeder. Bu düzenin yaygın kullanımı, onay benzeri makrolardır:
+**/Zc:ternary**altında, derleyici, bağımsız değişkenlerden birinin tür **geçersiz**olduğu koşullu işleçleri reddeder ve diğeri bir atma ifadesi değildir. Bu desenin ortak kullanımı ASSERT benzeri makrolarda dır:
 
 ```cpp
 // zcternary3.cpp
@@ -97,9 +97,9 @@ int main()
 }
 ```
 
-Tipik çözüm, void olmayan bağımsız değişkenini ile `void()`değiştirmek.
+Tipik çözüm, geçersiz olmayan bağımsız değişkeni `void()`.
 
-Bu örnek, hem **/Zc: Üçlü** hem de **/Zc: Üçlü-** : şeklinde bir hata üreten kodu gösterir.
+Bu örnek, hem **/Zc:ternary** hem de **/Zc:ternary altında**hata oluşturan kodu gösterir.
 
 ```cpp
 // zcternary4.cpp
@@ -114,14 +114,14 @@ int main() {
 }
 ```
 
-Bu kod, daha önce bu hatayı verdi:
+Bu kod daha önce bu hatayı verdi:
 
 ```Output
 error C2446: ':': no conversion from 'foo::<lambda_f6cd18702c42f6cd636bfee362b37033>' to 'foo::<lambda_717fca3fc65510deea10bc47e2b06be4>'
 note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
 ```
 
-**/Zc: Üçlü**, hatanın nedeni daha açık hale gelir. Her bir Lambda oluşturmak için uygulama tanımlı birkaç çağırma kuralı kullanılabilir. Ancak, derleyicinin olası lambda imzalarını belirsizliğini ortadan kaldırmak için tercih kuralı yoktur. Yeni çıktı şöyle görünür:
+**/Zc:ternary**ile, başarısızlığın nedeni daha açık hale gelir. Uygulama tanımlı çağrı kurallarından herhangi biri her lambda oluşturmak için kullanılabilir. Ancak, derleyici olası lambda imzaları ayırt etmek için hiçbir tercih kuralı vardır. Yeni çıktı şu na benzer:
 
 ```Output
 error C2593: 'operator ?' is ambiguous
@@ -132,7 +132,7 @@ note: or       'built-in C++ operator?(bool (__vectorcall *)(int,int), bool (__v
 note: while trying to match the argument list '(foo::<lambda_717fca3fc65510deea10bc47e2b06be4>, foo::<lambda_f6cd18702c42f6cd636bfee362b37033>)'
 ```
 
-**/Zc: Üçlü** tarafından bulunan yaygın bir sorun kaynağı, şablon meta programlamada kullanılan koşullu işleçlerden gelir. Sonuç türlerinden bazıları bu anahtar altında değişir. Aşağıdaki örnek, **/Zc: Üçlü** olarak bir koşullu ifadenin sonuç türünü meta programlama bağlamında değiştiren iki durumu göstermektedir:
+**/Zc:ternary** tarafından bulunan sorunların yaygın bir kaynağı, şablon meta programlamada kullanılan koşullu işleçlerden gelir. Bu anahtar altında bazı sonuç türleri değişir. Aşağıdaki örnekte, **/Zc:tersiyerin** koşullu ifadenin sonuç türünü meta programlama olmayan bir bağlamda değiştirdiği iki durum gösteriş verilmiştir:
 
 ```cpp
 // zcternary5.cpp
@@ -147,17 +147,17 @@ int main(int argc, char**) {
 }
 ```
 
-Tipik düzeltmeler, sonuç türü üzerinde, `std::remove_reference` eski davranışı korumak için gereken bir nitelik uygulamaktır.
+Tipik düzeltme, eski `std::remove_reference` davranışı korumak için gereken sonuç türüne bir özellik uygulamaktır.
 
-Visual C++'teki uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
+Visual C++'daki uyumluluk sorunları hakkında daha fazla bilgi için standart [olmayan davranış](../../cpp/nonstandard-behavior.md)konusuna bakın.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
 
-1. **Yapılandırma özellikleri** > **CC++/** komut > **satırı** Özellik sayfası ' nı seçin.
+1. Yapılandırma **Özellikleri** > **C/C++** > **Komut Satırı** özelliği sayfasını seçin.
 
-1. **Ek seçenekler** özelliğini **/Zc: Üçlü** veya **/Zc: Üçlü** olarak içerecek şekilde değiştirin ve ardından **Tamam**' ı seçin.
+1. Ek **Seçenekler** özelliğini **/Zc:ternary** veya **/Zc:ternary-** içerecek şekilde değiştirin ve ardından **Tamam'ı**seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

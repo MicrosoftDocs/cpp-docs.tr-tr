@@ -1,9 +1,11 @@
 ---
 title: yeniden adlandır, _wrename
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - rename
 - _wrename
+- _o__wrename
+- _o_rename
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -37,16 +40,16 @@ helpviewer_keywords:
 - names [C++], changing directory
 - renaming files
 ms.assetid: 9f0a6103-26a2-4dda-b14b-79a48946266a
-ms.openlocfilehash: d3d88c46fc055fb173264b40a56c755c360c7adf
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 730458c5027f8f690e8238b29cbdb1056f09ed68
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949298"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81338113"
 ---
 # <a name="rename-_wrename"></a>yeniden adlandır, _wrename
 
-Bir dosyayı veya dizini yeniden adlandırın.
+Dosyayı veya dizini yeniden adlandırın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,48 +66,50 @@ int _wrename(
 
 ### <a name="parameters"></a>Parametreler
 
-*OldName*<br/>
-Eski ad işaretçisi.
+*oldname*<br/>
+Eski isme işaretçi.
 
-*ad*<br/>
-Yeni ad işaretçisi.
+*Yeniad*<br/>
+Yeni ad için işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri başarılı olursa 0 döndürür. Bir hatada, işlev sıfır dışında bir değer döndürür ve **errno** değerini aşağıdaki değerlerden birine ayarlar:
+Başarılı olursa, bu işlevlerin her biri 0 döndürür. Bir hatada, işlev sıfır olmayan bir değer döndürür ve aşağıdaki değerlerden birine **errno** ayarlar:
 
 |errno değeri|Koşul|
 |-|-|
-| **EACCES** | *Newname* tarafından belirtilen dosya veya dizin zaten var veya oluşturulamıyor (geçersiz yol); veya *OldName* bir dizindir ve *YeniAd* farklı bir yol belirtir. |
-| **ENOENT** | *OldName* tarafından belirtilen dosya veya yol bulunamadı. |
-| **EINVAL** | Ad geçersiz karakterler içeriyor. |
+| **EACCES** | *Yeni adla* belirtilen dosya veya dizin zaten var veya oluşturulamadı (geçersiz yol); veya *oldname* bir dizin ve *yeni ad* farklı bir yol belirtir. |
+| **Enoent** | *Eski adla* belirtilen dosya veya yol bulunamadı. |
+| **Eınval** | Ad geçersiz karakterler içerir. |
 
-Olası diğer dönüş değerleri için bkz. [_doserrno, _errno, syserrlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Diğer olası iade değerleri için [_doserrno, _errno, syserrlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Rename işlevi, *OldName* tarafından belirtilen dosya veya dizini *YeniAd*tarafından verilen ada **yeniden** adlandırır. Eski ad, varolan bir dosyanın veya dizinin yolu olmalıdır. Yeni ad var olan bir dosyanın veya dizinin adı olmamalıdır. *Newname* bağımsız değişkeninde farklı bir yol vererek bir dosyayı bir dizinden veya cihazdan diğerine taşımak için **Yeniden Adlandır** ' a kullanabilirsiniz. Ancak, bir dizini taşımak için **yeniden adlandırma** kullanamazsınız. Dizinler yeniden adlandırılabilir, ancak taşınamaz.
+**Yeniden adlandırma** işlevi, *eski adla* belirtilen dosyayı veya dizini *yeni adla*verilen ada yeniden adlandırır. Eski ad, varolan bir dosyanın veya dizinin yolu olmalıdır. Yeni ad, varolan bir dosyanın veya dizinin adı olmamalıdır. *Yeni ad* bağımsız değişkeninde farklı bir yol vererek bir dosyayı bir dizin veya aygıttan diğerine taşımak için **yeniden adlandırmayı** kullanabilirsiniz. Ancak, bir dizini taşımak için **yeniden adlandırmak** kullanamazsınız. Dizinler yeniden adlandırılabilir, ancak taşınamaz.
 
-**_wrename** , **_rename**öğesinin geniş karakterli bir sürümüdür; **_wrename** için bağımsız değişkenler geniş karakterli dizelerdir. **_wrename** ve **_rename** aynı şekilde davranır.
+**_wrename** **_rename**geniş karakterli bir versiyonudur; **_wrename** bağımsız değişkenleri geniş karakterli dizeleridir. **_wrename** ve **_rename** aynı şekilde aynı şekilde davranan.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_trename**|**Yeniden Adlandır**|**Yeniden Adlandır**|**_wrename**|
+|**_trename**|**Yeni -den adlandırmak**|**Yeni -den adlandırmak**|**_wrename**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**Yeniden Adlandır**|\<GÇ. h > veya \<stdio. h >|
-|**_wrename**|\<stdio. h > veya \<wchar. h >|
+|**Yeni -den adlandırmak**|\<io.h> \<veya stdio.h>|
+|**_wrename**|\<stdio.h> \<veya wchar.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="libraries"></a>Kitaplıklar
 
-[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -132,7 +137,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 File 'CRT_RENAMER.OBJ' renamed to 'CRT_RENAMER.JBO'
@@ -140,4 +145,4 @@ File 'CRT_RENAMER.OBJ' renamed to 'CRT_RENAMER.JBO'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
+[Dosya Işleme](../../c-runtime-library/file-handling.md)<br/>

@@ -1,8 +1,9 @@
 ---
 title: _get_timezone
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _get_timezone
+- _o__get_timezone
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -27,16 +29,16 @@ helpviewer_keywords:
 - get_timezone function
 - _get_timezone function
 ms.assetid: 30ab0838-0ae9-4a2f-bfe6-a49ee443b21e
-ms.openlocfilehash: cf77ca21383bcae6919b6c1d00b99c082ef99919
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 94dfae1aaaddf9c545af4309d3ddc62a0bcb33f6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955631"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81344900"
 ---
 # <a name="_get_timezone"></a>_get_timezone
 
-Eşgüdümlü Evrensel Saat (UTC) ve yerel saat arasındaki farkı saniye cinsinden alır.
+Eşgüdümlü evrensel saat (UTC) ile yerel saat arasındaki saniye farkını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,26 +50,28 @@ error_t _get_timezone(
 
 ### <a name="parameters"></a>Parametreler
 
-*saniyeden*<br/>
-UTC ve yerel saat arasındaki saniye cinsinden fark.
+*Saniye*<br/>
+UTC ve yerel saat arasındaki saniye farkı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır veya bir hata oluşursa **errno** değeri.
+Bir hata oluşursa başarılı veya **bir errno** değeri sıfır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Get_timezone** işlevi UTC ve yerel saat arasındaki farkı saniye cinsinden bir tamsayı olarak alır. Varsayılan değer, Pasifik standart saati için 28.800 saniyedir (UTC 'nin arkasında sekiz saat).
+**_get_timezone** işlevi, UTC ile yerel saat arasındaki farkı tamsayı olarak alır. Varsayılan değer, Pasifik Standart Saati için 28.800 saniyedir (UTC'nin sekiz saat gerisinde).
 
-*Saniyeler* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+*Saniye* **NULL**ise, geçersiz parametre işleyicisi, [Parametre Doğrulama](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL için errno** ayarlar ve **EINVAL** döndürür. **EINVAL**
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_timezone**|\<Time. h >|
+|**_get_timezone**|\<time.h>|
 
-Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için [Uyumluluk'a](../../c-runtime-library/compatibility.md)bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

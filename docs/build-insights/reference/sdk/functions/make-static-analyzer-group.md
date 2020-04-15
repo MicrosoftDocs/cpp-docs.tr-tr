@@ -1,6 +1,6 @@
 ---
-title: Makestaticanaliz Zergroup
-description: C++ Build Insights SDK 'Sı Makestaticanalgrubu işlev başvurusu.
+title: MakeStaticAnalyzerGroup
+description: C++ Build Insights SDK MakeStaticAnalyzerGroup fonksiyon başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 5eabb0fcbb0a0bb0eea0f4e6bbf27b8e4c53c3ab
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 72f7f5d7a408436902394451a52dd66efe1d93f5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332819"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81323937"
 ---
-# <a name="makestaticanalyzergroup"></a>Makestaticanaliz Zergroup
+# <a name="makestaticanalyzergroup"></a>MakeStaticAnalyzerGroup
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`MakeStaticAnalyzerGroup` işlevi, [Çözümle](analyze.md) veya [relog](relog.md)gibi işlevlere geçirilebilecek bir statik çözümleyici grubu oluşturmak için kullanılır. Bir çözümleyici grubunun üyeleri, bir izleme içindeki tüm olaylar çözümlenene kadar olayları bir veya soldan sağa doğru bir şekilde alır.
+İşlev, `MakeStaticAnalyzerGroup` [Çözümle](analyze.md) veya [Yeniden Oturum](relog.md)aç gibi işlevlere geçirilebilen statik bir çözümleyici grubu oluşturmak için kullanılır. Bir çözümleyici grubunun üyeleri, izlemedeki tüm olaylar analiz edilene kadar olayları soldan sağa tektek alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,18 +36,18 @@ auto MakeStaticAnalyzerGroup(TAnalyzerPtrs... analyzers);
 
 ### <a name="parameters"></a>Parametreler
 
-*TAnalyzerPtrs*\
+*TAnalyzerPtr*\
 Bu parametre her zaman çıkarılır.
 
-*çözümleyiciler*\
-Statik çözümleyici grubuna dahil edilen [ıanalyzer](../other-types/ianalyzer-class.md) işaretçilerinin parametre paketi. Bu işaretçiler ham, `std::unique_ptr`veya `std::shared_ptr`olabilir.
+*Analizörleri*\
+Statik çözümleyici grubuna dahil [iAnalyzer](../other-types/ianalyzer-class.md) işaretçilerinden oluşan bir parametre paketi. Bu işaretçiler ham `std::unique_ptr`veya `std::shared_ptr`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Statik çözümleyici grubu. Dönüş değerini yakalamak için **Auto** anahtar sözcüğünü kullanın.
+Statik bir çözümleyici grubu. İade değerini yakalamak için **otomatik** anahtar sözcüğü kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dinamik çözümleyici gruplarından farklı olarak, statik çözümleyici grubunun üyeleri derleme zamanında bilinmelidir. Ayrıca, statik bir çözümleyici grubu, çok biçimli davranışa sahip olmayan [ıanalyzer](../other-types/ianalyzer-class.md) işaretçilerini içerir. Bir Windows için olay Izleme (ETW) izlemek için bir statik çözümleyici grubu kullanırken, `IAnalyzer` arabirimine yapılan çağrılar her zaman doğrudan çözümleyici grup üyesi tarafından işaret edilen nesneye çözümlenir. Bu esneklik kaybı, daha hızlı olay işleme süreleriyle birlikte gelir. Bir çözümleyici grubunun üyeleri derleme zamanında tanınamaz veya `IAnalyzer` işaretçilerde polimorfik davranışa ihtiyaç duyuyorsanız, dinamik çözümleyici grubunu kullanmayı düşünün. Dinamik çözümleyici grubunu kullanmak için, bunun yerine [Makedynamicanaliz zergroup](make-static-analyzer-group.md) çağırın.
+Dinamik çözümleyici gruplarından farklı olarak, statik çözümleyici grubunun üyeleri derleme zamanında bilinmelidir. Ayrıca, statik bir çözümleyici grubu çok biçimli davranış olmayan [IAnalyzer](../other-types/ianalyzer-class.md) işaretçileri içerir. Windows için Olay İzleme (ETW) izlemeyi çözümlemek için statik bir `IAnalyzer` çözümleyici grubu kullanırken, arabirime yapılan çağrılar her zaman çözümleyici grup üyesi tarafından doğrudan işaret edilen nesneye gider. Bu esneklik kaybı, daha hızlı olay işleme süreleri olasılığıyla birlikte gelir. Bir çözümleyici grubunun üyeleri derleme zamanında bilinmiyorsa veya işaretçilerinizde `IAnalyzer` çok biçimli davranış gerektiriyorsanız, dinamik bir çözümleyici grubu kullanmayı düşünün. Dinamik bir çözümleyici grubu kullanmak için [MakeDynamicAnalyzerGroup'u](make-static-analyzer-group.md) arayın.
 
 ::: moniker-end

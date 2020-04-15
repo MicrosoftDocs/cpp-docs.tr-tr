@@ -1,5 +1,5 @@
 ---
-title: CMFCPropertyGridFileProperty sınıfı
+title: CMFCPropertyGridFileProperty Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCPropertyGridFileProperty
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCPropertyGridFileProperty [MFC], CMFCPropertyGridFileProperty
 ms.assetid: 2bb8b8b4-47fc-4798-bd5e-dc8ea0b4cd9d
-ms.openlocfilehash: 4b64d18a67ea499c202b81481684227200846483
-ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
+ms.openlocfilehash: 0ce3321968f0c29ce3b946f6127e4435b531c422
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68821288"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81360575"
 ---
-# <a name="cmfcpropertygridfileproperty-class"></a>CMFCPropertyGridFileProperty sınıfı
+# <a name="cmfcpropertygridfileproperty-class"></a>CMFCPropertyGridFileProperty Sınıfı
 
-Sınıfı `CMFCPropertyGridFileProperty` , bir dosya seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.
+Sınıf, `CMFCPropertyGridFileProperty` dosya seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,39 +25,39 @@ Sınıfı `CMFCPropertyGridFileProperty` , bir dosya seçimi iletişim kutusunu 
 class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCPropertyGridFileProperty:: CMFCPropertyGridFileProperty](#cmfcpropertygridfileproperty)|Bir `CMFCPropertyGridFileProperty` nesnesi oluşturur.|
+|[CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty](#cmfcpropertygridfileproperty)|Bir `CMFCPropertyGridFileProperty` nesne inşa eder.|
 |`CMFCPropertyGridFileProperty::~CMFCPropertyGridFileProperty`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMFCPropertyGridFileProperty::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
-|`CMFCPropertyGridFileProperty::OnClickButton`|( [CMFCPropertyGridProperty:: OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton)geçersiz kılar.)|
+|`CMFCPropertyGridFileProperty::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
+|`CMFCPropertyGridFileProperty::OnClickButton`|[(CMFCPropertyGridProperty geçersiz kılar::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton).)|
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md)
+[CMFCPropertyGridEmlak](../../mfc/reference/cmfcpropertygridproperty-class.md)
 
 [CMFCPropertyGridFileProperty](../../mfc/reference/cmfcpropertygridfileproperty-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxpropertygridctrl. h
+**Üstbilgi:** afxpropertygridctrl.h
 
-##  <a name="cmfcpropertygridfileproperty"></a>CMFCPropertyGridFileProperty:: CMFCPropertyGridFileProperty
+## <a name="cmfcpropertygridfilepropertycmfcpropertygridfileproperty"></a><a name="cmfcpropertygridfileproperty"></a>CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty
 
-Bir `CMFCPropertyGridFileProperty` nesnesi oluşturur.
+Bir `CMFCPropertyGridFileProperty` nesne inşa eder.
 
 ```
 CMFCPropertyGridFileProperty(
@@ -74,38 +74,38 @@ CMFCPropertyGridFileProperty(
 ### <a name="parameters"></a>Parametreler
 
 *strName*<br/>
-'ndaki Özellik adı.
+[içinde] Mülk adı.
 
 *bOpenFileDialog*<br/>
-'ndaki **Dosya Aç** iletişim kutusunu açmak için true. **Dosya Kaydet** iletişim kutusunu açmak için false.
+[içinde] **Dosya Aç** iletişim kutusunu açmak için DOĞRU; **Dosyayı Kaydet** iletişim kutusunu açmak için FALSE.
 
 *strFileName*<br/>
-'ndaki İlk dosya adı.
+[içinde] İlk dosya adı.
 
 *lpszDefExt*<br/>
-'ndaki Bir veya daha fazla dosya adı uzantısının dizesi. Varsayılan değer NULL.
+[içinde] Bir veya daha fazla dosya adı uzantıları dizesi. Varsayılan değer NULL'dur.
 
-*dwFlags*<br/>
-'ndaki İletişim kutusu bayrakları. Varsayılan değer, OFN_HIDEREADONLY ve OFN_OVERWRITEPROMPT bit düzeyinde birleşimidir (veya).
+*Dwflags*<br/>
+[içinde] İletişim kutusu bayrakları. Varsayılan değer, OFN_HIDEREADONLY ve OFN_OVERWRITEPROMPT bitwise birleşimidir.
 
-*lpszFilter*<br/>
-'ndaki Bir veya daha fazla dosya filtresi dizesi. Varsayılan değer NULL.
+*lpszFiltre*<br/>
+[içinde] Bir veya daha fazla dosya filtresi dizesi. Varsayılan değer NULL'dur.
 
 *lpszDescr*<br/>
-'ndaki Özellik öğesi açıklaması. Varsayılan değer NULL.
+[içinde] Özellik öğesi açıklaması. Varsayılan değer NULL'dur.
 
-*dwData*<br/>
-'ndaki Özellik öğesiyle ilişkili uygulamaya özel veriler. Örneğin, 32 bitlik bir tamsayı veya diğer verilere yönelik bir işaretçi. Varsayılan değer 0’dır.
+*Dwdata*<br/>
+[içinde] Özellik öğesi ile ilişkili uygulamaya özgü veriler. Örneğin, 32 bit tamsayı veya diğer verilere işaretçi. Varsayılan değer 0’dır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanılabilir bayrakların tam listesi için bkz. [OpenFileName yapısı](/windows/win32/api/commdlg/ns-commdlg-openfilenamew).
+Kullanılabilir bayrakların tam listesi için [OPENFILENAME yapısına](/windows/win32/api/commdlg/ns-commdlg-openfilenamew)bakın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCPropertyGridFileProperty` sınıfının yapıcısını kullanarak bir nesnesinin nasıl oluşturulacağını gösterir. Bu örnek, [Visual Studio Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfın oluşturucusu kullanarak bir nesnenin nasıl oluşturulacak olduğunu `CMFCPropertyGridFileProperty` gösterir. Bu örnek Visual [Studio Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#22](../../mfc/codesnippet/cpp/cmfcpropertygridfileproperty-class_1.cpp)]
 

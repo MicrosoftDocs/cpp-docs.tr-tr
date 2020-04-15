@@ -1,9 +1,10 @@
 ---
 title: perror, _wperror
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _wperror
 - perror
+- _o__wperror
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +17,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -33,16 +35,16 @@ helpviewer_keywords:
 - _wperror function
 - perror function
 ms.assetid: 34fce792-16fd-4673-9849-cd88b54b6cd5
-ms.openlocfilehash: 755b638f320fcc583faecfe6aa82269e4e1b3d8f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0c50e77863b4b136ac59b6f79d8e529691032609
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951030"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81338540"
 ---
 # <a name="perror-_wperror"></a>perror, _wperror
 
-Bir hata iletisi yazdır.
+Bir hata iletisi yazdırın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,39 +59,41 @@ void _wperror(
 
 ### <a name="parameters"></a>Parametreler
 
-*message*<br/>
-Yazdırılacak dize iletisi.
+*İleti*<br/>
+Yazdırmak için string iletisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**PError** işlevi **stderr**'e bir hata iletisi yazdırır. **_wperror** , **_perror**; öğesinin geniş karakterli bir sürümüdür. **_wperror** için *ileti* bağımsız değişkeni geniş karakterli bir dizedir. **_wperror** ve **_perror** aynı şekilde davranır.
+**perror** işlevi **stderr**için bir hata iletisi yazdırır. **_wperror** **_perror**geniş karakterli bir versiyonudur; **_wperror** için *ileti* bağımsız değişkeni geniş karakterli bir dizedir. **_wperror** ve **_perror** aynı şekilde davranan.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tperror**|**perror**|**perror**|**_wperror**|
 
-*ileti* önce, ardından iki nokta üst üste, ardından hatayı üreten son kitaplık çağrısının sistem hata iletisi ve son olarak bir yeni satır karakteri ile yazdırılır. *İleti* null işaretçisiyse veya null bir dize işaretçisiyse, **pError** yalnızca sistem hata iletisini yazdırır.
+*ileti* önce yazdırılır, ardından bir üst üste, ardından hatayı oluşturan son kitaplık çağrısı için sistem hatası iletisi ve son olarak da yeni bir satır karakteri tarafından yazdırılır. *İleti* null işaretçiveya null dize işaretçisi ise, **perror** yalnızca sistem hata iletisini yazdırır.
 
-Hata numarası [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) değişkeninde SAKLANıR (errno içinde tanımlanmıştır). H). Sistem hata iletilerine, hata numarasına göre sıralanmış bir ileti dizisi olan [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)değişkeni üzerinden erişilir. **pError** , **errno** değerini **_sys_errlist**dizinine dizin olarak kullanarak uygun hata iletisini yazdırır. [_Sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) değişkeninin değeri, **_sys_errlist** dizisindeki en fazla öğe sayısı olarak tanımlanmıştır.
+Hata numarası değişken [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) (ERRNO tanımlanır) depolanır. H). Sistem hata iletilerine, hata numarasıyla sıralanan iletiler dizisi olan [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)değişkeni üzerinden erişilir. **perror,** _sys_errlist için bir dizin olarak **errno** değerini kullanarak uygun hata iletisini yazdırır. **_sys_errlist** Değişken [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) **değeri, _sys_errlist** dizisindeki en yüksek öğe sayısı olarak tanımlanır.
 
-Doğru sonuçlar için, bir kitaplık yordamı hata ile döndüğünde **pError** 'ı hemen çağırın. Aksi halde, sonraki çağrılar **errno** değerinin üzerine yazabilir.
+Doğru sonuçlar için, kitaplık yordamı bir hatayla döndükten hemen sonra **perror'ı** arayın. Aksi takdirde, sonraki aramalar **errno** değerinin üzerine yazabilir.
 
-Windows işletim sisteminde, bazı errno 'da listelenen bir değer **yok** . H kullanılmıyor. Bu değerler UNIX işletim sistemi tarafından kullanılmak üzere ayrılmıştır. Windows işletim sistemi tarafından kullanılan **errno** değeri listesi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) . **pError** , bu platformlar tarafından kullanılmayan herhangi bir **errno** değeri için boş bir dize yazdırır.
+Windows işletim sisteminde, ERRNO'da listelenen bazı **errno** değerleri. H kullanılmaz. Bu değerler UNIX işletim sistemi tarafından kullanılmak üzere ayrılmıştır. Windows işletim sistemi tarafından kullanılan **errno** değerlerinin listesi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bakın. **perror,** bu platformlar tarafından kullanılmayan herhangi bir **errno** değeri için boş bir dize yazdırır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**perror**|\<stdio. h > veya \<Stdlib. h >|
-|**_wperror**|\<stdio. h > veya \<wchar. h >|
+|**perror**|\<stdio.h> \<veya stdlib.h>|
+|**_wperror**|\<stdio.h> \<veya wchar.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="libraries"></a>Kitaplıklar
 
-[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -144,4 +148,4 @@ _strerror says open failed: No such file or directory
 [Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
 [clearerr](clearerr.md)<br/>
 [ferror](ferror.md)<br/>
-[strerror, _strerror, _wcserror, \__wcserror](strerror-strerror-wcserror-wcserror.md)<br/>
+[strerror, _strerror, \__wcserror, _wcserror](strerror-strerror-wcserror-wcserror.md)<br/>

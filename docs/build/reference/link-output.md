@@ -15,38 +15,38 @@ helpviewer_keywords:
 - DLLs [C++], as linker output
 - LINK tool [C++], mapfile
 ms.assetid: a98b557c-1947-447a-be1f-616fb45a9580
-ms.openlocfilehash: 8323723f2049d3db469e874c91b99f4cfb561c72
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 253f88ed50b9f064edf976277a4618e4f101ec7e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439320"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81331787"
 ---
 # <a name="link-output"></a>LINK Çıktısı
 
-Bağlantı çıkışı. exe dosyaları, dll 'Ler, mapfiles ve mesajlar içerir.
+Bağlantı çıktısı .exe dosyaları, DL'ler, mapfiles ve iletileri içerir.
 
-##  <a name="_core_output_files"></a>Çıkış dosyaları
+## <a name="output-files"></a><a name="_core_output_files"></a>Çıktı Dosyaları
 
-BAĞLANTıDAN varsayılan çıkış dosyası bir. exe dosyasıdır. [/DLL](dll-build-a-dll.md) seçeneği BELIRTILMIŞSE, bağlantı bir. dll dosyası oluşturur. Çıkış dosyası adını [Çıkış dosyası adı (/out)](out-output-file-name.md) seçeneğiyle denetleyebilirsiniz.
+LINK'in varsayılan çıktı dosyası bir .exe dosyasıdır. [/DLL](dll-build-a-dll.md) seçeneği belirtilirse, LINK bir .dll dosyası oluşturur. Çıktı dosya adını [Çıktı Dosya Adı (/OUT)](out-output-file-name.md) seçeneğiyle denetleyebilirsiniz.
 
-Artımlı modda, bağlantı, programın daha sonra artımlı derlemeleri için durum bilgilerini tutmak üzere bir. Ilk dosyası oluşturur. . Ilfiles dosyaları hakkında daha fazla bilgi için bkz. [. ılfiles](dot-ilk-files-as-linker-input.md). Artımlı bağlama hakkında daha fazla bilgi için, artımlı [bağlantı (/artımlı)](incremental-link-incrementally.md) seçeneğine bakın.
+Artımlı modda, LINK, programın daha sonraki artımlı yapılarının durum bilgilerini tutmak için bir .ilk dosya oluşturur. .ilk dosyalar hakkında ayrıntılı bilgi için [.ilk Dosyalar'](dot-ilk-files-as-linker-input.md)a bakın. Artımlı bağlantı hakkında daha fazla bilgi için [Bağlantı'yı Aşamalı (/ARTıMLı)](incremental-link-incrementally.md) seçeneğine bakın.
 
-BAĞLANTı, dışarı aktarmalar (genellikle bir DLL) içeren bir program oluşturduğunda, derlemede bir. exp dosyası kullanılmadığı takdirde bir. lib dosyası da oluşturur. İçeri aktarma kitaplığı dosya adını [/ımplib](implib-name-import-library.md) seçeneğiyle denetleyebilirsiniz.
+LINK dışa aktarım (genellikle DLL) içeren bir program oluşturduğunda, yapıda bir .exp dosyası kullanılmadığı sürece bir .lib dosyası da oluşturur. [/IMPLIB](implib-name-import-library.md) seçeneği ile alma kitaplığı dosya adını denetleyebilirsiniz.
 
-[Mapfile oluştur (/MAP)](map-generate-mapfile.md) seçeneği BELIRTILMIŞSE, bağlantı bir mapfile oluşturur.
+[Mapfile (/MAP) oluştur](map-generate-mapfile.md) seçeneği belirtilirse, LINK bir mapfile oluşturur.
 
-[Hata ayıklama bilgisi oluştur (/Debug)](debug-generate-debug-info.md) seçeneği BELIRTILMIŞSE, bağlantı, programın hata ayıklama bilgilerini içermesi IÇIN bir pdb oluşturur.
+Hata [Ayıklama Bilgisini Oluştur (/Hata Ayıklama)](debug-generate-debug-info.md) seçeneği belirtilirse, LINK program için hata ayıklama bilgilerini içerecek bir PDB oluşturur.
 
-##  <a name="_core_other_output"></a>Diğer çıkış
+## <a name="other-output"></a><a name="_core_other_output"></a>Diğer Çıktı
 
-Başka bir komut satırı girişi olmadan `link` yazdığınızda, bağlantı, seçeneklerini özetleyen bir kullanım ifadesini görüntüler.
+Başka bir `link` komut satırı girişi olmadan yazdığınızda, LINK seçeneklerini özetleyen bir kullanım deyimi görüntüler.
 
-BAĞLANTı, [başlangıç başlığını gösterme (/nologo)](nologo-suppress-startup-banner-linker.md) seçeneği kullanılmadığı takdirde bir telif hakkı ve sürüm iletisi ve yankı komut dosyası girişi görüntüler.
+Link, [Bastırma Başlangıç Başlığı (/NOLOGO)](nologo-suppress-startup-banner-linker.md) seçeneği kullanılmadığı sürece bir telif hakkı ve sürüm iletisi görüntüler ve komut dosyası girişine yankı sağlar.
 
-Yapı ile ilgili ek ayrıntıları göstermek için [Ilerleme mesajlarını Yazdır (/verbose)](verbose-print-progress-messages.md) seçeneğini kullanabilirsiniz.
+Yapı yla ilgili ek ayrıntıları görüntülemek için [Yazdırma İlerleme İletileri (/VERBOSE)](verbose-print-progress-messages.md) seçeneğini kullanabilirsiniz.
 
-BAĞLANTı sorunları hatası ve uyarı iletileri ile LNK*nnnn*. Bu hata ön eki ve sayı aralığı LıB, DUMPBIN ve EDITBIN tarafından da kullanılır.
+LNK*nnnn*şeklinde LINK sorunları hata ve uyarı iletileri . Bu hata öneki ve sayı aralığı LIB, DUMPBIN ve EDITBIN tarafından da kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

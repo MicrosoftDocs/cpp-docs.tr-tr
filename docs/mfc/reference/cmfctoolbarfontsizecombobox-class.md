@@ -1,5 +1,5 @@
 ---
-title: CMFCToolBarFontSizeComboBox sınıfı
+title: CMFCToolBarFontSizeComboBox Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCToolBarFontSizeComboBox
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CMFCToolBarFontSizeComboBox [MFC], RebuildFontSizes
 - CMFCToolBarFontSizeComboBox [MFC], SetTwipSize
 ms.assetid: 72e0c44c-6a0e-4194-a71f-ab64e3afb9b5
-ms.openlocfilehash: 43832f6c9b02c43fbe4a05cbea3add8783150113
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 09811b14ed805b1965015a32a25c0b67c947ff4e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62218018"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81358302"
 ---
-# <a name="cmfctoolbarfontsizecombobox-class"></a>CMFCToolBarFontSizeComboBox sınıfı
+# <a name="cmfctoolbarfontsizecombobox-class"></a>CMFCToolBarFontSizeComboBox Sınıfı
 
-Bir yazı tipi boyutu seçmesini sağlayan bir birleşik giriş kutusu denetimi içeren bir araç çubuğu düğmesi.
+Kullanıcının yazı tipi boyutunu seçmesini sağlayan açılan kutu denetimi içeren araç çubuğu düğmesi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,57 +35,57 @@ class CMFCToolBarFontSizeComboBox : public CMFCToolBarComboBoxButton
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarFontSizeComboBox::CMFCToolBarFontSizeComboBox](#cmfctoolbarfontsizecombobox)|Oluşturur bir `CMFCToolBarFontSizeComboBox` nesne.|
+|[CMFCToolBarFontSizeComboBox::CMFCToolBarFontSizeComboBox](#cmfctoolbarfontsizecombobox)|Bir `CMFCToolBarFontSizeComboBox` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarFontSizeComboBox::GetTwipSize](#gettwipsize)|Seçili yazı tipi boyutunu twip cinsinden döndürür.|
-|[CMFCToolBarFontSizeComboBox::RebuildFontSizes](#rebuildfontsizes)|Tüm desteklenen yazı tipi boyutlarını belirtilen bir yazı tipi birleşik giriş kutusu liste doldurur.|
-|[CMFCToolBarFontSizeComboBox::SetTwipSize](#settwipsize)|Yazı tipi boyutunu twip cinsinden ayarlar.|
+|[CMFCToolBarFontSizeComboBox::GetTwipSize](#gettwipsize)|Seçili yazı tipi boyutunu twip'lerde döndürür.|
+|[CMFCToolBarFontSizeComboBox::RebuildFontSizes](#rebuildfontsizes)|Açılan kutu listesini, belirli bir yazı tipi için desteklenen tüm yazı tipi boyutlarıyla doldurur.|
+|[CMFCToolBarFontSizeComboBox::SetTwipSize](#settwipsize)|Yazı tipi boyutunu twip olarak ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanabileceğiniz bir `CMFCToolBarFontSizeComboBox` nesnesi ile birlikte bir [CMFCToolBarFontComboBox sınıfı](../../mfc/reference/cmfctoolbarfontcombobox-class.md) yazı tipi ve yazı tipi boyutu seçmesini etkinleştirmek için nesne.
+Bir `CMFCToolBarFontSizeComboBox` kullanıcının yazı tipi ve yazı tipi boyutunu seçmesini sağlamak için [cmfcToolBarFontComboBox Sınıf](../../mfc/reference/cmfctoolbarfontcombobox-class.md) nesnesi ile birlikte bir nesne kullanabilirsiniz.
 
-Bir yazı tipi birleşik giriş kutusu düğmesi eklediğiniz bir araç çubuğuna bir yazı tipi boyutu birleşik giriş kutusu düğmesi ekleyebilirsiniz. Daha fazla bilgi için [CMFCToolBarFontComboBox sınıfı](../../mfc/reference/cmfctoolbarfontcombobox-class.md).
+Yazı tipi açılan kutu düğmesi eklediğinizde, bir araç çubuğuna yazı tipi boyutu açılan kutu düğmesi ekleyebilirsiniz. Daha fazla bilgi için [CMFCToolBarFontComboBox Class'a](../../mfc/reference/cmfctoolbarfontcombobox-class.md)bakın.
 
-Kullanıcı, yeni bir yazı tipi seçtiğinde bir `CMFCToolBarFontComboBox` nesne doldurabilirsiniz yazı tipi boyutu birleşik giriş kutusu, yazı tipi için desteklenen boyutları kullanarak [CMFCToolBarFontSizeComboBox::RebuildFontSizes](#rebuildfontsizes) yöntemi.
+Kullanıcı bir nesnede yeni bir `CMFCToolBarFontComboBox` yazı tipi seçtiğinde, [CMFCToolBarFontSizeComboBox::RebuildFontSizes](#rebuildfontsizes) yöntemini kullanarak yazı tipi boyutu açılan kutusunu bu yazı tipi için desteklenen boyutlarla doldurabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCToolBarFontSizeComboBox` yapılandırmak için sınıf bir `CMFCToolBarFontSizeComboBox` nesne. Örneğin, metin kutusundan twip cinsinden yazı tipi boyutunu almak, tüm geçerli verilen yazı tipi boyutlarını ile yazı tipi boyutu birleşik giriş kutusu doldurun ve yazı tipi boyutunu twip cinsinden belirtin gösterilmektedir. Bu kod parçacığı parçasıdır [Word paneli örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, bir `CMFCToolBarFontSizeComboBox` `CMFCToolBarFontSizeComboBox` nesneyi yapılandırmak için sınıfta çeşitli yöntemlerin nasıl kullanılacağını gösterir. Örnek, metin kutusundan twip'lerde yazı tipi boyutununasıl alınca, yazı tipi boyutu açılan kutusunu verilen yazı tipinin tüm geçerli boyutlarıyla nasıl doldurup twip'lerde yazı tipi boyutunu nasıl belirtileceğini göstermektedir. Bu kod parçacığı Word Pad [örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_WordPad#8](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontsizecombobox-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)
 
-[CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)
+[Cmfctoolbarcomboboxbutton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)
 
 [CMFCToolBarFontSizeComboBox](../../mfc/reference/cmfctoolbarfontsizecombobox-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxtoolbarfontcombobox.h
+**Üstbilgi:** afxtoolbarfontcombobox.h
 
-##  <a name="cmfctoolbarfontsizecombobox"></a>  CMFCToolBarFontSizeComboBox::CMFCToolBarFontSizeComboBox
+## <a name="cmfctoolbarfontsizecomboboxcmfctoolbarfontsizecombobox"></a><a name="cmfctoolbarfontsizecombobox"></a>CMFCToolBarFontSizeComboBox::CMFCToolBarFontSizeComboBox
 
-Oluşturur bir `CMFCToolBarFontSizeComboBox` nesne.
+Bir `CMFCToolBarFontSizeComboBox` nesne inşa eder.
 
 ```
 CMFCToolBarFontSizeComboBox();
 ```
 
-##  <a name="gettwipsize"></a>  CMFCToolBarFontSizeComboBox::GetTwipSize
+## <a name="cmfctoolbarfontsizecomboboxgettwipsize"></a><a name="gettwipsize"></a>CMFCToolBarFontSizeComboBox::GetTwipSize
 
-Bir yazı tipi boyutu açılan kutunun metin kutusundan twip cinsinden yazı tipi boyutunu alır.
+Yazı tipi boyutu açılan kutusunun metin kutusundan twip'lerde yazı tipi boyutunu alır.
 
 ```
 int GetTwipSize() const;
@@ -93,11 +93,11 @@ int GetTwipSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri pozitif ise twip yazı tipi boyutu var. Açılan kutunun metin kutusu boşsa, -1'dir. Bir hata oluşursa, -2 ' dir.
+İade değeri pozitifse, twip'deki yazı tipi boyutudur. Açılan kutunun metin kutusu boşsa -1'dir. Bir hata oluşursa -2'dir.
 
-##  <a name="rebuildfontsizes"></a>  CMFCToolBarFontSizeComboBox::RebuildFontSizes
+## <a name="cmfctoolbarfontsizecomboboxrebuildfontsizes"></a><a name="rebuildfontsizes"></a>CMFCToolBarFontSizeComboBox::RebuildFontSizes
 
-Bir yazı tipi boyutu birleşik giriş kutusu, tüm geçerli verilen yazı tipi boyutlarını ile doldurur.
+Bir yazı tipi boyutu açılan kutusunu, verilen yazı tipinin tüm geçerli boyutlarıyla doldurur.
 
 ```
 void RebuildFontSizes(const CString& strFontName);
@@ -106,15 +106,15 @@ void RebuildFontSizes(const CString& strFontName);
 ### <a name="parameters"></a>Parametreler
 
 *strFontName*<br/>
-[in] Bir yazı tipi adı belirtir.
+[içinde] Bir yazı tipi adı belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Seçimi bir yazı tipi birleşik giriş kutusunda arasında bir yazı tipi boyutu birleşik giriş kutusu gibi eşitlemek istediğiniz zaman bu işlevi çağırın. bir [CMFCToolBarFontComboBox sınıfı](../../mfc/reference/cmfctoolbarfontcombobox-class.md).
+Bir yazı tipi açılan kutusunda seçim ve [CMFCToolBarFontComboBox Sınıfı](../../mfc/reference/cmfctoolbarfontcombobox-class.md)gibi yazı tipi boyutu açılan kutusu arasında eşitlemek istediğinizde bu işlevi arayın.
 
-##  <a name="settwipsize"></a>  CMFCToolBarFontSizeComboBox::SetTwipSize
+## <a name="cmfctoolbarfontsizecomboboxsettwipsize"></a><a name="settwipsize"></a>CMFCToolBarFontSizeComboBox::SetTwipSize
 
-Yuvarlar belirtilen değerle birleşik giriş kutusunda seçili boyutu (twip cinsinden) en yakın boyutu noktaları ve ardından ayarlar için boyutu.
+Belirtilen boyutu (twip cinsinden) noktalardaki en yakın boyuta yuvarlar ve ardından açılan kutuda seçili boyutu bu değere ayarlar.
 
 ```
 void SetTwipSize(int nSize);
@@ -123,11 +123,11 @@ void SetTwipSize(int nSize);
 ### <a name="parameters"></a>Parametreler
 
 *nSize*<br/>
-[in] Ayarlanacak yazı tipi boyutu (twip) belirtir.
+[içinde] Ayarlamak için yazı tipi boyutunu (twip olarak) belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırarak, daha sonra bir önceki geçerli yazı tipi boyutunu alabilirsiniz [CMFCToolBarFontSizeComboBox::GetTwipSize](#gettwipsize) yöntemi.
+Önceki geçerli yazı tipi boyutunu daha sonra [CMFCToolBarFontSizeComboBox::GetTwipSize](#gettwipsize) yöntemini arayarak alabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -138,4 +138,4 @@ void SetTwipSize(int nSize);
 [CMFCToolBarComboBoxButton Sınıfı](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)<br/>
 [CMFCFontInfo Sınıfı](../../mfc/reference/cmfcfontinfo-class.md)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
-[İzlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+[İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)

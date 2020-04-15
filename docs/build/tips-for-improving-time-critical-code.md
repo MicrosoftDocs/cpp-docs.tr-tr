@@ -30,132 +30,132 @@ helpviewer_keywords:
 - _lfind function
 - heap allocation, time-critical code performance
 ms.assetid: 3e95a8cc-6239-48d1-9d6d-feb701eccb54
-ms.openlocfilehash: 828a0c49440b4fd2e1f3ae10514ffb86b2315ebd
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 039b86eec024daf8e3473bba5d89f190507f3cfd
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498117"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81335450"
 ---
 # <a name="tips-for-improving-time-critical-code"></a>Zamana Bağlı Kodu Geliştirme İpuçları
 
-Hızlı kod yazma, uygulamanızın tüm yönlerini ve sistemle etkileşimini anlamak için gereklidir. Bu konuda, kodunuzun zaman kritik bölümlerinin önemli olmasını sağlamanıza yardımcı olmak için daha belirgin kodlama tekniklerinden bazılarının alternatifleri önerilir.
+Hızlı kod yazmak, uygulamanızın tüm yönlerini ve sistemle nasıl etkileşimde olduğunu anlamanızı gerektirir. Bu konu, kodunuzu zaman açısından kritik bölümlerinin tatmin edici bir şekilde performans göstermesini sağlamanıza yardımcı olmak için daha belirgin kodlama tekniklerinden bazılarına alternatifler önerir.
 
-Özetlemek gerekirse, zaman açısından kritik kodu iyileştirmek için şunları yapmanız gerekir:
+Özetlemek gerekirse, zaman açısından kritik kodu geliştirmek şunları gerektirir:
 
-- Programınızın hangi bölümlerinin hızlı olması gerektiğini öğrenin.
+- Programınızın hangi bölümlerinin hızlı olması gerektiğini bilin.
 
-- Kodunuzun boyutunu ve hızını öğrenin.
+- Kodunuzu boyutunu ve hızını bilin.
 
-- Yeni özelliklerin maliyetini öğrenin.
+- Yeni özelliklerin maliyetini bilin.
 
-- İşi gerçekleştirmek için gereken en düşük işi öğrenin.
+- İşi başarmak için gereken minimum işi bilin.
 
-Kodunuzun performansı hakkında bilgi toplamak için performans izleyicisi 'ni (Perfmon. exe) kullanabilirsiniz.
+Kodunuzu performansı hakkında bilgi toplamak için performans monitörünü (perfmon.exe) kullanabilirsiniz.
 
-## <a name="sections-in-this-article"></a>Bu makaledeki bölümler
+## <a name="sections-in-this-article"></a>Bu Makaledeki Bölümler
 
-- [Önbellek Isabetsizliği ve sayfa hataları](#_core_cache_hits_and_page_faults)
+- [Önbellek Misses ve Sayfa Hataları](#_core_cache_hits_and_page_faults)
 
-- [Sıralama ve arama](#_core_sorting_and_searching)
+- [Sıralama ve Arama](#_core_sorting_and_searching)
 
-- [MFC ve sınıf kitaplıkları](#_core_mfc_and_class_libraries)
+- [MFC ve Sınıf Kütüphaneleri](#_core_mfc_and_class_libraries)
 
-- [Paylaşılan kitaplıklar](#vcovrsharedlibraries)
+- [Paylaşılan Kitaplıklar](#vcovrsharedlibraries)
 
-- [Yığınlar](#_core_heaps)
+- [Yığın](#_core_heaps)
 
 - [İş Parçacıkları](#_core_threads)
 
-- [Küçük çalışma kümesi](#_core_small_working_set)
+- [Küçük Çalışma Seti](#_core_small_working_set)
 
-##  <a name="_core_cache_hits_and_page_faults"></a>Önbellek Isabetsizliği ve sayfa hataları
+## <a name="cache-misses-and-page-faults"></a><a name="_core_cache_hits_and_page_faults"></a>Önbellek Misses ve Sayfa Hataları
 
-Hem iç hem de dış önbellekte bulunmayan önbellek isabetlerinin yanı sıra sayfa hataları (program yönergeleri ve verileri için ikincil depolamaya giden) bir programın performansını yavaşlatır.
+Cevapsız önbellek isabetleri, hem iç hem de dış önbellek, hem de sayfa hataları (program talimatları ve veriler için ikincil depolama gidiyor) bir programın performansını yavaşlatır.
 
-CPU önbelleğinde isabet, programınızın 10-20 saat döngülerine ücret verebilir. Dış önbellek okuması maliyet 20-40 saat döngülerine sahip olabilir. Bir sayfa hatası 1.000.000 saat döngülerine sahip olabilir (500.000.000 yönergelerini/saniyeyi ve bir sayfa hatası için 2 milisaniyelik saati işleyen bir işlemcinin olduğu varsayılarak). Bu nedenle, eksik önbellek isabetlerinin ve sayfa hatalarının sayısını azaltacak kod yazmak için program yürütmesinin en iyi şekilde ilgilenmiş olması gerekir.
+CPU önbellek isabet programınızı 10-20 saat döngüleri mal olabilir. Harici önbellek isabet 20-40 saat döngüleri mal olabilir. Bir sayfa hatası bir milyon saat döngüsüne mal olabilir (bir sayfa hatası için 500 milyon talimat/saniye ve 2 milisaniyelik bir süre işleyen bir işlemci varsayarsak). Bu nedenle, cevapsız önbellek isabetleri ve sayfa hataları sayısını azaltacak kod yazmak için program yürütme en iyi yararınadır.
 
-Yavaş programların bir nedeni, daha fazla sayfa hatası sürme veya önbelleği gerekenden daha sık kaçırmalarıdır. Bunu önlemek için, ilgili şeyleri bir araya getirirken, doğru başvuru olarak veri yapılarını kullanmak önemlidir. Bazen büyük ölçüde başvuru olması nedeniyle harika bir şekilde görünen bir veri yapısı, bazı durumlarda ters değer doğru olabilir. İki örnek aşağıda verilmiştir:
+Yavaş programların bir nedeni, daha fazla sayfa hatası almak veya daha sık gerekli önbelleği özledim olmasıdır. Bunu önlemek için, ilgili şeyleri bir arada tutmak anlamına gelen iyi referans yerelliğine sahip veri yapılarını kullanmak önemlidir. Bazen harika görünen bir veri yapısı, referansın zayıf yerelliği nedeniyle korkunç olduğu ortaya çıkar, bazen ise tersi doğrudur. Aşağıda iki örnek verilmiştir:
 
-- Dinamik olarak ayrılan bağlantılı listeler, bir öğe ararken veya bir listenin sonuna kadar geçiş yaparken, atlanan her bağlantı önbelleği kaçırarak veya bir sayfa hatasına neden olabileceği için program performansını azaltabilir. Basit dizileri temel alan bir liste uygulama, daha iyi önbelleğe alma ve daha az sayfa hatası nedeniyle bile daha hızlı olabilir; böylece dizi büyüdükçe daha hızlı olabilir.
+- Dinamik olarak ayrılmış bağlantılı listeler program performansını azaltabilir, çünkü bir öğeyi aradığınızda veya bir listeyi sonuna kadar geçtiğinde, atlanan her bağlantı önbelleği kaçırabilir veya bir sayfa hatasına neden olabilir. Basit dizilere dayalı bir liste uygulaması aslında daha iyi önbelleğe alma ve hatta daha az sayfa hataları nedeniyle çok daha hızlı olabilir - dizi büyümek zor olurdu gerçeği için izin, hala daha hızlı olabilir.
 
-- Dinamik olarak ayrılan bağlantılı listeler kullanan karma tablolar, performansı düşürebilir. Uzantıya göre, içeriklerini depolamak için dinamik olarak ayrılan bağlantılı listeleri kullanan karma tablolar önemli ölçüde daha kötüleşme edebilir. Aslında, son analizde, bir dizi aracılığıyla basit bir doğrusal arama gerçekten daha hızlı olabilir (koşullara bağlı olarak). Dizi tabanlı karma tablolar (yani, "kapalı karma" olarak adlandırılır), genellikle üstün performansa sahip olan, sık olmayan bir uygulama olur.
+- Dinamik olarak ayrılmış bağlantılı listeleri kullanan karma tablolar performansı düşürebilir. Uzantısı olarak, içeriklerini depolamak için dinamik olarak ayrılmış bağlantılı listeleri kullanan karma tablolar önemli ölçüde daha kötü performans gösterebilir. Aslında, son çözümlemede, bir dizi üzerinden basit bir doğrusal arama aslında (koşullara bağlı olarak) daha hızlı olabilir. Dizi tabanlı karma tablolar (sözde "kapalı karma"), sık sık üstün performansa sahip genellikle gözden kaçan bir uygulamadır.
 
-##  <a name="_core_sorting_and_searching"></a>Sıralama ve arama
+## <a name="sorting-and-searching"></a><a name="_core_sorting_and_searching"></a>Sıralama ve Arama
 
-Sıralama, çok sayıda tipik işlem ile karşılaştırıldığında doğal olarak zaman alır. Gereksiz yavaşlama yapmanın en iyi yolu, önemli zamanlarda sıralama yapmaktan kaçınmaktır. Şunları yapabilirsiniz:
+Sıralama, birçok tipik işlemle karşılaştırıldığında doğal olarak zaman alıcıdır. Gereksiz yavaşlamayı önlemenin en iyi yolu kritik zamanlarda sıralamayapmaktan kaçınmaktır. Şunları yapabileceksiniz:
 
-- Performans açısından kritik olmayan bir zamana kadar sıralamayı erteleyin.
+- Sıralamayı performans açısından kritik olmayan bir zamana kadar ertele.
 
-- Verileri daha önce ve performans açısından kritik olmayan bir zamanda sıralayın.
+- Verileri daha önceki, performans açısından kritik olmayan bir zamanda sıralayın.
 
-- Yalnızca gerçekten sıralama gerektiren verilerin bir kısmını sıralayın.
+- Verilerin yalnızca gerçekten ayıklanması gereken kısmını sıralayın.
 
-Bazen listeyi sıralanmış sırada oluşturabilirsiniz. Dikkatli olun, çünkü verileri sıralanmış düzende eklemeniz gerekiyorsa, daha karmaşık bir veri yapısına başvuru, ön bellek isabetsizlik ve sayfa hatalarına göre daha karmaşık bir veri yapısı gerekebilir. Her durumda işe yarar bir yaklaşım yoktur. Birkaç yaklaşım deneyin ve farklılıkları ölçün.
+Bazen, listeyi sıralanmış sırayla oluşturabilirsiniz. Dikkatli olun, çünkü verileri sıralı sırayla eklemeniz gerekiyorsa, önbellek eksikliklerine ve sayfa hatalarına yol açan, başvurunun kötü yerelliğine sahip daha karmaşık bir veri yapısına ihtiyaç duyabilirsiniz. Her durumda işe yarayan bir yaklaşım yoktur. Birkaç yaklaşım deneyin ve farklılıkları ölçün.
 
 Sıralama için bazı genel ipuçları aşağıda verilmiştir:
 
-- Hataları en aza indirmek için bir stok sıralaması kullanın.
+- Hataları en aza indirmek için stok sıralaması kullanın.
 
-- Sıralamanın karmaşıklığını azaltmak için başlamadan önce yapabileceğiniz tüm işler de çalışır. Verilerinizin üzerinde bir kerelik geçiş, karşılaştırmaları basitleştirir ve O (n günlük n) ile O (n) arasında sıralamayı azaltır, neredeyse kesinlikle devam edersiniz.
+- Bu tür karmaşıklığı azaltmak için önceden yapabileceğiniz herhangi bir iş değerlidir. Verilerinizin üzerinden tek seferlik bir geçiş karşılaştırmaları basitleştirir ve O(n log n)'den O(n)'e sıralamayı azaltırsa, kesinlikle öne geçecektir.
 
-- Sıralama algoritmasındaki başvurunun ve üzerinde çalışmasını bekleyen verilerin yer aldığı yeri düşünün.
+- Sıralama algoritmasının başvuru nun bulunduğu yer ve çalışmasını beklediğiniz verileri düşünün.
 
-Sıralamaya kıyasla daha az sayıda arama vardır. Arama zaman açısından önemliyse, bir ikili arama veya karma tablo araması neredeyse her zaman en iyisidir, ancak sıralamada olduğu gibi, yerleşim göz önünde bulundurmanız gerekir. Küçük bir dizi üzerinden doğrusal arama, sayfa hatalarına veya önbellek isabetlerine neden olan çok sayıda işaretçileri olan bir veri yapısı aracılığıyla bir ikili aramadan daha hızlı olabilir.
+Aramalar için sıralamadan daha az alternatif vardır. Arama zaman açısından kritikse, ikili arama veya karma tablo araması hemen hemen her zaman en iyisidir, ancak sıralamada olduğu gibi, yerelliği aklınızda tutmanız gerekir. Küçük bir dizide doğrusal arama, sayfa hatalarına veya önbellek kaçırmalarına neden olan çok sayıda işaretçiiçeren bir veri yapısı nda ikili aramadan daha hızlı olabilir.
 
-##  <a name="_core_mfc_and_class_libraries"></a>MFC ve sınıf kitaplıkları
+## <a name="mfc-and-class-libraries"></a><a name="_core_mfc_and_class_libraries"></a>MFC ve Sınıf Kütüphaneleri
 
-Microsoft Foundation Sınıfları (MFC) kod yazmayı büyük ölçüde basitleştirir. Zaman açısından kritik kod yazarken, bazı sınıflarda bulunan ek yükün farkında olmanız gerekir. Zaman açısından kritik kodunuzun, performans gereksinimlerinizi karşılayıp karşılamadığını görmek için kullandığı MFC kodunu inceleyin. Aşağıdaki listede, bilmeniz gereken MFC sınıfları ve işlevleri tanımlanmaktadır:
+Microsoft Hazırlık Sınıfları (MFC) kod yazmayı büyük ölçüde basitleştirebilir. Zaman açısından kritik kod yazarken, bazı sınıfların doğasında bulunan ek yükün farkında olmalısınız. Performans gereksinimlerinizi karşılayıp karşılamadığını görmek için zaman açısından kritik kodunuzu kullandığı MFC kodunu inceleyin. Aşağıdaki liste, dikkat edilmesi gereken MFC sınıflarını ve işlevlerini tanımlar:
 
-- `CString`MFC, dinamik olarak bir [CString](../atl-mfc-shared/reference/cstringt-class.md) için bellek ayırmak üzere C çalışma zamanı kitaplığını çağırır. Genel olarak, `CString` diğer tüm dinamik olarak ayrılan dizeler kadar etkilidir. Dinamik olarak ayrılan herhangi bir dizede olduğu gibi, dinamik ayırma ve yayınlama ek yüküne sahiptir. Genellikle, yığındaki basit `char` bir dizi aynı amaca sunabilir ve daha hızlıdır. Sabit bir dizeyi `CString` depolamak için kullanmayın. Bunun yerine `const char *` kullanın. Bir `CString` nesneyle gerçekleştirdiğiniz tüm işlemler bazı ek yüke sahiptir. Çalışma zamanı kitaplık [dizesi işlevlerinin](../c-runtime-library/string-manipulation-crt.md) kullanılması daha hızlı olabilir.
+- `CString`MFC, [cstring](../atl-mfc-shared/reference/cstringt-class.md) için belleği dinamik olarak ayırmak için C çalışma zamanı kitaplığını çağırır. Genel olarak `CString` konuşursak, diğer dinamik olarak ayrılmış dize kadar verimlidir. Herhangi bir dinamik ayrılmış dize olduğu gibi, dinamik ayırma ve serbest bırakma yükü vardır. Genellikle, yığın `char` üzerinde basit bir dizi aynı amaca hizmet edebilir ve daha hızlıdır. Sabit bir dize depolamak için a `CString` kullanmayın. Bunun yerine `const char *` kullanın. Bir nesneyle gerçekleştirdiğiniz herhangi bir `CString` işlemin bazı genel merkezleri vardır. Çalışma zamanı kitaplık [dize işlevlerini](../c-runtime-library/string-manipulation-crt.md) kullanmak daha hızlı olabilir.
 
-- `CArray`Bir [CArray](../mfc/reference/carray-class.md) , normal bir dizinin olmadığı esnekliği sağlar, ancak programınız bunun için gerekli olmayabilir. Dizi için belirli sınırları biliyorsanız bunun yerine genel sabit bir dizi kullanabilirsiniz. Kullanıyorsanız, boyutunu oluşturmak için `CArray::SetSize` kullanın ve bir yeniden tahsisat gerektiğinde artarak büyüdüğü öğe sayısını belirtin. `CArray` Aksi takdirde, öğeleri eklemek, dizinizi sık aralıklarla yeniden tahsis edebilir ve kopyalanabilir, bu da verimsiz olan ve belleği parçalara ayırabilecek. Ayrıca bir diziye bir öğe eklerseniz, `CArray` sonraki öğeleri bellekte taşıdıysanız ve diziyi büyütmeniz gerekebilir. Bu eylemler, önbellek isabetsizliği ve sayfa hatalarına neden olabilir. MFC 'nin kullandığı koda bakarsanız, performansı artırmak için senaryonuza özgü bir şey yazabilmenize bakabilirsiniz. , Örneğin, bir şablon `CArray` olduğundan,belirlitürleriçinUzmanlıklarsağlayabilirsiniz.`CArray`
+- `CArray`[CArray,](../mfc/reference/carray-class.md) normal bir dizinin olmadığı esneklik sağlar, ancak programınızın buna ihtiyacı olmayabilir. Dizi için belirli sınırları biliyorsanız, bunun yerine genel bir sabit dizi kullanabilirsiniz. Kullanıyorsanız, `CArray`boyutunu `CArray::SetSize` oluşturmak ve yeniden ayırma gerektiğinde büyüyecek öğelerin sayısını belirtmek için kullanın. Aksi takdirde, öğeler eklemek dizinizin sık sık yeniden tahsis edilmesine ve kopyalanmasına neden olabilir, bu da verimsizdir ve belleği parçalayabilir. Ayrıca, bir öğeyi bir diziye eklerseniz, `CArray` sonraki öğeleri bellekte taşır ve diziyi büyütmeniz gerekebilir. Bu eylemler önbellek misses ve sayfa hataları neden olabilir. MFC'nin kullandığı koda bakarsanız, performansı artırmak için senaryonuza daha özel bir şey yazabileceğinizi görebilirsiniz. Örneğin `CArray` bir şablon olduğundan, belirli `CArray` türler için uzmanlıklar sağlayabilirsiniz.
 
-- `CList`[CList](../mfc/reference/clist-class.md) , benzer bir şekilde bağlanmış bir liste olduğundan, öğe ekleme işlemi baş, kuyruklu ve listedeki bilinen bir konumda (`POSITION`) hızlı bir şekilde. Değere veya dizine göre öğe aramak için sıralı bir arama gerekir, ancak liste uzunsa bu yavaş olabilir. Kodunuz, kullanmayı `CList`yeniden düşünmek isteyebileceğiniz, daha zengin bağlantılı bir liste gerektirmiyorsa. Listedir bağlantılı bir liste kullanmak, tüm işlemler için ek bir işaretçi ve bu işaretçi için bellek güncelleştirme yükünü kaydeder. Ek bellek harika değildir, ancak önbellek isabetsizliği veya sayfa hataları için başka bir fırsattır.
+- `CList`[CList](../mfc/reference/clist-class.md) iki kat bağlantılı bir listedir, bu nedenle eleman ekleme, listede ki baş, kuyruk ve bilinen bir konumda ()`POSITION`hızlıdır. Bir öğeyi değere veya dizine göre aramak, liste uzunsa yavaş olabilecek sıralı bir arama gerektirir. Kodunuz iki kat bağlantılı bir liste gerektirmiyorsa, `CList`'yi kullanarak yeniden düşünmek isteyebilirsiniz. Tek başına bağlı bir liste kullanmak, tüm işlemler için ek bir işaretçiyi güncelleştirmenin yanı sıra işaretçi için bellek kaydeder. Ek bellek büyük değildir, ancak önbellek misses veya sayfa hataları için başka bir fırsattır.
 
-- `IsKindOf`Bu işlev, çok sayıda çağrı oluşturabilir ve farklı veri alanlarında çok fazla belleğe erişebilir, bu da hatalı başvuru yer kaplar. Hata ayıklama derlemesi (örneğin, bir onaylama çağrısında) için kullanışlıdır, ancak bunu bir yayın derlemesi içinde kullanmaktan kaçının.
+- `IsKindOf`Bu işlev birçok çağrı oluşturabilir ve farklı veri alanlarında çok fazla belleğe erişebilir ve bu da başvurunun kötü bir yerelliğine yol açabilir. Hata ayıklama yapısı (örneğin, bir ASSERT çağrısında) için yararlıdır, ancak bir sürüm yapısında kullanmaktan kaçınmaya çalışın.
 
-- `PreTranslateMessage`Belirli `PreTranslateMessage` bir Windows ağacının farklı klavye hızlandırıcılara ihtiyacı olduğunda veya ileti göndericisinin ileti işleme eklemeniz gerektiğinde kullanın. `PreTranslateMessage`MFC dağıtım iletilerini değiştirir. Geçersiz kıldıysanız `PreTranslateMessage`, bunu yalnızca gerekli düzeyde yapın. Örneğin, yalnızca belirli bir görünümün alt öğelerine giden `CMainFrame::PreTranslateMessage` iletilerde ilgileniyorsanız, üzerine yazmak gerekli değildir. Bunun `PreTranslateMessage` yerine görünüm sınıfı için geçersiz kılın.
+- `PreTranslateMessage`Belirli `PreTranslateMessage` bir pencere ağacının farklı klavye hızlandırıcılarına ihtiyacı olduğunda veya ileti iletisi iletisi iletisi iletisini ileti pompasına eklemeniz gerektiğinde kullanın. `PreTranslateMessage`MFC gönderme iletilerini değiştirir. Geçersiz kılarsanız, `PreTranslateMessage`bunu yalnızca gereken düzeyde yapın. Örneğin, yalnızca belirli bir görünümdeki çocuklara giden iletilerle ilgileniyorsanız geçersiz kılmanız `CMainFrame::PreTranslateMessage` gerekmez. Bunun `PreTranslateMessage` yerine görünüm sınıfı için geçersiz kılma.
 
-   Herhangi bir pencereye gönderilen iletileri işlemek için kullanarak `PreTranslateMessage` normal dağıtım yolunu atlamayın. Bu amaçla [pencere yordamlarını](../mfc/registering-window-classes.md) ve MFC ileti eşlemelerini kullanın.
+   Herhangi bir pencereye gönderilen herhangi `PreTranslateMessage` bir iletiyi işlemek için kullanarak normal gönderme yolunu aşmayın. Bu amaçla [pencere yordamlarını](../mfc/registering-window-classes.md) ve MFC ileti eşlemlerini kullanın.
 
-- `OnIdle`Boştaki olaylar, `WM_KEYDOWN` ve `WM_KEYUP` olayları gibi beklenmez. Süreölçerler, kodunuzun tetiklenmesi için daha verimli bir yol olabilir. Yanlış iletiler oluşturarak `OnIdle` veya her zaman bir geçersiz kılmaya `OnIdle`dönerek `TRUE` , iş parçacığınız uyku moduna neden olmayacak şekilde, tekrar tekrar çağrılabilir şekilde zorlamayın. Bir zamanlayıcı veya ayrı bir iş parçacığı daha uygun olabilir.
+- `OnIdle`Boşta kalan olaylar, ara `WM_KEYDOWN` lar ve `WM_KEYUP` olaylar gibi beklemediğiniz zamanlarda oluşabilir. Zamanlayıcılar kodunuzu tetiklemek için daha etkili bir yol olabilir. Yanlış iletiler oluşturarak veya iş parçacığınızın uyku moduna `TRUE` girmesine asla `OnIdle`izin vermeyecek olan geçersiz kılmadan her zaman geri dönerek tekrar tekrar çağrılmaya zorlamayın. `OnIdle` Yine, bir zamanlayıcı veya ayrı bir iş parçacığı daha uygun olabilir.
 
-##  <a name="vcovrsharedlibraries"></a>Paylaşılan kitaplıklar
+## <a name="shared-libraries"></a><a name="vcovrsharedlibraries"></a>Paylaşılan Kitaplıklar
 
-Kod yeniden kullanımı tercih edilir. Bununla birlikte, başka birinin kodunu kullanacaksanız, performansın sizin için önemli olduğu durumlarda tam olarak ne yaptığını bildiğinizden emin olmalısınız. Bunu anlamanın en iyi yolu, kaynak kodu aracılığıyla veya PView veya Performance Monitor gibi araçlarla ölçüleyerek.
+Kod yeniden kullanımı arzu edilir. Ancak, başka birinin kodunu kullanacaksanız, performansın sizin için kritik öneme geldiği durumlarda tam olarak ne yaptığını bildiğinizden emin olmalısınız. Bunu anlamanın en iyi yolu kaynak kodu geçmek veya PView veya Performance Monitor gibi araçlarla ölçüm yapmaktır.
 
-##  <a name="_core_heaps"></a>Yığınlar
+## <a name="heaps"></a><a name="_core_heaps"></a>Yığın
 
-Birden çok Heap 'yi dikkatli kullanın. `HeapCreate` İle`HeapAlloc` oluşturulan ek Heap 'ler, ilgili bir ayırma kümesini yönetmenizi ve sonra atmayı sağlar. Çok fazla bellek oluşturmayın. Birden çok Heap kullanıyorsanız, başlangıçta taahhüt edilen bellek miktarına özel bir dikkat ödeyin.
+Takdir yetkisiile birden fazla yığın kullanın. İlgili bir dizi `HeapCreate` ayırmayı yönetmenize ve `HeapAlloc` elden çıkarmanıza izin vermek için oluşturulan ek yığınlar. Çok fazla hafıza verme. Birden çok yığın kullanıyorsanız, başlangıçta işlenen bellek miktarına özel olarak dikkat edin.
 
-Birden çok Heap yerine, kodunuz ve varsayılan yığın arasında arabirim sağlamak için yardımcı işlevleri kullanabilirsiniz. Yardımcı işlevler, uygulamanızın performansını iyileştirebilecek özel ayırma stratejilerini kolaylaştırır. Örneğin, sık sık küçük ayırmalar gerçekleştirirseniz, bu ayırmaları varsayılan yığının bir bölümü için yerelleştirmek isteyebilirsiniz. Büyük bir bellek bloğu ayırabilir ve sonra bu bloğundan alt ayırmak için bir yardımcı işlevi kullanabilirsiniz. Bunu yaparsanız, ayırma varsayılan yığından geldiği için kullanılmayan belleğe sahip ek yığınlara sahip olmayacaktır.
+Birden çok yığın yerine, kodunuz ve varsayılan yığın arasında ara birim için yardımcı işlevleri kullanabilirsiniz. Yardımcı işlevler, uygulamanızın performansını artırabilecek özel ayırma stratejilerini kolaylaştırır. Örneğin, sık sık küçük ayırmalar gerçekleştirirseniz, bu ayırmaları varsayılan yığının bir bölümüne yerelleştirmek isteyebilirsiniz. Büyük bir bellek bloğu ayırabilir ve sonra bu bloktan alt ayırmak için bir yardımcı işlev kullanabilirsiniz. Bunu yaparsanız, ayırma varsayılan yığından çıktığı için kullanılmayan bellekle ek yığınlar olmaz.
 
-Ancak, bazı durumlarda, varsayılan yığını kullanmak başvurunun yer aldığı yeri azaltabilir. Nesneleri öbekten yığına taşımaya yönelik etkileri ölçmek için Işlem Görüntüleyicisi, Spy + + ya da performans Izleyicisini kullanın.
+Ancak bazı durumlarda, varsayılan yığın kullanmak başvurunun yerelliğini azaltabilir. Nesneleri yığından yığına taşımanın etkilerini ölçmek için Process Viewer, Spy++veya Performance Monitor'u kullanın.
 
-Yığındaki her ayırma için hesap yapabilmeniz için Heap 'larınızı ölçün. Denetim noktası ve yığın dökümünü almak için C çalışma zamanı [hata ayıklama yığın yordamlarını](/visualstudio/debugger/crt-debug-heap-details) kullanın. Çıktıyı Microsoft Excel gibi bir elektronik tablo programında okuyabilir ve özet tabloları kullanarak sonuçları görüntüleyebilirsiniz. Ayırmaların toplam sayısını, boyutunu ve dağılımını aklınızda yapın. Bunları çalışma kümelerinin boyutuyla karşılaştırın. Ayrıca, ilgili boyutlu nesnelerin kümelemesine bakın.
+Yığındaki her tahsisat için hesap verebilmeniz için yığınlarınızı ölçün. Denetim noktası ve yığın dökümü için C çalışma zamanı [hata ayıklama yordamları](/visualstudio/debugger/crt-debug-heap-details) kullanın. Çıktıyı Microsoft Excel gibi bir elektronik tablo programında okuyabilir ve sonuçları görüntülemek için özet tabloları kullanabilirsiniz. Toplam sayıya, boyuta ve ayırmaların dağılımına dikkat edin. Bunları çalışma kümelerinin boyutuyla karşılaştırın. Ayrıca, ilgili boyutlu nesnelerin kümeleme bakın.
 
-Ayrıca, bellek kullanımını izlemek için performans sayaçlarını da kullanabilirsiniz.
+Bellek kullanımını izlemek için performans sayaçlarını da kullanabilirsiniz.
 
-##  <a name="_core_threads"></a>Akışları
+## <a name="threads"></a><a name="_core_threads"></a>Iş parçacığı
 
-Arka plan görevleri için, olayların etkin boşta işlenmesi iş parçacıklarını kullanmaktan daha hızlı olabilir. Tek iş parçacıklı bir programda başvurunun yerinin anlaşılması daha kolay.
+Arka plan görevleri için, olayların etkin boşta kullanımı iş parçacığı kullanmaktan daha hızlı olabilir. Tek iş parçacığı lı bir programda başvurunun yerelliğini anlamak daha kolaydır.
 
-Parmak izi iyi bir kuralı yalnızca, bloke ettiğiniz bir işletim sistemi bildirimi arka plan işinin kökünde olduğunda bir iş parçacığı kullanmaktır. Bir olayda ana iş parçacığını engellemek pratik olduğundan, bu durumda iş parçacıkları en iyi çözümdür.
+İyi bir başparmak kuralı, yalnızca engellediğiniz bir işletim sistemi bildirimi arka plan çalışmasının kökündeyse iş parçacığı kullanmaktır. Bir olay üzerinde bir ana iş parçacığı engellemek için pratik olduğundan iş parçacıkları böyle bir durumda en iyi çözümdür.
 
-İş parçacıkları iletişim sorunları da sunar. İş parçacıklarınız arasında bir ileti listesi ile veya paylaşılan belleği ayırarak ve kullanarak iletişim bağlantısını yönetmeniz gerekir. İletişim bağlantısını yönetmek, yarış koşullarından ve kilitlenme sorunlarından kaçınmak için genellikle eşitleme gerektirir. Bu karmaşıklık, hataları ve performans sorunlarını kolayca açabilir.
+İş parçacıkları da iletişim sorunları sunar. İletilerin listesiyle veya paylaşılan belleği ayırıp kullanarak iş parçacıklarınız arasındaki iletişim bağlantısını yönetmeniz gerekir. İletişim bağlantısını yönetmek genellikle yarış koşullarını ve kilitlenme sorunlarını önlemek için eşitleme gerektirir. Bu karmaşıklık kolayca hatalara ve performans sorunlarına dönüşebilir.
 
-Daha fazla bilgi için bkz. [boşta döngüsü işleme](../mfc/idle-loop-processing.md) ve [Çoklu iş parçacığı](../parallel/multithreading-support-for-older-code-visual-cpp.md).
+Daha fazla bilgi için Bkz. [Boşalma Döngüsü İşleme](../mfc/idle-loop-processing.md) ve [Çoklu İş Parçacığı.](../parallel/multithreading-support-for-older-code-visual-cpp.md)
 
-##  <a name="_core_small_working_set"></a>Küçük çalışma kümesi
+## <a name="small-working-set"></a><a name="_core_small_working_set"></a>Küçük Çalışma Seti
 
-Daha küçük çalışma kümeleri başvuru, daha az sayfa hatası ve daha fazla önbellek okuması anlamına gelir. İşlem çalışma kümesi, işletim sisteminin başvuru yerinin ölçü için doğrudan sağladığı en yakın ölçümdür.
+Daha küçük çalışma kümeleri, başvurunun daha iyi yerelliği, daha az sayfa hatası ve daha fazla önbellek isabeti anlamına gelir. İşlem çalışma kümesi, işletim sisteminin doğrudan başvuru nun yerelliğini ölçmek için sağladığı en yakın metriktir.
 
-- Çalışma kümesinin üst ve alt sınırlarını ayarlamak için [SetProcessWorkingSetSize](/windows/win32/api/winbase/nf-winbase-getprocessworkingsetsize)kullanın.
+- Çalışma kümesinin üst ve alt sınırlarını ayarlamak için [SetProcessWorkingSetSize'ı](/windows/win32/api/winbase/nf-winbase-getprocessworkingsetsize)kullanın.
 
-- Çalışma kümesinin üst ve alt sınırlarını almak için [GetProcessWorkingSetSize](/windows/win32/api/winbase/nf-winbase-setprocessworkingsetsize)kullanın.
+- Çalışma kümesinin üst ve alt sınırlarını almak için [GetProcessWorkingSetSize'ı](/windows/win32/api/winbase/nf-winbase-setprocessworkingsetsize)kullanın.
 
-- Çalışma kümesinin boyutunu görüntülemek için Spy + + kullanın.
+- Çalışma kümesinin boyutunu görüntülemek için Spy++'ı kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,8 +1,9 @@
 ---
 title: fread_s
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - fread_s
+- _o_fread_s
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -23,16 +25,16 @@ f1_keywords:
 - fread_s
 - stdio/fread_s
 ms.assetid: ce735de0-f005-435d-a8f2-6f4b80ac775e
-ms.openlocfilehash: d1f1756af7427ecdfc8ff332f4a2211984a177d8
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 97f7ca80d4b458b952393a5b1f72bebe0bdb0d9f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956842"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81346120"
 ---
 # <a name="fread_s"></a>fread_s
 
-Akıştan verileri okur. [Fread](fread.md) 'in bu sürümünde [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
+Bir akıştan gelen verileri okur. [Fread'in](fread.md) bu sürümü, [CRT'deki Güvenlik Özellikleri'nde](../../c-runtime-library/security-features-in-the-crt.md)açıklandığı gibi güvenlik geliştirmelerine sahiptir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,40 +50,42 @@ size_t fread_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*arabelleğin*<br/>
+*Arabellek*<br/>
 Veriler için depolama konumu.
 
-*Boyutu*<br/>
-Hedef arabelleğin bayt cinsinden boyutu.
+*Buffersize*<br/>
+Baytlar'daki hedef arabelleği boyutu.
 
-*elementSize*<br/>
-Okunan öğenin bayt cinsinden boyutu.
+*elementBoyut*<br/>
+Baytokunacak öğenin boyutu.
 
-*biriktirme*<br/>
-Okunacak en fazla öğe sayısı.
+*Sayısı*<br/>
+Okunacak maksimum öğe sayısı.
 
-*ka*<br/>
-**Dosya** yapısına yönelik işaretçi.
+*Akışı*<br/>
+**DOSYA** yapısı için işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fread_s** , arabelleğe okunan (tüm) öğelerin sayısını döndürür. Bu, bir okuma hatası veya dosya sonu *sayısına* ulaşılmadan önce, *sayından* daha az olabilir. Bir hatayı bir dosya sonu koşulunun ayırt etmek için **feof** veya **ferror** işlevini kullanın. *Boyut* veya *sayı* 0 ise, **fread_s** 0 döndürür ve arabellek içeriği değiştirilmez. *Stream* veya *buffer* null bir Işaretçisiyse, **fread_s** [parametresi doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
+**fread_s,** *sayıma* ulaşılmadan önce okuma hatası veya dosyanın sonunda karşılaşılırsa *sayısı* daha az olabilecek arabelleğe okunan (tam) öğe sayısını döndürür. Bir hatayı dosya sonu durumundan ayırmak için **feof** veya **ferror** işlevini kullanın. *Boyut* veya *sayım* 0 ise, **fread_s** 0 döndürür ve arabellek içeriği değişmez. *Akış* veya *arabellek* null işaretçisi ise, **fread_s** [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin verilirse, bu işlev **errno'u** **EINVAL'e** ayarlar ve 0 döndürür.
 
-Hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Hata kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fread_s** işlevi, giriş *akışından* *ElementSize* bayt öğelerinin *sayısını saymak* ve *arabelleğe*kaydeder.  *Stream* ile ilişkili dosya işaretçisi (varsa), gerçekten okunan bayt sayısıyla artırılır. Verilen akış metin modunda açılırsa, satır başı satır besleme çiftleri tek satırlık akış karakterleriyle değiştirilmiştir. Değiştirme işleminin dosya işaretçisi veya dönüş değeri üzerinde hiçbir etkisi yoktur. Bir hata oluşursa dosya işaretçisi konumu belirsiz olur. Kısmen okunan öğenin değeri belirlenemiyor.
+**fread_s** işlevi, giriş *akışındaki* *elementSize* bayt öğelerini *saymak* için yukarı okur ve bunları *arabellekte*depolar.  *Akışla* ilişkili dosya işaretçisi (varsa) gerçekten okunan bayt sayısıyla artar. Verilen akış metin modunda açılırsa, satır satır besleme çiftleri tek satır besleme karakterleri ile değiştirilir. Değiştirmenin dosya işaretçisi veya iade değeri üzerinde hiçbir etkisi yoktur. Bir hata oluşursa dosya işaretçisi konumu belirsizdir. Kısmen okunan öğenin değeri belirlenemez.
 
-Bu işlev diğer iş parçacıklarını kilitler. Kilitleme dışı bir sürüm gerekliyse **_fread_nolock**kullanın.
+Bu işlev diğer iş parçacıklarını kilitler. Kilitlenmeyen bir sürüm gerekiyorsa, **_fread_nolock**kullanın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fread_s**|\<stdio. h >|
+|**fread_s**|\<stdio.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -152,6 +156,6 @@ Contents of buffer after write/read:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fwrite](fwrite.md)<br/>
 [_read](read.md)<br/>

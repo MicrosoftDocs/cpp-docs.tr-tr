@@ -1,9 +1,11 @@
 ---
 title: _fputchar, _fputwchar
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _fputchar
 - _fputwchar
+- _o__fputchar
+- _o__fputwchar
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -35,16 +38,16 @@ helpviewer_keywords:
 - fputtchar function
 - _fputchar function
 ms.assetid: b92ff600-a924-4f2b-b0e7-3097ee31bdff
-ms.openlocfilehash: b78c59b937a8854d7a36355173a1ccf4f219d541
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 29d23dcaba75ad87b462a1a87c7a2ad9c8c7298b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442976"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81346164"
 ---
 # <a name="_fputchar-_fputwchar"></a>_fputchar, _fputwchar
 
-**Stdout**'a bir karakter yazar.
+**Stdout**için bir karakter yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,18 +62,20 @@ wint_t _fputwchar(
 
 ### <a name="parameters"></a>Parametreler
 
-*,*<br/>
+*C*<br/>
 Yazılacak karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri yazılan karakteri döndürür. **_Fputchar**Için, **EOF** dönüş değeri bir hatayı gösterir. **_Fputwchar**Için, **weof** 'ın dönüş değeri bir hatayı gösterir. C **null**ise, bu Işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre özel durumu oluşturur. Yürütmenin devam etmesine izin veriliyorsa, **EOF** (veya **weof**) döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlevlerin her biri yazılan karakteri döndürür. _fputchar **_fputchar**için, **EOF'nin** iade değeri bir hatayı gösterir. **_fputwchar**için **WEOF'un** geri dönüş değeri bir hatayı gösterir. c **NULL**ise, bu işlevler [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre özel durumu oluşturur. Yürütme devam etmesine izin verilirse, onlar **EOF** (veya **WEOF)** dönmek ve **EINVAL** **için errno** ayarlayın.
 
-Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her ikisi de **stdout** öğesine tek karakterlik *c* 'yi yazar ve göstergeyi uygun şekilde ilerletir. **_fputchar** `fputc( stdout )`eşdeğerdir. Ayrıca, **putchar**öğesine de eşdeğerdir, ancak bir işlev ve makro olarak değil, yalnızca işlev olarak uygulanır. **Fputc** ve **putchar**'ın aksıne, bu işlevler ANSI standardı ile uyumlu değildir.
+Bu işlevlerin her ikisi de **stdout** için tek karakter *c* yazar ve uygun olarak gösterge ilerler. **_fputchar'a** `fputc( stdout )`eşdeğerdir. Aynı zamanda **putchar**eşdeğerdir , ama sadece bir işlev olarak uygulanan, yerine bir işlev ve bir makro olarak. **Fputc** ve **putchar**aksine, bu fonksiyonlar ANSI standardı ile uyumlu değildir.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -82,10 +87,10 @@ Bu işlevlerin her ikisi de **stdout** öğesine tek karakterlik *c* 'yi yazar v
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fputchar**|\<stdio. h >|
-|**_fputwchar**|\<stdio. h > veya \<wchar. h >|
+|**_fputchar**|\<stdio.h>|
+|**_fputwchar**|\<stdio.h> \<veya wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Bu konsol ile ilişkili standart akış tutamaçları (**stdin**, **stdout**ve **stderr**), C çalışma zamanı işlevlerinin bunları UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol, Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Konsolla ilişkili standart akış kolları**stdin,** **stdout**ve **stderr,** C çalışma zamanı işlevleri UWP uygulamalarında kullanamadan önce yeniden yönlendirilmelidir. Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -114,6 +119,6 @@ This is a test of _fputchar!!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>
 [putc, putwc](putc-putwc.md)<br/>

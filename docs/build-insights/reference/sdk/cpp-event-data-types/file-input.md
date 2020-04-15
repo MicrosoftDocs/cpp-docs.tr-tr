@@ -1,6 +1,6 @@
 ---
 title: FileInput sınıfı
-description: C++ BUILD Insights SDK FileInput sınıfı başvurusu.
+description: C++ Build Insights SDK FileInput sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: bea2cf72ca2a83a9cd630f8a9ccefb87dd4b7ff1
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 642236d3e67465ed38508cb24c8cd698ae880065
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333351"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81324789"
 ---
 # <a name="fileinput-class"></a>FileInput sınıfı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`FileInput` sınıfı [Matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. Bunu bir [FILE_INPUT](../event-table.md#file-input) olayına uyacak şekilde kullanın.
+Sınıf `FileInput` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [FILE_INPUT](../event-table.md#file-input) bir olayı eşleştirmek için kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,18 +52,18 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[SimpleEvent](simple-event.md) temel sınıfından devralınan üyelerle birlikte `FileInput` sınıfı aşağıdaki üyeleri içerir:
+[SimpleEvent](simple-event.md) taban sınıfından devralınan üyelerle `FileInput` birlikte, sınıf aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[Dosya girişi](#file-input)
+[FileInput](#file-input)
 
 ### <a name="functions"></a>İşlevler
 
 [Yol](#path)
-[türü](#type)
+[Türü](#type)
 
-## <a name="file-input"></a>Dosya girişi
+## <a name="fileinput"></a><a name="file-input"></a>FileInput
 
 ```cpp
 FileInput(const RawEvent& event);
@@ -71,10 +71,10 @@ FileInput(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*olay*\
+*Olay*\
 [FILE_INPUT](../event-table.md#file-input) bir olay.
 
-## <a name="path"></a>Yolun
+## <a name="path"></a><a name="path"></a>Yolu
 
 ```cpp
 const wchar_t Path() const;
@@ -82,9 +82,9 @@ const wchar_t Path() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Giriş dosyasının mutlak yolu.
+Giriş dosyasına giden mutlak yol.
 
-## <a name="type"></a>Türüyle
+## <a name="type"></a><a name="type"></a>Türü
 
 ```cpp
 Type Type() const;
@@ -92,6 +92,6 @@ Type Type() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Giriş dosyasının türünü tanımlayan bir kod.
+Giriş dosyasının türünü açıklayan bir kod.
 
 ::: moniker-end

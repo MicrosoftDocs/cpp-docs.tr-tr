@@ -1,9 +1,11 @@
 ---
 title: _mbsnbcmp, _mbsnbcmp_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _mbsnbcmp
 - _mbsnbcmp_l
+- _o__mbsnbcmp
+- _o__mbsnbcmp_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -34,19 +37,19 @@ helpviewer_keywords:
 - _tcsncmp function
 - _mbsnbcmp function
 ms.assetid: dbc99e50-cf85-4e57-a13f-067591f18ac8
-ms.openlocfilehash: 512fd2dae54afa4a37b2b3d3103ab090d81909fa
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 2334d7755a3eaf3fb973783db17ca398e6b7f0b5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952312"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81340688"
 ---
 # <a name="_mbsnbcmp-_mbsnbcmp_l"></a>_mbsnbcmp, _mbsnbcmp_l
 
-İki çok baytlı karakter dizesinin ilk **n** baytını karşılaştırır.
+İki çok bayt karakterli dizelerin ilk **n** baytlarını karşılaştırır.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,40 +69,42 @@ int _mbsnbcmp_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dize1*, *dize2*<br/>
-Karşılaştırılacak dizeler.
+*string1*, *string2*<br/>
+Karşılaştırılacak dizeleri.
 
-*biriktirme*<br/>
+*Sayısı*<br/>
 Karşılaştırılacak bayt sayısı.
 
-*ayarlar*<br/>
+*Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri, *Dize1* ve *dize2*alt dizeleri arasındaki sıralı ilişkiyi belirtir.
+İade değeri *string1* ve *string2*alt dizeleri arasındaki ordinal ilişkiyi gösterir.
 
-|Dönüş değeri|Açıklama|
+|Döndürülen değer|Açıklama|
 |------------------|-----------------|
-|< 0|*Dize1* substring, *dize2* alt dizeden küçük.|
-|0|*Dize1* substring, *dize2* alt dizesi ile aynıdır.|
-|> 0|*Dize1* substring, *dize2* alt dizeden büyük.|
+|< 0|*string1* substring *string2* substring daha azdır.|
+|0|*string1* substring *string2* substring ile aynıdır.|
+|> 0|*string1* substring *string2* substring'den büyüktür.|
 
-Bir parametre doğrulama hatası üzerinde, **_mbsnbcmp** ve **_mbsnbcmp_l** döndüren **_NLSCMPERROR**, String. h > \<ve \<mbstring. h > olarak tanımlanmıştır.
+Bir parametre doğrulama hatasında, \<string.h> ve mbstring.h \<> tanımlanan **_NLSCMPERROR** **_mbsnbcmp** ve **_mbsnbcmp_l** döndürün.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbcmp** işlevleri, *Dize1* ve *dize2* içindeki ilk *sayım* baytlarıyla karşılaştırılır ve alt dizeler arasındaki ilişkiyi gösteren bir değer döndürür. **_mbsnbcmp** , **_mbsnbıcmp**'nin büyük/küçük harfe duyarlı bir sürümüdür. **_Mbsnbcoll**'nin aksine, **_mbsnbcmp** yerel ayarın harmanlama sıralamasıyla etkilenmez. **_mbsnbcmp** , geçerli çok baytlı [kod sayfasına](../../c-runtime-library/code-pages.md)göre çok baytlı karakter dizilerini tanır.
+**_mbsnbcmp** işlevleri *string1* ve *string2'deki* ilk *sayı* baytlarını en fazla karşılaştırır ve alt dizeleri arasındaki ilişkiyi gösteren bir değer döndürer. **_mbsnbcmp** **_mbsnbicmp**bir büyük/küçük harf duyarlı sürümüdür. **_mbsnbcoll**aksine, **_mbsnbcmp** yerel in harmanlama sırası etkilenmez. **_mbsnbcmp** geçerli çok bayt [kod sayfasına](../../c-runtime-library/code-pages.md)göre çok bayt karakter dizilerini tanır.
 
-**_mbsnbcmp** , **_mbsncmp**ile benzerdir, ancak bu **_mbsncmp** dizeleri bayt yerine karakter olarak karşılaştırır.
+**_mbsnbcmp** **_mbsncmp**benzer , **_mbsncmp** yerine bayt lar tarafından karakterlere göre dizeleri karşılaştırır dışında.
 
-Çıkış değeri, ön bayt ve çok baytlı karakterlerin bitiş baytlarını belirten yerel ayarın **LC_CTYPE** kategori ayarından etkilenir. Daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_Mbsnbcmp** işlevi, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_Mbsnbcmp_l** işlevi, bunun yerine *yerel ayar* parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Çıktı değeri, müşteri adayı baytlarını ve çok bayt karakterlerini belirleyen **LC_CTYPE** kategori ayarından etkilenir. Daha fazla bilgi için [setlocale'ye](setlocale-wsetlocale.md)bakın. **_mbsnbcmp** işlevi, bu yerele bağımlı davranış için geçerli yerel alanı kullanır. **_mbsnbcmp_l** işlevi, bunun yerine *yerel* parametreyi kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-*Dize1* ya da *dize2* , null işaretçisiyse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **_Nlscmperror** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*String1* veya *string2* null işaretçisi ise, bu işlevler [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmedevam etmesine izin verilirse, işlevleri **_NLSCMPERROR** döndürdü ve **errno** **EINVAL**olarak ayarlanır.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|Tchar.h yordamı|_UNıCODE ve _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|---------------------------------------|--------------------|-----------------------|
 |**_tcsncmp**|[strncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|**_mbsnbcmp**|[wcsncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|
 |**_tcsncmp_l**|[strncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|**_mbsnbcml**|[wcsncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|
@@ -108,10 +113,10 @@ Bir parametre doğrulama hatası üzerinde, **_mbsnbcmp** ve **_mbsnbcmp_l** dö
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbcmp**|\<mbstring. h >|
-|**_mbsnbcmp_l**|\<mbstring. h >|
+|**_mbsnbcmp**|\<mbstring.h>|
+|**_mbsnbcmp_l**|\<mbstring.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -150,7 +155,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Compare strings:
@@ -166,10 +171,10 @@ Result:   String 1 is equal to string 2
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
 [_mbsnbicmp, _mbsnbicmp_l](mbsnbicmp-mbsnbicmp-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

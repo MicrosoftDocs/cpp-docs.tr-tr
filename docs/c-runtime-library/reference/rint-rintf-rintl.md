@@ -1,10 +1,13 @@
 ---
 title: rint, rintf, rintl
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - rintf
 - rintl
 - rint
+- _o_rint
+- _o_rintf
+- _o_rintl
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -30,16 +34,16 @@ helpviewer_keywords:
 - rint function
 - rintl function
 ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184
-ms.openlocfilehash: ac9db3ee5a50bb334754a8a1191638a319829b97
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6489b7ebed5246738fb660dffd07a0b8f8ed9743
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170897"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81332767"
 ---
 # <a name="rint-rintf-rintl"></a>rint, rintf, rintl
 
-Kayan noktalı bir değeri kayan nokta biçimindeki en yakın tamsayıya yuvarlar.
+Kayan nokta değerini kayan nokta biçiminde en yakın tamsayıya yuvarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,29 +60,31 @@ long double rint( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*X*<br/>
 Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Rint** işlevleri, *x*için en yakın tamsayıyı temsil eden bir kayan nokta değeri döndürür. Yarı çift değerler kayan nokta yuvarlama modunun geçerli ayarına göre yuvarlanır ve bu da, bir değer olarak, daha önce, bir **tamsayı** işlevleriyle aynıdır. Bir sonuç, bağımsız değişkenden değerde farklıysa,,,,, bir **FE_INEXACT** kayan **nokta işlevlerinin aksine** , **rint** işlevleri kayan nokta özel durumunu oluşturabilir. Hata döndürme yok.
+**Rint** işlevleri *x'e*en yakın tamsayıyı temsil eden kayan nokta değerini döndürer. Yarı yol değerleri, **yakındaki** işlevler ile aynı olan kayan nokta yuvarlama modunun geçerli ayarına göre yuvarlanır. **Yakındaki** işlevlerin aksine, sonuç bağımsız değişkenden farklı değer egöre, **rint** işlevleri **kayan** nokta özel FE_INEXACT yükseltebilir. Hata iadesi yok.
 
-|Girdi|SEH özel durumu|**_matherr** Duruma|
+|Girdi|SEH Özel Durumu|**_matherr** Özel durum|
 |-----------|-------------------|--------------------------|
-|± ∞, QNAN, IND|yok|yok|
+|± ,, QNAN, IND|yok|yok|
 |Denormals|EXCEPTION_FLT_UNDERFLOW|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** değerleri alıp döndüren **rint** 'nin aşırı yüklerini çağırabilirsiniz. C programında, **rint** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** ve **uzun** **çift** değerleri alan ve döndüren aşırı **rint** yüklerini arayabilirsiniz. C programında, **rint** her zaman alır ve bir **çift**döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgi|C++ üstbilgi|
 |--------------|--------------|------------------|
-|**rint**, **rintf**, **rintl**|\<Math. h >|\<cmath >|
+|**rint**, **rintf**, **rintl**|\<math.h>|\<cmath>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -125,4 +131,4 @@ rintl(-2.500000) is -3
 [lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)<br/>
 [lround, lroundf, lroundl, llround, llroundf, llroundl](lround-lroundf-lroundl-llround-llroundf-llroundl.md)<br/>
 [nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)<br/>
-[Yazdır](rint-rintf-rintl.md)<br/>
+[rint](rint-rintf-rintl.md)<br/>
