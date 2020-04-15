@@ -1,9 +1,11 @@
 ---
 title: _getc_nolock, _getwc_nolock
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _getc_nolock
 - _getwc_nolock
+- _o__getc_nolock
+- _o__getwc_nolock
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -38,16 +41,16 @@ helpviewer_keywords:
 - gettc_nolock function
 - _gettc_nolock function
 ms.assetid: eb37b272-e177-41c9-b077-12ce7ffd3b88
-ms.openlocfilehash: f6c2da5297e07d82fdea96452c3282c19329f24f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 5a352338f84c9f5dd7dc52099aed1de9aa26c09e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955501"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81344796"
 ---
 # <a name="_getc_nolock-_getwc_nolock"></a>_getc_nolock, _getwc_nolock
 
-Akıştan bir karakter okur.
+Bir akışından bir karakter okur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,16 +65,18 @@ wint_t _getwc_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*ka*<br/>
+*Akışı*<br/>
 Giriş akışı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bkz. [getc, getwc](getc-getwc.md).
+[Getc, getwc](getc-getwc.md)bakın .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, çağıran iş parçacığını kilitlemeyin hariç **getc** ve **getwc** ile aynıdır. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
+Bu işlevler **getc** ve **getwc** için aynıdır ancak çağrı iş parçacığı kilitlemek değil. Diğer iş parçacığı kilitleme yükü ne olursa olsun onlar daha hızlı olabilir. Bu işlevleri yalnızca tek iş parçacığı uygulamaları gibi iş parçacığı güvenli bağlamlarda veya arama kapsamının iş parçacığı yalıtımını zaten işlediği durumlarda kullanın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -83,10 +88,10 @@ Bu işlevler, çağıran iş parçacığını kilitlemeyin hariç **getc** ve **
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**getc_nolock**|\<stdio. h >|
-|**getwc_nolock**|\<stdio. h > veya \<wchar. h >|
+|**getc_nolock**|\<stdio.h>|
+|**getwc_nolock**|\<stdio.h> \<veya wchar.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -124,14 +129,14 @@ int main()
 }
 ```
 
-### <a name="input-crt_getc_nolocktxt"></a>Giriş: crt_getc_nolock. txt
+### <a name="input-crt_getc_nolocktxt"></a>Giriş: crt_getc_nolock.txt
 
 ```Input
 Line the first.
 Line the second.
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Input was: Line the first.
@@ -139,7 +144,7 @@ Input was: Line the first.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>
 [putc, putwc](putc-putwc.md)<br/>

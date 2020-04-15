@@ -1,5 +1,5 @@
 ---
-title: CHtmlEditView Class
+title: CHtmlEditView Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CHtmlEditView
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CHtmlEditView [MFC], GetDHtmlDocument
 - CHtmlEditView [MFC], GetStartDocument
 ms.assetid: 166c8ba8-3fb5-4dd7-a9ea-5bca662d00f6
-ms.openlocfilehash: 8267a5272d2d542c4679bf30aa9d3ad8b933d81d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1254a3412846cdebd1d9accb91d27d0afbc4ef8d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389573"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81352075"
 ---
-# <a name="chtmleditview-class"></a>CHtmlEditView Class
+# <a name="chtmleditview-class"></a>CHtmlEditView Sınıfı
 
-MFC'nin belge/görünüm mimarisi bağlamında WebBrowser düzenleme platformu işlevlerini sağlar.
+MFC'nin belge/görünüm mimarisi bağlamında WebBrowser düzenleme platformunun işlevselliğini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,51 +35,51 @@ class CHtmlEditView : public CHtmlView, public CHtmlEditCtrlBase<CHtmlEditView>
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CHtmlEditView::CHtmlEditView](#chtmleditview)|Oluşturur bir `CHtmlEditView` nesne.|
+|[CHtmlEditView::CHtmlEditView](#chtmleditview)|Bir `CHtmlEditView` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CHtmlEditView::Create](#create)|Yeni bir pencere nesnesi oluşturur.|
-|[CHtmlEditView::GetDHtmlDocument](#getdhtmldocument)|Döndürür `IHTMLDocument2` geçerli belge arabirimi.|
-|[CHtmlEditView::GetStartDocument](#getstartdocument)|Bu görünüm için varsayılan belge adını alır.|
+|[CHtmlEditView::Oluştur](#create)|Yeni bir pencere nesnesi oluşturur.|
+|[CHtmlEditView::GetDHtmlDocument](#getdhtmldocument)|Geçerli `IHTMLDocument2` belgedeki arabirimi döndürür.|
+|[CHtmlEditView::GetStartDocument](#getstartdocument)|Bu görünüm için varsayılan belgenin adını alır.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CView](../../mfc/reference/cview-class.md)
+[Cview](../../mfc/reference/cview-class.md)
 
-[CScrollView](../../mfc/reference/cscrollview-class.md)
+[Cscrollview](../../mfc/reference/cscrollview-class.md)
 
-[CFormView](../../mfc/reference/cformview-class.md)
+[Cformview](../../mfc/reference/cformview-class.md)
 
 [CHtmlEditCtrlBase](../../mfc/reference/chtmleditctrlbase-class.md)
 
-[CHtmlView](../../mfc/reference/chtmlview-class.md)
+[Chtmlview](../../mfc/reference/chtmlview-class.md)
 
 `CHtmlEditView`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxhtml.h
+**Üstbilgi:** afxhtml.h
 
-##  <a name="chtmleditview"></a>  CHtmlEditView::CHtmlEditView
+## <a name="chtmleditviewchtmleditview"></a><a name="chtmleditview"></a>CHtmlEditView::CHtmlEditView
 
-Oluşturur bir `CHtmlEditView` nesne.
+Bir `CHtmlEditView` nesne inşa eder.
 
 ```
 CHtmlEditView();
 ```
 
-##  <a name="create"></a>  CHtmlEditView::Create
+## <a name="chtmleditviewcreate"></a><a name="create"></a>CHtmlEditView::Oluştur
 
 Yeni bir pencere nesnesi oluşturur.
 
@@ -97,33 +97,33 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *lpszClassName*<br/>
-Windows sınıf adları null ile sonlandırılmış dizeye işaret eder. Sınıf adı ile kayıtlı herhangi bir ad olabilir [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) genel işlev veya `RegisterClass` Windows işlevi. NULL ise, önceden tanımlanmış varsayılan kullanan [CFrameWnd](../../mfc/reference/cframewnd-class.md) öznitelikleri.
+Windows sınıfını isimleyen geçersiz sonlandırılmış karakter dizesini işaret edin. Sınıf [adı, AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global işlevine veya Windows `RegisterClass` işlevine kayıtlı herhangi bir ad olabilir. NULL ise, önceden tanımlanmış varsayılan [CFrameWnd](../../mfc/reference/cframewnd-class.md) özniteliklerini kullanır.
 
 *lpszWindowName*<br/>
-Pencere adının temsil eden bir boş sonlandırılmış karakter dizesi işaret eder.
+Pencere adını temsil eden null-sonlandırılan karakter dizesini gösterir.
 
-*dwStyle*<br/>
-Pencere stili özniteliklerini belirtir. Ws_vısıble ve WS_CHILD Windows stilleri varsayılan olarak ayarlanır.
+*Dwstyle*<br/>
+Pencere stili özniteliklerini belirtir. Varsayılan olarak, WS_VISIBLE ve WS_CHILD Windows stilleri ayarlanır.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı pencerenin konumunu ve boyutunu belirtme. *RectDefault* değer, yeni pencerenin konumunu ve boyutunu belirtmek Windows sağlar.
+Pencerenin boyutunu ve konumunu belirten bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru. *rectDefault* değeri, Windows'un yeni pencerenin boyutunu ve konumunu belirtmesine olanak tanır.
 
 *pParentWnd*<br/>
-Denetiminin üst penceresine bir işaretçi.
+Denetimin üst penceresine bir işaretçi.
 
-*nID*<br/>
-Görünüm kimliği sayısı. Varsayılan olarak, AFX_IDW_PANE_FIRST için ayarlayın.
+*Nıd*<br/>
+Görünümün kimlik numarası. Varsayılan olarak, AFX_IDW_PANE_FIRST olarak ayarlayın.
 
-*pContext*<br/>
-Bir işaretçi bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). Varsayılan olarak null değerini DÖNDÜRÜR.
+*Pcontext*<br/>
+[CCreateContext](../../mfc/reference/ccreatecontext-structure.md)için bir işaretçi. Varsayılan olarak NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem ayrıca kapsanan WebBrowser's göndereceği `Navigate` varsayılan bir belge yüklemek için gereken yöntemini (bkz [CHtmlEditView::GetStartDocument](#getstartdocument)).
+Bu yöntem, varsayılan bir belgeyi `Navigate` yüklemek için içerdiği WebBrowser yöntemini de çağırır (bkz. [CHtmlEditView::GetStartDocument).](#getstartdocument)
 
-##  <a name="getdhtmldocument"></a>  CHtmlEditView::GetDHtmlDocument
+## <a name="chtmleditviewgetdhtmldocument"></a><a name="getdhtmldocument"></a>CHtmlEditView::GetDHtmlDocument
 
-Döndürür `IHTMLDocument2` geçerli belge arabirimi.
+Geçerli `IHTMLDocument2` belgedeki arabirimi döndürür.
 
 ```
 BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
@@ -131,12 +131,12 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ppDocument*<br/>
-[Ihtmldocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) arabirimi.
+*ppBelge*<br/>
+[IHTMLDocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) arabirimi.
 
-##  <a name="getstartdocument"></a>  CHtmlEditView::GetStartDocument
+## <a name="chtmleditviewgetstartdocument"></a><a name="getstartdocument"></a>CHtmlEditView::GetStartDocument
 
-Bu görünüm için varsayılan belge adını alır.
+Bu görünüm için varsayılan belgenin adını alır.
 
 ```
 virtual LPCTSTR GetStartDocument();
@@ -144,5 +144,5 @@ virtual LPCTSTR GetStartDocument();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[HTMLEdit örnek](../../overview/visual-cpp-samples.md)<br/>
+[HTMLEdit Örneği](../../overview/visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

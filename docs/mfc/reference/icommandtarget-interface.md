@@ -1,5 +1,5 @@
 ---
-title: ICommandTarget arabirimi
+title: ICommandTarget Arayüzü
 ms.date: 11/04/2016
 f1_keywords:
 - ICommandTarget
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandTarget interface [MFC]
 ms.assetid: dd9927f6-3479-4e7c-8ef9-13206cf901f3
-ms.openlocfilehash: a224b868ea1923bb4f84b0d682c71fadb63da572
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 865a8a27d96f84f536e40ec5a7bbbbdd9837dfcd
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322075"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81356911"
 ---
-# <a name="icommandtarget-interface"></a>ICommandTarget arabirimi
+# <a name="icommandtarget-interface"></a>ICommandTarget Arayüzü
 
-Bir kullanıcı denetimi komutları komut kaynak nesneden almak için bir arabirim sağlar.
+Komut kaynağı nesneden komutalmak için arabirimile kullanıcı denetimi sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,25 +29,25 @@ interface class ICommandTarget
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[ICommandTarget::Initialize'ı](#initialize)|Komut hedef nesnesi başlatır.|
+|[ICommandTarget::Initialize](#initialize)|Komut hedef nesnesini başharfe ait hale.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-MFC görünümü, bir kullanıcı denetiminde barındırdığınızda [CWinFormsView](../../mfc/reference/cwinformsview-class.md) yollar komutları ve güncelleştirme komut UI iletilerini MFC komutlarını (örneğin, çerçeve menüsü ögeleri ve araç çubuğu düğmeleri) işlemelerine izin vermek için kullanıcı denetimi için. Uygulayarak `ICommandTarget`, kullanıcı denetimine bir başvuru size [ICommandSource](../../mfc/reference/icommandsource-interface.md) nesne.
+Bir MFC Görünümü'nde bir kullanıcı denetimi barındırdığınızda, [CWinFormsView](../../mfc/reference/cwinformsview-class.md) komutları yönlendirir ve komut ui iletilerini kullanıcı denetimine günceller ve MFC komutlarını (örneğin, çerçeve menü öğeleri ve araç çubuğu düğmeleri) işlemesine izin verir. Uygulayarak, `ICommandTarget`kullanıcı denetimi [iCommandSource](../../mfc/reference/icommandsource-interface.md) nesnesine bir başvuru verir.
 
-Bkz: [nasıl yapılır: Komut yönlendirme Windows Forms denetimine ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `ICommandTarget`.
+[Bkz. Nasıl Yapılır: Nasıl](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) kullanılacağına `ICommandTarget`bir örnek olarak Windows Forms Denetimi'ne Komut Yönlendirme ekleme.
 
-Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+Windows Formlarını kullanma hakkında daha fazla bilgi [için](../../dotnet/using-a-windows-form-user-control-in-mfc.md)bkz.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll içinde tanımlanmıştır)
+**Başlık:** afxwinforms.h (montaj atlmfc\lib\mfcmifc80.dll tanımlanır)
 
-##  <a name="initialize"></a> ICommandTarget::Initialize'ı
+## <a name="icommandtargetinitialize"></a><a name="initialize"></a>ICommandTarget::Initialize
 
-Komut hedef nesnesi başlatır.
+Komut hedef nesnesini başharfe ait hale.
 
 ```
 void Initialize(ICommandSource^ cmdSource);
@@ -55,16 +55,16 @@ void Initialize(ICommandSource^ cmdSource);
 
 ### <a name="parameters"></a>Parametreler
 
-*cmdSource*<br/>
-Komut kaynak nesnesine yönelik bir tanıtıcı.
+*cmdKaynak*<br/>
+Komut kaynağı nesneye bir tutamaç.
 
 ### <a name="remarks"></a>Açıklamalar
 
-MFC görünümü olarak bir kullanıcı denetimini barındırdığınızda CWinFormsView komutları ve komut UI iletilerini MFC komutlarını işlemelerine izin vermek için kullanıcı denetimine yönlendirir.
+Bir MFC Görünümü'nde bir kullanıcı denetimi barındırdığınızda, CWinFormsView komutları yönlendirir ve Komut UI iletilerini mfc komutlarını işlemesine izin vermek için kullanıcı denetimine günceller.
 
-Bu yöntem, komut hedef nesnesini başlatır ve belirtilen komut kaynak nesnesi cmdSource ile ilişkilendirir. Kullanıcı denetimi sınıf uygulamasında çağrılmalıdır. Başlatma sırasında başlatma uygulamasında arama ICommandSource::AddCommandHandler tarafından komut kaynak nesnesi ile komut işleyicileri kaydolmalıdır. Bkz: nasıl yapılır: Komut yönlendirme başlatma Bunu yapmak için nasıl kullanılacağını gösteren bir örnek Windows Forms denetimi ekleyin.
+Bu yöntem komut hedef nesnesini baş harfe doğru laştırır ve belirtilen komut kaynağı nesnesi cmdSource ile ilişkilendirer. Kullanıcı denetim sınıfı uygulamasında çağrılmalıdır. Başlatma sırasında, Komut işleyicilerini ICommandSource::AddCommandHandler'ı Initialize uygulamasında arayarak komut kaynağı nesnesi ile kaydetmelisiniz. Bkz. Nasıl Yapılır: Bunu yapmak için Initialize'i nasıl kullanacağına bir örnek olarak Windows Forms Denetimi'ne Komut Yönlendirme ekleme.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Nasıl yapılır: Windows Forms Denetimine Yönlendiren Komut Ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
-[ICommandSource Arabirimi](../../mfc/reference/icommandsource-interface.md)
+[Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
+[ICommandSource Arayüzü](../../mfc/reference/icommandsource-interface.md)

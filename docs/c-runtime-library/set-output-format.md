@@ -25,19 +25,19 @@ helpviewer_keywords:
 - _set_output_format function
 - set_output_format function
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
-ms.openlocfilehash: b67abb58f4d62c7c54b61d1b1699f09c1bd51b40
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c855df4c29a53fd898b920f6446afe4e568ba5bb
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957307"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81360914"
 ---
 # <a name="_set_output_format"></a>_set_output_format
 
-Biçimlendirilen g/ç işlevleri tarafından kullanılan çıkış biçimlerini özelleştirir.
+Biçimlendirilmiş G/Ç işlevleri tarafından kullanılan çıktı biçimlerini özelleştirer.
 
 > [!IMPORTANT]
->  Bu işlev artık kullanılmıyor. Visual Studio 2015 ' den başlayarak CRT ' de kullanılamaz.
+> Bu işlev geçersizdir. Visual Studio 2015'ten itibaren CRT'de kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,28 +49,28 @@ unsigned int _set_output_format(
 
 #### <a name="parameters"></a>Parametreler
 
-*format*<br/>
-'ndaki Kullanılacak biçimi temsil eden bir değer.
+*Biçim*<br/>
+[içinde] Kullanılacak biçimi temsil eden bir değer.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Önceki çıkış biçimi.
+Önceki çıktı biçimi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_set_output_format`, [printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)gibi biçimlendirilen g/ç işlevlerinin çıkışını yapılandırmak için kullanılır. Mevcut olduğunda, bu işlev tarafından değiştirilebilen tek biçimlendirme kuralı, kayan nokta numaralarının çıkışında üsler halinde görüntülenen basamak sayısıdır.
+`_set_output_format`[printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)gibi biçimlendirilmiş G/Ç işlevlerinin çıktısını yapılandırmak için kullanılır. Şu anda, bu işlev tarafından değiştirilebilen tek biçimlendirme kuralı, kayan nokta numaralarının çıktısında üsler halinde görüntülenen basamak sayısıdır.
 
-Varsayılan olarak,,, ve görsel `printf_s` C++ standart C kitaplığındaki ilgili işlevler gibi işlevlere `wprintf_s`göre kayan nokta sayılarının çıktısı, değeri temsil etmek için üç basamak gerekli olmasa bile üs için üç basamak yazdırır . Sıfır değeri üç basamağa kadar doldurma için kullanılır. `_set_output_format`üs boyutunun üçüncü bir basamak gerektirmediği takdirde üs içinde yalnızca iki basamak yazdırılması için bu davranışı değiştirmenize izin verir.
+Varsayılan olarak, Görsel C++ Standart C `printf_s`kitaplığındaki , ve `wprintf_s`ilgili işlevler gibi işlevler tarafından kayan nokta numaralarının çıktısı, üs değerini temsil etmek için üç basamak gerekli olmasa bile, üs için üç basamak yazdırır. Sıfırlar değeri üç basamaklı olarak deftere almak için kullanılır. `_set_output_format`üs boyutuna göre üçüncü bir basamak gerekmedikçe, yalnızca iki basamak üs içinde yazdırılır, böylece bu davranışı değiştirmenize olanak sağlar.
 
-İki basamaklı üsleri etkinleştirmek için, örnekte gösterildiği gibi bu işlevi parametresiyle `_TWO_DIGIT_EXPONENT`çağırın. İki basamaklı üsleri devre dışı bırakmak için, bu işlevi 0 bağımsız değişkeniyle çağırın.
+İki basamaklı üsleri etkinleştirmek için, örnekte gösterildiği gibi `_TWO_DIGIT_EXPONENT`bu işlevi parametreile çağırın. İki basamaklı üsleri devre dışı katmak için bu işlevi 0 bağımsız değişkeniyle çağırın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`_set_output_format`|\<stdio. h >|
+|`_set_output_format`|\<stdio.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. karşılama 'da [Uyumluluk](../c-runtime-library/compatibility.md) .
+Daha fazla uyumluluk bilgisi için Giriş'te [Uyumluluk'a](../c-runtime-library/compatibility.md) bakın.
 
 ## <a name="example"></a>Örnek
 

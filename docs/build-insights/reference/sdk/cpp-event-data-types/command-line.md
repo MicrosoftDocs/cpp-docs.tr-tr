@@ -1,6 +1,6 @@
 ---
 title: CommandLine sınıfı
-description: C++ BUILD Insights SDK komut satırı sınıfı başvurusu.
+description: C++ Build Insights SDK CommandLine sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: ff16646920fe77f7f3b4cb8a194a38984c3e6c32
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: b35d688acf06579cc27f2fee053ef58032e204e0
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333512"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81325054"
 ---
 # <a name="commandline-class"></a>CommandLine sınıfı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`CommandLine` sınıfı [Matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. Bunu bir [COMMAND_LINE](../event-table.md#command-line) olayına uyacak şekilde kullanın.
+Sınıf `CommandLine` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [COMMAND_LINE](../event-table.md#command-line) bir olayı eşleştirmek için kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,17 +41,17 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[SimpleEvent](simple-event.md) temel sınıfından devralınan üyelerle birlikte `CommandLine` sınıfı aşağıdaki üyeleri içerir:
+[SimpleEvent](simple-event.md) taban sınıfından devralınan üyelerle `CommandLine` birlikte, sınıf aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[Komut satırı](#command-line)
+[Commandline](#command-line)
 
 ### <a name="functions"></a>İşlevler
 
 [Değer](#value)
 
-## <a name="command-line"></a>Komut satırı
+## <a name="commandline"></a><a name="command-line"></a>Commandline
 
 ```cpp
 CommandLine(const RawEvent& event);
@@ -59,10 +59,10 @@ CommandLine(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*olay*\
+*Olay*\
 [COMMAND_LINE](../event-table.md#command-line) bir olay.
 
-## <a name="value"></a>Deeri
+## <a name="value"></a><a name="value"></a>Değer
 
 ```cpp
 const wchar_t Value() const;
@@ -70,6 +70,6 @@ const wchar_t Value() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Komut satırı içeren bir dize. Değer bir yanıt dosyasından ve bir CL, \_CL\_, bağlantı ve \_bağlantı\_olan ortam değişkenlerinden alınan bağımsız değişkenleri içerir.
+Komut satırı içeren bir dize. Değer, bir yanıt dosyasından \_ve cl, CL,\_Link ve \_LINK\_gibi ortam değişkenlerinden elde edilen bağımsız değişkenleri içerir.
 
 ::: moniker-end

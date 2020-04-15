@@ -1,9 +1,11 @@
 ---
 title: mbrtoc16, mbrtoc323
-ms.date: 10/22/2019
+ms.date: 4/2/2020
 api_name:
 - mbrtoc16
 - mbrtoc32
+- _o_mbrtoc16
+- _o_mbrtoc32
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -29,16 +32,16 @@ helpviewer_keywords:
 - mbrtoc16 function
 - mbrtoc32 function
 ms.assetid: 099ade4d-56f7-4e61-8b45-493f1d7a64bd
-ms.openlocfilehash: 793eadf433f3117d89b4f0dc7c8397762405406b
-ms.sourcegitcommit: 0a5518fdb9d87fcc326a8507ac755936285fcb94
+ms.openlocfilehash: 91755d19eacf73f19700eed7fffbffc529d4e235
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72811127"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81340974"
 ---
 # <a name="mbrtoc16-mbrtoc32"></a>mbrtoc16, mbrtoc32
 
-Dizedeki ilk UTF-8 çok baytlı karakterini karşılık gelen UTF-16 veya UTF-32 karakterine dönüştürür.
+Bir dizedeki ilk UTF-8 çok bayt karakterini eşdeğer UTF-16 veya UTF-32 karakterine çevirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,53 +63,55 @@ size_t mbrtoc32(
 
 ### <a name="parameters"></a>Parametreler
 
-*hedef*\
-Dönüştürülecek UTF-8 çok baytlı karakterin **char16_t** veya **char32_t** eşdeğerini işaretçisi. Null ise, işlev bir değer depolamaz.
+*Hedef*\
+Dönüştürmek için UTF-8 çok bayt karakterinin **char16_t** veya **char32_t** eşdeğerini işaretle. Null ise, işlev bir değer depolamaz.
 
-*kaynak*\
-Dönüştürülecek UTF-8 çok baytlı karakter dizesinin işaretçisi.
+*Kaynak*\
+Dönüştürmek için UTF-8 multibayt karakter dizesini işaretet.
 
 *max_bytes*\
-Dönüştürülecek karakteri incelemek için *kaynaktaki* en fazla bayt sayısı. Bu bağımsız değişken, *kaynak*içinde kalan herhangi bir null Sonlandırıcı dahil olmak üzere bir ve bayt sayısı arasında bir değer olmalıdır.
+Bir karakterin dönüştürülmesi için incelenebilmek için *kaynaktaki* maksimum bayt sayısı. Bu bağımsız değişken, *kaynakta*kalan herhangi bir null terminator da dahil olmak üzere bir ve bayt sayısı arasında bir değer olmalıdır.
 
-*durum* \
-UTF-8 çok baytlı dizesini bir veya daha fazla çıkış karakteriyle yorumlamak için kullanılan bir **mbstate_t** dönüştürme durumu nesnesi işaretçisi.
+*Durum*\
+UTF-8 çok bayt dizesini bir veya daha fazla çıktı karakteriyle yorumlamak için kullanılan **mbstate_t** dönüştürme durumu nesnesine işaretçi.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Başarılı olduğunda, geçerli *durum* değeri verildiğinde geçerli olan bu koşulların ilk değerini döndürür:
+Başarıda, geçerli *durum* değeri göz önüne alındığında, geçerli olan bu koşullardan ilkinin değerini döndürür:
 
 |Değer|Koşul|
 |-----------|---------------|
-|0|*Kaynaktan* dönüştürülen sonraki *max_bytes* veya daha az karakter, *hedef* null değilse depolanan değer olan null geniş karaktere karşılık gelir.<br /><br /> *durum* , ilk kaydırma durumunu içerir.|
-|Dahil olmak üzere 1 ile *max_bytes*arasında|Döndürülen değer, geçerli bir çok baytlı karakteri tamamlayacak *kaynak* bayt sayısıdır. *Hedef* null değilse, dönüştürülen geniş karakter saklanır.|
-|-3|*Hedef* null değilse, işleve yapılan önceki çağrıdan kaynaklanan bir sonraki geniş karakter *hedefte* depolandı. Bu işleve yapılan bu çağrı tarafından *kaynaktan* hiçbir bayt tüketilmemiş.<br /><br /> *Kaynak* , birden fazla geniş karakter temsil etmesi için (örneğin, bir vekil çifti) bir UTF-8 çok baytlı karakteri işaret ediyorsa, sonraki işlev çağrısının ek karakteri yazması için *durum* değeri güncellenir.|
-|-2|Sonraki *max_bytes* baytları tamamlanmamış, ancak olasılıkla GEÇERLI bir UTF-8 çok baytlı karakterini temsil eder. *Hedefte*hiçbir değer depolanmaz. Bu sonuç, *max_bytes* sıfır olduğunda meydana gelebilir.|
-|-1|Bir kodlama hatası oluştu. Sonraki *max_bytes* veya daha az bayt, tam ve geçerlI bir UTF-8 çok baytlı karaktere katkıda bulunamaz. *Hedefte*hiçbir değer depolanmaz.<br /><br /> **Eilseq** , **errno** 'da depolanır ve dönüştürme *durumu değeri belirtilmemiş* olur.|
+|0|*Kaynaktan* dönüştürülen sonraki *max_bytes* veya daha az karakter, *hedef* null değilse depolanan değer olan null geniş karaktere karşılık gelir.<br /><br /> *durum* ilk kaydırma durumunu içerir.|
+|1 ile *max_bytes*arasında , dahil|Döndürülen değer, geçerli bir çok bayt karakterini tamamlayan *kaynak* baytlarının sayısıdır. Dönüştürülen geniş *karakter, hedef* null değilse depolanır.|
+|-3|Önceki bir işlev çağrısından kaynaklanan bir sonraki geniş karakter, *hedef* geçersiz değilse *hedefte* depolanır. Bu çağrı işlevine *kaynaktan* gelen baytlar tüketilmez.<br /><br /> *Kaynak,* temsil etmesi gereken birden fazla geniş karakter gerektiren UTF-8 çok bayt lı bir karaktere işaret ettiğinde (örneğin, bir vekil çifti), bir sonraki işlev çağrısının ek karakteri yazması için *durum* değeri güncelleştirilir.|
+|-2|Sonraki *max_bytes* bayt eksik, ancak potansiyel olarak geçerli, UTF-8 çok bayt karakterini temsil eder. *Hedefte*hiçbir değer depolanır. *max_bytes* sıfırsa bu sonuç oluşabilir.|
+|-1|Bir kodlama hatası oluştu. Sonraki *max_bytes* veya daha az bayt tam ve geçerli bir UTF-8 çok bayt karakterine katkıda bulunmaz. *Hedefte*hiçbir değer depolanır.<br /><br /> **EILSEQ** **errno'da** depolanır ve dönüşüm durumu değeri *durumu* belirtilmemiştir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbrtoc16** işlevi, ilk tamamlanmış ve geçerli UTF-8 çok baytlı karakterini bulmak için *kaynaktan* en fazla *max_bytes* bayt okur ve sonra karşılık gelen UTF-16 karakterini *hedefte*depolar. Karakter, yedek çifti gibi birden fazla UTF-16 çıkış karakteri gerektiriyorsa, *durum* değeri, sonraki **mbrtoc16**çağrısında bir sonraki UTF-16 karakterini *hedefte* depolayacak şekilde ayarlanır. **Mbrtoc32** işlevi aynıdır, ancak ÇıKTı bir UTF-32 karakteri olarak depolanır.
+**Mbrtoc16** işlevi, ilk tam, geçerli UTF-8 çok bayt karakterini bulmak için *kaynaktan* *max_bytes* bayt kadar okur ve ardından eşdeğer UTF-16 karakterini *hedefte*depolar. Karakter, bir vekil çifti gibi birden fazla UTF-16 çıkış karakteri gerektiriyorsa, *durum* değeri sonraki UTF-16 karakterini **mbrtoc16'ya**bir sonraki çağrıda *hedefte* depolamak üzere ayarlanır. **Mbrtoc32** işlevi aynıdır, ancak çıktı UTF-32 karakteri olarak depolanır.
 
-*Kaynak* null ise, bu işlevler, *hedef*için **null** bağımsız değişkenleri kullanılarak yapılan çağrının eşdeğerini döndürür, *kaynak*için `""` (boş, null sonlandırılmış bir dize) ve *max_bytes*için 1. Geçirilen *hedef* ve *max_bytes* değerleri yok sayılır.
+*Kaynak* null ise, bu işlevler *hedef*için `""` **NULL** bağımsız değişkenleri kullanılarak yapılan bir çağrının eşdeğerini döndürdü , *(kaynak*için boş, null-terminatedstring) ve *max_bytes*için 1 . *Hedef* ve *max_bytes* geçirilen değerleri yoksayılır.
 
-*Kaynak* null değilse, işlev dizenin başlangıcında başlar ve kaydırma dizileri dahil olmak üzere sonraki UTF-8 çok baytlı karakterini tamamlaması gereken bayt sayısını belirlemede *max_bytes* bayta kadar inceler. İncelenen baytlar geçerli ve tam bir UTF-8 çok baytlı karakter içeriyorsa, işlev karakteri 16 bit veya 32 bitlik geniş karakter veya karakterlere dönüştürür. *Hedef* null değilse, işlev hedefteki ilk (ve muhtemelen yalnızca) sonuç karakterini depolar. Ek çıkış karakterleri gerekliyse, bir değer bir *durum*olarak ayarlanır, böylece işlevin sonraki çağrıları ek karakterlerin çıktısını verir ve-3 değerini döndürür. Daha fazla çıkış karakteri gerekmiyorsa, *durum* ilk kaydırma durumuna ayarlanır.
+*Kaynak* null değilse, işlev dize başında başlar ve herhangi bir vardiya dizileri de dahil olmak üzere bir sonraki UTF-8 çok bayt karakteri tamamlamak için gerekli bayt sayısını belirlemek için *max_bytes* bayt kadar denetler. İncelenen baytlar geçerli ve eksiksiz bir UTF-8 çok bayt karakteri içeriyorsa, işlev karakteri eşdeğer 16 bit veya 32 bit geniş karakter veya karaktere dönüştürür. *Hedef* null değilse, işlev hedefteki ilk (ve büyük olasılıkla yalnızca) sonuç karakterini depolar. Ek çıktı karakterleri gerekiyorsa, bir değer *durum*olarak ayarlanır , böylece sonraki işlev çağrıları ek karakterler çıktı ve değeri -3 döndürün. Başka çıktı karakteri gerekli değilse, *durum* ilk kaydırma durumuna ayarlanır.
 
-UTF-8 olmayan çok baytlı karakterleri UTF-16 LE karakterlerine dönüştürmek için [mbrtowc](mbrtowc.md), [mbtowc veya _mbtowc_l](mbtowc-mbtowc-l.md) işlevlerini kullanın.
+UTF-8 olmayan multibayt karakterleri UTF-16 LE karakterlere dönüştürmek için [mbrtowc, mbtowc](mbrtowc.md) [veya _mbtowc_l](mbtowc-mbtowc-l.md) işlevlerini kullanın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgi|C++ üstbilgi|
 |--------------|--------------|------------------|
-|**mbrtoc16**, **mbrtoc32**|\<uşar. h >|\<cuchar >|
+|**mbrtoc16**, **mbrtoc32**|\<uchar.h>|\<cuchar>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../data-conversion.md)\
 [Yerel ayar](../locale.md)\
-[Çok baytlı karakter sıralarının yorumu](../interpretation-of-multibyte-character-sequences.md)\
+[Çok bayt karakter dizilerinin yorumlanması](../interpretation-of-multibyte-character-sequences.md)\
 [c16rtomb, c32rtomb](c16rtomb-c32rtomb1.md)\
 [mbrtowc](mbrtowc.md)\
 [mbsrtowcs](mbsrtowcs.md)\

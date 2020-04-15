@@ -1,8 +1,9 @@
 ---
 title: _cabs
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _cabs
+- _o__cabs
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -27,12 +29,12 @@ helpviewer_keywords:
 - _cabs function
 - calculating absolute values
 ms.assetid: fea292ee-1a39-4a0a-b416-4a189346ff26
-ms.openlocfilehash: 2c2bd6b3f097095514e47b757306b4d83a990e45
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e77e1811cb6f002c06e514b5f737b8a92ea84282
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170347"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81333685"
 ---
 # <a name="_cabs"></a>_cabs
 
@@ -48,24 +50,26 @@ double _cabs(
 
 ### <a name="parameters"></a>Parametreler
 
-*kadar*<br/>
+*Z*<br/>
 Karmaşık sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_cabs** , başarılı olursa bağımsız değişkeninin mutlak değerini döndürür. Taşma üzerinde, **_cabs** **HUGE_VAL** döndürür ve **errno** , **ERANGE**olarak ayarlar. Hata işlemeyi [_matherr](matherr.md)ile değiştirebilirsiniz.
+**_cabs** başarılı olursa bağımsız değişkeninin mutlak değerini döndürür. Taşma, **_cabs** **HUGE_VAL** döndürür ve **ERANGE** **için errno** ayarlar. [hata işlemeyi _matherr](matherr.md)ile değiştirebilirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cabs** işlevi, bir karmaşık sayının mutlak değerini hesaplar, bu, [_complex](../../c-runtime-library/standard-types.md)türünde bir yapı olmalıdır. *Z* yapısı gerçek bir bileşen *x* ve sanal bileşen *y*' den oluşur. **_Cabs** çağrısı, `sqrt( z.x * z.x + z.y * z.y )`ifade ile eşdeğer bir değer üretir.
+**_cabs** işlevi, [karmaşık](../../c-runtime-library/standard-types.md)bir sayının mutlak değerini hesaplar, bu da _complex. Yapı *z* gerçek bir bileşen *x* ve hayali bir bileşen *y*oluşur. **_cabs** için yapılan bir çağrı, ifadenin `sqrt( z.x * z.x + z.y * z.y )`değerine eşdeğer bir değer üretir.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_cabs**|\<Math. h >|
+|**_cabs**|\<math.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

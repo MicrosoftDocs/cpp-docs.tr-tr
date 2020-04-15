@@ -13,16 +13,16 @@ helpviewer_keywords:
 - /Gy compiler option [C++]
 - packaged functions
 ms.assetid: 0d3cf14c-ed7d-4ad3-b4b6-104e56f61046
-ms.openlocfilehash: 9643b8b4b4b26b3f7a8a59ed0085601b1a53094d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8724ae4d018948c0f6aa9456f229db96878d7bf2
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62270730"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81328275"
 ---
 # <a name="gy-enable-function-level-linking"></a>/Gy (İşlev Düzeyi Bağlamayı Etkinleştir)
 
-Derleyicinin ayrı ayrı işlevleri paketlenmiş işlevler (Comdat'lar) biçiminde sağlar.
+Derleyicinin tek tek işlevleri paketlenmiş işlevler (COMDATs) biçiminde paketlemesine olanak tanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,26 +32,26 @@ Derleyicinin ayrı ayrı işlevleri paketlenmiş işlevler (Comdat'lar) biçimin
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bağlayıcı işlevleri hariç tutmak veya ayrı ayrı işlevleri bir DLL veya .exe dosyasını düzenlemek için comdat'ları olarak ayrı ayrı paketlenmesi gerekir.
+Bağlayıcı, dll veya .exe dosyasındaki tek tek işlevleri dışlamak veya sipariş etmek için işlevlerin COMDA olarak ayrı olarak paketlenir.
 
-Bağlayıcı seçeneği kullanabileceğiniz [OPT (iyileştirmeler)](opt-optimizations.md) .exe dosyasından başvurulmayan paketlenmiş işlevleri hariç tutmak için.
+Referanssız paket işlevleri .exe dosyasından hariç tutmak için bağlayıcı [/OPT (Optimizasyonlar)](opt-optimizations.md) seçeneğini kullanabilirsiniz.
 
-Bağlayıcı seçeneği kullanabileceğiniz [/order (Put işlevleri Sırala)](order-put-functions-in-order.md) .exe dosyasının belirli bir sırada paketlenmiş işlevler dahil edilecek.
+.exe dosyasında belirli bir sırada paketlenmiş işlevleri eklemek için bağlayıcı [/ORDER (Sırayla İşlevler Koy)](order-put-functions-in-order.md) seçeneğini kullanabilirsiniz.
 
-Satır içi işlevleri her zaman çağrıları olarak örneği oluşturulur, paketlenmiş (hangi oluşursa, örneğin, satır içi kullanım kapalı veya bir işlevin adresi alın). Ayrıca, bir sınıf bildiriminde tanımlanan C++ üye işlevleri otomatik olarak paketlenir; diğer işlevler değildir ve onları paketlenmiş işlevler derlemek için bu seçeneği gereklidir.
+Satır altı işlevleri her zaman çağrı olarak anında paketlenirse (örneğin, satır ara kapalıysa veya bir işlev adresi alıyorsanız oluşur). Buna ek olarak, sınıf bildiriminde tanımlanan C++ üye işlevleri otomatik olarak paketlenir; diğer işlevler değildir ve bu seçeneğin seçilmesi, bunları paketlenmiş işlevler olarak derlemek için gereklidir.
 
 > [!NOTE]
->  [/Zi](z7-zi-zi-debug-information-format.md) seçeneği, Düzenle ve devam et için kullanılan otomatik olarak ayarlar **/Gy** seçeneği.
+> Edit ve Continue için kullanılan [/ZI](z7-zi-zi-debug-information-format.md) seçeneği otomatik olarak **/Gy** seçeneğini ayarlar.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **kod oluşturma** özellik sayfası.
+1. Kod **Oluşturma** özelliği sayfasını tıklatın.
 
-1. Değiştirme **işlev düzeyi bağlamayı etkinleştir** özelliği.
+1. **İşlev Düzeyi Bağlama** özelliğini etkinleştir'i değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

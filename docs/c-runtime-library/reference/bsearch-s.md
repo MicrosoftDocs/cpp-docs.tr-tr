@@ -1,8 +1,9 @@
 ---
 title: bsearch_s
-ms.date: 10/22/2019
+ms.date: 4/2/2020
 api_name:
 - bsearch_s
+- _o_bsearch_s
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +17,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -26,16 +28,16 @@ helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch_s function
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
-ms.openlocfilehash: fc86576dbbe73f63da6bf0e28e7166ef7c552e55
-ms.sourcegitcommit: 0a5518fdb9d87fcc326a8507ac755936285fcb94
+ms.openlocfilehash: ef8a68f0db45e718af6b17fe0d08c33a6fd61d6c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72811150"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81333840"
 ---
 # <a name="bsearch_s"></a>bsearch_s
 
-Sıralanmış bir dizide ikili bir arama gerçekleştirir. Bu işlev, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [bsearch](bsearch.md) 'ün bir sürümüdür.
+Sıralanmış bir dizinin ikili araması yapar. Bu işlev, [CRT'deki Güvenlik özelliklerinde](../../c-runtime-library/security-features-in-the-crt.md)açıklandığı gibi güvenlik geliştirmeleriyle birlikte [bsearch'ün](bsearch.md) bir sürümüdür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,63 +54,65 @@ void *bsearch_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* \
-Aranacak anahtarın işaretçisi.
+*Anahtar*\
+Aranacak anahtara işaretçi.
 
-*temel*\
-Arama verilerinin tabanına yönelik işaretçi.
+*Temel*\
+Arama verilerinin tabanına işaretçi.
 
-*sayı*\
+*Numarası*\
 Öğe sayısı.
 
-*genişlik*\
+*Genişlik*\
 Öğelerin genişliği.
 
-\ *Karşılaştır*
-İki öğeyi karşılaştıran geri çağırma işlevi. İlk bağımsız değişken *bağlam* işaretçisidir. İkinci bağımsız değişken, arama için *anahtarın* bir işaretçisidir. Üçüncü bağımsız değişken, *anahtar*ile Karşılaştırılacak dizi öğesine yönelik bir işaretçidir.
+*Karşılaştırmak*\
+İki öğeyi karşılaştıran geri arama işlevi. İlk bağımsız değişken *bağlam* işaretçisidir. İkinci bağımsız değişken, arama *anahtarına* işaretçidir. Üçüncü bağımsız *değişken, anahtarla*karşılaştırılması gereken dizi öğesine işaretçidir.
 
-*bağlam*\
-Karşılaştırma işlevinde erişilebilen nesneye yönelik bir işaretçi.
+*Bağlam*\
+Karşılaştırma işlevinde erişilebilen bir nesneye işaretçi.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-**bsearch_s** , *temel*tarafından işaret edilen dizide *anahtar* oluşumuna yönelik bir işaretçi döndürür. *Anahtar* bulunamazsa, işlev **null**döndürür. Dizi artan sıralama düzeninde değilse veya aynı anahtarlara sahip yinelenen kayıtlar içeriyorsa, sonuç tahmin edilemez.
+**bsearch_s,** *baza*işaret edilen dizideki *bir anahtar* oluşumuna işaret eder. *Anahtar* bulunamazsa, işlev **NULL döndürür.** Dizi artan sıralama sırasına sahip değilse veya aynı anahtarlara sahip yinelenen kayıtlar içeriyorsa, sonuç öngörülemez.
 
-İşleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Geçersiz parametreler işleve aktarılırsa, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmedevam etmesine izin verilirse, **errno** **EINVAL** olarak ayarlanır ve işlev **NULL**döndürür. Daha fazla bilgi için [bkz: errno, _doserrno, _sys_errlist ve _sys_nerr.](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
 
 ### <a name="error-conditions"></a>Hata koşulları
 
 |||||||
 |-|-|-|-|-|-|
-|*anahtar*|*base*|*Karşılaştır*|*sayısından*|*Genişlik*|**errno**|
-|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|**EıNVAL**|
-|Kaydedilmemiş|**DEĞER**|Kaydedilmemiş|! = 0|Kaydedilmemiş|**EıNVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|= 0|**EıNVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|Kızılötesi|Kaydedilmemiş|**EıNVAL**|
+|*anahtar*|*base*|*Karşılaştırmak*|*number*|*genişlik*|**Errno**|
+|**Null**|herhangi bir|herhangi bir|herhangi bir|herhangi bir|**Eınval**|
+|herhangi bir|**Null**|herhangi bir|!= 0|herhangi bir|**Eınval**|
+|herhangi bir|herhangi bir|herhangi bir|herhangi bir|= 0|**Eınval**|
+|herhangi bir|herhangi bir|**Null**|a|herhangi bir|**Eınval**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Bsearch_s** işlevi, her bir *Genişlik* baytından oluşan *sayı* öğeleri sıralanmış bir dizi öğe için ikili arama gerçekleştirir. *Taban* değeri, aranacak dizinin temelini gösteren bir işaretçidir ve *anahtar* , aranan değerdir. *Compare* parametresi, istenen anahtarı bir dizi öğesiyle karşılaştıran Kullanıcı tarafından sağlanan yordamın bir işaretçisidir ve ilişkilerini belirten aşağıdaki değerlerden birini döndürür:
+**bsearch_s** işlevi, her biri *genişlik* baytboyutunda sıralanmış bir *sayı* öğesi dizisinin ikili aramasını gerçekleştirir. *Temel* değer aranacak dizinin tabanına işaretçidir ve *anahtar* aranan değerdir. *Karşılaştırma* parametresi, istenen anahtarı bir dizi öğesiyle karşılaştıran ve ilişkilerini belirten aşağıdaki değerlerden birini döndüren kullanıcı tarafından sağlanan yordamın işaretçisidir:
 
-|*Compare* yordamının döndürdüğü değer|Açıklama|
+|*Karşılaştırma* yordamı ile döndürülen değer|Açıklama|
 |-----------------------------------------|-----------------|
-|\< 0|Anahtar, Array öğesinden küçüktür.|
-|0|Anahtar, dizi öğesine eşittir.|
-|> 0|Anahtar, dizi öğesinden daha büyük.|
+|\<0|Anahtar dizi öğesinden daha azdır.|
+|0|Anahtar dizi öğesine eşittir.|
+|> 0|Anahtar dizi öğesinden daha büyüktür.|
 
-Arama veri yapısı nesnenin bir parçasıysa *bağlam* işaretçisi yararlı olabilir ve karşılaştırma işlevinin nesnenin üyelerine erişmesi gerekir. *Compare* işlevi, void işaretçisini uygun nesne türüne ve bu nesnenin üyelerine verebilir. *Bağlam* parametresinin eklenmesi, verileri *karşılaştırma* işlevine uygun hale getirmek için statik değişkenleri kullanmayla ilişkili hataların yeniden oluşmasını önlemek için **bsearch_s** daha güvenli hale getirir.
+Aranan veri yapısı bir nesnenin parçasıysa ve karşılaştırma işlevinin nesnenin üyelerine erişmesi gerekiyorsa *bağlam* işaretçisi yararlı olabilir. *Karşılaştırma* işlevi, geçersiz işaretçiyi uygun nesne türüne ve bu nesnenin üyelerine erişebilir. *Bağlam* parametresinin eklenmesi, verileri *karşılaştırma* işlevine kullanılabilir hale getirmek için statik değişkenlerin kullanılmasıyla ilişkili yeniden canlandırma hatalarını önlemek için ek bağlam kullanılabildiğinden, **bsearch_s** daha güvenli hale getirir.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**bsearch_s**|\<Stdlib. h > ve \<Search. h >|
+|**bsearch_s**|\<stdlib.h> \<ve search.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
-Bu program, [qsort_s](qsort-s.md)içeren bir dize dizisini sıralar ve sonra da "Cat" sözcüğünü bulmak için bsearch_s kullanır.
+Bu program [qsort_s](qsort-s.md)ile bir dize dizi sini sıralar ve daha sonra "kedi" sözcüğü bulmak için bsearch_s kullanır.
 
 ```cpp
 // crt_bsearch_s.cpp
@@ -194,7 +198,7 @@ cat found at 002F0F04
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Arama ve sıralama](../../c-runtime-library/searching-and-sorting.md)\
+[Arama ve Sıralama](../../c-runtime-library/searching-and-sorting.md)\
 [_lfind](lfind.md)\
 [_lsearch](lsearch.md)\
 [qsort](qsort.md)

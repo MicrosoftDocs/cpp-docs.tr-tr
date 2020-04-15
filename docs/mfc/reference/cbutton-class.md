@@ -1,5 +1,5 @@
 ---
-title: CButton sınıfı
+title: CButton Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CButton
@@ -74,16 +74,16 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: 669bdb18e378c4dc39bdc6d51ca1ebe7f93fa839
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 05ad60855cd03115cf88ab2b51e56e6a26822035
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79418834"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81352439"
 ---
-# <a name="cbutton-class"></a>CButton sınıfı
+# <a name="cbutton-class"></a>CButton Sınıfı
 
-Windows düğme denetimlerinin işlevlerini sağlar.
+Windows düğmesi denetimlerinin işlevselliğini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -93,102 +93,102 @@ class CButton : public CWnd
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CButton:: CButton](#cbutton)|`CButton` nesnesi oluşturur.|
+|[CButton::CButton](#cbutton)|Bir `CButton` nesne inşa eder.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CButton:: Create](#create)|Windows düğme denetimini oluşturur ve `CButton` nesnesine iliştirir.|
-|[CButton::D rawItem](#drawitem)|Sahip tarafından çizilmiş bir `CButton` nesnesi çizmek için geçersiz kılın.|
-|[CButton:: GetBitmap](#getbitmap)|Daha önce [SetBitmap](#setbitmap)ile ayarlanan bit eşlemin tanıtıcısını alır.|
-|[CButton:: GetButtonStyle](#getbuttonstyle)|Düğme Denetim stiliyle ilgili bilgileri alır.|
-|[CButton:: GetCheck](#getcheck)|Düğme denetiminin denetim durumunu alır.|
-|[CButton:: GetCursor](#getcursor)|Daha önce [SetCursor](#setcursor)ile ayarlanmış imleç resminin tanıtıcısını alır.|
-|[CButton:: GetIcon](#geticon)|Daha önce [setIcon](#seticon)ile ayarlanan simgenin tanıtıcısını alır.|
-|[CButton:: Getısatıcıboyutu](#getidealsize)|Düğme denetiminin ideal boyutunu alır.|
-|[CButton:: GetImageList](#getimagelist)|Düğme denetiminin görüntü listesini alır.|
-|[CButton:: GetNote](#getnote)|Geçerli komut bağlantı denetiminin Note bileşenini alır.|
-|[CButton:: GetNoteLength](#getnotelength)|Geçerli komut bağlantı denetimi için dekont metninin uzunluğunu alır.|
-|[CButton:: GetSplitGlyph](#getsplitglyph)|Geçerli bölme düğmesi denetimiyle ilişkili glifi alır.|
-|[CButton:: Getsptımagelist](#getsplitimagelist)|Geçerli bölünmüş düğme denetiminin görüntü listesini alır.|
-|[CButton:: Getsplitınfo](#getsplitinfo)|Geçerli bölünmüş düğme denetimini tanımlayan bilgileri alır.|
-|[CButton:: GetSplitSize](#getsplitsize)|Geçerli bölünmüş düğme denetiminin aşağı açılan bileşeninin sınırlayıcı dikdörtgenini alır.|
-|[CButton:: GetSplitStyle](#getsplitstyle)|Geçerli bölme düğmesi denetimini tanımlayan bölünmüş düğme stillerini alır.|
-|[CButton:: GetState](#getstate)|Denetim durumunu, vurgu durumunu ve bir düğme denetiminin odak durumunu alır.|
-|[CButton:: GetTextMargin](#gettextmargin)|Düğme denetiminin metin kenar boşluğunu alır.|
-|[CButton:: SetBitmap](#setbitmap)|Düğme üzerinde görüntülenecek bir bit eşlem belirtir.|
-|[CButton:: SetButtonStyle](#setbuttonstyle)|Bir düğmenin stilini değiştirir.|
-|[CButton:: SetCheck](#setcheck)|Düğme denetiminin denetim durumunu ayarlar.|
-|[CButton:: SetCursor](#setcursor)|Düğmede görüntülenecek bir imleç resmi belirtir.|
-|[CButton:: SetDropDownState](#setdropdownstate)|Geçerli bölünmüş düğme denetiminin açılan durumunu ayarlar.|
-|[CButton:: SetIcon](#seticon)|Düğme üzerinde görüntülenecek bir simge belirtir.|
-|[CButton:: SetImageList](#setimagelist)|Düğme denetiminin görüntü listesini ayarlar.|
-|[CButton:: SetNote](#setnote)|Geçerli komut bağlantı denetimindeki notnu ayarlar.|
-|[CButton:: SetSplitGlyph](#setsplitglyph)|Belirtilen glifi geçerli bölme düğmesi denetimiyle ilişkilendirir.|
-|[CButton:: Setsptımagelist](#setsplitimagelist)|Bir görüntü listesini geçerli bölünmüş düğme denetimiyle ilişkilendirir.|
-|[CButton:: Setsplitınfo](#setsplitinfo)|Geçerli bölünmüş düğme denetimini tanımlayan bilgileri belirtir.|
-|[CButton:: SetSplitSize](#setsplitsize)|Geçerli bölünmüş düğme denetiminin aşağı açılan bileşeninin sınırlayıcı dikdörtgenini ayarlar.|
-|[CButton:: SetSplitStyle](#setsplitstyle)|Geçerli bölünmüş düğme denetiminin stilini ayarlar.|
-|[CButton:: SetState](#setstate)|Düğme denetiminin vurgulama durumunu ayarlar.|
-|[CButton:: SetTextMargin](#settextmargin)|Düğme denetiminin metin kenar boşluğunu ayarlar.|
+|[CButton::Oluştur](#create)|Windows düğmesi denetimini oluşturur ve `CButton` nesneye bağlar.|
+|[CButton::DrawItem](#drawitem)|Sahibi tarafından çizilmiş `CButton` bir nesne çizmek için geçersiz kılma.|
+|[CButton::GetBitmap](#getbitmap)|[SetBitmap](#setbitmap)ile daha önce ayarlanmış bit eşlemi nin tutamacını alır.|
+|[CButton::GetButtonStyle](#getbuttonstyle)|Düğme denetim stili hakkında bilgi alır.|
+|[CButton::GetCheck](#getcheck)|Düğme denetiminin denetim durumunu alır.|
+|[CButton::GetCursor](#getcursor)|[SetCursor](#setcursor)ile daha önce ayarlanmış imleç görüntüsünün tutamacını alır.|
+|[CButton::GetIcon](#geticon)|[SetIcon](#seticon)ile daha önce ayarlanmış simgenin tutamacını alır.|
+|[CButton::GetIdealSize](#getidealsize)|Düğme denetiminin ideal boyutunu alır.|
+|[CButton::GetImageList](#getimagelist)|Düğme denetiminin görüntü listesini alır.|
+|[CButton::GetNote](#getnote)|Geçerli komut bağlantısı denetiminin not bileşenini alır.|
+|[CButton::GetNoteLength](#getnotelength)|Geçerli komut bağlantısı denetimi için not metninin uzunluğunu alır.|
+|[CButton::GetSplitGlyph](#getsplitglyph)|Geçerli bölme düğmesi denetimiyle ilişkili glifleri alır.|
+|[CButton::GetSplitImageList](#getsplitimagelist)|Geçerli bölme düğmesi denetimi için görüntü listesini alır.|
+|[CButton::GetSplitInfo](#getsplitinfo)|Geçerli bölme düğmesi denetimini tanımlayan bilgileri alır.|
+|[CButton::GetSplitSize](#getsplitsize)|Geçerli bölme düğmesi denetiminin açılır bileşeninin sınırlayıcı dikdörtgenini alır.|
+|[CButton::GetSplitStyle](#getsplitstyle)|Geçerli split düğmesi denetimini tanımlayan bölünmüş düğme stillerini alır.|
+|[CButton::GetState](#getstate)|Denetim durumunu alır, durumu vurgular ve düğme denetiminin odak durumunu alır.|
+|[CButton::GetTextMargin](#gettextmargin)|Düğme denetiminin metin kenar boşluğunu alır.|
+|[CButton::SetBitmap](#setbitmap)|Düğmede görüntülenecek bir bit eşlemi belirtir.|
+|[CButton::SetButtonStyle](#setbuttonstyle)|Düğmenin stilini değiştirir.|
+|[CButton::SetCheck](#setcheck)|Düğme denetiminin denetim durumunu ayarlar.|
+|[CButton::SetCursor](#setcursor)|Düğmede görüntülenecek bir imleç görüntüsünü belirtir.|
+|[CButton::SetDropDownState](#setdropdownstate)|Geçerli bölme düğmesi denetiminin açılır durumunu ayarlar.|
+|[CButton::SetIcon](#seticon)|Düğmede görüntülenecek bir simge belirtir.|
+|[CButton::SetImageList](#setimagelist)|Düğme denetiminin görüntü listesini ayarlar.|
+|[CButton::SetNote](#setnote)|Geçerli komut bağlantısı denetiminde notu ayarlar.|
+|[CButton:SetSplitGlyph](#setsplitglyph)|Geçerli split düğmesi denetimi ile belirli bir gph ilişkilendirer.|
+|[CButton::SetSplitImageList](#setsplitimagelist)|Bir görüntü listesini geçerli bölme düğmesi denetimiyle ilişkilendirer.|
+|[CButton:SetSplitInfo](#setsplitinfo)|Geçerli bölme düğmesi denetimini tanımlayan bilgileri belirtir.|
+|[CButton::SetSplitSize](#setsplitsize)|Geçerli bölme düğmesi denetiminin açılır bileşeninin sınırlayıcı dikdörtgenini ayarlar.|
+|[CButton::SetSplitStyle](#setsplitstyle)|Geçerli bölme düğmesi denetiminin stilini ayarlar.|
+|[CButton::SetState](#setstate)|Düğme denetiminin vurgulama durumunu ayarlar.|
+|[CButton::SetTextMargin](#settextmargin)|Düğme denetiminin metin kenar boşluğunu ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Düğme denetimi, tıklanan ve kapatılagösteren küçük, dikdörtgen bir alt penceredir. Düğmeler tek başına veya gruplar halinde kullanılabilir ve metin olmadan etiketlenebilir ya da görünebilir. Düğme genellikle Kullanıcı tıkladığı zaman görünümü değiştirir.
+Düğme denetimi, tıklanabilen ve kapatabilen küçük, dikdörtgen bir alt penceredir. Düğmeler tek başına veya gruplar halinde kullanılabilir ve etiketlenebilir veya metin olmadan görünebilir. Bir düğme genellikle kullanıcı tıklattığında görünümünü değiştirir.
 
-Tipik düğmeler onay kutusu, radyo düğmesi ve basma düğmeli. Bir `CButton` nesnesi, [Create](#create) member işlevi tarafından başlatılırken belirtilen [düğme stiline](../../mfc/reference/styles-used-by-mfc.md#button-styles) göre bunlardan herhangi biri olabilir.
+Tipik düğmeler onay kutusu, radyo düğmesi ve düğmedir. Bir `CButton` nesne, [Üye Oluştur](#create) işlevi tarafından başlatılmasında belirtilen [düğme stiline](../../mfc/reference/styles-used-by-mfc.md#button-styles) göre bunlardan herhangi biri olabilir.
 
-Ayrıca, `CButton` türetilen [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md) sınıfı, metin yerine bit eşlem görüntülerle etiketlenmiş düğme denetimlerinin oluşturulmasını destekler. Bir `CBitmapButton`, bir düğmenin yukarı, aşağı, odaklanmış ve devre dışı durumları için ayrı bit eşlemlere sahip olabilir.
+Buna ek olarak, metin yerine `CButton` bitmap görüntüleriyle etiketlenmiş düğme denetimlerinin oluşturulmasını destekleyen [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md) sınıfı. Bir `CBitmapButton` düğmenin yukarı, aşağı, odaklanmış ve devre dışı bırakılmış durumları için ayrı bit eşlemleri olabilir.
 
-Bir iletişim kutusu şablonundan ya da doğrudan kodunuzda bir düğme denetimi oluşturabilirsiniz. Her iki durumda da, `CButton` `CButton` nesnesini oluşturmak için önce oluşturucuyu çağırın; ardından, Windows düğme denetimini oluşturmak ve `CButton` nesnesine eklemek için `Create` member işlevini çağırın.
+Bir iletişim şablonundan veya doğrudan kodunuzda bir düğme denetimi oluşturabilirsiniz. Her iki durumda da, `CButton` `CButton` önce nesneoluşturmak için oluşturucuyu arayın; ardından Windows `Create` düğmesi denetimini oluşturmak ve `CButton` nesneye takmak için üye işlevi arayın.
 
-Oluşturma, `CButton`türetilmiş bir sınıfta tek adımlı bir işlem olabilir. Türetilmiş sınıf için bir Oluşturucu yazın ve Oluşturucu içinden `Create` çağırın.
+İnşaat, `CButton`bir sınıftan türetilen tek adımlı bir işlem olabilir. Türemiş sınıf için bir `Create` oluşturucu yazın ve oluşturucu içinden arayın.
 
-Bir düğme denetimi tarafından kendi üst öğesine (genellikle [CDialog](../../mfc/reference/cdialog-class.md)'dan türetilmiş bir sınıf) gönderilen Windows bildirim iletilerini işlemek istiyorsanız, her ileti için üst sınıfa bir ileti eşleme girişi ve ileti işleyici üye işlevi ekleyin.
+Bir düğme denetimi tarafından üst öğesine gönderilen Windows bildirim iletilerini (genellikle [CDialog'dan](../../mfc/reference/cdialog-class.md)türetilmiş bir sınıf) işlemek istiyorsanız, her ileti için üst sınıfa bir ileti eşlemi girişi ve ileti işleyicisi üye işlevi ekleyin.
 
-Her ileti eşleme girişi aşağıdaki biçimi alır:
+Her ileti-eş-eşlemi girişi aşağıdaki formu alır:
 
-**\_** _bildiriminde_ **(** _kimlik_, _memberFxn_ **)**
+**ON\_**_Bildirimi_ **(** _id_, _üyeFxn_ **)**
 
-Burada *kimlik* bildirimi gönderen denetimin alt pencere kimliğini belirtir ve *memberFxn* , bildirimi işlemek için yazdığınız ana üye işlevinin adıdır.
+*id* bildirimi gönderen denetimin alt pencere kimliğini belirtir ve *memberFxn* bildirimi işlemek için yazdığınız üst üye işlevinin adıdır.
 
-Üst öğenin işlev prototipi aşağıdaki gibidir:
+Ebeveynin işlev prototipi aşağıdaki gibidir:
 
 `afx_msg void memberFxn();`
 
-Olası ileti eşleme girdileri aşağıdaki gibidir:
+Olası ileti-eşlemi girişleri aşağıdaki gibidir:
 
-|Eşleme girişi|Üst öğeye gönderildi...|
+|Harita girişi|Ebeveyne ne zaman gönderilir...|
 |---------------|----------------------------|
-|ON_BN_CLICKED|Kullanıcı bir düğmeye tıklar.|
-|ON_BN_DOUBLECLICKED|Kullanıcı bir düğmeye çift tıklar.|
+|ON_BN_CLICKED|Kullanıcı bir düğmeyi tıklatıyor.|
+|ON_BN_DOUBLECLICKED|Kullanıcı bir düğmeyi çift tıklatıyor.|
 
-İletişim kutusu kaynağından bir `CButton` nesnesi oluşturursanız, Kullanıcı iletişim kutusunu kapattığında `CButton` nesnesi otomatik olarak yok edilir.
+Bir iletişim `CButton` kaynağından bir nesne oluşturursanız, kullanıcı iletişim kutusunu kapattığında `CButton` nesne otomatik olarak yok edilir.
 
-Bir pencere içinde `CButton` nesnesi oluşturursanız, onu yok etmeniz gerekebilir. **Yeni** işlevi kullanarak yığında `CButton` nesnesi oluşturursanız, Kullanıcı Windows düğme denetimini kapattığında nesneyi yok etmek için **Delete** öğesini çağırmanız gerekir. `CButton` nesnesini yığında oluşturursanız veya üst iletişim nesnesine katıştırılmışsa, otomatik olarak yok edilir.
+Bir pencere `CButton` içinde bir nesne oluşturursanız, onu yok etmek gerekebilir. Nesneyi `CButton` **yeni** işlevi kullanarak yığında oluşturursanız, kullanıcı Windows düğmesi denetimini kapattığında nesneyi yok etmek için nesneyi **sil'i** aramanız gerekir. Nesneyi `CButton` yığında oluşturursanız veya üst iletişim nesnesine katıştırılırsa, otomatik olarak yok edilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 `CButton`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** Afxwin. h
+**Üstbilgi:** afxwin.h
 
-##  <a name="cbutton"></a>CButton:: CButton
+## <a name="cbuttoncbutton"></a><a name="cbutton"></a>CButton::CButton
 
-`CButton` nesnesi oluşturur.
+Bir `CButton` nesne inşa eder.
 
 ```
 CButton();
@@ -198,9 +198,9 @@ CButton();
 
 [!code-cpp[NVC_MFC_CButton#1](../../mfc/reference/codesnippet/cpp/cbutton-class_1.cpp)]
 
-##  <a name="create"></a>CButton:: Create
+## <a name="cbuttoncreate"></a><a name="create"></a>CButton::Oluştur
 
-Windows düğme denetimini oluşturur ve `CButton` nesnesine iliştirir.
+Windows düğmesi denetimini oluşturur ve `CButton` nesneye bağlar.
 
 ```
 virtual BOOL Create(
@@ -216,47 +216,47 @@ virtual BOOL Create(
 *lpszCaption*<br/>
 Düğme denetiminin metnini belirtir.
 
-*dwStyle*<br/>
-Düğme denetiminin stilini belirtir. Düğme [stillerinin](../../mfc/reference/styles-used-by-mfc.md#button-styles) herhangi bir birleşimini düğmeye uygulayın.
+*Dwstyle*<br/>
+Düğme denetiminin stilini belirtir. [Düğme stillerinin](../../mfc/reference/styles-used-by-mfc.md#button-styles) herhangi bir birleşimini düğmeye uygulayın.
 
 *Rect*<br/>
-Düğme denetiminin boyutunu ve konumunu belirtir. `CRect` nesne veya `RECT` yapısı olabilir.
+Düğme denetiminin boyutunu ve konumunu belirtir. Bir `CRect` nesne veya yapı `RECT` olabilir.
 
 *pParentWnd*<br/>
-Düğme denetiminin ana penceresini, genellikle bir `CDialog`belirtir. NULL olmaması gerekir.
+Düğme denetiminin ana penceresini belirtir, `CDialog`genellikle bir . NULL olmamalıdır.
 
-*NID*<br/>
-Düğme denetiminin KIMLIĞINI belirtir.
+*Nıd*<br/>
+Düğme denetiminin kimliğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CButton` nesnesini iki adımda oluşturursunuz. İlk olarak, oluşturucuyu çağırın ve ardından Windows düğme denetimini oluşturan ve bunu `CButton` nesnesine bağlayan `Create`çağırın.
+Bir nesneyi `CButton` iki adımda inşa ee. İlk olarak, oluşturucuyu `Create`çağırın ve ardından Windows düğmesi denetimini `CButton` oluşturan ve nesneye iliştiren ,
 
-WS_VISIBLE stili verilirse Windows, düğme denetimini etkinleştirmek için gereken tüm iletileri gönderir ve düğmeyi gösterir.
+WS_VISIBLE stili verilirse, Windows düğmeyi etkinleştirmek ve düğmeyi göstermek için gereken tüm iletileri kontrol eder.
 
-Düğme denetimine aşağıdaki [pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#window-styles) uygulayın:
+Aşağıdaki [pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#window-styles) bir düğme denetimine uygulayın:
 
-- WS_CHILD her zaman
+- WS_CHILD Her Zaman
 
-- Genellikle WS_VISIBLE
+- WS_VISIBLE Genellikle
 
-- WS_DISABLED nadiren
+- WS_DISABLED Nadiren
 
-- Denetimleri gruplamak Için WS_GROUP
+- WS_GROUP Denetimleri gruplandırmak için
 
-- Düğmeyi sekme sırasına eklemek WS_TABSTOP
+- WS_TABSTOP Düğmeyi sekme sırasına eklemek için
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#2](../../mfc/reference/codesnippet/cpp/cbutton-class_2.cpp)]
 
-##  <a name="drawitem"></a>CButton::D rawItem
+## <a name="cbuttondrawitem"></a><a name="drawitem"></a>CButton::DrawItem
 
-Sahip tarafından çizilmiş bir düğmenin görsel bir yönü değiştiğinde Framework tarafından çağırılır.
+Sahip tarafından çizilen düğmenin görsel yönü değiştiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
@@ -265,11 +265,11 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDrawItemStruct*<br/>
-[Drawitemstruct](/windows/win32/api/winuser/ns-winuser-drawitemstruct) yapısına yönelik uzun bir işaretçi. Yapı, çizilecek öğe ve çizim türü hakkında bilgiler içerir.
+[DRAWITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-drawitemstruct) yapısıiçin uzun bir işaretçi. Yapı, çizilecek öğe ve gerekli çizim türü hakkında bilgi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sahip tarafından çizilmiş bir düğmenin BS_OWNERDRAW stil kümesi vardır. Sahip tarafından çizilmiş bir `CButton` nesne için çizim uygulamak üzere bu üye işlevini geçersiz kılın. Uygulamanın, üye işlevi sonlandırılmadan önce *Lpdrawitemstruct* içinde sağlanan görüntüleme bağlamı için seçilen tüm grafik cihaz ARABIRIMI (GDI) nesnelerini geri yüklemesi gerekir.
+Sahip tarafından çizilen bir düğme, BS_OWNERDRAW stil kümesine sahiptir. Sahibi tarafından çizilen `CButton` bir nesne için çizim uygulamak için bu üye işlevi geçersiz kılın. Uygulama, üye işlev sona erdirilmeden önce *lpDrawItemStruct'ta* sağlanan ekran bağlamı için seçilen tüm grafik aygıtı arabirimi (GDI) nesnelerini geri yüklemelidir.
 
 Ayrıca [BS_](../../mfc/reference/styles-used-by-mfc.md#button-styles) stil değerlerine bakın.
 
@@ -277,9 +277,9 @@ Ayrıca [BS_](../../mfc/reference/styles-used-by-mfc.md#button-styles) stil değ
 
 [!code-cpp[NVC_MFC_CButton#3](../../mfc/reference/codesnippet/cpp/cbutton-class_3.cpp)]
 
-##  <a name="getbitmap"></a>CButton:: GetBitmap
+## <a name="cbuttongetbitmap"></a><a name="getbitmap"></a>CButton::GetBitmap
 
-Daha önce bir düğmeyle ilişkilendirilen bir [bit eşlemin tanıtıcısını](#setbitmap)almak için bu üye işlevi çağırın.
+Daha önce [SetBitmap](#setbitmap)ile ayarlanmış bir bitmap, bir düğme ile ilişkili işlemek almak için bu üye işlevi arayın.
 
 ```
 HBITMAP GetBitmap() const;
@@ -287,15 +287,15 @@ HBITMAP GetBitmap() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bit eşlem tutamacı. Daha önce bir bit eşlem belirtilmemişse NULL.
+Bitmap için bir tutamaç. Daha önce bit eşlemi belirtilmemişse NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#4](../../mfc/reference/codesnippet/cpp/cbutton-class_4.cpp)]
 
-##  <a name="getbuttonstyle"></a>CButton:: GetButtonStyle
+## <a name="cbuttongetbuttonstyle"></a><a name="getbuttonstyle"></a>CButton::GetButtonStyle
 
-Düğme Denetim stiliyle ilgili bilgileri alır.
+Düğme denetim stili hakkında bilgi alır.
 
 ```
 UINT GetButtonStyle() const;
@@ -303,15 +303,15 @@ UINT GetButtonStyle() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu `CButton` nesnesi için düğme stillerini döndürür. Bu işlev, diğer pencere stillerinden hiçbirini değil yalnızca [BS_](../../mfc/reference/styles-used-by-mfc.md#button-styles) stil değerlerini döndürür.
+Bu `CButton` nesne için düğme stillerini döndürür. Bu işlev, diğer pencere stillerinden herhangi birini değil, yalnızca [BS_](../../mfc/reference/styles-used-by-mfc.md#button-styles) stil değerlerini döndürür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#5](../../mfc/reference/codesnippet/cpp/cbutton-class_5.cpp)]
 
-##  <a name="getcheck"></a>CButton:: GetCheck
+## <a name="cbuttongetcheck"></a><a name="getcheck"></a>CButton::GetCheck
 
-Radyo düğmesinin veya onay kutusunun denetim durumunu alır.
+Radyo düğmesinin veya onay kutusunun onay durumunu alır.
 
 ```
 int GetCheck() const;
@@ -319,23 +319,23 @@ int GetCheck() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-BS_AUTOCHECKBOX, BS_AUTORADIOBUTTON, BS_AUTO3STATE, BS_CHECKBOX, BS_RADIOBUTTON veya BS_3STATE stili ile oluşturulan bir düğme denetimindeki dönüş değeri aşağıdaki değerlerden biridir:
+BS_AUTOCHECKBOX, BS_AUTORADIOBUTTON, BS_AUTO3STATE, BS_CHECKBOX, BS_RADIOBUTTON veya BS_3STATE stiliyle oluşturulan bir düğme denetiminden gelen dönüş değeri aşağıdaki değerlerden biridir:
 
 |Değer|Anlamı|
 |-----------|-------------|
-|BST_UNCHECKED|Düğme durumu işaretli değil.|
-|BST_CHECKED|Düğme durumu işaretlendi.|
-|BST_INDETERMINATE|Düğme durumu belirsiz (yalnızca düğmenin BS_3STATE veya BS_AUTO3STATE stili varsa geçerlidir).|
+|Bst_unchecked|Düğme durumu işaretlenmedi.|
+|BST_CHECKED|Düğme durumu kontrol edilir.|
+|BST_INDETERMINATE|Düğme durumu belirsizdir (yalnızca düğmede BS_3STATE veya BS_AUTO3STATE stili varsa geçerlidir).|
 
-Düğmenin başka bir stili varsa, dönüş değeri BST_UNCHECKED.
+Düğmenin başka bir stili varsa, iade değeri BST_UNCHECKED.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#6](../../mfc/reference/codesnippet/cpp/cbutton-class_6.cpp)]
 
-##  <a name="getcursor"></a>CButton:: GetCursor
+## <a name="cbuttongetcursor"></a><a name="getcursor"></a>CButton::GetCursor
 
-Daha önce, bir düğme ile ilişkili olan, daha önce [SetCursor](#setcursor)ile ayarlanmış bir imlecin tanıtıcısını almak için bu üye işlevini çağırın.
+Daha önce [SetCursor](#setcursor)ile ayarlanmış bir imleç tutamacı almak için bu üye işlevi arayın, bir düğme ile ilişkili.
 
 ```
 HCURSOR GetCursor();
@@ -343,15 +343,15 @@ HCURSOR GetCursor();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İmleç resmine yönelik bir tanıtıcı. Daha önce belirtilen imleç yoksa NULL.
+İmleç resmine bir tutamaç. İmleç yoksa NULL daha önce belirtilmemişse.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#7](../../mfc/reference/codesnippet/cpp/cbutton-class_7.cpp)]
 
-##  <a name="geticon"></a>CButton:: GetIcon
+## <a name="cbuttongeticon"></a><a name="geticon"></a>CButton::GetIcon
 
-Bir düğme ile ilişkili olan, daha önce [setIcon](#seticon)ile ayarlanmış bir simgenin tanıtıcısını almak için bu üye işlevini çağırın.
+Daha önce [SetIcon](#seticon)ile ayarlanmış bir simgenin tutamacını almak için bu üye işlevi arayın, bir düğme ile ilişkilidir.
 
 ```
 HICON GetIcon() const;
@@ -359,15 +359,15 @@ HICON GetIcon() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Simgenin bir tutamacı. Daha önce belirtilmemişse NULL.
+Simgenin tutamacı. Daha önce simge belirtilmemişse NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#8](../../mfc/reference/codesnippet/cpp/cbutton-class_8.cpp)]
 
-##  <a name="getidealsize"></a>CButton:: Getısatıcıboyutu
+## <a name="cbuttongetidealsize"></a><a name="getidealsize"></a>CButton::GetIdealSize
 
-Düğme denetimi için ideal boyutu alır.
+Düğme kontrolü için ideal boyutu alır.
 
 ```
 BOOL GetIdealSize(SIZE* psize);
@@ -375,20 +375,20 @@ BOOL GetIdealSize(SIZE* psize);
 
 ### <a name="parameters"></a>Parametreler
 
-*psıze*<br/>
-Düğmenin geçerli boyutuna yönelik bir işaretçi.
+*psize*<br/>
+Düğmenin geçerli boyutuna işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK [düğmeler](/windows/win32/controls/buttons) bölümünde açıklandığı gibi BCM_GETIDEALSIZE iletisinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK'nın [Düğmeler](/windows/win32/controls/buttons) bölümünde açıklandığı gibi BCM_GETIDEALSIZE iletinin işlevselliğini taklit eder.
 
-##  <a name="getimagelist"></a>CButton:: GetImageList
+## <a name="cbuttongetimagelist"></a><a name="getimagelist"></a>CButton::GetImageList
 
-Düğme denetiminden görüntü listesini almak için bu yöntemi çağırın.
+Görüntü listesini düğme denetiminden almak için bu yöntemi arayın.
 
 ```
 BOOL GetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
@@ -396,20 +396,20 @@ BOOL GetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pbuttonımagelist*<br/>
-`CButton` nesnesinin görüntü listesine yönelik bir işaretçi.
+*pbuttonImagelist*<br/>
+`CButton` Nesnenin görüntü listesine bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK [düğmeler](/windows/win32/controls/buttons) bölümünde açıklandığı gibi BCM_GETIMAGELIST iletisinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK'nın [Düğmeler](/windows/win32/controls/buttons) bölümünde açıklandığı gibi BCM_GETIMAGELIST iletisinin işlevselliğini taklit eder.
 
-##  <a name="getnote"></a>CButton:: GetNote
+## <a name="cbuttongetnote"></a><a name="getnote"></a>CButton::GetNote
 
-Geçerli komut bağlantı denetimiyle ilişkili dekont metnini alır.
+Geçerli komut bağlantısı denetimiyle ilişkili not metnini alır.
 
 ```
 CString GetNote() const;
@@ -423,26 +423,26 @@ BOOL GetNote(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*lpszNote*|dışı Çağıranın ayrılırken ve ayırmayı kaldırmaktan sorumlu olduğu bir arabelleğin işaretçisi. Dönüş değeri TRUE ise, arabellek geçerli komut bağlantı denetimiyle ilişkili olan Note metnini içerir; Aksi takdirde, arabellek değiştirilmez.|
-|*cchNote*|[in, out] İşaretsiz tamsayı değişkenine yönelik bir işaretçi.<br /><br /> Bu yöntem çağrıldığında, değişkeni *lpszNote* parametresi tarafından belirtilen arabelleğin boyutunu içerir.<br /><br /> Bu yöntem döndüğünde, return değeri TRUE ise değişkeni geçerli komut bağlantı denetimiyle ilişkili notun boyutunu içerir. Dönüş değeri FALSE ise, değişken notun içermesi için gereken arabellek boyutunu içerir.|
+|*lpszNote*|[çıkış] Arayanın ayırma ve ayırma dan sorumlu olduğu bir arabelleğe işaretçi. İade değeri TRUE ise, arabellek geçerli komut bağlantısı denetimi ile ilişkili not metnini içerir; aksi takdirde arabellek değişmez.|
+|*cchNote*|[içinde, dışarı] İmzasız bir tamsayı değişkenine işaretçi.<br /><br /> Bu yöntem çağrıldığında, değişken *lpszNote* parametresi tarafından belirtilen arabellek boyutunu içerir.<br /><br /> Bu yöntem döndüğünde, iade değeri TRUE ise değişken, geçerli komut bağlantısı denetimiyle ilişkili notun boyutunu içerir. İade değeri FALSE ise, değişken notu içermek için gereken arabellek boyutunu içerir.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk aşırı yüklemede, geçerli komut bağlantı denetimiyle ilişkili dekont metnini içeren bir [CString](../../atl-mfc-shared/using-cstring.md) nesnesi.
+İlk aşırı yüklemede, geçerli komut bağlantısı denetimiyle ilişkili not metnini içeren bir [CString](../../atl-mfc-shared/using-cstring.md) nesnesi.
 
 -veya-
 
-İkinci aşırı yüklemede, bu yöntem başarılı olursa doğru; Aksi takdirde, FALSE.
+İkinci aşırı yükte, bu yöntem başarılı olursa TRUE; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntemi yalnızca düğme stili BS_COMMANDLINK veya BS_DEFCOMMANDLINK olan denetimlerle kullanın.
 
-Bu yöntem, Windows SDK açıklanan [BCM_GETNOTE](/windows/win32/Controls/bcm-getnote) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [BCM_GETNOTE](/windows/win32/Controls/bcm-getnote) iletisini gönderir.
 
-##  <a name="getnotelength"></a>CButton:: GetNoteLength
+## <a name="cbuttongetnotelength"></a><a name="getnotelength"></a>CButton::GetNoteLength
 
-Geçerli komut bağlantı denetimi için dekont metninin uzunluğunu alır.
+Geçerli komut bağlantısı denetimi için not metninin uzunluğunu alır.
 
 ```
 UINT GetNoteLength() const;
@@ -450,17 +450,17 @@ UINT GetNoteLength() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli komut bağlantı denetimi için, 16 bit Unicode karakterdeki dekont metninin uzunluğu.
+Geçerli komut bağlantısı denetimi için 16 bit Unicode karakterlerinde not metninin uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntemi yalnızca düğme stili BS_COMMANDLINK veya BS_DEFCOMMANDLINK olan denetimlerle kullanın.
 
-Bu yöntem, Windows SDK açıklanan [BCM_GETNOTELENGTH](/windows/win32/Controls/bcm-getnotelength) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [BCM_GETNOTELENGTH](/windows/win32/Controls/bcm-getnotelength) iletisini gönderir.
 
-##  <a name="getsplitglyph"></a>CButton:: GetSplitGlyph
+## <a name="cbuttongetsplitglyph"></a><a name="getsplitglyph"></a>CButton::GetSplitGlyph
 
-Geçerli bölme düğmesi denetimiyle ilişkili glifi alır.
+Geçerli bölme düğmesi denetimiyle ilişkili glifleri alır.
 
 ```
 TCHAR GetSplitGlyph() const;
@@ -468,19 +468,19 @@ TCHAR GetSplitGlyph() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bölünmüş düğme denetimiyle ilişkili glif karakteri.
+Geçerli split düğmesi denetimiyle ilişkili glyph karakteri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Glif, belirli bir yazı tipindeki bir karakterin fiziksel gösterimidir. Örneğin, bir Split Button denetimi Unicode onay işareti karakterinin (U + 2713) glifi ile donatılmış olabilir.
+Glifler, belirli bir yazı tipindeki bir karakterin fiziksel temsilidir. Örneğin, bölünmüş düğme denetimi Unicode onay işareti karakterinin (U+2713) glifleri ile dekore edilebilir.
 
 Bu yöntemi yalnızca düğme stili BS_SPLITBUTTON veya BS_DEFSPLITBUTTON olan denetimlerle kullanın.
 
-Bu yöntem, bir [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapısının `mask` üyesini BCSIF_GLYPH bayrağıyla başlatır ve ardından bu yapıyı Windows SDK açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) mesajında gönderir. İleti işlevi döndüğünde, bu yöntem, yapının `himlGlyph` üyesinden glifi alır.
+Bu yöntem, BCSIF_GLYPH `mask` bayrağı olan bir [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapının üyesini başolarak karşılar ve bu yapıyı Windows SDK'da açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) iletiye gönderir. İleti işlevi döndüğünde, bu yöntem yapının `himlGlyph` üyesinden glifleri alır.
 
-##  <a name="getsplitimagelist"></a>CButton:: Getsptımagelist
+## <a name="cbuttongetsplitimagelist"></a><a name="getsplitimagelist"></a>CButton::GetSplitImageList
 
-Geçerli bölünmüş düğme denetiminin [görüntü listesini](../../mfc/reference/cimagelist-class.md) alır.
+Geçerli bölme düğmesi denetimi için [görüntü listesini](../../mfc/reference/cimagelist-class.md) alır.
 
 ```
 CImageList* GetSplitImageList() const;
@@ -488,17 +488,17 @@ CImageList* GetSplitImageList() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [CImageList](../../mfc/reference/cimagelist-class.md) nesnesine yönelik bir işaretçi.
+[CImageList](../../mfc/reference/cimagelist-class.md) nesnesine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntemi yalnızca düğme stili BS_SPLITBUTTON veya BS_DEFSPLITBUTTON olan denetimlerle kullanın.
 
-Bu yöntem, bir [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapısının `mask` üyesini BCSIF_IMAGE bayrağıyla başlatır ve ardından bu yapıyı Windows SDK açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) mesajında gönderir. İleti işlevi döndüğünde, bu yöntem yapının `himlGlyph` üyesinin görüntü listesini alır.
+Bu yöntem, BCSIF_IMAGE `mask` bayrağı olan [bir BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapının üyesini başolarak karşılar ve bu yapıyı Windows SDK'da açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) iletiye gönderir. İleti işlevi döndüğünde, bu yöntem yapının `himlGlyph` üyesinden görüntü listesini alır.
 
-##  <a name="getsplitinfo"></a>CButton:: Getsplitınfo
+## <a name="cbuttongetsplitinfo"></a><a name="getsplitinfo"></a>CButton::GetSplitInfo
 
-Windows 'un geçerli bölünmüş düğme denetimini nasıl çizdiği belirleme parametrelerini alır.
+Windows'un geçerli bölme düğmesi denetimini nasıl çizer ini belirleyen parametreleri alır.
 
 ```
 BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
@@ -508,21 +508,21 @@ BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pInfo*|dışı Geçerli bölünmüş düğme denetimi hakkında bilgi alan [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapısına yönelik işaretçi. Çağıran, yapıyı ayırmaktan sorumludur.|
+|*Pınfo*|[çıkış] Geçerli bölme düğmesi denetimi hakkında bilgi alan [bir BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapıyı işaretleyin. Arayanın yapısı ayırmakla yükümlü olduğu kişi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
+Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntemi yalnızca düğme stili BS_SPLITBUTTON veya BS_DEFSPLITBUTTON olan denetimlerle kullanın.
 
-Bu yöntem, Windows SDK açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) iletisini gönderir.
 
-##  <a name="getsplitsize"></a>CButton:: GetSplitSize
+## <a name="cbuttongetsplitsize"></a><a name="getsplitsize"></a>CButton::GetSplitSize
 
-Geçerli bölünmüş düğme denetiminin aşağı açılan bileşeninin sınırlayıcı dikdörtgenini alır.
+Geçerli bölme düğmesi denetiminin açılır bileşeninin sınırlayıcı dikdörtgenini alır.
 
 ```
 BOOL GetSplitSize(LPSIZE pSize) const;
@@ -532,23 +532,23 @@ BOOL GetSplitSize(LPSIZE pSize) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Psıze*|dışı Bir dikdörtgenin açıklamasını alan [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına yönelik işaretçi.|
+|*pSize*|[çıkış] Dikdörtgenin açıklamasını alan bir [SIZE](/windows/win32/api/windef/ns-windef-size) yapısına işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
+Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntemi yalnızca düğme stili BS_SPLITBUTTON veya BS_DEFSPLITBUTTON olan denetimlerle kullanın.
 
-Bölünmüş düğme denetimi genişletildiğinde, liste denetimi veya sayfalayıcı denetimi gibi bir açılan bileşen görüntüleyebilirsiniz. Bu yöntem, açılan bileşeni içeren sınırlayıcı dikdörtgeni alır.
+Bölme düğmesi denetimi genişletildiğinde, liste denetimi veya çağrı cihazı denetimi gibi açılır bir bileşeni görüntüleyebilir. Bu yöntem, açılır bileşeni içeren sınırlayıcı dikdörtgeni alır.
 
-Bu yöntem, bir [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapısının `mask` üyesini BCSIF_SIZE bayrağıyla başlatır ve ardından bu yapıyı Windows SDK açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) mesajında gönderir. İleti işlevi döndüğünde, bu yöntem yapının `size` üyesinden sınırlayıcı dikdörtgeni alır.
+Bu yöntem, BCSIF_SIZE `mask` bayrağı olan bir [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapının üyesini başolarak karşılar ve bu yapıyı Windows SDK'da açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) iletiye gönderir. İleti işlevi döndüğünde, bu yöntem yapının `size` üyesinden sınırlayıcı dikdörtgeni alır.
 
-##  <a name="getsplitstyle"></a>CButton:: GetSplitStyle
+## <a name="cbuttongetsplitstyle"></a><a name="getsplitstyle"></a>CButton::GetSplitStyle
 
-Geçerli bölme düğmesi denetimini tanımlayan bölünmüş düğme stillerini alır.
+Geçerli split düğmesi denetimini tanımlayan bölünmüş düğme stillerini alır.
 
 ```
 UINT GetSplitStyle() const;
@@ -556,17 +556,17 @@ UINT GetSplitStyle() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölünmüş düğme stillerinin bit düzeyinde birleşimi. Daha fazla bilgi için [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapısının `uSplitStyle` üyeye bakın.
+Bölünmüş düğme stillerinin bitwise kombinasyonu. Daha fazla bilgi `uSplitStyle` için [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapının üyesine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntemi yalnızca düğme stili BS_SPLITBUTTON veya BS_DEFSPLITBUTTON olan denetimlerle kullanın.
 
-Bölünmüş düğme stilleri hizalama, en boy oranı ve Windows 'un bölünmüş düğme simgesi çizen grafik biçimini belirtir.
+Bölünmüş düğme stilleri, Windows'un bölünmüş düğme simgesini çizdiği hizalamayı, en boy oranını ve grafik biçimini belirtir.
 
-Bu yöntem, bir [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapısının `mask` üyesini BCSIF_STYLE bayrağıyla başlatır ve ardından bu yapıyı Windows SDK açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) mesajında gönderir. İleti işlevi döndürüldüğünde, bu yöntem yapının `uSplitStyle` üyesinin bölünmüş düğme stillerini alır.
+Bu yöntem, BCSIF_STYLE `mask` bayrağı olan [bir BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapının üyesini başolarak karşılar ve bu yapıyı Windows SDK'da açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) iletiye gönderir. İleti işlevi döndüğünde, bu yöntem yapının `uSplitStyle` üyesinden bölünmüş düğme stillerini alır.
 
-##  <a name="getstate"></a>CButton:: GetState
+## <a name="cbuttongetstate"></a><a name="getstate"></a>CButton::GetState
 
 Düğme denetiminin durumunu alır.
 
@@ -576,27 +576,27 @@ UINT GetState() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir düğme denetiminin geçerli durumunu gösteren değerlerin birleşimini içeren bir bit alanı. Aşağıdaki tabloda olası değerler listelenmektedir.
+Bir düğme denetiminin geçerli durumunu gösteren değerlerin birleşimini içeren bir bit alanı. Aşağıdaki tabloda olası değerler listeleilmektedir.
 
-|Düğme durumu|Değer|Açıklama|
+|Düğme Durumu|Değer|Açıklama|
 |------------------|-----------|-----------------|
-|BST_UNCHECKED|0x0000|İlk durum.|
-|BST_CHECKED|0x0001|Düğme denetimi denetlenir.|
-|BST_INDETERMINATE|0x0002|Durum belirsiz (yalnızca düğme denetiminin üç durumu olduğunda mümkündür).|
-|BST_PUSHED|0x0004|Düğme denetimine basıldığında.|
-|BST_FOCUS|0x0008|Düğme denetimi odağa sahiptir.|
+|Bst_unchecked|0x0000|İlk durum.|
+|BST_CHECKED|0x0001|Düğme denetimi kontrol edilir.|
+|BST_INDETERMINATE|0x0002|Durum belirsizdir (yalnızca düğme denetiminin üç durumu olduğunda mümkündür).|
+|BST_PUSHED|0x0004|Düğme kontrolüne basılır.|
+|BST_FOCUS|0x0008|Düğme denetimi odak noktası vardır.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-BS_3STATE veya BS_AUTO3STATE düğme stiliyle bir düğme denetimi, belirsiz durum olarak adlandırılan üçüncü bir duruma sahip bir onay kutusu oluşturur. Belirsiz durum onay kutusunun işaretli veya işaretlenmemiş olmadığını gösterir.
+BS_3STATE veya BS_AUTO3STATE düğme stiline sahip bir düğme denetimi, belirsiz durum olarak adlandırılan üçüncü bir durumu olan bir onay kutusu oluşturur. Belirsiz durum, onay kutusunun ne işaretli ne de işaretlenmemiş olduğunu gösterir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#9](../../mfc/reference/codesnippet/cpp/cbutton-class_9.cpp)]
 
-##  <a name="gettextmargin"></a>CButton:: GetTextMargin
+## <a name="cbuttongettextmargin"></a><a name="gettextmargin"></a>CButton::GetTextMargin
 
-`CButton` nesnesinin metin kenar boşluğunu almak için bu yöntemi çağırın.
+`CButton` Nesnenin metin kenar boşluğu almak için bu yöntemi arayın.
 
 ```
 BOOL GetTextMargin(RECT* pmargin);
@@ -604,8 +604,8 @@ BOOL GetTextMargin(RECT* pmargin);
 
 ### <a name="parameters"></a>Parametreler
 
-*pmargin*<br/>
-`CButton` nesnesinin metin kenar boşluğuna yönelik bir işaretçi.
+*kenar boşluğu*<br/>
+`CButton` Nesnenin metin kenar boşluğuna işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -613,15 +613,15 @@ Metin kenar boşluğunu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK [düğmeler](/windows/win32/controls/buttons) bölümünde açıklandığı gibi BCM_GETTEXTMARGIN iletisinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK'nın [Düğmeler](/windows/win32/controls/buttons) bölümünde açıklandığı gibi BCM_GETTEXTMARGIN iletisinin işlevselliğini taklit eder.
 
-##  <a name="setbitmap"></a>CButton:: SetBitmap
+## <a name="cbuttonsetbitmap"></a><a name="setbitmap"></a>CButton::SetBitmap
 
-Yeni bir bit eşlemi düğmeyle ilişkilendirmek için bu üye işlevini çağırın.
+Yeni bir bit eşlemeyi düğmeyle ilişkilendirmek için bu üye işlevini arayın.
 
 ```
 HBITMAP SetBitmap(HBITMAP hBitmap);
@@ -629,16 +629,16 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
 
 ### <a name="parameters"></a>Parametreler
 
-*HBITMAP*<br/>
-Bit eşlemin tutamacı.
+*Hbıtmap*<br/>
+Bitmap'in sapı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha önce düğmeyle ilişkilendirilen bir bit eşlemin tanıtıcısı.
+Daha önce düğmeyle ilişkili bir bit eşlemi nin tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit eşlem, varsayılan olarak ortalanan düğmenin yüzuna otomatik olarak yerleştirilir. Bit eşlem, düğme için çok büyükse, iki taraftan da kırpılacak. Aşağıdakiler de dahil olmak üzere diğer hizalama seçeneklerini belirleyebilirsiniz:
+Bit map otomatik olarak varsayılan olarak ortalanmış, düğmenin yüzüne yerleştirilir. Bit eşlemi düğme için çok büyükse, her iki tarafta da kırpılır. Aşağıdakiler de dahil olmak üzere diğer hizalama seçeneklerini seçebilirsiniz:
 
 - BS_TOP
 
@@ -652,17 +652,17 @@ Bit eşlem, varsayılan olarak ortalanan düğmenin yüzuna otomatik olarak yerl
 
 - BS_VCENTER
 
-Düğme başına dört bit eşlem kullanan [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md)'ın aksine, `SetBitmap` düğme başına yalnızca bir bit eşlem kullanır. Düğmeye basıldığında, bit eşlem aşağı ve sağa doğru görünür.
+Düğme başına dört bit eşlem kullanan [CBitmapButton'ın](../../mfc/reference/cbitmapbutton-class.md)aksine, `SetBitmap` düğme başına yalnızca bir bit eşlem kullanır. Düğmeye basıldığında, bit eşlemi aşağı ve sağa kayıyor gibi görünür.
 
-Bununla işiniz bittiğinde bit eşlemi serbest bırakmaktan siz sorumlusunuz.
+Bit map'i ile bitirdiğinizde serbest bırakmaksizin sorumlusunuz.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#4](../../mfc/reference/codesnippet/cpp/cbutton-class_4.cpp)]
 
-##  <a name="setbuttonstyle"></a>CButton:: SetButtonStyle
+## <a name="cbuttonsetbuttonstyle"></a><a name="setbuttonstyle"></a>CButton::SetButtonStyle
 
-Bir düğmenin stilini değiştirir.
+Düğmenin stilini değiştirir.
 
 ```
 void SetButtonStyle(
@@ -676,19 +676,19 @@ void SetButtonStyle(
 [Düğme stilini](../../mfc/reference/styles-used-by-mfc.md#button-styles)belirtir.
 
 *bRedraw*<br/>
-Düğmenin yeniden çizilip çizmeyeceğini belirtir. Sıfır dışında bir değer düğmeyi yeniden çizer. 0 değeri, düğmeyi yeniden çizmez. Düğme varsayılan olarak yeniden çizilir.
+Düğmenin yeniden çizilip çizilmeyeceğini belirtir. Sıfır olmayan bir değer düğmeyi yeniden çizer. 0 değeri düğmeyi yeniden çizmez. Düğme varsayılan olarak yeniden çizilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Düğme stilini almak için `GetButtonStyle` member işlevini kullanın. Tam düğme stilinin alt sıra sözcüğü, düğmeye özgü stildir.
+Düğme `GetButtonStyle` stilini almak için üye işlevini kullanın. Tam düğme stilinin düşük sıralı sözcüğü düğmeye özgü stildir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#5](../../mfc/reference/codesnippet/cpp/cbutton-class_5.cpp)]
 
-##  <a name="setcheck"></a>CButton:: SetCheck
+## <a name="cbuttonsetcheck"></a><a name="setcheck"></a>CButton::SetCheck
 
-Radyo düğmesinin veya onay kutusunun denetim durumunu ayarlar veya sıfırlar.
+Radyo düğmesinin veya onay kutusunun onay durumunu ayarlar veya sıfırlar.
 
 ```
 void SetCheck(int nCheck);
@@ -696,26 +696,26 @@ void SetCheck(int nCheck);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nhatayla*<br/>
-Denetim durumunu belirtir. Bu parametre aşağıdakilerden biri olabilir:
+*nCheck*<br/>
+Çek durumunu belirtir. Bu parametre aşağıdakilerden biri olabilir:
 
 |Değer|Anlamı|
 |-----------|-------------|
-|BST_UNCHECKED|Düğme durumunu işaretsiz olarak ayarlayın.|
-|BST_CHECKED|Düğme durumunu işaretli olarak ayarlayın.|
-|BST_INDETERMINATE|Düğme durumunu belirsiz olarak ayarlayın. Bu değer yalnızca, düğme BS_3STATE veya BS_AUTO3STATE stiline sahipse kullanılabilir.|
+|Bst_unchecked|Düğme durumunu işaretlenmemiş olarak ayarlayın.|
+|BST_CHECKED|Düğme durumunu denetlemek üzere ayarlayın.|
+|BST_INDETERMINATE|Düğme durumunu belirsiz olarak ayarlayın. Bu değer yalnızca düğmede BS_3STATE veya BS_AUTO3STATE tarzı varsa kullanılabilir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevinin basma düğmesi üzerinde hiçbir etkisi yoktur.
+Bu üye işlevin bir düğme üzerinde hiçbir etkisi yoktur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#6](../../mfc/reference/codesnippet/cpp/cbutton-class_6.cpp)]
 
-##  <a name="setcursor"></a>CButton:: SetCursor
+## <a name="cbuttonsetcursor"></a><a name="setcursor"></a>CButton::SetCursor
 
-Yeni bir imleci düğmeyle ilişkilendirmek için bu üye işlevini çağırın.
+Yeni bir imleç le düğmeyle ilişkilendirmek için bu üye işlevini arayın.
 
 ```
 HCURSOR SetCursor(HCURSOR hCursor);
@@ -724,15 +724,15 @@ HCURSOR SetCursor(HCURSOR hCursor);
 ### <a name="parameters"></a>Parametreler
 
 *hCursor*<br/>
-İmlecin tutamacı.
+İmleç sapı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha önce düğmeyle ilişkilendirilen bir imlecin tutamacı.
+Daha önce düğmeyle ilişkili bir imleç tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İmleç, varsayılan olarak ortalanan düğme yüzlede otomatik olarak yerleştirilir. İmleç düğme için çok büyükse, iki taraftan da kırpılacak. Aşağıdakiler de dahil olmak üzere diğer hizalama seçeneklerini belirleyebilirsiniz:
+İmleç otomatik olarak düğmenin yüzüne yerleştirilir ve varsayılan olarak ortalanır. İmleç düğme için çok büyükse, her iki tarafta kırpılır. Aşağıdakiler de dahil olmak üzere diğer hizalama seçeneklerini seçebilirsiniz:
 
 - BS_TOP
 
@@ -746,15 +746,15 @@ Daha önce düğmeyle ilişkilendirilen bir imlecin tutamacı.
 
 - BS_VCENTER
 
-Düğme başına dört bit eşlem kullanan [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md)'ın aksine, `SetCursor` düğme başına yalnızca bir imleç kullanır. Düğmeye basıldığında, imleç aşağı aşağı ve sağa doğru görünür.
+Düğme başına dört bit eşlem kullanan [CBitmapButton'ın](../../mfc/reference/cbitmapbutton-class.md)aksine, `SetCursor` düğme başına yalnızca bir imleç kullanır. Düğmeye basıldığında imleç aşağı ve sağa kayıyor gibi görünür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#7](../../mfc/reference/codesnippet/cpp/cbutton-class_7.cpp)]
 
-##  <a name="setdropdownstate"></a>CButton:: SetDropDownState
+## <a name="cbuttonsetdropdownstate"></a><a name="setdropdownstate"></a>CButton::SetDropDownState
 
-Geçerli bölünmüş düğme denetiminin açılan durumunu ayarlar.
+Geçerli bölme düğmesi denetiminin açılır durumunu ayarlar.
 
 ```
 BOOL SetDropDownState(BOOL fDropDown);
@@ -764,33 +764,33 @@ BOOL SetDropDownState(BOOL fDropDown);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*fDropDown*|'ndaki BST_DROPDOWNPUSHED durumunu ayarlamak için TRUE; Aksi takdirde, FALSE.|
+|*fDropDown*|[içinde] DOĞRU BST_DROPDOWNPUSHED devlet ayarlamak için; aksi takdirde, YANLIŞ.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
+Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bölünmüş düğme denetimi bir BS_SPLITBUTTON veya BS_DEFSPLITBUTTON stiline sahiptir ve sağ tarafındaki bir düğmeden ve aşağı açılan oka oluşur. Daha fazla bilgi için bkz. [düğme stilleri](/windows/win32/Controls/button-styles). Genellikle, açılan durum Kullanıcı açılan oka tıkladığında ayarlanır. Denetimin açılan durumunu programlı bir şekilde ayarlamak için bu yöntemi kullanın. Aşağı açılan ok, durumu belirtmek için gölgeli olarak çizilir.
+Bölünmüş düğme denetimi, BS_SPLITBUTTON veya BS_DEFSPLITBUTTON stiline sahiptir ve bir düğme ve sağındaki açılır oktan oluşur. Daha fazla bilgi için [Düğme Stilleri'ne](/windows/win32/Controls/button-styles)bakın. Genellikle, kullanıcı açılır ok'u tıklattığında açılır durum ayarlanır. Denetimin açılır durumunu programlı olarak ayarlamak için bu yöntemi kullanın. Açılan ok durumu belirtmek için gölgeli olarak çizilir.
 
-Bu yöntem, Windows SDK açıklanan [BCM_SETDROPDOWNSTATE](/windows/win32/Controls/bcm-setdropdownstate) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [BCM_SETDROPDOWNSTATE](/windows/win32/Controls/bcm-setdropdownstate) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bölünmüş düğme denetimine programlı bir şekilde erişmek için kullanılan *m_splitButton*değişkenini tanımlar. Bu değişken aşağıdaki örnekte kullanılır.
+Aşağıdaki kod örneği, bölme düğmesi denetimine programlı olarak erişmek için kullanılan *değişkeni, m_splitButton*tanımlar. Bu değişken aşağıdaki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, aşağı açılan okun itiltiğini göstermek için Böl düğme denetiminin durumunu ayarlar.
+Aşağıdaki kod örneği, açılan oka basılarak bölünmüş düğme denetiminin durumunu ayarlar.
 
 [!code-cpp[NVC_MFC_CButton_s1#6](../../mfc/reference/codesnippet/cpp/cbutton-class_11.cpp)]
 
-##  <a name="setelevationrequired"></a>CButton:: SetElevationRequired
+## <a name="cbuttonsetelevationrequired"></a><a name="setelevationrequired"></a>CButton::SetelevationGerekli
 
-Geçerli düğme denetiminin durumunu `elevation required`olarak ayarlar ve bu, denetimin yükseltilmiş bir güvenlik simgesini görüntülemesi için gereklidir.
+Geçerli düğme denetiminin `elevation required`durumunu, denetimin yükseltilmiş bir güvenlik simgesini görüntülemesi için gerekli olan duruma ayarlar.
 
 ```
 BOOL SetElevationRequired(BOOL fElevationRequired);
@@ -800,21 +800,21 @@ BOOL SetElevationRequired(BOOL fElevationRequired);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Fyükseltmeden önce gerekli*|'ndaki `elevation required` durumunu ayarlamak için TRUE; Aksi takdirde, FALSE.|
+|*fYükseklik Gerekli*|[içinde] DOĞRU devlet `elevation required` ayarlamak için; aksi takdirde, YANLIŞ.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
+Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir düğme veya komut bağlantısı denetimi bir eylem gerçekleştirmek için yükseltilmiş güvenlik izni gerektiriyorsa, denetimi `elevation required` duruma ayarlayın. Daha sonra Windows, denetimde kullanıcı hesabı denetimi (UAC) Shield simgesini görüntüler. Daha fazla bilgi için [MSDN](https://go.microsoft.com/fwlink/p/?linkid=18507)'de "Kullanıcı hesabı denetimi" konusuna bakın.
+Bir düğme veya komut bağlantısı denetimi bir eylem gerçekleştirmek için yüksek `elevation required` güvenlik izni gerektiriyorsa, denetimi duruma göre ayarlayın. Daha sonra, Windows denetimde Kullanıcı Hesabı Denetimi (UAC) kalkanı simgesini görüntüler. Daha fazla bilgi için [MSDN'deki](https://go.microsoft.com/fwlink/p/?linkid=18507)"Kullanıcı Hesabı Denetimi" adlı kullanıcı hesabına bakın.
 
-Bu yöntem, Windows SDK açıklanan [BCM_SETSHIELD](/windows/win32/Controls/bcm-setshield) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [BCM_SETSHIELD](/windows/win32/Controls/bcm-setshield) iletisini gönderir.
 
-##  <a name="seticon"></a>CButton:: SetIcon
+## <a name="cbuttonseticon"></a><a name="seticon"></a>CButton::SetIcon
 
-Düğme ile yeni bir simge ilişkilendirmek için bu üye işlevi çağırın.
+Yeni bir simgeyi düğmeyle ilişkilendirmek için bu üye işlevini arayın.
 
 ```
 HICON SetIcon(HICON hIcon);
@@ -822,7 +822,7 @@ HICON SetIcon(HICON hIcon);
 
 ### <a name="parameters"></a>Parametreler
 
-*HICON*<br/>
+*Hıcon*<br/>
 Bir simgenin tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -831,7 +831,7 @@ Daha önce düğmeyle ilişkili bir simgenin tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Simge, varsayılan olarak ortalanan düğmenin yüzuna otomatik olarak yerleştirilir. Simge düğme için çok büyükse, her iki taraftan da kırpılacak. Aşağıdakiler de dahil olmak üzere diğer hizalama seçeneklerini belirleyebilirsiniz:
+Simge otomatik olarak varsayılan olarak ortalanmış düğmenin yüzüne yerleştirilir. Simge düğme için çok büyükse, her iki tarafta kırpılır. Aşağıdakiler de dahil olmak üzere diğer hizalama seçeneklerini seçebilirsiniz:
 
 - BS_TOP
 
@@ -845,15 +845,15 @@ Simge, varsayılan olarak ortalanan düğmenin yüzuna otomatik olarak yerleşti
 
 - BS_VCENTER
 
-Düğme başına dört bit eşlem kullanan [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md)'ın aksine, `SetIcon` düğme başına yalnızca bir simge kullanır. Düğmeye basıldığında, simge aşağı ve sağa aşağı doğru görünür.
+Düğme başına dört bit eşlem kullanan [CBitmapButton'ın](../../mfc/reference/cbitmapbutton-class.md)aksine, `SetIcon` düğme başına yalnızca bir simge kullanır. Düğmeye basıldığında, simge aşağı ve sağa kayıyor gibi görünür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#8](../../mfc/reference/codesnippet/cpp/cbutton-class_8.cpp)]
 
-##  <a name="setimagelist"></a>CButton:: SetImageList
+## <a name="cbuttonsetimagelist"></a><a name="setimagelist"></a>CButton::SetImageList
 
-`CButton` nesnesinin görüntü listesini ayarlamak için bu yöntemi çağırın.
+Nesnenin görüntü listesini ayarlamak için `CButton` bu yöntemi çağırın.
 
 ```
 BOOL SetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
@@ -861,20 +861,20 @@ BOOL SetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pbuttonımagelist*<br/>
-Yeni görüntü listesi için bir işaretçi.
+*pbuttonImagelist*<br/>
+Yeni resim listesiiçin bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE, hatada FALSE döndürür.
+Başarı doğru döndürür, başarısızlık false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK [düğmeler](/windows/win32/controls/buttons) bölümünde açıklandığı gibi BCM_SETIMAGELIST iletisinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK'nın [Düğmeler](/windows/win32/controls/buttons) bölümünde açıklandığı gibi, BCM_SETIMAGELIST iletisinin işlevselliğini taklit eder.
 
-##  <a name="setnote"></a>CButton:: SetNote
+## <a name="cbuttonsetnote"></a><a name="setnote"></a>CButton::SetNote
 
-Geçerli komut bağlantı denetimi için dekont metnini ayarlar.
+Geçerli komut bağlantısı denetimi için not metnini ayarlar.
 
 ```
 BOOL SetNote(LPCTSTR lpszNote);
@@ -884,33 +884,33 @@ BOOL SetNote(LPCTSTR lpszNote);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*lpszNote*|'ndaki Komut bağlantısı denetimi için dekont metni olarak ayarlanan bir Unicode dize işaretçisi.|
+|*lpszNote*|[içinde] Komut bağlantısı denetimi için not metni olarak ayarlanan Unicode dizesini işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
+Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntemi yalnızca düğme stili BS_COMMANDLINK veya BS_DEFCOMMANDLINK olan denetimlerle kullanın.
 
-Bu yöntem, Windows SDK açıklanan [BCM_SETNOTE](/windows/win32/Controls/bcm-setnote) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [BCM_SETNOTE](/windows/win32/Controls/bcm-setnote) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, komut bağlantısı denetimine programlı olarak erişmek için kullanılan *m_cmdLink*değişkenini tanımlar. Bu değişken aşağıdaki örnekte kullanılır.
+Aşağıdaki kod örneği, komut bağlantısı denetimine programlı olarak erişmek için kullanılan değişken, *m_cmdLink*tanımlar. Bu değişken aşağıdaki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, komut bağlantısı denetimi için dekont metnini ayarlar.
+Aşağıdaki kod örneği komut bağlantısı denetimi için not metnini ayarlar.
 
 [!code-cpp[NVC_MFC_CButton_s1#7](../../mfc/reference/codesnippet/cpp/cbutton-class_12.cpp)]
 
-##  <a name="setsplitglyph"></a>CButton:: SetSplitGlyph
+## <a name="cbuttonsetsplitglyph"></a><a name="setsplitglyph"></a>CButton:SetSplitGlyph
 
-Belirtilen glifi geçerli bölme düğmesi denetimiyle ilişkilendirir.
+Geçerli split düğmesi denetimi ile belirli bir gph ilişkilendirer.
 
 ```
 BOOL SetSplitGlyph(TCHAR chGlyph);
@@ -920,23 +920,23 @@ BOOL SetSplitGlyph(TCHAR chGlyph);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*chGlyph*|'ndaki Bölme düğmesi aşağı açılan oku olarak kullanılacak glifi belirten bir karakter.|
+|*chGlyph*|[içinde] Split düğmesi açılır ok olarak kullanılacak glifleri belirten bir karakter.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
+Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntemi yalnızca düğme stili BS_SPLITBUTTON veya BS_DEFSPLITBUTTON olan denetimlerle kullanın.
 
-Glif, belirli bir yazı tipindeki bir karakterin fiziksel gösterimidir. *ChGlyph* parametresi glif olarak kullanılmaz, ancak bunun yerine sistem tarafından tanımlanan bir karakter kümesinden bir karakter seçmek için kullanılır. Varsayılan aşağı açılan ok karakteri bir ' 6 ' karakteriyle belirtilir ve Unicode karaktere, sıyah aşağı Işaret ÜÇGENI (U + 25BC) benzer.
+Glifler, belirli bir yazı tipindeki bir karakterin fiziksel temsilidir. *ChGlyph* parametresi glifler olarak kullanılmaz, ancak bunun yerine sistem tanımlı glifler kümesinden bir glifler seçmek için kullanılır. Varsayılan açılır ok glyph karakteri '6' tarafından belirtilir ve Unicode karakteri BLACK DOWN-POINTING TRIANGLE (U+25BC) benzer.
 
-Bu yöntem, bir [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapısının `mask` üyesini BCSIF_GLYPH bayrağıyla ve `himlGlyph` üyesini *chGlyph* parametresiyle başlatır ve ardından bu yapıyı BCM_GETSPLITINFO açıklanan [Windows SDK](/windows/win32/Controls/bcm-getsplitinfo) mesajında gönderir.
+Bu yöntem, BCSIF_GLYPH `mask` bayrağı ile [bir BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapının `himlGlyph` üyesi ve *chGlyph* parametresi ile üye baş harflerini ve sonra windows SDK açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) iletibu yapı gönderir.
 
-##  <a name="setsplitimagelist"></a>CButton:: Setsptımagelist
+## <a name="cbuttonsetsplitimagelist"></a><a name="setsplitimagelist"></a>CButton::SetSplitImageList
 
-Bir [görüntü listesini](../../mfc/reference/cimagelist-class.md) geçerli bölünmüş düğme denetimiyle ilişkilendirir.
+Bir [görüntü listesini](../../mfc/reference/cimagelist-class.md) geçerli bölme düğmesi denetimiyle ilişkilendirer.
 
 ```
 BOOL SetSplitImageList(CImageList* pSplitImageList);
@@ -946,21 +946,21 @@ BOOL SetSplitImageList(CImageList* pSplitImageList);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Psptımagelist*|'ndaki Geçerli bölme düğmesi denetimine atanacak bir [Ciımagelist](../../mfc/reference/cimagelist-class.md) nesnesine yönelik işaretçi.|
+|*pSplitImageList*|[içinde] Geçerli bölme düğmesi denetimine atamak üzere [CImageList](../../mfc/reference/cimagelist-class.md) nesnesine işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
+Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntemi yalnızca düğme stili BS_SPLITBUTTON veya BS_DEFSPLITBUTTON olan denetimlerle kullanın.
 
-Bu yöntem, BCSIF_IMAGE bayrağıyla [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) bir yapının `mask` üyesini ve *Pdtımagelist* parametresiyle `himlGlyph` üyesini başlatır ve ardından bu yapıyı BCM_GETSPLITINFO açıklanan [Windows SDK](/windows/win32/Controls/bcm-getsplitinfo) iletisinde gönderir.
+Bu yöntem, BCSIF_IMAGE `mask` bayrağı ve *pSplitImageList* parametresi ile `himlGlyph` üye ile [bir BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapısı üyesi ni aparatlar ve sonra Windows SDK açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) iletisi bu yapıyı gönderir.
 
-##  <a name="setsplitinfo"></a>CButton:: Setsplitınfo
+## <a name="cbuttonsetsplitinfo"></a><a name="setsplitinfo"></a>CButton:SetSplitInfo
 
-Windows 'un geçerli bölünmüş düğme denetimini nasıl çizdiği belirleyen parametreleri belirtir.
+Windows'un geçerli bölme düğmesi denetimini nasıl çizer ini belirleyen parametreleri belirtir.
 
 ```
 BOOL SetSplitInfo(PBUTTON_SPLITINFO pInfo);
@@ -970,33 +970,33 @@ BOOL SetSplitInfo(PBUTTON_SPLITINFO pInfo);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pInfo*|'ndaki Geçerli bölünmüş düğme denetimini tanımlayan [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapısına yönelik işaretçi.|
+|*Pınfo*|[içinde] Geçerli bölme düğmesi denetimini tanımlayan [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) bir yapıyı işaretleyin.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
+Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntemi yalnızca düğme stili BS_SPLITBUTTON veya BS_DEFSPLITBUTTON olan denetimlerle kullanın.
 
-Bu yöntem, Windows SDK açıklanan [BCM_SETSPLITINFO](/windows/win32/Controls/bcm-setsplitinfo) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [BCM_SETSPLITINFO](/windows/win32/Controls/bcm-setsplitinfo) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bölünmüş düğme denetimine programlı bir şekilde erişmek için kullanılan `m_splitButton`değişkenini tanımlar.
+Aşağıdaki kod örneği, `m_splitButton`bölme düğmesi denetimine programlı olarak erişmek için kullanılan değişkeni tanımlar.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bölme düğmesi aşağı açılan ok için kullanılan glifi değiştirir. Örnek, varsayılan aşağı açılan üçgen karakter için yukarıyı gösteren üçgen bir karakter koyar. Görüntülenen glif, `BUTTON_SPLITINFO` yapısının `himlGlyph` üyesinde belirttiğiniz karaktere bağlıdır. Aşağıyı gösteren üçgen karakter ' 6 ' karakteriyle belirtilir ve yukarıyı gösteren üçgen karakter ' 5 ' karakteriyle belirtilir. Karşılaştırma için bkz. kolay yöntem, [CButton:: SetSplitGlyph](#setsplitglyph).
+Aşağıdaki kod örneği, bölme düğmesi açılır ok için kullanılan glifleri değiştirir. Örnek, varsayılan aşağı işaret lisi üçgen glyph için yukarı işaretli üçgen gph yerine geçer. Görüntülenen `himlGlyph` `BUTTON_SPLITINFO` glyph, yapının üyesinde belirttiğiniz karaktere bağlıdır. Aşağı işaret üçgeni glyph bir karakter '6' tarafından belirtilir ve yukarı işaretleme üçgen glyph bir karakter '5' ile belirtilir. Karşılaştırma için, kolaylık yöntemi, [CButton bakın:SetSplitGlyph](#setsplitglyph).
 
 [!code-cpp[NVC_MFC_CButton_s1#4](../../mfc/reference/codesnippet/cpp/cbutton-class_13.cpp)]
 
-##  <a name="setsplitsize"></a>CButton:: SetSplitSize
+## <a name="cbuttonsetsplitsize"></a><a name="setsplitsize"></a>CButton::SetSplitSize
 
-Geçerli bölünmüş düğme denetiminin aşağı açılan bileşeninin sınırlayıcı dikdörtgenini ayarlar.
+Geçerli bölme düğmesi denetiminin açılır bileşeninin sınırlayıcı dikdörtgenini ayarlar.
 
 ```
 BOOL SetSplitSize(LPSIZE pSize);
@@ -1006,35 +1006,35 @@ BOOL SetSplitSize(LPSIZE pSize);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Psıze*|'ndaki Bir sınırlayıcı dikdörtgeni tanımlayan [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına yönelik işaretçi.|
+|*pSize*|[içinde] Sınırlayıcı bir dikdörtgenaçıklayan bir [BOYUT](/windows/win32/api/windef/ns-windef-size) yapısıiçin işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
+Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntemi yalnızca düğme stili BS_SPLITBUTTON veya BS_DEFSPLITBUTTON olan denetimlerle kullanın.
 
-Bölünmüş düğme denetimi genişletildiğinde, liste denetimi veya sayfalayıcı denetimi gibi bir açılan bileşen görüntüleyebilirsiniz. Bu yöntem, açılan bileşeni içeren sınırlayıcı dikdörtgenin boyutunu belirtir.
+Bölme düğmesi denetimi genişletildiğinde, liste denetimi veya çağrı cihazı denetimi gibi açılır bir bileşeni görüntüleyebilir. Bu yöntem, açılır bileşeni içeren sınırlayıcı dikdörtgenin boyutunu belirtir.
 
-Bu yöntem, bir [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapısının `mask` üyesini BCSIF_SIZE bayrağıyla ve `size` üyesini *psize* parametresiyle başlatır ve ardından bu yapıyı BCM_GETSPLITINFO açıklanan [Windows SDK](/windows/win32/Controls/bcm-getsplitinfo) mesajında gönderir.
+Bu yöntem, BCSIF_SIZE `mask` bayrağı ve *pSize* parametresi `size` ile üye ile [bir BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapının üyesi ni aparatlar ve sonra windows SDK açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) iletisinde bu yapıyı gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bölünmüş düğme denetimine programlı bir şekilde erişmek için kullanılan `m_splitButton`değişkenini tanımlar. Bu değişken aşağıdaki örnekte kullanılır.
+Aşağıdaki kod örneği, `m_splitButton`bölme düğmesi denetimine programlı olarak erişmek için kullanılan değişkeni tanımlar. Bu değişken aşağıdaki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bölme düğmesi aşağı açılan okunun boyutunu iki katına çıkarır.
+Aşağıdaki kod örneği, bölünmüş düğme açılır ok boyutunu iki katına çıkar.
 
 [!code-cpp[NVC_MFC_CButton_s1#5](../../mfc/reference/codesnippet/cpp/cbutton-class_14.cpp)]
 
-##  <a name="setsplitstyle"></a>CButton:: SetSplitStyle
+## <a name="cbuttonsetsplitstyle"></a><a name="setsplitstyle"></a>CButton::SetSplitStyle
 
-Geçerli bölünmüş düğme denetiminin stilini ayarlar.
+Geçerli bölme düğmesi denetiminin stilini ayarlar.
 
 ```
 BOOL SetSplitStyle(UINT uSplitStyle);
@@ -1044,35 +1044,35 @@ BOOL SetSplitStyle(UINT uSplitStyle);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*uSplitStyle*|'ndaki Bölünmüş düğme stillerinin bit düzeyinde birleşimi. Daha fazla bilgi için [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapısının `uSplitStyle` üyeye bakın.|
+|*uSplitStyle*|[içinde] Bölünmüş düğme stillerinin bitwise kombinasyonu. Daha fazla bilgi `uSplitStyle` için [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapının üyesine bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
+Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntemi yalnızca düğme stili BS_SPLITBUTTON veya BS_DEFSPLITBUTTON olan denetimlerle kullanın.
 
-Bölünmüş düğme stilleri hizalama, en boy oranı ve Windows 'un bölünmüş düğme simgesi çizen grafik biçimini belirtir. Daha fazla bilgi için [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapısının `uSplitStyle` üyeye bakın.
+Bölünmüş düğme stilleri, Windows'un bölünmüş düğme simgesini çizdiği hizalamayı, en boy oranını ve grafik biçimini belirtir. Daha fazla bilgi `uSplitStyle` için [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) yapının üyesine bakın.
 
-Bu yöntem, [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) bir yapının `mask` üyesini BCSIF_STYLE bayrağıyla ve `uSplitStyle` üyesini *uSplitStyle* parametresiyle başlatır ve ardından bu yapıyı BCM_GETSPLITINFO açıklanan [Windows SDK](/windows/win32/Controls/bcm-getsplitinfo) mesajında gönderir.
+Bu yöntem, BCSIF_STYLE `mask` bayrağı ve *uSplitStyle* parametresi ile `uSplitStyle` üye ile [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) bir yapının üyesi nial ve sonra Windows SDK açıklanan [BCM_GETSPLITINFO](/windows/win32/Controls/bcm-getsplitinfo) iletisi bu yapıyı gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bölünmüş düğme denetimine programlı bir şekilde erişmek için kullanılan `m_splitButton`değişkenini tanımlar.
+Aşağıdaki kod örneği, `m_splitButton`bölme düğmesi denetimine programlı olarak erişmek için kullanılan değişkeni tanımlar.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bölünmüş düğme açılır okun stilini ayarlar. BCSS_ALIGNLEFT stil düğmenin sol tarafındaki oku görüntüler ve BCSS_STRETCH Stili, düğmeyi yeniden boyutlandırdığınızda açılan okun oranlarını korur.
+Aşağıdaki kod örneği, bölme düğmesinin açılır ok stilini ayarlar. BCSS_ALIGNLEFT stili düğmenin sol tarafındaki oku görüntüler ve düğmeyi yeniden boyutlandırdığınızda BCSS_STRETCH stili açılır okun oranlarını korur.
 
 [!code-cpp[NVC_MFC_CButton_s1#3](../../mfc/reference/codesnippet/cpp/cbutton-class_15.cpp)]
 
-##  <a name="setstate"></a>CButton:: SetState
+## <a name="cbuttonsetstate"></a><a name="setstate"></a>CButton::SetState
 
-Düğme denetiminin vurgulanıp vurgulanmayacağını ayarlar.
+Düğme denetiminin vurgulanıp vurgulanmadığını ayarlar.
 
 ```
 void SetState(BOOL bHighlight);
@@ -1080,22 +1080,22 @@ void SetState(BOOL bHighlight);
 
 ### <a name="parameters"></a>Parametreler
 
-*bHighlight*<br/>
-Düğmenin vurgulanıp vurgulanmayacağını belirtir. Sıfır dışında bir değer düğmeyi vurgular; 0 değeri tüm vurgulamayı kaldırır.
+*bVurgu*<br/>
+Düğmenin vurgulanıp vurgulanmayacağını belirtir. Sıfır olmayan bir değer düğmeyi vurgular; 0 değeri herhangi bir vurgulama kaldırır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Vurgulama, düğme denetiminin dış kısmını etkiler. Radyo düğmesinin veya onay kutusunun denetim durumunu etkilemez.
+Vurgulama, düğme denetiminin dış kısmını etkiler. Bir radyo düğmesinin veya onay kutusunun onay durumu üzerinde hiçbir etkisi yoktur.
 
-Kullanıcı farenin sol düğmesini tıkladığı ve tuttuğunda düğme denetimi otomatik olarak vurgulanır. Kullanıcı fare düğmesini bıraktığında vurgulama kaldırılır.
+Kullanıcı sol fare düğmesini tıklatıp tuttuğunda düğme denetimi otomatik olarak vurgulanır. Kullanıcı fare düğmesini serbest bıraktığunda vurgulama kaldırılır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CButton#9](../../mfc/reference/codesnippet/cpp/cbutton-class_9.cpp)]
 
-##  <a name="settextmargin"></a>CButton:: SetTextMargin
+## <a name="cbuttonsettextmargin"></a><a name="settextmargin"></a>CButton::SetTextMargin
 
-`CButton` nesnesinin metin kenar boşluğunu ayarlamak için bu yöntemi çağırın.
+Nesnenin metin kenar boşluğunu `CButton` ayarlamak için bu yöntemi çağırın.
 
 ```
 BOOL SetTextMargin(RECT* pmargin);
@@ -1103,16 +1103,16 @@ BOOL SetTextMargin(RECT* pmargin);
 
 ### <a name="parameters"></a>Parametreler
 
-*pmargin*<br/>
-Yeni metin kenar boşluğuna yönelik bir işaretçi.
+*kenar boşluğu*<br/>
+Yeni metin kenar boşluğuiçin bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE, hatada FALSE döndürür.
+Başarı doğru döndürür, başarısızlık false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK [düğmeler](/windows/win32/controls/buttons) bölümünde açıklandığı gibi BCM_SETTEXTMARGIN iletisinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK'nın [Düğmeler](/windows/win32/controls/buttons) bölümünde açıklandığı gibi, BCM_SETTEXTMARGIN iletisinin işlevselliğini taklit eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -1123,6 +1123,6 @@ Bu üye işlevi, Windows SDK [düğmeler](/windows/win32/controls/buttons) böl�
 [CEdit Sınıfı](../../mfc/reference/cedit-class.md)<br/>
 [CListBox Sınıfı](../../mfc/reference/clistbox-class.md)<br/>
 [CScrollBar Sınıfı](../../mfc/reference/cscrollbar-class.md)<br/>
-[CStatic Sınıfı](../../mfc/reference/cstatic-class.md)<br/>
+[Cstatic Sınıfı](../../mfc/reference/cstatic-class.md)<br/>
 [CBitmapButton Sınıfı](../../mfc/reference/cbitmapbutton-class.md)<br/>
 [CDialog Sınıfı](../../mfc/reference/cdialog-class.md)

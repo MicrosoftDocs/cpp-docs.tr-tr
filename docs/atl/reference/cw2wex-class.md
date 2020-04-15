@@ -1,5 +1,5 @@
 ---
-title: CW2WEX sınıfı
+title: CW2WEX Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CW2WEX
@@ -10,19 +10,19 @@ f1_keywords:
 helpviewer_keywords:
 - CW2WEX class
 ms.assetid: 46262e56-e0d2-41fe-855b-0b67ecc8fcd7
-ms.openlocfilehash: d6d68f4f5c0f3532c39fee3f513e7b3102ec075d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b116775a595f9fb3612d46e19526cf1396f85002
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62277142"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330344"
 ---
-# <a name="cw2wex-class"></a>CW2WEX sınıfı
+# <a name="cw2wex-class"></a>CW2WEX Sınıfı
 
-Bu sınıf, dize dönüşüm makroları CW2TEX ve CT2WEX ve typedef CW2W tarafından kullanılır.
+Bu sınıf dize dönüştürme makroları CW2TEX ve CT2WEX ve typedef CW2W tarafından kullanılır.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,61 +34,61 @@ class CW2WEX
 #### <a name="parameters"></a>Parametreler
 
 *t_nBufferLength*<br/>
-Çeviri işlemde kullanılan arabellek boyutu. Varsayılan uzunluk 128 bayt'tır.
+Çeviri işleminde kullanılan arabelleğe boyutu. Varsayılan uzunluk 128 bayttır.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CW2WEX::CW2WEX](#cw2wex)|Oluşturucu.|
 |[CW2WEX::~CW2WEX](#dtor)|Yıkıcı.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CW2WEX::operator LPWSTR](#operator_lpwstr)|Dönüştürme işleci.|
+|[CW2WEX::operatör LPWSTR](#operator_lpwstr)|Dönüşüm işleci.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CW2WEX::m_psz](#m_psz)|Kaynak dizesi depolar veri üyesi.|
-|[CW2WEX::m_szBuffer](#m_szbuffer)|Dönüştürülmüş dize depolamak için kullanılan statik arabelleği.|
+|[CW2WEX::m_psz](#m_psz)|Kaynak dizesini depolayan veri üyesi.|
+|[CW2WEX::m_szBuffer](#m_szbuffer)|Dönüştürülmüş dizeyi depolamak için kullanılan statik arabellek.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ek işlevler gerekmiyorsa CW2TEX, CT2WEX veya CW2W kodunuzda kullanın.
+İlave işlevsellik gerekmedikçe, kodunuzda CW2TEX, CT2WEX veya CW2W kullanın.
 
-Bu sınıf, dönüştürmenin sonucu depolamak için kullanılan sabit boyutlu bir statik arabellek içerir. Sonucu statik arabelleğe sığamayacak kadar büyük olursa, sınıfı kullanarak bellek ayırır **malloc**, nesne kapsam dışına çıktığında bellek boşaltma. Bu, metin dönüşüm makroları önceki sürümlerinde ATL, bu sınıf Döngülerde güvenlidir ve stack overflow olmaz sağlar.
+Bu sınıf, dönüştürme sonucunu depolamak için kullanılan sabit boyutlu statik arabellek içerir. Sonuç statik arabelleğe sığmayacak kadar büyükse, sınıf **malloc**kullanarak belleği ayırır ve nesne kapsam dışına çıktığında belleği serbest eder. Bu, ATL'nin önceki sürümlerinde bulunan metin dönüştürme makrolarının aksine, bu sınıfın döngülerde kullanımının güvenli olmasını ve yığını nakışlamamasını sağlar.
 
-Sınıfı başarısız olur ve yığın bellek çalışırsa, çağrı `AtlThrow` E_OUTOFMEMORY bağımsız.
+Sınıf yığınüzerinde bellek ayırmaya çalışır ve başarısız olursa, `AtlThrow` E_OUTOFMEMORY bir argüman ile çağırır.
 
-Varsayılan olarak, geçerli iş parçacığının ANSI kod sayfasına dönüştürme için ATL dönüştürme sınıfları ve makroları kullanın.
+Varsayılan olarak, ATL dönüştürme sınıfları ve makrolar dönüşüm için geçerli iş parçacığının ANSI kod sayfasını kullanır.
 
-Aşağıdaki makroları bu sınıfa bağlıdır:
+Aşağıdaki makrolar bu sınıfa dayanır:
 
 - CW2TEX
 
 - CT2WEX
 
-Aşağıdaki tür tanımı bu sınıfa bağlıdır:
+Aşağıdaki typedef bu sınıfa dayanır:
 
 - CW2W
 
-Bu metin dönüşüm makroları bir tartışma için bkz [ATL ve MFC dize dönüşüm makroları](string-conversion-macros.md).
+Bu metin dönüştürme makrolarının tartışılması için [ATL ve MFC String Dönüşüm Makroları'na](string-conversion-macros.md)bakın.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [ATL ve MFC dize dönüşüm makroları](string-conversion-macros.md) Bu dize dönüştürme makrolarını kullanma örneği için.
+Bu dize dönüştürme makrolarını kullanma örneği için [ATL ve MFC String Dönüşüm Makrolarına](string-conversion-macros.md) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlconv.h
+**Üstbilgi:** atlconv.h
 
-##  <a name="cw2wex"></a>  CW2WEX::CW2WEX
+## <a name="cw2wexcw2wex"></a><a name="cw2wex"></a>CW2WEX::CW2WEX
 
 Oluşturucu.
 
@@ -99,7 +99,7 @@ CW2WEX( LPCWSTR  psz) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*psz*<br/>
+*Psz*<br/>
 Dönüştürülecek metin dizesi.
 
 *nCodePage*<br/>
@@ -107,11 +107,11 @@ Kod sayfası. Bu sınıfta kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çeviri için gerekli arabellek oluşturur.
+Çeviri için gerekli arabelleği oluşturur.
 
-##  <a name="dtor"></a>  CW2WEX:: ~ CW2WEX
+## <a name="cw2wexcw2wex"></a><a name="dtor"></a>CW2WEX::~CW2WEX
 
-Yok edici...
+Yıkıcı...
 
 ```
 ~CW2WEX() throw();
@@ -119,27 +119,27 @@ Yok edici...
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılmış ara belleğini serbest bırakır.
+Ayrılan arabelleği serbest bırakın.
 
-##  <a name="m_psz"></a>  CW2WEX::m_psz
+## <a name="cw2wexm_psz"></a><a name="m_psz"></a>CW2WEX::m_psz
 
-Kaynak dizesi depolar veri üyesi.
+Kaynak dizesini depolayan veri üyesi.
 
 ```
 LPWSTR m_psz;
 ```
 
-##  <a name="m_szbuffer"></a>  CW2WEX::m_szBuffer
+## <a name="cw2wexm_szbuffer"></a><a name="m_szbuffer"></a>CW2WEX::m_szBuffer
 
-Dönüştürülmüş dize depolamak için kullanılan statik arabelleği.
+Dönüştürülmüş dizeyi depolamak için kullanılan statik arabellek.
 
 ```
 wchar_t m_szBuffer[t_nBufferLength];
 ```
 
-##  <a name="operator_lpwstr"></a>  CW2WEX::operator LPWSTR
+## <a name="cw2wexoperator-lpwstr"></a><a name="operator_lpwstr"></a>CW2WEX::operatör LPWSTR
 
-Atama işleci.
+Döküm operatörü.
 
 ```
 operator LPWSTR() const throw();
@@ -147,7 +147,7 @@ operator LPWSTR() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Metin dizesi, LPWSTR olarak döndürür.
+Metin dizesini LPWSTR türü olarak döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -156,4 +156,4 @@ Metin dizesi, LPWSTR olarak döndürür.
 [CA2WEX Sınıfı](../../atl/reference/ca2wex-class.md)<br/>
 [CW2AEX Sınıfı](../../atl/reference/cw2aex-class.md)<br/>
 [CW2CWEX Sınıfı](../../atl/reference/cw2cwex-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

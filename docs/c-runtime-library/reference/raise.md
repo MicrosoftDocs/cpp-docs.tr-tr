@@ -1,8 +1,9 @@
 ---
 title: tetikle
-ms.date: 01/02/2018
+ms.date: 4/2/2020
 api_name:
 - raise
+- _o_raise
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -26,19 +28,19 @@ helpviewer_keywords:
 - raise function
 - signals
 - programs [C++], sending signals to executing programs
-ms.openlocfilehash: bed377bb46abac252381344f0b1cf4339815a16e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b38a3430274b2324e345be30ce9e38f0c2749fa3
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949664"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81338259"
 ---
 # <a name="raise"></a>tetikle
 
-Yürütülen programa bir sinyal gönderir.
+Yürütme programına bir sinyal gönderir.
 
 > [!NOTE]
-> Test veya hata ayıklama senaryoları dışında Microsoft Store uygulamasını kapatmak için bu yöntemi kullanmayın. Bir mağaza uygulamasını kapatmak için programlı veya Kullanıcı arabirimi yollarına [Microsoft Store ilkelerine](/legal/windows/agreements/store-policies)göre izin verilmez. Daha fazla bilgi için bkz. [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle).
+> Test veya hata ayıklama senaryoları dışında bir Microsoft Mağazası uygulamasını kapatmak için bu yöntemi kullanmayın. Bir Mağaza uygulamasını kapatmanın programlı veya uI yollarına [Microsoft Mağazası ilkelerine](/legal/windows/agreements/store-policies)göre izin verilmez. Daha fazla bilgi için [UWP uygulama yaşam döngüsüne](/windows/uwp/launch-resume/app-lifecycle)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,38 +52,40 @@ int raise(
 
 ### <a name="parameters"></a>Parametreler
 
-*za*<br/>
-Ortaya çıkan sinyal.
+*Sıg*<br/>
+Sinyal yükseltilecek.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **Raise** 0 döndürür. Aksi takdirde, sıfır dışında bir değer döndürür.
+Başarılı olursa, 0 döndürür **yükseltin.** Aksi takdirde, sıfır olmayan bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Raise** işlevi, çalıştırılan programa *SIG* gönderir. Önceki bir **sinyal** çağrısı *SIG*için bir sinyal işleme işlevi yüklemiştir **, bu** işlevi yürütür. Hiçbir işleyici işlevi yüklenmemişse, *SIG* sinyal değeri ile ilişkili varsayılan eylem aşağıdaki şekilde alınır.
+**Yükseltme** işlevi *yürütme* programına sig gönderir. **Sinyalönceki** bir arama *sig*için bir sinyal işleme işlevi yüklü ise, **yükseltmek** bu işlevi yürütür. İşleyici işlevi yüklenmemişse, aşağıdaki gibi sinyal değeri *sig* ile ilişkili varsayılan eylem alınır.
 
-|sinyalinin|Açıklama|Varsayılan|
+|Sinyal|Anlamı|Varsayılan|
 |------------|-------------|-------------|
-|**SIGABRT**|Olağan dışı sonlandırma|Çağıran programı çıkış kodu 3 ile sonlandırır|
-|**SIGFPE**|Kayan nokta hatası|Çağıran programı sonlandırır|
-|**SIGILL**|Geçersiz yönerge|Çağıran programı sonlandırır|
-|**SIGINT**|CTRL + C kesme|Çağıran programı sonlandırır|
-|**SIGSEGV**|Geçersiz depolama erişimi|Çağıran programı sonlandırır|
-|**SIGTERM**|Programa sonlandırma isteği gönderildi|Sinyali yoksayar|
+|**SIGABRT**|Anormal sonlandırma|Çıkış kodu 3 ile arama programını sonlandırır|
+|**SIGFPE**|Kayan nokta hatası|Arama programını sonlandırır|
+|**SIGILL**|Yasadışı talimat|Arama programını sonlandırır|
+|**SIGINT**|CTRL+C kesme|Arama programını sonlandırır|
+|**SIGSEGV**|Yasadışı depolama erişimi|Arama programını sonlandırır|
+|**SIGTERM**|Programa gönderilen sonlandırma isteği|Sinyali yok sayar|
 
-Bağımsız değişken yukarıda belirtilen geçerli bir sinyal değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. İşlenmezse, işlev **errno** 'ya **EINVAL** olarak ayarlar ve sıfır dışında bir değer döndürür.
+Bağımsız değişken yukarıda belirtildiği gibi geçerli bir sinyal değilse, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. İşlenmezse, işlev **errno'yu** **EINVAL** olarak ayarlar ve sıfır olmayan bir değer döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**raise**|\<sinyal. h >|
+|**Yükseltmek**|\<signal.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](abort.md)<br/>
-[signal](signal.md)<br/>
+[Iptal](abort.md)<br/>
+[sinyal](signal.md)<br/>

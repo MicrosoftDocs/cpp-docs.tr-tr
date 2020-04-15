@@ -17,16 +17,16 @@ helpviewer_keywords:
 - Os compiler option [C++]
 - -Os compiler option [C++]
 ms.assetid: 9a340806-fa15-4308-892c-355d83cac0f2
-ms.openlocfilehash: 5bbdda07eacdb003515a40a93a232c0f8626ca89
-ms.sourcegitcommit: aed09c9c05e6b031c8a9f87a8d6bbdaf253485e8
+ms.openlocfilehash: 0eda9461b3ef730e0e0a832aa94a688e03c7e1bb
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67412237"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81336181"
 ---
 # <a name="os-ot-favor-small-code-favor-fast-code"></a>/Os, /Ot (Küçük Koda Ayrıcalık Tanı, Hızlı Koda Ayrıcalık Tanı)
 
-Simge durumuna küçültür veya ve exe ve dll boyutunu en üst düzeye çıkarır.
+EX'lerin ve DL'lerin boyutunu en aza indirir veya en üst düzeye çıkarır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,21 +37,21 @@ Simge durumuna küçültür veya ve exe ve dll boyutunu en üst düzeye çıkar�
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/OS** (küçük koda ayrıcalık tanı) derleyicinin boyut hız yerine boyuta ayrıcalık tanımasını sağlar ve exe ve dll boyutunu azaltır. Derleyici, makine kodu işlevsel olarak benzer dizileri için birçok C ve C++ yapıları azaltabilir. Bazen bu farklılıkları avantajsız yönleri hızı karşı boyutu sunar. **/Os** ve **/Ot** seçeneklerden biri diğerine bir tercihini belirtmenize olanak tanır:
+**/Os** (Favor Small Code), derleyiciye boyutu hızdan daha fazla tercih etmesi için talimat vererek EX'lerin ve DL'lerin boyutunu en aza indirir. Derleyici birçok C ve C++ yapısını işlevsel olarak benzer makine kodu dizilerine indirgeyebilir. Bazen bu farklılıklar boyut karşı hız tradeoffs sunuyoruz. **/Os** ve **/Ot** seçenekleri, biri için bir tercihi diğerinden daha belirtmenize olanak sağlar:
 
-**/Ot** (hızlı koda ayrıcalık tanı) derleyicinin boyutu hızlı yönlendirerek ve exe ve dll hızına büyütür. (Varsayılan değer budur.) Derleyici, makine kodu işlevsel olarak benzer dizileri için birçok C ve C++ yapıları azaltabilir. Bazen bu farklılıkları avantajsız yönleri hızı karşı boyutu sunar. **/Ot** seçeneği en üst düzeye hızını kapsanan ([/O2](o1-o2-minimize-size-maximize-speed.md)) seçeneği. **/O2** seçeneği çok hızlı kod üretmek için çeşitli seçenekler birleştirir.
+**/Ot** (Favor Fast Code), derleyiciye boyutun üzerindeki hızı tercih etmesini öğreterek EX'lerin ve DL'lerin hızını en üst düzeye çıkarır. (Bu varsayılandır.) Derleyici birçok C ve C++ yapısını işlevsel olarak benzer makine kodu dizilerine indirgeyebilir. Bazen, bu farklılıklar boyut karşı hız tradeoffs sunuyoruz. **/Ot** seçeneği Maksimum Hız ([/O2](o1-o2-minimize-size-maximize-speed.md)) seçeneği ile ima edilir. **/O2** seçeneği, çok hızlı kod üretmek için çeşitli seçenekleri birleştirir.
 
-Kullanırsanız **/Os** veya **/Ot**, sonra da belirtmeniz gerekir [/Og](og-global-optimizations.md) kodu en iyi duruma getirme.
-
-> [!NOTE]
->  Test çalıştırmalarını profil oluşturmadan toplanan bilgileri geçersiz kılma belirtirseniz, aksi takdirde etkili olacak en iyi duruma getirme **/Ob**, **/Os**, veya **/Ot**. Daha fazla bilgi için [permutasyonları iyileştirmeleri](../profile-guided-optimizations.md).
-
-**x86 belirli**
-
-Aşağıdaki kod örneği, küçük koda arasındaki farkı gösterir ( **/Os**) seçenekleri ve ayrıcalık hızlı koda ayrıcalık tanı ( **/Ot**) seçeneği:
+**/Os** veya **/Ot**kullanıyorsanız, kodu optimize etmek için [/Og'yi](og-global-optimizations.md) de belirtmeniz gerekir.
 
 > [!NOTE]
->  Kullanırken aşağıdaki beklenen davranışı açıklar **/Os** veya **/Ot**. Ancak, derleyici davranışı yapma farklı iyileştirmeler için aşağıdaki kodu neden olabilir.
+> Profil oluşturma testi çalıştıran bilgiler, **/Ob**, **/Os**, veya **/Ot**belirtirseniz, aksi takdirde geçerli olacak optimizasyonları geçersiz kılar. Daha fazla bilgi için Profil [Destekli Optimizasyonlar.](../profile-guided-optimizations.md)
+
+**x86 Özel**
+
+Aşağıdaki örnek kod, Favor Small Code (**/Os**) seçenekleri ile Favor Fast Code (**/Ot**) seçeneği arasındaki farkı gösterir:
+
+> [!NOTE]
+> /Os veya **/Ot** **/Os** kullanırken beklenen davranışı aşağıda açıklar. Ancak, derleyici davranışı sürüm den serbest bırakılması için aşağıdaki kod için farklı optimizasyonlar neden olabilir.
 
 ```
 /* differ.c
@@ -65,14 +65,14 @@ int differ(int x)
 }
 ```
 
-Aşağıdaki makine kod parçasını gösterildiği, zaman DIFFER.c derlendiği boyutu ( **/Os**), derleyici uygular dönüş deyimindeki ifade Çarp açık olarak bir Çarp kod kısa ancak daha yavaş bir dizi oluşturmak için:
+Aşağıdaki makine kodu parçasında gösterildiği gibi, DIFFER.c boyut **(/Os)** için derlendiğinde, derleyici kısa ama daha yavaş bir kod dizisi oluşturmak için dönüş deyimindeki çarpma ifadesini açıkça çarpma olarak uygular:
 
 ```
 mov    eax, DWORD PTR _x$[ebp]
 imul   eax, 71                  ; 00000047H
 ```
 
-Alternatif olarak, ne zaman DIFFER.c derlendiği hızını ( **/Ot**), derleyici uygular üst karakter dizisi olarak dönüş deyimindeki ifade çarpın ve `LEA` kod hızlı ancak uzun bir dizi oluşturmak için yönergeler:
+Alternatif olarak, DIFFER.c hız **(/Ot)** için derlendiğinde, derleyici dönüş deyimindeki çarpma ifadesini `LEA` hızlı ama daha uzun bir kod dizisi üretmek için bir dizi kaydırma ve yönerge olarak uygular:
 
 ```
 mov    eax, DWORD PTR _x$[ebp]
@@ -82,17 +82,17 @@ lea    eax, DWORD PTR [eax+eax*8]
 sub    eax, ecx
 ```
 
-**Son x86 belirli**
+**END x86 Özel**
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **iyileştirme** özellik sayfası.
+1. **Optimizasyon** özelliği sayfasını tıklatın.
 
-1. Değiştirme **boyut veya hız ayrıcalığı** özelliği.
+1. **İyilik Boyutu veya Hız** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

@@ -1,5 +1,5 @@
 ---
-title: scheduler_ptr yapısı
+title: scheduler_ptr Yapısı
 ms.date: 11/04/2016
 f1_keywords:
 - scheduler_ptr
@@ -8,16 +8,16 @@ f1_keywords:
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::get
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::operator bool
 ms.assetid: e88c84af-c306-476d-aef1-f42a0fa0a80f
-ms.openlocfilehash: fd044a6255a17882c26183223f71564f98c9f7b2
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 60d71a26e5dffcadfb900ef15c26a6d9dc6d6f8b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142778"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81358777"
 ---
-# <a name="scheduler_ptr-structure"></a>scheduler_ptr yapısı
+# <a name="scheduler_ptr-structure"></a>scheduler_ptr Yapısı
 
-Scheduler 'a yönelik bir işaretçi temsil eder. Bu sınıf, shared_ptr veya ham işaretçi kullanılarak yalnızca düz bir başvuru kullanılarak paylaşılan bir yaşam süresi belirtimine izin vermek için mevcuttur.
+Zamanlayıcıiçin bir işaretçiyi temsil eder. Bu sınıf, ham işaretçi kullanarak shared_ptr veya yalnızca düz bir başvuru kullanarak paylaşılan bir yaşam süresinin belirtimini sağlamak için vardır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,22 +29,22 @@ struct scheduler_ptr;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[scheduler_ptr:: scheduler_ptr](#ctor)|Fazla Yüklendi. Shared_ptr Scheduler 'dan Scheduler 'a bir Zamanlayıcı işaretçisi oluşturur|
+|[scheduler_ptr:scheduler_ptr](#ctor)|Fazla Yüklendi. shared_ptr'dan zamanlayıcıya zamanlama işaretçisi oluşturur|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[scheduler_ptr:: Get](#get)|Scheduler 'a ham işaretçiyi döndürür|
+|[scheduler_ptr::get](#get)|Ham işaretçiyi zamanlayıcıya verir|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[scheduler_ptr:: operator bool](#operator_bool)|Zamanlayıcı işaretçisinin NULL olmadığını test edin|
-|[scheduler_ptr:: operator-&gt;](#operator_ptr)|Bir işaretçi gibi davranır|
+|[scheduler_ptr::operatör bool](#operator_bool)|Zamanlayıcı işaretçisinin null olup olmadığını test etme|
+|[scheduler_ptr::operatör-&gt;](#operator_ptr)|Bir işaretçi gibi görün|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -52,13 +52,13 @@ struct scheduler_ptr;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** pplınterface. h
+**Üstbilgi:** pplinterface.h
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="get"></a>scheduler_ptr:: get yöntemi
+## <a name="scheduler_ptrget-method"></a><a name="get"></a>scheduler_ptr::get Method
 
-Scheduler 'a ham işaretçiyi döndürür.
+Ham işaretçiyi zamanlayıcıya verir.
 
 ```cpp
 scheduler_interface* get() const;
@@ -66,7 +66,7 @@ scheduler_interface* get() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="operator_bool"></a>scheduler_ptr:: operator bool
+## <a name="scheduler_ptroperator-bool"></a><a name="operator_bool"></a>scheduler_ptr::operatör bool
 
 Zamanlayıcı işaretçisinin null olup olmadığını sınar.
 
@@ -74,9 +74,9 @@ Zamanlayıcı işaretçisinin null olup olmadığını sınar.
 operator bool() const;
 ```
 
-## <a name="operator_ptr"></a>scheduler_ptr:: operator-&gt;
+## <a name="scheduler_ptroperator-gt"></a><a name="operator_ptr"></a>scheduler_ptr::operatör-&gt;
 
-Bir işaretçi gibi davranır.
+Bir işaretçi gibi olur.
 
 ```cpp
 scheduler_interface* operator->() const;
@@ -84,9 +84,9 @@ scheduler_interface* operator->() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="ctor"></a>scheduler_ptr:: scheduler_ptr Oluşturucusu
+## <a name="scheduler_ptrscheduler_ptr-constructor"></a><a name="ctor"></a>scheduler_ptr::scheduler_ptr Yapıcı
 
-Shared_ptr Scheduler 'dan Scheduler 'a bir Zamanlayıcı işaretçisi oluşturur.
+shared_ptr'dan zamanlayıcıya kadar bir zamanlayıcı işaretçisi oluşturur.
 
 ```cpp
 explicit scheduler_ptr(std::shared_ptr<scheduler_interface> scheduler);
@@ -95,12 +95,12 @@ explicit scheduler_ptr(_In_opt_ scheduler_interface* pScheduler);
 
 ### <a name="parameters"></a>Parametreler
 
-*leyiciyi*<br/>
-Dönüştürülecek Zamanlayıcı.
+*Zamanlayıcı*<br/>
+Dönüştürmek için zamanlayıcı.
 
 *pScheduler*<br/>
-Dönüştürülecek Zamanlayıcı işaretçisi.
+Dönüştürmeiçin zamanlayıcı işaretçisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+[concurrency Ad Alanı](concurrency-namespace.md)

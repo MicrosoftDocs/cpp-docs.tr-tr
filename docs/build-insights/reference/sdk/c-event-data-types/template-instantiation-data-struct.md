@@ -1,6 +1,6 @@
 ---
 title: TEMPLATE_INSTANTIATION_DATA yapısı
-description: C++ Derleme ÖNGÖRÜLERI SDK TEMPLATE_INSTANTIATION_DATA yapısı başvurusu.
+description: C++ Build Insights SDK TEMPLATE_INSTANTIATION_DATA yapı referansı.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 9aa669d715dbe56ce7e889330f46f307f520710f
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: a38d19368e7c0a9912907f1da6e7a2e31ffe8d90
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333624"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81325325"
 ---
 # <a name="template_instantiation_data-structure"></a>TEMPLATE_INSTANTIATION_DATA yapısı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`TEMPLATE_INSTANTIATION_DATA` yapısı bir şablon örneğini açıklar.
+Yapı, `TEMPLATE_INSTANTIATION_DATA` şablon anlık açıklamalarını açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,12 +43,12 @@ typedef struct TEMPLATE_INSTANTIATION_DATA_TAG
 
 |  |  |
 |--|--|
-| `SpecializationSymbolKey` | Şablon özelleşmenin türü için anahtar. Bu değer, çözümlenmekte olan izleme içinde benzersizdir. |
-| `PrimaryTemplateSymbolKey` | Özelleştirilmiş birincil şablon türü için anahtar. Bu değer, çözümlenmekte olan izleme içinde benzersizdir. |
-| `KindCode` | Şablon örneği oluşturma türü. Daha fazla bilgi için bkz. [TEMPLATE_INSTANTIATION_KIND_CODE](template-instantiation-kind-code-enum.md). |
+| `SpecializationSymbolKey` | Şablon uzmanlık türü için anahtar. Bu değer, analiz edilen izleme içinde benzersizdir. |
+| `PrimaryTemplateSymbolKey` | Özelleştirilmiş birincil şablon türü için anahtar. Bu değer, analiz edilen izleme içinde benzersizdir. |
+| `KindCode` | Şablon anlık türü. Daha fazla bilgi için [TEMPLATE_INSTANTIATION_KIND_CODE.](template-instantiation-kind-code-enum.md) |
 
 ## <a name="remarks"></a>Açıklamalar
 
-`TEMPLATE_INSTANTIATION_DATA` yapısındaki anahtarlar çözümlenmekte olan izleme içinde benzersizdir. Ancak, farklı derleyici ön uç geçişlerinden gelen iki farklı anahtar iki özdeş türe işaret edebilir. Birden çok derleyici ön uç geçişlerinden `TEMPLATE_INSTANTIATION_DATA` bilgilerini tüketerek, iki türün aynı olup olmadığını anlamak için [SYMBOL_NAME](../event-table.md#symbol-name) olaylarını kullanın. `SymbolName` olaylar, tüm şablon örneklemeleri gerçekleştirildikten sonra bir derleyici ön ucu geçişinin sonuna yayılır.
+Yapıdaki `TEMPLATE_INSTANTIATION_DATA` anahtarlar analiz edilen iz içinde benzersizdir. Ancak, farklı derleyici ön uç geçişlerinden gelen iki farklı anahtar, iki aynı türe işaret edebilir. Birden çok `TEMPLATE_INSTANTIATION_DATA` derleyici ön uç geçişinden bilgi tüketirken, iki tür aynı olup olmadığını belirlemek için [SYMBOL_NAME](../event-table.md#symbol-name) olayları kullanın. `SymbolName`olaylar, tüm şablon anlık gerçekleşmeleri gerçekleştikten sonra, derleyici ön uç geçişinin sonunda yayılır.
 
 ::: moniker-end

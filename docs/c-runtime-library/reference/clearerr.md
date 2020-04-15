@@ -1,8 +1,9 @@
 ---
 title: clearerr
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - clearerr
+- _o_clearerr
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -26,16 +28,16 @@ helpviewer_keywords:
 - resetting stream error indicator
 - clearerr function
 ms.assetid: a9711cd4-3335-43d4-a018-87bbac5b3bac
-ms.openlocfilehash: 9fd2f7e7dfcf272e806a887b356418b7555913f5
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 174c94136cdc8b603416ff1dd239703489925bae
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942940"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81350031"
 ---
 # <a name="clearerr"></a>clearerr
 
-Bir akışın Hata göstergesini sıfırlar. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz. [clearerr_s](clearerr-s.md).
+Akış için hata göstergesini sıfırlar. Bu işlevin daha güvenli bir sürümü mevcuttur; [bkz. clearerr_s](clearerr-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,24 +49,26 @@ void clearerr(
 
 ### <a name="parameters"></a>Parametreler
 
-*ka*<br/>
-**Dosya** yapısına yönelik işaretçi.
+*Akışı*<br/>
+**DOSYA** yapısı için işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Clearerr** işlevi, *akış*için hata göstergesini ve dosya sonu göstergesini sıfırlar. Hata göstergeleri otomatik olarak temizlenmez; Belirtilen bir akış için hata göstergesi ayarlandığında, bu akıştaki işlemler **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**veya [geri sarma](rewind.md) çağrılana kadar bir hata değeri döndürmeye devam eder.
+Daha **net daha net** *işlev, akış*için hata göstergesini ve dosya sonu göstergesini sıfırlar. Hata göstergeleri otomatik olarak temizlenmez; belirli bir akış için hata göstergesi ayarlandıktan sonra, o akıştaki işlemler daha **net,** [fseek](fseek-fseeki64.md), **fsetpos**veya [geri sarma](rewind.md) adı verilene kadar bir hata değeri döndürmeye devam edin.
 
-*Stream* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** ve döndürür. **Errno** ve hata kodları hakkında daha fazla bilgi için bkz. [errno sabitleri](../../c-runtime-library/errno-constants.md).
+*Akış* **NULL**ise, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL** **için errno** ayarlar ve döndürür. **Errno** ve hata kodları hakkında daha fazla bilgi için [bkz.](../../c-runtime-library/errno-constants.md)
 
-Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz. [clearerr_s](clearerr-s.md).
+Bu işlevin daha güvenli bir sürümü mevcuttur; [bkz. clearerr_s](clearerr-s.md).
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**clearerr**|\<stdio. h >|
+|**clearerr**|\<stdio.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -100,13 +104,13 @@ int main( void )
 }
 ```
 
-### <a name="input"></a>Giriş
+### <a name="input"></a>Girdi
 
 ```Input
 n
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Write error: No error
@@ -117,7 +121,7 @@ No read error
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata İşleme](../../c-runtime-library/error-handling-crt.md)<br/>
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_eof](eof.md)<br/>
 [feof](feof.md)<br/>
 [ferror](ferror.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: CBitmapButton Class
+title: CBitmapButton Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CBitmapButton
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CBitmapButton [MFC], LoadBitmaps
 - CBitmapButton [MFC], SizeToContent
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc
-ms.openlocfilehash: 45e0214cafb80c3e00a7e888a3170040f46113f1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c052f913f68d1890a470ed8a6aae2882ed181863
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388468"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81352711"
 ---
-# <a name="cbitmapbutton-class"></a>CBitmapButton Class
+# <a name="cbitmapbutton-class"></a>CBitmapButton Sınıfı
 
-Metin yerine bit eşlemli görüntülerle etiketlenmiş pushbutton denetimleri oluşturur.
+Metin yerine biteşe görüntülerle etiketlenmiş düğme denetimleri oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,86 +35,86 @@ class CBitmapButton : public CButton
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CBitmapButton::CBitmapButton](#cbitmapbutton)|Oluşturur bir `CBitmapButton` nesne.|
+|[CBitmapButton::CBitmapButton](#cbitmapbutton)|Bir `CBitmapButton` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CBitmapButton::AutoLoad](#autoload)|Bir düğme bir iletişim kutusunda bir nesne ile ilişkilendirir `CBitmapButton` sınıf adına göre bitmap(s) yükler ve bit eşlem sığdırmak için düğmeyi boyutları.|
-|[CBitmapButton::LoadBitmaps](#loadbitmaps)|Uygulamanın kaynak dosyasından bir veya daha fazla adlandırılmış bit eşlemi Kaynak yükleniyor ve nesneye bit eşlemler ekleme nesnesini başlatır.|
-|[CBitmapButton::SizeToContent](#sizetocontent)|Bit eşlem için uyum sağlamak için düğmeyi boyutlandırır.|
+|[CBitmapButton::Otomatik Yükleme](#autoload)|İletişim kutusundaki bir düğmeyi `CBitmapButton` sınıfın bir nesnesiyle ilişkilendirin, bitmap(ler)'i ada göre yükler ve düğmeyi bit eşlebe sığdırmak için boyutlandırır.|
+|[CBitmapButton::LoadBitmaps](#loadbitmaps)|Uygulamanın kaynak dosyasından bir veya daha fazla adlandırılmış bit eşlem kaynaklarını yükleyerek ve bit eşlemlerini nesneye ekleyerek nesneyi başlatır.|
+|[CBitmapButton::SizeToContent](#sizetocontent)|Bit eşlemi sığdırmak için düğmeyi boyutlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CBitmapButton` nesneleri içeren bir düğme varsayabilirsiniz farklı durumlar için görüntüleri içeren en fazla dört bit eşlemler: Yukarı (veya normal) aşağı (veya seçili) odaklanır ve devre dışı. Yalnızca ilk bit eşlem gereklidir; diğerleri isteğe bağlıdır.
+`CBitmapButton`nesneler, bir düğmenin varsayabileceği farklı durumlar için görüntüler içeren en fazla dört bit eşlem içerir: yukarı (veya normal), aşağı (veya seçili), odaklanmış ve devre dışı bırakılmış. Yalnızca ilk bit eşlemi gereklidir; diğerleri isteğe bağlıdır.
 
-Bit eşlem düğmesi görüntüleri görüntünün yanı sıra Görüntünün kendisi çevresinde kenarlık içerir. Kenarlık genellikle düğme durumunu gösteren bir yer yürütür. Örneğin, bit eşlem odaklanmış durumu için genellikle bir yukarı durumu için ancak border veya kalın Kesiksiz bir çizgi kenarlık, bir kesikli dikdörtgen iç gibidir. Devre dışı genellikle durum için bit eşlem yukarı durumu ancak daha düşük Karşıtlık (gibi soluk gri menüsü seçim) için bir benzer.
+Bitmap düğmesi görüntüleri, görüntünün etrafındaki kenarlığı ve görüntünün kendisini içerir. Kenarlık genellikle düğmenin durumunu göstermede rol oynar. Örneğin, odaklanmış durum için bitmap genellikle yukarı durum için bir gibi, ancak kenarlığı veya sınırda kalın bir düz çizgi bir kesikli dikdörtgen inset ile. Devre dışı bırakılmış durum için bit eşlemi genellikle yukarı durumu için olana benzer, ancak daha düşük kontrasta sahiptir (soluk veya gri menü seçimi gibi).
 
-Bu bit eşlemler herhangi bir boyutta olabilir, ancak aynı boyutta yukarı durumu için bit eşlem değilmiş gibi davranılır.
+Bu bit eşlemler herhangi bir boyutta olabilir, ancak hepsi yukarı durum için bit eşlemle aynı boyuttaymuş gibi değerlendirilir.
 
-Çeşitli uygulamalar, bit eşlem resimleri farklı birleşimlerini talep:
+Çeşitli uygulamalar bitmap görüntülerinin farklı kombinasyonlarını ister:
 
-|Ayarlama|Aşağı|Odaklanmış|Devre dışı|Uygulama|
+|Yukarı|Aşağı|Odaklı|Devre dışı|Uygulama|
 |--------|----------|-------------|--------------|-----------------|
-|×||||Bit eşlem|
-|×|×|||WS_TABSTOP stil olmadan düğmesi|
-|×|×|×|×|Tüm durumlar iletişim düğmesi|
-|×|×|×||WS_TABSTOP stiliyle iletişim düğmesi|
+|×||||Bitmap|
+|×|×|||WS_TABSTOP tarzı olmadan düğme|
+|×|×|×|×|Tüm durumları içeren iletişim düğmesi|
+|×|×|×||WS_TABSTOP stili olan iletişim düğmesi|
 
-Bir bit eşlem düğmesi denetimi oluştururken, düğmenin özelleştirilmiş olarak çizilen olduğunu belirtmek için BS_OWNERDRAW stilini ayarlayın. Bu düğme için WM_MEASUREITEM ve WM_DRAWITEM ileti göndermek Windows neden olur; framework, bu iletileri işleyen ve sizin için düğmenin görünümünü yönetir.
+Bitmap düğmesi denetimi oluştururken, düğmenin sahiptarafından çizildiğini belirtmek için BS_OWNERDRAW stilini ayarlayın. Bu, Windows'un düğme için WM_MEASUREITEM ve WM_DRAWITEM iletiler göndermesine neden olur; çerçeve bu iletileri işler ve sizin için düğmenin görünümünü yönetir.
 
-### <a name="to-create-a-bitmap-button-control-in-a-windows-client-area"></a>Bir pencerenin istemci alanında bir bit eşlem düğmesi denetimi oluşturmak için
+### <a name="to-create-a-bitmap-button-control-in-a-windows-client-area"></a>Pencerenin istemci alanında bitmap düğmesi denetimi oluşturmak için
 
-1. Bir ile dört düğme için bit eşlem resimleri oluşturun.
+1. Düğme için bir ila dört biteşlik görüntü oluşturun.
 
-1. Oluşturmak [CBitmapButton](#cbitmapbutton) nesne.
+1. [CBitmapButton](#cbitmapbutton) nesnesini oluştur.
 
-1. Çağrı [Oluştur](../../mfc/reference/cbutton-class.md#create) Windows düğme denetimini oluşturup buna eklemek için işlevi `CBitmapButton` nesne.
+1. Windows [Create](../../mfc/reference/cbutton-class.md#create) düğmesi denetimini oluşturmak ve `CBitmapButton` nesneye takmak için Oluştur işlevini arayın.
 
-1. Çağrı [LoadBitmaps](#loadbitmaps) bit eşlemi Kaynak bit eşlem düğmesi oluşturulmuş sonra yüklemek için üye işlevi.
+1. Bitmap düğmesi oluşturulduktan sonra bitmap kaynaklarını yüklemek için [LoadBitmaps](#loadbitmaps) üye işlevini arayın.
 
-### <a name="to-include-a-bitmap-button-control-in-a-dialog-box"></a>İletişim kutusunda bir bit eşlem düğme denetimi eklemek için
+### <a name="to-include-a-bitmap-button-control-in-a-dialog-box"></a>İletişim kutusuna bitmap düğmesi denetimi eklemek için
 
-1. Bir ile dört düğme için bit eşlem resimleri oluşturun.
+1. Düğme için bir ila dört biteşlik görüntü oluşturun.
 
-1. Bit eşlem düğmesi istediğiniz konumlandırılmış bir özelleştirilmiş çizimli düğmesi ile bir iletişim şablonunu oluşturun. Şablondaki düğmenin boyutu önemli değildir.
+1. Bitmap düğmesini istediğiniz yerde konumlandırılmış bir sahip çizim düğmesi içeren bir iletişim şablonu oluşturun. Şablondaki düğmenin boyutu önemli değildir.
 
-1. Düğmenin resim yazısı "MYIMAGE" gibi bir değere ayarlayın ve IDC_MYIMAGE gibi düğme için bir simge tanımlayabilirsiniz.
+1. Düğmenin başlığını "MYIMAGE" gibi bir değere ayarlayın ve IDC_MYIMAGE gibi düğme için bir sembol tanımlayın.
 
-1. Uygulamanızın kaynak betiği her düğme için oluşturulmuş bir harf "U", "D", "F" ekleyerek bir kimliği oluşturulan görüntüleri vermek ya da "X" (yukarı, aşağı, odaklanır ve devre dışı için) düğmesi başlığı için kullanılan dize için 3. adım. Düğmesi başlığı "MYIMAGE", örneğin, kimlikleri "MYIMAGEU", "MYIMAGED," olacaktır "MYIMAGEF" ve "MYIMAGEX." **Gerekir** çift tırnak içinde bit eşlemler Kimliğini belirtin. Aksi takdirde kaynak düzenleyicisini tamsayı kaynağa atar ve MFC görüntü yüklenirken başarısız olur.
+1. Uygulamanızın kaynak komut dosyasında, "U", "D", "F" veya "X" (yukarı, aşağı, odaklanmış ve devre dışı bırakılmış için) harflerinden birini adım 3'teki düğme başlığı için kullanılan dize ekleyerek oluşturulan düğme için oluşturulan görüntülerin her birini bir kimlik verin. "MYIMAGE" butonu için, örneğin, "MYIMAGEU", " MYIMAGED", " MYIMAGEF" ve " MYIMAGEX" olacaktır. Bitmaps'inizin kimliğini çift tırnak içinde **belirtmeniz gerekir.** Aksi takdirde kaynak düzenleyicisi kaynağa bir arametatar ve görüntüyü yüklerken MFC başarısız olur.
 
-1. Uygulamanızın iletişim sınıfında (türetilen `CDialog`), ekleme bir `CBitmapButton` üye nesnesi.
+1. Uygulamanızın iletişim sınıfında (türetilmiş), `CDialog`bir `CBitmapButton` üye nesne ekleyin.
 
-1. İçinde `CDialog` nesnenin [OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog) rutin, çağrı `CBitmapButton` nesnenin [Sorsorgu](#autoload) işlev, parametre olarak düğmenin denetim Kimliğini kullanarak ve `CDialog` nesnenin **bu** işaretçi.
+1. Nesnenin `CDialog` [OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog) yordamında, `CBitmapButton` parametre olarak düğmenin denetim kimliğini ve nesnenin `CDialog` **bu** işaretçisini kullanarak nesnenin [AutoLoad](#autoload) işlevini arayın.
 
-BN_CLICKED, örneğin Windows bildirim iletilerini işlemek isterseniz bir bit eşlem düğmesi denetimi tarafından üstüne gönderilir (öğesinden türetilmiş bir sınıf genellikle `CDialog`), ekleme `CDialog`-türetilmiş nesneden bir ileti eşleme girişi ve ileti işleyicisi üyesi her ileti için işlev. Tarafından gönderilen bildirimleri bir `CBitmapButton` nesne tarafından gönderilen bu aynı olan bir [CButton](../../mfc/reference/cbutton-class.md) nesne.
+BN_CLICKED gibi, bitmap düğmesi denetimi tarafından üst öğesine (genellikle türetilen bir sınıf) gönderilen `CDialog`Windows bildirim `CDialog`iletilerini işlemek istiyorsanız, türetilmiş nesneye her ileti için bir ileti eşlemi girişi ve ileti işleyicisi üye işlevi ekleyin. Bir `CBitmapButton` nesne tarafından gönderilen bildirimler, [CButton](../../mfc/reference/cbutton-class.md) nesnesi tarafından gönderilenlerle aynıdır.
 
-Sınıf [CToolBar](../../mfc/reference/ctoolbar-class.md) farklı bir yaklaşım için bit eşlem düğmeler alır.
+[CToolBar](../../mfc/reference/ctoolbar-class.md) sınıfı bitmap düğmelerine farklı bir yaklaşım benimser.
 
-Daha fazla bilgi için `CBitmapButton`, bkz: [denetimleri](../../mfc/controls-mfc.md).
+Daha fazla `CBitmapButton`bilgi için Bkz. [Denetimler.](../../mfc/controls-mfc.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CButton](../../mfc/reference/cbutton-class.md)
+[Cbutton](../../mfc/reference/cbutton-class.md)
 
 `CBitmapButton`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxext.h
+**Üstbilgi:** afxext.h
 
-##  <a name="autoload"></a>  CBitmapButton::AutoLoad
+## <a name="cbitmapbuttonautoload"></a><a name="autoload"></a>CBitmapButton::Otomatik Yükleme
 
-Bir düğme bir iletişim kutusunda bir nesne ile ilişkilendirir `CBitmapButton` sınıf adına göre bitmap(s) yükler ve bit eşlem sığdırmak için düğmeyi boyutları.
+İletişim kutusundaki bir düğmeyi `CBitmapButton` sınıfın bir nesnesiyle ilişkilendirin, bitmap(ler)'i ada göre yükler ve düğmeyi bit eşlebe sığdırmak için boyutlandırır.
 
 ```
 BOOL AutoLoad(
@@ -124,27 +124,27 @@ BOOL AutoLoad(
 
 ### <a name="parameters"></a>Parametreler
 
-*nID*<br/>
-Düğmenin denetim kimliği.
+*Nıd*<br/>
+Düğmenin kontrol kimliği.
 
 *pParent*<br/>
-Düğmeye sahip bir nesne işaretçisi.
+Düğmenin sahibi nesneye işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `AutoLoad` iletişim kutusunda bir bit eşlem düğmesi olarak bir özelleştirilmiş çizimli düğmesi işlevi. Açıklamalar için bu işlevi kullanmak için yönergeler bulunduğunuz `CBitmapButton` sınıfı.
+İletişim `AutoLoad` kutusundaki sahip çizim düğmesini bitmap düğmesi olarak başlatmak için işlevi kullanın. Bu işlevi kullanma yönergeleri sınıfın açıklamalarında yer alıyor. `CBitmapButton`
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCControlLadenDialog#75](../../mfc/codesnippet/cpp/cbitmapbutton-class_1.cpp)]
 
-##  <a name="cbitmapbutton"></a>  CBitmapButton::CBitmapButton
+## <a name="cbitmapbuttoncbitmapbutton"></a><a name="cbitmapbutton"></a>CBitmapButton::CBitmapButton
 
-Oluşturur bir `CBitmapButton` nesne.
+Bir `CBitmapButton` nesnesi oluşturur.
 
 ```
 CBitmapButton();
@@ -152,15 +152,15 @@ CBitmapButton();
 
 ### <a name="remarks"></a>Açıklamalar
 
-C++ oluşturduktan sonra `CBitmapButton` nesne, çağrı [CButton::Create](../../mfc/reference/cbutton-class.md#create) Windows düğme denetimini oluşturup buna eklemek için `CBitmapButton` nesne.
+C++ `CBitmapButton` nesnesini oluşturduktan sonra [CButton'u arayın::Windows](../../mfc/reference/cbutton-class.md#create) düğmesi denetimini oluşturmak ve `CBitmapButton` nesneye takmak için oluştur' un.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCControlLadenDialog#57](../../mfc/codesnippet/cpp/cbitmapbutton-class_2.cpp)]
 
-##  <a name="loadbitmaps"></a>  CBitmapButton::LoadBitmaps
+## <a name="cbitmapbuttonloadbitmaps"></a><a name="loadbitmaps"></a>CBitmapButton::LoadBitmaps
 
-Kaynak adları veya kimlik numaraları veya kullanamazsınız, tanımlanan bit eşlem resimleri yüklemek istediğinizde, bu işlevi kullanın `AutoLoad` Örneğin, bir iletişim kutusu bir parçası olmayan bir bit eşlem düğmesi oluşturmak için işlev.
+Kaynak adlarıyla veya kimlik numaralarıyla tanımlanan bitmap görüntülerini yüklemek istediğinizde veya `AutoLoad` örneğin iletişim kutusunun parçası olmayan bir bitmap düğmesi oluşturduğunuz için işlevi kullanamadığınızda bu işlevi kullanın.
 
 ```
 BOOL LoadBitmaps(
@@ -179,40 +179,40 @@ BOOL LoadBitmaps(
 ### <a name="parameters"></a>Parametreler
 
 *lpszBitmapResource*<br/>
-Bit eşlemin bir bit eşlem düğmenin normal veya "çalışır" durumda adında boş sonlandırılmış dizeye işaret eder. Gerekli.
+Bitmap düğmesinin normal veya "yukarı" durumu için bit eşlem adını içeren null-sonlandırılan dizeyi işaret eder. Gereklidir.
 
 *lpszBitmapResourceSel*<br/>
-"Kapalı" durumu ya da bir bit eşlem düğmesi seçilen için bit eşlem adını içeren null ile sonlandırılmış dizeye işaret eder. NULL olabilir.
+Bitmap düğmesinin seçili veya "aşağı" durumu için bit eşlem adını içeren null-sonlandırılan dizeyi işaret eder. NULL olabilir.
 
 *lpszBitmapResourceFocus*<br/>
-Bit eşlem bit eşlem düğmenin adını içeren null ile sonlandırılmış dize noktalarına durumu odaklanır. NULL olabilir.
+Bitmap düğmesinin odaklanmış durumu için bit eşlem adını içeren null-sonlandırılan dizeyi işaret eder. NULL olabilir.
 
-*lpszBitmapResourceDisabled*<br/>
-Bit eşlem bit eşlem düğmenin devre dışı bırakılmış adını içeren boş sonlandırılmış dizeye işaret eder. NULL olabilir.
+*lpszBitmapResourceDevre Dışı*<br/>
+Bitmap düğmesinin devre dışı bırakılmış durumu için bit eşlem adını içeren null-sonlandırılan dizeyi işaret eder. NULL olabilir.
 
 *nIDBitmapResource*<br/>
-Bir bit eşlem düğmenin normal veya "çalışır" durumda bit eşlem kaynağının kaynak kimliği numarasını belirtir. Gerekli.
+Bitmap düğmesinin normal veya "yukarı" durumu için biteşkaynağıkaynağının kaynak kimlik numarasını belirtir. Gereklidir.
 
 *nIDBitmapResourceSel*<br/>
-Bir bit eşlem düğmesi seçili veya "kapalı" durumu bit eşlem kaynağının kaynak kimliği numarasını belirtir. 0 olabilir.
+Bitmap düğmesinin seçili veya "aşağı" durumu için biteşkaynağıkaynağının kaynak kimlik numarasını belirtir. 0 olabilir.
 
 *nIDBitmapResourceFocus*<br/>
-Odaklanmış bir bit eşlem düğmenin durumu için bit eşlem kaynağının kaynak kimliği numarasını belirtir. 0 olabilir.
+Bitmap düğmesinin odaklanmış durumu için biteşkaynağının kaynak kimlik numarasını belirtir. 0 olabilir.
 
-*nIDBitmapResourceDisabled*<br/>
-Bir bit eşlem düğmenin devre dışı durumu için bit eşlem kaynağının kaynak kimliği numarasını belirtir. 0 olabilir.
+*nIDBitmapResourceDevre Dışı*<br/>
+Bitmap düğmesinin devre dışı bırakılmış durumu için biteşkaynağıkaynağının kaynak kimlik numarasını belirtir. 0 olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCControlLadenDialog#58](../../mfc/codesnippet/cpp/cbitmapbutton-class_3.cpp)]
 
-##  <a name="sizetocontent"></a>  CBitmapButton::SizeToContent
+## <a name="cbitmapbuttonsizetocontent"></a><a name="sizetocontent"></a>CBitmapButton::SizeToContent
 
-Bir bit eşlem düğmesi bit eşlemin bir boyuta yeniden boyutlandırmak için bu işlevi çağırın.
+Bitmap düğmesini bit eşlemi boyutuna yeniden boyutlandırmak için bu işlevi arayın.
 
 ```
 void SizeToContent();
@@ -224,6 +224,6 @@ void SizeToContent();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
+[MFC Örnek CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
 [CButton Sınıfı](../../mfc/reference/cbutton-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

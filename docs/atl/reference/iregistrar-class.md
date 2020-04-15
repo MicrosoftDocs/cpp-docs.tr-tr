@@ -1,5 +1,5 @@
 ---
-title: Ikaydedici arabirimi
+title: IRegistrar Arabirimi
 ms.date: 02/01/2017
 f1_keywords:
 - IRegistrar
@@ -15,16 +15,16 @@ f1_keywords:
 helpviewer_keywords:
 - Iregistrar Interface
 ms.assetid: e88c04b7-0c93-4ae8-aeb9-ecd78f87421e
-ms.openlocfilehash: e347bdba1656a53cd705123a26650dad50d3892f
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 98943fe294322715723bd91207a6f3320ca1ffb3
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417616"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81329460"
 ---
-# <a name="iregistrar-interface"></a>Ikaydedici arabirimi
+# <a name="iregistrar-interface"></a>IRegistrar Arabirimi
 
-Bu arabirim, atlıface. h içinde tanımlanmıştır ve [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced)gibi CAtlModule üye işlevleri tarafından dahili olarak kullanılır.
+Bu arabirim atliface.h'de tanımlanır ve [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced)gibi CAtlModule üye işlevleri tarafından dahili olarak kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,28 +34,28 @@ typedef interface IRegistrar IRegistrar;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Daha fazla ayrıntı için [değiştirilebilen parametreleri (kayıt sahibinin ön işlemcisi) kullanma](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) konusuna bakın.
+Daha fazla bilgi için [Değiştirilebilir Parametreleri (Kayıt Şirketi Ön İşlemci) kullanarak](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) konuya bakın.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[Ikaydedici:: ResourceRegisterSz](#resourceregistersz)|Kaynağı kaydeder. |
-|[Ikaydedici:: ResourceUnregisterSz](#resourceunregistersz)| Kaynağın kaydını siler.|
-|[Ikaydedicikaydedicisi:: FileRegister](#fileregister)|Dosyayı kaydeder.|
-|[Ikaydedici:: FileUnregister](#fileunregister)|Dosyanın kaydını siler.|
-|[Ikaydedici:: StringRegister](#stringregister)|Dizeyi kaydeder.|
-|[Ikaydedici:: StringUnregister](#stringunregister)|Dizenin kaydını siler|
-|[Ikaydedicce:: ResourceRegister](#resourceregister)|Kaynağı kaydeder.|
-|[Ikaydedici:: ResourceUnregister](#resourceunregister)|Kaynağın kaydını siler.|
+|[IRegistrar::ResourceRegisterSz](#resourceregistersz)|Kaynağı kaydeder. |
+|[IRegistrar::ResourceUnregisterSz](#resourceunregistersz)| Kaynağın kaydını silinir.|
+|[IRegistrar::FileRegister](#fileregister)|Dosyayı kaydeder.|
+|[IRegistrar::FileUnregister](#fileunregister)|Dosyayı açar.|
+|[IRegistrar::StringRegister](#stringregister)|Dize yi kaydeder.|
+|[IRegistrar::StringUnregister](#stringunregister)|Dizeyi unregisters|
+|[IRegistrar::ResourceRegister](#resourceregister)|Kaynağı kaydeder.|
+|[IRegistrar::ResourceUnRegister](#resourceunregister)|Kaynağın kaydını silinir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlifao. h
+**Üstbilgi:** atlifase.h
 
-##  <a name="resourceregistersz"></a>Ikaydedici:: ResourceRegisterSz
+## <a name="iregistrarresourceregistersz"></a><a name="resourceregistersz"></a>IRegistrar::ResourceRegisterSz
 
 Kaynağı kaydeder.
 
@@ -66,9 +66,9 @@ virtual HRESULT STDMETHODCALLTYPE ResourceRegisterSz(
     /* [in] */ _In_z_ LPCOLESTR szType) = 0;
 ```
 
-##  <a name="resourceunregistersz"></a>Ikaydedici:: ResourceUnregisterSz
+## <a name="iregistrarresourceunregistersz"></a><a name="resourceunregistersz"></a>IRegistrar::ResourceUnregisterSz
 
-Kaynağın kaydını siler.
+Kaynağın kaydını silinir.
 
 ```
 virtual HRESULT STDMETHODCALLTYPE ResourceUnregisterSz(
@@ -77,7 +77,7 @@ virtual HRESULT STDMETHODCALLTYPE ResourceUnregisterSz(
     /* [in] */ _In_z_ LPCOLESTR szType) = 0;
 ```
 
-##  <a name="fileregister"></a>Ikaydedicikaydedicisi:: FileRegister
+## <a name="iregistrarfileregister"></a><a name="fileregister"></a>IRegistrar::FileRegister
 
 Dosyayı kaydeder.
 
@@ -86,16 +86,16 @@ virtual HRESULT STDMETHODCALLTYPE FileRegister(
     /* [in] */ _In_z_ LPCOLESTR fileName) = 0;
 ```
 
-##  <a name="fileunregister"></a>Ikaydedici:: FileUnregister
+## <a name="iregistrarfileunregister"></a><a name="fileunregister"></a>IRegistrar::FileUnregister
 
-Dosyanın kaydını siler.
+Dosyayı açar.
 
 ```
 virtual HRESULT STDMETHODCALLTYPE FileUnregister(
     /* [in] */ _In_z_ LPCOLESTR fileName) = 0;
 ```
 
-##  <a name="stringregister"></a>Ikaydedici:: StringRegister
+## <a name="iregistrarstringregister"></a><a name="stringregister"></a>IRegistrar::StringRegister
 
 Belirtilen dize verilerini kaydeder.
 
@@ -104,16 +104,16 @@ virtual HRESULT STDMETHODCALLTYPE StringRegister(
     /* [in] */ _In_z_ LPCOLESTR data) = 0;
 ```
 
-##  <a name="stringunregister"></a>Ikaydedici:: StringUnregister
+## <a name="iregistrarstringunregister"></a><a name="stringunregister"></a>IRegistrar::StringUnregister
 
-Belirtilen dize verilerinin kaydını siler.
+Belirtilen dize verilerini kaydeder.
 
 ```
 virtualHRESULT STDMETHODCALLTYPE StringUnregister(
     /* [in] */ _In_z_ LPCOLESTR data) = 0;
 ```
 
-##  <a name="resourceregister"></a>Ikaydedicce:: ResourceRegister
+## <a name="iregistrarresourceregister"></a><a name="resourceregister"></a>IRegistrar::ResourceRegister
 
 Kaynağı kaydeder.
 
@@ -124,9 +124,9 @@ virtual HRESULT STDMETHODCALLTYPE ResourceRegister(
     /* [in] */ _In_z_ LPCOLESTR szType) = 0;
 ```
 
-##  <a name="resourceunregister"></a>Ikaydedici:: ResourceUnregister
+## <a name="iregistrarresourceunregister"></a><a name="resourceunregister"></a>IRegistrar::ResourceUnRegister
 
-Kaynağın kaydını siler.
+Kaynağın kaydını silinir.
 
 ```
 virtualHRESULT STDMETHODCALLTYPE ResourceUnregister(
@@ -137,7 +137,7 @@ virtualHRESULT STDMETHODCALLTYPE ResourceUnregister(
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Değiştirilebilir Parametreler Kullanma (Kaydedicinin Ön İşlemcisi)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
-[Modül sınıfları](../../atl/atl-module-classes.md)<br/>
-[Kayıt defteri bileşeni (kaydedici)](../../atl/atl-registry-component-registrar.md)
+[Değiştirilebilir Parametreleri Kullanma (Kayıt Sahibinin Ön İşlemcisi)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
+[Modül Sınıfları](../../atl/atl-module-classes.md)<br/>
+[Kayıt Bileşeni (Registrar)](../../atl/atl-registry-component-registrar.md)

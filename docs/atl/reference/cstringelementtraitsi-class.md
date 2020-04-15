@@ -1,5 +1,5 @@
 ---
-title: Cstringelementtraitsı sınıfı
+title: CStringElementTraitsI Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CStringElementTraitsI
@@ -12,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - CStringElementTraitsI class
 ms.assetid: c23f92b1-91e5-400f-96ed-258b02622b7a
-ms.openlocfilehash: 77357aa2be326ebebaaf5a8614faaf88a0c3c06b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 32980e19443cb17a3a688c85ff21195c60ed2124
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62277441"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330597"
 ---
-# <a name="cstringelementtraitsi-class"></a>Cstringelementtraitsı sınıfı
+# <a name="cstringelementtraitsi-class"></a>CStringElementTraitsI Sınıfı
 
-Bu sınıf, koleksiyon sınıfı nesnelerini içinde depolanan dizeleri ilgili statik işlevler sağlar. Benzer [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md), ancak büyük küçük harf duyarsız bir karşılaştırma gerçekleştirir.
+Bu sınıf, koleksiyon sınıfı nesnelerinde depolanan dizeleri ile ilgili statik işlevler sağlar. [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md)benzer, ancak büyük/küçük harf duyarsız karşılaştırmalar gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,26 +37,26 @@ Koleksiyonda depolanacak veri türü.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Genel Typedefs
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CStringElementTraitsI::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.|
-|[CStringElementTraitsI::OUTARGTYPE](#outargtype)|Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.|
+|[CStringElementTraitsI::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğe eklemek için kullanılacak veri türü.|
+|[CStringElementTraitsI::OUTARGTYPE](#outargtype)|Toplama sınıfı nesnesinden öğeleri almak için kullanılacak veri türü.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CStringElementTraitsI::CompareElements](#compareelements)|Farklar durumda yoksayılıyor eşitliği iki dize öğe Karşılaştırılacak statik bu işlevi çağırın.|
-|[CStringElementTraitsI::CompareElementsOrdered](#compareelementsordered)|Farklar durumda yoksayılıyor iki dize öğe Karşılaştırılacak statik bu işlevi çağırın.|
-|[CStringElementTraitsI::Hash](#hash)|Verilen dize öğesi için bir karma değeri hesaplamak için statik bu işlevi çağırın.|
+|[CstringElementTraitsI::CompareElements](#compareelements)|Bu statik işlevi, durum farklılıklarını göz ardı ederek eşitlik için iki dize öğesini karşılaştırmak için çağırın.|
+|[CStringElementTraitsI::CompareElementsOrdered](#compareelementsordered)|İki dize öğesini karşılaştırmak için bu statik işlevi çağırın, büyük/küçük harf farklılıklarını yok say.|
+|[CStringElementTraitsI::Karma](#hash)|Verilen dize öğesi için karma değeri hesaplamak için bu statik işlevi çağırın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, dizeleri karşılaştırmak ve bir karma değer oluşturmak için statik işlevler sağlar. Bu işlevler, dize tabanlı verileri depolamak için koleksiyon sınıfı kullanıldığında yararlıdır. Kullanım [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md) olduğunda dize nesneleri ile ile başvuru olarak ele alınabilir.
+Bu sınıf dizeleri karşılaştırmak ve karma değer oluşturmak için statik işlevler sağlar. Bu işlevler, dize tabanlı verileri depolamak için bir koleksiyon sınıfı kullanırken yararlıdır. Dize nesneleri başvuru olarak ele alınacaksa [CStringRefElementTraits'ı](../../atl/reference/cstringrefelementtraits-class.md) kullanın.
 
-Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
+Daha fazla bilgi için [ATL Koleksiyon Sınıfları'na](../../atl/atl-collection-classes.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -66,11 +66,11 @@ Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-cl
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcoll.h
+**Üstbilgi:** atlcoll.h
 
-##  <a name="compareelements"></a>  CStringElementTraitsI::CompareElements
+## <a name="cstringelementtraitsicompareelements"></a><a name="compareelements"></a>CstringElementTraitsI::CompareElements
 
-Farklar durumda yoksayılıyor eşitliği iki dize öğe Karşılaştırılacak statik bu işlevi çağırın.
+Bu statik işlevi, durum farklılıklarını göz ardı ederek eşitlik için iki dize öğesini karşılaştırmak için çağırın.
 
 ```
 static bool CompareElements(INARGTYPE str1, INARGTYPE str2) throw();
@@ -86,15 +86,15 @@ static bool CompareElements(INARGTYPE str1, INARGTYPE str2) throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe yanlış Aksi takdirde, eşitse true döndürür.
+Öğeler eşitse doğru döndürür, aksi takdirde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmalar büyük/küçük harfe duyarsızdır.
+Karşılaştırmalar büyük/küçük harf duyarsızdır.
 
-##  <a name="compareelementsordered"></a>  CStringElementTraitsI::CompareElementsOrdered
+## <a name="cstringelementtraitsicompareelementsordered"></a><a name="compareelementsordered"></a>CStringElementTraitsI::CompareElementsOrdered
 
-Farklar durumda yoksayılıyor iki dize öğe Karşılaştırılacak statik bu işlevi çağırın.
+İki dize öğesini karşılaştırmak için bu statik işlevi çağırın, büyük/küçük harf farklılıklarını yok say.
 
 ```
 static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
@@ -110,15 +110,15 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizeler aynıysa sıfır, < 0, *str1* olduğu küçüktür *str2*, veya > 0 ise *str1* büyüktür *str2*. [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) yöntemi karşılaştırmalar yapmak için kullanılır.
+Dizeleri aynı ysa sıfır, *str1* str2'den küçükse 0 < veya *str1* *str2'den*büyükse 0'>. *str2* Karşılaştırmaları gerçekleştirmek için [CStringT::Karşılaştır](../../atl-mfc-shared/reference/cstringt-class.md#compare) yöntemi kullanılır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmalar büyük/küçük harfe duyarsızdır.
+Karşılaştırmalar büyük/küçük harf duyarsızdır.
 
-##  <a name="hash"></a>  CStringElementTraitsI::Hash
+## <a name="cstringelementtraitsihash"></a><a name="hash"></a>CStringElementTraitsI::Karma
 
-Verilen dize öğesi için bir karma değeri hesaplamak için statik bu işlevi çağırın.
+Verilen dize öğesi için karma değeri hesaplamak için bu statik işlevi çağırın.
 
 ```
 static ULONG Hash(INARGTYPE str) throw();
@@ -126,24 +126,24 @@ static ULONG Hash(INARGTYPE str) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*Str*<br/>
 Dize öğesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizenin içeriklerini kullanarak hesaplanan bir karma değer döndürür.
+Dize içeriğini kullanarak hesaplanan karma değeri döndürür.
 
-##  <a name="inargtype"></a>  CStringElementTraitsI::INARGTYPE
+## <a name="cstringelementtraitsiinargtype"></a><a name="inargtype"></a>CStringElementTraitsI::INARGTYPE
 
-Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.
+Koleksiyon sınıfı nesnesine öğe eklemek için kullanılacak veri türü.
 
 ```
 typedef T::PCXSTR INARGTYPE;
 ```
 
-##  <a name="outargtype"></a>  CStringElementTraitsI::OUTARGTYPE
+## <a name="cstringelementtraitsioutargtype"></a><a name="outargtype"></a>CStringElementTraitsI::OUTARGTYPE
 
-Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.
+Toplama sınıfı nesnesinden öğeleri almak için kullanılacak veri türü.
 
 ```
 typedef T& OUTARGTYPE;
@@ -152,5 +152,5 @@ typedef T& OUTARGTYPE;
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CElementTraitsBase Sınıfı](../../atl/reference/celementtraitsbase-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
 [CStringElementTraits Sınıfı](../../atl/reference/cstringelementtraits-class.md)

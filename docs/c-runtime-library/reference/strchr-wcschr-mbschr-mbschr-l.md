@@ -1,11 +1,13 @@
 ---
 title: strchr, wcschr, _mbschr, _mbschr_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - strchr
 - wcschr
 - _mbschr_l
 - _mbschr
+- _o__mbschr
+- _o__mbschr_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,6 +22,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -44,19 +47,19 @@ helpviewer_keywords:
 - tcschr function
 - mbschr_l function
 ms.assetid: 2639905d-e983-43b7-b885-abef32cfac43
-ms.openlocfilehash: fb0b170473ae48b8d339f5e3db8350087997bfeb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ddfb90efdda4b5eccfcb8d8b4efeea528604fa68
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940826"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81354077"
 ---
 # <a name="strchr-wcschr-_mbschr-_mbschr_l"></a>strchr, wcschr, _mbschr, _mbschr_l
 
-Geçerli yerel ayarı veya belirtilen LC_CTYPE dönüştürme durumu kategorisini kullanarak dizedeki bir karakter bulur.
+Geçerli yerel alanı veya belirli bir LC_CTYPE dönüşüm durumu kategorisini kullanarak dizedeki bir karakteri bulur.
 
 > [!IMPORTANT]
-> `_mbschr`ve `_mbschr_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbschr`ve `_mbschr_l` Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -116,45 +119,47 @@ const unsigned char *_mbschr_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*<br/>
-Null ile sonlandırılmış kaynak dizesi.
+*Str*<br/>
+Null-sonlandırılan kaynak dize.
 
-*c*<br/>
-Yer alan karakter.
+*C*<br/>
+Karakter bulunacak.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, *Str*içindeki ilk *c* oluşumuna yönelik bir IŞARETÇI veya *c* bulunamazsa null değerini döndürür.
+Bu işlevlerin her biri *str'de* *c'nin* ilk oluşumuna bir işaretçi döndürür veya *c* bulunamazsa NULL.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlevi str içindeki ilk *c* oluşumunu bulur veya *c* bulunamazsa null değerini döndürür. `strchr` Aramaya null sonlandırma karakteri eklenir.
+İşlev `strchr` *str'de* *c'nin* ilk oluşumunu bulur veya *c* bulunmazsa NULL'u döndürür. Null sonlandırıcı karakter aramaya dahil edilir.
 
-`wcschr`, `_mbschr` ve `_mbschr_l` öğesinin`strchr`geniş karakterli ve çok baytlı karakter sürümleridir. Bağımsız değişkenleri ve dönüş değeri `wcschr` geniş karakterli dizelerdir; `_mbschr` bunlar çok baytlı karakter dizeleridir. `_mbschr`çok baytlı karakter dizilerini tanır. Ayrıca, dize null işaretçisiyse `_mbschr` , [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, `_mbschr` null döndürür ve EINVAL olarak ayarlar. `errno` `strchr`ve `wcschr` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
+`wcschr`ve `_mbschr` `_mbschr_l` geniş karakterli ve çok bayt `strchr`karakterli versiyonlarıdır. Bağımsız `wcschr` değişkenler ve geri dönüş değeri geniş karakterli dizeleri; olanlar `_mbschr` çok bayt karakterli dizeleri vardır. `_mbschr`çok bayt karakter dizilerini tanır. Ayrıca, dize null işaretçisi ise, `_mbschr` [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine `_mbschr` izin verilirse, NULL döndürür ve EINVAL'e ayarlar. `errno` `strchr`ve `wcschr` parametrelerini doğrulamayın. Bu üç işlev aynı şekilde çalışır.
 
-Çıkış değeri yerel ayarın LC_CTYPE kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Çıktı değeri, yerel LC_CTYPE kategori ayarı ayarı etkilenir; daha fazla bilgi için [setlocale'ye](setlocale-wsetlocale.md)bakın. Bu işlevlerin **_l** soneki olmayan sürümleri, bu yerele bağımlı davranış için geçerli yerel durumu kullanır; **_l** soneki olan sürümler, bunun yerine geçirilen yerel parametreyi kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-C 'de, bu işlevler ilk bağımsız değişken için bir **const** işaretçisi alır. ' C++De, iki aşırı yükleme mevcuttur. **Const** işaretçisine alan aşırı yükleme **const**için bir işaretçi döndürür; **const** olmayan bir işaretçi alan sürüm,**const**olmayan bir işaretçi döndürür. Bu işlevlerin hem **const** hem de**const** olmayan SÜRÜMLERI kullanılabilir değilse makro _CRT_CONST_CORRECT_OVERLOADS tanımlanmıştır. Her iki C++ aşırı yük için**const** olmayan DAVRANıŞLARA ihtiyacınız varsa, _CONST_RETURN sembolünü tanımlayın.
+C'de, bu işlevler ilk bağımsız değişken için bir **const** işaretçisi alır. C++'da iki aşırı yükleme kullanılabilir. Const için bir **const** işaretçi alarak aşırı yükleme **const**bir işaretçi döndürür; olmayan**const** bir işaretçi alır sürümü**non-const**bir işaretçi döndürür. Makro _CRT_CONST_CORRECT_OVERLOADS, bu işlevlerin **hem const** hem de**const** olmayan sürümleri varsa tanımlanır. Her iki C++ aşırı yüklemesi için**const** olmayan davranışı istiyorsanız, _CONST_RETURN simgesini tanımlayın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tcschr`|`strchr`|`_mbschr`|`wcschr`|
-|**_yok/a**|**yok**|`_mbschr_l`|**yok**|
+|**_n/a**|**Yok**|`_mbschr_l`|**Yok**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`strchr`|\<String. h >|
-|`wcschr`|\<String. h > veya \<wchar. h >|
-|`_mbschr`, `_mbschr_l`|\<mbstring. h >|
+|`strchr`|\<string.h>|
+|`wcschr`|\<string.h> \<veya wchar.h>|
+|`_mbschr`, `_mbschr_l`|\<mbstring.h>|
 
-Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Uyumluluk hakkında daha fazla bilgi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -215,8 +220,8 @@ Result:   last r found at position 30
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>

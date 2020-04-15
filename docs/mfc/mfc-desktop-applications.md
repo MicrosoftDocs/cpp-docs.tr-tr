@@ -8,84 +8,84 @@ helpviewer_keywords:
 - class libraries, MFC
 - MFC, about MFC
 ms.assetid: 7101cb18-a681-495c-8f2b-069ad20c72f7
-ms.openlocfilehash: d26cf1e92717d2925edf3730e1ae4ec935365321
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3811fdcf278129ee72872ea489b42f8389957761
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80178463"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81359350"
 ---
 # <a name="mfc-desktop-applications"></a>MFC Masaüstü Uygulamaları
 
-Microsoft Foundation Class (MFC) kitaplığı, Win32 ve COM API 'Lerinin büyük bir bölümü için nesne odaklı bir sarmalayıcı sağlar. Çok basit masaüstü uygulamaları oluşturmak için kullanılabilir olsa da, çok sayıda denetim ile daha karmaşık kullanıcı arabirimleri geliştirmeniz gerektiğinde bu en yararlı seçenektir. MFC 'yi, Office stilinde Kullanıcı arabirimleriyle uygulamalar oluşturmak için kullanabilirsiniz. Windows platformunun belgeleri için, bkz. [Windows belgeleri](/windows/index). MFC olmadan uygulamasında C++ Windows uygulamaları oluşturma hakkında bilgi için, bkz. [Win32 API kullanarak masaüstü Windows uygulamaları oluşturma](/windows/win32/index).
+Microsoft Hazırlık Sınıfı (MFC) Kitaplığı, Win32 ve COM API'lerinin çoğunda nesne yönelimli bir sarıcı sağlar. Çok basit masaüstü uygulamaları oluşturmak için kullanılabilir olsa da, birden çok denetimile daha karmaşık kullanıcı arabirimleri geliştirmeniz gerektiğinde en kullanışlıdır. Office tarzı kullanıcı arabirimleriyle uygulamalar oluşturmak için MFC'yi kullanabilirsiniz. Windows platformunun kendisiyle ilgili belgeler için [Windows belgelerine](/windows/index)bakın. MFC olmadan C++'da Windows uygulamaları oluşturma hakkında daha fazla bilgi için [Win32 API'sini kullanarak masaüstü Windows uygulamaları oluşturun'e](/windows/win32/index)bakın.
 
-MFC başvurusu, Microsoft Foundation Class Kitaplığı oluşturan sınıfları, küresel işlevleri, genel değişkenleri ve makroları içerir.
+MFC Başvurusu, Microsoft Hazırlık Sınıfı Kitaplığını oluşturan sınıfları, genel işlevleri, genel değişkenleri ve makroları kapsar.
 
-Her sınıfa dahil edilen tek tek hiyerarşi grafikleri, temel sınıfların bulunması için faydalıdır. MFC başvurusu genellikle devralınan üye işlevleri veya devralınan işleçleri tanımlamaz. Bu işlevler hakkında daha fazla bilgi için, hiyerarşi diyagramlarında gösterilen temel sınıflara bakın.
+Her sınıfla birlikte verilen tek tek hiyerarşi grafikleri temel sınıfları bulmak için yararlıdır. MFC Başvurusu genellikle devralınan üye işlevleri veya devralınan işleçleri tanımlamaz. Bu işlevler hakkında bilgi için, hiyerarşi diyagramlarında gösterilen temel sınıflara bakın.
 
-Her sınıfın belgeleri, bir sınıfa genel bakış, kategoriye göre üye Özeti ve üye işlevleri, aşırı yüklenmiş işleçler ve veri üyeleri için konular içerir.
+Her sınıf için belgeler bir sınıf genel bakışı, kategoriye göre bir üye özeti ve üye işlevler, aşırı yüklenen işleçler ve veri üyeleri için konular içerir.
 
-Ortak ve korunan sınıf üyeleri yalnızca uygulama programlarında veya türetilmiş sınıflarda normalde kullanıldıkları zaman belgelenmiştir. Sınıf üyelerinin tamamı listesi için sınıf üst bilgisi dosyalarına bakın.
+Ortak ve korumalı sınıf üyeleri yalnızca normalde uygulama programlarında veya türemiş sınıflarda kullanıldıklarında belgelenir. Sınıf üyelerinin tam listesi için sınıf üstbilgi dosyalarına bakın.
 
 > [!IMPORTANT]
->  MFC sınıfları ve üyeleri Windows Çalışma Zamanı ortamda yürütülen uygulamalarda kullanılamaz.
+> MFC sınıfları ve üyeleri, Windows Runtime ortamında çalışan uygulamalarda kullanılamaz.
 >
->  Çok baytlı karakter kodlaması (MBCS) için MFC kitaplıkları (dll) artık Visual Studio 'ya dahil değildir ancak Visual Studio eklentisi olarak kullanılabilir. Daha fazla bilgi için bkz. [MFC MBCS dll eklentisi](mfc-mbcs-dll-add-on.md).
+> Çok bayt karakter kodlaması (MBCS) için MFC kitaplıkları (DLs) artık Visual Studio'ya dahil değildir, ancak Visual Studio eklentisi olarak kullanılabilir. Daha fazla bilgi için [MFC MBCS DLL Eklentisi'ne](mfc-mbcs-dll-add-on.md)bakın.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Kavramlar ](mfc-concepts.md)<br/>
-MFC konularındaki kavramsal makaleler.
+[Kavramlar](mfc-concepts.md)<br/>
+MFC konuları yla ilgili kavramsal makaleler.
 
 [Hiyerarşi Grafiği](hierarchy-chart.md)<br/>
-Sınıf kitaplığındaki sınıf ilişkilerinin görsel olarak ayrıntılarına bakın.
+Sınıf kitaplığındaki sınıf ilişkilerini görsel olarak ayrıntılarıyla anlatır.
 
-[Sınıfa genel bakış](class-library-overview.md)<br/>
-MFC kitaplığındaki sınıfları kategoriye göre listeler.
+[Sınıfa Genel Bakış](class-library-overview.md)<br/>
+MFC Kitaplığı'ndaki sınıfları kategoriye göre listeler.
 
-[Kılavuz](walkthroughs-mfc.md)<br/>
-MFC Kitaplığı özellikleriyle ilişkili çeşitli görevlerde size kılavuzluk eden makaleler içerir.
+[İzlenecek Yollar](walkthroughs-mfc.md)<br/>
+MFC kitaplık özellikleriyle ilişkili çeşitli görevlerde size yol gösteren makaleler içerir.
 
-[Teknik notlar](mfc-technical-notes.md)<br/>
-Sınıf kitaplığındaki MFC geliştirme ekibi tarafından yazılan özelleştirilmiş konuların bağlantılarını sağlar.
+[Teknik Notlar](mfc-technical-notes.md)<br/>
+Sınıf kitaplığında MFC geliştirme ekibi tarafından yazılan özel konulara bağlantılar sağlar.
 
 [MFC için Özelleştirme](customization-for-mfc.md)<br/>
 MFC uygulamanızı özelleştirmek için bazı ipuçları sağlar.
 
 [Sınıflar](reference/mfc-classes.md)<br/>
-MFC sınıfları için bağlantılar ve üstbilgi dosyası bilgilerini sağlar.
+MFC sınıfları için bağlantı ve üstbilgi dosya bilgileri sağlar.
 
 [İç Sınıflar](reference/internal-classes.md)<br/>
-MFC 'de dahili olarak kullanılır. Bu bölümde, bu bölüm bu iç sınıfları açıklar ancak doğrudan kodunuzda kullanılmaya yönelik değildir.
+MFC'de dahili olarak kullanılır. Tamolmak için, bu bölümde bu iç sınıflar açıklanır, ancak bunlar doğrudan kodunuzda kullanılmak üzere tasarlanmamıştır.
 
-[Makrolar ve genel öğeler](reference/mfc-macros-and-globals.md)<br/>
-MFC kitaplığındaki makrolar ve genel işlevlere bağlantılar sağlar.
+[Makrolar ve Küreseller](reference/mfc-macros-and-globals.md)<br/>
+MFC Kitaplığı'ndaki makrolara ve genel işlevlere bağlantılar sağlar.
 
-[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](reference/structures-styles-callbacks-and-message-maps.md)<br/>
-MFC kitaplığı tarafından kullanılan yapılar, stiller, geri çağrılar ve ileti eşlemelerine bağlantılar sağlar.
+[Yapılar, Stiller, Geri Aramalar ve İleti Haritaları](reference/structures-styles-callbacks-and-message-maps.md)<br/>
+MFC Kitaplığı tarafından kullanılan yapılara, stillere, geri aramalara ve ileti haritalarına bağlantılar sağlar.
 
 [MFC Sihirbazları ve İletişim Kutuları](reference/mfc-wizards-and-dialog-boxes.md)<br/>
-MFC uygulamaları oluşturmak için Visual Studio özelliklerine yönelik bir kılavuz.
+MFC uygulamaları oluşturmak için Visual Studio özellikleri için bir rehber.
 
 [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)<br/>
-UI dizeleri ve iletişim kutusu düzeni gibi statik kullanıcı arabirimi verilerini yönetmek için kaynak dosyalarını kullanma.
+Kullanıcı arabirimleri dizeleri ve iletişim kutusu düzeni gibi statik kullanıcı arabirimi verilerini yönetmek için kaynak dosyaları nasıl kullanılır.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Hiyerarşi Grafiği Kategorileri](hierarchy-chart-categories.md)<br/>
-Kategoriye göre MFC hiyerarşi grafiğini açıklar.
+[Hiyerarşi Grafik Kategorileri](hierarchy-chart-categories.md)<br/>
+MFC hiyerarşi grafiğini kategoriye göre açıklar.
 
-[ATL/MFC paylaşılan sınıfları](../atl-mfc-shared/atl-mfc-shared-classes.md)<br/>
+[ATL/MFC Paylaşılan Sınıfları](../atl-mfc-shared/atl-mfc-shared-classes.md)<br/>
 MFC ve ATL arasında paylaşılan sınıflara bağlantılar sağlar.
 
-[MFC örnekleri](../overview/visual-cpp-samples.md#mfc-samples)<br/>
-MFC 'nin nasıl kullanılacağını gösteren örneklere bağlantılar sağlar.
+[MFC Örnekleri](../overview/visual-cpp-samples.md#mfc-samples)<br/>
+MFC'nin nasıl kullanılacağını gösteren örneklere bağlantılar sağlar.
 
-[Visual C++ kitaplıkları başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
-ATL, MFC, OLE DB şablonları, C çalışma C++zamanı kitaplığı ve C++ standart kitaplık dahil olmak üzere görsele sağlanan çeşitli kitaplıkların bağlantılarını sağlar.
+[Visual C++ Kütüphaneler Referans](../standard-library/cpp-standard-library-reference.md)<br/>
+ATL, MFC, OLE DB Şablonları, C çalışma zamanı kitaplığı ve C++ Standart Kitaplığı gibi Visual C++ile sağlanan çeşitli kitaplıklara bağlantılar sağlar.
 
 [Visual Studio’da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio)<br/>
-Uygulamanızdaki veya saklı yordamlardaki mantık hatalarını düzeltmek için Visual Studio hata ayıklayıcısını kullanma bağlantıları sağlar.
+Uygulamanızdaki veya depolanan yordamları düzeltmek için Visual Studio hata ayıklayıcısını kullanmaya bağlantılar sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

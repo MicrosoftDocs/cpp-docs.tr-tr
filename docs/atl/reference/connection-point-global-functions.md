@@ -1,5 +1,5 @@
 ---
-title: Bağlantı noktası genel Işlevleri
+title: Bağlantı Noktası Genel İşlevleri
 ms.date: 11/04/2016
 f1_keywords:
 - atlbase/ATL::AtlAdvise
@@ -8,36 +8,36 @@ f1_keywords:
 helpviewer_keywords:
 - connection points [C++], global functions
 ms.assetid: bcb4bf50-2155-4e20-b8bb-f2908b03a6e7
-ms.openlocfilehash: 0313e93ee82bb96f3bfe08e45f70ccfee30dbee6
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 6474297f8b9adf04541f7d232fb88d5e52d4e88c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417763"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81331526"
 ---
-# <a name="connection-point-global-functions"></a>Bağlantı noktası genel Işlevleri
+# <a name="connection-point-global-functions"></a>Bağlantı Noktası Genel İşlevleri
 
-Bu işlevler bağlantı noktaları ve havuz haritaları için destek sağlar.
+Bu işlevler bağlantı noktaları ve lavabo haritaları için destek sağlar.
 
 > [!IMPORTANT]
->  Aşağıdaki tabloda listelenen işlevler, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Aşağıdaki tabloda listelenen işlevler Windows Runtime'da çalışan uygulamalarda kullanılamaz.
 
 |||
 |-|-|
 |[AtlAdvise](#atladvise)|Bir nesnenin bağlantı noktası ve istemcinin havuzu arasında bir bağlantı oluşturur.|
-|[AtlUnadvise](#atlunadvise)|`AtlAdvise`ile kurulan bağlantıyı sonlandırır.|
-|[AtlAdviseSinkMap](#atladvisesinkmap)|Bir olay havuzu eşlemesindeki girişlerin bir veya daha fazla giriş olduğunu önerir veya vermez.|
+|[AtlUnadvise](#atlunadvise)|Üzerinden kurulan bağlantıyı `AtlAdvise`sonlandırır.|
+|[AtlAdviseSinkHaritası](#atladvisesinkmap)|Bir olay lavabo haritasındaki girişleri önerir veya tavsiye etmem.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase. h
+**Üstbilgi:** atlbase.h
 
-##  <a name="atladvise"></a>AtlAdvise
+## <a name="atladvise"></a><a name="atladvise"></a>AtlAdvise
 
 Bir nesnenin bağlantı noktası ve istemcinin havuzu arasında bir bağlantı oluşturur.
 
 > [!IMPORTANT]
->  Bu işlev, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu işlev, Windows Runtime'da çalışan uygulamalarda kullanılamaz.
 
 ```
 HRESULT    AtlAdvise(
@@ -50,16 +50,16 @@ HRESULT    AtlAdvise(
 ### <a name="parameters"></a>Parametreler
 
 *pUnkCP*<br/>
-'ndaki İstemcinin bağlanmak istediği nesnenin `IUnknown` bir işaretçisi.
+[içinde] İstemcinin `IUnknown` bağlanmak istediği nesnenin işaretçisi.
 
-*pUnk dili*<br/>
-'ndaki İstemcinin `IUnknown`bir işaretçisi.
+*Punk*<br/>
+[içinde] İstemci için bir `IUnknown`işaretçi .
 
-*'si*<br/>
-'ndaki Bağlantı noktasının GUID 'SI. Genellikle, bu bağlantı noktası tarafından yönetilen giden arabirimle aynıdır.
+*ııd*<br/>
+[içinde] Bağlantı noktasının GUID'i. Genellikle, bu bağlantı noktası tarafından yönetilen giden arabirim aynıdır.
 
-*PDW*<br/>
-dışı Bağlantıyı benzersiz bir şekilde tanımlayan tanımlama bilgisine yönelik bir işaretçi.
+*Pdw*<br/>
+[çıkış] Bağlantıyı benzersiz olarak tanımlayan çerez için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -67,18 +67,18 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Havuz, bağlantı noktası tarafından desteklenen giden arabirimi uygular. İstemci, *PDW* tanımlama bilgisini kullanarak bağlantıyı [AtlUnadvise](#atlunadvise)'e geçirerek bağlantıyı kaldırır.
+Lavabo, bağlantı noktası tarafından desteklenen giden arabirimi uygular. İstemci, bağlantıyı [AtlUnadvise'a](#atlunadvise)geçirerek kaldırmak için *pdw* çerezini kullanır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#91](../../atl/codesnippet/cpp/connection-point-global-functions_1.cpp)]
 
-##  <a name="atlunadvise"></a>AtlUnadvise
+## <a name="atlunadvise"></a><a name="atlunadvise"></a>AtlUnadvise
 
 [AtlAdvise](#atladvise)aracılığıyla kurulan bağlantıyı sonlandırır.
 
 > [!IMPORTANT]
->  Bu işlev, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu işlev, Windows Runtime'da çalışan uygulamalarda kullanılamaz.
 
 ```
 HRESULT    AtlUnadvise(
@@ -90,13 +90,13 @@ HRESULT    AtlUnadvise(
 ### <a name="parameters"></a>Parametreler
 
 *pUnkCP*<br/>
-'ndaki İstemcinin bağlandığı nesnenin `IUnknown` bir işaretçisi.
+[içinde] İstemcinin `IUnknown` bağlı olduğu nesnenin işaretçisi.
 
-*'si*<br/>
-'ndaki Bağlantı noktasının GUID 'SI. Genellikle, bu bağlantı noktası tarafından yönetilen giden arabirimle aynıdır.
+*ııd*<br/>
+[içinde] Bağlantı noktasının GUID'i. Genellikle, bu bağlantı noktası tarafından yönetilen giden arabirim aynıdır.
 
-*DW*<br/>
-'ndaki Bağlantıyı benzersiz bir şekilde tanımlayan tanımlama bilgisi.
+*Dw*<br/>
+[içinde] Bağlantıyı benzersiz olarak tanımlayan tanımlama bilgisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -106,12 +106,12 @@ Standart bir HRESULT değeri.
 
 [!code-cpp[NVC_ATL_Windowing#96](../../atl/codesnippet/cpp/connection-point-global-functions_2.cpp)]
 
-##  <a name="atladvisesinkmap"></a>AtlAdviseSinkMap
+## <a name="atladvisesinkmap"></a><a name="atladvisesinkmap"></a>AtlAdviseSinkHaritası
 
-Nesnenin havuz olayı eşlemesindeki tüm girişleri önermek veya öneriyi kaldırmak için bu işlevi çağırın.
+Nesnenin havuz olayı eşlemesindeki tüm girişleri önermek veya öneriyi kaldırmak için bu işlevi çağırın. 
 
 > [!IMPORTANT]
->  Bu işlev, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu işlev, Windows Runtime'da çalışan uygulamalarda kullanılamaz.
 
 ```
 HRESULT AtlAdviseSinkMap(T* pT, bool bAdvise);
@@ -119,11 +119,11 @@ HRESULT AtlAdviseSinkMap(T* pT, bool bAdvise);
 
 ### <a name="parameters"></a>Parametreler
 
-*Yönergelerinin*<br/>
-'ndaki Havuz eşlemesini içeren nesneye yönelik bir işaretçi.
+*Pt*<br/>
+[içinde] Lavabo eşlemi içeren nesneye bir işaretçi.
 
-*Rozzden*<br/>
-'ndaki Tüm havuz girişleri önermeliyse doğru; Tüm havuz girişlerinin önerilemedi durumunda FALSE.
+*bAdvise*<br/>
+[içinde] Tüm lavabo girişleri tavsiye edilecekse DOĞRU; Tüm lavabo girişleri tavsiye edilmezse YANLIŞ.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

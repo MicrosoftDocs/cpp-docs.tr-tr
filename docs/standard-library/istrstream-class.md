@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - istrstream class
 ms.assetid: c2d41c75-bd2c-4437-bd77-5939ce1b97af
-ms.openlocfilehash: 59b69d3f862715840e1557a10d6087350488a3c9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: d548a8c2c47a5a345be725afdedb47524344f720
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448081"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81337520"
 ---
 # <a name="istrstream-class"></a>istrstream Sınıfı
 
-[Strstreambuffer](../standard-library/strstreambuf-class.md)sınıfının Akış arabelleğindeki öğelerin ve kodlanmış nesnelerin ayıklanmasını denetleyen bir nesne tanımlar.
+[Strstreambuf](../standard-library/strstreambuf-class.md)sınıfının bir akış arabelleği öğeleri ve kodlanmış nesnelerin ayıklama denetimi bir nesne açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,33 +26,33 @@ class istrstream : public istream
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesnesi, sınıfının `strstreambuf`bir nesnesini depolar.
+Nesne sınıfın `strstreambuf`bir nesnesini depolar.
 
 > [!NOTE]
-> Bu sınıf kullanım dışıdır. Bunun yerine [istringstream](../standard-library/sstream-typedefs.md#istringstream) veya [wıtringstream](../standard-library/sstream-typedefs.md#wistringstream) kullanmayı düşünün.
+> Bu sınıf amortismana uğradı. Bunun yerine [istringstream](../standard-library/sstream-typedefs.md#istringstream) veya [wistringstream](../standard-library/sstream-typedefs.md#wistringstream) kullanmayı düşünün.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[istrstream](#istrstream)|Türünde `istrstream`bir nesne oluşturur.|
+|[istrstream](#istrstream)|Türünde `istrstream`bir nesne oluşturuyor.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="member-functions"></a>Üye işlevler
 
-|Üye işlevi|Açıklama|
+|Üye fonksiyonu|Açıklama|
 |-|-|
-|[rdbuf](#rdbuf)|Akışın ilişkili `strstreambuf` nesnesine bir işaretçi döndürür.|
-|[üstbilgisine](#str)|Çağırır [ve](../standard-library/strstreambuf-class.md#freeze)sonra denetlenen sıranın başlangıcına bir işaretçi döndürür.|
+|[Rdbuf](#rdbuf)|Bir işaretçiyi akış ilişkili `strstreambuf` nesneye döndürür.|
+|[Str](#str)|Çağrılar [donuyor](../standard-library/strstreambuf-class.md#freeze)ve ardından bir işaretçiyi denetitilen dizinin başına döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<strstream >
+**Üstbilgi:** \<strstream>
 
 **Ad alanı:** std
 
-## <a name="istrstream"></a>istrstream:: ıstrstream
+## <a name="istrstreamistrstream"></a><a name="istrstream"></a>istrstream::istrstream
 
-Türünde `istrstream`bir nesne oluşturur.
+Türünde `istrstream`bir nesne oluşturuyor.
 
 ```cpp
 explicit istrstream(
@@ -72,19 +72,19 @@ istrstream(
 
 ### <a name="parameters"></a>Parametreler
 
-*biriktirme*\
-Arabellek uzunluğu (*PTR*).
+*Sayısı*\
+Arabelleğe in uzunluğu (*ptr*).
 
-*kaydetmeye*\
-Arabelleğin başlatıldığı içerik.
+*Ptr*\
+Arabellek ile başharfe sahip içeriği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular [IStream](../standard-library/istream-typedefs.md#istream)(**SB** `sb` ) çağırarak, [strstreamarabelleğe](../standard-library/strstreambuf-class.md)ait saklı nesne olduğu için temel sınıfı başlatır. İlk iki Oluşturucu (( `sb` **const** `char` `strstreambuf` \*) ,0)çağırarakdabaşlatılıyor.`ptr` Bunun yerine kalan iki Oluşturucu ( `strstreambuf`( **const** `char` *) `ptr`, `count` ) çağrısı.
+Tüm yapıcılar [istream](../standard-library/istream-typedefs.md#istream)**(sb)** çağırarak taban sınıf `sb` ı sinifa, sınıfın [strstreambuf](../standard-library/strstreambuf-class.md)depolanan nesnesi nerede. İlk iki yapıcı da arayarak `strstreambuf`(( **const** `char` \*) `ptr`, 0 ) olarak adlandırır. `sb` Geri kalan iki yapıcı `strstreambuf`yerine çağrı ( `ptr`( `count` **const** `char` *) , ).
 
-## <a name="rdbuf"></a>istrstream:: rdarabelleğe
+## <a name="istrstreamrdbuf"></a><a name="rdbuf"></a>istrstream::rdbuf
 
-Akışın ilişkili strstreamsize nesnesine bir işaretçi döndürür.
+Bir işaretçiyi akışın ilişkili strstreambuf nesnesine döndürür.
 
 ```cpp
 strstreambuf *rdbuf() const
@@ -92,19 +92,19 @@ strstreambuf *rdbuf() const
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Akışın ilişkilendirildiği strstreamarabelleğe yönelik bir işaretçi.
+Akışın ilişkili strstreambuf nesnesine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, bir [strstreambuffer](../standard-library/strstreambuf-class.md)işaretçisi türünde depolanan akış arabelleğinin adresini döndürür.
+Üye işlev, [strstreambuf](../standard-library/strstreambuf-class.md)türü işaretçisi depolanan akış arabelleği adresini döndürür.
 
 ### <a name="example"></a>Örnek
 
-Tarafından kullanılan `rdbuf`bir örnek için bkz. [strstreamarabelleğe::p Count](../standard-library/strstreambuf-class.md#pcount) .
+Bkz. [strstreambuf::p](../standard-library/strstreambuf-class.md#pcount) kullanan `rdbuf`bir örnek için sayım.
 
-## <a name="str"></a>istrstream:: Str
+## <a name="istrstreamstr"></a><a name="str"></a>istrstream::str
 
-Çağırır [ve](../standard-library/strstreambuf-class.md#freeze)sonra denetlenen sıranın başlangıcına bir işaretçi döndürür.
+Çağrılar [donuyor](../standard-library/strstreambuf-class.md#freeze)ve ardından bir işaretçiyi denetitilen dizinin başına döndürür.
 
 ```cpp
 char *str();
@@ -112,19 +112,19 @@ char *str();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetlenen dizinin başlangıcına yönelik bir işaretçi.
+Denetlenen dizinin başına bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [rdarabelleğe](#rdbuf) -> [Str](../standard-library/strstreambuf-class.md#str)döndürür.
+Üye işlev [rdbuf](#rdbuf) -> [str](../standard-library/strstreambuf-class.md#str)döndürür.
 
 ### <a name="example"></a>Örnek
 
-Tarafından kullanılan `str`bir örnek için bkz. [strstream:: Str](../standard-library/strstreambuf-class.md#str) .
+Bkz. [strstream::str](../standard-library/strstreambuf-class.md#str) kullanan `str`bir örnek için .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[istream](../standard-library/istream-typedefs.md#istream)\
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[iostream programlama](../standard-library/iostream-programming.md)\
+[ıstream](../standard-library/istream-typedefs.md#istream)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programlama](../standard-library/iostream-programming.md)\
 [iostreams Kuralları](../standard-library/iostreams-conventions.md)

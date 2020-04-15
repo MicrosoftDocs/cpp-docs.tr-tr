@@ -1,313 +1,313 @@
 ---
-title: Visual Studio 'da CMake projeleri
-description: Visual Studio 'da CMake C++ kullanarak projeler oluşturma ve derleme.
+title: Visual Studio'da CMake projeleri
+description: Visual Studio'da CMake'i kullanarak C++ projeleri oluşturma ve oluşturma.
 ms.date: 01/08/2020
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: be252759e93eb30d4f9b4ff1446dd4217fcdf2a6
-ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
+ms.openlocfilehash: 49ba53eaa8ac075ab6d3b2a66f33160c5c3ec410
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75791836"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81329168"
 ---
-# <a name="cmake-projects-in-visual-studio"></a>Visual Studio 'da CMake projeleri
+# <a name="cmake-projects-in-visual-studio"></a>Visual Studio'da CMake projeleri
 
-CMake, birden çok platformda çalışan derleme işlemlerinin tanımlanması için platformlar arası, açık kaynaklı bir araçtır. Bu makalede CMake hakkında bilgi sahibi olduğunuz varsayılır. Geliştirme sırasında [, CMake Ile yazılımınızı test etme, test etme ve paketleme](https://cmake.org/)hakkında daha fazla bilgi edinebilirsiniz.
+CMake, birden çok platformda çalışan yapı işlemlerini tanımlamak için çapraz platformlu, açık kaynak kodlu bir araçtır. Bu makalede CMake aşina olduğunuzu varsayar. Bu konuda daha fazla bilgi için [Build, Test ve Paketi Yazılımınızı CMake ile](https://cmake.org/)öğrenebilirsiniz.
 
 > [!NOTE]
-> CMake, son birkaç sürüm üzerinde Visual Studio ile daha fazla ve daha tümleştirilmiştir. Kullanmakta olduğunuz sürüm için doğru bilgileri görmek üzere, bu sayfanın sol üst kısmındaki sürüm seçicinin doğru ayarlandığından emin olun.
+> CMake son birkaç sürümlerinde Visual Studio ile daha entegre hale gelmiştir. Visual Studio'nun tercih ettiğiniz sürümüiçin belgeleri görmek için **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker range="vs-2019"
 
-**C++ Windows için CMake araçları** bileşeni, CMake proje dosyalarını ( *cmakelists. txt*gibi) doğrudan IntelliSense ve gözatma amacıyla kullanmak için [klasörü aç](open-folder-projects-cpp.md) özelliğini kullanır. Hem Dokja hem de Visual Studio oluşturucuları desteklenir. Visual Studio Oluşturucusu kullanıyorsanız, geçici bir proje dosyası oluşturur ve MSBuild. exe ' ye geçirir. Ancak proje, IntelliSense veya gözatma amacıyla hiçbir şekilde yüklenmez. Ayrıca var olan bir CMake önbelleğini içeri aktarabilirsiniz.
+Windows bileşeni **için C++ CMake araçları,** CMake proje dosyalarını *(CMakeLists.txt*gibi) doğrudan IntelliSense ve tarama amacıyla kullanmak için [Açık Klasör](open-folder-projects-cpp.md) özelliğini kullanır. Hem Ninja hem de Visual Studio jeneratörleri desteklenir. Visual Studio jeneratörü kullanıyorsanız, geçici bir proje dosyası oluşturur ve msbuild.exe'ye aktarılır. Ancak, proje IntelliSense veya tarama amacıyla yüklenmez. Varolan bir CMake önbelleğini de içe aktarabilirsiniz.
 
 ## <a name="installation"></a>Yükleme
 
-Windows için CMake araçları, iş **yükleriyle C++ Linux** ile **C++** **C++** geliştirme ve Linux Geliştirme kapsamında masaüstü geliştirme 'nin bir parçası olarak yüklenir. Daha fazla bilgi için bkz. [platformlar arası CMake projeleri](../linux/cmake-linux-project.md).
+**Windows için C++ CMake araçları,** **C++** iş yüklerine sahip C++ ve Linux Geliştirme **ile Masaüstü geliştirmenin** bir parçası olarak yüklenir. Daha fazla bilgi için [çapraz platform CMake projelerine](../linux/cmake-linux-project.md)bakın.
 
-![C++ Masaüstü Iş yükünde CMake bileşeni](media/cmake-install-2019.png)
+![C++ Masaüstü iş yükünde CMake bileşeni](media/cmake-install-2019.png)
 
-Daha fazla bilgi için bkz. [Visual C++ Studio 'da Linux iş yükünü yüklemeyi](../linux/download-install-and-setup-the-linux-development-workload.md).
+Daha fazla bilgi için [Bkz. Visual Studio'da C++ Linux iş yükünü yükleyin.](../linux/download-install-and-setup-the-linux-development-workload.md)
 
-## <a name="ide-integration"></a>IDE tümleştirmesi
+## <a name="ide-integration"></a>IDE Tümleştirme
 
-Bir *Cmakelists. txt* dosyası içeren bir klasörü açmak için **dosya > aç > klasörünü** seçtiğinizde, şunlar meydana gelir:
+*CMakeLists.txt* dosyasını içeren bir klasörü açmak için **Dosya > Aç > Klasörünü** seçtiğinizde, aşağıdaki şeyler olur:
 
-- Visual Studio, CMake komut dosyalarını görüntüleme ve düzenlemeyle ilgili komutlarla, **CMake** öğelerini **Proje** menüsüne ekler.
+- Visual Studio, CMake komutlarını görüntülemek ve düzenlemek için komutlarla **Proje** menüsüne **CMake** öğeleri ekler.
 
 - **Çözüm Gezgini** klasör yapısını ve dosyalarını görüntüler.
 
-- Visual Studio, CMake. exe ' yi çalıştırır ve varsayılan (x64 hata ayıklama) yapılandırması için CMake önbellek dosyası (*Cmakecache. txt*) oluşturur. CMake komut satırı, CMake 'in ek çıktılarıyla birlikte **Çıkış penceresi**görüntülenir.
+- Visual Studio cmake.exe çalışır ve varsayılan (x64 Hata Ayıklama) yapılandırması için CMake önbellek dosyası *(CMakeCache.txt)* oluşturur. CMake komut **satırı,** CMake'in ek çıktısıyla birlikte Çıkış Penceresinde görüntülenir.
 
-- Arka planda, Visual Studio IntelliSense, gözatma bilgileri, yeniden düzenleme vb. etkinleştirmek için kaynak dosyaların dizinini oluşturup başlatır. Çalışmanız sırasında, Visual Studio düzenleyicideki değişiklikleri ve kaynakları kaynaklarla eşitlenmiş halde tutmak için diskte da izler.
+- Arka planda Visual Studio, IntelliSense'i etkinleştirmek için kaynak dosyalarını dizine eklemeye, bilgilere göz atma, yeniden düzenleme ve benzeri bilgileri eklemeye başlar. Siz çalışırken Visual Studio, dizinini kaynaklarla eşit tutmak için düzenleyicideki ve diskteki değişiklikleri izler.
 
-İstediğiniz sayıda CMake projesini içeren klasörleri açabilirsiniz. Visual Studio, çalışma alanınızdaki tüm "kök" *Cmakelists. txt* dosyalarını algılar ve yapılandırır. CMake işlemleri (yapılandırma, derleme, hata ayıklama) C++ , IntelliSense ve gözatma, çalışma alanınızdaki tüm CMake projeleri için kullanılabilir.
+İstediğiniz sayıda CMake projesi içeren klasörleri açabilirsiniz. Visual Studio, çalışma alanınızdaki tüm "root" *CMakeLists.txt* dosyalarını algılar ve yapılandırır. CMake işlemleri (yapılandırma, oluşturma, hata ayıklama), C++ IntelliSense ve tarama çalışma alanınızdaki tüm CMake projeleri için kullanılabilir.
 
-![Birden çok kökle CMake projesi](media/cmake-multiple-roots.png)
+![Birden çok köklü CMake projesi](media/cmake-multiple-roots.png)
 
-Ayrıca, projelerinizi mantıksal olarak hedefe göre düzenlenmiş şekilde görüntüleyebilirsiniz. **Çözüm Gezgini** araç çubuğunda açılan listeden **hedefler görünümünü** seçin:
+Ayrıca, hedeflere göre mantıksal olarak düzenlenen projelerinizi de görüntüleyebilirsiniz. **Çözüm Gezgini** araç çubuğundaki açılır görünümden **Hedefler görünümünü** seçin:
 
-![CMake hedefleri görünümü düğmesi](media/cmake-targets-view.png)
+![CMake hedefleri görünüm düğmesi](media/cmake-targets-view.png)
 
-*Out/Build/\<config >* klasörlerindeki tüm CMake tarafından oluşturulan çıktıyı görmek için **Çözüm Gezgini** üstündeki **tüm dosyaları göster** düğmesine tıklayın.
+Tüm CMake tarafından oluşturulan çıktıyı *dış/yapı/config\<>* klasörlerinde görmek için **Solution Explorer'ın** üst kısmındaki Tüm **Dosyaları Göster** düğmesini tıklatın.
 
-Visual Studio, **Cmakesettings. JSON**adlı bir yapılandırma dosyası kullanır. Bu dosya, birden çok derleme yapılandırması tanımlamanıza ve depolamanıza olanak tanır ve IDE 'de bunlarla kolayca geçiş yapmanızı sağlar. *Yapılandırma* , belirli bir yapı türüne özgü ayarları kapsülleyen bir Visual Studio yapısıdır. Ayarlar, Visual Studio 'Nun CMake. exe ' ye geçirdiği varsayılan komut satırı seçeneklerini yapılandırmak için kullanılır. Ayrıca, burada ek CMake seçenekleri belirtebilir ve istediğiniz ek değişkenleri tanımlayabilirsiniz. Tüm seçenekler, CMake önbelleğine iç veya dış değişkenler olarak yazılır. Visual Studio 2019 ' de **CMake ayarları Düzenleyicisi** , ayarlarınızı düzenlemek için kullanışlı bir yol sağlar. Daha fazla bilgi için bkz. [CMake ayarlarını özelleştirme](customize-cmake-settings.md).
+Visual Studio **CMakeSettings.json**adlı bir yapılandırma dosyası kullanır. Bu dosya, birden çok yapı yapılandırması tanımlamanızı ve depolamanızı ve IDE'de bunlar arasında kolayca geçiş yapmanızı sağlar. *Yapılandırma,* belirli bir yapı türüne özgü ayarları kapsülleyen bir Visual Studio yapısıdır. Ayarlar, Visual Studio'nun cmake.exe'ye geçtiği varsayılan komut satırı seçeneklerini yapılandırmak için kullanılır. Ayrıca burada ek CMake seçenekleri belirtebilir ve istediğiniz ek değişkenleri tanımlayabilirsiniz. Tüm seçenekler CMake önbelleğine dahili veya harici değişkenler olarak yazılır. Visual Studio 2019'da **CMake Ayarlar Düzenleyicisi** ayarlarınızı değiştirmenin kullanışlı bir yolunu sunar. Daha fazla bilgi için [CMake ayarlarını özelleştir'e](customize-cmake-settings.md)bakın.
 
-Tek bir ayar, `intelliSenseMode` CMake 'e geçirilmez, ancak yalnızca Visual Studio tarafından kullanılır.
+Bir ayar, `intelliSenseMode` CMake geçirilir değil, ancak Visual Studio tarafından kullanılır.
 
-Her proje klasöründeki **Cmakelists. txt** dosyasını herhangi bir CMake projesinde olduğu gibi kullanın. Kaynak dosyaları belirtebilir, kitaplıkları bulabilir, derleyici ve bağlayıcı seçeneklerini ayarlayabilir ve diğer derleme sistemiyle ilgili bilgileri belirtebilirsiniz.
+**CMakeLists.txt** dosyasını her proje klasöründe, herhangi bir CMake projesinde olduğu gibi kullanın. Kaynak dosyaları belirtebilir, kitaplıkları bulabilir, derleyici ve bağlayıcı seçeneklerini ayarlayabilir ve sistemle ilgili diğer bilgileri belirtebilirsiniz.
 
-Bağımsız değişkenleri hata ayıklama zamanında bir yürütülebilir dosyaya geçirmek için, **Başlat. vs. JSON**adlı başka bir dosya kullanabilirsiniz. Bazı senaryolarda, Visual Studio otomatik olarak bu dosyaları oluşturur. Bunları el ile düzenleyebilir, hatta dosyayı kendiniz oluşturabilirsiniz.
+Bağımsız değişkenleri hata ayıklama zamanında yürütülebilir bir dosyaya geçirmek için **launch.vs.json**adlı başka bir dosya kullanabilirsiniz. Bazı senaryolarda Visual Studio bu dosyaları otomatik olarak oluşturur. Bunları el ile dinleyebilir, hatta dosyayı kendiniz oluşturabilirsiniz.
 
 > [!NOTE]
-> Diğer açık klasör projesi türleri için, iki ek JSON dosyası kullanılır: **Cppproperties. JSON** ve **Tasks. vs. JSON**. Bunlardan hiçbiri CMake projelerine uygun değildir.
+> Açık Klasör projelerinin diğer türleri için iki ek JSON dosyası kullanılır: **CppProperties.json** ve **tasks.vs.json**. Bunların hiçbiri CMake projeleri için ilgili değildir.
 
-## <a name="open-an-existing-cache"></a>Var olan bir önbelleği aç
+## <a name="open-an-existing-cache"></a>Varolan bir önbelleği açma
 
-Var olan bir CMake önbellek dosyasını (*Cmakecache. txt*) açtığınızda, Visual Studio sizin için önbelleğinizi ve derleme ağacınızı yönetmeyi denemez. Özel veya tercih ettiğiniz araçlarınız, CMake 'in projenizi nasıl yapılandırdığından emin olun. Visual Studio 'da var olan bir önbelleği açmak için **dosya > > CMake aç**' ı seçin. Ardından, var olan bir *Cmakecache. txt* dosyasına gidin.
+Varolan bir CMake önbellek dosyasını *(CMakeCache.txt)* açtığınızda, Visual Studio önbelleğinizi yönetmeye ve sizin için ağaç oluşturmaya çalışmaz. Özel veya tercih edilen araçlarınız, CMake'in projenizi nasıl yapılandırdığını tam olarak kontrol eder. Visual Studio'da varolan bir önbelleği açmak için **Dosya > Açık > CMake'i**seçin. Ardından, varolan bir *CMakeCache.txt* dosyasına gidin.
 
-Mevcut bir CMake önbelleğini açık bir projeye ekleyebilirsiniz. Yeni bir yapılandırma ekleyeceğiniz şekilde yapılır. Daha fazla bilgi için, [Visual Studio 'da var olan bir önbelleği açmak](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/)için blog gönderimize bakın.
+Açık bir projeye varolan bir CMake önbelleği ekleyebilirsiniz. Yeni bir yapılandırma eklediğiniz şekilde yapılır. Daha fazla bilgi için Visual [Studio'da mevcut bir önbellek açma](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/)hakkındaki blog yazımıza bakın.
 
 ## <a name="building-cmake-projects"></a>CMake projeleri oluşturma
 
-CMake projesi oluşturmak için şu seçimlere sahipsiniz:
+Bir CMake projesi oluşturmak için şu seçeneklere sahipsiniz:
 
-1. Genel araç çubuğunda, **Konfigürasyonlar** açılan listesini bulun. Büyük olasılıkla "x64-Debug" varsayılan olarak gösterilir. Tercih edilen yapılandırmayı seçin ve **F5**tuşuna basın ya da araç çubuğunda **Çalıştır** (yeşil üçgen) düğmesine tıklayın. Proje, yalnızca bir Visual Studio çözümü gibi otomatik olarak ilk olarak oluşturulur.
+1. Genel araç çubuğunda, **Configurations** açılır düşüşünü bulun. Muhtemelen varsayılan olarak "x64-Hata Ayıklama" gösterir. Tercih edilen yapılandırmayı seçin ve **F5**tuşuna basın veya araç çubuğundaki **Çalıştır** (yeşil üçgen) düğmesine tıklayın. Proje otomatik olarak ilk oluşturur, bir Visual Studio çözüm gibi.
 
-1. *Cmakelists. txt* dosyasına sağ tıklayın ve bağlam menüsünden **Oluştur** ' u seçin. Klasör yapınız içinde birden çok hedef varsa, tümünü veya yalnızca bir hedefi derlemeyi seçebilirsiniz.
+1. *CMakeLists.txt'ye* sağ tıklayın ve bağlam menüsünden **Oluştur'u** seçin. Klasör yapınızda birden çok hedefiniz varsa, tümünü veya yalnızca belirli bir hedefi oluşturmayı seçebilirsiniz.
 
-1. Ana menüden **oluştur > tümünü oluştur** ' u seçin (**F7** veya **Ctrl + Shift + B**). **Genel** araç çubuğundaki **Başlangıç öğesi** açılır listesinde bir CMake hedefinin zaten seçili olduğundan emin olun.
+1. Ana menüden **Yapı > Tümünü Oluştur** **(F7** veya **Ctrl+Shift+B)** seçeneğini belirleyin. **Genel** araç çubuğundaki **Başlangıç Öğesi** açılır düşüşünde bir CMake hedefinin zaten seçildiğinden emin olun.
 
-![CMake oluştur menü komutu](media/cmake-build-menu.png "CMake derlemesi komut menüsü")
+![CMake build menü komutu](media/cmake-build-menu.png "CMake build komut menüsü")
 
-Bekleneceğiniz gibi, yapı sonuçları **Çıkış penceresi** ve **hata listesi**gösterilir.
+Beklediğiniz gibi, yapı sonuçları **Çıktı Penceresi** ve **Hata Listesinde**gösterilir.
 
-![CMake derleme hataları](media/cmake-build-errors.png "CMake derleme hataları")
+![CYapı hataları oluşturma](media/cmake-build-errors.png "CYapı hataları oluşturma")
 
-Birden çok derleme hedefi olan bir klasörde, hangi CMake hedefini derlemek istediğinizi belirtebilirsiniz: **CMake** menüsünde **Build** öğesini veya *cmakelists. txt* bağlam menüsünü seçerek hedefi belirtin. CMake projesinde **CTRL + SHIFT + B** tuşlarına girerseniz, geçerli etkin belgeyi oluşturur.
+Birden çok yapı hedefi olan bir klasörde, hangi CMake hedefini oluştureceğini belirtebilirsiniz: Hedefi belirtmek için **CMake** menüsünde Veya *CMakeLists.txt* bağlam menüsünde **Yapı** öğesini seçin. CMake projesine **Ctrl+Shift+B** girerseniz, geçerli etkin belgeyi oluşturur.
 
-## <a name="debugging-cmake-projects"></a>CMake projelerinde hata ayıklama
+## <a name="debugging-cmake-projects"></a>Hata ayıklama CMake projeleri
 
-CMake projesinde hata ayıklamak için tercih edilen yapılandırmayı seçin ve **F5**tuşuna basın ya da araç çubuğunda **Çalıştır** düğmesine basın. **Çalıştır** düğmesi "başlangıç öğesi Seç" diyorsa, açılan oku seçin. Çalıştırmak istediğiniz hedefi seçin. (CMake projesinde, "geçerli belge" seçeneği yalnızca. cpp dosyaları için geçerlidir.)
+CMake projesini hata ayıklamak için tercih edilen yapılandırmayı seçin ve **F5**tuşuna basın veya araç çubuğundaki **Çalıştır** düğmesine basın. **Çalıştır** düğmesinde "Başlangıç Öğesini Seç" yazıyorsa, açılır ok'u seçin. Çalıştırmak istediğiniz hedefi seçin. (CMake projesinde "Geçerli belge" seçeneği yalnızca .cpp dosyaları için geçerlidir.)
 
-![CMake Çalıştır düğmesi](media/cmake-run-button.png "CMake Çalıştır düğmesi")
+![CÇalıştır düğmesi yap](media/cmake-run-button.png "CÇalıştır düğmesi yap")
 
-Önceki derlemeden bu yana değişiklikler yapılmışsa, **Run** veya **F5** komutları ilk olarak projeyi oluşturur. *Cmakesettings. JSON* değişiklikleri, CMake önbelleğinin yeniden üretilmesine neden olur.
+Önceki yapıdan bu yana değişiklikler **yapıldıysa, önce Çalıştır** veya **F5** komutları projeyi oluşturur. *CMakeSettings.json'da* yapılan değişiklikler CMake önbelleğinin yeniden oluşturulmasına neden olur.
 
-**Launch. vs. JSON** dosyasındaki özellikleri ayarlayarak CMake hata ayıklama oturumunu özelleştirebilirsiniz. Daha fazla bilgi için bkz. [CMake hata ayıklama oturumlarını yapılandırma](configure-cmake-debugging-sessions.md).
+**Launch.vs.json** dosyasındaki özellikleri ayarlayarak cmake hata ayıklama oturumunu özelleştirebilirsiniz. Daha fazla bilgi için [CMake hata ayıklama oturumlarını yapılandırın.](configure-cmake-debugging-sessions.md)
 
-## <a name="just-my-code-for-cmake-projects"></a>CMake projeleri için Yalnızca kendi kodum
+## <a name="just-my-code-for-cmake-projects"></a>CMake projeleri için Sadece Kodum
 
-MSVC derleyicisini kullanarak Windows için derleme yaparken CMake projelerinde Yalnızca kendi kodum hata ayıklama desteği vardır. Yalnızca kendi kodum ayarını değiştirmek için, **araçlar** > **Seçenekler** > **hata ayıklama** > **genel**' e gidin.
+MSVC derleyicisini kullanarak Windows için oluşturduğunuzda, CMake projeleri Just My Code hata ayıklama desteğine sahiptir. Yalnızca Kodum ayarını değiştirmek **için,** > **Genel**Hata**Ayıklama** > Araçları**Seçenekleri'ne** > gidin.
 
-## <a name="vcpkg-integration"></a>Vcpkg tümleştirmesi
+## <a name="vcpkg-integration"></a>Vcpkg entegrasyonu
 
-[Vcpkg](vcpkg.md)yüklediyseniz, Visual Studio 'da açık olan CMake projeleri vcpkg araç zinciri dosyasını otomatik olarak tümleştirin. Diğer bir deyişle, CMake projelerinizle vcpkg kullanmak için ek bir yapılandırma gerekmez. Bu destek, hedeflediğiniz uzak sistemlerde hem yerel vcpkg yüklemeleri hem de vcpkg yüklemeleri için geçerlidir. CMake ayarları yapılandırmanızda başka bir araç zinciri belirttiğinizde bu davranış otomatik olarak devre dışıdır.
+[VCPKG](vcpkg.md)yüklü varsa, Visual Studio'da açılan CMake projeleri vcpkg araç zinciri dosyasını otomatik olarak entegre edin. Bu, CMake projelerinizle vcpkg kullanmak için ek yapılandırma gerekolmadığı anlamına gelir. Bu destek, hedeflediğiniz uzak sistemlerdeki hem yerel vcpkg yüklemeleri hem de vcpkg yüklemeleri için çalışır. CMake Ayarları yapılandırmanızda başka bir araç zinciri belirttiğinizde bu davranış otomatik olarak devre dışı bırakılır.
 
 ## <a name="customize-configuration-feedback"></a>Yapılandırma geri bildirimini özelleştirme
 
-Varsayılan olarak, çoğu yapılandırma iletisi bir hata olmadığı takdirde bastırılır. **Araçlar** > **Seçenekler** > **CMake**' de bu özelliği etkinleştirerek tüm iletileri görebilirsiniz.
+Varsayılan olarak, bir hata olmadığı sürece yapılandırma iletilerinin çoğu bastırılır. **Araçlar** > **Seçenekleri** > **CMake**bu özelliği etkinleştirerek tüm iletileri görebilirsiniz.
 
-   ![CMake tanılama seçeneklerini yapılandırma](media/vs2019-cmake-configure-options.png "CMake tanılama seçenekleri")
+   ![CMake tanı lama seçeneklerini yapılandırma](media/vs2019-cmake-configure-options.png "CTanılama seçeneklerini yapın")
 
-## <a name="editing-cmakeliststxt-files"></a>CMakeLists. txt dosyalarını Düzenle
+## <a name="editing-cmakeliststxt-files"></a>CMakeLists.txt dosyalarını düzenleme
 
-Bir *Cmakelists. txt* dosyasını düzenlemek için, **Çözüm Gezgini** dosya üzerinde sağ tıklayın ve **Aç**' ı seçin. Dosyada değişiklik yaparsanız, sarı bir durum çubuğu görünür ve IntelliSense 'in güncelleşmekte olduğunu bildirir. Güncelleştirme işlemini iptal etmek için size bir şans sağlar. *Cmakelists. txt*hakkında daha fazla bilgi için bkz. [CMake belgeleri](https://cmake.org/documentation/).
+*CMakeLists.txt* dosyasını düzeltmek için **Solution Explorer'daki** dosyaya sağ tıklayın ve **Aç'ı**seçin. Dosyada değişiklik yaparsanız, sarı bir durum çubuğu görüntülenir ve IntelliSense'in güncelleştireceğini bildirir. Güncelleştirme işlemini iptal etme şansı verir. *CMakeLists.txt*hakkında bilgi için, [CMake belgelerine](https://cmake.org/documentation/)bakın.
 
-   ![CMakeLists. txt dosya düzenlemesi](media/cmake-cmakelists.png "CMakeLists. txt dosya düzenlemesi")
+   ![CMakeLists.txt dosya düzenleme](media/cmake-cmakelists.png "CMakeLists.txt dosya düzenleme")
 
-Dosyayı kaydettikten hemen sonra yapılandırma adımı otomatik olarak çalışır ve **Çıkış** penceresinde bilgileri görüntüler. Hatalar ve uyarılar **hata listesi** veya **Çıkış** penceresinde gösterilir. *Cmakelists. txt*dosyasındaki sorunlu satıra gitmek için **hata listesi** bir hataya çift tıklayın.
+Dosyayı kaydedin en kısa sürede yapılandırma adımı otomatik olarak yeniden çalışır ve **Çıktı** penceresinde bilgileri görüntüler. Hatalar ve uyarılar **Hata Listesi** veya **Çıktı** penceresinde gösterilir. *CMakeLists.txt'deki*rahatsız edici satıra gitmek için **Hata Listesi'ndeki** bir hataya çift tıklayın.
 
-   ![CMakeLists. txt dosyası hataları](media/cmake-cmakelists-error.png "CMakeLists. txt dosyası hataları")
+   ![CMakeLists.txt dosya hataları](media/cmake-cmakelists-error.png "CMakeLists.txt dosya hataları")
 
-## <a name="cmake-configure-step"></a>CMake yapılandırma adımı
+## <a name="cmake-configure-step"></a>CYapı yapı adımı
 
-*Cmakesettings. JSON* veya *cmakelists. txt* dosyalarında önemli değişiklikler yaptığınızda, Visual Studio otomatik olarak CMake yapılandırma adımını yeniden çalıştırır. Yapılandırma adımı hatasız tamamlandığında, toplanan bilgiler C++ IntelliSense ve Language hizmetlerinde kullanılabilir. Derleme ve hata ayıklama işlemlerinde de kullanılır.
+*CMakeSettings.json* veya *CMakeLists.txt* dosyalarında önemli değişiklikler yaptığınızda, Visual Studio CMake yapılandırma adımını otomatik olarak yeniden çalıştırır. Yapılandırma adımı hatasız biterse, toplanan bilgiler C++ IntelliSense ve dil hizmetlerinde kullanılabilir. Yapı ve hata ayıklama işlemlerinde de kullanılır.
 
-## <a name="troubleshooting-cmake-cache-errors"></a>CMake önbelleği hatalarıyla ilgili sorunları giderme
+## <a name="troubleshooting-cmake-cache-errors"></a>Sorun giderme CMake önbellek hataları
 
-Bir sorunu tanılamak için CMake önbelleğinin durumu hakkında daha fazla bilgiye ihtiyacınız varsa, bu komutlardan birini çalıştırmak için **Çözüm Gezgini** içindeki **Proje** ana menüsünü veya *cmakelists. txt* bağlam menüsünü açın:
+Bir sorunu tanılamak için CMake önbelleğinin durumu hakkında daha fazla bilgiye ihtiyacınız varsa, aşağıdaki komutlardan birini çalıştırmak için **Çözüm Gezgini'nde** **Project** ana menüsünü veya *CMakeLists.txt* bağlam menüsünü açın:
 
-- **Görüntüleme önbelleği** , düzenleyicideki derleme kökü klasöründen *cmakecache. txt* dosyasını açar. (Burada, *Cmakecache. txt* ' de yaptığınız herhangi bir düzenleme, Önbelleği temizledikten sonra temizlenir. Önbellek temizlendikten sonra devam eden değişiklikler yapmak için bkz. [CMake ayarlarını özelleştirme](customize-cmake-settings.md).)
+- **Önbellek'i görüntüle,** düzenleyicideki yapı kökü klasöründen *CMakeCache.txt* dosyasını açar. *(CMakeCache.txt* için burada yaptığınız herhangi bir edeç, önbelleği temizlerseniz silinir. Önbellek temizlendikten sonra devam eden değişiklikler yapmak için Bkz. [CMake ayarlarını Özelleştir](customize-cmake-settings.md):))
 
-- **Önbellek klasörünü aç** , derleme kök klasörü Için bir Gezgin penceresi açar.
+- **Önbellek Klasörünü Aç,** yapı kökü klasörüne bir Explorer penceresi açar.
 
-- **Temiz önbellek** , sonraki CMake Yapılandır adımının temiz bir önbellekten başlaması için derleme kök klasörünü siler.
+- **Temiz Önbellek,** yapı kök klasörünü siler, böylece bir sonraki CMake yapılandırma adımı temiz bir önbellekten başlar.
 
-- **Önbellek oluşturma** , Visual Studio ortamı güncel kabul etse bile oluşturma adımını çalıştırmaya zorlar.
+- Visual Studio ortamı güncel olarak kabul etse bile, **Önbellek** oluşturma adımının çalışmasına neden olur.
 
-Otomatik önbellek oluşturma, **araçlar > seçeneklerinde > CMake > genel** iletişim kutusunda devre dışı bırakılabilir.
+CMake > Genel iletişim **kutusunda, Araçlar > Seçenekleri > otomatik** önbellek oluşturma devre dışı >.
 
-## <a name="run-cmake-from-the-command-line"></a>CMake 'i komut satırından Çalıştır
+## <a name="run-cmake-from-the-command-line"></a>Komut satırından CMake çalıştırın
 
-CMake 'i Visual Studio Yükleyicisi yüklediyseniz, aşağıdaki adımları izleyerek komut satırından çalıştırabilirsiniz:
+Visual Studio Installer'dan CMake yüklediyseniz, aşağıdaki adımları izleyerek komut satırından çalıştırabilirsiniz:
 
-1. Uygun vsdevcmd. bat (x86/x64) öğesini çalıştırın. Daha fazla bilgi için, bkz. [komut satırı üzerinde oluşturma](building-on-the-command-line.md).
+1. Uygun vsdevcmd.bat (x86/x64) çalıştırın. Daha fazla bilgi için [bkz: Komut Satırındaki Bina.](building-on-the-command-line.md)
 
-1. Çıkış klasörünüze geçin.
+1. Çıktı klasörünüze geçin.
 
-1. Uygulamanızı derlemek/yapılandırmak için CMake 'i çalıştırın.
+1. Uygulamanızı oluşturmak/yapılandırmak için CMake'i çalıştırın.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017, [platformlar arası CMake projeleri](../linux/cmake-linux-project.md)de dahil olmak üzere CMake için zengin desteğe sahiptir. **CMake C++ bileşeni için görsel araçlar** , IDE 'nin CMake proje dosyalarını ( *cmakelists. txt*gibi) doğrudan IntelliSense ve gözatma amaçlarıyla kullanmasını sağlamak için **klasörü aç** özelliğini kullanır. Hem Dokja hem de Visual Studio oluşturucuları desteklenir. Visual Studio Oluşturucusu kullanıyorsanız, geçici bir proje dosyası oluşturur ve MSBuild. exe ' ye geçirir. Ancak proje, IntelliSense veya gözatma amacıyla hiçbir şekilde yüklenmez. Ayrıca, var olan bir CMake önbelleğini içeri aktarabilirsiniz.
+Visual Studio 2017, [platformlar arası CMake projeleri](../linux/cmake-linux-project.md)de dahil olmak üzere CMake için zengin bir desteğe sahiptir. CMake bileşeni **için Visual C++ Araçları,** IDE'nin CMake proje dosyalarını *(CMakeLists.txt*gibi) doğrudan IntelliSense ve tarama amacıyla tüketmesini sağlamak için **Açık Klasör** özelliğini kullanır. Hem Ninja hem de Visual Studio jeneratörleri desteklenir. Visual Studio jeneratörü kullanıyorsanız, geçici bir proje dosyası oluşturur ve msbuild.exe'ye aktarılır. Ancak, proje IntelliSense veya tarama amacıyla yüklenmez. Ayrıca varolan bir CMake önbelleğini de içe aktarabilirsiniz.
 
 ## <a name="installation"></a>Yükleme
 
-**CMake için C++ görsel araçlar** , iş **yükleriyle C++ Linux geliştirme ve Linux geliştirme** kapsamında **masaüstü geliştirme C++**  'nin bir parçası olarak yüklenir.
+**CMake için Visual C++ Tools,** **C++** iş yüklerine sahip C++ ve Linux Geliştirme **ile Masaüstü geliştirmenin** bir parçası olarak yüklenir.
 
-![C++ Masaüstü Iş yükünde CMake bileşeni](media/cmake-install.png)
+![C++ Masaüstü iş yükünde CMake bileşeni](media/cmake-install.png)
 
-Daha fazla bilgi için bkz. [Visual C++ Studio 'da Linux iş yükünü yüklemeyi](../linux/download-install-and-setup-the-linux-development-workload.md).
+Daha fazla bilgi için [Bkz. Visual Studio'da C++ Linux iş yükünü yükleyin.](../linux/download-install-and-setup-the-linux-development-workload.md)
 
-## <a name="ide-integration"></a>IDE tümleştirmesi
+## <a name="ide-integration"></a>IDE entegrasyonu
 
-Bir *Cmakelists. txt* dosyası içeren bir klasörü açmak için **dosya > aç > klasörünü** seçtiğinizde, şunlar meydana gelir:
+*CMakeLists.txt* dosyasını içeren bir klasörü açmak için **Dosya > Aç > Klasörünü** seçtiğinizde, aşağıdaki şeyler olur:
 
-- Visual Studio, CMake komut dosyalarını görüntüleme ve düzenlemeyle ilgili komutlarla, ana menüye bir **CMake** menü öğesi ekler.
+- Visual Studio, CMake komutlarını görüntülemek ve düzenlemek için komutları içeren ana menüye bir **CMake** menü öğesi ekler.
 
 - **Çözüm Gezgini** klasör yapısını ve dosyalarını görüntüler.
 
-- Visual Studio, CMake. exe ' yi çalıştırır ve isteğe bağlı olarak, x86 hata ayıklaması olan varsayılan *yapılandırma*Için CMake önbelleği oluşturur. CMake komut satırı, CMake 'in ek çıktılarıyla birlikte **Çıkış penceresi**görüntülenir.
+- Visual Studio CMake.exe çalışır ve isteğe bağlı olarak varsayılan *yapılandırma*için CMake önbelleği oluşturur , hangi x86 Hata Ayıklama. CMake komut **satırı,** CMake'in ek çıktısıyla birlikte Çıkış Penceresinde görüntülenir.
 
-- Arka planda, Visual Studio IntelliSense, gözatma bilgileri, yeniden düzenleme vb. etkinleştirmek için kaynak dosyaların dizinini oluşturup başlatır. Çalışmanız sırasında, Visual Studio düzenleyicideki değişiklikleri ve kaynakları kaynaklarla eşitlenmiş halde tutmak için diskte da izler.
+- Arka planda Visual Studio, IntelliSense'i etkinleştirmek için kaynak dosyalarını dizine eklemeye, bilgilere göz atma, yeniden düzenleme ve benzeri bilgileri eklemeye başlar. Siz çalışırken Visual Studio, dizinini kaynaklarla eşit tutmak için düzenleyicideki ve diskteki değişiklikleri izler.
 
-İstediğiniz sayıda CMake projesini içeren klasörleri açabilirsiniz. Visual Studio, çalışma alanınızdaki tüm "kök" *Cmakelists. txt* dosyalarını algılar ve yapılandırır. CMake işlemleri (yapılandırma, derleme, hata ayıklama) C++ , IntelliSense ve gözatma, çalışma alanınızdaki tüm CMake projeleri için kullanılabilir.
+İstediğiniz sayıda CMake projesi içeren klasörleri açabilirsiniz. Visual Studio, çalışma alanınızdaki tüm "root" *CMakeLists.txt* dosyalarını algılar ve yapılandırır. CMake işlemleri (yapılandırma, oluşturma, hata ayıklama), C++ IntelliSense ve tarama çalışma alanınızdaki tüm CMake projeleri için kullanılabilir.
 
-![Birden çok kökle CMake projesi](media/cmake-multiple-roots.png)
+![Birden çok köklü CMake projesi](media/cmake-multiple-roots.png)
 
-Ayrıca, projelerinizi mantıksal olarak hedefe göre düzenlenmiş şekilde görüntüleyebilirsiniz. **Çözüm Gezgini** araç çubuğunda açılan listeden **hedefler görünümünü** seçin:
+Ayrıca, hedeflere göre mantıksal olarak düzenlenen projelerinizi de görüntüleyebilirsiniz. **Çözüm Gezgini** araç çubuğundaki açılır görünümden **Hedefler görünümünü** seçin:
 
-![CMake hedefleri görünümü düğmesi](media/cmake-targets-view.png)
+![CMake hedefleri görünüm düğmesi](media/cmake-targets-view.png)
 
-Visual Studio, CMake. exe için ortam değişkenlerini veya komut satırı seçeneklerini depolamak üzere *Cmakesettings. JSON* adlı bir dosya kullanır. *Cmakesettings. JSON* Ayrıca birden çok CMake derleme yapılandırması tanımlamanıza ve depolamanıza olanak sağlar. IDE 'de bunlarla kolayca geçiş yapabilirsiniz.
+Visual Studio cmake.exe için ortam değişkenlerini veya komut satırı seçeneklerini depolamak için *CMakeSettings.json* adlı bir dosya kullanır. *CMakeSettings.json* ayrıca birden çok CMake yapı yapılandırmasını tanımlamanızı ve depolamanızı sağlar. IDE'de aralarında rahatlıkla geçiş yapabilirsiniz.
 
-Aksi takdirde, *Cmakelists. txt* dosyasını herhangi bir CMake projesinde yaptığınız gibi, kaynak dosyaları belirtme, kitaplıklar bulma, derleyici ve bağlayıcı seçeneklerini ayarlama ve diğer derleme sistemiyle ilgili bilgileri belirtme gibi kullanın.
+Aksi takdirde, kaynak dosyaları belirtmek, kitaplıklar bulmak, derleyici ve bağlayıcı seçenekleri ayarlamak ve sistemle ilgili diğer bilgileri belirtmek için herhangi bir CMake projesinde olduğu gibi *CMakeLists.txt'yi* kullanın.
 
-Hata ayıklama sırasında bir yürütülebilir dosyaya bağımsız değişkenler geçirmeniz gerekiyorsa, **Başlat. vs. JSON**adlı başka bir dosya kullanabilirsiniz. Bazı senaryolarda, Visual Studio otomatik olarak bu dosyaları oluşturur. Bunları el ile düzenleyebilir, hatta dosyayı kendiniz oluşturabilirsiniz.
+Bağımsız değişkenleri hata ayıklama zamanında yürütülebilir bir dosyaya geçirmeniz gerekiyorsa, **launch.vs.json**adlı başka bir dosya kullanabilirsiniz. Bazı senaryolarda Visual Studio bu dosyaları otomatik olarak oluşturur. Bunları el ile dinleyebilir, hatta dosyayı kendiniz oluşturabilirsiniz.
 
 > [!NOTE]
-> Diğer açık klasör projesi türleri için, iki ek JSON dosyası kullanılır: **Cppproperties. JSON** ve **Tasks. vs. JSON**. Bunlardan hiçbiri CMake projelerine uygun değildir.
+> Açık Klasör projelerinin diğer türleri için iki ek JSON dosyası kullanılır: **CppProperties.json** ve **tasks.vs.json**. Bunların hiçbiri CMake projeleri için ilgili değildir.
 
-## <a name="import-an-existing-cache"></a>Var olan bir önbelleği içeri aktar
+## <a name="import-an-existing-cache"></a>Varolan bir önbelleği alma
 
-Var olan bir *Cmakecache. txt* dosyasını içeri aktardığınızda, Visual Studio özelleştirilmiş değişkenleri otomatik olarak ayıklar ve bunlara göre önceden doldurulmuş bir *cmakesettings. JSON* dosyası oluşturur. Özgün önbellek herhangi bir şekilde değiştirilmez. Bu, komut satırından veya onu oluşturmak için kullanılan herhangi bir araçla veya IDE ile kullanılabilir. Yeni *Cmakesettings. JSON* dosyası projenin kök *cmakelists. txt*dosyasının yanına yerleştirilir. Visual Studio, ayarlar dosyasını temel alarak yeni bir önbellek oluşturur. **Araçlar > seçenekleri > CMake > genel** iletişim kutusunda otomatik önbellek oluşturmayı geçersiz kılabilirsiniz.
+Varolan bir *CMakeCache.txt* dosyayı içe aktardığınızda, Visual Studio otomatik olarak özelleştirilmiş değişkenleri ayıklar ve bunlara dayalı önceden doldurulmuş bir *CMakeSettings.json* dosyası oluşturur. Özgün önbellek hiçbir şekilde değiştirilmez. Yine de komut satırından veya oluşturmak için kullanılan her türlü araç veya IDE ile kullanılabilir. Yeni *CMakeSettings.json* dosyası projenin kök *CMakeLists.txt*yanında yerleştirilir. Visual Studio ayarlar dosyasına dayalı yeni bir önbellek oluşturur. CMake > Genel iletişim **kutusunda, Araçlar > Seçenekleri > Otomatik** önbellek oluşturmayı geçersiz kılabilirsiniz.
 
-Önbellekteki her şey içeri aktarılmaz.  Oluşturucu ve derleyicilerin konumu gibi özellikler, IDE ile birlikte çalışmak üzere bilinen varsayılanlar ile değiştirilmiştir.
+Önbellekteki her şey içe aktarılmaz.  Jeneratör ve derleyicilerin konumu gibi özellikler, IDE ile iyi çalıştığı bilinen varsayılanlarla değiştirilir.
 
-### <a name="to-import-an-existing-cache"></a>Var olan bir önbelleği içeri aktarmak için
+### <a name="to-import-an-existing-cache"></a>Varolan bir önbelleği almak için
 
-1. Ana menüden **dosya > > CMake aç**' ı seçin:
+1. Ana menüden **Dosya > Açık > CMake'i**seçin:
 
-   ![CMake 'i aç](media/cmake-file-open.png "Dosya, açık, CMake")
+   ![CMake'i Aç](media/cmake-file-open.png "Dosya, Aç, CMake")
 
-   Bu komut, **önbellekten CMake Içeri aktarma** Sihirbazı 'nı getirir.
+   Bu **komut, Önbellek sihirbazından CMake Alma'yı** getirir.
 
-2. İçeri aktarmak istediğiniz *Cmakecache. txt* dosyasına gidin ve ardından **Tamam**' a tıklayın. **Önbellekten CMake projesini Içeri aktarma** Sihirbazı görünür:
+2. Almak istediğiniz *CMakeCache.txt* dosyasına gidin ve ardından **Tamam'ı**tıklatın. **Önbellek sihirbazından CMake Projesi alma** görüntülenir:
 
-   ![CMake önbelleğini içeri aktarma](media/cmake-import-wizard.png "CMake içeri aktarma önbelleği Sihirbazı 'nı açın")
+   ![CMake önbelleği alma](media/cmake-import-wizard.png "CMake alma önbellek sihirbazı açma")
 
-   Sihirbaz tamamlandığında, projenizdeki kök *Cmakelists. txt* dosyasının yanındaki **Çözüm Gezgini** yeni *cmakecache. txt* dosyasını görebilirsiniz.
+   Sihirbaz tamamlandığında, **Çözüm Gezgini'nde** yeni *CMakeCache.txt* dosyasını projenizdeki kök *CMakeLists.txt* dosyasının yanında görebilirsiniz.
 
 ## <a name="building-cmake-projects"></a>CMake projeleri oluşturma
 
-CMake projesi oluşturmak için şu seçimlere sahipsiniz:
+Bir CMake projesi oluşturmak için şu seçeneklere sahipsiniz:
 
-1. Genel araç çubuğunda, **Konfigürasyonlar** açılan listesini bulun. Büyük olasılıkla "Linux-Debug" veya "x64-Debug" varsayılan olarak gösteriliyor. Tercih edilen yapılandırmayı seçin ve **F5**tuşuna basın ya da araç çubuğunda **Çalıştır** (yeşil üçgen) düğmesine tıklayın. Proje, yalnızca bir Visual Studio çözümü gibi otomatik olarak ilk olarak oluşturulur.
+1. Genel araç çubuğunda, **Configurations** açılır düşüşünü bulun. Muhtemelen varsayılan olarak "Linux-Debug" veya "x64-Debug" gösteriyor. Tercih edilen yapılandırmayı seçin ve **F5**tuşuna basın veya araç çubuğundaki **Çalıştır** (yeşil üçgen) düğmesine tıklayın. Proje otomatik olarak ilk oluşturur, bir Visual Studio çözüm gibi.
 
-1. *Cmakelists. txt* dosyasına sağ tıklayın ve bağlam menüsünden **Oluştur** ' u seçin. Klasör yapınız içinde birden çok hedef varsa, tümünü veya yalnızca bir hedefi derlemeyi seçebilirsiniz.
+1. *CMakeLists.txt'ye* sağ tıklayın ve bağlam menüsünden **Oluştur'u** seçin. Klasör yapınızda birden çok hedefiniz varsa, tümünü veya yalnızca belirli bir hedefi oluşturmayı seçebilirsiniz.
 
-1. Ana menüden **derleme > Build Solution** (**F7** veya **Ctrl + Shift + B**) öğesini seçin. **Genel** araç çubuğundaki **Başlangıç öğesi** açılır listesinde bir CMake hedefinin zaten seçili olduğundan emin olun.
+1. Ana menüden **Yapı > Çözüm** **(F7** veya **Ctrl+Shift+B)** seçeneğini belirleyin. **Genel** araç çubuğundaki **Başlangıç Öğesi** açılır düşüşünde bir CMake hedefinin zaten seçildiğinden emin olun.
 
-![CMake oluştur menü komutu](media/cmake-build-menu.png "CMake derlemesi komut menüsü")
+![CMake build menü komutu](media/cmake-build-menu.png "CMake build komut menüsü")
 
-Yapı yapılandırmasını, ortam değişkenlerini, komut satırı bağımsız değişkenlerini ve *Cmakesettings. JSON* dosyasındaki diğer ayarları özelleştirebilirsiniz. *Cmakelists. txt* dosyasını değiştirmeden değişiklik yapmanızı sağlar. Daha fazla bilgi için bkz. [CMake ayarlarını özelleştirme](customize-cmake-settings.md).
+*CMakeSettings.json* dosyasındaki yapı yapılandırmalarını, ortam değişkenlerini, komut satırı bağımsız değişkenlerini ve diğer ayarları özelleştirebilirsiniz. *CMakeLists.txt* dosyasını değiştirmeden değişiklik yapmanızı sağlar. Daha fazla bilgi için [CMake ayarlarını özelleştir'e](customize-cmake-settings.md)bakın.
 
-Bekleneceğiniz gibi, yapı sonuçları **Çıkış penceresi** ve **hata listesi**gösterilir.
+Beklediğiniz gibi, yapı sonuçları **Çıktı Penceresi** ve **Hata Listesinde**gösterilir.
 
-![CMake derleme hataları](media/cmake-build-errors.png "CMake derleme hataları")
+![CYapı hataları oluşturma](media/cmake-build-errors.png "CYapı hataları oluşturma")
 
-Birden çok derleme hedefi olan bir klasörde, hangi CMake hedefini derlemek istediğinizi belirtebilirsiniz: **CMake** menüsünde **Build** öğesini veya *cmakelists. txt* bağlam menüsünü seçerek hedefi belirtin. CMake projesinde **CTRL + SHIFT + B** tuşlarına girerseniz, geçerli etkin belgeyi oluşturur.
+Birden çok yapı hedefi olan bir klasörde, hangi CMake hedefini oluştureceğini belirtebilirsiniz: Hedefi belirtmek için **CMake** menüsünde Veya *CMakeLists.txt* bağlam menüsünde **Yapı** öğesini seçin. CMake projesine **Ctrl+Shift+B** girerseniz, geçerli etkin belgeyi oluşturur.
 
-## <a name="debugging-cmake-projects"></a>CMake projelerinde hata ayıklama
+## <a name="debugging-cmake-projects"></a>Hata ayıklama CMake projeleri
 
-CMake projesinde hata ayıklamak için tercih edilen yapılandırmayı seçin ve **F5**tuşuna basın. Ya da araç çubuğundaki **Çalıştır** düğmesine basın. **Çalıştır** düğmesi "başlangıç öğesi Seç" diyorsa, açılan oku seçin ve çalıştırmak istediğiniz hedefi seçin. (CMake projesinde, "geçerli belge" seçeneği yalnızca. cpp dosyaları için geçerlidir.)
+CMake projesini hata ayıklamak için tercih edilen yapılandırmayı seçin ve **F5 tuşuna**basın. Veya araç çubuğundaki **Çalıştır** düğmesine basın. **Çalıştır** düğmesinde "Başlangıç Öğesini Seç" yazıyorsa, açılır ok'u seçin ve çalıştırmak istediğiniz hedefi seçin. (CMake projesinde "Geçerli belge" seçeneği yalnızca .cpp dosyaları için geçerlidir.)
 
-![CMake Çalıştır düğmesi](media/cmake-run-button.png "CMake Çalıştır düğmesi")
+![CÇalıştır düğmesi yap](media/cmake-run-button.png "CÇalıştır düğmesi yap")
 
-Önceki derlemeden bu yana değişiklikler yapılmışsa, **Run** veya **F5** komutları ilk olarak projeyi oluşturur.
+Önceki yapıdan bu yana değişiklikler **yapıldıysa, önce Çalıştır** veya **F5** komutları projeyi oluşturur.
 
-**Launch. vs. JSON** dosyasındaki özellikleri ayarlayarak CMake hata ayıklama oturumunu özelleştirebilirsiniz. Daha fazla bilgi için bkz. [CMake hata ayıklama oturumlarını yapılandırma](configure-cmake-debugging-sessions.md).
+**Launch.vs.json** dosyasındaki özellikleri ayarlayarak cmake hata ayıklama oturumunu özelleştirebilirsiniz. Daha fazla bilgi için [CMake hata ayıklama oturumlarını yapılandırın.](configure-cmake-debugging-sessions.md)
 
-## <a name="editing-cmakeliststxt-files"></a>CMakeLists. txt dosyalarını Düzenle
+## <a name="editing-cmakeliststxt-files"></a>CMakeLists.txt dosyalarını düzenleme
 
-Bir *Cmakelists. txt* dosyasını düzenlemek için, **Çözüm Gezgini** dosya üzerinde sağ tıklayın ve **Aç**' ı seçin. Dosyada değişiklik yaparsanız, sarı bir durum çubuğu görünür ve IntelliSense 'in güncelleşmekte olduğunu bildirir. Güncelleştirme işlemini iptal etmek için size bir şans sağlar. *Cmakelists. txt*hakkında daha fazla bilgi için bkz. [CMake belgeleri](https://cmake.org/documentation/).
+*CMakeLists.txt* dosyasını düzeltmek için **Solution Explorer'daki** dosyaya sağ tıklayın ve **Aç'ı**seçin. Dosyada değişiklik yaparsanız, sarı bir durum çubuğu görüntülenir ve IntelliSense'in güncelleştireceğini bildirir. Güncelleştirme işlemini iptal etme şansı verir. *CMakeLists.txt*hakkında bilgi için, [CMake belgelerine](https://cmake.org/documentation/)bakın.
 
-   ![CMakeLists. txt dosya düzenlemesi](media/cmake-cmakelists.png "CMakeLists. txt dosya düzenlemesi")
+   ![CMakeLists.txt dosya düzenleme](media/cmake-cmakelists.png "CMakeLists.txt dosya düzenleme")
 
-Dosyayı kaydettikten hemen sonra yapılandırma adımı otomatik olarak çalışır ve **Çıkış** penceresinde bilgileri görüntüler. Hatalar ve uyarılar **hata listesi** veya **Çıkış** penceresinde gösterilir. *Cmakelists. txt*dosyasındaki sorunlu satıra gitmek için **hata listesi** bir hataya çift tıklayın.
+Dosyayı kaydedin en kısa sürede yapılandırma adımı otomatik olarak yeniden çalışır ve **Çıktı** penceresinde bilgileri görüntüler. Hatalar ve uyarılar **Hata Listesi** veya **Çıktı** penceresinde gösterilir. *CMakeLists.txt'deki*rahatsız edici satıra gitmek için **Hata Listesi'ndeki** bir hataya çift tıklayın.
 
-   ![CMakeLists. txt dosyası hataları](media/cmake-cmakelists-error.png "CMakeLists. txt dosyası hataları")
+   ![CMakeLists.txt dosya hataları](media/cmake-cmakelists-error.png "CMakeLists.txt dosya hataları")
 
-## <a name="cmake-configure-step"></a>CMake yapılandırma adımı
+## <a name="cmake-configure-step"></a>CYapı yapı adımı
 
-*Cmakesettings. JSON* veya *cmakelists. txt* dosyalarında önemli değişiklikler yapıldığında, Visual Studio otomatik olarak CMake yapılandırma adımını yeniden çalıştırır. Yapılandırma adımı hatasız tamamlandığında, toplanan bilgiler C++ IntelliSense ve Language hizmetlerinde kullanılabilir. Derleme ve hata ayıklama işlemlerinde de kullanılır.
+*CMakeSettings.json* veya *CMakeLists.txt* dosyalarında önemli değişiklikler yapıldığında, Visual Studio CMake yapılandırma adımını otomatik olarak yeniden çalıştırır. Yapılandırma adımı hatasız biterse, toplanan bilgiler C++ IntelliSense ve dil hizmetlerinde kullanılabilir. Yapı ve hata ayıklama işlemlerinde de kullanılır.
 
-Birden çok CMake projesinde aynı CMake yapılandırma adı (örneğin, x86-hata ayıklama) kullanılabilir. Bu yapılandırma seçildiğinde, tümü yapılandırılır ve oluşturulur (kendi yapı kök klasöründe). Bu CMake yapılandırmasına katılan tüm CMake projelerinin hedeflerinde hata ayıklaması yapabilirsiniz.
+Birden çok CMake projesi aynı CMake yapılandırma adını kullanabilir (örneğin, x86-Hata Ayıklama). Bu yapılandırma seçildiğinde hepsi yapılandırılır ve (kendi yapı kökü klasöründe) oluşturulur. Bu CMake yapılandırmasında yer alan tüm CMake projelerinin hedeflerini ayıklayabilirsiniz.
 
-   ![CMake yalnızca derleme menü öğesi](media/cmake-build-only.png "CMake yalnızca derleme menü öğesi")
+   ![CMake Yalnızca Ekle menü öğesi](media/cmake-build-only.png "CMake Yalnızca Ekle menü öğesi")
 
-Derlemeleri ve hata ayıklama oturumlarını çalışma alanındaki projelerin bir alt kümesiyle sınırlayabilirsiniz. *Cmakesettings. JSON* dosyasında benzersiz bir adla yeni bir yapılandırma oluşturun. Ardından, yapılandırmayı yalnızca bu projelere uygulayın. Bu yapılandırma seçildiğinde, IntelliSense ve derleme ve hata ayıklama komutları yalnızca belirtilen projeler için geçerlidir.
+Yapı ve hata ayıklama oturumlarını çalışma alanındaki projelerin bir alt kümesiyle sınırlandırabilirsiniz. *CMakeSettings.json* dosyasında benzersiz bir ada sahip yeni bir yapılandırma oluşturun. Ardından, yapılandırmayı yalnızca bu projelere uygulayın. Bu yapılandırma seçildiğinde, IntelliSense ve yapı ve hata ayıklama komutları yalnızca belirtilen projeler için geçerlidir.
 
-## <a name="troubleshooting-cmake-cache-errors"></a>CMake önbelleği hatalarıyla ilgili sorunları giderme
+## <a name="troubleshooting-cmake-cache-errors"></a>Sorun giderme CMake önbellek hataları
 
-Bir sorunu tanılamak için CMake önbelleğinin durumu hakkında daha fazla bilgiye ihtiyacınız varsa, aşağıdaki komutlardan birini çalıştırmak için **CMake** ana menüsünü veya **Çözüm Gezgini** içindeki *cmakelists. txt* bağlam menüsünü açın:
+Bir sorunu tanılamak için CMake önbelleğinin durumu hakkında daha fazla bilgiye ihtiyacınız varsa, bu komutlardan birini çalıştırmak için **Solution Explorer'daki** **CMake** ana menüsünü veya *CMakeLists.txt* bağlam menüsünü açın:
 
-- **Görüntüleme önbelleği** , düzenleyicideki derleme kökü klasöründen *cmakecache. txt* dosyasını açar. (Burada, *Cmakecache. txt* ' de yaptığınız herhangi bir düzenleme, Önbelleği temizledikten sonra temizlenir. Önbellek temizlendikten sonra devam eden değişiklikler yapmak için bkz. [CMake ayarlarını özelleştirme](customize-cmake-settings.md).)
+- **Önbellek'i görüntüle,** düzenleyicideki yapı kökü klasöründen *CMakeCache.txt* dosyasını açar. *(CMakeCache.txt* için burada yaptığınız herhangi bir edeç, önbelleği temizlerseniz silinir. Önbellek temizlendikten sonra devam eden değişiklikler yapmak için Bkz. [CMake ayarlarını Özelleştir](customize-cmake-settings.md):))
 
-- **Önbellek klasörünü aç** , derleme kök klasörü Için bir Gezgin penceresi açar.
+- **Önbellek Klasörünü Aç,** yapı kökü klasörüne bir Explorer penceresi açar.
 
-- **Temiz önbellek** , sonraki CMake Yapılandır adımının temiz bir önbellekten başlaması için derleme kök klasörünü siler.
+- **Temiz Önbellek,** yapı kök klasörünü siler, böylece bir sonraki CMake yapılandırma adımı temiz bir önbellekten başlar.
 
-- **Önbellek oluşturma** , Visual Studio ortamı güncel kabul etse bile oluşturma adımını çalıştırmaya zorlar.
+- Visual Studio ortamı güncel olarak kabul etse bile, **Önbellek** oluşturma adımının çalışmasına neden olur.
 
-Otomatik önbellek oluşturma, **araçlar > seçeneklerinde > CMake > genel** iletişim kutusunda devre dışı bırakılabilir.
+CMake > Genel iletişim **kutusunda, Araçlar > Seçenekleri > otomatik** önbellek oluşturma devre dışı >.
 
-## <a name="single-file-compilation"></a>Tek dosya derleme
+## <a name="single-file-compilation"></a>Tek dosya derlemesi
 
-CMake projesinde tek bir dosya oluşturmak için **Çözüm Gezgini**dosyasında dosyaya sağ tıklayın. Açılır menüden **Derle** ' yi seçin. Ana **CMake** menüsünü kullanarak düzenleyicide Şu anda açık olan dosyayı da oluşturabilirsiniz:
+CMake projesinde tek bir dosya oluşturmak için Solution **Explorer'daki**dosyaya sağ tıklayın. Açılan menüden **Derle'yi** seçin. Ana **CMake** menüsünü kullanarak düzenleyicide şu anda açık olan dosyayı da oluşturabilirsiniz:
 
-![CMake tek dosya derlemesi](media/cmake-single-file-compile.png)
+![CMake tek dosya derleme](media/cmake-single-file-compile.png)
 
-## <a name="run-cmake-from-the-command-line"></a>CMake 'i komut satırından Çalıştır
+## <a name="run-cmake-from-the-command-line"></a>Komut satırından CMake çalıştırın
 
-CMake 'i Visual Studio Yükleyicisi yüklediyseniz, aşağıdaki adımları izleyerek komut satırından çalıştırabilirsiniz:
+Visual Studio Installer'dan CMake yüklediyseniz, aşağıdaki adımları izleyerek komut satırından çalıştırabilirsiniz:
 
-1. Uygun vsdevcmd. bat (x86/x64) öğesini çalıştırın. Daha fazla bilgi için, bkz. [komut satırı üzerinde oluşturma](building-on-the-command-line.md) .
+1. Uygun vsdevcmd.bat (x86/x64) çalıştırın. Daha fazla bilgi için [komut satırındaki Bina'ya](building-on-the-command-line.md) bakın.
 
-1. Çıkış klasörünüze geçin.
+1. Çıktı klasörünüze geçin.
 
-1. Uygulamanızı derlemek/yapılandırmak için CMake 'i çalıştırın.
+1. Uygulamanızı oluşturmak/yapılandırmak için CMake'i çalıştırın.
 
 ::: moniker-end
 
 ::: moniker range="vs-2015"
 
-Visual Studio 2015 ' de, Visual Studio kullanıcıları bir [CMake Oluşturucu](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) kullanarak, IDE 'nin IntelliSense, gözatma ve derleme Için kullandığı MSBuild proje dosyaları oluşturabilir.
+Visual Studio 2015'te Visual Studio kullanıcıları, IDE'nin IntelliSense, tarama ve derleme için tükettiği MSBuild proje dosyalarını oluşturmak için bir [CMake jeneratörü](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) kullanabilir.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Öğretici: Visual C++ Studio 'da platformlar arası projeler oluşturma](get-started-linux-cmake.md)\
-[Linux CMake projesi yapılandırma](../linux/cmake-linux-project.md)\
+[Öğretici: Visual Studio'da C++ platform ötesi projeler oluşturun](get-started-linux-cmake.md)\
+[Linux CMake projesini yapılandırma](../linux/cmake-linux-project.md)\
 [Uzak Linux bilgisayarınıza bağlanın](../linux/connect-to-your-remote-linux-computer.md)\
-[CMake derleme ayarlarını özelleştirin](customize-cmake-settings.md)\
-[Cmakesettings. JSON şema başvurusu](cmakesettings-reference.md)\
+[CMake yapı ayarlarını özelleştirin](customize-cmake-settings.md)\
+[CMakeSettings.json şema referans](cmakesettings-reference.md)\
 [CMake hata ayıklama oturumlarını yapılandırma](configure-cmake-debugging-sessions.md)\
-[Linux projenizi dağıtın, çalıştırın ve hata ayıklayın](../linux/deploy-run-and-debug-your-linux-project.md)\
+[Linux projenizi dağıtma, çalıştırma ve hata ayıklama](../linux/deploy-run-and-debug-your-linux-project.md)\
 [CMake önceden tanımlanmış yapılandırma başvurusu](cmake-predefined-configuration-reference.md)

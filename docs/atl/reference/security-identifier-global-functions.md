@@ -1,5 +1,5 @@
 ---
-title: Güvenlik tanımlayıcısı genel işlevleri
+title: Güvenlik Tanımlayıcısı Genel İşlevleri
 ms.date: 11/04/2016
 f1_keywords:
 - atlsecurity/ATL::Sids::AccountOps
@@ -37,60 +37,60 @@ helpviewer_keywords:
 - security IDs [C++]
 - SIDs [C++], returning SID objects
 ms.assetid: 85404dcb-c59b-4535-ab3d-66cfa37e87de
-ms.openlocfilehash: ab5d743c7c6abf7ee3a849a28916ebd32788ef40
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 83326c13de7585806ab841f728f587f1131b5e8d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274951"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81325989"
 ---
-# <a name="security-identifier-global-functions"></a>Güvenlik tanımlayıcısı genel işlevleri
+# <a name="security-identifier-global-functions"></a>Güvenlik Tanımlayıcısı Genel İşlevleri
 
-Bu işlevler, nesneler ortak iyi bilinen SID döndürür.
+Bu işlevler, yaygın olarak bilinen SID nesnelerini döndürer.
 
 > [!IMPORTANT]
->  Aşağıdaki tabloda listelenen İşlevler, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Aşağıdaki tabloda listelenen işlevler Windows Runtime'da çalışan uygulamalarda kullanılamaz.
 
 |||
 |-|-|
 |[Sids::AccountOps](#accountops)|DOMAIN_ALIAS_RID_ACCOUNT_OPS SID döndürür.|
-|[Sids::Admins](#admins)|DOMAIN_ALIAS_RID_ADMINS SID döndürür.|
-|[Sids::AnonymousLogon](#anonymouslogon)|SECURITY_ANONYMOUS_LOGON_RID SID döndürür.|
+|[Sids::Yöneticiler](#admins)|DOMAIN_ALIAS_RID_ADMINS SID döndürür.|
+|[Sids::AnonimLogon](#anonymouslogon)|SECURITY_ANONYMOUS_LOGON_RID SID döndürür.|
 |[Sids::AuthenticatedUser](#authenticateduser)|SECURITY_AUTHENTICATED_USER_RID SID döndürür.|
 |[Sids::BackupOps](#backupops)|DOMAIN_ALIAS_RID_BACKUP_OPS SID döndürür.|
-|[Sids::batch](#batch)|SECURITY_BATCH_RID SID döndürür.|
+|[Sids::Toplu](#batch)|SECURITY_BATCH_RID SID döndürür.|
 |[Sids::CreatorGroup](#creatorgroup)|SECURITY_CREATOR_GROUP_RID SID döndürür.|
 |[Sids::CreatorGroupServer](#creatorgroupserver)|SECURITY_CREATOR_GROUP_SERVER_RID SID döndürür.|
 |[Sids::CreatorOwner](#creatorowner)|SECURITY_CREATOR_OWNER_RID SID döndürür.|
 |[Sids::CreatorOwnerServer](#creatorownerserver)|SECURITY_CREATOR_OWNER_SERVER_RID SID döndürür.|
-|[Sids::dialup](#dialup)|SECURITY_DIALUP_RID SID döndürür.|
-|[Sids::Guests](#guests)|Domaın_alıas_rıd_guests SID döndürür.|
-|[Sids::Interactive](#interactive)|SECURITY_INTERACTIVE_RID SID döndürür.|
-|[Sids::Local](#local)|SECURITY_LOCAL_RID SID döndürür.|
-|[Sids::Network](#network)|SECURITY_NETWORK_RID SID döndürür.|
+|[Sids::Dialup](#dialup)|SECURITY_DIALUP_RID SID döndürür.|
+|[Sids::Misafirler](#guests)|SIDDOMAIN_ALIAS_RID_GUESTS döndürür.|
+|[Sids::Etkileşimli](#interactive)|SECURITY_INTERACTIVE_RID SID döndürür.|
+|[Sids::Yerel](#local)|SECURITY_LOCAL_RID SID döndürür.|
+|[Sids::Ağ](#network)|SECURITY_NETWORK_RID SID döndürür.|
 |[Sids::NetworkService](#networkservice)|SECURITY_NETWORK_SERVICE_RID SID döndürür.|
-|[Sids::null](#null)|SECURITY_NULL_RID SID döndürür.|
+|[Sids::Null](#null)|SECURITY_NULL_RID SID döndürür.|
 |[Sids::PreW2KAccess](#prew2kaccess)|DOMAIN_ALIAS_RID_PREW2KCOMPACCESS SID döndürür.|
-|[Sids::PowerUsers](#powerusers)|DOMAIN_ALIAS_RID_POWER_USERS SID döndürür.|
+|[Sids::PowerKullanıcılar](#powerusers)|DOMAIN_ALIAS_RID_POWER_USERS SID döndürür.|
 |[Sids::PrintOps](#printops)|DOMAIN_ALIAS_RID_PRINT_OPS SID döndürür.|
-|[Sids::proxy](#proxy)|SECURITY_PROXY_RID SID döndürür.|
+|[Sids::Proxy](#proxy)|SECURITY_PROXY_RID SID döndürür.|
 |[Sids::RasServers](#rasservers)|DOMAIN_ALIAS_RID_RAS_SERVERS SID döndürür.|
-|[Sids::Replicator](#replicator)|DOMAIN_ALIAS_RID_REPLICATOR SID döndürür.|
+|[Sids::Çoğaltıcı](#replicator)|DOMAIN_ALIAS_RID_REPLICATOR SID döndürür.|
 |[Sids::RestrictedCode](#restrictedcode)|SECURITY_RESTRICTED_CODE_RID SID döndürür.|
-|[Sids::Self](#self)|SECURITY_PRINCIPAL_SELF_RID SID döndürür.|
+|[Sids::Benlik](#self)|SECURITY_PRINCIPAL_SELF_RID SID döndürür.|
 |[Sids::ServerLogon](#serverlogon)|SECURITY_SERVER_LOGON_RID SID döndürür.|
-|[Sids::Service](#service)|SECURITY_SERVICE_RID SID döndürür.|
-|[Sids::System](#system)|SECURITY_LOCAL_SYSTEM_RID SID döndürür.|
+|[Sids::Servis](#service)|SECURITY_SERVICE_RID SID döndürür.|
+|[Sids::Sistem](#system)|SECURITY_LOCAL_SYSTEM_RID SID döndürür.|
 |[Sids::SystemOps](#systemops)|DOMAIN_ALIAS_RID_SYSTEM_OPS SID döndürür.|
 |[Sids::TerminalServer](#terminalserver)|SECURITY_TERMINAL_SERVER_RID SID döndürür.|
-|[Sids::Users](#users)|DOMAIN_ALIAS_RID_USERS SID döndürür.|
-|[Sids::World](#world)|SECURITY_WORLD_RID SID döndürür.|
+|[Sids::Kullanıcılar](#users)|DOMAIN_ALIAS_RID_USERS SID döndürür.|
+|[Sids::Dünya](#world)|SECURITY_WORLD_RID SID döndürür.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsecurity.h
+**Üstbilgi:** atlsecurity.h
 
-##  <a name="accountops"></a>  Sids::AccountOps
+## <a name="sidsaccountops"></a><a name="accountops"></a>Sids::AccountOps
 
 DOMAIN_ALIAS_RID_ACCOUNT_OPS SID döndürür.
 
@@ -98,7 +98,7 @@ DOMAIN_ALIAS_RID_ACCOUNT_OPS SID döndürür.
 CSid AccountOps() throw(...);
 ```
 
-##  <a name="admins"></a>  Sids::Admins
+## <a name="sidsadmins"></a><a name="admins"></a>Sids::Yöneticiler
 
 DOMAIN_ALIAS_RID_ADMINS SID döndürür.
 
@@ -106,7 +106,7 @@ DOMAIN_ALIAS_RID_ADMINS SID döndürür.
 CSid Admins() throw(...);
 ```
 
-##  <a name="anonymouslogon"></a>  Sids::AnonymousLogon
+## <a name="sidsanonymouslogon"></a><a name="anonymouslogon"></a>Sids::AnonimLogon
 
 SECURITY_ANONYMOUS_LOGON_RID SID döndürür.
 
@@ -114,7 +114,7 @@ SECURITY_ANONYMOUS_LOGON_RID SID döndürür.
 CSid AnonymousLogon() throw(...);
 ```
 
-##  <a name="authenticateduser"></a>  Sids::AuthenticatedUser
+## <a name="sidsauthenticateduser"></a><a name="authenticateduser"></a>Sids::AuthenticatedUser
 
 SECURITY_AUTHENTICATED_USER_RID SID döndürür.
 
@@ -122,7 +122,7 @@ SECURITY_AUTHENTICATED_USER_RID SID döndürür.
 CSid AuthenticatedUser() throw(...);
 ```
 
-##  <a name="backupops"></a>  Sids::BackupOps
+## <a name="sidsbackupops"></a><a name="backupops"></a>Sids::BackupOps
 
 DOMAIN_ALIAS_RID_BACKUP_OPS SID döndürür.
 
@@ -130,7 +130,7 @@ DOMAIN_ALIAS_RID_BACKUP_OPS SID döndürür.
 CSid BackupOps() throw(...);
 ```
 
-##  <a name="batch"></a>  Sids::batch
+## <a name="sidsbatch"></a><a name="batch"></a>Sids::Toplu
 
 SECURITY_BATCH_RID SID döndürür.
 
@@ -138,7 +138,7 @@ SECURITY_BATCH_RID SID döndürür.
 CSid Batch() throw(...);
 ```
 
-##  <a name="creatorgroup"></a>  Sids::CreatorGroup
+## <a name="sidscreatorgroup"></a><a name="creatorgroup"></a>Sids::CreatorGroup
 
 SECURITY_CREATOR_GROUP_RID SID döndürür.
 
@@ -146,7 +146,7 @@ SECURITY_CREATOR_GROUP_RID SID döndürür.
 CSid CreatorGroup() throw(...);
 ```
 
-##  <a name="creatorgroupserver"></a>  Sids::CreatorGroupServer
+## <a name="sidscreatorgroupserver"></a><a name="creatorgroupserver"></a>Sids::CreatorGroupServer
 
 SECURITY_CREATOR_GROUP_SERVER_RID SID döndürür.
 
@@ -154,7 +154,7 @@ SECURITY_CREATOR_GROUP_SERVER_RID SID döndürür.
 CSid CreatorGroupServer() throw(...);
 ```
 
-##  <a name="creatorowner"></a>  Sids::CreatorOwner
+## <a name="sidscreatorowner"></a><a name="creatorowner"></a>Sids::CreatorOwner
 
 SECURITY_CREATOR_OWNER_RID SID döndürür.
 
@@ -162,7 +162,7 @@ SECURITY_CREATOR_OWNER_RID SID döndürür.
 CSid CreatorOwner() throw(...);
 ```
 
-##  <a name="creatorownerserver"></a>  Sids::CreatorOwnerServer
+## <a name="sidscreatorownerserver"></a><a name="creatorownerserver"></a>Sids::CreatorOwnerServer
 
 SECURITY_CREATOR_OWNER_SERVER_RID SID döndürür.
 
@@ -170,7 +170,7 @@ SECURITY_CREATOR_OWNER_SERVER_RID SID döndürür.
 CSid CreatorOwnerServer() throw(...);
 ```
 
-##  <a name="dialup"></a>  Sids::dialup
+## <a name="sidsdialup"></a><a name="dialup"></a>Sids::Dialup
 
 SECURITY_DIALUP_RID SID döndürür.
 
@@ -178,15 +178,15 @@ SECURITY_DIALUP_RID SID döndürür.
 CSid Dialup() throw(...);
 ```
 
-##  <a name="guests"></a>  Sids::Guests
+## <a name="sidsguests"></a><a name="guests"></a>Sids::Misafirler
 
-Domaın_alıas_rıd_guests SID döndürür.
+SIDDOMAIN_ALIAS_RID_GUESTS döndürür.
 
 ```
 CSid Guests() throw(...);
 ```
 
-##  <a name="interactive"></a>  Sids::Interactive
+## <a name="sidsinteractive"></a><a name="interactive"></a>Sids::Etkileşimli
 
 SECURITY_INTERACTIVE_RID SID döndürür.
 
@@ -194,7 +194,7 @@ SECURITY_INTERACTIVE_RID SID döndürür.
 CSid Interactive() throw(...);
 ```
 
-##  <a name="local"></a>  Sids::Local
+## <a name="sidslocal"></a><a name="local"></a>Sids::Yerel
 
 SECURITY_LOCAL_RID SID döndürür.
 
@@ -202,7 +202,7 @@ SECURITY_LOCAL_RID SID döndürür.
 CSid Local() throw(...);
 ```
 
-##  <a name="network"></a>  Sids::Network
+## <a name="sidsnetwork"></a><a name="network"></a>Sids::Ağ
 
 SECURITY_NETWORK_RID SID döndürür.
 
@@ -210,7 +210,7 @@ SECURITY_NETWORK_RID SID döndürür.
 CSid Network() throw(...);
 ```
 
-##  <a name="networkservice"></a>  Sids::NetworkService
+## <a name="sidsnetworkservice"></a><a name="networkservice"></a>Sids::NetworkService
 
 SECURITY_NETWORK_SERVICE_RID SID döndürür.
 
@@ -220,11 +220,11 @@ CSid NetworkService() throw(...);
 
 ### <a name="remarks"></a>Açıklamalar
 
-NetworkService CPerfMon güvenlik nesnesine okumak NT AUTHORITY\NetworkService kullanıcı etkinleştirmek için kullanın. NetworkService bir SecurityAttribute DLL Windows XP Home Edition, Windows XP Professional, Windows Server 2003 ve büyük işletim sistemi NetworkService hesabı altında oturum açmak için izin veren ATLServer kodu ekler.
+NT AUTHORITY\NetworkService kullanıcısının bir CPerfMon güvenlik nesnesini okumasını sağlamak için NetworkService'i kullanın. NetworkService, DLL'nin Windows XP Home Edition, Windows XP Professional, Windows Server 2003 ve daha fazla işletim sisteminde NetworkService hesabı altında oturum açmasına olanak tanıyan ATLServer koduna bir SecurityAttribute ekler.
 
-Özel günlük sayaçları Perfmon MMC'de ATLServer CPerfMon sınıfı ile oluşturulduğunda sayaçları gerçek zamanlı Görünümü'nde doğru görünür ancak günlük dosyasını görüntülerken görünmeyebilir. Özel performans Sayaçlarınızı CPerfMon (smlogsvc.exe) "Performans Günlükleri ve Uyarıları" hizmetinin altında Windows XP Home Edition, Windows XP Professional, Windows Server 2003 (veya üstü) işletim sistemlerini çalıştıran için gerekli izniniz yok. Bu hizmet "NT AUTHORITY\NetworkService" hesabı altında çalışır.
+Perfmon MMC'de ATLServer CPerfMon sınıfıyla özel günlük sayaçları oluşturulduğunda, günlük dosyasını görüntülerken sayaçlar görünmeyebilir, ancak gerçek zamanlı görünümde doğru görünürler. CPerfMon özel performans sayaçları Windows XP Home Edition, Windows XP Professional, Windows Server 2003 (veya daha büyük) işletim sistemlerinde "Performans Günlükleri ve Uyarıları" hizmeti (smlogsvc.exe) altında çalıştırmak için gerekli izinlere sahip değildir. Bu hizmet "NT AUTHORITY\NetworkService" hesabı altında çalışır.
 
-##  <a name="null"></a>  Sids::null
+## <a name="sidsnull"></a><a name="null"></a>Sids::Null
 
 SECURITY_NULL_RID SID döndürür.
 
@@ -232,7 +232,7 @@ SECURITY_NULL_RID SID döndürür.
 CSid Null() throw(...);
 ```
 
-##  <a name="prew2kaccess"></a>  Sids::PreW2KAccess
+## <a name="sidsprew2kaccess"></a><a name="prew2kaccess"></a>Sids::PreW2KAccess
 
 DOMAIN_ALIAS_RID_PREW2KCOMPACCESS SID döndürür.
 
@@ -240,7 +240,7 @@ DOMAIN_ALIAS_RID_PREW2KCOMPACCESS SID döndürür.
 CSid PreW2KAccess() throw(...);
 ```
 
-##  <a name="powerusers"></a>  Sids::PowerUsers
+## <a name="sidspowerusers"></a><a name="powerusers"></a>Sids::PowerKullanıcılar
 
 DOMAIN_ALIAS_RID_POWER_USERS SID döndürür.
 
@@ -248,7 +248,7 @@ DOMAIN_ALIAS_RID_POWER_USERS SID döndürür.
 CSid PowerUsers() throw(...);
 ```
 
-##  <a name="printops"></a>  Sids::PrintOps
+## <a name="sidsprintops"></a><a name="printops"></a>Sids::PrintOps
 
 DOMAIN_ALIAS_RID_PRINT_OPS SID döndürür.
 
@@ -256,7 +256,7 @@ DOMAIN_ALIAS_RID_PRINT_OPS SID döndürür.
 CSid PrintOps() throw(...);
 ```
 
-##  <a name="proxy"></a>  Sids::proxy
+## <a name="sidsproxy"></a><a name="proxy"></a>Sids::Proxy
 
 SECURITY_PROXY_RID SID döndürür.
 
@@ -264,7 +264,7 @@ SECURITY_PROXY_RID SID döndürür.
 CSid Proxy() throw(...);
 ```
 
-##  <a name="rasservers"></a>  Sids::RasServers
+## <a name="sidsrasservers"></a><a name="rasservers"></a>Sids::RasServers
 
 DOMAIN_ALIAS_RID_RAS_SERVERS SID döndürür.
 
@@ -272,7 +272,7 @@ DOMAIN_ALIAS_RID_RAS_SERVERS SID döndürür.
 CSid RasServers() throw(...);
 ```
 
-##  <a name="replicator"></a>  Sids::Replicator
+## <a name="sidsreplicator"></a><a name="replicator"></a>Sids::Çoğaltıcı
 
 DOMAIN_ALIAS_RID_REPLICATOR SID döndürür.
 
@@ -280,7 +280,7 @@ DOMAIN_ALIAS_RID_REPLICATOR SID döndürür.
 CSid Replicator() throw(...);
 ```
 
-##  <a name="restrictedcode"></a>  Sids::RestrictedCode
+## <a name="sidsrestrictedcode"></a><a name="restrictedcode"></a>Sids::RestrictedCode
 
 SECURITY_RESTRICTED_CODE_RID SID döndürür.
 
@@ -288,7 +288,7 @@ SECURITY_RESTRICTED_CODE_RID SID döndürür.
 CSid RestrictedCode() throw(...);
 ```
 
-##  <a name="self"></a>  Sids::Self
+## <a name="sidsself"></a><a name="self"></a>Sids::Benlik
 
 SECURITY_PRINCIPAL_SELF_RID SID döndürür.
 
@@ -296,7 +296,7 @@ SECURITY_PRINCIPAL_SELF_RID SID döndürür.
 CSid Self() throw(...);
 ```
 
-##  <a name="serverlogon"></a>  Sids::ServerLogon
+## <a name="sidsserverlogon"></a><a name="serverlogon"></a>Sids::ServerLogon
 
 SECURITY_SERVER_LOGON_RID SID döndürür.
 
@@ -304,7 +304,7 @@ SECURITY_SERVER_LOGON_RID SID döndürür.
 CSid ServerLogon() throw(...);
 ```
 
-##  <a name="service"></a>  Sids::Service
+## <a name="sidsservice"></a><a name="service"></a>Sids::Servis
 
 SECURITY_SERVICE_RID SID döndürür.
 
@@ -312,7 +312,7 @@ SECURITY_SERVICE_RID SID döndürür.
 CSid Service() throw(...);
 ```
 
-##  <a name="system"></a>  Sids::System
+## <a name="sidssystem"></a><a name="system"></a>Sids::Sistem
 
 SECURITY_LOCAL_SYSTEM_RID SID döndürür.
 
@@ -320,7 +320,7 @@ SECURITY_LOCAL_SYSTEM_RID SID döndürür.
 CSid System() throw(...);
 ```
 
-##  <a name="systemops"></a>  Sids::SystemOps
+## <a name="sidssystemops"></a><a name="systemops"></a>Sids::SystemOps
 
 DOMAIN_ALIAS_RID_SYSTEM_OPS SID döndürür.
 
@@ -328,7 +328,7 @@ DOMAIN_ALIAS_RID_SYSTEM_OPS SID döndürür.
 CSid SystemOps() throw(...);
 ```
 
-##  <a name="terminalserver"></a>  Sids::TerminalServer
+## <a name="sidsterminalserver"></a><a name="terminalserver"></a>Sids::TerminalServer
 
 SECURITY_TERMINAL_SERVER_RID SID döndürür.
 
@@ -336,7 +336,7 @@ SECURITY_TERMINAL_SERVER_RID SID döndürür.
 CSid TerminalServer() throw(...);
 ```
 
-##  <a name="users"></a>  Sids::Users
+## <a name="sidsusers"></a><a name="users"></a>Sids::Kullanıcılar
 
 DOMAIN_ALIAS_RID_USERS SID döndürür.
 
@@ -344,7 +344,7 @@ DOMAIN_ALIAS_RID_USERS SID döndürür.
 CSid Users() throw(...);
 ```
 
-##  <a name="world"></a>  Sids::World
+## <a name="sidsworld"></a><a name="world"></a>Sids::Dünya
 
 SECURITY_WORLD_RID SID döndürür.
 

@@ -1,9 +1,11 @@
 ---
 title: _getch, _getwch
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _getch
 - _getwch
+- _o__getch
+- _o__getwch
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -32,19 +35,19 @@ helpviewer_keywords:
 - _getch function
 - getwch function
 ms.assetid: cc116be7-cff2-4274-970f-5e7b18ccc05c
-ms.openlocfilehash: 122892945e8542afa7f9f944f984387db7c5ec8a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 3fc90747d336e7b101739c41980332ad0b6b763a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955474"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81344739"
 ---
 # <a name="_getch-_getwch"></a>_getch, _getwch
 
-Konsolundan yankı olmadan bir karakter alır.
+Yankı olmadan konsoldan bir karakter alır.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,13 +58,15 @@ wint_t _getwch( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Okunan karakteri döndürür. Hata döndürme yok.
+Okunan karakteri döndürür. Hata iadesi yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Getch** ve **_getwch** işlevleri, karakteri yankısız konsoldan tek bir karakter okur. Bu işlevlerden hiçbiri CTRL + C okumak için kullanılamaz. Bir işlev anahtarını veya bir ok tuşunu okurken her bir işlevin iki kez çağrılması gerekir; ilk çağrı 0 veya 0xE0 döndürür ve ikinci çağrı gerçek anahtar kodunu döndürür.
+**_getch** ve **_getwch** işlevleri, karakteri yankılamadan konsoldan tek bir karakter okur. Bu işlevlerin hiçbiri CTRL+C okumak için kullanılamaz. Bir işlev tuşu veya ok tuşu okurken, her işlev iki kez çağrılmalıdır; ilk arama 0 veya 0xE0 döndürür ve ikinci arama gerçek anahtar kodunu döndürür.
 
-Bu işlevler çağıran iş parçacığını kilitler ve bu nedenle iş parçacığı güvenlidir. Kilitleme dışı sürümler için bkz. [_getch_nolock, _getwch_nolock](getch-nolock-getwch-nolock.md).
+Bu işlevler arama iş parçacığı kilitler ve bu nedenle iş parçacığı güvenlidir. Kilitlenmeyen sürümler için [bkz. _getch_nolock, _getwch_nolock.](getch-nolock-getwch-nolock.md)
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -73,10 +78,10 @@ Bu işlevler çağıran iş parçacığını kilitler ve bu nedenle iş parçac�
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getch**|\<conio. h >|
-|**_getwch**|\<conio. h > veya \<wchar. h >|
+|**_getch**|\<conio.h>|
+|**_getwch**|\<conio.h> \<veya wchar.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -116,7 +121,7 @@ Type 'Y' when finished typing keys: Y
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve bağlantı noktası g/ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve Bağlantı Noktası G/Ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_getche, _getwche](getche-getwche.md)<br/>
 [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __raise keyword [C++]
 ms.assetid: 6f1ae418-5f0f-48b6-9f6e-8ea7e66b239a
-ms.openlocfilehash: 9238e8e3e2fcd2c2f8b6431cfb0a79d452c5adf3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: eb3ab24378071663b2a6a1abab700b81c3172419
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179178"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81317227"
 ---
 # <a name="__raise"></a>__raise
 
@@ -26,12 +26,12 @@ __raise method-declarator;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yönetilen koddan bir olay yalnızca tanımlandığı sınıfın içinden oluşturulabilir. Daha fazla bilgi için bkz. [olay](../extensions/event-cpp-component-extensions.md) .
+Yönetilen koddan bir olay yalnızca tanımlandığı sınıfın içinden oluşturulabilir. Daha fazla bilgi için [etkinliğe](../extensions/event-cpp-component-extensions.md) bakın.
 
-**__Raise** anahtar sözcüğü, olay olmayan bir hata çağırdıysanız bir hatanın oluşturulmasına neden olur.
+**__raise** anahtar kelimesi, olay olmayan bir sözcüğü çağırırsanız bir hatanın yayımedilmesine neden olur.
 
 > [!NOTE]
->  Şablonlu bir alan veya yapı, olay içeremez.
+> Şablonlu bir alan veya yapı, olay içeremez.
 
 ## <a name="example"></a>Örnek
 
@@ -61,6 +61,6 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[Olay İşleme](../cpp/event-handling.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[Olay Yönetimi](../cpp/event-handling.md)<br/>
 [Çalışma Zamanı Platformları için Bileşen Uzantıları](../extensions/component-extensions-for-runtime-platforms.md)

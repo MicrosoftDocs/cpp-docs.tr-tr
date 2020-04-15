@@ -1,5 +1,5 @@
 ---
-title: CHtmlEditCtrlBase sınıfı
+title: CHtmlEditCtrlBase Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CHtmlEditCtrlBase
@@ -220,16 +220,16 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-ms.openlocfilehash: a39d61fc6b62b3739d45d4765f839b6d73a5c9d3
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 95de66a66d9c1a6f3abf992c5a9cd64ee1fe91ef
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69506091"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81352208"
 ---
-# <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase sınıfı
+# <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase Sınıfı
 
-Bir HTML Editing bileşenini temsil eder.
+BIR HTML düzenleme bileşenini temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -241,126 +241,126 @@ template <class T> class CHtmlEditCtrlBase
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CHtmlEditCtrlBase:: AddToGlyphTable](#addtoglyphtable)|Belirli Etiketler için tasarım modunda görüntülenecek resimleri belirten glif tablosuna bir giriş ekler.|
-|[CHtmlEditCtrlBase:: Bold](#bold)|Seçilen metnin kalın durumuna geçer.|
-|[CHtmlEditCtrlBase:: Button](#button)|Geçerli seçimdeki bir düğme denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase:: CheckBox](#checkbox)|Geçerli seçimdeki onay kutusu denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase:: ClearSelection](#clearselection)|Geçerli seçimi temizler.|
-|[CHtmlEditCtrlBase:: Copy](#copy)|Geçerli seçimi panoya kopyalar.|
-|[CHtmlEditCtrlBase:: kes](#cut)|Geçerli seçimi panoya kopyalar ve sonra siler.|
-|[CHtmlEditCtrlBase::D Sil](#delete)|Geçerli seçimi siler.|
-|[CHtmlEditCtrlBase::D ropDownBox](#dropdownbox)|Geçerli seçimde açılan seçim denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase:: EmptyGlyphTable](#emptyglyphtable)|, Tasarım modunda Etiketler için görünen tüm görüntüleri gizleyen glif tablosundan tüm girişleri kaldırır.|
-|[CHtmlEditCtrlBase:: ExecCommand](#execcommand)|Bir komutu yürütür.|
-|[CHtmlEditCtrlBase:: Font](#font)|Kullanıcının geçerli seçimin metin rengini, yazı tipini ve yazı tipi boyutunu değiştirmesini sağlamak için bir yazı tipi iletişim kutusu açar.|
-|[CHtmlEditCtrlBase:: GetAbsolutePosition](#getabsoluteposition)|Bir öğenin Position özelliğinin "Absolute" olup olmadığını döndürür.|
-|[CHtmlEditCtrlBase:: GetBackColor](#getbackcolor)|Geçerli seçimin arka plan rengini alır.|
-|[CHtmlEditCtrlBase:: GetBlockFormat](#getblockformat)|Geçerli blok biçimi etiketini alır.|
-|[CHtmlEditCtrlBase:: GetBlockFormatNames](#getblockformatnames)|Kullanılabilir blok biçim etiketlerine karşılık gelen dizeleri alır.|
-|[CHtmlEditCtrlBase:: GetBookMark](#getbookmark)|Yer işareti bağlayıcının adını alır.|
-|[CHtmlEditCtrlBase:: GetDocument](#getdocument)|Belge nesnesini alır.|
-|[CHtmlEditCtrlBase:: Getbelgethtml](#getdocumenthtml)|Geçerli belgenin HTML 'ini alır.|
-|[CHtmlEditCtrlBase:: GetDocumentTitle](#getdocumenttitle)|Belgenin başlığını alır.|
-|[CHtmlEditCtrlBase:: GetEvent](#getevent)|En son olayla ilgili bilgileri içeren olay nesnesine bir arabirim işaretçisi alır.|
-|[CHtmlEditCtrlBase:: GetEventSrcElement](#geteventsrcelement)|Olayı tetikleyen nesneyi alır.|
-|[CHtmlEditCtrlBase:: GetFontFace](#getfontface)|Geçerli seçimin yazı tipi adını alır.|
-|[CHtmlEditCtrlBase:: GetFontSize](#getfontsize)|Geçerli seçimin yazı tipi boyutunu alır.|
-|[CHtmlEditCtrlBase:: GetForeColor](#getforecolor)|Geçerli seçimin ön plan (metin) rengini alır.|
+|[CHtmlEditCtrlBase::AddToGlyphTable](#addtoglyphtable)|Glyph tablosuna, tasarım modunda belirli etiketler için görüntülenecek görüntüleri belirten bir giriş ekler.|
+|[CHtmlEditCtrlBase::Kalın](#bold)|Seçili metnin kalın durumunu geçiştir.|
+|[CHtmlEditCtrlBase::Düğme](#button)|Geçerli seçimde bir düğme denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::CheckBox](#checkbox)|Geçerli seçimde bir onay kutusu denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::ClearSelection](#clearselection)|Geçerli seçimi temizler.|
+|[CHtmlEditCtrlBase::Kopyala](#copy)|Geçerli seçimi panoya kopyalar.|
+|[CHtmlEditCtrlBase::Kes](#cut)|Geçerli seçimi panoya kopyalar ve sonra siler.|
+|[CHtmlEditCtrlBase::Delete](#delete)|Geçerli seçimi siler.|
+|[CHtmlEditCtrlBase::DropDownBox](#dropdownbox)|Geçerli seçimde açılır seçim denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::EmptyGlyphTable](#emptyglyphtable)|Tasarım modunda etiketler için görüntülenen tüm görüntüleri gizleyen glyph tablosundan tüm girişleri kaldırır.|
+|[CHtmlEditCtrlBase::ExecCommand](#execcommand)|Bir komut uyguluyor.|
+|[CHtmlEditCtrlBase::Yazı Tipi](#font)|Kullanıcının geçerli seçimin metin rengini, yazı tipini ve yazı tipi boyutunu değiştirmesini sağlamak için bir yazı tipi iletişim kutusu açar.|
+|[CHtmlEditCtrlBase::GetAbsolutePosition](#getabsoluteposition)|Bir öğenin konum özelliğinin "mutlak" olup olmadığını verir.|
+|[CHtmlEditCtrlBase::GetBackColor](#getbackcolor)|Geçerli seçimin arka plan rengini alır.|
+|[CHtmlEditCtrlBase::GetBlockFormat](#getblockformat)|Geçerli blok biçimi etiketini alır.|
+|[CHtmlEditCtrlBase::GetBlockFormatNames](#getblockformatnames)|Kullanılabilir blok biçimi etiketlerine karşılık gelen dizeleri alır.|
+|[CHtmlEditCtrlBase::GetBookMark](#getbookmark)|Yer imi çapasının adını alır.|
+|[CHtmlEditCtrlBase::GetDocument](#getdocument)|Belge nesnesini alır.|
+|[CHtmlEditCtrlBase::GetDocumentHTML](#getdocumenthtml)|Geçerli belgenin HTML'sini alır.|
+|[CHtmlEditCtrlBase::GetDocumentTitle](#getdocumenttitle)|Belgenin başlığını alır.|
+|[CHtmlEditCtrlBase::GetEvent](#getevent)|En son olayla ilgili bilgiler içeren olay nesnesi için bir arabirim işaretçisi alır.|
+|[CHtmlEditCtrlBase::GetEventSrcElement](#geteventsrcelement)|Olayı ateşleyen nesneyi alır.|
+|[CHtmlEditCtrlBase::GetFontFace](#getfontface)|Geçerli seçimiçin yazı tipi adını alır.|
+|[CHtmlEditCtrlBase::GetFontSize](#getfontsize)|Geçerli seçim için yazı tipi boyutunu alır.|
+|[CHtmlEditCtrlBase::GetForeColor](#getforecolor)|Geçerli seçimin ön plan (metin) rengini alır.|
 |[CHtmlEditCtrlBase::GetFrameZone](#getframezone)|Web tarayıcısında geçerli sayfanın güvenlik bölgesini döndürür.|
-|[CHtmlEditCtrlBase:: Getıdirty](#getisdirty)|HTML belgesinin değişip değişmediğini gösterir.|
-|[CHtmlEditCtrlBase:: GetShowAlignedSiteTags](#getshowalignedsitetags)|`styleFloat` Özelliği olan tüm öğeler için bir karakter görüntülenip görüntülenmediğini döndürür.|
-|[CHtmlEditCtrlBase:: GetShowAllTags](#getshowalltags)|WebBrowser 'ın bir belgedeki tüm etiketlerin konumunu göstermek için glifleri gösterip göstermediğini döndürür.|
-|[CHtmlEditCtrlBase:: GetShowAreaTags](#getshowareatags)|WebBrowser 'ın alan etiketleri için bir karakter görüntüleyip görüntülemediğini alır.|
-|[CHtmlEditCtrlBase:: GetShowBRTags](#getshowbrtags)|WebBrowser 'ın br etiketleri için bir karakter görüntüleyip görüntülemediğini alır.|
-|[CHtmlEditCtrlBase:: GetShowCommentTags](#getshowcommenttags)|WebBrowser 'ın açıklama etiketleri için bir karakter görüntüleyip görüntülemediğini alır.|
-|[CHtmlEditCtrlBase:: GetShowMiscTags](#getshowmisctags)|WebBrowser 'ın Microsoft Internet Explorer 4,0 ' de gösterilen tüm etiketleri görüntüleyip görüntülemediğini alır.|
-|[CHtmlEditCtrlBase:: GetShowScriptTags](#getshowscripttags)|WebBrowser 'ın tüm betik etiketleri için bir karakter görüntüleyip görüntülemediğini alır.|
-|[CHtmlEditCtrlBase:: GetShowStyleTags](#getshowstyletags)|WebBrowser 'ın tüm stil etiketleri için bir karakter görüntüleyip görüntülemediğini alır.|
-|[CHtmlEditCtrlBase:: GetShowUnknownTags](#getshowunknowntags)|WebBrowser 'ın bilinmeyen tüm etiketler için bir karakter görüntüleyip görüntülemediğini alır.|
-|[CHtmlEditCtrlBase:: HorizontalLine](#horizontalline)|Geçerli seçimdeki yatay bir çizginin üzerine yazar.|
-|[CHtmlEditCtrlBase:: HyperLink](#hyperlink)|Geçerli seçime bir köprü ekler.|
-|[CHtmlEditCtrlBase::IE50Paste](#ie50paste)|Microsoft Internet Explorer 5 ile uyumlu bir yapıştırma işlemi gerçekleştirir.|
-|[CHtmlEditCtrlBase:: IFRAME](#iframe)|Geçerli seçimdeki bir satır içi çerçevenin üzerine yazar.|
-|[CHtmlEditCtrlBase:: Image](#image)|Geçerli seçimdeki bir görüntünün üzerine yazar.|
-|[CHtmlEditCtrlBase:: Girintile](#indent)|Seçilen metnin girintisini bir girintileme artışına yükseltir.|
-|[CHtmlEditCtrlBase:: InsFieldSet](#insfieldset)|Geçerli seçimdeki bir kutunun üzerine yazar.|
-|[CHtmlEditCtrlBase:: ınsınputbutton](#insinputbutton)|Geçerli seçimdeki bir düğme denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase:: ınsınputhidden](#insinputhidden)|Geçerli seçime gizli bir denetim ekler.|
-|[CHtmlEditCtrlBase:: ınsınputımage](#insinputimage)|Geçerli seçimdeki bir görüntü denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase:: ınsınputpassword](#insinputpassword)|Geçerli seçimdeki bir parola denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase:: ınsınputreset](#insinputreset)|Geçerli seçimdeki bir sıfırlama denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase:: ınsınputgönder](#insinputsubmit)|Geçerli seçimde bir gönderme denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase:: ınsınputupload](#insinputupload)|Geçerli seçimde bir dosya karşıya yükleme denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase::Is1DElement](#is1delement)|Bir öğenin statik olarak konumlandırılıp yerleştirilmeyeceğini belirler.|
-|[CHtmlEditCtrlBase::Is2DElement](#is2delement)|Bir öğenin mutlak olarak konumlandırılıp yerleştirilmeyeceğini belirler.|
-|[CHtmlEditCtrlBase:: Italik](#italic)|Geçerli seçimi italik ve italik olmayan bir şekilde değiştirir.|
-|[CHtmlEditCtrlBase:: Adatifycenter](#justifycenter)|Geçerli seçimin bulunduğu biçim bloğunu ortalar.|
-|[CHtmlEditCtrlBase:: Adatifyleft](#justifyleft)|Geçerli seçimin bulunduğu biçim bloğunu sola yaslar.|
-|[CHtmlEditCtrlBase:: Adatifyright](#justifyright)|Geçerli seçimin bulunduğu biçim bloğunu sağa yaslar.|
-|[CHtmlEditCtrlBase:: ListBox](#listbox)|Geçerli seçimde bir liste kutusu seçim denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase:: kayan yazı](#marquee)|Geçerli seçimde boş bir seçim çerçevesinin üzerine yazar.|
-|[CHtmlEditCtrlBase:: NewDocument](#newdocument)|Yeni bir belge oluşturur.|
-|[CHtmlEditCtrlBase:: OrderList](#orderlist)|Sıralı liste ve normal biçim bloğu arasındaki geçerli seçimi değiştirir.|
-|[CHtmlEditCtrlBase:: Girintiyi Azalt](#outdent)|, Geçerli seçimin bulunduğu biçim bloğunun girintilenmesini bir artış oranında düşürür.|
-|[CHtmlEditCtrlBase::P aragraf](#paragraph)|Geçerli seçimde bir satır sonu üzerine yazar.|
-|[CHtmlEditCtrlBase::P aste](#paste)|Geçerli seçimdeki Pano içeriğinin üzerine yazar.|
-|[CHtmlEditCtrlBase::P rintDocument](#printdocument)|Geçerli belgeyi yazdırır.|
-|[CHtmlEditCtrlBase::P rintPreview](#printpreview)|Varsayılan baskı önizleme şablonunu veya özel bir şablonu kullanarak geçerli belge için baskı önizleme penceresini açar.|
-|[CHtmlEditCtrlBase:: QueryStatus](#querystatus)|Komutların durumunu sorgulamak için bu yöntemi çağırın.|
-|[CHtmlEditCtrlBase:: RadioButton](#radiobutton)|Geçerli seçimdeki bir radyo denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase:: RefreshDocument](#refreshdocument)|Geçerli belgeyi yeniler.|
-|[CHtmlEditCtrlBase:: RemoveFormat](#removeformat)|Biçimlendirme etiketlerini Geçerli seçimden kaldırır.|
-|[CHtmlEditCtrlBase:: SaveAs](#saveas)|Geçerli Web sayfasını bir dosyaya kaydeder.|
-|[CHtmlEditCtrlBase:: SelectAll](#selectall)|Tüm belgeyi seçer.|
-|[CHtmlEditCtrlBase::Set2DPosition](#set2dposition)|Sürükleyerek kesinlikle konumlandırılmış öğelerin taşınmasını sağlar.|
-|[CHtmlEditCtrlBase::SetAbsolutePosition](#setabsoluteposition)|Bir öğenin Position özelliğini "Absolute" veya "static" olarak ayarlar.|
-|[CHtmlEditCtrlBase:: SetAtomicSelection](#setatomicselection)|Atomik seçim modunu ayarlayın.|
-|[CHtmlEditCtrlBase:: SetAutoURLDetectMode](#setautourldetectmode)|Otomatik URL algılamayı açar ve kapatır.|
-|[CHtmlEditCtrlBase:: SetBackColor](#setbackcolor)|Geçerli seçimin arka plan rengini ayarlar.|
-|[CHtmlEditCtrlBase:: SetBlockFormat](#setblockformat)|Geçerli blok biçimi etiketini ayarlar.|
-|[CHtmlEditCtrlBase:: SetBookMark](#setbookmark)|Geçerli seçim veya ekleme noktası için bir yer işareti Bağlayıcısı oluşturur.|
-|[CHtmlEditCtrlBase::SetCSSEditingLevel](#setcsseditinglevel)|Düzenleyicinin destekleyeceği CSS düzeyini (CSS1 veya CSS2) seçer (varsa).|
-|[CHtmlEditCtrlBase:: SetDefaultComposeSettings](#setdefaultcomposesettings)|Varsayılan oluşturma ayarlarını ayarlamak için bu yöntemi çağırın.|
-|[CHtmlEditCtrlBase:: SetDesignMode](#setdesignmode)|Tasarım modunu ayarla.|
-|[CHtmlEditCtrlBase:: Setdisableeditfocusuı](#setdisableeditfocusui)|Taranmış kenarlığı devre dışı bırakır ve düzenleme odağı olan bir öğe etrafında işleyicileri işler.|
-|[CHtmlEditCtrlBase:: Setbelgetrtml](#setdocumenthtml)|Geçerli belgenin HTML 'ini ayarlar.|
-|[CHtmlEditCtrlBase:: SetFontFace](#setfontface)|Geçerli seçimin yazı tipini ayarlar.|
-|[CHtmlEditCtrlBase:: SetFontSize](#setfontsize)|Geçerli seçimin yazı tipi boyutunu ayarlar.|
-|[CHtmlEditCtrlBase:: SetForeColor](#setforecolor)|Geçerli seçimin ön plan (metin) rengini ayarlar.|
-|[CHtmlEditCtrlBase::SetIE5PasteMode](#setie5pastemode)|Yapıştırma işlemini Microsoft Internet Explorer 5 ile uyumlu olacak şekilde ayarlar.|
-|[CHtmlEditCtrlBase:: SetLiveResize](#setliveresize)|Bir yeniden boyutlandırma veya taşıma işlemi sırasında bir öğenin görünümünü sürekli olarak güncelleştirmesine neden olur.|
-|[CHtmlEditCtrlBase:: SetMultiSelect](#setmultiselect)|Çoklu seçime izin vermez.|
-|[CHtmlEditCtrlBase::SetOverrideCursor](#setoverridecursor)|WebBrowser, fare işaretçisini hiçbir şekilde değiştirmemek için komutlar.|
-|[CHtmlEditCtrlBase:: SetOverwriteMode](#setoverwritemode)|Metin girişi modunu ekleme ve üzerine yazma arasında değiştirir.|
-|[CHtmlEditCtrlBase:: SETbir Tvisındesign](#setrespectvisindesign)|Tasarım modundaki görünmez öğeleri gizler.|
-|[CHtmlEditCtrlBase:: SetShowAlignedSiteTags](#setshowalignedsitetags)|`styleFloat` Özelliği olan tüm öğeler için bir karakter görüntüler.|
-|[CHtmlEditCtrlBase:: SetShowAllTags](#setshowalltags)|Bir belgedeki tüm etiketlerin konumunu göstermek için glifleri görüntüler.|
-|[CHtmlEditCtrlBase:: SetShowAreaTags](#setshowareatags)|Tüm alan etiketleri için bir karakter görüntüler.|
-|[CHtmlEditCtrlBase:: SetShowBRTags](#setshowbrtags)|Tüm br etiketleri için bir karakter görüntüler.|
-|[CHtmlEditCtrlBase:: SetShowCommentTags](#setshowcommenttags)|Tüm açıklama etiketleri için bir karakter görüntüler.|
-|[CHtmlEditCtrlBase:: SetShowMiscTags](#setshowmisctags)|Microsoft Internet Explorer 4,0 ' de gösterilen tüm etiketleri görüntüler.|
-|[CHtmlEditCtrlBase:: SetShowScriptTags](#setshowscripttags)|Tüm komut dosyası etiketleri için bir karakter görüntüler.|
-|[CHtmlEditCtrlBase:: SetShowStyleTags](#setshowstyletags)|Tüm stil etiketleri için bir karakter görüntüler.|
-|[CHtmlEditCtrlBase:: SetShowUnknownTags](#setshowunknowntags)|Tüm bilinmeyen Etiketler için bir karakter görüntüler.|
-|[CHtmlEditCtrlBase:: TextArea](#textarea)|Geçerli seçimde bir çok satırlı metin girişi denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase:: TextBox](#textbox)|Geçerli seçimdeki bir metin denetiminin üzerine yazar.|
-|[CHtmlEditCtrlBase:: UnBookmark](#unbookmark)|Geçerli seçimden tüm yer imlerini kaldırır.|
-|[CHtmlEditCtrlBase:: altını çiz](#underline)|Geçerli seçimi altı çizili ve altı çizili olarak değiştirir.|
-|[CHtmlEditCtrlBase:: bağlantıyı kaldır](#unlink)|Geçerli seçimden tüm köprüleri kaldırır.|
-|[CHtmlEditCtrlBase:: UnorderList](#unorderlist)|Sıralı liste ve normal biçim bloğu arasındaki geçerli seçimi değiştirir.|
+|[CHtmlEditCtrlBase::GetIsDirty](#getisdirty)|HTML belgesinin değiştirilip değiştirilmediğini gösterir.|
+|[CHtmlEditCtrlBase::GetShowAlignedSiteEtiketler](#getshowalignedsitetags)|`styleFloat` Bir özelliği olan tüm öğeler için bir gliflerin görüntülenip görüntülenmediğini verir.|
+|[CHtmlEditCtrlBase::GetShowAllEtiketler](#getshowalltags)|WebBrowser'ın bir belgedeki tüm etiketlerin konumunu göstermek için glifler gösterip göstermediğini döndürür.|
+|[CHtmlEditCtrlBase::GetShowAreaEtiketler](#getshowareatags)|WebBrowser'ın alan etiketleri için bir glifler gösterip görüntülemediğini alır.|
+|[CHtmlEditCtrlBase::GetShowBREtiketler](#getshowbrtags)|WebBrowser'ın br etiketleri için bir glifler gösterip görüntülemediğini alır.|
+|[CHtmlEditCtrlBase::GetShowCommentEtiketler](#getshowcommenttags)|WebBrowser'ın yorum etiketleri için bir glifler gösterip görüntülemediğini alır.|
+|[CHtmlEditCtrlBase::GetShowMiscEtiketler](#getshowmisctags)|WebBrowser'ın Microsoft Internet Explorer 4.0'da gösterilen tüm etiketleri gösterip göstermediğini alır.|
+|[CHtmlEditCtrlBase::GetShowScriptEtiketler](#getshowscripttags)|WebBrowser'ın tüm komut dosyası etiketleri için bir glifler gösterip görüntülemediğini alır.|
+|[CHtmlEditCtrlBase::GetShowStyleEtiketler](#getshowstyletags)|WebBrowser'ın tüm stil etiketleri için bir glifler gösterip görüntülemediğini alır.|
+|[CHtmlEditCtrlBase::GetShowUnknownTags](#getshowunknowntags)|WebBrowser'ın bilinmeyen tüm etiketler için bir glifler gösterip görüntülemediğini alır.|
+|[CHtmlEditCtrlBase::HorizontalLine](#horizontalline)|Geçerli seçimde yatay bir çizginin üzerine yazar.|
+|[CHtmlEditCtrlBase::HyperLink](#hyperlink)|Geçerli seçime bir köprü ekler.|
+|[CHtmlEditCtrlBase::IE50Paste](#ie50paste)|Microsoft Internet Explorer 5 ile uyumlu bir yapıştırme işlemi gerçekleştirir.|
+|[CHtmlEditCtrlBase::Iframe](#iframe)|Geçerli seçimin satır satırlı çerçevesinin üzerine yazar.|
+|[CHtmlEditCtrlBase::Resim](#image)|Geçerli seçimde bir resmin üzerine yazar.|
+|[CHtmlEditCtrlBase::Girintin](#indent)|Seçili metnin girintisini bir girinti artışla artırır.|
+|[CHtmlEditCtrlBase::InsFieldSet](#insfieldset)|Geçerli seçimde bir kutunun üzerine yazar.|
+|[CHtmlEditCtrlBase::InsInputButton](#insinputbutton)|Geçerli seçimde bir düğme denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::InsInputHidden](#insinputhidden)|Geçerli seçime gizli bir denetim ekler.|
+|[CHtmlEditCtrlBase::InsInputImage](#insinputimage)|Geçerli seçimde bir görüntü denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::InsInputPassword](#insinputpassword)|Geçerli seçimde parola denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::InsInputReset](#insinputreset)|Geçerli seçimde sıfırlama denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::InsInputGönder](#insinputsubmit)|Geçerli seçim üzerinde bir gönder denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::InsInputUpload](#insinputupload)|Geçerli seçimde dosya yükleme denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::Is1DElement](#is1delement)|Bir öğenin statik olarak konumlandırılıp konumlandırılmamalarını belirler.|
+|[CHtmlEditCtrlBase::Is2DElement](#is2delement)|Bir öğenin kesinlikle konumlandırılmış olup olmadığını belirler.|
+|[CHtmlEditCtrlBase::Italik](#italic)|Geçerli seçimi italik ve nonitalik arasında geçiş.|
+|[CHtmlEditCtrlBase::JustifyCenter](#justifycenter)|Geçerli seçimin bulunduğu biçim bloğunu ortalar.|
+|[CHtmlEditCtrlBase::JustifyLeft](#justifyleft)|Sol, geçerli seçimin bulunduğu biçim bloğunu haklı çıkarır.|
+|[CHtmlEditCtrlBase::JustifyRight](#justifyright)|Geçerli seçimin bulunduğu biçim bloğunu doğru doğrular.|
+|[CHtmlEditCtrlBase::ListBox](#listbox)|Geçerli seçimde liste kutusu seçim denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::Seçim Çerçevesi](#marquee)|Geçerli seçimde boş bir seçim çerçevesinin üzerine yazar.|
+|[CHtmlEditCtrlBase::NewDocument](#newdocument)|Yeni bir belge oluşturur.|
+|[CHtmlEditCtrlBase::Sipariş Listesi](#orderlist)|Geçerli seçimi sıralı liste ile normal biçim bloğu arasında geçiş yapın.|
+|[CHtmlEditCtrlBase::Outdent](#outdent)|Geçerli seçimin bulunduğu biçim bloğunun girintisini bir artışla azaltır.|
+|[CHtmlEditCtrlBase::Paragraph](#paragraph)|Geçerli seçimde satır sonu üzerine yazar.|
+|[CHtmlEditCtrlBase::Paste](#paste)|Geçerli seçimde pano içeriğini üzerine yazar.|
+|[CHtmlEditCtrlBase::PrintBelge](#printdocument)|Geçerli belgeyi yazdırır.|
+|[CHtmlEditCtrlBase::PrintPreview](#printpreview)|Varsayılan yazdırma önizleme şablonu veya özel bir şablon kullanarak geçerli belgeiçin Yazdırma Önizleme penceresini açar.|
+|[CHtmlEditCtrlBase::Sorgu Durumu](#querystatus)|Komutların durumunu sorgulamak için bu yöntemi arayın.|
+|[CHtmlEditCtrlBase::RadioButton](#radiobutton)|Geçerli seçimde bir radyo denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::RefreshDocument](#refreshdocument)|Geçerli belgeyi yeniler.|
+|[CHtmlEditCtrlBase::RemoveFormat](#removeformat)|Biçimlendirme etiketlerini geçerli seçimden kaldırır.|
+|[CHtmlEditCtrlBase::SaveAs](#saveas)|Geçerli Web sayfasını bir dosyaya kaydeder.|
+|[CHtmlEditCtrlBase::SelectAll](#selectall)|Belgenin tamamını seçer.|
+|[CHtmlEditCtrlBase::Set2DPosition](#set2dposition)|Kesinlikle konumlandırılmış öğelerin sürükleyerek hareket etmesini sağlar.|
+|[CHtmlEditCtrlBase::SetAbsolutePosition](#setabsoluteposition)|Bir öğenin konum özelliğini "mutlak" veya "statik" olarak ayarlar.|
+|[CHtmlEditCtrlBase::SetAtomicSelection](#setatomicselection)|Atomik seçim modunu ayarlayın.|
+|[CHtmlEditCtrlBase::SetAutoURLDetectMode](#setautourldetectmode)|Otomatik URL algılamayı açar ve kapatır.|
+|[CHtmlEditCtrlBase::SetBackColor](#setbackcolor)|Geçerli seçimin arka plan rengini ayarlar.|
+|[CHtmlEditCtrlBase::SetBlockFormat](#setblockformat)|Geçerli blok biçimi etiketini ayarlar.|
+|[CHtmlEditCtrlBase::SetBookMark](#setbookmark)|Geçerli seçim veya ekleme noktası için yer imi çapası oluşturur.|
+|[CHtmlEditCtrlBase::SetCSSEditingLevel](#setcsseditinglevel)|Varsa editörün hangi CSS düzeyini (CSS1 veya CSS2) destekleyeceğini seçer.|
+|[CHtmlEditCtrlBase::SetDefaultComposeAyarlar](#setdefaultcomposesettings)|Varsayılan oluşturma ayarlarını ayarlamak için bu yöntemi arayın.|
+|[CHtmlEditCtrlBase::SetDesignMode](#setdesignmode)|Tasarım modunu ayarlayın.|
+|[CHtmlEditCtrlBase::SetDisableEditFocusUI](#setdisableeditfocusui)|Yumurtadan çıkan kenarlığı devre dışı katır ve odak noktası olan bir öğenin etrafında işler.|
+|[CHtmlEditCtrlBase::SetDocumentHTML](#setdocumenthtml)|Geçerli belgenin HTML'sini ayarlar.|
+|[CHtmlEditCtrlBase::SetFontFace](#setfontface)|Geçerli seçim için yazı tipini ayarlar.|
+|[CHtmlEditCtrlBase::SetFontSize](#setfontsize)|Geçerli seçim için yazı tipi boyutunu ayarlar.|
+|[CHtmlEditCtrlBase::SetForeColor](#setforecolor)|Geçerli seçimin ön plan (metin) rengini ayarlar.|
+|[CHtmlEditCtrlBase::SetIE5PasteMode](#setie5pastemode)|Yapıştırişlemi Microsoft Internet Explorer 5 ile uyumlu olacak şekilde ayarlar.|
+|[CHtmlEditCtrlBase::SetLiveResize](#setliveresize)|WebBrowser'ın yeniden boyutlandırma veya taşıma işlemi sırasında bir öğenin görünümünü sürekli olarak güncellemesine neden olur.|
+|[CHtmlEditCtrlBase::SetMultiSelect](#setmultiselect)|Birden çok seçim sağlar.|
+|[CHtmlEditCtrlBase::SetOverrideCursor](#setoverridecursor)|WebBrowser'a fare işaretçisini asla değiştirmeme komutu.|
+|[CHtmlEditCtrlBase::SetOverwriteMode](#setoverwritemode)|Ekle ve üzerine yazma arasındaki metin giriş modunu geçişe geçer.|
+|[CHtmlEditCtrlBase::SetRespectVisInDesign](#setrespectvisindesign)|Görünmez öğeleri tasarım modunda gizler.|
+|[CHtmlEditCtrlBase::SetShowAlignedSiteTags](#setshowalignedsitetags)|Özelliğe sahip tüm öğeler için `styleFloat` bir glifler görüntüler.|
+|[CHtmlEditCtrlBase::SetShowAllEtiketler](#setshowalltags)|Belgedeki tüm etiketlerin konumunu göstermek için glifleri görüntüler.|
+|[CHtmlEditCtrlBase::SetShowAreaEtiketler](#setshowareatags)|Tüm alan etiketleri için bir glifler görüntüler.|
+|[CHtmlEditCtrlBase::SetShowBREtiketler](#setshowbrtags)|Tüm br etiketleri için bir glifler görüntüler.|
+|[CHtmlEditCtrlBase::SetShowCommentEtiketler](#setshowcommenttags)|Tüm yorum etiketleri için bir glifler görüntüler.|
+|[CHtmlEditCtrlBase::SetShowMiscEtiketler](#setshowmisctags)|Microsoft Internet Explorer 4.0'da gösterilen tüm etiketleri görüntüler.|
+|[CHtmlEditCtrlBase::SetShowScriptEtiketler](#setshowscripttags)|Tüm komut dosyası etiketleri için bir glifler görüntüler.|
+|[CHtmlEditCtrlBase::SetShowStyleEtiketler](#setshowstyletags)|Tüm stil etiketleri için bir glifler görüntüler.|
+|[CHtmlEditCtrlBase::SetShowUnknownTags](#setshowunknowntags)|Bilinmeyen tüm etiketler için bir glifler görüntüler.|
+|[CHtmlEditCtrlBase::TextArea](#textarea)|Geçerli seçimde çok satırlı metin giriş denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::TextBox](#textbox)|Geçerli seçimde metin denetiminin üzerine yazar.|
+|[CHtmlEditCtrlBase::UnBookmark](#unbookmark)|Geçerli seçimdeki yer işaretlerini kaldırır.|
+|[CHtmlEditCtrlBase::Altı çizili](#underline)|Altı çizili ve altı çizili olmayan arasında geçerli seçimi geçiş.|
+|[CHtmlEditCtrlBase::Bağlantıyı Açma](#unlink)|Geçerli seçimdeki tüm köprüleri kaldırır.|
+|[CHtmlEditCtrlBase::Sıradışı Liste](#unorderlist)|Geçerli seçimi sıralı liste ile normal biçim bloğu arasında geçiş yapın.|
 
 #### <a name="parameters"></a>Parametreler
 
-*ŞI*<br/>
-Türetilmiş sınıfın adı.
+*T*<br/>
+Türemiş sınıfın adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CHtmlEditCtrlBase`WebBrowser gibi, WebBrowser 'ın HTML düzenlemesi komutları için üye işlevleri sağlar. [](#bold) (Alternatif olarak, IDM_BOLD komutunu yürütmek için [ExecCommand](#execcommand) 'i çağırabilirsiniz.)
+`CHtmlEditCtrlBase`WebBrowser'ın [Kalın](#bold)gibi HTML düzenleme komutları için üye işlevleri sağlar. (Alternatif olarak, IDM_BOLD komutunu yürütmek için [ExecCommand'ı](#execcommand) arayabilirsiniz.)
 
-`CHtmlEditCtrlBase`kendi kendine tek yapmanız amaçlanmamaktadır. Bu, WebBrowser 'ın HTML (bkz. [CHtmlEditCtrl](../../mfc/reference/chtmleditctrl-class.md) ve [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)) işlevselliğini sunan türetilmiş sınıflar için bir temel sınıf olacak şekilde tasarlanmıştır.
+`CHtmlEditCtrlBase`kendi başına ayakta durmak için tasarlanmamıştır. WebBrowser'ın HTML düzenleme işlevini ortaya çıkaran türemiş sınıflar için bir taban sınıf olarak tasarlanmıştır (bkz. [CHtmlEditCtrl](../../mfc/reference/chtmleditctrl-class.md) ve [CHtmlEditView).](../../mfc/reference/chtmleditview-class.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -368,11 +368,11 @@ Türetilmiş sınıfın adı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxhtml. h
+**Üstbilgi:** afxhtml.h
 
-##  <a name="addtoglyphtable"></a>CHtmlEditCtrlBase:: AddToGlyphTable
+## <a name="chtmleditctrlbaseaddtoglyphtable"></a><a name="addtoglyphtable"></a>CHtmlEditCtrlBase::AddToGlyphTable
 
-Belirli Etiketler için tasarım modunda görüntülenecek resimleri belirten glif tablosuna bir giriş ekler.
+Glyph tablosuna, tasarım modunda belirli etiketler için görüntülenecek görüntüleri belirten bir giriş ekler.
 
 ```
 HRESULT AddToGlyphTable(
@@ -389,42 +389,42 @@ HRESULT AddToGlyphTable(
 ### <a name="parameters"></a>Parametreler
 
 *szTag*<br/>
-Etiket adı (örneğin, "P" veya "Table").
+Etiket adı (örneğin, "P" veya "tablo").
 
 *szImgUrl*<br/>
-Resim URL 'SI.
+Resim URL'si.
 
 *nTagType*<br/>
-Etiket türü: 0, görüntünün yalnızca açma etiketi için olduğu anlamına gelir. 1, görüntünün yalnızca kapanış etiketi için olduğu anlamına gelir. 2, görüntünün hem açılış hem de kapanış etiketleri için olduğu anlamına gelir. Br ve yorum gibi tek Etiketler etiket türü 0 olarak ayarlanmış olmalıdır.
+Etiket türü: 0, görüntünün yalnızca açılış etiketi için olduğu anlamına gelir. 1, görüntünün yalnızca kapanış etiketi için olduğu anlamına gelir. 2, görüntünün hem açılış hem de kapanış etiketleri için olduğu anlamına gelir. br ve yorum gibi tek etiketler etiket türü 0 olarak ayarlanmış olarak eklenmelidir.
 
-*Nhizalama*<br/>
-Hizalama (yalnızca dikdörtgen öğeler): Bu parametre, görüntünün hizalama özniteliğine sahip bir öğe için olduğunu gösterir. Sol = 0, orta = 1, sağ = 2 ve tanımsız = 3. Sol, sağ veya orta öznitelikleri, öğesinde açıkça ayarlanmalıdır.
+*nHizalama*<br/>
+Hizalama (yalnızca dikdörtgen öğeler): Bu parametre, görüntünün hizalama özniteliği olan bir öğe için olduğunu gösterir. Sol = 0, merkez = 1, sağ = 2 ve tanımsız = 3. Sol, sağ veya orta öznitelikleri açıkça öğe üzerinde ayarlanmalıdır.
 
-*Nposınfo*<br/>
-Bilgi konumlandırma. Karakter, statik konumlandırma = 0, mutlak konumlandırma = 1, göreli konum = 2 ve tümü = 3 ' ün uygulandığı basamaklı stil sayfaları (CSS) konumlandırma değerini belirler. Bu alan, bir etiket konumlandırılmayan bir karakter için bir karakter ve etiket konumlandırıldığında bir bağlantı noktası göstermek için bir karakter belirtmenize olanak sağlar.
+*nPosInfo*<br/>
+Konumlandırma bilgileri. Gliflerin hangi basamaklı stil sayfaları (CSS) konumlandırma değerinin nereye uygulandığını, statik konumlandırma = 0, mutlak konumlandırma = 1, göreli konumlandırma = 2 ve tüm = 3'ü belirler. Bu alan, konumlandırılmadığınızda bir etiket için bir glifler belirtmenize ve etiket konumlandırıldığında bir bağlantı noktasını göstermek için başka bir glifler belirtmenize olanak tanır.
 
-*nDirection*<br/>
-Yön. Bu parametre, geçerli dilin okuma sırasına göre bir etiketin görüntüsünü belirtir. 0 soldan sağa, 1 sağdan sola belirtir, 2 yukarıdan aşağıya, 3 aşağıdan yukarıya ve 4 tümünü belirtir. Normalde bu alanı 4 olarak ayarlarsınız.
+*nYön*<br/>
+Yön. Bu parametre, geçerli dilin okuma sırasına göre bir etiket için görüntü belirtir. 0 soldan sağa, 1 sağdan sola, 2 yukarıdan aşağıya, 3 aşağıdan yukarıya ve 4'ü de tüm belirtir. Normalde bu alanı 4 olarak ayarlarsınız.
 
-*nImgWidth*<br/>
-Piksel cinsinden resim genişliği.
+*nImgGenişlik*<br/>
+Piksellerde görüntü genişliği.
 
-*nImgHeight*<br/>
-Piksel cinsinden görüntü yüksekliği.
+*nImgYükseklik*<br/>
+Piksellerde görüntü yüksekliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametreler hakkında daha fazla bilgi için, bkz. [using glifleri kullanma](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa969614\(v=vs.85\))Içindeki "glif tablosu dize biçimi".
+Parametreler hakkında daha fazla bilgi [için, Düzenleme Glifleri Kullanırken](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa969614\(v=vs.85\))"Gph Tablo Dize Biçimi" konusuna bakın.
 
-Bu yöntem, [IDM_ADDTOGLYPHTABLE komut kimliğini](/previous-versions/aa769891\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769891\(v=vs.85\)) denetimine IDM_ADDTOGLYPHTABLE komut kimliği gönderir.
 
-##  <a name="bold"></a>CHtmlEditCtrlBase:: Bold
+## <a name="chtmleditctrlbasebold"></a><a name="bold"></a>CHtmlEditCtrlBase::Kalın
 
-Seçilen metnin kalın durumuna geçer.
+Seçili metnin kalın durumunu geçiştir.
 
 ```
 HRESULT Bold() const;
@@ -432,15 +432,15 @@ HRESULT Bold() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_BOLD komut kimliğini](/previous-versions/aa769861\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769861\(v=vs.85\)) denetimine IDM_BOLD komut kimliği gönderir.
 
-##  <a name="button"></a>CHtmlEditCtrlBase:: Button
+## <a name="chtmleditctrlbasebutton"></a><a name="button"></a>CHtmlEditCtrlBase::Düğme
 
-Geçerli seçimdeki bir düğme denetiminin üzerine yazar.
+Geçerli seçimde bir düğme denetiminin üzerine yazar.
 
 ```
 HRESULT Button(LPCTSTR szId = NULL) const;
@@ -448,20 +448,20 @@ HRESULT Button(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Düğme denetiminin KIMLIĞI.
+*szId*<br/>
+Düğme denetiminin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_BUTTON komut kimliğini](/previous-versions/aa769966\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769966\(v=vs.85\)) denetimine IDM_BUTTON komut kimliği gönderir.
 
-##  <a name="checkbox"></a>CHtmlEditCtrlBase:: CheckBox
+## <a name="chtmleditctrlbasecheckbox"></a><a name="checkbox"></a>CHtmlEditCtrlBase::CheckBox
 
-Geçerli seçimdeki onay kutusu denetiminin üzerine yazar.
+Geçerli seçimde bir onay kutusu denetiminin üzerine yazar.
 
 ```
 HRESULT CheckBox(LPCTSTR szId = NULL) const;
@@ -469,18 +469,18 @@ HRESULT CheckBox(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Onay kutusu denetiminin KIMLIĞI.
+*szId*<br/>
+Onay kutusu denetiminin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_CHECKBOX komut kimliğini](/previous-versions/aa769972\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769972\(v=vs.85\)) denetimine IDM_CHECKBOX komut kimliğini gönderir.
 
-##  <a name="clearselection"></a>CHtmlEditCtrlBase:: ClearSelection
+## <a name="chtmleditctrlbaseclearselection"></a><a name="clearselection"></a>CHtmlEditCtrlBase::ClearSelection
 
 Geçerli seçimi temizler.
 
@@ -490,13 +490,13 @@ HRESULT ClearSelection() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_CLEARSELECTION komut kimliğini](/previous-versions/aa770038\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa770038\(v=vs.85\)) denetimine IDM_CLEARSELECTION komut kimliği gönderir.
 
-##  <a name="copy"></a>CHtmlEditCtrlBase:: Copy
+## <a name="chtmleditctrlbasecopy"></a><a name="copy"></a>CHtmlEditCtrlBase::Kopyala
 
 Geçerli seçimi panoya kopyalar.
 
@@ -506,13 +506,13 @@ HRESULT Copy() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_COPY komut kimliğini](/previous-versions/aa769872\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769872\(v=vs.85\)) denetimine IDM_COPY komut kimliği gönderir.
 
-##  <a name="cut"></a>CHtmlEditCtrlBase:: kes
+## <a name="chtmleditctrlbasecut"></a><a name="cut"></a>CHtmlEditCtrlBase::Kes
 
 Geçerli seçimi panoya kopyalar ve sonra siler.
 
@@ -522,13 +522,13 @@ HRESULT Cut() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_CUT komut kimliğini](/previous-versions/aa769875\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769875\(v=vs.85\)) denetimine IDM_CUT komut kimliği gönderir.
 
-##  <a name="delete"></a>CHtmlEditCtrlBase::D Sil
+## <a name="chtmleditctrlbasedelete"></a><a name="delete"></a>CHtmlEditCtrlBase::Delete
 
 Geçerli seçimi siler.
 
@@ -538,15 +538,15 @@ HRESULT Delete() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_DELETE komut kimliğini](/previous-versions/aa769876\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769876\(v=vs.85\)) denetimine IDM_DELETE komut kimliği gönderir.
 
-##  <a name="dropdownbox"></a>CHtmlEditCtrlBase::D ropDownBox
+## <a name="chtmleditctrlbasedropdownbox"></a><a name="dropdownbox"></a>CHtmlEditCtrlBase::DropDownBox
 
-Geçerli seçimde açılan seçim denetiminin üzerine yazar.
+Geçerli seçimde açılır seçim denetiminin üzerine yazar.
 
 ```
 HRESULT DropDownBox(LPCTSTR szId = NULL) const;
@@ -554,20 +554,20 @@ HRESULT DropDownBox(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Açılan seçim denetiminin KIMLIĞI.
+*szId*<br/>
+Açılır seçim denetiminin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_DROPDOWNBOX komut kimliğini](/previous-versions/aa769984\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769984\(v=vs.85\)) denetimine IDM_DROPDOWNBOX komut kimliği gönderir.
 
-##  <a name="emptyglyphtable"></a>CHtmlEditCtrlBase:: EmptyGlyphTable
+## <a name="chtmleditctrlbaseemptyglyphtable"></a><a name="emptyglyphtable"></a>CHtmlEditCtrlBase::EmptyGlyphTable
 
-, Tasarım modunda Etiketler için görünen tüm görüntüleri gizleyen glif tablosundan tüm girişleri kaldırır.
+Tasarım modunda etiketler için görüntülenen tüm görüntüleri gizleyen glyph tablosundan tüm girişleri kaldırır.
 
 ```
 HRESULT EmptyGlyphTable() const;
@@ -575,15 +575,15 @@ HRESULT EmptyGlyphTable() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_EMPTYGLYPHTABLE komut kimliğini](/previous-versions/aa769907\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769907\(v=vs.85\)) denetimine IDM_EMPTYGLYPHTABLE komut kimliği gönderir.
 
-##  <a name="execcommand"></a>CHtmlEditCtrlBase:: ExecCommand
+## <a name="chtmleditctrlbaseexeccommand"></a><a name="execcommand"></a>CHtmlEditCtrlBase::ExecCommand
 
-Bir komutu yürütür.
+Bir komut uyguluyor.
 
 ```
 HRESULT ExecCommand(
@@ -603,29 +603,29 @@ HRESULT ExecCommand(
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
-Yürütülecek komut KIMLIĞI. Bir liste için bkz. [MSHTML komut tanımlayıcıları](/previous-versions/aa741315\(v=vs.85\)).
+Yürütülecek komut kimliği. Liste için [MSHTML Komut Tanımlayıcıları'na](/previous-versions/aa741315\(v=vs.85\))bakın.
 
 *cmdExecOpt*<br/>
-Nesnenin komutu nasıl yürütebileceğini açıklayan, [OLECMDEXECOPT](/windows/win32/api/docobj/ne-docobj-olecmdexecopt) numaralandırmasından alınan değerler.
+Nesnenin komutu nasıl yürütmesi gerektiğini açıklayan [OLECMDEXECOPT](/windows/win32/api/docobj/ne-docobj-olecmdexecopt) numaralandırmasından alınan değerler.
 
 *pInVar*<br/>
 Giriş bağımsız değişkenleri.
 
 *pOutVar*<br/>
-Komut çıktısı.
+Komut çıkışı.
 
-*PGUID*<br/>
-Komut grubunun GUID 'SI.
+*pGuid*<br/>
+Komut grubunun GUID'i.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IOleCommandTarget:: exec](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec)işlevlerini sağlar.
+Bu yöntem [IOleCommandTarget işlevselliğini sağlar::Exec](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec).
 
-##  <a name="font"></a>CHtmlEditCtrlBase:: Font
+## <a name="chtmleditctrlbasefont"></a><a name="font"></a>CHtmlEditCtrlBase::Yazı Tipi
 
 Kullanıcının geçerli seçimin metin rengini, yazı tipini ve yazı tipi boyutunu değiştirmesini sağlamak için bir yazı tipi iletişim kutusu açar.
 
@@ -635,15 +635,15 @@ HRESULT Font() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_FONT komut kimliğini](/previous-versions/aa769913\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769913\(v=vs.85\)) denetimine IDM_FONT komut kimliğini gönderir.
 
-##  <a name="getabsoluteposition"></a>CHtmlEditCtrlBase:: GetAbsolutePosition
+## <a name="chtmleditctrlbasegetabsoluteposition"></a><a name="getabsoluteposition"></a>CHtmlEditCtrlBase::GetAbsolutePosition
 
-Bir öğenin Position özelliğinin "Absolute" olup olmadığını döndürür.
+Bir öğenin konum özelliğinin "mutlak" olup olmadığını verir.
 
 ```
 HRESULT GetAbsolutePosition(bool& bCurValue) const;
@@ -652,17 +652,17 @@ HRESULT GetAbsolutePosition(bool& bCurValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bCurValue*<br/>
-Öğenin Position özelliği "Absolute" olarak ayarlandıysa TRUE.
+Öğenin konum özelliği "mutlak" olarak ayarlanmışsa DOĞRU.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [IDM_ABSOLUTE_POSITION Command ID](/previous-versions/aa769889\(v=vs.85\)).
+Daha fazla bilgi için [IDM_ABSOLUTE_POSITION Komut Kimliği'ne](/previous-versions/aa769889\(v=vs.85\))bakın.
 
-##  <a name="getbackcolor"></a>CHtmlEditCtrlBase:: GetBackColor
+## <a name="chtmleditctrlbasegetbackcolor"></a><a name="getbackcolor"></a>CHtmlEditCtrlBase::GetBackColor
 
 Geçerli seçimin arka plan rengini alır.
 
@@ -677,13 +677,13 @@ Arka plan rengi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_BACKCOLOR komut kimliğini](/previous-versions/aa769858\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [WebBrowser](/previous-versions/aa769858\(v=vs.85\)) denetimine IDM_BACKCOLOR Komut Kimliği gönderir.
 
-##  <a name="getblockformat"></a>CHtmlEditCtrlBase:: GetBlockFormat
+## <a name="chtmleditctrlbasegetblockformat"></a><a name="getblockformat"></a>CHtmlEditCtrlBase::GetBlockFormat
 
 Geçerli blok biçimi etiketini alır.
 
@@ -694,19 +694,19 @@ HRESULT GetBlockFormat(CString& strFormat) const;
 ### <a name="parameters"></a>Parametreler
 
 *strFormat*<br/>
-Geçerli blok biçim etiketi.
+Geçerli blok biçimi etiketi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_BLOCKFMT komut kimliğini](/previous-versions/aa769883\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769883\(v=vs.85\)) denetimine IDM_BLOCKFMT komut kimliği gönderir.
 
-##  <a name="getblockformatnames"></a>CHtmlEditCtrlBase:: GetBlockFormatNames
+## <a name="chtmleditctrlbasegetblockformatnames"></a><a name="getblockformatnames"></a>CHtmlEditCtrlBase::GetBlockFormatNames
 
-Kullanılabilir blok biçim etiketlerine karşılık gelen dizeleri alır.
+Kullanılabilir blok biçimi etiketlerine karşılık gelen dizeleri alır.
 
 ```
 HRESULT GetBlockFormatNames(CStringArray& sa) const;
@@ -714,20 +714,20 @@ HRESULT GetBlockFormatNames(CStringArray& sa) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*SA*<br/>
-Kullanılabilir blok biçim etiketleri, dizeler dizisi olarak.
+*Sa*<br/>
+Kullanılabilir blok biçimi etiketleri, dizeleri bir dizi olarak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_GETBLOCKFMTS komut kimliğini](/previous-versions/aa769884\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769884\(v=vs.85\)) denetimine IDM_GETBLOCKFMTS komut kimliğini gönderir.
 
-##  <a name="getbookmark"></a>CHtmlEditCtrlBase:: GetBookMark
+## <a name="chtmleditctrlbasegetbookmark"></a><a name="getbookmark"></a>CHtmlEditCtrlBase::GetBookMark
 
-Yer işareti bağlayıcının adını alır.
+Yer imi çapasının adını alır.
 
 ```
 HRESULT GetBookMark(CString& strAnchor) const;
@@ -736,17 +736,17 @@ HRESULT GetBookMark(CString& strAnchor) const;
 ### <a name="parameters"></a>Parametreler
 
 *strAnchor*<br/>
-Yer işareti bağlayıcının adı.
+Yer imi sunucusunun adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [IDM_BOOKMARK Command ID](/previous-versions/aa769873\(v=vs.85\)).
+Daha fazla bilgi için [IDM_BOOKMARK Komut Kimliği'ne](/previous-versions/aa769873\(v=vs.85\))bakın.
 
-##  <a name="getdocument"></a>CHtmlEditCtrlBase:: GetDocument
+## <a name="chtmleditctrlbasegetdocument"></a><a name="getdocument"></a>CHtmlEditCtrlBase::GetDocument
 
 Belge nesnesini alır.
 
@@ -761,11 +761,11 @@ Belge nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="getdocumenthtml"></a>CHtmlEditCtrlBase:: Getbelgethtml
+## <a name="chtmleditctrlbasegetdocumenthtml"></a><a name="getdocumenthtml"></a>CHtmlEditCtrlBase::GetDocumentHTML
 
-Geçerli belgenin HTML 'ini alır.
+Geçerli belgenin HTML'sini alır.
 
 ```
 HRESULT GetDocumentHTML(CString& szHTML) const;
@@ -774,13 +774,13 @@ HRESULT GetDocumentHTML(CString& szHTML) const;
 ### <a name="parameters"></a>Parametreler
 
 *szHTML*<br/>
-HTML.
+The HTML.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="getdocumenttitle"></a>CHtmlEditCtrlBase:: GetDocumentTitle
+## <a name="chtmleditctrlbasegetdocumenttitle"></a><a name="getdocumenttitle"></a>CHtmlEditCtrlBase::GetDocumentTitle
 
 Belgenin başlığını alır.
 
@@ -795,11 +795,11 @@ Belgenin başlığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="getevent"></a>CHtmlEditCtrlBase:: GetEvent
+## <a name="chtmleditctrlbasegetevent"></a><a name="getevent"></a>CHtmlEditCtrlBase::GetEvent
 
-En son olayla ilgili bilgileri içeren olay nesnesine bir arabirim işaretçisi alır.
+En son olayla ilgili bilgiler içeren olay nesnesi için bir arabirim işaretçisi alır.
 
 ```
 HRESULT GetEvent(IHTMLEventObj** ppEventObj) const;
@@ -812,11 +812,11 @@ Olay nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="geteventsrcelement"></a>CHtmlEditCtrlBase:: GetEventSrcElement
+## <a name="chtmleditctrlbasegeteventsrcelement"></a><a name="geteventsrcelement"></a>CHtmlEditCtrlBase::GetEventSrcElement
 
-Olayı tetikleyen nesneyi alır.
+Olayı ateşleyen nesneyi alır.
 
 ```
 HRESULT GetEventSrcElement(IHTMLElement** ppSrcElement) const;
@@ -825,15 +825,15 @@ HRESULT GetEventSrcElement(IHTMLElement** ppSrcElement) const;
 ### <a name="parameters"></a>Parametreler
 
 *ppSrcElement*<br/>
-Olayı tetikleyen öğe.
+Olayı ateşleyen unsur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="getfontface"></a>CHtmlEditCtrlBase:: GetFontFace
+## <a name="chtmleditctrlbasegetfontface"></a><a name="getfontface"></a>CHtmlEditCtrlBase::GetFontFace
 
-Geçerli seçimin yazı tipi adını alır.
+Geçerli seçimiçin yazı tipi adını alır.
 
 ```
 HRESULT GetFontFace(CString& strFace) const;
@@ -846,17 +846,17 @@ Yazı tipi adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli seçim birden fazla yazı tipi kullanıyorsa, *strFace* boş bir dize olur.
+Geçerli seçimbirden fazla yazı tipi kullanıyorsa, *strFace* boş bir dize olacaktır.
 
-Bu yöntem, [IDM_FONTNAME komut kimliğini](/previous-versions/aa769880\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769880\(v=vs.85\)) denetimine IDM_FONTNAME komut kimliği gönderir.
 
-##  <a name="getfontsize"></a>CHtmlEditCtrlBase:: GetFontSize
+## <a name="chtmleditctrlbasegetfontsize"></a><a name="getfontsize"></a>CHtmlEditCtrlBase::GetFontSize
 
-Geçerli seçimin yazı tipi boyutunu alır.
+Geçerli seçim için yazı tipi boyutunu alır.
 
 ```
 HRESULT GetFontSize(short& nSize) const;
@@ -869,13 +869,13 @@ Yazı tipi boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-HTML yazı tipi boyutunu döndürür (1-7). Seçim birden çok yazı tipi boyutu içeriyorsa 0 döndürür.
+HTML yazı tipi boyutunu (1-7) döndürür. Seçim birden çok yazı tipi boyutu içeriyorsa 0 döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_FONTSIZE komut kimliğini](/previous-versions/aa769881\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769881\(v=vs.85\)) denetimine IDM_FONTSIZE komut kimliği gönderir.
 
-##  <a name="getforecolor"></a>CHtmlEditCtrlBase:: GetForeColor
+## <a name="chtmleditctrlbasegetforecolor"></a><a name="getforecolor"></a>CHtmlEditCtrlBase::GetForeColor
 
 Geçerli seçimin ön plan (metin) rengini alır.
 
@@ -890,13 +890,13 @@ HRESULT GetForeColor(int& nColor);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_FORECOLOR komut kimliğini](/previous-versions/aa769882\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [WebBrowser](/previous-versions/aa769882\(v=vs.85\)) denetimine IDM_FORECOLOR Komut Kimliği gönderir.
 
-##  <a name="getframezone"></a>CHtmlEditCtrlBase::GetFrameZone
+## <a name="chtmleditctrlbasegetframezone"></a><a name="getframezone"></a>CHtmlEditCtrlBase::GetFrameZone
 
 Web tarayıcısında geçerli sayfanın güvenlik bölgesini döndürür.
 
@@ -911,15 +911,15 @@ Güvenlik bölgesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_GETFRAMEZONE komut kimliğini](/previous-versions/aa769916\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769916\(v=vs.85\)) denetimine IDM_GETFRAMEZONE komut kimliğini gönderir.
 
-##  <a name="getisdirty"></a>CHtmlEditCtrlBase:: Getıdirty
+## <a name="chtmleditctrlbasegetisdirty"></a><a name="getisdirty"></a>CHtmlEditCtrlBase::GetIsDirty
 
-HTML belgesinin değişip değişmediğini gösterir.
+HTML belgesinin değiştirilip değiştirilmediğini gösterir.
 
 ```
 HRESULT GetIsDirty() const;
@@ -927,11 +927,11 @@ HRESULT GetIsDirty() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belgenin değişip değişmediğini gösterir. `GetIsDirty`[IPersistStorage:: IsDirty](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty)ÖĞESINDEN bir hresult döndürür.
+Belgenin değişip değişmediğini gösterir. `GetIsDirty`IPersistStorage bir HRESULT [döndürür::IsDirty](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty).
 
-##  <a name="getshowalignedsitetags"></a>CHtmlEditCtrlBase:: GetShowAlignedSiteTags
+## <a name="chtmleditctrlbasegetshowalignedsitetags"></a><a name="getshowalignedsitetags"></a>CHtmlEditCtrlBase::GetShowAlignedSiteEtiketler
 
-`styleFloat` Özelliği olan tüm öğeler için bir karakter görüntülenip görüntülenmediğini döndürür.
+`styleFloat` Bir özelliği olan tüm öğeler için bir gliflerin görüntülenip görüntülenmediğini verir.
 
 ```
 HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;
@@ -940,19 +940,19 @@ HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bCurValue*<br/>
-`styleFloat` Özelliği olan tüm öğeler için bir karakter görüntüleniyorsa true; Hiçbir karakter görüntülenmiyorsa FALSE.
+Bir `styleFloat` özelliği olan tüm öğeler için bir glifler görüntülenirse DOĞRU; Hiçbir glyph görüntülenmiyorsa YANLIŞ.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [IDM_SHOWALIGNEDSITETAGS Command ID](/previous-versions/aa769947\(v=vs.85\)).
+Daha fazla bilgi için [IDM_SHOWALIGNEDSITETAGS Komut Kimliği'ne](/previous-versions/aa769947\(v=vs.85\))bakın.
 
-##  <a name="getshowalltags"></a>CHtmlEditCtrlBase:: GetShowAllTags
+## <a name="chtmleditctrlbasegetshowalltags"></a><a name="getshowalltags"></a>CHtmlEditCtrlBase::GetShowAllEtiketler
 
-WebBrowser 'ın bir belgedeki tüm etiketlerin konumunu göstermek için glifleri gösterip göstermediğini döndürür.
+WebBrowser'ın bir belgedeki tüm etiketlerin konumunu göstermek için glifler gösterip göstermediğini döndürür.
 
 ```
 HRESULT GetShowAllTags(bool& bCurValue) const;
@@ -961,19 +961,19 @@ HRESULT GetShowAllTags(bool& bCurValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bCurValue*<br/>
-WebBrowser, bir belgedeki tüm etiketlerin konumunu göstermek için glif görüntülüyorsa doğru. Değilse yanlış.
+WebBrowser bir belgedeki tüm etiketlerin konumunu göstermek için glifler görüntülerse DOĞRU; YANLIŞ değilse.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [IDM_SHOWALLTAGS Command ID](/previous-versions/aa769948\(v=vs.85\)).
+Daha fazla bilgi için [IDM_SHOWALLTAGS Komut Kimliği'ne](/previous-versions/aa769948\(v=vs.85\))bakın.
 
-##  <a name="getshowareatags"></a>CHtmlEditCtrlBase:: GetShowAreaTags
+## <a name="chtmleditctrlbasegetshowareatags"></a><a name="getshowareatags"></a>CHtmlEditCtrlBase::GetShowAreaEtiketler
 
-WebBrowser 'ın alan etiketleri için bir karakter görüntüleyip görüntülemediğini alır.
+WebBrowser'ın alan etiketleri için bir glifler gösterip görüntülemediğini alır.
 
 ```
 HRESULT GetShowAreaTags(bool& bCurValue) const;
@@ -982,19 +982,19 @@ HRESULT GetShowAreaTags(bool& bCurValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bCurValue*<br/>
-WebBrowser alan etiketleri için bir karakter gösteriyorsa TRUE, değilse FALSE.
+WebBrowser alan etiketleri için bir glifler görüntülerse DOĞRU, eğer değilse FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [IDM_SHOWAREATAGS Command ID](/previous-versions/aa769949\(v=vs.85\)).
+Daha fazla bilgi için [IDM_SHOWAREATAGS Komut Kimliği'ne](/previous-versions/aa769949\(v=vs.85\))bakın.
 
-##  <a name="getshowbrtags"></a>CHtmlEditCtrlBase:: GetShowBRTags
+## <a name="chtmleditctrlbasegetshowbrtags"></a><a name="getshowbrtags"></a>CHtmlEditCtrlBase::GetShowBREtiketler
 
-WebBrowser 'ın br etiketleri için bir karakter görüntüleyip görüntülemediğini alır.
+WebBrowser'ın br etiketleri için bir glifler gösterip görüntülemediğini alır.
 
 ```
 HRESULT GetShowBRTags(bool& bCurValue) const;
@@ -1003,19 +1003,19 @@ HRESULT GetShowBRTags(bool& bCurValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bCurValue*<br/>
-WebBrowser, br etiketleri için bir karakter gösteriyorsa TRUE, değilse FALSE.
+WebBrowser br etiketleri için bir glifler görüntülerse DOĞRU, eğer değilse FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [IDM_SHOWWBRTAGS Command ID](/previous-versions/aa769956\(v=vs.85\)).
+Daha fazla bilgi için komut [kimliği IDM_SHOWWBRTAGS](/previous-versions/aa769956\(v=vs.85\))bakın.
 
-##  <a name="getshowcommenttags"></a>CHtmlEditCtrlBase:: GetShowCommentTags
+## <a name="chtmleditctrlbasegetshowcommenttags"></a><a name="getshowcommenttags"></a>CHtmlEditCtrlBase::GetShowCommentEtiketler
 
-WebBrowser 'ın açıklama etiketleri için bir karakter görüntüleyip görüntülemediğini alır.
+WebBrowser'ın yorum etiketleri için bir glifler gösterip görüntülemediğini alır.
 
 ```
 HRESULT GetShowCommentTags(bool& bCurValue) const;
@@ -1024,19 +1024,19 @@ HRESULT GetShowCommentTags(bool& bCurValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bCurValue*<br/>
-WebBrowser açıklama etiketleri için bir karakter gösteriyorsa TRUE, değilse FALSE.
+WebBrowser yorum etiketleri için bir glifler görüntülerse DOĞRU, false değilse.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [IDM_SHOWCOMMENTTAGS Command ID](/previous-versions/aa769950\(v=vs.85\)).
+Daha fazla bilgi için [komut kimliği IDM_SHOWCOMMENTTAGS](/previous-versions/aa769950\(v=vs.85\))bakın.
 
-##  <a name="getshowmisctags"></a>CHtmlEditCtrlBase:: GetShowMiscTags
+## <a name="chtmleditctrlbasegetshowmisctags"></a><a name="getshowmisctags"></a>CHtmlEditCtrlBase::GetShowMiscEtiketler
 
-WebBrowser 'ın Microsoft Internet Explorer 4,0 ' de gösterilen tüm etiketleri görüntüleyip görüntülemediğini alır.
+WebBrowser'ın Microsoft Internet Explorer 4.0'da gösterilen tüm etiketleri gösterip göstermediğini alır.
 
 ```
 HRESULT GetShowMiscTags(bool& bCurValue) const;
@@ -1045,19 +1045,19 @@ HRESULT GetShowMiscTags(bool& bCurValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bCurValue*<br/>
-WebBrowser, Microsoft Internet Explorer 4,0 ' de gösterilen tüm etiketleri görüntülerse TRUE, yoksa FALSE 'TUR.
+WebBrowser Microsoft Internet Explorer 4.0'da gösterilen tüm etiketleri görüntülerse DOĞRU, yoksa FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [IDM_SHOWMISCTAGS Command ID](/previous-versions/aa769952\(v=vs.85\)).
+Daha fazla bilgi için komut [kimliği IDM_SHOWMISCTAGS](/previous-versions/aa769952\(v=vs.85\))bakın.
 
-##  <a name="getshowscripttags"></a>CHtmlEditCtrlBase:: GetShowScriptTags
+## <a name="chtmleditctrlbasegetshowscripttags"></a><a name="getshowscripttags"></a>CHtmlEditCtrlBase::GetShowScriptEtiketler
 
-WebBrowser 'ın tüm betik etiketleri için bir karakter görüntüleyip görüntülemediğini alır.
+WebBrowser'ın tüm komut dosyası etiketleri için bir glifler gösterip görüntülemediğini alır.
 
 ```
 HRESULT GetShowScriptTags(bool& bCurValue) const;
@@ -1066,19 +1066,19 @@ HRESULT GetShowScriptTags(bool& bCurValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bCurValue*<br/>
-WebBrowser tüm betik etiketleri için bir glif görüntülüyorsa TRUE, değilse FALSE.
+Doğru WebBrowser tüm komut dosyası etiketleri için bir glifler görüntülerse, FALSE değilse.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [IDM_SHOWSCRIPTTAGS Command ID](/previous-versions/aa769953\(v=vs.85\)).
+Daha fazla bilgi için komut [kimliği IDM_SHOWSCRIPTTAGS](/previous-versions/aa769953\(v=vs.85\))bakın.
 
-##  <a name="getshowstyletags"></a>CHtmlEditCtrlBase:: GetShowStyleTags
+## <a name="chtmleditctrlbasegetshowstyletags"></a><a name="getshowstyletags"></a>CHtmlEditCtrlBase::GetShowStyleEtiketler
 
-WebBrowser 'ın tüm stil etiketleri için bir karakter görüntüleyip görüntülemediğini alır.
+WebBrowser'ın tüm stil etiketleri için bir glifler gösterip görüntülemediğini alır.
 
 ```
 HRESULT GetShowStyleTags(bool& bCurValue) const;
@@ -1087,19 +1087,19 @@ HRESULT GetShowStyleTags(bool& bCurValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bCurValue*<br/>
-WebBrowser tüm stil etiketleri için bir karakter gösteriyorsa TRUE, değilse FALSE
+Doğru WebBrowser tüm stil etiketleri için bir glifler görüntülerse, FALSE değilse
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [IDM_SHOWSTYLETAGS Command ID](/previous-versions/aa769954\(v=vs.85\)).
+Daha fazla bilgi için [komut kimliği IDM_SHOWSTYLETAGS](/previous-versions/aa769954\(v=vs.85\))bakın.
 
-##  <a name="getshowunknowntags"></a>CHtmlEditCtrlBase:: GetShowUnknownTags
+## <a name="chtmleditctrlbasegetshowunknowntags"></a><a name="getshowunknowntags"></a>CHtmlEditCtrlBase::GetShowUnknownTags
 
-WebBrowser 'ın bilinmeyen tüm etiketler için bir karakter görüntüleyip görüntülemediğini alır.
+WebBrowser'ın bilinmeyen tüm etiketler için bir glifler gösterip görüntülemediğini alır.
 
 ```
 HRESULT GetShowUnknownTags(bool& bCurValue) const;
@@ -1108,19 +1108,19 @@ HRESULT GetShowUnknownTags(bool& bCurValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bCurValue*<br/>
-WebBrowser, bilinmeyen tüm etiketler için bir karakter gösteriyorsa TRUE, değilse FALSE.
+Doğru WebBrowser tüm bilinmeyen etiketleri için bir glifler görüntüler, FALSE değilse.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [IDM_SHOWUNKNOWNTAGS Command ID](/previous-versions/aa769955\(v=vs.85\)).
+Daha fazla bilgi için IDM_SHOWUNKNOWNTAGS [Komut Kimliği'ne](/previous-versions/aa769955\(v=vs.85\))bakın.
 
-##  <a name="horizontalline"></a>CHtmlEditCtrlBase:: HorizontalLine
+## <a name="chtmleditctrlbasehorizontalline"></a><a name="horizontalline"></a>CHtmlEditCtrlBase::HorizontalLine
 
-Geçerli seçimdeki yatay bir çizginin üzerine yazar.
+Geçerli seçimde yatay bir çizginin üzerine yazar.
 
 ```
 HRESULT HorizontalLine(LPCTSTR szId = NULL) const;
@@ -1129,17 +1129,17 @@ HRESULT HorizontalLine(LPCTSTR szId = NULL) const;
 ### <a name="parameters"></a>Parametreler
 
 *szID*<br/>
-Yatay çizginin KIMLIĞI.
+Yatay çizginin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_HORIZONTALLINE komut kimliğini](/previous-versions/aa769968\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769968\(v=vs.85\)) denetimine IDM_HORIZONTALLINE komut kimliği gönderir.
 
-##  <a name="hyperlink"></a>CHtmlEditCtrlBase:: HyperLink
+## <a name="chtmleditctrlbasehyperlink"></a><a name="hyperlink"></a>CHtmlEditCtrlBase::HyperLink
 
 Geçerli seçime bir köprü ekler.
 
@@ -1150,19 +1150,19 @@ HRESULT HyperLink(LPCTSTR szUrl = NULL) const;
 ### <a name="parameters"></a>Parametreler
 
 *szUrl*<br/>
-Köprü URL 'SI.
+Köprü URL'si.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_HYPERLINK komut kimliğini](/previous-versions/aa769874\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769874\(v=vs.85\)) denetimine IDM_HYPERLINK komut kimliğini gönderir.
 
-##  <a name="ie50paste"></a>CHtmlEditCtrlBase::IE50Paste
+## <a name="chtmleditctrlbaseie50paste"></a><a name="ie50paste"></a>CHtmlEditCtrlBase::IE50Paste
 
-Internet Explorer 5 ile uyumlu bir yapıştırma işlemi gerçekleştirir.
+Internet Explorer 5 ile uyumlu bir yapıştırme işlemi gerçekleştirir.
 
 ```
 HRESULT IE50Paste(LPCTSTR szData) const;
@@ -1171,19 +1171,19 @@ HRESULT IE50Paste(LPCTSTR szData) const;
 ### <a name="parameters"></a>Parametreler
 
 *szData*<br/>
-Yapıştırılacak dize.
+Yapıştırılabilmek için dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_IE50_PASTE komut kimliğini](/previous-versions/aa769922\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769922\(v=vs.85\)) denetimine IDM_IE50_PASTE komut kimliği gönderir.
 
-##  <a name="iframe"></a>CHtmlEditCtrlBase:: IFRAME
+## <a name="chtmleditctrlbaseiframe"></a><a name="iframe"></a>CHtmlEditCtrlBase::Iframe
 
-Geçerli seçimdeki bir satır içi çerçevenin üzerine yazar.
+Geçerli seçimin satır satırlı çerçevesinin üzerine yazar.
 
 ```
 HRESULT Iframe(LPCTSTR szId = NULL) const;
@@ -1191,20 +1191,20 @@ HRESULT Iframe(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Satır içi çerçevenin KIMLIĞI.
+*szId*<br/>
+Satır çizgisi çerçevesinin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_IFRAME komut kimliğini](/previous-versions/aa769969\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769969\(v=vs.85\)) denetimine IDM_IFRAME komut kimliğini gönderir.
 
-##  <a name="image"></a>CHtmlEditCtrlBase:: Image
+## <a name="chtmleditctrlbaseimage"></a><a name="image"></a>CHtmlEditCtrlBase::Resim
 
-Geçerli seçimdeki bir görüntünün üzerine yazar.
+Geçerli seçimde bir resmin üzerine yazar.
 
 ```
 HRESULT Image(LPCTSTR szUrl = NULL) const;
@@ -1213,19 +1213,19 @@ HRESULT Image(LPCTSTR szUrl = NULL) const;
 ### <a name="parameters"></a>Parametreler
 
 *szUrl*<br/>
-Eklenecek görüntünün yolu ve dosya adı.
+Eklenecek görüntünün yol ve dosya adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_IMAGE komut kimliğini](/previous-versions/aa769970\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769970\(v=vs.85\)) denetimine IDM_IMAGE komut kimliği gönderir.
 
-##  <a name="indent"></a>CHtmlEditCtrlBase:: Girintile
+## <a name="chtmleditctrlbaseindent"></a><a name="indent"></a>CHtmlEditCtrlBase::Girintin
 
-Seçilen metnin girintisini bir girintileme artışına yükseltir.
+Seçili metnin girintisini bir girinti artışla artırır.
 
 ```
 HRESULT Indent() const;
@@ -1233,15 +1233,15 @@ HRESULT Indent() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_INDENT komut kimliğini](/previous-versions/aa769963\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769963\(v=vs.85\)) denetimine IDM_INDENT komut kimliği gönderir.
 
-##  <a name="insfieldset"></a>CHtmlEditCtrlBase:: InsFieldSet
+## <a name="chtmleditctrlbaseinsfieldset"></a><a name="insfieldset"></a>CHtmlEditCtrlBase::InsFieldSet
 
-Geçerli seçimdeki bir kutunun üzerine yazar.
+Geçerli seçimde bir kutunun üzerine yazar.
 
 ```
 HRESULT InsFieldSet(LPCTSTR szId = NULL) const;
@@ -1249,20 +1249,20 @@ HRESULT InsFieldSet(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Kutunun KIMLIĞI.
+*szId*<br/>
+Kutunun kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_INSFIELDSET komut kimliğini](/previous-versions/aa769967\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769967\(v=vs.85\)) denetimine IDM_INSFIELDSET komut kimliğini gönderir.
 
-##  <a name="insinputbutton"></a>CHtmlEditCtrlBase:: ınsınputbutton
+## <a name="chtmleditctrlbaseinsinputbutton"></a><a name="insinputbutton"></a>CHtmlEditCtrlBase::InsInputButton
 
-Geçerli seçimdeki bir düğme denetiminin üzerine yazar.
+Geçerli seçimde bir düğme denetiminin üzerine yazar.
 
 ```
 HRESULT InsInputButton(LPCTSTR szId = NULL) const;
@@ -1270,18 +1270,18 @@ HRESULT InsInputButton(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Düğme denetiminin KIMLIĞI.
+*szId*<br/>
+Düğme kontrolü için kimlik.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_INSINPUTBUTTON komut kimliğini](/previous-versions/aa769971\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769971\(v=vs.85\)) denetimine IDM_INSINPUTBUTTON komut kimliği gönderir.
 
-##  <a name="insinputhidden"></a>CHtmlEditCtrlBase:: ınsınputhidden
+## <a name="chtmleditctrlbaseinsinputhidden"></a><a name="insinputhidden"></a>CHtmlEditCtrlBase::InsInputHidden
 
 Geçerli seçime gizli bir denetim ekler.
 
@@ -1291,20 +1291,20 @@ HRESULT InsInputHidden(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Gizli denetimin KIMLIĞI.
+*szId*<br/>
+Gizli kontrol için kimlik.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_INSINPUTHIDDEN komut kimliğini](/previous-versions/aa769974\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769974\(v=vs.85\)) denetimine IDM_INSINPUTHIDDEN komut kimliği gönderir.
 
-##  <a name="insinputimage"></a>CHtmlEditCtrlBase:: ınsınputımage
+## <a name="chtmleditctrlbaseinsinputimage"></a><a name="insinputimage"></a>CHtmlEditCtrlBase::InsInputImage
 
-Geçerli seçimdeki bir görüntü denetiminin üzerine yazar.
+Geçerli seçimde bir görüntü denetiminin üzerine yazar.
 
 ```
 HRESULT InsInputImage(LPCTSTR szId = NULL) const;
@@ -1312,20 +1312,20 @@ HRESULT InsInputImage(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Görüntü denetiminin KIMLIĞI.
+*szId*<br/>
+Görüntü denetimi için kimlik.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_INSINPUTIMAGE komut kimliğini](/previous-versions/aa769975\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769975\(v=vs.85\)) denetimine IDM_INSINPUTIMAGE komut kimliğini gönderir.
 
-##  <a name="insinputpassword"></a>CHtmlEditCtrlBase:: ınsınputpassword
+## <a name="chtmleditctrlbaseinsinputpassword"></a><a name="insinputpassword"></a>CHtmlEditCtrlBase::InsInputPassword
 
-Geçerli seçimdeki bir parola denetiminin üzerine yazar.
+Geçerli seçimde parola denetiminin üzerine yazar.
 
 ```
 HRESULT InsInputPassword(LPCTSTR szId = NULL) const;
@@ -1333,20 +1333,20 @@ HRESULT InsInputPassword(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Parola denetiminin KIMLIĞI.
+*szId*<br/>
+Parola denetimi için kimlik.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_INSINPUTPASSWORD komut kimliğini](/previous-versions/aa769976\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769976\(v=vs.85\)) denetimine IDM_INSINPUTPASSWORD komut kimliği gönderir.
 
-##  <a name="insinputreset"></a>CHtmlEditCtrlBase:: ınsınputreset
+## <a name="chtmleditctrlbaseinsinputreset"></a><a name="insinputreset"></a>CHtmlEditCtrlBase::InsInputReset
 
-Geçerli seçimdeki bir sıfırlama denetiminin üzerine yazar.
+Geçerli seçimde sıfırlama denetiminin üzerine yazar.
 
 ```
 HRESULT InsInputReset(LPCTSTR szId = NULL) const;
@@ -1354,20 +1354,20 @@ HRESULT InsInputReset(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Sıfırlama denetiminin KIMLIĞI.
+*szId*<br/>
+Sıfırlama denetimi için kimlik.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_INSINPUTRESET komut kimliğini](/previous-versions/aa769978\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769978\(v=vs.85\)) denetimine IDM_INSINPUTRESET komut kimliğini gönderir.
 
-##  <a name="insinputsubmit"></a>CHtmlEditCtrlBase:: ınsınputgönder
+## <a name="chtmleditctrlbaseinsinputsubmit"></a><a name="insinputsubmit"></a>CHtmlEditCtrlBase::InsInputGönder
 
-Geçerli seçimde bir gönderme denetiminin üzerine yazar.
+Geçerli seçim üzerinde bir gönder denetiminin üzerine yazar.
 
 ```
 HRESULT InsInputSubmit(LPCTSTR szId = NULL) const;
@@ -1375,20 +1375,20 @@ HRESULT InsInputSubmit(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Gönderme denetiminin KIMLIĞI.
+*szId*<br/>
+Gönderme denetimi için kimlik.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_INSINPUTSUBMIT komut kimliğini](/previous-versions/aa769979\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769979\(v=vs.85\)) denetimine IDM_INSINPUTSUBMIT komut kimliği gönderir.
 
-##  <a name="insinputupload"></a>CHtmlEditCtrlBase:: ınsınputupload
+## <a name="chtmleditctrlbaseinsinputupload"></a><a name="insinputupload"></a>CHtmlEditCtrlBase::InsInputUpload
 
-Geçerli seçimde bir dosya karşıya yükleme denetiminin üzerine yazar.
+Geçerli seçimde dosya yükleme denetiminin üzerine yazar.
 
 ```
 HRESULT InsInputUpload(LPCTSTR szId = NULL) const;
@@ -1396,20 +1396,20 @@ HRESULT InsInputUpload(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Dosya karşıya yükleme denetiminin KIMLIĞI.
+*szId*<br/>
+Dosya yükleme denetimi için kimlik.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_INSINPUTUPLOAD komut kimliğini](/previous-versions/aa769973\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769973\(v=vs.85\)) denetimine IDM_INSINPUTUPLOAD komut kimliği gönderir.
 
-##  <a name="is1delement"></a>CHtmlEditCtrlBase::Is1DElement
+## <a name="chtmleditctrlbaseis1delement"></a><a name="is1delement"></a>CHtmlEditCtrlBase::Is1DElement
 
-Bir öğenin statik olarak konumlandırılıp yerleştirilmeyeceğini belirler.
+Bir öğenin statik olarak konumlandırılıp konumlandırılmamalarını belirler.
 
 ```
 HRESULT Is1DElement(bool& bValue) const;
@@ -1418,19 +1418,19 @@ HRESULT Is1DElement(bool& bValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bDeğer*<br/>
-Öğe statik olarak konumlandırılmışsa TRUE, aksi durumda FALSE.
+Doğru eğer öğe statik olarak konumlandırılmışsa, false aksi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_1D_ELEMENT komut kimliğini](/previous-versions/aa769885\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769885\(v=vs.85\)) denetimine IDM_1D_ELEMENT komut kimliği gönderir.
 
-##  <a name="is2delement"></a>CHtmlEditCtrlBase::Is2DElement
+## <a name="chtmleditctrlbaseis2delement"></a><a name="is2delement"></a>CHtmlEditCtrlBase::Is2DElement
 
-Bir öğenin mutlak olarak konumlandırılıp yerleştirilmeyeceğini belirler.
+Bir öğenin kesinlikle konumlandırılmış olup olmadığını belirler.
 
 ```
 HRESULT Is2DElement(bool& bValue) const;
@@ -1439,19 +1439,19 @@ HRESULT Is2DElement(bool& bValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bDeğer*<br/>
-Öğe mutlak olarak konumlandırılmışsa TRUE, aksi durumda FALSE.
+DOĞRU eğer öğe kesinlikle konumlandırılmış, FALSE aksi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_2D_ELEMENT komut kimliğini](/previous-versions/aa769886\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769886\(v=vs.85\)) denetimine IDM_2D_ELEMENT komut kimliğini gönderir.
 
-##  <a name="italic"></a>CHtmlEditCtrlBase:: Italik
+## <a name="chtmleditctrlbaseitalic"></a><a name="italic"></a>CHtmlEditCtrlBase::Italik
 
-Geçerli seçimi italik ve italik olmayan bir şekilde değiştirir.
+Geçerli seçimi italik ve nonitalik arasında geçiş.
 
 ```
 HRESULT Italic() const;
@@ -1459,13 +1459,13 @@ HRESULT Italic() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_ITALIC komut kimliğini](/previous-versions/aa769988\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769988\(v=vs.85\)) denetimine IDM_ITALIC komut kimliği gönderir.
 
-##  <a name="justifycenter"></a>CHtmlEditCtrlBase:: Adatifycenter
+## <a name="chtmleditctrlbasejustifycenter"></a><a name="justifycenter"></a>CHtmlEditCtrlBase::JustifyCenter
 
 Geçerli seçimin bulunduğu biçim bloğunu ortalar.
 
@@ -1475,15 +1475,15 @@ HRESULT JustifyCenter() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_JUSTIFYCENTER komut kimliğini](/previous-versions/aa769989\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769989\(v=vs.85\)) denetimine IDM_JUSTIFYCENTER komut kimliği gönderir.
 
-##  <a name="justifyleft"></a>CHtmlEditCtrlBase:: Adatifyleft
+## <a name="chtmleditctrlbasejustifyleft"></a><a name="justifyleft"></a>CHtmlEditCtrlBase::JustifyLeft
 
-Geçerli seçimin bulunduğu biçim bloğunu sola yaslar.
+Sol, geçerli seçimin bulunduğu biçim bloğunu haklı çıkarır.
 
 ```
 HRESULT JustifyLeft() const;
@@ -1491,15 +1491,15 @@ HRESULT JustifyLeft() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_JUSTIFYLEFT komut kimliğini](/previous-versions/aa770011\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa770011\(v=vs.85\)) denetimine IDM_JUSTIFYLEFT komut kimliği gönderir.
 
-##  <a name="justifyright"></a>CHtmlEditCtrlBase:: Adatifyright
+## <a name="chtmleditctrlbasejustifyright"></a><a name="justifyright"></a>CHtmlEditCtrlBase::JustifyRight
 
-Geçerli seçimin bulunduğu biçim bloğunu sağa yaslar.
+Geçerli seçimin bulunduğu biçim bloğunu doğru doğrular.
 
 ```
 HRESULT JustifyRight() const;
@@ -1507,15 +1507,15 @@ HRESULT JustifyRight() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_JUSTIFYRIGHT komut kimliğini](/previous-versions/aa770013\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa770013\(v=vs.85\)) denetimine IDM_JUSTIFYRIGHT komut kimliği gönderir.
 
-##  <a name="listbox"></a>CHtmlEditCtrlBase:: ListBox
+## <a name="chtmleditctrlbaselistbox"></a><a name="listbox"></a>CHtmlEditCtrlBase::ListBox
 
-Geçerli seçimde bir liste kutusu seçim denetiminin üzerine yazar.
+Geçerli seçimde liste kutusu seçim denetiminin üzerine yazar.
 
 ```
 HRESULT ListBox(LPCTSTR szId = NULL) const;
@@ -1523,18 +1523,18 @@ HRESULT ListBox(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Liste kutusu denetiminin KIMLIĞI.
+*szId*<br/>
+Liste kutusu denetimi için kimlik.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_LISTBOX komut kimliğini](/previous-versions/aa769985\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769985\(v=vs.85\)) denetimine IDM_LISTBOX komut kimliğini gönderir.
 
-##  <a name="marquee"></a>CHtmlEditCtrlBase:: kayan yazı
+## <a name="chtmleditctrlbasemarquee"></a><a name="marquee"></a>CHtmlEditCtrlBase::Seçim Çerçevesi
 
 Geçerli seçimde boş bir seçim çerçevesinin üzerine yazar.
 
@@ -1544,18 +1544,18 @@ HRESULT Marquee(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Seçim çerçevesinin KIMLIĞI.
+*szId*<br/>
+Seçim çerçevesinin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_MARQUEE komut kimliğini](/previous-versions/aa769981\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769981\(v=vs.85\)) denetimine IDM_MARQUEE komut kimliğini gönderir.
 
-##  <a name="newdocument"></a>CHtmlEditCtrlBase:: NewDocument
+## <a name="chtmleditctrlbasenewdocument"></a><a name="newdocument"></a>CHtmlEditCtrlBase::NewDocument
 
 Yeni bir belge oluşturur.
 
@@ -1565,11 +1565,11 @@ HRESULT NewDocument() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="orderlist"></a>CHtmlEditCtrlBase:: OrderList
+## <a name="chtmleditctrlbaseorderlist"></a><a name="orderlist"></a>CHtmlEditCtrlBase::Sipariş Listesi
 
-Sıralı liste ve normal biçim bloğu arasındaki geçerli seçimi değiştirir.
+Geçerli seçimi sıralı liste ile normal biçim bloğu arasında geçiş yapın.
 
 ```
 HRESULT OrderList(LPCTSTR szId = NULL) const;
@@ -1577,20 +1577,20 @@ HRESULT OrderList(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Sıralanmış listenin KIMLIĞI.
+*szId*<br/>
+Sıralanan listenin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_ORDERLIST komut kimliğini](/previous-versions/aa769982\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769982\(v=vs.85\)) denetimine IDM_ORDERLIST komut kimliği gönderir.
 
-##  <a name="outdent"></a>CHtmlEditCtrlBase:: Girintiyi Azalt
+## <a name="chtmleditctrlbaseoutdent"></a><a name="outdent"></a>CHtmlEditCtrlBase::Outdent
 
-, Geçerli seçimin bulunduğu biçim bloğunun girintilenmesini bir artış oranında düşürür.
+Geçerli seçimin bulunduğu biçim bloğunun girintisini bir artışla azaltır.
 
 ```
 HRESULT Outdent() const;
@@ -1598,15 +1598,15 @@ HRESULT Outdent() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_OUTDENT komut kimliğini](/previous-versions/aa770015\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa770015\(v=vs.85\)) denetimine IDM_OUTDENT komut kimliğini gönderir.
 
-##  <a name="paragraph"></a>CHtmlEditCtrlBase::P aragraf
+## <a name="chtmleditctrlbaseparagraph"></a><a name="paragraph"></a>CHtmlEditCtrlBase::Paragraph
 
-Geçerli seçimde bir satır sonu üzerine yazar.
+Geçerli seçimde satır sonu üzerine yazar.
 
 ```
 HRESULT Paragraph(LPCTSTR szId = NULL) const;
@@ -1614,20 +1614,20 @@ HRESULT Paragraph(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Paragrafın KIMLIĞI.
+*szId*<br/>
+Paragrafın kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_PARAGRAPH komut kimliğini](/previous-versions/aa769983\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769983\(v=vs.85\)) denetimine IDM_PARAGRAPH komut kimliği gönderir.
 
-##  <a name="paste"></a>CHtmlEditCtrlBase::P aste
+## <a name="chtmleditctrlbasepaste"></a><a name="paste"></a>CHtmlEditCtrlBase::Paste
 
-Geçerli seçimdeki Pano içeriğinin üzerine yazar.
+Geçerli seçimde pano içeriğini üzerine yazar.
 
 ```
 HRESULT Paste() const;
@@ -1635,13 +1635,13 @@ HRESULT Paste() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_PASTE komut kimliğini](/previous-versions/aa770017\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa770017\(v=vs.85\)) denetimine IDM_PASTE komut kimliğini gönderir.
 
-##  <a name="printdocument"></a>CHtmlEditCtrlBase::P rintDocument
+## <a name="chtmleditctrlbaseprintdocument"></a><a name="printdocument"></a>CHtmlEditCtrlBase::PrintBelge
 
 Geçerli belgeyi yazdırır.
 
@@ -1654,22 +1654,22 @@ HRESULT PrintDocument(bool bShowPrintDialog) const;
 ### <a name="parameters"></a>Parametreler
 
 *szPrintTemplate*<br/>
-Yazdırma şablonunun yolu; hiçbiri belirtilmemişse, varsayılan yazdırma şablonu kullanılır.
+Yazdırma şablonuna giden yol; hiçbiri belirtilmemişse, varsayılan yazdırma şablonu kullanılır.
 
 *bShowPrintDialog*<br/>
-DOĞRU ise, Yazdır iletişim kutusunu gösterir.
+TRUE ise, Yazdır iletişim kutusunu gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_PRINT komut kimliğini](/previous-versions/aa769937\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769937\(v=vs.85\)) denetimine IDM_PRINT komut kimliği gönderir.
 
-##  <a name="printpreview"></a>CHtmlEditCtrlBase::P rintPreview
+## <a name="chtmleditctrlbaseprintpreview"></a><a name="printpreview"></a>CHtmlEditCtrlBase::PrintPreview
 
-Varsayılan baskı önizleme şablonunu veya özel bir şablonu kullanarak geçerli belge için baskı önizleme penceresini açar.
+Varsayılan yazdırma önizleme şablonu veya özel bir şablon kullanarak geçerli belgeiçin Yazdırma Önizleme penceresini açar.
 
 ```
 HRESULT PrintPreview() const;
@@ -1679,19 +1679,19 @@ HRESULT PrintPreview(LPCTSTR szPrintTemplate) const;
 ### <a name="parameters"></a>Parametreler
 
 *szPrintTemplate*<br/>
-Yazdırma şablonunun yolu.
+Yazdırma şablonuna giden yol.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_PRINTPREVIEW komut kimliğini](/previous-versions/aa769938\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769938\(v=vs.85\)) denetimine IDM_PRINTPREVIEW komut kimliği gönderir.
 
-##  <a name="querystatus"></a>CHtmlEditCtrlBase:: QueryStatus
+## <a name="chtmleditctrlbasequerystatus"></a><a name="querystatus"></a>CHtmlEditCtrlBase::Sorgu Durumu
 
-Komutların durumunu sorgulamak için bu yöntemi çağırın.
+Komutların durumunu sorgulamak için bu yöntemi arayın.
 
 ```
 long QueryStatus(long cmdID) const;
@@ -1700,15 +1700,15 @@ long QueryStatus(long cmdID) const;
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
-Komut KIMLIĞI. Komut tanımlayıcıları CGID_MSHTML komut grubundan alınır. Bu komutlar Mshtmcıd. h içinde tanımlanır. Ayrıca, listeyi [MSHTML komut tanımlayıcılarında](https://go.microsoft.com/fwlink/p/?linkid=149220)çevrimiçi olarak bulabilirsiniz.
+Komut kimliği. Komut tanımlayıcıları CGID_MSHTML komut grubundan alınır. Bu komutlar Mshtmcid.h olarak tanımlanır. Ayrıca [MSHTML Komut Tanımlayıcıları](https://go.microsoft.com/fwlink/p/?linkid=149220)online listesini bulabilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*CmdID*durumunu belirten bir [OLECMDF](/windows/win32/api/docobj/ne-docobj-olecmdf) veya hata durumunda 0 döndürür.
+*CmdID*durumunu belirten bir [OLECMDF](/windows/win32/api/docobj/ne-docobj-olecmdf) veya hata durumunda 0 verir.
 
-##  <a name="radiobutton"></a>CHtmlEditCtrlBase:: RadioButton
+## <a name="chtmleditctrlbaseradiobutton"></a><a name="radiobutton"></a>CHtmlEditCtrlBase::RadioButton
 
-Geçerli seçimdeki bir radyo denetiminin üzerine yazar.
+Geçerli seçimde bir radyo denetiminin üzerine yazar.
 
 ```
 HRESULT RadioButton(LPCTSTR szId = NULL) const;
@@ -1716,18 +1716,18 @@ HRESULT RadioButton(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Radyo düğmesinin KIMLIĞI.
+*szId*<br/>
+Radyo düğmesinin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_RADIOBUTTON komut kimliğini](/previous-versions/aa769977\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769977\(v=vs.85\)) denetimine IDM_RADIOBUTTON komut kimliğini gönderir.
 
-##  <a name="refreshdocument"></a>CHtmlEditCtrlBase:: RefreshDocument
+## <a name="chtmleditctrlbaserefreshdocument"></a><a name="refreshdocument"></a>CHtmlEditCtrlBase::RefreshDocument
 
 Geçerli belgeyi yeniler.
 
@@ -1737,15 +1737,15 @@ HRESULT RefreshDocument() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_REFRESH komut kimliğini](/previous-versions/aa770020\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa770020\(v=vs.85\)) denetimine IDM_REFRESH Komut Kimliği gönderir.
 
-##  <a name="removeformat"></a>CHtmlEditCtrlBase:: RemoveFormat
+## <a name="chtmleditctrlbaseremoveformat"></a><a name="removeformat"></a>CHtmlEditCtrlBase::RemoveFormat
 
-Biçimlendirme etiketlerini Geçerli seçimden kaldırır.
+Biçimlendirme etiketlerini geçerli seçimden kaldırır.
 
 ```
 HRESULT RemoveFormat() const;
@@ -1753,13 +1753,13 @@ HRESULT RemoveFormat() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_REMOVEFORMAT komut kimliğini](/previous-versions/aa770021\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa770021\(v=vs.85\)) denetimine IDM_REMOVEFORMAT komut kimliği gönderir.
 
-##  <a name="saveas"></a>CHtmlEditCtrlBase:: SaveAs
+## <a name="chtmleditctrlbasesaveas"></a><a name="saveas"></a>CHtmlEditCtrlBase::SaveAs
 
 Geçerli Web sayfasını bir dosyaya kaydeder.
 
@@ -1770,19 +1770,19 @@ HRESULT SaveAs(LPCTSTR szPath = NULL) const;
 ### <a name="parameters"></a>Parametreler
 
 *szPath*<br/>
-Web sayfasının kaydedileceği yol ve dosya adı.
+Web sayfasını kaydetmek için yol ve dosya adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_SAVEAS komut kimliğini](/previous-versions/aa770024\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa770024\(v=vs.85\)) denetimine IDM_SAVEAS komut kimliği gönderir.
 
-##  <a name="selectall"></a>CHtmlEditCtrlBase:: SelectAll
+## <a name="chtmleditctrlbaseselectall"></a><a name="selectall"></a>CHtmlEditCtrlBase::SelectAll
 
-Tüm belgeyi seçer.
+Belgenin tamamını seçer.
 
 ```
 HRESULT SelectAll() const;
@@ -1790,15 +1790,15 @@ HRESULT SelectAll() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_SELECTALL komut kimliğini](/previous-versions/aa770025\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa770025\(v=vs.85\)) denetimine IDM_SELECTALL komut kimliğini gönderir.
 
-##  <a name="set2dposition"></a>CHtmlEditCtrlBase::Set2DPosition
+## <a name="chtmleditctrlbaseset2dposition"></a><a name="set2dposition"></a>CHtmlEditCtrlBase::Set2DPosition
 
-Sürükleyerek kesinlikle konumlandırılmış öğelerin taşınmasını sağlar.
+Kesinlikle konumlandırılmış öğelerin sürükleyerek hareket etmesini sağlar.
 
 ```
 HRESULT Set2DPosition(bool bNewValue) const;
@@ -1807,19 +1807,19 @@ HRESULT Set2DPosition(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, mutlak konumlandırılmış öğeler sürükleyerek taşınabilir.
+DOĞRUYSA, kesinlikle konumlandırılmış öğeler sürükleyerek hareket ettirilebilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_2D_POSITION komut kimliğini](/previous-versions/aa769887\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769887\(v=vs.85\)) denetimine IDM_2D_POSITION komut kimliğini gönderir.
 
-##  <a name="setabsoluteposition"></a>CHtmlEditCtrlBase::SetAbsolutePosition
+## <a name="chtmleditctrlbasesetabsoluteposition"></a><a name="setabsoluteposition"></a>CHtmlEditCtrlBase::SetAbsolutePosition
 
-Bir öğenin Position özelliğini "Absolute" veya "static" olarak ayarlar.
+Bir öğenin konum özelliğini "mutlak" veya "statik" olarak ayarlar.
 
 ```
 HRESULT SetAbsolutePosition(bool bNewValue) const;
@@ -1828,17 +1828,17 @@ HRESULT SetAbsolutePosition(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, öğenin Position özelliği "Absolute" olur; YANLıŞSA, "static" tir.
+DOĞRUise, öğenin konum özelliği "mutlak"tır; FALSE ise, "statik" dir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_ABSOLUTE_POSITION komut kimliğini](/previous-versions/aa769889\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769889\(v=vs.85\)) denetimine IDM_ABSOLUTE_POSITION komut kimliği gönderir.
 
-##  <a name="setatomicselection"></a>CHtmlEditCtrlBase:: SetAtomicSelection
+## <a name="chtmleditctrlbasesetatomicselection"></a><a name="setatomicselection"></a>CHtmlEditCtrlBase::SetAtomicSelection
 
 Atomik seçim modunu ayarlayın.
 
@@ -1849,17 +1849,17 @@ HRESULT SetAtomicSelection(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, bir ATOMICSELECTION özniteliği TRUE olarak ayarlanan herhangi bir öğe yalnızca birim olarak seçilebilir olur.
+DOĞRUYSA, DOĞRU'ya ayarlanmış atomicselection özniteliği olan herhangi bir öğe yalnızca bir birim olarak seçilebilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_ATOMICSELECTION komut kimliğini](/previous-versions/aa769892\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769892\(v=vs.85\)) denetimine IDM_ATOMICSELECTION komut kimliğini gönderir.
 
-##  <a name="setautourldetectmode"></a>CHtmlEditCtrlBase:: SetAutoURLDetectMode
+## <a name="chtmleditctrlbasesetautourldetectmode"></a><a name="setautourldetectmode"></a>CHtmlEditCtrlBase::SetAutoURLDetectMode
 
 Otomatik URL algılamayı açar ve kapatır.
 
@@ -1870,17 +1870,17 @@ HRESULT SetAutoURLDetectMode(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise otomatik URL algılaması etkindir.
+TRUE ise, otomatik URL algılama sı etkinleştirilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_AUTOURLDETECT_MODE komut kimliğini](/previous-versions/aa769893\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769893\(v=vs.85\)) denetimine IDM_AUTOURLDETECT_MODE komut kimliği gönderir.
 
-##  <a name="setbackcolor"></a>CHtmlEditCtrlBase:: SetBackColor
+## <a name="chtmleditctrlbasesetbackcolor"></a><a name="setbackcolor"></a>CHtmlEditCtrlBase::SetBackColor
 
 Geçerli seçimin arka plan rengini ayarlar.
 
@@ -1892,20 +1892,20 @@ HRESULT SetBackColor(LPCTSTR szColor) const;
 ### <a name="parameters"></a>Parametreler
 
 *nColor*<br/>
-Renk. [IDM_BACKCOLOR komut kimliğinde](/previous-versions/aa769858\(v=vs.85\)) *pvain* bölümüne bakın.
+Rengi. [IDM_BACKCOLOR Komut Kimliği](/previous-versions/aa769858\(v=vs.85\)) *pvaIn* bakın.
 
 *szColor*<br/>
-Renk. [IDM_BACKCOLOR komut kimliğinde](/previous-versions/aa769858\(v=vs.85\)) *pvain* bölümüne bakın.
+Rengi. [IDM_BACKCOLOR Komut Kimliği](/previous-versions/aa769858\(v=vs.85\)) *pvaIn* bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_BACKCOLOR_ komut kimliğini](/previous-versions/aa769858\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769858\(v=vs.85\)) denetimine IDM_BACKCOLOR_ komut kimliği gönderir.
 
-##  <a name="setblockformat"></a>CHtmlEditCtrlBase:: SetBlockFormat
+## <a name="chtmleditctrlbasesetblockformat"></a><a name="setblockformat"></a>CHtmlEditCtrlBase::SetBlockFormat
 
 Geçerli blok biçimi etiketini ayarlar.
 
@@ -1920,15 +1920,15 @@ Biçim etiketi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_BLOCKFMT_COMMAND kimliğini](/previous-versions/aa769883\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [IDM_BLOCKFMT_command kimliğini](/previous-versions/aa769883\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setbookmark"></a>CHtmlEditCtrlBase:: SetBookMark
+## <a name="chtmleditctrlbasesetbookmark"></a><a name="setbookmark"></a>CHtmlEditCtrlBase::SetBookMark
 
-Geçerli seçim veya ekleme noktası için bir yer işareti Bağlayıcısı oluşturur.
+Geçerli seçim veya ekleme noktası için yer imi çapası oluşturur.
 
 ```
 HRESULT SetBookMark(LPCTSTR szAnchorName) const;
@@ -1937,19 +1937,19 @@ HRESULT SetBookMark(LPCTSTR szAnchorName) const;
 ### <a name="parameters"></a>Parametreler
 
 *szAnchorName*<br/>
-Bağlantı adı.
+Çapa adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_BOOKMARK komut kimliğini](/previous-versions/aa769873\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769873\(v=vs.85\)) denetimine IDM_BOOKMARK komut kimliğini gönderir.
 
-##  <a name="setcsseditinglevel"></a>CHtmlEditCtrlBase::SetCSSEditingLevel
+## <a name="chtmleditctrlbasesetcsseditinglevel"></a><a name="setcsseditinglevel"></a>CHtmlEditCtrlBase::SetCSSEditingLevel
 
-Düzenleyicinin destekleyeceği CSS düzeyini (CSS1 veya CSS2) seçer (varsa).
+Varsa editörün hangi CSS düzeyini (CSS1 veya CSS2) destekleyeceğini seçer.
 
 ```
 HRESULT SetCSSEditingLevel(short nLevel) const;
@@ -1957,20 +1957,20 @@ HRESULT SetCSSEditingLevel(short nLevel) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nLevel*<br/>
-CSS düzeyi. CSS desteği istemiyorsanız, 0 geçirin.
+*nSeviye*<br/>
+CSS seviyesi. CSS desteği istemiyorsanız 0'ı geçirin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_CSSEDITING_LEVEL komut kimliğini](/previous-versions/aa769903\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769903\(v=vs.85\)) denetimine IDM_CSSEDITING_LEVEL komut kimliğini gönderir.
 
-##  <a name="setdefaultcomposesettings"></a>CHtmlEditCtrlBase:: SetDefaultComposeSettings
+## <a name="chtmleditctrlbasesetdefaultcomposesettings"></a><a name="setdefaultcomposesettings"></a>CHtmlEditCtrlBase::SetDefaultComposeAyarlar
 
-Varsayılan oluşturma ayarlarını ayarlamak için bu yöntemi çağırın.
+Varsayılan oluşturma ayarlarını ayarlamak için bu yöntemi arayın.
 
 ```
 HRESULT SetDefaultComposeSettings(
@@ -1997,26 +1997,26 @@ Yazı tipi rengi.
 *crFontBgColor*<br/>
 Yazı tipi arka plan rengi.
 
-*Bbeski*<br/>
-Kalın metin için TRUE geçirin.
+*bBold*<br/>
+Kalın metin için TRUE'ya geç.
 
-*Bitic*<br/>
-İtalik metin için TRUE geçirin.
+*bItalik*<br/>
+Italik metin için TRUE'ya geç.
 
 *bUnderline*<br/>
-Altı çizili metin için doğru geçirin.
+Altı çizili metin için TRUE'yı geçirin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_COMPOSESETTINGS komut kimliğini](/previous-versions/aa769901\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769901\(v=vs.85\)) denetimine IDM_COMPOSESETTINGS komut kimliği gönderir.
 
-##  <a name="setdesignmode"></a>CHtmlEditCtrlBase:: SetDesignMode
+## <a name="chtmleditctrlbasesetdesignmode"></a><a name="setdesignmode"></a>CHtmlEditCtrlBase::SetDesignMode
 
-Tasarım modunu ayarla.
+Tasarım modunu ayarlayın.
 
 ```
 BOOL SetDesignMode(BOOL bMode) const;
@@ -2025,15 +2025,15 @@ BOOL SetDesignMode(BOOL bMode) const;
 ### <a name="parameters"></a>Parametreler
 
 *bMode*<br/>
-TRUE ise tasarım modunu açar.
+TRUE ise, tasarım modunu açar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE, hatada FALSE döndürür.
+Başarı doğru döndürür, başarısızlık false.
 
-##  <a name="setdisableeditfocusui"></a>CHtmlEditCtrlBase:: Setdisableeditfocusuı
+## <a name="chtmleditctrlbasesetdisableeditfocusui"></a><a name="setdisableeditfocusui"></a>CHtmlEditCtrlBase::SetDisableEditFocusUI
 
-Taranmış kenarlığı devre dışı bırakır ve düzenleme odağı olan bir öğe etrafında işleyicileri işler.
+Yumurtadan çıkan kenarlığı devre dışı katır ve odak noktası olan bir öğenin etrafında işler.
 
 ```
 HRESULT SetDisableEditFocusUI(bool bNewValue) const;
@@ -2042,19 +2042,19 @@ HRESULT SetDisableEditFocusUI(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, Tasarım modunda, öğe "düzenleme odağı" olduğunda, bir site seçilebilir öğesi etrafında, taranmış kenarlığı devre dışı bırakır; diğer bir deyişle, öğenin metni veya içeriği düzenlenebildiği zaman.
+TRUE ise, yumurtadan çıkan kenarlığı devre dışı kaldırıp, öğe tasarım modunda "düzenleme odağı" olduğunda site seçilebilir öğenin etrafında işler; diğer bir de, öğenin metni veya içeriği düzenlenebileceği zaman.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM_DISABLE_EDITFOCUS_UI komut kimliğini](/previous-versions/aa769905\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769905\(v=vs.85\)) denetimine IDM_DISABLE_EDITFOCUS_UI komut kimliğini gönderir.
 
-##  <a name="setdocumenthtml"></a>CHtmlEditCtrlBase:: Setbelgetrtml
+## <a name="chtmleditctrlbasesetdocumenthtml"></a><a name="setdocumenthtml"></a>CHtmlEditCtrlBase::SetDocumentHTML
 
-Geçerli belgenin HTML 'ini ayarlar.
+Geçerli belgenin HTML'sini ayarlar.
 
 ```
 HRESULT SetDocumentHTML(LPCTSTR szHTML) const;
@@ -2063,15 +2063,15 @@ HRESULT SetDocumentHTML(LPCTSTR szHTML) const;
 ### <a name="parameters"></a>Parametreler
 
 *szHTML*<br/>
-HTML.
+The HTML.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="setfontface"></a>CHtmlEditCtrlBase:: SetFontFace
+## <a name="chtmleditctrlbasesetfontface"></a><a name="setfontface"></a>CHtmlEditCtrlBase::SetFontFace
 
-Geçerli seçimin yazı tipini ayarlar.
+Geçerli seçim için yazı tipini ayarlar.
 
 ```
 HRESULT SetFontFace(LPCTSTR szFace) const;
@@ -2079,20 +2079,20 @@ HRESULT SetFontFace(LPCTSTR szFace) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Szyüz*<br/>
+*szYüz*<br/>
 Yazı tipi adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IStream FONTNAME komut kimliğini](/previous-versions/aa769880\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [IDM FONTNAME Komut Kimliğini](/previous-versions/aa769880\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setfontsize"></a>CHtmlEditCtrlBase:: SetFontSize
+## <a name="chtmleditctrlbasesetfontsize"></a><a name="setfontsize"></a>CHtmlEditCtrlBase::SetFontSize
 
-Geçerli seçimin yazı tipi boyutunu ayarlar.
+Geçerli seçim için yazı tipi boyutunu ayarlar.
 
 ```
 HRESULT SetFontSize(unsigned short size) const;
@@ -2100,18 +2100,18 @@ HRESULT SetFontSize(unsigned short size) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*boyutla*<br/>
-HTML yazı tipi boyutu (1-7). 0 değeri, yazı tipi boyutunu 1 olarak ayarlar.
+*Boyutu*<br/>
+HTML yazı tipi boyutu (1-7). 0 değeri yazı tipi boyutunu 1 olarak ayarlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP FONTSIZE komut kimliğini](/previous-versions/aa769881\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM FONTSIZE komut kimliğini](/previous-versions/aa769881\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setforecolor"></a>CHtmlEditCtrlBase:: SetForeColor
+## <a name="chtmleditctrlbasesetforecolor"></a><a name="setforecolor"></a>CHtmlEditCtrlBase::SetForeColor
 
 Geçerli seçimin ön plan (metin) rengini ayarlar.
 
@@ -2123,22 +2123,22 @@ HRESULT SetForeColor(int nColor) const;
 ### <a name="parameters"></a>Parametreler
 
 *szColor*<br/>
-Renk.
+Rengi.
 
 *nColor*<br/>
-Renk.
+Rengi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IStream FORECOLOR komut kimliğini](/previous-versions/aa769882\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM FORECOLOR komut kimliğini](/previous-versions/aa769882\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setie5pastemode"></a>CHtmlEditCtrlBase::SetIE5PasteMode
+## <a name="chtmleditctrlbasesetie5pastemode"></a><a name="setie5pastemode"></a>CHtmlEditCtrlBase::SetIE5PasteMode
 
-Yapıştırma işlemini Microsoft Internet Explorer 5 ile uyumlu olacak şekilde ayarlar.
+Yapıştırişlemi Microsoft Internet Explorer 5 ile uyumlu olacak şekilde ayarlar.
 
 ```
 HRESULT SetIE5PasteMode(bool bNewValue) const;
@@ -2147,19 +2147,19 @@ HRESULT SetIE5PasteMode(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-DOĞRU ise, tüm yapıştırma işlemleri Internet Explorer 5 ile uyumludur; YANLıŞSA, yapıştırma işlemleri Internet Explorer 5,5 ile uyumludur.
+TRUE ise, tüm yapıştırıişlemleri Internet Explorer 5 ile uyumludur; FALSE ise, yapıştırın işlemleri Internet Explorer 5.5 ile uyumludur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IStream IE50_PASTE_MODE komut kimliğini](/previous-versions/aa769923\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM IE50_PASTE_MODE komut kimliğini](/previous-versions/aa769923\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setliveresize"></a>CHtmlEditCtrlBase:: SetLiveResize
+## <a name="chtmleditctrlbasesetliveresize"></a><a name="setliveresize"></a>CHtmlEditCtrlBase::SetLiveResize
 
-WebBrowser 'ın, yalnızca taşıma veya yeniden boyutlandırma işleminin tamamlanması yerine bir yeniden boyutlandırma veya taşıma işlemi sırasında bir öğenin görünümünü sürekli güncelleştirmesine neden olur.
+WebBrowser'ın, yalnızca taşıma veya yeniden boyutlandırma işlemi tamamlandığında güncelleştirmek yerine, yeniden boyutlandırma veya taşıma işlemi sırasında bir öğenin görünümünü sürekli olarak güncellemesine neden olur.
 
 ```
 HRESULT SetLiveResize(bool bNewValue) const;
@@ -2168,19 +2168,19 @@ HRESULT SetLiveResize(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, WebBrowser 'ın yeniden boyutlandırma veya taşıma işlemi sırasında öğenin görünümünü sürekli güncelleştirmesine neden olur; YANLıŞ ise, yalnızca taşıma veya yeniden boyutlandırma tamamlandığında güncelleştirilir.
+TRUE ise, WebBrowser'ın yeniden boyutlandırma veya taşıma işlemi sırasında bir öğenin görünümünü sürekli olarak güncellemesine neden olur; FALSE ise, yalnızca taşıma veya yeniden boyutlandırma tamamlandığında güncellenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP LIVERESIZE komut kimliğini](/previous-versions/aa769928\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM LIVERESIZE komut kimliğini](/previous-versions/aa769928\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setmultiselect"></a>CHtmlEditCtrlBase:: SetMultiSelect
+## <a name="chtmleditctrlbasesetmultiselect"></a><a name="setmultiselect"></a>CHtmlEditCtrlBase::SetMultiSelect
 
-Çoklu seçime izin vermez.
+Birden çok seçim sağlar.
 
 ```
 HRESULT SetMultiSelect(bool bNewValue) const;
@@ -2189,19 +2189,19 @@ HRESULT SetMultiSelect(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, kullanıcı SHIFT veya CTRL tuşlarını tuttuğunda, bir seferde birden fazla site seçilebilir öğe seçimine izin verir.
+TRUE ise, kullanıcıSHIFT veya CTRL tuşlarını tuttuğu bir anda birden fazla site seçilebilir öğenin seçilmesine olanak tanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IStream ÇOĞULSEÇIMI komut kimliğini](/previous-versions/aa769929\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM MULTIPLESELECTION komut kimliğini](/previous-versions/aa769929\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setoverridecursor"></a>CHtmlEditCtrlBase::SetOverrideCursor
+## <a name="chtmleditctrlbasesetoverridecursor"></a><a name="setoverridecursor"></a>CHtmlEditCtrlBase::SetOverrideCursor
 
-WebBrowser, fare işaretçisini hiçbir şekilde değiştirmemek için komutlar.
+WebBrowser'a fare işaretçisini asla değiştirmeme komutu.
 
 ```
 HRESULT SetOverrideCursor(bool bNewValue) const;
@@ -2210,19 +2210,19 @@ HRESULT SetOverrideCursor(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise WebBrowser, fare işaretçisini değiştirmez.
+TRUE ise, WebBrowser fare işaretçisini değiştirmez.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IStream OVERRIDE_CURSOR komut kimliğini](/previous-versions/aa769932\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM OVERRIDE_CURSOR komut kimliğini](/previous-versions/aa769932\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setoverwritemode"></a>CHtmlEditCtrlBase:: SetOverwriteMode
+## <a name="chtmleditctrlbasesetoverwritemode"></a><a name="setoverwritemode"></a>CHtmlEditCtrlBase::SetOverwriteMode
 
-Metin girişi modunu ekleme ve üzerine yazma arasında değiştirir.
+Ekle ve üzerine yazma arasındaki metin giriş modunu geçişe geçer.
 
 ```
 HRESULT SetOverwriteMode(bool bMode) const;
@@ -2231,19 +2231,19 @@ HRESULT SetOverwriteMode(bool bMode) const;
 ### <a name="parameters"></a>Parametreler
 
 *bMode*<br/>
-TRUE ise metin girişi modu üzerine yazılır; FALSE ise metin girişi modu eklenir.
+TRUE ise, metin giriş modu üzerine yazılır; FALSE ise, metin giriş modu eklenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IStream 'ın ÜZERINE yazma komut kimliğini](/previous-versions/aa770016\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM OVERWRITE komut kimliğini](/previous-versions/aa770016\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setrespectvisindesign"></a>CHtmlEditCtrlBase:: SETbir Tvisındesign
+## <a name="chtmleditctrlbasesetrespectvisindesign"></a><a name="setrespectvisindesign"></a>CHtmlEditCtrlBase::SetRespectVisInDesign
 
-Tasarım modundaki görünmez öğeleri gizler.
+Görünmez öğeleri tasarım modunda gizler.
 
 ```
 HRESULT SetRespectVisInDesign(bool bNewValue) const;
@@ -2252,19 +2252,19 @@ HRESULT SetRespectVisInDesign(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, görünürlüğü "Hidden" veya Display özelliği "none" olarak ayarlanmış olan tüm öğeler hem tasarım modunda hem de tarama modunda gösterilmez; YANLıŞ ise, bu öğeler yalnızca tarama modunda görüntülenir.
+TRUE ise, görünürlüğü "gizli" olarak ayarlanmış veya "hiçbiri" olarak ayarlanmış özelliği görüntüleyen öğeler hem tasarım modunda hem de gözatma modunda gösterilmez; FALSE ise, bu öğeler yalnızca gözatma modunda görüntülenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IStream RESPECTVISIBILITY_INDESIGN komut kimliğini](/previous-versions/aa770023\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM RESPECTVISIBILITY_INDESIGN komut kimliğini](/previous-versions/aa770023\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setshowalignedsitetags"></a>CHtmlEditCtrlBase:: SetShowAlignedSiteTags
+## <a name="chtmleditctrlbasesetshowalignedsitetags"></a><a name="setshowalignedsitetags"></a>CHtmlEditCtrlBase::SetShowAlignedSiteTags
 
-`styleFloat` Özelliği olan tüm öğeler için bir karakter görüntüler.
+Özelliğe sahip tüm öğeler için `styleFloat` bir glifler görüntüler.
 
 ```
 HRESULT SetShowAlignedSiteTags(bool bNewValue) const;
@@ -2273,19 +2273,19 @@ HRESULT SetShowAlignedSiteTags(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, `styleFloat` özelliği olan tüm öğeler için bir karakter görüntüler.
+TRUE ise, bir özelliğe sahip tüm `styleFloat` öğeler için bir glifler görüntüler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP SHOWALIGNEDSITETAGS komut kimliğini](/previous-versions/aa769947\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM SHOWALIGNEDSITETAGS komut kimliğini](/previous-versions/aa769947\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setshowalltags"></a>CHtmlEditCtrlBase:: SetShowAllTags
+## <a name="chtmleditctrlbasesetshowalltags"></a><a name="setshowalltags"></a>CHtmlEditCtrlBase::SetShowAllEtiketler
 
-Bir belgedeki tüm etiketlerin konumunu göstermek için glifleri görüntüler.
+Belgedeki tüm etiketlerin konumunu göstermek için glifleri görüntüler.
 
 ```
 HRESULT SetShowAllTags(bool bNewValue) const;
@@ -2294,19 +2294,19 @@ HRESULT SetShowAllTags(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, bir belgedeki tüm etiketlerin konumunu göstermek için glifleri görüntüler.
+TRUE ise, belgedeki tüm etiketlerin konumunu göstermek için glifler görüntüler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP SHOWALLTAGS komut kimliğini](/previous-versions/aa769948\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM SHOWALLTAGS komut kimliğini](/previous-versions/aa769948\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setshowareatags"></a>CHtmlEditCtrlBase:: SetShowAreaTags
+## <a name="chtmleditctrlbasesetshowareatags"></a><a name="setshowareatags"></a>CHtmlEditCtrlBase::SetShowAreaEtiketler
 
-Tüm alan etiketleri için bir karakter görüntüler.
+Tüm alan etiketleri için bir glifler görüntüler.
 
 ```
 HRESULT SetShowAreaTags(bool bNewValue) const;
@@ -2315,19 +2315,19 @@ HRESULT SetShowAreaTags(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, tüm alan etiketleri için bir karakter görüntüler.
+TRUE ise, tüm alan etiketleri için bir glifler görüntüler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP SHOWAREATAGS komut kimliğini](/previous-versions/aa769949\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM SHOWAREATAGS komut kimliğini](/previous-versions/aa769949\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setshowbrtags"></a>CHtmlEditCtrlBase:: SetShowBRTags
+## <a name="chtmleditctrlbasesetshowbrtags"></a><a name="setshowbrtags"></a>CHtmlEditCtrlBase::SetShowBREtiketler
 
-Tüm br etiketleri için bir karakter görüntüler.
+Tüm br etiketleri için bir glifler görüntüler.
 
 ```
 HRESULT SetShowBRTags(bool bNewValue) const;
@@ -2336,19 +2336,19 @@ HRESULT SetShowBRTags(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, tüm br etiketleri için bir karakter görüntüler.
+TRUE ise, tüm br etiketleri için bir glifler görüntüler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP SHOWWBRTAGS komut kimliğini](/previous-versions/aa769956\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM SHOWWBRTAGS komut kimliğini](/previous-versions/aa769956\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setshowcommenttags"></a>CHtmlEditCtrlBase:: SetShowCommentTags
+## <a name="chtmleditctrlbasesetshowcommenttags"></a><a name="setshowcommenttags"></a>CHtmlEditCtrlBase::SetShowCommentEtiketler
 
-Tüm açıklama etiketleri için bir karakter görüntüler.
+Tüm yorum etiketleri için bir glifler görüntüler.
 
 ```
 HRESULT SetShowCommentTags(bool bNewValue) const;
@@ -2357,19 +2357,19 @@ HRESULT SetShowCommentTags(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, tüm açıklama etiketleri için bir karakter görüntüler.
+TRUE ise, tüm yorum etiketleri için bir glifler görüntüler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP SHOWCOMMENTTAGS komut kimliğini](/previous-versions/aa769950\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM SHOWCOMMENTTAGS komut kimliğini](/previous-versions/aa769950\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setshowmisctags"></a>CHtmlEditCtrlBase:: SetShowMiscTags
+## <a name="chtmleditctrlbasesetshowmisctags"></a><a name="setshowmisctags"></a>CHtmlEditCtrlBase::SetShowMiscEtiketler
 
-Microsoft Internet Explorer 4,0 ' de gösterilen tüm etiketleri görüntüler.
+Microsoft Internet Explorer 4.0'da gösterilen tüm etiketleri görüntüler.
 
 ```
 HRESULT SetShowMiscTags(bool bNewValue) const;
@@ -2378,19 +2378,19 @@ HRESULT SetShowMiscTags(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-DOĞRU ise, Microsoft Internet Explorer 4,0 ' de gösterilen tüm etiketleri görüntüler.
+TRUE ise, Microsoft Internet Explorer 4.0'da gösterilen tüm etiketleri görüntüler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP SHOWMISCTAGS komut kimliğini](/previous-versions/aa769952\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM SHOWMISCTAGS komut kimliğini](/previous-versions/aa769952\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setshowscripttags"></a>CHtmlEditCtrlBase:: SetShowScriptTags
+## <a name="chtmleditctrlbasesetshowscripttags"></a><a name="setshowscripttags"></a>CHtmlEditCtrlBase::SetShowScriptEtiketler
 
-Tüm komut dosyası etiketleri için bir karakter görüntüler.
+Tüm komut dosyası etiketleri için bir glifler görüntüler.
 
 ```
 HRESULT SetShowScriptTags(bool bNewValue) const;
@@ -2399,19 +2399,19 @@ HRESULT SetShowScriptTags(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, tüm betik etiketleri için bir karakter görüntüler.
+TRUE ise, tüm komut dosyası etiketleri için bir glifler görüntüler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP SHOWSCRIPTTAGS komut kimliğini](/previous-versions/aa769953\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM SHOWSCRIPTTAGS komut kimliğini](/previous-versions/aa769953\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setshowstyletags"></a>CHtmlEditCtrlBase:: SetShowStyleTags
+## <a name="chtmleditctrlbasesetshowstyletags"></a><a name="setshowstyletags"></a>CHtmlEditCtrlBase::SetShowStyleEtiketler
 
-Tüm stil etiketleri için bir karakter görüntüler.
+Tüm stil etiketleri için bir glifler görüntüler.
 
 ```
 HRESULT SetShowStyleTags(bool bNewValue) const;
@@ -2420,19 +2420,19 @@ HRESULT SetShowStyleTags(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-TRUE ise, tüm stil etiketleri için bir karakter görüntüler.
+TRUE ise, tüm stil etiketleri için bir glifler görüntüler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP SHOWSTYLETAGS komut kimliğini](/previous-versions/aa769954\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM SHOWSTYLETAGS komut kimliğini](/previous-versions/aa769954\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="setshowunknowntags"></a>CHtmlEditCtrlBase:: SetShowUnknownTags
+## <a name="chtmleditctrlbasesetshowunknowntags"></a><a name="setshowunknowntags"></a>CHtmlEditCtrlBase::SetShowUnknownTags
 
-Tüm bilinmeyen Etiketler için bir karakter görüntüler.
+Bilinmeyen tüm etiketler için bir glifler görüntüler.
 
 ```
 HRESULT SetShowUnknownTags(bool bNewValue) const;
@@ -2441,19 +2441,19 @@ HRESULT SetShowUnknownTags(bool bNewValue) const;
 ### <a name="parameters"></a>Parametreler
 
 *bNewValue*<br/>
-DOĞRU ise, tüm bilinmeyen Etiketler için bir karakter görüntüler.
+TRUE ise, bilinmeyen tüm etiketler için bir glifler görüntüler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IStream SHOWUNKNOWNTAGS komut kimliğini](/previous-versions/aa769955\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM SHOWUNKNOWNTAGS komut kimliğini](/previous-versions/aa769955\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="textarea"></a>CHtmlEditCtrlBase:: TextArea
+## <a name="chtmleditctrlbasetextarea"></a><a name="textarea"></a>CHtmlEditCtrlBase::TextArea
 
-Geçerli seçimde bir çok satırlı metin girişi denetiminin üzerine yazar.
+Geçerli seçimde çok satırlı metin giriş denetiminin üzerine yazar.
 
 ```
 HRESULT TextArea(LPCTSTR szId = NULL) const;
@@ -2461,20 +2461,20 @@ HRESULT TextArea(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Çok satırlı metin girişi denetiminin KIMLIĞI.
+*szId*<br/>
+Çok satırlı metin giriş denetiminin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IStream TextArea komut kimliğini](/previous-versions/aa769986\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM TEXTAREA komut kimliğini](/previous-versions/aa769986\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="textbox"></a>CHtmlEditCtrlBase:: TextBox
+## <a name="chtmleditctrlbasetextbox"></a><a name="textbox"></a>CHtmlEditCtrlBase::TextBox
 
-Geçerli seçimdeki bir metin denetiminin üzerine yazar.
+Geçerli seçimde metin denetiminin üzerine yazar.
 
 ```
 HRESULT TextBox(LPCTSTR szId = NULL) const;
@@ -2482,20 +2482,20 @@ HRESULT TextBox(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Metin denetiminin KIMLIĞI.
+*szId*<br/>
+Metin denetiminin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IStream metın kutusu komut kimliğini](/previous-versions/aa769980\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM TEXTBOX komut kimliğini](/previous-versions/aa769980\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="unbookmark"></a>CHtmlEditCtrlBase:: UnBookmark
+## <a name="chtmleditctrlbaseunbookmark"></a><a name="unbookmark"></a>CHtmlEditCtrlBase::UnBookmark
 
-Geçerli seçimden tüm yer imlerini kaldırır.
+Geçerli seçimdeki yer işaretlerini kaldırır.
 
 ```
 HRESULT UnBookmark() const;
@@ -2503,15 +2503,15 @@ HRESULT UnBookmark() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP UNBOOKMARK komut kimliğini](/previous-versions/aa770034\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM UNBOOKMARK komut kimliğini](/previous-versions/aa770034\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="underline"></a>CHtmlEditCtrlBase:: altını çiz
+## <a name="chtmleditctrlbaseunderline"></a><a name="underline"></a>CHtmlEditCtrlBase::Altı çizili
 
-Geçerli seçimi altı çizili ve altı çizili olarak değiştirir.
+Altı çizili ve altı çizili olmayan arasında geçerli seçimi geçiş.
 
 ```
 HRESULT Underline() const;
@@ -2519,15 +2519,15 @@ HRESULT Underline() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP alt çizgi komut kimliğini](/previous-versions/aa770035\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM UNDERLINE komut kimliğini](/previous-versions/aa770035\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="unlink"></a>CHtmlEditCtrlBase:: bağlantıyı kaldır
+## <a name="chtmleditctrlbaseunlink"></a><a name="unlink"></a>CHtmlEditCtrlBase::Bağlantıyı Açma
 
-Geçerli seçimden tüm köprüleri kaldırır.
+Geçerli seçimdeki tüm köprüleri kaldırır.
 
 ```
 HRESULT Unlink() const;
@@ -2535,15 +2535,15 @@ HRESULT Unlink() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDD bağlantısını kaldır komut kimliğini](/previous-versions/aa770037\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM UNLINK komut kimliğini](/previous-versions/aa770037\(v=vs.85\)) WebBrowser denetimine gönderir.
 
-##  <a name="unorderlist"></a>CHtmlEditCtrlBase:: UnorderList
+## <a name="chtmleditctrlbaseunorderlist"></a><a name="unorderlist"></a>CHtmlEditCtrlBase::Sıradışı Liste
 
-Sıralı liste ve normal biçim bloğu arasındaki geçerli seçimi değiştirir.
+Geçerli seçimi sıralı liste ile normal biçim bloğu arasında geçiş yapın.
 
 ```
 HRESULT UnorderList(LPCTSTR szId = NULL) const;
@@ -2551,18 +2551,18 @@ HRESULT UnorderList(LPCTSTR szId = NULL) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*szID*<br/>
-Sıralanmamış listenin KIMLIĞI.
+*szId*<br/>
+Sıralanmamış listenin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDP UNORDERLIST komut kimliğini](/previous-versions/aa769987\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu [yöntem, IDM UNORDERLIST komut kimliğini](/previous-versions/aa769987\(v=vs.85\)) WebBrowser denetimine gönderir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[HTMLEdit örneği](../../overview/visual-cpp-samples.md)
+[HTMLEdit Örneği](../../overview/visual-cpp-samples.md)

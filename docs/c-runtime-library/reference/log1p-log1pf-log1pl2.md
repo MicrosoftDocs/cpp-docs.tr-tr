@@ -1,10 +1,13 @@
 ---
 title: log1p, log1pf, log1pl2
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - log1p
 - log1pf
 - log1pl
+- _o_log1p
+- _o_log1pf
+- _o_log1pl
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -33,16 +37,16 @@ helpviewer_keywords:
 - log1pf function
 - log1pl function
 ms.assetid: a40d965d-b4f6-42f4-ba27-2395546f7c12
-ms.openlocfilehash: aad6675a832e1715c505026fe11ffe77f1f6d275
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b4e077f5b806dbe38ed4a4f4e8eef0259170cb7e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70953213"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81341804"
 ---
 # <a name="log1p-log1pf-log1pl"></a>log1p, log1pf, log1pl
 
-1 ile belirtilen değerin doğal logaritmasını hesaplar.
+1'in doğal logaritma ve belirtilen değeri hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,43 +74,45 @@ long double log1pl(
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*X*<br/>
 Kayan nokta bağımsız değişkeni.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, (*x* + 1) için doğal (Base-*e*) günlüğünü döndürür.
+Başarılı olursa,*(x* + 1) doğal (base-*e*) log'u döndürür.
 
 Aksi takdirde, aşağıdaki değerlerden birini döndürebilir:
 
-|Giriş|Sonuç|SEH özel durumu|errno|
+|Girdi|Sonuç|SEH özel durumu|Errno|
 |-----------|------------|-------------------|-----------|
-|\+ INF|\+ INF|||
-|Denormals|Giriş ile aynı|ÖĞE||
-|±0|Giriş ile aynı|||
-|-1|-INF|DIVBYZERO|ERANGE|
-|< -1|nBir|GEÇERSİZ|EDOM|
-|-INF|nBir|GEÇERSİZ|EDOM|
-|± SNaN|Giriş ile aynı|GEÇERSİZ||
-|± QNaN, sonsuz|Giriş ile aynı|||
+|+inf|+inf|||
+|Denormals|Girişle aynı|ALT Akış||
+|±0|Girişle aynı|||
+|-1|-inf|DIVBYZERO|Erange|
+|< -1|Nan|Geçersiz|Edom|
+|-inf|Nan|Geçersiz|Edom|
+|±SNaN|Girişle aynı|Geçersiz||
+|±QNaN, belirsiz|Girişle aynı|||
 
-**Errno** değeri, *x* =-1 olduğunda ERANGE olarak ayarlanır. **Errno** değeri, *x* <-1 ise **Edom** olarak ayarlanır.
+x *=* -1 ise **errno** değeri ERANGE olarak ayarlanır. *X* -1'e < **errno** değeri **EDOM** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*X* 0 yakınında **log1p** işlevleri kullanmaktan `log(x + 1)` daha doğru olabilir.
+**Log1p** işlevleri *x* 0'a `log(x + 1)` yakın olduğunda kullanmaktan daha doğru olabilir.
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **log1p** aşırı yüklerini çağırabilirsiniz. C programında, **log1p** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** ve **uzun** **çift** türleri alan ve döndüren **log1p** aşırı yüklerini arayabilirsiniz. C **programında, log1p** her zaman alır ve bir **çift**döndürür.
 
-*X* doğal bir sayı ise, bu işlev (*x* -1) çarpınımını logaritmasını döndürür.
+*X* doğal bir sayı ise, bu fonksiyon faktöriyel *(x* - 1) logaritma döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgi|C++ üstbilgi|
 |--------------|--------------|------------------|
-|**log1p**, **log1pf**, **log1pl**|\<Math. h >|\<cmath >|
+|**log1p**, **log1pf**, **log1pl**|\<math.h>|\<cmath>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

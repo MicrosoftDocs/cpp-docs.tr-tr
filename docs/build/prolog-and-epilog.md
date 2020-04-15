@@ -1,25 +1,25 @@
 ---
-title: x64 giriş ve bitiş
+title: x64 giriş ve bitiş bölümü
 ms.date: 12/17/2018
 ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984
-ms.openlocfilehash: a225786853fcc2eb7b6a21de29f1ccf4901e4377
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d0b7444af6e434a09f6af5f5b1c144b46c79ad56
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295252"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81328441"
 ---
-# <a name="x64-prolog-and-epilog"></a>x64 giriş ve bitiş
+# <a name="x64-prolog-and-epilog"></a>x64 giriş ve bitiş bölümü
 
-Yığın alanı ayırır her işlev, ilgili işlevi tablosu girişiyle ilişkili geriye doğru izlenen veri adres sınırları açıklanan bir giriş diğer işlevleri, kalıcı Yazmaçları kaydeder veya özel durum işleme kullanan bir çağrı olması gerekir. Daha fazla bilgi için [x64 özel durum işleme](../build/exception-handling-x64.md). Giriş bağımsız değişkeni kayıtlara ev adresleri gerekirse kalıcı Yazmaçları yığına, Yereller ve değerlendirmesidir için sabit bir yığın parçası ayırır ve isteğe bağlı olarak bir çerçeve işaretçisi oluşturur kaydeder. İlişkili veri bırakma, giriş eylemi açıklamak gerekir ve giriş kodu etkisini geri almak gereken bilgileri sağlamanız gerekir.
+Yığın alanını ayıran, diğer işlevleri çağıran, geçici olmayan kayıtları kaydeden veya özel durum işleme kullanan her işlev, ilgili işlev tablosu girişiyle ilişkili gevşeme verilerinde adres sınırları açıklanan bir prolog'a sahip olmalıdır. Daha fazla bilgi için [bkz.](../build/exception-handling-x64.md) Prolog, gerekirse bağımsız değişken kayıtlarını ev adreslerine kaydeder, yığındaki geçici olmayan kayıtları iter, yığının sabit kısmını yerel halk ve geçici ler için ayırır ve isteğe bağlı olarak bir çerçeve işaretçisi oluşturur. İlişkili gevşeme verileri prolog'un eylemini açıklamalı ve prolog kodunun etkisini geri almak için gerekli bilgileri sağlamalıdır.
 
-Sabit ayırma yığınında birden fazla sayfa olup olmadığını (diğer bir deyişle, 4096 bayt daha büyük), birden fazla sanal bellek sayfa yığın ayırma kapsayabilir ve ayırma, kendisine ayrılan önce bu nedenle, işaretlenmelidir mümkündür. Girişten çağrılabilen ve herhangi bir bağımsız değişken kayıtları yok değil, özel bir yordama bu amaç için sağlanır.
+Yığındaki sabit ayırma birden fazla sayfaysa (yani 4096 bayttan büyükse), yığın ayırmanın birden fazla sanal bellek sayfasına yayılabilir ve bu nedenle ayırmanın ayrılmadan önce denetlenmesi gerekir. Prolog'dan çağrılabilen ve bağımsız değişken kayıtlarının hiçbirini yok etmeyen özel bir yordam bu amaç için sağlanır.
 
-Yığına sabit yığın ayırma önce bunları taşımak için kalıcı kayıtları kaydetmek için tercih edilen yöntem var. Kalıcı kayıtlar kaydedilmeden önce sabit yığın ayırma gerçekleştirilirse, ardından en büyük olasılıkla bir 32-bit öteleme kaydedilmiş kayıt alanı ele almak için gereklidir. (Bağlarsanız, bildirim yazmaçların taşır ve bunu beraber göndermeler arasında örtük bağımlılık artma kalmalıdır kadar hızlı ilerleyebilirler.) Kalıcı kayıtlar herhangi bir sırada kaydedilebilir. Ancak, bir kayıt giriş sayfasında ilk kez kullanıyorsanız, kaydetmeyi olması gerekir.
+Geçici olmayan kayıtları kaydetmek için tercih edilen yöntem, sabit yığın ayırmadan önce bunları yığına taşımaktır. Sabit yığın ayırma, geçici olmayan kayıtlar kaydedilmeden önce gerçekleştirilirse, kaydedilen kayıt alanını ele almak için büyük olasılıkla 32 bitlik bir yer değiştirme gerekir. (Bildirildiğine göre, kayıt itmeler hamle kadar hızlı ve itmeler arasında zımni bağımlılık rağmen öngörülebilir bir gelecek için öyle kalmalıdır.) Geçici olmayan kayıtlar herhangi bir sırada kaydedilebilir. Ancak, prolog'daki geçici olmayan bir kaydın ilk kullanımı onu kaydetmek olmalıdır.
 
-## <a name="prolog-code"></a>Giriş kodu
+## <a name="prolog-code"></a>Prolog kodu
 
-Tipik bir giriş için kod aşağıdaki gibi olabilir:
+Tipik bir prolog için kod olabilir:
 
 ```MASM
     mov    [RSP + 8], RCX
@@ -31,9 +31,9 @@ Tipik bir giriş için kod aşağıdaki gibi olabilir:
     ...
 ```
 
-Bu giriş bağımsız değişkeni kayıt RCX kendi konumunda depolar, kaydeder kalıcı R13 R15 kayıtlarını kaydeder, sabit bir yığın çerçevesini parçası ayırır ve 128 bayt sabit ayırma alanına işaret eden bir çerçeve işaretçisi oluşturur. Bir uzaklık kullanarak tek baytlık sapmalarla ele alınması için sabit bir tahsisat alanının daha fazla bilgi sağlar.
+Bu prolog, bağımsız değişken kaydı RCX'i kendi evinde saklar, geçici olmayan kayıtları R13-R15'i kaydeder, yığın çerçevesinin sabit kısmını ayırır ve sabit ayırma alanına 128 bayt işaretleyen bir kare işaretçisi oluşturur. Ofset kullanmak, sabit ayırma alanının daha fazlasının tek tek ofset ile ele alınmasını sağlar.
 
-Sabit ayırma boyutu büyüktür veya eşittir belleğin bir sayfası, bir yardımcı işlev RSP değiştirmeden önce çağrılmalıdır. Bu yardımcı, `__chkstk`, yığının düzgün şekilde genişletildiğinden emin olmak için How-to-tahsis edilecek yığın aralığı araştırmaları. Bu durumda, önceki giriş örneği yerine olacaktır:
+Sabit ayırma boyutu bir bellek sayfasından büyük veya eşitse, RSP'yi değiştirmeden önce bir yardımcı işlev çağrılmalıdır. Bu yardımcı, `__chkstk`yığının düzgün uzatılmasını sağlamak için ayrılacak yığın aralığını deburtur. Bu durumda, önceki prolog örneği yerine olacaktır:
 
 ```MASM
     mov    [RSP + 8], RCX
@@ -47,15 +47,15 @@ Sabit ayırma boyutu büyüktür veya eşittir belleğin bir sayfası, bir yard�
     ...
 ```
 
-`__chkstk` Yardımcı R10 R11 ve durum kodları dışındaki tüm kayıtları değişiklik yapılmaz. Özellikle, bu RAX'daki değiştirmeden döndürür ve tüm kalıcı yazmaçlar ve bağımsız değişken geçirme kayıtlar üzerinde değişiklik yapılmadan bırakın.
+Yardımcı, `__chkstk` R10, R11 ve koşul kodları dışında hiçbir kaydı değiştirmez. Özellikle, RAX'i değişmeden döndürecek ve tüm geçici olmayan kayıtları ve bağımsız değişken geçen kayıtları değiştirilmemiş olarak bırakır.
 
-## <a name="epilog-code"></a>Sonuç kodu
+## <a name="epilog-code"></a>Epilog kodu
 
-Her bir işleve çıkış sonuç kodu bulunmaktadır. Normalde yalnızca bir giriş gelirken, çok sayıda sonuç olabilir. Sonuç kodu (gerekirse) yığını sabit ayırma boyutuna kırpar sabit yığın ayırma kaldırır yığından kaydedilmiş değerleri pencerelerinin tarafından kalıcı kayıtlar geri yükler ve döndürür.
+Bir işlevin her çıkışında epilog kodu bulunur. Normalde sadece bir prolog varken, birçok epilogs olabilir. Epilog kodu yığını sabit ayırma boyutuna (gerekirse) kırpar, sabit yığın ayırmayı bulur, kaydedilen değerlerini yığından çıkararak geçici olmayan kayıtları geri yüklenir ve döndürür.
 
-Sonuç kodu katı birtakım kurallara geriye doğru izleme kodu için güvenilir bir şekilde özel durumları ve kesme aracılığıyla geriye doğru izleme izlemeniz gerekir. Bu kurallar miktarını azaltmak her bitiş tanımlamak için ek veri yok gerektiğinden, gerekli veri bırakma. Bunun yerine, geriye doğru izleme kodu bir sonuç ileri bir bitiş tanımlamak için bir kod akışını tarayarak yürütüldüğü belirleyebilirsiniz.
+Epilog kodu, özel durumlar ve kesintiler yoluyla güvenilir bir şekilde gevşemek için kodun gevşemesi için katı bir kural kümesine uymalıdır. Bu kurallar, her epilogu tanımlamak için ek veri gerekmedığından, gerekli gevşeme verisi miktarını azaltır. Bunun yerine, gevşeme kodu bir epilog tanımlamak için bir kod akışı üzerinden ileri tarama tarafından bir epilog yürütülmektedir belirleyebilirsiniz.
 
-Hiçbir çerçeve işaretçisini kullanılırsa işlevi ve ardından sonuç ilk sabit yığınının parçası ayırması gerekir, kalıcı Yazmaçları POP ve denetim çağırma işlevine döndürülür. Örneğin,
+İşlevde çerçeve işaretçisi kullanılmazsa, epilog önce yığının sabit kısmını bulmalı, geçici olmayan kayıtlar atılırsa ve denetim çağrı işlevine döndürülür. Örneğin,
 
 ```MASM
     add      RSP, fixed-allocation-size
@@ -65,7 +65,7 @@ Hiçbir çerçeve işaretçisini kullanılırsa işlevi ve ardından sonuç ilk 
     ret
 ```
 
-Çerçeve işaretçisini işlevinde kullanılıyorsa, sonra yığına bitiş yürütülmeden önce sabit ayırma için kırpılmış olması gerekir. Bu eylem teknik olarak değil, sonuç parçasıdır. Örneğin, aşağıdaki sonuç önceden kullanılan giriş geri almak için kullanılabilir:
+İşlevde bir çerçeve işaretçisi kullanılıyorsa, yığın epilogun yürütülmesinden önce sabit ayırmasına kesilmelidir. Bu eylem teknik olarak epilog bir parçası değildir. Örneğin, daha önce kullanılan prolog geri almak için aşağıdaki epilog kullanılabilir:
 
 ```MASM
     lea      RSP, -128[R13]
@@ -77,7 +77,7 @@ Hiçbir çerçeve işaretçisini kullanılırsa işlevi ve ardından sonuç ilk 
     ret
 ```
 
-Uygulamada, bir çerçeve işaretçisini kullanıldığında, aşağıdaki bitiş yerine kullanılacak şekilde iki adımda RSP ayarlamak için iyi bir neden yoktur:
+Uygulamada, bir kare işaretçisi kullanıldığında, RSP'yi iki adımda ayarlamak için iyi bir neden yoktur, bu nedenle bunun yerine aşağıdaki epilog kullanılır:
 
 ```MASM
     lea      RSP, fixed-allocation-size - 128[R13]
@@ -87,12 +87,12 @@ Uygulamada, bir çerçeve işaretçisini kullanıldığında, aşağıdaki biti�
     ret
 ```
 
-Bu form için bir sonuç yalnızca yasal olanlardır. Aşağıdakilerden birini oluşmalıdır bir `add RSP,constant` veya `lea RSP,constant[FPReg]`ve ardından sıfır veya daha fazla 8 baytlık kayıt POP bir dizi ve bir `return` veya `jmp`. (Yalnızca bir alt kümesini `jmp` deyimleri bölümünde izin verilebilir. Özel olarak sınıfının alt kümesidir `jmp` deyimleri ModRM bellek başvurularıyla ModRM mod alan değeri, 00 olduğu. Kullanımını `jmp` mod alan değeri 01 ya da 10 kullanılamaz ModRM ile Bitiş deyimlerinde. Tablo A-15 AMD x86 64 mimari Programcı el ile toplu 3 bakın: Genel amaçlı ve izin verilen ModRM başvuruları hakkında daha fazla bilgi için sistem yönergeleri.) Başka bir kod görünebilir. Özellikle, hiçbir şey bir dönüş değeri yüklenmesini içeren bir sonuç içinde zamanlanabilir.
+Bu formlar bir epilog için sadece yasal olanlar. Bir `add RSP,constant` veya `lea RSP,constant[FPReg]`daha fazla 8 bayt lık bir dizi bir dizi veya `return` bir `jmp`veya daha fazla . (Yalnızca `jmp` bir deyim alt kümesine özette izin verilir. Alt küme, modrm `jmp` mod alan değerinin 00 olduğu ModRM bellek referansları içeren deyimler sınıfıdır. ModRM `jmp` mod alan değeri 01 veya 10 ile epilog ifadelerin kullanımı yasaktır. Amd x86-64 Mimarlık Programcısının Manuel Cilt 3:Genel Amaç ve Sistem Talimatları'nda, izin verilen ModRM referansları hakkında daha fazla bilgi için Tablo A-15'e bakın.) Başka hiçbir kod görüntülenemez. Özellikle, hiçbir şey bir özet içinde, bir iade değeri yükleme de dahil olmak üzere zamanlanabilir.
 
-Çerçeve işaretçisini kullanıldığında, sonuç kullanmalısınız `add RSP,constant` yığınının sabit parçası serbest bırakmak. Değil kullanabilir `lea RSP,constant[RSP]` yerine. Geriye doğru izleme kodu başlangıçları ararken tanımak için daha az desen olması için bu kısıtlama yok.
+Bir çerçeve işaretçisi kullanılmadığında, `add RSP,constant` özet yığının sabit kısmını bulmak için üst sözlüğünü niçin kullanması gerekir. Bunun yerine `lea RSP,constant[RSP]` kullanmayabilir. Bu kısıtlama, durum özetlerini ararken tanıyacak daha az desene sahip olması için çözünme koduna sahiptir.
 
-Bu kurallara bir sonuç şu anda yürütülmekte olan belirler ve çağıran işlevin bağlamı yeniden izin vermek için sonuç geri kalanında yürütülmesini benzetimini yapmak için geriye doğru izleme kodu sağlar.
+Bu kurallara göre, gevşeme kodu, bir epilogun şu anda yürütülmekte olduğunu belirlemesine ve arama işlevinin bağlamını yeniden oluşturmaya izin vermek için epilogun geri kalanının yürütülmesini simüle etmesine olanak tanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[x64 Yazılım Kuralları](x64-software-conventions.md)
+[x64 Yazılım Sözleşmeleri](x64-software-conventions.md)

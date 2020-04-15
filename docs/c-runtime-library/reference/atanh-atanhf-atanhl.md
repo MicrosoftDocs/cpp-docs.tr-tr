@@ -1,10 +1,13 @@
 ---
 title: atanh, atanhf, atanhl
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - atanhl
 - atanhf
 - atanh
+- _o_atanh
+- _o_atanhf
+- _o_atanhl
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -30,16 +34,16 @@ helpviewer_keywords:
 - atanhl function
 - atanh funciton
 ms.assetid: 83a43b5b-2580-4461-854f-dc84236d9f32
-ms.openlocfilehash: 539d015d5691f62f990faf650ab738f60066a2a6
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ef4a37c1ae76a88fd547b76c510097994a160253
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939593"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81350135"
 ---
 # <a name="atanh-atanhf-atanhl"></a>atanh, atanhf, atanhl
 
-Ters hiperbolik tanjantı hesaplar.
+Ters hiperbolik teğet hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,29 +60,31 @@ long double atanh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*X*<br/>
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**ATANH** işlevleri, *x*'in ters hyberbolik tanjantı (Ark hiperbolik tanjant) döndürür. *X* 1 ' den büyükse veya-1 ' den küçükse **errno** **Edom** olarak ayarlanır ve sonuç bir sessiz NaN olur. *X* 1 veya-1 ' e eşitse, sırasıyla pozitif veya negatif sonsuzluk döndürülür ve **errno** , **ERANGE**olarak ayarlanır.
+**Atanh** fonksiyonları *x*ters hyberbolik teğet (ark hiperbolik teğet) dönmek . *x* 1'den büyükse veya -1'den küçükse, **errno** **EDOM** olarak ayarlanır ve sonuç sessiz bir NaN'dir. *X* 1 veya -1'e eşitse, sırasıyla pozitif veya negatif sonsuzluk döndürülür ve **errno** **ERANGE**olarak ayarlanır.
 
-|Giriş|SEH özel durumu|**Matherr** Duruma|
+|Girdi|SEH Özel Durumu|**Matherr** Özel durum|
 |-----------|-------------------|-------------------------|
-|± QNAN, IND|yok|yok|
-|*X* ≥ 1; *x* ≤-1|yok|yok|
+|± QNAN,IND|yok|yok|
+|*X* ≥ 1; *x* ≤ -1|yok|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerleri alıp döndüren **ATANH** aşırı yüklerini çağırabilirsiniz. C programında, **ATANH** her zaman **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** veya **uzun** **çift** değerleri alan ve döndüren aşırı **atanh** yüklerini arayabilirsiniz. Bir C programında, **atanh** her zaman alır ve **çift**döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgi|C++ üstbilgi|
 |--------------|--------------|------------------|
-|**ATANH**, **atanhf**, **atanhl**|\<Math. h >|\<cmath > veya \<Math. h >|
+|**atanh**, **atanhf**, **atanhl**|\<math.h>|\<cmath> \<veya math.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

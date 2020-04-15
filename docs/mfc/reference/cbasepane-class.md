@@ -1,5 +1,5 @@
 ---
-title: CBasePane sınıfı
+title: CBasePane Sınıfı
 ms.date: 11/06/2018
 f1_keywords:
 - CBasePane
@@ -166,16 +166,16 @@ helpviewer_keywords:
 - CBasePane [MFC], UndockPane
 - CBasePane [MFC], DoPaint
 ms.assetid: 8163dd51-d7c7-4def-9c74-61f8ecdfad82
-ms.openlocfilehash: 59291516c14ea6ff8b1d2fe515d121dd6f910cba
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 56e4e30e23262da677c014a18e9fb8b175a6903d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420584"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81352931"
 ---
-# <a name="cbasepane-class"></a>CBasePane sınıfı
+# <a name="cbasepane-class"></a>CBasePane Sınıfı
 
-MFC 'deki tüm bölmeler için temel sınıf.
+MFC'deki tüm bölmeler için taban sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -187,182 +187,182 @@ class CBasePane : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CBasePane::CBasePane`|Varsayılan Oluşturucu.|
+|`CBasePane::CBasePane`|Varsayılan oluşturucu.|
 |`CBasePane::~CBasePane`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CBasePane::accHitTest`|Ekranın verilen bir noktada alt öğe veya alt nesne almak için Framework tarafından çağırılır. ( [CWnd:: accHitTest](../../mfc/reference/cwnd-class.md#acchittest)geçersiz kılar.)|
-|`CBasePane::accLocation`|Belirtilen nesnenin geçerli ekran konumunu almak için Framework tarafından çağırılır. ( [CWnd:: accLocation](../../mfc/reference/cwnd-class.md#acclocation).)|
-|[CBasePane:: AccNotifyObjectFocusEvent](#accnotifyobjectfocusevent)|`CBasePane` bu yöntemi kullanmaz.|
-|`CBasePane::accSelect`|Seçimi değiştirmek veya belirtilen nesnenin klavye odağını taşımak için Framework tarafından çağırılır. ( [CWnd:: accSelect](../../mfc/reference/cwnd-class.md#accselect).)|
-|[CBasePane:: AddPane](#addpane)|Yerleştirme yöneticisine bir bölme ekler.|
-|[CBasePane:: AdjustDockingLayout](#adjustdockinglayout)|Yerleştirme yerleşimini ayarlamak için yerleştirme Yöneticisi 'ne yapılan çağrıyı yeniden yönlendirir.|
-|[CBasePane:: AdjustLayout](#adjustlayout)|Bölmenin iç yerleşimini ayarlaması gerektiğinde Framework tarafından çağırılır.|
-|[CBasePane:: CalcFixedLayout](#calcfixedlayout)|Bir denetim çubuğunun yatay boyutunu hesaplar.|
-|[CBasePane:: CanAcceptPane](#canacceptpane)|Başka bir bölmenin bölmesine yerleştirilip yerleştirilmeyeceğini belirler.|
-|[CBasePane:: Canotomatik gizle](#canautohide)|Bölmenin otomatik gizleme modunu destekleyip desteklemediğini belirler.|
-|[CBasePane:: Canbeekli](#canbeattached)|Bölmenin başka bir bölmeye sabitlenebilir olup olmayacağını belirler.|
-|[CBasePane:: CanBeClosed](#canbeclosed)|Bölmenin kapatılıp kapatılamayacağını belirler.|
-|[CBasePane:: Canbeyerleştirildi](#canbedocked)|Bölmenin başka bir bölmeye sabitlenebilir olup olmayacağını belirler.|
-|[CBasePane:: Canbereslanmış](#canberesized)|Bölmenin yeniden boyutlandırılıp boyutlandırılmayacağını belirler.|
-|[CBasePane:: CanBeTabbedDocument](#canbetabbeddocument)|Bölmenin bir MDI sekmeli belgesine dönüştürülüp dönüştürülmeyeceğini belirtir.|
-|[CBasePane:: CanFloat](#canfloat)|Bölmenin kayıp kayamayacağını belirler.|
-|[CBasePane:: CanFocus](#canfocus)|Bölmenin odak alıp alamayacağını belirtir.|
-|[CBasePane:: CopyState](#copystate)|Verilen bölmenin durumunu kopyalar.|
-|[CBasePane:: CreateDefaultMiniframe](#createdefaultminiframe)|Bölme taşınabilir ise, bir mini çerçeve penceresi oluşturur.|
-|[CBasePane:: CreateEx](#createex)|Bölme denetimini oluşturur.|
-|[CBasePane::D ockPane](#dockpane)|Bir bölmeyi başka bir bölmeye veya bir çerçeve penceresine göre oluşturma.|
-|[CBasePane::D Ockbölmesi Usingrttı](#dockpaneusingrtti)|Çalışma zamanı tür bilgilerini kullanarak bölmeyi noktaları.|
-|[CBasePane: ockToFrameWindow:D](#docktoframewindow)|Bir çerçeveye yerleştirilebilir bölmesi noktası oluşturma.|
-|[CBasePane::D Oesallowdynınsertbefore](#doesallowdyninsertbefore)|Bu bölme ve üst çerçeve arasında dinamik olarak bir bölme eklenip eklenemeyeceğini belirler.|
-|[CBasePane:: EnableDocking](#enabledocking)|Bölmeyi ana çerçeveye yerleştirmeyi sağlar.|
-|[CBasePane:: Enablekavrayıcı](#enablegripper)|Kavrayıcıyı etkinleştirilir veya devre dışı bırakır. Kavrayıcı etkinleştirilmişse, Kullanıcı bölmeyi yeniden konumlandırmak için onu sürükleyebilirsiniz.|
+|`CBasePane::accHitTest`|Ekranda belirli bir noktada alt öğe veya alt nesne almak için çerçeve tarafından çağrılır. [(Overrides CWnd::accHitTest](../../mfc/reference/cwnd-class.md#acchittest).)|
+|`CBasePane::accLocation`|Belirtilen nesne için geçerli ekran konumunu almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::accLocation](../../mfc/reference/cwnd-class.md#acclocation).)|
+|[CBasePane::AccNotifyObjectFocusEvent](#accnotifyobjectfocusevent)|`CBasePane`bu yöntemi kullanmaz.|
+|`CBasePane::accSelect`|Seçimi değiştirmek veya belirtilen nesnenin klavye odağı taşımak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::accSelect](../../mfc/reference/cwnd-class.md#accselect).)|
+|[CBasePane::AddPane](#addpane)|Yerleştirme yöneticisine bir bölme ekler.|
+|[CBasePane::AyarlamaDockingDüzeni](#adjustdockinglayout)|Yerleştirme düzenini ayarlamak için bir aramayı yerleştirme yöneticisine yönlendirir.|
+|[CBasePane::Düzeni Ayarla](#adjustlayout)|Bölmeiç düzenini ayarlaması gerektiğinde çerçeve tarafından çağrılır.|
+|[CBasePane::CalcFixedLayout](#calcfixedlayout)|Denetim çubuğunun yatay boyutunu hesaplar.|
+|[CBasePane::CanAcceptPane](#canacceptpane)|Başka bir bölmenin bölmeye sabitlenip kenetlenemeyeceğini belirler.|
+|[CBasePane::CanAutoHide](#canautohide)|Bölmenin otomatik gizleme modunu destekleyip desteklemediğini belirler.|
+|[CBasePane::CanBeAttached](#canbeattached)|Bölmenin başka bir bölmeye sabitlenip yapıştırılamayacağını belirler.|
+|[CBasePane::CanBeKapalı](#canbeclosed)|Bölmenin kapatılıp kapatılamayacağını belirler.|
+|[CBasePane::CanBeDocked](#canbedocked)|Bölmenin başka bir bölmeye sabitlenip yapıştırılamayacağını belirler.|
+|[CBasePane::CanBeResized](#canberesized)|Bölmenin yeniden boyutlandırılıp boyutlandırılamayacağını belirler.|
+|[CBasePane::CanBeTabbedBelgesi](#canbetabbeddocument)|Bölmenin MDI sekmeli belgeye dönüştürülüp dönüştürülemeyeceğini belirtir.|
+|[CBasePane::CanFloat](#canfloat)|Bölmenin yüzdürüp yüzemeyeceğini belirler.|
+|[CBasePane::CanFocus](#canfocus)|Bölmenin odak alıp alamadığını belirtir.|
+|[CBasePane::CopyState](#copystate)|Belirli bir bölmenin durumunu kopyalar.|
+|[CBasePane::Oluşturma DefaultMiniframe](#createdefaultminiframe)|Bölme kayayabiliyorsa, bir mini çerçeve penceresi oluşturur.|
+|[CBasePane::CreateEx](#createex)|Bölme denetimini oluşturur.|
+|[CBasePane::DockPane](#dockpane)|Bölmeyi başka bir bölmeye veya çerçeve penceresine sabitler.|
+|[CBasePane::DockPaneUsingRTTI](#dockpaneusingrtti)|Çalışma zamanı türü bilgilerini kullanarak bölmeyi sabitler.|
+|[CBasePane::DockToFrameWindow](#docktoframewindow)|Sabitlenebilir bölmeyi bir çerçeveye sabitler.|
+|[CBasePane::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)|Bu bölme ile üst çerçeve arasına dinamik olarak başka bir bölme eklenip eklenemeyeceğini belirler.|
+|[CBasePane::Etkinleştirme Yerleştirme](#enabledocking)|Bölmenin ana çerçeveye sabitlemesini sağlar.|
+|[CBasePane::EnableGripper](#enablegripper)|Kavrayıcıyı etkinleştirir veya devre dışı kılabilir. Kavrayıcı etkinse, kullanıcı bölmeyi yeniden konumlandırmak için sürükleyebilir.|
 |`CBasePane::FillWindowRect`|Dahili olarak kullanılır.|
-|[CBasePane:: FloatPane](#floatpane)|Bölmeyi kayın.|
-|`CBasePane::get_accChild`|Belirtilen alt için bir `IDispatch` arabiriminin adresini almak için Framework tarafından çağırılır. ( [CWnd:: get_accChild](../../mfc/reference/cwnd-class.md#get_accchild)geçersiz kılar)|
-|`CBasePane::get_accChildCount`|Bu nesneye ait alt öğelerin sayısını almak için Framework tarafından çağırılır. ( [CWnd:: get_accChildCount](../../mfc/reference/cwnd-class.md#get_accchildcount)geçersiz kılar)|
-|`CBasePane::get_accDefaultAction`|Nesnenin varsayılan eylemini tanımlayan bir dize almak için Framework tarafından çağırılır. ( [CWnd:: get_accDefaultAction](../../mfc/reference/cwnd-class.md#get_accdefaultaction)geçersiz kılar)|
-|`CBasePane::get_accDescription`|Belirtilen nesnenin görsel görünümünü açıklayan bir dize almak için Framework tarafından çağırılır. ( [CWnd:: get_accDescription](../../mfc/reference/cwnd-class.md#get_accdescription)geçersiz kılar)|
-|`CBasePane::get_accFocus`|Klavye odağına sahip nesneyi almak için Framework tarafından çağırılır. ( [CWnd:: get_accFocus](../../mfc/reference/cwnd-class.md#get_accfocus)geçersiz kılar)|
-|`CBasePane::get_accHelp`|Nesne için yardım özelliği dizesi almak için Framework tarafından çağırılır. ( [CWnd:: get_accHelp](../../mfc/reference/cwnd-class.md#get_acchelp)geçersiz kılar)|
-|[CBasePane:: get_accHelpTopic](#get_acchelptopic)|Belirtilen nesneyle ilişkili WinHelp dosyasının tam yolunu ve bu dosyadaki ilgili konunun tanımlayıcısını almak için Framework tarafından çağırılır. ( [CWnd:: get_accHelpTopic](../../mfc/reference/cwnd-class.md#get_acchelptopic)geçersiz kılar)|
-|`CBasePane::get_accKeyboardShortcut`|Nesne için belirtilen kısayol tuşunu almak için Framework tarafından çağırılır. ( [CWnd:: get_accKeyboardShortcut](../../mfc/reference/cwnd-class.md#get_acckeyboardshortcut)geçersiz kılar)|
-|`CBasePane::get_accName`|Belirtilen nesnenin adını almak için Framework tarafından çağırılır. ( [CWnd:: get_accName](../../mfc/reference/cwnd-class.md#get_accname)geçersiz kılar)|
-|`CBasePane::get_accParent`|Nesnenin üst öğesi için `IDispatch` arabirimini almak için Framework tarafından çağırılır. ( [CWnd:: get_accParent](../../mfc/reference/cwnd-class.md#get_accparent)geçersiz kılar)|
-|`CBasePane::get_accRole`|Belirtilen nesnenin rolünü açıklayan bilgileri almak için Framework tarafından çağırılır. ( [CWnd:: get_accRole](../../mfc/reference/cwnd-class.md#get_accrole)geçersiz kılar)|
-|[CBasePane:: get_accSelection](#get_accselection)|Bu nesnenin seçili alt öğelerini almak için Framework tarafından çağırılır. ( [CWnd:: get_accSelection](../../mfc/reference/cwnd-class.md#get_accselection)geçersiz kılar)|
-|`CBasePane::get_accState`|Belirtilen nesnenin geçerli durumunu almak için Framework tarafından çağırılır. ( [CWnd:: get_accState](../../mfc/reference/cwnd-class.md#get_accstate)geçersiz kılar)|
-|`CBasePane::get_accValue`|Belirtilen nesnenin değerini almak için Framework tarafından çağırılır. ( [CWnd:: get_accValue](../../mfc/reference/cwnd-class.md#get_accvalue)geçersiz kılar)|
-|[CBasePane:: GetCaptionHeight](#getcaptionheight)|Başlık yüksekliğini döndürür.|
-|[CBasePane:: GetControlBarStyle](#getcontrolbarstyle)|Denetim çubuğu stilini döndürür.|
-|[CBasePane:: GetCurrentAlignment](#getcurrentalignment)|Geçerli bölme hizalamasını döndürür.|
-|[CBasePane:: GetDockingMode](#getdockingmode)|Bölme için geçerli yerleştirme modunu döndürür.|
-|[CBasePane:: GetDockSiteFrameWnd](#getdocksiteframewnd)|Bölmenin Dock sitesi olan pencereye bir işaretçi döndürür.|
-|[CBasePane:: Getenabledhizalaması](#getenabledalignment)|Bölmeye uygulanan CBRS_ALIGN_ stillerini döndürür.|
-|[CBasePane:: GetMFCStyle](#getmfcstyle)|MFC 'ye özgü bölme stillerini döndürür.|
-|[CBasePane:: GetPaneIcon](#getpaneicon)|Bölme simgesine bir tanıtıcı döndürür.|
+|[CBasePane::FloatPane](#floatpane)|Bölmeyi yüzdürer.|
+|`CBasePane::get_accChild`|Belirtilen alt için bir `IDispatch` arabirimin adresini almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accChild](../../mfc/reference/cwnd-class.md#get_accchild).)|
+|`CBasePane::get_accChildCount`|Bu nesneye ait çocuk sayısını almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accChildCount](../../mfc/reference/cwnd-class.md#get_accchildcount).)|
+|`CBasePane::get_accDefaultAction`|Nesne için varsayılan eylemi açıklayan bir dize almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accDefaultAction](../../mfc/reference/cwnd-class.md#get_accdefaultaction).)|
+|`CBasePane::get_accDescription`|Belirtilen nesnenin görsel görünümünü açıklayan bir dize almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accDescription](../../mfc/reference/cwnd-class.md#get_accdescription).)|
+|`CBasePane::get_accFocus`|Klavye odağı olan nesneyi almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accFocus](../../mfc/reference/cwnd-class.md#get_accfocus).)|
+|`CBasePane::get_accHelp`|Nesne için bir Yardım özelliği dizealmak için çerçeve tarafından çağrıldı. (CWnd geçersiz [kılar::get_accHelp](../../mfc/reference/cwnd-class.md#get_acchelp).)|
+|[CBasePane::get_accHelpTopic](#get_acchelptopic)|Belirtilen nesne yle ilişkili WinHelp dosyasının tam yolunu ve bu dosyadaki ilgili konunun tanımlayıcısını almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accHelpTopic](../../mfc/reference/cwnd-class.md#get_acchelptopic).)|
+|`CBasePane::get_accKeyboardShortcut`|Nesne için belirtilen kısayol anahtarını almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accKeyboardShortcut](../../mfc/reference/cwnd-class.md#get_acckeyboardshortcut).)|
+|`CBasePane::get_accName`|Belirtilen nesnenin adını almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accName](../../mfc/reference/cwnd-class.md#get_accname).)|
+|`CBasePane::get_accParent`|Nesnenin üst için `IDispatch` arabirim almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accParent](../../mfc/reference/cwnd-class.md#get_accparent).)|
+|`CBasePane::get_accRole`|Belirtilen nesnenin rolünü açıklayan bilgileri almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accRole](../../mfc/reference/cwnd-class.md#get_accrole).)|
+|[CBasePane::get_accSelection](#get_accselection)|Bu nesnenin seçili çocuklarını almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accSelection](../../mfc/reference/cwnd-class.md#get_accselection).)|
+|`CBasePane::get_accState`|Belirtilen nesnenin geçerli durumunu almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accState](../../mfc/reference/cwnd-class.md#get_accstate).)|
+|`CBasePane::get_accValue`|Belirtilen nesnenin değerini almak için çerçeve tarafından çağrılır. (CWnd geçersiz [kılar::get_accValue](../../mfc/reference/cwnd-class.md#get_accvalue).)|
+|[CBasePane::GetCaptionHeight](#getcaptionheight)|Resim yazısı yüksekliğini döndürür.|
+|[CBasePane::GetControlBarStyle](#getcontrolbarstyle)|Denetim çubuğu stilini verir.|
+|[CBasePane::GetCurrentAlignment](#getcurrentalignment)|Geçerli bölme hizasını döndürür.|
+|[CBasePane::GetDockingMode](#getdockingmode)|Bölme için geçerli yerleştirme modunu döndürür.|
+|[CBasePane::GetDockSiteFrameWnd](#getdocksiteframewnd)|Bölmenin dock sitesi olan pencereye bir işaretçi döndürür.|
+|[CBasePane::GetEnabledAlignment](#getenabledalignment)|Bölmeye uygulanan CBRS_ALIGN_ stilleri döndürür.|
+|[CBasePane::GetMFCStyle](#getmfcstyle)|MFC'ye özgü bölme stillerini döndürür.|
+|[CBasePane::GetPaneIcon](#getpaneicon)|Bölme simgesine bir tutamaç döndürür.|
 |`CBasePane::GetPaneRect`|Dahili olarak kullanılır.|
-|[CBasePane:: GetPaneRow](#getpanerow)|Bölmenin yerleştirildiği [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)nesnesine bir işaretçi döndürür.|
-|[CBasePane:: Getbölmesi stili](#getpanestyle)|Bölme stilini döndürür.|
-|[CBasePane:: GetParentDockSite](#getparentdocksite)|Üst Dock sitesine bir işaretçi döndürür.|
-|[CBasePane:: GetParentMiniFrame](#getparentminiframe)|Üst mini çerçeve penceresine bir işaretçi döndürür.|
-|[CBasePane:: GetParentTabbedPane](#getparenttabbedpane)|Üst sekmeli bölmeye bir işaretçi döndürür.|
-|[CBasePane:: GetParentTabWnd](#getparenttabwnd)|Bir sekme içinde olan üst pencereye bir işaretçi döndürür.|
-|[CBasePane:: GetRecentVisibleState](#getrecentvisiblestate)|Bir bölme bir arşivden geri yüklendiğinde Framework bu yöntemi çağırır.|
-|[CBasePane:: Hideınprintönizleme modu](#hideinprintpreviewmode)|Bölmenin baskı önizlemede gizlenip gizlenmeyeceğini belirtir.|
-|[CBasePane:: InsertPane](#insertpane)|Belirtilen bölmeyi yerleştirme yöneticisiyle kaydeder.|
-|[CBasePane:: IsAccessibilityCompatible](#isaccessibilitycompatible)|Bölmenin etkin erişilebilirliği destekleyip desteklemediğini belirtir.|
-|[CBasePane:: ısoto Hidemode](#isautohidemode)|Bir bölmenin otomatik gizleme modunda olup olmadığını belirler.|
-|[CBasePane:: ısdialogcontrol](#isdialogcontrol)|Bölmenin bir iletişim denetimi olup olmadığını belirtir.|
-|[CBasePane:: ıyerleştirildi](#isdocked)|Bölmenin yerleştirilmiş olup olmadığını belirler.|
-|[CBasePane:: ıskayan](#isfloating)|Bölmenin kayan olup olmadığını belirler.|
-|[CBasePane:: ısyatay](#ishorizontal)|Bölmenin yatay olarak yerleştirilmiş olup olmadığını belirler.|
-|[CBasePane:: ısinfloatingmultipane Framewnd](#isinfloatingmultipaneframewnd)|Bölmenin çok bölgeli bir çerçeve penceresinde olup olmadığını belirtir.|
-|[CBasePane:: ısmdısekmeli](#ismditabbed)|Bölmenin bir MDI alt penceresine sekmeli belge olarak eklenip eklenmeyeceğini belirler.|
-|[CBasePane:: IsPaneVisible](#ispanevisible)|Bölme için WS_VISIBLE bayrağının ayarlanmış olup olmadığını belirtir.|
-|[CBasePane:: ıspointyaklaştığında Docksite](#ispointneardocksite)|Belirtilen noktanın Dock sitesine yakın olup olmadığını belirler.|
-|[CBasePane:: ısyeniden boyutlandırılabilir](#isresizable)|Bölmenin yeniden boyutlandırılıp boyutlandırılmayacağını belirler.|
-|[CBasePane:: ısrestoredfromregistry](#isrestoredfromregistry)|Bölmenin kayıt defterinden geri yüklenip yüklenmediğini belirler.|
-|[CBasePane:: ıssekmeli](#istabbed)|Bölmenin sekmeli pencerenin Sekme denetimine eklenip eklenmeyeceğini belirler.|
+|[CBasePane::GetPaneRow](#getpanerow)|Bölmenin sabitlendiği [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)nesnesine bir işaretçiyi döndürür.|
+|[CBasePane::GetPaneStyle](#getpanestyle)|Bölme stilini döndürür.|
+|[CBasePane::GetParentDockSite](#getparentdocksite)|Bir işaretçiyi ana dock sitesine döndürür.|
+|[CBasePane::GetParentMiniFrame](#getparentminiframe)|Bir işaretçiyi üst mini çerçeve penceresine döndürür.|
+|[CBasePane::GetParentTabbedPane](#getparenttabbedpane)|Bir işaretçiyi üst sekmeli bölmeye döndürür.|
+|[CBasePane::GetParentTabWnd](#getparenttabwnd)|Bir işaretçiyi sekme içinde olan ana pencereye döndürür.|
+|[CBasePane::GetRecentVisibleState](#getrecentvisiblestate)|Bir bölme arşivden geri yüklendiğinde çerçeve bu yöntemi çağırır.|
+|[CBasePane::HideInPrintPreviewMode](#hideinprintpreviewmode)|Bölmenin yazdırma önizlemesinde gizli olup olmadığını belirtir.|
+|[CBasePane::InsertPane](#insertpane)|Belirtilen bölmeyi yerleştirme yöneticisine kaydeder.|
+|[CBasePane::ErişilebilirlikUyumlu](#isaccessibilitycompatible)|Bölmenin Etkin Erişilebilirliği destekleyip desteklemediğini belirtir.|
+|[CBasePane::IsAutoHideMode](#isautohidemode)|Bölmenin otomatik gizleme modunda olup olmadığını belirler.|
+|[CBasePane::IsDialogControl](#isdialogcontrol)|Bölmenin bir iletişim denetimi olup olmadığını belirtir.|
+|[CBasePane::Docked](#isdocked)|Bölmenin kenetlenip kenetlenmediğini belirler.|
+|[CBasePane::IsFloating](#isfloating)|Bölmenin kayap kayamadığını belirler.|
+|[CBasePane::Yatay](#ishorizontal)|Bölmenin yatay olarak sabitlenip kenetlenmediğini belirler.|
+|[CBasePane::IsInFloatingMultiPaneFrameWnd](#isinfloatingmultipaneframewnd)|Bölmenin çok bölmeli çerçeve penceresinde olup olmadığını belirtir.|
+|[CBasePane::IsMDITabbed](#ismditabbed)|Bölmenin sekmeli belge olarak MDI alt penceresine eklenip eklenmediğini belirler.|
+|[CBasePane::IsPaneVisible](#ispanevisible)|Bölme için WS_VISIBLE bayrağının ayarlanıp ayarlanıp ayarlmadığını belirtir.|
+|[CBasePane::IsPointNearDockSite](#ispointneardocksite)|Belirli bir noktanın dock bölgesine yakın olup olmadığını belirler.|
+|[CBasePane::Yeniden boyutlandırılabilir](#isresizable)|Bölmenin yeniden boyutlandırılıp boyutlandırılamayacağını belirler.|
+|[CBasePane::IsRestoredFromRegistry](#isrestoredfromregistry)|Bölmenin kayıt defterinden geri yüklenip geri getirilmediğini belirler.|
+|[CBasePane::IsTabbed](#istabbed)|Bölmenin sekmeli pencerenin sekme denetimine eklenip eklenmediğini belirler.|
 |`CBasePane::IsTooltipTopmost`|Dahili olarak kullanılır.|
-|[CBasePane:: IsVisible](#isvisible)|Bölmenin görünür olup olmadığını belirler.|
-|[CBasePane:: LoadState](#loadstate)|Bölme durumunu kayıt defterinden yükler.|
-|[CBasePane:: MoveWindow](#movewindow)|Bölmeyi gider.|
-|[CBasePane:: OnAfterChangeParent](#onafterchangeparent)|Bölmenin üst öğesi değiştirildiğinde Framework tarafından çağırılır.|
-|[CBasePane:: OnBeforeChangeParent](#onbeforechangeparent)|Bölme, ana penceresini değiştirmeden hemen önce çerçevesi tarafından çağırılır.|
-|[CBasePane:: OnDrawCaption](#ondrawcaption)|Resim yazısı çizildiğinde çerçeve bu yöntemi çağırır.|
-|[CBasePane:: OnMovePaneDivider](#onmovepanedivider)|Bu yöntem şu anda kullanılmıyor.|
-|[CBasePane:: Onbölmesi ContextMenu](#onpanecontextmenu)|Bir bölme listesi olan bir menü oluşturduğunda Framework tarafından çağırılır.|
-|[CBasePane:: OnRemoveFromMiniFrame](#onremovefromminiframe)|Bir bölme üst mini çerçeve penceresinden kaldırıldığında Framework tarafından çağırılır.|
-|[CBasePane:: OnSetAccData](#onsetaccdata)|`CBasePane` bu yöntemi kullanmaz.|
+|[CBasePane::Görünür](#isvisible)|Bölmenin görünür olup olmadığını belirler.|
+|[CBasePane::LoadState](#loadstate)|Bölme durumunu kayıt defterinden yükler.|
+|[CBasePane::Taşıma Penceresi](#movewindow)|Bölmeyi hareket ettirir.|
+|[CBasePane::OnAfterChangeParent](#onafterchangeparent)|Bölmenin üst öğesi değiştirildiğinde çerçeve tarafından çağrılır.|
+|[CBasePane::OnBeforeChangeParent](#onbeforechangeparent)|Bölme üst penceresini değiştirmeden hemen önce çerçeve tarafından çağrılır.|
+|[CBasePane::OnDrawCaption](#ondrawcaption)|Başlık çizildiğinde çerçeve bu yöntemi çağırır.|
+|[CBasePane::OnMovePaneDivider](#onmovepanedivider)|Bu yöntem şu anda kullanılmaz.|
+|[CBasePane::OnPaneContextMenu](#onpanecontextmenu)|Bölmelerin bir listesini içeren bir menü oluşturduğunda çerçeve tarafından çağrılır.|
+|[CBasePane::OnRemoveFromMiniFrame](#onremovefromminiframe)|Bir bölme üst mini çerçeve penceresinden kaldırıldığında çerçeve tarafından çağrılır.|
+|[CBasePane::OnSetAccData](#onsetaccdata)|`CBasePane`bu yöntemi kullanmaz.|
 |`CBasePane::OnUpdateCmdUI`|Dahili olarak kullanılır.|
-|[CBasePane::P aneFromPoint](#panefrompoint)|Verilen noktayı içeren bölmeyi döndürür.|
-|`CBasePane::PreTranslateMessage`|[TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce pencere iletilerini dönüştürmek için [CWinApp](../../mfc/reference/cwinapp-class.md) sınıfı tarafından kullanılır. ( [CWnd::P reTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)geçersiz kılar.)|
-|[CBasePane:: RecalcLayout](#recalclayout)|`CBasePane` bu yöntemi kullanmaz.|
-|[CBasePane:: RemovePaneFromDockManager](#removepanefromdockmanager)|Bir bölmenin kaydını siler ve yerleştirme yöneticisindeki listeden kaldırır.|
-|[CBasePane:: Savemlak](#savestate)|Bölmenin durumunu kayıt defterine kaydeder.|
-|[CBasePane:: SelectDefaultFont](#selectdefaultfont)|Belirtilen cihaz bağlamı için varsayılan yazı tipini seçer.|
-|`CBasePane::Serialize`|Bu nesneyi veya bir arşivden okur veya yazar. ( [CObject:: Serialize](../../mfc/reference/cobject-class.md#serialize)geçersiz kılar.)|
-|[CBasePane:: SetControlBarStyle](#setcontrolbarstyle)|Denetim çubuğu stilini ayarlar.|
-|[CBasePane:: SetDockingMode](#setdockingmode)|Bölme için yerleştirme modunu ayarlar.|
+|[CBasePane::PaneFromPoint](#panefrompoint)|Verilen noktayı içeren bölmeyi döndürür.|
+|`CBasePane::PreTranslateMessage`|[CWinApp](../../mfc/reference/cwinapp-class.md) sınıfı tarafından, pencere iletilerini [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine gönderilmeden önce çevirmek için kullanılır. [(CWnd geçersiz kılar::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
+|[CBasePane::RecalcLayout](#recalclayout)|`CBasePane`bu yöntemi kullanmaz.|
+|[CBasePane::RemovePaneFromDockManager](#removepanefromdockmanager)|Bölmenin kaydını kaldırır ve yerleştirme yöneticisindeki listeden kaldırır.|
+|[CBasePane::SaveState](#savestate)|Bölmenin durumunu kayıt defterine kaydeder.|
+|[CBasePane::SelectDefaultFont](#selectdefaultfont)|Belirli bir aygıt bağlamı için varsayılan yazı tipini seçer.|
+|`CBasePane::Serialize`|Bu nesneyi arşivden veya arşivden okur veya yazar. (CObject geçersiz [kılar::Serialize](../../mfc/reference/cobject-class.md#serialize).)|
+|[CBasePane::SetControlBarStyle](#setcontrolbarstyle)|Denetim çubuğu stilini ayarlar.|
+|[CBasePane::SetDockingMode](#setdockingmode)|Bölme için yerleştirme modunu ayarlar.|
 |`CBasePane::SetMDITabbed`|Dahili olarak kullanılır.|
-|[CBasePane:: Setbölmesi hizalaması](#setpanealignment)|Bölmenin hizalamasını ayarlar.|
+|[CBasePane::SetPaneAlignment](#setpanealignment)|Bölmeiçin hizalamayı ayarlar.|
 |`CBasePane::SetPaneRect`|Dahili olarak kullanılır.|
-|[CBasePane:: Setbölmesi stili](#setpanestyle)|Bölmenin stilini ayarlar.|
+|[CBasePane::SetPaneStyle](#setpanestyle)|Bölmenin stilini ayarlar.|
 |`CBasePane::SetRestoredFromRegistry`|Dahili olarak kullanılır.|
-|[CBasePane:: SetWindowPos](#setwindowpos)|Bölmenin boyutunu, konumunu ve Z düzenini değiştirir.|
-|[CBasePane:: ShowPane](#showpane)|Bölmeyi gösterir veya gizler.|
-|[CBasePane:: ayarlayıcı bölmesi](#stretchpane)|Bir bölmeyi dikey veya yatay olarak uzatır.|
-|[CBasePane:: UndockPane](#undockpane)|Bölmeyi yerleştirme sitesinden, varsayılan kaydırıcıdan veya şu anda yerleştirilmiş olan mini çerçeve penceresinden kaldırır.|
+|[CBasePane::SetWindowPos](#setwindowpos)|Bölmenin boyutunu, konumunu ve Z sırasını değiştirir.|
+|[CBasePane::ShowPane](#showpane)|Bölmeyi gösterir veya gizler.|
+|[CBasePane::StretchPane](#stretchpane)|Bölmeyi dikey veya yatay olarak uzalar.|
+|[CBasePane::UndockPane](#undockpane)|Bölmeyi dock sitesinden, varsayılan kaydırıcıdan veya şu anda sabitlenmiş olduğu mini çerçeve penceresinden kaldırır.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CBasePane::D oPaint](#dopaint)|Bölmenin arka planını doldurur.|
+|[CBasePane::DoPaint](#dopaint)|Bölmenin arka planını doldurur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-MFC 'de kullanılabilen genişletilmiş yerleştirme özelliklerini destekleyen bir bölme sınıfı oluşturmak isterseniz, `CBasePane` veya [CPane sınıfından](../../mfc/reference/cpane-class.md)türetmeniz gerekir.
+MFC'de bulunan genişletilmiş yerleştirme özelliklerini destekleyen bir bölme sınıfı oluşturmak istiyorsanız, bunu `CBasePane` [CPane Class'tan veya CPane Sınıfından](../../mfc/reference/cpane-class.md)türetmeniz gerekir.
 
-## <a name="customization-tips"></a>Özelleştirme Ipuçları
+## <a name="customization-tips"></a>Özelleştirme İpuçları
 
-Aşağıdaki özelleştirme ipuçları, `CBasePane Class` ve bundan kalıtımla alan tüm sınıflar ile ilgilidir:
+Aşağıdaki özelleştirme ipuçları ve `CBasePane Class` ondan devralan tüm sınıfları ile ilgilidir:
 
 - Bir bölme oluşturduğunuzda, birkaç yeni stil uygulayabilirsiniz:
 
-  - AFX_CBRS_FLOAT bölmeyi yüzer hale getirir.
+  - AFX_CBRS_FLOAT bölmeyi yüzdürür.
 
-  - AFX_CBRS_AUTOHIDE otomatik gizleme moduna izin vermez.
+  - AFX_CBRS_AUTOHIDE otomatik gizleme modunu etkinleştirir.
 
-  - AFX_CBRS_CLOSE, bölmenin kapatılmasını sağlar (gizli).
+  - AFX_CBRS_CLOSE bölmenin kapatılmasını (gizli) sağlar.
 
-  Bunlar bit düzeyinde veya işlemle birleştirebileceğiniz bayraklardır.
+  Bunlar, bitwise-OR işlemiyle birleştirebileceğiniz bayraklardır.
 
-`CBasePane` şu bayrakları yansıtmak için şu sanal Boole yöntemlerini uygular: [CBasePane:: CanBeClosed](#canbeclosed), [CBasePane:: canotomatik Gizle](#canautohide), [CBasePane:: CanFloat](#canfloat). Davranışlarını özelleştirmek için türetilmiş sınıflarda bunları geçersiz kılabilirsiniz.
+`CBasePane`bu bayrakları yansıtmak için aşağıdaki sanal Boolean yöntemleri uygular: [CBasePane::CanBeClosed](#canbeclosed), [CBasePane::CanAutoHide](#canautohide), [CBasePane::CanFloat](#canfloat). Davranışlarını özelleştirmek için türemiş sınıflarda bunları geçersiz kılabilirsiniz.
 
-- [CBasePane:: CanAcceptPane](#canacceptpane)öğesini geçersiz kılarak yerleştirme davranışını özelleştirebilirsiniz. Bölmenizi, başka bir bölmenin kendisine sabitlemesini engellemek için bu yöntemden FALSE döndürmenizi sağlar.
+- CBasePane geçersiz kılarak yerleştirme davranışını [özelleştirebilirsiniz::CanAcceptPane](#canacceptpane). Başka bir bölmenin bu yönteme yanaşmasını önlemek için bölmenizin bu yöntemden FALSE iadesini sorun.
 
-- Bir statik bölme oluşturmak istiyorsanız (OutlookDemo örneğinde Outlook çubuğuna benzer şekilde), başka bir bölmenin daha önce yuvaya konmasını önler, bunu kayan olmayan olarak oluşturun ve CBasePane ' ı geçersiz kılın: FALSE döndürmek için [önce:D Oesallowdynınsert.](#doesallowdyninsertbefore) Bölme AFX_CBRS_FLOAT stili olmadan oluşturulduysa varsayılan uygulama FALSE değerini döndürür.
+- Yüzdürülemeyen ve diğer bölmelerin daha önce kenetlenmesini engelleyen statik bir bölme oluşturmak istiyorsanız (OutlookDemo örneğindeki Outlook çubuğuna benzer), bunu kayan olmayan olarak oluşturun ve [CBasePane::DoesAllowDynInsertBefore](#doesallowdyninsertbefore) FALSE'yi döndürmeden önce geçersiz kılın. Bölme AFX_CBRS_FLOAT stili olmadan oluşturulursa varsayılan uygulama FALSE döndürür.
 
-- Kimliği 1 ' den farklı olan tüm bölmeleri oluştur.
+- -1 dışındaki tüm bölmeleri oluşturun.
 
-- Bölme görünürlüğünü öğrenmek için [CBasePane:: IsVisible](#isvisible)kullanın. Sekmeli ve otomatik gizleme modlarında görünürlük durumunu doğru şekilde işler.
+- Bölme görünürlüğünü belirlemek için [CBasePane kullanın::Görünür](#isvisible). Sekmeli ve otomatik gizleme modlarında görünürlük durumunu doğru şekilde işler.
 
-- Taşınabilir olmayan bir yeniden boyutlandırılabilir bölme oluşturmak istiyorsanız, AFX_CBRS_FLOAT stili olmadan oluşturun ve [CFrameWnd::D ockControlBar](../../mfc/reference/cframewnd-class.md#dockcontrolbar)' ı çağırın.
+- Kayan olmayan bir yeniden boyutlandırılabilir bölme oluşturmak istiyorsanız, AFX_CBRS_FLOAT stili olmadan oluşturun ve [CFrameWnd::DockControlBar](../../mfc/reference/cframewnd-class.md#dockcontrolbar)arayın.
 
-- Bir bölmeyi yerleştirme düzeninden dışlamak veya bir araç çubuğunu yerleştirme çubuğundan kaldırmak için, [CBasePane:: UndockPane](#undockpane)' ı çağırın. Bu yöntemi otomatik gizleme modundaki bölmeler veya sekmeli pencerelerin sekmelerinde bulunan bölmeler için çağırmayın.
+- Bir bölmeyi yerleştirme düzeninden çıkarmak veya bir araç çubuğunu dock çubuğundan kaldırmak için [CBasePane'yi arayın::UndockPane.](#undockpane) Otomatik gizleme modundaki bölmeler veya sekmeli pencerelerin sekmelerinde bulunan bölmeler için bu yöntemi aramayın.
 
-- Otomatik gizleme modunda olan bir bölmeyi kaydırmak ya da çıkarmak istiyorsanız, [CBasePane:: FloatPane](#floatpane) veya [CBasePane:: UndockPane](#undockpane)' ı çağırmadan önce Ilk bağımsız değişken olarak [CDockablePane:: SetAutoHideMode](../../mfc/reference/cdockablepane-class.md#setautohidemode) değerini çağırmanız gerekir.
+- Otomatik gizleme modunda olan bir bölmeyi yüzdürmek veya çıkarmak istiyorsanız, [CDockablePane'yi](../../mfc/reference/cdockablepane-class.md#setautohidemode) aramanız gerekir::CBasePane'yi aramadan önce ilk bağımsız değişken olarak FALSE ile SetAutoHideMode::FloatPane veya [CBasePane::UndockPane](#undockpane). [CBasePane::FloatPane](#floatpane)
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CBasePane` sınıfında çeşitli yöntemlerin nasıl kullanıldığını gösterir. Örnek, `CFrameWndEx` sınıfından bir bölmenin nasıl alınacağını ve yerleştirme modunun, bölme hizalamasının ve bölme stilinin nasıl ayarlanacağını gösterir. Kod, [sözcük paneli](../../overview/visual-cpp-samples.md)örneğinden yapılır.
+Aşağıdaki örnek, sınıfta çeşitli yöntemlerin `CBasePane` nasıl kullanılacağını göstermektedir. Örnek, sınıftan `CFrameWndEx` bölmenin nasıl alınır ve yerleştirme modunu, bölme hizasını ve bölme stilini nasıl ayarlanacağını gösterir. Kod [Word Pad örneğinden.](../../overview/visual-cpp-samples.md)
 
 [!code-cpp[NVC_MFC_WordPad#2](../../mfc/reference/codesnippet/cpp/cbasepane-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 [CBasePane](../../mfc/reference/cbasepane-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxbasepane. h
+**Üstbilgi:** afxbasepane.h
 
-##  <a name="accnotifyobjectfocusevent"></a>CBasePane:: AccNotifyObjectFocusEvent
+## <a name="cbasepaneaccnotifyobjectfocusevent"></a><a name="accnotifyobjectfocusevent"></a>CBasePane::AccNotifyObjectFocusEvent
 
-`CBasePane` bu yöntemi kullanmaz.
+`CBasePane`bu yöntemi kullanmaz.
 
 ```
 virtual void AccNotifyObjectFocusEvent(int);
@@ -371,9 +371,9 @@ virtual void AccNotifyObjectFocusEvent(int);
 ### <a name="parameters"></a>Parametreler
 
 *int*<br/>
-'ndaki Kullanılmıyor.
+[içinde] Kullanılmaz.
 
-##  <a name="addpane"></a>CBasePane:: AddPane
+## <a name="cbasepaneaddpane"></a><a name="addpane"></a>CBasePane::AddPane
 
 Yerleştirme yöneticisine bir bölme ekler.
 
@@ -384,17 +384,17 @@ void AddPane(CBasePane* pBar);
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-'ndaki Eklenecek bölmeye yönelik bir işaretçi.
+[içinde] Eklemek için bir bölme için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, bir yerleştirme yöneticisine bölme ekleyen kullanışlı bir yöntemdir. Bu yöntemi kullanarak, üst çerçevenin türünü analiz eden bir kod yazmanız gerekmez.
+Bu, bir yerleştirme yöneticisine bölme ekleyen bir kolaylık yöntemidir. Bu yöntemi kullanarak, üst çerçeve türünü çözümleyen kod yazmak zorunda değildir.
 
-Daha fazla bilgi için bkz. [CDockingManager sınıfı](../../mfc/reference/cdockingmanager-class.md) ve [CMDIFrameWndEx:: AddPane](../../mfc/reference/cmdiframewndex-class.md#addpane).
+Daha fazla bilgi için [CDockingManager Sınıfı](../../mfc/reference/cdockingmanager-class.md) ve [CMDIFrameWndEx::AddPane bölümüne](../../mfc/reference/cmdiframewndex-class.md#addpane)bakın.
 
-##  <a name="adjustdockinglayout"></a>CBasePane:: AdjustDockingLayout
+## <a name="cbasepaneadjustdockinglayout"></a><a name="adjustdockinglayout"></a>CBasePane::AyarlamaDockingDüzeni
 
-Yerleştirme yerleşimini ayarlamak için yerleştirme Yöneticisi 'ne yapılan çağrıyı yeniden yönlendirir.
+Yerleştirme düzenini ayarlamak için bir aramayı yerleştirme yöneticisine yönlendirir.
 
 ```
 virtual void AdjustDockingLayout(HDWP hdwp=NULL);
@@ -403,17 +403,17 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ### <a name="parameters"></a>Parametreler
 
 *hdwp*<br/>
-dışı Birden çok pencere konumu içeren bir yapıya yönelik bir tanıtıcı.
+[çıkış] Birden çok pencere pozisyonu içeren bir yapının tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, yerleştirme düzeninin ayarlayan kullanışlı bir yöntemdir. Bu yöntemi kullanarak, üst çerçevenin türünü analiz eden bir kod yazmanız gerekmez.
+Bu, yerleştirme düzenini ayarlayan bir kolaylık yöntemidir. Bu yöntemi kullanarak, üst çerçeve türünü çözümleyen kod yazmak zorunda değildir.
 
-Daha fazla bilgi için bkz [. CDockingManager:: AdjustDockingLayout](../../mfc/reference/cdockingmanager-class.md#adjustdockinglayout)
+Daha fazla bilgi için [Bkz. CDockingManager::AdjustDockingLayout](../../mfc/reference/cdockingmanager-class.md#adjustdockinglayout)
 
-##  <a name="adjustlayout"></a>CBasePane:: AdjustLayout
+## <a name="cbasepaneadjustlayout"></a><a name="adjustlayout"></a>CBasePane::Düzeni Ayarla
 
-Bir bölmenin iç yerleşimini ayarlamak için Framework tarafından çağırılır.
+Bölmenin iç düzenini ayarlamak için çerçeve tarafından çağrılır.
 
 ```
 virtual void AdjustLayout();
@@ -421,11 +421,11 @@ virtual void AdjustLayout();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bölmenin iç yerleşimini ayarlaması gerektiğinde, çerçeve bu yöntemi çağırır. Temel uygulama hiçbir şey yapmaz.
+Bir bölme iç düzenini ayarlamak zorunda olduğunda çerçeve bu yöntemi çağırır. Temel uygulama hiçbir şey yapmaz.
 
-##  <a name="calcfixedlayout"></a>CBasePane:: CalcFixedLayout
+## <a name="cbasepanecalcfixedlayout"></a><a name="calcfixedlayout"></a>CBasePane::CalcFixedLayout
 
-Bir denetim çubuğunun yatay boyutunu hesaplar.
+Denetim çubuğunun yatay boyutunu hesaplar.
 
 ```
 virtual CSize CalcFixedLayout(
@@ -435,23 +435,23 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>Parametreler
 
-*Besnetme*<br/>
-'ndaki Çubuğun çerçevenin boyutuna esnetilip uzatılmayacağını gösterir. Çubuk bir yerleştirme çubuğu olmadığında (yerleştirme için kullanılamaz) ve yerleştirildiğinde veya kayan olduğunda (yerleştirme için kullanılabilir) 0 olduğunda *Besnetme* parametresi sıfır dışı olur.
+*bStretch*<br/>
+[içinde] Çubuğun çerçevenin boyutuna kadar uzatılıp uzatılması gerektiğini gösterir. çubuk bir yerleştirme çubuğu olmadığında (yerleştirme için kullanılamaz) *bStretch* parametresi sıfır değildir ve kenetlendiğinde veya kayan olduğunda (yerleştirme için kullanılabilir) 0'dır.
 
 *bHorz*<br/>
-'ndaki Çubuğun yatay veya dikey olarak yönlendirildiğini gösterir. Çubuk yatay olarak yönlendirilse *bHorz* parametresi sıfır değildir ve dikey olarak yönlendirilse 0 ' dır.
+[içinde] Çubuğun yatay veya dikey olarak yönlendirilmiş olduğunu gösterir. çubuk yatay olarak yönlendirilmişse *bHorz* parametresi sıfır değildir ve dikey olarak yönlendirilmişse 0'dır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CSize` nesnesinin piksel cinsinden denetim çubuğu boyutu.
+Bir `CSize` nesnenin piksel olarak denetim çubuğu boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CControlBar:: CalcFixedLayout](../../mfc/reference/ccontrolbar-class.md#calcfixedlayout) içindeki açıklamalar bölümüne bakın
+CControlBar'daki açıklamalar bölümüne [bakın:CalcFixedLayout](../../mfc/reference/ccontrolbar-class.md#calcfixedlayout)
 
-##  <a name="canacceptpane"></a>CBasePane:: CanAcceptPane
+## <a name="cbasepanecanacceptpane"></a><a name="canacceptpane"></a>CBasePane::CanAcceptPane
 
-Başka bir bölmenin bölmesine yerleştirilip yerleştirilmeyeceğini belirler.
+Başka bir bölmenin bölmeye sabitlenip kenetlenemeyeceğini belirler.
 
 ```
 virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
@@ -460,21 +460,21 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-'ndaki Dock bölmesine yönelik bir işaretçi.
+[içinde] Bölmeye dock için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başka bir bölme kabul edilebilmesi için doğru; Aksi halde yanlış.
+Başka bir bölme kabul edilebilirse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, *pBar* tarafından belirtilen bölmeyi geçerli bölmeye göre ayarlamadan önce bu yöntemi çağırır.
+Çerçeve, *pBar* tarafından belirtilen bölmeyi geçerli bölmeye yerleştirmeden önce bu yöntemi çağırır.
 
-Bölmelerin uygulamanızdaki diğer bölmelere nasıl yerleştirildiğini denetlemek için bu yöntemi ve [CBasePane:: Canbesabitlenmiş](#canbedocked) yöntemini kullanın.
+Bu yöntemi ve [CBasePane::Uygulamanızdaki](#canbedocked) bölmelerin diğer bölmelere nasıl dock yapılacağını denetlemek için CanBeDocked yöntemini kullanın.
 
-Varsayılan uygulama yanlış döndürür.
+Varsayılan uygulama FALSE döndürür.
 
-##  <a name="canautohide"></a>CBasePane:: Canotomatik gizle
+## <a name="cbasepanecanautohide"></a><a name="canautohide"></a>CBasePane::CanAutoHide
 
 Bölmenin otomatik gizleme modunu destekleyip desteklemediğini belirler.
 
@@ -484,19 +484,19 @@ virtual BOOL CanAutoHide() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu bölme otomatik gizleme modunu destekliyorsa, doğru; Aksi halde yanlış.
+Bu bölme otomatik gizleme modunu destekliyorsa TRUE; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, bölmenin otomatik gizleme modunu destekleyip desteklemediğini öğrenmek için bu işlevi çağırır.
+Çerçeve, bölmenin otomatik gizleme modunu destekleyip desteklemediğini belirlemek için bu işlevi çağırır.
 
-Oluşturma sırasında, AFX_CBRS_AUTOHIDE bayrağını [CBasePane:: CreateEx](#createex)öğesine geçirerek bu özelliği ayarlayabilirsiniz.
+İnşaat sırasında, AFX_CBRS_AUTOHIDE bayrağını [CBasePane'ye](#createex)geçirerek bu yeteneği ayarlayabilirsiniz::CreateEx .
 
 Varsayılan uygulama AFX_CBRS_AUTOHIDE bayrağını denetler. Bu davranışı özelleştirmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-##  <a name="canbeattached"></a>CBasePane:: Canbeekli
+## <a name="cbasepanecanbeattached"></a><a name="canbeattached"></a>CBasePane::CanBeAttached
 
-Bölmenin başka bir bölmeye veya çerçeve penceresine sabitlenebilir olup olmayacağını belirler.
+Bölmenin başka bir bölmeye veya çerçeve penceresine sabitlenip yapıştırılamayacağını belirler.
 
 ```
 virtual BOOL CanBeAttached() const;
@@ -504,13 +504,13 @@ virtual BOOL CanBeAttached() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme başka bir bölmeye veya çerçeve penceresine sabitlenebilir ise doğru; Aksi halde yanlış.
+Bölme başka bir bölme ye veya çerçeve penceresine sabitlenebilirse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama yanlış döndürür. [CBasePane:: enabledock](#enabledocking)çağrılmadan yerleştirme yeteneğini etkinleştirmek veya devre dışı bırakmak için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
+Varsayılan uygulama FALSE döndürür. CBasePane'yi aramadan dock yeteneğini etkinleştirmek veya devre dışı kalmak için türetilmiş bir sınıfta bu yöntemi geçersiz [kılın::EtkinleştirDocking](#enabledocking).
 
-##  <a name="canbeclosed"></a>CBasePane:: CanBeClosed
+## <a name="cbasepanecanbeclosed"></a><a name="canbeclosed"></a>CBasePane::CanBeKapalı
 
 Bölmenin kapatılıp kapatılamayacağını belirler.
 
@@ -520,19 +520,19 @@ virtual BOOL CanBeClosed() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme kapatılabiliyorsa TRUE; Aksi halde yanlış.
+Bölme kapatılabilirse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, bölmenin kapatılıp kapatılamayacağını anlamak için bu yöntemi çağırır. Yöntem TRUE değerini döndürürse, bölmenin başlık çubuğuna bir **kapatma** düğmesi eklenir ya da bölme ise bölmenin miniframe penceresinin başlık çubuğuna eklenir.
+Çerçeve, bölmenin kapatılıp kapatılamayacağını belirlemek için bu yöntemi çağırır. Yöntem TRUE döndürürse, bölmenin başlık çubuğuna veya bölme kayansa, bölmenin miniframe penceresinin başlık çubuğuna **Bir Kapat** düğmesi eklenir.
 
-Oluşturma sırasında, AFX_CBRS_CLOSE bayrağını [CBasePane:: CreateEx](#createex)öğesine geçirerek bu özelliği ayarlayabilirsiniz.
+İnşaat sırasında, AFX_CBRS_CLOSE bayrağını [CBasePane'ye](#createex)geçirerek bu yeteneği ayarlayabilirsiniz::CreateEx .
 
 Varsayılan uygulama AFX_CBRS_CLOSE bayrağını denetler.
 
-##  <a name="canbedocked"></a>CBasePane:: Canbeyerleştirildi
+## <a name="cbasepanecanbedocked"></a><a name="canbedocked"></a>CBasePane::CanBeDocked
 
-Bölmenin başka bir bölmeye sabitlenebilir olup olmayacağını belirler.
+Bölmenin başka bir bölmeye sabitlenip yapıştırılamayacağını belirler.
 
 ```
 virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
@@ -541,23 +541,23 @@ virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
 ### <a name="parameters"></a>Parametreler
 
 *pDockBar*<br/>
-'ndaki Başka bir bölmeye yönelik bir işaretçi.
+[içinde] Başka bir bölmeye işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu bölme başka bir bölmeye sabitlenebilir ise doğru; Aksi halde yanlış.
+Bu bölme başka bir bölmeye kenetlenebilirse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, *pDockBar* tarafından belirtilen bölmeyi geçerli bölmeye almadan önce bu yöntemi çağırır.
+Çerçeve, *pDockBar* tarafından belirtilen bölmeyi geçerli bölmeye yerleştirmeden önce bu yöntemi çağırır.
 
-Bölmelerin uygulamanızdaki diğer bölmelere nasıl ekleneceğini denetlemek için bu yöntemi ve [CBasePane:: CanAcceptPane](#canacceptpane) yöntemini kullanın.
+Bu yöntemi ve [CBasePane::Uygulamanızdaki](#canacceptpane) bölmelerin diğer bölmelere nasıl dock yapılacağını denetlemek için CanAcceptPane yöntemini kullanın.
 
-Varsayılan uygulama yanlış döndürür.
+Varsayılan uygulama FALSE döndürür.
 
-##  <a name="canberesized"></a>CBasePane:: Canbereslanmış
+## <a name="cbasepanecanberesized"></a><a name="canberesized"></a>CBasePane::CanBeResized
 
-Bölmenin yeniden boyutlandırılıp boyutlandırılmayacağını belirler.
+Bölmenin yeniden boyutlandırılıp boyutlandırılamayacağını belirler.
 
 ```
 virtual BOOL CanBeResized() const;
@@ -565,15 +565,15 @@ virtual BOOL CanBeResized() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme yeniden boyutlandırılabiliyorsa TRUE; Aksi takdirde, FALSE.
+Bölme yeniden boyutlandırılabilirse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `CBasePane::OnCreate`varsayılan olarak belirtilen AFX_CBRS_RESIZE bayrağını denetler. Bu bayrak belirtilmemişse, yerleştirme Yöneticisi bölmeyi sabitleme yerine, dahili olarak bir taşınabilir olarak işaretler.
+Bu yöntem, varsayılan olarak ' da `CBasePane::OnCreate`belirtilen AFX_CBRS_RESIZE bayrağını denetler. Bu bayrak belirtilmemişse, yerleştirme yöneticisi bölmeyi kene takmak yerine dahili olarak işaretler.
 
-##  <a name="canbetabbeddocument"></a>CBasePane:: CanBeTabbedDocument
+## <a name="cbasepanecanbetabbeddocument"></a><a name="canbetabbeddocument"></a>CBasePane::CanBeTabbedBelgesi
 
-Bölmenin bir MDI sekmeli belgesine dönüştürülüp dönüştürülmeyeceğini belirtir.
+Bölmenin MDI sekmeli belgeye dönüştürülüp dönüştürülemeyeceğini belirtir.
 
 ```
 virtual BOOL CanBeTabbedDocument() const;
@@ -581,15 +581,15 @@ virtual BOOL CanBeTabbedDocument() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme sekmeli belgeye dönüştürülebiliyorsa TRUE; Aksi takdirde, FALSE. `CBasePane::CanBeTabbedDocument` her zaman FALSE döndürür.
+Bölme sekmeli bir belgeye dönüştürülebiliyorsa DOĞRU; aksi takdirde, YANLIŞ. `CBasePane::CanBeTabbedDocument`her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca, [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md)gibi belirli `CBasePane`türetilmiş türlerin nesneleri sekmeli belgelere dönüştürülebilir.
+[Yalnızca CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)gibi belirli `CBasePane`türdeki nesneler sekmeli belgelere dönüştürülebilir.
 
-##  <a name="canfloat"></a>CBasePane:: CanFloat
+## <a name="cbasepanecanfloat"></a><a name="canfloat"></a>CBasePane::CanFloat
 
-Bölmenin kayıp kayamayacağını belirler.
+Bölmenin yüzdürüp yüzemeyeceğini belirler.
 
 ```
 virtual BOOL CanFloat() const;
@@ -597,22 +597,22 @@ virtual BOOL CanFloat() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme kaybiliyorsa, doğru; Aksi halde yanlış.
+Bölme yüzebilirse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, bölmenin kayıp kayamayacağını öğrenmek için bu yöntemi çağırır.
+Çerçeve, bölmenin yüzdürüp yüzemeyeceğini belirlemek için bu yöntemi çağırır.
 
-Oluşturma sırasında, AFX_CBRS_FLOAT bayrağını [CBasePane:: CreateEx](#createex)öğesine geçirerek bu özelliği ayarlayabilirsiniz.
+İnşaat sırasında, AFX_CBRS_FLOAT bayrağını [CBasePane'ye](#createex)geçirerek bu yeteneği ayarlayabilirsiniz::CreateEx .
 
 > [!NOTE]
->  Çerçeve, kayan olmayan bölmelerin statik olduğunu ve yerleştirme durumunun değiştiredüğünü varsayar. Bu nedenle, çerçeve, kayan olmayan bölmelerin yerleştirme durumunu kaydetmez.
+> Çerçeve, kayan olmayan bölmelerin statik olduğunu ve yerleştirme durumlarının değişemeyeceğini varsayar. Bu nedenle, çerçeve kayan olmayan bölmelerin yerleştirme durumunu kaydetmez.
 
 Varsayılan uygulama AFX_CBRS_FLOAT stilini denetler.
 
-##  <a name="canfocus"></a>CBasePane:: CanFocus
+## <a name="cbasepanecanfocus"></a><a name="canfocus"></a>CBasePane::CanFocus
 
-Bölmenin odak alıp alamayacağını belirtir.
+Bölmenin odak alıp alamadığını belirtir.
 
 ```
 virtual BOOL CanFocus() const;
@@ -620,17 +620,17 @@ virtual BOOL CanFocus() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme odak alabiliyorsa TRUE; Aksi halde yanlış.
+Bölme odak alabiliyorsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Odağı denetlemek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın. Örneğin, araç çubukları odağı alamadığı için, bu yöntem araç çubuğu nesnelerinde çağrıldığında FALSE döndürür.
+Odağı denetlemek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın. Örneğin, araç çubukları odak alamıyor çünkü, bu yöntem araç çubuğu nesneleri çağrıldığında FALSE döndürür.
 
-Çerçeve, bir bölme yerleştirildiğinde veya katdığında giriş odağını ayarlamaya çalışır.
+Çerçeve, bir bölme sabitlendiğinde veya yüzdürüldüğünde giriş odağı ayarlamaya çalışır.
 
-##  <a name="copystate"></a>CBasePane:: CopyState
+## <a name="cbasepanecopystate"></a><a name="copystate"></a>CBasePane::CopyState
 
-Verilen bölmenin durumunu kopyalar.
+Belirli bir bölmenin durumunu kopyalar.
 
 ```
 virtual void CopyState(CBasePane* pOrgBar);
@@ -639,15 +639,15 @@ virtual void CopyState(CBasePane* pOrgBar);
 ### <a name="parameters"></a>Parametreler
 
 *pOrgBar*<br/>
-'ndaki Başka bir bölmeye yönelik bir işaretçi.
+[içinde] Başka bir bölmeye işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, durumu *pOrgBar* 'tan bu bölmeye kopyalar.
+Bu yöntem durumu *pOrgBar'dan* bu bölmeye kopyalar.
 
-##  <a name="createdefaultminiframe"></a>CBasePane:: CreateDefaultMiniframe
+## <a name="cbasepanecreatedefaultminiframe"></a><a name="createdefaultminiframe"></a>CBasePane::Oluşturma DefaultMiniframe
 
-Bölme kaydırma yapabilir, bu yöntem için bir mini çerçeve penceresi oluşturur.
+Bölme kayarsa, bu yöntem bunun için bir mini çerçeve penceresi oluşturur.
 
 ```
 virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
@@ -655,20 +655,20 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
 
 ### <a name="parameters"></a>Parametreler
 
-*Rectınitial*<br/>
-'ndaki Mini çerçeve penceresinin ilk koordinatlarını belirtir.
+*rektInitial*<br/>
+[içinde] Mini çerçeve penceresinin ilk koordinatlarını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni mini çerçeve penceresine yönelik bir işaretçi veya oluşturma başarısız olduysa NULL.
+Oluşturma başarısız olduysa, yeni mini çerçeve penceresine işaretçi veya NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bölme bir kayan duruma geçtiğinde Framework bu yöntemi çağırır. Yöntemi bir mini çerçeve penceresi oluşturur ve bölmeyi bu pencereye ekler.
+Bir bölme kayan bir duruma geçtiğinde çerçeve bu yöntemi çağırır. Yöntem bir mini çerçeve penceresi oluşturur ve bölmeyi bu pencereye bağlar.
 
-Varsayılan uygulama NULL değerini döndürür.
+Varsayılan uygulama NULL döndürür.
 
-##  <a name="createex"></a>CBasePane:: CreateEx
+## <a name="cbasepanecreateex"></a><a name="createex"></a>CBasePane::CreateEx
 
 Bölme denetimini oluşturur.
 
@@ -688,59 +688,59 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwStyleEx*<br/>
-'ndaki Genişletilmiş stiller (daha fazla bilgi için bkz. [CWnd:: CreateEx](../../mfc/reference/cwnd-class.md#createex) ).
+[içinde] Genişletilmiş stiller (daha fazla bilgi için [CWnd::CreateEx'e](../../mfc/reference/cwnd-class.md#createex) bakın).
 
 *lpszClassName*<br/>
-'ndaki Pencere sınıfı adı.
+[içinde] Pencere sınıfı adı.
 
 *lpszWindowName*<br/>
-'ndaki Pencere adı.
+[içinde] Pencere adı.
 
-*dwStyle*<br/>
-'ndaki Pencere stili (bkz. [CWnd:: CreateEx](../../mfc/reference/cwnd-class.md#createex)).
+*Dwstyle*<br/>
+[içinde] Pencere stili (bkz. [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex)).
 
 *Rect*<br/>
-'ndaki İlk dikdörtgen.
+[içinde] İlk dikdörtgen.
 
 *pParentWnd*<br/>
-'ndaki Ana pencereye yönelik bir işaretçi.
+[içinde] Üst pencereiçin bir işaretçi.
 
-*NID*<br/>
-'ndaki Bölme KIMLIĞINI belirtir. Benzersiz olmalıdır.
+*Nıd*<br/>
+[içinde] Bölme kimliğini belirtir. Eşsiz olmalı.
 
 *dwControlBarStyle*<br/>
-'ndaki Panolar için stil bayrakları.
+[içinde] Bölmeler için stil bayrakları.
 
-*pContext*<br/>
-'ndaki `CcreateContext` işaretçisi
+*Pcontext*<br/>
+[içinde] Bir işaretçi`CcreateContext`
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme başarıyla oluşturulursa doğru; Aksi halde yanlış.
+Bölme başarıyla oluşturulursa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`lpszClassName`sınıfından bir pencere oluşturur. WS_CAPTION belirtirseniz, bu yöntem WS_CAPTION stil bitini temizler ve `CBasePane::m_bHasCaption` TRUE olarak ayarlar. çünkü kitaplık, açıklamalı altyazı içeren bölmeleri desteklemez.
+Sınıf `lpszClassName`penceresi oluşturur. WS_CAPTION belirtirseniz, kitaplık altyazılarla bölmeleri `CBasePane::m_bHasCaption` desteklemediği için bu yöntem WS_CAPTION stili bitini temizler ve TRUE olarak ayarlar.
 
-Alt pencere stillerinin ve MFC denetim çubuğu (CBRS_) stillerinin herhangi bir birleşimini kullanabilirsiniz.
+Alt pencere stilleri ve MFC denetim çubuğu (CBRS_) stillerinin herhangi bir birleşimini kullanabilirsiniz.
 
-Kitaplık, bölmeler için birkaç yeni stil ekler. Aşağıdaki tabloda yeni stiller açıklanmaktadır:
+Kitaplık bölmeleri için birkaç yeni stil ekler. Aşağıdaki tabloda yeni stilleri açıklanır:
 
 |Stil|Açıklama|
 |-----------|-----------------|
-|AFX_CBRS_FLOAT|Bölme de taşınabilir.|
-|AFX_CBRS_AUTOHIDE|Bölmesi otomatik gizleme modunu destekler|
-|AFX_CBRS_RESIZE|Bölme yeniden boyutlandırılabilir. **Önemli:**  Bu stil uygulanmadı.|
-|AFX_CBRS_CLOSE|Bölmesi kapatılabilir.|
-|AFX_CBRS_AUTO_ROLLUP|Bölmesi, kayan olduğunda yukarı alınabilir.|
-|AFX_CBRS_REGULAR_TABS|Bir bölme Bu stile sahip başka bir bölmeye ayarlandığında, normal sekmeli pencere oluşturulur. (Daha fazla bilgi için bkz. [CTabbedPane sınıfı](../../mfc/reference/ctabbedpane-class.md).)|
-|AFX_CBRS_OUTLOOK_TABS|Bir bölme Bu stile sahip başka bir bölmeye ayarlandığında, bir Outlook stili sekmeli pencere oluşturulur. (Daha fazla bilgi için bkz. [CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md).)|
+|AFX_CBRS_FLOAT|Bölme yüzebilir.|
+|AFX_CBRS_AUTOHIDE|Bölme otomatik gizleme modunu destekler|
+|AFX_CBRS_RESIZE|Bölme yeniden boyutlandırılabilir. **Önemli:**  Bu stil uygulanmaz.|
+|AFX_CBRS_CLOSE|Bölme kapatılabilir.|
+|AFX_CBRS_AUTO_ROLLUP|Bölme yüzdüğünde yuvarlanabilir.|
+|AFX_CBRS_REGULAR_TABS|Bir bölme bu stili içeren başka bir bölmeye dock sayılsa, normal bir sekmeli pencere oluşturulur. (Daha fazla bilgi için [Bkz. CTabbedPane Sınıfı.)](../../mfc/reference/ctabbedpane-class.md)|
+|AFX_CBRS_OUTLOOK_TABS|Bir bölme bu stili içeren başka bir bölmeye dock sayılsa, Outlook stiliseksekbaltı bir pencere oluşturulur. (Daha fazla bilgi için [cmfcOutlookBar Sınıfı'na](../../mfc/reference/cmfcoutlookbar-class.md)bakın.)|
 
-Yeni stilleri kullanmak için, bunları *dwControlBarStyle*içinde belirtin.
+Yeni stilleri kullanmak için *bunları dwControlBarStyle'da*belirtin.
 
-##  <a name="dockpane"></a>CBasePane::D ockPane
+## <a name="cbasepanedockpane"></a><a name="dockpane"></a>CBasePane::DockPane
 
-Bir bölmeyi başka bir bölmeye veya bir çerçeve penceresine göre oluşturma.
+Bölmeyi başka bir bölmeye veya çerçeve penceresine sabitler.
 
 ```
 virtual BOOL DockPane(
@@ -752,27 +752,27 @@ virtual BOOL DockPane(
 ### <a name="parameters"></a>Parametreler
 
 *pDockBar*<br/>
-'ndaki Başka bir bölmeye yönelik bir işaretçi.
+[içinde] Başka bir bölmeye işaretçi.
 
-*lpRect*<br/>
-'ndaki Hedef dikdörtgeni belirtir.
+*Lprect*<br/>
+[içinde] Hedef dikdörtgeni belirtir.
 
-*Dockyöntemi*<br/>
-'ndaki Yerleştirme yöntemini belirtir.
+*dockMethod*<br/>
+[içinde] Yerleştirme yöntemini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim çubuğu başarıyla yerleştirilmişse doğru; Aksi takdirde, FALSE.
+Denetim çubuğu başarıyla sabitlenmişse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bölmeyi, *pDockBar*tarafından belirtilen başka bir bölmeye veya takma çubuğuna ( [CDockSite sınıfı](../../mfc/reference/cdocksite-class.md)) veya *pDockBar* null ise ana çerçeveye yerleştirmek için bu işlevi çağırın.
+PDockBar tarafından belirtilen başka bir bölmeye veya dock çubuğuna [(CDockSite Sınıfı)](../../mfc/reference/cdocksite-class.md)veya *pDockBar* NULL ise bir ana çerçeveye bir bölmeyi sabitlemek için bu işlevi arayın. *pDockBar*
 
-*dockMethod* , bölmenin nasıl yerleştirildiğini belirtir. Olası değerler listesi için bkz. [CPane::D ockPane](../../mfc/reference/cpane-class.md#dockpane) .
+*dockMethod* bölmenin nasıl sabitleniyi belirtir. Olası değerlerin listesi için [CPane::DockPane](../../mfc/reference/cpane-class.md#dockpane) bölümüne bakın.
 
-##  <a name="dockpaneusingrtti"></a>CBasePane::D Ockbölmesi Usingrttı
+## <a name="cbasepanedockpaneusingrtti"></a><a name="dockpaneusingrtti"></a>CBasePane::DockPaneUsingRTTI
 
-Çalışma zamanı tür bilgilerini kullanarak bölmeyi noktaları.
+Çalışma zamanı türü bilgilerini kullanarak bölmeyi sabitler.
 
 ```
 void DockPaneUsingRTTI(BOOL bUseDockSite);
@@ -781,11 +781,11 @@ void DockPaneUsingRTTI(BOOL bUseDockSite);
 ### <a name="parameters"></a>Parametreler
 
 *bUseDockSite*<br/>
-'ndaki DOĞRU ise, yerleştirme sitesine yerleştir. YANLıŞSA, üst çerçeveye yerleştir.
+[içinde] TRUE ise, yanaşma alanına sabitle. FALSE ise, ana çerçeveye sabitle.
 
-##  <a name="docktoframewindow"></a>CBasePane: ockToFrameWindow:D
+## <a name="cbasepanedocktoframewindow"></a><a name="docktoframewindow"></a>CBasePane::DockToFrameWindow
 
-Bir çerçeveye yerleştirilebilir bölmesi noktası oluşturma.
+Sabitlenebilir bölmeyi bir çerçeveye sabitler.
 
 ```
 virtual BOOL DockToFrameWindow(
@@ -799,35 +799,35 @@ virtual BOOL DockToFrameWindow(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwhizalaması*<br/>
-'ndaki Bölmeyi yerleştirmek istediğiniz üst çerçevenin tarafı.
+*dwHizalama*<br/>
+[içinde] Bölmeyi takmak istediğiniz ana çerçevenin yan tarafı.
 
-*lpRect*<br/>
-'ndaki İstenen boyut.
+*Lprect*<br/>
+[içinde] İstenilen boyut.
 
-*dwDockFlags*<br/>
-'ndaki LIP.
+*dwDock Flags*<br/>
+[içinde] Göz ardı.
 
 *pRelativeBar*<br/>
-'ndaki LIP.
+[içinde] Göz ardı.
 
-*Nrelativeındex*<br/>
-'ndaki LIP.
+*nRelativeIndex*<br/>
+[içinde] Göz ardı.
 
-*Bukenar*<br/>
-'ndaki Doğru ise ve *dwhizalaması*tarafından belirtilen tarafta diğer yerleştirilebilir bölmeler varsa, bölmesi diğer bölmelerin dışına yerleştirilir ve üst çerçevenin kenarına yaklaştırır. YANLıŞSA, bölmesi istemci alanının merkezine daha yakın bir şekilde yerleştirilir.
+*bOuterEdge*<br/>
+[içinde] TRUE ve *dwAlignment*tarafından belirtilen tarafında başka takılabilir bölmeler varsa, bölme diğer bölmelerin dışına, ana çerçevenin kenarına daha yakın kenetlenir. FALSE ise, bölme istemci alanının merkezine daha yakın kenetlenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olduysa doğru; Aksi halde yanlış.
+Yöntem başarılı olsaydı DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir bölme bölücü ( [CPaneDivider sınıfı](../../mfc/reference/cpanedivider-class.md)) oluşturulamazsa başarısız olur. Aksi halde, her zaman TRUE değerini döndürür.
+Bir bölme bölücü [(CPaneDivider Class)](../../mfc/reference/cpanedivider-class.md)oluşturulamıyorsa bu yöntem başarısız olur. Aksi takdirde, her zaman TRUE döndürür.
 
-##  <a name="doesallowdyninsertbefore"></a>CBasePane::D Oesallowdynınsertbefore
+## <a name="cbasepanedoesallowdyninsertbefore"></a><a name="doesallowdyninsertbefore"></a>CBasePane::DoesAllowDynInsertBefore
 
-Bu bölme ve üst çerçeve arasında dinamik olarak bir bölme eklenip eklenemeyeceğini belirler.
+Bu bölme ile üst çerçeve arasına dinamik olarak başka bir bölme eklenip eklenemeyeceğini belirler.
 
 ```
 virtual BOOL DoesAllowDynInsertBefore() const;
@@ -835,19 +835,19 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir Kullanıcı başka bir bölme ekleyebiliyorsa, doğru. Aksi halde yanlış.
+Bir kullanıcı başka bir bölme ekleyebilirse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, bir kullanıcının bu bölmeden önce dinamik olarak bir bölme ekleyip ekleyemeyeceğini belirlemede bu yöntemi çağırır.
+Çerçeve, bir kullanıcının bu bölmeden önce dinamik olarak bir bölme ekleyip ekleyemeyeceğini belirlemek için bu yöntemi çağırır.
 
-Örneğin, uygulamanızın çerçevenin sol tarafında (Outlook çubuğu gibi) yerleştirilmiş bir bölme oluşturduğunu varsayalım. Kullanıcının ilk bölmenin soluna bir başka bölme takmasını engellemek için bu yöntemi geçersiz kılın ve FALSE döndürün.
+Örneğin, uygulamanızın çerçevenin sol tarafında (Outlook çubuğu gibi) sabitlenmiş bir bölme oluşturduğunu varsayalım. Kullanıcının ilk bölmenin soluna başka bir bölmeyi takmasını önlemek için bu yöntemi geçersiz kılın ve FALSE döndürün.
 
-[CDockablePane sınıfından](../../mfc/reference/cdockablepane-class.md)türetilmiş kayan olmayan bölmeler için bu yöntemi geçersiz kılmanızı ve false döndürmenizi öneririz.
+Bu yöntemi geçersiz kılmanızı ve [CDockablePane Sınıfından](../../mfc/reference/cdockablepane-class.md)türetilen kayan olmayan bölmeler için FALSE döndürmenizi öneririz.
 
-Varsayılan uygulama TRUE değerini döndürür.
+Varsayılan uygulama TRUE döndürür.
 
-##  <a name="dopaint"></a>CBasePane::D oPaint
+## <a name="cbasepanedopaint"></a><a name="dopaint"></a>CBasePane::DoPaint
 
 Bölmenin arka planını doldurur.
 
@@ -857,16 +857,16 @@ virtual void DoPaint(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamına yönelik bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama arka planı ( [CMFCVisualManager:: OnFillBarBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfillbarbackground)) dolduracak şekilde geçerli Visual Manager 'ı çağırır.
+Varsayılan uygulama, arka planı doldurmak için geçerli görsel yöneticiyi çağırır [(CMFCVisualManager::OnFillBarBackground).](../../mfc/reference/cmfcvisualmanager-class.md#onfillbarbackground)
 
-##  <a name="enabledocking"></a>CBasePane:: EnableDocking
+## <a name="cbasepaneenabledocking"></a><a name="enabledocking"></a>CBasePane::Etkinleştirme Yerleştirme
 
-Bölmeyi ana çerçeveye yerleştirmeyi sağlar.
+Bölmenin ana çerçeveye sabitlemesini sağlar.
 
 ```
 virtual void EnableDocking(DWORD dwAlignment);
@@ -874,20 +874,20 @@ virtual void EnableDocking(DWORD dwAlignment);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwhizalaması*<br/>
-'ndaki Etkinleştirilecek yerleştirme hizalamasını belirtir.
+*dwHizalama*<br/>
+[içinde] Etkinleştirmek için yerleştirme hizalamasını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ana çerçeveye yerleştirme hizalamasını etkinleştirmek için bu yöntemi çağırın. CBRS_ALIGN_ bayraklarının birleşimini geçirebilirsiniz (daha fazla bilgi için bkz. [CControlBar:: EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking)).
+Ana çerçeveye yerleştirme hizalamasını etkinleştirmek için bu yöntemi çağırın. CBRS_ALIGN_ bayraklarının bir birleşimini geçirebilirsiniz (daha fazla bilgi için [bkz. CControlBar::EnableDocking).](../../mfc/reference/ccontrolbar-class.md#enabledocking)
 
-`EnableDocking` iç bayrak `CBasePane::m_dwEnabledAlignment` ayarlar ve çerçeve bir bölme yerleştirildiğinde bu bayrağı denetler.
+`EnableDocking`iç bayrağı `CBasePane::m_dwEnabledAlignment` ayarlar ve bir bölme sabitlendiğinde çerçeve bu bayrağı denetler.
 
-Bir bölmenin yerleştirme hizalamasını öğrenmek için [CBasePane:: Getenabledhizalaması](#getenabledalignment) çağırın.
+[CBasePane'yi arayın::Bir](#getenabledalignment) bölmenin yerleştirme hizasını belirlemek için GetEnabledAlignment'ı arayın.
 
-##  <a name="enablegripper"></a>CBasePane:: Enablekavrayıcı
+## <a name="cbasepaneenablegripper"></a><a name="enablegripper"></a>CBasePane::EnableGripper
 
-Kavrayıcıyı etkinleştirilir veya devre dışı bırakır. Kavrayıcı etkinleştirilmişse, Kullanıcı bölmeyi yeniden konumlandırmak için onu sürükleyebilirsiniz.
+Kavrayıcıyı etkinleştirir veya devre dışı kılabilir. Kavrayıcı etkinse, kullanıcı bölmeyi yeniden konumlandırmak için sürükleyebilir.
 
 ```
 virtual void EnableGripper(BOOL bEnable);
@@ -895,16 +895,16 @@ virtual void EnableGripper(BOOL bEnable);
 
 ### <a name="parameters"></a>Parametreler
 
-*bEnable*<br/>
-'ndaki Kavrayıcıyı etkinleştirmek için TRUE; Devre dışı bırakmak için FALSE.
+*bEtkinleştir*<br/>
+[içinde] DOĞRU kavrayan etkinleştirmek için; Devre dışı kalmak için YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, WS_CAPTION stilini kullanmak yerine bir kavrayıcıyı etkinleştirmek için bu yöntemi kullanır.
+Çerçeve, WS_CAPTION stilini kullanmak yerine bir kavrayan ı etkinleştirmek için bu yöntemi kullanır.
 
-##  <a name="floatpane"></a>CBasePane:: FloatPane
+## <a name="cbasepanefloatpane"></a><a name="floatpane"></a>CBasePane::FloatPane
 
-Bölmeyi kayın.
+Bölmeyi yüzdürer.
 
 ```
 virtual BOOL FloatPane(
@@ -915,26 +915,26 @@ virtual BOOL FloatPane(
 
 ### <a name="parameters"></a>Parametreler
 
-*rectFloat*<br/>
-'ndaki Kayan bölmenin göründüğü ekran koordinatlarını belirtir.
+*rektFloat*<br/>
+[içinde] Kayan bölmenin göründüğü ekran koordinatlarını belirtir.
 
-*Dockyöntemi*<br/>
-'ndaki Bölmeyi kaydırmak için kullanılacak yuva yöntemini belirtir.
+*dockMethod*<br/>
+[içinde] Bölmeyi yüzdürmek için kullanılacak dock yöntemini belirtir.
 
-*bShow*<br/>
-'ndaki Kayan bölmenin görünür (TRUE) veya gizli (yanlış) olduğunu belirtir.
+*bGöster*<br/>
+[içinde] Kayan bölmenin görünür (TRUE) veya gizli (FALSE) olup olmadığını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme başarıyla kaydırılır, doğru, Aksi halde yanlış.
+Bölme başarıyla yüzdürildiyse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*RectFloat*tarafından belirtilen ekran konumundaki bir bölmeyi kaydırmak için bu yöntemi çağırın.
+*RectFloat*tarafından belirtilen ekran konumunda bir bölmeyi yüzdürmek için bu yöntemi arayın.
 
-##  <a name="get_acchelptopic"></a>CBasePane:: get_accHelpTopic
+## <a name="cbasepaneget_acchelptopic"></a><a name="get_acchelptopic"></a>CBasePane::get_accHelpTopic
 
-Framework, belirtilen nesneyle ilişkili **WinHelp** dosyasının tam yolunu ve bu dosyadaki ilgili konunun tanımlayıcısını almak için bu yöntemi çağırır.
+Çerçeve, belirtilen nesneyle ilişkili **WinHelp** dosyasının tam yolunu ve bu dosyadaki ilgili konunun tanımlayıcısını almak için bu yöntemi çağırır.
 
 ```
 virtual HRESULT get_accHelpTopic(
@@ -946,25 +946,25 @@ virtual HRESULT get_accHelpTopic(
 ### <a name="parameters"></a>Parametreler
 
 *pszHelpFile*<br/>
-'ndaki Varsa, belirtilen nesneyle ilişkili **WinHelp** dosyasının tam yolunu alan bir BSTR 'nin adresi.
+[içinde] Varsa, belirtilen nesneyle ilişkili **WinHelp** dosyasının tam yolunu alan bir BSTR adresi.
 
-*varChild*<br/>
-'ndaki Alınacak Yardım konusunun nesnenin veya nesne alt öğelerinden birinin olup olmadığını belirtir. Bu parametre, CHILDID_SELF (nesnenin alt öğelerinden biri için yardım konusu almak üzere) veya bir alt KIMLIK (nesne için yardım konusu almak için) olabilir.
+*varÇocuk*<br/>
+[içinde] Alınacak Yardım konusunun nesnenin mi yoksa nesnenin alt öğelerinden birinin mi olduğunu belirtir. Bu parametre CHILDID_SELF (nesne için bir Yardım konusu elde etmek için) veya alt kimlik (nesnenin alt öğelerinden biri için bir Yardım konusu elde etmek için) olabilir.
 
 *pidTopic*<br/>
-'ndaki Belirtilen nesneyle ilişkili **Yardım** dosyası konusunu tanımlar.
+[içinde] Belirtilen nesneyle ilişkili **Yardım** dosyası konusunu tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CBasePane` bu yöntemi uygulamaz. Bu nedenle `CBasePane::get_accHelpTopic` her zaman S_FALSE döndürür.
+`CBasePane`bu yöntemi uygulamaz. Bu `CBasePane::get_accHelpTopic` nedenle, her zaman S_FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC 'de Etkin Erişilebilirlik desteğinin bir parçasıdır. Nesneniz hakkında yardım bilgileri sağlamak için türetilmiş bir sınıftaki bu işlevi geçersiz kılın.
+Bu işlev, MFC'deki Etkin Erişilebilirlik desteğinin bir parçasıdır. Nesneniz hakkında yardım bilgileri sağlamak için türetilmiş bir sınıfta bu işlevi geçersiz kılın.
 
-##  <a name="get_accselection"></a>CBasePane:: get_accSelection
+## <a name="cbasepaneget_accselection"></a><a name="get_accselection"></a>CBasePane::get_accSelection
 
-Framework, bu nesnenin seçili alt öğelerini almak için bu yöntemi çağırır.
+Çerçeve, bu nesnenin seçili çocuklarını almak için bu yöntemi çağırır.
 
 ```
 virtual HRESULT get_accSelection(VARIANT* pvarChildren);
@@ -972,20 +972,20 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 
 ### <a name="parameters"></a>Parametreler
 
-*pvarChildren*<br/>
-'ndaki Seçili alt öğeleri tanımlayan bilgileri alır.
+*pvarÇocuklar*<br/>
+[içinde] Seçili çocukları tanımlayan bilgileri alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CBasePane` bu yöntemi uygulamaz. *Pvarchildren* null ise, bu yöntem E_INVALIDARG döndürür. Aksi takdirde, bu yöntem DISP_E_MEMBERNOTFOUND döndürür.
+`CBasePane`bu yöntemi uygulamaz. *pvarChildren* NULL ise, bu yöntem E_INVALIDARG döndürür. Aksi takdirde, bu yöntem DISP_E_MEMBERNOTFOUND döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC 'de Etkin Erişilebilirlik desteğinin bir parçasıdır. Penceresiz ActiveX denetimleri dışında pencereli olmayan kullanıcı arabirimi öğeleriniz varsa, bu işlevi türetilmiş bir sınıfta geçersiz kılın.
+Bu işlev, MFC'deki Etkin Erişilebilirlik desteğinin bir parçasıdır. Penceresiz ActiveX denetimleri dışında penceresiz olmayan kullanıcı arabirimi öğeleri varsa, türetilmiş bir sınıfta bu işlevi geçersiz kılın.
 
-##  <a name="getcaptionheight"></a>CBasePane:: GetCaptionHeight
+## <a name="cbasepanegetcaptionheight"></a><a name="getcaptionheight"></a>CBasePane::GetCaptionHeight
 
-Başlık yüksekliğini döndürür.
+Resim yazısı yüksekliğini döndürür.
 
 ```
 virtual int GetCaptionHeight() const;
@@ -993,11 +993,11 @@ virtual int GetCaptionHeight() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başlık yüksekliği.
+Resim yazısı yüksekliği.
 
-##  <a name="getcontrolbarstyle"></a>CBasePane:: GetControlBarStyle
+## <a name="cbasepanegetcontrolbarstyle"></a><a name="getcontrolbarstyle"></a>CBasePane::GetControlBarStyle
 
-Denetim çubuğu stilini döndürür.
+Denetim çubuğu stilini verir.
 
 ```
 virtual DWORD GetControlBarStyle() const
@@ -1005,22 +1005,22 @@ virtual DWORD GetControlBarStyle() const
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-AFX_CBRS_ bayraklarının bit düzeyinde veya birleşimi.
+AFX_CBRS_ bayraklarının biraz akıllıca-OR kombinasyonu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri, aşağıdaki olası değerlerin bir birleşimidir.
+İade değeri aşağıdaki olası değerlerin bir leşimidir.
 
 |Stil|Açıklama|
 |-----------|-----------------|
-|AFX_CBRS_FLOAT|Denetim çubuğunu yüzer hale getirir.|
-|AFX_CBRS_AUTOHIDE|Otomatik gizleme modunu izin vermez.|
-|AFX_CBRS_RESIZE|Denetim çubuğunun yeniden boyutlandırılmasına izin vermez. Bu bayrak ayarlandığında, denetim çubuğu bir yerleştirilebilir bölmesine yerleştirilebilir.|
-|AFX_CBRS_CLOSE|Denetim çubuğunun gizlenmesine izin vermez.|
+|AFX_CBRS_FLOAT|Kontrol çubuğunu yüzdürür.|
+|AFX_CBRS_AUTOHIDE|Otomatik gizleme modunu etkinleştirir.|
+|AFX_CBRS_RESIZE|Denetim çubuğunun yeniden boyutlandırılmasını sağlar. Bu bayrak ayarlandığında, denetim çubuğu takılabilir bölmeye yerleştirilebilir.|
+|AFX_CBRS_CLOSE|Denetim çubuğunun gizlenmesini sağlar.|
 
-##  <a name="getcurrentalignment"></a>CBasePane:: GetCurrentAlignment
+## <a name="cbasepanegetcurrentalignment"></a><a name="getcurrentalignment"></a>CBasePane::GetCurrentAlignment
 
-Geçerli bölme hizalamasını döndürür.
+Geçerli bölme hizasını döndürür.
 
 ```
 virtual DWORD GetCurrentAlignment() const;
@@ -1028,16 +1028,16 @@ virtual DWORD GetCurrentAlignment() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim çubuğunun geçerli hizalaması. Aşağıdaki tabloda olası değerler gösterilmektedir:
+Denetim çubuğunun geçerli hizalaması. Aşağıdaki tablo olası değerleri gösterir:
 
 |Değer|Hizalama|
 |-----------|---------------|
-|CBRS_ALIGN_LEFT|Sola hizalama.|
-|CBRS_ALIGN_RIGHT|Sağa hizalama.|
+|CBRS_ALIGN_LEFT|Sol hizalama.|
+|CBRS_ALIGN_RIGHT|Doğru hizalama.|
 |CBRS_ALIGN_TOP|Üst hizalama.|
 |CBRS_ALIGN_BOTTOM|Alt hizalama.|
 
-##  <a name="getdockingmode"></a>CBasePane:: GetDockingMode
+## <a name="cbasepanegetdockingmode"></a><a name="getdockingmode"></a>CBasePane::GetDockingMode
 
 Bölme için geçerli yerleştirme modunu döndürür.
 
@@ -1047,19 +1047,19 @@ virtual AFX_DOCK_TYPE GetDockingMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DT_STANDARD bölmeyi sürükleme dikdörtgeni tarafından ekranda belirtilir. Bölmenin içeriği sürüklenirse DT_IMMEDIATE.
+Bölmeyi sürüklemenin ekranda bir sürükleme dikdörtgeni ile belirtilmesi durumunda DT_STANDARD. Bölmenin içeriği sürüklenmişse DT_IMMEDIATE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, bölmenin geçerli yerleştirme modunu belirlemede bu yöntemi çağırır.
+Çerçeve, bölmenin geçerli yerleştirme modunu belirlemek için bu yöntemi çağırır.
 
-`CBasePane::m_dockMode` tanımsızdır (DT_UNDEFINED), yerleştirme modu genel yerleştirme modundan (`AFX_GLOBAL_DATA::m_dockModeGlobal`) alınır.
+`CBasePane::m_dockMode` Tanımlanmamışsa (DT_UNDEFINED), yerleştirme modu genel yerleştirme modundan alınır`AFX_GLOBAL_DATA::m_dockModeGlobal`( ).
 
-*M_dockMode* veya geçersiz kılmayı `GetDockingMode`, her bölme için yerleştirme modunu kontrol edebilirsiniz.
+*m_dockMode* ayarlayarak veya `GetDockingMode` geçersiz kılarak her bölme için yerleştirme modunu denetleyebilirsiniz.
 
-##  <a name="getdocksiteframewnd"></a>CBasePane:: GetDockSiteFrameWnd
+## <a name="cbasepanegetdocksiteframewnd"></a><a name="getdocksiteframewnd"></a>CBasePane::GetDockSiteFrameWnd
 
-Bölmenin yerleştirildiği [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)nesnesine bir işaretçi döndürür.
+Bölmenin sabitlendiği [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)nesnesine bir işaretçiyi döndürür.
 
 ```
 virtual CWnd* GetDockSiteFrameWnd() const;
@@ -1067,15 +1067,15 @@ virtual CWnd* GetDockSiteFrameWnd() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölmenin Dock sitesine yönelik bir işaretçi.
+Bölmenin dock sitesine bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bölmenin Dock sitesine bir işaretçi almak için bu yöntemi çağırın. Dock sitesi, bölme ana çerçeveye yerleştirilmişse bir ana çerçeve penceresi ya da bölme yüzer ise bir mini çerçeve penceresi olabilir.
+Bölmenin dock sitesine bir işaretçi almak için bu yöntemi arayın. Bölme ana çerçeveye sabitlenmişse, dock sitesi ana çerçeve penceresi veya bölme kayan sayılsa mini çerçeve penceresi olabilir.
 
-##  <a name="getenabledalignment"></a>CBasePane:: Getenabledhizalaması
+## <a name="cbasepanegetenabledalignment"></a><a name="getenabledalignment"></a>CBasePane::GetEnabledAlignment
 
-Bölmeye uygulanan CBRS_ALIGN_ stillerini döndürür.
+Bölmeye uygulanan CBRS_ALIGN_ stilleri döndürür.
 
 ```
 virtual DWORD GetEnabledAlignment() const;
@@ -1083,25 +1083,25 @@ virtual DWORD GetEnabledAlignment() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-CBRS_ALIGN_ stillerinin birleşimi. Aşağıdaki tabloda olası stiller gösterilmektedir:
+CBRS_ALIGN_ stillerinin bir kombinasyonu. Aşağıdaki tablo olası stilleri gösterir:
 
-|Bayrağı|Etkin hizalama|
+|Bayrak|Etkin hizalama|
 |----------|-----------------------|
-|CBRS_ALIGN_LEFT|Tarafta.|
-|CBRS_ALIGN_RIGHT|Right.|
+|CBRS_ALIGN_LEFT|Sol.|
+|CBRS_ALIGN_RIGHT|Doğru.|
 |CBRS_ALIGN_TOP|Sayfanın Üstü.|
-|CBRS_ALIGN_BOTTOM|Aşağıya.|
+|CBRS_ALIGN_BOTTOM|Alt.|
 |CBRS_ALIGN_ANY|Tüm bayrakların birleşimi.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bölmenin etkin hizalamasını öğrenmek için bu yöntemi çağırın. Etkin hizalama, bir bölmenin sabitlenebilir olduğu ana çerçeve penceresinin tarafları anlamına gelir.
+Bölme için etkin hizalamabelirlemek için bu yöntemi çağırın. Etkin hizalama, bölmenin sabitlenebileceği ana çerçeve penceresinin kenarları anlamına gelir.
 
-[CBasePane:: Enabletakmayı](#enabledocking)kullanarak yerleştirme hizalamasını etkinleştirin.
+[CBasePane::EnableDocking kullanarak yerleştirme hizalamasını etkinleştirin.](#enabledocking)
 
-##  <a name="getmfcstyle"></a>CBasePane:: GetMFCStyle
+## <a name="cbasepanegetmfcstyle"></a><a name="getmfcstyle"></a>CBasePane::GetMFCStyle
 
-MFC 'ye özgü bölme stillerini döndürür.
+MFC'ye özgü bölme stillerini döndürür.
 
 ```
 virtual DWORD GetMFCStyle() const;
@@ -1109,11 +1109,11 @@ virtual DWORD GetMFCStyle() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kitaplığa özgü (AFX_CBRS_) bölmesi stillerinin birleşimi.
+Kitaplık özgü (AFX_CBRS_) bölme stillerinin birleşimi.
 
-##  <a name="getpaneicon"></a>CBasePane:: GetPaneIcon
+## <a name="cbasepanegetpaneicon"></a><a name="getpaneicon"></a>CBasePane::GetPaneIcon
 
-Bölme simgesine bir tanıtıcı döndürür.
+Bölme simgesine bir tutamaç döndürür.
 
 ```
 virtual HICON GetPaneIcon(BOOL bBigIcon);
@@ -1121,20 +1121,20 @@ virtual HICON GetPaneIcon(BOOL bBigIcon);
 
 ### <a name="parameters"></a>Parametreler
 
-*Barıgigıcon*<br/>
-'ndaki TRUE ise 32 piksel simgesiyle 32 piksel olduğunu belirtir; YANLıŞSA 16 piksellik 16 piksellik simgeyi belirtir.
+*bBigIcon*<br/>
+[içinde] TRUE ise 32 piksele 32 piksel simgesi belirtir; FALSE ise 16 piksele 16 piksel simgesi belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme simgesine yönelik bir tanıtıcı. Başarısız olursa, NULL döndürür.
+Bölme simgesine bir tutamaç. Başarısız olursa, NULL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama [CWnd:: GetIcon](../../mfc/reference/cwnd-class.md#geticon)öğesini çağırır.
+Varsayılan uygulama [CWnd çağırır::GetIcon](../../mfc/reference/cwnd-class.md#geticon).
 
-##  <a name="getpanerow"></a>CBasePane:: GetPaneRow
+## <a name="cbasepanegetpanerow"></a><a name="getpanerow"></a>CBasePane::GetPaneRow
 
-Bölmenin yerleştirildiği [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)nesnesine bir işaretçi döndürür.
+Bölmenin sabitlendiği [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)nesnesine bir işaretçiyi döndürür.
 
 ```
 CDockingPanesRow* GetPaneRow();
@@ -1142,13 +1142,13 @@ CDockingPanesRow* GetPaneRow();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme varsa `CDockingPanesRow` için bir işaretçi veya kayan ise NULL.
+Bölmenin `CDockingPanesRow` kenetlenip sabitlenmedik veya kayan ise NULL için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bölmenin yerleştirildiği satıra erişmek için bu yöntemi çağırın. Örneğin, belirli bir satırdaki bölmeleri düzenlemek için `GetPaneRow` çağırın ve sonra [CDockingPanesRow:: Arrangebölmelerini](../../mfc/reference/cdockingpanesrow-class.md#arrangepanes)çağırın.
+Bölmenin sabitlendiği satıra erişmek için bu yöntemi arayın. Örneğin, belirli bir satırdaki bölmeleri düzenlemek `GetPaneRow` [için, cDockingPanesRow'u arayın ve ardından CDockingPanesRow'u arayın::Panes düzenle.](../../mfc/reference/cdockingpanesrow-class.md#arrangepanes)
 
-##  <a name="getpanestyle"></a>CBasePane:: Getbölmesi stili
+## <a name="cbasepanegetpanestyle"></a><a name="getpanestyle"></a>CBasePane::GetPaneStyle
 
 Bölme stilini döndürür.
 
@@ -1158,11 +1158,11 @@ virtual DWORD GetPaneStyle() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Oluşturma sırasında [CBasePane:: Setpane stil](#setpanestyle) yöntemi tarafından ayarlanan denetim çubuğu stillerinin (cbrs_ stilleri dahil) birleşimi.
+[CBasePane:SetPaneStyle](#setpanestyle) yöntemi tarafından oluşturma sırasında ayarlanan denetim çubuğu stillerinin (CBRS_ stilleri dahil) birleşimi.
 
-##  <a name="getparentdocksite"></a>CBasePane:: GetParentDockSite
+## <a name="cbasepanegetparentdocksite"></a><a name="getparentdocksite"></a>CBasePane::GetParentDockSite
 
-Üst Dock sitesine bir işaretçi döndürür.
+Bir işaretçiyi ana dock sitesine döndürür.
 
 ```
 virtual CDockSite* GetParentDockSite() const;
@@ -1170,11 +1170,11 @@ virtual CDockSite* GetParentDockSite() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üst yerleştirme sitesi.
+Ana rıhtım sitesi.
 
-##  <a name="getparentminiframe"></a>CBasePane:: GetParentMiniFrame
+## <a name="cbasepanegetparentminiframe"></a><a name="getparentminiframe"></a>CBasePane::GetParentMiniFrame
 
-Üst mini çerçeve penceresine bir işaretçi döndürür.
+Bir işaretçiyi üst mini çerçeve penceresine döndürür.
 
 ```
 virtual CPaneFrameWnd* GetParentMiniFrame(BOOL bNoAssert=FALSE) const;
@@ -1182,22 +1182,22 @@ virtual CPaneFrameWnd* GetParentMiniFrame(BOOL bNoAssert=FALSE) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Bnoonaylama*<br/>
-'ndaki TRUE ise, bu yöntem geçerli olmayan işaretçileri denetlemez. Uygulamanız çıktığında bu yöntemi çağırırsanız, bu parametreyi TRUE olarak ayarlayın.
+*bNoAssert*<br/>
+[içinde] TRUE ise, bu yöntem geçerli olmayan işaretçileri denetlemez. Uygulamanız çıktığında bu yöntemi ararsanız, bu parametreyi TRUE olarak ayarlayın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme yüzer ise üst mini çerçeve penceresine geçerli bir işaretçi; Aksi takdirde NULL.
+Bölme kayan ise üst mini çerçeve penceresi için geçerli bir işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üst mini çerçeve penceresine bir işaretçi almak için bu işlevi çağırın. Bu yöntem, [Cpgframewnd sınıfından](../../mfc/reference/cpaneframewnd-class.md)türetilmiş bir nesne için tüm üst öğeleri ve denetimleri yineler.
+Üst mini çerçeve penceresine bir işaretçi almak için bu işlevi arayın. Bu yöntem tüm ebeveynleri yineler ve [CPaneFrameWnd Sınıfından](../../mfc/reference/cpaneframewnd-class.md)türetilen bir nesneyi denetler.
 
-Bölmenin kayan olup olmadığını anlamak için `GetParentMiniFrame` kullanın.
+Bölmenin kayap kayamadığını belirlemek için kullanın. `GetParentMiniFrame`
 
-##  <a name="getparenttabbedpane"></a>CBasePane:: GetParentTabbedPane
+## <a name="cbasepanegetparenttabbedpane"></a><a name="getparenttabbedpane"></a>CBasePane::GetParentTabbedPane
 
-Üst sekmeli bölmeye bir işaretçi döndürür.
+Bir işaretçiyi üst sekmeli bölmeye döndürür.
 
 ```
 CBaseTabbedPane* GetParentTabbedPane() const;
@@ -1205,11 +1205,11 @@ CBaseTabbedPane* GetParentTabbedPane() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsa üst sekmeli bölmeye yönelik bir işaretçi; Aksi takdirde NULL.
+Varsa ana sekmeli bölmeye işaretçi; aksi takdirde NULL.
 
-##  <a name="getparenttabwnd"></a>CBasePane:: GetParentTabWnd
+## <a name="cbasepanegetparenttabwnd"></a><a name="getparenttabwnd"></a>CBasePane::GetParentTabWnd
 
-Bir sekme içinde olan üst pencereye bir işaretçi döndürür.
+Bir işaretçiyi sekme içinde olan ana pencereye döndürür.
 
 ```
 CMFCBaseTabCtrl* GetParentTabWnd(HWND& hWndTab) const;
@@ -1218,19 +1218,19 @@ CMFCBaseTabCtrl* GetParentTabWnd(HWND& hWndTab) const;
 ### <a name="parameters"></a>Parametreler
 
 *hWndTab*<br/>
-dışı Dönüş değeri NULL değilse, bu parametre üst sekmeli pencerenin tanıtıcısını içerir.
+[çıkış] İade değeri NULL değilse, bu parametre üst sekmeli pencerenin tutamacını içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üst sekmeli pencere veya NULL için geçerli bir işaretçi.
+Ana sekmeli pencereveya NULL için geçerli bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üst sekmeli pencereye bir işaretçi almak için bu işlevi kullanın. Bir bölme bir yerleştirme Sarmalayıcısı ( [CDockablePaneAdapter sınıfı](../../mfc/reference/cdockablepaneadapter-class.md)) içinde veya bir bölme bağdaştırıcısı ( [CDockablePaneAdapter sınıfı](../../mfc/reference/cdockablepaneadapter-class.md)) içinde olabileceği için bazen `GetParent`çağrısı yapmak yeterli değildir. `GetParentTabWnd` kullanarak bu durumlarda geçerli bir işaretçi alabilirsiniz (üst öğenin sekmeli pencere olduğu varsayılırsa).
+Üst sekmeli pencereye bir işaretçi almak için bu işlevi kullanın. Bazen aramak `GetParent`için yeterli değildir, bir bölme bir yerleştirme sarıcı içinde olabilir çünkü [(CDockablePaneAdapter Class](../../mfc/reference/cdockablepaneadapter-class.md)) veya bir bölme adaptörü içinde [(CDockablePaneAdapter Class).](../../mfc/reference/cdockablepaneadapter-class.md) Bu `GetParentTabWnd` gibi durumlarda geçerli bir işaretçi (üst öğenin sekmeli bir pencere olduğunu varsayarak) kullanarak geçerli bir işaretçi alabileceksiniz.
 
-##  <a name="getrecentvisiblestate"></a>CBasePane:: GetRecentVisibleState
+## <a name="cbasepanegetrecentvisiblestate"></a><a name="getrecentvisiblestate"></a>CBasePane::GetRecentVisibleState
 
-Bir bölme bir arşivden geri yüklendiğinde Framework bu yöntemi çağırır.
+Bir bölme arşivden geri yüklendiğinde çerçeve bu yöntemi çağırır.
 
 ```
 virtual BOOL GetRecentVisibleState() const;
@@ -1238,11 +1238,11 @@ virtual BOOL GetRecentVisibleState() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Son görünen durumu belirten bir BOOL. TRUE ise bölme serileştirildiğinde görünür ve geri yüklendiğinde görünür olması gerekir. FALSE ise bölme serileştirildiğinde gizlidir ve geri yüklendiğinde gizli olması gerekir.
+Son görünür durumu belirten bir BOOL. TRUE ise, bölme seri hale geldiğinde görünürdü ve geri yüklendiğinde görünür olmalıdır. FALSE ise, bölme seri hale geldiğinde gizliydi ve geri yüklendiğinde gizlenmeli.
 
-##  <a name="hideinprintpreviewmode"></a>CBasePane:: Hideınprintönizleme modu
+## <a name="cbasepanehideinprintpreviewmode"></a><a name="hideinprintpreviewmode"></a>CBasePane::HideInPrintPreviewMode
 
-Bölmenin baskı önizlemede gizlenip gizlenmeyeceğini belirtir.
+Bölmenin yazdırma önizlemesinde gizli olup olmadığını belirtir.
 
 ```
 virtual BOOL HideInPrintPreviewMode() const;
@@ -1250,15 +1250,15 @@ virtual BOOL HideInPrintPreviewMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme baskı önizlemede gösterilmiyorsa doğru; Aksi takdirde, FALSE.
+Bölme yazdırma önizlemesinde gösterilmezse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel bölmeler baskı önizlemede gösterilmez. Bu nedenle, bu yöntem her zaman TRUE değerini döndürür.
+Temel bölmeler yazdırma önizlemesinde gösterilmez. Bu nedenle, bu yöntem her zaman TRUE döndürür.
 
-##  <a name="insertpane"></a>CBasePane:: InsertPane
+## <a name="cbasepaneinsertpane"></a><a name="insertpane"></a>CBasePane::InsertPane
 
-Belirtilen bölmeyi yerleştirme yöneticisiyle kaydeder.
+Belirtilen bölmeyi yerleştirme yöneticisine kaydeder.
 
 ```
 BOOL InsertPane(
@@ -1270,21 +1270,21 @@ BOOL InsertPane(
 ### <a name="parameters"></a>Parametreler
 
 *pControlBar*<br/>
-'ndaki Eklenecek bölmeye yönelik bir işaretçi.
+[içinde] Eklemek için bölmeye bir işaretçi.
 
 *pTarget*<br/>
-'ndaki Bitişik bölmeye yönelik bir işaretçi.
+[içinde] Bitişik bölmeye bir işaretçi.
 
 *bAfter*<br/>
-'ndaki TRUE ise *pControlBar* , *pTarget*öğesinden sonra eklenir. FALSE ise *pControlBar* , *pTarget*öğesinden önce eklenir.
+[içinde] DOĞRUYSA, *pControlBar* *pTarget'tan*sonra eklenir. FALSE ise, *pControlBar* *pTarget*önce eklenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE, aksi takdirde FALSE.
+Doğru yöntem başarılı olursa, FALSE aksi.
 
-##  <a name="isaccessibilitycompatible"></a>CBasePane:: IsAccessibilityCompatible
+## <a name="cbasepaneisaccessibilitycompatible"></a><a name="isaccessibilitycompatible"></a>CBasePane::ErişilebilirlikUyumlu
 
-Bölmenin etkin erişilebilirliği destekleyip desteklemediğini belirtir.
+Bölmenin Etkin Erişilebilirliği destekleyip desteklemediğini belirtir.
 
 ```
 virtual BOOL IsAccessibilityCompatible();
@@ -1292,11 +1292,11 @@ virtual BOOL IsAccessibilityCompatible();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme etkin erişilebilirliği destekliyorsa doğru; Aksi takdirde, FALSE.
+Bölme Etkin Erişilebilirliği destekliyorsa DOĞRU; aksi takdirde, YANLIŞ.
 
-##  <a name="isautohidemode"></a>CBasePane:: ısoto Hidemode
+## <a name="cbasepaneisautohidemode"></a><a name="isautohidemode"></a>CBasePane::IsAutoHideMode
 
-Bir bölmenin otomatik gizleme modunda olup olmadığını belirler.
+Bölmenin otomatik gizleme modunda olup olmadığını belirler.
 
 ```
 virtual BOOL IsAutoHideMode() const;
@@ -1304,15 +1304,15 @@ virtual BOOL IsAutoHideMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme otomatik gizleme modundaysa doğru; Aksi takdirde, FALSE.
+Bölme otomatik gizleme modundaysa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel bölmeler otomatik olarak gizlenemez. Bu yöntem her zaman FALSE döndürür.
+Temel bölmeler otomatik gizleyemez. Bu yöntem her zaman FALSE döndürür.
 
-##  <a name="isdialogcontrol"></a>CBasePane:: ısdialogcontrol
+## <a name="cbasepaneisdialogcontrol"></a><a name="isdialogcontrol"></a>CBasePane::IsDialogControl
 
-Bölmenin bir iletişim kutusu denetimi olup olmadığını belirtir.
+Bölmenin iletişim kutusu denetimi olup olmadığını belirtir.
 
 ```
 BOOL IsDialogControl() const;
@@ -1320,15 +1320,15 @@ BOOL IsDialogControl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme bir iletişim kutusu denetimi ise doğru; Aksi takdirde, FALSE.
+Bölme bir iletişim kutusu denetimi ise DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, tüm bölmelerde düzen tutarlılığı sağlamak için bu yöntemi kullanır.
+Çerçeve, tüm bölmeler için düzen tutarlılığı sağlamak için bu yöntemi kullanır.
 
-##  <a name="isdocked"></a>CBasePane:: ıyerleştirildi
+## <a name="cbasepaneisdocked"></a><a name="isdocked"></a>CBasePane::Docked
 
-Bölmenin yerleştirilmiş olup olmadığını belirler.
+Bölmenin kenetlenip kenetlenmediğini belirler.
 
 ```
 virtual BOOL IsDocked() const;
@@ -1336,11 +1336,11 @@ virtual BOOL IsDocked() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölmenin üst öğesi bir mini çerçeve değilse veya bölme başka bir bölme ile bir mini çerçevede yüzer ise TRUE. Aksi takdirde, FALSE.
+Bölmenin üst öğesi bir mini çerçeve değilse veya bölme başka bir bölmeyle birlikte mini bir çerçevede yüzüyorsa DOĞRU; aksi takdirde, YANLIŞ.
 
-##  <a name="isfloating"></a>CBasePane:: ıskayan
+## <a name="cbasepaneisfloating"></a><a name="isfloating"></a>CBasePane::IsFloating
 
-Bölmenin kayan olup olmadığını belirler.
+Bölmenin kayap kayamadığını belirler.
 
 ```
 virtual BOOL IsFloating() const;
@@ -1348,15 +1348,15 @@ virtual BOOL IsFloating() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme yüzer ise doğru; Aksi takdirde, FALSE.
+Bölme kayan ise DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [CBasePane:: ısıse](#isdocked)değerinin karşıt değerini döndürür.
+Bu yöntem CBasePane ters değerini [döndürür::IsDocked](#isdocked).
 
-##  <a name="ishorizontal"></a>CBasePane:: ısyatay
+## <a name="cbasepaneishorizontal"></a><a name="ishorizontal"></a>CBasePane::Yatay
 
-Bölmenin yatay olarak yerleştirilmiş olup olmadığını belirler.
+Bölmenin yatay olarak sabitlenip kenetlenmediğini belirler.
 
 ```
 virtual BOOL IsHorizontal() const;
@@ -1364,15 +1364,15 @@ virtual BOOL IsHorizontal() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme yatay olarak yuvalanmışsa TRUE; Aksi halde yanlış.
+Bölme yatay olarak kenetlenirse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama CBRS_ORIENT_HORZ için geçerli yerleştirme hizalamasını denetler.
+Varsayılan uygulama, geçerli yerleştirme hizalamasını CBRS_ORIENT_HORZ denetler.
 
-##  <a name="isinfloatingmultipaneframewnd"></a>CBasePane:: ısinfloatingmultipane Framewnd
+## <a name="cbasepaneisinfloatingmultipaneframewnd"></a><a name="isinfloatingmultipaneframewnd"></a>CBasePane::IsInFloatingMultiPaneFrameWnd
 
-Bölmenin çok bölgeli bir çerçeve penceresinde ( [Cmultipane Framewnd sınıfı](../../mfc/reference/cmultipaneframewnd-class.md)) olup olmadığını belirtir.
+Bölmenin çok bölmeli çerçeve penceresinde olup olmadığını belirtir [(CMultiPaneFrameWnd Class).](../../mfc/reference/cmultipaneframewnd-class.md)
 
 ```
 virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
@@ -1380,15 +1380,15 @@ virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme çok bölgeli bir çerçeve penceresinde ise doğru; Aksi takdirde, FALSE.
+Bölme çok bölmeli çerçeve penceresindeyse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca yerleştirilebilir bölmeler, çok bölgeli bir çerçeve penceresinde taşınabilir. Bu nedenle `CBasePane::IsInFloatingMultiPaneFrameWnd` her zaman FALSE döndürür.
+Yalnızca takılabilir bölmeler çok bölmeli çerçeve penceresinde yüzebilir. Bu `CBasePane::IsInFloatingMultiPaneFrameWnd` nedenle, her zaman FALSE döndürür.
 
-##  <a name="ismditabbed"></a>CBasePane:: ısmdısekmeli
+## <a name="cbasepaneismditabbed"></a><a name="ismditabbed"></a>CBasePane::IsMDITabbed
 
-Bölmenin bir MDI alt penceresine sekmeli belge olarak eklenip eklenmeyeceğini belirler.
+Bölmenin sekmeli belge olarak MDI alt penceresine eklenip eklenmediğini belirler.
 
 ```
 virtual BOOL IsMDITabbed() const;
@@ -1396,11 +1396,11 @@ virtual BOOL IsMDITabbed() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme bir MDI alt penceresine sekmeli belge olarak eklendiyse TRUE; Aksi takdirde, FALSE.
+Bölme sekmeli belge olarak MDI alt penceresine eklendiyse DOĞRU; aksi takdirde, YANLIŞ.
 
-##  <a name="ispanevisible"></a>CBasePane:: IsPaneVisible
+## <a name="cbasepaneispanevisible"></a><a name="ispanevisible"></a>CBasePane::IsPaneVisible
 
-Bölme için WS_VISIBLE bayrağının ayarlanmış olup olmadığını belirtir.
+Bölme için WS_VISIBLE bayrağının ayarlanıp ayarlanıp ayarlmadığını belirtir.
 
 ```
 BOOL IsPaneVisible() const;
@@ -1408,15 +1408,15 @@ BOOL IsPaneVisible() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-WS_VISIBLE ayarlandıysa TRUE; Aksi takdirde, FALSE.
+WS_VISIBLE ayarlanırsa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bölüm görünürlüğünü tespit etmek için [CBasePane:: IsVisible](#isvisible) kullanın.
+Bölme görünürlüğünü belirlemek için [CBasePane::IsVisible'ı](#isvisible) kullanın.
 
-##  <a name="ispointneardocksite"></a>CBasePane:: ıspointyaklaştığında Docksite
+## <a name="cbasepaneispointneardocksite"></a><a name="ispointneardocksite"></a>CBasePane::IsPointNearDockSite
 
-Belirtilen noktanın Dock sitesine yakın olup olmadığını belirler.
+Belirli bir noktanın dock bölgesine yakın olup olmadığını belirler.
 
 ```
 BOOL IsPointNearDockSite(
@@ -1427,26 +1427,26 @@ BOOL IsPointNearDockSite(
 
 ### <a name="parameters"></a>Parametreler
 
-*seçeneğinin*<br/>
-'ndaki Belirtilen nokta.
+*Nokta*<br/>
+[içinde] Belirtilen nokta.
 
-*Dwbarhizalaması*<br/>
-dışı Noktanın yakınında olduğunu belirtir. Olası değerler şunlardır CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP ve CBRS_ALIGN_BOTTOM
+*dwBarAlignment*<br/>
+[çıkış] Noktanın hangi kenarın yakın olduğunu belirtir. Olası değerler CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP ve CBRS_ALIGN_BOTTOM
 
-*Bukenar*<br/>
-dışı Nokta, dock sitesinin dış kenarlığına yaklaşmışsa TRUE; Aksi takdirde FALSE.
+*bOuterEdge*<br/>
+[çıkış] Nokta rıhtım alanının dış sınırına yakınsa DOĞRU; YANLIŞ aksi takdirde.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nokta dock sitesinin yakınında ise doğru; Aksi halde yanlış.
+Nokta rıhtım alanına yakınsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nokta, yerleştirme yöneticisinde ayarlanan duyarlılık dahilinde olduğunda yerleştirme sitesinin yakınında olur. Varsayılan duyarlılık 15 pikseldir.
+Nokta, yerleştirme yöneticisinde ayarlanan duyarlılık içinde olduğunda dock alanının yakınındadır. Varsayılan hassasiyet 15 pikseldir.
 
-##  <a name="isresizable"></a>CBasePane:: ısyeniden boyutlandırılabilir
+## <a name="cbasepaneisresizable"></a><a name="isresizable"></a>CBasePane::Yeniden boyutlandırılabilir
 
-Bölmenin yeniden boyutlandırılıp boyutlandırılmayacağını belirler.
+Bölmenin yeniden boyutlandırılıp boyutlandırılamayacağını belirler.
 
 ```
 virtual BOOL IsResizable() const;
@@ -1454,17 +1454,17 @@ virtual BOOL IsResizable() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme Kullanıcı tarafından yeniden boyutlandırılabiliyorsa TRUE; Aksi takdirde, FALSE.
+Bölme kullanıcı tarafından yeniden boyutlandırılabilirse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CDockablePane sınıfının](../../mfc/reference/cdockablepane-class.md) bölmeleri yeniden boyutlandırılabilir.
+[CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md) bölmeleri yeniden boyutlandırılabilir.
 
-Durum çubuğu ( [CMFCStatusBar sınıfı](../../mfc/reference/cmfcstatusbar-class.md)) ve yerleştirme çubuğu ( [CDockSite sınıfı](../../mfc/reference/cdocksite-class.md)) yeniden boyutlandırılamaz.
+Durum çubuğu ( [CMFCStatusBar Class)](../../mfc/reference/cmfcstatusbar-class.md)ve dock çubuğu [(CDockSite Class)](../../mfc/reference/cdocksite-class.md)yeniden boyutlandırılamaz.
 
-##  <a name="isrestoredfromregistry"></a>CBasePane:: ısrestoredfromregistry
+## <a name="cbasepaneisrestoredfromregistry"></a><a name="isrestoredfromregistry"></a>CBasePane::IsRestoredFromRegistry
 
-Bölmenin kayıt defterinden geri yüklenip yüklenmediğini belirler.
+Bölmenin kayıt defterinden geri yüklenip geri getirilmediğini belirler.
 
 ```
 virtual BOOL IsRestoredFromRegistry() const;
@@ -1472,11 +1472,11 @@ virtual BOOL IsRestoredFromRegistry() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme kayıt defterinden geri yüklenirse doğru. Aksi takdirde, FALSE.
+Bölme kayıt defterinden geri yüklenirse DOĞRU; aksi takdirde, YANLIŞ.
 
-##  <a name="istabbed"></a>CBasePane:: ıssekmeli
+## <a name="cbasepaneistabbed"></a><a name="istabbed"></a>CBasePane::IsTabbed
 
-Bölmenin sekmeli pencerenin Sekme denetimine eklenip eklenmeyeceğini belirler.
+Bölmenin sekmeli pencerenin sekme denetimine eklenip eklenmediğini belirler.
 
 ```
 virtual BOOL IsTabbed() const;
@@ -1484,13 +1484,13 @@ virtual BOOL IsTabbed() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim çubuğu sekmeli pencerenin bir sekmesine eklenirse TRUE; Aksi halde yanlış.
+Denetim çubuğu sekmeli pencerenin sekmesine eklenirse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, hemen üst öğeye bir işaretçi alır ve üst öğenin çalışma zamanı sınıfının [CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md)olup olmadığını belirler.
+Bu yöntem, hemen üst bir işaretçi alır ve üst çalışma zamanı sınıfı [CMFCBaseTabCtrl Sınıf](../../mfc/reference/cmfcbasetabctrl-class.md)olup olmadığını belirler.
 
-##  <a name="isvisible"></a>CBasePane:: IsVisible
+## <a name="cbasepaneisvisible"></a><a name="isvisible"></a>CBasePane::Görünür
 
 Bölmenin görünür olup olmadığını belirler.
 
@@ -1500,15 +1500,15 @@ virtual BOOL IsVisible() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme görünür durumdaysa doğru; Aksi halde yanlış.
+Bölme görünürse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bölmenin görünürlüğünü öğrenmek için bu yöntemi kullanın. `::IsWindowVisible`kullanmayın.
+Bölmenin görünürlüğünü belirlemek için bu yöntemi kullanın. `::IsWindowVisible`Kullanmayın.
 
-Bölme sekmeli değilse (bkz. [CBasePane:: ıssekmeli](#istabbed)), bu yöntem WS_VISIBLE stilini denetler. Bölmesi sekmeli ise, bu yöntem üst sekmeli pencerenin görünürlüğünü denetler. Üst pencere görünür durumdaysa, işlev [CMFCBaseTabCtrl:: IsTabVisible](../../mfc/reference/cmfcbasetabctrl-class.md#istabvisible)kullanarak bölme sekmesinin görünürlüğünü denetler.
+Bölme sekmeli değilse [(Bkz. CBasePane::IsTabbed),](#istabbed)bu yöntem WS_VISIBLE stilini denetler. Bölme sekmeliyse, bu yöntem üst sekmeli pencerenin görünürlüğünü denetler. Üst pencere görünürse, işlev [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md#istabvisible)kullanarak bölme sekmesinin görünürlüğünü denetler::IsTabVisible .
 
-##  <a name="loadstate"></a>CBasePane:: LoadState
+## <a name="cbasepaneloadstate"></a><a name="loadstate"></a>CBasePane::LoadState
 
 Bölmenin durumunu kayıt defterinden yükler.
 
@@ -1522,25 +1522,25 @@ virtual BOOL LoadState(
 ### <a name="parameters"></a>Parametreler
 
 *lpszProfileName*<br/>
-'ndaki Profil adı.
+[içinde] Profil adı.
 
-*nDizin*<br/>
-'ndaki Profil dizini.
+*Nındex*<br/>
+[içinde] Profil dizini.
 
-*Uııd*<br/>
-'ndaki Bölme KIMLIĞI.
+*uiID*<br/>
+[içinde] Bölme kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme durumu başarıyla yüklenmişse, doğru; Aksi halde yanlış.
+Bölme durumu başarıyla yüklenmişse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, kayıt defterinden bölme durumunu yüklemek için bu yöntemi çağırır. [CBasePane:: savtiği](#savestate)tarafından kaydedilen ek bilgileri yüklemek için türetilmiş bir sınıfta bunu geçersiz kılın.
+Çerçeve, bölme durumunu kayıt defterinden yüklemek için bu yöntemi çağırır. CBasePane tarafından kaydedilen ek bilgileri yüklemek için türetilmiş bir sınıfta geçersiz [kılın::SaveState](#savestate).
 
-##  <a name="movewindow"></a>CBasePane:: MoveWindow
+## <a name="cbasepanemovewindow"></a><a name="movewindow"></a>CBasePane::Taşıma Penceresi
 
-Bölmeyi gider.
+Bölmeyi hareket ettirir.
 
 ```
 virtual HDWP MoveWindow(
@@ -1552,25 +1552,25 @@ virtual HDWP MoveWindow(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-'ndaki Bölmenin yeni konumunu ve boyutunu belirten bir dikdörtgen.
+[içinde] Bölmenin yeni konumunu ve boyutunu belirten bir dikdörtgen.
 
-*bYeniden çizmeyi*<br/>
-'ndaki TRUE ise bölme yeniden boyanır. YANLıŞSA, bölme yeniden boyanmaz.
+*bRepaint*<br/>
+[içinde] DOĞRUysa, bölme yeniden boyanır. FALSE ise bölme yeniden boyanmamış.
 
 *hdwp*<br/>
-'ndaki Ertelenmiş pencere konumu yapısına yönelik tanıtıcı.
+[içinde] Ertelenmiş bir pencere konumu yapısına işle.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ertelenmiş pencere konumu yapısına yönelik bir tanıtıcı veya NULL.
+Ertelenmiş bir pencere konumu yapısına bir tanıtıcı veya NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-NULL değerini *hdwp* parametresi olarak geçirirseniz, bu yöntem pencereyi normal şekilde taşır. Bir tanıtıcı geçirirseniz, bu yöntem ertelenmiş bir pencere taşır. [BeginDeferWindowPos](/windows/win32/api/winuser/nf-winuser-begindeferwindowpos) ' i çağırarak veya önceki çağrının dönüş değerini bu yönteme depolayarak bir tanıtıcı elde edebilirsiniz.
+*NULL'u hdwp* parametresi olarak geçerseniz, bu yöntem pencereyi normal olarak taşır. Bir tanıtıcıyı geçerseniz, bu yöntem ertelenmiş bir pencere hareketi gerçekleştirir. [BeginDeferWindowPos'u](/windows/win32/api/winuser/nf-winuser-begindeferwindowpos) arayarak veya önceki bir aramanın dönüş değerini bu yönteme depolayarak bir tutamaç elde edebilirsiniz.
 
-##  <a name="onafterchangeparent"></a>CBasePane:: OnAfterChangeParent
+## <a name="cbasepaneonafterchangeparent"></a><a name="onafterchangeparent"></a>CBasePane::OnAfterChangeParent
 
-Bölmenin üst değişikliklerinden sonra Framework tarafından çağırılır.
+Bölmenin üst öğesi değiştikten sonra çerçeve tarafından çağrılır.
 
 ```
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);
@@ -1579,17 +1579,17 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ### <a name="parameters"></a>Parametreler
 
 *pWndOldParent*<br/>
-'ndaki Önceki üst öğeye yönelik bir işaretçi.
+[içinde] Önceki üst öğeye işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, genellikle bir takma veya kayan işlem nedeniyle bölmenin üst değişikliklerinden sonra bu yöntemi çağırır.
+Çerçeve, genellikle bir yerleştirme veya kayan işlem nedeniyle bölmenin üst değişiklikleri sonra bu yöntemi çağırır.
 
 Varsayılan uygulama hiçbir şey yapmaz.
 
-##  <a name="onbeforechangeparent"></a>CBasePane:: OnBeforeChangeParent
+## <a name="cbasepaneonbeforechangeparent"></a><a name="onbeforechangeparent"></a>CBasePane::OnBeforeChangeParent
 
-Bölme, ana penceresini değiştirmeden hemen önce çerçevesi tarafından çağırılır.
+Bölme üst penceresini değiştirmeden hemen önce çerçeve tarafından çağrılır.
 
 ```
 virtual void OnBeforeChangeParent(
@@ -1600,20 +1600,20 @@ virtual void OnBeforeChangeParent(
 ### <a name="parameters"></a>Parametreler
 
 *pWndNewParent*<br/>
-'ndaki Yeni bir üst pencerenin işaretçisi.
+[içinde] Yeni bir üst pencere için bir işaretçi.
 
-*bDelay*<br/>
-'ndaki Düzen ayarlamaları Gecikmeli olup olmadığını belirtir.
+*bGecikme*<br/>
+[içinde] Düzen ayarlamalarının geciktirilip geciktirilmeyeceğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, genellikle bir yerleştirme, kayan veya otomatik gizleme işlemi nedeniyle bölmenin üst değişikliklerinden hemen önce bu yöntemi çağırır.
+Çerçeve, genellikle bir yerleştirme, kayan veya otomatik gizleme işlemi nedeniyle bölmenin üst değişiklikleri hemen önce bu yöntemi çağırır.
 
 Varsayılan uygulama hiçbir şey yapmaz.
 
-##  <a name="ondrawcaption"></a>CBasePane:: OnDrawCaption
+## <a name="cbasepaneondrawcaption"></a><a name="ondrawcaption"></a>CBasePane::OnDrawCaption
 
-Resim yazısı çizildiğinde çerçeve bu yöntemi çağırır.
+Başlık çizildiğinde çerçeve bu yöntemi çağırır.
 
 ```
 virtual void OnDrawCaption();
@@ -1621,11 +1621,11 @@ virtual void OnDrawCaption();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin `CBasePane` sınıfı için bir işlevi yoktur.
+Bu `CBasePane` yöntemin sınıf için işlevselliği yoktur.
 
-##  <a name="onmovepanedivider"></a>CBasePane:: OnMovePaneDivider
+## <a name="cbasepaneonmovepanedivider"></a><a name="onmovepanedivider"></a>CBasePane::OnMovePaneDivider
 
-Bu yöntem şu anda kullanılmıyor.
+Bu yöntem şu anda kullanılmaz.
 
 ```
 virtual void OnMovePaneDivider(CPaneDivider* /* unused */);
@@ -1633,12 +1633,12 @@ virtual void OnMovePaneDivider(CPaneDivider* /* unused */);
 
 ### <a name="parameters"></a>Parametreler
 
-*kullanılmayan*<br/>
-'ndaki Kullanılmıyor.
+*Kullanılma -yan*<br/>
+[içinde] Kullanılmaz.
 
-##  <a name="onpanecontextmenu"></a>CBasePane:: Onbölmesi ContextMenu
+## <a name="cbasepaneonpanecontextmenu"></a><a name="onpanecontextmenu"></a>CBasePane::OnPaneContextMenu
 
-Bir bölme listesi olan bir menü oluşturduğunda Framework tarafından çağırılır.
+Bölmelerin bir listesini içeren bir menü oluşturduğunda çerçeve tarafından çağrılır.
 
 ```
 virtual void OnPaneContextMenu(
@@ -1649,20 +1649,20 @@ virtual void OnPaneContextMenu(
 ### <a name="parameters"></a>Parametreler
 
 *pParentFrame*<br/>
-'ndaki Üst çerçeveye yönelik bir işaretçi.
+[içinde] Ana çerçeveiçin bir işaretçi.
 
-*seçeneğinin*<br/>
-'ndaki Kısayol menüsünün konumunu belirtir.
+*Nokta*<br/>
+[içinde] Kısayol menüsünün konumunu belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`OnPaneContextMenu`, geçerli çerçeve penceresine ait bölmeler listesini tutan yerleştirme yöneticisini çağırır. Bu yöntem, bölmelerin adlarını bir kısayol menüsüne ekler ve görüntüler. Menüdeki komutlar tek tek bölmeleri gösterir veya gizler.
+`OnPaneContextMenu`geçerli çerçeve penceresine ait bölmelerin listesini tutan yerleştirme yöneticisini çağırır. Bu yöntem, bölmelerin adlarını bir kısayol menüsüne ekler ve görüntüler. Menüdeki komutlar tek tek bölmeleri gösterir veya gizleyin.
 
 Bu davranışı özelleştirmek için bu yöntemi geçersiz kılın.
 
-##  <a name="onremovefromminiframe"></a>CBasePane:: OnRemoveFromMiniFrame
+## <a name="cbasepaneonremovefromminiframe"></a><a name="onremovefromminiframe"></a>CBasePane::OnRemoveFromMiniFrame
 
-Bir bölme üst mini çerçeve penceresinden kaldırıldığında Framework tarafından çağırılır.
+Bir bölme üst mini çerçeve penceresinden kaldırıldığında çerçeve tarafından çağrılır.
 
 ```
 virtual void OnRemoveFromMiniFrame(CPaneFrameWnd* pMiniFrame);
@@ -1671,17 +1671,17 @@ virtual void OnRemoveFromMiniFrame(CPaneFrameWnd* pMiniFrame);
 ### <a name="parameters"></a>Parametreler
 
 *pMiniFrame*<br/>
-'ndaki Bölmenin kaldırıldığı mini çerçeve penceresine yönelik bir işaretçi.
+[içinde] Bölmenin kaldırıldığı mini çerçeve penceresine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir bölme üst mini çerçeve penceresinden kaldırıldığında (örneğin, yerleştirme sonucu olarak) bu yöntemi çağırır.
+Bir bölme üst mini çerçeve penceresinden kaldırıldığında (örneğin, yerleştirme sonucunda) çerçeve bu yöntemi çağırır.
 
 Varsayılan uygulama hiçbir şey yapmaz.
 
-##  <a name="onsetaccdata"></a>CBasePane:: OnSetAccData
+## <a name="cbasepaneonsetaccdata"></a><a name="onsetaccdata"></a>CBasePane::OnSetAccData
 
-`CBasePane` bu yöntemi kullanmaz.
+`CBasePane`bu yöntemi kullanmaz.
 
 ```
 virtual BOOL OnSetAccData(long lVal);
@@ -1690,15 +1690,15 @@ virtual BOOL OnSetAccData(long lVal);
 ### <a name="parameters"></a>Parametreler
 
 *lVal*<br/>
-'ndaki Kullanılmıyor.
+[içinde] Kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem her zaman TRUE değerini döndürür.
+Bu yöntem her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="panefrompoint"></a>CBasePane::P aneFromPoint
+## <a name="cbasepanepanefrompoint"></a><a name="panefrompoint"></a>CBasePane::PaneFromPoint
 
 Verilen noktayı içeren bölmeyi döndürür.
 
@@ -1712,33 +1712,33 @@ CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>Parametreler
 
-*seçeneğinin*<br/>
-'ndaki Denetlenecek işaretçiyi ekran koordinatları olarak belirtir.
+*Nokta*<br/>
+[içinde] Kontrol etmek için ekran koordinatlarında noktayı belirtir.
 
-*Duyarlılık*<br/>
-'ndaki Arama alanını bu miktara göre artırın. Verilen nokta artan alana denk geliyorsa, bir bölme arama ölçütlerini karşılar.
+*nDuyarlılık*<br/>
+[içinde] Arama alanını bu tutara göre artırın. Verilen nokta artan alana düşerse, bölme arama ölçütlerini karşılar.
 
 *bExactBar*<br/>
-'ndaki *Nduyarlılık* parametresini YOKSAYMAK için true; Aksi takdirde, FALSE.
+[içinde] *NSensitivity* parametresini yoksaymak için DOĞRU; aksi takdirde, YANLIŞ.
 
 *pRTCBarType*<br/>
-'ndaki NULL değilse, yöntem yalnızca belirtilen türdeki bölmeleri arar.
+[içinde] NULL değilse, yöntem yalnızca belirtilen türdeki bölmeleri arar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Verilen noktayı içeren `CBasePane`türetilen nesne veya hiçbir bölme bulunmazsa NULL.
+Verilen `CBasePane`noktayı içeren türetilmiş nesne veya bölme bulunamadıysa NULL.
 
-##  <a name="recalclayout"></a>CBasePane:: RecalcLayout
+## <a name="cbasepanerecalclayout"></a><a name="recalclayout"></a>CBasePane::RecalcLayout
 
-`CBasePane` bu yöntemi kullanmaz.
+`CBasePane`bu yöntemi kullanmaz.
 
 ```
 virtual void RecalcLayout();
 ```
 
-##  <a name="removepanefromdockmanager"></a>CBasePane:: RemovePaneFromDockManager
+## <a name="cbasepaneremovepanefromdockmanager"></a><a name="removepanefromdockmanager"></a>CBasePane::RemovePaneFromDockManager
 
-Bir bölmenin kaydını siler ve yerleştirme yöneticisindeki listeden kaldırır.
+Bölmenin kaydını kaldırır ve yerleştirme yöneticisindeki listeden kaldırır.
 
 ```
 void RemovePaneFromDockManager(
@@ -1752,21 +1752,21 @@ void RemovePaneFromDockManager(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-'ndaki Kaldırılacak bölmeye yönelik bir işaretçi.
+[içinde] Kaldırılacak bölmeiçin bir işaretçi.
 
-*bDestroy*<br/>
-'ndaki TRUE ise kaldırılan bölme yok edilir.
+*bYok et*<br/>
+[içinde] TRUE ise, kaldırılan bölme yok edilir.
 
-*Roztlayout*<br/>
-'ndaki DOĞRU ise, yerleştirme yerleşimini hemen ayarlayın.
+*bAdjustLayout*<br/>
+[içinde] TRUE ise, yerleştirme düzenini hemen ayarlayın.
 
 *bAutoHide*<br/>
-'ndaki DOĞRU ise, yerleştirme düzeni otomatik gizleme çubuklarının listesiyle ilgilidir. FALSE ise, yerleştirme düzeni normal bölmeler listesiyle ilgilidir.
+[içinde] DOĞRUYSA, yerleştirme düzeni otomatik hide çubukları listesiyle ilişkilidir. FALSE ise, yerleştirme düzeni normal bölmelerin listesiyle ilişkilidir.
 
-*Pbardeğiştirme*<br/>
-'ndaki Kaldırılan bölmenin yerini alan bölme işaretçisi.
+*pBarReplacement*<br/>
+[içinde] Kaldırılan bölmenin yerini alan bölmeye işaretçi.
 
-##  <a name="savestate"></a>CBasePane:: Savemlak
+## <a name="cbasepanesavestate"></a><a name="savestate"></a>CBasePane::SaveState
 
 Bölmenin durumunu kayıt defterine kaydeder.
 
@@ -1780,25 +1780,25 @@ virtual BOOL SaveState(
 ### <a name="parameters"></a>Parametreler
 
 *lpszProfileName*<br/>
-'ndaki Profil adı.
+[içinde] Profil adı.
 
-*nDizin*<br/>
-'ndaki Profil dizini.
+*Nındex*<br/>
+[içinde] Profil dizini.
 
-*Uııd*<br/>
-'ndaki Bölme KIMLIĞI.
+*uiID*<br/>
+[içinde] Bölme kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Durum başarıyla kaydedilmişse doğru; Aksi halde yanlış.
+Devlet başarıyla kaydedildiyse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, bölmenin durumunu kayıt defterine kaydettiğinde bu yöntemi çağırır. Ek bilgileri depolamak için türetilmiş bir sınıftaki `SaveState` geçersiz kılın.
+Çerçeve, bölmenin durumunu kayıt defterine kaydettiğinde bu yöntemi çağırır. Ek `SaveState` bilgileri depolamak için türetilmiş bir sınıfta geçersiz kılın.
 
-##  <a name="selectdefaultfont"></a>CBasePane:: SelectDefaultFont
+## <a name="cbasepaneselectdefaultfont"></a><a name="selectdefaultfont"></a>CBasePane::SelectDefaultFont
 
-Belirtilen cihaz bağlamı için varsayılan yazı tipini seçer.
+Belirli bir aygıt bağlamı için varsayılan yazı tipini seçer.
 
 ```
 CFont* SelectDefaultFont(CDC* pDC);
@@ -1806,14 +1806,14 @@ CFont* SelectDefaultFont(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Bir cihaz bağlamı.
+*Pdc*<br/>
+[içinde] Aygıt bağlamı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan [CFont sınıfı](../../mfc/reference/cfont-class.md) nesnesine yönelik bir işaretçi.
+Varsayılan [CFont Sınıfı](../../mfc/reference/cfont-class.md) nesnesine işaretçi.
 
-##  <a name="setcontrolbarstyle"></a>CBasePane:: SetControlBarStyle
+## <a name="cbasepanesetcontrolbarstyle"></a><a name="setcontrolbarstyle"></a>CBasePane::SetControlBarStyle
 
 Denetim çubuğu stilini ayarlar.
 
@@ -1824,16 +1824,16 @@ virtual void SetControlBarStyle(DWORD dwNewStyle);
 ### <a name="parameters"></a>Parametreler
 
 *dwNewStyle*<br/>
-'ndaki Aşağıdaki olası değerlerin bit düzeyinde veya birleşimi.
+[içinde] Aşağıdaki olası değerlerin bitwise-OR kombinasyonu.
 
 |Stil|Açıklama|
 |-----------|-----------------|
-|AFX_CBRS_FLOAT|Denetim çubuğunu yüzer hale getirir.|
-|AFX_CBRS_AUTOHIDE|Otomatik gizleme modunu izin vermez.|
-|AFX_CBRS_RESIZE|Denetim çubuğunun yeniden boyutlandırılmasına izin vermez. Bu bayrak ayarlandığında, denetim çubuğu bir yerleştirilebilir bölmesine yerleştirilebilir.|
-|AFX_CBRS_CLOSE|Denetim çubuğunun gizlenmesine izin vermez.|
+|AFX_CBRS_FLOAT|Kontrol çubuğunu yüzdürür.|
+|AFX_CBRS_AUTOHIDE|Otomatik gizleme modunu etkinleştirir.|
+|AFX_CBRS_RESIZE|Denetim çubuğunun yeniden boyutlandırılmasını sağlar. Bu bayrak ayarlandığında, denetim çubuğu takılabilir bölmeye yerleştirilebilir.|
+|AFX_CBRS_CLOSE|Denetim çubuğunun gizlenmesini sağlar.|
 
-##  <a name="setdockingmode"></a>CBasePane:: SetDockingMode
+## <a name="cbasepanesetdockingmode"></a><a name="setdockingmode"></a>CBasePane::SetDockingMode
 
 Bölme için yerleştirme modunu ayarlar.
 
@@ -1843,20 +1843,20 @@ void SetDockingMode(AFX_DOCK_TYPE dockModeNew);
 
 ### <a name="parameters"></a>Parametreler
 
-*dockModeNew*<br/>
-'ndaki Bölme için yeni yerleştirme modunu belirtir.
+*dockModeYeni*<br/>
+[içinde] Bölme için yeni yerleştirme modunu belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework iki yerleştirme modunu destekler: Standart ve anında.
+Çerçeve iki yerleştirme modunu destekler: standart ve hemen.
 
-Standart yerleştirme modunda bölmeler ve mini çerçeve pencereleri, bir sürükleme dikdörtgeni kullanılarak taşınır. Anında yerleştirme modunda, denetim çubukları ve mini çerçeve pencereleri bağlamlarıyla hemen taşınır.
+Standart yerleştirme modunda, bölmeler ve mini çerçeve pencereler ilerler ve dikdörtgen kullanılarak hareket ettirilir. Hemen yerleştirme modunda, denetim çubukları ve mini çerçeve pencereleri bağlamlarıyla birlikte hemen taşınır.
 
-Başlangıçta yerleştirme modu, [CDockingManager:: m_dockModeGlobal](../../mfc/reference/cdockingmanager-class.md#m_dockmodeglobal)tarafından genel olarak tanımlanmıştır. Her bölme için yerleştirme modunu `SetDockingMode` yöntemi kullanarak ayrı ayrı ayarlayabilirsiniz.
+Başlangıçta, yerleştirme modu CDockingManager tarafından genel olarak [tanımlanır::m_dockModeGlobal.](../../mfc/reference/cdockingmanager-class.md#m_dockmodeglobal) Yöntemi kullanarak her bölme için yerleştirme modunu `SetDockingMode` ayrı ayrı ayarlayabilirsiniz.
 
-##  <a name="setpanealignment"></a>CBasePane:: Setbölmesi hizalaması
+## <a name="cbasepanesetpanealignment"></a><a name="setpanealignment"></a>CBasePane::SetPaneAlignment
 
-Bölmenin hizalamasını ayarlar.
+Bölmeiçin hizalamayı ayarlar.
 
 ```
 virtual void SetPaneAlignment(DWORD dwAlignment);
@@ -1864,23 +1864,23 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwhizalaması*<br/>
-'ndaki Yeni hizalamayı belirtir.
+*dwHizalama*<br/>
+[içinde] Yeni hizalamayı belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle, bir bölme ana çerçevenin bir tarafından diğerine yerleştirildiğinde, çerçeve bu yöntemi çağırır.
+Genellikle, bir bölme ana çerçevenin bir tarafından diğerine sabitlendiğinde çerçeve bu yöntemi çağırır.
 
-Aşağıdaki tabloda *Dwhizalaması*için olası değerler gösterilmektedir:
+Aşağıdaki tablo *dawAlignment*için olası değerleri gösterir:
 
 |Değer|Hizalama|
 |-----------|---------------|
-|CBRS_ALIGN_LEFT|Sola hizalama.|
-|CBRS_ALIGN_RIGHT|Sağa hizalama.|
+|CBRS_ALIGN_LEFT|Sol hizalama.|
+|CBRS_ALIGN_RIGHT|Doğru hizalama.|
 |CBRS_ALIGN_TOP|Üst hizalama.|
 |CBRS_ALIGN_BOTTOM|Alt hizalama.|
 
-##  <a name="setpanestyle"></a>CBasePane:: Setbölmesi stili
+## <a name="cbasepanesetpanestyle"></a><a name="setpanestyle"></a>CBasePane::SetPaneStyle
 
 Bölmenin stilini ayarlar.
 
@@ -1891,17 +1891,17 @@ virtual void SetPaneStyle(DWORD dwNewStyle);
 ### <a name="parameters"></a>Parametreler
 
 *dwNewStyle*<br/>
-'ndaki Ayarlanacak yeni stili belirtir.
+[içinde] Ayarı yapacak yeni stili belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, afxres. h içinde tanımlanan CBRS_ stillerinden herhangi birini ayarlamak için kullanılabilir. Bölme stili ve bölme hizalaması birlikte depolandığından, yeni stili geçerli hizalamayla birleştirerek aşağıdaki gibi ayarlayın.
+Bu yöntem, afxres.h tanımlanan CBRS_ stilleri herhangi ayarlamak için kullanılabilir. Bölme stili ve bölme hizalaması birlikte depolandığı için, yeni stili aşağıdaki gibi geçerli hizalamayla birleştirerek ayarlayın.
 
 `pPane->SetPaneStyle (pPane->GetCurrentAlignment() | CBRS_TOOLTIPS);`
 
-##  <a name="setwindowpos"></a>CBasePane:: SetWindowPos
+## <a name="cbasepanesetwindowpos"></a><a name="setwindowpos"></a>CBasePane::SetWindowPos
 
-Bölmenin boyutunu, konumunu ve Z düzenini değiştirir.
+Bölmenin boyutunu, konumunu ve Z sırasını değiştirir.
 
 ```
 virtual HDWP SetWindowPos(
@@ -1917,35 +1917,35 @@ virtual HDWP SetWindowPos(
 ### <a name="parameters"></a>Parametreler
 
 *pWndInsertAfter*<br/>
-'ndaki Z düzeninde bu `CWnd` nesnesinden önce gelen `CWnd` nesnesini tanımlar. Daha fazla bilgi için bkz. [CWnd:: SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos).
+[içinde] Z-sırasına göre `CWnd` `CWnd` bu nesneden önce gelen nesneyi tanımlar. Daha fazla bilgi için [Bkz. CWnd::SetWindowPos.](../../mfc/reference/cwnd-class.md#setwindowpos)
 
-*sayı*<br/>
-'ndaki Pencerenin sol tarafının konumunu belirtir.
+*X*<br/>
+[içinde] Pencerenin sol tarafının konumunu belirtir.
 
-*Iz*<br/>
-'ndaki Pencerenin üst öğesinin konumunu belirtir.
+*Y*<br/>
+[içinde] Pencerenin üst konumunu belirtir.
 
-*yazmaç*<br/>
-'ndaki Pencerenin genişliğini belirtir.
+*Cx*<br/>
+[içinde] Pencerenin genişliğini belirtir.
 
-*lı*<br/>
-'ndaki Pencerenin yüksekliğini belirtir.
+*Cy*<br/>
+[içinde] Pencerenin yüksekliğini belirtir.
 
-*nFlags*<br/>
-'ndaki Boyut ve konum seçeneklerini belirtir. Daha fazla bilgi için bkz. [CWnd:: SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos).
+*Nflags*<br/>
+[içinde] Boyut ve konum seçeneklerini belirtir. Daha fazla bilgi için [Bkz. CWnd::SetWindowPos.](../../mfc/reference/cwnd-class.md#setwindowpos)
 
 *hdwp*<br/>
-'ndaki Bir veya daha fazla pencere için boyut ve konum bilgilerini içeren bir yapıya işleyin.
+[içinde] Bir veya daha fazla pencere için boyut ve konum bilgilerini içeren bir yapıyı işleyin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Güncelleştirilmiş ertelenmiş pencere konumu yapısına yönelik bir tanıtıcı veya NULL.
+Güncelleştirilmiş ertelenmiş pencere konumu yapısına bir tanıtıcı veya NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PWndInsertAfter* null ise, bu yöntem [CWnd:: SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos)öğesini çağırır. *PWndInsertAfter* null değilse, bu yöntem `DeferWindowPos`çağırır.
+*pWndInsertAfter* NULL ise, bu yöntem [CWnd çağırır::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos). *pWndInsertAfter* NULL değilse, bu yöntem `DeferWindowPos`çağırır.
 
-##  <a name="showpane"></a>CBasePane:: ShowPane
+## <a name="cbasepaneshowpane"></a><a name="showpane"></a>CBasePane::ShowPane
 
 Bölmeyi gösterir veya gizler.
 
@@ -1958,24 +1958,24 @@ virtual void ShowPane(
 
 ### <a name="parameters"></a>Parametreler
 
-*bShow*<br/>
-'ndaki Bir bölmenin gösterilip gösterilmeyeceğini (TRUE) veya gizleneceğini (FALSE) belirtir.
+*bGöster*<br/>
+[içinde] Bir bölmeyi (TRUE) veya gizle (FALSE) gösterip göstermeyeceğini belirtir.
 
-*bDelay*<br/>
-'ndaki DOĞRU ise, yerleştirme düzeninin yeniden hesaplanması gecikilir.
+*bGecikme*<br/>
+[içinde] TRUE ise, yerleştirme düzenini yeniden hesaplamak geciktirilir.
 
-*Bacetkinleştir*<br/>
-'ndaki TRUE ise, bölmesi gösterildiğinde etkin olur.
+*bEtkinleştir*<br/>
+[içinde] TRUE ise, bölme gösterildiğinde etkindir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem bir bölmeyi gösterir veya gizler. Bu yöntem, ilgili yerleşik yöneticilere bölmedeki görünürlükdeki değişikliklerle ilgili bildirimde bulunduğundan `ShowWindow` yerine bu yöntemi kullanın.
+Bu yöntem bir bölmeyi gösterir veya gizler. Bu yöntem, `ShowWindow` bölmesi görünürlüğündeki değişiklikler hakkında ilgili yerleştirme yöneticilerine bilgi verdiği için bu yöntemi kullanın.
 
-Bir bölmenin geçerli görünürlüğünü öğrenmek için [CBasePane:: IsVisible](#isvisible) kullanın.
+Bir bölmenin geçerli görünürlüğünü belirlemek için [CBasePane::IsVisible'ı](#isvisible) kullanın.
 
-##  <a name="stretchpane"></a>CBasePane:: ayarlayıcı bölmesi
+## <a name="cbasepanestretchpane"></a><a name="stretchpane"></a>CBasePane::StretchPane
 
-Bir bölmeyi dikey veya yatay olarak uzatır.
+Bölmeyi dikey veya yatay olarak uzalar.
 
 ```
 virtual CSize StretchPane(
@@ -1985,19 +1985,19 @@ virtual CSize StretchPane(
 
 ### <a name="parameters"></a>Parametreler
 
-*nLength*<br/>
-'ndaki Bölmenin uzatılabileceği uzunluk.
+*nUzunluk*<br/>
+[içinde] Bölmeyi esnetmek için hangi uzunluk.
 
 *bVert*<br/>
-'ndaki DOĞRU ise, bölmeyi dikey olarak uzatın. YANLıŞSA, bölmeyi yatay olarak uzatın.
+[içinde] DOĞRUYSA, bölmeyi dikey olarak esnetin. YANLIŞ ise, bölmeyi yatay olarak esnetin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uzatılmış bölmenin boyutu.
+Gerilmiş bölmenin boyutu.
 
-##  <a name="undockpane"></a>CBasePane:: UndockPane
+## <a name="cbasepaneundockpane"></a><a name="undockpane"></a>CBasePane::UndockPane
 
-Bölmeyi yerleştirme sitesinden, varsayılan kaydırıcıdan veya şu anda yerleştirilmiş olan mini çerçeve penceresinden kaldırır.
+Bölmeyi dock sitesinden, varsayılan kaydırıcıdan veya şu anda sabitlenmiş olduğu mini çerçeve penceresinden kaldırır.
 
 ```
 virtual void UndockPane(BOOL bDelay=FALSE);
@@ -2005,18 +2005,18 @@ virtual void UndockPane(BOOL bDelay=FALSE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bDelay*<br/>
-DOĞRU ise, yerleştirme düzeni hemen yeniden hesaplanmaz.
+*bGecikme*<br/>
+DOĞRUYSA, yerleştirme düzeni hemen yeniden hesaplanmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bölme durumunu değiştirmek veya bölmeyi yerleştirme düzeninden dışlamak için bu yöntemi çağırın.
+Bölme durumunu işlemek veya bölmeyi yerleştirme düzeninden çıkarmak için bu yöntemi çağırın.
 
-Bu bölmeyi kullanmaya devam etmek istiyorsanız, bu yöntemi çağırmadan önce [CBasePane::D ockPane](#dockpane) veya [CBasePane:: FloatPane](#floatpane) ' ı çağırın.
+Bu bölmeyi kullanmaya devam etmek istiyorsanız, bu yöntemi aramadan önce [CBasePane::DockPane](#dockpane) veya [CBasePane::FloatPane'yi](#floatpane) arayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CPane](../../mfc/reference/cbasepane-class.md)<br/>
+[Cpane](../../mfc/reference/cbasepane-class.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)

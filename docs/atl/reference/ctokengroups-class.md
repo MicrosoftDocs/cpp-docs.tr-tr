@@ -1,5 +1,5 @@
 ---
-title: CTokenGroups sınıfı
+title: CTokenGroups Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CTokenGroups
@@ -16,19 +16,19 @@ f1_keywords:
 helpviewer_keywords:
 - CTokenGroups class
 ms.assetid: 2ab08076-4b08-4487-bc70-ec6dee304190
-ms.openlocfilehash: 88096747f45d4a81c873837cdd4975da9d8c24e2
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1e9d21c59eb5efabf036fbc938a40de2c4b7a0b7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496289"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330557"
 ---
-# <a name="ctokengroups-class"></a>CTokenGroups sınıfı
+# <a name="ctokengroups-class"></a>CTokenGroups Sınıfı
 
-Bu sınıf, `TOKEN_GROUPS` yapı için bir sarmalayıcıdır.
+Bu sınıf `TOKEN_GROUPS` yapı için bir sarmalayıcıdır.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,46 +40,46 @@ class CTokenGroups
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CTokenGroups:: CTokenGroups](#ctokengroups)|Oluşturucu.|
-|[CTokenGroups:: ~ CTokenGroups](#dtor)|Yok edicisi.|
+|[CTokenGroups::CTokenGroups](#ctokengroups)|Oluşturucu.|
+|[CTokenGroups::~CTokenGroups](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CTokenGroups:: Add](#add)|Nesneye bir `CSid` veya varolan `TOKEN_GROUPS` bir yapı ekler. `CTokenGroups`|
-|[CTokenGroups::D Sil](#delete)|`CTokenGroups` Nesnesinden ilişkili özniteliklerini `CSid` ve nesneyi siler.|
-|[CTokenGroups::D eleteAll](#deleteall)|Tüm `CSid` nesneleri ve ilişkili özniteliklerini `CTokenGroups` nesnesinden siler.|
-|[CTokenGroups:: GetCount](#getcount)|Nesnesinde`CTokenGroups` içerilen nesne ve `CSid` ilişkili özniteliklerin sayısını döndürür.|
-|[CTokenGroups:: GetLength](#getlength)|`CTokenGroups` Nesnenin boyutunu döndürür.|
-|[CTokenGroups:: GetPTOKEN_GROUPS](#getptoken_groups)|`TOKEN_GROUPS` Yapıya bir işaretçi alır.|
-|[CTokenGroups:: Getsıdsandattributes](#getsidsandattributes)|Nesnesineait`CTokenGroups` nesneleri ve öznitelikleri alır. `CSid`|
-|[CTokenGroups:: Lookupsıd](#lookupsid)|Bir `CSid` nesneyle ilişkili öznitelikleri alır.|
+|[CTokenGroups::Ekle](#add)|Nesneye `CSid` bir `TOKEN_GROUPS` veya varolan yapı ekler. `CTokenGroups`|
+|[CTokenGroups::Delete](#delete)|A `CSid` ve ilişkili özniteliklerini `CTokenGroups` nesneden siler.|
+|[CTokenGroups::DeleteAll](#deleteall)|Tüm `CSid` nesneleri ve ilişkili özniteliklerini `CTokenGroups` nesneden siler.|
+|[CTokenGroups::GetCount](#getcount)|Nesnede bulunan `CSid` nesnelerin ve ilişkili özniteliklerin sayısını döndürür. `CTokenGroups`|
+|[CTokenGroups::GetLength](#getlength)|`CTokenGroups` Nesnenin boyutunu döndürür.|
+|[CTokenGroups::GetPTOKEN_GROUPS](#getptoken_groups)|`TOKEN_GROUPS` Yapıiçin bir işaretçi alır.|
+|[CTokenGroups::GetSidsAndAttributes](#getsidsandattributes)|`CTokenGroups` Nesneye `CSid` ait nesneleri ve öznitelikleri alır.|
+|[CTokenGroups::LookupSid](#lookupsid)|Bir `CSid` nesneyle ilişkili öznitelikleri alır.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CTokenGroups:: operator const TOKEN_GROUPS *](#operator_const_token_groups__star)|`CTokenGroups` Nesneyi `TOKEN_GROUPS` yapıya bir işaretçiye yayınlar.|
-|[CTokenGroups:: operator =](#operator_eq)|Atama işleci.|
+|[CTokenGroups::operatör const TOKEN_GROUPS *](#operator_const_token_groups__star)|Nesneyi `CTokenGroups` `TOKEN_GROUPS` yapıya işaretçiye atar.|
+|[CTokenGroups::operator =](#operator_eq)|Atama işleci.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[Erişim belirteci](/windows/win32/SecAuthZ/access-tokens) bir işlemin veya iş parçacığının güvenlik bağlamını açıklayan ve bir Windows sisteminde oturum açan her kullanıcıya ayrılan bir nesnedir.
+[Erişim belirteci,](/windows/win32/SecAuthZ/access-tokens) bir işlemin veya iş parçacığının güvenlik bağlamını açıklayan ve windows sistemine oturum açmış her kullanıcıya ayrılan bir nesnedir.
 
-Sınıfı, bir erişim belirtecinde grup güvenlik tanımlayıcıları (SID 'ler) hakkındaki bilgileri içeren token_groups yapısına yönelik bir sarmalayıcıdır. [](/windows/win32/api/winnt/ns-winnt-token_groups) `CTokenGroups`
+Sınıf, `CTokenGroups` [TOKEN_GROUPS](/windows/win32/api/winnt/ns-winnt-token_groups) yapısı için, bir erişim belirtecigrup güvenlik tanımlayıcıları (SID'ler) hakkında bilgi içeren bir paketleyicidir.
 
-Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
+Windows'daki erişim denetimi modeline giriş için Windows SDK'daki [Access Denetimi'ne](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlsecurity. h
+**Üstbilgi:** atlsecurity.h
 
-##  <a name="add"></a>CTokenGroups:: Add
+## <a name="ctokengroupsadd"></a><a name="add"></a>CTokenGroups::Ekle
 
-Nesneye bir `CSid` veya varolan `TOKEN_GROUPS` bir yapı ekler. `CTokenGroups`
+Nesneye `CSid` bir `TOKEN_GROUPS` veya varolan yapı ekler. `CTokenGroups`
 
 ```
 void Add(const CSid& rSid, DWORD dwAttributes) throw(... );
@@ -88,20 +88,20 @@ void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Rsıd*<br/>
-Bir [CSID](../../atl/reference/csid-class.md) nesnesi.
+*rSid*<br/>
+CSid [nesnesi.](../../atl/reference/csid-class.md)
 
-*dwAttributes*<br/>
-`CSid` Nesneyle ilişkilendirilecek öznitelikler.
+*dwÖzler*<br/>
+`CSid` Nesneyle ilişkilendirilen öznitelikler.
 
 *rTokenGroups*<br/>
-Bir [token_groups](/windows/win32/api/winnt/ns-winnt-token_groups) yapısı.
+[TOKEN_GROUPS bir](/windows/win32/api/winnt/ns-winnt-token_groups) yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemler, `CTokenGroups` nesnesine bir veya `CSid` daha fazla nesne ve ilişkili özniteliklerini ekler.
+Bu yöntemler nesneye `CSid` `CTokenGroups` bir veya daha fazla nesne ve ilişkili öznitelikleri ekleyin.
 
-##  <a name="ctokengroups"></a>CTokenGroups:: CTokenGroups
+## <a name="ctokengroupsctokengroups"></a><a name="ctokengroups"></a>CTokenGroups::CTokenGroups
 
 Oluşturucu.
 
@@ -113,16 +113,16 @@ CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ taraftan*<br/>
-Nesnesinin oluşturulacağı nesne veya token_groups yapısı. [](/windows/win32/api/winnt/ns-winnt-token_groups) `CTokenGroups` `CTokenGroups`
+*Rhs*<br/>
+Nesneyi `CTokenGroups` [TOKEN_GROUPS](/windows/win32/api/winnt/ns-winnt-token_groups) oluşturmak `CTokenGroups` için nesne veya TOKEN_GROUPS yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne `CTokenGroups` , isteğe bağlı olarak, bir `TOKEN_GROUPS` yapı veya daha önce tanımlanmış `CTokenGroups` bir nesne kullanılarak oluşturulabilir.
+Nesne `CTokenGroups` isteğe bağlı olarak `TOKEN_GROUPS` bir yapı veya `CTokenGroups` daha önce tanımlanmış bir nesne kullanılarak oluşturulabilir.
 
-##  <a name="dtor"></a>CTokenGroups:: ~ CTokenGroups
+## <a name="ctokengroupsctokengroups"></a><a name="dtor"></a>CTokenGroups::~CTokenGroups
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 virtual ~CTokenGroups() throw();
@@ -130,11 +130,11 @@ virtual ~CTokenGroups() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı, ayrılan tüm kaynakları serbest bırakır.
+Yıkıcı, ayrılan tüm kaynakları serbest sağlar.
 
-##  <a name="delete"></a>CTokenGroups::D Sil
+## <a name="ctokengroupsdelete"></a><a name="delete"></a>CTokenGroups::Delete
 
-`CTokenGroups` Nesnesinden ilişkili özniteliklerini `CSid` ve nesneyi siler.
+A `CSid` ve ilişkili özniteliklerini `CTokenGroups` nesneden siler.
 
 ```
 bool Delete(const CSid& rSid) throw();
@@ -142,24 +142,24 @@ bool Delete(const CSid& rSid) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Rsıd*<br/>
-Güvenlik tanımlayıcısı (SID) ve özniteliklerinin kaldırılması gereken [CSID](../../atl/reference/csid-class.md) nesnesi.
+*rSid*<br/>
+Güvenlik tanımlayıcısı (SID) ve özniteliklerinin kaldırılması gereken [CSid](../../atl/reference/csid-class.md) nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaldırılırsa true `CSid` , aksi takdirde false döndürür.
+Yanlış yoksa `CSid` doğru olarak kaldırılırsa doğru döndürür.
 
-##  <a name="deleteall"></a>CTokenGroups::D eleteAll
+## <a name="ctokengroupsdeleteall"></a><a name="deleteall"></a>CTokenGroups::DeleteAll
 
-Tüm `CSid` nesneleri ve ilişkili özniteliklerini `CTokenGroups` nesnesinden siler.
+Tüm `CSid` nesneleri ve ilişkili özniteliklerini `CTokenGroups` nesneden siler.
 
 ```
 void DeleteAll() throw();
 ```
 
-##  <a name="getcount"></a>CTokenGroups:: GetCount
+## <a name="ctokengroupsgetcount"></a><a name="getcount"></a>CTokenGroups::GetCount
 
-`CSid` İçinde`CTokenGroups`yer alan nesne sayısını döndürür.
+'de `CTokenGroups`bulunan `CSid` nesne sayısını verir.
 
 ```
 UINT GetCount() const throw();
@@ -167,9 +167,9 @@ UINT GetCount() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[CSID](../../atl/reference/csid-class.md) nesnelerinin sayısını ve `CTokenGroups` nesnesinde bulunan ilişkili özniteliklerini döndürür.
+[CSid](../../atl/reference/csid-class.md) nesnelerinin sayısını ve nesnede bulunan `CTokenGroups` ilişkili özniteliklerini döndürür.
 
-##  <a name="getlength"></a>CTokenGroups:: GetLength
+## <a name="ctokengroupsgetlength"></a><a name="getlength"></a>CTokenGroups::GetLength
 
 `CTokenGroup` Nesnenin boyutunu döndürür.
 
@@ -179,11 +179,11 @@ UINT GetLength() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CTokenGroup` Nesnenin bayt cinsinden toplam boyutunu döndürür.
+Baytlar halinde `CTokenGroup` nesnenin toplam boyutunu döndürür.
 
-##  <a name="getptoken_groups"></a>CTokenGroups:: GetPTOKEN_GROUPS
+## <a name="ctokengroupsgetptoken_groups"></a><a name="getptoken_groups"></a>CTokenGroups::GetPTOKEN_GROUPS
 
-`TOKEN_GROUPS` Yapıya bir işaretçi alır.
+`TOKEN_GROUPS` Yapıiçin bir işaretçi alır.
 
 ```
 const TOKEN_GROUPS* GetPTOKEN_GROUPS() const throw(...);
@@ -191,11 +191,11 @@ const TOKEN_GROUPS* GetPTOKEN_GROUPS() const throw(...);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CTokenGroups` Erişim belirteci nesnesine ait [token_groups](/windows/win32/api/winnt/ns-winnt-token_groups) yapısına yönelik bir işaretçi alır.
+Erişim belirteci [TOKEN_GROUPS](/windows/win32/api/winnt/ns-winnt-token_groups) nesnesine ait `CTokenGroups` TOKEN_GROUPS yapıiçin bir işaretçi alır.
 
-##  <a name="getsidsandattributes"></a>CTokenGroups:: Getsıdsandattributes
+## <a name="ctokengroupsgetsidsandattributes"></a><a name="getsidsandattributes"></a>CTokenGroups::GetSidsAndAttributes
 
-Nesneleri ve (isteğe bağlı olarak) `CTokenGroups` nesneye ait öznitelikleri alır. `CSid`
+`CSid` Nesneleri ve (isteğe bağlı olarak) `CTokenGroups` nesneye ait öznitelikleri alır.
 
 ```
 void GetSidsAndAttributes(
@@ -205,17 +205,17 @@ void GetSidsAndAttributes(
 
 ### <a name="parameters"></a>Parametreler
 
-*PSID 'Ler*<br/>
-Bir [CSID](../../atl/reference/csid-class.md) nesneleri dizisine yönelik işaretçi.
+*pSids*<br/>
+[CSid](../../atl/reference/csid-class.md) nesnelerin bir dizi işaretçi.
 
 *pAttributes*<br/>
-Bir DWORD dizisine yönelik işaretçi. Bu parametre atlanırsa veya NULL ise, öznitelikler alınmadı.
+Bir dizi DWORD'a işaretçi. Bu parametre atlanırsa veya NULL'sa, öznitelikler alınmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `CSid` `CTokenGroups` nesnede bulunan tüm nesneleri numaralandırır ve bu özniteliği ve (isteğe bağlı olarak) öznitelik bayraklarını dizi nesnelerine yerleştirir.
+Bu yöntem, `CSid` `CTokenGroups` nesnede bulunan tüm nesneleri sıralar ve bunları yerve (isteğe bağlı olarak) atnitelik bayrakları dizi nesnelerine.
 
-##  <a name="lookupsid"></a>CTokenGroups:: Lookupsıd
+## <a name="ctokengroupslookupsid"></a><a name="lookupsid"></a>CTokenGroups::LookupSid
 
 Bir `CSid` nesneyle ilişkili öznitelikleri alır.
 
@@ -227,21 +227,21 @@ bool LookupSid(
 
 ### <a name="parameters"></a>Parametreler
 
-*Rsıd*<br/>
-[CSID](../../atl/reference/csid-class.md) nesnesi.
+*rSid*<br/>
+[CSid nesnesi.](../../atl/reference/csid-class.md)
 
-*pdwAttributes*<br/>
-`CSid` Nesnenin özniteliğini kabul edecek bir DWORD işaretçisi. Atlanırsa veya NULL ise, öznitelik alınmayacak.
+*pdwÖznitelikler*<br/>
+Nesnenin özniteliğini kabul `CSid` edecek bir DWORD işaretçisi. Atlanırsa veya NULL'da varsa, öznitelik alınmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bulunursa true `CSid` , aksi takdirde false döndürür.
+Eğer bulunursa `CSid` doğru döndürür, aksi takdirde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PdwAttributes* değerini null olarak ayarlamak, ' ın özniteliğe erişmeden, `CSid` varlığını onaylamamasının bir yolunu sağlar. Bu yöntemin erişim haklarını denetlemek için kullanılmamalıdır. Uygulamalar bunun yerine [CAccessToken:: CheckTokenMembership](../../atl/reference/caccesstoken-class.md#checktokenmembership) metodunu kullanmalıdır.
+*PDwAttributes'ı* NULL'a ayarlamak, özniteliğe `CSid` erişmeden varlığı doğrulamanın bir yolunu sağlar. Bu yöntemin erişim haklarını denetlemek için kullanılmaması gerektiğini unutmayın. Uygulamalar bunun yerine [CAccessToken kullanmalıdır::CheckTokenÜyelik](../../atl/reference/caccesstoken-class.md#checktokenmembership) yöntemi.
 
-##  <a name="operator_eq"></a>CTokenGroups:: operator =
+## <a name="ctokengroupsoperator-"></a><a name="operator_eq"></a>CTokenGroups::operator =
 
 Atama işleci.
 
@@ -252,16 +252,16 @@ CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ taraftan*<br/>
-Nesneyeatanacak`CTokenGroups` nesne veya token_groups yapısı. [](/windows/win32/api/winnt/ns-winnt-token_groups) `CTokenGroups`
+*Rhs*<br/>
+Nesneye `CTokenGroups` [TOKEN_GROUPS](/windows/win32/api/winnt/ns-winnt-token_groups) atamak için `CTokenGroups` nesne veya TOKEN_GROUPS yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Güncelleştirilmiş `CTokenGroups` nesneyi döndürür.
 
-##  <a name="operator_const_token_groups__star"></a>CTokenGroups:: operator const TOKEN_GROUPS *
+## <a name="ctokengroupsoperator-const-token_groups-"></a><a name="operator_const_token_groups__star"></a>CTokenGroups::operatör const TOKEN_GROUPS *
 
-`TOKEN_GROUPS` Yapının işaretçisine bir değer yayınlar.
+`TOKEN_GROUPS` Yapıya bir işaretçiiçin bir değer atar.
 
 ```
 operator const TOKEN_GROUPS *() const throw(...);
@@ -269,11 +269,11 @@ operator const TOKEN_GROUPS *() const throw(...);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir değeri [token_groups](/windows/win32/api/winnt/ns-winnt-token_groups) yapısına bir işaretçiye yayınlar.
+[TOKEN_GROUPS](/windows/win32/api/winnt/ns-winnt-token_groups) yapısına bir işaretçi için bir değer atar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Güvenlik örneği](../../overview/visual-cpp-samples.md)<br/>
+[Güvenlik Örneği](../../overview/visual-cpp-samples.md)<br/>
 [CSid Sınıfı](../../atl/reference/csid-class.md)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

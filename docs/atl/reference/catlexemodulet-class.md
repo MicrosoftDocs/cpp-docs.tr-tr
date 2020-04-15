@@ -1,5 +1,5 @@
 ---
-title: CAtlExeModuleT sınıfı
+title: CAtlExeModuleT Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlExeModuleT
@@ -22,16 +22,16 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlExeModuleT class
 ms.assetid: 82245f3d-91d4-44fa-aa86-7cc7fbd758d9
-ms.openlocfilehash: d37cc8e97d29cbedfeb4ba79502d44529485399f
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: a20a02a467d74a89e3cda176a6a15961be4ffd61
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79418057"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81318982"
 ---
-# <a name="catlexemodulet-class"></a>CAtlExeModuleT sınıfı
+# <a name="catlexemodulet-class"></a>CAtlExeModuleT Sınıfı
 
-Bu sınıf, bir uygulamanın modülünü temsil eder.
+Bu sınıf bir uygulama için modülü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,67 +42,67 @@ class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 
 #### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Sınıfınız `CAtlExeModuleT`türetilir.
+*T*<br/>
+Sınıfınızdan `CAtlExeModuleT`türetilmiştir.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlExeModuleT:: Catlexemodüle Let](#catlexemodulet)|Oluşturucu.|
-|[CAtlExeModuleT:: ~ Catlexemodüle Let](#dtor)|Yok edicisi.|
+|[CAtlExeModuleT::CAtlExeModuleT](#catlexemodulet)|Oluşturucu.|
+|[CAtlExeModuleT::~CAtlExeModuleT](#dtor)|Yıkıcı.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlExeModuleT:: InitializeCom](#initializecom)|COM başlatır.|
-|[CAtlExeModuleT::P arseCommandLine](#parsecommandline)|Komut satırını ayrıştırır ve gerekirse kayıt gerçekleştirir.|
-|[CAtlExeModuleT::P ostMessageLoop](#postmessageloop)|Bu yöntem ileti döngüsünden çıktıktan hemen sonra çağrılır.|
-|[CAtlExeModuleT::P reMessageLoop](#premessageloop)|Bu yöntem ileti döngüsüne girmeden hemen önce çağrılır.|
-|[CAtlExeModuleT:: RegisterClassObjects](#registerclassobjects)|Sınıf nesnesini kaydeder.|
-|[CAtlExeModuleT:: RevokeClassObjects](#revokeclassobjects)|Sınıf nesnesini iptal eder.|
-|[CAtlExeModuleT:: Run](#run)|Bu yöntem, başlatmak, ileti döngüsünü çalıştırmak ve temizlemek için EXE modülünde kodu yürütür.|
-|[CAtlExeModuleT:: RunMessageLoop](#runmessageloop)|Bu yöntem ileti döngüsünü yürütür.|
-|[CAtlExeModuleT:: Unınitializecom](#uninitializecom)|COM başlatılır.|
-|[CAtlExeModuleT:: unlock](#unlock)|Modülün kilit sayısını azaltır.|
-|[CAtlExeModuleT:: WinMain](#winmain)|Bu yöntem, bir EXE çalıştırmak için gereken kodu uygular.|
+|[CAtlExeModuleT::InitializeCom](#initializecom)|COM'u ilke ler.|
+|[CAtlExeModuleT::ParseCommandLine](#parsecommandline)|Komut satırını parses ve gerekirse kayıt gerçekleştirir.|
+|[CAtlExeModuleT::PostMessageLoop](#postmessageloop)|Bu yöntem, ileti döngüsü çıktıktan hemen sonra çağrılır.|
+|[CAtlExeModuleT::PreMessageLoop](#premessageloop)|Bu yöntem, ileti döngüsüne girmeden hemen önce çağrılır.|
+|[CAtlExeModuleT::RegisterClassObjects](#registerclassobjects)|Sınıf nesnesini kaydeder.|
+|[CAtlExeModuleT::İptalSınıf Nesneleri](#revokeclassobjects)|Sınıf nesnesini iptal eder.|
+|[CAtlExeModuleT::Çalıştır](#run)|Bu yöntem, exe modülünde kod ları çalıştırıp, ileti döngüsünün başlatılmasını, çalıştırMasını ve temizlemesini sağlar.|
+|[CAtlExeModuleT::RunMessageLoop](#runmessageloop)|Bu yöntem ileti döngüsü yürütür.|
+|[CAtlExeModuleT::UninitializeCom](#uninitializecom)|Com'u başlatmaz.|
+|[CAtlExeModuleT::Kilidini açın](#unlock)|Modülün kilit sayısını eritiyor.|
+|[CAtlExeModuleT::WinMain](#winmain)|Bu yöntem, exe çalıştırmak için gerekli kodu uygular.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlExeModuleT:: m_bDelayShutdown](#m_bdelayshutdown)|Modülün kapanmasından bir gecikme olması gerektiğini belirten bir bayrak.|
-|[CAtlExeModuleT:: m_dwPause](#m_dwpause)|Kapatmadan önce tüm nesnelerin serbest bırakılacağını sağlamak için kullanılan bir duraklatma değeri.|
-|[CAtlExeModuleT:: m_dwTimeOut](#m_dwtimeout)|Modülün kaldırılmasını geciktirmede kullanılan bir zaman aşımı değeri.|
+|[CAtlExeModuleT::m_bDelayShutdown](#m_bdelayshutdown)|Modülün kapatılmasında gecikme olması gerektiğini belirten bir bayrak.|
+|[CAtlExeModuleT::m_dwPause](#m_dwpause)|Tüm nesnelerin kapanmadan önce serbest bırakılmasını sağlamak için kullanılan bir duraklatma değeri.|
+|[CAtlExeModuleT::m_dwTimeOut](#m_dwtimeout)|Modülün boşaltılmasını geciktirmek için kullanılan bir zaman kaybı değeri.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAtlExeModuleT` bir uygulamanın (EXE) modülünü temsil eder ve bir EXE oluşturmayı, komut satırını işlemeyi, sınıf nesnelerini kaydetmeyi, ileti döngüsünü çalıştırmayı ve çıkışta temizlemeyi destekleyen kodu içerir.
+`CAtlExeModuleT`bir uygulama (EXE) için modülü temsil eder ve exe oluşturmayı, komut satırını işlemeyi, sınıf nesnelerini kaydetmeyi, ileti döngüsünü çalıştırmayı ve çıkışta temizlemeyi destekleyen kodlar içerir.
 
-Bu sınıf, EXE sunucusundaki COM nesneleri sürekli olarak oluşturulduğunda ve yok edildiğinde performansı artırmak için tasarlanmıştır. Son COM nesnesi yayımlandıktan sonra, EXE, [CAtlExeModuleT:: m_dwTimeOut](#m_dwtimeout) veri üyesi tarafından belirtilen bir süre bekler. Bu süre boyunca hiçbir etkinlik yoksa (yani, COM nesnesi oluşturulmadıysa), kapatılıyor işlemi başlatılır.
+Bu sınıf, EXE sunucusundaki COM nesneleri sürekli olarak oluşturulduğunda ve yok edildiğinde performansı artırmak için tasarlanmıştır. Son COM nesnesi yayımlandıktan sonra, EXE [CAtlExeModuleT:m_dwTimeOut](#m_dwtimeout) veri üyesi tarafından belirtilen bir süre bekler. Bu dönemde etkinlik yoksa (diğer bir süre COM nesnesi oluşturulmazsa), kapatma işlemi başlatılır.
 
-[CAtlExeModuleT:: m_bDelayShutdown](#m_bdelayshutdown) veri ÜYESI, exe 'nin yukarıda tanımlanan mekanizmayı kullanıp kullanmadığını belirlemede kullanılan bir bayrak. Yanlış olarak ayarlanırsa modül hemen sonlandırılır.
+[CAtlExeModuleT::m_bDelayShutdown](#m_bdelayshutdown) veri üyesi EXE'nin yukarıda tanımlanan mekanizmayı kullanıp kullanmadığını belirlemek için kullanılan bir bayraktır. Yanlış olarak ayarlanırsa, modül hemen sonlanır.
 
-ATL 'deki modüller hakkında daha fazla bilgi için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md).
+ATL'deki modüller hakkında daha fazla bilgi için [ATL Modül Sınıfları'na](../../atl/atl-module-classes.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module)
 
-[CAtlModule](../../atl/reference/catlmodule-class.md)
+[CAtlModülü](../../atl/reference/catlmodule-class.md)
 
-[Catlmodület](../../atl/reference/catlmodulet-class.md)
+[CAtlModuleT](../../atl/reference/catlmodulet-class.md)
 
 `CAtlExeModuleT`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase. h
+**Üstbilgi:** atlbase.h
 
-##  <a name="catlexemodulet"></a>CAtlExeModuleT:: Catlexemodüle Let
+## <a name="catlexemoduletcatlexemodulet"></a><a name="catlexemodulet"></a>CAtlExeModuleT::CAtlExeModuleT
 
 Oluşturucu.
 
@@ -112,11 +112,11 @@ CAtlExeModuleT() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-EXE modülü başlatılamadığından, WinMain daha fazla işleme olmadan hemen döndürülür.
+EXE modülü başharfe atılamazsa, WinMain daha fazla işlem yapılmadan hemen geri döner.
 
-##  <a name="dtor"></a>CAtlExeModuleT:: ~ Catlexemodüle Let
+## <a name="catlexemoduletcatlexemodulet"></a><a name="dtor"></a>CAtlExeModuleT::~CAtlExeModuleT
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 ~CAtlExeModuleT() throw();
@@ -124,11 +124,11 @@ Yok edicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan tüm kaynakları serbest bırakır.
+Ayrılan tüm kaynakları serbest sağlar.
 
-##  <a name="initializecom"></a>CAtlExeModuleT:: InitializeCom
+## <a name="catlexemoduletinitializecom"></a><a name="initializecom"></a>CAtlExeModuleT::InitializeCom
 
-COM başlatır.
+COM'u ilke ler.
 
 ```
 static HRESULT InitializeCom() throw();
@@ -136,17 +136,17 @@ static HRESULT InitializeCom() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem oluşturucudan çağrılır ve COM 'un varsayılan uygulamadan farklı bir şekilde başlatılması için geçersiz kılınabilir. Varsayılan uygulama, proje yapılandırmasına bağlı olarak `CoInitializeEx(NULL, COINIT_MULTITHREADED)` ya da `CoInitialize(NULL)` çağırır.
+Bu yöntem oluşturucudan çağrılır ve COM'u varsayılan uygulamadan farklı bir şekilde başlatmaya geçersiz kılınabilir. Varsayılan uygulama çağırır `CoInitializeEx(NULL, COINIT_MULTITHREADED)` `CoInitialize(NULL)` veya proje yapılandırması bağlı.
 
-Bu yöntemi normalde geçersiz kılmak için [CAtlExeModuleT:: Unınitializecom](#uninitializecom)geçersiz kılınması gerekir.
+Bu yöntemi geçersiz kılmak normalde [CAtlExeModuleT::UninitializeCom'un](#uninitializecom)geçersiz kılınması gerekir.
 
-##  <a name="m_bdelayshutdown"></a>CAtlExeModuleT:: m_bDelayShutdown
+## <a name="catlexemoduletm_bdelayshutdown"></a><a name="m_bdelayshutdown"></a>CAtlExeModuleT::m_bDelayShutdown
 
-Modülün kapanmasından bir gecikme olması gerektiğini belirten bir bayrak.
+Modülün kapatılmasında gecikme olması gerektiğini belirten bir bayrak.
 
 ```
 bool m_bDelayShutdown;
@@ -154,11 +154,11 @@ bool m_bDelayShutdown;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrıntılar için bkz. [Catlexemodüle Let 'e genel bakış](../../atl/reference/catlexemodulet-class.md) .
+Ayrıntılar için [CAtlExeModuleT Genel Bakış'a](../../atl/reference/catlexemodulet-class.md) bakın.
 
-##  <a name="m_dwpause"></a>CAtlExeModuleT:: m_dwPause
+## <a name="catlexemoduletm_dwpause"></a><a name="m_dwpause"></a>CAtlExeModuleT::m_dwPause
 
-Tüm nesnelerin kapatmadan önce kaybolduğundan emin olmak için bir duraklatma değeri kullanılır.
+Tüm nesnelerin kapanmadan önce gittiğinden emin olmak için kullanılan bir duraklatma değeri.
 
 ```
 DWORD m_dwPause;
@@ -166,11 +166,11 @@ DWORD m_dwPause;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sunucuyu kapatmak için duraklama değeri olarak kullanılan milisaniye sayısını ayarlamak için [Catlexemodület:: InitializeCom](#initializecom) öğesini çağırdıktan sonra bu değeri değiştirin. Varsayılan değer 1000 milisaniyedir.
+[CAtlExeModuleT::InitializeCom'u](#initializecom) arayarak sunucuyu kapatmak için duraklatma değeri olarak kullanılan milisaniye sayısını ayarlamak için bu değeri değiştirin. Varsayılan değer 1000 milisaniyedir.
 
-##  <a name="m_dwtimeout"></a>CAtlExeModuleT:: m_dwTimeOut
+## <a name="catlexemoduletm_dwtimeout"></a><a name="m_dwtimeout"></a>CAtlExeModuleT::m_dwTimeOut
 
-Modülün kaldırılmasını geciktirmede kullanılan bir zaman aşımı değeri.
+Modülün boşaltılmasını geciktirmek için kullanılan bir zaman kaybı değeri.
 
 ```
 DWORD m_dwTimeOut;
@@ -178,11 +178,11 @@ DWORD m_dwTimeOut;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sunucuyu kapatmak için zaman aşımı değeri olarak kullanılan milisaniye sayısını tanımlamak için [Catlexemodület:: InitializeCom](#initializecom) öğesini çağırdıktan sonra bu değeri değiştirin. Varsayılan değer 5000 milisaniyedir. Daha fazla ayrıntı için bkz. [Catlexemodüle Let genel bakış](../../atl/reference/catlexemodulet-class.md) .
+[CAtlExeModuleT::InitializeCom'u](#initializecom) arayarak sunucuyu kapatmak için zaman kaybı değeri olarak kullanılan milisaniye sayısını tanımladıktan sonra bu değeri değiştirin. Varsayılan değer 5000 milisaniyedir. Daha fazla bilgi için [CAtlExeModuleT Genel Bakış'a](../../atl/reference/catlexemodulet-class.md) bakın.
 
-##  <a name="parsecommandline"></a>CAtlExeModuleT::P arseCommandLine
+## <a name="catlexemoduletparsecommandline"></a><a name="parsecommandline"></a>CAtlExeModuleT::ParseCommandLine
 
-Komut satırını ayrıştırır ve gerekirse kayıt gerçekleştirir.
+Komut satırını parses ve gerekirse kayıt gerçekleştirir.
 
 ```
 bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
@@ -191,22 +191,22 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 ### <a name="parameters"></a>Parametreler
 
 *lpCmdLine*<br/>
-Uygulamaya geçirilen komut satırı.
+Komut satırı uygulamaya geçti.
 
-*Pnekcode*<br/>
-Kayda karşılık gelen HRESULT (Eğer gerçekleştiyse).
+*pnRetCode*<br/>
+Kayıt için karşılık gelen HRESULT (gerçekleştiyse).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uygulamanın çalışmaya devam etmesi gerekiyorsa true, aksi takdirde false döndürün.
+Uygulama çalışmaya devam ederse, aksi takdirde yanlış döndürün.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem [CAtlExeModuleT:: WinMain](#winmain) öğesinden çağrılır ve komut satırı anahtarlarını işlemek için geçersiz kılınabilir. Varsayılan uygulama, **/regserver** ve **/Unregserver** komut satırı bağımsız değişkenlerini denetler ve kayıt veya kayıt silme işlemini gerçekleştirir.
+Bu yöntem [CAtlExeModuleT denir::WinMain](#winmain) ve komut satırı anahtarları işlemek için geçersiz kılınabilir. Varsayılan uygulama **/RegServer** ve **/UnRegServer** komut satırı bağımsız değişkenlerini denetler ve kayıt veya kayıt dışı gerçekleştirir.
 
-##  <a name="postmessageloop"></a>CAtlExeModuleT::P ostMessageLoop
+## <a name="catlexemoduletpostmessageloop"></a><a name="postmessageloop"></a>CAtlExeModuleT::PostMessageLoop
 
-Bu yöntem ileti döngüsünden çıktıktan hemen sonra çağrılır.
+Bu yöntem, ileti döngüsü çıktıktan hemen sonra çağrılır.
 
 ```
 HRESULT PostMessageLoop() throw();
@@ -214,15 +214,15 @@ HRESULT PostMessageLoop() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel uygulama temizleme işlemini gerçekleştirmek için bu yöntemi geçersiz kılın. Varsayılan uygulama [CAtlExeModuleT:: RevokeClassObjects](#revokeclassobjects)öğesini çağırır.
+Özel uygulama temizleme gerçekleştirmek için bu yöntemi geçersiz kılın. Varsayılan uygulama [CAtlExeModuleT çağırır::RevokeClassObjects](#revokeclassobjects).
 
-##  <a name="premessageloop"></a>CAtlExeModuleT::P reMessageLoop
+## <a name="catlexemoduletpremessageloop"></a><a name="premessageloop"></a>CAtlExeModuleT::PreMessageLoop
 
-Bu yöntem ileti döngüsüne girmeden hemen önce çağrılır.
+Bu yöntem, ileti döngüsüne girmeden hemen önce çağrılır.
 
 ```
 HRESULT PreMessageLoop(int nShowCmd) throw();
@@ -231,17 +231,17 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-WinMain 'te *nShowCmd* parametresi olarak geçirilen değer.
+Değer WinMain *nShowCmd* parametresi olarak geçti.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulama için özel başlatma kodu eklemek için bu yöntemi geçersiz kılın. Varsayılan uygulama, sınıf nesnelerini kaydeder.
+Uygulama için özel başlatma kodu eklemek için bu yöntemi geçersiz kılın. Varsayılan uygulama sınıf nesnelerini kaydeder.
 
-##  <a name="registerclassobjects"></a>CAtlExeModuleT:: RegisterClassObjects
+## <a name="catlexemoduletregisterclassobjects"></a><a name="registerclassobjects"></a>CAtlExeModuleT::RegisterClassObjects
 
 Diğer uygulamaların bağlanabilmesi için sınıf nesnesini OLE ile kaydeder.
 
@@ -251,17 +251,17 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dwClsContext*<br/>
-Sınıf nesnesinin çalıştırılacağı bağlamı belirtir. Olası değerler CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER.
+*dwClsBağlam*<br/>
+Sınıf nesnesinin çalıştırılacak olduğu bağlamı belirtir. Olası değerler CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER.
 
-*dwFlags*<br/>
+*Dwflags*<br/>
 Sınıf nesnesine bağlantı türlerini belirler. Olası değerler REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE veya REGCLS_MULTI_SEPARATE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olduğunda, kayıt için bir sınıf yoksa S_FALSE veya hata durumunda HRESULT hatası döndürür.
+Kayıt olacak sınıf yoksa veya hata da HRESULT'da bir hata varsa, S_FALSE başarı S_OK döndürür.
 
-##  <a name="revokeclassobjects"></a>CAtlExeModuleT:: RevokeClassObjects
+## <a name="catlexemoduletrevokeclassobjects"></a><a name="revokeclassobjects"></a>CAtlExeModuleT::İptalSınıf Nesneleri
 
 Sınıf nesnesini kaldırır.
 
@@ -271,11 +271,11 @@ HRESULT RevokeClassObjects() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olduğunda, kayıt için bir sınıf yoksa S_FALSE veya hata durumunda HRESULT hatası döndürür.
+Kayıt olacak sınıf yoksa veya hata da HRESULT'da bir hata varsa, S_FALSE başarı S_OK döndürür.
 
-##  <a name="run"></a>CAtlExeModuleT:: Run
+## <a name="catlexemoduletrun"></a><a name="run"></a>CAtlExeModuleT::Çalıştır
 
-Bu yöntem, başlatmak, ileti döngüsünü çalıştırmak ve temizlemek için EXE modülünde kodu yürütür.
+Bu yöntem, exe modülünde kod ları çalıştırıp, ileti döngüsünün başlatılmasını, çalıştırMasını ve temizlemesini sağlar.
 
 ```
 HRESULT Run(int nShowCmd = SW_HIDE) throw();
@@ -284,19 +284,19 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl gösterileceğini belirtir. Bu parametre, [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) bölümünde ele alınan değerlerden biri olabilir. Varsayılan olarak SW_HIDE olur.
+Pencerenin nasıl gösterilebildiğini belirtir. Bu parametre [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) bölümünde tartışılan değerlerden biri olabilir. Varsayılan olarak SW_HIDE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem geçersiz kılınabilir. Bununla birlikte, uygulamada [Catlexemodület 'i geçersiz kılmak daha iyidir::P reMessageLoop](#premessageloop), [Catlexemodület:: RunMessageLoop](#runmessageloop)veya [catlexemodulet::P ostmessageloop](#postmessageloop) .
+Bu yöntem geçersiz kılınabilir. Ancak, uygulamada [catlExeModuleT geçersiz kılmak daha iyidir::PreMessageLoop](#premessageloop), [CAtlExeModuleT::RunMessageLoop](#runmessageloop), veya [CAtlExeModuleT::PostMessageLoop](#postmessageloop) yerine.
 
-##  <a name="runmessageloop"></a>CAtlExeModuleT:: RunMessageLoop
+## <a name="catlexemoduletrunmessageloop"></a><a name="runmessageloop"></a>CAtlExeModuleT::RunMessageLoop
 
-Bu yöntem ileti döngüsünü yürütür.
+Bu yöntem ileti döngüsü yürütür.
 
 ```
 void RunMessageLoop() throw();
@@ -304,11 +304,11 @@ void RunMessageLoop() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İleti döngüsünün davranışını değiştirmek için bu yöntem geçersiz kılınabilir.
+Bu yöntem, ileti döngüsünün davranışını değiştirmek için geçersiz kılınabilir.
 
-##  <a name="uninitializecom"></a>CAtlExeModuleT:: Unınitializecom
+## <a name="catlexemoduletuninitializecom"></a><a name="uninitializecom"></a>CAtlExeModuleT::UninitializeCom
 
-COM başlatılır.
+Com'u başlatmaz.
 
 ```
 static void UninitializeCom() throw();
@@ -316,11 +316,11 @@ static void UninitializeCom() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem yalnızca [CoUnInitialize](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) öğesini çağırır ve yıkıcıdan çağırılır. [CAtlExeModuleT:: InitializeCom](#initializecom)öğesini geçersiz kılarsınız bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem sadece [CoUninitialize](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) çağırır ve yıkıcı denir. [CAtlExeModuleT geçersiz](#initializecom)kılarsanız bu yöntemi geçersiz kılın::InitializeCom .
 
-##  <a name="unlock"></a>CAtlExeModuleT:: unlock
+## <a name="catlexemoduletunlock"></a><a name="unlock"></a>CAtlExeModuleT::Kilidini açın
 
-Modülün kilit sayısını azaltır.
+Modülün kilit sayısını eritiyor.
 
 ```
 LONG Unlock() throw();
@@ -328,11 +328,11 @@ LONG Unlock() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanılama veya test için yararlı olabilecek bir değer döndürür.
+Tanılama veya test için yararlı olabilecek bir değer verir.
 
-##  <a name="winmain"></a>CAtlExeModuleT:: WinMain
+## <a name="catlexemoduletwinmain"></a><a name="winmain"></a>CAtlExeModuleT::WinMain
 
-Bu yöntem, bir EXE çalıştırmak için gereken kodu uygular.
+Bu yöntem, exe çalıştırmak için gerekli kodu uygular.
 
 ```
 int WinMain(int nShowCmd) throw();
@@ -341,19 +341,19 @@ int WinMain(int nShowCmd) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl gösterileceğini belirtir. Bu parametre, [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) bölümünde ele alınan değerlerden biri olabilir.
+Pencerenin nasıl gösterilebildiğini belirtir. Bu parametre [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) bölümünde tartışılan değerlerden biri olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yürütülebilir dosyanın dönüş değerini döndürür.
+Çalıştırılabilenin iade değerini verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem geçersiz kılınabilir. [CAtlExeModuleT geçersiz kılınıyorsa:P reMessageLoop](#premessageloop), [catlexemodület::P ostmessageloop](#postmessageloop)veya [CAtlExeModuleT:: RunMessageLoop](#runmessageloop) yeterli esneklik sağlamıyor, bu yöntemi kullanarak `WinMain` işlevini geçersiz kılmak mümkündür.
+Bu yöntem geçersiz kılınabilir. [CAtlExeModuleT::PreMessageLoop,](#premessageloop) [CAtlExeModuleT::PostMessageLoop](#postmessageloop)veya [CAtlExeModuleT::RunMessageLoop](#runmessageloop) yeterli esneklik sağlamıyorsa, bu yöntemi kullanarak `WinMain` işlevi geçersiz kılmak mümkündür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATLDuck örneği](../../overview/visual-cpp-samples.md)<br/>
+[ATLDuck Örnek](../../overview/visual-cpp-samples.md)<br/>
 [CAtlModuleT Sınıfı](../../atl/reference/catlmodulet-class.md)<br/>
 [CAtlDllModuleT Sınıfı](../../atl/reference/catldllmodulet-class.md)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

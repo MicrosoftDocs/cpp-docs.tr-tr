@@ -14,16 +14,16 @@ helpviewer_keywords:
 - GF compiler option [C++]
 - strings [C++], pooling
 ms.assetid: bb7b5d1c-8e1f-453b-9298-8fcebf37d16c
-ms.openlocfilehash: 90d3fb5c601d9534215a46594884be5d168fe0aa
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: e0d23004c7b710f51065db52410fbb15b7cca040
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449550"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81320489"
 ---
 # <a name="gf-eliminate-duplicate-strings"></a>/GF (Yinelenen Dizeleri Ele)
 
-Yürütme sırasında program görüntüsünde ve bellekte aynı dizelerin tek bir kopyasını oluşturmak derleyiciyi etkinleştirir. Bu adlı bir iyileştirme, *dize havuzu* daha küçük programlar oluşturabilirsiniz.
+Derleyicinin yürütme sırasında program görüntüsünde ve bellekte aynı dizeleri tek bir kopyasını oluşturmasını sağlar. Bu, daha küçük programlar oluşturabilen *dize birleştirme* adı verilen bir optimizasyondur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,11 +33,11 @@ Yürütme sırasında program görüntüsünde ve bellekte aynı dizelerin tek b
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanırsanız **/GF**, işletim sisteminin bellek dizesi kısmı kaydırmaz ve dizeleri geri resim dosyasını okuyabilir.
+**/GF**kullanıyorsanız, işletim sistemi belleğin dize kısmını değiştirmez ve dizeleri görüntü dosyasından geri okuyabilir.
 
-**/GF** havuzları dizeleri salt okunur. Altında dizelere değiştirmeye çalışırsanız **/GF**, bir uygulama hatası oluşur.
+**/GF** dizeleri salt okunur olarak biraraya getirin. **/GF**altında dizeleri değiştirmeye çalışırsanız, bir uygulama hatası oluşur.
 
-Dize havuzunu ne birden çok arabellekleri için birden çok işaretçi olarak tek bir arabellek için birden çok işaretçi olması düşünülmemiştir sağlar. Aşağıdaki kodda, `s` ve `t` aynı dizesi ile başlatılır. Dize havuzunu bunları aynı belleğe işaret edecek şekilde neden olur:
+Dize birleştirme, birden çok arabellek için birden çok işaretçi olarak tasarlanan şeyin tek bir arabelleğe birden çok işaretçi olmasını sağlar. Aşağıdaki kodda `s` ve `t` aynı dize ile başharf. Dize birleştirme, aynı belleğe işaret etmelerine neden olur:
 
 ```
 char *s = "This is a character buffer";
@@ -45,22 +45,22 @@ char *t = "This is a character buffer";
 ```
 
 > [!NOTE]
->  [/Zi](z7-zi-zi-debug-information-format.md) seçeneği, Düzenle ve devam et için kullanılan otomatik olarak ayarlar **/GF** seçeneği.
+> Edit ve Continue için kullanılan [/ZI](z7-zi-zi-debug-information-format.md) seçeneği otomatik olarak **/GF** seçeneğini ayarlar.
 
 > [!NOTE]
->  **/GF** derleyici seçeneği her benzersiz dize için adreslenebilir bir bölüm oluşturur. Ve varsayılan olarak, bir nesne dosyası en çok 65.536 adreslenebilir bölüm içerebilir. Programınızı birden fazla 65.536 dizelerini içeriyorsa, [/bigobj](bigobj-increase-number-of-sections-in-dot-obj-file.md) derleyici seçeneği, daha fazla bölüm oluşturmak için.
+> **/GF** derleyicisi seçeneği, her benzersiz dize için adreslenebilir bir bölüm oluşturur. Ve varsayılan olarak, bir nesne dosyası en fazla 65.536 adreslenebilir bölüm içerebilir. Programınız 65.536'dan fazla dize içeriyorsa, daha fazla bölüm oluşturmak için [/bigobj](bigobj-increase-number-of-sections-in-dot-obj-file.md) derleyici seçeneğini kullanın.
 
-**/GF** içinde etkisi yoktur olan [/O1](o1-o2-minimize-size-maximize-speed.md) veya [/O2](o1-o2-minimize-size-maximize-speed.md) kullanılır.
+**/O1** veya [/O2](o1-o2-minimize-size-maximize-speed.md) kullanıldığında [/O2](o1-o2-minimize-size-maximize-speed.md) /GF geçerlidir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **kod oluşturma** özellik sayfası.
+1. Kod **Oluşturma** özelliği sayfasını tıklatın.
 
-1. Değiştirme **dize havuzunu etkinleştir** özelliği.
+1. String **Pooling** özelliğini etkinleştir'i değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

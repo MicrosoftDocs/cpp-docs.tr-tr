@@ -1,74 +1,74 @@
 ---
-title: Visual Studio projelerinde Özellik devralma-C++
-description: Özellik devralma özelliği yerel (MSBuild) Visual Studio C++ projelerinde nasıl kullanılır.
+title: Visual Studio projelerinde mülkiyet mirası - C++
+description: Yerel (MSBuild) Visual Studio C++ projelerinde özellik devralma nasıl çalışır?
 ms.date: 02/21/2020
 helpviewer_keywords:
 - C++ projects, property inheritance
-ms.openlocfilehash: 2032ab63c7d278a080742dba8d8d0c6c3ed7a094
-ms.sourcegitcommit: 9a63e9b36d5e7fb13eab15c2c35bedad4fb03ade
+ms.openlocfilehash: 4740c479c6cc7c877fd72b7828a8e4811826de6c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77600027"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81328472"
 ---
-# <a name="property-inheritance-in-visual-studio-projects"></a>Visual Studio projelerinde Özellik devralma
+# <a name="property-inheritance-in-visual-studio-projects"></a>Visual Studio projelerinde mülkiyet mirası
 
-Visual Studio Native proje sistemi MSBuild 'i temel alır. MSBuild, her türlü proje oluşturmak için dosya biçimlerini ve kuralları tanımlar. Birden çok yapılandırma ve platform için oluşturmanın karmaşıklığının çoğunu yönetir. Nasıl çalıştığını anlamak için yararlı bulacaksınız. Özel yapılandırma tanımlamak istiyorsanız bu özellikle önemlidir. Veya birden çok projeye paylaşabileceğiniz ve içeri aktarabileceğiniz yeniden kullanılabilir özellik kümeleri oluşturmak için.
+Visual Studio yerel proje sistemi MSBuild dayanmaktadır. MSBuild, her türlü proje oluşturmak için dosya biçimlerini ve kuralları tanımlar. Birden çok yapılandırma ve platform için oluşturma karmaşıklığının çoğunu yönetir. Nasıl çalıştığını anlamak için yararlı bulacaksınız. Özel yapılandırmalar tanımlamak istiyorsanız, bu özellikle önemlidir. Veya, birden çok projede paylaşabileceğiniz ve içe aktarabileceğiniz yeniden kullanılabilir özellik kümeleri oluşturmak için.
 
-## <a name="the-vcxproj-file-props-files-and-targets-files"></a>. Vcxproj dosyası,. props dosyaları ve. targets dosyaları
+## <a name="the-vcxproj-file-props-files-and-targets-files"></a>.vcxproj dosyası, .props dosyaları ve .targets dosyaları
 
-Proje özellikleri doğrudan proje dosyasında ( *`.vcxproj`* ) veya diğer *`.targets`* ya da proje dosyasının içeri aktardığı ve varsayılan değerleri tedarik eden *`.props`* dosyalarında depolanır. Visual Studio 2015 için bu dosyalar *`\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140`* içinde bulunur. Visual Studio 2017 için bu dosyalar, *`<edition>`* Visual Studio Edition 'ın yüklü olduğu *`\Program Files (x86)\Microsoft Visual Studio\2017\<edition>\Common7\IDE\VC\VCTargets`* ' de bulunur. Visual Studio 2019 ' de bu dosyalar *`\Program Files (x86)\Microsoft Visual Studio\2019\<edition>\MSBuild\Microsoft\VC\v160`* ' de bulunur. Özellikler ayrıca kendi projenize ekleyebileceğiniz özel *`.props`* dosyalarında da depolanır. Bu dosyaları el ile düzenlememenizi kesinlikle öneririz. Bunun yerine, MSBuild 'in derinlemesine bir şekilde anlaşılmadığı müddetçe, özellikle Devralmada yer alan tüm özellikleri değiştirmek için IDE 'deki özellik sayfalarını kullanın.
+Proje özellikleri doğrudan proje dosyasında (*`.vcxproj`*) veya *`.targets`* *`.props`* proje dosyasının içe aktardığı ve varsayılan değerleri sağlayan dosyalarda depolanır. Visual Studio 2015 için bu dosyalar *`\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140`*. Visual Studio 2017 için bu dosyalar *`\Program Files (x86)\Microsoft Visual Studio\2017\<edition>\Common7\IDE\VC\VCTargets`* Visual *`<edition>`* Studio sürümü nerede yüklü olarak bulunmaktadır. Visual Studio 2019'da *`\Program Files (x86)\Microsoft Visual Studio\2019\<edition>\MSBuild\Microsoft\VC\v160`* bu dosyalar . Özellikler, kendi projenize *`.props`* ekleyebileceğiniz özel dosyalarda da depolanır. Bu dosyaları el ile birlikte vermemenizi şiddetle öneririz. Bunun yerine, MSBuild hakkında derin bir kanlama sahip değilseniz, başta devralmaya katılanlar olmak üzere tüm özellikleri değiştirmek için IDE'deki özellik sayfalarını kullanın.
 
-Daha önce gösterildiği gibi, aynı yapılandırma için aynı özelliğe bu farklı dosyalarda farklı bir değer atanabilir. Bir proje oluşturduğunuzda, MSBuild motoru proje dosyasını ve tüm içeri aktarılan dosyaları iyi tanımlanmış bir sırayla değerlendirir (aşağıda açıklanmıştır). Her dosya değerlendirildiğinde, bu dosyada tanımlanan özellik değerleri varolan değerleri geçersiz kılar. Belirtilmemiş tüm değerler daha önce değerlendirilen dosyalardan devralınır. Özellik sayfaları ile bir özelliği ayarladığınızda, bunu ayarladığınız yere dikkat etmeniz de önemlidir. Bir *`.props`* dosyasında bir özelliği "X" olarak ayarlarsanız, ancak özellik proje dosyasında "y" olarak ayarlanırsa, proje özelliği "y" olarak ayarlanmış olarak oluşturulur. Aynı özellik bir proje öğesinde ( *`.cpp`* dosyası gibi) "z" olarak ayarlanırsa, MSBuild altyapısı "z" değerini kullanacaktır.
+Daha önce gösterildiği gibi, aynı yapılandırma için aynı özellik bu farklı dosyalarda farklı bir değer atanabilir. Bir proje oluşturduğunuzda, MSBuild altyapısı proje dosyasını ve tüm içe aktarılan dosyaları iyi tanımlanmış bir sırada değerlendirir (aşağıda açıklanmıştır). Her dosya değerlendirildikçe, bu dosyada tanımlanan özellik değerleri varolan değerleri geçersiz kılar. Belirtilmeyen değerler, daha önce değerlendirilen dosyalardan devralınır. Özellik sayfaları olan bir özelliği ayarladığınızda, özelliği nerede ayarladığınıza da dikkat etmek önemlidir. Bir özelliği bir *`.props`* dosyada "X" olarak ayarlarsanız, ancak özellik proje dosyasında "Y" olarak ayarlanırsa, proje "Y" olarak ayarlanmış özellik ile birlikte oluşturur. Aynı özellik dosya gibi bir *`.cpp`* proje öğesiüzerinde "Z" olarak ayarlanmışsa, MSBuild altyapısı "Z" değerini kullanır.
 
 Temel devralma ağacı şöyledir:
 
-1. MSBuild CPP araç takımının varsayılan ayarları (.. *`.vcxproj`* dosyası tarafından içeri aktarılan \Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.cpp.default.props..)
+1. MSBuild CPP Araç Setinden varsayılan ayarlar (... \Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.Cpp.Default.props, *`.vcxproj`* dosya tarafından içe aktarılır.)
 
 1. Özellik sayfaları
 
-1. *`.vcxproj`* dosyası. (Varsayılan ve özellik sayfası ayarlarını geçersiz kılabilir.)
+1. *`.vcxproj`* Dosya. (Varsayılan ve özellik sayfası ayarlarını geçersiz kılabilir.)
 
 1. Öğelere ait meta veriler
 
 > [!TIP]
-> Özellik sayfasında, **kalın** olan bir özellik geçerli bağlamda tanımlanır. Normal yazı tipindeki özellik devralınan özelliktir.
+> Özellik sayfasında, **kalın** renkteki bir özellik geçerli bağlamda tanımlanır. Normal yazı tipindeki özellik devralınan özelliktir.
 
-## <a name="view-an-expanded-project-file-with-all-imported-values"></a>Tüm içeri aktarılan değerlerle genişletilmiş bir proje dosyasını görüntüleme
+## <a name="view-an-expanded-project-file-with-all-imported-values"></a>Tüm içe aktarılan değerlerle genişletilmiş proje dosyalarını görüntüleme
 
 Bazen, belirli bir özellik değerinin nasıl devralındığını belirlemek için genişletilmiş dosyayı görüntülemek yararlıdır. Genişletilmiş sürümü görüntülemek için, Visual Studio komut isteminde aşağıdaki komutu girin. (Yer tutucu dosya adlarını, kullanmak istediğiniz dosya adlarıyla değiştirin.)
 
-> **MSBuild/PP:** _Temp_ **. txt** _MyApp_ **. vcxproj**
+> **msbuild /pp:**_temp_**.txt** _myapp_**.vcxproj**
 
-MSBuild hakkında bilgi sahibi olmadığınız takdirde genişletilmiş proje dosyaları büyük ve anlaşılması zor olabilir. Bir proje dosyasının temel yapısı şöyledir:
+MSBuild'e aşina değilseniz genişletilmiş proje dosyaları büyük ve anlaşılması zor olabilir. Bir proje dosyasının temel yapısı şöyledir:
 
-1. IDE 'de gösterilmeyen temel proje özellikleri.
+1. IDE'de açıkolmayan temel proje özellikleri.
 
-1. Bazı temel ve araç takımı bağımsız özelliklerini tanımlayan *`Microsoft.cpp.default.props`* içeri aktarma.
+1. Bazı *`Microsoft.cpp.default.props`* temel, araç kümesinden bağımsız özellikleri tanımlayan, alma.
 
-1. **Yapılandırma genel** sayfasında **platform araç takımı** ve **Proje** varsayılan özellikleri olarak gösterilen genel yapılandırma özellikleri. Bu özellikler, sonraki adımda *`Microsoft.cpp.props`* hangi araç kümesi ve iç özellik sayfalarının içeri aktarılacağını belirlenir.
+1. Genel Yapılandırma özellikleri **(Configuration Genel** sayfasında **PlatformToolset** ve **Project** varsayılan özellikleri olarak açıktadır. Bu özellikler, bir sonraki adımda hangi araç *`Microsoft.cpp.props`* kümesi nin ve içsel özellik sayfalarının içe aktarıldını belirler.
 
-1. Proje varsayılanlarını belirleyen *`Microsoft.cpp.props`* içeri aktarma.
+1. Proje *`Microsoft.cpp.props`* varsayılanlarının çoğunu ayarlayan , içe aktarma.
 
-1. *`.user`* dosyaları da dahil olmak üzere tüm özellik sayfalarını içeri aktarın. Bu özellik sayfaları **Platformaraç takımı** ve **Proje** varsayılan özellikleri dışında her şeyi geçersiz kılabilir.
+1. Dosyalar da dahil olmak *`.user`* üzere tüm özellik sayfalarını içe aktarın. Bu özellik sayfaları **PlatformToolset** ve **Project** varsayılan özellikleri dışında her şeyi geçersiz kılabilir.
 
 1. Proje yapılandırma özelliklerinin geri kalanı. Bu değerler özellik sayfalarında ayarlanmış değerleri geçersiz kılabilir.
 
-1. Meta verileriyle birlikte öğeler (dosyalar). Bu öğeler, diğer özelliklerden ve içeri aktarmalardan önce gerçekleşseler de, her zaman MSBuild değerlendirme kuralları 'ndaki son sözcüklerdir.
+1. Meta verileriyle birlikte öğeler (dosyalar). Bu öğeler, diğer özellikler ve içeri almalardan önce meydana gelse ler bile, MSBuild değerlendirme kurallarında her zaman son sözcüktür.
 
-Daha fazla bilgi için bkz. [MSBuild özellikleri](/visualstudio/msbuild/msbuild-properties).
+Daha fazla bilgi için [MSBuild Özellikleri'ne](/visualstudio/msbuild/msbuild-properties)bakın.
 
 ## <a name="build-configurations"></a>Derleme yapılandırmaları
 
-Yapılandırma, yalnızca bir ad verilen rastgele bir özellik grubudur. Visual Studio hata ayıklama ve sürüm yapılandırması sağlar. Her bir hata ayıklama derlemesi veya yayın derlemesi için çeşitli özellikleri uygun şekilde ayarlar. Özel yapılandırma tanımlamak için **Configuration Manager** kullanabilirsiniz. Bu, belirli bir yapı türü için özellikleri gruplamak için kullanışlı bir yoldur.
+Yapılandırma, ad verilen rasgele bir özellik grubudur. Visual Studio Hata Ayıklama ve Sürüm yapılandırmaları sağlar. Her biri hata ayıklama yapısı veya sürüm yapısı için uygun şekilde çeşitli özellikler ayarlar. Özel yapılandırmaları tanımlamak için **Configuration Manager'ı** kullanabilirsiniz. Belirli bir yapı lezzeti için özellikleri gruplandırmanın kullanışlı bir yoludur.
 
-Yapı yapılandırmalarının daha iyi bir fikir edinmek için **Özellik Yöneticisi**açın. Ayarlarınıza bağlı olarak **görünüm > Özellik Yöneticisi** veya **> diğer Windows > Özellik Yöneticisi**seçeneklerini belirleyerek açabilirsiniz. **Özellik Yöneticisi** , projedeki her yapılandırma ve platform çifti için düğümler içerir. Bu düğümlerin her biri, bu yapılandırma için bazı belirli özellikleri ayarlamış olan özellik sayfaları ( *`.props`* dosyaları) düğümlerdir.
+Yapı yapılandırmaları hakkında daha iyi bir fikir almak için **Property Manager'ı**açın. Ayarlarınıza bağlı olarak, Diğer Windows > Property **Manager'ı > >** veya **Diğer Windows > Özellik Yöneticisi'> ni görüntüle**seçeneğini seçerek açabilirsiniz. **Özellik Yöneticisi'nin** projedeki her yapılandırma ve platform çifti için düğümleri vardır. Bu düğümlerin her birinin altında, bu yapılandırma*`.props`* için bazı özel özellikler ayarlayan özellik sayfaları (dosyalar) düğümleri bulunur.
 
 ![Özellik Yöneticisi](media/property-manager.png "Özellik Yöneticisi")
 
-Örneğin, özellik sayfalarındaki genel bölmesine gidebilirsiniz. "Unicode kullan" yerine karakter kümesi özelliğini "ayarlanmadı" olarak değiştirin ve ardından **Tamam**' a tıklayın. Özellik Yöneticisi artık **Unicode desteği** özellik sayfasını gösterir. Bu, geçerli yapılandırma için kaldırılmıştır, ancak hala diğer yapılandırmalar için de bulunur.
+Örneğin, Özellik Sayfalarındaki Genel bölmeye gidebilirsiniz. Karakter Kümesi özelliğini "Unicode'u Kullan" yerine "Ayarlanmamış" olarak değiştirin ve ardından **Tamam'ı**tıklatın. Özellik Yöneticisi artık **Unicode Destek** özellik sayfası göstermiyor. Geçerli yapılandırma için kaldırılır, ancak diğer yapılandırmalar için hala oradadır.
 
-Özellik Yöneticisi ve özellik sayfaları hakkında daha fazla bilgi için bkz. [Visual Studio C++ proje ayarlarını paylaşma veya yeniden kullanma](create-reusable-property-configurations.md).
+Emlak Yöneticisi ve özellik sayfaları hakkında daha fazla bilgi için [Visual Studio C++ proje ayarlarını paylaş veya yeniden kullanın.](create-reusable-property-configurations.md)
 
 > [!TIP]
-> *`.user`* dosyası eski bir özelliktir. Özellikleri yapılandırma ve platforma göre doğru şekilde gruplanmış tutmak için bunu silmenizi öneririz.
+> Dosya *`.user`* eski bir özelliktir. Özellikleri yapılandırmaya ve platforma göre doğru şekilde gruplandırmak için silmenizi öneririz.

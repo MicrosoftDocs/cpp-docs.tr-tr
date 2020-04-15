@@ -1,5 +1,5 @@
 ---
-title: Giriş ve bitiş kodu yazarken dikkat edilmesi gerekenler
+title: Giriş ve Bitiş Kodu Yazarken Dikkat Edilmesi Gerekenler
 ms.date: 11/04/2016
 helpviewer_keywords:
 - layouts, stack frame
@@ -7,20 +7,20 @@ helpviewer_keywords:
 - __LOCAL_SIZE constant
 - stack, stack frame layout
 ms.assetid: 3b8addec-e809-48e4-b1d0-5bad133bd4b8
-ms.openlocfilehash: 52403fc45bbb68d693ef154bf39c5dd366dd10c5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e1559c75808a72cd3f9674399bec036cf392b44f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62312531"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81334589"
 ---
 # <a name="considerations-when-writing-prologepilog-code"></a>Giriş ve Bitiş Kodu Yazarken Dikkat Edilmesi Gerekenler
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Kendi giriş ve sonuç kod dizilerinizi yazmadan önce, yığın çerçevesinin nasıl düzenlendiğini anlamak önemlidir. Nasıl kullanılacağını bilmek yararlıdır **__local_sıze** önceden tanımlanmış sabitinin.
+Kendi prolog ve epilog kod dizileri yazmadan önce, yığın çerçeve nasıl ortaya konulmuştur anlamak önemlidir. Önceden tanımlanmış **__LOCAL_SIZE** sabitin nasıl kullanılacağını bilmek de yararlıdır.
 
-##  <a name="_clang_c_stack_frame_layout"></a> C yığın çerçevesi düzeni
+## <a name="cstack-frame-layout"></a><a name="_clang_c_stack_frame_layout"></a>CStack Çerçeve Düzeni
 
 Bu örnekte, 32 bit işlevinde görünebilecek standart giriş kodu gösterilmektedir:
 
@@ -42,18 +42,18 @@ ret                          ; Return from function
 
 Yığın her zaman aşağı doğru (yüksek bellek adreslerinden düşük olanlara) büyür. Taban işaretçisi (`ebp`) `ebp`'nin gönderilen değerine işaret eder. Yerel değişkenler alanı `ebp-2`'de başlar. Yerel değişkenlere erişmek için uygun değeri `ebp`'den çıkararak `ebp`'den bir uzaklık hesaplayın.
 
-##  <a name="_clang_the___local_size_constant"></a> __Local_sıze sabiti
+## <a name="the-__local_size-constant"></a><a name="_clang_the___local_size_constant"></a>__LOCAL_SIZE Sabiti
 
-Derleyici, bir sabit sağlar **__local_sıze**, işlev giriş kodunun satır içi assembler bloğunu kullanmak için. Bu sabit, özel giriş kodundaki yığın çerçevesinde yerel değişkenler için yer ayırmak üzere kullanılır.
+Derleyici, işlev prolog kodunun satır İçi assembler bloğunda kullanılmak üzere sabit, **__LOCAL_SIZE**sağlar. Bu sabit, özel giriş kodundaki yığın çerçevesinde yerel değişkenler için yer ayırmak üzere kullanılır.
 
-Derleyici değeri belirler **__local_sıze**. Değer, tüm kullanıcı tanımlı yerel değişkenlerin ve derleyici tarafından oluşturulan geçici değişkenlerin toplam bayt sayısıdır. **__Local_sıze** yalnızca bir anlık işlenen olarak; kullanılabilir bir ifadede kullanılamaz. Bu sabitin değerini değiştirmemeli veya yeniden tanımlamamalısınız. Örneğin:
+Derleyici **__LOCAL_SIZE**değerini belirler. Değer, tüm kullanıcı tanımlı yerel değişkenlerin ve derleyici tarafından oluşturulan geçici değişkenlerin toplam bayt sayısıdır. **__LOCAL_SIZE** sadece ani bir operand olarak kullanılabilir; bir ifadede kullanılamaz. Bu sabitin değerini değiştirmemeli veya yeniden tanımlamamalısınız. Örneğin:
 
 ```
 mov      eax, __LOCAL_SIZE           ;Immediate operand--Okay
 mov      eax, [ebp - __LOCAL_SIZE]   ;Error
 ```
 
-Aşağıdaki özel giriş ve sonuç içeren çıplak bir işlev örneği kullanan dizilerinin **__local_sıze** giriş dizisinde:
+Özel prolog ve epilog dizileri içeren çıplak bir işlevaşağıdaki örnek prolog dizisinde **__LOCAL_SIZE** kullanır:
 
 ```
 __declspec ( naked ) func()
@@ -79,7 +79,7 @@ __declspec ( naked ) func()
 }
 ```
 
-**END Microsoft özgü**
+**END Microsoft Özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

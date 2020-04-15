@@ -1,5 +1,5 @@
 ---
-title: Iatlstringmgr sınıfı
+title: IAtlStringMgr Sınıfı
 ms.date: 10/18/2018
 f1_keywords:
 - IAtlStringMgr
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - memory, managing
 - IAtlStringMgr class
 ms.assetid: 722f0346-a770-4aa7-8f94-177be8dba823
-ms.openlocfilehash: 978d33c719b9cb8c2708dc97fa78874534dfd748
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 49ef7850edb18cd51092f282644973376abd4c7c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62199833"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81317489"
 ---
-# <a name="iatlstringmgr-class"></a>Iatlstringmgr sınıfı
+# <a name="iatlstringmgr-class"></a>IAtlStringMgr Sınıfı
 
-Bu sınıf arabirimi temsil eder bir `CStringT` bellek yöneticisi.
+Bu sınıf, bir `CStringT` bellek yöneticisiiçin arabirimi temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,23 +37,23 @@ __interface IAtlStringMgr
 
 |||
 |-|-|
-|[ayırma](#allocate)|Yeni bir dize veri yapısı ayırmak için bu yöntemi çağırın.|
-|[Clone](#clone)|Başka bir örneği ile kullanmak için yeni bir dize Yöneticisi için bir işaretçiyi döndürmek için bu yöntemi çağırın `CSimpleStringT`.|
-|[Ücretsiz](#free)|Boş bir dize veri yapısı için bu yöntemi çağırın.|
-|[GetNilString](#getnilstring)|Bir işaretçi döndürür `CStringData` boş dize nesneler tarafından kullanılan nesne.|
-|[Yeniden ayırma](#reallocate)|Dize veri yapısı yeniden ayırmak üzere bu yöntemi çağırın.|
+|[Ayırmak](#allocate)|Yeni bir dize veri yapısı ayırmak için bu yöntemi arayın.|
+|[Kopyalama](#clone)|Başka bir örnekle kullanılmak üzere yeni bir dize `CSimpleStringT`yöneticisine bir işaretçi döndürmek için bu yöntemi çağırın.|
+|[Ücretsiz](#free)|Dize veri yapısını serbest yapmak için bu yöntemi arayın.|
+|[GetNilString](#getnilstring)|Bir işaretçiyi `CStringData` boş dize nesneleri tarafından kullanılan nesneye döndürür.|
+|[Yeniden tahsis](#reallocate)|Dize veri yapısını yeniden tahsis etmek için bu yöntemi arayın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arabirim MFC bağımsız dize sınıfları tarafından kullanılan belleği yönetir; gibi [CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md), [CStringT](../../atl-mfc-shared/reference/cstringt-class.md), ve [CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md).
+Bu arabirim, MFC'den bağımsız dize sınıfları tarafından kullanılan belleği yönetir; [CSimpleStringT,](../../atl-mfc-shared/reference/csimplestringt-class.md) [CStringT](../../atl-mfc-shared/reference/cstringt-class.md)ve [CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md)gibi.
 
-Bu sınıf, özel dize sınıfınız için bir özel bellek yöneticisi uygulamak için de kullanabilirsiniz. Daha fazla bilgi için [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+Özel dize sınıfınız için özel bir bellek yöneticisi uygulamak için bu sınıfı da kullanabilirsiniz. Daha fazla bilgi için [Bellek Yönetimi ve CStringT'e](../../atl-mfc-shared/memory-management-with-cstringt.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsimpstr.h
+**Üstbilgi:** atlsimpstr.h
 
-##  <a name="allocate"></a>  IAtlStringMgr::Allocate
+## <a name="iatlstringmgrallocate"></a><a name="allocate"></a>IAtlStringMgr::Ayırma
 
 Yeni bir dize veri yapısı ayırır.
 
@@ -64,28 +64,28 @@ CStringData* Allocate(int nAllocLength,int nCharSize) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nAllocLength*<br/>
-Yeni bellek bloğu karakterlerin sayısı.
+Yeni bellek bloğundaki karakter sayısı.
 
 *nCharSize*<br/>
-Dize Yöneticisi tarafından kullanılan karakter türü boyutu (bayt cinsinden).
+Dize yöneticisi tarafından kullanılan karakter türünün boyutu (baytlarda).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni ayrılan bellek bloğu için bir işaretçi döndürür.
+Bir işaretçiyi yeni ayrılan bellek bloğuna döndürür.
 
 > [!NOTE]
->  Hatalı bir ayırma, bir özel durum tarafından sinyal. Bunun yerine, hatalı bir ayırma NULL tarafından didsignal.
+> Bir özel durum oluşturarak başarısız bir ayırma sinyali yapmayın. Bunun yerine, null döndürerek başarısız bir ayırma sinyali verilmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı [IAtlStringMgr::Free](#free) veya [IAtlStringMgr::ReAllocate](#reallocate) bu yöntem tarafından ayrılan bellek boşaltmak için.
+Çağrı [IAtlStringMgr::Ücretsiz](#free) veya [IAtlStringMgr::Bu](#reallocate) yöntem tarafından ayrılan belleği serbest leştirmek için yeniden ayırın.
 
 > [!NOTE]
->  Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+> Kullanım örnekleri için [bkz.](../../atl-mfc-shared/memory-management-with-cstringt.md)
 
-##  <a name="clone"></a>  IAtlStringMgr::Clone
+## <a name="iatlstringmgrclone"></a><a name="clone"></a>IAtlStringMgr::Klon
 
-Başka bir örneği ile kullanmak için yeni bir dize Yöneticisi için bir işaretçi döndürür `CSimpleStringT`.
+Başka bir örnekle kullanılmak üzere yeni bir `CSimpleStringT`dize yöneticisine bir işaretçi döndürür.
 
 ```
 IAtlStringMgr* Clone() throw();
@@ -93,20 +93,20 @@ IAtlStringMgr* Clone() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir kopyasını döndürür `IAtlStringMgr` nesne.
+Nesnenin bir `IAtlStringMgr` kopyasını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yaygın olarak dize Yöneticisi için yeni bir dize gerektiğinde framework tarafından çağırılır. Çoğu durumda **bu** işaretçi döndürülür.
+Yeni bir dize için bir dize yöneticisi gerektiğinde genellikle çerçeve tarafından çağrılır. Çoğu durumda, **bu** işaretçi döndürülür.
 
-Ancak, birden fazla örneği tarafından kullanılan bellek yöneticisi desteklemiyorsa, `CSimpleStringT`, paylaşılabilir dize Yöneticisi için bir işaretçi döndürdü.
+Ancak, bellek yöneticisi birden çok örnek tarafından kullanılmasını `CSimpleStringT`desteklemiyorsa, sharable dize yöneticisiiçin bir işaretçi döndürülmelidir.
 
 > [!NOTE]
->  Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+> Kullanım örnekleri için [bkz.](../../atl-mfc-shared/memory-management-with-cstringt.md)
 
-##  <a name="free"></a>  IAtlStringMgr::Free
+## <a name="iatlstringmgrfree"></a><a name="free"></a>IAtlStringMgr::Ücretsiz
 
-Dize veri yapısı serbest bırakır.
+Dize veri yapısını boşaltıyor.
 
 ```
 void Free(CStringData* pData) throw();
@@ -114,19 +114,19 @@ void Free(CStringData* pData) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pData*<br/>
-Serbest bırakılacak bellek bloğu için bir işaretçi.
+*Pdata*<br/>
+Serbest bırakılacak bellek bloğuna işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen bellek bloğu tarafından önceden ayrılan serbest bırakan [ayırma](#allocate) veya [yeniden tahsis](../../atl/reference/iatlmemmgr-class.md#reallocate).
+Daha önce [Ayırma](#allocate) veya [Tahsis'le](../../atl/reference/iatlmemmgr-class.md#reallocate)ayrılan belirtilen bellek bloğunu boşaltıyor.
 
 > [!NOTE]
->  Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+> Kullanım örnekleri için [bkz.](../../atl-mfc-shared/memory-management-with-cstringt.md)
 
-##  <a name="getnilstring"></a>  IAtlStringMgr::GetNilString
+## <a name="iatlstringmgrgetnilstring"></a><a name="getnilstring"></a>IAtlStringMgr::GetNilString
 
-Dize veri yapısı boş bir dize için bir işaretçi döndürür.
+Boş bir dize için bir işaretçiyi dize veri yapısına döndürür.
 
 ```
 CStringData* GetNilString() throw();
@@ -134,21 +134,21 @@ CStringData* GetNilString() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi `CStringData` boş bir dize temsil etmek için kullanılan nesne.
+Boş bir `CStringData` dizeyi temsil etmek için kullanılan nesneye işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Boş bir dize temsilini döndürün için bu işlevi çağırın.
+Boş bir dize temsili dönmek için bu işlevi çağırın.
 
 > [!NOTE]
-> Bu işlev bir özel dize Yöneticisi'ni hayata geçirirken, hiçbir zaman başarısız olmalıdır. Bu örneği ekleyerek garanti `CNilStringData` dize manager sınıfı ve söz konusu örneğine bir işaretçi döndürür.
+> Özel bir dize yöneticisi uygularken, bu işlev hiçbir zaman başarısız olmamalıdır. Bunu, dize yöneticisi sınıfına `CNilStringData` bir örnek katıştırarak sağlayabilir ve bu örne bir işaretçi döndürebilirsiniz.
 
 > [!NOTE]
-> Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+> Kullanım örnekleri için [bkz.](../../atl-mfc-shared/memory-management-with-cstringt.md)
 
-## <a name="reallocate"></a>  IAtlStringMgr::Reallocate
+## <a name="iatlstringmgrreallocate"></a><a name="reallocate"></a>IAtlStringMgr::Yeniden tahsis
 
-Dize veri yapısı yeniden ayırır.
+Dize veri yapısını yeniden tahsis eder.
 
 ```
 CStringData* Reallocate(
@@ -159,29 +159,29 @@ CStringData* Reallocate(
 
 ### <a name="parameters"></a>Parametreler
 
-*pData*<br/>
-Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
+*Pdata*<br/>
+Bu bellek yöneticisi tarafından daha önce ayrılan belleğe işaretçi.
 
 *nAllocLength*<br/>
-Yeni bellek bloğu karakterlerin sayısı.
+Yeni bellek bloğundaki karakter sayısı.
 
 *nCharSize*<br/>
-Dize Yöneticisi tarafından kullanılan karakter türü boyutu (bayt cinsinden).
+Dize yöneticisi tarafından kullanılan karakter türünün boyutu (baytlarda).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni ayrılan bellek bloğu başlangıcı için bir işaretçi döndürür.
+Yeni ayrılan bellek bloğunun başlangıcına bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Mevcut bellek bloğu tarafından belirtilen yeniden boyutlandırmak için bu işlevi çağırın *pData*.
+*pData*tarafından belirtilen varolan bellek bloğunu yeniden boyutlandırmak için bu işlevi arayın.
 
-Çağrı [IAtlStringMgr::Free](#free) bu yöntem tarafından ayrılan bellek boşaltmak için.
+Çağrı [IAtlStringMgr::Bu](#free) yöntem tarafından ayrılan belleği serbest ücretsiz.
 
 > [!NOTE]
-> Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+> Kullanım örnekleri için [bkz.](../../atl-mfc-shared/memory-management-with-cstringt.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
+[ATL/MFC Paylaşılan Sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)

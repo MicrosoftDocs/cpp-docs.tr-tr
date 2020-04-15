@@ -1,5 +1,5 @@
 ---
-title: CSnapInPropertyPageImpl sınıfı
+title: CSnapInPropertyPageImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSnapInPropertyPageImpl
@@ -25,19 +25,19 @@ helpviewer_keywords:
 - property pages, ATL
 - CSnapInPropertyPageImpl class
 ms.assetid: 75bdce5a-985e-4166-bd44-493132e023c4
-ms.openlocfilehash: abf4cf5804f6ef7335192feb298f1a4a06f841e4
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ae64c212520510a443fbb2b8adc99243e8f8843a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496393"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330695"
 ---
-# <a name="csnapinpropertypageimpl-class"></a>CSnapInPropertyPageImpl sınıfı
+# <a name="csnapinpropertypageimpl-class"></a>CSnapInPropertyPageImpl Sınıfı
 
-Bu sınıf, bir ek bileşen özellik sayfası nesnesi uygulamak için yöntemler sağlar.
+Bu sınıf, bir yapışma özelliği sayfası nesnesi uygulamak için yöntemler sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,37 +49,37 @@ CSnapInPropertyPageImpl : public CDialogImplBase
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSnapInPropertyPageImpl:: CSnapInPropertyPageImpl](#csnapinpropertypageimpl)|Oluşturucu.|
+|[CSnapInPropertyPageImpl::CSnapInPropertyPageImpl](#csnapinpropertypageimpl)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSnapInPropertyPageImpl:: CancelToClose](#canceltoclose)|**Tamam** ve **iptal** düğmelerinin durumunu değiştirir.|
-|[CSnapInPropertyPageImpl:: Create](#create)|Yeni oluşturulan `CSnapInPropertyPageImpl` bir nesneyi başlatır.|
-|[CSnapInPropertyPageImpl:: OnApply](#onapply)|Kullanıcı, sihirbaz türü özellik sayfası kullanırken **Şimdi Uygula** düğmesine tıkladığında Framework tarafından çağırılır.|
-|[CSnapInPropertyPageImpl:: OnHelp](#onhelp)|Kullanıcı, sihirbaz türü özellik sayfası kullanırken **Yardım** düğmesine tıkladığında Framework tarafından çağırılır.|
-|[CSnapInPropertyPageImpl:: OnKillActive](#onkillactive)|Geçerli sayfa artık etkin olmadığında Framework tarafından çağırılır.|
-|[CSnapInPropertyPageImpl:: OnQueryCancel](#onquerycancel)|Kullanıcı **iptal** düğmesine tıkladığında ve iptal gerçekleşmeden önce Framework tarafından çağırılır.|
-|[CSnapInPropertyPageImpl:: OnReset](#onreset)|Kullanıcı, sihirbaz türü özellik sayfası kullanırken **sıfırlama** düğmesine tıkladığında Framework tarafından çağırılır.|
-|[CSnapInPropertyPageImpl:: OnSetActive](#onsetactive)|Geçerli sayfa etkin hale geldiğinde Framework tarafından çağırılır.|
-|[CSnapInPropertyPageImpl:: OnWizardBack](#onwizardback)|Kullanıcı bir sihirbaz türü özellik sayfası kullanırken **geri** düğmesine tıkladığında Framework tarafından çağırılır.|
-|[CSnapInPropertyPageImpl:: Onwizardtamamlaya](#onwizardfinish)|Kullanıcı, sihirbaz türü özellik sayfası kullanırken **son** düğmesine tıkladığında Framework tarafından çağırılır.|
-|[CSnapInPropertyPageImpl:: OnWizardNext](#onwizardnext)|Kullanıcı bir sihirbaz türü özellik sayfası kullanırken **İleri** düğmesine tıkladığında Framework tarafından çağırılır.|
-|[CSnapInPropertyPageImpl:: Queryeşdüzey değerleri](#querysiblings)|Geçerli iletiyi Özellik sayfasının tüm sayfalarına iletir.|
-|[CSnapInPropertyPageImpl:: SetModified](#setmodified)|**Şimdi Uygula** düğmesini etkinleştirmek veya devre dışı bırakmak için çağırın.|
+|[CSnapInPropertyPageImpl::CancelToClose](#canceltoclose)|**Tamam** ve **İptal** düğmelerinin durumunu değiştirir.|
+|[CSnapInPropertyPageImpl::Oluştur](#create)|Yeni oluşturulan bir `CSnapInPropertyPageImpl` nesneyi başharfe ait hale leştirir.|
+|[CSnapInPropertyPageImpl::OnApply](#onapply)|Kullanıcı sihirbaz türünde bir özellik sayfası kullanırken **Şimdi Uygula** düğmesini tıklattığında çerçeve tarafından çağrılır.|
+|[CSnapInPropertyPageImpl::OnHelp](#onhelp)|Kullanıcı sihirbaz türünde bir özellik sayfası kullanırken **Yardım** düğmesini tıklattığında çerçeve tarafından çağrılır.|
+|[CSnapInPropertyPageImpl::OnKillActive](#onkillactive)|Geçerli sayfa artık etkin olmadığında çerçeve tarafından çağrılır.|
+|[CSnapInPropertyPageImpl::OnQueryCancel](#onquerycancel)|Kullanıcı **İptal** düğmesini tıklattığında ve iptal gerçekleşmeden önce çerçeve tarafından çağrılır.|
+|[CSnapInPropertyPageImpl::OnReset](#onreset)|Kullanıcı sihirbaz türünde bir özellik sayfası kullanırken **Sıfırla** düğmesini tıklattığında çerçeve tarafından çağrılır.|
+|[CSnapInPropertyPageImpl::OnSetActive](#onsetactive)|Geçerli sayfa etkin olduğunda çerçeve tarafından çağrılır.|
+|[CSnapInPropertyPageImpl::OnWizardBack](#onwizardback)|Kullanıcı sihirbaz türünde bir özellik sayfası kullanırken **Geri düğmesini** tıklattığında çerçeve tarafından çağrılır.|
+|[CSnapInPropertyPageImpl::OnWizardFinish](#onwizardfinish)|Kullanıcı sihirbaz türünde bir özellik sayfası kullanırken **Finish** düğmesini tıklattığında çerçeve tarafından çağrılır.|
+|[CSnapInPropertyPageImpl::OnWizardNext](#onwizardnext)|Kullanıcı sihirbaz türünde bir özellik sayfası kullanırken **İleri** düğmesini tıklattığında çerçeve tarafından çağrılır.|
+|[CSnapInPropertyPageImpl::QuerySiblings](#querysiblings)|Geçerli iletiyi özellik sayfasının tüm sayfalarına iletir.|
+|[CSnapInPropertyPageImpl::SetModi](#setmodified)|**Şimdi Uygula** düğmesini etkinleştirmek veya devre dışı bırakmak için arayın.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSnapInPropertyPageImpl:: m_psp](#m_psp)|Nesnesi tarafından kullanılan Windows `PROPSHEETPAGE` yapısı. `CSnapInPropertyPageImpl`|
+|[CSnapInPropertyPageImpl::m_psp](#m_psp)|Nesne `PROPSHEETPAGE` tarafından kullanılan Windows yapısı. `CSnapInPropertyPageImpl`|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CSnapInPropertyPageImpl`ek bileşen özellik sayfası nesnesi için temel bir uygulama sağlar. Ek bileşen özelliği sayfasının temel özellikleri birkaç farklı arabirim ve eşleme türü kullanılarak uygulanır.
+`CSnapInPropertyPageImpl`bir yapışma özelliği sayfası nesnesi için temel bir uygulama sağlar. Bir snap-in özellik sayfasının temel özellikleri birkaç farklı arabirim ve harita türleri kullanılarak uygulanır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -89,11 +89,11 @@ CSnapInPropertyPageImpl : public CDialogImplBase
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlsnap. h
+**Üstbilgi:** atlsnap.h
 
-##  <a name="canceltoclose"></a>CSnapInPropertyPageImpl:: CancelToClose
+## <a name="csnapinpropertypageimplcanceltoclose"></a><a name="canceltoclose"></a>CSnapInPropertyPageImpl::CancelToClose
 
-Kalıcı bir özellik sayfasının sayfasındaki verilerde kurtarılamaz bir değişiklik yapıldıktan sonra bu işlevi çağırın.
+Modal özellik sayfasının bir sayfasındaki verilerde kurtarılamaz bir değişiklik yapıldıktan sonra bu işlevi arayın.
 
 ```
 void CancelToClose();
@@ -101,13 +101,13 @@ void CancelToClose();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, **Kapat düğmesini kapatmak** ve **iptal** düğmesini devre dışı bırakmak için **Tamam** düğmesini değiştirecek. Bu değişiklik, kullanıcıyı bir değişikliğin kalıcı olduğunu ve değişikliklerin iptal edilemez olduğunu uyarır.
+Bu işlev **Tamam** düğmesini **Kapat** düğmesine değiştirir ve **İptal** düğmesini devre dışı eder. Bu değişiklik, kullanıcıyı bir değişikliğin kalıcı olduğu ve değişikliklerin iptal edilemeyeceği konusunda uyarır.
 
-Kalıcı olmayan özellik sayfasında varsayılan olarak bir **iptal** düğmesi bulunmadığından, üyeişlevimodsuzbirözelliksayfasındahiçbirşeyyapmaz.`CancelToClose`
+Modeless özellik sayfasında varsayılan olarak `CancelToClose` **İptal** düğmesi olmadığından, üye işlev modeless özellik sayfasında hiçbir şey yapmaz.
 
-##  <a name="csnapinpropertypageimpl"></a>CSnapInPropertyPageImpl:: CSnapInPropertyPageImpl
+## <a name="csnapinpropertypageimplcsnapinpropertypageimpl"></a><a name="csnapinpropertypageimpl"></a>CSnapInPropertyPageImpl::CSnapInPropertyPageImpl
 
-Bir `CSnapInPropertyPageImpl` nesnesi oluşturur.
+Bir `CSnapInPropertyPageImpl` nesne inşa eder.
 
 ```
 CSnapInPropertyPageImpl(LPCTSTR lpszTitle = NULL);
@@ -116,15 +116,15 @@ CSnapInPropertyPageImpl(LPCTSTR lpszTitle = NULL);
 ### <a name="parameters"></a>Parametreler
 
 *lpszTitle*<br/>
-'ndaki Özellik sayfasının başlığı.
+[içinde] Özellik sayfasının başlığı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel yapıyı başlatmak için [CSnapInPropertyPageImpl:: Create](#create)çağırın.
+Alttaki yapıyı başlatmak için [CSnapInPropertyPageImpl'i arayın::Oluştur](#create).
 
-##  <a name="create"></a>CSnapInPropertyPageImpl:: Create
+## <a name="csnapinpropertypageimplcreate"></a><a name="create"></a>CSnapInPropertyPageImpl::Oluştur
 
-Özellik sayfasının temel yapısını başlatmak için bu işlevi çağırın.
+Özellik sayfasının temel yapısını başlatmak için bu işlevi arayın.
 
 ```
 HPROPSHEETPAGE Create();
@@ -132,15 +132,15 @@ HPROPSHEETPAGE Create();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan Özellik sayfasının `PROPSHEETPAGE` özniteliklerini içeren bir yapıya yönelik bir tanıtıcı.
+Yeni oluşturulan `PROPSHEETPAGE` özellik sayfasının özniteliklerini içeren bir yapının tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi çağırmadan önce [CSnapInPropertyPageImpl:: CSnapInPropertyPageImpl](#csnapinpropertypageimpl) öğesini çağırmanız gerekir.
+Bu işlevi aramadan önce [CSnapInPropertyPageImpl::CSnapInPropertyPageImpl'i](#csnapinpropertypageimpl) aramalısınız.
 
-##  <a name="m_psp"></a>CSnapInPropertyPageImpl:: m_psp
+## <a name="csnapinpropertypageimplm_psp"></a><a name="m_psp"></a>CSnapInPropertyPageImpl::m_psp
 
-`m_psp`üyeleri, özelliklerini `PROPSHEETPAGE`depolayan bir yapıdır.
+`m_psp`üyelerinin özelliklerini depolayan bir `PROPSHEETPAGE`yapıdır.
 
 ```
 PROPSHEETPAGE m_psp;
@@ -148,13 +148,13 @@ PROPSHEETPAGE m_psp;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir özellik sayfasının oluşturulduktan sonra görünümünü başlatmak için bu yapıyı kullanın.
+Bir özellik sayfasının oluşturulduktan sonra görünümünü başlatmayı sağlamak için bu yapıyı kullanın.
 
-Üyelerinin bir listesi de dahil olmak üzere bu yapı hakkında daha fazla bilgi için, Windows SDK [propsheetpage sayfasına](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v3) bakın.
+Üyelerinin listesi de dahil olmak üzere bu yapı hakkında daha fazla bilgi için Windows SDK'daki [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v3) sayfasına bakın.
 
-##  <a name="onapply"></a>CSnapInPropertyPageImpl:: OnApply
+## <a name="csnapinpropertypageimplonapply"></a><a name="onapply"></a>CSnapInPropertyPageImpl::OnApply
 
-Bu üye işlevi, Kullanıcı **Tamam** ' a veya **Şimdi Uygula** düğmesine tıkladığında çağrılır.
+Kullanıcı **Tamam** veya **Şimdi Uygula** düğmesini tıklattığında bu üye işlev çağrılır.
 
 ```
 BOOL OnApply();
@@ -162,19 +162,19 @@ BOOL OnApply();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değişiklikler kabul edilirse sıfır dışı; Aksi takdirde 0.
+Değişiklikler kabul edilirse sıfır olmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework `OnApply` tarafından çağrılabilmesi için önce çağrılmalıdır `SetModified` parametresini true olarak ayarlamanız gerekir. Bu işlem, Kullanıcı Özellik sayfasında bir değişiklik yaptığında **Şimdi Uygula** düğmesini etkinleştirir.
+Çerçeve `OnApply` tarafından çağrılmadan önce, parametresini arayıp `SetModified` TRUE olarak ayarlamış olmalısınız. Bu, kullanıcı özellik sayfasında değişiklik yapar etmez **Şimdi Uygula** düğmesini etkinleştirecektir.
 
-Kullanıcı **Şimdi Uygula** düğmesine tıkladığında programınızın hangi eyleme uygulanacağını belirtmek için bu üye işlevi geçersiz kılın. Geçersiz kıldığınızda, değişikliklerin etkili olmasını engellemek için, işlevi değişiklikleri kabul etmek için TRUE, FALSE değerini döndürmelidir.
+Kullanıcı **Şimdi Uygula** düğmesini tıklattığında programınızın hangi eylemi yaptığını belirtmek için bu üye işlevini geçersiz kılın. Geçersiz kılınırken, işlev değişiklikleri kabul etmek için TRUE ve değişikliklerin etkili olmasını önlemek için FALSE döndürmelidir.
 
-Varsayılan uygulama `OnApply` , true döndürür.
+True döndürür `OnApply` varsayılan uygulaması.
 
-##  <a name="onhelp"></a>CSnapInPropertyPageImpl:: OnHelp
+## <a name="csnapinpropertypageimplonhelp"></a><a name="onhelp"></a>CSnapInPropertyPageImpl::OnHelp
 
-Bu üye işlevi, Kullanıcı özellik sayfası için **Yardım** düğmesine tıkladığında çağrılır.
+Kullanıcı özellik sayfası için **Yardım** düğmesini tıklattığında bu üye işlev çağrılır.
 
 ```
 void OnHelp();
@@ -182,11 +182,11 @@ void OnHelp();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellik sayfası için Yardımı göstermek üzere bu üye işlevini geçersiz kılın.
+Özellik sayfası için yardım görüntülemek için bu üye işlevini geçersiz kılın.
 
-##  <a name="onkillactive"></a>CSnapInPropertyPageImpl:: OnKillActive
+## <a name="csnapinpropertypageimplonkillactive"></a><a name="onkillactive"></a>CSnapInPropertyPageImpl::OnKillActive
 
-Bu üye işlevi, sayfa artık etkin sayfa olmadığında çağrılır.
+Bu üye işlev, sayfa artık etkin sayfa olmadığında çağrılır.
 
 ```
 BOOL OnKillActive();
@@ -194,15 +194,15 @@ BOOL OnKillActive();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Veriler başarıyla güncellendiyse sıfır dışı; Aksi takdirde 0.
+Veriler başarıyla güncelleştirildiyse sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel veri doğrulama görevlerini gerçekleştirmek için bu üye işlevini geçersiz kılın.
+Özel veri doğrulama görevleri gerçekleştirmek için bu üye işlevi geçersiz kılın.
 
-##  <a name="onquerycancel"></a>CSnapInPropertyPageImpl:: OnQueryCancel
+## <a name="csnapinpropertypageimplonquerycancel"></a><a name="onquerycancel"></a>CSnapInPropertyPageImpl::OnQueryCancel
 
-Bu üye işlevi, Kullanıcı **iptal** düğmesine tıkladığında ve iptal etme eylemi gerçekleşmeden önce çağrılır.
+Bu üye işlevi, kullanıcı **İptal** düğmesini tıklattığında ve iptal eylemi gerçekleşmeden önce çağrılır.
 
 ```
 BOOL OnQueryCancel();
@@ -210,17 +210,17 @@ BOOL OnQueryCancel();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İptal işlemine izin vermek için sıfır dışında; Aksi takdirde 0.
+İptal işlemine izin vermek için sıfır olmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı **iptal** düğmesine tıkladığında programın yapacağı bir eylem belirtmek için bu üye işlevi geçersiz kılın.
+Kullanıcı **İptal** düğmesini tıklattığında programın aldığı bir eylemi belirtmek için bu üye işlevini geçersiz kılın.
 
-Varsayılan uygulama `OnQueryCancel` , true döndürür.
+True döndürür `OnQueryCancel` varsayılan uygulaması.
 
-##  <a name="onreset"></a>CSnapInPropertyPageImpl:: OnReset
+## <a name="csnapinpropertypageimplonreset"></a><a name="onreset"></a>CSnapInPropertyPageImpl::OnReset
 
-Bu üye işlevi, Kullanıcı **iptal** düğmesine tıkladığında çağrılır.
+Kullanıcı **İptal** düğmesini tıklattığında bu üye işlev çağrılır.
 
 ```
 void OnReset();
@@ -228,13 +228,13 @@ void OnReset();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev çağrıldığında, Kullanıcı tarafından daha önce **Uygula** düğmesine tıklanacak olan tüm özellik sayfalarında yapılan değişiklikler atılır ve özellik sayfası odağı korur.
+Bu işlev çağrıldığında, kullanıcı tarafından daha önce **Şimdi Uygula** düğmesini tıklatarak yapılan tüm özellik sayfalarındayapılan değişiklikler atılır ve özellik sayfası odağı korur.
 
-Kullanıcı **iptal** düğmesine tıkladığında programın hangi eylemi aldığını belirtmek için bu üye işlevi geçersiz kılın.
+Kullanıcı **İptal** düğmesini tıklattığında programın hangi eylemi yaptığını belirtmek için bu üye işlevini geçersiz kılın.
 
-##  <a name="onsetactive"></a>CSnapInPropertyPageImpl:: OnSetActive
+## <a name="csnapinpropertypageimplonsetactive"></a><a name="onsetactive"></a>CSnapInPropertyPageImpl::OnSetActive
 
-Bu üye işlevi, sayfa Kullanıcı tarafından seçildiğinde çağrılır ve etkin sayfa olur.
+Bu üye işlev, sayfa kullanıcı tarafından seçildiğinde ve etkin sayfa olduğunda çağrılır.
 
 ```
 BOOL OnSetActive();
@@ -242,17 +242,17 @@ BOOL OnSetActive();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sayfa başarıyla etkin ayarlandıysa sıfır dışı; Aksi takdirde 0.
+Sayfa başarıyla etkin olarak ayarlanmışsa sıfır olmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sayfa etkinleştirildiğinde görevleri gerçekleştirmek için bu üye işlevini geçersiz kılın. Bu üye işlevin geçersiz kılınması, diğer herhangi bir işlem yapılmadan önce varsayılan sürümü çağırmalıdır.
+Bir sayfa etkinleştirildiğinde görevleri gerçekleştirmek için bu üye işlevi geçersiz kılın. Bu üye işlevin geçersiz kılınması, başka bir işlem yapılmadan önce varsayılan sürümü aramalıdır.
 
-Varsayılan uygulama TRUE değerini döndürür.
+Varsayılan uygulama TRUE döndürür.
 
-##  <a name="onwizardback"></a>CSnapInPropertyPageImpl:: OnWizardBack
+## <a name="csnapinpropertypageimplonwizardback"></a><a name="onwizardback"></a>CSnapInPropertyPageImpl::OnWizardBack
 
-Bu üye işlevi, Kullanıcı bir sihirbazda **geri** düğmesine tıkladığında çağrılır.
+Bu üye işlev, kullanıcı bir sihirbazda **Geri Düğmesini** tıklattığında çağrılır.
 
 ```
 BOOL OnWizardBack();
@@ -260,19 +260,19 @@ BOOL OnWizardBack();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-- önceki sayfaya otomatik olarak ilerlemek için 0.
+- 0 otomatik olarak önceki sayfaya ilerlemek için.
 
-- -1 sayfanın değiştirilmesini engellemek için.
+- -1 sayfanın değişmesini önlemek için.
 
-Sonraki bir sayfaya geçmek için, görüntülenecek iletişim kutusunun tanımlayıcısını döndürün.
+Bir sonrakisayfadan başka bir sayfaya atlamak için, görüntülenecek iletişim kutusunun tanımlayıcısını döndürün.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Geri** düğmesine tıklandığında kullanıcının yapması gereken eylemi belirtmek için bu üye işlevi geçersiz kılın.
+**Geri** düğmesine tıklandığında kullanıcının yapması gereken bazı eylemlerbelirtmek için bu üye işlevini geçersiz kılın.
 
-##  <a name="onwizardfinish"></a>CSnapInPropertyPageImpl:: Onwizardtamamlaya
+## <a name="csnapinpropertypageimplonwizardfinish"></a><a name="onwizardfinish"></a>CSnapInPropertyPageImpl::OnWizardFinish
 
-Bu üye işlevi, Kullanıcı sihirbazın **son** düğmesine tıkladığında çağrılır.
+Kullanıcı bir sihirbazda **Finish** düğmesini tıklattığında bu üye işlev çağrılır.
 
 ```
 BOOL OnWizardFinish();
@@ -280,15 +280,15 @@ BOOL OnWizardFinish();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sihirbaz tamamlandığında Özellik sayfası yok edildiğinde sıfır dışında; Aksi halde sıfır.
+Sihirbaz bittiğinde özellik sayfası yok edilirse sıfırolmayan; aksi takdirde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Son** düğmesine tıklandığında kullanıcının yapması gereken eylemi belirtmek için bu üye işlevi geçersiz kılın.
+**Bitiş** düğmesi tıklatıldığında kullanıcının yapması gereken bazı eylemlerbelirtmek için bu üye işlevini geçersiz kılın.
 
-##  <a name="onwizardnext"></a>CSnapInPropertyPageImpl:: OnWizardNext
+## <a name="csnapinpropertypageimplonwizardnext"></a><a name="onwizardnext"></a>CSnapInPropertyPageImpl::OnWizardNext
 
-Bu üye işlevi, Kullanıcı bir sihirbazda **İleri** düğmesine tıkladığında çağrılır.
+Bu üye işlev, kullanıcı bir sihirbazda **İleri** düğmesini tıklattığında çağrılır.
 
 ```
 BOOL OnWizardNext();
@@ -296,19 +296,19 @@ BOOL OnWizardNext();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-- sonraki sayfaya otomatik olarak ilerlemek için 0.
+- 0 otomatik olarak bir sonraki sayfaya ilerlemek için.
 
-- -1 sayfanın değiştirilmesini engellemek için.
+- -1 sayfanın değişmesini önlemek için.
 
-Sonraki bir sayfaya geçmek için, görüntülenecek iletişim kutusunun tanımlayıcısını döndürün.
+Bir sonrakisayfadan başka bir sayfaya atlamak için, görüntülenecek iletişim kutusunun tanımlayıcısını döndürün.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**İleri** düğmesine tıklandığında kullanıcının yapması gereken eylemi belirtmek için bu üye işlevi geçersiz kılın.
+**İleri** düğmesine tıklandığında kullanıcının yapması gereken bazı eylemlerbelirtmek için bu üye işlevini geçersiz kılın.
 
-##  <a name="querysiblings"></a>CSnapInPropertyPageImpl:: Queryeşdüzey değerleri
+## <a name="csnapinpropertypageimplquerysiblings"></a><a name="querysiblings"></a>CSnapInPropertyPageImpl::QuerySiblings
 
-Özellik sayfasındaki her sayfaya bir ileti iletmek için bu üye işlevini çağırın.
+Özellik sayfasındaki her sayfaya bir ileti iletmek için bu üye işlevini arayın.
 
 ```
 LRESULT QuerySiblings(WPARAM wParam, LPARAM lParam);
@@ -316,23 +316,23 @@ LRESULT QuerySiblings(WPARAM wParam, LPARAM lParam);
 
 ### <a name="parameters"></a>Parametreler
 
-*wParam*<br/>
-'ndaki İleti ile bağımlı ek bilgileri belirtir.
+*Wparam*<br/>
+[içinde] İletiye bağımlı ek bilgileri belirtir.
 
-*lParam*<br/>
-'ndaki İleti ile bağımlı ek bilgileri belirtir.
+*Lparam*<br/>
+[içinde] İletiye bağımlı ek bilgileri belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti bir sonraki özellik sayfasına iletilmemelidir. Aksi halde sıfır.
+İleti bir sonraki özellik sayfasına iletilmezse sıfıra inmez; aksi takdirde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sayfa sıfır dışında bir değer döndürürse, özellik sayfası iletiyi sonraki sayfalara göndermez.
+Bir sayfa sıfır olmayan bir değer döndürürse, özellik sayfası iletiyi sonraki sayfalara göndermez.
 
-##  <a name="setmodified"></a>CSnapInPropertyPageImpl:: SetModified
+## <a name="csnapinpropertypageimplsetmodified"></a><a name="setmodified"></a>CSnapInPropertyPageImpl::SetModi
 
-Özellik sayfasındaki ayarların uygun dış nesneye uygulanıp uygulanamayacağını temel alarak **Şimdi Uygula** düğmesini etkinleştirmek veya devre dışı bırakmak için bu üye işlevi çağırın.
+Özellik sayfasındaki ayarların uygun dış nesneye uygulanıp uygulanmayacağına bağlı olarak **Şimdi Uygula** düğmesini etkinleştirmek veya devre dışı etmek için bu üye işlevini arayın.
 
 ```
 void SetModified(BOOL bChanged = TRUE);
@@ -340,13 +340,13 @@ void SetModified(BOOL bChanged = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bChanged*<br/>
-'ndaki Özellik sayfası ayarlarının, son uygulanma zamanından bu yana değiştirildiğini belirtmek için TRUE; Özellik sayfası ayarlarının uygulandığını göstermek için FALSE veya yok sayılacak olmalıdır.
+*b Değiştirildi*<br/>
+[içinde] Özellik sayfası ayarlarının son uygulandığından beri değiştirildiğini belirtmek için TRUE; Özellik sayfası ayarlarının uygulandığını veya yoksayılması gerektiğini belirtmek için FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellik sayfası hangi sayfaların "kirli,", yani hangi özellik sayfaları `SetModified( TRUE )`olduğunu izler. Sayfadan birini çağırırsanız `SetModified( TRUE )` , **Şimdi Uygula** düğmesi her zaman etkinleştirilecek. Bir sayfadan birini çağırdığınızda `SetModified( FALSE )` , ancak yalnızca diğer sayfalardan hiçbiri "kirli" değilse, **Şimdi Uygula** düğmesi devre dışı bırakılır.
+Özellik sayfası, hangi sayfaların "kirli" olduğunu, yani çağırdığınız `SetModified( TRUE )`özellik sayfalarını izler. Sayfalardan birini ararsanız `SetModified( TRUE )` Şimdi **Uygula** düğmesi her zaman etkinleştirilir. **Şimdi Uygula** düğmesi, sayfalardan `SetModified( FALSE )` birini aradiğinizde, ancak diğer sayfaların hiçbiri "kirli" değilse devre dışı bırakılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: CSimpleMap sınıfı
+title: CSimpleMap Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSimpleMap
@@ -23,16 +23,16 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleMap class
 ms.assetid: 61b06eb4-ae73-44b0-a305-0afb5a33e8b1
-ms.openlocfilehash: afd9f017bb0fb9a95a0ed4fd135dcbd5ea4ddba2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8650f36ac3d190207870616754dcd596cb7cc45
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62277948"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330807"
 ---
-# <a name="csimplemap-class"></a>CSimpleMap sınıfı
+# <a name="csimplemap-class"></a>CSimpleMap Sınıfı
 
-Bu sınıf, bir basit eşleme dizisi için destek sağlar.
+Bu sınıf basit bir eşleme dizisi için destek sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,58 +43,58 @@ class CSimpleMap
 
 #### <a name="parameters"></a>Parametreler
 
-*TKey*<br/>
+*Tkey*<br/>
 Anahtar öğe türü.
 
 *TVal*<br/>
-Değer öğe türü.
+Değer öğesi türü.
 
 *TEqual*<br/>
-Türü öğeler için eşitlik testi tanımlamak bir nitelik nesnesi `T`.
+Tür `T`öğeleri için eşitlik testini tanımlayan bir özellik nesnesi.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Genel Typedefs
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSimpleMap::_ArrayElementType](#_arrayelementtype)|Değer türü için TypeDef.|
-|[CSimpleMap::_ArrayKeyType](#_arraykeytype)|Anahtar türü için TypeDef.|
+|[CSimpleMap::_ArrayElementType](#_arrayelementtype)|Değer türü için typedef.|
+|[CSimpleMap::_ArrayKeyType](#_arraykeytype)|Anahtar türü için typedef.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CSimpleMap::CSimpleMap](#csimplemap)|Oluşturucu.|
-|[CSimpleMap:: ~ CSimpleMap](#dtor)|Yıkıcı.|
+|[CSimpleMap::~CSimpleMap](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSimpleMap::Add](#add)|Harita diziye bir anahtar ve ilişkili değer ekler.|
-|[CSimpleMap::FindKey](#findkey)|Belirli bir anahtarın bulur.|
-|[CSimpleMap::FindVal](#findval)|Belirli bir değeri bulur.|
-|[CSimpleMap::GetKeyAt](#getkeyat)|Belirtilen anahtarı alır.|
-|[CSimpleMap::GetSize](#getsize)|Girdi sayısı'eşleme diziyi döndürür.|
-|[CSimpleMap::GetValueAt](#getvalueat)|Belirtilen değeri alır.|
-|[CSimpleMap::Lookup](#lookup)|Verilen anahtarla ilişkili değeri döndürür.|
-|[CSimpleMap::Remove](#remove)|Bir anahtar ve eşleşen değer kaldırır.|
+|[CSimpleMap::Ekle](#add)|Harita dizisine anahtar ve ilişkili değer ekler.|
+|[CSimpleMap::FindKey](#findkey)|Belirli bir anahtarı bulur.|
+|[CSimpleMap::Findval](#findval)|Belirli bir değeri bulur.|
+|[CSimpleMap::Getkeyat](#getkeyat)|Belirtilen anahtarı alır.|
+|[CSimpleMap::GetSize](#getsize)|Eşleme dizisindeki giriş sayısını döndürür.|
+|[CSimpleMap::GetValueat](#getvalueat)|Belirtilen değeri alır.|
+|[CSimpleMap::Arama](#lookup)|Verilen anahtarla ilişkili değeri verir.|
+|[CSimpleMap::Kaldır](#remove)|Bir anahtarı ve eşleşen değeri kaldırır.|
 |[CSimpleMap::RemoveAll](#removeall)|Tüm anahtarları ve değerleri kaldırır.|
-|[CSimpleMap::RemoveAt](#removeat)|Bir özel anahtar ve eşleşen değer kaldırır.|
-|[CSimpleMap::ReverseLookup](#reverselookup)|Verilen değer ile ilişkili anahtar döndürür.|
-|[CSimpleMap::SetAt](#setat)|Verilen anahtarla ilişkili değeri ayarlar.|
-|[CSimpleMap::SetAtIndex](#setatindex)|Özel anahtarı ve değeri ayarlar.|
+|[CSimpleMap::Removeat](#removeat)|Belirli bir anahtarı ve eşleşen değeri kaldırır.|
+|[CSimpleMap::ReverseLookup](#reverselookup)|Verilen değerle ilişkili anahtarı döndürür.|
+|[CSimpleMap::Setat](#setat)|Verilen anahtarla ilişkili değeri ayarlar.|
+|[CSimpleMap::Setatindex](#setatindex)|Belirli anahtarı ve değeri ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CSimpleMap` herhangi bir türü bir basit eşleme dizisi için destek sağlar `T`, sırasız bir dizi temel öğeleri ve ilişkili değerleri yönetme.
+`CSimpleMap`belirli bir türdeki `T`basit bir eşleme dizisi için destek sağlar, sıralanmamış bir anahtar öğe dizisini ve bunların ilişkili değerlerini yönetir.
 
-Parametre `TEqual` tanımlamanın iki türü öğeler için bir eşitlik işlevi sağlar `T`. Bir sınıf benzer oluşturarak [CSimpleMapEqualHelper](../../atl/reference/csimplemapequalhelper-class.md), verilen herhangi bir dizi için eşitlik testi davranışını değiştirmek mümkündür. Örneğin, bir işaretçiler dizisi ile ilgilenirken, bu değerlerin işaretçileri başvuran bağlı olarak bir eşitlik tanımlamak yararlı olabilir. Varsayılan uygulama yararlanan **operator==()**.
+Parametre, `TEqual` türiki `T`öğe için bir eşitlik işlevi tanımlama aracı sağlar. [CSimpleMapEqualHelper](../../atl/reference/csimplemapequalhelper-class.md)benzer bir sınıf oluşturarak, herhangi bir dizi için eşitlik testi davranışını değiştirmek mümkündür. Örneğin, bir işaretçi dizisiyle uğraşırken, eşitliği işaretçilerin başvurulan değerlerine bağlı olarak tanımlamak yararlı olabilir. Varsayılan uygulama **işleci kullanır==()**.
 
-Her ikisi de `CSimpleMap` ve [CSimpleArray](../../atl/reference/csimplearray-class.md) önceki ATL uyumluluğunu serbest bırakır ve daha eksiksiz ve verimli koleksiyon uygulamaları tarafından sağlanan için sağlanan [CAtlArray](../../atl/reference/catlarray-class.md) ve [ CAtlMap](../../atl/reference/catlmap-class.md).
+Hem `CSimpleMap` de [CSimpleArray](../../atl/reference/csimplearray-class.md) önceki ATL sürümleri ile uyumluluk için sağlanır ve daha eksiksiz ve verimli toplama uygulamaları [CAtlArray](../../atl/reference/catlarray-class.md) ve [CAtlMap](../../atl/reference/catlmap-class.md)tarafından sağlanır.
 
-Diğer eşleme koleksiyonları ATL ve MFC aksine bu sınıf, basit bir diziyle uygulanır ve arama aramaları doğrusal arama gerektirir. `CAtlMap` dizi çok sayıda öğe içerdiğinde kullanılmalıdır.
+ATL ve MFC'deki diğer harita koleksiyonlarının aksine, bu sınıf basit bir diziyle uygulanır ve arama aramaları doğrusal bir arama gerektirir. `CAtlMap`dizi çok sayıda öğe içerdiğinde kullanılmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -104,9 +104,9 @@ Diğer eşleme koleksiyonları ATL ve MFC aksine bu sınıf, basit bir diziyle u
 
 [!code-cpp[NVC_ATL_Utilities#91](../../atl/codesnippet/cpp/csimplemap-class_1.cpp)]
 
-##  <a name="add"></a>  CSimpleMap::Add
+## <a name="csimplemapadd"></a><a name="add"></a>CSimpleMap::Ekle
 
-Harita diziye bir anahtar ve ilişkili değer ekler.
+Harita dizisine anahtar ve ilişkili değer ekler.
 
 ```
 BOOL Add(const TKey& key, const TVal& val);
@@ -117,18 +117,18 @@ BOOL Add(const TKey& key, const TVal& val);
 *anahtar*<br/>
 Anahtar.
 
-*VAL*<br/>
+*Val*<br/>
 İlişkili değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anahtar ve değer Aksi halde başarıyla eklendi, FALSE ise TRUE döndürür.
+Anahtar ve değer başarıyla eklenmiştirsa TRUE döndürür, aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her anahtar ve değer çifti, serbest bırakılan ve için her biri için veriler her zaman bitişik depolanır emin olmak için bellek eşleme dizi nedenleri eklendi. Diğer bir deyişle, ikinci anahtar öğe her zaman doğrudan bellek ilk temel öğeyi vb. izler.
+Her anahtar ve değer çifti eklendi, her biri için verilerin her zaman bitişik olarak depolandığından emin olmak için eşleme dizisi belleğinin serbest bırakılabilmesini ve yeniden ayrılmasına neden olur. Diğer bir deyişle, ikinci anahtar öğesi her zaman doğrudan bellek ve benzeri ilk anahtar öğesi izler.
 
-##  <a name="_arrayelementtype"></a>  CSimpleMap::_ArrayElementType
+## <a name="csimplemap_arrayelementtype"></a><a name="_arrayelementtype"></a>CSimpleMap::_ArrayElementType
 
 Anahtar türü için bir typedef.
 
@@ -136,7 +136,7 @@ Anahtar türü için bir typedef.
 typedef TVal _ArrayElementType;
 ```
 
-##  <a name="_arraykeytype"></a>  CSimpleMap::_ArrayKeyType
+## <a name="csimplemap_arraykeytype"></a><a name="_arraykeytype"></a>CSimpleMap::_ArrayKeyType
 
 Değer türü için bir typedef.
 
@@ -144,7 +144,7 @@ Değer türü için bir typedef.
 typedef TKey _ArrayKeyType;
 ```
 
-##  <a name="csimplemap"></a>  CSimpleMap::CSimpleMap
+## <a name="csimplemapcsimplemap"></a><a name="csimplemap"></a>CSimpleMap::CSimpleMap
 
 Oluşturucu.
 
@@ -154,9 +154,9 @@ CSimpleMap();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri üyeleri başlatır.
+Veri üyelerini ilk olarak karşılar.
 
-##  <a name="dtor"></a>  CSimpleMap:: ~ CSimpleMap
+## <a name="csimplemapcsimplemap"></a><a name="dtor"></a>CSimpleMap::~CSimpleMap
 
 Yıkıcı.
 
@@ -166,11 +166,11 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan tüm kaynakları serbest bırakır.
+Ayrılan tüm kaynakları serbest sağlar.
 
-##  <a name="findkey"></a>  CSimpleMap::FindKey
+## <a name="csimplemapfindkey"></a><a name="findkey"></a>CSimpleMap::FindKey
 
-Belirli bir anahtarın bulur.
+Belirli bir anahtarı bulur.
 
 ```
 int FindKey(const TKey& key) const;
@@ -183,9 +183,9 @@ Aranacak anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İf anahtar dizini bulunamadı, döndürür, aksi takdirde -1 döndürür.
+Bulunursa anahtarın dizinini verir, aksi takdirde -1 döndürür.
 
-##  <a name="findval"></a>  CSimpleMap::FindVal
+## <a name="csimplemapfindval"></a><a name="findval"></a>CSimpleMap::Findval
 
 Belirli bir değeri bulur.
 
@@ -195,16 +195,16 @@ int FindVal(const TVal& val) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL*<br/>
+*Val*<br/>
 Aranacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bulunursa, değer dizinini yoksa -1 döndürür.
+Bulunursa değerin dizini döndürür, aksi takdirde -1 döndürür.
 
-##  <a name="getkeyat"></a>  CSimpleMap::GetKeyAt
+## <a name="csimplemapgetkeyat"></a><a name="getkeyat"></a>CSimpleMap::Getkeyat
 
-Belirtilen dizindeki bir anahtarı alır.
+Belirtilen dizindeki anahtarı alır.
 
 ```
 TKey& GetKeyAt(int nIndex) const;
@@ -212,20 +212,20 @@ TKey& GetKeyAt(int nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Anahtarı döndürülecek dizini.
+*Nındex*<br/>
+Döndürülecek anahtarın dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarafından başvurulan anahtarını döndürür *nIndex*.
+*nIndex*tarafından başvurulan anahtarı döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçirilen *nIndex* dönüş değeri anlamlı olacak şekilde geçerli olmalıdır.
+NIndex tarafından *nIndex* geçirilen dizin, iade değerinin anlamlı olması için geçerli olmalıdır.
 
-##  <a name="getsize"></a>  CSimpleMap::GetSize
+## <a name="csimplemapgetsize"></a><a name="getsize"></a>CSimpleMap::GetSize
 
-Girdi sayısı'eşleme diziyi döndürür.
+Eşleme dizisindeki giriş sayısını döndürür.
 
 ```
 int GetSize() const;
@@ -233,9 +233,9 @@ int GetSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşleme dizide (bir anahtarı ve değeri olan bir giriş) giriş sayısını döndürür.
+Eşleme dizisindeki giriş sayısını (anahtar ve değer bir giriştir) döndürür.
 
-##  <a name="getvalueat"></a>  CSimpleMap::GetValueAt
+## <a name="csimplemapgetvalueat"></a><a name="getvalueat"></a>CSimpleMap::GetValueat
 
 Belirli dizindeki değeri alır.
 
@@ -245,20 +245,20 @@ TVal& GetValueAt(int nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Döndürülecek değeri dizini.
+*Nındex*<br/>
+Döndürecek değerin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarafından başvurulan değer döndürür *nIndex*.
+*nIndex*tarafından başvurulan değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçirilen *nIndex* dönüş değeri anlamlı olacak şekilde geçerli olmalıdır.
+NIndex tarafından *nIndex* geçirilen dizin, iade değerinin anlamlı olması için geçerli olmalıdır.
 
-##  <a name="lookup"></a>  CSimpleMap::Lookup
+## <a name="csimplemaplookup"></a><a name="lookup"></a>CSimpleMap::Arama
 
-Verilen anahtarla ilişkili değeri döndürür.
+Verilen anahtarla ilişkili değeri verir.
 
 ```
 TVal Lookup(const TKey& key) const;
@@ -271,11 +271,11 @@ Anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlişkili değer döndürür. Eşleşen bir anahtar varsa bulunamadı, NULL döndürülür.
+İlişkili değeri verir. Eşleşen anahtar bulunmazsa NULL döndürülür.
 
-##  <a name="remove"></a>  CSimpleMap::Remove
+## <a name="csimplemapremove"></a><a name="remove"></a>CSimpleMap::Kaldır
 
-Bir anahtar ve eşleşen değer kaldırır.
+Bir anahtarı ve eşleşen değeri kaldırır.
 
 ```
 BOOL Remove(const TKey& key);
@@ -288,9 +288,9 @@ Anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anahtar ve eşleşen değer, aksi halde başarıyla kaldırıldı, FALSE ise TRUE döndürür.
+Anahtar ve eşleşen değer başarıyla kaldırıldıysa TRUE döndürür, aksi takdirde FALSE.
 
-##  <a name="removeall"></a>  CSimpleMap::RemoveAll
+## <a name="csimplemapremoveall"></a><a name="removeall"></a>CSimpleMap::RemoveAll
 
 Tüm anahtarları ve değerleri kaldırır.
 
@@ -300,11 +300,11 @@ void RemoveAll();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm anahtarları ve değerleri eşleme dizi nesnesinden kaldırır.
+Eşleme dizisi nesnesinden tüm anahtarları ve değerleri kaldırır.
 
-##  <a name="removeat"></a>  CSimpleMap::RemoveAt
+## <a name="csimplemapremoveat"></a><a name="removeat"></a>CSimpleMap::Removeat
 
-Bir anahtarı ve belirtilen dizine ilişkili değeri kaldırır.
+Belirtilen dizinde bir anahtar ve ilişkili değeri kaldırır.
 
 ```
 BOOL RemoveAt(int nIndex);
@@ -312,16 +312,16 @@ BOOL RemoveAt(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Dizin anahtarı ve kaldırmak için ilişkili değer.
+*Nındex*<br/>
+Kaldırılacak anahtar ve ilişkili değerin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen dizin geçersiz bir dizin ise FALSE başarılı olduğunda TRUE değerini döndürür.
+Belirtilen dizin geçersiz bir dizin ise başarı doğru, FALSE döndürür.
 
-##  <a name="reverselookup"></a>  CSimpleMap::ReverseLookup
+## <a name="csimplemapreverselookup"></a><a name="reverselookup"></a>CSimpleMap::ReverseLookup
 
-Verilen değer ile ilişkili anahtar döndürür.
+Verilen değerle ilişkili anahtarı döndürür.
 
 ```
 TKey ReverseLookup(const TVal& val) const;
@@ -329,14 +329,14 @@ TKey ReverseLookup(const TVal& val) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL*<br/>
+*Val*<br/>
 Değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlişkili anahtarını döndürür. Eşleşen bir anahtar varsa bulunamadı, NULL döndürülür.
+İlişkili anahtarı döndürür. Eşleşen anahtar bulunmazsa NULL döndürülür.
 
-##  <a name="setat"></a>  CSimpleMap::SetAt
+## <a name="csimplemapsetat"></a><a name="setat"></a>CSimpleMap::Setat
 
 Verilen anahtarla ilişkili değeri ayarlar.
 
@@ -349,16 +349,16 @@ BOOL SetAt(const TKey& key, const TVal& val);
 *anahtar*<br/>
 Anahtar.
 
-*VAL*<br/>
-Atanacak yeni değer.
+*Val*<br/>
+Atayacak yeni değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE anahtar bulundu ve değer, aksi halde başarıyla değiştirildi, FALSE değerini döndürür.
+Anahtar bulunursa ve değer başarıyla değiştirildiyse TRUE döndürür, aksi takdirde FALSE.
 
-##  <a name="setatindex"></a>  CSimpleMap::SetAtIndex
+## <a name="csimplemapsetatindex"></a><a name="setatindex"></a>CSimpleMap::Setatindex
 
-Belirtilen dizindeki bir anahtarı ve değeri ayarlar.
+Belirli bir dizinde anahtarı ve değeri ayarlar.
 
 ```
 BOOL SetAtIndex(
@@ -369,23 +369,23 @@ BOOL SetAtIndex(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Anahtar ve değer çifti değiştirmek için başvuran dizin.
+*Nındex*<br/>
+Dizin, anahtar ve değer eşleştirme değiştirmek için başvurur.
 
 *anahtar*<br/>
 Yeni anahtar.
 
-*VAL*<br/>
-Yeni değeri.
+*Val*<br/>
+Yeni değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU başarılı, yanlış dizini geçerli değil, döndürür.
+Dizin geçerli değilse doğru döndürür, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hem anahtar hem de işaret ettiği değer güncelleştirmeleri *nIndex*.
+*NIndex*tarafından işaret edilen hem anahtarı hem de değeri güncelleştirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

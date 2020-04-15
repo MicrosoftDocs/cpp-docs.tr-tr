@@ -1,11 +1,13 @@
 ---
 title: isspace, iswspace, _isspace_l, _iswspace_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - iswspace
 - _isspace_l
 - _iswspace_l
 - isspace
+- _o_isspace
+- _o_iswspace
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -19,6 +21,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -37,16 +40,16 @@ helpviewer_keywords:
 - _istspace function
 - istspace function
 ms.assetid: b851e0c0-36bb-4dac-a1a3-533540939035
-ms.openlocfilehash: b01aaf29ff0cd3994c45433db9ff0b9f4ca7481c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 43d66a191427e886941fd3dcac5dc6b71146b68a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70953641"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81342758"
 ---
 # <a name="isspace-iswspace-_isspace_l-_iswspace_l"></a>isspace, iswspace, _isspace_l, _iswspace_l
 
-Bir tamsayının bir boşluk karakterini temsil edip etmediğini belirler.
+Bir tamsedinbir boşluk karakterini temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,39 +72,43 @@ int _iswspace_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
-Sınanacak tamsayı.
+*C*<br/>
+Test etmek için sonda.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her biri, *c* , bir boşluk karakterinin belirli bir gösterimiyse sıfır olmayan bir değer döndürür. *c* , bir boşluk karakteri (0x09-0x0D veya 0x20) ise, **ısspace** sıfır dışında bir değer döndürür. **Isspace** işlevinin test koşulunun sonucu, yerel ayarın **LC_CTYPE** kategori ayarına bağlıdır; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip olan sürümler, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Bu yordamların her *biri, bir* boşluk karakterinin belirli bir temsili ise sıfırsız döndürür. **isspace,** *c* bir beyaz boşluk karakteriyse (0x09 - 0x0D veya 0x20) sıfır olmayan bir değer döndürür. **Isspace** işlevi için test koşulunun sonucu, LC_CTYPE **kategori** ayarlarına bağlıdır; daha fazla bilgi için [setlocale, _wsetlocale](setlocale-wsetlocale.md) bakın. **_l** soneki olmayan bu işlevlerin sürümleri, yerel çözüme bağlı herhangi bir davranış için geçerli yerel durumu kullanır; **_l** soneki olan sürümler, bunun yerine geçirilen yerel alanı kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-*c* , standart boşluk karakterine karşılık gelen geniş bir karakter ise, **ıswspace** sıfır dışında bir değer döndürür.
+**iswspace,** *standart* bir beyaz boşluk karakterine karşılık gelen geniş bir karakterse sıfır olmayan bir değer döndürür.
 
-*C* , EOF veya 0 ile 0xFF (dahil) arasında değilse, **ıspace** ve **_isspace_l** davranışı tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
+*c* EOF değilse veya 0 ile 0xFF aralığında, dahil ise **isspace** ve **_isspace_l** davranışı tanımsızdır. Hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir iddiayı yükseltir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_** **istspace**|**isspace**|[_ismbcspace](ismbcgraph-functions.md)|**iswspace**|
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isspace**|\<CType. h >|
-|**iswspace**|\<CType. h > veya \<wchar. h >|
-|**_isspace_l**|\<CType. h >|
-|**_iswspace_l**|\<CType. h > veya \<wchar. h >|
+|**isspace**|\<ctype.h>|
+|**iswspace**|\<ctype.h> \<veya wchar.h>|
+|**_isspace_l**|\<ctype.h>|
+|**_iswspace_l**|\<ctype.h> \<veya wchar.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter Sınıflaması](../../c-runtime-library/character-classification.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)<br/>
+[Karakter Sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[olduğunu, isw Rutinleri](../../c-runtime-library/is-isw-routines.md)<br/>

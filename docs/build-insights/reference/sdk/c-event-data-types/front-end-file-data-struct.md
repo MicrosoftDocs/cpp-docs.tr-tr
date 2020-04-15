@@ -1,6 +1,6 @@
 ---
 title: FRONT_END_FILE_DATA yapısı
-description: C++ Derleme ÖNGÖRÜLERI SDK FRONT_END_FILE_DATA yapısı başvurusu.
+description: C++ Build Insights SDK FRONT_END_FILE_DATA yapı referansı.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 33232a0f83566e58e64964e84961a7ade2de7b7c
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 7fb6b6fff4f309a3539a290f279d1e31cb1ed76b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333743"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81325546"
 ---
 # <a name="front_end_file_data-structure"></a>FRONT_END_FILE_DATA yapısı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`FRONT_END_FILE_DATA` yapısı, bir dosyanın derleyicinin ön ucuna göre işlenmesini açıklar.
+Yapı `FRONT_END_FILE_DATA` derleyici ön uç tarafından bir dosyanın işlenmesi açıklanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,6 +41,6 @@ typedef struct FRONT_END_FILE_DATA_TAG
 
 |  |  |
 |--|--|
-| `Path` | Dosyanın mutlak yolu UTF-8 olarak kodlanır. |
+| `Path` | Dosyanın mutlak yolu UTF-8'de kodlanmış. |
 
 ::: moniker-end

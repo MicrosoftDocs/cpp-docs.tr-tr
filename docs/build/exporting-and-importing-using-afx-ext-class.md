@@ -11,18 +11,18 @@ helpviewer_keywords:
 - executable files [C++], importing classes
 - exporting DLLs [C++], AFX_EXT_CLASS macro
 ms.assetid: 6b72cb2b-e92e-4ecd-bcab-c335e1d1cfde
-ms.openlocfilehash: bcfdc94e8db80daec227d77c20ecec6b14d5af11
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 95c72f8251a8a59833483eb948709c80a69d03d7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195335"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81328606"
 ---
-# <a name="exporting-and-importing-using-afxextclass"></a>AFX_EXT_CLASS Kullanarak İçeri ve Dışarı Aktarma
+# <a name="exporting-and-importing-using-afx_ext_class"></a>AFX_EXT_CLASS Kullanarak İçeri ve Dışarı Aktarma
 
-[MFC uzantı DLL'leri](extension-dlls-overview.md) makroyu kullanın **AFX_EXT_CLASS** sınıfları dışarı aktarmak için; sınıflarını içeri aktarmak için makro MFC uzantısı DLL için bağlama yürütülebilir dosyaları kullanın. İle **AFX_EXT_CLASS** makrosu, MFC uzantısı DLL için DLL'e yürütülebilir dosyaları ile kullanılabilir oluşturmak için kullanılan aynı üst bilgi dosyaları.
+[MFC uzantılı DL'ler](extension-dlls-overview.md) sınıfları dışa aktarmak için makro **AFX_EXT_CLASS** kullanır; MFC uzantısı DLL'ye bağlanan yürütülebilir uygulamalar, sınıfları almak için makroyu kullanır. Makro **AFX_EXT_CLASS** ile, MFC uzantısı DLL oluşturmak için kullanılan aynı üstbilgi dosyaları DLL bağlantı yürütülebilir ile kullanılabilir.
 
-DLL'niz üstbilgi dosyasına ekleyin **AFX_EXT_CLASS** sınıfının bildirimi aşağıdaki gibi anahtar:
+DLL'nizin üstbilgi dosyasına, AFX_EXT_CLASS **anahtar** sözcüğü sınıfınızın bildirimine aşağıdaki gibi ekleyin:
 
 ```cpp
 class AFX_EXT_CLASS CMyClass : public CDocument
@@ -31,11 +31,11 @@ class AFX_EXT_CLASS CMyClass : public CDocument
 };
 ```
 
-Bu makro MFC tarafından tanımlanan `__declspec(dllexport)` , önişlemci sembolleri `_AFXDLL` ve `_AFXEXT` tanımlanır. Ancak bir makro olarak tanımlı `__declspec(dllimport)` olduğunda `_AFXDLL` tanımlanır ve `_AFXEXT` tanımlı değil. Tanımlandığında, önişlemci sembolü `_AFXDLL` MFC'nin paylaşılan sürümünden hedef yürütülebilir (DLL ya da uygulama) tarafından kullanılmakta olduğunu gösterir. Her ikisi de `_AFXDLL` ve `_AFXEXT` olan tanımlanan, bu hedef çalıştırılabilir bir MFC uzantılı DLL olduğunu gösterir.
+Bu makro, MFC `__declspec(dllexport)` tarafından önişlemci `_AFXDLL` sembolleri olarak tanımlanır ve `_AFXEXT` tanımlanır. Ancak makro ne `__declspec(dllimport)` zaman `_AFXDLL` tanımlanır `_AFXEXT` ve tanımlanmaz olarak tanımlanır. Önişlemci simgesi `_AFXDLL` tanımlandığında, MFC'nin paylaşılan sürümünün yürütülebilir hedef tarafından kullanıldığını gösterir (DLL veya uygulama). Her `_AFXDLL` ikisi `_AFXEXT` de ve tanımlandığında, bu hedef yürütülebilir bir MFC uzantısı DLL olduğunu gösterir.
 
-Çünkü `AFX_EXT_CLASS` olarak tanımlanan `__declspec(dllexport)` bir MFC uzantılı DLL dışa aktarırken o sınıfın sembolleri düzenlenmiş adları .def dosyasına koymadan tüm sınıflar dışarı aktarabilirsiniz.
+MFC `AFX_EXT_CLASS` uzantısı `__declspec(dllexport)` DLL'den dışa aktarırken olarak tanımlandığınızda, bu sınıfın tüm simgelerinin dekore edilmiş adlarını .def dosyasına yerleştirmeden tüm sınıfları dışa aktarabilirsiniz.
 
-.Def dosyası ve tüm düzenlenmiş adları sınıfı için bu yöntemle oluşturmaktan kaçının olsa da, sıralı olarak adlarını alınabileceğinden .def dosyası oluşturmak daha etkilidir. Verme .def dosyası yöntemi kullanmak için aşağıdaki kodu, üst bilgi dosyası başında ve sonunda yerleştirin:
+Bu yöntemle bir .def dosyası ve sınıf için dekore edilmiş tüm adlar oluşturmaktan kaçınabilirsiniz, ancak adlar ordinal tarafından dışa aktarılabildiği için bir .def dosyası oluşturmak daha verimlidir. .def dosyası dışa aktarma yöntemini kullanmak için üstbilgi dosyanızın başına ve sonuna aşağıdaki kodu yerleştirin:
 
 ```cpp
 #undef AFX_DATA
@@ -46,11 +46,11 @@ Bu makro MFC tarafından tanımlanan `__declspec(dllexport)` , önişlemci sembo
 ```
 
 > [!CAUTION]
->  Sürüm çakışması olasılığı oluşturduğundan satır içi işlevleri dışa aktarırken dikkatli olun. Satır içi işlev, uygulama kodunda genişletilmiş; Daha sonra işlevi yeniden yazma, uygulamanın kendisi yeniden derlenen sürece bu nedenle, bu güncelleştirilmiyor. Normalde, DLL işlevleri, bunları kullanan uygulamalar yeniden derlenmeden güncelleştirilebilir.
+> Satır oluşturma işlevlerini dışa aktarırken dikkatli olun, çünkü sürüm çakışmaları olasılığını oluşturabilirler. Satır dışı bir işlev uygulama koduna genişletilir; bu nedenle, daha sonra işlevi yeniden yazarsanız, uygulamanın kendisi yeniden derlenmedikçe güncelleştirilmez. Normalde, DLL işlevleri bunları kullanan uygulamaları yeniden oluşturmadan güncellenebilir.
 
-## <a name="exporting-individual-members-in-a-class"></a>Bir sınıf içinde tek tek üyeleri dışa aktarma
+## <a name="exporting-individual-members-in-a-class"></a>Bir Sınıfta Bireysel Üye İhraç Etme
 
-Bazen tek tek üyeleri sınıfınızın vermek isteyebilirsiniz. Dışa aktarıyorsanız, örneğin, bir `CDialog`-türetilmiş sınıf, yalnızca Oluşturucu dışarı aktarmak gerekebilir ve `DoModal` çağırın. Kullanabileceğiniz `AFX_EXT_CLASS` dışarı aktarmak için gereken tek tek üyeleri üzerinde.
+Bazen sınıfınızın tek tek üyelerini dışa aktarmak isteyebilirsiniz. Örneğin, türetilmiş bir `CDialog`sınıf dışa aktarıyorsanız, yalnızca oluşturucuyu `DoModal` ve aramayı dışa aktarmanız gerekebilir. Dışa `AFX_EXT_CLASS` aktarmanız gereken tek tek üyeleri kullanabilirsiniz.
 
 Örneğin:
 
@@ -66,9 +66,9 @@ public:
 };
 ```
 
-Sınıfın tüm üyeleri artık dışarı aktardığınız olduğundan, ek bir sorunla karşılaşırsanız, MFC makroları çalışma şekli nedeniyle çalıştırabilirsiniz. Birkaç MFC'nin yardımcı makroları gerçekten bildirmek veya veri üyeleri tanımlar. Bu nedenle, bu veri üyeleri Ayrıca, DLL'den dışarı aktarılmalıdır.
+Artık sınıfın tüm üyelerini dışa aktarmamadığınız için, MFC makrolarının çalışma şekli nedeniyle ek bir sorunla karşılaşabilirsiniz. MFC'nin yardımcı makrolarından bazıları veri üyelerini gerçekten beyan eder veya tanımlar. Bu nedenle, bu veri üyeleri de DLL dışa aktarılmalıdır.
 
-Örneğin, `DECLARE_DYNAMIC` makro bir MFC uzantılı DLL oluşturma sırasında şu şekilde tanımlanır:
+Örneğin, `DECLARE_DYNAMIC` bir MFC uzantısı DLL inşa ederken makro aşağıdaki gibi tanımlanır:
 
 ```cpp
 #define DECLARE_DYNAMIC(class_name) \
@@ -79,7 +79,7 @@ public: \
    virtual CRuntimeClass* GetRuntimeClass() const; \
 ```
 
-Statik ile başlayan satırı `AFX_DATA` Sınıfınız içinde statik nesne bildirme. Bu sınıfı doğru olarak dışarı aktarın ve çalışma zamanı bilgileri yürütülebilir bir istemciden erişmek için bu statik nesne dışarı aktarmanız gerekir. Statik nesne değiştiriciyle bildirildiğinden `AFX_DATA`, tanımlamak yeterlidir `AFX_DATA` olmasını `__declspec(dllexport)` DLL dosyanızı oluştururken ve olarak tanımlayın `__declspec(dllimport)` istemcinizi yürütülebilir oluştururken. Çünkü `AFX_EXT_CLASS` zaten tanımlanmış bu şekilde, yeniden tanımlanacak yeterlidir `AFX_DATA` aynı olacak şekilde `AFX_EXT_CLASS` sınıf tanımına geçici bir çözüm.
+Statikle `AFX_DATA` başlayan satır, sınıfınızın içinde statik bir nesne beyan ediyor. Bu sınıfı doğru dışa aktarmak ve çalıştırılabilir bir istemciden çalışma zamanı bilgilerine erişmek için bu statik nesneyi dışa aktarmanız gerekir. Statik nesne `AFX_DATA`değiştirici ile bildirilir olduğundan, yalnızca DLL'nizi inşa `AFX_DATA` `__declspec(dllexport)` ederken olması ve `__declspec(dllimport)` istemcinizin çalıştırılabilir olarak tanımlanması gerekir. Zaten `AFX_EXT_CLASS` bu şekilde tanımlandığıniçin, sınıf tanımınızın etrafındakiyle `AFX_DATA` `AFX_EXT_CLASS` aynı olması için yeniden tanımlamanız gerekir.
 
 Örneğin:
 
@@ -97,34 +97,34 @@ class CExampleView : public CView
 #define AFX_DATA
 ```
 
-MFC her zaman kullandığından `AFX_DATA` sembol tüm senaryolar için bu tekniği works veri öğelerinde kendi makrosunda tanımlar. Örneğin, için çalıştığını `DECLARE_MESSAGE_MAP`.
+MFC her zaman `AFX_DATA` makroları içinde tanımladığı veri öğeleri üzerinde simgeyi kullandığından, bu teknik tüm bu senaryolar için çalışır. Örneğin, için çalışır `DECLARE_MESSAGE_MAP`.
 
 > [!NOTE]
->  Seçilen üyeleri sınıf yerine sınıfın tamamı dışa aktarıyorsanız, otomatik olarak statik veri üyeleri dışa aktarılır.
+> Sınıfın seçili üyeleri yerine sınıfın tamamını dışa aktarıyorsanız, statik veri üyeleri otomatik olarak dışa aktarılır.
 
 ### <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [.Def dosyalarını kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-def-files.md)
+- [.def dosyalarını kullanarak Bir DLL'den dışa aktarma](exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
+- [__declspec(dllexport) kullanarak bir DLL'den dışa aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C dili çalıştırılabilir cihazlarda kullanılmak üzere C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C veya C++dil deki yürütülebilir cihazlarda kullanılmak üzere C işlevlerini dışa aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
 - [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
 - [__declspec(dllimport) kullanarak bir uygulamaya aktarma](importing-into-an-application-using-declspec-dllimport.md)
 
-- [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
+- [Bir DLL'yi başlatma](run-time-library-behavior.md#initializing-a-dll)
 
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla şey bilmek istiyorsun?
 
-- [Düzenlenmiş adlar](reference/decorated-names.md)
+- [Dekore edilmiş isimler](reference/decorated-names.md)
 
-- [Satır içi işlevleri içeri ve dışarı aktarma](importing-and-exporting-inline-functions.md)
+- [Satır İçi işlevleri alma ve dışa aktarma](importing-and-exporting-inline-functions.md)
 
-- [Karşılıklı içeri aktarmalar](mutual-imports.md)
+- [Karşılıklı ithalat](mutual-imports.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,9 +1,11 @@
 ---
 title: _putenv, _wputenv
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _putenv
 - _wputenv
+- _o__putenv
+- _o__wputenv
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-environment-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -37,19 +40,19 @@ helpviewer_keywords:
 - _tputenv function
 - environment variables, modifying
 ms.assetid: 9ba9b7fd-276e-45df-8420-d70c4204b8bd
-ms.openlocfilehash: 8fe699a476ea1dd09a6ce9922294bce398df16b2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 3e74959e6c6cdb2e27ce0d68ba40d02d64949904
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949889"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81333036"
 ---
 # <a name="_putenv-_wputenv"></a>_putenv, _wputenv
 
-Ortam değişkenlerini oluşturur, değiştirir veya kaldırır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_putenv_s, _wputenv_s](putenv-s-wputenv-s.md).
+Ortam değişkenleri oluşturur, değiştirir veya kaldırır. Bu işlevlerin daha güvenli sürümleri mevcuttur; [_putenv_s, _wputenv_s](putenv-s-wputenv-s.md)bakın.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,15 +68,17 @@ int _wputenv(
 ### <a name="parameters"></a>Parametreler
 
 *envstring*<br/>
-Ortam-dize tanımı.
+Çevre dize tanımı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa 0 veya hata durumunda-1 döndürün.
+Başarılı ysa 0 döndürün veya hata durumunda -1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Putenv** işlevi yeni ortam değişkenleri ekler veya var olan ortam değişkenlerinin değerlerini değiştirir. Ortam değişkenleri bir işlemin yürütüldüğü ortamı tanımlar (örneğin, kitaplıklar için varsayılan arama yolu, bir program ile bağlantılandırılır). **_wputenv** , **_putenv**; öğesinin geniş karakterli bir sürümüdür. **_wputenv** için *envstring* bağımsız değişkeni geniş karakterli bir dizedir.
+**_putenv** işlevi yeni ortam değişkenleri ekler veya varolan ortam değişkenlerinin değerlerini değiştirir. Ortam değişkenleri, bir işlemin yürütüldettiği ortamı tanımlar (örneğin, kitaplıkların bir programa bağlanması için varsayılan arama yolu). **_wputenv** **_putenv**geniş karakterli bir versiyonudur; **_wputenv** için *envstring* bağımsız değişken geniş karakterli bir dizedir.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -81,29 +86,29 @@ Başarılıysa 0 veya hata durumunda-1 döndürün.
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tputenv**|**_putenv**|**_putenv**|**_wputenv**|
 
-*Envstring* bağımsız değişkeni, *varname*=*value_string*biçimindeki bir dizenin işaretçisi olmalıdır; burada *varname* eklenecek veya değiştirilecek ortam değişkeninin adı, *value_string* değişkenin deeri. *Varname* zaten ortamın parçasıysa, değeri *value_string*ile değiştirilmiştir; Aksi takdirde, yeni *varname* değişkeni ve *value_string* değeri ortama eklenir. Boş bir *value_string*belirterek ya da başka bir deyişle, yalnızca *varname*= belirterek bir değişkeni ortamdan kaldırabilirsiniz.
+*Envstring* bağımsız değişkenform *varname*=*value_string*bir dize için bir işaretçi olmalıdır , *varname* eklenecek veya değiştirilecek ortam değişkeninin adı ve *value_string* değişkenin değeridir. *Varname* zaten ortamın bir parçasıysa, değeri *value_string*ile değiştirilir; aksi takdirde, yeni *varname* değişkeni ve *value_string* değeri ortama eklenir. Boş bir *value_string*belirterek veya başka bir deyişle, yalnızca *varname*=' belirterek bir değişkeni ortamdan kaldırabilirsiniz.
 
-**_putenv** ve **_wputenv** yalnızca geçerli işlem için yerel olan ortamı etkiler; komut düzeyi ortamı değiştirmek için bunları kullanamazsınız. Diğer bir deyişle, bu işlevler yalnızca çalışma zamanı kitaplığı için erişilebilir olan ve işletim sistemi tarafından bir işlem için oluşturulan ortam segmentinde olmayan veri yapıları üzerinde çalışır. Geçerli işlem sonlandırıldığında ortam, çağıran işlemin düzeyine döner (çoğu durumda, işletim sistemi düzeyi). Ancak, değiştirilen ortam **_üretilemedi**, **_exec**veya **System**tarafından oluşturulan yeni işlemlere geçirilebilir ve bu yeni süreçler **_putenv** ve **_wputenv**tarafından eklenen yeni öğeleri alır.
+**_putenv** ve **_wputenv** yalnızca geçerli sürecin yerel ortamını etkiler; komut düzeyi ortamını değiştirmek için kullanamazsınız. Diğer bir tarihte, bu işlevler yalnızca çalışma zamanı kitaplığı için erişilebilen veri yapılarında çalışır, işletim sistemi tarafından bir işlem için oluşturulan ortam segmentinde değil. Geçerli işlem sona erdiğinde, ortam arama işleminin düzeyine (çoğu durumda işletim sistemi düzeyi) geri döner. Ancak, değiştirilen ortam **_spawn**tarafından oluşturulan herhangi bir yeni süreçlere geçirilebilir , **_exec**, veya **sistem**, ve bu yeni süreçler **_putenv** ve **_wputenv**tarafından eklenen herhangi bir yeni öğeler olsun.
 
-Doğrudan bir ortam girişi değiştirmeyin: bunun yerine, bunu değiştirmek için **_putenv** veya **_wputenv** kullanın. Özellikle, **_environ []** genel dizisinin doğrudan serbest bırakılmakta olan öğeleri, belirtilen hatalı belleğe yol açabilir.
+Bir ortam girişini doğrudan değiştirmeyin: bunun yerine, değiştirmek için **_putenv** veya **_wputenv** kullanın. Özellikle, **_environ[]** genel dizinin doğrudan serbest öğeleri geçersiz belleğin ele alınmasına neden olabilir.
 
-**getenv** ve **_putenv** ortam tablosuna erişmek için **_environ** genel değişkenini kullanır; **_wgetenv** ve **_wputenv** Use **_wenviron**. **_putenv** ve **_wputenv** , **_environ** ve **_wenviron**değerini değiştirebilir, bu nedenle **_envp** bağımsız değişkenini **Main** ve **_wenvp** bağımsız değişkenini **wmain**olarak geçersiz duruma alabilir. Bu nedenle, ortam bilgilerine erişmek için **_environ** veya **_wenviron** kullanmak daha güvenlidir. **_Putenv** ve **_wputenv** ile genel değişkenlerin ilişkisi hakkında daha fazla bilgi için bkz. [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).
+**getenv** ve **_putenv** çevre tablosuna erişmek için küresel değişken **_environ** kullanırlar; **_wgetenv** ve **_wputenv** **_wenviron**kullanın. **_putenv** ve **_wputenv** **_environ** ve **_wenviron**değerini değiştirebilir, böylece **_envp** bağımsız değişkeni **ana** ve **_wenvp** bağımsız **değişkenwmain**geçersiz . Bu nedenle, ortam bilgilerine erişmek için **_environ** veya **_wenviron** kullanmak daha güvenlidir. **_putenv** ve **_wputenv** küresel değişkenlerle ilişkisi hakkında daha fazla bilgi için bkz. [_environ, _wenviron.](../../c-runtime-library/environ-wenviron.md)
 
 > [!NOTE]
-> **_Putenv** ve **_getenv** işlevleri iş parçacığı açısından güvenli değildir. **_putenv** dizeyi değiştirirken **_getenv** bir dize işaretçisi döndürebilir, rastgele hatalara neden olur. Bu işlevlere yapılan çağrıların eşitlendiğinden emin olun.
+> Fonksiyonların **_putenv** ve **_getenv** aileleri iş parçacığı açısından güvenli değildir. **_getenv,** **_putenv** dizeyi değiştirerek rasgele hatalara neden olurken bir dize işaretçisi döndürebilir. Bu işlevlere yapılan çağrıların eşitlendirildiğinden emin olun.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putenv**|\<Stdlib. h >|
-|**_wputenv**|\<Stdlib. h > veya \<wchar. h >|
+|**_putenv**|\<stdlib.h>|
+|**_wputenv**|\<stdlib.h> \<veya wchar.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
-**_Putenv**'nin nasıl kullanılacağına ilişkin bir örnek için bkz. [getenv, _wgetenv](getenv-wgetenv.md).
+**_putenv**nasıl kullanılacağına bir örnek için [getenv, _wgetenv.](getenv-wgetenv.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

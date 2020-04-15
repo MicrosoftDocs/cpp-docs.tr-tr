@@ -1,6 +1,6 @@
 ---
 title: scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - scalblnl
 - scalbnl
@@ -8,6 +8,12 @@ api_name:
 - scalblnf
 - scalbn
 - scalbln
+- _o_scalbln
+- _o_scalblnf
+- _o_scalblnl
+- _o_scalbn
+- _o_scalbnf
+- _o_scalbnl
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,6 +26,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -39,16 +46,16 @@ helpviewer_keywords:
 - scalbnf function
 - scalblnf function
 ms.assetid: df2f1543-8e39-4af4-a5cf-29307e64807d
-ms.openlocfilehash: 794d0bdceb13aafb83de85fb29e47a4fa3125cd6
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d0c7f6db7ad6970be85203eef76e5ccb152e2200
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948909"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81332595"
 ---
 # <a name="scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl"></a>scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 
-Kayan noktalı sayıyı FLT_RADIX 'in tam sayı gücüyle çarpar.
+Kayan nokta sayısını FLT_RADIX ayrılmaz bir gücüyle çarpar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -97,31 +104,33 @@ long double scalblnl(
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*X*<br/>
 Kayan nokta değeri.
 
-*exp*<br/>
-Tamsayı üs.
+*Exp*<br/>
+İnteger üs.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Scalbümn** işlevleri başarılı olduğunda *x* \* **FLT_RADIX**<sup>Exp</sup> değerini döndürür. Taşma durumunda ( *x*işaretine bağlı olarak), **scalbümn** +/- **HUGE_VAL**; döndürür **errno** değeri **ERANGE**olarak ayarlanır.
+**Scalbn** fonksiyonları başarılı olduğunda *x* \* **FLT_RADIX**<sup>exp</sup> değerini döndürer. Taşmada *(x*işaretine bağlı olarak), **scalbn** döndürür +/- **HUGE_VAL;** **errno** değeri **ERANGE**olarak ayarlanır.
 
-**Errno** ve olası hata dönüş değerleri hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**Errno** ve olası hata iade değerleri hakkında daha fazla bilgi için [bkz: errno, _doserrno, _sys_errlist ve _sys_nerr.](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
 
 ## <a name="remarks"></a>Açıklamalar
 
-**FLT_RADIX** , \<float. h >, ikili sistemlerde yerel kayan nokta Radix; olarak tanımlanır; 2 değeri vardır ve **scalbümn** , [ldexp](ldexp.md)ile eşdeğerdir.
+**FLT_RADIX** \<float.h> yerli kayan nokta radiks olarak tanımlanır; ikili sistemlerde, 2 değerivardır ve **scalbn** [ldexp'ye](ldexp.md)eşdeğerdir.
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** veya **Long** **Double** türlerini alıp döndüren **scalbümn** ve **scalbln** aşırı yüklerini çağırabilirsiniz. C programında, **scalbümn** her zaman bir **Double** ve **int** alır ve bir **Double**döndürür ve **scalbln** her zaman **çift** ve **uzun** sürer ve bir **Double**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** veya **uzun** **çift** türleri alıp teslim eden aşırı ölçekbn ve **scalbln** yükleri arayabilirsiniz. **scalbn** Bir C programında, **scalbn** her zaman bir **çift** ve bir **int** alır ve bir **çift**döndürür , ve **scalbln** her zaman bir **çift** ve **uzun** alır ve bir **çift**döndürür .
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgi|C++ üstbilgi|
 |--------------|--------------|------------------|
-|**scalbümn**, **scalbümnf**, **scalbümnl**, **scalbln**, **scalblnf**, **scalblnl**|\<Math. h >|\<cmath >|
+|**scalbn**, **scalbnf**, **scalbnl**, **scalbln**, **scalblnf**, **scalblnl**|\<math.h>|\<cmath>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -141,7 +150,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 6.4 times FLT_RADIX to the power of 3 is 51.2

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - binary operators [C++]
 - expressions [C++], binary operators
 ms.assetid: 6dea3df4-a4bd-42c3-9807-4a27c120ac9a
-ms.openlocfilehash: 2dbda1759dcb37a1f2a8cbe87f24adbb979ca085
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a5c9127db4714575cdf037147cc97601a4523e93
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188993"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81360858"
 ---
 # <a name="expressions-with-binary-operators"></a>İkili İşleçli İfadeler
 
@@ -19,77 +19,77 @@ ms.locfileid: "80188993"
 
 - [Çarpma işleçleri](../cpp/multiplicative-operators-and-the-modulus-operator.md)
 
-   - Çarpma (*)
+  - Çarpma (*)
 
-   - Bölme (/)
+  - Bölme (/)
 
-   - Mod (%)
+  - Mod (%)
 
 - [Toplama işleçleri](../cpp/additive-operators-plus-and.md)
 
-   - Toplama (+)
+  - Toplama (+)
 
-   - Çıkarma (-)
+  - Çıkarma (-)
 
 - [Kaydırma işleçleri](../cpp/left-shift-and-right-shift-operators-input-and-output.md)
 
-   - Sağa kaydırma (> >)
+  - Sağa vites (>>)
 
-   - Sola kaydırma (< <)
+  - Sol kayma (<<)
 
-- [İlişkisel ve eşitlik işleçleri](../cpp/relational-operators-equal-and-equal.md)
+- [İlişkisel ve eşitlik operatörleri](../cpp/relational-operators-equal-and-equal.md)
 
-   - Küçüktür (\<)
+  - Daha az\<( )
 
-   - Büyüktür (>)
+  - (>)
 
-   - Küçüktür veya eşittir (\<=)
+  - Daha az veya\<eşit ( =)
 
-   - Büyük veya eşittir (> =)
+  - Büyük veya eşit (>=)
 
-   - Eşittir (==)
+  - Eşittir (==)
 
-   - Eşit değildir (!=)
+  - Eşit değildir (!=)
 
 - Bit düzeyinde işleçler
 
-   - [Bit düzeyinde AND (&)](../cpp/bitwise-and-operator-amp.md)
+  - [Bitwise VE (&)](../cpp/bitwise-and-operator-amp.md)
 
-   - [Bit düzeyinde dışlamalı veya (^)](../cpp/bitwise-exclusive-or-operator-hat.md)
+  - [Bitwise özel OR (^)](../cpp/bitwise-exclusive-or-operator-hat.md)
 
-   - [Bit düzeyinde kapsamlı OR&#124;()](../cpp/bitwise-inclusive-or-operator-pipe.md)
+  - [Bit wise dahil OR (&#124;)](../cpp/bitwise-inclusive-or-operator-pipe.md)
 
 - Mantıksal işleçler
 
-   - [Mantıksal AND (& &)](../cpp/logical-and-operator-amp-amp.md)
+  - [Mantıksal VE (&&)](../cpp/logical-and-operator-amp-amp.md)
 
-   - [Mantıksal OR (&#124;&#124;)](../cpp/logical-or-operator-pipe-pipe.md)
+  - [Mantıksal OR (&#124;&#124;)](../cpp/logical-or-operator-pipe-pipe.md)
 
 - [Atama işleçleri](../cpp/assignment-operators.md)
 
-   - Atama (=)
+  - Atama (=)
 
-   - Toplama ataması (+=)
+  - Toplama ataması (+=)
 
-   - Çıkarma ataması (-=)
+  - Çıkarma ataması (-=)
 
-   - Çarpma ataması (*=)
+  - Çarpma ataması (*=)
 
-   - Bölme ataması (/=)
+  - Bölme ataması (/=)
 
-   - Mod ataması (%=)
+  - Mod ataması (%=)
 
-   - Sola kaydırma ataması (<\<=)
+  - Sol vardiya ataması (<\<=)
 
-   - Sağa kaydırma ataması (> > =)
+  - Sağ vardiya ataması (>>=)
 
-   - Bit düzeyinde AND atama (& =)
+  - Bitwise VE atama (&=)
 
-   - Bit düzeyinde dışlamalı OR ataması (^=)
+  - Bit düzeyinde dışlamalı OR ataması (^=)
 
-   - Bit düzeyinde kapsamlı veya atama&#124;(=)
+  - Bitwise kapsayıcı OR atama (&#124;=)
 
-- [Virgül işleci](../cpp/comma-operator.md) (,)
+- [Virgül Operatörü](../cpp/comma-operator.md) (,)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

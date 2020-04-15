@@ -1,8 +1,9 @@
 ---
 title: setbuf
-ms.date: 04/08/2019
+ms.date: 4/2/2020
 api_name:
 - setbuf
+- _o_setbuf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -25,16 +27,16 @@ helpviewer_keywords:
 - setbuf function
 - stream buffering
 ms.assetid: 13beda22-7b56-455d-8a6c-f2eb636885b9
-ms.openlocfilehash: c6c78297b1818131dcfcb10f4f2eaadd752d8ef4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f96cffb8770cda78ebff8d873b441ddc288bc41f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948273"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81332071"
 ---
 # <a name="setbuf"></a>setbuf
 
-Akış arabelleğini denetler. Bu işlev kullanım dışıdır; Bunun yerine [setvarabelleğe](setvbuf.md) kullanın.
+Akış arabelleğe alma denetimleri. Bu işlev amortismana hazırdır; yerine [setvbuf](setvbuf.md) kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,25 +49,27 @@ void setbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-*ka*<br/>
-**Dosya** yapısına yönelik işaretçi.
+*Akışı*<br/>
+**DOSYA** yapısı için işaretçi.
 
-*arabelleğin*<br/>
-Kullanıcı tarafından ayrılan arabellek.
+*Arabellek*<br/>
+Kullanıcı tarafından tahsis edilen arabellek.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Setarabelleğe** işlevi *akış*için arabelleğe almayı denetler. *Stream* bağımsız değişkeni, okunamaz veya yazılmayan açık bir dosyaya başvurmalıdır. *Buffer* bağımsız değişkeni **null**ise, akışın ara belleğe alınmamış olması gerekir. Aksi takdirde, arabellek **bufsız**length bir karakter dizisine işaret etmelidir; burada **BUFSıZ** , stdio içinde tanımlanan arabellek boyutudur. Olsun. Belirtilen akış için varsayılan sistem tarafından ayrılan arabellek yerine Kullanıcı tarafından belirtilen arabellek g/ç arabelleğe alma için kullanılır. **Stderr** akışı varsayılan olarak arabelleğe alınmamış, ancak **stderr**'e arabellekler atamak için **setarabelleğe** kullanabilirsiniz.
+**Setbuf** işlevi *akış*için arabelleğe alma denetimleri. *Akış* bağımsız değişkeni, okunmamış veya yazılmayan açık bir dosyaya başvurmalıdır. Arabellek bağımsız *değişkeni* **NULL**ise, akış arabelleğe almaz. Değilse, arabellek **bufsiz** STDIO tanımlanan arabellek boyutu uzunluk **BUFSIZ**bir karakter dizi işaret etmelidir. H. Kullanıcı tarafından belirtilen arabellek, verilen akış için varsayılan sistem ayrılmış arabellek yerine, G/Ç arabellek için kullanılır. **Stderr** akışı varsayılan olarak arabelleğe almaz, ancak **stderr**için arabellek atamak için **setbuf** kullanabilirsiniz.
 
-**setarabelleğe** , yeni kod için tercih edilen yordam olan [setvarabelleğe](setvbuf.md)ile değiştirilmiştir. **Setvarabelleğe**'nin aksine, **setarabelleğe** hata bildirme yolu yoktur. **setvbuffer** Ayrıca hem arabelleğe alma modunu hem de arabellek boyutunu denetlemenize olanak tanır. Mevcut kodla uyumluluk için **setarabelleğe** var.
+**setbuf** [setvbuf](setvbuf.md), yeni kod için tercih edilen rutin yerini almıştır. **setvbuf**aksine, **setbuf** hataları raporlama yolu yoktur. **setvbuf** ayrıca hem arabellek modunu hem de arabellek boyutunu kontrol etmenizi sağlar. **setbuf** varolan kod ile uyumluluk için var.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**setbuf**|\<stdio. h >|
+|**setbuf**|\<stdio.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -108,7 +112,7 @@ stream2 buffering disabled
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [fflush](fflush.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>

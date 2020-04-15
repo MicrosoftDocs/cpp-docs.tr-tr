@@ -1,8 +1,9 @@
 ---
 title: _isatty
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _isatty
+- _o__isatty
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -27,16 +29,16 @@ helpviewer_keywords:
 - _isatty function
 - checking character devices
 ms.assetid: 9f1b2e87-0cd7-4079-b187-f2b7ca15fcbe
-ms.openlocfilehash: 2d2ba2fdfeb1c8bffe47b0953f0629746d2eb599
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c9611c2bd55ebc1602a73e4c71518716ea100420
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954551"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81343898"
 ---
 # <a name="_isatty"></a>_isatty
 
-Bir dosya tanımlayıcısının bir karakter aygıtıyla ilişkili olup olmadığını belirler.
+Dosya tanımlayıcının bir karakter aygıtıyla ilişkili olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,30 +48,32 @@ int _isatty( int fd );
 
 ### <a name="parameters"></a>Parametreler
 
-*FD*<br/>
-Sınanacak cihaza başvuran dosya tanımlayıcısı.
+*Fd*<br/>
+Test edilecek aygıta başvuran dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ısatty** , tanımlayıcı bir karakter aygıtıyla ilişkiliyse sıfır dışında bir değer döndürür. Aksi takdirde, **_ısatty** 0 değerini döndürür.
+**_isatty,** tanımlayıcı bir karakter aygıtıyla ilişkiliyse sıfır olmayan bir değer verir. Aksi takdirde, **_isatty** 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_İsatty** işlevi, *FD* 'nin bir karakter aygıtıyla (Terminal, konsol, yazıcı veya seri bağlantı noktası) ilişkili olup olmadığını belirler.
+**_isatty** işlevi *fd'nin* bir karakter aygıtıyla (terminal, konsol, yazıcı veya seri bağlantı noktası) ilişkili olup olmadığını belirler.
 
-Bu işlev *FD* parametresini doğrular. *FD* hatalı bir dosya Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev 0 döndürür ve **errno** 'U **EBADF**olarak ayarlar.
+Bu işlev *fd* parametresini doğrular. *fd* hatalı bir dosya işaretçisi ise, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmedevam etmesine izin verilirse, işlev 0 döndürür ve **EBADF** **için errno** ayarlar.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_isatty**|\<GÇ. h >|
+|**_isatty**|\<io.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="libraries"></a>Kitaplıklar
 
-[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -99,4 +103,4 @@ stdout has not been redirected to a file
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
+[Dosya Işleme](../../c-runtime-library/file-handling.md)<br/>

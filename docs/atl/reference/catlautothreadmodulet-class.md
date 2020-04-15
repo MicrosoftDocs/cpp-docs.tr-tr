@@ -1,5 +1,5 @@
 ---
-title: CAtlAutoThreadModuleT sınıfı
+title: CAtlAutoThreadModuleT Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlAutoThreadModuleT
@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlAutoThreadModuleT class
 ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
-ms.openlocfilehash: 63f1c8dbe3c752773fd64c6e339a9a3b67051d35
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7b7a327d7c47c4472b43ed58fbe9ad0556a7620
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62247184"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81321550"
 ---
-# <a name="catlautothreadmodulet-class"></a>CAtlAutoThreadModuleT sınıfı
+# <a name="catlautothreadmodulet-class"></a>CAtlAutoThreadModuleT Sınıfı
 
-Bu sınıf, apartman modeli iş parçacığı havuza, COM sunucu uygulama için yöntemler sağlar.
+Bu sınıf, iş parçacığı havuzlu, apartman modeli COM sunucusu uygulamak için yöntemler sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,28 +34,28 @@ class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-COM sunucusunun uygulayan sınıf.
+COM sunucusunu uygulayacak sınıf.
 
 *ThreadAllocator*<br/>
-İş parçacığı seçimi yönetme sınıfı. Varsayılan değer [CComSimpleThreadAllocator](../../atl/reference/ccomsimplethreadallocator-class.md).
+Sınıf yönetim iş parçacığı seçimi. Varsayılan değer [CComSimpleThreadAllocator'dur.](../../atl/reference/ccomsimplethreadallocator-class.md)
 
 *dwWait*<br/>
-Milisaniye cinsinden zaman aşımı aralığı belirtir. Yöntemin zaman aşımı aralığı, hiçbir zaman geçtikçe anlamına gelir ve SINIRSIZ varsayılandır.
+Zaman aralığını milisaniye cinsinden belirtir. Varsayılan, yöntemin zaman aşımı aralığının hiçbir zaman gerçekleşmediği anlamına gelen SONSUZ'dur.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAtlAutoThreadModuleT::GetDefaultThreads](#getdefaultthreads)|Bu statik işlev dinamik olarak hesaplar ve en fazla işlemci sayısına göre bir EXE modülü için iş parçacıklarının sayısını döndürür.|
+|[CAtlAutoThreadModuleT::GetDefaultThreads](#getdefaultthreads)|Bu statik işlev, işlemci sayısına bağlı olarak EXE modülü için maksimum iş parçacığı sayısını dinamik olarak hesaplar ve döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) türetildiği `CAtlAutoThreadModuleT` apartman modeli iş parçacığı havuza, COM sunucusu uygulamak için. Geçersiz sınıf değiştirir [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).
+[CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) sınıfı, iş `CAtlAutoThreadModuleT` parçacığı havuzu, daire modeli COM sunucusu nu uygulamak için türetilmiştir. Bu eski sınıf [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)değiştirir.
 
 > [!NOTE]
->  Bu sınıf bir DLL içinde varsayılan olarak kullanılmamalıdır *dwWait* DLL kaldırıldığında, SONSUZ değerini karşılıklı bir kilitlenme neden olur.
+> DLL boşaltıldığında SONSUZ varsayılan *dwWait* değeri bir kilitlenme neden olacağından, bu sınıf bir DLL kullanılmamalıdır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -65,11 +65,11 @@ Sınıf [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase.h
 
-##  <a name="getdefaultthreads"></a>  CAtlAutoThreadModuleT::GetDefaultThreads
+## <a name="catlautothreadmoduletgetdefaultthreads"></a><a name="getdefaultthreads"></a>CAtlAutoThreadModuleT::GetDefaultThreads
 
-Bu statik işlev dinamik olarak hesaplar ve en fazla işlemci sayısına göre bir EXE modülü için iş parçacıklarının sayısını döndürür.
+Bu statik işlev, işlemci sayısına bağlı olarak EXE modülü için maksimum iş parçacığı sayısını dinamik olarak hesaplar ve döndürür.
 
 ```
 static int GetDefaultThreads();
@@ -81,11 +81,11 @@ EXE modülünde oluşturulacak iş parçacığı sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İş parçacığı sayısını hesaplamak için farklı bir yöntem kullanmak istiyorsanız bu yöntemi yok sayın. Varsayılan olarak, iş parçacığı sayısını işlemci sayısına bağlıdır.
+İş parçacığı sayısını hesaplamak için farklı bir yöntem kullanmak istiyorsanız bu yöntemi geçersiz kılın. Varsayılan olarak, iş parçacığı sayısı işlemci sayısını temel alır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IAtlAutoThreadModule Sınıfı](../../atl/reference/iatlautothreadmodule-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
 [IAtlAutoThreadModule Sınıfı](../../atl/reference/iatlautothreadmodule-class.md)<br/>
-[Modül sınıfları](../../atl/atl-module-classes.md)
+[Modül Sınıfları](../../atl/atl-module-classes.md)

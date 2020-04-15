@@ -8,106 +8,106 @@ helpviewer_keywords:
 - ActiveX controls [C++], hosting
 - controls [ATL]
 ms.assetid: d4bdfbe0-82ca-4f2f-bb95-cb89bdcc9b53
-ms.openlocfilehash: 42f9b41b99e13fcfe2fb003acb348c9464e0fd05
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36ff3381447b46b28908522d65be9f34fe23addf
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223328"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81317396"
 ---
 # <a name="atl-control-containment-faq"></a>ATL Denetim Kapsamı SSS
 
-## <a name="which-atl-classes-facilitate-activex-control-containment"></a>Hangi ATL sınıfları ActiveX denetim kapsamından yararlanır?
+## <a name="which-atl-classes-facilitate-activex-control-containment"></a>Hangi ATL Sınıfları ActiveX Denetim Kapsamından Yararlanır?
 
-ATL'nin denetim barındırma kodunu herhangi bir ATL sınıfları kullanmanızı gerektirmez; yalnızca oluşturabileceğiniz bir **"AtlAxWin80"** penceresinde ve gerekirse denetim barındırma API'si kullanın (daha fazla bilgi için **ATL Denetim barındırma API'si nedir**. Ancak, aşağıdaki sınıflar kapsama özellikleri daha kolay kullanılmasını.
+ATL'nin kontrol barındırma kodu herhangi bir ATL sınıflarını kullanmanızı gerektirmez; sadece bir **"AtlAxWin80"** pencere oluşturabilir ve gerekirse kontrol barındırma API kullanabilirsiniz (daha fazla bilgi için, **ATL Kontrol-Hosting API nedir**bakın. Ancak, aşağıdaki sınıflar çevreleme özelliklerinin kullanımını kolaylaştırır.
 
-|örneği|Açıklama|
+|Sınıf|Açıklama|
 |-----------|-----------------|
-|[CAxWindow](../atl/reference/caxwindow-class.md)|Saran bir **"AtlAxWin80"** penceresi, pencere oluşturmak, bir denetim oluşturma ve/veya penceresine bir denetim ekleme ve konak nesnesi üzerinde arabirim işaretçileri alınırken yöntemler sağlayacak.|
-|[CAxWindow2T](../atl/reference/caxwindow2t-class.md)|Saran bir **"AtlAxWinLic80"** penceresi, pencere oluşturmak, bir denetim oluşturma ve/veya penceresine lisanslı bir denetim ekleme ve konak nesnesi üzerinde arabirim işaretçileri alınırken yöntemler sağlayacak.|
-|[CComCompositeControl](../atl/reference/ccomcompositecontrol-class.md)|İletişim kaynağını temel ActiveX denetim sınıfları için temel sınıf olarak görev yapar. Bu tür denetimler, diğer ActiveX denetimleri içerebilir.|
-|[Caxdialogımpl](../atl/reference/caxdialogimpl-class.md)|İletişim kaynağını temel iletişim kutusu sınıfları için temel sınıf olarak görev yapar. Bu tür iletişim kutuları ActiveX denetimleri içerebilir.|
-|[CWindow](../atl/reference/cwindow-class.md)|Bir yöntem sağlar [GetDlgControl](../atl/reference/cwindow-class.md#getdlgcontrol), dönen bir arabirim işaretçisi konak penceresinin Kimliğini belirtilen bir denetimde. Ayrıca, Windows API sarmalayıcıları kullanıma sunulan `CWindow` genellikle pencere yönetimi kolaylaştırın.|
+|[CAxWindow](../atl/reference/caxwindow-class.md)|Pencereyi oluşturmak, denetim oluşturma ve/veya pencereye denetim ekleme ve ana bilgisayar nesnesi üzerinde arabirim işaretçileri alma yöntemleri sağlayan bir **"AtlAxWin80"** penceresini sarar.|
+|[CAxWindow2T](../atl/reference/caxwindow2t-class.md)|Pencereyi oluşturmak, denetim oluşturma ve/veya pencereye lisanslı denetim takma ve ana bilgisayar nesnesi üzerinde arabirim işaretçileri alma yöntemleri sağlayan bir **"AtlAxWinLic80"** penceresini sarar.|
+|[CcomCompositeControl](../atl/reference/ccomcompositecontrol-class.md)|Bir iletişim kaynağına dayalı ActiveX denetim sınıfları için bir taban sınıf gibi davranır. Bu tür denetimler diğer ActiveX denetimleri içerebilir.|
+|[Caxdialogımpl](../atl/reference/caxdialogimpl-class.md)|İletişim sınıfları için bir iletişim kaynağına dayalı bir taban sınıf görevi görür. Bu tür iletişim kutuları ActiveX denetimleri içerebilir.|
+|[Cwindow](../atl/reference/cwindow-class.md)|Ana bilgisayar penceresinin kimliği göz önüne alındığında, denetim üzerinde bir arabirim işaretçisi döndürecek bir yöntem, [GetDlgControl](../atl/reference/cwindow-class.md#getdlgcontrol)sağlar. Buna ek olarak, windows API `CWindow` sarmalayıcıları genellikle pencere yönetimini kolaylaştırır.|
 
-## <a name="what-is-the-atl-control-hosting-api"></a>ATL nedir denetim barındırma API'si?
+## <a name="what-is-the-atl-control-hosting-api"></a>ATL Denetim Barındırma API’si nedir?
 
-ATL Denetim barındırma API'si, bir ActiveX denetimi kapsayıcısı görev yapacak bir pencere sağlar işlevler kümesi. Bu işlevlerin statik olabilir veya dinamik olarak kod kaynağı olarak kullanılabilir olduğu projenize bağlı ve ATL90.dll tarafından kullanıma sunulan. Denetim barındırma işlevleri, aşağıdaki tabloda listelenmiştir.
+ATL'nin denetim barındırma API'si, herhangi bir pencerenin ActiveX denetim kapsayıcısı olarak hareket etmesini sağlayan işlevler kümesidir. Kaynak kodu olarak kullanılabilir ve ATL90.dll tarafından açıkta olduğundan, bu işlevler statik veya dinamik olarak projenize bağlanabilir. Denetim barındırma işlevleri aşağıdaki tabloda listelenmiştir.
 
 |İşlev|Açıklama|
 |--------------|-----------------|
-|[AtlAxAttachControl](reference/composite-control-global-functions.md#atlaxattachcontrol)|Bir konak nesnesi oluşturur, sağlanan penceresine bağlanır ve ardından varolan bir denetimi ekler.|
-|[AtlAxCreateControl](reference/composite-control-global-functions.md#atlaxcreatecontrol)|Bir konak nesnesi oluşturur, sağlanan penceresine bağlanır ve ardından Denetim yükler.|
-|[AtlAxCreateControlLic](reference/composite-control-global-functions.md#atlaxcreatecontrollic)|Lisanslı bir ActiveX denetimi oluşturur, onu başlatır ve benzer şekilde belirtilen pencerede barındırır [AtlAxCreateControl](reference/composite-control-global-functions.md#atlaxcreatecontrol).|
-|[AtlAxCreateControlEx](reference/composite-control-global-functions.md#atlaxcreatecontrolex)|Bir konak nesnesi oluşturur, sağlanan penceresine bağlanır ve ardından Denetim yükler (Ayrıca olay iç havuzları ayarlanmasına izin verir).|
-|[AtlAxCreateControlLicEx](reference/composite-control-global-functions.md#atlaxcreatecontrollicex)|Lisanslı bir ActiveX denetimi oluşturur, onu başlatır ve benzer şekilde belirtilen pencerede barındırır [AtlAxCreateControlLic](reference/composite-control-global-functions.md#atlaxcreatecontrollic).|
-|[AtlAxCreateDialog](reference/composite-control-global-functions.md#atlaxcreatedialog)|İletişim kutusu kaynağı modsuz iletişim kutusu oluşturur ve pencere tanıtıcısını döndürür.|
-|[AtlAxDialogBox](reference/composite-control-global-functions.md#atlaxdialogbox)|Kalıcı bir iletişim kutusu, iletişim kutusu kaynağı oluşturur.|
-|[AtlAxGetControl](reference/composite-control-global-functions.md#atlaxgetcontrol)|Döndürür **IUnknown** arayüz işaretçisinden bir pencere içinde barındırılan bir denetim.|
-|[AtlAxGetHost](reference/composite-control-global-functions.md#atlaxgethost)|Döndürür **IUnknown** arayüz işaretçisinden bir konak nesnesi bağlı bir pencere.|
-|[AtlAxWinInit](reference/composite-control-global-functions.md#atlaxwininit)|Denetim barındırma kodunu başlatır.|
-|[AtlAxWinTerm](reference/composite-control-global-functions.md#atlaxwinterm)|Denetim barındırma kodunu başlamasını iptal eder.|
+|[AtlAxAttachKontrol](reference/composite-control-global-functions.md#atlaxattachcontrol)|Ana bilgisayar nesnesi oluşturur, sağlanan pencereye bağlar ve varolan bir denetimi bağlar.|
+|[AtlAxCreateControl](reference/composite-control-global-functions.md#atlaxcreatecontrol)|Ana bilgisayar nesnesi oluşturur, sağlanan pencereye bağlar, sonra denetim yükler.|
+|[AtlAxCreateControlLic](reference/composite-control-global-functions.md#atlaxcreatecontrollic)|Lisanslı activex denetimi oluşturur, başlatılmasını sağlar ve Belirtilen pencerede, [AtlAxCreateControl'e](reference/composite-control-global-functions.md#atlaxcreatecontrol)benzer şekilde barındırır.|
+|[AtlAxCreateControlEx](reference/composite-control-global-functions.md#atlaxcreatecontrolex)|Ana bilgisayar nesnesi oluşturur, sağlanan pencereye bağlar, ardından bir denetim yükler (ayrıca olay lavabolarının ayarlanmasına izin verir).|
+|[AtlAxCreateControlLicEx](reference/composite-control-global-functions.md#atlaxcreatecontrollicex)|Lisanslı activex denetimi oluşturur, başlatılmasını sağlar ve Belirtilen pencerede, [AtlAxCreateControlLic'e](reference/composite-control-global-functions.md#atlaxcreatecontrollic)benzer şekilde barındırır.|
+|[AtlAxCreateDialog](reference/composite-control-global-functions.md#atlaxcreatedialog)|İletişim kaynağından modeless iletişim kutusu oluşturur ve pencere tutamacını döndürür.|
+|[AtlAxDialogBox](reference/composite-control-global-functions.md#atlaxdialogbox)|Bir iletişim kaynağından modal iletişim kutusu oluşturur.|
+|[AtlAxGetControl](reference/composite-control-global-functions.md#atlaxgetcontrol)|Pencerede barındırılan denetimin **IUnknown** arabirim işaretçisini döndürür.|
+|[AtlAxGetHost](reference/composite-control-global-functions.md#atlaxgethost)|Pencereye bağlı ana bilgisayar nesnesinin **IUnknown** arabirim işaretçisini döndürür.|
+|[AtlAxWinInit](reference/composite-control-global-functions.md#atlaxwininit)|Denetim barındırma kodunu niçin başlatını laştırır.|
+|[AtlAxWinTerm](reference/composite-control-global-functions.md#atlaxwinterm)|Denetim barındırma kodunu niçin başlatmaz.|
 
-`HWND` İlk üç işlev parametrelerinde varolan pencereye (yaklaşık) herhangi bir türde olması gerekir. Bu üç işlevlerden herhangi birinin açıkça çağırırsanız (genellikle, gerekmez), zaten bir konak olarak hareket eden bir pencere için bir tanıtıcı geçmeyin (Bunu yaparsanız, var olan konak nesnesi serbest olmaz).
+İlk `HWND` üç işlevdeki parametreler, her türde (hemen hemen) varolan bir pencere olmalıdır. Bu üç işlevden herhangi birini açıkça çağırırsanız (genellikle, bunu yapmak zorunda kalmazsınız), bir tutamacı zaten ana bilgisayar olarak hareket eden bir pencereye geçirmeyin (bunu yaparsanız, varolan ana bilgisayar nesnesi serbest bırakılmaz).
 
-İlk yedi işlevlerini [zaman Atlaxwinınit](reference/composite-control-global-functions.md#atlaxwininit) örtük olarak.
+İlk yedi fonksiyon [AtlAxWinInit'i](reference/composite-control-global-functions.md#atlaxwininit) dolaylı olarak çağırır.
 
 > [!NOTE]
->  Denetim barındırma API'si ActiveX denetimi kapsamasını ATL desteği temelini oluşturur. Ancak, yoktur genellikle yararlanın ya da tam ATL sarmalayıcı sınıflar kullanılmasını sağlamak için bu işlevler doğrudan çağırmak için pek gereksinim. Daha fazla bilgi için [hangi ATL sınıfları kolaylaştırmak ActiveX denetimi kapsamasını](which-atl-classes-facilitate-activex-control-containment-q.md).
+> Kontrol barındırma API ActiveX kontrol kapsama için ATL desteğinin temelini oluşturur. Ancak, ATL'nin sarıcı sınıflarından yararlanır veya tam olarak kullanırsanız, bu işlevleri doğrudan aramanız genellikle çok az dır. Daha fazla bilgi için bkz: [Hangi ATL Sınıfları ActiveX Denetim Çevrelemesini Kolaylaştırın.](which-atl-classes-facilitate-activex-control-containment-q.md)
 
 ## <a name="what-is-atlaxwin100"></a>AtlAxWin100 nedir?
 
-`AtlAxWin100` ATL'nin denetim barındırma işlevleri sağlar bir pencere sınıf adıdır. Bu sınıfın bir örneği oluşturduğunuzda, pencere yordamı pencere ile ilgili bir ana bilgisayar nesnesi oluşturun ve pencerenin başlık olarak belirtmek denetimi ile yüklemek için Denetim barındırma API'si otomatik olarak kullanır.
+`AtlAxWin100`ATL'nin denetim barındırma işlevini sağlamaya yardımcı olan bir pencere sınıfının adıdır. Bu sınıfın bir örneğini oluşturduğunuzda, pencere yordamı, pencereyle ilişkili bir ana bilgisayar nesnesi oluşturmak ve pencerenin başlığı olarak belirttiğiniz denetimle yüklemek için denetim barındırma API'sini otomatik olarak kullanır.
 
-## <a name="when-do-i-need-to-call-atlaxwininit"></a>Ne zaman Atlaxwinınit çağrısı yapmam gerekir?
+## <a name="when-do-i-need-to-call-atlaxwininit"></a>Ne Zaman AtlAxWinInit Çağrısı Yapmam Gerekir?
 
-[Zaman Atlaxwinınit](reference/composite-control-global-functions.md#atlaxwininit) kaydeder **"AtlAxWin80"** pencere sınıf (birkaç özel pencere) için bir konak penceresini oluşturmaya çalışmadan önce bu işlevin çağrılması gerekir. Ancak, her zaman API'leri (ve bunları sınıfları) barındırma beri bu işlevi açıkça çağırmak gerekmez genellikle sizin için bu işlevi çağırın. Bu işlevinin birden çok kez çağrılması, hiçbir zarar yoktur.
+[AtlAxWinInit](reference/composite-control-global-functions.md#atlaxwininit) **"AtlAxWin80"** pencere sınıfını (artı birkaç özel pencere iletisi) kaydeder, bu nedenle ana bilgisayar penceresi oluşturmaya çalışmadan önce bu işlev inanılması gerekir. Ancak, barındırma API'leri (ve bunları kullanan sınıflar) genellikle bu işlevi sizin için aradığından, her zaman bu işlevi açıkça aramanız gerekmez. Bu işlevi birden fazla kez aramanın bir zararı yoktur.
 
-## <a name="what-is-a-host-object"></a>Bir konak nesnesi nedir?
+## <a name="what-is-a-host-object"></a>Konak Nesnesi Nedir?
 
-Belirli bir pencere için ATL tarafından sağlanan ActiveX denetimi kapsayıcısı temsil eden bir COM nesnesi ana nesnedir. Ana bilgisayar Denetim iletileri yansıtabilir, denetimi tarafından kullanılması için gerekli kapsayıcı arabirimleri sağlar ve kullanıma sunduğu kılabileceği kapsayıcı penceresi nesne [Iaxwinhostwindow](../atl/reference/iaxwinhostwindow-interface.md) ve [ Iaxwinambientdispatch](../atl/reference/iaxwinambientdispatch-interface.md) arabirimleri ortam denetimi yapılandırmanıza olanak sağlar.
+Ana bilgisayar nesnesi, belirli bir pencere için ATL tarafından sağlanan ActiveX denetim kapsayıcısını temsil eden bir COM nesnesidir. Ana bilgisayar nesnesi kapsayıcı penceresini denetime iletileri yansıtacak şekilde alt sınıflandırır, denetim tarafından kullanılmak üzere gerekli kapsayıcı arabirimleri sağlar ve denetim ortamını yapılandırmanıza olanak sağlamak için [IAxWinHostWindow](../atl/reference/iaxwinhostwindow-interface.md) ve [IAxWinAmbientDispatch](../atl/reference/iaxwinambientdispatch-interface.md) arabirimlerini ortaya çıkarır.
 
-Kapsayıcının ortam özellikleri ayarlamak için konak nesnesi kullanabilirsiniz.
+Kapsayıcının ortam özelliklerini ayarlamak için ana bilgisayar nesnesini kullanabilirsiniz.
 
-## <a name="can-i-host-more-than-one-control-in-a-single-window"></a>Ben, tek bir pencerede birden fazla denetim barındırabilir miyim?
+## <a name="can-i-host-more-than-one-control-in-a-single-window"></a>Tek Bir Pencerede Birden Fazla Denetim Barındırabilir miyim?
 
-Tek bir ATL ana pencerede birden fazla denetimini barındırmak mümkün değildir. Her ana penceresinin (Bu ileti yansıma ve denetim başına ortam özelliklerini işlemek için basit bir mekanizma sağlar) bir zaman tam olarak bir denetim tutmak için tasarlanmıştır. Tek bir pencerede birden çok denetim görmek için kullanıcının gerekir, ancak birden çok ana bilgisayar windows penceresinin alt öğesi oluşturmak için ibarettir olur.
+Tek bir ATL ana bilgisayar penceresinde birden fazla denetim barındırmak mümkün değildir. Her ana bilgisayar penceresi aynı anda tam olarak bir denetim tutacak şekilde tasarlanmıştır (bu, ileti yansımasını ve kontrol başına ortam özelliklerini işlemek için basit bir mekanizma sağlar). Ancak, kullanıcının tek bir pencerede birden çok denetim görmesi gerekiyorsa, bu pencerenin alt çocukları olarak birden çok ana bilgisayar penceresi oluşturmak basit bir konudur.
 
-## <a name="can-i-reuse-a-host-window"></a>Bir konak penceresini yeniden kullanabilir miyim?
+## <a name="can-i-reuse-a-host-window"></a>Bir Konak Penceresini Yeniden Kullanabilir miyim?
 
-Ana bilgisayar windows yeniden önerilmez. Kodunuzun sağlamlık emin olmak için konak pencerenizi tek bir denetim ömrünü ömrünü bağlamak.
+Ana bilgisayar pencerelerini yeniden kullanmanız önerilmez. Kodunuzu sağlamlık sağlamak için, ana bilgisayar pencerenizin ömrünü tek bir denetim ömrüne bağlamanız gerekir.
 
-## <a name="when-do-i-need-to-call-atlaxwinterm"></a>Ne zaman AtlAxWinTerm çağrısı yapmam gerekir?
+## <a name="when-do-i-need-to-call-atlaxwinterm"></a>Ne Zaman AtlAxWinTerm Çağrısı Yapmam Gerekir?
 
-[Zaman AtlAxWinTerm](reference/composite-control-global-functions.md#atlaxwinterm) kaydını siler **"AtlAxWin80"** pencere sınıfı. (Artık ana bilgisayar windows oluşturmak için ihtiyacınız varsa) tüm mevcut ana bilgisayar windows edildikten sonra bu işlevi çağırın. Bu işlev çağırırsanız yoksa, işlem sonlandırıldığında pencere sınıfını otomatik olarak kaydı silinecek.
+[AtlAxWinTerm](reference/composite-control-global-functions.md#atlaxwinterm) **"AtlAxWin80"** pencere sınıfının kaydını silinir. Varolan tüm ana bilgisayar pencereleri yok edildikten sonra bu işlevi (artık ana bilgisayar pencereleri oluşturmanız gerekmiyorsa) aramalısınız. Bu işlevi aramazsanız, işlem sona erdiğinde pencere sınıfı otomatik olarak kaydolmaz.
 
-## <a name="hosting-activex-controls-using-atl-axhost"></a>ATL AXHost kullanarak ActiveX denetimleri barındırma
+## <a name="hosting-activex-controls-using-atl-axhost"></a>ATL AXHost Kullanarak ActiveX Denetimleri Barındırma
 
-Bu bölümdeki örnek, AXHost oluşturma ve çeşitli ATL işlevleri kullanarak bir ActiveX denetimini barındırmak nasıl gösterir. Ayrıca bir erişim denetimi ve havuz olaylarını nasıl gösterir (kullanarak [Idispeventımpl](../atl/reference/idispeventimpl-class.md)) denetiminden barındırılır. Örnek, bir ana penceresinde veya bir alt pencere takvim denetimini barındırır.
+Bu bölümdeki örnek, AXHost'un nasıl oluşturulacagını ve çeşitli ATL işlevlerini kullanarak ActiveX denetiminin nasıl barındırılabildiğini gösterir. Ayrıca, barındırılan denetimden denetim ve lavabo olaylarına [(IDispEventImpl](../atl/reference/idispeventimpl-class.md)kullanarak) nasıl erişilir gösterilmektedir. Örnek, takvim denetimini ana pencerede veya alt pencerede barındırr.
 
-Tanımı fark `USE_METHOD` simgesi. 1 ile 8 arasında değiştirmek için bu simge değerini değiştirebilirsiniz. Sembol değeri, denetimin nasıl oluşturulur belirler:
+Sembolün tanımına `USE_METHOD` dikkat edin. Bu sembolün değerini 1 ile 8 arasında değişecek şekilde değiştirebilirsiniz. Sembolün değeri denetimin nasıl oluşturulacağını belirler:
 
-- Değerler çift sayılı için `USE_METHOD`, konak kılabileceği bir pencere oluşturma çağrısı ve bir denetim ana bilgisayara dönüştürür. Tek sayılı değerler için kod ana bilgisayar gibi davranan bir alt pencere oluşturur.
+- Çift numaralı değerler `USE_METHOD`için, ana bilgisayar alt sınıfları bir pencere oluşturmak için çağrı ve bir denetim ana bilgisayara dönüştürür. Tek numaralı değerler için kod, ana bilgisayar gibi davranan bir alt pencere oluşturur.
 
-- Değerler için `USE_METHOD` 1 ile 4 arasında denetime erişme ve olaylarını indirme konak oluşturan arama gerçekleştirilir. 8 ile 5 arasındaki değerleri arabirimleri için ana bilgisayar sorgulama ve havuz bağlama.
+- 1 ile `USE_METHOD` 4 arasındaki değerler için, ana bilgisayarı oluşturan çağrıda olayların denetimine ve batışına erişim gerçekleştirilir. 5 ile 8 arasındaki değerler arabirimler için ana bilgisayarı sorgular ve lavaboyu kancaya bağlar.
 
-Bir özeti aşağıda verilmiştir:
+İşte bir özeti:
 
-|USE_METHOD|Ana bilgisayar|Erişimi denetlemek ve olay indirme|Gösterilen işlevi|
+|USE_METHOD|Host|Erişim ve olay batışı kontrol|Fonksiyon gösterilmiştir|
 |-----------------|----------|--------------------------------------|---------------------------|
-|1.|Alt pencere|Bir adım|CreateControlLicEx|
+|1|Alt pencere|Bir adım|CreateControllicex|
 |2|Ana pencere|Bir adım|AtlAxCreateControlLicEx|
 |3|Alt pencere|Bir adım|CreateControlEx|
 |4|Ana pencere|Bir adım|AtlAxCreateControlEx|
-|5|Alt pencere|Birden çok adımı|CreateControlLic|
-|6|Ana pencere|Birden çok adımı|AtlAxCreateControlLic|
-|7|Alt pencere|Birden çok adımı|CreateControl|
-|8|Ana pencere|Birden çok adımı|AtlAxCreateControl|
+|5|Alt pencere|Birden çok adım|CreateControllic|
+|6|Ana pencere|Birden çok adım|AtlAxCreateControlLic|
+|7|Alt pencere|Birden çok adım|Createcontrol|
+|8|Ana pencere|Birden çok adım|AtlAxCreateControl|
 
 [!code-cpp[NVC_ATL_AxHost#1](../atl/codesnippet/cpp/hosting-activex-controls-using-atl-axhost_1.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Denetim kapsamı SSS](../atl/atl-control-containment-faq.md)<br/>
+[Kontrol Çevreleme SSS](../atl/atl-control-containment-faq.md)<br/>
 [AtlAxCreateControl](reference/composite-control-global-functions.md#atlaxcreatecontrol)<br/>
 [AtlAxCreateControlEx](reference/composite-control-global-functions.md#atlaxcreatecontrolex)<br/>
 [AtlAxCreateControlLic](reference/composite-control-global-functions.md#atlaxcreatecontrollic)<br/>

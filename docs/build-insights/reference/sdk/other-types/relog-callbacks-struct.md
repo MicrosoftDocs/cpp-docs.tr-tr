@@ -1,6 +1,6 @@
 ---
 title: RELOG_CALLBACKS yapısı
-description: C++ Derleme ÖNGÖRÜLERI SDK RELOG_CALLBACKS yapısı başvurusu.
+description: C++ Yapı Öngörüleri SDK yapı referansı RELOG_CALLBACKS.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: c5dbed196e6cafaa301b6e07cd0f5546a0f4d563
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 60e7db81a48731090a23b82332704a79a51e97df
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332343"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81328968"
 ---
 # <a name="relog_callbacks-structure"></a>RELOG_CALLBACKS yapısı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-Bir [RELOG_DESCRIPTOR](relog-descriptor-struct.md) nesnesi başlatılırken `RELOG_CALLBACKS` yapısı kullanılır. Windows için olay Izleme (ETW) izlemenin yeniden günlüğe kaydedilmesi sırasında hangi işlevlerin çağrılacağını belirtir.
+Yapı, `RELOG_CALLBACKS` [RELOG_DESCRIPTOR](relog-descriptor-struct.md) bir nesneyi başharflediğinde kullanılır. Windows için Olay İzleme (ETW) izlemenin yeniden günlüğe kaydedildiği sırada hangi işlevlerin arayacağını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,17 +47,17 @@ typedef struct RELOG_CALLBACKS_TAG
 
 |  |  |
 |--|--|
-| `OnStartActivity` | Etkinlik başlangıç olayını işlemek için çağırılır. |
-| `OnStopActivity` | Etkinlik durdurma olayını işlemek için çağırılır. |
-| `OnSimpleEvent` | Basit bir olayı işlemek için çağırılır. |
-| `OnTraceInfo` | `OnBeginReloggingPass` çağrıldıktan sonra, yeniden oturum açma geçişinin başlangıcında bir kez çağırılır. |
-| `OnBeginRelogging` | Yeniden günlüğe kaydetme geçişi başlamadan önce, yeniden günlüğe kaydetme oturumu başladığında çağırılır. |
-| `OnEndRelogging` | Yeniden günlüğe kaydetme geçişi sona erdikten sonra bir yeniden günlüğe kaydetme oturumu sonlandırırken çağırılır. |
-| `OnBeginReloggingPass` | Yeniden oturum açma geçişi Başlarken, herhangi bir olay işlenmeden önce çağırılır. |
-| `OnEndReloggingPass` | Yeniden günlüğe kaydetme geçişi sonlandırırken, tüm olaylar işlendikten sonra çağırılır. |
+| `OnStartActivity` | Bir etkinlik başlatma olayını işlemek için çağrıldı. |
+| `OnStopActivity` | Bir etkinlik durdurma olayını işlemek için çağrıldı. |
+| `OnSimpleEvent` | Basit bir olayı işlemek için çağrıldı. |
+| `OnTraceInfo` | Yeniden ağaçlandırılanın başında bir `OnBeginReloggingPass` kez çağrılır, sonra çağrıldı. |
+| `OnBeginRelogging` | Yeniden günlüğe kaydetme oturumu başlarken, yeniden ağaçlama geçişi başlamadan önce çağrılır. |
+| `OnEndRelogging` | Yeniden günlüğe kaydetme oturumu sona erdiğinde, yeniden ağaçlama geçişi sona erdikten sonra çağrılır. |
+| `OnBeginReloggingPass` | Herhangi bir olayı işlemeden önce, yeniden günlüğe kaydetme işlemine başlarken çağrılır. |
+| `OnEndReloggingPass` | Tüm olayları işledikten sonra, yeniden günlüğe kaydetme geçişini sona erdirirken çağrılır. |
 
 ## <a name="remarks"></a>Açıklamalar
 
-`RELOG_CALLBACKS` yapısının tüm üyeleri geçerli bir işleve işaret etmelidir. Kabul edilen işlev imzaları hakkında daha fazla bilgi için bkz. [OnRelogEventFunc](on-relog-event-func-typedef.md), [ontraceinfofunc](on-trace-info-func-typedef.md)ve [onbeginendpassfunc](on-begin-end-pass-func-typedef.md).
+Yapının `RELOG_CALLBACKS` tüm üyeleri geçerli bir işlevi işaret etmelidir. Kabul edilen işlev imzaları hakkında daha fazla bilgi için [OnRelogEventFunc](on-relog-event-func-typedef.md), [OnTraceInfoFunc](on-trace-info-func-typedef.md)ve [OnBeginEndPassFunc](on-begin-end-pass-func-typedef.md)adresine bakın.
 
 ::: moniker-end

@@ -1,5 +1,5 @@
 ---
-title: CTokenPrivileges sınıfı
+title: CTokenPrivileges Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CTokenPrivileges
@@ -18,19 +18,19 @@ f1_keywords:
 helpviewer_keywords:
 - CTokenPrivileges class
 ms.assetid: 89590105-f001-4014-870d-142926091231
-ms.openlocfilehash: f4ecc96ee53d6c688d17afa9957ccbf5060ca3fd
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ceb9aeca6b99e7fc9d08625e11cbdb182fb3dc9e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496279"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330539"
 ---
-# <a name="ctokenprivileges-class"></a>CTokenPrivileges sınıfı
+# <a name="ctokenprivileges-class"></a>CTokenPrivileges Sınıfı
 
-Bu sınıf, `TOKEN_PRIVILEGES` yapı için bir sarmalayıcıdır.
+Bu sınıf `TOKEN_PRIVILEGES` yapı için bir sarmalayıcıdır.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,50 +42,50 @@ class CTokenPrivileges
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CTokenPrivileges:: CTokenPrivileges](#ctokenprivileges)|Oluşturucu.|
-|[CTokenPrivileges:: ~ CTokenPrivileges](#dtor)|Yok edicisi.|
+|[CTokenPrivileges::CTokenPrivileges](#ctokenprivileges)|Oluşturucu.|
+|[CTokenPrivileges::~CTokenPrivileges](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CTokenPrivileges:: Add](#add)|`CTokenPrivileges` Nesnesine bir veya daha fazla ayrıcalık ekler.|
-|[CTokenPrivileges::D Sil](#delete)|`CTokenPrivileges` Nesnesinden bir ayrıcalık siler.|
-|[CTokenPrivileges::D eleteAll](#deleteall)|`CTokenPrivileges` Nesneden tüm ayrıcalıkları siler.|
-|[CTokenPrivileges:: GetCount](#getcount)|`CTokenPrivileges` Nesnedeki ayrıcalık girişi sayısını döndürür.|
-|[CTokenPrivileges:: GetDisplayNames](#getdisplaynames)|`CTokenPrivileges` Nesnesinde içerilen ayrıcalıkların görünen adlarını alır.|
-|[CTokenPrivileges:: GetLength](#getlength)|`CTokenPrivileges` Nesnenin temsil ettiği `TOKEN_PRIVILEGES` yapıyı tutmak için gereken bayt cinsinden arabellek boyutunu döndürür.|
-|[CTokenPrivileges:: Getluıdsandattributes](#getluidsandattributes)|`CTokenPrivileges` Nesnesinden yerel olarak benzersiz tanımlayıcılar (LUIDs) ve öznitelik bayraklarını alır.|
-|[CTokenPrivileges:: GetNamesAndAttributes](#getnamesandattributes)|`CTokenPrivileges` Nesneden ayrıcalık adlarını ve öznitelik bayraklarını alır.|
-|[CTokenPrivileges:: GetPTOKEN_PRIVILEGES](#getptoken_privileges)|`TOKEN_PRIVILEGES` Yapıya bir işaretçi döndürür.|
-|[CTokenPrivileges:: LookupPrivilege](#lookupprivilege)|Verilen ayrıcalık adı ile ilişkili özniteliği alır.|
+|[CTokenPrivileges::Ekle](#add)|`CTokenPrivileges` Nesneye bir veya daha fazla ayrıcalık ekler.|
+|[CTokenPrivileges::Delete](#delete)|Nesneden bir ayrıcalığı `CTokenPrivileges` siler.|
+|[CTokenPrivileges::DeleteAll](#deleteall)|Nesnedeki `CTokenPrivileges` tüm ayrıcalıkları siler.|
+|[CTokenPrivileges::GetCount](#getcount)|`CTokenPrivileges` Nesnedeki ayrıcalık girişlerinin sayısını döndürür.|
+|[CTokenPrivileges::GetDisplayNames](#getdisplaynames)|`CTokenPrivileges` Nesnede bulunan ayrıcalıklar için görüntü adlarını alır.|
+|[CTokenPrivileges::GetLength](#getlength)|Nesne tarafından temsil edilen `TOKEN_PRIVILEGES` yapıyı tutmak için gereken arabellek boyutunu baytolarak döndürür. `CTokenPrivileges`|
+|[CTokenPrivileges::GetLuidsAndAttributes](#getluidsandattributes)|Yerel olarak benzersiz tanımlayıcıları (LUIDs) alır ve nesneden `CTokenPrivileges` bayraklar atfeder.|
+|[CTokenPrivileges::GetNamesAndAttributes](#getnamesandattributes)|Ayrıcalık adlarını alır ve `CTokenPrivileges` nesnelerden bayraklar atfeder.|
+|[CTokenAyrıcalıklar::GetPTOKEN_PRIVILEGES](#getptoken_privileges)|Yapıya bir `TOKEN_PRIVILEGES` işaretçi döndürür.|
+|[CTokenPrivileges::LookupPrivilege](#lookupprivilege)|Verilen bir ayrıcalık adı ile ilişkili özniteliği alır.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CTokenPrivileges:: operator const TOKEN_PRIVILEGES *](#operator_const_token_privileges__star)|`TOKEN_PRIVILEGES` Yapının işaretçisine bir değer yayınlar.|
-|[CTokenPrivileges:: operator =](#operator_eq)|Atama işleci.|
+|[CTokenPrivileges::operatör const TOKEN_PRIVILEGES *](#operator_const_token_privileges__star)|`TOKEN_PRIVILEGES` Yapıya bir işaretçiiçin bir değer atar.|
+|[CTokenPrivileges::operator =](#operator_eq)|Atama işleci.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[Erişim belirteci](/windows/win32/SecAuthZ/access-tokens) bir işlemin veya iş parçacığının güvenlik bağlamını açıklayan ve bir Windows sisteminde oturum açan her kullanıcıya ayrılan bir nesnedir.
+[Erişim belirteci,](/windows/win32/SecAuthZ/access-tokens) bir işlemin veya iş parçacığının güvenlik bağlamını açıklayan ve windows sistemine oturum açmış her kullanıcıya ayrılan bir nesnedir.
 
-Erişim belirteci, her kullanıcıya verilen çeşitli güvenlik ayrıcalıklarını tanımlamakta kullanılır. Ayrıcalık, yerel olarak benzersiz tanımlayıcı ( [LUID](/windows/win32/api/winnt/ns-winnt-luid)) ve tanımlayıcı dize olarak adlandırılan 64 bitlik bir sayıdan oluşur.
+Erişim belirteci, her kullanıcıya verilen çeşitli güvenlik ayrıcalıklarını açıklamak için kullanılır. Ayrıcalık, yerel olarak benzersiz tanımlayıcı [(LUID)](/windows/win32/api/winnt/ns-winnt-luid)adı verilen 64 bitlik bir sayı ve tanımlayıcı dizeden oluşur.
 
-Sınıfı, TOKEN_PRIVILEGES yapısına yönelik bir sarmalayıcı ve 0 veya daha fazla ayrıcalık içerir. [](/windows/win32/api/winnt/ns-winnt-token_privileges) `CTokenPrivileges` Ayrıcalıklar, sağlanan sınıf yöntemleri kullanılarak eklenebilir, silinebilir veya sorgulanabilir.
+`CTokenPrivileges` Sınıf, [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısı için bir paketleyicidir ve 0 veya daha fazla ayrıcalık içerir. Ayrıcalıklar, sağlanan sınıf yöntemleri kullanılarak eklenebilir, silinebilir veya sorgulanabilir.
 
-Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
+Windows'daki erişim denetimi modeline giriş için Windows SDK'daki [Access Denetimi'ne](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlsecurity. h
+**Üstbilgi:** atlsecurity.h
 
-##  <a name="add"></a>CTokenPrivileges:: Add
+## <a name="ctokenprivilegesadd"></a><a name="add"></a>CTokenPrivileges::Ekle
 
-`CTokenPrivileges` Erişim belirteci nesnesine bir veya daha fazla ayrıcalık ekler.
+Erişim belirteci nesnesine `CTokenPrivileges` bir veya daha fazla ayrıcalık ekler.
 
 ```
 bool Add(LPCTSTR pszPrivilege, bool bEnable) throw(...);
@@ -95,19 +95,19 @@ void Add(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *pszPrivilege*<br/>
-WINNT içinde tanımlandığı şekilde, ayrıcalığın adını belirten null ile sonlandırılmış bir dize işaretçisi. H üstbilgi dosyası.
+WINNT'de tanımlandığı gibi ayrıcalığın adını belirten geçersiz sonlandırılmış bir dize işaretçi. H üstbilgi dosyası.
 
-*bEnable*<br/>
-True ise ayrıcalık etkindir. Yanlış ise, ayrıcalık devre dışı bırakılır.
+*bEtkinleştir*<br/>
+Doğruysa, ayrıcalık etkinleştirilir. Yanlışsa, ayrıcalık devre dışı bırakılır.
 
-*rPrivileges*<br/>
-Bir [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısına başvuru. Ayrıcalıklar ve öznitelikler bu yapıdan kopyalanır ve `CTokenPrivileges` nesnesine eklenir.
+*rAyrıcalıklar*<br/>
+[TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) bir yapıya atıfta bulunarak. Ayrıcalıklar ve öznitelikler bu yapıdan kopyalanır `CTokenPrivileges` ve nesneye eklenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntemin ilk formu, ayrıcalıklar başarıyla eklenirse true, aksi takdirde false döndürür.
+Ayrıcalıklar başarıyla eklenirse, aksi takdirde bu yöntemin ilk biçimi doğru döndürür.
 
-##  <a name="ctokenprivileges"></a>CTokenPrivileges:: CTokenPrivileges
+## <a name="ctokenprivilegesctokenprivileges"></a><a name="ctokenprivileges"></a>CTokenPrivileges::CTokenPrivileges
 
 Oluşturucu.
 
@@ -119,19 +119,19 @@ CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ taraftan*<br/>
-Yeni nesneye atanacak nesne. `CTokenPrivileges`
+*Rhs*<br/>
+Yeni `CTokenPrivileges` nesneye atayacak nesne.
 
-*rPrivileges*<br/>
-Yeni`CTokenPrivileges` nesnesine atanacak [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısı.
+*rAyrıcalıklar*<br/>
+Yeni [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) `CTokenPrivileges` nesneye atamak için TOKEN_PRIVILEGES yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne `CTokenPrivileges` , isteğe bağlı olarak, bir `TOKEN_PRIVILEGES` yapı veya daha önce tanımlanmış `CTokenPrivileges` bir nesne kullanılarak oluşturulabilir.
+Nesne `CTokenPrivileges` isteğe bağlı olarak `TOKEN_PRIVILEGES` bir yapı veya `CTokenPrivileges` daha önce tanımlanmış bir nesne kullanılarak oluşturulabilir.
 
-##  <a name="dtor"></a>CTokenPrivileges:: ~ CTokenPrivileges
+## <a name="ctokenprivilegesctokenprivileges"></a><a name="dtor"></a>CTokenPrivileges::~CTokenPrivileges
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 virtual ~CTokenPrivileges() throw();
@@ -139,11 +139,11 @@ virtual ~CTokenPrivileges() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı, ayrılan tüm kaynakları serbest bırakır.
+Yıkıcı, ayrılan tüm kaynakları serbest sağlar.
 
-##  <a name="delete"></a>CTokenPrivileges::D Sil
+## <a name="ctokenprivilegesdelete"></a><a name="delete"></a>CTokenPrivileges::Delete
 
-`CTokenPrivileges` Erişim belirteci nesnesinden bir ayrıcalığı siler.
+Erişim belirteci `CTokenPrivileges` nesnesinden bir ayrıcalığı siler.
 
 ```
 bool Delete(LPCTSTR pszPrivilege) throw();
@@ -152,19 +152,19 @@ bool Delete(LPCTSTR pszPrivilege) throw();
 ### <a name="parameters"></a>Parametreler
 
 *pszPrivilege*<br/>
-WINNT içinde tanımlandığı şekilde, ayrıcalığın adını belirten null ile sonlandırılmış bir dize işaretçisi. H üstbilgi dosyası. Örneğin, bu parametre sabit SE_SECURITY_NAME veya buna karşılık gelen "SeSecurityPrivilege" dizesini belirtebilir.
+WINNT'de tanımlandığı gibi ayrıcalığın adını belirten geçersiz sonlandırılmış bir dize işaretçi. H üstbilgi dosyası. Örneğin, bu parametre sabit SE_SECURITY_NAME veya karşılık gelen dize, "SeSecurityPrivilege" belirtebilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrıcalık başarıyla silinmişse true, aksi takdirde false döndürür.
+Ayrıcalık başarıyla silindiyse doğru döndürür, aksi takdirde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, kısıtlı belirteçler oluşturmaya yönelik bir araç olarak faydalıdır.
+Bu yöntem, sınırlı belirteçleri oluşturmak için bir araç olarak yararlıdır.
 
-##  <a name="deleteall"></a>CTokenPrivileges::D eleteAll
+## <a name="ctokenprivilegesdeleteall"></a><a name="deleteall"></a>CTokenPrivileges::DeleteAll
 
-`CTokenPrivileges` Erişim belirteci nesnesinden tüm ayrıcalıkları siler.
+Erişim belirteci nesnesinden `CTokenPrivileges` tüm ayrıcalıkları siler.
 
 ```
 void DeleteAll() throw();
@@ -172,11 +172,11 @@ void DeleteAll() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CTokenPrivileges` Erişim belirteci nesnesinde bulunan tüm ayrıcalıkları siler.
+Erişim belirteç nesnesinde `CTokenPrivileges` bulunan tüm ayrıcalıkları siler.
 
-##  <a name="getdisplaynames"></a>CTokenPrivileges:: GetDisplayNames
+## <a name="ctokenprivilegesgetdisplaynames"></a><a name="getdisplaynames"></a>CTokenPrivileges::GetDisplayNames
 
-`CTokenPrivileges` Erişim belirteci nesnesinde içerilen ayrıcalıkların görünen adlarını alır.
+Erişim belirteci nesnesinde `CTokenPrivileges` bulunan ayrıcalıklar için görüntü adlarını alır.
 
 ```
 void GetDisplayNames(CNames* pDisplayNames) const throw(...);
@@ -185,17 +185,17 @@ void GetDisplayNames(CNames* pDisplayNames) const throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *pDisplayNames*<br/>
-`CString` Nesne dizisine yönelik bir işaretçi. `CNames`bir typedef olarak tanımlanır: `CTokenPrivileges::CAtlArray<CString>`.
+`CString` Bir dizi nesne için bir işaretçi. `CNames`typedef olarak tanımlanır: `CTokenPrivileges::CAtlArray<CString>`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametresi `pDisplayNames` , nesnesindebulunan`CTokenPrivileges` ayrıcalıklara karşılık gelen görünen adları `CString` alacak nesneler dizisinin bir işaretçisidir. Bu yöntem yalnızca, WINNT 'in tanımlı ayrıcalıklar bölümünde belirtilen ayrıcalıkların görünen adlarını alır. Olsun.
+Parametre, `pDisplayNames` nesnede bulunan ayrıcalıklara karşılık gelen görüntü adlarını alacak `CString` bir nesne `CTokenPrivileges` dizisine işaretçidir. Bu yöntem, yalnızca WINNT'nin Tanımlı Ayrıcalıklar bölümünde belirtilen ayrıcalıklar için görüntü adlarını alır. H.
 
-Bu yöntem görüntülenebilen bir ad alır: Örneğin, öznitelik adı SE_REMOTE_SHUTDOWN_NAME ise görüntülenebilen ad "uzak sistemden kapanmaya zorla" olur. Sistem adını almak için [CTokenPrivileges:: GetNamesAndAttributes](#getnamesandattributes)kullanın.
+Bu yöntem görüntülenebilir bir ad alır: örneğin, öznitelik adı SE_REMOTE_SHUTDOWN_NAME ise, görüntülenebilir ad "Uzak bir sistemden zorla kapatma." Sistem adını elde etmek için [CTokenPrivileges kullanın::GetNamesAndAttributes](#getnamesandattributes).
 
-##  <a name="getcount"></a>CTokenPrivileges:: GetCount
+## <a name="ctokenprivilegesgetcount"></a><a name="getcount"></a>CTokenPrivileges::GetCount
 
-`CTokenPrivileges` Nesnedeki ayrıcalık girişi sayısını döndürür.
+`CTokenPrivileges` Nesnedeki ayrıcalık girişlerinin sayısını döndürür.
 
 ```
 UINT GetCount() const throw();
@@ -203,9 +203,9 @@ UINT GetCount() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CTokenPrivileges` Nesnesinde içerilen ayrıcalıkların sayısını döndürür.
+`CTokenPrivileges` Nesnede bulunan ayrıcalıkların sayısını verir.
 
-##  <a name="getlength"></a>CTokenPrivileges:: GetLength
+## <a name="ctokenprivilegesgetlength"></a><a name="getlength"></a>CTokenPrivileges::GetLength
 
 `CTokenPrivileges` Nesnenin uzunluğunu döndürür.
 
@@ -215,11 +215,11 @@ UINT GetLength() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İçerdiği tüm ayrıcalık girişleri dahil olmak üzere, `TOKEN_PRIVILEGES` `CTokenPrivileges` nesne tarafından temsil edilen bir yapıyı tutmak için gereken bayt sayısını döndürür.
+İçerdiği tüm ayrıcalık girişleri de `TOKEN_PRIVILEGES` dahil olmak `CTokenPrivileges` üzere nesne tarafından temsil edilen bir yapıyı tutmak için gereken bayt sayısını verir.
 
-##  <a name="getluidsandattributes"></a>CTokenPrivileges:: Getluıdsandattributes
+## <a name="ctokenprivilegesgetluidsandattributes"></a><a name="getluidsandattributes"></a>CTokenPrivileges::GetLuidsAndAttributes
 
-`CTokenPrivileges` Nesnesinden yerel olarak benzersiz tanımlayıcılar (LUIDs) ve öznitelik bayraklarını alır.
+Yerel olarak benzersiz tanımlayıcıları (LUIDs) alır ve nesneden `CTokenPrivileges` bayraklar atfeder.
 
 ```
 void GetLuidsAndAttributes(
@@ -229,19 +229,19 @@ void GetLuidsAndAttributes(
 
 ### <a name="parameters"></a>Parametreler
 
-*pPrivileges*<br/>
-[LUID](/windows/win32/api/winnt/ns-winnt-luid) nesnelerinin dizisine yönelik işaretçi. `CLUIDArray`, olarak `CAtlArray<LUID> CLUIDArray`tanımlanan bir typedef.
+*pAyrıcalıklar*<br/>
+[LUID](/windows/win32/api/winnt/ns-winnt-luid) nesnelerinbir dizi işaretçi. `CLUIDArray`olarak tanımlanan bir `CAtlArray<LUID> CLUIDArray`typedef'tir.
 
 *pAttributes*<br/>
-Bir DWORD nesneleri dizisine yönelik işaretçi. Bu parametre atlanırsa veya NULL ise, öznitelikler alınmadı. `CAttributes`, olarak `CAtlArray <DWORD> CAttributes`tanımlanan bir typedef.
+DWORD nesnelerinin bir dizi işaretçisi. Bu parametre atlanırsa veya NULL'sa, öznitelikler alınmaz. `CAttributes`olarak tanımlanan bir `CAtlArray <DWORD> CAttributes`typedef'tir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `CTokenPrivileges` erişim belirteci nesnesinde bulunan tüm ayrıcalıkların listesini alır ve bağımsız LUIDs ve (isteğe bağlı olarak) öznitelik bayraklarını dizi nesnelerine yerleştirir.
+Bu `CTokenPrivileges` yöntem, erişim belirteç nesnesinde bulunan tüm ayrıcalıkları sıralar ve tek tek LUID'leri ve (isteğe bağlı olarak) öznitelik bayraklarını dizi nesnelerine yerleştirilecektir.
 
-##  <a name="getnamesandattributes"></a>CTokenPrivileges:: GetNamesAndAttributes
+## <a name="ctokenprivilegesgetnamesandattributes"></a><a name="getnamesandattributes"></a>CTokenPrivileges::GetNamesAndAttributes
 
-`CTokenPrivileges` Nesneden Name ve Attribute bayraklarını alır.
+`CTokenPrivileges` Ad ve öznitelik bayraklarını nesneden alır.
 
 ```
 void GetNamesAndAttributes(
@@ -251,21 +251,21 @@ void GetNamesAndAttributes(
 
 ### <a name="parameters"></a>Parametreler
 
-*pNames 'lar*<br/>
-`CString` Nesne dizisine yönelik işaretçi. `CNames`, olarak `CAtlArray <CString> CNames`tanımlanan bir typedef.
+*pNames*<br/>
+Bir `CString` dizi nesneye işaretçi. `CNames`olarak tanımlanan bir `CAtlArray <CString> CNames`typedef'tir.
 
 *pAttributes*<br/>
-Bir DWORD nesneleri dizisine yönelik işaretçi. Bu parametre atlanırsa veya NULL ise, öznitelikler alınmadı. `CAttributes`, olarak `CAtlArray <DWORD> CAttributes`tanımlanan bir typedef.
+DWORD nesnelerinin bir dizi işaretçisi. Bu parametre atlanırsa veya NULL'sa, öznitelikler alınmaz. `CAttributes`olarak tanımlanan bir `CAtlArray <DWORD> CAttributes`typedef'tir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `CTokenPrivileges` nesnesinde yer alan tüm ayrıcalıkların listesini, adını ve (isteğe bağlı olarak) öznitelik bayraklarını dizi nesnelerine yerleştirmeyecektir.
+Bu yöntem, `CTokenPrivileges` ad ve (isteğe bağlı olarak) öznitelik bayraklarını dizi nesnelerine yerleştirerek nesnede bulunan tüm ayrıcalıkları sayısala dönüştürür.
 
-Bu yöntem, görüntülenebilen ad yerine öznitelik adını alır: Örneğin, öznitelik adı SE_REMOTE_SHUTDOWN_NAME ise, sistem adı "SeRemoteShutdownPrivilege" olur. Görüntülenebilen adı almak için [CTokenPrivileges:: GetDisplayNames](#getdisplaynames)metodunu kullanın.
+Bu yöntem görüntülenebilir ad yerine öznitelik adını alır: örneğin, öznitelik adı SE_REMOTE_SHUTDOWN_NAME ise, sistem adı "SeRemoteShutdownPrivilege." Görüntülenebilir adı elde etmek için [CTokenPrivileges::GetDisplayNames](#getdisplaynames)yöntemini kullanın.
 
-##  <a name="getptoken_privileges"></a>CTokenPrivileges:: GetPTOKEN_PRIVILEGES
+## <a name="ctokenprivilegesgetptoken_privileges"></a><a name="getptoken_privileges"></a>CTokenAyrıcalıklar::GetPTOKEN_PRIVILEGES
 
-`TOKEN_PRIVILEGES` Yapıya bir işaretçi döndürür.
+Yapıya bir `TOKEN_PRIVILEGES` işaretçi döndürür.
 
 ```
 const TOKEN_PRIVILEGES* GetPTOKEN_PRIVILEGES() const throw(...);
@@ -275,9 +275,9 @@ const TOKEN_PRIVILEGES* GetPTOKEN_PRIVILEGES() const throw(...);
 
 [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısına bir işaretçi döndürür.
 
-##  <a name="lookupprivilege"></a>CTokenPrivileges:: LookupPrivilege
+## <a name="ctokenprivilegeslookupprivilege"></a><a name="lookupprivilege"></a>CTokenPrivileges::LookupPrivilege
 
-Verilen ayrıcalık adı ile ilişkili özniteliği alır.
+Verilen bir ayrıcalık adı ile ilişkili özniteliği alır.
 
 ```
 bool LookupPrivilege(
@@ -288,16 +288,16 @@ bool LookupPrivilege(
 ### <a name="parameters"></a>Parametreler
 
 *pszPrivilege*<br/>
-WINNT içinde tanımlandığı şekilde, ayrıcalığın adını belirten null ile sonlandırılmış bir dize işaretçisi. H üstbilgi dosyası. Örneğin, bu parametre sabit SE_SECURITY_NAME veya buna karşılık gelen "SeSecurityPrivilege" dizesini belirtebilir.
+WINNT'de tanımlandığı gibi ayrıcalığın adını belirten geçersiz sonlandırılmış bir dize işaretçi. H üstbilgi dosyası. Örneğin, bu parametre sabit SE_SECURITY_NAME veya karşılık gelen dize, "SeSecurityPrivilege" belirtebilir.
 
-*pdwAttributes*<br/>
-Öznitelikleri alan bir değişkene yönelik işaretçi.
+*pdwÖznitelikler*<br/>
+Öznitelikleri alan bir değişkeni işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öznitelik başarıyla alınırsa true, aksi takdirde false döndürür.
+Öznitelik başarıyla alınırsa doğru döndürür, aksi takdirde yanlış.
 
-##  <a name="operator_eq"></a>CTokenPrivileges:: operator =
+## <a name="ctokenprivilegesoperator-"></a><a name="operator_eq"></a>CTokenPrivileges::operator =
 
 Atama işleci.
 
@@ -308,19 +308,19 @@ CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*rPrivileges*<br/>
-`CTokenPrivileges` Nesneye atanacak [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısı.
+*rAyrıcalıklar*<br/>
+Nesneye atamak için `CTokenPrivileges` [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısı.
 
-*sağ taraftan*<br/>
-Nesneye `CTokenPrivileges` atanacak nesne.
+*Rhs*<br/>
+Nesneye `CTokenPrivileges` atayacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Güncelleştirilmiş `CTokenPrivileges` nesneyi döndürür.
 
-##  <a name="operator_const_token_privileges__star"></a>CTokenPrivileges:: operator const TOKEN_PRIVILEGES\*
+## <a name="ctokenprivilegesoperator-const-token_privileges-"></a><a name="operator_const_token_privileges__star"></a>CTokenPrivileges::operatör const TOKEN_PRIVILEGES\*
 
-`TOKEN_PRIVILEGES` Yapının işaretçisine bir değer yayınlar.
+`TOKEN_PRIVILEGES` Yapıya bir işaretçiiçin bir değer atar.
 
 ```
 operator const TOKEN_PRIVILEGES *() const throw(...);
@@ -328,13 +328,13 @@ operator const TOKEN_PRIVILEGES *() const throw(...);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir değeri [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısına bir işaretçiye yayınlar.
+[TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısına bir işaretçi için bir değer atar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Güvenlik örneği](../../overview/visual-cpp-samples.md)<br/>
-[TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges)<br/>
-[DEĞERINI](/windows/win32/api/winnt/ns-winnt-luid)<br/>
+[Güvenlik Örneği](../../overview/visual-cpp-samples.md)<br/>
+[Token_prıvıleges](/windows/win32/api/winnt/ns-winnt-token_privileges)<br/>
+[Luıd](/windows/win32/api/winnt/ns-winnt-luid)<br/>
 [LUID_AND_ATTRIBUTES](/windows/win32/api/winnt/ns-winnt-luid_and_attributes)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

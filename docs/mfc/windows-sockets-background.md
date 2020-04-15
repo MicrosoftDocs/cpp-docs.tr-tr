@@ -18,86 +18,86 @@ helpviewer_keywords:
 - sequenced data flow
 - stream sockets [MFC]
 ms.assetid: f60d4ed2-bf23-4a0e-98d2-fee77e8473dd
-ms.openlocfilehash: 6ab866609d0b75aaf9d06a01c204433d80e7e3d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c4a6dc6740660d1097785578cdac355983cad18
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62217884"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81360122"
 ---
 # <a name="windows-sockets-background"></a>Windows Yuvaları: Arka Plan
 
-Bu makalede, doğası ve Windows Sockets amacını açıklar. Makale ayrıca:
+Bu makalede, Windows Soketleri'nin doğası ve amacı açıklanmaktadır. Makale de:
 
-- ["Yuva" terimi tanımlar](#_core_definition_of_a_socket).
+- ["Soket" terimini tanımlar.](#_core_definition_of_a_socket)
 
-- [SOCKET tanıtıcısı veri türünü açıklayan](#_core_the_socket_data_type).
+- [SOCKET işleişi veri türünü açıklar.](#_core_the_socket_data_type)
 
-- [Yuva kullanımları açıklar](#_core_uses_for_sockets).
+- [Soketlerin kullanımlarını açıklar.](#_core_uses_for_sockets)
 
-Windows Yuvaları belirtimi Microsoft Windows için bir ikili ile uyumlu ağ arabirimi tanımlar. Windows Yuvaları Berkeley yazılım dağıtımı UNIX yuva uygulamasında temel (BSD, 4.3 sürüm) California Üniversitesi, Berkeley öğesinden. Belirtimi BSD stili yuva yordamları ve Windows için belirli uzantılar içerir. Windows Yuvaları kullanma, uygulamanızı Windows Sockets API'si için uygun olan herhangi bir ağ üzerinden iletişim kurmasına izin verir. Win32'de, Windows Sockets için iş parçacığı güvenliği sağlar.
+Windows Soketleri belirtimi, Microsoft Windows için ikili uyumlu ağ programlama arabirimi tanımlar. Windows Soketleri Berkeley California Üniversitesi Berkeley Yazılım Dağıtımı (BSD, sürüm 4.3) UNIX soketleri uygulama dayanmaktadır. Belirtim, hem BSD tarzı soket yordamlarını hem de Windows'a özgü uzantıları içerir. Windows Soketleri'ni kullanmak, uygulamanızın Windows Soketleri API'sine uygun herhangi bir ağ üzerinden iletişim kurmasına izin verir. Win32'de, Windows Soketleri iş parçacığı güvenliğini sağlar.
 
-Birçok ağ yazılım satıcısı Windows Sockets altında İletim Denetimi Protokolü/Internet Protokolü (TCP/IP), Xerox ağ sistem (XNS) Digital Equipment Corporation'ın DECNet protokolü, Novell Corporation'ın İnternet'e dahil olmak üzere ağ protokolleri destekler. Paket Exchange/sıralı paketlenmiş Değişimi (IPX/SPX) ve diğerleri. Mevcut Windows yuva belirtimi için TCP/IP yuva soyutlama tanımlasa da herhangi bir ağ protokolünü uygulayan Windows Sockets dinamik bağlantı kitaplığı (DLL) kendi sürümüne sağlanarak Windows Sockets ile uyumlu. Windows Sockets ile yazılmış ticari uygulamaların X Windows sunucuları, terminal öykünücüsünü ve elektronik posta sistemleri verilebilir.
+Birçok ağ yazılımı satıcısı, Iletim Kontrol Protokolü/Internet Protokolü (TCP/IP), Xerox Ağ Sistemi (XNS), Digital Equipment Corporation'ın DECNet protokolü, Novell Corporation'ın Internet Packet Exchange/Sequenced Packed Exchange (IPX/SPX) ve diğerleri dahil olmak üzere ağ protokolleri altında Windows Soketlerini destekler. Mevcut Windows Sockets belirtimi TCP/IP için soketleri soyutlama tanımlasa da, herhangi bir ağ protokolü Windows Soketleri uygulayan dinamik bağlantı kitaplığı (DLL) kendi sürümünü sağlayarak Windows Soketleri ile uyumlu olabilir. Windows Soketleri ile yazılmış ticari uygulamalara örnek olarak X Windows sunucuları, terminal emülatörleri ve elektronik posta sistemleri verilebilir.
 
 > [!NOTE]
->  Windows Yuvaları amacı, temel ağ, ağ hakkında bilgi sahibi olmak zorunda değildir ve uygulamanızı yuva destekleyen herhangi bir ağda çalışabilmesi hemen soyut sağlamaktır. Sonuç olarak, bu belge ağ protokolleri ayrıntılarını ele almaz.
+> Windows Soketleri'nin amacı, bu ağ hakkında bilgili olmak zorunda kalmamak ve böylece uygulamanızın soketleri destekleyen herhangi bir ağda çalıştırabilmesi için temel ağı soyutlamaktır. Sonuç olarak, bu belgeler ağ protokollerinin ayrıntılarını tartışmaz.
 
-Microsoft Foundation Class Kitaplığı'nı (MFC), iki sınıf sağlanarak Windows Sockets API'si ile programlama destekler. Bu sınıflardan birine `CSocket`, yüksek düzeyde soyutlama, ağ iletişimi programlama basitleştirmek için sağlar.
+Microsoft Foundation Class Library (MFC), iki sınıf sağlayarak Windows Soketleri API'si ile programlamayı destekler. Bu sınıflardan `CSocket`biri, ağ iletişim programlama basitleştirmek için soyutlama yüksek düzeyde sağlar.
 
-Windows Yuvaları belirtimi, Windows Yuvaları: Açık arabirim ağ bilgi işlem altında Microsoft Windows, artık sürüm 1.1, en çok sayıda kişiler ve TCP/IP'yi topluluğundaki şirketler tarafından açık bir ağ standart geliştirilmiştir ve kullanılmak üzere özgürce kullanılabilir. Yuva modelini destekleyen bir "iletişimi etki alanı" şu anda programlama, Internet Protokolü paketi kullanma. Belirtimi Windows SDK içinde kullanılabilir.
+Windows Soketleri belirtimi, Windows Soketleri: Microsoft Windows altında Ağ Bilgi İşlem için Açık Arabirim, şimdi sürüm 1.1, TCP / IP topluluğunda bireyler ve şirketler büyük bir grup tarafından açık ağ standardı olarak geliştirilmiştir ve serbestçe kullanılabilir. Soket programlama modeli, Internet Protocol Suite'i kullanarak şu anda bir "iletişim etki alanını" destekler. Belirtim Windows SDK'da mevcuttur.
 
 > [!TIP]
->  Yuva Internet Protokolü paketi kullandığından, "bilgi Otoyol." Internet iletişimini destekleyen uygulamalar için tercih edilen yol oldukları.
+> Soketler Internet Protocol Suite'i kullandığından, "bilgi otobanında" Internet iletişimini destekleyen uygulamalar için tercih edilen yoldur.
 
-##  <a name="_core_definition_of_a_socket"></a> Bir yuva tanımı
+## <a name="definition-of-a-socket"></a><a name="_core_definition_of_a_socket"></a>Sokettanımı
 
-Bir iletişim uç noktası yuvası olup — bir nesne üzerinden Windows Sockets uygulama gönderir veya bir ağ üzerinden veri paketlerini alır. Bir yuva bir türe sahiptir ve çalışan bir işleme ile ilişkilendirilir ve bir ad olabilir. Şu anda, yuva genellikle yalnızca "Internet Protokolü paketi kullanan aynı iletişim etki alanında," diğer yuvaları ile veri değişimi.
+Soket, Windows Sockets uygulamasının ağ üzerinden veri paketleri gönderdiği veya aldığı bir nesne olan bir iletişim bitiş noktasıdır. Bir soketin bir türü vardır ve çalışan bir işlemle ilişkilidir ve bir adı olabilir. Şu anda soketler genellikle internet protokol paketini kullanan aynı "iletişim etki alanında" yalnızca diğer soketlerle veri alışverişi yapmaktadır.
 
-Çift yönlü yuva her iki çeşidi değildir; oldukları her iki yönde de aynı anda bildirilmesi bir veri akışı (tam çift yönlü).
+Her iki soket türü de çift yönlü; aynı anda her iki yönde de iletilebilecek veri akışlarıdır (tam çift yönlü).
 
-İki yuva türleri kullanılabilir:
+İki soket türü mevcuttur:
 
-- Stream yuva
+- Akış yuvaları
 
-   Stream yuva sağlamak için bir veri akışı kayıt sınırlar olmadan: bayt akışı. Akışları teslim edilecek ve doğru şekilde sıralı inceleyip unduplicated garanti edilir.
+   Akış soketleri, kayıt sınırları olmayan bir veri akışı sağlar: bir bayt akışı. Akışların teslim edilmesi ve doğru sıralanıp çoğaltılmama garantisi vardır.
 
 - Veri birimi yuvaları
 
-   Teslim garanti edilmez ve olarak sıralı değil veri birimi yuvaları destek kayıt odaklı veri akışı gönderilen veya unduplicated.
+   Datagram soketleri, teslim edilmesi garanti edilmeyen ve gönderilmeveya çoğaltılmamış olarak sıralanamayan kayıt yönelimli bir veri akışını destekler.
 
-"Sıralı" paketleri sıraya gönderilen teslim edilmesini anlamına gelir. "Unduplicated" belirli bir paket yalnızca bir kez elde anlamına gelir.
+"Sıralı", paketlerin gönderilen siparişte teslim olduğu anlamına gelir. "Çoğaltılmadı" belirli bir paketi yalnızca bir kez aldığınız anlamına gelir.
 
 > [!NOTE]
->  XNS gibi bazı ağ protokolleri altında akışları bayt akışlarında yerine kayıt akışları olarak yönelik kayıt olabilir. Daha yaygın TCP/IP protokolünün altında ancak bayt akışları akışlarıdır. Windows Yuvaları temel alınan protokolünden bağımsız bir özet düzeyi sağlar.
+> XNS gibi bazı ağ protokolleri altında, akışlar bayt akışları yerine kayıt akışları olarak kayda yönelik olabilir. Ancak, daha yaygın olan TCP/IP protokolü altında akışlar bayt akışlarıdır. Windows Soketleri, temel protokolden bağımsız bir soyutlama düzeyi sağlar.
 
-Bu türleri hakkında daha fazla bilgi ve hangi durumlarda kullanmak üzere yuva hangi tür [Windows Yuvaları: Stream yuva](../mfc/windows-sockets-stream-sockets.md) ve [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md).
+Bu tür ve hangi durumlarda hangi soket lerin kullanılacağı hakkında bilgi için [Bkz. Windows Soketleri: Akış Soketi](../mfc/windows-sockets-stream-sockets.md) ve [Windows Soketleri: Datagram Soketleri.](../mfc/windows-sockets-datagram-sockets.md)
 
-##  <a name="_core_the_socket_data_type"></a> YUVA veri türü
+## <a name="the-socket-data-type"></a><a name="_core_the_socket_data_type"></a>SOCKET Veri Türü
 
-Her MFC yuva nesnesi Windows Sockets nesnesi için bir tanıtıcı kapsüller. Bu veri türü **YUVA**. A **YUVA** işleyicisidir alınmak üzere `HWND` pencere. MFC yuva sınıflarından kapsüllenmiş tutamacın üzerinde işlemler sağlar.
+Her MFC soketi nesnesi bir Windows Soketleri nesnesine bir tutamacı kapsüller. Bu tanıtıcının veri **SOCKET**türü SOCKET'dir. **SOKET** tutamacı, bir `HWND` pencere için benzerdir. MFC soket sınıfları kapsüllü tutamaç üzerinde işlem sağlar.
 
-**YUVA** veri türü, Windows SDK'sındaki ayrıntılı açıklanmıştır. "Yuva veri türü ve hata değerlerini" Windows Sockets altında görürsünüz.
+**SOCKET** veri türü Windows SDK'da ayrıntılı olarak açıklanmıştır. Bkz. Windows Soketleri altında "Soket Veri Türü ve Hata Değerleri"
 
-##  <a name="_core_uses_for_sockets"></a> Yuva kullanımları
+## <a name="uses-for-sockets"></a><a name="_core_uses_for_sockets"></a>Soketler için kullanım alanları
 
-Yuva en az üç iletişimleri bağlamlarda oldukça kullanışlıdır:
+Soketler en az üç iletişim bağlamında son derece yararlıdır:
 
-- İstemci/sunucu modeli.
+- İstemci/sunucu modelleri.
 
-- Eşler arası senaryoları, Mesajlaşma uygulamaları gibi.
+- İleti uygulamaları gibi eşler arası senaryolar.
 
-- Uzaktan yordam çağrısı (RPC), bir iletiyi bir işlev çağrısı olarak yorumlamak alıcı uygulamanın sağlayarak yapılıyor.
+- Alıcı uygulamanın bir iletiyi işlev çağrısı olarak yorumlatarak uzaktan yordam çağrıları (RPC) yapma.
 
 > [!TIP]
->  Her iki ucunda da iletişim yazarken MFC Yuvaları kullanma için ideal bir durumdur: MFC her iki uçta kullanma. MFC olmayan uygulamalar ile kurarken durum yönetme de dahil olmak üzere, bu konu hakkında daha fazla bilgi için bkz. [Windows Yuvaları: Bayt sıralama](../mfc/windows-sockets-byte-ordering.md).
+> MFC soketlerini kullanmak için ideal durum, iletişimin her iki ucunu da yazarken: Her iki uçta da MFC kullanmak. MFC dışı uygulamalarla iletişim kurarken servis talebinin nasıl yönetilecek olması da dahil olmak üzere bu konu hakkında daha fazla bilgi için [Windows Soketleri: Bayt Siparişi'](../mfc/windows-sockets-byte-ordering.md)ne bakın.
 
-Daha fazla bilgi için Windows Sockets belirtime bakın: **ntohs**, **ntohl**, **htons**, **htonl**. Ayrıca, aşağıdaki konulara bakın:
+Daha fazla bilgi için Windows Soketleri Belirtimi: **ntohs**, **ntohl**, **htons**, **htonl**. Ayrıca, aşağıdaki konulara bakın:
 
-- [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows Yuvaları: Arşivlerle kullanılan yuvalara örnek](../mfc/windows-sockets-example-of-sockets-using-archives.md)
+- [Windows Yuvaları: Arşivlerle Kullanılan Yuvalara Örnek](../mfc/windows-sockets-example-of-sockets-using-archives.md)
 
-- [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

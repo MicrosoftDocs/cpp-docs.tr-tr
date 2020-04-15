@@ -1,5 +1,5 @@
 ---
-title: CStringRefElementTraits sınıfı
+title: CStringRefElementTraits Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CStringRefElementTraits
@@ -10,16 +10,16 @@ f1_keywords:
 helpviewer_keywords:
 - CStringRefElementTraits class
 ms.assetid: cc15062d-5627-46cc-ac2b-1744afdc2dbd
-ms.openlocfilehash: c57fda64689a80dfa548977e56b0416641bb4360
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b4dd76b9592b255a1553be3ca7a249f58fb2672e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62277415"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330581"
 ---
-# <a name="cstringrefelementtraits-class"></a>CStringRefElementTraits sınıfı
+# <a name="cstringrefelementtraits-class"></a>CStringRefElementTraits Sınıfı
 
-Bu sınıf, koleksiyon sınıfı nesnelerini içinde depolanan dizeleri ilgili statik işlevler sağlar. Dize nesnelerinin, başvuru olarak ile dağıtılır.
+Bu sınıf, koleksiyon sınıfı nesnelerinde depolanan dizeleri ile ilgili statik işlevler sağlar. Dize nesneleri başvuru olarak ele alınır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,17 +37,17 @@ Koleksiyonda depolanacak veri türü.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CStringRefElementTraits::CompareElements](#compareelements)|Eşitlik için iki dize öğeleri Karşılaştırılacak statik bu işlevi çağırın.|
-|[CStringRefElementTraits::CompareElementsOrdered](#compareelementsordered)|İki dize öğe Karşılaştırılacak statik bu işlevi çağırın.|
-|[CStringRefElementTraits::Hash](#hash)|Verilen dize öğesi için bir karma değeri hesaplamak için statik bu işlevi çağırın.|
+|[CStringrefElementTraits::CompareElements](#compareelements)|Eşitlik için iki dize öğesini karşılaştırmak için bu statik işlevi çağırın.|
+|[CStringRefElementTraits::CompareElementsOrdered](#compareelementsordered)|İki dize öğesini karşılaştırmak için bu statik işlevi çağırın.|
+|[CStringRefElementTraits::Karma](#hash)|Verilen dize öğesi için karma değeri hesaplamak için bu statik işlevi çağırın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, dizeleri karşılaştırmak ve bir karma değer oluşturmak için statik işlevler sağlar. Bu işlevler, dize tabanlı verileri depolamak için koleksiyon sınıfı kullanıldığında yararlıdır. Farklı [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md) ve [Cstringelementtraitsı](../../atl/reference/cstringelementtraitsi-class.md), `CStringRefElementTraits` neden `CString` olarak geçirilecek bağımsız değişkenleri **const** `CString&` başvuruyor.
+Bu sınıf dizeleri karşılaştırmak ve karma değer oluşturmak için statik işlevler sağlar. Bu işlevler, dize tabanlı verileri depolamak için bir koleksiyon sınıfı kullanırken yararlıdır. [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md) ve [CStringElementTraitsaksine,](../../atl/reference/cstringelementtraitsi-class.md) `CStringRefElementTraits` `CString` **const** `CString&` referanslar olarak geçirilecek bağımsız değişkenler neden olur.
 
-Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
+Daha fazla bilgi için [ATL Koleksiyon Sınıfları'na](../../atl/atl-collection-classes.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -57,11 +57,11 @@ Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-cl
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcoll.h
+**Üstbilgi:** atlcoll.h
 
-##  <a name="compareelements"></a>  CStringRefElementTraits::CompareElements
+## <a name="cstringrefelementtraitscompareelements"></a><a name="compareelements"></a>CStringrefElementTraits::CompareElements
 
-Eşitlik için iki dize öğeleri Karşılaştırılacak statik bu işlevi çağırın.
+Eşitlik için iki dize öğesini karşılaştırmak için bu statik işlevi çağırın.
 
 ```
 static bool CompareElements(INARGTYPE element1, INARGTYPE element2) throw();
@@ -69,19 +69,19 @@ static bool CompareElements(INARGTYPE element1, INARGTYPE element2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*element1*<br/>
+*öğe1*<br/>
 İlk dize öğesi.
 
-*element2*<br/>
+*eleman2*<br/>
 İkinci dize öğesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe yanlış Aksi takdirde, eşitse true döndürür.
+Öğeler eşitse doğru döndürür, aksi takdirde yanlış.
 
-##  <a name="compareelementsordered"></a>  CStringRefElementTraits::CompareElementsOrdered
+## <a name="cstringrefelementtraitscompareelementsordered"></a><a name="compareelementsordered"></a>CStringRefElementTraits::CompareElementsOrdered
 
-İki dize öğe Karşılaştırılacak statik bu işlevi çağırın.
+İki dize öğesini karşılaştırmak için bu statik işlevi çağırın.
 
 ```
 static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
@@ -97,11 +97,11 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizeler aynıysa sıfır, < 0, *str1* olduğu küçüktür *str2*, veya > 0 ise *str1* büyüktür *str2*. [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) yöntemi karşılaştırmalar yapmak için kullanılır.
+Dizeleri aynı ysa sıfır, *str1* str2'den küçükse 0 < veya *str1* *str2'den*büyükse 0'>. *str2* Karşılaştırmaları gerçekleştirmek için [CStringT::Karşılaştır](../../atl-mfc-shared/reference/cstringt-class.md#compare) yöntemi kullanılır.
 
-##  <a name="hash"></a>  CStringRefElementTraits::Hash
+## <a name="cstringrefelementtraitshash"></a><a name="hash"></a>CStringRefElementTraits::Karma
 
-Verilen dize öğesi için bir karma değeri hesaplamak için statik bu işlevi çağırın.
+Verilen dize öğesi için karma değeri hesaplamak için bu statik işlevi çağırın.
 
 ```
 static ULONG Hash(INARGTYPE str) throw();
@@ -109,14 +109,14 @@ static ULONG Hash(INARGTYPE str) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*Str*<br/>
 Dize öğesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizenin içeriklerini kullanarak hesaplanan bir karma değer döndürür.
+Dize içeriğini kullanarak hesaplanan karma değeri döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CElementTraitsBase Sınıfı](../../atl/reference/celementtraitsbase-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

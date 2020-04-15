@@ -1,9 +1,11 @@
 ---
 title: _mkdir, _wmkdir
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _wmkdir
 - _mkdir
+- _o__mkdir
+- _o__wmkdir
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -36,12 +39,12 @@ helpviewer_keywords:
 - _mkdir function
 - _tmkdir function
 ms.assetid: 7f22d01d-63a5-4712-a6e7-d34878b2d840
-ms.openlocfilehash: 0d2fd45b566909a61a04a5cabb34c74b9b253430
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 56e525dd765ff2594eebcfe9a0aed37670b12e3e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951726"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81338779"
 ---
 # <a name="_mkdir-_wmkdir"></a>_mkdir, _wmkdir
 
@@ -61,24 +64,26 @@ int _wmkdir(
 
 ### <a name="parameters"></a>Parametreler
 
-*DizinAdı*<br/>
+*dirname*<br/>
 Yeni bir dizin için yol.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, yeni dizin oluşturulduysa 0 değerini döndürür. Bir hatada, işlev-1 döndürür ve **errno** değerini aşağıdaki şekilde ayarlar.
+Yeni dizin oluşturulduysa, bu işlevlerin her biri 0 değerini döndürür. Bir hatada, işlev -1 döndürür ve **errno'yu** aşağıdaki gibi ayarlar.
 
-**Eexist** *Dizinname* mevcut bir dosyanın, dizinin veya cihazın adı olduğundan dizin oluşturulamadı.
+**EEXIST** *Dirname* varolan bir dosyanın, dizinin veya aygıtın adı olduğundan dizin oluşturulmadı.
 
 **ENOENT** Yol bulunamadı.
 
-Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mkdir** işlevi belirtilen *dirname* ile yeni bir dizin oluşturur. **_mkdir** her çağrı için yalnızca bir yeni dizin oluşturabilir, bu nedenle yalnızca *DizinAdı* 'in son bileşeni yeni bir dizin adını verebilir. **_mkdir** yol sınırlayıcılarını çevirmez. Windows NT 'de, ters eğik çizgi ( \\) ve eğik çizgi (/), çalışma zamanı yordamlarında karakter dizelerinde geçerli yol sınırlayıcılardır.
+_mkdir **_mkdir** işlevi belirtilen dirname ile yeni bir dizin *oluşturur.* **_mkdir** çağrı başına yalnızca bir yeni dizin oluşturabilir, böylece *dirnamenin* yalnızca son bileşeni yeni bir dizin adlandırabilir. **_mkdir** yol sınırlayıcıları çevirmez. Windows NT'de, hem \\ters eğik çizgi ( ) hem de ileri eğik çizgi (/ ) çalışma zamanı yordamlarında karakter dizelerinde geçerli yol sınırlayıcılarıdır.
 
-**_wmkdir** , **_mkdir**'in geniş karakterli bir sürümüdür. **_wmkdir** için *DizinAdı* bağımsız değişkeni geniş karakterli bir dizedir. **_wmkdir** ve **_mkdir** aynı şekilde davranır.
+**_wmkdir** **_mkdir**geniş karakterli bir versiyonudur; **_wmkdir** *dirname* bağımsız değişkeni geniş karakterli bir dizedir. **_wmkdir** ve **_mkdir** aynı şekilde davranan.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -90,14 +95,14 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mkdir**|\<Direct. h >|
-|**_wmkdir**|\<Direct. h > veya \<wchar. h >|
+|**_mkdir**|\<direct.h>|
+|**_wmkdir**|\<direct.h> \<veya wchar.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="libraries"></a>Kitaplıklar
 
-[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -142,6 +147,6 @@ Directory '\testtmp' was successfully removed
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dizin Denetimi](../../c-runtime-library/directory-control.md)<br/>
+[Dizin Kontrolü](../../c-runtime-library/directory-control.md)<br/>
 [_chdir, _wchdir](chdir-wchdir.md)<br/>
 [_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>

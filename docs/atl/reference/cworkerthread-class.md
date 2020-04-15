@@ -1,5 +1,5 @@
 ---
-title: CWorkerThread sınıfı
+title: CWorkerThread Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CWorkerThread
@@ -15,19 +15,19 @@ f1_keywords:
 helpviewer_keywords:
 - CWorkerThread class
 ms.assetid: be79a832-1345-4a36-a13e-a406cc65286f
-ms.openlocfilehash: f1aa76514b98bbf12f8e516d3d54f68e8ef4dd7d
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 05e6b432d44927fa7e276792643e29c80c42d822
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417721"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330217"
 ---
-# <a name="cworkerthread-class"></a>CWorkerThread sınıfı
+# <a name="cworkerthread-class"></a>CWorkerThread Sınıfı
 
-Bu sınıf, bir çalışan iş parçacığı oluşturur veya var olanı kullanır, bir veya daha fazla çekirdek nesne tanıtıcılarını bekler ve tutamaçlardan biri sinyalde olduğunda belirtilen bir istemci işlevini yürütür.
+Bu sınıf bir alt iş parçacığı oluşturur veya varolan bir iş parçacığı kullanır, bir veya daha fazla çekirdek nesne si tutamaçları bekler ve tutamaçlarından biri sinyal verildiğinde belirli bir istemci işlevini yürütür.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,35 +38,35 @@ class CWorkerThread
 
 ### <a name="parameters"></a>Parametreler
 
-*Threadnitelikler*<br/>
-[Crtthreadnitelikler](../../atl/reference/crtthreadtraits-class.md) veya [Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md)gibi iş parçacığı oluşturma işlevini sağlayan sınıf.
+*Konu Özellikleri*<br/>
+[CRTThreadTraits](../../atl/reference/crtthreadtraits-class.md) veya [Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md)gibi iş parçacığı oluşturma işlevini sağlayan sınıf.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="protected-structures"></a>Korumalı yapılar
+### <a name="protected-structures"></a>Korumalı Yapılar
 
 |Adı|Açıklama|
 |----------|-----------------|
 |`WorkerClientEntry`||
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CWorkerThread:: CWorkerThread](#cworkerthread)|Çalışan iş parçacığı için Oluşturucu.|
-|[CWorkerThread:: ~ CWorkerThread](#dtor)|Çalışan iş parçacığının yıkıcısı.|
+|[CWorkerThread::CworkerThread](#cworkerthread)|İşçi iş parçacığı için oluşturucu.|
+|[CWorkerThread::~CWorkerThread](#dtor)|İşçi iş parçacığı için yıkıcı.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CWorkerThread:: AddHandle](#addhandle)|Çalışan iş parçacığı tarafından tutulan listeye bir wasever nesnesinin tanıtıcısını eklemek için bu yöntemi çağırın.|
-|[CWorkerThread:: AddTimer](#addtimer)|Çalışan iş parçacığı tarafından tutulan listeye düzenli bir wasever süreölçeri eklemek için bu yöntemi çağırın.|
-|[CWorkerThread:: GetThreadHandle](#getthreadhandle)|Çalışan iş parçacığının iş parçacığı tanıtıcısını almak için bu yöntemi çağırın.|
-|[CWorkerThread:: GetThreadId](#getthreadid)|Çalışan iş parçacığının iş parçacığı KIMLIĞINI almak için bu yöntemi çağırın.|
-|[CWorkerThread:: Initialize](#initialize)|Çalışan iş parçacığını başlatmak için bu yöntemi çağırın.|
-|[CWorkerThread:: RemoveHandle](#removehandle)|Bir tanıtıcıyı wasever nesneleri listesinden kaldırmak için bu yöntemi çağırın.|
-|[CWorkerThread:: kapanıyor](#shutdown)|Çalışan iş parçacığını kapatmak için bu yöntemi çağırın.|
+|[CWorkerThread::AddHandle](#addhandle)|İşçi iş parçacığı tarafından tutulan listeye beklenebilir bir nesnenin tanıtıcısını eklemek için bu yöntemi arayın.|
+|[CWorkerThread::AddTimer](#addtimer)|Alt iş parçacığı tarafından tutulan listeye periyodik olarak bekletilebilir zamanlayıcı eklemek için bu yöntemi arayın.|
+|[CWorkerThread::GetThreadHandle](#getthreadhandle)|Alt iş parçacığının iş parçacığı tutamacını almak için bu yöntemi arayın.|
+|[CWorkerThread::GetThreadId](#getthreadid)|Alt iş parçacığının iş parçacığı kimliğini almak için bu yöntemi arayın.|
+|[CWorkerThread::Initialize](#initialize)|Alt iş parçacığının başlatılması için bu yöntemi çağırın.|
+|[CWorkerThread::RemoveHandle](#removehandle)|Bekletilebilir nesneler listesinden bir tanıtıcıyı kaldırmak için bu yöntemi arayın.|
+|[CWorkerThread::Kapatma](#shutdown)|Alt iş parçacığı kapatmak için bu yöntemi arayın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -74,27 +74,27 @@ class CWorkerThread
 
 1. Bu sınıfın bir örneğini oluşturun.
 
-1. [CWorkerThread:: Initialize](#initialize)öğesini çağırın.
+1. [CWorkerThread'i Arayın::Initialize.](#initialize)
 
-1. Bir çekirdek nesnesinin tanıtıcısı ve [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md)uygulamasının bir Işaretçisi Ile [CWorkerThread:: AddHandle](#addhandle) çağırın.
+1. [CWorkerThread'i Arayın::Bir](#addhandle) çekirdek nesnesinin tutamacı ve [IWorkerThreadClient'ın](../../atl/reference/iworkerthreadclient-interface.md)uygulanmasına işaretçi ile AddHandle.
 
-   \- veya-
+   \-veya -
 
-   [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md)uygulamasına yönelik bir Işaretçiyle [CWorkerThread:: AddTimer](#addtimer) çağrısı yapın.
+   [Çağrı CWorkerThread::AddTimer](#addtimer) [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md)bir uygulama için bir işaretçi ile .
 
-1. Tanıtıcı veya zamanlayıcı sinyali geldiğinde bazı işlemleri yapmak için [IWorkerThreadClient:: Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) öğesini uygulayın.
+1. [IWorkerThreadClient uygulayın::Tanıtıcı](../../atl/reference/iworkerthreadclient-interface.md#execute) veya zamanlayıcı sinyal verildiğinde bazı eylem de yürütmek.
 
-1. Bir nesneyi wasever nesneleri listesinden kaldırmak için [CWorkerThread:: RemoveHandle](#removehandle)çağırın.
+1. Bir nesneyi beklenebilir nesneler listesinden kaldırmak için [CWorkerThread'i arayın:RemoveHandle.](#removehandle)
 
-1. İş parçacığını sonlandırmak için [CWorkerThread:: kapatılmasını](#shutdown)çağırın.
+1. İş parçacığı sonlandırmak [için, CWorkerThread arayın::Kapatma](#shutdown).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlutil. h
+**Başlık:** atlutil.h
 
-##  <a name="addhandle"></a>CWorkerThread:: AddHandle
+## <a name="cworkerthreadaddhandle"></a><a name="addhandle"></a>CWorkerThread::AddHandle
 
-Çalışan iş parçacığı tarafından tutulan listeye bir wasever nesnesinin tanıtıcısını eklemek için bu yöntemi çağırın.
+İşçi iş parçacığı tarafından tutulan listeye beklenebilir bir nesnenin tanıtıcısını eklemek için bu yöntemi arayın.
 
 ```
 HRESULT AddHandle(
@@ -106,25 +106,25 @@ HRESULT AddHandle(
 ### <a name="parameters"></a>Parametreler
 
 *hObject*<br/>
-Bir wasever nesnesine olan tanıtıcı.
+Beklenebilir bir nesnenin tutamacı.
 
-*pClient*<br/>
-Tanıtıcı sinyalden çağrıldığında çağrılacak nesne üzerindeki [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md) arabirimine yönelik işaretçi.
+*pİsteSİ*<br/>
+Tanıtıcı sinyal verildiğinde çağrılacak nesnedeki [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md) arabiriminin işaretçisi.
 
 *dwParam*<br/>
-Tanıtıcı sinyalden sonra [IWorkerThreadClient:: Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) öğesine geçirilecek parametre.
+[IWorkerThreadClient'a](../../atl/reference/iworkerthreadclient-interface.md#execute) geçirilecek parametre::Tutamaç sinyal verildiğinde çalıştırın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[IWorkerThreadClient:: Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) , *Hosbject*olduğunda *pClient* aracılığıyla çağrılacaktır.
+[IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) *pClient* üzerinden zaman kolu, *hObject*, sinyal olarak çağrılacak.
 
-##  <a name="addtimer"></a>CWorkerThread:: AddTimer
+## <a name="cworkerthreadaddtimer"></a><a name="addtimer"></a>CWorkerThread::AddTimer
 
-Çalışan iş parçacığı tarafından tutulan listeye düzenli bir wasever süreölçeri eklemek için bu yöntemi çağırın.
+Alt iş parçacığı tarafından tutulan listeye periyodik olarak bekletilebilir zamanlayıcı eklemek için bu yöntemi arayın.
 
 ```
 HRESULT AddTimer(
@@ -136,29 +136,29 @@ HRESULT AddTimer(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwınterval*<br/>
-Süre ölçer süresini milisaniye olarak belirtir.
+*dwInterval*<br/>
+Zamanlayıcının periyodu milisaniye cinsinden belirtir.
 
-*pClient*<br/>
-Tanıtıcı sinyalden çağrıldığında çağrılacak nesne üzerindeki [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md) arabirimine yönelik işaretçi.
+*pİsteSİ*<br/>
+Tanıtıcı sinyal verildiğinde çağrılacak nesnedeki [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md) arabiriminin işaretçisi.
 
 *dwParam*<br/>
-Tanıtıcı sinyalden sonra [IWorkerThreadClient:: Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) öğesine geçirilecek parametre.
+[IWorkerThreadClient'a](../../atl/reference/iworkerthreadclient-interface.md#execute) geçirilecek parametre::Tutamaç sinyal verildiğinde çalıştırın.
 
-*Olağanüstü Zamanlayıcı*<br/>
-dışı Başarı durumunda, yeni oluşturulan Zamanlayıcı için tanıtıcıyı alan tanıtıcı değişkeninin adresi.
+*phTimer*<br/>
+[çıkış] Handle değişkeninin adresi, başarı üzerine, yeni oluşturulan zamanlayıcı için tutamacı alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[IWorkerThreadClient:: Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) , zamanlayıcıya sinyal geldiğinde *pClient* aracılığıyla çağrılır.
+[IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) zamanlayıcı sinyal verildiğinde *pClient* üzerinden çağrılacaktır.
 
-Zamanlayıcıyı kapatmak için *olağanüstü zamanlayıcının* Zamanlayıcı tanıtıcısını [CWorkerThread:: RemoveHandle](#removehandle) 'a geçirin.
+Zamanlayıcıyı kapatmak için *phTimer'dan* CWorkerThread'e zamanlayıcı tutamacını [geçirin::Zamanlayıcıyı kapatmak için Kaldırıla'yı kaldırın.](#removehandle)
 
-##  <a name="cworkerthread"></a>CWorkerThread:: CWorkerThread
+## <a name="cworkerthreadcworkerthread"></a><a name="cworkerthread"></a>CWorkerThread::CworkerThread
 
 Oluşturucu.
 
@@ -166,9 +166,9 @@ Oluşturucu.
 CWorkerThread() throw();
 ```
 
-##  <a name="dtor"></a>CWorkerThread:: ~ CWorkerThread
+## <a name="cworkerthreadcworkerthread"></a><a name="dtor"></a>CWorkerThread::~CWorkerThread
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 ~CWorkerThread() throw();
@@ -176,11 +176,11 @@ Yok edicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CWorkerThread:: kapatılmasını](#shutdown)çağırır.
+[CWorkerThread'i Arar::Kapatma.](#shutdown)
 
-##  <a name="getthreadhandle"></a>CWorkerThread:: GetThreadHandle
+## <a name="cworkerthreadgetthreadhandle"></a><a name="getthreadhandle"></a>CWorkerThread::GetThreadHandle
 
-Çalışan iş parçacığının iş parçacığı tanıtıcısını almak için bu yöntemi çağırın.
+Alt iş parçacığının iş parçacığı tutamacını almak için bu yöntemi arayın.
 
 ```
 HANDLE GetThreadHandle() throw();
@@ -188,11 +188,11 @@ HANDLE GetThreadHandle() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çalışan iş parçacığı başlatılmamışsa iş parçacığı tanıtıcısını veya NULL değerini döndürür.
+Alt iş parçacığı başharfe edilmemişse iş parçacığı tutamacını veya NULL'u döndürür.
 
-##  <a name="getthreadid"></a>CWorkerThread:: GetThreadId
+## <a name="cworkerthreadgetthreadid"></a><a name="getthreadid"></a>CWorkerThread::GetThreadId
 
-Çalışan iş parçacığının iş parçacığı KIMLIĞINI almak için bu yöntemi çağırın.
+Alt iş parçacığının iş parçacığı kimliğini almak için bu yöntemi arayın.
 
 ```
 DWORD GetThreadId() throw();
@@ -200,11 +200,11 @@ DWORD GetThreadId() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çalışan iş parçacığı başlatılmamışsa iş parçacığı KIMLIĞINI veya NULL değerini döndürür.
+Alt iş parçacığı başharfe edilmemişse iş parçacığı kimliğini veya NULL'u döndürür.
 
-##  <a name="initialize"></a>CWorkerThread:: Initialize
+## <a name="cworkerthreadinitialize"></a><a name="initialize"></a>CWorkerThread::Initialize
 
-Çalışan iş parçacığını başlatmak için bu yöntemi çağırın.
+Alt iş parçacığının başlatılması için bu yöntemi çağırın.
 
 ```
 HRESULT Initialize() throw();
@@ -215,23 +215,23 @@ HRESULT Initialize(CWorkerThread<ThreadTraits>* pThread) throw();
 ### <a name="parameters"></a>Parametreler
 
 *pThread*<br/>
-Mevcut bir çalışan iş parçacığı.
+Varolan bir alt iş parçacığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, oluşturulduktan sonra veya [CWorkerThread:: kapanmaya](#shutdown)yönelik bir çağrıdan sonra nesneyi başlatmak için çağrılmalıdır.
+Bu yöntem, oluşturmadan sonra veya [CWorkerThread](#shutdown)için bir çağrı dan sonra nesneyi başlatmaya çağrılmalıdır::Kapatma .
 
-İki veya daha fazla `CWorkerThread` nesnenin aynı çalışan iş parçacığını kullanması için herhangi bir bağımsız değişkeni geçirmeden bunlardan birini başlatın ve ardından bu nesneye bir işaretçi geçirerek diğerlerinin `Initialize` yöntemlerine geçirin. İşaretçi kullanılarak başlatılan nesneler, nesneyi başlatmak için kullanılmadan önce kapatılmalıdır.
+İki veya daha `CWorkerThread` fazla nesnenin aynı alt iş parçacığı kullanmasını sağlamak için, herhangi bir bağımsız `Initialize` değişken ihdamadan bunlardan birini baş harfe getirin ve sonra bu nesneye diğerlerinin yöntemlerine bir işaretçi geçirin. İşaretçi kullanılarak başlatılan nesneler, bunları başlatmada kullanılan nesneden önce kapatılmalıdır.
 
-Bu yöntemin davranışının, var olan bir nesnenin işaretçisi kullanılarak başlatıldığında nasıl değiştiği hakkında bilgi için bkz. [CWorkerThread:: kapanıyor](#shutdown) .
+Bkz. [CWorkerThread::Varolan](#shutdown) bir nesneye işaretçi kullanarak baş harfe geldiğinde bu yöntemin davranışının nasıl değiştiği hakkında bilgi için kapatma.
 
-##  <a name="removehandle"></a>CWorkerThread:: RemoveHandle
+## <a name="cworkerthreadremovehandle"></a><a name="removehandle"></a>CWorkerThread::RemoveHandle
 
-Bir tanıtıcıyı wasever nesneleri listesinden kaldırmak için bu yöntemi çağırın.
+Bekletilebilir nesneler listesinden bir tanıtıcıyı kaldırmak için bu yöntemi arayın.
 
 ```
 HRESULT RemoveHandle(HANDLE hObject) throw();
@@ -240,19 +240,19 @@ HRESULT RemoveHandle(HANDLE hObject) throw();
 ### <a name="parameters"></a>Parametreler
 
 *hObject*<br/>
-Kaldırılacak tanıtıcı.
+Kaldırılacak tutamaç.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tanıtıcı kaldırıldığında [IWorkerThreadClient:: CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) , [AddHandle](#addhandle)'a geçirilen ilişkili nesne üzerinde çağrılır. Bu çağrı başarısız olursa, `CWorkerThread` tanıtıcıda Windows [CloseHandle](/windows/win32/api/handleapi/nf-handleapi-closehandle) işlevini çağırır.
+Tanıtıcı [kaldırıldığında IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) [AddHandle'a](#addhandle)geçirilen ilişkili nesneüzerinde çağrılacak. Bu çağrı başarısız `CWorkerThread` olursa, tanıtıcıdaki Windows [CloseHandle](/windows/win32/api/handleapi/nf-handleapi-closehandle) işlevini arayacaktır.
 
-##  <a name="shutdown"></a>CWorkerThread:: kapanıyor
+## <a name="cworkerthreadshutdown"></a><a name="shutdown"></a>CWorkerThread::Kapatma
 
-Çalışan iş parçacığını kapatmak için bu yöntemi çağırın.
+Alt iş parçacığı kapatmak için bu yöntemi arayın.
 
 ```
 HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
@@ -261,21 +261,21 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
 ### <a name="parameters"></a>Parametreler
 
 *dwWait*<br/>
-Çalışan iş parçacığının kapanması için beklenecek süre (milisaniye olarak). ATL_WORKER_THREAD_WAIT varsayılan değer 10 saniyedir. Gerekirse, atlutil. h dahil etmeden önce Bu sembol için kendi değerini tanımlayabilirsiniz.
+Alt iş parçacığının kapanmasını beklemek için milisaniye cinsinden süre. ATL_WORKER_THREAD_WAIT varsayılan olarak 10 saniyedir. Gerekirse, atlutil.h dahil etmeden önce bu sembol için kendi değeri nizi tanımlayabilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı S_OK veya hata durumunda HRESULT, zaman aşımı değeri *dwWait*gibi döndürür.
+Başarı S_OK veya zaman aşımı değeri *dwWait*aşıldığında gibi hata da bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesneyi yeniden kullanmak için, bu yöntemi çağırdıktan sonra [CWorkerThread:: Initialize](#initialize) öğesini çağırın.
+Nesneyi yeniden kullanmak için [CWorkerThread'i arayın::Bu](#initialize) yöntemi aradıktan sonra başlatma.
 
-Başka bir `CWorkerThread` nesnesinin işaretçisi ile başlatılan bir nesne üzerinde `Shutdown` çağırmanın etkin olmadığını ve her zaman S_OK döndürdüğünü unutmayın.
+İşaretçiyle `Shutdown` baş harfe dönen bir `CWorkerThread` nesneyi başka bir nesneye çağırmanın hiçbir etkisi olmadığını ve her zaman S_OK döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Defaultthreadnitelikler](atl-typedefs.md#defaultthreadtraits)<br/>
+[Varsayılan ThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>
 [Sınıflar](../../atl/reference/atl-classes.md)<br/>
 [Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma](../../parallel/multithreading-creating-worker-threads.md)<br/>
 [IWorkerThreadClient Sınıfı](../../atl/reference/iworkerthreadclient-interface.md)
