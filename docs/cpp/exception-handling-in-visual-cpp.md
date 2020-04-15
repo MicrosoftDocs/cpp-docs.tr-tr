@@ -1,62 +1,67 @@
 ---
-title: MSVC 'de özel durum işleme
-ms.date: 11/19/2019
+title: MSVC'de özel durum işleme
+description: C++ dil referans özel durum işleme genel bakış.
+ms.date: 04/15/2020
 helpviewer_keywords:
 - try-catch keyword [C++], exception handling
 ms.assetid: a6aa08de-669d-4ce8-9ec3-ec20d1354fcf
-ms.openlocfilehash: 6cf71d6e6d0519951a084ebead65003bd363395f
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 0d60f49c6f1412925c19aaf497352940411b5d92
+ms.sourcegitcommit: 0e4feb35b47c507947262d00349d4a893863a6d3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246585"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81396283"
 ---
-# <a name="exception-handling-in-msvc"></a>MSVC 'de özel durum işleme
+# <a name="exception-handling-in-msvc"></a>MSVC'de özel durum işleme
 
-Özel durum muhtemelen programın denetimi dışında, programın normal yürütme yolunda devam etmesini önleyen bir hata durumudur. Nesne oluşturma, dosya girişi/çıktısı ve diğer modüllerden yapılan işlev çağrıları dahil bazı işlemler, programınız doğru şekilde çalıştığında bile tüm olası özel durum kaynaklarıdır. Sağlam kod anticipates ve özel durumları işler. Mantık hatalarını saptamak için özel durumlar yerine onayları kullanın (bkz. [onayları kullanma](/visualstudio/debugger/c-cpp-assertions)).
+Özel durum, programın normal yürütme yolu boyunca devam etmesini engelleyen bir hata koşuludur, büyük olasılıkla programın denetimi dışındadır. Nesne oluşturma, dosya girişi/çıktısı ve diğer modüllerden yapılan işlev çağrıları da dahil olmak üzere belirli işlemler, programınız doğru çalışıyor olsa bile tüm olası özel durumlar kaynaklarıdır. Sağlam kod, özel durumları tahmin eder ve işler. Mantık hatalarını algılamak için, özel durumlar yerine iddiaları kullanın [(bkz.](/visualstudio/debugger/c-cpp-assertions)
 
-## <a name="kinds-of-exceptions"></a>Özel durum türleri
+## <a name="kinds-of-exceptions"></a>İstisna türleri
 
-Microsoft C++ DERLEYICISI (MSVC) üç tür özel durum işlemeyi destekler:
+Microsoft C++ derleyicisi (MSVC) üç tür özel durum işlemeyi destekler:
 
-- [C++özel durum işleme](errors-and-exception-handling-modern-cpp.md)
+- [C++ özel durum işleme](errors-and-exception-handling-modern-cpp.md)
 
-   Çoğu C++ program için, tür kullanımı güvenli C++ olan özel durum işleme kullanmanız gerekir ve yığın geri sarma sırasında nesne yıkıcılarının çağrılmasını sağlar.
+   Çoğu C++ programı için C++ özel durum işlemeyi kullanmalısınız. Tür güvenlidir ve yığın boşaltma sırasında nesne yıkıcıların çağrılmasını sağlar.
 
 - [Yapılandırılmış özel durum işleme](structured-exception-handling-c-cpp.md)
 
-   Windows, SEH adlı kendi özel durum mekanizmasını sağlar. Ya da MFC programlama için C++ önerilmez. SEH yalnızca MFC olmayan C programlarında kullanın.
+   Windows, yapılandırılmış özel durum işleme (SEH) adı verilen kendi özel durum mekanizmasını sağlar. C++ veya MFC programlaması için önerilmez. SEH'yi yalnızca MFC Olmayan Programlarda kullanın.
 
 - [MFC özel durumları](../mfc/exception-handling-in-mfc.md)
 
-Bir projede kullanılacak özel durum işlemenin türünü belirtmek için [/Eh](../build/reference/eh-exception-handling-model.md) derleyici seçeneğini kullanın; C++ özel durum işleme varsayılandır. Hata işleme mekanizmalarını karıştırmayın; Örneğin, yapılandırılmış özel durum işleme C++ ile özel durumlar kullanmayın. Özel C++ durum işlemenin kullanılması, kodunuzun daha taşınabilir olmasını sağlar ve herhangi bir türdeki özel durumları idare etmenizi sağlar. Yapılandırılmış özel durum işlemenin dezavantajları hakkında daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme](structured-exception-handling-c-cpp.md). MFC makrolarını ve C++ özel durumlarını karıştırma hakkında öneri için bkz. [özel durumlar: MFC makrolarını C++ ve özel durumlarını kullanma](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).
+   Sürüm 3.0'dan beri, MFC C++ özel durumlarını kullanmıştır. Yine de formdaki C++ özel durumlarına benzeyen eski özel durum işleme makrolarını destekler. MFC makroları ve C++ özel durumlarını karıştırma hakkında tavsiye için [bkz.](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)
+
+C++ projesinde kullanılacak özel durum işleme modelini belirtmek için [/EH](../build/reference/eh-exception-handling-model.md) derleyici seçeneğini kullanın. Standart C++ özel durum işleme (**/EHsc**) Visual Studio'daki yeni C++ projelerinde varsayılan değerdir.
+
+Özel durum işleme mekanizmalarını karıştırmanızı önermiyoruz. Örneğin, yapılandırılmış özel durum işleme ile C++ özel durumları kullanmayın. C++ özel durum işlemeyi kullanmak yalnızca kodunuzu daha taşınabilir hale getirir ve her türlü özel durumları işlemenizi sağlar. Yapılandırılmış özel durum işlemenin dezavantajları hakkında daha fazla bilgi için [bkz.](structured-exception-handling-c-cpp.md)
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-- [Özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](errors-and-exception-handling-modern-cpp.md)
+- [Özel durumlar ve hata işleme için modern C++ en iyi uygulamaları](errors-and-exception-handling-modern-cpp.md)
 
-- [Özel durum güvenliği için tasarım](how-to-design-for-exception-safety.md)
+- [Özel durum güvenliğine yönelik tasarım](how-to-design-for-exception-safety.md)
 
-- [Olağanüstü ve olağanüstü olmayan kod arasında arabirim oluşturma](how-to-interface-between-exceptional-and-non-exceptional-code.md)
+- [İstisnai ve istisnai olmayan kod lar arasında nasıl arayüz oluşur?](how-to-interface-between-exceptional-and-non-exceptional-code.md)
 
-- [TRY, catch ve throw deyimleri](try-throw-and-catch-statements-cpp.md)
+- [İfadeleri deneyin, yakalayın ve atın](try-throw-and-catch-statements-cpp.md)
 
 - [Yakala Bloğu Nasıl Değerlendirilir](how-catch-blocks-are-evaluated-cpp.md)
 
-- [Özel durumlar ve yığın geri sarma](exceptions-and-stack-unwinding-in-cpp.md)
+- [Özel Durumlar ve Yığın Gevşeme](exceptions-and-stack-unwinding-in-cpp.md)
 
-- [Özel durum belirtimleri](exception-specifications-throw-cpp.md)
+- [Özel Durum Özellikleri](exception-specifications-throw-cpp.md)
 
 - [noexcept](noexcept-cpp.md)
 
 - [İşlenilmeyen C++ Özel Durumları](unhandled-cpp-exceptions.md)
 
-- [C (Yapılandırılmış) ile C++ Özel Durumlarını Karıştırma](mixing-c-structured-and-cpp-exceptions.md)
+- [Karıştırma C (Yapılandırılmış) ve C++ Özel Durumları](mixing-c-structured-and-cpp-exceptions.md)
 
-- [Yapılandırılmış özel durum Işleme (SEH) (CC++/)](structured-exception-handling-c-cpp.md)
+- [Yapılandırılmış özel durum işleme (SEH) (C/C++)](structured-exception-handling-c-cpp.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Dil Başvurusu](cpp-language-reference.md)</br>
+[C++ Dil Referansı](cpp-language-reference.md)</br>
 [x64 özel durum işleme](../build/exception-handling-x64.md)</br>
-[Özel durum IşlemeC++(/CLI C++ve/CX)](../extensions/exception-handling-cpp-component-extensions.md)
+[Özel Durum Taşıma (C++/CLI ve C++/CX)](../extensions/exception-handling-cpp-component-extensions.md)

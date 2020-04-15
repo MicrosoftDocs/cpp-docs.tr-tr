@@ -11,16 +11,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits::GetInvalidValue method
 - Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits::Unlock method
 ms.assetid: 709cb51e-d70c-40b6-bdb4-d8eacf3af495
-ms.openlocfilehash: af567fd333854519df4543ad24084e52cda4d96e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0dc43d4b9c16145ed7a5abe03cddb598c59b1e94
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383288"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374296"
 ---
 # <a name="srwlocksharedtraits-structure"></a>SRWLockSharedTraits Yapısı
 
-Genel özelliklerini açıklayan `SRWLock` paylaşılan kilit modu sınıfta.
+Paylaşılan kilit modunda `SRWLock` sınıfın ortak özelliklerini açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,18 +30,18 @@ struct SRWLockSharedTraits;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Genel Typedefs
 
-Ad   | Açıklama
+Adı   | Açıklama
 ------ | --------------------------------------------------------------------------
-`Type` | İşaretçisi için eş anlamlı [SRWLOCK](srwlock-class.md) sınıfı.
+`Type` | [SRWLOCK](srwlock-class.md) sınıfına işaretçi için eşanlamlı.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                                                     | Açıklama
+Adı                                                     | Açıklama
 -------------------------------------------------------- | -----------------------------------------------------------------
-[Srwlocksharedtraits::getınvalidvalue](#getinvalidvalue) | Alır bir `SRWLockSharedTraits` her zaman geçersiz bir nesne.
-[SRWLockSharedTraits::Unlock](#unlock)                   | Belirtilen özel denetim serbest `SRWLock` nesne.
+[SRWLockSharedTraits::GetInvalidValue](#getinvalidvalue) | Her zaman `SRWLockSharedTraits` geçersiz olan bir nesneyi alır.
+[SRWLockSharedTraits::Kilidini Aç](#unlock)                   | Belirtilen nesnenin özel `SRWLock` denetimini serbest bırakır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -49,13 +49,13 @@ Ad                                                     | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrappers.h
 
-**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+**Ad alanı:** Microsoft::WRL::Sarmalayıcılar::HandleTraits
 
-## <a name="getinvalidvalue"></a>Srwlocksharedtraits::getınvalidvalue
+## <a name="srwlocksharedtraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a>SRWLockSharedTraits::GetInvalidValue
 
-Alır bir `SRWLockSharedTraits` her zaman geçersiz bir nesne.
+Her zaman `SRWLockSharedTraits` geçersiz olan bir nesneyi alır.
 
 ```cpp
 inline static Type GetInvalidValue();
@@ -63,11 +63,11 @@ inline static Type GetInvalidValue();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İçin bir tanıtıcı bir `SRWLockSharedTraits` nesne.
+Bir `SRWLockSharedTraits` nesneye tutamak.
 
-## <a name="unlock"></a>SRWLockSharedTraits::Unlock
+## <a name="srwlocksharedtraitsunlock"></a><a name="unlock"></a>SRWLockSharedTraits::Kilidini Aç
 
-Belirtilen özel denetim serbest `SRWLock` nesne.
+Belirtilen nesnenin özel `SRWLock` denetimini serbest bırakır.
 
 ```cpp
 inline static void Unlock(
@@ -77,5 +77,5 @@ inline static void Unlock(
 
 ### <a name="parameters"></a>Parametreler
 
-*srwlock*<br/>
-İçin bir tanıtıcı bir `SRWLock` nesne.
+*Srwlock*<br/>
+Bir `SRWLock` nesneye tutamak.
