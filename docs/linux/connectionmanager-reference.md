@@ -6,101 +6,101 @@ f1_keywords:
 helpviewer_keywords:
 - ConnectionManager program
 ms.openlocfilehash: 1c6236cedba88714e9918dd2c096b5e78d2f08ce
-ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2020
+ms.lasthandoff: 04/14/2020
 ms.locfileid: "77258039"
 ---
 # <a name="connectionmanager-reference"></a>ConnectionManager başvurusu
 
 ::: moniker range="<=vs-2017"
 
-ConnectionManager. exe, Visual Studio 2019 sürüm 16,5 ve sonraki sürümlerinde kullanılabilir.
+ConnectionManager.exe Visual Studio 2019 sürümü 16.5 ve sonrası mevcuttur.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-ConnectionManager. exe, Visual Studio dışında Uzaktan geliştirme bağlantılarını yönetmeye yönelik bir komut satırı yardımcı programıdır. Yeni bir geliştirme makinesi sağlama gibi görevler için faydalıdır. Veya, sürekli tümleştirme için Visual Studio 'Yu ayarlamak üzere kullanın. Bunu, bir Geliştirici Komut İstemi penceresinde kullanabilirsiniz. Geliştirici Komut İstemi hakkında daha fazla bilgi için bkz. [komut satırından Microsoft C++ araç takımını kullanma](../build/building-on-the-command-line.md).
+ConnectionManager.exe, Visual Studio dışındaki uzaktan geliştirme bağlantılarını yönetmek için bir komut satırı yardımcı programıdır. Yeni bir geliştirme makinesi sağlama gibi görevler için yararlıdır. Veya, sürekli entegrasyon için Visual Studio kurmak için kullanabilirsiniz.Geliştirici Komut Istem penceresinde kullanabilirsiniz. Geliştirici Komut KomutU İstemi hakkında daha fazla bilgi için [bkz.](../build/building-on-the-command-line.md)
 
-ConnectionManager. exe, Visual Studio 2019 sürüm 16,5 ve sonraki sürümlerinde kullanılabilir. Visual Studio yükleyicisi iş yüküyle **Linux geliştirmenin C++**  bir parçasıdır. Ayrıca, yükleyicide **Bağlantı Yöneticisi** bileşenini seçtiğinizde de otomatik olarak yüklenir. *% Vcıdeınstalldir%\\Linux\\bin\\ConnectionManagerExe\\ConnectionManager. exe*dosyasına yüklendi.
+ConnectionManager.exe Visual Studio 2019 sürümü 16.5 ve sonrası mevcuttur. Visual Studio Installer'daki C++ iş **yüküyle Linux geliştirmenin** bir parçasıdır. Yükleyicideki **Bağlantı Yöneticisi** bileşenini seçtiğinizde otomatik olarak yüklenir. Bu *% VCIDEInstallDir%\\\\Linux bin\\ConnectionManagerExe\\ConnectionManager.exe*yüklü.
 
-ConnectionManager. exe işlevselliği, Visual Studio 'da da kullanılabilir. IDE 'deki Uzaktan geliştirme bağlantılarını yönetmek için, menü çubuğunda **araçlar** > **Seçenekler** ' i seçerek Seçenekler iletişim kutusunu açın. Seçenekler iletişim kutusunda, **Çapraz Platform** > **Bağlantı Yöneticisi**' ni seçin.
+ConnectionManager.exe'nin işlevselliği Visual Studio'da da mevcuttur. IDE'deki uzak geliştirme bağlantılarını yönetmek için menü çubuğunda Seçenekler iletişim kutusunu açmak için **Araçlar** > **Seçenekleri'ni** seçin. Seçenekler iletişim kutusunda, **PlatformLar** > Arası**Bağlantı Yöneticisi'ni**seçin.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **ConnectionManager. exe** *komutu* \[*bağımsız değişkenler*] \[*Seçenekler*]
+> **ConnectionManager.exe** *komut* \[ \[bağımsız *değişkenleri*] *seçenekleri*]
 
 ### <a name="commands-and-arguments"></a>Komutlar ve bağımsız değişkenler
 
-- *Kullanıcı\@ana bilgisayar* \[ **--bağlantı noktası** *bağlantı noktası*] \[ **--parola** *parolası*] \[ **--PrivateKey** *privatekey_file*]
+- **add** *kullanıcı\@ana bilgisayarı* \[ **ekle --port** \[ *port*] \[ **--parola** *şifresi*] **--privatekey** *privatekey_file*]
 
-  Kimlik doğrulaması yapar ve yeni bir bağlantı ekler. Varsayılan olarak, 22 ve parola kimlik doğrulaması bağlantı noktasını kullanır. (Bir parola girmeniz istenir.) Özel anahtar için bir parola belirtmek üzere **--Password** ve **--PrivateKey** kullanın.
+  Kimlik doğrular ve yeni bir bağlantı ekler. Varsayılan olarak, bağlantı noktası 22 ve parola kimlik doğrulaması kullanır. (Bir parola girmeniz istenir.) Özel bir anahtar için parola belirtmek için hem **parola** hem de **-privatekey'i** kullanın.
 
-- \[*connection_id* \| *Kullanıcı\@ana bilgisayar* \[ **--bağlantı noktası** *bağlantı noktası*]] **kaldırın**
+- **connection_id** \[ *connection_id* *kullanıcı\@ana bilgisayarı* \[kaldırın **--bağlantı noktası** ]] *port* \|
 
-  Bir bağlantıyı kaldırır. Herhangi bir bağımsız değişken belirtilmemişse, hangi bağlantının kaldırılacağını belirtmeniz istenir.
+  Bağlantıyı kaldırır. Bağımsız değişken belirtilmemişse, hangi bağlantının kaldırılacak olduğunu belirtmeniz istenir.
 
-- **Tümünü Kaldır**
+- **remove-all**
 
-  Tüm depolanan bağlantıları kaldırır.
+  Depolanan tüm bağlantıları kaldırır.
 
 - **list**
 
-  Tüm depolanan bağlantıların bilgilerini ve kimliklerini görüntüler.
+  Depolanan tüm bağlantıların bilgilerini ve bağlantılarını görüntüler.
 
 - **Yardım**
 
-  Yardım ekranını görüntüler.
+  Yardım ekranı görüntüler.
 
-- **version**
+- **Sürüm**
 
   Sürüm bilgilerini görüntüler.
 
 ### <a name="options"></a>Seçenekler
 
-- **-q**, **--quiet**
+- **-q**, **--sessiz**
 
-  `stdout` veya `stderr`çıkışı önler.
+  Çıkışını engeller `stdout` `stderr`veya .
 
-- **--No-Prompt**
+- **--no-prompt**
 
-  Uygun olduğunda istem yerine başarısız olur.
+  Uygun olduğunda istem yerine başarısız olabilir.
 
-- **--No-doğrula**
+- **--doğrulama**
 
-  Kimlik doğrulaması olmadan bir bağlantı ekleyin veya değiştirin.
+  Kimlik doğrulama olmadan bağlantı ekleme veya değiştirme.
 
-- **--Dosya** *dosya adı*
+- **--dosya** *adı*
 
-  Belirtilen *dosya adından*bağlantı bilgilerini okuyun.
+  Sağlanan *dosya adından*bağlantı bilgilerini okuyun.
 
-- **--No-telemetri**
+- **--no-telemetri**
 
-  Kullanım verilerini Microsoft 'a geri göndermeyi devre dışı bırakın. Kullanım verileri toplanır ve **--No-telemetri** bayrağı geçirilmediği takdirde Microsoft 'a geri gönderilir.  
+  Kullanım verilerini Microsoft'a geri göndermeyi devre dışı kındırın. Kullanım verileri toplanır ve **--telemetri olmayan** bayrak geçirilmediği sürece Microsoft'a geri gönderilir.  
 
-- **-n**, **--kuru-Çalıştır**
+- **-n**, **--kuru-çalıştır**
 
-  Komutun bir kuru çalıştırması yapar.
+  Komutun kuru bir çalışma yapar.
 
 - **-p**
 
-  **--Password**.
+  **--password**ile aynı.
 
-- **-ı**
+- **-i**
 
-  **--PrivateKey**ile aynı.
+  **--privatekey**ile aynı.
 
 ## <a name="examples"></a>Örnekler
 
-Bu komut localhost üzerinde "user" adlı bir kullanıcı için bağlantı ekler. Bağlantı, *% USERPROFILE%\.SSH \ id_rsa*içinde bulunan kimlik doğrulaması için bir anahtar dosyası kullanıyor.
+Bu komut, localhost 'da "kullanıcı" adlı bir kullanıcı için bir bağlantı ekler. Bağlantı, *%USERPROFILE%\.ssh\id_rsa'da*bulunan kimlik doğrulama için anahtar bir dosya kullanır.
 
 ```cmd
 ConnectionManager.exe add user@127.0.0.1 --privatekey "%USERPROFILE%\.ssh\id_rsa"
 ```
 
-Bu komut, KIMLIK 1975957870 olan bağlantıyı bağlantı listesinden kaldırır.
+Bu komut, 1975957870 kimliğine sahip bağlantıyı bağlantı listesinden kaldırır.
 
 ```cmd
 ConnectionManager.exe remove 1975957870
@@ -108,6 +108,6 @@ ConnectionManager.exe remove 1975957870
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio 'da hedef Linux sisteminize bağlanma](connect-to-your-remote-linux-computer.md)
+[Visual Studio'da hedef Linux sisteminize bağlanın](connect-to-your-remote-linux-computer.md)
 
 ::: moniker-end

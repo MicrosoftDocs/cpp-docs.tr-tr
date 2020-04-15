@@ -6,64 +6,64 @@ helpviewer_keywords:
 - WinInet classes [MFC], displaying progress
 - WinInet classes [MFC], about WinInet classes
 ms.assetid: 665de5ac-e80d-427d-8d91-2ae466885940
-ms.openlocfilehash: 79ec102aa27440c64f03c6e22b9f2fe959cac6b9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b989e5c3df63ee7b5129d01468a0f869772ed286
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399557"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367330"
 ---
 # <a name="wininet-basics"></a>WinInet Temelleri
 
-WinINet indirmek ve uygulamanız içinde dosyaları karşıya yükleme için FTP desteği eklemek için kullanabilirsiniz. Geçersiz kılabilirsiniz [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) ve *dwContext* arayın ve dosyaları indirme ilerleme durumu bilgileri kullanıcılara sunmak için parametre.
+Uygulamanızın içinden dosya indirmek ve yüklemek için FTP desteği eklemek için WinInet'i kullanabilirsiniz. [OnStatusCallback'i](../mfc/reference/cinternetsession-class.md#onstatuscallback) geçersiz kılabilir ve dosyaları ararken ve indirirken kullanıcılara ilerleme bilgileri sağlamak için *dwContext* parametresini kullanabilirsiniz.
 
-Bu makalede aşağıdaki konuları içerir:
+Bu makalede aşağıdaki konular yer alıyor:
 
-- [Çok basit bir tarayıcı oluşturma](#_core_create_a_very_simple_browser)
+- [Çok Basit Bir Tarayıcı Oluşturun](#_core_create_a_very_simple_browser)
 
-- [Bir Web sayfası indirin](#_core_download_a_web_page)
+- [Web Sayfası İndir](#_core_download_a_web_page)
 
-- [FTP bir dosya](#_core_ftp_a_file)
+- [FTP bir Dosya](#_core_ftp_a_file)
 
-- [Bir Gopher dizine alınamıyor](#_core_retrieve_a_gopher_directory)
+- [Bir Gopher Dizini alın](#_core_retrieve_a_gopher_directory)
 
-- [Dosyaları aktarma sırasında ilerleme bilgisini görüntülemek](#_core_display_progress_information_while_transferring_files)
+- [Dosyaları Aktarırken İlerleme Bilgilerini Görüntüleme](#_core_display_progress_information_while_transferring_files)
 
-Aşağıdaki kod alıntıları, basit bir tarayıcı oluşturmak, bir Web sayfası, FTP bir dosya indirin ve bir gopher dosyayı aramak nasıl ekleyebileceğiniz gösterilmektedir. Tam örnekler değildir ve tüm özel durum işlemeyi içerir.
+Aşağıdaki kod alıntıları basit bir tarayıcının nasıl oluşturulup, bir Web sayfası nın nasıl indirilir, FTP dosyasını nasıl indirilir ve bir gopher dosyası araması yapılacağını gösterir. Bunlar tam örnek olarak ifade edilmez ve tüm özel durum işleme içermez.
 
-WinINet hakkında ek bilgi için bkz. [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md).
+WinInet hakkında daha fazla bilgi için [Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)bakın.
 
-##  <a name="_core_create_a_very_simple_browser"></a> Çok basit bir tarayıcı oluşturma
+## <a name="create-a-very-simple-browser"></a><a name="_core_create_a_very_simple_browser"></a>Çok Basit Bir Tarayıcı Oluşturun
 
 [!code-cpp[NVC_MFCWinInet#1](../mfc/codesnippet/cpp/wininet-basics_1.cpp)]
 
-##  <a name="_core_download_a_web_page"></a> Bir Web sayfası indirin
+## <a name="download-a-web-page"></a><a name="_core_download_a_web_page"></a>Web Sayfası İndir
 
 [!code-cpp[NVC_MFCWinInet#2](../mfc/codesnippet/cpp/wininet-basics_2.cpp)]
 
-##  <a name="_core_ftp_a_file"></a> FTP bir dosya
+## <a name="ftp-a-file"></a><a name="_core_ftp_a_file"></a>FTP bir Dosya
 
 [!code-cpp[NVC_MFCWinInet#3](../mfc/codesnippet/cpp/wininet-basics_3.cpp)]
 
-##  <a name="_core_retrieve_a_gopher_directory"></a> Bir Gopher dizine alınamıyor
+## <a name="retrieve-a-gopher-directory"></a><a name="_core_retrieve_a_gopher_directory"></a>Bir Gopher Dizini alın
 
 [!code-cpp[NVC_MFCWinInet#4](../mfc/codesnippet/cpp/wininet-basics_4.cpp)]
 
-## <a name="use-onstatuscallback"></a>OnStatusCallback kullanın
+## <a name="use-onstatuscallback"></a>OnStatusCallback'i kullanma
 
-WinINet sınıfları kullanırken kullanabileceğiniz [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) uygulamanızın üyesi [Cınternetsession](../mfc/reference/cinternetsession-class.md) durum bilgilerini almak için nesne. Kendi türetirseniz `CInternetSession` nesne, geçersiz kılma `OnStatusCallback`ve durumu geri çağırmalar etkinleştirme MFC çağırır, `OnStatusCallback` Internet oturumu hakkında tüm etkinliklerin ilerleme bilgisini işleviyle.
+WinInet sınıflarını kullanırken, durum bilgilerini almak için uygulamanızın [CInternetSession](../mfc/reference/cinternetsession-class.md) nesnesinin [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) üyesini kullanabilirsiniz. Kendi `CInternetSession` nesnenizi türetiyor, `OnStatusCallback`geçersiz kılar ve durum geri aramalarını `OnStatusCallback` etkinleştiriyorsanız, MFC işlevinizi o Internet oturumundaki tüm etkinliklerle ilgili ilerleme bilgileriyle birlikte çağırır.
 
-Tek bir oturumda (Bu, kendi ömrü boyunca birçok farklı farklı işlemler gerçekleştirebilir) birkaç bağlantılarını desteklemiyor olabilir çünkü `OnStatusCallback` belirli bir bağlantı veya işlem ile her bir durum değişikliği tanımlamak için bir mekanizma gerekir. Bu mekanizma, çoğu WinINet destek sınıflardaki üye işlevleri belirtilen bağlam kimliği parametresi tarafından sağlanır. Bu parametre her zaman türünde **DWORD** ve her zaman adlı *dwContext*.
+Tek bir oturum birkaç bağlantıyı destekleyebileceğinden (kullanım ömürleri boyunca birçok `OnStatusCallback` farklı işlem gerçekleştirebilir), belirli bir bağlantı veya işlemle her durum değişikliğini tanımlamak için bir mekanizma gerekir. Bu mekanizma, WinInet destek sınıflarında üye işlevlerin çoğuna verilen bağlam kimliği parametresi tarafından sağlanır. Bu parametre her zaman **DWORD** türündedir ve her zaman *dwContext*olarak adlandırılır.
 
-Belirli bir Internet nesnesine atanmış içerik yalnızca etkinlik nesnesi neden olur tanımlamak için kullanılan `OnStatusCallback` üyesi `CInternetSession` nesne. Çağrı `OnStatusCallback` ; birkaç parametre alır. Bu parametre hangi işlem ve bağlantısı için hangi ilerleme yapıldı, uygulamaya bildirmek için birlikte çalışır.
+Belirli bir Internet nesnesine atanan bağlam, yalnızca `OnStatusCallback` `CInternetSession` nesnenin nesnenin üyesinde neden olduğu etkinliği tanımlamak için kullanılır. Çağrı çeşitli `OnStatusCallback` parametreler alır; bu parametreler, uygulamanız için hangi işlem ve bağlantı için hangi ilerlemenin yapıldığını söylemek için birlikte çalışır.
 
-Oluştururken bir `CInternetSession` belirtebileceğiniz nesnesi bir *dwContext* oluşturucusuna parametre. `CInternetSession` kendi bağlam Kimliğini kullanmaz; Bunun yerine, bağlam Kimliğini herhangi açın arabimini **InternetConnection**-türetilmiş açıkça bir bağlam kimliği, kendi elde etmezsiniz nesneleri. Buna karşılık, bu `CInternetConnection` nesneleri boyunca bağlam Kimliğine geçecek `CInternetFile` açıkça farklı bir bağlam kimliği belirtmezseniz, oluşturdukları nesneleri Öte yandan, kendinize ait bir belirli bir bağlam kimliği, nesne ve mevcut herhangi bir iş, içerik kimliği ile ilişkilendirilecek belirtirseniz Bağlam kimlikleri hangi durum bilgilerini size verilen tanımlamak için kullanabileceğiniz, `OnStatusCallback` işlevi.
+Bir `CInternetSession` nesne oluşturduğunuzda, oluşturucuya *bir dwContext* parametresi belirtebilirsiniz. `CInternetSession`kendisi bağlam kimliğini kullanmaz; bunun yerine, bağlam kimliğini açıkça kendi bağlam kimliklerini almıyorum herhangi bir **InternetConnection**türetilmiş nesnelere geçirir. Buna karşılık, `CInternetConnection` farklı bir bağlam kimliği `CInternetFile` açıkça belirtmezseniz, bu nesneler içerik kimliğini oluşturdukları nesnelere geçirir. Diğer taraftan, kendi bağlam kimliğinizi belirtirseniz, nesne ve yaptığı herhangi bir çalışma bu bağlam kimliğiyle ilişkilendirilir. İşlevinizde `OnStatusCallback` size hangi durum bilgilerinin verildiğini belirlemek için bağlam kimliklerini kullanabilirsiniz.
 
-##  <a name="_core_display_progress_information_while_transferring_files"></a> Dosyaları aktarma sırasında ilerleme bilgisini görüntülemek
+## <a name="display-progress-information-while-transferring-files"></a><a name="_core_display_progress_information_while_transferring_files"></a>Dosyaları Aktarırken İlerleme Bilgilerini Görüntüleme
 
-Örneğin, bir dosyayı okumak için bir FTP sunucusuna bir bağlantı oluşturur ve ayrıca bir Web sayfası almak için bir HTTP sunucusuna bağlanan bir uygulama yazıyorsanız, sahip olacaksınız bir `CInternetSession` nesnesi, iki `CInternetConnection` nesneleri (biri olacak bir `CFtpSession` ve diğer olacaktır bir `CHttpSession`) ve iki `CInternetFile` nesneleri (her bağlantı için bir tane). Varsayılan değerleri kullandıysanız *dwContext* parametreleri olmayan okunup arasında ayrım yapmak mümkün `OnStatusCallback` FTP bağlantı ve ilerleme durumunu gösteren etkinleştirmeleri için ilerlemeyi göstermek etkinleştirmeleri HTTP bağlantısı. Belirtirseniz bir *dwContext* , daha sonra için test edebilirsiniz kimliği `OnStatusCallback`, geri çağırma işlemi oluşturulan öğrenmiş olacaksınız.
+Örneğin, bir dosyayı okumak için FTP sunucusuyla bağlantı oluşturan bir uygulama yazarsanız ve ayrıca Bir Web sayfası almak `CInternetSession` için bir `CInternetConnection` HTTP sunucusuna bağlanırsa, bir `CHttpSession`nesneniz, `CInternetFile` iki nesneniz (biri bir, `CFtpSession` diğeri bir) ve iki nesne (her bağlantı için bir nesne) olur. *dwContext* parametreleri için varsayılan değerleri kullandıysanız, FTP bağlantısı `OnStatusCallback` için ilerlemeyi gösteren çağrıları ve HTTP bağlantısı için ilerlemeyi gösteren çağrıları ayırt edemeyebilirsiniz. Daha sonra test edebilirsiniz bir *dwContext* Kimliği `OnStatusCallback`belirtirseniz, hangi işlem geri arama oluşturulan bileceksiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
-[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)
+[MFC İnternet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
+[Win32 İnternet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)

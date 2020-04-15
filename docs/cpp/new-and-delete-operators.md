@@ -5,47 +5,47 @@ helpviewer_keywords:
 - new keyword [C++]
 - delete keyword [C++]
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
-ms.openlocfilehash: 2fd665ce2570bbe7750684057cdf7f517f6f64f3
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: fd170c1500e2d80879fdd89f7d825930189ae942
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445451"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367883"
 ---
 # <a name="new-and-delete-operators"></a>new ve delete işleçleri
 
-C++, [New](new-operator-cpp.md) ve [Delete](delete-operator-cpp.md) işleçlerini kullanarak nesneleri dinamik ayırmayı ve ayırmayı destekler. Bu işleçler, serbest depo adlı bir havuzdan nesneler için bellek ayırır. **New** işleci [New](new-operator-cpp.md)özel Function işlecini çağırır ve **Delete** işleci özel işlev [işleci Delete](delete-operator-cpp.md)' i çağırır.
+C++, [yeni](new-operator-cpp.md) ve [sil](delete-operator-cpp.md) işleçlerini kullanarak nesnelerin dinamik tahsisini ve deallocation'sini destekler. Bu işleçler, boş depo adı verilen bir havuzdaki nesneler için bellek ayırır. **Yeni** işleç özel işlev [işleci](new-operator-cpp.md)yeni çağırır ve **silme** işleci özel işlev [işleci silmek](delete-operator-cpp.md)çağırır.
 
-Standart kitaplıktaki **Yeni** işlev, C++ standart olarak belirtilen davranışı destekler; bu, bellek ayırma başarısız olursa std:: bad_alloc özel durumu oluşturur. C++ Henüz **Yeni**bir atma sürümü isterseniz, programınızı nothrownew. obj ile bağlayın. Ancak, nothrownew. obj ile bağladığınızda C++ standart kitaplıkta yeni olan varsayılan **işleç** artık çalışmaz.
+C++ Standart Kitaplığı'ndaki **yeni** işlev, C++ standardında belirtilen davranışı destekler, bu da bellek ayırma başarısız olursa bad_alloc özel durum oluşturur. Hala **yeni**olmayan atma sürümü istiyorsanız, nothrownew.obj ile programı bağlantı. Ancak, nothrownew.obj ile bağlantı yaptığınızda, C++ Standart Kitaplığı'nda yeni varsayılan **işleç** artık çalışmıyor.
 
-C çalışma zamanı kitaplığını ve C++ standart kitaplığı oluşturan kitaplık dosyalarının listesi için bkz. [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
+C Runtime Kitaplığı ve C++ Standart Kitaplığı'nı oluşturan kitaplık dosyalarının listesi için [CRT Kitaplık Özellikleri'ne](../c-runtime-library/crt-library-features.md)bakın.
 
-##  <a id="new_operator"> </a> New işleci
+## <a name="the-new-operator"></a><a id="new_operator"> </a> Yeni operatör
 
-Bir programda aşağıdakiler gibi bir ifadeye rastlandı, yeni bir işlev **işlecine**çağrı yapar:
+Bir programda aşağıdaki gibi bir ifadeyle karşılaşıldığında, işlev **işlecinin yeni**bir çağrısına dönüşür:
 
 ```cpp
 char *pch = new char[BUFFER_SIZE];
 ```
 
-İstek sıfır baytlık depolama için ise, **New işleci** ayrı bir nesneye bir işaretçi döndürür (diğer bir deyişle, **Yeni işleç** için yinelenen çağrılar farklı işaretçiler döndürür). Ayırma isteği için yeterli bellek yoksa, **New işleci** `std::bad_alloc` bir özel durum oluşturur veya oluşturma olmayan **işlece yeni** destek ile bağlantı oluşturduysanız, **nullptr** döndürür.
+İstek sıfır bayt depolama alanı içinse, **işleç yeni** bir işaretçiyi farklı bir nesneye döndürür (diğer bir süre önce **işleç için** yinelenen çağrılar yeni farklı işaretçileri döndürür). Ayırma isteği için yeterli bellek yoksa, **operatör** `std::bad_alloc` yeni bir özel durum atar veya atmayan **işleç yeni** destek bağlı varsa **nullptr** döndürür.
 
-Belleği boşaltmak ve ayırmayı yeniden denemek için bir yordam yazabilirsiniz; daha fazla bilgi için bkz. [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) . Kurtarma şeması hakkında daha fazla bilgi için bu konunun yetersiz bellek Işleme bölümüne bakın.
+Belleği serbest bırakıp ayırmayı yeniden denemeye çalışan bir yordam yazabilirsiniz; daha fazla bilgi için [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) bakın. Kurtarma düzeni hakkında daha fazla bilgi için, bu konunun Yetersiz Bellek Kullanma bölümüne bakın.
 
-**İşleç yeni** işlevleri için iki kapsam aşağıdaki tabloda açıklanmıştır.
+**Operatör yeni** işlevleri için iki kapsam aşağıdaki tabloda açıklanmıştır.
 
-### <a name="scope-for-operator-new-functions"></a>New işleci işlevlerinin kapsamı
+### <a name="scope-for-operator-new-functions"></a>Operatör yeni işlevleri için kapsam
 
 |İşleç|Kapsam|
 |--------------|-----------|
-|**:: New işleci**|Genel|
-|*class-name* **:: operator new**|Sınıf|
+|**::operatör yeni**|Genel|
+|*sınıf adı* **::operatör yeni**|Sınıf|
 
-**New işlecine** yönelik ilk bağımsız değişken `size_t` türünde olmalıdır (\<stddef. h > ' de tanımlı bir tür) ve dönüş türü her zaman **void** <strong>\*</strong>.
+Yeni **işleç** için ilk bağımsız `size_t` değişken türü \<(stddef.h> tanımlanan bir tür) olmalıdır ve dönüş türü her zaman **geçersizdir.** <strong>\*</strong>
 
-**New** işleci, yerleşik türlerin nesnelerini, Kullanıcı tanımlı **işleç yeni** işlevleri içermeyen sınıf türü nesnelerini ve herhangi bir türdeki dizileri ayırmak için kullanıldığında, Yeni işleç **New** işlevi çağrılır. **New** işleci, **New işlecinin** tanımlandığı bir sınıf türünün nesnelerini ayırmak için kullanıldığında, bu sınıfın **New işleci** çağırılır.
+Yeni **işleç,** yerleşik türlerin, kullanıcı tanımlı **işleç yeni** işlevleri içermeyen sınıf türü nesneleri ve herhangi bir türdeki dizileri ayırmak için kullanıldığında, global **işleç yeni** işlevi olarak adlandırılır. **Yeni** **işleç, yeni** bir işleç tanımlandığı bir sınıf türündeki nesneleri ayırmak için kullanıldığında, sınıfın **yeni işleci** çağrılır.
 
-Bir sınıf için tanımlanan **işleç yeni** işlevi, bir statik üye işlevidir (Bu nedenle, sanal olamaz) ve bu sınıf türünün nesneleri için genel **işleç yeni** işlevini gizler. Belleği ayırmak ve belirli bir değere ayarlamak için **Yeni** kullanılan durumu göz önünde bulundurun:
+Bir sınıf için tanımlanan **işleç yeni** işlevi, bu sınıf türündeki nesneler için global **işleç yeni** işlevini gizleyen statik bir üye işlevdir (bu nedenle sanal olamaz). **Yeninin** belirli bir değere bellek ayırmak ve ayarlamak için kullanıldığı durumu göz önünde bulundurun:
 
 ```cpp
 #include <malloc.h>
@@ -74,13 +74,13 @@ int main()
 }
 ```
 
-Parantez içinde **New** olarak sağlanan bağımsız değişken `chInit` bağımsız değişkeni olarak `Blanks::operator new` geçirilir. Ancak, genel **operator new** işlevi gizlidir ve bir hata oluşturmak için aşağıdaki gibi kodun görüntülenmesine neden olur:
+Parantez içinde **yeniye** verilen `chInit` bağımsız değişken `Blanks::operator new` bağımsız değişken olarak aktarılır. Ancak, global **işleç yeni** işlev gizlidir ve aşağıdaki gibi kodlar bir hata oluşturmak için neden olur:
 
 ```cpp
 Blanks *SomeBlanks = new Blanks;
 ```
 
-Derleyici, bir sınıf bildirimindeki üye dizisi **Yeni** ve **silme** işleçlerini destekler. Örnek:
+Derleyici, bir sınıf bildiriminde üye dizi **yeni** ve **silme** işleçleri destekler. Örneğin:
 
 ```cpp
 class MyClass
@@ -104,7 +104,7 @@ int main()
 
 ### <a name="handling-insufficient-memory"></a>Yetersiz bellek işleme
 
-Başarısız bellek ayırma testi, burada gösterildiği gibi yapılabilir:
+Başarısız bellek ayırma için sınama burada gösterildiği gibi yapılabilir:
 
 ```cpp
 #include <iostream>
@@ -119,28 +119,28 @@ int main() {
 }
 ```
 
-Başarısız bellek ayırma isteklerini işlemenin başka bir yolu vardır. Bu tür bir hatayı işlemek için özel bir kurtarma yordamı yazın ve ardından [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) çalışma zamanı işlevini çağırarak işlevinizi kaydedin.
+Başarısız bellek ayırma isteklerini işlemenin başka bir yolu daha vardır. Böyle bir hatayı işlemek için özel bir kurtarma yordamı yazın ve [ardından _set_new_handler](../c-runtime-library/reference/set-new-handler.md) çalışma zamanı işlevini çağırarak işlevinizi kaydedin.
 
-##  <a id="delete_operator"> </a> Delete işleci
+## <a name="the-delete-operator"></a><a id="delete_operator"> </a> Silme işleci
 
-**New** işleci kullanılarak dinamik olarak ayrılan bellek, **Delete** işleci kullanılarak serbest bırakılabilirler. Delete işleci, belleği kullanılabilir havuza yeniden **boşalten Delete işleç** işlevini çağırır. **Delete** işlecinin kullanılması Ayrıca sınıf yıkıcısına (varsa) neden olur.
+**Yeni** işleç kullanılarak dinamik olarak ayrılan bellek **silme** işleci kullanılarak serbest bırakılabilir. Silme işleci, belleği kullanılabilir havuza geri boşaltan **işleç silme** işlevini çağırır. **Silme** işlecinin kullanılması, sınıf yıkıcısının (varsa) çağrılmasını da neden olur.
 
-Genel ve sınıf kapsamlı **işleç silme** işlevleri vardır. Belirli bir sınıf için yalnızca bir **işleç silme** işlevi tanımlanabilir; tanımlanmışsa, genel **işleç silme** işlevini gizler. Genel **işleç silme** işlevi her zaman bir türdeki diziler için çağırılır.
+Genel ve sınıf kapsamlı **işleç silme** işlevleri vardır. Belirli bir sınıf için yalnızca bir **operatör silme** işlevi tanımlanabilir; tanımlanırsa, genel **işleç silme** işlevini gizler. Global **işleç silme** işlevi her zaman herhangi bir türdeki diziler için çağrılır.
 
-Genel **işleç silme** işlevi. Genel **işleç Delete** ve Class-member **işleci Delete** işlevleri için iki form mevcuttur:
+Genel **işleç silme** işlevi. Global **işleç silme** ve sınıf üyesi **işleç silme** işlevleri için iki form vardır:
 
 ```cpp
 void operator delete( void * );
 void operator delete( void *, size_t );
 ```
 
-Belirli bir sınıf için önceki iki formdan yalnızca biri bulunabilir. İlk form, serbest bırakma yapılacak nesneye bir işaretçi içeren `void *`türünde tek bir bağımsız değişken alır. İkinci form (boyutu kaldırma), ilki serbest bırakmak için bellek bloğunun bir işaretçisi olan iki bağımsız değişken alır ve ikincisi serbest bırakmak için gereken bayt sayısıdır. Her iki formun de dönüş türü **void** (**işleç Delete** bir değer döndüremez).
+Belirli bir sınıf için önceki iki formdan yalnızca biri bulunabilir. İlk form, anlaşma için `void *`nesneye işaretçi içeren tek bir tür bağımsız değişkeni alır. İkinci form boyutlu deallocation-iki bağımsız değişken alır, bunlardan ilki anlaşma için bellek bloğuna bir işaretçi ve ikincisi işlem için bayt sayısıdır. Her iki formun dönüş türü **geçersizdir** **(işleç silme** bir değer döndüremez).
 
-İkinci formun amacı, Silinecek nesnenin doğru boyut kategorisine yönelik aramayı hızlandırmaktır. Bu, genellikle tahsisatın yakınında depolanmamış ve muhtemelen önbelleğe alınmamış olabilir. İkinci form, türetilmiş bir sınıfın bir nesnesini silmek için temel sınıftan bir **işleç silme** işlevi kullanıldığında yararlıdır.
+İkinci formun amacı, silinecek nesnenin doğru boyut kategorisini aramayı hızlandırmaktır ve bu kategori genellikle ayırmanın yakınında depolanmaz ve büyük olasılıkla cached edilmemiştir. İkinci form, türemiş bir sınıfın nesnesini silmek için bir **işleç işlevi** taban sınıftan silindiğinde yararlıdır.
 
-**İşleç silme** işlevi statiktir; Bu nedenle, sanal olamaz. **İşleç silme** Işlevi, [üye-Access Control](member-access-control-cpp.md)bölümünde açıklandığı gibi erişim denetimine uyar.
+**Operatör silme** işlevi statiktir; bu nedenle, sanal olamaz. **Operatör silme** işlevi, [Üye-Erişim Denetimi'nde](member-access-control-cpp.md)açıklandığı gibi erişim denetimine uyar.
 
-Aşağıdaki örnek, Kullanıcı tanımlı **New işlecini** ve bellek ayırmaları ve ayırmayı günlüğe kaydetmek için tasarlanan **işleç silme** işlevlerini göstermektedir:
+Aşağıdaki örnek, kullanıcı tanımlı **işleç yeni** ve **operatör silme** işlevlerini bellek tahsisatlarını ve anlaşma konumlarını günlüğe kaydetmek için tasarlanmış olarak gösterir:
 
 ```cpp
 #include <iostream>
@@ -188,9 +188,9 @@ int main( int argc, char *argv[] ) {
 }
 ```
 
-Yukarıdaki kod, "bellek sızıntısı", diğer bir deyişle, ücretsiz depoya ayrılan ancak hiç boşaltılmamış bellek algılamak için kullanılabilir. Bu algılamayı gerçekleştirmek için, genel **Yeni** ve **silme** işleçleri, belleğin ayrılması ve ayırmayı kaldırma için yeniden tanımlanır.
+Önceki kod "bellek sızıntısı" algılamak için kullanılabilir - yani, serbest depoya ayrılan ancak asla serbest asla bellek. Bu algılamayı gerçekleştirmek için, genel **yeni** ve **silme** işleçleri, bellek tahsisatını ve deallocation'sini saymak için yeniden tanımlanır.
 
-Derleyici, bir sınıf bildirimindeki üye dizisi **Yeni** ve **silme** işleçlerini destekler. Örnek:
+Derleyici, bir sınıf bildiriminde üye dizi **yeni** ve **silme** işleçleri destekler. Örneğin:
 
 ```cpp
 // spec1_the_operator_delete_function2.cpp

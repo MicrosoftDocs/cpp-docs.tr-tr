@@ -1,5 +1,5 @@
 ---
-title: CMFCImageEditorDialog sınıfı
+title: CMFCImageEditorDialog Sınıfı
 ms.date: 11/19/2018
 f1_keywords:
 - CMFCImageEditorDialog
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCImageEditorDialog [MFC], CMFCImageEditorDialog
 ms.assetid: 6a7d08f3-1ec2-4062-9b79-a0c2776b58d1
-ms.openlocfilehash: 97f16fa00b2e90fd9c43bf9b6792b4eafe7d7b88
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23c2a919428689fe107b82041bd87b758ede2bc9
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394534"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367474"
 ---
-# <a name="cmfcimageeditordialog-class"></a>CMFCImageEditorDialog sınıfı
+# <a name="cmfcimageeditordialog-class"></a>CMFCImageEditorDialog Sınıfı
 
-`CMFCImageEditorDialog` Sınıfı, bir Resim Düzenleyicisi iletişim kutusunu destekler.
+Sınıf `CMFCImageEditorDialog` bir görüntü düzenleyicisi iletişim kutusunu destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,49 +29,49 @@ class CMFCImageEditorDialog : public CDialogEx
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCImageEditorDialog::CMFCImageEditorDialog](#cmfcimageeditordialog)|Oluşturur bir `CMFCImageEditorDialog` nesne.|
+|[CMFCImageEditorDialog::CMFCImageEditorDialog](#cmfcimageeditordialog)|Bir `CMFCImageEditorDialog` nesne inşa eder.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMFCImageEditorDialog` Sınıfı içeren bir iletişim kutusu sağlar:
+Sınıf, `CMFCImageEditorDialog` aşağıdakileri içeren bir iletişim kutusu sağlar:
 
-- Resim alanı bağımsız piksellerde görüntü değiştirmek için kullanın.
+- Görüntüdeki tek tek pikselleri değiştirmek için kullandığınız resim alanı.
 
-- Çizim Araçları piksel resim alanı değiştirmek için.
+- Resim alanındaki pikselleri değiştirmek için çizim araçları.
 
-- Çizim araçları tarafından kullanılır renk belirtmek için bir renk paleti.
+- Çizim araçları tarafından kullanılan rengi belirtmek için bir renk paleti.
 
-- Düzenlemeniz etkisini gösteren bir Önizleme alanı.
+- Edininizin etkisini görüntüleyen bir önizleme alanı.
 
-Aşağıdaki çizimde, bir Resim Düzenleyicisi iletişim kutusu gösterir.
+Aşağıdaki resimde bir resim düzenleyicisi iletişim kutusu gösterilmektedir.
 
 ![CMFCImageEditorDialog iletişim kutusu](../../mfc/reference/media/imageedit.png "CMFCImageEditorDialog iletişim kutusu")
 
-Kullanmak için tek yönlü bir `CMFCImageEditorDialog` nesnedir, geçirilecek bir `CBitmap` düzenlenecek görüntü. Büyük resim düzenleme alanı görüntünün sınırlı bir boyuta sahiptir ve mantıksal piksel boyutunu alana uyacak şekilde ayarlanmış olduğundan oluşturmayın. Çağrı `DoModal` kalıcı bir iletişim kutusu başlatmak için yöntemi.
+Bir `CMFCImageEditorDialog` nesneyi kullanmanın bir yolu, düzenlenecek bir `CBitmap` görüntüyü aktarmaktır. Görüntü düzenleme alanı sınırlı boyutu olduğundan ve mantıksal piksel boyutu alana uyacak şekilde ayarlandığından büyük bir görüntü oluşturmayın. Modal `DoModal` iletişim kutusunu başlatmak için yöntemi arayın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CDialog](../../mfc/reference/cdialog-class.md)
+[Cdialog](../../mfc/reference/cdialog-class.md)
 
 [CDialogEx](../../mfc/reference/cdialogex-class.md)
 
-[CMFCImageEditorDialog](../../mfc/reference/cmfcimageeditordialog-class.md)
+[Cmfcımageeditordialog](../../mfc/reference/cmfcimageeditordialog-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afximageeditordialog.h
+**Üstbilgi:** afximageeditordialog.h
 
-##  <a name="cmfcimageeditordialog"></a>  CMFCImageEditorDialog::CMFCImageEditorDialog
+## <a name="cmfcimageeditordialogcmfcimageeditordialog"></a><a name="cmfcimageeditordialog"></a>CMFCImageEditorDialog::CMFCImageEditorDialog
 
-Oluşturur bir `CMFCImageEditorDialog` nesne.
+Bir `CMFCImageEditorDialog` nesne inşa eder.
 
 ```
 CMFCImageEditorDialog(
@@ -83,23 +83,23 @@ CMFCImageEditorDialog(
 ### <a name="parameters"></a>Parametreler
 
 *pBitmap*<br/>
-Bir görüntü için işaretçi.
+Görüntü için işaretçi.
 
 *pParent*<br/>
-Geçerli Resim Düzenleyicisi iletişim kutusunun üst pencere işaretçisi.
+Geçerli görüntü düzenleyicisi iletişim kutusunun üst penceresine işaretçi.
 
-*nBitsPixel*<br/>
-Renk derinliği da adlandırılır tek bir piksel rengi temsil etmek için kullanılan bit sayısı.  Varsa *nBitsPixel* parametresi, -1, renk derinliği tarafından belirtilen görüntüsünden türetilir *pBitmap* parametresi. Varsayılan değer -1'dir.
+*nBitsPiksel*<br/>
+Renk derinliği olarak da adlandırılan tek bir pikselin rengini temsil etmek için kullanılan bit sayısı.  *nBitsPixel* parametresi -1 ise, renk derinliği *pBitmap* parametresi tarafından belirtilen görüntüden türetilir. Varsayılan değer -1'dir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görüntü değiştirmek için bir görüntü işaretçisine geçirmek `CMFCImageEditorDialog` Oluşturucusu. Ardından çağırın `DoModal` kalıcı bir iletişim kutusu açmak için yöntemi. Zaman `DoModal` yöntemi döndürür, bit eşlem yeni görüntüyü içerir.
+Görüntüyü değiştirmek için, bir görüntü `CMFCImageEditorDialog` işaretçisini oluşturucuya geçirin. Ardından modal iletişim kutusunu açmak için `DoModal` yöntemi arayın. `DoModal` Yöntem döndüğünde, bit eşlem yeni görüntüyü içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCImageEditorDialog` sınıfı. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, sınıfın bir nesnesinin `CMFCImageEditorDialog` nasıl inşa edilebildiğini gösterir. Bu örnek, [Yeni Denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_NewControls#8](../../mfc/reference/codesnippet/cpp/cmfcimageeditordialog-class_1.cpp)]
 [!code-cpp[NVC_MFC_NewControls#40](../../mfc/reference/codesnippet/cpp/cmfcimageeditordialog-class_2.cpp)]

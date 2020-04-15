@@ -1,5 +1,5 @@
 ---
-title: Array sınıfı (C++ standart kitaplık) | Microsoft Docs
+title: dizi Sınıfı (C++ Standart Kitaplık)| Microsoft Dokümanlar
 ms.date: 11/13/2019
 f1_keywords:
 - array/std::array
@@ -96,16 +96,16 @@ helpviewer_keywords:
 - std::array [C++], size
 - std::array [C++], swap
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
-ms.openlocfilehash: e93f5089e62956e7473c95eb6835046b5fe992bf
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 90c68d00475a622ec89b81cc86639f63b1190d02
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422061"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364953"
 ---
-# <a name="array-class-c-standard-library"></a>Array sınıfı (C++ standart kitaplık)
+# <a name="array-class-c-standard-library"></a>dizi Sınıfı (C++ Standart Kitaplık)
 
-`Ty`türündeki öğelerin bir dizi `N` uzunluğunu denetleyen bir nesne tanımlar. Dizi, `array<Ty, N>` nesnesinde bulunan bir `Ty`dizisi olarak depolanır.
+Tür `N` `Ty`öğelerinin uzunluk sırasını denetleyen bir nesneyi açıklar. `Ty`Dizi, `array<Ty, N>` nesnenin içinde bulunan bir dizi olarak depolanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -119,70 +119,70 @@ class array;
 |Parametre|Açıklama|
 |-|-|
 |`Ty`|Öğenin türü.|
-|`N`|Öğe sayısı.|
+|`N`|Öğelerin sayısı.|
 
 ## <a name="members"></a>Üyeler
 
 |Tür Tanımlaması|Açıklama|
 |-|-|
 |[const_iterator](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
-|[const_pointer](#const_pointer)|Bir öğe için sabit bir işaretçi türü.|
+|[Const_pointer](#const_pointer)|Bir öğe için sabit bir işaretçi türü.|
 |[const_reference](#const_reference)|Bir öğe için sabit bir başvuru türü.|
-|[const_reverse_iterator](#const_reverse_iterator)|Denetlenen sıra için bir sabit ters yineleyicinin türü.|
+|[Const_reverse_iterator](#const_reverse_iterator)|Denetlenmeyen dizi için sabit bir ters yineleyici türü.|
 |[difference_type](#difference_type)|İki öğe arasındaki işaretli mesafenin türü.|
-|[iden](#iterator)|Denetlenen dizi için bir yineleyici türü.|
-|[çağrısı](#pointer)|Bir öğe için bir işaretçi türü.|
-|[başvurunun](#reference)|Bir öğe için bir başvuru türü.|
-|[reverse_iterator](#reverse_iterator)|Denetlenen sıra için ters yineleyicinin türü.|
+|[Yineleyici](#iterator)|Denetlenen dizi için bir yineleyici türü.|
+|[pointer](#pointer)|Bir öğe için bir işaretçi türü.|
+|[Başvuru](#reference)|Bir öğe için bir başvuru türü.|
+|[Reverse_iterator](#reverse_iterator)|Denetlenen dizi için ters yineleyici türü.|
 |[size_type](#size_type)|İki öğe arasındaki işaretsiz bir mesafenin türü.|
 |[value_type](#value_type)|Öğenin türü.|
 
 |Üye İşlevi|Açıklama|
 |-|-|
-|[dizide](#array)|Bir dizi nesnesi oluşturur.|
-|[ata](#assign)|Dışı. `fill`kullanın.) Tüm öğeleri değiştirir.|
-|[hızı](#at)|Belirtilen konumdaki bir öğeye erişir.|
+|[Dizi](#array)|Bir dizi nesnesi oluşturuyor.|
+|[Atamak](#assign)|(Eski. Kullanın `fill`.) Tüm öğeleri değiştirir.|
+|[at](#at)|Belirli bir konumda bir öğeye erişir.|
 |[Geri](#back)|Son öğeye erişir.|
-|[başladı](#begin)|Denetlenen dizinin başlangıcını belirtir.|
-|[cbegin](#cbegin)|Dizideki ilk öğeye Rastgele erişimli bir const yineleyicisi döndürür.|
-|[cend](#cend)|Dizinin sonunun hemen ötesinde işaret eden Rastgele erişimli bir const yineleyici döndürür.|
-|[crbegin](#crbegin)|Ters çevrilen dizideki ilk öğeye bir const yineleyici döndürür.|
-|[crend](#crend)|Ters çevrilen dizinin sonuna bir const yineleyici döndürür.|
-|[verileri](#data)|İlk öğenin adresini alır.|
-|[olmamalıdır](#empty)|Öğelerin mevcut olup olmadığını sınar.|
-|[erer](#end)|Denetlenen dizinin bitişini belirtir.|
-|[doldurması](#fill)|Tüm öğeleri belirtilen değerle değiştirir.|
-|[yapılan](#front)|İlk öğeye erişir.|
+|[Başlamak](#begin)|Denetlenen dizinin başlangıcını belirtir.|
+|[cbegin](#cbegin)|Dizideki ilk öğeye rasgele erişimli bir const yineleyici döndürür.|
+|[cend](#cend)|Dizinin sonunun hemen ötesine işaret eden rasgele erişimli bir const yineleyici döndürür.|
+|[crbegin](#crbegin)|Bir const yineleyiciyi ters dizideki ilk öğeye döndürür.|
+|[crend](#crend)|Bir const yineleyiciyi ters bir dizinin sonuna döndürür.|
+|[Veri](#data)|İlk öğenin adresini alır.|
+|[empty](#empty)|Öğelerin var olup olmadığını test edin.|
+|[Son -unda](#end)|Denetlenen dizinin bitişini belirtir.|
+|[fill](#fill)|Tüm öğeleri belirli bir değerle değiştirir.|
+|[Ön](#front)|İlk öğeye erişir.|
 |[max_size](#max_size)|Öğe sayısını sayar.|
-|[rbegin](#rbegin)|Ters denetlenen sıranın başlangıcını belirtir.|
-|[rend](#rend)|Ters denetlenen sıranın sonunu belirtir.|
-|[boyutla](#size)|Öğe sayısını sayar.|
-|[Kur](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
+|[rbegin](#rbegin)|Ters denetimli dizinin başlangıcını belirler.|
+|[Rend](#rend)|Ters denetimli dizinin sonunu belirler.|
+|[Boyutu](#size)|Öğe sayısını sayar.|
+|[Takas](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
 
 |İşleç|Açıklama|
 |-|-|
-|[Array:: operator =](#op_eq)|Denetlenen sırayı değiştirir.|
-|[Array:: operator\[\]](#op_at)|Belirtilen konumdaki bir öğeye erişir.|
+|[dizi::operator=](#op_eq)|Denetedilen sırayı değiştirir.|
+|[dizi::operatör\[\]](#op_at)|Belirli bir konumda bir öğeye erişir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türün varsayılan bir Oluşturucusu `array()` ve varsayılan atama işleci `operator=`ve bir `aggregate`gereksinimlerini karşılar. Bu nedenle, `array<Ty, N>` türündeki nesneler bir toplama başlatıcısı kullanılarak başlatılabilir. Örneğin,
+Tür, varsayılan bir `array()` oluşturucuya ve `operator=`varsayılan atama işlecine sahiptir `aggregate`ve bir . Bu nedenle, tür `array<Ty, N>` nesneleri bir toplu baş harfi zerre kullanılarak baş harfe çevrilir. Örneğin,
 
 ```cpp
 array<int, 4> ai = { 1, 2, 3 };
 ```
 
-dört tamsayı değerini tutan nesne `ai` oluşturur, sırasıyla ilk üç öğeyi 1, 2 ve 3 değerlerine başlatır ve dördüncü öğeyi 0 olarak başlatır.
+dört karşım `ai` değeri tutan nesneyi oluşturur, sırasıyla 1, 2 ve 3 değerlerinin ilk üç öğesini başharfe ve dördüncü öğeyi 0'a başlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<dizi >
+**Üstbilgi:** \<dizi>
 
 **Ad alanı:** std
 
-## <a name="array"></a>Array:: Array
+## <a name="arrayarray"></a><a name="array"></a>dizi::dizi
 
-Bir dizi nesnesi oluşturur.
+Bir dizi nesnesi oluşturuyor.
 
 ```cpp
 array();
@@ -192,14 +192,14 @@ array(const array& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Eklenecek nesne veya Aralık.
+*Doğru*\
+Eklemek için nesne veya aralık.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan Oluşturucu `array()` denetimli sırayı başlatılmamış (veya varsayılan başlatılmış) olarak bırakır. Başlatılmamış bir denetim sırası belirtmek için bunu kullanırsınız.
+Varsayılan oluşturucu, `array()` denetlenmiş sırayı başharfsiz (veya varsayılan olarak başlatif) bırakır. Başharfe getirilmemiş bir denetim sırası belirtmek için kullanırsınız.
 
-Kopya Oluşturucu `array(const array& right)`, denetimli sırayı sıra [*sağ*`.begin()`, *sağ*`.end()`) ile başlatır. Dizi nesnesi *sağa*tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
+Kopya oluşturucu `array(const array& right)` [ sağ ,*sağ*`.begin()` *right*`.end()`] dizisi ile kontrollü sırayı başlatir. Dizi nesnesi *sağ*tarafından denetlenir dizi bir kopyası olan bir ilk kontrollü dizi belirtmek için kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -239,13 +239,13 @@ int main()
 0 1 2 3
 ```
 
-## <a name="assign"></a>Array:: Assign
+## <a name="arrayassign"></a><a name="assign"></a>dizi::atama
 
-C++ 11 ' de kullanılmıyor, [Fill](#fill)ile değiştirilmiştir. Tüm öğeleri değiştirir.
+C++11'de eskimiş, [yerine dolgu](#fill). Tüm öğeleri değiştirir.
 
-## <a name="at"></a>Array:: at
+## <a name="arrayat"></a><a name="at"></a>dizi::at
 
-Belirtilen konumdaki bir öğeye erişir.
+Belirli bir konumda bir öğeye erişir.
 
 ```cpp
 reference at(size_type off);
@@ -256,11 +256,11 @@ constexpr const_reference at(size_type off) const;
 ### <a name="parameters"></a>Parametreler
 
 *kapalı*\
-Erişim için öğenin konumu.
+Öğenin erişim konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, konumundaki denetimli sıranın öğesine bir başvuru *döndürür.* Bu konum geçersizse, işlev `out_of_range`sınıfından bir nesne oluşturur.
+Üye *işlevler,* kapalı konumda denetitilen dizinin öğesine bir başvuru döndürür. Bu konum geçersizse, işlev sınıf `out_of_range`nesnesi atar.
 
 ### <a name="example"></a>Örnek
 
@@ -289,7 +289,7 @@ int main()
 }
 ```
 
-## <a name="back"></a>Array:: Back
+## <a name="arrayback"></a><a name="back"></a>dizi::geri
 
 Son öğeye erişir.
 
@@ -301,7 +301,7 @@ constexpr const_reference back() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri denetlenen sıranın son öğesine bir başvuru döndürür, bu da boş olmamalıdır.
+Üye işlevler, boş olmayan kontrollü dizinin son öğesine bir başvuru döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -334,7 +334,7 @@ int main()
 3
 ```
 
-## <a name="begin"></a>Array:: Begin
+## <a name="arraybegin"></a><a name="begin"></a>dizi::başla
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -345,7 +345,7 @@ const_iterator begin() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, dizinin ilk öğesini işaret eden (veya boş bir dizinin sonunun ötesinde) bir rastgele erişim yineleyici döndürür.
+Üye işlevler, dizinin ilk öğesini (veya boş bir dizinin sonundan hemen sonra) işaret eden rasgele erişim yineleyicidöndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -379,9 +379,9 @@ int main()
 0
 ```
 
-## <a name="cbegin"></a>Array:: cbegin
+## <a name="arraycbegin"></a><a name="cbegin"></a>dizi::cbegin
 
-Aralıktaki ilk öğeyi ele alan bir **sabit** yineleyici döndürür.
+Aralıktaki ilk öğeyi ele alan bir **const** yineleyici döndürür.
 
 ```cpp
 const_iterator cbegin() const noexcept;
@@ -389,13 +389,13 @@ const_iterator cbegin() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aralığın ilk öğesine veya boş bir aralığın sonundaki konuma (boş bir Aralık için `cbegin() == cend()`) işaret eden **const** bir rastgele erişim Yineleyici.
+Aralığın ilk öğesini veya boş aralığın sonundaki konumu işaret eden **bir const** rasgele erişim yineleyicisi `cbegin() == cend()`(boş bir aralık için).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cbegin`dönüş değeri ile aralıktaki öğeler değiştirilemez.
+İade değeri ile `cbegin`aralıktaki öğeler değiştirilemez.
 
-Dönüş değerinin `const_iterator`olduğunu garantilemek için `begin()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `begin()` ve `cbegin()`destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
+Bu üye `begin()` işlevini, iade değerinin `const_iterator`. Genellikle, aşağıdaki örnekte gösterildiği gibi [otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, herhangi `Container` bir tür değiştirilebilir (non-const) kapsayıcı ve `begin()` destekler `cbegin()`düşünün. **const**
 
 ```cpp
 auto i1 = Container.begin();
@@ -405,9 +405,9 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>Array:: cend
+## <a name="arraycend"></a><a name="cend"></a>dizi::cend
 
-Bir aralıktaki son öğeden hemen sonra gelen konumu ele alan bir **const** yineleyici döndürür.
+Bir aralıktaki son öğenin hemen ötesinde konuma hitap eden bir **const** yineleyici döndürür.
 
 ```cpp
 const_iterator cend() const noexcept;
@@ -419,9 +419,9 @@ Aralığın hemen sonunu gösteren bir rastgele erişim yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
+`cend`bir yineleyicinin aralığının sonundan geçip geçmediğini test etmek için kullanılır.
 
-Dönüş değerinin `const_iterator`olduğunu garantilemek için `end()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `end()` ve `cend()`destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
+Bu üye `end()` işlevini, iade değerinin `const_iterator`. Genellikle, aşağıdaki örnekte gösterildiği gibi [otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, herhangi `Container` bir tür değiştirilebilir (non-const) kapsayıcı ve `end()` destekler `cend()`düşünün. **const**
 
 ```cpp
 auto i1 = Container.end();
@@ -431,9 +431,9 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-`cend` tarafından döndürülen değer başvurulmamalıdır.
+Döndürülen `cend` değer dereferenced olmamalıdır.
 
-## <a name="const_iterator"></a>dizi:: const_iterator
+## <a name="arrayconst_iterator"></a><a name="const_iterator"></a>dizi::const_iterator
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -443,7 +443,7 @@ typedef implementation-defined const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için sabit bir rastgele erişim Yineleyici işlevi görebilecek bir nesneyi tanımlar.
+Tür, denetlenen dizi için sabit bir rasgele erişim yineleyicisi olarak hizmet verebilen bir nesneyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -481,7 +481,7 @@ it1: 0 1 2 3
 it2: 0
 ```
 
-## <a name="const_pointer"></a>dizi:: const_pointer
+## <a name="arrayconst_pointer"></a><a name="const_pointer"></a>dizi::const_pointer
 
 Bir öğe için sabit bir işaretçi türü.
 
@@ -491,7 +491,7 @@ typedef const Ty *const_pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, sıranın öğelerine sabit bir işaretçi olarak kullanılabilecek bir nesneyi tanımlar.
+Tür, dizinin öğelerine sabit bir işaretçi olarak hizmet verebilen bir nesneyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -525,7 +525,7 @@ int main()
 0
 ```
 
-## <a name="const_reference"></a>dizi:: const_reference
+## <a name="arrayconst_reference"></a><a name="const_reference"></a>dizi::const_reference
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -535,7 +535,7 @@ typedef const Ty& const_reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetlenen dizinin bir öğesine sabit başvuru olarak işlev yapabilecek bir nesneyi tanımlar.
+Tür, denetlenen dizinin bir öğesine sabit bir başvuru olarak hizmet verebilecek bir nesneyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -569,9 +569,9 @@ int main()
 0
 ```
 
-## <a name="const_reverse_iterator"></a>dizi:: const_reverse_iterator
+## <a name="arrayconst_reverse_iterator"></a><a name="const_reverse_iterator"></a>dizi::const_reverse_iterator
 
-Denetlenen sıra için bir sabit ters yineleyicinin türü.
+Denetlenmeyen dizi için sabit bir ters yineleyici türü.
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -579,7 +579,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için sabit bir ters Yineleyici işlevi görebilecek bir nesneyi tanımlar.
+Tür, denetlenen dizi için sabit bir ters yineleyici olarak hizmet verebilen bir nesneyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -613,9 +613,9 @@ int main()
 3
 ```
 
-## <a name="crbegin"></a>Array:: crbegin
+## <a name="arraycrbegin"></a><a name="crbegin"></a>dizi::crbegin
 
-Ters çevrilen dizideki ilk öğeye bir const yineleyici döndürür.
+Bir const yineleyiciyi ters dizideki ilk öğeye döndürür.
 
 ```cpp
 const_reverse_iterator crbegin() const;
@@ -623,11 +623,11 @@ const_reverse_iterator crbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen dizideki ilk öğeyi ele alarak veya geri çevrilmeyen dizide son öğenin ne olduğunu adresleyen bir const ters rasgele erişim Yineleyici.
+Ters bir dizideki ilk öğeyi ele alan veya ters çevrilmemiş dizideki son öğeyi ele alan const ters rasgele erişim yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crbegin`dönüş değeri ile dizi nesnesi değiştirilemez.
+Return value ile `crbegin`dizi nesnesi değiştirilemez.
 
 ### <a name="example"></a>Örnek
 
@@ -657,9 +657,9 @@ The first element of array is 1.
 The first element of the reversed array is 2.
 ```
 
-## <a name="crend"></a>dizi:: crend
+## <a name="arraycrend"></a><a name="crend"></a>dizi::crend
 
-Ters çevrilen dizideki son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
+Ters bir dizideki son öğeyi yerine getiren konumu gideren bir const yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator crend() const noexcept;
@@ -667,17 +667,17 @@ const_reverse_iterator crend() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen bir dizideki son öğeden sonra gelen konumu ele alan bir sabit ters rastgele erişim yineleyici (geri çevrilmeyen dizide ilk öğeden önce gelen konum).
+Ters bir dizideki son öğeyi başaran konumu (ters çevrilmemiş dizideki ilk öğeden önce gelen konum) gideren const ters rasgele erişim yinelemesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crend`, [Array:: cend](#cend) bir dizi ile birlikte kullanılan ters bir dizi ile birlikte kullanılır.
+`crend`dizi gibi ters bir dizi ile [kullanılır::cend](#cend) bir dizi ile kullanılır.
 
-`crend` dönüş değeri ile (uygun şekilde azaltılır), dizi nesnesi değiştirilemez.
+İade değeri `crend` (uygun şekilde delenmiyet) ile dizi nesnesi değiştirilemez.
 
-`crend`, bir ters yineleyicinin dizisinin sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
+`crend`bir ters yineleyicinin dizinin sonuna ulaşıp ulaşmadığını test etmek için kullanılabilir.
 
-`crend` tarafından döndürülen değer başvurulmamalıdır.
+Döndürülen `crend` değer dereferenced olmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -701,7 +701,7 @@ int main( )
 1
 ```
 
-## <a name="data"></a>dizi: ata:d
+## <a name="arraydata"></a><a name="data"></a>dizi::data
 
 İlk öğenin adresini alır.
 
@@ -713,7 +713,7 @@ const Ty *data() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri denetlenen dizideki ilk öğenin adresini döndürür.
+Üye işlevler, denetlenen dizideki ilk öğenin adresini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -747,7 +747,7 @@ int main()
 0
 ```
 
-## <a name="difference_type"></a>dizi::d ifference_type
+## <a name="arraydifference_type"></a><a name="difference_type"></a>dizi::difference_type
 
 İki öğe arasındaki işaretli mesafenin türü.
 
@@ -757,7 +757,7 @@ typedef std::ptrdiff_t difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İmzalanan tamsayı türü, denetlenen dizideki herhangi iki öğenin adresleri arasındaki farkı temsil eden bir nesneyi tanımlar. `std::ptrdiff_t`türü için bir eş anlamlı.
+İmzalı bir sonraki gün türü, denetlenebilir sırada herhangi iki öğenin adresleri arasındaki farkı temsil eden bir nesneyi açıklar. Bu türü `std::ptrdiff_t`için eşanlamlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -791,7 +791,7 @@ int main()
 -4
 ```
 
-## <a name="empty"></a>Array:: Empty
+## <a name="arrayempty"></a><a name="empty"></a>dizi::boş
 
 Bir öğe olup olmadığını sınar.
 
@@ -801,7 +801,7 @@ constexpr bool empty() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yalnızca `N == 0`true değerini döndürür.
+Üye işlev yalnızca `N == 0`.
 
 ### <a name="example"></a>Örnek
 
@@ -841,7 +841,7 @@ false
 true
 ```
 
-## <a name="end"></a>Array:: End
+## <a name="arrayend"></a><a name="end"></a>dizi::end
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -853,7 +853,7 @@ const_reference end() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, dizinin sonunun hemen ötesinde işaret eden bir rastgele erişim yineleyici döndürür.
+Üye işlevler, dizinin sonunun hemen ötesine işaret eden rasgele erişim yinelemesi döndürer.
 
 ### <a name="example"></a>Örnek
 
@@ -887,7 +887,7 @@ int main()
 3
 ```
 
-## <a name="fill"></a>Array:: Fill
+## <a name="arrayfill"></a><a name="fill"></a>dizi::doldurmak
 
 Bir diziyi siler ve belirtilen öğeleri boş diziye kopyalar.
 
@@ -899,11 +899,11 @@ void fill(const Type& val);
 
 |Parametre|Açıklama|
 |-|-|
-|*Acil*|Diziye eklenmekte olan öğenin değeri.|
+|*Val*|Diziye eklenen öğenin değeri.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-`fill` dizideki her öğeyi belirtilen değerle değiştirir.
+`fill`dizinin her öğesini belirtilen değerle değiştirir.
 
 ### <a name="example"></a>Örnek
 
@@ -933,7 +933,7 @@ int main()
 }
 ```
 
-## <a name="front"></a>Array:: Front
+## <a name="arrayfront"></a><a name="front"></a>dizi::ön
 
 İlk öğeye erişir.
 
@@ -945,7 +945,7 @@ constexpr const_reference front() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri denetlenen sıranın ilk öğesine bir başvuru döndürür ve bu boş olmamalıdır.
+Üye işlevler, boş olmayan kontrollü dizinin ilk öğesine bir başvuru döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -978,7 +978,7 @@ int main()
 0
 ```
 
-## <a name="iterator"></a>Array:: Yineleyici
+## <a name="arrayiterator"></a><a name="iterator"></a>dizi::iterator
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -988,7 +988,7 @@ typedef implementation-defined iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için rastgele erişim Yineleyici işlevi görebilecek bir nesneyi tanımlar.
+Tür, denetlenen dizi için rasgele erişim yineleyicisi olarak hizmet verebilen bir nesneyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -1027,7 +1027,7 @@ it1: 0 1 2 3
 it2: 0
 ```
 
-## <a name="max_size"></a>dizi:: max_size
+## <a name="arraymax_size"></a><a name="max_size"></a>dizi::max_size
 
 Öğe sayısını sayar.
 
@@ -1037,7 +1037,7 @@ constexpr size_type max_size() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `N`döndürür.
+Üye işlev `N`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1070,9 +1070,9 @@ int main()
 4
 ```
 
-## <a name="op_at"></a>Array:: operator []
+## <a name="arrayoperator"></a><a name="op_at"></a>dizi::operatör[]
 
-Belirtilen konumdaki bir öğeye erişir.
+Belirli bir konumda bir öğeye erişir.
 
 ```cpp
 reference operator[](size_type off);
@@ -1083,13 +1083,13 @@ constexpr const_reference operator[](size_type off) const;
 ### <a name="parameters"></a>Parametreler
 
 *kapalı*\
-Erişim için öğenin konumu.
+Öğenin erişim konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, konumundaki denetimli sıranın öğesine bir başvuru *döndürür.* Bu konum geçersizse, davranış tanımsızdır.
+Üye *işlevler,* kapalı konumda denetitilen dizinin öğesine bir başvuru döndürür. Bu konum geçersizse, davranış tanımsızdır.
 
-Ayrıca, bir **dizinin**öğesine başvuru almak için üye olmayan bir [Get](array-functions.md#get) işlevi de mevcuttur.
+Ayrıca bir **dizi**öğesiiçin bir başvuru almak için kullanılabilir olmayan bir üye [get](array-functions.md#get) işlevi de vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -1123,9 +1123,9 @@ int main()
 1 3
 ```
 
-## <a name="op_eq"></a>Array:: operator =
+## <a name="arrayoperator"></a><a name="op_eq"></a>dizi::operator=
 
-Denetlenen sırayı değiştirir.
+Denetedilen sırayı değiştirir.
 
 ```cpp
 array<Value> operator=(array<Value> right);
@@ -1133,12 +1133,12 @@ array<Value> operator=(array<Value> right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Kopyalanacak kapsayıcı.
+*Doğru*\
+Kopyalanması gereken konteyner.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Member işleci, her bir öğesini denetimli sıranın karşılık *gelen öğesine atar* ve ardından `*this`döndürür. Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
+Üye işleç, her *bir hakkın* öğesini denetlenmeyen `*this`dizinin karşılık gelen öğesine atar ve döndürür. Bunu, denetlenir sırayı *sağdaki*kontrollü dizinin bir kopyasıyla değiştirmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1178,7 +1178,7 @@ int main()
 0 1 2 3
 ```
 
-## <a name="pointer"></a>dizi::p oınter
+## <a name="arraypointer"></a><a name="pointer"></a>dizi::pointer
 
 Bir öğe için bir işaretçi türü.
 
@@ -1188,7 +1188,7 @@ typedef Ty *pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, sıranın öğelerinin işaretçisi olarak işlev görebilecek bir nesne tanımlar.
+Tür, dizinin öğelerine işaretçi olarak hizmet verebilen bir nesneyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -1222,9 +1222,9 @@ int main()
 0
 ```
 
-## <a name="rbegin"></a>Array:: rbegin
+## <a name="arrayrbegin"></a><a name="rbegin"></a>dizi::rbegin
 
-Ters denetlenen sıranın başlangıcını belirtir.
+Ters denetimli dizinin başlangıcını belirler.
 
 ```cpp
 reverse_iterator rbegin()noexcept;
@@ -1233,7 +1233,7 @@ const_reverse_iterator rbegin() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, denetimli dizinin sonunun hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın başlangıcını belirler.
+Üye işlevler, denetitilen dizinin sonundan hemen ötesine işaret eden bir ters yineleyici döndürer. Bu nedenle, ters sıranın başlangıcını belirtir.
 
 ### <a name="example"></a>Örnek
 
@@ -1267,7 +1267,7 @@ int main()
 3
 ```
 
-## <a name="reference"></a>Array:: Reference
+## <a name="arrayreference"></a><a name="reference"></a>dizi::başvuru
 
 Bir öğe için bir başvuru türü.
 
@@ -1277,7 +1277,7 @@ typedef Ty& reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetlenen sıranın bir öğesine başvuru olarak işlev görebilecek bir nesne tanımlar.
+Tür, denetlenen dizinin bir öğesine başvuru olarak hizmet verebilecek bir nesneyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -1311,9 +1311,9 @@ int main()
 0
 ```
 
-## <a name="rend"></a>dizi:: rend
+## <a name="arrayrend"></a><a name="rend"></a>dizi::rend
 
-Ters denetlenen sıranın sonunu belirtir.
+Ters denetimli dizinin sonunu belirler.
 
 ```cpp
 reverse_iterator rend()noexcept;
@@ -1322,7 +1322,7 @@ const_reverse_iterator rend() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, sıranın ilk öğesini işaret eden bir ters yineleyici döndürür (veya bir boş dizinin sonunun ötesinde)). Bu nedenle, ters sıranın sonunu belirler.
+Üye işlevler, dizinin ilk öğesini işaret eden bir ters yineleyici döndürür (veya boş bir dizinin sonundan hemen sonra)). Bu nedenle, ters sıranın sonunu belirtir.
 
 ### <a name="example"></a>Örnek
 
@@ -1356,9 +1356,9 @@ int main()
 0
 ```
 
-## <a name="reverse_iterator"></a>dizi:: reverse_iterator
+## <a name="arrayreverse_iterator"></a><a name="reverse_iterator"></a>dizi::reverse_iterator
 
-Denetlenen sıra için ters yineleyicinin türü.
+Denetlenen dizi için ters yineleyici türü.
 
 ```cpp
 typedef std::reverse_iterator<iterator> reverse_iterator;
@@ -1366,7 +1366,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için ters Yineleyici işlevi görebilecek bir nesneyi tanımlar.
+Tür, denetlenen dizi için ters yineleyici olarak hizmet verebilen bir nesneyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -1400,7 +1400,7 @@ int main()
 3
 ```
 
-## <a name="size"></a>Array:: size
+## <a name="arraysize"></a><a name="size"></a>dizi::boyut
 
 Öğe sayısını sayar.
 
@@ -1410,7 +1410,7 @@ constexpr size_type size() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `N`döndürür.
+Üye işlev `N`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1443,9 +1443,9 @@ int main()
 4
 ```
 
-## <a name="size_type"></a>dizi:: size_type
+## <a name="arraysize_type"></a><a name="size_type"></a>dizi::size_type
 
-İki öğe arasındaki işaretsiz mesafe türü.
+İki öğe arasındaki imzasız uzaklık türü.
 
 ```cpp
 typedef std::size_t size_type;
@@ -1453,7 +1453,7 @@ typedef std::size_t size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretsiz tamsayı türü, denetlenen bir dizinin uzunluğunu temsil eden bir nesneyi tanımlar. `std::size_t`türü için bir eş anlamlı.
+İmzasız tümsavar türü, denetlenebilir herhangi bir dizinin uzunluğunu temsil eden bir nesneyi açıklar. Bu türü `std::size_t`için eşanlamlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1487,9 +1487,9 @@ int main()
 4
 ```
 
-## <a name="swap"></a>Array:: swap
+## <a name="arrayswap"></a><a name="swap"></a>dizi::takas
 
-Bu dizinin içeriğini başka bir dizi ile değiştirir.
+Bu dizinin içeriğini başka bir diziyle değiştirir.
 
 ```cpp
 void swap(array& right);
@@ -1497,14 +1497,14 @@ void swap(array& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-İçeriği takas eden dizi.
+*Doğru*\
+İçerikleri takas etmek için dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `*this` ve *sağ*arasındaki denetlenen dizileri değiştirir. Bir dizi öğe ataması gerçekleştirir ve Oluşturucu çağrıları `N`orantılıdır.
+Üye işlev, kontrollü dizileri `*this` sağ ve *arasındaki*sıraları değiştirir. Bu öğe atamaları ve kurucu ile orantılı bir `N`dizi gerçekleştirir.
 
-Ayrıca, iki **dizi** örneğini değiştirmek için üye olmayan bir [değiştirme](array-functions.md#swap) işlevi de mevcuttur.
+Ayrıca, iki **dizi** örneğini değiştirmek için üye olmayan bir [takas](array-functions.md#swap) işlevi de vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -1553,7 +1553,7 @@ int main()
 0 1 2 3
 ```
 
-## <a name="value_type"></a>dizi:: value_type
+## <a name="arrayvalue_type"></a><a name="value_type"></a>dizi::value_type
 
 Öğenin türü.
 
@@ -1563,7 +1563,7 @@ typedef Ty value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `Ty`şablon parametresi için bir eş anlamlı.
+Tür, şablon parametresi `Ty`ile eş anlamlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1602,4 +1602,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<dizi >](../standard-library/array.md)
+[\<dizi>](../standard-library/array.md)

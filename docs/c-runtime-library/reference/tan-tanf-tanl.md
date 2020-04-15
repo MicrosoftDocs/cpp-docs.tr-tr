@@ -1,10 +1,11 @@
 ---
 title: tan, tanf, tanl
-ms.date: 04/10/2018
+ms.date: 4/2/2020
 api_name:
 - tan
 - tanf
 - tanl
+- _o_tan
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -35,16 +37,16 @@ helpviewer_keywords:
 - tanf function
 - trigonometric functions
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
-ms.openlocfilehash: 9fc1a75bdc6fddb5134b9db17961ba3c4550bc79
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 73a519614f17b6a8f8b26b5eae2172c87ea7f817
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168713"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81362638"
 ---
 # <a name="tan-tanf-tanl"></a>tan, tanf, tanl
 
-Tanjantı hesaplar.
+Teğeti hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,29 +63,31 @@ long double tan( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Radyan cinsinden açı.
+*X*<br/>
+Radyanlarda açı.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-**Tan** işlevleri *x*tanjantını döndürür. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
+**Tan** fonksiyonları *x*teğet döndürün. *X* 263'ten büyük veya eşitse veya -263'ten daha az veya eşitse, sonuçta bir önem kaybı oluşur.
 
-|Girdi|SEH özel durumu|**Matherr** Duruma|
+|Girdi|SEH Özel Durumu|**Matherr** Özel durum|
 |-----------|-------------------|-------------------------|
-|± QNAN, IND|yok|_DOMAIN|
+|± QNAN,IND|yok|_DOMAIN|
 |± INF|**Geçersiz**|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden,, **float** veya **Long** **Double** değerleri alıp döndüren **tan** aşırı yüklerini çağırabilirsiniz. C programında, **tan** her zaman **Double**öğesini alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** veya uzun **long** **çift** değerleri alan ve **döndüren** aşırı tan yüklerini arayabilirsiniz. C **programında, tan** her zaman alır ve **çift**döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgiC++()|
+|Yordam|Gerekli üstbilgi (C)|Gerekli üstbilgi (C++)|
 |-------------|---------------------|-|
-|**tan**, **tanf**, **tanl**|\<Math. h >|\<cmath > veya \<Math. h >|
+|**tan**, **tanf**, **tanl**|\<math.h>|\<cmath> \<veya math.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

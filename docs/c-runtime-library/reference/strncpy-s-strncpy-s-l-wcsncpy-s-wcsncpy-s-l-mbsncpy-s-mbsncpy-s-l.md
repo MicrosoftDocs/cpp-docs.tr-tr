@@ -1,6 +1,6 @@
 ---
 title: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _mbsncpy_s_l
 - wcsncpy_s
@@ -8,6 +8,10 @@ api_name:
 - strncpy_s
 - _mbsncpy_s
 - _wcsncpy_s_l
+- _o__mbsncpy_s
+- _o__mbsncpy_s_l
+- _o_strncpy_s
+- _o_wcsncpy_s
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -22,6 +26,7 @@ api_location:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -49,19 +54,19 @@ helpviewer_keywords:
 - _tcsncpy_s function
 - wcsncpy_s_l function
 ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
-ms.openlocfilehash: 2ccfde34d12dadb76bc8b4058a3f9b52c3d1f4bc
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 81932aa3ca6af01ecc5f6ff353db76185d027838
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626145"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364503"
 ---
 # <a name="strncpy_s-_strncpy_s_l-wcsncpy_s-_wcsncpy_s_l-_mbsncpy_s-_mbsncpy_s_l"></a>strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 
-Bir dizenin karakterlerini diğerine kopyalar.  [Strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md) 'nin bu SÜRÜMLERI, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
+Bir dizedeki karakterleri diğerine kopyalar.  [Strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md) bu sürümleri, [CRT Güvenlik Özellikleri](../../c-runtime-library/security-features-in-the-crt.md)açıklandığı gibi güvenlik geliştirmeleri var.
 
 > [!IMPORTANT]
-> **_mbsncpy_s** ve **_mbsncpyı_s_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsncpy_s** ve **_mbsncpy_s_l,** Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -149,38 +154,38 @@ errno_t _mbsncpy_s_l(
 ### <a name="parameters"></a>Parametreler
 
 *strDest*<br/>
-Hedef dize.
+Hedef dizesi.
 
 *numberOfElements*<br/>
-Hedef dizenin karakter cinsinden boyutu.
+Karakterlerdeki hedef dizenin boyutu.
 
 *strSource*<br/>
 Kaynak dize.
 
-*biriktirme*<br/>
-Kopyalanacak karakter sayısı veya [_Kes](../../c-runtime-library/truncate.md).
+*Sayısı*<br/>
+Kopyalanacak karakter sayısı veya [_TRUNCATE.](../../c-runtime-library/truncate.md)
 
-*ayarlar*<br/>
+*Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa **sıfır, kesme oluştuysa, aksi** takdirde hata kodu.
+Başarılı olursa sıfır, kesilme oluştuysa **STRUNCATE,** aksi takdirde bir hata kodu.
 
-### <a name="error-conditions"></a>Hata koşulları
+### <a name="error-conditions"></a>Hata Koşulları
 
-|*strDest*|*numberOfElements*|*strSource*|Dönüş değeri|*StrDest* içeriği|
+|*strDest*|*numberOfElements*|*strSource*|Döndürülen değer|*strDest* içeriği|
 |---------------|------------------------|-----------------|------------------|---------------------------|
-|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EıNVAL**|değiştirilmedi|
-|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|**EıNVAL**|*strDest*[0] 0 olarak ayarlandı|
-|Kaydedilmemiş|0|Kaydedilmemiş|**EıNVAL**|değiştirilmedi|
-|**null** değil|çok küçük|Kaydedilmemiş|**ERANGE**|*strDest*[0] 0 olarak ayarlandı|
+|**Null**|herhangi bir|herhangi bir|**Eınval**|değiştirilmemiş|
+|herhangi bir|herhangi bir|**Null**|**Eınval**|*strDest*[0] 0 olarak ayarlandı|
+|herhangi bir|0|herhangi bir|**Eınval**|değiştirilmemiş|
+|**NULL** değil|çok küçük|herhangi bir|**Erange**|*strDest*[0] 0 olarak ayarlandı|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, *strSource* 'un ilk *d* karakterini *strDest*konumuna kopyalamaya çalışır; burada *D* , *Count* , *strSource*uzunluğunun küçüktür. Bu *D* karakterleri, *strDest* içinde sığar (boyutu *numberOfElements*olarak verilir) ve hala boş bir Sonlandırıcı için yer bırakır, bu karakterler kopyalanır ve bir Sonlandırıcı null değeri eklenir; Aksi halde, *strDest*[0] null karakter olarak ayarlanır ve [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır.
+Bu işlevler *strSource* ilk *D* karakterleri *strDest*kopyalamaya çalışın , *D* *sayısı* ve *strSource*uzunluğu daha az olduğu . Bu *D* karakterleri *strDest'e* sığacaksa (boyutu *numberOfElements*olarak verilirse) ve yine de null terminator için yer bırakırsa, bu karakterler kopyalanır ve sonlandırıcı bir null eklenir; aksi takdirde, *strDest*[0] null karaktere ayarlanır ve geçersiz parametre işleyicisi, [Parametre Doğrulama](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır.
 
-Yukarıdaki paragrafın bir istisnası vardır. *Count* **_TRUNCATE**ise, *strSource* 'un büyük bölümü, her zaman eklenmiş olan sonlandırma null değeri Için oda terk edilirken, *strDest* 'a sığacak şekilde kopyalanır.
+Yukarıdaki paragrafiçin bir istisna vardır. *Sayım* **_TRUNCATE**ise , o zaman *strSource* kadar *strDest* sığacak kadar kopyalanır hala her zaman eklenen null sonlandırma için yer bırakarak.
 
 Örneğin,
 
@@ -189,48 +194,50 @@ char dst[5];
 strncpy_s(dst, 5, "a long string", 5);
 ```
 
-, **strncpy_s** beş karakterden oluşan beş baytlık bir arabelleğe kadar beş karakteri kopyalamasını istediğimiz anlamına gelir. Bu, null Sonlandırıcı için boşluk bırakmaz, bu nedenle dizeyi **strncpy_s** sıfırlar ve geçersiz parametre işleyicisini çağırır.
+**strncpy_s** beş karakteri bir arabellek beş bayt uzunluğunda kopyalamak istiyoruz anlamına gelir; bu null sonlandırıcı için hiçbir boşluk bırakır, bu nedenle **strncpy_s** dize dışarı sıfırlar ve geçersiz parametre işleyicisi çağırır.
 
-Kesme davranışı gerekiyorsa, **_Truncate** veya (*size* -1) kullanın:
+Kesilme davranışı gerekiyorsa, **_TRUNCATE** veya (*boyut* - 1) kullanın:
 
 ```C
 strncpy_s(dst, 5, "a long string", _TRUNCATE);
 strncpy_s(dst, 5, "a long string", 4);
 ```
 
-**Strncpy**'nin aksine, *Count* 'un *strSource*uzunluğundan daha büyük olması, hedef dizenin uzunluk *sayısına*kadar olan null karakterlerle doldurulmuş olmadığını unutmayın.
+**Strncpy**aksine , *sayma* *strSource*uzunluğundan büyükse, hedef dize uzunluk *sayısına*kadar null karakterler ile yastıklı DeğİlD.
 
-Kaynak ve hedef dizeler çakıştığında **strncpy_s** davranışı tanımsızdır.
+Kaynak ve hedef dizeleri çakışıyorsa **strncpy_s** davranışı tanımsızdır.
 
-*StrDest* veya *strSource* **null**ise veya *numberOfElements* 0 ise, geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
+*strDest* veya *strSource* **NULL**ise veya *numberOfElements* 0 ise, geçersiz parametre işleyicisi çağrılır. Yürütmedevam etmesine izin verilirse, işlev **EINVAL** döndürür ve **EINVAL** **için errno** ayarlar.
 
-**wcsncpy_s** ve **_mbsncpy_s** , **strncpy_s**'in geniş karakterli ve çok baytlı karakter sürümleridir. Bağımsız değişkenler ve dönüş değeri **wcsncpy_s** ve **mbsncpy_s** , buna göre farklılık gösterir. Bu altı işlev, aynı şekilde davranır.
+**wcsncpy_s** ve **_mbsncpy_s** **strncpy_s**geniş karakterli ve çok bayt karakterli versiyonlarıdır. wcsncpy_s ve **mbsncpy_s** bağımsız **değişkenleri** ve getiri değeri buna göre değişir. Bu altı fonksiyon aynı şekilde çalışır.
 
-Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Çıktı değeri, yerel LC_CTYPE **kategori** ayarı ayarı etkilenir; daha fazla bilgi için [setlocale'ye](setlocale-wsetlocale.md) bakın. Bu işlevlerin **_l** soneki olmayan sürümleri, bu yerele bağımlı davranış için geçerli yerel durumu kullanır; **_l** soneki olan sürümler, bunun yerine geçirilen yerel parametreyi kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevleri kullanmak şablon aşırı yükleri ile basitleştirilir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkartabilir (boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir) ve eski, güvenli olmayan işlevleri yeni, güvenli karşılıklarıyla otomatik olarak değiştirebilirler. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
 
-Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevlerin hata ayıklama kitaplığı sürümleri önce arabelleği 0xFE ile doldurur. Bu davranışı devre dışı kullanabilirsiniz, [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)kullanın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsncpy_s**|**strncpy_s**|**_mbsnbcpy_s**|**wcsncpy_s**|
-|**_tcsncpyı_s_l**|**_strncpyı_s_l**|**_mbsnbcpyı_s_l**|**_wcsncpyı_s_l**|
+|**_tcsncpy_s_l**|**_strncpy_s_l**|**_mbsnbcpy_s_l**|**_wcsncpy_s_l**|
 
 > [!NOTE]
-> **_strncpyı_s_l**, **_wcsncpyı_s_l** ve **_mbsncpyı_s_l** yerel ayar bağımlılığını içermez ve yalnızca **_tcsncpon _s_l** için sağlanır ve doğrudan çağrılması amaçlanmamıştır.
+> **_strncpy_s_l,** **_wcsncpy_s_l** ve **_mbsncpy_s_l** hiçbir yerel bağımlılık var ve **sadece _tcsncpy_s_l** için sağlanan ve doğrudan çağrılacak şekilde tasarlanmamıştır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strncpy_s**, **_strncpyı_s_l**|\<String. h >|
-|**wcsncpy_s**, **_wcsncpyı_s_l**|\<String. h > veya \<wchar. h >|
-|**_mbsncpy_s**, **_mbsncpyı_s_l**|\<mbstring. h >|
+|**strncpy_s**, **_strncpy_s_l**|\<string.h>|
+|**wcsncpy_s**, **_wcsncpy_s_l**|\<string.h> \<veya wchar.h>|
+|**_mbsncpy_s**, **_mbsncpy_s_l**|\<mbstring.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -405,8 +412,8 @@ After strncpy_s (with null-termination):
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcpy, _mbsnbcpy_l](mbsnbcpy-mbsnbcpy-l.md)<br/>
 [strcat_s, wcscat_s, _mbscat_s](strcat-s-wcscat-s-mbscat-s.md)<br/>

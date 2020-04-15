@@ -1,10 +1,12 @@
 ---
-title: timespec_get, _times, 32_get, _timesbir 64_get1
-ms.date: 11/04/2016
+title: timespec_get, _timespec32_get, _timespec64_get1
+ms.date: 4/2/2020
 api_name:
 - timespec_get
 - _timespec32_get
 - _timespec64_get
+- _o__timespec32_get
+- _o__timespec64_get
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +19,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -36,16 +39,16 @@ helpviewer_keywords:
 - _timespec32_get function
 - _timespec64_get function
 ms.assetid: ed757258-b4f2-4c1d-a91b-22ea6ffce4ab
-ms.openlocfilehash: c0517c974bf58d502133ccd9868149bd178790d6
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: fc6d91b076f2dd2e25c55d9cf7062e81c3fab11a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957629"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81362485"
 ---
 # <a name="timespec_get-_timespec32_get-_timespec64_get"></a>timespec_get, _timespec32_get, _timespec64_get
 
-Belirtilen zaman tabanına göre, ilk bağımsız değişken tarafından işaret edilen aralığı geçerli takvim zamanına göre belirler.
+Belirtilen zaman tabanını temel alarak, ilk bağımsız değişkentarafından işaret edilen aralığı geçerli takvim saatine ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,32 +70,34 @@ int _timespec64_get(
 ### <a name="parameters"></a>Parametreler
 
 *time_spec*<br/>
-Dönem başlangıcından bu yana saniye cinsinden süre ve nanosaniye olarak ayarlanan bir yapı işaretçisi.
+Çağın başlangıcından bu yana saniye ve nanosaniye cinsinden zamana ayarlanan bir yapıyı işaretle.
 
 *base*<br/>
-Zaman temelini belirten, sıfır olmayan uygulamaya özgü bir değer.
+Zaman tabanını belirten sıfır olmayan uygulamaya özgü bir değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa *taban* değeri 0 döndürür.
+Başarılı olursa *tabanın* değeri, aksi takdirde sıfır döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Timespec_get** işlevleri, *time_spec* bağımsız değişkeni tarafından işaret edilen yapıda geçerli zamanı ayarlar. Bu yapının tüm sürümlerinde, **tv_sec** ve **tv_nsec**iki üyesi vardır. **Tv_sec** değeri, *taban*olarak belirtilen dönem başlangıcından bu yana, sistem saatinin çözümlenmesinden önce, tüm saniye sayısına ve **tv_nsec** ' nin tamsayı sayısına yuvarlanır.
+**timespec_get** *işlevleri, time_spec* bağımsız değişkenin işaret ettiği yapıdaki geçerli saati ayarlar. Bu yapının tüm **sürümleriiki** üye, tv_sec ve **tv_nsec**var. **tv_sec** değeri saniye tam sayısına ayarlanır ve *nanosaniye*integral **sayısına tv_nsec,** sistem saatinin çözünürlüğüne yuvarlanır, temel tarafından belirtilen çağın başlangıcından bu yana.
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Bu işlevler yalnızca *temel* değer olarak **TIME_UTC** destekler. Bu, *time_spec* değerini dönem başı, gece yarısı, 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) için saniye ve nanosaniye sayısına ayarlar. Bir **struct** **_timesbir 32**içinde, **tv_sec** bir **__time32_t** değeridir. Bir **struct** **_times, 64**, **tv_sec** bir **__time64_t** değeridir. Bir **struct** **timespec**içinde, **tv_sec** , Önişlemci makrosunun _USE_32BIT_TIME_T 'ın tanımlanıp tanımlandığına bağlı olarak 32 bit veya 64 bit olan **time_t** türüdür. **Timespec_get** işlevi, _USE_32BIT_TIME_T tanımlanmışsa **_times, 32_get** yöntemini çağıran bir satır içi işlevdir; Aksi takdirde, **_timesbir 64_get**çağrısı yapın.
+Bu işlevler yalnızca *temel* değer olarak **TIME_UTC** destekler. Bu, çağın başlangıcından bu yana saniye ve nanosaniye sayısı, Midnight, 1 Ocak 1970, Eşgüdümlü Evrensel Zaman (UTC) *time_spec* değerini ayarlar. Bir **yapı** **_timespec32,** **tv_sec** **__time32_t** bir değerdir. Bir **yapı** **_timespec64,** **tv_sec** **__time64_t** bir değerdir. Bir **yapı** **zaman spec,** **tv_sec** preprocessor makro _USE_32BIT_TIME_T tanımlı olup olmadığına bağlı olarak uzunluğu 32 bit veya 64 bit olan **time_t** türüdür. **timespec_get** işlevi, _USE_32BIT_TIME_T tanımlanırsa **_timespec32_get** çağıran bir satır dışı işlevdir; aksi takdirde **_timespec64_get**çağırır.
 
-**Son Microsoft 'a özgü**
+**Microsoft'a Özel Son**
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**timespec_get**, **_times, 32_get**, **_timesbir 64_get**|C: \<Time. h >, C++: \<CTime > veya \<Time. h >|
+|**timespec_get**, **_timespec32_get**, **_timespec64_get**|C: \<time.h>, \<C++: \<ctime> veya time.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

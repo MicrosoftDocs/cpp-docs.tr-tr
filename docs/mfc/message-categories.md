@@ -10,38 +10,38 @@ helpviewer_keywords:
 - messages [MFC], Windows
 - message handling [MFC], message types
 ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
-ms.openlocfilehash: 07d9e706e8ed01a81ee580e7c4e11fa1f1a7a8df
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 686d5eef4aaa67785aa56133d820b637fbf4bb86
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206886"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364748"
 ---
 # <a name="message-categories"></a>İleti Kategorileri
 
-Üç ana kategori için ne tür bir ileti işleyicileri yazma:
+Üç ana kategori için ne tür iletiler yazarsınız:
 
 1. Windows iletileri
 
-   Bu, öncelikle başlayarak iletileri içerir **WM_** WM_COMMAND dışında bir önek. Windows iletileri, windows ve görünümler tarafından işlenir. Bu iletiler genellikle iletisini işlemek nasıl belirlemek için kullanılan parametrelere sahiptir.
+   Bu, WM_COMMAND hariç, **öncelikle WM_** önekiyle başlayan iletileri içerir. Windows iletileri windows ve görünümler tarafından işlenir. Bu iletiler genellikle iletinin nasıl işleyeceğini belirlemede kullanılan parametrelere sahiptir.
 
 1. Denetim bildirimleri
 
-   Bu, kendi üst windows denetimleri ve diğer alt pencereleri WM_COMMAND bildirim iletileri içerir. Örneğin, bir düzenleme denetiminin üst kullanıcının düzenleme denetiminde metni değiştirmiş bir eylem durumdayken EN_CHANGE denetim bildirimi kodu içeren bir WM_COMMAND ileti gönderir. İleti için Pencere işleyicisi bildirim iletisi denetimdeki metin alma gibi uygun bir şekilde yanıt verir.
+   Buna denetimlerden ve diğer alt pencerelerden üst pencerelerine WM_COMMAND bildirim iletileri dahildir. Örneğin, bir edit denetimi, kullanıcı denetim denetiminde metni değiştirmiş olabilecek bir eylemde bulunduğunda, ana EN_CHANGE denetim bildirim kodunu içeren bir WM_COMMAND iletisi gönderir. İleti için pencerenin işleyicisi, bildirim iletisine denetimdeki metni almak gibi uygun bir şekilde yanıt verir.
 
-   Çerçeve denetim bildirimi iletileri gibi diğer yolları **WM_** iletileri. Bir özel durum, ancak kullanıcı bunları tıkladığında düğmeler tarafından gönderilen BN_CLICKED denetim bildirimi ileti olabilir. Bu iletiyi özel bir komut iletisi olarak kabul edilir ve gibi başka komutlar yönlendirilir.
+   Çerçeve, diğer **WM_** iletileri gibi denetim bildirim iletilerini yönlendirir. Ancak bunun bir istisnası, kullanıcı bunları tıklattığında düğmeler tarafından gönderilen BN_CLICKED denetim bildirim iletisidir. Bu ileti özel olarak bir komut iletisi olarak kabul edilir ve diğer komutlar gibi yönlendirilir.
 
 1. Komut iletileri
 
-   Bu kullanıcı arabirimi nesneleri içinden WM_COMMAND bildirim iletileri içerir: menüleri ve araç çubuğu düğmeleri kısayol tuşları. Diğer iletiler komutlarından farklı framework işler ve bunlar daha fazla türde nesneler tarafından açıklandığı şekilde işlenebilir [komut hedefleri](../mfc/command-targets.md).
+   Bu, kullanıcı arabirimi nesnelerinden WM_COMMAND bildirim iletilerini içerir: menüler, araç çubuğu düğmeleri ve hızlandırıcı tuşları. Çerçeve süreçleri komutları diğer iletilerden farklı olarak işler ve [Komut Hedefleri'nde](../mfc/command-targets.md)açıklandığı gibi daha fazla nesne türü tarafından işlenebilir.
 
-##  <a name="_core_windows_messages_and_control.2d.notification_messages"></a> Windows iletilerini ve denetim bildirimi iletileri
+## <a name="windows-messages-and-control-notification-messages"></a><a name="_core_windows_messages_and_control.2d.notification_messages"></a>Windows İletileri ve Denetim-Bildirim İletileri
 
-İletileri kategorilerdeki 1 ve 2 — Windows iletileri ve denetim bildirimleri — windows tarafından işlenir: sınıfından türetilmiş sınıfların nesneleri `CWnd`. Bu içerir `CFrameWnd`, `CMDIFrameWnd`, `CMDIChildWnd`, `CView`, `CDialog`, ve bu temel sınıfların kendi sınıflar türetilmiş. Bu tür nesneler kapsülleyen bir `HWND`, bir Windows penceresi için bir tanıtıcı.
+Kategori 1 ve 2 'deki iletiler — Windows iletileri ve denetim bildirimleri `CWnd`— windows tarafından işlenir: sınıftan türetilen sınıfların nesneleri. Bu, `CFrameWnd` `CMDIFrameWnd`, `CMDIChildWnd` `CView`, `CDialog`, , , ve bu temel sınıflardan türetilen kendi sınıflarınızı içerir. Bu tür nesneler, Windows `HWND`penceresine bir , tutamacı kapsüller.
 
-##  <a name="_core_command_messages"></a> Komut iletileri
+## <a name="command-messages"></a><a name="_core_command_messages"></a>Komut Mesajları
 
-İletileri kategorisinde 3 — komutları — çeşitli nesneleri tarafından işlenebilir: belgeleri ve belge şablonları uygulama nesnesinin kendisi yanı sıra windows ve görünümler. Bir komut bazı belirli nesne doğrudan etkilediğinde, söz konusu nesne komutunu işlemek için mantıklıdır. Örneğin, Dosya menüsündeki Aç komutunu uygulamayla mantıksal olarak ilişkili: komut alındıktan sonra belirtilen bir belge uygulama açılır. Bu nedenle açık komut işleyicisi uygulama sınıfının bir üye işlevidir. Komutlar ve nesnelere nasıl yönlendirileceğini hakkında daha fazla bilgi için bkz. [Framework'ün işleyici çağırması](../mfc/how-the-framework-calls-a-handler.md).
+Kategori 3'teki iletiler —komutlar- daha çeşitli nesneler tarafından işlenebilir: belgeler, belge şablonları ve windows ve görünümlere ek olarak uygulama nesnesinin kendisi. Bir komut belirli bir nesneyi doğrudan etkilediğinde, bu nesnenin komutu işlemesi mantıklıdır. Örneğin, Dosya menüsündeki Aç komutu mantıksal olarak uygulamayla ilişkilidir: uygulama komutu aldıktan sonra belirli bir belgeyi açar. Yani Açık komutunun işleyicisi uygulama sınıfının bir üye işlevidir. Komutlar ve nesnelere nasıl yönlendirildikleri hakkında daha fazla bilgi için, [Framework Calls a Handler'ı nasıl aradığını](../mfc/how-the-framework-calls-a-handler.md)görün.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

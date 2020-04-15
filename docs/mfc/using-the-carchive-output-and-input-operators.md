@@ -1,59 +1,59 @@
 ---
-title: CArchive &lt;&lt; ve &gt;&gt; Işleçlerini kullanma
+title: CArchive &lt; &lt; ve &gt; &gt; Operatörler kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - objects [MFC], loading from previously stored values
 - CArchive class [MFC], storing and loading objects
 - CArchive class [MFC], operators
 ms.assetid: 56aef326-02dc-4992-8282-f0a4b78a064e
-ms.openlocfilehash: 8e175f35f2218341c69571c818711596180df4a6
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 91ea565867cc0cb3b27ad9d5597037b637cb6544
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442181"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368970"
 ---
-# <a name="using-the-carchive-ltlt-and-gtgt-operators"></a>CArchive &lt;&lt; ve &gt;&gt; Işleçlerini kullanma
+# <a name="using-the-carchive-ltlt-and-gtgt-operators"></a>CArchive &lt; &lt; ve &gt; &gt; Operatörler kullanma
 
-`CArchive`, <\< ve > basit veri türlerini yazmak ve okumak için > işleçleri ve bir dosyaya ve bu dosya üzerinden `CObject`.
+`CArchive`basit \< veri türlerinin yanı sıra `CObject`dosyaya ve dosyadan <ve >> operatörlerini ve basit veri türlerini yazmave okumayı sağlar.
 
-#### <a name="to-store-an-object-in-a-file-via-an-archive"></a>Bir nesneyi bir arşiv aracılığıyla bir dosyada depolamak için
+#### <a name="to-store-an-object-in-a-file-via-an-archive"></a>Bir nesneyi arşiv aracılığıyla dosyada depolamak için
 
-1. Aşağıdaki örnek, bir nesnenin bir arşiv aracılığıyla bir dosyada nasıl depolanacağını göstermektedir:
+1. Aşağıdaki örnek, bir nesnenin arşiv aracılığıyla dosyada nasıl depolanır olduğunu gösterir:
 
    [!code-cpp[NVC_MFCSerialization#7](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_1.cpp)]
 
-#### <a name="to-load-an-object-from-a-value-previously-stored-in-a-file"></a>Daha önce bir dosyada depolanan bir değerden bir nesne yüklemek için
+#### <a name="to-load-an-object-from-a-value-previously-stored-in-a-file"></a>Bir nesneyi daha önce dosyada depolanmış bir değerden yüklemek için
 
-1. Aşağıdaki örnek, daha önce bir dosyada depolanan bir değerden bir nesnenin nasıl yükleneceğini göstermektedir:
+1. Aşağıdaki örnek, bir nesnenin daha önce bir dosyada depolanan bir değerden nasıl yüklenirolduğunu gösterir:
 
    [!code-cpp[NVC_MFCSerialization#8](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_2.cpp)]
 
-Genellikle, `CObject`türetilmiş sınıfların `Serialize` işlevlerde bir arşiv aracılığıyla bir dosyayı ve DECLARE_SERIALIZE makroıyla bildirdiğiniz bir arşiv aracılığıyla verileri depolayıp yüklersiniz. Bir `CArchive` nesnesine bir başvuru `Serialize` işleviniz geçirilir. `Serialize` işlevinin dosyadaki verileri yüklemek veya dosyaya veri depolamak için mi çağrıldığını öğrenmek için `CArchive` nesnesinin `IsLoading` işlevini çağırın.
+Genellikle, DECLARE_SERIALIZE makrosuyla beyan etmiş olması gereken `Serialize` -türetilmiş sınıfların `CObject`işlevlerinde bir arşiv aracılığıyla bir dosyaya veri depolar ve yüklersiniz. Bir `CArchive` nesneye yapılan başvuru `Serialize` işlevinize aktarılır. İşlevin `IsLoading` dosyadan `CArchive` veri yüklemek için çağrıldığını veya verileri dosyaya depolayıp depolamadığını belirlemek için nesnenin işlevini çağırırsınız. `Serialize`
 
-Seri hale getirilebilir `CObject`türetilmiş sınıfın `Serialize` işlevi, genellikle aşağıdaki biçimdedir:
+Serileştirilebilir `Serialize` `CObject`türetilmiş sınıfın işlevi genellikle aşağıdaki formu oluşturur:
 
 [!code-cpp[NVC_MFCSerialization#9](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_3.cpp)]
 
-Yukarıdaki kod şablonu, belgenin `Serialize` işlevi (`CDocument`türetilmiş bir sınıf) için bir AppWizard 'ın oluşturduğu şekilde tamamen aynıdır. Bu kod şablonu, aşağıdaki örnekte olduğu gibi, depolama kodu ve yükleme kodu her zaman paralel olması gerektiğinden, incelenmesi daha kolay olan kodu yazmanıza yardımcı olur:
+Yukarıdaki kod şablonu, AppWizard'ın belgenin `Serialize` işlevi için oluşturduğu şablonla tam `CDocument`olarak aynıdır (türetilmiş bir sınıf). Bu kod şablonu, aşağıdaki örnekte olduğu gibi, depolama kodu ve yükleme kodu her zaman paralel olması gerektiğinden, gözden geçirilmesi daha kolay kod yazmanıza yardımcı olur:
 
 [!code-cpp[NVC_MFCSerialization#10](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_4.cpp)]
 
-Kitaplığı, ilk işlenen olarak `CArchive` için **<\<** ve **>>** işleçlerini ve ikinci işlenen olarak aşağıdaki veri türlerini ve sınıf türlerini tanımlar:
+Kitaplık, ** < ** ilk **>>** operand `CArchive` olarak tanımlar ve işleçler ve ikinci operand olarak aşağıdaki veri türleri ve sınıf türleri:
 
 ||||
 |-|-|-|
-|`CObject*`|**Boyut** ve `CSize`|**float**|
-|**WORD**|`CString`|**Nokta** ve `CPoint`|
-|`DWORD`|**BAYT**|`RECT` ve `CRect`|
-|**Çift**|**KALACAĞıNı**|`CTime` ve `CTimeSpan`|
-|`Int`|**Colet para birimi**|`COleVariant`|
+|`CObject*`|**BÜYÜKLÜK** ve`CSize`|**float**|
+|**Kelime**|`CString`|**NOKTA** ve`CPoint`|
+|`DWORD`|**BYTE**|`RECT` ve `CRect`|
+|**Çift**|**Uzun**|`CTime` ve `CTimeSpan`|
+|`Int`|**Colecurrency**|`COleVariant`|
 |`COleDateTime`|`COleDateTimeSpan`||
 
 > [!NOTE]
->  `CObject`s 'yi bir arşiv aracılığıyla depolamak ve yüklemek ek bir değerlendirme gerektirir. Daha fazla bilgi için bkz. [bir arşiv aracılığıyla CObjects depolama ve yükleme](../mfc/storing-and-loading-cobjects-via-an-archive.md).
+> Bir arşiv `CObject`üzerinden depolama ve yükleme ekstra dikkate gerektirir. Daha fazla bilgi için, [bir Arşiv üzerinden CObjects Depolama ve Yükleme](../mfc/storing-and-loading-cobjects-via-an-archive.md)bakın.
 
-**CArchive <\<** ve **>>** işleçleri her zaman ilk işlenen olan `CArchive` nesnesine bir başvuru döndürür. Bu, aşağıda gösterildiği gibi işleçleri zincirlemenize olanak sağlar:
+**CArchive <\< ** **>>** ve işleçleri her `CArchive` zaman ilk operand nesne, bir referans döndürür. Bu, aşağıda gösterildiği gibi operatörleri zincirlemenize olanak sağlar:
 
 [!code-cpp[NVC_MFCSerialization#11](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_5.cpp)]
 

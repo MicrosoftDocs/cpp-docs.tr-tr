@@ -5,27 +5,27 @@ helpviewer_keywords:
 - SIMD
 - OpenMP in Visual C++, new features
 - explicit parallelization, new features
-ms.openlocfilehash: 52402aa553c6d68d3073aba26ecac7b784522ee9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0a7f1142a3a432628795341f4885b76a5c144990
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363277"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366459"
 ---
 # <a name="simd-extension"></a>SIMD Uzantısı
 
-Görsel C++ Visual Studio 2019 SIMD işlevi de sunar ancak şu anda OpenMP 2.0 standart destekler.
+Visual C++şu anda OpenMP 2.0 standardını destekler, ancak Visual Studio 2019 da simd işlevselliği sunar.
 
 > [!NOTE]
-> SIMD kullanmak için derleme `-openmp:experimental` kullanırken mevcut olmayan ek OpenMP özellikler sağlayan anahtar `-openmp` geçin.
+> SIMD kullanmak için, anahtarı `-openmp:experimental` kullanırken kullanılabilir olmayan ek OpenMP `-openmp` özellikleri sağlayan anahtarı ile derle.
 >
-> `-openmp:experimental` Anahtar subsumes `-openmp`, kullanımını edilen tüm OpenMP 2.0 özelliklerini anlamına gelir.
+> Anahtar `-openmp:experimental` subsumes `-openmp`, tüm OpenMP 2.0 özellikleri kullanımı dahil anlamına gelir.
 
-Daha fazla bilgi için [SIMD Uzantısı C++ Visual Studio'daki OpenMP](https://devblogs.microsoft.com/cppblog/simd-extension-to-c-openmp-in-visual-studio/).
+Daha fazla bilgi için [Visual Studio'da C++ OpenMP'a SIMD Uzantısı'na](https://devblogs.microsoft.com/cppblog/simd-extension-to-c-openmp-in-visual-studio/)bakın.
 
-## <a name="openmp-simd-in-visual-c"></a>OpenMP SIMD görseldeC++
+## <a name="openmp-simd-in-visual-c"></a>Visual C++'da OpenMP SIMD
 
-OpenMP SIMD, standart, OpenMP 4.0 döngüleri vektör kullanımı kolay hale hedefleri sunulan. Kullanarak `simd` döngü önce yönergesi, derleyici vektör bağımlılıklarını yoksayma, döngü olarak vektör kullanımı kolay mümkün olduğunca yapın ve aynı anda birden çok döngü yinelemesi için kullanıcıların engellemekse dikkate.
+OpenMP 4.0 standardında tanıtılan OpenMP SIMD, vektör dostu döngüler yapmayı hedefler. Bir döngüden `simd` önce yönergeleri kullanarak, derleyici vektör bağımlılıklarını yok sayabilir, döngüyü olabildiğince vektör dostu yapabilir ve kullanıcıların aynı anda birden çok döngü yinelemesi yapma niyetine saygı duyabilir.
 
 ```c
     #pragma omp simd
@@ -37,15 +37,15 @@ OpenMP SIMD, standart, OpenMP 4.0 döngüleri vektör kullanımı kolay hale hed
     }
 ```
 
-Görsel C++ benzer olmayan bir OpenMP döngüsünü pragmaları ister sağlar `#pragma vector` ve `#pragma ivdep`OpenMP SIMD ile derleyici hakkında daha fazla bilgi gibi yapabilirsiniz ancak:
+Visual C++gibi `#pragma vector` benzer non-OpenMP döngü `#pragma ivdep`pragmas sağlar ve , Ancak OpenMP SIMD ile, derleyici gibi daha fazlasını yapabilirsiniz:
 
-- Mevcut vektör bağımlılıklarını yoksayma için her zaman izin verilir.
-- `/fp:fast` döngü içinde etkinleştirilir.
-- Dış döngü ve işlev çağrıları ile döngüleri vektör dostu.
-- İç içe döngüleri, tek bir döngüde birleştirilen ve vektör kolay yapılır.
-- İle karma hızlandırma `#pragma omp for simd` parçalı çoklu iş parçacığı ve ayrıntılı vektörleri etkinleştirmek için.  
+- Her zaman mevcut vektör bağımlılıklarını yok saymak için izin verilir.
+- `/fp:fast`döngü içinde etkindir.
+- Fonksiyon çağrıları ile dış döngüler ve döngüler vektör dostudur.
+- İç içe döngüler tek bir döngü halinde birleşerek vektör dostu hale getirilebilir.
+- Kaba taneli çok dişli ve ince taneli vektörler `#pragma omp for simd` etkinleştirmek için hibrid ivme.  
 
-Destek vektörü log anahtarı kullanmadığınız sürece for döngüleri vektör kullanımı kolay, derleyici sessiz kalır:
+Vektör dostu döngüler için, vektör destek günlüğü anahtarı kullanmadığınız sürece derleyici sessiz kalır:
 
 ```cmd
     cl -O2 -openmp:experimental -Qvec-report:2 mycode.cpp
@@ -57,7 +57,7 @@ Destek vektörü log anahtarı kullanmadığınız sürece for döngüleri vekt�
     mycode.cpp(96) : info C5001: Omp simd loop vectorized
 ```
 
-For döngüleri vektör kolay, derleyici her bir iletiyi görüntüler:
+Vektör dostu olmayan döngüler için derleyici her biri bir iletiyi yayınlar:
 
 ```cmd
     cl -O2 -openmp:experimental mycode.cpp
@@ -68,25 +68,25 @@ For döngüleri vektör kolay, derleyici her bir iletiyi görüntüler:
     mycode.cpp(90) : info C5002: Omp simd loop not vectorized due to reason '1200'
 ```
 
-### <a name="clauses"></a>Tümceler
+### <a name="clauses"></a>Yan tümceler
 
-SIMD OpenMP yönergesi, destek vektörü artırmak için aşağıdaki yan tümceleri de alabilir:
+OpenMP SIMD yönergesi vektör desteğini geliştirmek için aşağıdaki yan tümceleri de alabilir:
 
 |Yönergesi|Açıklama|
 |---|---|
-|`simdlen(length)`|Vektör kulvarları sayısını belirtin.|
-|`safelen(length)`|Vektör bağımlılık uzaklığı belirtir.|
-|`linear(list[ : linear-step]`)|Döngü endüksiyon değişkeni doğrusal eşlemesinden dizi aboneliğe.|
-|`aligned(list[ : alignment])`|Veri hizalama.|
-|`private(list)`|Veri privatization belirtin.|
-|`lastprivate(list)`|Son yineleme son değeri ile veri privatization belirtin.|
+|`simdlen(length)`|Vektör şeritlerinin sayısını belirtin.|
+|`safelen(length)`|Vektör bağımlılık mesafesini belirtin.|
+|`linear(list[ : linear-step]`)|Döngü tümevarım değişkeninden dizi aboneliğine doğrusal eşleme.|
+|`aligned(list[ : alignment])`|Verilerin hizalanması.|
+|`private(list)`|Veri özelleştirmesi belirtin.|
+|`lastprivate(list)`|Son yinelemeden son değeri olan veri özelleştirmesini belirtin.|
 |`reduction(reduction-identifier:list)`|Özelleştirilmiş azaltma işlemleri belirtin.|
-|`collapse(n)`|Döngü iç içe birleşim.|
+|`collapse(n)`|Birleştirme döngüsü yuvası.|
 
 > [!NOTE]
-> Etkin olmayan SIMD yan tümceleri ayrıştırılır ve bir uyarı derleyici tarafından yok sayıldı.
+> Etkili olmayan SIMD yan tümceleri ayrıştıve derleyici tarafından bir uyarı ile yoksayılır.
 >
-> Örneğin, aşağıdaki kod sorunlarını uyarı kullanın:
+> Örneğin, aşağıdaki kodun kullanımı bir uyarı yayınlar:
 >
 > ```c
 >    #pragma omp simd simdlen(8)
@@ -104,9 +104,9 @@ SIMD OpenMP yönergesi, destek vektörü artırmak için aşağıdaki yan tümce
 
 ### <a name="example"></a>Örnek
   
-SIMD OpenMP yönergesi kullanıcılar dikte derleyici yapma döngüleri vektör kullanımı kolay bir yol sağlar. Kullanıcılar, bir döngü SIMD OpenMP yönergesi ile açıklama ekleyerek aynı anda birden çok döngü yinelemesi sunmayı planlıyoruz.
+OpenMP SIMD yönergesi, kullanıcılara derleyicinin döngüleri vektör dostu hale getirmesini dikte etmek için bir yol sağlar. OpenMP SIMD yönergesi ile bir döngüek açıklama yaparak, kullanıcılar aynı anda yürütülmesi birden çok döngü yinelemeleri olmasını planlıyoruz.
 
-Örneğin, aşağıdaki döngü SIMD OpenMP yönergesi ile açıklanıyor. Geriye dönük bağımlılık [i-1], ancak derleyicinin hala bir vektör yönerge ilk ifadesine ardışık yinelemeleri paketi ve çalıştırmasına izin verilmeyen SIMD yönergesi nedeniyle [i] öğesinden olduğundan döngü yinelemesi arasında kusursuz hiçbir paralellik olduğu bunları paralel.
+Örneğin, aşağıdaki döngü OpenMP SIMD yönergesi ile açıklamalı. Döngü yinelemeleri arasında mükemmel bir paralellik yoktur, çünkü a[i]'den [i-1]'e geriye doğru bir bağımlılık vardır, ancak SIMD yönergesi sayesinde derleyici nin ilk ifadenin ardışık yinelemelerini tek bir vektör yönergesine paketleyip paralel olarak çalıştırmasına izin verilir.
 
 ```c
     #pragma omp simd
@@ -118,7 +118,7 @@ SIMD OpenMP yönergesi kullanıcılar dikte derleyici yapma döngüleri vektör 
     }
 ```
 
-Bu nedenle, aşağıdaki dönüştürülmüş vektör döngü biçimindedir **yasal** derleyici özgün her döngü yinelemesinin sıralı davranışını tuttuğu. Diğer bir deyişle, `a[i]` sonra yürütülür `a[-1]`, `b[i]` sonra `a[i]` ve çağrısı `bar` son olur.
+Bu nedenle, derleyici her özgün döngü yinelemesinin sıralı davranışını tuttuğundan, döngünün aşağıdaki dönüştürülmüş vektör formu **yasaldır.** Başka bir `a[i]` deyişle, `a[-1]`sonra `b[i]` yürütülür , sonra `a[i]` ve arama son `bar` olur.
 
 ```c
     for (i = 0; i < count; i+=4)
@@ -132,7 +132,7 @@ Bu nedenle, aşağıdaki dönüştürülmüş vektör döngü biçimindedir **ya
     }
 ```
 
-Sahip **değil yasal** bellek başvuru taşımak `*c` diğer adına sahip olabilir, döngünün dışında `a[i]` veya `b[i]`. Ayrıca sıralı bağımlılık keserse özgün bir yinelemedeki deyimleri yeniden sıralamak için geçerli değil. Örneğin, aşağıdaki dönüştürülmüş döngü geçerli değildir:
+Bellek başvurucunun `*c` döngüdışına taşınması **yasal değildir.** `a[i]` `b[i]` Sıralı bağımlılığı kırıyorsa, tek bir orijinal yineleme içindeki ifadeleri yeniden sıralamak da yasal değildir. Örneğin, aşağıdaki dönüştürülmüş döngü yasal değildir:
 
 ```c
     c = b;
@@ -150,4 +150,4 @@ Sahip **değil yasal** bellek başvuru taşımak `*c` diğer adına sahip olabil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/openmp (OpenMP 2.0 Desteğini Etkinleştir)](../../build/reference/openmp-enable-openmp-2-0-support.md)<br/>
+[/openmp (OpenMP 2.0 Desteği etkinleştir)](../../build/reference/openmp-enable-openmp-2-0-support.md)<br/>

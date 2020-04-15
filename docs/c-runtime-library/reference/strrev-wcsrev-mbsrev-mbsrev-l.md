@@ -1,11 +1,13 @@
 ---
 title: _strrev, _wcsrev, _mbsrev, _mbsrev_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _wcsrev
 - _mbsrev
 - _strrev
 - _mbsrev_l
+- _o__mbsrev
+- _o__mbsrev_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,6 +22,7 @@ api_location:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -50,19 +53,19 @@ helpviewer_keywords:
 - tcsrev function
 - _tcsrev function
 ms.assetid: 87863e89-4fa0-421c-af48-25d8516fe72f
-ms.openlocfilehash: 3a7255d173e369b4269459a0cea4de8e7867c7c0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 585cdae15572eca565d2779225737a014d5f7837
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946829"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365037"
 ---
 # <a name="_strrev-_wcsrev-_mbsrev-_mbsrev_l"></a>_strrev, _wcsrev, _mbsrev, _mbsrev_l
 
 Bir dizenin karakterlerini tersine çevirir.
 
 > [!IMPORTANT]
-> **_mbsrev** ve **_mbsrev_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsrev** ve **_mbsrev_l,** Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -84,43 +87,45 @@ unsigned char *_mbsrev_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*<br/>
-Tersine, ters sonlandırılmış dize.
+*Str*<br/>
+Ters çevirmek için null-sonlandırılan dize.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değiştirilen dizeye bir işaretçi döndürür. Bir hatayı göstermek için hiçbir dönüş değeri ayrılmadı.
+Değiştirilen dize için bir işaretçi döndürür. Bir hatayı belirtmek için hiçbir iade değeri ayrılmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strrev** işlevi *Str*içindeki karakterlerin sırasını tersine çevirir. Sonlandırıcı null karakteri yerinde kalır. **_wcsrev** ve **_mbsrev** , **_strrev**'un geniş karakterli ve çok baytlı karakter sürümleridir. **_Wcsrev** 'ın bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsrev** , çok baytlı karakter dizeleridir. **_Mbsrev**için, *Str* içindeki her bir çok baytlı karakterdeki bayt sırası değiştirilmez. Bu üç işlev, aynı şekilde davranır.
+**_strrev** işlevi *str'deki*karakterlerin sırasını tersine çevirir. Sonlandırıcı null karakter yerinde kalır. **_wcsrev** ve **_mbsrev** **_strrev**geniş karakterli ve çok bayt karakterli versiyonlarıdır. **_wcsrev** bağımsız değişkenleri ve getiri değeri geniş karakterli dizeleridir; **_mbsrev** çok bayt karakterli dizeleri vardır. _mbsrev **_mbsrev**için, *str* her çok bayt karakter bayt sırası değişmez. Bu üç işlev aynı şekilde çalışır.
 
-**_mbsrev** , parametrelerini doğrular. *Dize1* veya *dize2* , null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **_mbsrev** **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar. **_strrev** ve **_wcsrev** , parametrelerini doğrulamaz.
+**_mbsrev** parametrelerini doğrular. *String1* veya *string2* null işaretçisi ise, geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütme devam etmesine izin verilirse, **_mbsrev** **NULL** döndürür ve **EINVAL** **için errno** ayarlar. **_strrev** ve **_wcsrev** parametrelerini doğrulamaz.
 
-Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . Bu işlevlerin sürümleri aynıdır, ancak **_l** sonekine sahip olmayan geçerli yerel ayarı kullanır ve bunun yerine **_l** sonekine sahip olanlar, geçirilen yerel ayar parametresini kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Çıktı değeri, yerel LC_CTYPE **kategori** ayarı ayarı etkilenir; daha fazla bilgi için [setlocale, _wsetlocale](setlocale-wsetlocale.md) bakın. Bu işlevlerin sürümleri aynıdır, **ancak _l** soneki olmayanlar geçerli yerel alanı kullanır ve **_l** soneki olanlar bunun yerine geçirilen yerel parametreyi kullanır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
 > [!IMPORTANT]
-> Bu işlevler, arabellek taşma tehditlerine karşı savunmasız olabilir. Arabellek taşmaları, sistem saldırıları için kullanılabilir ve bu ayrıcalıklar ayrıcalık yükselmesine neden olabilir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+> Bu işlevler arabellek taşma tehditlerine karşı savunmasız olabilir. Arabellek taşmaları, gereksiz bir ayrıcalık yükselmesine neden olabileceğinden sistem saldırıları için kullanılabilir. Daha fazla bilgi için [bkz.](/windows/win32/SecBP/avoiding-buffer-overruns)
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsrev**|**_strrev**|**_mbsrev**|**_wcsrev**|
-|**yok**|**yok**|**_mbsrev_l**|**yok**|
+|**Yok**|**Yok**|**_mbsrev_l**|**Yok**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strrev**|\<String. h >|
-|**_wcsrev**|\<String. h > veya \<wchar. h >|
-|**_mbsrev**, **_mbsrev_l**|\<mbstring. h >|
+|**_strrev**|\<string.h>|
+|**_wcsrev**|\<string.h> \<veya wchar.h>|
+|**_mbsrev**, **_mbsrev_l**|\<mbstring.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -154,8 +159,8 @@ The string "Able was I ere I saw Elba" is a palindrome
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>

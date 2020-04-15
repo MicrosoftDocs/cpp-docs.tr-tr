@@ -7,43 +7,43 @@ helpviewer_keywords:
 - CToolBarCtrl class [MFC], accessing toolbar
 - toolbar controls [MFC], accessing
 ms.assetid: b19409d5-3831-42c7-80ae-195c49dc9085
-ms.openlocfilehash: 60cc527493e2a68751c201b998ab171c564d6c1f
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 371f1944fae655556bbc9f89d7ffcce7cc326e5e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69510584"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365244"
 ---
 # <a name="working-with-the-toolbar-control"></a>Araç Çubuğu Denetimiyle Çalışma
 
-Bu makalede, araç çubuklarınız üzerinde daha fazla denetim için [CToolBar](../mfc/reference/ctoolbar-class.md) 'ı temel alan [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesine nasıl erişebileceğiniz açıklanır. Bu, gelişmiş bir konudur.
+Bu makalede, araç çubukları üzerinde daha fazla denetim için bir [CToolBar](../mfc/reference/ctoolbar-class.md) altında yatan [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesneye nasıl erişebileceğinizaçıklanmaktadır. Bu gelişmiş bir konudur.
 
 ## <a name="procedures"></a>Yordamlar
 
-#### <a name="to-access-the-toolbar-common-control-underlying-your-ctoolbar-object"></a>CToolBar nesnenizin temelindeki araç çubuğu ortak denetimine erişmek için
+#### <a name="to-access-the-toolbar-common-control-underlying-your-ctoolbar-object"></a>CToolBar nesnenizin altında yatan araç çubuğu ortak denetimine erişmek için
 
-1. [CToolBar:: GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#gettoolbarctrl)çağrısı yapın.
+1. Çağrı [CToolBar::GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#gettoolbarctrl).
 
-`GetToolBarCtrl`[CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesine bir başvuru döndürür. Bu başvuruyu, ToolBar denetim sınıfının üye işlevlerini çağırmak için kullanabilirsiniz.
+`GetToolBarCtrl`bir [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesine bir başvuru döndürür. Başvuruyu araç çubuğu denetim sınıfının üye işlevlerini aramak için kullanabilirsiniz.
 
 > [!CAUTION]
->  **Get** işlevlerini `CToolBarCtrl` çağırırken, **set** işlevlerini çağırdığınızda dikkatli olun. Bu, gelişmiş bir konudur. Normalde, temel alınan araç çubuğu denetimine erişmeniz gerekmez.
+> `CToolBarCtrl` **İşlevbul'u** aramak güvenlidir, **Set** işlevlerini ararsanız dikkatli olun. Bu gelişmiş bir konudur. Normalde altta yatan araç çubuğu denetimine erişmeniz gerekmez.
 
-### <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
+### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilmek istiyorum
 
 - [Denetimler (Windows ortak denetimleri)](../mfc/controls-mfc.md)
 
-- [Araç Çubuğu Temelleri](../mfc/toolbar-fundamentals.md)
+- [Araç çubuğu temelleri](../mfc/toolbar-fundamentals.md)
 
-- [Yerleştirme ve kayan araç çubukları](../mfc/docking-and-floating-toolbars.md)
+- [Yerleşen ve kayan araç çubukları](../mfc/docking-and-floating-toolbars.md)
 
 - [Araç çubuğunu dinamik olarak yeniden boyutlandırma](../mfc/docking-and-floating-toolbars.md)
 
 - [Araç çubuğu araç ipuçları](../mfc/toolbar-tool-tips.md)
 
-- [Durum çubuğu güncelleştirmelerine göre daha fazla](../mfc/toolbar-tool-tips.md)
+- [Flyby durum çubuğu güncellemeleri](../mfc/toolbar-tool-tips.md)
 
-- [Araç ipucu bildirimlerini işleme](../mfc/handling-tool-tip-notifications.md)
+- [Kullanım aracı ipucu bildirimleri](../mfc/handling-tool-tip-notifications.md)
 
 - [CToolBar](../mfc/reference/ctoolbar-class.md) ve [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) sınıfları
 
@@ -53,9 +53,9 @@ Bu makalede, araç çubuklarınız üzerinde daha fazla denetim için [CToolBar]
 
 - [Eski araç çubuklarınızı kullanma](../mfc/using-your-old-toolbars.md)
 
-- [Denetim çubukları](../mfc/control-bars.md)
+- [Kontrol çubukları](../mfc/control-bars.md)
 
-Windows ortak denetimlerini kullanma hakkında genel bilgi için bkz. [ortak denetimler](/windows/win32/Controls/common-controls-intro).
+Windows ortak denetimlerini kullanma hakkında genel bilgi için [Ortak Denetimler'e](/windows/win32/Controls/common-controls-intro)bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

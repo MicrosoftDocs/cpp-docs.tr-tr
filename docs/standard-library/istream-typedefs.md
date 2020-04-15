@@ -1,5 +1,5 @@
 ---
-title: '&lt;IStream&gt; tür tanımları'
+title: '&lt;istream&gt; typedefs'
 ms.date: 11/04/2016
 f1_keywords:
 - istream/std::iostream
@@ -7,23 +7,23 @@ f1_keywords:
 - istream/std::wiostream
 - istream/std::wistream
 ms.assetid: 55bc1f84-53a7-46ca-a36f-ac6ef75d0374
-ms.openlocfilehash: 9a25e4aa9ee42ea36d1bb8d6b196b36ff5c97758
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: e9228bddcc3b99503b6b5f0e93b5ed6eeed773d1
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420150"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81363091"
 ---
-# <a name="ltistreamgt-typedefs"></a>&lt;IStream&gt; tür tanımları
+# <a name="ltistreamgt-typedefs"></a>&lt;istream&gt; typedefs
 
 ||||
 |-|-|-|
-|[iostream](#iostream)|[istream](#istream)|[wiostream](#wiostream)|
+|[iostream](#iostream)|[ıstream](#istream)|[wiostream](#wiostream)|
 |[wistream](#wistream)|
 
-## <a name="iostream"></a>iostream
+## <a name="iostream"></a><a name="iostream"></a>Iostream
 
-Bir tür, **char**üzerinde özelleştirilmiş `basic_iostream`.
+Char `basic_iostream` konusunda uzmanlaşmış **char**bir tür.
 
 ```cpp
 typedef basic_iostream<char, char_traits<char>> iostream;
@@ -31,11 +31,11 @@ typedef basic_iostream<char, char_traits<char>> iostream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, varsayılan karakter nitelikleri ile **char** türündeki öğeler için özelleştirilmiş [basic_iostream](../standard-library/basic-iostream-class.md)sınıf şablonu için bir eş anlamlı.
+Tür, sınıf şablonu [basic_iostream](../standard-library/basic-iostream-class.md)eşanlamlıdır ve varsayılan karakter özelliklerine sahip **tür char** öğeleri için özelleştirilmiştir.
 
-## <a name="istream"></a>istream
+## <a name="istream"></a><a name="istream"></a>ıstream
 
-Bir tür, **char**üzerinde özelleştirilmiş `basic_istream`.
+Char `basic_istream` konusunda uzmanlaşmış **char**bir tür.
 
 ```cpp
 typedef basic_istream<char, char_traits<char>> istream;
@@ -43,11 +43,11 @@ typedef basic_istream<char, char_traits<char>> istream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, varsayılan karakter nitelikleri ile **char** türündeki öğeler için özelleştirilmiş [basic_istream](../standard-library/basic-istream-class.md)sınıf şablonu için bir eş anlamlı.
+Türü sınıf şablonu [basic_istream](../standard-library/basic-istream-class.md)için eşanlamlıdır, varsayılan karakter özellikleri ile tür **char** öğeleri için özel.
 
-## <a name="wiostream"></a>wiostream
+## <a name="wiostream"></a><a name="wiostream"></a>wiostream
 
-Bir tür **wchar_t**özelleştirilmiş `basic_iostream`.
+wchar_t `basic_iostream` konusunda uzmanlaşmış **wchar_t**bir tür.
 
 ```cpp
 typedef basic_iostream<wchar_t, char_traits<wchar_t>> wiostream;
@@ -55,11 +55,11 @@ typedef basic_iostream<wchar_t, char_traits<wchar_t>> wiostream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, varsayılan karakter nitelikleri olan **wchar_t** türündeki öğeler için özelleştirilmiş [basic_iostream](../standard-library/basic-iostream-class.md)sınıf şablonu için bir eş anlamlıdır.
+Tür, sınıf şablonu [basic_iostream](../standard-library/basic-iostream-class.md)eşanlamlıdır ve varsayılan karakter özelliklerine sahip **tür wchar_t** öğeleri için özelleştirilmiştir.
 
-## <a name="wistream"></a>wistream
+## <a name="wistream"></a><a name="wistream"></a>wistream
 
-Bir tür **wchar_t**özelleştirilmiş `basic_istream`.
+wchar_t `basic_istream` konusunda uzmanlaşmış **wchar_t**bir tür.
 
 ```cpp
 typedef basic_istream<wchar_t, char_traits<wchar_t>> wistream;
@@ -67,8 +67,8 @@ typedef basic_istream<wchar_t, char_traits<wchar_t>> wistream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, varsayılan karakter nitelikleri olan **wchar_t** türündeki öğeler için özelleştirilmiş [basic_istream](../standard-library/basic-istream-class.md)sınıf şablonu için bir eş anlamlıdır.
+Tür, varsayılan karakter özelliklerine sahip **wchar_t** türü öğeleri için özelleştirilmiş sınıf şablonu [basic_istream](../standard-library/basic-istream-class.md)eşanlamlıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IStream > \<](../standard-library/istream.md)
+[\<istream>](../standard-library/istream.md)

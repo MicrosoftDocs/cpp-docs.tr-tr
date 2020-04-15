@@ -1,21 +1,21 @@
 ---
 layout: LandingPage
-title: İle mobil geliştirmeC++
-description: Visual Studio C++ ile IOS, Android ve Windows cihazları için yerel uygulamalar oluşturun.
+title: C++ ile Mobil Geliştirme
+description: Visual Studio ile iOS, Android ve Windows cihazları için yerel C++ uygulamaları oluşturun.
 ms.date: 10/31/2018
 author: jasongroce
 ms.author: jasgro
 ms.topic: landing-page
 ms.openlocfilehash: d250a1586b4cf01dfae2a39b7d595b60c53a5123
-ms.sourcegitcommit: a673f6a54cc97e3d4cd032b10aa8dce7f0539d39
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 04/14/2020
 ms.locfileid: "78177443"
 ---
-# <a name="mobile-development-with-c-documentation"></a>Belgeler ile C++ mobil geliştirme
+# <a name="mobile-development-with-c-documentation"></a>C++ belgeleriyle mobil geliştirme
 
-Visual Studio C++ ile IOS, Android ve Windows cihazları için yerel uygulamalar oluşturun.
+Visual Studio ile iOS, Android ve Windows cihazları için yerel C++ uygulamaları oluşturun.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -50,8 +50,8 @@ Visual Studio C++ ile IOS, Android ve Windows cihazları için yerel uygulamalar
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Platformlar arası mobil geliştirme için C++ Visual Studio Araçları hakkında bilgi edinin</h3>
-                        <p>İle C++platformlar arası mobil geliştirmeye genel bakış alın.</p>
+                        <h3>C++ platformlar arası mobil geliştirme için Visual Studio araçları hakkında bilgi edinin</h3>
+                        <p>C++ ile platformlar arası mobil geliştirmeye genel bir bakış alın.</p>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@ Visual Studio C++ ile IOS, Android ve Windows cihazları için yerel uygulamalar
                     </div>
                     <div class="cardText">
                         <h3>Platformlar arası mobil geliştirme örnekleri</h3>
-                        <p>Platformlar arası mobil geliştirmeyi kullanmaya başlamanıza yardımcı olması için örneklere bakın.</p>
+                        <p>Platformlar arası mobil geliştirmeye başlamanıza yardımcı olacak örneklere bakın.</p>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@ Visual Studio C++ ile IOS, Android ve Windows cihazları için yerel uygulamalar
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual Studio’da C++</a></h3>
+                        <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual Studio'da C++</a></h3>
                         <p><a href="/cpp/ide/read-and-understand-code-cpp">Kod okuma ve yazma</a><p>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ Visual Studio C++ ile IOS, Android ve Windows cihazları için yerel uygulamalar
                     <div class="cardText">
                         <h3>Platformlar</h3>
                         <p><a href="/cpp/cppcx/universal-windows-apps-cpp">Evrensel Windows Platformu (UWP) belgeleri</a></p>
-                        <p><a href="https://developer.apple.com/reference">iOS API 'SI belgeleri</a></p>
+                        <p><a href="https://developer.apple.com/reference">iOS API dokümantasyonu</a></p>
                         <p><a href="https://developer.android.com/guide/index.html">Android API belgeleri</a></p>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 ---
-title: CStatusBarCtrl sınıfı
+title: CStatusBarCtrl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CStatusBarCtrl
@@ -44,16 +44,16 @@ helpviewer_keywords:
 - CStatusBarCtrl [MFC], SetText
 - CStatusBarCtrl [MFC], SetTipText
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
-ms.openlocfilehash: 8c33aa4d77eeeeca69e50dc63982ff4d7e8bd505
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 7a594fdb2d3a35ce905b7790026f7418b7435f3a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420941"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366025"
 ---
-# <a name="cstatusbarctrl-class"></a>CStatusBarCtrl sınıfı
+# <a name="cstatusbarctrl-class"></a>CStatusBarCtrl Sınıfı
 
-Windows ortak durum çubuğu denetimi işlevlerini sağlar.
+Windows ortak durum çubuğu denetiminin işlevselliğini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,58 +65,58 @@ class CStatusBarCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CStatusBarCtrl:: CStatusBarCtrl](#cstatusbarctrl)|`CStatusBarCtrl` nesnesi oluşturur.|
+|[CStatusBarCtrl::CStatusBarCtrl](#cstatusbarctrl)|Bir `CStatusBarCtrl` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CStatusBarCtrl:: Create](#create)|Bir durum çubuğu denetimi oluşturur ve bir `CStatusBarCtrl` nesnesine iliştirir.|
-|[CStatusBarCtrl:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir durum çubuğu denetimi oluşturur ve bunu bir `CStatusBarCtrl` nesnesine ekler.|
-|[CStatusBarCtrl::D rawItem](#drawitem)|Sahip çizimi bir durum çubuğu denetiminin görsel bir yönü değiştiğinde çağırılır.|
-|[CStatusBarCtrl:: Getkenarlýklar](#getborders)|Durum çubuğu denetiminin yatay ve dikey kenarlıklarının geçerli genişliklerini alır.|
-|[CStatusBarCtrl:: GetIcon](#geticon)|Geçerli durum çubuğu denetimindeki bir bölümün (bölme olarak da bilinir) simgesini alır.|
-|[CStatusBarCtrl:: GetParts](#getparts)|Durum çubuğu denetimindeki parçaların sayısını alır.|
-|[CStatusBarCtrl:: GetRect](#getrect)|Durum çubuğu denetimindeki bir parçanın sınırlayıcı dikdörtgenini alır.|
-|[CStatusBarCtrl:: GetText](#gettext)|Durum çubuğu denetiminin verilen bölümünün metnini alır.|
-|[CStatusBarCtrl:: GetTextLength](#gettextlength)|Durum çubuğu denetiminin verilen bölümündeki metnin karakter cinsinden uzunluğunu alın.|
-|[CStatusBarCtrl:: GetTipText](#gettiptext)|Durum çubuğundaki bir bölme için araç ipucu metnini alır.|
-|[CStatusBarCtrl:: IsSimple](#issimple)|Basit modda olup olmadığını anlamak için durum penceresi denetimini denetler.|
-|[CStatusBarCtrl:: SetBkColor](#setbkcolor)|Durum çubuğundaki arka plan rengini ayarlar.|
-|[CStatusBarCtrl:: SetIcon](#seticon)|Durum çubuğundaki bir bölmenin simgesini ayarlar.|
-|[CStatusBarCtrl:: SetMinHeight](#setminheight)|Bir durum çubuğu denetiminin çizim alanının minimum yüksekliğini ayarlar.|
-|[CStatusBarCtrl:: SetParts](#setparts)|Bir durum çubuğu denetimindeki parça sayısını ve her parçanın sağ kenarının koordinatını belirler.|
-|[CStatusBarCtrl:: SetSimple](#setsimple)|Bir durum çubuğu denetiminin basit metin görüntüleyip görüntülemediğini veya önceki bir `SetParts`çağrısıyla ayarlanan tüm denetim parçalarını görüntülediğini belirtir.|
-|[CStatusBarCtrl:: SetText](#settext)|Durum çubuğu denetiminin verilen bölümündeki metni ayarlar.|
-|[CStatusBarCtrl:: SetTipText](#settiptext)|Durum çubuğundaki bir bölme için araç ipucu metnini ayarlar.|
+|[CStatusBarCtrl::Oluştur](#create)|Durum çubuğu denetimi oluşturur ve nesneye `CStatusBarCtrl` bağlar.|
+|[CStatusBarCtrl::CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleri ile bir durum çubuğu denetimi oluşturur `CStatusBarCtrl` ve bir nesneye bağlar.|
+|[CStatusBarCtrl::DrawItem](#drawitem)|Sahibi-beraberlik durum çubuğu denetiminin görsel bir yönü değiştiğinde çağrılır.|
+|[CStatusBarCtrl::GetBorders](#getborders)|Durum çubuğu denetiminin yatay ve dikey kenarlıklarının geçerli genişliklerini alır.|
+|[CStatusBarCtrl::GetIcon](#geticon)|Geçerli durum çubuğu denetiminde bir parça (bölme olarak da bilinir) için simgeyi alır.|
+|[CStatusBarCtrl::GetParts](#getparts)|Durum çubuğu denetimindeki parçaların sayısını alır.|
+|[CStatusBarCtrl::GetRect](#getrect)|Durum çubuğu denetiminde bir parçanın sınırlayıcı dikdörtgenini alır.|
+|[CStatusBarCtrl::GetText](#gettext)|Durumu çubuğu denetiminin verilen bölümünden metni alır.|
+|[CStatusBarCtrl::GetTextLength](#gettextlength)|Durum çubuğu denetiminin verilen bölümünden metnin karakter olarak uzunluğunu alın.|
+|[CStatusBarCtrl::GetTipText](#gettiptext)|Durum çubuğundaki bölmenin araç ipucu metnini alır.|
+|[CStatusBarCtrl::Basit](#issimple)|Basit modda olup olmadığını belirlemek için durum penceresi denetimini denetler.|
+|[CStatusBarCtrl::SetBkColor](#setbkcolor)|Durum çubuğunda arka plan rengini ayarlar.|
+|[CStatusBarCtrl::SetIcon](#seticon)|Durum çubuğundaki bölme simgesini ayarlar.|
+|[CStatusBarCtrl::SetMinHeight](#setminheight)|Durum çubuğu denetiminin çizim alanının minimum yüksekliğini ayarlar.|
+|[CStatusBarCtrl::SetParts](#setparts)|Durum çubuğu denetimindeki parça sayısını ve her parçanın sağ kenarının koordinatını ayarlar.|
+|[CStatusBarCtrl::SetSimple](#setsimple)|Durum çubuğu denetiminin basit bir metni gösterip görüntülemediğini veya önceki `SetParts`bir arama tarafından ayarlanan tüm denetim parçalarını gösterip görüntülemediğini belirtir.|
+|[CStatusBarCtrl::SetText](#settext)|Durum çubuğu denetiminin verilen bölümündeki metni ayarlar.|
+|[CStatusBarCtrl::SetTipText](#settiptext)|Durum çubuğundaki bir bölme için araç ipucu metnini ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir "durum çubuğu denetimi", genellikle bir üst pencerenin altında görüntülenen ve bir uygulamanın çeşitli durum bilgilerini görüntüleyebilen bir yatay penceredir. Durum çubuğu denetimi, birden fazla bilgi türü göstermek için parçalara ayrılabilir.
+"Durum çubuğu denetimi", genellikle bir uygulamanın çeşitli durum bilgilerini görüntüleyebildiği bir üst pencerenin alt kısmında görüntülenen yatay bir penceredir. Durum çubuğu denetimi, birden fazla bilgi türünü görüntülemek için parçalara ayrılabilir.
 
-Bu denetim (ve bu nedenle `CStatusBarCtrl` sınıfı) yalnızca Windows 95/98 ve Windows NT sürüm 3,51 ve üzeri sürümlerde çalışan programlar için kullanılabilir.
+Bu denetim (ve `CStatusBarCtrl` bu nedenle sınıf) yalnızca Windows 95/98 ve Windows NT sürüm 3.51 ve sonraki sürümler altında çalışan programlar için kullanılabilir.
 
-`CStatusBarCtrl`kullanma hakkında daha fazla bilgi için bkz. [CStatusBarCtrl using](../../mfc/using-cstatusbarctrl.md)The [Controls](../../mfc/controls-mfc.md) .
+Kullanma `CStatusBarCtrl`hakkında daha fazla bilgi [Using CStatusBarCtrl](../../mfc/using-cstatusbarctrl.md)için, [bkz.](../../mfc/controls-mfc.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 `CStatusBarCtrl`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxcmn. h
+**Başlık:** afxcmn.h
 
-##  <a name="create"></a>CStatusBarCtrl:: Create
+## <a name="cstatusbarctrlcreate"></a><a name="create"></a>CStatusBarCtrl::Oluştur
 
-Bir durum çubuğu denetimi oluşturur ve bir `CStatusBarCtrl` nesnesine iliştirir.
+Durum çubuğu denetimi oluşturur ve nesneye `CStatusBarCtrl` bağlar.
 
 ```
 virtual BOOL Create(
@@ -128,37 +128,37 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwStyle*<br/>
-Durum çubuğu denetiminin stilini belirtir. Windows SDK [ortak denetim stillerinde](/windows/win32/Controls/common-control-styles) listelenen durum çubuğu denetim stillerinin herhangi bir birleşimini uygulayın. Bu parametre WS_CHILD stilini içermelidir. Ayrıca WS_VISIBLE stilini de içermelidir.
+*Dwstyle*<br/>
+Durum çubuğu denetiminin stilini belirtir. Windows SDK'da [Ortak Denetim Stilleri'nde](/windows/win32/Controls/common-control-styles) listelenen durum çubuğu denetim stillerinin herhangi bir birleşimini uygulayın. Bu parametre WS_CHILD stili içermelidir. Ayrıca WS_VISIBLE tarzı içermelidir.
 
 *Rect*<br/>
-Durum çubuğu denetiminin boyutunu ve konumunu belirtir. Bu, bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
+Durum çubuğu denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
 
 *pParentWnd*<br/>
-Durum çubuğu denetiminin üst penceresini, genellikle bir `CDialog`belirtir. NULL olmaması gerekir.
+Durum çubuğu denetiminin üst penceresini belirtir, `CDialog`genellikle bir . NULL olmamalıdır.
 
-*NID*<br/>
-Durum çubuğu denetiminin KIMLIĞINI belirtir.
+*Nıd*<br/>
+Durum çubuğu denetiminin kimliğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi halde sıfır.
+Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CStatusBarCtrl` iki adımda oluşturursunuz. İlk olarak, oluşturucuyu çağırın ve sonra durum çubuğu denetimini oluşturan ve bunu `CStatusBarCtrl` nesnesine ekleyen `Create`çağırın.
+İki adımda bir `CStatusBarCtrl` yapı inşa e. Önce oluşturucuyu çağırın, `Create`ardından durum çubuğu denetimini oluşturan ve `CStatusBarCtrl` nesneye iliştiren , çağırın.
 
-Bir durum penceresinin varsayılan konumu üst pencerenin en altında bulunur, ancak CCS_TOP stilini üst pencerenin istemci alanının üst kısmında görünmesini sağlayabilirsiniz. Durum penceresinin sağ ucuna bir boyutlandırma tutamacı eklemek için SBARS_SIZEGRIP stilini belirtebilirsiniz. CCS_TOP ve SBARS_SIZEGRIP stillerinin birleştirilmesi önerilmez, çünkü bu, sistem durumu penceresinde çizse bile, ortaya çıkan boyutlandırma tutamacı işlevsel değildir.
+Durum penceresinin varsayılan konumu üst pencerenin alt kısmındadır, ancak üst pencerenin istemci alanının üst kısmında görünmesini sağlamak için CCS_TOP stili belirtebilirsiniz. Durum penceresinin sağ ucunda boyutlandırma kavrama eklemek için SBARS_SIZEGRIP stilini belirtebilirsiniz. Sistem durum penceresinde çizse bile ortaya çıkan boyutlandırma kavrama işlevsel olmadığından, CCS_TOP ve SBARS_SIZEGRIP stilleri nin birleştirilmesi önerilmez.
 
-Genişletilmiş pencere stilleriyle bir durum çubuğu oluşturmak için `Create`yerine [CStatusBarCtrl:: CreateEx](#createex) çağırın.
+Genişletilmiş pencere stillerine sahip bir durum çubuğu oluşturmak için [CStatusBarCtrl::CreateEx](#createex) yerine `Create`.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#1](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_1.cpp)]
 
-##  <a name="createex"></a>CStatusBarCtrl:: CreateEx
+## <a name="cstatusbarctrlcreateex"></a><a name="createex"></a>CStatusBarCtrl::CreateEx
 
-Bir denetim (alt pencere) oluşturur ve `CStatusBarCtrl` nesnesiyle ilişkilendirir.
+Denetim (alt pencere) oluşturur ve `CStatusBarCtrl` nesneyle ilişkilendirir.
 
 ```
 virtual BOOL CreateEx(
@@ -172,39 +172,39 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Için *dwExStyle* parametresi.
+Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerilistesi için Windows SDK'daki [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) için *dwExStyle* parametreye bakın.
 
-*dwStyle*<br/>
-Durum çubuğu denetiminin stilini belirtir. Windows SDK [ortak denetim stillerinde](/windows/win32/Controls/common-control-styles) listelenen durum çubuğu denetim stillerinin herhangi bir birleşimini uygulayın. Bu parametre WS_CHILD stilini içermelidir. Ayrıca WS_VISIBLE stilini de içermelidir.
+*Dwstyle*<br/>
+Durum çubuğu denetiminin stilini belirtir. Windows SDK'da [Ortak Denetim Stilleri'nde](/windows/win32/Controls/common-control-styles) listelenen durum çubuğu denetim stillerinin herhangi bir birleşimini uygulayın. Bu parametre WS_CHILD stili içermelidir. Ayrıca WS_VISIBLE tarzı içermelidir.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
 
 *pParentWnd*<br/>
-Denetimin üst öğesi olan pencerenin işaretçisi.
+Denetimin üst öğesi olan pencereye işaretçi.
 
-*NID*<br/>
-Denetimin alt pencere KIMLIĞI.
+*Nıd*<br/>
+Denetimin alt pencere kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows genişletilmiş stili ön yüzü **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için [Oluştur](#create) yerine `CreateEx` kullanın.
+Windows `CreateEx` genişletilmiş stil önsöz **WS_EX_** tarafından belirtilen genişletilmiş Windows stilleri uygulamak için [Oluştur](#create) yerine kullanın.
 
-##  <a name="cstatusbarctrl"></a>CStatusBarCtrl:: CStatusBarCtrl
+## <a name="cstatusbarctrlcstatusbarctrl"></a><a name="cstatusbarctrl"></a>CStatusBarCtrl::CStatusBarCtrl
 
-`CStatusBarCtrl` nesnesi oluşturur.
+Bir `CStatusBarCtrl` nesne inşa eder.
 
 ```
 CStatusBarCtrl();
 ```
 
-##  <a name="drawitem"></a>CStatusBarCtrl::D rawItem
+## <a name="cstatusbarctrldrawitem"></a><a name="drawitem"></a>CStatusBarCtrl::DrawItem
 
-Sahip çizimi bir durum çubuğu denetiminin görsel bir yönü değiştiğinde Framework tarafından çağırılır.
+Bir sahibi-beraberlik durum çubuğu denetiminin görsel bir yönü değiştiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
@@ -213,19 +213,19 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDrawItemStruct*<br/>
-Gerekli çizim türü hakkında bilgi içeren [Drawitemstruct](/windows/win32/api/winuser/ns-winuser-drawitemstruct) yapısına yönelik uzun bir işaretçi.
+Gerekli çizim türü hakkında bilgi içeren [drawitemstruct](/windows/win32/api/winuser/ns-winuser-drawitemstruct) yapısıiçin uzun bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DRAWITEMSTRUCT` yapısının `itemAction` üyesi, gerçekleştirilecek çizim eylemini tanımlar.
+Yapının `itemAction` `DRAWITEMSTRUCT` üyesi, gerçekleştirilecek çizim eylemini tanımlar.
 
-Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Sahip çizim `CStatusBarCtrl` nesnesi için çizim uygulamak üzere bu üye işlevini geçersiz kılın.
+Varsayılan olarak, bu üye işlev hiçbir şey yapmaz. Bir sahip çizim `CStatusBarCtrl` nesnesi için çizim uygulamak için bu üye işlevi geçersiz kılın.
 
-Uygulamanın, bu üye işlevi sonlandırılmadan önce *Lpdrawitemstruct* içinde sağlanan görüntüleme bağlamı için seçilen tüm grafik cihaz ARABIRIMI (GDI) nesnelerini geri yüklemesi gerekir.
+Uygulama, bu üye işlev sona erdirilmeden önce *lpDrawItemStruct'ta* sağlanan ekran bağlamı için seçilen tüm grafik aygıtı arabirimi (GDI) nesnelerini geri yüklemelidir.
 
-##  <a name="getborders"></a>CStatusBarCtrl:: Getkenarlýklar
+## <a name="cstatusbarctrlgetborders"></a><a name="getborders"></a>CStatusBarCtrl::GetBorders
 
-Durum çubuğu denetiminin yatay ve dikey kenarlıkların geçerli genişliklerini ve dikdörtgenler arasındaki boşluğu alır.
+Durum çubuğu denetiminin yatay ve dikey kenarlıkların ve dikdörtgenler arasındaki boşluğun geçerli genişliklerini alır.
 
 ```
 BOOL GetBorders(int* pBorders) const;
@@ -238,33 +238,33 @@ BOOL GetBorders(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pkenarlýklar*<br/>
-Üç öğeye sahip bir tamsayı dizisinin adresi. İlk öğe yatay kenarlığın genişliğini alır, ikincisi dikey kenarlığın genişliğini alır ve üçüncüsü, dikdörtgenler arasındaki kenarlığın genişliğini alır.
+*pBorders*<br/>
+Üç öğeye sahip bir bir sonda dizisinin adresi. İlk öğe yatay kenarlık genişliğini alır, ikinci dikey kenarlık genişliğini alır ve üçüncü dikdörtgenler arasındaki kenarlık genişliğini alır.
 
 *nHorz*<br/>
-Yatay kenarlığın genişliğini alan bir tamsayıya başvuru.
+Yatay kenarlık genişliğini alan bir karşıcıya başvuru.
 
-*Dönüştü*<br/>
-Dikey kenarlığın genişliğini alan bir tamsayıya başvuru.
+*nVert*<br/>
+Dikey kenarlık genişliğini alan bir karşıcıya başvuru.
 
 *nSpacing*<br/>
-Dikdörtgenler arasındaki kenarlığın genişliğini alan bir tamsayıya başvuru.
+Dikdörtgenler arasındaki kenarlık genişliğini alan bir karşıcıya başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi halde sıfır.
+Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kenarlıklar, denetimin dış kenarı ve metin içeren denetim içindeki dikdörtgenler arasındaki boşluğu belirler.
+Bu kenarlıklar, denetimin dış kenarı ile metin içeren denetim içindeki dikdörtgenler arasındaki aralığı belirler.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#2](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_2.cpp)]
 
-##  <a name="geticon"></a>CStatusBarCtrl:: GetIcon
+## <a name="cstatusbarctrlgeticon"></a><a name="geticon"></a>CStatusBarCtrl::GetIcon
 
-Geçerli durum çubuğu denetimindeki bir bölümün (bölme olarak da bilinir) simgesini alır.
+Geçerli durum çubuğu denetiminde bir parça (bölme olarak da bilinir) için simgeyi alır.
 
 ```
 HICON GetIcon(int iPart) const;
@@ -274,31 +274,31 @@ HICON GetIcon(int iPart) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*ıpart*|'ndaki Alınacak simgeyi içeren parçanın sıfır tabanlı dizini. Bu parametre-1 ise, durum çubuğunun bir basit mod durum çubuğu olduğu varsayılır.|
+|*iPart*|[içinde] Alınacak simgeyi içeren parçanın sıfır tabanlı dizin. Bu parametre -1 ise, durum çubuğu basit bir mod durum çubuğu olarak kabul edilir.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa simgenin tutamacı. Aksi takdirde, NULL.
+Yöntem başarılı olursa simgenin tutamacı; aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [SB_GETICON](/windows/win32/Controls/sb-geticon) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [SB_GETICON](/windows/win32/Controls/sb-geticon) iletisini gönderir.
 
-Durum çubuğu denetimi, parçalar olarak da bilinen metin çıkış bölmelerinin bir satırından oluşur. Durum çubuğu hakkında daha fazla bilgi için bkz. [MFC 'de durum çubuğu uygulama](../../mfc/status-bar-implementation-in-mfc.md) ve [CStatusBarCtrl nesnesinin modunu ayarlama](../../mfc/setting-the-mode-of-a-cstatusbarctrl-object.md).
+Durum çubuğu denetimi, parçalar olarak da bilinen bir metin çıktısı bölmeleri satırından oluşur. Durum çubuğu hakkında daha fazla bilgi için, [MFC'de Durum Çubuğu Uygulaması](../../mfc/status-bar-implementation-in-mfc.md) ve [CStatusBarCtrl Nesnesinin Modunu Ayarlama](../../mfc/setting-the-mode-of-a-cstatusbarctrl-object.md)bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, geçerli durum çubuğu denetimine erişmek için kullanılan `m_statusBar`bir değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, `m_statusBar`geçerli durum çubuğu denetimine erişmek için kullanılan bir değişken tanımlar. Bu değişken sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_3.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bir simgeyi geçerli durum çubuğu denetiminin iki bölmesine kopyalar. Kod örneğinde daha önceki bir bölümde, üç bölmeden oluşan bir durum çubuğu denetimi oluşturdunuz ve ardından ilk bölmeye bir simge ekledik. Bu örnek, ilk bölmeden simgesini alır ve sonra ikinci ve üçüncü bölmeye ekler.
+Aşağıdaki kod örneği, geçerli durum çubuğu denetiminin iki bölmesine bir simge kopyalar. Kod örneğinin önceki bir bölümünde üç bölmeli bir durum çubuğu denetimi oluşturduk ve ardından ilk bölmeye bir simge ekledik. Bu örnek, simgeyi ilk bölmeden alır ve ikinci ve üçüncü bölmeye ekler.
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_4.cpp)]
 
-##  <a name="getparts"></a>CStatusBarCtrl:: GetParts
+## <a name="cstatusbarctrlgetparts"></a><a name="getparts"></a>CStatusBarCtrl::GetParts
 
 Durum çubuğu denetimindeki parçaların sayısını alır.
 
@@ -310,27 +310,27 @@ int GetParts(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nparçalar*<br/>
-Koordinatları alınacak parça sayısı. Bu parametre denetimdeki parçaların sayısından büyükse ileti yalnızca varolan parçaların koordinatlarını alır.
+*nParçalar*<br/>
+Koordinatları almak için parça sayısı. Bu parametre denetimdeki parça sayısından büyükse, ileti yalnızca varolan parçaların koordinatlarını alır.
 
-*pParts 'lar*<br/>
-*NParts*tarafından belirtilen parça sayısıyla aynı sayıda öğeye sahip bir tamsayı dizisinin adresi. Dizideki her öğe, ilgili bölümün sağ kenarının istemci koordinatını alır. Bir öğe-1 olarak ayarlandıysa, bu bölüm için sağ kenarın konumu durum çubuğunun sağ kenarına genişletilir.
+*pParts*<br/>
+*nParts*tarafından belirtilen parça sayısı yla aynı sayıda öğeye sahip bir tamsayı dizisinin adresi. Dizideki her öğe, ilgili parçanın sağ kenarının istemci koordinatını alır. Bir öğe - 1 olarak ayarlanırsa, bu parçaiçin sağ kenarın konumu durum çubuğunun sağ kenarına kadar uzanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa denetimdeki parçaların sayısı veya yoksa sıfır.
+Başarılı olursa denetimdeki parça sayısı veya aksi takdirde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, verilen parça sayısının sağ kenarının koordinatını de alır.
+Bu üye işlev ayrıca verilen parça sayısının sağ kenarının koordinatını da alır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#3](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_5.cpp)]
 
-##  <a name="getrect"></a>CStatusBarCtrl:: GetRect
+## <a name="cstatusbarctrlgetrect"></a><a name="getrect"></a>CStatusBarCtrl::GetRect
 
-Durum çubuğu denetimindeki bir parçanın sınırlayıcı dikdörtgenini alır.
+Durum çubuğu denetiminde bir parçanın sınırlayıcı dikdörtgenini alır.
 
 ```
 BOOL GetRect(
@@ -341,22 +341,22 @@ BOOL GetRect(
 ### <a name="parameters"></a>Parametreler
 
 *nPane*<br/>
-Sınırlayıcı dikdörtgeni alınacak olan bölümün sıfır tabanlı dizini.
+Sınırlayıcı dikdörtgeni alınacak parçanın sıfır tabanlı dizin.
 
-*lpRect*<br/>
-Sınırlayıcı dikdörtgeni alan bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısının adresi.
+*Lprect*<br/>
+Sınırlayıcı dikdörtgeni alan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısının adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi halde sıfır.
+Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#4](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_6.cpp)]
 
-##  <a name="gettext"></a>CStatusBarCtrl:: GetText
+## <a name="cstatusbarctrlgettext"></a><a name="gettext"></a>CStatusBarCtrl::GetText
 
-Durum çubuğu denetiminin verilen bölümünün metnini alır.
+Durumu çubuğu denetiminin verilen bölümünden metni alır.
 
 ```
 CString GetText(
@@ -371,34 +371,34 @@ int GetText(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszText*<br/>
-Metni alan arabelleğin adresi. Bu parametre, null ile sonlandırılmış bir dizedir.
+*lpszMetin*<br/>
+Metni alan arabelleğe ait adres. Bu parametre null-sonlandırılan dizedir.
 
 *nPane*<br/>
-Metnin alınacağı bölümün sıfır tabanlı dizini.
+Metin almak için hangi bölümün sıfır tabanlı dizin.
 
-*pType*<br/>
-Tür bilgilerini alan tamsayı işaretçisi. Tür şu değerlerden biri olabilir:
+*pTipi*<br/>
+Tür bilgilerini alan bir müslümede işaretçi. Tür şu değerlerden biri olabilir:
 
-- **0** metin, durum çubuğunun düzleminden daha düşük görünmesi için bir kenarlıkla çizilir.
+- **0** Metin, durum çubuğunun düzleminden daha düşük görünmesi için kenarlıkla çizilir.
 
-- SBT_NOBORDERS metin kenarlık olmadan çizilir.
+- SBT_NOBORDERS Metin kenarlıksız çizilir.
 
-- SBT_POPOUT metin, durum çubuğunun düzleminden daha yüksek görünmesi için bir kenarlıkla çizilir.
+- SBT_POPOUT Metin, durum çubuğunun düzleminden daha yüksek görünmesi için kenarlıkla çizilir.
 
-- SBT_OWNERDRAW metin SBT_OWNERDRAW çizim türüne sahipse, *pType* bu iletiyi alır ve uzunluğu ve işlem türü yerine metinle ilişkili 32 bitlik değeri döndürür.
+- SBT_OWNERDRAW Metin SBT_OWNERDRAW çizim türüne sahipse, *pType* bu iletiyi alır ve uzunluk ve işlem türü yerine metinle ilişkili 32 bit değerini döndürür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Metnin veya geçerli metni içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) uzunluğu (karakter).
+Karakter de, metnin veya geçerli metni içeren bir [CString'in](../../atl-mfc-shared/reference/cstringt-class.md) uzunluğu.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#5](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_7.cpp)]
 
-##  <a name="gettextlength"></a>CStatusBarCtrl:: GetTextLength
+## <a name="cstatusbarctrlgettextlength"></a><a name="gettextlength"></a>CStatusBarCtrl::GetTextLength
 
-Durum çubuğu denetiminin verilen bölümündeki metnin uzunluğunu karakter olarak alır.
+Durum çubuğu denetiminin verilen bölümünden metnin karakter olarak uzunluğunu alır.
 
 ```
 int GetTextLength(
@@ -409,30 +409,30 @@ int GetTextLength(
 ### <a name="parameters"></a>Parametreler
 
 *nPane*<br/>
-Metnin alınacağı bölümün sıfır tabanlı dizini.
+Metin almak için hangi bölümün sıfır tabanlı dizin.
 
-*pType*<br/>
-Tür bilgilerini alan tamsayı işaretçisi. Tür şu değerlerden biri olabilir:
+*pTipi*<br/>
+Tür bilgilerini alan bir müslümede işaretçi. Tür şu değerlerden biri olabilir:
 
-- **0** metin, durum çubuğunun düzleminden daha düşük görünmesi için bir kenarlıkla çizilir.
+- **0** Metin, durum çubuğunun düzleminden daha düşük görünmesi için kenarlıkla çizilir.
 
-- SBT_NOBORDERS metin kenarlık olmadan çizilir.
+- SBT_NOBORDERS Metin kenarlıksız çizilir.
 
-- SBT_OWNERDRAW metin üst pencere tarafından çizilir.
+- SBT_OWNERDRAW Metin üst pencere tarafından çizilir.
 
-- SBT_POPOUT metin, durum çubuğunun düzleminden daha yüksek görünmesi için bir kenarlıkla çizilir.
+- SBT_POPOUT Metin, durum çubuğunun düzleminden daha yüksek görünmesi için kenarlıkla çizilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Metnin karakter cinsinden uzunluğu.
+Metnin karakter uzunluğu.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#6](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_8.cpp)]
 
-##  <a name="gettiptext"></a>CStatusBarCtrl:: GetTipText
+## <a name="cstatusbarctrlgettiptext"></a><a name="gettiptext"></a>CStatusBarCtrl::GetTipText
 
-Durum çubuğundaki bir bölme için araç ipucu metnini alır.
+Durum çubuğundaki bölmenin araç ipucu metnini alır.
 
 ```
 CString GetTipText(int nPane) const;
@@ -445,19 +445,19 @@ Araç ipucu metnini almak için durum çubuğu bölmesinin sıfır tabanlı dizi
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç ipucunda kullanılacak metni içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
+Araç uçlarında kullanılacak metni içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [SB_GETTIPTEXT](/windows/win32/Controls/sb-gettiptext)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [SB_GETTIPTEXT](/windows/win32/Controls/sb-gettiptext)davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#7](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_9.cpp)]
 
-##  <a name="issimple"></a>CStatusBarCtrl:: IsSimple
+## <a name="cstatusbarctrlissimple"></a><a name="issimple"></a>CStatusBarCtrl::Basit
 
-Basit modda olup olmadığını anlamak için durum penceresi denetimini denetler.
+Basit modda olup olmadığını belirlemek için durum penceresi denetimini denetler.
 
 ```
 BOOL IsSimple() const;
@@ -465,15 +465,15 @@ BOOL IsSimple() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Durum penceresi denetimi basit modda ise sıfır dışı; Aksi halde sıfır.
+Durum penceresi denetimi basit moddaysa sıfıra inme; aksi takdirde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [SB_ISSIMPLE](/windows/win32/Controls/sb-issimple)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [SB_ISSIMPLE](/windows/win32/Controls/sb-issimple)davranışını uygular.
 
-##  <a name="setbkcolor"></a>CStatusBarCtrl:: SetBkColor
+## <a name="cstatusbarctrlsetbkcolor"></a><a name="setbkcolor"></a>CStatusBarCtrl::SetBkColor
 
-Durum çubuğundaki arka plan rengini ayarlar.
+Durum çubuğunda arka plan rengini ayarlar.
 
 ```
 COLORREF SetBkColor(COLORREF cr);
@@ -481,24 +481,24 @@ COLORREF SetBkColor(COLORREF cr);
 
 ### <a name="parameters"></a>Parametreler
 
-*Return*<br/>
-Yeni arka plan rengini belirten COLORREF değeri. Durum çubuğunun varsayılan arka plan rengini kullanmasını sağlamak için CLR_DEFAULT değerini belirtin.
+*Cr*<br/>
+Yeni arka plan rengini belirten COLORREF değeri. Durum çubuğunun varsayılan arka plan rengini kullanmasına neden olacak CLR_DEFAULT değerini belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki varsayılan arka plan rengini temsil eden bir [colorref](/windows/win32/gdi/colorref) değeri.
+Önceki varsayılan arka plan rengini temsil eden bir [COLORREF](/windows/win32/gdi/colorref) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [SB_SETBKCOLOR](/windows/win32/Controls/sb-setbkcolor)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [SB_SETBKCOLOR](/windows/win32/Controls/sb-setbkcolor)davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#8](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_10.cpp)]
 
-##  <a name="seticon"></a>CStatusBarCtrl:: SetIcon
+## <a name="cstatusbarctrlseticon"></a><a name="seticon"></a>CStatusBarCtrl::SetIcon
 
-Durum çubuğundaki bir bölmenin simgesini ayarlar.
+Durum çubuğundaki bölme simgesini ayarlar.
 
 ```
 BOOL SetIcon(
@@ -509,26 +509,26 @@ BOOL SetIcon(
 ### <a name="parameters"></a>Parametreler
 
 *nPane*<br/>
-Simgeyi alacak olan bölmenin sıfır tabanlı dizini. Bu parametre-1 ise, durum çubuğunun bir basit durum çubuğu olduğu varsayılır.
+Simgeyi alacak bölmenin sıfır tabanlı dizin. Bu parametre -1 ise, durum çubuğu basit bir durum çubuğu olarak kabul edilir.
 
-*HICON*<br/>
-Ayarlanacak simgeye yönelik işleyici. Bu değer NULL ise, simge bölümden kaldırılır.
+*Hıcon*<br/>
+Ayarlanacak simgeye işleyin. Bu değer NULL ise, simge parçadan kaldırılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi halde sıfır.
+Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [SB_SETICON](/windows/win32/Controls/sb-seticon)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [SB_SETICON](/windows/win32/Controls/sb-seticon)davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
-  [CStatusBarCtrl:: SetBkColor](#setbkcolor)örneğine bakın.
+  [CStatusBarCtrl::SetBkColor](#setbkcolor)için örneğe bakın.
 
-##  <a name="setminheight"></a>CStatusBarCtrl:: SetMinHeight
+## <a name="cstatusbarctrlsetminheight"></a><a name="setminheight"></a>CStatusBarCtrl::SetMinHeight
 
-Bir durum çubuğu denetiminin çizim alanının minimum yüksekliğini ayarlar.
+Durum çubuğu denetiminin çizim alanının minimum yüksekliğini ayarlar.
 
 ```
 void SetMinHeight(int nMin);
@@ -536,20 +536,20 @@ void SetMinHeight(int nMin);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ngünde en az*<br/>
-Denetimin piksel cinsinden minimum yüksekliği.
+*nMin*<br/>
+Minimum yükseklik, piksel, kontrol.
 
 ### <a name="remarks"></a>Açıklamalar
 
-En küçük yükseklik, durum çubuğu denetiminin dikey kenarlığının piksel cinsinden, *nMin* toplamı ve genişliğinin iki katından oluşur.
+Minimum yükseklik *nMin* toplamı ve iki kat genişlik, piksel, durum çubuğu denetiminin dikey kenarlığı.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#9](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_11.cpp)]
 
-##  <a name="setparts"></a>CStatusBarCtrl:: SetParts
+## <a name="cstatusbarctrlsetparts"></a><a name="setparts"></a>CStatusBarCtrl::SetParts
 
-Bir durum çubuğu denetimindeki parça sayısını ve her parçanın sağ kenarının koordinatını belirler.
+Durum çubuğu denetimindeki parça sayısını ve her parçanın sağ kenarının koordinatını ayarlar.
 
 ```
 BOOL SetParts(
@@ -559,23 +559,23 @@ BOOL SetParts(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nparçalar*<br/>
-Ayarlanacak bölüm sayısı. Parça sayısı 255 ' den büyük olamaz.
+*nParçalar*<br/>
+Ayarlanacak parça sayısı. Parça sayısı 255'ten büyük olamaz.
 
-*Pgenişlikleri*<br/>
-*NParts*tarafından belirtilen parçalar ile aynı sayıda öğeye sahip bir tamsayı dizisinin adresi. Dizideki her öğe, ilgili bölümün sağ kenarının istemci koordinatlarındaki konumu belirtir. Bir öğe-1 ise, bu bölüm için sağ kenarın konumu denetimin sağ kenarına genişletilir.
+*p Genişlikler*<br/>
+*nParts*tarafından belirtilen parçalarla aynı sayıda öğeye sahip bir tamsayı dizisinin adresi. Dizideki her öğe, istemci koordinatlarında, ilgili parçanın sağ kenarının konumunu belirtir. Bir öğe - 1 ise, o parça için sağ kenarın konumu denetimin sağ kenarına kadar uzanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi halde sıfır.
+Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#10](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_12.cpp)]
 
-##  <a name="setsimple"></a>CStatusBarCtrl:: SetSimple
+## <a name="cstatusbarctrlsetsimple"></a><a name="setsimple"></a>CStatusBarCtrl::SetSimple
 
-Bir durum çubuğu denetiminin basit metin görüntüleyip görüntülemediğini veya önceki bir [SetParts](#setparts)çağrısıyla ayarlanan tüm denetim parçalarını görüntülediğini belirtir.
+Durum çubuğu denetiminin basit bir metni gösterip görüntülemediğini veya [SetParts'a](#setparts)önceki bir çağrıyla ayarlanan tüm denetim parçalarını gösterip görüntülemediğini belirtir.
 
 ```
 BOOL SetSimple(BOOL bSimple = TRUE);
@@ -583,8 +583,8 @@ BOOL SetSimple(BOOL bSimple = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bSimple*<br/>
-'ndaki Görüntüleme türü bayrağı. Bu parametre TRUE ise, denetim basit metin görüntüler; YANLıŞ ise, birden çok parça görüntüler.
+*bBasit*<br/>
+[içinde] Görüntü tipi bayrak. Bu parametre TRUE ise, denetim basit metni görüntüler; FALSE ise, birden çok parça görüntüler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -592,9 +592,9 @@ Her zaman 0 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamanız durum çubuğu denetimini basit olmayan veya basit dışında bir şekilde değiştirirse, sistem denetimi hemen yeniden çizer.
+Uygulamanız durum çubuğu denetimini basit olmayandan basite veya tam tersi olarak değiştirirse, sistem denetimi hemen yeniden çizer.
 
-##  <a name="settext"></a>CStatusBarCtrl:: SetText
+## <a name="cstatusbarctrlsettext"></a><a name="settext"></a>CStatusBarCtrl::SetText
 
 Durum çubuğu denetiminin verilen bölümündeki metni ayarlar.
 
@@ -607,28 +607,28 @@ BOOL SetText(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszText*<br/>
-Ayarlanacak metni belirten null ile sonlandırılmış bir dizenin adresi. *NType* SBT_OWNERDRAW Ise, *lpszText* 32 bitlik verileri temsil eder.
+*lpszMetin*<br/>
+Ayarlanması gereken metni belirten null-sonlandırılan bir dize adresi. *nType* SBT_OWNERDRAW ise, *lpszText* 32 bit veri temsil eder.
 
 *nPane*<br/>
-Ayarlanacak bölümün sıfır tabanlı dizini. Bu değer 255 ise, durum çubuğu denetiminin yalnızca bir bölümü olan basit bir denetim olduğu varsayılır.
+Ayarlanan parçanın sıfır tabanlı dizin. Bu değer 255 ise, durum çubuğu denetimi nin yalnızca bir bölüme sahip basit bir denetim olduğu varsayılır.
 
-*nTür*<br/>
-Çizim işleminin türü. Olası değerler listesi için bkz. [SB_SETTEXT iletisi](/windows/win32/Controls/sb-settext) .
+*nTipi*<br/>
+Çizim işlemi türü. Olası değerlerin listesi için [SB_SETTEXT iletiye](/windows/win32/Controls/sb-settext) bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi halde sıfır.
+Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İleti, denetimin bir sonraki WM_PAINT iletisini aldığı zaman yeni metni görüntülemesine neden olan denetimin bölümünü geçersiz kılar.
+İleti, denetimin değiştirilen bölümünü geçersiz kıldığında, denetim sonraki WM_PAINT iletisi aldığında yeni metni görüntülemesine neden olur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#11](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_13.cpp)]
 
-##  <a name="settiptext"></a>CStatusBarCtrl:: SetTipText
+## <a name="cstatusbarctrlsettiptext"></a><a name="settiptext"></a>CStatusBarCtrl::SetTipText
 
 Durum çubuğundaki bir bölme için araç ipucu metnini ayarlar.
 
@@ -644,11 +644,11 @@ void SetTipText(
 Araç ipucu metnini almak için durum çubuğu bölmesinin sıfır tabanlı dizini.
 
 *pszTipText*<br/>
-Araç ipucu metnini içeren bir dize işaretçisi.
+Araç ipucu metnini içeren bir dize için işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [SB_SETTIPTEXT](/windows/win32/Controls/sb-settiptext)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [SB_SETTIPTEXT](/windows/win32/Controls/sb-settiptext)davranışını uygular.
 
 ### <a name="example"></a>Örnek
 

@@ -1,5 +1,5 @@
 ---
-title: CComApartment sınıfı
+title: CComApartment Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComApartment
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - apartments in ATL EXE modules
 - CComApartment class
 ms.assetid: dbc177d7-7ee4-45f2-b563-d578a467ca93
-ms.openlocfilehash: 5f4c7fc356e61210e9b99bf9989b1bb3f0abc98a
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+ms.openlocfilehash: 13141d27592f6f40ea7b0529c61baba2fe83a10a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821681"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81321114"
 ---
-# <a name="ccomapartment-class"></a>CComApartment sınıfı
+# <a name="ccomapartment-class"></a>CComApartment Sınıfı
 
-Bu sınıf, bir grubu iş parçacığı havuza alınmış bir EXE modülünde yönetmek için destek sağlar.
+Bu sınıf, iş parçacığı havuzlu EXE modülünde bir daireyi yönetmek için destek sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,38 +38,38 @@ class CComApartment
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComApartment:: CComApartment](#ccomapartment)|Oluşturucu.|
+|[Ccomapartment::ccomapartment](#ccomapartment)|Oluşturucu.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComApartment:: Apartment](#apartment)|İş parçacığının başlangıç adresini işaretler.|
-|[CComApartment:: GetLockCount](#getlockcount)|İş parçacığının geçerli kilit sayısını döndürür.|
-|[CComApartment:: Lock](#lock)|İş parçacığının kilit sayısını artırır.|
-|[CComApartment:: unlock](#unlock)|İş parçacığının kilit sayısını azaltır.|
+|[CcomApartment::Daire](#apartment)|İş parçacığının başlangıç adresini işaretler.|
+|[CcomApartment::getlocksayısı](#getlockcount)|İş parçacığının geçerli kilit sayısını döndürür.|
+|[CcomApartment::Kilit](#lock)|İş parçacığının kilit sayısını damlar.|
+|[CcomApartment::Kilidini Aç](#unlock)|İş parçacığının kilit sayısını eriter.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComApartment:: m_dwThreadID](#m_dwthreadid)|İş parçacığının tanımlayıcısını içerir.|
-|[CComApartment:: m_hThread](#m_hthread)|İş parçacığının işleyicisini içerir.|
-|[CComApartment:: m_nLockCnt](#m_nlockcnt)|İş parçacığının geçerli kilit sayısını içerir.|
+|[CComApartment::m_dwThreadID](#m_dwthreadid)|İş parçacığının tanımlayıcısını içerir.|
+|[CComApartment::m_hThread](#m_hthread)|İş parçacığının tutamacını içerir.|
+|[CComApartment::m_nLockCnt](#m_nlockcnt)|İş parçacığının geçerli kilit sayısını içerir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComApartment`, [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) tarafından bir grubu iş parçacığı havuza alınmış bir exe modülünde yönetmek için kullanılır. `CComApartment` bir iş parçacığında kilit sayısını artırma ve azaltma için yöntemler sağlar.
+`CComApartment`[CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) tarafından iplik havuzlu EXE modülündeki bir daireyi yönetmek için kullanılır. `CComApartment`bir iş parçacığı üzerinde kilit sayısını artım ve decrementing için yöntemler sağlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase. h
+**Üstbilgi:** atlbase.h
 
-##  <a name="apartment"></a>CComApartment:: Apartment
+## <a name="ccomapartmentapartment"></a><a name="apartment"></a>CcomApartment::Daire
 
 İş parçacığının başlangıç adresini işaretler.
 
@@ -83,9 +83,9 @@ Her zaman 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CComAutoThreadModule:: Init](../../atl/reference/ccomautothreadmodule-class.md#init)sırasında otomatik olarak ayarlanır.
+CComAutoThreadModule sırasında otomatik olarak [ayarlanır::Init](../../atl/reference/ccomautothreadmodule-class.md#init).
 
-##  <a name="ccomapartment"></a>CComApartment:: CComApartment
+## <a name="ccomapartmentccomapartment"></a><a name="ccomapartment"></a>Ccomapartment::ccomapartment
 
 Oluşturucu.
 
@@ -95,9 +95,9 @@ CComApartment();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CComApartment` veri üyelerini başlatır [m_nLockCnt](#m_nlockcnt) ve [m_hThread](#m_hthread).
+`CComApartment` veri üyelerini [m_nLockCnt](#m_nlockcnt) ve [m_hThread.](#m_hthread)
 
-##  <a name="getlockcount"></a>CComApartment:: GetLockCount
+## <a name="ccomapartmentgetlockcount"></a><a name="getlockcount"></a>CcomApartment::getlocksayısı
 
 İş parçacığının geçerli kilit sayısını döndürür.
 
@@ -107,11 +107,11 @@ LONG GetLockCount();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İş parçacığında kilit sayısı.
+İş parçacığının kilit sayısı.
 
-##  <a name="lock"></a>CComApartment:: Lock
+## <a name="ccomapartmentlock"></a><a name="lock"></a>CcomApartment::Kilit
 
-İş parçacığının kilit sayısını artırır.
+İş parçacığının kilit sayısını damlar.
 
 ```
 LONG Lock();
@@ -123,11 +123,11 @@ Tanılama veya test için yararlı olabilecek bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CComAutoThreadModule:: Lock](../../atl/reference/ccomautothreadmodule-class.md#lock)tarafından çağırılır.
+[CComAutoThreadModule tarafından çağrılan::Kilit](../../atl/reference/ccomautothreadmodule-class.md#lock).
 
-İş parçacığında kilit sayısı istatistiksel amaçlar için kullanılır.
+İş parçacığı üzerindeki kilit sayısı istatistiksel amaçlar için kullanılır.
 
-##  <a name="m_dwthreadid"></a>CComApartment:: m_dwThreadID
+## <a name="ccomapartmentm_dwthreadid"></a><a name="m_dwthreadid"></a>CComApartment::m_dwThreadID
 
 İş parçacığının tanımlayıcısını içerir.
 
@@ -135,15 +135,15 @@ Tanılama veya test için yararlı olabilecek bir değer.
 DWORD m_dwThreadID;
 ```
 
-##  <a name="m_hthread"></a>CComApartment:: m_hThread
+## <a name="ccomapartmentm_hthread"></a><a name="m_hthread"></a>CComApartment::m_hThread
 
-İş parçacığının işleyicisini içerir.
+İş parçacığının tutamacını içerir.
 
 ```
 HANDLE m_hThread;
 ```
 
-##  <a name="m_nlockcnt"></a>CComApartment:: m_nLockCnt
+## <a name="ccomapartmentm_nlockcnt"></a><a name="m_nlockcnt"></a>CComApartment::m_nLockCnt
 
 İş parçacığının geçerli kilit sayısını içerir.
 
@@ -151,9 +151,9 @@ HANDLE m_hThread;
 LONG m_nLockCnt;
 ```
 
-##  <a name="unlock"></a>CComApartment:: unlock
+## <a name="ccomapartmentunlock"></a><a name="unlock"></a>CcomApartment::Kilidini Aç
 
-İş parçacığının kilit sayısını azaltır.
+İş parçacığının kilit sayısını eriter.
 
 ```
 LONG Unlock();
@@ -165,10 +165,10 @@ Tanılama veya test için yararlı olabilecek bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CComAutoThreadModule:: unlock](../../atl/reference/ccomautothreadmodule-class.md#lock)tarafından çağırılır.
+[CComAutoThreadModule tarafından çağrılan::Unlock](../../atl/reference/ccomautothreadmodule-class.md#lock).
 
-İş parçacığında kilit sayısı istatistiksel amaçlar için kullanılır.
+İş parçacığı üzerindeki kilit sayısı istatistiksel amaçlar için kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

@@ -6,44 +6,44 @@ helpviewer_keywords:
 - application deployment [C++], ClickOnce
 - ClickOnce deployment [C++], C++ applications
 ms.assetid: 9988c546-0936-452c-932f-9c76daa42157
-ms.openlocfilehash: 4408db9d129c03ee5df9b006b03c6586df02afb1
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 4726fda8c5eca70ce7acde19f141a7c096395e95
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513759"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81316617"
 ---
 # <a name="clickonce-deployment-for-visual-c-applications"></a>Visual C++ Uygulamaları için ClickOnce Dağıtımı
 
-Visual Studio, Windows uygulamalarını dağıtmak için iki farklı teknoloji sağlar: ClickOnce dağıtımı veya [Windows Installer](/windows/win32/Msi/windows-installer-portal) dağıtımı.
+Visual Studio, Windows uygulamalarını dağıtmak için iki farklı teknoloji sağlar: ClickOnce dağıtım veya [Windows Installer](/windows/win32/Msi/windows-installer-portal) dağıtımı.
 
-## <a name="clickonce-deployment-in-c"></a>İçinde ClickOnce dağıtımıC++
+## <a name="clickonce-deployment-in-c"></a>C++'da ClickOnce Dağıtım
 
-Görsel C++ geliştirme ortamı, ClickOnce Ile Visual Studio C++ projelerinin dağıtımını doğrudan desteklemez, ancak araçları kullanmak için kullanılabilir.
+Visual C++ geliştirme ortamı, Visual Studio C++ projelerinin ClickOnce ile dağıtımını doğrudan desteklemez, ancak bunları kullanmak için araçlar kullanılabilir.
 
 > [!NOTE]
->  Visual Studio, Visual C# ve Visual Basic geliştirme ortamlarında ClickOnce 'ı destekler. Visual Studio C++ projeniz bir görsel C# projenin bağımlılığı ise, uygulamayı (bağımlılıkları dahil) görsel C# geliştirme ortamından ClickOnce dağıtımını kullanarak yayımlayabilirsiniz.
+> Visual Studio, Visual C# ve Visual Basic geliştirme ortamlarında ClickOnce'yi destekler. Visual Studio C++ projeniz Visual C# projesinin bir bağımlılığıysa, Visual C# geliştirme ortamından ClickOnce dağıtımını kullanarak uygulamayı (bağımlılıkları dahil) yayımlayabilirsiniz.
 
-ClickOnce kullanarak bir görsel C++ uygulamayı dağıtmak için, önce [Mage. exe (bildirim oluşturma ve düzenleme aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) veya kendi grafik kullanıcısını kullanarak bir [ClickOnce uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest) ve [ClickOnce dağıtım bildirimi](/visualstudio/deployment/clickonce-deployment-manifest) oluşturmanız gerekir arabirim sürümü (bilgi için bkz. [MageUI. exe (bildirim oluşturma ve düzenleme aracı, grafik istemci)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)).
+ClickOnce'yi kullanarak Görsel C++ uygulamasını dağıtmak için öncelikle [Mage.exe (Manifest Generation and Editing Tool) veya](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) grafik kullanıcı arabirimi sürümünü kullanarak [clickonce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest) ve [ClickOnce Dağıtım Bildirimi](/visualstudio/deployment/clickonce-deployment-manifest) oluşturmanız gerekir (bilgi için [bkz. MageUI.exe (Manifest Oluşturma ve Düzenleme Aracı, Grafik İstemci)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)).
 
-İlk olarak, uygulama bildirimini oluşturmak için Mage. exe ' yi kullanın; elde edilen dosya. manifest uzantısına sahip olacaktır. Daha sonra dağıtım bildirimini oluşturmak için Mage. exe ' yi kullanabilirsiniz; elde edilen dosyanın uzantısı. Application olacaktır. Ardından bildirimleri imzalayın.
+İlk uygulama bildirimi oluşturmak için Mage.exe kullanın; ortaya çıkan dosya uzantısı .manifest olacaktır. Daha sonra dağıtım bildirimi oluşturmak için Mage.exe kullanın; ortaya çıkan dosya uzantısı .application olacaktır. Daha sonra manifestoları imzalarsınız.
 
-Uygulama bildiriminin hedef işlemciyi (**x86**, **x64**veya **ARM**) belirtmesi gerekir. Bu seçenekler hakkında bilgi için bkz. [64-bit uygulamalar Için önkoşulları dağıtma](/visualstudio/deployment/deploying-prerequisites-for-64-bit-applications) .
+Uygulama bildirimi hedef işlemciyi **(x86**, **x64**veya **ARM)** belirtmelidir. Bu seçenekler hakkında bilgi [için 64 bit Uygulamalar için Ön Koşulları Dağıtma'ya](/visualstudio/deployment/deploying-prerequisites-for-64-bit-applications) bakın.
 
-Ayrıca, uygulamanın adı ve dağıtım bildirimlerinin C++ uygulamanın adından farklı olması gerekir. Bu, Mage. exe tarafından oluşturulan uygulama bildirimi ve C++ uygulamanın parçası olan dış bildirim arasındaki çakışmayı önler.
+Ayrıca, uygulama ve dağıtım bildirimlerinin adı C++ uygulamasının adından farklı olmalıdır. Bu, Mage.exe tarafından oluşturulan uygulama bildirimi ile C++ uygulamasının bir parçası olan dış bildirim arasındaki çakışmayı önler.
 
-Dağıtımınızın, uygulamanızın bağımlı olduğu tüm görsel C++ kitaplıkları yüklemesi gerekir. Belirli bir uygulamanın bağımlılıklarını öğrenmek için,/BAĞıMLıLAR seçeneğiyle Depends. exe veya DUMPBIN yardımcı programını kullanabilirsiniz. Bağımlılıklar hakkında daha fazla bilgi için bkz. [bir görsel C++ uygulamanın bağımlılıklarını anlama](understanding-the-dependencies-of-a-visual-cpp-application.md). VCRedist. exe ' yi çalıştırmanız gerekebilir. Bu yardımcı program, C++ Visual kitaplıklarını hedef bilgisayara kurar.
+Dağıtımınızın, uygulamanızın bağlı olduğu Visual C++ kitaplıklarını yüklemesi gerekir. Belirli bir uygulamanın bağımlılıklarını belirlemek için depends.exe veya /DEPENDS seçeneği ile DUMPBIN yardımcı programını kullanabilirsiniz. Bağımlılıklar hakkında daha fazla bilgi için [bkz.](understanding-the-dependencies-of-a-visual-cpp-application.md) VCRedist.exe çalıştırmak gerekebilir; bu yardımcı program hedef bilgisayara Visual C++ kitaplıklarını yükler.
 
-Önkoşul bileşenlerini dağıtmak üzere uygulamanız için bir önyükleyici (ön koşul Yükleyicisi) oluşturmanız da gerekebilir; önyükleyici hakkında daha fazla bilgi için bkz. [önyükleyici paketleri oluşturma](/visualstudio/deployment/creating-bootstrapper-packages).
+Ayrıca, önkoşul bileşenleri dağıtmak için uygulamanız için bir bootstrapper (önkoşul yükleyici) oluşturmanız gerekebilir; bootstrapper hakkında bilgi için, [Bootstrapper Paketleri oluşturma](/visualstudio/deployment/creating-bootstrapper-packages)bakın.
 
-Teknolojinin daha ayrıntılı bir açıklaması için bkz. [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment). ClickOnce dağıtımı hakkında ayrıntılı bir örnek için bkz [. İzlenecek yol: ClickOnce uygulamasını](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)el ile dağıtma.
+Teknolojinin daha ayrıntılı bir açıklaması için [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)bölümüne bakın. ClickOnce dağıtımının ayrıntılı bir örneği için [Bkz. Walkthrough: ClickOnce Uygulamasını el ile dağıtma](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Mage.exe (Bildirim Oluşturma ve Düzenleme Aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)<br>
-[MageUI.exe (Bildirim Oluşturma ve Düzenleme Aracı, Grafik İstemci)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)<br>
-[MakeCert. exe (sertifika oluşturma aracı)](/windows/win32/SecCrypto/makecert)<br>
-[Masaüstü uygulamaları dağıtma](deploying-native-desktop-applications-visual-cpp.md)<br>
+[Mage.exe (Manifesto Oluşturma ve Düzenleme Aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)<br>
+[MageUI.exe (Manifesto Oluşturma ve Düzenleme Aracı, Grafik İstemci)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)<br>
+[Makecert.exe (Sertifika Oluşturma Aracı)](/windows/win32/SecCrypto/makecert)<br>
+[Masaüstü Uygulamalarını Dağıtma](deploying-native-desktop-applications-visual-cpp.md)<br>
 [Uygulamaları, Hizmetleri ve Bileşenleri Dağıtma](/visualstudio/deployment/deploying-applications-services-and-components)<br>
 [ClickOnce Güvenliği ve Dağıtımı](/visualstudio/deployment/clickonce-security-and-deployment)<br>
 [Önyükleyici Paketleri Oluşturma](/visualstudio/deployment/creating-bootstrapper-packages)<br>

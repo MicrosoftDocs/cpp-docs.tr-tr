@@ -1,5 +1,5 @@
 ---
-title: CMFCFontComboBox sınıfı
+title: CMFCFontComboBox Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCFontComboBox
@@ -16,16 +16,16 @@ helpviewer_keywords:
 - CMFCFontComboBox [MFC], Setup
 - CMFCFontComboBox [MFC], m_bDrawUsingFont
 ms.assetid: 9a53fb0c-7b45-486d-8187-2a4c723d9fbb
-ms.openlocfilehash: 69e8f81e7e01d0610f3cbf88ac1725a21d59838f
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 60b4b7cdfdace2332de35dd93c43eacf592e99e2
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505293"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367499"
 ---
-# <a name="cmfcfontcombobox-class"></a>CMFCFontComboBox sınıfı
+# <a name="cmfcfontcombobox-class"></a>CMFCFontComboBox Sınıfı
 
-Sınıfı `CMFCFontComboBox` , yazı tiplerinin bir listesini içeren bir Birleşik giriş kutusu denetimi oluşturur.
+Sınıf, `CMFCFontComboBox` yazı tiplerinin listesini içeren bir açılan kutu denetimi oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,52 +37,52 @@ class CMFCFontComboBox : public CComboBox
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCFontComboBox:: CMFCFontComboBox](#cmfcfontcombobox)|Bir `CMFCFontComboBox` nesnesi oluşturur.|
+|[CMFCFontComboBox::CMFCFontComboBox](#cmfcfontcombobox)|Bir `CMFCFontComboBox` nesne inşa eder.|
 |`CMFCFontComboBox::~CMFCFontComboBox`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMFCFontComboBox::CompareItem`|Geçerli yazı tipi Birleşik giriş kutusu denetiminin sıralanmış liste kutusunda yeni bir öğenin göreli konumunu öğrenmek için Framework tarafından çağırılır. ( [CComboBox:: CompareItem](../../mfc/reference/ccombobox-class.md#compareitem).) öğesini geçersiz kılar|
-|`CMFCFontComboBox::DrawItem`|Geçerli yazı tipi Birleşik giriş kutusu denetiminde belirtilen bir öğeyi çizmek için Framework tarafından çağırılır. ( [CComboBox geçersiz kılmaları::D rawitem](../../mfc/reference/ccombobox-class.md#drawitem).)|
-|[CMFCFontComboBox:: GetSelFont](#getselfont)|Şu anda seçili olan yazı tipiyle ilgili bilgileri alır.|
-|`CMFCFontComboBox::MeasureItem`|Geçerli yazı tipi Birleşik giriş kutusu denetimindeki liste kutusunun boyutlarını bilgilendirmek için Framework tarafından çağırılır. ( [CComboBox:: MeasureItem](../../mfc/reference/ccombobox-class.md#measureitem).) öğesini geçersiz kılar|
-|`CMFCFontComboBox::PreTranslateMessage`|[TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce pencere iletilerini çevirir. ( [CWnd::P reTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)geçersiz kılar.)|
-|[CMFCFontComboBox:: SelectFont](#selectfont)|Yazı tipi Birleşik giriş kutusundan belirtilen ölçütlerle eşleşen yazı tipini seçer.|
-|[CMFCFontComboBox:: Kurulum](#setup)|Yazı tipi Birleşik giriş kutusundaki öğelerin listesini başlatır.|
+|`CMFCFontComboBox::CompareItem`|Geçerli yazı tipi açılan kutusu denetiminin sıralanmış liste kutusunda yeni bir öğenin göreli konumunu belirlemek için çerçeve tarafından çağrılır. [(CComboBox geçersiz kılar::CompareItem](../../mfc/reference/ccombobox-class.md#compareitem).)|
+|`CMFCFontComboBox::DrawItem`|Geçerli yazı tipi açılan kutusu denetiminde belirtilen bir öğeyi çizmek için çerçeve tarafından çağrılır. [(CComboBox geçersiz kılar::DrawItem](../../mfc/reference/ccombobox-class.md#drawitem).)|
+|[CMFCFontComboBox::GetSelFont](#getselfont)|Şu anda seçili yazı tipi yle ilgili bilgileri alır.|
+|`CMFCFontComboBox::MeasureItem`|Geçerli yazı tipi açılan kutusu denetiminde liste kutusunun boyutları Windows bilgilendirmek için çerçeve tarafından çağrılır. [(CComboBox geçersiz kılar::MeasureItem](../../mfc/reference/ccombobox-class.md#measureitem).)|
+|`CMFCFontComboBox::PreTranslateMessage`|Pencere iletilerini [Çeviri İletisi](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine gönderilmeden önce çevirir. [(CWnd geçersiz kılar::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
+|[CMFCFontComboBox::SelectFont](#selectfont)|Yazı tipi açılan kutusundan belirtilen ölçütlerle eşleşen yazı tipini seçer.|
+|[CMFCFontComboBox::Kurulum](#setup)|Yazı tipi açılan kutusundaki öğelerin listesini başolarak yanıtlar.|
 
-### <a name="data-members"></a>Veri üyeleri
+### <a name="data-members"></a>Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCFontComboBox:: m_bDrawUsingFont](#m_bdrawusingfont)|Geçerli yazı tipi Birleşik giriş kutusunda öğe etiketlerini çizmek için kullanılacak yazı tipi çerçevesini gösterir.|
+|[CMFCFontComboBox::m_bDrawUsingFont](#m_bdrawusingfont)|Geçerli yazı tipi açılan kutusunda madde etiketleri çizmek için hangi yazı tipi kullanmak için çerçeve gösterir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İletişim kutusunda bir `CMFCFontComboBox` nesne kullanmak için iletişim kutusu sınıfına bir `CMFCFontComboBox` değişken ekleyin. Ardından iletişim kutusu sınıfının yönteminde,BirleşikgirişkutusudenetimindekiöğelerinlistesinibaşlatmakiçinCMFCFontComboBox::Setupmetodunuçağırın.`OnInitDialog` [](#setup)
+İletişim kutusundaki bir `CMFCFontComboBox` nesneyi kullanmak `CMFCFontComboBox` için iletişim kutusu sınıfına bir değişken ekleyin. Daha sonra `OnInitDialog` iletişim kutusu sınıfının yönteminde [CMFCFontComboBox'ı arayın::Açılan](#setup) kutu denetimindeki öğelerin listesini başlatma yöntemini başlatma yöntemini.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CComboBox](../../mfc/reference/ccombobox-class.md)
+[Ccombobox](../../mfc/reference/ccombobox-class.md)
 
 [CMFCFontComboBox](../../mfc/reference/cmfcfontcombobox-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxfontcombobox. h
+**Üstbilgi:** afxfontcombobox.h
 
-##  <a name="cmfcfontcombobox"></a>CMFCFontComboBox:: CMFCFontComboBox
+## <a name="cmfcfontcomboboxcmfcfontcombobox"></a><a name="cmfcfontcombobox"></a>CMFCFontComboBox::CMFCFontComboBox
 
-Bir `CMFCFontComboBox` nesnesi oluşturur.
+Bir `CMFCFontComboBox` nesne inşa eder.
 
 ```
 CMFCFontComboBox();
@@ -92,9 +92,9 @@ CMFCFontComboBox();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getselfont"></a>CMFCFontComboBox:: GetSelFont
+## <a name="cmfcfontcomboboxgetselfont"></a><a name="getselfont"></a>CMFCFontComboBox::GetSelFont
 
-Şu anda seçili olan yazı tipiyle ilgili bilgileri alır.
+Şu anda seçili yazı tipi yle ilgili bilgileri alır.
 
 ```
 CMFCFontInfo* GetSelFont() const;
@@ -102,13 +102,13 @@ CMFCFontInfo* GetSelFont() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir yazı tipini açıklayan [CMFCFontInfo sınıfı](../../mfc/reference/cmfcfontinfo-class.md) nesnesine yönelik bir işaretçi. Birleşik giriş kutusunda hiçbir yazı tipi seçilmezse NULL olabilir.
+Bir yazı tipini açıklayan [CMFCFontInfo Sınıfı](../../mfc/reference/cmfcfontinfo-class.md) nesnesine işaretçi. Açılan kutuda yazı tipi seçili değilse NULL olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_bdrawusingfont"></a>CMFCFontComboBox:: m_bDrawUsingFont
+## <a name="cmfcfontcomboboxm_bdrawusingfont"></a><a name="m_bdrawusingfont"></a>CMFCFontComboBox::m_bDrawUsingFont
 
-Geçerli yazı tipi Birleşik giriş kutusunda öğe etiketlerini çizmek için kullanılacak yazı tipi çerçevesini gösterir.
+Geçerli yazı tipi açılan kutusunda madde etiketleri çizmek için hangi yazı tipi kullanmak için çerçeve gösterir.
 
 ```
 static BOOL m_bDrawUsingFont;
@@ -116,11 +116,11 @@ static BOOL m_bDrawUsingFont;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeveyi her öğe etiketini çizmek için aynı yazı tipini kullanmak üzere yönlendirmek için bu üyeyi TRUE olarak ayarlayın. Çerçeveyi her öğe etiketini, adı etiketle aynı olan yazı tipiyle çizilecek şekilde yönlendirmek için bu üyeyi FALSE olarak ayarlayın. Bu üyenin varsayılan değeri FALSE 'dur.
+Her madde etiketini çizmek için aynı yazı tipini kullanmak için çerçeveyi yönlendirmek için bu üyeyi TRUE olarak ayarlayın. Her madde etiketini, adı etiketle aynı olan yazı tipiyle çizmek için çerçeveyi yönlendirmek için bu üyeyi FALSE olarak ayarlayın. Bu üyenin varsayılan değeri FALSE'dur.
 
-##  <a name="selectfont"></a>CMFCFontComboBox:: SelectFont
+## <a name="cmfcfontcomboboxselectfont"></a><a name="selectfont"></a>CMFCFontComboBox::SelectFont
 
-Yazı tipi Birleşik giriş kutusundan belirtilen ölçütlerle eşleşen yazı tipini seçer.
+Yazı tipi açılan kutusundan belirtilen ölçütlerle eşleşen yazı tipini seçer.
 
 ```
 BOOL SelectFont(CMFCFontInfo* pDesc);
@@ -133,32 +133,32 @@ BOOL SelectFont(
 ### <a name="parameters"></a>Parametreler
 
 *pDesc*<br/>
-'ndaki Yazı tipi açıklama nesnesine işaret eder.
+[içinde] Yazı tipi açıklaması nesnesine işaret edin.
 
-*lpszName*<br/>
-'ndaki Bir yazı tipi adı belirtir.
+*Lpszname*<br/>
+[içinde] Bir yazı tipi adı belirtir.
 
 *nCharSet*<br/>
-'ndaki Bir karakter kümesini belirtir. Varsayılan değer DEFAULT_CHARSET ' dir. Daha fazla bilgi için `lfCharSet` [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısının üyesine bakın.
+[içinde] Bir karakter kümesi belirtir. Varsayılan değer DEFAULT_CHARSET. Daha fazla bilgi `lfCharSet` için [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısının üyesine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazı tipi Birleşik giriş kutusundaki bir öğe belirtilen yazı tipi açıklama nesnesi veya yazı tipi adı ve karakter kümesi ile eşleşiyorsa TRUE. Aksi takdirde, FALSE.
+Yazı tipi açılan kutusundaki bir öğe belirtilen yazı tipi açıklaması nesnesi veya yazı tipi adı ve charset eşleşirse TRUE; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi, belirtilen yazı tipine karşılık gelen yazı tipi Birleşik giriş kutusundaki öğeyi seçmek ve kaydırmak için kullanın.
+Belirtilen yazı tipine karşılık gelen yazı tipi açılan kutusundaöğe seçmek ve kaydırmak için bu yöntemi kullanın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `SelectFont` `CMFCFontComboBox` sınıfında yönteminin nasıl kullanılacağını gösterir. Bu örnek, [Yeni denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, yöntemin sınıfta `SelectFont` nasıl `CMFCFontComboBox` kullanılacağını göstermektedir. Bu örnek, [Yeni Denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_NewControls#34](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#35](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_2.cpp)]
 
-##  <a name="setup"></a>CMFCFontComboBox:: Kurulum
+## <a name="cmfcfontcomboboxsetup"></a><a name="setup"></a>CMFCFontComboBox::Kurulum
 
-Yazı tipi Birleşik giriş kutusundaki öğelerin listesini başlatır.
+Yazı tipi açılan kutusundaki öğelerin listesini başolarak yanıtlar.
 
 ```
 BOOL Setup(
@@ -170,25 +170,25 @@ BOOL Setup(
 ### <a name="parameters"></a>Parametreler
 
 *nFontType*<br/>
-'ndaki Yazı tipi türünü belirtir. Varsayılan değer, DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE bit düzeyinde birleşimidir (veya).
+[içinde] Yazı tipi türünü belirtir. Varsayılan değer, DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE bityönünde birleşimidir..
 
 *nCharSet*<br/>
-'ndaki Yazı tipi karakter kümesini belirtir. Varsayılan değer DEFAULT_CHARSET ' dir.
+[içinde] Yazı tipi karakter kümesini belirtir. Varsayılan değer DEFAULT_CHARSET.
 
-*Nstachandfamily*<br/>
-'ndaki Yazı Tipi aralığını ve ailesini belirtir. Varsayılan değer DEFAULT_PITCH ' dir.
+*nPitchAndFamily*<br/>
+[içinde] Yazı tipi adımını ve ailesini belirtir. Varsayılan değer DEFAULT_PITCH.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazı tipi Birleşik giriş kutusu başarıyla başlatılmışsa doğru; Aksi takdirde, FALSE.
+Font açılan kutusu başarıyla başharfe basıldıysa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, belirtilen parametrelerle eşleşen ve yazı tipi Birleşik giriş kutusuna bu yazı tipi adlarını ekleyerek yazı tipi Birleşik giriş kutusunu başlatır.
+Bu yöntem, belirtilen parametrelerle eşleşen şu anda yüklü olan yazı tiplerini listeleyerek ve bu yazı tipi adlarını yazı tipi açılan kutusuna ekleyerek yazı tipi açılan kutusunu niçin başlattı.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `Setup` `CMFCFontComboBox` sınıfında yönteminin nasıl kullanılacağını gösterir. Bu örnek, [Yeni denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, yöntemin sınıfta `Setup` nasıl `CMFCFontComboBox` kullanılacağını göstermektedir. Bu örnek, [Yeni Denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_NewControls#34](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#36](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_3.cpp)]

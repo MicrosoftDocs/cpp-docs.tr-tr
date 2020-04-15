@@ -13,19 +13,19 @@ helpviewer_keywords:
 - stdext::checked_array_iterator [C++], reference
 - stdext::checked_array_iterator [C++], base
 ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
-ms.openlocfilehash: 68ee602c44a8515e1d41f04a4bd0fbb7edc924b7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f177a45e700ab15852cd9c6d947873d247cf3828
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452302"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81363870"
 ---
-# <a name="checkedarrayiterator-class"></a>checked_array_iterator Sınıfı
+# <a name="checked_array_iterator-class"></a>checked_array_iterator Sınıfı
 
-Sınıfı `checked_array_iterator` , bir diziyi veya işaretçiyi denetlenen bir yineleyici haline dönüştürmenizi sağlar. Bu uyarıları genel olarak susturmak yerine bu sınıfı ham işaretçiler veya diziler için bir sarmalayıcı olarak ( [make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator) işlevini kullanarak), Denetlenmemiş işaretçi uyarılarını denetlemek ve yönetmek için hedeflenmiş bir yol olarak kullanın. Gerekirse, [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md)bu sınıfının denetlenmeyen sürümünü kullanabilirsiniz.
+Sınıf, `checked_array_iterator` bir diziyi veya işaretçiyi denetlenmiş bir yineleyiciye dönüştürmenize olanak tanır. Bu sınıfı, ham işaretçiler veya diziler için bir sarmalayıcı [(make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator) işlevini kullanarak) olarak denetim sağlamak ve bu uyarıları genel olarak susturmak yerine denetlenmemiş işaretçi uyarılarını yönetmek için hedeflenmiş bir yol olarak kullanın. Gerekirse, bu sınıfın işaretlenmemiş sürümünü kullanabilirsiniz, [unchecked_array_iterator.](../standard-library/unchecked-array-iterator-class.md)
 
 > [!NOTE]
-> Bu sınıf, C++ standart kitaplığın Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir. Örneğin, bu sınıfın kullanımını gerektirmeyen kodun nasıl yazılacağını gösteren bir örnek için, aşağıdaki ikinci örneğe bakın.
+> Bu sınıf, C++ Standart Kitaplığı'nın Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir. Örneğin, bu sınıfın kullanımını gerektirmeyen kodun nasıl yazılacağını gösteren bir örnek için, aşağıdaki ikinci örneğe bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,9 +36,9 @@ class checked_array_iterator;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, [stdext](../standard-library/stdext-namespace.md) ad alanında tanımlanır.
+Bu sınıf [stdext](../standard-library/stdext-namespace.md) ad alanında tanımlanır.
 
-Denetlenen Yineleyici özelliği hakkında daha fazla bilgi ve örnek kod için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Denetlenen yineleyici özelliği hakkında daha fazla bilgi ve örnek kodu için [bkz.](../standard-library/checked-iterators.md)
 
 ## <a name="example"></a>Örnek
 
@@ -50,7 +50,7 @@ Hedef kopyalanan öğeleri tutmak için yeterince büyük değilse, satırı de�
 copy(a, a + 5, checked_array_iterator<int*>(b, 5));
 ```
 
-to
+-
 
 ```cpp
 copy(a, a + 5, checked_array_iterator<int*>(b, 4));
@@ -93,7 +93,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Standart Kitaplık algoritmaları kullanırken `checked_array_iterator` C++ sınıf ihtiyacını önlemek için, dinamik olarak ayrılan dizi yerine bir `vector` kullanmayı düşünün. Aşağıdaki örnek bunun nasıl yapılacağını göstermektedir.
+C++ Standart Kitaplık algoritmalarını kullanırken `checked_array_iterator` sınıfa ihtiyaç `vector` duyulmasını önlemek için dinamik olarak ayrılmış bir dizi yerine bir dizi kullanmayı düşünün. Aşağıdaki örnek bunun nasıl yapılacağını göstermektedir.
 
 ```cpp
 // compile with: /EHsc /W4 /MTd
@@ -143,51 +143,51 @@ int main()
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[checked_array_iterator](#checked_array_iterator)|Temel bir yineleyiciden `checked_array_iterator` varsayılan `checked_array_iterator` veya bir oluşturur.|
+|[Checked_array_iterator](#checked_array_iterator)|Varsayılan `checked_array_iterator` veya altta `checked_array_iterator` yatan bir yineleyiciden bir oluşturma.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[difference_type](#difference_type)|Aynı kapsayıcı içindeki öğelere başvuran iki `checked_array_iterator`s arasındaki farkı sağlayan bir tür.|
-|[çağrısı](#pointer)|Tarafından bahsedilen bir öğeye işaretçi sağlayan bir tür `checked_array_iterator`.|
-|[Başvuru](#reference)|Tarafından bahsedilen bir öğeye başvuru sağlayan bir tür `checked_array_iterator`.|
+|[difference_type](#difference_type)|Aynı kapsayıcıiçindeki elemanlara `checked_array_iterator`atıfta bulunan iki s arasındaki farkı sağlayan bir tür.|
+|[pointer](#pointer)|Bir . tarafından adreslenen bir öğeiçin `checked_array_iterator`işaretçi sağlayan bir tür|
+|[Başvuru](#reference)|Bir . tarafından adreslenen bir öğeye `checked_array_iterator`başvuru sağlayan bir tür|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="member-functions"></a>Üye işlevler
 
-|Üye işlevi|Açıklama|
+|Üye fonksiyonu|Açıklama|
 |-|-|
-|[base](#base)|Temel yineleyiciyi öğesinden `checked_array_iterator`kurtarır.|
+|[base](#base)|Altta yatan yineleyiciyi kurtarır. `checked_array_iterator`|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator==](#op_eq_eq)|Eşitlik için `checked_array_iterator`iki s 'yi sınar.|
-|[operator!=](#op_neq)|Eşitsizlik için `checked_array_iterator`iki s testi yapın.|
-|[işleç <](#op_lt)|İşlecin sol tarafındaki `checked_array_iterator` ' ın sağ taraftaki değerinden küçük `checked_array_iterator` olup olmadığını sınar.|
-|[işleç >](#op_gt)|İşlecin sol tarafındaki `checked_array_iterator` ' ın sağ taraftan daha büyük `checked_array_iterator` olup olmadığını sınar.|
-|[işleç < =](#op_lt_eq)|İşlecin sol tarafındaki `checked_array_iterator` işlecinin sağ tarafta küçük veya ona eşit `checked_array_iterator` olup olmadığını test eder.|
-|[operator>=](#op_gt_eq)|İşlecin sol tarafındaki `checked_array_iterator` işlecinin sağ taraftan daha büyük veya ona eşit `checked_array_iterator` olup olmadığını sınar.|
-|[işlecinde](#op_star)|`checked_array_iterator` Adreslerin bulunduğu öğeyi döndürür.|
-|[operator->](#op_arrow)|Tarafından belirtilen öğeye bir işaretçi döndürür `checked_array_iterator`.|
-|[işleç + +](#op_add_add)|`checked_array_iterator` Öğesini bir sonraki öğeye artırır.|
-|[işleç--](#operator--)|Önceki öğeye kadar azaltır. `checked_array_iterator`|
-|[operator+=](#op_add_eq)|Öğesine belirtilen bir sapmayı ekler `checked_array_iterator`.|
-|[işleç +](#op_add)|Bir yineleyici için bir konum ekler ve yeni bir konum `checked_array_iterator` konumundaki eklenen öğeyi yeni adreslemeyi döndürür.|
-|[işleç-=](#operator-_eq)|Belirtilen bir `checked_array_iterator`sapmayı azaltır.|
-|[işlecinde](#operator-)|Bir yineleyiciden bir sapmayı azaltır ve yeni bir konum `checked_array_iterator` konumundaki ekli öğenin yeni adreslemesini döndürür.|
-|[işlecinde&#91;&#93;](#op_at)|Belirtilen sayıda konum tarafından bahsedilen öğeden bir `checked_array_iterator` öğe kaydırmasına yönelik bir başvuru döndürür.|
+|[işleç==](#op_eq_eq)|Eşitlik `checked_array_iterator`için iki s test eder.|
+|[işleç!=](#op_neq)|Eşitsizlik `checked_array_iterator`için iki s test eder.|
+|[operatör<](#op_lt)|Operatörün `checked_array_iterator` sol tarafındakinin sağ taraftakinden `checked_array_iterator` daha az olup olmadığını test edin.|
+|[operatör>](#op_gt)|Operatörün `checked_array_iterator` sol tarafındakinin sağ taraftakinden `checked_array_iterator` büyük olup olmadığını test edin.|
+|[operatör<=](#op_lt_eq)|Operatörün `checked_array_iterator` sol tarafındaki nin sağ taraftakinden daha `checked_array_iterator` az veya eşit olup olmadığını test edin.|
+|[operatör>=](#op_gt_eq)|İşleticinin sol tarafındaki nin sağ taraftakinden `checked_array_iterator` büyük veya eşit olup olmadığını `checked_array_iterator` test edin.|
+|[işleç*](#op_star)|Bir `checked_array_iterator` adrese ele alan öğeyi döndürür.|
+|[operatör->](#op_arrow)|Bir işaretçiyi ' tarafından `checked_array_iterator`adreslenen öğeye döndürür.|
+|[işleç++](#op_add_add)|Bir sonraki `checked_array_iterator` öğeye artışlar.|
+|[işleç-](#operator--)|Önceki öğeye `checked_array_iterator` doğru kararnameler.|
+|[işleç+=](#op_add_eq)|Bir `checked_array_iterator`' ye belirli bir ofset ekler|
+|[işleç+](#op_add)|Bir yineleyiciye bir ofset ekler `checked_array_iterator` ve yeni ofset konumunda eklenen öğeyi ele döndürür.|
+|[işleç-=](#operator-_eq)|Belirli bir mahsup' `checked_array_iterator`dan bir mahsup eder.|
+|[işleç-](#operator-)|Bir yineleyiciden bir mahsup verir ve eklenen `checked_array_iterator` öğeyi yeni ofset konumunda döndürür.|
+|[operatör&#91;&#93;](#op_at)|Belirli sayıda pozisyon tarafından `checked_array_iterator` ele alınan öğeden bir eleman mahsup başvurusu verir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<Yineleyici >
+**Üstbilgi:** \<yineleyici>
 
 **Ad alanı:** stdext
 
-## <a name="base"></a>checked_array_iterator:: Base
+## <a name="checked_array_iteratorbase"></a><a name="base"></a>checked_array_iterator::taban
 
-Temel yineleyiciyi öğesinden `checked_array_iterator`kurtarır.
+Altta yatan yineleyiciyi kurtarır. `checked_array_iterator`
 
 ```cpp
 _Iterator base() const;
@@ -195,7 +195,7 @@ _Iterator base() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -228,9 +228,9 @@ The iterator underlying rpos is bpos & it points to: 1.
 */
 ```
 
-## <a name="checked_array_iterator"></a>checked_array_iterator::checked_array_iterator
+## <a name="checked_array_iteratorchecked_array_iterator"></a><a name="checked_array_iterator"></a>checked_array_iterator:checked_array_iterator
 
-Temel bir yineleyiciden `checked_array _iterator` varsayılan `checked_array_iterator` veya bir oluşturur.
+Varsayılan `checked_array_iterator` veya altta `checked_array _iterator` yatan bir yineleyiciden bir oluşturma.
 
 ```cpp
 checked_array_iterator();
@@ -243,18 +243,18 @@ checked_array_iterator(
 
 ### <a name="parameters"></a>Parametreler
 
-*kaydetmeye*\
-Dizi işaretçisi.
+*Ptr*\
+Dizi için bir işaretçi.
 
-*boyutla*\
+*Boyutu*\
 Dizinin boyutu.
 
-*indeks*\
-Seçim Yineleyiciyi başlatmak için dizideki bir öğe.  Varsayılan olarak, Yineleyici dizideki ilk öğe için başlatılır.
+*Dizin*\
+(İsteğe bağlı) Yinelemeyi başlatmaya yönelik dizideki bir öğe.  Varsayılan olarak, yineleyici dizideki ilk öğeye başolarak başlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -292,9 +292,9 @@ int main() {
 */
 ```
 
-## <a name="difference_type"></a>checked_array_iterator::d ifference_type
+## <a name="checked_array_iteratordifference_type"></a><a name="difference_type"></a>checked_array_iterator::difference_type
 
-Aynı kapsayıcı içindeki öğelere başvuran iki `checked_array_iterator`s arasındaki farkı sağlayan bir tür.
+Aynı kapsayıcıiçindeki elemanlara `checked_array_iterator`atıfta bulunan iki s arasındaki farkı sağlayan bir tür.
 
 ```cpp
 typedef typename iterator_traits<_Iterator>::difference_type difference_type;
@@ -302,15 +302,15 @@ typedef typename iterator_traits<_Iterator>::difference_type difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`checked_array_iterator` Fark türü yineleyici fark türüyle aynıdır.
+`checked_array_iterator` Fark türü, yineleyici farkı türüyle aynıdır.
 
-Kod örneği için bkz. [checked_array_iterator:: operator []](#op_at) .
+Bkz. [checked_array_iterator::operatör[]](#op_at) kod örneği için.
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
-## <a name="op_eq_eq"></a>checked_array_iterator:: operator = =
+## <a name="checked_array_iteratoroperator"></a><a name="op_eq_eq"></a>checked_array_iterator::operator==
 
-Eşitlik için `checked_array_iterator`iki s 'yi sınar.
+Eşitlik `checked_array_iterator`için iki s test eder.
 
 ```cpp
 bool operator==(const checked_array_iterator<_Iterator>& right) const;
@@ -318,12 +318,12 @@ bool operator==(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-`checked_array_iterator` Eşitlik için denetlenecek.
+*Doğru*\
+Eşitliği `checked_array_iterator` kontrol etmek için hangi karşı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -364,9 +364,9 @@ checked_array_iterators are not equal
 */
 ```
 
-## <a name="op_neq"></a>checked_array_iterator:: operator! =
+## <a name="checked_array_iteratoroperator"></a><a name="op_neq"></a>checked_array_iterator::operator!=
 
-Eşitsizlik için `checked_array_iterator`iki s testi yapın.
+Eşitsizlik `checked_array_iterator`için iki s test eder.
 
 ```cpp
 bool operator!=(const checked_array_iterator<_Iterator>& right) const;
@@ -374,12 +374,12 @@ bool operator!=(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-`checked_array_iterator` Eşitsizlik için denetlenecek.
+*Doğru*\
+Eşitsizliği `checked_array_iterator` kontrol etmek için hangi karşı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -420,9 +420,9 @@ checked_array_iterators are not equal
 */
 ```
 
-## <a name="op_lt"></a>checked_array_iterator:: işleci&lt;
+## <a name="checked_array_iteratoroperatorlt"></a><a name="op_lt"></a>checked_array_iterator::operatör&lt;
 
-İşlecin sol tarafındaki `checked_array_iterator` ' ın sağ taraftaki değerinden küçük `checked_array_iterator` olup olmadığını sınar.
+Operatörün `checked_array_iterator` sol tarafındakinin sağ taraftakinden `checked_array_iterator` daha az olup olmadığını test edin.
 
 ```cpp
 bool operator<(const checked_array_iterator<_Iterator>& right) const;
@@ -430,12 +430,12 @@ bool operator<(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-`checked_array_iterator` Eşitsizlik için denetlenecek.
+*Doğru*\
+Eşitsizliği `checked_array_iterator` kontrol etmek için hangi karşı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -476,9 +476,9 @@ checked_output_iterator2 is less than checked_output_iterator
 */
 ```
 
-## <a name="op_gt"></a>checked_array_iterator:: işleci&gt;
+## <a name="checked_array_iteratoroperatorgt"></a><a name="op_gt"></a>checked_array_iterator::operatör&gt;
 
-İşlecin sol tarafındaki `checked_array_iterator` ' ın sağ taraftan daha büyük `checked_array_iterator` olup olmadığını sınar.
+Operatörün `checked_array_iterator` sol tarafındakinin sağ taraftakinden `checked_array_iterator` büyük olup olmadığını test edin.
 
 ```cpp
 bool operator>(const checked_array_iterator<_Iterator>& right) const;
@@ -486,18 +486,18 @@ bool operator>(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-`checked_array_iterator` Karşılaştırılacak.
+*Doğru*\
+Karşıkarşılaştırmak `checked_array_iterator` için.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kod örneği için bkz. [checked_array_iterator:: operator&lt; ](#op_lt) .
+Bkz. [checked_array_iterator::kod&lt; ](#op_lt) örneği için işleç.
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
-## <a name="op_lt_eq"></a>checked_array_iterator:: işleci&lt;=
+## <a name="checked_array_iteratoroperatorlt"></a><a name="op_lt_eq"></a>checked_array_iterator::operatör&lt;=
 
-İşlecin sol tarafındaki `checked_array_iterator` işlecinin sağ tarafta küçük veya ona eşit `checked_array_iterator` olup olmadığını test eder.
+Operatörün `checked_array_iterator` sol tarafındaki nin sağ taraftakinden daha `checked_array_iterator` az veya eşit olup olmadığını test edin.
 
 ```cpp
 bool operator<=(const checked_array_iterator<_Iterator>& right) const;
@@ -505,18 +505,18 @@ bool operator<=(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-`checked_array_iterator` Karşılaştırılacak.
+*Doğru*\
+Karşıkarşılaştırmak `checked_array_iterator` için.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kod örneği için bkz. [checked_array_iterator:: operator&gt; = ](#op_gt_eq) .
+Bkz. [checked_array_iterator::kod&gt; ](#op_gt_eq) örneği için işleç.
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
-## <a name="op_gt_eq"></a>checked_array_iterator:: işleci&gt;=
+## <a name="checked_array_iteratoroperatorgt"></a><a name="op_gt_eq"></a>checked_array_iterator::operatör&gt;=
 
-İşlecin sol tarafındaki `checked_array_iterator` işlecinin sağ taraftan daha büyük veya ona eşit `checked_array_iterator` olup olmadığını sınar.
+İşleticinin sol tarafındaki nin sağ taraftakinden `checked_array_iterator` büyük veya eşit olup olmadığını `checked_array_iterator` test edin.
 
 ```cpp
 bool operator>=(const checked_array_iterator<_Iterator>& right) const;
@@ -524,12 +524,12 @@ bool operator>=(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-`checked_array_iterator` Karşılaştırılacak.
+*Doğru*\
+Karşıkarşılaştırmak `checked_array_iterator` için.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -570,9 +570,9 @@ checked_output_iterator2 is less than checked_output_iterator
 */
 ```
 
-## <a name="op_star"></a>checked_array_iterator:: operator *
+## <a name="checked_array_iteratoroperator"></a><a name="op_star"></a>checked_array_iterator::operatör*
 
-`checked_array_iterator` Adreslerin bulunduğu öğeyi döndürür.
+Bir `checked_array_iterator` adrese ele alan öğeyi döndürür.
 
 ```cpp
 reference operator*() const;
@@ -580,11 +580,11 @@ reference operator*() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarafından belirtilen öğesinin değeri `checked_array_iterator`.
+Tarafından ele verilen öğenin `checked_array_iterator`değeri .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -631,9 +631,9 @@ c[0].first = 10
 */
 ```
 
-## <a name="op_arrow"></a>checked_array_iterator:: operator-&gt;
+## <a name="checked_array_iteratoroperator-gt"></a><a name="op_arrow"></a>checked_array_iterator::operatör-&gt;
 
-Tarafından belirtilen öğeye bir işaretçi döndürür `checked_array_iterator`.
+Bir işaretçiyi ' tarafından `checked_array_iterator`adreslenen öğeye döndürür.
 
 ```cpp
 pointer operator->() const;
@@ -641,17 +641,17 @@ pointer operator->() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarafından bahsedilen öğe için bir işaretçi `checked_array_iterator`.
+'nin adreslediği `checked_array_iterator`öğenin işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kod örneği için bkz. [checked_array_iterator::p oınter](#pointer) .
+Bkz. [checked_array_iterator::pkod](#pointer) örneği için ointer.
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
-## <a name="op_add_add"></a>checked_array_iterator:: operator + +
+## <a name="checked_array_iteratoroperator"></a><a name="op_add_add"></a>checked_array_iterator::operator++
 
-`checked_array_iterator` Öğesini bir sonraki öğeye artırır.
+Bir sonraki `checked_array_iterator` öğeye artışlar.
 
 ```cpp
 checked_array_iterator& operator++();
@@ -661,11 +661,11 @@ checked_array_iterator<_Iterator> operator++(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk operatör, ön arttırılan `checked_array_iterator` ve ikincisi, postıncrement işleci, artın `checked_array_iterator`bir kopyasını döndürür.
+İlk işleç preincremented `checked_array_iterator` döndürür ve ikinci, postincrement işleci, artışlı `checked_array_iterator`bir kopyasını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -697,9 +697,9 @@ int main() {
 */
 ```
 
-## <a name="operator--"></a>checked_array_iterator:: operator--
+## <a name="checked_array_iteratoroperator--"></a><a name="operator--"></a>checked_array_iterator::operatör--
 
-Önceki öğeye kadar azaltır. `checked_array_iterator`
+Önceki öğeye `checked_array_iterator` doğru kararnameler.
 
 ```cpp
 checked_array_iterator<_Iterator>& operator--();
@@ -709,11 +709,11 @@ checked_array_iterator<_Iterator> operator--(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk operatör, predecremented `checked_array_iterator` döndürür ve ikinci olarak, postazaltma işleci, `checked_array_iterator`azaltma işlevinin bir kopyasını döndürür.
+İlk işleç predecremented `checked_array_iterator` döndürür ve ikinci, postdecrement işleci, kararnamenin `checked_array_iterator`bir kopyasını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -745,9 +745,9 @@ int main() {
 */
 ```
 
-## <a name="op_add_eq"></a>checked_array_iterator:: operator + =
+## <a name="checked_array_iteratoroperator"></a><a name="op_add_eq"></a>checked_array_iterator::operator+=
 
-Öğesine belirtilen bir sapmayı ekler `checked_array_iterator`.
+Bir `checked_array_iterator`' ye belirli bir ofset ekler
 
 ```cpp
 checked_array_iterator<_Iterator>& operator+=(difference_type _Off);
@@ -755,16 +755,16 @@ checked_array_iterator<_Iterator>& operator+=(difference_type _Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Kapatma*\
-Yineleyicinin artılacağı fark.
+*_off*\
+Yinelemeyi artımlı ofset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarafından bahsedilen öğesine bir başvuru `checked_array_iterator`.
+`checked_array_iterator`Tarafından ele verilen elemana bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -793,9 +793,9 @@ int main() {
 */
 ```
 
-## <a name="op_add"></a>checked_array_iterator:: operator +
+## <a name="checked_array_iteratoroperator"></a><a name="op_add"></a>checked_array_iterator::operatör+
 
-Bir yineleyici için bir konum ekler ve yeni bir konum `checked_array_iterator` konumundaki eklenen öğeyi yeni adreslemeyi döndürür.
+Bir yineleyiciye bir ofset ekler `checked_array_iterator` ve yeni ofset konumunda eklenen öğeyi ele döndürür.
 
 ```cpp
 checked_array_iterator<_Iterator> operator+(difference_type _Off) const;
@@ -803,16 +803,16 @@ checked_array_iterator<_Iterator> operator+(difference_type _Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Kapatma*\
-Öğesine eklenecek olan Aralık `checked_array_iterator`.
+*_off*\
+Eklenecek `checked_array_iterator`mahsup.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `checked_array_iterator` adres boşluğu öğesi.
+Ofset öğesi `checked_array_iterator` ele alma.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -841,9 +841,9 @@ int main() {
 */
 ```
 
-## <a name="operator-_eq"></a>checked_array_iterator:: operator-=
+## <a name="checked_array_iteratoroperator-"></a><a name="operator-_eq"></a>checked_array_iterator::operator-=
 
-Belirtilen bir `checked_array_iterator`sapmayı azaltır.
+Belirli bir mahsup' `checked_array_iterator`dan bir mahsup eder.
 
 ```cpp
 checked_array_iterator<_Iterator>& operator-=(difference_type _Off);
@@ -851,16 +851,16 @@ checked_array_iterator<_Iterator>& operator-=(difference_type _Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Kapatma*\
-Yineleyicinin artılacağı fark.
+*_off*\
+Yinelemeyi artımlı ofset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarafından bahsedilen öğesine bir başvuru `checked_array_iterator`.
+`checked_array_iterator`Tarafından ele verilen elemana bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -890,9 +890,9 @@ int main() {
 */
 ```
 
-## <a name="operator-"></a>checked_array_iterator:: operator-
+## <a name="checked_array_iteratoroperator-"></a><a name="operator-"></a>checked_array_iterator::operatör-
 
-Bir yineleyiciden bir sapmayı azaltır ve yeni bir konum `checked_array_iterator` konumundaki ekli öğenin yeni adreslemesini döndürür.
+Bir yineleyiciden bir mahsup verir ve eklenen `checked_array_iterator` öğeyi yeni ofset konumunda döndürür.
 
 ```cpp
 checked_array_iterator<_Iterator> operator-(difference_type _Off) const;
@@ -902,20 +902,20 @@ difference_type operator-(const checked_array_iterator& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Kapatma*\
-Öğesinden azaltılanacak olan `checked_array_iterator`Aralık.
+*_off*\
+Mahsup' dan `checked_array_iterator`çıkarılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `checked_array_iterator` adres boşluğu öğesi.
+Ofset öğesi `checked_array_iterator` ele alma.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
-## <a name="op_at"></a>checked_array_iterator:: operator []
+## <a name="checked_array_iteratoroperator"></a><a name="op_at"></a>checked_array_iterator::operatör[]
 
-Belirtilen sayıda konum tarafından bahsedilen öğeden bir `checked_array_iterator` öğe kaydırmasına yönelik bir başvuru döndürür.
+Belirli sayıda pozisyon tarafından `checked_array_iterator` ele alınan öğeden bir eleman mahsup başvurusu verir.
 
 ```cpp
 reference operator[](difference_type _Off) const;
@@ -923,16 +923,16 @@ reference operator[](difference_type _Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Kapatma*\
-`checked_array_iterator` Adresten gelen fark.
+*_off*\
+`checked_array_iterator` Adresten mahsup.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe kaydırmasına başvuru.
+Öğe ofset için başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ### <a name="example"></a>Örnek
 
@@ -963,9 +963,9 @@ int main() {
 */
 ```
 
-## <a name="pointer"></a>checked_array_iterator::p oınter
+## <a name="checked_array_iteratorpointer"></a><a name="pointer"></a>checked_array_iterator::pointer
 
-Tarafından bahsedilen bir öğeye işaretçi sağlayan bir tür `checked_array_iterator`.
+Bir . tarafından adreslenen bir öğeiçin `checked_array_iterator`işaretçi sağlayan bir tür
 
 ```cpp
 typedef typename iterator_traits<_Iterator>::pointer pointer;
@@ -973,13 +973,13 @@ typedef typename iterator_traits<_Iterator>::pointer pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kod örneği için bkz. [checked_array_iterator:: operator *](#op_star) .
+Kod örneği için [checked_array_iterator::operator*](#op_star) adresine bakın.
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
-## <a name="reference"></a>checked_array_iterator:: Reference
+## <a name="checked_array_iteratorreference"></a><a name="reference"></a>checked_array_iterator::başvuru
 
-Tarafından bahsedilen bir öğeye başvuru sağlayan bir tür `checked_array_iterator`.
+Bir . tarafından adreslenen bir öğeye `checked_array_iterator`başvuru sağlayan bir tür
 
 ```cpp
 typedef typename iterator_traits<_Iterator>::reference reference;
@@ -987,11 +987,11 @@ typedef typename iterator_traits<_Iterator>::reference reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kod örneği için bkz. [checked_array_iterator:: operator []](#op_at) .
+Bkz. [checked_array_iterator::operatör[]](#op_at) kod örneği için.
 
-Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Daha fazla bilgi için [bkz.](../standard-library/checked-iterators.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Yineleyici >](../standard-library/iterator.md)\
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
+[\<iterator>](../standard-library/iterator.md)\
+[C++ Standart Kütüphane Başvurusu](../standard-library/cpp-standard-library-reference.md)

@@ -1,8 +1,9 @@
 ---
 title: _write
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _write
+- _o__write
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -26,16 +28,16 @@ helpviewer_keywords:
 - write function
 - files [C++], writing to
 ms.assetid: 7b868c33-766f-4e1a-95a7-e8d25f0604c4
-ms.openlocfilehash: 5eaee64c1bf6ad4b4d59c3a7b1a1434741e74454
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+ms.openlocfilehash: a616df570d266c335337d897da59a2a0ec69b40e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821798"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367388"
 ---
 # <a name="_write"></a>_write
 
-Verileri bir dosyaya yazar.
+Bir dosyaya veri yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,38 +51,40 @@ int _write(
 
 ### <a name="parameters"></a>Parametreler
 
-*FD*<br/>
-Verilerin yazıldığı dosyanın dosya tanımlayıcısı.
+*Fd*<br/>
+Verilerin yazıldığı dosya tanımlayıcısı.
 
-*arabelleğin*<br/>
+*Arabellek*<br/>
 Yazılacak veriler.
 
-*biriktirme*<br/>
+*Sayısı*<br/>
 Bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa **_write** yazılan bayt sayısını döndürür. Diskte kalan gerçek alan, işlevin diske yazmaya çalıştığı arabelleğin boyutundan küçükse, **_write** başarısız olur ve arabelleğin herhangi bir içeriğini diske temizlemez. -1 ' in dönüş değeri bir hatayı gösterir. Geçersiz parametreler geçirilmemişse, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev-1 döndürür ve **errno** üç değerden birine ayarlanır: **EBADF**, bu, dosya tanımlayıcısının geçersiz olduğu veya dosyanın yazmak için açılmadığı anlamına gelir; **Enospc**, bu, cihazda işlem için yeterli alan olmadığı anlamına gelir; ya da **EINVAL**, bu, *arabelleğin* boş bir işaretçi olduğu veya Unicode modundaki bir dosyaya yazılması için tek bayt *sayısının* geçirildiği anlamına gelir.
+Başarılı olursa, **_write** yazılan bayt sayısını döndürür. Diskte kalan gerçek alan arabelleğe boyutundan küçükse, işlev diske yazmaya çalışıyorsa, **_write** başarısız olur ve arabellin içindekileri diske yıkamaz. -1'in geri dönüş değeri bir hatayı gösterir. Geçersiz parametreler geçirilirse, bu işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmedevam etmesine izin verilirse, işlev -1 döndürür ve **errno** üç değerden birine ayarlanır: **EBADF**, dosya tanımlayıcısı geçersiz veya dosya yazmak için açılmaz anlamına gelir; **ENOSPC**, bu işlem için cihazda yeterli alan kalmadığını anlamına gelir; veya **EINVAL**, *arabellek* null işaretçi si veya bayt tek *bir sayı* Unicode modunda bir dosyaya yazılacak geçirilir anlamına gelir.
 
-Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer iade kodları hakkında daha fazla bilgi için [errno, _doserrno, _sys_errlist ve _sys_nerr'a](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
 
-Dosya metin modunda açılırsa, her satır besleme karakteri çıkışdaki bir satır başı satır besleme çiftiyle değiştirilmiştir. Değişiklik, dönüş değerini etkilemez.
+Dosya metin modunda açılırsa, her satır besleme karakteri çıktıdaki bir satır satır besleme çiftiyle değiştirilir. Değiştirme iade değerini etkilemez.
 
-Dosya Unicode çeviri modunda açıldığında — Örneğin, *fd* **_open** veya **_sopen** kullanılarak açılırsa ve **_O_WTEXT**içeren bir mod parametresi, **_O_U16TEXT**veya **_O_U8TEXT**ya da **FOPEN** kullanılarak açıldıysa, **CCS = UNICODE**, **CCS = utf-16LE**veya **CCS = UTF-8**içeren bir mod parametresi veya mod, **_setmode**kullanılarak bir Unicode çeviri moduna değiştiyse,*arabellek* bir işaretçi olarak yorumlanır **UTF-16** verileri içeren **wchar_t** dizisi. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
+Dosya Unicode çeviri modunda açıldığında—örneğin, *fD* **_open** veya **_sopen** ve **_O_WTEXT**, **_O_U16TEXT**veya **_O_U8TEXT**içeren bir mod parametresi kullanılarak açılırsa veya **fopen** ve **ccs=UNICODE**, **ccs=UTF-16LE**veya **ccs=UTF-8**içeren bir mod parametresi kullanılarak açılırsa veya mod **_setmode**kullanılarak Unicode çeviri moduna değiştirilirse —*buffer* **UTF 16-veri** içeren bir **wchar_t** diziiçin işaretçi olarak yorumlanır. Bu modda tek sayıda bayt yazma girişimi parametre doğrulama hatasına neden olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Write** işlevi *arabellekteki* *sayı* baytlarını *FD*ile ilişkili dosyaya yazar. Yazma işlemi, belirtilen dosyayla ilişkili dosya işaretçisinin (varsa) geçerli konumunda başlar. Dosya ekleme için açıksa, işlem dosyanın geçerli ucunda başlar. Yazma işleminden sonra, dosya işaretçisi yazılan bayt sayısıyla artar.
+**_write** işlevi *fd*ile ilişkili dosyaya *arabellekten* *sayma* baytları yazar. Yazma işlemi, verilen dosyayla ilişkili dosya işaretçisinin (varsa) geçerli konumunda başlar. Dosya ek için açıksa, işlem dosyanın geçerli ucundan başlar. Yazma işleminden sonra, dosya işaretçisi yazılan bayt sayısına göre artırılır.
 
-Metin modunda açılan dosyalara yazarken **_write** , bir CTRL + Z karakterini dosyanın mantıksal sonu olarak değerlendirir. Bir cihaza yazarken **_write** , ARABELLEKTEKI bir CTRL + Z karakterini çıkış Sonlandırıcı olarak değerlendirir.
+Metin modunda açılan dosyalara yazarken, **_write** CTRL+Z karakterini dosyanın mantıksal sonu olarak ele verir. Bir aygıta **yazarken, _write** arabellekteki CTRL+Z karakterini çıktı sonlandırıcısı olarak ele alır.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_write**|\<IO. h >|
+|**_write**|\<io.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -142,7 +146,7 @@ Wrote 36 bytes to file.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Alt düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
+[Düşük Seviyeli G/Ç](../../c-runtime-library/low-level-i-o.md)<br/>
 [fwrite](fwrite.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>
 [_read](read.md)<br/>

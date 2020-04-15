@@ -5,16 +5,16 @@ f1_keywords:
 - functional/std::boyer_moore_horspool_searcher
 helpviewer_keywords:
 - std::boyer_moore_horspool_searcher [C++]
-ms.openlocfilehash: c7d24fee4a47fc588b00e527594682f1c4aadf76
-ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
+ms.openlocfilehash: 4d404b414ad632e02be5f4e9fad0e22cefb86ce2
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957168"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366786"
 ---
 # <a name="boyer_moore_horspool_searcher-class"></a>boyer_moore_horspool_searcher sınıfı
 
-`boyer_moore_horspool_searcher` Sınıfı, nesne oluşturucusunda belirtilen bir diziyi aramak için Boyer-Moore-horspool algoritmasını kullanan bir işlev nesnesi türüdür. Arama, nesnenin işlev çağrısı işlecine belirtilen başka bir sıra içinde yapılır. Bu sınıf, [std:: Search](algorithm-functions.md#search)'ün aşırı yüklemelerinin birine bir parametre olarak geçirilir.
+Sınıf, `boyer_moore_horspool_searcher` nesnenin oluşturucusunda belirtilen bir sırayı aramak için Boyer-Moore-Horspool algoritmasını kullanan bir işlev nesnesi türüdür. Arama, nesnenin işlev çağrı işlecine sağlanan başka bir sıra içinde yapılır. Bu sınıf std aşırı yükleri birine bir parametre olarak [geçirilir::search](algorithm-functions.md#search).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,14 +42,14 @@ class boyer_moore_horspool_searcher
 
 | | |
 | - | - |
-| **Constructor** | |
+| **Oluşturucu** | |
 | [boyer_moore_horspool_searcher](#boyer-moore-horspool-searcher-constructor) | |
 | **İşleçler** | |
-| [operator()](#operator-call) | |
+| [işleç()](#operator-call) | |
 
-## <a name="boyer-moore-horspool-searcher-constructor"></a>boyer_moore_horspool_searcher Oluşturucusu
+## <a name="boyer_moore_horspool_searcher-constructor"></a><a name="boyer-moore-horspool-searcher-constructor"></a>boyer_moore_horspool_searcher yapıcı
 
-, Bir `boyer_moore_horspool_searcher` karma işlev nesnesi ve bir eşitlik koşulu aramak için diziyi kullanarak bir işlev nesnesi oluşturur.
+Aramak için `boyer_moore_horspool_searcher` sırayı, karma işlev nesnesini ve eşitlik yüklemini kullanarak bir işlev nesnesi oluşturuyor.
 
 ```cpp
 boyer_moore_horspool_searcher(
@@ -62,26 +62,26 @@ boyer_moore_horspool_searcher(
 ### <a name="parameters"></a>Parametreler
 
 *pat_first*\
-Arama yapılacak dizinin ilk öğesi.
+Aranacak dizinin ilk öğesi.
 
 *pat_last*\
 Aranacak dizinin sonu.
 
-*HF*\
-Dizi öğelerini karma hale almak için kullanılan çağrılabilir nesne.
+*Hf*\
+Sıra öğelerini karmalamak için kullanılan çağrılabilir bir nesne.
 
-*pred*\
-Dizi öğeleri için isteğe bağlı eşitlik karşılaştırma koşulu. Bir eşitlik karşılaştırma türü belirtilmemişse, varsayılan olur `std::equal_to`.
+*Pred*\
+Sıra öğeleri için isteğe bağlı eşitlik karşılaştırma yüklemi. Eşitlik karşılaştırma türü belirtilmemişse, varsayılan `std::equal_to`değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*BinaryPredicate*, *hash*veya *Randomaccessıterator* türlerinin kopya Oluşturucusu tarafından oluşturulan özel durumları ya da *BinaryPredicate* veya *hash*çağrı işlecini oluşturur.
+*BinaryPredicate,* *Hash*veya *RandomAccessIterator* türlerinin kopya oluşturucusu veya *BinaryPredicate* veya *Hash'ın*çağrı operatörü tarafından atılan herhangi bir özel durum atar.
 
-Bu sınıf C++ 17 ' de yenidir.
+Bu sınıf C++17'de yenidir.
 
-## <a name="operator-call"></a>operator ()
+## <a name="operator"></a><a name="operator-call"></a>işleç()
 
-İşlev nesnesinin Call işleci. Oluşturucuya belirtilen dizi için bağımsız `[first, last)` değişken sırası içinde arar.
+İşlev nesnesinin çağrı işleci. Oluşturucuya belirtilen `[first, last)` sırayı bağımsız değişken dizisi içinde arar.
 
 ```cpp
 template <class ForwardIterator2>   // C++17
@@ -92,21 +92,21 @@ pair<RandomAccessIterator2, RandomAccessIterator2> operator()(
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
-İçinde arama yapılacak dizinin ilk öğesi.
+*Ilk*\
+Dizinin içinde aramak için ilk öğesi.
 
-*soyadına*\
-İçinde arama yapılacak dizinin sonu.
+*Son*\
+İçinde aramak için sıranın sonu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arama deseninin `[pat_first, pat_last)` boş olması halinde döndürür `make_pair(first, first)`. Arama deseninin bulunamaması halinde döndürür `make_pair(last, last)`. Aksi takdirde, `[first, last)` *Pred* `[pat_first, pat_last)` değerine göre eşit olan bir dizinin başlangıcına ve sonuna kadar yineleyiciler çifti döndürür.
+Arama deseni `[pat_first, pat_last)` boşsa, döndürür. `make_pair(first, first)` Arama deseni bulunmazsa, döndürür. `make_pair(last, last)` Aksi takdirde, bir çift yineleyiciyi yüklem `[first, last)` `[pat_first, pat_last)` *pred'ine*göre eşit olan bir dizinin başına ve sonuna döndürür.
 
-Bu sınıf C++ 17 ' de yenidir.
+Bu sınıf C++17'de yenidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<işlevsel >](functional.md)\
-[algoritma işlevleri](algorithm-functions.md)\
+[\<fonksiyonel>](functional.md)\
+[algoritma fonksiyonları](algorithm-functions.md)\
 [boyer_moore_searcher sınıfı](boyer-moore-searcher-class.md)\
-[std:: arama](algorithm-functions.md#search)
+[std::arama](algorithm-functions.md#search)

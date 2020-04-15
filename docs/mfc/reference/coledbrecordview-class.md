@@ -1,5 +1,5 @@
 ---
-title: COleDBRecordView sınıfı
+title: COleDBRecordView Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleDBRecordView
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - COleDBRecordView [MFC], OnGetRowset
 - COleDBRecordView [MFC], OnMove
 ms.assetid: 98612427-c4c9-4760-b7e1-85b17448add9
-ms.openlocfilehash: 1b09599479010f87e396e6f576c9524651923f9f
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: de9c602cb747ee3d4449df479530e55ce907cb8a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341712"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366100"
 ---
-# <a name="coledbrecordview-class"></a>COleDBRecordView sınıfı
+# <a name="coledbrecordview-class"></a>COleDBRecordView Sınıfı
 
 Denetimlerde veritabanı kayıtlarını görüntüleyen bir görünüm.
 
@@ -33,53 +33,53 @@ class COleDBRecordView : public CFormView
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[COleDBRecordView::COleDBRecordView](#coledbrecordview)|Oluşturur bir `COleDBRecordView` nesne.|
+|[COleDBRecordView::COleDBRecordView](#coledbrecordview)|Bir `COleDBRecordView` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[COleDBRecordView::OnGetRowset](#ongetrowset)|Standart bir HRESULT değerini döndürür.|
-|[COleDBRecordView::OnMove](#onmove)|Geçerli kayıt (olumsuz) veri kaynağında güncelleştirir ve sonra belirtilen kayıda taşır (sonraki, önceki, ilk veya son).|
+|[COleDBRecordView::OnGetRowset](#ongetrowset)|Standart bir HRESULT değeri verir.|
+|[COleDBRecordView::OnMove](#onmove)|Veri kaynağındaki geçerli kaydı (kirliyse) güncelleştirir ve ardından belirtilen kayda (sonraki, önceki, ilk veya son) taşınır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Doğrudan bağlı bir form görünümü görünümdür bir `CRowset` nesne. Görünüm iletişim şablon kaynağı oluşturulur ve alanlarını görüntüler `CRowset` iletişim şablonun denetimlerinde nesne. `COleDBRecordView` Nesne iletişim kutusu veri değişimi (DDX) kullanır ve gezinti işlevselliğini yerleşik `CRowset`, form üzerinde denetimleri ve alanları kümesi arasında veri taşıma işlemlerini otomatik hale getirmek için. `COleDBRecordView` Ayrıca taşımak için varsayılan bir uygulama sağlar, ilk İleri, önceki ya da son kaydını ve kayıtta şu anda Görünümü güncelleştirmek için bir arabirim.
+Görünüm, doğrudan bir nesneye `CRowset` bağlı bir form görünümüdür. Görünüm bir iletişim şablonu kaynağından oluşturulur ve `CRowset` iletişim şablonunun denetimlerinde nesnenin alanlarını görüntüler. Nesne, `COleDBRecordView` formdaki denetimler ile satır kümesinin alanları arasındaki `CRowset`veri hareketini otomatikleştirmek için yerleşik iletişim veri alışverişi (DDX) ve yerleşik gezinti işlevini kullanır. `COleDBRecordView`ayrıca, ilk, sonraki, önceki veya son kayda geçmek için varsayılan bir uygulama ve şu anda görünümde olan kaydı güncelleştirmek için bir arabirim sağlar.
 
-DDX işlevleri ile kullanabileceğiniz `COleDbRecordView` doğrudan veritabanı kayıt kümesinden veri almak ve bir iletişim kutusu denetiminde görüntüleme. Kullanmanız gereken `DDX_*` yöntemleri (gibi `DDX_Text`) değil `DDX_Field*` işlevleri (gibi `DDX_FieldText`) ile `COleDbRecordView`. `DDX_FieldText` ile çalışmaz `COleDbRecordView` çünkü `DDX_FieldText` ek bağımsız değişken türü `CRecordset*` (için `CRecordView`) veya `CDaoRecordset*` (için `CDaoRecordView`).
+DDX işlevlerini `COleDbRecordView` doğrudan veritabanı kayıt kümesinden veri almak ve iletişim denetiminde görüntülemek için kullanabilirsiniz. `DDX_*` `DDX_Text`Yöntemleri (gibi), `DDX_Field*` işlevleri (gibi) `DDX_FieldText`ile `COleDbRecordView`kullanmalısınız. `DDX_FieldText`türü `CRecordset*` (for) `CRecordView`veya `CDaoRecordset*` `CDaoRecordView`(for) ek bir argüman `COleDbRecordView` `DDX_FieldText` aldığından, birlikte çalışmaz.
 
 > [!NOTE]
->  OLE DB tüketici şablonu sınıfları yerine veri erişim nesneleri (DAO) sınıfları ile çalışıyorsanız, sınıf kullanmak [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) yerine. Daha fazla bilgi için bkz [genel bakış: Veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
+> OLE DB Tüketici Şablonu sınıfları yerine Veri Erişim Nesneleri (DAO) sınıflarıyla çalışıyorsanız, bunun yerine [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) sınıfını kullanın. Daha fazla bilgi için genel bakış makalesine [bakın: Veritabanı Programlama.](../../data/data-access-programming-mfc-atl.md)
 
-`COleDBRecordView` kullanıcının konumunu satır kümesindeki kayıt görünümü kullanıcı arabirimi güncelleştirebilmeniz izler. Kullanıcı her iki satır sonuna hareket ettirdiğinde kayıt görünümü kullanıcı arabirimi nesneleri devre dışı bırakır; menü öğeleri ya da araç çubuğu düğmeleri gibi — taşımak için aynı yönde başka.
+`COleDBRecordView`kayıt görünümünün kullanıcı arabirimini güncelleştirebilmeleri için kullanıcının rowset'teki konumunu izler. Kullanıcı rowset'in her iki ucuna da taşındığında, kayıt görünümü aynı yönde daha fazla hareket etmek için kullanıcı arabirimi nesnelerini (menü öğeleri veya araç çubuğu düğmeleri gibi) devre dışı kılabilir.
 
-Satır kümesi sınıfları hakkında daha fazla bilgi için bkz. [OLE DB Tüketici Şablonları kullanarak](../../data/oledb/ole-db-consumer-templates-cpp.md) makalesi.
+Rowset sınıfları hakkında daha fazla bilgi [için, OLE DB Tüketici Şablonlarını Kullanma makalesine](../../data/oledb/ole-db-consumer-templates-cpp.md) bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CView](../../mfc/reference/cview-class.md)
+[Cview](../../mfc/reference/cview-class.md)
 
-[CScrollView](../../mfc/reference/cscrollview-class.md)
+[Cscrollview](../../mfc/reference/cscrollview-class.md)
 
-[CFormView](../../mfc/reference/cformview-class.md)
+[Cformview](../../mfc/reference/cformview-class.md)
 
 `COleDBRecordView`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxoledb.h
+**Üstbilgi:** afxoledb.h
 
-##  <a name="coledbrecordview"></a>  COleDBRecordView::COleDBRecordView
+## <a name="coledbrecordviewcoledbrecordview"></a><a name="coledbrecordview"></a>COleDBRecordView::COleDBRecordView
 
-Oluşturur bir `COleDBRecordView` nesne.
+Bir `COleDBRecordView` nesne inşa eder.
 
 ```
 COleDBRecordView(LPCTSTR lpszTemplateName);
@@ -89,21 +89,21 @@ COleDBRecordView(UINT nIDTemplate);
 ### <a name="parameters"></a>Parametreler
 
 *lpszTemplateName*<br/>
-Bir iletişim şablonunu kaynak adı null ile sonlandırılmış bir dize içerir.
+İletişim şablonu kaynağının adı olan null-sonlandırılan bir dize içerir.
 
 *nIDTemplate*<br/>
-Bir iletişim şablonunu kaynak kimliği numarasını içerir.
+İletişim şablonu kaynağının kimlik numarasını içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir türde bir nesne oluşturduğunuzda, türetilen `COleDBRecordView`, Görünüm nesnesi oluşturup, görünüm temel iletişim kaynağı tanımlamak için oluşturucular birini çağırın. Kaynak adı (pass bağımsız değişkeni olarak bir dize oluşturucuya) veya (pass bağımsız değişkeni olarak bir işaretsiz tamsayı) Kimliğini tanımlayabilirsiniz.
+Türetilen bir tür bir nesne `COleDBRecordView`oluşturduğunuzda, görünüm nesnesi oluşturmak ve görünümün dayandığı iletişim kaynağını tanımlamak için oluşturuculardan birini çağırın. Kaynağı ada göre (bir dizeyi bağımsız değişken olarak oluşturucuya geçirin) veya kimliğiyle (bağımsız değişken olarak imzasız bir tamsayı geçirin) tanımlayabilirsiniz.
 
 > [!NOTE]
->  Türetilmiş sınıfınızın *gerekir* kendi Oluşturucu sağlayın. Oluşturucusunun içinde bir oluşturucu çağırmak `COleDBRecordView::COleDBRecordView`, kaynak adı veya kimliği bağımsız değişken olarak.
+> Türemiş sınıfınız kendi oluşturucusu *sağlamalıdır.* Oluşturucuolarak, `COleDBRecordView::COleDBRecordView`kaynak adı veya kimlik bir bağımsız değişken olarak, oluşturucu çağırın.
 
-##  <a name="ongetrowset"></a>  COleDBRecordView::OnGetRowset
+## <a name="coledbrecordviewongetrowset"></a><a name="ongetrowset"></a>COleDBRecordView::OnGetRowset
 
-İçin bir tanıtıcı döndürür **CRowset <>** kayıt görünümü ile ilişkili nesne.
+**CRowset<>** nesnesi için bir tanıtıcı döndürür.
 
 ```
 virtual CRowset<>* OnGetRowset() = 0;
@@ -111,24 +111,24 @@ virtual CRowset<>* OnGetRowset() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturmak veya bir satır kümesi nesnesi edinip bir tanıtıcı döndürmek için bu üye işlevini geçersiz kılmanız gerekir. Kayıt görünümü sınıfınıza ClassWizard ile bildirirseniz, sihirbaz sizin için varsayılan geçersiz kılma yazar. ClassWizard'ın varsayılan uygulaması varsa, kayıt görünümü'nde depolanan satır kümesi tanıtıcısını döndürür. Türünde bir satır kümesi nesnesi oluşturur, varsa çağrıları ve ClassWizard ile belirtilen kendi `Open` üye işlevi tabloyu veya sorguyu çalıştırmak için ve ardından nesne için bir tanıtıcı döndürür.
+Bir satır kümesi nesnesi oluşturmak veya elde etmek ve ona bir tanıtıcı döndürmek için bu üye işlevi geçersiz kılmanız gerekir. ClassWizard ile kayıt görünümü sınıfını bildirirseniz, sihirbaz sizin için varsayılan geçersiz kılma yazar. ClassWizard'ın varsayılan uygulaması varsa kayıt görünümünde depolanan satır kümesi tanıtıcısını döndürür. Değilse, ClassWizard ile belirttiğiniz türden bir satır kümesi nesnesi oluşturuyor ve tabloyu açmak veya sorguyu çalıştırmak için `Open` üye işlevini çağırır ve sonra nesneye bir tanıtıcı döndürür.
 
 > [!NOTE]
->  Önceki MFC 7.0 `OnGetRowset` işaretçisi döndürülen `CRowset`. Çağıran kod varsa `OnGetRowset`, dönüş türü şablonlaştırılmış sınıfa değiştirmeniz gerekir **CRowset <>**.
+> MFC 7.0'dan `OnGetRowset` önce, `CRowset`bir işaretçi . Çağıran kodunuz `OnGetRowset`varsa, iade türünü<>**crowset **sınıfıyla değiştirmeniz gerekir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDatabase#38](../../mfc/codesnippet/cpp/coledbrecordview-class_1.cpp)]
 
-Daha fazla bilgi ve örnekler için bkz [kayıt görünümleri: Kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md).
+Daha fazla bilgi ve örnekler için Kayıt Görünümleri makalesine [bakın: Kayıt Görünümü kullanma.](../../data/using-a-record-view-mfc-data-access.md)
 
-##  <a name="onmove"></a>  COleDBRecordView::OnMove
+## <a name="coledbrecordviewonmove"></a><a name="onmove"></a>COleDBRecordView::OnMove
 
-Satır kümesi ve görüntü farklı bir kaydı taşır denetimlerde kaydın alanlarını görüntüleyin.
+Satır kümesinde farklı bir kayda taşınır ve alanlarını kayıt görünümü denetimlerinde görüntüler.
 
 ```
 virtual BOOL OnMove(UINT nIDMoveCommand);
@@ -137,29 +137,29 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 ### <a name="parameters"></a>Parametreler
 
 *nIDMoveCommand*<br/>
-Aşağıdaki standart komut kimliği değerlerden biri:
+Aşağıdaki standart komut kimliği değerlerinden biri:
 
-- ID_RECORD_FIRST — Kayıt kümesi bulunan ilk kayda git.
+- ID_RECORD_FIRST — Kayıt setindeki ilk kayda geçin.
 
-- ID_RECORD_LAST — kaydı kayıt kümesinde son taşır.
+- ID_RECORD_LAST — Kayıt setindeki son kayda geçin.
 
-- ID_RECORD_NEXT — sonraki kayda kümesinde taşıyın.
+- ID_RECORD_NEXT — Kayıt setindeki bir sonraki kayda geçin.
 
-- ID_RECORD_PREV — önceki kayıt kümesinde taşıyın.
+- ID_RECORD_PREV — Kayıt setindeönceki kayda geçin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Taşıma başarılı olursa sıfır dışı; taşıma isteği reddedildi, aksi durumda 0.
+Hareket başarılı olduysa sıfırolmayan; aksi takdirde 0 taşıma isteği reddedildi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama uygun çağırır `Move` üye işlevinin `CRowset` kayıt görünümü ile ilişkili nesne.
+Varsayılan uygulama, kayıt `Move` görünümüyle `CRowset` ilişkili nesnenin uygun üye işlevini çağırır.
 
-Varsayılan olarak, `OnMove` geçerli kayıt veri kaynağı için kullanıcı kayıt görünümünde değişmişse güncelleştirir.
+Varsayılan olarak, kullanıcı kayıt görünümünde değiştirdiyse, `OnMove` veri kaynağındaki geçerli kaydı güncelleştirir.
 
-Uygulama Sihirbazı, bir menü kaynağı ile ilk kaydı son kayda sonraki kayıt ve önceki kayıt menü öğesi oluşturur. Yerleştirilebilir araç seçeneği seçerseniz, Uygulama Sihirbazı bir araç çubuğu düğmeleri için şu komutları karşılık gelen de oluşturur.
+Uygulama Sihirbazı, İlk Kayıt, Son Kayıt, Sonraki Kayıt ve Önceki Kayıt menü öğelerini içeren bir menü kaynağı oluşturur. Takılabilir Araç Çubuğu seçeneğini seçerseniz, Uygulama Sihirbazı da bu komutlara karşılık gelen düğmeleri içeren bir araç çubuğu oluşturur.
 
-Kümesinde son kaydını geçmiş taşırsanız, kayıt görünümü en son kaydını görüntülemek devam eder. Kayıt görünümü ilk kaydı geriye taşırsanız, ilk kaydı görüntülemek devam eder.
+Kayıt kümesindeki son kaydı geçerseniz, kayıt görünümü son kaydı görüntülemeye devam edin. İlk kaydın ötesine geçerseniz, kayıt görünümü ilk kaydı görüntülemeye devam edin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

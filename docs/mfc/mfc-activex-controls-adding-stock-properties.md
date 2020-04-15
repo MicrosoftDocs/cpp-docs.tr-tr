@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX denetimleri: Stok Özellikler ekleme'
+title: 'MFC ActiveX Denetimleri: Stok Özellikler Ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - BackColor property [MFC]
@@ -9,100 +9,100 @@ helpviewer_keywords:
 - foreground colors, ActiveX controls
 - foreground colors [MFC]
 ms.assetid: 8b98c8c5-5b69-4366-87bf-0e61e6668ecb
-ms.openlocfilehash: 940f61c9ce6ccb57843333582455e61c1f7ac73b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 16bdfddf0c028bc6a312767844b38c58c942d56e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62225349"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364655"
 ---
-# <a name="mfc-activex-controls-adding-stock-properties"></a>MFC ActiveX denetimleri: Stok Özellikler ekleme
+# <a name="mfc-activex-controls-adding-stock-properties"></a>MFC ActiveX Denetimleri: Stok Özellikler Ekleme
 
-Stok özellikleri içeren sınıfı tarafından zaten uygulanmış özel özelliklerinden farklı `COleControl`. `COleControl` Denetim için yaygın olarak kullanılan özellikleri desteklemek önceden tanımlanmış üye işlevleri içerir. Bazı ortak özellikler, denetimin açıklamalı alt yazı ve ön ve arka plan renkleri içerir. Diğer stok özellikleri hakkında daha fazla bilgi için bkz: [stok özellikleri Özellik Ekleme Sihirbazı'nı tarafından desteklenen](#_core_stock_properties_supported_by_classwizard) bu makalenin ilerleyen bölümlerinde. Gönderme eşleme girişleri için stok özellikleri her zaman DISP_STOCKPROP tarafından öneki.
+Stok özellikleri, sınıf `COleControl`tarafından zaten uygulanmış olması açısından özel özelliklerden farklıdır. `COleControl`denetim için ortak özellikleri destekleyen önceden tanımlanmış üye işlevleri içerir. Bazı yaygın özellikler denetimin başlığı ve ön plan ve arka plan renkleri içerir. Diğer stok özellikleri hakkında bilgi için, bu makalenin ilerleyen günlerinde [Özellik Ekle Sihirbazı tarafından desteklenen Stok Özellikleri'ne](#_core_stock_properties_supported_by_classwizard) bakın. Stok özellikleri için sevkiyat haritası girişleri her zaman DISP_STOCKPROP tarafından önceden belirlenmiştir.
 
-Bu makalede, Özellik Ekleme Sihirbazı'nı kullanarak bir ActiveX denetimine stok bir özellik (Bu durumda, resim yazısı) eklemeyi açıklar ve sonuçta elde edilen kod değişikliklerini açıklar. Konular şunlardır:
+Bu makalede, Özellik Ekle Sihirbazı'nı kullanarak ActiveX denetimine bir stok özelliğinin (bu durumda, Resim Yazısı) nasıl ekleyeceğiniz açıklanır ve ortaya çıkan kod değişikliklerini açıklar. Konu başlıkları şunlardır:
 
-- [Stok özelliği eklemek için Özellik Ekleme Sihirbazı'nı kullanma](#_core_using_classwizard_to_add_a_stock_property)
+- [Stok özelliği eklemek için Özellik Ekle Sihirbazı'nı kullanma](#_core_using_classwizard_to_add_a_stock_property)
 
-- [Stok özellikleri için özellik Sihirbazı değişiklikleri ekleyin](#_core_classwizard_changes_for_stock_properties)
+- [Stok özellikleri için Özellik Sihirbazı değişiklikleri ekleme](#_core_classwizard_changes_for_stock_properties)
 
-- [Özellik Ekleme Sihirbazı tarafından desteklenen stok özellikleri](#_core_stock_properties_supported_by_classwizard)
+- [Özellik Ekle Sihirbazı tarafından desteklenen stok özellikleri](#_core_stock_properties_supported_by_classwizard)
 
 - [Stok özellikleri ve bildirim](#_core_stock_properties_and_notification)
 
 - [Renk özellikleri](#_core_color_properties)
 
     > [!NOTE]
-    >  Visual Basic özel denetimleri, genellikle üst, sol, genişlik, yükseklik, hizalama, etiketi, adı, tabIndex, sekme durağı ve üst gibi özellikleri de vardır. ActiveX denetim kapsayıcıları, ancak bu denetim özellikleri uygulamak için sorumlu değildir ve bu nedenle ActiveX denetimlerini bu özellikleri desteklemesi değil.
+    >  Visual Basic özel denetimleri genellikle Üst, Sol, Genişlik, Yükseklik, Hizala, Etiket, Ad, Sekme Dizini, TabStop ve Üst öğe gibi özelliklere sahiptir. ActiveX denetim kapları, ancak, bu denetim özelliklerinin uygulanmasından sorumludur ve bu nedenle ActiveX denetimleri bu özellikleri desteklememelidir.
 
-##  <a name="_core_using_classwizard_to_add_a_stock_property"></a> Kullanarak stok özelliği eklemek için Özellik Ekleme Sihirbazı
+## <a name="using-the-add-property-wizard-to-add-a-stock-property"></a><a name="_core_using_classwizard_to_add_a_stock_property"></a>Stok Özelliği Eklemek Için Özellik Ekle Sihirbazı'nı Kullanma
 
-Stok Özellikler ekleme gerektirir çünkü özel özellikler ekleme değerinden daha az kod desteği özelliği tarafından otomatik olarak işlenir `COleControl`. Aşağıdaki yordam bir ActiveX denetim çerçevesi için resim yazısı özelliğini stok ekleme gösterir ve diğer stok özellikleri eklemek için de kullanılabilir. Seçili stok özellik başlığı ile değiştirin.
+Stok özellikleri eklemek, özel özellikler eklemekten daha az kod `COleControl`gerektirir, çünkü özellik için destek otomatik olarak . Aşağıdaki yordam, stok Başlığı özelliğinin ActiveX denetim çerçevesine eklenmesini gösterir ve diğer stok özelliklerini eklemek için de kullanılabilir. Seçili stok mülk adını Resim Yazısı ile değiştirin.
 
-#### <a name="to-add-the-stock-caption-property-using-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı'nı kullanarak stok resim yazısı özelliğini eklemek için
+#### <a name="to-add-the-stock-caption-property-using-the-add-property-wizard"></a>Özellik Ekle Sihirbazı'nı kullanarak stok Resim Yazısı özelliğini eklemek için
 
-1. Denetiminizin proje yükleyin.
+1. Denetiminizin projesini yükleyin.
 
-1. Sınıf Görünümü'nde denetim kitaplığı düğümünü genişletin.
+1. Sınıf Görünümü'nde, denetiminizin kitaplık düğümunu genişletin.
 
-1. Arabirim (ikinci düğüm kitaplığı düğümünün) denetlemek için kısayol menüsünü açmak için düğümü.
+1. Kısayol menüsünü açmak için denetiminiz için arabirim düğümüne (kitaplık düğümünün ikinci düğümü) sağ tıklayın.
 
-1. Kısayol menüsünden tıklayın **Ekle** ve ardından **Özellik Ekle**.
+1. Kısayol menüsünden **Ekle'yi** tıklatın ve ardından **Özellik Ekle'yi**tıklatın.
 
-   Bu açılır [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md).
+   Bu Özellik [Ekle Sihirbazı'nı](../ide/names-add-property-wizard.md)açar.
 
-1. İçinde **özellik adı** kutusunun **açıklamalı alt yazı**.
+1. Özellik **Adı** kutusunda **Resim Yazısı'nı**tıklatın.
 
 1. **Son**'a tıklayın.
 
-##  <a name="_core_classwizard_changes_for_stock_properties"></a> Stok özellikleri için özellik Sihirbazı değişiklikleri ekleyin
+## <a name="add-property-wizard-changes-for-stock-properties"></a><a name="_core_classwizard_changes_for_stock_properties"></a>Stok Özellikleri için Özellik Sihirbazı Değişiklikleri Ekleme
 
-Çünkü `COleControl` destekler stok özellikleri, Özellik Ekleme Sihirbazı'nı sınıf bildirimi içinde hiçbir şekilde değiştirmez; gönderme haritaya özelliği ekler. Özellik Ekleme Sihirbazı'nı uygulamasında bulunan denetim dağıtım eşlemesi aşağıdaki satırı ekler (. CPP) dosyası:
+Stok `COleControl` özelliklerini desteklediğinden, Özellik Ekle Sihirbazı sınıf bildirimini hiçbir şekilde değiştirmez; özelliği sevk haritasına ekler. Özellik Ekle Sihirbazı, uygulamada bulunan denetimin sevk haritasına aşağıdaki satırı ekler (. CPP) dosyası:
 
 [!code-cpp[NVC_MFC_AxUI#22](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-properties_1.cpp)]
 
-Denetiminizin arabirim açıklaması için aşağıdaki satırı eklenir (. IDL) dosyası:
+Aşağıdaki satır denetiminizin arabirim açıklamasına eklenir (. IDL) dosyası:
 
 [!code-cpp[NVC_MFC_AxUI#23](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-properties_2.idl)]
 
-Bu satırı resim yazısı özelliğini bir belirli kimlik atar. Özellik bağlanabilir ve veritabanından değerini değiştirmeden önce izin ister dikkat edin.
+Bu satır, Resim Yazısı özelliğine belirli bir kimlik atar. Özelliğin bağlanabilir olduğuna ve değeri değiştirmeden önce veritabanından izin isteyeceğine dikkat edin.
 
-Bu resim yazısı özelliğini denetiminiz kullanıcıları için kullanılabilmesini sağlar. Stok özellik değerini kullanmak için bir üye değişkeni veya üye işlevinin erişmek `COleControl` temel sınıfı. Bu üye değişkenleri ve üye işlevleri hakkında daha fazla bilgi için sonraki bölüme stok özellikleri Özellik Ekleme Sihirbazı'nı tarafından desteklenen bakın.
+Bu, Resim Yazısı özelliğini denetiminizdeki kullanıcılar tarafından kullanılabilir hale getirir. Bir stok özelliğinin değerini kullanmak için, taban sınıfın `COleControl` bir üye değişkenine veya üye işlevine erişin. Bu üye değişkenler ve üye işlevler hakkında daha fazla bilgi için, Özellik Ekle Sihirbazı tarafından desteklenen stok özellikleri sonraki bölüme bakın.
 
-##  <a name="_core_stock_properties_supported_by_classwizard"></a> Stok özellikleri tarafından desteklenen özellik Ekleme Sihirbazı
+## <a name="stock-properties-supported-by-the-add-property-wizard"></a><a name="_core_stock_properties_supported_by_classwizard"></a>Özellik Ekle Sihirbazı tarafından desteklenen Stok Özellikleri
 
-`COleControl` Sınıfı dokuz stok özellikleri sağlar. Özellik Ekleme Sihirbazı'nı kullanarak istediğiniz özellikleri ekleyebilirsiniz.
+Sınıf `COleControl` dokuz stok özelliği sağlar. Özellik Ekle Sihirbazı'nı kullanarak istediğiniz özellikleri ekleyebilirsiniz.
 
-|Özellik|Gönderme eşleme girişi|Değere erişmek nasıl|
+|Özellik|Sevkiyat haritası girişi|Değere nasıl erişilir?|
 |--------------|------------------------|-------------------------|
-|`Appearance`|DISP_STOCKPROP_APPEARANCE( )|Değer olarak erişilebilir `m_sAppearance`.|
-|`BackColor`|DISP_STOCKPROP_BACKCOLOR( )|Değer çağırarak erişilebilir `GetBackColor`.|
-|`BorderStyle`|DISP_STOCKPROP_BORDERSTYLE( )|Değer olarak erişilebilir `m_sBorderStyle`.|
-|`Caption`|DISP_STOCKPROP_CAPTION)|Değer çağırarak erişilebilir `InternalGetText`.|
-|`Enabled`|DISP_STOCKPROP_ENABLED)|Değer olarak erişilebilir `m_bEnabled`.|
-|`Font`|DISP_STOCKPROP_FONT( )|Makaleye göz atın [MFC ActiveX denetimleri: Yazı tiplerini kullanma](../mfc/mfc-activex-controls-using-fonts.md) kullanım için.|
-|`ForeColor`|DISP_STOCKPROP_FORECOLOR)|Değer çağırarak erişilebilir `GetForeColor`.|
-|`hWnd`|DISP_STOCKPROP_HWND)|Değer olarak erişilebilir `m_hWnd`.|
-|`Text`|DISP_STOCKPROP_TEXT)|Değer çağırarak erişilebilir `InternalGetText`. Bu özellik aynı olan `Caption`, özellik adı dışında.|
-|`ReadyState`|DISP_STOCKPROP_READYSTATE()|Değer olarak erişilebilir `m_lReadyState` veya `GetReadyState`|
+|`Appearance`|DISP_STOCKPROP_APPEARANCE ( )|Değer olarak `m_sAppearance`erişilebilir.|
+|`BackColor`|DISP_STOCKPROP_BACKCOLOR ( )|Arayarak erişilebilen `GetBackColor`değer.|
+|`BorderStyle`|DISP_STOCKPROP_BORDERSTYLE( )|Değer olarak `m_sBorderStyle`erişilebilir.|
+|`Caption`|DISP_STOCKPROP_CAPTION ( )|Arayarak erişilebilen `InternalGetText`değer.|
+|`Enabled`|DISP_STOCKPROP_ENABLED ( )|Değer olarak `m_bEnabled`erişilebilir.|
+|`Font`|DISP_STOCKPROP_FONT ( )|[MFC ActiveX Denetimleri makalesine bakın:](../mfc/mfc-activex-controls-using-fonts.md) Kullanım için Yazı Tiplerini Kullanma.|
+|`ForeColor`|DISP_STOCKPROP_FORECOLOR ( )|Arayarak erişilebilen `GetForeColor`değer.|
+|`hWnd`|DISP_STOCKPROP_HWND ( )|Değer olarak `m_hWnd`erişilebilir.|
+|`Text`|DISP_STOCKPROP_TEXT ( )|Arayarak erişilebilen `InternalGetText`değer. Bu `Caption`özellik, özellik adı dışında aynıdır.|
+|`ReadyState`|DISP_STOCKPROP_READYSTATE()|Veya olarak `m_lReadyState` erişilebilir değer`GetReadyState`|
 
-##  <a name="_core_stock_properties_and_notification"></a> Stok özellikleri ve bildirim
+## <a name="stock-properties-and-notification"></a><a name="_core_stock_properties_and_notification"></a>Stok Özellikleri ve Bildirim
 
-Çoğu stok özellikleri geçersiz kılınabilir bildirim işlevleri vardır. Örneğin, her `BackColor` özelliği değiştirildiğinde `OnBackColorChanged` işlevi (Denetim sınıfının bir üye işlevinde) çağrılır. Varsayılan uygulama (içinde `COleControl`) çağrılarını `InvalidateControl`. Bu işlev, yanıt olarak bu durum ek eylemleri istiyorsanız geçersiz kılar.
+Çoğu stok özelliğigeçersiz kılınabilecek bildirim işlevlerine sahiptir. Örneğin, `BackColor` özellik değiştirildiğinde, `OnBackColorChanged` işlev (denetim sınıfının bir üye işlevi) çağrılır. Varsayılan uygulama `COleControl`(in) `InvalidateControl`çağırır. Bu duruma yanıt olarak ek eylemler de yapmak istiyorsanız bu işlevi geçersiz kılın.
 
-##  <a name="_core_color_properties"></a> Renk özellikleri
+## <a name="color-properties"></a><a name="_core_color_properties"></a>Renk Özellikleri
 
-Hisse senedi kullanabileceğiniz `ForeColor` ve `BackColor` özellikleri veya denetim boyama, kendi özel renk özellikleri. Color özelliği kullanmak için çağrı [COleControl::TranslateColor](../mfc/reference/colecontrol-class.md#translatecolor) üye işlevi. Bu işlev renk özelliğini ve isteğe bağlı palet tanıtıcı değeri parametrelerdir. Dönüş değeri bir **COLORREF** gibi GDI için geçirilen değer işlevlerini `SetTextColor` ve `CreateSolidBrush`.
+Denetimi boyarken `ForeColor` stok `BackColor` ve özellikleri veya kendi özel renk özelliklerinizi kullanabilirsiniz. Renk özelliği ni kullanmak için [COleControl::TranslateColor](../mfc/reference/colecontrol-class.md#translatecolor) üye işlevini arayın. Bu işlevin parametreleri renk özelliğinin değeri ve isteğe bağlı palet tutamacıdır. İade değeri, GDI işlevlerine aktarılabilen `SetTextColor` bir **COLORREF** değeridir. `CreateSolidBrush`
 
-Hisse senedi için renk değerleri `ForeColor` ve `BackColor` özellikleri ya da çağrılarak erişilen `GetForeColor` veya `GetBackColor` işlevi, sırasıyla.
+Stok `ForeColor` ve `BackColor` özelliklerin renk değerlerine sırasıyla `GetForeColor` işlevi `GetBackColor` veya işlevi arayarak erişilir.
 
-Aşağıdaki örnek, bir denetim boyama, bu iki color özelliklerini kullanmayı gösterir. Geçici bir başlatır **COLORREF** değişkeni ve `CBrush` çağrılar için nesneyle `TranslateColor`: kullanarak bir tane `ForeColor` özelliği ve diğer kullanma `BackColor` özelliği. Geçici bir `CBrush` nesne denetim dikdörtgenine boyamak için kullanılan ardından ve kullanarak metin rengini ayarlama `ForeColor` özelliği.
+Aşağıdaki örnek, denetimi boyarken bu iki renk özelliğinin kullanılmasını gösterir. Geçici bir **COLORREF** değişkenini `CBrush` ve çağrıiçeren `TranslateColor`bir nesneyi: biri `ForeColor` özelliği, diğerini `BackColor` özelliği kullanarak baş harfe çağırır. Daha `CBrush` sonra denetimin dikdörtgenini boyamak için geçici bir nesne kullanılır `ForeColor` ve metin rengi özellik kullanılarak ayarlanır.
 
 [!code-cpp[NVC_MFC_AxUI#24](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-properties_3.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX denetimleri: Özellikleri](../mfc/mfc-activex-controls-properties.md)<br/>
-[MFC ActiveX denetimleri: Yöntemleri](../mfc/mfc-activex-controls-methods.md)<br/>
+[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)<br/>
+[MFC ActiveX Denetimleri: Özellikler](../mfc/mfc-activex-controls-properties.md)<br/>
+[MFC ActiveX Denetimleri: Yöntemler](../mfc/mfc-activex-controls-methods.md)<br/>
 [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)

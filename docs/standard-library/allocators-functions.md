@@ -1,5 +1,5 @@
 ---
-title: '&lt;ayrıcılar&gt; makrolar'
+title: '&lt;ayırıcımakrolar&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - allocators/std::ALLOCATOR_DECL
@@ -14,21 +14,21 @@ helpviewer_keywords:
 - std::CACHE_FREELIST [C++]
 - std::CACHE_SUBALLOC [C++]
 - std::SYNC_DEFAULT [C++]
-ms.openlocfilehash: 5355661e370daf8826541c036f7301e5c25788d7
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: a8b988511d0cdd46ae7f41bce29eb26f593a57c4
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79416930"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364978"
 ---
-# <a name="ltallocatorsgt-macros"></a>&lt;ayrıcılar&gt; makrolar
+# <a name="ltallocatorsgt-macros"></a>&lt;ayırıcımakrolar&gt;
 
 ||||
 |-|-|-|
-|[ALLOCATOR_DECL](#allocator_decl)|[CACHE_CHUNKLIST](#cache_chunklist)|[CACHE_FREELIST](#cache_freelist)|
+|[ALLOCATOR_DECL](#allocator_decl)|[CACHE_CHUNKLIST](#cache_chunklist)|[Cache_freelist](#cache_freelist)|
 |[CACHE_SUBALLOC](#cache_suballoc)|[SYNC_DEFAULT](#sync_default)|
 
-## <a name="allocator_decl"></a>ALLOCATOR_DECL
+## <a name="allocator_decl"></a><a name="allocator_decl"></a>ALLOCATOR_DECL
 
 Ayırıcı sınıf şablonu verir.
 
@@ -38,9 +38,9 @@ Ayırıcı sınıf şablonu verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Makro `template <class Type> class name {.....}` bir şablon tanımı ve bir özelleştirme `template <> class name<void> {.....}` ve bu, birlikte eşitleme filtresi `sync` ve `cache`türünde bir önbellek kullanan bir ayırıcı sınıfı şablonu tanımlar.
+`template <class Type> class name {.....}` Makro, eşitleme filtresini `template <> class name<void> {.....}` `sync` ve bir tür `cache`önbelleğini kullanan bir ayırıcı sınıf şablonunu birlikte tanımlayan bir şablon tanımı ve uzmanlık verir.
 
-Yeniden bağlama derleyemeyen derleyiciler için, sonuçta elde edilen şablon tanımı şöyle görünür:
+Rebind'i derleyebilen derleyiciler için, ortaya çıkan şablon tanımı aşağıdaki gibi görünür:
 
 ```cpp
 struct rebind
@@ -49,7 +49,7 @@ struct rebind
    };
 ```
 
-Yeniden bağlama Derlenemeyen derleyiciler için, sonuçta elde edilen şablon tanımı şöyle görünür:
+Rebind'i derleyemeyen derleyiciler için ortaya çıkan şablon tanımı aşağıdaki gibi görünür:
 
 ```cpp
 template <class Type<class name
@@ -68,9 +68,9 @@ public:
 };
 ```
 
-## <a name="cache_chunklist"></a>CACHE_CHUNKLIST
+## <a name="cache_chunklist"></a><a name="cache_chunklist"></a>CACHE_CHUNKLIST
 
-`stdext::allocators::cache_chunklist<sizeof(Type)>`verir.
+Verim. `stdext::allocators::cache_chunklist<sizeof(Type)>`
 
 ```cpp
 #define CACHE_CHUNKLIST <cache_class>
@@ -78,9 +78,9 @@ public:
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cache_freelist"></a>CACHE_FREELIST
+## <a name="cache_freelist"></a><a name="cache_freelist"></a>Cache_freelist
 
-`stdext::allocators::cache_freelist<sizeof(Type), max>`verir.
+Verim. `stdext::allocators::cache_freelist<sizeof(Type), max>`
 
 ```cpp
 #define CACHE_FREELIST(max) <cache_class>
@@ -88,9 +88,9 @@ public:
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cache_suballoc"></a>CACHE_SUBALLOC
+## <a name="cache_suballoc"></a><a name="cache_suballoc"></a>CACHE_SUBALLOC
 
-`stdext::allocators::cache_suballoc<sizeof(Type)>`verir.
+Verim. `stdext::allocators::cache_suballoc<sizeof(Type)>`
 
 ```cpp
 #define CACHE_SUBALLOC <cache_class>
@@ -98,9 +98,9 @@ public:
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="sync_default"></a>SYNC_DEFAULT
+## <a name="sync_default"></a><a name="sync_default"></a>SYNC_DEFAULT
 
-Bir eşitleme filtresi verir.
+Eşitleme filtresi verir.
 
 ```cpp
 #define SYNC_DEFAULT <sync_template>
@@ -108,8 +108,8 @@ Bir eşitleme filtresi verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir derleyici, tek iş parçacıklı ve çok iş parçacıklı uygulamalar derlemeyi destekliyorsa, makro `stdext::allocators::sync_none`verir; diğer tüm durumlarda `stdext::allocators::sync_shared`verir.
+Derleyici, tek iş parçacığı uygulamaları için hem tek iş parçacığı hem de çok iş parçacığı `stdext::allocators::sync_none`uygulamaları derlemeyi destekliyorsa, makro verimleri; diğer tüm durumlarda verimleri `stdext::allocators::sync_shared`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<ayrıcılar >](../standard-library/allocators-header.md)
+[\<tahsisat>](../standard-library/allocators-header.md)

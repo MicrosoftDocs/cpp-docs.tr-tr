@@ -1,21 +1,21 @@
 ---
-title: Cmfctabtooltipınfo yapısı
+title: CMFCTabToolTipInfo Yapısı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCTabToolTipInfo
 helpviewer_keywords:
 - CMFCTabToolTipInfo struct
 ms.assetid: 9c3b3fb9-1497-4d59-932b-0da9348dd5e2
-ms.openlocfilehash: 87c8820bc33f3a344933faa797a9fc60d2422b13
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a507d1e69b3524074e50fde0e87fc5ebb6e5ca03
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252964"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367337"
 ---
-# <a name="cmfctabtooltipinfo-structure"></a>Cmfctabtooltipınfo yapısı
+# <a name="cmfctabtooltipinfo-structure"></a>CMFCTabToolTipInfo Yapısı
 
-Bu yapı, kullanıcının üzerine geldiği MDI sekmesi hakkında bilgi sağlar.
+Bu yapı, kullanıcının üzerinde gezinen MDI sekmesi hakkında bilgi sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,35 +25,35 @@ struct CMFCTabToolTipInfo
 
 ## <a name="members"></a>Üyeler
 
-### <a name="data-members"></a>Veri üyeleri
+### <a name="data-members"></a>Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCTabToolTipInfo::m_nTabIndex](#m_ntabindex)|Sekme denetimi dizinini belirtir.|
-|[CMFCTabToolTipInfo::m_pTabWnd](#m_ptabwnd)|Sekme denetimine yönelik işaretçi.|
-|[CMFCTabToolTipInfo::m_strText](#m_strtext)|Araç İpucu metni.|
+|[CMFCTabToolTipInfo::m_nTabIndex](#m_ntabindex)|Sekme denetiminin dizinini belirtir.|
+|[CMFCTabToolTipInfo::m_pTabWnd](#m_ptabwnd)|Sekme denetimi için bir işaretçi.|
+|[CMFCTabToolTipInfo::m_strText](#m_strtext)|Araç ipucu metni.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir işaretçi bir `CMFCTabToolTipInfo` yapısı AFX_WM_ON_GET_TAB_TOOLTIP iletisinin parametre olarak geçirilir. MDI sekmeleri etkinleştirilir ve kullanıcı bir sekme denetimin üzerine geldiğinde bu iletiyi üretilir.
+Bir `CMFCTabToolTipInfo` yapının işaretçisi, AFX_WM_ON_GET_TAB_TOOLTIP iletisinin parametresi olarak geçirilir. Bu ileti, MDI sekmeleri etkinleştirildiğinde ve kullanıcı bir sekme denetiminin üzerinde gezindiğinde oluşturulur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `CMFCTabToolTipInfo` kullanılır [MDITabsDemo örnek: MFC sekmeli MDI uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `CMFCTabToolTipInfo` [MDITabsDemo Örnek: MFC Sekmeli MDI Uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_MDITabsDemo#2](../../mfc/reference/codesnippet/cpp/cmfctabtooltipinfo-structure_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cmfctabtooltipınfo](../../mfc/reference/cmfctabtooltipinfo-structure.md)
+[CMFCTabToolTipInfo](../../mfc/reference/cmfctabtooltipinfo-structure.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxbasetabctrl.h
+**Üstbilgi:** afxbasetabctrl.h
 
-##  <a name="m_ntabindex"></a>  CMFCTabToolTipInfo::m_nTabIndex
+## <a name="cmfctabtooltipinfom_ntabindex"></a><a name="m_ntabindex"></a>CMFCTabToolTipInfo::m_nTabIndex
 
-Sekme denetimi dizinini belirtir.
+Sekme denetiminin dizinini belirtir.
 
 ```
 int m_nTabIndex;
@@ -61,17 +61,17 @@ int m_nTabIndex;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcının üzerine geldiği sekme dizini.
+Kullanıcının üzerinde gezindiği sekme dizini.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `m_nTabIndex` kullanılır [MDITabsDemo örnek: MFC sekmeli MDI uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `m_nTabIndex` [MDITabsDemo Örnek: MFC Sekmeli MDI Uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_MDITabsDemo#2](../../mfc/reference/codesnippet/cpp/cmfctabtooltipinfo-structure_1.cpp)]
 
-##  <a name="m_ptabwnd"></a>  CMFCTabToolTipInfo::m_pTabWnd
+## <a name="cmfctabtooltipinfom_ptabwnd"></a><a name="m_ptabwnd"></a>CMFCTabToolTipInfo::m_pTabWnd
 
-Sekme denetimine yönelik işaretçi.
+Sekme denetimi için bir işaretçi.
 
 ```
 CMFCBaseTabCtrl* m_pTabWnd;
@@ -79,13 +79,13 @@ CMFCBaseTabCtrl* m_pTabWnd;
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `m_pTabWnd` kullanılır [MDITabsDemo örnek: MFC sekmeli MDI uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `m_pTabWnd` [MDITabsDemo Örnek: MFC Sekmeli MDI Uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_MDITabsDemo#2](../../mfc/reference/codesnippet/cpp/cmfctabtooltipinfo-structure_1.cpp)]
 
-##  <a name="m_strtext"></a>  CMFCTabToolTipInfo::m_strText
+## <a name="cmfctabtooltipinfom_strtext"></a><a name="m_strtext"></a>CMFCTabToolTipInfo::m_strText
 
-Araç İpucu metni.
+Araç ipucu metni.
 
 ```
 CString m_strText;
@@ -93,11 +93,11 @@ CString m_strText;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize boşsa, araç ipucu görüntülenmez.
+Dize boşsa, araç ucu görüntülenmez.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `m_strText` kullanılır [MDITabsDemo örnek: MFC sekmeli MDI uygulaması](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `m_strText` [MDITabsDemo Örnek: MFC Sekmeli MDI Uygulamasında](../../overview/visual-cpp-samples.md)nasıl kullanıldığını gösterir.
 
 [!code-cpp[NVC_MFC_MDITabsDemo#2](../../mfc/reference/codesnippet/cpp/cmfctabtooltipinfo-structure_1.cpp)]
 

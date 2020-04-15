@@ -1,18 +1,18 @@
 ---
 layout: LandingPage
-title: C++ Belgelerle Linux geliştirme
-description: Linux üzerinde çalışan uygulamalar oluşturun ve hatalarını ayıklayın.
+title: C++ Belgeleri ile Linux Geliştirme
+description: Linux üzerinde çalışan uygulamalar oluşturun ve hata ayıkla.
 ms.topic: landing-page
-ms.openlocfilehash: 9c09e9bd590ece013a2ee7d85017b3e046394232
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: d7e3622c3c390bdf4a594e36706d937ff7ef3909
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441513"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364318"
 ---
-# <a name="linux-development-with-c-documentation"></a>C++ Belgelerle Linux geliştirme
+# <a name="linux-development-with-c-documentation"></a>C++ Belgeleri ile Linux Geliştirme
 
-Linux uzak makineler veya Linux için Windows alt sistemi üzerinde çalışan uygulamalar oluşturmak ve hatalarını ayıklamak için Visual Studio 2017 ve üstünü kullanın.
+Linux uzak makinelerde veya Linux için Windows Alt Sistemi'nde çalışan uygulamalar oluşturmak ve hata ayıklamak için Visual Studio 2017 ve daha sonra kullanın.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -28,8 +28,8 @@ Linux uzak makineler veya Linux için Windows alt sistemi üzerinde çalışan u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Linux Iş yükünü yükleyip yapılandırma</h3>
-                        <p>' De C++Linux uygulamaları oluşturmak Için Visual Studio 2017 ve üstünü ayarlamayı öğrenin.</p>
+                        <h3>Linux İş Yükünü Yükleme ve Yapılandırma</h3>
+                        <p>Visual Studio 2017'yi nasıl kurup daha sonra C++'da Linux uygulamaları oluşturup kurmayı öğrenin.</p>
                     </div>
                 </div>
             </div>
@@ -47,8 +47,8 @@ Linux uzak makineler veya Linux için Windows alt sistemi üzerinde çalışan u
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>C++Ekip Blogu</h3>
-                        <p>Visual Studio 'daki tüm en son C++ özelliklerle güncel tutun.</p>
+                        <h3>C++ Takım Blogu</h3>
+                        <p>Visual Studio'daki en son C++ özelliklerinden haberdar edin.</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ Linux uzak makineler veya Linux için Windows alt sistemi üzerinde çalışan u
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio">Visual Studio’da C++</a></h3>
+                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio">Visual Studio'da C++</a></h3>
                     </div>
                 </div>
             </div>

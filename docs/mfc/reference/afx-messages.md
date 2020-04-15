@@ -64,12 +64,12 @@ f1_keywords:
 helpviewer_keywords:
 - AFX messages [MFC]
 ms.assetid: 3d601f3c-af6d-47d3-8553-34f1318fa74f
-ms.openlocfilehash: 5caf40fc757e2c5c90c06e1698ce4c15d1ed6240
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b4ed86c11d3c5b5f1ce38e3146533109f3a6b00d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338065"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81363593"
 ---
 # <a name="afx-messages"></a>AFX İletileri
 
@@ -77,75 +77,75 @@ Bu iletiler MFC'de kullanılır.
 
 ## <a name="messages"></a>İletiler
 
-Aşağıdaki tabloda, MFC Kitaplığı'nda kullanılan mesajları listelenmektedir:
+Aşağıdaki tablo, MFC kitaplığında kullanılan iletileri listeler:
 
 ||||||
 |-|-|-|-|-|
-|İleti|Açıklama|[in] *wParam*|*lParam* (tüm parametreleri [in] aksi belirtilmedikçe bağlıdır.)|Dönüş Değeri|
+|İleti|Açıklama|[içinde] *wParam*|*lParam* (Aksi belirtilmedikçe tüm parametreler [in] vardır.)|Dönüş Değeri|
 |AFX_WM_ACCGETOBJECT|Kullanılmadı.|Kullanılmadı.|Geçerli değildir.|Geçerli değildir.|
-|AFX_WM_ACCGETSTATE|Erişilebilirlik desteği için kullanılır. Bu ileti gönder `CMFCPopupMenu` veya `CMFCRibbonPanelMenu` geçerli öğe durumu alınamadı.|Menü düğmesine veya ayırıcı öğenin dizini.|Kullanılmadı.|Öğe durumu. Dizin geçersiz, -1 ise 0 menü düğmesine özel özniteliklere sahip değildir. Aksi takdirde aşağıdaki bayraklar birleşiminden oluşur:<br /><br /> TBBS_DISABLED — öğesi devre dışı bırakıldı<br /><br /> TBBS_CHECKED — öğesi denetlenir.<br /><br /> TBBS_BUTTON — standart bir basma düğmesi öğesidir<br /><br /> TBBS_PRESSED — düğmeye basıldığında<br /><br /> TBBS_INDETERMINATE — tanımlanmamış durumu<br /><br /> TBBS_SEPARATOR - yerine bir menü düğmesi bu öğenin forms diğer menü öğeleri arasında ayrım a|
-|AFX_WM_CHANGE_ACTIVE_TAB|Framework yeniden boyutlandırılabilir denetim çubuğu denetimi için bu iletiyi gönderir. Bildirimleri almak için bu iletiyi işlemeli `CMFCTabCtrl` kullanıcı etkin bir sekme değiştirdiğinde nesneleri.|Sekme dizini.|Kullanılmadı.|Sıfır dışında.|
-|AFX_WM_CHANGE_CURRENT_FOLDER|Framework üst öğesi için bu iletiyi gönderir `CMFCShellListCtrl` kullanıcı geçerli klasörde değiştirilmemiş olduğunda.|Kullanılmadı.|Kullanılmadı.|Kullanılmadı.|
-|AFX_WM_CHANGEVISUALMANAGER|Kullanıcının geçerli Visual Yöneticisi değiştiğinde framework tüm çerçeve pencereleri için bu iletiyi gönderir. Yanıt olarak bu ileti, bir çerçeve penceresinin alt bölgeye yeniden hesaplar ve diğer parametrelerini gerektiği gibi ayarlar. Bu olay hakkında bildirim almak istiyorsanız, uygulamanızda AFX_WM_CHANGEVISUALMANAGER ileti işleyebilir. Temel sınıf işleyici çağırması gerekir (`OnChangeVisualManager`) framework iç emin olmak için bu olay işleme gerçekleşir.|Kullanılmadı.|Kullanılmadı.|Kullanılmadı.|
-|AFX_WM_CHANGING_ACTIVE_TAB|Üst öğesi için gönderilen `CMFCTabCtrl` nesne.  Bildirimleri almak istemiyorsanız, bu iletiyi işlemeli `CMFCTabCtrl` nesneleri, bir kullanıcı bir sekmeye sıfırlar.|Etkinleştirilmekte olan sekme dizini.|Kullanılmadı.|Sıfır dışında.|
-|AFX_WM_CHECKEMPTYMINIFRAME|Yalnızca iç kullanım içindir.|Geçerli değildir.|Geçerli değildir.|Geçerli değildir.|
-|AFX_WM_CREATETOOLBAR|Gönderilen `CMFCToolBarsListPropertyPage` ne zaman bir kullanıcının oluşturduğu yeni bir araç çubuğu özelleştirme işlemi sırasında. CMFCToolBar türetilen özel bir nesne örneği oluşturmak için bu ileti işleyebilir. Bu iletiyi işlemek ve kendi araç oluşturabilir, varsayılan işleyici çağrısı atlayın.|Kullanılmadı.|Araç adı içeren bir dize işaretçisi.|Yeni oluşturulan araç için bir işaretçi. Araç çubuğu oluşturma iptal edildi NULL gösterir.|
-|AFX_WM_CUSTOMIZEHELP|Ana çerçeve penceresine özelleştirme özellik sayfasından gönderilen `CMFCToolbarCustomize Dialog` kullanıcının bastığında **yardımcı** düğme veya F1 tuşuna.|Etkin sayfa özelleştirme özellik sayfasının belirtir.|Bir işaretçi bir `CMFCToolbarCustomize Dialog` nesne.|Sıfır.|
-|AFX_WM_CUSTOMIZETOOLBAR|`CMFCToolbarCustomize Dialog` Üst çerçevenin kullanıcı yeni bir araç çubuğu öğesini oluşturmakta olduğunu bildirmek için bu iletiyi gönderir.|Özelleştirme tamamlandığında özelleştirme, yanlış başlatıldığında TRUE.|Kullanılmadı.|Sıfır.|
-|AFX_WM_DELETETOOLBAR|Kullanıcı bir araç çubuğu özelleştirme modunu silmek üzere olduğunda ana çerçeve penceresine Gönder.<br /><br /> Bir kullanıcı bir araç çubuğu özelleştirme modu sildiğinde ek işlemler gerçekleştirmeleri için bu iletiyi işler. Ayrıca, varsayılan işleyici çağırması gerekir (`OnToolbarDelete`), araç siler. Varsayılan işleyici araç çubuğunu silmek mümkün olup olmadığını belirten bir değer döndürür.|Kullanılmadı.|İşaretçi bir `CMFCToolBar` silinecek nesne.|Araç çubuğu silinemez olursa sıfır dışı; Aksi durumda 0.|
-|AFX_WM_GETDOCUMENTCOLORS|`CMFCColorMenuButton` Bu ileti, belge renkleri almak için ana çerçeve penceresine gönderir.|Kullanılmadı.|[out içinde] İşaretçi bir `CList<COLORREF, COLORREF>` nesne.|Sıfır.|
-|AFX_WM_GETDRAGBOUNDS|Yalnızca iç kullanım içindir.|Geçerli değildir.|Geçerli değildir.|Geçerli değildir.|
-|AFX_WM_HIGHLIGHT_RIBBON_LIST_ITEM|Ana çerçeve penceresine bir kullanıcı bir Şerit liste öğesi vurguladığında Gönder.|Vurgulanan öğe dizini|Bir işaretçi `CMFCBaseRibbonElement`|Kullanılmadı.|
-|AFX_WM_ON_AFTER_SHELL_COMMAND|Üst öğesi için gönderilen `CMFCShellListCtrl` veya `CMFCShellTreeCtrl` Kabuk komutu yürütülürken bir kullanıcı tamamlandığında denetler.|Kullanıcı çalıştırılan komut kimliği|Kullanılmadı.|Uygulama bu iletiyi işleyen, sıfır döndürmelidir.|
-|AFX_WM_ON_BEFORE_SHOW_RIBBON_ITEM_MENU|Açılır menü görüntülemeden önce framework Şeridin üst öğeye bu iletiyi gönderir. Bu iletiyi işlemeli ve açılır menüler dilediğiniz zaman değiştirin.|Kullanılmadı.|Bir işaretçi `CMFCBaseRibbonElement`|Kullanılmadı.|
-|AFX_WM_ON_CANCELTABMOVE|Yalnızca iç kullanım içindir.|Geçerli değildir.|Geçerli değildir.||
-|AFX_WM_ON_CHANGE_RIBBON_CATEGORY|Kullanıcı etkin Şerit denetimi kategori değiştiğinde framework ana kareye bu iletiyi gönderir.|Kullanılmadı.|Bir işaretçi `CMFCRibbonBar` kategorisi değişti.|Kullanılmadı.|
-|AFX_WM_ON_CLOSEPOPUPWINDOW|Framework sahibini bildirmek için bu iletiyi gönderir `CMFCDesktopAlertWnd` penceresi Kapatılmak üzere olduğunu.|Kullanılmadı.|Bir işaretçi `CMFCDesktopAlertWnd` nesne.|Kullanılmadı.|
-|AFX_WM_ON_DRAGCOMPLETE|Yalnızca iç kullanım içindir.|Geçerli değildir.|Geçerli değildir.|Geçerli değildir.|
-|AFX_WM_ON_GET_TAB_TOOLTIP|Özel araç ipuçları etkinleştirilip etkinleştirilmediğini hakkında bir sekme için bir araç ipucu görüntülemek için sekmesinde pencere olduğunda ana çerçeve penceresine Gönder.|Kullanılmadı.|Bir işaretçi bir `CMFCTabToolTipInfo` yapısı.|Kullanılmadı.|
-|AFX_WM_ON_HSCROLL|Yeniden boyutlandırılabilir denetim çubuğu denetimine gönderilir. Bildirimleri almak için bu iletiyi işlemeli `CMFCTabCtrl` sekmeli pencere öğesi yatay kaydırma çubuğunun kaydırma olay meydana geldiğinde nesneleri.|Düşük düzey word kullanıcı belirten bir kaydırma çubuğu değer isteği kaydırma belirtir.  Daha fazla bilgi için bu konunun ilerleyen bölümlerinde tabloya bakın.|Kullanılmadı.|Sıfır dışında.|
-|AFX_WM_ON_MOVE_TAB|Bir kullanıcı yeni bir konuma bir sekme sürüklediğinde sekmeli pencere üstüne gönderilir.|Özgün konumuna sekmede sıfır tabanlı dizini.|[out] Yeni konumuna sekmede sıfır tabanlı dizini.|Sıfır.|
-|AFX_WM_ON_MOVETABCOMPLETE|Yalnızca iç kullanım içindir.|Geçerli değildir.|Geçerli değildir.|Geçerli değildir.|
-|AFX_WM_ON_MOVETOTABGROUP|MDI alt penceresine bir kullanıcı bir sekmeli grubundan diğerine taşır ana çerçeve penceresine gönderilir.|Sekmeli pencere için bir tanıtıcı (`CMFCTabCtrl`) öğesinden MDI alt penceresi kaldırıldı.|[out] Sekmeli pencere için bir tanıtıcı (`CMFCTabCtrl`) için MDI alt penceresi eklenmiş.|Yoksayıldı.|
-|AFX_WM_ON_PRESS_CLOSE_BUTTON|Üst öğesi için gönderilen `CDockablePane` kullanıcı tıkladığında **Kapat** denetim çubuğu başlığını düğmesi.|Kullanılmadı.|Bir işaretçi üzerinde kullanıcı tıkladı yerleştirilebilir bir bölmeye **Kapat** düğmesi.|Bir bölme kapattıysanız TRUE; Aksi durumda FALSE.|
-|AFX_WM_ON_RENAME_TAB|Düzenlenebilir bir sekme kullanıcı olarak yeniden adlandırıldı sekmeli penceresinin üst Gönder.|Yeniden adlandırılan sekmeye sıfır tabanlı dizini.|[out] Yeni sekme adı içeren bir dize işaretçisi.|Uygulama bu iletiyi işleyen olursa sıfır dışı; Çerçeve çağrı bastırır `CMFCBaseTabCtrl::SetTabLabel`.  Sıfır, sonra döndürülürse `CMFCBaseTabCtrl::SetTabLabel` framework tarafından çağırılır.|
-|AFX_WM_ON_RIBBON_CUSTOMIZE|Kullanıcı özelleştirme başlattığında ana kareye gönderilir. Kendi özelleştirme iletişim kutusunda görüntülemek istiyorsanız, bu iletiyi işlemeli.|Kullanılmadı.|Özelleştirilecek Şerit denetimi bir işaretçi.|Sıfır uygulama bu iletiyi işleyen ve kendi özelleştirme iletişim kutusunu görüntüler. Uygulama sıfır döndürürse, framework yerleşik özelleştirme iletişim kutusunu görüntüler.|
-|AFX_WM_ON_TABGROUPMOUSEMOVE|Yalnızca iç kullanım içindir.|Geçerli değildir.|Geçerli değildir.|Geçerli değildir.|
-|AFX_WM_POSTSETPREVIEWFRAME|Ana çerçeve kullanıcı yazdırma Önizleme modundan değiştirdi bildirmek için gönderilen|TRUE, yazdırma Önizleme modundan ayarlandığını gösterir. FALSE, Baskı Önizleme modunu kapalı olduğunu gösterir.|Kullanılmadı.|Kullanılmadı.|
-|AFX_WM_PROPERTY_CHANGED|Özellik Kılavuzu denetimini sahibine Gönder (`CMFCPropertyGridCtrl`) kullanıcı seçili özelliğinin değeri değiştiğinde.|Özellik listesi denetiminin kimliği.|Özellik için bir işaretçi (`CMFCPropertyGridProperty`) değiştirilmiş.|Kullanılmadı.|
-|AFX_WM_RESETCONTEXTMENU|Kullanıcı bağlam menüsü özelleştirme sırasında sıfırlandıktan sonra ana çerçeve penceresine Gönder.|Bağlam menüsü kaynak kimliği.|Geçerli bağlam menüsüne bir işaretçi `CMFCPopupMenu`.|Kullanılmadı.|
-|AFX_WM_RESETKEYBOARD|Kullanıcının tüm klavye Hızlandırıcılar özelleştirme sırasında sıfırlandıktan sonra framework ana çerçeve penceresine bu iletiyi gönderir.|Kullanılmadı.|Kullanılmadı.|Kullanılmadı.|
-|AFX_WM_RESETMENU|Framework menü sahibine (bir çerçeve penceresi) bu iletiyi gönderir, kullanıcı sıfırlar bir uygulama çerçevesi menüsü özelleştirme sırasında|Menü kaynak kimliği|Kullanılmadı.|Kullanılmadı.|
-|AFX_WM_RESETPROMPT|Araç çubuğu araç çubuğundan bir kullanıcı sıfırlama Özelleştir iletişim kutusu, çerçeve bu iletiyi gönderir. Varsayılan işleyici kullanıcı araç çubuğunu sıfırlama isteyip istemediğini sorar bir ileti kutusu görüntüler.|Kullanılmadı.|Kullanılmadı.|Kullanılmadı.|
-|AFX_WM_RESETTOOLBAR|A `CMFCToolBar` nesneyi bir araç çubuğunun özgün durumuna başka bir deyişle, kaynaklardan yüklenen geri yüklendiğinde bu iletiyi gönderir. Araç çubuğu düğmeleri sınıfından türetilen sınıflar, yeniden eklemek bu iletiyi işlemeli `CMFCToolbarButton`. Daha fazla bilgi için bkz. `CMFCToolbarComboBoxButton`.|Durumu geri yüklenen bir araç çubuğu kaynak kimliği.|Kullanılmadı.|Sıfır.|
-|AFX_WM_SHOWREGULARMENU|`CMFCToolbarMenuButton` Kullanıcı bir normal menü düğmesine tıkladığında nesne için sahibi bu iletiyi gönderir. Kullandığınız her zaman bu iletiyi işlemeli `CMFCToolbarMenuButton` kullanıcı bir düğmeyi tıkladığında bir açılan menüyü görüntülemek için.|İleti gönderen bir düğme komut kimliği.|İmleç ekran koordinatları. Düşük düzey word x koordinatını belirtir. Dwpoint y koordinatını belirtir.|Kullanılmadı.|
-|AFX_WM_TOOLBARMENU|Ana çerçeve penceresine fare işaretçisi bir istemci ya da istemci dışı alan bölmesinin üzerindeyken kullanıcı sağ fare düğmesini bıraktığında Gönder.|Kullanılmadı.|Fare işaretçisinin koordinatlarını ekran. Düşük düzey word x koordinatını belirtir. Dwpoint y koordinatını belirtir.|Uygulama bu iletiyi işleyen olursa sıfır; Aksi takdirde, sıfır dışında.|
-|AFX_WM_UPDATETOOLTIPS|Kendi araç ipucu denetimlerinin oluşturulması belirtmek için tüm araç ipucu sahiplerine gönderilir.|Bu iletiyi işlemesi gerektiğini denetim türü. Olası değerler listesi için bu konunun ilerleyen bölümlerinde tabloya bakın.|Kullanılmadı.|Kullanılmadı.|
-|AFX_WM_WINDOW_HELP|`CMFCWindowsManagerDialog` kullanıcı tıkladığında bu iletiyi ana kareye **yardımcı** düğmesine veya tıklayarak Yardım moduna girer **yardımcı** başlık düğmesi veya F1 tuşuna.|Kullanılmadı.|Örneğine bir işaretçi `CMFCWindowsManagerDialog`.|Kullanılmadı.|
+|AFX_WM_ACCGETSTATE|Erişilebilirlik desteği için kullanılır. Bu iletiyi `CMFCRibbonPanelMenu` geçerli öğenin durumuna veya almak için `CMFCPopupMenu` gönderin.|Bir menü düğmesi veya ayırıcı olabilir öğe nin dizin.|Kullanılmadı.|Öğe durumu. Dizin geçersizse -1, menü düğmesinin özel öznitelikleri yoksa 0'dır. Aksi takdirde aşağıdaki bayrakların bir kombinasyonudur:<br /><br /> TBBS_DISABLED — öğe devre dışı<br /><br /> TBBS_CHECKED — öğe işaretli<br /><br /> TBBS_BUTTON — öğe standart bir düğmedir<br /><br /> TBBS_PRESSED — düğmesine basıldığında<br /><br /> TBBS_INDETERMINATE — tanımsız durum<br /><br /> TBBS_SEPARATOR - menü düğmesi yerine, bu öğe diğer menü öğeleri arasında bir ayrım oluşturur|
+|AFX_WM_CHANGE_ACTIVE_TAB|Çerçeve bu iletiyi yeniden boyutlandırılabilir denetim çubuğu denetimine gönderir. Kullanıcı etkin bir sekmeyi `CMFCTabCtrl` değiştirdiğinde nesnelerden bildirim almak için bu iletiyi işle.|Sekme dizini.|Kullanılmadı.|Sıfır.|
+|AFX_WM_CHANGE_CURRENT_FOLDER|Çerçeve, bu iletiyi `CMFCShellListCtrl` kullanıcı geçerli klasörü değiştirdiğinde üst öğeye gönderir.|Kullanılmadı.|Kullanılmadı.|Kullanılmadı.|
+|AFX_WM_CHANGEVISUALMANAGER|Kullanıcı geçerli Visual Manager'ı değiştirdiğinde çerçeve bu iletiyi tüm çerçeve pencerelerine gönderir. Bu iletiye yanıt olarak, bir çerçeve penceresi bölgesini yeniden hesaplar ve gerektiğinde diğer parametreleri ayarlar. Bu olayhakkında bilgilendirilmeniz gerekiyorsa, uygulamanızdaki AFX_WM_CHANGEVISUALMANAGER iletiyi işleyebilirsiniz. Bu olayın çerçevesinin dahili`OnChangeVisualManager`işleme sinin gerçekleştiğinden emin olmak için temel sınıf işleyicisini ( ) aramanız gerekir.|Kullanılmadı.|Kullanılmadı.|Kullanılmadı.|
+|AFX_WM_CHANGING_ACTIVE_TAB|Nesnenin üst `CMFCTabCtrl` öğesine gönderilir.  Kullanıcı bir sekmeyi sıfırladığında nesnelerden `CMFCTabCtrl` bildirim almak istiyorsanız bu iletiyi işleme.|Etkinleştirilmekte olan sekme dizini.|Kullanılmadı.|Sıfır.|
+|AFX_WM_CHECKEMPTYMINIFRAME|Yalnızca dahili kullanım içindir.|Geçerli değildir.|Geçerli değildir.|Geçerli değildir.|
+|AFX_WM_CREATETOOLBAR|Özelleştirme `CMFCToolBarsListPropertyPage` işlemi sırasında kullanıcı yeni bir araç çubuğu oluşturduğunda gönderilir. Özel cmfctoolbar türetilmiş nesne anlık olarak bu iletiyi işleyebilirsiniz. Bu iletiyi işler ve kendi araç çubuğunuzu oluşturursanız, aramayı varsayılan işleyiciye atla.|Kullanılmadı.|Araç çubuğunun adını içeren bir dize için işaretçi.|Yeni oluşturulan araç çubuğuiçin bir işaretçi. NULL, araç çubuğu oluşturmanın iptal edildiğini gösterir.|
+|AFX_WM_CUSTOMIZEHELP|Kullanıcı **Yardım düğmesine** veya F1 `CMFCToolbarCustomize Dialog` tuşuna bastığında özelleştirme özelliği sayfasından ana çerçeve penceresine gönderilir.|Özelleştirme özelliği sayfasının etkin sayfasını belirtir.|Bir `CMFCToolbarCustomize Dialog` nesneye işaretçi.|Sıfır.|
+|AFX_WM_CUSTOMIZETOOLBAR|Üst `CMFCToolbarCustomize Dialog` çerçeveye kullanıcının yeni bir araç çubuğu oluşturduğunu bildirmek için bu iletiyi gönderir.|Özelleştirme başlatıldığında DOĞRU, özelleştirme tamamlandığında FALSE.|Kullanılmadı.|Sıfır.|
+|AFX_WM_DELETETOOLBAR|Kullanıcı özelleştirme modunda bir araç çubuğunu silmek üzereyken ana çerçeve penceresine gönderilir.<br /><br /> Kullanıcı özelleştirme modunda bir araç çubuğunu sildiğinde ek işlemler yapmak için bu iletiyi işleme yapın. Araç çubuğunu silen`OnToolbarDelete`varsayılan işleyiciyi (), de aramalısınız. Varsayılan işleyici, araç çubuğunu silmenin mümkün olup olmadığını gösteren bir değer döndürür.|Kullanılmadı.|Silinecek `CMFCToolBar` bir nesneye işaretçi.|Araç çubuğu silinemiyorsa sıfıra inmez; aksi takdirde 0.|
+|AFX_WM_GETDOCUMENTCOLORS|`CMFCColorMenuButton`belge renklerini almak için bu iletiyi ana çerçeve penceresine gönderir.|Kullanılmadı.|[içinde, dışarı] Bir `CList<COLORREF, COLORREF>` nesneye işaretçi.|Sıfır.|
+|AFX_WM_GETDRAGBOUNDS|Yalnızca dahili kullanım içindir.|Geçerli değildir.|Geçerli değildir.|Geçerli değildir.|
+|AFX_WM_HIGHLIGHT_RIBBON_LIST_ITEM|Bir kullanıcı bir şerit listesi öğesini vurguladığında ana çerçeve penceresine gönderilir.|Vurgulanan öğenin dizini|Bir işaretçi`CMFCBaseRibbonElement`|Kullanılmadı.|
+|AFX_WM_ON_AFTER_SHELL_COMMAND|Bir kullanıcı kabuk `CMFCShellListCtrl` `CMFCShellTreeCtrl` komutunu yürütmeyi bitirdiğinde bir üst öğeye veya denetimlere gönderilir.|Kullanıcının yürüttüğü komutun kimliği|Kullanılmadı.|Uygulama bu iletiyi işlerse, sıfır döndürmelidir.|
+|AFX_WM_ON_BEFORE_SHOW_RIBBON_ITEM_MENU|Çerçeve, açılır menüyü görüntülemeden önce bu iletiyi şeridin üst öğesine gönderir. Bu iletiyi işleyebilir ve istediğiniz zaman açılır menüleri değiştirebilirsiniz.|Kullanılmadı.|Bir işaretçi`CMFCBaseRibbonElement`|Kullanılmadı.|
+|AFX_WM_ON_CANCELTABMOVE|Yalnızca dahili kullanım içindir.|Geçerli değildir.|Geçerli değildir.||
+|AFX_WM_ON_CHANGE_RIBBON_CATEGORY|Kullanıcı etkin Şerit Denetimi kategorisini değiştirdiğinde çerçeve bu iletiyi ana çerçeveye gönderir.|Kullanılmadı.|`CMFCRibbonBar` Kimin kategorisi değişti için bir işaretçi.|Kullanılmadı.|
+|AFX_WM_ON_CLOSEPOPUPWINDOW|Çerçeve, pencerenin `CMFCDesktopAlertWnd` kapatılmak üzere olduğunu sahibine bildirmek için bu iletiyi gönderir.|Kullanılmadı.|İtiraz için `CMFCDesktopAlertWnd` bir işaretçi.|Kullanılmadı.|
+|AFX_WM_ON_DRAGCOMPLETE|Yalnızca dahili kullanım içindir.|Geçerli değildir.|Geçerli değildir.|Geçerli değildir.|
+|AFX_WM_ON_GET_TAB_TOOLTIP|Özel araç uçları etkinse, sekme için araç ipucu nu görüntülemek üzereyken ana çerçeve penceresine gönderilir.|Kullanılmadı.|Bir yapıiçin `CMFCTabToolTipInfo` bir işaretçi.|Kullanılmadı.|
+|AFX_WM_ON_HSCROLL|Yeniden boyutlandırılabilir kontrol çubuğu kontrolüne gönderildi. Sekmeli widget yatay `CMFCTabCtrl` kaydırma çubuğunda bir kaydırma olayı oluştuğunda nesnelerden bildirim almak için bu iletiyi işle.|Düşük sıralı sözcük, kullanıcının kaydırma isteğini gösteren bir kaydırma çubuğu değeri belirtir.  Daha fazla bilgi için, bu konunun ilerleyen saatlerinde tabloya bakın.|Kullanılmadı.|Sıfır.|
+|AFX_WM_ON_MOVE_TAB|Kullanıcı sekmeyi yeni bir konuma sürüklediğinde sekmeli pencerenin üst bölümüne gönderilir.|Sekmenin özgün konumundaki sıfır tabanlı dizini.|[çıkış] Sekmenin yeni konumundaki sıfır tabanlı dizini.|Sıfır.|
+|AFX_WM_ON_MOVETABCOMPLETE|Yalnızca dahili kullanım içindir.|Geçerli değildir.|Geçerli değildir.|Geçerli değildir.|
+|AFX_WM_ON_MOVETOTABGROUP|Bir kullanıcı bir MDI alt penceresini sekmeli bir gruptan diğerine taşırken ana çerçeve penceresine gönderilir.|MDI alt penceresinin`CMFCTabCtrl`kaldırıldığı sekmeli pencere ( ) için bir tutamaç.|[çıkış] MDI alt penceresinin`CMFCTabCtrl`eklendiği sekmeli pencere ( ) için bir tutamaç.|Göz ardı.|
+|AFX_WM_ON_PRESS_CLOSE_BUTTON|Kullanıcı denetim çubuğunun `CDockablePane` alt yazısındaki **Kapat** düğmesini tıklattığında bir ebeveyne gönderilir.|Kullanılmadı.|Kullanıcının **Kapat** düğmesini tıklatdığı takılabilir bölmeye işaretçi.|Bir bölme kapatılamazsa DOĞRU; aksi takdirde YANLIŞ.|
+|AFX_WM_ON_RENAME_TAB|Kullanıcı değiştirilebilir bir sekmeyi yeniden adlandırdıktan sonra sekmeli pencerenin üst bölümüne gönderilir.|Yeniden adlandırılmış sekmenin sıfır tabanlı dizini.|[çıkış] Yeni sekme adını içeren bir dize için işaretçi.|Uygulama bu iletiyi işlerse sıfırsız; çerçeve için çağrı bastırmak `CMFCBaseTabCtrl::SetTabLabel`olacaktır.  Sıfır döndürülürse, çerçeve tarafından `CMFCBaseTabCtrl::SetTabLabel` çağrılır.|
+|AFX_WM_ON_RIBBON_CUSTOMIZE|Kullanıcı özelleştirmeye başladığında ana çerçeveye gönderilir. Kendi özelleştirme iletişim kutunuzu görüntülemek istiyorsanız bu iletiyi işleme.|Kullanılmadı.|Özelleştirilecek şerit denetimiiçin bir işaretçi.|Uygulama bu iletiyi işler ve kendi özelleştirme iletişim kutusunu görüntülerse sıfıra aykırıdır. Uygulama sıfır döndürürse, çerçeve yerleşik özelleştirme iletişim kutusunu görüntüler.|
+|AFX_WM_ON_TABGROUPMOUSEMOVE|Yalnızca dahili kullanım içindir.|Geçerli değildir.|Geçerli değildir.|Geçerli değildir.|
+|AFX_WM_POSTSETPREVIEWFRAME|Kullanıcının yazdırma önizleme modunu değiştirdiğini ana çerçeveye bildirmek için gönderildi|TRUE, yazdırma önizleme modunun ayarlı olduğunu gösterir. FALSE, yazdırma önizleme modunun kapalı olduğunu gösterir.|Kullanılmadı.|Kullanılmadı.|
+|AFX_WM_PROPERTY_CHANGED|Kullanıcı seçili özelliğin değerini`CMFCPropertyGridCtrl`değiştirdiğinde özellik ızgara denetiminin sahibine gönderilir.|Özellik listesinin denetim kimliği.|`CMFCPropertyGridProperty`() değiştirilen özellik için bir işaretçi.|Kullanılmadı.|
+|AFX_WM_RESETCONTEXTMENU|Kullanıcı özelleştirme sırasında bağlam menüsünü sıfırladığında ana çerçeve penceresine gönderilir.|Bağlam menüsünün kaynak kimliği.|Geçerli bağlam menüsüne işaretçi, `CMFCPopupMenu`.|Kullanılmadı.|
+|AFX_WM_RESETKEYBOARD|Kullanıcı özelleştirme sırasında tüm klavye hızlandırıcılarını sıfırladığında çerçeve bu iletiyi ana çerçeve penceresine gönderir.|Kullanılmadı.|Kullanılmadı.|Kullanılmadı.|
+|AFX_WM_RESETMENU|Kullanıcı özelleştirme sırasında bir uygulama çerçevesi menüsünü sıfırladığında çerçeve bu iletiyi menü sahibine (çerçeve penceresi) gönderir|Menü kaynak kimliği.|Kullanılmadı.|Kullanılmadı.|
+|AFX_WM_RESETPROMPT|Kullanıcı araç çubuğundan bir araç çubuğunu sıfırladığında çerçeve bu iletiyi gönderir. Varsayılan işleyici, kullanıcının araç çubuğunu sıfırlamak isteyip istemediğini soran bir ileti kutusu görüntüler.|Kullanılmadı.|Kullanılmadı.|Kullanılmadı.|
+|AFX_WM_RESETTOOLBAR|Bir `CMFCToolBar` araç çubuğu özgün durumuna geri yüklendiğinde, yani kaynaklardan yüklendiğinde, nesne bu iletiyi gönderir. Sınıfları türetilen araç çubuğu düğmelerini yeniden eklemek `CMFCToolbarButton`için bu iletiyi işleme Daha fazla bilgi için bkz. `CMFCToolbarComboBoxButton`.|Durumu geri yüklenen bir araç çubuğunun kaynak kimliği.|Kullanılmadı.|Sıfır.|
+|AFX_WM_SHOWREGULARMENU|`CMFCToolbarMenuButton`kullanıcı normal bir menü düğmesini tıklattığında nesne bu iletiyi sahibine gönderir. Kullanıcı bir düğmeyi tıklattığında açılır menüyü görüntülemek için her kullandığınızda `CMFCToolbarMenuButton` bu iletiyi işleyin.|İletiyi gönderen bir düğmenin komut kimliği.|İmlecin ekran koordinatları. Düşük sıralı sözcük x-koordinatını belirtir. Yüksek sıralı sözcük y-koordinatını belirtir.|Kullanılmadı.|
+|AFX_WM_TOOLBARMENU|Fare işaretçisi bir bölmenin istemci veya istemci olmayan alanındayken, kullanıcı farenin sağ düğmesini serbest bıraktıklarında ana çerçeve penceresine gönderilir.|Kullanılmadı.|Fare işaretçisinin ekran koordinatları. Düşük sıralı sözcük x-koordinatını belirtir. Yüksek sıralı sözcük y-koordinatını belirtir.|Uygulama bu iletiyi işlerse sıfır; aksi takdirde, sıfır değil.|
+|AFX_WM_UPDATETOOLTIPS|Araç ipucu denetimlerinin yeniden oluşturulması gerektiğini belirtmek için tüm araç ucu sahiplerine gönderilir.|Bu iletiyi işlemesi gereken denetim türü. Olası değerlerin listesi için bu konunun ardından tabloya bakın.|Kullanılmadı.|Kullanılmadı.|
+|AFX_WM_WINDOW_HELP|`CMFCWindowsManagerDialog`kullanıcı **Yardım düğmesini** tıklattığında bu iletiyi ana çerçeveye gönderir veya **Yardım** altyazı düğmesini veya F1 tuşunu tıklatarak yardım moduna girer.|Kullanılmadı.|Örneğinbir işaretçi `CMFCWindowsManagerDialog`.|Kullanılmadı.|
 
-Alt sınırı için değerleri aşağıdaki tabloda gösterilmektedir *lParam* AFX_WM_HSCROLL yönteminin parametresi:
+Aşağıdaki tablo, AFX_WM_HSCROLL yönteminin *lParam* parametresinin düşük sözcüğünün değerlerini gösterir:
 
 |||
 |-|-|
-|Değer|Açıklama|
-|SB_ENDSCROLL|Kullanıcı kaydırma sona erer.|
-|SB_LEFT|Kullanıcı için üst sol kaydırır.|
-|SB_RIGHT|Bir kullanıcı alt sağa kaydırır.|
-|SB_LINELEFT|Kullanıcı, tek bir birim olarak sol kaydırır.|
-|SB_LINERIGHT|Kullanıcı, bir birim sağa kaydırır.|
-|SB_PAGELEFT|Kullanıcı, pencerenin genişliğini olarak sol kaydırır.|
-|SB_PAGERIGHT|Kullanıcı tarafından pencerenin genişliğini sağa kaydırır.|
-|SB_THUMBPOSITION|Kullanıcı, kaydırma kutusunun (Flash) sürüklediğiniz ve fare düğmesi serbest. Dwpoint sürükleme işleminin sonunda kaydırma kutusunun konumu belirtir.|
-|SB_THUMBTRACK|Kullanıcının kaydırma kutusunun sürüklemekte olduğunu. Kullanıcı fare düğmesini bırakmadan AFX_WM_ON_HSCROLL ileti sürekli olarak bu değeri ile gönderilir. Yüksek düzeyli sözcük kaydırma kutusunun sürüklenen konumu belirtir.|
+|Değer|Anlamı|
+|SB_ENDSCROLL|Kullanıcı kaydırmayı sona erdiriyor.|
+|SB_LEFT|Kullanıcı sol üstlere kaydırılır.|
+|SB_RIGHT|Kullanıcı sağ alta kaydırılır.|
+|SB_LINELEFT|Kullanıcı bir birim tarafından sola kaydırılır.|
+|SB_LINERIGHT|Kullanıcı bir birim tarafından sağa kaydırılır.|
+|SB_PAGELEFT|Kullanıcı pencerenin genişliğinden sola kaydırır.|
+|SB_PAGERIGHT|Kullanıcı pencerenin genişliğine doğru kaydırılır.|
+|SB_THUMBPOSITION|Kullanıcı kaydırma kutusunu (başparmak) sürükledi ve fare düğmesini yayımladı. Yüksek sıralı sözcük, sürükleme işleminin sonundakaydırma kutusunun konumunu gösterir.|
+|SB_THUMBTRACK|Kullanıcı kaydırma kutusunu sürüklüyor. Kullanıcı fare düğmesini serbest bırakana kadar AFX_WM_ON_HSCROLL iletisi bu değerle tekrar tekrar gönderilir. Yüksek sıralı sözcük, kaydırma kutusunun sürüklendiği konumu gösterir.|
 
 > [!NOTE]
->  Yüksek düzeyli sözcüğün *lParam* parametresi, düşük düzey sözcük SB_THUMBPOSITION veya SB_THUMBTRACK ise kaydırma kutusunun geçerli konumu belirtir; Aksi takdirde, bu sözcüğü kullanılmaz.
+> *lParam* parametresinin yüksek sıralı sözcüğü, düşük sıralı sözcük SB_THUMBPOSITION veya SB_THUMBTRACK ise kaydırma kutusunun geçerli konumunu belirtir; aksi takdirde, bu sözcük kullanılmaz.
 
-Bayrak değerleri için aşağıdaki tabloda *lParam* AFX_WM_UPDATETOOLTIPS iletisinin parametresi:
+Aşağıdaki tabloda AFX_WM_UPDATETOOLTIPS iletisinin *lParam* parametresi için bayrak değerleri listelenir:
 
 |||
 |-|-|
-|Bayrağı|Değer|
+|Bayrak|Değer|
 |AFX_TOOLTIP_TYPE_DEFAULT|0x0001|
 |AFX_TOOLTIP_TYPE_TOOLBAR|0x0002|
 |AFX_TOOLTIP_TYPE_TAB|0x0004|
@@ -154,8 +154,8 @@ Bayrak değerleri için aşağıdaki tabloda *lParam* AFX_WM_UPDATETOOLTIPS ilet
 |AFX_TOOLTIP_TYPE_EDIT|0x0020|
 |AFX_TOOLTIP_TYPE_BUTTON|0x0040|
 |AFX_TOOLTIP_TYPE_TOOLBOX|0x0080|
-|AFX_TOOLTIP_TYPE_ALL|0xFFFF|
+|AFX_TOOLTIP_TYPE_ALL|0xffff|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve Küreseller](../../mfc/reference/mfc-macros-and-globals.md)

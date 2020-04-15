@@ -10,956 +10,941 @@ helpviewer_keywords:
 - DHTML events [MFC], event map
 - DHTML events [MFC]
 ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
-ms.openlocfilehash: 5ae37acd3e0b0c2636e6a3e985490a2feab8fa34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 30c755b2901374cffab3ce91d0683811ef6624b6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322819"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365800"
 ---
 # <a name="dhtml-event-maps"></a>DHTML Olay Eşlemeleri
 
-Aşağıdaki makroları DHTML olaylarını işlemek için kullanılabilir.
+Aşağıdaki makrolar DHTML olaylarını işlemek için kullanılabilir.
 
-## <a name="dhtml-event-map-macros"></a>DHTML olay eşleme makroları
+## <a name="dhtml-event-map-macros"></a>DHTML Olay Haritası Makroları
 
-Aşağıdaki makroları DHTML olayları işlemek için kullanılan [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md)-türetilmiş sınıflar.
+Aşağıdaki makrolar [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md)türetilmiş sınıflarda DHTML olayları işlemek için kullanılabilir.
 
 |||
 |-|-|
-|[BEGIN_DHTML_EVENT_MAP](#begin_dhtml_event_map)|DHTML olay eşlemesi başlangıcını işaretler.|
-|[BEGIN_DHTML_EVENT_MAP_INLINE](#begin_dhtml_event_map_inline)|DHTML olay eşlemesi başlangıcını işaretler.|
-|[DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map)|DHTML olay eşlemesi bildirir.|
-|[DHTML_EVENT](#dhtml_event)|Tek bir HTML öğesi için belge düzeyindeki bir olayı işlemek için kullanılır.|
-|[DHTML_EVENT_AXCONTROL](#dhtml_event_axcontrol)|Bir ActiveX denetimi tarafından tetiklenen bir olayı işlemek için kullanılır.|
-|[DHTML_EVENT_CLASS](#dhtml_event_class)|Belirli bir CSS sınıfı ile tüm HTML öğeleri için belge düzeyindeki bir olayı işlemek için kullanılır.|
+|[BEGIN_DHTML_EVENT_MAP](#begin_dhtml_event_map)|DHTML olay haritasının başlangıcını işaretler.|
+|[BEGIN_DHTML_EVENT_MAP_INLINE](#begin_dhtml_event_map_inline)|DHTML olay haritasının başlangıcını işaretler.|
+|[DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map)|DHTML olay haritasını bildirir.|
+|[DHTML_EVENT](#dhtml_event)|Tek bir HTML öğesi için belge düzeyinde bir olayı işlemek için kullanılır.|
+|[DHTML_EVENT_AXCONTROL](#dhtml_event_axcontrol)|ActiveX denetimi tarafından ateşlenen bir olayı işlemek için kullanılır.|
+|[DHTML_EVENT_CLASS](#dhtml_event_class)|Belirli bir CSS sınıfına sahip tüm HTML öğeleri için belge düzeyinde ki bir olayı işlemek için kullanılır.|
 |[DHTML_EVENT_ELEMENT](#dhtml_event_element)|Öğe düzeyinde bir olayı işlemek için kullanılır.|
-|[DHTML_EVENT_ONAFTERUPDATE](#dhtml_event_onafterupdate)|İşlemek için kullanılan `onafterupdate` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONBEFOREUPDATE](#dhtml_event_onbeforeupdate)|İşlemek için kullanılan `onbeforeupdate` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONBLUR](#dhtml_event_onblur)|İşlemek için kullanılan `onblur` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONCHANGE](#dhtml_event_onchange)|İşlemek için kullanılan `onchange` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONCLICK](#dhtml_event_onclick)|İşlemek için kullanılan `onclick` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONDATAAVAILABLE](#dhtml_event_ondataavailable)|İşlemek için kullanılan `ondataavailable` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONDATASETCHANGED](#dhtml_event_ondatasetchanged)|İşlemek için kullanılan `ondatasetchanged` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONDATASETCOMPLETE](#dhtml_event_ondatasetcomplete)|İşlemek için kullanılan `ondatasetcomplete` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONDBLCLICK](#dhtml_event_ondblclick)|İşlemek için kullanılan `ondblclick` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONDRAGSTART](#dhtml_event_ondragstart)|İşlemek için kullanılan `ondragstart` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONERRORUPDATE](#dhtml_event_onerrorupdate)|İşlemek için kullanılan `onerrorupdate` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONFILTERCHANGE](#dhtml_event_onfilterchange)|İşlemek için kullanılan `onfilterchange` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONFOCUS](#dhtml_event_onfocus)|İşlemek için kullanılan `onfocus` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONHELP](#dhtml_event_onhelp)|İşlemek için kullanılan `onhelp` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONKEYDOWN](#dhtml_event_onkeydown)|İşlemek için kullanılan `onkeydown` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONKEYPRESS](#dhtml_event_onkeypress)|İşlemek için kullanılan `onkeypress` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONKEYUP](#dhtml_event_onkeyup)|İşlemek için kullanılan `onkeyup` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONMOUSEDOWN](#dhtml_event_onmousedown)|İşlemek için kullanılan `onmousedown` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONMOUSEMOVE](#dhtml_event_onmousemove)|İşlemek için kullanılan `onmousemove` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONMOUSEOUT](#dhtml_event_onmouseout)|İşlemek için kullanılan `onmouseout` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONMOUSEOVER](#dhtml_event_onmouseover)|İşlemek için kullanılan `onmouseover` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONMOUSEUP](#dhtml_event_onmouseup)|İşlemek için kullanılan `onmouseup` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONRESIZE](#dhtml_event_onresize)|İşlemek için kullanılan `onresize` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONROWENTER](#dhtml_event_onrowenter)|İşlemek için kullanılan `onrowenter` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONROWEXIT](#dhtml_event_onrowexit)|İşlemek için kullanılan `onrowexit` olaydan HTML öğesi.|
-|[DHTML_EVENT_ONSELECTSTART](#dhtml_event_onselectstart)|İşlemek için kullanılan `onselectstart` olaydan HTML öğesi.|
-|[DHTML_EVENT_TAG](#dhtml_event_tag)|Belirli bir HTML etiketi ile tüm öğeler için belge düzeyindeki bir olayı işlemek için kullanılır.|
-|[END_DHTML_EVENT_MAP](#end_dhtml_event_map)|DHTML olay eşlemesi sonunu işaretler.|
-|[END_DHTML_EVENT_MAP_INLINE](#end_dhtml_event_map_inline)|DHTML olay eşlemesi sonunu işaretler. |
+|[DHTML_EVENT_ONAFTERUPDATE](#dhtml_event_onafterupdate)|`onafterupdate` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONBEFOREUPDATE](#dhtml_event_onbeforeupdate)|`onbeforeupdate` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONBLUR](#dhtml_event_onblur)|`onblur` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONCHANGE](#dhtml_event_onchange)|`onchange` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONCLICK](#dhtml_event_onclick)|`onclick` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONDATAAVAILABLE](#dhtml_event_ondataavailable)|`ondataavailable` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONDATASETCHANGED](#dhtml_event_ondatasetchanged)|`ondatasetchanged` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONDATASETCOMPLETE](#dhtml_event_ondatasetcomplete)|`ondatasetcomplete` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONDBLCLICK](#dhtml_event_ondblclick)|`ondblclick` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONDRAGSTART](#dhtml_event_ondragstart)|`ondragstart` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONERRORUPDATE](#dhtml_event_onerrorupdate)|`onerrorupdate` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONFILTERCHANGE](#dhtml_event_onfilterchange)|`onfilterchange` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONFOCUS](#dhtml_event_onfocus)|`onfocus` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONHELP](#dhtml_event_onhelp)|`onhelp` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONKEYDOWN](#dhtml_event_onkeydown)|`onkeydown` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONKEYPRESS](#dhtml_event_onkeypress)|`onkeypress` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONKEYUP](#dhtml_event_onkeyup)|`onkeyup` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONMOUSEDOWN](#dhtml_event_onmousedown)|`onmousedown` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONMOUSEMOVE](#dhtml_event_onmousemove)|`onmousemove` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONMOUSEOUT](#dhtml_event_onmouseout)|`onmouseout` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONMOUSEOVER](#dhtml_event_onmouseover)|`onmouseover` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONMOUSEUP](#dhtml_event_onmouseup)|`onmouseup` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONRESIZE](#dhtml_event_onresize)|`onresize` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONROWENTER](#dhtml_event_onrowenter)|`onrowenter` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONROWEXIT](#dhtml_event_onrowexit)|`onrowexit` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_ONSELECTSTART](#dhtml_event_onselectstart)|`onselectstart` Olayı bir HTML öğesinden işlemek için kullanılır.|
+|[DHTML_EVENT_TAG](#dhtml_event_tag)|Belirli bir HTML etiketine sahip tüm öğeler için belge düzeyindeki bir olayı işlemek için kullanılır.|
+|[END_DHTML_EVENT_MAP](#end_dhtml_event_map)|DHTML olay haritasının sonunu işaretler.|
+|[END_DHTML_EVENT_MAP_INLINE](#end_dhtml_event_map_inline)|DHTML olay haritasının sonunu işaretler. |
 
-## <a name="url-event-map-macros"></a>URL olay eşleme makroları
+## <a name="url-event-map-macros"></a>URL Etkinlik Haritası Makroları
 
-Aşağıdaki makroları DHTML olayları işlemek için kullanılan [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)-türetilmiş sınıflar.
+Aşağıdaki makrolar [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)türetilmiş sınıflarda DHTML olayları işlemek için kullanılabilir.
 
 |||
 |-|-|
-|[BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map)|Birden çok sayfalı DHTML ve URL olay eşlemesi başlangıcını işaretler.|
-|[BEGIN_EMBED_DHTML_EVENT_MAP](#begin_embed_dhtml_event_map)|Katıştırılmış bir DHTML olay eşlemesi başlangıcını işaretler.|
-|[BEGIN_URL_ENTRIES](#begin_url_entries)|Bir URL olay girişi eşlemesi başlangıcını işaretler.|
-|[DECLARE_DHTML_URL_EVENT_MAP](#declare_dhtml_url_event_map)|Birden çok sayfalı DHTML ve URL olay eşlemesi bildirir.|
-|[END_DHTML_URL_EVENT_MAP](#end_dhtml_url_event_map)|Birden çok sayfalı DHTML ve URL olay eşlemesi sonunu işaretler.|
-|[END_EMBED_DHTML_EVENT_MAP](#end_embed_dhtml_event_map)|Katıştırılmış bir DHTML olay eşlemesi sonunu işaretler.|
-|[END_URL_ENTRIES](#end_url_entries)|Bir URL olay girişi eşlemesi sonunu işaretler.|
-|[URL_EVENT_ENTRY](#url_event_entry)|Birden çok sayfa iletişim sayfasında URL veya HTML kaynak eşlenir.|
+|[BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map)|Çok sayfalı DHTML ve URL olay haritasının başlangıcını işaretler.|
+|[BEGIN_EMBED_DHTML_EVENT_MAP](#begin_embed_dhtml_event_map)|Katıştılmış bir DHTML olay haritasının başlangıcını işaretler.|
+|[BEGIN_URL_ENTRIES](#begin_url_entries)|URL olay giriş haritasının başlangıcını işaretler.|
+|[DECLARE_DHTML_URL_EVENT_MAP](#declare_dhtml_url_event_map)|Çok sayfalı DHTML ve URL olay eşlesini bildirir.|
+|[END_DHTML_URL_EVENT_MAP](#end_dhtml_url_event_map)|Çok sayfalı DHTML ve URL olay haritasının sonunu işaretler.|
+|[END_EMBED_DHTML_EVENT_MAP](#end_embed_dhtml_event_map)|Katıştılmış Bir DHTML olay haritasının sonunu işaretler.|
+|[END_URL_ENTRIES](#end_url_entries)|URL olay giriş haritasının sonunu işaretler.|
+|[URL_EVENT_ENTRY](#url_event_entry)|URL veya HTML kaynağını çok sayfalı iletişim kutusundaki bir sayfayla eşler.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="begin_dhtml_event_map"></a>  BEGIN_DHTML_EVENT_MAP
+## <a name="begin_dhtml_event_map"></a><a name="begin_dhtml_event_map"></a>BEGIN_DHTML_EVENT_MAP
 
-DHTML olay eşlemesi tarafından tanımlanan sınıfı için kaynak dosyasında yerleştirildiğinde başlangıcını işaretleyen `className`.
+`className`Tarafından tanımlanan sınıfın kaynak dosyasına yerleştirildiğinde DHTML olay haritasının başlangıcını işaretler.
 
-```
+```cpp
 BEGIN_DHTML_EVENT_MAP(className)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*className*<br/>
-DHTML olay eşlemesi içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı olarak türetilmesi [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md) ve [DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) sınıf tanımı içinde makrosu.
+*Classname*<br/>
+DHTML olay eşlemini içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı olarak [CDHtmlDialog'dan](../../mfc/reference/cdhtmldialog-class.md) türemelidir ve [DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) makroyu sınıf tanımına dahil etmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DHTML olay eşlemesi bilgileri sağlamak için kendi sınıfınızı ekleyin `CDHtmlDialog` HTML öğeleri ya da ActiveX denetimlerini sınıfınızdaki işleyici işlevleri için bir web sayfasında tarafından tetiklenen rota olayları için kullanılabilir.
+Bir web sayfasında HTML öğeleri veya ActiveX denetimleri tarafından ateşlenen olayları sınıfınızdaki işleyici işlevlerine yönlendirmek için kullanılabilecek bilgileri `CDHtmlDialog` sağlamak için sınıfınıza bir DHTML olay haritası ekleyin.
 
-Begın_dhtml_event_map makrosu DHTML_EVENT makrosu olayları işlemek için sınıfı, ardından sınıf uygulama (.cpp) dosyası (örneğin, fareyi üzerine getirme olayları DHTML_EVENT_ONMOUSEOVER) yerleştirin. Kullanım [END_DHTML_EVENT_MAP](#end_dhtml_event_map) olay eşlemesi sonunu işaretlemek için makrosu. Bu makrolar aşağıdaki işlevi uygulayın:
+sınıfın uygulama (.cpp) dosyasına BEGIN_DHTML_EVENT_MAP makroyu ve ardından sınıfın işleyeceğiniz olaylar için DHTML_EVENT makroları yerleştirin (örneğin, fare üzerinde olaylar için DHTML_EVENT_ONMOUSEOVER). Olay haritasının sonunu işaretlemek için [END_DHTML_EVENT_MAP](#end_dhtml_event_map) makroyu kullanın. Bu makrolar aşağıdaki işlevi uygular:
 
 `virtual const DHtmlEventMapEntry* GetDHtmlEventMap();`
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="begin_dhtml_event_map_inline"></a>  BEGIN_DHTML_EVENT_MAP_INLINE
+## <a name="begin_dhtml_event_map_inline"></a><a name="begin_dhtml_event_map_inline"></a>BEGIN_DHTML_EVENT_MAP_INLINE
 
-DHTML olay eşlemesi için sınıf tanımının içinde başlangıcını işaretleyen *className*.
+*Sınıf Adı*için sınıf tanımı içinde DHTML olay haritasının başlangıcını işaretler.
 
-```
+```cpp
 BEGIN_DHTML_EVENT_MAP_INLINE(className)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*className*<br/>
-DHTML olay eşlemesi içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı olarak türetilmesi [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md) ve [DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) sınıf tanımı içinde makrosu.
+*Classname*<br/>
+DHTML olay eşlemini içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı olarak [CDHtmlDialog'dan](../../mfc/reference/cdhtmldialog-class.md) türemelidir ve [DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) makroyu sınıf tanımına dahil etmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DHTML olay eşlemesi bilgileri sağlamak için kendi sınıfınızı ekleyin `CDHtmlDialog` HTML öğeleri ya da ActiveX denetimlerini sınıfınızdaki işleyici işlevleri için bir web sayfasında tarafından tetiklenen rota olayları için kullanılabilir.
+Bir web sayfasında HTML öğeleri veya ActiveX denetimleri tarafından ateşlenen olayları sınıfınızdaki işleyici işlevlerine yönlendirmek için kullanılabilecek bilgileri `CDHtmlDialog` sağlamak için sınıfınıza bir DHTML olay haritası ekleyin.
 
-Begın_dhtml_event_map makrosu DHTML_EVENT makrosu olayları işlemek için sınıfı, ardından sınıfın tanımını (.h) dosyasına (örneğin, fareyi üzerine getirme olayları DHTML_EVENT_ONMOUSEOVER) koyun. Kullanım [end_dhtml_event_map_ınlıne](#end_dhtml_event_map_inline) olay eşlemesi sonunu işaretlemek için makrosu. Bu makrolar aşağıdaki işlevi uygulayın:
+BEGIN_DHTML_EVENT_MAP makroyu sınıfın tanımı (.h) dosyasına ve ardından sınıfın işleyeceğiniz olaylar için makroDHTML_EVENT (örneğin, fare üzerinden olaylar için DHTML_EVENT_ONMOUSEOVER) yerleştirin. Olay haritasının sonunu işaretlemek için [END_DHTML_EVENT_MAP_INLINE](#end_dhtml_event_map_inline) makroyu kullanın. Bu makrolar aşağıdaki işlevi uygular:
 
 `virtual const DHtmlEventMapEntry* GetDHtmlEventMap();`
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="declare_dhtml_event_map"></a>  DECLARE_DHTML_EVENT_MAP
+## <a name="declare_dhtml_event_map"></a><a name="declare_dhtml_event_map"></a>DECLARE_DHTML_EVENT_MAP
 
-DHTML olay eşlemesi bir sınıf tanımı içinde bildirir.
+Bir DHTML olay haritasını sınıf tanımında bildirir.
 
-```
+```cpp
 DECLARE_DHTML_EVENT_MAP()
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu Makro tanımında kullanılacak olan [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md)-türetilmiş sınıflar.
+Bu makro [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md)türetilmiş sınıfların tanımında kullanılacaktır.
 
-Kullanım [begın_dhtml_event_map](#begin_dhtml_event_map) veya [begın_dhtml_event_map_ınlıne](#begin_dhtml_event_map_inline) haritayı uygulamak için.
+Haritayı uygulamak için [BEGIN_DHTML_EVENT_MAP](#begin_dhtml_event_map) veya [BEGIN_DHTML_EVENT_MAP_INLINE](#begin_dhtml_event_map_inline) kullanın.
 
-[DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) aşağıdaki işlev bildirir:
+[DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) aşağıdaki işlevi bildirir:
 
 `virtual const DHtmlEventMapEntry* GetDHtmlEventMap( );`
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event"></a>  DHTML_EVENT
+## <a name="dhtml_event"></a><a name="dhtml_event"></a>DHTML_EVENT
 
-(Belge düzeyinde) tarafından tanımlanan bir olay işleme *DISPID* tarafından tanımlanan HTML öğesi tarafından oluşturulan *elemName*.
+*ElemName*tarafından tanımlanan HTML öğesi tarafından ortaya çıkan *dispid* tarafından tanımlanan bir olay (belge düzeyinde) işler .
 
-```
+```cpp
 DHTML_EVENT(dispid, elemName,  memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*DISPID*<br/>
-DISPID olayın işlenmesi.
+*Dıspıd*<br/>
+Olayın DISPID ele alınacak.
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR veya belge olayları işlemek için NULL.
+Olayı kaynak sağlayan HTML öğesinin kimliğini tutan bir LPCWSTR veya belge olaylarını işlemek için NULL.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_axcontrol"></a>  DHTML_EVENT_AXCONTROL
+## <a name="dhtml_event_axcontrol"></a><a name="dhtml_event_axcontrol"></a>DHTML_EVENT_AXCONTROL
 
-Tarafından tanımlanan olayını işler *DISPID* tarafından belirlenen ActiveX denetimi tarafından tetiklenen *MethodName*.
+*ControlName*tarafından tanımlanan ActiveX denetimi tarafından ateşlenen *dispid* tarafından tanımlanan olayı işler.
 
-```
+```cpp
 DHTML_EVENT_AXCONTROL(dispid, controlName,  memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*DISPID*<br/>
-İşlenecek Olay gönderme kimliği.
+*Dıspıd*<br/>
+Ele alınacak olayın sevk kimliği.
 
-*MethodName*<br/>
-Olay tetiklenmeden denetimin HTML kimliği bulunduran bir LPCWSTR.
+*Controlname*<br/>
+Olayı ateşleten kontrol edilen denetimin HTML kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_class"></a>  DHTML_EVENT_CLASS
+## <a name="dhtml_event_class"></a><a name="dhtml_event_class"></a>DHTML_EVENT_CLASS
 
-(Belge düzeyinde) tarafından tanımlanan bir olay işleme *DISPID* herhangi bir HTML öğesi tarafından tanımlanan CSS sınıf ile kaynaklanan *elemName*.
+*ElemName*tarafından tanımlanan CSS sınıfı ile herhangi bir HTML öğesi tarafından kaynaklanan *dispid* tarafından tanımlanan bir olay (belge düzeyinde) işler (belge düzeyinde).
 
-```
+```cpp
 DHTML_EVENT_CLASS(dispid, elemName,  memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*DISPID*<br/>
-İşlenecek Olay gönderme kimliği.
+*Dıspıd*<br/>
+Ele alınacak olayın sevk kimliği.
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğeleri CSS sınıfının bulunduran bir LPCWSTR.
+Olayı kaynak sağlayan HTML elemanlarının CSS sınıfını tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_element"></a>  DHTML_EVENT_ELEMENT
+## <a name="dhtml_event_element"></a><a name="dhtml_event_element"></a>DHTML_EVENT_ELEMENT
 
-İşleme (tarafından tanımlanan öğede *elemName*) tarafından tanımlanan bir olay *DISPID*.
+Tutamaçları *(elemName*tarafından tanımlanan eleman) *dispid*tarafından tanımlanan bir olay .
 
-```
+```cpp
 DHTML_EVENT_ELEMENT(dispid, elemName,  memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*DISPID*<br/>
-İşlenecek Olay gönderme kimliği.
+*Dıspıd*<br/>
+Ele alınacak olayın sevk kimliği.
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
-Bu makro nonbubbling olayları işlemek için kullanılan, olay kaynağı tarafından tanımlanan öğe olacaktır *elemName*.
+Bu makro, bukbilmeyen olayları işlemek için kullanılırsa, olayın kaynağı *elemName*tarafından tanımlanan öğe olacaktır.
 
-Bu makro, tırmanma olayları işlemek için kullanılırsa, öğenin tanımlanan *elemName* olayının kaynağı, olmayabilir (kaynak tarafından bulunan herhangi bir öğe olabilecek *elemName*).
+Bu makro köpürme olaylarını işlemek için kullanılırsa, *elemName* tarafından tanımlanan öğe olayın kaynağı olmayabilir (kaynak *elemName*tarafından bulunan herhangi bir öğe olabilir).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onafterupdate"></a>  DHTML_EVENT_ONAFTERUPDATE
+## <a name="dhtml_event_onafterupdate"></a><a name="dhtml_event_onafterupdate"></a>DHTML_EVENT_ONAFTERUPDATE
 
-İşleme (belge düzeyinde) `onafterupdate` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onafterupdate` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
+```cpp
 DHTML_EVENT_ONAFTERUPDATE(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onbeforeupdate"></a>  DHTML_EVENT_ONBEFOREUPDATE
+## <a name="dhtml_event_onbeforeupdate"></a><a name="dhtml_event_onbeforeupdate"></a>DHTML_EVENT_ONBEFOREUPDATE
 
-İşleme (belge düzeyinde) `onbeforeupdate` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onbeforeupdate` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
+```cpp
 DHTML_EVENT_ONBEFOREUPDATE(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onblur"></a>  DHTML_EVENT_ONBLUR
+## <a name="dhtml_event_onblur"></a><a name="dhtml_event_onblur"></a>DHTML_EVENT_ONBLUR
 
-İşleme (öğe düzeyinde) `onblur` olay. Nonbubbling olay budur.
+`onblur` Olayı işler (öğe düzeyinde). Bu bir nonbubbling olaydır.
 
-```
+```cpp
 DHTML_EVENT_ONBLUR(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onchange"></a>  DHTML_EVENT_ONCHANGE
+## <a name="dhtml_event_onchange"></a><a name="dhtml_event_onchange"></a>DHTML_EVENT_ONCHANGE
 
-İşleme (öğe düzeyinde) `onchange` olay. Nonbubbling olay budur.
+`onchange` Olayı işler (öğe düzeyinde). Bu bir nonbubbling olaydır.
 
-```
+```cpp
 DHTML_EVENT_ONCHANGE(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onclick"></a>  DHTML_EVENT_ONCLICK
+## <a name="dhtml_event_onclick"></a><a name="dhtml_event_onclick"></a>DHTML_EVENT_ONCLICK
 
-İşleme (belge düzeyinde) `onclick` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onclick` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
+```cpp
 DHTML_EVENT_ONCLICK(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_ondataavailable"></a>  DHTML_EVENT_ONDATAAVAILABLE
+## <a name="dhtml_event_ondataavailable"></a><a name="dhtml_event_ondataavailable"></a>DHTML_EVENT_ONDATAAVAILABLE
 
-İşleme (belge düzeyinde) `ondataavailable` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `ondataavailable` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
+```cpp
 DHTML_EVENT_ONDATAAVAILABLE(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_ondatasetchanged"></a>  DHTML_EVENT_ONDATASETCHANGED
+## <a name="dhtml_event_ondatasetchanged"></a><a name="dhtml_event_ondatasetchanged"></a>DHTML_EVENT_ONDATASETCHANGED
 
-İşleme (belge düzeyinde) `ondatasetchanged` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `ondatasetchanged` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
+```cpp
 DHTML_EVENT_ONDATASETCHANGED(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_ondatasetcomplete"></a>  DHTML_EVENT_ONDATASETCOMPLETE
+## <a name="dhtml_event_ondatasetcomplete"></a><a name="dhtml_event_ondatasetcomplete"></a>DHTML_EVENT_ONDATASETCOMPLETE
 
-İşleme (belge düzeyinde) `ondatasetcomplete` olay kaynağı tarafından tanımlanan HTML öğesi tarafından `elemName`.
+Tutamaçları (belge düzeyinde) `ondatasetcomplete` tarafından `elemName`tanımlanan HTML öğesi tarafından kaynaklanan olay.
 
-```
+```cpp
 DHTML_EVENT_ONDATASETCOMPLETE(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_ondblclick"></a>  DHTML_EVENT_ONDBLCLICK
+## <a name="dhtml_event_ondblclick"></a><a name="dhtml_event_ondblclick"></a>DHTML_EVENT_ONDBLCLICK
 
-İşleme (belge düzeyinde) `ondblclick` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `ondblclick` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
+```cpp
 DHTML_EVENT_ONDBLCLICK(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_ondragstart"></a>  DHTML_EVENT_ONDRAGSTART
+## <a name="dhtml_event_ondragstart"></a><a name="dhtml_event_ondragstart"></a>DHTML_EVENT_ONDRAGSTART
 
-İşleme (belge düzeyinde) `ondragstart` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `ondragstart` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
+```cpp
 DHTML_EVENT_ONDRAGSTART(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onerrorupdate"></a>  DHTML_EVENT_ONERRORUPDATE
+## <a name="dhtml_event_onerrorupdate"></a><a name="dhtml_event_onerrorupdate"></a>DHTML_EVENT_ONERRORUPDATE
 
-İşleme (belge düzeyinde) `onerrorupdate` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onerrorupdate` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
+```cpp
 DHTML_EVENT_ONERRORUPDATE(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onfilterchange"></a>  DHTML_EVENT_ONFILTERCHANGE
+## <a name="dhtml_event_onfilterchange"></a><a name="dhtml_event_onfilterchange"></a>DHTML_EVENT_ONFILTERCHANGE
 
-İşleme (belge düzeyinde) `onfilterchange` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onfilterchange` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONFILTERCHANGE(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onfocus"></a>  DHTML_EVENT_ONFOCUS
+## <a name="dhtml_event_onfocus"></a><a name="dhtml_event_onfocus"></a>DHTML_EVENT_ONFOCUS
 
-İşleme (öğe düzeyinde) `onfocus` olay. Nonbubbling olay budur.
+`onfocus` Olayı işler (öğe düzeyinde). Bu bir nonbubbling olaydır.
 
-```
-
+```cpp
 DHTML_EVENT_ONFOCUS(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onhelp"></a>  DHTML_EVENT_ONHELP
+## <a name="dhtml_event_onhelp"></a><a name="dhtml_event_onhelp"></a>DHTML_EVENT_ONHELP
 
-İşleme (belge düzeyinde) `onhelp` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onhelp` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONHELP(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onkeydown"></a>  DHTML_EVENT_ONKEYDOWN
+## <a name="dhtml_event_onkeydown"></a><a name="dhtml_event_onkeydown"></a>DHTML_EVENT_ONKEYDOWN
 
-İşleme (belge düzeyinde) `onkeydown` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onkeydown` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONKEYDOWN(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onkeypress"></a>  DHTML_EVENT_ONKEYPRESS
+## <a name="dhtml_event_onkeypress"></a><a name="dhtml_event_onkeypress"></a>DHTML_EVENT_ONKEYPRESS
 
-İşleme (belge düzeyinde) `onkeypress` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onkeypress` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONKEYPRESS(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onkeyup"></a>  DHTML_EVENT_ONKEYUP
+## <a name="dhtml_event_onkeyup"></a><a name="dhtml_event_onkeyup"></a>DHTML_EVENT_ONKEYUP
 
-İşleme (belge düzeyinde) `onkeyup` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onkeyup` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONKEYUP(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onmousedown"></a>  DHTML_EVENT_ONMOUSEDOWN
+## <a name="dhtml_event_onmousedown"></a><a name="dhtml_event_onmousedown"></a>DHTML_EVENT_ONMOUSEDOWN
 
-İşleme (belge düzeyinde) `onmousedown` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onmousedown` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONMOUSEDOWN(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onmousemove"></a>  DHTML_EVENT_ONMOUSEMOVE
+## <a name="dhtml_event_onmousemove"></a><a name="dhtml_event_onmousemove"></a>DHTML_EVENT_ONMOUSEMOVE
 
-İşleme (belge düzeyinde) `onmousemove` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onmousemove` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONMOUSEMOVE(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onmouseout"></a>  DHTML_EVENT_ONMOUSEOUT
+## <a name="dhtml_event_onmouseout"></a><a name="dhtml_event_onmouseout"></a>DHTML_EVENT_ONMOUSEOUT
 
-İşleme (belge düzeyinde) `onmouseout` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onmouseout` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONMOUSEOUT(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onmouseover"></a>  DHTML_EVENT_ONMOUSEOVER
+## <a name="dhtml_event_onmouseover"></a><a name="dhtml_event_onmouseover"></a>DHTML_EVENT_ONMOUSEOVER
 
-İşleme (belge düzeyinde) `onmouseover` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onmouseover` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONMOUSEOVER(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onmouseup"></a>  DHTML_EVENT_ONMOUSEUP
+## <a name="dhtml_event_onmouseup"></a><a name="dhtml_event_onmouseup"></a>DHTML_EVENT_ONMOUSEUP
 
-İşleme (belge düzeyinde) `onmouseup` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onmouseup` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONMOUSEUP(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onresize"></a>  DHTML_EVENT_ONRESIZE
+## <a name="dhtml_event_onresize"></a><a name="dhtml_event_onresize"></a>DHTML_EVENT_ONRESIZE
 
-İşleme (öğe düzeyinde) `onresize` olay. Nonbubbling olay budur.
+`onresize` Olayı işler (öğe düzeyinde). Bu bir nonbubbling olaydır.
 
-```
-
+```cpp
 DHTML_EVENT_ONRESIZE(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onrowenter"></a>  DHTML_EVENT_ONROWENTER
+## <a name="dhtml_event_onrowenter"></a><a name="dhtml_event_onrowenter"></a>DHTML_EVENT_ONROWENTER
 
-İşleme (belge düzeyinde) `onrowenter` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onrowenter` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONROWENTER(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onrowexit"></a>  DHTML_EVENT_ONROWEXIT
+## <a name="dhtml_event_onrowexit"></a><a name="dhtml_event_onrowexit"></a>DHTML_EVENT_ONROWEXIT
 
-İşleme (belge düzeyinde) `onrowexit` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onrowexit` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONROWEXIT(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_onselectstart"></a>  DHTML_EVENT_ONSELECTSTART
+## <a name="dhtml_event_onselectstart"></a><a name="dhtml_event_onselectstart"></a>DHTML_EVENT_ONSELECTSTART
 
-İşleme (belge düzeyinde) `onselectstart` olay kaynağı tarafından tanımlanan HTML öğesi tarafından *elemName*.
+ElemName tarafından tanımlanan HTML `onselectstart` öğesi tarafından ortaya çıkan *elemName*olay (belge düzeyinde) tanıtılır ..
 
-```
-
+```cpp
 DHTML_EVENT_ONSELECTSTART(elemName, memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğesi kimliği bulunduran bir LPCWSTR.
+Olayı kaynak gösteren HTML öğesinin kimliğini tutan bir LPCWSTR.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="dhtml_event_tag"></a>  DHTML_EVENT_TAG
+## <a name="dhtml_event_tag"></a><a name="dhtml_event_tag"></a>DHTML_EVENT_TAG
 
-(Belge düzeyinde) tarafından tanımlanan bir olay işleme `dispid` tarafından tanımlanan HTML etiketi ile herhangi bir HTML öğesi tarafından oluşturulan *elemName*.
+ElemName tarafından tanımlanan HTML etiketine `dispid` sahip herhangi bir HTML öğesi tarafından *elemName*tanımlanan bir olayı (belge düzeyinde) işler (belge düzeyinde) işler.
 
-```
+```cpp
 DHTML_EVENT_TAG(dispid, elemName,  memberFxn)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*DISPID*<br/>
-İşlenecek Olay gönderme kimliği.
+*Dıspıd*<br/>
+Ele alınacak olayın sevk kimliği.
 
 *elemName*<br/>
-Olay kaynağını belirleme HTML öğeleri HTML etiketi.
+Olayı kaynak gösteren HTML öğelerinin HTML etiketi.
 
-*memberFxn*<br/>
-Olay işleyicisi işlevi.
+*üyeFxn*<br/>
+Olay için işleyici işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir giriş eklemek için bu makroyu kullanın [DHTML olay eşlemesi](#begin_dhtml_event_map_inline) sınıfınızdaki.
+Sınıfınızdaki [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="end_dhtml_event_map"></a>  END_DHTML_EVENT_MAP
+## <a name="end_dhtml_event_map"></a><a name="end_dhtml_event_map"></a>END_DHTML_EVENT_MAP
 
-DHTML olay eşlemesi sonunu işaretler.
+DHTML olay haritasının sonunu işaretler.
 
-```
+```cpp
 END_DHTML_EVENT_MAP()
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle birlikte kullanılmalıdır [begın_dhtml_event_map](#begin_dhtml_event_map).
+[BEGIN_DHTML_EVENT_MAP](#begin_dhtml_event_map)ile birlikte kullanılmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="begin_dhtml_url_event_map"></a>  BEGIN_DHTML_URL_EVENT_MAP
+## <a name="begin_dhtml_url_event_map"></a><a name="begin_dhtml_url_event_map"></a>BEGIN_DHTML_URL_EVENT_MAP
 
-DHTML ve URL bir olay eşlemesi tanımını bir çok sayfalı iletişim kutusunda başlatır.
+Çok sayfalı bir iletişim kutusunda DHTML ve URL olay eşlemi tanımını başlatır.
 
-```
+```cpp
 BEGIN_DHTML_URL_EVENT_MAP()
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Begın_dhtml_url_event_map koymak uygulama dosyasında, [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)-türetilmiş sınıf. İle takip [DHTML olay eşlemeleri katıştırılmış](#begin_embed_dhtml_event_map) ve [URL girişleri](#begin_url_entries)ve ardından kapatın [END_DHTML_URL_EVENT_MAP](#end_dhtml_url_event_map). Dahil [DECLARE_DHTML_URL_EVENT_MAP](#declare_dhtml_url_event_map) sınıf tanımı içine makrosu.
+[CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)türetilmiş sınıf uygulama dosyasına BEGIN_DHTML_URL_EVENT_MAP koyun. [Katıştılmış DHTML olay haritaları](#begin_embed_dhtml_event_map) ve [URL girişleri](#begin_url_entries)ile izleyin ve ardından [END_DHTML_URL_EVENT_MAP](#end_dhtml_url_event_map)ile kapatın. sınıf tanımına [DECLARE_DHTML_URL_EVENT_MAP](#declare_dhtml_url_event_map) makroyu ekleyin.
 
 ### <a name="example"></a>Örnek
 
@@ -967,187 +952,187 @@ Begın_dhtml_url_event_map koymak uygulama dosyasında, [CMultiPageDHtmlDialog](
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="begin_embed_dhtml_event_map"></a>  BEGIN_EMBED_DHTML_EVENT_MAP
+## <a name="begin_embed_dhtml_event_map"></a><a name="begin_embed_dhtml_event_map"></a>BEGIN_EMBED_DHTML_EVENT_MAP
 
-Bir çok sayfalı iletişim kutusunda bir katıştırılmış DHTML olay eşlemesi tanımını başlatır.
+Çok sayfalı bir iletişim kutusunda katıştırılmış DHTML olay eşlemi tanımını başlatır.
 
-```
+```cpp
 BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*className*<br/>
-Olay eşlemesi içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı olarak türetilmesi [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md). Katıştırılmış DHTML olay eşlemesi içinde olmalıdır bir [DHTML ve URL olay eşlemesi](#begin_dhtml_url_event_map)).
+*Classname*<br/>
+Olay haritasını içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı [olarak CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)türemelidir. Katıştılmış DHTML olay eşlemi bir [DHTML ve URL olay haritasının](#begin_dhtml_url_event_map)içinde olmalıdır).
 
-*mapName*<br/>
-Bu olayı harita sayfa belirtir. Bu eşleşen *mapName* içinde [URL_EVENT_ENTRY](#url_event_entry) makrosu gerçekten URL veya HTML kaynak tanımlama.
+*Mapname*<br/>
+Olay haritasını bu olan sayfayı belirtir. Bu, url veya HTML kaynağını tanımlayan [URL_EVENT_ENTRY](#url_event_entry) makrodaki *mapName* ile eşleşir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her biri DHTML olayları tetikleyebilen, birden çok HTML sayfasını, bir çok sayfalı DHTML iletişim oluştuğundan katıştırılmış olay eşlemeleri olay işleyicilerini sayfa başına temelinde eşleştirmek için kullanılır.
+Çok sayfalı bir DHTML iletişim kutusu, her biri DHTML olaylarını yükseltebilen birden çok HTML sayfasından oluştuğundan, olayları sayfa başına işleyicilerle eşlemek için katıştırılmış olay haritaları kullanılır.
 
-DHTML ve URL bir olay eşlemesi içinde ekli olay eşlemeleri, arkasından bir begın_embed_dhtml_event_map makrosu oluşur [DHTML_EVENT](#dhtml_event) makroları ve [END_EMBED_DHTML_EVENT_MAP](#end_embed_dhtml_event_map) makrosu.
+DHTML ve URL olay haritasına katıştılmış olay eşlemleri, BEGIN_EMBED_DHTML_EVENT_MAP makrosu ve ardından [DHTML_EVENT](#dhtml_event) makro ve [END_EMBED_DHTML_EVENT_MAP](#end_embed_dhtml_event_map) makrodan oluşur.
 
-Karşılık gelen her ekli olay eşlemesi gerektirir [URL olay girişi](#url_event_entry) eşlemek için *mapName* (begın_embed_dhtml_event_map içinde belirtilen) için bir URL veya HTML kaynak.
+Katıştırılmış her olay haritası, bir URL veya HTML kaynağına *mapmapName* (BEGIN_EMBED_DHTML_EVENT_MAP'de belirtilir) için karşılık gelen bir [URL olay girişi](#url_event_entry) gerektirir.
 
 ### <a name="example"></a>Örnek
 
-Örnekte bakın [begın_dhtml_url_event_map](#begin_dhtml_url_event_map).
+[BEGIN_DHTML_URL_EVENT_MAP'daki](#begin_dhtml_url_event_map)örneğe bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="begin_url_entries"></a>  BEGIN_URL_ENTRIES
+## <a name="begin_url_entries"></a><a name="begin_url_entries"></a>BEGIN_URL_ENTRIES
 
-Bir URL olay girişi eşlemesi tanımını bir çok sayfalı iletişim kutusunda başlatır.
+Çok sayfalı bir iletişim kutusunda URL olay giriş haritası tanımını başlatır.
 
-```
+```cpp
 BEGIN_URL_ENTRIES(className)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*className*<br/>
-URL olay girişi eşlemesi içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı olarak türetilmesi [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md). URL olay girişi eşlemesi içinde olmalıdır bir [DHTML ve URL olay eşlemesi](#begin_dhtml_url_event_map)).
+*Classname*<br/>
+URL olay giriş eşlemini içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı [olarak CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)türemelidir. URL olay giriş haritası bir [DHTML ve URL olay haritasıiçinde](#begin_dhtml_url_event_map)olmalıdır).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir çok sayfalı DHTML iletişim birden çok HTML sayfasını oluştuğundan, URL olay girişi URL'ler veya HTML eşleştirmek için kullanılır karşılık gelen kaynakları [DHTML olay eşlemeleri katıştırılmış](#begin_embed_dhtml_event_map). URL_EVENT_ENTRY makroları begın_url_entrıes arasında yerleştirin ve [end_url_entrıes](#end_url_entries) makroları.
+Çok sayfalı bir DHTML iletişim kutusu birden çok HTML sayfasından oluştuğundan, URL olay girişleri URL'leri veya HTML kaynaklarını karşılık gelen [gömülü DHTML olay eşlemelerine](#begin_embed_dhtml_event_map)eşlemek için kullanılır. BEGIN_URL_ENTRIES ve [END_URL_ENTRIES](#end_url_entries) makrolar arasında URL_EVENT_ENTRY makrolar koyun.
 
 ### <a name="example"></a>Örnek
 
-Örnekte bakın [begın_dhtml_url_event_map](#begin_dhtml_url_event_map).
+[BEGIN_DHTML_URL_EVENT_MAP'daki](#begin_dhtml_url_event_map)örneğe bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="declare_dhtml_url_event_map"></a>  DECLARE_DHTML_URL_EVENT_MAP
+## <a name="declare_dhtml_url_event_map"></a><a name="declare_dhtml_url_event_map"></a>DECLARE_DHTML_URL_EVENT_MAP
 
-DHTML ve URL olay eşlemesi bir sınıf tanımı içinde bildirir.
+Sınıf tanımında Bir DHTML ve URL olay haritası bildirir.
 
-```
+```cpp
 DECLARE_DHTML_URL_EVENT_MAP()
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu Makro tanımında kullanılacak olan [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)-türetilmiş sınıflar.
+Bu makro [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)türetilmiş sınıfların tanımında kullanılacaktır.
 
-DHTML ve URL bir olay eşlemesi içeren [DHTML olay eşlemeleri katıştırılmış](#begin_embed_dhtml_event_map) ve [URL olay girişi](#begin_url_entries) DHTML olay işleyicilerini sayfa başına temelinde eşlemek için. Kullanım [begın_dhtml_url_event_map](#begin_dhtml_url_event_map) haritayı uygulamak için.
+DHTML ve URL olay eşlemi, DHTML olaylarını sayfa başına işleyicilerle eşlemek için [gömülü DHTML olay eşlemleri](#begin_embed_dhtml_event_map) ve [URL olay girişleri](#begin_url_entries) içerir. Haritayı uygulamak için [BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map) kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="end_dhtml_url_event_map"></a>  END_DHTML_URL_EVENT_MAP
+## <a name="end_dhtml_url_event_map"></a><a name="end_dhtml_url_event_map"></a>END_DHTML_URL_EVENT_MAP
 
-DHTML ve URL bir olay eşlemesi sonunu işaretler.
+DHTML ve URL olay haritasının sonunu işaretler.
 
-```
+```cpp
 END_DHTML_URL_EVENT_MAP(className)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*className*<br/>
-Olay eşlemesi içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı olarak türetilmesi [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md). Bu eşleşmelidir *className* karşılık gelen [begın_dhtml_url_event_map](#begin_dhtml_url_event_map) makrosu.
+*Classname*<br/>
+Olay haritasını içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı [olarak CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)türemelidir. Bu, ilgili [BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map) makrodaki *className* ile eşleşmelidir.
 
 ### <a name="example"></a>Örnek
 
-Örnekte bakın [begın_dhtml_url_event_map](#begin_dhtml_url_event_map).
+[BEGIN_DHTML_URL_EVENT_MAP'daki](#begin_dhtml_url_event_map)örneğe bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="end_embed_dhtml_event_map"></a>  END_EMBED_DHTML_EVENT_MAP
+## <a name="end_embed_dhtml_event_map"></a><a name="end_embed_dhtml_event_map"></a>END_EMBED_DHTML_EVENT_MAP
 
-Katıştırılmış bir DHTML olay eşlemesi sonunu işaretler.
+Katıştılmış Bir DHTML olay haritasının sonunu işaretler.
 
-```
+```cpp
 END_EMBED_DHTML_EVENT_MAP()
 ```
 
 ### <a name="example"></a>Örnek
 
-Örnekte bakın [begın_dhtml_url_event_map](#begin_dhtml_url_event_map).
+[BEGIN_DHTML_URL_EVENT_MAP'daki](#begin_dhtml_url_event_map)örneğe bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="end_url_entries"></a>  END_URL_ENTRIES
+## <a name="end_url_entries"></a><a name="end_url_entries"></a>END_URL_ENTRIES
 
-Bir URL olay girişi eşlemesi sonunu işaretler.
+URL olay giriş haritasının sonunu işaretler.
 
-```
+```cpp
 END_URL_ENTRIES()
 ```
 
 ### <a name="example"></a>Örnek
 
-Örnekte bakın [begın_dhtml_url_event_map](#begin_dhtml_url_event_map).
+[BEGIN_DHTML_URL_EVENT_MAP'daki](#begin_dhtml_url_event_map)örneğe bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="url_event_entry"></a>  URL_EVENT_ENTRY
+## <a name="url_event_entry"></a><a name="url_event_entry"></a>URL_EVENT_ENTRY
 
-Birden çok sayfa iletişim sayfasında URL veya HTML kaynak eşlenir.
+URL veya HTML kaynağını çok sayfalı iletişim kutusundaki bir sayfayla eşler.
 
-```
+```cpp
 URL_EVENT_ENTRY(className, url,  mapName)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*className*<br/>
-URL olay girişi eşlemesi içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı olarak türetilmesi [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md). URL olay girişi eşlemesi içinde olmalıdır bir [DHTML ve URL olay eşlemesi](#begin_dhtml_url_event_map)).
+*Classname*<br/>
+URL olay giriş eşlemini içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı [olarak CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)türemelidir. URL olay giriş haritası bir [DHTML ve URL olay haritasıiçinde](#begin_dhtml_url_event_map)olmalıdır).
 
-*URL*<br/>
-URL veya HTML kaynak sayfası.
+*Url*<br/>
+Sayfanın URL veya HTML kaynağı.
 
-*mapName*<br/>
-Olan URL'sidir sayfayı belirtir *url*. Bu eşleşen *mapName* içinde [begın_embed_dhtml_event_map](#begin_embed_dhtml_event_map) olayları bu sayfadan eşleyen makrosu.
+*Mapname*<br/>
+URL'si *url*olan sayfayı belirtir. Bu, bu sayfadaki olayları eşleyen [BEGIN_EMBED_DHTML_EVENT_MAP](#begin_embed_dhtml_event_map) makrodaki *mapName* ile eşleşir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir HTML kaynak sayfasıysa *url* kaynak kimlik numarası (diğer bir deyişle, "123", yok 123 veya ID_HTMLRES1) dize gösterimi olmalıdır.
+Sayfa bir HTML kaynağıysa, *url* kaynağın kimlik numarasının dize gösterimi olmalıdır (yani 123 veya ID_HTMLRES1 değil", "123").
 
-Sayfa tanımlayıcısı *mapName*, olan bağlantı için kullanılan rastgele bir sembol katıştırılmış DHTML olay eşlemeleri için URL olay girişi eşlemeleri. DHTML ve URL olay eşlemesi için kapsamda sınırlıdır.
+Sayfa tanımlayıcısı, *mapName*, URL olay giriş haritaları gömülü DHTML olay haritaları bağlamak için kullanılan rasgele bir semboldür. Kapsamı DHTML ve URL olay haritasıile sınırlıdır.
 
 ### <a name="example"></a>Örnek
 
-Örnekte bakın [begın_dhtml_url_event_map](#begin_dhtml_url_event_map).
+[BEGIN_DHTML_URL_EVENT_MAP'daki](#begin_dhtml_url_event_map)örneğe bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdhtml.h
+  **Üstbilgi** afxdhtml.h
 
-##  <a name="end_dhtml_event_map_inline"></a>END_DHTML_EVENT_MAP_INLINE
+## <a name="end_dhtml_event_map_inline"></a><a name="end_dhtml_event_map_inline"></a>END_DHTML_EVENT_MAP_INLINE
 
-DHTML olay eşlemesi sonunu işaretler.
+DHTML olay haritasının sonunu işaretler.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 END_DHTML_EVENT_MAP_INLINE( )
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle birlikte kullanılmalıdır [begın_dhtml_event_map_ınlıne](#begin_dhtml_event_map_inline).
+[BEGIN_DHTML_EVENT_MAP_INLINE](#begin_dhtml_event_map_inline)ile birlikte kullanılmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdhtml.h
+**Üstbilgi:** afxdhtml.h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)
+[Makrolar ve Küreseller](mfc-macros-and-globals.md)

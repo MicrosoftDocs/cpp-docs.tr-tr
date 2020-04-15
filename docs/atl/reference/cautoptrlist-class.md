@@ -1,5 +1,5 @@
 ---
-title: CAutoPtrList sınıfı
+title: CAutoPtrList Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAutoPtrList
@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoPtrList class
 ms.assetid: 11de4aca-28b0-4ff2-a74a-cb602312ffbd
-ms.openlocfilehash: 2558c522f7903e8d59363cd77d1a86027f6a7511
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 48c7ad6fe13c5f5fbbe5829c25ce1c27896841be
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62260285"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81318799"
 ---
-# <a name="cautoptrlist-class"></a>CAutoPtrList sınıfı
+# <a name="cautoptrlist-class"></a>CAutoPtrList Sınıfı
 
-Bu sınıf, akıllı işaretçiler listesini oluştururken kullanışlı yöntemler sağlar.
+Bu sınıf, akıllı işaretçilerin bir listesini yaparken yararlı yöntemler sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,15 +39,15 @@ class CAutoPtrList :
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CAutoPtrList::CAutoPtrList](#cautoptrlist)|Oluşturucu.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, bir oluşturucu sağlar ve türeyen yöntemlerinden [CAtlList](../../atl/reference/catllist-class.md) ve [CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md) akıllı işaretçiler depolama liste nesnesinin oluşturmaya yardımcı olmak için. Sınıf [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) benzer bir işlev için bir dizi nesnesi sağlar.
+Bu sınıf bir oluşturucu sağlar ve akıllı işaretçileri depolayan bir liste nesnesinin oluşturulmasına yardımcı olmak için [CAtlList](../../atl/reference/catllist-class.md) ve [CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md) yöntemleri türetilmiştir. [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) sınıfı bir dizi nesnesi için benzer bir işlev sağlar.
 
-Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
+Daha fazla bilgi için [ATL Koleksiyon Sınıfları'na](../../atl/atl-collection-classes.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -57,9 +57,9 @@ Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-cl
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcoll.h
+**Üstbilgi:** atlcoll.h
 
-##  <a name="cautoptrlist"></a>  CAutoPtrList::CAutoPtrList
+## <a name="cautoptrlistcautoptrlist"></a><a name="cautoptrlist"></a>CAutoPtrList::CAutoPtrList
 
 Oluşturucu.
 
@@ -70,14 +70,14 @@ CAutoPtrList(UINT nBlockSize = 10) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nBlockSize*<br/>
-Varsayılan değer 10 blok boyutu.
+Varsayılan değer 10 olan blok boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarını ölçüsüdür. Büyük blok boyutları için bellek ayırma yordamlarını aramalarını azaltır, ancak daha fazla kaynağı kullanır.
+Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarının ölçüsüdür. Daha büyük blok boyutları, bellek ayırma yordamlarına yapılan çağrıları azaltır, ancak daha fazla kaynak kullanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CAtlList Sınıfı](../../atl/reference/catllist-class.md)<br/>
 [CAutoPtrElementTraits Sınıfı](../../atl/reference/cautoptrelementtraits-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

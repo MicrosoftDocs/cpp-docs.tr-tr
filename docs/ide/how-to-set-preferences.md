@@ -1,93 +1,93 @@
 ---
-title: Visual Studio C++ 'da kodlama tercihlerinizi ayarlama
+title: Visual Studio'da C++ kodlama tercihlerinizi ayarlayın
 ms.description: Customize C++ formatting, colors, layout, line numbers, and menus in the Visual Studio IDE.
 ms.topic: overview
 ms.date: 09/27/2019
-ms.openlocfilehash: f1d222dc38720ea897cfbf2fb9fa0dd2727e7720
-ms.sourcegitcommit: 4517932a67bbf2db16cfb122d3bef57a43696242
+ms.openlocfilehash: e3a665ead7a314b343ec3320e95b189f83a38a47
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816566"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365386"
 ---
-# <a name="set-your-c-coding-preferences-in-visual-studio"></a>Visual Studio C++ 'da kodlama tercihlerinizi ayarlama
+# <a name="set-your-c-coding-preferences-in-visual-studio"></a>Visual Studio'da C++ kodlama tercihlerinizi ayarlayın
 
-Visual Studio 'Yu kişiselleştirerek C++ kodlama deneyiminizi daha rahat, üretken ve güvenilir hale getirebilirsiniz. Şunları yapabilirsiniz:
+Visual Studio'yı kişiselleştirerek C++ kodlama deneyiminizi daha kullanışlı, üretken ve keyifli hale getirebilirsiniz. Şunları yapabilirsiniz:
 
 - Menüleri ve araç çubuklarını özelleştirin.
-- Pencere yerleşimini düzenleyin.
+- Pencere düzenini düzenleyin.
 - Renk temalarını ayarlayın.
-- Çeşitli C++ ClangFormat stilleri dahil biçimlendirme kurallarını belirtin.
+- ClangFormat'ın çeşitli stilleri de dahil olmak üzere C++ biçimlendirme kurallarını belirtin.
 - Özel klavye kısayolları oluşturun.
 
-Tercihlerinizi birden çok makine genelinde eşitleyebilir, birden çok grup kümesi oluşturup saklayabilir ve bunları ekip mates ile paylaşabilirsiniz. Visual Studio Market uzantıları, özelleştirme davranışını özelleştirmek için ek seçenekler sunarak yükleyebilirsiniz. Daha fazla bilgi için bkz. [Visual STUDIO IDE 'Yi kişiselleştirme](/visualstudio/ide/personalizing-the-visual-studio-ide).
+Tercihlerinizi birden çok makine de senkronize edebilir, birden çok tercih kümesi oluşturabilir ve depolayabilir ve bunları takım arkadaşlarıyla paylaşabilirsiniz. Visual Studio Marketplace'ten uzantılar yükleyerek davranışı özelleştirmek için ek seçenekler sunabilirsiniz. Daha fazla bilgi için [Visual Studio IDE'yi Kişiselleştir'e](/visualstudio/ide/personalizing-the-visual-studio-ide)bakın.
 
-## <a name="arrange-window-layout"></a>Pencere yerleşimini Düzenle
+## <a name="arrange-window-layout"></a>Pencere düzenini düzenleme
 
-Visual Studio penceresinde, boşluk ana menüye, araç çubuğuna, kod düzenleyicisine (veya belge penceresine) ve araç penceresine (örneğin, Çözüm Gezgini ve Hata Listesi) ayrılır. Bazı pencereler aynı konumda birbirleriyle çakışacak. Örneğin, Çözüm Gezgini, Sınıf Görünümü, Kaynak Görünümü ve Kaynak Denetim Gezgini aynı varsayılan konumu paylaşır. Çerçevenin altındaki sekmeleri seçerek bunlar arasında geçiş yapabilirsiniz. Bu pencerelerin iki veya daha fazlasını aynı anda görünür yapmak için, bunlardan birini başlık çubuğuna göre yeni bir konuma sürüklemeniz yeterlidir. Visual Studio ana pencere kenarlıklarınına göre yerleştirebilirsiniz veya onu de yerleştirebilirsiniz.
+Visual Studio penceresinde, alan ana menüye, araç çubuğuna, kod düzenleyicisine (veya belge penceresine) ve araç pencerelerine (Çözüm Gezgini ve Hata Listesi gibi) ayrılır. Bazı pencereler aynı konumda birbiriyle çakışıyor. Örneğin, Çözüm Gezgini, Sınıf Görünümü, Kaynak Görünümü ve Kaynak Denetim Gezgini'nin tümü aynı varsayılan konumu paylaşır. Çerçevenin altındaki sekmeleri seçerek aralarında geçiş yapabilirsiniz. Bu pencerelerden iki veya daha fazlasını aynı anda görünür hale getirmek için, bunlardan birini başlık çubuğuna göre yeni bir konuma sürüklemeleri gereken bir yer. Visual Studio ana pencere kenarlıklarından birine sabitleyebilir veya yüzdürebilirsiniz.
 
-Aşağıdaki ekran görüntüsünde, **Takım Gezgini** penceresinin varsayılan konumundan, kod düzenleyicisinin sol tarafındaki yeni, sabitlenmiş bir konuma sürüklenmesi gösterilmektedir. Mavi gölgeli alan, fare düğmesi serbest bırakıldığında pencerenin nereye yerleştirileceğini gösterir.
+Aşağıdaki ekran **görüntüsü, Team Explorer** penceresinin varsayılan konumundan kod düzenleyicisinin sol tarafındaki yeni, sabitlenmiş bir konuma sürüklendiğini gösterir. Mavi gölgeli alan, fare düğmesi bırakıldığında pencerenin nereye yerleştirileceğini gösterir.
 
-![Düzen değişikliği vurgulanmış şekilde Visual Studio Takım Gezgini penceresinin ekran görüntüsü](media/window-layout-move-team-explorer.png)
+![Düzen değişikliği vurgulanmış Visual Studio Team Explorer penceresinin ekran görüntüsü](media/window-layout-move-team-explorer.png)
 
-Belge penceresinde, her açık dosya sekmeli bir çerçevede yer alır. Araç pencereleri gibi bu sekmeleri de float veya kilitle. Daha fazla bilgi için [Visual Studio'da pencere düzenlerini özelleştirme](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
+Belge penceresinde, her açık dosya sekmeli bir çerçeveiçinde bulunur. Bu sekmeleri, alet pencereleri gibi yüzdürebilir veya kilitleyebilirsiniz. Daha fazla bilgi için [Visual Studio'daki pencere düzenlerini özelleştir'e](/visualstudio/ide/customizing-window-layouts-in-visual-studio)bakın.
 
-Tüm araç pencerelerini gizlemek ve kod Düzenleyicisi penceresini en üst düzeye çıkarmak için **Alt** + **SHIFT** tuşuna basarak *tam ekran moduna*geçiş **yapın + .**
+Tüm araç pencerelerini gizlemek ve Kod Düzenleyicisi penceresini en üst düzeye çıkarmak *için, tam ekran modunu*değiştirmek için **Alt** + **Shift** + **Enter** tuşuna basın.
 
-## <a name="set-c-coding-styles-and-formatting"></a>Kodlama C++ stillerini ve biçimlendirmeyi ayarlama
+## <a name="set-c-coding-styles-and-formatting"></a>C++ kodlama stillerini ve biçimlendirmeyi ayarlama
 
-Girinti ve ayraç konumları gibi birçok bağımsız kod biçimlendirme seçeneği belirtebilirsiniz. Bunu yapmak için **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C/C++**  > **biçimlendirme** (veya **CTRL + Q** yazın ve "biçimlendirme" için arama yapın) bölümüne gidin. Alternatif olarak, [Clangformat](https://clang.llvm.org/docs/ClangFormat.html) stillerinden birini (veya kendi özel clangformat stilinizi) belirtebilirsiniz.
+Girinti ve ayraç pozisyonları gibi birçok ayrı kod biçimlendirme seçeneği belirtebilirsiniz. Bunu yapmak için **Araçlar** > **Seçenekleri** > **Metin** > **Düzenleyicisi C/C++** > **Biçimlendirme** 'ne gidin (veya **Ctrl + Q** yazın ve "Biçimlendirme"yi arayın). Alternatif olarak, [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) stillerinden birini (veya kendi özel ClangFormat stilinizi) belirtebilirsiniz.
 
 ![ClangFormat seçeneklerinin ekran görüntüsü](media/clang-format-ide.png)
 
-Biçimlendirme seçenekleri hakkında daha fazla bilgi için bkz. [Seçenekler, metin düzenleyici, CC++/, biçimlendirme](/visualstudio/ide/reference/options-text-editor-c-cpp-formatting).
+Tüm biçimlendirme seçenekleri hakkında daha fazla bilgi için [Seçenekler, Metin Düzenleyicisi, C/C++, Biçimlendirme'ye](/visualstudio/ide/reference/options-text-editor-c-cpp-formatting)bakın.
 
-## <a name="set-the-color-theme"></a>Renk teması ayarlayabilir
+## <a name="set-the-color-theme"></a>Renk tesini ayarlama
 
-Açık veya koyu bir arka plan ayarlamak için **CTRL + Q** yazın ve "renkli tema" araması yapın. Ayrıca, **araçlar** > **Seçenekler** > **ortama**giderek ve **renk teması**' nı seçerek bunları bulabilirsiniz.
+Açık veya koyu arka plan ayarlamak için **Ctrl + Q** yazın ve "Renk Teması"nı arayın. Ayrıca **Araçlar** > **Seçenekleri** > **Ortamı**giderek bu bulabilirsiniz , ve Renk **Tema**seçerek .
 
 ![Renk temalarının ekran görüntüsü](media/tools-options-color-theme.png)
 
-Örneğin, şu şekilde Koyu tema verilmiştir:
+Örneğin, karanlık tema şunlardır:
 
-![Koyu renkli tema içeren Visual Studio ekran görüntüsü](media/tools-options-dark-theme.png)
+![Koyu renk teonu ile Visual Studio ekran görüntüsü](media/tools-options-dark-theme.png)
 
 ## <a name="customize-code-colorization"></a>Kod renklendirmeyi özelleştirme
 
-Visual Studio 2019 ' de, önceden tanımlanmış üç *renk düzeni*arasından seçim yapabilirsiniz. Bunlar, kod öğelerinin düzenleyicide renk oluşturma şeklini belirtir. Bir tema seçmek için **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C/C++**  > **görünümü**' ne gidin ve **renk şeması**' nı seçin:
+Visual Studio 2019'da, önceden tanımlanmış üç *renk düzeni*arasından seçim yapabilirsiniz. Bunlar, kod öğelerinin düzenleyicide nasıl renklendirilebildiğini belirtir. Bir tema seçmek için **Araçlar** > **Seçenekleri** > **Metin Düzenleyicisi** > **C/C++** > **Görünümü'ne**gidin ve **Renk Düzeni'ni**seçin:
 
-![Gelişmiş vurgulanmış C++ renk şeması seçeneklerinin ekran görüntüsü](media/color-schemes.png)
+![Gelişmiş vurgulanmış C++ Renk Düzeni seçeneklerinin ekran görüntüsü](media/color-schemes.png)
 
-**Visual Studio 2017**adlı renk şemasında çoğu kod öğesi yalnızca siyah olur. **Gelişmiş** renk şemasında, işlevler, yerel değişkenler, makrolar ve diğer öğeler renklendirililmiştir. **Gelişmiş (Globals vs. Members)** düzeninde, genel işlevler ve değişkenler sınıf üyeleri ile karşıtlığa göre renklendirilir. Varsayılan mod **geliştirilmiştir**ve şuna benzer:
+**Visual Studio 2017**adı verilen renk düzeninde çoğu kod öğesi sadece siyahtır. **Geliştirilmiş** renk düzeninde işlevler, yerel değişkenler, makrolar ve diğer öğeler renklendirilir. Gelişmiş **(Globals vs. Üyeler)** şemasında, genel işlevler ve değişkenler sınıf üyeleriyle kontrast olacak şekilde renklenir. Varsayılan mod **Geliştirilmiştir**ve şuna benzer:
 
-![Gelişmiş renk düzeninin ekran görüntüsü](media/color-scheme-enhanced.png)
+![Geliştirilmiş renk düzeninin ekran görüntüsü](media/color-scheme-enhanced.png)
 
-Hangi tema veya renk şemasının etkin olduğuna bakılmaksızın, bağımsız kod öğeleri için yazı tipi ve renkler özelleştirebilirsiniz. Bunu yapmak için **araçlar** > **seçenekler** > **ortam** > **yazı tipleri ve renkler** ' e gidin (ya da **CTRL + Q** yazın ve "yazı tipleri" için arama yapın). C++ Seçenekleri görene kadar görüntüleme öğelerinin listesini aşağı kaydırın.
+Hangi tema veya renk düzeni etkin olursa olsun, yazı tipini ve renkleri tek tek kod öğeleri için özelleştirebilirsiniz. Bunu yapmak için **Araçlar** > **Seçenekleri** > **Çevre** > **Yazı Tipleri ve Renkleri** 'ne gidin (veya **Ctrl + Q** yazın ve "Yazı Tipleri"ni arayın). C++ seçeneklerini görene kadar görüntü öğeleri listesini aşağı kaydırın.
 
-![C++ Yazı tipi ve renk seçeneklerinin ekran görüntüsü](media/tools-options-cpp-colors.png)
+![C++ yazı tipi ve renk seçeneklerinin ekran görüntüsü](media/tools-options-cpp-colors.png)
 
-Burada ayarladığınız renkler, renk şemaları için tanımlanan değerleri geçersiz kılar. Renk düzeninin varsayılan renklerine geri dönmek isterseniz, bir rengi **varsayılana**geri doğru ayarlayın.
+Burada ayarladığınız renkler, renk düzenleri için tanımlanan değerleri geçersiz kılar. Renk düzeni için varsayılan renklere geri dönmek istiyorsanız, rengi **Varsayılan**olarak geri ayarlayın.
 
 ## <a name="customize-the-toolbars"></a>Araç çubuklarını özelleştirme
 
-Araç çubukları, menüleri veya klavye kısayollarını kullanmak yerine, tek tıklamayla komutları vermek için kullanışlı bir yol sağlar. Visual Studio, standart bir araç çubuğu kümesi içerir. Standart C++ geliştirme için en yararlı araç çubukları büyük olasılıkla standart, metin düzenleyici, derleme, hata ayıklama, kaynak denetimi ve dosya karşılaştırmaktır. Windows geliştirme için Iletişim kutusu Düzenleyicisi ve görüntü Düzenleyicisi, iletişim kutularını ve düzenleme simgelerini düzenlemek için yararlıdır.
+Araç çubukları, menüleri veya klavye kısayollarını kullanmak yerine komutları tek bir tıklamayla vermek için kullanışlı bir yol sağlar. Visual Studio standart bir araç çubuğu kümesi içerir. Standart C++ geliştirme için en kullanışlı araç çubukları büyük olasılıkla Standart, Metin Düzenleyicisi, Oluşturma, Hata Ayıklama, Kaynak Denetimi ve Dosyaları Karşılaştır'dır. Windows geliştirme için, İletişim Düzenleyicisi ve Görüntü Düzenleyicisi iletişim kutuları düzenlemek ve simgeleri düzenlemek için yararlıdır.
 
-Hangi komutun temsil ettiğini görmek için araç çubuğundaki simgelerin üzerine gelin:
+Hangi komutu temsil ettiğine görmek için araç çubuğundaki simgelerin üzerine tıklayın:
 
-![Araç çubuğu simgelerinin, üzerine gelindiğinde kullanılabilen komut bilgileri örneği ile ekran görüntüsü](media/toolbar-mouse-hover.png)
+![Araç çubuğu simgelerinin ekran görüntüsü, komut bilgileri örneği havada mevcuttur](media/toolbar-mouse-hover.png)
 
-Aşağı oku seçerek komut ekleyebilir veya kaldırabilir veya özel bir araç çubuğu oluşturabilirsiniz. Araç çubuğunu yeni bir konuma taşımak için sol taraftaki noktalı çubuğa göre sürükleyin.
+Aşağı oku seçerek komutlar ekleyebilir veya kaldırabilir veya özel bir araç çubuğu oluşturabilirsiniz. Araç çubuğunu yeni bir konuma taşımak için, soldaki noktalı çubuğun yanında sürükleyin.
 
-![Aşağı ok ve noktalı çubuğun vurgulandığı araç çubuğunun ekran görüntüsü](media/toolbar-move-edit.png).
+![Aşağı ok ve noktalı çubuğu vurgulanmış araç çubuğunun ekran görüntüsü](media/toolbar-move-edit.png).
 
-Daha fazla bilgi için bkz. [nasıl yapılır: Visual Studio 'da menüleri ve araç çubuklarını özelleştirme](/visualstudio/ide/how-to-customize-menus-and-toolbars-in-visual-studio).
+Daha fazla bilgi için [bkz: Visual Studio'da menüleri ve araç çubuklarını özelleştirin.](/visualstudio/ide/how-to-customize-menus-and-toolbars-in-visual-studio)
 
-## <a name="show-or-hide-line-numbers"></a>Satır numaralarını göster veya gizle
+## <a name="show-or-hide-line-numbers"></a>Satır numaralarını gösterme veya gizleme
 
-Çizgi numaralarının düzenleyici pencerelerinin solunda gösterilip gösterilmeyeceğini belirtebilirsiniz. **Seçenekler**' de, **C/C++** altında **genel**' i seçin. **Ayarlar** bölümünde, tercihlerinize bağlı olarak **satır numaralarını**seçin veya temizleyin.
+Satır numaralarının düzenleyici pencerelerinin solunda gösterip göstermediğini belirtebilirsiniz. **Seçenekler'de**, **C/C++** altında **Genel'i**seçin. **Ayarlar** bölümünde, tercihinize bağlı olarak **Satır numaralarını**seçin veya temizleyin.
 
-![Satır numaraları vurgulanmış şekilde genel seçeneklerin ekran görüntüsü](media/tools-options-line-numbers.png)
+![Satır numaraları vurgulanmış genel seçeneklerin ekran görüntüsü](media/tools-options-line-numbers.png)
 
 ## <a name="create-keyboard-shortcuts"></a>Klavye kısayolları oluşturma
 
-Visual Studio 'daki birçok komut *klavye kısayollarına*, CTRL, alt ve SHIFT tuşlarına sahip tuş birleşimlerine sahiptir. Bu klavye kısayollarını değiştirebilir veya Visual Studio 'da kendi yeni bir tane oluşturabilirsiniz. **Araçlar** > **seçenekler** > **ortam** > **klavye** (veya **CTRL + Q** yazın ve "kısayollar" için arama yapın) bölümüne gidin. Daha fazla bilgi için bkz. [Visual Studio 'da klavye kısayollarını tanımlamak ve özelleştirmek](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
+Visual Studio'daki birçok komutta *klavye kısayolları,* Ctrl, Alt ve Shift tuşları ile tuş kombinasyonları vardır. Bu klavye kısayollarını değiştirebilir veya Visual Studio'da kendi klavyelerinizi oluşturabilirsiniz. **Araçlar** > **Seçenekleri** > **Ortam** > **Klavyesine** gidin (veya **Ctrl + Q** yazın ve "kısayollar" için arama yapın). Daha fazla bilgi için [Visual Studio'da klavye kısayollarını tanımla ve özelleştir'](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)e bakın.

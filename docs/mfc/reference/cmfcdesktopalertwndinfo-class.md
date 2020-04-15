@@ -1,5 +1,5 @@
 ---
-title: Cmfcdesktopalertwndınfo sınıfı
+title: CMFCDesktopAlertWndInfo Sınıfı
 ms.date: 10/18/2018
 f1_keywords:
 - CMFCDesktopAlertWndInfo
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CMFCDesktopAlertWndInfo [MFC], m_strText
 - CMFCDesktopAlertWndInfo [MFC], m_strURL
 ms.assetid: 5c9bb84e-6c96-4748-8e74-6951b6ae8e84
-ms.openlocfilehash: a4b3d8769b3d267c0bd3f81269dd3b8ab3cf3184
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f51c1b75e0c096a34b190e36e097aaca4109b5f8
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403652"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367580"
 ---
-# <a name="cmfcdesktopalertwndinfo-class"></a>Cmfcdesktopalertwndınfo sınıfı
+# <a name="cmfcdesktopalertwndinfo-class"></a>CMFCDesktopAlertWndInfo Sınıfı
 
-`CMFCDesktopAlertWndInfo` Sınıfı ile kullanılır [CMFCDesktopAlertWnd sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md). Masaüstü uyarı penceresi açıldığında görüntülenen denetimleri belirtir.
+Sınıf `CMFCDesktopAlertWndInfo` [CMFCDesktopAlertWnd Sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md)ile kullanılır. Masaüstü uyarı penceresi açılırsa görüntülenen denetimleri belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,40 +35,40 @@ class CMFCDesktopAlertWndInfo
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`CMFCDesktopAlertWndInfo::~CMFCDesktopAlertWndInfo`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCDesktopAlertWndInfo::operator=](#operator_eq)||
+|[CMFCDesktopAlertWndInfo::operatör=](#operator_eq)||
 
-### <a name="data-members"></a>Veri üyeleri
+### <a name="data-members"></a>Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCDesktopAlertWndInfo::m_hIcon](#m_hicon)|Görüntülenecek simge için bir tanıtıcı.|
-|[CMFCDesktopAlertWndInfo::m_nURLCmdID](#m_nurlcmdid)|Bir bağlantıda bir Masaüstü Uyarısı açılır penceresi ile ilişkili komut kimliği.|
-|[CMFCDesktopAlertWndInfo::m_strText](#m_strtext)|Masaüstü Uyarısı açılır penceresi üzerinde görüntülenen metin.|
-|[CMFCDesktopAlertWndInfo::m_strURL](#m_strurl)|Bağlantı üzerinde Masaüstü Uyarısı açılır penceresi görüntülenir.|
+|[CMFCDesktopAlertWndInfo::m_hIcon](#m_hicon)|Görüntülenen simgenin tutamacı.|
+|[CMFCDesktopAlertWndInfo::m_nURLCmdID](#m_nurlcmdid)|Masaüstü uyarı penceresindeki bir bağlantıyla ilişkili komut kimliği.|
+|[CMFCDesktopAlertWndInfo::m_strText](#m_strtext)|Masaüstü uyarı penceresinde görüntülenen metin.|
+|[CMFCDesktopAlertWndInfo::m_strURL](#m_strurl)|Masaüstü uyarı penceresinde görüntülenen bağlantı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMFCDesktopAlertWndInfo` Sınıfı geçirildiğinde [CMFCDesktopAlertWnd::Create](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) Masaüstü Uyarısı açılır penceresi varsayılan iletişim kutusunda görüntülenen öğeler belirtmek için yöntemi. Varsayılan iletişim üç öğe içerebilir:
+Sınıf `CMFCDesktopAlertWndInfo` [CMFCDesktopAlertWnd geçirilir::Masaüstü](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) uyarı penceresinin varsayılan iletişim kutusunda görüntülenen öğeleri belirtmek için yöntem oluşturma. Varsayılan iletişim kutusu üç öğe içerebilir:
 
-- Çağırarak ayarlanmış bir simge [CMFCDesktopAlertWndInfo::m_hIcon](#m_hicon).
+- [CMFCDesktopAlertWndInfo::m_hIcon](#m_hicon)numaralı arayarak ayarlanan bir simge.
 
-- Bir etiket veya çağırarak ayarlanan kısa mesaj [CMFCDesktopAlertWndInfo::m_strText](#m_strtext).
+- [CMFCDesktopAlertWndInfo::m_strText'](#m_strtext)yi arayarak ayarlanan bir etiket veya kısa mesaj.
 
-- Çağırarak ayarlanmış bir bağlantı [CMFCDesktopAlertWndInfo::m_strURL](#m_strurl). Bağlantıya tıklandığında çalıştırılan komut ayarlamak için çağrı [CMFCDesktopAlertWndInfo::m_nURLCmdID](#m_nurlcmdid).
+- [CMFCDesktopAlertWndInfo](#m_strurl)arayarak ayarlanan bir bağlantı::m_strURL . Bağlantı tıklandığında çalıştırılan komutu ayarlamak için [CMFCDesktopAlertWndInfo:m_nURLCmdID'](#m_nurlcmdid)ı arayın.
 
-Varsayılan iletişim yeterli değilse, özel bir iletişim kutusu oluşturun ve geçirin [CMFCDesktopAlertWnd::Create](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) Bu sınıf kullanmak yerine yöntemi. Daha fazla bilgi için [CMFCDesktopAlertDialog sınıfı](../../mfc/reference/cmfcdesktopalertdialog-class.md).
+Varsayılan iletişim kutusu yeterli değilse, özel bir iletişim kutusu oluşturabilir ve [cmfcDesktopAlertWnd'e geçirebilirsiniz::Bu](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) sınıfı kullanmak yerine yöntem oluştur. Daha fazla bilgi için [CMFCDesktopAlertDialog Class'a](../../mfc/reference/cmfcdesktopalertdialog-class.md)bakın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli üyeleri kullanılacak gösterilmiştir `CMFCDesktopAlertWndInfo` sınıfı. Örnek tanıtıcı gösterilen simge Masaüstü Uyarısı açılır penceresi, Masaüstü Uyarısı açılır penceresi üzerinde görüntülenen bağlantıyı ve bağlantı Masaüstü Uyarısı açılır penceresi ile ilişkili komut Kimliğini görüntülenen metni ayarlama işlemini gösterir. Bu örneğin parçasıdır [Masaüstü uyarı gösterim örneği](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, sınıftaki çeşitli üyelerin `CMFCDesktopAlertWndInfo` nasıl kullanılacağını göstermektedir. Örnek, tanıtıcının görüntülenen simgeye nasıl ayarleneceğini, masaüstü uyarı penceresinde görüntülenen metni, masaüstü uyarı penceresinde görüntülenen bağlantıyı ve masaüstü uyarı penceresindeki bir bağlantıyla ilişkili komut kimliğini gösterir. Bu örnek, [Desktop Alert Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#3](../../mfc/reference/codesnippet/cpp/cmfcdesktopalertwndinfo-class_1.cpp)]
 
@@ -78,11 +78,11 @@ Aşağıdaki örnek, çeşitli üyeleri kullanılacak gösterilmiştir `CMFCDesk
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxDesktopAlertDialog.h
+**Üstbilgi:** afxDesktopAlertDialog.h
 
-##  <a name="operator_eq"></a>  CMFCDesktopAlertWndInfo::operator =
+## <a name="cmfcdesktopalertwndinfooperator"></a><a name="operator_eq"></a>CMFCDesktopAlertWndInfo::operatör=
 
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ```
 CMFCDesktopAlertWndInfo& operator=(CMFCDesktopAlertWndInfo& src);
@@ -90,15 +90,15 @@ CMFCDesktopAlertWndInfo& operator=(CMFCDesktopAlertWndInfo& src);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *src*<br/>
+[içinde] *src*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_hicon"></a>  CMFCDesktopAlertWndInfo::m_hIcon
+## <a name="cmfcdesktopalertwndinfom_hicon"></a><a name="m_hicon"></a>CMFCDesktopAlertWndInfo::m_hIcon
 
-Görüntülenecek simge için bir tanıtıcı.
+Görüntülenen simgenin tutamacı.
 
 ```
 HICON m_hIcon;
@@ -106,9 +106,9 @@ HICON m_hIcon;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_nurlcmdid"></a>  CMFCDesktopAlertWndInfo::m_nURLCmdID
+## <a name="cmfcdesktopalertwndinfom_nurlcmdid"></a><a name="m_nurlcmdid"></a>CMFCDesktopAlertWndInfo::m_nURLCmdID
 
-Bir bağlantıda bir Masaüstü Uyarısı açılır penceresi ile ilişkili komut kimliği.
+Masaüstü uyarı penceresindeki bir bağlantıyla ilişkili komut kimliği.
 
 ```
 UINT m_nURLCmdID;
@@ -116,11 +116,11 @@ UINT m_nURLCmdID;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Komut kimliği, kullanıcı tarafından belirtilen bağlantıya tıkladığında açılan pencere sahibine gönderilir [CMFCDesktopAlertWndInfo::m_strURL](#m_strurl).
+Komut kimliği, kullanıcı [CMFCDesktopAlertWndInfo::m_strURL](#m_strurl)tarafından belirtilen bağlantıyı tıklattığında açılır pencerenin sahibine gönderilir.
 
-##  <a name="m_strtext"></a>  CMFCDesktopAlertWndInfo::m_strText
+## <a name="cmfcdesktopalertwndinfom_strtext"></a><a name="m_strtext"></a>CMFCDesktopAlertWndInfo::m_strText
 
-Masaüstü Uyarısı açılır penceresi üzerinde görüntülenen metin.
+Masaüstü uyarı penceresinde görüntülenen metin.
 
 ```
 CString m_strText;
@@ -128,9 +128,9 @@ CString m_strText;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_strurl"></a>  CMFCDesktopAlertWndInfo::m_strURL
+## <a name="cmfcdesktopalertwndinfom_strurl"></a><a name="m_strurl"></a>CMFCDesktopAlertWndInfo::m_strURL
 
-Bağlantı üzerinde Masaüstü Uyarısı açılır penceresi görüntülenir.
+Masaüstü uyarı penceresinde görüntülenen bağlantı.
 
 ```
 CString m_strURL;
@@ -138,12 +138,12 @@ CString m_strURL;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı bağlantıyı tıklattığında, olan komut [CMFCDesktopAlertWndInfo::m_nURLCmdID](#m_nurlcmdid) komut kimliği açılır pencerede sahibine gönderilir.
+Kullanıcı bağlantıyı tıklattığında, [CMFCDesktopAlertWndInfo::m_nURLCmdID](#m_nurlcmdid) komut kimliği açılır pencerenin sahibine gönderilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCDesktopAlertWnd Sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md)<br/>
-[CMFCDesktopAlertWnd::Create](../../mfc/reference/cmfcdesktopalertwnd-class.md#create)<br/>
+[CMFCDesktopAlertWnd::Oluştur](../../mfc/reference/cmfcdesktopalertwnd-class.md#create)<br/>
 [CMFCDesktopAlertDialog Sınıfı](../../mfc/reference/cmfcdesktopalertdialog-class.md)

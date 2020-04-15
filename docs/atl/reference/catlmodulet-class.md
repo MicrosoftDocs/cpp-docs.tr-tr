@@ -1,5 +1,5 @@
 ---
-title: CAtlModuleT sınıfı
+title: CAtlModuleT Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlModuleT
@@ -14,16 +14,16 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlModuleT class
 ms.assetid: 9b74d02f-9117-47b1-a05e-c5945f83dd2b
-ms.openlocfilehash: 2cd207038a92b944bf95575f0e0c820b8f09d615
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf64c073249b7426fafb430a708573d9d06d11fd
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62260155"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81321419"
 ---
-# <a name="catlmodulet-class"></a>CAtlModuleT sınıfı
+# <a name="catlmodulet-class"></a>CAtlModuleT Sınıfı
 
-Bu sınıf bir ATL modül uygular.
+Bu sınıf bir ATL modülü uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,46 +35,46 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Sınıfınıza türetilen `CAtlModuleT`.
+Sınıfınızdan `CAtlModuleT`türetilmiştir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CAtlModuleT::CAtlModuleT](#catlmodulet)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAtlModuleT::InitLibId](#initlibid)|Geçerli modül GUID'i içeren veri üyesi başlatır.|
-|[CAtlModuleT::RegisterAppId](#registerappid)|EXE kayıt defterine ekler.|
-|[CAtlModuleT::RegisterServer](#registerserver)|Hizmet kayıt defterine ekler.|
-|[CAtlModuleT::UnregisterAppId](#unregisterappid)|EXE kayıt defterinden kaldırır.|
-|[CAtlModuleT::UnregisterServer](#unregisterserver)|Hizmet kayıt defterinden kaldırır.|
-|[CAtlModuleT::UpdateRegistryAppId](#updateregistryappid)|Kayıt defterinde EXE bilgilerini güncelleştirir.|
+|[CAtlModuleT::InitLibId](#initlibid)|Geçerli modülün GUID'ini içeren veri üyesini başolarak karşılar.|
+|[CAtlModuleT::RegisterAppId](#registerappid)|EXE'yi kayıt defterine ekler.|
+|[CAtlModuleT::RegisterServer](#registerserver)|Hizmeti kayıt defterine ekler.|
+|[CAtlModuleT::Kayıt DışıAppId](#unregisterappid)|EXE'yi kayıt defterinden kaldırır.|
+|[CAtlModuleT::Kayıt DışıSunucu](#unregisterserver)|Hizmeti kayıt defterinden kaldırır.|
+|[CAtlModuleT::UpdateRegistryAppId](#updateregistryappid)|Kayıt defterindeki EXE bilgilerini güncelleştirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAtlModuleT`, öğesinden türetilen [CAtlModule](../../atl/reference/catlmodule-class.md), bir yürütülebilir (EXE) ya da hizmet (EXE) ATL modülüne uygular. Windows başladığında arka planda çalışan bir Windows uygulaması hizmeti modülü iken bir çalıştırılabilir modüle bir yerel, işlem dışı sunucusudur.
+`CAtlModuleT`, [CAtlModule](../../atl/reference/catlmodule-class.md)türetilmiştir, bir Yürütülebilir (EXE) veya Hizmet (EXE) ATL modülü uygular. Yürütülebilir modül yerel, işlem dışı bir sunucudur, hizmet modülü ise Windows başlatıldığında arka planda çalışan bir Windows uygulamasıdır.
 
-`CAtlModuleT` başlatma, kaydetme ve modülün kaydını kaldırmak için destek sağlar.
+`CAtlModuleT`modülün başlatılması, kaydedilmesi ve kaydının silinmesi için destek sağlar.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module)
 
-[CAtlModule](../../atl/reference/catlmodule-class.md)
+[CAtlModülü](../../atl/reference/catlmodule-class.md)
 
 `CAtlModuleT`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase.h
 
-##  <a name="catlmodulet"></a>  CAtlModuleT::CAtlModuleT
+## <a name="catlmoduletcatlmodulet"></a><a name="catlmodulet"></a>CAtlModuleT::CAtlModuleT
 
 Oluşturucu.
 
@@ -84,11 +84,11 @@ CAtlModuleT() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları [CAtlModuleT::InitLibId](#initlibid).
+[CAtlModuleT çağırır::InitLibId](#initlibid).
 
-##  <a name="initlibid"></a>  CAtlModuleT::InitLibId
+## <a name="catlmoduletinitlibid"></a><a name="initlibid"></a>CAtlModuleT::InitLibId
 
-Geçerli modül GUID'i içeren veri üyesi başlatır.
+Geçerli modülün GUID'ini içeren veri üyesini başolarak karşılar.
 
 ```
 static void InitLibId() throw();
@@ -96,11 +96,11 @@ static void InitLibId() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucu tarafından adlandırılan [CAtlModuleT::CAtlModuleT](#catlmodulet).
+Yapıcı [CAtlModuleT tarafından çağrılan::CAtlModuleT](#catlmodulet).
 
-##  <a name="registerappid"></a>  CAtlModuleT::RegisterAppId
+## <a name="catlmoduletregisterappid"></a><a name="registerappid"></a>CAtlModuleT::RegisterAppId
 
-EXE kayıt defterine ekler.
+EXE'yi kayıt defterine ekler.
 
 ```
 HRESULT RegisterAppId() throw();
@@ -108,11 +108,11 @@ HRESULT RegisterAppId() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="registerserver"></a>  CAtlModuleT::RegisterServer
+## <a name="catlmoduletregisterserver"></a><a name="registerserver"></a>CAtlModuleT::RegisterServer
 
-Hizmet kayıt defterine ekler.
+Hizmeti kayıt defterine ekler.
 
 ```
 HRESULT RegisterServer(
@@ -123,18 +123,18 @@ HRESULT RegisterServer(
 ### <a name="parameters"></a>Parametreler
 
 *bRegTypeLib*<br/>
-Tür kitaplığı kayıtlı olması ise TRUE. Varsayılan değer FALSE olur.
+Tür kitaplığı kaydedilecekse DOĞRU. Varsayılan değer FALSE'dur.
 
 *pCLSID*<br/>
-CLSID işaret kaydedilecek nesne. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kayıtlı değilse.
+Kaydedilecek nesnenin CLSID'sine işaret edin. NULL (varsayılan değer) varsa, nesne eşlemindeki tüm nesneler kaydedilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="unregisterappid"></a>  CAtlModuleT::UnregisterAppId
+## <a name="catlmoduletunregisterappid"></a><a name="unregisterappid"></a>CAtlModuleT::Kayıt DışıAppId
 
-EXE kayıt defterinden kaldırır.
+EXE'yi kayıt defterinden kaldırır.
 
 ```
 HRESULT UnregisterAppId() throw();
@@ -142,11 +142,11 @@ HRESULT UnregisterAppId() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="unregisterserver"></a>  CAtlModuleT::UnregisterServer
+## <a name="catlmoduletunregisterserver"></a><a name="unregisterserver"></a>CAtlModuleT::Kayıt DışıSunucu
 
-Hizmet kayıt defterinden kaldırır.
+Hizmeti kayıt defterinden kaldırır.
 
 ```
 HRESULT UnregisterServer(
@@ -157,18 +157,18 @@ HRESULT UnregisterServer(
 ### <a name="parameters"></a>Parametreler
 
 *bUnRegTypeLib*<br/>
-Tür kitaplığı da silinmesine izin ise TRUE.
+Tür kitaplığı da kayıt dışı olacaksa DOĞRU.
 
 *pCLSID*<br/>
-CLSID işaret silinmesine izin nesnesi. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kaydı silinecek durumunda.
+Nesnenin CLSID'sine kayıtsız kalmak için işaret. NULL (varsayılan değer) varsa, nesne eşlemindeki tüm nesneler kayıtsız kalır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="updateregistryappid"></a>  CAtlModuleT::UpdateRegistryAppId
+## <a name="catlmoduletupdateregistryappid"></a><a name="updateregistryappid"></a>CAtlModuleT::UpdateRegistryAppId
 
-Kayıt defterinde EXE bilgilerini güncelleştirir.
+Kayıt defterindeki EXE bilgilerini güncelleştirir.
 
 ```
 static HRESULT WINAPI UpdateRegistryAppId(BOOL /* bRegister*/) throw();
@@ -176,15 +176,15 @@ static HRESULT WINAPI UpdateRegistryAppId(BOOL /* bRegister*/) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*bRegister*<br/>
+*bKayıt*<br/>
 Ayrılmış.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CAtlModule Sınıfı](../../atl/reference/catlmodule-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
-[Modül sınıfları](../../atl/atl-module-classes.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
+[Modül Sınıfları](../../atl/atl-module-classes.md)

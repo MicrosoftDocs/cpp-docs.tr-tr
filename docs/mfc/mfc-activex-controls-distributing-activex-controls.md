@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX denetimleri: ActiveX denetimlerini dağıtma'
+title: 'MFC ActiveX Denetimleri: ActiveX Denetimlerini Dağıtma'
 ms.date: 09/12/2018
 f1_keywords:
 - GetWindowsDirectory
@@ -25,60 +25,60 @@ helpviewer_keywords:
 - registering controls
 - OLEPRO32.DLL
 ms.assetid: cd70ac9b-f613-4879-9e81-6381fdfda2a1
-ms.openlocfilehash: 409ace2197396cf7adbd330cfbd891745a23cf53
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1ada1c801b2d9d62f1cc4cd5bf72a2995225b3de
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392706"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364622"
 ---
-# <a name="mfc-activex-controls-distributing-activex-controls"></a>MFC ActiveX denetimleri: ActiveX denetimlerini dağıtma
+# <a name="mfc-activex-controls-distributing-activex-controls"></a>MFC ActiveX Denetimleri: ActiveX Denetimlerini Dağıtma
 
-Bu makalede, ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorunlar ele alınmıştır:
+Bu makalede, ActiveX denetimlerinin yeniden dağıtılmasıyla ilgili çeşitli konular tartışılmıştır:
 
-- [ANSI veya Unicode denetim sürümleri](#_core_ansi_or_unicode_control_versions)
+- [ANSI veya Unicode Denetim Sürümleri](#_core_ansi_or_unicode_control_versions)
 
-- [ActiveX denetimleri ve yeniden dağıtılabilir DLL'lerinin yükleme](#_core_installing_activex_controls_and_redistributable_dlls)
+- [ActiveX Denetimlerinin Yüklenmesi ve Yeniden Dağıtılabilir DL'lerin Yüklenmesi](#_core_installing_activex_controls_and_redistributable_dlls)
 
-- [Denetimlerini kaydetme](#_core_registering_controls)
+- [Denetimleri Kaydetme](#_core_registering_controls)
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
 
-##  <a name="_core_ansi_or_unicode_control_versions"></a> ANSI veya Unicode denetim sürümleri
+## <a name="ansi-or-unicode-control-versions"></a><a name="_core_ansi_or_unicode_control_versions"></a>ANSI veya Unicode Denetim Sürümleri
 
-Bir denetim ya da her ikisini de ANSI veya Unicode sürümü dağıtmayı karar vermeniz gerekir. Bu kararı ANSI ve Unicode karakter kümelerindeki doğal taşınabilirlik etkenlere bağlıdır.
+Kontrolün ANSI veya Unicode sürümünü gönderip göndermemeye karar vermelisiniz. Bu karar, ANSI ve Unicode karakter kümelerinin doğasında bulunan taşınabilirlik faktörlerine dayanmaktadır.
 
-Çeşitli Win32 işletim sistemleri arasında en fazla taşınabilirlik için tüm Win32 işletim sistemlerinde çalışan, ANSI denetimleri sağlar. Unicode denetim, yalnızca Windows NT (sürüm 3.51 sürümü veya üstü), ancak Windows 95 ya da Windows 98 çalışır. Taşınabilirlik, birincil sevk ANSI denetimleri önemliyse. Denetimleri yalnızca Windows NT çalıştıracaksanız, Unicode denetim sevk edebilir. Ayrıca, her ikisi de gönderin ve kullanıcının işletim sistemi için en uygun sürümünü yüklemek uygulamanızı oluşturdunuz seçebilirsiniz.
+Tüm Win32 işletim sistemlerinde çalışan ANSI denetimleri, çeşitli Win32 işletim sistemleri arasında maksimum taşınabilirlik sağlar. Unicode denetimleri yalnızca Windows NT'de (sürüm 3.51 veya sonraki sürüm) çalışır, ancak Windows 95 veya Windows 98'de çalışmaz. Taşınabilirlik birincil endişe ise, gemi ANSI kontrolleri. Denetimleriniz yalnızca Windows NT'de çalışacaksa, Unicode denetimlerini yönetebilirsiniz. Ayrıca, her ikisini de göndermeyi seçebilir ve uygulamanızın kullanıcının işletim sistemi için en uygun sürümü yüklemesini sağlayabilirsiniz.
 
-##  <a name="_core_installing_activex_controls_and_redistributable_dlls"></a> ActiveX denetimleri ve yeniden dağıtılabilir DLL'lerinin yükleme
+## <a name="installing-activex-controls-and-redistributable-dlls"></a><a name="_core_installing_activex_controls_and_redistributable_dlls"></a>ActiveX Denetimlerinin Yüklenmesi ve Yeniden Dağıtılabilir DL'lerin Yüklenmesi
 
-Kurulum programı, ActiveX denetimleriyle sağlamanız Windows dizininin özel bir alt oluşturun ve denetimleri yükle. İçindeki dosyaların OCX.
+ActiveX denetimlerinizle sağladığınız kurulum programı, Windows dizininin özel bir alt dizini oluşturmalı ve denetimleri yüklemelidir. OCX dosyaları içinde.
 
 > [!NOTE]
->  Windows kullanan `GetWindowsDirectory` Windows dizinin adını almak için Kurulum programınız API. Alt ad şirketinizi veya ürününüzü adından türetilir isteyebilirsiniz.
+> Windows dizininin adını almak için kurulum programınızdaki Windows `GetWindowsDirectory` API'sını kullanın. Alt dizin adını şirketinizin veya ürününüzün adından türetmek isteyebilirsiniz.
 
-Kurulum programını yeniden dağıtılabilir gerekli DLL dosyalarının Windows sistem dizininde yüklemeniz gerekir. DLL zaten kullanıcının makinesine varsa, Kurulum programı sürümlerine yüklemekte olduğunuz sürümleri ile karşılaştırmanız gerekir. Yalnızca sürüm numarasının zaten yüklü dosyasından daha yüksekse, bir dosyayı yeniden yükleyin.
+Kurulum programı, Windows sistem dizininde gerekli yeniden dağıtılabilir DLL dosyalarını yüklemelidir. Kullanıcının makinesinde DL'lerden herhangi biri zaten mevcutsa, kurulum programı sürümlerini yüklediğiniz sürümlerle karşılaştırmalıdır. Bir dosyayı yalnızca sürüm numarası zaten yüklenmiş olan dosyadan daha yüksekse yeniden yükleyin.
 
-ActiveX denetimleri yalnızca OLE kapsayıcı uygulamalarında kullanılabildiğinden OLE DLL'leri denetimleri ile tam kümesini dağıtmak için gerek yoktur. İçeren uygulama (veya işletim sistemi) standart OLE yüklü DLL'leri olduğunu varsayabilirsiniz.
+ActiveX denetimleri yalnızca OLE kapsayıcı uygulamalarında kullanılabildiği için, tüm OLE DL'leri denetimlerinizle dağıtmaya gerek yoktur. İçerdiği uygulamanın (veya işletim sisteminin kendisinin) standart OLE DLL'lerinin yüklü olduğunu varsayabilirsiniz.
 
-##  <a name="_core_registering_controls"></a> Denetimlerini kaydetme
+## <a name="registering-controls"></a><a name="_core_registering_controls"></a>Denetimleri Kaydetme
 
-Uygun girişleri denetim kullanılabilmesi için Windows kayıt defteri veritabanındaki oluşturulmalıdır. Bazı ActiveX denetimi kapsayıcıları için menü öğesi için yeni denetimler kaydedin açmasına sağlasa da, bu özellik tüm kapsayıcılarda kullanılamayabilir. Bu nedenle yüklendiklerinde denetimleri kaydetmek için Kurulum programınıza isteyebilirsiniz.
+Denetimin kullanılabilmesi için windows kayıt veritabanında bunun için uygun girişler oluşturulmalıdır. Bazı ActiveX denetim kapları kullanıcıların yeni denetimleri kaydetmesi için bir menü öğesi sağlar, ancak bu özellik tüm kapsayıcılarda kullanılamayabilir. Bu nedenle, kurulum programınızın denetimleri yüklendiklerinde kaydetmesini isteyebilirsiniz.
 
-Tercih ederseniz, bunun yerine denetimi doğrudan kaydetmek için Kurulum programı yazabilirsiniz.
+İsterseniz, bunun yerine denetimi doğrudan kaydetmek için kurulum programınızı yazabilirsiniz.
 
-Kullanım `LoadLibrary` Windows API'ı denetim DLL yüklenemedi. Ardından, `GetProcAddress` "DllRegisterServer" işlevin adresini almak için. Son olarak, çağrı `DllRegisterServer` işlevi. Aşağıdaki kod örneği, olası bir yöntemi gösterir burada `hLib` denetim kitaplığı tanıtıcısını depolar ve `lpDllEntryPoint` "DllRegisterServer" işlevin adresini depolar.
+Denetim `LoadLibrary` DLL yüklemek için Windows API kullanın. Ardından, `GetProcAddress` "DllRegisterServer" işlevinin adresini almak için kullanın. Son olarak, `DllRegisterServer` işlevi arayın. Aşağıdaki kod örneği, denetim kitaplığı `hLib` tutamacını depoladığı ve `lpDllEntryPoint` "DllRegisterServer" işlevinin adresini depoladığı olası bir yöntemi gösterir.
 
 [!code-cpp[NVC_MFC_AxCont#16](../mfc/codesnippet/cpp/mfc-activex-controls-distributing-activex-controls_1.cpp)]
 
-Denetimi doğrudan kaydetme avantajı, çağırma ve ayrı bir işlemde (yani, REGSVR32) yüklemek yükleme süresini azaltarak değil olmanızdır. Ayrıca, kayıt bir iç işlem olduğundan, Kurulum programı hataları işleyebilir ve öngörülemeyen durumlarda bir dış işlem iyi olabilir.
+Denetimi doğrudan kaydetmenin avantajı, yükleme süresini azaltarak ayrı bir işlemi (REGSVR32) çağırmak ve yüklemeniz gerekmemesidir. Buna ek olarak, kayıt dahili bir işlem olduğundan, kurulum programı hataları ve öngörülemeyen durumları dış işlemden daha iyi işleyebilir.
 
 > [!NOTE]
->  ActiveX denetimi, Kurulum programı yüklemeden önce çağırmalıdır `OleInitialize`. Kurulum programınıza sona erdiğinde, çağrı `OleUnitialize`. Bu şekilde, bir ActiveX denetimi kaydetmek için uygun durumda OLE sistem DLL'lerini olmasını sağlar.
+> Kurulum programınız ActiveX denetimini yüklemeden `OleInitialize`önce . Kurulum programınız bittiğinde, `OleUnitialize`'yi arayın. Bu, OLE sistem DL'lerinin ActiveX denetimini kaydetmek için uygun durumda olmasını sağlar.
 
-MFCx0.DLL kaydetmeniz.
+MFCx0.DLL'yi kaydedin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
+[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)

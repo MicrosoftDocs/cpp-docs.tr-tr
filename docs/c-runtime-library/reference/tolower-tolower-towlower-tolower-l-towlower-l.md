@@ -1,12 +1,17 @@
 ---
 title: tolower, _tolower, towlower, _tolower_l, _towlower_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _tolower_l
 - towlower
 - tolower
 - _tolower
 - _towlower_l
+- _o__tolower
+- _o__tolower_l
+- _o__towlower_l
+- _o_tolower
+- _o_towlower
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,6 +26,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -46,16 +52,16 @@ helpviewer_keywords:
 - characters, converting
 - _towlower_l function
 ms.assetid: 86e0fc02-94ae-4472-9631-bf8e96f67b92
-ms.openlocfilehash: 5d182fca50befac3393012572e68e65a8c81fa72
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 560fde4ae2167256acd54856fced15bc6ccecae6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957450"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81362354"
 ---
 # <a name="tolower-_tolower-towlower-_tolower_l-_towlower_l"></a>tolower, _tolower, towlower, _tolower_l, _towlower_l
 
-Karakteri küçük harfe dönüştürür.
+Bir karakteri küçük harfe dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -81,50 +87,52 @@ int _towlower_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
-Dönüştürülecek karakter.
+*C*<br/>
+Karakter dönüştürmek için.
 
-*ayarlar*<br/>
-Yerel ayara özgü çeviri için kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Yerel çeviri için kullanılacak yerel.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her biri, dönüştürme mümkün olduğunda *c* 'nin bir kopyasını küçük harfe dönüştürür ve sonucu döndürür. Bir hatayı göstermek için ayrılmış dönüş değeri yok.
+Bu yordamların her biri, dönüştürme mümkünse *c'nin* bir kopyasını küçük harfe dönüştürür ve sonucu döndürür. Bir hatayı belirtmek için ayrılmış bir iade değeri yoktur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordamların her biri, belirli bir büyük harfi mümkünse küçük harfe dönüştürür ve uygunsa. **Kasadan düşük** durum dönüştürmesi, yerel ayara özgüdür. Durum durumunda yalnızca geçerli yerel ayara uygun karakterler değişir. **_L** soneki olmayan işlevler şu anda ayarlanmış yerel ayarı kullanır. **_L** sonekine sahip bu işlevlerin sürümleri, yerel ayarı bir parametre olarak alır ve şu anda ayarlanmış yerel ayar yerine bunu kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Bu yordamların her biri, mümkün ve ilgili yse, belirli bir büyük harfi küçük harfe dönüştürür. Çekicinin **büyük/küçük** harf dönüşümü yerele özgüdür. Duruma göre yalnızca geçerli yerel eşle ilgili karakterler değiştirilir. **_l** sonek olmayan işlevler, şu anda ayarlanmış yerel ayaryı kullanır. **_l** sonek olan bu işlevlerin sürümleri, yerel alanı bir parametre olarak alır ve şu anda ayarlanmış yerel ayar yerine bunu kullanır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-**_Tolower** 'in beklenen sonuçlara izin vermesi için [__isascıı](isascii-isascii-iswascii.md) ve [ıupper](isupper-isupper-l-iswupper-iswupper-l.md) öğelerinin ikisi de sıfır dışında döndürülmelidir.
+**_tolower** beklenen sonuçları verebilmek [için, __isascii](isascii-isascii-iswascii.md) ve [isupper'ın](isupper-isupper-l-iswupper-iswupper-l.md) her ikisinin de sıfırsız dönmesi gerekir.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_totlower**|**ToLower**|**_mbctolower**|**kasadan düşük**|
+|**_totlower**|**Tolower**|**_mbctolower**|**çekici**|
 |**_totlower_l**|**_tolower_l**|**_mbctolower_l**|**_towlower_l**|
 
 > [!NOTE]
-> **_tokı_l** ve **_towkı_l** yerel ayar bağımlılığını içermez ve doğrudan çağrılmamalıdır. **_Totlower_l**tarafından iç kullanım için sağlanır.
+> **_tolower_l** ve **_towlower_l** yerel bağımlılık yoktur ve doğrudan çağrılmamalıdır. **Onlar _totlower_l**tarafından iç kullanım için sağlanmaktadır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ToLower**|\<CType. h >|
-|**_tolower**|\<CType. h >|
-|**kasadan düşük**|\<CType. h > veya \<wchar. h >|
+|**Tolower**|\<ctype.h>|
+|**_tolower**|\<ctype.h>|
+|**çekici**|\<ctype.h> \<veya wchar.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
-Bkz. [işlevleri](../../c-runtime-library/to-functions.md).
+[İşlevler'deki](../../c-runtime-library/to-functions.md)örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)<br/>
+[olduğunu, isw Rutinleri](../../c-runtime-library/is-isw-routines.md)<br/>
 [to İşlevleri](../../c-runtime-library/to-functions.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

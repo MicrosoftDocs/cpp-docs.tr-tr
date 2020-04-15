@@ -1,5 +1,5 @@
 ---
-title: CD2DLayer sınıfı
+title: CD2DLayer Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CD2DLayer
@@ -24,16 +24,16 @@ helpviewer_keywords:
 - CD2DLayer [MFC], IsValid
 - CD2DLayer [MFC], m_pLayer
 ms.assetid: 2f96378e-66bb-40d1-9661-6afe324de3c1
-ms.openlocfilehash: 28ebe19b0f28692116a0b95721ff2e5490ad7e68
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa6fb313bfcc2983f167936e5ad4f78be1e17a44
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391237"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369208"
 ---
-# <a name="cd2dlayer-class"></a>CD2DLayer sınıfı
+# <a name="cd2dlayer-class"></a>CD2DLayer Sınıfı
 
-ID2D1Layer için sarmalayıcı.
+ID2D1Layer için bir sarmalayıcı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,58 +45,58 @@ class CD2DLayer : public CD2DResource;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DLayer::CD2DLayer](#cd2dlayer)|CD2DLayer bir nesne oluşturur.|
-|[CD2DLayer:: ~ CD2DLayer](#_dtorcd2dlayer)|Yıkıcı. D2D katman nesnesi yok ediliyorken çağırılır.|
+|[CD2DLayer::CD2DLayer](#cd2dlayer)|CD2DLayer nesnesi oluşturuyor.|
+|[CD2DLayer::~CD2DLayer](#_dtorcd2dlayer)|Yıkıcı. D2D katman nesnesi yok edilirken çağrılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DLayer::Attach](#attach)|Var olan kaynak arabirimi nesnesine ekler|
-|[CD2DLayer::Create](#create)|Bir CD2DLayer oluşturur. (Geçersiz kılmaları [CD2DResource::Create](../../mfc/reference/cd2dresource-class.md#create).)|
-|[CD2DLayer::Destroy](#destroy)|CD2DLayer nesnesini yok eder. (Geçersiz kılmaları [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|
-|[CD2DLayer::detach](#detach)|Kaynak arabirimi nesnesinden ayırır|
-|[CD2DLayer::get](#get)|Döndürür ID2D1Layer arabirimi|
-|[CD2DLayer::GetSize](#getsize)|Boyut işleme hedefinin CİHAZDAN bağımsız piksel cinsinden döndürür|
-|[CD2DLayer::IsValid](#isvalid)|Kaynak geçerlilik denetler (geçersiz kılmaları [CD2DResource::IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
+|[CD2DLayer::Ekle](#attach)|Nesneye varolan kaynak arabirimi ataştırır|
+|[CD2DLayer::Oluştur](#create)|BIR CD2DLayer oluşturur. [(CD2DResource geçersiz kılar::Oluştur](../../mfc/reference/cd2dresource-class.md#create).)|
+|[CD2DLayer::Destroy](#destroy)|CD2DLayer nesnesini yok eder. (GEÇERSIZ Kılar [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|
+|[CD2DLayer::Detach](#detach)|Kaynak arabirimini nesneden ayırıyor|
+|[CD2DLayer::Get](#get)|ID2D1Layer arabirimini döndürür|
+|[CD2DLayer::GetSize](#getsize)|Aygıttan bağımsız piksellerde render hedefinin boyutunu döndürür|
+|[CD2DLayer::Geçersiz](#isvalid)|Kaynak geçerliliğini denetler [(CD2DResource geçersiz kılar::Geçerlidir](../../mfc/reference/cd2dresource-class.md#isvalid).)|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DLayer::operator ID2D1Layer *](#operator_id2d1layer_star)|Döndürür ID2D1Layer arabirimi|
+|[CD2DLayer::operatör ID2D1Layer*](#operator_id2d1layer_star)|ID2D1Layer arabirimini döndürür|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DLayer::m_pLayer](#m_player)|ID2D1Layer nesneye bir işaretçi depolar.|
+|[CD2DLayer::m_pLayer](#m_player)|Bir işaretçiyi ID2D1Layer nesnesine depolar.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CD2DResource](../../mfc/reference/cd2dresource-class.md)
+[CD2DKaynak](../../mfc/reference/cd2dresource-class.md)
 
 `CD2DLayer`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget.h
 
-##  <a name="_dtorcd2dlayer"></a>  CD2DLayer:: ~ CD2DLayer
+## <a name="cd2dlayercd2dlayer"></a><a name="_dtorcd2dlayer"></a>CD2DLayer::~CD2DLayer
 
-Yıkıcı. D2D katman nesnesi yok ediliyorken çağırılır.
+Yıkıcı. D2D katman nesnesi yok edilirken çağrılır.
 
 ```
 virtual ~CD2DLayer();
 ```
 
-##  <a name="attach"></a>  CD2DLayer::Attach
+## <a name="cd2dlayerattach"></a><a name="attach"></a>CD2DLayer::Ekle
 
-Var olan kaynak arabirimi nesnesine ekler
+Nesneye varolan kaynak arabirimi ataştırır
 
 ```
 void Attach(ID2D1Layer* pResource);
@@ -104,12 +104,12 @@ void Attach(ID2D1Layer* pResource);
 
 ### <a name="parameters"></a>Parametreler
 
-*pResource*<br/>
-Mevcut kaynak arabirimi. NULL olamaz
+*pKaynak*<br/>
+Varolan kaynak arabirimi. NULL olamaz
 
-##  <a name="cd2dlayer"></a>  CD2DLayer::CD2DLayer
+## <a name="cd2dlayercd2dlayer"></a><a name="cd2dlayer"></a>CD2DLayer::CD2DLayer
 
-CD2DLayer bir nesne oluşturur.
+CD2DLayer nesnesi oluşturuyor.
 
 ```
 CD2DLayer(
@@ -120,14 +120,14 @@ CD2DLayer(
 ### <a name="parameters"></a>Parametreler
 
 *pParentTarget*<br/>
-İşleme hedefi için bir işaretçi.
+İşleme hedefine işaretçi.
 
 *bAutoDestroy*<br/>
-Nesne sahibi tarafından (pParentTarget) edileceği gösterir.
+Nesnenin sahibi (pParentTarget) tarafından yok edileceğini gösterir.
 
-##  <a name="create"></a>  CD2DLayer::Create
+## <a name="cd2dlayercreate"></a><a name="create"></a>CD2DLayer::Oluştur
 
-Bir CD2DLayer oluşturur.
+BIR CD2DLayer oluşturur.
 
 ```
 virtual HRESULT Create(CRenderTarget* pRenderTarget);
@@ -136,13 +136,13 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ### <a name="parameters"></a>Parametreler
 
 *pRenderTarget*<br/>
-İşleme hedefi için bir işaretçi.
+İşleme hedefine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
 
-##  <a name="destroy"></a>  CD2DLayer::Destroy
+## <a name="cd2dlayerdestroy"></a><a name="destroy"></a>CD2DLayer::Destroy
 
 CD2DLayer nesnesini yok eder.
 
@@ -150,9 +150,9 @@ CD2DLayer nesnesini yok eder.
 virtual void Destroy();
 ```
 
-##  <a name="detach"></a>  CD2DLayer::detach
+## <a name="cd2dlayerdetach"></a><a name="detach"></a>CD2DLayer::Detach
 
-Kaynak arabirimi nesnesinden ayırır
+Kaynak arabirimini nesneden ayırıyor
 
 ```
 ID2D1Layer* Detach();
@@ -160,11 +160,11 @@ ID2D1Layer* Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılmış kaynak arabirim işaretçisi.
+Ayrılmış kaynak arabirimine işaretçi.
 
-##  <a name="get"></a>  CD2DLayer::get
+## <a name="cd2dlayerget"></a><a name="get"></a>CD2DLayer::Get
 
-Döndürür ID2D1Layer arabirimi
+ID2D1Layer arabirimini döndürür
 
 ```
 ID2D1Layer* Get();
@@ -172,11 +172,11 @@ ID2D1Layer* Get();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ID2D1Layer arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe çevrilmediyse, ID2D1Layer arabirimini işaretleyin veya NULL.
 
-##  <a name="getsize"></a>  CD2DLayer::GetSize
+## <a name="cd2dlayergetsize"></a><a name="getsize"></a>CD2DLayer::GetSize
 
-Boyut işleme hedefinin CİHAZDAN bağımsız piksel cinsinden döndürür
+Aygıttan bağımsız piksellerde render hedefinin boyutunu döndürür
 
 ```
 CD2DSizeF GetSize() const;
@@ -184,11 +184,11 @@ CD2DSizeF GetSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleme hedefinin CİHAZDAN bağımsız piksel cinsinden geçerli boyutu
+Aygıttan bağımsız piksellerde render hedefinin geçerli boyutu
 
-##  <a name="isvalid"></a>  CD2DLayer::IsValid
+## <a name="cd2dlayerisvalid"></a><a name="isvalid"></a>CD2DLayer::Geçersiz
 
-Kaynak geçerlilik denetimleri
+Kaynak geçerliliğini denetler
 
 ```
 virtual BOOL IsValid() const;
@@ -196,19 +196,19 @@ virtual BOOL IsValid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaynak geçerli ise TRUE; Aksi durumda FALSE.
+Kaynak geçerliyse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="m_player"></a>  CD2DLayer::m_pLayer
+## <a name="cd2dlayerm_player"></a><a name="m_player"></a>CD2DLayer::m_pLayer
 
-ID2D1Layer nesneye bir işaretçi depolar.
+Bir işaretçiyi ID2D1Layer nesnesine depolar.
 
 ```
 ID2D1Layer* m_pLayer;
 ```
 
-##  <a name="operator_id2d1layer_star"></a>  CD2DLayer::operator ID2D1Layer *
+## <a name="cd2dlayeroperator-id2d1layer"></a><a name="operator_id2d1layer_star"></a>CD2DLayer::operatör ID2D1Layer*
 
-Döndürür ID2D1Layer arabirimi
+ID2D1Layer arabirimini döndürür
 
 ```
 operator ID2D1Layer* ();
@@ -216,7 +216,7 @@ operator ID2D1Layer* ();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ID2D1Layer arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe çevrilmediyse, ID2D1Layer arabirimini işaretleyin veya NULL.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

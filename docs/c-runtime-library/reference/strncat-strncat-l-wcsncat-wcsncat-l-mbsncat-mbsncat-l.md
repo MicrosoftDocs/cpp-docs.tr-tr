@@ -1,6 +1,6 @@
 ---
 title: strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - strncat
 - _strncat_l
@@ -8,6 +8,8 @@ api_name:
 - _mbsncat_l
 - wcsncat
 - wcsncat_l
+- _o__mbsncat
+- _o__mbsncat_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -22,6 +24,7 @@ api_location:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -61,19 +64,19 @@ helpviewer_keywords:
 - _mbsncat_l function
 - tcsncat function
 ms.assetid: de67363b-68c6-4ca5-91e3-478610ad8159
-ms.openlocfilehash: f27c2cb9b59d789e34da19b531a20d13475e62ee
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0e6fbc365d4e127d72df039b1351b1bfe91b1b74
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70947335"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364205"
 ---
 # <a name="strncat-_strncat_l-wcsncat-_wcsncat_l-_mbsncat-_mbsncat_l"></a>strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 
-Bir dizenin karakterlerini ekler. Bu işlevlerin daha güvenli sürümleri mevcuttur, bkz. [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) .
+Bir dize karakterleri ekler. Bu işlevlerin daha güvenli sürümleri mevcuttur, [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) bakın.
 
 > [!IMPORTANT]
-> **_mbsncat** ve **_mbsncat_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsncat** ve **_mbsncat_l,** Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -129,54 +132,56 @@ unsigned char *_mbsncat_l(
 ### <a name="parameters"></a>Parametreler
 
 *strDest*<br/>
-Null ile sonlandırılmış hedef dizesi.
+Null-sonlandırılan hedef dize.
 
 *strSource*<br/>
-Null ile sonlandırılmış kaynak dizesi.
+Null-sonlandırılan kaynak dize.
 
-*biriktirme*<br/>
-Eklenecek karakter sayısı.
+*Sayısı*<br/>
+Ekinde ekili karakter sayısı.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Hedef dizeye bir işaretçi döndürür. Bir hatayı göstermek için hiçbir dönüş değeri ayrılmadı.
+Hedef dize için bir işaretçi döndürür. Bir hatayı belirtmek için hiçbir iade değeri ayrılmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strncat** işlevi, en çok, *strSource* 'un Ilk *sayı* karakterlerini *strDest*öğesine ekler. *StrSource* başlangıç karakteri, *strDest*'in Sonlandırıcı null karakterinin üzerine yazar. *StrSource* içinde null bir karakter görünürse, *sayı* karakterleri eklendikten sonra **strncat** , *strSource*'tan null karaktere kadar tüm karakterleri ekler. *Count* , *strSource*uzunluğundan fazlaysa, *strSource* uzunluğu *sayı*yerine kullanılır. Her durumda, sonuçta elde edilen dize bir null karakterle sonlandırılır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
+**Strncat** işlevi, en fazla, *strSource* ilk *sayma* karakterleri *strDest*ekler. *strSource'un* ilk karakteri *strDest'in*sonlandırıcı null karakterini yazar. *Sayım* karakterleri eklenmeden önce *strSource'da* bir null karakter görünürse, **strncat** *strSource'dan*null karaktere kadar tüm karakterleri ekler. *Sayım* *strSource'un*uzunluğundan büyükse, *strSource'un* uzunluğu *sayım*yerine kullanılır. Tüm durumlarda, ortaya çıkan dize null bir karakter ile sonlandırılır. Kopyalama çakışan dizeleri arasında gerçekleşirse, davranış tanımsız.
 
 > [!IMPORTANT]
-> **strncat** , *strDest*içinde yeterli alanı denetlemez; Bu nedenle arabellek taşmalarının olası bir nedeni vardır. *Count* değerinin eklenen karakter sayısını sınırlayıp sınırlamadığını aklınızda bulundurun; Bu, *strDest*boyutu için bir sınır değildir. Aşağıdaki örnek bakın. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+> **strncat** *strDest*yeterli alan için kontrol etmez ; bu nedenle arabellek taşmaları olası bir nedenidir. *Sayının* eklenen karakter sayısını sınırladığını unutmayın; *strDest*boyutunda bir sınır değildir. Aşağıdaki örneğe bakın. Daha fazla bilgi için [bkz.](/windows/win32/SecBP/avoiding-buffer-overruns)
 
-**wcsncat** ve **_mbsncat** , **strncat**'in geniş karakterli ve çok baytlı karakter sürümleridir. **Wcsncat** 'in dize bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsncat** , çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
+**wcsncat** ve **_mbsncat** **strncat**geniş karakterli ve multibayt karakterli versiyonlarıdır. String bağımsız değişkenleri ve **wcsncat'in** dönüş değeri geniş karakterli dizeleridir; **_mbsncat** çok bayt karakterli dizeleri vardır. Bu üç işlev aynı şekilde çalışır.
 
-Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Çıktı değeri, yerel LC_CTYPE **kategori** ayarı ayarı etkilenir; daha fazla bilgi için [setlocale'ye](setlocale-wsetlocale.md) bakın. Bu işlevlerin **_l** soneki olmayan sürümleri, bu yerele bağımlı davranış için geçerli yerel durumu kullanır; **_l** soneki olan sürümler, bunun yerine geçirilen yerel parametreyi kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-' C++De, bu işlevlerde şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++'da bu işlevlerde şablon aşırı yükleri vardır. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsncat**|**strncat**|**_mbsnbcat**|**wcsncat**|
 |**_tcsncat_l**|**_strncat_l**|**_mbsnbcat_l**|**_wcsncat_l**|
 
 > [!NOTE]
-> **_strncat_l** ve **_wcsncat_l** yerel ayar bağımlılığını içermez ve doğrudan çağrılmamalıdır. Bunlar, **_tcsncat_l**tarafından iç kullanım için sağlanır.
+> **_strncat_l** ve **_wcsncat_l** yerel bağımlılık yoktur ve doğrudan çağrılmamalıdır. **Onlar _tcsncat_l**tarafından iç kullanım için sağlanmaktadır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strncat**|\<String. h >|
-|**wcsncat**|\<String. h > veya \<wchar. h >|
-|**_mbsncat**|\<mbstring. h >|
-|**_mbsncat_l**|\<mbstring. h >|
+|**strncat**|\<string.h>|
+|**wcsncat**|\<string.h> \<veya wchar.h>|
+|**_mbsncat**|\<mbstring.h>|
+|**_mbsncat_l**|\<mbstring.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -217,7 +222,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 string can hold up to 39 characters
@@ -225,11 +230,11 @@ After BadAppend :  This is the initial string!Extra text to add to (47 chars)
 After GoodAppend:  This is the initial string!Extra text t (39 chars)
 ```
 
-**BadAppend** 'in bir arabellek taşmasına neden olduğunu unutmayın.
+**BadAppend'in** arabellek taşmanına neden olduğunu unutmayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
@@ -240,5 +245,5 @@ After GoodAppend:  This is the initial string!Extra text t (39 chars)
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

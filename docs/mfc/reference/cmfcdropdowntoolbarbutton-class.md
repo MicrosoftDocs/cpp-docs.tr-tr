@@ -1,5 +1,5 @@
 ---
-title: CMFCDropDownToolbarButton sınıfı
+title: CMFCDropDownToolbarButton Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCDropDownToolbarButton
@@ -42,16 +42,16 @@ helpviewer_keywords:
 - CMFCDropDownToolbarButton [MFC], SetDefaultCommand
 - CMFCDropDownToolbarButton [MFC], m_uiShowBarDelay
 ms.assetid: bc9d69e6-bd3e-4c15-9368-e80a504a0ba7
-ms.openlocfilehash: fcfb521e309463da81d0064451297b3b73610d2f
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d62d5ecb0962f74a5dac1658c207cfb08cf12588
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505327"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367617"
 ---
-# <a name="cmfcdropdowntoolbarbutton-class"></a>CMFCDropDownToolbarButton sınıfı
+# <a name="cmfcdropdowntoolbarbutton-class"></a>CMFCDropDownToolbarButton Sınıfı
 
-Tıklandığı zaman normal düğme gibi davranan bir araç çubuğu düğmesi türü. Ancak, Kullanıcı araç çubuğu düğmesini aşağı basarsa ve tutuyorsa bir açılan araç çubuğu ( [CMFCDropDownToolBar sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md) ) açar.
+Tıklatıldığında normal bir düğme gibi görünen araç çubuğu düğmesi türü. Ancak, açılır araç çubuğunu açar (kullanıcı araç çubuğu düğmesine basıp basılı tutarsa [CMFCDropDownToolBar Class.](../../mfc/reference/cmfcdropdowntoolbar-class.md)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,52 +63,52 @@ class CMFCDropDownToolbarButton : public CMFCToolBarButton
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCDropDownToolbarButton:: CMFCDropDownToolbarButton](#cmfcdropdowntoolbarbutton)|Bir `CMFCDropDownToolbarButton` nesnesi oluşturur.|
+|[CMFCDropDownToolbarButton::CMFCDropDownToolbarButton](#cmfcdropdowntoolbarbutton)|Bir `CMFCDropDownToolbarButton` nesne inşa eder.|
 |`CMFCDropDownToolbarButton::~CMFCDropDownToolbarButton`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCDropDownToolbarButton:: CopyFrom](#copyfrom)|Başka bir araç çubuğu düğmesinin özelliklerini geçerli düğmeye kopyalar. ( [CMFCToolBarButton:: CopyFrom](../../mfc/reference/cmfctoolbarbutton-class.md#copyfrom).)|
-|`CMFCDropDownToolbarButton::CreateObject`|Framework tarafından bu sınıf türünün dinamik bir örneğini oluşturmak için kullanılır.|
-|[CMFCDropDownToolbarButton::D ropDownToolbar](#dropdowntoolbar)|Açılan araç çubuğunu açar.|
-|[CMFCDropDownToolbarButton:: Exporttomenubtan](#exporttomenubutton)|Araç çubuğu düğmesinden bir menüye metin kopyalar. ( [CMFCToolBarButton:: Exporttomenubtan](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)geçersiz kılar.)|
-|[CMFCDropDownToolbarButton:: GetDropDownToolBar](#getdropdowntoolbar)|Düğmeyle ilişkili açılan araç çubuğunu alır.|
-|`CMFCDropDownToolbarButton::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
-|[CMFCDropDownToolbarButton:: IsDropDown](#isdropdown)|Açılan araç çubuğunun Şu anda açık olup olmadığını belirler.|
-|[CMFCDropDownToolbarButton:: IsExtraSize](#isextrasize)|Düğmenin genişletilmiş bir kenarlıkla görüntülenip görüntülenemeyeceğini belirler. ( [CMFCToolBarButton:: IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize)geçersiz kılar.)|
-|[CMFCDropDownToolbarButton:: OnCalculateSize](#oncalculatesize)|Belirtilen cihaz bağlamı ve yerleştirme durumu için düğmenin boyutunu hesaplamak üzere Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).) öğesini geçersiz kılar|
-|`CMFCDropDownToolbarButton::OnCancelMode`|[WM_CANCELMODE](/windows/win32/winmsg/wm-cancelmode) iletisini işlemek için Framework tarafından çağırılır. (Geçersiz `CMCToolBarButton::OnCancelMode`kılmalar.)|
-|[CMFCDropDownToolbarButton:: OnChangeParentWnd](#onchangeparentwnd)|Düğme yeni bir araç çubuğuna eklendiğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)geçersiz kılar.)|
-|[CMFCDropDownToolbarButton:: OnClick](#onclick)|Kullanıcı fare düğmesine tıkladığında Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)geçersiz kılar.)|
-|[CMFCDropDownToolbarButton:: OnClickUp](#onclickup)|Kullanıcı fare düğmesini bıraktığında Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnClickUp](../../mfc/reference/cmfctoolbarbutton-class.md#onclickup)geçersiz kılar.)|
-|[CMFCDropDownToolbarButton:: OnContextHelp](#oncontexthelp)|Ana araç çubuğu bir WM_HELPHITTEST iletisini işlediğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp)geçersiz kılar.)|
-|[CMFCDropDownToolbarButton:: OnCustomizeMenu](#oncustomizemenu)|Uygulama üst araç çubuğunda bir kısayol menüsü görüntülediğinde, belirtilen menüyü değiştirir. ( [CMFCToolBarButton:: OnCustomizeMenu](../../mfc/reference/cmfctoolbarbutton-class.md#oncustomizemenu).) öğesini geçersiz kılar|
-|[CMFCDropDownToolbarButton:: OnDraw](#ondraw)|Belirtilen stilleri ve seçenekleri kullanarak düğmeyi çizmek için Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw)geçersiz kılar.)|
-|[CMFCDropDownToolbarButton:: OnDrawOnCustomizeList](#ondrawoncustomizelist)|**Özelleştirme** Iletişim kutusunun **Komutlar** bölmesinde düğme çizmek için Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist).) öğesini geçersiz kılar|
-|[CMFCDropDownToolbarButton:: serileştirme](#serialize)|Bu nesneyi bir arşivden okur veya bir arşive yazar. ( [CMFCToolBarButton:: Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize)geçersiz kılar.)|
-|[CMFCDropDownToolbarButton:: SetDefaultCommand](#setdefaultcommand)|Bir Kullanıcı düğmeye tıkladığında çerçevenin kullandığı varsayılan komutu ayarlar.|
+|[CMFCDropDropToolbarButton::CopyFrom](#copyfrom)|Başka bir araç çubuğu düğmesinin özelliklerini geçerli düğmeye kopyalar. [(CMFCToolBarButton geçersiz kılar::CopyFrom](../../mfc/reference/cmfctoolbarbutton-class.md#copyfrom).)|
+|`CMFCDropDownToolbarButton::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için çerçeve tarafından kullanılır.|
+|[CMFCDropDownToolbarButton::DropDownToolbar](#dropdowntoolbar)|Açılır araç çubuğu açılır.|
+|[CMFCDropDownToolbarButton::ExportToMenuButton](#exporttomenubutton)|Araç çubuğu düğmesinden menüye metni kopyalar. [(Overrides CMFCToolBarButton::ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton).)|
+|[CMFCDropDownToolbarButton::GetDropDownToolBar](#getdropdowntoolbar)|Düğmeyle ilişkili açılır araç çubuğunu alır.|
+|`CMFCDropDownToolbarButton::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
+|[CMFCDropDropToolbarButton::IsDropDown](#isdropdown)|Açılan araç çubuğunun şu anda açık olup olmadığını belirler.|
+|[CMFCDropDownToolbarButton::IsExtraSize](#isextrasize)|Düğmenin genişletilmiş kenarlıkla görüntülenip görüntülenemeyeceğini belirler. [(Overrides CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize).)|
+|[CMFCDropDownToolbarButton::OnCalculateSize](#oncalculatesize)|Belirtilen aygıt bağlamı ve yerleştirme durumu için düğmenin boyutunu hesaplamak için çerçeve tarafından çağrılır. [(CMFCToolBarButton geçersiz kılar::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|
+|`CMFCDropDownToolbarButton::OnCancelMode`|[WM_CANCELMODE](/windows/win32/winmsg/wm-cancelmode) iletisini işlemek için çerçeve tarafından çağrılır. (Geçersiz `CMCToolBarButton::OnCancelMode`kılar .)|
+|[CMFCDropDownToolbarButton::OnChangeParentWnd](#onchangeparentwnd)|Düğme yeni bir araç çubuğuna takıldığında çerçeve tarafından çağrılır. [(Üstyüklemeler CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd).)|
+|[CMFCDropDownToolbarButton::Tıklayın](#onclick)|Kullanıcı fare düğmesini tıklattığında çerçeve tarafından çağrılır. [(Overrides CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick).)|
+|[CMFCDropDownToolbarButton::OnClickUp](#onclickup)|Kullanıcı fare düğmesini serbest bıraktığunda çerçeve tarafından çağrılır. [(CMFCToolBarButton geçersiz kılar::OnClickUp](../../mfc/reference/cmfctoolbarbutton-class.md#onclickup).)|
+|[CMFCDropDropToolbarButton::OnContextHelp](#oncontexthelp)|Üst araç çubuğu bir WM_HELPHITTEST iletisi işlediğinde çerçeve tarafından çağrılır. [(Overrides CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp).)|
+|[CMFCDropDownToolbarButton::OnCustomizeMenu](#oncustomizemenu)|Uygulama ana araç çubuğunda bir kısayol menüsü görüntülendiğinde sağlanan menüyü değiştirir. (Geçersiz kılar [CMFCToolBarButton::OnCustomizeMenu](../../mfc/reference/cmfctoolbarbutton-class.md#oncustomizemenu).)|
+|[CMFCDropDownToolbarButton::OnDraw](#ondraw)|Belirtilen stilleri ve seçenekleri kullanarak düğmeyi çizmek için çerçeve tarafından çağrılır. [(CMFCToolBarButton geçersiz kılar::OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw).)|
+|[CMFCDropDownToolbarButton::OnDrawOnCustomizeList](#ondrawoncustomizelist)|**Özelleştir** iletişim kutusunun **Komutlar** bölmesinde düğmeyi çizmek için çerçeve tarafından çağrılır. [(Overrides CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist).)|
+|[CMFCDropDownToolbarButton::Serialize](#serialize)|Bu nesneyi arşivden okur veya arşive yazar. [(CMFCToolBarButton geçersiz kılar::Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize).)|
+|[CMFCDropDownToolbarButton::SetDefaultCommand](#setdefaultcommand)|Kullanıcı düğmeyi tıklattığında çerçevenin kullandığı varsayılan komutu ayarlar.|
 
-### <a name="data-members"></a>Veri üyeleri
+### <a name="data-members"></a>Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCDropDownToolbarButton:: m_uiShowBarDelay](#m_uishowbardelay)|Bir kullanıcının, açılan araç çubuğunun görünmesi için fare düğmesini aşağı tutması gereken süre uzunluğunu belirtir.|
+|[CMFCDropDownToolbarButton::m_uiShowBarDelay](#m_uishowbardelay)|Açılan araç çubuğu görünmeden önce kullanıcının fare düğmesini basılı tutması gereken süreyi belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-, Düğmenin sağ alt köşesinde küçük bir oka sahip olan sıradan bir düğmeden farklıdır.`CMFCDropDownToolBarButton` Kullanıcı açılan araç çubuğundan bir düğme seçtikten sonra çerçeve, üst düzey araç çubuğu düğmesinde (sağ alt köşedeki küçük oka sahip düğme) kendi simgesini görüntüler.
+A, `CMFCDropDownToolBarButton` düğmenin sağ alt köşesinde küçük bir ok olması nedeniyle sıradan bir düğmeden farklıdır. Kullanıcı açılır araç çubuğundan bir düğme seçtikten sonra, çerçeve simgesini üst düzey araç çubuğu düğmesinde (sağ alt köşedeki küçük oklu düğme) görüntüler.
 
-Açılan araç çubuğunun nasıl uygulanacağı hakkında daha fazla bilgi için bkz. [CMFCDropDownToolBar sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md).
+Açılır araç çubuğunun nasıl uygulanacağı hakkında bilgi için [CMFCDropDownToolBar Class'a](../../mfc/reference/cmfcdropdowntoolbar-class.md)bakın.
 
-Nesne bir [cmfctoolbarmenubtan Class](../../mfc/reference/cmfctoolbarmenubutton-class.md) nesnesine aktarılabilir ve açılır menü ile bir menü düğmesi olarak görüntülenebilir. `CMFCDropDownToolBarButton`
+Nesne `CMFCDropDownToolBarButton` [cmfcToolBarMenuButton Sınıf](../../mfc/reference/cmfctoolbarmenubutton-class.md) nesnesine dışa aktarılabilir ve açılır menülü bir menü düğmesi olarak görüntülenebilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)
 
@@ -116,9 +116,9 @@ Nesne bir [cmfctoolbarmenubtan Class](../../mfc/reference/cmfctoolbarmenubutton-
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdropdowntoolbar. h
+**Üstbilgi:** afxdropdowntoolbar.h
 
-##  <a name="copyfrom"></a>CMFCDropDownToolbarButton:: CopyFrom
+## <a name="cmfcdropdowntoolbarbuttoncopyfrom"></a><a name="copyfrom"></a>CMFCDropDropToolbarButton::CopyFrom
 
 Başka bir araç çubuğu düğmesinin özelliklerini geçerli düğmeye kopyalar.
 
@@ -128,16 +128,16 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 
 ### <a name="parameters"></a>Parametreler
 
-*YN*<br/>
-'ndaki Kopyalanacak kaynak düğmesine bir başvuru.
+*src*<br/>
+[içinde] Kopyalamak için kaynak düğmesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu araç çubuğu düğmesine başka bir araç çubuğu düğmesi kopyalamak için bu yöntemi çağırın. *src* türünde `CMFCDropDownToolbarButton`olmalıdır.
+Başka bir araç çubuğu düğmesini bu araç çubuğu düğmesine kopyalamak için bu yöntemi arayın. *src* türünde `CMFCDropDownToolbarButton`olmalıdır.
 
-##  <a name="cmfcdropdowntoolbarbutton"></a>CMFCDropDownToolbarButton:: CMFCDropDownToolbarButton
+## <a name="cmfcdropdowntoolbarbuttoncmfcdropdowntoolbarbutton"></a><a name="cmfcdropdowntoolbarbutton"></a>CMFCDropDownToolbarButton::CMFCDropDownToolbarButton
 
-Bir `CMFCDropDownToolbarButton` nesnesi oluşturur.
+Bir `CMFCDropDownToolbarButton` nesne inşa eder.
 
 ```
 CMFCDropDownToolbarButton();
@@ -149,27 +149,27 @@ CMFCDropDownToolbarButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*<br/>
-'ndaki Düğmenin varsayılan metni.
+*Lpszname*<br/>
+[içinde] Düğmenin varsayılan metni.
 
 *pToolBar*<br/>
-'ndaki Kullanıcı düğmeye bastığında görüntülenen `CMFCDropDownToolBar` nesneye yönelik bir işaretçi.
+[içinde] Kullanıcı düğmeye `CMFCDropDownToolBar` bastığında görüntülenen nesneye işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucunun ikinci aşırı yüklemesi, *pToolBar* 'ın belirttiği araç çubuğundan ilk düğme açılan düğmesine kopyalar.
+Oluşturucu kopyaların ikinci aşırı yükü, *pToolBar'ın* belirttiği araç çubuğundan ilk düğmeyi açılır düğmeye basılır.
 
-Genellikle, açılan araç çubuğu düğmesi, *pToolBar* 'ın belirttiği araç çubuğundaki en son kullanılan düğmeden metni kullanır. Düğme bir menü düğmesine dönüştürüldüğünde veya **Özelleştir** Iletişim kutusunun **Komutlar** sekmesinde görüntülendiğinde, *lpszName* tarafından belirtilen metni kullanır. **Özelleştirme** iletişim kutusu hakkında daha fazla bilgi için bkz. [CMFCToolBarsCustomizeDialog Class](../../mfc/reference/cmfctoolbarscustomizedialog-class.md).
+Genellikle, açılır araç çubuğu *düğmesi, pToolBar'ın* belirttiği araç çubuğunda en son kullanılan düğmedeki metni kullanır. Düğme bir menü düğmesine dönüştürüldüğünde veya **Özelleştir** iletişim kutusunun **Komutlar** sekmesinde görüntülendiğinde *lpszName* tarafından belirtilen metni kullanır. **Özelleştir** iletişim kutusu hakkında daha fazla bilgi için [CMFCToolBarsCustomizeDialog Class'a](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)bakın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCDropDownToolbarButton` sınıfının bir nesnesinin nasıl oluşturulduğunu gösterir. Bu kod parçacığı, [Visual Studio Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfın bir nesnesinin `CMFCDropDownToolbarButton` nasıl inşa edilebildiğini gösterir. Bu kod snippet [Visual Studio Demo örnek](../../overview/visual-cpp-samples.md)parçasıdır.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#31](../../mfc/codesnippet/cpp/cmfcdropdowntoolbarbutton-class_1.cpp)]
 
-##  <a name="dropdowntoolbar"></a>CMFCDropDownToolbarButton::D ropDownToolbar
+## <a name="cmfcdropdowntoolbarbuttondropdowntoolbar"></a><a name="dropdowntoolbar"></a>CMFCDropDownToolbarButton::DropDownToolbar
 
-Açılan araç çubuğunu açar.
+Açılır araç çubuğu açılır.
 
 ```
 BOOL DropDownToolbar(CWnd* pWnd);
@@ -177,24 +177,24 @@ BOOL DropDownToolbar(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-'ndaki Aşağı açılan araç çubuğu düğmesinin ana penceresini kullanmak için açılır çerçevenin üst penceresi veya NULL.
+*Pwnd*<br/>
+[içinde] Açılır çerçevenin üst penceresi veya açılır araç çubuğunun üst penceresini kullanmak için NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa sıfır dışı; Aksi takdirde 0.
+Yöntem başarılı olursa sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CMFCDropDownToolbarButton:: OnClick](#onclick) yöntemi, Kullanıcı araç çubuğu düğmesini aşağı bastığında ve elinde tuttuğunda açılan araç çubuğunu açmak için bu yöntemi çağırır.
+[CMFCDropDropToolbarButton::OnClick](#onclick) yöntemi, kullanıcı araç çubuğu düğmesine bastığında ve basılı tuttuğunda açılır araç çubuğunu açmak için bu yöntemi çağırır.
 
-Bu yöntemler [CMFCDropDownFrame:: Create](../../mfc/reference/cmfcdropdownframe-class.md#create) metodunu kullanarak açılan araç çubuğunu oluşturur. Ana araç çubuğu dikey olarak yerleştirilmişse, bu yöntem aşağı açılan araç çubuğunu üst araç çubuğunun sol veya sağ tarafına, pencereye göre konumlandırır. Aksi takdirde, bu yöntem ana araç çubuğunun altındaki açılan araç çubuğunu konumlandırır.
+Bu [yöntem, CMFCDropDownFrame::Create](../../mfc/reference/cmfcdropdownframe-class.md#create) yöntemini kullanarak açılır araç çubuğunu oluşturur. Üst araç çubuğu dikey olarak sabitlenirse, bu yöntem, açılan araç çubuğunu sığmaya bağlı olarak üst araç çubuğunun sol veya sağ tarafına yerlebir olur. Aksi takdirde, bu yöntem açılır araç çubuğunu üst araç çubuğunun altına yerlebir olur.
 
-*PWnd* null ise ve açılan araç çubuğu düğmesi bir üst pencere içermiyorsa, bu yöntem başarısız olur.
+*PWnd* NULL ise ve açılır araç çubuğu düğmesinde üst pencere yoksa bu yöntem başarısız olur.
 
-##  <a name="exporttomenubutton"></a>CMFCDropDownToolbarButton:: Exporttomenubtan
+## <a name="cmfcdropdowntoolbarbuttonexporttomenubutton"></a><a name="exporttomenubutton"></a>CMFCDropDownToolbarButton::ExportToMenuButton
 
-Araç çubuğu düğmesinden bir menüye metin kopyalar.
+Araç çubuğu düğmesinden menüye metni kopyalar.
 
 ```
 virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
@@ -202,22 +202,22 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*menuButton*<br/>
-'ndaki Hedef menü düğmesine bir başvuru.
+*menüDüğme*<br/>
+[içinde] Hedef menü düğmesine başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa sıfır dışı; Aksi takdirde 0.
+Yöntem başarılı olursa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, temel sınıf uygulamasını çağırır ( [CMFCToolBarButton:: Exporttomenubtan](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)) ve ardından hedef menü düğmesine, Bu düğmedeki her bir araç çubuğu menü öğesini içeren bir açılır menü düğmesine ekler. Bu yöntem, açılır menüye alt menüler eklemez.
+Bu yöntem taban sınıf uygulamasını [(CMFCToolBarButton::ExportToMenuButton)](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)çağırır ve ardından hedef menüye eklenen bu düğmedeki her araç çubuğu menü öğesini içeren bir açılır menü ekler. Bu yöntem, alt menüleri açılır menüye eklemiyor.
 
-Ana araç çubuğu `m_pToolBar`, null ise veya temel sınıf uygulama yanlış döndürürse bu yöntem başarısız olur.
+Ana araç çubuğu, `m_pToolBar`NULL ise veya taban sınıf uygulaması FALSE döndürür, bu yöntem başarısız olur.
 
-##  <a name="getdropdowntoolbar"></a>CMFCDropDownToolbarButton:: GetDropDownToolBar
+## <a name="cmfcdropdowntoolbarbuttongetdropdowntoolbar"></a><a name="getdropdowntoolbar"></a>CMFCDropDownToolbarButton::GetDropDownToolBar
 
-Düğmeyle ilişkili açılan araç çubuğunu alır.
+Düğmeyle ilişkili açılır araç çubuğunu alır.
 
 ```
 CMFCToolBar* GetDropDownToolBar() const;
@@ -225,15 +225,15 @@ CMFCToolBar* GetDropDownToolBar() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğmeyle ilişkili açılan araç çubuğu.
+Düğmeyle ilişkili açılır araç çubuğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `m_pToolBar` veri üyesini döndürür.
+Bu yöntem `m_pToolBar` veri üyesidöndürür.
 
-##  <a name="isdropdown"></a>CMFCDropDownToolbarButton:: IsDropDown
+## <a name="cmfcdropdowntoolbarbuttonisdropdown"></a><a name="isdropdown"></a>CMFCDropDropToolbarButton::IsDropDown
 
-Açılan araç çubuğunun Şu anda açık olup olmadığını belirler.
+Açılan araç çubuğunun şu anda açık olup olmadığını belirler.
 
 ```
 BOOL IsDropDown() const;
@@ -241,15 +241,15 @@ BOOL IsDropDown() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Açılan araç çubuğu açık ise sıfır dışı; Aksi takdirde 0.
+Açılan araç çubuğu şu anda açıksa sıfıra inme; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, [CMFCDropDownToolbarButton::D ropDownToolbar](#dropdowntoolbar) yöntemini kullanarak açılan araç çubuğunu açar. Kullanıcı açılan araç çubuğunun istemci olmayan alanındaki sol fare düğmesine bastığında çerçeve açılan araç çubuğunu kapatır.
+Çerçeve [CMFCDropDropToolbarButton::DropDownToolbar](#dropdowntoolbar) yöntemini kullanarak açılır araç çubuğunu açar. Kullanıcı açılır araç çubuğunun istemci olmayan alanında sol fare düğmesine bastığında çerçeve açılır araç çubuğunu kapatır.
 
-##  <a name="isextrasize"></a>CMFCDropDownToolbarButton:: IsExtraSize
+## <a name="cmfcdropdowntoolbarbuttonisextrasize"></a><a name="isextrasize"></a>CMFCDropDownToolbarButton::IsExtraSize
 
-Düğmenin genişletilmiş bir kenarlıkla görüntülenip görüntülenemeyeceğini belirler.
+Düğmenin genişletilmiş kenarlıkla görüntülenip görüntülenemeyeceğini belirler.
 
 ```
 virtual BOOL IsExtraSize() const;
@@ -257,15 +257,15 @@ virtual BOOL IsExtraSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç çubuğu düğmesi genişletilmiş bir kenarlıkla görüntülenebiliyorsanız sıfır dışı; Aksi takdirde 0.
+Araç çubuğu düğmesi genişletilmiş kenarlıkla görüntülenebiliyorsa sıfıra inme; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genişletilmiş kenarlıklar hakkında daha fazla bilgi için bkz. [CMFCToolBarButton:: IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize).
+Genişletilmiş kenarlıklar hakkında daha fazla bilgi için [CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize)' a bakın.
 
-##  <a name="m_uishowbardelay"></a>CMFCDropDownToolbarButton:: m_uiShowBarDelay
+## <a name="cmfcdropdowntoolbarbuttonm_uishowbardelay"></a><a name="m_uishowbardelay"></a>CMFCDropDownToolbarButton::m_uiShowBarDelay
 
-Bir kullanıcının, açılan araç çubuğunun görünmesi için fare düğmesini aşağı tutması gereken süre uzunluğunu belirtir.
+Açılan araç çubuğu görünmeden önce kullanıcının fare düğmesini basılı tutması gereken süreyi belirtir.
 
 ```
 static UINT m_uiShowBarDelay;
@@ -273,11 +273,11 @@ static UINT m_uiShowBarDelay;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gecikme süresi milisaniye cinsinden ölçülür. Varsayılan değer 500'dür. Bu paylaşılan veri üyesinin değerini değiştirerek başka bir gecikme da ayarlayabilirsiniz.
+Gecikme süresi milisaniye cinsinden ölçülür. Varsayılan değer 500'dür. Bu paylaşılan veri üyesinin değerini değiştirerek başka bir gecikme ayarlayabilirsiniz.
 
-##  <a name="oncalculatesize"></a>CMFCDropDownToolbarButton:: OnCalculateSize
+## <a name="cmfcdropdowntoolbarbuttononcalculatesize"></a><a name="oncalculatesize"></a>CMFCDropDownToolbarButton::OnCalculateSize
 
-Belirtilen cihaz bağlamı ve yerleştirme durumu için düğmenin boyutunu hesaplamak üzere Framework tarafından çağırılır.
+Belirtilen aygıt bağlamı ve yerleştirme durumu için düğmenin boyutunu hesaplamak için çerçeve tarafından çağrılır.
 
 ```
 virtual SIZE OnCalculateSize(
@@ -288,26 +288,26 @@ virtual SIZE OnCalculateSize(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Düğmeyi görüntüleyen cihaz bağlamı.
+*Pdc*<br/>
+[içinde] Düğmeyi görüntüleyen aygıt bağlamı.
 
-*sizeDefault*<br/>
-'ndaki Düğmenin varsayılan boyutu.
+*boyutVarsayılan*<br/>
+[içinde] Düğmenin varsayılan boyutu.
 
 *bHorz*<br/>
-'ndaki Üst araç çubuğunun yerleştirme durumu. Bu parametre, araç çubuğu yatay olarak yuvalanmışsa veya yüzer ise TRUE, araç çubuğu dikey olarak yuvalanmışsa FALSE 'TUR.
+[içinde] Ana araç çubuğunun dock durumu. Araç çubuğu yatay olarak kenetlenmişse veya kayarsa bu parametre DOĞRUDUR veya araç çubuğu dikey olarak kenetlenmişse FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğmenin `SIZE` boyutlarını piksel cinsinden içeren bir yapı.
+Pikselolarak düğmenin boyutlarını içeren bir `SIZE` yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, aşağı açılan okun genişliğini düğme boyutunun yatay boyutuna ekleyerek temel sınıf uygulamasını ( [CMFCToolBarButton:: OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize)) genişletir.
+Bu yöntem, açılan ok genişliğini düğme boyutunun yatay boyutuna ekleyerek taban sınıf uygulamasını [(CMFCToolBarButton::OnCalculateSize)](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize)genişletir.
 
-##  <a name="onchangeparentwnd"></a>CMFCDropDownToolbarButton:: OnChangeParentWnd
+## <a name="cmfcdropdowntoolbarbuttononchangeparentwnd"></a><a name="onchangeparentwnd"></a>CMFCDropDownToolbarButton::OnChangeParentWnd
 
-Düğme yeni bir araç çubuğuna eklendiğinde Framework tarafından çağırılır.
+Düğme yeni bir araç çubuğuna takıldığında çerçeve tarafından çağrılır.
 
 ```
 virtual void OnChangeParentWnd(CWnd* pWndParent);
@@ -316,15 +316,15 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ### <a name="parameters"></a>Parametreler
 
 *pWndParent*<br/>
-'ndaki Yeni üst pencere.
+[içinde] Yeni ana pencere.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, metin etiketini temizleyerek (CMFCToolBarButton:: [m_strText](../../mfc/reference/cmfctoolbarbutton-class.md#m_strtext)) ve [CMFCToolBarButton:: M_bText](../../mfc/reference/cmfctoolbarbutton-class.md#m_btext) ve CMFCToolBarButton 'ı ayarlayarak temel sınıf uygulamasını ( [CMFCToolBarButton:: OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)) geçersiz kılar [ :: m_bUserButton](../../mfc/reference/cmfctoolbarbutton-class.md#m_buserbutton) veri üyeleri false olarak ayarlandı.
+Bu yöntem, metin etiketini ( [CMFCToolBarButton::m_strText](../../mfc/reference/cmfctoolbarbutton-class.md#m_strtext)) temizleyerek ve [CMFCToolBarButton:m_bText](../../mfc/reference/cmfctoolbarbutton-class.md#m_btext) ve [CMFCToolBarButton::m_bUserButton](../../mfc/reference/cmfctoolbarbutton-class.md#m_buserbutton) veri üyelerini FALSE'a ayarlayarak taban sınıf uygulamasını [(CMFCToolBarButton::OnChangeParentWnd)](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)geçersiz kılar.
 
-##  <a name="onclick"></a>CMFCDropDownToolbarButton:: OnClick
+## <a name="cmfcdropdowntoolbarbuttononclick"></a><a name="onclick"></a>CMFCDropDownToolbarButton::Tıklayın
 
-Kullanıcı fare düğmesine tıkladığında Framework tarafından çağırılır.
+Kullanıcı fare düğmesini tıklattığında çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnClick(
@@ -334,25 +334,25 @@ virtual BOOL OnClick(
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-'ndaki Araç çubuğu düğmesinin üst penceresi.
+*Pwnd*<br/>
+[içinde] Araç çubuğu düğmesinin ana penceresi.
 
-*bDelay*<br/>
-'ndaki İleti bir gecikmeyle işlenirse doğru.
+*bGecikme*<br/>
+[içinde] İleti bir gecikme ile ele alınması gerekiyorsa TRUE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğme tıklama iletisini işliyorsa sıfır dışı; Aksi takdirde 0.
+Düğme tıklama iletisini işlerse sıfıra inme; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, açılan araç çubuğunun durumunu güncelleştirerek [CMFCToolBarButton:: OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)temel sınıf uygulamasını genişletir.
+Bu yöntem taban sınıf uygulamasını genişletir, [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick), açılır araç çubuğunun durumunu güncelleştirerek.
 
-Kullanıcı araç çubuğu düğmesine tıkladığında, bu yöntem [CMFCDropDownToolbarButton:: m_uiShowBarDelay](#m_uishowbardelay) veri üyesi tarafından belirtilen sürenin uzunluğunu bekleyen bir zamanlayıcı oluşturur ve ardından [CMFCDropDownToolBarButton kullanarak açılır araç çubuğunu açar ::D ropDownToolbar](#dropdowntoolbar) yöntemi. Bu yöntem, Kullanıcı araç çubuğu düğmesine tıkladığında ikinci kez açılan araç çubuğunu kapatır.
+Bir kullanıcı araç çubuğu düğmesini tıklattığında, bu yöntem [CMFCDropDropToolbarButton](#m_uishowbardelay) tarafından belirtilen süreyi bekleyen bir zamanlayıcı oluşturur::m_uiShowBarDelay veri üyesi ve ardından [CMFCDropDownToolbarButton::DropDownToolbar](#dropdowntoolbar) yöntemini kullanarak açılır araç çubuğunu açar. Bu yöntem, kullanıcı araç çubuğu düğmesini ikinci kez tıklatıldığında açılır araç çubuğunu kapatır.
 
-##  <a name="onclickup"></a>CMFCDropDownToolbarButton:: OnClickUp
+## <a name="cmfcdropdowntoolbarbuttononclickup"></a><a name="onclickup"></a>CMFCDropDownToolbarButton::OnClickUp
 
-Kullanıcı fare düğmesini bıraktığında Framework tarafından çağırılır.
+Kullanıcı fare düğmesini serbest bıraktığunda çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnClickUp();
@@ -360,19 +360,19 @@ virtual BOOL OnClickUp();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğme tıklama iletisini işliyorsa sıfır dışı; Aksi takdirde 0.
+Düğme tıklama iletisini işlerse sıfıra inme; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, açılan araç çubuğunun durumunu güncelleştirerek [CMFCToolBarButton:: OnClickUp](../../mfc/reference/cmfctoolbarbutton-class.md#onclickup)temel sınıf uygulamasını genişletir.
+Bu yöntem taban sınıf uygulamasını genişletir, [CMFCToolBarButton::OnClickUp](../../mfc/reference/cmfctoolbarbutton-class.md#onclickup), açılır araç çubuğunun durumunu güncelleştirerek.
 
-Bu yöntem etkinse, açılan araç çubuğu zamanlayıcısını sonlandırır. Açık ise, açılan araç çubuğunu kapatır.
+Bu yöntem, etkinse açılır araç çubuğu zamanlayıcısını durdurur. Açılır araç çubuğu açıksa kapatır.
 
-Açılan araç çubuğu ve açılan araç çubuğu Zamanlayıcısı hakkında daha fazla bilgi için bkz. [CMFCDropDownToolbarButton:: OnClick](#onclick).
+Açılan araç çubuğu ve açılır araç çubuğu zamanlayıcısı hakkında daha fazla bilgi için [CMFCDropDropToolbarButton:OnClick](#onclick)' e bakın.
 
-##  <a name="oncontexthelp"></a>CMFCDropDownToolbarButton:: OnContextHelp
+## <a name="cmfcdropdowntoolbarbuttononcontexthelp"></a><a name="oncontexthelp"></a>CMFCDropDropToolbarButton::OnContextHelp
 
-Ana araç çubuğu bir WM_HELPHITTEST iletisini işlediğinde Framework tarafından çağırılır.
+Üst araç çubuğu bir WM_HELPHITTEST iletisi işlediğinde çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnContextHelp(CWnd* pWnd);
@@ -380,22 +380,22 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-'ndaki Araç çubuğu düğmesinin üst penceresi.
+*Pwnd*<br/>
+[içinde] Araç çubuğu düğmesinin ana penceresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğme, yardım iletisini işliyorsa sıfır dışı; Aksi takdirde 0.
+Düğme yardım iletisini işlerse sıfıra inme; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, *bDelay* 'i false olarak ayarlayarak [CMFCDropDownToolbarButton:: OnClick](#onclick) metodunu çağırarak temel sınıf uygulamasını ( [CMFCToolBarButton:: OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp)) genişletir. Bu yöntem, [CMFCDropDownToolbarButton:: OnClick](#onclick)tarafından döndürülen değeri döndürür.
+Bu [yöntem, CMFCDropDropToolbarButton::OnClick](#onclick) yöntemi niFALSE *olarak* ayarlanmış olarak çağırarak taban sınıf uygulamasını [(CMFCToolBarButton::OnContextHelp)](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp)genişletir. Bu yöntem [CMFCDropDropToolbarButton](#onclick)tarafından döndürülen değeri döndürür::OnClick .
 
-WM_HELPHITTEST iletisi hakkında daha fazla bilgi için bkz [. TN028: Bağlama duyarlı yardım desteği](../../mfc/tn028-context-sensitive-help-support.md).
+WM_HELPHITTEST iletisi hakkında daha fazla bilgi için Bkz. [TN028: Bağlam Duyarlı Yardım Desteği.](../../mfc/tn028-context-sensitive-help-support.md)
 
-##  <a name="oncustomizemenu"></a>CMFCDropDownToolbarButton:: OnCustomizeMenu
+## <a name="cmfcdropdowntoolbarbuttononcustomizemenu"></a><a name="oncustomizemenu"></a>CMFCDropDownToolbarButton::OnCustomizeMenu
 
-Uygulama üst araç çubuğunda bir kısayol menüsü görüntülediğinde, belirtilen menüyü değiştirir.
+Uygulama ana araç çubuğunda bir kısayol menüsü görüntülendiğinde sağlanan menüyü değiştirir.
 
 ```
 virtual BOOL OnCustomizeMenu(CMenu* pMenu);
@@ -403,8 +403,8 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
 
 ### <a name="parameters"></a>Parametreler
 
-*pMenu*<br/>
-'ndaki Özelleştirilecek menü.
+*pMenü*<br/>
+[içinde] Özelleştirilen menü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -412,23 +412,23 @@ Bu yöntem TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, aşağıdaki menü öğelerini devre dışı bırakarak temel sınıf uygulamasını ( [CMFCToolBarButton:: OnCustomizeMenu](../../mfc/reference/cmfctoolbarbutton-class.md#oncustomizemenu)) genişletir:
+Bu yöntem, aşağıdaki menü öğelerini devre dışı bırakarak taban sınıf uygulamasını [(CMFCToolBarButton::OnCustomizeMenu)](../../mfc/reference/cmfctoolbarbutton-class.md#oncustomizemenu)genişletir:
 
-- **Düğme görüntüsünü Kopyala**
+- **Kopya düğmesi Görüntüsü**
 
-- **Düğme görünümü**
+- **Düğme Görünümü**
 
 - **Görüntü**
 
 - **Metin**
 
-- **Resim ve metin**
+- **Resim ve Metin**
 
-Framework 'ün özelleştirme modunda görüntülediği kısayol menüsünü değiştirmek için bu yöntemi geçersiz kılın.
+Çerçevenin özelleştirme modunda görüntülenebilen kısayol menüsünü değiştirmek için bu yöntemi geçersiz kılın.
 
-##  <a name="ondraw"></a>CMFCDropDownToolbarButton:: OnDraw
+## <a name="cmfcdropdowntoolbarbuttonondraw"></a><a name="ondraw"></a>CMFCDropDownToolbarButton::OnDraw
 
-Belirtilen stilleri ve seçenekleri kullanarak düğmeyi çizmek için Framework tarafından çağırılır.
+Belirtilen stilleri ve seçenekleri kullanarak düğmeyi çizmek için çerçeve tarafından çağrılır.
 
 ```
 virtual void OnDraw(
@@ -444,37 +444,37 @@ virtual void OnDraw(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Düğmeyi görüntüleyen cihaz bağlamı.
+*Pdc*<br/>
+[içinde] Düğmeyi görüntüleyen aygıt bağlamı.
 
 *Rect*<br/>
-'ndaki Düğmenin sınırlayıcı dikdörtgeni.
+[içinde] Düğmenin sınırlayıcı dikdörtgeni.
 
-*Pımages*<br/>
-'ndaki Düğmeyle ilişkili araç çubuğu görüntülerinin koleksiyonu.
+*pImages*<br/>
+[içinde] Düğmeyle ilişkili araç çubuğu görüntülerinin toplanması.
 
 *bHorz*<br/>
-'ndaki Üst araç çubuğunun yerleştirme durumu. Bu parametre, düğme yatay olarak yerleştirildiğinde TRUE, düğme dikey olarak yuvalandığında FALSE 'TUR.
+[içinde] Ana araç çubuğunun dock durumu. Bu parametre, düğme yatay olarak kenetlendiğinde DOĞRU, düğme dikey olarak kenetlendiğinde FALSE'dir.
 
 *bCustomizeMode*<br/>
-'ndaki Araç çubuğunun özelleştirme modunda olup olmadığını belirtir. Araç çubuğu özelleştirme modundayken ve araç çubuğu özelleştirme modunda olmadığında, bu parametre TRUE şeklindedir.
+[içinde] Araç çubuğunun özelleştirme modunda olup olmadığını belirtir. Araç çubuğu özelleştirme modundayken bu parametre TRUE ve araç çubuğu özelleştirme modunda olmadığında FALSE'dur.
 
-*bHighlight*<br/>
-'ndaki Düğmenin vurgulanıp vurgulanmadığını belirtir. Düğme vurgulandığında Bu parametre TRUE, düğme vurgulanmamışsa FALSE.
+*bVurgu*<br/>
+[içinde] Düğmenin vurgulanıp vurgulanmayacağını belirtir. Bu parametre, düğme vurgulandığında DOĞRU, düğme vurgulanmadığında FALSE'dir.
 
 *bDrawBorder*<br/>
-'ndaki Düğmenin kenarlığını görüntülemesi gerekip gerekmediğini belirtir. Bu parametre, düğmenin kenarlığını görüntülemesi gerektiğinde TRUE, düğme kenarlığını göstermemelidir.
+[içinde] Düğmenin kenarlığını gösterip göstermeyeceğini belirtir. Bu parametre, düğme kenarlığını görüntülemesi gerektiğinde doğru, düğme kenarlıkını ise FALSE'da görüntülenir.
 
-*Bgride Disabledbutton*<br/>
-'ndaki Devre dışı bırakılan düğmeleri gölgelendirip gölgeedilmeyeceğini veya devre dışı bırakılan görüntüler koleksiyonunu kullanmayı belirtir. Devre dışı bırakılan düğmeler gölgeli ve bu yöntemin devre dışı görüntüler koleksiyonunu kullanması gerektiğinde FALSE olduğunda bu parametre TRUE şeklindedir.
+*bGrayDisabledButtons*<br/>
+[içinde] Devre dışı bırakılan düğmeleri gölgeleyip gölgelemeyeceğiniz veya devre dışı bırakılan görüntüler koleksiyonunu kullanıp kullanmayacağını belirtir. Devre dışı bırakılan düğmeler gölgelendirilmeli ve bu yöntem devre dışı bırakılan görüntüler koleksiyonunu kullanmalıdır bu parametre DOĞRUDUR.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Araç çubuğu düğme çizimini özelleştirmek için bu yöntemi geçersiz kılın.
 
-##  <a name="ondrawoncustomizelist"></a>CMFCDropDownToolbarButton:: OnDrawOnCustomizeList
+## <a name="cmfcdropdowntoolbarbuttonondrawoncustomizelist"></a><a name="ondrawoncustomizelist"></a>CMFCDropDownToolbarButton::OnDrawOnCustomizeList
 
-**Özelleştirme** Iletişim kutusunun **Komutlar** bölmesinde düğme çizmek için Framework tarafından çağırılır.
+**Özelleştir** iletişim kutusunun **Komutlar** bölmesinde düğmeyi çizmek için çerçeve tarafından çağrılır.
 
 ```
 virtual int OnDrawOnCustomizeList(
@@ -485,28 +485,28 @@ virtual int OnDrawOnCustomizeList(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Düğmeyi görüntüleyen cihaz bağlamı.
+*Pdc*<br/>
+[içinde] Düğmeyi görüntüleyen aygıt bağlamı.
 
 *Rect*<br/>
-'ndaki Düğmenin sınırlayıcı dikdörtgeni.
+[içinde] Düğmenin sınırlayıcı dikdörtgeni.
 
 *bSelected*<br/>
-'ndaki Düğme seçili olup olmadığı. Bu parametre TRUE ise düğme seçilidir. Bu parametre FALSE ise, düğme seçili değildir.
+[içinde] Düğmenin seçilip seçilmediği. Bu parametre TRUE ise, düğme seçilir. Bu parametre FALSE ise, düğme seçilmez.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen cihaz bağlamındaki düğmenin piksel cinsinden genişliği.
+Belirtilen aygıt bağlamında düğmenin piksel cinsinden genişliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, düğme kendisini sahip çizimi liste kutusunda görüntülemesi gerektiğinde özelleştirme iletişim kutusu ( **Komutlar** sekmesi) tarafından çağrılır.
+Bu yöntem, düğmenin kendisini sahip-çizim listesi kutusunda görüntülemesi gerektiğinde özelleştirme iletişim kutusu **(Komutlar** sekmesi) tarafından çağrılır.
 
-Bu yöntem, düğmenin metin etiketini düğme adına (yani, oluşturucuya geçirmekte olduğunuz *lpszName* parametresinin değerine) değiştirerek temel sınıf uygulamasını ( [CMFCToolBarButton:: OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist)) genişletir. ).
+Bu yöntem, düğmenin metin etiketini düğmenin adıyla (yani oluşturucuya geçtiğiniz *lpszName* parametresinin değerine) değiştirerek taban sınıf uygulamasını [(CMFCToolBarButton::OnDrawOnCustomizeList)](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist)genişletir.
 
-##  <a name="serialize"></a>CMFCDropDownToolbarButton:: serileştirme
+## <a name="cmfcdropdowntoolbarbuttonserialize"></a><a name="serialize"></a>CMFCDropDownToolbarButton::Serialize
 
-Bu nesneyi bir arşivden okur veya bir arşive yazar.
+Bu nesneyi arşivden okur veya arşive yazar.
 
 ```
 virtual void Serialize(CArchive& ar);
@@ -515,15 +515,15 @@ virtual void Serialize(CArchive& ar);
 ### <a name="parameters"></a>Parametreler
 
 *Ar*<br/>
-'ndaki İçinden seri hale getirilecek nesne.`CArchive`
+[içinde] Hangi `CArchive` veya serihale nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, ana araç çubuğunun kaynak KIMLIĞINI serileştirerek temel sınıf uygulamasını ( [CMFCToolBarButton:: Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize)) genişletir. Arşiv yüklenirken ( [CArchive:: ısyükleme](../../mfc/reference/carchive-class.md#isloading) sıfır dışında bir değer döndürürse), bu yöntem `m_pToolBar` veri üyesini serileştirilmiş kaynak kimliğini içeren araç çubuğuna ayarlar.
+Bu yöntem, ana araç çubuğunun kaynak kimliğini serileştirerek taban sınıf uygulamasını [(CMFCToolBarButton::Serialize)](../../mfc/reference/cmfctoolbarbutton-class.md#serialize)genişletir. Arşiv yüklenirken [(CArchive::IsLoading](../../mfc/reference/carchive-class.md#isloading) sıfır olmayan bir değer `m_pToolBar` döndürür), bu yöntem veri üyesini serileştirilmiş kaynak kimliğini içeren araç çubuğuna ayarlar.
 
-##  <a name="setdefaultcommand"></a>CMFCDropDownToolbarButton:: SetDefaultCommand
+## <a name="cmfcdropdowntoolbarbuttonsetdefaultcommand"></a><a name="setdefaultcommand"></a>CMFCDropDownToolbarButton::SetDefaultCommand
 
-Bir Kullanıcı düğmeye tıkladığında çerçevenin kullandığı varsayılan komutu ayarlar.
+Kullanıcı düğmeyi tıklattığında çerçevenin kullandığı varsayılan komutu ayarlar.
 
 ```
 void SetDefaultCommand(UINT uiCmd);
@@ -531,18 +531,18 @@ void SetDefaultCommand(UINT uiCmd);
 
 ### <a name="parameters"></a>Parametreler
 
-*Uımd*<br/>
-'ndaki Varsayılan komutun KIMLIĞI.
+*uiCmd*<br/>
+[içinde] Varsayılan komutun kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı düğmeyi tıkladığında çerçevenin yürüttüğü varsayılan bir komut belirtmek için bu yöntemi çağırın. *Uııcmd* tarafından BELIRTILEN komut kimlikli bir öğe, üst açılan araç çubuğunda bulunmalıdır.
+Kullanıcı düğmeyi tıklattığında çerçevenin çalıştırdığı varsayılan komutu belirtmek için bu yöntemi çağırın. *uiCmd* tarafından belirtilen komut kimliğine sahip bir öğe, üst açılır araç çubuğunda bulunmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCDropDownToolBar Sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
+[CMFCDropDownToolToolBar Sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
 [CMFCToolBar Sınıfı](../../mfc/reference/cmfctoolbar-class.md)<br/>
 [CMFCToolBarMenuButton Sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md)<br/>
 [İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)

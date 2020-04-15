@@ -10,16 +10,16 @@ helpviewer_keywords:
 - stdext::cache_suballoc [C++], allocate
 - stdext::cache_suballoc [C++], deallocate
 ms.assetid: 9ea9c5e9-1dcc-45d0-b3a7-a56a93d88898
-ms.openlocfilehash: 7a21f0c4f81277200ff069baf751fa013a3c0cea
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 55860a65fc77f834ed699f3a5114768b7efdde6f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688352"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366727"
 ---
 # <a name="cache_suballoc-class"></a>cache_suballoc Sınıfı
 
-Tek boyuttaki bellek bloklarını ayıran ve ayıran [blok ayırıcıyı](../standard-library/allocators-header.md) tanımlar.
+Tek bir boyuttaki bellek bloklarını ayıran ve ayıran bir [blok ayırıcı](../standard-library/allocators-header.md) tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,34 +32,34 @@ class cache_suballoc
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*SZ*|Ayrılacak dizideki öğelerin sayısı.|
+|*Sz*|Dizideki ayrılacak öğe sayısı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Cache_suballoc sınıf şablonu, serbest bırakılmış bellek bloklarını, `freelist<sizeof(Type), max_unbounded>` kullanarak ve boş bir liste boş olduğunda **Yeni işleç** ile ayrılmış daha büyük bir öbekten, alt ayırır.
+cache_suballoc sınıfı şablonu, ayrılmış bellek bloklarını, serbest liste boşolduğunda, `freelist<sizeof(Type), max_unbounded>` **işleç** yeni ile ayrılan daha büyük bir yığından bellek bloklarını kullanarak, ücretsiz bir listede depolar.
 
-Her öbek kullanılabilir bellek `Sz * Nelts` bayt ve yeni ve **işleç silme** **işleci** için gerekli olan verileri bulundurur. Ayrılan parçalar hiçbir şekilde serbest bırakılmaz.
+Her yığın `Sz * Nelts` kullanılabilir bellek baytları ve **işleç yeni** ve **işleç silmek** gerektiren verileri tutar. Ayrılan parçalar asla serbest bırakılmaz.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[cache_suballoc](#cache_suballoc)|@No__t_0 türünde bir nesne oluşturur.|
+|[cache_suballoc](#cache_suballoc)|Türünde `cache_suballoc`bir nesne oluşturuyor.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="member-functions"></a>Üye işlevler
 
-|Üye işlevi|Açıklama|
+|Üye fonksiyonu|Açıklama|
 |-|-|
 |[allocate](#allocate)|Bellek bloğunu ayırır.|
-|[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
+|[Ayırması](#deallocate)|Belirli bir konumdan başlayarak belirli sayıda nesneyi depolamadan serbest sağlar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<allocators >
+**Üstbilgi:** \<tahsisörler>
 
 **Ad alanı:** stdext
 
-## <a name="allocate"></a>cache_suballoc:: allocate
+## <a name="cache_suballocallocate"></a><a name="allocate"></a>cache_suballoc::allocate
 
 Bellek bloğunu ayırır.
 
@@ -71,17 +71,17 @@ void *allocate(std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*biriktirme*|Ayrılacak dizideki öğelerin sayısı.|
+|*Sayısı*|Dizideki ayrılacak öğe sayısı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan nesneye yönelik bir işaretçi.
+Ayrılan nesneye işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cache_suballoc"></a>cache_suballoc::cache_suballoc
+## <a name="cache_suballoccache_suballoc"></a><a name="cache_suballoc"></a>cache_suballoc:cache_suballoc
 
-@No__t_0 türünde bir nesne oluşturur.
+Türünde `cache_suballoc`bir nesne oluşturuyor.
 
 ```cpp
 cache_suballoc();
@@ -89,9 +89,9 @@ cache_suballoc();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="deallocate"></a>cache_suballoc::d eallocate
+## <a name="cache_suballocdeallocate"></a><a name="deallocate"></a>cache_suballoc::deallocate
 
-Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.
+Belirli bir konumdan başlayarak belirli sayıda nesneyi depolamadan serbest sağlar.
 
 ```cpp
 void deallocate(void* ptr, std::size_t count);
@@ -101,11 +101,11 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*ptr*|Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.|
-|*biriktirme*|Depolamadan serbest bırakmak için nesne sayısı.|
+|*Ptr*|Depolamadan ayrılacak ilk nesneye işaretçi.|
+|*Sayısı*|Depolamadan ayrılacak nesne sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<allocators >](../standard-library/allocators-header.md)
+[\<tahsisat>](../standard-library/allocators-header.md)

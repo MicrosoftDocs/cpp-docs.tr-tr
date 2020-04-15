@@ -1,44 +1,44 @@
 ---
-title: Visual Studio 'da C++ Linux projenizi dağıtma, çalıştırma ve hata ayıklama
-description: Visual Studio 'da bir Linux C++ projesinin içinden uzak hedefte kod derleme, yürütme ve hata ayıklama işlemlerini açıklar.
+title: Visual Studio'da C++ Linux projenizi dağıtın, çalıştırın ve hata ayıklama
+description: Visual Studio'daki bir Linux C++ projesinin içinden uzak hedefteki kodunasıl derleyip, çalıştırıp hata ayıklanınca anlatılır.
 ms.date: 06/07/2019
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
 ms.openlocfilehash: e68feab3a71cd5bb3f6b88eee52f0872ef4bb213
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 04/14/2020
 ms.locfileid: "80077834"
 ---
 # <a name="deploy-run-and-debug-your-linux-project"></a>Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama
 
 ::: moniker range="vs-2015"
 
-Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
+Linux desteği Visual Studio 2017 ve sonrası sürümlerinde kullanılabilir.
 
 ::: moniker-end
 
-Visual Studio 'da bir Linux C++ projesi oluşturduktan ve [Linux bağlantı Yöneticisi 'ni](connect-to-your-remote-linux-computer.md)kullanarak projeye bağlandıktan sonra, projeyi çalıştırabilir ve hata ayıklaması yapabilirsiniz. Uzak hedefte kodu derler, yürütür ve hatalarını ayıklayın.
+Visual Studio'da bir Linux C++ projesi oluşturduktan ve [Linux Bağlantı Yöneticisi'ni](connect-to-your-remote-linux-computer.md)kullanarak projeye bağlandıktan sonra, projeyi çalıştırıp hata ayıklayabilirsiniz. Uzak hedefteki kodu derler, çalıştırın ve hata ayıklarsınız.
 
 ::: moniker range="vs-2019"
 
-**Visual Studio 2019 sürüm 16,1** Hata ayıklama ve oluşturma için farklı Linux sistemleri hedefleyebilirsiniz. Örneğin, bir x64 üzerinde çapraz derleyip, IoT senaryolarını hedeflerken ARM cihazına dağıtabilirsiniz. Daha fazla bilgi için, bu makalede daha sonra [derleme ve hata ayıklama için farklı makineler belirtme](#separate_build_debug) bölümüne bakın.
+**Visual Studio 2019 sürüm 16.1** Hata ayıklama ve oluşturma için farklı Linux sistemlerini hedefleyebilirsiniz. Örneğin, X64'te çapraz derleme yapabilir ve IoT senaryolarını hedefalırken arm aygıtına dağıtabilirsiniz. Daha fazla bilgi için, bu makalenin ilerleyen saatlerinde [bina ve hata ayıklama için farklı makineleri belirt'e](#separate_build_debug) bakın.
 
 ::: moniker-end
 
-Linux projenizde etkileşimde bulunmak ve hata ayıklaması yapmak için birkaç yol vardır.
+Linux projenizle etkileşim kurmanın ve hata ayıklamanın çeşitli yolları vardır.
 
-- Kesme noktaları, pencereleri izle ve bir değişken üzerine gelindiğinde geleneksel Visual Studio özelliklerini kullanarak hata ayıklayın. Bu yöntemleri kullanarak, normal olarak diğer proje türleri için yaptığınız gibi hata ayıklaması yapabilirsiniz.
+- Kesme noktaları, saat pencereleri ve bir değişkenin üzerinde gezinme gibi geleneksel Visual Studio özelliklerini kullanarak hata ayıklama. Bu yöntemleri kullanarak, normalde diğer proje türleri için olduğu gibi hata ayıklama olabilir.
 
-- Linux konsol penceresinde hedef bilgisayardaki çıktıyı görüntüleyin. Ayrıca, hedef bilgisayara giriş göndermek için konsolunu kullanabilirsiniz.
+- Linux Console penceresindeki hedef bilgisayardan çıktıgörüntüleyin. Konsolu hedef bilgisayara giriş göndermek için de kullanabilirsiniz.
 
-## <a name="debug-your-linux-project"></a>Linux projenizde hata ayıklama
+## <a name="debug-your-linux-project"></a>Linux projenizi hata ayıklama
 
-1. **Hata ayıklama** Özellik sayfasında hata ayıklama modu ' nu seçin.
+1. **Hata ayıklama** özelliği sayfasında hata ayıklama modunu seçin.
 
    ::: moniker range="vs-2019"
 
-   GDB, Linux üzerinde çalışan uygulamalarda hata ayıklamak için kullanılır. Uzak sistemde hata ayıklama yapıldığında (WSL değil) GDB, projenin **hata ayıklama** özellik sayfasındaki **hata ayıklama modu** seçeneğinden seçilebilen iki farklı modda çalışabilir:
+   GDB, Linux üzerinde çalışan uygulamaları hata ayıklamak için kullanılır. Uzak bir sistemde hata ayıklama yaparken (WSL değil) GDB, projenin Hata **Ayıklama** özelliği sayfasındaki **Hata Ayıklama Modu** seçeneğinden seçilebilen iki farklı modda çalıştırılabilir:
 
    ![GDB seçenekleri](media/vs2019-debugger-settings.png)
 
@@ -46,68 +46,68 @@ Linux projenizde etkileşimde bulunmak ve hata ayıklaması yapmak için birkaç
 
    ::: moniker range="vs-2017"
 
-   GDB, Linux üzerinde çalışan uygulamalarda hata ayıklamak için kullanılır. GDB, projenin **hata ayıklama** özellik sayfasındaki **hata ayıklama modu** seçeneğinden seçilebilen iki farklı modda çalışabilir:
+   GDB, Linux üzerinde çalışan uygulamaları hata ayıklamak için kullanılır. GDB, projenin Hata **Ayıklama** özelliği sayfasındaki **Hata Ayıklama Modu** seçeneğinden seçilebilen iki farklı modda çalıştırılabilir:
 
    ![GDB seçenekleri](media/vs2017-debugger-settings.png)
 
    ::: moniker-end
 
-   - **Gdbserver** modunda, gdb yerel olarak çalıştırılır ve bu, uzak sistemdeki gdbserver 'a bağlanır.  Bunun, Linux konsol penceresinin desteklediği tek mod olduğunu unutmayın.
+   - **GDBServer** modunda, GDB uzak sistemdeki gdbserver'a bağlanan yerel olarak çalıştırılır.  Bunun Linux Console penceresinin desteklediği tek mod olduğunu unutmayın.
 
-   - **Gdb** modunda, Visual Studio hata ayıklayıcı uzak sistemdeki gdb 'yi yürütür. Bu, GDB 'nin yerel sürümü hedef bilgisayarda yüklü olan sürümle uyumlu değilse daha iyi bir seçenektir. |
+   - **GDB** modunda, Visual Studio hata ayıklama uzak sistemde GDB sürücüler. GDB'nin yerel sürümü hedef bilgisayara yüklenen sürümle uyumlu değilse, bu daha iyi bir seçenektir. |
 
    > [!NOTE]
-   > Gdbserver hata ayıklama modundaki kesme noktalarına isabet ediyorsanız, gdb modunu deneyin. GDB 'nin öncelikle uzak hedefte [yüklü](download-install-and-setup-the-linux-development-workload.md) olması gerekir.
+   > gdbserver hata ayıklama modunda kesme noktalarına ulaşamıyorsanız, gdb modunu deneyin. gdb öncelikle uzak hedefe [kurulmalıdır.](download-install-and-setup-the-linux-development-workload.md)
 
-1. Visual Studio 'da standart **hata ayıklama** araç çubuğunu kullanarak uzak hedefi seçin.
+1. Visual Studio'daki standart **Hata Ayıklama** araç çubuğunu kullanarak uzak hedefi seçin.
 
-   Uzak hedef kullanılabilir olduğunda, adı veya IP adresine göre listelenmiş olarak görürsünüz.
+   Uzak hedef kullanılabilir olduğunda, bu hedefin ad veya IP adresi tarafından listelenmiş olduğunu görürsünüz.
 
    ![Uzak hedef](media/remote_target.png)
 
-   Uzak hedefe henüz bağlanmadıysanız, uzak hedefe bağlanmak için [Linux bağlantı yöneticisini](connect-to-your-remote-linux-computer.md) kullanma yönergesini görürsünüz.
+   Henüz uzak hedefe bağlı değilseniz, uzak hedefe bağlanmak için [Linux Connection Manager'ı](connect-to-your-remote-linux-computer.md) kullanma talimatı görürsünüz.
 
-   ![Uzak mimari](media/architecture.png)
+   ![Uzak Mimari](media/architecture.png)
 
-1. Yürütüleceği bildiğiniz bazı kodların sol Cilt payının tıklanarak bir kesme noktası ayarlayın.
+1. Yürüteceğini bildiğiniz bazı kodların sol oluk'una tıklayarak bir kesme noktası ayarlayın.
 
-   Kesme noktasını ayarladığınız kod satırında kırmızı bir nokta görünür.
+   Kesme noktasını ayarladığınız kod satırında kırmızı bir nokta görüntülenir.
 
-1. Hata ayıklamayı başlatmak için **F5** tuşuna basın (veya hata **ayıklamayı başlatın >** ).
+1. Hata ayıklamaya başlamak için **F5** (veya **Hata Ayıklama > Hata Ayıklama'ya**başlayın).
 
-   Hata ayıklamayı başlattığınızda, uygulama başlatılmadan önce uzak hedefte derlenir. Tüm derleme hataları **hata listesi** penceresinde görünür.
+   Hata ayıklamaya başladığınızda, uygulama başlamadan önce uzak hedefte derlenir. Tüm derleme hataları Hata **Listesi** penceresinde görünür.
 
-   Hata yoksa, uygulama başlatılır ve hata ayıklayıcı kesme noktasında duraklatılır.
+   Hata yoksa, uygulama başlatılır ve hata ayıklama kesme noktasında duraklar.
 
-   ![Kesme noktasına isabet edin](media/hit_breakpoint.png)
+   ![Bir kesme noktasına çarptım](media/hit_breakpoint.png)
 
-   Şimdi, geçerli durumunda uygulamayla etkileşim kurabilir, değişkenleri görüntüleyebilir ve **F10** ya da **F11**gibi komut anahtarlarına basarak koddan gezinebilirsiniz.
+   Şimdi, uygulamayla geçerli durumunda etkileşimkurabilir, değişkenleri görüntüleyebilir ve **F10** veya **F11**gibi komut tuşlarına basarak kod üzerinden adım atabilirsiniz.
 
-1. Uygulama ile etkileşim kurmak için Linux konsolunu kullanmak istiyorsanız, **Linux konsolu > hata ayıkla**' yı seçin.
+1. Uygulamanızla etkileşimkurmak için Linux Konsolu'nu kullanmak istiyorsanız, **Hata Ayıklama > Linux Konsolu'nu**seçin.
 
-   ![Linux konsol menüsü](media/consolemenu.png)
+   ![Linux Konsol uçağı menüsü](media/consolemenu.png)
 
-   Bu konsol, hedef bilgisayardaki herhangi bir konsol çıkışını gösterir ve giriş alır ve hedef bilgisayara gönderir.
+   Bu konsol, hedef bilgisayardan herhangi bir konsol çıktısını görüntüleyecek ve girdi alıp hedef bilgisayara gönderecek.
 
-   ![Linux konsol penceresi](media/consolewindow.png)
+   ![Linux Konsol penceresi](media/consolewindow.png)
 
 ## <a name="configure-other-debugging-options-msbuild-based-projects"></a>Diğer hata ayıklama seçeneklerini yapılandırma (MSBuild tabanlı projeler)
 
-- Komut satırı bağımsız değişkenleri, projenin **hata ayıklama** özellik sayfasındaki **Program bağımsız değişkenleri** öğesi kullanılarak yürütülebilir dosyaya geçirilebilir.
+- Komut satırı bağımsız değişkenleri, projenin **Hata Ayıklama** özelliği sayfasındaki **Program Bağımsız Değişkenleri** öğesi kullanılarak yürütülebilir bağımsız değişkenlere geçirilebilir.
 
-   ![Program bağımsız değişkenleri](media/settings_programarguments.png)
+   ![Program Bağımsız Değişkenleri](media/settings_programarguments.png)
 
-- Özel hata ayıklayıcı seçenekleri **ek hata ayıklayıcı komutları** girişi kullanılarak gdb 'ye geçirilebilir.  Örneğin, SIGILL (geçersiz yönerge) sinyallerini yoksaymak isteyebilirsiniz.  Yukarıda gösterildiği gibi **ek hata ayıklayıcı komutları** girişine aşağıdakileri ekleyerek bunu gerçekleştirmek için **tanıtıcı** komutunu kullanabilirsiniz:
+- Belirli hata ayıklama seçenekleri **Ek Hata Ayıklama Komutları** girişi kullanılarak GDB'ye geçirilebilir.  Örneğin, SIGILL (yasadışı talimat) sinyallerini yok saymak isteyebilirsiniz.  Yukarıda gösterildiği gibi **Ek Hata Ayıklama Komutları** girişine aşağıdakileri ekleyerek bunu başarmak için **tutamak** komutunu kullanabilirsiniz:
 
    `handle SIGILL nostop noprint`
 
 ## <a name="configure-other-debugging-options-cmake-projects"></a>Diğer hata ayıklama seçeneklerini yapılandırma (CMake projeleri)
 
-Launch. vs. json dosyasında bir CMake projesi için ek komut satırı bağımsız değişkenleri belirtebilirsiniz. Daha fazla bilgi için bkz [. CMake projesinde hata ayıklama](cmake-linux-project.md#debug_cmake_project)
+Launch.vs.json dosyasında bir CMake projesi için ek komut satırı bağımsız değişkenleri belirtebilirsiniz. Daha fazla bilgi için [Bkz. CMake projesi hata ayıklama](cmake-linux-project.md#debug_cmake_project)
 
-## <a name="debug-with-attach-to-process"></a>Işleme Iliştir ile hata ayıkla
+## <a name="debug-with-attach-to-process"></a>İşleme Ekle ile Hata Ayıklama
 
-Visual Studio projeleri için [hata ayıklama](prop-pages/debugging-linux.md) Özellik sayfası ve CMake projelerine yönelik **Launch. vs. JSON** ayarları, çalışan bir işleme iliştirmeyi sağlayan ayarlara sahiptir. Bu ayarlarda sağlananların ötesinde ek denetime ihtiyacınız varsa, `Microsoft.MIEngine.Options.xml` adlı bir dosyayı çözümünüzün veya çalışma alanınızın köküne yerleştirebilirsiniz. İşte basit bir örnek:
+Visual Studio projeleri için [Hata Ayıklama](prop-pages/debugging-linux.md) özelliği sayfası ve CMake projeleri için **Launch.vs.json** ayarları, çalışan bir işleme eklemenizi sağlayan ayarlara sahiptir. Bu ayarlarda sağlananın ötesinde ek denetime ihtiyaç duyarsanız, çözümünüzün veya çalışma alanınızın köküne adlandırılmış `Microsoft.MIEngine.Options.xml` bir dosya yerleştirebilirsiniz. İşte basit bir örnek:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -124,29 +124,29 @@ ExePath="C:\temp\ConsoleApplication17\ConsoleApplication17\bin\x64\Debug\Console
 </SupplementalLaunchOptions>
 ```
 
-**AttachOptions Forconnection** , ihtiyacınız olabilecek özniteliklerin çoğunu içerir. Yukarıdaki örnekte, ek için arama yapmak üzere bir konum belirtme gösterilmektedir. bu nedenle kitaplıklar. Alt öğe **Serveroptions** , bunun yerine gdbserver ile uzak işleme iliştirmeye olanak sağlar. Bunu yapmak için, yerel bir gdb istemcisini (Visual Studio 2017 ' de sunulan bir tane yukarıda gösterilmektedir) ve simgeler içeren bir ikili dosyanın yerel kopyasını belirtmeniz gerekir. **Setupcommands** öğesi komutları doğrudan gdb 'ye geçirmenize olanak sağlar. GitHub 'daki [launchoptions. xsd şemasında](https://github.com/Microsoft/MIEngine/blob/master/src/MICore/LaunchOptions.xsd) bulunan tüm seçenekleri bulabilirsiniz.
+**AttachOptionsForConnection,** gereksinim duyabileceğiniz özniteliklerin çoğuna sahiptir. Yukarıdaki örnekte, ek .so kitaplıklarını aramak için bir konum nasıl belirtilir gösterilmektedir. Alt öğe **ServerOptions** yerine gdbserver ile uzak işleme ekleme sağlar. Bunu yapmak için yerel bir gdb istemcisi (Visual Studio 2017'de gönderilen istemci yukarıda gösterilmiştir) ve sembollerle ikilinin yerel bir kopyasını belirtmeniz gerekir. **SetupCommands** öğesi komutları doğrudan gdb'ye geçirmenizi sağlar. GitHub'daki [LaunchOptions.xsd şemasında](https://github.com/Microsoft/MIEngine/blob/master/src/MICore/LaunchOptions.xsd) bulunan tüm seçenekleri bulabilirsiniz.
 
 ::: moniker range="vs-2019"
 
-## <a name="specify-different-machines-for-building-and-debugging"></a><a name="separate_build_debug"></a>Oluşturma ve hata ayıklama için farklı makineler belirtin
+## <a name="specify-different-machines-for-building-and-debugging"></a><a name="separate_build_debug"></a>Bina ve hata ayıklama için farklı makineleri belirtin
 
-Visual Studio 2019 sürüm 16,1 ' de uzak derleme makinenizi hem MSBuild tabanlı Linux projeleri hem de uzak bir Linux makinesini hedefleyen CMake projeleri için uzaktan hata ayıklama makinenizden ayırabilirsiniz. Örneğin, artık x64 üzerinde çapraz derleme yapabilir ve IoT senaryolarını hedeflerken ARM cihazına dağıtabilirsiniz.
+Visual Studio 2019 sürüm 16.1'de, uzaktan yapı makinenizi hem MSBuild tabanlı Linux projeleri hem de uzak bir Linux makinesini hedefleyen CMake projeleri için uzaktan hata ayıklama makinenizden ayırabilirsiniz. Örneğin, artık x64'te çapraz derleme yapabilir ve IoT senaryolarını hedeflerken arm aygıtına dağıtabilirsiniz.
 
 ### <a name="msbuild-based-projects"></a>MSBuild tabanlı projeler
 
-Varsayılan olarak, uzaktan hata ayıklama makinesi, uzak derleme makinesi (**yapılandırma özellikleri** > **genel** > **uzak derleme makinesi**) ile aynıdır. Yeni bir uzaktan hata ayıklama makinesi belirtmek için **Çözüm Gezgini** ' de projeye sağ tıklayın ve **Uzaktan hata ayıklama makinesinde** > **hata ayıklama** > **yapılandırma özellikleri** ' ne gidin.  
+Varsayılan olarak, uzaktan hata ayıklama makinesi uzaktan yapı makinesi **(Configuration Properties** > **General** > **Remote Build Machine)** ile aynıdır. Yeni bir uzaktan hata ayıklama makinesi belirtmek **için, Solution Explorer'daki** projeye sağ tıklayın ve**Uzaktan Hata Ayıklama** **Makinesi'ni** > **Ayıklama** > Yapılandırma Özellikleri'ne gidin.  
 
 ![Linux uzaktan hata ayıklama makinesi](media/linux-remote-debug-machine.png)
 
-**Uzaktan hata ayıklama makinesi** için açılan menü, tüm kurulu uzak bağlantılarla doldurulur. Yeni bir uzak bağlantı eklemek için **araçlar** > **Seçenekler** > **platformlar arası** > **Bağlantı Yöneticisi** ' ne gidin veya **Hızlı başlatma**bölümünde "bağlantı Yöneticisi" ni arayın. Projenin özellik sayfalarında (**yapılandırma özellikleri** > **genel** > **uzak dağıtım dizini**) yeni bir uzak dağıtım dizini de belirtebilirsiniz.
+**Uzaktan Hata Ayıklama Makinesi** için açılır menü, kurulan tüm uzak bağlantılarla doldurulur. Yeni bir uzaktan bağlantı eklemek **için, Araçlar** > **Seçenekleri** > **Çapraz Platform** > **Bağlantı Yöneticisi'ne** gidin veya **Hızlı Başlatma'da**"Bağlantı Yöneticisi"ni arayın. Ayrıca projenin Özellik Sayfalarında yeni bir uzaktan dağıtma dizini **(Configuration Properties** > **General** > **Remote Deploy Directory)** de belirtebilirsiniz.
 
-Varsayılan olarak, yalnızca hata ayıklama işlemi için gerekli olan dosyalar, uzaktan hata ayıklama makinesine dağıtılır. Uzaktan hata ayıklama makinesine hangi kaynak dosyalarının dağıtılacağını yapılandırmak için **Çözüm Gezgini** kullanabilirsiniz. Bir kaynak dosyaya tıkladığınızda, Çözüm Gezgini dosya özelliklerinin doğrudan bir önizlemesini görürsünüz.
+Varsayılan olarak, yalnızca işlemin hata ayıklama için gerekli dosyaları uzak hata ayıklama makinesine dağıtılır. Uzak hata ayıklama makinesine hangi kaynak dosyaların dağıtılacağını yapılandırmak için **Solution Explorer'ı** kullanabilirsiniz. Bir kaynak dosyayı tıklattığınızda, Dosya Özelliklerinin önizlemesini doğrudan Çözüm Gezgini'nin altında görürsünüz.
 
 ![Linux dağıtılabilir dosyalar](media/linux-deployable-content.png)
 
-**Content** özelliği, dosyanın uzak hata ayıklama makinesine dağıtılıp dağıtılmayacağını belirtir. Dağıtımı tamamen devre dışı bırakabilirsiniz > **özellik sayfalarına** giderek, istenen yapılandırma için **dağıtımı** geri **Configuration Manager** .
+**İçerik** özelliği, dosyanın uzaktan hata ayıklama makinesine dağıtılıp dağıtılmayacağını belirtir. **Özellik Sayfaları** > **Yapılandırma Yöneticisi'nde** gezinme ve istenen yapılandırma için **Dağıt'ın** denetimini geri alarak dağıtımı tamamen devre dışı kullanabilirsiniz.
 
-Bazı durumlarda, projenizin dağıtımı üzerinde daha fazla denetime ihtiyacınız olabilir. Örneğin, dağıtmak istediğiniz bazı dosyalar çözümünüzün dışında olabilir veya uzak dağıtım dizininizi dosya ordizin başına özelleştirmek isteyebilirsiniz. Bu durumlarda, aşağıdaki kod bloğunu. vcxproj dosyanıza ekleyin ve "example. cpp" değerini gerçek dosya adlarıyla değiştirin:
+Bazı durumlarda, projenizin dağıtımı üzerinde daha fazla denetim eihtiyacınız olabilir. Örneğin, dağıtmak istediğiniz bazı dosyalar çözümünüzün dışında olabilir veya dosya veya dizini başına uzaktan dağıtma dizininizi özelleştirmek istiyorsunuz. Bu gibi durumlarda, .vcxproj dosyanıza aşağıdaki kod bloğu(lar)ı ekleyip "example.cpp"i gerçek dosya adlarıyla değiştirin:
 
 ```xml
 
@@ -167,13 +167,13 @@ Bazı durumlarda, projenizin dağıtımı üzerinde daha fazla denetime ihtiyac�
 
 ### <a name="cmake-projects"></a>CMake projeleri
 
-Uzak bir Linux makinesini hedefleyen CMake projeleri için, Launch. vs. JSON içinde yeni bir uzaktan hata ayıklama makinesi belirtebilirsiniz. Varsayılan olarak, "remoteMachineName" değeri, uzak derleme makinenize karşılık gelen CMakeSettings. JSON içindeki "remoteMachineName" özelliği ile eşitlenir. Bu özelliklerin artık eşleşmesi gerekmez ve Launch. vs. JSON içindeki "remoteMachineName" değeri, dağıtım ve hata ayıklama için hangi uzak makinenin kullanılacağını dikte eder.
+Uzak bir Linux makinesini hedefleyen CMake projeleri için, başlatılınca yeni bir uzaktan hata ayıklama makinesi belirtebilirsiniz.vs.json. Varsayılan olarak, "remoteMachineName" değeri CMakeSettings.json'daki "remoteMachineName" özelliğiyle senkronize edilir ve bu da uzaktan yapı makinenize karşılık gelir. Bu özellikler artık eşleşmek gerekmez ve launch.vs.json'daki "remoteMachineName" değeri dağıtma ve hata ayıklama için hangi uzak makinenin kullanılacağını belirler.
 
 ![CMake uzaktan hata ayıklama makinesi](media/cmake-remote-debug-machine.png)
 
-IntelliSense, tüm kurulu uzak bağlantıların bir listesini önerir. **Araçlar** > **Seçenekler** > **çapraz platform** > **Bağlantı Yöneticisi** ' ne giderek veya **Hızlı başlatma**bölümünde "bağlantı Yöneticisi" ' ni arayarak yeni bir uzak bağlantı ekleyebilirsiniz.
+IntelliSense tüm kurulan uzak bağlantıların bir listesini önerecektir. **Araçlar** > **Seçenekleri** > **Çapraz Platform** > **Bağlantı Yöneticisi'ne** yönlendirerek veya **Hızlı Başlatma'da**"Bağlantı Yöneticisi"ni arayarak yeni bir uzaktan bağlantı ekleyebilirsiniz.
 
-Dağıtımınız üzerinde tamamen denetim istiyorsanız, aşağıdaki kod bloğunu Launch. vs. JSON dosyasına ekleyebilirsiniz. Yer tutucu değerlerini gerçek değerlerle değiştirmeyi unutmayın:
+Dağıtımınız üzerinde tam denetim istiyorsanız, launch.vs.json dosyasına aşağıdaki kod bloğu(lar)ı ekleyebilirsiniz. Yer tutucu değerlerini gerçek değerlerle değiştirmeyi unutmayın:
 
 ```json
 
@@ -195,8 +195,8 @@ Dağıtımınız üzerinde tamamen denetim istiyorsanız, aşağıdaki kod bloğ
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Linux 'ta ARM cihazlarda hata ayıklamak için bkz. [Visual Studio 'da KATıŞTıRıLMıŞ ARM cihazında hata ayıklama](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/debugging-an-embedded-arm-device-in-visual-studio/).
+- Linux'taki ARM aygıtlarını hata ayıklamak için şu blog gönderisine bakın: [Visual Studio'da gömülü bir ARM cihazının hata ayıklanması.](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/debugging-an-embedded-arm-device-in-visual-studio/)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++Hata ayıklama özellikleri ( C++Linux)](prop-pages/debugging-linux.md)
+[C++ Hata Ayıklama Özellikleri (Linux C++)](prop-pages/debugging-linux.md)

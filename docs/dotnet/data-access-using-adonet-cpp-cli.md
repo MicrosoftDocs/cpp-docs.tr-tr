@@ -22,33 +22,33 @@ helpviewer_keywords:
 - SAFEARRAY, marshaling
 - ADO.NET [C++], marshaling SAFEARRAY types
 ms.assetid: b0cd987d-1ea7-4f76-ba01-cbd52503d06d
-ms.openlocfilehash: b258e574b912b1c32e5ffae7ba29cfc5f9903685
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35633449c4c01f5c103dcd54b81c0d6aa7c08cdc
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209098"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364418"
 ---
 # <a name="data-access-using-adonet-ccli"></a>ADO.NET Kullanarak Veri Erişimi (C++/CLI)
 
-ADO.NET veri erişimi için .NET Framework API ve güç ve önceki veri erişim çözümleri tarafından eşleşmeyen kullanım kolaylığı sağlar. Bu bölümde bazı yerel türlerini hazırlama gibi Visual C++ kullanıcılara özgü ADO.NET ile ilgili sorunlar açıklanmaktadır.
+ADO.NET veri erişimi için .NET Framework API'dir ve önceki veri erişim çözümleriyle eşleşmeden güç ve kullanım kolaylığı sağlar. Bu bölümde, görsel C++ kullanıcılarına özgü ADO.NET içeren bazı sorunlar açıklanmaktadır(örneğin, yerel türleri mareşallik etmek).
 
-ADO.NET, ortak dil çalışma zamanı (CLR) altında çalışır. Bu nedenle, ADO.NET ile etkileşim kurduğu herhangi bir uygulama CLR'yi hedeflemelidir. Ancak, yerel uygulamalar ADO.NET kullanamazsınız anlamına gelmez. Bu örnekler, yerel koddan ADO.NET veritabanıyla etkileşim kurmayı gösterilecektir.
+ADO.NET Ortak Dil Çalışma Süresi (CLR) altında çalışır. Bu nedenle, ADO.NET ile etkileşimedebilen herhangi bir uygulama da CLR hedef gerekir. Ancak, bu yerel uygulamalar ADO.NET kullanamazsınız anlamına gelmez. Bu örnekler, yerel koddan ADO.NET bir veritabanıyla nasıl etkileşimde bulunacaklarını gösterecektir.
 
-## <a name="marshal_ansi"></a> ADO.NET için ANSI dizelerini sıralama
+## <a name="marshal-ansi-strings-for-adonet"></a><a name="marshal_ansi"></a>ADO.NET için Mareşal ANSI Dizeleri
 
-Yerel bir dize ekleneceği gösterilmektedir (`char *`) bir veritabanı ve nasıl hazırlanacağını bir <xref:System.String?displayProperty=fullName> bir veritabanından yerel bir dize.
+Veritabanına nasıl bir yerel`char *`dize ( ) ekleyeceğinive bir veritabanından yerel bir dize için nasıl <xref:System.String?displayProperty=fullName> bir a'yı nasıl yazılabildiğini gösterir.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte, bir ADO.NET ile etkileşim kurmak için DatabaseClass sınıf oluşturulur <xref:System.Data.DataTable> nesne. Bu sınıf, bir yerel C++ olduğuna dikkat edin `class` (kıyasla bir `ref class` veya `value class`). Yerel koddan Bu sınıf kullanmak istiyoruz ve yerel kodda yönetilen türler kullanamazsınız çünkü bu işlem gereklidir. Bu sınıf, CLR tarafından belirtildiği şekilde hedeflemek için derlenmiş `#pragma managed` sınıf bildiriminden önceki yönergesi. Bu yönerge hakkında daha fazla bilgi için bkz. [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md).
+Bu örnekte, sınıf DatabaseClass ADO.NET <xref:System.Data.DataTable> bir nesne ile etkileşim için oluşturulur. Bu sınıfın yerel bir C++ `class` olduğunu unutmayın `ref class` `value class`(a veya ile karşılaştırıldığında). Bu, bu sınıfı yerel koddan kullanmak istediğimizden ve yerel kodda yönetilen türleri kullanamadığınız için gereklidir. Bu sınıf, sınıf bildiriminden önceki yönergede `#pragma managed` belirtildiği gibi CLR'yi hedeflemek üzere derlenecektir. Bu yönerge hakkında daha fazla bilgi için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md)bkz.
 
-Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bkz: [nasıl yapılır: Yerel türlerde işleyicileri bildirme](../dotnet/how-to-declare-handles-in-native-types.md).
+DatabaseClass sınıfının özel üyesine `gcroot<DataTable ^> table`dikkat edin: . Yerel türler yönetilen türleri içeremediğinden, `gcroot` anahtar kelime gereklidir. Daha fazla `gcroot`bilgi için [bkz: Yerel Türlerde Tanıtıcıları Bildirin.](../dotnet/how-to-declare-handles-in-native-types.md)
 
-Bu örnekte kodun geri kalanını belirtildiği gibi yerel C++ kod olduğundan `#pragma unmanaged` yönerge önceki `main`. Bu örnekte biz DatabaseClass yeni bir örneğini oluşturmaktan ve bir tablo oluşturun ve bazı satırları tabloda doldurmak için onun yöntemlerini çağırır. Yerel C++ dizelerinin StringCol veritabanı sütun değerleri olarak geçirilen unutmayın. Yönetilen dizelere bulunan hazırlama işlevi kullanılarak sıralanmış DatabaseClass, bu dizeler <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanı. Özellikle, yöntemin <xref:System.Runtime.InteropServices.Marshal.PtrToStringAnsi%2A> hazırlamak için kullanılan bir `char *` için bir <xref:System.String>ve yöntem <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> hazırlamak için kullanılan bir <xref:System.String> için bir `char *`.
+Bu örnekteki kodun geri kalanı, önceki `#pragma unmanaged` `main`yönergede belirtildiği gibi yerel C++ kodudur. Bu örnekte, VeritabanıSınıfı'nın yeni bir örneğini oluşturuyoruz ve tablo oluşturmak ve tablodaki bazı satırları doldurmak için yöntemlerini çağırıyoruz. Yerel C++ dizelerinin veritabanı sütunu StringCol için değer olarak geçirildiğini unutmayın. DatabaseClass içinde, bu dizeleri <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanında bulunan mareşal işlevi kullanılarak yönetilen dizeleri marshaled. Özellikle, yöntem <xref:System.Runtime.InteropServices.Marshal.PtrToStringAnsi%2A> a'dan `char *` <xref:System.String>a'ya mareşal olarak kullanılır <xref:System.String> ve `char *`yöntem <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> a'dan a'ya mareşal olarak kullanılır.
 
 > [!NOTE]
->  Tarafından ayrılan bellek <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> ya da çağırarak serbest bırakılması gerekir <xref:System.Runtime.InteropServices.Marshal.FreeHGlobal%2A> veya `GlobalFree`.
+> Tarafından <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> ayrılan bellek ya da <xref:System.Runtime.InteropServices.Marshal.FreeHGlobal%2A> `GlobalFree`' yı arayarak devreden olmalıdır.
 
 ```cpp
 // adonet_marshal_string_native.cpp
@@ -155,26 +155,26 @@ StringCol: This is string 2.
 
 ### <a name="compiling-the-code"></a>Kod Derleniyor
 
-- Komut satırından Kodu derlemek için kod örneği adonet_marshal_string_native.cpp adlı bir dosyaya kaydedin ve aşağıdaki ifadeyi girin:
+- Kodu komut satırından derlemek için kod örneğini adonet_marshal_string_native.cpp adlı bir dosyaya kaydedin ve aşağıdaki deyimi girin:
 
     ```
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_string_native.cpp
     ```
 
-## <a name="marshal_bstr"></a> ADO.NET için BSTR dizelerini sıralama
+## <a name="marshal-bstr-strings-for-adonet"></a><a name="marshal_bstr"></a>ADO.NET için Mareşal BSTR Dizeleri
 
-Bir COM dize ekleneceği gösterilmektedir (`BSTR`) bir veritabanı ve nasıl hazırlanacağını bir <xref:System.String?displayProperty=fullName> bir veritabanından bir `BSTR`.
+Com dizesini ( )`BSTR`veritabanına nasıl ekleyeceğinive <xref:System.String?displayProperty=fullName> bir veritabanından `BSTR`bir veritabanına nasıl marshal yapılacağını gösterir.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte, bir ADO.NET ile etkileşim kurmak için DatabaseClass sınıf oluşturulur <xref:System.Data.DataTable> nesne. Bu sınıf, bir yerel C++ olduğuna dikkat edin `class` (kıyasla bir `ref class` veya `value class`). Yerel koddan Bu sınıf kullanmak istiyoruz ve yerel kodda yönetilen türler kullanamazsınız çünkü bu işlem gereklidir. Bu sınıf, CLR tarafından belirtildiği şekilde hedeflemek için derlenmiş `#pragma managed` sınıf bildiriminden önceki yönergesi. Bu yönerge hakkında daha fazla bilgi için bkz. [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md).
+Bu örnekte, sınıf DatabaseClass ADO.NET <xref:System.Data.DataTable> bir nesne ile etkileşim için oluşturulur. Bu sınıfın yerel bir C++ `class` olduğunu unutmayın `ref class` `value class`(a veya ile karşılaştırıldığında). Bu, bu sınıfı yerel koddan kullanmak istediğimizden ve yerel kodda yönetilen türleri kullanamadığınız için gereklidir. Bu sınıf, sınıf bildiriminden önceki yönergede `#pragma managed` belirtildiği gibi CLR'yi hedeflemek üzere derlenecektir. Bu yönerge hakkında daha fazla bilgi için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md)bkz.
 
-Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bkz: [nasıl yapılır: Yerel türlerde işleyicileri bildirme](../dotnet/how-to-declare-handles-in-native-types.md).
+DatabaseClass sınıfının özel üyesine `gcroot<DataTable ^> table`dikkat edin: . Yerel türler yönetilen türleri içeremediğinden, `gcroot` anahtar kelime gereklidir. Daha fazla `gcroot`bilgi için [bkz: Yerel Türlerde Tanıtıcıları Bildirin.](../dotnet/how-to-declare-handles-in-native-types.md)
 
-Bu örnekte kodun geri kalanını belirtildiği gibi yerel C++ kod olduğundan `#pragma unmanaged` yönerge önceki `main`. Bu örnekte biz DatabaseClass yeni bir örneğini oluşturmaktan ve bir tablo oluşturun ve bazı satırları tabloda doldurmak için onun yöntemlerini çağırır. COM dizelerini StringCol veritabanı sütun değerleri olarak geçirilen unutmayın. Yönetilen dizelere bulunan hazırlama işlevi kullanılarak sıralanmış DatabaseClass, bu dizeler <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanı. Özellikle, yöntemin <xref:System.Runtime.InteropServices.Marshal.PtrToStringBSTR%2A> hazırlamak için kullanılan bir `BSTR` için bir <xref:System.String>ve yöntem <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> hazırlamak için kullanılan bir <xref:System.String> için bir `BSTR`.
+Bu örnekteki kodun geri kalanı, önceki `#pragma unmanaged` `main`yönergede belirtildiği gibi yerel C++ kodudur. Bu örnekte, VeritabanıSınıfı'nın yeni bir örneğini oluşturuyoruz ve tablo oluşturmak ve tablodaki bazı satırları doldurmak için yöntemlerini çağırıyoruz. COM dizeleri veritabanı sütunStringCol için değer olarak geçiriliyor unutmayın. DatabaseClass içinde, bu dizeleri <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanında bulunan mareşal işlevi kullanılarak yönetilen dizeleri marshaled. Özellikle, yöntem <xref:System.Runtime.InteropServices.Marshal.PtrToStringBSTR%2A> a'dan `BSTR` <xref:System.String>a'ya mareşal olarak kullanılır <xref:System.String> ve `BSTR`yöntem <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> a'dan a'ya mareşal olarak kullanılır.
 
 > [!NOTE]
->  Tarafından ayrılan bellek <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> ya da çağırarak serbest bırakılması gerekir <xref:System.Runtime.InteropServices.Marshal.FreeBSTR%2A> veya `SysFreeString`.
+> Tarafından <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> ayrılan bellek ya da <xref:System.Runtime.InteropServices.Marshal.FreeBSTR%2A> `SysFreeString`' yı arayarak devreden olmalıdır.
 
 ``` cpp
 // adonet_marshal_string_bstr.cpp
@@ -289,26 +289,26 @@ StringCol: This is string 2.
 
 ### <a name="compiling-the-code"></a>Kod Derleniyor
 
-- Komut satırından Kodu derlemek için kod örneği adonet_marshal_string_native.cpp adlı bir dosyaya kaydedin ve aşağıdaki ifadeyi girin:
+- Kodu komut satırından derlemek için kod örneğini adonet_marshal_string_native.cpp adlı bir dosyaya kaydedin ve aşağıdaki deyimi girin:
 
     ```
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_string_native.cpp
     ```
 
-## <a name="marshal_unicode"></a> ADO.NET için Unicode dizeleri sıralama
+## <a name="marshal-unicode-strings-for-adonet"></a><a name="marshal_unicode"></a>ADO.NET için Mareşal Unicode Dizeleri
 
-Yerel bir Unicode dize ekleneceği gösterilmektedir (`wchar_t *`) bir veritabanı ve nasıl hazırlanacağını bir <xref:System.String?displayProperty=fullName> bir veritabanından yerel bir Unicode dizesi.
+Bir veritabanına yerel Unicode dizesi ()`wchar_t *`nasıl ekleyeceğinive bir <xref:System.String?displayProperty=fullName> veritabanından yerel Unicode dizesine nasıl bir a'nın nasıl marshal yapılacağını gösterir.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte, bir ADO.NET ile etkileşim kurmak için DatabaseClass sınıf oluşturulur <xref:System.Data.DataTable> nesne. Bu sınıf, bir yerel C++ olduğuna dikkat edin `class` (kıyasla bir `ref class` veya `value class`). Yerel koddan Bu sınıf kullanmak istiyoruz ve yerel kodda yönetilen türler kullanamazsınız çünkü bu işlem gereklidir. Bu sınıf, CLR tarafından belirtildiği şekilde hedeflemek için derlenmiş `#pragma managed` sınıf bildiriminden önceki yönergesi. Bu yönerge hakkında daha fazla bilgi için bkz. [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md).
+Bu örnekte, sınıf DatabaseClass ADO.NET <xref:System.Data.DataTable> bir nesne ile etkileşim için oluşturulur. Bu sınıfın yerel bir C++ `class` olduğunu unutmayın `ref class` `value class`(a veya ile karşılaştırıldığında). Bu, bu sınıfı yerel koddan kullanmak istediğimizden ve yerel kodda yönetilen türleri kullanamadığınız için gereklidir. Bu sınıf, sınıf bildiriminden önceki yönergede `#pragma managed` belirtildiği gibi CLR'yi hedeflemek üzere derlenecektir. Bu yönerge hakkında daha fazla bilgi için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md)bkz.
 
-Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bkz: [nasıl yapılır: Yerel türlerde işleyicileri bildirme](../dotnet/how-to-declare-handles-in-native-types.md).
+DatabaseClass sınıfının özel üyesine `gcroot<DataTable ^> table`dikkat edin: . Yerel türler yönetilen türleri içeremediğinden, `gcroot` anahtar kelime gereklidir. Daha fazla `gcroot`bilgi için [bkz: Yerel Türlerde Tanıtıcıları Bildirin.](../dotnet/how-to-declare-handles-in-native-types.md)
 
-Bu örnekte kodun geri kalanını belirtildiği gibi yerel C++ kod olduğundan `#pragma unmanaged` yönerge önceki `main`. Bu örnekte biz DatabaseClass yeni bir örneğini oluşturmaktan ve bir tablo oluşturun ve bazı satırları tabloda doldurmak için onun yöntemlerini çağırır. Unicode C++ dizelerinin StringCol veritabanı sütun değerleri olarak geçirilen unutmayın. Yönetilen dizelere bulunan hazırlama işlevi kullanılarak sıralanmış DatabaseClass, bu dizeler <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanı. Özellikle, yöntemin <xref:System.Runtime.InteropServices.Marshal.PtrToStringUni%2A> hazırlamak için kullanılan bir `wchar_t *` için bir <xref:System.String>ve yöntem <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni%2A> hazırlamak için kullanılan bir <xref:System.String> için bir `wchar_t *`.
+Bu örnekteki kodun geri kalanı, önceki `#pragma unmanaged` `main`yönergede belirtildiği gibi yerel C++ kodudur. Bu örnekte, VeritabanıSınıfı'nın yeni bir örneğini oluşturuyoruz ve tablo oluşturmak ve tablodaki bazı satırları doldurmak için yöntemlerini çağırıyoruz. Unicode C++ dizelerinin veritabanı sütunu StringCol için değer olarak geçirildiğini unutmayın. DatabaseClass içinde, bu dizeleri <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanında bulunan mareşal işlevi kullanılarak yönetilen dizeleri marshaled. Özellikle, yöntem <xref:System.Runtime.InteropServices.Marshal.PtrToStringUni%2A> a'dan `wchar_t *` <xref:System.String>a'ya mareşal olarak kullanılır <xref:System.String> ve `wchar_t *`yöntem <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni%2A> a'dan a'ya mareşal olarak kullanılır.
 
 > [!NOTE]
->  Tarafından ayrılan bellek <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni%2A> ya da çağırarak serbest bırakılması gerekir <xref:System.Runtime.InteropServices.Marshal.FreeHGlobal%2A> veya `GlobalFree`.
+> Tarafından <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni%2A> ayrılan bellek ya da <xref:System.Runtime.InteropServices.Marshal.FreeHGlobal%2A> `GlobalFree`' yı arayarak devreden olmalıdır.
 
 ```cpp
 // adonet_marshal_string_wide.cpp
@@ -415,23 +415,23 @@ StringCol: This is string 2.
 
 ### <a name="compiling-the-code"></a>Kod Derleniyor
 
-- Komut satırından Kodu derlemek için kod örneği adonet_marshal_string_wide.cpp adlı bir dosyaya kaydedin ve aşağıdaki ifadeyi girin:
+- Kodu komut satırından derlemek için kod örneğini adonet_marshal_string_wide.cpp adlı bir dosyaya kaydedin ve aşağıdaki deyimi girin:
 
     ```
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_string_wide.cpp
     ```
 
-## <a name="marshal_variant"></a> ADO.NET için bir VARIANT'ı sıralama
+## <a name="marshal-a-variant-for-adonet"></a><a name="marshal_variant"></a>Mareşal ADO.NET için bir VARYANT
 
-Yerel ekleneceği gösterilmektedir `VARIANT` bir veritabanı ve nasıl hazırlanacağını bir <xref:System.Object?displayProperty=fullName> yerel bir veritabanı `VARIANT`.
+Bir veritabanına nasıl `VARIANT` bir veri tabanına bir <xref:System.Object?displayProperty=fullName> yerel ekleyeceğini `VARIANT`ve bir veritabanından bir veritabanına nasıl bir a'yı nasıl yazabildiğini gösterir.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte, bir ADO.NET ile etkileşim kurmak için DatabaseClass sınıf oluşturulur <xref:System.Data.DataTable> nesne. Bu sınıf, bir yerel C++ olduğuna dikkat edin `class` (kıyasla bir `ref class` veya `value class`). Yerel koddan Bu sınıf kullanmak istiyoruz ve yerel kodda yönetilen türler kullanamazsınız çünkü bu işlem gereklidir. Bu sınıf, CLR tarafından belirtildiği şekilde hedeflemek için derlenmiş `#pragma managed` sınıf bildiriminden önceki yönergesi. Bu yönerge hakkında daha fazla bilgi için bkz. [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md).
+Bu örnekte, sınıf DatabaseClass ADO.NET <xref:System.Data.DataTable> bir nesne ile etkileşim için oluşturulur. Bu sınıfın yerel bir C++ `class` olduğunu unutmayın `ref class` `value class`(a veya ile karşılaştırıldığında). Bu, bu sınıfı yerel koddan kullanmak istediğimizden ve yerel kodda yönetilen türleri kullanamadığınız için gereklidir. Bu sınıf, sınıf bildiriminden önceki yönergede `#pragma managed` belirtildiği gibi CLR'yi hedeflemek üzere derlenecektir. Bu yönerge hakkında daha fazla bilgi için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md)bkz.
 
-Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bkz: [nasıl yapılır: Yerel türlerde işleyicileri bildirme](../dotnet/how-to-declare-handles-in-native-types.md).
+DatabaseClass sınıfının özel üyesine `gcroot<DataTable ^> table`dikkat edin: . Yerel türler yönetilen türleri içeremediğinden, `gcroot` anahtar kelime gereklidir. Daha fazla `gcroot`bilgi için [bkz: Yerel Türlerde Tanıtıcıları Bildirin.](../dotnet/how-to-declare-handles-in-native-types.md)
 
-Bu örnekte kodun geri kalanını belirtildiği gibi yerel C++ kod olduğundan `#pragma unmanaged` yönerge önceki `main`. Bu örnekte biz DatabaseClass yeni bir örneğini oluşturmaktan ve bir tablo oluşturun ve bazı satırları tabloda doldurmak için onun yöntemlerini çağırır. Unutmayın, yerel `VARIANT` türleri geçirilir ObjectCol veritabanı sütun için değerler olarak. DatabaseClass, bunlar `VARIANT` bulunan hazırlama işlevi kullanılarak yönetilen nesneler için türleri hazırlanır <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanı. Özellikle, yöntemin <xref:System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant%2A> hazırlamak için kullanılan bir `VARIANT` için bir <xref:System.Object>ve yöntem <xref:System.Runtime.InteropServices.Marshal.GetNativeVariantForObject%2A> hazırlamak için kullanılan bir <xref:System.Object> için bir `VARIANT`.
+Bu örnekteki kodun geri kalanı, önceki `#pragma unmanaged` `main`yönergede belirtildiği gibi yerel C++ kodudur. Bu örnekte, VeritabanıSınıfı'nın yeni bir örneğini oluşturuyoruz ve tablo oluşturmak ve tablodaki bazı satırları doldurmak için yöntemlerini çağırıyoruz. Veritabanı sütunu ObjectCol için değer olarak yerel `VARIANT` türlerin geçirildiğini unutmayın. DatabaseClass içinde, `VARIANT` bu tür <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanında bulunan mareşal işlevi kullanılarak yönetilen nesnelere marshaled. Özellikle, yöntem <xref:System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant%2A> bir `VARIANT` <xref:System.Object>mareşal için kullanılır <xref:System.Runtime.InteropServices.Marshal.GetNativeVariantForObject%2A> , ve yöntem <xref:System.Object> bir `VARIANT`mareşal için kullanılır .
 
 ```cpp
 // adonet_marshal_variant.cpp
@@ -556,23 +556,23 @@ ObjectCol: 42
 
 ### <a name="compiling-the-code"></a>Kod Derleniyor
 
-- Komut satırından Kodu derlemek için kod örneği adonet_marshal_variant.cpp adlı bir dosyaya kaydedin ve aşağıdaki ifadeyi girin:
+- Kodu komut satırından derlemek için kod örneğini adonet_marshal_variant.cpp adlı bir dosyaya kaydedin ve aşağıdaki deyimi girin:
 
     ```
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_variant.cpp
     ```
 
-## <a name="marshal_safearray"></a> ADO.NET için bir SAFEARRAY'i sıralama
+## <a name="marshal-a-safearray-for-adonet"></a><a name="marshal_safearray"></a>ADO.NET için bir SAFEARRAY Mareşal
 
-Yerel ekleneceği gösterilmektedir `SAFEARRAY` bir veritabanı ve nasıl hazırlanacağını veritabanından yönetilen bir diziyi yerel bir `SAFEARRAY`.
+Bir veritabanına nasıl `SAFEARRAY` bir yerel ekleyeceğinive yönetilen bir diziyi veritabanından bir ana `SAFEARRAY`veritabanına nasıl kareşalleyeceğini gösterir.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte, bir ADO.NET ile etkileşim kurmak için DatabaseClass sınıf oluşturulur <xref:System.Data.DataTable> nesne. Bu sınıf, bir yerel C++ olduğuna dikkat edin `class` (kıyasla bir `ref class` veya `value class`). Yerel koddan Bu sınıf kullanmak istiyoruz ve yerel kodda yönetilen türler kullanamazsınız çünkü bu işlem gereklidir. Bu sınıf, CLR tarafından belirtildiği şekilde hedeflemek için derlenmiş `#pragma managed` sınıf bildiriminden önceki yönergesi. Bu yönerge hakkında daha fazla bilgi için bkz. [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md).
+Bu örnekte, sınıf DatabaseClass ADO.NET <xref:System.Data.DataTable> bir nesne ile etkileşim için oluşturulur. Bu sınıfın yerel bir C++ `class` olduğunu unutmayın `ref class` `value class`(a veya ile karşılaştırıldığında). Bu, bu sınıfı yerel koddan kullanmak istediğimizden ve yerel kodda yönetilen türleri kullanamadığınız için gereklidir. Bu sınıf, sınıf bildiriminden önceki yönergede `#pragma managed` belirtildiği gibi CLR'yi hedeflemek üzere derlenecektir. Bu yönerge hakkında daha fazla bilgi için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md)bkz.
 
-Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bkz: [nasıl yapılır: Yerel türlerde işleyicileri bildirme](../dotnet/how-to-declare-handles-in-native-types.md).
+DatabaseClass sınıfının özel üyesine `gcroot<DataTable ^> table`dikkat edin: . Yerel türler yönetilen türleri içeremediğinden, `gcroot` anahtar kelime gereklidir. Daha fazla `gcroot`bilgi için [bkz: Yerel Türlerde Tanıtıcıları Bildirin.](../dotnet/how-to-declare-handles-in-native-types.md)
 
-Bu örnekte kodun geri kalanını belirtildiği gibi yerel C++ kod olduğundan `#pragma unmanaged` yönerge önceki `main`. Bu örnekte biz DatabaseClass yeni bir örneğini oluşturmaktan ve bir tablo oluşturun ve bazı satırları tabloda doldurmak için onun yöntemlerini çağırır. Unutmayın, yerel `SAFEARRAY` türleri geçirilir ArrayIntsCol veritabanı sütun için değerler olarak. DatabaseClass, bunlar `SAFEARRAY` bulunan hazırlama işlevi kullanılarak yönetilen nesneler için türleri hazırlanır <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanı. Özellikle, yöntem <xref:System.Runtime.InteropServices.Marshal.Copy%2A> hazırlamak için kullanılan bir `SAFEARRAY` tamsayılar yöntemi ve yönetilen bir diziye <xref:System.Runtime.InteropServices.Marshal.Copy%2A> tamsayılar için yönetilen bir diziyi sıralamak için kullanılan bir `SAFEARRAY`.
+Bu örnekteki kodun geri kalanı, önceki `#pragma unmanaged` `main`yönergede belirtildiği gibi yerel C++ kodudur. Bu örnekte, VeritabanıSınıfı'nın yeni bir örneğini oluşturuyoruz ve tablo oluşturmak ve tablodaki bazı satırları doldurmak için yöntemlerini çağırıyoruz. ArrayIntsCol veritabanı sütunu için değer olarak yerel `SAFEARRAY` türlerin geçirildiğini unutmayın. DatabaseClass içinde, `SAFEARRAY` bu tür <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanında bulunan mareşal işlevi kullanılarak yönetilen nesnelere marshaled. Özellikle, yöntem <xref:System.Runtime.InteropServices.Marshal.Copy%2A> bir tamsayı `SAFEARRAY` yönetilen bir dizi a mareşal <xref:System.Runtime.InteropServices.Marshal.Copy%2A> için kullanılır ve yöntem bir `SAFEARRAY`tamsayılar yönetilen bir dizi mareşal için kullanılır .
 
 ```cpp
 // adonet_marshal_safearray.cpp
@@ -709,7 +709,7 @@ int main()
 
 ### <a name="compiling-the-code"></a>Kod Derleniyor
 
-- Komut satırından Kodu derlemek için kod örneği adonet_marshal_safearray.cpp adlı bir dosyaya kaydedin ve aşağıdaki ifadeyi girin:
+- Kodu komut satırından derlemek için kod örneğini adonet_marshal_safearray.cpp adlı bir dosyaya kaydedin ve aşağıdaki deyimi girin:
 
     ```
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_safearray.cpp
@@ -717,13 +717,13 @@ int main()
 
 ## <a name="net-framework-security"></a>.NET Framework Güvenliği
 
-ADO.NET ile ilgili güvenlik sorunları hakkında daha fazla bilgi için bkz: [ADO.NET uygulamalarının güvenliğini sağlama](/dotnet/framework/data/adonet/securing-ado-net-applications).
+ADO.NET ilgili güvenlik sorunları hakkında bilgi için, [ADO.NET Uygulamaları Güvence Altına Alma](/dotnet/framework/data/adonet/securing-ado-net-applications)konusuna bakın.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-|Bölüm|Açıklama|
+|Section|Açıklama|
 |-------------|-----------------|
-|[ADO.NET](/dotnet/framework/data/adonet/index)|ADO.NET, .NET programcısı için veri erişim hizmetlerini gösteren sınıf kümesi genel bir bakış sağlar.|
+|[ADO.NET](/dotnet/framework/data/adonet/index)|Veri erişim hizmetlerini .NET programcısına sunan bir sınıf kümesi olan ADO.NET genel bakış sağlar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -733,4 +733,4 @@ ADO.NET ile ilgili güvenlik sorunları hakkında daha fazla bilgi için bkz: [A
 
 <xref:System.Runtime.InteropServices>
 
-[Birlikte çalışabilirlik](/dotnet/framework/interop/index)
+[Birlikte Çalışabilirlik](/dotnet/framework/interop/index)

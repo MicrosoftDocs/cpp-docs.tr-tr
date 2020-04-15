@@ -1,5 +1,5 @@
 ---
-title: CMFCReBar sınıfı
+title: CMFCReBar Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCReBar
@@ -28,17 +28,18 @@ helpviewer_keywords:
 - CMFCReBar [MFC], OnUpdateCmdUI
 - CMFCReBar [MFC], SetPaneAlignment
 ms.assetid: 02a60e29-6224-49c1-9e74-e0a7d9f8d023
-ms.openlocfilehash: d348cf7aac57ce213e4d3f602501d12cee8e20d8
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a07f30fb00dd00e7a6315b8935731ccfc7500843
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505436"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81361693"
 ---
-# <a name="cmfcrebar-class"></a>CMFCReBar sınıfı
+# <a name="cmfcrebar-class"></a>CMFCReBar Sınıfı
 
-Bir `CMFCReBar` nesne, Rebar denetimleri için düzen, kalıcılık ve durum bilgilerini sağlayan bir denetim çubuğudur.
-Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC\\atlmfc\\\\src MFC** klasöründe bulunan kaynak koduna bakın.
+Nesne, `CMFCReBar` rebar denetimleri için düzen, kalıcılık ve durum bilgisi sağlayan bir denetim çubuğudur.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```
@@ -49,49 +50,49 @@ class CMFCReBar : public CPane
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCReBar:: AddBar](#addbar)|Bir yeniden çubuğa bir bant ekler.|
-|[CMFCReBar:: CalcFixedLayout](#calcfixedlayout)|( [CBasePane:: CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).) öğesini geçersiz kılar|
-|[CMFCReBar:: CanFloat](#canfloat)|( [CBasePane:: CanFloat](../../mfc/reference/cbasepane-class.md#canfloat)) geçersiz kılar.|
-|[CMFCReBar:: Create](#create)|Yeniden çubuk denetimini oluşturur ve `CMFCReBar` nesneye ekler.|
-|[CMFCReBar:: EnableDocking](#enabledocking)|( [CBasePane:: Enabletakmayı](../../mfc/reference/cbasepane-class.md#enabledocking)geçersiz kılar.)|
-|[CMFCReBar:: GetReBarBandInfoSize](#getrebarbandinfosize)||
-|[CMFCReBar:: GetReBarCtrl](#getrebarctrl)|Temel alınan [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) ortak denetimine doğrudan erişim sağlar.|
-|[CMFCReBar:: OnShowControlBarMenu](#onshowcontrolbarmenu)|( [CPane:: OnShowControlBarMenu](../../mfc/reference/cpane-class.md#onshowcontrolbarmenu)geçersiz kılar.)|
-|[CMFCReBar:: OnToolHitTest](#ontoolhittest)|( [CWnd:: OnToolHitTest](../../mfc/reference/cwnd-class.md#ontoolhittest)geçersiz kılar.)|
-|[CMFCReBar:: OnUpdateCmdUI](#onupdatecmdui)|( [CBasePane:: OnUpdateCmdUI](cbasepane-class.md).)|
-|[CMFCReBar:: Setbölmesi hizalaması](#setpanealignment)|( [CBasePane:: Setbölmesi hizalamasını](../../mfc/reference/cbasepane-class.md#setpanealignment)geçersiz kılar.)|
+|[CMFCReBar::Addbar](#addbar)|Bir çubuk için bir bant ekler.|
+|[CMFCReBar::CalcFixedLayout](#calcfixedlayout)|[(Overrides CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).)|
+|[CMFCReBar::Canfloat](#canfloat)|[(Overrides CBasePane::CanFloat](../../mfc/reference/cbasepane-class.md#canfloat).)|
+|[CMFCReBar::Oluştur](#create)|Demir çubuğu denetimini oluşturur ve `CMFCReBar` nesneye bağlar.|
+|[CMFCReBar::Etkinleştirme Docking](#enabledocking)|[(CBasePane geçersiz kılar::Etkinleştirdocking.)](../../mfc/reference/cbasepane-class.md#enabledocking)|
+|[CMFCReBar::GetreBarBandInfoSize](#getrebarbandinfosize)||
+|[CMFCReBar::GetReBarCtrl](#getrebarctrl)|Temel [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) ortak denetimine doğrudan erişim sağlar.|
+|[CMFCReBar::OnShowControlBarMenu](#onshowcontrolbarmenu)|[(Overrides CPane::OnShowControlBarMenu](../../mfc/reference/cpane-class.md#onshowcontrolbarmenu).)|
+|[CMFCReBar::OnToolhitTest](#ontoolhittest)|[(Overrides CWnd::OnToolHitTest](../../mfc/reference/cwnd-class.md#ontoolhittest).)|
+|[CMFCReBar::OnUpdateCmdUI](#onupdatecmdui)|[(Overrides CBasePane::OnUpdateCmdUI](cbasepane-class.md).)|
+|[CMFCReBar::SetPaneAlignment](#setpanealignment)|(Geçersiz Kılar [CBasePane::SetPaneAlignment](../../mfc/reference/cbasepane-class.md#setpanealignment).)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir `CMFCReBar` nesne, çeşitli alt pencereler içerebilir. Bu, düzenleme kutularını, araç çubuklarını ve liste kutularını içerir. Yeniden çubuğu programlama yoluyla yeniden boyutlandırabilir veya Kullanıcı, kavrayıcı çubuğunu sürükleyerek yeniden boyutlandırabilir. Bir Rebar nesnesinin arka planını tercih ettiğiniz bir bit eşlemine de ayarlayabilirsiniz.
+Bir `CMFCReBar` nesne çeşitli alt pencereler içerebilir. Buna kutuları, araç çubuklarını ve liste kutularını düzenleme dahildir. Rebar'ı programlı olarak yeniden boyutlandırabilirsiniz veya kullanıcı tutucu çubuğunu sürükleyerek çubuğu el ile yeniden boyutlandırabilir. Ayrıca, bir demir çubuğu nesnesinin arka planını seçtiğiniz bir bit haritasına ayarlayabilirsiniz.
 
-Bir çubuk nesnesi, bir araç çubuğu nesnesine benzer şekilde davranır. Bir Rebar denetimi bir veya daha fazla bant içerebilir ve her bant bir kavrayıcı çubuğu, bir bit eşlem, metin etiketi ve alt pencere içerebilir.
+Bir çubuk nesnesi araç çubuğu nesnesine benzer şekilde tepki ritmiş olur. Bir çubuk denetimi bir veya daha fazla bant içerebilir ve her bant bir kavrayıcı çubuğu, bir biteş, metin etiketi ve bir alt pencere içerebilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCReBar` sınıfında çeşitli yöntemlerin nasıl kullanıldığını gösterir. Örnek, bir Rebar denetiminin nasıl oluşturulduğunu ve bu denetimin nasıl bir bant ekleneceğini gösterir. Bant, dahili bir araç çubuğu olarak çalışır. Bu kod parçacığı, [Rebar test örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfta çeşitli yöntemlerin `CMFCReBar` nasıl kullanılacağını göstermektedir. Örnek, nasıl bir demir çubuğu denetimi oluşturulup bir bant ekleyeceğini gösterir. Bant dahili araç çubuğu işlevi görür. Bu kod [parçacığı, Demir Testi örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_RebarTest#1](../../mfc/reference/codesnippet/cpp/cmfcrebar-class_1.h)]
 [!code-cpp[NVC_MFC_RebarTest#2](../../mfc/reference/codesnippet/cpp/cmfcrebar-class_2.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)\
-└&nbsp;[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CWnd](../../mfc/reference/cwnd-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CBasePane](../../mfc/reference/cbasepane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CPane](../../mfc/reference/cpane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CMFCReBar](../../mfc/reference/cmfcrebar-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)\
+•&nbsp;[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CWnd](../../mfc/reference/cwnd-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CBasePane](../../mfc/reference/cbasepane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CPane](../../mfc/reference/cpane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CMFCReBar](../../mfc/reference/cmfcrebar-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxrebar. h
+**Üstbilgi:** afxRebar.h
 
-##  <a name="addbar"></a>CMFCReBar:: AddBar
+## <a name="cmfcrebaraddbar"></a><a name="addbar"></a>CMFCReBar::Addbar
 
-Bir yeniden çubuğa bir bant ekler.
+Bir çubuk için bir bant ekler.
 
 ```
 BOOL AddBar(
@@ -111,30 +112,30 @@ BOOL AddBar(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[in, out] Yeniden çubuğuna eklenecek alt pencereye yönelik bir işaretçi. Başvurulan nesne **WS_CHILD** pencere stiline sahip olmalıdır.
+[içinde, dışarı] Çubuk'a eklenecek alt pencereiçin bir işaretçi. Başvurulan **nesne, WS_CHILD** pencere stiline sahip olmalıdır.
 
-*pszText*<br/>
-'ndaki Yeniden çubukta görüntülenecek metni belirtir. Metin, alt pencerenin bir parçası değil. Bunun yerine, yeniden çubuk üzerinde görüntülenir.
+*Psztext*<br/>
+[içinde] Metni demir çubuğunda görünecek şekilde belirtir. Metin alt pencerenin bir parçası değildir. Bunun yerine, demir çubuğunun kendisinde görüntülenir.
 
-*PBMP*<br/>
-[in, out] Yeniden çubuk arka planında görüntülenecek bit eşlemi belirtir.
+*pbmp*<br/>
+[içinde, dışarı] Demir çubuğu arka planında görüntülenecek bit eşlemi belirtir.
 
-*dwStyle*<br/>
-'ndaki Bantta uygulanacak stili içerir. Bant stillerinin tüm listesi için, Windows SDK belgelerindeki `fStyle` [rebarbanınfo](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) yapısında Açıklama bölümüne bakın.
+*Dwstyle*<br/>
+[içinde] Gruba uygulanacak stili içerir. Bant stillerinin tam listesi için, `fStyle` Windows SDK belgelerindeki [REBARBANDINFO](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) yapısındaki açıklamaya bakın.
 
-*Clrön*<br/>
-'ndaki Yeniden çubuğun ön plan rengini temsil eder.
+*clrFore*<br/>
+[içinde] Demir çubuğunun ön plan rengini temsil eder.
 
-*clrBack*<br/>
-'ndaki Yeniden çubuğun arka plan rengini temsil eder.
+*clrGeri*<br/>
+[içinde] Demir çubuğunun arka plan rengini temsil eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bant yeniden çubuğa başarıyla eklendiyse doğru; Aksi takdirde, FALSE.
+Doğru eğer grup başarıyla çubuk eklendi; aksi takdirde, YANLIŞ.
 
-##  <a name="create"></a>CMFCReBar:: Create
+## <a name="cmfcrebarcreate"></a><a name="create"></a>CMFCReBar::Oluştur
 
-Rebar denetimini oluşturur ve [CMFCReBar](../../mfc/reference/cmfcrebar-class.md) nesnesine iliştirir.
+Demir çubuğu denetimini oluşturur ve [CMFCReBar](../../mfc/reference/cmfcrebar-class.md) nesnesine bağlar.
 
 ```
 BOOL Create(
@@ -147,26 +148,26 @@ BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-[in, out] Bu yeniden çubuk denetiminin üst penceresine yönelik bir işaretçi.
+[içinde, dışarı] Bu çubuk denetiminin ana penceresine bir işaretçi.
 
 *dwCtrlStyle*<br/>
-'ndaki Rebar denetiminin stilini belirtir. Varsayılan stil değeri, Rebar denetimindeki bitişik bantları ayırmak için dar çizgiler görüntüleyen **rbs_bandborders**' dir. Geçerli stillerin bir listesi için, Windows SDK belgelerindeki [Rebar Control Styles](/windows/win32/Controls/rebar-control-styles) bölümüne bakın.
+[içinde] Demir çubuğu denetiminin stilini belirtir. Varsayılan stil değeri, çubuk denetiminde bitişik bantları ayırmak için dar çizgiler görüntüleyen **RBS_BANDBORDERS.** Geçerli stillerin listesi için Windows SDK belgelerinde [Rebar Denetim Stilleri'ne](/windows/win32/Controls/rebar-control-styles) bakın.
 
-*dwStyle*<br/>
-'ndaki Rebar denetiminin pencere stili. Geçerli stillerin bir listesi için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).
+*Dwstyle*<br/>
+[içinde] Demir çubuğu denetiminin pencere stili. Geçerli stillerin listesi için [Bkz. Pencere Stilleri.](../../mfc/reference/styles-used-by-mfc.md#window-styles)
 
-*NID*<br/>
-'ndaki Rebar 'in alt pencere KIMLIĞI.
+*Nıd*<br/>
+[içinde] Demirçubuğun çocuk penceresi kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeniden çubuk başarıyla oluşturulduysa doğru; Aksi takdirde, FALSE.
+Rebar başarıyla oluşturulduysa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getrebarctrl"></a>CMFCReBar:: GetReBarCtrl
+## <a name="cmfcrebargetrebarctrl"></a><a name="getrebarctrl"></a>CMFCReBar::GetReBarCtrl
 
-Nesneler için `CReBarCtrl` `CMFCReBar` temeldeki ortak denetime doğrudan erişim sağlar.
+Nesneler için `CMFCReBar` `CReBarCtrl` temel ortak denetime doğrudan erişim sağlar.
 
 ```
 CReBarCtrl& GetReBarCtrl() const;
@@ -174,13 +175,13 @@ CReBarCtrl& GetReBarCtrl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel alınan `CReBarCtrl` nesneye bir başvuru.
+Altta yatan `CReBarCtrl` nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeniden çubuğunuzu özelleştirirken, Windows Rebar ortak denetim işlevselliğinden faydalanmak için bu yöntemi çağırın.
+Demir çubuğunuzu özelleştirirken Windows rebar ortak denetim işlevinden yararlanmak için bu yöntemi arayın.
 
-##  <a name="calcfixedlayout"></a>CMFCReBar:: CalcFixedLayout
+## <a name="cmfcrebarcalcfixedlayout"></a><a name="calcfixedlayout"></a>CMFCReBar::CalcFixedLayout
 
 ```
 virtual CSize CalcFixedLayout(
@@ -190,14 +191,14 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *Besnetme*<br/>
-'ndaki *bHorz*<br/>
+[içinde] *bStretch*<br/>
+[içinde] *bHorz*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="canfloat"></a>CMFCReBar:: CanFloat
+## <a name="cmfcrebarcanfloat"></a><a name="canfloat"></a>CMFCReBar::Canfloat
 
 ```
 virtual BOOL CanFloat() const;
@@ -207,7 +208,7 @@ virtual BOOL CanFloat() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="enabledocking"></a>CMFCReBar:: EnableDocking
+## <a name="cmfcrebarenabledocking"></a><a name="enabledocking"></a>CMFCReBar::Etkinleştirme Docking
 
 ```
 void EnableDocking(DWORD dwDockStyle);
@@ -215,11 +216,11 @@ void EnableDocking(DWORD dwDockStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *dwDockStyle*<br/>
+[içinde] *dwDockStyle*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getrebarbandinfosize"></a>CMFCReBar:: GetReBarBandInfoSize
+## <a name="cmfcrebargetrebarbandinfosize"></a><a name="getrebarbandinfosize"></a>CMFCReBar::GetreBarBandInfoSize
 
 ```
 UINT GetReBarBandInfoSize() const;
@@ -229,7 +230,7 @@ UINT GetReBarBandInfoSize() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onshowcontrolbarmenu"></a>CMFCReBar:: OnShowControlBarMenu
+## <a name="cmfcrebaronshowcontrolbarmenu"></a><a name="onshowcontrolbarmenu"></a>CMFCReBar::OnShowControlBarMenu
 
 ```
 virtual BOOL OnShowControlBarMenu(CPoint);
@@ -237,13 +238,13 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *CPoint*<br/>
+[içinde] *CPoint*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="ontoolhittest"></a>CMFCReBar:: OnToolHitTest
+## <a name="cmfcrebarontoolhittest"></a><a name="ontoolhittest"></a>CMFCReBar::OnToolhitTest
 
 ```
 virtual INT_PTR OnToolHitTest(
@@ -253,14 +254,14 @@ virtual INT_PTR OnToolHitTest(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *nokta*<br/>
-'ndaki *PTI*<br/>
+[içinde] *nokta*<br/>
+[içinde] *pTI*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onupdatecmdui"></a>CMFCReBar:: OnUpdateCmdUI
+## <a name="cmfcrebaronupdatecmdui"></a><a name="onupdatecmdui"></a>CMFCReBar::OnUpdateCmdUI
 
 ```
 virtual void OnUpdateCmdUI(
@@ -270,12 +271,12 @@ virtual void OnUpdateCmdUI(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *pTarget*<br/>
-'ndaki *Bdisableifnohndler*<br/>
+[içinde] *pTarget*<br/>
+[içinde] *bDisableIfNoHndler*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setpanealignment"></a>CMFCReBar:: Setbölmesi hizalaması
+## <a name="cmfcrebarsetpanealignment"></a><a name="setpanealignment"></a>CMFCReBar::SetPaneAlignment
 
 ```
 virtual void SetPaneAlignment(DWORD dwAlignment);
@@ -283,7 +284,7 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *Dwhizalaması*<br/>
+[içinde] *dwHizalama*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 

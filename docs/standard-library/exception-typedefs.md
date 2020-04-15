@@ -1,21 +1,21 @@
 ---
-title: '&lt;özel durum&gt; tür tanımları'
+title: '&lt;özel&gt; durum typedefs'
 ms.date: 11/04/2016
 f1_keywords:
 - exception/std::exception_ptr
 - exception/std::terminate_handler
 - exception/std::unexpected_handler
 ms.assetid: 2a338480-35e2-46f7-b223-52d4e84a5768
-ms.openlocfilehash: aba17b7bf052b6974bf849f60ff895b8e84a1092
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: f71c03e0c0a2e7ea4f37a85e85628ccf630ea317
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421851"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368730"
 ---
-# <a name="ltexceptiongt-typedefs"></a>&lt;özel durum&gt; tür tanımları
+# <a name="ltexceptiongt-typedefs"></a>&lt;özel&gt; durum typedefs
 
-## <a name="exception_ptr"></a>exception_ptr
+## <a name="exception_ptr"></a><a name="exception_ptr"></a>exception_ptr
 
 Bir özel duruma bir işaretçi tanımlayan tür.
 
@@ -25,23 +25,23 @@ typedef unspecified exception_ptr;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`exception_ptr` türünü uygulamak için kullanılan belirtilmemiş bir iç sınıf.
+`exception_ptr` Türü uygulamak için kullanılan belirtilmemiş bir iç sınıf.
 
-Geçerli özel duruma veya Kullanıcı tarafından belirtilen özel durum örneğine başvurmak için bir `exception_ptr` nesnesi kullanın. Microsoft uygulamasında bir özel durum [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) yapısıyla temsil edilir. Her `exception_ptr` nesnesi, özel durumu temsil eden `EXCEPTION_RECORD` yapısının bir kopyasına işaret eden bir özel durum başvurusu alanı içerir.
+Geçerli `exception_ptr` özel durum veya kullanıcı tarafından belirtilen özel durum örneğine başvurmak için bir nesne kullanın. Microsoft uygulamasında, bir özel durum [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) bir yapı tarafından temsil edilir. Her `exception_ptr` nesne, özel durumu temsil eden yapının `EXCEPTION_RECORD` bir kopyasını işaret eden bir özel durum başvuru alanı içerir.
 
-Bir `exception_ptr` değişkeni bildirdiğinizde, değişken herhangi bir özel durumla ilişkili değildir. Diğer bir deyişle, özel durum başvuru alanı NULL olur. Böyle bir `exception_ptr` nesnesine *null exception_ptr*denir.
+Bir değişkenil `exception_ptr` olarak beyan ettiğinizde, değişken herhangi bir özel durumla ilişkili değildir. Diğer bir deyişle, özel durum başvuru alanı NULL olur. Böyle `exception_ptr` bir nesneye *null exception_ptr*denir.
 
-Bir `exception_ptr` nesnesine özel durum atamak için `current_exception` veya `make_exception_ptr` işlevini kullanın. Bir `exception_ptr` değişkenine bir özel durum atadığınızda, değişkenin özel durum başvuru alanı özel durumun bir kopyasına işaret eder. Özel durumu kopyalamak için yeterli bellek yoksa, özel durum başvuru alanı bir [std:: bad_alloc](../standard-library/bad-alloc-class.md) özel durumunun kopyasına işaret eder. `current_exception` veya `make_exception_ptr` işlevi başka bir nedenle özel durumu kopyalayamayacağı takdirde, işlev geçerli işlemden çıkmak için `terminate` CRT işlevini çağırır.
+Bir `exception_ptr` `current_exception` nesneye özel durum atamak için veya `make_exception_ptr` işlevi kullanın. Bir `exception_ptr` değişkene bir özel durum atadığınızda, değişkenin özel durum başvuru alanı özel durum bir kopyasını gösterir. Özel durumu kopyalamak için yeterli bellek yoksa, özel durum başvuru alanı std bir kopyasını [işaret::bad_alloc](../standard-library/bad-alloc-class.md) özel durum. İşlev `current_exception` `make_exception_ptr` başka bir nedenle özel durumu kopyalayamıyorsa, işlev geçerli işlemden çıkmak için `terminate` CRT işlevini çağırır.
 
-Adına rağmen, bir `exception_ptr` nesnesi kendisi bir işaretçi değildir. İşaretçi semantiğini etkilemez ve işaretçi üye erişimi (`->`) veya yöneltme (*) işleçleri ile kullanılamaz. `exception_ptr` nesnenin ortak veri üyeleri veya üye işlevleri yok.
+Adına rağmen, `exception_ptr` bir nesnenin kendisi bir işaretçi değildir. İşaretçi semantikine uymaz ve işaretçi üye `->`erişimi ( ) veya indirection (*) işleçleri ile kullanılamaz. Nesnenin `exception_ptr` ortak veri üyesi veya üye işlevi yoktur.
 
-**Karşılaştırmalar**
+**Karşılaştırma:**
 
-İki `exception_ptr` nesnesini karşılaştırmak için eşittir (`==`) ve Not-eşit (`!=`) işleçlerini kullanabilirsiniz. İşleçler, özel durumları temsil eden `EXCEPTION_RECORD` yapılarının ikili değerini (bit düzeniyle) karşılaştırmaz. Bunun yerine, işleçler `exception_ptr` nesnelerinin özel durum başvurusu alanındaki adresleri karşılaştırır. Sonuç olarak, null `exception_ptr` ve NULL değeri eşit olarak karşılaştırılmaktadır.
+İki `exception_ptr` nesneyi karşılaştırmak için eşit `!=`( ) `==`ve eşit olmayan ( ) işleçleri kullanabilirsiniz. İşleçler, özel durumları temsil eden `EXCEPTION_RECORD` yapıların ikili değerini (bit deseni) karşılaştırmaz. Bunun yerine, işleçler nesnelerin özel durum `exception_ptr` başvuru alanında adresleri karşılaştırın. Sonuç olarak, `exception_ptr` null ve NULL değeri eşit olarak karşılaştırın.
 
-## <a name="terminate_handler"></a>terminate_handler
+## <a name="terminate_handler"></a><a name="terminate_handler"></a>terminate_handler
 
-Tür, `terminate_handler`olarak kullanım için uygun bir işleve yönelik bir işaretçi tanımlar.
+Tür, bir işleviçin bir işaretçi `terminate_handler`açıklar .
 
 ```cpp
 typedef void (*terminate_handler)();
@@ -53,11 +53,11 @@ Sonlandırıcı işleyici olarak kullanım için bir işleve işaretçi tanımla
 
 ### <a name="example"></a>Örnek
 
-`terminate_handler`kullanımına ilişkin bir örnek için bkz. [set_terminate](../standard-library/exception-functions.md#set_terminate) .
+Bkz. [set_terminate.](../standard-library/exception-functions.md#set_terminate) `terminate_handler`
 
-## <a name="unexpected_handler"></a>unexpected_handler
+## <a name="unexpected_handler"></a><a name="unexpected_handler"></a>unexpected_handler
 
-Tür, `unexpected_handler`olarak kullanım için uygun bir işleve yönelik bir işaretçi tanımlar.
+Tür, bir işleviçin işaretçi olarak `unexpected_handler`kullanılmak üzere uygun açıklar.
 
 ```cpp
 typedef void (*unexpected_handler)();
@@ -65,4 +65,4 @@ typedef void (*unexpected_handler)();
 
 ### <a name="example"></a>Örnek
 
-`unexpected_handler`kullanımına ilişkin bir örnek için bkz. [set_unexpected](../standard-library/exception-functions.md#set_unexpected) .
+Kullanımı [set_unexpected](../standard-library/exception-functions.md#set_unexpected) nın bir örneği için `unexpected_handler`set_unexpected bakın.

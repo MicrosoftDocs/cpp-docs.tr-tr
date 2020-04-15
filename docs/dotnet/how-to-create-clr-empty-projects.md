@@ -1,40 +1,40 @@
 ---
-title: 'Nasıl yapılır: Boş CLR projeleri oluşturma'
+title: 'Nasıl yapılır: Boş CLR Projeleri Oluşturma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CLR empty projects
 - CLR empty projects, creating
 ms.assetid: edb4574f-fea7-426d-9b5c-fa4ecad2befb
-ms.openlocfilehash: bd57ac4c6a821536b1c2cf3d222327d9924700cb
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 57e42ac7c683698e8a807fe0430674589db0e27e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221826"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368505"
 ---
-# <a name="how-to-create-clr-empty-projects"></a>Nasıl yapılır: Boş CLR projeleri oluşturma
+# <a name="how-to-create-clr-empty-projects"></a>Nasıl yapılır: Boş CLR Projeleri Oluşturma
 
-CLR boş proje oluşturmak için kullanın **CLR boş proje** kullanılabilir şablon **yeni proje** iletişim kutusu.
+CLR boş bir proje oluşturmak için, **Yeni Proje** iletişim kutusundan kullanılabilen **CLR Boş Proje** şablonunu kullanın.
 
 > [!NOTE]
->  IDE içindeki özellikleri görünümü, etkin ayarlarınıza ve sürümü değişebilir ve Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](/visualstudio/ide/personalizing-the-visual-studio-ide).
+> IDE'deki özelliklerin görünümü etkin ayarlarınıza veya sürümünüze bağlı olabilir ve Yardım'da açıklananlardan farklı olabilir. Ayarlarınızı değiştirmek için **Araçlar** menüsünde **Ayarlar İçe Ve Dışa Aktar'ı** seçin. Daha fazla bilgi için [Visual Studio IDE'yi Kişiselleştir'e](/visualstudio/ide/personalizing-the-visual-studio-ide)bakın.
 
-### <a name="to-create-a-clr-empty-project"></a>CLR boş proje oluşturmak için
+### <a name="to-create-a-clr-empty-project"></a>CLR boş bir proje oluşturmak için
 
-1. Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.
+1. **Dosya** menüsünde **Yeni** ve **Proje**’ye sırasıyla tıklayın.
 
    **Yeni Proje** iletişim kutusu görünür.
 
-1. Altında **yüklü şablonlar**, tıklayın **Visual C++** düğüm; ardından **CLR** düğümü. Seçin **CLR boş proje** simgesi.
+1. **Yüklü Şablonlar**altında, **Visual C++** düğüm'üne tıklayın; sonra **CLR** düğümunu tıklatın. **CLR Boş Proje** simgesini seçin.
 
-1. İçinde **adı** kutusuna, uygulamanız için benzersiz bir ad girin.
+1. **Ad** kutusuna, başvurunuz için benzersiz bir ad girin.
 
     > [!NOTE]
-    >  Diğer proje ve çözüm ayarlarını belirtebilirsiniz **yeni proje** iletişim kutusu, ancak bu ayarlar gerekli değildir.
+    >  **Yeni Proje** iletişim kutusundan diğer proje ve çözüm ayarlarını da belirtebilirsiniz, ancak bu ayarlar gerekli değildir.
 
-1. **Tamam**'ı tıklatın.
+1. **Tamam**'a tıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++Visual Studio Proje türleri](../build/reference/visual-cpp-project-types.md)<br/>
-[C++ projelerinde hata ayıklama](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
+[Visual Studio'da C++ proje türleri](../build/reference/visual-cpp-project-types.md)<br/>
+[Hata ayıklama C++ projeleri](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)

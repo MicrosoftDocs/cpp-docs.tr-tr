@@ -1,17 +1,17 @@
 ---
-title: Temsilci oluşturucuları (C++)
-description: Diğer oluşturucuları çağırmak ve C++ kod tekrarını azaltmak için ' de temsilci seçme oluşturucuları kullanın.
+title: Kurucuları atamak (C++)
+description: Diğer oluşturucuları çağırmak ve kod tekrarını azaltmak için C++'daki yasal yapıcıları kullanın.
 ms.date: 11/19/2019
-ms.openlocfilehash: 533cdfbeb882f3770cc554b0633611a4ffc2cfbd
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: f26a013aa3c081d900ffc3eb32649acc77505db0
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74250676"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81316667"
 ---
 # <a name="delegating-constructors"></a>Temsilci oluşturucuları
 
-Birçok sınıfta benzer şeyler yapan birden çok Oluşturucu vardır — örneğin, parametreleri doğrula:
+Birçok sınıfın benzer şeyler yapan birden çok oluşturucusu vardır(örneğin, parametreleri doğrulayın:
 
 ```cpp
 class class_c {
@@ -36,7 +36,7 @@ public:
 };
 ```
 
-Tüm doğrulamayı yapan bir işlev ekleyerek yinelenen kodu azaltabilirsiniz, ancak `class_c` kodun bir oluşturucunun bir kısmını başka bir Oluşturucu için temsilci seçip sürdürmesinin daha kolay anlaşılması ve korunması daha kolay olabilir. Temsilci oluşturucuları eklemek için `constructor (. . .) : constructor (. . .)` sözdizimini kullanın:
+Tüm doğrulamayı yapan bir işlev ekleyerek yinelenen kodu azaltabilirsiniz, ancak bir oluşturucu işin bir kısmını başka bir işleme devredebilirse, kodun anlaşılması ve bakımı daha kolay `class_c` olur. Delegating oluşturucular eklemek için `constructor (. . .) : constructor (. . .)` sözdizimini kullanın:
 
 ```cpp
 class class_c {
@@ -61,9 +61,9 @@ int main() {
 }
 ```
 
-Önceki örnekte yaptığınız gibi, oluşturucunun `class_c(int, int, int)` ilk olarak Oluşturucu `class_c(int, int)`çağırdığına dikkat edin, bu da `class_c(int)`çağırır. Kurucuların her biri yalnızca diğer oluşturucular tarafından gerçekleştirilmeyen işleri gerçekleştirir.
+Önceki örnekte adım attığınızda, yapıcının `class_c(int, int, int)` ilk olarak `class_c(int, int)`yapıcıyı çağırdığı `class_c(int)`ve sırayla çağıran . Her yapıcı, yalnızca diğer yapıcılar tarafından gerçekleştirilmeyen işi gerçekleştirir.
 
-Çağrılan ilk Oluşturucu nesnesini, tüm üyelerinin o noktada başlatılması için başlatır. Burada gösterildiği gibi, başka bir oluşturucuya temsilci olan bir oluşturucuda üye başlatma yapamazsınız:
+Çağrılan ilk oluşturucu nesneyi başharfe ait hale getirerek tüm üyelerinin bu noktada başlatılmasını ister. Burada gösterildiği gibi, başka bir kurucuya yetki veren bir oluşturucuda üye başlatma yapamazsınız:
 
 ```cpp
 class class_a {
@@ -83,7 +83,7 @@ public:
 };
 ```
 
-Sonraki örnekte, statik olmayan veri üyesi başlatıcıların kullanımı gösterilmektedir. Bir oluşturucunun belirli bir veri üyesini de başlattığında üye başlatıcısı geçersiz kılındığına dikkat edin:
+Sonraki örnek, statik olmayan veri üyesi başlatılmasını gösterir. Bir oluşturucu da belirli bir veri üyesi nin başlatılması durumunda, üye başlatılması geçersiz kılınır dikkat edin:
 
 ```cpp
 class class_a {
@@ -101,7 +101,7 @@ int main() {
 }
 ```
 
-Oluşturucu temsili sözdizimi, Oluşturucu özyineleme yanlışlıkla oluşturulmasını engellemez — constructor1, constructor1 çağıran Constructor2 çağırır ve yığın taşması olana kadar hiçbir hata oluşturulmaz. Döngüleriniz ortadan kaldırmak sizin sorumluluğunuzdadır.
+Oluşturucu delegasyonu sözdizimi, constructor özyinelemesinin yanlışlıkla oluşturulmasını engellemez—Constructor1 Constructor1 çağırır Constructor1 çağırır—ve bir yığın taşma olana kadar hata yapılmaz. Döngülerden kaçınmak senin sorumluluğunda.
 
 ```cpp
 class class_f{

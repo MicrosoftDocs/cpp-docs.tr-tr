@@ -1,5 +1,5 @@
 ---
-title: Cotacontrolcontainer sınıfı
+title: COleControlContainer Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleControlContainer
@@ -72,16 +72,16 @@ helpviewer_keywords:
 - COleControlContainer [MFC], m_pWnd
 - COleControlContainer [MFC], m_siteMap
 ms.assetid: f7ce9246-0fb7-4f07-a83a-6c2390d0fdf8
-ms.openlocfilehash: 3aa2515b1731eafcb5e3bcfa22a56ebbc1cdfdfb
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b1737b2ac114181a4245fff027b756ca30b64129
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504321"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366182"
 ---
-# <a name="colecontrolcontainer-class"></a>Cotacontrolcontainer sınıfı
+# <a name="colecontrolcontainer-class"></a>COleControlContainer Sınıfı
 
-, ActiveX denetimleri için bir denetim kapsayıcısı işlevi görür.
+ActiveX denetimleri için bir kontrol kapsayıcısı görevi görür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -93,73 +93,73 @@ class COleControlContainer : public CCmdTarget
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Cotacontrolcontainer:: Copacontrolcontainer](#colecontrolcontainer)|Bir `COleControlContainer` nesnesi oluşturur.|
+|[COleControlContainer::COleControlContainer](#colecontrolcontainer)|Bir `COleControlContainer` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Cotacontrolcontainer:: AttachControlSite](#attachcontrolsite)|Kapsayıcı tarafından barındırılan bir denetim sitesi oluşturur.|
-|[Cotacontrolcontainer:: BroadcastAmbientPropertyChange](#broadcastambientpropertychange)|Çevresel bir özelliğin değiştiği tüm barındırılan denetimlere bildirir.|
-|[Cotacontrolcontainer:: CheckDlgButton](#checkdlgbutton)|Belirtilen düğme denetimini değiştirir.|
-|[Cotacontrolcontainer:: CheckRadioButton](#checkradiobutton)|Bir grubun belirtilen radyo düğmesini seçer.|
-|[Cotacontrolcontainer:: CreateControl](#createcontrol)|Barındırılan bir ActiveX denetimi oluşturur.|
-|[Cotacontrolcontainer:: Createolefazı tipi](#createolefont)|OLE yazı tipi oluşturur.|
-|[Cotacontrolcontainer:: FindItem](#finditem)|Belirtilen denetimin özel sitesini döndürür.|
-|[Cotacontrolcontainer:: FreezeAllEvents](#freezeallevents)|Denetim sitesinin olayları kabul edip etmeyeceğini belirler.|
-|[Cotacontrolcontainer:: Getambentprop](#getambientprop)|Belirtilen çevresel özelliği alır.|
-|[Cotacontrolcontainer:: Getııbu öğe](#getdlgitem)|Belirtilen iletişim kutusu denetimini alır.|
-|[Cotacontrolcontainer:: Getdlitemint](#getdlgitemint)|Belirtilen iletişim kutusu denetiminin değerini alır.|
-|[Coincontrolcontainer:: Getdlıtemtext](#getdlgitemtext)|Belirtilen iletişim kutusu denetiminin resim yazısını alır.|
-|[Cotacontrolcontainer:: HandleSetFocus](#handlesetfocus)|Kapsayıcının WM_SETFOCUS iletilerini işlediğini belirler.|
-|[Cotacontrolcontainer:: HandleWindowlessMessage](#handlewindowlessmessage)|Penceresiz bir denetime gönderilen iletileri işler.|
-|[Copacontrolcontainer:: ısıbir Buttonchecked](#isdlgbuttonchecked)|Belirtilen düğmenin durumunu belirler.|
-|[Cotacontrolcontainer:: OnPaint](#onpaint)|Kapsayıcının bir bölümünü yeniden çizmek için çağırılır.|
-|[Cotacontrolcontainer:: OnUIActivate](#onuiactivate)|Bir denetim yerinde etkinleştirilme için olduğunda çağırılır.|
-|[Cotacontrolcontainer:: OnUIDeactivate](#onuideactivate)|Bir denetim devre dışı bırakılmakta olduğu zaman çağrılır.|
-|[Cotacontrolcontainer:: ScrollChildren](#scrollchildren)|Bir alt pencereden kaydırma iletileri alındığında Framework tarafından çağırılır.|
-|[Cotacontrolcontainer:: SendDlgItemMessage](#senddlgitemmessage)|Belirtilen denetime bir ileti gönderir.|
-|[Cotacontrolcontainer:: Setdlitemint](#setdlgitemint)|Belirtilen denetimin değerini ayarlar.|
-|[Cotacontrolcontainer:: Setdlıtemtext](#setdlgitemtext)|Belirtilen denetimin metnini ayarlar.|
+|[COleControlContainer::AttachControlSite](#attachcontrolsite)|Kapsayıcı tarafından barındırılan bir denetim sitesi oluşturur.|
+|[COleControlContainer::BroadcastAmbientPropertyChange](#broadcastambientpropertychange)|Barındırılan tüm denetimleri ortam özelliğinin değiştiğini bildirir.|
+|[COleControlContainer::CheckDlgButton](#checkdlgbutton)|Belirtilen düğme denetimini değiştirir.|
+|[COleControlContainer::CheckRadioButton](#checkradiobutton)|Bir grubun belirtilen radyo düğmesini seçer.|
+|[COleControlContainer::CreateControl](#createcontrol)|Barındırılan activex denetimi oluşturur.|
+|[COleControlContainer::CreateOleFont](#createolefont)|Bir OLE yazı tipi oluşturur.|
+|[COleControlContainer::FindItem](#finditem)|Belirtilen denetimin özel sitesini döndürür.|
+|[COleControlContainer::FreezeAllEvents](#freezeallevents)|Denetim sitesinin olayları kabul edip etmediğini belirler.|
+|[COleControlContainer::GetAmbientProp](#getambientprop)|Belirtilen ortam özelliğini alır.|
+|[COleControlContainer::GetDlgItem](#getdlgitem)|Belirtilen iletişim denetimini alır.|
+|[COleControlContainer::GetDlgItemInt](#getdlgitemint)|Belirtilen iletişim denetiminin değerini alır.|
+|[COleControlContainer::GetDlgItemText](#getdlgitemtext)|Belirtilen iletişim denetiminin alt yazısını alır.|
+|[COleControlContainer::HandleSetFocus](#handlesetfocus)|Kapsayıcının WM_SETFOCUS iletileri işleyeceğini belirler.|
+|[COleControlContainer::HandleWindowlessMessage](#handlewindowlessmessage)|Penceresiz denetime gönderilen iletileri işler.|
+|[COleControlContainer::IsDlgButtonChecked](#isdlgbuttonchecked)|Belirtilen düğmenin durumunu belirler.|
+|[COleControlContainer::OnPaint](#onpaint)|Kapsayıcının bir kısmını yeniden boyamak için çağrıldı.|
+|[COleControlContainer::OnUIActivate](#onuiactivate)|Bir denetim yerinde etkinleştirilmek üzereyken çağrılır.|
+|[COleControlContainer::OnUIDeactivate](#onuideactivate)|Denetim devre dışı bırakılmak üzereyken çağrılır.|
+|[COleControlContainer::ScrollChildren](#scrollchildren)|Kaydırma iletileri bir alt pencereden alındığı zaman çerçeve tarafından çağrılır.|
+|[COleControlContainer::SendDlgItemMessage](#senddlgitemmessage)|Belirtilen denetime ileti gönderir.|
+|[COleControlContainer::SetDlgItemInt](#setdlgitemint)|Belirtilen denetimin değerini ayarlar.|
+|[COleControlContainer::SetDlgItemText](#setdlgitemtext)|Belirtilen denetimin metnini ayarlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Cotacontrolcontainer:: m_crBack](#m_crback)|Kapsayıcının arka plan rengi.|
-|[Cotacontrolcontainer:: m_crFore](#m_crfore)|Kapsayıcının ön plan rengi.|
-|[Cotacontrolcontainer:: m_listSitesOrWnds](#m_listsitesorwnds)|Desteklenen denetim sitelerinin listesi.|
-|[Cotacontrolcontainer:: m_nWindowlessControls](#m_nwindowlesscontrols)|Barındırılan penceresiz denetimlerin sayısı.|
-|[Cotacontrolcontainer:: m_pOleFont](#m_polefont)|Özel denetim sitesinin OLE yazı tipine yönelik bir işaretçi.|
-|[Cotacontrolcontainer:: m_pSiteCapture](#m_psitecapture)|Yakalama denetimi sitesinin işaretçisi.|
-|[Cotacontrolcontainer:: m_pSiteFocus](#m_psitefocus)|Şu anda giriş odağına sahip olan denetimin işaretçisi.|
-|[Cotacontrolcontainer:: m_pSiteUIActive](#m_psiteuiactive)|Şu anda yerinde etkinleştirilen denetimin işaretçisi.|
-|[Cotacontrolcontainer:: m_pWnd](#m_pwnd)|Denetim kapsayıcısını uygulayan pencerenin işaretçisi.|
-|[Cotacontrolcontainer:: m_siteMap](#m_sitemap)|Site haritası.|
+|[COleControlContainer::m_crBack](#m_crback)|Kapsayıcının arka plan rengi.|
+|[COleControlKonteyner::m_crFore](#m_crfore)|Konteynerin ön plan rengi.|
+|[COleControlContainer::m_listSitesOrWnds](#m_listsitesorwnds)|Desteklenen denetim sitelerinin listesi.|
+|[COleControlKonteyner::m_nWindowlessControls](#m_nwindowlesscontrols)|Barındırılan penceresiz denetimlerin sayısı.|
+|[COleControlKonteyner::m_pOleFont](#m_polefont)|Özel denetim sitesinin OLE yazı tipine işaretçi.|
+|[COleControlKonteyner::m_pSiteCapture](#m_psitecapture)|Yakalama denetim sitesine işaretçi.|
+|[COleControlKonteyner::m_pSiteFocus](#m_psitefocus)|Giriş odağı olan denetime işaretçi.|
+|[COleControlKonteyner::m_pSiteUIActive](#m_psiteuiactive)|Şu anda yerinde etkinleştirilen denetimi işaretçi.|
+|[COleControlContainer::m_pWnd](#m_pwnd)|Denetim kapsayıcısını uygulayan pencereyi işaretçi.|
+|[COleControlKonteyner::m_siteMap](#m_sitemap)|Site haritası.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu, bir veya daha fazla ActiveX Denetim sitesi (tarafından `COleControlSite`uygulanan) için destek sağlanarak yapılır. `COleControlContainer`, kapsanan ActiveX denetimlerinin niteliklerini yerinde öğeler olarak yerine getirmelerini sağlayan [IOleInPlaceFrame](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceframe) ve [IOleContainer](/windows/win32/api/oleidl/nn-oleidl-iolecontainer) arabirimlerini tamamen uygular.
+Bu bir veya daha fazla ActiveX kontrol siteleri (tarafından `COleControlSite`uygulanan) için destek sağlayarak yapılır. `COleControlContainer`[iOleInPlaceFrame](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceframe) ve [IOleContainer](/windows/win32/api/oleidl/nn-oleidl-iolecontainer) arabirimlerini tam olarak uygulayarak, içerdiği ActiveX denetimlerinin yerinde öğeler olarak niteliklerini yerine getirmesine olanak tanır.
 
-Genellikle, bu sınıf bir veya daha fazla ActiveX `COccManager` denetimine `COleControlSite` yönelik özel sitelerle özel bir ActiveX Denetim kapsayıcısı uygulamak için ve ile birlikte kullanılır.
+Genellikle, bu sınıf bir veya `COccManager` `COleControlSite` daha fazla ActiveX denetimleri için özel siteler ile özel bir ActiveX denetim kapsayıcı ile birlikte ve uygulamak için kullanılır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
 `COleControlContainer`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxocc. h
+**Üstbilgi:** afxocc.h
 
-##  <a name="attachcontrolsite"></a>Cotacontrolcontainer:: AttachControlSite
+## <a name="colecontrolcontainerattachcontrolsite"></a><a name="attachcontrolsite"></a>COleControlContainer::AttachControlSite
 
-Bir denetim sitesi oluşturmak ve eklemek için Framework tarafından çağırılır.
+Bir denetim sitesi oluşturmak ve eklemek için çerçeve tarafından çağrılır.
 
 ```
 virtual void AttachControlSite(
@@ -173,22 +173,22 @@ void AttachControlSite(
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-Bir `CWnd` nesne işaretçisi.
+*Pwnd*<br/>
+Bir `CWnd` nesneye işaretçi.
 
-*Nıdc*<br/>
-Eklenecek denetimin KIMLIĞI.
+*nIDC*<br/>
+Eklenecek denetimin kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu işlemi özelleştirmek istiyorsanız bu işlevi geçersiz kılın.
 
 > [!NOTE]
->  MFC kitaplığına statik olarak bağlanıyorsanız, bu işlevin ilk biçimini kullanın. MFC kitaplığına dinamik olarak bağlanıyorsanız ikinci formu kullanın.
+> MFC kitaplığına statik olarak bağlanAn bu işlevin ilk biçimini kullanın. MFC kitaplığına dinamik olarak bağlanAn ikinci formu kullanın.
 
-##  <a name="broadcastambientpropertychange"></a>Cotacontrolcontainer:: BroadcastAmbientPropertyChange
+## <a name="colecontrolcontainerbroadcastambientpropertychange"></a><a name="broadcastambientpropertychange"></a>COleControlContainer::BroadcastAmbientPropertyChange
 
-Çevresel bir özelliğin değiştiği tüm barındırılan denetimlere bildirir.
+Barındırılan tüm denetimleri ortam özelliğinin değiştiğini bildirir.
 
 ```
 virtual void BroadcastAmbientPropertyChange(DISPID dispid);
@@ -196,14 +196,14 @@ virtual void BroadcastAmbientPropertyChange(DISPID dispid);
 
 ### <a name="parameters"></a>Parametreler
 
-*dı*<br/>
-Değiştirilen çevresel özelliğin dağıtım KIMLIĞI.
+*Dıspıd*<br/>
+Ortam özelliğinin sevk kimliği değiştiriliyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, bir ortam özelliğinin değeri değiştiğinde Framework tarafından çağrılır. Bu davranışı özelleştirmek için bu işlevi geçersiz kılın.
+Bu işlev, ortam özelliği değeri değiştiğinde çerçeve tarafından çağrılır. Bu davranışı özelleştirmek için bu işlevi geçersiz kılın.
 
-##  <a name="checkdlgbutton"></a>Cotacontrolcontainer:: CheckDlgButton
+## <a name="colecontrolcontainercheckdlgbutton"></a><a name="checkdlgbutton"></a>COleControlContainer::CheckDlgButton
 
 Düğmenin geçerli durumunu değiştirir.
 
@@ -215,21 +215,21 @@ virtual void CheckDlgButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıdbutton*<br/>
-Değiştirilecek düğmenin KIMLIĞI.
+*nIDButton*<br/>
+Değiştirilecek düğmenin kimliği.
 
-*Nhatayla*<br/>
+*nCheck*<br/>
 Düğmenin durumunu belirtir. Aşağıdakilerden biri olabilir:
 
-- BST_CHECKED, düğme durumunu işaretli olarak ayarlar.
+- BST_CHECKED Kontrol etmek için düğme durumunu ayarlar.
 
-- BST_INDETERMINATE, düğme durumunu, belirsiz bir durum belirterek gri olarak ayarlar. Bu değeri yalnızca düğmede BS_3STATE veya BS_AUTO3STATE stili varsa kullanın.
+- BST_INDETERMINATE Belirsiz bir durumu gösteren düğme durumunu griye ayarlar. Bu değeri yalnızca düğmede BS_3STATE veya BS_AUTO3STATE stili varsa kullanın.
 
-- BST_UNCHECKED, düğme durumunu işaretsiz olarak ayarlar.
+- BST_UNCHECKED Düğme durumunun temizlenmesini ayarlar.
 
-##  <a name="checkradiobutton"></a>Cotacontrolcontainer:: CheckRadioButton
+## <a name="colecontrolcontainercheckradiobutton"></a><a name="checkradiobutton"></a>COleControlContainer::CheckRadioButton
 
-Grupta belirtilen radyo düğmesini seçer ve gruptaki kalan düğmeleri temizler.
+Bir grupta belirtilen bir radyo düğmesini seçer ve gruptaki kalan düğmeleri temizler.
 
 ```
 virtual void CheckRadioButton(
@@ -240,18 +240,18 @@ virtual void CheckRadioButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıdfirstbutton*<br/>
+*nIDFirstButton*<br/>
 Gruptaki ilk radyo düğmesinin tanımlayıcısını belirtir.
 
-*Nıdlastbutton*<br/>
+*nIDLastButton*<br/>
 Gruptaki son radyo düğmesinin tanımlayıcısını belirtir.
 
-*Nıdcheckbutton*<br/>
+*nIDCheckButton*<br/>
 Denetlenecek radyo düğmesinin tanımlayıcısını belirtir.
 
-##  <a name="colecontrolcontainer"></a>Cotacontrolcontainer:: Copacontrolcontainer
+## <a name="colecontrolcontainercolecontrolcontainer"></a><a name="colecontrolcontainer"></a>COleControlContainer::COleControlContainer
 
-Bir `COleControlContainer` nesnesi oluşturur.
+Bir `COleControlContainer` nesne inşa eder.
 
 ```
 explicit COleControlContainer(CWnd* pWnd);
@@ -259,14 +259,14 @@ explicit COleControlContainer(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-Denetim kapsayıcısının üst penceresine yönelik bir işaretçi.
+*Pwnd*<br/>
+Denetim kapsayıcısının üst penceresine bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne başarıyla oluşturulduktan sonra, çağrısı `AttachControlSite`olan bir özel denetim sitesi ekleyin.
+Nesne başarıyla oluşturulduktan sonra, ''ye `AttachControlSite`çağrı içeren özel bir denetim sitesi ekleyin.
 
-##  <a name="createcontrol"></a>Cotacontrolcontainer:: CreateControl
+## <a name="colecontrolcontainercreatecontrol"></a><a name="createcontrol"></a>COleControlContainer::CreateControl
 
 Belirtilen `COleControlSite` nesne tarafından barındırılan bir ActiveX denetimi oluşturur.
 
@@ -300,64 +300,64 @@ BOOL CreateControl(
 ### <a name="parameters"></a>Parametreler
 
 *pWndCtrl*<br/>
-Denetimi temsil eden pencere nesnesine yönelik bir işaretçi.
+Denetimi temsil eden pencere nesnesi için bir işaretçi.
 
-*in*<br/>
-Denetimin benzersiz sınıf KIMLIĞI.
+*Clsıd*<br/>
+Denetimin benzersiz sınıf kimliği.
 
 *lpszWindowName*<br/>
-Denetimde gösterilecek metne yönelik bir işaretçi. Denetimin başlık veya metin özelliğinin değerini (varsa) ayarlar. NULL ise, denetimin açıklamalı alt yazı veya metin özelliği değiştirilmez.
+Denetimde görüntülenecek metne işaretçi. Denetimin Resim Yazısı veya Metin özelliğinin değerini ayarlar (varsa). NULL ise, denetimin Resim Yazısı veya Metin özelliği değiştirilmez.
 
-*dwStyle*<br/>
-Windows stilleri. Kullanılabilir stiller, **açıklamalar** bölümü altında listelenmiştir.
+*Dwstyle*<br/>
+Windows stilleri. Kullanılabilir stiller **Açıklamalar** bölümünde listelenir.
 
 *Rect*<br/>
-Denetimin boyutunu ve konumunu belirtir. Bir `CRect` nesne`RECT` ya da yapı olabilir.
+Denetimin boyutunu ve konumunu belirtir. Bir `CRect` nesne veya yapı `RECT` olabilir.
 
-*NID*<br/>
-Denetimin alt pencere KIMLIĞINI belirtir.
+*Nıd*<br/>
+Denetimin alt pencere kimliğini belirtir.
 
 *pPersist*<br/>
-Denetimin kalıcı durumunu içeren `CFile` bir işaretçisi. Varsayılan değer NULL ' dir ve bu, denetimin kendisini kalıcı depolamadan geri yüklemeden önce başlatıldığını belirtir. NULL değilse, denetimin kalıcı verilerini içeren, bir akış veya `CFile`depolama biçiminde bir türetilmiş nesnenin işaretçisi olması gerekir. Bu veriler, istemcinin önceki bir etkinleştirmesine kaydedilmiş olabilir. Diğer verileri içerebilir, ancak `CreateControl`arama sırasında okuma-yazma işaretçisinin kalıcı verilerin ilk baytına ayarlanmış olması gerekir. `CFile`
+Denetim için `CFile` kalıcı durumu içeren bir işaretçi. Varsayılan değer NULL'dur ve denetimin durumunu kalıcı depolamadan geri almadan kendisini başlattıgına işaret eder. NULL değilse, denetimin kalıcı verilerini `CFile`içeren türetilmiş bir nesneye akış veya depolama biçiminde işaretçi olmalıdır. Bu veriler istemcinin önceki etkinleştirme kaydedilmiş olabilir. Diğer `CFile` verileri içerebilir, ancak okuma-yazma işaretçisinin çağrı sırasında ki ilk kalıcı veri baytına `CreateControl`ayarlatılması gerekir.
 
-*bStorage*<br/>
-*PPersist* 'teki verilerin veya `IStorage` `IStream` veri olarak yorumlanıp yorumlanmayacağını gösterir. *PPersist* 'teki veriler bir depolama Ise, *bStorage* doğru olmalıdır. *PPersist* 'teki veriler bir Stream Ise *bStorage* yanlış olmalıdır. Varsayılan değer FALSE 'dur.
+*bDepolama*<br/>
+*pPersist'deki* verilerin veri olarak `IStorage` mı `IStream` yorumlanması gerektiğini gösterir. *pPersist'deki* veriler bir depolama ysa, *bStorage* TRUE olmalıdır. *pPersist'deki* veriler bir akışsa, *bStorage* FALSE olmalıdır. Varsayılan değer FALSE'dur.
 
 *bstrLicKey*<br/>
-İsteğe bağlı lisans anahtarı verileri. Bu veriler yalnızca bir çalışma zamanı lisans anahtarı gerektiren denetimler oluşturmak için gereklidir. Denetim lisanslamayı destekliyorsa, denetimin başarılı olması için bir lisans anahtarı sağlamanız gerekir. Varsayılan değer NULL.
+İsteğe bağlı lisans anahtar verileri. Bu veriler yalnızca çalışma zamanı lisans anahtarı gerektiren denetimler oluşturmak için gereklidir. Denetim lisanslamayı destekliyorsa, denetimin oluşturulmasının başarılı olması için bir lisans anahtarı sağlamanız gerekir. Varsayılan değer NULL'dur.
 
 *ppNewSite*<br/>
-Oluşturulmakta olan denetimi barındıracak var olan denetim sitesine yönelik bir işaretçi. Varsayılan değer, yeni bir denetim sitesinin otomatik olarak oluşturulup yeni denetime iliştirilmeyeceğini belirten NULL değeridir.
+Oluşturulan denetimi barındıracak varolan denetim sitesine işaretçi. Varsayılan değer NULL'dur ve yeni bir denetim sitesinin otomatik olarak oluşturulacağını ve yeni denetime eklendiğini gösterir.
 
-*PPT*<br/>
-Denetimin sol üst köşesini `POINT` içeren bir yapıya yönelik işaretçi. Denetimin boyutu *psize*değerine göre belirlenir. *PPT* ve *pboyut* değerleri, denetimin boyutunu ve konumunu belirtmek için isteğe bağlı bir yöntemdir.
+*Ppt*<br/>
+Denetimin sol `POINT` üst köşesini içeren bir yapıya işaretçi. Denetimin boyutu *psize*değerine göre belirlenir. *PPT* ve *psize* değerleri, denetimin boyutunu ve konumunu belirten isteğe bağlı bir yöntemdir.
 
-*psıze*<br/>
-Denetimin boyutunu içeren bir `SIZE` yapıya yönelik işaretçi. Sol üst köşe, *PPT*'nin değerine göre belirlenir. *PPT* ve *pboyut* değerleri, denetimin boyutunu ve konumunu belirtmek için isteğe bağlı bir yöntemdir.
+*psize*<br/>
+Denetimin boyutunu `SIZE` içeren bir yapıya işaretçi. Sol üst köşe *ppt*değerine göre belirlenir. *PPT* ve *psize* değerleri, denetimin boyutunu ve konumunu belirten isteğe bağlı bir yöntemdir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca Windows *dwStyle* bayraklarının bir alt kümesi tarafından `CreateControl`desteklenir:
+Yalnızca Windows *dwStyle* bayraklarının bir alt `CreateControl`kümesi aşağıdakiler tarafından desteklenir:
 
-- WS_VISIBLE Başlangıçta görünür olan bir pencere oluşturur. Denetimin normal pencereler gibi hemen görünür olmasını istiyorsanız gereklidir.
+- WS_VISIBLE Başlangıçta görünür bir pencere oluşturur. Denetimin sıradan pencereler gibi hemen görünür olmasını istiyorsanız gereklidir.
 
-- WS_DISABLED başlangıçta devre dışı bırakılmış bir pencere oluşturur. Devre dışı bırakılan bir pencere kullanıcıdan giriş alamaz. Denetimin etkin bir özelliği varsa, ayarlanabilir.
+- WS_DISABLED Başlangıçta devre dışı bırakılmış bir pencere oluşturur. Devre dışı bırakılmış bir pencere kullanıcıdan giriş alamaz. Denetimetkin bir özelliği varsa ayarlanabilir.
 
-- WS_BORDER ince çizgili kenarlığı olan bir pencere oluşturur. Denetimin bir BorderStyle özelliği varsa, ayarlanabilir.
+- WS_BORDER ince çizgi kenarlıklı bir pencere oluşturur. Denetimin BorderStyle özelliği varsa ayarlanabilir.
 
-- WS_GROUP bir denetim grubunun ilk denetimini belirtir. Kullanıcı, yön tuşlarını kullanarak, klavye odağını gruptaki bir denetimden bir sonrakine değiştirebilir. İlk denetimden sonra WS_GROUP stiliyle tanımlanan tüm denetimler aynı gruba aittir. WS_GROUP stilinde bir sonraki denetim, grubu sonlandırır ve sonraki grubu başlatır.
+- WS_GROUP Bir denetim grubunun ilk denetimini belirtir. Kullanıcı yön tuşlarını kullanarak klavye odağı gruptaki bir denetimden diğerine değiştirebilir. İlk denetimden sonra WS_GROUP stili ile tanımlanan tüm denetimler aynı gruba aittir. WS_GROUP stili ile bir sonraki denetim grubu sona erdirer ve bir sonraki grubu başlatır.
 
-- WS_TABSTOP, Kullanıcı TAB tuşuna bastığında klavye odağını alabilen bir denetim belirtir. Sekme tuşuna basıldığında klavye odağı WS_TABSTOP stilinin bir sonraki denetimine değişir.
+- WS_TABSTOP Kullanıcı TAB tuşuna bastığında klavye odağı alabilecek bir denetim belirtir. TAB tuşuna basıldığında klavye odağı WS_TABSTOP stilinin bir sonraki denetimine dönüşür.
 
-Varsayılan boyutlu denetimleri oluşturmak için ikinci aşırı yüklemeyi kullanın.
+Varsayılan boyutlu denetimler oluşturmak için ikinci aşırı yüklemeyi kullanın.
 
-##  <a name="createolefont"></a>Cotacontrolcontainer:: Createolefazı tipi
+## <a name="colecontrolcontainercreateolefont"></a><a name="createolefont"></a>COleControlContainer::CreateOleFont
 
-OLE yazı tipi oluşturur.
+Bir OLE yazı tipi oluşturur.
 
 ```
 void CreateOleFont(CFont* pFont);
@@ -366,9 +366,9 @@ void CreateOleFont(CFont* pFont);
 ### <a name="parameters"></a>Parametreler
 
 *pFont*<br/>
-Denetim kapsayıcısı tarafından kullanılacak yazı tipine yönelik bir işaretçi.
+Denetim kapsayıcısı tarafından kullanılacak yazı tipiiçin bir işaretçi.
 
-##  <a name="finditem"></a>Cotacontrolcontainer:: FindItem
+## <a name="colecontrolcontainerfinditem"></a><a name="finditem"></a>COleControlContainer::FindItem
 
 Belirtilen öğeyi barındıran özel siteyi bulur.
 
@@ -378,16 +378,16 @@ virtual COleControlSite* FindItem(UINT nID) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*NID*<br/>
-Bulunan öğenin tanımlayıcısı.
+*Nıd*<br/>
+Bulunacak öğenin tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen öğenin özel sitesine yönelik bir işaretçi.
+Belirtilen öğenin özel sitesine bir işaretçi.
 
-##  <a name="freezeallevents"></a>Cotacontrolcontainer:: FreezeAllEvents
+## <a name="colecontrolcontainerfreezeallevents"></a><a name="freezeallevents"></a>COleControlContainer::FreezeAllEvents
 
-Kapsayıcının ekli denetim sitelerinden olayları yoksayıp sayamayacağını belirler veya kabul eder.
+Kapsayıcının bağlı denetim sitelerindeki olayları yoksayacağını veya kabul edip edmeyeceğini belirler.
 
 ```
 void FreezeAllEvents(BOOL bFreeze);
@@ -396,14 +396,14 @@ void FreezeAllEvents(BOOL bFreeze);
 ### <a name="parameters"></a>Parametreler
 
 *bFreeze*<br/>
-Olaylar işlenecektir sıfır dışı; Aksi takdirde 0.
+Olaylar işlenecekse sıfır olmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Denetim kapsayıcısı tarafından isteniyorsa olayları tetikleyerek denetim için gerekli değildir. Çalışmaya devam edebilir, ancak sonraki tüm olaylar Denetim kapsayıcısı tarafından yok sayılır.
+> Denetim konteyneri tarafından istenirse olayları ateşlemeyi durdurmak için denetim gerekli değildir. Bu ateş devam edebilirsiniz ama sonraki tüm olaylar kontrol konteyner tarafından göz ardı edilecektir.
 
-##  <a name="getambientprop"></a>Cotacontrolcontainer:: Getambentprop
+## <a name="colecontrolcontainergetambientprop"></a><a name="getambientprop"></a>COleControlContainer::GetAmbientProp
 
 Belirtilen ortam özelliğinin değerini alır.
 
@@ -416,22 +416,22 @@ virtual BOOL GetAmbientProp(
 
 ### <a name="parameters"></a>Parametreler
 
-*Psıte*<br/>
-Ortam özelliğinin alınacağı bir denetim sitesine yönelik bir işaretçi.
+*pSite*<br/>
+Ortam özelliğinin alınacağı bir denetim sitesine işaretçi.
 
-*dı*<br/>
-İstenen çevresel özelliğin dağıtım KIMLIĞI.
+*Dıspıd*<br/>
+İstenilen ortam özelliğinin sevk kimliği.
 
 *pVarResult*<br/>
-Çevresel özelliğin değerine yönelik bir işaretçi.
+Ortam özelliğinin değerine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
-##  <a name="getdlgitem"></a>Cotacontrolcontainer:: Getııbu öğe
+## <a name="colecontrolcontainergetdlgitem"></a><a name="getdlgitem"></a>COleControlContainer::GetDlgItem
 
-Bir iletişim kutusu veya başka bir pencerede, belirtilen denetime veya alt pencereye bir işaretçi alır.
+Bir iletişim kutusunda veya başka bir pencerede belirtilen denetim veya alt pencereiçin bir işaretçi alır.
 
 ```
 virtual CWnd* GetDlgItem(int nID) const;
@@ -443,19 +443,19 @@ virtual void GetDlgItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*NID*<br/>
-Alınacak iletişim kutusu öğesinin tanımlayıcısı.
+*Nıd*<br/>
+Alınacak iletişim öğesinin tanımlayıcısı.
 
 *phWnd*<br/>
-Belirtilen iletişim kutusu öğesinin pencere nesnesinin tanıtıcısına yönelik bir işaretçi.
+Belirtilen iletişim öğesinin pencere nesnesinin tanıtıcısına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İletişim kutusu öğesinin penceresine yönelik bir işaretçi.
+İletişim öğesinin penceresine işaretçi.
 
-##  <a name="getdlgitemint"></a>Cotacontrolcontainer:: Getdlitemint
+## <a name="colecontrolcontainergetdlgitemint"></a><a name="getdlgitemint"></a>COleControlContainer::GetDlgItemInt
 
-Verilen denetimin çevrilmiş metninin değerini alır.
+Verilen denetimin çevrilen metninin değerini alır.
 
 ```
 virtual UINT GetDlgItemInt(
@@ -466,30 +466,30 @@ virtual UINT GetDlgItemInt(
 
 ### <a name="parameters"></a>Parametreler
 
-*NID*<br/>
+*Nıd*<br/>
 Denetimin tanımlayıcısı.
 
 *lpTrans*<br/>
-Bir işlev başarı/başarısızlık değeri alan bir Boolean değişkeni işaretçisi (doğru başarıyı gösterir, yanlış hatayı gösterir).
+İşlev başarı/hata değeri alan bir Boolean değişkenine işaretçi (TRUE başarıyı gösterir, FALSE başarısızlığı gösterir).
 
-*bSigned*<br/>
-İşlevin başındaki eksi işaretine ait metni incelemeli ve bir tane bulursa işaretli bir tamsayı değeri döndürmeyeceğini belirtir. *BSigned* parametresi true ise, alınacak değerin işaretli bir tamsayı değeri olduğunu belirtmek için, dönüş değerini bir **int** türüne atayın. Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+*bİmzalandı*<br/>
+İşlevin başında eksi işareti için metni incelemesi ve bir tane bulursa imzalı bir tamsayı değerini döndürüp döndürmemesi gerektiğini belirtir. Bİmzaparametresi TRUE ise, alınacak değerin imzalı bir tamsayı değeri olduğunu belirterek, iade değerini **int** türüne döküm. *bSigned* Genişletilmiş hata bilgilerini almak için [GetLastError'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)arayın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, *lpTrans* tarafından işaret EDILEN değişken true olarak ayarlanır ve dönüş değeri denetim metninin çevrilmiş değeridir.
+Başarılı olursa, *lpTrans* tarafından işaret edilen değişken TRUE olarak ayarlanır ve iade değeri kontrol metninin çevrilmiş değeridir.
 
-İşlev başarısız olursa, *lpTrans* tarafından işaret EDILEN değişken false olarak ayarlanır ve dönüş değeri sıfırdır. Sıfır olası çevrilmiş bir değer olduğundan sıfır değerinin dönüş değeri, hata olduğunu gösterir.
+İşlev başarısız olursa, *lpTrans* tarafından işaret edilen değişken FALSE olarak ayarlanır ve geri dönüş değeri sıfırdır. Sıfır olası çevrilmiş bir değer olduğundan, sıfırın dönüş değerinin tek başına hata yılıdığını göstermediğini unutmayın.
 
-*LpTrans* null ise, işlev başarı veya başarısızlık hakkında hiçbir bilgi döndürmez.
+*lpTrans* NULL ise, işlev başarı veya başarısızlık hakkında hiçbir bilgi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, metnin başlangıcında ek boşluklar gerçekleştirerek ve sonra ondalık basamakları dönüştürerek alınan metni çevirir. İşlev, metnin sonuna ulaştığında veya bir sayısal karakter ile karşılaştığında çevirmeyi durduruyor.
+İşlev, metnin başındaki fazladan boşlukları sıyırıp ondalık basamakları dönüştürerek alınan metni çevirir. Işlev, metnin sonuna ulaştığında veya sayısal olmayan bir karakterle karşılaştığında çevirmeyi durdurur.
 
-Bu işlev, çevrilen değer INT_MAX (işaretli sayılar için) veya UINT_MAX (işaretsiz sayılar için) değerinden büyükse sıfır değerini döndürür.
+Çevrilen değer INT_MAX (imzalı sayılar için) veya UINT_MAX (imzalanmamış sayılar için) büyükse bu işlev sıfır döndürür.
 
-##  <a name="getdlgitemtext"></a>Coincontrolcontainer:: Getdlıtemtext
+## <a name="colecontrolcontainergetdlgitemtext"></a><a name="getdlgitemtext"></a>COleControlContainer::GetDlgItemText
 
 Verilen denetimin metnini alır.
 
@@ -502,24 +502,24 @@ virtual int GetDlgItemText(
 
 ### <a name="parameters"></a>Parametreler
 
-*NID*<br/>
+*Nıd*<br/>
 Denetimin tanımlayıcısı.
 
-*lpStr*<br/>
-Denetimin metin işaretçisi.
+*Lpstr*<br/>
+Denetim metnine işaretçi.
 
 *nMaxCount*<br/>
-*LPSTR*tarafından işaret edilen arabelleğe kopyalanacak dizenin karakter cinsinden uzunluk üst sınırını belirtir. Dizenin uzunluğu sınırı aşarsa, dize kesilir.
+LPStr tarafından işaret edilen arabelleğe kopyalanacak dize, karakterlerdeki maksimum *lpStr*uzunluğu belirtir. Dize uzunluğu sınırı aşarsa, dize kesilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri, Sonlandırıcı null karakteri dahil değil, arabelleğe kopyalanmış karakter sayısını belirtir.
+İşlev başarılı olursa, iade değeri arabelleğe kopyalanan karakter sayısını belirtir, sonlandırıcı null karakteri dahil değil.
 
-İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+İşlev başarısız olursa, geri dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için [GetLastError'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)arayın.
 
-##  <a name="handlesetfocus"></a>Cotacontrolcontainer:: HandleSetFocus
+## <a name="colecontrolcontainerhandlesetfocus"></a><a name="handlesetfocus"></a>COleControlContainer::HandleSetFocus
 
-Kapsayıcının WM_SETFOCUS iletilerini işlediğini belirler.
+Kapsayıcının WM_SETFOCUS iletileri işleyeceğini belirler.
 
 ```
 virtual BOOL HandleSetFocus();
@@ -527,11 +527,11 @@ virtual BOOL HandleSetFocus();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kapsayıcı WM_SETFOCUS iletilerini işlediğinde sıfır dışı; Aksi halde sıfır.
+Kapsayıcı WM_SETFOCUS iletileri işlerse sıfırolmayan; aksi takdirde sıfır.
 
-##  <a name="handlewindowlessmessage"></a>Cotacontrolcontainer:: HandleWindowlessMessage
+## <a name="colecontrolcontainerhandlewindowlessmessage"></a><a name="handlewindowlessmessage"></a>COleControlContainer::HandleWindowlessMessage
 
-Penceresiz denetimler için pencere iletilerini işler.
+Penceresi iletilerini penceresiz denetimler için işler.
 
 ```
 virtual BOOL HandleWindowlessMessage(
@@ -543,27 +543,27 @@ virtual BOOL HandleWindowlessMessage(
 
 ### <a name="parameters"></a>Parametreler
 
-*message*<br/>
-Windows tarafından sunulan pencere iletisi için tanımlayıcı.
+*İleti*<br/>
+Windows tarafından sağlanan pencere iletisinin tanımlayıcısı.
 
-*wParam*<br/>
-İletinin parametresi; Windows tarafından sağlanmaktadır. İletiye özgü ek bilgileri belirtir. Bu parametrenin içeriği, *ileti* parametresinin değerine bağlıdır.
+*Wparam*<br/>
+İletinin parametresi; Windows tarafından sağlanır. İletiye özgü ek bilgileri belirtir. Bu parametrenin içeriği *ileti* parametresinin değerine bağlıdır.
 
-*lParam*<br/>
-İletinin parametresi; Windows tarafından sağlanmaktadır. İletiye özgü ek bilgileri belirtir. Bu parametrenin içeriği, *ileti* parametresinin değerine bağlıdır.
+*Lparam*<br/>
+İletinin parametresi; Windows tarafından sağlanır. İletiye özgü ek bilgileri belirtir. Bu parametrenin içeriği *ileti* parametresinin değerine bağlıdır.
 
 *plResult*<br/>
-Windows sonuç kodu. İleti işleme sonucunu belirtir ve gönderilen iletiye göre değişir.
+Windows sonuç kodu. İleti işleme nin sonucunu belirtir ve gönderilen iletiye bağlıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi halde sıfır.
+Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Penceresiz Denetim iletilerinin işlenmesini özelleştirmek için bu işlevi geçersiz kılın.
+Penceresiz denetim iletilerinin işlenmesini özelleştirmek için bu işlevi geçersiz kılın.
 
-##  <a name="isdlgbuttonchecked"></a>Copacontrolcontainer:: ısıbir Buttonchecked
+## <a name="colecontrolcontainerisdlgbuttonchecked"></a><a name="isdlgbuttonchecked"></a>COleControlContainer::IsDlgButtonChecked
 
 Belirtilen düğmenin durumunu belirler.
 
@@ -573,24 +573,24 @@ virtual UINT IsDlgButtonChecked(int nIDButton) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıdbutton*<br/>
+*nIDButton*<br/>
 Düğme denetiminin tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-BS_AUTOCHECKBOX, BS_AUTORADIOBUTTON, BS_AUTO3STATE, BS_CHECKBOX, BS_RADIOBUTTON veya BS_3STATE stiliyle oluşturulan bir düğmeden döndürülen değer. Aşağıdakilerden biri olabilir:
+BS_AUTOCHECKBOX, BS_AUTORADIOBUTTON, BS_AUTO3STATE, BS_CHECKBOX, BS_RADIOBUTTON veya BS_3STATE stiliyle oluşturulan bir düğmeden gelen iade değeri. Aşağıdakilerden biri olabilir:
 
-- BST_CHECKED düğmesi işaretlendi.
+- BST_CHECKED Button kontrol edilir.
 
-- BST_INDETERMINATE düğmesi gri, belirsiz bir durum olduğunu belirtir (yalnızca düğme BS_3STATE veya BS_AUTO3STATE stiline sahipse geçerlidir).
+- BST_INDETERMINATE Düğmesi belirsiz bir durumu belirten gri renktedir (yalnızca düğmede BS_3STATE veya BS_AUTO3STATE stili varsa geçerlidir).
 
-- BST_UNCHECKED düğmesi temizlendi.
+- BST_UNCHECKED Button temizlendi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Düğme üç durumlu bir denetimdir, üye işlevi soluk, işaretli veya hiçbirini belirler.
+Düğme üç durumlu bir denetimse, üye işlev soluk olup olmadığını, denetlenip işaretlenmediğini veya olmadığını belirler.
 
-##  <a name="m_crback"></a>Cotacontrolcontainer:: m_crBack
+## <a name="colecontrolcontainerm_crback"></a><a name="m_crback"></a>COleControlContainer::m_crBack
 
 Kapsayıcının arka plan rengi.
 
@@ -598,23 +598,23 @@ Kapsayıcının arka plan rengi.
 COLORREF m_crBack;
 ```
 
-##  <a name="m_crfore"></a>Cotacontrolcontainer:: m_crFore
+## <a name="colecontrolcontainerm_crfore"></a><a name="m_crfore"></a>COleControlKonteyner::m_crFore
 
-Kapsayıcının ön plan rengi.
+Konteynerin ön plan rengi.
 
 ```
 COLORREF m_crFore;
 ```
 
-##  <a name="m_listsitesorwnds"></a>Cotacontrolcontainer:: m_listSitesOrWnds
+## <a name="colecontrolcontainerm_listsitesorwnds"></a><a name="m_listsitesorwnds"></a>COleControlContainer::m_listSitesOrWnds
 
-Kapsayıcı tarafından barındırılan denetim sitelerinin listesi.
+Kapsayıcı tarafından barındırılan kontrol sitelerinin listesi.
 
 ```
 CTypedPtrList<CPtrList, COleControlSiteOrWnd*> m_listSitesOrWnds;
 ```
 
-##  <a name="m_nwindowlesscontrols"></a>Cotacontrolcontainer:: m_nWindowlessControls
+## <a name="colecontrolcontainerm_nwindowlesscontrols"></a><a name="m_nwindowlesscontrols"></a>COleControlKonteyner::m_nWindowlessControls
 
 Denetim kapsayıcısı tarafından barındırılan penceresiz denetimlerin sayısı.
 
@@ -622,47 +622,47 @@ Denetim kapsayıcısı tarafından barındırılan penceresiz denetimlerin sayı
 int m_nWindowlessControls;
 ```
 
-##  <a name="m_polefont"></a>Cotacontrolcontainer:: m_pOleFont
+## <a name="colecontrolcontainerm_polefont"></a><a name="m_polefont"></a>COleControlKonteyner::m_pOleFont
 
-Özel denetim sitesinin OLE yazı tipine yönelik bir işaretçi.
+Özel denetim sitesinin OLE yazı tipine işaretçi.
 
 ```
 LPFONTDISP m_pOleFont;
 ```
 
-##  <a name="m_psitecapture"></a>Cotacontrolcontainer:: m_pSiteCapture
+## <a name="colecontrolcontainerm_psitecapture"></a><a name="m_psitecapture"></a>COleControlKonteyner::m_pSiteCapture
 
-Yakalama denetimi sitesinin işaretçisi.
+Yakalama denetim sitesine işaretçi.
 
 ```
 COleControlSite* m_pSiteCapture;
 ```
 
-##  <a name="m_psitefocus"></a>Cotacontrolcontainer:: m_pSiteFocus
+## <a name="colecontrolcontainerm_psitefocus"></a><a name="m_psitefocus"></a>COleControlKonteyner::m_pSiteFocus
 
-Şu anda giriş odağına sahip olan denetim sitesine yönelik bir işaretçi.
+Şu anda giriş odağı olan denetim sitesine işaretçi.
 
 ```
 COleControlSite* m_pSiteFocus;
 ```
 
-##  <a name="m_psiteuiactive"></a>Cotacontrolcontainer:: m_pSiteUIActive
+## <a name="colecontrolcontainerm_psiteuiactive"></a><a name="m_psiteuiactive"></a>COleControlKonteyner::m_pSiteUIActive
 
-Yerinde etkinleştirilen denetim sitesine yönelik bir işaretçi.
+Yerinde etkinleştirilen denetim sitesine işaretçi.
 
 ```
 COleControlSite* m_pSiteUIActive;
 ```
 
-##  <a name="m_pwnd"></a>Cotacontrolcontainer:: m_pWnd
+## <a name="colecontrolcontainerm_pwnd"></a><a name="m_pwnd"></a>COleControlContainer::m_pWnd
 
-Kapsayıcı ile ilişkili pencere nesnesine yönelik bir işaretçi.
+Kapsayıcıyla ilişkili pencere nesnesi için bir işaretçi.
 
 ```
 CWnd* m_pWnd;
 ```
 
-##  <a name="m_sitemap"></a>Cotacontrolcontainer:: m_siteMap
+## <a name="colecontrolcontainerm_sitemap"></a><a name="m_sitemap"></a>COleControlKonteyner::m_siteMap
 
 Site haritası.
 
@@ -670,9 +670,9 @@ Site haritası.
 CMapPtrToPtr m_siteMap;
 ```
 
-##  <a name="onpaint"></a>Cotacontrolcontainer:: OnPaint
+## <a name="colecontrolcontaineronpaint"></a><a name="onpaint"></a>COleControlContainer::OnPaint
 
-WM_PAINT isteklerini işlemek için Framework tarafından çağırılır.
+WM_PAINT isteklerini işlemek için çerçeve tarafından çağrıldı.
 
 ```
 virtual BOOL OnPaint(CDC* pDC);
@@ -680,20 +680,20 @@ virtual BOOL OnPaint(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-Kapsayıcı tarafından kullanılan cihaz bağlamına yönelik bir işaretçi.
+*Pdc*<br/>
+Kapsayıcı tarafından kullanılan aygıt bağlamına bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti işlenirse sıfır dışı; Aksi halde sıfır.
+İleti işlenirse sıfır olmayan; aksi takdirde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Boyama işlemini özelleştirmek için bu işlevi geçersiz kılın.
 
-##  <a name="onuiactivate"></a>Cotacontrolcontainer:: OnUIActivate
+## <a name="colecontrolcontaineronuiactivate"></a><a name="onuiactivate"></a>COleControlContainer::OnUIActivate
 
-*PSite*tarafından işaret edilen Denetim sitesi, yerinde etkinleştirilmekte olduğu için Framework tarafından çağırılır.
+Çerçeve tarafından çağrılan kontrol sitesi, *pSite*tarafından işaret edildiğinde, yerinde etkinleştirilmek üzeredir.
 
 ```
 virtual void OnUIActivate(COleControlSite* pSite);
@@ -701,16 +701,16 @@ virtual void OnUIActivate(COleControlSite* pSite);
 
 ### <a name="parameters"></a>Parametreler
 
-*Psıte*<br/>
-Denetim sitesinin yerinde etkinleştirilmesi için bir işaretçi.
+*pSite*<br/>
+Yerinde etkinleştirilmek üzere olan denetim sitesine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yerinde etkinleştirme, kapsayıcının ana menüsünün yerine yerinde bileşik bir menü olduğu anlamına gelir.
+Yerinde etkinleştirme, kapsayıcının ana menüsünün yerinde bileşik bir menüyle değiştirilmesi anlamına gelir.
 
-##  <a name="onuideactivate"></a>Cotacontrolcontainer:: OnUIDeactivate
+## <a name="colecontrolcontaineronuideactivate"></a><a name="onuideactivate"></a>COleControlContainer::OnUIDeactivate
 
-*PSite*tarafından işaret edilen Denetim sitesi devre dışı bırakmak üzereyken Framework tarafından çağırılır.
+Çerçeve tarafından çağrılan kontrol sitesi, *pSite*tarafından işaret edildiğinde, devre dışı bırakılmak üzeredir.
 
 ```
 virtual void OnUIDeactivate(COleControlSite* pSite);
@@ -718,16 +718,16 @@ virtual void OnUIDeactivate(COleControlSite* pSite);
 
 ### <a name="parameters"></a>Parametreler
 
-*Psıte*<br/>
-Devre dışı bırakmak üzere denetim sitesine yönelik bir işaretçi.
+*pSite*<br/>
+Denetim sitesine işaretçi devre dışı bırakılmak üzere.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu bildirim alındığında, kapsayıcı kullanıcı arabirimini yeniden yüklemeli ve odağı almalıdır.
+Bu bildirim alındığı zaman, kapsayıcı kullanıcı arabirimini yeniden yüklemeli ve odak almalıdır.
 
-##  <a name="scrollchildren"></a>Cotacontrolcontainer:: ScrollChildren
+## <a name="colecontrolcontainerscrollchildren"></a><a name="scrollchildren"></a>COleControlContainer::ScrollChildren
 
-Bir alt pencereden kaydırma iletileri alındığında Framework tarafından çağırılır.
+Kaydırma iletileri bir alt pencereden alındığı zaman çerçeve tarafından çağrılır.
 
 ```
 virtual void ScrollChildren(
@@ -737,15 +737,15 @@ virtual void ScrollChildren(
 
 ### <a name="parameters"></a>Parametreler
 
-*DX*<br/>
-X ekseni üzerinde kaydırmanın piksel cinsinden miktarı.
+*Dx*<br/>
+Piksel olarak x ekseni boyunca kaydırma miktarı.
 
-*rengi*<br/>
-Y ekseni üzerinde kaydırmanın piksel cinsinden miktarı.
+*Dy*<br/>
+Y ekseni boyunca kaydırmanın piksel olarak miktarı.
 
-##  <a name="senddlgitemmessage"></a>Cotacontrolcontainer:: SendDlgItemMessage
+## <a name="colecontrolcontainersenddlgitemmessage"></a><a name="senddlgitemmessage"></a>COleControlContainer::SendDlgItemMessage
 
-Belirtilen denetime bir ileti gönderir.
+Belirtilen denetime ileti gönderir.
 
 ```
 virtual LRESULT SendDlgItemMessage(
@@ -757,21 +757,21 @@ virtual LRESULT SendDlgItemMessage(
 
 ### <a name="parameters"></a>Parametreler
 
-*NID*<br/>
+*Nıd*<br/>
 İletiyi alan denetimin tanımlayıcısını belirtir.
 
-*message*<br/>
+*İleti*<br/>
 Gönderilecek iletiyi belirtir.
 
-*wParam*<br/>
+*Wparam*<br/>
 İletiye özgü ek bilgileri belirtir.
 
-*lParam*<br/>
+*Lparam*<br/>
 İletiye özgü ek bilgileri belirtir.
 
-##  <a name="setdlgitemint"></a>Cotacontrolcontainer:: Setdlitemint
+## <a name="colecontrolcontainersetdlgitemint"></a><a name="setdlgitemint"></a>COleControlContainer::SetDlgItemInt
 
-İletişim kutusundaki bir denetimin metnini belirtilen tamsayı değerinin dize gösterimine ayarlar.
+İletişim kutusundaki denetim metnini, belirtilen bir tamsayı değerinin dize gösterimine ayarlar.
 
 ```
 virtual void SetDlgItemInt(
@@ -782,18 +782,18 @@ virtual void SetDlgItemInt(
 
 ### <a name="parameters"></a>Parametreler
 
-*NID*<br/>
+*Nıd*<br/>
 Denetimin tanımlayıcısı.
 
 *nDeğer*<br/>
-Görüntülenecek tamsayı değeri.
+Görüntülenecek olan tümsesayı değeri.
 
-*bSigned*<br/>
-*NValue* parametresinin imzalanmış veya imzasız olduğunu belirtir. Bu parametre TRUE ise, *nValue* imzalanmamıştır. Bu parametre TRUE ise ve *nValue* sıfırdan küçükse, dizedeki ilk basamakla önce bir eksi işareti yerleştirilir. Bu parametre FALSE ise, *nValue değeri* işaretsiz olur.
+*bİmzalandı*<br/>
+*nValue* parametresinin imzalı veya imzasız olup olmadığını belirtir. Bu parametre TRUE ise, *nValue* imzalanır. Bu parametre TRUE ise ve *nValue* sıfırdan küçükse, dizedeki ilk basamaktan önce eksi işareti yerleştirilir. Bu parametre FALSE ise, *nValue* imzasızdır.
 
-##  <a name="setdlgitemtext"></a>Cotacontrolcontainer:: Setdlıtemtext
+## <a name="colecontrolcontainersetdlgitemtext"></a><a name="setdlgitemtext"></a>COleControlContainer::SetDlgItemText
 
-*LpszString*içinde bulunan metni kullanarak belirtilen denetimin metnini ayarlar.
+*LPSZString'te*yer alan metni kullanarak belirtilen denetimin metnini ayarlar.
 
 ```
 virtual void SetDlgItemText(
@@ -803,11 +803,11 @@ virtual void SetDlgItemText(
 
 ### <a name="parameters"></a>Parametreler
 
-*NID*<br/>
+*Nıd*<br/>
 Denetimin tanımlayıcısı.
 
 *lpszString*<br/>
-Denetimin metin işaretçisi.
+Denetim metnine işaretçi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

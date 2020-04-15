@@ -1,9 +1,11 @@
 ---
 title: tmpnam_s, _wtmpnam_s
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - tmpnam_s
 - _wtmpnam_s
+- _o__wtmpnam_s
+- _o_tmpnam_s
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -33,16 +36,16 @@ helpviewer_keywords:
 - file names [C++], temporary
 - wtmpnam_s function
 ms.assetid: e70d76dc-49f5-4aee-bfa2-f1baa2bcd29f
-ms.openlocfilehash: 847df0d2369857d009c39b4dd61adce45094899c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: e34fbe64d342205659a4b0bdaf703248e62ed733
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946036"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81362410"
 ---
 # <a name="tmpnam_s-_wtmpnam_s"></a>tmpnam_s, _wtmpnam_s
 
-Geçici dosyalar oluşturmak için kullanabileceğiniz adlar oluşturun. Bunlar [, CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [tmpnam ve _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) sürümleridir.
+Geçici dosyalar oluşturmak için kullanabileceğiniz adlar oluşturun. Bunlar, [CRT'deki Güvenlik Özellikleri'nde](../../c-runtime-library/security-features-in-the-crt.md)açıklandığı gibi güvenlik geliştirmelerine sahip [tmpnam ve _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) sürümleridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,39 +70,41 @@ errno_t _wtmpnam_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*<br/>
+*Str*<br/>
 Oluşturulan adı tutacak işaretçi.
 
-*Sizeınchars*<br/>
-Arabelleğin karakter cinsinden boyutu.
+*sizeInChars*<br/>
+Karakterlerdeki arabelleğe boyutu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her ikisi de başarılı olursa 0 veya hata durumunda bir hata numarası döndürür.
+Bu işlevlerin her ikisi de başarılı olursa 0 döndürün veya hata üzerinde bir hata numarası.
 
-### <a name="error-conditions"></a>Hata koşulları
+### <a name="error-conditions"></a>Hata Koşulları
 
 |||||
 |-|-|-|-|
-|*üstbilgisine*|*Sizeınchars*|**Dönüş değeri**|**İçeriği** *Str*|
-|**DEĞER**|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
-|**Null** değil (geçerli belleğe işaret eder)|çok kısa|**ERANGE**|değiştirilmedi|
+|*Str*|*sizeInChars*|**Dönüş Değeri**|**str içeriği***str*  |
+|**Null**|herhangi bir|**Eınval**|değiştirilmemiş|
+|**NULL** değil (geçerli belleğe işaret)|çok kısa|**Erange**|değiştirilmemiş|
 
-*Str* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
+*str* **NULL**ise, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütme devam etmesine izin verilirse, bu işlevler EINVAL **için errno** ayarlayın ve **EINVAL** döndürün. **EINVAL**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri, şu anda mevcut olmayan bir dosyanın adını döndürür. **tmpnam_s** , [Gettemppathw](/windows/win32/api/fileapi/nf-fileapi-gettemppathw)tarafından döndürülen ayrılmış Windows geçici dizininde benzersiz bir ad döndürür. Bir dosya adının ters eğik çizgiyle ön halden önceden sonlandırıldığına ve \fname21 gibi yol bilgilerine sahip olmadığına, bu adın geçerli çalışma dizini için geçerli olduğunu gösterir.
+Bu işlevlerin her biri, şu anda var olmayan bir dosyanın adını döndürür. **tmpnam_s,** [GetTempPathW](/windows/win32/api/fileapi/nf-fileapi-gettemppathw)tarafından döndürülen belirlenen Windows geçici dizininde benzersiz bir ad döndürür. Bir dosya adının bir ters eğik çizgi yle önceden çevrildiğinde ve \fname21 gibi yol bilgisi olmadığında, bu, adın geçerli çalışma dizini için geçerli olduğunu gösterir.
 
-**Tmpnam_s**için, bu oluşturulan dosya adını *Str*içinde depolayabilirler. **Tmpnam_s** tarafından döndürülen bir dizenin en fazla uzunluğu, stdio 'Da tanımlanan **L_tmpnam_s**'dir. Olsun. *Str* **null**ise, **tmpnam_s** sonucu dahili bir statik arabellekte bırakır. Bu nedenle, sonraki çağrılar bu değeri yok eder. **Tmpnam_s** tarafından oluşturulan ad, program tarafından oluşturulan bir dosya adından ve **tmpnam_s**öğesine yapılan ilk çağrıdan sonra, stdio 'daki **TMP_MAX_S** olduğunda, temel 32 (. 1-. 1vvvvvu) içindeki sıralı sayıların bir dosya uzantısını içerir. H **INT_MAX**).
+**tmpnam_s**için, bu oluşturulan dosya adını *str'de*depolayabilirsiniz. **tmpnam_s** tarafından döndürülen bir dize maksimum uzunluğu **L_tmpnam_s**, STDIO tanımlanır. H. *str* **NULL**ise, **tmpnam_s** sonucu bir iç statik arabellekte bırakır. Böylece sonraki çağrılar bu değeri yok eder. **tmpnam_s** tarafından oluşturulan ad, program tarafından oluşturulan bir dosya adından oluşur ve **tmpnam_s**ilk çağrıdan sonra, STDIO'da **TMP_MAX_S** 32 (.1-.1vvvvvu) tabanında sıralı sayıların dosya uzantısı. H **INT_MAX**olduğunu).
 
-**tmpnam_s** çok baytlı karakter dize bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini işletim sisteminden elde edilen OEM kod sayfasına göre tanıyor. **_wtmpnam_s** , **tmpnam_s**öğesinin geniş karakterli bir sürümüdür; **_wtmpnam_s** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. **_wtmpnam_s** ve **tmpnam_s** , çok baytlı karakter dizelerini işleyememesi dışında **aynı şekilde davranır** .
+**tmpnam_s,** işletim sisteminden elde edilen OEM kod sayfasına göre çok bayt karakter dizilerini tanıyarak, çok bayt karakterli dize bağımsız değişkenlerini otomatik olarak işler. **_wtmpnam_s** **tmpnam_s**geniş karakterli bir versiyonudur; _wtmpnam_s bağımsız değişkeni **_wtmpnam_s** ve geri dönüş değeri geniş karakterli dizeleridir. **_wtmpnam_s** ve **tmpnam_s,** **_wtmpnam_s** çok bayt karakterli dizeleri işlememesi dışında aynı şekilde çalışır.
 
-' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevleri kullanmak şablon aşırı yükleri ile basitleştirilir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkararak boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_ttmpnam_s**|**tmpnam_s**|**tmpnam_s**|**_wtmpnam_s**|
 
@@ -107,10 +112,10 @@ Bu işlevlerin her biri, şu anda mevcut olmayan bir dosyanın adını döndür�
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**tmpnam_s**|\<stdio. h >|
-|**_wtmpnam_s**|\<stdio. h > veya \<wchar. h >|
+|**tmpnam_s**|\<stdio.h>|
+|**_wtmpnam_s**|\<stdio.h> \<veya wchar.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -165,7 +170,7 @@ C:\Users\LocalUser\AppData\Local\Temp\u19q8.e is safe to use as a temporary file
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_getmbcp](getmbcp.md)<br/>
 [malloc](malloc.md)<br/>
 [_setmbcp](setmbcp.md)<br/>

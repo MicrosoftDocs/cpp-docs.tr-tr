@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - sizeof operator
 ms.assetid: 8bc3b6fb-54a1-4eb7-ada0-05f8c5efc532
-ms.openlocfilehash: bc1165cf1df3933575013906d1b24673467f0b36
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8789bb5e0e363458edffa7207ea1e138aae4d284
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80178723"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365577"
 ---
 # <a name="sizeof-operator"></a>sizeof İşleci
 
-**Karakter**türü boyutuna göre işleneninin boyutunu verir.
+Tip **char**boyutuna göre operand boyutunu verir.
 
 > [!NOTE]
->  `sizeof ...` işleci hakkında daha fazla bilgi için bkz. [üç nokta ve değişken sayıda bağımsız değişken şablonları](../cpp/ellipses-and-variadic-templates.md).
+> `sizeof ...` Operatör hakkında daha fazla bilgi için [Elipsler ve Variadic Şablonlar'a](../cpp/ellipses-and-variadic-templates.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,15 +29,15 @@ sizeof  ( type-name )
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sizeof** işlecinin sonucu, içerme dosyasında \<stddef. h > tanımlanan bir integral türü `size_t`türüdür. Bu işleç, programlarınızda makineye bağımlı veri boyutları belirtmekten kaçınmanızı sağlar.
+Işlecinin **boyutlarının** `size_t`sonucu, stddef.h> dosyada \<tanımlanan integral bir türdir. Bu işleç, programlarınızda makineye bağlı veri boyutları belirtmekten kaçınmanızı sağlar.
 
-**Sizeof** işleneni aşağıdakilerden biri olabilir:
+Operand **boyutlar** için aşağıdakilerden biri olabilir:
 
-- Bir tür adı. Bir tür adıyla **sizeof** kullanmak için, adın parantez içine alınması gerekir.
+- Bir tür adı. Bir tür adı ile **boyutları** kullanmak için, adı parantez içinde eklenmelidir.
 
-- Bir ifade. Bir ifadeyle kullanıldığında, **sizeof** parantez ile veya Ayraçsız olarak belirtilebilir. İfade değerlendirilmedi.
+- Bir deyim. Bir ifade ile kullanıldığında, parantez li veya parantezsiz **boyutlar** belirtilebilir. İfade değerlendirilmez.
 
-**Sizeof** işleci **char**türünde bir nesneye uygulandığında, 1 verir. Bir diziye **sizeof** işleci uygulandığında, dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutu değil, bu dizideki toplam bayt sayısını verir. Dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutunu almak için, bunu **sizeof**kullanan bir işleve parametre olarak geçirin. Örneğin:
+**Işlecinin boyutları** **char**türündeki bir nesneye uygulandığında, 1 verir. İşleç **boyutu** bir diziye uygulandığında, dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutunu değil, bu dizideki toplam bayt sayısını verir. Dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutunu elde etmek için, **boyutlar**kullanan bir işleve parametre olarak geçirin. Örneğin:
 
 ## <a name="example"></a>Örnek
 
@@ -71,33 +71,33 @@ The length of Hello, world! is: 14
 The size of the pointer is 4
 ```
 
-**Sizeof** işleci bir **sınıfa**, **yapıya**veya **birleşim** türüne uygulandığında, sonuç bu türdeki bir nesnedeki bayt sayısıdır ve bir sözcük sınırlarındaki üyeleri hizalamak için herhangi bir doldurma eklenir. Sonuç, tek tek üyelerin depolama gereksinimleri eklenerek hesaplanan boyuta karşılık gelmez. [/ZP](../build/reference/zp-struct-member-alignment.md) derleyici seçeneği ve [Pack](../preprocessor/pack.md) pragma, Üyeler için hizalama sınırlarını etkiler.
+İşleç **boyutları** bir **sınıfa**, yapı veya **struct** **birleşim** türüne uygulandığında, sonuç, bu tür bir nesnedeki bayt sayısı ve üyeleri sözcük sınırlarına hizalamak için eklenen dolgu sayısıdır. Sonuç, tek tek üyelerin depolama gereksinimlerini ekleyerek hesaplanan boyuta karşılık gelmez. [/Zp](../build/reference/zp-struct-member-alignment.md) derleyici seçeneği ve [paket](../preprocessor/pack.md) pragma üyeleri için hizalama sınırlarını etkiler.
 
-**Sizeof** işleci boş bir sınıf için bile hiçbir şekilde 0 vermez.
+İşleticinin **boyutları** boş bir sınıf için bile asla 0 verir.
 
-**Sizeof** işleci aşağıdaki işlenenlerle birlikte kullanılamaz:
+İşleticinin **boyutları** aşağıdaki operandlarla kullanılamaz:
 
-- Lerdir. (Ancak, **sizeof** işlevlere yönelik işaretçilere uygulanabilir.)
+- Işlev. (Ancak, **boyutlar** işlevlere işaretçilere uygulanabilir.)
 
 - Bit alanları.
 
-- Tanımsız sınıflar.
+- Tanımlanmamış sınıflar.
 
-- Tür **void**.
+- Tür **geçersiz**.
 
-- Dinamik olarak ayrılan diziler.
+- Dinamik olarak ayrılmış diziler.
 
 - Dış diziler.
 
-- Tamamlanmamış türler.
+- Eksik türleri.
 
-- Parantez içinde tamamlanmamış türlerin adları.
+- Eksik türlerin parantez adı.
 
-Bir başvuruya **sizeof** işleci uygulandığında, nesne, **sizeof** nesnesinin kendisi için uygulanmışsa aynı olur.
+Bir başvuruya işleç **boyutları** uygulandığında, sonuç nesnenin kendisine uygulanmış gibi **olur.**
 
-Boyutlandırılmış olmayan bir dizi bir yapının son öğesi ise, **sizeof** işleci dizi olmadan yapının boyutunu döndürür.
+Boyutsuz bir dizi bir yapının son öğesi ise, işleç **boyutları** dizi olmadan yapının boyutunu döndürür.
 
-**Sizeof** işleci, genellikle bir dizideki öğelerin sayısını formun bir ifadesi kullanarak hesaplamak için kullanılır:
+**İşleçboyutu** genellikle formun bir ifadesini kullanarak bir dizideki öğe sayısını hesaplamak için kullanılır:
 
 ```cpp
 sizeof array / sizeof array[0]
@@ -106,4 +106,4 @@ sizeof array / sizeof array[0]
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

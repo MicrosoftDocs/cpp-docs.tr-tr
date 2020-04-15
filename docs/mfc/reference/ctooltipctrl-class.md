@@ -1,5 +1,5 @@
 ---
-title: CToolTipCtrl sınıfı
+title: CToolTipCtrl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CToolTipCtrl
@@ -72,16 +72,16 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-ms.openlocfilehash: bf32671eb3535de1bf072e24bc642145e87c84ee
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: fdf91549fd1b911de3af82bb940b92fe5e220b92
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420906"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365098"
 ---
-# <a name="ctooltipctrl-class"></a>CToolTipCtrl sınıfı
+# <a name="ctooltipctrl-class"></a>CToolTipCtrl Sınıfı
 
-Bir uygulamada aracın amacını açıklayan tek satırlık bir metin görüntüleyen küçük bir açılan pencere olan "araç ipucu denetimi" işlevselliğini Kapsüller.
+Bir uygulamadaki bir aracın amacını açıklayan tek bir metin satırı görüntüleyen küçük bir açılır pencere olan "araç uç denetimi"nin işlevselliğini kapsüller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -93,76 +93,76 @@ class CToolTipCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CToolTipCtrl:: CToolTipCtrl](#ctooltipctrl)|`CToolTipCtrl` nesnesi oluşturur.|
+|[CToolTipCtrl::CToolTipCtrl](#ctooltipctrl)|Bir `CToolTipCtrl` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CToolTipCtrl:: Activate](#activate)|Araç ipucu denetimini etkinleştirir ve devre dışı bırakır.|
-|[CToolTipCtrl:: AddTool](#addtool)|Araç ipucu denetimiyle bir araç kaydeder.|
-|[CToolTipCtrl:: AdjustRect](#adjustrect)|Araç ipucu denetiminin metin görüntüleme dikdörtgeni ve Pencere dikdörtgeni arasında dönüştürür.|
-|[CToolTipCtrl:: Create](#create)|Bir araç ipucu denetimi oluşturur ve bunu bir `CToolTipCtrl` nesnesine iliştirir.|
-|[CToolTipCtrl:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir araç ipucu denetimi oluşturur ve bunu bir `CToolTipCtrl` nesnesine ekler.|
-|[CToolTipCtrl::D elTool](#deltool)|Araç ipucu denetiminden bir araç kaldırır.|
-|[CToolTipCtrl:: GetBubbleSize](#getbubblesize)|Araç ipucunun boyutunu alır.|
-|[CToolTipCtrl:: GetCurrentTool](#getcurrenttool)|Geçerli araç ipucu denetiminin görüntülediği araç ipucu penceresinin boyut, konum ve metin gibi bilgileri alır.|
-|[CToolTipCtrl:: GetDelayTime](#getdelaytime)|Şu anda bir araç ipucu denetimi için ayarlanmış olan başlangıç, açılır ve yeniden başlatma sürelerini alır.|
-|[CToolTipCtrl:: GetMargin](#getmargin)|Bir araç ipucu penceresi için ayarlanan üst, sol, alt ve sağ kenar boşluklarını alır.|
-|[CToolTipCtrl:: GetMaxTipWidth](#getmaxtipwidth)|Bir araç ipucu penceresi için en büyük genişliği alır.|
-|[CToolTipCtrl:: GetText](#gettext)|Araç ipucu denetiminin bir araç için sakladığı metni alır.|
-|[CToolTipCtrl:: GetTipBkColor](#gettipbkcolor)|Araç İpucu penceresinde arka plan rengini alır.|
-|[CToolTipCtrl:: GetTipTextColor](#gettiptextcolor)|Araç İpucu penceresinde metin rengini alır.|
-|[CToolTipCtrl:: GetTitle](#gettitle)|Geçerli araç ipucu denetiminin başlığını alır.|
-|[CToolTipCtrl:: GetToolCount](#gettoolcount)|Araç ipucu denetimi tarafından tutulan araçların sayısını alır.|
-|[CToolTipCtrl:: GetToolInfo](#gettoolinfo)|Araç ipucu denetiminin bir araç hakkında koruduğu bilgileri alır.|
-|[CToolTipCtrl:: HitTest](#hittest)|Belirlenen aracın sınırlayıcı dikdörtgeni içinde olup olmadığını anlamak için bir noktayı sınar. Varsa, araçla ilgili bilgileri alır.|
-|[CToolTipCtrl::P op](#pop)|Görüntülenmiş bir araç ipucu penceresini görünümden kaldırır.|
-|[CToolTipCtrl::P opup](#popup)|Geçerli araç Ipucu denetiminin son fare iletisinin koordinatlarına göre görüntülenmesine neden olur.|
-|[CToolTipCtrl:: RelayEvent](#relayevent)|İşleme için bir fare iletisini bir araç ipucu denetimine geçirir.|
-|[CToolTipCtrl:: SetDelayTime](#setdelaytime)|Araç ipucu denetimi için başlangıç, açılır ve yeniden süreleri ayarlar.|
-|[CToolTipCtrl:: SetMargin](#setmargin)|Araç ipucu penceresi için üst, sol, alt ve sağ kenar boşluklarını ayarlar.|
-|[CToolTipCtrl:: SetMaxTipWidth](#setmaxtipwidth)|Bir araç ipucu penceresi için en büyük genişliği ayarlar.|
-|[CToolTipCtrl:: SetTipBkColor](#settipbkcolor)|Araç İpucu penceresinde arka plan rengini ayarlar.|
-|[CToolTipCtrl:: SetTipTextColor](#settiptextcolor)|Bir araç ipucu penceresinde metin rengini ayarlar.|
-|[CToolTipCtrl:: SetTitle](#settitle)|Araç ipucuna standart bir simge ve başlık dizesi ekler.|
-|[CToolTipCtrl:: SetToolInfo](#settoolinfo)|Bir araç ipucunun bir araç için sakladığı bilgileri ayarlar.|
-|[CToolTipCtrl:: SetToolRect](#settoolrect)|Araç için yeni bir sınırlayıcı dikdörtgen ayarlar.|
-|[CToolTipCtrl:: SetWindowTheme](#setwindowtheme)|Araç ipucu penceresinin görsel stilini ayarlar.|
-|[CToolTipCtrl:: Update](#update)|Geçerli aracın yeniden çizilmesini zorlar.|
-|[CToolTipCtrl:: UpdateTipText](#updatetiptext)|Araç için araç ipucu metnini ayarlar.|
+|[CToolTipCtrl::Etkinleştir](#activate)|Araç ipucu denetimini etkinleştirir ve devre dışı bırakır.|
+|[CToolTipCtrl::AddTool](#addtool)|Bir aracı takım ucu denetimine kaydeder.|
+|[CToolTipCtrl::AdjustRect](#adjustrect)|Bir araç uç denetiminin metin görüntüleme dikdörtgeni ile pencere dikdörtgeni arasında dönüşüm sağlar.|
+|[CToolTipCtrl::Oluştur](#create)|Bir araç ucu denetimi oluşturur ve `CToolTipCtrl` bir nesneye bağlar.|
+|[CToolTipCtrl::CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleri ile bir araç ipucu denetimi oluşturur `CToolTipCtrl` ve bir nesneye bağlar.|
+|[CToolTipCtrl::DelTool](#deltool)|Bir aracı takım ucu denetiminden kaldırır.|
+|[CToolTipCtrl::GetBubbleSize](#getbubblesize)|Takım ucunun boyutunu alır.|
+|[CToolTipCtrl::GetCurrentTool](#getcurrenttool)|Geçerli araç ipucu denetiminin görüntülenebilen araç ipucu penceresinin boyutu, konumu ve metni gibi bilgileri alır.|
+|[CToolTipCtrl::GetDelayTime](#getdelaytime)|Şu anda bir araç ipucu denetimi için ayarlanan ilk, açılır pencere ve yeniden gösteri sürelerini alır.|
+|[CToolTipCtrl::GetMargin](#getmargin)|Araç ipucu penceresi için ayarlanan üst, sol, alt ve sağ kenar boşluklarını alır.|
+|[CToolTipCtrl::GetMaxTipWidth](#getmaxtipwidth)|Araç ucu penceresi için maksimum genişliği alır.|
+|[CToolTipCtrl::GetText](#gettext)|Bir araç ipucu denetiminin bir araç için koruduğu metni alır.|
+|[CToolTipCtrl::GetTipBkColor](#gettipbkcolor)|Araç ipucu penceresindearka plan rengini alır.|
+|[CToolTipCtrl::GetTipTextColor](#gettiptextcolor)|Araç ipucu penceresindeki metin rengini alır.|
+|[CToolTipCtrl::GetTitle](#gettitle)|Geçerli araç ipucu denetiminin başlığını alır.|
+|[CToolTipCtrl::GetToolCount](#gettoolcount)|Bir araç ucu denetimi tarafından tutulan araçların sayısını alır.|
+|[CToolTipCtrl::GetToolInfo](#gettoolinfo)|Bir araç ipucu denetiminin bir araç hakkında koruduğu bilgileri alır.|
+|[CToolTipCtrl::HitTest](#hittest)|Verilen aracın sınırlayıcı dikdörtgeniçinde olup olmadığını belirlemek için bir noktayı sınar. Bu ysa, araç hakkında bilgi alır.|
+|[CToolTipCtrl::Pop](#pop)|Görüntülenen araç ipucu pencereyi görünümden kaldırır.|
+|[CToolTipCtrl::Popup](#popup)|Geçerli Araç İpucu denetiminin son fare iletisinin koordinatlarında görüntülenmesine neden olur.|
+|[CToolTipCtrl::RelayEvent](#relayevent)|Fare iletisini işleme için bir araç ipucu denetimine geçirir.|
+|[CToolTipCtrl::SetDelayTime](#setdelaytime)|Bir araç ipucu denetimi için ilk, açılır pencere ve yeniden gösterme sürelerini ayarlar.|
+|[CToolTipCtrl::SetMargin](#setmargin)|Araç ucu penceresi için üst, sol, alt ve sağ kenar boşluklarını ayarlar.|
+|[CToolTipCtrl::SetMaxTipWidth](#setmaxtipwidth)|Araç ucu penceresi için maksimum genişliği ayarlar.|
+|[CToolTipCtrl::SetTipBkColor](#settipbkcolor)|Arka plan rengini bir araç ipucu penceresinde ayarlar.|
+|[CToolTipCtrl::SetTipTextColor](#settiptextcolor)|Araç ipucu penceresinde metin rengini ayarlar.|
+|[CToolTipCtrl::SetTitle](#settitle)|Araç ucuna standart bir simge ve başlık dizesi ekler.|
+|[CToolTipCtrl::SetToolInfo](#settoolinfo)|Bir araç ipucunun bir araç için koruduğu bilgileri ayarlar.|
+|[CToolTipCtrl::SetToolRect](#settoolrect)|Bir araç için yeni bir sınırlayıcı dikdörtgen ayarlar.|
+|[CToolTipCtrl::SetWindowTheme](#setwindowtheme)|Araç ucu penceresinin görsel stilini ayarlar.|
+|[CToolTipCtrl::Güncelleme](#update)|Geçerli aracı yeniden çizilmeye zorlar.|
+|[CToolTipCtrl::UpdateTipText](#updatetiptext)|Araç ipucu metnini bir araç için ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir "araç", bir pencerenin istemci alanındaki bir pencere veya denetim ya da uygulama tanımlı dikdörtgen alanı gibi bir pencere olur. Bir araç ipucu, yalnızca Kullanıcı imleci bir araç üzerine yerleştirdiği ve yaklaşık bir yarı yarım saniye boyunca ayrıldığında görüntülenen zaman gizli bir araç. Araç ipucu imlecin yakınında görünür ve Kullanıcı fare düğmesine tıkladığında veya imleci aracın dışına taşırken kaybolur.
+"Araç", alt pencere veya denetim gibi bir pencere veya pencerenin istemci alanı içindeki uygulama tanımlı dikdörtgen alandır. Bir araç ipucu çoğu zaman gizlenir, yalnızca kullanıcı imleci bir araca taktığında ve yaklaşık bir buçuk saniye boyunca orada bıraktığında görünür. Araç ipucu imlecin yanında görünür ve kullanıcı bir fare düğmesini tıklattığında veya imleci araçtan uzaklaştırdığında kaybolur.
 
-`CToolTipCtrl`, araç ipucunun başlangıç saatini ve süresini, araç ipucu metnini çevreleyen kenar boşluğu genişliklerini, araç ipucu penceresinin genişliğini ve araç ipucunun arka plan ve metin rengini denetlemek için işlevsellik sağlar. Tek bir araç ipucu denetimi, birden fazla araç için bilgi sağlayabilir.
+`CToolTipCtrl`araç ucunun başlangıç saatini ve süresini, araç ucu metnini çevreleyen kenar boşluğu genişliklerini, araç ipucu penceresinin genişliğini ve araç ucunun arka planını ve metin rengini denetleme işlevini sağlar. Tek bir araç ipucu denetimi birden fazla araç için bilgi sağlayabilir.
 
-`CToolTipCtrl` sınıfı, Windows ortak araç ipucu denetiminin işlevlerini sağlar. Bu denetim (ve bu nedenle `CToolTipCtrl` sınıfı) yalnızca Windows 95/98 ve Windows NT sürümleri 3,51 ve üzeri sürümlerde çalışan programlar için kullanılabilir.
+Sınıf, `CToolTipCtrl` Windows ortak araç ipucu denetiminin işlevselliğini sağlar. Bu denetim (ve `CToolTipCtrl` bu nedenle sınıf) yalnızca Windows 95/98 ve Windows NT sürümleri 3.51 ve sonraki sürümler altında çalışan programlar için kullanılabilir.
 
-Araç ipuçlarını etkinleştirme hakkında daha fazla bilgi için bkz. [Windows 'Daki araç Ipuçları CFrameWnd 'Den türetilmemiş](../../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md).
+Araç ipuçlarını etkinleştirme hakkında daha fazla bilgi için [CFrameWnd'den türetilmiş olmayan Windows'daki Araç İpuçları'na](../../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)bakın.
 
-`CToolTipCtrl`kullanma hakkında daha fazla bilgi için bkz. [. ve](../../mfc/controls-mfc.md) [CToolTipCtrl kullanma](../../mfc/using-ctooltipctrl.md).
+Kullanma `CToolTipCtrl`hakkında daha fazla bilgi [Using CToolTipCtrl](../../mfc/using-ctooltipctrl.md)için, [bkz.](../../mfc/controls-mfc.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 `CToolTipCtrl`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxcmn. h
+**Başlık:** afxcmn.h
 
-##  <a name="activate"></a>CToolTipCtrl:: Activate
+## <a name="ctooltipctrlactivate"></a><a name="activate"></a>CToolTipCtrl::Etkinleştir
 
-Araç ipucu denetimini etkinleştirmek veya devre dışı bırakmak için bu işlevi çağırın.
+Bir araç ipucu denetimini etkinleştirmek veya devre dışı bırakmak için bu işlevi arayın.
 
 ```
 void Activate(BOOL bActivate);
@@ -170,22 +170,22 @@ void Activate(BOOL bActivate);
 
 ### <a name="parameters"></a>Parametreler
 
-*Bacetkinleştir*<br/>
-Araç ipucu denetiminin etkinleştirileceğini veya devre dışı bırakılıp başlatılmayacağını belirtir.
+*bEtkinleştir*<br/>
+Araç uç denetiminin etkinleştirilip etkinleştirilmeyeceğini veya devre dışı bırakılıp atılmayacağını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Bacaktive* doğru ise, denetim etkinleştirilir; YANLıŞSA, devre dışı bırakılır.
+*bActivate* TRUE ise, denetim etkinleştirilir; FALSE ise devre dışı bırakılır.
 
-Bir araç ipucu denetimi etkin olduğunda, imleç denetimle kaydedilen bir araç üzerindeyken araç ipucu bilgileri görüntülenir; etkin olmadığında, imleç bir araç üzerindeyken bile araç ipucu bilgileri görünmez.
+Bir araç ipucu denetimi etkin olduğunda, imleç denetime kayıtlı bir araç tadığında araç ipucu bilgileri görüntülenir; etkin olmadığında, imleç bir araç üzerinde yken bile araç ipucu bilgileri görünmez.
 
 ### <a name="example"></a>Örnek
 
-  [CPropertySheet:: GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol)örneğine bakın.
+  CPropertySheet için örneğe [bakın:GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).
 
-##  <a name="addtool"></a>CToolTipCtrl:: AddTool
+## <a name="ctooltipctrladdtool"></a><a name="addtool"></a>CToolTipCtrl::AddTool
 
-Araç ipucu denetimiyle bir araç kaydeder.
+Bir aracı takım ucu denetimine kaydeder.
 
 ```
 BOOL AddTool(
@@ -203,41 +203,41 @@ BOOL AddTool(
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-Aracı içeren pencerenin işaretçisi.
+*Pwnd*<br/>
+Aracı içeren pencereyi işaretçi.
 
-*Nıdtext*<br/>
-Aracın metnini içeren dize kaynağının KIMLIĞI.
+*nIDText*<br/>
+Aracın metnini içeren dize kaynağının kimliği.
 
 *lpRectTool*<br/>
-Aracın sınırlayıcı dikdörtgeninin koordinatlarını içeren bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına yönelik işaretçi. Koordinatlar, *pWnd*tarafından tanımlanan pencerenin istemci alanının sol üst köşesine göre belirlenir.
+Aracın sınırlayıcı dikdörtgeninin koordinatlarını içeren bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi. *Koordinatlar, pWnd*ile tanımlanan pencerenin istemci alanının sol üst köşesine göredir.
 
 *nIDTool*<br/>
-Aracın KIMLIĞI.
+Aracın kimliği.
 
-*lpszText*<br/>
-Araç için metin işaretçisi. Bu parametre LPSTR_TEXTCALLBACK değerini içeriyorsa, TTN_NEEDTEXT bildirim iletileri, ' *ın gösterdiği pencerenin* üst öğesine gider.
+*lpszMetin*<br/>
+Araç için metne işaretçi. Bu parametre LPSTR_TEXTCALLBACK değeri içeriyorsa, TTN_NEEDTEXT bildirim iletileri *pWnd* işaret pencerenin üst gidin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*LpRectTool* ve *nIDTool* parametrelerinin her ikisi de geçerli olmalıdır veya *lpRectTool* null ise *nIDTool* 0 olmalıdır.
+*LpRectTool* ve *nIDTool* parametreleri her ikisi de geçerli olmalıdır, ya da *lpRectTool* NULL ise, *nIDTool* 0 olmalıdır.
 
-Bir araç ipucu denetimi, birden fazla araçla ilişkilendirilebilir. Araç ipucu denetimi ile bir araç kaydettirmek için bu işlevi çağırın, böylece araç ipucunda depolanan bilgiler imleç araç üzerindeyken görüntülenir.
+Bir araç ipucu denetimi birden fazla araçla ilişkilendirilebilir. İmleç araç üzerindeyken araç uç ucunda depolanan bilgilerin görüntülenmesi için bir aracı araç uç denetimine kaydetmek için bu işlevi arayın.
 
 > [!NOTE]
->  `AddTool`kullanarak bir araç ipucunu statik denetime ayarlayamazsınız.
+> Bir araç ipucunu statik denetime `AddTool`.'yi kullanarak ayarlayamazsınız.
 
 ### <a name="example"></a>Örnek
 
-  [CPropertySheet:: GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol)örneğine bakın.
+  CPropertySheet için örneğe [bakın:GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).
 
-##  <a name="adjustrect"></a>CToolTipCtrl:: AdjustRect
+## <a name="ctooltipctrladjustrect"></a><a name="adjustrect"></a>CToolTipCtrl::AdjustRect
 
-Araç ipucu denetiminin metin görüntüleme dikdörtgeni ve Pencere dikdörtgeni arasında dönüştürür.
+Araç ucu denetiminin metin görüntüleme dikdörtgeni ile pencere dikdörtgeni arasında dönüşüm sağlar.
 
 ```
 BOOL AdjustRect(
@@ -247,25 +247,25 @@ BOOL AdjustRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*LPRC*<br/>
-Bir araç ipucu penceresi dikdörtgeni ya da metin görüntüleme dikdörtgeni tutan bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına yönelik işaretçi.
+*lprc*<br/>
+Bir araç ucu pencere dikdörtgeni veya metin ekran dikdörtgentutan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı için işaretçi.
 
-*bDaha büyük*<br/>
-TRUE ise, bir metin görüntüleme dikdörtgeni belirtmek için *lprc* kullanılır ve ilgili pencere dikdörtgenini alır. YANLıŞSA, bir pencere dikdörtgeni belirtmek için *lprc* kullanılır ve ilgili metin görüntüleme dikdörtgenini alır.
+*bBüyük*<br/>
+TRUE ise, *lprc* bir metin ekran dikdörtgen belirtmek için kullanılır ve ilgili pencere dikdörtgenalır. FALSE ise, *lprc* bir pencere dikdörtgeni belirtmek için kullanılır ve ilgili metin ekran dikdörtgenalır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dikdörtgen başarıyla ayarlandıktan sonra sıfır dışı; Aksi takdirde 0.
+Dikdörtgen başarıyla ayarlanırsa sıfıra inme; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, bir araç ipucu denetiminin metin görüntüleme dikdörtgenini pencere dikdörtgenden veya belirli bir metin görüntüleme dikdörtgeni görüntülemesi gereken araç ipucu penceresi dikdörtgeninin bir görüntüsünü hesaplar.
+Bu üye işlev, bir araç ipucu denetiminin pencere dikdörtgeninden metin görüntüleme dikdörtgenini veya belirli bir metin görüntüleme dikdörtgenini görüntülemek için gereken araç ucu pencere dikdörtgenini hesaplar.
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_ADJUSTRECT](/windows/win32/Controls/ttm-adjustrect)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_ADJUSTRECT](/windows/win32/Controls/ttm-adjustrect)davranışını uygular.
 
-##  <a name="create"></a>CToolTipCtrl:: Create
+## <a name="ctooltipctrlcreate"></a><a name="create"></a>CToolTipCtrl::Oluştur
 
-Bir araç ipucu denetimi oluşturur ve bunu bir `CToolTipCtrl` nesnesine iliştirir.
+Bir araç ucu denetimi oluşturur ve `CToolTipCtrl` bir nesneye bağlar.
 
 ```
 virtual BOOL Create(CWnd* pParentWnd, DWORD dwStyle = 0);
@@ -274,37 +274,37 @@ virtual BOOL Create(CWnd* pParentWnd, DWORD dwStyle = 0);
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-Araç ipucu denetiminin üst penceresini, genellikle bir `CDialog`belirtir. NULL olmaması gerekir.
+Araç ucu denetiminin ana penceresini belirtir, `CDialog`genellikle . NULL olmamalıdır.
 
-*dwStyle*<br/>
-Araç ipucu denetiminin stilini belirtir. Daha fazla bilgi için **açıklamalar** bölümüne bakın.
+*Dwstyle*<br/>
+Takım ucu denetiminin stilini belirtir. Daha fazla bilgi için **Açıklamalar** bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CToolTipCtrl` nesnesi başarıyla oluşturulduysa sıfır dışı; Aksi takdirde 0.
+Nesne başarıyla `CToolTipCtrl` oluşturulursa sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CToolTipCtrl` iki adımda oluşturursunuz. İlk olarak, `CToolTipCtrl` nesnesini oluşturmak için oluşturucuyu çağırın ve sonra araç ipucu denetimini oluşturmak ve `CToolTipCtrl` nesnesine eklemek için `Create` çağırın.
+İki adımda bir `CToolTipCtrl` yapı inşa e. Önce `CToolTipCtrl` nesneyi oluşturmak için oluşturucuyu çağırın, ardından araç ucu denetimini oluşturmak ve `Create` `CToolTipCtrl` nesneye iliştirmek için çağırın.
 
-*DwStyle* parametresi [pencere stillerinin](../../mfc/reference/styles-used-by-mfc.md#window-styles)herhangi bir birleşimi olabilir. Ayrıca, bir araç ipucu denetiminde sınıfa özgü iki stil vardır: TTS_ALWAYSTIP ve TTS_NOPREFIX.
+*dwStyle* parametresi [Pencere Stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles)herhangi bir kombinasyonu olabilir. Buna ek olarak, bir araç ipucu denetimi iki sınıfa özgü stilleri vardır: TTS_ALWAYSTIP ve TTS_NOPREFIX.
 
-|Stil|Açıklama|
+|Stil|Anlamı|
 |-----------|-------------|
-|TTS_ALWAYSTIP|Araç ipucu denetiminin sahip penceresinin etkin veya devre dışı olmasına bakılmaksızın, imleç bir araç üzerindeyken araç ipucunun görüneceğini belirtir. Bu stil olmadan araç ipucu denetimi, aracın sahip penceresi etkin olduğunda, ancak etkin olmadığında görünmez.|
-|TTS_NOPREFIX|Bu stil, sistemin bir dizeden ampersan (&) karakterini almasını engeller. Bir araç ipucu denetiminin TTS_NOPREFIX stili yoksa, sistem ve bir uygulamanın aynı dizeyi bir menü öğesi ile aynı dizeyi ve araç ipucu denetiminde metin olarak kullanmasına izin vererek, sistem, ve karakterlerini otomatik olarak kaldırır.|
+|TTS_ALWAYSTIP|İmleç bir araç üzerindeyken, takım ipucu denetiminin sahibipenceresietkin veya etkin olmayan olup olmadığına bakılmaksızın, takım ucunun görüntülemeyeceğini belirtir. Bu stil olmadan, aracın sahibi penceresi etkin olduğunda araç ipucu denetimi görüntülenir, ancak etkin olmadığında görünmez.|
+|TTS_NOPREFIX|Bu stil, sistemin ampersand (&) karakterini bir dizeden sıyırmasını önler. Bir araç ipucu denetimiTTS_NOPREFIX stiline sahip değilse, sistem ampersand karakterleri otomatik olarak şeritler ve bir uygulamanın hem menü öğesi hem de araç ipucu denetiminde metin olarak aynı dizeyi kullanmasına olanak sağlar.|
 
-Araç ipucu denetimi, denetimi oluştururken belirttiğinize bakılmaksızın WS_POPUP ve WS_EX_TOOLWINDOW pencere stillerine sahiptir.
+Bir araç ipucu denetimi, denetimi oluştururken belirtip belirtmediğinize bakılmaksızın, WS_POPUP ve WS_EX_TOOLWINDOW pencere stillerine sahiptir.
 
-Genişletilmiş Windows stilleriyle bir araç ipucu denetimi oluşturmak için `Create`yerine [CToolTipCtrl:: CreateEx](#createex) çağırın.
+Genişletilmiş windows stilleriile bir araç ipucu denetimi oluşturmak için [CToolTipCtrl::CreateEx](#createex) yerine `Create`.
 
 ### <a name="example"></a>Örnek
 
-  [CPropertySheet:: GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol)örneğine bakın.
+  CPropertySheet için örneğe [bakın:GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).
 
-##  <a name="createex"></a>CToolTipCtrl:: CreateEx
+## <a name="ctooltipctrlcreateex"></a><a name="createex"></a>CToolTipCtrl::CreateEx
 
-Bir denetim (alt pencere) oluşturur ve `CToolTipCtrl` nesnesiyle ilişkilendirir.
+Denetim (alt pencere) oluşturur ve nesneyle `CToolTipCtrl` ilişkilendirin.
 
 ```
 virtual BOOL CreateEx(
@@ -316,25 +316,25 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-Denetimin üst öğesi olan pencerenin işaretçisi.
+Denetimin üst öğesi olan pencereye işaretçi.
 
-*dwStyle*<br/>
-Araç ipucu denetiminin stilini belirtir. Daha fazla bilgi için bkz. [oluşturma](#create) konusunun **açıklamalar** bölümü.
+*Dwstyle*<br/>
+Takım ucu denetiminin stilini belirtir. Daha fazla bilgi için [Oluştur'un](#create) **Açıklamalar** bölümüne bakın.
 
 *dwStyleEx*<br/>
-Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Için *dwExStyle* parametresi.
+Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerilistesi için Windows SDK'daki [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) için *dwExStyle* parametreye bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır değilse 0.
+Nonzero aksi takdirde başarılı 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows genişletilmiş stil ön yüzü **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için `Create` yerine `CreateEx` kullanın.
+Windows `CreateEx` genişletilmiş `Create` stil önsöz **WS_EX_** tarafından belirtilen genişletilmiş Windows stilleri uygulamak yerine kullanın.
 
-##  <a name="ctooltipctrl"></a>CToolTipCtrl:: CToolTipCtrl
+## <a name="ctooltipctrlctooltipctrl"></a><a name="ctooltipctrl"></a>CToolTipCtrl::CToolTipCtrl
 
-`CToolTipCtrl` nesnesi oluşturur.
+Bir `CToolTipCtrl` nesne inşa eder.
 
 ```
 CToolTipCtrl();
@@ -342,15 +342,15 @@ CToolTipCtrl();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnesini oluşturduktan sonra `Create` çağırmanız gerekir.
+Nesneyi `Create` yaptıktan sonra aramalısınız.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCControlLadenDialog#74](../../mfc/codesnippet/cpp/ctooltipctrl-class_1.h)]
 
-##  <a name="deltool"></a>CToolTipCtrl::D elTool
+## <a name="ctooltipctrldeltool"></a><a name="deltool"></a>CToolTipCtrl::DelTool
 
-Bir araç ipucu denetimi tarafından desteklenen araçlar koleksiyonundan *pWnd* ve *nIDTool* tarafından belirtilen aracı kaldırır.
+*PWnd* ve *nIDTool* tarafından belirtilen aracı bir araç ucu denetimi tarafından desteklenen araçların koleksiyonundan kaldırır.
 
 ```
 void DelTool(
@@ -360,15 +360,15 @@ void DelTool(
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-Aracı içeren pencerenin işaretçisi.
+*Pwnd*<br/>
+Aracı içeren pencereyi işaretçi.
 
 *nIDTool*<br/>
-Aracın KIMLIĞI.
+Aracın kimliği.
 
-##  <a name="getbubblesize"></a>CToolTipCtrl:: GetBubbleSize
+## <a name="ctooltipctrlgetbubblesize"></a><a name="getbubblesize"></a>CToolTipCtrl::GetBubbleSize
 
-Araç ipucunun boyutunu alır.
+Takım ucunun boyutunu alır.
 
 ```
 CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
@@ -377,19 +377,19 @@ CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpToolInfo*<br/>
-Araç ipucunun [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına yönelik bir işaretçi.
+Araç ucunun [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç ipucunun boyutu.
+Takım ucunun boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_GETBUBBLESIZE](/windows/win32/Controls/ttm-getbubblesize)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/Controls/ttm-getbubblesize)iletisinin TTM_GETBUBBLESIZE davranışını uygular.
 
-##  <a name="getcurrenttool"></a>CToolTipCtrl:: GetCurrentTool
+## <a name="ctooltipctrlgetcurrenttool"></a><a name="getcurrenttool"></a>CToolTipCtrl::GetCurrentTool
 
-Geçerli araç ipucu denetimi tarafından gösterilen araç ipucu penceresinin boyut, konum ve metin gibi bilgileri alır.
+Geçerli araç ipucu denetimi tarafından görüntülenen araç ipucu penceresinin boyutu, konumu ve metni gibi bilgileri alır.
 
 ```
 BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
@@ -399,25 +399,25 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*lpToolInfo*|dışı Geçerli araç ipucu penceresi hakkında bilgi alan [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına yönelik işaretçi.|
+|*lpToolInfo*|[çıkış] Geçerli araç ipucu penceresi hakkında bilgi alan bir [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısıiçin işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bilgiler başarıyla alınırsa doğru; Aksi takdirde, FALSE.
+Bilgiler başarıyla alınırsa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [TTM_GETCURRENTTOOL](/windows/win32/Controls/ttm-getcurrenttool) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [TTM_GETCURRENTTOOL](/windows/win32/Controls/ttm-getcurrenttool) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, geçerli araç ipucu penceresi hakkındaki bilgileri alır.
+Aşağıdaki kod örneği, geçerli araç ipucu penceresi hakkında bilgi alır.
 
 [!code-cpp[NVC_MFC_CToolBarCtrl_s1#6](../../mfc/reference/codesnippet/cpp/ctooltipctrl-class_2.cpp)]
 
-##  <a name="getdelaytime"></a>CToolTipCtrl:: GetDelayTime
+## <a name="ctooltipctrlgetdelaytime"></a><a name="getdelaytime"></a>CToolTipCtrl::GetDelayTime
 
-Bir araç ipucu denetimi için ilk, açılan ve daha sonra belirlenen süreleri alır.
+Bir araç ipucu denetimi için şu anda ayarlanan ilk, açılır pencere ve yeniden gösteri sürelerini alır.
 
 ```
 int GetDelayTime(DWORD dwDuration) const;
@@ -425,26 +425,26 @@ int GetDelayTime(DWORD dwDuration) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDuration*<br/>
+*dwSüre süresi*<br/>
 Hangi süre değerinin alınacağını belirten bayrak. Bu parametre aşağıdaki değerlerden biri olabilir:
 
-- TTDT_AUTOPOP, işaretçinin bir aracın sınırlayıcı dikdörtgeni içinde sabit olması durumunda araç ipucu penceresinin görünür kalacağı sürenin uzunluğunu alma.
+- TTDT_AUTOPOP İşaretçi bir aracın sınırlayan dikdörtgeninde sabitse, takım ipucu penceresinin görünür kaldığı süreyi alın.
 
-- Araç ipucu penceresi görüntülenmeden önce bir aracın sınırlayıcı dikdörtgeni içinde işaretçinin sabit kalması gereken sürenin uzunluğunu almak TTDT_INITIAL.
+- TTDT_INITIAL Takım ipucu penceresi görünmeden önce işaretçinin bir aracın sınırlayıcı dikdörtgeninde sabit kalması gereken süreyi alın.
 
-- TTDT_RESHOW, işaretçi bir araçtan diğerine taşındığı sırada sonraki araç ipucu pencerelerinin görünmesi için gereken sürenin uzunluğunu alır.
+- TTDT_RESHOW İşaretçi bir araçtan diğerine taşınırken sonraki araç ucu pencerelerinin görünmesi için gereken süreyi alın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen gecikme süresi (milisaniye)
+Belirtilen gecikme süresi, milisaniye cinsinden
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_GETDELAYTIME](/windows/win32/Controls/ttm-getdelaytime)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_GETDELAYTIME](/windows/win32/Controls/ttm-getdelaytime)davranışını uygular.
 
-##  <a name="getmargin"></a>CToolTipCtrl:: GetMargin
+## <a name="ctooltipctrlgetmargin"></a><a name="getmargin"></a>CToolTipCtrl::GetMargin
 
-Araç ipucu penceresi için üst, sol, alt ve sağ kenar boşluğu kümesini alır.
+Araç ucu penceresi için ayarlanan üst, sol, alt ve sağ kenar boşluklarını alır.
 
 ```
 void GetMargin(LPRECT lprc) const;
@@ -452,23 +452,23 @@ void GetMargin(LPRECT lprc) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*LPRC*<br/>
-Kenar boşluğu bilgilerini alacak `RECT` yapısının adresi. [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısının üyeleri bir sınırlayıcı dikdörtgen tanımlamaz. Bu iletinin amacı için yapı üyeleri aşağıdaki gibi yorumlanır:
+*lprc*<br/>
+Kenar boşluğu `RECT` bilgilerini alacak bir yapının adresi. [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısının üyeleri sınırlayıcı bir dikdörtgen tanımlamaz. Bu iletinin amacı için yapı üyeleri aşağıdaki gibi yorumlanır:
 
-|Üye|İmle|
+|Üye|Gösterimi|
 |------------|--------------------|
-|`top`|En üst sınır ve araç ipucu metninin üst ve piksel cinsinden uzaklığı.|
-|`left`|Sol kenarlık ve ipucu metninin sol ucu arasındaki uzaklık (piksel cinsinden).|
-|`bottom`|Alt kenarlık ve ipucu metninin alt kenar arasındaki mesafe (piksel cinsinden).|
-|`right`|Sağ kenarlık ve ipucu metninin sağ ucu arasındaki uzaklık (piksel cinsinden).|
+|`top`|Üst kenarlık ile araç ucu metninin üst kısmı arasındaki pikseller arasındaki mesafe.|
+|`left`|Sol kenarlık ile uç metninin sol ucu arasındaki mesafe, piksel olarak.|
+|`bottom`|Piksellerde alt kenarlık ile uç metninin alt kısmı arasındaki mesafe.|
+|`right`|Piksellerde sağ kenarlık ile uç metninin sağ ucu arasındaki mesafe.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_GETMARGIN](/windows/win32/Controls/ttm-getmargin)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_GETMARGIN](/windows/win32/Controls/ttm-getmargin)davranışını uygular.
 
-##  <a name="getmaxtipwidth"></a>CToolTipCtrl:: GetMaxTipWidth
+## <a name="ctooltipctrlgetmaxtipwidth"></a><a name="getmaxtipwidth"></a>CToolTipCtrl::GetMaxTipWidth
 
-Bir araç ipucu penceresi için en büyük genişliği alır.
+Araç ucu penceresi için maksimum genişliği alır.
 
 ```
 int GetMaxTipWidth() const;
@@ -476,15 +476,15 @@ int GetMaxTipWidth() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir araç ipucu penceresi için maksimum genişlik.
+Araç ucu penceresi için maksimum genişlik.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_GETMAXTIPWIDTH](/windows/win32/Controls/ttm-getmaxtipwidth)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_GETMAXTIPWIDTH](/windows/win32/Controls/ttm-getmaxtipwidth)davranışını uygular.
 
-##  <a name="gettext"></a>CToolTipCtrl:: GetText
+## <a name="ctooltipctrlgettext"></a><a name="gettext"></a>CToolTipCtrl::GetText
 
-Araç ipucu denetiminin bir araç için sakladığı metni alır.
+Bir araç ipucu denetiminin bir araç için koruduğu metni alır.
 
 ```
 void GetText(
@@ -495,22 +495,22 @@ void GetText(
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*<br/>
-Aracın metnini alan `CString` nesnesine başvuru.
+*Str*<br/>
+Aracın metnini alan bir `CString` nesneye başvuru.
 
-*pWnd*<br/>
-Aracı içeren pencerenin işaretçisi.
+*Pwnd*<br/>
+Aracı içeren pencereyi işaretçi.
 
 *nIDTool*<br/>
-Aracın KIMLIĞI.
+Aracın kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PWnd* ve *nIDTool* parametreleri, aracı belirler. Bu araç daha önce `CToolTipCtrl::AddTool`önceki bir çağrısıyla araç ipucu denetimiyle kaydedilmişse, *Str* parametresi tarafından başvurulan nesne araç metnine atanır.
+*pWnd* ve *nIDTool* parametreleri aracı tanımlar. Bu araç daha önce bir önceki arama ile araç `CToolTipCtrl::AddTool`ucu denetimine kaydedilmişse, *str* parametresi tarafından başvurulan nesneye aracın metni atanır.
 
-##  <a name="gettipbkcolor"></a>CToolTipCtrl:: GetTipBkColor
+## <a name="ctooltipctrlgettipbkcolor"></a><a name="gettipbkcolor"></a>CToolTipCtrl::GetTipBkColor
 
-Araç İpucu penceresinde arka plan rengini alır.
+Araç ipucu penceresindearka plan rengini alır.
 
 ```
 COLORREF GetTipBkColor() const;
@@ -518,15 +518,15 @@ COLORREF GetTipBkColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arka plan rengini temsil eden [colorref](/windows/win32/gdi/colorref) değeri.
+Arka plan rengini temsil eden bir [COLORREF](/windows/win32/gdi/colorref) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_GETTIPBKCOLOR](/windows/win32/Controls/ttm-gettipbkcolor)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_GETTIPBKCOLOR](/windows/win32/Controls/ttm-gettipbkcolor)davranışını uygular.
 
-##  <a name="gettiptextcolor"></a>CToolTipCtrl:: GetTipTextColor
+## <a name="ctooltipctrlgettiptextcolor"></a><a name="gettiptextcolor"></a>CToolTipCtrl::GetTipTextColor
 
-Araç İpucu penceresinde metin rengini alır.
+Araç ipucu penceresindeki metin rengini alır.
 
 ```
 COLORREF GetTipTextColor() const;
@@ -534,13 +534,13 @@ COLORREF GetTipTextColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Metin rengini temsil eden bir [colorref](/windows/win32/gdi/colorref) değeri.
+Metin rengini temsil eden bir [COLORREF](/windows/win32/gdi/colorref) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_GETTIPTEXTCOLOR](/windows/win32/Controls/ttm-gettiptextcolor)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/Controls/ttm-gettiptextcolor)iletisi TTM_GETTIPTEXTCOLOR davranışını uygular.
 
-##  <a name="gettitle"></a>CToolTipCtrl:: GetTitle
+## <a name="ctooltipctrlgettitle"></a><a name="gettitle"></a>CToolTipCtrl::GetTitle
 
 Geçerli araç ipucu denetiminin başlığını alır.
 
@@ -552,15 +552,15 @@ void GetTitle(PTTGETTITLE pttgt) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pttgt*|dışı Araç Ipucu denetimiyle ilgili bilgileri içeren bir [Ttgettitle](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) yapısına yönelik işaretçi. Bu yöntem döndüğünde, [Ttgettitle](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) yapısının *pszTitle* üyesi, başlığın metnini işaret eder.|
+|*pttgt*|[çıkış] ToolTip denetimi hakkında bilgi içeren bir [TTGETTITLE](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) yapısıiçin işaretçi. Bu yöntem döndürdüğünde, [TTGETTITLE](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) yapısının *pszTitle* üyesi başlığın metnini işaret edir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [TTM_GETTITLE](/windows/win32/Controls/ttm-gettitle) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [TTM_GETTITLE](/windows/win32/Controls/ttm-gettitle) iletisini gönderir.
 
-##  <a name="gettoolcount"></a>CToolTipCtrl:: GetToolCount
+## <a name="ctooltipctrlgettoolcount"></a><a name="gettoolcount"></a>CToolTipCtrl::GetToolCount
 
-Araç ipucu denetimiyle kaydedilen araçların sayısını alır.
+Araç ipucu denetimine kayıtlı araçların sayısını alır.
 
 ```
 int GetToolCount() const;
@@ -568,11 +568,11 @@ int GetToolCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç ipucu denetimine kayıtlı bir araç sayısı.
+Araç uç denetimine kayıtlı araç sayısı.
 
-##  <a name="gettoolinfo"></a>CToolTipCtrl:: GetToolInfo
+## <a name="ctooltipctrlgettoolinfo"></a><a name="gettoolinfo"></a>CToolTipCtrl::GetToolInfo
 
-Araç ipucu denetiminin bir araç hakkında koruduğu bilgileri alır.
+Bir araç ipucu denetiminin bir araç hakkında koruduğu bilgileri alır.
 
 ```
 BOOL GetToolInfo(
@@ -583,26 +583,26 @@ BOOL GetToolInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*TOOLINFO*<br/>
-Aracın metnini alan `TOOLINFO` nesnesine başvuru.
+*Toolınfo*<br/>
+Aracın metnini alan bir `TOOLINFO` nesneye başvuru.
 
-*pWnd*<br/>
-Aracı içeren pencerenin işaretçisi.
+*Pwnd*<br/>
+Aracı içeren pencereyi işaretçi.
 
 *nIDTool*<br/>
-Aracın KIMLIĞI.
+Aracın kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısının `hwnd` ve `uId` üyeleri, *CToolInfo* tarafından başvurulan, aracı belirler. Bu araç, önceki bir `AddTool`çağrısıyla araç ipucu denetimiyle kaydedilmişse, `TOOLINFO` yapısı araçla ilgili bilgilerle doldurulur.
+`hwnd` *CToolInfo* tarafından başvurulan [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısının üyeleri `uId` aracı tanımlar. Bu araç önceki bir arama ile araç ucu `AddTool`denetimine `TOOLINFO` kaydedilmişse, yapı araç hakkında bilgilerle doldurulur.
 
-##  <a name="hittest"></a>CToolTipCtrl:: HitTest
+## <a name="ctooltipctrlhittest"></a><a name="hittest"></a>CToolTipCtrl::HitTest
 
-Bir noktayı, belirtilen aracın sınırlayıcı dikdörtgeni içinde olup olmadığını ve bu durumda araç hakkında bilgi almayı anlamak için sınar.
+Verilen aracın sınırlayıcı dikdörtgeniçinde olup olmadığını belirlemek ve varsa araç hakkında bilgi almak için bir noktayı sınar.
 
 ```
 BOOL HitTest(
@@ -613,24 +613,24 @@ BOOL HitTest(
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-Aracı içeren pencerenin işaretçisi.
+*Pwnd*<br/>
+Aracı içeren pencereyi işaretçi.
 
-*yönergelerinin*<br/>
-Sınanacak noktanın koordinatlarını içeren `CPoint` nesnesine yönelik işaretçi.
+*Pt*<br/>
+Test edilecek `CPoint` noktanın koordinatlarını içeren bir nesneye işaretçi.
 
 *lpToolInfo*<br/>
-Araç hakkında bilgi içeren [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına yönelik işaretçi.
+Araç hakkında bilgi içeren [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İsabet-test bilgileri tarafından belirtilen nokta aracın sınırlayıcı dikdörtgeni içindeyse sıfır dışı olur; Aksi takdirde 0.
+Isabet testi bilgilerinin belirttiği nokta aracın sınırlayıcı dikdörtgenindeyse sıfıra inmez; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, sıfır dışında bir değer döndürürse, *lpToolInfo* tarafından işaret edilen yapı, dikdörtgeni işaret eden dikdörtgenin içindeki bilgilerle doldurulur.
+Bu işlev sıfır olmayan bir değer döndürürse, *lpToolInfo* tarafından işaret edilen yapı, dikdörtgeni noktası nın bulunduğu araçla doldurulur.
 
-`TTHITTESTINFO` yapısı aşağıdaki gibi tanımlanır:
+Yapı `TTHITTESTINFO` aşağıdaki gibi tanımlanır:
 
 ```cpp
 typedef struct _TT_HITTESTINFO { // tthti
@@ -642,19 +642,19 @@ typedef struct _TT_HITTESTINFO { // tthti
 
 - `hwnd`
 
-   Aracın tanıtıcısını belirtir.
+   Aracın tutamacını belirtir.
 
 - `pt`
 
-   Nokta aracın sınırlayıcı dikdörtgeninde ise bir noktanın koordinatlarını belirtir.
+   Nokta aracın sınırlayıcı dikdörtgenindeyse bir noktanın koordinatlarını belirtir.
 
 - `ti`
 
-   Araçla ilgili bilgiler. `TOOLINFO` yapısı hakkında daha fazla bilgi için bkz. [CToolTipCtrl:: GetToolInfo](#gettoolinfo).
+   Araç hakkında bilgi. `TOOLINFO` Yapı hakkında daha fazla bilgi için [Bkz. CToolTipCtrl::GetToolInfo](#gettoolinfo).
 
-##  <a name="pop"></a>CToolTipCtrl::P op
+## <a name="ctooltipctrlpop"></a><a name="pop"></a>CToolTipCtrl::Pop
 
-Görüntülenmiş bir araç ipucu penceresini görünümden kaldırır.
+Görüntülenen araç ipucu penceresini görünümden kaldırır.
 
 ```
 void Pop();
@@ -662,11 +662,11 @@ void Pop();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_POP](/windows/win32/Controls/ttm-pop)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/Controls/ttm-pop)iletisinin TTM_POP davranışını uygular.
 
-##  <a name="popup"></a>CToolTipCtrl::P opup
+## <a name="ctooltipctrlpopup"></a><a name="popup"></a>CToolTipCtrl::Popup
 
-Geçerli araç ipucu denetiminin son fare iletisinin koordinatlarına göre görüntülenmesine neden olur.
+Geçerli araç ipucu denetiminin son fare iletisinin koordinatlarında görüntülenmesine neden olur.
 
 ```
 void Popup();
@@ -674,7 +674,7 @@ void Popup();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [TTM_POPUP](/windows/win32/Controls/ttm-popup) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [TTM_POPUP](/windows/win32/Controls/ttm-popup) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
@@ -682,9 +682,9 @@ Aşağıdaki kod örneği bir araç ipucu penceresi görüntüler.
 
 [!code-cpp[NVC_MFC_CToolBarCtrl_s1#7](../../mfc/reference/codesnippet/cpp/ctooltipctrl-class_3.cpp)]
 
-##  <a name="relayevent"></a>CToolTipCtrl:: RelayEvent
+## <a name="ctooltipctrlrelayevent"></a><a name="relayevent"></a>CToolTipCtrl::RelayEvent
 
-İşleme için bir fare iletisini bir araç ipucu denetimine geçirir.
+Fare iletisini işleme için bir araç ipucu denetimine geçirir.
 
 ```
 void RelayEvent(LPMSG lpMsg);
@@ -693,13 +693,13 @@ void RelayEvent(LPMSG lpMsg);
 ### <a name="parameters"></a>Parametreler
 
 *lpMsg*<br/>
-Geçiş yapılacak iletiyi içeren bir [msg](/windows/win32/api/winuser/ns-winuser-msg) yapısına yönelik işaretçi.
+İletiyi içeren bir [MSG](/windows/win32/api/winuser/ns-winuser-msg) yapısına işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç ipucu denetimi yalnızca `RelayEvent`tarafından kendisine gönderilen aşağıdaki iletileri işler:
+Bir araç ipucu denetimi yalnızca aşağıdaki iletileri `RelayEvent`işler:
 
-|WM_LBUTTONDOWN|WM_MOUSEMOVE|
+|WM_LBUTTONDOWN|Wm_mousemove|
 |---------------------|-------------------|
 |WM_LBUTTONUP|WM_RBUTTONDOWN|
 |WM_MBUTTONDOWN|WM_RBUTTONUP|
@@ -707,11 +707,11 @@ Araç ipucu denetimi yalnızca `RelayEvent`tarafından kendisine gönderilen aş
 
 ### <a name="example"></a>Örnek
 
-  [CPropertySheet:: GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol)örneğine bakın.
+  CPropertySheet için örneğe [bakın:GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).
 
-##  <a name="setdelaytime"></a>CToolTipCtrl:: SetDelayTime
+## <a name="ctooltipctrlsetdelaytime"></a><a name="setdelaytime"></a>CToolTipCtrl::SetDelayTime
 
-Araç ipucu denetiminin gecikme süresini ayarlar.
+Bir araç ipucu denetimi için gecikme süresini ayarlar.
 
 ```
 void SetDelayTime(UINT nDelay);
@@ -723,22 +723,22 @@ void SetDelayTime(
 
 ### <a name="parameters"></a>Parametreler
 
-*nDelay*<br/>
-Yeni gecikme süresini milisaniye olarak belirtir.
+*nGecikme*<br/>
+Yeni gecikme süresini milisaniye cinsinden belirtir.
 
-*dwDuration*<br/>
-Hangi süre değerinin alınacağını belirten bayrak. Geçerli değerlerin açıklaması için bkz. [CToolTipCtrl:: GetDelayTime](#getdelaytime) .
+*dwSüre süresi*<br/>
+Hangi süre değerinin alınacağını belirten bayrak. Geçerli değerlerin açıklaması için [CToolTipCtrl::GetDelayTime'a](#getdelaytime) bakın.
 
-*ıtime*<br/>
-Belirtilen gecikme süresi (milisaniye cinsinden).
+*iTime*<br/>
+Belirtilen gecikme süresi, milisaniye cinsinden.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gecikme süresi, araç ipucu penceresi görüntülenmeden önce imlecin bir araç üzerinde kalması gereken süredir. Varsayılan gecikme süresi 500 milisaniyedir.
+Gecikme süresi, imlecin araç ipucu penceresi görünmeden önce bir araçta kalması gereken süredir. Varsayılan gecikme süresi 500 milisaniyedir.
 
-##  <a name="setmargin"></a>CToolTipCtrl:: SetMargin
+## <a name="ctooltipctrlsetmargin"></a><a name="setmargin"></a>CToolTipCtrl::SetMargin
 
-Araç ipucu penceresi için üst, sol, alt ve sağ kenar boşluklarını ayarlar.
+Araç ucu penceresi için üst, sol, alt ve sağ kenar boşluklarını ayarlar.
 
 ```
 void SetMargin(LPRECT lprc);
@@ -746,16 +746,16 @@ void SetMargin(LPRECT lprc);
 
 ### <a name="parameters"></a>Parametreler
 
-*LPRC*<br/>
-Ayarlanacak kenar boşluğu bilgilerini içeren `RECT` yapısının adresi. `RECT` yapısının üyeleri bir sınırlayıcı dikdörtgen tanımlamaz. Kenar boşluğu bilgilerinin açıklaması için bkz. [CToolTipCtrl:: GetMargin](#getmargin) .
+*lprc*<br/>
+Ayarlanacak `RECT` kenar boşluğu bilgilerini içeren bir yapının adresi. Yapının `RECT` üyeleri sınırlayıcı bir dikdörtgen tanımlamaz. Bkz. [CToolTipCtrl::Marj](#getmargin) bilgilerinin açıklaması için Margin alın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_SETMARGIN](/windows/win32/Controls/ttm-setmargin)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_SETMARGIN](/windows/win32/Controls/ttm-setmargin)davranışını uygular.
 
-##  <a name="setmaxtipwidth"></a>CToolTipCtrl:: SetMaxTipWidth
+## <a name="ctooltipctrlsetmaxtipwidth"></a><a name="setmaxtipwidth"></a>CToolTipCtrl::SetMaxTipWidth
 
-Bir araç ipucu penceresi için en büyük genişliği ayarlar.
+Araç ucu penceresi için maksimum genişliği ayarlar.
 
 ```
 int SetMaxTipWidth(int iWidth);
@@ -763,20 +763,20 @@ int SetMaxTipWidth(int iWidth);
 
 ### <a name="parameters"></a>Parametreler
 
-*ıwidth*<br/>
-Ayarlanacak en büyük araç ipucu pencere genişliği.
+*iGenişlik*<br/>
+Ayarlanacak maksimum araç ucu pencere genişliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki en yüksek ipucu genişliği.
+Önceki maksimum uç genişliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_SETMAXTIPWIDTH](/windows/win32/Controls/ttm-setmaxtipwidth)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_SETMAXTIPWIDTH](/windows/win32/Controls/ttm-setmaxtipwidth)davranışını uygular.
 
-##  <a name="settipbkcolor"></a>CToolTipCtrl:: SetTipBkColor
+## <a name="ctooltipctrlsettipbkcolor"></a><a name="settipbkcolor"></a>CToolTipCtrl::SetTipBkColor
 
-Araç İpucu penceresinde arka plan rengini ayarlar.
+Arka plan rengini bir araç ipucu penceresinde ayarlar.
 
 ```
 void SetTipBkColor(COLORREF clr);
@@ -784,16 +784,16 @@ void SetTipBkColor(COLORREF clr);
 
 ### <a name="parameters"></a>Parametreler
 
-*clr*<br/>
+*Clr*<br/>
 Yeni arka plan rengi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_SETTIPBKCOLOR](/windows/win32/Controls/ttm-settipbkcolor)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/Controls/ttm-settipbkcolor)iletisinin TTM_SETTIPBKCOLOR davranışını uygular.
 
-##  <a name="settiptextcolor"></a>CToolTipCtrl:: SetTipTextColor
+## <a name="ctooltipctrlsettiptextcolor"></a><a name="settiptextcolor"></a>CToolTipCtrl::SetTipTextColor
 
-Bir araç ipucu penceresinde metin rengini ayarlar.
+Araç ipucu penceresinde metin rengini ayarlar.
 
 ```
 void SetTipTextColor(COLORREF clr);
@@ -801,16 +801,16 @@ void SetTipTextColor(COLORREF clr);
 
 ### <a name="parameters"></a>Parametreler
 
-*clr*<br/>
+*Clr*<br/>
 Yeni metin rengi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_SETTIPTEXTCOLOR](/windows/win32/Controls/ttm-settiptextcolor)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_SETTIPTEXTCOLOR](/windows/win32/Controls/ttm-settiptextcolor)davranışını uygular.
 
-##  <a name="settitle"></a>CToolTipCtrl:: SetTitle
+## <a name="ctooltipctrlsettitle"></a><a name="settitle"></a>CToolTipCtrl::SetTitle
 
-Araç ipucuna standart bir simge ve başlık dizesi ekler.
+Araç ucuna standart bir simge ve başlık dizesi ekler.
 
 ```
 BOOL SetTitle(
@@ -820,23 +820,23 @@ BOOL SetTitle(
 
 ### <a name="parameters"></a>Parametreler
 
-*UCON*<br/>
-Windows SDK [TTM_SETTITLE](/windows/win32/Controls/ttm-settitle) *simgeye* bakın.
+*uIcon*<br/>
+Windows SDK'daki [TTM_SETTITLE](/windows/win32/Controls/ttm-settitle) *simgesine* bakın.
 
 *lpstrTitle*<br/>
-Başlık dizesinin işaretçisi.
+Başlık dizesine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [TTM_SETTITLE](/windows/win32/Controls/ttm-settitle)davranışını uygular.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_SETTITLE](/windows/win32/Controls/ttm-settitle)davranışını uygular.
 
-##  <a name="settoolinfo"></a>CToolTipCtrl:: SetToolInfo
+## <a name="ctooltipctrlsettoolinfo"></a><a name="settoolinfo"></a>CToolTipCtrl::SetToolInfo
 
-Bir araç ipucunun bir araç için sakladığı bilgileri ayarlar.
+Bir araç ipucunun bir araç için koruduğu bilgileri ayarlar.
 
 ```
 void SetToolInfo(LPTOOLINFO lpToolInfo);
@@ -845,11 +845,11 @@ void SetToolInfo(LPTOOLINFO lpToolInfo);
 ### <a name="parameters"></a>Parametreler
 
 *lpToolInfo*<br/>
-Ayarlanacak bilgileri belirten [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına yönelik bir işaretçi.
+Ayarlayabilmek için bilgileri belirten bir [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına işaretçi.
 
-##  <a name="settoolrect"></a>CToolTipCtrl:: SetToolRect
+## <a name="ctooltipctrlsettoolrect"></a><a name="settoolrect"></a>CToolTipCtrl::SetToolRect
 
-Araç için yeni bir sınırlayıcı dikdörtgen ayarlar.
+Bir araç için yeni bir sınırlayıcı dikdörtgen ayarlar.
 
 ```
 void SetToolRect(
@@ -860,18 +860,18 @@ void SetToolRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-Aracı içeren pencerenin işaretçisi.
+*Pwnd*<br/>
+Aracı içeren pencereyi işaretçi.
 
 *nIDTool*<br/>
-Aracın KIMLIĞI.
+Aracın kimliği.
 
-*lpRect*<br/>
-Yeni sınırlayıcı dikdörtgeni belirten bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına yönelik işaretçi.
+*Lprect*<br/>
+Yeni sınırlayıcı dikdörtgeni belirten bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısıişaretçisi.
 
-##  <a name="setwindowtheme"></a>CToolTipCtrl:: SetWindowTheme
+## <a name="ctooltipctrlsetwindowtheme"></a><a name="setwindowtheme"></a>CToolTipCtrl::SetWindowTheme
 
-Araç ipucu penceresinin görsel stilini ayarlar.
+Araç ucu penceresinin görsel stilini ayarlar.
 
 ```
 HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
@@ -879,28 +879,28 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pszalt Ppname*<br/>
-Ayarlanacak görsel stili içeren bir Unicode dize işaretçisi.
+*pszSubAppName*<br/>
+Ayarlanan görsel stili içeren Unicode dizesine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri kullanılmaz.
+İade değeri kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi [TTM_SETWINDOWTHEME](/windows/win32/Controls/ttm-setwindowtheme) iletisinin işlevselliğine öykünür.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [TTM_SETWINDOWTHEME](/windows/win32/Controls/ttm-setwindowtheme) iletisinin işlevselliğini taklit eder.
 
-##  <a name="update"></a>CToolTipCtrl:: Update
+## <a name="ctooltipctrlupdate"></a><a name="update"></a>CToolTipCtrl::Güncelleme
 
-Geçerli aracın yeniden çizilmesini zorlar.
+Geçerli aracı yeniden çizilmeye zorlar.
 
 ```
 void Update();
 ```
 
-##  <a name="updatetiptext"></a>CToolTipCtrl:: UpdateTipText
+## <a name="ctooltipctrlupdatetiptext"></a><a name="updatetiptext"></a>CToolTipCtrl::UpdateTipText
 
-Bu denetimin araçları için araç ipucu metnini güncelleştirir.
+Bu denetimaraçları için araç ipucu metnini güncelleştirir.
 
 ```
 void UpdateTipText(
@@ -916,20 +916,20 @@ void UpdateTipText(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszText*<br/>
-Araç için metin işaretçisi.
+*lpszMetin*<br/>
+Araç için metne işaretçi.
 
-*pWnd*<br/>
-Aracı içeren pencerenin işaretçisi.
+*Pwnd*<br/>
+Aracı içeren pencereyi işaretçi.
 
 *nIDTool*<br/>
-Aracın KIMLIĞI.
+Aracın kimliği.
 
-*Nıdtext*<br/>
-Aracın metnini içeren dize kaynağının KIMLIĞI.
+*nIDText*<br/>
+Aracın metnini içeren dize kaynağının kimliği.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CToolBar Sınıfı](../../mfc/reference/ctoolbar-class.md)
+[Ctoolbar Sınıfı](../../mfc/reference/ctoolbar-class.md)

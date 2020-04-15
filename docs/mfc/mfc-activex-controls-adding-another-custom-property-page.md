@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX denetimleri: Başka bir özel özellik sayfası ekleme'
+title: 'MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - property pages [MFC], MFC ActiveX controls
@@ -7,106 +7,106 @@ helpviewer_keywords:
 - ActiveX controls [MFC], property pages
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: fcf7e119-9f29-41a9-908d-e9b1607e08af
-ms.openlocfilehash: 09d85d69efc4c6cf0bf253099bae78c1e570f8a5
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: 02c87c2c5283b7293c2a7ab028ec9a2abbba2b33
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907375"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364736"
 ---
-# <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX denetimleri: Başka bir özel özellik sayfası ekleme
+# <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme
 
-Bazen, bir ActiveX denetimi bir özellik sayfasına makul bir şekilde uyum sağlayacak daha fazla özelliğe sahip olur. Bu durumda, bu özellikleri göstermek için ActiveX denetimine Özellik sayfaları ekleyebilirsiniz.
+Bazen, ActiveX denetimi bir özellik sayfasına sığabilecekten daha fazla özelliğe sahip olur. Bu durumda, bu özellikleri görüntülemek için ActiveX denetimine özellik sayfaları ekleyebilirsiniz.
 
-Bu makalede, daha önce en az bir özellik sayfası olan bir ActiveX denetimine yeni özellik sayfaları ekleme ele alınmaktadır. Hisse senedi özellik sayfaları (yazı tipi, resim veya renk) ekleme hakkında daha fazla bilgi için bkz [. MFC ActiveX denetimleri: Hisse senedi özellik sayfalarını](../mfc/mfc-activex-controls-using-stock-property-pages.md)kullanma.
+Bu makalede, zaten en az bir özellik sayfası olan activex denetimine yeni özellik sayfaları eklenmesi açıklanmıştır. Stok özelliği sayfaları (yazı tipi, resim veya renk) ekleme hakkında daha fazla bilgi için [MFC ActiveX Denetimleri makalesine bakın: Stok Özelliği Sayfalarını kullanma.](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
-Aşağıdaki yordamlar, ActiveX Denetim Sihirbazı tarafından oluşturulan örnek bir ActiveX denetim çerçevesini kullanır. Bu nedenle, sınıf adları ve tanımlayıcıları bu örneğe özeldir.
+Aşağıdaki yordamlar ActiveX Denetim Sihirbazı tarafından oluşturulan örnek ActiveX denetim çerçevesi kullanır. Bu nedenle, sınıf adları ve tanımlayıcıları bu örneğe özgütür.
 
-ActiveX denetiminde Özellik sayfaları kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
+ActiveX denetiminde özellik sayfalarını kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
 - [MFC ActiveX Denetimleri: Özellik Sayfaları](../mfc/mfc-activex-controls-property-pages.md)
 
-- [MFC ActiveX Denetimleri: Stok Özelliği Sayfaları Kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+- [MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
     > [!NOTE]
-    >  Yeni özellik sayfalarının ActiveX denetimi özellik sayfaları için boyut standardına bağlı olması önemle önerilir. Hisse senedi resmi ve renk özellik sayfaları 250x62 iletişim birimleri (DLU) olarak ölçer. Standart yazı tipi özellik sayfası 250x110 DLUs ' dir. ActiveX Denetim Sihirbazı tarafından oluşturulan varsayılan özellik sayfası, 250x62 DLU standardını kullanır.
+    >  Yeni özellik sayfalarının ActiveX denetim özelliği sayfaları için boyut standardına uyması önerilir. Stok resmi ve renk özelliği sayfaları 250x62 iletişim birimlerini (DLU) ölçer. Standart yazı tipi özelliği sayfası 250x110 DLUs'dur. ActiveX Denetim Sihirbazı tarafından oluşturulan varsayılan özellik sayfası 250x62 DLU standardını kullanır.
 
 ### <a name="to-insert-a-new-property-page-template-into-your-project"></a>Projenize yeni bir özellik sayfası şablonu eklemek için
 
-1. Denetim projeniz açıkken, proje çalışma alanında Kaynak Görünümü açın.
+1. Denetim projeniz açıkken, proje çalışma alanında Kaynak Görünümü'ni açın.
 
-1. Kaynak Görünümü sağ tıklayarak kısayol menüsünü açın ve **Kaynak Ekle**' ye tıklayın.
+1. Kısayol menüsünü açmak için Kaynak Görünümü'nde sağ tıklatın ve **Kaynak Ekle'yi**tıklatın.
 
-1. **Iletişim kutusunu** genişletin ve **IDD_OLE_PROPPAGE_SMALL**' ı seçin.
+1. **İletişim** düğümünü genişletin ve **IDD_OLE_PROPPAGE_SMALL'ı**seçin.
 
-1. Kaynağı projenize eklemek için **Yeni** ' ye tıklayın.
+1. Projenize kaynak eklemek için **Yeni'yi** tıklatın.
 
-1. **Özellikler** penceresini yenilemek için yeni özellik sayfası şablonunu seçin ( **kaynak görünümü**).
+1. **Özellikler** penceresini yenilemek için yeni özellik sayfası şablonunu seçin **(Kaynak**Görünümü'nde).
 
-1. **ID** özelliği için yeni bir değer girin. Bu örnek, **IDD_PROPPAGE_NEWPAGE**kullanır.
+1. **Kimlik** özelliği için yeni bir değer girin. Bu örnekte **IDD_PROPPAGE_NEWPAGE.**
 
-1. Araç çubuğunda **Kaydet** ' e tıklayın.
+1. Araç çubuğunda **Kaydet** seçeneğine tıklayın.
 
 ### <a name="to-associate-the-new-template-with-a-class"></a>Yeni şablonu bir sınıfla ilişkilendirmek için
 
-1. Sınıf Görünümü açın.
+1. Sınıf Görünümünü Aç.
 
-1. Kısayol menüsünü açmak için Sınıf Görünümü ' ye sağ tıklayın.
+1. Kısayol menüsünü açmak için Sınıf Görünümü'nde sağ tıklatın.
 
-1. Kısayol menüsünde, **Ekle** ' ye ve ardından **Sınıf Ekle**' ye tıklayın.
+1. Kısayol menüsünden **Ekle'yi** tıklatın ve ardından **Sınıf Ekle'yi**tıklatın.
 
    Bu, [Sınıf Ekle](../ide/add-class-dialog-box.md) iletişim kutusunu açar.
 
-1. **MFC sınıf** şablonuna çift tıklayın.
+1. **MFC Sınıfı** şablonuna çift tıklayın.
 
-1. [MFC sınıf Sihirbazı](../mfc/reference/mfc-add-class-wizard.md)' nın **sınıf adı** kutusuna yeni iletişim kutusu sınıfı için bir ad yazın. (Bu örnekte, `CAddtlPropPage`.)
+1. [MFC Sınıf Sihirbazı'ndaki](../mfc/reference/mfc-add-class-wizard.md) **Sınıf Adı** kutusunda, yeni iletişim sınıfı için bir ad yazın. (Bu örnekte, `CAddtlPropPage`.)
 
-1. Dosya adlarını değiştirmek istiyorsanız **Değiştir**' e tıklayın. Uygulamanızın ve başlık dosyalarınızın adlarını yazın veya varsayılan adları kabul edin.
+1. Dosya adlarını değiştirmek istiyorsanız **Değiştir'i**tıklatın. Uygulama ve üstbilgi dosyalarınızın adlarını yazın veya varsayılan adları kabul edin.
 
-1. **Taban sınıf** kutusunda öğesini seçin `COlePropertyPage`.
+1. Taban **Sınıf** kutusunda. `COlePropertyPage`
 
-1. Iletişim kutusu **kimliği** kutusunda **IDD_PROPPAGE_NEWPAGE**öğesini seçin.
+1. İletişim **Kimliği** kutusunda **IDD_PROPPAGE_NEWPAGE'** yi seçin.
 
-9. Sınıfı oluşturmak için **son** ' a tıklayın.
+1. Sınıfı oluşturmak için **Bitir'i** tıklatın.
 
-Denetimin kullanıcılarının bu yeni özellik sayfasına erişmesine izin vermek için, denetimin özellik sayfası kimlikleri makrosu bölümünde (denetim uygulama dosyasında bulunur) aşağıdaki değişiklikleri yapın:
+Denetim kullanıcılarının bu yeni özellik sayfasına erişmesine izin vermek için, denetimin özellik sayfası dIs makro bölümünde (denetim uygulama dosyasında bulunan) aşağıdaki değişiklikleri yapın:
 
 [!code-cpp[NVC_MFC_AxUI#32](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_1.cpp)]
 
-BEGIN_PROPPAGEIDS makrosunun ikinci parametresini (özellik sayfası sayısı) 1 ' den 2 ' ye artırmanız gerektiğini unutmayın.
+BEGIN_PROPPAGEIDS makronun ikinci parametresini (özellik sayfası sayısı) 1'den 2'ye çıkarmanız gerektiğini unutmayın.
 
-Ayrıca Denetim uygulama dosyasını (. CPP) dosyasına ekleyin (. H) yeni özellik sayfa sınıfının dosyası.
+Denetim uygulama dosyasını da değiştirmeniz gerekir (. CPP) dosya üstbilgi (. H) yeni özellik sayfası sınıfının dosyası.
 
-Sonraki adım, yeni özellik sayfası için bir tür adı ve bir açıklamalı alt yazı sağlayacak iki yeni dize kaynağı oluşturmayı içerir.
+Bir sonraki adım, yeni özellik sayfası için bir tür adı ve bir altyazı sağlayacak iki yeni dize kaynağı oluşturmayı içerir.
 
-#### <a name="to-add-new-string-resources-to-a-property-page"></a>Yeni dize kaynaklarını bir özellik sayfasına eklemek için
+#### <a name="to-add-new-string-resources-to-a-property-page"></a>Özellik sayfasına yeni dize kaynakları eklemek için
 
-1. Denetim projem açıkken Kaynak Görünümü açın.
+1. Denetim projeniz açıkken Kaynak Görünümü'ni açın.
 
-1. **Dize tablosu** klasörüne çift tıklayın ve ardından bir dize eklemek istediğiniz varolan dize tablosu kaynağına çift tıklayın.
+1. **String Table** klasörünü çift tıklatın ve ardından dize eklemek istediğiniz varolan dize tablosu kaynağını çift tıklatın.
 
-   Bu, dize tablosunu bir pencerede açar.
+   Bu, bir penceredeki dize tablosunu açar.
 
-1. Dize tablosunun sonundaki boş satırı seçin ve dizenin metin veya açıklamalı alt yazısını yazın: Örneğin, "ek özellik sayfası."
+1. Dize tablosunun sonundaki boş satırı seçin ve dizedeki metni veya alt yazıyı yazın: örneğin, "Ek Özellik Sayfası."
 
-   Bu, **başlık** ve **kimlik** kutularını gösteren bir **dize özellikleri** sayfası açar. **Başlık** kutusu, yazdığınız dizeyi içerir.
+   Bu, **Resim Yazısı** ve **kimlik** kutularını gösteren bir **String Özellikleri** sayfasını açar. **Resim Yazısı** kutusu yazdığınız dizeyi içerir.
 
-1. **Kimlik** kutusunda, dize IÇIN bir kimlik seçin veya yazın. Bitirdiğinizde ENTER tuşuna basın.
+1. **Kimlik** kutusunda, dize için bir kimlik seçin veya yazın. Bitirdiğinde Enter tuşuna basın.
 
-   Bu örnek, yeni özellik sayfasının tür adı için **IDS_SAMPLE_ADDPAGE** kullanır.
+   Bu **örnekte,** yeni özellik sayfasının tür adı için IDS_SAMPLE_ADDPAGE kullanır.
 
-1. KOD için **IDS_SAMPLE_ADDPPG_CAPTION** ve başlık Için "ek özellik sayfası" kullanarak 3 ve 4. adımları yineleyin.
+1. Kimlik için **IDS_SAMPLE_ADDPPG_CAPTION** ve resim yazısı için "Ek Özellik Sayfası" kullanarak 3 ve 4 adımlarını yineleyin.
 
-1. İçinde. Yeni özellik sayfası sınıfınızın cpp dosyası (Bu örnekte, `CAddtlPropPage`), `CAddtlPropPage::CAddtlPropPageFactory::UpdateRegistry` aşağıdaki örnekte olduğu gibi, IDS_SAMPLE_ADDPAGE [AfxOleRegisterPropertyPageClass](../mfc/reference/registering-ole-controls.md#afxoleregisterpropertypageclass)tarafından geçirilecek şekilde değiştirin:
+1. İçinde. Yeni özellik sayfası sınıfının CPP dosyası `CAddtlPropPage`(bu `CAddtlPropPage::CAddtlPropPageFactory::UpdateRegistry` örnekte), aşağıdaki örnekte olduğu gibi, IDS_SAMPLE_ADDPAGE [AfxOleRegisterPropertyPageClass](../mfc/reference/registering-ole-controls.md#afxoleregisterpropertypageclass)tarafından geçirilir şekilde değiştirin:
 
    [!code-cpp[NVC_MFC_AxUI#33](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_2.cpp)]
 
-1. IDS_SAMPLE_ADDPPG_CAPTION oluşturucusunu, aşağıdaki gibi, `COlePropertyPage` oluşturucuya geçirilecek şekildedeğiştirin:`CAddtlPropPage`
+1. IDS_SAMPLE_ADDPPG_CAPTION'nin `CAddtlPropPage` `COlePropertyPage` oluşturucuya aktarılması için oluşturucuyu aşağıdaki gibi değiştirin:
 
    [!code-cpp[NVC_MFC_AxUI#34](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_3.cpp)]
 
-Gerekli değişiklikleri yaptıktan sonra projenizi yeniden oluşturun ve yeni özellik sayfasını test etmek için test kapsayıcısını kullanın. Test kapsayıcısına erişme hakkında bilgi için bkz. test [kapsayıcı Ile özellikleri ve olayları test etme](../mfc/testing-properties-and-events-with-test-container.md) .
+Gerekli değişiklikleri yaptıktan sonra projenizi yeniden oluşturun ve yeni özellik sayfasını test etmek için Test Kapsayıcısı'nı kullanın. Test kapsayıcısına nasıl erişireceksiniz hakkında bilgi almak için [Test Kapsayıcısı ile Test Özellikleri ve Olayları'na](../mfc/testing-properties-and-events-with-test-container.md) bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
+[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)

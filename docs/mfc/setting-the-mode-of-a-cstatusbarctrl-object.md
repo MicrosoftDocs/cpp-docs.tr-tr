@@ -9,23 +9,23 @@ helpviewer_keywords:
 - non-simple mode and status bar controls
 - CStatusBarCtrl class [MFC], simple and nonsimple modes
 ms.assetid: ca6076e5-1501-4e33-8d35-9308941e46c0
-ms.openlocfilehash: 79b499533196447898ce62ea9dc86c1674fc0302
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: e09a7bd274c44df2da48bbc007a95802fadd8cf0
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446396"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365412"
 ---
 # <a name="setting-the-mode-of-a-cstatusbarctrl-object"></a>CStatusBarCtrl Nesnesinin Modunu Ayarlama
 
-`CStatusBarCtrl` nesnesi için iki mod vardır: basit ve basit olmayan. Çoğu durumda, durum çubuğu denetimizin bir veya daha fazla parçaya, metin ve belki de bir simge ya da simgeye sahip olacaktır. Bu, basit olmayan mod olarak adlandırılır. Bu mod hakkında daha fazla bilgi için bkz. [CStatusBarCtrl nesnesinin parçalarını başlatma](../mfc/initializing-the-parts-of-a-cstatusbarctrl-object.md).
+Bir `CStatusBarCtrl` nesne için iki mod vardır: basit ve basit olmayan. Çoğu durumda, durum çubuğu denetiminiz, metin ve belki de bir simge veya simgeyle birlikte bir veya daha fazla parçaya sahip olacaktır. Buna basit olmayan mod denir. Bu mod hakkında daha fazla bilgi için [CStatusBarCtrl Nesnesinin Bölümlerini Başlatma](../mfc/initializing-the-parts-of-a-cstatusbarctrl-object.md)konusuna bakın.
 
-Ancak, yalnızca tek satırlık bir metin görüntülemesi gereken durumlar vardır. Bu durumda, basit mod gereksinimleriniz için yeterlidir. `CStatusBarCtrl` nesnesinin modunu basit olarak değiştirmek için [SetSimple](../mfc/reference/cstatusbarctrl-class.md#setsimple) üye işlevine bir çağrı yapın. Durum çubuğu denetimi basit moddayken, *nPane* parametresinin değeri olarak 255 geçirerek `SetText` üye işlevini çağırarak metni ayarlayın.
+Ancak, yalnızca tek bir metin satırı görüntülemeniz gereken durumlar vardır. Bu durumda, basit mod ihtiyaçlarınız için yeterlidir. Nesnenin modunu `CStatusBarCtrl` basit olarak değiştirmek için [SetSimple](../mfc/reference/cstatusbarctrl-class.md#setsimple) üye işlevini arayın. Durum çubuğu denetimi basit modda olduğunda, `SetText` metni üye işlevi çağırarak ve *nPane* parametresi değeri olarak 255'i geçerek ayarlayın.
 
-`CStatusBarCtrl` nesnesinin hangi moda olduğunu belirlemek için [IsSimple](../mfc/reference/cstatusbarctrl-class.md#issimple) işlevini kullanabilirsiniz.
+Nesnenin hangi modda olduğunu belirlemek için IsSimple işlevini kullanabilirsiniz. [IsSimple](../mfc/reference/cstatusbarctrl-class.md#issimple) `CStatusBarCtrl`
 
 > [!NOTE]
->  Durum çubuğu nesnesi basit olmayan veya basit olmayan bir şekilde değiştirilirse, pencere hemen yeniden çizilir ve varsa, tanımlanan tüm parçalar otomatik olarak geri yüklenir.
+> Durum çubuğu nesnesi basit olmayandan basite veya tam tersi olarak değiştiriliyorsa, pencere hemen yeniden çizilir ve varsa tanımlı parçalar otomatik olarak geri yüklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

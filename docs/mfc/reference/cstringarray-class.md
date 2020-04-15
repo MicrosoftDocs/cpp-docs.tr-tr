@@ -1,5 +1,5 @@
 ---
-title: CStringArray sınıfı
+title: CStringArray Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CStringArray
@@ -42,16 +42,16 @@ helpviewer_keywords:
 - CStringArray [MFC], SetAtGrow
 - CStringArray [MFC], SetSize
 ms.assetid: 6c637e06-bba8-4c08-b0fc-cf8cb067ce34
-ms.openlocfilehash: f5be5f44e86e3e24bc51dc014ca3c837bf5cf07d
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 96a272cbbb76b399ed7a3db6848ab3f74a615a38
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445116"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365982"
 ---
-# <a name="cstringarray-class"></a>CStringArray sınıfı
+# <a name="cstringarray-class"></a>CStringArray Sınıfı
 
-[CString](../../atl-mfc-shared/using-cstring.md) nesnelerinin dizilerini destekler.
+[CString](../../atl-mfc-shared/using-cstring.md) nesne dizilerini destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,15 +61,15 @@ class CStringArray : public CObject
 
 ## <a name="members"></a>Üyeler
 
-`CStringArray` üye işlevleri [CObArray](../../mfc/reference/cobarray-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, üye işlevi özellikleri için `CObArray` başvuru belgelerini kullanabilirsiniz. Dönüş değeri olarak `CObject` bir işaretçi Gördüğünüz her yerde, bir [CString](../../atl-mfc-shared/using-cstring.md) nesnesi ( [CString](../../atl-mfc-shared/using-cstring.md) işaretçisi değil) yerine koyun. İşlev parametresi olarak `CObject` bir işaretçi Gördüğünüz her yerde, bir `LPCTSTR`yerine koyun.
+CObArray `CStringArray` sınıfının üye işlevleri ne [CObArray](../../mfc/reference/cobarray-class.md)benzer. Bu benzerlik nedeniyle, üye işlev `CObArray` özellikleri için başvuru belgelerini kullanabilirsiniz. Bir `CObject` işaretçiyi iade değeri olarak gördüğünüz her yerde, bir [CString](../../atl-mfc-shared/using-cstring.md) nesnesini (CString işaretçisi değil) [değiştirin.](../../atl-mfc-shared/using-cstring.md) Bir `CObject` işaretçiyi işlev parametresi olarak `LPCTSTR`gördüğünüz her yerde, bir .
 
 `CObject* CObArray::GetAt( int <nIndex> ) const;`
 
-Örneğin, öğesine çevirir
+örneğin, çevirir
 
 `CString CStringArray::GetAt( int <nIndex> ) const;`
 
-ile
+ve
 
 `void SetAt( int <nIndex>, CObject* <newElement> )`
 
@@ -81,58 +81,58 @@ ile
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CStringArray:: CStringArray](../../mfc/reference/cobarray-class.md#cobarray)|Boş bir dizi oluşturur.|
+|[CStringArray::CStringArray](../../mfc/reference/cobarray-class.md#cobarray)|Boş bir dizi oluşturuyor.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CStringArray:: Add](../../mfc/reference/cobarray-class.md#add)|Dizinin sonuna bir öğesi ekler; gerekirse diziyi büyür.|
-|[CStringArray:: Append](../../mfc/reference/cobarray-class.md#append)|Diziye başka bir dizi ekler; gerekirse diziyi büyür.|
-|[CStringArray:: Copy](../../mfc/reference/cobarray-class.md#copy)|Başka bir diziyi diziye kopyalar; gerekirse diziyi büyür.|
-|[CStringArray:: ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Dizi içindeki öğe işaretçisine geçici bir başvuru döndürür.|
-|[CStringArray:: FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Geçerli üst sınırın üzerinde kullanılmayan tüm belleği serbest bırakır.|
-|[CStringArray:: GetAt](../../mfc/reference/cobarray-class.md#getat)|Verilen dizindeki değeri döndürür.|
-|[CStringArray:: GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizideki öğelerin sayısını alır.|
-|[CStringArray:: GetData](../../mfc/reference/cobarray-class.md#getdata)|Dizideki öğelere erişime izin verir. **Null**olabilir.|
-|[CStringArray:: GetSize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizideki öğelerin sayısını alır.|
-|[CStringArray:: Getüstsınırı](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizini döndürür.|
-|[CStringArray:: InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Belirtilen dizine bir öğe (veya başka bir dizide bulunan tüm öğeleri) ekler.|
-|[CStringArray:: IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Dizinin boş olup olmadığını belirler.|
-|[CStringArray:: RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Bu dizideki tüm öğeleri kaldırır.|
-|[CStringArray:: RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Belirli bir dizindeki bir öğeyi kaldırır.|
-|[CStringArray:: SetAt](../../mfc/reference/cobarray-class.md#setat)|Belirli bir dizin için değeri ayarlar; dizinin büyümesine izin verilmiyor.|
-|[CStringArray:: SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Belirli bir dizin için değeri ayarlar; gerekirse diziyi büyür.|
-|[CStringArray:: SetSize](../../mfc/reference/cobarray-class.md#setsize)|Bu dizide yer alan öğelerin sayısını ayarlar.|
+|[CStringArray::Ekle](../../mfc/reference/cobarray-class.md#add)|Dizinin sonuna bir öğe ekler; gerekirse diziyi büyütür.|
+|[CStringArray::Ek](../../mfc/reference/cobarray-class.md#append)|Diziye başka bir dizi ekler; gerekirse diziyi büyütür.|
+|[CStringArray::Kopyala](../../mfc/reference/cobarray-class.md#copy)|Başka bir diziyi diziye kopyalar; gerekirse diziyi büyütür.|
+|[CstringArray::elementat](../../mfc/reference/cobarray-class.md#elementat)|Dizi içindeki öğe işaretçisine geçici bir başvuru verir.|
+|[CStringArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Tüm kullanılmayan belleği geçerli üst sınır üzerinde serbest eder.|
+|[CstringArray::Getat](../../mfc/reference/cobarray-class.md#getat)|Belirli bir dizindeki değeri döndürür.|
+|[CStringArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizideki öğelerin sayısını alır.|
+|[CStringArray::Veri Get](../../mfc/reference/cobarray-class.md#getdata)|Dizideki öğelere erişim sağlar. **NULL**olabilir.|
+|[CStringArray::Getsize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizideki öğelerin sayısını alır.|
+|[CStringArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizini döndürür.|
+|[CStringArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Belirli bir dizide bir öğe (veya başka bir dizideki tüm öğeler) ekler.|
+|[CstringArray::Boş](../../mfc/reference/cobarray-class.md#isempty)|Dizinin boş olup olmadığını belirler.|
+|[CStringArray::RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Bu dizideki tüm öğeleri kaldırır.|
+|[CstringArray::removeat](../../mfc/reference/cobarray-class.md#removeat)|Belirli bir dizindeki bir öğeyi kaldırır.|
+|[CstringArray::Setat](../../mfc/reference/cobarray-class.md#setat)|Belirli bir dizinin değerini ayarlar; dizi büyümeye izin verilmez.|
+|[CstringArray::setatgrow](../../mfc/reference/cobarray-class.md#setatgrow)|Belirli bir dizinin değerini ayarlar; gerekirse diziyi büyütür.|
+|[CStringArray::SetSize](../../mfc/reference/cobarray-class.md#setsize)|Bu dizide yer alan öğe sayısını ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CStringArray:: operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi ayarlar veya alır.|
+|[CStringArray::işleç \[\]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizilişte öğeyi ayarlar veya alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CStringArray`, öğelerinin serileştirilmesi ve dökümünü desteklemek için IMPLEMENT_SERIAL makrosunu içerir. `CString` nesne dizisi bir arşive depolanıyorsa, aşırı yüklenmiş bir ekleme işleci veya `Serialize` member işleviyle birlikte her öğe sırayla serileştirilir.
+`CStringArray`öğelerinin serileştirilmesini ve dampingini desteklemek için IMPLEMENT_SERIAL makroyu içerir. Bir dizi `CString` nesne bir arşivde, aşırı yüklü bir ekleme işleci yle veya `Serialize` üye işlevle depolanırsa, her öğe sırayla seri hale getirilir.
 
 > [!NOTE]
->  Bir dizi kullanmadan önce, boyutunu belirlemek ve için bellek ayırmak üzere `SetSize` kullanın. `SetSize`kullanmıyorsanız, dizine öğe eklemek, bu öğenin sık olarak yeniden tahsis edilmesine ve kopyalanmasına neden olur. Sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara ayırma yapılabilir.
+> Bir dizi kullanmadan `SetSize` önce, boyutunu oluşturmak ve bunun için bellek ayırmak için kullanın. `SetSize`Kullanmazsanız, dizinize öğe eklemek, dizinin sık sık yeniden tahsis edilmesine ve kopyalanmasını sağlar. Sık yeniden tahsis ve kopyalama verimsizdir ve belleği parçalayabilir.
 
-Dizideki bağımsız dize öğelerinin bir dökümünden birine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
+Dizideki tek tek dize öğelerinin dökümüne ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
-`CString` bir dizi silindiğinde veya öğeleri kaldırıldığında, dize belleği uygun şekilde serbest bırakılır.
+Bir `CString` dizi silindiğinde veya öğeleri kaldırıldığında, dize belleği uygun şekilde serbest bırakılır.
 
-`CStringArray`kullanma hakkında daha fazla bilgi için bkz. Makale [koleksiyonları](../../mfc/collections.md).
+Kullanma `CStringArray`hakkında daha fazla bilgi için [Koleksiyonlar](../../mfc/collections.md)makalesine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 `CStringArray`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxcoll. h
+**Üstbilgi:** afxcoll.h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

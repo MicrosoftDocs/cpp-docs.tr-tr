@@ -1,6 +1,6 @@
 ---
 title: _strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _mbsupr_l
 - _mbsupr
@@ -8,6 +8,12 @@ api_name:
 - _wcsupr
 - _wcsupr_l
 - _strupr
+- _o__mbsupr
+- _o__mbsupr_l
+- _o__strupr
+- _o__strupr_l
+- _o__wcsupr
+- _o__wcsupr_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -22,6 +28,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -63,19 +70,19 @@ helpviewer_keywords:
 - _tcsupr function
 - strings [C++], converting case
 ms.assetid: caac8f16-c233-41b6-91ce-575ec7061b77
-ms.openlocfilehash: 8078bddd022032196c0e10cd54b0ad68d9c71419
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 5127c6f0be6375585be3b321788ba04a91364e57
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957577"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81362893"
 ---
 # <a name="_strupr-_strupr_l-_mbsupr-_mbsupr_l-_wcsupr_l-_wcsupr"></a>_strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
 
-Dizeyi büyük harfe dönüştürür. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l](strupr-s-strupr-s-l-mbsupr-s-mbsupr-s-l-wcsupr-s-wcsupr-s-l.md).
+Bir dizeyi büyük harfe dönüştürür. Bu işlevlerin daha güvenli sürümleri mevcuttur; [_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l](strupr-s-strupr-s-l-mbsupr-s-mbsupr-s-l-wcsupr-s-wcsupr-s-l.md)bakın.
 
 > [!IMPORTANT]
-> **_mbsupr** ve **_mbsupr_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsupr** ve **_mbsupr_l,** Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -132,29 +139,31 @@ unsigned char *_mbsupr_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*üstbilgisine*<br/>
-Büyük harfle kullanılacak dize.
+*Str*<br/>
+Büyük harfe bağlaç.
 
-*ayarlar*<br/>
+*Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değiştirilen dizeye bir işaretçi döndürür. Değişiklik yerinde yapıldığından, döndürülen işaretçi giriş bağımsız değişkeni olarak geçirilen işaretçi ile aynıdır. Bir hatayı göstermek için hiçbir dönüş değeri ayrılmadı.
+Değiştirilen dize için bir işaretçi döndürür. Değişiklik yerinde yapıldığından, döndürülen işaretçi giriş bağımsız değişkeni olarak geçen işaretçiyle aynıdır. Bir hatayı belirtmek için hiçbir iade değeri ayrılmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strupr** işlevi yerinde, *Str* ve küçük harfli her küçük harfi büyük harfe dönüştürür. Dönüştürme, yerel ayarın **LC_CTYPE** kategori ayarına göre belirlenir. Diğer karakterler etkilenmez. **LC_CTYPE**hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_L** sonekine sahip olmayan bu işlevlerin sürümleri, geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**_strupr** işlevi, yerinde, *büyük* harf str her küçük harf dönüştürür. Dönüştürme, LC_CTYPE **kategori** ayarına göre belirlenir. Diğer karakterler etkilenmez. **LC_CTYPE**hakkında daha fazla bilgi için [setlocale'ye](setlocale-wsetlocale.md)bakın. Bu işlevlerin **_l** sonek olmadan sürümleri geçerli yerel kullanın; **_l** soneki olan sürümler, bunun yerine geçirilen yerelliği kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-**_wcsupr** ve **_mbsupr** , **_strupr**'nin geniş karakterli ve çok baytlı karakter sürümleridir. **_Wcsupr** 'nin bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir; **_mbsupr** 'nin çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
+**_wcsupr** ve **_mbsupr** **_strupr**geniş karakterli ve çok bayt karakterli versiyonlarıdır. _wcsupr bağımsız değişkeni **_wcsupr** ve döndürme değeri geniş karakterli dizeleridir; **_mbsupr** çok bayt karakterli dizeleri vardır. Bu üç işlev aynı şekilde çalışır.
 
-*Str* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler özgün dizeyi döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
+*Str* null işaretçisi ise, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md) açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlevler özgün dize döndürün ve **EINVAL** **için errno** ayarlayın.
 
-' C++De, bu işlevlerde bu işlevlerin daha yeni ve güvenli karşılıkları çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevlerin daha yeni ve güvenli karşıtlarını çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsupr**|**_strupr**|**_mbsupr**|**_wcsupr**|
 |**_tcsupr_l**|**_strupr_l**|**_mbsupr_l**|**_wcsupr_l**|
@@ -163,18 +172,18 @@ Değiştirilen dizeye bir işaretçi döndürür. Değişiklik yerinde yapıldı
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strupr**, **_strupr_l**|\<String. h >|
-|**_wcsupr**, **_wcsupr_l**|\<String. h > veya \<wchar. h >|
-|**_mbsupr**, **_mbsupr_l**|\<mbstring. h >|
+|**_strupr**, **_strupr_l**|\<string.h>|
+|**_wcsupr**, **_wcsupr_l**|\<string.h> \<veya wchar.h>|
+|**_mbsupr**, **_mbsupr_l**|\<mbstring.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
-[_Strlwr](strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md)örneğine bakın.
+[_strlwr](strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[locale](../../c-runtime-library/locale.md)<br/>
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l](strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md)<br/>

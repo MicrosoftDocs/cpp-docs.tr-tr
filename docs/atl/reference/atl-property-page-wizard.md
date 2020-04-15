@@ -7,72 +7,72 @@ helpviewer_keywords:
 - ATL projects, adding property pages
 - ATL Property Page Wizard
 ms.assetid: 6113e325-facd-4f68-b491-144d75209922
-ms.openlocfilehash: 5808a99d376ab3640c955156688d64bc0285e67e
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: eaf070d5a98a05dbe3102afac8317ffd59298ad2
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706998"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81321672"
 ---
 # <a name="atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı
 
 ::: moniker range="vs-2019"
 
-Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
+Bu sihirbaz Visual Studio 2019 ve sonraki yıllarda kullanılamaz.
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-Bu sihirbaz [bir ATL projesine bir özellik sayfası ekler](../../atl/reference/adding-an-atl-property-page.md) veya MFC projesinde ATL desteği. ATL özellik sayfası özelliklerini ayarlamak için bir kullanıcı arabirimi sağlar (veya çağırma yöntemleri) bir veya daha fazla COM nesneleri.
+Bu sihirbaz, [bir ATL projesine](../../atl/reference/adding-an-atl-property-page.md) veya ATL destekli bir MFC projesine özellik sayfası ekler. ATL özellik sayfası, bir veya daha fazla COM nesnesinin özelliklerini ayarlamak (veya yöntemleri çağırmak) için bir kullanıcı arabirimi sağlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio 2008'den itibaren bu sihirbaz tarafından üretilen kayıt betiği altında COM bileşenlerini kaydolacak **HKEY_CURRENT_USER** yerine **HKEY_LOCAL_MACHINE**. Bu davranışı değiştirmek için Ayarla **tüm kullanıcılar için kayıt bileşeni** ATL Sihirbazı seçeneği.
+Visual Studio 2008 ile başlayarak, bu sihirbaz tarafından üretilen kayıt komut dosyası **HKEY_LOCAL_MACHINE**yerine **HKEY_CURRENT_USER** altında COM bileşenleri kaydedecektir. Bu davranışı değiştirmek için, ATL Sihirbazı'nın tüm kullanıcılar için **Kayıt bileşenini** ayarlayın.
 
 ## <a name="names"></a>Adlar
 
-Nesne, arabirimi ve projenize eklenecek sınıfların adlarını belirtin. Dışında **kısa ad**, bağımsız olarak tüm kutuları düzenlenebilir. Metni değiştirirseniz **kısa ad**, değişiklik bu sayfadaki tüm diğer kutularının adlarını olarak yansıtılır. Değiştirirseniz **coclass'ı** ad değişikliği COM bölümünde yansıtılır **türü** ve **ProgID** kutuları. Bu adlandırma davranışı, özellik sayfası geliştirirken tüm adlarını kolayca tanımlanabilen yapmak için tasarlanmıştır.
+Projenize eklenecek nesne, arabirim ve sınıfların adlarını belirtin. Kısa **ad**dışında, diğer tüm kutular bağımsız olarak düzenlenebilir. **Kısa ad**metnini değiştirirseniz, değişiklik bu sayfadaki diğer tüm kutuların adlarında yansıtılır. COM bölümündeki **Coclass** adını değiştirirseniz, değişiklik **Tür** ve **ProgID** kutularına yansıtılır. Bu adlandırma davranışı, özellik sayfanızı geliştirirken tüm adları sizin için kolayca tanımlanabilir hale getirmek için tasarlanmıştır.
 
 > [!NOTE]
->  **Coclass'ı** nonattributed projelerine yalnızca düzenlenebilir. Projenizi öznitelikli, düzenleyemezsiniz **coclass'ı**.
+> **Coclass** yalnızca atfedilmeyen projelerde değiştirilebilir. Projeniz atfedilen, **Coclass'ı**kaldıramazsınız.
 
 ### <a name="c"></a>C++
 
-Nesne uygulamak için oluşturulan C++ sınıfına ilişkin bilgi sağlar.
+Nesneyi uygulamak için oluşturulan C++ sınıfı için bilgi sağlar.
 
 |||
 |-|-|
-|Terim|Tanım|
-|**Kısa ad**|Nesnenin kısaltılmış adını ayarlar. Sınıfı, sağladığınız ada belirler ve **coclass'ı** dosyasını adlandırır (**.cpp** ve **.h**) adlarını **türü** yanısıraadı **ProgID**, bu alanları ayrı ayrı değiştirmediğiniz sürece.|
-|**.h dosyası**|Yeni nesne sınıfı için üst bilgi dosyası adını ayarlar. Varsayılan olarak, bu ad, sağladığınız ada dayanır **kısa ad**. Dosya adı, tercih ettiğiniz bir konuma kaydedin veya mevcut bir dosyaya sınıf bildirimi eklemek için üç nokta düğmesine tıklayın. Var olan bir dosya seçerseniz, sihirbaz, seçili konuma dek tıklatın kaydedilmeyecektir **son** Sihirbazı'nda.<br /><br /> Sihirbazın bir dosyanın üzerine yazmaz. ' A tıkladığınızda, var olan bir dosya adı seçerseniz **son**, Sihirbazı sınıf bildirimi dosya içeriğini eklenmeyeceğini göstermek isteyip istemediğinizi sorar. Tıklayın **Evet** ; dosya eklemek için tıklatın **Hayır** sihirbaza dönmek ve başka bir dosya adı belirtin.|
-|**Sınıfı**|Nesne uygulayan sınıfın adını ayarlar. Bu ad, sağladığınız adına dayanarak **kısa ad**, 'C', tipik bir sınıf adı öneki öncesinde.|
-|**.cpp dosyası**|Yeni nesne sınıfı için uygulama dosyasının adını ayarlar. Varsayılan olarak, bu ad, sağladığınız ada dayanır **kısa ad**. Dosya adı, tercih ettiğiniz bir konuma kaydetmek için üç nokta düğmesine tıklayın. ' A kadar dosyasını seçili konuma kaydedilmez **son** Sihirbazı'nda.<br /><br /> Sihirbazın bir dosyanın üzerine yazmaz. ' A tıkladığınızda, var olan bir dosya adı seçerseniz **son**, Sihirbazı sınıf uygulaması dosya içeriğini eklenmeyeceğini göstermek isteyip istemediğinizi sorar. Tıklayın **Evet** ; dosya eklemek için tıklatın **Hayır** sihirbaza dönmek ve başka bir dosya adı belirtin.|
-|**Öznitelikli**|Nesne öznitelikleri kullanıp kullanmadığını belirtir. Yalnızca öznitelik atanmış ATL projesine nesne eklemek, bu seçenek kullanılırsa ve değiştirmek kullanılamaz, yani ekleyebileceğiniz nesneleri özniteliği desteği ile oluşturulan bir projeye öznitelikli.<br /><br /> Öznitelikli nesneyi kullanan öznitelikleri yalnızca bir ATL projesine ekleyebilirsiniz. Destek özniteliğine sahip bir ATL projesi için bu seçeneği belirlerseniz, Sihirbazı özniteliği destek projeye eklemek isteyip istemediğinizi belirtmenizi ister.<br /><br /> Varsayılan olarak, bu seçeneği belirledikten sonra eklediğiniz herhangi bir nesne öznitelikli olarak atanan (onay kutusu seçilidir). Öznitelikleri kullanmayan nesne eklemek için bu kutusunu temizleyebilirsiniz.<br /><br /> Bkz: [uygulama ayarları, ATL Proje Sihirbazı'nı](../../atl/reference/application-settings-atl-project-wizard.md) ve [öznitelikleri temel mekanizması](../../windows/basic-mechanics-of-attributes.md) daha fazla bilgi için.|
+|Sözleşme Dönemi|Tanım|
+|**Kısa ad**|Nesnenin kısaltılmış adını ayarlar. Sağladığınız ad, sınıf ve **Coclass** adlarını, dosyayı (**.cpp** ve **.h**) adlarını, **Tür** adını ve **ProgID'yi,** bu alanları tek tek değiştirmediğiniz sürece belirler.|
+|**.h dosyası**|Yeni nesnenin sınıfı için üstbilgi dosyasının adını ayarlar. Varsayılan olarak, bu ad **Kısa ad**da sağladığınız adı temel alır. Dosya adını seçtiğiniz konuma kaydetmek veya sınıf bildirimini varolan bir dosyaya eklemek için elips düğmesini tıklatın. Varolan bir dosyayı seçerseniz, sihirbaz, sihirbazda **Bitir'i** tıklatana kadar dosyayı seçili konuma kaydetmez.<br /><br /> Sihirbaz bir dosyanın üzerine yazmıyor. Varolan bir dosyanın adını seçerseniz, **Bitiş'i**tıklattığınızda, sihirbaz sınıf bildiriminin dosyanın içeriğine eklenip eklenmeyeceğini belirtmenizi ister. Dosyayı eklemek için **Evet'i** tıklatın; sihirbaza dönmek ve başka bir dosya adı belirtmek için **Hayır'ı** tıklatın.|
+|**Sınıfı**|Nesneyi uygulayan sınıfın adını ayarlar. Bu ad, bir sınıf adı için tipik önek olan 'C' öncesinde **Kısa adla**sağladığınız ada dayanır.|
+|**.cpp dosyası**|Yeni nesnesınıfının uygulama dosyasının adını ayarlar. Varsayılan olarak, bu ad **Kısa ad**da sağladığınız adı temel alır. Dosya adını seçtiğiniz konuma kaydetmek için elips düğmesini tıklatın. Sihirbazda **Bitir'i** tıklatın kadar dosya seçili konuma kaydedilmez.<br /><br /> Sihirbaz bir dosyanın üzerine yazmıyor. Varolan bir dosyanın adını seçerseniz, **Bitiş'i**tıklattığınızda, sihirbaz, sınıf uygulamasının dosyanın içeriğine eklenip eklenmeyeceğini belirtmenizi ister. Dosyayı eklemek için **Evet'i** tıklatın; sihirbaza dönmek ve başka bir dosya adı belirtmek için **Hayır'ı** tıklatın.|
+|**Yazarından**|Nesnenin öznitelikleri kullanıp kullanmadığını gösterir. Atfedilen bir ATL projesine bir nesne ekliyorsanız, bu seçenek seçilir ve değiştirilemez, diğer bir süre önce öznitelik desteğiyle oluşturulan projeye atfedilen nesneleri ekleyebilirsiniz.<br /><br /> Yalnızca öznitelikleri kullanan bir ATL projesine atfedilen bir nesne ekleyebilirsiniz. Öznitelik desteği olmayan bir ATL projesi için bu seçeneği seçerseniz, sihirbaz projeye öznitelik desteği eklemek isteyip istemediğinizbelirtilir.<br /><br /> Varsayılan olarak, bu seçeneği ayarladıktan sonra eklediğiniz nesneler atfedilen olarak belirlenir (onay kutusu seçilir). Öznitelikleri kullanmayan bir nesne eklemek için bu kutuyu temizleyebilirsiniz.<br /><br /> Daha fazla bilgi için [Uygulama Ayarları, ATL Proje Sihirbazı](../../atl/reference/application-settings-atl-project-wizard.md) ve [Özniteliklerin Temel Mekaniği](../../windows/basic-mechanics-of-attributes.md) bölümüne bakın.|
 
 ### <a name="com"></a>COM
 
-Nesne için COM işlevleri hakkında bilgi sağlar.
+Nesne için COM işlevi hakkında bilgi sağlar.
 
-- **Coclass'ı**
+- **Coclass**
 
-   Nesne tarafından desteklenen arabirimlerin listesini içeren bileşen sınıfı adını ayarlar.
+   Nesne tarafından desteklenen arabirimlerin listesini içeren bileşen sınıfının adını ayarlar.
 
    > [!NOTE]
-   > Öznitelikleri kullanarak projenizi oluşturmak ya da özellik sayfasını öznitelikleri kullanır Bu sihirbaz sayfasındaki gösteriyorsa, ATL içermez çünkü bu seçeneği değiştiremezsiniz `coclass` özniteliği.
+   > Projenizi öznitelikleri kullanarak oluşturursanız veya bu sihirbaz sayfasında özellik sayfasının öznitelikleri kullandığını belirtirseniz, ATL `coclass` özniteliği içermediği için bu seçeneği değiştiremezsiniz.
 
 - **Tür**
 
-   Ayarlar kayıt defterinde görünür nesne açıklaması
+   Kayıt defterinde görünecek nesne açıklamasını ayarlar
 
-- **ProgID**
+- **Progıd**
 
-   Kapsayıcı nesnesinin CLSID yerine kullanabileceği adını ayarlar.
+   Nesnenin CLSID yerine kapsayıcıların kullanabileceği adı ayarlar.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATL Özellik Sayfası Sihirbazı Seçenekleri](../../atl/reference/options-atl-property-page-wizard.md)<br/>
-[Dizeleri, ATL Özellik Sayfası Sihirbazı](../../atl/reference/strings-atl-property-page-wizard.md)<br/>
+[Seçenekler, ATL Özellik Sayfa Sihirbazı](../../atl/reference/options-atl-property-page-wizard.md)<br/>
+[Dizeleri, ATL Özellik Sayfa Sihirbazı](../../atl/reference/strings-atl-property-page-wizard.md)<br/>
 [Örnek: Özellik Sayfası Uygulama](../../atl/example-implementing-a-property-page.md)

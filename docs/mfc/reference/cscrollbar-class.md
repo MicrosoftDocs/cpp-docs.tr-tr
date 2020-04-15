@@ -1,5 +1,5 @@
 ---
-title: CScrollBar sınıfı
+title: CScrollBar Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CScrollBar
@@ -30,16 +30,16 @@ helpviewer_keywords:
 - CScrollBar [MFC], SetScrollRange
 - CScrollBar [MFC], ShowScrollBar
 ms.assetid: f3735ca5-73ea-46dc-918b-4d824c9fe47f
-ms.openlocfilehash: cd0c1ed85969d50548cf6b2be1d5677ed62110bc
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 761d7e9db650c6d95e916c85bd7456d9b1c647c5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502568"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81318529"
 ---
-# <a name="cscrollbar-class"></a>CScrollBar sınıfı
+# <a name="cscrollbar-class"></a>CScrollBar Sınıfı
 
-Windows kaydırma çubuğu denetimi işlevlerini sağlar.
+Windows kaydırma çubuğu denetiminin işlevselliğini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,57 +51,57 @@ class CScrollBar : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CScrollBar:: CScrollBar](#cscrollbar)|Bir `CScrollBar` nesnesi oluşturur.|
+|[CScrollBar::CScrollBar](#cscrollbar)|Bir `CScrollBar` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CScrollBar:: Create](#create)|Windows kaydırma çubuğunu oluşturur ve `CScrollBar` nesneye ekler.|
-|[CScrollBar:: EnableScrollBar](#enablescrollbar)|Bir kaydırma çubuğunun bir ya da her iki okinin bir veya her iki oklarının|
-|[CScrollBar:: GetScrollBarInfo](#getscrollbarinfo)|Bir `SCROLLBARINFO` yapıyı kullanarak kaydırma çubuğu hakkındaki bilgileri alır.|
-|[CScrollBar:: Getscrollinınfo](#getscrollinfo)|Kaydırma çubuğu hakkındaki bilgileri alır.|
-|[CScrollBar:: GetScrollLimit](#getscrolllimit)|Kaydırma çubuğunun sınırını alır|
-|[CScrollBar:: GetScrollPos](#getscrollpos)|Bir kaydırma kutusunun geçerli konumunu alır.|
-|[CScrollBar:: GetScrollRange](#getscrollrange)|Verilen kaydırma çubuğu için geçerli en düşük ve en fazla kaydırma çubuğu konumunu alır.|
-|[CScrollBar:: Setscrollinınfo](#setscrollinfo)|Kaydırma çubuğu hakkındaki bilgileri ayarlar.|
-|[CScrollBar:: SetScrollPos](#setscrollpos)|Bir kaydırma kutusunun geçerli konumunu ayarlar.|
-|[CScrollBar:: SetScrollRange](#setscrollrange)|Verilen kaydırma çubuğu için en düşük ve en yüksek konum değerlerini ayarlar.|
-|[CScrollBar:: ShowScrollBar](#showscrollbar)|Bir kaydırma çubuğunu gösterir veya gizler.|
+|[CScrollBar::Oluştur](#create)|Windows kaydırma çubuğunu oluşturur ve `CScrollBar` nesneye bağlar.|
+|[CScrollBar::EnableScrollBar](#enablescrollbar)|Kaydırma çubuğunun bir veya her iki okunu etkinleştirir veya devre dışı kılabilir.|
+|[CScrollBar::GetScrollBarInfo](#getscrollbarinfo)|Bir `SCROLLBARINFO` yapı kullanarak kaydırma çubuğu hakkındaki bilgileri alır.|
+|[CScrollBar::GetScrollInfo](#getscrollinfo)|Kaydırma çubuğu yla ilgili bilgileri alır.|
+|[CScrollBar::GetScrollLimit](#getscrolllimit)|Kaydırma çubuğunun sınırını alır|
+|[CScrollBar::GetScrollPos](#getscrollpos)|Kaydırma kutusunun geçerli konumunu alır.|
+|[CScrollBar::GetScrollRange](#getscrollrange)|Verilen kaydırma çubuğu için geçerli minimum ve maksimum kaydırma çubuğu konumlarını alır.|
+|[CScrollBar::SetScrollInfo](#setscrollinfo)|Kaydırma çubuğu yla ilgili bilgileri ayarlar.|
+|[CScrollBar::SetScrollPos](#setscrollpos)|Kaydırma kutusunun geçerli konumunu ayarlar.|
+|[CScrollBar::SetScrollRange](#setscrollrange)|Verilen kaydırma çubuğu için minimum ve maksimum konum değerlerini ayarlar.|
+|[CScrollBar::ShowScrollBar](#showscrollbar)|Kaydırma çubuğugösterir veya gizler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İki adımda bir kaydırma çubuğu denetimi oluşturursunuz. İlk olarak, `CScrollBar` nesneyi oluşturmak `CScrollBar` için oluşturucuyu çağırın, sonra Windows kaydırma `CScrollBar` çubuğu denetimini oluşturmak ve nesneye iliştirmek için üye [Oluştur](#create) işlevini çağırın.
+İki adımda kaydırma çubuğu denetimi oluşturursunuz. Önce `CScrollBar` nesneyi oluşturmak `CScrollBar` için oluşturucuyu çağırın, ardından Windows kaydırma çubuğu denetimini oluşturmak `CScrollBar` için Üye [Oluştur](#create) işlevini çağırın ve nesneye takın.
 
-İletişim kutusu içinde ( `CScrollBar` bir iletişim kaynağı aracılığıyla) `CScrollBar` bir nesne oluşturursanız, Kullanıcı iletişim kutusunu kapattığında otomatik olarak yok edilir.
+Bir iletişim `CScrollBar` kutusu içinde (iletişim kaynağı aracılığıyla) bir `CScrollBar` nesne oluşturursanız, kullanıcı iletişim kutusunu kapattığında nesne otomatik olarak yok edilir.
 
-Bir pencere içinde bir `CScrollBar` nesne oluşturursanız, bunu yok etmeniz de gerekebilir.
+Bir pencere `CScrollBar` içinde bir nesne oluşturursanız, onu yok etmek de gerekebilir.
 
-`CScrollBar` Nesneyi yığında oluşturursanız, otomatik olarak yok edilir. `CScrollBar` Nesneyi **Yeni** işlevi kullanarak yığında oluşturursanız, Kullanıcı Windows kaydırma çubuğunu sonlandırdığında nesneyi yok etmek için **Delete** öğesini çağırmanız gerekir.
+Yığının `CScrollBar` üzerinde nesne oluşturursanız, otomatik olarak yok edilir. Nesneyi `CScrollBar` **yeni** işlevi kullanarak yığında oluşturursanız, kullanıcı Windows kaydırma çubuğunu sonlandırdığında nesneyi yok etmek için nesneyi **sil'i** aramanız gerekir.
 
-`CScrollBar` Nesnede herhangi bir bellek ayırırsanız, ayırmaların atılacağı `CScrollBar` yıkıcıyı geçersiz kılın.
+Nesnede `CScrollBar` herhangi bir bellek ayırırsanız, `CScrollBar` ayırmaları elden çıkarmak için yıkıcı geçersiz kılın.
 
-Kullanmayla `CScrollBar`ilgili bilgiler için bkz. [denetimler](../../mfc/controls-mfc.md).
+Kullanma `CScrollBar`hakkında ilgili ilgili bilgiler için [Denetimler'e](../../mfc/controls-mfc.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 `CScrollBar`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** Afxwin. h
+**Üstbilgi:** afxwin.h
 
-##  <a name="create"></a>CScrollBar:: Create
+## <a name="cscrollbarcreate"></a><a name="create"></a>CScrollBar::Oluştur
 
-Windows kaydırma çubuğunu oluşturur ve `CScrollBar` nesneye ekler.
+Windows kaydırma çubuğunu oluşturur ve `CScrollBar` nesneye bağlar.
 
 ```
 virtual BOOL Create(
@@ -113,43 +113,43 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwStyle*<br/>
-Kaydırma çubuğunun stilini belirtir. Kaydırma çubuğuna [kaydırma çubuğu stillerinin](../../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles) herhangi bir birleşimini uygulayın.
+*Dwstyle*<br/>
+Kaydırma çubuğunun stilini belirtir. Kaydırma çubuğu [stillerinin](../../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles) herhangi bir birleşimini kaydırma çubuğuna uygulayın.
 
 *Rect*<br/>
-Kaydırma çubuğunun boyutunu ve konumunu belirtir. Ya bir `RECT` yapı ya da bir `CRect` nesne olabilir.
+Kaydırma çubuğunun boyutunu ve konumunu belirtir. Bir `RECT` yapı veya nesne `CRect` olabilir.
 
 *pParentWnd*<br/>
-Kaydırma çubuğunun üst penceresini, genellikle bir `CDialog` nesneyi belirtir. NULL olmaması gerekir.
+Kaydırma çubuğunun ana penceresini, genellikle `CDialog` bir nesneyi belirtir. NULL olmamalıdır.
 
-*NID*<br/>
-Kaydırma çubuğunun denetim KIMLIĞI.
+*Nıd*<br/>
+Kaydırma çubuğunun kontrol kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki adımda bir `CScrollBar` nesne oluşturursunuz. İlk olarak, `CScrollBar` nesneyi oluşturan oluşturucuyu çağırın; ardından, ilişkili Windows kaydırma `Create`çubuğunu oluşturup başlatan `CScrollBar` ve bunu nesnesine ekleyen çağırın.
+Bir nesneyi `CScrollBar` iki adımda inşa ee. İlk olarak, nesneyi oluşturan yapıcıyı `CScrollBar` arayın; sonra, `Create`ilişkili Windows kaydırma çubuğunu oluşturur ve başharfe bağlar `CScrollBar` ve nesneye bağlar.
 
-Bir kaydırma çubuğuna aşağıdaki [pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#window-styles) uygulayın:
+Aşağıdaki [pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#window-styles) kaydırma çubuğuna uygulayın:
 
-- WS_CHILD her zaman
+- WS_CHILD Her Zaman
 
-- WS_VISIBLE genellikle
+- WS_VISIBLE Genellikle
 
-- WS_DISABLED nadiren
+- WS_DISABLED Nadiren
 
-- WS_GROUP denetimleri
+- WS_GROUP Denetimleri gruplandırmak için
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CScrollBar#1](../../mfc/reference/codesnippet/cpp/cscrollbar-class_1.cpp)]
 
-##  <a name="cscrollbar"></a>CScrollBar:: CScrollBar
+## <a name="cscrollbarcscrollbar"></a><a name="cscrollbar"></a>CScrollBar::CScrollBar
 
-Bir `CScrollBar` nesnesi oluşturur.
+Bir `CScrollBar` nesne inşa eder.
 
 ```
 CScrollBar();
@@ -157,15 +157,15 @@ CScrollBar();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnesi oluşturulduktan sonra, Windows kaydırma çubuğunu `Create` oluşturmak ve başlatmak için üye işlevini çağırın.
+Nesneyi oluşturduktan sonra, `Create` Windows kaydırma çubuğunu oluşturmak ve başlatmak için üye işlevi arayın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CScrollBar#2](../../mfc/reference/codesnippet/cpp/cscrollbar-class_2.h)]
 
-##  <a name="enablescrollbar"></a>CScrollBar:: EnableScrollBar
+## <a name="cscrollbarenablescrollbar"></a><a name="enablescrollbar"></a>CScrollBar::EnableScrollBar
 
-Bir kaydırma çubuğunun bir ya da her iki okinin bir veya her iki oklarının
+Kaydırma çubuğunun bir veya her iki okunu etkinleştirir veya devre dışı kılabilir.
 
 ```
 BOOL EnableScrollBar(UINT nArrowFlags = ESB_ENABLE_BOTH);
@@ -173,28 +173,28 @@ BOOL EnableScrollBar(UINT nArrowFlags = ESB_ENABLE_BOTH);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dar bayraklar*<br/>
-Kaydırma oklarının etkin mi yoksa devre dışı mı olduğunu ve hangi okların etkinleştirildiğini veya devre dışı bırakılacağını belirtir. Bu parametre aşağıdaki değerlerden biri olabilir:
+*nArrowFlags*<br/>
+Kaydırma oklarının etkin veya devre dışı bırakıldığını ve hangi okların etkin veya devre dışı bırakıldığını belirtir. Bu parametre aşağıdaki değerlerden biri olabilir:
 
-- ESB_ENABLE_BOTH, bir kaydırma çubuğunun her iki okda Izin vermez.
+- ESB_ENABLE_BOTH Kaydırma çubuğunun her iki okunu da etkinleştirilir.
 
-- ESB_DISABLE_LTUP bir yatay kaydırma çubuğunun sol okuna veya dikey bir kaydırma çubuğunun yukarı okuna devre dışı bırakır.
+- ESB_DISABLE_LTUP yatay kaydırma çubuğunun sol okunu veya dikey kaydırma çubuğunun yukarı okunu devre dışı bırakmaz.
 
-- ESB_DISABLE_RTDN bir yatay kaydırma çubuğunun sağ okuna veya dikey bir kaydırma çubuğunun aşağı okuna devre dışı bırakır.
+- ESB_DISABLE_RTDN yatay kaydırma çubuğunun sağ okunu veya dikey kaydırma çubuğunun aşağı okunu devre dışı kılabilir.
 
-- ESB_DISABLE_BOTH, kaydırma çubuğunun her iki oku devre dışı bırakır.
+- ESB_DISABLE_BOTH kaydırma çubuğunun her iki okunu da devre dışı kılabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Oklar etkinse veya belirtilen şekilde devre dışı bırakılmışsa sıfır dışında; Aksi halde, okların istenen durumda olduğunu veya bir hatanın oluştuğunu gösteren 0.
+Oklar belirtildiği gibi etkin veya devre dışı bırakılırsa sıfıra inmez; aksi takdirde 0, hangi oklar zaten istenen durumda olduğunu veya bir hata oluştuğunu gösterir.
 
 ### <a name="example"></a>Örnek
 
-  [CScrollBar:: SetScrollRange](#setscrollrange)örneğine bakın.
+  CScrollBar örneğine [bakın:SetScrollRange.](#setscrollrange)
 
-##  <a name="getscrollbarinfo"></a>CScrollBar:: GetScrollBarInfo
+## <a name="cscrollbargetscrollbarinfo"></a><a name="getscrollbarinfo"></a>CScrollBar::GetScrollBarInfo
 
-`SCROLLBARINFO` Yapının bir kaydırma çubuğu hakkında koruduğu bilgileri alır.
+Yapının `SCROLLBARINFO` kaydırma çubuğu hakkında koruduğu bilgileri alır.
 
 ```
 BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;
@@ -203,19 +203,19 @@ BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;
 ### <a name="parameters"></a>Parametreler
 
 *pScrollInfo*<br/>
-[SCROLLBARINFO](/windows/win32/api/winuser/ns-winuser-scrollbarinfo) yapısına yönelik bir işaretçi.
+[SCROLLBARINFO](/windows/win32/api/winuser/ns-winuser-scrollbarinfo) yapısına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE, hatada FALSE döndürür.
+Başarı doğru döndürür, başarısızlık false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi [SBM_SCROLLBARINFO](/windows/win32/Controls/sbm-getscrollbarinfo) iletisinin işlevselliğine öykünür.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [SBM_SCROLLBARINFO](/windows/win32/Controls/sbm-getscrollbarinfo) iletisinin işlevselliğini taklit eder.
 
-##  <a name="getscrollinfo"></a>CScrollBar:: Getscrollinınfo
+## <a name="cscrollbargetscrollinfo"></a><a name="getscrollinfo"></a>CScrollBar::GetScrollInfo
 
-`SCROLLINFO` Yapının bir kaydırma çubuğu hakkında koruduğu bilgileri alır.
+Yapının `SCROLLINFO` kaydırma çubuğu hakkında koruduğu bilgileri alır.
 
 ```
 BOOL GetScrollInfo(
@@ -226,30 +226,30 @@ BOOL GetScrollInfo(
 ### <a name="parameters"></a>Parametreler
 
 *lpScrollInfo*<br/>
-Bir [Scrollinfo](/windows/win32/api/winuser/ns-winuser-scrollinfo) yapısına yönelik işaretçi. Bu yapı hakkında daha fazla bilgi için Windows SDK bakın.
+[SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) yapısına işaretçi. Bu yapı hakkında daha fazla bilgi için Windows SDK'ya bakın.
 
 *nMask*<br/>
-Alınacak kaydırma çubuğu parametrelerini belirtir. Tipik kullanım, SIF_ALL, SIF_PAGE, SIF_POS, SIF_TRACKPOS ve SIF_RANGE birleşimini belirtir. NMask değerleri hakkında daha fazla bilgi için bkz `SCROLLINFO` .
+Alınacak kaydırma çubuğu parametrelerini belirtir. Tipik kullanım, SIF_ALL, SIF_PAGE, SIF_POS, SIF_TRACKPOS ve SIF_RANGE bir arada belirtir. nMask değerleri hakkında daha fazla bilgi için bkz. `SCROLLINFO`
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti herhangi bir değer elde alıyorsa, dönüş doğru olur. Aksi halde, yanlış olur.
+İleti herhangi bir değer aldıysa, iade TRUE'dur. Aksi takdirde, BU YANLIŞ olduğunu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetScrollInfo`uygulamaların 32 bitlik kaydırma konumlarını kullanmasına olanak sağlar.
+`GetScrollInfo`uygulamaların 32 bit kaydırma konumlarını kullanmasını sağlar.
 
-[Scrollinfo](/windows/win32/api/winuser/ns-winuser-scrollinfo) yapısı, en düşük ve en yüksek kaydırma konumları, sayfa boyutu ve kaydırma kutusunun konumu (Thumb) dahil olmak üzere bir kaydırma çubuğu hakkındaki bilgileri içerir. Yapı varsayılanlarını değiştirme hakkında daha fazla bilgi için Windows SDK Yapıkonusunabakın.`SCROLLINFO`
+[SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) yapısı, minimum ve maksimum kaydırma konumları, sayfa boyutu ve kaydırma kutusunun (başparmak) konumu da dahil olmak üzere bir kaydırma çubuğu hakkında bilgi içerir. Yapı `SCROLLINFO` varsayılanlarını değiştirme hakkında daha fazla bilgi için Windows SDK'daki yapı konusuna bakın.
 
-Kaydırma çubuğu konumunu, [CWnd:: OnHScroll ve [CWnd:: OnVScroll](../../mfc/reference/cwnd-class.md#onvscroll)DEĞERINI belirten mfc Windows ileti işleyicileri yalnızca 16 bit konum verisi sağlar. `GetScrollInfo`ve `SetScrollInfo` 32 bit kaydırma çubuğu konumu verisi sağlar. Bu nedenle, bir uygulama işlem `GetScrollInfo` sırasında ya `CWnd::OnVScroll` da `CWnd::OnHScroll` 32 bitlik kaydırma çubuğu konumu verileri elde etmek için çağrı yapabilir.
+Kaydırma çubuğu konumunu gösteren MFC Windows ileti işleyicileri, [CWnd::OnHScroll ve [CWnd::OnVScroll](../../mfc/reference/cwnd-class.md#onvscroll), yalnızca 16 bit konum verisi sağlar. `GetScrollInfo`ve `SetScrollInfo` 32 bit kaydırma çubuğu konumu verileri sağlayın. Böylece, bir uygulama `GetScrollInfo` ya `CWnd::OnHScroll` işleme `CWnd::OnVScroll` sırasında arama veya 32-bit kaydırma çubuğu konumu verileri elde etmek için.
 
 ### <a name="example"></a>Örnek
 
-  [CWnd:: OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll)örneğine bakın.
+  CWnd örneğine [bakın:OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll).
 
-##  <a name="getscrolllimit"></a>CScrollBar:: GetScrollLimit
+## <a name="cscrollbargetscrolllimit"></a><a name="getscrolllimit"></a>CScrollBar::GetScrollLimit
 
-Kaydırma çubuğunun en büyük kaydırma konumunu alır.
+Kaydırma çubuğunun maksimum kaydırma konumunu alır.
 
 ```
 int GetScrollLimit();
@@ -257,15 +257,15 @@ int GetScrollLimit();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa kaydırma çubuğunun maksimum konumunu belirtir; Aksi takdirde 0.
+Başarılı olursa kaydırma çubuğunun maksimum konumunu belirtir; aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
-  [CWnd:: OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll)örneğine bakın.
+  CWnd örneğine [bakın:OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll).
 
-##  <a name="getscrollpos"></a>CScrollBar:: GetScrollPos
+## <a name="cscrollbargetscrollpos"></a><a name="getscrollpos"></a>CScrollBar::GetScrollPos
 
-Bir kaydırma kutusunun geçerli konumunu alır.
+Kaydırma kutusunun geçerli konumunu alır.
 
 ```
 int GetScrollPos() const;
@@ -273,19 +273,19 @@ int GetScrollPos() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa kaydırma kutusunun geçerli konumunu belirtir; Aksi takdirde 0.
+Başarılı olursa kaydırma kutusunun geçerli konumunu belirtir; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli konum, geçerli kaydırma aralığına bağlı olan göreli bir değerdir. Örneğin, kaydırma aralığı 100 ile 200 ise ve kaydırma kutusu çubuğun ortasında ise, geçerli konum 150 ' dir.
+Geçerli konum, geçerli kaydırma aralığına bağlı olarak göreli bir değerdir. Örneğin, kaydırma aralığı 100 ile 200 arasındaysa ve kaydırma kutusu çubuğun ortasındaysa, geçerli konum 150'dir.
 
 ### <a name="example"></a>Örnek
 
-  [CWnd:: OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll)örneğine bakın.
+  CWnd örneğine [bakın:OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll).
 
-##  <a name="getscrollrange"></a>CScrollBar:: GetScrollRange
+## <a name="cscrollbargetscrollrange"></a><a name="getscrollrange"></a>CScrollBar::GetScrollRange
 
-Verilen kaydırma çubuğu için geçerli en düşük ve en büyük kaydırma çubuğu konumlarını, *lpMinPos* ve *lpMaxPos*tarafından belirtilen konumlara kopyalar.
+Verilen kaydırma çubuğu için geçerli minimum ve maksimum kaydırma çubuğu konumlarını *lpMinPos* ve *lpMaxPos*tarafından belirtilen konumlara kopyalar.
 
 ```
 void GetScrollRange(
@@ -296,22 +296,22 @@ void GetScrollRange(
 ### <a name="parameters"></a>Parametreler
 
 *lpMinPos*<br/>
-En küçük konumu alacak tamsayı değişkenine işaret eder.
+Minimum konumu almak için olan sonsayı değişkenine işaret ediyor.
 
 *lpMaxPos*<br/>
-En yüksek konumu alacak tamsayı değişkenine işaret eder.
+Maksimum konumu almak için, sondaki değişkene işaret ediyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kaydırma çubuğu denetimi için varsayılan Aralık boştur (her iki değer de 0 ' dır).
+Kaydırma çubuğu denetimi için varsayılan aralık boştur (her iki değer de 0'dır).
 
 ### <a name="example"></a>Örnek
 
-  [CWnd:: OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll)örneğine bakın.
+  CWnd örneğine [bakın:OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll).
 
-##  <a name="setscrollinfo"></a>CScrollBar:: Setscrollinınfo
+## <a name="cscrollbarsetscrollinfo"></a><a name="setscrollinfo"></a>CScrollBar::SetScrollInfo
 
-`SCROLLINFO` Yapının bir kaydırma çubuğu hakkında koruduğu bilgileri ayarlar.
+Yapının `SCROLLINFO` kaydırma çubuğu hakkında koruduğu bilgileri ayarlar.
 
 ```
 BOOL SetScrollInfo(
@@ -322,28 +322,28 @@ BOOL SetScrollInfo(
 ### <a name="parameters"></a>Parametreler
 
 *lpScrollInfo*<br/>
-Bir [Scrollinfo](/windows/win32/api/winuser/ns-winuser-scrollinfo) yapısına yönelik işaretçi.
+[SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) yapısına işaretçi.
 
 *bRedraw*<br/>
-Kaydırma çubuğunun yeni bilgileri yansıtacak şekilde yeniden çizilip çizmeyeceğini belirtir. *BRedraw* true ise, kaydırma çubuğu yeniden çizilir. YANLıŞ ise yeniden çizilmez. Kaydırma çubuğu varsayılan olarak yeniden çizilir.
+Kaydırma çubuğunun yeni bilgileri yansıtacak şekilde yeniden çizilip çizilmeyeceğini belirtir. *bRedraw* TRUE ise kaydırma çubuğu yeniden çizilir. YANLIŞ ise, yeniden çizilmez. Kaydırma çubuğu varsayılan olarak yeniden çizilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, dönüş doğru olur. Aksi halde, yanlış olur.
+Başarılı olursa, dönüş DOĞRUolur. Aksi takdirde, BU YANLIŞ olduğunu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bayrak değerleri de dahil olmak üzere `SCROLLINFO` yapı parametreleri için gereken değerleri sağlamanız gerekir.
+Bayrak değerleri de dahil `SCROLLINFO` olmak üzere yapı parametrelerinin gerektirdiği değerleri sağlamanız gerekir.
 
-`SCROLLINFO` Yapı, en düşük ve en yüksek kaydırma konumları, sayfa boyutu ve kaydırma kutusunun konumu (Thumb) dahil olmak üzere bir kaydırma çubuğu hakkındaki bilgileri içerir. Yapı varsayılanlarını değiştirme hakkında daha fazla bilgi için Windows SDK ' daki [Scrollinfo](/windows/win32/api/winuser/ns-winuser-scrollinfo) yapısı konusuna bakın.
+Yapı, `SCROLLINFO` minimum ve maksimum kaydırma konumları, sayfa boyutu ve kaydırma kutusunun (başparmak) konumu da dahil olmak üzere bir kaydırma çubuğu hakkında bilgi içerir. Yapı varsayılanlarını değiştirme hakkında daha fazla bilgi için Windows SDK'daki [SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) yapı konusuna bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CScrollBar#3](../../mfc/reference/codesnippet/cpp/cscrollbar-class_3.cpp)]
 
-##  <a name="setscrollpos"></a>CScrollBar:: SetScrollPos
+## <a name="cscrollbarsetscrollpos"></a><a name="setscrollpos"></a>CScrollBar::SetScrollPos
 
-Bir kaydırma kutusunun geçerli konumunu *nPos* tarafından belirtilen şekilde ayarlar ve belirtilmişse, kaydırma çubuğunu yeni konumu yansıtacak şekilde yeniden çizer.
+Kaydırma kutusunun geçerli konumunu *nPos* tarafından belirtilen konuma ayarlar ve belirtildiği takdirde kaydırma çubuğunu yeni konumu yansıtacak şekilde yeniden çizer.
 
 ```
 int SetScrollPos(
@@ -354,26 +354,26 @@ int SetScrollPos(
 ### <a name="parameters"></a>Parametreler
 
 *nPos*<br/>
-Kaydırma kutusunun yeni konumunu belirtir. Kaydırma aralığı içinde olmalıdır.
+Kaydırma kutusu için yeni konumu belirtir. Kaydırma aralığında olmalı.
 
 *bRedraw*<br/>
-Kaydırma çubuğunun yeni konumu yansıtacak şekilde yeniden çizilip çizmeyeceğini belirtir. *BRedraw* true ise, kaydırma çubuğu yeniden çizilir. YANLıŞ ise yeniden çizilmez. Kaydırma çubuğu varsayılan olarak yeniden çizilir.
+Kaydırma çubuğunun yeni konumu yansıtacak şekilde yeniden çizilip çizilmeyeceğini belirtir. *bRedraw* TRUE ise kaydırma çubuğu yeniden çizilir. YANLIŞ ise, yeniden çizilmez. Kaydırma çubuğu varsayılan olarak yeniden çizilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa kaydırma kutusunun önceki konumunu belirtir; Aksi takdirde 0.
+Başarılı olursa kaydırma kutusunun önceki konumunu belirtir; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaydırma çubuğunun kısa bir aralıkta iki kez yeniden çizilmesini önlemek için, kaydırma çubuğu başka bir işleve sonraki bir çağrı tarafından yeniden çizildiğinde, *bRedraw* değerini false olarak ayarlayın.
+Kaydırma çubuğunun kısa bir aralık içinde iki kez yeniden çizilmesini önlemek için sonraki bir çağrı yla kaydırma çubuğu başka bir işleve çağrı yapıldığında *bRedraw'ı* FALSE olarak ayarlayın.
 
 ### <a name="example"></a>Örnek
 
-  [CScrollBar:: SetScrollRange](#setscrollrange)örneğine bakın.
+  CScrollBar örneğine [bakın:SetScrollRange.](#setscrollrange)
 
-##  <a name="setscrollrange"></a>CScrollBar:: SetScrollRange
+## <a name="cscrollbarsetscrollrange"></a><a name="setscrollrange"></a>CScrollBar::SetScrollRange
 
-Verilen kaydırma çubuğu için en düşük ve en yüksek konum değerlerini ayarlar.
+Verilen kaydırma çubuğu için minimum ve maksimum konum değerlerini ayarlar.
 
 ```
 void SetScrollRange(
@@ -385,31 +385,31 @@ void SetScrollRange(
 ### <a name="parameters"></a>Parametreler
 
 *nMinPos*<br/>
-En düşük kaydırma konumunu belirtir.
+Minimum kaydırma konumunu belirtir.
 
 *nMaxPos*<br/>
-En fazla kaydırma konumunu belirtir.
+Maksimum kaydırma konumunu belirtir.
 
 *bRedraw*<br/>
-Kaydırma çubuğunun değişikliği yansıtacak şekilde yeniden çizilip çizmeyeceğini belirtir. *BRedraw* true ise, kaydırma çubuğu yeniden çizilir; YANLıŞSA, yeniden çizilmez. Varsayılan olarak yeniden çizilir.
+Kaydırma çubuğunun değişikliği yansıtacak şekilde yeniden çizilip çizilmeyeceğini belirtir. *bRedraw* TRUE ise kaydırma çubuğu yeniden çizilir; FALSE ise, yeniden çizilmez. Varsayılan olarak yeniden çizilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Standart kaydırma çubuklarını gizlemek için *nMinPos* ve *nMaxPos* 'u 0 olarak ayarlayın.
+Standart kaydırma çubuklarını gizlemek için *nMinPos* ve *nMaxPos'u* 0 olarak ayarlayın.
 
-Bir kaydırma çubuğu bildirim iletisini işlerken kaydırma çubuğunu gizlemek için bu işlevi çağırmayın.
+Kaydırma çubuğu bildirim iletisini işlerken kaydırma çubuğunun gizlemesi için bu işlevi aramayın.
 
-Üye işlevine yapılan bir `SetScrollRange` çağrıyı `SetScrollPos` hemen takip eden bir çağrı varsa, kaydırma çubuğunun iki kez yeniden çizilmesini engellemek için bRedraw ' ı 0 olarak ayarlayın. `SetScrollPos`
+Üye işlevine `SetScrollRange` yapılan bir çağrıyı hemen izlerse, `SetScrollPos` kaydırma çubuğunun iki kez yeniden çizilmesini önlemek için *bRedraw'ı* 0 olarak ayarlayın. `SetScrollPos`
 
-*NMinPos* ve *nMaxPos* tarafından belirtilen değerler arasındaki fark 32.767 değerinden büyük olmamalıdır. Bir kaydırma çubuğu denetimi için varsayılan Aralık boştur ( *nMinPos* ve *nMaxPos* 0 ' dır).
+*nMinPos* ve *nMaxPos* tarafından belirtilen değerler arasındaki fark 32.767'den büyük olmamalıdır. Kaydırma çubuğu denetimi için varsayılan aralık boştur (hem *nMinPos* hem de *nMaxPos* 0'dır).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CScrollBar#4](../../mfc/reference/codesnippet/cpp/cscrollbar-class_4.cpp)]
 
-##  <a name="showscrollbar"></a>CScrollBar:: ShowScrollBar
+## <a name="cscrollbarshowscrollbar"></a><a name="showscrollbar"></a>CScrollBar::ShowScrollBar
 
-Bir kaydırma çubuğunu gösterir veya gizler.
+Kaydırma çubuğugösterir veya gizler.
 
 ```
 void ShowScrollBar(BOOL bShow = TRUE);
@@ -417,16 +417,16 @@ void ShowScrollBar(BOOL bShow = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bShow*<br/>
-Kaydırma çubuğunun gösterilip gösterilmeyeceğini veya gizlenmeyeceğini belirtir. Bu parametre TRUE ise, kaydırma çubuğu gösterilir; Aksi halde gizli olur.
+*bGöster*<br/>
+Kaydırma çubuğunun gösterip gösterilmediğini veya gizlenip gizlenmediğini belirtir. Bu parametre TRUE ise kaydırma çubuğu gösterilir; aksi takdirde gizlidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir uygulama, bir kaydırma çubuğu bildirim iletisini işlerken bir kaydırma çubuğunu gizlemek için bu işlevi çağırmamalıdır.
+Bir uygulama kaydırma çubuğubildirim iletisini işlerken kaydırma çubuğugizlemek için bu işlevi aramamalıdır.
 
 ### <a name="example"></a>Örnek
 
-  [CScrollBar:: Create](#create)örneğine bakın.
+  CScrollBar için örneğe [bakın:Oluştur](#create).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -437,5 +437,5 @@ Bir uygulama, bir kaydırma çubuğu bildirim iletisini işlerken bir kaydırma 
 [CComboBox Sınıfı](../../mfc/reference/ccombobox-class.md)<br/>
 [CEdit Sınıfı](../../mfc/reference/cedit-class.md)<br/>
 [CListBox Sınıfı](../../mfc/reference/clistbox-class.md)<br/>
-[CStatic Sınıfı](../../mfc/reference/cstatic-class.md)<br/>
+[Cstatic Sınıfı](../../mfc/reference/cstatic-class.md)<br/>
 [CDialog Sınıfı](../../mfc/reference/cdialog-class.md)

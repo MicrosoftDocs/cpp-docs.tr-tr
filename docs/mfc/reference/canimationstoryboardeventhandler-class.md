@@ -1,5 +1,5 @@
 ---
-title: CAnimationStoryboardEventHandler sınıfı
+title: CAnimationStoryboardEventHandler Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAnimationStoryboardEventHandler
@@ -16,16 +16,16 @@ helpviewer_keywords:
 - CAnimationStoryboardEventHandler [MFC], OnStoryboardUpdated
 - CAnimationStoryboardEventHandler [MFC], SetAnimationController
 ms.assetid: 10a7e86b-c02d-4124-9a2e-61ecf8ac62fc
-ms.openlocfilehash: d12f38491cf3aafca41756ce97e1cad44deb67d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36b8b524591693775403d66fdc1f0754aaf67778
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338265"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364997"
 ---
-# <a name="canimationstoryboardeventhandler-class"></a>CAnimationStoryboardEventHandler sınıfı
+# <a name="canimationstoryboardeventhandler-class"></a>CAnimationStoryboardEventHandler Sınıfı
 
-Film şeridinin durumu değiştirildiğinde veya film şeridi güncelleştirildiğinde animasyon API'sı tarafından çağrılan bir geri arama gerçekleştirir.
+Bir hikaye şeridinin durumu değiştirildiğinde veya bir film şeridi güncelleştirildiğinde Animasyon API'sı tarafından çağrılan bir geri arama uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,22 +37,22 @@ class CAnimationStoryboardEventHandler : public CUIAnimationStoryboardEventHandl
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationStoryboardEventHandler::CAnimationStoryboardEventHandler](#canimationstoryboardeventhandler)|Oluşturur bir `CAnimationStoryboardEventHandler` nesne.|
+|[CAnimationStoryboardEventHandler::CAnimationStoryboardEventHandler](#canimationstoryboardeventhandler)|Bir `CAnimationStoryboardEventHandler` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationStoryboardEventHandler::CreateInstance](#createinstance)|Örneği oluşturur `CAnimationStoryboardEventHandler` geri çağırma.|
-|[CAnimationStoryboardEventHandler::OnStoryboardStatusChanged](#onstoryboardstatuschanged)|İşleme `OnStoryboardStatusChanged` bir şeridinin durumu değiştiğinde oluşan olayları (geçersiz kılmaları `CUIAnimationStoryboardEventHandlerBase::OnStoryboardStatusChanged`.)|
-|[CAnimationStoryboardEventHandler::OnStoryboardUpdated](#onstoryboardupdated)|İşleme `OnStoryboardUpdated` film şeridi güncelleştirildiğinde oluşan olayları (geçersiz kılmaları `CUIAnimationStoryboardEventHandlerBase::OnStoryboardUpdated`.)|
-|[CAnimationStoryboardEventHandler::SetAnimationController](#setanimationcontroller)|Animasyon denetleyicisini rota olaylar için bir işaretçi depolar.|
+|[CAnimationStoryboardEventHandler::CreateInstance](#createinstance)|Geri `CAnimationStoryboardEventHandler` arama örneği oluşturur.|
+|[CAnimationStoryboardEventHandler::OnStoryboardStatusChanged](#onstoryboardstatuschanged)|Bir `OnStoryboardStatusChanged` film şeridinin durumu değiştiğinde oluşan olayları işler `CUIAnimationStoryboardEventHandlerBase::OnStoryboardStatusChanged`(Geçersiz kılar.)|
+|[CAnimationStoryboardEventHandler::OnStoryboardGüncel](#onstoryboardupdated)|Bir `OnStoryboardUpdated` film şeridi güncelleştirildiğinde oluşan olayları işler `CUIAnimationStoryboardEventHandlerBase::OnStoryboardUpdated`(Geçersiz kılar.)|
+|[CAnimationStoryboardEventHandler::SetAnimationController](#setanimationcontroller)|Olayları yönlendirmek için animasyon denetleyicisine işaretçi saklar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu olay işleyicisi oluşturulur ve geçirilen `IUIAnimationStoryboard::SetStoryboardEventHandler` yöntemi çağırdığınızda, `CAnimationController::EnableStoryboardEventHandler`.
+Bu olay işleyicisi `IUIAnimationStoryboard::SetStoryboardEventHandler` oluşturulur ve yönteme geçirilir, ne zaman . `CAnimationController::EnableStoryboardEventHandler`
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -64,19 +64,19 @@ Bu olay işleyicisi oluşturulur ve geçirilen `IUIAnimationStoryboard::SetStory
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="canimationstoryboardeventhandler"></a>  CAnimationStoryboardEventHandler::CAnimationStoryboardEventHandler
+## <a name="canimationstoryboardeventhandlercanimationstoryboardeventhandler"></a><a name="canimationstoryboardeventhandler"></a>CAnimationStoryboardEventHandler::CAnimationStoryboardEventHandler
 
-CAnimationStoryboardEventHandler bir nesne oluşturur.
+CAnimationStoryboardEventHandler nesnesi oluşturuyor.
 
 ```
 CAnimationStoryboardEventHandler();
 ```
 
-##  <a name="createinstance"></a>  CAnimationStoryboardEventHandler::CreateInstance
+## <a name="canimationstoryboardeventhandlercreateinstance"></a><a name="createinstance"></a>CAnimationStoryboardEventHandler::CreateInstance
 
-CAnimationStoryboardEventHandler geri çağırma örneği oluşturur.
+CAnimationStoryboardEventHandler geri çağırma bir örneği oluşturur.
 
 ```
 static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
@@ -87,17 +87,17 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ### <a name="parameters"></a>Parametreler
 
 *pAnimationController*<br/>
-Olayları alacaksınız animasyon denetleyicisini bir işaretçi.
+Olayları alacak animasyon denetleyicisi için bir işaretçi.
 
 *ppHandler*
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
 
-##  <a name="onstoryboardstatuschanged"></a>  CAnimationStoryboardEventHandler::OnStoryboardStatusChanged
+## <a name="canimationstoryboardeventhandleronstoryboardstatuschanged"></a><a name="onstoryboardstatuschanged"></a>CAnimationStoryboardEventHandler::OnStoryboardStatusChanged
 
-Bir şeridinin durumu değiştiğinde oluşan OnStoryboardStatusChanged olaylarını işleme
+Bir film şeridinin durumu değiştiğinde meydana gelen OnStoryboardStatusChanged olayları işler
 
 ```
 IFACEMETHOD(OnStoryboardStatusChanged) (
@@ -108,22 +108,22 @@ IFACEMETHOD(OnStoryboardStatusChanged) (
 
 ### <a name="parameters"></a>Parametreler
 
-*görsel taslak*<br/>
-Bir işaretçi için görsel taslak durumu değişti.
+*Film şeridi*<br/>
+Durumu değişen bir film şeridi için işaretçi.
 
-*newStatus*<br/>
-Yeni görsel taslak durumu belirtir.
+*newDurum*<br/>
+Yeni hikaye şeridi durumunu belirtir.
 
-*previousStatus*<br/>
-Önceki görsel taslak durumu belirtir.
+*öncekiDurum*<br/>
+Önceki film şeridi durumunu belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK; Aksi takdirde E_FAIL.
+yöntem başarılı olursa S_OK; aksi takdirde E_FAIL.
 
-##  <a name="onstoryboardupdated"></a>  CAnimationStoryboardEventHandler::OnStoryboardUpdated
+## <a name="canimationstoryboardeventhandleronstoryboardupdated"></a><a name="onstoryboardupdated"></a>CAnimationStoryboardEventHandler::OnStoryboardGüncel
 
-Bir film şeridi güncelleştirildiğinde oluşan OnStoryboardUpdated olaylarını işleme
+Bir film şeridi güncelleştirildiğinde ortaya çıkan OnStoryboardGüncel olayları işler
 
 ```
 IFACEMETHOD(OnStoryboardUpdated) (__in IUIAnimationStoryboard* storyboard);
@@ -131,16 +131,16 @@ IFACEMETHOD(OnStoryboardUpdated) (__in IUIAnimationStoryboard* storyboard);
 
 ### <a name="parameters"></a>Parametreler
 
-*görsel taslak*<br/>
-Güncelleştirilmiş görsel taslağa dönüştürme bir işaretçisi.
+*Film şeridi*<br/>
+Güncelleştirilen bir film şeridi işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK; Aksi takdirde E_FAIL.
+yöntem başarılı olursa S_OK; aksi takdirde E_FAIL.
 
-##  <a name="setanimationcontroller"></a>  CAnimationStoryboardEventHandler::SetAnimationController
+## <a name="canimationstoryboardeventhandlersetanimationcontroller"></a><a name="setanimationcontroller"></a>CAnimationStoryboardEventHandler::SetAnimationController
 
-Animasyon denetleyicisini rota olaylar için bir işaretçi depolar.
+Olayları yönlendirmek için animasyon denetleyicisine işaretçi saklar.
 
 ```
 void SetAnimationController(CAnimationController* pAnimationController);
@@ -149,7 +149,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ### <a name="parameters"></a>Parametreler
 
 *pAnimationController*<br/>
-Olayları alacaksınız animasyon denetleyicisini bir işaretçi.
+Olayları alacak animasyon denetleyicisi için bir işaretçi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

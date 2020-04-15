@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX denetimleri: Özellik Sayfaları'
+title: 'MFC ActiveX Denetimleri: Özellik Sayfaları'
 ms.date: 11/19/2018
 helpviewer_keywords:
 - DDP_ functions [MFC]
@@ -10,112 +10,112 @@ helpviewer_keywords:
 - CPropertyPageDialog class [MFC]
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
-ms.openlocfilehash: 3fe092e412cf11f7bf8600e8d0d7d43abb0e11c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c31d13e03483f8632f17a526da75ebe8e21bccbf
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62239959"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364576"
 ---
-# <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX denetimleri: Özellik Sayfaları
+# <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX Denetimleri: Özellik Sayfaları
 
-Özellik sayfaları ActiveX denetimi özelliklerini görüntülemek ve değiştirmek bir ActiveX denetimi verin. Bu özellikler, görüntüleme ve denetim özelliklerini düzenleme için özelleştirilmiş, grafik bir arabirim sağlayan bir veya daha fazla özellik sayfaları içeren bir denetim özellikleri iletişim kutusu çağırarak erişilir.
+Özellik sayfaları, ActiveX denetim kullanıcısının ActiveX denetim özelliklerini görüntülemesine ve değiştirmesine olanak tanır. Bu özelliklere, denetim özelliklerini görüntülemek ve düzenlemek için özelleştirilmiş, grafiksel bir arabirim sağlayan bir veya daha fazla özellik sayfası içeren bir denetim özellikleri iletişim kutusu çağırılarak erişilir.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
 
-ActiveX denetimi özellik sayfaları, iki şekilde görüntülenir:
+ActiveX denetim özelliği sayfaları iki şekilde görüntülenir:
 
-- Olduğunda denetimin özellikler fiili (**OLEIVERB_PROPERTIES**) olan çağrılır, denetimin denetimin özellik sayfaları içeren bir kalıcı özellik iletişim kutusu açılır.
+- Denetimin Özellikleri fiili **(OLEIVERB_PROPERTIES)** çağrıldığında, denetim, denetimin özellik sayfalarını içeren bir modal özellik iletişim kutusunu açar.
 
-- Kapsayıcı seçilen denetimin özellik sayfalarını gösterir, kendi modsuz iletişim kutusu görüntüleyebilir.
+- Kapsayıcı, seçili denetimin özellik sayfalarını gösteren kendi modeless iletişim kutusunu görüntüleyebilir.
 
-(Aşağıdaki şekilde gösterilen) Özellikleri iletişim kutusu sekmeleri özellik sayfaları ve özellik sayfası iletişim kutusu kapatma gibi genel görevleri gerçekleştirmenize düğmelerinin koleksiyonunu arasında geçiş yapmak için geçerli özellik sayfasını görüntülemek için bir alan oluşur, yapılan tüm değişiklikler iptal etme veya hemen ActiveX denetimine değişiklikleri uygulanıyor.
+Özellikler iletişim kutusu (aşağıdaki şekilde gösterilmiştir), geçerli özellik sayfasını görüntülemek için bir alan, özellik sayfaları arasında geçiş yapmak için sekmeler ve özellik sayfası iletişim kutusunu kapatma, yapılan değişiklikleri iptal etme veya activex denetimine hemen herhangi bir değişiklik uygulama gibi yaygın görevleri gerçekleştiren düğmeler koleksiyonundan oluşur.
 
-![Özellikler iletişim kutusunu Circ3](../mfc/media/vc373i1.gif "Circ3 için özellikleri iletişim kutusu") <br/>
-Özellikleri iletişim kutusu
+![Circ3 için Özellikler iletişim kutusu](../mfc/media/vc373i1.gif "Circ3 için Özellikler iletişim kutusu") <br/>
+Özellikler İletişim Kutusu
 
-Bu makalede, bir ActiveX denetimi özellik sayfaları kullanmayla ilgili konular ele alınmaktadır. Bu güncelleştirmeler şunlardır:
+Bu makalede, ActiveX denetiminde özellik sayfalarını kullanmayla ilgili konular ele alınarak ele alınabilirsiniz. Bunlar:
 
-- [Bir ActiveX denetimi için varsayılan özellik sayfası uygulama](#_core_implementing_the_default_property_page)
+- [ActiveX denetimi için varsayılan özellik sayfasını uygulama](#_core_implementing_the_default_property_page)
 
-- [Bir özellik sayfasına denetim ekleme](#_core_adding_controls_to_a_property_page)
+- [Özellik sayfasına denetim ekleme](#_core_adding_controls_to_a_property_page)
 
-- [DoDataExchange işlevi özelleştirme](#_core_customizing_the_dodataexchange_function)
+- [DoDataExchange işlevini özelleştirme](#_core_customizing_the_dodataexchange_function)
 
 ActiveX denetiminde özellik sayfalarını kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [MFC ActiveX denetimleri: Başka bir özel özellik sayfası ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)
+- [MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)
 
-- [MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+- [MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
-Bir MFC uygulaması dışında bir ActiveX denetimi içinde özellik sayfalarını kullanma hakkında daha fazla bilgi için bkz: [özellik sayfalarını](../mfc/property-sheets-mfc.md).
+ActiveX denetimi dışındaki bir MFC uygulamasında özellik sayfalarını kullanma hakkında bilgi için [Bkz.](../mfc/property-sheets-mfc.md)
 
-##  <a name="_core_implementing_the_default_property_page"></a> Varsayılan özellik sayfası uygulama
+## <a name="implementing-the-default-property-page"></a><a name="_core_implementing_the_default_property_page"></a>Varsayılan Özellik Sayfasını Uygulama
 
-ActiveX Denetim Sihirbazı'nı Denetim projenizi oluşturmak için kullandığınız öğesinden türetilen denetim için ActiveX Denetim Sihirbazı'nı varsayılan özellik sayfası sınıfının sağlar [COlePropertyPage sınıfı](../mfc/reference/colepropertypage-class.md). Başlangıçta, bu özellik sayfası boş olur, ancak herhangi bir iletişim kutusu denetimi veya denetimleri için ekleyebilirsiniz. Varsayılan olarak, ek özellik sayfası sınıfları ActiveX Denetim Sihirbazı'nı yalnızca bir özellik sayfası sınıfının oluşturduğundan (Ayrıca türetilen `COlePropertyPage`) Sınıf Görünümü kullanılarak oluşturulmalıdır. Bu yordamı ile ilgili daha fazla bilgi için bkz [MFC ActiveX denetimleri: Başka bir özel özellik sayfası ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md).
+Denetim projenizi oluşturmak için ActiveX Denetim Sihirbazı'nı kullanırsanız, ActiveX Denetim Sihirbazı [COlePropertyPage Class'tan](../mfc/reference/colepropertypage-class.md)türetilen denetim için varsayılan özellik sayfası sınıfı sağlar. Başlangıçta, bu özellik sayfası boştur, ancak herhangi bir iletişim kutusu denetimi veya denetim kümesi ekleyebilirsiniz. ActiveX Denetim Sihirbazı varsayılan olarak yalnızca bir özellik sayfası sınıfı oluşturduğundan, Sınıf Görünümü kullanılarak ek özellik sayfası sınıfları (ayrıca `COlePropertyPage`türetilmiş) oluşturulmalıdır. Bu yordam hakkında daha fazla bilgi için, [Bkz. MFC ActiveX Denetimleri: Başka bir Özel Özellik Sayfası Ekleme.](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)
 
-Uygulayan bir özellik sayfa (Bu durumda, varsayılan), üç adımlık bir işlemdir:
+Bir özellik sayfası (bu durumda, varsayılan) uygulanması üç adımlı bir işlemdir:
 
-#### <a name="to-implement-a-property-page"></a>Özellik sayfası uygulamak için
+#### <a name="to-implement-a-property-page"></a>Özellik sayfasını uygulamak için
 
-1. Ekleme bir `COlePropertyPage`-türetilmiş sınıf için denetimi proje. Varsayılan özellik sayfası sınıfının, proje ActiveX Denetim Sihirbazı'nı (olduğu gibi bu durumda) kullanarak oluşturulmuş olsa bile, zaten mevcut.
+1. Denetim `COlePropertyPage`projesine türetilmiş bir sınıf ekleyin. Proje ActiveX Denetim Sihirbazı kullanılarak oluşturulduysa (bu durumda olduğu gibi), varsayılan özellik sayfası sınıfı zaten vardır.
 
-1. İletişim kutusu Düzenleyicisi için özellik sayfası şablonu herhangi bir denetim eklemek için kullanın.
+1. Özellik sayfası şablonuna denetim eklemek için iletişim düzenleyicisini kullanın.
 
-1. Özelleştirme `DoDataExchange` işlevi `COlePropertyPage`-türetilmiş sınıf özellik sayfası ve ActiveX denetimi arasındaki değerleri Exchange.
+1. Özellik sayfası `DoDataExchange` denetimi `COlePropertyPage`ile ActiveX denetimi arasında değer alışverişi yapmak için türetilmiş sınıfın işlevini özelleştirin.
 
-Örneğin ("Sample" adlı) basit bir denetim amacıyla, aşağıdaki yordamları kullanın. Örnek ActiveX Denetim Sihirbazı'nı kullanarak oluşturulmuş ve stok resim yazısı özelliğini içerir.
+Örneğin, aşağıdaki yordamlar basit bir denetim kullanır ("Örnek" olarak adlandırılır). Örnek ActiveX Denetim Sihirbazı kullanılarak oluşturuldu ve yalnızca stok Resim Yazısı özelliğini içerir.
 
-##  <a name="_core_adding_controls_to_a_property_page"></a> Bir özellik sayfasına denetim ekleme
+## <a name="adding-controls-to-a-property-page"></a><a name="_core_adding_controls_to_a_property_page"></a>Özellik Sayfasına Denetim Ekleme
 
-#### <a name="to-add-controls-to-a-property-page"></a>Bir özellik sayfasına denetimler ekleme
+#### <a name="to-add-controls-to-a-property-page"></a>Özellik sayfasına denetim eklemek için
 
-1. Denetim projenize açık kaynak görünümünü açın.
+1. Denetim projeniz açıkken Kaynak Görünümü'ni açın.
 
-1. Çift **iletişim** dizin simgesi.
+1. **İletişim** dizini simgesini çift tıklatın.
 
 1. IDD_PROPPAGE_SAMPLE iletişim kutusunu açın.
 
-   ActiveX Denetim Sihirbazı'nı projesinin adı iletişim kimliği, bu durumda, örnek sonuna ekler.
+   ActiveX Denetim Sihirbazı, bu durumda Örnek, iletişim kimliğinin sonuna projenin adını ekler.
 
-1. Sürükleyin ve Seçili denetim iletişim kutusunun alanın araç kutusundan bırakın.
+1. Seçili denetimi Araç Kutusu'ndan iletişim kutusu alanına sürükleyin ve bırakın.
 
-1. Bu örnekte, bir metin etiketi denetimi "resim yazısı:" ve IDC_CAPTION tanıtıcıya sahip bir düzenleme kutusu denetimi yeterli.
+1. Bu örnekiçin, metin etiketi denetimi "Caption :" ve IDC_CAPTION tanımlayıcılı bir edit kutusu denetimi yeterlidir.
 
-1. Tıklayın **Kaydet** yaptığınız değişiklikleri kaydetmek için araç çubuğunda.
+1. Değişikliklerinizi kaydetmek için Araç Çubuğu'nu **Kaydet'i** tıklatın.
 
-Kullanıcı arabirimini değiştirildi, açıklamalı alt yazı özelliği ile düzenleme kutusuna bağlamanız gerekir. Aşağıdaki bölümde düzenleyerek yapıldığını `CSamplePropPage::DoDataExchange` işlevi.
+Kullanıcı arabirimi değiştirildigine göre, dünya sürme kutusunu Resim Yazılı özelliğine bağlatmışolmanız gerekir. Bu `CSamplePropPage::DoDataExchange` fonksiyon düzenleyerek aşağıdaki bölümde yapılır.
 
-##  <a name="_core_customizing_the_dodataexchange_function"></a> DoDataExchange işlevi özelleştirme
+## <a name="customizing-the-dodataexchange-function"></a><a name="_core_customizing_the_dodataexchange_function"></a>DoDataExchange Işlevini Özelleştirme
 
-Özellik sayfanızı [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) işlevi özellik sayfası değerleri denetiminde özelliklerinin gerçek değerlerle bağlamanıza olanak tanır. Bağlantıları kurmak için uygun özellik sayfasının alanları elemanının kendi kontrolünü özelliklerini eşlemeniz gerekir.
+Özellik sayfanız [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) işlevi, özellik sayfası değerlerini denetimdeki özelliklerin gerçek değerleriyle bağlamanızı sağlar. Bağlantılar oluşturmak için, ilgili özellik sayfası alanlarını ilgili denetim özellikleriyle eşlemelisiniz.
 
-Özellik sayfasını kullanarak bu eşlemelerin uygulanan **DDP_** işlevleri. **DDP_** işlevler çalışır gibi **DDX_** işlevleri standart MFC iletişim kutuları, bir özel durumla birlikte kullanılır. Bir üye değişkenine başvuruya ek olarak **DDP_** işlevler denetim özelliğin adını alır. Aşağıdaki tipik bir giriştir `DoDataExchange` özellik sayfası için işlevi.
+Bu eşlemeler özellik sayfası **DDP_** işlevleri kullanılarak uygulanır. **DDP_** işlevleri, tek bir istisna dışında standart MFC iletişim kutularında kullanılan **DDX_** işlevleri gibi çalışır. Bir üye değişkene yapılan başvuruya ek olarak, **DDP_** işlevleri denetim özelliğinin adını alır. Aşağıda, bir özellik sayfasının işlevinde `DoDataExchange` tipik bir giriş yer alan bir giriş yer adatır.
 
 [!code-cpp[NVC_MFC_AxUI#31](../mfc/codesnippet/cpp/mfc-activex-controls-property-pages_1.cpp)]
 
-Bu işlev özellik sayfanın ilişkilendirir *m_caption* üye değişkeni, açıklamalı alt yazıyla birlikte kullanarak `DDP_TEXT` işlevi.
+Bu işlev, işlevi kullanarak özellik sayfasının *m_caption* üye `DDP_TEXT` değişkenini Başlık'la ilişkilendirer.
 
-Eklenen özellik sayfası denetimi yaptıktan sonra özellik sayfası denetimi, IDC_CAPTION ve gerçek denetim özelliği arasında bir bağlantı kurmak gereken kullanarak resim yazısı `DDP_Text` yukarıda açıklandığı gibi işlev.
+Özellik sayfası denetimi ne sokulmuşsa, yukarıda açıklandığı gibi `DDP_Text` işlevi kullanarak özellik sayfası denetimi, IDC_CAPTION ve gerçek denetim özelliği Resim Yazısı arasında bir bağlantı kurmanız gerekir.
 
-[Özellik sayfaları](../mfc/reference/property-pages-mfc.md) radyo düğmeleri, onay kutuları gibi diğer iletişim denetim tipleri için kullanılabilir ve liste kutuları. Özellik sayfası kümesinin tamamını aşağıdaki tabloda listelenmiştir **DDP_** işlevleri ve bunların amacıyla:
+[Özellik Sayfaları,](../mfc/reference/property-pages-mfc.md) onay kutuları, radyo düğmeleri ve liste kutuları gibi diğer iletişim denetimi türleri için kullanılabilir. Aşağıdaki tabloda tüm özellik sayfası **DDP_** işlevleri ve amaçları listelemektedir:
 
-### <a name="property-page-functions"></a>Özellik sayfası işlevleri
+### <a name="property-page-functions"></a>Özellik Sayfası Fonksiyonları
 
-|İşlev adı|Bağlanmak için bu işlevi kullanın.|
+|İşlev adı|Bağlantı vermek için bu işlevi kullanın|
 |-------------------|-------------------------------|
-|`DDP_CBIndex`|Seçili dizenin dizin bir birleşik giriş kutusu denetimi özelliğine sahip.|
-|`DDP_CBString`|Seçili bir birleşik giriş kutusu denetimi özelliğine sahip dizesi. Seçili dizeyi özelliğinin değeri olarak aynı harfler ile başlayabilir, ancak tam olarak eşleşen yok.|
-|`DDP_CBStringExact`|Seçili bir birleşik giriş kutusu denetimi özelliğine sahip dizesi. Seçili dizeyi ve özelliğinin dize değerini tam olarak eşleşmelidir.|
-|`DDP_Check`|Onay kutusu denetimi özelliğine sahip.|
-|`DDP_LBIndex`|Bir denetim özelliği ile bir liste kutusunda seçili dizenin dizini.|
-|`DDP_LBString`|Bir denetim özelliği ile bir liste kutusunda seçili dize. Seçili dizeyi özelliğinin değeri olarak aynı harfler ile başlayabilir, ancak tam olarak eşleşen yok.|
-|`DDP_LBStringExact`|Bir denetim özelliği ile bir liste kutusunda seçili dize. Seçili dizeyi ve özelliğinin dize değerini tam olarak eşleşmelidir.|
-|`DDP_Radio`|Bir radyo düğmesi denetimi özelliğine sahip.|
-|`DDP_Text`|Metin denetimi özelliğine sahip.|
+|`DDP_CBIndex`|Seçili dizenin dizini, denetim özelliğine sahip bir açılan kutuda.|
+|`DDP_CBString`|Denetim özelliğine sahip açılan kutuda seçili dize. Seçili dize özelliğin değeriyle aynı harflerle başlayabilir, ancak tam olarak eşleşmesi gerekmez.|
+|`DDP_CBStringExact`|Denetim özelliğine sahip açılan kutuda seçili dize. Seçili dize ve özelliğin dize değeri tam olarak eşleşmelidir.|
+|`DDP_Check`|Kontrol özelliği olan bir onay kutusu.|
+|`DDP_LBIndex`|Seçili dizenin dizini, denetim özelliğine sahip bir liste kutusunda.|
+|`DDP_LBString`|Denetim özelliğine sahip bir liste kutusunda seçili dize. Seçili dize özelliğin değeriyle aynı harflerle başlayabilir, ancak tam olarak eşleşmesi gerekmez.|
+|`DDP_LBStringExact`|Denetim özelliğine sahip bir liste kutusunda seçili dize. Seçili dize ve özelliğin dize değeri tam olarak eşleşmelidir.|
+|`DDP_Radio`|Kontrol özelliği olan bir radyo düğmesi.|
+|`DDP_Text`|Denetim özelliği olan metin.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
+[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)<br/>
 [COlePropertyPage Sınıfı](../mfc/reference/colepropertypage-class.md)

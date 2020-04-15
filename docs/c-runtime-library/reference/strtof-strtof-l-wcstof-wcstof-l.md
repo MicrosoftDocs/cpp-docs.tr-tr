@@ -1,11 +1,15 @@
 ---
 title: strtof, _strtof_l, wcstof, _wcstof_l
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - _strtof_l
 - wcstof
 - strtof
 - _wcstof_l
+- _o__strtof_l
+- _o__wcstof_l
+- _o_strtof
+- _o_wcstof
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -18,6 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -41,16 +46,16 @@ helpviewer_keywords:
 - _tcstof_l function
 - strtof function
 ms.assetid: 52221b46-876d-4fcc-afb1-97512c17a43b
-ms.openlocfilehash: b2b2e7d230074b5a464260d36b41c28b9951d65b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f61aa0edeadd74a254f906dd745e18b059da7f24
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957758"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365143"
 ---
 # <a name="strtof-_strtof_l-wcstof-_wcstof_l"></a>strtof, _strtof_l, wcstof, _wcstof_l
 
-Dizeleri tek duyarlıklı kayan noktalı değere dönüştürür.
+Dizeleri tek bir hassas kayan nokta değerine dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -78,53 +83,55 @@ float wcstof_l(
 ## <a name="parameters"></a>Parametreler
 
 *strSource*<br/>
-Dönüştürülecek null ile sonlandırılmış dize.
+Dönüştürme için null-sonlandırılan dize.
 
 *endptr*<br/>
-Taramayı durduran karakter işaretçisi.
+Tazyimi durduran karaktere işaretçi.
 
-*ayarlar*<br/>
+*Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**strtof** , kayan noktalı sayının değerini döndürür; bu durumda, işlevin bir taşmaya neden olacağı durumlar hariç, işlev +/-**HUGE_VALF**döndürür. **HUGE_VALF** işareti, gösterilemeyen değerin işaretiyle eşleşir. **strtof** , hiçbir dönüştürme gerçekleştirilemiyorsa veya bir yetersiz bir durum oluşursa 0 değerini döndürür.
+**strtof,** temsilin taşmaya neden olacağı durumlar dışında kayan nokta sayısının değerini verir ve bu durumda işlev +/-**HUGE_VALF**döndürür. **HUGE_VALF** işareti, temsil edilemeyen değerin işaretiyle eşleşir. **strtof** dönüşüm gerçekleştirileme yapılamazsa veya bir akış oluşursa 0 döndürür.
 
-**wcstof** , **strtof**'e anormal olarak değer döndürür. Her iki işlev için de **errno** , taşma veya yetersiz kalması durumunda ve [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisi çağrıldığında **ERANGE** olarak ayarlanır.
+**wcstof** **strtof**benzer değerleri döndürür . Her iki işlev için de, aktı veya alt akış oluşursa ve geçersiz parametre işleyicisi çağrıldıysa, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı **gibi, errno** **ERANGE** olarak ayarlanır.
 
-Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+İade kodları hakkında daha fazla bilgi için [bkz: errno, _doserrno, _sys_errlist ve _sys_nerr.](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her işlev, *strSource* giriş dizesini bir **float**öğesine dönüştürür. **Strtof** Işlevi, *strSource* 'u tek duyarlıklı bir değere dönüştürür. **strtof** , bir sayının parçası olarak tanıyamadığı Ilk karakterde *strSource* dize okumasını durduruyor. Bu, Sonlandırıcı null karakteri olabilir. **wcstof** , **strtof**öğesinin geniş karakterli bir sürümüdür. *strSource* bağımsız değişkeni geniş karakterli bir dizedir. Aksi takdirde, bu işlevler aynı şekilde davranır.
+Her işlev giriş *dizestrkaynağını bir* **float'a**dönüştürür. **Strtof** işlevi *strSource'u* tek bir duyarlık değerine dönüştürür. **strtof** bir sayının bir parçası olarak tanıyamaz ilk karakter de dize *strSource* okuma durur. Bu sonlandırıcı null karakter olabilir. **wcstof** **strtof**bir geniş karakter versiyonudur ; *strSource* bağımsız değişkeni geniş karakterli bir dizedir. Aksi takdirde, bu işlevler aynı şekilde çalışır.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcstof**|**strtof**|**strtof**|**wcstof**|
 |**_tcstof_l**|**_strtof_l**|**_strtof_l**|**_wcstof_l**|
 
-Geçerli yerel ayarın **LC_NUMERIC** kategori ayarı, *strSource*; içindeki taban karakterinin tanınmasını belirler. daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md). **_L** sonekine sahip olmayan işlevler geçerli yerel ayarı kullanır; sonekine sahip olanlar, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Geçerli **LC_NUMERIC** yerel LC_NUMERIC kategori ayarı *strSource*radix karakterinin tanınmasını belirler; daha fazla bilgi için [setlocale, _wsetlocale](setlocale-wsetlocale.md)bakın. **_l** sonek olmayan işlevler geçerli yerel durumu kullanır; sonek olanlar, bunun yerine geçirilen yerel liği kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
-*Endptr* **null**değilse, taramayı durduran karaktere yönelik bir işaretçi, *endptr*tarafından işaret edilen konumda depolanır. Hiçbir dönüştürme gerçekleştirilemiyorsa (geçerli basamak bulunamadı veya geçersiz bir taban belirtilmişse), *strSource* değeri *endptr*tarafından işaret edilen konumda depolanır.
+*Endptr* **NULL**değilse, saramayı durduran karaktere işaretçi *endptr*tarafından işaret edilen konumda depolanır. Dönüşüm gerçekleştirilemezse (geçerli basamak bulunamadı veya geçersiz bir taban belirtilmişse), *strSource* değeri *endptr*tarafından işaret edilen konumda depolanır.
 
-**strtof** , *strSource* 'un aşağıdaki biçimdeki bir dizeyi işaret etmek bekler:
+**strtof** *strSource* aşağıdaki formu bir dize işaret bekliyor:
 
-[*boşluk*] [*imzala*] [*basamaklar*] [ __.__ *basamaklar*] [{**e** &#124; **e**} [*oturum*] *basamakları*]
+[*beyazuzay*] [*işaret*] [*rakamlar*] [__.__ *rakamlar*] [{**e** &#124; **E**} [*işaret*] *basamakları*]
 
-Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır; *işareti* artı ( **+** ) ya da eksi ( **-** ); *rakamlar* bir veya daha fazla ondalık basamak. Taban karakterinden önce bir basamak görünmezse, en az bir sayı, taban karakterinden sonra görünmelidir. Ondalık basamakların ardından, bir giriş harfinden (**e** veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir. Ne bir üs bölümü ne de bir taban karakteri görünmüyorsa, dizedeki son basamağı izlemek için bir taban karakteri varsayılır. Bu forma uymayan ilk karakter taramayı durduruyor.
+Bir *boşluk,* yoksayılan boşluk ve sekme karakterlerinden oluşabilir; *işareti* ya artı**+**( )**-** ya da eksi ( ); ve *basamaklar* bir veya daha fazla ondalık basamakvardır. Radix karakterinden önce basamak görünmüyorsa, radix karakterinden sonra en az bir basamak görünmelidir. Ondalık basamakları, giriş mektubu **(e** veya **E)** ve isteğe bağlı olarak imzalanmış bir dosdoğrudan oluşan bir üs izlenebilir. Ne üslü bir parça ne de bir radix karakteri görünürse, bir radix karakterinin dizedeki son basamağı takip etmesi varsayılır. Bu forma uymayan ilk karakter tazyimi durdurur.
 
-Bu işlevlerin UCRT sürümleri, FORTRAN-Style (**d** veya **d**) üs harflerinin dönüştürülmesini desteklemez. Standart olmayan bu uzantı, CRT 'nin önceki sürümleri tarafından desteklenmiş ve kodunuz için bir ön değişiklik olabilir.
+Bu işlevlerin UCRT sürümleri Fortran stili **(d** veya **D)** üs harflerinin dönüştürülmesini desteklemez. Bu standart dışı uzantı CRT'nin önceki sürümleri tarafından desteklenmiştir ve kodunuz için bir son değişiklik olabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strtof**, **_strtof_l**|C: \<Stdlib. h > C++: &lt;cstdlib > veya \<Stdlib. h >|
-|**wcstof**, **_wcstof_l**|C: \<Stdlib. h > veya \<wchar. h > C++: &lt;cstdlib >, \<Stdlib. h > veya \<wchar. h >|
+|**strtof**, **_strtof_l**|C: \<stdlib.h> &lt;C++: cstdlib> veya \<stdlib.h>|
+|**wcstof**, **_wcstof_l**|C: \<stdlib.h \<> veya wchar.h &lt;> C++: \<cstdlib>, stdlib.h> veya \<wchar.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -161,8 +168,8 @@ string = 3.14159This stopped it
 [Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
-[Sayısal Değer İşlevleri Dizesi](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Dizeden Sayısal Değer Fonksiyonlarına](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
 [strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)<br/>
 [strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)<br/>
 [strtoul, _strtoul_l, wcstoul, _wcstoul_l](strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>

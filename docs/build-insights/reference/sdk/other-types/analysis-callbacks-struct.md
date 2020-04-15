@@ -1,6 +1,6 @@
 ---
 title: ANALYSIS_CALLBACKS yapısı
-description: C++ Derleme ÖNGÖRÜLERI SDK ANALYSIS_CALLBACKS yapısı başvurusu.
+description: C++ Build Insights SDK yapı referansı ANALYSIS_CALLBACKS.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 8c35e740d97488969a6b69467d54412297e49227
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 3c6de999b19657f999f884075ee53e21a4d2f2b5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332532"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81323500"
 ---
 # <a name="analysis_callbacks-structure"></a>ANALYSIS_CALLBACKS yapısı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`ANALYSIS_CALLBACKS` yapısı, bir [ANALYSIS_DESCRIPTOR](analysis-descriptor-struct.md) veya [RELOG_DESCRIPTOR](relog-descriptor-struct.md) nesnesi başlatılırken kullanılır. Windows için olay Izleme (ETW) izlemenin analiz veya yeniden günlüğe kaydedilmesi sırasında hangi işlevlerin çağrılacağını belirtir.
+Yapı, `ANALYSIS_CALLBACKS` [bir ANALYSIS_DESCRIPTOR](analysis-descriptor-struct.md) veya [RELOG_DESCRIPTOR](relog-descriptor-struct.md) nesnenin başlatılmasında kullanılır. Windows (ETW) izlemesinin analizi veya yeniden günlüğe kaydedildiği sırada hangi işlevlerin arayacağını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,21 +47,21 @@ typedef struct ANALYSIS_CALLBACKS_TAG
 
 |  |  |
 |--|--|
-| `OnStartActivity` | Etkinlik başlangıç olayını işlemek için çağırılır. |
-| `OnStopActivity` | Etkinlik durdurma olayını işlemek için çağırılır. |
-| `OnSimpleEvent` | Basit bir olayı işlemek için çağırılır. |
-| `OnTraceInfo` | Analiz oturumları için, her analiz geçişinin başlangıcında çağırılır. Her analiz geçişinin başlangıcında çağrılan ve yeniden günlüğe kaydetme geçişinin başlangıcında bulunan yeniden günlüğe kaydetme oturumları için. Bu işlev yalnızca OnBeginAnalysisPass çağrıldıktan sonra çağrılır. |
-| `OnBeginAnalysis` | Analiz oturumları için, herhangi bir analiz geçişinin başlatılmadan önce çağırılır. Yeniden günlüğe kaydetme oturumları için, çözümleme aşaması başlamadan iki kez çağrılır: yeniden günlüğe kaydetme oturumunun başlangıcını duyurduktan sonra ve analiz aşamasının başlangıcını duyurduktan sonra. |
-| `OnEndAnalysis` | Analiz oturumlarında, bu işlev tüm analiz geçişleri sona erdikten sonra çağrılır. Yeniden günlüğe kaydetme oturumlarında, analiz aşamasının tüm analiz geçişleri bittiğinde bu işlev çağrılır. Ardından, yeniden oturum açma geçişi bittikten sonra tekrar çağırılır. |
-| `OnBeginAnalysisPass` | Bir çözümleme geçişine veya yeniden oturum açma geçişine Başlarken, herhangi bir olayı işlemeden önce çağırılır. |
-| `OnEndAnalysisPass` | Bir analiz geçişinin sonlandırılabilmesi veya yeniden günlüğe kaydetme geçişi sırasında, tüm olaylar işlendikten sonra çağırılır. |
+| `OnStartActivity` | Bir etkinlik başlatma olayını işlemek için çağrıldı. |
+| `OnStopActivity` | Bir etkinlik durdurma olayını işlemek için çağrıldı. |
+| `OnSimpleEvent` | Basit bir olayı işlemek için çağrıldı. |
+| `OnTraceInfo` | Analiz oturumları için, her analiz geçişinin başında denir. Oturumları yeniden kaydetmeiçin, her analiz geçişinin başında ve yine yeniden ağaçlama geçişinin başında denir. Bu işlev yalnızca OnBeginAnalysisPass çağrıldıktan sonra çağrılır. |
+| `OnBeginAnalysis` | Analiz oturumları için, herhangi bir analiz geçişi başlamadan önce denir. Yeniden ağaçlama oturumları için, analiz aşaması başlamadan önce iki kez çağrılır: bir kez yeniden ağaçlama oturumunun başlangıcını duyurmak ve bir kez daha analiz aşamasının başlangıcını duyurmak için. |
+| `OnEndAnalysis` | Çözümleme oturumları için, tüm çözümleme geçişleri sona erdikten sonra bu işlev çağrılır. Oturumları yeniden günleme için, çözümleme aşamasının tüm çözümleme geçişleri sona erdiğinde bu işlev çağrılır. Daha sonra, yeniden ağaçlama geçişi sona erdikten sonra tekrar çağrılır. |
+| `OnBeginAnalysisPass` | Herhangi bir olayı işlemeden önce, bir analiz geçişi veya yeniden günleme geçişi başlarken çağrılır. |
+| `OnEndAnalysisPass` | Tüm olayları işledikten sonra, bir analiz geçişi veya yeniden günleme geçişi sona ererken çağrılır. |
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yeniden günlüğe kaydetme oturumunun analiz aşaması, yeniden günlüğe kaydetme oturumunun bir parçası olarak değerlendirilir ve birden çok analiz geçişi içerebilir. Bu nedenle, `OnBeginAnalysis` yeniden günlüğe kaydetme oturumunun başındaki bir satırda iki kez çağrılır. `OnEndAnalysis`, yeniden günlüğe kaydetme aşamasına başlamadan önce ve yeniden günlüğe kaydetme aşamasının sonunda bir kez daha önce analiz aşamasının sonunda çağırılır. Yeniden günlüğe kaydetme aşaması her zaman tek bir yeniden günlüğe kaydetme geçişi içerir.
+Yeniden günleme oturumunun çözümleme aşaması, yeniden ağaçlama oturumunun bir parçası olarak kabul edilir ve birden çok çözümleme geçişi içerebilir. Bu nedenle, `OnBeginAnalysis` bir yeniden günlüğe kaydetme oturumunun başında üst üste iki kez çağrılır. `OnEndAnalysis`yeniden kaydetme aşamasına başlamadan önce, analiz aşamasının sonunda ve yeniden ağaçlama aşamasının sonunda bir kez daha denir. Yeniden kaydetme aşaması her zaman tek bir yeniden ağaçlama geçişi içerir.
 
-Çözümleyicilerin, yeniden günlüğe kaydetme oturumunun hem analizin hem de yeniden günlüğe kaydetme aşamasının bir parçası olması mümkündür. Bu çözümleyiciler, OnBeginAnalysis ve `OnEndAnalysis` çağrı çiftlerini izleyerek Şu anda hangi aşamanın devam etmekte olduğunu tespit edebilir. `OnEndAnalysis` çağrısı olmadan iki `OnBeginAnalysis` çağrısı, çözümleme aşamasının devam etmektedir anlamına gelir. İki `OnBeginAnalysis` çağrı ve bir `OnEndAnalysis` çağrısı, yeniden günlüğe kaydetme aşamasının devam ettiğinden anlamına gelir. İki OnBeginAnalysis ve iki `OnEndAnalysis` çağrısı, her iki aşamaların de bitmediği anlamına gelir.
+Çözümleyicilerin hem analizin hem de yeniden ağaç kesiminin yeniden günleme aşamasının bir parçası olması mümkündür. Bu çözümleyiciler, OnBeginAnalysis ve `OnEndAnalysis` çağrı çiftlerini izleyerek hangi aşamanın şu anda devam ediyor olduğunu belirleyebilirler. Herhangi `OnBeginAnalysis` bir `OnEndAnalysis` çağrı olmadan iki arama, analiz aşamasının devam olduğu anlamına gelir. İki `OnBeginAnalysis` arama `OnEndAnalysis` ve bir arama, yeniden günlüğe kaydetme aşamasının devam ediyor olduğu anlamına gelir. İki OnBeginAnalysis `OnEndAnalysis` ve iki çağrı, her iki aşamanın da sona ermiş olduğu anlamına gelir.
 
-`ANALYSIS_CALLBACKS` yapısının tüm üyeleri geçerli bir işleve işaret etmelidir. Kabul edilen işlev imzaları hakkında daha fazla bilgi için bkz. [Onanalyzer Sıseventfunc](on-analysis-event-func-typedef.md), [ontraceinfofunc](on-trace-info-func-typedef.md)ve [onbeginendpassfunc](on-begin-end-pass-func-typedef.md).
+Yapının `ANALYSIS_CALLBACKS` tüm üyeleri geçerli bir işlevi işaret etmelidir. Kabul edilen işlev imzaları hakkında daha fazla bilgi için [Bkz. OnAnalysisEventFunc](on-analysis-event-func-typedef.md), [OnTraceInfoFunc](on-trace-info-func-typedef.md), ve [OnBeginEndPassFunc](on-begin-end-pass-func-typedef.md).
 
 ::: moniker-end

@@ -4,34 +4,34 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - event sink maps [MFC]
 ms.assetid: a9757eb2-5f4a-45ec-a2cd-ce5eec85b16f
-ms.openlocfilehash: aeec0acad4531e1ef0933388bbee728193853611
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 731ed2403aae3332e81702673d1181e9e52399a2
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65612222"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365730"
 ---
 # <a name="event-sink-maps"></a>Olay İç Havuz Eşlemeleri
 
-Katıştırılmış bir OLE denetim bir olay oluşturulduğunda, denetimin kapsayıcısı "MFC tarafından sağlanan bir olay havuzu eşlemesi," adlı bir mekanizma kullanarak olayı alır. Bu olay havuzu eşlemesi işleyici işlevlerini her özel olay yanı sıra bu olayların parametreleri belirtir. Olay iç havuz eşlemeleri hakkında daha fazla bilgi için bkz [ActiveX denetim kapsayıcıları](../../mfc/activex-control-containers.md).
+Katıştırılmış bir OLE denetimi bir olayı ateşlediğinde, denetimin kapsayıcısı olayı MFC tarafından sağlanan "olay lavabo haritası" adı verilen bir mekanizma kullanarak alır. Bu olay lavabo eşlemi, her belirli olay için işleyici işlevlerinin yanı sıra bu olayların parametrelerini belirtir. Olay lavabo haritaları hakkında daha fazla bilgi için [ActiveX Denetim Kapları](../../mfc/activex-control-containers.md)makalesine bakın.
 
 ### <a name="event-sink-maps"></a>Olay İç Havuz Eşlemeleri
 
 |||
 |-|-|
-|[BEGIN_EVENTSINK_MAP](#begin_eventsink_map)|Bir olay havuzu eşlemesi tanımını başlatır.|
-|[DECLARE_EVENTSINK_MAP](#declare_eventsink_map)|Bir olay havuzu eşlemesi bildirir.|
-|[END_EVENTSINK_MAP](#end_eventsink_map)|Bir olay havuzu eşlemesi tanımını sonlandırır.|
-|[ON_EVENT](#on_event)|Belirli bir olay için bir olay işleyicisi tanımlar.|
-|[ON_EVENT_RANGE](#on_event_range)|OLE denetimleri kümesinden harekete belirli bir olay için bir olay işleyicisi tanımlar.|
-|[ON_EVENT_REFLECT](#on_event_reflect)|Önce denetimin kapsayıcı tarafından işlenen denetim tarafından tetiklenen olayları alır.|
-|[ON_PROPNOTIFY](#on_propnotify)|Bir OLE denetim özelliği bildirimleri işlemek için bir işleyici tanımlar.|
-|[ON_PROPNOTIFY_RANGE](#on_propnotify_range)|OLE denetimleri bir dizi özellik bildirimleri işlemek için bir işleyici tanımlar.|
-|[ON_PROPNOTIFY_REFLECT](#on_propnotify_reflect)|Denetimin kapsayıcı tarafından işlenen önce bir denetim tarafından gönderilen özellik bildirimleri alır.|
+|[BEGIN_EVENTSINK_MAP](#begin_eventsink_map)|Olay lavabo haritasının tanımını başlatır.|
+|[DECLARE_EVENTSINK_MAP](#declare_eventsink_map)|Olay lavabo haritasını bildirir.|
+|[END_EVENTSINK_MAP](#end_eventsink_map)|Olay lavabo haritasının tanımını sona erdirer.|
+|[ON_EVENT](#on_event)|Belirli bir olay için olay işleyicisi tanımlar.|
+|[ON_EVENT_RANGE](#on_event_range)|Bir dizi OLE denetiminden ateşlenen belirli bir olay için bir olay işleyicisi tanımlar.|
+|[ON_EVENT_REFLECT](#on_event_reflect)|Denetim inkontu tarafından işlenmeden önce denetim tarafından ateşlenen olayları alır.|
+|[ON_PROPNOTIFY](#on_propnotify)|OLE denetiminden özellik bildirimlerini işlemek için bir işleyici tanımlar.|
+|[ON_PROPNOTIFY_RANGE](#on_propnotify_range)|Bir dizi OLE denetiminden özellik bildirimlerini işlemek için bir işleyici tanımlar.|
+|[ON_PROPNOTIFY_REFLECT](#on_propnotify_reflect)|Denetim kapsayıcısı tarafından işlenmeden önce denetim tarafından gönderilen özellik bildirimlerini alır.|
 
-##  <a name="begin_eventsink_map"></a>  BEGIN_EVENTSINK_MAP
+## <a name="begin_eventsink_map"></a><a name="begin_eventsink_map"></a>BEGIN_EVENTSINK_MAP
 
-Olay havuzu haritanızı tanımını başlar.
+Olay lavabo haritanızın tanımını başlayır.
 
 ```
 BEGIN_EVENTSINK_MAP(theClass, baseClass)
@@ -39,25 +39,25 @@ BEGIN_EVENTSINK_MAP(theClass, baseClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
-Bu eşleme olan olay havuzu denetim sınıfın adını belirtir.
+*theClass*<br/>
+Olay lavabo haritası bu olan denetim sınıfının adını belirtir.
 
-*baseClass*<br/>
-Taban sınıfının adını belirtir *sınıfın*.
+*Baseclass*<br/>
+*Sınıfın*taban sınıfının adını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfınız için üye işlevleri tanımlayan uygulama dosyasında (.cpp), olay havuzu eşlemesi begın_eventsınk_map makrosu ile Başlat sonra her olay, bildirim almak için makro girişler ekleyin ve olay havuzu eşlemesi end_eventsınk_map makrosu ile tamamlayın.
+Sınıfınızın üye işlevlerini tanımlayan uygulama (.cpp) dosyasında, olay BEGIN_EVENTSINK_MAP makrosuyla olay lavabo haritasını başlatın, ardından bildirilecek her olay için makro girişleri ekleyin ve END_EVENTSINK_MAP makrosuyla olay lavabo haritasını tamamlayın.
 
-Olay iç havuz eşlemeleri ve OLE denetimi kapsayıcıları hakkında daha fazla bilgi için bkz [ActiveX denetim kapsayıcıları](../../mfc/activex-control-containers.md).
+Olay lavabo haritaları ve OLE kontrol kapları hakkında daha fazla bilgi için [ActiveX Kontrol Kapları](../../mfc/activex-control-containers.md)makalesine bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdisp.h
+  **Üstbilgi** afxdisp.h
 
-##  <a name="declare_eventsink_map"></a>  DECLARE_EVENTSINK_MAP
+## <a name="declare_eventsink_map"></a><a name="declare_eventsink_map"></a>DECLARE_EVENTSINK_MAP
 
-OLE kapsayıcısı kapsayıcınızı, bildirim olayları belirtmek için bir olay havuzu eşlemesi sağlayabilir.
+Bir OLE kapsayıcısı, kapsayıcınızın bilgilendirileceği olayları belirtmek için bir olay lavabo haritası sağlayabilir.
 
 ```
 DECLARE_EVENTSINK_MAP()
@@ -65,17 +65,17 @@ DECLARE_EVENTSINK_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Declare_eventsınk_map makrosu, sınıf bildiriminin sonuna kullanın. Ardından. Sınıfın üye işlevleri tanımlar CPP dosyasını kullanmak begın_eventsınk_map makrosu, makro girişleri her bildirilmesini olayları ve olay havuzu listesinin sonuna bildirmek için end_eventsınk_map makrosu.
+Sınıf bildirgenizin sonundaki DECLARE_EVENTSINK_MAP makroyu kullanın. Sonra, içinde. Sınıfın üye işlevlerini tanımlayan CPP dosyası, BEGIN_EVENTSINK_MAP makroyu, bildirilecek olayların her biri için makro girişlerini ve olay lavabo listesinin sonunu bildirmek için END_EVENTSINK_MAP makroyu kullanır.
 
-Olay iç havuz eşlemeleri hakkında daha fazla bilgi için bkz [ActiveX denetim kapsayıcıları](../../mfc/activex-control-containers.md).
+Olay lavabo haritaları hakkında daha fazla bilgi için [ActiveX Denetim Kapları](../../mfc/activex-control-containers.md)makalesine bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxwin.h
+  **Başlık** afxwin.h
 
-##  <a name="end_eventsink_map"></a>  END_EVENTSINK_MAP
+## <a name="end_eventsink_map"></a><a name="end_eventsink_map"></a>END_EVENTSINK_MAP
 
-Olay havuzu haritanızı tanımını sonlandırır.
+Olay lavabo haritanızın tanımını sona erdirer.
 
 ```
 END_EVENTSINK_MAP()
@@ -83,11 +83,11 @@ END_EVENTSINK_MAP()
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdisp.h
+  **Üstbilgi** afxdisp.h
 
-##  <a name="on_event"></a>  ON_EVENT
+## <a name="on_event"></a><a name="on_event"></a>ON_EVENT
 
-ON_EVENT makrosu, bir olay işleyici işlevi için bir OLE denetimi tarafından tetiklenen bir olayı tanımlamak için kullanın.
+OLE denetimi tarafından ateşlenen bir olay için olay işleyicisi işlevini tanımlamak için ON_EVENT makroyu kullanın.
 
 ```
 ON_EVENT(theClass, id, dispid, pfnHandler,  vtsParams)
@@ -95,38 +95,38 @@ ON_EVENT(theClass, id, dispid, pfnHandler,  vtsParams)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
-Bu olay havuzu eşlemesi ait olduğu sınıf.
+*theClass*<br/>
+Bu olayın haritayı batırdığı sınıf ait.
 
-*id*<br/>
-OLE denetim denetiminin kimliği.
+*Kimliği*<br/>
+OLE denetiminin kontrol kimliği.
 
-*DISPID*<br/>
-Denetim tarafından harekete geçirilen olay gönderme kimliği.
+*Dıspıd*<br/>
+Kontrol tarafından ateşlenen olayın sevk kimliği.
 
 *pfnHandler*<br/>
-Olayı işleyen bir üye işlevi işaretçisi. Bu işlev dönüş türü ve olay parametreleriyle eşleşen parametre türleri BOOL olmalıdır (bkz *vtsParams*). İşlevi, olay işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.
+Olayı işleyen bir üye işlevi işaretçi. Bu işlev, bir BOOL dönüş türüne ve olayın parametrelerine uyan parametre türlerine sahip olmalıdır (bkz. *vtsParams).* Olay işlendi belirtmek için işlev TRUE döndürmelidir; aksi takdirde YANLIŞ.
 
 *vtsParams*<br/>
-Bir dizi **VTS_** sabitler parametreler için olay türlerini belirtir. Bu dağıtım eşleme girişleri dısp_functıon gibi kullanılan aynı sabittir.
+Olayın parametrelerinin türlerini belirten **VTS_** sabitleri dizisi. Bunlar, DISP_FUNCTION gibi gönderme eşlemi girişlerinde kullanılan sabitlerle aynıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* bağımsız değişken değerlerini boşlukla ayrılmış bir listesi verilmiştir **VTS_** sabitler. Bir veya daha fazla boşluk (virgül değil) ile ayırarak bu değerleri işlevin parametre listesi belirtir. Örneğin:
+*vtsParams* bağımsız **değişkeni, VTS_** sabitlerinden gelen değerlerin boşluktan ayrılmış bir listesidir. Boşluklarla ayrılan bu değerlerden biri veya birkaçı (virgül değil) işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]
 
-BOOL tarafından izlenen bir kısa tamsayı içeren bir liste belirtir.
+kısa bir tamsayı içeren bir liste ve ardından BOOL belirtir.
 
-Bir listesi için **VTS_** sabitleri bkz [EVENT_CUSTOM](event-maps.md#event_custom).
+**VTS_** sabitlerin listesi için [EVENT_CUSTOM](event-maps.md#event_custom)bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdisp.h
+  **Üstbilgi** afxdisp.h
 
-##  <a name="on_event_range"></a>  ON_EVENT_RANGE
+## <a name="on_event_range"></a><a name="on_event_range"></a>ON_EVENT_RANGE
 
-ON_EVENT_RANGE makrosu, bir olay işleyici işlevi bitişik olarak kimlikleri aralığı içinde bir denetim Kimliğine sahip herhangi bir OLE denetimi tarafından tetiklenen bir olayı tanımlamak için kullanın.
+Bitişik bir kimlik aralığında denetim kimliğine sahip herhangi bir OLE denetimi tarafından ateşlenen bir olay için bir olay işleyicisi işlevini tanımlamak için ON_EVENT_RANGE makroyu kullanın.
 
 ```
 ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)
@@ -134,51 +134,51 @@ ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
-Bu olay havuzu eşlemesi ait olduğu sınıf.
+*theClass*<br/>
+Bu olayın haritayı batırdığı sınıf ait.
 
 *idFirst*<br/>
-Aralığın ilk OLE denetim denetiminin kimliği.
+Aralıktaki ilk OLE denetiminin kontrol kimliği.
 
-*idLast*<br/>
-Aralıktaki son OLE denetim denetiminin kimliği.
+*idSon*<br/>
+Aralıktaki son OLE denetiminin kontrol kimliği.
 
-*DISPID*<br/>
-Denetim tarafından harekete geçirilen olay gönderme kimliği.
+*Dıspıd*<br/>
+Kontrol tarafından ateşlenen olayın sevk kimliği.
 
 *pfnHandler*<br/>
-Olayı işleyen bir üye işlevi işaretçisi. Bu işlev dönüş türü, ilk parametre türü UINT (için denetim kimliği) ve olay parametreleriyle eşleşen ek parametre türleri olarak BOOL olmalıdır (bkz *vtsParams*). İşlevi, olay işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.
+Olayı işleyen bir üye işlevi işaretçi. Bu işlev, BOOL dönüş türüne, UINT türünün ilk parametresine (denetim kimliği için) ve olayın parametrelerine uyan ek parametre türlerine sahip olmalıdır (bkz. *vtsParams).* Olay işlendi belirtmek için işlev TRUE döndürmelidir; aksi takdirde YANLIŞ.
 
 *vtsParams*<br/>
-Bir dizi **VTS_** sabitler parametreler için olay türlerini belirtir. Denetim Kimliği VTS_I4, türünün ilk sabiti olmalıdır Bu dağıtım eşleme girişleri dısp_functıon gibi kullanılan aynı sabittir.
+Olayın parametrelerinin türlerini belirten **VTS_** sabitleri dizisi. Kontrol kimliği için ilk sabit VTS_I4 türü olmalıdır. Bunlar, DISP_FUNCTION gibi gönderme eşlemi girişlerinde kullanılan sabitlerle aynıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* bağımsız değişken değerlerini boşlukla ayrılmış bir listesi verilmiştir **VTS_** sabitler. Bir veya daha fazla boşluk (virgül değil) ile ayırarak bu değerleri işlevin parametre listesi belirtir. Örneğin:
+*vtsParams* bağımsız **değişkeni, VTS_** sabitlerinden gelen değerlerin boşluktan ayrılmış bir listesidir. Boşluklarla ayrılan bu değerlerden biri veya birkaçı (virgül değil) işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]
 
-BOOL tarafından izlenen bir kısa tamsayı içeren bir liste belirtir.
+kısa bir tamsayı içeren bir liste ve ardından BOOL belirtir.
 
-Bir listesi için **VTS_** sabitleri bkz [EVENT_CUSTOM](event-maps.md#event_custom).
+**VTS_** sabitlerin listesi için [EVENT_CUSTOM](event-maps.md#event_custom)bakın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, üç denetim için uygulanan MouseDown olayı için bir olay işleyicisi gösterir (IDC_MYCTRL1 IDC_MYCTRL3 aracılığıyla). Olay işleyici işlevi `OnRangeMouseDown`, iletişim kutusu sınıfı üstbilgi dosyasında bildirilen ( `CMyDlg`) olarak:
+Aşağıdaki örnekte, Üç denetim için uygulanan MouseDown olayı için bir olay işleyicisi (IDC_MYCTRL3 ile IDC_MYCTRL1) gösterir. Olay işleyicisi `OnRangeMouseDown`işlevi, iletişim sınıfının üstbilgi dosyasında `CMyDlg`( ) olarak bildirilir:
 
 [!code-cpp[NVC_MFCAutomation#12](../../mfc/codesnippet/cpp/event-sink-maps_2.h)]
 
-Aşağıdaki kod, iletişim kutusu sınıfı uygulama dosyasında tanımlanır.
+Aşağıdaki kod iletişim sınıfının uygulama dosyasında tanımlanır.
 
 [!code-cpp[NVC_MFCAutomation#13](../../mfc/codesnippet/cpp/event-sink-maps_3.cpp)]
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdisp.h
+  **Üstbilgi** afxdisp.h
 
-##  <a name="on_event_reflect"></a>  ON_EVENT_REFLECT
+## <a name="on_event_reflect"></a><a name="on_event_reflect"></a>ON_EVENT_REFLECT
 
-Olay bir OLE denetim sarmalayıcı sınıfı, havuz haritasını kullanıldığında ON_EVENT_REFLECT makrosu önce denetimin kapsayıcı tarafından işlenen denetim tarafından tetiklenen olayları alır.
+ON_EVENT_REFLECT makrosu, bir OLE denetiminin sarıcı sınıfının olay lavabo haritasında kullanıldığında, denetimin kapsayıcısı tarafından işlenmeden önce denetim tarafından ateşlenen olayları alır.
 
 ```
 ON_EVENT_REFLECT(theClass,  dispid, pfnHandler,  vtsParams)
@@ -186,37 +186,37 @@ ON_EVENT_REFLECT(theClass,  dispid, pfnHandler,  vtsParams)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
-Bu olay havuzu eşlemesi ait olduğu sınıf.
+*theClass*<br/>
+Bu olayın haritayı batırdığı sınıf ait.
 
-*DISPID*<br/>
-Denetim tarafından harekete geçirilen olay gönderme kimliği.
+*Dıspıd*<br/>
+Kontrol tarafından ateşlenen olayın sevk kimliği.
 
 *pfnHandler*<br/>
-Olayı işleyen bir üye işlevi işaretçisi. Bu işlev dönüş türü ve olay parametreleriyle eşleşen parametre türleri BOOL olmalıdır (bkz *vtsParams*). İşlevi, olay işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.
+Olayı işleyen bir üye işlevi işaretçi. Bu işlev, olayın parametrelerine uyan bir BOOL dönüş türüne ve parametre türlerine sahip olmalıdır (bkz. *vtsParams).* Olay işlendi belirtmek için işlev TRUE döndürmelidir; aksi takdirde YANLIŞ.
 
 *vtsParams*<br/>
-Bir dizi **VTS_** sabitler parametreler için olay türlerini belirtir. Bu dağıtım eşleme girişleri dısp_functıon gibi kullanılan aynı sabittir.
+Olayın parametrelerinin türlerini belirten **VTS_** sabitleri dizisi. Bunlar, DISP_FUNCTION gibi gönderme eşlemi girişlerinde kullanılan sabitlerle aynıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* bağımsız değişken değerlerini boşlukla ayrılmış bir listesi verilmiştir **VTS_** sabitler.
+*vtsParams* bağımsız **değişkeni, VTS_** sabitlerinden gelen değerlerin boşluktan ayrılmış bir listesidir.
 
-Bir veya daha fazla boşluk (virgül değil) ile ayırarak bu değerleri işlevin parametre listesi belirtir. Örneğin:
+Boşluklarla ayrılan bu değerlerden biri veya birkaçı (virgül değil) işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]
 
-BOOL tarafından izlenen bir kısa tamsayı içeren bir liste belirtir.
+kısa bir tamsayı içeren bir liste ve ardından BOOL belirtir.
 
-Bir listesi için **VTS_** sabitleri bkz [EVENT_CUSTOM](event-maps.md#event_custom).
+**VTS_** sabitlerin listesi için [EVENT_CUSTOM](event-maps.md#event_custom)bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdisp.h
+  **Üstbilgi** afxdisp.h
 
-##  <a name="on_propnotify"></a>  ON_PROPNOTIFY
+## <a name="on_propnotify"></a><a name="on_propnotify"></a>ON_PROPNOTIFY
 
-On_propnotıfy makrosu bir OLE denetim özelliği bildirimleri işlemek için bir olay havuzu eşleme girişi tanımlamak için kullanın.
+OLE denetiminden özellik bildirimlerini işlemek için bir olay lavabo eşleme girişi tanımlamak için ON_PROPNOTIFY makroyu kullanın.
 
 ```
 ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)
@@ -224,34 +224,34 @@ ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
-Bu olay havuzu eşlemesi ait olduğu sınıf.
+*theClass*<br/>
+Bu olayın haritayı batırdığı sınıf ait.
 
-*id*<br/>
-OLE denetim denetiminin kimliği.
+*Kimliği*<br/>
+OLE denetiminin kontrol kimliği.
 
-*DISPID*<br/>
-Özellik bildiriminde ilgili dağıtım kimliği.
+*Dıspıd*<br/>
+Bildirimde yer alan özelliğin sevk kimliği.
 
 *pfnRequest*<br/>
-İşleme bir üye işlevi işaretçisi `OnRequestEdit` bu özellik için bildirim. Bu işlev dönüş türü BOOL olmalıdır ve bir **BOOL** <strong>\*</strong> parametresi. Bu işlev, parametre değiştirme özelliğine izin vermek için TRUE ve FALSE izin vermeyecek şekilde ayarlamanız gerekir. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.
+Bu özellik için `OnRequestEdit` bildirimi işleyen bir üye işlevi işaretçisi. Bu işlevbir BOOL dönüş türüne ve **BOOL** <strong>\*</strong> parametresine sahip olmalıdır. Bu işlev, özelliğin değişmesine ve FALSE'un izin vermemesine izin vermek için parametreyi TRUE olarak ayarlamalıdır. İşlev, bildirimin işleneceğini belirtmek için TRUE döndürmelidir; aksi takdirde YANLIŞ.
 
-*pfnChanged*<br/>
-İşleme bir üye işlevi işaretçisi `OnChanged` bu özellik için bildirim. İşlev dönüş türü ve UINT parametre bir Boole olmalıdır. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.
+*pfnDeğiştirildi*<br/>
+Bu özellik için `OnChanged` bildirimi işleyen bir üye işlevi işaretçisi. İşlev bool dönüş türüne ve UINT parametreye sahip olmalıdır. Bildirimin işleneceğini belirtmek için işlev TRUE döndürmelidir; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* bağımsız değişken değerlerini boşlukla ayrılmış bir listesi verilmiştir **VTS_** sabitler. Bir veya daha fazla boşluk (virgül değil) ile ayırarak bu değerleri işlevin parametre listesi belirtir. Örneğin:
+*vtsParams* bağımsız **değişkeni, VTS_** sabitlerinden gelen değerlerin boşluktan ayrılmış bir listesidir. Boşluklarla ayrılan bu değerlerden biri veya birkaçı (virgül değil) işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]
 
-BOOL tarafından izlenen bir kısa tamsayı içeren bir liste belirtir.
+kısa bir tamsayı içeren bir liste ve ardından BOOL belirtir.
 
-Bir listesi için **VTS_** sabitleri bkz [EVENT_CUSTOM](event-maps.md#event_custom).
+**VTS_** sabitlerin listesi için [EVENT_CUSTOM](event-maps.md#event_custom)bakın.
 
-##  <a name="on_propnotify_range"></a>  ON_PROPNOTIFY_RANGE
+## <a name="on_propnotify_range"></a><a name="on_propnotify_range"></a>ON_PROPNOTIFY_RANGE
 
-On_propnotıfy_range makrosu bitişik olarak kimlikleri aralığı içinde bir denetim Kimliğine sahip herhangi bir OLE denetimi özellik bildirimleri işlemek için bir olay havuzu eşleme girişi tanımlamak için kullanın.
+Bitişik bir kimlik aralığında denetim kimliğine sahip herhangi bir OLE denetiminden gelen özellik bildirimlerini işlemek için bir olay lavabo haritası girişi tanımlamak için ON_PROPNOTIFY_RANGE makroyu kullanın.
 
 ```
 
@@ -260,31 +260,31 @@ ON_PROPNOTIFY_RANGE(theClass, idFirst, idLast, dispid, pfnRequest, pfnChanged)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
-Bu olay havuzu eşlemesi ait olduğu sınıf.
+*theClass*<br/>
+Bu olayın haritayı batırdığı sınıf ait.
 
 *idFirst*<br/>
-Aralığın ilk OLE denetim denetiminin kimliği.
+Aralıktaki ilk OLE denetiminin kontrol kimliği.
 
-*idLast*<br/>
-Aralıktaki son OLE denetim denetiminin kimliği.
+*idSon*<br/>
+Aralıktaki son OLE denetiminin kontrol kimliği.
 
-*DISPID*<br/>
-Özellik bildiriminde ilgili dağıtım kimliği.
+*Dıspıd*<br/>
+Bildirimde yer alan özelliğin sevk kimliği.
 
 *pfnRequest*<br/>
-İşleme bir üye işlevi işaretçisi `OnRequestEdit` bu özellik için bildirim. Bu işlev olmalıdır bir `BOOL` dönüş türü ve `UINT` ve `BOOL*` parametreleri. İşlev parametre değiştirme özelliğine izin vermek için TRUE ve FALSE izin vermeyecek şekilde ayarlamanız gerekir. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.
+Bu özellik için `OnRequestEdit` bildirimi işleyen bir üye işlevi işaretçisi. Bu işlevin `BOOL` bir dönüş `UINT` `BOOL*` türü ve parametreleri olmalıdır. İşlev, özelliğin değişmesine ve FALSE'un izin vermemesine izin vermek için parametreyi TRUE olarak ayarlamalıdır. Bildirimin işleneceğini belirtmek için işlev TRUE döndürmelidir; aksi takdirde YANLIŞ.
 
-*pfnChanged*<br/>
-İşleme bir üye işlevi işaretçisi `OnChanged` bu özellik için bildirim. İşlev olmalıdır bir `BOOL` dönüş türü ve `UINT` parametresi. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.
+*pfnDeğiştirildi*<br/>
+Bu özellik için `OnChanged` bildirimi işleyen bir üye işlevi işaretçisi. İşlevin bir `BOOL` dönüş türü `UINT` ve bir parametresi olmalıdır. Bildirimin işleneceğini belirtmek için işlev TRUE döndürmelidir; aksi takdirde YANLIŞ.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdisp.h
+  **Üstbilgi** afxdisp.h
 
-##  <a name="on_propnotify_reflect"></a>  ON_PROPNOTIFY_REFLECT
+## <a name="on_propnotify_reflect"></a><a name="on_propnotify_reflect"></a>ON_PROPNOTIFY_REFLECT
 
-Olay bir OLE denetim sarmalayıcı sınıfı, havuz haritasını kullanıldığında on_propnotıfy_reflect makrosu önce denetimin kapsayıcı tarafından işlenen denetim tarafından gönderilen özellik bildirimleri alır.
+ON_PROPNOTIFY_REFLECT makrosu, bir OLE denetiminin sarıcı sınıfının olay lavabo haritasında kullanıldığında, denetim kapsayıcısı tarafından işlenmeden önce denetim tarafından gönderilen özellik bildirimlerini alır.
 
 ```
 
@@ -293,22 +293,22 @@ ON_PROPNOTIFY_REFLECT(theClass, dispid, pfnRequest, pfnChanged)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
-Bu olay havuzu eşlemesi ait olduğu sınıf.
+*theClass*<br/>
+Bu olayın haritayı batırdığı sınıf ait.
 
-*DISPID*<br/>
-Özellik bildiriminde ilgili dağıtım kimliği.
+*Dıspıd*<br/>
+Bildirimde yer alan özelliğin sevk kimliği.
 
 *pfnRequest*<br/>
-İşleme bir üye işlevi işaretçisi `OnRequestEdit` bu özellik için bildirim. Bu işlev dönüş türü BOOL olmalıdır ve bir **BOOL** <strong>\*</strong> parametresi. Bu işlev, parametre değiştirme özelliğine izin vermek için TRUE ve FALSE izin vermeyecek şekilde ayarlamanız gerekir. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.
+Bu özellik için `OnRequestEdit` bildirimi işleyen bir üye işlevi işaretçisi. Bu işlevbir BOOL dönüş türüne ve **BOOL** <strong>\*</strong> parametresine sahip olmalıdır. Bu işlev, özelliğin değişmesine ve FALSE'un izin vermemesine izin vermek için parametreyi TRUE olarak ayarlamalıdır. İşlev, bildirimin işleneceğini belirtmek için TRUE döndürmelidir; aksi takdirde YANLIŞ.
 
-*pfnChanged*<br/>
-İşleme bir üye işlevi işaretçisi `OnChanged` bu özellik için bildirim. İşlev dönüş türü ve parametre bir Boole olmalıdır. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.
+*pfnDeğiştirildi*<br/>
+Bu özellik için `OnChanged` bildirimi işleyen bir üye işlevi işaretçisi. İşlev bool dönüş türüne sahip olmalı ve parametreleri olmamalıdır. İşlev, bildirimin işleneceğini belirtmek için TRUE döndürmelidir; aksi takdirde YANLIŞ.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdisp.h
+  **Üstbilgi** afxdisp.h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve Küreseller](../../mfc/reference/mfc-macros-and-globals.md)

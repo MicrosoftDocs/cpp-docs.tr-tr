@@ -1,5 +1,5 @@
 ---
-title: CD2DPathGeometry sınıfı
+title: CD2DPathGeometri Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CD2DPathGeometry
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - CD2DPathGeometry [MFC], Stream
 - CD2DPathGeometry [MFC], m_pPathGeometry
 ms.assetid: 686216eb-5080-4242-ace5-8fa1ce96307c
-ms.openlocfilehash: 8657421e67239cdeb782cffbbd42e0c50f6c0e96
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 59ef82151983720b654502ccf3ca647e55366268
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396359"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369176"
 ---
-# <a name="cd2dpathgeometry-class"></a>CD2DPathGeometry sınıfı
+# <a name="cd2dpathgeometry-class"></a>CD2DPathGeometri Sınıfı
 
-ID2D1PathGeometry için sarmalayıcı.
+ID2D1PathGeometry için bir sarmalayıcı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,46 +47,46 @@ class CD2DPathGeometry : public CD2DGeometry;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DPathGeometry::CD2DPathGeometry](#cd2dpathgeometry)|CD2DPathGeometry bir nesne oluşturur.|
+|[CD2DPathGeometri::CD2DPathGeometri](#cd2dpathgeometry)|BIR CD2DPathGeometri nesnesi oluşturuyor.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DPathGeometry::Attach](#attach)|Var olan kaynak arabirimi nesnesine ekler|
-|[CD2DPathGeometry::Create](#create)|Bir CD2DPathGeometry oluşturur. (Geçersiz kılmaları [CD2DResource::Create](../../mfc/reference/cd2dresource-class.md#create).)|
-|[CD2DPathGeometry::Destroy](#destroy)|CD2DPathGeometry nesnesini yok eder. (Geçersiz kılmaları [CD2DGeometry::Destroy](../../mfc/reference/cd2dgeometry-class.md#destroy).)|
-|[CD2DPathGeometry::detach](#detach)|Kaynak arabirimi nesnesinden ayırır|
-|[CD2DPathGeometry::GetFigureCount](#getfigurecount)|Yol geometrisini rakamı sayısını alır.|
-|[CD2DPathGeometry::GetSegmentCount](#getsegmentcount)|Yol geometrisini segmentler sayısını alır.|
-|[CD2DPathGeometry::Open](#open)|Şekiller ve kesimleri ile yol geometri doldurmak için kullanılan geometri havuz alır.|
-|[CD2DPathGeometry::Stream](#stream)|Belirtilen ID2D1GeometrySink yolu geometriye içeriğini kopyalar.|
+|[CD2DPathGeometri::Ekle](#attach)|Nesneye varolan kaynak arabirimi ataştırır|
+|[CD2DPathGeometri::Oluştur](#create)|CD2DPathGeometry oluşturur. [(CD2DResource geçersiz kılar::Oluştur](../../mfc/reference/cd2dresource-class.md#create).)|
+|[CD2DPathGeometri::Destroy](#destroy)|BIR CD2DPathGeometri nesnesini yok eder. [(Overrides CD2DGeometry::Destroy](../../mfc/reference/cd2dgeometry-class.md#destroy).)|
+|[CD2DPathGeometri::Detach](#detach)|Kaynak arabirimini nesneden ayırıyor|
+|[CD2DPathGeometry::GetFigureCount](#getfigurecount)|Yol geometrisindeki şekil sayısını alır.|
+|[CD2DPathGeometry::GetSegmentCount](#getsegmentcount)|Yol geometrisindeki segment sayısını alır.|
+|[CD2DPathGeometri::Aç](#open)|Yol geometrisini şekiller ve segmentlerle doldurmak için kullanılan geometri lavabosu alır.|
+|[CD2DPathGeometri::Akış](#stream)|Yol geometrisinin içeriğini belirtilen ID2D1GeometrySink'e kopyalar.|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DPathGeometry::m_pPathGeometry](#m_ppathgeometry)|Bir ID2D1PathGeometry işaretçisi.|
+|[CD2DPathGeometri::m_pPathGeometry](#m_ppathgeometry)|ID2D1PathGeometry için bir işaretçi.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CD2DResource](../../mfc/reference/cd2dresource-class.md)
+[CD2DKaynak](../../mfc/reference/cd2dresource-class.md)
 
-[CD2DGeometry](../../mfc/reference/cd2dgeometry-class.md)
+[CD2DGeometri](../../mfc/reference/cd2dgeometry-class.md)
 
 `CD2DPathGeometry`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget.h
 
-##  <a name="attach"></a>  CD2DPathGeometry::Attach
+## <a name="cd2dpathgeometryattach"></a><a name="attach"></a>CD2DPathGeometri::Ekle
 
-Var olan kaynak arabirimi nesnesine ekler
+Nesneye varolan kaynak arabirimi ataştırır
 
 ```
 void Attach(ID2D1PathGeometry* pResource);
@@ -94,12 +94,12 @@ void Attach(ID2D1PathGeometry* pResource);
 
 ### <a name="parameters"></a>Parametreler
 
-*pResource*<br/>
-Mevcut kaynak arabirimi. NULL olamaz
+*pKaynak*<br/>
+Varolan kaynak arabirimi. NULL olamaz
 
-##  <a name="cd2dpathgeometry"></a>  CD2DPathGeometry::CD2DPathGeometry
+## <a name="cd2dpathgeometrycd2dpathgeometry"></a><a name="cd2dpathgeometry"></a>CD2DPathGeometri::CD2DPathGeometri
 
-CD2DPathGeometry bir nesne oluşturur.
+BIR CD2DPathGeometri nesnesi oluşturuyor.
 
 ```
 CD2DPathGeometry(
@@ -110,14 +110,14 @@ CD2DPathGeometry(
 ### <a name="parameters"></a>Parametreler
 
 *pParentTarget*<br/>
-İşleme hedefi için bir işaretçi.
+İşleme hedefine işaretçi.
 
 *bAutoDestroy*<br/>
-Nesne sahibi tarafından (pParentTarget) edileceği gösterir.
+Nesnenin sahibi (pParentTarget) tarafından yok edileceğini gösterir.
 
-##  <a name="create"></a>  CD2DPathGeometry::Create
+## <a name="cd2dpathgeometrycreate"></a><a name="create"></a>CD2DPathGeometri::Oluştur
 
-Bir CD2DPathGeometry oluşturur.
+CD2DPathGeometry oluşturur.
 
 ```
 virtual HRESULT Create(CRenderTarget* pRenderTarget);
@@ -126,23 +126,23 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ### <a name="parameters"></a>Parametreler
 
 *pRenderTarget*<br/>
-İşleme hedefi için bir işaretçi.
+İşleme hedefine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
 
-##  <a name="destroy"></a>  CD2DPathGeometry::Destroy
+## <a name="cd2dpathgeometrydestroy"></a><a name="destroy"></a>CD2DPathGeometri::Destroy
 
-CD2DPathGeometry nesnesini yok eder.
+BIR CD2DPathGeometri nesnesini yok eder.
 
 ```
 virtual void Destroy();
 ```
 
-##  <a name="detach"></a>  CD2DPathGeometry::detach
+## <a name="cd2dpathgeometrydetach"></a><a name="detach"></a>CD2DPathGeometri::Detach
 
-Kaynak arabirimi nesnesinden ayırır
+Kaynak arabirimini nesneden ayırıyor
 
 ```
 ID2D1PathGeometry* Detach();
@@ -150,11 +150,11 @@ ID2D1PathGeometry* Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılmış kaynak arabirim işaretçisi.
+Ayrılmış kaynak arabirimine işaretçi.
 
-##  <a name="getfigurecount"></a>  CD2DPathGeometry::GetFigureCount
+## <a name="cd2dpathgeometrygetfigurecount"></a><a name="getfigurecount"></a>CD2DPathGeometry::GetFigureCount
 
-Yol geometrisini rakamı sayısını alır.
+Yol geometrisindeki şekil sayısını alır.
 
 ```
 int GetFigureCount() const;
@@ -162,11 +162,11 @@ int GetFigureCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şekil yol geometri döndürür.
+Yol geometrisindeki şekil sayısını döndürür.
 
-##  <a name="getsegmentcount"></a>  CD2DPathGeometry::GetSegmentCount
+## <a name="cd2dpathgeometrygetsegmentcount"></a><a name="getsegmentcount"></a>CD2DPathGeometry::GetSegmentCount
 
-Yol geometrisini segmentler sayısını alır.
+Yol geometrisindeki segment sayısını alır.
 
 ```
 int GetSegmentCount() const;
@@ -174,19 +174,19 @@ int GetSegmentCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Segment sayısı yol geometri döndürür.
+Yol geometrisindeki segment sayısını döndürür.
 
-##  <a name="m_ppathgeometry"></a>  CD2DPathGeometry::m_pPathGeometry
+## <a name="cd2dpathgeometrym_ppathgeometry"></a><a name="m_ppathgeometry"></a>CD2DPathGeometri::m_pPathGeometry
 
-Bir ID2D1PathGeometry işaretçisi.
+ID2D1PathGeometry için bir işaretçi.
 
 ```
 ID2D1PathGeometry* m_pPathGeometry;
 ```
 
-##  <a name="open"></a>  CD2DPathGeometry::Open
+## <a name="cd2dpathgeometryopen"></a><a name="open"></a>CD2DPathGeometri::Aç
 
-Şekiller ve kesimleri ile yol geometri doldurmak için kullanılan geometri havuz alır.
+Yol geometrisini şekiller ve segmentlerle doldurmak için kullanılan geometri lavabosu alır.
 
 ```
 ID2D1GeometrySink* Open();
@@ -194,11 +194,11 @@ ID2D1GeometrySink* Open();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şekiller ve kesimleri ile yol geometri doldurmak için kullanılan ID2D1GeometrySink işaretçisi.
+Yol geometrisini şekiller ve segmentlerle doldurmak için kullanılan ID2D1GeometrySink'inin işaretçisi.
 
-##  <a name="stream"></a>  CD2DPathGeometry::Stream
+## <a name="cd2dpathgeometrystream"></a><a name="stream"></a>CD2DPathGeometri::Akış
 
-Belirtilen ID2D1GeometrySink yolu geometriye içeriğini kopyalar.
+Yol geometrisinin içeriğini belirtilen ID2D1GeometrySink'e kopyalar.
 
 ```
 BOOL Stream(ID2D1GeometrySink* geometrySink);
@@ -206,12 +206,12 @@ BOOL Stream(ID2D1GeometrySink* geometrySink);
 
 ### <a name="parameters"></a>Parametreler
 
-*geometrySink*<br/>
-Havuz için yol geometrisinin içeriği kopyalanır. Bu havuz değiştirerek bu yolu geometri içeriğini değiştirmez.
+*geometriLavabo*<br/>
+Yol geometrisinin içeriğinin kopyalandığı lavabo. Bu lavabonun değiştirilmesi, bu yol geometrisinin içeriğini değiştirmez.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

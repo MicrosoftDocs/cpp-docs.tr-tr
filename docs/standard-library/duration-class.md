@@ -11,16 +11,16 @@ f1_keywords:
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
 helpviewer_keywords:
 - std::chrono [C++], duration
-ms.openlocfilehash: 4c537b7dfdd23ba641438e0caf6306cf5549b2d7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3669935bf094f476ca24a8170a0388dff29e0a0c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454302"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368761"
 ---
 # <a name="duration-class"></a>duration Sınıfı
 
-İki zaman noktası arasındaki geçen süre olan *zaman aralığını*tutan bir türü açıklar.
+İki zaman noktası arasında geçen bir zaman aralığı olan bir *tür*açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,55 +35,55 @@ class duration <duration<Rep, Period1>, Period2>;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon bağımsız değişkeni `Rep` , aralıktaki saat işaretleri sayısını tutmak için kullanılan türü açıklar. Şablon bağımsız değişkeni `Period` , her bir Tick 'in gösterdiği aralığın boyutunu açıklayan bir [oran](../standard-library/ratio.md) örneklemedir.
+Şablon bağımsız `Rep` değişkeni, saat işaretçisi sayısını aralıkta tutmak için kullanılan türü açıklar. Şablon bağımsız `Period` değişkeni, her kenenin temsil ettiği aralığın boyutunu açıklayan [bir oran](../standard-library/ratio.md) anlık lamasıdır.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Ortak tür tanımları
+### <a name="public-typedefs"></a>Genel Typedefs
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|süre::p eriod typedef|Şablon parametresi `Period`için bir eş anlamlıyı temsil eder.|
-|Duration:: rep typedef|Şablon parametresi `Rep`için bir eş anlamlıyı temsil eder.|
+|süre::period Typedef|Şablon parametresi `Period`ile eş anlamlısını temsil eder.|
+|süre::rep Typedef|Şablon parametresi `Rep`ile eş anlamlısını temsil eder.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Süresi](#duration)|Bir `duration` nesnesi oluşturur.|
+|[Süre](#duration)|Bir `duration` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[biriktirme](#count)|Zaman aralığındaki saat işaretleri sayısını döndürür.|
-|[max](#max)|Se. Şablon parametresinin `Ref`izin verilen en büyük değerini döndürür.|
-|[min](#min)|Se. Şablon parametresinin `Ref`izin verilen en küçük değerini döndürür.|
-|[sıfırlama](#zero)|Se. Aslında (0) `Rep`değerini döndürür.|
+|[Sayısı](#count)|Zaman aralığındasaat işaretçisi sayısını verir.|
+|[Max](#max)|Statik. Şablon parametresinin `Ref`izin verilen maksimum değerini verir.|
+|[Dk](#min)|Statik. Şablon parametresinin `Ref`izin verilebilen en düşük değerini verir.|
+|[sıfır](#zero)|Statik. Sonuç olarak, `Rep`(0) döndürür.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Duration:: operator-](#operator-)|Bir iç içe değer sayısı `duration` ile birlikte nesnenin bir kopyasını döndürür.|
-|[Duration:: operator--](#operator--)|Depolanan değer sayısını azaltır.|
-|[Duration:: operator =](#op_eq)|Depolanan değer sayısını belirtilen bir değere düşürür.|
-|[Duration:: operator * =](#op_star_eq)|Depolanan değer sayısını belirtilen bir değerle çarpar.|
-|[Duration:: operator/=](#op_div_eq)|Depolanan değer sayısını belirtilen `duration` nesnenin değer sayısına böler.|
-|[Duration:: operator +](#op_add)|Döndürür `*this`.|
-|[Duration:: operator + +](#op_add_add)|Depolanan değer sayısını artırır.|
-|[Duration:: operator + =](#op_add_eq)|Belirtilen `duration` bir nesnenin değer sayısını depolanan değer sayısına ekler.|
-|[Duration:: operator-=](#operator-_eq)|Belirtilen `duration` bir nesnenin değer sayısını depolanan değer sayısı 'ndan çıkartır.|
+|[süre::operatör-](#operator-)|Nesnenin `duration` bir kopyasını, inkar edilen onay sayısıyla birlikte döndürür.|
+|[süre::operatör--](#operator--)|Depolanan kene sayısını eriter.|
+|[süre::operator=](#op_eq)|Depolanan onay sayısı modulo belirli bir değeri azaltır.|
+|[süre::operator*=](#op_star_eq)|Depolanan kene sayısını belirli bir değerle çarpar.|
+|[süre::operator/=](#op_div_eq)|Depolanan kene sayısını, belirli `duration` bir nesnenin onay sayısına böler.|
+|[süre::operatör+](#op_add)|`*this` döndürür.|
+|[süre::operator++](#op_add_add)|Depolanan kene sayısını artımlar.|
+|[süre::operator+=](#op_add_eq)|Depolanan kene sayısına belirtilen `duration` nesnenin onay sayısını ekler.|
+|[süre::operatör-=](#operator-_eq)|Depolanan kene sayısından `duration` belirli bir nesnenin onay sayısını çıkarır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<> hatası
+**Başlık:** \<chrono>
 
-**Ad alanı:** std:: hatası
+**Ad alanı:** std::chrono
 
-## <a name="count"></a>Duration:: Count
+## <a name="durationcount"></a><a name="count"></a>süre::say
 
-Zaman aralığındaki saat işaretleri sayısını alır.
+Zaman aralığındaki saat işaretçilerinin sayısını alır.
 
 ```cpp
 constexpr Rep count() const;
@@ -91,11 +91,11 @@ constexpr Rep count() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Zaman aralığındaki saat işaretleri sayısı.
+Zaman aralığındaki saat sayısı işareteder.
 
-## <a name="duration"></a>süre::d uration Oluşturucusu
+## <a name="durationduration-constructor"></a><a name="duration"></a>süre::duration Constructor
 
-Bir `duration` nesnesi oluşturur.
+Bir `duration` nesne inşa eder.
 
 ```cpp
 constexpr duration() = default;
@@ -110,34 +110,34 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 ### <a name="parameters"></a>Parametreler
 
 *Rep2*\
-Ölçek sayısını temsil eden bir aritmetik tür.
+Kene sayısını temsil eden bir aritmetik türü.
 
-*Period2*\
-Saniye `std::ratio` cinsinden değer dönemini temsil eden bir şablon özelleştirmesi.
+*Dönem2*\
+Kene `std::ratio` dönemini saniye birimleri cinsinden temsil edecek şablon uzmanlığı.
 
 *R*\
-Varsayılan dönemin işaret sayısı.
+Varsayılan dönemin kene sayısı.
 
-*Hecesi*\
-*Period2*tarafından belirtilen dönem aralığı sayısı.
+*Dur*\
+*Period2'ye*göre belirtilen dönemin kene sayısı2.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan Oluşturucu başlatılmamış bir nesne oluşturur. Boş küme ayraçları kullanılarak değer başlatma, sıfır saat işaretleri zaman aralığını temsil eden bir nesne başlatır.
+Varsayılan oluşturucu, baş harfe getirilmemiş bir nesne oluşturuyor. Boş ayraçlar kullanarak değer başlatma sıfır saat kene bir zaman aralığı temsil eden bir nesne başharf.
 
-İkinci, bir şablon bağımsız değişken Oluşturucusu, varsayılan bir süre `std::ratio<1>`kullanarak *R* saat aralığı zaman aralığını temsil eden bir nesne oluşturur. Değer sayımlarının hepsini kapatmamak için, kayan nokta türü olarak değerlendirilemez olduğunda `duration::rep` kayan nokta türü olarak değerlendirilemez bir gösterim türünden *Rep2* bir duration nesnesi oluşturmak hatadır.
+İkinci, bir şablon bağımsız değişken oluşturucu varsayılan bir dönem kullanarak *R* saat kene bir zaman aralığı temsil eden bir nesne inşa `std::ratio<1>`eder. Onay sayısının yuvarlanmasını önlemek için, kayan nokta türü olarak kabul edilemediği zaman kayan nokta `duration::rep` türü olarak kabul edilebilen bir gösterim türü *Temsilcisi2'den* bir süre nesnesi oluşturmak bir hatadır.
 
-Üçüncü, iki şablon bağımsız değişken Oluşturucusu, uzunluğu süre olan zaman aralığı olan bir zaman aralığını temsil eden bir nesne *oluşturur.* Değer sayımlarının kesilmesinden kaçınmak için, türü, hedef *türü ile ilgili* olan başka bir Duration nesnesinden bir duration nesnesi oluşturmak hatadır.
+Üçüncü, iki şablon bağımsız değişken oluşturucu, uzunluğu *Dur*tarafından belirtilen zaman aralığı olan bir zaman aralığını temsil eden bir nesne inşa eder. Onay işareti sayısının kesilmesini önlemek için, türü hedef türüyle *birlikte ölçülemez* başka bir süre nesnesinden bir süre nesnesi oluşturmak bir hatadır.
 
-Bir zaman türü `D1` , *kayan* nokta türü olarak değerlendirilemez `D2` ve [ratio_divide\<D1::p eriod, D2::p eriod >:: Type::d en](../standard-library/ratio.md) , 1 değil, `D2` başka bir süre türüyle erişilebilir.
+Bir süre `D1` türü, kayan nokta türü `D2` `D2` olarak kabul edilemiyorsa ve [\<D1::period, D2::period>::type::den](../standard-library/ratio.md) 1 değildir ratio_divide, başka bir süre türüyle *ölçülemez.*
 
-*Rep2* örtük olarak dönüştürülemediği `rep` ve `treat_as_floating_point<rep>` *doğru* veya `treat_as_floating_point<Rep2>` *yanlış tutan*değilse, ikinci Oluşturucu aşırı yükleme çözümüne katılmaz. Daha fazla bilgi için bkz. [< type_traits >](../standard-library/type-traits.md).
+*Rep2* dolaylı olarak dönüştürülebilir `rep` ve `treat_as_floating_point<rep>`ya `treat_as_floating_point<Rep2>`doğru tutar ya da yanlış *tutar* *sürece,* ikinci yapıcı aşırı yük çözünürlüğü katılmaz. Daha fazla bilgi için [<type_traits>](../standard-library/type-traits.md)bakın.
 
-Dönüştürmede taşma `treat_as_floating_point<rep>`yoksa ve *true*, `ratio_divide<Period2, period>::den` ya da 1 ' e eşit tutar ve  `treat_as_floating_point<Rep2>`yanlış bir değer tutuyorsa, üçüncü Oluşturucu aşırı yükleme çözümüne katılmaz. Daha fazla bilgi için bkz. [< type_traits >](../standard-library/type-traits.md).
+Dönüşümde taşma yapılmazsa ve `treat_as_floating_point<rep>`her ikisi `ratio_divide<Period2, period>::den` de geçerli `treat_as_floating_point<Rep2>` *değilse*veya her ikisi de 1'e eşit sayılmadığı ve *yanlış tuttuğu sürece,* üçüncü oluşturucu aşırı yük çözünürlüğüne katılmaz. Daha fazla bilgi için [<type_traits>](../standard-library/type-traits.md)bakın.
 
-## <a name="max"></a>süre:: Max
+## <a name="durationmax"></a><a name="max"></a>süre::max
 
-Şablon parametre türünün `Ref`değerleri için üst sınırı döndüren statik yöntem.
+Şablon parametre türü `Ref`değerleri için üst sınırı döndüren statik yöntem.
 
 ```cpp
 static constexpr duration max();
@@ -145,11 +145,11 @@ static constexpr duration max();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aslında, döndürür `duration(duration_values<rep>::max())`.
+Aslında, döner. `duration(duration_values<rep>::max())`
 
-## <a name="min"></a>süre:: dk
+## <a name="durationmin"></a><a name="min"></a>süre::dk
 
-Şablon parametre türünün `Ref`değerleri için alt sınır döndüren statik yöntem.
+Şablon parametre türü `Ref`değerleri için alt sınırı döndüren statik yöntem.
 
 ```cpp
 static constexpr duration min();
@@ -157,19 +157,19 @@ static constexpr duration min();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aslında, döndürür `duration(duration_values<rep>::min())`.
+Aslında, döner. `duration(duration_values<rep>::min())`
 
-## <a name="operator-"></a>Duration:: operator-
+## <a name="durationoperator-"></a><a name="operator-"></a>süre::operatör-
 
-Bir iç içe değer sayısı `duration` ile birlikte nesnenin bir kopyasını döndürür.
+Nesnenin `duration` bir kopyasını, inkar edilen onay sayısıyla birlikte döndürür.
 
 ```cpp
 constexpr duration operator-() const;
 ```
 
-## <a name="operator--"></a>Duration:: operator--
+## <a name="durationoperator--"></a><a name="operator--"></a>süre::operatör--
 
-Depolanan değer sayısını azaltır.
+Depolanan kene sayısını eriter.
 
 ```cpp
 duration& operator--();
@@ -179,13 +179,13 @@ duration operator--(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk yöntem döndürülür `*this`.
+İlk yöntem `*this`döndürür.
 
-İkinci yöntem, azaltmadan önce yapılan `*this` bir kopyasını döndürür.
+İkinci yöntem, kararnameden `*this` önce yapılan bir kopyasını döndürür.
 
-## <a name="op_eq"></a>Duration:: operator =
+## <a name="durationoperator"></a><a name="op_eq"></a>süre::operator=
 
-Depolanan değer sayısını belirtilen bir değere düşürür.
+Depolanan onay sayısı modulo belirli bir değeri azaltır.
 
 ```cpp
 duration& operator%=(const rep& Div);
@@ -195,16 +195,16 @@ duration& operator%=(const duration& Div);
 
 ### <a name="parameters"></a>Parametreler
 
-*DIV*\
-İlk yönteminde, *div* bir değer sayısını temsil eder. İkinci yöntemde, *div* bir değer sayısı içeren `duration` bir nesnedir.
+*Div*\
+İlk yöntem için *Div* bir kene sayısını temsil eder. İkinci yöntem için *Div,* kene sayısı içeren bir `duration` nesnedir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Modül işlemi gerçekleştirildikten sonra nesnesi.`duration`
+Modulo işlemi yapıldıktan sonra `duration` nesne.
 
-## <a name="op_star_eq"></a>Duration:: operator * =
+## <a name="durationoperator"></a><a name="op_star_eq"></a>süre::operator*=
 
-Depolanan değer sayısını belirtilen bir değerle çarpar.
+Depolanan kene sayısını belirli bir değerle çarpar.
 
 ```cpp
 duration& operator*=(const rep& Mult);
@@ -213,15 +213,15 @@ duration& operator*=(const rep& Mult);
 ### <a name="parameters"></a>Parametreler
 
 *Mult*\
-Tarafından `duration::rep`belirtilen türün değeri.
+`duration::rep`Tarafından belirtilen türün değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çarpma gerçekleştirildikten sonra nesnesi. `duration`
+Çarpma `duration` işleminden sonra nesne gerçekleştirilir.
 
-## <a name="op_div_eq"></a>Duration:: operator/=
+## <a name="durationoperator"></a><a name="op_div_eq"></a>süre::operator/=
 
-Depolanan değer sayısını belirtilen değere böler.
+Depolanan onay sayısını belirli bir değere böler.
 
 ```cpp
 duration& operator/=(const rep& Div);
@@ -229,24 +229,24 @@ duration& operator/=(const rep& Div);
 
 ### <a name="parameters"></a>Parametreler
 
-*DIV*\
-Tarafından `duration::rep`belirtilen türün değeri.
+*Div*\
+`duration::rep`Tarafından belirtilen türün değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölüm gerçekleştirildikten sonra nesnesi. `duration`
+Bölme `duration` yapıldıktan sonra nesne.
 
-## <a name="op_add"></a>Duration:: operator +
+## <a name="durationoperator"></a><a name="op_add"></a>süre::operatör+
 
-Döndürür `*this`.
+`*this` döndürür.
 
 ```cpp
 constexpr duration operator+() const;
 ```
 
-## <a name="op_add_add"></a>Duration:: operator + +
+## <a name="durationoperator"></a><a name="op_add_add"></a>süre::operator++
 
-Depolanan değer sayısını artırır.
+Depolanan kene sayısını artımlar.
 
 ```cpp
 duration& operator++();
@@ -256,13 +256,13 @@ duration operator++(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk yöntem döndürülür `*this`.
+İlk yöntem `*this`döndürür.
 
-İkinci yöntem, arttırmadan önce yapılan `*this` bir kopyasını döndürür.
+İkinci yöntem, artıştan `*this` önce yapılan bir kopyasını döndürür.
 
-## <a name="op_add_eq"></a>Duration:: operator + =
+## <a name="durationoperator"></a><a name="op_add_eq"></a>süre::operator+=
 
-Belirtilen `duration` bir nesnenin değer sayısını depolanan değer sayısına ekler.
+Depolanan kene sayısına belirtilen `duration` nesnenin onay sayısını ekler.
 
 ```cpp
 duration& operator+=(const duration& Dur);
@@ -270,16 +270,16 @@ duration& operator+=(const duration& Dur);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hecesi*\
-A `duration` nesne.
+*Dur*\
+Bir `duration` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ekleme gerçekleştirildikten sonra nesnesi. `duration`
+Ekleme `duration` yapıldıktan sonra nesne.
 
-## <a name="operator-_eq"></a>Duration:: operator-=
+## <a name="durationoperator-"></a><a name="operator-_eq"></a>süre::operatör-=
 
-Belirtilen `duration` bir nesnenin değer sayısını depolanan değer sayısı 'ndan çıkartır.
+Depolanan kene sayısından `duration` belirli bir nesnenin onay sayısını çıkarır.
 
 ```cpp
 duration& operator-=(const duration& Dur);
@@ -287,24 +287,24 @@ duration& operator-=(const duration& Dur);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hecesi*\
-A `duration` nesne.
+*Dur*\
+Bir `duration` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çıkarma gerçekleştirildikten sonra nesnesi. `duration`
+Çıkarma `duration` yapıldıktan sonra nesne.
 
-## <a name="zero"></a>süre:: sıfır
+## <a name="durationzero"></a><a name="zero"></a>süre::sıfır
 
-Döndürür `duration(duration_values<rep>::zero())`.
+`duration(duration_values<rep>::zero())` döndürür.
 
 ```cpp
 static constexpr duration zero();
 ```
 
-## <a name="op_mod_eq"></a>Duration:: operator mod =
+## <a name="durationoperator-mod"></a><a name="op_mod_eq"></a>süre::operatör mod=
 
-Depolanan değer sayısı mod div veya div. Count () değerini azaltır.
+Depolanan onay sayısını azaltır modulo Div veya Div.count().
 
 ```cpp
 duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
@@ -312,15 +312,15 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
 
 ### <a name="parameters"></a>Parametreler
 
-*DIV*\
-Bir duration nesnesi ya da değer sayısını temsil eden bir değer olan bölen.
+*Div*\
+Bir süre nesnesi veya kene sayar temsil eden bir değer olan bölen.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, depolanan değer sayısı mod div değerini azaltır ve * this döndürür. İkinci üye işlevi, depolanan değer sayısı mod div. Count () değerini azaltır ve bunu \*döndürür.
+İlk üye işlevi depolanan onay sayısı modulo Div azaltır ve * bu döndürür. İkinci üye işlev, depolanan onay sayısı modulo Div.count() azaltır ve bunu döndürür. \*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[\<> hatası](../standard-library/chrono.md)\
+[Üstbilgi Dosyaları Başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<chrono>](../standard-library/chrono.md)\
 [duration_values Yapısı](../standard-library/duration-values-structure.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Menüler ve kaynaklar: Menü birleştirme'
+title: 'Menüler ve Kaynaklar: Menü Birleştirme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - status bars [MFC], OLE document applications
@@ -10,49 +10,49 @@ helpviewer_keywords:
 - merging toolbar and status bar [MFC]
 - menus [MFC], OLE document applications
 ms.assetid: 80b6bb17-d830-4122-83f0-651fc112d4d1
-ms.openlocfilehash: 1f7af7007e72cb8e01022c81a244fc70ba52a5cc
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 149af83bd53b7a97fd264bd6b18701fc9f64ea1f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504819"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364766"
 ---
-# <a name="menus-and-resources-menu-merging"></a>Menüler ve kaynaklar: Menü birleştirme
+# <a name="menus-and-resources-menu-merging"></a>Menüler ve Kaynaklar: Menü Birleştirme
 
-Bu makalede OLE belge uygulamaları ve düzgün şekilde yerinde etkinleştirme görsel düzenleme işlemek gerekli adımları ayrıntılı olarak açıklanmaktadır. Yerinde etkinleştirme (Bileşen) uygulamalarının kapsayıcı hem sunucusu için bir sınama oluşturur. Kullanıcı (kapsayıcı belge bağlamında) aynı çerçeve penceresi içinde kalır, ancak başka bir uygulama (sunucu) gerçekte çalışıyor. Bu, kapsayıcı hem de sunucu uygulamalarına kaynaklar arasında koordinasyon gereksinimini olabildiğince gerektirir.
+Bu makalede, Görsel düzenleme ve yerinde etkinleştirme düzgün işlemek için OLE belge uygulamaları için gerekli adımları ayrıntıları. Yerinde etkinleştirme hem kapsayıcı hem de sunucu (bileşen) uygulamaları için zor bir sorun teşkil eder. Kullanıcı aynı çerçeve penceresinde (kapsayıcı belge bağlamında) kalır, ancak aslında başka bir uygulama (sunucu) çalıştırıyor. Bu, kapsayıcı ve sunucu uygulamalarının kaynakları arasında koordinasyon gerektirir.
 
-Bu makalede ele alınan konular:
+Bu makalede ele alınan konular şunlardır:
 
-- [Menü düzenlerini](#_core_menu_layouts)
+- [Menü Düzenleri](#_core_menu_layouts)
 
-- [Araç çubuklarını ve durum çubukları](#_core_toolbars_and_status_bars)
+- [Araç Çubukları ve Durum Çubukları](#_core_toolbars_and_status_bars)
 
-##  <a name="_core_menu_layouts"></a> Menü düzenlerini
+## <a name="menu-layouts"></a><a name="_core_menu_layouts"></a>Menü Düzenleri
 
-Menü düzenlerini koordine etmek için ilk adımdır bakın. Kapsayıcı uygulamaları, yalnızca katıştırılmış öğeler yerinde etkinleştirildiğinde kullanılacak yeni bir menü oluşturmanız gerekir. En azından aşağıdaki listelendikleri sırada bu menü oluşmalıdır:
+İlk adım menü düzenlerini koordine etmektir. Kapsayıcı uygulamaları, yalnızca katıştırılmış öğeler yerinde etkinleştirildiğinde kullanılmak üzere yeni bir menü oluşturmalıdır. En azından, bu menü listelenen sırada aşağıdakilerden oluşmalıdır:
 
-1. Dosya menüsü dosyası açıkken kullanılan işlem için aynıdır. (Genellikle diğer bir menü öğeleri sonraki öğeye önce yerleştirilir.)
+1. Dosya menüsü, dosyalar açıkken kullanılanla aynı. (Genellikle bir sonraki öğeden önce başka menü öğesi yerleştirilmesi yoktur.)
 
 1. İki ardışık ayırıcı.
 
-1. Pencere menüsü dosyası açıkken kullanılan bir özdeş (yalnızca bir MDI uygulamasında kapsayıcı uygulaması). Yerinde gömülü bir öğe etkinleştirildiğinde, menüsünde kalır, bu gruba ait diğer menüler, bir Seçenekler menüsü gibi bazı uygulamalar olabilir.
+1. Pencere menüsü, dosyalar açıkken kullanılanla aynıdır (yalnızca bir MDI uygulamasındaki kapsayıcı uygulaması ysa). Bazı uygulamalarda, katıştırılmış bir öğe yerinde etkinleştirildiğinde menüde kalan bu gruba ait Seçenekler menüsü gibi başka menüler de olabilir.
 
     > [!NOTE]
-    >  Yakınlaştırma gibi kapsayıcı belgenin görünümünü etkileyen başka menüler olabilir. Bu menü kaynağında iki ayırıcıları arasında bu kapsayıcı menü görünür.
+    >  Yakınlaştırma gibi kapsayıcı belgenin görünümünü etkileyen başka menüler de olabilir. Bu kapsayıcı menüleri, bu menü kaynağındaki iki ayırıcı arasında görünür.
 
-Sunucu (Bileşen) uygulamalarını da özellikle yerinde etkinleştirme için yeni menü oluşturmanız gerekir. Bu dosyalar açıkken kullanılan menü gibi ancak menü öğeleri, dosya ve veri yerine sunucu belgesinin düzenleme penceresi gibi olmalıdır. Genellikle, bu menüyü aşağıdakilerden oluşur:
+Sunucu (bileşen) uygulamaları da yerinde etkinleştirme için özel olarak yeni bir menü oluşturmalıdır. Dosyalar açıkken kullanılan, ancak veri yerine sunucu belgesini manipüle eden Dosya ve Pencere gibi menü öğeleri olmadan kullanılan menü gibi olmalıdır. Genellikle, bu menü aşağıdakilerden oluşur:
 
-1. Düzen menüsü dosyası açıkken kullanılan işlem için aynıdır.
+1. Dosyalar açıkken kullanılan menüyle aynı menüyü edin.
 
 1. Ayırıcı.
 
-1. Menüleri, karalama örnek uygulamasını kalem menüde gibi düzenleme nesne.
+1. Karalama örnek uygulamasındaki Kalem menüsü gibi nesne düzenleme menüleri.
 
 1. Ayırıcı.
 
 1. Yardım menüsü.
 
-Örneğin, bir kapsayıcı ve bir sunucu için bazı örnek yerinde menüleri düzenini bakın. Her bir menü öğesi ayrıntılarını örneği daha anlaşılır hale getirmek için kaldırılmıştır. Kapsayıcının yerinde menüsünde aşağıdaki girişler vardır:
+Örneğin, kapsayıcı ve sunucu için bazı örnek sıralı menülerin düzenine bakın. Her menü öğesinin ayrıntıları, örneği daha net hale getirmek için kaldırıldı. Kapsayıcının yerinde menüsünde aşağıdaki girişler vardır:
 
 ```
 IDR_CONTAINERTYPE_CNTR_IP MENU PRELOAD DISCARDABLE
@@ -66,7 +66,7 @@ BEGIN
 END
 ```
 
-Art arda ayırıcılar sunucunun menü ilk bölümünü nereye gösterir. Artık server'ın yerinde menüsüne bakın:
+Ardışık ayırıcılar, sunucu menüsünün ilk bölümünün nereye gitmesi gerektiğini gösterir. Şimdi sunucunun yerinde menüsüne bakın:
 
 ```
 IDR_SERVERTYPE_SRVR_IP MENU PRELOAD DISCARDABLE
@@ -79,7 +79,7 @@ BEGIN
 END
 ```
 
-İkinci grup kapsayıcı menü öğelerinin nereye gideceğine ayırıcılar burada belirtin. Bu sunucudan bir nesnesi bu kapsayıcının içinde yerinde etkinleştirildiğinde, sonuçta elde edilen menüsü yapısı şu şekilde görünür:
+Buradaki ayırıcılar, ikinci kapsayıcı menü öğeleri grubunun nereye gitmesi gerektiğini gösterir. Bu sunucudan bir nesne bu kapsayıcının içinde yerinde etkinleştirildiğinde ortaya çıkan menü yapısı aşağıdaki gibi görünür:
 
 ```
 BEGIN
@@ -93,17 +93,17 @@ BEGIN
 END
 ```
 
-Gördüğünüz gibi Ayırıcılar her uygulamanın menüsüne farklı gruplarıyla değiştirilmiştir.
+Gördüğünüz gibi, ayırıcılar her uygulamanın menüsünden farklı gruplarla değiştirildi.
 
-Hızlandırıcı tablolarını yerinde menüsü ile ilişkili sunucu uygulaması tarafından da sağlanmalıdır. Kapsayıcı bunları kendi Hızlandırıcı tablolarına birleştirecektir.
+Yerinde menüyle ilişkili hızlandırıcı tabloları da sunucu uygulaması tarafından sağlanmalıdır. Kapsayıcı bunları kendi hızlandırıcı tablolarına dahil edecektir.
 
-Gömülü bir öğe yerinde etkinleştirildiğinde framework yerinde menü yükler. Ardından, menüsünü sunucu uygulaması için yerinde etkinleştirme ister ve ayırıcılar nerede ekler. Menülerde nasıl birleştirmek budur. Dosya ve Pencere yerleştirme işletim için kapsayıcıdan menüleri alın ve menüler öğede yürütülmesi için sunucudan alın.
+Katıştırılmış bir öğe yerinde etkinleştirildiğinde, çerçeve yerinde menü yükler. Daha sonra sunucu uygulamasından menüsünü yerinde etkinleştirme için ister ve ayırıcıların bulunduğu yere ekler. Menüler bu şekilde birleşir. Dosya ve pencere yerleşiminde çalışma için kapsayıcıdan menüler alırsınız ve öğeüzerinde çalışma için sunucudan menüler alırsınız.
 
-##  <a name="_core_toolbars_and_status_bars"></a> Araç çubuklarını ve durum çubukları
+## <a name="toolbars-and-status-bars"></a><a name="_core_toolbars_and_status_bars"></a>Araç Çubukları ve Durum Çubukları
 
-Sunucu uygulamaları, yeni bir araç çubuğu oluşturma ve kendi bit eşlem ayrı bir dosyada depolar. Uygulama Sihirbazı tarafından oluşturulan uygulamalar, bu bit eşlem ITOOLBAR adlı bir dosyada depolar. BMP. Yeni araç çubuğu sunucunuzun öğesi yerinde etkinleştirilir ve, normal bir araç olarak aynı öğeleri içeriyor, ancak dosya ve pencere menü öğeleri temsil eden simgeler kaldırmanız kapsayıcı uygulamasının araç değiştirir.
+Sunucu uygulamaları yeni bir araç çubuğu oluşturmalı ve bit eşlesini ayrı bir dosyada depolamalıdır. Uygulama sihirbazı tarafından oluşturulan uygulamalar bu bit eşlemi ITOOLBAR adlı bir dosyada saklar. Bmp. Sunucunuzun öğesi yerinde etkinleştirildiğinde yeni araç çubuğu kapsayıcı uygulamanın araç çubuğunun yerini alır ve normal araç çubuğunuzla aynı öğeleri içermelidir, ancak Dosya ve Pencere menülerinde öğeleri temsil eden simgeleri kaldırmalı.
 
-Bu araç çubuğu yüklü olduğu, `COleIPFrameWnd`-türetilmiş sınıf, sizin için Uygulama Sihirbazı tarafından oluşturuldu. Durum çubuğu kapsayıcı uygulama tarafından gerçekleştirilir. Yerinde çerçeve pencereleri uygulama hakkında daha fazla bilgi için bkz. [sunucuları: Sunucu uygulama](../mfc/servers-implementing-a-server.md).
+Bu araç çubuğu, `COleIPFrameWnd`uygulama sihirbazı tarafından sizin için oluşturulan -türetilmiş sınıfınızda yüklenir. Durum çubuğu kapsayıcı uygulaması tarafından işlenir. Yerinde çerçeve pencerelerin uygulanması hakkında daha fazla bilgi için [bkz.](../mfc/servers-implementing-a-server.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

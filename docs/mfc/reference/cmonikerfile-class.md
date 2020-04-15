@@ -1,5 +1,5 @@
 ---
-title: CMonikerFile sınıfı
+title: CMonikerFile Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMonikerFile
@@ -18,16 +18,16 @@ helpviewer_keywords:
 - CMonikerFile [MFC], Open
 - CMonikerFile [MFC], CreateBindContext
 ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
-ms.openlocfilehash: 56283b56a1c0832d34ce23c7db47c47d9480aec8
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: fc74ad2499fcde63faa2c5859a87fd9ffd2846eb
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504574"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81319781"
 ---
-# <a name="cmonikerfile-class"></a>CMonikerFile sınıfı
+# <a name="cmonikerfile-class"></a>CMonikerFile Sınıfı
 
-Bir [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker)tarafından [](/windows/win32/api/objidl/nn-objidl-istream)adlandırılan veri akışını (IStream) temsil eder.
+Bir [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker)tarafından adlandırılan bir veri akışını [(IStream)](/windows/win32/api/objidl/nn-objidl-istream)temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,52 +39,52 @@ class CMonikerFile : public COleStreamFile
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMonikerFile::CMonikerFile](#cmonikerfile)|Bir `CMonikerFile` nesnesi oluşturur.|
+|[CMonikerFile::CMonikerFile](#cmonikerfile)|Bir `CMonikerFile` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMonikerFile:: Close](#close)|Akışı ayırır ve yayınlar ve bilinen adı yayınlar.|
-|[CMonikerFile::D etach](#detach)|`IMoniker` Bu`CMonikerFile` nesneden ayırır.|
-|[CMonikerFile:: Getbilinen ad](#getmoniker)|Geçerli bilinen adı döndürür.|
-|[CMonikerFile:: Open](#open)|Bir akış almak için belirtilen dosyayı açar.|
+|[CMonikerFile::Kapat](#close)|Akışı ayırır ve serbest bırakır ve lakabı serbest bırakır.|
+|[CMonikerDosya::Detach](#detach)|Bu `CMonikerFile` nesneden `IMoniker` ayırın.|
+|[CMonikerFile::GetMoniker](#getmoniker)|Geçerli takma adacını döndürür.|
+|[CMonikerFile::Aç](#open)|Akış almak için belirtilen dosyayı açar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMonikerFile:: CreateBindContext](#createbindcontext)|Bağlama bağlamını alır veya varsayılan bir başlatılmış bağlama bağlamı oluşturur.|
+|[CMonikerFile::CreateBindContext](#createbindcontext)|Bağlama bağlamını alır veya varsayılan başharf bağlama bağlamı oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bilinen ad, bir dosyanın yol adı gibi bilgileri içerir. Bilinen ad nesnesinin `IMoniker` arabirimine yönelik bir işaretçiniz varsa, dosyanın aslında bulunduğu konum hakkında başka herhangi bir bilgi sahibi olmadan tanımlı dosyaya erişim sağlayabilirsiniz.
+Takma ad, dosyaya giden yol adı gibi bilgiler içerir. Bir takma adın nesnesinin `IMoniker` arabirimine işaretçiniz varsa, dosyanın gerçekte nerede bulunduğu hakkında başka özel bilgilere sahip olmadan tanımlanan dosyaya erişebilirsiniz.
 
-Öğesinden `COleStreamFile`türetilmiş, `CMonikerFile` bilinen bir ad veya dize temsili alır ve bilinen adın adı olduğu akışa bağlanır. Daha sonra bu akışı okuyabilir ve yazabilirsiniz. ' Nin `CMonikerFile` gerçek amacı, ' a bir akışa bağlanmak zorunda kalmaması, `IMoniker`ancak `CFile` akışa işlevsellik sağlamanız `IStream`gerekmez.
+`COleStreamFile`Türetilen, `CMonikerFile` bir takma ad veya bir takma ad içine yapabilir ve takma ad bir ad olduğu akışına bağlar bir dize gösterimi alır. Daha sonra okuyup bu akışa yazabilirsiniz. Gerçek amacı, `CMonikerFile` bir akışa `IStream`kendiniz bağlamak `IMoniker`zorunda kalmamak, ancak akışa işlevsellik sağlamak `CFile` için s tarafından adlandırılan s basit erişim sağlamaktır.
 
-`CMonikerFile`Stream dışında bir şeye bağlamak için kullanılamaz. Depolama alanı veya bir nesneye bağlamak istiyorsanız, `IMoniker` arabirimi doğrudan kullanmanız gerekir.
+`CMonikerFile`akış tan başka bir şeye bağlamak için kullanılamaz. Depolama alanına veya bir nesneye bağlamak istiyorsanız, `IMoniker` arabirimi doğrudan kullanmanız gerekir.
 
-Akışlar ve takma adlar hakkında daha fazla bilgi için, Windows SDK *MFC başvurusu* ve ıstreamve [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker) Içindeki [coperstreamfile](../../mfc/reference/colestreamfile-class.md) ' [a](/windows/win32/api/objidl/nn-objidl-istream) bakın.
+Akışlar ve monikerler hakkında daha fazla bilgi için, Windows SDK'daki *MFC Reference'da* [COleStreamFile](../../mfc/reference/colestreamfile-class.md) ve [IStream](/windows/win32/api/objidl/nn-objidl-istream) ve [IMoniker'a](/windows/win32/api/objidl/nn-objidl-imoniker) bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CFile](../../mfc/reference/cfile-class.md)
+[Cfile](../../mfc/reference/cfile-class.md)
 
-[Cotastreamfile](../../mfc/reference/colestreamfile-class.md)
+[COleStreamFile](../../mfc/reference/colestreamfile-class.md)
 
 `CMonikerFile`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxole. h
+**Üstbilgi:** afxole.h
 
-##  <a name="close"></a>CMonikerFile:: Close
+## <a name="cmonikerfileclose"></a><a name="close"></a>CMonikerFile::Kapat
 
-Akışı ayırmak ve serbest bırakmak ve bilinen adı bırakmak için bu işlevi çağırın.
+Akışı ayırmak ve serbest bırakmak ve lakabı serbest bırakmak için bu işlevi arayın.
 
 ```
 virtual void Close();
@@ -92,19 +92,19 @@ virtual void Close();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Açık olmayan veya zaten kapalı akışlar üzerinde çağrılabilir.
+Açılmamış veya zaten kapalı olan akışlara çağrılabilir.
 
-##  <a name="cmonikerfile"></a>CMonikerFile::CMonikerFile
+## <a name="cmonikerfilecmonikerfile"></a><a name="cmonikerfile"></a>CMonikerFile::CMonikerFile
 
-Bir `CMonikerFile` nesnesi oluşturur.
+Bir `CMonikerFile` nesne inşa eder.
 
 ```
 CMonikerFile();
 ```
 
-##  <a name="createbindcontext"></a>CMonikerFile:: CreateBindContext
+## <a name="cmonikerfilecreatebindcontext"></a><a name="createbindcontext"></a>CMonikerFile::CreateBindContext
 
-Varsayılan bir başlatılmış bağlama bağlamı oluşturmak için bu işlevi çağırın.
+Varsayılan başharf bağlama bağlamı oluşturmak için bu işlevi çağırın.
 
 ```
 IBindCtx* CreateBindContext(CFileException* pError);
@@ -112,20 +112,20 @@ IBindCtx* CreateBindContext(CFileException* pError);
 
 ### <a name="parameters"></a>Parametreler
 
-*pError*<br/>
-Bir dosya özel durumunun işaretçisi. Bir hata durumunda, nedeni olarak ayarlanır.
+*pHata*<br/>
+Dosya özel durum için bir işaretçi. Bir hata durumunda, neden olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa bağlama bağlamı [IBindCtx](/windows/win32/api/objidl/nn-objidl-ibindctx) için bir işaretçi; Aksi takdirde NULL. Örnek bir `IBindHost` arabirim ile açılırsa, bağlama bağlamı `IBindHost`öğesinden alınır. `IBindHost` Arabirim yoksa veya arabirim bir bağlama bağlamı döndürmediğinde, bir bağlama bağlamı oluşturulur. [IBindHost](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775076\(v=vs.85\)) arabiriminin açıklaması için Windows SDK bakın.
+Bağlama bağlamı [IBindCtx'in](/windows/win32/api/objidl/nn-objidl-ibindctx) başarılı olursa ile bağdatmak için işaretçisi; aksi takdirde NULL. Örnek bir `IBindHost` arabirimle açıldıysa, bağlama bağlamı `IBindHost`. Arabirim yoksa `IBindHost` veya arabirim bağlama bağlamını döndürmezse, bağlama bağlamı oluşturulur. [IBindHost](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775076\(v=vs.85\)) arabiriminin açıklaması için Windows SDK'ya bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağlama bağlamı, belirli bir bilinen ad bağlama işlemi hakkında bilgi depolayan bir nesnedir. Özel bir bağlama bağlamı sağlamak için bu işlevi geçersiz kılabilirsiniz.
+Bağlama bağlamı, belirli bir takma alma bağlama işlemi hakkında bilgi depolayan bir nesnedir. Özel bağlama bağlamı sağlamak için bu işlevi geçersiz kılabilirsiniz.
 
-##  <a name="detach"></a>CMonikerFile::D etach
+## <a name="cmonikerfiledetach"></a><a name="detach"></a>CMonikerDosya::Detach
 
-Akışı kapatmak için bu işlevi çağırın.
+Akışı kapatmak için bu işlevi arayın.
 
 ```
 BOOL Detach(CFileException* pError = NULL);
@@ -133,16 +133,16 @@ BOOL Detach(CFileException* pError = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*pError*<br/>
-Bir dosya özel durumunun işaretçisi. Bir hata durumunda, nedeni olarak ayarlanır.
+*pHata*<br/>
+Dosya özel durum için bir işaretçi. Bir hata durumunda, neden olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
-##  <a name="getmoniker"></a>CMonikerFile:: Getbilinen ad
+## <a name="cmonikerfilegetmoniker"></a><a name="getmoniker"></a>CMonikerFile::GetMoniker
 
-Geçerli bilinen bir işaretçi almak için bu işlevi çağırın.
+Geçerli takma alaişaret almak için bu işlevi çağırın.
 
 ```
 IMoniker* GetMoniker() const;
@@ -150,15 +150,15 @@ IMoniker* GetMoniker() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bilinen ad arabirimine ( [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker)) yönelik bir işaretçi.
+Geçerli takma arabirimi [(IMoniker)](/windows/win32/api/objidl/nn-objidl-imoniker)için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CMonikerFile` arabirim olmadığından, döndürülen işaretçi başvuru sayısını ( [AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)aracılığıyla) artırmaz ve bu ad, `CMonikerFile` nesne serbest bırakıldığında serbest bırakılır. Bilinen ad üzerinde tutmak veya kendiniz yayınlamak istiyorsanız, bunu yapmanız gerekir `AddRef` .
+Arabirim olmadığından, döndürülen işaretçi başvuru sayısını [(AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)aracılığıyla) artımaz ve `CMonikerFile` nesne serbest bırakıldığında takma adı serbest bırakılır. `CMonikerFile` Lakabını tutmak ya da kendiniz serbest bırakmak istiyorsanız, `AddRef` bunu yapmalısınız.
 
-##  <a name="open"></a>CMonikerFile:: Open
+## <a name="cmonikerfileopen"></a><a name="open"></a>CMonikerFile::Aç
 
-Bir dosya veya bilinen ad nesnesini açmak için bu üye işlevini çağırın.
+Bir dosya veya takma adlandırma nesnesi açmak için bu üye işlevi arayın.
 
 ```
 virtual BOOL Open(
@@ -172,28 +172,28 @@ virtual BOOL Open(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszURL*<br/>
-Açılacak dosyanın URL 'SI veya dosya adı.
+*Lpszurl*<br/>
+Açılacak dosyanın URL'si veya dosya adı.
 
-*pError*<br/>
-Bir dosya özel durumunun işaretçisi. Bir hata durumunda, nedeni olarak ayarlanır.
+*pHata*<br/>
+Dosya özel durum için bir işaretçi. Bir hata durumunda, neden olarak ayarlanır.
 
-*Pbilinen*<br/>
-Bir akış elde etmek için kullanılacak `IMoniker` bilinen ad arabirimine yönelik bir işaretçi.
+*pMoniker*<br/>
+Bir akış elde etmek için `IMoniker` kullanılacak takma abiriara bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*LpszURL* parametresi bir Macintosh üzerinde kullanılamaz. Bir Macintosh üzerinde yalnızca *pbilinen* biçimi `Open` kullanılabilir.
+*LpszURL* parametresi Macintosh'ta kullanılamaz. Macintosh'ta sadece *pMoniker* formu `Open` kullanılabilir.
 
-*LpszURL* parametresi IÇIN bir URL veya dosya adı kullanabilirsiniz. Örneğin:
+*LPSZURL* parametresi için bir URL veya dosya adı kullanabilirsiniz. Örneğin:
 
 [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/cpp/cmonikerfile-class_1.cpp)]
 
-\- veya -
+\-veya -
 
 [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/cpp/cmonikerfile-class_2.cpp)]
 

@@ -1,10 +1,11 @@
 ---
 title: tanh, tanhf, tanhl
-ms.date: 04/10/2018
+ms.date: 4/2/2020
 api_name:
 - tanh
 - tanhf
 - tanhl
+- _o_tanh
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -33,16 +35,16 @@ helpviewer_keywords:
 - tanhf function
 - trigonometric functions
 - hyperbolic functions
-ms.openlocfilehash: 0d249768ed26a55e639cced55bae6b923dbf521b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 626252285a11ae4cbcb8bd2e5658512b85bfd3d3
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957528"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81362623"
 ---
 # <a name="tanh-tanhf-tanhl"></a>tanh, tanhf, tanhl
 
-Hiperbolik tanjantı hesaplar.
+Hiperbolik teğeti hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,28 +61,30 @@ long double tanh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
-Radyan cinsinden açı.
+*X*<br/>
+Radyanlarda açı.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-**Tanh** işlevleri *x*'in hiperbolik tanjantını döndürür. Hata döndürme yok.
+**Tanh** fonksiyonları *x*hiperbolik teğet dönmek . Hata iadesi yok.
 
-|Giriş|SEH özel durumu|**Matherr** Duruma|
+|Girdi|SEH Özel Durumu|**Matherr** Özel durum|
 |-----------|-------------------|-------------------------|
-|± QNAN, IND|yok|_DOMAIN|
+|± QNAN,IND|yok|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerleri alıp döndüren **tanjanh** aşırı yüklerini çağırabilirsiniz. C programında, **tanh** her zaman **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** veya **uzun** **çift** değerleri alan ve döndüren aşırı **tanh** yüklerini arayabilirsiniz. Bir C programında, **tanh** her zaman alır ve **çift**döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C)|
+|Yordam|Gerekli üstbilgi (C)|Gerekli üstbilgi (C)|
 |-------------|---------------------|-|
-|**tanh**, **tanhf**, **tanhl**|\<Math. h >|\<cmath > veya \<Math. h >|
+|**tanh**, **tanhf**, **tanhl**|\<math.h>|\<cmath> \<veya math.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

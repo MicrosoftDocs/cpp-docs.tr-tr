@@ -23,16 +23,16 @@ helpviewer_keywords:
 - std::discrete_distribution [C++], param_type
 - std::discrete_distribution [C++], param_type
 ms.assetid: 8c8ba8f8-c06f-4f07-b354-f53950142fcf
-ms.openlocfilehash: ce668ebfdafc4a53bfc71ecf1f2fa76abb1c7532
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 83d69df399d556025d0f7d4a8ccd714ff43a76ec
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454381"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368767"
 ---
-# <a name="discretedistribution-class"></a>discrete_distribution Sınıfı
+# <a name="discrete_distribution-class"></a>discrete_distribution Sınıfı
 
-Her aralıkta Tekdüzen olasılığa sahip tek bir tamsayı dağılımı üretir.
+Her aralıkta tek düze olasılık içeren tek düze genişlik aralıkları olan ayrı bir tamsayı dağılımı oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -73,22 +73,22 @@ public:
 ### <a name="parameters"></a>Parametreler
 
 *IntType*\
-Tamsayı sonuç türü, varsayılan olarak **int 'tir**. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
+**İnt**varsayılan olarak, tümsedo sonuç türü. Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu örnekleme dağıtımında, her aralıkta Tekdüzen olasılığa sahip tek biçimli bir Aralık vardır. Diğer örnekleme dağıtımları hakkında daha fazla bilgi için bkz. [Piecewise_linear_distribution Class](../standard-library/piecewise-linear-distribution-class.md) and [piecewise_constant_distribution Class](../standard-library/piecewise-constant-distribution-class.md).
+Bu örnekleme dağılımı, her aralıkta tek düze olasılık ile tek düze genişlik aralıkları vardır. Diğer örnekleme dağılımları hakkında bilgi için [piecewise_linear_distribution Sınıf](../standard-library/piecewise-linear-distribution-class.md) ve piecewise_constant_distribution [Sınıfı'na](../standard-library/piecewise-constant-distribution-class.md)bakın.
 
-Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar:
+Bireysel üyeler le ilgili makalelere aşağıdaki tablo bağlantıları:
 
 |||
 |-|-|
 |[discrete_distribution](#discrete_distribution)|`discrete_distribution::param`|
 |`discrete_distribution::operator()`|[param_type](#param_type)|
 
-Property işlevi `vector<double> probabilities()` , oluşturulan her tamsayı için bireysel olasılıkların tümünü döndürür.
+Özellik işlevi, `vector<double> probabilities()` oluşturulan her bir arastıcının tek tek olasılıklarını döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için [ \<rastgele>](../standard-library/random.md)bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -171,13 +171,13 @@ Distribution for 100 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<rastgele >
+**Üstbilgi:** \<rastgele>
 
 **Ad alanı:** std
 
-## <a name="discrete_distribution"></a>discrete_distribution::d iscrete_distribution
+## <a name="discrete_distributiondiscrete_distribution"></a><a name="discrete_distribution"></a>discrete_distribution::discrete_distribution
 
-Dağıtımı oluşturur.
+Dağıtımı kurar.
 
 ```cpp
 // default constructor
@@ -200,46 +200,46 @@ explicit discrete_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*firstW*\
-Dağıtım oluşturmak için listedeki ilk Yineleyici.
+*ilkW*\
+Dağıtım oluşturmak için listedeki ilk yineleyici.
 
 *lastW*\
-Dağıtım oluşturmak için kullanılan listedeki son Yineleyici (yineleyiciler, son için boş bir öğe kullandığından).
+Dağıtım oluşturmak için listedeki son yineleyici (yinelemeciler sonu için boş bir öğe kullandığından dahil değildir).
 
-*ağırlıklı Tlist*\
-Dağıtımın oluşturulacağı [initializer_list](../cpp/initializers.md) .
+*ağırlık listesi*\
+[Dağıtımın](../cpp/initializers.md) initializer_list.
 
-*biriktirme*\
-Dağıtım aralığındaki öğe sayısı. `count==0`, Varsayılan oluşturucuya eşdeğerdir (her zaman sıfır üretir).
+*Sayısı*\
+Dağıtım aralığındaki eleman sayısı. Eğer, `count==0`varsayılan oluşturucuya eşdeğer (her zaman sıfır üretir).
 
-*zayıf*\
+*Düşük*\
 Dağıtım aralığındaki en düşük değer.
 
-*geniş*\
+*Yüksek*\
 Dağıtım aralığındaki en yüksek değer.
 
-*ağırlıklı tfunc*\
-Dağıtım için olasılık işlevini temsil eden nesne. Hem parametre hem de dönüş değeri **Double**'a dönüştürülebilir olmalıdır.
+*weightfunc*\
+Dağılım için olasılık işlevini temsil eden nesne. Hem parametre hem de iade değeri **çift**e dönüştürülebilir olmalıdır.
 
-*parametresi*\
-Dağıtımı oluşturmak için kullanılan yapı.`param_type`
+*parm*\
+Dağılımı `param_type` oluşturmak için kullanılan yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan Oluşturucu, saklı olasılık değeri 1 değeri olan bir öğeye sahip olan bir nesne oluşturur. Bu, her zaman sıfır üreten bir dağıtıma neden olur.
+Varsayılan oluşturucu, depolanan olasılık değeri 1 değeri olan bir öğeye sahip bir nesne inşa eder. Bu, her zaman sıfır üreten bir dağıtımla sonuçlanır.
 
-*FirstW* ve *lastw* parametreleri olan yineleyici Aralık Oluşturucusu, [*firstW*, *lastw*) Aralık sırası üzerinden yineleyiciler tarafından alınan ağırlık değerlerini kullanarak bir dağıtım nesnesi oluşturur.
+*parametreleri firstW* ve *lastW* olan yineleyici aralığı oluşturucu, aralık sırası [*firstW*, *lastW]* üzerinden yineleyicilerden alınan ağırlık değerlerini kullanarak bir dağıtım nesnesi kurar.
 
-Bir Weight *Tlist* parametresi olan başlatıcı listesi Oluşturucusu, bir dağıtım nesnesi oluşturur ve bu, başlatıcı listesinden ağırlıklardır *.*
+*Ağırlık listesi* parametresi olan baş harf listesi oluşturucu, başharf listesi *ağırlık listesinden*ağırlıkları olan bir dağıtım nesnesi inşa eder.
 
-*Count*, *Low*, *High*ve *tartıtfunc* parametrelerine sahip Oluşturucu, bu kurallara göre başlatılan bir dağıtım nesnesi oluşturur:
+*Sayı*, *düşük,* *yüksek*ve *weightfunc* parametreleri olan yapıcı, bu kurallara göre başharfle başlatınır bir dağıtım nesnesi inşa eder:
 
-- Eğer *sayı* < 1, **n** = 1 ise ve bu, varsayılan oluşturucuya eşdeğerdir, her zaman sıfır olarak oluşturulur.
-- Eğer *sayım* > 0, **n** = *sayısı*. Belirtilen **d** = (*yüksek* - *düşük*)/ **n** , **d** Tekdüzen alt aralıkları kullanılarak sıfırdan büyükse, her ağırlığa şu şekilde `weight[k] = weightfunc(x)`atanır:, burada **x** = *Low*  +  **k**    d d/2, k = 0,..., n-1 için. +  * 
+- 1 < *sayısı,* **n** = 1 ve bu nedenle varsayılan oluşturucu eşdeğer, her zaman sıfır üreten.
+- 0 > *sayılsa,* **n** = *sayısı*. Sağlanan **d** = (*yüksek* - *düşük*) / **n** sıfırdan büyüktür, **d** düzgün `weight[k] = weightfunc(x)`alt aralıkları kullanılarak, her ağırlık aşağıdaki gibi atanır: , **x** = *düşük* + **k** * **d** + **d** / 2, **k** = 0 için, ..., **n** - 1.
 
-Bir `param_type` parametreye sahip Oluşturucu, saklı parametre yapısı olarak *Pard* kullanarak bir dağıtım *nesnesi oluşturur.*
+Parm parametresi olan yapı oluşturucu, depolanan parametre yapısı olarak *parm* kullanarak bir dağıtım nesnesi inşa eder. *parm* `param_type`
 
-## <a name="param_type"></a>discrete_distribution::p aram_type
+## <a name="discrete_distributionparam_type"></a><a name="param_type"></a>discrete_distribution::param_type
 
 Dağıtımın tüm parametrelerini depolar.
 
@@ -268,34 +268,34 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*firstW*\
-Dağıtım oluşturmak için listedeki ilk Yineleyici.
+*ilkW*\
+Dağıtım oluşturmak için listedeki ilk yineleyici.
 
 *lastW*\
-Dağıtım oluşturmak için kullanılan listedeki son Yineleyici (yineleyiciler, son için boş bir öğe kullandığından).
+Dağıtım oluşturmak için listedeki son yineleyici (yinelemeciler sonu için boş bir öğe kullandığından dahil değildir).
 
-*ağırlıklı Tlist*\
-Dağıtımın oluşturulacağı [initializer_list](../cpp/initializers.md) .
+*ağırlık listesi*\
+[Dağıtımın](../cpp/initializers.md) initializer_list.
 
-*biriktirme*\
-Dağıtım aralığındaki öğe sayısı. *Count* değeri 0 ise, bu varsayılan oluşturucuya eşdeğerdir (her zaman sıfır üretir).
+*Sayısı*\
+Dağıtım aralığındaki eleman sayısı. *Sayım* 0 ise, bu varsayılan oluşturucuya eşdeğerdir (her zaman sıfır oluşturur).
 
-*zayıf*\
+*Düşük*\
 Dağıtım aralığındaki en düşük değer.
 
-*geniş*\
+*Yüksek*\
 Dağıtım aralığındaki en yüksek değer.
 
-*ağırlıklı tfunc*\
-Dağıtım için olasılık işlevini temsil eden nesne. Hem parametre hem de dönüş değeri **Double**'a dönüştürülebilir olmalıdır.
+*weightfunc*\
+Dağılım için olasılık işlevini temsil eden nesne. Hem parametre hem de iade değeri **çift**e dönüştürülebilir olmalıdır.
 
-*Right*\
-Karşılaştırılacak `param_type` nesne.
+*Doğru*\
+Bununla `param_type` karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu parametre paketi, dönüş değeri oluşturmak `operator()` için öğesine geçirilebilir.
+Bu parametre paketi, `operator()` iade değerini oluşturmak için geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Rastgele >](../standard-library/random.md)
+[\<rastgele>](../standard-library/random.md)

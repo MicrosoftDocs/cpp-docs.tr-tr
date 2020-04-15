@@ -1,50 +1,50 @@
 ---
-title: FIPS uyumlu güvenli uzak Linux geliştirmeyi ayarlama
-description: Uzaktan geliştirme için Visual Studio ile Linux makinesi arasında FIPS ile uyumlu bir şifreleme bağlantısı kurma.
+title: FIPS uyumlu güvenli uzak Linux geliştirmeyi ayarla
+description: Visual Studio ile uzaktan geliştirme için bir Linux makinesi arasında FIPS uyumlu şifreleme bağlantısı nasıl kurulamaz?
 ms.date: 01/17/2020
 ms.openlocfilehash: 9a0e87f4ddf69bf489b52d4f83934d3279f2d085
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
+ms.lasthandoff: 04/14/2020
 ms.locfileid: "76520895"
 ---
-# <a name="set-up-fips-compliant-secure-remote-linux-development"></a>FIPS uyumlu güvenli uzak Linux geliştirmeyi ayarlama
+# <a name="set-up-fips-compliant-secure-remote-linux-development"></a>FIPS uyumlu güvenli uzak Linux geliştirmeyi ayarla
 
 ::: moniker range="<=vs-2017"
 
-Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir. FIPS uyumlu güvenli uzak Linux geliştirme, Visual Studio 2019 sürüm 16,5 ve sonraki sürümlerinde kullanılabilir.
+Linux desteği Visual Studio 2017 ve sonrası sürümlerinde kullanılabilir. FIPS uyumlu güvenli uzaktan Linux geliştirme Visual Studio mevcuttur 2019 sürüm 16.5 ve sonraki.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Federal bilgi Işleme standardı (FIPS) yayını 140-2, şifreleme modülleri için ABD devlet standardıdır. Standart uygulamaları NıST tarafından onaylanır. Windows, [FIPS uyumlu şifreleme modülleri için desteği doğruladı](/windows/security/threat-protection/fips-140-validation). Visual Studio 2019 sürüm 16,5 ve sonraki sürümlerde, Linux sisteminize Uzaktan geliştirme için güvenli, FIPS uyumlu bir şifreleme bağlantısı kullanabilirsiniz.
+Federal Bilgi İşlem Standardı (FIPS) Yayını 140-2, kriptografik modüller için ABD hükümetinin standart standardıdır. Standardın uygulamaları NIST tarafından doğrulanır. Windows [FIPS uyumlu şifreleme modülleri için destek doğruladı.](/windows/security/threat-protection/fips-140-validation) Visual Studio 2019 sürüm 16.5 ve sonraki sürümlerinde, uzaktan geliştirme için Linux sisteminize güvenli, FIPS uyumlu bir şifreleme bağlantısı kullanabilirsiniz.
 
-Visual Studio ile uzak Linux sisteminiz arasında güvenli, FIPS uyumlu bir bağlantı kurma hakkında daha fazla bilgiyi burada bulabilirsiniz. Bu kılavuz, Visual Studio 'da CMake veya MSBuild Linux projelerini yapılandırdığınızda geçerlidir. Bu makale, [uzak Linux bilgisayarınıza bağlanma](connect-to-your-remote-linux-computer.md)bölümündeki bağlantı yönergelerinin FIPS uyumlu sürümüdür.
+Visual Studio ile uzak Linux sisteminiz arasında güvenli, FIPS uyumlu bir bağlantı nın nasıl ayarlayabilirsiniz: Bu kılavuz, Visual Studio'da CMake veya MSBuild Linux projeleri oluşturduğunuzda geçerlidir. Bu makale, [uzak Linux bilgisayarınıza bağlan'daki](connect-to-your-remote-linux-computer.md)bağlantı yönergelerinin FIPS uyumlu sürümüdür.
 
 ## <a name="prepare-a-fips-compliant-connection"></a>FIPS uyumlu bir bağlantı hazırlama
 
-Visual Studio ile uzak Linux sisteminiz arasında FIPS uyumlu, şifreli olarak güvenli bir SSH bağlantısı kullanmak için bazı hazırlıklar gerekir. FIPS-140-2 uyumluluğu için, Visual Studio yalnızca RSA anahtarlarını destekler.
+Visual Studio ile uzak Linux sisteminiz arasında FIPS uyumlu, şifreleme yle güvenli bir ssh bağlantısı kullanmak için bazı hazırlıklar gereklidir. FIPS-140-2 uyumluluğu için Visual Studio yalnızca RSA tuşlarını destekler.
 
-Bu makaledeki örneklerde, OpenSSH Server sürüm 7,6 ile Ubuntu 18,04 LTS kullanılır. Ancak, yönergeler, OpenSSH 'nin son zamanlarda oluşan sürümü kullanılarak herhangi bir deden dolayı aynı olmalıdır.
+Bu makaledeki örnekler, OpenSSH sunucu sürümü 7.6 ile Ubuntu 18.04 LTS'yi kullanamaz. Ancak, openssh orta derecede yeni bir sürümünü kullanarak herhangi bir dağıtım için talimatlar aynı olmalıdır.
 
-### <a name="to-set-up-the-ssh-server-on-the-remote-system"></a>Uzak sistemde SSH sunucusunu ayarlamak için
+### <a name="to-set-up-the-ssh-server-on-the-remote-system"></a>Uzak sistemde SSH sunucusunu kurmak için
 
-1. Linux sisteminde, OpenSSH sunucusunu yükleyip başlatın:
+1. Linux sisteminde OpenSSH sunucusunu yükleyin ve başlatın:
 
    ```bash
    sudo apt install openssh-server
    sudo service ssh start
    ```
 
-1. SSH sunucusunun sistem önyüklendiğinde otomatik olarak başlamasını isterseniz, systemctl kullanarak etkinleştirin:
+1. Sistem önyükleme yaparken ssh sunucusunun otomatik olarak başlatılmasını istiyorsanız, systemctl kullanarak etkinleştirin:
 
    ```bash
    sudo systemctl enable ssh
    ```
 
-1. */Etc/ssh/sshd_config* öğesini kök olarak açın. Aşağıdaki satırları düzenleyin (veya yoksa ekleyin):
+1. Kök olarak */etc/ssh/sshd_config* açın. Aşağıdaki satırları edin (veya eklemeyin, yoksa) aşağıdaki satırları ekleyin:
 
    ```config
    Ciphers aes256-cbc,aes192-cbc,aes128-cbc,3des-cbc
@@ -54,123 +54,123 @@ Bu makaledeki örneklerde, OpenSSH Server sürüm 7,6 ile Ubuntu 18,04 LTS kulla
    ```
 
    > [!NOTE]
-   > ssh-rsa, FIPS uyumlu tek konak anahtar algoritması Ile desteklenir. AES\*-Mrk algoritmaları ayrıca FIPS uyumludur, ancak Visual Studio 'daki uygulama onaylanmamış değildir. ECDH-\* anahtar değişim algoritmaları FIPS uyumludur, ancak Visual Studio bunları desteklemez.
+   > ssh-rsa sadece FIPS uyumlu ana bilgisayar anahtar algoritması VS destekler. Aes\*-ctr algoritmaları da FIPS uyumludur, ancak Visual Studio'daki uygulama onaylanmaz. Ecdh-anahtar\* değişim algoritmaları FIPS uyumludur, ancak Visual Studio bunları desteklemez.
 
-   Bu seçeneklerle sınırlı değilsiniz. SSH 'yi ek şifrelemeler, ana bilgisayar anahtar algoritmaları vb. kullanacak şekilde yapılandırabilirsiniz. Göz önünde bulundurmanız isteyebileceğiniz bazı ilgili güvenlik seçenekleri şunlardır `PermitRootLogin`, `PasswordAuthentication`ve `PermitEmptyPasswords`. Daha fazla bilgi için, sshd_config için Man sayfasına veya [SSH sunucusu yapılandırması](https://www.ssh.com/ssh/sshd_config)makalesine bakın.
+   Bu seçeneklerle sınırlı değilsin. Ek şifreler, ana bilgisayar anahtar algoritmaları ve benzeri kullanmak için ssh yapılandırabilirsiniz. Dikkate almak isteyebileceğin diğer bazı `PermitRootLogin` `PasswordAuthentication`ilgili `PermitEmptyPasswords`güvenlik seçenekleri , ve . Daha fazla bilgi için, sshd_config veya makale [SSH Server Configuration](https://www.ssh.com/ssh/sshd_config)için adam sayfasına bakın.
 
-1. Sshd_config kaydettikten ve kapattıktan sonra, yeni yapılandırmayı uygulamak için SSH sunucusunu yeniden başlatın:
+1. sshd_config kaydedip kapattıktan sonra, yeni yapılandırmayı uygulamak için ssh sunucusunu yeniden başlatın:
 
    ```bash
    sudo service ssh restart
    ```
 
-Ardından, Windows bilgisayarınızda bir RSA anahtar çifti oluşturacaksınız. Daha sonra, SSH tarafından kullanılmak üzere ortak anahtarı uzak Linux sistemine kopyalayacaksınız.
+Ardından, Windows bilgisayarınızda bir RSA anahtar çifti oluşturursunuz. Daha sonra ssh tarafından kullanılmak üzere uzak Linux sisteminin ortak anahtarını kopyalayaceksiniz.
 
-### <a name="to-create-and-use-an-rsa-key-file"></a>Bir RSA anahtar dosyası oluşturmak ve kullanmak için
+### <a name="to-create-and-use-an-rsa-key-file"></a>RSA anahtar dosyası oluşturmak ve kullanmak için
 
-1. Windows makinesinde, şu komutu kullanarak bir ortak/özel RSA anahtar çifti oluşturun:
+1. Windows makinesinde, bu komutu kullanarak ortak/özel RSA anahtar çifti oluşturun:
 
    ```cmd
    ssh-keygen -t rsa -b 4096
    ```
 
-   Komut bir ortak anahtar ve özel anahtar oluşturur. Anahtarlar varsayılan olarak *% userprofile%\\. ssh\\id_rsa* ve *% userprofile%\\. SSH\\id_rsa. pub*' a kaydedilir. (PowerShell 'de, cmd makrosu yerine `$env:USERPROFILE` kullanın `%USERPROFILE%`) Anahtar adını değiştirirseniz, aşağıdaki adımlarda değiştirilen adı kullanın.  Daha fazla güvenlik için bir parola kullanmanızı öneririz.
+   Komut ortak bir anahtar ve özel bir anahtar oluşturur. Varsayılan olarak, anahtarlar *%USERPROFILE%\\.ssh\\id_rsa* ve *%USERPROFILE%\\.ssh\\id_rsa.pub'a*kaydedilir. (Powershell'de `$env:USERPROFILE` cmd makro `%USERPROFILE%`yerine kullanın) Anahtar adını değiştirirseniz, değiştirilen adı izleyen adımlarda kullanın.  Artırılmış güvenlik için bir parola kullanmanızı öneririz.
 
-1. Windows 'tan ortak anahtarı Linux makinesine kopyalayın:
+1. Windows'dan ortak anahtarı Linux makinesine kopyalayın:
 
    ```cmd
    scp %USERPROFILE%\.ssh\id_rsa.pub user@hostname:
    ```
 
-1. Linux sisteminde, anahtarı yetkili anahtarlar listesine ekleyin ve dosyanın doğru izinlere sahip olduğundan emin olun:
+1. Linux sisteminde, yetkili anahtarlar listesine anahtarı ekleyin ve dosyanın doğru izinlere sahip olduğundan emin olun:
 
    ```bash
    cat ~/id_rsa.pub >> ~/.ssh/authorized_keys
    chmod 600 ~/.ssh/authorized_keys
    ```
 
-1. Şimdi, yeni anahtarın SSH 'de çalışıp çalışmadığını görmek için test edebilirsiniz. Windows 'da oturum açmak için kullanın:
+1. Şimdi, yeni anahtarın SSH'de çalışıp çalışmamadığını test edebilirsiniz. Windows'dan oturum açabilmek için kullanın:
 
     ```cmd
     ssh -i %USERPROFILE%\.ssh\id_rsa user@hostname
     ```
 
-SSH 'yi başarıyla ayarlamış, şifreleme anahtarları oluşturmuş ve dağıtmış ve bağlantınızı test tamamladınız. Şimdi Visual Studio bağlantısını ayarlamaya hazırsınız.
+SSH'yi başarıyla kurdunuz, şifreleme anahtarlarını oluşturdunuz ve dağıttınız ve bağlantınızı test ettin. Şimdi Visual Studio bağlantısını kurmaya hazırsınız.
 
-## <a name="connect-to-the-remote-system-in-visual-studio"></a>Visual Studio 'da uzak sisteme bağlanma
+## <a name="connect-to-the-remote-system-in-visual-studio"></a>Visual Studio'da uzak sisteme bağlanın
 
-1. Visual Studio 'da, **Seçenekler** iletişim kutusunu açmak için menü çubuğunda **Araçlar > Seçenekler** ' i seçin. Sonra, bağlantı Yöneticisi iletişim kutusunu açmak için **platformlar arası > bağlantı Yöneticisi** ' ni seçin.
+1. Visual Studio'da, **Seçenekler** iletişim kutusunu açmak için menü çubuğundaki **Araçlar > Seçenekler'i** seçin. Ardından Bağlantı Yöneticisi iletişim kutusunu açmak için **Platform > Bağlantı Yöneticisi'ni seçin.**
 
-   Daha önce Visual Studio 'da bir bağlantı ayarlamadıysanız, projenizi ilk kez yapılandırdığınızda, Visual Studio sizin için bağlantı Yöneticisi iletişim kutusunu açar.
+   Visual Studio'da daha önce bir bağlantı kurmadıysanız, projenizi ilk kez oluşturduğunuzda, Visual Studio Bağlantı Yöneticisi iletişim kutusunu sizin için açar.
 
-1. Bağlantı Yöneticisi iletişim kutusunda yeni bir bağlantı eklemek için **Ekle** düğmesini seçin.
+1. Bağlantı Yöneticisi iletişim kutusunda, yeni bir bağlantı eklemek için **Ekle** düğmesini seçin.
 
    ![Bağlantı Yöneticisi](media/settings_connectionmanager.png)
 
-   **Uzak sisteme Bağlan** penceresi görüntülenir.
+   **Uzak Sisteme Bağlan** penceresi görüntülenir.
 
-   ![Uzak sisteme Bağlan](media/connect.png)
+   ![Uzak Sisteme Bağlan](media/connect.png)
 
-1. **Uzak sisteme Bağlan** iletişim kutusunda, uzak makinenizin bağlantı ayrıntılarını girin.
+1. Uzak **Sisteme Bağlan** iletişim kutusunda, uzak makinenizin bağlantı ayrıntılarını girin.
 
-   | Giriş | Açıklama
+   | Girdi | Açıklama
    | ----- | ---
-   | **Ana bilgisayar adı**           | Hedef cihazınızın adı veya IP adresi
-   | **Bağlantı noktası**                | SSH hizmetinin üzerinde çalıştığı bağlantı noktası, genellikle 22
-   | **Kullanıcı adı**           | Kimlik doğrulaması yapılacak Kullanıcı
-   | **Kimlik doğrulama türü** | FIPS uyumlu bir bağlantı için özel anahtar seçin
-   | **Özel anahtar dosyası**    | SSH bağlantısı için özel anahtar dosyası oluşturuldu
-   | **Deyimi**          | Yukarıda seçilen özel anahtarla kullanılan parola
+   | **Ev Sahibi Adı**           | Hedef cihazınızın adı veya IP adresi
+   | **Bağlantı noktası**                | SSH hizmetinin üzerinde çalışan bağlantı noktası, genellikle 22
+   | **Kullanıcı adı**           | Kullanıcı olarak kimlik doğrulaması
+   | **Kimlik doğrulaması türü** | FIPS uyumlu bağlantı için Özel Anahtar'ı seçin
+   | **Özel anahtar dosyası**    | ssh bağlantısı için oluşturulan özel anahtar dosyası
+   | **Parola**          | Yukarıda seçilen özel anahtarla kullanılan parola
 
-   Kimlik doğrulama türünü **özel anahtarla**değiştirin. Özel anahtar **dosyası** alanına özel anahtarınızın yolunu girin. Bunun yerine özel anahtar dosyanıza gitmek için, **tarayıcı** düğmesini kullanabilirsiniz. Ardından, **parola** alanında özel anahtar dosyanızı şifrelemek için kullanılan parolayı girin.
+   Kimlik doğrulama türünü **Özel Anahtar**olarak değiştirin. **Özel anahtar dosyası** alanında özel anahtarınıza giden yolu girin. Bunun yerine özel tuş dosyanıza gitmek için **Gözat** düğmesini kullanabilirsiniz. Ardından, **Passphrase** alanında özel anahtar dosyanızı şifrelemek için kullanılan parolayı girin.
 
-1. Uzak bilgisayarla bağlantı kurmayı denemek için **Bağlan** düğmesini seçin.
+1. Uzak bilgisayara bağlantı denemek için **Bağlan** düğmesini seçin.
 
-   Bağlantı başarılı olursa, Visual Studio IntelliSense 'i uzak üstbilgileri kullanacak şekilde yapılandırır. Daha fazla bilgi için bkz. [uzak sistemlerdeki üst bilgiler Için IntelliSense](configure-a-linux-project.md#remote_intellisense).
+   Bağlantı başarılı olursa, Visual Studio uzak başlıkları kullanacak şekilde IntelliSense'i yapılandırır. Daha fazla bilgi için uzak [sistemlerdeki üstbilgiler için IntelliSense'e](configure-a-linux-project.md#remote_intellisense)bakın.
 
-   Bağlantı başarısız olursa, değiştirilmesi gereken giriş kutuları kırmızı renkle gösterilir.
+   Bağlantı başarısız olursa, değiştirilmesi gereken giriş kutuları kırmızı ile özetlenir.
 
-   ![Bağlantı Yöneticisi hatası](media/settings_connectionmanagererror.png)
+   ![Bağlantı Yöneticisi Hatası](media/settings_connectionmanagererror.png)
 
-   Bağlantınızın sorunlarını giderme hakkında daha fazla bilgi için bkz. [uzak Linux bilgisayarınıza bağlanma](connect-to-your-remote-linux-computer.md).
+   Bağlantınızı giderme yle ilgili daha fazla bilgi için, [uzak Linux bilgisayarınıza bağlan'a](connect-to-your-remote-linux-computer.md)bakın.
 
 ## <a name="command-line-utility-for-the-connection-manager"></a>Bağlantı Yöneticisi için komut satırı yardımcı programı  
 
-**Visual studio 2019 sürüm 16,5 veya üzeri**: ConnectionManager. exe, Visual Studio dışında Uzaktan geliştirme bağlantılarını yönetmeye yönelik bir komut satırı yardımcı programıdır. Yeni bir geliştirme makinesi sağlama gibi görevler için faydalıdır. Ayrıca, bu uygulamayı kullanarak sürekli tümleştirme için Visual Studio 'Yu ayarlayabilirsiniz. Örnek olarak, ConnectionManager komutuna yönelik bir başvuru ve bkz. [ConnectionManager başvurusu](connectionmanager-reference.md).  
+**Visual Studio 2019 sürüm 16.5 veya sonrası**: ConnectionManager.exe, Visual Studio dışındaki uzaktan geliştirme bağlantılarını yönetmek için bir komut satırı yardımcı programıdır. Yeni bir geliştirme makinesi sağlama gibi görevler için yararlıdır. Veya, sürekli entegrasyon için Visual Studio kurmak için kullanabilirsiniz. Örnekler ve ConnectionManager komutuna tam bir başvuru için [ConnectionManager başvurusuna](connectionmanager-reference.md)bakın.  
 
-## <a name="optional-enable-or-disable-fips-mode"></a>İsteğe bağlı: FIPS modunu etkinleştirme veya devre dışı bırakma
+## <a name="optional-enable-or-disable-fips-mode"></a>İsteğe bağlı: FIPS modunu etkinleştirme veya devre dışı
 
-Windows 'da FIPS modunu genel olarak etkinleştirmek mümkündür.
+Windows'da FIPS modunu genel olarak etkinleştirmek mümkündür.
 
-1. FIPS modunu etkinleştirmek için **Windows + R** tuşlarına basarak Çalıştır iletişim kutusunu açın ve sonra gpedit. msc ' yi çalıştırın.
+1. FIPS modunu etkinleştirmek için, Çalıştır iletişim kutusunu açmak için **Windows+R** tuşuna basın ve ardından gpedit.msc'yi çalıştırın.
 
-1. **Yerel bilgisayar ilkesi > bilgisayar yapılandırması > Windows ayarları > güvenlik ayarları > yerel ilkeler** ' i genişletin ve **güvenlik seçenekleri**' ni seçin.
+1. **Yerel İlkeler > Güvenlik Ayarları > Windows Ayarları > Yerel Bilgisayar Politikası > Bilgisayar Yapılandırması'nı** genişletin ve **Güvenlik Seçeneklerini**seçin.
 
-1. **İlke**altında **Sistem şifreleme: şifreleme, karma ve imzalama için FIPS Ile uyumlu algoritmalar kullanın**ve ardından Iletişim kutusunu açmak için **ENTER** tuşuna basın.
+1. **İlke**altında **Sistem şifrelemesini seçin: Şifreleme, karma ve imzalama için FIPS uyumlu algoritmaları kullanın**ve iletişim kutusunu açmak için **Enter** tuşuna basın.
 
-1. **Yerel güvenlik ayarı** sekmesinde **etkin** veya **devre dışı**' yı seçin ve ardından değişikliklerinizi kaydetmek için **Tamam** ' ı seçin.
+1. Yerel **Güvenlik Ayarı** sekmesinde Etkin veya **Devre Dışı'yı**seçin ve ardından değişikliklerinizi kaydetmek için **Tamam'ı** seçin. **Enabled**
 
 > [!WARNING]
-> FIPS modunu etkinleştirmek bazı uygulamaların beklenmedik şekilde kesilmesine veya davranmasına neden olabilir. Daha fazla bilgi için [artık "FIPS modunu" önermediğimiz](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/why-we-8217-re-not-recommending-8220-fips-mode-8221-anymore/ba-p/701037)blog gönderisine bakın.
+> FIPS modunu etkinleştirmek bazı uygulamaların kırılmasına veya beklenmedik şekilde hareket etmesinin nedeni olabilir. Daha fazla bilgi için, ["FIPS modu" Artık Tavsiye Değil Neden](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/why-we-8217-re-not-recommending-8220-fips-mode-8221-anymore/ba-p/701037)blog yazısı bakın.
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 
-[FIPS 140 doğrulamasında Microsoft belgeleri](/windows/security/threat-protection/fips-140-validation)
+[FIPS 140 doğrulama microsoft belgeleri](/windows/security/threat-protection/fips-140-validation)
 
-[Fıps 140-2: şifreleme modülleri Için güvenlik gereksinimleri](https://csrc.nist.gov/publications/detail/fips/140/2/final) (NIST 'den)
+[FIPS 140-2: Şifreleme Modülleri için Güvenlik Gereksinimleri](https://csrc.nist.gov/publications/detail/fips/140/2/final) (NIST'den)
 
-[Şifreleme algoritması doğrulama programı: doğrulama notları](https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/Validation-Notes) (NIST 'den)
+[Şifreleme Algoritma doğrulama programı: Doğrulama Notları](https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/Validation-Notes) (NIST'den)
 
-Microsoft blog gönderisi [artık "FIPS modunu" önermediğimiz](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/why-we-8217-re-not-recommending-8220-fips-mode-8221-anymore/ba-p/701037)
+Microsoft blog yazısı [neden artık "FIPS modu" Tavsiye değiliz](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/why-we-8217-re-not-recommending-8220-fips-mode-8221-anymore/ba-p/701037)
 
-[SSH sunucusu yapılandırması](https://www.ssh.com/ssh/sshd_config)
+[SSH Sunucu Yapılandırması](https://www.ssh.com/ssh/sshd_config)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Linux projesi yapılandırma](configure-a-linux-project.md)\
-[Linux CMake projesi yapılandırma](cmake-linux-project.md)\
+[Bir Linux projesini yapılandırma](configure-a-linux-project.md)\
+[Linux CMake projesini yapılandırma](cmake-linux-project.md)\
 [Uzak Linux bilgisayarınıza bağlanın](connect-to-your-remote-linux-computer.md)\
-[Linux projenizi dağıtın, çalıştırın ve hata ayıklayın](deploy-run-and-debug-your-linux-project.md)\
+[Linux projenizi dağıtma, çalıştırma ve hata ayıklama](deploy-run-and-debug-your-linux-project.md)\
 [CMake hata ayıklama oturumlarını yapılandırma](../build/configure-cmake-debugging-sessions.md)
 
 ::: moniker-end

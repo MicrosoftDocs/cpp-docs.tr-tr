@@ -1,5 +1,5 @@
 ---
-title: '&lt;dosya sistemi&gt; numaralandırmalar'
+title: '&lt;dosya&gt; sistemi hesaplamaları'
 ms.date: 11/04/2016
 f1_keywords:
 - filesystem/std::filesystem::copy_options
@@ -11,26 +11,26 @@ f1_keywords:
 - filesystem/std::filesystem::perms
 - filesystem/std::experimental::filesystem::perms
 ms.assetid: 0096c046-d101-464c-8259-b878a48280b0
-ms.openlocfilehash: f148347cd132a604622415c65bb3e0352f5308eb
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 0d5b31b31f9f435c52db89521b4b753c16d86501
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421837"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368423"
 ---
-# <a name="ltfilesystemgt-enumerations"></a>&lt;dosya sistemi&gt; numaralandırmalar
+# <a name="ltfilesystemgt-enumerations"></a>&lt;dosya&gt; sistemi hesaplamaları
 
-Bu konu, dosya sistemi üstbilgisindeki numaralandırmaları belgeler.
+Bu konu, dosya sistemi üstbilgisinde yer alan enumları belgeler.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<deneysel/FileSystem >
+**Üstbilgi:** \<deneysel/filesystem>
 
-**Ad alanı:** std:: deneysel:: FileSystem
+**Ad alanı:** std::deneysel::filesystem
 
-## <a name="copy_options"></a>copy_options
+## <a name="copy_options"></a><a name="copy_options"></a>copy_options
 
-Davranışı belirtmek için [Copy](filesystem-functions.md#copy) ve [copy_file](filesystem-functions.md#copy_file) işlevleriyle kullanılan bit maskesi değerlerinin numaralandırması.
+Davranışı belirtmek için [kopyalama](filesystem-functions.md#copy) ve [copy_file](filesystem-functions.md#copy_file) işlevleri ile kullanılan bitmask değerlerinin numaralandırması.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -54,19 +54,19 @@ enum class copy_options {
 |`Name`|Açıklama|
 |------------|-----------------|
 |`none`|İşlem için varsayılan davranışı gerçekleştirin.|
-|`skip_existing`|Dosya zaten varsa kopyalamayın bir hata raporlamayın.|
+|`skip_existing`|Dosya zaten varsa kopyalamayın, bir hata bildirin.|
 |`overwrite_existing`|Zaten varsa dosyanın üzerine yazın.|
-|`update_existing`|Zaten varsa dosyanın üzerine yazın ve değiştirme özelliğinden daha eski olur.|
-|`recursive`|Alt dizinleri ve bunların içeriğini özyinelemeli olarak kopyalayın.|
-|`copy_symlinks`|Sembolik bağlantıları, işaret ettikleri dosyaları kopyalamak yerine sembolik bağlantılar olarak kopyalayın.|
-|`skip_symlinks`|Sembolik bağlantıları yoksayın.|
-|`directories_only`|Yalnızca dizinler üzerinde yineleme yapın, dosyaları yoksayın.|
-|`create_symlinks`|Dosyaları kopyalamak yerine sembolik bağlantılar yapın. Hedef geçerli dizin olmadığı sürece kaynak yolu olarak mutlak bir yol kullanılmalıdır.|
-|`create_hard_links`|Dosyaları kopyalamak yerine sabit bağlantılar oluşturun.|
+|`update_existing`|Dosyanın zaten varsa ve değiştirmeden daha eskiyse üzerine yazın.|
+|`recursive`|Alt dizinleri ve içeriğini yinede kopyalayın.|
+|`copy_symlinks`|Işaret ettikleri dosyaları kopyalamak yerine sembolik bağlantıları sembolik bağlantılar olarak kopyalayın.|
+|`skip_symlinks`|Sembolik bağlantıları yoksay.|
+|`directories_only`|Yalnızca dizinler üzerinde yineleyin, dosyaları yoksayın.|
+|`create_symlinks`|Dosyaları kopyalamak yerine sembolik bağlantılar yapın. Hedef geçerli dizin olmadığı sürece mutlak bir yol kaynak yol olarak kullanılmalıdır.|
+|`create_hard_links`|Dosyaları kopyalamak yerine sabit bağlantılar yapın.|
 
-## <a name="directory_options"></a>directory_options
+## <a name="directory_options"></a><a name="directory_options"></a>directory_options
 
-Dizinlerin sembolik bağlantılarının takip edilip edilmeyeceğini belirtir veya bunları yok sayın.
+Dizinlere sembolik bağlantıları izleyip izlememe mi yoksa bunları yok saymak mı gerektiğini belirtir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -81,12 +81,12 @@ enum class directory_options {
 
 |Adı|Açıklama|
 |----------|-----------------|
-|`none`|Varsayılan davranış: dizinlere sembolik bağlantıları yoksayın. İzin reddedildi hatası.|
-|`follow_directory_symlink`|Gerçek dizinler olarak dizinlere sembolik bağlantıları değerlendirin.|
+|`none`|Varsayılan davranış: dizinlere sembolik bağlantıları yoksay. Reddedilen izin bir hatadır.|
+|`follow_directory_symlink`|Dizinlere olan sembolik bağlantıları gerçek dizinler olarak ele a.nın.|
 
-## <a name="file_type"></a>file_type
+## <a name="file_type"></a><a name="file_type"></a>file_type
 
-Dosya türleri için bir sabit listesi. Desteklenen değerler normal, dizin, not_found ve bilinmelidir.
+Dosya türleri için numaralandırma. Desteklenen değerler düzenli, dizin, not_found ve bilinmiyor.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -109,28 +109,28 @@ enum class file_type {
 
 |Adı|Değer|Açıklama|
 |----------|-----------|-----------------|
-|`not_found`|-1|Varolmayan bir dosyayı temsil eder.|
-|`none`|0|Tür özniteliği olmayan bir dosyayı temsil eder. (Desteklenmiyor.)|
-|`regular`|1|Geleneksel bir disk dosyasını temsil eder.|
+|`not_found`|-1|Var olmayan bir dosyayı temsil eder.|
+|`none`|0|Tür özniteliği olmayan bir dosyayı temsil eder. (Desteklenmez.)|
+|`regular`|1|Geleneksel bir disk dosyanı temsil eder.|
 |`directory`|2|Bir dizini temsil eder.|
-|`symlink`|3|Sembolik bir bağlantıyı temsil eder. (Desteklenmiyor.)|
-|`block`|4|UNIX tabanlı sistemlerde blok özel bir dosyayı temsil eder. (Desteklenmiyor.)|
-|`character`|5|UNIX tabanlı sistemlerde karakter özel bir dosyayı temsil eder. (Desteklenmiyor.)|
-|`fifo`|6|UNIX tabanlı sistemlerde bir FıFO dosyasını temsil eder. (Desteklenmiyor.)|
-|`socket`|7|UNIX tabanlı sistemlerde bir yuvayı temsil eder. (Desteklenmiyor.)|
-|`unknown`|8|Durumu belirlenemediği bir dosyayı temsil eder.|
+|`symlink`|3|Sembolik bir bağlantıyı temsil eder. (Desteklenmez.)|
+|`block`|4|UNIX tabanlı sistemlerde bloka özel bir dosyayı temsil eder. (Desteklenmez.)|
+|`character`|5|UNIX tabanlı sistemlerde karaktere özel bir dosyayı temsil eder. (Desteklenmez.)|
+|`fifo`|6|UNIX tabanlı sistemlerde bir FIFO dosyayı temsil eder. (Desteklenmez.)|
+|`socket`|7|UNIX tabanlı sistemlerde bir sokettemsil eder. (Desteklenmez.)|
+|`unknown`|8|Durumu belirlenemeyen bir dosyayı temsil eder.|
 
-## <a name="perm_options"></a>perm_options
+## <a name="perm_options"></a><a name="perm_options"></a>perm_options
 
-`replace`, `add`, `remove`ve `nofollow`değerleri içerir.
+Değerleri `replace`, `add` `remove`, `nofollow`, ve .
 
 ```cpp
 enum class perm_options;
 ```
 
-## <a name="perms"></a>izinleri
+## <a name="perms"></a><a name="perms"></a>Perma
 
-Dosya izinleri için bayraklar. Desteklenen değerler temelde "ReadOnly" ve hepsi. Salt okunur bir dosya için, * _write bitlerin hiçbiri ayarlanmadı. Aksi takdirde `all` bit (0x0777) ayarlanır.
+Dosya izinleri için bayraklar. Desteklenen değerler aslında "yalnızca okunur" ve tüm. Yalnızca okunan bir dosya için *_write bitlerinin hiçbiri ayarlanır. Aksi `all` takdirde bit (0x0777) ayarlanır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -163,5 +163,5 @@ enum class perms {// names for permissions
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[\<dosya sistemi >](../standard-library/filesystem.md)
+[Üstbilgi Dosyaları Başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<dosya sistemi>](../standard-library/filesystem.md)

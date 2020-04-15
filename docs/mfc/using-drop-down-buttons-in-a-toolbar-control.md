@@ -1,5 +1,5 @@
 ---
-title: Bir araç çubuğu denetiminde açılır düğmeler kullanma
+title: Bir Araç Çubuğu Denetiminde Açılır Düğmeler Kullanma
 ms.date: 11/04/2016
 f1_keywords:
 - TBN_DROPDOWN
@@ -11,39 +11,39 @@ helpviewer_keywords:
 - TBSTYLE_EX_DRAWDDARROWS
 - TBN_DROPDOWN notification [MFC]
 ms.assetid: b859f758-d2f6-40d9-9c26-0ff61993b9b2
-ms.openlocfilehash: 8d1a13b1921f111d97bb515e7932a0116277f9ed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0bc4df4c07ec4b8bc5b488925cbb140609302186
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411610"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365062"
 ---
-# <a name="using-drop-down-buttons-in-a-toolbar-control"></a>Bir araç çubuğu denetiminde açılır düğmeler kullanma
+# <a name="using-drop-down-buttons-in-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminde Açılır Düğmeler Kullanma
 
-Standart düğmeler yanı sıra bir araç çubuğu aşağı açılır düğmeler da olabilir. Bir açılan düğmeye genellikle eklenen aşağı ok varlığını tarafından gösterilir.
+Standart basma düğmelerine ek olarak, araç çubuğunda açılır düğmeler de olabilir. Açılır düğme genellikle ekli bir aşağı ok varlığı ile gösterilir.
 
 > [!NOTE]
->  Yalnızca genişletilmiş TBSTYLE_EX_DRAWDDARROWS alındıysa eklenen aşağı ok görünür.
+> Ekli aşağı ok yalnızca TBSTYLE_EX_DRAWDDARROWS genişletilmiş stil ayarlanmışsa görünür.
 
-Kullanıcı bu ok (veya düğmenin kendisini, ok varsa) tıkladığında, araç çubuğu denetiminin üst TBN_DROPDOWN bildirim iletisi gönderilir. Bu bildirim işlemek ve bir açılır menü görüntüler; Internet Explorer'ın davranışına benzer.
+Kullanıcı bu oku tıklattığında (veya düğmenin kendisi, ok yoksa), araç çubuğu denetiminin üst öğesine bir TBN_DROPDOWN bildirim iletisi gönderilir. Daha sonra bu bildirimi işleyebilir ve bir açılır menü görüntüleyebilirsiniz; Internet Explorer'ın davranışına benzer.
 
-Aşağıdaki yordamda, açılır menü ile bir açılan araç çubuğu düğmesinin nasıl uygulanacağını göstermektedir:
+Aşağıdaki yordam, açılır menüyle açılır araç çubuğu düğmesinin nasıl uygulanacağını gösterir:
 
-### <a name="to-implement-a-drop-down-button"></a>Bir açılan düğmeye uygulamak için
+### <a name="to-implement-a-drop-down-button"></a>Açılır düğmeyi uygulamak için
 
-1. Bir kez, `CToolBarCtrl` nesnesi oluşturuldu, aşağıdaki kodu kullanarak TBSTYLE_EX_DRAWDDARROWS stilini ayarlayın:
+1. Nesneniz `CToolBarCtrl` oluşturulduktan sonra, aşağıdaki kodu kullanarak TBSTYLE_EX_DRAWDDARROWS stilini ayarlayın:
 
    [!code-cpp[NVC_MFCControlLadenDialog#36](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_1.cpp)]
 
-1. TBSTYLE_DROPDOWN stili için yeni bir ([InsertButton](../mfc/reference/ctoolbarctrl-class.md#insertbutton) veya [AddButtons](../mfc/reference/ctoolbarctrl-class.md#addbuttons)) veya varolan ([SetButtonInfo](../mfc/reference/ctoolbarctrl-class.md#setbuttoninfo)) düğmeler, aşağı açılır düğmeler olacaktır. Aşağıdaki örnek, varolan bir düğmeyi içinde değişiklik gösterir. bir `CToolBarCtrl` nesnesi:
+1. Herhangi bir yeni[(InsertButton](../mfc/reference/ctoolbarctrl-class.md#insertbutton) veya [AddButtons)](../mfc/reference/ctoolbarctrl-class.md#addbuttons)veya açılan düğmeler olacak mevcut[(SetButtonInfo)](../mfc/reference/ctoolbarctrl-class.md#setbuttoninfo)düğmeleri için TBSTYLE_DROPDOWN stilini ayarlayın. Aşağıdaki örnek, bir `CToolBarCtrl` nesnede varolan bir düğmeyi değiştirmeyi gösterir:
 
    [!code-cpp[NVC_MFCControlLadenDialog#37](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_2.cpp)]
 
-1. Araç çubuğu nesnesi üst sınıf TBN_DROPDOWN işleyicisi ekleyin.
+1. Araç çubuğu nesnesinin üst sınıfına TBN_DROPDOWN işleyicisi ekleyin.
 
    [!code-cpp[NVC_MFCControlLadenDialog#38](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_3.cpp)]
 
-1. Yeni işleyicisinde uygun açılan menü görüntüler. Aşağıdaki kod bir yöntemi gösterir:
+1. Yeni işleyicide, uygun açılır menüyü görüntüleyin. Aşağıdaki kod bir yöntemi gösterir:
 
    [!code-cpp[NVC_MFCControlLadenDialog#39](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_4.cpp)]
 

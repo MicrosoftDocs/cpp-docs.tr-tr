@@ -5,56 +5,56 @@ helpviewer_keywords:
 - console applications, templates
 - CLR console applications, project template
 ms.assetid: e89bce3c-706f-4ae0-8a90-cb1a0f674e70
-ms.openlocfilehash: 610efc8b0780422fc89e3bf9708ba488fe7d1f47
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 86e5abe330b0edc514fed74a12188ab73e8bfdd8
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80080061"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368531"
 ---
 # <a name="how-to-create-clr-console-applications-ccli"></a>Nasıl yapılır: CLR Konsol Uygulamaları Oluşturma (C++/CLI)
 
-Konsol uygulaması şablonunu, zaten temel proje başvuruları ve dosyaları olan bir konsol uygulaması projesi oluşturmak için kullanabilirsiniz.
+Temel proje referansları ve dosyaları olan bir konsol uygulaması projesi oluşturmak için Konsol Uygulaması şablonu'nu kullanabilirsiniz.
 
-Genellikle, bir konsol uygulaması tek başına yürütülebilir bir dosyaya derlenir ancak grafik kullanıcı arabirimine sahip değildir. Bir Kullanıcı konsol uygulamasını bir komut isteminde çalıştırır ve çalışan uygulamaya yönergeler vermek için komut istemi 'ni kullanır. Ayrıca, komut isteminde uygulama çıktı bilgilerini sağlar. Konsol uygulamasının immediacy, bir kullanıcı arabirimi uygulamaya gerek duymadan programlama tekniklerini öğrenmenin harika bir yolunu sunar.
+Genellikle, bir konsol uygulaması tek başına çalıştırılabilir bir dosyada derlenir, ancak grafik kullanıcı arabirimi yoktur. Kullanıcı konsol uygulamasını komut isteminde çalıştırıyor ve çalışan uygulamaya yönergeler vermek için komut istemini kullanır. Ayrıca komut istemi, uygulama çıktı bilgileri sağlar. Bir konsol uygulamasının yakınlığı, bir kullanıcı arabirimi uygulamak için endişelenmeden programlama tekniklerini öğrenmek için harika bir yol yapar.
 
-Bir proje oluşturmak için konsol uygulaması şablonunu kullandığınızda, otomatik olarak bu başvuruları ve dosyaları ekler:
+Bir proje oluşturmak için Konsol Uygulaması şablonu kullandığınızda, otomatik olarak bu başvuruları ve dosyaları ekler:
 
-- Bu .NET Framework ad alanlarına başvurular:
+- Bu .NET Framework ad alanlarına yapılan atıflar:
 
-   - <xref:System.AppDomainManager>— yaygın olarak kullanılan değerleri ve başvuru veri türlerini, olayları ve olay işleyicilerini, arabirimleri, öznitelikleri ve işleme özel durumlarını tanımlayan temel sınıfları ve temel sınıfları Içerir.
+  - <xref:System.AppDomainManager>—Yaygın olarak kullanılan değerleri ve başvuru veri türlerini, olayları ve olay işleyicilerini, arabirimleri, öznitelikleri ve işleme özel durumlarını tanımlayan temel sınıfları ve temel sınıfları içerir.
 
-   - mscorlib — .NET Framework geliştirmeyi destekleyen derleme DLL 'SI.
+  - mscorlib—.NET Framework geliştirmeyi destekleyen derleme DLL.
 
 - Kaynak dosyalar:
 
-   - Konsol (. cpp dosyası) — ana kaynak dosya ve giriş noktası, yeni oluşturduğunuz uygulamaya göre yapılır. Project. dll dosyasını ve proje ad alanını tanımlar. Bu dosyada kendi kodunuzu girin.
+  - Konsol (.cpp dosyası)—Yeni oluşturduğunuz uygulamaya ana kaynak dosyası ve giriş noktası. Proje .dll dosyasını ve proje ad alanını tanımlar. Bu dosyada kendi kodunuzu girin.
 
-   - AssemblyInfo. cpp — projenin derleme meta verilerini değiştirmek için kullanabileceğiniz öznitelikleri, dosyaları, kaynakları, türleri, sürüm oluşturma bilgilerini, imzalama bilgilerini ve benzerlerini Içerir. Daha fazla bilgi için bkz. [bütünleştirilmiş kod içeriği](/dotnet/framework/app-domains/assembly-contents).
+  - AssemblyInfo.cpp—Projenin derleme meta verilerini değiştirmek için kullanabileceğiniz öznitelikleri, dosyaları, kaynakları, türleri, sürüm bilgilerini, bilgileri imzalamayı ve benzeri özellikleri içerir. Daha fazla bilgi için [Montaj İçeriği'ne](/dotnet/framework/app-domains/assembly-contents)bakın.
 
-   - Stdadfx. cpp — Win32. pch adlı önceden derlenmiş bir üstbilgi dosyası ve Stbafx. obj adlı önceden derlenmiş türler dosyası oluşturmak için kullanılır.
+  - Stdafx.cpp—Win32.pch adında önceden derlenmiş bir üstbilgi dosyası ve StdAfx.obj adlı önceden derlenmiş bir tür dosyası oluşturmak için kullanılır.
 
-- Üst bilgi dosyaları:
+- Üstbilgi dosyaları:
 
-   - Stdadfx. h — Win32. pch adlı önceden derlenmiş bir üstbilgi dosyası ve Stdadfx. obj adlı önceden derlenmiş türler dosyası oluşturmak için kullanılır.
+  - Stdafx.h—Win32.pch adında önceden derlenmiş bir üstbilgi dosyası ve StdAfx.obj adlı önceden derlenmiş bir tür dosyası oluşturmak için kullanılır.
 
-   - Resource. h — App. RC için oluşturulan bir içerme dosyası.
+  - resource.h—Oluşturulan app.rc için dosya içerir.
 
 - Kaynak dosyaları:
 
-   - App. RC — bir programın kaynak betik dosyası.
+  - app.rc—Bir programın kaynak komut dosyası dosyası dosyası.
 
-   - App. ico — bir programın simge dosyası.
+  - app.ico—Bir programın simge dosyası.
 
-- ReadMe. txt — projedeki dosyaları açıklar.
+- ReadMe.txt—Projedeki dosyaları açıklar.
 
-## <a name="to-create-a-common-language-runtime-clr-console-app-project"></a>Ortak dil çalışma zamanı (CLR) konsol uygulaması projesi oluşturmak için
+## <a name="to-create-a-common-language-runtime-clr-console-app-project"></a>Ortak bir dil çalışma zamanı (CLR) konsol uygulaması projesi oluşturmak için
 
-1. Menü çubuğunda **Dosya**, **Yeni**, **Proje**' yi seçin.
+1. Menü çubuğunda **Dosya**, **Yeni**, **Proje'yi**seçin.
 
-1. **Yeni proje** iletişim kutusunda, **yüklü şablonlar**altında,  **C++ görsel** düğümünü seçin, **clr** düğümünü seçin ve konsol uygulaması şablonunu seçin.
+1. Yeni **Proje** iletişim kutusunda, **Yüklü Şablonlar** **altında, Visual C++** düğümünü seçin, **CLR** düğümünü seçin ve ardından Konsol Uygulaması şablonunu seçin.
 
-1. **Ad** kutusuna uygulamanız için benzersiz bir ad girin.
+1. **Ad** kutusuna, başvurunuz için benzersiz bir ad girin.
 
    Diğer proje ve çözüm ayarlarını belirtebilirsiniz, ancak bunlar gerekli değildir.
 
@@ -62,4 +62,4 @@ Bir proje oluşturmak için konsol uygulaması şablonunu kullandığınızda, o
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CLR projeleri](../build/reference/files-created-for-clr-projects.md)
+[CLR Projeleri](../build/reference/files-created-for-clr-projects.md)

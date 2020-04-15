@@ -1,9 +1,11 @@
 ---
 title: _tell, _telli64
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _telli64
 - _tell
+- _o__tell
+- _o__telli64
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -32,16 +35,16 @@ helpviewer_keywords:
 - telli64 function
 - _telli64 function
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b
-ms.openlocfilehash: f092bdfdb27dd73baf159da60ba66bd5809aaf61
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 111d5745703d15fccf0b2a941248203cc80d07a2
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443680"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81362551"
 ---
 # <a name="_tell-_telli64"></a>_tell, _telli64
 
-Dosya işaretçisinin konumunu alır.
+Dosya işaretçisinin konumunu alın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,28 +59,30 @@ __int64 _telli64(
 
 ### <a name="parameters"></a>Parametreler
 
-*tutamaçlardan*<br/>
-Dosya tanımlayıcısı açık dosyaya başvuruyor.
+*Işlemek*<br/>
+Dosya tanımlayıcısı açık dosyaya atıfta bulunarak.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosya işaretçisinin geçerli konumu. Arama yeteneğine sahip olmayan cihazlarda, dönüş değeri tanımsızdır.
+Dosya işaretçisinin geçerli konumu. Arama yapamayan aygıtlarda iade değeri tanımsızdır.
 
--1L dönüş değeri bir hatayı gösterir. *Tanıtıcı* geçersiz bir dosya tanımlayıcısıdır, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EBADF** ve Return-1L olarak ayarlar.
+-1L'nin geri dönüş değeri bir hatayı gösterir. *Tanıtıcı* geçersiz bir dosya tanımlayıcısıise, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlevler **EBADF** ve return -1L **errno** ayarlayın.
 
-Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
+Bu ve diğer iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Tell** işlevi, *tanıtıcı* bağımsız değişkeniyle ilişkili dosya işaretçisinin (varsa) geçerli konumunu alır. Konum, dosyanın başından itibaren bayt sayısı olarak ifade edilir. **_Telli64** işlevi için bu değer 64 bitlik bir tamsayı olarak ifade edilir.
+**_tell** *işlevi, işleç* bağımsız değişkeniyle ilişkili dosya işaretçisinin (varsa) geçerli konumunu alır. Konum, dosyanın başlangıcından itibaren bayt sayısı olarak ifade edilir. **_telli64** işlevi için bu değer 64 bit tamsayı olarak ifade edilir.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_tell**, **_telli64**|\<IO. h >|
+|**_tell**, **_telli64**|\<io.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -112,7 +117,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_telltxt"></a>Giriş: crt_tell. txt
+### <a name="input-crt_telltxt"></a>Giriş: crt_tell.txt
 
 ```Input
 Line one.
@@ -127,6 +132,6 @@ Current file position is: 20
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Alt düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
+[Düşük Seviyeli G/Ç](../../c-runtime-library/low-level-i-o.md)<br/>
 [ftell, _ftelli64](ftell-ftelli64.md)<br/>
 [_lseek, _lseeki64](lseek-lseeki64.md)<br/>

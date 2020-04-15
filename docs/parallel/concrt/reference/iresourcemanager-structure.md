@@ -14,16 +14,16 @@ f1_keywords:
 helpviewer_keywords:
 - IResourceManager structure
 ms.assetid: 3dd5ec2c-fe53-4121-ae77-1bc1d1167ff4
-ms.openlocfilehash: 7ce5b07f5eb4272db1b00b7f0105b790ddbb28fe
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 15e27a586fc039791255c01a053f6a1109183f90
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142980"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81368182"
 ---
 # <a name="iresourcemanager-structure"></a>IResourceManager Yapısı
 
-Eşzamanlılık Çalışma Zamanı Kaynak Yöneticisi arabirimi. Bu, zamanlayıcılar ile iletişim kuran arabirimdir Kaynak Yöneticisi.
+Eşzamanlı Çalışma Zamanı Kaynak Yöneticisi'ne bir arabirim. Bu, zamanlayıcıların Kaynak Yöneticisi ile iletişim kurduğu arabirimdir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,26 +33,26 @@ struct IResourceManager;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-enumerations"></a>Ortak numaralandırmalar
+### <a name="public-enumerations"></a>Genel Hesaplamalar
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[IResourceManager:: OSVersion](#osversion)|İşletim sistemi sürümünü temsil eden numaralandırılmış tür.|
+|[IResourceManager::OSVersion](#osversion)|İşletim sistemi sürümünü temsil eden numaralandırılmış tür.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[IResourceManager:: CreateNodeTopology](#createnodetopology)|Yalnızca çalışma zamanının hata ayıklama yapılarında bulunur, bu yöntem, yapılandırma ile eşleşen gerçek donanıma gerek kalmadan, değişen donanım topolojilerinde Kaynak Yöneticisi test etmeyi kolaylaştırmak için tasarlanan bir test kancasına sahiptir. Çalışma zamanının perakende Derlemeleriyle, bu yöntem herhangi bir eylem yapılmadan döndürülür.|
-|[IResourceManager:: GetAvailableNodeCount](#getavailablenodecount)|Kaynak Yöneticisi kullanılabilen düğüm sayısını döndürür.|
-|[IResourceManager:: GetFirstNode](#getfirstnode)|Kaynak Yöneticisi tarafından tanımlanan numaralandırma sırasındaki ilk düğümü döndürür.|
-|[IResourceManager:: Reference](#reference)|Kaynak Yöneticisi örneğindeki başvuru sayısını artırır.|
-|[IResourceManager:: RegisterScheduler](#registerscheduler)|Kaynak Yöneticisi bir Zamanlayıcı kaydeder. Zamanlayıcı kaydolduktan sonra, döndürülen `ISchedulerProxy` arabirimini kullanarak Kaynak Yöneticisi ile iletişim kurması gerekir.|
-|[IResourceManager:: Release](#release)|Kaynak Yöneticisi örneğindeki başvuru sayısını azaltır. Başvuru sayısı `0`gittiğinde Kaynak Yöneticisi yok edilir.|
+|[IResourceManager::CreateNodeTopology](#createnodetopology)|Yalnızca çalışma zamanı hata ayıklama yapılarında bulunan bu yöntem, yapılandırmayla eşleşen gerçek donanımgerektirmeden Kaynak Yöneticisi'nin farklı donanım topolojileri üzerinde test ini kolaylaştırmak için tasarlanmış bir test kancasıdır. Çalışma zamanının perakende yapılarıyla, bu yöntem herhangi bir işlem gerçekleştirmeden geri döner.|
+|[IResourceManager::GetAvailableNodeCount](#getavailablenodecount)|Kaynak Yöneticisi'ne kullanılabilen düğüm sayısını verir.|
+|[IResourceManager::GetFirstNode](#getfirstnode)|Kaynak Yöneticisi tarafından tanımlanan numaralandırma emrindeki ilk düğümü döndürür.|
+|[IResourceManager::Başvuru](#reference)|Kaynak Yöneticisi örneğinde başvuru sayısını artırımı.|
+|[IResourceManager::RegisterScheduler](#registerscheduler)|Kaynak Yöneticisi'ne bir zamanlayıcı kaydeder. Zamanlayıcı kaydedildikten sonra, döndürülen `ISchedulerProxy` arabirimi kullanarak Kaynak Yöneticisi ile iletişim kurması gerekir.|
+|[IResourceManager::Sürüm](#release)|Kaynak Yöneticisi örneğinde başvuru sayısını verir. Kaynak Yöneticisi, başvuru sayısı `0`.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Singleton Kaynak Yöneticisi örneğine bir arabirim elde etmek için [CreateResourceManager](concurrency-namespace-functions.md) işlevini kullanın. Yöntemi Kaynak Yöneticisi bir başvuru sayısını artırır ve Kaynak Yöneticisi işiniz bittiğinde başvuruyu serbest bırakmak için [IResourceManager:: Release](#release) metodunu çağırmanız gerekir. Genellikle, oluşturduğunuz her Zamanlayıcı oluşturma sırasında bu yöntemi çağırır ve kapatıldıktan sonra Kaynak Yöneticisi başvurusunu serbest bırakacaktır.
+Singleton Resource Manager örneğine bir arabirim elde etmek için [CreateResourceManager](concurrency-namespace-functions.md) işlevini kullanın. Yöntem, Kaynak Yöneticisi'ne bir başvuru sayısı verir ve Kaynak Yöneticisi ile yaptığınızda başvuruyu serbest bırakmak için [IResourceManager::Release](#release) yöntemini çağırmalısınız. Genellikle, oluşturduğunuz her zamanlayıcı oluşturma sırasında bu yöntemi çağırır ve kapatıldıktan sonra Kaynak Yöneticisi'ne başvuru bırakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -60,13 +60,13 @@ Singleton Kaynak Yöneticisi örneğine bir arabirim elde etmek için [CreateRes
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** concrtrm. h
+**Üstbilgi:** concrtrm.h
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="createnodetopology"></a>IResourceManager:: CreateNodeTopology yöntemi
+## <a name="iresourcemanagercreatenodetopology-method"></a><a name="createnodetopology"></a>IResourceManager::CreateNodeTopology Yöntemi
 
-Yalnızca çalışma zamanının hata ayıklama yapılarında bulunur, bu yöntem, yapılandırma ile eşleşen gerçek donanıma gerek kalmadan, değişen donanım topolojilerinde Kaynak Yöneticisi test etmeyi kolaylaştırmak için tasarlanan bir test kancasına sahiptir. Çalışma zamanının perakende Derlemeleriyle, bu yöntem herhangi bir eylem yapılmadan döndürülür.
+Yalnızca çalışma zamanı hata ayıklama yapılarında bulunan bu yöntem, yapılandırmayla eşleşen gerçek donanımgerektirmeden Kaynak Yöneticisi'nin farklı donanım topolojileri üzerinde test ini kolaylaştırmak için tasarlanmış bir test kancasıdır. Çalışma zamanının perakende yapılarıyla, bu yöntem herhangi bir işlem gerçekleştirmeden geri döner.
 
 ```cpp
 virtual void CreateNodeTopology(
@@ -78,27 +78,27 @@ virtual void CreateNodeTopology(
 
 ### <a name="parameters"></a>Parametreler
 
-*nodeCount*<br/>
-Benzetimli işlemci düğümlerinin sayısı.
+*düğümSayısı*<br/>
+Simüle edilen işlemci düğümlerinin sayısı.
 
 *pCoreCount*<br/>
 Her düğümdeki çekirdek sayısını belirten bir dizi.
 
 *pNodeDistance*<br/>
-İki düğüm arasındaki düğüm uzaklığını belirten bir matris. Bu parametrenin değeri `NULL`olabilir.
+Herhangi iki düğüm arasındaki düğüm uzaklığı belirten bir matris. Bu parametre değerine `NULL`sahip olabilir.
 
-*pProcessorGroups*<br/>
-Her düğümün ait olduğu işlemci grubunu belirten bir dizi.
+*pİşlemer Grupları*<br/>
+İşlemci grubunu belirten bir dizi, her düğüme aittir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[invalid_argument](../../../standard-library/invalid-argument-class.md) , `nodeCount` parametresinin `0` değeri varsa veya `pCoreCount` parametresinin değeri `NULL`olduğunda oluşturulur.
+[invalid_argument,](../../../standard-library/invalid-argument-class.md) parametrenin `nodeCount` değeri `0` geçtiyse veya parametrede `pCoreCount` değer `NULL`varsa atılır.
 
-[invalid_operation](invalid-operation-class.md) , bu yöntem işlem içinde diğer zamanlayıcılar olduğunda çağrılırsa oluşturulur.
+Bu yöntem, işlemsırasında diğer zamanlayıcılar varken bu yöntem çağrılırsa [invalid_operation](invalid-operation-class.md) atılır.
 
-## <a name="getavailablenodecount"></a>IResourceManager:: GetAvailableNodeCount yöntemi
+## <a name="iresourcemanagergetavailablenodecount-method"></a><a name="getavailablenodecount"></a>IResourceManager::GetAvailableNodeCount Yöntemi
 
-Kaynak Yöneticisi kullanılabilen düğüm sayısını döndürür.
+Kaynak Yöneticisi'ne kullanılabilen düğüm sayısını verir.
 
 ```cpp
 virtual unsigned int GetAvailableNodeCount() const = 0;
@@ -106,11 +106,11 @@ virtual unsigned int GetAvailableNodeCount() const = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaynak Yöneticisi kullanılabilen düğüm sayısı.
+Kaynak Yöneticisi'nin kullanabileceği düğüm sayısı.
 
-## <a name="getfirstnode"></a>IResourceManager:: GetFirstNode yöntemi
+## <a name="iresourcemanagergetfirstnode-method"></a><a name="getfirstnode"></a>IResourceManager::GetFirstNode Yöntemi
 
-Kaynak Yöneticisi tarafından tanımlanan numaralandırma sırasındaki ilk düğümü döndürür.
+Kaynak Yöneticisi tarafından tanımlanan numaralandırma emrindeki ilk düğümü döndürür.
 
 ```cpp
 virtual ITopologyNode* GetFirstNode() const = 0;
@@ -118,9 +118,9 @@ virtual ITopologyNode* GetFirstNode() const = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaynak Yöneticisi tarafından tanımlanan numaralandırma sırasındaki ilk düğüm.
+Kaynak Yöneticisi tarafından tanımlanan numaralandırma düzenindeki ilk düğüm.
 
-## <a name="osversion"></a>IResourceManager:: OSVersion numaralandırması
+## <a name="iresourcemanagerosversion-enumeration"></a><a name="osversion"></a>IResourceManager::OSVersion Numaralandırma
 
 İşletim sistemi sürümünü temsil eden numaralandırılmış tür.
 
@@ -128,9 +128,9 @@ Kaynak Yöneticisi tarafından tanımlanan numaralandırma sırasındaki ilk dü
 enum OSVersion;
 ```
 
-## <a name="reference"></a>IResourceManager:: Reference yöntemi
+## <a name="iresourcemanagerreference-method"></a><a name="reference"></a>IResourceManager::Başvuru Yöntemi
 
-Kaynak Yöneticisi örneğindeki başvuru sayısını artırır.
+Kaynak Yöneticisi örneğinde başvuru sayısını artırımı.
 
 ```cpp
 virtual unsigned int Reference() = 0;
@@ -138,11 +138,11 @@ virtual unsigned int Reference() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Elde edilen başvuru sayısı.
+Ortaya çıkan başvuru sayısı.
 
-## <a name="registerscheduler"></a>IResourceManager:: RegisterScheduler Yöntemi
+## <a name="iresourcemanagerregisterscheduler-method"></a><a name="registerscheduler"></a>IResourceManager::RegisterScheduler Yöntemi
 
-Kaynak Yöneticisi bir Zamanlayıcı kaydeder. Zamanlayıcı kaydolduktan sonra, döndürülen `ISchedulerProxy` arabirimini kullanarak Kaynak Yöneticisi ile iletişim kurması gerekir.
+Kaynak Yöneticisi'ne bir zamanlayıcı kaydeder. Zamanlayıcı kaydedildikten sonra, döndürülen `ISchedulerProxy` arabirimi kullanarak Kaynak Yöneticisi ile iletişim kurması gerekir.
 
 ```cpp
 virtual ISchedulerProxy *RegisterScheduler(
@@ -153,24 +153,24 @@ virtual ISchedulerProxy *RegisterScheduler(
 ### <a name="parameters"></a>Parametreler
 
 *pScheduler*<br/>
-Kaydedilecek Zamanlayıcı için `IScheduler` arabirimi.
+Kaydedilecek zamanlayıcıya bir `IScheduler` arabirim.
 
-*version*<br/>
-Scheduler 'ın Kaynak Yöneticisi iletişim kurmak için kullandığı iletişim arabirimi sürümü. Bir sürümü kullanmak Kaynak Yöneticisi, zamanlayıcılar 'in daha eski özelliklere erişim almasına izin verirken iletişim arabirimini gelişmesine izin verir. Visual Studio 2010 ' de bulunan Kaynak Yöneticisi özelliklerini kullanmak isteyen zamanlayıcılar sürüm `CONCRT_RM_VERSION_1`kullanmalıdır.
+*Sürüm*<br/>
+Zamanlayıcının Kaynak Yöneticisi ile iletişim kurmak için kullandığı iletişim arabiriminin sürümü. Sürüm kullanmak, Zamanlayıcıların eski özelliklere erişmesine izin verirken Kaynak Yöneticisi'nin iletişim arabirimini geliştirmesine olanak tanır. Visual Studio 2010'da bulunan Kaynak Yöneticisi özelliklerini kullanmak `CONCRT_RM_VERSION_1`isteyen zamanlayıcılar bu sürümü kullanmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaynak Yöneticisi Scheduler ile ilişkilendirilen `ISchedulerProxy` arabirimi. Scheduler bu noktadan itibaren Kaynak Yöneticisi ile iletişim kurmak için bu arabirimi kullanmalıdır.
+Kaynak `ISchedulerProxy` Yöneticisi'nin zamanlayıcınızla ilişkilendirdiği arabirim. Zamanlayıcınız bu noktadan itibaren Kaynak Yöneticisi ile iletişim kurmak için bu arabirimi kullanmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak Yöneticisi iletişim başlatmak için bu yöntemi kullanın. Yöntemi, Scheduler için `IScheduler` arabirimini bir `ISchedulerProxy` arabirimiyle ilişkilendirir ve size geri gönderir. Zamanlayıcı tarafından kullanılmak üzere yürütme kaynakları istemek veya Kaynak Yöneticisi iş parçacıklarını abone olmak için döndürülen arabirimi kullanabilirsiniz. Kaynak Yöneticisi, Scheduler 'ın işi yürütmesi gereken iş parçacığı türlerini belirlemek için [IComparer:: GetPolicy](ischeduler-structure.md#getpolicy) yöntemi tarafından döndürülen Zamanlayıcı ilkesindeki ilke öğelerini kullanacaktır. `SchedulerKind` ilke anahtarınız `UmsThreadDefault` değeri varsa ve değer ilke `UmsThreadDefault`değeri olarak geri okunmışsa, yönteme geçirilen `IScheduler` arabirimi bir `IUMSScheduler` arabirimi olmalıdır.
+Kaynak Yöneticisi ile iletişimi başlatmak için bu yöntemi kullanın. Yöntem, zamanlayıcınızın arabirimini `IScheduler` `ISchedulerProxy` bir arabirimle ilişkilendirer ve size geri sunar. Döndürülen arabirimi, zamanlayıcınız tarafından kullanılmak üzere yürütme kaynaklarını istemek veya Kaynak Yöneticisi'ne iş parçacığı abone olmak için kullanabilirsiniz. Kaynak Yöneticisi, zamanlayıcının çalışması yürütmek için ne tür iş parçacıkları gerekeceğini belirlemek için [IScheduler](ischeduler-structure.md#getpolicy) tarafından döndürülen zamanlama ilkesindeki ilke öğelerini kullanır. İlke `SchedulerKind` anahtarınız değerine `UmsThreadDefault` sahipse ve değer ilkenin `UmsThreadDefault`değeri `IScheduler` olarak geri okunuyorsa, yönteme geçirilen arabirim bir `IUMSScheduler` arabirim olmalıdır.
 
-Parametre `pScheduler` `NULL` değere sahipse veya `version` parametresi iletişim arabirimi için geçerli bir sürüm değilse, yöntemi `invalid_argument` bir özel durum oluşturur.
+Yöntem, parametre `invalid_argument` `pScheduler` değerine `NULL` sahipse veya parametre `version` iletişim arabirimi için geçerli bir sürüm değilse bir özel durum oluşturur.
 
-## <a name="release"></a>IResourceManager:: Release yöntemi
+## <a name="iresourcemanagerrelease-method"></a><a name="release"></a>IResourceManager::Sürüm Yöntemi
 
-Kaynak Yöneticisi örneğindeki başvuru sayısını azaltır. Başvuru sayısı `0`gittiğinde Kaynak Yöneticisi yok edilir.
+Kaynak Yöneticisi örneğinde başvuru sayısını verir. Kaynak Yöneticisi, başvuru sayısı `0`.
 
 ```cpp
 virtual unsigned int Release() = 0;
@@ -178,10 +178,10 @@ virtual unsigned int Release() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Elde edilen başvuru sayısı.
+Ortaya çıkan başvuru sayısı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
+[concurrency Ad Alanı](concurrency-namespace.md)<br/>
 [ISchedulerProxy Yapısı](ischedulerproxy-structure.md)<br/>
 [IScheduler Yapısı](ischeduler-structure.md)

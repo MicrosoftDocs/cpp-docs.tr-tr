@@ -1,5 +1,5 @@
 ---
-title: CMultiPaneFrameWnd sınıfı
+title: CMultiPaneFrameWnd Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMultiPaneFrameWnd
@@ -80,18 +80,18 @@ helpviewer_keywords:
 - CMultiPaneFrameWnd [MFC], StoreRecentDockSiteInfo
 - CMultiPaneFrameWnd [MFC], StoreRecentTabRelatedInfo
 ms.assetid: 989a548e-0d70-46b7-a513-8cf740e1be3e
-ms.openlocfilehash: 9c23d76e8f3ea54fe34e7956ad5b4e7dc9780def
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: db5f0b3c6b48a3704803d77242904e25e053b7ac
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366842"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81363387"
 ---
-# <a name="cmultipaneframewnd-class"></a>CMultiPaneFrameWnd sınıfı
+# <a name="cmultipaneframewnd-class"></a>CMultiPaneFrameWnd Sınıfı
 
-`CMultiPaneFrameWnd` Sınıfını genişleten [CPaneFrameWnd sınıfı](../../mfc/reference/cpaneframewnd-class.md). Bu, birden çok bölmeyi destekleyebilir. Bir denetim çubuğuna tek bir gömülü tanıtıcı yerine `CMultiPaneFrameWnd` içeren bir [CPaneContainerManager sınıfı](../../mfc/reference/cpanecontainermanager-class.md) bir kullanıcının sağlayan nesne `CMultiPaneFrameWnd` diğerine ve dinamik olarak birden fazla kayan oluşturmak, sekmeli Windows.
+Sınıf `CMultiPaneFrameWnd` [CPaneFrameWnd Sınıf](../../mfc/reference/cpaneframewnd-class.md)genişletir. Birden çok bölmeyi destekleyebilir. Denetim çubuğuna tek bir katıştırılmış tutamaç yerine, `CMultiPaneFrameWnd` kullanıcının bir diğerine `CMultiPaneFrameWnd` dock ve dinamik olarak birden çok kayan, sekmeli pencere oluşturmak sağlayan bir [CPaneContainerManager Sınıfı](../../mfc/reference/cpanecontainermanager-class.md) nesnesi içerir.
 
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -103,79 +103,79 @@ class CMultiPaneFrameWnd : public CPaneFrameWnd
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMultiPaneFrameWnd::AddPane](#addpane)|Bir bölme ekler. (Geçersiz kılmaları [CPaneFrameWnd::AddPane](../../mfc/reference/cpaneframewnd-class.md#addpane).)|
+|[CMultiPaneFrameWnd::AddPane](#addpane)|Bölme ekler. [(Overrides CPaneFrameWnd::AddPane](../../mfc/reference/cpaneframewnd-class.md#addpane).)|
 |[CMultiPaneFrameWnd::AddRecentPane](#addrecentpane)||
-|[CMultiPaneFrameWnd::AdjustLayout](#adjustlayout)|Mini çerçeve düzenini ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::AdjustLayout](../../mfc/reference/cpaneframewnd-class.md#adjustlayout).)|
-|[CMultiPaneFrameWnd::AdjustPaneFrames](#adjustpaneframes)|(Geçersiz kılmaları [CPaneFrameWnd::AdjustPaneFrames](../../mfc/reference/cpaneframewnd-class.md#adjustpaneframes).)|
-|[CMultiPaneFrameWnd::CalcExpectedDockedRect](#calcexpecteddockedrect)|Yerleşik pencere beklenen dikdörtgen hesaplar. (Geçersiz kılmaları [CPaneFrameWnd::CalcExpectedDockedRect](../../mfc/reference/cpaneframewnd-class.md#calcexpecteddockedrect).)|
-|[CMultiPaneFrameWnd::CanBeAttached](#canbeattached)|Geçerli bölmesini başka bir bölüm ya da çerçeve penceresine sabitlemek olup olmadığını belirler. (Geçersiz kılmaları [CPaneFrameWnd::CanBeAttached](../../mfc/reference/cpaneframewnd-class.md#canbeattached).)|
-|[CMultiPaneFrameWnd::CanBeDockedToPane](#canbedockedtopane)|Mini çerçeve penceresi bir bölmesine sabitleyebilirsiniz olup olmadığını belirler. (Geçersiz kılmaları [CPaneFrameWnd::CanBeDockedToPane](../../mfc/reference/cpaneframewnd-class.md#canbedockedtopane).)|
-|[CMultiPaneFrameWnd::CheckGripperVisibility](#checkgrippervisibility)|(Geçersiz kılmaları [CPaneFrameWnd::CheckGripperVisibility](../../mfc/reference/cpaneframewnd-class.md#checkgrippervisibility).)|
-|[CMultiPaneFrameWnd::CloseMiniFrame](#closeminiframe)|(Geçersiz kılmaları `CPaneFrameWnd::CloseMiniFrame`.)|
-|[CMultiPaneFrameWnd::ConvertToTabbedDocument](#converttotabbeddocument)|Bölmesinde sekmeli belgeye dönüştürür. (Geçersiz kılmaları [CPaneFrameWnd::ConvertToTabbedDocument](../../mfc/reference/cpaneframewnd-class.md#converttotabbeddocument).)|
+|[CMultiPaneFrameWnd::Ayar Düzeni](#adjustlayout)|Mini çerçeve penceresinin düzenini ayarlar. [(Overrides CPaneFrameWnd::AdjustLayout](../../mfc/reference/cpaneframewnd-class.md#adjustlayout).)|
+|[CMultiPaneFrameWnd::AdjustPaneFrames](#adjustpaneframes)|[(Overrides CPaneFrameWnd::AdjustPaneFrames](../../mfc/reference/cpaneframewnd-class.md#adjustpaneframes).)|
+|[CMultiPaneFrameWnd::CalcExpectedDockedRect](#calcexpecteddockedrect)|Kenetlenmiş bir pencerenin beklenen dikdörtgenini hesaplar. (Overrides [CPaneFrameWnd::CalcExpectedDockedRect](../../mfc/reference/cpaneframewnd-class.md#calcexpecteddockedrect).)|
+|[CMultiPaneFrameWnd::CanBeAttached](#canbeattached)|Geçerli bölmenin başka bir bölmeye veya çerçeve penceresine yapıştırıp yapıştıramayacağını belirler. (Overrides [CPaneFrameWnd::CanBeAttached](../../mfc/reference/cpaneframewnd-class.md#canbeattached).)|
+|[CMultiPaneFrameWnd::CanBeDockedToPane](#canbedockedtopane)|Mini çerçeve penceresinin bölmeye sabitleyip yapıştıramayacağını belirler. (Overrides [CPaneFrameWnd::CanBeDockedToPane](../../mfc/reference/cpaneframewnd-class.md#canbedockedtopane).)|
+|[CMultiPaneFrameWnd::CheckGripperGörünürlik](#checkgrippervisibility)|(Overrides [CPaneFrameWnd::CheckGripperVisibility](../../mfc/reference/cpaneframewnd-class.md#checkgrippervisibility).)|
+|[CMultiPaneFrameWnd::CloseMiniFrame](#closeminiframe)|(Geçersiz `CPaneFrameWnd::CloseMiniFrame`kılar .)|
+|[CMultiPaneFrameWnd::ConvertToTabbedDocument](#converttotabbeddocument)|Bölmeyi sekmeli bir belgeye dönüştürür. (Overrides [CPaneFrameWnd::ConvertToTabbedDocument](../../mfc/reference/cpaneframewnd-class.md#converttotabbeddocument).)|
 |[CMultiPaneFrameWnd::DockFrame](#dockframe)||
-|[CMultiPaneFrameWnd::DockPane](#dockpane)|Bölmesinde docks. (Geçersiz kılmaları [CPaneFrameWnd::DockPane](../../mfc/reference/cpaneframewnd-class.md#dockpane).)|
+|[CMultiPaneFrameWnd::DockPane](#dockpane)|Bölmeyi sabitler. (Overrides [CPaneFrameWnd::DockPane](../../mfc/reference/cpaneframewnd-class.md#dockpane).)|
 |[CMultiPaneFrameWnd::DockRecentPaneToMainFrame](#dockrecentpanetomainframe)||
-|[CMultiPaneFrameWnd::GetCaptionText](#getcaptiontext)|Açıklamalı alt yazı metni döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetCaptionText](../../mfc/reference/cpaneframewnd-class.md#getcaptiontext).)|
-|[CMultiPaneFrameWnd::GetPaneContainerManager](#getpanecontainermanager)|İç kapsayıcı manager nesnesine bir başvuru döndürür.|
-|[CMultiPaneFrameWnd::GetFirstVisiblePane](#getfirstvisiblepane)|Bir mini çerçeve penceresinde yer alan ilk görünür bölmesine döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetFirstVisiblePane](../../mfc/reference/cpaneframewnd-class.md#getfirstvisiblepane).)|
-|[CMultiPaneFrameWnd::GetPane](#getpane)|Mini çerçeve penceresinde yer alan bir bölme döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetPane](../../mfc/reference/cpaneframewnd-class.md#getpane).)|
-|[CMultiPaneFrameWnd::GetPaneCount](#getpanecount)|Bir mini çerçeve penceresinde bulunan bölmeleri sayısını döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetPaneCount](../../mfc/reference/cpaneframewnd-class.md#getpanecount).)|
-|[CMultiPaneFrameWnd::GetVisiblePaneCount](#getvisiblepanecount)|Bir mini çerçeve penceresinde bulunan görünür bölmeleri sayısını döndürür. (Geçersiz kılmaları [CPaneFrameWnd::GetVisiblePaneCount](../../mfc/reference/cpaneframewnd-class.md#getvisiblepanecount).)|
+|[CMultiPaneFrameWnd::GetCaptionText](#getcaptiontext)|Resim yazısı metnini döndürür. [(Overrides CPaneFrameWnd::GetCaptionText](../../mfc/reference/cpaneframewnd-class.md#getcaptiontext).)|
+|[CMultiPaneFrameWnd::GetPaneContainerManager](#getpanecontainermanager)|İç kapsayıcı yöneticisi nesnesine bir başvuru verir.|
+|[CMultiPaneFrameWnd::GetFirstVisiblePane](#getfirstvisiblepane)|Mini çerçeve penceresinde bulunan ilk görünür bölmeyi döndürür. [(Overrides CPaneFrameWnd::GetFirstVisiblePane](../../mfc/reference/cpaneframewnd-class.md#getfirstvisiblepane).)|
+|[CMultiPaneFrameWnd::GetPane](#getpane)|Mini çerçeve penceresinde bulunan bir bölmeyi döndürür. [(Overrides CPaneFrameWnd::GetPane](../../mfc/reference/cpaneframewnd-class.md#getpane).)|
+|[CMultiPaneFrameWnd::GetPaneCount](#getpanecount)|Mini çerçeve penceresinde bulunan bölme sayısını verir. (Geçersiz Kılar [CPaneFrameWnd::GetPaneCount](../../mfc/reference/cpaneframewnd-class.md#getpanecount).)|
+|[CMultiPaneFrameWnd::GetVisiblePaneCount](#getvisiblepanecount)|Mini çerçeve penceresinde bulunan görünür bölme sayısını döndürür. (Geçersiz Kılar [CPaneFrameWnd::GetVisiblePaneCount](../../mfc/reference/cpaneframewnd-class.md#getvisiblepanecount).)|
 |[CMultiPaneFrameWnd::InsertPane](#insertpane)||
-|[CMultiPaneFrameWnd::LoadState](#loadstate)|Kayıt defterinden bölmedeki durumunu yükler. (Geçersiz kılmaları [CPaneFrameWnd::LoadState](../../mfc/reference/cpaneframewnd-class.md#loadstate).)|
-|[CMultiPaneFrameWnd::OnDockToRecentPos](#ondocktorecentpos)|En son konumunu Mini çerçeve penceresinin docks. (Geçersiz kılmaları [CPaneFrameWnd::OnDockToRecentPos](../../mfc/reference/cpaneframewnd-class.md#ondocktorecentpos).)|
-|[CMultiPaneFrameWnd::OnKillRollUpTimer](#onkillrolluptimer)|Toplama Zamanlayıcıyı durdurur. (Geçersiz kılmaları [CPaneFrameWnd::OnKillRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#onkillrolluptimer).)|
-|[CMultiPaneFrameWnd::OnPaneRecalcLayout](#onpanerecalclayout)|Bir mini çerçeve penceresi içinde bir bölme düzenini ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::OnPaneRecalcLayout](../../mfc/reference/cpaneframewnd-class.md#onpanerecalclayout).)|
-|[CMultiPaneFrameWnd::OnSetRollUpTimer](#onsetrolluptimer)|Toplama Zamanlayıcıyı ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::OnSetRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#onsetrolluptimer).)|
-|[CMultiPaneFrameWnd::OnShowPane](#onshowpane)|Bir mini çerçeve bölmesinde gizli veya gösterilen framework tarafından çağırılır. (Geçersiz kılmaları [CPaneFrameWnd::OnShowPane](../../mfc/reference/cpaneframewnd-class.md#onshowpane).)|
-|[CMultiPaneFrameWnd::PaneFromPoint](#panefrompoint)|Bir mini çerçeve penceresi içinde bir kullanıcı tarafından sağlanan noktası içeriyorsa bir bölme döndürür. (Geçersiz kılmaları [CPaneFrameWnd::PaneFromPoint](../../mfc/reference/cpaneframewnd-class.md#panefrompoint).)|
-|[CMultiPaneFrameWnd::RemoveNonValidPanes](#removenonvalidpanes)|Geçerli olmayan bölmeleri kaldırmak için framework tarafından çağırılır. (Geçersiz kılmaları [CPaneFrameWnd::RemoveNonValidPanes](../../mfc/reference/cpaneframewnd-class.md#removenonvalidpanes).)|
-|[CMultiPaneFrameWnd::RemovePane](#removepane)|Bir bölme Mini çerçeve penceresinde kaldırır. (Geçersiz kılmaları [CPaneFrameWnd::RemovePane](../../mfc/reference/cpaneframewnd-class.md#removepane).)|
-|[CMultiPaneFrameWnd::ReplacePane](#replacepane)|Bir bölme birbiriyle değiştirir. (Geçersiz kılmaları [CPaneFrameWnd::ReplacePane](../../mfc/reference/cpaneframewnd-class.md#replacepane).)|
-|[CMultiPaneFrameWnd::SaveState](#savestate)|Bölmedeki durumu kayıt defterine kaydeder. (Geçersiz kılmaları [CPaneFrameWnd::SaveState](../../mfc/reference/cpaneframewnd-class.md#savestate).)|
-|[CMultiPaneFrameWnd::Serialize](#serialize)|(Geçersiz kılmaları `CPaneFrameWnd::Serialize`.)|
-|[CMultiPaneFrameWnd::SetDockState](#setdockstate)|Yerleştirme durumunu ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::SetDockState](../../mfc/reference/cpaneframewnd-class.md#setdockstate).)|
+|[CMultiPaneFrameWnd::LoadState](#loadstate)|Bölmenin durumunu kayıt defterinden yükler. (Geçersiz Kılar [CPaneFrameWnd::LoadState](../../mfc/reference/cpaneframewnd-class.md#loadstate).)|
+|[CMultiPaneFrameWnd::OnDockToRecentPos](#ondocktorecentpos)|Mini çerçeve penceresini en son konumunda sabitler. (Overrides [CPaneFrameWnd::OnDockToRecentPos](../../mfc/reference/cpaneframewnd-class.md#ondocktorecentpos).)|
+|[CMultiPaneFrameWnd::OnKillRollUpTimer](#onkillrolluptimer)|Toplama zamanlayıcısını durdurur. [(Overrides CPaneFrameWnd::OnKillRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#onkillrolluptimer).)|
+|[CMultiPaneFrameWnd::OnPaneRecalcLayout](#onpanerecalclayout)|Mini çerçeve penceresi içindeki bölmenin düzenini ayarlar. (Overrides [CPaneFrameWnd::OnPaneRecalcLayout](../../mfc/reference/cpaneframewnd-class.md#onpanerecalclayout).)|
+|[CMultiPaneFrameWnd::OnSetRollUpTimer](#onsetrolluptimer)|Toplama zamanlayıcısını ayarlar. [(Overrides CPaneFrameWnd::OnSetRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#onsetrolluptimer).)|
+|[CMultiPaneFrameWnd::OnShowPane](#onshowpane)|Mini çerçeve penceresindeki bir bölme gizlendiğinde veya görüntülendiğinde çerçeve tarafından çağrılır. [(Overrides CPaneFrameWnd::OnShowPane](../../mfc/reference/cpaneframewnd-class.md#onshowpane).)|
+|[CMultiPaneFrameWnd::PaneFromPoint](#panefrompoint)|Bir mini çerçeve penceresi içinde kullanıcı tarafından sağlanan bir nokta içeriyorsa bir bölme döndürür. (Geçersiz kılar [CPaneFrameWnd::PaneFromPoint](../../mfc/reference/cpaneframewnd-class.md#panefrompoint).)|
+|[CMultiPaneFrameWnd::RemoveNonValidPanes](#removenonvalidpanes)|Geçerli olmayan bölmeleri kaldırmak için çerçeve tarafından çağrılır. [(Overrides CPaneFrameWnd::RemoveNonValidPanes](../../mfc/reference/cpaneframewnd-class.md#removenonvalidpanes).)|
+|[CMultiPaneFrameWnd::RemovePane](#removepane)|Küçük çerçeve penceresinden bir bölme kaldırır. [(Overrides CPaneFrameWnd::RemovePane](../../mfc/reference/cpaneframewnd-class.md#removepane).)|
+|[CMultiPaneFrameWnd::ReplacePane](#replacepane)|Bir bölmeyi diğeriyle değiştirir. [(Overrides CPaneFrameWnd::ReplacePane](../../mfc/reference/cpaneframewnd-class.md#replacepane).)|
+|[CMultiPaneFrameWnd::SaveState](#savestate)|Bölmenin durumunu kayıt defterine kaydeder. (Geçersiz Kılar [CPaneFrameWnd::SaveState](../../mfc/reference/cpaneframewnd-class.md#savestate).)|
+|[CMultiPaneFrameWnd::Serialize](#serialize)|(Geçersiz `CPaneFrameWnd::Serialize`kılar .)|
+|[CMultiPaneFrameWnd::SetDockState](#setdockstate)|Kenetlenme durumunu ayarlar. (Geçersiz Kılar [CPaneFrameWnd::SetDockState](../../mfc/reference/cpaneframewnd-class.md#setdockstate).)|
 |[CMultiPaneFrameWnd::SetLastFocusedPane](#setlastfocusedpane)||
-|[CMultiPaneFrameWnd::SetPreDockState](#setpredockstate)|Predocking durumunu ayarlar. (Geçersiz kılmaları [CPaneFrameWnd::SetPreDockState](../../mfc/reference/cpaneframewnd-class.md#setpredockstate).)|
-|[CMultiPaneFrameWnd::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)|(Geçersiz kılmaları [CPaneFrameWnd::StoreRecentDockSiteInfo](../../mfc/reference/cpaneframewnd-class.md#storerecentdocksiteinfo).)|
-|[CMultiPaneFrameWnd::StoreRecentTabRelatedInfo](#storerecenttabrelatedinfo)|(Geçersiz kılmaları [CPaneFrameWnd::StoreRecentTabRelatedInfo](../../mfc/reference/cpaneframewnd-class.md#storerecenttabrelatedinfo).)|
+|[CMultiPaneFrameWnd::SetPreDockState](#setpredockstate)|Predocking durumunu ayarlar. [(Overrides CPaneFrameWnd::SetPreDockState](../../mfc/reference/cpaneframewnd-class.md#setpredockstate).)|
+|[CMultiPaneFrameWnd::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)|(Overrides [CPaneFrameWnd::StoreRecentDockSiteInfo](../../mfc/reference/cpaneframewnd-class.md#storerecentdocksiteinfo).)|
+|[CMultiPaneFrameWnd::StoreRecentTabRelatedInfo](#storerecenttabrelatedinfo)|(Overrides [CPaneFrameWnd::StoreRecentTabRelatedInfo](../../mfc/reference/cpaneframewnd-class.md#storerecenttabrelatedinfo).)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıftaki yöntemlerin çoğunun geçersiz kılma yöntemleri [CPaneFrameWnd sınıfı](../../mfc/reference/cpaneframewnd-class.md) sınıfı.
+Bu sınıftaki yöntemlerin çoğu [CPaneFrameWnd Class](../../mfc/reference/cpaneframewnd-class.md) sınıfındayöntemleri geçersiz kılar.
 
-Bir bölme AFX_CBRS_AUTO_ROLLUP stili kullanıyorsa ve kullanıcı bu bölme çok bölme çerçevesindeki penceresine docks kullanıcı penceresini yerleştirilmiş bir bölme stili ayarlarından bağımsız olarak geri alabilirsiniz.
+Bölme AFX_CBRS_AUTO_ROLLUP stilini kullanırsa ve kullanıcı bu bölmeyi çok bölmeli çerçeve penceresine yapıştırırsa, kullanıcı diğer kenetlenmiş bölmelerin stil ayarlarına bakılmaksızın pencereyi yuvarlayabilir.
 
-Framework otomatik olarak oluşturur bir `CMultiPaneFrameWnd` kullanıcı CBRS_FLOAT_MULTI stili kullanan bir bölme gezinen olduğunda nesne.
+Kullanıcı CBRS_FLOAT_MULTI stilini `CMultiPaneFrameWnd` kullanan bir bölmeyi yüzdürdüğünde çerçeve otomatik olarak bir nesne oluşturur.
 
-Bir sınıftan türetme hakkında bilgi için `CPaneFrameWnd` sınıfı ve dinamik olarak oluşturmak, bkz [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md).
+`CPaneFrameWnd` Bir sınıfı sınıftan türeme ve dinamik olarak oluşturma hakkında bilgi için [Bkz. CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir işaretçi almak gösterilmiştir bir `CMultiPaneFrameWnd` nesne. Bu kod parçacığı parçasıdır [bölme boyutunu ayarlayın örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, bir `CMultiPaneFrameWnd` nesneye işaretçi nasıl alınabildiğini gösterir. Bu kod [parçacığı, Küme Bölmesi Boyutu örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_SetPaneSize#4](../../mfc/reference/codesnippet/cpp/cmultipaneframewnd-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md)
+[Cpaneframewnd](../../mfc/reference/cpaneframewnd-class.md)
 
 [CMultiPaneFrameWnd](../../mfc/reference/cmultipaneframewnd-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxMultiPaneFrameWnd.h
+**Üstbilgi:** afxMultiPaneFrameWnd.h
 
-##  <a name="addpane"></a>  CMultiPaneFrameWnd::AddPane
+## <a name="cmultipaneframewndaddpane"></a><a name="addpane"></a>CMultiPaneFrameWnd::AddPane
 
 ```
 virtual void AddPane(CBasePane* pWnd);
@@ -183,11 +183,11 @@ virtual void AddPane(CBasePane* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pWnd*<br/>
+[içinde] *pWnd*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addrecentpane"></a>  CMultiPaneFrameWnd::AddRecentPane
+## <a name="cmultipaneframewndaddrecentpane"></a><a name="addrecentpane"></a>CMultiPaneFrameWnd::AddRecentPane
 
 ```
 virtual BOOL AddRecentPane(CDockablePane* pBar);
@@ -195,13 +195,13 @@ virtual BOOL AddRecentPane(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
+[içinde] *pBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="adjustlayout"></a>  CMultiPaneFrameWnd::AdjustLayout
+## <a name="cmultipaneframewndadjustlayout"></a><a name="adjustlayout"></a>CMultiPaneFrameWnd::Ayar Düzeni
 
 ```
 virtual void AdjustLayout();
@@ -209,7 +209,7 @@ virtual void AdjustLayout();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="adjustpaneframes"></a>  CMultiPaneFrameWnd::AdjustPaneFrames
+## <a name="cmultipaneframewndadjustpaneframes"></a><a name="adjustpaneframes"></a>CMultiPaneFrameWnd::AdjustPaneFrames
 
 ```
 virtual void AdjustPaneFrames();
@@ -217,7 +217,7 @@ virtual void AdjustPaneFrames();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="calcexpecteddockedrect"></a>  CMultiPaneFrameWnd::CalcExpectedDockedRect
+## <a name="cmultipaneframewndcalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a>CMultiPaneFrameWnd::CalcExpectedDockedRect
 
 ```
 virtual void CalcExpectedDockedRect(
@@ -230,15 +230,15 @@ virtual void CalcExpectedDockedRect(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pWndToDock*<br/>
-[in] *ptMouse*<br/>
-[in] *rectResult*<br/>
-[in] *bDrawTab*<br/>
-[in] *ppTargetBar*<br/>
+[içinde] *pWndToDock*<br/>
+[içinde] *ptMouse*<br/>
+[içinde] *rektResult*<br/>
+[içinde] *bDrawTab*<br/>
+[içinde] *ppTargetBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="canbeattached"></a>  CMultiPaneFrameWnd::CanBeAttached
+## <a name="cmultipaneframewndcanbeattached"></a><a name="canbeattached"></a>CMultiPaneFrameWnd::CanBeAttached
 
 ```
 virtual BOOL CanBeAttached() const;
@@ -248,7 +248,7 @@ virtual BOOL CanBeAttached() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="canbedockedtopane"></a>  CMultiPaneFrameWnd::CanBeDockedToPane
+## <a name="cmultipaneframewndcanbedockedtopane"></a><a name="canbedockedtopane"></a>CMultiPaneFrameWnd::CanBeDockedToPane
 
 ```
 virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
@@ -256,13 +256,13 @@ virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pDockingBar*<br/>
+[içinde] *pDockingBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="checkgrippervisibility"></a>  CMultiPaneFrameWnd::CheckGripperVisibility
+## <a name="cmultipaneframewndcheckgrippervisibility"></a><a name="checkgrippervisibility"></a>CMultiPaneFrameWnd::CheckGripperGörünürlik
 
 ```
 virtual void CheckGripperVisibility();
@@ -270,7 +270,7 @@ virtual void CheckGripperVisibility();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="closeminiframe"></a>  CMultiPaneFrameWnd::CloseMiniFrame
+## <a name="cmultipaneframewndcloseminiframe"></a><a name="closeminiframe"></a>CMultiPaneFrameWnd::CloseMiniFrame
 
 ```
 virtual void CloseMiniFrame();
@@ -278,7 +278,7 @@ virtual void CloseMiniFrame();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="converttotabbeddocument"></a>  CMultiPaneFrameWnd::ConvertToTabbedDocument
+## <a name="cmultipaneframewndconverttotabbeddocument"></a><a name="converttotabbeddocument"></a>CMultiPaneFrameWnd::ConvertToTabbedDocument
 
 ```
 virtual void ConvertToTabbedDocument();
@@ -286,7 +286,7 @@ virtual void ConvertToTabbedDocument();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="dockframe"></a>  CMultiPaneFrameWnd::DockFrame
+## <a name="cmultipaneframewnddockframe"></a><a name="dockframe"></a>CMultiPaneFrameWnd::DockFrame
 
 ```
 virtual BOOL DockFrame(
@@ -296,14 +296,14 @@ virtual BOOL DockFrame(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pDockedFrame*<br/>
-[in] *dockMethod*<br/>
+[içinde] *pDockedFrame*<br/>
+[içinde] *dockMethod*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="dockpane"></a>  CMultiPaneFrameWnd::DockPane
+## <a name="cmultipaneframewnddockpane"></a><a name="dockpane"></a>CMultiPaneFrameWnd::DockPane
 
 ```
 virtual BOOL DockPane(CDockablePane* pDockedBar);
@@ -311,13 +311,13 @@ virtual BOOL DockPane(CDockablePane* pDockedBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pDockedBar*<br/>
+[içinde] *pDockedBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="dockrecentpanetomainframe"></a>  CMultiPaneFrameWnd::DockRecentPaneToMainFrame
+## <a name="cmultipaneframewnddockrecentpanetomainframe"></a><a name="dockrecentpanetomainframe"></a>CMultiPaneFrameWnd::DockRecentPaneToMainFrame
 
 ```
 virtual void DockRecentPaneToMainFrame(CDockablePane* pBar);
@@ -325,11 +325,11 @@ virtual void DockRecentPaneToMainFrame(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
+[içinde] *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getcaptiontext"></a>  CMultiPaneFrameWnd::GetCaptionText
+## <a name="cmultipaneframewndgetcaptiontext"></a><a name="getcaptiontext"></a>CMultiPaneFrameWnd::GetCaptionText
 
 ```
 virtual CString GetCaptionText();
@@ -339,7 +339,7 @@ virtual CString GetCaptionText();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getfirstvisiblepane"></a>  CMultiPaneFrameWnd::GetFirstVisiblePane
+## <a name="cmultipaneframewndgetfirstvisiblepane"></a><a name="getfirstvisiblepane"></a>CMultiPaneFrameWnd::GetFirstVisiblePane
 
 ```
 virtual CWnd* GetFirstVisiblePane() const;
@@ -349,7 +349,7 @@ virtual CWnd* GetFirstVisiblePane() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getpane"></a>  CMultiPaneFrameWnd::GetPane
+## <a name="cmultipaneframewndgetpane"></a><a name="getpane"></a>CMultiPaneFrameWnd::GetPane
 
 ```
 virtual CWnd* GetPane() const;
@@ -359,9 +359,9 @@ virtual CWnd* GetPane() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getpanecontainermanager"></a>  CMultiPaneFrameWnd::GetPaneContainerManager
+## <a name="cmultipaneframewndgetpanecontainermanager"></a><a name="getpanecontainermanager"></a>CMultiPaneFrameWnd::GetPaneContainerManager
 
-İç kapsayıcı manager nesnesine bir başvuru döndürür.
+İç kapsayıcı yöneticisi nesnesine bir başvuru verir.
 
 ```
 CPaneContainerManager& GetPaneContainerManager();
@@ -369,13 +369,13 @@ CPaneContainerManager& GetPaneContainerManager();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İç kapsayıcı manager nesnesine bir başvuru.
+İç kapsayıcı yöneticisi nesnesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem iç erişmek için kullanılan [CPaneContainerManager sınıfı](../../mfc/reference/cpanecontainermanager-class.md) nesne.
+Bu yöntem iç [CPaneContainerManager Sınıf](../../mfc/reference/cpanecontainermanager-class.md) nesnesine erişmek için kullanılabilir.
 
-##  <a name="getpanecount"></a>  CMultiPaneFrameWnd::GetPaneCount
+## <a name="cmultipaneframewndgetpanecount"></a><a name="getpanecount"></a>CMultiPaneFrameWnd::GetPaneCount
 
 ```
 virtual int GetPaneCount() const;
@@ -385,7 +385,7 @@ virtual int GetPaneCount() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getvisiblepanecount"></a>  CMultiPaneFrameWnd::GetVisiblePaneCount
+## <a name="cmultipaneframewndgetvisiblepanecount"></a><a name="getvisiblepanecount"></a>CMultiPaneFrameWnd::GetVisiblePaneCount
 
 ```
 virtual int GetVisiblePaneCount() const;
@@ -395,7 +395,7 @@ virtual int GetVisiblePaneCount() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="insertpane"></a>  CMultiPaneFrameWnd::InsertPane
+## <a name="cmultipaneframewndinsertpane"></a><a name="insertpane"></a>CMultiPaneFrameWnd::InsertPane
 
 ```
 virtual BOOL InsertPane(
@@ -406,15 +406,15 @@ virtual BOOL InsertPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pControlBar*<br/>
-[in] *pTarget*<br/>
-[in] *bBu*<br/>
+[içinde] *pControlBar*<br/>
+[içinde] *pTarget*<br/>
+[içinde] *bAfter*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="loadstate"></a>  CMultiPaneFrameWnd::LoadState
+## <a name="cmultipaneframewndloadstate"></a><a name="loadstate"></a>CMultiPaneFrameWnd::LoadState
 
 ```
 virtual BOOL LoadState(
@@ -424,14 +424,14 @@ virtual BOOL LoadState(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *lpszProfileName*<br/>
-[in] *uiID*<br/>
+[içinde] *lpszProfileName*<br/>
+[içinde] *uiID*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="ondocktorecentpos"></a>  CMultiPaneFrameWnd::OnDockToRecentPos
+## <a name="cmultipaneframewndondocktorecentpos"></a><a name="ondocktorecentpos"></a>CMultiPaneFrameWnd::OnDockToRecentPos
 
 ```
 virtual void OnDockToRecentPos();
@@ -439,7 +439,7 @@ virtual void OnDockToRecentPos();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onkillrolluptimer"></a>  CMultiPaneFrameWnd::OnKillRollUpTimer
+## <a name="cmultipaneframewndonkillrolluptimer"></a><a name="onkillrolluptimer"></a>CMultiPaneFrameWnd::OnKillRollUpTimer
 
 ```
 virtual void OnKillRollUpTimer();
@@ -447,7 +447,7 @@ virtual void OnKillRollUpTimer();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onpanerecalclayout"></a>  CMultiPaneFrameWnd::OnPaneRecalcLayout
+## <a name="cmultipaneframewndonpanerecalclayout"></a><a name="onpanerecalclayout"></a>CMultiPaneFrameWnd::OnPaneRecalcLayout
 
 ```
 virtual void OnPaneRecalcLayout();
@@ -455,7 +455,7 @@ virtual void OnPaneRecalcLayout();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onsetrolluptimer"></a>  CMultiPaneFrameWnd::OnSetRollUpTimer
+## <a name="cmultipaneframewndonsetrolluptimer"></a><a name="onsetrolluptimer"></a>CMultiPaneFrameWnd::OnSetRollUpTimer
 
 ```
 virtual void OnSetRollUpTimer();
@@ -463,7 +463,7 @@ virtual void OnSetRollUpTimer();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onshowpane"></a>  CMultiPaneFrameWnd::OnShowPane
+## <a name="cmultipaneframewndonshowpane"></a><a name="onshowpane"></a>CMultiPaneFrameWnd::OnShowPane
 
 ```
 virtual void OnShowPane(
@@ -473,12 +473,12 @@ virtual void OnShowPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
-[in] *bBilgi Göster*<br/>
+[içinde] *pBar*<br/>
+[içinde] *bGöster*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="panefrompoint"></a>  CMultiPaneFrameWnd::PaneFromPoint
+## <a name="cmultipaneframewndpanefrompoint"></a><a name="panefrompoint"></a>CMultiPaneFrameWnd::PaneFromPoint
 
 ```
 virtual CBasePane* PaneFromPoint(
@@ -489,15 +489,15 @@ virtual CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *noktası*<br/>
-[in] *nSensitivity*<br/>
-[in] *bCheckVisibility*<br/>
+[içinde] *nokta*<br/>
+[içinde] *nDuyarlılık*<br/>
+[içinde] *bCheckGörünürlük*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="removenonvalidpanes"></a>  CMultiPaneFrameWnd::RemoveNonValidPanes
+## <a name="cmultipaneframewndremovenonvalidpanes"></a><a name="removenonvalidpanes"></a>CMultiPaneFrameWnd::RemoveNonValidPanes
 
 ```
 virtual void RemoveNonValidPanes();
@@ -505,7 +505,7 @@ virtual void RemoveNonValidPanes();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="removepane"></a>  CMultiPaneFrameWnd::RemovePane
+## <a name="cmultipaneframewndremovepane"></a><a name="removepane"></a>CMultiPaneFrameWnd::RemovePane
 
 ```
 virtual void RemovePane(
@@ -516,13 +516,13 @@ virtual void RemovePane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
-[in] *bDestroy*<br/>
-[in] *bNoDelayedDestroy*<br/>
+[içinde] *pBar*<br/>
+[içinde] *bYok et*<br/>
+[içinde] *bNoDelayedDestroy*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="replacepane"></a>  CMultiPaneFrameWnd::ReplacePane
+## <a name="cmultipaneframewndreplacepane"></a><a name="replacepane"></a>CMultiPaneFrameWnd::ReplacePane
 
 ```
 virtual void ReplacePane(
@@ -532,12 +532,12 @@ virtual void ReplacePane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBarOrg*<br/>
-[in] *pBarReplaceWith*<br/>
+[içinde] *pBarOrg*<br/>
+[içinde] *pBarReplaceWith*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="savestate"></a>  CMultiPaneFrameWnd::SaveState
+## <a name="cmultipaneframewndsavestate"></a><a name="savestate"></a>CMultiPaneFrameWnd::SaveState
 
 ```
 virtual BOOL SaveState(
@@ -547,14 +547,14 @@ virtual BOOL SaveState(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *lpszProfileName*<br/>
-[in] *uiID*<br/>
+[içinde] *lpszProfileName*<br/>
+[içinde] *uiID*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="serialize"></a>  CMultiPaneFrameWnd::Serialize
+## <a name="cmultipaneframewndserialize"></a><a name="serialize"></a>CMultiPaneFrameWnd::Serialize
 
 ```
 virtual void Serialize(CArchive& ar);
@@ -562,11 +562,11 @@ virtual void Serialize(CArchive& ar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *ar*<br/>
+[içinde] *ar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setdockstate"></a>  CMultiPaneFrameWnd::SetDockState
+## <a name="cmultipaneframewndsetdockstate"></a><a name="setdockstate"></a>CMultiPaneFrameWnd::SetDockState
 
 ```
 virtual void SetDockState(CDockingManager* pDockManager);
@@ -574,11 +574,11 @@ virtual void SetDockState(CDockingManager* pDockManager);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pDockManager*<br/>
+[içinde] *pDockManager*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setlastfocusedpane"></a>  CMultiPaneFrameWnd::SetLastFocusedPane
+## <a name="cmultipaneframewndsetlastfocusedpane"></a><a name="setlastfocusedpane"></a>CMultiPaneFrameWnd::SetLastFocusedPane
 
 ```
 void SetLastFocusedPane(HWND hwnd);
@@ -586,11 +586,11 @@ void SetLastFocusedPane(HWND hwnd);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *hwnd*<br/>
+[içinde] *hwnd*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setpredockstate"></a>  CMultiPaneFrameWnd::SetPreDockState
+## <a name="cmultipaneframewndsetpredockstate"></a><a name="setpredockstate"></a>CMultiPaneFrameWnd::SetPreDockState
 
 ```
 virtual BOOL SetPreDockState(
@@ -601,15 +601,15 @@ virtual BOOL SetPreDockState(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *preDockState*<br/>
-[in] *pBarToDock*<br/>
-[in] *dockMethod*<br/>
+[içinde] *önDockState*<br/>
+[içinde] *pBarToDock*<br/>
+[içinde] *dockMethod*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="storerecentdocksiteinfo"></a>  CMultiPaneFrameWnd::StoreRecentDockSiteInfo
+## <a name="cmultipaneframewndstorerecentdocksiteinfo"></a><a name="storerecentdocksiteinfo"></a>CMultiPaneFrameWnd::StoreRecentDockSiteInfo
 
 ```
 virtual void StoreRecentDockSiteInfo(CPane* pBar);
@@ -617,11 +617,11 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
+[içinde] *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="storerecenttabrelatedinfo"></a>  CMultiPaneFrameWnd::StoreRecentTabRelatedInfo
+## <a name="cmultipaneframewndstorerecenttabrelatedinfo"></a><a name="storerecenttabrelatedinfo"></a>CMultiPaneFrameWnd::StoreRecentTabRelatedInfo
 
 ```
 virtual void StoreRecentTabRelatedInfo(
@@ -631,8 +631,8 @@ virtual void StoreRecentTabRelatedInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pDockingBar*<br/>
-[in] *pTabbedBar*<br/>
+[içinde] *pDockingBar*<br/>
+[içinde] *pTabbedBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -640,4 +640,4 @@ virtual void StoreRecentTabRelatedInfo(
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CPaneFrameWnd Sınıfı](../../mfc/reference/cpaneframewnd-class.md)
+[CPaneFrameWnd Sınıf](../../mfc/reference/cpaneframewnd-class.md)

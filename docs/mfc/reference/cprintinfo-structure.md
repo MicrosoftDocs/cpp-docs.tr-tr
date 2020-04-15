@@ -1,21 +1,21 @@
 ---
-title: Cprintınfo yapısı
+title: CprintInfo Yapısı
 ms.date: 11/04/2016
 f1_keywords:
 - CPrintInfo
 helpviewer_keywords:
 - CPrintInfo structure [MFC]
 ms.assetid: 0b3de849-d050-4386-9a14-f4c1a25684f7
-ms.openlocfilehash: 96b6204fe46cb624d22506b2d3e5c1d7621b1865
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cf0a1e6b7e742e950663f1ed9cc9ff2ddabd9d6f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372484"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364018"
 ---
-# <a name="cprintinfo-structure"></a>Cprintınfo yapısı
+# <a name="cprintinfo-structure"></a>CprintInfo Yapısı
 
-Bir yazdırma ya da yazdırma önizleme işle ilgili bilgileri depolar.
+Yazdırma veya yazdırma önizleme işi yle ilgili bilgileri depolar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,47 +27,47 @@ struct CPrintInfo
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CPrintInfo::GetFromPage](#getfrompage)|Yazdırılmasını ilk sayfa sayısını döndürür.|
-|[CPrintInfo::GetMaxPage](#getmaxpage)|Son sayfa belge sayısını döndürür.|
-|[CPrintInfo::GetMinPage](#getminpage)|İlk sayfa belge sayısını döndürür.|
-|[CPrintInfo::GetOffsetPage](#getoffsetpage)|İlk sayfa birleşik DocObject yazdırma işi yazdırılmasını DocObject öğesinin önceki sayfa sayısını döndürür.|
-|[CPrintInfo::GetToPage](#gettopage)|Yazdırılmasını son sayfa sayısını döndürür.|
-|[CPrintInfo::SetMaxPage](#setmaxpage)|Son sayfa belge sayısını ayarlar.|
-|[CPrintInfo::SetMinPage](#setminpage)|İlk sayfa belge sayısını ayarlar.|
+|[CPrintInfo::GetFromPage](#getfrompage)|Yazdırılan ilk sayfanın numarasını verir.|
+|[CPrintInfo::GetMaxPage](#getmaxpage)|Belgenin son sayfasının numarasını verir.|
+|[CPrintInfo::GetMinPage](#getminpage)|Belgenin ilk sayfasının numarasını verir.|
+|[CPrintInfo::GetOffsetPage](#getoffsetpage)|Birleştirilmiş DocObject yazdırma işinde yazdırılan Bir DocObject öğesinin ilk sayfasından önceki sayfaların sayısını döndürür.|
+|[CprintInfo::Gettopage](#gettopage)|Yazdırılan son sayfanın numarasını verir.|
+|[CPrintInfo::SetMaxPage](#setmaxpage)|Belgenin son sayfasının numarasını ayarlar.|
+|[CPrintInfo::SetMinPage](#setminpage)|Belgenin ilk sayfasının numarasını ayarlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CPrintInfo::m_bContinuePrinting](#m_bcontinueprinting)|Framework yazdırma döngü devam olup olmadığını belirten bir bayrak içerir.|
-|[CPrintInfo::m_bDirect](#m_bdirect)|Doğrudan (Yazdır iletişim kutusu görüntülenmeden) belge yazdırılmasını olmadığını belirten bir bayrak içerir.|
-|[CPrintInfo::m_bDocObject](#m_bdocobject)|Belgenin yazdırılmasını DocObject olup olmadığını belirten bir bayrak içerir.|
-|[CPrintInfo::m_bPreview](#m_bpreview)|Belge önizlemesi olup olmadığını belirten bir bayrak içerir.|
-|[CPrintInfo::m_dwFlags](#m_dwflags)|DocObject yazdırma işlemleri belirtir.|
-|[CPrintInfo::m_lpUserData](#m_lpuserdata)|Kullanıcı tarafından oluşturulan bir yapıya bir işaretçi içerir.|
-|[CPrintInfo::m_nCurPage](#m_ncurpage)|Şu anda yazdırılmasını sayfa sayısını tanımlar.|
-|[CPrintInfo::m_nJobNumber](#m_njobnumber)|Geçerli yazdırma işi için işletim sistemi tarafından atanan işi belirtir|
-|[CPrintInfo::m_nNumPreviewPages](#m_nnumpreviewpages)|Önizleme penceresinde görüntülenen sayfa sayısını tanımlar; 1 veya 2.|
-|[CPrintInfo::m_nOffsetPage](#m_noffsetpage)|Belirli bir DocObject'ın ilk sayfasında uzaklığı birleşik DocObject yazdırma işi belirtir.|
-|[CPrintInfo::m_pPD](#m_ppd)|Bir işaretçi içeren `CPrintDialog` Yazdır iletişim kutusu için kullanılan nesne.|
-|[CPrintInfo::m_rectDraw](#m_rectdraw)|Geçerli sayfa kullanılabilir alanı tanımlayan bir dikdörtgen belirtir.|
-|[CPrintInfo::m_strPageDesc](#m_strpagedesc)|Sayfa numarası görüntüleme için bir biçim dizesi içerir.|
+|[CPrintInfo::m_bContinuePrinting](#m_bcontinueprinting)|Çerçevenin yazdırma döngüsüne devam edip etmeyeceğini belirten bir bayrak içerir.|
+|[CPrintInfo::m_bDirect](#m_bdirect)|Belgenin doğrudan yazdırılıp yazdırılmadığını belirten bir bayrak içerir (Yazdır iletişim kutusunu görüntülemeden).|
+|[CPrintInfo::m_bDocObject](#m_bdocobject)|Yazdırılan belgenin DocObject olup olmadığını belirten bir bayrak içerir.|
+|[CPrintInfo::m_bPreview](#m_bpreview)|Belgenin önizlemesini yapıp olmadığını belirten bir bayrak içerir.|
+|[CPrintInfo::m_dwFlags](#m_dwflags)|DocObject yazdırma işlemlerini belirtir.|
+|[CPrintInfo::m_lpUserData](#m_lpuserdata)|Kullanıcı tarafından oluşturulan yapıiçin bir işaretçi içerir.|
+|[CPrintInfo::m_nCurPage](#m_ncurpage)|Şu anda yazdırılmakta olan sayfanın numarasını tanımlar.|
+|[CPrintInfo::m_nJobNumber](#m_njobnumber)|Geçerli yazdırma işi için işletim sistemi tarafından atanan iş numarasını belirtir|
+|[CPrintInfo::m_nNumPreviewPages](#m_nnumpreviewpages)|Önizleme penceresinde görüntülenen sayfa sayısını tanımlar; ya 1 ya da 2.|
+|[CPrintInfo::m_nOffsetPage](#m_noffsetpage)|Birleştirilmiş DocObject yazdırma işinde belirli bir DocObject'in ilk sayfasının mahsup larını belirtir.|
+|[CPrintInfo::m_pPD](#m_ppd)|Yazdır iletişim kutusu `CPrintDialog` için kullanılan nesneye bir işaretçi içerir.|
+|[CPrintInfo::m_rectDraw](#m_rectdraw)|Geçerli kullanılabilir sayfa alanını tanımlayan bir dikdörtgen belirtir.|
+|[CPrintInfo::m_strPageDesc](#m_strpagedesc)|Sayfa numarası görüntüleme için biçim dizesi içerir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CPrintInfo` bir yapı olduğunu ve bir temel sınıfa sahip değil.
+`CPrintInfo`bir yapıdır ve taban sınıfa sahip değildir.
 
-Bir nesnenin framework oluşturur `CPrintInfo` her zaman yazdırma ya da yazdırma önizleme komutu seçilir ve komutu tamamlandığında yok eder.
+Çerçeve, Yazdır veya `CPrintInfo` Yazdır Önizleme komutu seçildiği her zaman bir nesne oluşturur ve komut tamamlandığında onu yok eder.
 
-`CPrintInfo` yazdırılacak sayfaların aralığı gibi bir bütün olarak yazdırma işi hem gibi şu anda yazdırılan sayfanın yazdırma işinin geçerli durumu hakkında bilgi içerir. Bazı bilgiler depolanır, ilişkili bir [CPrintDialog](../../mfc/reference/cprintdialog-class.md) nesne; bu nesne Yazdır iletişim kutusu kullanıcı tarafından girilen değerler içerir.
+`CPrintInfo`yazdırılacak sayfa aralığı ve şu anda yazdırılmakta olan sayfa gibi yazdırma işinin geçerli durumu gibi hem bir bütün olarak yazdırma işi hakkında bilgi içerir. Bazı bilgiler ilişkili bir [CPrintDialog](../../mfc/reference/cprintdialog-class.md) nesnesinde depolanır; bu nesne, Yazdır iletişim kutusunda kullanıcı tarafından girilen değerleri içerir.
 
-A `CPrintInfo` nesne framework ve görünüm sınıfınıza arasında yazdırma işlemi sırasında geçirilir ve ikisi arasında bilgi alışverişi için kullanılır. Örneğin, framework görünüm sınıfı için bir değer atayarak yazdırmak için belgenin hangi sayfası bildirir `m_nCurPage` üyesi `CPrintInfo`; sınıfı bir değer alır ve belirtilen sayfanın yazdırma gerçekleştirir görünümü.
+Yazdırma `CPrintInfo` işlemi sırasında çerçeve ve görünüm sınıfınız arasında bir nesne geçirilir ve ikisi arasında bilgi alışverişi için kullanılır. Örneğin, `m_nCurPage` çerçeve, üyeye bir değer atayarak belgenin hangi sayfasının yazdırılacayakadar yazdırılacayakadar görünüm sınıfına bilgi `CPrintInfo`verir; görünüm sınıfı değeri alır ve belirtilen sayfanın gerçek yazdırma gerçekleştirir.
 
-Yazdırılan kadar belgenin uzunluğunu bilinmiyor çalışması başka bir örnektir. Bu durumda, görünüm sınıfı, her bir sayfa yazdırıldığında belgenin sonuna için test eder. Görünüm sınıfını sonuna ulaşıldığında ayarlar `m_bContinuePrinting` üyesi `CPrintInfo` için FALSE; Bu, yazdırma döngü durdurmak için framework bildirir.
+Başka bir örnek, belgenin uzunluğu yazdırılana kadar bilinmez durumda. Bu durumda, bir sayfa her yazdırıldıklarında belgenin sonu için görünüm sınıfı sınanır. Sona ulaşıldığında, görünüm sınıfı üyeyi `m_bContinuePrinting` `CPrintInfo` FALSE olarak ayarlar; bu, yazdırma döngüsyenini durdurmak için çerçeveyi bildirir.
 
-`CPrintInfo` üye işlevleri tarafından kullanılan `CView` listelenen altında "Ayrıca bkz." Microsoft Foundation Class Kitaplığı tarafından sağlanan yazdırma mimarisi hakkında daha fazla bilgi için bkz: [çerçeve Windows](../../mfc/frame-windows.md) ve [belge/görünüm mimarisi](../../mfc/document-view-architecture.md) ve makaleleri [ Yazdırma](../../mfc/printing.md) ve [yazdırma: Birden fazla belge](../../mfc/multipage-documents.md).
+`CPrintInfo`altında `CView` listelenen üye işlevler tarafından kullanılır "Ayrıca bakınız." Microsoft Foundation Class Kitaplığı tarafından sağlanan yazdırma mimarisi hakkında daha fazla bilgi için Bkz. [Çerçeve Windows](../../mfc/frame-windows.md) ve [Belge/Görünüm Mimarisi](../../mfc/document-view-architecture.md) ve Yazdırma ve [Yazdırma](../../mfc/printing.md) [makaleleri: Çok Sayfalı Belgeler.](../../mfc/multipage-documents.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -75,11 +75,11 @@ Yazdırılan kadar belgenin uzunluğunu bilinmiyor çalışması başka bir örn
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxext.h
+**Üstbilgi:** afxext.h
 
-##  <a name="getfrompage"></a>  CPrintInfo::GetFromPage
+## <a name="cprintinfogetfrompage"></a><a name="getfrompage"></a>CPrintInfo::GetFromPage
 
-Yazdırılacak ilk sayfa sayısını almak için bu işlevi çağırın.
+Yazdırılacak ilk sayfanın numarasını almak için bu işlevi arayın.
 
 ```
 UINT GetFromPage() const;
@@ -87,15 +87,15 @@ UINT GetFromPage() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazdırılacak ilk sayfa numarası.
+Yazdırılacak ilk sayfanın numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yazdır iletişim kutusu kullanıcı tarafından belirtilen değere budur ve içinde depolanan `CPrintDialog` tarafından başvurulan nesne `m_pPD` üyesi. Kullanıcı bir değere belirtilmemişse, varsayılan belge ilk sayfadır.
+Bu, Kullanıcı tarafından Yazdır iletişim kutusunda belirtilen değerdir ve `CPrintDialog` `m_pPD` üye tarafından başvurulan nesnede depolanır. Kullanıcı bir değer belirtmemişse, varsayılan değer belgenin ilk sayfasıdır.
 
-##  <a name="getmaxpage"></a>  CPrintInfo::GetMaxPage
+## <a name="cprintinfogetmaxpage"></a><a name="getmaxpage"></a>CPrintInfo::GetMaxPage
 
-Belgenin son sayfa numarası almak için bu işlevi çağırın.
+Belgenin son sayfasının numarasını almak için bu işlevi arayın.
 
 ```
 UINT GetMaxPage() const;
@@ -103,15 +103,15 @@ UINT GetMaxPage() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belgenin son sayfa numarası.
+Belgenin son sayfasının numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değer depolanan `CPrintDialog` tarafından başvurulan nesne `m_pPD` üyesi.
+Bu değer `CPrintDialog` `m_pPD` üye tarafından başvurulan nesnede depolanır.
 
-##  <a name="getminpage"></a>  CPrintInfo::GetMinPage
+## <a name="cprintinfogetminpage"></a><a name="getminpage"></a>CPrintInfo::GetMinPage
 
-İlk sayfa belge sayısını almak için bu işlevi çağırın.
+Belgenin ilk sayfasının numarasını almak için bu işlevi arayın.
 
 ```
 UINT GetMinPage() const;
@@ -119,15 +119,15 @@ UINT GetMinPage() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belgenin ilk sayfa numarası.
+Belgenin ilk sayfasının numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değer depolanan `CPrintDialog` tarafından başvurulan nesne `m_pPD` üyesi.
+Bu değer `CPrintDialog` `m_pPD` üye tarafından başvurulan nesnede depolanır.
 
-##  <a name="getoffsetpage"></a>  CPrintInfo::GetOffsetPage
+## <a name="cprintinfogetoffsetpage"></a><a name="getoffsetpage"></a>CPrintInfo::GetOffsetPage
 
-DocObject istemciden birden çok DocObject öğesini yazdırmayı zaman uzaklığını almak için bu işlevi çağırın.
+Bir DocObject istemcisinden birden çok DocObject öğesi yazdırırken ofset almak için bu işlevi çağırın.
 
 ```
 UINT GetOffsetPage() const;
@@ -135,15 +135,15 @@ UINT GetOffsetPage() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk sayfa birleşik DocObject yazdırma işi yazdırılmasını DocObject öğesinin önceki sayfa sayısı.
+Birleştirilmiş DocObject yazdırma işinde yazdırılan Bir DocObject öğesinin ilk sayfasından önceki sayfa sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değer tarafından başvurulan `m_nOffsetPage` üyesi. İlk sayfa belgenizin numaralı `m_nOffsetPage` değeri + diğer etkin belgeler ile DocObject olarak yazdırıldığında 1. `m_nOffsetPage` Üyesidir geçerli yalnızca `m_bDocObject` TRUE değeridir.
+Bu değer `m_nOffsetPage` üye tarafından başvurulan. Belgenizin ilk sayfası, diğer `m_nOffsetPage` etkin belgelerle birlikte DocObject olarak yazdırıldığında + 1 değeri numaralandırılır. `m_nOffsetPage` Üye yalnızca `m_bDocObject` değer TRUE ise geçerlidir.
 
-##  <a name="gettopage"></a>  CPrintInfo::GetToPage
+## <a name="cprintinfogettopage"></a><a name="gettopage"></a>CprintInfo::Gettopage
 
-Yazdırılacak son sayfa numarası almak için bu işlevi çağırın.
+Yazdırılacak son sayfanın numarasını almak için bu işlevi arayın.
 
 ```
 UINT GetToPage() const;
@@ -151,55 +151,55 @@ UINT GetToPage() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazdırılacak son sayfa numarası.
+Yazdırılacak son sayfanın numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yazdır iletişim kutusu kullanıcı tarafından belirtilen değere budur ve içinde depolanan `CPrintDialog` tarafından başvurulan nesne `m_pPD` üyesi. Kullanıcı bir değer belirtmediyse varsayılan belgenin son sayfasıdır.
+Bu, Kullanıcı tarafından Yazdır iletişim kutusunda belirtilen değerdir ve `CPrintDialog` `m_pPD` üye tarafından başvurulan nesnede depolanır. Kullanıcı bir değer belirtmemişse, varsayılan değer belgenin son sayfasıdır.
 
-##  <a name="m_bcontinueprinting"></a>  CPrintInfo::m_bContinuePrinting
+## <a name="cprintinfom_bcontinueprinting"></a><a name="m_bcontinueprinting"></a>CPrintInfo::m_bContinuePrinting
 
-Framework yazdırma döngü devam olup olmadığını belirten bir bayrak içerir.
-
-### <a name="remarks"></a>Açıklamalar
-
-Yazdırma zamanı sayfalandırma yapıyorsanız, FALSE geçersiz kılma için bu üye ayarlayabilirsiniz `CView::OnPrepareDC` sonra belgenin sonuna ulaşıldı. Belge yazdırma işi kullanarak başında uzunluğunu belirttiyseniz, bu değişkeni değiştirmek zorunda değilsiniz `SetMaxPage` üye işlevi. `m_bContinuePrinting` Üye BOOL türü genel değişkenidir.
-
-##  <a name="m_bdirect"></a>  CPrintInfo::m_bDirect
-
-Framework doğrudan yazdırma için yazdırma iletişim kutusu atlanır, bu üye TRUE olarak ayarlar; FALSE Aksi takdirde.
+Çerçevenin yazdırma döngüsüne devam edip etmeyeceğini belirten bir bayrak içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yazdır iletişim kabuğu veya ne zaman yazdırmayı yazdırırken normalde atlanır kimliği ID_FILE_PRINT_DIRECT komutunu kullanarak.
+Yazdırma zamanı pagination yapıyorsanız, belgenin sonuna `CView::OnPrepareDC` ulaşıldıktan sonra geçersiz kılmada bu üyeyi FALSE olarak ayarlayabilirsiniz. `SetMaxPage` Üye işlevi kullanarak yazdırma işinin başında belgenin uzunluğunu belirttiyseniz, bu değişkeni değiştirmeniz gerekmez. `m_bContinuePrinting` Üye, BOOL türünün ortak değişkenidir.
 
-Normalde bu üye değiştirmez ancak siz, bunu önce çağrı değiştirirseniz [CView::DoPreparePrinting](../../mfc/reference/cview-class.md#doprepareprinting) kılacağınızı içinde [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting).
+## <a name="cprintinfom_bdirect"></a><a name="m_bdirect"></a>CPrintInfo::m_bDirect
 
-##  <a name="m_bdocobject"></a>  CPrintInfo::m_bDocObject
-
-Belgenin yazdırılmasını DocObject olup olmadığını belirten bir bayrak içerir.
+Print iletişim kutusu doğrudan yazdırma için atlanacaksa, çerçeve bu üyeyi TRUE olarak ayarlar; YANLIŞ aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri üyeleri `m_dwFlags` ve `m_nOffsetPage` bu bayrağı TRUE olmadıkça geçersizdir.
+Yazdırma iletişim kutusu, kabuktan yazdırDığınızda veya komut kimliği ID_FILE_PRINT_DIRECT kullanarak yazdırma yapıldığında normalde atlanır.
 
-##  <a name="m_bpreview"></a>  CPrintInfo::m_bPreview
+Normalde bu üyeyi değiştirmezsiniz, ancak değiştirirseniz, [CView::DoPreparePrinting'i](../../mfc/reference/cview-class.md#doprepareprinting) [cview::OnPreparePrinting'i](../../mfc/reference/cview-class.md#onprepareprinting)aramadan önce değiştirin.
 
-Belge önizlemesi olup olmadığını belirten bir bayrak içerir.
+## <a name="cprintinfom_bdocobject"></a><a name="m_bdocobject"></a>CPrintInfo::m_bDocObject
 
-### <a name="remarks"></a>Açıklamalar
-
-Bu komut kullanıcının bağlı olarak yürütüldüğü framework tarafından ayarlanır. Yazdır iletişim kutusu için bir baskı önizleme işi görüntülenmez. `m_bPreview` Üye BOOL türü genel değişkenidir.
-
-##  <a name="m_dwflags"></a>  CPrintInfo::m_dwFlags
-
-DocObject yazdırma işlemleri belirten bayrak birleşimini içerir.
+Yazdırılan belgenin DocObject olup olmadığını belirten bir bayrak içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca şu durumlarda geçerli veri üyesi `m_bDocObject` true'dur.
+Veri `m_dwFlags` üyeleri `m_nOffsetPage` ve bu bayrak DOĞRU olmadığı sürece geçersizdir.
 
-Bayraklar, bir veya daha fazla aşağıdaki değerlerden biri olabilir:
+## <a name="cprintinfom_bpreview"></a><a name="m_bpreview"></a>CPrintInfo::m_bPreview
+
+Belgenin önizlemesini yapıp olmadığını belirten bir bayrak içerir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu, kullanıcının hangi komutu yürüttüğüne bağlı olarak çerçeve tarafından ayarlanır. Yazdırma iletişim kutusu yazdırma önizleme işi için görüntülenmez. `m_bPreview` Üye, BOOL türünün ortak değişkenidir.
+
+## <a name="cprintinfom_dwflags"></a><a name="m_dwflags"></a>CPrintInfo::m_dwFlags
+
+DocObject yazdırma işlemlerini belirten bayrakların birleşimini içerir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Yalnızca veri üyesi `m_bDocObject` TRUE ise geçerlidir.
+
+Bayraklar aşağıdaki değerlerden biri veya birkaçı olabilir:
 
 - PRINTFLAG_MAYBOTHERUSER
 
@@ -215,71 +215,71 @@ Bayraklar, bir veya daha fazla aşağıdaki değerlerden biri olabilir:
 
 - PRINTFLAG_PRINTTOFILE
 
-##  <a name="m_lpuserdata"></a>  CPrintInfo::m_lpUserData
+## <a name="cprintinfom_lpuserdata"></a><a name="m_lpuserdata"></a>CPrintInfo::m_lpUserData
 
-Kullanıcı tarafından oluşturulan bir yapıya bir işaretçi içerir.
-
-### <a name="remarks"></a>Açıklamalar
-
-Bu görünüm Sınıfınız içinde depolamak istemediğiniz yazdırma özgü verileri depolamak için kullanabilirsiniz. `m_lpUserData` Üye LPVOID türü genel değişkenidir.
-
-##  <a name="m_ncurpage"></a>  CPrintInfo::m_nCurPage
-
-Geçerli sayfa numarası içerir.
+Kullanıcı tarafından oluşturulan yapıiçin bir işaretçi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework çağrıları `CView::OnPrepareDC` ve `CView::OnPrint` değerlerinin her zaman; bu üye için farklı bir değer belirterek bu belgenin her sayfa için bir kez aralığı tarafından döndürülen değerin `GetFromPage` tarafından döndürülen için `GetToPage`. Bu üye, geçersiz kılmalarda kullanın `CView::OnPrepareDC` ve `CView::OnPrint` belgenin belirtilen sayfasını yazdırmak için.
+Bunu, görünüm sınıfınızda depolamak istemediğiniz yazdırmaya özgü verileri depolamak için kullanabilirsiniz. `m_lpUserData` Üye, LPVOID türünün ortak değişkenidir.
 
-Önizleme modunu ilk kez çağrıldığında, çerçeve belgenin hangi sayfası başlangıçta önizlemesi belirlemek için bu üyenin değerini okur. Bu üyenin değeri geçersiz kılmada ayarlayabilirsiniz `CView::OnPreparePrinting` Önizleme modunu girerken kullanıcının geçerli konumun belgenin korumak için. `m_nCurPage` Üye UINT türü genel değişkenidir.
+## <a name="cprintinfom_ncurpage"></a><a name="m_ncurpage"></a>CPrintInfo::m_nCurPage
 
-##  <a name="m_njobnumber"></a>  CPrintInfo::m_nJobNumber
-
-Geçerli yazdırma işi için işletim sistemi tarafından atanan işi sayıyı belirtir.
+Geçerli sayfanın numarasını içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşi henüz çıkarırsa henüz bu değer SP_ERROR olabilir (diğer bir deyişle, `CPrintInfo` nesne yeni oluşturulur ve henüz yazdırmak için kullanılmamış), veya bir hata olduğunda iş başlatmadaki.
+Çerçeve çağrıları `CView::OnPrepareDC` `CView::OnPrint` ve belgenin her sayfası için bir kez, bu üye için her zaman farklı bir değer belirten; değerleri tarafından `GetFromPage` döndürülen değerden döndürülen `GetToPage`değere kadar değişmektedir. Bu üyeyi `CView::OnPrepareDC` geçersiz kılmalarınızda ve `CView::OnPrint` belgenin belirtilen sayfasını yazdırmak için kullanın.
 
-##  <a name="m_nnumpreviewpages"></a>  CPrintInfo::m_nNumPreviewPages
+Önizleme modu ilk çağrıldığınızda, çerçeve belgenin hangi sayfasının başlangıçta önizlemesi gerektiğini belirlemek için bu üyenin değerini okur. Önizleme moduna girerken kullanıcının belgedeki `CView::OnPreparePrinting` geçerli konumunu korumak için bu üyenin değerini geçersiz kılmanızda ayarlayabilirsiniz. `m_nCurPage` Üye, UINT türünün ortak değişkenidir.
 
-Önizleme modunda görüntülenen sayfa sayısını içerir. 1 veya 2 olabilir.
+## <a name="cprintinfom_njobnumber"></a><a name="m_njobnumber"></a>CPrintInfo::m_nJobNumber
 
-### <a name="remarks"></a>Açıklamalar
-
-`m_nNumPreviewPages` Üye UINT türü genel değişkenidir.
-
-##  <a name="m_noffsetpage"></a>  CPrintInfo::m_nOffsetPage
-
-Birleşik DocObject yazdırma işi DocObject belirli'nın ilk sayfasında önceki sayfa sayısını içerir.
-
-##  <a name="m_ppd"></a>  CPrintInfo::m_pPD
-
-Bir işaretçi içeren `CPrintDialog` yazdırma işinin yazdırma iletişim kutusunu görüntülemek için kullanılan nesne.
+Geçerli yazdırma işi için işletim sistemi tarafından atanan iş numarasını gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_pPD` Üyesi olan bir işaretçi olarak bildirilen bir genel değişken `CPrintDialog`.
+Bu değer, iş henüz yazdırılmamışsa (diğer bir deyişle, `CPrintInfo` nesne yeni oluşturulmuşsa ve henüz yazdırmak için kullanılmamışsa) veya işi başlatmada bir hata varsa SP_ERROR olabilir.
 
-##  <a name="m_rectdraw"></a>  CPrintInfo::m_rectDraw
+## <a name="cprintinfom_nnumpreviewpages"></a><a name="m_nnumpreviewpages"></a>CPrintInfo::m_nNumPreviewPages
 
-Sayfa kullanılabilir çizim alanı mantıksal koordinatlarını belirtir.
-
-### <a name="remarks"></a>Açıklamalar
-
-Bu geçersiz kılmada başvurmak isteyebilirsiniz `CView::OnPrint`. Bu üye, üstbilgiler, altbilgiler ve benzeri yazdırdıktan sonra hangi alan kullanılabilir kalır izlemek için kullanabilirsiniz. `m_rectDraw` Üye türü genel değişkenidir `CRect`.
-
-##  <a name="m_strpagedesc"></a>  CPrintInfo::m_strPageDesc
-
-Baskı Önizleme sırasında sayfa numaralarını göstermek için kullanılan biçim dizesi içerir. Bu dize, iki alt dizeler, tek tek sayfa görüntüleme için ve biri için iki sayfa görüntüleme, her bir '\n' karakteriyle bitmelidir oluşur.
+Önizleme modunda görüntülenen sayfa sayısını içerir; 1 veya 2 olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, varsayılan değer olarak "Sayfası %u\nPages % u-%u\n" kullanır. Sayfa sayıları farklı bir biçim isterseniz geçersiz kılmada bir biçim dizesi belirtin `CView::OnPreparePrinting`. `m_strPageDesc` Üye türü genel değişkenidir `CString`.
+`m_nNumPreviewPages` Üye, UINT türünün ortak değişkenidir.
 
-##  <a name="setmaxpage"></a>  CPrintInfo::SetMaxPage
+## <a name="cprintinfom_noffsetpage"></a><a name="m_noffsetpage"></a>CPrintInfo::m_nOffsetPage
 
-Belgenin son sayfa numarası belirtmek için bu işlevi çağırın.
+Birleştirilmiş DocObject yazdırma işinde belirli bir DocObject'in ilk sayfasından önceki sayfa sayısını içerir.
+
+## <a name="cprintinfom_ppd"></a><a name="m_ppd"></a>CPrintInfo::m_pPD
+
+Yazdırma işi için `CPrintDialog` Yazdır iletişim kutusunu görüntülemek için kullanılan nesneye bir işaretçi içerir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Üye, `m_pPD` `CPrintDialog`işaretçi olarak bildirilen genel bir değişkendir.
+
+## <a name="cprintinfom_rectdraw"></a><a name="m_rectdraw"></a>CPrintInfo::m_rectDraw
+
+Sayfanın kullanılabilir çizim alanını mantıksal koordinatlarla belirtir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu sizin geçersiz kılma başvurmak isteyebilirsiniz `CView::OnPrint`. Üstbilgi, altbilgi ve benzeri yazdırdıktan sonra hangi alanın kullanılabilir kaldığını izlemek için bu üyeyi kullanabilirsiniz. Üye, `m_rectDraw` genel bir tür `CRect`değişkenidir.
+
+## <a name="cprintinfom_strpagedesc"></a><a name="m_strpagedesc"></a>CPrintInfo::m_strPageDesc
+
+Yazdırma önizlemesi sırasında sayfa numaralarını görüntülemek için kullanılan biçim dizesi içerir; bu dize, biri tek sayfalı ekran ve diğeri çift sayfalı ekran için olmak üzere iki alt dizeden oluşur ve her biri '\n' karakteri yle sonlandırılır.
+
+### <a name="remarks"></a>Açıklamalar
+
+Çerçeve varsayılan değer olarak "Sayfa %u\nPages %u-%u\n" kullanır. Sayfa numaraları için farklı bir biçim istiyorsanız, geçersiz kılmanızda `CView::OnPreparePrinting`bir biçim dizesi belirtin. Üye, `m_strPageDesc` genel bir tür `CString`değişkenidir.
+
+## <a name="cprintinfosetmaxpage"></a><a name="setmaxpage"></a>CPrintInfo::SetMaxPage
+
+Belgenin son sayfasının numarasını belirtmek için bu işlevi arayın.
 
 ```
 void SetMaxPage(UINT nMaxPage);
@@ -288,19 +288,19 @@ void SetMaxPage(UINT nMaxPage);
 ### <a name="parameters"></a>Parametreler
 
 *nMaxPage*<br/>
-Belgenin son sayfa numarası.
+Belgenin son sayfasının numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değer depolanan `CPrintDialog` tarafından başvurulan nesne `m_pPD` üyesi. Yazdırmadan önce belgenin uzunluğunu biliniyorsa geçersiz kılma bu işlevi çağırın `CView::OnPreparePrinting`. Belgenin uzunluğunu Yazdır iletişim kutusu kullanıcı tarafından belirtilen bir ayara bağlı olduğu durumlarda geçersiz kılma bu işlevi çağırın `CView::OnBeginPrinting`. Yazdırılan kadar belgenin uzunluğunu bilinmiyor kullanırsanız `m_bContinuePrinting` yazdırma döngüyü denetlemek üzere üyesi.
+Bu değer `CPrintDialog` `m_pPD` üye tarafından başvurulan nesnede depolanır. Belgenin uzunluğu yazdırılmadan önce biliniyorsa, `CView::OnPreparePrinting`geçersiz kılmanızdan bu işlevi arayın. Belgenin uzunluğu Yazdır iletişim kutusunda kullanıcı tarafından belirtilen bir ayara bağlıysa, bu işlevi `CView::OnBeginPrinting`geçersiz kılmanızdan arayın Belgenin uzunluğu yazdırılına kadar bilinmiyorsa, `m_bContinuePrinting` yazdırma döngüsünün denetimini denetlemek için üyeyi kullanın.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting).
+  CView örneğine [bakın::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting).
 
-##  <a name="setminpage"></a>  CPrintInfo::SetMinPage
+## <a name="cprintinfosetminpage"></a><a name="setminpage"></a>CPrintInfo::SetMinPage
 
-İlk sayfa belge sayısını belirtmek için bu işlevi çağırın.
+Belgenin ilk sayfasının numarasını belirtmek için bu işlevi arayın.
 
 ```
 void SetMinPage(UINT nMinPage);
@@ -309,19 +309,19 @@ void SetMinPage(UINT nMinPage);
 ### <a name="parameters"></a>Parametreler
 
 *nMinPage*<br/>
-Belgenin ilk sayfa numarası.
+Belgenin ilk sayfasının numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sayfa numarası, normalde 1'den başlar. Bu değer depolanan `CPrintDialog` tarafından başvurulan nesne `m_pPD` üyesi.
+Sayfa numaraları normalde 1'den başlar. Bu değer `CPrintDialog` `m_pPD` üye tarafından başvurulan nesnede depolanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
+[MFC Örnek DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting)<br/>
 [CView::OnEndPrinting](../../mfc/reference/cview-class.md#onendprinting)<br/>
 [CView::OnEndPrintPreview](../../mfc/reference/cview-class.md#onendprintpreview)<br/>
 [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc)<br/>
 [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting)<br/>
-[CView::OnPrint](../../mfc/reference/cview-class.md#onprint)
+[CView::Onprint](../../mfc/reference/cview-class.md#onprint)

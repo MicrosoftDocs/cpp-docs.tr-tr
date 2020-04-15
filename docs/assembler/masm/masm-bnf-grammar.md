@@ -1,1073 +1,1074 @@
 ---
-title: Microsoft Macro Assembler BNF dilbilgisi
-description: X için MASG 'nin BNF açıklaması.
+title: Microsoft Makro Assembler BNF Dilbilgisi
+description: x64 için MASM BNF açıklaması.
 ms.date: 12/17/2019
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), BNF reference
-ms.openlocfilehash: 1a9577292e60db73838e5e6b850a4634db959fd6
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 738dce66cbae62939c9e001127e542f5b2798fc0
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075459"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81317972"
 ---
-# <a name="microsoft-macro-assembler-bnf-grammar"></a>Microsoft Macro Assembler BNF dilbilgisi
+# <a name="microsoft-macro-assembler-bnf-grammar"></a>Microsoft Makro Assembler BNF Dilbilgisi
 
-Bu sayfa masa dilbilgisinin BNF açıklamasını içerir. Başvuru konularına bir ek olarak sağlanır ve tamamlanmayacakları garanti edilmez. Anahtar sözcükler, parametreler, işlemler vb. hakkında tam bilgi için lütfen başvuru konularına bakın.
+Bu sayfa, MASM dilbilgisi bnf açıklamasını içerir. Bu referans için bir ek olarak sağlanan ve tam olması garanti değildir. Anahtar kelimeler, parametreler, işlemler ve benzeri konularda tam bilgi için başvuruya başvurun.
 
-BNF kullanımını göstermek için aşağıdaki diyagramda, nonterminalsiz *Typedefdir*Ile başlayarak typedef yönergesinin tanımı gösterilmektedir.
+BNF kullanımını göstermek için aşağıdaki diyagram, terminal *`typedefDir`* dışı yönergeden başlayarak TYPEDEF direktifinin tanımını gösterir.
 
-![MASMG BNF örneği](media/bnf.png)
+![MASM BNF Örneği](media/bnf.png)
 
-Her yatay küme ayracın altındaki girdiler ( **NEAR16**, **NEAR32**, **FAR16**ve **FAR32**gibi) veya daha fazla tanımlanabilir terminallerdir ( *niteleyici*, *qualifiedtype*, *Distance*ve *protospec*gibi). *Typedefdir* tanımındaki her bir italik olmayan Terminal, BNF içindeki bir giriştir. Üç dikey nokta, kolaylık sağlaması için, bu şekilde basit olmayan, terminalin bir dal tanımını gösterir.
+Her yatay ayraç altındaki girişler **`NEAR16`**, **`NEAR32`** **`FAR16`**, **`FAR32`**, ve . Ya da, onlar *`qualifier`* gibi olmayan *`qualifiedType`* terminaller konum , , *`distance`*, ve *`protoSpec`* bu daha da tanımlanabilir. Tanımdaki *`typedefDir`* her italik nonterminal de BNF'de bir giriştir. Üç dikey nokta, basitlik uğruna, bu rakam göstermek değildir, terminal olmayan bir dallanma tanımı gösterir.
 
-BNF dilbilgisi özyinelemeli tanımlara izin verir. Örneğin, dilbilgisi, qualifiedtype için olası bir tanım olarak qualifiedType kullanır, bu da niteleyici tanımının bir bileşenidir. "|" Sembolü, örneğin *EndOfLine* | *yorumu*gibi alternatif ifadeler arasında seçim belirtir. Çift küme ayraçları isteğe bağlı bir parametre belirtir, örneğin ⟦ *Macroparmlist* ⟧. Köşeli ayraçlar aslında kaynak kodunda görünmez.
+BNF dilbilgisi özyinelemeli tanımlarsağlar. Örneğin, dilbilgisi, niteliksel type için olası bir tanım olarak qualifiedType kullanır, bu da niteleyici tanımının bir bileşenidir. "|" simgesi, örneğin *`endOfLine`*  |  *`comment`* alternatif ifadeler arasında bir seçim belirtir. Çift ayraçlar isteğe bağlı bir *`macroParmList`* parametre belirtir, örneğin. Köşeli ayraçlar aslında kaynak kodunda görünmez.
 
-## <a name="masm-nonterminals"></a>MASMNONTERMINALLERI
+## <a name="masm-nonterminals"></a>MASM Terminal dışı
 
-*;;* \
-&nbsp;&nbsp;&nbsp;&nbsp;*EndOfLine* | *Açıklama*
+*`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`endOfLine`* | *`comment`*
 
-*= Dir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği* = *immExpr* ;;
+*`=Dir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* = *`immExpr`* *`;;`*
 
-*ADDOP*\
-&nbsp;&nbsp;&nbsp;&nbsp;+ | -
+*`addOp`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`+`** | **`-`**
 
-*Aexpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;*terimi* | *aexpr* && *terimi*
+*`aExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`term`* | *`aExpr`* **`&&`** *`term`*
 
-*Altıd*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
+*`altId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
 
-*aracı*\
-&nbsp;&nbsp;&nbsp;&nbsp;*charlist*
+*`arbitraryText`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`charList`*
 
-*Asminstruction*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Anımsatıcı* ⟦ *exprList* ⟧
+*`asmInstruction`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`mnemonic`* ⟦ *`exprList`* ⟧
 
-*assumeDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**varsay** ; *assumeList*
-&nbsp;&nbsp;&nbsp;| &nbsp;**HIÇBIR şey varsay** ;;
+*`assumeDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ASSUME`** *`assumeList`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ASSUME NOTHING`** *`;;`*
 
-*assumeList*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Assumeregister* | *assumeList* , *assumeregister*\
+*`assumeList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`assumeRegister`* | *`assumeList`* **`,`** *`assumeRegister`*\
 
-*Assumereg*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kayıt* : *assumeVal*
+*`assumeReg`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`register`* **`:`** *`assumeVal`*
 
-*Assumeregister*\
-&nbsp;&nbsp;&nbsp;&nbsp;*assumeSegReg* | *Assumereg*
+*`assumeRegister`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`assumeSegReg`* | *`assumeReg`*
 
-*assumeSegReg*\
-&nbsp;&nbsp;&nbsp;&nbsp;*segmentRegister* : *assumeSegVal*
+*`assumeSegReg`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`segmentRegister`* **`:`** *`assumeSegVal`*
 
-*assumeSegVal*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Frameexpr* | **nothıng** | **hata**
+*`assumeSegVal`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`frameExpr`* | **`NOTHING`** | **`ERROR`**
 
-*assumeVal*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Qualifiedtype* | **nothıng** | **hata**
+*`assumeVal`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`qualifiedType`* | **`NOTHING`** | **`ERROR`**
 
-*bcdConst*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *işareti* ⟧ *decnumber*
+*`bcdConst`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`sign`* ⟧ *`decNumber`*
 
-*BinaryOp*\
-&nbsp;&nbsp;&nbsp;&nbsp;= = |! = | > = | < = | > | < | &
+*`binaryOp`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`==`** | **`!=`** | **`>=`** | **`<=`** | **`>`** | **`<`** | **`&`**
 
-*Bitdef*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Bitfieldıd* : *bitfieldsize* ⟦ = *constExpr* ⟧
+*`bitDef`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`bitFieldId`* **`:`** *`bitFieldSize`* ⟦ **`=`** *`constExpr`* ⟧
 
-*Bitdeflist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Bitdef* | *bitdeflist* , ⟦;; ⟧ *Bitdef*
+*`bitDefList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`bitDef`* | *`bitDefList`* **`,`** ⟦ *`;;`* ⟧ *`bitDef`*
 
-*Bitfieldıd*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
+*`bitFieldId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
 
-*Bitfieldsize*\
-&nbsp;&nbsp;&nbsp;&nbsp;*constExpr*
+*`bitFieldSize`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`constExpr`*
 
-*Blockdeyimlerini*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Directivelist*\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. DEVAM edın** **. IF** *cexpr* ⟧ \ ise
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. BREAK** ⟦ **. If** *cexpr* ⟧
+*`blockStatements`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.CONTINUE`** **`.IF`** *`cExpr`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.BREAK`** ⟦ **`.IF`** *`cExpr`* ⟧
 
-*bool*\
-&nbsp;&nbsp;&nbsp;&nbsp;**TRUE** | **false**
+*`bool`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`TRUE`** | **`FALSE`**
 
-*Byteregister*\
-&nbsp;&nbsp;&nbsp;&nbsp;AL | AH | CL | CH | DL | DH | BL | BH | R8B | R9B | R10B | R11B | R12B | R13B | R14B | R15B
+*`byteRegister`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`AL`** | **`AH`** | **`CL`** | **`CH`** | **`DL`** | **`DH`** | **`BL`** | **`BH`** | **`R8B`** | **`R9B`** | **`R10B`** | **`R11B`** | **`R12B`** | **`R13B`** | **`R14B`** | **`R15B`**
 
-*cexpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Aexpr* | *cexpr* || *aexpr*
+*`cExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`aExpr`* | *`cExpr`* **`||`** *`aExpr`*
 
-*karakter*\
-&nbsp;&nbsp;, satır besleme (10) dışında 0 – 255 aralığında sıra içeren herhangi bir karakter &nbsp;&nbsp;.
+*`character`*\
+&nbsp;&nbsp;&nbsp;&nbsp;Linefeed (10) dışında 0-255 aralığında ordinal olan herhangi bir karakter.
 
-*charlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*karakteri* | *charlist* karakteri
+*`charList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`character`* | *`charList`* *`character`*
 
-*className*\
-&nbsp;&nbsp;&nbsp;&nbsp;*dizesi*
+*`className`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`string`*
 
-*Commdecl*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *yaklaştığında* en çok ⟧ ⟦ *langtype* ⟧ *ID* : *CommType*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦: *constExpr* ⟧
+*`commDecl`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`nearfar`* ⟧ ⟦ *`langType`* ⟧ *`id`* **`:`** *`commType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`:`** *`constExpr`* ⟧
 
-*Commdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**COMM**\
-&nbsp;&nbsp;&nbsp;&nbsp;*Commlist* ;;
+*`commDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`COMM`**\
+&nbsp;&nbsp;&nbsp;&nbsp;*`commList`* *`;;`*
 
-*açıklama*\
-&nbsp;&nbsp;&nbsp;&nbsp;; *metin* ;;
+*`comment`*\
+&nbsp;&nbsp;&nbsp;&nbsp;; *`text`* *`;;`*
 
-*Commentdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Açıklama** *sınırlayıcısı*\
-&nbsp;&nbsp;&nbsp;&nbsp;*metin*\
-&nbsp;&nbsp;&nbsp;&nbsp;*metin* *sınırlayıcı* *metni* ;;
+*`commentDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`COMMENT`** *`delimiter`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`text`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`text`* *`delimiter`* *`text`* *`;;`*
 
-*Commlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*commdecl* | *commlist* , *commdecl*
+*`commList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`commDecl`* | *`commList`* **`,`** *`commDecl`*
 
-*CommType*\
-&nbsp;&nbsp;&nbsp;&nbsp;*türü* | *constExpr*
+*`commType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`type`* | *`constExpr`*
 
-*sabit*\
-&nbsp;&nbsp;&nbsp;&nbsp;*basamaklar* ⟦ *radixoverride* ⟧
+*`constant`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`digits`* ⟦ *`radixOverride`* ⟧
 
-*constExpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Expr*
+*`constExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`expr`*
 
-*Contextdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**PushContext** *contextıtemlist* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;**PopContext** *contextıtemlist* ;;
+*`contextDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`PUSHCONTEXT`** *`contextItemList`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`POPCONTEXT`** *`contextItemList`* *`;;`*
 
-*ContextItem*\
-&nbsp;&nbsp;&nbsp;&nbsp; **, | ** **CPU** ** | ** **listesini** | **varsayar** | 
+*`contextItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ASSUMES`** | **`RADIX`** | **`LISTING`** | **`CPU`** | **`ALL`**
 
-*Contextıtemlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*contextıtem* | *contextıtemlist* , *ContextItem*
+*`contextItemList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`contextItem`* | *`contextItemList`* **`,`** *`contextItem`*
 
-*Controlblock*\
-&nbsp;&nbsp;&nbsp;&nbsp;*whileblock* | *repeatblock*
+*`controlBlock`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`whileBlock`* | *`repeatBlock`*
 
-*Controldir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*controlIf* | *controlblock*
+*`controlDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`controlIf`* | *`controlBlock`*
 
-*Controtalseıf*\
-&nbsp;&nbsp;&nbsp;&nbsp; **. &nbsp;&nbsp;** &nbsp;&nbsp;*cexpr* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*Directivelist* \
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *Controtalseıf* ⟧
+*`controlElseif`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.ELSEIF`** &nbsp;&nbsp;&nbsp;&nbsp;*`cExpr`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`* \
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`controlElseif`* ⟧
 
-*controlIf*\
-&nbsp;&nbsp;&nbsp;&nbsp; **. &nbsp;&nbsp;** &nbsp;&nbsp;*cexpr* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*Directivelist*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *Controtalseıf* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ **. ELSE** ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;[*Directivelist*⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp; **. ENDIF** ;;
+*`controlIf`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.IF`** &nbsp;&nbsp;&nbsp;&nbsp;*`cExpr`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`controlElseif`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`.ELSE`** *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;[*`directiveList`*⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.ENDIF`** *`;;`*
 
-*Eşişlemcisi*\
-&nbsp;&nbsp;&nbsp;&nbsp;. 8087 |. 287 |. 387 |. NO87
+*`coprocessor`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.8087`** | **`.287`** | **`.387`** | **`.NO87`**
 
-*Crefdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Crefoption* ;;
+*`crefDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`crefOption`* *`;;`*
 
-*Crefoption*\
-&nbsp;&nbsp;&nbsp;&nbsp; **. CREF**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. XCREF** ⟦ *ıdlist* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. NOCREF** ⟦ *ıdlist* ⟧
-
-*Cxzexpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;*expr*\
-&nbsp;&nbsp;&nbsp;&nbsp;|! *expr*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Expr* = = Expr \
-&nbsp;&nbsp;&nbsp;&nbsp;| *Expr* ! = Expr
-
-*Datadecl*\
-&nbsp;&nbsp;&nbsp;&nbsp;DB | DW | DD | DF | DQ | DT | *dataType* | *TypeId*
-
-*datadir*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *ID* ⟧ *DataItem* ;;
-
-*dataıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Datadecl* *scalarinstlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Structtag* *structinstlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *TypeId* *structinstlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Uniontag* *structinstlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Recordtag* *recordinstlist*
-
-*veri türü*\
-&nbsp;&nbsp;&nbsp;&nbsp;bayt | SBYTE | SÖZCÜK | SWORD | DWORD | SDWORD | FWORD | QWORD | SQWORD | TBYTE | OKELIME | REAL4 | REAL8 | REAL10 | MMWORD | XMMWORD | YıLKELIME
-
-*decdigit*\
-&nbsp;&nbsp;&nbsp;&nbsp;0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | tuşlarına
-
-*yaprak sayısı*\
-&nbsp;&nbsp;&nbsp;&nbsp;*decdigit*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *yaprak* *döken* sayı
-
-*sınırlayıcı*\
-&nbsp;&nbsp;&nbsp;*boşluk karakteri* hariç tüm karakterleri &nbsp;
-
-*basamaklar*\
-&nbsp;&nbsp;&nbsp;&nbsp;*decdigit*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *basamak* *sayısı*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *basamak* onaltılık
-
-*yönerge*\
-&nbsp;&nbsp;&nbsp;&nbsp;*generaldir* | *segmentDef*
-
-*Directivelist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*yönergesi* | *directivelist* *yönergesi*
-
-*uzaklık*\
-&nbsp;&nbsp;&nbsp;&nbsp;*yaklaştığında* en | **NEAR16** | **NEAR32** | **FAR16** | **FAR32**
-
-*e01*\
-&nbsp;&nbsp;&nbsp;&nbsp;E01 *Orop* *E02* | *E02*
-
-*e02*\
-&nbsp;&nbsp;&nbsp;&nbsp;E02 **ve** *E03* | *E03*
-
-*e03*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Not** *E04* | *E04*
-
-*e04*\
-&nbsp;&nbsp;&nbsp;&nbsp;*E04* *RelOp* *E05* | *E05*
-
-*e05*\
-&nbsp;&nbsp;&nbsp;&nbsp;*E05* *ADDOP* *E06* | *E06*
-
-*e06*\
-&nbsp;&nbsp;&nbsp;&nbsp;*E06* *mulop* *E07* | *E06* *kaydırıcı üst* *E07* | *E07*
-
-*e07*\
-&nbsp;&nbsp;&nbsp;&nbsp;*E07* *ADDOP* *E08* | *E08*
-
-*e08*\
-&nbsp;&nbsp;&nbsp;&nbsp;**yüksek** *E09*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **düşük** *E09*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Highword** *E09*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Lowword** *E09*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *E09*
-
-*e09*\
-&nbsp;&nbsp; **&nbsp;&nbsp;** *E10*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **SEG** *E10*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Lroffset** *E10*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **tür** *E10*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Bu** *E10* | \
-&nbsp;&nbsp;&nbsp;&nbsp;| *E09* **PTR** *E10*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *E09* : *E10*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *E10*
-
-*e10*\
-&nbsp;&nbsp;&nbsp;&nbsp;*E10* . *e11*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *E10* ⟦ *Expr* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;| *E11*
-
-*e11*\
-&nbsp;&nbsp;&nbsp;&nbsp;( *Expr* ) \
-&nbsp;&nbsp;&nbsp;&nbsp;| ⟦ *Expr* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;| **Genişlik** *kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **maske** *kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Boyut** *sizearg*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **SIZEOF** *sizearg*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **uzunluk** *kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **lengthıd** *id*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Recordconst*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *dize*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *sabit*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *tür*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **$**\
-&nbsp;&nbsp;&nbsp;&nbsp;| *segmentRegister*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *kaydet*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **ST**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **St** ( *Expr* )
-
-*yankı dizini*\
-&nbsp;&nbsp;&nbsp;&nbsp;**ECHO**\
-&nbsp;&nbsp;&nbsp;&nbsp;*yönetiliyor Raryıtext* ;; \
-% **,** *yönetiliyor raryıtext* ;; \
-
-*Elseifblock*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Elseifdeyim;* ; \
-&nbsp;&nbsp;&nbsp;&nbsp;*Directivelist*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *Elseifblock* ⟧ \
-
-*Elseifdeyim\*
-&nbsp;&nbsp;&nbsp;&nbsp;**ElseIf** *constExpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFE** *constExpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFB** *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Elseifnb** *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Elseifdef** *kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Elseifndef** *kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Elseifdıf** *textıtem* , *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Elseifdifi** *textıtem* , *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Elseıfidn** *textıtem* , *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Elseifidnı** *textıtem* , *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIF1**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIF2**
-
-*Enddir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**End** ⟦ *immExpr* ⟧;;
-
-*Endpdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*procId* **endp** ;;
-
-*Endsdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği* **bitiyor** ;;
-
-*Equdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Textmacroıd* **eşittir** *equttype* ;;
-
-*Equtürü*\
-&nbsp;&nbsp;&nbsp;&nbsp;*immExpr* | *textliteral*
-
-*Errordir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Erroropt* ;;
-
-*Erroropt*\
-&nbsp;&nbsp;&nbsp;&nbsp; **. ERR** ⟦ *textıtem* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. ERRE** *constExpr* ⟦ *seçenekmetni* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. ERRNZ** *constExpr* ⟦ *seçenekmetni* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. ERRB** *textıtem* ⟦ *seçenekmetni* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. ERRNB** *textıtem* ⟦ *seçenekmetni* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. ERRDEF** *kimliği* ⟦ *seçenekmetni* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. ERRNDEF** *kimliği* ⟦ *seçenekmetni* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. ERRDıF** *textıtem* , *textıtem* ⟦ *seçenekmetni* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. ERRDıFI** *textıtem* , *textıtem* ⟦ *seçenekmetni* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. ERRIDN** *textıtem* , *textıtem* ⟦ *seçenekmetni* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. ERRı** dili *textıtem* , *textıtem* ⟦ *seçenekmetni* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. ERR1** ⟦ *textıtem* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. ERR2** ⟦ *textıtem* ⟧
-
-*Exitdir*\
-&nbsp;&nbsp;&nbsp;&nbsp; **. EXIT** &nbsp;&nbsp;&nbsp;&nbsp;⟦ *Expr* ⟧;;
-
-*Exitmdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;: EXITD | *Exitmtextıtem*
-
-*üs*\
-&nbsp;&nbsp;&nbsp;&nbsp;E ⟦ *Sign* ⟧ *decnumber*
-
-*expr*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Short** *E05*\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. TÜR** E01 \
-&nbsp;&nbsp;&nbsp;&nbsp;| **Opattr** *E01*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *E01*
-
-*exprList*\
-&nbsp;&nbsp;&nbsp;&nbsp;*expr* | *exprList* , *Expr*
-
-*externDef*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *Langtype* ⟧ *ID* ⟦ ( *Altıd* ) ⟧: *externType*
-
-*externDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*externKey* *externList* ;;
-
-*externKey*\
-&nbsp;&nbsp;&nbsp;&nbsp;**EXTRN** | **extern** | **externdef**
-
-*externList*\
-&nbsp;&nbsp;&nbsp;&nbsp;*externDef* | *externList* , ⟦;; ⟧ *externDef*
-
-*externType*\
-&nbsp;&nbsp;&nbsp;&nbsp;**ABS** | *qualifiedtype*
-
-*Fieldalign*\
-&nbsp;&nbsp;&nbsp;&nbsp;*constExpr*
-
-*Fieldinit*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *InitValue* ⟧ | *Structınstance*
-
-*Fieldinitlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Fieldinit* | *Fieldinitlist* , ⟦;; ⟧ *Fieldinit*
-
-*Filechar*\
-&nbsp;&nbsp;&nbsp;&nbsp;*sınırlayıcı*
-
-*Filecharlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*filechar* | *filecharlist* *filechar*
-
-*dosyabelirtimi*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Filecharlist* | *textliteral*
-
-*FlagName*\
-&nbsp;&nbsp; **&nbsp;&nbsp;.** | **mi?** | **taşma mı?** | **imzala?****eşlik  | ?**
-
-*Floatnumarası*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *işareti* ⟧ *decnumber* . ⟦ *Decnumber* ⟧ ⟦ *üs* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;| *rakamlar* R | *basamak* r
-
-*Forcdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**forc** | **IRPC**
-
-*Fordir*\
- | **IRP** **için** &nbsp;&nbsp;&nbsp;&nbsp;
-
-*Forpara*\
-&nbsp;&nbsp;&nbsp;&nbsp;*ID* ⟦: *Forparmtype* ⟧
-
-*Forparmtype*\
-&nbsp;&nbsp;&nbsp;&nbsp;**REQ** | = *Textliteral*
-
-*Fpuregister*\
-&nbsp;&nbsp;&nbsp;&nbsp;**St** *Expr*
-
-*Frameexpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;**SEG** *kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **DGROUP** : *ID*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *segmentRegister* : *ID*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *kimliği*
-
-*generaldir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*modeldir* | *Segorderdir* | *namedir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *ıncludelibdir* | *commentdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Groupdir* | *assumeDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Structdir* | *Recorddir* | *typedefdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *externDir* | *Publicdir* | *Commdir* | *prototypedir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Equdir* | = Dir | *Textdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Contextdir* | *Optiondir* | *processordir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Radixdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Titledir* | *Pagedir* | *listdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Crefdir* | *yankı dizini*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Ifdir* | *Errordir* | *includeDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Macrodir* | makro *çağrısı* | *macroRepeat* *purgeDir* | \
-| *Macroforc* için * | &nbsp;* &nbsp;*macroFor* &nbsp; | &nbsp;\
-&nbsp;&nbsp;&nbsp;&nbsp;| *diğerad dir*
-
-*Gpregister*\
-&nbsp;&nbsp;&nbsp;&nbsp;AX | EAX | CX | ECX | DX | EDX | BX | EBX | DI | EDı | SI | ESI | BP | EBP | SP | ESP | RSP | R8W | R8D | R9W | R9D | R12D | R13W | R13D | R14W | R14D
-
-*Groupdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*GroupID* **grubu** *segIdList*
-
-*GroupID*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
-
-*onaltılık*\
-&nbsp;&nbsp;&nbsp;&nbsp;b | c | d | e | f | A | B | C | D | E | Vadeli
-
-*kimlik*\
-&nbsp;&nbsp;&nbsp;&nbsp;, tanımlayıcının ilk karakteri büyük veya küçük harfli alfabetik bir karakter (`[A–Za-z]`) veya şu dört karakterden herhangi biri olabilir: `@ _ $ ?` kalan karakterler bu karakterlerden herhangi biri veya ondalık basamak olabilir (`[0–9]`). Maksimum uzunluk 247 karakterdir.
-
-*ıdlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği* | *ıdlist* , *ID*
-
-*ıdizinim*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Ifdeyimin* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*Directivelist*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *Elseifblock* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ **Else** ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*Directivelist* ⟧;; \
-
-*Ifdeyim\*
-&nbsp;&nbsp; **&nbsp;&nbsp;** *constExpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **IFE** *constExpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **IFB** *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Ifnb** *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **IFDEF** *kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Ifndef** *kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Ifdıf** *textıtem* , *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Ifdifi** *textıtem* , *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **ıfidn** *textıtem* , *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **ıfidnı** *textıtem* , *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **IF1**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **IF2**
-
-*immExpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Expr*
-
-*includeDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**içerme** *;;*
-
-*ıncludelibdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**ıncludelib** *dosyabelirtimi* ;;
-
-*InitValue*\
-&nbsp;&nbsp;&nbsp;&nbsp;*immExpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *dize*\
-&nbsp;&nbsp;&nbsp;&nbsp;|? \
-&nbsp;&nbsp;&nbsp;&nbsp;| *constExpr* **DUP** ( *scalarinstlist* ) \
-&nbsp;&nbsp;&nbsp;&nbsp;| *Floatnumber*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *bcdConst*
-
-*ınsegdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *Labeldef* ⟧ *inSegmentDir*
-
-*ınsegdirlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*ınsegdir* | *ınsegdirlist* *ınsegdir*
-
-*inSegmentDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*yönerge*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *datadir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Controldir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Startupdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Exitdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *offsetDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Labeldir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *procdir* ⟦ *localdirlist* ⟧ ⟦ *ınsegdirlist* ⟧ *endpdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *ınvokedir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *generaldir*
-
-*ınstrprefix*\
-&nbsp;&nbsp;&nbsp;&nbsp;**REP** | **repe** | **repz** | **repne** | **repnz** | **Lock**
-
-*yönerge*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *ınstrprefix* ⟧ *asminstruction*
-
-*ınvokearg*\
-&nbsp;&nbsp;&nbsp;&nbsp;*register* :: *yazmaç* | *Expr* | **addr** *Expr*
-
-*ınvokedir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Invoke** *Expr* ⟦, ⟦;; ⟧ *ınvokelist* ⟧;;
-
-*ınvokelist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*ınvokearg* | *ınvokelist* , ⟦;; ⟧ *ınvokearg*
-
-*anahtar sözcük*\
-Tüm ayrılmış kelimeyi &nbsp;&nbsp;&nbsp;&nbsp;.
-
-*Keywordlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*anahtar* sözcüğü | *anahtar sözcüğü* *keywordlist*
-
-*Labeldef*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği* : | *kimlik* :: | @@:
-
-*Labeldir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimlik* **etiketi** *qualifiedtype* ;;
-
-*Langtype*\
-&nbsp;&nbsp;&nbsp;&nbsp;**C** | **Pascal** | **FORTRAN** | **temel** | **syscall** | **stdcall**
-
-*Listdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Lidurme* ;;
-
-*\*
-&nbsp;&nbsp;&nbsp;&nbsp; **. LISTE**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. NOLIST**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. XLIST**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. LISTALL**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. LıSTıF**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. LFCOND**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. NOLıSTıF**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. SFCOND**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. TFCOND**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. LISTMAKROALL** |  **. LALL**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. NOLISTMACRO** |  **. SALL**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. LISTMACRO** |  **. XALL**\
-
-*Localdef*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Yerel** *ıdlist* ;;
-
-*yereldir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Yerel** *ParmList* ;;
-
-*Localdirlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*localdir* | *localdirlist* *localdir*
-
-*Locallist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*localdef* | *locallist* *localdef*
-
-*makro bağımsız*\
- % *constExpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;| %*Textmacroıd*\
-&nbsp;&nbsp;&nbsp;&nbsp;| %*Macrofuncıd* ( *makroarglist* ) \
-&nbsp;&nbsp;&nbsp;&nbsp;| *dize*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *yönetiliyor Raryıtext*\
-&nbsp;&nbsp;&nbsp;&nbsp;| < *aracı* >
-
-*Macroarglist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*macroarg* | *macroarglist* , *macroarg*
-
-*makro gövdesi*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *locallist* ⟧ *macrostmtlist*
-
-*makro çağrısı*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimlik* *makroarglist* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;| *kimliği* ( *makroarglist* )
-
-*makro*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimlik* **makrosu** ⟦ *macroparmlist* ⟧;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*makro gövdesi*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Enda** ;;
-
-\ *makrosu*
-&nbsp;&nbsp;&nbsp;&nbsp;*Fordir* *forpard* , < *macroarglist* >;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*makro gövdesi*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Enda** ;;
-
-*Macroforc*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Forcdir* *ID* , *textliteral* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*makro gövdesi*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Enda** ;;
-
-*Macrofuncıd*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
-
-*makro kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Macroprocıd* | *macrofuncıd*
-
-*Macroıdlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*macroıd* | *macroıdlist* , *macroıd*
-
-*makro etiketi*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
-
-*makro*\
-&nbsp;&nbsp;&nbsp;&nbsp;*ID* ⟦: *parmtype* ⟧
-
-*Makroparmlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*macroParm* | *Macroparmlist* , ⟦;; ⟧ *Macropara*
-
-*makro procId*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
-
-*makro yineleme*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Repeatdir* *constExpr* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*makro gövdesi*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Enda** ;;
-
-*Macrostmt*\
-&nbsp;&nbsp;&nbsp;&nbsp;*yönergesi* \
-&nbsp;&nbsp;&nbsp;&nbsp;| *Exitmdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| : *makro etiketi*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **git**\
-&nbsp;&nbsp;&nbsp;&nbsp;*makro etiketi*
-
-*makro Stmtlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Macrostmt* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;| *Macrostmtlist* *makrostmt* ;; \
-
-*makro*\
-&nbsp;&nbsp; **&nbsp;&nbsp;** *constExpr* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*makro gövdesi*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Enda** ;;
-
-*MapType*\
-&nbsp;&nbsp;&nbsp;&nbsp;**tüm** | **yok** | **NotPublic**
-
-*Memoption*\
-&nbsp;&nbsp;&nbsp;&nbsp;**küçük** | **küçük** | **orta** | **Compact** | **büyük | çok büyük** ** | ** **düz**
-
-*anımsatıcı*\
-&nbsp;&nbsp;&nbsp;&nbsp;yönerge adı.
-
-*modeldir*\
-&nbsp;&nbsp;&nbsp;&nbsp; **. MODEL**\
-&nbsp;&nbsp;&nbsp;&nbsp;*Memoption* ⟦, *Modeloplıst* ⟧;;
-
-*Modelopt*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Langtype* | *stackoption*
-
-*Modeloplıst*\
-&nbsp;&nbsp;&nbsp;&nbsp;*modelopt* | *Modeloptlist* , *modelopt*
-
-*modül*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *Directivelist* ⟧ *enddir*
-
-*Mulop*\
-&nbsp;&nbsp;&nbsp;&nbsp;\* | / | **Mod**
-
-*Namedir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**adı**\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği* ;; \
-
-en *yakın*\
-&nbsp;&nbsp;&nbsp;&nbsp;**yakın** | **FAR**
-
-*Nestedstruct*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Structhdr* ⟦ *ID* ⟧;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*Structbody*\
-&nbsp;&nbsp;&nbsp;&nbsp;**bitiyor** ;; \
-
-*offsetDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*offsetDirType* ;;
-
-*offsetDirType*\
-&nbsp;&nbsp;&nbsp;&nbsp;**eşit** | **org** *immExpr* | **ALIGN** ⟦ *constExpr* ⟧
-
-*offsetType*\
-&nbsp;&nbsp;&nbsp;&nbsp;**grup** | **segmenti** | **düz**
-
-*Oldrecordfieldlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *constExpr* ⟧ | *Oldrecordfieldlist* , ⟦ *constExpr* ⟧
-
-*Optiondir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**OPTION** *optionlist* ;;
-
-*Optionıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;**CaseMap** : *MapType*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Dotname** | **nodotname**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **öykünücü** | **noemulator**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Epıg** : *makro kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **EXPR16** | **EXPR32**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **dil** : *langtype*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **LJMP**
-| **NOLJMP**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **M510** | **NOM510**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Noanahtar sözcük** : < *keywordlist* >\
-&nbsp;&nbsp;&nbsp;&nbsp;| **Nosignextend**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **fark** : *offsetType*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **oldmacros** | **nooldmacros**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **oldyapılar** | **nooldyapılar**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **proc** : *ovisibility*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **prolog** : *makro kimliği*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **READONLY** | **noreadonly**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **kapsamlı** | **nokapsamlıdır**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **segment** : *segsize*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **SETIF2** : bool
-
-*seçenek listesi*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Optionıtem* | *optionlist* , ⟦;; ⟧ *Optionıtem*
-
-*Seçenekmetni*\
-&nbsp;&nbsp;&nbsp;&nbsp;, *Textıtem*
-
-*Orop*\
-&nbsp;&nbsp;&nbsp;&nbsp;**veya** | **Xor**
-
-*Ovisibility*\
-&nbsp;&nbsp;&nbsp;&nbsp;**ortak** | **özel** | **dışa aktarma**
-
-*Pagedir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Page** ⟦ *pageexpr* ⟧;;
-
-*Pageexpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;\+ | ⟦ *Pagelength* ⟧ ⟦, *PageWidth* ⟧
-
-*Pagelength*\
-&nbsp;&nbsp;&nbsp;&nbsp;*constExpr*
-
-*PageWidth*\
-&nbsp;&nbsp;&nbsp;&nbsp;*constExpr*
-
-*para*\
-&nbsp;&nbsp;&nbsp;&nbsp;*ParmId* ⟦: *qualifiedtype* ⟧ | *Parmid* ⟦ *constExpr* ⟧ ⟦: *qualifiedtype* ⟧
-
-*Parmid*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
-
-*ParmList*\
-&nbsp;&nbsp;&nbsp;&nbsp;*para* | *ParmList* , ⟦;; ⟧ *para*
-
-*Parmtype*\
-&nbsp;&nbsp;&nbsp;&nbsp;**REQ** | = *Textliteral* | **vararg**
-
-*pOptions*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *uzaklık* ⟧ ⟦ *Langtype* ⟧ ⟦ *ovisibility* ⟧
-
-*birincil*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Expr* *BinaryOp* *Expr* | *FlagName* | *Expr*
-
-*Procdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*procId* **proc**\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *pOptions* ⟧ ⟦ < *macroarglist* > ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *Usesregs* ⟧ ⟦ *Procparmlist* ⟧
-
-*işlemci*\
-&nbsp;&nbsp;&nbsp;&nbsp;|. 386 |. 386p |. 486 |. 486P \
-&nbsp;&nbsp;&nbsp;&nbsp;|. 586 |. 586P |. 686 |. 686P |. 387
-
-*Processordir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*işlemcisi* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;| *Eşişlemcisi* ;;
-
-*procId*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
-
-*Procıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;*ınstrprefix* | *datadir* | *Labeldir* | *offsetDir* | *generaldir*
-
-*Procparmlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦, ⟦;; ⟧ *ParmList* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;⟦, ⟦;; ⟧ *Parmid* : vararg ⟧
-
-*Protoarg*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *ID* ⟧: *qualifiedtype*
-
-*Protoarglist*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦, ⟦;; ⟧ *Protolist* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;⟦, ⟦;; ⟧ ⟦ *ID* ⟧: vararg ⟧
-
-*Protolist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Protodeğişken*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Protolist* , ⟦;; ⟧ *Protoarg*
-
-*Protospec*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *uzaklık* ⟧ ⟦ *Langtype* ⟧ ⟦ *protoarglist* ⟧ | *TypeId*
-
-*Prototypedir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*ID* **proto** *protospec*
-
-*Pubdef*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *Langtype* ⟧ *ID*
-
-*Publicdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**ortak** *publist* ;;
-
-*publist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Pubdef* | *publist* , ⟦;; ⟧ *Pubdef*
-
-*purgeDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;temizlik *makrosunu* **Temizleme**
-
-*Qualifiedtype*\
-&nbsp;&nbsp;&nbsp;&nbsp;*türü* | ⟦ *Distance* ⟧ **PTR** ⟦ *qualifiedtype* ⟧
-
-*niteleyici*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Qualifiedtype* | **proto** *protospec*
-
-*teklif*\
-&nbsp;&nbsp;&nbsp;&nbsp;"| '
-
-*Qwordregister*\
-&nbsp;&nbsp;&nbsp;&nbsp;ÇX | RCX | RDX | RBX | RDı | RSı | RBP | R8 | R9 | R10 | R11 | R12 | R13 | R14 | R15
-
-*Radixdir*\
-&nbsp;&nbsp;&nbsp;&nbsp; **. RADIX** *constExpr* ;;
-
-*Radixoverride*\
-&nbsp;&nbsp;&nbsp;&nbsp;h | o | soru-cevap | t | y | H | O | Soru-cevap | T | Iz
+*`crefOption`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.CREF`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.XCREF`**  ⟦ *`idList`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.NOCREF`** ⟦ *`idList`* ⟧
+
+*`cxzExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`expr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`!`** *`expr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`expr`* **`==`** *`expr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`expr`* **`!=`** *`expr`*
+
+*`dataDecl`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`DB`** | **`DW`** | **`DD`** | **`DF`** | **`DQ`** | **`DT`** | *`dataType`* | *`typeId`*
+
+*`dataDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`id`* ⟧ *`dataItem`* *`;;`*
+
+*`dataItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`dataDecl`* *`scalarInstList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`structTag`* *`structInstList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`typeId`* *`structInstList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`unionTag`* *`structInstList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`recordTag`* *`recordInstList`*
+
+*`dataType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`BYTE`** | **`SBYTE`** | **`WORD`** | **`SWORD`** | **`DWORD`** | **`SDWORD`** | **`FWORD`** | **`QWORD`** | **`SQWORD`** | **`TBYTE`** | **`OWORD`** | **`REAL4`** | **`REAL8`** | **`REAL10`** | **`MMWORD`** | **`XMMWORD`** | **`YMMWORD`**
+
+*`decdigit`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`0`** | **`1`** | **`2`** | **`3`** | **`4`** | **`5`** | **`6`** | **`7`** | **`8`** | **`9`**
+
+*`decNumber`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`decdigit`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`decNumber`* *`decdigit`*
+
+*`delimiter`*\
+&nbsp;&nbsp;&nbsp;&nbsp;Herhangi bir karakter dışında*`whiteSpaceCharacter`*
+
+*`digits`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`decdigit`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`digits`* *`decdigit`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`digits`* *`hexdigit`*
+
+*`directive`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`generalDir`* | *`segmentDef`*
+
+*`directiveList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`directive`* | *`directiveList`* *`directive`*
+
+*`distance`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`nearfar`* | **`NEAR16`** | **`NEAR32`** | **`FAR16`** | **`FAR32`**
+
+*`e01`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`e01`* *`orOp`* *`e02`* | *`e02`*
+
+*`e02`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`e02`* **`AND`** *`e03`* | *`e03`*
+
+*`e03`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`NOT`** *`e04`* | *`e04`*
+
+*`e04`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`e04`* *`relOp`* *`e05`* | *`e05`*
+
+*`e05`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`e05`* *`addOp`* *`e06`* | *`e06`*
+
+*`e06`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`e06`* *`mulOp`* *`e07`* | *`e06`* *`shiftOp`* *`e07`* | *`e07`*
+
+*`e07`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`e07`* *`addOp`* *`e08`* | *`e08`*
+
+*`e08`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`HIGH`** *`e09`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`LOW`** *`e09`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`HIGHWORD`** *`e09`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`LOWWORD`** *`e09`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`e09`*
+
+*`e09`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`OFFSET`** *`e10`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`SEG`** *`e10`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`LROFFSET`** *`e10`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`TYPE`** *`e10`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`THIS`** *`e10`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`e09`* **`PTR`** *`e10`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`e09`* **`:`** *`e10`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`e10`*
+
+*`e10`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`e10`* **`.`** *`e11`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`e10`* ⟦ *`expr`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`e11`*
+
+*`e11`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`(`** *`expr`* **`)`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| ⟦ *`expr`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`WIDTH`** *`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`MASK`** *`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`SIZE`** *`sizeArg`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`SIZEOF`** *`sizeArg`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`LENGTH`** *`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`LENGTHOF`** *`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`recordConst`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`string`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`constant`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`type`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`$`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`segmentRegister`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`register`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ST`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ST`** **`(`** *`expr`* **`)`**
+
+*`echoDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ECHO`**\
+&nbsp;&nbsp;&nbsp;&nbsp;*`arbitraryText`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`%OUT`** *`arbitraryText`* *`;;`*
+
+*`elseifBlock`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`elseifStatement`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`elseifBlock`* ⟧
+
+*`elseifStatement`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ELSEIF`** *`constExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFE`** *`constExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFB`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFNB`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFDEF`** *`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFNDEF`** *`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFDIF`** *`textItem`* **`,`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFDIFI`** *`textItem`* **`,`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFIDN`** *`textItem`* **`,`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFIDNI`** *`textItem`* **`,`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIF1`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIF2`**
+
+*`endDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`END`** ⟦ *`immExpr`* ⟧ *`;;`*
+
+*`endpDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`procId`* **`ENDP`** *`;;`*
+
+*`endsDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* **`ENDS`** *`;;`*
+
+*`equDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`textMacroId`* **`EQU`** *`equType`* *`;;`*
+
+*`equType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`immExpr`* | *`textLiteral`*
+
+*`errorDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`errorOpt`* *`;;`*
+
+*`errorOpt`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.ERR`** ⟦ *`textItem`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRE`** *`constExpr`* ⟦ *`optText`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRNZ`** *`constExpr`* ⟦ *`optText`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRB`** *`textItem`* ⟦ *`optText`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRNB`** *`textItem`* ⟦ *`optText`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRDEF`** *`id`* ⟦ *`optText`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRNDEF`** *`id`* ⟦ *`optText`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRDIF`** *`textItem`* **`,`** *`textItem`* ⟦ *`optText`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRDIFI`** *`textItem`* **`,`** *`textItem`* ⟦ *`optText`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRIDN`** *`textItem`* **`,`** *`textItem`* ⟦ *`optText`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRIDNI`** *`textItem`* **`,`** *`textItem`* ⟦ *`optText`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERR1`** ⟦ *`textItem`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERR2`** ⟦ *`textItem`* ⟧
+
+*`exitDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.EXIT`** &nbsp;&nbsp;&nbsp;&nbsp;⟦ *`expr`* ⟧ *`;;`*
+
+*`exitmDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;: **`EXITM`** | **`EXITM`** *`textItem`*
+
+*`exponent`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`E`** ⟦ *`sign`* ⟧ *`decNumber`*
+
+*`expr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`SHORT`** *`e05`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.TYPE`** *`e01`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`OPATTR`** *`e01`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`e01`*
+
+*`exprList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`expr`* | *`exprList`* **`,`** *`expr`*
+
+*`externDef`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`langType`* ⟧ *`id`* ⟦ **`(`** *`altId`* **`)`** ⟧ **`:`** *`externType`*
+
+*`externDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`externKey`* *`externList`* *`;;`*
+
+*`externKey`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`EXTRN`** | **`EXTERN`** | **`EXTERNDEF`**
+
+*`externList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`externDef`* | *`externList`* **`,`** ⟦ *`;;`* ⟧ *`externDef`*
+
+*`externType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ABS`** | *`qualifiedType`*
+
+*`fieldAlign`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`constExpr`*
+
+*`fieldInit`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`initValue`* ⟧ | *`structInstance`*
+
+*`fieldInitList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`fieldInit`* | *`fieldInitList`* **`,`** ⟦ *`;;`* ⟧ *`fieldInit`*
+
+*`fileChar`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`delimiter`*
+
+*`fileCharList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`fileChar`* | *`fileCharList`* *`fileChar`*
+
+*`fileSpec`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`fileCharList`* | *`textLiteral`*
+
+*`flagName`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ZERO?`** | **`CARRY?`** | **`OVERFLOW?`** | **`SIGN?`** | **`PARITY?`**
+
+*`floatNumber`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`sign`* ⟧ *`decNumber`* **`.`** ⟦ *`decNumber`* ⟧ ⟦ *`exponent`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`digits`* **`R`** | *`digits`* **`r`**
+
+*`forcDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`FORC`** | **`IRPC`**
+
+*`forDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`FOR`** | **`IRP`**
+
+*`forParm`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* ⟦ **`:`** *`forParmType`* ⟧
+
+*`forParmType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`REQ`** | **`=`** *`textLiteral`*
+
+*`fpuRegister`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ST`** *`expr`*
+
+*`frameExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`SEG`** *`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`DGROUP`** **`:`** *`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`segmentRegister`* **`:`** *`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`id`*
+
+*`generalDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`modelDir`* | *`segOrderDir`* | *`nameDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`includeLibDir`* | *`commentDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`groupDir`* | *`assumeDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`structDir`* | *`recordDir`* | *`typedefDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`externDir`* | *`publicDir`* | *`commDir`* | *`protoTypeDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`equDir`* | *`=Dir`* | *`textDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`contextDir`* | *`optionDir`* | *`processorDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`radixDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`titleDir`* | *`pageDir`* | *`listDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`crefDir`* | *`echoDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`ifDir`* | *`errorDir`* | *`includeDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`macroDir`* | *`macroCall`* | *`macroRepeat`* | *`purgeDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`macroWhile`* | *`macroFor`* | *`macroForc`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`aliasDir`*
+
+*`gpRegister`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`AX`** | **`EAX`** | **`CX`** | **`ECX`** | **`DX`** | **`EDX`** | **`BX`** | **`EBX`** | **`DI`** | **`EDI`** | **`SI`** | **`ESI`** | **`BP`** | **`EBP`** | **`SP`** | **`ESP`** | **`RSP`** | **`R8W`** | **`R8D`** | **`R9W`** | **`R9D`** | **`R12D`** | **`R13W`** | **`R13D`** | **`R14W`** | **`R14D`**
+
+*`groupDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`groupId`* **`GROUP`** *`segIdList`*
+
+*`groupId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+
+*`hexdigit`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`a`** | **`b`** | **`c`** | **`d`** | **`e`** | **`f`** | **`A`** | **`B`** | **`C`** | **`D`** | **`E`** | **`F`**
+
+*`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;Tanımlayıcının ilk karakteri büyük veya küçük harfalfabetik bir karakter`[A–Za-z]`( ) veya bu dört `@ _ $ ?` karakterden biri olabilir: Kalan karakterler aynı karakterlerden herhangi`[0–9]`biri veya ondalık basamak ( ) olabilir. Maksimum uzunluk 247 karakterdir.
+
+*`idList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* | *`idList`* **`,`** *`id`*
+
+*`ifDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`ifStatement`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`elseifBlock`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`ELSE`** *`;;`* \
+&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`* ⟧ *`;;`*
+
+*`ifStatement`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`IF`** *`constExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`IFE`** *`constExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`IFB`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`IFNB`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`IFDEF`** *`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`IFNDEF`** *`id`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`IFDIF`** *`textItem`* **`,`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`IFDIFI`** *`textItem`* **`,`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`IFIDN`** *`textItem`* **`,`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`IFIDNI`** *`textItem`* **`,`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`IF1`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`IF2`**
+
+*`immExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`expr`*
+
+*`includeDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`INCLUDE`** *`fileSpec`* *`;;`*
+
+*`includeLibDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`INCLUDELIB`** *`fileSpec`* *`;;`*
+
+*`initValue`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`immExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`string`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`?`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`constExpr`* **`DUP`** ( *`scalarInstList`* )\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`floatNumber`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`bcdConst`*
+
+*`inSegDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`labelDef`* ⟧ *`inSegmentDir`*
+
+*`inSegDirList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`inSegDir`* | *`inSegDirList`* *`inSegDir`*
+
+*`inSegmentDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`instruction`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`dataDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`controlDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`startupDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`exitDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`offsetDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`labelDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`procDir`* ⟦ *`localDirList`* ⟧ ⟦ *`inSegDirList`* ⟧ *`endpDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`invokeDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`generalDir`*
+
+*`instrPrefix`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`REP`** | **`REPE`** | **`REPZ`** | **`REPNE`** | **`REPNZ`** | **`LOCK`**
+
+*`instruction`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`instrPrefix`* ⟧ *`asmInstruction`*
+
+*`invokeArg`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`register`* **`::`** *`register`* | *`expr`* | **`ADDR`** *`expr`*
+
+*`invokeDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`INVOKE`** *`expr`* ⟦ **`,`** ⟦ *`;;`* ⟧ *`invokeList`* ⟧ *`;;`*
+
+*`invokeList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`invokeArg`* | *`invokeList`* **`,`** ⟦ *`;;`* ⟧ *`invokeArg`*
+
+*`keyword`*\
+&nbsp;&nbsp;&nbsp;&nbsp;Herhangi bir ayrılmış kelime.
+
+*`keywordList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`keyword`* | *`keyword`* *`keywordList`*
+
+*`labelDef`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* **`:`** | *`id`* **`::`** | **`@@:`**
+
+*`labelDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* **`LABEL`** *`qualifiedType`* *`;;`*
+
+*`langType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`C`** | **`PASCAL`** | **`FORTRAN`** | **`BASIC`** | **`SYSCALL`** | **`STDCALL`**
+
+*`listDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`listOption`* *`;;`*
+
+*`listOption`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.LIST`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.NOLIST`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.XLIST`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.LISTALL`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.LISTIF`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.LFCOND`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.NOLISTIF`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.SFCOND`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.TFCOND`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.LISTMACROALL`** | **`.LALL`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.NOLISTMACRO`** | **`.SALL`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.LISTMACRO`** | **`.XALL`**
+
+*`localDef`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`LOCAL`** *`idList`* *`;;`*
+
+*`localDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`LOCAL`** *`parmList`* *`;;`*
+
+*`localDirList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`localDir`* | *`localDirList`* *`localDir`*
+
+*`localList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`localDef`* | *`localList`* *`localDef`*
+
+*`macroArg`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`%`** *`constExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`%`** *`textMacroId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`%`** *`macroFuncId`* **`(`** *`macroArgList`* **`)`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`string`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`arbitraryText`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`<`** *`arbitraryText`* **`>`**
+
+*`macroArgList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`macroArg`* | *`macroArgList`* **`,`** *`macroArg`*
+
+*`macroBody`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`localList`* ⟧ *`macroStmtList`*
+
+*`macroCall`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* *`macroArgList`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`id`* ( *`macroArgList`* )
+
+*`macroDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* **`MACRO`** ⟦ *`macroParmList`* ⟧ *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`macroBody`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ENDM`** *`;;`*
+
+*`macroFor`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`forDir`* *`forParm`* **`,`** **`<`** *`macroArgList`* **`>`** *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`macroBody`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ENDM`** *`;;`*
+
+*`macroForc`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`forcDir`* *`id`* **`,`** *`textLiteral`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`macroBody`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ENDM`** *`;;`*
+
+*`macroFuncId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+
+*`macroId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`macroProcId`* | *`macroFuncId`*
+
+*`macroIdList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`macroId`* | *`macroIdList`* **`,`** *`macroId`*
+
+*`macroLabel`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+
+*`macroParm`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* ⟦ **`:`** *`parmType`* ⟧
+
+*`macroParmList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`macroParm`* | *`macroParmList`* **`,`** ⟦ *`;;`* ⟧ *`macroParm`*
+
+*`macroProcId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+
+*`macroRepeat`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`repeatDir`* *`constExpr`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`macroBody`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ENDM`** *`;;`*
+
+*`macroStmt`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`directive`* \
+&nbsp;&nbsp;&nbsp;&nbsp;| *`exitmDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`:`** *`macroLabel`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`GOTO`** *`macroLabel`*
+
+*`macroStmtList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`macroStmt`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`macroStmtList`* *`macroStmt`* *`;;`*\
+
+*`macroWhile`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`WHILE`** *`constExpr`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`macroBody`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ENDM`** *`;;`*
+
+*`mapType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ALL`** | **`NONE`** | **`NOTPUBLIC`**
+
+*`memOption`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`TINY`** | **`SMALL`** | **`MEDIUM`** | **`COMPACT`** | **`LARGE`** | **`HUGE`** | **`FLAT`**
+
+*`mnemonic`*\
+&nbsp;&nbsp;&nbsp;&nbsp;Talimat adı.
+
+*`modelDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.MODEL`**\
+&nbsp;&nbsp;&nbsp;&nbsp;*`memOption`* ⟦ **`,`** *`modelOptlist`* ⟧ *`;;`*
+
+*`modelOpt`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`langType`* | *`stackOption`*
+
+*`modelOptlist`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`modelOpt`* | *`modelOptlist`* **`,`** *`modelOpt`*
+
+*`module`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`directiveList`* ⟧ *`endDir`*
+
+*`mulOp`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`*`** | **`/`** | **`MOD`**
+
+*`nameDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`NAME`**\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* *`;;`*
+
+*`nearfar`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`NEAR`** | **`FAR`**
+
+*`nestedStruct`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`structHdr`* ⟦ *`id`* ⟧ *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`structBody`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ENDS`** *`;;`*
+
+*`offsetDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`offsetDirType`* *`;;`*
+
+*`offsetDirType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`EVEN`** | **`ORG`** *`immExpr`* | **`ALIGN`** ⟦ *`constExpr`* ⟧
+
+*`offsetType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`GROUP`** | **`SEGMENT`** | **`FLAT`**
+
+*`oldRecordFieldList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`constExpr`* ⟧ | *`oldRecordFieldList`* **`,`** ⟦ *`constExpr`* ⟧
+
+*`optionDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`OPTION`** *`optionList`* *`;;`*
+
+*`optionItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`CASEMAP`** : *`mapType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`DOTNAME`** | **`NODOTNAME`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`EMULATOR`** | **`NOEMULATOR`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`EPILOGUE`** **`:`** *`macroId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`EXPR16`** | **`EXPR32`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`LANGUAGE`** **`:`** *`langType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`LJMP`** | **`NOLJMP`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`M510`** | **`NOM510`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`NOKEYWORD`** **`:`** **`<`** *`keywordList`* **`>`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`NOSIGNEXTEND`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`OFFSET`** **`:`** *`offsetType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`OLDMACROS`** | **`NOOLDMACROS`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`OLDSTRUCTS`** | **`NOOLDSTRUCTS`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`PROC`** **`:`** *`oVisibility`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`PROLOGUE`** : *`macroId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`READONLY`** | **`NOREADONLY`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`SCOPED`** | **`NOSCOPED`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`SEGMENT`** **`:`** *`segSize`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`SETIF2`** **`:`** *`bool`*
+
+*`optionList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`optionItem`* | *`optionList`* **`,`** ⟦ *`;;`* ⟧ *`optionItem`*
+
+*`optText`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`,`** *`textItem`*
+
+*`orOp`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`OR`** | **`XOR`**
+
+*`oVisibility`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`PUBLIC`** | **`PRIVATE`** | **`EXPORT`**
+
+*`pageDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`PAGE`** ⟦ *`pageExpr`* ⟧ *`;;`*
+
+*`pageExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`+`** | ⟦ *`pageLength`* ⟧ ⟦ **`,`** *`pageWidth`* ⟧
+
+*`pageLength`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`constExpr`*
+
+*`pageWidth`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`constExpr`*
+
+*`parm`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`parmId`* ⟦ **`:`** *`qualifiedType`* ⟧ | *`parmId`* ⟦ *`constExpr`* ⟧ ⟦ **`:`** *`qualifiedType`* ⟧
+
+*`parmId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+
+*`parmList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`parm`* | *`parmList`* **`,`** ⟦ *`;;`* ⟧ *`parm`*
+
+*`parmType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`REQ`** | **`=`** *`textLiteral`* | **`VARARG`**
+
+*`pOptions`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`distance`* ⟧ ⟦ *`langType`* ⟧ ⟦ *`oVisibility`* ⟧
+
+*`primary`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`expr`* *`binaryOp`* *`expr`* | *`flagName`* | *`expr`*
+
+*`procDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`procId`* **`PROC`**\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`pOptions`* ⟧ ⟦ **`<`** *`macroArgList`* **`>`** ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`usesRegs`* ⟧ ⟦ *`procParmList`* ⟧
+
+*`processor`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.386`** | **`.386p`** | **`.486`** | **`.486P`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.586`** | **`.586P`** | **`.686`** | **`.686P`** | **`.387`**
+
+*`processorDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`processor`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`coprocessor`* *`;;`*
+
+*`procId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+
+*`procItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`instrPrefix`* | *`dataDir`* | *`labelDir`* | *`offsetDir`* | *`generalDir`*
+
+*`procParmList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`,`** ⟦ *`;;`* ⟧ *`parmList`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`,`** ⟦ *`;;`* ⟧ *`parmId`* **`:VARARG`** ⟧
+
+*`protoArg`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`id`* ⟧ **`:`** *`qualifiedType`*
+
+*`protoArgList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`,`** ⟦ *`;;`* ⟧ *`protoList`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`,`** ⟦ *`;;`* ⟧ ⟦ *`id`* ⟧ **`:VARARG`** ⟧
+
+*`protoList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`protoArg`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`protoList`* **`,`** ⟦ *`;;`* ⟧ *`protoArg`*
+
+*`protoSpec`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`distance`* ⟧ ⟦ *`langType`* ⟧ ⟦ *`protoArgList`* ⟧ | *`typeId`*
+
+*`protoTypeDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* **`PROTO`** *`protoSpec`*
+
+*`pubDef`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`langType`* ⟧ *`id`*
+
+*`publicDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`PUBLIC`** *`pubList`* *`;;`*
+
+*`pubList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`pubDef`* | *`pubList`* **`,`** ⟦ *`;;`* ⟧ *`pubDef`*
+
+*`purgeDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`PURGE`** *`macroIdList`*
+
+*`qualifiedType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`type`* | ⟦ *`distance`* ⟧ **`PTR`** ⟦ *`qualifiedType`* ⟧
+
+*`qualifier`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`qualifiedType`* | **`PROTO`** *`protoSpec`*
+
+*`quote`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`"`** | **`'`**
+
+*`qwordRegister`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`RAX`** | **`RCX`** | **`RDX`** | **`RBX`** | **`RDI`** | **`RSI`** | **`RBP`** | **`R8`** | **`R9`** | **`R10`** | **`R11`** | **`R12`** | **`R13`** | **`R14`** | **`R15`**
+
+*`radixDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.RADIX`** *`constExpr`* *`;;`*
+
+*`radixOverride`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`h`** | **`o`** | **`q`** | **`t`** | **`y`** | **`H`** | **`O`** | **`Q`** | **`T`** | **`Y`**
+
+*`recordConst`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`recordTag`* **`{`** *`oldRecordFieldList`* **`}`** | *`recordTag`* **`<`** *`oldRecordFieldList`* **`>`**
+
+*`recordDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`recordTag`* **`RECORD`** *`bitDefList`* *`;;`*
 
-*Recordconst*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Recordtag* { *oldrecordfieldlist* } | *Recordtag* < *Oldrecordfieldlist* >
+*`recordFieldList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`constExpr`* ⟧ | *`recordFieldList`* **`,`** ⟦ *`;;`* ⟧ ⟦ *`constExpr`* ⟧
 
-*Recorddir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Recordtag* **kayıt** *bitdeflist* ;;
+*`recordInstance`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`{`** ⟦ *`;;`* ⟧ *`recordFieldList`* ⟦ *`;;`* ⟧ **`}`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`<`** *`oldRecordFieldList`* **`>`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`constExpr`* **`DUP`** **`(`** *`recordInstance`* **`)`**
 
-*Recordfieldlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *constExpr* ⟧ | *Recordfieldlist* , ⟦;; ⟧ ⟦ *constExpr* ⟧
+*`recordInstList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`recordInstance`* | *`recordInstList`* **`,`** ⟦ *`;;`* ⟧ *`recordInstance`*
+
+*`recordTag`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+
+*`register`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`specialRegister`* | *`gpRegister`* | *`byteRegister`* | *`qwordRegister`* |  *`fpuRegister`* | *`SIMDRegister`* | *`segmentRegister`*
+
+*`regList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`register`* | *`regList`* *`register`*
 
-*Recordınstance*\
- {⟦;; ⟧ *Recordfieldlist* ⟦;; ⟧} \
-&nbsp;&nbsp;&nbsp;&nbsp;| < *Oldrecordfieldlist* >\
-&nbsp;&nbsp;&nbsp;&nbsp;| *constExpr* **DUP** ( *recordınstance* )
-
-*Recordinstlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Recordınstance* | *recordınstlist* , ⟦;; ⟧ *Recordınstance*
-
-*Recordtag*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
+*`relOp`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`EQ`** | **`NE`** | **`LT`** | **`LE`** | **`GT`** | **`GE`**
 
-*kayıt*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Specialregister* | *Gpregmi* | *Byteregister* | *Qwordregister* |  *fpuregister* | *simdregister* | *segmentRegister*
+*`repeatBlock`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.REPEAT`** *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`blockStatements`* *`;;`*
+*`untilDir`* *`;;`*
 
-*Reglist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kaydet* | *reglist* *kaydı*
+*`repeatDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`REPEAT`** | **`REPT`**
 
-*RelOp*\
-&nbsp;&nbsp;&nbsp;&nbsp;EQ | NE BIR | LT | LE | GT | BIrLEŞTIr
+*`scalarInstList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`initValue`* | *`scalarInstList`* **`,`** ⟦ *`;;`* ⟧ *`initValue`*
 
-*Repeatblock*\
-&nbsp;&nbsp;&nbsp;&nbsp; **. YINELE** ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*blok deyimleri* ;; untilDir;;
+*`segAlign`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`BYTE`** | **`WORD`** | **`DWORD`** | **`PARA`** | **`PAGE`**
 
-*Repeatdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**yinele** | **Yinele**
+*`segAttrib`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`PUBLIC`** | **`STACK`** | **`COMMON`** | **`MEMORY`** | **`AT`** *`constExpr`* | **`PRIVATE`**
 
-*Scalarinstlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*ınitvalue* | *Scalarinstlist* , ⟦;; ⟧ *InitValue*
+*`segDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.CODE`**\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`segId`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.DATA`**\
+&nbsp;&nbsp;&nbsp;&nbsp;|  **`.DATA?`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.CONST`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.FARDATA`**⟦ *`segId`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;|  **`.FARDATA?`** ⟦ *`segId`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`.STACK`** ⟦ *`constExpr`* ⟧
 
-\ *Hizala*
-&nbsp;&nbsp;&nbsp;&nbsp;**bayt** | **WORD** | **DWORD** | **para** | **sayfası**
+*`segId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
 
-*Segattrib*\
-&nbsp;&nbsp;&nbsp;&nbsp;**genel** | **Stack** | , *constExpr* | PRIVATE **üzerinde** **ortak** | **PRIVATE** **bellek** | 
+*`segIdList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`segId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`segIdList`* **`,`** *`segId`*
+
+*`segmentDef`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`segmentDir`* ⟦ *`inSegDirList`* ⟧ *`endsDir`* | *`simpleSegDir`* ⟦ *`inSegDirList`* ⟧ ⟦ *`endsDir`* ⟧
 
-*Segdir*\
-&nbsp;&nbsp;&nbsp;&nbsp; **. KOD**\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *Segıd* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. VERI**\
-&nbsp;&nbsp;&nbsp;&nbsp;|   **. VERILER mi?** \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. CONST**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. FARDATA**⟦ *segıd* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|   **. FARVERI?** ⟦ *Segıd* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;|  **. STACK** ⟦ *constExpr* ⟧
+*`segmentDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`segId`* **`SEGMENT`** ⟦ *`segOptionList`* ⟧ *`;;`*
 
-*Segıd*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
+*`segmentRegister`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`CS`** | **`DS`** | **`ES`** | **`FS`** | **`GS`** | **`SS`**
 
-*segIdList*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Segıd*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *segIdList* , *segıd*
+*`segOption`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`segAlign`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`segRO`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`segAttrib`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`segSize`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`className`*
 
-*segmentDef*\
-&nbsp;&nbsp;&nbsp;&nbsp;*segmentDir* ⟦ *ınsegdirlist* ⟧ *Endsdir* | *simplesegdir* ⟦ *ınsegdirlist* ⟧ ⟦ *endsdir* ⟧
+*`segOptionList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`segOption`* | *`segOptionList`* *`segOption`*
 
-*segmentDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Segıd* **segmenti** ⟦ *segoptionlist* ⟧;;
+*`segOrderDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.ALPHA`** | **`.SEQ`** | **`.DOSSEG`** | **`DOSSEG`**
 
-*segmentRegister*\
-&nbsp;&nbsp;&nbsp;&nbsp;**CS** | **DS** | **lar** | **FS** | **GS** | **SS**
+*`segRO`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`READONLY`**
 
-*Segoption*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Segalign*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *segRO*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Segattrib*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Segsize*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *ClassName*
+*`segSize`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`USE16`** | **`USE32`** | **`FLAT`**
 
-*Segoptionlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*segoption* | *segoptionlist* *segoption*
+*`shiftOp`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`SHR`** | **`SHL`**
 
-*Segorderdir*\
-&nbsp;&nbsp;&nbsp;&nbsp; **. Alfa** |  **. SıRA** |  **. DOSSEG** | **DOSSEG**
+*`sign`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`+`** | **`-`**
 
-*segRO*\
-&nbsp;&nbsp;&nbsp;&nbsp;**ReadOnly**
+*`simdRegister`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`MM0`** | **`MM1`** | **`MM2`** | **`MM3`** | **`MM4`** | **`MM5`** | **`MM6`** | **`MM7`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`xmmRegister`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`YMM0`** | **`YMM1`** | **`YMM2`** | **`YMM3`** | **`YMM4`** | **`YMM5`** | **`YMM6`** | **`YMM7`** | **`YMM8`** | **`YMM9`** | **`YMM10`** | **`YMM11`** | **`YMM12`** | **`YMM13`** | **`YMM14`** | **`YMM15`**
 
-*Segsize*\
-&nbsp;&nbsp;&nbsp;&nbsp;**USE16** | **USE32** | **düz**
+*`simpleExpr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`(`** *`cExpr`* **`)`** | *`primary`*
 
-*kaydırıcı üst*\
-&nbsp;&nbsp;&nbsp;&nbsp;**SHR** | **SHL**
+*`simpleSegDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`segDir`* *`;;`*
 
-\ *imzala*
- - | +
+*`sizeArg`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* | *`type`* | *`e10`*
 
-*Simdregister*\
-&nbsp;&nbsp;&nbsp;&nbsp;MM0 | MM1 | MM2 | MM3 | MM4 | MM5 | MM6 | MM7 | xmmRegister | YMM0 ILA | YMM1 | YMM2 | YMM3 | YMM4 | YMM5 ARASıNDA | YMM6 | YMM7 | YMM8 | YMM9 | YMM10 | YMM11 | YMM12 | YMM13 | YMM14 | YMM15
+*`specialChars`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`:`** | **`.`** | **`[`** | **`]`** | **`(`** | **`)`** | **`<`** | **`>`** | **`{`** | **`}`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`+`** | **`-`** | **`/`** | **`*`** | **`&`** | **`%`** | **`!`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`'`** | **`\`** | **`=`** | **`;`** | **`,`** | **`"`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`whiteSpaceCharacter`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`endOfLine`*
 
-*Simpleexpr*\
- ( *cexpr* ) | *birincil*
+*`specialRegister`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`CR0`** | **`CR2`** | **`CR3`** | **`DR0`** | **`DR1`** | **`DR2`** | **`DR3`** | **`DR6`** | **`DR7`** | **`TR3`** | **`TR4`** | **`TR5`** | **`TR6`** | **`TR7`**
 
-*Simplesegdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Segdir* ;;
+*`stackOption`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`NEARSTACK`** | **`FARSTACK`**
 
-*Sizliye g*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği* | *tür* | *E10*
+*`startupDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.STARTUP`** *`;;`*
 
-*specialChars*\
- : | . | ⟦ | ⟧ | ( | ) | < | > | { | } \
-&nbsp;&nbsp;&nbsp;&nbsp;| + | - | / | * | & | % | !\
-&nbsp;&nbsp;&nbsp;&nbsp;| ' | \ | = | ; | , | "\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Whitespacecharacter*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *EndOfLine*
+*`stext`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`stringChar`* | *`stext`* *`stringChar`*
 
-*Specialregister*\
-&nbsp;&nbsp;&nbsp;&nbsp;CR0 | CR2 | CR3 | DR0 | DR1 | DR2 | DR3 | DR6 | DR7 | TR3 | TR4 | TR5 | TR6 | TR7
+*`string`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`quote`* ⟦ *`stext`* ⟧ *`quote`*
 
-*Stackoption*\
-&nbsp;&nbsp;&nbsp;&nbsp;**yaklaştığında yığın** | **farstack**
+*`stringChar`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`quote`**`quote`* | Alıntı dışında herhangi bir karakter.
 
-*Startupdir*\
-&nbsp;&nbsp;&nbsp;&nbsp; **. BAŞLANGıÇ** ;;
+*`structBody`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`structItem`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`structBody`* *`structItem`* *`;;`*
 
-*stext*\
-&nbsp;&nbsp;&nbsp;&nbsp;*stringchar* | *stext* *stringchar*
+*`structDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`structTag`* *`structHdr`* ⟦ *`fieldAlign`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`,`** **`NONUNIQUE`** ⟧ *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`structBody`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`structTag`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`ENDS`** *`;;`*
 
-*dize*\
-&nbsp;&nbsp;&nbsp;&nbsp;*quote* ⟦ *stext* ⟧ *quote*
+*`structHdr`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`STRUC`** | **`STRUCT`** | **`UNION`**
 
-*Stringchar*\
-&nbsp;&nbsp;&nbsp;&nbsp;*teklif* *teklifi* | Tırnak işareti dışında herhangi bir karakter.
+*`structInstance`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`<`** ⟦ *`fieldInitList`* ⟧ **`>`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`{`** ⟦ *`;;`* ⟧ ⟦ *`fieldInitList`* ⟧ ⟦ *`;;`* ⟧ **`}`**\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`constExpr`* **`DUP`** ( *`structInstList`* )
 
-*Structbody*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Structıtem* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;| *Structbody* *structıtem* ;;
+*`structInstList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`structInstance`* | *`structInstList`* **`,`** ⟦ *`;;`* ⟧ *`structInstance`*
 
-*Structdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Structtag* *structhdr* ⟦ *fieldalıgn* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;⟦, **Unique olmayan** ⟧;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*Structbody*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Structtag*\
-&nbsp;&nbsp;&nbsp;&nbsp;**bitiyor** ;;
+*`structItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`dataDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`generalDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`offsetDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`nestedStruct`*
 
-*Structhdr*\
-&nbsp;&nbsp;&nbsp;&nbsp;**STRUC** | **struct** | **UNION**
+*`structTag`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
 
-*Structınstance*\
- < ⟦ *Fieldinitlist* ⟧ > \
-&nbsp;&nbsp;&nbsp;&nbsp;| {⟦;; ⟧ ⟦ *Fieldinitlist* ⟧ ⟦;; ⟧} \
-&nbsp;&nbsp;&nbsp;&nbsp;| *constExpr* **DUP** ( *structinstlist* ) \
+*`term`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`simpleExpr`* | **`!`** *`simpleExpr`*
 
-*Structinstlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Structınstance* | *structinstlist* , ⟦;; ⟧ *Structınstance*
+*`text`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`textLiteral`* | *`text`* karakter | **`!`** *`character`* *`text`* | *`character`* | **`!`***`character`*
 
-*Structıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;*datadir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *generaldir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *offsetDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Nestedstruct*
+*`textDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`* *`textMacroDir`* *`;;`*
 
-*Structtag*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
+*`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`textLiteral`* | *`textMacroId`* | **`%`** *`constExpr`*
 
-*terim*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Simpleexpr* |! *simpleExpr*
+*`textLen`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`constExpr`*
 
-*metin*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Textliteral* | *metin* karakteri |! *karakter* *metni* | *karakteri* |! *karakter*
+*`textList`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`textItem`* | *`textList`* **`,`** ⟦ *`;;`* ⟧ *`textItem`*
 
-*Textdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği* *textmacrodir* ;;
+*`textLiteral`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`<`** *`text`* **`>`** **`;;`**
 
-*Textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Textliteral* | *textmacroıd* | % *constExpr*
+*`textMacroDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`CATSTR`** ⟦ *`textList`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`TEXTEQU`** ⟦ *`textList`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`SIZESTR`** *`textItem`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`SUBSTR`** *`textItem`* **`,`** *`textStart`* ⟦ **`,`** *`textLen`* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **`INSTR`** ⟦ *`textStart`* **`,`** ⟧ *`textItem`* **`,`** *`textItem`*
 
-*Textlen*\
-&nbsp;&nbsp;&nbsp;&nbsp;*constExpr*
+*`textMacroId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
 
-*Textlist*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Textıtem* | *textlist* , ⟦;; ⟧ *Textıtem*
+*`textStart`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`constExpr`*
 
-*Textliteral*\
-&nbsp;&nbsp;&nbsp;&nbsp;< *metin* >;;
+*`titleDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`titleType`* *`arbitraryText`* *`;;`*
 
-*Textmacrodir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**Catstr** ⟦ *textlist* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;| **TEXTEQU** ⟦ *textlist* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;| **Sizestr** *textıtem*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **substr** *textıtem* , *Textstart* ⟦, *textlen* ⟧ \
-&nbsp;&nbsp;&nbsp;&nbsp;| **InStr** ⟦ *textstart* , ⟧ *textıtem* , *textıtem*
+*`titleType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`TITLE`** | **`SUBTITLE`** | **`SUBTTL`**
 
-*Textmacroıd*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
+*`type`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`structTag`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`unionTag`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`recordTag`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`distance`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`dataType`*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *`typeId`*
 
-*Textstart*\
-&nbsp;&nbsp;&nbsp;&nbsp;*constExpr*
+*`typedefDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`typeId`***`TYPEDEF`** eleme
 
-*Titledir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Titletype* ile *raryıtext* ;;
+*`typeId`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
 
-*Titletype*\
-&nbsp;&nbsp;&nbsp;&nbsp;**başlık** | alt **başlık** | **alt TTL**
+*`unionTag`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
 
-*tür*\
-&nbsp;&nbsp;&nbsp;&nbsp;*Structtag*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Uniontag*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *Recordtag*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *uzaklık*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *veri türü*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *TypeId*
+*`untilDir`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.UNTIL`** *`cExpr`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.UNTILCXZ`** ⟦ *`cxzExpr`* ⟧ *`;;`*
 
-*Typedefdir*\
-&nbsp;&nbsp;&nbsp;&nbsp;*TypeId* **typedef** niteleyicisi
+*`usesRegs`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`USES`** *`regList`*
 
-*typeıd*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
+*`whileBlock`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.WHILE`**\
+&nbsp;&nbsp;&nbsp;&nbsp;*`cExpr`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`blockStatements`* *`;;`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`.ENDW`**
 
-*Uniontag*\
-&nbsp;&nbsp;&nbsp;&nbsp;*kimliği*
+*`whiteSpaceCharacter`*\
+&nbsp;&nbsp;&nbsp;&nbsp;ASCII 8, 9, 11-13, 26, 32
 
-*Untildir*\
-&nbsp;&nbsp;&nbsp;&nbsp; **. UNTIL** , *cexpr* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp; **. UNTILCXZ** ⟦ *cxzexpr* ⟧;;
-
-*Usesregs*\
-&nbsp;&nbsp;&nbsp;&nbsp;**USES** *reglist* kullanır
-
-*Whileblock*\
-&nbsp;&nbsp;&nbsp;&nbsp; **.\**
-&nbsp;&nbsp;&nbsp;&nbsp;*cexpr* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp;*Blockdeyimlerini* ;; \
-&nbsp;&nbsp;&nbsp;&nbsp; **. ENDW**
-
-*Whitespacecharacter*\
-&nbsp;&nbsp;&nbsp;&nbsp;ASCII 8, 9, 11 – 13, 26, 32
-
-*Xmmregister*\
-&nbsp;&nbsp;&nbsp;&nbsp;XMM0 | XMM1 | XMM2 | XMM3 | XMM4 | XMM5 | XMM6 | XMM7 | XMM8 | XMM9 | XMM10 | XMM11 | XMM12 | XMM13 | XMM14 | XMM15\
+*`xmmRegister`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**`XMM0`** | **`XMM1`** | **`XMM2`** | **`XMM3`** | **`XMM4`** | **`XMM5`** | **`XMM6`** | **`XMM7`** | **`XMM8`** | **`XMM9`** | **`XMM10`** | **`XMM11`** | **`XMM12`** | **`XMM13`** | **`XMM14`** | **`XMM15`**

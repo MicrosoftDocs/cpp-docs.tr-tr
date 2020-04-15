@@ -1,5 +1,5 @@
 ---
-title: 'OLE arka planı: MFC uygulaması'
+title: 'OLE Arka Planı: MFC Uygulaması'
 ms.date: 11/04/2016
 f1_keywords:
 - IMarshall
@@ -14,37 +14,37 @@ helpviewer_keywords:
 - OLE IMoniker interface
 - OLE IUnknown
 ms.assetid: 2b67016a-d78e-4d60-925f-c28ec8fb6180
-ms.openlocfilehash: f793c7d7303a49057e46c32eb658ea7eea8e9ccc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 25c98c3683a8656bb5188f22d0464d25a4901f49
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62186735"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364525"
 ---
-# <a name="ole-background-mfc-implementation"></a>OLE arka planı: MFC uygulaması
+# <a name="ole-background-mfc-implementation"></a>OLE Arka Planı: MFC Uygulaması
 
-Boyutu ve ham OLE API karmaşıklığı nedeniyle doğrudan OLE uygulamaları yazmak için çağırma çok zaman alıcı olabilir. Microsoft Foundation Class Kitaplığı uygulaması OLE tam özellikli, OLE özellikli uygulamaları yazmak için yapmanız gereken iş miktarını azaltmak için hedefidir.
+Ham OLE API boyutu ve karmaşıklığı nedeniyle, doğrudan OLE uygulamaları yazmak için arama çok zaman alıcı olabilir. OLE'nin Microsoft Foundation Class Library uygulamasının amacı, tam özellikli, OLE özellikli uygulamaları yazmak için yapmanız gereken iş miktarını azaltmaktır.
 
-Bu makalede, MFC içinde uygulanan değil OLE API bölümlerini açıklar. Tartışma de Windows SDK'sı OLE bölümüne ne uygulanan nasıl eşlendiğini açıklanır.
+Bu makalede, OLE API'nin MFC içinde uygulanmamış bölümleri açıklanmaktadır. Tartışma ayrıca, Windows SDK'nın OLE bölümüne uygulanan haritaların nasıl uygulandığını da açıklar.
 
-##  <a name="_core_portions_of_ole_not_implemented_by_the_class_library"></a> OLE sınıf kitaplığının uygulanmadı bölümleri
+## <a name="portions-of-ole-not-implemented-by-the-class-library"></a><a name="_core_portions_of_ole_not_implemented_by_the_class_library"></a>Sınıf Kitaplığı Tarafından Uygulanmayan OLE Bölümleri
 
-Doğrudan birkaç arabirimleri ve özelliklerinin OLE MFC tarafından sağlanmaz. Bu özellikleri kullanmak istiyorsanız, OLE API'sini doğrudan çağırabilir.
+OLE'nin birkaç arabirimi ve özelliği doğrudan MFC tarafından sağlanmaz. Bu özellikleri kullanmak istiyorsanız, Doğrudan OLE API'yi arayabilirsiniz.
 
-IMoniker arabirimi `IMoniker` arabirimi, sınıf kitaplığı tarafından uygulanır (örneğin, `COleServerItem` sınıfı) ancak daha önce programcıya sunulmamıştır. Bu arabirim hakkında daha fazla bilgi için OLE ad uygulamalarını Windows SDK'sı OLE bölümünde bakın. Ancak, sınıfına bakın [CMonikerFile](../mfc/reference/cmonikerfile-class.md) ve [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md).
+IMoniker Arabirimi `IMoniker` Arabirimi sınıf kitaplığı (örneğin, `COleServerItem` sınıf) tarafından uygulanır, ancak daha önce programcıya maruz kalmamıştır. Bu arabirim hakkında daha fazla bilgi için Windows SDK'nın OLE bölümündeki OLE Takma Uygulama bölümüne bakın. Ancak, ayrıca [sınıf CMonikerFile](../mfc/reference/cmonikerfile-class.md) ve [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md)bakın.
 
-IUnknown ve IMarshal arabirimi `IUnknown` arabirimi sınıf kitaplığı tarafından uygulanır, ancak programcıya gösterilmez. `IMarshal` Arabirimi sınıf kitaplığının uygulanmadı ancak dahili olarak kullanılır. Sınıf kitaplığı zaten kullanılarak oluşturulan otomasyon sunucuları hazırlama özellikleri yerleşik olarak sahip.
+IUnknown ve IMarshal `IUnknown` Arabirimleri Arabirimi sınıf kitaplığı tarafından uygulanır, ancak programcıya açık değildir. Arabirim `IMarshal` sınıf kitaplığı tarafından uygulanmaz, ancak dahili olarak kullanılır. Sınıf kitaplığı kullanılarak oluşturulmuş otomasyon sunucuları zaten yerleşik mareşalleme yeteneklerine sahiptir.
 
-Veri dosyalarını yazmak (bileşik dosyaları) bileşik dosyalar sınıf kitaplığının kısmen desteklenir. Bileşik dosyalar oluşturma ötesinde doğrudan düzenlemezsiniz işlevleri hiçbiri desteklenmiyor. MFC kullanan sınıf `COleFileStream` standart dosya işlevleri akışlarla işlenmesini desteklemek için. Daha fazla bilgi için bkz [kapsayıcıları: Bileşik dosyalar](../mfc/containers-compound-files.md).
+Docfiles (Bileşik Dosyalar) Bileşik dosyaları kısmen sınıf kitaplığı tarafından desteklenir. Bileşik dosyaları oluşturmanın ötesinde doğrudan işleyen işlevlerin hiçbiri desteklenmez. MFC, `COleFileStream` standart dosya işlevlerine sahip akışların manipülasyonuna destek vermek için sınıfı kullanır. Daha fazla bilgi için, makale [Kapsayıcılar bakın: Bileşik Dosyalar](../mfc/containers-compound-files.md).
 
-İşlem içi sunucular ve nesne işleyicileri işlem içi sunucular ve nesne işleyicileri görsel düzenleme verileri veya bir dinamik bağlantı kitaplığı (DLL) tam Bileşen Nesne Modeli (COM) nesneleri uygulamasına izin. Bunu yapmak için OLE API'sini doğrudan çağırmak DLL dosyanızı uygulayabilirsiniz. Ancak, Otomasyon sunucusu yazıyorsanız ve hiçbir kullanıcı arabirimi sunucunuz varsa sunucunuza bir işlem sunucusu ve tamamen bir DLL içine koyabilirsiniz AppWizard kullanabilirsiniz. Bu konular hakkında daha fazla bilgi için bkz. [otomasyon sunucuları](../mfc/automation-servers.md).
+İşlem İçi Sunucular ve Nesne İşleyicileri İşlem Içi sunucular ve nesne işleyicileri, dinamik bağlantı kitaplığında (DLL) görsel düzenleme verilerinin veya tam Bileşen Nesne Modeli (COM) nesnelerinin uygulanmasına olanak tanır. Bunu yapmak için, Doğrudan OLE API'yi arayarak DLL'nizi uygulayabilirsiniz. Ancak, bir Otomasyon sunucusu yazıyorsanız ve sunucunuzda kullanıcı arabirimi yoksa, sunucunuzu işlem içi sunucu yapmak ve tamamen bir DLL'ye koymak için AppWizard'ı kullanabilirsiniz. Bu konular hakkında daha fazla bilgi için [Otomasyon Sunucuları'na](../mfc/automation-servers.md)bakın.
 
 > [!TIP]
->  Otomasyon sunucusu uygulamak için en kolay yolu, onu bir DLL içinde yerleştirmektir. Bu yaklaşım MFC destekler.
+> Bir Otomasyon sunucusunu uygulamanın en kolay yolu, sunucuyu bir DLL'ye yerleştirmektir. MFC bu yaklaşımı destekler.
 
-Microsoft Foundation OLE sınıfları OLE arabirimleri nasıl uygulamak daha fazla bilgi için bkz. MFC teknik notları [38](../mfc/tn038-mfc-ole-iunknown-implementation.md), [39](../mfc/tn039-mfc-ole-automation-implementation.md), ve [40](../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md).
+Microsoft Foundation OLE sınıflarının OLE arabirimlerini nasıl uyguladığı hakkında daha fazla bilgi için MFC Teknik Notlar [38](../mfc/tn038-mfc-ole-iunknown-implementation.md), [39](../mfc/tn039-mfc-ole-automation-implementation.md)ve [40'a](../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md)bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE Arka Planı](../mfc/ole-background.md)<br/>
-[OLE arka planı: Uygulama stratejileri](../mfc/ole-background-implementation-strategies.md)
+[OLE Arka Plan](../mfc/ole-background.md)<br/>
+[OLE Arka Planı: Uygulama Stratejileri](../mfc/ole-background-implementation-strategies.md)

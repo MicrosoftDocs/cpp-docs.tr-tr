@@ -6,23 +6,23 @@ helpviewer_keywords:
 - ODBC connections, configuring
 - configuring ODBC data sources
 ms.assetid: 1cd03e6a-8d59-4eca-a8c6-1010582d5e67
-ms.openlocfilehash: 43d385bea34ba885b9ae0f8efb6109e6959c2383
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: aaa69fd7e0b2b592cd7d5c4eff92f51d0ce5f680
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213141"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367190"
 ---
 # <a name="odbc-configuring-an-odbc-data-source"></a>ODBC: ODBC Veri Kaynağını Yapılandırma
 
-Bir [veri kaynağını](../../data/odbc/data-source-odbc.md) geliştirmiş olduğunuz bir uygulamayla birlikte kullanmak Için ODBC Yöneticisi 'ni kullanarak yapılandırmanız gerekir. ODBC Yöneticisi, kullanılabilir veri kaynaklarını ve bunların bağlantı bilgilerini Windows kayıt defteri 'nde izler. Veri **kaynakları** iletişim kutusunda veri kaynakları eklemek, değiştirmek ve sılmek ve ODBC sürücülerini eklemek ve sılmek Için ODBC Yöneticisi 'ni kullanın.
+Geliştirdiğiniz bir uygulamayla bir [veri kaynağı](../../data/odbc/data-source-odbc.md) kullanmak için, yapılandırmak için ODBC Yöneticisi'ni kullanmanız gerekir. ODBC Administrator, Windows kayıt defterinde kullanılabilir veri kaynaklarını ve bağlantı bilgilerini izler. **Veri Kaynakları** iletişim kutusundaki veri kaynaklarını eklemek, değiştirmek ve silmek ve ODBC sürücüleri eklemek ve silmek için ODBC Yöneticisi'ni kullanın.
 
 > [!NOTE]
->  Bu bilgiler, ODBC erişimi için MFC veri erişim nesnesi (DAO) sınıfları kullandığınızda ve MFC ODBC sınıfları kullandığınızda geçerlidir.
+> Bu bilgiler, ODBC erişimi için MFC Veri Erişim Nesnesi (DAO) sınıflarını kullandığınızda ve MFC ODBC sınıflarını kullandığınızda geçerlidir.
 
-ODBC Yöneticisi Microsoft Foundation Sınıfları (MFC) kitaplık veritabanı desteğiyle otomatik olarak yüklenir. ODBC yönetici programı hakkında daha fazla bilgi için bkz. [ODBC Yöneticisi](../../data/odbc/odbc-administrator.md) ve ÇEVRIMIÇI ODBC API başvurusu yardım sistemi.
+ODBC Administrator, Microsoft Hazırlık Sınıfları (MFC) kitaplık veritabanı desteğiyle otomatik olarak yüklenir. ODBC Administrator programı hakkında daha fazla bilgi için [ODBC Yöneticisi](../../data/odbc/odbc-administrator.md) ve çevrimiçi ODBC API Başvuru Yardımı sistemine bakın.
 
-MFC veritabanı uygulamaları için ODBC kurulum ve yönetim programları yazma hakkında daha fazla bilgi için,[Teknik not48](../../mfc/tn048-writing-odbc-setup-and-administration-programs.md).
+MFC veritabanı uygulamaları için ODBC Kurulum ve Yönetim programlarının nasıl yazılması hakkında bilgi için[Teknik Not 48](../../mfc/tn048-writing-odbc-setup-and-administration-programs.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

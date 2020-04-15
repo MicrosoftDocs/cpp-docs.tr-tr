@@ -1,5 +1,5 @@
 ---
-title: Cotaconvertdialog sınıfı
+title: COleConvertDialog Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleConvertDialog
@@ -22,16 +22,16 @@ helpviewer_keywords:
 - COleConvertDialog [MFC], GetSelectionType
 - COleConvertDialog [MFC], m_cv
 ms.assetid: a7c57714-31e8-4b78-834d-8ddd1b856a1c
-ms.openlocfilehash: ba57e756457fcffca806eeba7454ddf7bcf99d34
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 6d6690b8d06df29ce9fcd323eb8724009ee3cca9
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504302"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366174"
 ---
-# <a name="coleconvertdialog-class"></a>Cotaconvertdialog sınıfı
+# <a name="coleconvertdialog-class"></a>COleConvertDialog Sınıfı
 
-Daha fazla bilgi için Windows SDK [Oleuiconvert](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) yapısına bakın.
+Daha fazla bilgi için Windows SDK'daki [OLEUICONVERT](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) yapısına bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,57 +43,57 @@ class COleConvertDialog : public COleDialog
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Copaconvertdialog:: Cotaconvertdialog](#coleconvertdialog)|Bir `COleConvertDialog` nesnesi oluşturur.|
+|[COleConvertDialog::COleConvertDialog](#coleconvertdialog)|Bir `COleConvertDialog` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Cotaconvertdialog::D oConvert](#doconvert)|İletişim kutusunda belirtilen dönüşümü gerçekleştirir.|
-|[Cotaconvertdialog::D oModal](#domodal)|OLE Change Item iletişim kutusunu görüntüler.|
-|[Cotaconvertdialog:: GetClassID](#getclassid)|Seçili öğeyle ilişkili CLSID 'yi alır.|
-|[Cotaconvertdialog:: GetDrawAspect](#getdrawaspect)|Öğenin simge olarak çizilmesi gerekip gerekmediğini belirtir.|
-|[Cotaconvertdialog:: Getıconicmetafile](#geticonicmetafile)|Bu öğenin IIC formuyla ilişkili meta dosyası için bir tanıtıcı alır.|
-|[Cotaconvertdialog:: GetSelectionType](#getselectiontype)|Seçilen seçimin türünü alır.|
+|[COleConvertDialog::DoConvert](#doconvert)|İletişim kutusunda belirtilen dönüştürmeyi gerçekleştirir.|
+|[COleConvertDialog::DoModal](#domodal)|OLE Değişiklik Öğesi iletişim kutusunu görüntüler.|
+|[COleConvertDialog::GetClassID](#getclassid)|CLSID'yi seçilen öğeyle ilişkilendiriyor.|
+|[COleConvertDialog::GetDrawAspect](#getdrawaspect)|Öğenin simge olarak çizilip çizilemeyeceğini belirtir.|
+|[COleConvertDialog::GetIconicMetafile](#geticonicmetafile)|Bu öğenin ikonik formuyla ilişkili metadosyaya bir tanıtıcı alır.|
+|[COleConvertDialog::GetSelectionType](#getselectiontype)|Seçilen seçim türünü alır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Cotaconvertdialog:: m_cv](#m_cv)|İletişim kutusunun davranışını denetleyen bir yapı.|
+|[COleConvertDialog::m_cv](#m_cv)|İletişim kutusunun davranışını denetleyen bir yapı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Uygulama Sihirbazı tarafından oluşturulan kapsayıcı kodu bu sınıfı kullanır.
+> Uygulama Sihirbazı tarafından oluşturulan kapsayıcı kodu bu sınıfı kullanır.
 
-OLE 'e özgü iletişim kutuları hakkında daha fazla bilgi için [OLE 'deki makale Iletişim kutularına](../../mfc/dialog-boxes-in-ole.md)bakın.
+OLE'ye özgü iletişim kutuları hakkında daha fazla bilgi için, [OLE'deki İletişim Kutuları makalesine](../../mfc/dialog-boxes-in-ole.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CDialog](../../mfc/reference/cdialog-class.md)
+[Cdialog](../../mfc/reference/cdialog-class.md)
 
 [CCommonDialog](../../mfc/reference/ccommondialog-class.md)
 
-[Colet Iletişim kutusu](../../mfc/reference/coledialog-class.md)
+[COleDialog](../../mfc/reference/coledialog-class.md)
 
 `COleConvertDialog`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** afxodlgs. h
+**Üstbilgi:** afxodlgs.h
 
-##  <a name="coleconvertdialog"></a>Copaconvertdialog:: Cotaconvertdialog
+## <a name="coleconvertdialogcoleconvertdialog"></a><a name="coleconvertdialog"></a>COleConvertDialog::COleConvertDialog
 
-Yalnızca bir `COleConvertDialog` nesnesi oluşturur.
+Yalnızca bir `COleConvertDialog` nesne yi inşa eder.
 
 ```
 explicit COleConvertDialog (
@@ -106,36 +106,36 @@ explicit COleConvertDialog (
 ### <a name="parameters"></a>Parametreler
 
 *pItem*<br/>
-Dönüştürülecek veya etkinleştirilecek öğeyi işaret eder.
+Dönüştürülecek veya etkinleştirilecek öğeyi işaret edin.
 
-*dwFlags*<br/>
-Bit düzeyinde OR işleci kullanılarak birleştirilmiş aşağıdaki değerlerin sayısını içeren oluşturma bayrağı:
+*Dwflags*<br/>
+Bitwise-or işleci kullanılarak birleştirilen aşağıdaki değerlerin herhangi bir sayısını içeren oluşturma bayrağı:
 
-- CF_SELECTCONVERTTO, iletişim kutusu çağrıldığında radyo düğmesine Dönüştür düğmesinin başlangıçta seçili olacağını belirtir. Bu varsayılandır.
+- CF_SELECTCONVERTTO İletişim kutusu çağrıldığında radyoya dönüştür düğmesinin seçileceğini belirtir. Bu varsayılandır.
 
-- CF_SELECTACTIVATEAS, iletişim kutusu çağrıldığında radyo olarak etkinleştir düğmesinin başlangıçta seçili olacağını belirtir.
+- CF_SELECTACTIVATEAS İletişim kutusu çağrıldığında radyo olarak etkinleştir düğmesinin seçileceğini belirtir.
 
-- CF_SETCONVERTDEFAULT, CLSID 'si `clsidConvertDefault` `m_cv` yapı üyesi tarafından belirtilen sınıfın, radyo Dönüştür düğmesine ayarlandığında sınıf liste kutusunda varsayılan seçim olarak kullanılacağını belirtir.
+- CF_SETCONVERTDEFAULT ClSID `clsidConvertDefault` `m_cv` yapısının üyesi tarafından belirtilen sınıfın, radyoya Dönüştür düğmesi seçildiğinde sınıf listesi kutusunda varsayılan seçim olarak kullanılacağını belirtir.
 
-- CF_SETACTIVATEDEFAULT, CLSID 'si `clsidActivateDefault` `m_cv` yapı üyesi tarafından belirtilen sınıfın, radyo olarak etkinleştir düğmesi seçildiğinde sınıf liste kutusunda varsayılan seçim olarak kullanılacağını belirtir.
+- CF_SETACTIVATEDEFAULT, `clsidActivateDefault` `m_cv` CLSID'si yapının üyesi tarafından belirtilen sınıfın, radyo olarak etkinleştir düğmesi seçildiğinde sınıf listesi kutusunda varsayılan seçim olarak kullanılacağını belirtir.
 
-- CF_SHOWHELPBUTTON iletişim kutusu çağrıldığında Yardım düğmesinin görüntülendiğini belirtir.
+- CF_SHOWHELPBUTTON İletişim kutusu çağrıldığında Yardım düğmesinin görüntüleneceğini belirtir.
 
-*pClassId*<br/>
-Dönüştürülecek veya etkinleştirilecek öğenin CLSID değerini gösterir. NULL ise, *Pitem* Ile ilişkili CLSID kullanılacaktır.
+*pClassID*<br/>
+Dönüştürülecek veya etkinleştirilecek maddenin CLSID'sine işaret edilir. NULL ise, *pItem* ile ilişkili CLSID kullanılır.
 
 *pParentWnd*<br/>
-İletişim nesnesinin ait olduğu üst veya sahip pencere nesnesine (türü `CWnd`) işaret eder. NULL ise, iletişim kutusunun ana penceresi ana uygulama penceresine ayarlanır.
+İletişim nesnesinin ait olduğu üst `CWnd`veya sahip penceresi nesnesine (tür) işaret eder. NULL ise, iletişim kutusunun ana penceresi ana uygulama penceresine ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İletişim kutusunu göstermek için [DoModal](#domodal) işlevini çağırın.
+İletişim kutusunu görüntülemek için [DoModal](#domodal) işlevini arayın.
 
-Daha fazla bilgi için bkz. [CLSID anahtarı](/windows/win32/com/clsid-key-hklm) ve [Oleuiconvert](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) yapısı.
+Daha fazla bilgi için [CLSID Key](/windows/win32/com/clsid-key-hklm) ve [OLEUICONVERT](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) yapısına bakın.
 
-##  <a name="doconvert"></a>Cotaconvertdialog::D oConvert
+## <a name="coleconvertdialogdoconvert"></a><a name="doconvert"></a>COleConvertDialog::DoConvert
 
-Bu işlevi, [docepclienentidıtem](../../mfc/reference/coleclientitem-class.md)türünde bir nesneyi dönüştürmek ya da etkinleştirmek Için [DoModal](#domodal)'dan başarıyla döndükten sonra çağırın.
+[DoModal'dan](#domodal)başarıyla döndükten sonra, [coleClientItem](../../mfc/reference/coleclientitem-class.md)türünden bir nesneyi dönüştürmek veya etkinleştirmek için bu işlevi arayın.
 
 ```
 BOOL DoConvert(COleClientItem* pItem);
@@ -144,19 +144,19 @@ BOOL DoConvert(COleClientItem* pItem);
 ### <a name="parameters"></a>Parametreler
 
 *pItem*<br/>
-Dönüştürülecek veya etkinleştirilecek öğeyi işaret eder. NULL olamaz.
+Dönüştürülecek veya etkinleştirilecek öğeyi işaret edin. NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğe, Dönüştür iletişim kutusunda Kullanıcı tarafından seçilen bilgilere göre dönüştürülür veya etkinleştirilir.
+Öğe, Dönüştür iletişim kutusunda kullanıcı tarafından seçilen bilgilere göre dönüştürülür veya etkinleştirilir.
 
-##  <a name="domodal"></a>Cotaconvertdialog::D oModal
+## <a name="coleconvertdialogdomodal"></a><a name="domodal"></a>COleConvertDialog::DoModal
 
-OLE Convert iletişim kutusunu göstermek için bu işlevi çağırın.
+OLE Convert iletişim kutusunu görüntülemek için bu işlevi arayın.
 
 ```
 virtual INT_PTR DoModal();
@@ -164,23 +164,23 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İletişim kutusu için tamamlanma durumu. Aşağıdaki değerlerden biri:
+İletişim kutusunun tamamlanma durumu. Aşağıdaki değerlerden biri:
 
-- İletişim kutusu başarıyla görüntüleniyorsa ıDOK.
+- İletişim kutusu başarıyla görüntülendiyse İDOK.
 
-- Kullanıcı iletişim kutusunu iptal edildiyse ıDCANCEL.
+- Kullanıcı iletişim kutusunu iptal ettiyse IDCANCEL.
 
-- Bir hata oluştuysa ıDADBORT. IDADBORT döndürülürse, oluşan hata türü hakkında daha fazla bilgi edinmek için [Cotadialog:: GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) üye işlevini çağırın. Olası hataların listesi için Windows SDK [Oleuiconvert](/windows/win32/api/oledlg/nf-oledlg-oleuiconvertw) işlevine bakın.
+- Bir hata oluştuysa IDABORT. IDABORT döndürülürse, [coleDialog'u arayın::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) üye işlevini arayarak oluşan hata türü hakkında daha fazla bilgi alın. Olası hataların listesi için Windows SDK'daki [OleUIConvert](/windows/win32/api/oledlg/nf-oledlg-oleuiconvertw) işlevine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[M_cv](#m_cv) yapısının üyelerini ayarlayarak çeşitli iletişim kutusu denetimlerini başlatmak isterseniz, bunu çağırmadan `DoModal`önce, ancak iletişim kutusu nesnesi oluşturulduktan sonra yapmanız gerekir.
+[m_cv](#m_cv) yapısının üyelerini ayarlayarak çeşitli iletişim kutusu denetimlerini başlatmayı istiyorsanız, bunu `DoModal`çağırmadan önce, ancak iletişim nesnesi oluşturulduktan sonra yapmalısınız.
 
-IDOK `DoModal` döndürürse, Kullanıcı tarafından iletişim kutusuna girilen ayarları veya bilgileri almak için diğer üye işlevlerini çağırabilirsiniz.
+`DoModal` IDOK'u döndürürse, kullanıcı tarafından girilen ayarları veya bilgileri iletişim kutusuna almak için diğer üye işlevleri arayabilirsiniz.
 
-##  <a name="getclassid"></a>Cotaconvertdialog:: GetClassID
+## <a name="coleconvertdialoggetclassid"></a><a name="getclassid"></a>COleConvertDialog::GetClassID
 
-Dönüştür iletişim kutusunda kullanıcının seçtiği öğeyle ilişkili CLSID 'yi almak için bu işlevi çağırın.
+ClSID'yi kullanıcının Convert iletişim kutusunda seçtiği öğeyle ilişkilendirmesini sağlamak için bu işlevi arayın.
 
 ```
 REFCLSID GetClassID() const;
@@ -188,17 +188,17 @@ REFCLSID GetClassID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüştür iletişim kutusunda seçilen öğeyle ilişkili CLSID.
+Convert iletişim kutusunda seçilen öğeyle ilişkili CLSID.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi yalnızca [DoModal](#domodal) , IDOK öğesini döndürdüğünden çağırın.
+Bu işlevi yalnızca [DoModal](#domodal) IDOK döndükten sonra arayın.
 
-Daha fazla bilgi için Windows SDK [CLSID anahtarı](/windows/win32/com/clsid-key-hklm) bölümüne bakın.
+Daha fazla bilgi için Windows SDK'daki [CLSID Key'e](/windows/win32/com/clsid-key-hklm) bakın.
 
-##  <a name="getdrawaspect"></a>Cotaconvertdialog:: GetDrawAspect
+## <a name="coleconvertdialoggetdrawaspect"></a><a name="getdrawaspect"></a>COleConvertDialog::GetDrawAspect
 
-Kullanıcının seçili öğeyi simge olarak görüntülemeyi seçmediğini öğrenmek için bu işlevi çağırın.
+Kullanıcının seçili öğeyi simge olarak görüntülemeyi seçip seçmediğini belirlemek için bu işlevi arayın.
 
 ```
 DVASPECT GetDrawAspect() const;
@@ -208,19 +208,19 @@ DVASPECT GetDrawAspect() const;
 
 Nesneyi işlemek için gereken yöntem.
 
-- Simge olarak göster onay kutusu işaretli değilse, DVASPECT_CONTENT döndürüldü.
+- DVASPECT_CONTENT Simge Olarak Görüntü le görüntü lenekçe onay kutusu işaretlenmediyse döndürülür.
 
-- Simge olarak göster onay kutusu işaretliyse DVASPECT_ICON döndürüldü.
+- DVASPECT_ICON Simge Olarak Görüntü legörüntü onay kutusu işaretlenmişse döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi yalnızca [DoModal](#domodal) , IDOK öğesini döndürdüğünden çağırın.
+Bu işlevi yalnızca [DoModal](#domodal) IDOK döndükten sonra arayın.
 
-En boy çizimi hakkında daha fazla bilgi için Windows SDK [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) veri yapısına bakın.
+Çizim yönü hakkında daha fazla bilgi için Windows SDK'daki [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) veri yapısına bakın.
 
-##  <a name="geticonicmetafile"></a>Cotaconvertdialog:: Getıconicmetafile
+## <a name="coleconvertdialoggeticonicmetafile"></a><a name="geticonicmetafile"></a>COleConvertDialog::GetIconicMetafile
 
-Seçili öğenin ıfıic boyutunu içeren meta dosyasına bir tanıtıcı almak için bu işlevi çağırın.
+Seçili öğenin simgesel yönünü içeren metafile bir tanıtıcı almak için bu işlevi arayın.
 
 ```
 HGLOBAL GetIconicMetafile() const;
@@ -228,11 +228,11 @@ HGLOBAL GetIconicMetafile() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçili öğenin ı, simge olarak göster onay kutusu, Tamam ' ı seçerek bir iletişim kutusu kapatıldığında, bu dosya için bir işleyici işaretlendi. Aksi takdirde NULL.
+Seçili öğenin simgesel yönünü içeren metadosyanın tutamacı, ok seçilerek iletişim kutusu kapatıldığında Simge Olarak Görüntüle onay kutusu işaretlenmişse; aksi takdirde NULL.
 
-##  <a name="getselectiontype"></a>Cotaconvertdialog:: GetSelectionType
+## <a name="coleconvertdialoggetselectiontype"></a><a name="getselectiontype"></a>COleConvertDialog::GetSelectionType
 
-Dönüştür iletişim kutusunda seçilen dönüştürme türünü öğrenmek için bu işlevi çağırın.
+Dönüştür iletişim kutusunda seçilen dönüşüm türünü belirlemek için bu işlevi arayın.
 
 ```
 UINT GetSelectionType() const;
@@ -244,7 +244,7 @@ Yapılan seçim türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş türü değerleri, `Selection` `COleConvertDialog` sınıfında belirtilen numaralandırma türü tarafından belirtilir.
+İade türü değerleri, sınıfta `Selection` bildirilen numaralandırma türüne `COleConvertDialog` göre belirtilir.
 
 ```
 enum Selection {
@@ -254,17 +254,17 @@ enum Selection {
     };
 ```
 
-Bu değerlerin kısa açıklamaları şu şekilde yapılır:
+Bu değerlerin kısa açıklamaları aşağıdaki gibidir:
 
-- `COleConvertDialog::noConversion`İletişim kutusu iptal edildiğinde veya Kullanıcı dönüştürme işlemi seçilmediyse döndürüldü. IDOK `COleConvertDialog::DoModal` döndürülürse, Kullanıcı daha önce seçilmiş olandan farklı bir simge seçmiş olabilir.
+- `COleConvertDialog::noConversion`İletişim kutusu iptal edildiyse veya kullanıcı dönüşüm seçmediyse döndürülür. IDOK `COleConvertDialog::DoModal` döndürülürse, kullanıcının daha önce seçilen simgeden farklı bir simge seçmesi mümkündür.
 
-- `COleConvertDialog::convertItem`Radyo Dönüştür düğmesine işaretlenirse, Kullanıcı dönüştürmek için farklı bir öğe seçti ve `DoModal` IDOK öğesini geri döndürdü.
+- `COleConvertDialog::convertItem`Radyoya Dönüştür düğmesi işaretlenirse döndürülür, kullanıcı dönüştürmek için `DoModal` farklı bir öğe seçti ve IDOK'yu döndürdü.
 
-- `COleConvertDialog::activateAs`Radyo olarak etkinleştir düğmesi işaretliyse, Kullanıcı etkinleştirilecek farklı bir öğe seçti ve `DoModal` IDOK öğesini döndürdüğünden döndürüldü.
+- `COleConvertDialog::activateAs`Radyo Olarak Etkinleştir düğmesi işaretlenirse döndürülürse, kullanıcı `DoModal` etkinleştirmek için farklı bir öğe seçti ve İDOK'u döndürdü.
 
-##  <a name="m_cv"></a>Cotaconvertdialog:: m_cv
+## <a name="coleconvertdialogm_cv"></a><a name="m_cv"></a>COleConvertDialog::m_cv
 
-Dönüştür iletişim kutusunun davranışını denetlemek için kullanılan OLEUICONVERT türünün yapısı.
+Convert iletişim kutusunun davranışını denetlemek için kullanılan OLEUICONVERT türünün yapısı.
 
 ```
 OLEUICONVERT m_cv;
@@ -272,9 +272,9 @@ OLEUICONVERT m_cv;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yapının üyeleri, doğrudan veya üye işlevleri aracılığıyla değiştirilebilir.
+Bu yapının üyeleri doğrudan veya üye işlevler aracılığıyla değiştirilebilir.
 
-Daha fazla bilgi için Windows SDK [Oleuiconvert](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) yapısına bakın.
+Daha fazla bilgi için Windows SDK'daki [OLEUICONVERT](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) yapısına bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

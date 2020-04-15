@@ -1,5 +1,5 @@
 ---
-title: 'TN058: MFC modül durumu uygulaması'
+title: 'TN058: MFC Modül Durumu Uygulaması'
 ms.date: 06/28/2018
 helpviewer_keywords:
 - thread state [MFC]
@@ -10,75 +10,75 @@ helpviewer_keywords:
 - DLLs [MFC], module states
 - process state [MFC]
 ms.assetid: 72f5b36f-b3da-4009-a144-24258dcd2b2f
-ms.openlocfilehash: d803dba36b7790173b21dacb6cb34241f27dfb96
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: b64fb6b97474007c44a2124315e83e1ac119f9ec
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65610968"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366616"
 ---
-# <a name="tn058-mfc-module-state-implementation"></a>TN058: MFC modül durumu uygulaması
+# <a name="tn058-mfc-module-state-implementation"></a>TN058: MFC Modül Durumu Uygulaması
 
 > [!NOTE]
-> Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
+> Aşağıdaki teknik not, çevrimiçi belgelere ilk olarak eklenmediğinden beri güncelleştirilemedi. Sonuç olarak, bazı yordamlar ve konular güncel veya yanlış olabilir. En son bilgiler için, çevrimiçi belge dizini ilgi alanı için arama nız önerilir.
 
-Bu teknik Not MFC "Modül durumu" yapıları uygulamasını açıklar. MFC kullanarak paylaşılan bir DLL DLL'lerden Modül durumu uygulaması anlaşılması önemlidir (veya OLE işlem sunucusu).
+Bu teknik not, MFC "modül durumu" yapılarının uygulanmasını açıklar. Modül durumu uygulamasının anlaşılması, Bir DLL'den (veya OLE işlem sunucusundan) MFC paylaşılan DL'leri kullanmak için çok önemlidir.
 
-Bu Not okumadan önce "Yönetme durumu verileri, MFC modülleri için" başvuru [yeni belgeler oluşturma, Windows ve görünümler](../mfc/creating-new-documents-windows-and-views.md). Bu makale, önemli kullanım bilgilerini ve bu konu hakkında genel bilgiler içerir.
+Bu notu okumadan önce, [Yeni Belgeler, Windows ve Görünümler Oluştururken](../mfc/creating-new-documents-windows-and-views.md)"MFC Modüllerinin Durum Verilerini Yönetme"ye bakın. Bu makalede, önemli kullanım bilgileri ve bu konuda genel bakış bilgileri içerir.
 
 ## <a name="overview"></a>Genel Bakış
 
-MFC durum bilgilerini üç tür vardır: Modül durumu, işlem durumu ve iş parçacığı durumu. Bazen bu durum türleri birleştirilebilir. Örneğin, MFC'nin tanıtıcı eşlemeleri, hem yerel modülü hem de iş parçacığı yerel vardır. Bu, farklı eşlemeler her kendi iş parçacığı iki farklı modülü sağlar.
+Üç tür MFC durumu bilgisi vardır: Modül Durumu, İşlem Durumu ve İş Parçacığı Durumu. Bazen bu durum türleri birleştirilebilir. Örneğin, MFC'nin tutamak haritaları hem modül yerel hem de iş parçacığı yereldir. Bu, iki farklı modülün her bir iş parçacığında farklı haritalara sahip olmasını sağlar.
 
-İşlem durumu ve iş parçacığı durumu benzerdir. Bu veri öğelerinin genel değişkenleri her zaman olmuştur, ancak için belirli bir işlemin belirli veya uygun Win32 desteklemek için veya uygun çoklu iş parçacığı destek için iş parçacığı için ihtiyacınız olan şey var. Bu öğeyi ve işlem ve iş parçacığı sınırları onaylamaz, istenen semantiği belirtilen veri öğesi sığacak kategorisini bağlıdır.
+İşlem Durumu ve İş Parçacığı Durumu benzerdir. Bu veri öğeleri geleneksel olarak küresel değişkenler olan, ancak uygun Win32s desteği veya uygun çok iş parçacığı desteği için belirli bir işleme veya iş parçacığına özgü olması gereken şeylerdir. Belirli bir veri öğesinin hangi kategoriye uyduğu, işlem ve iş parçacığı sınırları açısından o öğeye ve istenen semantiklere bağlıdır.
 
-Küresel durumu ya da işlem yerel veya iş parçacığı yerel durumunu içeren modül durumu benzersizdir. Ayrıca, bu hızlı bir şekilde değiştirilebilir.
+Modül Durumu, gerçek anlamda küresel durum veya işlem yerel veya iş parçacığı yerel devlet içerebileceği benzersizdir. Buna ek olarak, hızlı bir şekilde değiştirilebilir.
 
-## <a name="module-state-switching"></a>Modül durumunu değiştirme
+## <a name="module-state-switching"></a>Modül Durum Anahtarlama
 
-Her iş parçacığı "geçerli" veya "etkin" modülü durumuna yönelik bir işaretçi içerir (edilebileceği işaretçi MFC'nin iş parçacığı yerel durumu parçasıdır). Bu işaretçinin yürütme iş parçacığı bir OLE denetim veya DLL ya da bir OLE denetim geri bir uygulamaya çağırma çağıran bir uygulama gibi bir modül sınır geçtiğinde değiştirilir.
+Her iş parçacığı "geçerli" veya "etkin" modül durumuna bir işaretçi içerir (şaşırtıcı değil, işaretçi MFC iş parçacığı yerel durumunun bir parçasıdır). Yürütme iş parçacığı, OLE Denetimi'ne veya DLL'ye çağıran bir uygulama veya bir uygulama içine geri çağıran bir OLE Denetimi gibi bir modül sınırını geçtiğinde bu işaretçi değiştirilir.
 
-Geçerli modül durumunu çağırarak anahtarlanır `AfxSetModuleState`. Çoğunlukla, hiçbir zaman doğrudan API ile ilgilenecektir. MFC, çoğu durumda, çağırır, sizin için (WinMain, OLE giriş noktaları, en `AfxWndProc`vb..). Bu yazma statik olarak özel bir bağlama tarafından herhangi bir bileşeni gerçekleştirilir `WndProc`ve özel bir `WinMain` (veya `DllMain`) hangi Modül durumu geçerli olduğunu bilir. Bu kod DLLMODUL bakarak görebilirsiniz. CPP veya APPMODUL. CPP MFC\SRC dizinde.
+Geçerli modül durumu '. `AfxSetModuleState` Çoğunlukla, doğrudan API ile uğraşmak asla. MFC, birçok durumda, sizin için (WinMain, OLE giriş `AfxWndProc`noktaları, vb) arayacak. Bu, özel bir ve hangi modül durumunun `WndProc`güncel olması `WinMain` gerektiğini `DllMain`bilen özel (veya) bir özel (veya) statik olarak bağlanarak yazdığınız herhangi bir bileşende yapılır. DLLMODUL bakarak bu kodu görebilirsiniz. CPP veya APPMODUL. MFC\SRC dizininde CPP.
 
-Modül durumu ayarlayabilirsiniz ve daha sonra bunu yeniden değil istediğiniz nadir olarak rastlanıyor. Çoğu "kendi modülünüzü göndermek için" istediğiniz zaman geçerli bir durum ve bitirdikten sonra ardından "geri özgün içerik pop". Bu makro tarafından yapılır [AFX_MANAGE_STATE](reference/extension-dll-macros.md#afx_manage_state) ve özel sınıf `AFX_MAINTAIN_STATE`.
+Modül durumunu ayarlamak ve sonra geri ayarlamak istediğiniz nadirdir. Çoğu zaman geçerli bir olarak kendi modül durumu "itmek" ve sonra, sonra, bittikten sonra, "pop" orijinal bağlam geri istiyorum. Bu makro [AFX_MANAGE_STATE](reference/extension-dll-macros.md#afx_manage_state) ve özel sınıf `AFX_MAINTAIN_STATE`tarafından yapılır.
 
-`CCmdTarget` Modül durumu geçiş desteklemek için özel özellikleri de vardır. Özellikle, bir `CCmdTarget` olduğu kök sınıfı, giriş noktaları OLE Otomasyonu nesnesi etkin ve OLE COM için kullanılır. Başka bir giriş noktası gibi sisteme kullanıma sunulan, bu giriş noktaları doğru Modül durumu ayarlamanız gerekir. Nasıl mu bir verilen `CCmdTarget` yanıtı, "oluşturulduğunda nedir"geçerli"modül durumunu hatırlar", sağlayacak şekilde ayarlayabilirsiniz "adlı sonraki olduğunda değer, geçerli Modül durumu anımsanacak" olan "doğru" Modül durumu ne olması gerektiğini bildirin. Sonuç olarak, Modül durumu, bir verilen `CCmdTarget` nesnedir ilişkili olduğu nesne, geçerli Modül durumu. InProc sunucusu yüklenirken, bir nesne oluşturma ve çağırma metotlarını basit bir örneğini alır.
+`CCmdTarget`modül durumu anahtarlama destekleyen özel özelliklere sahiptir. Özellikle, a `CCmdTarget` OLE otomasyonu ve OLE COM giriş noktaları için kullanılan kök sınıfıdır. Sisteme maruz kalan diğer giriş noktaları gibi, bu giriş noktaları da doğru modül durumunu ayarlamalıdır. Verilen `CCmdTarget` bir "doğru" modül durumunun ne olması gerektiğini nasıl bilir? Sonuç olarak, belirli `CCmdTarget` bir nesnenin ilişkili olduğu modül durumu, nesne oluşturulduğunda geçerli olan modül durumudur. INPROC sunucusuyükleme, nesne oluşturma ve yöntemlerini arama gibi basit bir örnek alın.
 
-1. DLL'nin OLE tarafından yüklenen kullanarak `LoadLibrary`.
+1. DLL, OLE tarafından `LoadLibrary`'.
 
-2. `RawDllMain` ilk olarak adlandırılır. DLL için Modül durumu bilinen statik modülü durumuna ayarlar. Bu nedenle `RawDllMain` DLL'ye statik olarak bağlanır.
+1. `RawDllMain`önce denir. Modül durumunu DLL için bilinen statik modül durumuna ayarlar. Bu nedenle `RawDllMain` statik DLL'ye bağlıdır.
 
-1. Bizim nesneyle ilişkili sınıf üreteci için oluşturucu çağrılır. `COleObjectFactory` türetilen `CCmdTarget` ve sonuç olarak, hangi modülü durumda örneği oluşturulduktan hatırlar. Bu önemlidir; nesneleri oluşturmak için sınıf üreteci sorulduğunda, artık geçerli hale getirmek için hangi modülü durumu biliyor.
+1. Nesnemizle ilişkili sınıf fabrikasının oluşturucusu denir. `COleObjectFactory`türetilir `CCmdTarget` ve sonuç olarak, hangi modül durumunda anında olduğunu hatırlar. Bu önemlidir — sınıf fabrikasından nesneler oluşturması istendiğinde, artık hangi modül durumunun geçerli olacağını bilir.
 
-4. `DllGetClassObject` sınıf üreteci almak için çağrılır. MFC, bu modül ile ilişkili sınıf Fabrika listesi arar ve onu döndürür.
+1. `DllGetClassObject`sınıf fabrika elde etmek için denir. MFC, bu modülle ilişkili sınıf fabrika listesini arar ve döndürür.
 
-5. `COleObjectFactory::XClassFactory2::CreateInstance` çağrılır. Bu işlev Modül durumu nesnesi oluşturup döndürmeden önce adım 3'te geçerli bir modül durumuna ayarlar. (ne zaman geçerli olanı `COleObjectFactory` örneklenmiş). İçine yapıldığını [METHOD_PROLOGUE](com-interface-entry-points.md).
+1. `COleObjectFactory::XClassFactory2::CreateInstance`denir. Nesneyi oluşturmadan ve döndürmeden önce, bu işlev modül durumunu adım 3'te geçerli olan modül `COleObjectFactory` durumuna ayarlar (anlık olarak oluşturulduğunda geçerli olan) Bu [METHOD_PROLOGUE](com-interface-entry-points.md)içinde yapılır.
 
-1. Nesne oluşturulduğunda, çok uzun bir `CCmdTarget` türetme ve aynı şekilde `COleObjectFactory` anımsanacak hangi Modül durumu etkin, bu nedenle bu yeni nesne yok. Nesne geçmek için hangi modülü durumu bilir artık bunu ne zaman çağrılır.
+1. Nesne oluşturulduğunda, o da `CCmdTarget` bir türev dir `COleObjectFactory` ve aynı şekilde hangi modül durumunun etkin olduğu hatırlanır, bu yeni nesne de öyle. Artık nesne, çağrıldığında hangi modül durumuna geçilmeye cereyan edilsin.
 
-1. İstemci, alınan OLE COM nesne üzerinde bir işlevi çağırır, `CoCreateInstance` çağırın. Nesne çağrıldığında kullandığı `METHOD_PROLOGUE` Modül durumu gibi geçiş yapmak için `COleObjectFactory` yapar.
+1. İstemci, `CoCreateInstance` çağrısından aldığı OLE COM nesnesi üzerinde bir işlev çağırır. Nesne çağrıldığında, `METHOD_PROLOGUE` modül durumunu tıpkı yaptığı `COleObjectFactory` gibi değiştirmek için kullanılır.
 
-Gördüğünüz gibi Modül durumu oluşturuldukları sırada nesneden nesneye yayılır. Modül durumu uygun şekilde ayarlanmış olması önemlidir. Ayarlanmazsa, DLL veya COM nesnenizin kötü, arama veya kendi kaynaklarını bulamıyor olabilir ya da sizin için berbat başka yöntemlerle de başarısız olabilir bir MFC uygulaması ile etkileşimde bulunabilir.
+Gördüğünüz gibi, modül durumu oluşturuldukça nesneden nesneye yayılır. Modül durumunun uygun şekilde ayarlı olması önemlidir. Ayarlanmazsa, DLL veya COM nesneniz onu çağıran bir MFC uygulamasıyla kötü etkileşimde bulunabilir veya kendi kaynaklarını bulamayabilir veya başka sefil şekillerde başarısız olabilir.
 
-Belirli türdeki DLL'leri, özellikle "MFC uzantısı" DLL modülü durumda geçiş yapabilirim unutmayın, `RawDllMain` (aslında, bunlar genellikle bile yoksa bir `RawDllMain`). "Bunları kullanan uygulamada gerçekten olarak varsa" davranmaya hedeflenen olmasıdır. Çalışan uygulamada çok bir parçası ve bu uygulamanın genel durumunu değiştirmek için kendi amacınıza olur.
+DLs belirli türde, özellikle "MFC Extension" DLLs kendi `RawDllMain` modül durumu geçiş olmadığını unutmayın (aslında, `RawDllMain`genellikle bile yok). Bunun nedeni, onları kullanan uygulamada gerçekte mevcut oldukları "sanki" gibi bir şekilde nasıl bir şekilde nasıl bir şekilde iyi bir şekilde bulunmaları gerektiğidir. Onlar çok çalışan uygulamanın bir parçasıdır ve bu uygulamanın küresel durumunu değiştirmek için niyetleri olduğunu.
 
-OLE denetimleri ve diğer DLL'leri çok farklıdır. Çağıran uygulamanın durumunu değiştirmek istemediğiniz; bunların çağrılması bir uygulama bir MFC uygulaması bile olmayabilir ve bu nedenle olabilir hiçbir durum değiştirmek için. Modül durumu geçiş bulunmuştur nedeni budur.
+OLE Kontrolleri ve diğer DL'ler çok farklıdır. Arama uygulamasının durumunu değiştirmek istemezler; onları çağıran uygulama bile bir MFC uygulaması olmayabilir ve bu nedenle değiştirmek için hiçbir durum olabilir. Modül durum anahtarlamasının icat edilmiş olmasının nedeni budur.
 
-Gibi bir iletişim kutusunda, DLL başlatan bir DLL'den dışarı aktarılan işlevler için işlev başına aşağıdaki kodu ekleyin yapmanız gerekir:
+DLL'nizde bir iletişim kutusu başlatan bir DLL'den dışa aktarılan işlevler için işlevin başına aşağıdaki kodu eklemeniz gerekir:
 
 ```cpp
 AFX_MANAGE_STATE(AfxGetStaticModuleState())
 ```
 
-Bu geçerli bir modül durumunu döndürüldüğü durumu ile değiştirir [AfxGetStaticModuleState](reference/extension-dll-macros.md#afxgetstaticmodulestate) geçerli kapsamdaki sonuna kadar.
+Bu, geçerli modül durumunu [AfxGetStaticModuleState'den](reference/extension-dll-macros.md#afxgetstaticmodulestate) dönen durumla, geçerli kapsamın sonuna kadar değiştirir.
 
-AFX_MODULE_STATE makrosu kullanılmıyorsa, DLL'lerdeki kaynakları ile ilgili sorunlar ortaya çıkar. Varsayılan olarak, kaynak şablonu yüklemek için ana uygulama kaynak tanıtıcısı MFC kullanır. Bu şablon, aslında DLL içinde depolanır. MFC modül durumu bilgilerini AFX_MODULE_STATE makro tarafından kullanılamayacağı değil, kök nedeni. MFC modül durumu kaynağı tanıtıcısı kurtarılır. Modül durumu geçiş değil, kullanılacak yanlış kaynak tanıtıcısı neden olur.
+AFX_MODULE_STATE makrosu kullanılmazsa, DL'lerde kaynaklarla ilgili sorunlar oluşur. Varsayılan olarak, MFC kaynak şablonu yüklemek için ana uygulamanın kaynak tutamacını kullanır. Bu şablon aslında DLL'de depolanır. Temel nedeni, MFC'nin modül durumu bilgilerinin AFX_MODULE_STATE makrotarafından değiştirilmemiş olmasıdır. Kaynak tutamacı MFC'nin modül durumundan kurtarılır. Modül durumunu değiştirmemek, yanlış kaynak tanıtıcısının kullanılmasına neden olur.
 
-AFX_MODULE_STATE dll her işlevde beklemeye gerek yoktur. Örneğin, `InitInstance` MFC modül durumu önce otomatik olarak kayar çünkü AFX_MODULE_STATE olmadan uygulamayı MFC kod tarafından çağrılabilir `InitInstance` ve ardından geri sonra anahtarları `InitInstance` döndürür. Aynı tüm ileti eşlemesi işleyicileri için geçerlidir. Normal MFC DLL'leri gerçekte herhangi bir ileti yönlendirme önce Modül durumu otomatik olarak geçer bir özel ana pencere yordamı vardır.
+AFX_MODULE_STATE DLL'deki her işleve konması gerekmez. Örneğin, `InitInstance` MFC modül durumunu önce otomatik olarak kaydırDığı `InitInstance` ve döndükten sonra `InitInstance` değiştirdiği için, uygulamadaki MFC kodu tarafından AFX_MODULE_STATE çağrılabilir. Aynı durum tüm ileti eşlemi işleyicileri için de geçerlidir. Normal MFC DLL'ler aslında herhangi bir iletiyi yönlendirmeden önce modül durumunu otomatik olarak anahtarlayan özel bir ana pencere yordamına sahiptir.
 
-## <a name="process-local-data"></a>Yerel verilerini işleme
+## <a name="process-local-data"></a>Yerel Verileri İşlem
 
-Yerel verileri işlemek, Win32 DLL modelinin zorluğunu beri değil harika böyle bir sorun olmayacaktır. Win32 ' tüm DLL'leri bile birden çok uygulama tarafından yüklendiğinde, genel veri paylaşın. Bu, çok burada her DLL için DLL bağlayan her bir işlemdeki veri alanı ayrı bir kopyasını alır "gerçek" Win32 DLL veri modelinden farklıdır. Karmaşıklığa eklemek için bir Win32 DLL içinde yığında ayrılan veri aslında belirli (en az önceye sahipliği geçebileceği) işlemidir. Aşağıdaki veri ve kod göz önünde bulundurun:
+Win32s DLL modelinin zorluğu olmasaydı yerel verileri işlemek bu kadar büyük bir endişe kaynağı olmazdı. Win32'lerde tüm DL'ler, birden fazla uygulama tarafından yüklendiğinde bile küresel verilerini paylaşır. Bu, her DLL'nin DLL'ye iliştirilen her işlemde kendi veri alanının ayrı bir kopyasını aldığı "gerçek" Win32 DLL veri modelinden çok farklıdır. Karmaşıklık eklemek için, bir Win32s DLL yığın üzerinde ayrılan veri aslında işlem özel (en azından kadarıyla mülkiyet gider). Aşağıdaki verileri ve kodu göz önünde bulundurun:
 
 ```cpp
 static CString strGlobal; // at file scope
@@ -96,13 +96,13 @@ void GetGlobalString(LPCTSTR lpsz, size_t cb)
 }
 ```
 
-Yukarıdaki kod bir DLL içinde bulunuyorsa ve iki işlem A ve B (aslında iki örneği aynı uygulama olması olabilir) yüklenen DLL'i ne olacağını düşünün. Bir çağrı `SetGlobalString("Hello from A")`. Sonuç olarak, için bellek tahsis `CString` A. tutmak işlem bağlamında veriler aklınızda `CString` kendisi geneldir ve her iki A görünür ve B. Artık B çağırır `GetGlobalString(sz, sizeof(sz))`. B kümesi verileri görmek mümkün olacaktır. Win32 Win32 gibi işlemleri arasında hiçbir koruma sağladığından budur. İlk sorun olmasıdır; Çoğu durumda farklı bir uygulama tarafından ait olduğu kabul edilen genel verileri etkileyen bir uygulama için uygun değil.
+Yukarıdaki kodun bir DLL'de bulunması ve DLL'nin A ve B iki işlemi yle yüklendiğini düşünün (aslında aynı uygulamanın iki örneği olabilir). Bir `SetGlobalString("Hello from A")`arama. Sonuç olarak, bellek a. `CString` kendisi küresel ve hem A hem de `CString` B tarafından görülebilir olduğunu unutmayın süreci Bağlamında veri için ayrılmıştır. Şimdi B `GetGlobalString(sz, sizeof(sz))`çağırır . B, A kümesinin verilerini görebilir. Bunun nedeni Win32s'nin Win32 gibi süreçler arasında hiçbir koruma sunmasıdır. Bu ilk sorun; birçok durumda, bir uygulamanın farklı bir uygulamaya ait olduğu düşünülen genel verileri etkilemesi istenmez.
 
-Ek sorunlar vardır. Artık çıkar olduğunu varsayalım. A çıktığında, tarafından kullanılan bellek '`strGlobal`' dizesi sistemi için kullanılabilir yapılan — işlem A tarafından ayrılan tüm bellek işletim sistemi tarafından otomatik olarak diğer bir deyişle, serbest. Çünkü serbest değil `CString` yok Edicisi çağrılan; henüz adlı edilmemiş. Yalnızca serbest kendisine ayrılan uygulama Sahne bıraktığından. B adlı şimdi `GetGlobalString(sz, sizeof(sz))`, geçerli veri alamayabilir. Başka bir uygulama bu bellek başka bir şey kullanmış olabilirsiniz.
+Başka sorunlar da var. Diyelim ki A şimdi çıkıyor. A çıktığında, ' '`strGlobal`dizesi tarafından kullanılan bellek sistem için kullanılabilir hale getirilir — yani A işlemi tarafından ayrılan tüm bellek işletim sistemi tarafından otomatik olarak serbest bırakılır. `CString` Yıkıcı çağrıldığı için serbest bırakılmaz; Henüz çağrılmadı. Yalnızca onu tahsis eden uygulama sahneyi terk ettiği için serbest bırakılır. Şimdi B `GetGlobalString(sz, sizeof(sz))`aradı, geçerli veri almayabilir. Başka bir uygulama başka bir şey için bu belleği kullanmış olabilir.
 
-Açıkça bir sorun var. MFC 3.x iş parçacığı yerel depolama (TLS) olarak adlandırılan tekniği kullanılır. MFC 3.x, çağrılmaz olsa bile, Win32 altında gerçekten bir yerel işlem depolama dizini davranan bir TLS dizini ayrılamadı ve ardından başvuru, TLS dizinini temel alarak tüm verileri. Bu Win32 iş parçacığı-yerel verileri depolamak için kullanılan TLS dizini için benzer (aşağıda bu konu hakkında daha fazla bilgi için bkz:). Bu, işlem başına en az iki TLS dizinlerini kullanmaya her MFC DLL neden oldu. Birçok OLE Denetim dll (OCXs) yüklemek için hesap, (yalnızca 64 kullanılabilir yok) TLS dizinlerini dışında hızlıca çalıştırın. Ayrıca, tek bir yapı, tek bir yerde tüm bu verileri yerleştirmek MFC vardı. Bu çok Genişletilebilir değildi ve TLS dizinlerini kullanımı ile ilgili ideal değildi.
+Belli ki bir sorun var. MFC 3.x iş parçacığı yerel depolama (TLS) adı verilen bir teknik kullandı. MFC 3.x, Win32s altında gerçekten bir süreç-yerel depolama dizini olarak hareket eden bir TLS endeksi tahsis edecek, bu çağrılmasa bile ve daha sonra bu TLS endeksine dayalı tüm verilere başvurur. Bu, iş parçacığı yerel verilerini Win32'de depolamak için kullanılan TLS dizinine benzer (bu konuda daha fazla bilgi için aşağıya bakın). Bu, her MFC DLL'nin işlem başına en az iki TLS endeksini kullanmasına neden oldu. Birçok OLE Control DLl (OCX) yükleme için hesap yaptığınızda, hızlı bir şekilde TLS endeksleri (sadece 64 kullanılabilir) biter. Buna ek olarak, MFC tüm bu verileri tek bir yerde, tek bir yapıda yerleştirmek zorunda kaldı. Çok genişletilebilir değildi ve TLS endekslerinin kullanımı açısından ideal değildi.
 
-MFC 4.x sınıf şablonları, "sarmalamadan" geçici olarak yerel bir işlem olmalıdır verileri kümesiyle bu adresleri. Örneğin, yukarıda açıklanan sorun yazarak düzeltilmesi:
+MFC 4.x, yerel işlem olması gereken verilerin etrafına "sarabileceğiniz" sınıf şablonları kümesiyle bu adresi ele alıyor. Örneğin, yukarıda belirtilen sorun yazılarak giderilebilir:
 
 ```cpp
 struct CMyGlobalData : public CNoTrackObject
@@ -124,13 +124,13 @@ void GetGlobalString(LPCTSTR lpsz, size_t cb)
 }
 ```
 
-MFC, bu iki adımda uygular. İlk olarak, Win32 üzerinde bir katman var. __Tls\*__  API'leri (**TlsAlloc**, **TlsSetValue**, **TlsGetValue**, vs.), kaç tane DLL'leri sahip olsun, işlem başına yalnızca iki TLS dizini kullanın. İkinci olarak, `CProcessLocal` şablonu, bu verilere erişmek için sağlanır. İşleci geçersiz olduğu ne göreceğiniz yukarıda sezgisel sözdizimi sağlar ->. Tarafından Sarmalanan tüm nesneleri `CProcessLocal` nesnesinden türetilmesi `CNoTrackObject`. `CNoTrackObject` bir alt düzey ayırıcı sağlar (**LocalAlloc**/**LocalFree**) ve sanal bir yıkıcı sağlayacak şekilde işlem sonlandırıldığında MFC otomatik olarak işlem yerel nesneleri yok edebilir. Ek temizleme gerekiyorsa özel bir yok edici bu tür nesneler olabilir. Derleyici katıştırılmış yok etmek için bir varsayılan yok Edicisi oluşturacak bu yana yukarıdaki örnekte, gerektirmeyen `CString` nesne.
+MFC bunu iki adımda uygular. İlk olarak, win32 __Tls\* __ API'lerinin **(TlsAlloc,** **TlsSetValue,** **TlsGetValue,** vb.) üzerinde, kaç DL'ye sahip olursanız olun, işlem başına sadece iki TLS dizin kullanan bir katman vardır. İkinci olarak, `CProcessLocal` şablon bu verilere erişmek için sağlanır. Yukarıda gördüğünüz sezgisel sözdizimini sağlayan operatör > geçersiz kılar. Tarafından `CProcessLocal` sarılmış tüm nesneler. `CNoTrackObject` `CNoTrackObject`daha düşük seviyeli bir ayırıcı **(LocalAlloc**/**LocalFree)** ve MFC işlemi sonlandırıldığında otomatik olarak işlem yerel nesneleri yok edebilir gibi bir sanal yıkıcı sağlar. Ek temizleme gerekiyorsa, bu tür nesnelerin özel bir yıkıcısı olabilir. Derleyici katıştırılmış `CString` nesneyi yok etmek için varsayılan bir yıkıcı oluşturacağı için yukarıdaki örnekte bir tane gerekmez.
 
-Bu yaklaşım için ilgi çekici diğer avantajları vardır. Yalnızca tüm bunlar `CProcessLocal` nesneleri otomatik olarak yok gerekene kadar bunlar oluşturulur değil. `CProcessLocal::operator->` ilişkili nesne ilk zamana ve hiçbir erken örneği oluşturmak. Yukarıdaki örnekte, anlamına '`strGlobal`' dize oluşturulmadı kadar ilk kez `SetGlobalString` veya `GetGlobalString` çağrılır. Bazı durumlarda, bu DLL başlatma süresini kısaltmanıza yardımcı olabilir.
+Bu yaklaşımın diğer ilginç avantajları vardır. Tüm `CProcessLocal` nesneler otomatik olarak yok etmekle kalmıyor, aynı şekilde ihtiyaç duyulana kadar oluşturulmuyor. `CProcessLocal::operator->`ilişkili nesneyi ilk çağrıldığında anında ve daha önce değil. Yukarıdaki örnekte, ''`strGlobal`dizesi ilk kez `SetGlobalString` yapılanmayacak `GetGlobalString` veya çağrılmayacak anlamına gelir. Bazı durumlarda, bu DLL başlangıç süresini azaltmaya yardımcı olabilir.
 
-## <a name="thread-local-data"></a>İş parçacığı yerel veriler
+## <a name="thread-local-data"></a>İş Parçacığı Yerel Veriler
 
-Verileri belirli bir iş parçacığına yerel benzer yerel verileri işlemek için iş parçacığında yerel verilerin kullanılır. Diğer bir deyişle, bu verilere erişen her bir iş parçacığı için verileri ayrı bir örneğini gerekir. Bu kapsamlı eşitleme mekanizmaları yerine birden çok kez kullanılabilir. Veriler birden çok iş parçacığı tarafından paylaşılan gerekmez, bu mekanizmalar pahalı ve gereksiz olabilir. Yarışmayı varsayalım bir `CString` nesne (Yukarıdaki örnek gibi büyük). Bu iş parçacığı yerel ile sarmalama yapabiliyoruz bir `CThreadLocal` şablonu:
+Yerel verileri işlemeye benzer şekilde, verilerin belirli bir iş parçacığına yerel olması gerektiğinde iş parçacığı yerel verileri kullanılır. Diğer bir süre, bu verilere erişen her iş parçacığı için ayrı bir veri örneği gerekir. Bu, kapsamlı eşitleme mekanizmaları yerine birçok kez kullanılabilir. Verilerin birden çok iş parçacığı tarafından paylaşılması gerekmiyorsa, bu tür mekanizmalar pahalı ve gereksiz olabilir. Bir `CString` nesnemiz olduğunu varsayalım (yukarıdaki örneğe çok benzer). Bir `CThreadLocal` şablonla sararak iş parçacığı yerel yapabiliriz:
 
 ```cpp
 struct CMyThreadData : public CNoTrackObject
@@ -160,11 +160,11 @@ void MakeRandomString()
 }
 ```
 
-Varsa `MakeRandomString` çağrıldı iki farklı iş parçacıklarından her "dize farklı şekillerde birbirleriyle engellemeden karışık". Bu olmadığından aslında bir `strThread` tek bir genel Örneğimiz yerine iş parçacığı başına örnek.
+İki `MakeRandomString` farklı iş parçacığı çağrıldıysa, her biri diğerini karıştırmadan dizeyi farklı şekillerde "karıştırır". Bunun nedeni, iş `strThread` parçacığı başına sadece bir genel örnek yerine bir örnek olmasıdır.
 
-Bir başvuru yakalamak için nasıl kullanıldığını unutmayın `CString` yönelik bir kez yerine bir kez döngü yinelemesi. Döngü kodunun ile yazılmış `threadData->strThread` her yerde '`str`' kullanılır, ancak kod yürütme çok daha yavaş olur. Böyle başvurular Döngülerde oluştuğunda bir başvuru verileri önbelleğe almak idealdir.
+Bir başvurunun, döngü yinelemesi başına bir kez yerine adresi bir kez yakalamak için nasıl kullanıldığına `CString` dikkat edin. Döngü kodu `threadData->strThread` her yerde '`str`' ' ile yazılmış olabilir, ancak kod yürütme çok daha yavaş olacaktır. Bu tür başvurular döngüler halinde gerçekleştiğinde verilere bir başvuru önbelleğe almak en iyisidir.
 
-`CThreadLocal` Sınıf şablonu mekanizmalarının aynısını kullanır, `CProcessLocal` yapar ve aynı uygulama teknikleri.
+Sınıf `CThreadLocal` `CProcessLocal` şablonu, aynı mekanizmaları ve aynı uygulama tekniklerini kullanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

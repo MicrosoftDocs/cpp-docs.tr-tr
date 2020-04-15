@@ -15,34 +15,34 @@ helpviewer_keywords:
 - overriding, DoFieldExchange
 - m_nFields data member, initializing
 ms.assetid: f00d882a-ff1b-4a75-9717-98d8762bb237
-ms.openlocfilehash: 08d58561e0fb9305ff3a8d6aa6a62eb24d9b9d25
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8e42fc9da672ca4ef97e775776935650ab7f545a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213050"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81367124"
 ---
 # <a name="record-field-exchange-working-with-the-wizard-code"></a>Kayıt Alanı Değişimi: Sihirbaz Kodu ile Çalışma
 
 > [!NOTE]
-> MFC ODBC Tüketicisi Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. Yine de bir tüketicisi el ile oluşturabilirsiniz.
+> MFC ODBC Tüketici sihirbazı Visual Studio 2019 ve sonraki yıllarda kullanılamaz. Yine de bir tüketiciyi el ile oluşturabilirsiniz.
 
-Bu konuda, RFX 'i desteklemek için MFC Uygulama Sihirbazı 'Nın ( [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)bölümünde açıklandığı gibi) yazma **kodu ve bu** kodu nasıl değiştirmek isteyebileceğiniz açıklanmaktadır.
+Bu konu, MFC Uygulama Sihirbazı ve **Add Class** 'ın [(MFC ODBC Tüketici eklemede](../../mfc/reference/adding-an-mfc-odbc-consumer.md)açıklandığı gibi) RFX'i desteklemek için yazdığı kodu ve bu kodu nasıl değiştirmek isteyebileceğini açıklar.
 
 > [!NOTE]
->  Bu konu, toplu satır yakalamanın uygulanmadığı `CRecordset` türetilen sınıflar için geçerlidir. Toplu satır getirme kullanıyorsanız, toplu kayıt alanı değişimi (toplu RFX) uygulanır. Toplu RFX, RFX 'e benzerdir. Farkları anlamak için bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> Bu konu, toplu satır `CRecordset` alma nın uygulanmadığı sınıflar için geçerlidir. Toplu satır alma kullanıyorsanız, toplu kayıt alanı değişimi (Toplu RFX) uygulanır. Toplu RFX RFX benzer. Farklılıkları anlamak için bkz: [Recordset: Kayıtları Toplu Olarak Alma (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-MFC Uygulama Sihirbazı veya **Sınıf Ekle**ile bir kayıt kümesi sınıfı oluşturduğunuzda sihirbaz, sihirbazda yaptığınız veri kaynağı, tablo ve sütun seçeneklerine bağlı olarak sizin IÇIN aşağıdaki RFX ile ilgili öğeleri Yazar:
+MFC Application Wizard veya **Add Class**ile bir kayıt kümesi sınıfı oluşturduğunuzda, sihirbaz, sihirbazda yaptığınız veri kaynağı, tablo ve sütun seçimlerini temel alınarak sizin için Aşağıdaki RFX ile ilgili öğeleri yazar:
 
-- Kayıt kümesi sınıfındaki kayıt kümesi alanı veri üyelerinin bildirimleri
+- Kayıt kümesi sınıfındaki kayıt alanı veri üyelerinin bildirimleri
 
-- `CRecordset::DoFieldExchange` geçersiz kılma
+- Bir geçersiz kılma`CRecordset::DoFieldExchange`
 
-- Kayıt kümesi sınıf oluşturucusunda kayıt kümesi alan veri üyeleri başlatma
+- Recordset alan veri üyelerinin kayıt kümesi sınıfı oluşturucuda başlatılması
 
-##  <a name="field-data-member-declarations"></a><a name="_core_the_field_data_member_declarations"></a>Alan veri üyesi bildirimleri
+## <a name="field-data-member-declarations"></a><a name="_core_the_field_data_member_declarations"></a>Alan Verileri Üye Beyanları
 
-Sihirbazlar, sınıf `CSections`için aşağıdakine benzer bir. h dosyasına bir kayıt kümesi sınıfı bildirimi Yazar:
+Sihirbazlar, sınıf `CSections`için aşağıdakileri andıran bir .h dosyasına bir kayıt kümesi sınıf bildirimi yazar:
 
 ```cpp
 class CSections : public CRecordset
@@ -74,15 +74,15 @@ public:
 };
 ```
 
-Kendi oluşturduğunuz parametre veri üyelerini veya yeni alan veri üyelerini eklerseniz, bunları sihirbaz tarafından oluşturulan bir sonraki şekilde ekleyin.
+Kendi bağlandığınız parametre veri üyeleri veya yeni alan veri üyeleri eklerseniz, bunları sihirbaz tarafından oluşturulanlardan sonra ekleyin.
 
-Ayrıca, sihirbazın `CRecordset`sınıfının `DoFieldExchange` üye işlevini geçersiz kıldığını unutmayın.
+Ayrıca, sihirbaz Sınıfın `DoFieldExchange` `CRecordset`üye işlevini geçersiz kılar dikkat edin.
 
-##  <a name="dofieldexchange-override"></a><a name="_core_the_dofieldexchange_override"></a>DoFieldExchange geçersiz kılma
+## <a name="dofieldexchange-override"></a><a name="_core_the_dofieldexchange_override"></a>DoFieldExchange Geçersiz Kılma
 
-[DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) , RFX 'in kalbidir. Çerçeve, verileri veri kaynağından kayıt kümesine ya da kayıt kümesinden veri kaynağına taşımak için gereken her seferinde `DoFieldExchange` çağırır. `DoFieldExchange` Ayrıca, [ıfielddirty](../../mfc/reference/crecordset-class.md#isfielddirty) ve [ıfieldnull](../../mfc/reference/crecordset-class.md#isfieldnull) üye işlevleri aracılığıyla alan veri üyeleri hakkında bilgi edinmeyi da destekler.
+[DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) RFX kalbidir. Çerçeve, `DoFieldExchange` verileri veri kaynağından kayıt kümesine veya kayıt kümesinden veri kaynağına taşıması gereken her zaman çağırır. `DoFieldExchange`ayrıca [IsFieldDirty](../../mfc/reference/crecordset-class.md#isfielddirty) ve [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull) üye işlevleri aracılığıyla alan veri üyeleri hakkında bilgi edinmeyi destekler.
 
-Aşağıdaki `DoFieldExchange` geçersiz kılma `CSections` sınıfı içindir. Sihirbaz, işlevi kayıt kümesi sınıfınız için. cpp dosyasına yazar.
+Aşağıdaki `DoFieldExchange` geçersiz kılma `CSections` sınıf içindir. Sihirbaz, kayıt kümesi sınıfınız için .cpp dosyasındaki işlevi yazar.
 
 ```cpp
 void CSections::DoFieldExchange(CFieldExchange* pFX)
@@ -96,28 +96,28 @@ void CSections::DoFieldExchange(CFieldExchange* pFX)
 }
 ```
 
-İşlevinin aşağıdaki temel özelliklerine dikkat edin:
+Fonksiyonun aşağıdaki temel özelliklerine dikkat edin:
 
-- İşlevin bu bölümüne alan eşlemesi denir.
+- İşlevin bu bölümüne alan haritası denir.
 
-- `pFX` işaretçisi aracılığıyla `CFieldExchange::SetFieldType`çağrısı. Bu çağrı, tüm RFX işlevinin `DoFieldExchange` sonuna kadar çağırılacağını veya `SetFieldType` bir sonraki çağrının çıkış sütunları olduğunu belirtir. Daha fazla bilgi için bkz. [CFieldExchange:: SETbir](../../mfc/reference/cfieldexchange-class.md#setfieldtype).
+- İşaretçi `CFieldExchange::SetFieldType`aracılığıyla bir çağrı. `pFX` Bu çağrı, tüm RFX işlevinin sonuna `DoFieldExchange` kadar veya bir `SetFieldType` sonraki çağrının çıkış sütunları olduğunu belirtir. Daha fazla bilgi için [Bkz. CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype).
 
-- `RFX_Text` genel işlevine birkaç çağrı — alan veri üyesi başına bir tane (örnekteki `CString` değişken). Bu çağrılar, veri kaynağındaki bir sütun adı ve alan veri üyesi arasındaki ilişkiyi belirtir. RFX işlevleri gerçek veri aktarımını işler. Sınıf kitaplığı tüm ortak veri türleri için RFX işlevlerini sağlar. RFX işlevleri hakkında daha fazla bilgi için bkz. [kayıt alanı değişimi: RFX Işlevlerini kullanma](../../data/odbc/record-field-exchange-using-the-rfx-functions.md).
+- Genel işleve `RFX_Text` birkaç çağrı - alan veri üyesi `CString` başına bir çağrı (hepsi örnekte değişkendir). Bu çağrılar, veri kaynağındaki sütun adı ile alan veri üyesi arasındaki ilişkiyi belirtir. Gerçek veri aktarımını RFX işlevleri yapar. Sınıf kitaplığı, tüm ortak veri türleri için RFX işlevleri sağlar. RFX işlevleri hakkında daha fazla bilgi için Kayıt [Alanı Değişimi: RFX Fonksiyonlarını Kullanma.](../../data/odbc/record-field-exchange-using-the-rfx-functions.md)
 
     > [!NOTE]
-    >  Sonuç kümesindeki sütunların sırası, `DoFieldExchange`RFX işlev çağrılarının sırasıyla aynı olmalıdır.
+    >  Sonuç kümesinizdeki sütunların sırası, `DoFieldExchange`RFX işlevi ndeki çağrıların sırasına uygun olmalıdır.
 
-- `pFX`, `DoFieldExchange`çağırdığında çerçevenin aktardığı bir [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) nesnesine işaretçi. `CFieldExchange` nesnesi, `DoFieldExchange` gerçekleştirilecek işlemi, aktarmanın yönünü ve diğer bağlam bilgilerini belirtir.
+- Bir `pFX` [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) nesnesinin işaretçisi, `DoFieldExchange`çerçeveyi aradığında geçer. Nesne, `CFieldExchange` gerçekleştirecek işlemi, `DoFieldExchange` aktarım yönünü ve diğer bağlam bilgilerini belirtir.
 
-##  <a name="recordset-constructor"></a><a name="_core_the_recordset_constructor"></a>Kayıt kümesi Oluşturucusu
+## <a name="recordset-constructor"></a><a name="_core_the_recordset_constructor"></a>Recordset Yapıcı
 
-Sihirbazların yazacağı kayıt kümesi Oluşturucusu RFX ile ilgili iki şey içerir:
+Sihirbazların yazdığı kaydedici oluşturucu, RFX ile ilgili iki şey içerir:
 
 - Her alan veri üyesi için bir başlatma
 
-- Alan veri üyelerinin sayısını içeren [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) veri üyesine yönelik bir başlatma
+- Alan veri üye sayısını içeren [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) veri üyesi için bir başlatma
 
-`CSections` kayıt kümesi örneği için Oluşturucu şuna benzer:
+Kayıt kümesi örneğinin `CSections` oluşturucusu aşağıdaki gibi görünür:
 
 ```cpp
 CSections::CSections(CDatabase* pdb)
@@ -133,13 +133,13 @@ CSections::CSections(CDatabase* pdb)
 ```
 
 > [!NOTE]
->  Herhangi bir alan veri üyesini el ile eklerseniz, yeni sütunları dinamik olarak bağladığınızda `m_nFields`artırmanız gerekir. Bunu başka bir kod satırı ekleyerek yapın, örneğin:
+> Herhangi bir alan veri üyesini el ile eklerseniz, yeni sütunları dinamik olarak `m_nFields`bağlarsanız, artırıcı nız gerekir. Bunu, şu gibi başka bir kod satırı ekleyerek yapın:
 
 ```cpp
 m_nFields += 3;
 ```
 
-Bu, üç yeni alan eklemek için koddur. Herhangi bir parametre veri üyesi eklerseniz, parametre veri üyelerinin sayısını içeren [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams) veri üyesini başlatmalısınız. `m_nParams` başlatmayı köşeli ayracın dışına koyun.
+Bu, üç yeni alan eklemek için koddur. Herhangi bir parametre veri üyesi eklerseniz, parametre veri üye sayısını içeren [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams) veri üyesini başlatmanız gerekir. Başlaştırmayı parantezin `m_nParams` dışına koyun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

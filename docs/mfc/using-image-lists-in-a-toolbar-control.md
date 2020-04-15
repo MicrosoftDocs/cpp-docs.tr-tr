@@ -6,35 +6,35 @@ helpviewer_keywords:
 - image lists [MFC], toolbar controls
 - CToolBarCtrl class [MFC], image lists
 ms.assetid: ccbe8df4-4ed9-4b54-bb93-9a1dcb3b97eb
-ms.openlocfilehash: d027f7834c67ad0ed51d1b7fda5b2704972efe38
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 81468528c15300a7e9ace6b20fd9fb34818f1928
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411571"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366493"
 ---
 # <a name="using-image-lists-in-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminde Görüntü Listeleri Kullanma
 
-Varsayılan olarak, bir toolbar denetimine düğme tarafından kullanılan görüntülerin tek bir bit eşlem olarak depolanır. Ancak, düğme resimlerini de görüntü listeleri kümesi içinde depolayabilirsiniz. Araç çubuğu denetim nesnesi, en fazla üç ayrı bir görüntü listeleri kullanabilirsiniz:
+Varsayılan olarak, araç çubuğu denetimindeki düğmeler tarafından kullanılan görüntüler tek bir bit eşlemi olarak depolanır. Ancak, düğme görüntülerini bir dizi resim listesinde de depolayabilirsiniz. Araç çubuğu denetim nesnesi en fazla üç ayrı resim listesi kullanabilir:
 
-- Görüntü listesi içerir görüntüler şu anda etkin araç çubuğu düğmeleri için etkin.
+- Etkinleştirilmiş resim listesi Şu anda etkin olan araç çubuğu düğmeleri için görüntüler içerir.
 
-- Görüntü listesi içerir görüntüler şu anda devre dışı bırakılmış bir araç çubuğu düğmeleri için devre dışı.
+- Devre dışı bırakılmış resim listesi Şu anda devre dışı bırakılan araç çubuğu düğmeleri için görüntüler içerir.
 
-- Görüntü listesi içerir görüntüler şu anda vurgulanır araç çubuğu düğmeleri için vurgulanır. Bu görüntü listesi araç çubuğu TBSTYLE_FLAT stili kullandığında kullanılır.
+- Vurgulanan resim listesi Şu anda vurgulanan araç çubuğu düğmeleri için görüntüler içerir. Bu resim listesi yalnızca araç çubuğu TBSTYLE_FLAT stilini kullandığında kullanılır.
 
-Bu görüntü listeleri araç çubuğu denetimi tarafından kullanılan bunlarla ilişkilendirdiğinizde `CToolBarCtrl` nesne. Bu ilişkilendirmeyi çağrı yaparak gerçekleştirilir [CToolBarCtrl::SetImageList](../mfc/reference/ctoolbarctrl-class.md#setimagelist), [SetDisabledImageList](../mfc/reference/ctoolbarctrl-class.md#setdisabledimagelist), ve [SetHotImageList](../mfc/reference/ctoolbarctrl-class.md#sethotimagelist).
+Bu resim listeleri, `CToolBarCtrl` nesneyle ilişkilendirdiğinizde araç çubuğu denetimi tarafından kullanılır. Bu ilişkilendirme [CToolBarCtrl::SetImageList,](../mfc/reference/ctoolbarctrl-class.md#setimagelist) [SetDisabledImageList](../mfc/reference/ctoolbarctrl-class.md#setdisabledimagelist)ve [SetHotImageList](../mfc/reference/ctoolbarctrl-class.md#sethotimagelist)aramaları yaparak gerçekleştirilir.
 
-Varsayılan olarak, bir MFC kullanmadığı `CToolBar` MFC Uygulama araç çubukları uygulamak için sınıfı. Ancak, `GetToolBarCtrl` üye işlevi, katıştırılmış almak için kullanılabilir `CToolBarCtrl` nesne. Daha sonra çağrı yapabilirsiniz `CToolBarCtrl` üye işlevlerini kullanarak döndürülen nesne.
+Varsayılan olarak, MFC `CToolBar` MFC uygulama araç çubuklarını uygulamak için sınıfı kullanır. Ancak, `GetToolBarCtrl` üye işlev katıştan katılmış `CToolBarCtrl` nesneyi almak için kullanılabilir. Daha sonra döndürülen `CToolBarCtrl` nesneyi kullanarak üye işlevlere çağrı yapabilirsiniz.
 
-Aşağıdaki örnek, etkin bir atayarak bu tekniği gösterir (`m_ToolBarImages`) ve devre dışı bırakıldı (`m_ToolBarDisabledImages`) için resim listesi bir `CToolBarCtrl` nesne (`m_ToolBarCtrl`).
+Aşağıdaki örnek, etkin leştirilmiş (`m_ToolBarImages`) ve devre`m_ToolBarDisabledImages`dışı bırakılmış ( `CToolBarCtrl` )`m_ToolBarCtrl`görüntü listesini bir nesneye ( ) atayarak bu tekniği gösterir.
 
 [!code-cpp[NVC_MFCControlLadenDialog#35](../mfc/codesnippet/cpp/using-image-lists-in-a-toolbar-control_1.cpp)]
 
 > [!NOTE]
->  Görüntü listelerini araç çubuğu nesnesi tarafından kullanılan kalıcı nesneler olması gerekir. Bu nedenle, genellikle bir MFC sınıfı veri üyesi olduğu; Bu örnekte, ana çerçeve penceresi sınıfı.
+> Araç çubuğu nesnesi tarafından kullanılan görüntü listeleri kalıcı nesneler olmalıdır. Bu nedenle, genellikle bir MFC sınıfının veri üyeleridir; Bu örnekte, ana çerçeve pencere sınıfı.
 
-Görüntü listelerini ilişkili sonra `CToolBarCtrl` nesne framework otomatik olarak uygun düğme resminin görüntüler.
+Görüntü listeleri `CToolBarCtrl` nesneyle ilişkilendirildikten sonra, çerçeve uygun düğme görüntüsünü otomatik olarak görüntüler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

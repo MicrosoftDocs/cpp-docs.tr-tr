@@ -1,5 +1,5 @@
 ---
-title: CSplitterWndEx sınıfı
+title: CSplitterWndEx Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSplitterWndEx
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CSplitterWndEx [MFC], OnDrawSplitter
 ms.assetid: 33e5eef3-05e1-4a07-a968-bf9207ce8598
-ms.openlocfilehash: 8dedad4e99a37b13dc618859c8e6d8a83a65ea76
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: d7952e3082bf68cff7ad9ba218073081ee522320
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64339608"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81363917"
 ---
-# <a name="csplitterwndex-class"></a>CSplitterWndEx sınıfı
+# <a name="csplitterwndex-class"></a>CSplitterWndEx Sınıfı
 
-Özelleştirilmiş Bölümlendirici pencereyi temsil eder.
+Özelleştirilmiş bir ayırıcı pencereyi temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,40 +29,40 @@ class CSplitterWndEx : public CSplitterWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CSplitterWndEx::CSplitterWndEx`|Varsayılan Oluşturucu.|
+|`CSplitterWndEx::CSplitterWndEx`|Varsayılan oluşturucu.|
 |`CSplitterWndEx::~CSplitterWndEx`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSplitterWndEx::OnDrawSplitter](#ondrawsplitter)|Ayırıcı penceresi çizmek için framework tarafından çağırılır. (Geçersiz kılmaları [CSplitterWnd::OnDrawSplitter](csplitterwnd-class.md#ondrawsplitter).)|
+|[CSplitterWndEx::OnDrawSplitter](#ondrawsplitter)|Bir ayırıcı pencere çizmek için çerçeve tarafından çağrıldı. [(Overrides CSplitterWnd::OnDrawSplitter](csplitterwnd-class.md#ondrawsplitter).)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnDrawSplitter` bir ayırıcı penceresi grafik bileşenlerden görünümünü özelleştirmek için yöntemi.
+Ayırıcı `OnDrawSplitter` penceresinin grafik bileşenlerinin görünümünü özelleştirmek için yöntemi geçersiz kılın.
 
-`CSplitterWndEx` Sınıfı ile birlikte kullanılır [OnDrawSplitterBorder](cmfcvisualmanager-class.md#ondrawsplitterborder), [OnDrawSplitterBox](cmfcvisualmanager-class.md#ondrawsplitterbox), ve [OnFillSplitterBackground](cmfcvisualmanager-class.md#onfillsplitterbackground) olan yöntemler görsel yönetici tarafından uygulanır. Ayırıcı penceresi, uygulamanızda çizmek bir görsel yöneticiyi neden olmak için bildirimleri yerine `CSplitterWnd` sınıfıyla `CSplitterWndEx` sınıfı. Çerçeve penceresi uygulamalar için Bölümlendirici pencere sınıfını mainfrm.h içinde bulunan CMainFrame sınıfı olarak bildirilir. Bir örnek için bkz `OutlookDemo` örnekleri dizinde örnek.
+Sınıf, `CSplitterWndEx` Görsel bir yönetici tarafından uygulanan [OnDrawSplitterBorder](cmfcvisualmanager-class.md#ondrawsplitterborder), [OnDrawSplitterBox](cmfcvisualmanager-class.md#ondrawsplitterbox)ve [OnFillSplitterBackground](cmfcvisualmanager-class.md#onfillsplitterbackground) yöntemleri ile birlikte kullanılır. Görsel bir yöneticinin uygulamanızda bir ayırıcı penceresi çizmesine `CSplitterWnd` neden olmak `CSplitterWndEx` için sınıfın bildirimlerini sınıfla değiştirin. Çerçeve penceresi uygulamaları için, splitter penceresi sınıfı mainfrm.h'de bulunan CMainFrame sınıfında bildirilir. Örneğin, Örnekler dizinindeki `OutlookDemo` örneğe bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](cobject-class.md)
+[Cobject](cobject-class.md)
 
-[CCmdTarget](ccmdtarget-class.md)
+[Ccmdtarget](ccmdtarget-class.md)
 
-[CWnd](cwnd-class.md)
+[Cwnd](cwnd-class.md)
 
-[CSplitterWnd](csplitterwnd-class.md)
+[Csplitterwnd](csplitterwnd-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxsplitterwndex.h
+**Üstbilgi:** afxsplitterwndex.h
 
-##  <a name="ondrawsplitter"></a>  CSplitterWndEx::OnDrawSplitter
+## <a name="csplitterwndexondrawsplitter"></a><a name="ondrawsplitter"></a>CSplitterWndEx::OnDrawSplitter
 
-Ayırıcı penceresi çizmek için framework tarafından çağırılır.
+Bir ayırıcı pencere çizmek için çerçeve tarafından çağrıldı.
 
 ```
 virtual void OnDrawSplitter(
@@ -74,14 +74,14 @@ virtual void OnDrawSplitter(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] Cihaz bağlamı işaretçisi. Bu parametre NULL ise, framework etkin pencereyi yeniden çizer.
+*Pdc*<br/>
+[içinde] Aygıt bağlamını işaretçi. Bu parametre NULL ise, çerçeve etkin pencereyi yeniden çizer.
 
-*nTür*<br/>
-[in] Aşağıdakilerden birini `CSplitterWnd::ESplitType` çizmek için Bölümlendirici pencere öğesini belirten numaralandırma değerlerinden. Geçerli değerler `splitBox`, `splitBar`, `splitIntersection`, ve `splitBorder`.
+*nTipi*<br/>
+[içinde] Çizmek için `CSplitterWnd::ESplitType` splitter pencere elemanı belirten numaralandırma değerlerinden biri. Geçerli değerler `splitBox` `splitBar`, `splitIntersection`, `splitBorder`, ve .
 
 *Rect*<br/>
-[in] Belirtilen Bölümlendirici pencere öğesinin çizmek için konum ve boyut belirtir sınırlayıcı bir dikdörtgen.
+[içinde] Belirtilen ayırıcı pencere öğesini çizmek için boyutları ve konumu belirten sınırlayıcı bir dikdörtgen.
 
 ### <a name="remarks"></a>Açıklamalar
 

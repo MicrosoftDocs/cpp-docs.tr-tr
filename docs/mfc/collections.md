@@ -17,60 +17,60 @@ helpviewer_keywords:
 - collection classes [MFC], lists
 - collection classes [MFC], shapes
 ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
-ms.openlocfilehash: f3dea68deaae73313fe389be49e8bbed7da3c93a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3fba3a3c6cd3fecbda7f46575b1d72c450c44019
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383863"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81361864"
 ---
 # <a name="collections"></a>Koleksiyonlar
 
-Microsoft Foundation Class Kitaplığı nesnelerinin grupları yönetmek için koleksiyon sınıfları sağlar. Bu sınıfların iki türleri şunlardır:
+Microsoft Hazırlık Sınıf Kitaplığı, nesne gruplarını yönetmek için koleksiyon sınıfları sağlar. Bu sınıflar iki türdedir:
 
-- [C++ şablonlarından oluşturulan koleksiyon sınıfları](#_core_the_template_based_collection_classes)
+- [C++ şablonlarından oluşturulan toplama sınıfları](#_core_the_template_based_collection_classes)
 
-- [Şablonlardan oluşturulmamış koleksiyon sınıfları](#_core_the_collection_classes_not_based_on_templates)
+- [Şablonlardan oluşturulmayan toplama sınıfları](#_core_the_collection_classes_not_based_on_templates)
 
 > [!NOTE]
->  Kodunuzu sınıflarındaki koleksiyon sınıfları kullanıyorsa, bunları kullanmaya devam edebilirsiniz. Yeni tür kullanımı uyumlu koleksiyon sınıfları kendi veri türleri için yazarsanız, daha yeni bir şablona dayalı sınıflar kullanmanızı öneririz.
+> Kodunuz zaten şablon olmayan toplama sınıflarını kullanıyorsa, bunları kullanmaya devam edebilirsiniz. Kendi veri türleriniz için yeni tür güvenli toplama sınıfları yazarsanız, yeni şablon tabanlı sınıfları kullanmanızı öneririz.
 
-##  <a name="_core_collection_shapes"></a> Koleksiyon şekiller
+## <a name="collection-shapes"></a><a name="_core_collection_shapes"></a>Toplama Şekilleri
 
-Koleksiyon sınıfı öğelerini türlerini ve "şeklini" tarafından belirlenir. Şekil nesneleri düzenlenir ve koleksiyonda depolanan biçimini ifade eder. MFC üç temel koleksiyonu şekil sağlar: listeler, diziler ve (sözlükleri olarak da bilinir) eşler. Belirli programlama sorununuz için en uygun koleksiyon şekli seçebilirsiniz.
+Bir toplama sınıfı "şekli" ve öğelerinin türleri ile karakterizedir. Şekil, nesnelerin koleksiyon tarafından düzenlenme ve depolanan biçimini ifade eder. MFC üç temel koleksiyon şekli sağlar: listeler, diziler ve haritalar (sözlükler olarak da bilinir). Belirli programlama sorununa en uygun koleksiyon şeklini seçebilirsiniz.
 
-Her üç sağlanan koleksiyon şekillerinin daha kısa bir süre sonra bu konuda açıklanmıştır. Programınız için en iyi olduğu karar vermenize yardımcı olacak şekillerinin özellikleri karşılaştırmak için bkz [koleksiyon sınıfı seçme önerileri](../mfc/recommendations-for-choosing-a-collection-class.md).
+Sağlanan üç koleksiyon şeklinin her biri kısa bir süre sonra bu konuda açıklanmıştır. Programıniçin en iyi olanın hangisiolduğuna karar vermenize yardımcı olmak için şekillerin özelliklerini karşılaştırmak [için, Koleksiyon Sınıfı Seçme Önerileri'ne](../mfc/recommendations-for-choosing-a-collection-class.md)bakın.
 
-- List
+- Liste
 
-   List sınıfı karakteriyle bağlı bir liste uygulanan öğe sıralı, dizinlenmemiş bir listesini sağlar. Bir liste "head" ve "tail" ve ekleme veya baş veya kuyruk, ekleme veya öğeleri ortada silme öğelerin kaldırılması çok hızlı olması.
+   Liste sınıfı, iki kat bağlı bir liste olarak uygulanan sıralı, dizine eklenmemiş öğeler listesi sağlar. Bir listenin bir "kafası" ve "kuyruğu" vardır ve kafa veya kuyruktaki öğelerin eklenmesi veya çıkarılması veya ortaya öğelerin eklenmesi veya silmesi çok hızlıdır.
 
 - Dizi
 
-   Array sınıfı nesnelerini dinamik olarak ölçekli, sıralı ve tamsayı dizini oluşturulmuş bir dizi sağlar.
+   Dizi sınıfı dinamik olarak boyutlandırılmış, sıralı ve tamsayı dizili nesneler sağlar.
 
 - Harita (sözlük olarak da bilinir)
 
-   Harita anahtar nesneye bir değer nesnesi ile ilişkilendiren bir koleksiyondur.
+   Harita, anahtar nesneyi bir değer nesnesiyle ilişkilendiren bir koleksiyondur.
 
-##  <a name="_core_the_template_based_collection_classes"></a> Şablona dayalı koleksiyon sınıfları
+## <a name="the-template-based-collection-classes"></a><a name="_core_the_template_based_collection_classes"></a>Şablon Tabanlı Koleksiyon Sınıfları
 
-Herhangi bir türde nesneleri içeren bir tür kullanımı uyumlu koleksiyon uygulamak için en kolay yolu MFC şablona dayalı sınıflar birini kullanmaktır. Bu sınıfların örnekleri için bkz. MFC örnek [TOPLAMAK](../overview/visual-cpp-samples.md).
+Herhangi bir türnesneleri içeren bir tür güvenli toplama uygulamak için en kolay yolu MFC şablon tabanlı sınıflardan birini kullanmaktır. Bu sınıflara örnek olarak, MFC örnek [COLLECT'e](../overview/visual-cpp-samples.md)bakın.
 
-MFC şablona dayalı koleksiyon sınıfları aşağıdaki tabloda listelenmektedir.
+Aşağıdaki tabloda MFC şablon tabanlı koleksiyon sınıfları listelenir.
 
-### <a name="collection-template-classes"></a>Koleksiyon şablon sınıfları
+### <a name="collection-template-classes"></a>Koleksiyon Şablonu Sınıfları
 
 |Koleksiyon içeriği|Diziler|Listeler|Haritalar|
 |-------------------------|------------|-----------|----------|
-|Herhangi bir türde nesne koleksiyonları|`CArray`|`CList`|`CMap`|
-|Herhangi bir türde nesne işaretçileri koleksiyonları|`CTypedPtrArray`|`CTypedPtrList`|`CTypedPtrMap`|
+|Herhangi bir türdeki nesnelerin koleksiyonları|`CArray`|`CList`|`CMap`|
+|Herhangi bir türdeki nesnelere işaretçilerin koleksiyonları|`CTypedPtrArray`|`CTypedPtrList`|`CTypedPtrMap`|
 
-##  <a name="_core_the_collection_classes_not_based_on_templates"></a> Şablonlarına dayalı koleksiyon sınıfları
+## <a name="the-collection-classes-not-based-on-templates"></a><a name="_core_the_collection_classes_not_based_on_templates"></a>Şablonlara Dayalı Olmayan Toplama Sınıfları
 
-Uygulamanız zaten MFC sınıflarındaki sınıfları kullanıyorsa, bunları kullanmaya devam edebilirsiniz. Ancak, yeni koleksiyonlar için şablona dayalı sınıflar kullanmanızı öneririz. Şablonlarına dayalı olmayan MFC koleksiyon sınıfları aşağıdaki tabloda listelenmektedir.
+Uygulamanız zaten MFC şablon olmayan sınıfları kullanıyorsa, bunları kullanmaya devam edebilirsiniz. Ancak, yeni koleksiyonlar için şablon tabanlı sınıfları kullanmanızı öneririz. Aşağıdaki tabloda şablonları temel alamayan MFC toplama sınıfları listelenir.
 
-### <a name="nontemplate-collection-classes"></a>Şablon Olmayandan koleksiyon sınıfları
+### <a name="nontemplate-collection-classes"></a>Şablon Olmayan Toplama Sınıfları
 
 |Diziler|Listeler|Haritalar|
 |------------|-----------|----------|
@@ -82,33 +82,33 @@ Uygulamanız zaten MFC sınıflarındaki sınıfları kullanıyorsa, bunları ku
 |`CWordArray`||`CMapWordToOb`|
 |`CUIntArray`||`CMapWordToPtr`|
 
-MFC koleksiyon sınıfları özellikleri tablosu içinde [koleksiyon sınıfı seçme önerileri](../mfc/recommendations-for-choosing-a-collection-class.md) bu özelliklerini (dışında Şekil) açısından MFC koleksiyon sınıfları açıklar:
+[Toplama Sınıfı Seçme Önerileri'ndeki](../mfc/recommendations-for-choosing-a-collection-class.md) MFC Koleksiyon Sınıfları tablosunun özellikleri, MFC toplama sınıflarını bu özellikler (şekil dışında) açısından açıklar:
 
-- Sınıf C++ şablonları kullanıp kullanmadığını
+- Sınıfın C++ şablonlarını kullanıp kullanmadığı
 
-- Bir koleksiyonda depolanan öğeleri seri hale getirilebilir
+- Koleksiyonda depolanan öğelerin serihale edilip edilemeyeceği
 
-- Bir koleksiyonda depolanan öğeleri tanılama için yazılan
+- Koleksiyonda depolanan öğelerin tanılama için atılıp atılamayacağı
 
-- Tür kullanımı uyumlu koleksiyon olup
+- Koleksiyonun tür güvenli olup olmadığı
 
-### <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz
+### <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsun?
 
-#### <a name="general-collection-class-tasks"></a>Koleksiyon sınıfı genel görevler
+#### <a name="general-collection-class-tasks"></a>Genel Toplama-Sınıf Görevleri
 
-- [Koleksiyon Sınıfı Seçme Önerileri](../mfc/recommendations-for-choosing-a-collection-class.md)
+- [Toplama Sınıfı Seçmek Için Öneriler](../mfc/recommendations-for-choosing-a-collection-class.md)
 
 - [Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma](../mfc/how-to-make-a-type-safe-collection.md)
 
 - [Yığın ve Kuyruk Koleksiyonları Oluşturma](../mfc/creating-stack-and-queue-collections.md)
 
-- [CArray::Add](../mfc/reference/carray-class.md#add)
+- [CArray::Ekle](../mfc/reference/carray-class.md#add)
 
-#### <a name="template-based-collection-class-tasks"></a>Şablona dayalı koleksiyon sınıfı görevleri
+#### <a name="template-based-collection-class-tasks"></a>Şablon Tabanlı Toplama-Sınıf Görevleri
 
 - [Şablona Dayalı Sınıflar](../mfc/template-based-classes.md)
 
-#### <a name="accessing-the-members-of-a-collection-template-based-or-not"></a>Bir koleksiyonun üyelerine erişme (şablon tabanlı veya değil)
+#### <a name="accessing-the-members-of-a-collection-template-based-or-not"></a>Koleksiyonun Üyelerine Erişim (Şablon Tabanlı veya Değil)
 
 - [Bir Koleksiyonun Tüm Üyelerine Erişme](../mfc/accessing-all-members-of-a-collection.md)
 
@@ -116,5 +116,5 @@ MFC koleksiyon sınıfları özellikleri tablosu içinde [koleksiyon sınıfı s
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../mfc/mfc-concepts.md)<br/>
+[Kavramlar](../mfc/mfc-concepts.md)<br/>
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)

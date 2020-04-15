@@ -1,5 +1,5 @@
 ---
-title: COleDialog sınıfı
+title: COleDialog Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleDialog
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - COleDialog [MFC], GetLastError
 ms.assetid: b1ed0aca-3914-4b00-af34-4a4fb491aec7
-ms.openlocfilehash: 353e2ed312fa7dbb9ef7bdfabc2b174abf8e1e1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a1983d426e97dd8063aee2857dc36557aa20677
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375723"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366088"
 ---
-# <a name="coledialog-class"></a>COleDialog sınıfı
+# <a name="coledialog-class"></a>COleDialog Sınıfı
 
-OLE iletişim kutularındaki ortak işlevselliği sağlar.
+OLE için iletişim kutularına ortak işlevsellik sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,43 +29,43 @@ class COleDialog : public CCommonDialog
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[COleDialog::GetLastError](#getlasterror)|İletişim kutusu tarafından döndürülen hata kodu alır.|
+|[COleDialog::GetLastError](#getlasterror)|Hata kodunu iletişim kutusu tarafından döndürülür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Microsoft Foundation Class Kitaplığı ile türetilmiş birkaç sınıflarını sağlar `COleDialog`:
+Microsoft Hazırlık Sınıf Kitaplığı aşağıdakilerden `COleDialog`türetilen çeşitli sınıflar sağlar:
 
-- [Coleınsertdialog](../../mfc/reference/coleinsertdialog-class.md)
+- [COleInsertDialog](../../mfc/reference/coleinsertdialog-class.md)
 
-- [COleConvertDialog](../../mfc/reference/coleconvertdialog-class.md)
+- [Coleconvertdialog](../../mfc/reference/coleconvertdialog-class.md)
 
 - [COleChangeIconDialog](../../mfc/reference/colechangeicondialog-class.md)
 
-- [COleLinksDialog](../../mfc/reference/colelinksdialog-class.md)
+- [Colelinksdialog](../../mfc/reference/colelinksdialog-class.md)
 
-- [COleBusyDialog](../../mfc/reference/colebusydialog-class.md)
+- [Colebusydialog](../../mfc/reference/colebusydialog-class.md)
 
 - [COleUpdateDialog](../../mfc/reference/coleupdatedialog-class.md)
 
-- [COlePasteSpecialDialog](../../mfc/reference/colepastespecialdialog-class.md)
+- [Colepastespecialdialog](../../mfc/reference/colepastespecialdialog-class.md)
 
-- [COlePropertiesDialog](../../mfc/reference/colepropertiesdialog-class.md)
+- [Colepropertiesdialog](../../mfc/reference/colepropertiesdialog-class.md)
 
 - [COleChangeSourceDialog](../../mfc/reference/colechangesourcedialog-class.md)
 
-Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).
+OLE'ye özgü iletişim kutuları hakkında daha fazla bilgi için, [OLE'deki İletişim Kutuları makalesine](../../mfc/dialog-boxes-in-ole.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CDialog](../../mfc/reference/cdialog-class.md)
+[Cdialog](../../mfc/reference/cdialog-class.md)
 
 [CCommonDialog](../../mfc/reference/ccommondialog-class.md)
 
@@ -73,11 +73,11 @@ Microsoft Foundation Class Kitaplığı ile türetilmiş birkaç sınıflarını
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxodlgs.h
+**Üstbilgi:** afxodlgs.h
 
-##  <a name="getlasterror"></a>  COleDialog::GetLastError
+## <a name="coledialoggetlasterror"></a><a name="getlasterror"></a>COleDialog::GetLastError
 
-Çağrı `GetLastError` ek hata bilgileri almak için üye işlevi, `DoModal` IDABORT döndürür.
+IDABORT döndürdüğünde `GetLastError` `DoModal` ek hata bilgileri almak için üye işlevini arayın.
 
 ```
 UINT GetLastError() const;
@@ -85,11 +85,11 @@ UINT GetLastError() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarafından döndürülen hata kodlarını `GetLastError` belirli iletişim kutusunda görüntülenen bağlıdır.
+Döndürülen `GetLastError` hata kodları görüntülenen belirli iletişim kutusuna bağlıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: `DoModal` belirli hata iletileri hakkında bilgi için türetilmiş sınıflarda üye işlevi.
+Belirli `DoModal` hata iletileri hakkında bilgi için türetilmiş sınıflardaki üye işlevine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,27 +6,27 @@ helpviewer_keywords:
 - CImageList class [MFC], using
 - image lists [MFC]
 ms.assetid: e0aed188-a1e6-400e-9f51-033d61c5541f
-ms.openlocfilehash: cb95de134939e1b06e2a8b827424c986f8c48ef3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d9566739a15e5d216eb052a7265313850515648
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180472"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366567"
 ---
 # <a name="using-an-image-list"></a>Resim Listesi Kullanma
 
-Görüntü listesi tipik kullanımını aşağıdaki deseni izler:
+Bir resim listesinin tipik kullanımı aşağıdaki deseni izler:
 
-- Oluşturmak bir [Cımagelist](../mfc/reference/cimagelist-class.md) nesnesi ve bir aşırı yüklemelerinden birini çağırın, [Oluştur](../mfc/reference/cimagelist-class.md#create) bir görüntü listesi oluşturma ve buna eklemek için işlevi `CImageList` nesne.
+- Bir [CImageList](../mfc/reference/cimagelist-class.md) nesnesi oluşturun ve görüntü [Create](../mfc/reference/cimagelist-class.md#create) listesi oluşturmak ve `CImageList` nesneye eklemek için Create işlevinin aşırı yüklerinden birini çağırın.
 
-- Görüntü listesi oluşturduğunuzda görüntüleri eklemezseniz, görüntüleri görüntü listeye çağırarak eklemek [Ekle](../mfc/reference/cimagelist-class.md#add) veya [okuma](../mfc/reference/cimagelist-class.md#read) üye işlevi.
+- Resim listesini oluştururken resim eklemediyseniz, [Üye Ekle](../mfc/reference/cimagelist-class.md#add) veya [Oku](../mfc/reference/cimagelist-class.md#read) işlevini arayarak resim listesini resim listesine ekleyin.
 
-- Görüntü listesi denetimin uygun üye işlevini çağırarak bir denetimle ilişkilendirme veya görüntü listesinden görüntü listenin kullanarak kendiniz görüntüler çizme [çizmek](../mfc/reference/cimagelist-class.md#draw) üye işlevi.
+- Bu denetimin uygun üye işlevini çağırarak görüntü listesini bir denetimle ilişkilendirin veya resim listesinin [Draw](../mfc/reference/cimagelist-class.md#draw) üye işlevini kullanarak resim listesinden görüntüler kendiniz çizin.
 
-- Belki de sürüklemek için görüntü listesinin yerleşik desteği kullanarak görüntü, sürükleyin izin verin.
+- Belki de kullanıcının, sürükleme için görüntü listesinin yerleşik desteğini kullanarak görüntüyü sürüklemesine izin verin.
 
 > [!NOTE]
->  Görüntü listesi oluşturulurken **yeni** işleci gerekir yok `CImageList` ile işiniz bittiğinde nesne.
+> Görüntü listesi **yeni** işleçle oluşturulduysa, onunla `CImageList` yaptığınız da nesneyi yok etmelisiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

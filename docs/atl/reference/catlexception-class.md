@@ -1,5 +1,5 @@
 ---
-title: CAtlException sınıfı
+title: CAtlException Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlException
@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlException class
 ms.assetid: 3fd7b041-f70d-4292-b947-0d70781d95a8
-ms.openlocfilehash: a6ed6062be02fddc111e4eda4d26226b7a7a0c63
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6da56e4d6c443520eb6f857624a5923e71a1e580
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62260681"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81319002"
 ---
-# <a name="catlexception-class"></a>CAtlException sınıfı
+# <a name="catlexception-class"></a>CAtlException Sınıfı
 
-Bu sınıf, ATL istisna tanımlar.
+Bu sınıf bir ATL özel durum tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,33 +30,33 @@ class CAtlException
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CAtlException::CAtlException](#catlexception)|Oluşturucu.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAtlException::operator HRESULT](#operator_hresult)|HRESULT değerini geçerli nesneye çevirir.|
+|[CAtlException::operatör HRESULT](#operator_hresult)|Geçerli nesneyi bir HRESULT değerine atar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAtlException::m_hr](#m_hr)|Türünde değişken HRESULT nesne tarafından oluşturulan ve hata durumunu depolamak için kullanılır.|
+|[CAtlException::m_hr](#m_hr)|Nesne tarafından oluşturulan ve hata koşulunu depolamak için kullanılan HRESULT türü değişkeni.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-A `CAtlException` nesnesi bir ATL işlemiyle ilgili bir özel durum koşulunu temsil eder. `CAtlException` Sınıfı özel durumu ve HRESULT değilmiş gibi özel durumu işle olanak tanıyan bir atama işleci nedenini gösteren durum kodunu depolar genel veri üyesi içerir.
+Nesne, `CAtlException` Bir ATL işlemiyle ilgili bir özel durum koşulunu temsil eder. Sınıf, `CAtlException` özel durumun nedenini belirten durum kodunu depolayan bir genel veri üyesi ve özel durumu bir HRESULT'muş gibi ele almanızı sağlayan bir döküm işleci içerir.
 
-Genel olarak, çağıracak `AtlThrow` oluşturmak yerine bir `CAtlException` doğrudan nesne.
+Genel olarak, doğrudan `AtlThrow` bir `CAtlException` nesne oluşturmak yerine çağırırsınız.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlexcept.h
+**Üstbilgi:** atlexcept.h
 
-##  <a name="catlexception"></a>  CAtlException::CAtlException
+## <a name="catlexceptioncatlexception"></a><a name="catlexception"></a>CAtlException::CAtlException
 
 Oluşturucu.
 
@@ -67,18 +67,18 @@ CAtlException() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İK*<br/>
+*Hr*<br/>
 HRESULT hata kodu.
 
-##  <a name="operator_hresult"></a>  CAtlException::operator HRESULT
+## <a name="catlexceptionoperator-hresult"></a><a name="operator_hresult"></a>CAtlException::operatör HRESULT
 
-HRESULT değerini geçerli nesneye çevirir.
+Geçerli nesneyi bir HRESULT değerine atar.
 
 ```
 operator HRESULT() const throw ();
 ```
 
-##  <a name="m_hr"></a>  CAtlException::m_hr
+## <a name="catlexceptionm_hr"></a><a name="m_hr"></a>CAtlException::m_hr
 
 HRESULT veri üyesi.
 
@@ -88,9 +88,9 @@ HRESULT m_hr;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata koşulu depolar veri üyesi. HRESULT değerini Oluşturucu tarafından ayarlanan [CAtlException::CAtlException](#catlexception).
+Hata durumunu depolayan veri üyesi. HRESULT değeri oluşturucu, [CAtlException::CAtlException](#catlexception)tarafından ayarlanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çeşitlemeleri](debugging-and-error-reporting-global-functions.md#atlthrow)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Atlthrow](debugging-and-error-reporting-global-functions.md#atlthrow)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

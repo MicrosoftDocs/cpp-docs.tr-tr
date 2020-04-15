@@ -6,72 +6,72 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, database support
 ms.assetid: 9ddf4558-fd41-4ac7-8d9b-c93d9c68ab59
-ms.openlocfilehash: 94ed75ffd59294d5beb076ef4d66e57ef763f10e
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: c13d56d2fee45e130aba81168188bec6d8828d51
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525462"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365886"
 ---
 # <a name="database-support-mfc-application-wizard"></a>Veritabanı Desteği, MFC Uygulama Sihirbazı
 
-Bu sayfa, veritabanının düzeyini belirtmenize olanak sağlayan seçenekler sağlar. projeniz için (veri kaynağı yanı sıra, gerekirse) destekler.
+Bu sayfa, projeniz için veritabanı desteği düzeyini (artı gerekirse bir veri kaynağı) belirtmenize olanak tanıyan seçenekler sağlar.
 
 - **Veritabanı desteği**
 
-   Projeniz için veritabanı destek düzeyini ayarlar.
+   Projeniz için veritabanı desteği düzeyini ayarlar.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Yok.**|Hiçbir veritabanı desteği sağlar. Varsayılan seçenek budur.|
-   |**Yalnızca üst bilgi dosyaları**|Uygulamanız için temel düzeyde bir veritabanı desteği sağlar. ODBC desteği altında seçerseniz **istemci türü**, MFC Uygulama Sihirbazı projenizde AFXDB üstbilgi dosyasını içerir. H Bağlantı kitaplıkları ekler, ancak herhangi bir veritabanı özgü sınıflar oluşturmaz. Daha sonra kayıt kümeleri oluşturma ve bunları inceleyin ve kayıtları güncelleştirmek için kullanın. OLE DB desteği altında seçerseniz **istemci türü**, aşağıdaki üst bilgi dosyaları dahil edilir: ATLBASE.H AFXOLEDB.H ATLPLUS.H|
-   |**Dosya desteği olmadan veritabanı görünümü**|Veritabanı üst bilgi dosyaları, bağlantı kitaplıkları, kayıt görünümü ve bir kayıt kümesi içerir. (Kullanılabilir olan uygulamalar için **belge/görünüm mimarisi desteği** seçeneğe [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md) sayfası.) Bu seçenek, belge desteği, ancak hiçbir serileştirme desteği içerir. Veritabanı görünümü dahil kullanmayı tercih ederseniz, veri kaynağı belirtmeniz gerekir.|
-   |**Dosya destekli veritabanı görünümü**|Veritabanı üst bilgi dosyaları, bağlantı kitaplıkları, kayıt görünümü ve bir kayıt kümesi içerir. (Kullanılabilir olan uygulamalar için **belge/görünüm mimarisi desteği** seçeneğe **uygulama türü** sayfası.) Bu seçenek, örneğin, bir kullanıcı profili dosyasını güncelleştirmek için kullanabileceğiniz Belge Serileştirme destekler. Yerine dosya ve bu nedenle temel serileştirme gerekmez veritabanı uygulamaları, genellikle kayıt başına temelinde çalışır. Ancak, serileştirme için özel bir kullanım olabilir. Veritabanı görünümü dahil kullanmayı tercih ederseniz, veri kaynağı belirtmeniz gerekir.|
+   |**Yok**|Veritabanı desteği sağlamaz. Bu varsayılan seçenektir.|
+   |**Yalnızca üstbilgi dosyaları**|Uygulamanız için temel veritabanı desteği düzeyini sağlar. **İstemci türü**altında ODBC desteğini seçerseniz, MFC Uygulama Sihirbazı projenizde afxdb üstbilgi dosyasını içerir. H. Bağlantı kitaplıkları ekler, ancak veritabanına özgü sınıflar oluşturmaz. Daha sonra kayıt kümeleri oluşturabilir ve bunları kayıtları incelemek ve güncelleştirmek için kullanabilirsiniz. **İstemci türü**altında OLE DB desteğini seçerseniz, aşağıdaki üstbilgi dosyaları dahildir: ATLBASE. H AFXOLEDB. H ATLPLUS. H|
+   |**Dosya desteği olmadan veritabanı görünümü**|Veritabanı üstbilgi dosyaları, bağlantı kitaplıkları, bir kayıt görünümü ve bir kayıt kümesi içerir. (Yalnızca [Uygulama Türü](../../mfc/reference/application-type-mfc-application-wizard.md) sayfasında **belge/görünüm mimarisi destek** seçeneği olan uygulamalar için kullanılabilir.) Bu seçenek belge desteği içerir, ancak serileştirme desteği içermez. Veritabanı görünümü eklemeyi seçerseniz, verilerin kaynağını belirtmeniz gerekir.|
+   |**Dosya desteği ile veritabanı görünümü**|Veritabanı üstbilgi dosyaları, bağlantı kitaplıkları, bir kayıt görünümü ve bir kayıt kümesi içerir. (Yalnızca **Uygulama Türü** sayfasında **belge/görünüm mimarisi destek** seçeneği olan uygulamalar için kullanılabilir.) Bu seçenek, örneğin bir kullanıcı profil dosyasını güncelleştirmek için kullanabileceğiniz belge serileştirmesini destekler. Veritabanı uygulamaları genellikle dosya başına değil, kayıt başına bazda çalışır ve bu nedenle serileştirme gerekmez. Ancak, serileştirme için özel bir kullanımınız olabilir. Veritabanı görünümü eklemeyi seçerseniz, verilerin kaynağını belirtmeniz gerekir.|
 
    > [!NOTE]
-   > Altında **veritabanı desteği**, ya da seçerseniz **Ritabanı görünümü dosya desteği olmadan** veya **görünümü dosya destekli veritabanı**, görünüm sınıfı türetme, bağlı olarak farklılık gösterir üzerinde **istemci türü** aşağıdaki gibi bir seçimi:
+   > **Veritabanı Desteği**altında, dosya desteği olmadan **Veritabanı görünümünü** veya dosya desteği ile **Veritabanı görünümünü**seçerseniz, görünüm sınıfı türetme, Istemci **türü** seçiminize bağlı olarak aşağıdaki gibi değişir:
 
-   - Seçerseniz **ODBC** altında **istemci türü**, uygulamanın görünüm sınıfın türetildiği sonra [CRecordView](../../mfc/reference/crecordview-class.md). Bu sınıf ile ilişkili bir [CRecordset](../../mfc/reference/crecordset-class.md)-türetilmiş sınıf, MFC Uygulama Sihirbazı'nı da sizin için oluşturur. Bu seçenek, kayıt görünümü kayıtları, kayıt kümesi aracılığıyla görüntülemek ve güncelleştirmek için kullanılan form tabanlı bir uygulama sağlar.
+  - **İstemci türü**altında **ODBC'yi** seçerseniz, uygulamanın görünüm sınıfı [CRecordView'dan](../../mfc/reference/crecordview-class.md)türetilmiştir. Bu sınıf, MFC Uygulama Sihirbazı'nın da sizin için oluşturduğu [CRecordset](../../mfc/reference/crecordset-class.md)türetilmiş sınıfla ilişkilidir. Bu seçenek, kayıt görünümünün kayıt kümesi üzerinden kayıtları görüntülemek ve güncelleştirmek için kullanıldığı form tabanlı bir uygulama sağlar.
 
-   - Seçerseniz **OLE DB** altında **istemci türü**, görünüm sınıfın türetildiği sonra [COleDBRecordView](../../mfc/reference/coledbrecordview-class.md), ve ilişkili olduğu bir [CTable](../../data/oledb/ctable-class.md) veya [CCommand](../../data/oledb/ccommand-class.md)-türetilmiş sınıf.
+  - **İstemci türü**altında **OLE DB'yi** seçerseniz, görünüm sınıfı [COleDBRecordView'den](../../mfc/reference/coledbrecordview-class.md)türetilmiştir ve [ctable](../../data/oledb/ctable-class.md) veya [CCommand](../../data/oledb/ccommand-class.md)türetilmiş bir sınıfla ilişkilidir.
 
 - **İstemci türü**
 
-   Projenizi OLE DB veya ODBC sınıfları kullanıp kullanmadığını belirtir.
+   Projenizin OLE DB veya ODBC sınıfları kullanıp kullanmadığını gösterir.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**OLE DB**|Bu seçenek belirlendiğinde, tıklayarak **veri kaynağı** düğmesi çağırır **veri bağlantı özellikleri** bir OLE DB veri kaynağı bağlantısı oluşturmanıza yardımcı olması için Sihirbazı.|
-   |**ODBC**|Bu seçenek belirlendiğinde, tıklayarak **veri kaynağı** düğmesi çağırır **veri kaynağı Seç** ODBC veri kaynağı bağlantısı oluşturmanıza yardımcı olması için Sihirbazı.|
+   |**OLE DB**|Bu seçenek seçildiğinde, **Veri Kaynağı** düğmesini tıklattığınızda, OLE DB veri kaynağına bağlantı oluşturmanıza yardımcı olmak için Veri **Bağlantısı Özellikleri** sihirbazı çağırır.|
+   |**ODBC**|Bu seçenek seçildiğinde, **Veri Kaynağı** düğmesini tıklattığınızda, ODBC veri kaynağına bağlantı oluşturmanıza yardımcı olmak için Veri **Kaynağı Seç** sihirbazı çağırır.|
 
-- **Veri kaynağı**
+- **Veri Kaynağı**
 
    > [!NOTE]
-   > ATL OLE DB Tüketicisi Sihirbazı ve MFC ODBC Tüketicisi Sihirbazı'nı Visual Studio 2019 bulunan ve daha sonra değildir. İşlevselliğini el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [olmadan bir tüketici kullanarak sihirbaz oluşturma](../../data/oledb/creating-a-consumer-without-using-a-wizard.md).
+   > ATL OLE DB Tüketici sihirbazı ve MFC ODBC Tüketici sihirbazı Visual Studio 2019 ve sonraki yıllarda kullanılamaz. İşlevselliği el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [bkz.](../../data/oledb/creating-a-consumer-without-using-a-wizard.md)
 
-   Tıklayın **veri kaynağı** düğmesini belirtilen sürücü ya da sağlayıcı ve veritabanı'nı kullanarak bir veri kaynağını ayarlayın. OLE DB içinde seçtiyseniz **istemci türü** seçeneği, bu düğmeyi görüntüler **veri bağlantı özellikleri** iletişim kutusu. ODBC seçtiyseniz **istemci türü** seçeneği, bu düğmeyi sağlar **veri kaynağı Seç** iletişim kutusu. Bu seçenek, bir veritabanı görünümü uygulamanıza dahil seçerseniz kullanılabilir.
+   Belirtilen sürücü veya sağlayıcı ve veritabanını kullanarak bir veri kaynağı ayarlamak için **Veri Kaynağı** düğmesini tıklatın. **İstemci türü** seçeneğinde OLE DB'yi seçtiyseniz, bu düğme **Veri Bağlantısı Özellikleri** iletişim kutusunu görüntüler. **İstemci türü** seçeneğinde ODBC'yi seçtiyseniz, bu düğme **Veri Kaynağı Seç** iletişim kutusunu sağlar. Bu seçenek, yalnızca uygulamanıza bir veritabanı görünümü eklemeyi seçerseniz kullanılabilir.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Veri bağlantı özellikleri** (OLE DB)|Belirtilen OLE DB sağlayıcısı kullanılarak belirtilen veri kaynağı oluşturur. OLE DB sağlayıcısı, veri, veri kaynağı, oturum açma kimliği ve (isteğe bağlı) parola konumunu belirtmelisiniz. Bu iletişim kutusu hakkında daha fazla bilgi için bkz: **veri kaynağı** içinde [ATL OLE DB Tüketicisi Sihirbazı](../../atl/reference/atl-ole-db-consumer-wizard.md).|
-   |**Veri kaynağı** (ODBC)|Belirtilen ODBC sürücüsünü kullanarak belirtilen veri kaynağı oluşturur. Veri kaynağı için bir tablo seçmek için bir veri kaynağı adı seçmeniz gerekir. Sihirbaz için üye değişkenleri tablonun tüm sütunlarını bağlar bir `CRecordset`-türetilmiş sınıf. Bu iletişim kutusu hakkında daha fazla bilgi için bkz: **veri kaynağı** içinde [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/mfc-odbc-consumer-wizard.md).|
+   |**Veri Bağlantısı Özellikleri** (OLE DB)|Belirtilen OLE DB sağlayıcısını kullanarak belirtilen veri kaynağını kurar. OLE DB sağlayıcısını, verilerin konumunu, veri kaynağını, oturum açma kimliğini ve (isteğe bağlı olarak) bir parola belirtmeniz gerekir. Bu iletişim kutusuyla ilgili ayrıntılar için [ATL OLE DB Tüketici Sihirbazı'ndaki](../../atl/reference/atl-ole-db-consumer-wizard.md) **Veri kaynağına** bakın.|
+   |**Veri Kaynağı** (ODBC) seçin|Belirtilen ODBC sürücüsünü kullanarak belirtilen veri kaynağını kurar. Veri kaynağı için bir tablo seçmek için bir veri kaynağı adı seçmeniz gerekir. Sihirbaz, tablonun tüm sütunlarını türetilmiş sınıfın `CRecordset`üye değişkenlerine bağlar. Bu iletişim kutusuyla ilgili ayrıntılar için [MFC ODBC Tüketici Sihirbazı'ndaki](../../mfc/reference/mfc-odbc-consumer-wizard.md) **Veri kaynağına** bakın.|
 
-- **Öznitelik atanmış veritabanı sınıfı üret**
+- **Atfedilen veritabanı sınıfOluşturma**
 
-   OLE DB istemci için kullanılabilir. Veritabanı sınıfları oluşturulan projedeki öznitelikleri kullanıp kullanmadığını belirtir.
+   Yalnızca OLE DB istemcisi için kullanılabilir. Oluşturulan projedeki veritabanı sınıflarının öznitelikleri kullanıp kullanmayacağını belirtir.
 
-- **Tüm sütunları bağlayın**
+- **Tüm sütunları bağlama**
 
-   ODBC istemci için kullanılabilir. Seçili tablodaki tüm sütunları bağlanıp bağlanmadığını belirtir. Bu kutusunu seçerseniz, tüm sütunları bağlıdır; Bu kutuyu işaretlemeyin, hiçbir sütun bağlı ve el ile kayıt kümesi sınıfında bağlanmalıdır.
+   Yalnızca ODBC istemcisi için kullanılabilir. Seçili tablodaki tüm sütunların bağlı olup olmadığını belirtir. Bu kutuyu seçerseniz, tüm sütunlar bağlanır; Bu kutuyu seçmezseniz, sütun bağlı değildir ve bunları kayıt kümesi sınıfında el ile bağlamanız gerekir.
 
 - **Tür**
 
-   ODBC istemci için kullanılabilir. Aşağıdaki tabloda açıklandığı gibi kayıt bir dinamik bir anlık görüntü olup olmadığını belirtir.
+   Yalnızca ODBC istemcisi için kullanılabilir. Aşağıdaki tabloda açıklandığı gibi kayıt kümesinin bir dinamit mi yoksa anlık görüntü mü olduğunu belirtir.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Dynaset**|Kayıt kümesi bir dinamik olduğunu belirtir. Bir dinamik sorgulanan veritabanının verilerini dizinli bir görünüm sağlar bir sorgu sonucudur. Bir dinamik özgün verilere yalnızca integral dizin önbelleğe alır ve böylece bir anlık görüntü üzerinde bir performans sunar elde edin. Dizin noktaları doğrudan her kayıt için bir sorgu sonucunda bulunan ve bir kaydı kaldırılırsa, gösterir. Ayrıca güncel bilgilere sorgulanan kayıtlara erişebilirsiniz.|
-   |**Anlık Görüntü**|Kayıt kümesi bir anlık görüntü olduğunu belirtir. Bir anlık görüntü sorgu sonucu ve zaman içinde bir noktadaki bir veritabanına görünümüdür. Özgün kayıtlarının değişiklikleri görmek için bir sorgu sonucunda bulunan tüm kayıtları önbelleğe alınır.|
+   |**Dynaset**|Kayıt kümesinin bir dinamit olduğunu belirtir. Dynaset, sorgulanan veritabanıverilerine dizinlenmiş görünüm sağlayan bir sorgunun sonucudur. Bir dinamit, özgün verilere yalnızca ayrılmaz bir dizin önbelleğe gelir ve böylece anlık görüntü üzerinden performans artışı sağlar. Dizin, sorgu nun sonucu olarak bulunan her kayda doğrudan işaret ediyor ve bir kaydın kaldırılıp kaldırılmadı olduğunu gösterir. Ayrıca sorgulanmış kayıtlarda güncelleştirilmiş bilgilere erişebilirsiniz.|
+   |**Anlık Görüntü**|Kayıt kümesinin anlık görüntü olduğunu belirtir. Anlık görüntü bir sorgunun sonucudur ve bir zaman içinde bir veritabanına bir görünümdür. Sorgu nun sonucu olarak bulunan tüm kayıtlar önbelleğe alınır, bu nedenle özgün kayıtlarda herhangi bir değişiklik görmezsiniz.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

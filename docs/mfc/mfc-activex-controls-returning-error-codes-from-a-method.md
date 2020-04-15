@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX denetimleri: Bir Metottan hata kodları döndürme'
+title: 'MFC ActiveX Denetimleri: Bir Metottan Hata Kodları Döndürme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], error codes
@@ -10,28 +10,28 @@ helpviewer_keywords:
 - SCODE, MFC ActiveX controls
 - ThrowError method [MFC]
 ms.assetid: 771fb9c9-2413-4dcc-b386-7bc4c4adeafd
-ms.openlocfilehash: 0800c1827c636dd81e2928e33c0ee2afde4c94ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5314545a3a903158362dbfa65c4a9a1b2143e86b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62324278"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81364555"
 ---
-# <a name="mfc-activex-controls-returning-error-codes-from-a-method"></a>MFC ActiveX denetimleri: Bir Metottan hata kodları döndürme
+# <a name="mfc-activex-controls-returning-error-codes-from-a-method"></a>MFC ActiveX Denetimleri: Bir Metottan Hata Kodları Döndürme
 
-Bu makalede, bir ActiveX denetimi yöntemden hata kodları döndürme açıklar.
+Bu makalede, activex denetim yönteminden hata kodlarının nasıl döndürülecekleri açıklanmaktadır.
 
-Bir yöntem içinde bir hata oluştuğunu göstermek için kullanmalısınız [COleControl::ThrowError](../mfc/reference/colecontrol-class.md#throwerror) bir ' % s'SCODE (durum kodu) parametre olarak alan üye işlevi. Önceden tanımlanmış SCODE kullanabilir veya kendi tanımlayın.
+Bir yöntem içinde bir hata oluştuğunu belirtmek için [COleControl::ThrowError](../mfc/reference/colecontrol-class.md#throwerror) üye işlevini kullanmanız gerekir ve bu işlev parametre olarak Bir SCODE (durum kodu) alır. Önceden tanımlanmış bir SCODE kullanabilir veya kendi kodunuzu tanımlayabilirsiniz.
 
 > [!NOTE]
->  `ThrowError` bir özelliğin Get veya Set içindeki bir hatadan döndüren yalnızca bir yol olarak kullanılmak üzere tasarlanmıştır işlev veya bir Otomasyon yöntemi. Yalnızca bunlar uygun özel durum işleyicisi olacak kez yığında sunar.
+> `ThrowError`yalnızca bir mülkün Get or Set işlevi veya otomasyon Yöntemi'nden bir hatayı döndürmek için kullanılır. Bunlar, yığında uygun özel durum işleyicisinin bulunacağı tek zamanlardır.
 
-Yardımcı işlevleri mevcut SCODEs, en yaygın gibi önceden tanımlanmış [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported), ve [COleControl::SetNotPermitted](../mfc/reference/colecontrol-class.md#setnotpermitted).
+Yardımcı işlevler [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported)ve [COleControl::SetNotAllowed](../mfc/reference/colecontrol-class.md#setnotpermitted)gibi en yaygın önceden tanımlanmış SCODEs için var .
 
-Önceden tanımlanmış SCODEs ve özel SCODEs tanımlama yönergeleri listesi için konudaki [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) ActiveX denetimleri: Gelişmiş Konular.
+Önceden tanımlanmış SCOD'ların listesi ve özel SCOD'ların tanımlanmasıyla ilgili talimatlar için [ActiveX Denetiminizde ActiveX Denetiminizdeki Hataları İşleme](../mfc/mfc-activex-controls-advanced-topics.md) bölümüne bakın: Gelişmiş Konular.
 
-Kodunuzun diğer alanlarda özel durumları hakkında daha fazla bilgi için bkz: [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) ve bölüm [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) ActiveX denetimleri: Gelişmiş Konular.
+Kodunuzu diğer alanlardaki özel durumları raporlama hakkında daha fazla bilgi için [Bkz.](../mfc/reference/colecontrol-class.md#fireerror) [Handling Errors in Your ActiveX Control](../mfc/mfc-activex-controls-advanced-topics.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
+[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)

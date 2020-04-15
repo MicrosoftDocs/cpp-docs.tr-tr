@@ -1,5 +1,5 @@
 ---
-title: CMFCMaskedEdit sınıfı
+title: CMFCMaskedEdit Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCMaskedEdit
@@ -24,16 +24,16 @@ helpviewer_keywords:
 - CMFCMaskedEdit [MFC], SetWindowText
 - CMFCMaskedEdit [MFC], IsMaskedChar
 ms.assetid: 13b1a645-2d5d-4c37-8599-16d5003f23a5
-ms.openlocfilehash: c1dcf89811fa5225283cb5bec120d3bd2fdfb003
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: de28b308ec235e33e39aabd707677f4e75320b0b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410154"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365290"
 ---
-# <a name="cmfcmaskededit-class"></a>CMFCMaskedEdit sınıfı
+# <a name="cmfcmaskededit-class"></a>CMFCMaskedEdit Sınıfı
 
-`CMFCMaskedEdit` Sınıfı, kullanıcı girişini maskeye doğrulayan ve doğrulanmış sonuçları bir şablona göre görüntüleyen maskelenmiş düzenleme denetimini destekler.
+Sınıf, `CMFCMaskedEdit` maskeye karşı kullanıcı girişini doğrulayan ve doğrulanmış sonuçları şablona göre görüntüleyen maskeli bir denetimi destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,73 +45,73 @@ class CMFCMaskedEdit : public CEdit
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMFCMaskedEdit::CMFCMaskedEdit`|Varsayılan Oluşturucu.|
+|`CMFCMaskedEdit::CMFCMaskedEdit`|Varsayılan oluşturucu.|
 |`CMFCMaskedEdit::~CMFCMaskedEdit`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCMaskedEdit::DisableMask](#disablemask)|Kullanıcı girişini doğrulama devre dışı bırakır.|
-|[CMFCMaskedEdit::EnableGetMaskedCharsOnly](#enablegetmaskedcharsonly)|Belirtir olup olmadığını `GetWindowText` yöntemi yalnızca maskelenmiş karakterleri alır.|
-|[CMFCMaskedEdit::EnableMask](#enablemask)|Başlatır maskeli düzen denetimi.|
-|[CMFCMaskedEdit::EnableSelectByGroup](#enableselectbygroup)|Maskeli düzen denetimi, kullanıcı girişi ya da tüm kullanıcı girişi belirli grupları seçip seçmediğini belirtir.|
-|[CMFCMaskedEdit::EnableSetMaskedCharsOnly](#enablesetmaskedcharsonly)|Karakter maskelenmiş yalnızca metin doğrulanır olup olmadığını veya tam maske karşı belirtir.|
-|`CMFCMaskedEdit::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|
-|[CMFCMaskedEdit::GetWindowText](#getwindowtext)|Maskeli düzen denetimi metni alır doğrulandı.|
-|[CMFCMaskedEdit::SetValidChars](#setvalidchars)|Kullanıcının girebileceği geçerli karakterden oluşan bir dize belirtir.|
-|[CMFCMaskedEdit::SetWindowText](#setwindowtext)|Maskeli düzen denetimi bir istem görüntüler.|
+|[CMFCMaskedEdit::DisableMask](#disablemask)|Kullanıcı girişini doğrulayan devre dışı bırak.|
+|[CMFCMaskedEdit::EnableGetMaskedCharsOnly](#enablegetmaskedcharsonly)|Yöntemin `GetWindowText` yalnızca maskeli karakterleri alıp almadığını belirtir.|
+|[CMFCMaskedEdit::EnableMask](#enablemask)|Maskeli edit denetimini başolarak karşılar.|
+|[CMFCMaskedEdit::EnableSelectByGroup](#enableselectbygroup)|Maskeli edit denetiminin belirli kullanıcı giriş gruplarını mı yoksa tüm kullanıcı girişlerini mi seçtiğini belirtir.|
+|[CMFCMaskedEdit::EnableSetMaskedCharsOnly](#enablesetmaskedcharsonly)|Metnin yalnızca maskeli karakterlere veya tüm maskeye karşı doğrulanıp doğrulanmadığını belirtir.|
+|`CMFCMaskedEdit::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
+|[CMFCMaskedEdit::GetWindowText](#getwindowtext)|Maskeli edit denetiminden doğrulanmış metni alır.|
+|[CMFCMaskedEdit::SetValidChars](#setvalidchars)|Kullanıcının girebileceği geçerli karakter dizisini belirtir.|
+|[CMFCMaskedEdit::SetWindowText](#setwindowtext)|Maskeli edit denetiminde bir istem görüntüler.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCMaskedEdit::IsMaskedChar](#ismaskedchar)|Belirtilen karakterin maskesini karaktere karşılık gelen karşı doğrulamak için framework tarafından çağırılır.|
+|[CMFCMaskedEdit::IsMaskedChar](#ismaskedchar)|Belirtilen karakteri karşılık gelen maske karakterine karşı doğrulamak için çerçeve tarafından çağrılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanmak için aşağıdaki adımları gerçekleştirin `CMFCMaskedEdit` uygulamanızdaki denetimi:
+Uygulamanızdaki `CMFCMaskedEdit` denetimi kullanmak için aşağıdaki adımları gerçekleştirin:
 
-1. Ekleme bir `CMFCMaskedEdit` penceresi sınıfınıza nesnesine.
+1. Pencere sınıfınıza bir `CMFCMaskedEdit` nesne gömün.
 
-2. Çağrı [CMFCMaskedEdit::EnableMask](#enablemask) maske belirtmek için yöntemi.
+2. MASKEYI belirtmek için [CMFCMaskedEdit'i arayın::Maskeyi](#enablemask) belirtmek için Maskeyi Etkinleştirme yöntemi.
 
-3. Çağrı [CMFCMaskedEdit::SetValidChars](#setvalidchars) geçerli karakterler listesini belirtmek için yöntemi.
+3. Geçerli karakterlerin listesini belirtmek için [CMFCMaskedEdit::SetValidChars](#setvalidchars) yöntemini arayın.
 
-4. Çağrı [CMFCMaskedEdit::SetWindowText](#setwindowtext) maskeli düzen denetimi varsayılan metni belirtmek için yöntemi.
+4. [CMFCMaskedEdit'i arayın::Maskeli](#setwindowtext) edit denetimi için varsayılan metni belirtmek için SetWindowText yöntemini ayarlayın.
 
-5. Çağrı [CMFCMaskedEdit::GetWindowText](#getwindowtext) doğrulanmış metnini almak için yöntemi.
+5. Doğrulanan metni almak için [CMFCMaskedEdit::GetWindowText](#getwindowtext) yöntemini arayın.
 
-Maske, geçerli karakterler ve varsayılan metin başlatmak için bir veya daha fazla yöntemi çağırmayın, maskeli düzen denetimi yalnızca standart düzenleme denetiminin davranışını gibi davranır.
+Maskeyi, geçerli karakterleri ve varsayılan metni başlatmak için bir veya daha fazla yöntem çağırmazsanız, maskeli edit denetimi standart denetim in izettiği gibi olur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte maske (örneğin bir telefon numarası) kullanarak ayarlamak gösterilmiştir `EnableMask` maskeli düzen denetimi, maske oluşturmak için gereken yöntemini `SetValidChars` yanısırakullanıcınıngirebileceğigeçerlikarakterdizesinibelirtmekiçinyöntemi`SetWindowText` maskelenmiş bir komut istemi görüntülenecek yöntemi düzenleme denetimi. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, maskeli düzenleme denetimi için maske oluşturmak için `EnableMask` yöntemi kullanarak bir maske (örneğin bir telefon numarası) kurmak için nasıl, kullanıcı girebilirsiniz geçerli karakter dizisi belirtmek için `SetValidChars` yöntem ve `SetWindowText` maskeli düzenleme denetiminde bir istemi görüntülemek için yöntem gösterir. Bu örnek, [Yeni Denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_NewControls#11](../../mfc/reference/codesnippet/cpp/cmfcmaskededit-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#12](../../mfc/reference/codesnippet/cpp/cmfcmaskededit-class_2.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CEdit](../../mfc/reference/cedit-class.md)
+[Cedit](../../mfc/reference/cedit-class.md)
 
 [CMFCMaskedEdit](../../mfc/reference/cmfcmaskededit-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxmaskededit.h
+**Üstbilgi:** afxmaskededit.h
 
-##  <a name="disablemask"></a>  CMFCMaskedEdit::DisableMask
+## <a name="cmfcmaskededitdisablemask"></a><a name="disablemask"></a>CMFCMaskedEdit::DisableMask
 
-Kullanıcı girişini doğrulama devre dışı bırakır.
+Kullanıcı girişini doğrulayan devre dışı bırak.
 
 ```
 void DisableMask();
@@ -119,11 +119,11 @@ void DisableMask();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı girdisi doğrulama devre dışıysa, Maskelenmiş Düzenleme denetiminin denetim standart düzenleme gibi davranır.
+Kullanıcı girişi doğrulaması devre dışı bırakılırsa, maskeli edit denetimi standart denetim gibi olur.
 
-##  <a name="enablegetmaskedcharsonly"></a>  CMFCMaskedEdit::EnableGetMaskedCharsOnly
+## <a name="cmfcmaskededitenablegetmaskedcharsonly"></a><a name="enablegetmaskedcharsonly"></a>CMFCMaskedEdit::EnableGetMaskedCharsOnly
 
-Belirtir olup olmadığını `GetWindowText` yöntemi yalnızca maskelenmiş karakterleri alır.
+Yöntemin `GetWindowText` yalnızca maskeli karakterleri alıp almadığını belirtir.
 
 ```
 void EnableGetMaskedCharsOnly(BOOL bEnable=TRUE);
@@ -131,16 +131,16 @@ void EnableGetMaskedCharsOnly(BOOL bEnable=TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bSistemlerde*<br/>
-[in] Belirtmek için TRUE [CMFCMaskedEdit::GetWindowText](#getwindowtext) yöntemi almak yalnızca karakter; maskelenen FALSE yöntemi tam metin aldığını belirtir. Varsayılan değer True'dur.
+*bEtkinleştir*<br/>
+[içinde] [CMFCMaskedEdit::GetWindowText](#getwindowtext) yönteminin yalnızca maskeli karakterleri aldığını belirtmek için DOĞRU; YÖNTEMin metnin tamamını aldığını belirtmek için FALSE. Varsayılan değer TRUE'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Maskeli karakterlerini alma etkinleştirmek için bu yöntemi kullanın. Ardından telefon numarası gibi (425) 555-0187 karşılık gelen bir maskeli düzen denetimi oluşturun. Eğer `GetWindowText` yöntemi döndürür "4255550187". Maskeli karakterlerini alma devre dışı bırakırsanız `GetWindowText` yöntemi düzenleme denetiminin, örneğin "(425) 555-0187" görüntülenen metni döndürür.
+Maskeli karakterleri almak için bu yöntemi kullanın. Ardından (425) 555-0187 gibi telefon numarasına karşılık gelen maskeli bir denetim oluşturun. `GetWindowText` Yöntemi ararsanız, "4255550187" döndürür. Maskeli karakterleri alma devre dışı ederseniz, `GetWindowText` yöntem "(425) 555-0187" gibi edinme denetiminde görüntülenen metni döndürür.
 
-##  <a name="enablemask"></a>  CMFCMaskedEdit::EnableMask
+## <a name="cmfcmaskededitenablemask"></a><a name="enablemask"></a>CMFCMaskedEdit::EnableMask
 
-Başlatır maskeli düzen denetimi.
+Maskeli edit denetimini başolarak karşılar.
 
 ```
 void EnableMask(
@@ -153,37 +153,37 @@ void EnableMask(
 ### <a name="parameters"></a>Parametreler
 
 *lpszMask*<br/>
-[in] Kullanıcı girişi her konumda görünebilir karakter türünü belirtir ve maske dizesini. Uzunluğunu *lpszInputTemplate* ve *lpszMask* parametresi dizeleri aynı olmalıdır. Maske karakterler hakkında daha fazla ayrıntı için Açıklamalar bölümüne bakın.
+[içinde] Kullanıcı girişindeki her konumda görünebilecek karakter türünü belirten bir maske dizesi. *lpszInputTemplate* ve *lpszMask* parametre dizelerinin uzunluğu aynı olmalıdır. Maske karakterleri hakkında daha fazla ayrıntı için Açıklamalar bölümüne bakın.
 
 *lpszInputTemplate*<br/>
-[in] Karakter değişmez değeri belirten bir maske şablon dize kullanıcı girişi her konumda görünür. Alt çizgi karakteri ('_') karakteri yer tutucu olarak kullanın. Uzunluğunu *lpszInputTemplate* ve *lpszMask* parametresi dizeleri aynı olmalıdır.
+[içinde] Kullanıcı girişindeki her konumda görünebilecek gerçek karakterleri belirten bir maske şablon udizesi. Alt alt karakter ('_') karakter yer tutucusu olarak kullanın. *lpszInputTemplate* ve *lpszMask* parametre dizelerinin uzunluğu aynı olmalıdır.
 
 *chMaskInputTemplate*<br/>
-[in] Kullanıcı girişi geçersiz her karakter için framework yerini alır ve varsayılan karakter. Bu parametrenin varsayılan değeri, alt çizgi ('_') ' dir.
+[içinde] Çerçevenin kullanıcı girişindeki her geçersiz karakter için yerine koyduğu varsayılan bir karakter. Bu parametrenin varsayılan değeri alt ('_') olarak altı çizilir.
 
 *lpszValid*<br/>
-[in] Geçerli karakter kümesini içeren bir dize. NULL, tüm karakterlerin geçerli olduğunu gösterir. Bu parametrenin varsayılan değeri null.
+[içinde] Geçerli karakter kümesi içeren bir dize. NULL tüm karakterlerin geçerli olduğunu gösterir. Bu parametrenin varsayılan değeri NULL'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Maske maskeli düzen denetimi oluşturmak için bu yöntemi kullanın. Öğesinden bir sınıf türetin `CMFCMaskedEdit` sınıf ve geçersiz kılma [CMFCMaskedEdit::IsMaskedChar](#ismaskedchar) kendi kodunuzu özel maskesi işleme için kullanılan yöntem.
+Maskeli edit denetimi için maskeoluşturmak için bu yöntemi kullanın. Sınıftan `CMFCMaskedEdit` bir sınıf türetin ve [CMFCMaskedEdit geçersiz kılın::Özel](#ismaskedchar) maske işleme için kendi kodunuzu kullanmak için IsMaskedChar yöntemi.
 
-Aşağıdaki tabloda, varsayılan maskesi karakterleri listeleyin:
+Aşağıdaki tabloda varsayılan maske karakterleri listele:
 
-|Maskeleme karakteri|Tanım|
+|Maske Karakteri|Tanım|
 |--------------------|----------------|
 |D|Basamak.|
-|d|Sayı veya boşluk.|
-|+|Artı ('+ '), eksi ('-'), veya boşluk.|
+|d|Basamak veya boşluk.|
+|+|Artı ('+'), eksi ('-'), veya boşluk.|
 |C|Alfabetik karakter.|
-|c|Alfabetik bir karakter veya boşluk.|
-|BİR|Alfasayısal karakter.|
-|a|Alfasayısal bir karakter veya boşluk.|
+|c|Alfabetik karakter veya boşluk.|
+|A|Alfanümerik karakter.|
+|a|Alfasayısal karakter veya boşluk.|
 |*|Yazdırılabilir bir karakter.|
 
-##  <a name="enableselectbygroup"></a>  CMFCMaskedEdit::EnableSelectByGroup
+## <a name="cmfcmaskededitenableselectbygroup"></a><a name="enableselectbygroup"></a>CMFCMaskedEdit::EnableSelectByGroup
 
-Maskeli düzen denetimi giriş belirli grupları seçin veya tüm giriş kullanıcıya izin verip vermediğini belirtir.
+Maskeli edit denetiminin, kullanıcının belirli grupları veya tüm girişi seçmesine izin verip vermediği belirtilir.
 
 ```
 void EnableSelectByGroup(BOOL bEnable=TRUE);
@@ -191,16 +191,16 @@ void EnableSelectByGroup(BOOL bEnable=TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bSistemlerde*<br/>
-[in] Yalnızca grupları seçmek için TRUE; Tüm metni seçmek için FALSE. Varsayılan değer True'dur.
+*bEtkinleştir*<br/>
+[içinde] Yalnızca grupları seçmek için DOĞRU; Metnin tamamını seçmek için FALSE. Varsayılan değer TRUE'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Maskeli düzen denetimi, bir kullanıcı grubu ya da tüm metni seçmek izin verip vermeyeceğini belirtmek için bu işlevi kullanın.
+Maskeli düzenleme denetiminin kullanıcının gruba mı yoksa metnin tamamına mı göre seçim yapmasına izin verdiğini belirtmek için bu işlevi kullanın.
 
-Varsayılan olarak, Grup seçerek etkindir. Bu durumda kullanıcının, yalnızca geçerli karakterleri sürekli grupları seçebilirsiniz.
+Varsayılan olarak, gruba göre seçim etkinleştirilir. Bu durumda, kullanıcı yalnızca sürekli geçerli karakter grupları seçebilir.
 
-Örneğin, bir telefon numarası doğrulamak için aşağıdaki maskeli düzen denetimi kullanabilirsiniz:
+Örneğin, bir telefon numarasını doğrulamak için aşağıdaki maskeli denetim denetimini kullanabilirsiniz:
 
 ```cpp
 m_wndMaskEdit.EnableMask(
@@ -213,11 +213,11 @@ m_wndMaskEdit.SetValidChars(NULL); // All characters are valid.
 m_wndMaskEdit.SetWindowText(_T("(425) 555-0187")); // Prompt
 ```
 
-Grup Seçimi etkinleştirilirse, kullanıcının yalnızca "425", "555" veya "0187" dize grupları alabilirsiniz. Grup Seçimi devre dışı bırakılırsa kullanıcı telefon numarasının bütün metni alabilirsiniz: "(425) 555-0187".
+Gruba göre seçim etkinse, kullanıcı yalnızca "425", "555" veya "0187" dize gruplarını alabilir. Grup seçimi devre dışı bırakılırsa, kullanıcı telefon numarasının tüm metnini alabilir: "(425) 555-0187".
 
-##  <a name="enablesetmaskedcharsonly"></a>  CMFCMaskedEdit::EnableSetMaskedCharsOnly
+## <a name="cmfcmaskededitenablesetmaskedcharsonly"></a><a name="enablesetmaskedcharsonly"></a>CMFCMaskedEdit::EnableSetMaskedCharsOnly
 
-Belirten metin yalnızca maskelenmiş karakterler karşı veya tüm maskesi karşı doğrulanır.
+Metnin yalnızca maskeli karakterlere veya tüm maskeye karşı doğrulanıp doğrulanmadığını belirtir.
 
 ```
 void EnableSetMaskedCharsOnly(BOOL bEnable=TRUE);
@@ -225,12 +225,12 @@ void EnableSetMaskedCharsOnly(BOOL bEnable=TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bSistemlerde*<br/>
-[in] Kullanıcı karakter maskelenmiş yalnızca girişi karşı doğrulamak için TRUE; Tüm maske karşı doğrulamak için FALSE. Varsayılan değer True'dur.
+*bEtkinleştir*<br/>
+[içinde] Yalnızca maskeli karakterlere karşı kullanıcı girişini doğrulamak için TRUE; TÜM maskekarşı doğrulamak için YANLIŞ. Varsayılan değer TRUE'dur.
 
-##  <a name="getwindowtext"></a>  CMFCMaskedEdit::GetWindowText
+## <a name="cmfcmaskededitgetwindowtext"></a><a name="getwindowtext"></a>CMFCMaskedEdit::GetWindowText
 
-Maskeli düzen denetimi metni alır doğrulandı.
+Maskeli edit denetiminden doğrulanmış metni alır.
 
 ```
 int GetWindowText(
@@ -243,27 +243,27 @@ void GetWindowText(CString& rstrString) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpszStringBuf*<br/>
-[out] Metin düzenleme denetiminden alan arabellek için işaretçi.
+[çıkış] Metni denetimden alan arabelleğe işaretçi.
 
 *nMaxCount*<br/>
-[in] Almak için karakter sayısı.
+[içinde] Alınacak maksimum karakter sayısı.
 
 *rstrString*<br/>
-[out] Metin düzenleme denetiminden alan dize nesnesine bir başvuru.
+[çıkış] Metni denetimden alan dize nesnesine yapılan başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk yöntem aşırı yüklemesi kopyalanır dizesinin bayt sayısını döndürür *lpszStringBuf* parametre arabelleği; Maskelenmiş Düzenleme denetiminin metin sahipse 0.
+İlk yöntem aşırı *lpszStringBuf* parametre arabelleği kopyalanır dize bayt sayısını döndürür; 0 maskeli edit denetimi hiçbir metin varsa.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem için Maskelenmiş Düzenleme denetiminin metin kopyalar *lpszStringBuf* arabellek veya *rstrString* dize.
+Bu yöntem, metni maskeli edit denetiminden *lpszStringBuf* arabelleği veya *rstrString* dizesine kopyalar.
 
-Bu yöntem'ı yeniden tanımladığı [CWnd::GetWindowText](../../mfc/reference/cwnd-class.md#getwindowtext).
+Bu yöntem [CWnd yeniden tanımlar::GetWindowText](../../mfc/reference/cwnd-class.md#getwindowtext).
 
-##  <a name="ismaskedchar"></a>  CMFCMaskedEdit::IsMaskedChar
+## <a name="cmfcmaskededitismaskedchar"></a><a name="ismaskedchar"></a>CMFCMaskedEdit::IsMaskedChar
 
-Belirtilen karakterin maskesini karaktere karşılık gelen karşı doğrulamak için framework tarafından çağırılır.
+Belirtilen karakteri karşılık gelen maske karakterine karşı doğrulamak için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL IsMaskedChar(
@@ -274,22 +274,22 @@ virtual BOOL IsMaskedChar(
 ### <a name="parameters"></a>Parametreler
 
 *chChar*<br/>
-[in] Doğrulanacak karakter.
+[içinde] Doğrulanacak karakter.
 
 *chMaskChar*<br/>
-[in] Maske dizesini karşılık gelen karakter.
+[içinde] Maske dizesinden karşılık gelen karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise *chChar* parametresi tarafından izin verilen karakter türüdür *chMaskChar* parametre; Aksi takdirde FALSE.
+*CHChar* parametresi *chMaskChar* parametresi tarafından izin verilen karakter türü ise DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kendi giriş karakter doğrulamak için bu yöntemi yok sayın. Maske karakterler hakkında daha fazla bilgi için bkz. [CMFCMaskedEdit::EnableMask](#enablemask) yöntemi.
+Giriş karakterlerini kendi olarak doğrulamak için bu yöntemi geçersiz kılın. Maske karakterleri hakkında daha fazla bilgi için [CMFCMaskedEdit::EnableMask](#enablemask) yöntemine bakın.
 
-##  <a name="setvalidchars"></a>  CMFCMaskedEdit::SetValidChars
+## <a name="cmfcmaskededitsetvalidchars"></a><a name="setvalidchars"></a>CMFCMaskedEdit::SetValidChars
 
-Kullanıcının girebileceği geçerli karakterden oluşan bir dize belirtir.
+Kullanıcının girebileceği geçerli karakter dizisini belirtir.
 
 ```
 void SetValidChars(LPCTSTR lpszValid=NULL);
@@ -298,13 +298,13 @@ void SetValidChars(LPCTSTR lpszValid=NULL);
 ### <a name="parameters"></a>Parametreler
 
 *lpszValid*<br/>
-[in] Geçerli giriş karakter kümesini içeren bir dize. NULL tüm karakterlerin geçerli olduğu anlamına gelir. Bu parametrenin varsayılan değeri null.
+[içinde] Geçerli giriş karakterleri kümesini içeren bir dize. NULL, tüm karakterlerin geçerli olduğu anlamına gelir. Bu parametrenin varsayılan değeri NULL'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli karakterler listesini tanımlamak için bu yöntemi kullanın. Bir girdi karakteri bu listede değilse, maskeli düzen denetimi bunu kabul etmez.
+Geçerli karakterlerin listesini tanımlamak için bu yöntemi kullanın. Bu listede bir giriş karakteri yoksa, maskeli edit denetimi bunu kabul etmez.
 
-Aşağıdaki kod örneği yalnızca onaltılık sayı kabul eder.
+Aşağıdaki kod örneği yalnızca hexadecimal sayıları kabul eder.
 
 ```cpp
 //Mask: 0xFFFF
@@ -317,9 +317,9 @@ m_wndMaskEdit.EnableMask(
 m_wndMaskEdit.SetValidChars(_T("1234567890ABCDEFabcdef"));m_wndMaskEdit.SetWindowText(_T("0x01AF"));
 ```
 
-##  <a name="setwindowtext"></a>  CMFCMaskedEdit::SetWindowText
+## <a name="cmfcmaskededitsetwindowtext"></a><a name="setwindowtext"></a>CMFCMaskedEdit::SetWindowText
 
-Maskeli düzen denetimi bir istem görüntüler.
+Maskeli edit denetiminde bir istem görüntüler.
 
 ```
 void SetWindowText(LPCTSTR lpszString);
@@ -328,13 +328,13 @@ void SetWindowText(LPCTSTR lpszString);
 ### <a name="parameters"></a>Parametreler
 
 *lpszString*<br/>
-[in] Bir bilgi istemi olarak kullanılacak bir boş sonlandırılmış dizeye işaret eder.
+[içinde] İstem olarak kullanılacak null-sonlandırılan dizeyi işaret edin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Denetim metin ayarlar.
+Bu yöntem denetim metnini ayarlar.
 
-Bu yöntem'ı yeniden tanımladığı [CWnd::SetWindowText](../../mfc/reference/cwnd-class.md#setwindowtext).
+Bu yöntem [CWnd yeniden tanımlar::SetWindowText](../../mfc/reference/cwnd-class.md#setwindowtext).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

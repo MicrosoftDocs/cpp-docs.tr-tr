@@ -1,5 +1,5 @@
 ---
-title: ATL kopyalama İlkesi sınıfları
+title: ATL Kopyalama İlkesi Sınıfları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - data [C++], ATL
@@ -8,30 +8,30 @@ helpviewer_keywords:
 - _Copy class
 - _CopyInterface class
 ms.assetid: 06704b68-d318-4c5d-a65b-71457fe9d00d
-ms.openlocfilehash: 73bec31b4ae140797c85a06ee7c5023c9e0c4446
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f40f31124d4547076249a7459ac4b63cc25305d1
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252223"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81317387"
 ---
-# <a name="atl-copy-policy-classes"></a>ATL kopyalama İlkesi sınıfları
+# <a name="atl-copy-policy-classes"></a>ATL Kopyalama İlkesi Sınıfları
 
-Kopyalama İlkesi sınıfları [yardımcı sınıflar](../atl/utility-classes.md) başlatmak için kullanılan, kopyalayın ve verileri silin. Kopyalama İlkesi sınıfları herhangi bir veri türü için kopyalama semantiği tanımlamak için ve farklı veri türleri arasında dönüştürmeler tanımlamanızı sağlar.
+Kopyalama ilkesi sınıfları, verileri başlatma, kopyalama ve silme için kullanılan [yardımcı program sınıflarıdır.](../atl/utility-classes.md) İlke kopyalama sınıfları, herhangi bir veri türü için kopya semantiklerini tanımlamanıza ve farklı veri türleri arasındaki dönüşümleri tanımlamanıza olanak sağlar.
 
-Aşağıdaki şablonlar, kendi uygulamalarında ATL kullanan kopyalama İlkesi sınıfları:
+ATL, aşağıdaki şablonların uygulamalarında kopyalama ilkesi sınıflarını kullanır:
 
 - [CComEnumImpl](../atl/reference/ccomenumimpl-class.md)
 
 - [IEnumOnSTLImpl](../atl/reference/ienumonstlimpl-class.md)
 
-- [Icollectiononstlımpl](../atl/reference/icollectiononstlimpl-class.md)
+- [ıcollectiononstlımpl](../atl/reference/icollectiononstlimpl-class.md)
 
-Kopyalayın veya şablon bağımsız değişken geçirilebilen kopyalama İlkesi sınıfında verileri dönüştürmek için gereken bilgileri kapsülleyerek ATL geliştiriciler bu sınıfların aşırı ölçeklendirilebileceği için sağlanmıştır. Örneğin, herhangi bir rastgele veri türü kullanan bir koleksiyon uygulamanız gerekiyorsa, sağlamak için ihtiyacınız olan uygun kopyalama İlkesi; hiçbir zaman koleksiyon uygulayan kod touch gerekir.
+ATL geliştiricileri, şablon bağımsız değişkeni olarak geçirilebilen bir kopya ilkesi sınıfında verileri kopyalamak veya dönüştürmek için gereken bilgileri kapsülleyerek, bu sınıfların aşırı yeniden kullanılabilirliği sağlar. Örneğin, herhangi bir rasgele veri türünü kullanarak bir koleksiyon uygulamanız gerekiyorsa, sağlamanız gereken tek şey uygun kopyalama ilkesidir; koleksiyonu uygulayan koda dokunmak zorunda kalmamak gerekir.
 
 ## <a name="definition"></a>Tanım
 
-Tanımı gereği, aşağıdaki statik işlevler sağlayan bir sınıf bir kopya ilke sınıfıdır:
+Tanım olarak, aşağıdaki statik işlevleri sağlayan bir sınıf bir kopya ilkesi sınıfıdır:
 
 `static void init(` `DestinationType` `* p);`
 
@@ -39,46 +39,46 @@ Tanımı gereği, aşağıdaki statik işlevler sağlayan bir sınıf bir kopya 
 
 `static void destroy(` `DestinationType` `* p);`
 
-Türlerini değiştirebilirsiniz `DestinationType` ve *SourceType* her kopya ilke için rastgele veri türleriyle.
+Türleri `DestinationType` ve *SourceType'ı* her kopyalama ilkesi için rasgele veri türleri ile değiştirebilirsiniz.
 
 > [!NOTE]
->  Herhangi bir rastgele veri türleri için kopyalama İlkesi sınıfları tanımlayabilirsiniz, ATL kodu kullanıldığında artık sınıflarda kullanımını mantıklı türleri sınırlamanız gerekir. Örneğin, ne zaman bir kopyalama İlkesi'ni kullanarak sınıf ATL'nin koleksiyonu veya numaralandırıcı uygulamaları ile `DestinationType` bir COM arabirimi yöntemini bir parametre olarak kullanılan bir tür olmalıdır.
+> Herhangi bir rasgele veri türleri için kopya ilkesi sınıfları tanımlayabilirsiniz rağmen, ATL kodunda sınıfların kullanımı anlamlı türleri sınırlamak gerekir. Örneğin, ATL'nin koleksiyonu veya numaralandırıcı uygulamaları olan bir kopya ilkesi `DestinationType` sınıfı kullanırken, COM arabirimi yönteminde parametre olarak kullanılabilecek bir tür olmalıdır.
 
-Kullanım **init** verilerini başlatmak için **kopyalama** veri kopyalamak ve **yok** verileri boşaltmak için. Başlatma tam anlamı, kopyalama ve yok etme kopyalama İlkesi sınıfın etki ve söz konusu veri türlerine bağlı olarak farklılık gösterir.
+Verileri **başlatma,** verileri kopyalamak ve verileri serbest leştirmek için **yok** etmek için **init'i** kullanın. Başlatma, kopyalama ve imhanın kesin anlamı kopyalama ilkesi sınıfının etki alanıdır ve ilgili veri türlerine bağlı olarak değişir.
 
-Kullanım ve kopyalama İlkesi sınıfı uygulaması iki gereksinim bulunur:
+Kopyalama ilkesi sınıfının kullanımı ve uygulanması yla ilgili iki gereksinim vardır:
 
-- İlk parametre olarak **kopyalama** yalnızca bir işaretçi kullanarak daha önce başlatılmış veri alması gerekir **init**.
+- Kopyalanması gereken **copy** ilk parametre yalnızca **init'i**kullanarak daha önce başharfe başlattığınız verilere işaretçi saolmalıdır.
 
-- **Destroy** her zaman sadece bir işaretçi kullanarak daha önce başlatılmış veri alması gerekir **init** veya aracılığıyla kopyalanan **kopyalama**.
+- **yok etme** yalnızca daha önce **init** kullanarak veya **kopya**yoluyla kopyalanmış verileri için bir işaretçi almak gerekir.
 
-## <a name="standard-implementations"></a>Standart uygulamalar
+## <a name="standard-implementations"></a>Standart Uygulamalar
 
-ATL şeklinde iki kopyalama İlkesi sınıfları sağlar `_Copy` ve `_CopyInterface` şablon sınıfları:
+`_Copy` ATL, şablon `_CopyInterface` sınıfları biçiminde iki kopya ilkesi sınıfı sağlar:
 
-- `_Copy` Sınıfı yalnızca kopyalama homojen sağlar (değil veri türleri arasında dönüştürme) hem de belirtmek için tek bir şablon parametresi yalnızca sunduğu bu yana `DestinationType` ve *SourceType*. Bu şablon, genel uygulama, başlatma veya yok etme hiçbir kod içermiyor ve kullanır `memcpy` verileri kopyalamak için. ATL ayrıca uzmanlıkları sağlar `_Copy` değişken, LPOLESTR OLEVERB ve CONNECTDATA veri türleri için.
+- Sınıf `_Copy` homojen kopyalamaya izin verir (veri türleri arasında dönüştürme değil) çünkü yalnızca `DestinationType` hem de *SourceType'ı*belirtmek için tek bir şablon parametresi sunar. Bu şablonun genel uygulaması hiçbir başlatma veya `memcpy` imha kodu içerir ve verileri kopyalamak için kullanır. ATL ayrıca VARIANT, `_Copy` LPOLESTR, OLEVERB ve CONNECTDATA veri türleri için uzmanlık sağlar.
 
-- `_CopyInterface` Sınıf, arabirim işaretçilerini standart COM kuralları aşağıdaki kopyalama uygulanmasını sağlar. Basit atama ve çağrı kullanması için yine bu sınıf sadece homojen kopyalama, sağlar `AddRef` kopyalama işlemini gerçekleştirmek için.
+- Sınıf, `_CopyInterface` arabirim işaretçilerini standart COM kurallarına göre kopyalamak için bir uygulama sağlar. Bir kez daha bu sınıf sadece homojen kopyalama sağlar, bu `AddRef` yüzden basit atama ve kopya gerçekleştirmek için bir çağrı kullanır.
 
-## <a name="custom-implementations"></a>Özel uygulamalar
+## <a name="custom-implementations"></a>Özel Uygulamalar
 
-Genellikle, heterojen (diğer bir deyişle, veri türleri arasında dönüştürme) kopyalamak için kendi kopyalama İlkesi sınıfları tanımlamanız gerekir. Özel kopyalama İlkesi sınıfları bazı örnekler için VCUE_Copy.h ve VCUE_CopyString.h içinde dosyaları bakın [ATLCollections](../overview/visual-cpp-samples.md) örnek. İki şablon kopyalama İlkesi sınıfları, bu dosyaları içeren `GenericCopy` ve `MapCopy`, uzmanlıkları sayısı artı `GenericCopy` farklı veri türleri için.
+Tipik olarak, heterojen kopyalama (diğer bir süre önce veri türleri arasında dönüştürme) için kendi kopya ilkesi sınıflarınızı tanımlamanız gerekir. Özel kopyalama ilkesi sınıflarına örnek olarak, [ATLCollections](../overview/visual-cpp-samples.md) örneğindeki VCUE_Copy.h ve VCUE_CopyString.h dosyalarına bakın. Bu dosyalar iki şablon kopyalama `GenericCopy` `MapCopy`ilkesi sınıfı ve farklı veri `GenericCopy` türleri için uzmanlık lar içerir.
 
-### <a name="genericcopy"></a>GenericCopy
+### <a name="genericcopy"></a>Genericcopy
 
-`GenericCopy` belirtmenize olanak tanır *SourceType* ve `DestinationType` şablon bağımsız değişkenleri olarak. En genel formu şöyledir `GenericCopy` VCUE_Copy.h sınıfı:
+`GenericCopy`*SourceType* ve `DestinationType` şablon bağımsız değişkenleri olarak belirtmenizi sağlar. İşte VCUE_Copy.h sınıfının `GenericCopy` en genel şekli:
 
 [!code-cpp[NVC_ATL_COM#30](../atl/codesnippet/cpp/atl-copy-policy-classes_1.h)]
 
-VCUE_Copy.h Ayrıca bu sınıf aşağıdaki uzmanlıklarını içerir: `GenericCopy<BSTR>`, `GenericCopy<VARIANT, BSTR>`, `GenericCopy<BSTR, VARIANT>`. VCUE_CopyString.h içeren kopyalama için uzmanlıkları **std::string**s: `GenericCopy<std::string>`, `GenericCopy<VARIANT, std::string>`, ve `GenericCopy<BSTR, std::string>`. Artırabilecek `GenericCopy` kendi uzmanlıkları daha sağlayarak.
+VCUE_Copy.h ayrıca bu sınıfın aşağıdaki uzmanlıklarını `GenericCopy<BSTR>` `GenericCopy<VARIANT, BSTR>`içerir: , , `GenericCopy<BSTR, VARIANT>`. VCUE_CopyString.h std kopyalama için uzmanlıklar **içerir::string** `GenericCopy<std::string>` `GenericCopy<VARIANT, std::string>`s: `GenericCopy<BSTR, std::string>`, , ve . Kendi uzmanlıkdaha sağlayarak artırabilir. `GenericCopy`
 
-### <a name="mapcopy"></a>MapCopy
+### <a name="mapcopy"></a>Harita fotokopisi
 
-`MapCopy` Kopyalanan verileri böylece veriler depolanır ve hedef türü eşleme türü belirtmenizi sağlar bir C++ Standart Kitaplığı stili eşlemeye depolandığını varsayar. Sınıfın uygulaması tarafından sağlanan tür tanımları yalnızca kullandığı *MapType* sınıf kaynak verilerin türünü belirlemeye ve uygun çağrılacak `GenericCopy` sınıfı. Bu sınıfın yok uzmanlıkları gereklidir.
+`MapCopy`kopyalanan verilerin C++ Standart Kitaplık stili nde bir haritada depolandığını varsayar, bu nedenle verilerin depolandığı harita türünü ve hedef türünü belirtmenize olanak tanır. Sınıfın uygulanması, kaynak verilerin türünü belirlemek ve uygun `GenericCopy` sınıfı aramak için *MapType* sınıfı tarafından sağlanan typedefs kullanır. Bu sınıfın uzmanlıklarına gerek yoktur.
 
 [!code-cpp[NVC_ATL_COM#31](../atl/codesnippet/cpp/atl-copy-policy-classes_2.h)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığı Temelli Koleksiyon Uygulama](../atl/implementing-an-stl-based-collection.md)<br/>
-[ATLCollections örnek](../overview/visual-cpp-samples.md)
+[C++ Standart Kitaplık Tabanlı Koleksiyonu Uygulama](../atl/implementing-an-stl-based-collection.md)<br/>
+[ATLCollections Örnek](../overview/visual-cpp-samples.md)

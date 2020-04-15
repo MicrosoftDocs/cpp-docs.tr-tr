@@ -1,8 +1,9 @@
 ---
 title: _umask_s
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _umask_s
+- _o__umask_s
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -30,16 +32,16 @@ helpviewer_keywords:
 - umask_s function
 - files [C++], permission settings for
 ms.assetid: 70898f61-bf2b-4d8d-8291-0ccaa6d33145
-ms.openlocfilehash: 21d9ba194f85e40c3c5a4d67d16ebca9721f68f8
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d590910d5f5092a78ad64c8f9ef0aa259211e226
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945992"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81362175"
 ---
 # <a name="_umask_s"></a>_umask_s
 
-Varsayılan dosya izni maskesini ayarlar. [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_umask](umask.md) sürümü.
+Varsayılan dosya izni maskesini ayarlar. [CRT](../../c-runtime-library/security-features-in-the-crt.md)Güvenlik Özellikleri açıklandığı gibi güvenlik geliştirmeleri ile [_umask](umask.md) bir sürümü.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,7 +54,7 @@ errno_t _umask_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*modundaysa*<br/>
+*Modu*<br/>
 Varsayılan izin ayarı.
 
 *pOldMode*<br/>
@@ -60,40 +62,42 @@ Varsayılan izin ayarı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Mod* geçerli bir mod belirtmezse veya *pOldMode* işaretçisi **null**olduğunda bir hata kodu döndürür.
+*Mod* geçerli bir mod belirtmezse veya *pOldMode* işaretçisi **NULL**ise bir hata kodu verir.
 
-### <a name="error-conditions"></a>Hata koşulları
+### <a name="error-conditions"></a>Hata Koşulları
 
-|*modundaysa*|*pOldMode*|Dönüş değeri|*POldMode* içeriği|
+|*Modu*|*pOldMode*|Döndürülen değer|*pOldMode* içeriği|
 |------------|----------------|----------------------|--------------------------------|
-|Kaydedilmemiş|**DEĞER**|**EINVAL**|değiştirilmedi|
-|Geçersiz mod|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
+|herhangi bir|**Null**|**Eınval**|değiştirilmemiş|
+|geçersiz mod|herhangi bir|**Eınval**|değiştirilmemiş|
 
-Yukarıdaki koşullardan biri gerçekleşirse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **_Umask_s** **EINVAL** döndürür ve **errno** öğesini **EINVAL**olarak ayarlar.
+Yukarıdaki koşullardan biri oluşursa, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, **_umask_s** **EINVAL** döndürür ve **EINVAL** **için errno** ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Umask_s** işlevi, geçerli işlemin dosya izni maskesini *mod*tarafından belirtilen moda ayarlar. Dosya izni maskesi, **_creat**, **_open**veya **_sopen**tarafından oluşturulan yeni dosyaların izin ayarını değiştirir. Maskede bir bit 1 ise, dosyanın istenen izin değerindeki karşılık gelen bit 0 olarak ayarlanır (izin verilmez). Maskede bir bit 0 ise, karşılık gelen bit değişmeden bırakılır. Yeni bir dosyanın izin ayarı, dosya ilk kez kapatılana kadar ayarlanamaz.
+**_umask_s** işlevi, geçerli işlemin dosya izin maskesini *modtarafından*belirtilen moda ayarlar. Dosya izin maskesi, **_creat**, **_open**veya **_sopen**tarafından oluşturulan yeni dosyaların izin ayarını değiştirir. Maskedeki bir bit 1 ise, dosyanın istenen izin değerindeki karşılık gelen bit 0 (izin verilmez) olarak ayarlanır. Maskedeki bir bit 0 ise, karşılık gelen bit değişmeden bırakılır. Yeni bir dosyaiçin izin ayarı, dosya ilk kez kapatılana kadar ayarlanmaz.
 
-*Pmode* tamsayı ifadesi, sys\statiçinde tanımlanan aşağıdaki bildirim sabitlerinden birini veya her ikisini içerir. Olsun
+İnteger ifade *pmode* sys\STAT tanımlanan aşağıdaki bildirim sabitlerinden birini veya her ikisini içerir. H:
 
 |*pmode*||
 |-|-|
-|**_S_IWRITE**|Yazma izni veriliyor.|
-|**_S_IREAD**|Okuma izni verildi.|
-|**_S_İREAD** \| **_S_İWRİTE**|Okuma ve yazma izni verildi.|
+|**_S_IWRITE**|Yazmaya izin verilir.|
+|**_S_IREAD**|Okumaya izin verilir.|
+|**_S_IREAD** \| **_S_IWRITE**|Okuma ve yazmaya izin verilir.|
 
-Her iki sabit de verildiğinde, bit düzeyinde OR işleci ( **|** ) ile birleştirilir. *Mode* bağımsız değişkeni **_S_iread**ise, okumaya izin verilmez (dosya salt yazılır olur). *Mode* bağımsız değişkeni **_S_iwrite**ise, yazmaya izin verilmez (dosya salt okunurdur). Örneğin, maskede yazma biti ayarlandıysa, tüm yeni dosyalar salt okunurdur. MS-DOS ve Windows işletim sistemlerinde tüm dosyaların okunabilir olduğunu unutmayın; salt yazılır izin vermek mümkün değildir. Bu nedenle, okuma bitinin **_umask_s** ile ayarlanması, dosyanın modlarını etkilemez.
+Her iki sabit verildiğinde, bitwise-OR işleci ( **|** ) ile birleştirilir. *Mod* bağımsız değişkeni **_S_IREAD**ise, okumaya izin verilmez (dosya yalnızca yazmadır). *Mod* bağımsız değişkeni **_S_IWRITE**ise, yazmaya izin verilmez (dosya salt okunur). Örneğin, yazma biti maskede ayarlanmışsa, yeni dosyalar salt okunur. MS-DOS ve Windows işletim sistemleri ile tüm dosyaların okunabilir olduğunu unutmayın; yalnızca yazma izni vermek mümkün değildir. Bu nedenle, okuma bitini **_umask_s** ayarlamak dosyanın modları üzerinde hiçbir etkiye sahip değildir.
 
-*Pmode* , bildirim sabitlerinden birinin bir birleşimi değilse veya diğer bir sabitler kümesini içeriyorsa, işlev bunları yok sayacaktır.
+*Pmode,* bildirim sabitlerinden birinin bir birleşimi değilse veya alternatif bir sabit kümesi içeriyorsa, işlev bunları yok sayacaktır.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_umask_s**|\<GÇ. h > ve \<sys/stat. h > ve \<sys/Types. h >|
+|**_umask_s**|\<io.h> \<ve sys/stat.h> ve \<sys/types.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -131,8 +135,8 @@ Oldmask = 0x0000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
-[Alt düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
+[Dosya Işleme](../../c-runtime-library/file-handling.md)<br/>
+[Düşük Seviyeli G/Ç](../../c-runtime-library/low-level-i-o.md)<br/>
 [_chmod, _wchmod](chmod-wchmod.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>

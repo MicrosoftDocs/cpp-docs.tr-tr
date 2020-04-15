@@ -2,32 +2,32 @@
 title: DHTML Düzenleme Komutu Eşlemeleri
 ms.date: 11/04/2016
 ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1
-ms.openlocfilehash: 7f420619983283c225ca8fca23c5ea349def1d1b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 62b388eb178be018655ea2b2be00d7321da50335
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323066"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81365816"
 ---
 # <a name="dhtml-editing-command-maps"></a>DHTML Düzenleme Komutu Eşlemeleri
 
-DHTML düzenleme komutlarında eşlemek için aşağıdaki makroları kullanılabilir [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-türetilmiş sınıflar. Kullanımları örneği için bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki makrolar [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)türetilmiş sınıflarda DHTML düzenleme komutları eşlemek için kullanılabilir. Kullanımörnekleri için [HTMLEdit Örneği'ne](../../overview/visual-cpp-samples.md)bakın.
 
-### <a name="dhtml-editing-command-map-macros"></a>DHTML düzenleme komutu eşleme makroları
+### <a name="dhtml-editing-command-map-macros"></a>DHTML Düzenleme Komut Haritası Makroları
 
 |||
 |-|-|
-|[DECLARE_DHTMLEDITING_CMDMAP](#declare_dhtmlediting_cmdmap)|DHTML düzenleme komutu harita üzerindeki bir sınıfı bildirir.|
-|[BEGIN_DHTMLEDITING_CMDMAP](#begin_dhtmlediting_cmdmap)|DHTML düzenleme komutu harita içinde bir sınıf tanımı başlatır.|
-|[END_DHTMLEDITING_CMDMAP](#end_dhtmlediting_cmdmap)|DHTML düzenleme komutu harita sonunu işaretler.|
-|[DHTMLEDITING_CMD_ENTRY](#dhtmlediting_cmd_entry)|Komut kimliği için bir HTML düzenleme komutu eşlemeleri.|
-|[DHTMLEDITING_CMD_ENTRY_FUNC](#dhtmlediting_cmd_entry_func)|Komut kimliği, bir HTML düzenleme komut ve ileti işleyicisi eşler.|
-|[DHTMLEDITING_CMD_ENTRY_TYPE](#dhtmlediting_cmd_entry_type)|Komut kimliği, bir HTML düzenleme komut ve kullanıcı arabirimi öğesi eşler.|
-|[DHTMLEDITING_CMD_ENTRY_FUNC_TYPE](#dhtmlediting_cmd_entry_func_type)|HTML kullanıcı arabirimi öğesi komut ve ileti işleyicisini düzenleme için bir komut kimliği eşler.|
+|[DECLARE_DHTMLEDITING_CMDMAP](#declare_dhtmlediting_cmdmap)|Bir sınıfta bir DHTML düzenleme komut haritası bildirir.|
+|[BEGIN_DHTMLEDITING_CMDMAP](#begin_dhtmlediting_cmdmap)|Bir sınıf içinde bir DHTML düzenleme komut eşlemi tanımını başlatır.|
+|[END_DHTMLEDITING_CMDMAP](#end_dhtmlediting_cmdmap)|DHTML düzenleme komut haritasının sonunu işaretler.|
+|[DHTMLEDITING_CMD_ENTRY](#dhtmlediting_cmd_entry)|Komut kimliğini HTML düzenleme komutuyla eşler.|
+|[DHTMLEDITING_CMD_ENTRY_FUNC](#dhtmlediting_cmd_entry_func)|Komut kimliğini HTML düzenleme komutu ve ileti işleyicisi ile eşler.|
+|[DHTMLEDITING_CMD_ENTRY_TYPE](#dhtmlediting_cmd_entry_type)|Komut kimliğini HTML düzenleme komutu ve kullanıcı arabirimi öğesiyle eşler.|
+|[DHTMLEDITING_CMD_ENTRY_FUNC_TYPE](#dhtmlediting_cmd_entry_func_type)|Komut kimliğini HTML düzenleme komutu, ileti işleyicisi ve kullanıcı arabirimi öğesiyle eşler.|
 
-##  <a name="declare_dhtmlediting_cmdmap"></a>  DECLARE_DHTMLEDITING_CMDMAP
+## <a name="declare_dhtmlediting_cmdmap"></a><a name="declare_dhtmlediting_cmdmap"></a>DECLARE_DHTMLEDITING_CMDMAP
 
-DHTML düzenleme komutu harita üzerindeki bir sınıfı bildirir.
+Bir sınıfta bir DHTML düzenleme komut haritası bildirir.
 
 ```
 DECLARE_DHTMLEDITING_CMDMAP(className)
@@ -35,26 +35,26 @@ DECLARE_DHTMLEDITING_CMDMAP(className)
 
 ### <a name="parameters"></a>Parametreler
 
-*className*<br/>
-Sınıf adı.
+*Classname*<br/>
+Sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu Makro tanımında kullanılacak olan [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-türetilmiş sınıflar.
+Bu makro [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)türetilmiş sınıfların tanımında kullanılacaktır.
 
-Kullanım [begın_dhtmledıtıng_cmdmap](#begin_dhtmlediting_cmdmap) haritayı uygulamak için.
+Haritayı uygulamak için [BEGIN_DHTMLEDITING_CMDMAP](#begin_dhtmlediting_cmdmap) kullanın.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
+Bkz. [HTMLEdit Örneği](../../overview/visual-cpp-samples.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxhtml.h
+  **Üstbilgi** afxhtml.h
 
-##  <a name="begin_dhtmlediting_cmdmap"></a>  BEGIN_DHTMLEDITING_CMDMAP
+## <a name="begin_dhtmlediting_cmdmap"></a><a name="begin_dhtmlediting_cmdmap"></a>BEGIN_DHTMLEDITING_CMDMAP
 
-DHTML düzenleme komutu harita içinde bir sınıf tanımı başlatır.
+Bir sınıf içinde bir DHTML düzenleme komut eşlemi tanımını başlatır.
 
 ```
 BEGIN_DHTMLEDITING_CMDMAP(className)
@@ -62,22 +62,22 @@ BEGIN_DHTMLEDITING_CMDMAP(className)
 
 ### <a name="parameters"></a>Parametreler
 
-*className*<br/>
-DHTML düzenleme komutu harita içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı olarak türetilmesi [CHtmlEditView](../../mfc/reference/chtmleditview-class.md) ve [declare_dhtmledıtıng_cmdmap](#declare_dhtmlediting_cmdmap) sınıf tanımı içinde makrosu.
+*Classname*<br/>
+DHTML düzenleme komut eşlemini içeren sınıfın adı. Bu sınıf doğrudan veya dolaylı olarak [CHtmlEditView'den](../../mfc/reference/chtmleditview-class.md) türemelidir ve [DECLARE_DHTMLEDITING_CMDMAP](#declare_dhtmlediting_cmdmap) makroyu sınıf tanımına dahil etmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DHTML düzenleme komutu harita HTML düzenleme komutları için kullanıcı arabirimi komutları eşlemek için kendi sınıfınızı ekleyin.
+Kullanıcı arabirimi komutlarını HTML düzenleme komutlarına eşlemek için sınıfınıza bir DHTML düzenleme komut haritası ekleyin.
 
-Ardından sınıf uygulama (.cpp) dosyası begın_dhtmledıtıng_cmdmap makrosu koyun [dhtmledıtıng_cmd_entry](#dhtmlediting_cmd_entry) komutlar sınıfıdır (örneğin, gelen ıd_edıt_cut IDM_CUT için) eşlemek için makroları. Kullanım [end_dhtmledıtıng_cmdmap](#end_dhtmlediting_cmdmap) olay eşlemesi sonunu işaretlemek için makrosu.
+BEGIN_DHTMLEDITING_CMDMAP makroyu sınıfın uygulama (.cpp) dosyasına yerleştirin ve ardından sınıfın eşlenebilmek için [DHTMLEDITING_CMD_ENTRY](#dhtmlediting_cmd_entry) makroları (örneğin, ID_EDIT_CUT'den IDM_CUT' ye) yerleştirin. Olay haritasının sonunu işaretlemek için [END_DHTMLEDITING_CMDMAP](#end_dhtmlediting_cmdmap) makroyu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxhtml.h
+  **Üstbilgi** afxhtml.h
 
-##  <a name="end_dhtmlediting_cmdmap"></a>  END_DHTMLEDITING_CMDMAP
+## <a name="end_dhtmlediting_cmdmap"></a><a name="end_dhtmlediting_cmdmap"></a>END_DHTMLEDITING_CMDMAP
 
-DHTML düzenleme komutu harita sonunu işaretler.
+DHTML düzenleme komut haritasının sonunu işaretler.
 
 ```
 END_DHTMLEDITING_CMDMAP()
@@ -85,19 +85,19 @@ END_DHTMLEDITING_CMDMAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle kullanılmak üzere [begın_dhtmledıtıng_cmdmap](#begin_dhtmlediting_cmdmap).
+[BEGIN_DHTMLEDITING_CMDMAP](#begin_dhtmlediting_cmdmap)ile birlikte kullanın.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
+Bkz. [HTMLEdit Örneği](../../overview/visual-cpp-samples.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxhtml.h
+  **Üstbilgi** afxhtml.h
 
-##  <a name="dhtmlediting_cmd_entry"></a>  DHTMLEDITING_CMD_ENTRY
+## <a name="dhtmlediting_cmd_entry"></a><a name="dhtmlediting_cmd_entry"></a>DHTMLEDITING_CMD_ENTRY
 
-Komut kimliği için bir HTML düzenleme komutu eşlemeleri.
+Komut kimliğini HTML düzenleme komutuyla eşler.
 
 ```
 DHTMLEDITING_CMD_ENTRY(cmdID,  dhtmlcmdID)
@@ -106,22 +106,22 @@ DHTMLEDITING_CMD_ENTRY(cmdID,  dhtmlcmdID)
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
-Komut Kimliği (örneğin, ıd_edıt_copy).
+Komut kimliği (ID_EDIT_COPY gibi).
 
 *dhtmlcmdID*<br/>
-Hangi komut düzenleme HTML *cmdID* (IDM_COPY gibi) eşleştirir.
+*CMDID* haritalarının (IDM_COPY gibi) HTML düzenleme komutu.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
+Bkz. [HTMLEdit Örneği](../../overview/visual-cpp-samples.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxhtml.h
+  **Üstbilgi** afxhtml.h
 
-##  <a name="dhtmlediting_cmd_entry_func"></a>  DHTMLEDITING_CMD_ENTRY_FUNC
+## <a name="dhtmlediting_cmd_entry_func"></a><a name="dhtmlediting_cmd_entry_func"></a>DHTMLEDITING_CMD_ENTRY_FUNC
 
-Komut kimliği, bir HTML düzenleme komut ve ileti işleyicisi eşler.
+Komut kimliğini HTML düzenleme komutu ve ileti işleyicisi ile eşler.
 
 ```
 DHTMLEDITING_CMD_ENTRY_FUNC(cmdID, dhtmlcmdID,  member_func_name)
@@ -130,25 +130,25 @@ DHTMLEDITING_CMD_ENTRY_FUNC(cmdID, dhtmlcmdID,  member_func_name)
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
-Komut Kimliği (örneğin, ıd_edıt_copy).
+Komut kimliği (ID_EDIT_COPY gibi).
 
 *dhtmlcmdID*<br/>
-Hangi komut düzenleme HTML *cmdID* (IDM_COPY gibi) eşleştirir.
+*CMDID* haritalarının (IDM_COPY gibi) HTML düzenleme komutu.
 
 *member_func_name*<br/>
-Komut için eşlenmiş ileti işleyici işlevinin adı.
+Komutun eşlendiği ileti işleyicisi işlevinin adı.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
+Bkz. [HTMLEdit Örneği](../../overview/visual-cpp-samples.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxhtml.h
+  **Üstbilgi** afxhtml.h
 
-##  <a name="dhtmlediting_cmd_entry_type"></a>  DHTMLEDITING_CMD_ENTRY_TYPE
+## <a name="dhtmlediting_cmd_entry_type"></a><a name="dhtmlediting_cmd_entry_type"></a>DHTMLEDITING_CMD_ENTRY_TYPE
 
-Komut kimliği, bir HTML düzenleme komut ve kullanıcı arabirimi öğesi eşler.
+Komut kimliğini HTML düzenleme komutu ve kullanıcı arabirimi öğesiyle eşler.
 
 ```
 DHTMLEDITING_CMD_ENTRY_TYPE(cmdID  ,   dhtmlcmdID  ,    elemType)
@@ -157,25 +157,25 @@ DHTMLEDITING_CMD_ENTRY_TYPE(cmdID  ,   dhtmlcmdID  ,    elemType)
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
-Komut Kimliği (örneğin, ıd_edıt_copy).
+Komut kimliği (ID_EDIT_COPY gibi).
 
 *dhtmlcmdID*<br/>
-Hangi komut düzenleme HTML *cmdID* (IDM_COPY gibi) eşleştirir.
+*CMDID* haritalarının (IDM_COPY gibi) HTML düzenleme komutu.
 
 *elemType*<br/>
 Kullanıcı arabirimi öğesi türü; AFX_UI_ELEMTYPE_NORMAL, AFX_UI_ELEMTYPE_CHECKBOX veya AFX_UI_ELEMTYPE_RADIO biri.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
+Bkz. [HTMLEdit Örneği](../../overview/visual-cpp-samples.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxhtml.h
+  **Üstbilgi** afxhtml.h
 
-##  <a name="dhtmlediting_cmd_entry_func_type"></a>  DHTMLEDITING_CMD_ENTRY_FUNC_TYPE
+## <a name="dhtmlediting_cmd_entry_func_type"></a><a name="dhtmlediting_cmd_entry_func_type"></a>DHTMLEDITING_CMD_ENTRY_FUNC_TYPE
 
-HTML kullanıcı arabirimi öğesi komut ve ileti işleyicisini düzenleme için bir komut kimliği eşler.
+Komut kimliğini HTML düzenleme komutu, ileti işleyicisi ve kullanıcı arabirimi öğesiyle eşler.
 
 ```
 DHTMLEDITING_CMD_ENTRY_FUNC_TYPE(cmdID, dhtmlcmdID, member_func_name,  elemType)
@@ -184,25 +184,25 @@ DHTMLEDITING_CMD_ENTRY_FUNC_TYPE(cmdID, dhtmlcmdID, member_func_name,  elemType)
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
-Komut Kimliği (örneğin, ıd_edıt_copy).
+Komut kimliği (ID_EDIT_COPY gibi).
 
 *dhtmlcmdID*<br/>
-Hangi komut düzenleme HTML *cmdID* (IDM_COPY gibi) eşleştirir.
+*CMDID* haritalarının (IDM_COPY gibi) HTML düzenleme komutu.
 
 *member_func_name*<br/>
-Komut için eşlenmiş ileti işleyici işlevinin adı.
+Komutun eşlendiği ileti işleyicisi işlevinin adı.
 
 *elemType*<br/>
 Kullanıcı arabirimi öğesi türü; AFX_UI_ELEMTYPE_NORMAL, AFX_UI_ELEMTYPE_CHECKBOX veya AFX_UI_ELEMTYPE_RADIO biri.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
+Bkz. [HTMLEdit Örneği](../../overview/visual-cpp-samples.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxhtml.h
+  **Üstbilgi** afxhtml.h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve Küreseller](../../mfc/reference/mfc-macros-and-globals.md)

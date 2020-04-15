@@ -11,55 +11,55 @@ helpviewer_keywords:
 - scrolling [C++], recordsets
 - Move method (recordsets)
 ms.assetid: f38d2dcb-1e88-4e41-af25-98b00c276be4
-ms.openlocfilehash: 8a8305d2acacc79f5d7fe395087a0bd13dcbd196
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 931051296dff495939fcbd894102a1b00e48ee90
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212777"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81366934"
 ---
 # <a name="recordset-scrolling-odbc"></a>Kayıt Kümesi: Kaydırma (ODBC)
 
 Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bir kayıt kümesini açtıktan sonra, değerleri göstermek, hesaplamalar yapmak, raporlar oluşturmak vb. için kayıtlara erişmeniz gerekir. Kaydırma, kayıt kümenizin içinde kayıttan kayda geçiş yapmanızı sağlar.
+Bir kayıt kümesini açtıktan sonra, değerleri görüntülemek, hesaplamalar yapmak, raporlar oluşturmak ve benzeri kayıtlara erişmeniz gerekir. Kaydırma, kayıt setinizin içinde kayıttan kayda geçmenizi sağlar.
 
-Bu konuda aşağıdakiler açıklanmaktadır:
+Bu konu açıklar:
 
-- Kayıt [kümesinde bir kayıttan diğerine kaydırma](#_core_scrolling_from_one_record_to_another).
+- [Kayıt kümesinde bir kayıttan diğerine kaydırma nasıl.](#_core_scrolling_from_one_record_to_another)
 
-- [Kaydırma hangi koşullarda desteklenir ve desteklenmez](#_core_when_scrolling_is_supported).
+- Kaydırma hangi koşullar altında ve [desteklenmez.](#_core_when_scrolling_is_supported)
 
-##  <a name="scrolling-from-one-record-to-another"></a><a name="_core_scrolling_from_one_record_to_another"></a>Bir kayıttan diğerine kaydırma
+## <a name="scrolling-from-one-record-to-another"></a><a name="_core_scrolling_from_one_record_to_another"></a>Bir Kayıttan Diğerine Kaydırma
 
-Sınıf `CRecordset` bir kayıt kümesi içinde kaydırmak için `Move` üye işlevlerini sağlar. Bu işlevler, geçerli kaydı satır kümelerine göre taşır. Toplu satır getirmeyi uyguladıysanız, `Move` bir işlem, kayıt kümesini satır kümesinin boyutuna göre konumlandırır. Toplu satır getirmeyi gerçekleştirdiyseniz, `Move` işleve yapılan bir çağrı her seferinde kayıt kümesini bir kayıt ile kaydeder. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Sınıf, `CRecordset` `Move` kayıt kümesi içinde kaydırma için üye işlevleri sağlar. Bu işlevler geçerli kaydı satır kümeleri tarafından taşır. Toplu satır alma işlemini uyguladıysanız, bir `Move` işlem kayıt kümesini rowset boyutuna göre yeniden konumlandırIr. Toplu satır alma uygulamadıysanız, bir `Move` işlev çağrısı her seferinde bir kayıt tarafından kayıt kümesini yeniden konumlandırIr. Toplu satır alma hakkında daha fazla bilgi için bkz: [Recordset: Toplu Olarak Kayıtları Alma (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 > [!NOTE]
->  Bir kayıt kümesinden geçiş yaparken, silinen kayıtlar atlanmayabilir. Daha fazla bilgi için [IsDeleted](../../mfc/reference/crecordset-class.md#isdeleted) üye işlevine bakın.
+> Kayıt kümesinde hareket ederken, silinen kayıtlar atlanamayabilir. Daha fazla bilgi [için, Silinmiş](../../mfc/reference/crecordset-class.md#isdeleted) üye işlevine bakın.
 
-`Move` işlevlerine ek olarak `CRecordset`, kayıt kümenizin başlangıcının sonundan mi yoksa gerisinde mi kaydırılabileceğini denetlemek için üye işlevleri sağlar.
+`Move` Fonksiyonlara ek olarak, `CRecordset` kayıt setinizin başında veya sonundan önce kaydırDığınızı denetlemek için üye işlevler sağlar.
 
-Kayıt kümenizde kaydırmanın mümkün olup olmadığını anlamak için `CanScroll` üye işlevini çağırın.
+Kayıt setinizde kaydırmanın mümkün olup olmadığını `CanScroll` belirlemek için üye işlevini arayın.
 
-#### <a name="to-scroll"></a>Kaydırmak için
+#### <a name="to-scroll"></a>Kaydırma kin
 
-1. Bir kayıt veya bir satır kümesi ilet: [MoveNext](../../mfc/reference/crecordset-class.md#movenext) üye işlevini çağırın.
+1. Bir kaydı veya bir rowset'i ileri: [MoveNext](../../mfc/reference/crecordset-class.md#movenext) üye işlevini arayın.
 
-1. Geriye doğru bir kayıt veya bir satır kümesi: [Moveönceki](../../mfc/reference/crecordset-class.md#moveprev) üye işlevini çağırın.
+1. Geriye doğru bir kayıt veya bir rowset: [MovePrev](../../mfc/reference/crecordset-class.md#moveprev) üye işlevini arayın.
 
-1. Kayıt kümesindeki ilk kayda: [MoveFirst](../../mfc/reference/crecordset-class.md#movefirst) member işlevini çağırın.
+1. Kayıt kümesindeki ilk kayda: [MoveFirst](../../mfc/reference/crecordset-class.md#movefirst) üye işlevini arayın.
 
-1. Kayıt kümesindeki son kayıt veya son satır kümesi: [MoveLast](../../mfc/reference/crecordset-class.md#movelast) üye işlevini çağırın.
+1. Kayıt kümesindeki son kayda veya son satır kümesine: [MoveLast](../../mfc/reference/crecordset-class.md#movelast) üye işlevini arayın.
 
-1. Geçerli konuma göre *N* kayıt: [Move](../../mfc/reference/crecordset-class.md#move) member işlevini çağırın.
+1. *N,* geçerli konuma göre kayıt: [Taşı](../../mfc/reference/crecordset-class.md#move) üye işlevini çağırın.
 
-#### <a name="to-test-for-the-end-or-the-beginning-of-the-recordset"></a>Kayıt kümesinin sonunu veya başlangıcını test etmek için
+#### <a name="to-test-for-the-end-or-the-beginning-of-the-recordset"></a>Kayıt kümesinin sonu veya başlangıcı için test etmek için
 
-1. Son kaydı yukarı kaydırdınız mı? IOF [IsEOF](../../mfc/reference/crecordset-class.md#iseof) üye işlevini çağırın.
+1. Son kaydı geçtin mi? [IsEOF](../../mfc/reference/crecordset-class.md#iseof) üye işlevini arayın.
 
-1. İlk kaydın önüne kaydırıyorsunuz (geriye doğru hareket)? [IsBOF](../../mfc/reference/crecordset-class.md#isbof) üye işlevini çağırın.
+1. İlk kaydın önüne geçtiniz mi (geriye doğru hareket ediyor)? [IsBOF](../../mfc/reference/crecordset-class.md#isbof) üye işlevini arayın.
 
-Aşağıdaki kod örneği, her iki yönde kaydırılırken bir kayıt kümesinin sınırlarını algılamak için `IsBOF` ve `IsEOF` kullanır.
+Aşağıdaki kod örneği `IsBOF` `IsEOF` kullanır ve her iki yönde kaydırma yaparken bir kayıt kümesinin sınırlarını algılamak için.
 
 ```
 // Open a recordset; first record is current
@@ -87,23 +87,23 @@ while( !rsCustSet.IsBOF( ) )
 rsCustSet.MoveFirst( );
 ```
 
-`IsEOF`, kayıt kümesi son kayıttan sonra konumlandırılmışsa sıfır dışında bir değer döndürür. `IsBOF`, kayıt kümesi ilk kaydın önüne konumlandırılmışsa (tüm kayıtlardan önce) sıfır dışında bir değer döndürür. Her iki durumda da, üzerinde çalışılacak geçerli bir kayıt yoktur. `IsBOF` zaten doğru olduğunda `MoveNext` veya `IsEOF` zaten doğru olduğunda `MovePrev` çağırırsanız, çerçeve bir `CDBException`oluşturur. Boş bir kayıt kümesini denetlemek için `IsBOF` ve `IsEOF` de kullanabilirsiniz.
+`IsEOF`kayıt kümesi son kaydın ötesine konumlandırılmışsa sıfır olmayan bir değer döndürür. `IsBOF`kayıt kümesi ilk kaydın önüne yerleştirilmişse (tüm kayıtlardan önce) sıfır olmayan bir değer döndürür. Her iki durumda da, çalışacak geçerli bir kayıt yoktur. Zaten DOĞRU `MovePrev` `IsBOF` olduğunda veya zaten `MoveNext` `IsEOF` DOĞRU olduğunda arama, çerçeve `CDBException`atar . Boş bir `IsBOF` kayıt `IsEOF` kümesini de kullanabilir ve kontrol edebilirsiniz.
 
-Kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. [kayıt kümesi: yer işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
+Kayıt kümesi gezintisi hakkında daha fazla bilgi için [Kayıt Kümesi: Yer İşaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md)adlı telefon adedine bakın.
 
-##  <a name="when-scrolling-is-supported"></a><a name="_core_when_scrolling_is_supported"></a>Kaydırma destekleniyor
+## <a name="when-scrolling-is-supported"></a><a name="_core_when_scrolling_is_supported"></a>Kaydırma Desteklendiğinde
 
-Başlangıçta tasarlanan SQL, yalnızca ileri kaydırma için sağlanmış ancak ODBC, kaydırma yeteneklerini genişletiyor. Kaydırma desteğinin kullanılabilir düzeyi, uygulamanızın birlikte çalışması için, sürücünüzün ODBC API 'SI uyumluluk düzeyi ve ODBC Imleç kitaplığı 'nın belleğe yüklenip yüklenmediğine göre değişir. Daha fazla bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md) ve [ODBC: ODBC imleç kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md).
+Başlangıçta tasarlandığı gibi, SQL yalnızca ileri kaydırma sağladı, ancak ODBC kaydırma yeteneklerini genişletiyor. Kaydırma için kullanılabilir destek düzeyi, uygulamanızın birlikte çalıştığı ODBC sürücülerine, sürücünüzün ODBC API uyumluluk düzeyine ve ODBC İmleç Kitaplığı'nın belleğe yüklenip yüklenmediğine bağlıdır. Daha fazla bilgi için [Bkz. ODBC](../../data/odbc/odbc-basics.md) ve [ODBC: ODBC İmleç Kitaplığı.](../../data/odbc/odbc-the-odbc-cursor-library.md)
 
 > [!TIP]
->  İmleç kitaplığının kullanılıp kullanılmadığını kontrol edebilirsiniz. [CDatabase:: Open](../../mfc/reference/cdatabase-class.md#open)Için *bUseCursorLib* ve *dwOptions* parametrelerine bakın.
+> İmleç kitaplığı kullanılıp kullanılmadığını denetleyebilirsiniz. Bkz. *bUseCursorLib* ve *dwOptions* parametreleri [CDatabase için::Aç](../../mfc/reference/cdatabase-class.md#open).
 
 > [!NOTE]
->  MFC DAO sınıflarının aksine, MFC ODBC sınıfları, belirtilen ölçütlere uyan bir sonraki (veya önceki) kaydı bulmak için bir `Find` işlevleri sağlamaz.
+> MFC DAO sınıflarının aksine, MFC ODBC sınıfları `Find` belirtilen ölçütleri karşılayan sonraki (veya önceki) kaydı bulmak için bir dizi işlev sağlamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[CRecordset:: CanScroll](../../mfc/reference/crecordset-class.md#canscroll)<br/>
-[CRecordset:: CheckRowsetError](../../mfc/reference/crecordset-class.md#checkrowseterror)<br/>
+[CRecordset::CanScroll](../../mfc/reference/crecordset-class.md#canscroll)<br/>
+[CRecordset::CheckRowsetHatası](../../mfc/reference/crecordset-class.md#checkrowseterror)<br/>
 [Kayıt Kümesi: Kayıtları Filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)
