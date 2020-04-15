@@ -1,5 +1,5 @@
 ---
-title: Cotavariant sınıfı
+title: COleVariant Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleVariant
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - COleVariant [MFC], GetByteArrayFromVariantArray
 - COleVariant [MFC], SetString
 ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
-ms.openlocfilehash: 49cd4a8d3db436d5e3c4d29efbb4d80b4741a270
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: f907ed7c058f87cf03530411bc8fa4a3c108a4f0
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739784"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374830"
 ---
-# <a name="colevariant-class"></a>Cotavariant sınıfı
+# <a name="colevariant-class"></a>COleVariant Sınıfı
 
-[Değişken](/windows/win32/api/oaidl/ns-oaidl-variant) veri türünü kapsüller.
+[VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) veri türünü kapsüller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,43 +41,43 @@ class COleVariant : public tagVARIANT
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Cotavariant:: Cotavariant](#colevariant)|Bir `COleVariant` nesnesi oluşturur.|
+|[COleVariant::COleVariant](#colevariant)|Bir `COleVariant` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Cotavaryant:: Attach](#attach)|Bir `COleVariant`değişkeni öğesine ekler.|
-|[Cotavariant:: ChangeType](#changetype)|Bu `COleVariant` nesnenin varyant türünü değiştirir.|
-|[Colevarıant:: Clear](#clear)|Bu `COleVariant` nesneyi temizler.|
-|[Cotavaryant::D etach](#detach)|Bir değişkeni bir `COleVariant` ile ayırır ve varyansı döndürür.|
-|[Cotavariant:: GetByteArrayFromVariantArray](#getbytearrayfromvariantarray)|Varolan bir varyant dizisinden bir bayt dizisi alır.|
-|[Cotavaryant:: SetString](#setstring)|Dizeyi genellikle ANSI olarak belirli bir türe ayarlar.|
+|[COleVariant::Ekle](#attach)|Bir VARYANT'a `COleVariant`bir .|
+|[COleVariant::ChangeType](#changetype)|Bu `COleVariant` nesnenin varyant türünü değiştirir.|
+|[COleVariant::Açık](#clear)|Bu `COleVariant` nesneyi temizler.|
+|[COleVariant::Detach](#detach)|Bir VARYANT'ı a'dan `COleVariant` ayırır ve VARYANT'ı döndürür.|
+|[COleVariant::GetByteArrayFromVariantArray](#getbytearrayfromvariantarray)|Varolan bir varyant dizisinden bir bayt dizisi alır.|
+|[COleVariant::SetString](#setstring)|Dizeyi genellikle ANSI olmak üzere belirli bir türe ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Colevarıant:: operator LPCVARYANT](#operator_lpcvariant)|Bir `COleVariant` değeri`LPCVARIANT`öğesine dönüştürür.|
-|[Colevarıant:: operator LPVARYANT](#operator_lpvariant)|Bir `COleVariant` nesneyi`LPVARIANT`öğesine dönüştürür.|
-|[Colevarıant:: operator =](#operator_eq)|Bir `COleVariant` değeri kopyalar.|
-|[Colevarıant:: operator = =](#operator_eq_eq)|İki `COleVariant` değeri karşılaştırır.|
-|[Colevarıant:: işleci &lt;, &lt;&gt;&gt;](#operator_lt_lt__gt_gt)|`COleVariant` `CArchive` 'A`COleVariant` bir değer verirve`CArchive`öğesinden bir nesne girişi yapın. `CDumpContext`|
+|[COleVariant::operatör LPCVARIANT](#operator_lpcvariant)|Bir `COleVariant` değeri bir `LPCVARIANT`.|
+|[COleVariant::operatör LPVARIANT](#operator_lpvariant)|Bir `COleVariant` nesneyi `LPVARIANT`bir .|
+|[COleVariant::operator =](#operator_eq)|Bir `COleVariant` değeri kopyalar.|
+|[COleVariant::operator ==](#operator_eq_eq)|İki `COleVariant` değeri karşılaştırır.|
+|[COleVariant::operatör &lt; &lt;,&gt;&gt;](#operator_lt_lt__gt_gt)|Bir `COleVariant` değer çıkarır `CArchive` `CDumpContext` veya bir `COleVariant` nesneyi `CArchive`.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu veri türü OLE Otomasyonunda kullanılır. Özellikle, [Dispparams](/windows/win32/api/oaidl/ns-oaidl-dispparams) yapısı bir varyant yapıları dizisine yönelik bir işaretçi içerir. Bir `DISPPARAMS` yapı, parametreleri [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke)öğesine geçirmek için kullanılır.
+Bu veri türü OLE otomasyonunda kullanılır. Özellikle, [DISPPARAMS](/windows/win32/api/oaidl/ns-oaidl-dispparams) yapısı VARYANT yapıları bir dizi için bir işaretçi içerir. Parametreleri `DISPPARAMS` IDispatch'e geçirmek için bir yapı [kullanılır::Çağır.](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke)
 
 > [!NOTE]
-> Bu sınıf `VARIANT` yapıdan türetilir. Bu, bir `VARIANT` ' a çağrı `COleVariant` yapan bir parametreye geçirebilmeniz ve `VARIANT` yapının veri üyelerinin erişilebilir veri üyeleri `COleVariant`olması anlamına gelir.
+> Bu sınıf `VARIANT` yapıdan türetilmiştir. Bu, `COleVariant` bir parametrede bir `VARIANT` parametreyi geçebileceğiniz ve yapının `VARIANT` veri üyelerinin `COleVariant`erişilebilir veri üyeleri olduğu anlamına gelir.
 
-İki ilgili MFC sınıfı [copacurrency](../../mfc/reference/colecurrency-class.md) ve [copadatetime](../../atl-mfc-shared/reference/coledatetime-class.md) , değişken veri türü para birimini ( `VT_CY`) ve tarihini ( `VT_DATE`) kapsüllemeli. Sınıf, DAO sınıflarında yaygın olarak kullanılır; bu sınıfın tipik kullanımı için, örneğin [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) ve [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md)gibi bu sınıflara bakın. `COleVariant`
+İlgili iki MFC sınıfı [COleCurrency](../../mfc/reference/colecurrency-class.md) ve [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) varyant veri `VT_CY`türleri CURRENCY `VT_DATE`( ) ve DATE ( kapsüllemek. Sınıf `COleVariant` DAO sınıflarında yaygın olarak kullanılır; [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) ve [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md)gibi bu sınıfın tipik kullanımı için bu sınıflara bakın.
 
-Daha fazla bilgi için, Windows SDK [değişken](/windows/win32/api/oaidl/ns-oaidl-variant), [para birimi](/windows/win32/api/wtypes/ns-wtypes-cy~r1), [Dispparams](/windows/win32/api/oaidl/ns-oaidl-dispparams)ve [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) girdileri bölümüne bakın.
+Daha fazla bilgi için [VARYANT,](/windows/win32/api/oaidl/ns-oaidl-variant) [PARA BIRIMI,](/windows/win32/api/wtypes/ns-wtypes-cy~r1) [DISPPARAMS](/windows/win32/api/oaidl/ns-oaidl-dispparams)ve [IDispatch::Windows](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) SDK'daki girişleri çağırın.
 
-`COleVariant` Sınıfı ve OLE Otomasyonunda kullanımı hakkında daha fazla bilgi için, makale [otomasyonunda](../../mfc/automation.md)"OLE Otomasyonunda parametreleri geçirme" konusuna bakın.
+`COleVariant` Sınıf ve OLE otomasyonundaki kullanımı hakkında daha fazla bilgi için [Otomasyon](../../mfc/automation.md)makalesinde "OLE Otomasyonunda Parametreleri Geçirme" başlıklı makaleye bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -87,11 +87,11 @@ Daha fazla bilgi için, Windows SDK [değişken](/windows/win32/api/oaidl/ns-oai
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** AfxDisp. h
+**Üstbilgi:** afxdisp.h
 
-##  <a name="attach"></a>Cotavaryant:: Attach
+## <a name="colevariantattach"></a><a name="attach"></a>COleVariant::Ekle
 
-Belirtilen [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) nesnesini geçerli `COleVariant` nesneye iliştirmek için bu işlevi çağırın.
+Verilen [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) nesnesini geçerli `COleVariant` nesneye eklemek için bu işlevi çağırın.
 
 ```
 void Attach(VARIANT& varSrc);
@@ -100,17 +100,17 @@ void Attach(VARIANT& varSrc);
 ### <a name="parameters"></a>Parametreler
 
 *varSrc*<br/>
-`VARIANT` Geçerli`COleVariant` nesneye eklenecek varolan bir nesne.
+Geçerli `COleVariant` `VARIANT` nesneye eklenecek varolan bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, *varSrc* 'nin VarType öğesini VT_EMPTY olarak ayarlar.
+Bu işlev *varSrc* vartype VT_EMPTY ayarlar.
 
-Daha fazla bilgi için Windows SDK [Varyant](/windows/win32/api/oaidl/ns-oaidl-variant) ve [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum) girişlerine bakın.
+Daha fazla bilgi için Windows SDK'daki [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) ve [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum) girişlerine bakın.
 
-##  <a name="colevariant"></a>Cotavariant:: Cotavariant
+## <a name="colevariantcolevariant"></a><a name="colevariant"></a>COleVariant::COleVariant
 
-Bir `COleVariant` nesnesi oluşturur.
+Bir `COleVariant` nesne inşa eder.
 
 ```
 COleVariant();
@@ -135,82 +135,82 @@ COleVariant(LPCITEMIDLIST pidl);
 ### <a name="parameters"></a>Parametreler
 
 *varSrc*<br/>
-Yeni `VARIANT` `COleVariant` nesneyeKopyalanacakvarolanveyanesne`COleVariant` .
+Varolan `COleVariant` `VARIANT` veya yeni `COleVariant` nesneye kopyalanacak bir nesne.
 
 *pSrc*<br/>
-`VARIANT` Yeni`COleVariant` nesneye kopyalanacak bir nesne işaretçisi.
+Yeni `COleVariant` nesneye `VARIANT` kopyalanacak bir nesneye işaretçi.
 
 *lpszSrc*<br/>
-Yeni `COleVariant` nesneye kopyalanacak null ile sonlandırılmış bir dize.
+Null-sonlandırılan dize yeni `COleVariant` nesneye kopyalanacak.
 
 *vtSrc*<br/>
-`VARTYPE` Yeni`COleVariant` nesne için.
+Yeni `VARTYPE` `COleVariant` nesne için.
 
 *strSrc*<br/>
-Yeni`COleVariant` nesneye kopyalanacak bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
+Yeni `COleVariant` nesneye kopyalanacak bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
 
-*nSrc*, *lsrc* yeni `COleVariant` nesneye kopyalanacak sayısal bir değer.
+*nSrc*, *lSrc* Yeni `COleVariant` nesneye kopyalanacak sayısal bir değer.
 
 *vtSrc*<br/>
-`VARTYPE` Yeni`COleVariant` nesne için.
+Yeni `VARTYPE` `COleVariant` nesne için.
 
 *curSrc*<br/>
-Yeni`COleVariant` nesneye kopyalanacak [copapara birimi](../../mfc/reference/colecurrency-class.md) nesnesi.
+[COleCurrency](../../mfc/reference/colecurrency-class.md) nesnesi yeni `COleVariant` nesneye kopyalanacak.
 
-*Fltsrc*, *dblsrc*<br/>
-Yeni `COleVariant` nesneye kopyalanacak sayısal değer.
+*fltSrc*, *dblSrc*<br/>
+Yeni `COleVariant` nesneye kopyalanacak sayısal bir değer.
 
-*zaman dilimlerini*<br/>
-Yeni`COleVariant` nesneye kopyalanacak [colandatetime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi.
+*zamanSrc*<br/>
+Yeni `COleVariant` nesneye kopyalanacak bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi.
 
 *arrSrc*<br/>
-Yeni`COleVariant` nesneye kopyalanacak bir [CByteArray](../../mfc/reference/cbytearray-class.md) nesnesi.
+Yeni `COleVariant` nesneye kopyalanacak bir [CByteArray](../../mfc/reference/cbytearray-class.md) nesnesi.
 
 *lbSrc*<br/>
-Yeni`COleVariant` nesneye kopyalanacak bir [CLongBinary](../../mfc/reference/clongbinary-class.md) nesnesi.
+[CLongBinary](../../mfc/reference/clongbinary-class.md) nesnesi yeni `COleVariant` nesneye kopyalanacak.
 
 *pidl*<br/>
-Yeni`COleVariant` nesneye kopyalanacak bir [ımidlist](/windows/win32/api/shtypes/ns-shtypes-itemidlist) yapısına yönelik işaretçi.
+Yeni `COleVariant` nesneye kopyalanacak bir [ITEMIDLIST](/windows/win32/api/shtypes/ns-shtypes-itemidlist) yapısıiçin bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm bu oluşturucular, belirtilen `COleVariant` değere başlatılan yeni nesneler oluşturur. Bu oluşturucuların her biri için kısa bir açıklama aşağıda verilmiştir.
+Tüm bu oluşturucular, belirtilen değere başlalanan yeni `COleVariant` nesneler oluştururlar. Bu yapıcıların her birinin kısa bir açıklaması aşağıdaki gibidir.
 
-- **Cotavariant ()** Boş `COleVariant` bir nesne oluşturur, VT_EMPTY.
+- **COleVariant( )** Boş `COleVariant` bir nesne oluşturur, VT_EMPTY.
 
-- **Cotavariant (** *varSrc* **)** Varolan `VARIANT` bir veya `COleVariant` nesnesini kopyalar. Değişken türü korunur.
+- **COleVariant(** *varSrc* **)** Varolan `VARIANT` veya `COleVariant` nesneyi kopyalar. Varyant türü korunur.
 
-- **Cotavariant (** *pSrc* **)** Varolan `VARIANT` bir veya `COleVariant` nesnesini kopyalar. Değişken türü korunur.
+- **COleVariant(** *pSrc* **)** Varolan `VARIANT` veya `COleVariant` nesneyi kopyalar. Varyant türü korunur.
 
-- **Cotavariant (** *lpszSrc* **)** Bir dizeyi VT_BSTR (UNICODE) yeni nesnesine kopyalar.
+- **COleVariant(** *lpszSrc* **)** Bir dizeyi yeni nesneye kopyalar, VT_BSTR (UNICODE).
 
-- **Cotavariant (** *lpszSrc* **,** *vtSrc* **)** Bir dizeyi yeni nesnesine kopyalar. *VtSrc* parametresi VT_BSTR (UNICODE) veya VT_BSTRT (ANSI) olmalıdır.
+- **COleVariant(** *lpszSrc* **,** *vtSrc* **)** Bir dizeyi yeni nesneye kopyalar. *VtSrc* parametresi VT_BSTR (UNICODE) veya VT_BSTRT (ANSI) olmalıdır.
 
-- **Cotavariant (** *strSrc* **)** Bir dizeyi VT_BSTR (UNICODE) yeni nesnesine kopyalar.
+- **COleVariant (** *strSrc* **)** Bir dizeyi yeni nesneye kopyalar, VT_BSTR (UNICODE).
 
-- **Cotavariant (** *nSrc* **)** 8 bitlik bir tamsayıyı yeni nesnesine kopyalar, VT_UI1.
+- **COleVariant(** *nSrc* **)** Yeni nesneye 8 bitlik bir tamsayı kopyalar, VT_UI1.
 
-- **Cotavariant (** *nSrc* **,** *vtSrc* **)** 16 bit tam sayıyı (veya Boolean değeri) yeni nesneye kopyalar. *VtSrc* parametresi VT_I2 veya VT_BOOL olmalıdır.
+- **COleVariant(** *nSrc* **,** *vtSrc* **)** Yeni nesneye 16 bit tamsayı (veya Boolean değeri) kopyalar. *VtSrc* parametresi VT_I2 veya VT_BOOL olmalıdır.
 
-- **Cotavariant (** *lsrc* **,** *vtSrc* **)** Yeni nesnesine 32 bitlik bir tamsayı (veya SCODE değeri) kopyalar. *VtSrc* parametresi VT_I4, VT_ERROR veya VT_BOOL olmalıdır.
+- **COleVariant(** *lSrc* **,** *vtSrc* **)** Yeni nesneye 32 bit tamsayı (veya SCODE değeri) kopyalar. *VtSrc* parametresi VT_I4, VT_ERROR veya VT_BOOL olmalıdır.
 
-- **Cotavariant (** *cursrc* **)** Bir `COleCurrency` değeri, VT_CY New nesnesine kopyalar.
+- **COleVariant(** *curSrc* **)** Yeni nesneye bir `COleCurrency` değer kopyalar, VT_CY.
 
-- **Cotavariant (** *fltsrc* **)** 32 bitlik kayan noktalı bir değeri yeni nesnesine kopyalar, VT_R4.
+- **COleVariant(** *fltSrc* **)** 32 bit kayan nokta değerini yeni nesneye kopyalar, VT_R4.
 
-- **Cotavariant (** *dblsrc* **)** 64 bitlik kayan noktalı bir değeri yeni nesnesine kopyalar, VT_R8.
+- **COleVariant(** *dblSrc* **)** 64 bit kayan nokta değerini yeni nesneye kopyalar, VT_R8.
 
-- **Cotavariant (** *timesrc* **)** Bir `COleDateTime` değeri, VT_DATE New nesnesine kopyalar.
+- **COleVariant(** *timeSrc* **)** VT_DATE, `COleDateTime` yeni nesneye bir değer kopyalar.
 
-- **Cotavariant (** *arrSrc* **)** Bir `CByteArray` nesneyi VT_EMPTY New nesnesine kopyalar.
+- **COleVariant(** *arrSrc* **)** Bir `CByteArray` nesneyi yeni nesneye kopyalar, VT_EMPTY.
 
-- **Cotavariant (** *lbsrc* **)** Bir `CLongBinary` nesneyi VT_EMPTY New nesnesine kopyalar.
+- **COleVariant(** *lbSrc* **)** Bir `CLongBinary` nesneyi yeni nesneye kopyalar, VT_EMPTY.
 
-SCODE hakkında daha fazla bilgi için bkz. Windows SDK [com hata kodları yapısı](/windows/win32/com/structure-of-com-error-codes) .
+SCODE hakkında daha fazla bilgi için Windows SDK'daki [COM Hata Kodlarının Yapısı'na](/windows/win32/com/structure-of-com-error-codes) bakın.
 
-##  <a name="changetype"></a>Cotavariant:: ChangeType
+## <a name="colevariantchangetype"></a><a name="changetype"></a>COleVariant::ChangeType
 
-Bu `COleVariant` nesnedeki değişken değer türünü dönüştürür.
+Bu `COleVariant` nesnedeki varyant değeri türünü dönüştürür.
 
 ```
 void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
@@ -218,19 +218,19 @@ void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*vartype*<br/>
-Bu `COleVariant` nesnenin vartype.
+*Vartype*<br/>
+Bu `COleVariant` nesne için VARTYPE.
 
 *pSrc*<br/>
-Dönüştürülecek [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) nesnesine yönelik bir işaretçi. Bu değer null ise, bu `COleVariant` nesne dönüştürme kaynağı olarak kullanılır.
+DÖNÜŞTÜRÜLECEK [VARYANT](/windows/win32/api/oaidl/ns-oaidl-variant) nesnesine bir işaretçi. Bu değer NULL ise, bu `COleVariant` nesne dönüştürme için kaynak olarak kullanılır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum)ve [VariantChangeType](/windows/win32/api/oleauto/nf-oleauto-variantchangetype) girişlerine bakın.
+Daha fazla bilgi için, Windows SDK'daki [VARIANT,](/windows/win32/api/oaidl/ns-oaidl-variant) [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum)ve [VariantChangeType](/windows/win32/api/oleauto/nf-oleauto-variantchangetype) girişlerine bakın.
 
-##  <a name="clear"></a>Colevarıant:: Clear
+## <a name="colevariantclear"></a><a name="clear"></a>COleVariant::Açık
 
-Öğesini temizler `VARIANT`.
+Temizler `VARIANT`.
 
 ```
 void Clear();
@@ -238,13 +238,13 @@ void Clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu nesne için VARTYPE, VT_EMPTY olarak ayarlanır. `COleVariant` Yıkıcı bu işlevi çağırır.
+Bu, bu nesnenin VARTYPE'ını VT_EMPTY ayarlar. `COleVariant` Yıkıcı bu işlevi çağırır.
 
-Daha fazla bilgi için Windows SDK `VARIANT`, vartype ve `VariantClear` girişlere bakın.
+Daha fazla bilgi `VARIANT`için Windows SDK'daki VARTYPE ve `VariantClear` girişlere bakın.
 
-##  <a name="detach"></a>Cotavaryant::D etach
+## <a name="colevariantdetach"></a><a name="detach"></a>COleVariant::Detach
 
-Temel alınan [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) nesnesini bu `COleVariant` nesneden ayırır.
+Alttaki [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) nesnesini bu `COleVariant` nesneden ayırır.
 
 ```
 VARIANT Detach();
@@ -252,16 +252,16 @@ VARIANT Detach();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, bu `COleVariant` nesnenin VarType öğesini VT_EMPTY olarak ayarlar.
+Bu işlev, bu `COleVariant` nesne nin VARTYPE'ını VT_EMPTY ayarlar.
 
 > [!NOTE]
->  Çağrıldıktan `Detach`sonra, çağıranın elde edilen `VARIANT` yapıda çağrı `VariantClear` yaptığı sorumluluğudur.
+> Aradıktan `Detach`sonra, ortaya çıkan `VariantClear` `VARIANT` yapıyı aramak arayanın sorumluluğundadır.
 
-Daha fazla bilgi için Windows SDK [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum)ve [VariantClear](/windows/win32/api/oleauto/nf-oleauto-variantclear) girdileri bölümüne bakın.
+Daha fazla bilgi için, Windows SDK'daki [VARIANT,](/windows/win32/api/oaidl/ns-oaidl-variant) [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum)ve [VariantClear](/windows/win32/api/oleauto/nf-oleauto-variantclear) girişlerine bakın.
 
-##  <a name="getbytearrayfromvariantarray"></a>Cotavariant:: GetByteArrayFromVariantArray
+## <a name="colevariantgetbytearrayfromvariantarray"></a><a name="getbytearrayfromvariantarray"></a>COleVariant::GetByteArrayFromVariantArray
 
-Varolan bir varyant dizisinden bir bayt dizisi alır
+Varolan bir varyant dizisinden bayt dizini alır
 
 ```
 void GetByteArrayFromVariantArray(CByteArray& bytes);
@@ -269,12 +269,12 @@ void GetByteArrayFromVariantArray(CByteArray& bytes);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayacının*<br/>
+*Bayt*<br/>
 Varolan bir [CByteArray](../../mfc/reference/cbytearray-class.md) nesnesine başvuru.
 
-##  <a name="operator_lpcvariant"></a>Colevarıant:: operator LPCVARYANT
+## <a name="colevariantoperator-lpcvariant"></a><a name="operator_lpcvariant"></a>COleVariant::operatör LPCVARIANT
 
-Bu atama işleci, değeri `VARIANT` bu `COleVariant` nesneden kopyalanmış olan bir yapıyı döndürür.
+Bu döküm işleci, değeri bu `VARIANT` `COleVariant` nesneden kopyalanan bir yapı döndürür.
 
 ```
 operator LPCVARIANT() const;
@@ -282,9 +282,9 @@ operator LPCVARIANT() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="operator_lpvariant"></a>Colevarıant:: operator LPVARYANT
+## <a name="colevariantoperator-lpvariant"></a><a name="operator_lpvariant"></a>COleVariant::operatör LPVARIANT
 
-`VARIANT` Bu`COleVariant` nesne için temel yapıya erişmek üzere bu atama işlecini çağırın.
+Bu `VARIANT` `COleVariant` nesnenin temel yapısına erişmek için bu döküm operatöre çağrı yapın.
 
 ```
 operator LPVARIANT();
@@ -293,11 +293,11 @@ operator LPVARIANT();
 ### <a name="remarks"></a>Açıklamalar
 
 > [!CAUTION]
-> Bu işlevin döndürdüğü işaretçinin eriştiği `VARIANT` yapıda değeri değiştirmek, bu `COleVariant` nesnenin değerini değiştirecek.
+> Bu işlev tarafından `VARIANT` döndürülen işaretçi tarafından erişilen yapıdaki `COleVariant` değeri değiştirmek bu nesnenin değerini değiştirir.
 
-##  <a name="operator_eq"></a>Colevarıant:: operator =
+## <a name="colevariantoperator-"></a><a name="operator_eq"></a>COleVariant::operator =
 
-Bu aşırı yüklenmiş atama işleçleri kaynak değeri bu `COleVariant` nesneye kopyalar.
+Bu aşırı yüklü atama işleçleri `COleVariant` kaynak değerini bu nesneye kopyalar.
 
 ```
 const COleVariant& operator=(const VARIANT& varSrc);
@@ -318,46 +318,46 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her işlecin kısa bir açıklaması aşağıdadır:
+Her işleç kısa bir açıklama aşağıdaki gibidir:
 
-- **operator = (** *varSrc* **)** Varolan bir varyantı veya `COleVariant` nesneyi bu nesneye kopyalar.
+- **operatör =(** *varSrc* **)** Varolan bir VARYANT'ı veya `COleVariant` nesneyi bu nesneye kopyalar.
 
-- **operator = (** *pSrc* **)** *PSrc* tarafından erişilen VARIANT nesnesini bu nesneye kopyalar.
+- **işleç =(** *pSrc* **)** *PSrc* tarafından erişilen VARIANT nesnesini bu nesneye kopyalar.
 
-- **operator = (** *lpszSrc* **)** Null ile sonlandırılmış bir dizeyi bu nesneye kopyalar ve VARTYPE değerini VT_BSTR olarak ayarlar.
+- **operatör =(** *lpszSrc* **)** Bu nesneye geçersiz sonlandırılan bir dize kopyalar ve VARTYPE'ı VT_BSTR ayarlar.
 
-- **operator = (** *strSrc* **)** Bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesini bu nesneye kopyalar ve vartype öğesini VT_BSTR olarak ayarlar.
+- **operatör =(** *strSrc* **)** CString [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesini bu nesneye kopyalar ve VARTYPE'ı VT_BSTR ayarlar.
 
-- **operator = (** *nSrc* **)** 8 veya 16 bitlik bir tamsayı değerini bu nesneye kopyalar. *NSrc* , 8 bitlik bir değer ise, bu DEĞERIN VarType VT_UI1 olarak ayarlanır. *NSrc* , 16 bitlik bir değer ise ve bunun VarType VT_BOOL ise, tutulur; Aksi takdirde, VT_I2 olarak ayarlanır.
+- **operatör =(** *nSrc* **)** Bu nesneye 8 veya 16 bittaminer değerini kopyalar. *nSrc* 8 bit değeri ise, bunun VARTYPE VT_UI1 ayarlanır. *NSrc* 16 bit lik bir değerse ve bunun VARTYPE'ı VT_BOOL ise, tutulur; aksi takdirde, VT_I2 olarak ayarlanır.
 
-- **operator = (** *lsrc* **)** 32 bitlik bir tamsayı değerini bu nesneye kopyalar. Bunun VARTYPE VT_ERROR ise, tutulur; Aksi takdirde, VT_I4 olarak ayarlanır.
+- **operatör =(** *lSrc* **)** Bu nesneye 32 bit tamsayı değerini kopyalar. Bunun VARTYPE VT_ERROR ise, tutulur; aksi takdirde, VT_I4 olarak ayarlanır.
 
-- **operator = (** *cursrc* **)** [Copacurrency](../../mfc/reference/colecurrency-class.md) nesnesini bu nesneye kopyalar ve vartype öğesini VT_CY olarak ayarlar.
+- **işleç =(** *curSrc* **)** [COleCurrency](../../mfc/reference/colecurrency-class.md) nesnesini bu nesneye kopyalar ve VARTYPE'ı VT_CY ayarlar.
 
-- **operator = (** *fltsrc* **)** 32 bitlik kayan noktalı bir değeri bu nesneye kopyalar ve VARTYPE değerini VT_R4 olarak ayarlar.
+- **operatör =(** *fltSrc* **)** 32 bit kayan nokta değerini bu nesneye kopyalar ve VARTYPE'ı VT_R4 ayarlar.
 
-- **operator = (** *dblsrc* **)** 64 bitlik kayan noktalı bir değeri bu nesneye kopyalar ve VARTYPE değerini VT_R8 olarak ayarlar.
+- **operatör =(** *dblSrc* **)** Bu nesneye 64 bit kayan nokta değerini kopyalar ve VARTYPE'ı VT_R8 ayarlar.
 
-- **operator = (** *datesrc* **)** Bir [Cotadatetime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesini bu nesneye kopyalar ve vartype öğesini VT_DATE olarak ayarlar.
+- **operatör =(** *dateSrc* **)** [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesini bu nesneye kopyalar ve VARTYPE'ı VT_DATE ayarlar.
 
-- **operator = (** *arrSrc* **)** Bir [CByteArray](../../mfc/reference/cbytearray-class.md) nesnesini bu `COleVariant` nesneye kopyalar.
+- **operatör =(** *arrSrc* **)** [CByteArray](../../mfc/reference/cbytearray-class.md) nesnesi bu `COleVariant` nesneye kopyalar.
 
-- **operator = (** *lbsrc* **)** Bir [CLongBinary](../../mfc/reference/clongbinary-class.md) nesnesini bu `COleVariant` nesneye kopyalar.
+- **operatör =(** *lbSrc* **)** [CLongBinary](../../mfc/reference/clongbinary-class.md) nesnesi bu `COleVariant` nesneye kopyalar.
 
-Daha fazla bilgi için Windows SDK [Varyant](/windows/win32/api/oaidl/ns-oaidl-variant) ve [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum) girişlerine bakın.
+Daha fazla bilgi için Windows SDK'daki [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) ve [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum) girişlerine bakın.
 
-##  <a name="operator_eq_eq"></a>Colevarıant:: operator = =
+## <a name="colevariantoperator-"></a><a name="operator_eq_eq"></a>COleVariant::operator ==
 
-Bu işleç iki değişken değeri karşılaştırır ve eşitse sıfır dışında bir değer döndürür; Aksi takdirde 0.
+Bu işleç iki varyant değerini karşılaştırır ve eşitse sıfırsız döndürür; aksi takdirde 0.
 
 ```
 BOOL operator==(const VARIANT& varSrc) const;
 BOOL operator==(LPCVARIANT pSrc) const;
 ```
 
-##  <a name="operator_lt_lt__gt_gt"></a>Colevarıant:: işleci &lt;, &lt;&gt;&gt;
+## <a name="colevariantoperator-ltlt-gtgt"></a><a name="operator_lt_lt__gt_gt"></a>COleVariant::operatör &lt; &lt;,&gt;&gt;
 
-`COleVariant` `CArchive` 'A`COleVariant` bir değer verirve`CArchive`öğesinden bir nesne girişi yapın. `CdumpContext`
+Bir `COleVariant` değer çıkarır `CArchive` `CdumpContext` veya bir `COleVariant` nesneyi `CArchive`.
 
 ```
 friend CDumpContext& AFXAPI operator<<(
@@ -375,9 +375,9 @@ friend CArchive& AFXAPI operator>>(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ekleme `COleVariant` **(\<) işleci, tanılama dökümünü ve bir arşive depolamayı destekler.\<** Ayıklama ( **>>** ) işleci bir arşivden yüklemeyi destekler.
+Ekleme `COleVariant` (**\<**) işleci tanılama boşaltma ve arşive depolama destekler. Çıkarma (**>>**) işleci bir arşivden yüklemeyi destekler.
 
-##  <a name="setstring"></a>Cotavaryant:: SetString
+## <a name="colevariantsetstring"></a><a name="setstring"></a>COleVariant::SetString
 
 Dizeyi belirli bir türe ayarlar.
 
@@ -388,16 +388,16 @@ void SetString(LPCTSTR lpszSrc, VARTYPE vtSrc);
 ### <a name="parameters"></a>Parametreler
 
 *lpszSrc*<br/>
-Yeni `COleVariant` nesneye kopyalanacak null ile sonlandırılmış bir dize.
+Null-sonlandırılan dize yeni `COleVariant` nesneye kopyalanacak.
 
 *VtSrc*<br/>
-Yeni `COleVariant` nesne için VarType.
+Yeni `COleVariant` nesne için VARTYPE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtSrc* parametresi VT_BSTR (UNICODE) veya VT_BSTRT (ANSI) olmalıdır. `SetString`genellikle dize veya dize işaretçisi parametresi ile [COleVariant:: colevarıant](#colevariant) Oluşturucusu için varsayılan değer UNICODE olmadığından, dizeleri ANSI olarak ayarlamak için kullanılır.
+*VtSrc* parametresi VT_BSTR (UNICODE) veya VT_BSTRT (ANSI) olmalıdır. `SetString`[COleVariant için varsayılan::COleVariant](#colevariant) oluşturucu bir dize veya dize işaretçi parametresi ve hiçbir VARTYPE UNICODE olduğundan, genellikle ANSI dizeleri ayarlamak için kullanılır.
 
-UNICODE olmayan bir derlemede bir DAO Kayıt kümesi dizelerin ANSI olmasını bekler. `COleVariant` Bu nedenle, nesneleri kullanan DAO işlevleri için, bir UNICODE kayıt kümesi oluşturmadıysanız, *vtSrc* 'i VT olarak ayarlanmış bir oluşturucunun **cotavariant:: copavariant (** *lpszSrc* **,** *vtSrc* **)** formunu kullanmanız gerekir ANSI dizelerini yapmak için _bstrt ( `SetString` ANSI) veya VT_BSTRT olarak ayarlanmış *vtSrc* ile kullanın. Örneğin, `CDaoRecordset` [CDaoRecordset:: Seek](../../mfc/reference/cdaorecordset-class.md#seek) ve [CDaoRecordset:: SetFieldValue](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) işlevleri, nesneleri parametre `COleVariant` olarak kullanır. DAO Kayıt kümesi UNICODE değilse, bu nesneler ANSI olmalıdır.
+UNICODE olmayan bir yapıdaki BIR DAO kayıt kümesi dizeleri ANSI olmasını bekler. Bu nedenle, nesneleri kullanan `COleVariant` DAO işlevleri için, bir UNICODE kayıt kümesi oluşturmuyorsanız, **COleVariant'ı kullanmanız gerekir::COleVariant(lpszSrc** **,** *vtSrc* **)** vtSrc `SetString` ile konstrüktör biçimini VT_BSTRT (ANSI) veya ANSI dizeleri yapmak için VT_BSTRT ayarlanmış *lpszSrc* *vtSrc* ile kullanmanız gerekir. *vtSrc* Örneğin, `CDaoRecordset` [CDaoRecordset::Seek](../../mfc/reference/cdaorecordset-class.md#seek) ve [CDaoRecordset::SetFieldValue](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) `COleVariant` nesneleri parametre olarak kullanır. DAO kayıt kümesi UNICODE değilse, bu nesneler ANSI olmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

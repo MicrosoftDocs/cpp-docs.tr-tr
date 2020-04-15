@@ -12,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - tile_barrier class
 ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
-ms.openlocfilehash: 757309a10da3e6d1c9c053430cce2cf603380b1f
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: c00f1e41e70e723be185959eeff176390def7647
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422285"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374721"
 ---
 # <a name="tile_barrier-class"></a>tile_barrier Sınıfı
 
-`wait` yöntemleri kullanarak iş parçacığı grubunda (kutucukta) çalışan iş parçacıklarının yürütülmesini eşitler. Yalnızca çalışma zamanı bu sınıfın örneğini oluşturabilir.
+İş parçacığı grubunda (döşeme) çalışan iş parçacıklarının yürütülmesini yöntemleri `wait` kullanarak eşitler. Yalnızca çalışma zamanı bu sınıfı anında kullanabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,18 +33,18 @@ class tile_barrier;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[tile_barrier Oluşturucusu](#ctor)|`tile_barrier` sınıfının yeni bir örneğini başlatır.|
+|[tile_barrier Yapıcı](#ctor)|`tile_barrier` sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[bekleneceğini](#wait)|Kutucuktaki tüm iş parçacıklarının beklemeyi bitirene kadar iş parçacığı grubundaki (kutucuktaki) tüm iş parçacıklarının yürütmeyi durdurmasını söyler.|
+|[Bekle](#wait)|İş parçacığı grubundaki (döşeme) tüm iş parçacıklarının, döşemedeki tüm iş parçacıkları beklemeyi bitirene kadar yürütmeyi durdurmasını bildirir.|
 |[wait_with_all_memory_fence](#wait_with_all_memory_fence)|Tüm bellek erişimleri tamamlanana ve döşemedeki tüm iş parçacıkları bu çağrıya ulaşana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller.|
-|[wait_with_global_memory_fence](#wait_with_global_memory_fence)|Tüm genel bellek erişimleri tamamlanana ve döşemedeki tüm iş parçacıkları bu çağrıya ulaşana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller.|
-|[wait_with_tile_static_memory_fence](#wait_with_tile_static_memory_fence)|Tüm `tile_static` bellek erişimleri tamamlanana ve kutucuktaki tüm iş parçacıklarının bu çağrıya ulaştığı sürece bir kutucuktaki tüm iş parçacıklarının yürütülmesini engeller.|
+|[wait_with_global_memory_fence](#wait_with_global_memory_fence)|Tüm genel bellek erişimleri tamamlanana ve döşemedeki tüm iş parçacıkları bu çağrıya ulaşana kadar bir döşemedeki tüm iş parçacıklarının yürütülmesini engeller.|
+|[wait_with_tile_static_memory_fence](#wait_with_tile_static_memory_fence)|Tüm `tile_static` bellek erişimleri tamamlanana ve döşemedeki tüm iş parçacıkları bu çağrıya ulaşana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -52,13 +52,13 @@ class tile_barrier;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** amp. h
+**Üstbilgi:** amp.h
 
-**Ad alanı:** Zamanlı
+**Ad alanı:** Eşzamanlılık
 
-## <a name="ctor"></a>tile_barrier Oluşturucusu
+## <a name="tile_barrier-constructor"></a><a name="ctor"></a>tile_barrier Yapıcı
 
-Mevcut bir tane kopyalayarak sınıfının yeni bir örneğini başlatır.
+Varolan bir tanesini kopyalayarak sınıfın yeni bir örneğini başolarak adlandırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -70,11 +70,11 @@ tile_barrier(
 ### <a name="parameters"></a>Parametreler
 
 *_Other*<br/>
-Kopyalanacak `tile_barrier` nesnesi.
+Kopyalanması `tile_barrier` gereken nesne.
 
-## <a name="wait"></a>bekleneceğini
+## <a name="wait"></a>Bekle
 
-Kutucuktaki tüm iş parçacıkları beklemeyi bitirene kadar iş parçacığı grubundaki (kutucuktaki) tüm iş parçacıklarını yürütmeyi durdurmasını söyler.
+İş parçacığı grubundaki (döşeme) tüm iş parçacıklarının, döşemedeki tüm iş parçacıkları bekleme yi bitirene kadar yürütmeyi durdurmasını bildirir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -82,9 +82,9 @@ Kutucuktaki tüm iş parçacıkları beklemeyi bitirene kadar iş parçacığı 
 void wait() const restrict(amp);
 ```
 
-## <a name="wait_with_all_memory_fence"></a>wait_with_all_memory_fence
+## <a name="wait_with_all_memory_fence"></a><a name="wait_with_all_memory_fence"></a>wait_with_all_memory_fence
 
-Bir kutucuktaki tüm iş parçacıkları bu çağrıya ulaşana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, tüm bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından görülebilir olmasını ve Program sırasıyla çalıştırılmasını sağlar.
+Döşemedeki tüm iş parçacıkları bu çağrıya ulaşana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, tüm bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından görünür olmasını ve program sırasına göre yürütülmesini sağlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -92,9 +92,9 @@ Bir kutucuktaki tüm iş parçacıkları bu çağrıya ulaşana kadar döşemede
 void wait_with_all_memory_fence() const restrict(amp);
 ```
 
-## <a name="a-namewait_with_global_memory_fence-wait_with_global_memory_fence"></a><a name="wait_with_global_memory_fence"> wait_with_global_memory_fence
+## <a name="a-namewait_with_global_memory_fence-wait_with_global_memory_fence"></a><a name="wait_with_global_memory_fence">wait_with_global_memory_fence
 
-Bir kutucuktaki tüm iş parçacıkları bu çağrıya ulaşana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, tüm genel bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından görülebilir olmasını ve Program sırasıyla çalıştırılmasını sağlar.
+Döşemedeki tüm iş parçacıkları bu çağrıya ulaşana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, tüm genel bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından görünür olmasını ve program sırasına göre yürütülmesini sağlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -102,9 +102,9 @@ Bir kutucuktaki tüm iş parçacıkları bu çağrıya ulaşana kadar döşemede
 void wait_with_global_memory_fence() const  restrict(amp);
 ```
 
-## <a name="a-namewait_with_tile_static_memory_fence-wait_with_tile_static_memory_fence"></a><a name="wait_with_tile_static_memory_fence"> wait_with_tile_static_memory_fence
+## <a name="a-namewait_with_tile_static_memory_fence-wait_with_tile_static_memory_fence"></a><a name="wait_with_tile_static_memory_fence">wait_with_tile_static_memory_fence
 
-Bir kutucuktaki tüm iş parçacıkları bu çağrıya ulaşana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Böylece, `tile_static` belleği erişimleri iş parçacığı kutucuğunda diğer iş parçacıkları tarafından görülebilir ve Program sırasıyla yürütülür.
+Döşemedeki tüm iş parçacıkları bu çağrıya ulaşana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, `tile_static` bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından görünür olmasını ve program sırasına göre yürütülmesini sağlar.
 
 ### <a name="syntax"></a>Sözdizimi
 

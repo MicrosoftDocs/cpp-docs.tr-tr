@@ -1,6 +1,6 @@
 ---
 title: initializer_list sınıfı
-description: C++ Standart kitaplıkta, Visual Studio 'da Microsoft tarafından uygulanan initializer_list sınıfı için bir başvuru.
+description: Microsoft tarafından Visual Studio'da uygulandığı gibi, C++ Standart kitaplığındaki initializer_list sınıfı için bir başvuru.
 ms.date: 01/28/2020
 f1_keywords:
 - initializer_list/std::initializer_list::initializer_list
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - std::initializer_list::begin
 - std::initializer_list::end
 - std::initializer_list::size
-ms.openlocfilehash: 6be51835958a07162ce22ff9d619fb793102669f
-ms.sourcegitcommit: 684181561490e0d1955cf601d222f67f09af6d00
+ms.openlocfilehash: b1d33ce484948e731f8d3062b7a99df06ef26073
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76894339"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373355"
 ---
 # <a name="initializer_list-class"></a>initializer_list sınıfı
 
-Her üyenin belirtilen türde olduğu öğe dizisine erişim sağlar.
+Her üyenin belirtilen türden olduğu bir dizi öğeye erişim sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,77 +33,77 @@ class initializer_list
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür*\
-`initializer_list`depolanacak öğe veri türü.
+*Türü*\
+Depolanacak öğe veri `initializer_list`türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir `initializer_list`, bir örgü Başlatıcı listesi kullanılarak oluşturulabilir:
+Bir `initializer_list` braced initializer listesi kullanılarak oluşturulabilir:
 
 ```cpp
 initializer_list<int> i1{ 1, 2, 3, 4 };
 ```
 
-Derleyici, işlev imzası bir `initializer_list`gerektirdiğinde, homo, homojen Başlatıcı listelerini `initializer_list` olarak dönüştürür. `initializer_list`kullanma hakkında daha fazla bilgi için bkz. [Tekdüzen başlatma ve temsilci oluşturucuları](../cpp/uniform-initialization-and-delegating-constructors.md)
+Derleyici, homojen öğelerle `initializer_list` braced initializer listelerini işlev imzası nın `initializer_list`bir . Kullanma `initializer_list`hakkında daha fazla bilgi için, [Bkz. Tekdüzen başlatma ve kurucuları delegating](../cpp/uniform-initialization-and-delegating-constructors.md)
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[initializer_list](#initializer_list)|`initializer_list`türünde bir nesne oluşturur.|
+|[initializer_list](#initializer_list)|Türünde `initializer_list`bir nesne oluşturuyor.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|`value_type`|`initializer_list`öğelerin türü.|
-|`reference`|`initializer_list`bir öğeye başvuru sağlayan bir tür.|
-|`const_reference`|`initializer_list`bir öğeye sabit başvuru sağlayan bir tür.|
-|`size_type`|`initializer_list`öğe sayısını temsil eden bir tür.|
-|`iterator`|`initializer_list`için Yineleyici sağlayan bir tür.|
-|`const_iterator`|`initializer_list`için sabit bir yineleyici sağlayan bir tür.|
+|`value_type`|'deki öğelerin `initializer_list`türü.|
+|`reference`|`initializer_list`Bir öğeye başvuru sağlayan bir tür.|
+|`const_reference`|`initializer_list`Bir öğeye sabit bir başvuru sağlayan bir tür.|
+|`size_type`|`initializer_list`'deki öğe sayısını temsil eden bir tür.|
+|`iterator`|`initializer_list`Için bir yineleyici sağlayan bir tür.|
+|`const_iterator`|Için sabit bir yineleyici sağlayan bir `initializer_list`tür.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="member-functions"></a>Üye işlevler
 
-|Üye işlevi|Açıklama|
+|Üye fonksiyonu|Açıklama|
 |-|-|
-|[başladı](#begin)|`initializer_list`ilk öğeye yönelik bir işaretçi döndürür.|
-|[erer](#end)|Bir `initializer_list`son öğeden geçmiş bir işaretçi döndürür.|
-|[boyutla](#size)|`initializer_list`öğe sayısını döndürür.|
+|[Başlamak](#begin)|Bir `initializer_list`'deki ilk öğeye işaretçi döndürür|
+|[Son -unda](#end)|Bir `initializer_list`işaretçiyi bir 'deki son öğeyi geçmiş bir işaretçiye döndürür|
+|[Boyutu](#size)|`initializer_list`'deki öğe sayısını verir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<initializer_list >
+**Üstbilgi:** \<initializer_list>
 
 **Ad alanı:** std
 
-## <a name="begin"></a>initializer_list:: Begin
+## <a name="initializer_listbegin"></a><a name="begin"></a>initializer_list::başla
 
-`initializer_list`ilk öğeye yönelik bir işaretçi döndürür.
+Bir `initializer_list`'deki ilk öğeye işaretçi döndürür
 
 ```cpp
 constexpr const InputIterator* begin() const noexcept;
 ```
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-`initializer_list`ilk öğesine yönelik bir işaretçi. Liste boşsa, işaretçi listenin başında ve sonunda aynı olur.
+`initializer_list`'nin ilk öğesine işaretçi Liste boşsa, işaretçi listenin başı ve sonu için aynıdır.
 
-## <a name="end"></a>initializer_list:: End
+## <a name="initializer_listend"></a><a name="end"></a>initializer_list::sonu
 
-Bir `initializer list`son öğeden geçmiş bir işaretçi döndürür.
+Bir `initializer list`işaretçiyi bir 'deki son öğeyi geçmiş bir işaretçiye döndürür
 
 ```cpp
 constexpr const InputIterator* end() const noexcept;
 ```
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-Listedeki son öğeden bir geçen bir işaretçi. Liste boşsa, listedeki ilk öğeye yönelik işaretçiyle aynı olur.
+Listedeki son öğeyi geçmiş bir işaretçi. Liste boşsa, listedeki ilk öğenin işaretçisi ile aynıdır.
 
-## <a name="initializer_list"></a>initializer_list:: initializer_list
+## <a name="initializer_listinitializer_list"></a><a name="initializer_list"></a>initializer_list:initializer_list
 
-`initializer_list`türünde bir nesne oluşturur.
+Türünde `initializer_list`bir nesne oluşturuyor.
 
 ```cpp
 constexpr initializer_list() noexcept;
@@ -112,15 +112,15 @@ initializer_list(const InputIterator First, const InputIterator Last);
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk*\
-Kopyalanacak öğe aralığındaki ilk öğenin konumu.
+*Ilk*\
+Kopyalanacak öğeler aralığındaki ilk öğenin konumu.
 
 *Son*\
-Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.
+İlk öğenin kopyalanacak öğe aralığının ötesindeki konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`initializer_list`, belirtilen türdeki nesne dizisini temel alır. `initializer_list` kopyalama, aynı nesnelere işaret eden bir listenin ikinci bir örneğini oluşturur; temel alınan nesneler kopyalanmaz.
+An, `initializer_list` belirtilen türden bir dizi nesneyi temel alır. Kopyalama, `initializer_list` aynı nesneleri işaret eden bir listenin ikinci bir örneğini oluşturur; temel nesneler kopyalanmıyor.
 
 ### <a name="example"></a>Örnek
 
@@ -183,17 +183,17 @@ c3 = 5 4 3 2 1
 c5 = 5 4
 ```
 
-## <a name="size"></a>initializer_list:: size
+## <a name="initializer_listsize"></a><a name="size"></a>initializer_list::boyut
 
-Listedeki öğe sayısını döndürür.
+Listedeki öğe sayısını verir.
 
 ```cpp
 constexpr size_t size() const noexcept;
 ```
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-Listedeki öğelerin sayısı.
+Listedeki öğe sayısı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

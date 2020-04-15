@@ -1,5 +1,5 @@
 ---
-title: CDragListBox sınıfı
+title: CDragListBox Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDragListBox
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - CDragListBox [MFC], Dropped
 - CDragListBox [MFC], ItemFromPt
 ms.assetid: fee20b42-60ae-4aa9-83f9-5a3d9b96e33b
-ms.openlocfilehash: d8afc5b14f5f52ca7a4d28a3d3c3c5440b7c819f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d1ae94948e1143a5bac17985423c4bd1bfbaf65
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62164052"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374040"
 ---
-# <a name="cdraglistbox-class"></a>CDragListBox sınıfı
+# <a name="cdraglistbox-class"></a>CDragListBox Sınıfı
 
-Windows liste kutusu işlevselliği sağlayan yanı sıra `CDragListBox` sınıfı kullanıcının liste dosya adları gibi liste kutusu öğelerini taşımasına izin verir.
+`CDragListBox` Sınıf, windows liste kutusunun işlevselliğini sağlamanın yanı sıra, kullanıcının liste kutusu içinde dosya adları gibi liste kutusu öğelerini taşımasına olanak tanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,40 +41,40 @@ class CDragListBox : public CListBox
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDragListBox::CDragListBox](#cdraglistbox)|Oluşturur bir `CDragListBox` nesne.|
+|[CDragListBox::CDragListBox](#cdraglistbox)|Bir `CDragListBox` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDragListBox::BeginDrag](#begindrag)|Bir sürükleme işlemi başladığında framework tarafından çağırılır.|
-|[CDragListBox::CancelDrag](#canceldrag)|Bir sürükleme işlemi iptal edildiğinde framework tarafından çağırılır.|
-|[CDragListBox::Dragging](#dragging)|Bir sürükleme işlemi sırasında framework tarafından çağırılır.|
-|[CDragListBox::DrawInsert](#drawinsert)|Sürükleme liste kutusu ekleme klavuzunu çizer.|
-|[CDragListBox::Dropped](#dropped)|Öğe bırakıldıktan sonra framework tarafından çağırılır.|
-|[CDragListBox::ItemFromPt](#itemfrompt)|Sürüklenen öğenin koordinatlarını döndürür.|
+|[CDragListBox::BeginDrag](#begindrag)|Sürükleme işlemi başladığında çerçeve tarafından çağrılır.|
+|[CDragListBox::İptalSürükley](#canceldrag)|Sürükleme işlemi iptal edildiğinde çerçeve tarafından çağrılır.|
+|[CDragListBox::Dragging](#dragging)|Sürükleme işlemi sırasında çerçeve tarafından çağrılır.|
+|[CDragListBox::DrawInsert](#drawinsert)|Sürükle listesi kutusunun ekleme kılavuzunu çizer.|
+|[CDragListBox::Dropped](#dropped)|Öğe düşürüldükten sonra çerçeve tarafından çağrılır.|
+|[CdraglistBox::ItemFromPt](#itemfrompt)|Sürüklenen öğenin koordinatlarını verir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Liste kutuları ile bu özellik kullanıcıların bir listedeki herhangi bir şekilde kendisine en kullanışlı olduğunu öğelerinizi sıraya sokmanızı sağlar. Varsayılan olarak, liste kutusu, öğe listesinde yeni konumuna taşınır. Ancak, `CDragListBox` nesneleri taşımak yerine öğeleri kopyalamak için özelleştirilebilir.
+Bu özelme sahip liste kutuları, kullanıcıların öğeleri bir listedeki öğeleri kendileri için en yararlı şekilde sipariş etmelerine olanak sağlar. Varsayılan olarak, liste kutusu öğeyi listedeki yeni konuma taşır. Ancak, `CDragListBox` nesneleri taşımak yerine öğeleri kopyalamak için özelleştirilebilir.
 
-Liste kutusu denetimini ilişkili `CDragListBox` sınıfı LBS_SORT veya LBS_MULTIPLESELECT stili değil olmalıdır. Liste kutusu stilleri açıklaması için bkz: [liste kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#list-box-styles).
+`CDragListBox` Sınıfla ilişkili liste kutusu denetimi, LBS_SORT veya LBS_MULTIPLESELECT stiline sahip olmamalıdır. Liste kutusu stillerinin açıklaması için [Liste Kutusu Stilleri'ne](../../mfc/reference/styles-used-by-mfc.md#list-box-styles)bakın.
 
-Bir sürükleme liste kutusu, uygulamanızın bir iletişim kutusunda kullanmak için bir liste kutusu denetimini iletişim kutusu düzenleyicisini kullanma iletişim şablonunuza eklemek ve ardından bir üye değişkenine atayın (kategorisinin `Control` ve değişken türü `CDragListBox`) liste kutusuna karşılık gelen iletişim şablonunuzda denetler.
+Uygulamanızın varolan bir iletişim kutusunda sürükle listesi kutusu kullanmak için, iletişim düzenleyicisini kullanarak iletişim şablonunuza bir liste `Control` kutusu denetimi `CDragListBox`ekleyin ve ardından iletişim şablonunuzda liste kutusu denetimine karşılık gelen bir üye değişken (Kategori ve Değişken Türü) atayın.
 
-Denetimleri için üye değişkenleri atama hakkında daha fazla bilgi için bkz. [iletişim kutusu denetimleri için üye değişkenleri tanımlama için kısayol](../../windows/defining-member-variables-for-dialog-controls.md).
+Üye değişkenlere denetim atama hakkında daha fazla bilgi için, [İletişim Denetimleri için Üye Değişkenleri Tanımlama için Kısayol'a](../../windows/defining-member-variables-for-dialog-controls.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CListBox](../../mfc/reference/clistbox-class.md)
+[Clistbox](../../mfc/reference/clistbox-class.md)
 
 `CDragListBox`
 
@@ -82,9 +82,9 @@ Denetimleri için üye değişkenleri atama hakkında daha fazla bilgi için bkz
 
 **Başlık:** afxcmn.h
 
-##  <a name="begindrag"></a>  CDragListBox::BeginDrag
+## <a name="cdraglistboxbegindrag"></a><a name="begindrag"></a>CDragListBox::BeginDrag
 
-Çağıran bir olay oluştuğunda framework sol fare tuşuna basmak gibi bir sürükleme işlemi gelebilecek.
+Sol fare düğmesine basmak gibi sürükleme işlemine başlabilen bir olay gerçekleştiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL BeginDrag(CPoint pt);
@@ -92,20 +92,20 @@ virtual BOOL BeginDrag(CPoint pt);
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*<br/>
-A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) sürüklenen öğenin koordinatlarını içeren nesne.
+*Pt*<br/>
+Sürüklenen öğenin koordinatlarını içeren bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır sürükleyerek izin veriliyorsa, aksi durumda 0.
+Sürüklemeye izin veriliyorsa sıfır yok, aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sürükleme işlemi başladığında ne olacağını denetlemek istiyorsanız, bu işlev geçersiz kılar. Varsayılan uygulama, fare yakalar ve kullanıcı sol veya sağ fare düğmesine tıklar veya aynı zamanda sürükleme işlemi iptal edildi, ESC tuşuna bastığında kadar sürükleyin modda kalır.
+Sürükleme işlemi başladığında ne olacağını denetlemek istiyorsanız bu işlevi geçersiz kılın. Varsayılan uygulama fareyi yakalar ve kullanıcı sol veya sağ fare düğmesini tıklatana veya ESC tuşuna basana ve bu sırada sürükleme işlemi iptal edilene kadar sürükleme modunda kalır.
 
-##  <a name="canceldrag"></a>  CDragListBox::CancelDrag
+## <a name="cdraglistboxcanceldrag"></a><a name="canceldrag"></a>CDragListBox::İptalSürükley
 
-Bir sürükleme işlemi iptal edildiğinde framework tarafından çağırılır.
+Sürükleme işlemi iptal edildiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual void CancelDrag(CPoint pt);
@@ -113,24 +113,24 @@ virtual void CancelDrag(CPoint pt);
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*<br/>
-A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) sürüklenen öğenin koordinatlarını içeren nesne.
+*Pt*<br/>
+Sürüklenen öğenin koordinatlarını içeren bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, liste kutusu denetimi için herhangi bir özel işlemi işlemek için geçersiz kılın.
+Liste kutu denetiminiz için herhangi bir özel işleme işlemek için bu işlevi geçersiz kılın.
 
-##  <a name="cdraglistbox"></a>  CDragListBox::CDragListBox
+## <a name="cdraglistboxcdraglistbox"></a><a name="cdraglistbox"></a>CDragListBox::CDragListBox
 
-Oluşturur bir `CDragListBox` nesne.
+Bir `CDragListBox` nesne inşa eder.
 
 ```
 CDragListBox();
 ```
 
-##  <a name="dragging"></a>  CDragListBox::Dragging
+## <a name="cdraglistboxdragging"></a><a name="dragging"></a>CDragListBox::Dragging
 
-Liste kutusu öğesi içinde sürüklenen framework tarafından çağırılır `CDragListBox` nesne.
+Bir liste kutusu öğesi `CDragListBox` nesne içinde sürüklenirken çerçeve tarafından çağrılır.
 
 ```
 virtual UINT Dragging(CPoint pt);
@@ -138,26 +138,26 @@ virtual UINT Dragging(CPoint pt);
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*<br/>
-A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) x ve y içeren nesne İmleç koordinatlarını ekran.
+*Pt*<br/>
+İmlecin x ve y ekran koordinatlarını içeren bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görüntülenecek kaynak kimliği imleç. Aşağıdaki değerleri desteklenir:
+İmlecin görüntülenecek kaynak kimliği. Aşağıdaki değerler mümkündür:
 
-- DL_COPYCURSOR öğe kopyalanır belirtir.
+- DL_COPYCURSOR Öğenin kopyalanacağını gösterir.
 
-- DL_MOVECURSOR öğesi taşınacağını gösterir.
+- DL_MOVECURSOR Maddenin taşınacağını gösterir.
 
-- DL_STOPCURSOR geçerli bırakma hedefi kabul edilebilir olmadığını gösterir.
+- DL_STOPCURSOR Geçerli bırakma hedefinin kabul edilemez olduğunu gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan davranış DL_MOVECURSOR döndürür. Ek işlevler sağlamak istiyorsanız, bu işlev geçersiz kılar.
+Varsayılan davranış DL_MOVECURSOR döndürür. Ek işlevsellik sağlamak istiyorsanız bu işlevi geçersiz kılın.
 
-##  <a name="drawinsert"></a>  CDragListBox::DrawInsert
+## <a name="cdraglistboxdrawinsert"></a><a name="drawinsert"></a>CDragListBox::DrawInsert
 
-Belirtilen dizin ile öğeyi çizmeden önce ekleme klavuzunu çizmek için framework tarafından çağırılır.
+Belirtilen dizin ile öğenin önce ekleme kılavuzu çizmek için çerçeve tarafından çağrılır.
 
 ```
 virtual void DrawInsert(int nItem);
@@ -165,16 +165,16 @@ virtual void DrawInsert(int nItem);
 
 ### <a name="parameters"></a>Parametreler
 
-*nItem*<br/>
-Ekleme noktasını sıfır tabanlı dizini.
+*nÖğe*<br/>
+Ekleme noktasının sıfır tabanlı dizin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değeri - 1 klavuzunu temizler. Bu işlev ekleme klavuzunu davranışını ve görünümünü değiştirmek için geçersiz kılın.
+- 1 değeri ekleme kılavuzunu temizler. Ekleme kılavuzunun görünümünü veya davranışını değiştirmek için bu işlevi geçersiz kılın.
 
-##  <a name="dropped"></a>  CDragListBox::Dropped
+## <a name="cdraglistboxdropped"></a><a name="dropped"></a>CDragListBox::Dropped
 
-Bir öğe içinde bırakıldığında framework tarafından çağırılır. bir `CDragListBox` nesne.
+Bir öğe nesnenin içine `CDragListBox` bırakıldığında çerçeve tarafından çağrılır.
 
 ```
 virtual void Dropped(
@@ -185,18 +185,18 @@ virtual void Dropped(
 ### <a name="parameters"></a>Parametreler
 
 *nSrcIndex*<br/>
-Bırakılan dize sıfır tabanlı dizini belirtir.
+Bırakılan dizenin sıfır tabanlı dizinini belirtir.
 
-*PT*<br/>
-A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) bırakma site koordinatları içeren nesne.
+*Pt*<br/>
+Bırakma alanının koordinatlarını içeren bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan davranışı, liste kutusu öğesini ve kendi verilerini yeni bir konuma kopyalar ve ardından özgün öğeyi siler. Liste kutusu öğeleri listesi içindeki diğer konumlara sürüklenmesi için kopyalarını etkinleştirme gibi varsayılan davranışını özelleştirmek için bu işlevi geçersiz kılar.
+Varsayılan davranış, liste kutusu öğesini ve verilerini yeni konuma kopyalar ve özgün öğeyi siler. Liste kutusu öğelerinin kopyalarının listedeki diğer konumlara sürüklenmesini etkinleştirmek gibi varsayılan davranışı özelleştirmek için bu işlevi geçersiz kılın.
 
-##  <a name="itemfrompt"></a>  CDragListBox::ItemFromPt
+## <a name="cdraglistboxitemfrompt"></a><a name="itemfrompt"></a>CdraglistBox::ItemFromPt
 
-Liste kutusu öğesinin sıfır tabanlı dizini almak için bu işlevi bulunan çağrı *pt*.
+*Pt'de*bulunan liste kutusu öğesinin sıfır tabanlı dizinini almak için bu işlevi arayın.
 
 ```
 int ItemFromPt(
@@ -206,19 +206,19 @@ int ItemFromPt(
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*<br/>
-A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) liste kutusunun içinde bir nokta koordinatları içeren nesne.
+*Pt*<br/>
+Liste kutusundaki bir noktanın koordinatlarını içeren bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi.
 
 *bAutoScroll*<br/>
-Kaydırma izin veriliyorsa, aksi durumda 0 sıfır.
+Kaydırma izin verilirse nonzero, aksi takdirde 0.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sürükleme liste kutusu öğesinin sıfır tabanlı dizini.
+Sürükle listesi kutusu öğesinin sıfır tabanlı dizin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek TSTCON](../../overview/visual-cpp-samples.md)<br/>
+[MFC Örnek TSTCON](../../overview/visual-cpp-samples.md)<br/>
 [CListBox Sınıfı](../../mfc/reference/clistbox-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CListBox Sınıfı](../../mfc/reference/clistbox-class.md)

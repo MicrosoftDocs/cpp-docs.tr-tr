@@ -12,16 +12,16 @@ helpviewer_keywords:
 - stdext::rts_alloc [C++], deallocate
 - stdext::rts_alloc [C++], equals
 ms.assetid: ab41bffa-83d1-4a1c-87b9-5707d516931f
-ms.openlocfilehash: b0ec7d4d3dbe5ef1334bf3c394819a4f5235c28c
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 6ed84d906944a09fa355e281640e9480f3173554
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688989"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373421"
 ---
 # <a name="rts_alloc-class"></a>rts_alloc Sınıfı
 
-Rts_alloc sınıf şablonu, bir dizi önbellek örneği tutan bir [filtre](../standard-library/allocators-header.md) tanımlar ve derleme zamanı yerine çalışma zamanında ayırma ve ayırmayı kaldırma için hangi örneği kullanacağınızı belirler.
+rts_alloc sınıf şablonu, bir dizi önbellek örneği tutan ve derleme zamanında yerine çalışma zamanında ayırma ve ayırma için hangi örneğin kullanılacağını belirleyen bir [filtreyi](../standard-library/allocators-header.md) açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,27 +34,27 @@ class rts_alloc
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Önbellek*|Dizide bulunan önbellek örneklerinin türü. Bu, [Cache_chunklist Class](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md)veya [cache_suballoc](../standard-library/cache-suballoc-class.md)olabilir.|
+|*Önbellek*|Dizide bulunan önbellek örneklerinin türü. Bu [sınıf cache_chunklist](../standard-library/cache-chunklist-class.md)olabilir , [cache_freelist](../standard-library/cache-freelist-class.md), veya [cache_suballoc](../standard-library/cache-suballoc-class.md).|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf şablonu, birden çok blok ayırıcı örneği barındırır ve derleme süresi yerine çalışma zamanında ayırma veya ayırmayı kaldırma için hangi örneği kullanacağınızı belirler. Yeniden bağlama Derlenemeyen derleyiciler ile kullanılır.
+Bu sınıf şablonu birden çok blok ayırıcı örnek tutar ve derleme zamanında yerine çalışma zamanında ayırma veya ayırma için hangi örneğin kullanılacağını belirler. Rebind'i derleyemeyen derleyicilerle kullanılır.
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="member-functions"></a>Üye işlevler
 
-|Üye işlevi|Açıklama|
+|Üye fonksiyonu|Açıklama|
 |-|-|
 |[allocate](#allocate)|Bellek bloğunu ayırır.|
-|[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
-|[equals](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
+|[Ayırması](#deallocate)|Belirli bir konumdan başlayarak belirli sayıda nesneyi depolamadan serbest sağlar.|
+|[equals](#equals)|Eşitlik için iki önbellek karşılaştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<allocators >
+**Üstbilgi:** \<tahsisörler>
 
 **Ad alanı:** stdext
 
-## <a name="allocate"></a>Rts_alloc:: allocate
+## <a name="rts_allocallocate"></a><a name="allocate"></a>rts_alloc::allocate
 
 Bellek bloğunu ayırır.
 
@@ -66,19 +66,19 @@ void *allocate(std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*biriktirme*|Ayrılacak dizideki öğelerin sayısı.|
+|*Sayısı*|Dizideki ayrılacak öğe sayısı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan nesneye yönelik bir işaretçi.
+Ayrılan nesneye işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, Dizin `_IDX` istenen blok boyutu *sayısı*tarafından belirlendiği `caches[_IDX].allocate(count)` döndürür veya *sayı* çok büyükse `operator new(count)` döndürür. Cache nesnesini temsil eden `cache`.
+Üye işlev `caches[_IDX].allocate(count)`döndürür `_IDX` , dizin istenen blok boyutu *sayısına*göre belirlenir, veya `operator new(count)` *sayısı* çok büyükse, döndürür. `cache`, önbellek nesnesini temsil eder.
 
-## <a name="deallocate"></a>Rts_alloc::d eallocate
+## <a name="rts_allocdeallocate"></a><a name="deallocate"></a>rts_alloc::d
 
-Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.
+Belirli bir konumdan başlayarak belirli sayıda nesneyi depolamadan serbest sağlar.
 
 ```cpp
 void deallocate(void* ptr, std::size_t count);
@@ -88,16 +88,16 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*ptr*|Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.|
-|*biriktirme*|Depolamadan serbest bırakmak için nesne sayısı.|
+|*Ptr*|Depolamadan ayrılacak ilk nesneye işaretçi.|
+|*Sayısı*|Depolamadan ayrılacak nesne sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, Dizin `_IDX` istenen blok boyutu *sayısı*tarafından belirlendiği `caches[_IDX].deallocate(ptr, count)` çağırır veya *sayı* çok büyükse `operator delete(ptr)` döndürür.
+Üye işlev `caches[_IDX].deallocate(ptr, count)`çağrıları , `_IDX` dizin istenen blok boyutu *sayısı*tarafından belirlenir , veya *sayısı* çok büyükse, döndürür `operator delete(ptr)`.
 
-## <a name="equals"></a>Rts_alloc:: Equals
+## <a name="rts_allocequals"></a><a name="equals"></a>rts_alloc::eşittir
 
-, Eşitlik için iki önbelleği karşılaştırır.
+Eşitlik için iki önbellek karşılaştırır.
 
 ```cpp
 bool equals(const sync<_Cache>& _Other) const;
@@ -107,14 +107,14 @@ bool equals(const sync<_Cache>& _Other) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*_Önbellek*|Filtreyle ilişkili önbellek nesnesi.|
-|*_Diğer*|Eşitlik için Karşılaştırılacak önbellek nesnesi.|
+|*_Cache*|Filtreyle ilişkili önbellek nesnesi.|
+|*_Other*|Eşitlik için karşılaştırılacak önbellek nesnesi.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-`caches[0].equals(other.caches[0])` sonucu olursa **true** ; Aksi takdirde, **false**. `caches`, önbellek nesnelerinin dizisini temsil eder.
+**doğru** eğer sonucu `caches[0].equals(other.caches[0])`; aksi takdirde, **yanlış**. `caches`önbellek nesnelerinin dizisini temsil eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) \
-[\<allocators >](../standard-library/allocators-header.md)
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)\
+[\<tahsisat>](../standard-library/allocators-header.md)

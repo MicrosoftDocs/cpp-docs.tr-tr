@@ -7,38 +7,38 @@ helpviewer_keywords:
 - derived classes [MFC], view classes
 - view classes [MFC], derived
 ms.assetid: dba42178-7459-4ccc-b025-f3d9b8a4b737
-ms.openlocfilehash: 61b38f6147a8bde4f6eb42cd144f9f64dac8dbd8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 12b31074e4fcc2ed6a83e3669e1044f5b9caedab
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152910"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373499"
 ---
 # <a name="derived-view-classes-available-in-mfc"></a>MFC'de Kullanılabilen Türetilmiş Görünüm Sınıfları
 
-Aşağıdaki tablo, MFC'nin görünümü sınıflar ve ilişkileri birbirine gösterir. Özellikler Görünümü sınıfınızın kendisinden türetilen MFC görünüm sınıfı bağlıdır.
+Aşağıdaki tabloda MFC'nin görünüm sınıfları ve birbirleriyle olan ilişkileri gösterilmektedir. Görünüm sınıfınızın yetenekleri, türetildiği MFC görünüm sınıfına bağlıdır.
 
-### <a name="view-classes"></a>Görünüm sınıfları
+### <a name="view-classes"></a>Sınıfları Görüntüle
 
-|örneği|Açıklama|
+|Sınıf|Açıklama|
 |-----------|-----------------|
-|[CView](../mfc/reference/cview-class.md)|Tüm görünümler taban sınıfı.|
-|[CCtrlView](../mfc/reference/cctrlview-class.md)|Taban sınıfının `CTreeView`, `CListView`, `CEditView`, ve `CRichEditView`. Bu sınıfların belge/görünüm mimarisi ile belirtilen Windows ortak denetimleri kullanmanıza izin verir.|
-|[CEditView](../mfc/reference/ceditview-class.md)|Üzerinde Windows tabanlı basit bir görünüm düzenleme kutusu denetimi. Metin girme ve düzenleme sağlar ve basit metin düzenleyici uygulaması için temel olarak kullanılabilir. Ayrıca bkz: `CRichEditView`.|
-|[CRichEditView](../mfc/reference/cricheditview-class.md)|Bir görünüm içeren bir [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) nesne. Bu sınıf için benzer `CEditView`, ancak tersine `CEditView`, `CRichEditView` tanıtıcıları biçimlendirilmiş metin.|
-|[CListView](../mfc/reference/clistview-class.md)|Bir görünüm içeren bir [CListCtrl](../mfc/reference/clistctrl-class.md) nesne.|
-|[CTreeView](../mfc/reference/ctreeview-class.md)|Bir görünüm içeren bir [CTreeCtrl](../mfc/reference/ctreectrl-class.md) Visual C++ Çözüm Gezgini penceresinde benzer görünümleri için bir nesne.|
-|[CScrollView](../mfc/reference/cscrollview-class.md)|Taban sınıfının `CFormView`, `CRecordView`, ve `CDaoRecordView`. Görünümün içeriğini kaydırma uygular.|
-|[CFormView](../mfc/reference/cformview-class.md)|Bir form görünümü denetimleri içeren bir görünümü. Form tabanlı bir uygulama bir veya daha fazla tür form arabirimleri sağlar.|
-|[CHtmlView](../mfc/reference/chtmlview-class.md)|Bir Web tarayıcı görünümü ile uygulamanın kullanıcı klasörleri yanı sıra World Wide Web sitelerinde yerel dosya sistemi ve ağ üzerinde göz atabilirsiniz. Web tarayıcı görünümü ayrıca bir etkin belge kapsayıcısı çalışabilir.|
-|[CRecordView](../mfc/reference/crecordview-class.md)|Denetimlerinde ODBC veritabanı kayıtlarını görüntüleyen bir form görünümü. Projenizde ODBC desteği seçerseniz, görünüm temel sınıfı olan `CRecordView`. Görünüm bağlı bir `CRowset` nesne.|
-|[CDaoRecordView](../mfc/reference/cdaorecordview-class.md)|Denetimlerinde DAO veritabanı kayıtlarını görüntüleyen bir form görünümü. DAO destek projenizde seçerseniz, görünüm temel sınıftır `CDaoRecordView`. Görünüm bağlı bir `CDaoRecordset` nesne.|
-|[COleDBRecordView](../mfc/reference/coledbrecordview-class.md)|OLE DB kayıt denetimlerinde görüntüleyen bir form görünümü. Projenizde OLE DB desteği seçerseniz, görünüm temel sınıfı olan `COleDBRecordView`. Görünüm bağlı bir `CRowset` nesne.|
+|[Cview](../mfc/reference/cview-class.md)|Tüm görünümlerin taban sınıfı.|
+|[CCtrlView](../mfc/reference/cctrlview-class.md)|Taban sınıf `CTreeView` `CListView`, `CEditView`, `CRichEditView`, ve . Bu sınıflar, belirtilen Windows ortak denetimleri ile belge/görünüm mimarisini kullanmanıza izin verebilirsiniz.|
+|[Ceditview](../mfc/reference/ceditview-class.md)|Windows edit kutusu denetimini temel alan basit bir görünüm. Metin girmenize ve düzenlemeye izin verir ve basit bir metin düzenleyicisi uygulaması için temel olarak kullanılabilir. Ayrıca `CRichEditView`bakınız.|
+|[Cricheditview](../mfc/reference/cricheditview-class.md)|[CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) nesnesi içeren bir görünüm. Bu `CEditView`sınıf, biçimlendirilmiş metni `CEditView` `CRichEditView` işler, ancak bunun aksine benzerdir.|
+|[Clistview](../mfc/reference/clistview-class.md)|[CListCtrl](../mfc/reference/clistctrl-class.md) nesnesi içeren bir görünüm.|
+|[CTreeView karşılaştırması](../mfc/reference/ctreeview-class.md)|Visual C++'daki Çözüm Gezgini penceresine benzeyen görünümler için [CTreeCtrl](../mfc/reference/ctreectrl-class.md) nesnesi içeren bir görünüm.|
+|[Cscrollview](../mfc/reference/cscrollview-class.md)|Taban sınıf `CFormView` `CRecordView`, `CDaoRecordView`ve . Görünümün içeriğini kaydırmayı uygular.|
+|[Cformview](../mfc/reference/cformview-class.md)|Form görünümü, denetimler içeren bir görünüm. Form tabanlı bir uygulama, bir veya daha fazla form arabirimi sağlar.|
+|[Chtmlview](../mfc/reference/chtmlview-class.md)|Uygulamanın kullanıcısının World Wide Web'deki sitelere ve yerel dosya sistemindeki ve ağdaki klasörlere göz atabileceği bir Web tarayıcısı görünümü. Web tarayıcısı görünümü de Etkin belge kapsayıcısı olarak çalışabilir.|
+|[Crecordview](../mfc/reference/crecordview-class.md)|Denetimlerde ODBC veritabanı kayıtlarını görüntüleyen bir form görünümü. Projenizde ODBC desteğini seçerseniz, görünümün taban `CRecordView`sınıfı . Görünüm bir `CRowset` nesneye bağlı.|
+|[Cdaorecordview](../mfc/reference/cdaorecordview-class.md)|Denetimlerde DAO veritabanı kayıtlarını görüntüleyen bir form görünümü. Projenizde DAO desteğini seçerseniz, görünümün taban `CDaoRecordView`sınıfı . Görünüm bir `CDaoRecordset` nesneye bağlı.|
+|[Coledbrecordview](../mfc/reference/coledbrecordview-class.md)|Denetimlerde OLE DB kayıtlarını görüntüleyen bir form görünümü. Projenizde OLE DB desteğini seçerseniz, görünümün taban `COleDBRecordView`sınıfı . Görünüm bir `CRowset` nesneye bağlı.|
 
 > [!NOTE]
->  MFC sürüm 4.0 itibariyle `CEditView` türetilir `CCtrlView`.
+> MFC sürüm 4.0 `CEditView` itibariyle, `CCtrlView`türetilmiştir.
 
-Bu sınıfların kullanmak için onlardan uygulamanın görünüm sınıfları türetin. İlgili bilgiler için bkz. [kaydırma ve ölçeklendirme görünümleri](../mfc/scrolling-and-scaling-views.md). Veritabanı sınıfları hakkında daha fazla bilgi için bkz. [genel bakış: Veritabanı programlama](../data/data-access-programming-mfc-atl.md).
+Uygulamanızda bu sınıfları kullanmak için, uygulamanın görünüm sınıflarını onlardan türetin. İlgili bilgiler için Bkz. [Kaydırma ve Ölçekleme Görünümleri.](../mfc/scrolling-and-scaling-views.md) Veritabanı sınıfları hakkında daha fazla bilgi için genel [bakış: Veritabanı Programlama.](../data/data-access-programming-mfc-atl.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

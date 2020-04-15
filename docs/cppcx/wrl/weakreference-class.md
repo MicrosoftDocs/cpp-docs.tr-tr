@@ -19,16 +19,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::WeakReference::~WeakReference, destructor
 - Microsoft::WRL::Details::WeakReference::WeakReference, constructor
 ms.assetid: 3f4c956b-dbbd-49b1-8cfa-9509a9956c97
-ms.openlocfilehash: a3372a176a158dd9c89eb888c8deb0244eef9a84
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a80c0ec14da2a955a95ac84dd3975212ef20ae04
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387547"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374213"
 ---
 # <a name="weakreference-class"></a>WeakReference Sınıfı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,31 +38,31 @@ class WeakReference;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Temsil eden bir *zayıf başvuru* kullanılabilen Windows çalışma zamanı veya klasik COM ile Zayıf bir başvuru erişilebilir olmayabilir veya bir nesneyi temsil eder.
+Windows Runtime veya klasik COM ile kullanılabilecek zayıf bir *başvuruyu* temsil eder. Zayıf bir başvuru, erişilebilir veya erişilemeyen bir nesneyi temsil eder.
 
-A `WeakReference` nesne tutar bir *güçlü başvuru*, bir nesneye bir işaretçi olduğu ve bir *güçlü başvuru sayısı*, kopya tarafından dağıtılan güçlü başvuru sayısını olduğu `Resolve()` yöntemi. Güçlü Başvuru sayısı sıfır dışında olsa da, güçlü başvuru geçerli olduğundan ve erişilebilir bir nesnedir. Güçlü Başvuru sayısı sıfır olduğunda, güçlü başvuru geçersiz ve nesne erişilemez.
+Bir `WeakReference` nesne, bir nesneye işaretçi olan güçlü bir *başvuru*ve `Resolve()` yöntem tarafından dağıtılan güçlü başvurunun kopya sayısı olan güçlü bir *başvuru sayısı*tutar. Güçlü başvuru sayısı sıfır olmasa da, güçlü başvuru geçerlidir ve nesneye erişilebilir. Güçlü başvuru sayısı sıfır olduğunda, güçlü başvuru geçersiz olur ve nesneye erişilemez.
 
-A `WeakReference` nesne genellikle, varlığı harici bir iş parçacığı ya da uygulama tarafından denetlenen bir nesneyi göstermek için kullanılır. Örneğin, oluşturun bir `WeakReference` nesneden bir dosya nesnesine bir başvuru. Dosya açıkken, güçlü başvuru geçerli değil. Ancak, dosya kapalıysa, güçlü başvuru geçersiz hale gelir.
+Nesne `WeakReference` genellikle, varlığı dış iş parçacığı veya uygulama tarafından denetlenen bir nesneyi temsil etmek için kullanılır. Örneğin, bir `WeakReference` dosya nesnesine bir başvuru bir nesne oluşturmak. Dosya açıkken, güçlü başvuru geçerlidir. Ancak dosya kapatılırsa, güçlü başvuru geçersiz olur.
 
-`WeakReference` Yöntemlerdir iş parçacığı açısından güvenlidir.
+Yöntemler `WeakReference` iş parçacığı güvenlidir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Ad                                                  | Açıklama
+Adı                                                  | Açıklama
 ----------------------------------------------------- | ---------------------------------------------------------------------------
-[WeakReference::WeakReference](#weakreference)        | Yeni bir örneğini başlatır `WeakReference` sınıfı.
-[WeakReference:: ~ WeakReference](#tilde-weakreference) | Başlatılmasını geri alır (yok eder), geçerli örneğini `WeakReference` sınıfı.
+[ZayıfReferans::WeakReference](#weakreference)        | `WeakReference` sınıfının yeni bir örneğini başlatır.
+[Zayıf Referans::~WeakReference](#tilde-weakreference) | `WeakReference` Sınıfın geçerli örneğini deinitialize eder (yok eder).
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                                                                 | Açıklama
+Adı                                                                 | Açıklama
 -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------
-[WeakReference::DecrementStrongReference](#decrementstrongreference) | Güçlü Başvuru geçerli sayısını azaltır `WeakReference` nesne.
-[Weakreference::ıncrementstrongreference](#incrementstrongreference) | Geçerli güçlü başvuru sayısını artırır `WeakReference` nesne.
-[WeakReference::Resolve](#resolve)                                   | Güçlü Başvuru sayısı sıfır değilse belirtilen işaretçi geçerli güçlü başvuru değerine ayarlar.
-[WeakReference::SetUnknown](#setunknown)                             | Güçlü Başvuru geçerli ayarlar `WeakReference` belirtilen arabirim işaretçisini için nesne.
+[WeakReference::DecrementStrongReference](#decrementstrongreference) | Geçerli `WeakReference` nesnenin güçlü başvuru sayısını eriter.
+[WeakReference::ArtışStrongReference](#incrementstrongreference) | Geçerli `WeakReference` nesnenin güçlü başvuru sayısını daartışlar.
+[ZayıfReferans::Çözümle](#resolve)                                   | Güçlü başvuru sayısı sıfır değilse, belirtilen işaretçiyi geçerli güçlü başvuru değerine ayarlar.
+[ZayıfReferans::SetUnknown](#setunknown)                             | Geçerli `WeakReference` nesnenin güçlü başvurularını belirtilen arabirim işaretçisine ayarlar.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -70,13 +70,13 @@ Ad                                                                 | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üstbilgi:** implements.h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="tilde-weakreference"></a>WeakReference:: ~ WeakReference
+## <a name="weakreferenceweakreference"></a><a name="tilde-weakreference"></a>Zayıf Referans::~WeakReference
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 virtual ~WeakReference();
@@ -86,11 +86,11 @@ virtual ~WeakReference();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli örneğinin başlatmasını geri alır `WeakReference` sınıfı.
+Sınıfın geçerli örneğini `WeakReference` deinitialize eder.
 
-## <a name="decrementstrongreference"></a>WeakReference::DecrementStrongReference
+## <a name="weakreferencedecrementstrongreference"></a><a name="decrementstrongreference"></a>WeakReference::DecrementStrongReference
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 ULONG DecrementStrongReference();
@@ -98,17 +98,17 @@ ULONG DecrementStrongReference();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Güçlü Başvuru geçerli sayısını azaltır `WeakReference` nesne.
+Geçerli `WeakReference` nesnenin güçlü başvuru sayısını eriter.
 
-Güçlü Başvuru sayısı sıfır olduğunda, güçlü başvuru kümesine `nullptr`.
+Güçlü başvuru sayısı sıfır olduğunda, güçlü başvuru `nullptr`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İndirildiği güçlü başvuru sayısı.
+Verilen güçlü başvuru sayısı.
 
-## <a name="incrementstrongreference"></a>Weakreference::ıncrementstrongreference
+## <a name="weakreferenceincrementstrongreference"></a><a name="incrementstrongreference"></a>WeakReference::ArtışStrongReference
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 ULONG IncrementStrongReference();
@@ -120,11 +120,11 @@ Artan güçlü başvuru sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli güçlü başvuru sayısını artırır `WeakReference` nesne.
+Geçerli `WeakReference` nesnenin güçlü başvuru sayısını daartışlar.
 
-## <a name="resolve"></a>WeakReference::Resolve
+## <a name="weakreferenceresolve"></a><a name="resolve"></a>ZayıfReferans::Çözümle
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 STDMETHOD(Resolve)
@@ -135,27 +135,27 @@ STDMETHOD(Resolve)
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*<br/>
-Bir arabirim kimliği.
+*Riid*<br/>
+Arayüz kimliği.
 
-*ppvObject*<br/>
-Bu işlem tamamlandığında bir kopyasını güçlü başvuru sayısı sıfır değilse geçerli güçlü başvuru.
+*ppvNesne*<br/>
+Bu işlem tamamlandığında, güçlü başvuru sayısı sıfır değilse geçerli güçlü başvurunun bir kopyası.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-- Bu işlem başarılı olursa S_OK ve güçlü başvuru sayısı sıfır olan. *PpvObject* parametrenin ayarlanmış `nullptr`.
+- Bu işlem başarılı ve güçlü başvuru sayısı sıfır ise S_OK. *ppvObject* parametresi `nullptr`.
 
-- Bu işlem başarılı olursa S_OK ve güçlü başvuru sayısı sıfır. *PpvObject* parametre güçlü başvuru.
+- Bu işlem başarılı ve güçlü başvuru sayısı sıfır değilse S_OK. *ppvObject* parametresi güçlü başvuru olarak ayarlanır.
 
-- Aksi takdirde, nedenini belirten bir HRESULT, bu işlem başarısız oldu.
+- Aksi takdirde, bu işlemin başarısız olmasının nedenini gösteren bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Güçlü Başvuru sayısı sıfır değilse belirtilen işaretçi geçerli güçlü başvuru değerine ayarlar.
+Güçlü başvuru sayısı sıfır değilse, belirtilen işaretçiyi geçerli güçlü başvuru değerine ayarlar.
 
-## <a name="setunknown"></a>WeakReference::SetUnknown
+## <a name="weakreferencesetunknown"></a><a name="setunknown"></a>ZayıfReferans::SetUnknown
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 void SetUnknown(
@@ -165,16 +165,16 @@ void SetUnknown(
 
 ### <a name="parameters"></a>Parametreler
 
-*UNK*<br/>
-Bir işaretçi `IUnknown` bir nesnenin arabirimi.
+*Unk*<br/>
+Bir nesnenin `IUnknown` arabirimine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Güçlü Başvuru geçerli ayarlar `WeakReference` belirtilen arabirim işaretçisini için nesne.
+Geçerli `WeakReference` nesnenin güçlü başvurularını belirtilen arabirim işaretçisine ayarlar.
 
-## <a name="weakreference"></a>WeakReference::WeakReference
+## <a name="weakreferenceweakreference"></a><a name="weakreference"></a>ZayıfReferans::WeakReference
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 WeakReference();
@@ -182,6 +182,6 @@ WeakReference();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir örneğini başlatır `WeakReference` sınıfı.
+`WeakReference` sınıfının yeni bir örneğini başlatır.
 
-Güçlü başvuru işaretçisi `WeakReference` nesne için başlatılan `nullptr`, ve güçlü başvuru sayısı 1 olarak başlatılır.
+Nesne için güçlü `WeakReference` başvuru işaretçisi baş harfe `nullptr`ve güçlü başvuru sayısı 1'e başolarak başolarak verilir.

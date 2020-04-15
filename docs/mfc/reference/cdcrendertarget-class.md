@@ -1,5 +1,5 @@
 ---
-title: CDCRenderTarget sınıfı
+title: CDCRenderTarget Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDCRenderTarget
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - CDCRenderTarget [MFC], GetDCRenderTarget
 - CDCRenderTarget [MFC], m_pDCRenderTarget
 ms.assetid: aa8059c9-08e6-49e4-9b8c-00fa54077a61
-ms.openlocfilehash: 70169d2b89d9ea657898f7a96dea27556023d4e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 790ce0f32c2325fa0ea92ca0bda64ddaa4c86c45
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62168179"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375702"
 ---
-# <a name="cdcrendertarget-class"></a>CDCRenderTarget sınıfı
+# <a name="cdcrendertarget-class"></a>CDCRenderTarget Sınıfı
 
-ID2D1DCRenderTarget için sarmalayıcı.
+ID2D1DCRenderTarget için bir sarmalayıcı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,35 +41,35 @@ class CDCRenderTarget : public CRenderTarget;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDCRenderTarget::CDCRenderTarget](#cdcrendertarget)|CDCRenderTarget bir nesne oluşturur.|
+|[CDCRenderTarget::CDCRenderTarget](#cdcrendertarget)|BIR CDCRenderTarget nesnesi oluşturuyor.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDCRenderTarget::Attach](#attach)|Varolan ekler nesnesine hedef arabirimi oluşturma|
-|[CDCRenderTarget::BindDC](#binddc)|İşleme hedefi çizim komutları ermesinin cihaz bağlamına bağlar.|
-|[CDCRenderTarget::Create](#create)|Bir CDCRenderTarget oluşturur.|
-|[CDCRenderTarget::Detach](#detach)|İşleme hedefi arabirimi nesnesinden ayırır|
-|[CDCRenderTarget::GetDCRenderTarget](#getdcrendertarget)|Döndürür ID2D1DCRenderTarget arabirimi|
+|[CDCRenderTarget::Ekle](#attach)|Nesneye varolan render hedef arabirimi ataşır|
+|[CDCRenderTarget::BindDC](#binddc)|Render hedefini çizim komutları veren aygıt bağlamına bağlar|
+|[CDCRenderTarget::Oluştur](#create)|Bir CDCRenderTarget oluşturur.|
+|[CDCRenderTarget::Detach](#detach)|Ayırıcılar hedef arabirimi nesneden işleme|
+|[CDCRenderTarget::GetDCRenderTarget](#getdcrendertarget)|ID2D1DCRenderTarget arabirimini döndürür|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDCRenderTarget::operator ID2D1DCRenderTarget *](#operator_id2d1dcrendertarget_star)|Döndürür ID2D1DCRenderTarget arabirimi|
+|[CDCRenderTarget::operatör ID2D1DCRenderTarget*](#operator_id2d1dcrendertarget_star)|ID2D1DCRenderTarget arabirimini döndürür|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDCRenderTarget::m_pDCRenderTarget](#m_pdcrendertarget)|ID2D1DCRenderTarget nesneye bir işaretçi.|
+|[CDCRenderTarget::m_pDCRenderTarget](#m_pdcrendertarget)|ID2D1DCRenderTarget nesnesine işaretçi.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CRenderTarget](../../mfc/reference/crendertarget-class.md)
 
@@ -77,11 +77,11 @@ class CDCRenderTarget : public CRenderTarget;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget.h
 
-##  <a name="attach"></a>  CDCRenderTarget::Attach
+## <a name="cdcrendertargetattach"></a><a name="attach"></a>CDCRenderTarget::Ekle
 
-Varolan ekler nesnesine hedef arabirimi oluşturma
+Nesneye varolan render hedef arabirimi ataşır
 
 ```
 void Attach(ID2D1DCRenderTarget* pTarget);
@@ -90,11 +90,11 @@ void Attach(ID2D1DCRenderTarget* pTarget);
 ### <a name="parameters"></a>Parametreler
 
 *pTarget*<br/>
-Mevcut işleme hedefi arabirimi. NULL olamaz
+Varolan render hedef arabirimi. NULL olamaz
 
-##  <a name="binddc"></a>  CDCRenderTarget::BindDC
+## <a name="cdcrendertargetbinddc"></a><a name="binddc"></a>CDCRenderTarget::BindDC
 
-İşleme hedefi çizim komutları ermesinin cihaz bağlamına bağlar.
+Render hedefini çizim komutları veren aygıt bağlamına bağlar
 
 ```
 BOOL BindDC(
@@ -104,25 +104,25 @@ BOOL BindDC(
 
 ### <a name="parameters"></a>Parametreler
 
-*DC*<br/>
-İşleme hedefi çizim komutları sorunların cihaz bağlamı
+*Dc*<br/>
+Render hedef çizim komutları sorunları olduğu aygıt bağlamı
 
 *Rect*<br/>
-İşleme hedefi bağlandığı bir cihaz bağlamı (HDC) tanıtıcısını boyutları
+İşlem hedefinin bağlı olduğu bir aygıt bağlamına (HDC) tanıtıcının boyutları
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="cdcrendertarget"></a>  CDCRenderTarget::CDCRenderTarget
+## <a name="cdcrendertargetcdcrendertarget"></a><a name="cdcrendertarget"></a>CDCRenderTarget::CDCRenderTarget
 
-CDCRenderTarget bir nesne oluşturur.
+BIR CDCRenderTarget nesnesi oluşturuyor.
 
 ```
 CDCRenderTarget();
 ```
 
-##  <a name="create"></a>  CDCRenderTarget::Create
+## <a name="cdcrendertargetcreate"></a><a name="create"></a>CDCRenderTarget::Oluştur
 
 Bir CDCRenderTarget oluşturur.
 
@@ -132,16 +132,16 @@ BOOL Create(const D2D1_RENDER_TARGET_PROPERTIES& props);
 
 ### <a name="parameters"></a>Parametreler
 
-*Özellikler*<br/>
-İşleme modu, piksel biçimi, uzaktan iletişim seçenekleri, DPI bilgi ve donanım işleme için gereken en düşük DirectX desteği.
+*Sahne*<br/>
+İşleme modu, piksel biçimi, remoting seçenekleri, DPI bilgileri ve donanım işleme için gereken minimum DirectX desteği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="detach"></a>  CDCRenderTarget::Detach
+## <a name="cdcrendertargetdetach"></a><a name="detach"></a>CDCRenderTarget::Detach
 
-İşleme hedefi arabirimi nesnesinden ayırır
+Ayırıcılar hedef arabirimi nesneden işleme
 
 ```
 ID2D1DCRenderTarget* Detach();
@@ -149,11 +149,11 @@ ID2D1DCRenderTarget* Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi ayrılmış işleme hedefi arabirimi.
+Hedef arabirimini ayırılamak için işaretçi.
 
-##  <a name="getdcrendertarget"></a>  CDCRenderTarget::GetDCRenderTarget
+## <a name="cdcrendertargetgetdcrendertarget"></a><a name="getdcrendertarget"></a>CDCRenderTarget::GetDCRenderTarget
 
-Döndürür ID2D1DCRenderTarget arabirimi
+ID2D1DCRenderTarget arabirimini döndürür
 
 ```
 ID2D1DCRenderTarget* GetDCRenderTarget();
@@ -161,19 +161,19 @@ ID2D1DCRenderTarget* GetDCRenderTarget();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ID2D1DCRenderTarget arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe çevrilmediyse ID2D1DCRenderTarget arabirimine veya NULL'a işaretçi.
 
-##  <a name="m_pdcrendertarget"></a>  CDCRenderTarget::m_pDCRenderTarget
+## <a name="cdcrendertargetm_pdcrendertarget"></a><a name="m_pdcrendertarget"></a>CDCRenderTarget::m_pDCRenderTarget
 
-ID2D1DCRenderTarget nesneye bir işaretçi.
+ID2D1DCRenderTarget nesnesine işaretçi.
 
 ```
 ID2D1DCRenderTarget* m_pDCRenderTarget;
 ```
 
-##  <a name="operator_id2d1dcrendertarget_star"></a>  CDCRenderTarget::operator ID2D1DCRenderTarget *
+## <a name="cdcrendertargetoperator-id2d1dcrendertarget"></a><a name="operator_id2d1dcrendertarget_star"></a>CDCRenderTarget::operatör ID2D1DCRenderTarget*
 
-Döndürür ID2D1DCRenderTarget arabirimi
+ID2D1DCRenderTarget arabirimini döndürür
 
 ```
 operator ID2D1DCRenderTarget*();
@@ -181,7 +181,7 @@ operator ID2D1DCRenderTarget*();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ID2D1DCRenderTarget arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe çevrilmediyse ID2D1DCRenderTarget arabirimine veya NULL'a işaretçi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

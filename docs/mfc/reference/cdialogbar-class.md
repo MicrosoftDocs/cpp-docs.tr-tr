@@ -1,5 +1,5 @@
 ---
-title: CDialogBar sınıfı
+title: CDialogBar Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDialogBar
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CDialogBar [MFC], CDialogBar
 - CDialogBar [MFC], Create
 ms.assetid: da2f7a30-970c-44e3-87f0-6094bd002cab
-ms.openlocfilehash: af84c5239a9cb3cbddb1ab4f0230e5b1a3373573
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: cf9a2658807959108b3bb0af672d4c1835b58bc5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420479"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375671"
 ---
-# <a name="cdialogbar-class"></a>CDialogBar sınıfı
+# <a name="cdialogbar-class"></a>CDialogBar Sınıfı
 
-Bir denetim çubuğundaki Windows kalıcı olmayan iletişim kutusunun işlevlerini sağlar.
+Denetim çubuğundaki Windows moduz iletişim kutusunun işlevselliğini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,54 +31,54 @@ class CDialogBar : public CControlBar
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDialogBar:: CDialogBar](#cdialogbar)|`CDialogBar` nesnesi oluşturur.|
+|[CDialogBar::CDialogBar](#cdialogbar)|Bir `CDialogBar` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDialogBar:: Create](#create)|Bir Windows iletişim kutusu oluşturur ve onu `CDialogBar` nesnesine ekler.|
+|[CDialogBar::Oluştur](#create)|Bir Windows iletişim çubuğu oluşturur ve `CDialogBar` nesneye bağlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İletişim kutusu bir iletişim kutusuna benzer ve bu, kullanıcının aralarında sekme olarak kullanabileceğiniz standart Windows denetimlerini içerir. Diğer bir benzerliği, iletişim çubuğunu temsil eden bir iletişim kutusu şablonu oluşturmaktır.
+İletişim çubuğu, kullanıcının arasında sektirebileceği standart Windows denetimleri içerdiği bir iletişim kutusunu andırır. Başka bir benzerlik, iletişim çubuğunu temsil edecek bir iletişim şablonu oluşturmanızdır.
 
-Bir iletişim çubuğu oluşturma ve kullanma, `CFormView` nesnesi oluşturmaya ve kullanmaya benzer. İlk olarak, WS_CHILD stil içeren bir iletişim şablonu tanımlamak için [iletişim düzenleyicisini](../../windows/dialog-editor.md) kullanın ve başka stil kullanmayın. Şablon WS_VISIBLE stil içermemelidir. Uygulama kodunuzda `CDialogBar` nesnesini oluşturmak için oluşturucuyu çağırın, sonra iletişim kutusu penceresini oluşturmak ve `CDialogBar` nesnesine eklemek için `Create` çağırın.
+İletişim çubuğu oluşturmak ve kullanmak, nesne `CFormView` oluşturmaya ve kullanmaya benzer. İlk olarak, stil WS_CHILD ve başka bir stil içeren bir iletişim şablonu tanımlamak için [iletişim düzenleyicisini](../../windows/dialog-editor.md) kullanın. Şablon, stil WS_VISIBLE olmamalıdır. Uygulama kodunuzda, `CDialogBar` nesneyi oluşturmak için oluşturucuyu çağırın, ardından iletişim çubuğu penceresi oluşturmak için arayın `Create` ve `CDialogBar` nesneye takın.
 
-`CDialogBar`hakkında daha fazla bilgi için bkz. [Iletişim çubukları](../../mfc/dialog-bars.md) ve [teknik notta 31](../../mfc/tn031-control-bars.md). denetim çubukları.
+Daha fazla `CDialogBar`bilgi için, makaleye bakın [Dialog Barlar](../../mfc/dialog-bars.md) ve [Teknik Not 31](../../mfc/tn031-control-bars.md), Denetim Çubukları.
 
 > [!NOTE]
->  Geçerli sürümde, bir `CDialogBar` nesnesi Windows Forms denetimleri barındıraamaz. Görseldeki C++Windows Forms denetimleri hakkında daha fazla bilgi için bkz. [MFC 'de Windows formu Kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+> Geçerli sürümde, `CDialogBar` bir nesne Windows Forms denetimlerini barındıramaz. Visual C++'daki Windows Forms denetimleri hakkında daha fazla bilgi [için](../../dotnet/using-a-windows-form-user-control-in-mfc.md)bkz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CControlBar](../../mfc/reference/ccontrolbar-class.md)
+[Ccontrolbar](../../mfc/reference/ccontrolbar-class.md)
 
 `CDialogBar`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxext. h
+**Üstbilgi:** afxext.h
 
-##  <a name="cdialogbar"></a>CDialogBar:: CDialogBar
+## <a name="cdialogbarcdialogbar"></a><a name="cdialogbar"></a>CDialogBar::CDialogBar
 
-`CDialogBar` nesnesi oluşturur.
+Bir `CDialogBar` nesne inşa eder.
 
 ```
 CDialogBar();
 ```
 
-##  <a name="create"></a>CDialogBar:: Create
+## <a name="cdialogbarcreate"></a><a name="create"></a>CDialogBar::Oluştur
 
-`lpszTemplateName` veya `nIDTemplate`tarafından belirtilen iletişim kutusu kaynak şablonunu yükler, iletişim çubuğu penceresini oluşturur, stilini ayarlar ve `CDialogBar` nesnesiyle ilişkilendirir.
+İletişim kutusu kaynak şablonunu yükler `lpszTemplateName` `nIDTemplate`veya iletişim çubuğu penceresini oluşturur, stilini ayarlar ve `CDialogBar` nesneyle ilişkilendirer.
 
 ```
 virtual BOOL Create(
@@ -97,45 +97,45 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-Üst `CWnd` nesnesine yönelik bir işaretçi.
+Ana `CWnd` nesneye işaretçi.
 
 *lpszTemplateName*<br/>
-`CDialogBar` nesnenin iletişim kutusu kaynak şablonunun adı için bir işaretçi.
+`CDialogBar` Nesnenin iletişim kutusu kaynak şablonunun adına bir işaretçi.
 
 *nStyle*<br/>
 Araç çubuğu stili. Desteklenen ek araç çubuğu stilleri şunlardır:
 
-- CBRS_TOP denetim çubuğu, çerçeve penceresinin en üstünde.
+- CBRS_TOP Denetim çubuğu çerçeve penceresinin en üstündedir.
 
-- CBRS_BOTTOM denetim çubuğu, çerçeve penceresinin en altında.
+- CBRS_BOTTOM Denetim çubuğu çerçeve penceresinin alt kısmındadır.
 
-- Üst yeniden boyutlandırıldığında CBRS_NOALIGN denetim çubuğu yeniden konumlandırılmaz.
+- CBRS_NOALIGN Denetim çubuğu, üst öğe yeniden boyutlandırıldığında yeniden konumlandırılmez.
 
-- CBRS_TOOLTIPS denetim çubuğu araç ipuçlarını görüntüler.
+- CBRS_TOOLTIPS Denetim çubuğu araç ipuçlarını görüntüler.
 
-- CBRS_SIZE_DYNAMIC denetim çubuğu dinamiktir.
+- CBRS_SIZE_DYNAMIC Kontrol çubuğu dinamiktir.
 
-- CBRS_SIZE_FIXED denetim çubuğu düzeltildi.
+- CBRS_SIZE_FIXED Kontrol çubuğu sabittir.
 
-- CBRS_FLOATING denetim çubuğu kayar.
+- CBRS_FLOATING Kontrol çubuğu yüzer.
 
-- CBRS_FLYBY durum çubuğunda düğme hakkında bilgi görüntülenir.
+- CBRS_FLYBY Durum çubuğu düğme yle ilgili bilgileri görüntüler.
 
-- CBRS_HIDE_INPLACE denetim çubuğu kullanıcıya gösterilmez.
+- CBRS_HIDE_INPLACE Denetim çubuğu kullanıcıya görüntülenmez.
 
-*NID*<br/>
-İletişim çubuğunun denetim KIMLIĞI.
+*Nıd*<br/>
+İletişim çubuğunun denetim kimliği.
 
-*Nıdtemplate*<br/>
-`CDialogBar` nesnenin iletişim kutusu şablonunun kaynak KIMLIĞI.
+*nIDTemplate*<br/>
+Nesnenin iletişim `CDialogBar` kutusu şablonunun kaynak kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-CBRS_TOP veya CBRS_BOTTOM hizalama stilini belirtirseniz, iletişim çubuğunun genişliği, çerçeve penceresinin ve yüksekliğinin *Nıdtemplate*tarafından belirtilen kaynağın bulunduğu yer olur. CBRS_LEFT veya CBRS_RIGHT hizalama stilini belirtirseniz, iletişim çubuğunun yüksekliği, çerçeve penceresinin ve genişliğinin *Nıdtemplate*tarafından belirtilen kaynağın bulunduğu yer olur.
+CBRS_TOP veya CBRS_BOTTOM hizalama stilini belirtirseniz, iletişim çubuğunun genişliği çerçeve penceresinin genişliğidir ve yüksekliği *nIDTemplate*tarafından belirtilen kaynaktır. CBRS_LEFT veya CBRS_RIGHT hizalama stilini belirtirseniz, iletişim çubuğunun yüksekliği çerçeve penceresinin yüksekliğidir ve genişliği *nIDTemplate*tarafından belirtilen kaynaktır.
 
 ### <a name="example"></a>Örnek
 
@@ -143,7 +143,7 @@ CBRS_TOP veya CBRS_BOTTOM hizalama stilini belirtirseniz, iletişim çubuğunun 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
+[MFC Örnek CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar Sınıfı](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CFormView Sınıfı](../../mfc/reference/cformview-class.md)<br/>

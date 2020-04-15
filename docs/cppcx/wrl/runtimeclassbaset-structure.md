@@ -11,16 +11,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::RuntimeClassBaseT::AsIID method
 - Microsoft::WRL::Details::RuntimeClassBaseT::GetImplementedIIDS method
 ms.assetid: a62775fb-3359-4f45-9ff1-c07fa8da464b
-ms.openlocfilehash: 5d93b3e86e7ba105a42ccbedbbf44c51ada97bbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 06a9f73e00d541b0e5bcbe20c57befe4a67c5132
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403171"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375730"
 ---
 # <a name="runtimeclassbaset-structure"></a>RuntimeClassBaseT Yapısı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,20 +32,20 @@ friend struct Details::RuntimeClassBaseT;
 ### <a name="parameters"></a>Parametreler
 
 *RuntimeClassTypeT*<br/>
-Bir veya daha fazla belirten bayraklar alanı [RuntimeClassType](runtimeclasstype-enumeration.md) numaralandırıcılar.
+Bir veya daha fazla [RuntimeClassType](runtimeclasstype-enumeration.md) sayıtaycı belirten bir bayrak alanı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İçin yardımcı yöntemleri sağlar `QueryInterface` işlemler ve başlangıç arabirim kimliği.
+İşlemler ve `QueryInterface` arabirim tonları almak için yardımcı yöntemler sağlar.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-Ad                                                         | Açıklama
+Adı                                                         | Açıklama
 ------------------------------------------------------------ | -----------------------------------------------------------------------------
-[Runtimeclassbaset::asııd](#asiid)                           | Belirtilen arabirim kimliği. bir işaretçi alır.
-[Runtimeclassbaset::getımplementedııds](#getimplementediids) | Belirtilen bir tür tarafından uygulanan kimlikleri arabiriminin dizisini alır.
+[RuntimeClassBaseT::AsIID](#asiid)                           | Belirtilen arabirim kimliği için bir işaretçi alır.
+[RuntimeClassBaseT::GetImplementedIIDS](#getimplementediids) | Belirli bir tür tarafından uygulanan bir dizi arabirim dis'i alır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -53,13 +53,13 @@ Ad                                                         | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üstbilgi:** implements.h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="asiid"></a>Runtimeclassbaset::asııd
+## <a name="runtimeclassbasetasiid"></a><a name="asiid"></a>RuntimeClassBaseT::AsIID
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 template<typename T>
@@ -73,28 +73,28 @@ __forceinline static HRESULT AsIID(
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Parametresi tarafından belirtilen arabirim kimliği uygulayan bir tür *riid*.
+Parametre *riid*tarafından belirtilen arabirim kimliğini uygulayan bir tür.
 
-*implements*<br/>
-Şablon parametresi tarafından belirtilen türde bir değişken *T*.
+*Uygulayan*<br/>
+Şablon parametresi *T*tarafından belirtilen türden bir değişken.
 
-*riid*<br/>
-Alınacak arabirim kimliği.
+*Riid*<br/>
+Alınacak arayüz kimliği.
 
-*ppvObject*<br/>
-Bu işlem başarılı olursa, bir işaretçi bir-işaretçiye arabirimi için belirtilen parametre tarafından *riid*.
+*ppvNesne*<br/>
+Bu işlem başarılı olursa, parametre *riid*tarafından belirtilen arabirimin işaretçi-to-a-pointer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+S_OK başarılı olursa; aksi takdirde, hatayı açıklayan bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen arabirim kimliği. bir işaretçi alır.
+Belirtilen arabirim kimliği için bir işaretçi alır.
 
-## <a name="getimplementediids"></a>Runtimeclassbaset::getımplementedııds
+## <a name="runtimeclassbasetgetimplementediids"></a><a name="getimplementediids"></a>RuntimeClassBaseT::GetImplementedIIDS
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 template<typename T>
@@ -108,21 +108,21 @@ __forceinline static HRESULT GetImplementedIIDS(
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Türünü *uygulayan* parametresi.
+*Uygulama* parametresi türü.
 
-*implements*<br/>
-Parametresi tarafından belirtilen türe işaretçi *T*.
+*Uygulayan*<br/>
+*T*parametresi ile belirtilen türe işaretçi .
 
-*Iidcount*<br/>
-Arabirim kimlikleri alınacak maksimum sayısı.
+*iidSay*<br/>
+Alınacak en fazla arabirim numarası.
 
-*IID'leri*<br/>
-Bu işlem kimlikleri tür tarafından uygulanan arabirimi dizisi başarıyla tamamlanırsa *T*.
+*iids*<br/>
+Bu işlem başarıyla tamamlanırsa, *T*türüne göre uygulanan arabirim ilikleri dizisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+S_OK başarılı olursa; aksi takdirde, hatayı açıklayan bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen bir tür tarafından uygulanan kimlikleri arabiriminin dizisini alır.
+Belirli bir tür tarafından uygulanan bir dizi arabirim dis'i alır.

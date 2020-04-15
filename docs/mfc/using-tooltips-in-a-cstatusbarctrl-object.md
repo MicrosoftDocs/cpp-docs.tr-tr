@@ -6,23 +6,23 @@ helpviewer_keywords:
 - status bars [MFC], tool tips
 - CStatusBarCtrl class [MFC], tool tips
 ms.assetid: a77597a7-43ef-4b8f-87bc-a8ea1dc63dc3
-ms.openlocfilehash: a607a5fb8c9470df42d12c771865b924891b2dac
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 29d326c708743424686d616bbaf172ccd72481ce
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442546"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374702"
 ---
 # <a name="using-tooltips-in-a-cstatusbarctrl-object"></a>Bir CStatusBarCtrl Nesnesinde Araç İpuçları Kullanma
 
-Bir durum çubuğu denetimi için araç ipuçlarını etkinleştirmek üzere SBT_TOOLTIPS stili ile `CStatusBarCtrl` nesnesini oluşturun.
+Durum çubuğu denetimi için araç uçlarını `CStatusBarCtrl` etkinleştirmek için nesneyi SBT_TOOLTIPS stiliyle oluşturun.
 
 > [!NOTE]
->  Durum çubuğunuzu uygulamak için bir `CStatusBar` nesnesi kullanıyorsanız, `CStatusBar::CreateEx` işlevini kullanın. Katıştırılmış `CStatusBarCtrl` nesnesi için ek stiller belirtmenize olanak tanır.
+> Durum çubuğunuzu `CStatusBar` uygulamak için bir nesne kullanıyorsanız, `CStatusBar::CreateEx` işlevi kullanın. Katıştılmış `CStatusBarCtrl` nesne için ek stiller belirtmenizi sağlar.
 
-`CStatusBarCtrl` nesnesi başarıyla oluşturulduktan sonra, belirli bir bölme için ipucu metnini ayarlamak ve almak üzere [CStatusBarCtrl:: SetTipText](../mfc/reference/cstatusbarctrl-class.md#settiptext) ve [CStatusBarCtrl:: GetTipText](../mfc/reference/cstatusbarctrl-class.md#gettiptext) kullanın.
+Nesne `CStatusBarCtrl` başarıyla oluşturulduktan sonra, belirli bir bölme için ipucu metnini ayarlamak ve almak için [CStatusBarCtrl::SetTipText](../mfc/reference/cstatusbarctrl-class.md#settiptext) ve [CStatusBarCtrl::GetTipText'i](../mfc/reference/cstatusbarctrl-class.md#gettiptext) kullanın.
 
-Araç ipucu ayarlandıktan sonra, yalnızca bölümde bir simge varsa ve metin yoksa veya metnin tamamı bölüm içinde görüntülenemediğinde görüntülenir. Araç ipuçları basit modda desteklenmez.
+Araç ipucu ayarlandıktan sonra, yalnızca parçada bir simge varsa ve metin yoksa veya metnin tamamı parçanın içinde görüntülenemiyorsa görüntülenir. Araç ipuçları basit modda desteklenmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
