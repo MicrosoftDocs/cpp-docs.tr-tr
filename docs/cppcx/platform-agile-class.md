@@ -1,5 +1,5 @@
 ---
-title: Platform::Agile sınıfı
+title: Platform::Agile Sınıfı
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -12,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Agile
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
-ms.openlocfilehash: 86a535bc106e17b276dc5f42a59773aa0de8c361
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0822cef10b199a5bc3b33f116065816e380bf8a8
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161678"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81376507"
 ---
-# <a name="platformagile-class"></a>Platform::Agile sınıfı
+# <a name="platformagile-class"></a>Platform::Agile Sınıfı
 
-Bir MashalingBehavior sahip nesneyi temsil eden standart çalışma zamanı özel durumları iş parçacığı oluşturma olasılığını önemli ölçüde azaltan bir Çevik nesne olarak =. `Agile<T>` Çağrı veya aynı veya farklı bir iş parçacığı, çağrılması Çevik olmayan nesnesi sağlar. Daha fazla bilgi için [iş parçacığı oluşturma ve hazırlama](../cppcx/threading-and-marshaling-c-cx.md).
+MashalingBehavior=Standart çevik bir nesne olarak sahip olan ve çalışma zamanı iş parçacığı özel durumları olasılığını büyük ölçüde azaltan bir nesneyi temsil eder. Çevik `Agile<T>` olmayan nesnenin aynı veya farklı bir iş parçacığının çağrılmasını veya çağrılmasını sağlar. Daha fazla bilgi için [Threading ve Marshaling'e](../cppcx/threading-and-marshaling-c-cx.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,38 +33,38 @@ class Agile;
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Çevik olmayan sınıf tür adı.
+Çevik olmayan sınıfın yazı adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows çalışma zamanı sınıflar Çevik çoğu. Çevik bir nesne çağırabilir veya bir işlemde veya işlem dışı nesnesi aynı veya farklı bir iş parçacığı tarafından çağrılabilir. Bir nesne Çevik değilse, Çevik olmayan nesneyi kaydırma bir `Agile<T>` Çevik olan nesne. Ardından `Agile<T>` nesne sıralanmış ve temel alınan Çevik olmayan nesne kullanılabilir.
+Windows Runtime'daki sınıfların çoğu çeviktir. Çevik bir nesne, aynı veya farklı bir iş parçacığında proc veya proc dışı bir nesneyi arayabilir veya çağırılabilir. Bir nesne çevik değilse, çevik olmayan nesneyi çevik `Agile<T>` olan bir nesneye sarın. Daha `Agile<T>` sonra nesne marshaled olabilir ve altta yatan çevik olmayan nesne kullanılabilir.
 
-`Agile<T>` Sınıfı yerel, standart bir C++ sınıfı ve gerektiriyor `agile.h`. Çevik olmayan nesne ve Çevik nesnesinin temsil ettiği *bağlam*. Bağlam, Çevik bir nesnenin modeli iş parçacığı oluşturma ve hazırlama davranışı belirtir. İşletim sistemi bağlamı nasıl hazırlanacağını nesneyi belirlemek için kullanır.
+Sınıf `Agile<T>` yerel, standart bir C++ `agile.h`sınıfıdır ve . Çevik olmayan nesneyi ve Çevik nesnenin *bağlamını*temsil eder. Bağlam, çevik bir nesnenin iş parçacığı modelini ve mareşaldavranışını belirtir. İşletim sistemi, bir nesneyi nasıl keşe edineceklerini belirlemek için bağlamı kullanır.
 
 ### <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Agile::Agile](#ctor)|Çevik sınıfının yeni bir örneğini başlatır.|
-|[Çevik:: ~ Çevik yok Edicisi](#dtor)|Çevik sınıfının geçerli örneğini yok eder.|
+|[Çevik::Çevik](#ctor)|Çevik sınıfın yeni bir örneğini başolarak karşılar.|
+|[Çevik::~Çevik Yıkıcı](#dtor)|Çevik sınıfın geçerli örneğini yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Agile::get](#get)|Geçerli Çevik nesne tarafından temsil edilen nesne için bir tanıtıcı döndürür.|
-|[Agile::GetAddressOf](#getaddressof)|Geçerli Çevik nesne yeniden başlatır ve ardından bir nesne türü için bir tanıtıcı adresini döndürür `T`.|
-|[Agile::GetAddressOfForInOut](#getaddressofforinout)|Geçerli Çevik nesne tarafından temsil edilen nesne için bir tanıtıcı adresini döndürür.|
-|[Agile::Release](#release)|Geçerli Çevik nesnenin nesnesini ve içerik atar.|
+|[Çevik::Get](#get)|Geçerli Çevik nesne tarafından temsil edilen nesneye bir tanıtıcı döndürür.|
+|[Çevik::GetAddressOf](#getaddressof)|Geçerli Çevik nesneyi yeniden başharfe döndürür ve bir tanıtıcının adresini türdeki `T`bir nesneye döndürür.|
+|[Çevik::GetAddressOfForInOut](#getaddressofforinout)|Bir tanıtıcının adresini geçerli Çevik nesne tarafından temsil edilen nesneye döndürür.|
+|[Çevik::Yayın](#release)|Geçerli Çevik nesnenin alttaki nesnesini ve bağlamını atar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Agile::operator ->](#operator-arrow)|Geçerli Çevik nesne tarafından temsil edilen nesne için tanıtıcı alır.|
-|[Agile::operator=](#operator-assign)|Belirtilen değer geçerli Çevik nesnesine atar.|
+|[Çevik::operatör->](#operator-arrow)|Geçerli Çevik nesne tarafından temsil edilen nesneye bir tanıtıcı alır.|
+|[Çevik::operator=](#operator-assign)|Geçerli Çevik nesneye belirtilen değeri atar.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -74,17 +74,17 @@ Windows çalışma zamanı sınıflar Çevik çoğu. Çevik bir nesne çağırab
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Minimum desteklenen istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Minimum desteklenen sunucu:** Windows Server 2012
 
-**Namespace:** Platform
+**Ad alanı:** Platform
 
-**Başlık:** agile.h
+**Üstbilgi:** çevik.h
 
-## <a name="ctor"></a>  Agile::Agile Oluşturucusu
+## <a name="agileagile-constructor"></a><a name="ctor"></a>Çevik::Çevik Yapıcı
 
-Çevik sınıfının yeni bir örneğini başlatır.
+Çevik sınıfın yeni bir örneğini başolarak karşılar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -98,18 +98,18 @@ Agile(Agile<T>&& object);
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Typename şablon parametresi tarafından belirtilen bir tür.
+Şablon türü parametresi tarafından belirtilen bir tür.
 
-*object*<br/>
-Bu oluşturucu, yeni bir Çevik örneği başlatmak için kullanılan nesneyi ikinci sürümü. Üçüncü sürümü, yeni Çevik örneğine kopyalanan nesne. Dördüncü sürümü, yeni Çevik örneğine taşındığında nesne.
+*Nesne*<br/>
+Bu oluşturucunun ikinci sürümünde, yeni bir Çevik örneğini başlatmak için kullanılan bir nesne. Üçüncü sürümde, yeni Çevik örneğe kopyalanan nesne. Dördüncü sürümde, yeni Çevik örneğe taşınan nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu oluşturucu ilk sürümü varsayılan oluşturucudur. Dosyanın ikinci sürümü yeni Çevik örneği sınıfı tarafından belirtilen bir nesneden başlatır `object` parametresi. Kopya Oluşturucu üçüncü sürümüdür. Taşıma Oluşturucu dördüncü sürümüdür. Bu oluşturucu, özel durumlar olamaz.
+Bu oluşturucunun ilk sürümü varsayılan oluşturucudur. İkinci sürüm, parametre tarafından belirtilen nesneden yeni `object` Çevik örnek sınıfını başharfe ait hale eleştirir. Üçüncü sürüm kopya oluşturucudur. Dördüncü sürüm hareket oluşturucudur. Bu oluşturucu özel durumlar atamaz.
 
-## <a name="dtor"></a>  Çevik:: ~ Çevik yok Edicisi
+## <a name="agileagile-destructor"></a><a name="dtor"></a>Çevik::~Çevik Yıkıcı
 
-Çevik sınıfının geçerli örneğini yok eder.
+Çevik sınıfın geçerli örneğini yok eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -119,11 +119,11 @@ Bu oluşturucu ilk sürümü varsayılan oluşturucudur. Dosyanın ikinci sürü
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yok Edicisi de geçerli Çevik nesne tarafından temsil edilen nesnenin serbest bırakır.
+Bu yıkıcı, geçerli Çevik nesne tarafından temsil edilen nesneyi de serbest bırakır.
 
-## <a name="get"></a>   Agile::GET yöntemi
+## <a name="agileget-method"></a><a name="get"></a>Çevik::Get Metodu
 
-Geçerli Çevik nesne tarafından temsil edilen nesne için bir tanıtıcı döndürür.
+Geçerli Çevik nesne tarafından temsil edilen nesneye bir tanıtıcı döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -133,13 +133,13 @@ T^ Get() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli Çevik nesne tarafından temsil edilen nesne için bir tanıtıcı.
+Geçerli Çevik nesne tarafından temsil edilen nesneye bir tutamaç.
 
-Dönüş değeri gerçekten belirlenmemiş bir iç türü türüdür. Dönüş değerini tutmak için kullanışlı bir yol ile bildirilen bir değişken atamak için olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin: `auto x = myAgileTvariable->Get();`
+İade değerinin türü aslında açıklanmayan bir iç türüdür. İade değerini tutmanın kullanışlı bir yolu, onu **otomatik** tür kesintisi anahtar sözcüğüyle birlikte bildirilen bir değişkene atamaktır. Örneğin, `auto x = myAgileTvariable->Get();`.
 
-## <a name="getaddressof"></a>  Agile::GetAddressOf yöntemi
+## <a name="agilegetaddressof-method"></a><a name="getaddressof"></a>Çevik::GetAddressOf Yöntemi
 
-Geçerli Çevik nesne yeniden başlatır ve ardından bir nesne türü için bir tanıtıcı adresini döndürür `T`.
+Geçerli Çevik nesneyi yeniden başharfe döndürür ve bir tanıtıcının adresini türdeki `T`bir nesneye döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -150,19 +150,19 @@ T^* GetAddressOf() throw();
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Typename şablon parametresi tarafından belirtilen bir tür.
+Şablon türü parametresi tarafından belirtilen bir tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türünde bir nesne için tanıtıcı adresini `T`.
+Bir tanıtıcının türündeki `T`bir nesneye adresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlem geçerli türü bir nesne temsili sürümleri `T`varsa; Çevik nesnenin veri üyeleri yeniden başlatır; geçerli iş parçacığı bağlamı; edinir ve ardından temsil edebilen bir tanıtıcı nesnesi değişkenin adresini döndürür bir Çevik olmayan nesne. Neden Çevik sınıfı örneğini temsil eden bir nesne için atama işlecini kullanın ([Agile::operator =](#operator-assign)) nesne Çevik sınıf örneğine atamak için.
+Bu işlem, varsa, türündeki `T`bir nesnenin geçerli temsilini salar; Çevik nesnenin veri üyelerini yeniden başharfe çeker; geçerli iş parçacığı bağlamını edinir; ve sonra çevik olmayan bir nesneyi temsil eden bir iştiş-nesne değişkeninin adresini döndürür. Bir Çevik sınıf örneğinin bir nesneyi temsil etmesini sağlamak için, nesneyi Çevik sınıf örneğine atamak için atama işleci[(Çevik::işleç=)](#operator-assign)kullanın.
 
-## <a name="getaddressofforinout"></a>  Agile::GetAddressOfForInOut yöntemi
+## <a name="agilegetaddressofforinout-method"></a><a name="getaddressofforinout"></a>Çevik::GetAddressOfForInOut Yöntemi
 
-Geçerli Çevik nesne tarafından temsil edilen nesne için bir tanıtıcı adresini döndürür.
+Bir tanıtıcının adresini geçerli Çevik nesne tarafından temsil edilen nesneye döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -173,19 +173,19 @@ T^* GetAddressOfForInOut()  throw();
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Typename şablon parametresi tarafından belirtilen bir tür.
+Şablon türü parametresi tarafından belirtilen bir tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli Çevik nesne tarafından temsil edilen nesne için tanıtıcı adresi.
+Geçerli Çevik nesne tarafından temsil edilen nesneye bir tanıtıcı adresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlem, geçerli iş parçacığı bağlamı alır ve temel alınan nesnenin bir tanıtıcı adresini döndürür.
+Bu işlem geçerli iş parçacığı bağlamını kazanır ve sonra bir tanıtıcının adresini alttaki nesneye döndürür.
 
-## <a name="release"></a>  Agile::Release yöntemi
+## <a name="agilerelease-method"></a><a name="release"></a>Çevik::Yayın Yöntemi
 
-Geçerli Çevik nesnenin nesnesini ve içerik atar.
+Geçerli Çevik nesnenin alttaki nesnesini ve bağlamını atar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -195,11 +195,11 @@ void Release() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli Çevik nesnenin nesnesini ve içerik, olduklarından ve Çevik bir nesnenin değerini ardından ayarlanırsa atılır null.
+Geçerli Çevik nesnenin temel nesnesi ve bağlamı varsa atılır ve çevik nesnenin değeri null olarak ayarlanır.
 
-## <a name="operator-arrow"></a>  Agile::operator -&gt; işleci
+## <a name="agileoperator-gt-operator"></a><a name="operator-arrow"></a>Çevik:::operatör-&gt; Operatör
 
-Geçerli Çevik nesne tarafından temsil edilen nesne için tanıtıcı alır.
+Geçerli Çevik nesne tarafından temsil edilen nesneye bir tanıtıcı alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -209,13 +209,13 @@ T^ operator->() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli Çevik nesne tarafından temsil edilen nesne için bir tanıtıcı.
+Geçerli Çevik nesne tarafından temsil edilen nesneye bir tutamaç.
 
-Bu işleç, aslında belirlenmemiş bir iç türü döndürür. Dönüş değerini tutmak için kullanışlı bir yol ile bildirilen bir değişken atamak için olan **otomatik** kesinti anahtar sözcüğü yazın.
+Bu işleç aslında açıklanmayan bir iç türü döndürür. İade değerini tutmanın kullanışlı bir yolu, onu **otomatik** tür kesintisi anahtar sözcüğüyle birlikte bildirilen bir değişkene atamaktır.
 
-## <a name="operator-assign"></a>  Agile::operator = işleci
+## <a name="agileoperator-operator"></a><a name="operator-assign"></a>Çevik:::operator= Operatör
 
-Belirtilen nesnenin geçerli Çevik nesnesine atar.
+Belirtilen nesneyi geçerli Çevik nesneye atar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -229,24 +229,24 @@ T^ operator=( IUnknown* lp ) throw();
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Şablon typename tarafından belirtilen tür.
+Şablon türü tarafından belirtilen tür.
 
-*object*<br/>
-Nesne veya kopyaladığınız veya geçerli Çevik nesneye taşınan bir nesne için tanıtıcı.
+*Nesne*<br/>
+Nesne veya tutamacı, kopyalanan veya geçerli Çevik nesneye taşınan bir nesneye taşınır.
 
-*LP*<br/>
-Bir nesnenin IUnknown arabirim işaretçisi.
+*Lp*<br/>
+Bir nesnenin Bilinmeyen arabirim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türünde bir nesne için tanıtıcı `T`
+Türdeki bir nesneye bir tutamaç`T`
 
 ### <a name="remarks"></a>Açıklamalar
 
-Atama işleci ilk sürümü geçerli Çevik nesnesine bir başvuru türü bir tanıtıcı kopyalar. Bir Çevik bir başvuru türü için geçerli Çevik nesnesi ikinci sürüm kopyalar. Bir Çevik yazın üçüncü sürüm taşır geçerli Çevik nesne. Dördüncü sürümü bir COM nesnesi geçerli Çevik nesneye bir işaretçi taşır.
+Atama işlecinin ilk sürümü, geçerli Çevik nesneye bir başvuru türüne bir tanıtıcı kopyalar. İkinci sürüm, geçerli Çevik nesneye bir Çevik türüne yapılan başvuruyu kopyalar. Üçüncü sürüm, çevik bir türü geçerli Çevik nesneye taşır. Dördüncü sürüm, bir işaretçiyi geçerli Çevik nesneye com nesnesine taşır.
 
-Atama işlemi, geçerli Çevik nesne bağlamı otomatik olarak devam ettirir.
+Atama işlemi, geçerli Çevik nesnenin bağlamını otomatik olarak devam ettirmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)
+[Platform İsim Alanı](platform-namespace-c-cx.md)

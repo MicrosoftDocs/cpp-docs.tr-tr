@@ -1,5 +1,5 @@
 ---
-title: CMFCToolBarImages sınıfı
+title: CMFCToolBarImages Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCToolBarImages
@@ -140,17 +140,18 @@ helpviewer_keywords:
 - CMFCToolBarImages [MFC], PreMultiplyAlpha
 - CMFCToolBarImages [MFC], m_bDisableTrueColorAlpha
 ms.assetid: d4e50518-9ffc-406f-9996-f79e5cd38155
-ms.openlocfilehash: 210432b8ec193efccc0bf2338089dbccca310726
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 90a12badc90bfcb74e873180b5f887e37cd47fd5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420234"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81376201"
 ---
-# <a name="cmfctoolbarimages-class"></a>CMFCToolBarImages sınıfı
+# <a name="cmfctoolbarimages-class"></a>CMFCToolBarImages Sınıfı
 
-Bir araç çubuğundaki görüntüler. `CMFCToolBarImages` sınıfı, uygulama kaynaklarından veya dosyalardan yüklenen araç çubuğu görüntülerini yönetir.
-Daha fazla ayrıntı için, Visual Studio yüklemenizin **VC\\atlmfc\\src\\MFC** klasöründe bulunan kaynak koduna bakın.
+Araç çubuğundaki görüntüler. Sınıf, `CMFCToolBarImages` uygulama kaynaklarından veya dosyalardan yüklenen araç çubuğu görüntülerini yönetir.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```
@@ -161,113 +162,113 @@ class CMFCToolBarImages : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarImages:: CMFCToolBarImages](#cmfctoolbarimages)|`CMFCToolBarImages` nesnesi oluşturur.|
+|[CMFCToolBarImages::CMFCToolBarImages](#cmfctoolbarimages)|Bir `CMFCToolBarImages` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarImages:: AdaptColors](#adaptcolors)||
-|[CMFCToolBarImages:: AddIcon](#addicon)|Araç çubuğu görüntülerine bir simge ekler.|
-|[CMFCToolBarImages:: AddImage](#addimage)|Araç çubuğu görüntülerine bir bit eşlem ekler.|
-|[CMFCToolBarImages:: CleanUp](#cleanup)||
-|[CMFCToolBarImages:: Clear](#clear)|Bu nesneye ayrılan sistem kaynaklarını serbest bırakır.|
-|[CMFCToolBarImages:: ConvertTo32Bits](#convertto32bits)|Altı çizili bit eşlemleri 32 bpp görüntülere dönüştürür.|
-|[CMFCToolBarImages:: CopyImageToClipboard](#copyimagetoclipboard)||
-|[CMFCToolBarImages:: CopyTo](#copyto)||
-|[CMFCToolBarImages:: Createfromımagelist](#createfromimagelist)|Araç çubuğu görüntülerini bir görüntü listesinden ( [CImageList sınıfı](../../mfc/reference/cimagelist-class.md)) başlatır.|
-|[CMFCToolBarImages:: Createregionfromımage](#createregionfromimage)||
-|[CMFCToolBarImages::D Eleteımage](#deleteimage)|Bu araç çubuğu görüntülerinin Kullanıcı tanımlı görüntüler içermesi durumunda, belirtilen dizine sahip olan görüntüyü araç çubuğu görüntülerinden siler.|
-|[CMFCToolBarImages::D RAW](#draw)|Tek bir araç çubuğu görüntüsü çizer (düğme).|
-|[CMFCToolBarImages::D rawEx](#drawex)||
-|[CMFCToolBarImages:: EnableRTL](#enablertl)||
-|[CMFCToolBarImages:: EndDrawImage](#enddrawimage)|Bir araç çubuğu görüntüsü çizildikten sonra sistem kaynaklarını serbest bırakır.|
-|[CMFCToolBarImages:: ExtractIcon](#extracticon)|Araç çubuğu görüntülerinden belirtilen bir görüntü dizinine sahip simgeyi döndürür.|
-|[CMFCToolBarImages:: FillDitheredRect](#fillditheredrect)|Araç çubuğu arka plan rengine sahip bir fırça kullanarak bir dikdörtgeni doldurur.|
-|[CMFCToolBarImages:: Getalwayhafif](#getalwayslight)||
-|[CMFCToolBarImages:: GetBitsPerPixel](#getbitsperpixel)|Altı çizili görüntülerin geçerli çözünürlüğünü döndürür.|
-|[CMFCToolBarImages:: GetCount](#getcount)|Araç çubuğundaki görüntü sayısını döndürür.|
-|[CMFCToolBarImages:: Getdisabledımagealpha](#getdisabledimagealpha)|Devre dışı bırakılmış görüntüler için kullanılan alfa kanal değerini döndürür.|
-|[CMFCToolBarImages:: GetFadedImageAlpha](#getfadedimagealpha)||
-|[CMFCToolBarImages:: Getıgesize](#getimagesize)|Bellekte depolanan araç çubuğu görüntülerinin boyutunu (kaynak boyutu) veya ekranda çizilen araç çubuğu görüntülerinin boyutunu (hedef boyutu) alır.|
-|[CMFCToolBarImages:: Getımagewell](#getimagewell)|Tüm araç çubuğu görüntülerini içeren bit eşlem tanıtıcısını döndürür.|
-|[CMFCToolBarImages:: Getıgewelllight](#getimagewelllight)||
-|[CMFCToolBarImages:: GetLastImageRect](#getlastimagerect)||
-|[CMFCToolBarImages:: GetLightPercentage](#getlightpercentage)||
-|[CMFCToolBarImages:: GetMapTo3DColors](#getmapto3dcolors)||
-|[CMFCToolBarImages:: GetMask](#getmask)||
-|[CMFCToolBarImages:: Getresourcekayması](#getresourceoffset)|Belirtilen kaynak KIMLIĞI için görüntü dizinini döndürür.|
-|[CMFCToolBarImages:: GetScale](#getscale)|Altı çizili görüntülerin geçerli ölçek oranını döndürür.|
-|[CMFCToolBarImages:: GetTransparentColor](#gettransparentcolor)||
-|[CMFCToolBarImages:: gri görüntüler](#grayimages)|Araç çubuğu görüntülerinin devre dışı görünmesini sağlamak için bu görüntüleri gri görüntüler.|
-|[CMFCToolBarImages:: Is32BitTransparencySupported](#is32bittransparencysupported)|İşletim sisteminin 32 bit alfa karıştırmasını destekleyip desteklemediğini belirler.|
-|[CMFCToolBarImages:: ıspremultiplyautocheck](#ispremultiplyautocheck)||
-|[CMFCToolBarImages:: ısrtl](#isrtl)|Sağdan sola (RTL) desteğin etkinleştirilip etkinleştirilmediğini belirler.|
-|[CMFCToolBarImages:: IsReadOnly](#isreadonly)|Araç çubuğu görüntülerinin salt okunurdur olup olmadığını belirler.|
-|[CMFCToolBarImages:: ısölçeklendirilmiş](#isscaled)|Altı çizili görüntülerin ölçeklendirilmesine veya ölçeklendirilmediğini söyler.|
-|[CMFCToolBarImages:: Isuserımabir listesi](#isuserimageslist)|Bu araç çubuğu görüntülerinin Kullanıcı tanımlı görüntüler içerip içermediğini belirler.|
-|[CMFCToolBarImages:: IsValid](#isvalid)|Bu araç çubuğu görüntülerinin geçerli bir araç çubuğu görüntüsü içerip içermediğini belirler.|
-|[CMFCToolBarImages:: Load](#load)|Araç çubuğu görüntülerini sistem kaynaklarından veya bir dosyadan yükler.|
-|[CMFCToolBarImages:: LoadStr](#loadstr)||
-|[CMFCToolBarImages:: Mapfromsyscrenkli](#mapfromsyscolor)||
-|[CMFCToolBarImages:: MapTo3dColors](#mapto3dcolors)||
-|[CMFCToolBarImages:: Maptosyscrenkli](#maptosyscolor)||
-|[CMFCToolBarImages:: MapToSysColorAlpha](#maptosyscoloralpha)||
-|[CMFCToolBarImages:: yansıtma](#mirror)|Araç çubuğu görüntülerinin tümünü yatay olarak yansıtır.|
-|[CMFCToolBarImages:: Mirrorbit eşlem](#mirrorbitmap)|Bit eşlemi yatay olarak yansıtır.|
-|[CMFCToolBarImages:: MirrorBitmapVert](#mirrorbitmapvert)||
-|[CMFCToolBarImages:: MirrorVert](#mirrorvert)||
-|[CMFCToolBarImages:: OnSysColorChange](#onsyscolorchange)||
-|[CMFCToolBarImages::P Reparedtıwimage](#preparedrawimage)|Belirtilen boyutta bir araç çubuğu görüntüsü çizmek için gereken kaynakları ayırır.|
-|[CMFCToolBarImages:: Save](#save)|Bu araç çubuğu görüntülerinin Kullanıcı tanımlı görüntüler içermesi durumunda araç çubuğu görüntülerini bir dosyada depolar.|
-|[CMFCToolBarImages:: Setalwayhafif](#setalwayslight)||
-|[CMFCToolBarImages:: SetDisabledImageAlpha](#setdisabledimagealpha)|Devre dışı bırakılmış görüntüler için kullanılan alfa kanal değerini ayarlar.|
-|[CMFCToolBarImages:: SetFadedImageAlpha](#setfadedimagealpha)||
-|[CMFCToolBarImages:: Setıgesize](#setimagesize)|Bir araç çubuğu görüntüsünün boyutunu (kaynak boyutu) ayarlar.|
-|[CMFCToolBarImages:: SetLightPercentage](#setlightpercentage)||
-|[CMFCToolBarImages:: SetMapTo3DColors](#setmapto3dcolors)||
-|[CMFCToolBarImages:: SetPreMultiplyAutoCheck](#setpremultiplyautocheck)||
-|[CMFCToolBarImages:: Setsingleımage](#setsingleimage)||
-|[CMFCToolBarImages:: SetTransparentColor](#settransparentcolor)|Araç çubuğu görüntülerinin saydam rengini ayarlar.|
-|[CMFCToolBarImages:: yumuşama yeniden boyutlandırma](#smoothresize)|Altı çizili görüntüleri sorunsuzca yeniden boyutlandırır.|
-|[CMFCToolBarImages:: UpdateImage](#updateimage)|Bir bit eşlemden Kullanıcı tanımlı bir araç çubuğu görüntüsünü güncelleştirir.|
+|[CMFCToolBarImages::Uyarlama Renkleri](#adaptcolors)||
+|[CMFCToolBarImages::Addicon](#addicon)|Araç çubuğu görüntülerine bir simge ekler.|
+|[CMFCToolBarImages::AddImage](#addimage)|Araç çubuğu görüntülerine bir bit eşlemi ekler.|
+|[CMFCToolBarImages::Temizleme](#cleanup)||
+|[CMFCToolBarImages::Clear](#clear)|Bu nesneye ayrılan sistem kaynaklarını serbest sağlar.|
+|[CMFCToolBarImages::ConvertTo32Bits](#convertto32bits)|Altı çizili bit eşlemlerini 32 bpp görüntüye dönüştürür.|
+|[CMFCToolBarImages::CopyImageToClipboard](#copyimagetoclipboard)||
+|[CMFCToolBarImages::CopyTo](#copyto)||
+|[CMFCToolBarImages::CreateFromImageList](#createfromimagelist)|Araç çubuğu görüntülerini görüntü listesinden [(CImageList Class)](../../mfc/reference/cimagelist-class.md)başharfe adaytır.|
+|[CMFCToolBarImages::CreateRegionFromImage](#createregionfromimage)||
+|[CMFCToolBarImages::DeleteImage](#deleteimage)|Bu araç çubuğu görüntüleri kümesi kullanıcı tanımlı görüntüler içeriyorsa, araç çubuğu görüntülerinden belirtilen dizin içeren görüntüyü siler.|
+|[CMFCToolBarImages::Draw](#draw)|Tek bir araç çubuğu görüntüsü (düğme) çizer.|
+|[CMFCToolBarImages::DrawEx](#drawex)||
+|[CMFCToolBarImages::EnableRTL](#enablertl)||
+|[CMFCToolBarImages::EndDrawImage](#enddrawimage)|Araç çubuğu görüntüsü çizildikten sonra sistem kaynaklarını boşaltıyor.|
+|[CMFCToolBarImages::ExtractIcon](#extracticon)|Araç çubuğu görüntülerinden belirtilen görüntü dizinine sahip simgeyi döndürür.|
+|[CMFCToolBarImages::FillDitheredRect](#fillditheredrect)|Araç çubuğu arka plan renklerine sahip bir fırça kullanarak dikdörtgeni doldurur.|
+|[CMFCToolBarImages::GetAlwaysLight](#getalwayslight)||
+|[CMFCToolBarImages::GetBitsPerPixel](#getbitsperpixel)|Altı çizili görüntülerin geçerli çözünürlüğünü verir.|
+|[CMFCToolBarImages::GetCount](#getcount)|Araç çubuğundaki görüntü sayısını verir.|
+|[CMFCToolBarImages::GetDisabledImageAlpha](#getdisabledimagealpha)|Devre dışı bırakılmış görüntüler için kullanılan alfa kanal değerini verir.|
+|[CMFCToolBarImages::GetFadedImageAlpha](#getfadedimagealpha)||
+|[CMFCToolBarImages::GetImageSize](#getimagesize)|Bellekte depolanan araç çubuğu görüntülerinin boyutunu (kaynak boyutu) veya ekranda çizilen araç çubuğu görüntülerinin boyutunu (hedef boyutu) alır.|
+|[CMFCToolBarImages::GetImageWell](#getimagewell)|Tanıtıcıyı tüm araç çubuğu görüntülerini içeren bit eşlenere döndürür.|
+|[CMFCToolBarImages::GetImageWellLight](#getimagewelllight)||
+|[CMFCToolBarImages::GetLastImageRect](#getlastimagerect)||
+|[CMFCToolBarImages::GetLightPercentage](#getlightpercentage)||
+|[CMFCToolBarImages::GetMapto3DColors](#getmapto3dcolors)||
+|[CMFCToolBarImages::GetMask](#getmask)||
+|[CMFCToolBarImages::GetResourceOffset](#getresourceoffset)|Belirtilen kaynak kimliği için görüntü dizini döndürür.|
+|[CMFCToolBarImages::GetScale](#getscale)|Altı çizili görüntülerin geçerli ölçek oranını verir.|
+|[CMFCToolBarImages::GetTransparentColor](#gettransparentcolor)||
+|[CMFCToolBarImages::GrayImages](#grayimages)|Devre dışı görünmelerini sağlamak için araç çubuğu görüntülerini griye ler.|
+|[CMFCToolBarImages::Is32BitTransparencyDesteklenen](#is32bittransparencysupported)|İşletim sisteminin 32 bit alfa karıştırmayı destekleyip desteklemediğini belirler.|
+|[CMFCToolBarImages::IspreMultiplyAutoCheck](#ispremultiplyautocheck)||
+|[CMFCToolBarImages::IsRTL](#isrtl)|Sağdan sola (RTL) desteğin etkin olup olmadığını belirler.|
+|[CMFCToolBarImages::IsreadOnly](#isreadonly)|Araç çubuğu görüntülerinin salt okunur olup olmadığını belirler.|
+|[CMFCToolBarImages::IsScaled](#isscaled)|Altı çizili görüntülerin ölçeklenip ölçeklenmediğini söyler.|
+|[CMFCToolBarImages::IsuserImagesList](#isuserimageslist)|Bu araç çubuğu görüntüleri kümesinin kullanıcı tanımlı görüntüler içerip içersiz leştirme|
+|[CMFCToolBarImages::IsValid](#isvalid)|Bu araç çubuğu görüntü kümesinin geçerli bir araç çubuğu görüntüsü bulunup içermediğini belirler.|
+|[CMFCToolBarImages::Yük](#load)|Araç çubuğu görüntülerini sistem kaynaklarından veya bir dosyadan yükler.|
+|[CMFCToolBarImages::loadstr](#loadstr)||
+|[CMFCToolBarImages::MapFromSysColor](#mapfromsyscolor)||
+|[CMFCToolBarImages::MapTo3dColors](#mapto3dcolors)||
+|[CMFCToolBarImages::MapToSysColor](#maptosyscolor)||
+|[CMFCToolBarImages::MapToSysColorAlpha](#maptosyscoloralpha)||
+|[CMFCToolBarImages::Ayna](#mirror)|Tüm araç çubuğu görüntülerini yatay olarak aynalar.|
+|[CMFCToolBarImages::MirrorBitmap](#mirrorbitmap)|Yatay bir bit eşlemi aynalar.|
+|[CMFCToolBarImages::MirrorBitmapVert](#mirrorbitmapvert)||
+|[CMFCToolBarImages::MirrorVert](#mirrorvert)||
+|[CMFCToolBarImages::OnSysColorChange](#onsyscolorchange)||
+|[CMFCToolBarImages::PrepareDrawImage](#preparedrawimage)|Araç çubuğu görüntüsünü belirli bir boyutta çizmek için gereken kaynakları ayırır.|
+|[CMFCToolBarImages::Kaydet](#save)|Bu araç çubuğu görüntüleri kümesi kullanıcı tanımlı görüntüler içeriyorsa, araç çubuğu görüntülerini bir dosyada depolar.|
+|[CMFCToolBarImages::SetAlwaysLight](#setalwayslight)||
+|[CMFCToolBarImages::SetdisabledImageAlpha](#setdisabledimagealpha)|Devre dışı bırakılmış görüntüler için kullanılan alfa kanal değerini ayarlar.|
+|[CMFCToolBarImages::SetFadedImageAlpha](#setfadedimagealpha)||
+|[CMFCToolBarImages::SetImageSize](#setimagesize)|Araç çubuğu görüntüsünün boyutunu (kaynak boyutu) ayarlar.|
+|[CMFCToolBarImages::SetLightPercentage](#setlightpercentage)||
+|[CMFCToolBarImages::SetMapTo3DColors](#setmapto3dcolors)||
+|[CMFCToolBarImages::SetPreMultiplyAutoCheck](#setpremultiplyautocheck)||
+|[CMFCToolBarImages::SetSingleImage](#setsingleimage)||
+|[CMFCToolBarImages::SetTransparentColor](#settransparentcolor)|Araç çubuğu görüntülerinin saydam rengini ayarlar.|
+|[CMFCToolBarImages::SmoothResize](#smoothresize)|Altı çizili görüntüleri sorunsuz bir şekilde yeniden boyutlandırıyor.|
+|[CMFCToolBarImages::UpdateImage](#updateimage)|Kullanıcı tanımlı araç çubuğu görüntüsünü bir bit eşlemden güncelleştirir.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarImages::P Reçoğullyalpha](#premultiplyalpha)||
+|[CMFCToolBarImages::PreMultiplyAlpha](#premultiplyalpha)||
 
-### <a name="data-members"></a>Veri üyeleri
+### <a name="data-members"></a>Veri Üyeleri
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarImages:: m_bDisableTrueColorAlpha](#m_bdisabletruecoloralpha)|TrueColor Alfa karıştırma (32-bit renk) devre dışıysa TRUE.|
+|[CMFCToolBarImages::m_bDisableTrueColorAlpha](#m_bdisabletruecoloralpha)|Truecolor alfa karıştırma (32 bit renk) devre dışı bırakılırsa TRUE.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMFCToolbarImages` tarafından yönetilen araç çubuğu görüntülerinin tam bit eşlemi, sabit boyutun bir veya daha fazla küçük araç çubuğu görüntülerinden (düğmelerinden) oluşur.
+Araç çubuğu görüntülerinin tam bit `CMFCToolbarImages` eşlemi, sabit boyuttaki bir veya daha fazla küçük araç çubuğu görüntüsünden (düğme) oluşur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCToolBarImages` sınıfında çeşitli yöntemler kullanarak bir `CMFCToolBarImages` nesnesinin nasıl yapılandırılacağını gösterir. Örnek, araç çubuğu görüntüsünün boyutunun nasıl ayarlanacağını, bir görüntünün nasıl yükleneceğini ve görüntünün saydam rengini nasıl ayarlanacağını gösterir. Bu kod parçacığı, [Visual Studio Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, `CMFCToolBarImages` `CMFCToolBarImages` sınıfta çeşitli yöntemler kullanarak bir nesneyi nasıl yapılandırışlagösteriyi gösterir. Örnek, araç çubuğu görüntüsünün boyutunu nasıl ayarlayabildiğini, görüntüyü nasıl yükleyip görüntünün saydam rengini ayarlayabilirsiniz. Bu kod snippet [Visual Studio Demo örnek](../../overview/visual-cpp-samples.md)parçasıdır.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#32](../../mfc/codesnippet/cpp/cmfctoolbarimages-class_1.h)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#33](../../mfc/codesnippet/cpp/cmfctoolbarimages-class_2.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 `CMFCToolBarImages`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxtoolbarımages. h
+**Üstbilgi:** afxtoolbarimages.h
 
-##  <a name="adaptcolors"></a>CMFCToolBarImages:: AdaptColors
+## <a name="cmfctoolbarimagesadaptcolors"></a><a name="adaptcolors"></a>CMFCToolBarImages::Uyarlama Renkleri
 
 ```
 void AdaptColors(
@@ -277,12 +278,12 @@ void AdaptColors(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *Clrbase*<br/>
-'ndaki *Clrtone*<br/>
+[içinde] *clrBase*<br/>
+[içinde] *clrTone*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addicon"></a>CMFCToolBarImages:: AddIcon
+## <a name="cmfctoolbarimagesaddicon"></a><a name="addicon"></a>CMFCToolBarImages::Addicon
 
 Araç çubuğu görüntüleri listesine bir simge ekler.
 
@@ -294,19 +295,19 @@ int AddIcon(
 
 ### <a name="parameters"></a>Parametreler
 
-*HICON*<br/>
-'ndaki Eklenecek simgeye yönelik bir tanıtıcı.
+*Hıcon*<br/>
+[içinde] Eklenecek simgeye bir tutamaç.
 
 *bAlphaBlend*<br/>
-'ndaki Bu simge Alfa karıştırma ile kullanılırsa TRUE; Aksi halde yanlış.
+[içinde] Bu simge alfa karıştırma ile kullanılırsa TRUE; aksi takdirde YANLIŞ.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa eklenen araç çubuğu görüntüsünün sıfır tabanlı dizini; Aksi takdirde-1.
+Yöntem başarılı olursa eklenen araç çubuğu görüntüsünün sıfır tabanlı dizini; aksi takdirde -1.
 
-##  <a name="addimage"></a>CMFCToolBarImages:: AddImage
+## <a name="cmfctoolbarimagesaddimage"></a><a name="addimage"></a>CMFCToolBarImages::AddImage
 
-Araç çubuğu görüntülerine bir bit eşlem ekler.
+Araç çubuğu görüntülerine bir bit eşlemi ekler.
 
 ```
 int AddImage(
@@ -321,22 +322,22 @@ int AddImage(
 ### <a name="parameters"></a>Parametreler
 
 *hbmp*<br/>
-'ndaki Eklenecek bit eşlemin tutamacı.
+[içinde] Eklenecek bit eşleninin tutamacı.
 
 *bSetBitPerPixel*<br/>
-'ndaki `CMFCToolBarImages` nesnesi yeni görüntünün renk derinliğini (piksel başına bit) kullanıyorsa TRUE; `CMFCToolbarImages` nesnesi geçerli renk derinliğini sakalıyorsa FALSE.
+[içinde] `CMFCToolBarImages` Nesne yeni görüntünün renk derinliğini (piksel başına bit) kullanıyorsa TRUE; Nesne geçerli `CMFCToolbarImages` renk derinliğini tutarsa FALSE.
 
-*'ı*<br/>
-'ndaki Eklenecek görüntüyü içeren `CMFCToolbarImages` nesnesine bir başvuru.
+*ımagelist*<br/>
+[içinde] Eklenecek görüntüyü `CMFCToolbarImages` içeren bir nesneye başvuru.
 
-*nDizin*<br/>
-'ndaki Eklenecek görüntünün kaynak `CMFCToolbarImages` nesnesindeki dizin.
+*Nındex*<br/>
+[içinde] Ekleyecek görüntünün `CMFCToolbarImages` kaynak nesnesindeki dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni bit eşlem başarıyla eklendikten sonra `CMFCToolBarImages` nesnesinin tuttuğu araç çubuğu görüntülerinin sayısı; işlem başarısız olursa-1.
+Nesnenin `CMFCToolBarImages` yeni bit eşlemi başarıyla eklendikten sonra koruduğu araç çubuğu görüntülerinin sayısı; -1 işlemi başarısız oldu.
 
-##  <a name="cleanup"></a>CMFCToolBarImages:: CleanUp
+## <a name="cmfctoolbarimagescleanup"></a><a name="cleanup"></a>CMFCToolBarImages::Temizleme
 
 ```
 static void __stdcall CleanUp();
@@ -344,17 +345,17 @@ static void __stdcall CleanUp();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="clear"></a>CMFCToolBarImages:: Clear
+## <a name="cmfctoolbarimagesclear"></a><a name="clear"></a>CMFCToolBarImages::Clear
 
-[CMFCToolBarImages](../../mfc/reference/cmfctoolbarimages-class.md) nesnesinin ayırdığı sistem kaynaklarını serbest bırakır.
+[CMFCToolbarImages](../../mfc/reference/cmfctoolbarimages-class.md) nesnesinin ayırdığı sistem kaynaklarını boşaltTır.
 
 ```
 void Clear();
 ```
 
-##  <a name="cmfctoolbarimages"></a>CMFCToolBarImages:: CMFCToolBarImages
+## <a name="cmfctoolbarimagescmfctoolbarimages"></a><a name="cmfctoolbarimages"></a>CMFCToolBarImages::CMFCToolBarImages
 
-`CMFCToolBarImages` nesnesi oluşturur.
+Bir `CMFCToolBarImages` nesne inşa eder.
 
 ```
 CMFCToolBarImages();
@@ -362,9 +363,9 @@ CMFCToolBarImages();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMFCToolBarImages` nesnesi oluşturur, kendi işleme altyapısını başlatır ve görüntü boyutunu varsayılan 16x15 piksel değerine ayarlar. Görüntü eklemeden önce resim boyutunu değiştirmek için [CMFCToolBarImages:: Setıgesize](#setimagesize) kullanın.
+Bir `CMFCToolBarImages` nesne oluşturur, işoluşturma altyapısını çalıştırır ve görüntü boyutunu varsayılan değeri 16x15 piksel olarak ayarlar. Resim eklemeden önce görüntü boyutunu değiştirmek için [CMFCToolBarImages::SetImageSize'ı](#setimagesize) kullanın.
 
-##  <a name="copyimagetoclipboard"></a>CMFCToolBarImages:: CopyImageToClipboard
+## <a name="cmfctoolbarimagescopyimagetoclipboard"></a><a name="copyimagetoclipboard"></a>CMFCToolBarImages::CopyImageToClipboard
 
 ```
 BOOL CopyImageToClipboard(int iImage);
@@ -372,13 +373,13 @@ BOOL CopyImageToClipboard(int iImage);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *IImage*<br/>
+[içinde] *iImage*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="copyto"></a>CMFCToolBarImages:: CopyTo
+## <a name="cmfctoolbarimagescopyto"></a><a name="copyto"></a>CMFCToolBarImages::CopyTo
 
 ```
 BOOL CopyTo(CMFCToolBarImages& imageList);
@@ -386,15 +387,15 @@ BOOL CopyTo(CMFCToolBarImages& imageList);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *ImageList*<br/>
+[içinde] *imageList*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="createfromimagelist"></a>CMFCToolBarImages:: Createfromımagelist
+## <a name="cmfctoolbarimagescreatefromimagelist"></a><a name="createfromimagelist"></a>CMFCToolBarImages::CreateFromImageList
 
-Bir [CImageList sınıf](../../mfc/reference/cimagelist-class.md) nesnesinden araç çubuğu görüntülerini başlatır.
+[CImageList Class](../../mfc/reference/cimagelist-class.md) nesnesinden araç çubuğu görüntülerini başolarak karşılar.
 
 ```
 BOOL CreateFromImageList(const CImageList& imageList);
@@ -402,8 +403,8 @@ BOOL CreateFromImageList(const CImageList& imageList);
 
 ### <a name="parameters"></a>Parametreler
 
-*'ı*<br/>
-'ndaki Araç çubuğu görüntülerinin kaynağı olarak kullanılacak görüntü listesi.
+*ımagelist*<br/>
+[içinde] Araç çubuğu görüntüleri için kaynak olarak kullanılacak resim listesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -411,9 +412,9 @@ Her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç çubuğu görüntülerinin listesini bir dış görüntü listesinden hızlıca başlatmak için bu işlevi kullanın.
+Araç çubuğu görüntüleri listesini harici bir resim listesinden hızla çıkarmak için bu işlevi kullanın.
 
-##  <a name="createregionfromimage"></a>CMFCToolBarImages:: Createregionfromımage
+## <a name="cmfctoolbarimagescreateregionfromimage"></a><a name="createregionfromimage"></a>CMFCToolBarImages::CreateRegionFromImage
 
 ```
 static HRGN __stdcall CreateRegionFromImage(
@@ -423,16 +424,16 @@ static HRGN __stdcall CreateRegionFromImage(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *BMP*<br/>
-'ndaki *clrTransparent*<br/>
+[içinde] *bmp*<br/>
+[içinde] *clrŞeffaf*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="deleteimage"></a>CMFCToolBarImages::D Eleteımage
+## <a name="cmfctoolbarimagesdeleteimage"></a><a name="deleteimage"></a>CMFCToolBarImages::DeleteImage
 
-Araç çubuğu görüntülerinden belirtilen dizine sahip olan Kullanıcı tanımlı görüntüyü siler.
+Araç çubuğu görüntülerinden belirtilen dizin içeren kullanıcı tanımlı görüntüyü siler.
 
 ```
 BOOL DeleteImage(int iImage);
@@ -440,14 +441,14 @@ BOOL DeleteImage(int iImage);
 
 ### <a name="parameters"></a>Parametreler
 
-*IImage*<br/>
-'ndaki Silinecek görüntünün sıfır tabanlı dizinini belirtir.
+*ıımage*<br/>
+[içinde] Silmek için görüntünün sıfır tabanlı dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görüntü başarıyla silinmişse doğru; Görüntü dizini geçersiz ise, `CMFCToolbarImages` nesnesi geçicidir, `CMFCToolbarImages` nesne Kullanıcı tanımlı görüntüleri içermez ya da başka bir hata oluştuysa.
+Görüntü başarıyla silinmişse DOĞRU; Görüntü dizini geçersizse, `CMFCToolbarImages` nesne geçiciyse, `CMFCToolbarImages` nesne kullanıcı tanımlı görüntüler içermiyorsa veya başka bir hata oluştuysa FALSE.
 
-##  <a name="draw"></a>CMFCToolBarImages::D RAW
+## <a name="cmfctoolbarimagesdraw"></a><a name="draw"></a>CMFCToolBarImages::Draw
 
 Tek bir araç çubuğu görüntüsü çizer.
 
@@ -467,41 +468,41 @@ BOOL Draw(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamına yönelik bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
-*sayı*<br/>
-'ndaki Resmin çizilmek üzere olduğu dikdörtgenin sol tarafının X koordinatı.
+*X*<br/>
+[içinde] Görüntünün çizilecek olduğu dikdörtgenin sol tarafının X koordinatı.
 
-*Iz*<br/>
-'ndaki Resmin çizilmek üzere olduğu dikdörtgenin üst öğesinin Y koordinatı.
+*Y*<br/>
+[içinde] Görüntünün çizilecek olduğu dikdörtgenin üst kısmındaki Y koordinatı.
 
-*ıımageındex*<br/>
-'ndaki Görüntülenecek görüntünün sıfır tabanlı dizini.
+*iImageIndex*<br/>
+[içinde] Görüntülenecek görüntünün sıfır tabanlı dizin.
 
-*Btepite*<br/>
-'ndaki Görüntü vurgulanmanız durumunda doğru; Aksi halde yanlış.
+*bHilite*<br/>
+[içinde] Görüntü vurgulanacaksa DOĞRU; aksi takdirde YANLIŞ.
 
-*bDisabled*<br/>
-'ndaki Görüntü devre dışı stilde çizilmek ise doğru; Aksi halde yanlış.
+*bDevre dışı*<br/>
+[içinde] Görüntü devre dışı bırakılmış tarzda çizilecekse DOĞRU; aksi takdirde YANLIŞ.
 
-*Bağlanabilir*<br/>
-'ndaki Görüntü belirsiz durum stilinde çizilmek için doğru; Aksi halde yanlış.
+*bIndeterminate*<br/>
+[içinde] Doğru eğer görüntü belirsiz durum stilinde çizilecekse; aksi takdirde YANLIŞ.
 
 *bShadow*<br/>
-'ndaki Görüntü bir bırakma gölgesi ile çizilmek için doğru; Aksi halde yanlış.
+[içinde] Doğru görüntü bir damla gölge ile çizilecek ise; aksi takdirde YANLIŞ.
 
-*Binetkin*<br/>
-'ndaki Görüntü etkin olmayan durum stilinde çizilmek için doğru; Aksi halde yanlış.
+*bInactive*<br/>
+[içinde] Görüntü etkin olmayan durum stilinde çizilecekse DOĞRU; aksi takdirde YANLIŞ.
 
-*Harflerden src*<br/>
-'ndaki Alfa kanalı (opaklık) değeri. 255 değeri, resmin donuk çizildiğini gösterir. 0 değeri görüntünün saydam olarak çizileceği anlamına gelir. Bu değer yalnızca 32 bit renk görüntüleri ve Windows Vista cam stili görüntülenen görüntüler için kullanılır.
+*alphaSrc*<br/>
+[içinde] Alfa kanalı (opaklık) değeri. 255 değeri, görüntünün opak çizildiği anlamına gelir. 0 değeri, görüntünün saydam olarak çizildiği anlamına gelir. Bu değer yalnızca 32 bit renkli görüntüler ve Windows Vista cam stili görüntülenen görüntüler için kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen görüntü başarıyla görüntüleniyorsa doğru; Görüntü dizini geçersizse veya başka bir hata oluştuysa yanlış.
+Belirtilen görüntü başarıyla görüntülendiyse DOĞRU; Görüntü dizini geçersizse veya başka bir hata oluştuysa FALSE.
 
-##  <a name="drawex"></a>CMFCToolBarImages::D rawEx
+## <a name="cmfctoolbarimagesdrawex"></a><a name="drawex"></a>CMFCToolBarImages::DrawEx
 
 ```
 BOOL DrawEx(
@@ -516,19 +517,19 @@ BOOL DrawEx(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *PDC*<br/>
-'ndaki *Rect*<br/>
-'ndaki *ıımageındex*<br/>
-'ndaki *Horzalign*<br/>
-'ndaki *Vertalign*<br/>
-'ndaki *Rectsrc*<br/>
-'ndaki *harflerden src*<br/>
+[içinde] *pDC*<br/>
+[içinde] *rekt*<br/>
+[içinde] *iImageIndex*<br/>
+[içinde] *horzAlign*<br/>
+[içinde] *vertAlign*<br/>
+[içinde] *rectSrc*<br/>
+[içinde] *alphaSrc*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="enablertl"></a>CMFCToolBarImages:: EnableRTL
+## <a name="cmfctoolbarimagesenablertl"></a><a name="enablertl"></a>CMFCToolBarImages::EnableRTL
 
 ```
 static void __stdcall EnableRTL(BOOL bIsRTL = TRUE);
@@ -536,13 +537,13 @@ static void __stdcall EnableRTL(BOOL bIsRTL = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *Bisrtl*<br/>
+[içinde] *bIsRTL*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="enddrawimage"></a>CMFCToolBarImages:: EndDrawImage
+## <a name="cmfctoolbarimagesenddrawimage"></a><a name="enddrawimage"></a>CMFCToolBarImages::EndDrawImage
 
-CMFCToolBarImages: [CMFCToolBarImages::D RAW](#draw)çağırarak bir araç çubuğu görüntüsünü çizdikten sonra, [:P Reparedtıwimage](#preparedrawimage) tarafından ayrılan sistem kaynaklarını boşaltır.
+[CMFCToolBarImages::PrepareDrawImage](#preparedrawimage) [cmfcToolBarImages::Draw](#draw)çağırarak bir araç çubuğu görüntü çizdikten sonra tahsis sistem kaynaklarını boşaltıyor.
 
 ```
 void EndDrawImage(CAfxDrawState& ds);
@@ -550,12 +551,12 @@ void EndDrawImage(CAfxDrawState& ds);
 
 ### <a name="parameters"></a>Parametreler
 
-*FID*<br/>
-'ndaki `PrepareDrawImage` yöntemine geçirilen `CAfxDrawState` nesnesine bir başvuru.
+*Ds*<br/>
+[içinde] `PrepareDrawImage` Yönteme `CAfxDrawState` geçirilen nesneye bir başvuru.
 
-##  <a name="extracticon"></a>CMFCToolBarImages:: ExtractIcon
+## <a name="cmfctoolbarimagesextracticon"></a><a name="extracticon"></a>CMFCToolBarImages::ExtractIcon
 
-Araç çubuğu görüntülerinden belirtilen bir görüntü dizinine sahip simgeyi döndürür.
+Araç çubuğu görüntülerinden belirtilen görüntü dizinine sahip simgeyi döndürür.
 
 ```
 HICON ExtractIcon(int nIndex);
@@ -563,16 +564,16 @@ HICON ExtractIcon(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nDizin*<br/>
-'ndaki Simge olarak ayıklanacak görüntünün bulunduğu görüntü listesindeki sıfır tabanlı dizin bulunur.
+*Nındex*<br/>
+[içinde] Simge olarak ayıklanacak görüntü listesindeki sıfır tabanlı dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayıklanan simgenin bir tutamacı veya *nIndex* Aralık dışında ise null.
+Çıkarılan simgeye bir tanıtıcı veya *nIndex* kapsama alanı dışındaysa NULL.
 
-##  <a name="fillditheredrect"></a>CMFCToolBarImages:: FillDitheredRect
+## <a name="cmfctoolbarimagesfillditheredrect"></a><a name="fillditheredrect"></a>CMFCToolBarImages::FillDitheredRect
 
-Araç çubuğu arka plan renkleriyle bir dikdörtgen doldurur.
+Bir dikdörtgeni araç çubuğu arka plan renkleriyle doldurur.
 
 ```
 static void FillDitheredRect(
@@ -582,17 +583,17 @@ static void FillDitheredRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamına yönelik bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 *Rect*<br/>
-'ndaki Doldurulacak bir dikdörtgenin koordinatları.
+[içinde] Doldurulması gereken bir dikdörtgenin koordinatları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi, sistem renklerinin COLOR_BTNFACE ve COLOR_BTNHIGHLIGHT ortalaması olan bir renkle bir dikdörtgeni dolduracak şekilde kullanın. Sistem, 256 veya daha az renk kullanıyorsa, bunun yerine bu iki rengin titremeli düzeniyle birlikte doldurulur.
+Bir dikdörtgeni, sistem renklerinin ortalaması olan bir renk le doldurmak için bu yöntemi kullanın COLOR_BTNFACE ve COLOR_BTNHIGHLIGHT. Sistem 256 veya daha az renk kullanıyorsa, dikdörtgen bu iki rengin dithered deseni ile doldurulur.
 
-##  <a name="getalwayslight"></a>CMFCToolBarImages:: Getalwayhafif
+## <a name="cmfctoolbarimagesgetalwayslight"></a><a name="getalwayslight"></a>CMFCToolBarImages::GetAlwaysLight
 
 ```
 BOOL GetAlwaysLight() const;
@@ -602,9 +603,9 @@ BOOL GetAlwaysLight() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getcount"></a>CMFCToolBarImages:: GetCount
+## <a name="cmfctoolbarimagesgetcount"></a><a name="getcount"></a>CMFCToolBarImages::GetCount
 
-Araç çubuğu görüntüleri listesindeki görüntü sayısını döndürür.
+Araç çubuğu görüntüleri listesindeki görüntü sayısını verir.
 
 ```
 int GetCount() const;
@@ -612,11 +613,11 @@ int GetCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CMFCToolBarImages` nesnesindeki görüntü sayısı.
+Nesnedeki `CMFCToolBarImages` görüntü sayısı.
 
-##  <a name="getdisabledimagealpha"></a>CMFCToolBarImages:: Getdisabledımagealpha
+## <a name="cmfctoolbarimagesgetdisabledimagealpha"></a><a name="getdisabledimagealpha"></a>CMFCToolBarImages::GetDisabledImageAlpha
 
-Devre dışı bırakılmış görüntüler için kullanılan alfa kanalı (opaklık) değerini döndürür.
+Devre dışı bırakılmış görüntüler için kullanılan alfa kanalı (opaklık) değerini verir.
 
 ```
 static BYTE GetDisabledImageAlpha();
@@ -624,13 +625,13 @@ static BYTE GetDisabledImageAlpha();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli alfa kanalı değeri.
+Geçerli alfa kanal değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alfa kanalı değerini değiştirmek için [CMFCToolBarImages:: SetDisabledImageAlpha](#setdisabledimagealpha) komutunu çağırabilirsiniz.
+Alfa kanal değerini değiştirmek için [CMFCToolBarImages::SetDisabledImageAlpha'yı](#setdisabledimagealpha) arayabilirsiniz.
 
-##  <a name="getfadedimagealpha"></a>CMFCToolBarImages:: GetFadedImageAlpha
+## <a name="cmfctoolbarimagesgetfadedimagealpha"></a><a name="getfadedimagealpha"></a>CMFCToolBarImages::GetFadedImageAlpha
 
 ```
 static BYTE __stdcall GetFadedImageAlpha();
@@ -640,7 +641,7 @@ static BYTE __stdcall GetFadedImageAlpha();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getimagesize"></a>CMFCToolBarImages:: Getıgesize
+## <a name="cmfctoolbarimagesgetimagesize"></a><a name="getimagesize"></a>CMFCToolBarImages::GetImageSize
 
 Bellekte depolanan araç çubuğu görüntülerinin boyutunu (kaynak boyutu) veya ekranda çizilen araç çubuğu görüntülerinin boyutunu (hedef boyutu) alır.
 
@@ -651,21 +652,21 @@ SIZE GetImageSize(BOOL bDest=FALSE) const;
 ### <a name="parameters"></a>Parametreler
 
 *bDest*<br/>
-'ndaki Hedef boyutunu almak için TRUE; Kaynak görüntü boyutunu almak için FALSE.
+[içinde] HEDEF boyutunu almak için TRUE; KAYNAK görüntü boyutunu almak için FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Piksel cinsinden bir görüntünün boyutunu belirten `SIZE` yapısı.
+Piksellerde bir görüntünün boyutunu belirten bir `SIZE` yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak görüntünün boyutu [CMFCToolBarImages](../../mfc/reference/cmfctoolbarimages-class.md) nesnesinde depolanan görüntülerin boyutudur. Kaynak boyutunu ayarlamak için [CMFCToolBarImages:: Setıgesize](#setimagesize) çağırabilirsiniz. Varsayılan değer 16x15 pikseldir.
+Kaynak görüntünün boyutu [CMFCToolbarImages](../../mfc/reference/cmfctoolbarimages-class.md) nesnesinde depolanan görüntülerin boyutudur. [CmFCToolBarImages::SetImageSize](#setimagesize) kaynak boyutunu ayarlamak için arayabilirsiniz. Varsayılan değer 16x15 pikseldir.
 
-Varsayılan olarak, hedef görüntü boyutu 0x0 ' dir. CMFCToolBarImages ' i çağırdığınızda hedef boyutunu belirtirsiniz [::P Reparedtıwimage](#preparedrawimage). [CMFCToolBarImages:: EndDrawImage](#enddrawimage) yöntemi hedef boyutunu varsayılan değere sıfırlar.
+Varsayılan olarak, hedef görüntü boyutu 0x0'dir. [CMFCToolBarImages::PrepareDrawImage'](#preparedrawimage)i aradiğinizde hedef boyutunu belirtirsiniz. [CMFCToolBarImages::EndDrawImage](#enddrawimage) yöntemi hedef boyutunu varsayılan değere sıfırlar.
 
-##  <a name="getimagewell"></a>CMFCToolBarImages:: Getımagewell
+## <a name="cmfctoolbarimagesgetimagewell"></a><a name="getimagewell"></a>CMFCToolBarImages::GetImageWell
 
-Tüm araç çubuğu görüntülerini içeren bit eşlem tanıtıcısını döndürür.
+Tanıtıcıyı tüm araç çubuğu görüntülerini içeren bit eşlenere döndürür.
 
 ```
 HBITMAP GetImageWell() const;
@@ -673,13 +674,13 @@ HBITMAP GetImageWell() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç çubuğu görüntülerini içeren bir bit eşlem tutamacı.
+Araç çubuğu görüntüleri içeren bir bit eşlemi için bir tutamaç.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç çubuğu görüntüleri, *görüntü kutusu*olarak bilinen tek bir bit eşlemdeki bir satırda depolanır. Görüntü kutusunda bir araç çubuğu görüntüsünü bulmak için görüntünün dizinini araç çubuğu görüntülerinin genişliğine göre çarpın (bkz. [CMFCToolBarImages:: Getıgesize](#getimagesize)). görüntünün görüntü kutusu içindeki yatay sapmasını elde etmek için.
+Araç çubuğu görüntüleri, iyi bir *görüntü*olarak bilinen tek bir bit eşlemde üst üste depolanır. Görüntüde bir araç çubuğu görüntüsünü iyi bulmak için, görüntünün içindeki görüntünün yatay ofsetini iyi elde etmek için görüntünün dizini araç çubuğu görüntülerinin genişliğiyle çarpın (bkz. [CMFCToolBarImages::GetImageSize).](#getimagesize)
 
-##  <a name="getimagewelllight"></a>CMFCToolBarImages:: Getıgewelllight
+## <a name="cmfctoolbarimagesgetimagewelllight"></a><a name="getimagewelllight"></a>CMFCToolBarImages::GetImageWellLight
 
 ```
 HBITMAP GetImageWellLight() const;
@@ -689,7 +690,7 @@ HBITMAP GetImageWellLight() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getlastimagerect"></a>CMFCToolBarImages:: GetLastImageRect
+## <a name="cmfctoolbarimagesgetlastimagerect"></a><a name="getlastimagerect"></a>CMFCToolBarImages::GetLastImageRect
 
 ```
 CRect GetLastImageRect() const;
@@ -699,7 +700,7 @@ CRect GetLastImageRect() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getlightpercentage"></a>CMFCToolBarImages:: GetLightPercentage
+## <a name="cmfctoolbarimagesgetlightpercentage"></a><a name="getlightpercentage"></a>CMFCToolBarImages::GetLightPercentage
 
 ```
 int GetLightPercentage() const;
@@ -709,7 +710,7 @@ int GetLightPercentage() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getmapto3dcolors"></a>CMFCToolBarImages:: GetMapTo3DColors
+## <a name="cmfctoolbarimagesgetmapto3dcolors"></a><a name="getmapto3dcolors"></a>CMFCToolBarImages::GetMapto3DColors
 
 ```
 BOOL GetMapTo3DColors() const;
@@ -719,7 +720,7 @@ BOOL GetMapTo3DColors() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getmask"></a>CMFCToolBarImages:: GetMask
+## <a name="cmfctoolbarimagesgetmask"></a><a name="getmask"></a>CMFCToolBarImages::GetMask
 
 ```
 HBITMAP GetMask(int iImage);
@@ -727,15 +728,15 @@ HBITMAP GetMask(int iImage);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *IImage*<br/>
+[içinde] *iImage*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getresourceoffset"></a>CMFCToolBarImages:: Getresourcekayması
+## <a name="cmfctoolbarimagesgetresourceoffset"></a><a name="getresourceoffset"></a>CMFCToolBarImages::GetResourceOffset
 
-Belirtilen kaynak KIMLIĞI için görüntü dizinini döndürür.
+Belirtilen kaynak kimliği için görüntü dizini döndürür.
 
 ```
 int GetResourceOffset(UINT uiResId) const;
@@ -743,14 +744,14 @@ int GetResourceOffset(UINT uiResId) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Uırestıd*<br/>
-'ndaki Bir görüntü kaynak KIMLIĞI.
+*uiResId*<br/>
+[içinde] Görüntü kaynağı kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olduysa bir görüntü dizini; -1 belirtilen kaynak KIMLIĞINE sahip görüntü yoksa.
+Yöntem başarılı olduysa bir görüntü dizini; -1 belirtilen kaynak kimliği ile görüntü yoksa.
 
-##  <a name="gettransparentcolor"></a>CMFCToolBarImages:: GetTransparentColor
+## <a name="cmfctoolbarimagesgettransparentcolor"></a><a name="gettransparentcolor"></a>CMFCToolBarImages::GetTransparentColor
 
 ```
 COLORREF GetTransparentColor() const;
@@ -760,9 +761,9 @@ COLORREF GetTransparentColor() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="grayimages"></a>CMFCToolBarImages:: gri görüntüler
+## <a name="cmfctoolbarimagesgrayimages"></a><a name="grayimages"></a>CMFCToolBarImages::GrayImages
 
-Araç çubuğu görüntülerinin devre dışı görünmesini sağlamak için bu görüntüleri gri görüntüler.
+Devre dışı görünmelerini sağlamak için araç çubuğu görüntülerini griye ler.
 
 ```
 BOOL GrayImages(int nGrayImageLuminancePercentage);
@@ -770,23 +771,23 @@ BOOL GrayImages(int nGrayImageLuminancePercentage);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ngriimagelumınancepercentage*<br/>
-'ndaki Işıklılık yüzdesi.
+*nGrayImageLuminancePercentage*<br/>
+[içinde] Parlaklık yüzdesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Koleksiyondaki görüntüler başarıyla griyse doğru; Aksi halde yanlış.
+Koleksiyondaki görüntüler başarılı bir şekilde grileştirilmişse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, her bir pikselin kırmızı, yeşil ve mavi bileşenlerinin ortalamasını alarak araç çubuğu görüntülerini değiştirir ve sonucu *Nmaviimagelumınancepercentage* 100 'e bölünür. *Ngriimagelumınancepercentage* sıfır veya negatif ise, bunun yerine varsayılan 130 değeri kullanılır.
+Bu yöntem, her pikselin kırmızı, yeşil ve mavi bileşenlerinin ortalamasını alarak ve sonucu 100'e bölünen *nGrayImageLuminancePercentage* ile çarparak araç çubuğu görüntülerini değiştirir. *nGrayImageLuminancePercentage* sıfır veya negatif ise, bunun yerine 130 varsayılan değeri kullanılır.
 
 > [!NOTE]
->  Değişikliği geri almak istiyorsanız, kaynağı kaynaktan yeniden yüklemeniz gerekir. Bunu, [CMFCToolBarImages:: Load](#load) veya [CMFCToolBarImages:: UpdateImage](#updateimage) (yalnızca Kullanıcı tanımlı görüntüler için) yöntemini çağırarak veya CMFCToolBarImages:: [](#clear) [AddIcon](#addicon) veya [CMFCToolBarImages:: addimage](#addimage)çağırarak resimleri yeniden ekleyerek yapabilirsiniz.
+> Değişikliği geri almak istiyorsanız, görüntüleri kaynaktan yeniden yüklemeniz gerekir. Bunu [CMFCToolBarImages'ı arayarak yapabilirsiniz::Yük](#load) veya [CMFCToolBarImages::UpdateImage](#updateimage) (yalnızca kullanıcı tanımlı görüntüler için) veya [CMFCToolBarImages'ı arayarak::CMFCToolBarImages'ı](#clear) arayarak görüntüleri temizleyin ve yeniden [ekleyin::AddIcon](#addicon) veya [CMFCToolBarImages::AddImage](#addimage).
 
-##  <a name="is32bittransparencysupported"></a>CMFCToolBarImages:: Is32BitTransparencySupported
+## <a name="cmfctoolbarimagesis32bittransparencysupported"></a><a name="is32bittransparencysupported"></a>CMFCToolBarImages::Is32BitTransparencyDesteklenen
 
-İşletim sisteminin 32 bit alfa karıştırmasını destekleyip desteklemediğini belirtir.
+İşletim sisteminin 32 bit alfa karıştırmayı destekleyip desteklemediğini belirtir.
 
 ```
 static BOOL Is32BitTransparencySupported();
@@ -794,13 +795,13 @@ static BOOL Is32BitTransparencySupported();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-32 bit alfa karışımı destekleniyorsa doğru; Aksi halde yanlış.
+32-bit alfa karıştırma desteklenirse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşletim sisteminin 32-bit alfa karıştırmasını destekleyip desteklemediğini anlamak için bu statik yöntemi kullanın. Bu özellik Windows 2000 ve sonraki sürümlerde desteklenir.
+Çalışma zamanında işletim sisteminin 32 bit alfa karıştırmayı destekleyip desteklemediğini belirlemek için bu statik yöntemi kullanın. Bu özellik Windows 2000 ve sonraki sürümlerinde desteklenir.
 
-##  <a name="ispremultiplyautocheck"></a>CMFCToolBarImages:: ıspremultiplyautocheck
+## <a name="cmfctoolbarimagesispremultiplyautocheck"></a><a name="ispremultiplyautocheck"></a>CMFCToolBarImages::IspreMultiplyAutoCheck
 
 ```
 BOOL IsPreMultiplyAutoCheck() const;
@@ -810,9 +811,9 @@ BOOL IsPreMultiplyAutoCheck() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isreadonly"></a>CMFCToolBarImages:: IsReadOnly
+## <a name="cmfctoolbarimagesisreadonly"></a><a name="isreadonly"></a>CMFCToolBarImages::IsreadOnly
 
-Araç çubuğu görüntülerinin salt okunurdur olup olmayacağını belirtir.
+Araç çubuğu görüntülerinin salt okunur olup olmadığını belirtir.
 
 ```
 BOOL IsReadOnly() const;
@@ -820,15 +821,15 @@ BOOL IsReadOnly() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç çubuğu görüntüleri salt okunurdur TRUE, aksi takdirde FALSE.
+Araç çubuğu görüntüleri salt okunursa DOĞRU, aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMFCToolbarImages` nesnesi, araç çubuğu görüntülerinin bulunduğu bit eşlem salt bir dosyadan yüklendiğinde veya bir bit eşlem `CMFCToolBarImages::CopyTemp` yöntemi kullanılarak kopyalanırken salt okunurdur.
+Nesne, `CMFCToolbarImages` araç çubuğu görüntüleriyle birlikte bit eşlemi salt okunur dosyasından yüklendiğinde veya bit eşlemi `CMFCToolBarImages::CopyTemp` yöntem kullanılarak kopyalandığında salt okunur.
 
-##  <a name="isrtl"></a>CMFCToolBarImages:: ısrtl
+## <a name="cmfctoolbarimagesisrtl"></a><a name="isrtl"></a>CMFCToolBarImages::IsRTL
 
-Sağdan sola (RTL) desteğin etkinleştirilip etkinleştirilmeyeceğini belirtir.
+Sağdan sola (RTL) desteğinin etkin olup olmadığını belirtir.
 
 ```
 static BOOL IsRTL();
@@ -836,15 +837,15 @@ static BOOL IsRTL();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-RTL desteği etkinse TRUE; Aksi halde yanlış.
+RTL desteği etkinse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-RTL desteği, uygulama Arapça, Ibranice, Farsça veya Urduca gibi sağdan sola doğru okunan bir dile yerelleştirildiği zaman kullanılır.
+RTL desteği, uygulama sağdan sola okunan Arapça, İbranice, Farsça veya Urduca gibi bir dile yerelleştirildiğinde kullanılır.
 
-##  <a name="isuserimageslist"></a>CMFCToolBarImages:: Isuserımabir listesi
+## <a name="cmfctoolbarimagesisuserimageslist"></a><a name="isuserimageslist"></a>CMFCToolBarImages::IsuserImagesList
 
-Bu araç çubuğu görüntülerinin Kullanıcı tanımlı görüntüler içerip içermediğini belirtir.
+Bu araç çubuğu görüntüleri kümesinin kullanıcı tanımlı görüntüler içerip içersiz leştirip içermed
 
 ```
 BOOL IsUserImagesList() const;
@@ -852,11 +853,11 @@ BOOL IsUserImagesList() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CMFCToolBarImages` nesnesi Kullanıcı tanımlı araç çubuğu görüntüleri içeriyorsa TRUE; Aksi halde yanlış.
+Nesne kullanıcı `CMFCToolBarImages` tanımlı araç çubuğu görüntüleri içeriyorsa TRUE; aksi takdirde YANLIŞ.
 
-##  <a name="isvalid"></a>CMFCToolBarImages:: IsValid
+## <a name="cmfctoolbarimagesisvalid"></a><a name="isvalid"></a>CMFCToolBarImages::IsValid
 
-Bu araç çubuğu görüntülerinin geçerli bir araç çubuğu görüntüsü içerip içermediğini gösterir.
+Bu araç çubuğu görüntü kümesinin geçerli bir araç çubuğu görüntüsü bulunup olmadığını gösterir.
 
 ```
 BOOL IsValid() const;
@@ -864,13 +865,13 @@ BOOL IsValid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CMFCToolBarImages` nesnesi geçerliyse TRUE; Aksi halde yanlış.
+Bir `CMFCToolBarImages` nesne geçerliyse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMFCToolBarImages` nesnesi, araç çubuğu görüntülerinin bulunduğu bit eşlemle tutamacı NULL olduğunda geçerli değildir.
+Nesne, `CMFCToolBarImages` araç çubuğu görüntüleri yle bir biteşme için tutamacı NULL olduğunda geçerli değildir.
 
-##  <a name="load"></a>CMFCToolBarImages:: Load
+## <a name="cmfctoolbarimagesload"></a><a name="load"></a>CMFCToolBarImages::Yük
 
 Araç çubuğu görüntülerini sistem kaynaklarından veya bir dosyadan yükler.
 
@@ -887,30 +888,30 @@ BOOL Load(
 
 ### <a name="parameters"></a>Parametreler
 
-*Uırestıd*<br/>
-'ndaki Bir bit eşlem kaynağının KIMLIĞI.
+*uiResID*<br/>
+[içinde] Bitmap kaynağının kimliği.
 
-*Hınstres*<br/>
-'ndaki Kaynak DLL 'nin bir örneği.
+*hinstRes*<br/>
+[içinde] Kaynak DLL örneği.
 
-*bAdd*<br/>
-'ndaki Mevcut bit eşlem 'e yüklenen bit eşlemi eklemek için TRUE, ya da var olan bit eşlemini değiştirmek için FALSE.
+*Baran*<br/>
+[içinde] Yüklenen bit eşlemi nin varolan bit eşlebine eklenmesi için TRUE veya varolan bit eşlemi değiştirmek için FALSE.
 
 *lpszBmpFileName*<br/>
-'ndaki Bit eşlemin yükleneceği bir disk dosyasının yolu.
+[içinde] Bit eşlemi yüklemek için bir disk dosyasına giden yol.
 
 *nMaxFileSize*<br/>
-'ndaki Bit eşlem dosyasındaki en fazla bayt sayısı; veya dosya boyutundan bağımsız olarak bit eşlemi yüklemek için 0. Dosyanın boyutu bu en büyük boyutu aşarsa, yöntem FALSE döndürür ve bit eşlemi yüklemez.
+[içinde] Bitmap dosyasındaki maksimum bayt sayısı; veya dosya boyutuna bakılmaksızın bit eşlemi yüklemek için 0. Dosyanın boyutu bu maksimum boyutu aşarsa, yöntem FALSE döndürür ve bit eşlemi yüklemez.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bit eşlem başarıyla yüklenmişse doğru; Aksi halde yanlış.
+Bit eşlemi başarıyla yüklenmişse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dosyanın salt okunurdur özniteliği varsa, görüntü listesi salt okunurdur olarak işaretlenir.
+Dosyasalt okunur özniteliğine sahipse, resim listesi salt okunur olarak işaretlenir.
 
-##  <a name="loadstr"></a>CMFCToolBarImages:: LoadStr
+## <a name="cmfctoolbarimagesloadstr"></a><a name="loadstr"></a>CMFCToolBarImages::loadstr
 
 ```
 BOOL LoadStr(
@@ -921,15 +922,15 @@ BOOL LoadStr(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *lpszResourceName*<br/>
-'ndaki *Hınstres*<br/>
-'ndaki *badd*<br/>
+[içinde] *lpszResourceName*<br/>
+[içinde] *hinstRes*<br/>
+[içinde] *bEkle*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="mapfromsyscolor"></a>CMFCToolBarImages:: Mapfromsyscrenkli
+## <a name="cmfctoolbarimagesmapfromsyscolor"></a><a name="mapfromsyscolor"></a>CMFCToolBarImages::MapFromSysColor
 
 ```
 static COLORREF __stdcall MapFromSysColor(
@@ -939,14 +940,14 @@ static COLORREF __stdcall MapFromSysColor(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *renk*<br/>
-'ndaki *Busergbdörtlü*<br/>
+[içinde] *renk*<br/>
+[içinde] *bUseRGBQUAD*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="mapto3dcolors"></a>CMFCToolBarImages:: MapTo3dColors
+## <a name="cmfctoolbarimagesmapto3dcolors"></a><a name="mapto3dcolors"></a>CMFCToolBarImages::MapTo3dColors
 
 ```
 BOOL MapTo3dColors(
@@ -957,15 +958,15 @@ BOOL MapTo3dColors(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *Busergbdörtlü*<br/>
-'ndaki *Clrsrc*<br/>
-'ndaki *Clrdest*<br/>
+[içinde] *bUseRGBQUAD*<br/>
+[içinde] *clrSrc*<br/>
+[içinde] *clrDest*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="maptosyscolor"></a>CMFCToolBarImages:: Maptosyscrenkli
+## <a name="cmfctoolbarimagesmaptosyscolor"></a><a name="maptosyscolor"></a>CMFCToolBarImages::MapToSysColor
 
 ```
 static COLORREF __stdcall MapToSysColor(
@@ -975,14 +976,14 @@ static COLORREF __stdcall MapToSysColor(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *renk*<br/>
-'ndaki *Busergbdörtlü*<br/>
+[içinde] *renk*<br/>
+[içinde] *bUseRGBQUAD*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="maptosyscoloralpha"></a>CMFCToolBarImages:: MapToSysColorAlpha
+## <a name="cmfctoolbarimagesmaptosyscoloralpha"></a><a name="maptosyscoloralpha"></a>CMFCToolBarImages::MapToSysColorAlpha
 
 ```
 static COLORREF __stdcall MapToSysColorAlpha(COLORREF color);
@@ -990,13 +991,13 @@ static COLORREF __stdcall MapToSysColorAlpha(COLORREF color);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *renk*<br/>
+[içinde] *renk*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="mirror"></a>CMFCToolBarImages:: yansıtma
+## <a name="cmfctoolbarimagesmirror"></a><a name="mirror"></a>CMFCToolBarImages::Ayna
 
 Araç çubuğu görüntülerini yatay ayna görüntüsüyle değiştirir.
 
@@ -1006,15 +1007,15 @@ BOOL Mirror();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görüntüler başarıyla yansıtıldıysanız doğru; Aksi halde yanlış.
+Görüntüler başarıyla yansıtılırsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, sağdan sola yazma sistemlerini desteklemek için kullanılır.
+Bu yöntem sağdan sola yazma sistemlerini desteklemek için kullanılır.
 
-##  <a name="mirrorbitmap"></a>CMFCToolBarImages:: Mirrorbit eşlem
+## <a name="cmfctoolbarimagesmirrorbitmap"></a><a name="mirrorbitmap"></a>CMFCToolBarImages::MirrorBitmap
 
-Bit eşlemi yatay ayna görüntüsüyle değiştirir.
+Bir bit eşlemi yatay ayna görüntüsüyle değiştirir.
 
 ```
 static BOOL MirrorBitmap(
@@ -1025,20 +1026,20 @@ static BOOL MirrorBitmap(
 ### <a name="parameters"></a>Parametreler
 
 *hbmp*<br/>
-[in, out] Yansıtma için bir bit eşlem tutamacı.
+[içinde, dışarı] Aynaya bitmap için bir tutamaç.
 
-*CxImage*<br/>
-'ndaki Resmin piksel cinsinden genişliği.
+*cxImage*<br/>
+[içinde] Görüntünün piksel genişliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görüntü başarıyla yansıtıldıysa doğru; Aksi halde yanlış.
+Doğru görüntü başarıyla yansıtılmışsa; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, sağdan sola yazma sistemlerini desteklemek için kullanılır.
+Bu işlev sağdan sola yazma sistemlerini desteklemek için kullanılır.
 
-##  <a name="mirrorbitmapvert"></a>CMFCToolBarImages:: MirrorBitmapVert
+## <a name="cmfctoolbarimagesmirrorbitmapvert"></a><a name="mirrorbitmapvert"></a>CMFCToolBarImages::MirrorBitmapVert
 
 ```
 static BOOL __stdcall MirrorBitmapVert(
@@ -1048,14 +1049,14 @@ static BOOL __stdcall MirrorBitmapVert(
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *hbmp*<br/>
-'ndaki *Cyımage*<br/>
+[içinde] *hbmp*<br/>
+[içinde] *cyImage*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="mirrorvert"></a>CMFCToolBarImages:: MirrorVert
+## <a name="cmfctoolbarimagesmirrorvert"></a><a name="mirrorvert"></a>CMFCToolBarImages::MirrorVert
 
 ```
 BOOL MirrorVert();
@@ -1065,7 +1066,7 @@ BOOL MirrorVert();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onsyscolorchange"></a>CMFCToolBarImages:: OnSysColorChange
+## <a name="cmfctoolbarimagesonsyscolorchange"></a><a name="onsyscolorchange"></a>CMFCToolBarImages::OnSysColorChange
 
 ```
 void OnSysColorChange();
@@ -1073,7 +1074,7 @@ void OnSysColorChange();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="premultiplyalpha"></a>CMFCToolBarImages::P Reçoğullyalpha
+## <a name="cmfctoolbarimagespremultiplyalpha"></a><a name="premultiplyalpha"></a>CMFCToolBarImages::PreMultiplyAlpha
 
 ```
 static BOOL __stdcall PreMultiplyAlpha(
@@ -1085,16 +1086,16 @@ BOOL PreMultiplyAlpha(HBITMAP hbmp);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *hbmp*<br/>
-'ndaki *Bautocheckpremlt*<br/>
+[içinde] *hbmp*<br/>
+[içinde] *bAutoCheckPremlt*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_bdisabletruecoloralpha"></a>CMFCToolBarImages:: m_bDisableTrueColorAlpha
+## <a name="cmfctoolbarimagesm_bdisabletruecoloralpha"></a><a name="m_bdisabletruecoloralpha"></a>CMFCToolBarImages::m_bDisableTrueColorAlpha
 
-TrueColor Alfa karıştırma (32-bit renk) devre dışıysa TRUE.
+Truecolor alfa karıştırma (32 bit renk) devre dışı bırakılırsa TRUE.
 
 ```
 static BOOL m_bDisableTrueColorAlpha;
@@ -1102,13 +1103,13 @@ static BOOL m_bDisableTrueColorAlpha;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Toolbar görüntüleri için TrueColor Alpha karıştırmasını etkinleştirmek için bu üye değişkenini FALSE olarak ayarlayın.
+Araç çubuğu görüntüleri için truecolor alfa karıştırmayı etkinleştirmek için bu üye değişkeni FALSE olarak ayarlayın.
 
-Geri uyumluluk için varsayılan değer TRUE 'dur.
+Varsayılan değer geriye dönük uyumluluk için TRUE'dur.
 
-##  <a name="preparedrawimage"></a>CMFCToolBarImages::P Reparedtıwimage
+## <a name="cmfctoolbarimagespreparedrawimage"></a><a name="preparedrawimage"></a>CMFCToolBarImages::PrepareDrawImage
 
-Belirtilen boyutta bir araç çubuğu görüntüsü çizmek için gereken kaynakları ayırır.
+Araç çubuğu görüntüsünü belirli bir boyutta çizmek için gereken kaynakları ayırır.
 
 ```
 BOOL PrepareDrawImage(
@@ -1120,26 +1121,26 @@ BOOL PrepareDrawImage(
 
 ### <a name="parameters"></a>Parametreler
 
-*FID*<br/>
-'ndaki Görüntü işleme aşamaları arasında ayrılan kaynakları depolayan `CAfxDrawState` yapısına yönelik bir başvuru.
+*Ds*<br/>
+[içinde] Ayrılan kaynakları `CAfxDrawState` görüntü oluşturma aşamaları arasında depolayan yapıya başvuru.
 
-*Sizeımagedest*<br/>
-'ndaki Hedef görüntünün boyutunu belirtir.
+*sizeImageDest*<br/>
+[içinde] Hedef görüntünün boyutunu belirtir.
 
-*bFadeInactive*<br/>
-'ndaki Etkin olmayan görüntülerin Faded olarak çizilmesini istiyorsanız TRUE.
+*bFadeAktif*<br/>
+[içinde] Etkin olmayan görüntülerin soluk olarak çizilmesini istiyorsanız DOĞRU.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç çubuğu görüntüsünü çizmek için gereken kaynaklar başarıyla ayrıldıktan sonra TRUE, aksi takdirde FALSE.
+Araç çubuğu görüntüsünü çizmek için gereken kaynaklar başarıyla ayrılmışsa DOĞRU, aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağırdıktan sonra [CMFCToolBarImages::D ham](#draw) istediğiniz sayıda çağırabilirsiniz. Çizimi tamamladıktan sonra, `PrepareDrawImage`tarafından ayrılan kaynakları serbest bırakmak için [CMFCToolBarImages:: EndDrawImage](#enddrawimage) ' ı çağırmanız gerekir.
+Bu yöntemi aradıktan sonra [CMFCToolBarImages::Draw](#draw) istediğiniz sayıda arayabilirsiniz. Çizimi bitirdikten sonra [CMFCToolBarImages'ı aramalısınız::EndDrawImage](#enddrawimage) tarafından `PrepareDrawImage`ayrılan kaynakları serbest bırakmak için.
 
-##  <a name="save"></a>CMFCToolBarImages:: Save
+## <a name="cmfctoolbarimagessave"></a><a name="save"></a>CMFCToolBarImages::Kaydet
 
-Bu araç çubuğu görüntülerinin Kullanıcı tanımlı görüntüler içermesi durumunda araç çubuğu görüntülerini bir dosyada depolar.
+Bu araç çubuğu görüntüleri kümesi kullanıcı tanımlı görüntüler içeriyorsa, araç çubuğu görüntülerini bir dosyada depolar.
 
 ```
 BOOL Save(LPCTSTR lpszBmpFileName=NULL);
@@ -1148,17 +1149,17 @@ BOOL Save(LPCTSTR lpszBmpFileName=NULL);
 ### <a name="parameters"></a>Parametreler
 
 *lpszBmpFileName*<br/>
-Bir disk dosyasının yolu.
+Disk dosyasına giden yol.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç çubuğu görüntüleri başarıyla kaydedildiyse doğru; Aksi halde yanlış.
+Araç çubuğu görüntüleri başarıyla kaydedildiyse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı tanımlı görüntüleri bir disk dosyasına depolamak için bu yöntemi çağırın. *LPSZBMPFILENAME* null ise Yöntem, bit eşlemi [CMFCToolBarImages:: Load](#load) yöntemi tarafından, bit eşlemin yüklendiği dosyaya depolar.
+Kullanıcı tanımlı görüntüleri bir disk dosyasında depolamak için bu yöntemi arayın. *lpszBmpFileName* NULL ise, yöntem bit eşlemini [CMFCToolBarImages](#load) tarafından yüklenen dosyaya depolar::Yükleme yöntemi.
 
-##  <a name="setalwayslight"></a>CMFCToolBarImages:: Setalwayhafif
+## <a name="cmfctoolbarimagessetalwayslight"></a><a name="setalwayslight"></a>CMFCToolBarImages::SetAlwaysLight
 
 ```
 void SetAlwaysLight(BOOL bAlwaysLight = TRUE);
@@ -1166,11 +1167,11 @@ void SetAlwaysLight(BOOL bAlwaysLight = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *Balwayhafif*<br/>
+[içinde] *bAlwaysLight*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setdisabledimagealpha"></a>CMFCToolBarImages:: SetDisabledImageAlpha
+## <a name="cmfctoolbarimagessetdisabledimagealpha"></a><a name="setdisabledimagealpha"></a>CMFCToolBarImages::SetdisabledImageAlpha
 
 Devre dışı bırakılmış görüntüler için kullanılan alfa kanalı (opaklık) değerini ayarlar.
 
@@ -1181,13 +1182,13 @@ static void SetDisabledImageAlpha(BYTE nValue);
 ### <a name="parameters"></a>Parametreler
 
 *nDeğer*<br/>
-'ndaki Alfa kanalının yeni değeri.
+[içinde] Alfa kanalının yeni değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Devre dışı bırakılmış görüntüler için özel bir alfa değeri ayarlamak için bu yöntemi kullanın. Varsayılan değer 127 ' dir ve devre dışı düğme görüntülerinin yarı saydam olmasına neden olur. 0 değerini ayarlarsanız, devre dışı bırakılmış görüntüler tamamen saydam olur. 255 değerini ayarlarsanız, devre dışı bırakılmış görüntüler tamamen opak olur.
+Devre dışı bırakılan görüntüler için özel bir alfa değeri ayarlamak için bu yöntemi kullanın. Varsayılan değer 127'dir ve bu da devre dışı bırakılan düğme görüntülerinin yarı saydam olmasını sağlar. 0 değeri belirlerseniz, devre dışı bırakılan görüntüler tamamen saydam olur. 255 değeri belirlerseniz, devre dışı bırakılan görüntüler tamamen opak olur.
 
-##  <a name="setfadedimagealpha"></a>CMFCToolBarImages:: SetFadedImageAlpha
+## <a name="cmfctoolbarimagessetfadedimagealpha"></a><a name="setfadedimagealpha"></a>CMFCToolBarImages::SetFadedImageAlpha
 
 ```
 static void __stdcall SetFadedImageAlpha(BYTE nValue);
@@ -1195,13 +1196,13 @@ static void __stdcall SetFadedImageAlpha(BYTE nValue);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *nDeğer*<br/>
+[içinde] *nDeğer*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setimagesize"></a>CMFCToolBarImages:: Setıgesize
+## <a name="cmfctoolbarimagessetimagesize"></a><a name="setimagesize"></a>CMFCToolBarImages::SetImageSize
 
-Her bir araç çubuğu görüntüsünün boyutunu (kaynak boyutu) ayarlar.
+Her araç çubuğu görüntüsünün boyutunu (kaynak boyutu) ayarlar.
 
 ```
 void SetImageSize(
@@ -1211,14 +1212,14 @@ void SetImageSize(
 
 ### <a name="parameters"></a>Parametreler
 
-*sizeImage*<br/>
-'ndaki Araç çubuğu görüntülerinin yeni boyutu.
+*boyutGörüntü*<br/>
+[içinde] Araç çubuğu görüntülerinin yeni boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, araç çubuğu görüntüsünün boyutu 16x15 pikseldir. Farklı boyuttaki araç çubuğu görüntülerini kullanmak istiyorsanız bu yöntemi çağırın.
+Varsayılan olarak araç çubuğu görüntüsünün boyutu 16x15 pikseldir. Farklı boyuttaki araç çubuğu görüntülerini kullanmak istiyorsanız bu yöntemi arayın.
 
-##  <a name="setlightpercentage"></a>CMFCToolBarImages:: SetLightPercentage
+## <a name="cmfctoolbarimagessetlightpercentage"></a><a name="setlightpercentage"></a>CMFCToolBarImages::SetLightPercentage
 
 ```
 void SetLightPercentage(int nValue);
@@ -1226,11 +1227,11 @@ void SetLightPercentage(int nValue);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *nDeğer*<br/>
+[içinde] *nDeğer*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setmapto3dcolors"></a>CMFCToolBarImages:: SetMapTo3DColors
+## <a name="cmfctoolbarimagessetmapto3dcolors"></a><a name="setmapto3dcolors"></a>CMFCToolBarImages::SetMapTo3DColors
 
 ```
 void SetMapTo3DColors(BOOL bMapTo3DColors);
@@ -1238,11 +1239,11 @@ void SetMapTo3DColors(BOOL bMapTo3DColors);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *bMapTo3DColors*<br/>
+[içinde] *bMapTo3DColors*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setpremultiplyautocheck"></a>CMFCToolBarImages:: SetPreMultiplyAutoCheck
+## <a name="cmfctoolbarimagessetpremultiplyautocheck"></a><a name="setpremultiplyautocheck"></a>CMFCToolBarImages::SetPreMultiplyAutoCheck
 
 ```
 void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
@@ -1250,11 +1251,11 @@ void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *Bauto*<br/>
+[içinde] *bOtomatik*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setsingleimage"></a>CMFCToolBarImages:: Setsingleımage
+## <a name="cmfctoolbarimagessetsingleimage"></a><a name="setsingleimage"></a>CMFCToolBarImages::SetSingleImage
 
 ```
 void SetSingleImage();
@@ -1262,7 +1263,7 @@ void SetSingleImage();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="settransparentcolor"></a>CMFCToolBarImages:: SetTransparentColor
+## <a name="cmfctoolbarimagessettransparentcolor"></a><a name="settransparentcolor"></a>CMFCToolBarImages::SetTransparentColor
 
 Araç çubuğu görüntülerinin saydam rengini ayarlar.
 
@@ -1272,8 +1273,8 @@ COLORREF SetTransparentColor(COLORREF clrTransparent);
 
 ### <a name="parameters"></a>Parametreler
 
-*clrTransparent*<br/>
-'ndaki Bir RGB değeri.
+*clrŞeffaf*<br/>
+[içinde] RGB değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1281,11 +1282,11 @@ COLORREF SetTransparentColor(COLORREF clrTransparent);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Siz veya Framework [CMFCToolBarImages::D RAW](#draw)çağrısını yaparken, yöntem *clrTransparent*tarafından belirtilen renkle eşleşen bir piksel çizmez.
+Siz veya çerçeve [CMFCToolBarImages::Draw,](#draw)yöntem *clrTransparent*tarafından belirtilen renk eşleşen herhangi bir piksel çizmek değildir.
 
-##  <a name="updateimage"></a>CMFCToolBarImages:: UpdateImage
+## <a name="cmfctoolbarimagesupdateimage"></a><a name="updateimage"></a>CMFCToolBarImages::UpdateImage
 
-Bir bit eşlemden Kullanıcı tanımlı bir araç çubuğu görüntüsünü güncelleştirir.
+Kullanıcı tanımlı araç çubuğu görüntüsünü bir bit eşlemden güncelleştirir.
 
 ```
 BOOL UpdateImage(
@@ -1295,19 +1296,19 @@ BOOL UpdateImage(
 
 ### <a name="parameters"></a>Parametreler
 
-*IImage*<br/>
-'ndaki Güncelleştirilecek görüntünün sıfır tabanlı dizini.
+*ıımage*<br/>
+[içinde] Görüntünün sıfır tabanlı dizin güncelleştirmek için.
 
 *hbmp*<br/>
-'ndaki Görüntünün güncelleştirilmesi için bir bit eşlem tutamacı.
+[içinde] Görüntüyü güncelleştirmek için bit eşlemi için bir tutamaç.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görüntü başarıyla güncelleştirilirse doğru; Görüntü listesi Kullanıcı tanımlı veya geçici değilse FALSE.
+Görüntü başarıyla güncelleştirildiyse DOĞRU; Resim listesi kullanıcı tanımlı veya geçici değilse FALSE.
 
-##  <a name="convertto32bits"></a>CMFCToolBarImages:: ConvertTo32Bits
+## <a name="cmfctoolbarimagesconvertto32bits"></a><a name="convertto32bits"></a>CMFCToolBarImages::ConvertTo32Bits
 
-Altı çizili bit eşlemleri 32 bpp görüntülere dönüştürür.
+Altı çizili bit eşlemlerini 32 bpp görüntüye dönüştürür.
 
 ```
 BOOL ConvertTo32Bits(COLORREF clrTransparent = (COLORREF)-1);
@@ -1315,14 +1316,14 @@ BOOL ConvertTo32Bits(COLORREF clrTransparent = (COLORREF)-1);
 
 ### <a name="parameters"></a>Parametreler
 
-*clrTransparent*<br/>
-Altı çizili Bit eşlemlerin saydam rengini belirtir.
+*clrŞeffaf*<br/>
+Altı çizili bit eşlemlerin saydam rengini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getbitsperpixel"></a>CMFCToolBarImages:: GetBitsPerPixel
+## <a name="cmfctoolbarimagesgetbitsperpixel"></a><a name="getbitsperpixel"></a>CMFCToolBarImages::GetBitsPerPixel
 
-Altı çizili görüntülerin geçerli çözünürlüğünü döndürür.
+Altı çizili görüntülerin geçerli çözünürlüğünü verir.
 
 ```
 int GetBitsPerPixel() const;
@@ -1330,13 +1331,13 @@ int GetBitsPerPixel() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Altı çizili görüntülerin geçerli çözünürlüğünü temsil eden bit/piksel (BPP) cinsinden bir tamsayı değeri.
+Altı çizili görüntülerin piksel başına bit (bpp) halindeki geçerli çözünürlüğünü temsil eden bir sonda değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getscale"></a>CMFCToolBarImages:: GetScale
+## <a name="cmfctoolbarimagesgetscale"></a><a name="getscale"></a>CMFCToolBarImages::GetScale
 
-Altı çizili görüntülerin geçerli ölçek oranını döndürür.
+Altı çizili görüntülerin geçerli ölçek oranını verir.
 
 ```
 double GetScale() const;
@@ -1348,9 +1349,9 @@ Geçerli ölçek oranını temsil eden bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isscaled"></a>CMFCToolBarImages:: ısölçeklendirilmiş
+## <a name="cmfctoolbarimagesisscaled"></a><a name="isscaled"></a>CMFCToolBarImages::IsScaled
 
-Altı çizili görüntülerin ölçeklendirilmesine veya ölçeklendirilmediğini söyler.
+Altı çizili görüntülerin ölçeklenip ölçeklenmediğini söyler.
 
 ```
 BOOL IsScaled () const;
@@ -1358,13 +1359,13 @@ BOOL IsScaled () const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Altı çizili görüntüler ölçeklendirildiyse doğru; Aksi halde yanlış.
+Altı çizili görüntüler ölçeklendirilirse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="smoothresize"></a>CMFCToolBarImages:: yumuşama yeniden boyutlandırma
+## <a name="cmfctoolbarimagessmoothresize"></a><a name="smoothresize"></a>CMFCToolBarImages::SmoothResize
 
-Altı çizili görüntüleri sorunsuzca yeniden boyutlandırır.
+Altı çizili görüntüleri sorunsuz bir şekilde yeniden boyutlandırıyor.
 
 ```
 BOOL SmoothResize(double dblImageScale);
@@ -1377,7 +1378,7 @@ BOOL SmoothResize(double dblImageScale);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeniden boyutlandırma başarılı olursa doğru; Aksi halde yanlış.
+Resize başarılı olursa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 

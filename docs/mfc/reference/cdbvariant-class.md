@@ -1,5 +1,5 @@
 ---
-title: CDBVariant sınıfı
+title: CDBVariant Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDBVariant
@@ -34,16 +34,16 @@ helpviewer_keywords:
 - CDBVariant [MFC], m_pstringA
 - CDBVariant [MFC], m_pstringW
 ms.assetid: de23609c-c560-4b24-bd6b-9d8903fd5b49
-ms.openlocfilehash: 48a2e08d056e3bfef8a06b80ae6607947923cbcb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3c13c1a965014af271ce2911505742d9a50eedd7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62253328"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81376447"
 ---
-# <a name="cdbvariant-class"></a>CDBVariant sınıfı
+# <a name="cdbvariant-class"></a>CDBVariant Sınıfı
 
-MFC ODBC sınıfları için bir değişken veri türünü temsil eder.
+MFC ODBC sınıfları için bir varyant veri türünü temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,45 +55,45 @@ class CDBVariant
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDBVariant::CDBVariant](#cdbvariant)|Oluşturur bir `CDBVariant` nesne.|
+|[CDBVariant::CDBVariant](#cdbvariant)|Bir `CDBVariant` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDBVariant::Clear](#clear)|Temizler `CDBVariant` nesne.|
+|[CDBVariant::Clear](#clear)|Nesneyi `CDBVariant` temizler.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDBVariant::m_dwType](#m_dwtype)|Şu anda depolanan değeri veri türünü içerir. `DWORD`yazın.|
+|[CDBVariant::m_dwType](#m_dwtype)|Şu anda depolanan değerin veri türünü içerir. `DWORD` yazın.|
 
-### <a name="public-union-members"></a>Genel birleşim üyeleri
+### <a name="public-union-members"></a>Kamu Sendikası Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDBVariant::m_boolVal](#m_boolval)|Türünde bir değer içeren **BOOL**.|
-|[CDBVariant::m_chVal](#m_chval)|Türünde bir değer içeren **imzasız char**.|
-|[CDBVariant::m_dblVal](#m_dblval)|Türünde bir değer içeren **çift**.|
-|[CDBVariant::m_fltVal](#m_fltval)|Türünde bir değer içeren **float**.|
-|[CDBVariant::m_iVal](#m_ival)|Türünde bir değer içeren **kısa**.|
-|[CDBVariant::m_lVal](#m_lval)|Türünde bir değer içeren **uzun**.|
-|[CDBVariant::m_pbinary](#m_pbinary)|Türü bir nesneye bir işaretçi içeren `CLongBinary`.|
-|[CDBVariant::m_pdate](#m_pdate)|Türü bir nesneye bir işaretçi içeren **TIMESTAMP_STRUCT**.|
-|[CDBVariant::m_pstring](#m_pstring)|Türü bir nesneye bir işaretçi içeren `CString`.|
-|[CDBVariant::m_pstringA](#m_pstringa)|Bir ASCII yönelik bir işaretçi depolayan [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesne.|
-|[CDBVariant::m_pstringW](#m_pstringw)|Bir geniş yönelik bir işaretçi depolayan [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesne.|
+|[CDBVariant::m_boolVal](#m_boolval)|**BOOL**türünde bir değer içerir.|
+|[CDBVariant::m_chVal](#m_chval)|Türü **imzasız char**bir değer içerir.|
+|[CDBVariant::m_dblVal](#m_dblval)|**Çift**türübir değer içerir.|
+|[CDBVariant::m_fltVal](#m_fltval)|Tür **float**bir değer içerir.|
+|[CDBVariant::m_iVal](#m_ival)|**Kısa**tür değeri içerir.|
+|[CDBVariant::m_lVal](#m_lval)|**Uzun**tür bir değer içerir.|
+|[CDBVariant::m_pbinary](#m_pbinary)|Türünden `CLongBinary`bir nesneye işaretçi içerir.|
+|[CDBVariant::m_pdate](#m_pdate)|**Tür TIMESTAMP_STRUCT**bir nesneye işaretçi içerir.|
+|[CDBVariant::m_pstring](#m_pstring)|Türünden `CString`bir nesneye işaretçi içerir.|
+|[CDBVariant::m_pstringA](#m_pstringa)|Bir ascii [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine işaretçi depolar.|
+|[CDBVariant::m_pstringW](#m_pstringw)|Bir işaretçiyi geniş bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine depolar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDBVariant` bir temel sınıfa sahip değil.
+`CDBVariant`taban sınıfa sahip değildir.
 
-`CDBVariant` benzer [COleVariant](../../mfc/reference/colevariant-class.md); ancak `CDBVariant` OLE kullanmaz. `CDBVariant` bir değeri, değerin veri türü hakkında endişelenmeden depolamanıza olanak tanır. `CDBVariant` veri türü bir birleşim içinde depolanan geçerli değer izler.
+`CDBVariant`[COleVariant](../../mfc/reference/colevariant-class.md)benzer ; ancak, `CDBVariant` OLE kullanmaz. `CDBVariant`değerin veri türü hakkında endişelenmeden bir değer depolamanızı sağlar. `CDBVariant`birleşimde depolanan geçerli değerin veri türünü izler.
 
-Sınıf [CRecordset](../../mfc/reference/crecordset-class.md) yararlanan `CDBVariant` üç üye işlev nesneleri: `GetFieldValue`, `GetBookmark`, ve `SetBookmark`. Örneğin, `GetFieldValue` dinamik olarak bir sütundaki verileri getirme olanak tanır. Sütunun veri türünü çalışma zamanında bilinmiyor çünkü `GetFieldValue` kullanan bir `CDBVariant` sütunun verileri depolamak için nesne.
+[CRecordset](../../mfc/reference/crecordset-class.md) sınıfı `CDBVariant` nesneleri üç üye işlevde kullanır: `GetFieldValue`, , `GetBookmark`ve `SetBookmark`. Örneğin, `GetFieldValue` bir sütundaki verileri dinamik olarak getirmenize olanak tanır. Sütunun veri türü çalışma zamanında `GetFieldValue` bilinmeyebileceğinden, `CDBVariant` sütunverilerini depolamak için bir nesne kullanır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -101,11 +101,11 @@ Sınıf [CRecordset](../../mfc/reference/crecordset-class.md) yararlanan `CDBVar
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdb.h
+**Üstbilgi:** afxdb.h
 
-##  <a name="cdbvariant"></a>  CDBVariant::CDBVariant
+## <a name="cdbvariantcdbvariant"></a><a name="cdbvariant"></a>CDBVariant::CDBVariant
 
-Bir NULL oluşturur `CDBVariant` nesne.
+NULL `CDBVariant` nesnesi oluşturur.
 
 ```
 CDBVariant();
@@ -113,11 +113,11 @@ CDBVariant();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kümeleri [m_dwType](#m_dwtype) DBVT_NULL için veri üyesi.
+[m_dwType](#m_dwtype) veri üyesini DBVT_NULL ayarlar.
 
-##  <a name="clear"></a>  CDBVariant::Clear
+## <a name="cdbvariantclear"></a><a name="clear"></a>CDBVariant::Clear
 
-Temizlemek için bu üye işlevi çağrısı `CDBVariant` nesne.
+`CDBVariant` Nesneyi temizlemek için bu üye işlevi arayın.
 
 ```
 void Clear();
@@ -125,45 +125,45 @@ void Clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa değerini [m_dwType](#m_dwtype) veri üyesi olduğu DBVT_DATE, DBVT_STRING veya DBVT_BINARY, `Clear` birleşim işaretçi üye ile ilişkili belleği serbest bırakır. `Clear` Ayarlar `m_dwType` DBVT_NULL için.
+[m_dwType](#m_dwtype) veri üyesinin değeri DBVT_DATE, DBVT_STRING veya `Clear` DBVT_BINARY ise, birleşim işaretçisi üyesiyle ilişkili belleği serbest bırakır. `Clear`DBVT_NULL `m_dwType` ayarlar.
 
-`CDBVariant` Yıkıcı çağrıları `Clear`.
+`CDBVariant` Yıkıcı arıyor. `Clear`
 
-##  <a name="m_boolval"></a>  CDBVariant::m_boolVal
+## <a name="cdbvariantm_boolval"></a><a name="m_boolval"></a>CDBVariant::m_boolVal
 
-BOOL türünde bir değer depolar.
-
-### <a name="remarks"></a>Açıklamalar
-
-`m_boolVal` Veri üyesine ait bir birleşime. Erişmeden önce `m_boolVal`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_BOOL için sonra ayarlanır `m_boolVal` geçerli bir değer içerir; Aksi takdirde, erişim `m_boolVal` güvenilir olmayan sonuçlar oluşturabilir.
-
-##  <a name="m_chval"></a>  CDBVariant::m_chVal
-
-Türünde bir değer depolar **imzasız char**.
+BoOL tipi bir değer depolar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_chVal` Veri üyesine ait bir birleşime. Erişmeden önce `m_chVal`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_UCHAR için sonra ayarlanır `m_chVal` geçerli bir değer içeriyor; Aksi takdirde, erişim `m_chVal` güvenilir olmayan sonuçlar oluşturabilir.
+Veri `m_boolVal` üyesi bir birliğe aittir. Erişmeden `m_boolVal`önce, önce [CDBVariant](#m_dwtype)değerini kontrol edin::m_dwType . DBVT_BOOL `m_dwType` olarak ayarlanırsa, `m_boolVal` geçerli bir değer içerir; aksi takdirde, `m_boolVal` erişim güvenilmez sonuçlar üretecektir.
 
-##  <a name="m_dblval"></a>  CDBVariant::m_dblVal
+## <a name="cdbvariantm_chval"></a><a name="m_chval"></a>CDBVariant::m_chVal
 
-Türünde bir değer depolar **çift**.
-
-### <a name="remarks"></a>Açıklamalar
-
-`m_dblVal` Veri üyesine ait bir birleşime. Erişmeden önce `m_dblVal`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_DOUBLE için sonra ayarlanır `m_dblVal` geçerli bir değer içeriyor; Aksi takdirde, erişim `m_dblVal` güvenilir olmayan sonuçlar oluşturabilir.
-
-##  <a name="m_dwtype"></a>  CDBVariant::m_dwType
-
-Bu veri üyesi içinde depolanan değeri veri türünü içeren `CDBVariant` nesnenin birleşim veri üyesi.
+**İmzasız türdeki**bir değer depolar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu birleşim erişmeden önce değerini denetlemelidir `m_dwType` erişmek için hangi birleşim veri üyesi belirlemek için. İçin olası değerler aşağıdaki tabloda `m_dwType` ve karşılık gelen birleşim veri üyesi.
+Veri `m_chVal` üyesi bir birliğe aittir. Erişmeden `m_chVal`önce, önce [CDBVariant](#m_dwtype)değerini kontrol edin::m_dwType . DBVT_UCHAR `m_dwType` olarak ayarlanmışsa, `m_chVal` geçerli bir değer içerir; aksi takdirde, `m_chVal` erişim güvenilmez sonuçlar üretecektir.
 
-|m_dwType|Birleşim veri üyesi|
+## <a name="cdbvariantm_dblval"></a><a name="m_dblval"></a>CDBVariant::m_dblVal
+
+Bir değeri **çift tipte**depolar.
+
+### <a name="remarks"></a>Açıklamalar
+
+Veri `m_dblVal` üyesi bir birliğe aittir. Erişmeden `m_dblVal`önce, önce [CDBVariant](#m_dwtype)değerini kontrol edin::m_dwType . DBVT_DOUBLE `m_dwType` olarak ayarlanmışsa, `m_dblVal` geçerli bir değer içerir; aksi takdirde, `m_dblVal` erişim güvenilmez sonuçlar üretecektir.
+
+## <a name="cdbvariantm_dwtype"></a><a name="m_dwtype"></a>CDBVariant::m_dwType
+
+Bu veri üyesi, `CDBVariant` nesnenin birleşim veri üyesinde şu anda depolanan değer için veri türünü içerir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu birleşime erişmeden önce, hangi birleşim veri üyesine `m_dwType` erişeceklerini belirlemek için değerini denetlemeniz gerekir. Aşağıdaki tabloda olası değerler `m_dwType` ve ilgili birlik veri üyesi listeleilmektedir.
+
+|m_dwType|Birlik veri üyesi|
 |---------------|-----------------------|
-|DBVT_NULL|Bileşim üyesi erişimi için geçerli değil.|
+|DBVT_NULL|Hiçbir sendika üyesi erişim için geçerli değildir.|
 |DBVT_BOOL|[m_boolVal](#m_boolval)|
 |DBVT_UCHAR|[m_chVal](#m_chval)|
 |DBVT_SHORT|[m_iVal](#m_ival)|
@@ -176,71 +176,71 @@ Bu birleşim erişmeden önce değerini denetlemelidir `m_dwType` erişmek için
 |DBVT_ASTRING|[m_pstringA](#m_pstringa)|
 |DBVT_WSTRING|[m_pstringW](#m_pstringw)|
 
-##  <a name="m_fltval"></a>  CDBVariant::m_fltVal
+## <a name="cdbvariantm_fltval"></a><a name="m_fltval"></a>CDBVariant::m_fltVal
 
-Türünde bir değer depolar **float**.
-
-### <a name="remarks"></a>Açıklamalar
-
-`m_fltVal` Veri üyesine ait bir birleşime. Erişmeden önce `m_fltVal`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_SINGLE için sonra ayarlanır `m_fltVal` geçerli bir değer içeriyor; Aksi takdirde, erişim `m_fltVal` güvenilir olmayan sonuçlar oluşturabilir.
-
-##  <a name="m_ival"></a>  CDBVariant::m_iVal
-
-Türünde bir değer depolar **kısa**.
+Bir tür **float**değerini depolar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_iVal` Veri üyesine ait bir birleşime. Erişmeden önce `m_iVal`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_SHORT için sonra ayarlanır `m_iVal` geçerli bir değer içeriyor; Aksi takdirde, erişim `m_iVal` güvenilir olmayan sonuçlar oluşturabilir.
+Veri `m_fltVal` üyesi bir birliğe aittir. Erişmeden `m_fltVal`önce, önce [CDBVariant](#m_dwtype)değerini kontrol edin::m_dwType . DBVT_SINGLE `m_dwType` olarak ayarlanmışsa, `m_fltVal` geçerli bir değer içerir; aksi takdirde, `m_fltVal` erişim güvenilmez sonuçlar üretecektir.
 
-##  <a name="m_lval"></a>  CDBVariant::m_lVal
+## <a name="cdbvariantm_ival"></a><a name="m_ival"></a>CDBVariant::m_iVal
 
-Türünde bir değer depolar **uzun**.
-
-### <a name="remarks"></a>Açıklamalar
-
-`m_lVal` Veri üyesine ait bir birleşime. Erişmeden önce `m_lVal`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_LONG için sonra ayarlanır `m_lVal` geçerli bir değer içeriyor; Aksi takdirde, erişim `m_lVal` güvenilir olmayan sonuçlar oluşturabilir.
-
-##  <a name="m_pbinary"></a>  CDBVariant::m_pbinary
-
-Türü bir nesneye bir işaretçi depolayan [CLongBinary](../../mfc/reference/clongbinary-class.md).
+Bir değeri **kısa**türün depolar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_pbinary` Veri üyesine ait bir birleşime. Erişmeden önce `m_pbinary`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_BINARY için sonra ayarlanır `m_pbinary` geçerli bir işaretçi içerir; Aksi takdirde, erişim `m_pbinary` güvenilir olmayan sonuçlar oluşturabilir.
+Veri `m_iVal` üyesi bir birliğe aittir. Erişmeden `m_iVal`önce, önce [CDBVariant](#m_dwtype)değerini kontrol edin::m_dwType . DBVT_SHORT `m_dwType` olarak ayarlanmışsa, `m_iVal` geçerli bir değer içerir; aksi takdirde, `m_iVal` erişim güvenilmez sonuçlar üretecektir.
 
-##  <a name="m_pdate"></a>  CDBVariant::m_pdate
+## <a name="cdbvariantm_lval"></a><a name="m_lval"></a>CDBVariant::m_lVal
 
-TIMESTAMP_STRUCT türünde bir nesne için bir işaretçi depolar.
-
-### <a name="remarks"></a>Açıklamalar
-
-`m_pdate` Veri üyesine ait bir birleşime. Erişmeden önce `m_pdate`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_DATE için sonra ayarlanır `m_pdate` geçerli bir işaretçi içerir; Aksi takdirde, erişim `m_pdate` güvenilir olmayan sonuçlar oluşturabilir.
-
-TIMESTAMP_STRUCT veri türü hakkında daha fazla bilgi için Ek Yardım konusuna [C veri türleri](/sql/odbc/reference/appendixes/c-data-types) ek d *ODBC Programcının Başvurusu* Windows SDK.
-
-##  <a name="m_pstring"></a>  CDBVariant::m_pstring
-
-Türü bir nesneye bir işaretçi depolayan [CString](../../atl-mfc-shared/reference/cstringt-class.md).
+**Uzun**tür bir değer depolar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_pstring` Veri üyesine ait bir birleşime. Erişmeden önce `m_pstring`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_STRING için sonra ayarlanır `m_pstring` geçerli bir işaretçi içerir; Aksi takdirde, erişim `m_pstring` güvenilir olmayan sonuçlar oluşturabilir.
+Veri `m_lVal` üyesi bir birliğe aittir. Erişmeden `m_lVal`önce, önce [CDBVariant](#m_dwtype)değerini kontrol edin::m_dwType . DBVT_LONG `m_dwType` olarak ayarlanmışsa, `m_lVal` geçerli bir değer içerir; aksi takdirde, `m_lVal` erişim güvenilmez sonuçlar üretecektir.
 
-##  <a name="m_pstringa"></a>  CDBVariant::m_pstringA
+## <a name="cdbvariantm_pbinary"></a><a name="m_pbinary"></a>CDBVariant::m_pbinary
 
-Bir ASCII yönelik bir işaretçi depolayan [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesne.
-
-### <a name="remarks"></a>Açıklamalar
-
-`m_pstringA` Veri üyesine ait bir birleşime. Erişmeden önce `m_pstringA`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_ASTRING için sonra ayarlanır `m_pstringA` geçerli bir işaretçi içerir; Aksi takdirde, erişim `m_pstringA` güvenilir olmayan sonuçlar oluşturabilir.
-
-##  <a name="m_pstringw"></a>  CDBVariant::m_pstringW
-
-Bir geniş yönelik bir işaretçi depolayan [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesne.
+[CLongBinary](../../mfc/reference/clongbinary-class.md)türünden bir nesneye işaretçi depolar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_pstringW` Veri üyesine ait bir birleşime. Erişmeden önce `m_pstringW`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_WSTRING için sonra ayarlanır `m_pstringW` geçerli bir işaretçi içerir; Aksi takdirde, erişim `m_pstringW` güvenilir olmayan sonuçlar oluşturabilir.
+Veri `m_pbinary` üyesi bir birliğe aittir. Erişmeden `m_pbinary`önce, önce [CDBVariant](#m_dwtype)değerini kontrol edin::m_dwType . DBVT_BINARY `m_dwType` olarak ayarlanmışsa, `m_pbinary` geçerli bir işaretçi içerir; aksi takdirde, `m_pbinary` erişim güvenilmez sonuçlar üretecektir.
+
+## <a name="cdbvariantm_pdate"></a><a name="m_pdate"></a>CDBVariant::m_pdate
+
+Bir işaretçiyi TIMESTAMP_STRUCT türünden bir nesneye depolar.
+
+### <a name="remarks"></a>Açıklamalar
+
+Veri `m_pdate` üyesi bir birliğe aittir. Erişmeden `m_pdate`önce, önce [CDBVariant](#m_dwtype)değerini kontrol edin::m_dwType . DBVT_DATE `m_dwType` olarak ayarlanmışsa, `m_pdate` geçerli bir işaretçi içerir; aksi takdirde, `m_pdate` erişim güvenilmez sonuçlar üretecektir.
+
+TIMESTAMP_STRUCT veri türü hakkında daha fazla bilgi için, Windows SDK'daki *ODBC Programcısı Başvurusu'nun* Ek D'sindeki [C Veri Türleri](/sql/odbc/reference/appendixes/c-data-types) konusuna bakın.
+
+## <a name="cdbvariantm_pstring"></a><a name="m_pstring"></a>CDBVariant::m_pstring
+
+Bir işaretçiyi [CString](../../atl-mfc-shared/reference/cstringt-class.md)türünden bir nesneye depolar.
+
+### <a name="remarks"></a>Açıklamalar
+
+Veri `m_pstring` üyesi bir birliğe aittir. Erişmeden `m_pstring`önce, önce [CDBVariant](#m_dwtype)değerini kontrol edin::m_dwType . DBVT_STRING `m_dwType` olarak ayarlanmışsa, `m_pstring` geçerli bir işaretçi içerir; aksi takdirde, `m_pstring` erişim güvenilmez sonuçlar üretecektir.
+
+## <a name="cdbvariantm_pstringa"></a><a name="m_pstringa"></a>CDBVariant::m_pstringA
+
+Bir ascii [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine işaretçi depolar.
+
+### <a name="remarks"></a>Açıklamalar
+
+Veri `m_pstringA` üyesi bir birliğe aittir. Erişmeden `m_pstringA`önce, önce [CDBVariant](#m_dwtype)değerini kontrol edin::m_dwType . DBVT_ASTRING `m_dwType` olarak ayarlanmışsa, `m_pstringA` geçerli bir işaretçi içerir; aksi takdirde, `m_pstringA` erişim güvenilmez sonuçlar üretecektir.
+
+## <a name="cdbvariantm_pstringw"></a><a name="m_pstringw"></a>CDBVariant::m_pstringW
+
+Bir işaretçiyi geniş bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine depolar.
+
+### <a name="remarks"></a>Açıklamalar
+
+Veri `m_pstringW` üyesi bir birliğe aittir. Erişmeden `m_pstringW`önce, önce [CDBVariant](#m_dwtype)değerini kontrol edin::m_dwType . DBVT_WSTRING `m_dwType` olarak ayarlanmışsa, `m_pstringW` geçerli bir işaretçi içerir; aksi takdirde, `m_pstringW` erişim güvenilmez sonuçlar üretecektir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

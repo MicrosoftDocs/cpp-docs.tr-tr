@@ -1,5 +1,5 @@
 ---
-title: CTreeView sınıfı
+title: CTreeView Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CTreeView
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CTreeView [MFC], CTreeView
 - CTreeView [MFC], GetTreeCtrl
 ms.assetid: 5df583a6-d69f-42ca-9d8d-57e04558afff
-ms.openlocfilehash: fec8379a3944d981672754274f50dd4e60f71b61
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 2ef93152c83d3bbec2b89ada0596ee612b24701b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421431"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373290"
 ---
-# <a name="ctreeview-class"></a>CTreeView sınıfı
+# <a name="ctreeview-class"></a>CTreeView Sınıfı
 
-, MFC 'nin belge görünümü mimarisi ile ağaç denetimi işlevselliğini kapsülleyen sınıf olan [Ctreecp 'nin ve Ctreecp](../../mfc/reference/ctreectrl-class.md)kullanımını basitleştirir.
+MFC'nin belge görünümü mimarisiyle ağaç denetimi işlevini kapsülleyen sınıf [Olan CTreeCtrl'in](../../mfc/reference/ctreectrl-class.md)ve ağaç denetiminin kullanımını kolaylaştırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,31 +29,31 @@ class CTreeView : public CCtrlView
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CTreeView:: CTreeView](#ctreeview)|`CTreeView` nesnesi oluşturur.|
+|[CTreeView::CTreeView](#ctreeview)|Bir `CTreeView` nesne inşa eder.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CTreeView:: Gettreeci](#gettreectrl)|Görünümle ilişkili ağaç denetimini döndürür.|
+|[CTreeView::GetTreeCtrl](#gettreectrl)|Görünümle ilişkili ağaç denetimini döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu mimari hakkında daha fazla bilgi için bkz. [CView](../../mfc/reference/cview-class.md) sınıfı için genel bakış ve burada alıntı yapılan çapraz başvurular.
+Bu mimari hakkında daha fazla bilgi için [CView](../../mfc/reference/cview-class.md) sınıfına genel bakışve burada atıfta bulunulan çapraz referanslar bölümüne bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CView](../../mfc/reference/cview-class.md)
+[Cview](../../mfc/reference/cview-class.md)
 
 [CCtrlView](../../mfc/reference/cctrlview-class.md)
 
@@ -61,19 +61,19 @@ Bu mimari hakkında daha fazla bilgi için bkz. [CView](../../mfc/reference/cvie
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxcview. h
+**Üstbilgi:** afxcview.h
 
-##  <a name="ctreeview"></a>CTreeView:: CTreeView
+## <a name="ctreeviewctreeview"></a><a name="ctreeview"></a>CTreeView::CTreeView
 
-`CTreeView` nesnesi oluşturur.
+Bir `CTreeView` nesne inşa eder.
 
 ```
 CTreeView();
 ```
 
-##  <a name="gettreectrl"></a>CTreeView:: Gettreeci
+## <a name="ctreeviewgettreectrl"></a><a name="gettreectrl"></a>CTreeView::GetTreeCtrl
 
-Görünümle ilişkili ağaç denetimine bir başvuru döndürür.
+Görünümle ilişkili ağaç denetimine bir başvuru verir.
 
 ```
 CTreeCtrl& GetTreeCtrl() const;

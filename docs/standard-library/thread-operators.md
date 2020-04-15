@@ -1,5 +1,5 @@
 ---
-title: '&lt;iş parçacığı&gt; işleçleri'
+title: '&lt;iş&gt; parçacığı işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - thread/std::operator!=
@@ -18,24 +18,24 @@ helpviewer_keywords:
 - std::operator&lt;&lt; (thread)
 - std::operator&lt;= (thread)
 - std::operator== (thread)
-ms.openlocfilehash: c0593b8016cf45abe64114958ccda84eb3704844
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 6312d14dc681736ee396d5c7af6c50ba8d72cd3a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420724"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375826"
 ---
-# <a name="ltthreadgt-operators"></a>&lt;iş parçacığı&gt; işleçleri
+# <a name="ltthreadgt-operators"></a>&lt;iş&gt; parçacığı işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işleç&gt;](#op_gt)|[işleç&gt;=](#op_gt_eq)|
-|[işleç&lt;](#op_lt)|[işleç&lt;&lt;](#op_lt_lt)|[işleç&lt;=](#op_lt_eq)|
-|[işleç = =](#op_eq_eq)|
+|[işleç!=](#op_neq)|[Işleç&gt;](#op_gt)|[Işleç&gt;=](#op_gt_eq)|
+|[Işleç&lt;](#op_lt)|[Işleç&lt;&lt;](#op_lt_lt)|[Işleç&lt;=](#op_lt_eq)|
+|[işleç==](#op_eq_eq)|
 
-## <a name="op_gt_eq"></a>işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a>Işleç&gt;=
 
-Bir `thread::id` nesnesinin diğerinden büyük veya ona eşit olup olmadığını belirler.
+Bir `thread::id` nesnenin diğerinden büyük mü yoksa diğerine eşit mi olduğunu belirler.
 
 ```cpp
 bool operator>= (
@@ -46,10 +46,10 @@ bool operator>= (
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `thread::id` nesnesi.
+Sol `thread::id` nesne.
 
-*Sağ*\
-Doğru `thread::id` nesnesi.
+*Doğru*\
+Doğru `thread::id` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -57,11 +57,11 @@ Doğru `thread::id` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev hiçbir özel durum oluşturmaz.
+Bu işlev herhangi bir özel durum atmaz.
 
-## <a name="op_gt"></a>işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a>Işleç&gt;
 
-Bir `thread::id` nesnesinin diğerinden daha büyük olup olmadığını belirler.
+Bir `thread::id` nesnenin diğerinden büyük olup olmadığını belirler.
 
 ```cpp
 bool operator> (
@@ -72,10 +72,10 @@ bool operator> (
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `thread::id` nesnesi.
+Sol `thread::id` nesne.
 
-*Sağ*\
-Doğru `thread::id` nesnesi.
+*Doğru*\
+Doğru `thread::id` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -83,11 +83,11 @@ Doğru `thread::id` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev hiçbir özel durum oluşturmaz.
+Bu işlev herhangi bir özel durum atmaz.
 
-## <a name="op_lt_eq"></a>işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a>Işleç&lt;=
 
-Bir `thread::id` nesnesinin diğerinden daha küçük veya ona eşit olup olmadığını belirler.
+Bir `thread::id` nesnenin diğerinden küçük mü yoksa diğerine eşit mi olduğunu belirler.
 
 ```cpp
 bool operator<= (
@@ -98,10 +98,10 @@ bool operator<= (
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `thread::id` nesnesi.
+Sol `thread::id` nesne.
 
-*Sağ*\
-Doğru `thread::id` nesnesi.
+*Doğru*\
+Doğru `thread::id` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -109,11 +109,11 @@ Doğru `thread::id` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev hiçbir özel durum oluşturmaz.
+Bu işlev herhangi bir özel durum atmaz.
 
-## <a name="op_lt"></a>işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a>Işleç&lt;
 
-Bir `thread::id` nesnesinin diğerinden daha küçük olup olmadığını belirler.
+Bir `thread::id` nesnenin diğerinden küçük olup olmadığını belirler.
 
 ```cpp
 bool operator<(
@@ -124,24 +124,24 @@ bool operator<(
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `thread::id` nesnesi.
+Sol `thread::id` nesne.
 
-*Sağ*\
-Doğru `thread::id` nesnesi.
+*Doğru*\
+Doğru `thread::id` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*sol* , toplam sıralamada *sağ* önceyse **doğru** . Aksi takdirde, **false**.
+*sol* toplam sıralama *sağ* önce ise **doğrudur;** aksi takdirde, **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleci tüm `thread::id` nesnelerinde toplam sıralamayı tanımlar. Bu nesneler, ilişkilendirilebilir kapsayıcılarda anahtar olarak kullanılabilir.
+İşleç tüm `thread::id` nesnelerde toplam sıralama tanımlar. Bu nesneler, bağdaştırıcı kaplarda anahtar olarak kullanılabilir.
 
-Bu işlev hiçbir özel durum oluşturmaz.
+Bu işlev herhangi bir özel durum atmaz.
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a>işleç!=
 
-Eşitsizlik için iki `thread::id` nesnesini karşılaştırır.
+Eşitsizlik için `thread::id` iki nesneyi karşılaştırır.
 
 ```cpp
 bool operator!= (
@@ -152,10 +152,10 @@ bool operator!= (
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `thread::id` nesnesi.
+Sol `thread::id` nesne.
 
-*Sağ*\
-Doğru `thread::id` nesnesi.
+*Doğru*\
+Doğru `thread::id` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -163,11 +163,11 @@ Doğru `thread::id` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev hiçbir özel durum oluşturmaz.
+Bu işlev herhangi bir özel durum atmaz.
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç==
 
-, Eşitlik için iki `thread::id` nesnesini karşılaştırır.
+Eşitlik için `thread::id` iki nesneyi karşılaştırır.
 
 ```cpp
 bool operator== (
@@ -178,22 +178,22 @@ bool operator== (
 ### <a name="parameters"></a>Parametreler
 
 *Sol*\
-Sol `thread::id` nesnesi.
+Sol `thread::id` nesne.
 
-*Sağ*\
-Doğru `thread::id` nesnesi.
+*Doğru*\
+Doğru `thread::id` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-iki nesne yürütmenin aynı iş parçacığını temsil ediyorsa veya hiçbir nesne bir yürütme iş parçacığını temsil ediyorsa, **true** ; Aksi takdirde, **false**.
+iki nesne aynı yürütme dizisini temsil ediyorsa veya nesne yürütme iş parçacığıtemsil **değilse;** aksi takdirde, **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev hiçbir özel durum oluşturmaz.
+Bu işlev herhangi bir özel durum atmaz.
 
-## <a name="op_lt_lt"></a>işleç&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a>Işleç&lt;&lt;
 
-Bir `thread::id` nesnesinin bir akışa metin temsilini ekler.
+Bir `thread::id` nesnenin metin gösterimini bir akışa ekler.
 
 ```cpp
 template <class Elem, class Tr>
@@ -203,22 +203,22 @@ basic_ostream<Elem, Tr>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*OSTR*\
-[Basic_ostream](../standard-library/basic-ostream-class.md) nesnesi.
+*Ostr*\
+[basic_ostream](../standard-library/basic-ostream-class.md) bir nesne.
 
-*Kimlik*\
+*Kimliği*\
 Bir `thread::id` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*OSTR*.
+*Ostr.*
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, *OSTR*içine *kimlik* ekler.
+Bu işlev *Ostr*içine *Id* ekler.
 
-İki `thread::id` nesnesi eşit olarak karşılaştırırsanız, bu nesnelerin eklenen metin gösterimleri aynı olanlardır.
+İki `thread::id` nesne eşit olarak karşılaştırırsa, bu nesnelerin eklenen metin gösterimleri aynıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<iş parçacığı >](../standard-library/thread.md)
+[\<iş parçacığı>](../standard-library/thread.md)

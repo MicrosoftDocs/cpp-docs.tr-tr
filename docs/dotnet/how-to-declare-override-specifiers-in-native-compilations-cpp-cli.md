@@ -1,28 +1,28 @@
 ---
-title: 'Nasıl yapılır: Geçersiz kılma tanımlayıcılarını bildirme (C++/CLI)'
+title: 'Nasıl yapılır: Geçersiz Kılma Belirtileyicilerini Bildir (C++/CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - override specifiers in native compilation, overriding
 ms.assetid: d0551836-9ac7-41eb-a6e9-a4b3ef60767d
-ms.openlocfilehash: db74ef226242ec8f4f70f2769fbc8ba102a808c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9f3f6855f257d0af250b9bbdd2c0360b308ce775
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387428"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374444"
 ---
-# <a name="how-to-declare-override-specifiers-in-native-compilations-ccli"></a>Nasıl yapılır: Yerel derlemelerde geçersiz kılma tanımlayıcılarını bildirme (C++/CLI)
+# <a name="how-to-declare-override-specifiers-in-native-compilations-ccli"></a>Nasıl yapılır: Yerel Derlemelerde Geçersiz Kılma Tanımlayıcılarını Bildirme (C++/CLI)
 
-[korumalı](../extensions/sealed-cpp-component-extensions.md), [soyut](../extensions/abstract-cpp-component-extensions.md), ve [geçersiz kılma](../extensions/override-cpp-component-extensions.md) kullanmayan derlemelerde kullanılabilir **/ZW** veya [/CLR](../build/reference/clr-common-language-runtime-compilation.md).
+[mühürlü](../extensions/sealed-cpp-component-extensions.md), [özet](../extensions/abstract-cpp-component-extensions.md)ve [geçersiz kılma](../extensions/override-cpp-component-extensions.md) **/ZW** veya [/clr](../build/reference/clr-common-language-runtime-compilation.md)kullanmayan derlemelerde mevcuttur.
 
 > [!NOTE]
->  ISO C ++ 11 standart dil sahip [geçersiz kılma](../cpp/override-specifier.md) tanımlayıcısı ve [son](../cpp/final-specifier.md) tanımlayıcısı ve hem de Visual Studio kullanımda desteklenir `final` yerine `sealed` kodda yöneliktir yalnızca yerel olarak derlenmiş.
+> ISO C++11 Standart dili [geçersiz kılma](../cpp/override-specifier.md) tanımlayıcısına ve [son](../cpp/final-specifier.md) tanımlayıcıya sahiptir ve her ikisi de `final` yalnızca `sealed` yerel olarak derlenecek kod yerine Visual Studio Use'da desteklenir.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki örnek, gösterir `sealed` yerel derlemelerde geçerlidir.
+Aşağıdaki örnek, `sealed` yerel derlemelerde geçerli olduğunu gösterir.
 
 ### <a name="code"></a>Kod
 
@@ -51,7 +51,7 @@ public:
 
 ### <a name="description"></a>Açıklama
 
-Sonraki örnek, gösterir `override` yerel derlemelerde geçerlidir.
+Sonraki örnek, `override` yerel derlemelerde geçerli olduğunu gösterir.
 
 ### <a name="code"></a>Kod
 
@@ -73,7 +73,7 @@ public:
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek, gösterir `abstract` yerel derlemelerde geçerlidir.
+Bu örnek, `abstract` yerel derlemelerde geçerli olduğunu gösterir.
 
 ### <a name="code"></a>Kod
 

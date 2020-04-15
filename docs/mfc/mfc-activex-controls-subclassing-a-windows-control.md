@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX denetimleri: Bir Windows denetimini alt sınıf yapma'
+title: 'MFC ActiveX Denetimleri: Bir Windows Denetimini Alt Sınıf Yapma'
 ms.date: 09/12/2018
 f1_keywords:
 - precreatewindow
@@ -16,85 +16,85 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], creating
 - IsSubclassed method [MFC]
 ms.assetid: 3236d4de-401f-49b7-918d-c84559ecc426
-ms.openlocfilehash: 7042df6e7b7dc2c9a608470ba7cfc5a9e9f6127a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ccebbad22be92b84fa2fd84434f788484d332cce
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62239517"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375993"
 ---
-# <a name="mfc-activex-controls-subclassing-a-windows-control"></a>MFC ActiveX denetimleri: Bir Windows denetimini alt sınıf yapma
+# <a name="mfc-activex-controls-subclassing-a-windows-control"></a>MFC ActiveX Denetimleri: Bir Windows Denetimini Alt Sınıf Yapma
 
-Bu makalede, bir ActiveX denetimi oluşturmak için ortak bir Windows denetimini alt sınıf yapma işlemi açıklanır. Mevcut bir Windows sınıflara denetim ActiveX denetimini geliştirmek için bir hızlı yoldur. Yeni Denetim boyama ve fare tıklamalarına yanıt verme gibi alt sınıflanan Windows denetimin yeteneklerini sahip olur. MFC ActiveX denetimleri örnek [düğmesi](../overview/visual-cpp-samples.md) bir Windows denetimini alt sınıf yapma, bir örnek verilmiştir.
+Bu makalede, activex denetimi oluşturmak için ortak bir Windows denetimi alt sınıflandırma işlemi açıklanmaktadır. Varolan bir Windows denetimini alt sınıflandırmak, ActiveX denetimini geliştirmenin hızlı bir yoludur. Yeni denetim, fare tıklamalarını boyama ve yanıt verme gibi alt sınıflanmış Windows denetiminin yeteneklerine sahip olacaktır. MFC ActiveX, örnek [BUTTON](../overview/visual-cpp-samples.md) denetimlerini bir Windows denetiminin alt sınıflanmasına bir örnektir.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
 
-Bir Windows denetimini alt sınıf için aşağıdaki görevleri tamamlayın:
+Windows denetimini alt sınıfa almak için aşağıdaki görevleri tamamlayın:
 
-- [COleControl Issubclassedcontrol ve PreCreateWindow üye işlevleri geçersiz kılma](#_core_overriding_issubclassedcontrol_and_precreatewindow)
+- [COleControl'un IsSubclassedControl ve PreCreateWindow üye işlevlerini geçersiz kılın](#_core_overriding_issubclassedcontrol_and_precreatewindow)
 
-- [OnDraw üye işlevini Değiştir](#_core_modifying_the_ondraw_member_function)
+- [OnDraw üye işlevini değiştirme](#_core_modifying_the_ondraw_member_function)
 
-- [Denetime yansıtılan tüm ActiveX denetim iletileri (OCM) işleme](#_core_handling_reflected_window_messages)
+- [Kontrole yansıyan herhangi bir ActiveX kontrol iletisini (OCM) işleme](#_core_handling_reflected_window_messages)
 
    > [!NOTE]
-   > Kullanarak sınıflandırılacak denetimi seçtiğinizde bu iş çoğunu sizin için ActiveX Denetim Sihirbazı tarafından yapılır **üst pencere sınıfını seçin** aşağı açılan listede **denetim ayarları** sayfası.
+   > Bu çalışmanın çoğu, **Denetim Ayarları** sayfasındaki **Üst Pencere Sınıfı** açılır listesini kullanarak alt sınıflanacak denetimi seçerseniz ActiveX Denetim Sihirbazı tarafından yapılır.
 
-##  <a name="_core_overriding_issubclassedcontrol_and_precreatewindow"></a> Issubclassedcontrol ve PreCreateWindow geçersiz kılma
+## <a name="overriding-issubclassedcontrol-and-precreatewindow"></a><a name="_core_overriding_issubclassedcontrol_and_precreatewindow"></a>IsSubclassedControl ve PreCreateWindow Geçersiz Kılma
 
-Geçersiz kılınacak `PreCreateWindow` ve `IsSubclassedControl`, kod aşağıdaki satırları ekleyin **korumalı** denetim sınıf bildiriminin bölümünü:
+Geçersiz kılmak `PreCreateWindow` `IsSubclassedControl`ve denetim sınıfı bildiriminin **korumalı** bölümüne aşağıdaki kod satırlarını eklemek için:
 
 [!code-cpp[NVC_MFC_AxSub#1](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_1.h)]
 
-Denetim uygulama dosyasında (. CPP), kod iki geçersiz kılınan işlevler uygulamak için aşağıdaki satırları ekleyin:
+Denetim uygulama dosyasında (. CPP), iki geçersiz kılınan işlevleri uygulamak için aşağıdaki kod satırlarını ekleyin:
 
 [!code-cpp[NVC_MFC_AxSub#2](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_2.cpp)]
 
-Bu örnekte, Windows Denetim düğmesi bildirimi belirtilen `PreCreateWindow`. Ancak, standart Windows denetimleri sınıflandırma. Standart Windows denetimleri hakkında daha fazla bilgi için bkz. [denetimleri](../mfc/controls-mfc.md).
+Bu örnekte, Windows düğmesi denetiminin `PreCreateWindow`. Ancak, herhangi bir standart Windows denetimleri alt sınıflanabilir. Standart Windows denetimleri hakkında daha fazla bilgi için [bkz.](../mfc/controls-mfc.md)
 
-Bir Windows denetimini alt sınıf yapma, belirli pencere stili (WS_) veya denetimin penceresi oluşturulurken kullanılacak genişletilmiş pencere stili (WS_EX_) bayrakları belirtmek isteyebilirsiniz. Bu parametreleri için değerler belirleyebileceğiniz `PreCreateWindow` değiştirerek üye işlevi `cs.style` ve `cs.dwExStyle` alanları yapılandırın. Değişiklikler bu alanlara kullanarak yapılacak bir **veya** sınıfı tarafından ayarlanmış varsayılan bayrakları korumak için işlem, `COleControl`. Örneğin, DÜĞME denetimini denetimini alt sınıf yapma ve bir onay kutusu olarak görünmesini istiyorsanız uygulamasına aşağıdaki kod satırını ekleyin `CSampleCtrl::PreCreateWindow`, dönüş deyiminden önce:
+Bir Windows denetimini alt sınıflandırırken, denetim penceresi oluştururken kullanılacak belirli pencere stilini (WS_) veya genişletilmiş pencere stili (WS_EX_) bayraklarını belirtmek isteyebilirsiniz. Bu parametreler için üye işlevdeki değerleri, `cs.dwExStyle` yapı `cs.style` alanlarını ve yapı alanlarını değiştirerek ayarlayabilirsiniz. `PreCreateWindow` Bu alanlarda yapılan değişiklikler, sınıfa `COleControl`göre ayarlanan varsayılan bayrakları korumak için bir **OR** işlemi kullanılarak yapılmalıdır. Örneğin, denetim BUTTON denetimini alt sınıflıyorsa ve denetimin bir onay kutusu olarak görünmesini istiyorsanız, `CSampleCtrl::PreCreateWindow`iade deyiminden önce aşağıdaki kod satırını uygulamaya ekleyin:
 
 [!code-cpp[NVC_MFC_AxSub#3](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_3.cpp)]
 
-Bu işlem sınıfının varsayılan stili bayrağı (WS_CHILD) bırakarak BS_CHECKBOX stili bayrak ekler `COleControl` sağlam.
+Bu işlem, sınıfın `COleControl` varsayılan stil bayrağını (WS_CHILD) bozulmadan bırakırken BS_CHECKBOX stili bayrağını ekler.
 
-##  <a name="_core_modifying_the_ondraw_member_function"></a> OnDraw üye işlevi değiştirme
+## <a name="modifying-the-ondraw-member-function"></a><a name="_core_modifying_the_ondraw_member_function"></a>OnDraw Üye Işlevini Değiştirme
 
-Karşılık gelen Windows Denetim aynı görünüme tutmak, sınıflandırılmış denetim istiyorsanız `OnDraw` denetimi için üye işlevi, yalnızca bir çağrı içermelidir `DoSuperclassPaint` aşağıdaki örnekteki gibi bir üye işlevi:
+Alt sınıf denetiminizin ilgili Windows denetimiyle aynı görünümü korumasını istiyorsanız, denetimin `OnDraw` üye işlevi `DoSuperclassPaint` aşağıdaki örnekte olduğu gibi yalnızca üye işlevine bir çağrı içermelidir:
 
 [!code-cpp[NVC_MFC_AxSub#4](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_4.cpp)]
 
-`DoSuperclassPaint` Üye işlevi, tarafından uygulanan `COleControl`, denetimin sınırlayıcı dikdörtgeni içinde belirtilen cihaz bağlamında çizmek için Windows Denetim pencere yordamını kullanır. Bile etkin olmadığı zaman denetimin görünür yapar.
+Tarafından `DoSuperclassPaint` uygulanan üye `COleControl`işlev, sınırlayan dikdörtgen içinde, belirtilen aygıt bağlamında denetim çizmek için Windows denetiminin pencere yordamını kullanır. Bu, etkin olmasa bile denetimi görünür kılar.
 
 > [!NOTE]
->  `DoSuperclassPaint` Üye işlevi, bir cihaz bağlamı olarak geçirilmesini sağlayan denetim türleri ile çalışır *wParam* WM_PAINT ileti. Bu, bazı kaydırma çubuğu ve DÜĞME gibi standart Windows denetimleri ve tüm ortak denetimleri içerir. Bu davranış desteklemeyen denetimler için etkin olmayan bir denetim düzgün görüntülenmesi için kendi kodunuzu sağlamanız gerekir.
+> Üye `DoSuperclassPaint` işlev, yalnızca aygıt bağlamının WM_PAINT bir iletinin *wParam'ı* olarak geçirilmesine izin veren denetim türleri ile çalışır. Buna SCROLLBAR ve BUTTON gibi standart Windows denetimlerinden bazıları ve tüm ortak denetimler dahildir. Bu davranışı desteklemeyen denetimler için, etkin olmayan bir denetimi düzgün bir şekilde görüntülemek için kendi kodunuzu sağlamanız gerekir.
 
-##  <a name="_core_handling_reflected_window_messages"></a> Yansımış pencere iletilerini işleme
+## <a name="handling-reflected-window-messages"></a><a name="_core_handling_reflected_window_messages"></a>Yansıyan Pencere İletilerini Işleme
 
-Windows denetimleri, genellikle belirli bir pencere iletileri kendi üst penceresine Gönder. WM_COMMAND gibi bu iletileri bazıları bildirim kullanıcı tarafından bir eylem sağlar. WM_CTLCOLOR gibi diğer üst penceresinden bilgi almak için kullanılır. ActiveX denetimi genellikle diğer yöntemlerle üst pencere ile iletişim kurar. Bildirimler (olay bildirimleri gönderme) olayları tetikleme tarafından iletildiği ve denetim kapsayıcısı hakkında bilgi kapsayıcının ortam özelliklerine erişme tarafından alınır. Bu iletişim teknikleri olmadığı için denetim tarafından gönderilen tüm pencere iletilerini işlemek için ActiveX denetim kapsayıcıları beklenmez.
+Windows denetimleri genellikle üst pencerelerine belirli pencere iletileri gönderir. bu iletilerin bazıları(WM_COMMAND gibi, kullanıcı tarafından bir eylemin bildirimini sağlar. WM_CTLCOLOR gibi diğerleri, üst pencereden bilgi almak için kullanılır. ActiveX denetimi genellikle ana pencereyle başka yollarla iletişim kurar. Bildirimler, olay bildirimleri gönderilerek (olay bildirimleri gönderilerek) iletilir ve kontrol konteyneri ile ilgili bilgiler konteynerin ortam özelliklerine erişilerek elde edilir. Bu iletişim teknikleri mevcut olduğundan, ActiveX denetim kapları denetim tarafından gönderilen herhangi bir pencere iletileri işlemek için beklenmez.
 
-Kapsayıcı sınıflandırılmış bir Windows Denetim tarafından gönderilen pencere iletilerini almasını önlemek için `COleControl` denetimin üst öğe olarak hizmet vermek için fazladan bir pencere oluşturur. Bir "reflector," olarak adlandırılan bu ek penceresinde, alt sınıfların bir Windows denetleyebilir ve aynı boyut ve konum denetim pencere sahip yalnızca bir ActiveX denetimi için oluşturulur. Reflector penceresi belirli pencere iletilerini yakalar ve bunları denetime geri gönderir. Denetimi alt pencere yordamını ardından (örneğin, bir olayı tetiklenmekte) bir ActiveX denetimi için uygun eylemleri gerçekleştirerek bu yansımış iletileri işleyebilir. Bkz: [yansımış pencere iletisi kimlikleri](../mfc/reflected-window-message-ids.md) yansımış iletiler ve bunlara karşılık gelen iletileri ilerlemesinden windows listesi için.
+Kapsayıcının alt sınıflı bir Windows denetimi tarafından gönderilen pencere `COleControl` iletilerini almasını önlemek için, denetimin üst öğesi olarak hizmet vermek için fazladan bir pencere oluşturur. "Yansıtıcı" adı verilen bu ek pencere, yalnızca Windows denetimini alt sınıflayan ve denetim penceresiyle aynı boyut ve konuma sahip bir ActiveX denetimi için oluşturulur. Reflektör penceresi belirli pencere iletilerini yakalar ve bunları denetime geri gönderir. Denetim, pencere yordamında, daha sonra activex denetimi için uygun eylemleri gerçekleştirerek (örneğin, bir olayı ateşleyerek) bu yansıyan iletileri işleyebilir. Ele geçirilen windows iletilerinin ve bunların karşılık gelen yansıyan iletilerinin listesi için [Yansıyan Pencere İletisi Kimliklerini](../mfc/reflected-window-message-ids.md) görün.
 
-Bir ActiveX denetimi kapsayıcısı ihtiyacını ortadan ileti yansıması kendisi gerçekleştirmek için tasarlanmış olması `COleControl` reflector penceresi ve çalışma zamanı sınıflandırılmış bir Windows Denetim için ek yükü azaltarak oluşturmak için. `COleControl` kapsayıcı MessageReflect ortam özellik değerini denetleyerek bu özellik destekleyip desteklemediğini algılar **TRUE**.
+ActiveX denetim kapsayıcısı, reflektör penceresi oluşturma gereksinimini `COleControl` ortadan kaldırarak ve alt sınıflanmış bir Windows denetimi için çalışma süresini azaltarak ileti yansımasının kendisini gerçekleştirmek üzere tasarlanabilir. `COleControl`**TRUE**değeri olan bir MessageReflect ortam özelliğini denetleyerek kapsayıcının bu özelliği destekleyip desteklemediğini algılar.
 
-Yansımış pencere iletisini işlemek için Denetim İleti eşlemesi için bir giriş ekleyin ve bir işleyici işlevi uygulayın. Yansımış iletileri standart Windows tarafından tanımlanan ileti kümesini parçası olmadığından, sınıf görünümü gibi bir ileti işleyicileri ekleme desteklemez. Ancak, el ile bir işleyici eklemek zor değildir.
+Yansıyan bir pencere iletisini işlemek için denetim iletisi eşlemi'ne bir giriş ekleyin ve işleyici işlevi uygulayın. Yansıyan iletiler Windows tarafından tanımlanan standart ileti kümesinin bir parçası olmadığından, Sınıf Görünümü bu tür ileti işleyicileri eklemeyi desteklemez. Ancak, bir işleyiciyi el ile eklemek zor değildir.
 
-Eklenecek ileti işleyicisi yansımış pencere iletisi için el ile aşağıdakileri yapın:
+Yansıyan bir pencere iletisi için ileti işleyicisi eklemek için el ile aşağıdakileri yapın:
 
-- Denetim sınıfı. H dosyasına bir işleyici işlevi bildirin. İşlev dönüş türü olmalıdır **LRESULT** ve türleriyle iki parametre **WPARAM** ve **LPARAM**sırasıyla. Örneğin:
+- Kontrol sınıfında. H dosyası, bir işleyici işlevi bildirin. İşlev, sırasıyla **WPARAM** ve **LPARAM**tiplerine sahip bir **LRESULT** ve iki parametre nin dönüş türüne sahip olmalıdır. Örneğin:
 
    [!code-cpp[NVC_MFC_AxSub#5](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_5.h)]
     [!code-cpp[NVC_MFC_AxSub#6](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_6.h)]
 
-- Denetim sınıfı. CPP için ileti eşlemesi ON_MESSAGE girişi ekleyin. Bu girdi parametrelerinin İleti tanımlayıcısı ve işleyici işlevinin adı olmalıdır. Örneğin:
+- Kontrol sınıfında. CPP dosyası, ileti eşlemi ON_MESSAGE bir giriş ekleyin. Bu girişin parametreleri ileti tanımlayıcısı ve işleyici işlevinin adı olmalıdır. Örneğin:
 
    [!code-cpp[NVC_MFC_AxSub#7](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_7.cpp)]
 
-- Ayrıca. CPP dosyasına uygulamak `OnOcmCommand` yansıtılan iletiyi işlemek için üye işlevi. *WParam* ve *lParam* parametreleri özgün pencere iletisi aynı olur.
+- Ayrıca içinde . CPP dosyası, `OnOcmCommand` yansıyan iletiyi işlemek için üye işlevini uygulayın. *wParam* ve *lParam* parametreleri orijinal pencere iletisi ile aynıdır.
 
-MFC ActiveX denetimleri örneğe ilişkin bir örnek iletileri işlenme yansıtılan için başvurmak [düğmesi](../overview/visual-cpp-samples.md). Bunu gösterir bir `OnOcmCommand` BN_CLICKED bildirim kod algılayan ve tetikleme (gönderen) ile yanıtlar işleyicisi bir `Click` olay.
+Yansıyan iletilerin nasıl işlendiğine bir örnek olarak, MFC ActiveX denetimleri örnek [DÜĞMESINe](../overview/visual-cpp-samples.md)bakın. BN_CLICKED bildirim `OnOcmCommand` kodunu algılayan ve bir olayı ateşleyerek (göndererek) `Click` yanıt veren bir işleyici gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
+[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)

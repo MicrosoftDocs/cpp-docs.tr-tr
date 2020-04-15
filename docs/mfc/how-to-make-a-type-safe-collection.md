@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Tür kullanımı uyumlu koleksiyon yapma'
+title: 'Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - type-safe collections [MFC]
@@ -10,92 +10,92 @@ helpviewer_keywords:
 - serialization [MFC], collection classes
 - collection classes [MFC], deriving from nontemplate
 ms.assetid: 7230b2db-4283-4083-b098-eb231bf5b89e
-ms.openlocfilehash: c8be781bad699edb8cb0be844d79802269c3e0c5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1901100996a776244b57efe0951795ceec3c630a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160269"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377254"
 ---
-# <a name="how-to-make-a-type-safe-collection"></a>Nasıl yapılır: Tür kullanımı uyumlu koleksiyon yapma
+# <a name="how-to-make-a-type-safe-collection"></a>Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma
 
-Bu makalede, kendi veri türleri için tür kullanımı uyumlu koleksiyon yapma açıklanmaktadır. Konular şunlardır:
+Bu makalede, kendi veri türleri için tür güvenli koleksiyonları yapmak nasıl açıklanmaktadır. Konu başlıkları şunlardır:
 
-- [Şablona dayalı sınıflar için tür güvenliği kullanma](#_core_using_template.2d.based_classes_for_type_safety)
+- [Tür güvenliği için şablon tabanlı sınıfları kullanma](#_core_using_template.2d.based_classes_for_type_safety)
 
-- [Uygulama yardımcı işlevleri](#_core_implementing_helper_functions)
+- [Yardımcı işlevlerin uygulanması](#_core_implementing_helper_functions)
 
-- [Şablon Olmayandan koleksiyon sınıflarını kullanma](#_core_using_nontemplate_collection_classes)
+- [Şablon dışı toplama sınıflarını kullanma](#_core_using_nontemplate_collection_classes)
 
-Microsoft Foundation Class Kitaplığı, C++ şablonları temel alan önceden tanımlanmış tür kullanımı uyumlu koleksiyonlar sağlar. Şablonları oldukları için bu sınıflar, tür güvenliği ve tür atama ve bu amaç için bir şablon Olmayandan sınıfı kullanan diğer ek iş olmadan kullanım kolaylığı sağlamaya yardımcı olur. MFC örnek [TOPLAMAK](../overview/visual-cpp-samples.md) şablona dayalı koleksiyon sınıfları bir MFC uygulamasında kullanımını gösterir. Genel olarak, bu sınıflar, yeni Koleksiyonlar kod yazmak istediğiniz zaman kullanın.
+Microsoft Hazırlık Sınıfı Kitaplığı, C++ şablonlarını temel alan önceden tanımlanmış tür güvenli koleksiyonlar sağlar. Şablon olduklarından, bu sınıflar tür dökümü ve bu amaç için şablon olmayan bir sınıf kullanmayla ilgili diğer ekstra işler olmadan tür güvenliği ve kullanım kolaylığı sağlamaya yardımcı olur. MFC örnek [COLLECT,](../overview/visual-cpp-samples.md) bir MFC uygulamasında şablon tabanlı toplama sınıflarının kullanımını gösterir. Genel olarak, yeni koleksiyonkodu yazdığınızda bu sınıfları kullanın.
 
-##  <a name="_core_using_template.2d.based_classes_for_type_safety"></a> Şablona dayalı sınıflar için tür güvenliği kullanma
+## <a name="using-template-based-classes-for-type-safety"></a><a name="_core_using_template.2d.based_classes_for_type_safety"></a>Tür Güvenliği için Şablon Tabanlı Sınıfları Kullanma
 
-#### <a name="to-use-template-based-classes"></a>Şablona dayalı sınıflar kullanmak için
+#### <a name="to-use-template-based-classes"></a>Şablon tabanlı sınıfları kullanmak için
 
-1. Koleksiyon sınıfı türünün bir değişkeni bildirir. Örneğin:
+1. Koleksiyon sınıfı türünden bir değişken bildirin. Örneğin:
 
    [!code-cpp[NVC_MFCCollections#7](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_1.cpp)]
 
-1. Üye işlevlerini koleksiyon nesnesinin çağırın. Örneğin:
+1. Koleksiyon nesnesinin üye işlevlerini çağırın. Örneğin:
 
    [!code-cpp[NVC_MFCCollections#8](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_2.cpp)]
 
-1. Gerekirse, uygulama [yardımcı işlevleri](../mfc/reference/collection-class-helpers.md) ve [SerializeElements](../mfc/reference/collection-class-helpers.md#serializeelements). Bu işlevler uygulama hakkında daha fazla bilgi için bkz: [uygulama yardımcı işlevleri](#_core_implementing_helper_functions).
+1. Gerekirse, yardımcı [işlevleri](../mfc/reference/collection-class-helpers.md) uygulayın ve [Öğeleri Serialize.](../mfc/reference/collection-class-helpers.md#serializeelements) Bu işlevleriuygulama hakkında bilgi için [bkz.](#_core_implementing_helper_functions)
 
-Bu örnek, tamsayı listesi bildirimi gösterir. 1. adımda ilk parametre listesi öğeleri olarak depolanan veri türüdür. İkinci parametre nasıl veri geçen ve koleksiyon sınıfın üye işlevleri gibi döndürülen belirtir `Add` ve `GetAt`.
+Bu örnek, tamsayılar listesinin bildirimini gösterir. Adım 1'deki ilk parametre, listenin öğeleri olarak depolanan veri türüdür. İkinci parametre, verilerin koleksiyon sınıfının üye işlevlerine nasıl aktarılsüreceğini `Add` ve `GetAt`döndürüleceğini belirtir.
 
-##  <a name="_core_implementing_helper_functions"></a> Uygulama yardımcı işlevleri
+## <a name="implementing-helper-functions"></a><a name="_core_implementing_helper_functions"></a>Yardımcı Işlevlerin Uygulanması
 
-Şablona dayalı koleksiyon sınıfları `CArray`, `CList`, ve `CMap` türetilmiş koleksiyon sınıfınız için gerektiği gibi özelleştirebileceğiniz beş genel yardımcı işlevleri kullanın. Bu yardımcı işlevleri hakkında daha fazla bilgi için bkz: [koleksiyon sınıfı Yardımcıları](../mfc/reference/collection-class-helpers.md) içinde *MFC başvurusu*. Serileştirme fonksiyonunun uygulanması, şablona dayalı koleksiyon sınıfları birçok kullanım için gereklidir.
+Şablon tabanlı koleksiyon `CArray`sınıfları `CList` `CMap` ve türemiş koleksiyon sınıfınız için gerektiği gibi özelleştirebileceğiniz beş genel yardımcı işlevi kullanın. Bu yardımcı işlevler hakkında bilgi *için, MFC Başvurusu'ndaki* [Toplama Sınıfı Yardımcıları'na](../mfc/reference/collection-class-helpers.md) bakın. Şablon tabanlı koleksiyon sınıflarının çoğu kullanımı için serileştirme işlevinin uygulanması gereklidir.
 
-###  <a name="_core_serializing_elements"></a> Öğeleri seri hale getirme
+### <a name="serializing-elements"></a><a name="_core_serializing_elements"></a>Elementleri Serileştirme
 
-`CArray`, `CList`, Ve `CMap` sınıfların çağrısı `SerializeElements` depolamak için koleksiyon öğelerine veya bunların bir arşivden okumak için.
+, `CArray` `CList`ve `CMap` sınıflar `SerializeElements` koleksiyon öğelerini bir arşivden depolamayı veya bunları okumayı çağırır.
 
-Varsayılan uygulaması `SerializeElements` yardımcı işlevini nesnelerden bir bit düzeyinde yazma arşive yapar veya bit düzeyinde mi nesneleri içinde depolanan bağlı olarak bu nesnelere arşivden okuma veya arşivden alınır. Geçersiz kılma `SerializeElements` bu eylemi uygun değilse.
+Yardımcı işlevin `SerializeElements` varsayılan uygulaması, nesnelerden arşive doğru biraz yazı mı yazabilir, yoksa nesnelerin arşivde depolanıp depolanmadığına veya arşivden alınıp alınmadığına bağlı olarak arşivden nesnelere biraz okunur. Bu `SerializeElements` eylem uygun değilse geçersiz kılın.
 
-Koleksiyonunuz öğesinden türetilen nesneler depoluyorsa `CObject` ve kullandığınız `IMPLEMENT_SERIAL` makro koleksiyon öğesi sınıfın uygulaması içinde yerleşik olarak seri hale getirme işlevselliğini avantajlarından faydalanabilirsiniz `CArchive` ve `CObject`:
+Koleksiyonunuz türetilen nesneleri `CObject` depolarsa `IMPLEMENT_SERIAL` ve toplama öğesi sınıfının uygulanmasında makroyu kullanıyorsanız, yerleşik `CArchive` serileştirme işlevinden yararlanabilirsiniz ve: `CObject`
 
 [!code-cpp[NVC_MFCCollections#9](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_3.cpp)]
 
-Aşırı yüklenmiş ekleme işleçleri `CArchive` çağrı `CObject::Serialize` (veya bu işlevi geçersiz kılma) her `CPerson` nesne.
+Her `CArchive` `CPerson` nesne için çağrı `CObject::Serialize` (veya bu işlevin geçersiz kılınan) için aşırı yüklü ekleme işleçleri.
 
-##  <a name="_core_using_nontemplate_collection_classes"></a> Şablon Olmayandan koleksiyon sınıflarını kullanma
+## <a name="using-nontemplate-collection-classes"></a><a name="_core_using_nontemplate_collection_classes"></a>Şablon Olmayan Toplama Sınıflarını Kullanma
 
-MFC, MFC sürüm 1.0 ile tanıtılan koleksiyon sınıfları da destekler. Bu sınıf şablonlarına dayalı değil. Desteklenen türler'ın verileri içeren için kullanılabilir `CObject*`, `UINT`, `DWORD`, ve `CString`. Bu önceden tanımlanmış koleksiyonları kullanabilirsiniz (gibi `CObList`) öğesinden türetilen herhangi bir nesne koleksiyonları tutacak `CObject`. MFC gibi ilkel türler tutmak için önceden tanımlanmış diğer derlemeler de sağlar `UINT` ve void işaretçileri (`void`*). Genel olarak, ancak genellikle daha belirli bir sınıf ve türevleri nesnelerin tutmak için kendi tür kullanımı uyumlu koleksiyonlar tanımlamak yararlıdır. Koleksiyon sınıfları ile bunu şablonlar temelinde şablona dayalı sınıflar kullanmaktan daha fazla iş olduğunu unutmayın.
+MFC ayrıca MFC sürüm 1.0 ile tanıtılan toplama sınıflarını da destekler. Bu sınıflar şablonları temel almıyor. Desteklenen türlerin `CObject*`verilerini içermek için kullanılabilirler, `DWORD`, `CString` `UINT`, ve. Bu önceden tanımlanmış koleksiyonları (örneğin) `CObList`türetilen `CObject`nesnelerin koleksiyonlarını tutmak için kullanabilirsiniz. MFC ayrıca, işaretçiler ve boşluk işaretçileri (*) gibi `UINT` ilkel türleri tutmak için diğer önceden tanımlanmış koleksiyonlar da sağlar.`void` Ancak genel olarak, daha belirli bir sınıfın ve türevlerinin nesnelerini tutmak için kendi tür güvenli koleksiyonlarınızı tanımlamak genellikle yararlıdır. Şablonlara dayanmayan koleksiyon sınıflarıyla bunu yapmanın şablon tabanlı sınıfları kullanmaktan daha fazla iş olduğunu unutmayın.
 
-Şablon Olmayandan koleksiyonlarla tür kullanımı uyumlu koleksiyonlar oluşturmanın iki yolu vardır:
+Şablon olmayan koleksiyonlarla tür güvenli koleksiyonlar oluşturmanın iki yolu vardır:
 
-1. Şablon Olmayandan koleksiyonlar gerekirse tür atama ile kullanın. Bu daha kolay bir yaklaşımdır.
+1. Gerekirse tip döküm ile, şablon olmayan koleksiyonları kullanın. Bu daha kolay bir yaklaşımdır.
 
-1. Öğesinden türetilen ve şablon Olmayandan tür kullanımı uyumlu koleksiyon genişletebilirsiniz.
+1. Şablon olmayan bir tür güvenli koleksiyonundan türetin ve genişletin.
 
-#### <a name="to-use-the-nontemplate-collections-with-type-casting"></a>Şablon Olmayandan koleksiyonları tür atama ile kullanmak için
+#### <a name="to-use-the-nontemplate-collections-with-type-casting"></a>Tür döküm ile şablon olmayan koleksiyonları kullanmak için
 
-1. Şablon Olmayandan sınıflardan biri gibi kullanın `CWordArray`, doğrudan.
+1. Doğrudan , şablonsuz `CWordArray`sınıflardan birini kullanın.
 
-   Örneğin, oluşturabileceğiniz bir `CWordArray` ve 32-bit değerleri ekleyin ve ardından saklayabilirsiniz. Daha fazla yapmak için bir şey yoktur. Yalnızca önceden tanımlanmış işlevlerini kullanırsınız.
+   Örneğin, bir oluşturabilir `CWordArray` ve herhangi bir 32-bit değerleri ekleyebilirsiniz, sonra bunları almak. Yapacak başka bir şey yok. Sadece önceden tanımlanmış işlevselliği kullanın.
 
-   Önceden tanımlanmış bir koleksiyonu gibi kullanabilir `CObList`, türetilen herhangi bir nesne tutacak `CObject`. A `CObList` koleksiyon işaretçileri tutmak için tanımlanmış `CObject`. Listeden bir nesne aldığınızda, bu yana doğru türe sonucu cast gerekebilir `CObList` işlevler için işaretçiler döndürür `CObject`. Örneğin, depoladığınız `CPerson` nesneler bir `CObList` koleksiyonuna sahip bir işaretçi olarak alınan bir öğeyi dönüştürülecek bir `CPerson` nesne. Aşağıdaki örnekte bir `CObList` tutmak için koleksiyon `CPerson` nesneler:
+   Türetilen nesneleri tutmak için `CObList`önceden tanımlanmış bir koleksiyon da `CObject`kullanabilirsiniz. İşaretçileri `CObList` `CObject`' niçin tutmak için bir koleksiyon tanımlanır Bir nesneyi listeden aldığınızda, `CObList` işlevler işaretçileri `CObject`'ye döndürdüğünde niçin sonucu uygun türe dökmeniz gerekebilir Örneğin, nesneleri bir `CPerson` `CObList` koleksiyonda depolarsanız, bir `CPerson` nesneye işaretçi olmak için alınan bir öğeyi dökmeniz gerekir. Aşağıdaki örneknesneleri `CObList` tutmak `CPerson` için bir koleksiyon kullanır:
 
    [!code-cpp[NVC_MFCCollections#10](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_4.cpp)]
 
-   Bu teknik, önceden tanımlı bir koleksiyon türü kullanarak ve gerekirse atama birçok koleksiyon gereksinimleriniz için yeterli olabilir. Daha fazla işlevsellik veya daha fazla tür güvenliği gerekirse, şablona dayalı bir sınıf kullanma veya bir sonraki yordamı izleyin.
+   Önceden tanımlanmış bir toplama türü ve gerektiğinde döküm kullanma bu teknik toplama ihtiyaçlarının çoğu için yeterli olabilir. Daha fazla işlevselliğe veya daha fazla tür güvenliğine ihtiyacınız varsa, şablon tabanlı bir sınıf kullanın veya bir sonraki yordamı izleyin.
 
-#### <a name="to-derive-and-extend-a-nontemplate-type-safe-collection"></a>Türetilir ve bir şablon Olmayandan tür kullanımı uyumlu koleksiyon genişletmek için
+#### <a name="to-derive-and-extend-a-nontemplate-type-safe-collection"></a>Şablon olmayan bir tür güvenli koleksiyonu türetmek ve genişletmek için
 
-1. Kendi koleksiyon sınıfı önceden tanımlanmış bir şablon Olmayandan sınıflarının birinden türetilir.
+1. Kendi koleksiyon sınıfınızı önceden tanımlanmış olmayan şablon sınıflarından birinden türetin.
 
-   Sınıfınıza türetilen bir tür kullanımı uyumlu arabirimi var olan işlevleri sağlamak için tür açısından güvenli bir sarmalayıcı işlevleri ekleyebilirsiniz.
+   Sınıfınızı türeterken, varolan işlevlere tür güvenli bir arabirim sağlamak için tür güvenli sarıcı işlevleri ekleyebilirsiniz.
 
-   Örneğin, bir listeden türetilmiş `CObList` tutacak `CPerson` sarmalayıcı işlevleri eklemek nesneleri `AddHeadPerson` ve `GetHeadPerson`, aşağıda gösterildiği gibi.
+   `CObList` Örneğin, nesneleri tutmak `CPerson` için bir liste türetilmişse, sarıcı işlevlerini `AddHeadPerson` ve `GetHeadPerson`aşağıda gösterildiği gibi ekleyebilirsiniz.
 
    [!code-cpp[NVC_MFCCollections#11](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_5.h)]
 
-   Bu sarmalayıcı işlevleri ekleme ve alma için tür-güvenli bir yol sağlayan `CPerson` nesnelerden türetilen listesi. İçin gördüğünüz `GetHeadPerson` işlevi, yalnızca tür atama şifrelenmiş.
+   Bu sarıcı işlevleri, türetilen listeden `CPerson` nesne eklemek ve almak için tür güvenli bir yol sağlar. Bu `GetHeadPerson` işlev için, sadece tür döküm kapsülleme olduğunu görebilirsiniz.
 
-   Yalnızca tür kullanımı uyumlu sarmalayıcılar var olan işlevselliği sarmalama yerine koleksiyon özelliklerini genişleten yeni işlevlerini tanımlama, yeni işlevsellik de ekleyebilirsiniz. Örneğin, makaleyi [CObject koleksiyonundaki tüm nesneleri silme](../mfc/deleting-all-objects-in-a-cobject-collection.md) bir listede yer alan nesneleri silmek için bir işlev açıklar. Bu işlev için türetilmiş sınıf üyesi işlevi olarak eklenemedi.
+   Ayrıca, varolan işlevleri tür güvenli sarmalayıcılara sarmak yerine koleksiyonun özelliklerini genişleten yeni işlevler tanımlayarak yeni işlevler ekleyebilirsiniz. Örneğin, [CObject Koleksiyonundaki Tüm Nesneleri Silme](../mfc/deleting-all-objects-in-a-cobject-collection.md) makalesi, bir listede bulunan tüm nesneleri silmek için bir işlev açıklar. Bu işlev, türemiş sınıfa üye işlev olarak eklenebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

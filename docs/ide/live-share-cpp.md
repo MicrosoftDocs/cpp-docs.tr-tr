@@ -1,56 +1,56 @@
 ---
-title: Visual Studio 'da için C++ Live Share işbirliği yapın
-description: İşbirliği yapmak ve C++ kodu gerçek zamanlı olarak paylaşmak Için Visual Studio 'da için Live Share kullanın.
+title: Visual Studio'da C++ için Live Share ile işbirliği yapın
+description: Visual Studio'da C++ için Live Share'i kullanarak gerçek zamanlı olarak işbirliği yapın ve kodu paylaşın.
 ms.date: 05/24/2019
-ms.openlocfilehash: e8202cefb7f7d762e2736edcd5fa3c6127b4affa
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0ebdd77d0e277778b48cf69024b24841f775d968
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171924"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377281"
 ---
 # <a name="collaborate-using-live-share-for-c"></a>C++ için Live Share kullanarak işbirliği yapma
 
-Visual Studio 2019 ve Visual Studio Code ' de, **live share** kullanarak projeler üzerinde C++ gerçek zamanlı işbirliği yapabilirsiniz. **Live share** başka bir kişi, projenizi veya bağımlılıklarından herhangi birini yüklemeye gerek kalmadan kodunuzu düzenleyebilir ve hatalarını ayıklayabilirler. Her birinin yaptığı düzenlemeleri görürsünüz ve her düzenleme bunu yapan kişinin adıyla etiketlendi.
+Visual Studio 2019 ve Visual Studio Code'da, C++ projelerinde gerçek zamanlı olarak işbirliği yapmak için **Live Share'i** kullanabilirsiniz. **Live Share** ile başka bir kişi, projenizi veya bağımlılıklarından herhangi birini yüklemenize gerek kalmadan kodunuzu dinleyebilir ve hata ayıklayabilir. Birbirinin edindiklerini oluştukları gibi görürsünüz ve her bir ediyi yapan kişinin adı ile etiketlenir.
 
-![C&#43; &#43; Live Share düzenlemesi](../ide/media/live-share-edit-cpp.png "İçinde Live Share düzenlemesiC++")
+![C&#43;&#43; Canlı Paylaşım Düzenleme](../ide/media/live-share-edit-cpp.png "C++'da Canlı Paylaşım Düzenlemesi")
 
-## <a name="live-share-host-and-guests"></a>Live Share Konağı ve konukları
+## <a name="live-share-host-and-guests"></a>Canlı Paylaş ev sahibi ve misafirler
 
-Live Share oturumunda bir konak ve bir veya daha fazla konuk vardır. Hem ana bilgisayar hem de konuklar, Visual Studio veya Visual Studio Code kullanabilir. Windows üzerinde bir Visual Studio 2019 Konağı, Linux üzerinde Visual Studio Code konuğiyle paylaşabilir.
+Canlı Paylaşım oturumunda bir ev sahibi ve bir veya daha fazla konuk vardır. Hem ev sahibi hem de konuklar Visual Studio veya Visual Studio Code'u kullanabilirler. Windows'daki Visual Studio 2019 ev sahibi, Linux'taki Visual Studio Code konuklarıyla paylaşabilir.
 
-Konak, konuklara üretken olmaları gereken her şeyi sağlar. Konukların kaynak kodu, derleyici, dış bağımlılıklar ve hatta aynı yüklü bileşenleri olması gerekmez.
+Ev sahibi konuklara üretken olmaları için ihtiyaç duydukları her şeyi sağlar. Konukların kaynak koduna, derleyiciye, dış adadaklara ve hatta aynı yüklü bileşenlere sahip olması gerekmez.
 
-Konak ve konuklar şu IntelliSense özelliklerini kullanabilir:
+Ev sahibi ve konuklar bu IntelliSense özelliklerini kullanabilir:
 
-- Üye listesi
-- Parametre yardımı
+- Üye Listesi
+- Parametre Yardımı
 - Hızlı Bilgi
-- Hata ayıklama/kesme noktaları
+- Hata Ayıklama/Kesme Noktaları
 - Tüm Başvuruları Bul
 - Tanıma Git
-- Sembol arama (Ctrl + T)
-- Başvuru vurgulama
-- Tanılama/hatalar/dalgalı çizgiler
+- Sembol Arama (Ctrl+T)
+- Referans Vurgulama
+- Tanılama/Hatalar/Dalgalı
 
-![C&#43; &#43; Live Share hata ayıklama](../ide/media/live-share-debug-cpp.png "Live Share hata ayıklamaC++")
+![C&#43;&#43; Canlı Paylaşım Hata Ayıklama](../ide/media/live-share-debug-cpp.png "C++'da Canlı Paylaşım Hata Ayıklama")
 
-## <a name="start-and-end-a-live-share-session"></a>Live Share oturumu başlatma ve sonlandırma
+## <a name="start-and-end-a-live-share-session"></a>Canlı Paylaşım oturumunu başlat Ve sonla
 
-Visual Studio 'da bir Live Share oturumu başlatmak için sağ üstteki paylaşma düğmesine tıklayın veya **dosya** > " **işbirliği oturumu Başlat**" a gidin. Bu, ortak çalışanlarla paylaşabileceğiniz bir bağlantı oluşturur.
+Visual Studio'da Canlı Paylaşım oturumu başlatmak için sağ üstteki Paylaş düğmesini tıklatın veya **Dosya** > **Başlangıç İşbirliği Oturumu'na**gidin. Bu, ortak çalışanlarınızla paylaşabileceğiniz bir bağlantı oluşturur.
 
-![C&#43; &#43; Live Share düğmesi](../ide/media/live-share-button-cpp.png "Live Share düğmesi")
+![C&#43;&#43; Canlı Paylaşım Düğmesi](../ide/media/live-share-button-cpp.png "Canlı Paylaşım Düğmesi")
 
-Bir oturumu sonlandırmak için, **Paylaşım** açılan menüsünden **işbirliği oturumunu Sonlandır** ' ı seçin.
+Oturumu sonlamak için Paylaşım **açılır** tarihinden **İşbirliği oturumunu** sonla'yı seçin.
 
-![C&#43; &#43; Live Share düğmesi](../ide/media/live-share-end-session-cpp.png "Live Share düğmesi")
+![C&#43;&#43; Canlı Paylaşım Düğmesi](../ide/media/live-share-end-session-cpp.png "Canlı Paylaşım Düğmesi")
 
 ## <a name="for-more-information"></a>Daha fazla bilgi edinmek için
 
-Visual Studio 'da **live share** hakkında daha fazla bilgi için bkz. [Visual Studio Live Share nedir?](/visualstudio/liveshare/). Visual Studio Code Live Share hakkında daha fazla bilgi için bkz. [live share](https://marketplace.visualstudio.com/items?itemName=ms-vsliveshare.vsliveshare).
+Visual Studio **Live Share** hakkında daha fazla bilgi için Visual [Studio Live Share nedir?](/visualstudio/liveshare/) Visual Studio Code'da Live Share hakkında daha fazla bilgi için [Live Share'e](https://marketplace.visualstudio.com/items?itemName=ms-vsliveshare.vsliveshare)bakın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kodu düzenleme ve yeniden düzenlemeC++()](writing-and-refactoring-code-cpp.md)</br>
-[Visual Studio C++ 'da kod tabanınız üzerinde gezinme](navigate-code-cpp.md)</br>
-[Kodu okuyun ve C++ anlayın](read-and-understand-code-cpp.md)</br>
+[Düzenleme ve yeniden düzenleme kodu (C++)](writing-and-refactoring-code-cpp.md)</br>
+[Visual Studio'da C++ kod tabanınızda gezinme](navigate-code-cpp.md)</br>
+[C++ kodunu okuma ve anlama](read-and-understand-code-cpp.md)</br>

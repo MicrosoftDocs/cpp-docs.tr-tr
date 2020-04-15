@@ -1,5 +1,5 @@
 ---
-title: CGopherFile sınıfı
+title: CGopherFile Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CGopherFile
@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - CGopherFile [MFC], CGopherFile
 ms.assetid: 3ca9898f-8cdb-4495-bbde-46d40100feda
-ms.openlocfilehash: 9bb242cb53593862cb51e0c193eb739625127adc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e157a4509fe30b814a1834690a675906ac82afe7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380292"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373701"
 ---
-# <a name="cgopherfile-class"></a>CGopherFile sınıfı
+# <a name="cgopherfile-class"></a>CGopherFile Sınıfı
 
-Bulmak ve bir gopher sunucusunda dosyaları okumak için gereken işlevleri sağlar.
+Bir gopher sunucusunda dosyaları bulmak ve okumak için işlevsellik sağlar.
 
 > [!NOTE]
->  Sınıfları `CGopherConnection`, `CGopherFile`, `CGopherFileFind`, `CGopherLocator` ve üyeleri bırakılmıştır, Windows XP platformu üzerinde çalışmaz, ancak önceki platformları üzerinde çalışmaya devam eder.
+> Sınıflar `CGopherConnection`, `CGopherFile` `CGopherFileFind`, `CGopherLocator` , , windows xp platformunda çalışmıyor çünkü onların üyeleri küçümsenmiş, ancak önceki platformlarda çalışmaya devam edecektir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,23 +32,23 @@ class CGopherFile : public CInternetFile
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CGopherFile::CGopherFile](#cgopherfile)|Oluşturur bir `CGopherFile` nesne.|
+|[CGopherFile::CGopherFile](#cgopherfile)|Bir `CGopherFile` nesne inşa eder.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Gopher hizmet bu hizmeti bilgileri bulmak için çoğunlukla bir menü yönlendirmeli arabirimi gördüğünden bir gopher dosyaya veri yazmak kullanıcılar izin vermez. `CGopherFile` Üye işlevleri `Write`, `WriteString`, ve `Flush` için uygulanmadı `CGopherFile`. Bu işlevler çağırma bir `CGopherFile` nesnesi döndürür bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).
+Bu hizmet esas olarak bilgi bulmak için menü tabanlı bir arabirim olarak çalıştığı için, gopher hizmeti kullanıcıların bir gopher dosyasına veri yazmasına izin vermez. Üye `CGopherFile` `Write`işlevler `WriteString`, `Flush` , , `CGopherFile`ve için uygulanmaz . Bu işlevleri bir `CGopherFile` nesne üzerinde çağıran, [cnotsupportedException](../../mfc/reference/cnotsupportedexception-class.md)döndürür.
 
-Hakkında daha fazla bilgi edinmek için `CGopherFile` diğer Internet MFC sınıfları ile çalışır, başlıklı makaleye bakın [Winınet'in Internet programlama](../../mfc/win32-internet-extensions-wininet.md).
+Diğer MFC `CGopherFile` Internet sınıfları ile nasıl çalıştığı hakkında daha fazla bilgi edinmek için [WinInet ile internet programlama](../../mfc/win32-internet-extensions-wininet.md)makalesine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CFile](../../mfc/reference/cfile-class.md)
+[Cfile](../../mfc/reference/cfile-class.md)
 
-[CStdioFile](../../mfc/reference/cstdiofile-class.md)
+[Cstdiofile](../../mfc/reference/cstdiofile-class.md)
 
 [Cınternetfile](../../mfc/reference/cinternetfile-class.md)
 
@@ -56,11 +56,11 @@ Hakkında daha fazla bilgi edinmek için `CGopherFile` diğer Internet MFC sın�
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxinet.h
+**Üstbilgi:** afxinet.h
 
-##  <a name="cgopherfile"></a>  CGopherFile::CGopherFile
+## <a name="cgopherfilecgopherfile"></a><a name="cgopherfile"></a>CGopherFile::CGopherFile
 
-Bu üye işlevi oluşturmak için çağrılan bir `CGopherFile` nesne.
+Bu üye işlev bir `CGopherFile` nesne oluşturmak için çağrılır.
 
 ```
 CGopherFile(
@@ -78,38 +78,38 @@ CGopherFile(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hfıle*<br/>
-HINTERNET dosyaya tanıtıcı.
+*hFile*<br/>
+HINTERNET dosyasının tutamacı.
 
 *refLocator*<br/>
-Bir başvuru bir [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) nesne.
+[CGopherLocator](../../mfc/reference/cgopherlocator-class.md) nesnesine bir gönderme.
 
-*pConnection*<br/>
-Bir işaretçi bir [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) nesne.
+*pBağlantı*<br/>
+[CGopherConnection](../../mfc/reference/cgopherconnection-class.md) nesnesine işaretçi.
 
 *hSession*<br/>
-Geçerli Internet oturumu için bir tanıtıcı.
+Geçerli Internet oturumunun tutamacı.
 
 *pstrLocator*<br/>
-Gopher sunucusu bulmak için kullanılan bir dizeye bir işaretçi. Bkz: [Gopher oturumları](cgopherlocator-class.md) gopher bulucuları hakkında daha fazla bilgi.
+Gopher sunucusunu bulmak için kullanılan bir dize işaretçisi. Gopher yer bulucuları hakkında daha fazla bilgi için [Gopher Sessions'a](cgopherlocator-class.md) bakın.
 
 *dwLocLen*<br/>
-Bayt sayısını içeren bir DWORD *pstrLocator*.
+*PstrLocator'daki*bayt sayısını içeren bir DWORD.
 
-*dwContext*<br/>
-Açılan dosyanın içerik tanımlayıcısı için bir işaretçi.
+*dwBağlam*<br/>
+Açılan dosyanın bağlam tanımlayıcısına işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gereksinim duyduğunuz bir `CGopherFile` bir gopher Internet oturumu sırasında bir dosyadan okunan nesne.
+Bir gopher Internet oturumu sırasında bir dosyadan okumak için bir `CGopherFile` nesne gerekir.
 
-Asla oluşturma bir `CGopherFile` doğrudan nesne. Bunun yerine çağrı [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#openfile) bir gopher sunucusunda bir dosyayı açmak için.
+Hiçbir `CGopherFile` nesneyi doğrudan oluşturmazsınız. Bunun yerine, [cgopherConnection'ı arayın::Bir](../../mfc/reference/cgopherconnection-class.md#openfile) gopher sunucusunda dosya açmak için OpenFile'ı arayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CInternetFile Sınıfı](../../mfc/reference/cinternetfile-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CInternetFile Sınıfı](../../mfc/reference/cinternetfile-class.md)<br/>
-[CGopherLocator Sınıfı](../../mfc/reference/cgopherlocator-class.md)<br/>
-[CGopherFileFind Sınıfı](../../mfc/reference/cgopherfilefind-class.md)<br/>
+[CGopherLocator Sınıf](../../mfc/reference/cgopherlocator-class.md)<br/>
+[CGopherFileFind Sınıf](../../mfc/reference/cgopherfilefind-class.md)<br/>
 [CGopherConnection Sınıfı](../../mfc/reference/cgopherconnection-class.md)

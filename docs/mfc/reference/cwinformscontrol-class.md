@@ -1,5 +1,5 @@
 ---
-title: CWinFormsControl sınıfı
+title: CWinFormsControl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CWinFormsControl
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CWinFormsControl [MFC], GetControl
 - CWinFormsControl [MFC], GetControlHandle
 ms.assetid: 6406dd7b-fb89-4a18-ac3a-c010d6b6289a
-ms.openlocfilehash: 75a6d7ea2b4f3ab229d7e3f4d411711261bb1b82
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c91f50be1ea30efac81ff67c43633bedd7b0ca03
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502192"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377177"
 ---
-# <a name="cwinformscontrol-class"></a>CWinFormsControl sınıfı
+# <a name="cwinformscontrol-class"></a>CWinFormsControl Sınıfı
 
-Windows Forms denetiminin barındırılmasına yönelik temel işlevleri sağlar.
+Windows Forms denetiminin barındırılamı için temel işlevselliği sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,49 +35,49 @@ class CWinFormsControl : public CWnd
 #### <a name="parameters"></a>Parametreler
 
 *TManagedControl*<br/>
-MFC uygulamasında görüntülenmek üzere bir .NET Framework Windows Forms denetimi.
+MFC uygulamasında görüntülenecek bir .NET Framework Windows Forms denetimi.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CWinFormsControl::CWinFormsControl](#cwinformscontrol)|MFC Windows Forms Control sarmalayıcı nesnesi oluşturur.|
+|[CwinformsControl::CWinformsControl](#cwinformscontrol)|Bir MFC Windows Forms denetim sarıcı nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CWinFormsControl:: CreateManagedControl](#createmanagedcontrol)|MFC kapsayıcısında bir Windows Forms denetimi oluşturur.|
-|[CWinFormsControl:: GetControl](#getcontrol)|Windows Forms denetimine bir işaretçi alır.|
-|[CWinFormsControl:: GetControlHandle](#getcontrolhandle)|Windows Forms denetimine bir tanıtıcı alır.|
+|[CWinFormsControl::CreateManagedControl](#createmanagedcontrol)|MFC kapsayıcısında Windows Forms denetimi oluşturur.|
+|[CWinFormsControl::GetControl](#getcontrol)|Windows Forms denetimi için bir işaretçi alır.|
+|[CwinFormsControl::GetControlHandle](#getcontrolhandle)|Windows Forms denetimine bir tanıtıcı alır.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CWinFormsControl:: operator-&gt;](#operator_-_gt)|İfadelerde [CWinFormsControl:: GetControl](#getcontrol) yerini alır.|
-|[CWinFormsControl:: operator TManagedControl ^](#operator_tmanagedcontrol)|Bir türü Windows Forms denetimine işaretçi olarak yayınlar.|
+|[CWinFormsControl::operatör -&gt;](#operator_-_gt)|[CWinFormsControl değiştirir::GetControl](#getcontrol) ifadelerinde.|
+|[CWinFormsControl::operatör TManagedControl^](#operator_tmanagedcontrol)|Bir türü Windows Forms denetimine işaretçi olarak atar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CWinFormsControl` Sınıfı, bir Windows Forms denetiminin barındırılmasına yönelik temel işlevleri sağlar.
+Sınıf, `CWinFormsControl` Windows Forms denetiminin barındırılamıiçin temel işlevselliği sağlar.
 
-Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC 'de Windows formu Kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+Windows Formlarını kullanma hakkında daha fazla bilgi [için](../../dotnet/using-a-windows-form-user-control-in-mfc.md)bkz.
 
-MFC kodunuz pencere tutamaçlarını önbelleğe içermemelidir (genellikle içinde `m_hWnd`depolanır). Bazı Windows Forms denetim özellikleri, ve kullanılarak `Window` `DestroyWindow` temel alınan Win32 'in yok edileceği ve yeniden `CreateWindow`oluşturulması gerekir. MFC Windows Forms uygulama, `Destroy` `m_hWnd` üyeyi güncelleştirmek için `Create` denetimlerin ve olaylarını işler.
+MFC kodunuz Pencere tutamaçlarını önbelleğe `m_hWnd`almamalıdır (genellikle depolanır). Bazı Windows Forms denetim özellikleri, altta `Window` yatan Win32'nin yok edilmesini ve yeniden `DestroyWindow` kullanılmasını gerektirir. `CreateWindow` MFC Windows Forms `Destroy` `Create` `m_hWnd` uygulaması, üyeyi güncelleştirmek için denetimlerin olaylarını ve olaylarını işler.
 
 > [!NOTE]
->  MFC Windows Forms tümleştirmesi yalnızca MFC ile dinamik olarak bağlanan projelerde (AFXDLL içinde tanımlanmıştır) kullanılabilir.
+> MFC Windows Forms tümleştirmesi yalnızca MFC ile dinamik olarak bağlantı sağlayan (AFXDLL'nin tanımlandığı) projelerde çalışır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwinforms. h
+**Üstbilgi:** afxwinforms.h
 
-##  <a name="createmanagedcontrol"></a>CWinFormsControl:: CreateManagedControl
+## <a name="cwinformscontrolcreatemanagedcontrol"></a><a name="createmanagedcontrol"></a>CWinFormsControl::CreateManagedControl
 
-MFC kapsayıcısında bir Windows Forms denetimi oluşturur.
+MFC kapsayıcısında Windows Forms denetimi oluşturur.
 
 ```
 inline BOOL CreateManagedControl(
@@ -107,48 +107,48 @@ inline BOOL CreateManagedControl(
 
 ### <a name="parameters"></a>Parametreler
 
-*pType*<br/>
-Oluşturulacak denetimin veri türü. Bir [tür](/dotnet/api/system.type) veri türü olmalıdır.
+*pTipi*<br/>
+Oluşturulacak denetimin veri türü. [Tür](/dotnet/api/system.type) veri türü olmalıdır.
 
-*dwStyle*<br/>
-Denetime uygulanacak pencere stili. [Pencere stillerinin](../../mfc/reference/styles-used-by-mfc.md#window-styles)birleşimini belirtin. Şu anda yalnızca aşağıdaki stiller desteklenir: WS_TABSTOP, WS_VISIBLE, WS_DISABLED ve WS_GROUP.
+*Dwstyle*<br/>
+Denetime uygulanacak pencere stili. [Pencere Stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles)nin bir birleşimini belirtin. Şu anda yalnızca aşağıdaki stilleri desteklenir: WS_TABSTOP, WS_VISIBLE, WS_DISABLED ve WS_GROUP.
 
 *Rect*<br/>
-Denetimin sol üst ve sağ alt köşelerinin koordinatlarını tanımlayan bir [Rect yapısı](/windows/win32/api/windef/ns-windef-rect) (yalnızca ilk aşırı yükleme).
+Denetimin sol üst ve alt-sağ köşelerinin koordinatlarını tanımlayan bir [RECT Yapısı](/windows/win32/api/windef/ns-windef-rect) (yalnızca ilk aşırı yükleme).
 
 *nPlaceHolderID*<br/>
-Kaynak düzenleyicisine yerleştirilmiş statik yer tutucu denetimi tutamacı. Yeni oluşturulan Windows Forms denetimi, konumunu, z düzenini ve stillerini kabul eden statik denetimin yerini alır (yalnızca ikinci aşırı yükleme).
+Kaynak Düzenleyicisi'ne yerleştirilen statik yer tutucu denetiminin tutamacı. Yeni oluşturulan Windows Forms denetimi, konumunu, z sırasını ve stillerini (yalnızca ikinci aşırı yükleme) varsayerek statik denetimin yerini alır.
 
 *pParentWnd*<br/>
-Ana pencereye yönelik bir işaretçi.
+Üst pencereiçin bir işaretçi.
 
-*NID*<br/>
-Yeni oluşturulan denetime atanacak kaynak KIMLIĞI numarası.
+*Nıd*<br/>
+Yeni oluşturulan denetime atanacak kaynak kimlik numarası.
 
-*pControl*<br/>
-[CWinFormsControl](../../mfc/reference/cwinformscontrol-class.md) nesnesiyle ilişkilendirilecek Windows Forms denetiminin örneği (yalnızca dördüncü aşırı yükleme).
+*pKontrol*<br/>
+[CWinFormsControl](../../mfc/reference/cwinformscontrol-class.md) nesnesi ile ilişkilendirilecek bir Windows Forms denetimi örneği (yalnızca dördüncü aşırı yükleme).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, sıfır dışında bir değer döndürür. Başarısız olursa, sıfır döndürür.
+Başarılı olursa, sıfır olmayan bir değer döndürür. Başarısız olursa, sıfır döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem bir MFC kapsayıcısında bir .NET Framework Windows Forms denetimi başlatır.
+Bu yöntem, bir MFC kapsayıcısında bir .NET Framework Windows Forms denetimini anında kullanır.
 
-Yöntemin ilk aşırı yüklemesi, MFC 'nin bu türden yeni bir nesne örnekyapabilmesi için bir .NET Framework veri türü *pType* kabul eder. *pType* bir [tür](/dotnet/api/system.type) veri türü olmalıdır.
+Yöntemin ilk aşırı yüklemesi, MFC'nin bu tür yeni bir nesneyi anında atabilmesi için bir .NET Framework veri türü *pType'ı* kabul eder. *pType* bir [Tür](/dotnet/api/system.type) veri türü olmalıdır.
 
-Yönteminin ikinci aşırı yüklemesi, `TManagedControl` `CWinFormsControl` sınıfının şablon parametresine bağlı olarak bir Windows Forms denetimi oluşturur. Denetimin boyutu ve konumu yöntemine geçirilen `RECT` yapıya dayalıdır. Stiller için yalnızca *dwStyle* önemlidir.
+Yöntemin ikinci aşırı `TManagedControl` `CWinFormsControl` yüklemesi, sınıfın şablon parametresini temel alan bir Windows Forms denetimi oluşturur. Denetimin boyutu ve konumu yönteme `RECT` geçirilen yapıya dayanır. Sadece *dwStyle* stilleri için önemlidir.
 
-Yöntemin üçüncü aşırı yüklemesi, statik bir denetimin yerini alan, yok etme ve konumunu, z düzeni ve stillerini kabul eden bir Windows Forms denetimi oluşturur. Statik denetim yalnızca Windows Forms denetimi için bir yer tutucu olarak işlev görür. Bu aşırı yükleme, denetimi oluştururken *dwStyle* 'daki stilleri statik denetimin kaynak stilleriyle birleştirir.
+Yöntemin üçüncü aşırı yükü, statik denetimin yerini alan, onu yok eden ve konumunu, z-sırasını ve stillerini varsayan bir Windows Forms denetimi oluşturur. Statik denetim yalnızca Windows Forms denetimi için bir yer tutucu olarak hizmet verir. Denetimi oluştururken, bu aşırı yük *dwStyle'daki* stilleri statik denetimin kaynak stilleriyle birleştirir.
 
-Yöntemin dördüncü aşırı yüklemesi, MFC 'nin kaydıralacağı, önceden oluşturulmuş bir Windows Forms Denetim *pControl* ' i geçirmenize olanak sağlar. Bu, `TManagedControl` `CWinFormsControl` sınıfının şablon parametresiyle aynı türde olmalıdır.
+Yöntemin dördüncü aşırı yüklemesi, MFC'nin saracağı zaten anında alınmış windows forms denetim *pControl'de* geçmenizi sağlar. `CWinFormsControl` Sınıfın `TManagedControl` şablon parametresi ile aynı türden olmalıdır.
 
-Windows form denetimlerini kullanma hakkında örnekler için bkz. [MFC 'de Windows form kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md) .
+Bkz. Windows Form denetimlerini kullanma yla ilgili örnekler için [MFC'de Windows Form Kullanıcı Denetimi](../../dotnet/using-a-windows-form-user-control-in-mfc.md) kullanma.
 
-##  <a name="cwinformscontrol"></a>CWinFormsControl::CWinFormsControl
+## <a name="cwinformscontrolcwinformscontrol"></a><a name="cwinformscontrol"></a>CwinformsControl::CWinformsControl
 
-MFC Windows Forms Control sarmalayıcı nesnesi oluşturur.
+Bir MFC Windows Forms denetim sarıcı nesnesi oluşturur.
 
 ```
 CWinFormsControl();
@@ -156,11 +156,11 @@ CWinFormsControl();
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CWinFormsControl:: CreateManagedControl](#createmanagedcontrol)' i çağırdığınızda Windows Forms denetimi oluşturulur.
+[CWinFormsControl::CreateManagedControl'u](#createmanagedcontrol)aradiğinizde Windows Forms denetimi anında oluşturulur.
 
-##  <a name="getcontrol"></a>CWinFormsControl:: GetControl
+## <a name="cwinformscontrolgetcontrol"></a><a name="getcontrol"></a>CWinFormsControl::GetControl
 
-Windows Forms denetimine bir işaretçi alır.
+Windows Forms denetimi için bir işaretçi alır.
 
 ```
 inline TManagedControl^ GetControl() const;
@@ -168,13 +168,13 @@ inline TManagedControl^ GetControl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Windows Forms denetimine bir işaretçi döndürür.
+Bir işaretçiyi Windows Forms denetimine döndürür.
 
 ### <a name="example"></a>Örnek
 
-  Bkz. [CWinFormsControl:: CreateManagedControl](#createmanagedcontrol).
+  [Bkz. CWinFormsControl::CreateManagedControl](#createmanagedcontrol).
 
-##  <a name="getcontrolhandle"></a>CWinFormsControl:: GetControlHandle
+## <a name="cwinformscontrolgetcontrolhandle"></a><a name="getcontrolhandle"></a>CwinFormsControl::GetControlHandle
 
 Windows Forms denetimine bir tanıtıcı alır.
 
@@ -184,15 +184,15 @@ inline HWND GetControlHandle() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Windows Forms denetimine bir tanıtıcı döndürür.
+Bir tanıtıcıyı Windows Forms denetimine döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetControlHandle`, .NET Framework denetim özelliklerinde depolanan pencere tanıtıcısını döndüren yardımcı bir yöntemdir. [CWnd:: Attach](../../mfc/reference/cwnd-class.md#attach)çağrısı sırasında, Window tanıtıcı değeri [CWnd:: m_hWnd](../../mfc/reference/cwnd-class.md#m_hwnd) ' e kopyalanır.
+`GetControlHandle`.NET Framework denetim özelliklerinde depolanan pencere tutamacını döndüren bir yardımcı yöntemdir. Pencere tutamak değeri [CWnd kopyalanır::m_hWnd](../../mfc/reference/cwnd-class.md#m_hwnd) CWnd için arama [sırasında::Ekle](../../mfc/reference/cwnd-class.md#attach).
 
-##  <a name="operator_-_gt"></a>CWinFormsControl:: operator-&gt;
+## <a name="cwinformscontroloperator--gt"></a><a name="operator_-_gt"></a>CWinFormsControl::operatör -&gt;
 
-İfadelerde [CWinFormsControl:: GetControl](#getcontrol) yerini alır.
+[CWinFormsControl değiştirir::GetControl](#getcontrol) ifadelerinde.
 
 ```
 inline TManagedControl^  operator->() const;
@@ -200,13 +200,13 @@ inline TManagedControl^  operator->() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç, ifadelerde yerini `GetControl` alan kullanışlı bir sözdizimi sağlar.
+Bu işleç ifadeler `GetControl` yerine uygun bir sözdizimi sağlar.
 
-Windows Forms hakkında daha fazla bilgi için bkz. [MFC 'de Windows formu Kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+Windows Formları hakkında daha fazla bilgi için [bkz.](../../dotnet/using-a-windows-form-user-control-in-mfc.md)
 
-##  <a name="operator_tmanagedcontrol"></a>CWinFormsControl:: operator TManagedControl ^
+## <a name="cwinformscontroloperator-tmanagedcontrol"></a><a name="operator_tmanagedcontrol"></a>CWinFormsControl::operatör TManagedControl^
 
-Bir türü Windows Forms denetimine işaretçi olarak yayınlar.
+Bir türü Windows Forms denetimine işaretçi olarak atar.
 
 ```
 inline operator TManagedControl^() const;
@@ -214,7 +214,7 @@ inline operator TManagedControl^() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç, `CWinFormsControl<TManagedControl>` Windows Forms denetimine yönelik bir işaretçi kabul eden işlevlere geçer.
+Bu işleç, Windows Forms denetimi için işaretçi kabul eden işlevlere geçer. `CWinFormsControl<TManagedControl>`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

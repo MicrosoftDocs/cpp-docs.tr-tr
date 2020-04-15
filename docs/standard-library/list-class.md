@@ -98,16 +98,16 @@ helpviewer_keywords:
 - std::list [C++], swap
 - std::list [C++], unique
 ms.assetid: d3707f4a-10fd-444f-b856-f9ca2077c1cd
-ms.openlocfilehash: d5f64f44ec62a8bd1862af2b8f9cb72b2d0210e4
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 7e30583a185a46e5e0f0544ac2b00848dc989f26
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420080"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377320"
 ---
 # <a name="list-class"></a>list Sınıfı
 
-C++ Standart kitaplık listesi sınıfı, öğeleri doğrusal bir düzenlemede barındıran ve sıra içinde herhangi bir konumda etkili eklemeler ve silinmelere izin veren dizi kapsayıcılarının bir sınıf şablonudur. Sıra, her biri bir tür *türünün*üyesini içeren çift yönlü bağlantılı öğelerin bir listesi olarak depolanır.
+C++ Standart Kitaplık listesi sınıfı, öğelerini doğrusal bir düzenlemede koruyan ve dizi içindeki herhangi bir konumda verimli eklemelere ve silmelere izin veren sıra kapsayıcılarından oluşan bir sınıf şablonudur. Dizi, her biri belirli tür *türünden*bir üye içeren çift yönlü bağlantılı öğeler listesi olarak depolanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -118,21 +118,21 @@ class list
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür*\
+*Türü*\
 Listede depolanacak öğe veri türü.
 
 *Ayırıcı*\
-Listenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kapsülleyen saklı ayırıcı nesnesini temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcı**\<*türü*>.
+Listeayırma ve bellek deallocation hakkında ayrıntıları kapsülleyen depolanan ayırıcı nesneyi temsil eden türü. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcı**\<*Türü*>.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve ekleme türüne dayalı olmalıdır. Herhangi bir öğeye rastgele erişim bir Premium olduğunda ve öğe eklemeleri veya silinmeleri yalnızca bir sıranın sonunda gerekliyse, vektörlerin yönetilmesi için tercih edilen kapsayıcı olmalıdır. Rastgele erişim gerektiğinde Sınıf deque kapsayıcısının performansı üstün, bir sıranın her ikisinde ve sonundaki ekleme ve silme işlemleri de Premium düzeydir.
+Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve ekleme türüne dayalı olmalıdır. Vektörler, herhangi bir öğeye rasgele erişim bir prim olduğunda bir dizi yönetmek için tercih edilen kapsayıcı olmalı ve öğelerin eklemeleri veya silmeleri yalnızca bir dizinin sonunda gereklidir. Rasgele erişim gerektiğinde sınıf deque kapsayıcının performansı üstündür ve bir dizinin hem başında hem de sonunda eklemeler ve silmeler bir prim vardır.
 
-Liste üyesi işlevleri [birleştirme](#merge), [ters](#reverse), [benzersiz](#unique), [kaldırma](#remove)ve [remove_if](#remove_if) , liste nesnelerinde işlem için iyileştirildi ve kendi genel ortaklarınıza yüksek performanslı bir alternatif sunmaktadır.
+Liste üye işlevleri [birleştirme](#merge), [ters](#reverse), [benzersiz](#unique), [kaldırmak](#remove), ve [remove_if](#remove_if) liste nesneleri üzerinde işlem için optimize edilmiş ve genel muadilleri için yüksek performanslı bir alternatif sunuyoruz.
 
-Bir üye işlevin liste öğelerini eklemesi veya silmeli olması gerektiğinde liste yeniden ayırma gerçekleşir. Bu tür durumlarda, yalnızca yineleyiciler veya denetlenen sıranın silinen bölümlerini işaret eden başvurular geçersiz olur.
+Liste yeniden tahsisi, bir üye işlevin listenin öğelerini eklemesi veya silmesi gerektiğinde oluşur. Tüm bu gibi durumlarda, yalnızca yineleyiciler veya denetlenmiş sıranın silinmiş bölümlerini işaret eden başvurular geçersiz olur.
 
-Kapsayıcı sınıfı C++ şablon listesini ve birçok destekleyici şablonu tanımlamak Için standart kitaplık [](../standard-library/stl-containers.md) standart üst bilgi \<listesi > ekleyin.
+\< [Kapsayıcı](../standard-library/stl-containers.md) sınıfı şablon listesini ve birkaç destekleyici şablonu tanımlamak için> C++ Standart Kitaplık standart üstbilgi listesini ekleyin.
 
 ## <a name="members"></a>Üyeler
 
@@ -140,77 +140,77 @@ Kapsayıcı sınıfı C++ şablon listesini ve birçok destekleyici şablonu tan
 
 |||
 |-|-|
-|[list](#list)|Belirli bir boyutun veya belirli bir değerin veya belirli bir `allocator` öğelerinin bir listesini ya da başka bir listenin bir kopyasını oluşturur.|
+|[list](#list)|Belirli bir boyutun veya belirli bir değerin öğeleriyle `allocator` veya belirli bir veya başka bir listenin kopyası olarak bir liste oluşur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |||
 |-|-|
-|[allocator_type](#allocator_type)|Bir liste nesnesi için `allocator` sınıfını temsil eden bir tür.|
-|[const_iterator](#const_iterator)|Bir listedeki **const** bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür.|
-|[const_pointer](#const_pointer)|Bir listedeki **const** öğesine işaretçi sağlayan bir tür.|
-|[const_reference](#const_reference)|**Const** işlemlerini okumak ve gerçekleştirmek için bir listede depolanan **const** öğesine başvuru sağlayan bir tür.|
-|[const_reverse_iterator](#const_reverse_iterator)|Bir listedeki herhangi bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.|
-|[difference_type](#difference_type)|Aynı liste içindeki öğelere başvuran iki yineleyiciler arasındaki farkı sağlayan bir tür.|
-|[iden](#iterator)|Bir listedeki herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.|
-|[çağrısı](#pointer)|Listedeki bir öğeye işaretçi sağlayan bir tür.|
-|[başvurunun](#reference)|**Const** işlemlerini okumak ve gerçekleştirmek için bir listede depolanan **const** öğesine başvuru sağlayan bir tür.|
-|[reverse_iterator](#reverse_iterator)|Ters çevrilen bir listedeki bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.|
-|[size_type](#size_type)|Bir listedeki öğelerin sayısını sayan bir tür.|
-|[value_type](#value_type)|Bir listede depolanan veri türünü temsil eden bir tür.|
+|[Allocator_type](#allocator_type)|Liste nesnesi `allocator` için sınıfı temsil eden bir tür.|
+|[const_iterator](#const_iterator)|Bir listedeki **const** öğeyi okuyabilen çift yönlü bir yineleme sağlayan bir tür.|
+|[Const_pointer](#const_pointer)|Bir listedeki **const** öğesine işaretçi sağlayan bir tür.|
+|[const_reference](#const_reference)|**Const** işlemleri okumak ve gerçekleştirmek için listede depolanan **bir const** öğesine başvuru sağlayan bir tür.|
+|[Const_reverse_iterator](#const_reverse_iterator)|Bir listedeki herhangi bir **const** öğeyi okuyabilen çift yönlü bir yineleme sağlayan bir tür.|
+|[difference_type](#difference_type)|Aynı liste içindeki öğelere başvuran iki yineleyici arasındaki farkı sağlayan bir tür.|
+|[Yineleyici](#iterator)|Bir listedeki herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleme sağlayan bir tür.|
+|[pointer](#pointer)|Listedeki bir öğeye işaretçi sağlayan bir tür.|
+|[Başvuru](#reference)|**Const** işlemleri okumak ve gerçekleştirmek için listede depolanan **bir const** öğesine başvuru sağlayan bir tür.|
+|[Reverse_iterator](#reverse_iterator)|Ters bir listedeki bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleme sağlayan bir tür.|
+|[size_type](#size_type)|Listedeki öğe sayısını sayan bir tür.|
+|[value_type](#value_type)|Listede depolanan veri türünü temsil eden bir tür.|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|[ata](#assign)|Bir listedeki öğeleri siler ve yeni bir öğe kümesini hedef listeye kopyalar.|
-|[Geri](#back)|Listenin son öğesine bir başvuru döndürür.|
-|[başladı](#begin)|Listedeki ilk öğeyi adresleyen bir yineleyici döndürür.|
-|[cbegin](#cbegin)|Bir listedeki ilk öğeyi adresleyen bir const yineleyici döndürür.|
-|[cend](#cend)|Bir listedeki son öğeden sonraki konumu ele alan bir const yineleyici döndürür.|
-|[lediğiniz](#clear)|Bir listenin tüm öğelerini siler.|
-|[crbegin](#crbegin)|Ters çevrilen bir listedeki ilk öğeyi adresleyen bir const yineleyici döndürür.|
-|[crend](#crend)|Ters çevrilen bir listedeki son öğeden sonraki konumu adresleyen bir const yineleyici döndürür.|
-|[Emplace](#emplace)|Belirtilen konumdaki bir listeye yerinde oluşturulmuş bir öğe ekler.|
+|[Atamak](#assign)|Öğeleri bir listeden siler ve hedef listeye yeni bir öğe kümesi kopyalar.|
+|[Geri](#back)|Listenin son öğesine başvuru verir.|
+|[Başlamak](#begin)|Listedeki ilk öğeyi ele alan bir yineleyici döndürür.|
+|[cbegin](#cbegin)|Bir listedeki ilk öğeyi ele alan bir const yineleyici döndürür.|
+|[cend](#cend)|Bir listedeki son öğeyi yerine getiren konumu gideren bir const yineleyici döndürür.|
+|[Temizleyin](#clear)|Listenin tüm öğelerini siler.|
+|[crbegin](#crbegin)|Ters bir listedeki ilk öğeyi ele alan bir const yineleyici döndürür.|
+|[crend](#crend)|Ters bir listedeki son öğeyi yerine getiren konumu gideren bir const yineleyici döndürür.|
+|[emplace](#emplace)|Yerinde oluşturulmuş bir öğeyi belirli bir konumda ki listeye ekler.|
 |[emplace_back](#emplace_back)|Bir listenin sonuna yerinde oluşturulmuş bir öğe ekler.|
 |[emplace_front](#emplace_front)|Bir listenin başına yerinde oluşturulmuş bir öğe ekler.|
-|[olmamalıdır](#empty)|Bir liste boşsa sınar.|
-|[erer](#end)|Bir listedeki son öğeden sonraki konumu ele alan bir yineleyici döndürür.|
-|[silme](#erase)|Bir listedeki öğe veya öğe aralığını belirtilen konumlardan kaldırır.|
-|[yapılan](#front)|Listedeki ilk öğeye bir başvuru döndürür.|
-|[get_allocator](#get_allocator)|Bir liste oluşturmak için kullanılan `allocator` nesnesinin bir kopyasını döndürür.|
-|[ekleyin](#insert)|Belirtilen konumda bir öğe veya bir dizi öğe veya bir öğe aralığını bir listeye ekler.|
-|[max_size](#max_size)|Listenin maksimum uzunluğunu döndürür.|
-|[birleþtirmek](#merge)|Bağımsız değişken listesinden öğeleri kaldırır, bunları hedef listeye ekler ve yeni, Birleşik öğe kümesini artan sırada veya belirli bir sıraya göre sıralar.|
+|[empty](#empty)|Bir liste boşsa sınar.|
+|[Son -unda](#end)|Bir listedeki son öğeyi yerine getiren konumu adresleyen bir yineleyici döndürür.|
+|[Silmek](#erase)|Bir listedeki bir öğeyi veya dizi öğeyi belirtilen konumlardan kaldırır.|
+|[Ön](#front)|Bir listedeki ilk öğeye başvuru verir.|
+|[Get_allocator](#get_allocator)|Liste oluşturmak için `allocator` kullanılan nesnenin bir kopyasını döndürür.|
+|[Ekle](#insert)|Belirli bir konumda bir listeye bir öğe veya bir dizi öğe veya öğe aralığı ekler.|
+|[max_size](#max_size)|Listenin en uzunluğunu verir.|
+|[Birleştirme](#merge)|Öğeleri bağımsız değişken listesinden kaldırır, hedef listesine ekler ve artan sırada veya başka bir belirtilen sırada yeni, birleştirilmiş öğeler kümesini sıralar.|
 |[pop_back](#pop_back)|Listenin sonundaki öğeyi siler.|
 |[pop_front](#pop_front)|Listenin başındaki öğeyi siler.|
 |[push_back](#push_back)|Listenin sonuna bir öğe ekler.|
-|[push_front](#push_front)|Listenin başlangıcına bir öğe ekler.|
-|[rbegin](#rbegin)|Ters çevrilen bir listedeki ilk öğeyi adresleyen bir yineleyici döndürür.|
-|[remove](#remove)|Bir listedeki belirtilen değerle eşleşen öğeleri siler.|
-|[remove_if](#remove_if)|Belirtilen koşulun karşılanması için listedeki öğeleri siler.|
-|[rend](#rend)|Ters çevrilen bir listedeki son öğeden sonraki konumu ele alan bir yineleyici döndürür.|
-|[yeniden boyutlandırma](#resize)|Bir liste için yeni bir boyut belirtir.|
-|[tersini](#reverse)|Öğelerin bir listede oluştuğu sırayı tersine çevirir.|
-|[boyutla](#size)|Bir listedeki öğe sayısını döndürür.|
-|[düzenine](#sort)|Bir listenin öğelerini artan sırada veya diğer bir sıra ilişkisine göre düzenler.|
-|[splice](#splice)|Bağımsız değişken listesindeki öğeleri kaldırır ve bunları hedef listeye ekler.|
-|[Kur](#swap)|İki listenin öğelerini değiş tokuş eder.|
-|[unique](#unique)|Listedeki diğer bir ikili koşula uyan bitişik yinelenen öğeleri veya bitişik öğeleri kaldırır.|
+|[push_front](#push_front)|Listenin başına bir öğe ekler.|
+|[rbegin](#rbegin)|Ters bir listedeki ilk öğeyi ele alan bir yineleyici döndürür.|
+|[remove](#remove)|Belirli bir değerle eşleşen bir listedeki öğeleri siler.|
+|[remove_if](#remove_if)|Belirli bir yüklemin karşılandığı listeden öğeleri siler.|
+|[Rend](#rend)|Ters bir listedeki son öğeyi yerine getiren konumu adresleyen bir yineleyici döndürür.|
+|[Yeni -den boyutlandırmak](#resize)|Bir liste için yeni bir boyut belirtir.|
+|[Ters](#reverse)|Öğelerin bir listede oluşma sırasını tersine çevirir.|
+|[Boyutu](#size)|Listedeki öğe sayısını döndürür.|
+|[Sıralama](#sort)|Bir listenin öğelerini artan sırada veya başka bir sipariş ilişkisiyle ilgili olarak düzenler.|
+|[Splice](#splice)|Öğeleri bağımsız değişken listesinden kaldırır ve hedef listeye ekler.|
+|[Takas](#swap)|İki liste öğelerini değiştirir.|
+|[Benzer -siz](#unique)|Diğer bazı ikili yüklemi listeden karşılayan bitişik yinelenen öğeleri veya bitişik öğeleri kaldırır.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[işleç =](#op_eq)|Liste öğelerini başka bir listenin kopyasıyla değiştirir.|
+|[işleç=](#op_eq)|Listenin öğelerini başka bir listenin kopyasıyla değiştirir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi**: \<listesi >
+**Üstbilgi** \<: liste>
 
-## <a name="allocator_type"></a>allocator_type
+## <a name="allocator_type"></a><a name="allocator_type"></a>Allocator_type
 
-Bir liste nesnesi için ayırıcı sınıfını temsil eden bir tür.
+Liste nesnesi için ayırıcı sınıfı temsil eden bir tür.
 
 ```cpp
 typedef Allocator allocator_type;
@@ -218,15 +218,15 @@ typedef Allocator allocator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`allocator_type`, şablon parametre *ayırıcısı*için bir eş anlamlı.
+`allocator_type`şablon parametre *Ayırıcısı*ile eş anlamlıdır.
 
 ### <a name="example"></a>Örnek
 
-[Get_allocator](#get_allocator)için örneğe bakın.
+[get_allocator](#get_allocator)için örneğe bakın.
 
-## <a name="assign"></a>ata
+## <a name="assign"></a><a name="assign"></a>Atamak
 
-Bir listedeki öğeleri siler ve yeni bir öğe kümesini hedef listeye kopyalar.
+Öğeleri bir listeden siler ve yeni bir öğe kümesini hedef listeye kopyalar.
 
 ```cpp
 void assign(
@@ -244,24 +244,24 @@ void assign(
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk*\
-Bağımsız değişken listesinden kopyalanacak öğe aralığındaki ilk öğenin konumu.
+*Ilk*\
+Bağımsız değişken listesinden kopyalanacak öğeler aralığındaki ilk öğenin konumu.
 
 *Son*\
-Bağımsız değişken listesinden kopyalanacak öğe aralığının hemen ötesinde ilk öğenin konumu.
+İlk öğenin bağımsız değişken listesinden kopyalanacak öğelerin hemen ötesindeki konumu.
 
-*Sayı*\
-Listeye eklenmekte olan bir öğenin kopya sayısı.
+*Sayısı*\
+Listeye eklenen bir öğenin kopya sayısı.
 
 *Val*\
-Listeye eklenmekte olan öğenin değeri.
+Listeye eklenen öğenin değeri.
 
-*Ilist*\
+*ılist*\
 Eklenecek öğeleri içeren initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hedef listede var olan öğeleri sildikten sonra, atama, özgün listeden belirli bir öğe aralığı ya da başka bir listeden hedef listeye ekler veya belirtilen değerin yeni bir öğesinin kopyalarını hedef listeye ekler
+Hedef listedeki varolan öğeleri siler sonra, özgün listeden veya başka bir listeden hedef listeye belirli bir öğe aralığı ekler veya hedef listeye belirli bir değerin yeni bir öğesinin kopyalarını ekler
 
 ### <a name="example"></a>Örnek
 
@@ -313,9 +313,9 @@ int main()
 c1 = 10 20 30c1 = 50 60c1 = 4 4 4 4 4 4 4c1 = 10 20 30 40
 ```
 
-## <a name="back"></a>Geri
+## <a name="back"></a><a name="back"></a>Geri
 
-Listenin son öğesine bir başvuru döndürür.
+Listenin son öğesine başvuru verir.
 
 ```cpp
 reference back();
@@ -325,13 +325,13 @@ const_reference back() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listenin son öğesi. Liste boşsa, dönüş değeri tanımsızdır.
+Listenin son öğesi. Liste boşsa, iade değeri tanımsız.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`back` dönüş değeri bir `const_reference`atanırsa, liste nesnesi değiştirilemez. `back` dönüş değeri bir `reference`atanırsa, liste nesnesi değiştirilebilir.
+Bir `const_reference`, liste `back` nesnesi için return value atanırsa değiştirilemez. Bir `reference`, liste `back` nesnesi için return value atanır.
 
-1 veya 2 olarak tanımlanan [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) kullanılarak derlendiğinde, boş bir listedeki bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.  Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md) .
+1 veya 2 olarak tanımlanan [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) kullanılarak derlendiğinde, boş bir listedeki bir öğeye erişmeye çalışırsanız çalışma zamanı hatası oluşur.  Daha fazla bilgi için [Kontrol Edilmiş Yinelemeciler'e](../standard-library/checked-iterators.md) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -363,9 +363,9 @@ The last integer of c1 is 11
 The next-to-last integer of c1 is 10
 ```
 
-## <a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a>Başlamak
 
-Listedeki ilk öğeyi adresleyen bir yineleyici döndürür.
+Listedeki ilk öğeyi ele alan bir yineleyici döndürür.
 
 ```cpp
 const_iterator begin() const;
@@ -375,11 +375,11 @@ iterator begin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listedeki ilk öğeyi veya boş bir listeyi izleyen konumu ele alarak çift yönlü bir yineleyici.
+Listedeki ilk öğeyi veya boş bir listeyi başaran konuma hitap eden çift yönlü bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`begin` dönüş değeri bir `const_iterator`atanırsa, liste nesnesindeki öğeler değiştirilemez. `begin` dönüş değeri bir `iterator`atanırsa, liste nesnesindeki öğeler değiştirilebilir.
+Bir `begin` `const_iterator`, liste nesnesindeki öğelere atanmışsa değiştirilemez. Bir `begin` `iterator`, liste nesnesindeki öğelere atanmışsa değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -416,9 +416,9 @@ The first element of c1 is 1
 The first element of c1 is now 20
 ```
 
-## <a name="cbegin"></a>cbegin
+## <a name="cbegin"></a><a name="cbegin"></a>cbegin
 
-Aralıktaki ilk öğeyi ele alan bir **sabit** yineleyici döndürür.
+Aralıktaki ilk öğeyi ele alan bir **const** yineleyici döndürür.
 
 ```cpp
 const_iterator cbegin() const;
@@ -426,13 +426,13 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aralığın ilk öğesine veya boş bir aralığın sonundaki konuma (boş bir Aralık için `cbegin() == cend()`) işaret eden bir **const** çift yönlü erişim yineleyicisi.
+Aralığın ilk öğesini veya boş aralığın sonundaki konumu işaret eden **bir çift** yönlü erişim yinelemesi (boş `cbegin() == cend()`bir aralık için).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cbegin`dönüş değeri ile aralıktaki öğeler değiştirilemez.
+İade değeri ile `cbegin`aralıktaki öğeler değiştirilemez.
 
-Dönüş değerinin `const_iterator`olduğunu garantilemek için `begin()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `begin()` ve `cbegin()`destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
+Bu üye `begin()` işlevini, iade değerinin `const_iterator`. Genellikle, aşağıdaki örnekte gösterildiği gibi [otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, herhangi `Container` bir tür değiştirilebilir (non-const) kapsayıcı ve `begin()` destekler `cbegin()`düşünün. **const**
 
 ```cpp
 auto i1 = Container.begin();
@@ -442,9 +442,9 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>cend
+## <a name="cend"></a><a name="cend"></a>cend
 
-Bir aralıktaki son öğeden hemen sonra gelen konumu ele alan bir `const` yineleyicisi döndürür.
+Bir `const` aralıktaki son öğenin hemen ötesinde konuma hitap eden bir yineleyici döndürür.
 
 ```cpp
 const_iterator cend() const;
@@ -452,13 +452,13 @@ const_iterator cend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir çift yönlü erişim yineleyiciyi aralığın sonunu işaret eden bir `const`.
+Aralığın `const` sonundan hemen ötesine işaret eden çift yönlü erişim yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
+`cend`bir yineleyicinin aralığının sonundan geçip geçmediğini test etmek için kullanılır.
 
-Dönüş değerinin `const_iterator`olduğunu garantilemek için `end()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `end()` ve `cend()`destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
+Bu üye `end()` işlevini, iade değerinin `const_iterator`. Genellikle, aşağıdaki örnekte gösterildiği gibi [otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, herhangi `Container` bir tür değiştirilebilir (non-const) kapsayıcı ve `end()` destekler `cend()`düşünün. **const**
 
 ```cpp
 auto i1 = Container.end();
@@ -468,11 +468,11 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-`cend` tarafından döndürülen değer başvurulmamalıdır.
+Döndürülen `cend` değer dereferenced olmamalıdır.
 
-## <a name="clear"></a>lediğiniz
+## <a name="clear"></a><a name="clear"></a>Temizleyin
 
-Bir listenin tüm öğelerini siler.
+Listenin tüm öğelerini siler.
 
 ```cpp
 void clear();
@@ -505,9 +505,9 @@ The size of the list is initially 3
 The size of list after clearing is 0
 ```
 
-## <a name="const_iterator"></a>const_iterator
+## <a name="const_iterator"></a><a name="const_iterator"></a>Const_iterator
 
-Bir listedeki **const** bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür.
+Bir listedeki **const** öğeyi okuyabilen çift yönlü bir yineleme sağlayan bir tür.
 
 ```cpp
 typedef implementation-defined const_iterator;
@@ -515,15 +515,15 @@ typedef implementation-defined const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `const_iterator`, bir öğenin değerini değiştirmek için kullanılamaz.
+Bir `const_iterator` tür, bir öğenin değerini değiştirmek için kullanılamaz.
 
 ### <a name="example"></a>Örnek
 
-[Geri](#back)örneğe bakın.
+[Geri](#back)için örneğe bakın.
 
-## <a name="const_pointer"></a>const_pointer
+## <a name="const_pointer"></a><a name="const_pointer"></a>Const_pointer
 
-Listedeki **const** öğe için bir işaretçi sağlar.
+Bir listedeki **const** öğesine işaretçi sağlar.
 
 ```cpp
 typedef typename Allocator::const_pointer const_pointer;
@@ -531,13 +531,13 @@ typedef typename Allocator::const_pointer const_pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `const_pointer`, bir öğenin değerini değiştirmek için kullanılamaz.
+Bir `const_pointer` tür, bir öğenin değerini değiştirmek için kullanılamaz.
 
-Çoğu durumda, bir [Yineleyici](#iterator) bir liste nesnesindeki öğelere erişmek için kullanılmalıdır.
+Çoğu durumda, bir [yineleyici](#iterator) bir liste nesnesindeki öğelere erişmek için kullanılmalıdır.
 
-## <a name="const_reference"></a>const_reference
+## <a name="const_reference"></a><a name="const_reference"></a>Const_reference
 
-**Const** işlemlerini okumak ve gerçekleştirmek için bir listede depolanan **const** öğesine başvuru sağlayan bir tür.
+**Const** işlemleri okumak ve gerçekleştirmek için listede depolanan **bir const** öğesine başvuru sağlayan bir tür.
 
 ```cpp
 typedef typename Allocator::const_reference const_reference;
@@ -545,7 +545,7 @@ typedef typename Allocator::const_reference const_reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `const_reference`, bir öğenin değerini değiştirmek için kullanılamaz.
+Bir `const_reference` tür, bir öğenin değerini değiştirmek için kullanılamaz.
 
 ### <a name="example"></a>Örnek
 
@@ -579,9 +579,9 @@ The first element is 10
 The second element is 20
 ```
 
-## <a name="const_reverse_iterator"></a>const_reverse_iterator
+## <a name="const_reverse_iterator"></a><a name="const_reverse_iterator"></a>Const_reverse_iterator
 
-Bir listedeki herhangi bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.
+Bir listedeki herhangi bir **const** öğeyi okuyabilen çift yönlü bir yineleme sağlayan bir tür.
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -589,15 +589,15 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `const_reverse_iterator`, bir öğenin değerini değiştiremiyor ve ters içindeki listede yinelemek için kullanılır.
+Bir `const_reverse_iterator` tür bir öğenin değerini değiştiremez ve liste yi ters teslesile getirmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
-[Rbegin](#rbegin)örneğine bakın.
+[rbegin](#rbegin)için örneğe bakın.
 
-## <a name="crbegin"></a>crbegin
+## <a name="crbegin"></a><a name="crbegin"></a>crbegin
 
-Ters çevrilen bir listedeki ilk öğeyi adresleyen bir const yineleyici döndürür.
+Ters bir listedeki ilk öğeyi ele alan bir const yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator rbegin() const;
@@ -605,13 +605,13 @@ const_reverse_iterator rbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen bir listedeki ilk öğeyi ele alarak const ters çift yönlü yineleyici (veya geri çevrilmeyen `list`son öğe olduğunu adresleyen).
+Ters bir listedeki ilk öğeyi ele alan (veya tersine çevrilmemiş `list`son öğeyi ele alan) const ters yönlü bir yineleme.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crbegin` şöyle bir şekilde bir ters liste ile kullanılır [: BEGIN](#begin) , bir `list`ile birlikte kullanılır.
+`crbegin`liste gibi ters bir liste ile [kullanılır::begin](#begin) ile kullanılır . `list`
 
-`crbegin`dönüş değeri ile, liste nesnesi değiştirilemez. [list:: rbegin](#rbegin) , bir listede geriye doğru yinelemek için kullanılabilir.
+İade değeri ile `crbegin`liste nesnesi değiştirilemez. [liste::rbegin](#rbegin) bir liste geriye doğru doğrulamak için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -639,9 +639,9 @@ int main( )
 The last element in the list is 30.
 ```
 
-## <a name="crend"></a>crend
+## <a name="crend"></a><a name="crend"></a>crend
 
-Ters çevrilen bir listedeki son öğeden sonraki konumu adresleyen bir const yineleyici döndürür.
+Ters bir listedeki son öğeyi yerine getiren konumu gideren bir const yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator rend() const;
@@ -649,17 +649,17 @@ const_reverse_iterator rend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen bir [listedeki](../standard-library/list-class.md) son öğeden sonra gelen konumu ele alan bir sabit ters çift yönlü yineleyici (geri çevrilmeyen `list`ilk öğeden önce olan konum).
+Ters bir [listedeki](../standard-library/list-class.md) son öğeyi başaran konumu gideren bir const ters çift yönlü yineleme (ters çevrilmemiş `list`ilk öğeden önce gelen konum).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crend` [list:: End](#end) bir `list`ile birlikte bir ters çevrilmiş liste ile kullanılır.
+`crend`liste gibi ters bir liste ile [kullanılır::end](#end) ile kullanılır . `list`
 
-`crend`dönüş değeri ile `list` nesnesi değiştirilemez.
+İade değeri ile `crend` `list` nesne değiştirilemez.
 
-`crend`, geriye doğru bir yineleyicinin `list`sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
+`crend`ters yineleyicinin sonuna ulaşıp ulaşmadığını test etmek için `list`kullanılabilir.
 
-`crend` tarafından döndürülen değer başvurulmamalıdır.
+Döndürülen `crend` değer dereferenced olmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -690,9 +690,9 @@ int main( )
 The first element in the list is: 10
 ```
 
-## <a name="difference_type"></a>difference_type
+## <a name="difference_type"></a><a name="difference_type"></a>difference_type
 
-Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki bir listenin öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.
+Yineleyiciler tarafından işaret edilen öğeler arasındaki aralıktaki bir liste öğesi sayısını temsil etmek için kullanılabilecek imzalı bir tamsayı türü.
 
 ```cpp
 typedef typename Allocator::difference_type difference_type;
@@ -700,9 +700,9 @@ typedef typename Allocator::difference_type difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`difference_type` kapsayıcının yineleyiciler aracılığıyla çıkartılacak veya arttırılarak döndürülen türdür. `difference_type`, genellikle yineleyiciler `first` ve `last`arasındaki [`first`, `last`) aralıktaki öğelerin sayısını temsil etmek için kullanılır, `first` tarafından işaret edilen öğeyi ve dahil değil, öğe aralığını, `last`tarafından işaret edilen öğeyi içerir.
+Kapsayıcının `difference_type` yineleyicileri arasından çıkarılırken veya artarken döndürülen türdür. Genellikle `difference_type` yinelemeciler `first` arasındaki aralıktaki öğe sayısını temsil `first` `last`etmek için kullanılır [ `last`, ) ve `first` , tarafından işaret edilen öğe ve elemanların aralığı kadar, ancak dahil değil, öğe tarafından `last`işaret .
 
-Küme gibi ters çevrilebilir kapsayıcılar tarafından desteklenen çift yönlü yineleyicilerin sınıfını içeren bir giriş yineleyicisinin gereksinimlerini karşılayan tüm yineleyiciler için `difference_type` kullanılabilir olsa da, yineleyiciler arasında çıkarma yalnızca, [vektör sınıfı](../standard-library/vector-class.md)gibi bir rastgele erişim kapsayıcısı tarafından sağlanan rastgele erişim yineleyiciler tarafından desteklenir.
+Küme gibi `difference_type` geri döndürülebilir kapsayıcılar tarafından desteklenen çift yönlü yineleyiciler sınıfını içeren bir giriş yineleyicisinin gereksinimlerini karşılayan tüm yineleyiciler için kullanılabilir olmasına rağmen, yineleyiciler arasındaki çıkarma nın yalnızca [vektör sınıfı](../standard-library/vector-class.md)gibi rasgele erişimli bir kapsayıcı tarafından sağlanan rasgele erişim yinelemeleri tarafından desteklendiğine dikkat edin.
 
 ### <a name="example"></a>Örnek
 
@@ -747,9 +747,9 @@ The number '20' is in c1 collection 2 times.
 The number '30' is in c1 collection 3 times.
 ```
 
-## <a name="emplace"></a>Emplace
+## <a name="emplace"></a><a name="emplace"></a>emplace
 
-Belirtilen konumdaki bir listeye yerinde oluşturulmuş bir öğe ekler.
+Yerinde oluşturulmuş bir öğeyi belirli bir konumda ki listeye ekler.
 
 ```cpp
 void emplace(iterator Where, Type&& val);
@@ -757,15 +757,15 @@ void emplace(iterator Where, Type&& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada*\
-Hedef [listedeki](../standard-library/list-class.md) ilk öğenin eklendiği konum.
+*Nerede*\
+İlk öğenin eklendiği hedef [listesindeki](../standard-library/list-class.md) konum.
 
-*val*\
-`list`sonuna eklenen öğe.
+*Val*\
+Sonuna eklenen `list`öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir özel durum oluşursa, `list` değiştirilmemiş olarak kalır ve özel durum yeniden oluşturulur.
+Bir özel durum atılırsa, `list` değiştirilmeden bırakılır ve özel durum yeniden atılır.
 
 ### <a name="example"></a>Örnek
 
@@ -791,7 +791,7 @@ int main( )
 Moved first element: a
 ```
 
-## <a name="emplace_back"></a>emplace_back
+## <a name="emplace_back"></a><a name="emplace_back"></a>emplace_back
 
 Bir listenin sonuna yerinde oluşturulmuş bir öğe ekler.
 
@@ -801,12 +801,12 @@ void emplace_back(Type&& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*val*\
+*Val*\
 [Listenin](../standard-library/list-class.md)sonuna eklenen öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir özel durum oluşursa, `list` değiştirilmemiş olarak kalır ve özel durum yeniden oluşturulur.
+Bir özel durum atılırsa, `list` değiştirilmeden bırakılır ve özel durum yeniden atılır.
 
 ### <a name="example"></a>Örnek
 
@@ -832,7 +832,7 @@ int main( )
 Moved first element: a
 ```
 
-## <a name="emplace_front"></a>emplace_front
+## <a name="emplace_front"></a><a name="emplace_front"></a>emplace_front
 
 Bir listenin başına yerinde oluşturulmuş bir öğe ekler.
 
@@ -842,12 +842,12 @@ void emplace_front(Type&& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*val*\
-[Listenin](../standard-library/list-class.md)başlangıcına eklenen öğe.
+*Val*\
+Öğe nin başına [eklenen.](../standard-library/list-class.md)
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir özel durum oluşursa, `list` değiştirilmemiş olarak kalır ve özel durum yeniden oluşturulur.
+Bir özel durum atılırsa, `list` değiştirilmeden bırakılır ve özel durum yeniden atılır.
 
 ### <a name="example"></a>Örnek
 
@@ -873,7 +873,7 @@ int main( )
 Moved first element: a
 ```
 
-## <a name="empty"></a>olmamalıdır
+## <a name="empty"></a><a name="empty"></a>Boş
 
 Bir liste boşsa sınar.
 
@@ -883,7 +883,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste boşsa **doğru** ; liste boş değilse **false** .
+liste boşsa **doğrudur;** liste boş değilse **false.**
 
 ### <a name="example"></a>Örnek
 
@@ -910,9 +910,9 @@ int main( )
 The list is not empty.
 ```
 
-## <a name="end"></a>erer
+## <a name="end"></a><a name="end"></a>Son -unda
 
-Bir listedeki son öğeden sonraki konumu ele alan bir yineleyici döndürür.
+Bir listedeki son öğeyi yerine getiren konumu adresleyen bir yineleyici döndürür.
 
 ```cpp
 const_iterator end() const;
@@ -921,11 +921,11 @@ iterator end();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir listedeki son öğeden sonraki konumu ele alan çift yönlü bir yineleyici. Liste boşsa `list::end == list::begin`.
+Bir listedeki son öğeyi yerine getiren konumu gideren çift yönlü bir yineleyici. Liste boşsa, `list::end == list::begin`o zaman.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`end`, bir yineleyicinin listenin sonuna ulaşıp ulaşılmadığını test etmek için kullanılır.
+`end`bir yineleyicinin listenin sonuna ulaşıp ulaşmadığını test etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -970,9 +970,9 @@ The new next-to-last integer of c1 is 400
 The list is now: 10 400 30
 ```
 
-## <a name="erase"></a>silme
+## <a name="erase"></a><a name="erase"></a>Silmek
 
-Bir listedeki öğe veya öğe aralığını belirtilen konumlardan kaldırır.
+Bir listedeki bir öğeyi veya dizi öğeyi belirtilen konumlardan kaldırır.
 
 ```cpp
 iterator erase(iterator Where);
@@ -981,24 +981,24 @@ iterator erase(iterator first, iterator last);
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada*\
-Listeden kaldırılacak öğenin konumu.
+*Nerede*\
+Öğenin listeden kaldırılacak konumu.
 
-*ilk*\
+*Ilk*\
 Listeden kaldırılan ilk öğenin konumu.
 
-*son*\
-Listeden kaldırılan son öğenin hemen ötesinde konumlandır.
+*Son*\
+Listeden kaldırılan son öğenin hemen ötesine yerleştirin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaldırılan öğelerin dışında kalan ilk öğeyi veya böyle bir öğe yoksa listenin sonuna bir işaretçiyi atayan çift yönlü bir yineleyici.
+Kaldırılan öğelerin ötesinde kalan ilk öğeyi belirleyen çift yönlü bir yineleyici veya böyle bir öğe yoksa listenin sonuna işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeniden ayırma gerçekleşmez, yineleyiciler ve başvurular yalnızca silinen öğeler için geçersiz hale gelir.
+Yeniden ayırma oluşmaz, bu nedenle yineleyiciler ve başvurular yalnızca silinen öğeler için geçersiz hale gelir.
 
-`erase` hiçbir şekilde özel durum oluşturmaz.
+`erase`asla bir istisna atmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -1045,9 +1045,9 @@ After erasing the first element, the list becomes: 20 30 40 50
 After erasing all elements but the first, the list becomes:  20
 ```
 
-## <a name="front"></a>yapılan
+## <a name="front"></a><a name="front"></a>Ön
 
-Listedeki ilk öğeye bir başvuru döndürür.
+Bir listedeki ilk öğeye başvuru verir.
 
 ```cpp
 reference front();
@@ -1056,13 +1056,13 @@ const_reference front() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste boşsa, dönüş tanımsızdır.
+Liste boşsa, iade tanımsız.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`front` dönüş değeri bir `const_reference`atanırsa, liste nesnesi değiştirilemez. `front` dönüş değeri bir `reference`atanırsa, liste nesnesi değiştirilebilir.
+Bir `const_reference`, liste `front` nesnesi için return value atanırsa değiştirilemez. Bir `reference`, liste `front` nesnesi için return value atanır.
 
-1 veya 2 olarak tanımlanan [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) kullanılarak derlendiğinde, boş bir listedeki bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.  Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md) .
+1 veya 2 olarak tanımlanan [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) kullanılarak derlendiğinde, boş bir listedeki bir öğeye erişmeye çalışırsanız çalışma zamanı hatası oluşur.  Daha fazla bilgi için [Kontrol Edilmiş Yinelemeciler'e](../standard-library/checked-iterators.md) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1092,9 +1092,9 @@ The first integer of c1 is 10
 The first integer of c1 is 11
 ```
 
-## <a name="get_allocator"></a>get_allocator
+## <a name="get_allocator"></a><a name="get_allocator"></a>Get_allocator
 
-Bir liste oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
+Bir liste oluşturmak için kullanılan ayırıcı nesnenin bir kopyasını döndürür.
 
 ```cpp
 Allocator get_allocator() const;
@@ -1102,11 +1102,11 @@ Allocator get_allocator() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listenin kullandığı ayırıcı.
+Liste tarafından kullanılan ayırıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste sınıfı için ayrıcılar, sınıfın depolamayı nasıl yönettiğini belirtir. C++ Standart kitaplık kapsayıcı sınıflarıyla sağlanan varsayılan ayrıcılar çoğu programlama ihtiyacı için yeterlidir. Kendi ayırıcı sınıfınızı yazmak ve kullanmak Gelişmiş C++ bir konudur.
+Liste sınıfının ayırıcıları sınıfın depolamayı nasıl yönettiğini belirtir. C++ Standart Kitaplık kapsayıcı sınıfları ile birlikte verilen varsayılan ayırıcılar çoğu programlama gereksinimleri için yeterlidir. Kendi ayırıcı sınıfınızı yazmak ve kullanmak gelişmiş bir C++ konusudur.
 
 ### <a name="example"></a>Örnek
 
@@ -1132,9 +1132,9 @@ int main( )
 }
 ```
 
-## <a name="insert"></a>ekleyin
+## <a name="insert"></a><a name="insert"></a>Ekle
 
-Belirtilen konumda bir öğe veya bir dizi öğe veya bir öğe aralığını bir listeye ekler.
+Belirli bir konumda bir listeye bir öğe veya bir dizi öğe veya öğe aralığı ekler.
 
 ```cpp
 iterator insert(iterator Where, const Type& Val);
@@ -1149,24 +1149,24 @@ void insert(iterator Where, InputIterator First, InputIterator Last);
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada*\
-Hedef listedeki ilk öğenin eklendiği konum.
+*Nerede*\
+İlk öğenin eklendiği hedef listesindeki konum.
 
 *Val*\
-Listeye eklenmekte olan öğenin değeri.
+Listeye eklenen öğenin değeri.
 
-*Sayı*\
-Listeye eklenmekte olan öğe sayısı.
+*Sayısı*\
+Listeye eklenen öğe sayısı.
 
-*İlk*\
-Kopyalanacak bağımsız değişken listesindeki öğe aralığındaki ilk öğenin konumu.
+*Ilk*\
+Bağımsız değişken listesindeki öğeler aralığındaki ilk öğenin konumu kopyalanacak.
 
 *Son*\
-Kopyalamak için bağımsız değişken listesindeki öğe aralığının ötesinde ilk öğenin konumu.
+İlk öğenin bağımsız değişken listesindeki öğelerin kapsamı dışındaki konumu kopyalanacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki INSERT işlevi, yeni öğenin listeye eklendiği konuma işaret eden bir yineleyici döndürür.
+İlk iki ekleme işlevi, yeni öğenin listeye eklendiği konumu gösteren bir yineleyici döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1238,9 +1238,9 @@ int main()
 }
 ```
 
-## <a name="iterator"></a>iden
+## <a name="iterator"></a><a name="iterator"></a>Yineleyici
 
-Bir listedeki herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
+Bir listedeki herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleme sağlayan bir tür.
 
 ```cpp
 typedef implementation-defined iterator;
@@ -1248,15 +1248,15 @@ typedef implementation-defined iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `iterator`, bir öğenin değerini değiştirmek için kullanılabilir.
+Bir `iterator` tür, bir öğenin değerini değiştirmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
-[Begin](#begin)örneğine bakın.
+[Başlangıç](#begin)için örneğe bakın.
 
-## <a name="list"></a>Listele
+## <a name="list"></a><a name="list"></a>Liste
 
-Belirli bir boyutun veya belirli bir değere sahip ya da belirli bir ayırıcıya ya da başka bir listenin tümünün veya bir kısmının bir kopyasının bir listesini oluşturur.
+Belirli bir boyutun veya belirli bir değerin öğeleriyle veya belirli bir ayırıcının veya başka bir listenin tamamının veya bir kısmının kopyası olarak bir liste oluşur.
 
 ```cpp
 list();
@@ -1281,45 +1281,45 @@ list(InputIterator First, InputIterator Last, const Allocator& Al);
 *Al*\
 Bu nesneyle kullanılacak kaynak ayırıcı sınıfı.
 
-*Sayı*\
-Oluşturulan listedeki öğelerin sayısı.
+*Sayısı*\
+Yapılandırılan listedeki öğe sayısı.
 
 *Val*\
 Listedeki öğelerin değeri.
 
-*Sağ*\
-Oluşturulan listenin bir kopya olduğu liste.
+*Doğru*\
+Yapılandırılan listenin bir kopyası olması için yapılan liste.
 
-*İlk*\
-Kopyalanacak öğe aralığındaki ilk öğenin konumu.
+*Ilk*\
+Kopyalanacak öğeler aralığındaki ilk öğenin konumu.
 
 *Son*\
-Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.
+İlk öğenin kopyalanacak öğe aralığının ötesindeki konumu.
 
-*Ilist*\
+*ılist*\
 Kopyalanacak öğeleri içeren initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular bir ayırıcı nesnesi (*Al*) depolar ve listeyi başlatır.
+Tüm kurucular bir ayırıcı nesne *(Al)* depolar ve listeyi başharfe alar.
 
-[get_allocator](#get_allocator) , bir liste oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
+[get_allocator,](#get_allocator) liste oluşturmak için kullanılan ayırıcı nesnenin bir kopyasını döndürür.
 
-İlk iki Oluşturucu boş bir başlangıç listesi belirtir, ikincisi kullanılacak ayırıcı türünü (*Al*) belirtir.
+İlk iki oluşturucu boş bir başlangıç listesi belirtir, ikinci allocator türünü belirten *(Al)* kullanılacak.
 
-Üçüncü Oluşturucu, `Type`sınıfı için varsayılan değerin belirtilen (*Count*) sayısı için bir tekrarın bir tekrarını belirtir.
+Üçüncü oluşturucu, sınıf `Type`için varsayılan değerin öğelerinin belirli bir sayının *(Count)* tekrarını belirtir.
 
-Dördüncü ve beşinci oluşturucular değer *Val*(*Count*) öğelerinin tekrarlarını belirtir.
+Dördüncü ve beşinci kurucular *, Val*değeri (*Count*) öğelerinin bir tekrarını belirtirler.
 
-Altıncı Oluşturucu, listenin *sağ*bir kopyasını belirtir.
+Altıncı oluşturucu, *Sağ*listenin bir kopyasını belirtir.
 
-Yedinci Oluşturucu listeyi *sağa*taşımaktır.
+Yedinci yapıcı *listeyi Sağa*taşır.
 
-Sekizinci Oluşturucu öğeleri belirtmek için bir initializer_list kullanır.
+Sekizinci oluşturucu öğeleri belirtmek için bir initializer_list kullanır.
 
-Sonraki iki Oluşturucu bir listenin Aralık `[First, Last)` kopyalar.
+Sonraki iki oluşturucu bir `[First, Last)` listenin aralığını kopyalar.
 
-Oluşturuculardan hiçbiri geçici realkonum gerçekleştirmez.
+Yapıcıların hiçbiri geçici yer değiştirme ler gerçekleştirmez.
 
 ### <a name="example"></a>Örnek
 
@@ -1412,9 +1412,9 @@ int main()
 c1 = 0 0 0c2 = 2 2 2 2 2c3 = 1 1 1c4 = 2 2 2 2 2c5 = 2 2c6 = 2 2 2c7 = 2 2 2c8 = 1 2 3 4
 ```
 
-## <a name="max_size"></a>max_size
+## <a name="max_size"></a><a name="max_size"></a>max_size
 
-Listenin maksimum uzunluğunu döndürür.
+Listenin en uzunluğunu verir.
 
 ```cpp
 size_type max_size() const;
@@ -1422,7 +1422,7 @@ size_type max_size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listenin olası en yüksek uzunluğu.
+Listenin mümkün olan en yüksek uzunluğu.
 
 ### <a name="example"></a>Örnek
 
@@ -1443,9 +1443,9 @@ int main( )
 }
 ```
 
-## <a name="merge"></a>birleþtirmek
+## <a name="merge"></a><a name="merge"></a>Birleştirme
 
-Bağımsız değişken listesinden öğeleri kaldırır, bunları hedef listeye ekler ve yeni, Birleşik öğe kümesini artan sırada veya belirli bir sıraya göre sıralar.
+Öğeleri bağımsız değişken listesinden kaldırır, hedef listesine ekler ve artan sırada veya başka bir belirtilen sırada yeni, birleştirilmiş öğeler kümesini sıralar.
 
 ```cpp
 void merge(list<Type, Allocator>& right);
@@ -1456,17 +1456,17 @@ void merge(list<Type, Allocator>& right, Traits comp);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
+*Doğru*\
 Hedef listeyle birleştirilecek bağımsız değişken listesi.
 
-*comp*\
-Hedef listenin öğelerini sıralamak için kullanılan karşılaştırma işleci.
+*Comp*\
+Hedef listenin öğelerini sipariş etmek için kullanılan karşılaştırma işleci.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağımsız değişken listesi *hakkı* hedef listeyle birleştirilir.
+Bağımsız değişken listesi *sağ* hedef listesi ile birleştirilir.
 
-Hem bağımsız değişken hem de hedef listeler, sonuçta elde edilen sıranın sıralanabilmesi için aynı karşılaştırma ilişkisiyle birlikte sıralanmalıdır. İlk üye işlevi için varsayılan sıra artan sıradır. İkinci üye işlevi, `Traits`sınıfının Kullanıcı tarafından belirtilen *karşılaştırma işlemini uygular* .
+Hem bağımsız değişken hem de hedef listeleri, elde edilen sıranın sıralandığı aynı karşılaştırma ilişkisiyle sıralanmalıdır. İlk üye işlev için varsayılan sıra artan sipariştir. İkinci üye işlevi sınıfın `Traits`kullanıcı tarafından belirtilen karşılaştırma işlemi *comp* empoze eder.
 
 ### <a name="example"></a>Örnek
 
@@ -1527,9 +1527,9 @@ c3 = 5 1
 After merging c3 with c2 according to the '>' comparison relation: c2 = 6 5 4 3 2 1
 ```
 
-## <a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a>işleç=
 
-Liste öğelerini başka bir listenin kopyasıyla değiştirir.
+Listenin öğelerini başka bir listenin kopyasıyla değiştirir.
 
 ```cpp
 list& operator=(const list& right);
@@ -1538,12 +1538,12 @@ list& operator=(list&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-`list`kopyalandığı [liste](../standard-library/list-class.md) .
+*Doğru*\
+Liste [list](../standard-library/list-class.md) `list`kopyalanıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `list`var olan öğeleri sildikten sonra, işleç içerikleri kopyalar veya `list`içine *taşısa* .
+Bir'deki varolan öğeleri `list`silerken, işleç *hakkın* içeriğini `list`kopyalar veya .'ye taşır.
 
 ### <a name="example"></a>Örnek
 
@@ -1586,9 +1586,9 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a>çağrısı
+## <a name="pointer"></a><a name="pointer"></a>Işaretçi
 
-Listedeki bir öğe için bir işaretçi sağlar.
+Listedeki bir öğeye işaretçi sağlar.
 
 ```cpp
 typedef typename Allocator::pointer pointer;
@@ -1596,11 +1596,11 @@ typedef typename Allocator::pointer pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `pointer`, bir öğenin değerini değiştirmek için kullanılabilir.
+Bir `pointer` tür, bir öğenin değerini değiştirmek için kullanılabilir.
 
-Çoğu durumda, bir [Yineleyici](#iterator) bir liste nesnesindeki öğelere erişmek için kullanılmalıdır.
+Çoğu durumda, bir [yineleyici](#iterator) bir liste nesnesindeki öğelere erişmek için kullanılmalıdır.
 
-## <a name="pop_back"></a>pop_back
+## <a name="pop_back"></a><a name="pop_back"></a>pop_back
 
 Listenin sonundaki öğeyi siler.
 
@@ -1610,7 +1610,7 @@ void pop_back();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Son öğe boş olmamalıdır. `pop_back` hiçbir şekilde özel durum oluşturmaz.
+Son öğe boş olmamalıdır. `pop_back`asla bir istisna atmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -1642,7 +1642,7 @@ The last element is: 2
 After deleting the element at the end of the list, the last element is: 1
 ```
 
-## <a name="pop_front"></a>pop_front
+## <a name="pop_front"></a><a name="pop_front"></a>pop_front
 
 Listenin başındaki öğeyi siler.
 
@@ -1652,7 +1652,7 @@ void pop_front();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk öğe boş olmamalıdır. `pop_front` hiçbir şekilde özel durum oluşturmaz.
+İlk öğe boş olmamalıdır. `pop_front`asla bir istisna atmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -1684,22 +1684,23 @@ The second element is: 2
 After deleting the element at the beginning of the list, the first element is: 2
 ```
 
-## <a name="push_back"></a>push_back
+## <a name="push_back"></a><a name="push_back"></a>push_back
 
 Listenin sonuna bir öğe ekler.
 
 ```cpp
-void push_back(void push_back(Type&& val);
+void push_back(const Type& val);
+void push_back(Type&& val);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*val*\
-Listenin sonuna eklenen öğe.
+*Val*\
+Öğe listenin sonuna eklendi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir özel durum oluşturulursa, liste değiştirilmemiş olarak kalır ve özel durum yeniden oluşturulur.
+Bir özel durum atılırsa, liste değiştirilmeden bırakılır ve özel durum yeniden atılır.
 
 ### <a name="example"></a>Örnek
 
@@ -1738,9 +1739,9 @@ New last element: 2
 Moved first element: a
 ```
 
-## <a name="push_front"></a>push_front
+## <a name="push_front"></a><a name="push_front"></a>push_front
 
-Listenin başlangıcına bir öğe ekler.
+Listenin başına bir öğe ekler.
 
 ```cpp
 void push_front(const Type& val);
@@ -1749,12 +1750,12 @@ void push_front(Type&& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*val*\
-Listenin başlangıcına eklenen öğe.
+*Val*\
+Öğe listenin başına eklendi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir özel durum oluşturulursa, liste değiştirilmemiş olarak kalır ve özel durum yeniden oluşturulur.
+Bir özel durum atılırsa, liste değiştirilmeden bırakılır ve özel durum yeniden atılır.
 
 ### <a name="example"></a>Örnek
 
@@ -1793,9 +1794,9 @@ New first element: 2
 Moved first element: a
 ```
 
-## <a name="rbegin"></a>rbegin
+## <a name="rbegin"></a><a name="rbegin"></a>rbegin
 
-Ters çevrilen bir listedeki ilk öğeyi ele alan bir yineleyici döndürür.
+Ters bir listedeki ilk öğeyi ele alan bir yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator rbegin() const;
@@ -1804,15 +1805,15 @@ reverse_iterator rbegin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen bir listedeki ilk öğeyi ele alarak ters çift yönlü yineleyici (veya geri çevrilmeyen listedeki son öğe olduğunu adresleme).
+Ters bir listedeki ilk öğeyi ele alan (veya ters çevrilmemiş listedeki son öğeyi ele alan) ters yönlü bir yineleme.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rbegin`, [BEGIN](#begin) bir listeyle birlikte kullanıldığı gibi, ters çevrilmiş bir listeyle kullanılır.
+`rbegin`bir liste yle birlikte [begin](#begin) olarak ters bir liste ile kullanılır.
 
-`rbegin` dönüş değeri bir `const_reverse_iterator`atanırsa, liste nesnesi değiştirilemez. `rbegin` dönüş değeri bir `reverse_iterator`atanırsa, liste nesnesi değiştirilebilir.
+Bir `const_reverse_iterator`, liste `rbegin` nesnesi için return value atanırsa değiştirilemez. Bir `reverse_iterator`, liste `rbegin` nesnesi için return value atanır.
 
-`rbegin`, bir listede geriye doğru yinelemek için kullanılabilir.
+`rbegin`bir liste boyunca geriye doğru doğrulamak için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1864,7 +1865,7 @@ The reversed list is: 30 20 10
 The last element in the list is now 40.
 ```
 
-## <a name="reference"></a>başvurunun
+## <a name="reference"></a><a name="reference"></a>Başvuru
 
 Listede depolanan bir öğeye başvuru sağlayan bir tür.
 
@@ -1900,9 +1901,9 @@ The first element is 10
 The second element is 20
 ```
 
-## <a name="remove"></a>temizlenmesine
+## <a name="remove"></a><a name="remove"></a>Kaldırmak
 
-Bir listedeki belirtilen değerle eşleşen öğeleri siler.
+Belirli bir değerle eşleşen bir listedeki öğeleri siler.
 
 ```cpp
 void remove(const Type& val);
@@ -1910,8 +1911,8 @@ void remove(const Type& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*val*\
-Bir öğe tarafından tutuluyorsa, bu öğenin listeden kaldırılmasına neden olur.
+*Val*\
+Bir öğe tarafından tutulduğunda, bu öğenin listeden çıkarılmasıyla sonuçlanacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1957,9 +1958,9 @@ The initial list is c1 = 5 100 5 200 5 300
 After removing elements with value 5, the list becomes c2 = 100 200 300
 ```
 
-## <a name="remove_if"></a>remove_if
+## <a name="remove_if"></a><a name="remove_if"></a>remove_if
 
-Belirtilen koşulun karşılanmadığı bir listeden öğeleri siler.
+Belirli bir yüklemin karşılandığı bir listeden öğeleri siler.
 
 ```cpp
 template <class Predicate>
@@ -1969,7 +1970,7 @@ void remove_if(Predicate pred)
 ### <a name="parameters"></a>Parametreler
 
 *Pred*\
-Bir öğe tarafından karşılanmadığı birli koşul, bu öğenin listeden silinmesine neden olur.
+Bir öğe tarafından tatmin edilirse, bu öğenin listeden silinmesine neden olan unary yüklemi.
 
 ### <a name="example"></a>Örnek
 
@@ -2022,9 +2023,9 @@ The initial list is c1 = 3 4 5 6 7 8
 After removing the odd elements, the list becomes c2 = 4 6 8
 ```
 
-## <a name="rend"></a>rend
+## <a name="rend"></a><a name="rend"></a>Rend
 
-Ters çevrilen bir listedeki son öğeyi takip eden konumu ele alan bir yineleyici döndürür.
+Ters listedeki son öğeyi izleyen konumu adresleyen bir yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator rend() const;
@@ -2033,17 +2034,17 @@ reverse_iterator rend();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen bir listedeki son öğeden sonra gelen konumu ele alan bir ters çift yönlü yineleyici (geri çevrilmeyen listedeki ilk öğeden önce gelen konum).
+Ters listedeki son öğeyi (ters çevrilmemiş listedeki ilk öğeden önce gelen konum) yerine gelen konumu gideren ters çift yönlü bir yineleme.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rend`, [uç](#end) bir liste ile kullanıldığı gibi, ters çevrilmiş bir listeyle kullanılır.
+`rend`[sonu](#end) bir liste ile kullanıldığı gibi ters bir liste ile kullanılır.
 
-`rend` dönüş değeri bir `const_reverse_iterator`atanırsa, liste nesnesi değiştirilemez. `rend` dönüş değeri bir `reverse_iterator`atanırsa, liste nesnesi değiştirilebilir.
+Bir `const_reverse_iterator`, liste `rend` nesnesi için return value atanırsa değiştirilemez. Bir `reverse_iterator`, liste `rend` nesnesi için return value atanır.
 
-`rend`, geriye doğru bir yineleyicinin listenin sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
+`rend`ters yineleyicinin listenin sonuna ulaşıp ulaşmadığını test etmek için kullanılabilir.
 
-`rend` tarafından döndürülen değer başvurulmamalıdır.
+Döndürülen `rend` değer dereferenced olmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -2108,7 +2109,7 @@ The reversed list is: 30 20 10
 The modified reversed list is: 30 20 40
 ```
 
-## <a name="resize"></a>yeniden boyutlandırma
+## <a name="resize"></a><a name="resize"></a>Yeni -den boyutlandırmak
 
 Bir liste için yeni bir boyut belirtir.
 
@@ -2122,18 +2123,18 @@ void resize(size_type _Newsize, Type val);
 *_Newsize*\
 Listenin yeni boyutu.
 
-*val*\
-Yeni boyut orijinal boyuttan daha büyükse listeye eklenecek yeni öğelerin değeri. Değer atlanırsa, yeni öğelere sınıfı için varsayılan değer atanır.
+*Val*\
+Yeni boyut orijinal boyutu daha büyükse, listeye eklenecek yeni öğelerin değeri. Değer atlanırsa, yeni öğeler sınıf için varsayılan değer atanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Listenin boyutu istenen boyuttan daha küçükse *_Newsize*, öğeler istenen boyuta ulaşıncaya kadar listeye eklenir.
+Listenin boyutu istenen boyuttan küçükse, *_Newsize,* öğeler istenen boyuta ulaşana kadar listeye eklenir.
 
-Listenin boyutu istenen boyuttan daha büyükse, listenin sonuna en yakın olan öğeler, liste *_Newsize*boyutuna ulaşıncaya kadar silinir.
+Listenin boyutu istenen boyuttan büyükse, listenin sonuna en yakın öğeler *liste _Newsize*boyutuna ulaşana kadar silinir.
 
-Listenin mevcut boyutu istenen boyutla aynı ise, herhangi bir eylem yapılmaz.
+Listenin mevcut boyutu istenen boyutla aynıysa, hiçbir işlem yapılmaz.
 
-[Boyut](#size) , listenin geçerli boyutunu yansıtır.
+[boyutu](#size) listenin geçerli boyutunu yansıtır.
 
 ### <a name="example"></a>Örnek
 
@@ -2175,9 +2176,9 @@ The reduced size of c1 is: 2
 The value of the last element is now 20
 ```
 
-## <a name="reverse"></a>tersini
+## <a name="reverse"></a><a name="reverse"></a>Ters
 
-Öğelerin bir listede oluştuğu sırayı tersine çevirir.
+Öğelerin bir listede oluşma sırasını tersine çevirir.
 
 ```cpp
 void reverse();
@@ -2219,9 +2220,9 @@ c1 = 10 20 30
 Reversed c1 = 30 20 10
 ```
 
-## <a name="reverse_iterator"></a>reverse_iterator
+## <a name="reverse_iterator"></a><a name="reverse_iterator"></a>Reverse_iterator
 
-Ters çevrilen bir listedeki bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
+Ters bir listedeki bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleme sağlayan bir tür.
 
 ```cpp
 typedef std::reverse_iterator<iterator> reverse_iterator;
@@ -2229,15 +2230,15 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `reverse_iterator`, geriye doğru listede yinelemek için kullanılır.
+Bir `reverse_iterator` tür, listeyi ters olarak yinelemek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
-[Rbegin](#rbegin)örneğine bakın.
+[rbegin](#rbegin)için örneğe bakın.
 
-## <a name="size"></a>boyutla
+## <a name="size"></a><a name="size"></a>Boyutu
 
-Bir listedeki öğe sayısını döndürür.
+Listedeki öğe sayısını döndürür.
 
 ```cpp
 size_type size() const;
@@ -2276,9 +2277,9 @@ List length is 1.
 List length is now 2.
 ```
 
-## <a name="size_type"></a>size_type
+## <a name="size_type"></a><a name="size_type"></a>Size_type
 
-Bir listedeki öğelerin sayısını sayan bir tür.
+Listedeki öğe sayısını sayan bir tür.
 
 ```cpp
 typedef typename Allocator::size_type size_type;
@@ -2286,11 +2287,11 @@ typedef typename Allocator::size_type size_type;
 
 ### <a name="example"></a>Örnek
 
-[Boyut](#size)örneğine bakın.
+[Boyut](#size)için örneğe bakın.
 
-## <a name="sort"></a>düzenine
+## <a name="sort"></a><a name="sort"></a>Sıralama
 
-Bir listenin öğelerini artan sırada veya Kullanıcı tarafından belirtilen başka bir sıraya göre düzenler.
+Bir listenin öğelerini artan sırada veya kullanıcı tarafından belirtilen diğer bazı siparişlerle ilgili olarak düzenler.
 
 ```cpp
 void sort();
@@ -2301,14 +2302,14 @@ template <class Traits>
 
 ### <a name="parameters"></a>Parametreler
 
-*comp*\
-Birbirini izleyen öğeleri sıralamak için kullanılan karşılaştırma işleci.
+*Comp*\
+Ardışık öğeleri sipariş etmek için kullanılan karşılaştırma işleci.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, varsayılan olarak öğeleri artan sırada koyar.
+İlk üye işlev öğeleri varsayılan olarak artan sırada koyar.
 
-Üye şablonu işlevi, öğeleri Kullanıcı tarafından belirtilen karşılaştırma işlem *kompozisyonunun* `Traits`göre sıralar.
+Üye şablon işlevi sınıfın `Traits`kullanıcı tarafından belirtilen karşılaştırma işlemi *comp* göre öğeleri siparişleri.
 
 ### <a name="example"></a>Örnek
 
@@ -2353,9 +2354,9 @@ After sorting c1 = 10 20 30
 After sorting with 'greater than' operation, c1 = 30 20 10
 ```
 
-## <a name="splice"></a>splice
+## <a name="splice"></a><a name="splice"></a>Splice
 
-Bir kaynak listesinden öğeleri kaldırır ve bunları bir hedef listesine ekler.
+Öğeleri kaynak listesinden kaldırır ve hedef listesine ekler.
 
 ```cpp
 // insert the entire source list
@@ -2373,32 +2374,32 @@ void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada*\
-Eklenecek hedef listedeki konum.
+*Nerede*\
+Eklenecek önce hedef listesindeki konum.
 
 *Kaynak*\
-Hedef listesine eklenecek kaynak listesi.
+Hedef listeye eklenecek kaynak listesi.
 
-*Iter*\
-Kaynak listesinden eklenecek öğe.
+*ıter*\
+Kaynak listeden eklenecek öğe.
 
-*İlk*\
-Kaynak listesinden eklenecek aralıktaki ilk öğe.
+*Ilk*\
+Aralıktaki ilk öğe kaynak listeden eklenecek.
 
 *Son*\
-Kaynak listesinden eklenecek aralıktaki son öğenin ötesinde ilk konum.
+Kaynak listeden eklenecek aralıktaki son öğenin ötesindeki ilk konum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi çifti, kaynak listedeki tüm öğeleri, *konum tarafından başvurulan* konumdan önce hedef listeye ekler ve tüm öğeleri kaynak listesinden kaldırır. (`&Source` `this`eşit olmamalıdır.)
+İlk üye işlev çifti, *Nerede* tarafından atıfta bulunulan konumdan önce kaynak listesindeki tüm öğeleri hedef listeye ekler ve tüm öğeleri kaynak listeden kaldırır. (`&Source` eşit `this`olmamalıdır .)
 
-Üye işlevlerinin ikinci çifti, hedef listedeki *konumdan önce, konum tarafından başvurulan* *ve kaynak* listeden *iter* 'yi kaldıran bir öğe ekler. (`Where == Iter || Where == ++Iter`, hiçbir değişiklik gerçekleşmez.)
+İkinci üye işlev çifti, *Nerede* tarafından başvurulan hedef listesindeki konumdan önce *Iter* tarafından atıfta bulunulan öğeyi ekler ve *Iter'ı* kaynak listesinden kaldırır. (Değişiklik `Where == Iter || Where == ++Iter`olmazsa.)
 
-Üçüncü üye işlevleri, [`First`, `Last` *) tarafından belirtilen* aralığı, hedef listedeki öğeden önce, bu öğe aralığını kaynak listesinden kaldırır. (`&Source == this`, Aralık `[First, Last)` öğesinin *işaret ettiği öğeyi içermesi gerekir.)*
+Üçüncü üye işlev çifti, *Nerede* tarafından atıfta `First` `Last`bulunulan hedef listesindeki öğeden önce [ , ) tarafından belirlenen aralığı ekler ve bu öğe aralığını kaynak listesinden kaldırır. (Eğer, `&Source == this`aralık `[First, Last)` *Nerede*tarafından işaret öğeiçermemelidir .)
 
-Ranşlı splice `N` öğeleri ekler ve `&Source != this`, sınıf [Yineleyici](../standard-library/forward-list-class.md#iterator) nesnesinin bir nesnesi `N` zaman artırılır.
+Aralıklı `N` splice öğeleri ekler ve `&Source != this`, sınıf [yineleyici](../standard-library/forward-list-class.md#iterator) bir nesne `N` artışlı kez.
 
-Her durumda yineleyiciler, işaretçiler veya vliced öğelerine başvuran başvurular geçerli kalır ve hedef kapsayıcıya aktarılır.
+Tüm durumlarda yineleyiciler, işaretçiler veya birleştirilmiş öğelere başvuran başvurular geçerli kalır ve hedef kapsayıcıya aktarılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2476,9 +2477,9 @@ int main()
 Beginning state of lists:c1 = 2 elements: (10) (11)c2 = 3 elements: (20) (21) (22)c3 = 2 elements: (30) (31)c4 = 4 elements: (40) (41) (42) (43)After splicing c1 into c2:c1 = 0 elements:c2 = 5 elements: (20) (10) (11) (21) (22)After splicing the first element of c3 into c2:c3 = 1 elements: (31)c2 = 6 elements: (20) (10) (11) (30) (21) (22)After splicing a range of c4 into c2:c4 = 2 elements: (40) (43)c2 = 8 elements: (20) (10) (11) (30) (41) (42) (21) (22)
 ```
 
-## <a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a>Takas
 
-İki listenin öğelerini değiş tokuş eder.
+İki liste öğelerini değiştirir.
 
 ```cpp
 void swap(list<Type, Allocator>& right);
@@ -2487,11 +2488,11 @@ friend void swap(list<Type, Allocator>& left, list<Type, Allocator>& right)
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Değiştirilecek öğeleri *sağlayan liste veya*öğeleri listedeki değişikliklerle değiştirilecek olan liste.
+*Doğru*\
+Değiştirilecek öğeleri sağlayan liste veya *öğeleri bırakılan*listeyle değiştirilecek liste.
 
-*sol*\
-Öğeleri liste *hakkı*ile değiş tokuş edilecek olan bir liste.
+*Sol*\
+Öğeleri *doğru*liste dekilerle değiştirilecek bir liste.
 
 ### <a name="example"></a>Örnek
 
@@ -2541,9 +2542,9 @@ After swapping with c2, list c1 is: 10 20
 After swapping with c3, list c1 is: 100
 ```
 
-## <a name="unique"></a>eşi
+## <a name="unique"></a><a name="unique"></a>Benzer -siz
 
-Bir listeden diğer bir ikili koşula uyan bitişik yinelenen öğeleri veya bitişik öğeleri kaldırır.
+Bir listeden diğer bazı ikili yüklemi karşılayan bitişik yinelenen öğeleri veya bitişik öğeleri kaldırır.
 
 ```cpp
 void unique();
@@ -2555,15 +2556,15 @@ void unique(BinaryPredicate pred);
 ### <a name="parameters"></a>Parametreler
 
 *Pred*\
-Birbirini izleyen öğeleri karşılaştırmak için kullanılan ikili koşul.
+Ardışık öğeleri karşılaştırmak için kullanılan ikili yüklem.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, tüm yinelenen öğelerin bitişik olması için listenin sıralandığı varsayılır. Bitişik olmayan yinelemeler silinmeyecektir.
+Bu işlev, tüm yinelenen öğelerin bitişik olması için listenin sıralanmış olduğunu varsayar. Bitişik olmayan yinelemeler silinmez.
 
-İlk üye işlevi, önceki öğesiyle eşit olarak karşılaştırıldığı her öğeyi kaldırır.
+İlk üye işlev, önceki öğeyle eşit karşılaştırılabilen her öğeyi kaldırır.
 
-İkinci üye işlevi, önceki öğesiyle karşılaştırıldığı zaman *Pred* koşul işlevini karşılayan her öğeyi kaldırır. *Pred* bağımsız değişkeni için \<işlevsel > üst bilgisinde belirtilen ikili işlev nesnelerinden herhangi birini kullanabilir veya kendi kendinizinkini oluşturabilirsiniz.
+İkinci üye işlev, önceki öğesi ile karşılaştırıldığında yüklem işlevi *pred'ini* tatmin eden her öğeyi kaldırır. Bağımsız değişken \< *pred* için işlevsel> üstbilgisinde bildirilen ikili işlev nesnelerinden herhangi birini kullanabilir veya kendi nesnenizi oluşturabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -2614,9 +2615,9 @@ After removing successive duplicate elements, c2 = -10 10 20 -10
 After removing successive unequal elements, c3 = -10 -10
 ```
 
-## <a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a>Value_type
 
-Bir listede depolanan veri türünü temsil eden bir tür.
+Listede depolanan veri türünü temsil eden bir tür.
 
 ```cpp
 typedef typename Allocator::value_type value_type;
@@ -2624,7 +2625,7 @@ typedef typename Allocator::value_type value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_type`, şablon parametre *türü*için bir eş anlamlı.
+`value_type`şablon parametresi *Türü*ile eş anlamlıdır.
 
 ### <a name="example"></a>Örnek
 

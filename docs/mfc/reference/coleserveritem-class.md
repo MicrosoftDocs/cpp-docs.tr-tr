@@ -1,5 +1,5 @@
 ---
-title: Cotaserverıtem sınıfı
+title: COleServerItem Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleServerItem
@@ -74,14 +74,14 @@ helpviewer_keywords:
 - COleServerItem [MFC], OnShow
 - COleServerItem [MFC], m_sizeExtent
 ms.assetid: 80256df6-3888-4256-944b-787d4b2e6b0d
-ms.openlocfilehash: dcae304e8571ecb5743002638ea23f13c3e21517
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 5373075cf6dfc54e6e2368e46f48f317fcec64d9
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79421088"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81376111"
 ---
-# <a name="coleserveritem-class"></a>Cotaserverıtem sınıfı
+# <a name="coleserveritem-class"></a>COleServerItem Sınıfı
 
 OLE öğelerine sunucu arabirimi sağlar.
 
@@ -95,73 +95,73 @@ class COleServerItem : public CDocItem
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Copaserverıtem:: Cotaserverıtem](#coleserveritem)|`COleServerItem` nesnesi oluşturur.|
+|[COleServerItem::COleServerItem](#coleserveritem)|Bir `COleServerItem` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Cotaserverıtem:: AddOtherClipboardData](#addotherclipboarddata)|`COleDataSource` nesnesine sunum ve dönüştürme biçimleri koyar.|
-|[Cotaserverıtem:: CopyToClipboard](#copytoclipboard)|Öğeyi panoya kopyalar.|
-|[Cotaserverıtem::D oDragDrop](#dodragdrop)|Bir sürükle ve bırak işlemi gerçekleştirir.|
-|[Cotaserverıtem:: GetClipboardData](#getclipboarddata)|Veri aktarımında kullanılacak veri kaynağını alır (sürükleyip bırakma veya Pano).|
-|[Cotaserverıtem:: GetDocument](#getdocument)|Öğeyi içeren sunucu belgesini döndürür.|
-|[Cotaserverıtem:: GetEmbedSourceData](#getembedsourcedata)|Bir OLE öğesi için CF_EMBEDSOURCE verilerini alır.|
-|[Cotaserverıtem:: GetItemName](#getitemname)|Öğenin adını döndürür. Yalnızca bağlantılı öğeler için kullanılır.|
-|[Cotaserverıtem:: GetLinkSourceData](#getlinksourcedata)|Bir OLE öğesi için CF_LINKSOURCE verilerini alır.|
-|[Cotaserverıtem:: GetObjectDescriptorData](#getobjectdescriptordata)|Bir OLE öğesi için CF_OBJECTDESCRIPTOR verilerini alır.|
-|[Cotaserverıtem:: IsConnected](#isconnected)|Öğenin şu anda etkin bir kapsayıcıya bağlı olup olmadığını gösterir.|
-|[Copaserverıtem:: IsLinkedItem](#islinkeditem)|Öğenin bağlantılı OLE öğesini temsil edip etmediğini gösterir.|
-|[Cotaserverıtem:: NotifyChanged](#notifychanged)|Tüm kapsayıcıları otomatik bağlantı güncelleştirmesi ile güncelleştirir.|
-|[Cotaserverıtem:: OnDoVerb](#ondoverb)|Bir fiil yürütmek için çağırılır.|
-|[Cotaserverıtem:: OnDraw](#ondraw)|Kapsayıcı öğeyi çizmek için istediğinde çağırılır; uygulama gerekiyor.|
-|[Cotaserverıtem:: OnDrawEx](#ondrawex)|Özel öğe çizimi için çağırılır.|
-|[Cotaserverıtem:: OnGetClipboardData](#ongetclipboarddata)|Panoya kopyalanacak verileri almak için Framework tarafından çağırılır.|
-|[Cotaserverıtem:: OnGetExtent](#ongetextent)|OLE öğesinin boyutunu almak için Framework tarafından çağırılır.|
-|[Copaserverıtem:: Onınitfromdata](#oninitfromdata)|Belirtilen veri aktarımı nesnesinin içeriğini kullanarak bir OLE öğesini başlatmak için Framework tarafından çağırılır.|
-|[Cotaserverıtem:: Onqueryupdateıtems](#onqueryupdateitems)|Bağlantılı öğelerin güncelleştirilmesi gerekip gerekmediğini anlamak için çağırılır.|
-|[Cotaserverıtem:: OnRenderData](#onrenderdata)|Verileri gecikmeli işlemenin bir parçası olarak alır.|
-|[Cotaserverıtem:: OnRenderFileData](#onrenderfiledata)|Gecikmeli işlemenin bir parçası olarak bir `CFile` nesnesine veri alır.|
-|[Cotaserverıtem:: OnRenderGlobalData](#onrenderglobaldata)|Gecikmeli işleme kapsamında verileri bir HGLOBAL 'e alır.|
-|[Cotaserverıtem:: OnSetColorScheme](#onsetcolorscheme)|Öğenin renk düzenini ayarlamak için çağırılır.|
-|[Copaserverıtem:: OnSetData](#onsetdata)|Öğenin verilerini ayarlamak için çağırılır.|
-|[Cotaserverıtem:: OnSetExtent](#onsetextent)|OLE öğesinin boyutunu ayarlamak için Framework tarafından çağırılır.|
-|[Cotaserverıtem:: OnUpdate](#onupdate)|Öğenin ait olduğu belgenin bir bölümü değiştirildiğinde çağırılır.|
-|[Cotaserverıtem:: Onupdateıtems](#onupdateitems)|Sunucu belgesindeki tüm öğelerin sunu önbelleğini güncelleştirmek için çağırılır.|
-|[Cotaserverıtem:: setItemName](#setitemname)|Öğenin adını ayarlar. Yalnızca bağlantılı öğeler için kullanılır.|
+|[COleServerItem::AddOtherClipboardData](#addotherclipboarddata)|Sunu ve dönüştürme biçimlerini `COleDataSource` bir nesneye yerleştirir.|
+|[COleServerItem::CopyToClipboard](#copytoclipboard)|Öğeyi Pano'ya kopyalar.|
+|[COleServerItem::DoDragDrop](#dodragdrop)|Sürükle ve bırak işlemi gerçekleştirir.|
+|[COleServerItem::GetClipboardData](#getclipboarddata)|Veri aktarımı (sürükle ve bırak veya Pano) kullanılmak üzere veri kaynağını alır.|
+|[COleServerItem::GetDocument](#getdocument)|Öğeyi içeren sunucu belgesini döndürür.|
+|[COleServerItem::GetEmbedSourceData](#getembedsourcedata)|Bir OLE öğesi için CF_EMBEDSOURCE veri alır.|
+|[COleServerItem::GetItemName](#getitemname)|Öğenin adını döndürür. Yalnızca bağlantılı öğeler için kullanılır.|
+|[COleServerItem::GetLinkSourceData](#getlinksourcedata)|Bir OLE öğesi için CF_LINKSOURCE verileri alır.|
+|[COleServerItem::GetObjectDescriptorData](#getobjectdescriptordata)|Bir OLE öğesi için CF_OBJECTDESCRIPTOR verileri alır.|
+|[COleServerItem::Bağlı](#isconnected)|Maddenin şu anda etkin bir kapsayıcıya bağlı olup olmadığını gösterir.|
+|[COleServerItem::IsLinkedItem](#islinkeditem)|Maddenin bağlantılı bir OLE öğesini temsil edip etmediğini gösterir.|
+|[COleServerItem::NotifyChanged](#notifychanged)|Otomatik bağlantı güncelleştirmesi ile tüm kapsayıcıları güncelleştirir.|
+|[COleServerItem::OnDoVerb](#ondoverb)|Bir fiili yürütmek için çağrıldı.|
+|[COleServerItem::OnDraw](#ondraw)|Kapsayıcı öğeyi çizmek istediğinde çağrılır; uygulanması gereklidir.|
+|[COleServerItem::OnDrawEx](#ondrawex)|Özel madde çizimi için çağrıda bulunuldu.|
+|[COleServerItem::OnGetClipboardData](#ongetclipboarddata)|Pano'ya kopyalanacak verileri almak için çerçeve tarafından çağrılır.|
+|[COleServerItem::OnGetExtent](#ongetextent)|OLE öğesinin boyutunu almak için çerçeve tarafından çağrılır.|
+|[COleServerItem::OnInitFromData](#oninitfromdata)|Belirtilen veri aktarım nesnesinin içeriğini kullanarak bir OLE öğesini başlatmaçerçevesi tarafından çağrılır.|
+|[COleServerItem::OnQueryUpdateItems](#onqueryupdateitems)|Bağlantılı öğelerin güncelleştirme gerekip gerekmediğini belirlemek için çağrılır.|
+|[COleServerItem::OnRenderData](#onrenderdata)|Gecikmiş işlemenin bir parçası olarak verileri alır.|
+|[COleServerItem::OnRenderFileData](#onrenderfiledata)|Gecikmiş işlemenin `CFile` bir parçası olarak verileri bir nesneye alır.|
+|[COleServerItem::OnRenderGlobalData](#onrenderglobaldata)|Gecikmiş işlemenin bir parçası olarak verileri bir HGLOBAL'a alır.|
+|[COleServerItem::OnSetColorScheme](#onsetcolorscheme)|Öğenin renk düzenini ayarlamak için çağrıldı.|
+|[COleServerItem::OnSetData](#onsetdata)|Öğenin verilerini ayarlamak için çağrıldı.|
+|[COleServerItem::OnSetExtent](#onsetextent)|OLE öğesinin boyutunu ayarlamak için çerçeve tarafından çağrılır.|
+|[COleServerItem::OnUpdate](#onupdate)|Maddenin ait olduğu belgenin bir bölümü değiştirildiğinde çağrılır.|
+|[COleServerItem::OnUpdateItems](#onupdateitems)|Sunucu belgesindeki tüm öğelerin sunu önbelleğini güncelleştirmek için çağrıldı.|
+|[COleServerItem::SetItemName](#setitemname)|Öğenin adını ayarlar. Yalnızca bağlantılı öğeler için kullanılır.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Cotaserverıtem:: GetDataSource](#getdatasource)|Dönüştürme biçimlerini depolamak için kullanılan nesneyi alır.|
-|[Cotaserverıtem:: OnHide](#onhide)|OLE öğesini gizlemek için Framework tarafından çağırılır.|
-|[Cotaserverıtem:: OnOpen](#onopen)|OLE öğesini kendi üst düzey penceresinde göstermek için Framework tarafından çağırılır.|
-|[Cotaserverıtem:: OnShow](#onshow)|Kapsayıcı öğeyi göstermek için istediğinde çağırılır.|
+|[COleServerItem::GetDataSource](#getdatasource)|Dönüşüm biçimlerini depolamak için kullanılan nesneyi alır.|
+|[COleServerItem::OnHide](#onhide)|OLE öğesini gizlemek için çerçeve tarafından çağrılır.|
+|[COleServerItem::Açık](#onopen)|OLE öğesini kendi üst düzey penceresinde görüntülemek için çerçeve tarafından çağrılır.|
+|[COleServerItem::OnShow](#onshow)|Kapsayıcı öğeyi göstermek istediğinde çağrılır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Copaserverıtem:: m_sizeExtent](#m_sizeextent)|OLE öğesinin ne kadarının görünür olduğunu sunucuya bildirir.|
+|[COleServerItem::m_sizeExtent](#m_sizeextent)|Sunucuya OLE öğesinin ne kadarının görünür olduğu hakkında bilgi verir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bağlantılı bir öğe, bir sunucu belgesinin bazılarını veya tümünü temsil edebilir. Katıştırılmış bir öğe her zaman bir sunucu belgesinin tamamını temsil eder.
+Bağlantılı öğe, sunucu belgesinin bazılarını veya tümünün temsil edilebilir. Katışdırılmış öğe her zaman tüm sunucu belgesini temsil eder.
 
-`COleServerItem` sınıfı, genellikle kapsayıcı uygulamadan gelen isteklere yanıt olarak OLE sistem dinamik bağlantı kitaplıkları (dll 'Ler) tarafından çağrılan çeşitli geçersiz kılınabilir üye işlevleri tanımlar. Bu üye işlevleri, kapsayıcı uygulamanın öğeyi görüntüleme, fiillerini yürütme veya verilerini çeşitli biçimlerde alma gibi çeşitli yollarla dolaylı olarak işlemesini sağlar.
+Sınıf, `COleServerItem` genellikle kapsayıcı uygulamasından gelen isteklere yanıt olarak, OLE sistem dinamik bağlantı kitaplıkları (DLs) tarafından çağrılan birkaç geçersiz ögemeden üye işlev tanımlar. Bu üye işlevler, kapsayıcı uygulamasının öğeyi görüntülemek, fiillerini yürütmek veya verilerini çeşitli biçimlerde almak gibi çeşitli şekillerde dolaylı olarak işlemesine olanak sağlar.
 
-`COleServerItem`kullanmak için, öğesinden bir sınıf türetirsiniz ve [OnDraw](#ondraw) ve [serileştirme](../../mfc/reference/cobject-class.md#serialize) üye işlevlerini uygulayın. `OnDraw` işlevi bir öğenin meta dosyası gösterimini sağlar ve bir kapsayıcı uygulaması bileşik bir belge açtığında görüntülenmesine izin verir. `CObject` `Serialize` işlevi, bir öğenin yerel temsilini sağlar ve bu da sunucu ile kapsayıcı uygulamaları arasında gömülü bir öğe aktarılmasına izin verir. [OnGetExtent](#ongetextent) , kapsayıcının öğenin boyutunu, kapsayıcıyı etkinleştirerek kapsayıcıya sağlar.
+Kullanmak `COleServerItem`için, ondan bir sınıf türetmek ve [OnDraw](#ondraw) ve [Serialize](../../mfc/reference/cobject-class.md#serialize) üye işlevleri uygulamak. İşlev, `OnDraw` bir kapsayıcı uygulaması bileşik bir belge açtığında görüntülenmesine izin veren bir öğenin metadosya gösterimini sağlar. `Serialize` İşlev, `CObject` katışılmış bir öğenin sunucu ve kapsayıcı uygulamaları arasında aktarılmasına izin vererek bir öğenin yerel temsilini sağlar. [OnGetExtent,](#ongetextent) kabın maddeyi boyutlandırmasını sağlayarak maddenin doğal boyutunu kapsayıcıya sağlar.
 
-Sunucular ve ilgili konular hakkında daha fazla bilgi için, makale [kapsayıcıları: Gelişmiş Özellikler](../../mfc/containers-advanced-features.md)' de [sunucu uygulama](../../mfc/servers-implementing-a-server.md) ve "kapsayıcı/sunucu uygulaması oluşturma" başlıklı makaleye bakın.
+Sunucular ve ilgili konular hakkında daha fazla bilgi için, makale [Sunucuları bakın: Bir Sunucu uygulama](../../mfc/servers-implementing-a-server.md) ve "Bir Kapsayıcı / Sunucu Uygulaması Oluşturma" makale [Kapsayıcılar: Gelişmiş Özellikler](../../mfc/containers-advanced-features.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
 [CDocItem](../../mfc/reference/cdocitem-class.md)
 
@@ -169,11 +169,11 @@ Sunucular ve ilgili konular hakkında daha fazla bilgi için, makale [kapsayıc�
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxole. h
+**Üstbilgi:** afxole.h
 
-##  <a name="addotherclipboarddata"></a>Cotaserverıtem:: AddOtherClipboardData
+## <a name="coleserveritemaddotherclipboarddata"></a><a name="addotherclipboarddata"></a>COleServerItem::AddOtherClipboardData
 
-Belirtilen `COleDataSource` nesnesine OLE öğesi için sunum ve dönüştürme biçimlerini yerleştirmek için bu işlevi çağırın.
+OLE öğesinin sunusunu ve dönüşüm biçimlerini belirtilen `COleDataSource` nesneye yerleştirmek için bu işlevi çağırın.
 
 ```
 void AddOtherClipboardData(COleDataSource* pDataSource);
@@ -182,15 +182,15 @@ void AddOtherClipboardData(COleDataSource* pDataSource);
 ### <a name="parameters"></a>Parametreler
 
 *pDataSource*<br/>
-Verilerin yerleştirilmesi gereken `COleDataSource` nesnesine yönelik işaretçi.
+Verilerin yerleştirilmesi `COleDataSource` gereken nesneye işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğe için sunum biçimini (bir meta dosyası resmi) sağlamak üzere [OnDraw](#ondraw) üye işlevini uygulamış olmanız gerekir. Diğer dönüştürme biçimlerini desteklemek için, onları [GetDataSource](#getdatasource) tarafından döndürülen [cotadatasource](../../mfc/reference/coledatasource-class.md) nesnesini kullanarak kaydedin ve verileri desteklemek Istediğiniz biçimlerde sağlamak için [OnRenderData](#onrenderdata) üye işlevini geçersiz kılın.
+Öğeiçin sunu biçimini (metadosya resmi) sağlamak için [OnDraw](#ondraw) üye işlevini uygulamış olmalısınız. Diğer dönüşüm biçimlerini desteklemek için, [GetDataSource](#getdatasource) tarafından döndürülen [COleDataSource](../../mfc/reference/coledatasource-class.md) nesnesini kullanarak kaydedin ve desteklemek istediğiniz biçimlerde veri sağlamak için [OnRenderData](#onrenderdata) üye işlevini geçersiz kılın.
 
-##  <a name="coleserveritem"></a>Copaserverıtem:: Cotaserverıtem
+## <a name="coleserveritemcoleserveritem"></a><a name="coleserveritem"></a>COleServerItem::COleServerItem
 
-Bir `COleServerItem` nesnesi oluşturur ve bunu sunucu belgesinin belge öğeleri koleksiyonuna ekler.
+Bir `COleServerItem` nesne inşa eder ve sunucu belgesinin belge öğeleri koleksiyonuna ekler.
 
 ```
 COleServerItem(
@@ -201,14 +201,14 @@ COleServerItem(
 ### <a name="parameters"></a>Parametreler
 
 *pServerDoc*<br/>
-Yeni öğeyi içerecek olan belgeye yönelik işaretçi.
+Yeni öğeyi içerecek belgeyi işaretçi.
 
 *bAutoDelete*<br/>
-Bir bağlantı serbest bırakıldığında nesnenin silinip silinemeyeceğini belirten bayrak. `COleServerItem` nesnesi, belgenizin verilerinin silmeniz gereken bir parçası ise bu değeri FALSE olarak ayarlayın. Nesne, çerçeve tarafından silinebilen belge verilerinde bir aralığı tanımlamak için kullanılan ikincil bir yapıdır, bunu TRUE olarak ayarlayın.
+Bir bağlantı yayımlandığında nesnenin silinip silinemeyeceğini belirten bayrak. Nesne belgenizin `COleServerItem` verilerinin silinmesi gereken ayrılmaz bir parçasıysa bunu FALSE olarak ayarlayın. Nesne, belgenizin verilerinde çerçeve tarafından silinebilecek bir aralığı tanımlamak için kullanılan ikincil bir yapıysa bunu TRUE olarak ayarlayın.
 
-##  <a name="copytoclipboard"></a>Cotaserverıtem:: CopyToClipboard
+## <a name="coleserveritemcopytoclipboard"></a><a name="copytoclipboard"></a>COleServerItem::CopyToClipboard
 
-OLE öğesini panoya kopyalamak için bu işlevi çağırın.
+OLE öğesini Pano'ya kopyalamak için bu işlevi arayın.
 
 ```
 void CopyToClipboard(BOOL bIncludeLink = FALSE);
@@ -217,15 +217,15 @@ void CopyToClipboard(BOOL bIncludeLink = FALSE);
 ### <a name="parameters"></a>Parametreler
 
 *bIncludeLink*<br/>
-Bağlama verileri panoya kopyalanırsa bunu TRUE olarak ayarlayın. Sunucu uygulamanız bağlantıları desteklemiyorsa bu değeri FALSE olarak ayarlayın.
+Bağlantı verilerinin Pano'ya kopyaedilmesi gerekiyorsa bunu TRUE olarak ayarlayın. Sunucu uygulamanız bağlantıları desteklemiyorsa bunu FALSE olarak ayarlayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, desteklenen biçimlerde OLE öğesinin verilerini içeren bir [Cotadatasource](../../mfc/reference/coledatasource-class.md) nesnesi oluşturmak Için [OnGetClipboardData](#ongetclipboarddata) üye işlevini kullanır. İşlev daha sonra [Cotadatasource:: SetClipboard](../../mfc/reference/coledatasource-class.md#setclipboard) işlevini kullanarak `COleDataSource` nesnesini panoya yerleştirir. `COleDataSource` nesnesi, öğenin yerel verilerini ve gösteriminin CF_METAFILEPICT biçiminde yanı sıra, desteklemeyi seçtiğiniz herhangi bir dönüştürme biçimlerindeki verileri içerir. Bu üye işlevin çalışması için [serileştirme](../../mfc/reference/cobject-class.md#serialize) ve [OnDraw](#ondraw) uygulamış olmanız gerekir.
+İşlev, OLE öğesinin verilerini destekleyen biçimlerde içeren bir [COleDataSource](../../mfc/reference/coledatasource-class.md) nesnesi oluşturmak için [OnGetClipboardData](#ongetclipboarddata) üye işlevini kullanır. İşlev daha `COleDataSource` sonra [COleDataSource::SetClipboard](../../mfc/reference/coledatasource-class.md#setclipboard) işlevini kullanarak nesneyi Pano'ya yerleştirir. Nesne, `COleDataSource` öğenin yerel verilerini ve CF_METAFILEPICT biçimindeki gösteriminin yanı sıra desteklemeyi seçtiğiniz dönüşüm biçimlerindeki verileri de içerir. Bu üye işlevin çalışması için [Serialize](../../mfc/reference/cobject-class.md#serialize) ve [OnDraw](#ondraw) uygulamış olmalısınız.
 
-##  <a name="dodragdrop"></a>Cotaserverıtem::D oDragDrop
+## <a name="coleserveritemdodragdrop"></a><a name="dodragdrop"></a>COleServerItem::DoDragDrop
 
-Bir sürükle ve bırak işlemi gerçekleştirmek için `DoDragDrop` member işlevini çağırın.
+Sürükle `DoDragDrop` ve bırak işlemi gerçekleştirmek için üye işlevi arayın.
 
 ```
 DROPEFFECT DoDragDrop(
@@ -238,42 +238,42 @@ DROPEFFECT DoDragDrop(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lprectıtem*<br/>
-Öğenin, ekranda, istemci alanına göre piksel cinsinden dikdörtgeni.
+*lpRectItem*<br/>
+Öğenin ekranda, piksellerde, istemci alanına göre dikdörtgeni.
 
 *ptOffset*<br/>
-, Fare konumunun sürükleme sırasında olduğu *lpItemRect* öğesinden gelen fark.
+Sürükleme sırasında fare konumunun bulunduğu *lpItemRect'ten* ofset.
 
 *bIncludeLink*<br/>
-Bağlama verileri panoya kopyalanırsa bunu TRUE olarak ayarlayın. Uygulamanız bağlantıları desteklemiyorsa, bu değeri FALSE olarak ayarlayın.
+Bağlantı verilerinin Pano'ya kopyaedilmesi gerekiyorsa bunu TRUE olarak ayarlayın. Uygulamanız bağlantıları desteklemiyorsa FALSE olarak ayarlayın.
 
-*dwEffects*<br/>
-Sürükleme kaynağının sürükleme işleminde izin verilecek etkileri (kopyalama, taşıma ve bağlantı birleşimi) belirler.
+*dwEfektler*<br/>
+Sürükleme kaynağının sürükleme işleminde izin verdiği efektleri (Kopyala, Taşı ve Bağlantı'nın bir leşimi) belirler.
 
 *lpRectStartDrag*<br/>
-Sürüklediğiniz yerin gerçekten başladığı dikdörtgeni tanımlayan dikdörtgen işaretçisi. Daha fazla bilgi için aşağıdaki Açıklamalar bölümüne bakın.
+Sürüklemenin gerçekte nerede başladığını tanımlayan dikdörtgeni işaretle. Daha fazla bilgi için aşağıdaki Açıklamalar bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DROPEFFECT numaralandırmasından bir değer. DROPEFFECT_MOVE, özgün verilerin kaldırılması gerekir.
+DROPEFFECT numaralandırmasından bir değer. DROPEFFECT_MOVE ise, özgün veriler kaldırılmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sürükle ve bırak işlemi hemen başlamaz. Fare imleci, *lpRectStartDrag* tarafından belirtilen dikdörtgenden ayrılana veya belirtilen sayıda milisaniyeye geçene kadar bekler. *LpRectStartDrag* null ise, fare imleci bir piksel taşırken sürüklemeye başlaması için varsayılan dikdörtgen kullanılır.
+Sürükle ve bırak işlemi hemen başlamaz. Fare *imleci, lpRectStartDrag* tarafından belirtilen dikdörtgeni bırakana veya belirli sayıda milisaniye geçene kadar bekler. *lpRectStartDrag* NULL ise, fare imleci bir pikseli hareket ettirdiğinde sürüklemenin başlaması için varsayılan bir dikdörtgen kullanılır.
 
-Gecikme süresi bir kayıt defteri anahtarı ayarıyla belirtilir. , [CWinApp:: WriteProfileString](../../mfc/reference/cwinapp-class.md#writeprofilestring) veya [CWinApp:: writeprofileint](../../mfc/reference/cwinapp-class.md#writeprofileint)çağırarak gecikme süresini değiştirebilirsiniz. Gecikme süresini belirtmezseniz, varsayılan 200 milisaniyelik bir değer kullanılır. Sürükleme gecikmesi süresi şu şekilde depolanır:
+Gecikme süresi bir kayıt defteri anahtarı ayarı ile belirtilir. CWinApp'ı arayarak gecikme süresini [değiştirebilirsiniz::WriteProfileString](../../mfc/reference/cwinapp-class.md#writeprofilestring) veya [CWinApp::WriteProfileInt](../../mfc/reference/cwinapp-class.md#writeprofileint). Gecikme süresini belirtmezseniz, varsayılan değeri 200 milisaniye olarak kullanılır. Sürükleme gecikme süresi aşağıdaki gibi depolanır:
 
-- Windows NT sürükleme gecikmesi süresi HKEY_LOCAL_MACHINE \Software\microsoft\windows\nt\currentversion\ınıfilemapping\win.exe dizininde depolanır.
+- Windows NT Sürükle gecikme süresi HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\NT\CurrentVersion\IniFileMapping\win.ini\Windows\DragDelay'da depolanır.
 
-- Windows 3. x sürükleme gecikmesi süresi WIN 'da depolanır. INı dosyası, [Windows} bölümü altında.
+- Windows 3.x Sürükleme gecikme süresi WIN'de depolanır. INI dosyası, [Windows} bölümünün altında.
 
-- Windows 95/98 sürükleme gecikmesi süresi, WIN 'ın önbelleğe alınmış bir sürümünde depolanıyor. Dosyası.
+- Windows 95/98 Sürükleme gecikme süresi WIN'in önbelleğe alınmış sürümünde depolanır. ını.
 
-Sürükleme gecikmesi bilgilerinin kayıt defterinde veya ' de nasıl depolandığını hakkında daha fazla bilgi için. INı dosyası, Windows SDK bkz. [WriteProfileString](/windows/win32/api/winbase/nf-winbase-writeprofilestringw) .
+Sürükleme gecikmesi bilgilerinin kayıt defterinde veya .' de nasıl depolandırılabilen hakkında daha fazla bilgi için. INI dosyası, Windows SDK'daki [WriteProfileString'e](/windows/win32/api/winbase/nf-winbase-writeprofilestringw) bakın.
 
-##  <a name="getclipboarddata"></a>Cotaserverıtem:: GetClipboardData
+## <a name="coleserveritemgetclipboarddata"></a><a name="getclipboarddata"></a>COleServerItem::GetClipboardData
 
-[CopyToClipboard](#copytoclipboard) çağrılırsa, belirtilen [cotadatasource](../../mfc/reference/coledatasource-class.md) nesnesini panoya kopyalanacak tüm verilerle doldurmak için bu Işlevi çağırın ( [DoDragDrop](#dodragdrop)çağrılırsa aynı veriler de aktarılır).
+[CopyToClipboard](#copytoclipboard) 'u aradıysanız, belirtilen [COleDataSource](../../mfc/reference/coledatasource-class.md) nesnesini Pano'ya kopyalanacak tüm verilerle doldurmak için bu işlevi arayın [(DoDragDrop'u](#dodragdrop)ararsanız aynı veriler de aktarılır).
 
 ```
 void GetClipboardData(
@@ -286,26 +286,26 @@ void GetClipboardData(
 ### <a name="parameters"></a>Parametreler
 
 *pDataSource*<br/>
-Desteklenen tüm biçimlerde OLE öğesinin verilerini alacak `COleDataSource` nesnesine yönelik işaretçi.
+Desteklenen tüm `COleDataSource` biçimlerde OLE öğesinin verilerini alacak nesneyi işaretleyin.
 
 *bIncludeLink*<br/>
-Bağlantı verilerinin panoya kopyalanması gerekiyorsa TRUE. Sunucu uygulamanız bağlantıları desteklemiyorsa FALSE.
+Bağlantı verilerinin Pano'ya kopyaedilmesi gerekiyorsa DOĞRU. Sunucu uygulamanız bağlantıları desteklemiyorsa FALSE.
 
-*LPX boşluğu*<br/>
-Nesnenin kaynağından fare imlecinin piksel cinsinden değeri.
+*lpOffset*<br/>
+Nesnenin kaynağından fare imlecinin piksel olarak ofset.
 
 *lpSize*<br/>
-Nesnenin piksel cinsinden boyutu.
+Piksellerde nesnenin boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, OLE öğesine ait yerel verileri almak için [GetEmbedSourceData](#getembedsourcedata) üye işlevini çağırır ve sunum biçimini ve desteklenen herhangi bir dönüştürme biçimini almak Için [AddOtherClipboardData](#addotherclipboarddata) üye işlevini çağırır. *Bincludelink* true ise, işlev Ayrıca öğe için bağlantı verilerini almak üzere [GetLinkSourceData](#getlinksourcedata) öğesini çağırır.
+Bu işlev, OLE öğesinin yerel verilerini almak için [GetEmbedSourceData](#getembedsourcedata) üye işlevini çağırır ve sunu biçimini ve desteklenen dönüşüm biçimlerini almak için [AddOtherClipboardData](#addotherclipboarddata) üye işlevini çağırır. *bIncludeLink* TRUE ise, işlev öğenin bağlantı verilerini almak için [GetLinkSourceData'yı](#getlinksourcedata) da çağırır.
 
-`CopyToClipboard`tarafından sağlanan biçimlerden önce veya sonra bir `COleDataSource` nesnesine biçim koymak istiyorsanız bu işlevi geçersiz kılın.
+Bu biçimlerden önce veya sonra bir `COleDataSource` nesneye biçimler koymak istiyorsanız `CopyToClipboard`bu işlevi geçersiz kılın.
 
-##  <a name="getdatasource"></a>Cotaserverıtem:: GetDataSource
+## <a name="coleserveritemgetdatasource"></a><a name="getdatasource"></a>COleServerItem::GetDataSource
 
-Sunucu uygulamasının desteklediği dönüştürme biçimlerini depolamak için kullanılan [Cotadatasource](../../mfc/reference/coledatasource-class.md) nesnesini almak için bu işlevi çağırın.
+Sunucu uygulamasının desteklediği dönüştürme biçimlerini depolamak için kullanılan [COleDataSource](../../mfc/reference/coledatasource-class.md) nesnesini almak için bu işlevi arayın.
 
 ```
 COleDataSource* GetDataSource();
@@ -313,15 +313,15 @@ COleDataSource* GetDataSource();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüştürme biçimlerini depolamak için kullanılan `COleDataSource` nesnesine yönelik bir işaretçi.
+Dönüşüm biçimlerini `COleDataSource` depolamak için kullanılan nesneye işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sunucu uygulamanızın veri aktarımı işlemleri sırasında çeşitli biçimlerde veri sunmasını istiyorsanız bu biçimleri bu işlev tarafından döndürülen `COleDataSource` nesne ile kaydedin. Örneğin, pano veya sürükle ve bırak işlemleri için OLE öğesinin CF_TEXT temsilini sağlamak istiyorsanız, bu işlevin döndürdüğü `COleDataSource` nesneyle biçimi kaydeder ve sonra verileri sağlamak için `OnRenderXxxData` üye işlevini geçersiz kılarsınız.
+Sunucu uygulamanızın veri aktarım işlemleri sırasında çeşitli biçimlerde veri sunmasını istiyorsanız, `COleDataSource` bu biçimleri bu işlev tarafından döndürülen nesneye kaydedin. Örneğin, Pano veya sürükle ve bırak işlemleri için OLE öğesinin CF_TEXT bir temsilini sağlamak `COleDataSource` istiyorsanız, biçimi bu işlevin `OnRenderXxxData` döndürüğü nesneye kaydeder ve ardından verileri sağlamak için üye işlevi geçersiz kılarsınız.
 
-##  <a name="getdocument"></a>Cotaserverıtem:: GetDocument
+## <a name="coleserveritemgetdocument"></a><a name="getdocument"></a>COleServerItem::GetDocument
 
-Öğeyi içeren belgeye bir işaretçi almak için bu işlevi çağırın.
+Öğeyi içeren belgeye işaretçi almak için bu işlevi arayın.
 
 ```
 COleServerDoc* GetDocument() const;
@@ -329,15 +329,15 @@ COleServerDoc* GetDocument() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeyi içeren belgeye yönelik bir işaretçi; Öğe bir belgenin parçası değilse NULL.
+Öğeyi içeren belgenin işaretçisi; Öğe belgenin bir parçası değilse NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, `COleServerItem` oluşturucusuna bağımsız değişken olarak geçirilmiş sunucu belgesine erişim sağlar.
+Bu, bağımsız değişken olarak aktardığınız sunucu belgesine `COleServerItem` erişim sağlar.
 
-##  <a name="getembedsourcedata"></a>Cotaserverıtem:: GetEmbedSourceData
+## <a name="coleserveritemgetembedsourcedata"></a><a name="getembedsourcedata"></a>COleServerItem::GetEmbedSourceData
 
-OLE öğesi için CF_EMBEDSOURCE verileri almak için bu işlevi çağırın.
+Bir OLE öğesi için CF_EMBEDSOURCE verilerini almak için bu işlevi arayın.
 
 ```
 void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
@@ -345,20 +345,20 @@ void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpstgorta*<br/>
-OLE öğesi için CF_EMBEDSOURCE verilerini alacak olan [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına yönelik işaretçi.
+*lpStgMedium*<br/>
+OLE öğesi için CF_EMBEDSOURCE verilerini alacak [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısını işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu biçim öğenin yerel verilerini içerir. Bu işlevin düzgün çalışması için `Serialize` üye işlevini uygulamış olmanız gerekir.
+Bu biçim, öğenin yerel verilerini içerir. Bu işlevin `Serialize` düzgün çalışması için üye işlevi uygulamış olmalısınız.
 
-Sonuç daha sonra [Cotadatasource:: CacheData](../../mfc/reference/coledatasource-class.md#cachedata)kullanılarak bir veri kaynağına eklenebilir. Bu işlev [Coelserverıtem:: OnGetClipboardData](#ongetclipboarddata)tarafından otomatik olarak çağrılır.
+Sonuç daha sonra [COleDataSource::CacheData](../../mfc/reference/coledatasource-class.md#cachedata)kullanılarak bir veri kaynağına eklenebilir. Bu fonksiyon Otomatik olarak [COleServerItem tarafından çağrılır::OnGetClipboardData](#ongetclipboarddata).
 
-Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) .
+Daha fazla bilgi için Windows SDK'daki [STGMEDIUM'a](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) bakın.
 
-##  <a name="getitemname"></a>Cotaserverıtem:: GetItemName
+## <a name="coleserveritemgetitemname"></a><a name="getitemname"></a>COleServerItem::GetItemName
 
-Öğenin adını almak için bu işlevi çağırın.
+Öğenin adını almak için bu işlevi arayın.
 
 ```
 const CString& GetItemName() const;
@@ -370,11 +370,11 @@ const CString& GetItemName() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle bu işlevi yalnızca bağlı öğeler için çağırabilirsiniz.
+Bu işlevi genellikle yalnızca bağlantılı öğeler için çağırırsınız.
 
-##  <a name="getlinksourcedata"></a>Cotaserverıtem:: GetLinkSourceData
+## <a name="coleserveritemgetlinksourcedata"></a><a name="getlinksourcedata"></a>COleServerItem::GetLinkSourceData
 
-OLE öğesi için CF_LINKSOURCE verileri almak için bu işlevi çağırın.
+Bir OLE öğesinin CF_LINKSOURCE verilerini almak için bu işlevi arayın.
 
 ```
 BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
@@ -382,24 +382,24 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpstgorta*<br/>
-OLE öğesi için CF_LINKSOURCE verilerini alacak olan [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına yönelik işaretçi.
+*lpStgMedium*<br/>
+OLE öğesi için CF_LINKSOURCE verilerini alacak [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısını işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu biçim, OLE öğesinin türünü ve OLE öğesini içeren belgeyi bulmak için gereken bilgileri açıklayan CLSID 'yi içerir.
+Bu biçim, OLE öğesinin türünü açıklayan CLSID'yi ve OLE öğesini içeren belgeyi bulmak için gereken bilgileri içerir.
 
-Sonuç daha sonra [Cotadatasource:: CacheData](../../mfc/reference/coledatasource-class.md#cachedata)ile bir veri kaynağına eklenebilir. Bu işlev [OnGetClipboardData](#ongetclipboarddata)tarafından otomatik olarak çağrılır.
+Sonuç daha sonra COleDataSource ile bir veri kaynağına [eklenebilir::CacheData](../../mfc/reference/coledatasource-class.md#cachedata). Bu [işlev, OnGetClipboardData](#ongetclipboarddata)tarafından otomatik olarak çağrılır.
 
-Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) .
+Daha fazla bilgi için Windows SDK'daki [STGMEDIUM'a](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) bakın.
 
-##  <a name="getobjectdescriptordata"></a>Cotaserverıtem:: GetObjectDescriptorData
+## <a name="coleserveritemgetobjectdescriptordata"></a><a name="getobjectdescriptordata"></a>COleServerItem::GetObjectDescriptorData
 
-OLE öğesi için CF_OBJECTDESCRIPTOR verileri almak için bu işlevi çağırın.
+Bir OLE öğesinin CF_OBJECTDESCRIPTOR verilerini almak için bu işlevi arayın.
 
 ```
 void GetObjectDescriptorData(
@@ -410,24 +410,24 @@ void GetObjectDescriptorData(
 
 ### <a name="parameters"></a>Parametreler
 
-*LPX boşluğu*<br/>
-OLE öğesinin sol üst köşesinden fare tıklamasını kaydır. NULL olabilir.
+*lpOffset*<br/>
+Farenin ofset ole öğenin sol üst köşesinden tıklayın. NULL olabilir.
 
 *lpSize*<br/>
 OLE öğesinin boyutu. NULL olabilir.
 
-*Lpstgorta*<br/>
-OLE öğesi için CF_OBJECTDESCRIPTOR verilerini alacak olan [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına yönelik işaretçi.
+*lpStgMedium*<br/>
+OLE öğesi için CF_OBJECTDESCRIPTOR verilerini alacak [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısını işaretleyin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bilgiler, *lpStgMedium*tarafından işaret edilen `STGMEDIUM` yapısına kopyalanır. Bu biçim Özel Yapıştır iletişim kutusu için gereken bilgileri içerir.
+Bilgiler *lpStgMedium* `STGMEDIUM` tarafından işaret edilen yapıya kopyalanır. Bu biçim, Özel Yapıştır iletişim kutusu için gereken bilgileri içerir.
 
-Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) .
+Daha fazla bilgi için Windows SDK'daki [STGMEDIUM'a](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) bakın.
 
-##  <a name="isconnected"></a>Cotaserverıtem:: IsConnected
+## <a name="coleserveritemisconnected"></a><a name="isconnected"></a>COleServerItem::Bağlı
 
-OLE öğesinin bağlı olup olmadığını görmek için bu işlevi çağırın.
+OLE öğesinin bağlı olup olmadığını görmek için bu işlevi arayın.
 
 ```
 BOOL IsConnected() const;
@@ -435,15 +435,15 @@ BOOL IsConnected() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe bağlıysa sıfır dışı; Aksi takdirde 0.
+Öğe bağlıysa sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir veya daha fazla kapsayıcının öğeye başvuruları varsa, OLE öğesi bağlı olarak kabul edilir. Başvuru sayısı 0 ' dan büyükse veya gömülü bir öğe ise, öğe bağlanır.
+Bir veya daha fazla kapsayıcıda öğeye başvuru varsa, OLE öğesi bağlı olarak kabul edilir. Başvuru sayısı 0'dan büyükse veya katıştırılmış bir öğeyse, öğe bağlanır.
 
-##  <a name="islinkeditem"></a>Copaserverıtem:: IsLinkedItem
+## <a name="coleserveritemislinkeditem"></a><a name="islinkeditem"></a>COleServerItem::IsLinkedItem
 
-OLE öğesinin bağlantılı bir öğe olup olmadığını görmek için bu işlevi çağırın.
+OLE öğesinin bağlantılı bir öğe olup olmadığını görmek için bu işlevi arayın.
 
 ```
 BOOL IsLinkedItem() const;
@@ -451,17 +451,17 @@ BOOL IsLinkedItem() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe bağlantılı bir öğe ise sıfır dışında; Aksi takdirde 0.
+Öğe bağlantılı bir öğeyse sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğe geçerliyse bir öğe bağlanır ve belgenin katıştırılmış öğeler listesinde döndürülmezse. Bağlantılı bir öğe bir kapsayıcıya bağlı olmayabilir veya olmayabilir.
+Öğe geçerliyse ve belgenin katıştırılmış öğeler listesinde döndürülmezse bir öğe bağlanır. Bağlı bir öğe bir kapsayıcıya bağlı olabilir veya olmayabilir.
 
-Hem bağlantılı hem de katıştırılmış öğeler için aynı sınıfın kullanılması yaygındır. `IsLinkedItem`, çok sayıda kodun yaygın olmasına rağmen, bağlantılı öğelerin gömülü öğelerden farklı davranmasına olanak sağlar.
+Hem bağlantılı hem de katıştırılmış öğeler için aynı sınıfı kullanmak yaygındır. `IsLinkedItem`birçok kez kod yaygın olsa da, bağlantılı öğelerin katıştırılmış öğelerden farklı davranmasını sağlar.
 
-##  <a name="m_sizeextent"></a>Copaserverıtem:: m_sizeExtent
+## <a name="coleserveritemm_sizeextent"></a><a name="m_sizeextent"></a>COleServerItem::m_sizeExtent
 
-Bu üye, sunucuya kapsayıcı belgesinde nesnenin ne kadarının görünür olduğunu söyler.
+Bu üye sunucuya nesnenin ne kadarının kapsayıcı belgede görünür olduğunu söyler.
 
 ```
 CSize m_sizeExtent;
@@ -469,11 +469,11 @@ CSize m_sizeExtent;
 
 ### <a name="remarks"></a>Açıklamalar
 
-[OnSetExtent](#onsetextent) 'in varsayılan uygulamasında bu üye ayarlanır.
+[OnSetExtent'in](#onsetextent) varsayılan uygulaması bu üyeyi ayarlar.
 
-##  <a name="notifychanged"></a>Cotaserverıtem:: NotifyChanged
+## <a name="coleserveritemnotifychanged"></a><a name="notifychanged"></a>COleServerItem::NotifyChanged
 
-Bağlantılı öğe değiştirildikten sonra bu işlevi çağırın.
+Bağlı öğe değiştirildikten sonra bu işlevi arayın.
 
 ```
 void NotifyChanged(DVASPECT nDrawAspect = DVASPECT_CONTENT);
@@ -482,23 +482,23 @@ void NotifyChanged(DVASPECT nDrawAspect = DVASPECT_CONTENT);
 ### <a name="parameters"></a>Parametreler
 
 *nDrawAspect*<br/>
-DVASPECT numaralandırmasından, OLE öğesinin hangi yönün değiştiğini belirten bir değer. Bu parametre aşağıdaki değerlerden herhangi birine sahip olabilir:
+DVASPECT numaralandırmasından, OLE öğesinin hangi yönünün değiştiğini gösteren bir değer. Bu parametre aşağıdaki değerlerden herhangi biri olabilir:
 
-- DVASPECT_CONTENT öğe, kapsayıcısı içinde katıştırılmış bir nesne olarak görüntülenebilecek şekilde temsil edilir.
+- DVASPECT_CONTENT Öğe, kapsayıcının içinde katıştırılmış bir nesne olarak görüntülenecek şekilde temsil edilir.
 
-- DVASPECT_THUMBNAIL öğe, bir tarama aracında görüntülenebilmesi için bir "küçük resim" gösteriminde işlenir.
+- DVASPECT_THUMBNAIL Öğesi, bir tarama aracında görüntülenebilecek şekilde "küçük resim" gösteriminde işlenir.
 
-- DVASPECT_ICON öğe bir simge ile temsil edilir.
+- DVASPECT_ICON Öğe bir simge ile temsil edilir.
 
-- DVASPECT_DOCPRINT öğe, Dosya menüsündeki Yazdır komutu kullanılarak yazdırılmış gibi gösterilir.
+- DVASPECT_DOCPRINT Öğe, Dosya menüsünden Yazdır komutu kullanılarak basılmış gibi temsil edilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kapsayıcı öğe bir otomatik bağlantı ile belgeye bağlanmışsa, öğe değişiklikleri yansıtacak şekilde güncelleştirilir. Microsoft Foundation Class Kitaplığı kullanılarak yazılan kapsayıcı uygulamalarında [Colet Clienentidıtem:: OnChange](../../mfc/reference/coleclientitem-class.md#onchange) , yanıt olarak çağırılır.
+Bir kapsayıcı öğesi belgeye otomatik bağlantıyla bağlıysa, öğe değişiklikleri yansıtacak şekilde güncelleştirilir. Microsoft Foundation Class Kitaplığı kullanılarak yazılan kapsayıcı uygulamalarında [COleClientItem::OnChange](../../mfc/reference/coleclientitem-class.md#onchange) yanıt olarak çağrılır.
 
-##  <a name="ondoverb"></a>Cotaserverıtem:: OnDoVerb
+## <a name="coleserveritemondoverb"></a><a name="ondoverb"></a>COleServerItem::OnDoVerb
 
-Belirtilen fiili yürütmek için Framework tarafından çağırılır.
+Belirtilen fiili yürütmek için çerçeve tarafından çağrılır.
 
 ```
 virtual void OnDoVerb(LONG iVerb);
@@ -506,30 +506,30 @@ virtual void OnDoVerb(LONG iVerb);
 
 ### <a name="parameters"></a>Parametreler
 
-*ıverb*<br/>
-Yürütülecek fiili belirtir. Aşağıdakilerden biri olabilir:
+*iFiil*<br/>
+Yürütmek için fiil belirtir. Aşağıdakilerden herhangi biri olabilir:
 
-|Değer|Açıklama|Sembol|
+|Değer|Anlamı|Sembol|
 |-----------|-------------|------------|
 |0|Birincil fiil|OLEIVERB_PRIMARY|
-|1\.|İkincil fiil|(Hiçbiri)|
-|- 1|Öğeyi düzenlenmek üzere görüntüle|OLEIVERB_SHOW|
-|- 2|Öğeyi ayrı pencerede Düzenle|OLEIVERB_OPEN|
-|- 3|Öğeyi Gizle|OLEIVERB_HIDE|
+|1|İkincil fiil|(Yok)|
+|- 1|Düzenleme için öğeyi görüntüleme|OLEIVERB_SHOW|
+|- 2|Öğeyi ayrı bir pencerede edin|OLEIVERB_OPEN|
+|- 3|Öğeyi gizle|OLEIVERB_HIDE|
 
--1 değeri genellikle başka bir fiil için diğer addır. Açık düzenlemeler desteklenmiyorsa-2-1 ile aynı etkiye sahiptir. Ek değerler için bkz. [IOleObject::D oVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK.
+-1 değeri genellikle başka bir fiilin diğer adıdır. Açık düzenleme desteklenmiyorsa, -2 -1 ile aynı etkiye sahiptir. Ek değerler için Windows SDK'daki [IOleObject::DoVerb'e](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kapsayıcı uygulama Microsoft Foundation Class Kitaplığı yazılmışsa, bu işlev, karşılık gelen `COleClientItem` nesnesinin [Cotaclientidıtem:: Activate](../../mfc/reference/coleclientitem-class.md#activate) üye işlevi çağrıldığında çağrılır. Varsayılan uygulama, birincil fiil veya OLEIVERB_SHOW belirtilmişse [OnShow](#onshow) üye işlevini çağırır, ikincil fiil veya OLEIVERB_OPEN [belirtilirse, ve](#onopen) OLEIVERB_HIDE belirtilmişse [OnHide](#onhide) . *Iverb* , yukarıda listelenen fiillerden biri değilse, varsayılan uygulama `OnShow` çağırır.
+Kapsayıcı uygulaması Microsoft Foundation Class Library ile yazılmışsa, [COleClientItem::İlgili](../../mfc/reference/coleclientitem-class.md#activate) `COleClientItem` nesnenin üye işlevini etkinleştir'i çağrıldığında bu işlev çağrılır. Varsayılan uygulama, birincil fiil veya OLEIVERB_SHOW belirtilmişse [OnShow](#onshow) üye işlevini, ikincil fiil veya OLEIVERB_OPEN belirtilmişse [OnOpen'i](#onopen) ve OLEIVERB_HIDE belirtilmişse [OnHide'yi](#onhide) çağırır. *iVerb* yukarıda `OnShow` listelenen fiillerden biri değilse varsayılan uygulama çağırır.
 
-Birincil fiiliniz öğeyi göstermezse bu işlevi geçersiz kılın. Örneğin, öğe bir ses kaydı ise ve birincil fiili yürütülme ise, öğeyi yürütmek için sunucu uygulamasını göstermek zorunda değilsiniz.
+Birincil fiiliniz öğeyi göstermiyorsa bu işlevi geçersiz kılın. Örneğin, öğe bir ses kaydıysa ve birincil fiili Oynat ise, öğeyi oynatmak için sunucu uygulamasını görüntülemeniz gerekmez.
 
-Daha fazla bilgi için bkz. [IOleObject::D oVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK.
+Daha fazla bilgi için Windows SDK'daki [IOleObject::DoVerb'e](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) bakın.
 
-##  <a name="ondraw"></a>Cotaserverıtem:: OnDraw
+## <a name="coleserveritemondraw"></a><a name="ondraw"></a>COleServerItem::OnDraw
 
-OLE öğesini bir meta dosyasında işlemek için çerçeve tarafından çağırılır.
+OLE öğesini meta bir dosyaya işlemek için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnDraw(
@@ -539,23 +539,23 @@ virtual BOOL OnDraw(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-Öğenin çizildiği [CDC](../../mfc/reference/cdc-class.md) nesnesine yönelik bir işaretçi. Görüntüleme bağlamı, öznitelik görüntüleme bağlamına otomatik olarak bağlanır, ancak bunu yaparsanız dosya cihazına özgü hale getirebilirsiniz.
+*Pdc*<br/>
+Öğeyi çizmek [CDC](../../mfc/reference/cdc-class.md) için CDC nesnesine bir işaretçi. Görüntü bağlamı otomatik olarak öznitelik görüntüleme bağlamına bağlanır, böylece öznitelik işlevlerini çağırabilirsiniz, ancak bunu yapmak metadosya aygıtına özgü olmasını sağlar.
 
-*rSize*<br/>
-Boyut, meta dosyasının çizileceği, HIMETRIK birimlerde.
+*rBoyut*<br/>
+Metadosyayı çizmek için HIMETRIC birimlerinde boyut.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe başarıyla çizildiyse sıfır dışı; Aksi takdirde 0.
+Öğe başarıyla çizilmişse sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-OLE öğesinin meta dosyası temsili, öğeyi kapsayıcı uygulamasında göstermek için kullanılır. Kapsayıcı uygulama Microsoft Foundation Class Kitaplığı yazılmışsa, meta dosyası, karşılık gelen [Cotaclientıtem](../../mfc/reference/coleclientitem-class.md) nesnesinin [Draw](../../mfc/reference/coleclientitem-class.md#draw) üye işlevi tarafından kullanılır. Varsayılan uygulama yok. Belirtilen cihaz bağlamına öğe çizmek için bu işlevi geçersiz kılmalısınız.
+OLE öğesinin metadosya gösterimi, öğeyi kapsayıcı uygulamasında görüntülemek için kullanılır. Kapsayıcı uygulaması Microsoft Hazırlık Sınıfı Kitaplığı ile yazılmışsa, metadosya ilgili [COleClientItem](../../mfc/reference/coleclientitem-class.md) nesnesinin [Draw](../../mfc/reference/coleclientitem-class.md#draw) üye işlevi tarafından kullanılır. Varsayılan uygulama yoktur. Öğeyi belirtilen aygıt bağlamına çekmek için bu işlevi geçersiz kılmanız gerekir.
 
-##  <a name="ondrawex"></a>Cotaserverıtem:: OnDrawEx
+## <a name="coleserveritemondrawex"></a><a name="ondrawex"></a>COleServerItem::OnDrawEx
 
-Tüm çizim için Framework tarafından çağırılır.
+Tüm çizim için çerçeve tarafından çağrıldı.
 
 ```
 virtual BOOL OnDrawEx(
@@ -566,36 +566,36 @@ virtual BOOL OnDrawEx(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-Öğenin çizildiği [CDC](../../mfc/reference/cdc-class.md) nesnesine yönelik bir işaretçi. DC, öznitelik işlevlerini çağırmak için otomatik olarak DC 'ye bağlanır, ancak bunu yaparsanız dosya cihazına özgü hale getirebilirsiniz.
+*Pdc*<br/>
+Öğeyi çizmek [CDC](../../mfc/reference/cdc-class.md) için CDC nesnesine bir işaretçi. DC, öznitelik işlevlerini arayabilmeniz için öznitelik DC'ye otomatik olarak bağlanır, ancak bunu yapmak metadosya aygıtına özgü olmasını sağlar.
 
 *nDrawAspect*<br/>
-DVASPECT numaralandırmasından bir değer. Bu parametre aşağıdaki değerlerden herhangi birine sahip olabilir:
+DVASPECT numaralandırmasından bir değer. Bu parametre aşağıdaki değerlerden herhangi biri olabilir:
 
-- DVASPECT_CONTENT öğe, kapsayıcısı içinde katıştırılmış bir nesne olarak görüntülenebilecek şekilde temsil edilir.
+- DVASPECT_CONTENT Öğe, kapsayıcının içinde katıştırılmış bir nesne olarak görüntülenecek şekilde temsil edilir.
 
-- DVASPECT_THUMBNAIL öğe, bir tarama aracında görüntülenebilmesi için bir "küçük resim" gösteriminde işlenir.
+- DVASPECT_THUMBNAIL Öğesi, bir tarama aracında görüntülenebilecek şekilde "küçük resim" gösteriminde işlenir.
 
-- DVASPECT_ICON öğe bir simge ile temsil edilir.
+- DVASPECT_ICON Öğe bir simge ile temsil edilir.
 
-- DVASPECT_DOCPRINT öğe, Dosya menüsündeki Yazdır komutu kullanılarak yazdırılmış gibi gösterilir.
+- DVASPECT_DOCPRINT Öğe, Dosya menüsünden Yazdır komutu kullanılarak basılmış gibi temsil edilir.
 
-*rSize*<br/>
-HIMETRIK birimlerde öğenin boyutu.
+*rBoyut*<br/>
+HIMETRIC birimlerindeki maddenin boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe başarıyla çizildiyse sıfır dışı; Aksi takdirde 0.
+Öğe başarıyla çizilmişse sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DVASPECT DVASPECT_CONTENT eşitse, varsayılan uygulama `OnDraw` çağırır; Aksi takdirde başarısız olur.
+DVASPECT `OnDraw` DVASPECT_CONTENT eşit olduğunda varsayılan uygulama çağırır; aksi takdirde başarısız olur.
 
-DVASPECT_ICON veya DVASPECT_THUMBNAIL gibi DVASPECT_CONTENT dışındaki yönleri için sunum verileri sağlamak üzere bu işlevi geçersiz kılın.
+DVASPECT_ICON veya DVASPECT_THUMBNAIL gibi DVASPECT_CONTENT dışındaki yönlerin sunu verilerini sağlamak için bu işlevi geçersiz kılın.
 
-##  <a name="ongetclipboarddata"></a>Cotaserverıtem:: OnGetClipboardData
+## <a name="coleserveritemongetclipboarddata"></a><a name="ongetclipboarddata"></a>COleServerItem::OnGetClipboardData
 
-, [CopyToClipboard](#copytoclipboard) üye işlevine yapılan bir çağrı ile panoya yerleştirilecek tüm verileri içeren `COleDataSource` bir nesne almak için Framework tarafından çağırılır.
+[CopyToClipboard](#copytoclipboard) üye `COleDataSource` işlevine yapılan bir çağrı yla Panoya yerleştirilecek tüm verileri içeren bir nesneyi almak için çerçeve tarafından çağrılır.
 
 ```
 virtual COleDataSource* OnGetClipboardData(
@@ -607,25 +607,25 @@ virtual COleDataSource* OnGetClipboardData(
 ### <a name="parameters"></a>Parametreler
 
 *bIncludeLink*<br/>
-Bağlama verileri panoya kopyalanırsa bunu TRUE olarak ayarlayın. Sunucu uygulamanız bağlantıları desteklemiyorsa bu değeri FALSE olarak ayarlayın.
+Bağlantı verilerinin Pano'ya kopyaedilmesi gerekiyorsa bunu TRUE olarak ayarlayın. Sunucu uygulamanız bağlantıları desteklemiyorsa bunu FALSE olarak ayarlayın.
 
-*LPX boşluğu*<br/>
-Fare imlecinin nesnenin kaynağından piksel cinsinden boşluğu.
+*lpOffset*<br/>
+Fare imlecinin piksellerde nesnenin kaynağından mahsup.
 
 *lpSize*<br/>
-Nesnenin piksel cinsinden boyutu.
+Piksellerde nesnenin boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Pano verilerini içeren [Cotadatasource](../../mfc/reference/coledatasource-class.md) nesnesine yönelik bir işaretçi.
+Pano verilerini içeren [bir COleDataSource](../../mfc/reference/coledatasource-class.md) nesnesine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevin varsayılan uygulanması [GetClipboardData](#getclipboarddata)öğesini çağırır.
+Bu işlevin varsayılan uygulaması [GetClipboardData](#getclipboarddata)çağırır.
 
-##  <a name="ongetextent"></a>Cotaserverıtem:: OnGetExtent
+## <a name="coleserveritemongetextent"></a><a name="ongetextent"></a>COleServerItem::OnGetExtent
 
-, OLE öğesinin HIMETRIK birimleri cinsinden boyutunu almak için Framework tarafından çağırılır.
+HiMETRIC birimlerinde OLE öğesinin boyutunu almak için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnGetExtent(
@@ -636,30 +636,30 @@ virtual BOOL OnGetExtent(
 ### <a name="parameters"></a>Parametreler
 
 *nDrawAspect*<br/>
-Sınırları alınacak olan OLE öğesinin yönünü belirtir. Bu parametre aşağıdaki değerlerden herhangi birine sahip olabilir:
+OLE öğesinin sınırları alınacak yönünü belirtir. Bu parametre aşağıdaki değerlerden herhangi biri olabilir:
 
-- DVASPECT_CONTENT öğe, kapsayıcısı içinde katıştırılmış bir nesne olarak görüntülenebilecek şekilde temsil edilir.
+- DVASPECT_CONTENT Öğe, kapsayıcının içinde katıştırılmış bir nesne olarak görüntülenecek şekilde temsil edilir.
 
-- DVASPECT_THUMBNAIL öğe, bir tarama aracında görüntülenebilmesi için bir "küçük resim" gösteriminde işlenir.
+- DVASPECT_THUMBNAIL Öğesi, bir tarama aracında görüntülenebilecek şekilde "küçük resim" gösteriminde işlenir.
 
-- DVASPECT_ICON öğe bir simge ile temsil edilir.
+- DVASPECT_ICON Öğe bir simge ile temsil edilir.
 
-- DVASPECT_DOCPRINT öğe, Dosya menüsündeki Yazdır komutu kullanılarak yazdırılmış gibi gösterilir.
+- DVASPECT_DOCPRINT Öğe, Dosya menüsünden Yazdır komutu kullanılarak basılmış gibi temsil edilir.
 
-*rSize*<br/>
-OLE öğesinin boyutunu alacak bir `CSize` nesnesine başvuru.
+*rBoyut*<br/>
+OLE `CSize` öğesinin boyutunu alacak bir nesneye başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kapsayıcı uygulama Microsoft Foundation Class Kitaplığı yazılmışsa, ilgili `COleClientItem` nesnesinin [GetExtent](../../mfc/reference/coleclientitem-class.md#getextent) üye işlevi çağrıldığında bu işlev çağrılır. Varsayılan uygulama hiçbir şey yapmaz. Kendiniz uygulamanız gerekir. OLE öğesinin boyutu için bir istek işlerken özel işlem gerçekleştirmek istiyorsanız bu işlevi geçersiz kılın.
+Kapsayıcı uygulaması Microsoft Hazırlık Sınıfı Kitaplığı ile yazılmışsa, bu işlev, ilgili `COleClientItem` nesnenin [GetExtent](../../mfc/reference/coleclientitem-class.md#getextent) üye işlevi çağrıldığında çağrılır. Varsayılan uygulama hiçbir şey yapmaz. Bunu kendin uygulamalısın. OLE öğesinin boyutu için bir istek işlerken özel işleme gerçekleştirmek istiyorsanız bu işlevi geçersiz kılın.
 
-##  <a name="onhide"></a>Cotaserverıtem:: OnHide
+## <a name="coleserveritemonhide"></a><a name="onhide"></a>COleServerItem::OnHide
 
-OLE öğesini gizlemek için Framework tarafından çağırılır.
+OLE öğesini gizlemek için çerçeve tarafından çağrılır.
 
 ```
 virtual void OnHide();
@@ -667,11 +667,11 @@ virtual void OnHide();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan çağrılar `COleServerDoc::OnShowDocument( FALSE )`. İşlevi kapsayıcıyı OLE öğesinin gizlenmiş olduğunu da bildirir. OLE öğesini gizlerken özel işlem gerçekleştirmek istiyorsanız bu işlevi geçersiz kılın.
+Varsayılan çağrılar `COleServerDoc::OnShowDocument( FALSE )`. İşlev ayrıca ole öğesinin gizlendiğini kapsayıcıya da haber vetir. Bir OLE öğesini gizlediğinde özel işlem gerçekleştirmek istiyorsanız bu işlevi geçersiz kılın.
 
-##  <a name="oninitfromdata"></a>Copaserverıtem:: Onınitfromdata
+## <a name="coleserveritemoninitfromdata"></a><a name="oninitfromdata"></a>COleServerItem::OnInitFromData
 
-Bir OLE öğesini, *pDataObject*içeriğini kullanarak başlatmak için Framework tarafından çağırılır.
+*pDataObject*içeriğini kullanarak bir OLE öğesini başlatmayı çerçeve tarafından çağrıldı.
 
 ```
 virtual BOOL OnInitFromData(
@@ -682,24 +682,24 @@ virtual BOOL OnInitFromData(
 ### <a name="parameters"></a>Parametreler
 
 *pDataObject*<br/>
-OLE öğesini başlatmak için çeşitli biçimlerdeki verileri içeren OLE veri nesnesine yönelik işaretçi.
+OLE öğesini başlatmaiçin çeşitli biçimlerde veri içeren bir OLE veri nesnesine işaretçi.
 
-*Boluşturma*<br/>
-Bir kapsayıcı uygulama tarafından yeni oluşturulan OLE öğesini başlatmak için işlev çağrılırsa TRUE. Zaten var olan bir OLE öğesinin içeriğini değiştirmek için işlev çağrılırsa FALSE.
+*bCreation*<br/>
+İşlev, bir kapsayıcı uygulaması tarafından yeni oluşturulan bir OLE öğesini başlatmaya çağrılırsa DOĞRU. İşlev zaten varolan bir OLE öğesinin içeriğini değiştirmek için çağrılırsa FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Boluşturma* true ise, bir kapsayıcı geçerli seçime göre yeni nesne Ekle ' yi uygularsa bu işlev çağrılır. Yeni OLE öğesi oluşturulurken seçilen veriler kullanılır. Örneğin, bir elektronik tablo programında bir hücre aralığı seçerken ve sonra seçili aralıktaki değerlere göre bir grafik oluşturmak için yeni nesne Ekle ' yi kullanarak. Varsayılan uygulama hiçbir şey yapmaz. *PDataObject* tarafından sunulmadan kabul edilebilir bir biçim seçmek için bu işlevi geçersiz kılın ve sağlanan VERILERE göre OLE öğesini başlatın. Bu gelişmiş bir geçersiz kılınabilir.
+*bCreation* TRUE ise, bir kapsayıcı geçerli seçimi temel alan Yeni Nesne Ekle uygularsa bu işlev çağrılır. Seçilen veriler, yeni OLE öğesi oluşturulurken kullanılır. Örneğin, bir elektronik tablo programında bir hücre aralığı seçip ardından seçili aralıktaki değerleri temel alan bir grafik oluşturmak için Yeni Nesne Ekle'yi kullanırken. Varsayılan uygulama hiçbir şey yapmaz. *pDataObject* tarafından sunulanlardan kabul edilebilir bir biçim seçmek ve sağlanan verilere dayanarak OLE öğesini başlatmak için bu işlevi geçersiz kılın. Bu gelişmiş bir geçersiz.
 
-Daha fazla bilgi için, bkz. Windows SDK [IOleObject:: InitFromData](/windows/win32/api/oleidl/nf-oleidl-ioleobject-initfromdata) .
+Daha fazla bilgi için [Bkz. IOleObject::InitFromData](/windows/win32/api/oleidl/nf-oleidl-ioleobject-initfromdata) in windows SDK.
 
-##  <a name="onopen"></a>Cotaserverıtem:: OnOpen
+## <a name="coleserveritemonopen"></a><a name="onopen"></a>COleServerItem::Açık
 
-OLE öğesini yerine sunucu uygulamasının ayrı bir örneğinde göstermek için Framework tarafından çağırılır.
+OLE öğesini yerinde değil, sunucu uygulamasının ayrı bir örneğinde görüntülemek için çerçeve tarafından çağrılır.
 
 ```
 virtual void OnOpen();
@@ -707,15 +707,15 @@ virtual void OnOpen();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama, OLE öğesini içeren belgeyi görüntüleyen ilk kare penceresini etkinleştirir; uygulama bir mini sunucu ise, varsayılan uygulama ana pencereyi gösterir. İşlevi kapsayıcıyı OLE öğesinin açıldığını da bildirir.
+Varsayılan uygulama, OLE öğesini içeren belgeyi görüntüleyen ilk kare penceresini etkinleştirir; uygulama bir mini sunucuysa, varsayılan uygulama ana pencereyi gösterir. İşlev ayrıca OLE öğesinin açıldığını kapsayıcıya da haber vetir.
 
-OLE öğesini açarken özel işlem gerçekleştirmek istiyorsanız bu işlevi geçersiz kılın. Bu özellikle, açıldığında bağlantıyı bir bağlantı olarak ayarlamak istediğiniz bağlantılı öğelerle yaygın bir seçimdir.
+Bir OLE öğesini açarken özel işlem gerçekleştirmek istiyorsanız bu işlevi geçersiz kılın. Bu, özellikle açıldığında seçimi bağlantıya ayarlamak istediğiniz bağlantılı öğelerde yaygındır.
 
-Daha fazla bilgi için Windows SDK [IOleClientSite:: OnShowWindow](/windows/win32/api/oleidl/nf-oleidl-ioleclientsite-onshowwindow) bölümüne bakın.
+Daha fazla bilgi için Bkz. Windows SDK'daki [IOleClientSite::OnShowWindow.](/windows/win32/api/oleidl/nf-oleidl-ioleclientsite-onshowwindow)
 
-##  <a name="onqueryupdateitems"></a>Cotaserverıtem:: Onqueryupdateıtems
+## <a name="coleserveritemonqueryupdateitems"></a><a name="onqueryupdateitems"></a>COleServerItem::OnQueryUpdateItems
 
-Geçerli sunucu belgesindeki bağlantılı öğelerin güncel olup olmadığını anlamak için Framework tarafından çağırılır.
+Geçerli sunucu belgesinde bağlantılı öğelerin güncel olup olmadığını belirlemek için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnQueryUpdateItems();
@@ -723,15 +723,15 @@ virtual BOOL OnQueryUpdateItems();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belgede güncelleştirmelerin olması gereken öğeler varsa sıfır dışında; tüm öğeler güncel ise 0.
+Belgede güncelleştirmeye ihtiyaç duyan öğeler varsa sıfıra değil; Tüm öğeler güncelse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak belgesi değiştirildiyse bir öğe güncel değil, ancak bağlantılı öğe belgedeki değişiklikleri yansıtacak şekilde güncellenmemişse.
+Kaynak belgesi değiştirildiyse, ancak bağlı madde belgedeki değişiklikleri yansıtacak şekilde güncelleştirilmediyse, öğe güncel değildir.
 
-##  <a name="onrenderdata"></a>Cotaserverıtem:: OnRenderData
+## <a name="coleserveritemonrenderdata"></a><a name="onrenderdata"></a>COleServerItem::OnRenderData
 
-Verileri belirtilen biçimde almak için Framework tarafından çağırılır.
+Belirtilen biçimde veri almak için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnRenderData(
@@ -744,26 +744,26 @@ virtual BOOL OnRenderData(
 *lpFormatEtc*<br/>
 Bilgilerin istendiği biçimi belirten [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
 
-*Lpstgorta*<br/>
-Verilerin döndürüleceği bir [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder.
+*lpStgMedium*<br/>
+Verilerin döndürülmek üzere olduğu bir [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen biçim, Gecikmeli işleme için [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) veya [DelayRenderFileData](../../mfc/reference/coledatasource-class.md#delayrenderfiledata) üye işlevi kullanılarak `COleDataSource` nesnesine daha önce yerleştirilmiş bir biçimdir. Bu işlevin varsayılan uygulanması, sağlanan depolama ortamı bir dosya ya da bellek ise sırasıyla [OnRenderFileData](#onrenderfiledata) veya [OnRenderGlobalData](#onrenderglobaldata)' ı çağırır. Bu biçimlerin hiçbiri sağlanmazsa, varsayılan uygulama 0 döndürür ve hiçbir şey yapmaz.
+Belirtilen biçim, gecikmiş işleme için `COleDataSource` DelayRenderData veya [DelayRenderFileData](../../mfc/reference/coledatasource-class.md#delayrenderfiledata) üye işlevini kullanarak nesneye daha önce yerleştirilen biçimdir. [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) Bu işlevin varsayılan uygulaması, sağlanan depolama ortamı bir dosya veya bellek ise, sırasıyla [OnRenderFileData](#onrenderfiledata) veya [OnRenderGlobalData](#onrenderglobaldata)çağırır. Bu biçimlerin hiçbiri sağlanmazsa, varsayılan uygulama 0 döndürür ve hiçbir şey yapmaz.
 
-*Lpstgorta*-> *TYMED* TYMED_NULL, Stgmedium, *lpformatetc-> TYMED*tarafından belirtilen şekilde ayrılmalı ve doldurulmalıdır. TYMED_NULL değilse, STGMEDIUM 'ın verilerle birlikte doldurulması gerekir.
+*LPStgMedium*-> *tymed* TYMED_NULL ise, STGMEDIUM *lpFormatEtc->tymed*tarafından belirtildiği şekilde tahsis edilmeli ve doldurulmalıdır. TYMED_NULL değilse, STGMEDIUM verilerle birlikte doldurulmalıdır.
 
-Bu gelişmiş bir geçersiz kılınabilir. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Verileriniz küçük ve boyut olarak sabitlenmiştir `OnRenderGlobalData`geçersiz kılın. Verileriniz bir dosya veya değişken boyutda ise `OnRenderFileData`geçersiz kılın.
+Bu gelişmiş bir geçersiz. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Verileriniz küçükse ve boyutu sabitse, geçersiz kılın. `OnRenderGlobalData` Verileriniz bir dosyadaysa veya değişken boyuttaysa `OnRenderFileData`geçersiz kılın.
 
-Daha fazla bilgi için, bkz. Windows SDK [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc)ve [TYMED](/windows/win32/api/objidl/ne-objidl-tymed) .
+Daha fazla bilgi için Windows SDK'da [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc)ve [TYMED'e](/windows/win32/api/objidl/ne-objidl-tymed) bakın.
 
-##  <a name="onrenderfiledata"></a>Cotaserverıtem:: OnRenderFileData
+## <a name="coleserveritemonrenderfiledata"></a><a name="onrenderfiledata"></a>COleServerItem::OnRenderFileData
 
-Depolama ortamı bir dosya olduğunda, belirtilen biçimdeki verileri almak için Framework tarafından çağırılır.
+Depolama ortamı bir dosya olduğunda, belirtilen biçimde veri almak için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnRenderFileData(
@@ -777,23 +777,23 @@ virtual BOOL OnRenderFileData(
 Bilgilerin istendiği biçimi belirten [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
 
 *pFile*<br/>
-Verilerin işlendiği `CFile` nesnesine işaret eder.
+Verilerin oluşturulacak olduğu nesneyi `CFile` işaret ediyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen biçim, Gecikmeli işleme için [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) üye işlevi kullanılarak `COleDataSource` nesnesine daha önce yerleştirilmiş bir biçimdir. Bu işlevin varsayılan uygulanması yalnızca FALSE değerini döndürür.
+Belirtilen biçim, gecikmiş işleme için `COleDataSource` [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) üye işlevini kullanarak nesneye daha önce yerleştirilen biçimdir. Bu işlevin varsayılan uygulaması sadece FALSE döndürür.
 
-Bu gelişmiş bir geçersiz kılınabilir. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Birden çok depolama ortamını işlemek istiyorsanız, [OnRenderData](#onrenderdata)öğesini geçersiz kılın. Verileriniz bir dosya veya değişken boyutda ise, [OnRenderFileData](#onrenderfiledata)öğesini geçersiz kılın.
+Bu gelişmiş bir geçersiz. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Birden çok depolama ortamını işlemek istiyorsanız, [OnRenderData'yı](#onrenderdata)geçersiz kılın. Verileriniz bir dosyadaysa veya değişken boyutundaysa, [OnRenderFileData'yı](#onrenderfiledata)geçersiz kılın.
 
-Daha fazla bilgi için Windows SDK bkz. [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) .
+Daha fazla bilgi için Bkz. Windows SDK'da [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) ve [FORMATETC.](/windows/win32/api/objidl/ns-objidl-formatetc)
 
-##  <a name="onrenderglobaldata"></a>Cotaserverıtem:: OnRenderGlobalData
+## <a name="coleserveritemonrenderglobaldata"></a><a name="onrenderglobaldata"></a>COleServerItem::OnRenderGlobalData
 
-Belirtilen depolama ortamı genel bellek olduğunda, belirtilen biçimdeki verileri almak için Framework tarafından çağırılır.
+Belirtilen depolama ortamı genel bellek olduğunda, belirtilen biçimde veri almak için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnRenderGlobalData(
@@ -807,25 +807,25 @@ virtual BOOL OnRenderGlobalData(
 Bilgilerin istendiği biçimi belirten [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
 
 *phGlobal*<br/>
-Verilerin döndürüleceği genel belleğe yönelik bir tanıtıcıya işaret eder. Bellek ayrılmışsa, bu parametre NULL olabilir.
+Verilerin döndürülmek üzere olduğu genel belleğe işaret eder. Bellek ayrılmamışsa, bu parametre NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen biçim, Gecikmeli işleme için [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) üye işlevi kullanılarak `COleDataSource` nesnesine daha önce yerleştirilmiş bir biçimdir. Bu işlevin varsayılan uygulanması yalnızca FALSE değerini döndürür.
+Belirtilen biçim, gecikmiş işleme için `COleDataSource` [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) üye işlevini kullanarak nesneye daha önce yerleştirilen biçimdir. Bu işlevin varsayılan uygulaması sadece FALSE döndürür.
 
-*PhGlobal* değeri null ise, yenı bır hglobalin ayrılmalı ve *phGlobal*'te döndürülmelidir. Aksi takdirde, *phGlobal* tarafından belirtilen HGLOBAL, verilerle doldurulmalıdır. HGLOBAL 'e yerleştirilmiş veri miktarı, bellek bloğunun geçerli boyutunu aşmamalıdır. Ayrıca, blok daha büyük bir boyuta yeniden ayrılamaz.
+*phGlobal* NULL ise, o zaman yeni bir HGLOBAL tahsis edilmeli ve *phGlobal*döndürülmelidir. Aksi takdirde, *phGlobal* tarafından belirtilen HGLOBAL verilerle doldurulmalıdır. HGLOBAL'a yerleştirilen veri miktarı bellek bloğunun geçerli boyutunu aşmamalıdır. Ayrıca, blok daha büyük bir boyuta yeniden tahsis edilemez.
 
-Bu gelişmiş bir geçersiz kılınabilir. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Birden çok depolama ortamını işlemek istiyorsanız, [OnRenderData](#onrenderdata)öğesini geçersiz kılın. Verileriniz bir dosya veya değişken boyutda ise, [OnRenderFileData](#onrenderfiledata)öğesini geçersiz kılın.
+Bu gelişmiş bir geçersiz. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Birden çok depolama ortamını işlemek istiyorsanız, [OnRenderData'yı](#onrenderdata)geçersiz kılın. Verileriniz bir dosyadaysa veya değişken boyutundaysa, [OnRenderFileData'yı](#onrenderfiledata)geçersiz kılın.
 
-Daha fazla bilgi için Windows SDK bkz. [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) .
+Daha fazla bilgi için Bkz. Windows SDK'da [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) ve [FORMATETC.](/windows/win32/api/objidl/ns-objidl-formatetc)
 
-##  <a name="onsetcolorscheme"></a>Cotaserverıtem:: OnSetColorScheme
+## <a name="coleserveritemonsetcolorscheme"></a><a name="onsetcolorscheme"></a>COleServerItem::OnSetColorScheme
 
-OLE öğesi düzenlenirken kullanılacak bir renk paleti belirtmek için Framework tarafından çağırılır.
+OLE öğesini düzenlerken kullanılacak bir renk paleti belirtmek için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnSetColorScheme(const LOGPALETTE* lpLogPalette);
@@ -834,21 +834,21 @@ virtual BOOL OnSetColorScheme(const LOGPALETTE* lpLogPalette);
 ### <a name="parameters"></a>Parametreler
 
 *lpLogPalette*<br/>
-Windows [LOGPALETTE](/windows/win32/api/wingdi/ns-wingdi-logpalette) yapısına yönelik işaretçi.
+Windows [LOGPALETTE](/windows/win32/api/wingdi/ns-wingdi-logpalette) yapısıiçin işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Renk paleti kullanılıyorsa sıfır dışı; Aksi takdirde 0.
+Renk paleti kullanılırsa sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kapsayıcı uygulaması Microsoft Foundation Class Kitaplığı kullanılarak yazılmışsa, ilgili `COleClientItem` nesnesinin [IOleObject:: SetColorScheme](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) işlevi çağrıldığında bu işlev çağrılır. Varsayılan uygulama yanlış döndürür. Önerilen paleti kullanmak istiyorsanız bu işlevi geçersiz kılın. Önerilen paleti kullanmak için sunucu uygulaması gerekli değildir.
+Kapsayıcı uygulaması Microsoft Hazırlık Sınıfı Kitaplığı kullanılarak yazılmışsa, bu işlev, ilgili `COleClientItem` nesnenin [IOleObject::SetColorScheme](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) işlevi çağrıldığında çağrılır. Varsayılan uygulama FALSE döndürür. Önerilen paletkullanmak istiyorsanız bu işlevi geçersiz kılın. Sunucu uygulaması önerilen palet kullanmak için gerekli değildir.
 
-Daha fazla bilgi için Windows SDK [IOleObject:: SetColorScheme](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) bölümüne bakın.
+Daha fazla bilgi için Bkz. Windows SDK'da [IOleObject::SetColorScheme.](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setcolorscheme)
 
-##  <a name="onsetdata"></a>Copaserverıtem:: OnSetData
+## <a name="coleserveritemonsetdata"></a><a name="onsetdata"></a>COleServerItem::OnSetData
 
-OLE öğesinin verilerini belirtilen verilerle değiştirmek için Framework tarafından çağırılır.
+OLE öğesinin verilerini belirtilen verilerle değiştirmek için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnSetData(
@@ -860,29 +860,29 @@ virtual BOOL OnSetData(
 ### <a name="parameters"></a>Parametreler
 
 *lpFormatEtc*<br/>
-Verilerin biçimini belirten bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi.
+Verilerin biçimini belirten bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaretçi.
 
-*Lpstgorta*<br/>
-Verilerin bulunduğu bir [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına yönelik işaretçi.
+*lpStgMedium*<br/>
+Verilerin bulunduğu [BIR STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaretçi.
 
 *bRelease*<br/>
-İşlev çağrısını tamamladıktan sonra kimin depolama ortamının sahipliğini olduğunu gösterir. Çağıran, depolama ortamı adına ayrılan kaynakları serbest bırakmaktan sorumlu kişiye karar veriyor. Çağıran bunu *bRelease*'i ayarlayarak yapar. *BRelease* sıfır değilse, sunucu öğesi sahipliğini alır ve onu kullanmayı bitirdiğinde ortamı serbest bırakır. *BRelease* 0 olduğunda, çağıran sahipliği korur ve sunucu öğesi depolama ortamını yalnızca çağrının süresi boyunca kullanabilir.
+İşlev çağrısını tamamladıktan sonra depolama ortamının sahipliğini kimde olduğunu gösterir. Arayan, depolama ortamı adına ayrılan kaynakların serbest bırakılmasından kimin sorumlu olduğuna karar verir. Arayan bunu *bRelease*ayarlayarak yapar. *bRelease* sıfır değilse, sunucu öğesi sahipliğini alır ve kullanımı tamamlandığında ortamı serbest bırakarak. *bRelease* 0 olduğunda, arayan sahipliğini korur ve sunucu öğesi depolama ortamını yalnızca arama süresi boyunca kullanabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sunucu öğesi, başarıyla edinene kadar verilerin sahipliğini almaz. Diğer bir deyişle, 0 döndürürse sahiplik almaz. Veri kaynağı sahiplik alırsa, [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) işlevini çağırarak depolama ortamını serbest bırakır.
+Sunucu öğesi, verileri başarıyla elde edene kadar verilerin sahipliğini almaz. Diğer bir se, 0 döndürürse sahiplenmez. Veri kaynağı sahipliği alırsa, [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) işlevini arayarak depolama ortamını serbest düşürür.
 
-Varsayılan uygulama hiçbir şey yapmaz. OLE öğesinin verilerini belirtilen verilerle değiştirmek için bu işlevi geçersiz kılın. Bu gelişmiş bir geçersiz kılınabilir.
+Varsayılan uygulama hiçbir şey yapmaz. OLE öğesinin verilerini belirtilen verilerle değiştirmek için bu işlevi geçersiz kılın. Bu gelişmiş bir geçersiz.
 
-Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc)ve [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) .
+Daha fazla bilgi için Windows SDK'daki [STGMEDIUM,](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc)ve [ReleaseStgMedium'a](/windows/win32/api/ole2/nf-ole2-releasestgmedium) bakın.
 
-##  <a name="onsetextent"></a>Cotaserverıtem:: OnSetExtent
+## <a name="coleserveritemonsetextent"></a><a name="onsetextent"></a>COleServerItem::OnSetExtent
 
-OLE öğesine kapsayıcı belgesinde ne kadar kullanılabilir alan olduğunu söylemek için Framework tarafından çağırılır.
+OLE öğesine kapsayıcı belgesinde ne kadar alan olduğunu söylemek için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnSetExtent(
@@ -893,30 +893,30 @@ virtual BOOL OnSetExtent(
 ### <a name="parameters"></a>Parametreler
 
 *nDrawAspect*<br/>
-Sınırları belirtilmekte olan OLE öğesinin yönünü belirtir. Bu parametre aşağıdaki değerlerden herhangi birine sahip olabilir:
+Sınırları belirtilen OLE öğesinin yönünü belirtir. Bu parametre aşağıdaki değerlerden herhangi biri olabilir:
 
-- DVASPECT_CONTENT öğe, kapsayıcısı içinde katıştırılmış bir nesne olarak görüntülenebilecek şekilde temsil edilir.
+- DVASPECT_CONTENT Öğe, kapsayıcının içinde katıştırılmış bir nesne olarak görüntülenecek şekilde temsil edilir.
 
-- DVASPECT_THUMBNAIL öğe, bir tarama aracında görüntülenebilmesi için bir "küçük resim" gösteriminde işlenir.
+- DVASPECT_THUMBNAIL Öğesi, bir tarama aracında görüntülenebilecek şekilde "küçük resim" gösteriminde işlenir.
 
-- DVASPECT_ICON öğe bir simge ile temsil edilir.
+- DVASPECT_ICON Öğe bir simge ile temsil edilir.
 
-- DVASPECT_DOCPRINT öğe, Dosya menüsündeki Yazdır komutu kullanılarak yazdırılmış gibi gösterilir.
+- DVASPECT_DOCPRINT Öğe, Dosya menüsünden Yazdır komutu kullanılarak basılmış gibi temsil edilir.
 
-*boyutla*<br/>
+*Boyutu*<br/>
 OLE öğesinin yeni boyutunu belirten bir [CSize](../../atl-mfc-shared/reference/csize-class.md) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kapsayıcı uygulama Microsoft Foundation Class Kitaplığı yazılmışsa, bu işlev, karşılık gelen `COleClientItem` nesnesinin [SetExtent](../../mfc/reference/coleclientitem-class.md#setextent) üye işlevi çağrıldığında çağırılır. Varsayılan uygulama, *nDrawAspect* DVASPECT_CONTENT [m_sizeExtent](#m_sizeextent) üyeyi belirtilen boyuta ayarlar; Aksi takdirde 0 döndürür. Öğenin boyutunu değiştirirken özel işleme gerçekleştirmek için bu işlevi geçersiz kılın.
+Kapsayıcı uygulaması Microsoft Hazırlık Sınıfı Kitaplığı ile yazılmışsa, bu işlev, ilgili `COleClientItem` nesnenin [SetExtent](../../mfc/reference/coleclientitem-class.md#setextent) üye işlevi çağrıldığında çağrılır. Varsayılan uygulama, *nDrawAspect* DVASPECT_CONTENT ise [m_sizeExtent](#m_sizeextent) üyeyi belirtilen boyuta ayarlar; aksi takdirde 0 döndürür. Öğenin boyutunu değiştirdiğinizde özel işleme gerçekleştirmek için bu işlevi geçersiz kılın.
 
-##  <a name="onshow"></a>Cotaserverıtem:: OnShow
+## <a name="coleserveritemonshow"></a><a name="onshow"></a>COleServerItem::OnShow
 
-Sunucu uygulamasının OLE öğesini yerinde görüntülemesini istemek için Framework tarafından çağırılır.
+Sunucu uygulamasına OLE öğesini yerinde görüntülemesini vermek için çerçeve tarafından çağrılır.
 
 ```
 virtual void OnShow();
@@ -924,13 +924,13 @@ virtual void OnShow();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev genellikle kapsayıcı uygulamasının kullanıcısı bir öğe oluşturduğunda veya öğenin gösterilmesi gereken Düzenle gibi bir fiil yürüttüğünde çağrılır. Varsayılan uygulama yerinde etkinleştirmeyi dener. Bu başarısız olursa, işlevi OLE öğesini ayrı bir pencerede göstermek için `OnOpen` üye işlevini çağırır.
+Bu işlev genellikle kapsayıcı uygulamasının kullanıcısı bir öğe oluşturduğunda veya öğenin gösterilmesini gerektiren Edit gibi bir fiili işlediğinde çağrılır. Varsayılan uygulama yerinde etkinleştirme çalışır. Bu başarısız olursa, işlev `OnOpen` üye işlevi ayrı bir pencerede OLE öğesini görüntülemek için çağırır.
 
-Bir OLE öğesi gösterildiğinde özel işlem gerçekleştirmek istiyorsanız bu işlevi geçersiz kılın.
+Bir OLE öğesi gösterildiğinde özel işleme gerçekleştirmek istiyorsanız bu işlevi geçersiz kılın.
 
-##  <a name="onupdate"></a>Cotaserverıtem:: OnUpdate
+## <a name="coleserveritemonupdate"></a><a name="onupdate"></a>COleServerItem::OnUpdate
 
-Bir öğe değiştirildiğinde Framework tarafından çağırılır.
+Bir öğe değiştirildiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual void OnUpdate(
@@ -943,32 +943,32 @@ virtual void OnUpdate(
 ### <a name="parameters"></a>Parametreler
 
 *pSender*<br/>
-Belgeyi değiştiren öğenin işaretçisi. NULL olabilir.
+Belgeyi değiştiren öğeyi işaretçi. NULL olabilir.
 
-*Lipucu*<br/>
-Değişiklik hakkındaki bilgileri içerir.
+*Lhint*<br/>
+Değişiklik hakkında bilgi içerir.
 
-*Phınt*<br/>
-Değişiklik hakkında bilgi depolayan bir nesne işaretçisi.
+*pHint*<br/>
+Değişiklik le ilgili bilgileri depolayan bir nesneye işaretçi.
 
 *nDrawAspect*<br/>
 DVASPECT numaralandırmasından bir değer. Bu parametre aşağıdaki değerlerden herhangi birine sahip olabilir:
 
-- DVASPECT_CONTENT öğe, kapsayıcısı içinde katıştırılmış bir nesne olarak görüntülenebilecek şekilde temsil edilir.
+- DVASPECT_CONTENT Öğe, kapsayıcının içinde katıştırılmış bir nesne olarak görüntülenecek şekilde temsil edilir.
 
-- DVASPECT_THUMBNAIL öğe, bir tarama aracında görüntülenebilmesi için bir "küçük resim" gösteriminde işlenir.
+- DVASPECT_THUMBNAIL Öğesi, bir tarama aracında görüntülenebilecek şekilde "küçük resim" gösteriminde işlenir.
 
-- DVASPECT_ICON öğe bir simge ile temsil edilir.
+- DVASPECT_ICON Öğe bir simge ile temsil edilir.
 
-- DVASPECT_DOCPRINT öğe, Dosya menüsündeki Yazdır komutu kullanılarak yazdırılmış gibi gösterilir.
+- DVASPECT_DOCPRINT Öğe, Dosya menüsünden Yazdır komutu kullanılarak basılmış gibi temsil edilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama, ipucunu veya göndericiden bağımsız olarak, [NotifyChanged](#notifychanged)yöntemini çağırır.
+Varsayılan uygulama, ipucu veya gönderenden bağımsız olarak [NotifyChanged'u](#notifychanged)çağırır.
 
-##  <a name="onupdateitems"></a>Cotaserverıtem:: Onupdateıtems
+## <a name="coleserveritemonupdateitems"></a><a name="onupdateitems"></a>COleServerItem::OnUpdateItems
 
-Sunucu belgesindeki tüm öğeleri güncelleştirmek için Framework tarafından çağırılır.
+Sunucu belgesindeki tüm öğeleri güncelleştirmek için çerçeve tarafından çağrılır.
 
 ```
 virtual void OnUpdateItems();
@@ -976,11 +976,11 @@ virtual void OnUpdateItems();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama, belgedeki tüm `COleClientItem` nesneleri için [UpdateLink](../../mfc/reference/coleclientitem-class.md#updatelink) 'i çağırır.
+Varsayılan uygulama, belgedeki `COleClientItem` tüm nesneler için [UpdateLink'i](../../mfc/reference/coleclientitem-class.md#updatelink) çağırır.
 
-##  <a name="setitemname"></a>Cotaserverıtem:: setItemName
+## <a name="coleserveritemsetitemname"></a><a name="setitemname"></a>COleServerItem::SetItemName
 
-Adını ayarlamak için bağlantılı bir öğe oluşturduğunuzda bu işlevi çağırın.
+Adını ayarlamak için bağlantılı bir öğe oluştururken bu işlevi çağırın.
 
 ```
 void SetItemName(LPCTSTR lpszItemName);
@@ -989,16 +989,16 @@ void SetItemName(LPCTSTR lpszItemName);
 ### <a name="parameters"></a>Parametreler
 
 *lpszItemName*<br/>
-Öğenin yeni adına yönelik işaretçi.
+Öğenin yeni adına işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ad belge içinde benzersiz olmalıdır. Bağlı öğeyi düzenlemek için bir sunucu uygulaması çağrıldığında, uygulama bu adı kullanarak öğeyi bulur. Katıştırılmış öğeler için bu işlevi çağırmanız gerekmez.
+Ad belge içinde benzersiz olmalıdır. Bağlı bir öğeyi düzenlemek için bir sunucu uygulaması çağrıldığında, uygulama öğeyi bulmak için bu adı kullanır. Katıştırılmış öğeler için bu işlevi aramanız gerekmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
-[CDocItem Sınıfı](../../mfc/reference/cdocitem-class.md)<br/>
+[MFC Örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[CdocItem Sınıfı](../../mfc/reference/cdocitem-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [COleClientItem Sınıfı](../../mfc/reference/coleclientitem-class.md)<br/>
 [COleServerDoc Sınıfı](../../mfc/reference/coleserverdoc-class.md)<br/>

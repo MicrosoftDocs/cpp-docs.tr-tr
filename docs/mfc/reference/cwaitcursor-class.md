@@ -1,5 +1,5 @@
 ---
-title: CWaitCursor Class
+title: CWaitCursor Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CWaitCursor
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CWaitCursor [MFC], CWaitCursor
 - CWaitCursor [MFC], Restore
 ms.assetid: 5dfae2ff-d7b6-4383-b0ad-91e0868c67b3
-ms.openlocfilehash: 87ac87019f127d3956caf959a28fc889fdecad50
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 48ef8f9c965f54deafcc62451639f8c31021e900
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450813"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373173"
 ---
-# <a name="cwaitcursor-class"></a>CWaitCursor Class
+# <a name="cwaitcursor-class"></a>CWaitCursor Sınıfı
 
-Uzun bir işlem yaparken, genellikle bir kum saati görüntülenen bekleme imlecini göstermek için bir yol sağlar.
+Uzun bir işlem yaparken genellikle kum saati olarak görüntülenen bekleme imlecini göstermek için tek satırlık bir yol sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,35 +31,35 @@ class CWaitCursor
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CWaitCursor::CWaitCursor](#cwaitcursor)|Oluşturur bir `CWaitCursor` nesne ve bekleme imleci görüntüler.|
+|[CWaitCursor::CWaitCursor](#cwaitcursor)|Bir `CWaitCursor` nesne oluşturuyor ve bekleme imlecini görüntüler.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CWaitCursor::Restore](#restore)|Bekleme imleci değiştirilmiş sonra geri yükler.|
+|[CWaitCursor::Geri Yükleme](#restore)|Değiştirildikten sonra bekleme imlecini geri yükler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CWaitCursor` bir temel sınıfa sahip değil.
+`CWaitCursor`taban sınıfa sahip değildir.
 
-İyi Windows uygulamalarını programlama belirgin bir süre sürer bir işlemi gerçekleştiriyorsunuz her bekleme imlecini görüntüleme gerektirir.
+İyi Windows programlama uygulamaları, fark edilebilir bir süre alan bir işlem gerçekleştirirken bir bekleme imleci görüntülemenizi gerektirir.
 
-Bekleme imlecini görüntülenecek tanımlamak bir `CWaitCursor` kilitlemekten gerçekleştiren kod önce değişken. Nesnenin oluşturucusunun otomatik olarak görüntülenecek bekleme imlecini neden olur.
+Bekleme imlecini görüntülemek için, uzun `CWaitCursor` işlemi gerçekleştiren koddan önce bir değişken tanımlamaniz kaldı. Nesnenin oluşturucusu bekleme imlecinin otomatik olarak görüntülenmesine neden olur.
 
-Nesne kapsam dışına gittiğinde (bloğunda sonunda `CWaitCursor` nesne bildirilir), yok edici imleci önceki imleci ayarlar. Diğer bir deyişle, nesne gerekli temizleme otomatik olarak gerçekleştirir.
-
-> [!NOTE]
->  Kendi oluşturucularının ve yıkıcılarının nasıl çalıştığını, nedeniyle `CWaitCursor` nesneler her zaman yerel değişkenler olarak bildirilen — ne de ile ayrılmış genel değişkenler hiçbir zaman bildirildikleri **yeni**.
-
-İmleci görüntüleme gibi bir ileti kutusu veya iletişim kutusu, çağrı değiştirilecek neden bir işlem gerçekleştiriyorsanız [geri](#restore) bekleme imleci geri yüklemek için üye işlevi. Çağırmak uygundur `Restore` bile zaman bekleme imlecini şu anda görüntülenir.
-
-Bekleme imlecini görüntülemek için başka bir bileşimini kullanmaktır [CCmdTarget::BeginWaitCursor](../../mfc/reference/ccmdtarget-class.md#beginwaitcursor), [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor)belki [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor). Ancak, `CWaitCursor` kilitlemekten ile işiniz bittiğinde, imleci önceki imleci ayarlamanız gerekmez çünkü kullanmak daha kolaydır.
+Nesne kapsam dışına çıktığında `CWaitCursor` (nesnenin bildirildiği bloğun sonunda), yıkıcısı imleci önceki imlecin için ayarlar. Başka bir deyişle, nesne gerekli temizlemeyi otomatik olarak gerçekleştirir.
 
 > [!NOTE]
->  MFC imleç kullanarak geri yükler ve ayarlar [CWinApp::DoWaitCursor](../../mfc/reference/cwinapp-class.md#dowaitcursor) sanal işlev. Özel davranış sağlamak için bu işlevi geçersiz kılabilirsiniz.
+> Yapı yapıcıları ve yıkıcıları nasıl çalıştıklarından dolayı, `CWaitCursor` nesneler her zaman yerel değişkenler olarak bildirilir — hiçbir zaman küresel değişken olarak beyan edilmemişlerdir ve **yeni**değişkenlerle tahsis edilirler.
+
+İleti kutusu veya iletişim kutusu görüntülemek gibi imlecin değiştirilmesine neden olabilecek bir işlem yaparsanız, bekle imlecini geri yüklemek için üye işlevi [geri yükleyin.](#restore) Bekleme imleci `Restore` şu anda görüntülendiğinde bile arama nın sakıncası yoktur.
+
+Bekleme imlecini görüntülemenin başka bir yolu [ccmdTarget kombinasyonunu kullanmaktır::BeginWaitCursor](../../mfc/reference/ccmdtarget-class.md#beginwaitcursor), [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor), ve belki de [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor). Ancak, `CWaitCursor` uzun işlem bittiğinde imleci önceki imlecin olarak ayarlamanız gerekmediği için kullanımı daha kolaydır.
+
+> [!NOTE]
+> MFC, [CWinApp::DoWaitCursor](../../mfc/reference/cwinapp-class.md#dowaitcursor) sanal işlevini kullanarak imleci ayarlar ve geri getirir. Özel davranış sağlamak için bu işlevi geçersiz kılabilirsiniz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -67,15 +67,15 @@ Bekleme imlecini görüntülemek için başka bir bileşimini kullanmaktır [CCm
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** afxwin.h
 
 ## <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#62](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_1.cpp)]
 
-##  <a name="cwaitcursor"></a>  CWaitCursor::CWaitCursor
+## <a name="cwaitcursorcwaitcursor"></a><a name="cwaitcursor"></a>CWaitCursor::CWaitCursor
 
-Bekleme imlecini görüntülemek için yalnızca bildirme bir `CWaitCursor` kilitlemekten gerçekleştiren kod önce nesne.
+Bekleme imlecini görüntülemek için, uzun `CWaitCursor` işlemi gerçekleştiren koddan önce bir nesne bildirmeniz.
 
 ```
 CWaitCursor();
@@ -83,22 +83,22 @@ CWaitCursor();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucu otomatik olarak görüntülenecek bekleme imlecini neden olur.
+Oluşturucu otomatik olarak bekleme imlecinin görüntülenmesine neden olur.
 
-Nesne kapsam dışına gittiğinde (bloğunda sonunda `CWaitCursor` nesne bildirilir), yok edici imleci önceki imleci ayarlar. Diğer bir deyişle, nesne gerekli temizleme otomatik olarak gerçekleştirir.
+Nesne kapsam dışına çıktığında `CWaitCursor` (nesnenin bildirildiği bloğun sonunda), yıkıcısı imleci önceki imlecin için ayarlar. Başka bir deyişle, nesne gerekli temizlemeyi otomatik olarak gerçekleştirir.
 
-Yok edici (Bu işlevin sonuna önce olabilir) bloğunun sonunda bekleme imleci yalnızca işlevinizi bir parçası etkin hale getirmek için çağrıldığını olayının yararlanabilirsiniz. Bu teknik, aşağıdaki ikinci örnekte gösterilir.
+Bekleme imlecini işlevinizin yalnızca bir bölümünde etkin hale getirmek için, yıkıcının bloğun sonunda (işlevin bitiminden önce olabilir) çağrılması durumundan yararlanabilirsiniz. Bu teknik aşağıdaki ikinci örnekte gösterilmiştir.
 
 > [!NOTE]
->  Kendi oluşturucularının ve yıkıcılarının nasıl çalıştığını, nedeniyle `CWaitCursor` nesneler her zaman yerel değişkenler olarak bildirilen — asla genel değişkenleri olarak bildirilirler ya da ile ayrılan **yeni**.
+> Yapı yapıcıları ve yıkıcıları nasıl çalıştıklarından dolayı, `CWaitCursor` nesneler her zaman yerel değişkenler olarak bildirilir — hiçbir zaman küresel değişken olarak beyan edilmemişlerdir, ne de **yeni**değişkenlerle tahsis edilirler.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#63](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_2.cpp)]
 
-##  <a name="restore"></a>  CWaitCursor::Restore
+## <a name="cwaitcursorrestore"></a><a name="restore"></a>CWaitCursor::Geri Yükleme
 
-Bekleme imleci geri yüklemek için bir ileti kutusu ya da bekleme imleci için başka bir imleç değişebilir iletişim kutusunda, görüntüleme gibi bir işlem gerçekleştirildikten sonra bu işlevi çağırın.
+Bekleme imlecini geri yüklemek için, bekleme imlecini başka bir imleçle değiştirebilecek ileti kutusu veya iletişim kutusu görüntülemek gibi bir işlem yaptıktan sonra bu işlevi arayın.
 
 ```
 void Restore();
@@ -106,9 +106,9 @@ void Restore();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırmak için Tamam olduğunu `Restore` bile zaman bekleme imleci şu anda görüntülenir.
+Bekleme imleci `Restore` şu anda görüntülendiğinde bile arama nın sakıncası yoktur.
 
-Bekleme imleci dışında olan bir işlevde sırada geri yüklemeniz gerekirse `CWaitCursor` nesne bildirildiğinde, çağırabilirsiniz [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor).
+`CWaitCursor` Nesnenin beyan edildiği işlev dışında bir işlevde bekleme imlecini geri yüklemeniz gerekiyorsa, [CCmdTarget::RestoreWaitCursor'u](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor)arayabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -121,4 +121,4 @@ Bekleme imleci dışında olan bir işlevde sırada geri yüklemeniz gerekirse `
 [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor)<br/>
 [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor)<br/>
 [CWinApp::DoWaitCursor](../../mfc/reference/cwinapp-class.md#dowaitcursor)<br/>
-[Nasıl Yaparım Bir Microsoft Foundation Class uygulamasında fare imlecini değiştir](https://go.microsoft.com/fwlink/p/?linkid=128044)
+[Nasıl Yaparım: Microsoft Hazırlık Sınıfı Uygulamasında Fare İmlörünü Değiştirme](https://go.microsoft.com/fwlink/p/?linkid=128044)

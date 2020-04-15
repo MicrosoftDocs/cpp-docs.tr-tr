@@ -1,5 +1,5 @@
 ---
-title: CMFCSpinButtonCtrl sınıfı
+title: CMFCSpinButtonCtrl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCSpinButtonCtrl
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCSpinButtonCtrl [MFC], OnDraw
 ms.assetid: 8773f259-4d3f-4bca-a71c-09e0c71bc843
-ms.openlocfilehash: 60808359c11604368493031e1b6f4573b3b2026f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 445b857400d8c82109ca7220b84bac692a2abf89
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410106"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81376183"
 ---
-# <a name="cmfcspinbuttonctrl-class"></a>CMFCSpinButtonCtrl sınıfı
+# <a name="cmfcspinbuttonctrl-class"></a>CMFCSpinButtonCtrl Sınıfı
 
-`CMFCSpinButtonCtrl` Sınıfı, bir değer değiştirme düğmesi denetimi çizen bir görsel yöneticiyi destekler.
+Sınıf, `CMFCSpinButtonCtrl` döndürme düğmesi denetimi çizen görsel bir yöneticiyi destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,46 +29,46 @@ class CMFCSpinButtonCtrl : public CSpinButtonCtrl
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMFCSpinButtonCtrl::CMFCSpinButtonCtrl`|Varsayılan Oluşturucu.|
+|`CMFCSpinButtonCtrl::CMFCSpinButtonCtrl`|Varsayılan oluşturucu.|
 |`CMFCSpinButtonCtrl::~CMFCSpinButtonCtrl`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCSpinButtonCtrl::OnDraw](#ondraw)|Geçerli değer değiştirme düğmesi denetimi halinde yeniden boyar.|
+|[CMFCSpinButtonCtrl::OnDraw](#ondraw)|Geçerli spin düğmesi denetimini yeniden boyar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uygulamanızda bir değer değiştirme düğmesi denetimi çizmek için bir görsel yöneticiyi kullanmak için tüm örneklerinin yerine `CSpinButtonCtrl` sınıfıyla `CMFCSpinButtonCtrl` sınıfı.
+Uygulamanızda bir spin düğmesi denetimi çizmek için görsel bir yönetici `CSpinButtonCtrl` kullanmak için `CMFCSpinButtonCtrl` sınıfın tüm örneklerini sınıfla değiştirin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesnenin oluşturulacağı gösterilmektedir `CMFCSpinButtonCtrl` kullanın ve sınıf kendi `Create` yöntemi.
+Aşağıdaki örnek, sınıfın bir nesnesinin `CMFCSpinButtonCtrl` nasıl oluşturulup `Create` yönteminin kullanılacağını gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#25](../../mfc/reference/codesnippet/cpp/cmfcspinbuttonctrl-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CSpinButtonCtrl](../../mfc/reference/cspinbuttonctrl-class.md)
+[Cspinbuttonctrl](../../mfc/reference/cspinbuttonctrl-class.md)
 
 [CMFCSpinButtonCtrl](../../mfc/reference/cmfcspinbuttonctrl-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxspinbuttonctrl.h
+**Üstbilgi:** afxspinbuttonctrl.h
 
-##  <a name="ondraw"></a>  CMFCSpinButtonCtrl::OnDraw
+## <a name="cmfcspinbuttonctrlondraw"></a><a name="ondraw"></a>CMFCSpinButtonCtrl::OnDraw
 
-Geçerli değer değiştirme düğmesi denetimi halinde yeniden boyar.
+Geçerli spin düğmesi denetimini yeniden boyar.
 
 ```
 virtual void OnDraw(CDC* pDC);
@@ -76,12 +76,12 @@ virtual void OnDraw(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework çağrıları `CMFCSpinButtonCtrl::OnPaint` işlemek için gereken yöntemini [CWnd::OnPaint](../../mfc/reference/cwnd-class.md#onpaint) iletisi ve yöntemi sırayla bu ProcessOrder `CMFCSpinButtonCtrl::OnDraw` yöntemi. Framework değer değiştirme düğmesi denetimi çizen biçimini özelleştirmek için bu yöntemi yok sayın.
+Çerçeve CWnd işlemek için `CMFCSpinButtonCtrl::OnPaint` yöntem [çağırır::OnPaint](../../mfc/reference/cwnd-class.md#onpaint) iletisi ve `CMFCSpinButtonCtrl::OnDraw` sırayla bu yöntem bu yöntemi çağırır. Çerçevenin spin düğmesi denetimini nasıl çizdiğini özelleştirmek için bu yöntemi geçersiz kılın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

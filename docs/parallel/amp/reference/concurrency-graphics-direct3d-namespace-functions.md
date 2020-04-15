@@ -6,12 +6,12 @@ f1_keywords:
 - amp_graphics/Concurrency::graphics::direct3d::make_sampler
 - amp_graphics/Concurrency::graphics::direct3d::make_texture
 ms.assetid: 11ee1d42-333e-4ae9-95ac-4cf68c06d13d
-ms.openlocfilehash: 665732700ee6b85425f332a0eb96a5b75864a74e
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 330c1aa94b1d122901fc23576686032400249d31
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419289"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81376386"
 ---
 # <a name="concurrencygraphicsdirect3d-namespace-functions"></a>Concurrency::graphics::direct3d ad alanı işlevleri
 
@@ -20,9 +20,9 @@ ms.locfileid: "79419289"
 |[get_sampler](#get_sampler)|[get_texture](#get_texture)|[make_sampler](#make_sampler)|
 |[make_texture](#make_texture)|[msad4](#msad4)|
 
-## <a name="get_sampler"></a>get_sampler
+## <a name="get_sampler"></a><a name="get_sampler"></a>get_sampler
 
-Belirtilen örnekleyici nesnesini temsil eden sağlanan Hızlandırıcı görünümünde D3D örnekleyici durum arabirimini alın.
+Belirtilen örnekleyici nesnesini temsil eden verilen hızlandırıcı görünümünde D3D örnekleyici durumu arabirimini alın.
 
 ```cpp
 IUnknown* get_sampler(
@@ -33,18 +33,18 @@ IUnknown* get_sampler(
 ### <a name="parameters"></a>Parametreler
 
 *_Av*<br/>
-D3D örnekleyici durumunun oluşturulacağı D3D Hızlandırıcısı görünümü.
+D3D örnekleyici durumunun oluşturulacak d3D hızlandırıcı görünümü.
 
 *_Sampler*<br/>
-Temel alınan D3D örnekleyici durum arabiriminin oluşturulduğu bir örnekleyici nesnesi.
+Altta yatan D3D örnekleyici durum arabiriminin oluşturulduğu bir örnekleyici nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen örnekleyiciyi temsil eden D3D örnekleyici durumuna karşılık gelen IUnknown arabirim işaretçisi.
+Verilen örnekleyiciyi temsil eden D3D örnekleyici durumuna karşılık gelen IUnknown arabirim işaretçisi.
 
-## <a name="get_texture"></a>get_texture
+## <a name="get_texture"></a><a name="get_texture"></a>get_texture
 
-Belirtilen [doku](texture-class.md) nesnesini temel alan Direct3D doku arabirimini alır.
+Belirtilen [doku](texture-class.md) nesnesinin altında yatan Direct3D doku arabirimini alır.
 
 ```cpp
 template<
@@ -78,15 +78,15 @@ Dokunun öğe türü.
 Dokunun derecesi.
 
 *_Texture*<br/>
-Temel alınan Direct3D doku arabiriminin döndürüldüğü accelerator_view ilişkili doku veya doku görünümü.
+Temel Direct3D doku arabiriminin döndürüldildiği accelerator_view ilişkili doku veya doku görünümü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dokuyu temeldeki Direct3D dokusuyla karşılık gelen IUnknown arabirim işaretçisi.
+Doku altında yatan Direct3D dokuya karşılık gelen IUnknown arabirim işaretçisi.
 
-## <a name="make_sampler"></a>make_sampler
+## <a name="make_sampler"></a><a name="make_sampler"></a>make_sampler
 
-D3D örnekleyici durumu arabirim işaretçisinden bir örnekleyici oluşturun.
+D3D örnekleyici durum arabirimi işaretçisinden bir örnekleyici oluşturun.
 
 ```cpp
 sampler make_sampler(_In_ IUnknown* _D3D_sampler) restrict(amp);
@@ -95,13 +95,13 @@ sampler make_sampler(_In_ IUnknown* _D3D_sampler) restrict(amp);
 ### <a name="parameters"></a>Parametreler
 
 *_D3D_sampler*<br/>
-Örnekleyiciyi oluşturmak için D3D örnekleyici durumunun IUnknown arabirim işaretçisi.
+Örnekleyici oluşturmak için D3D örnekleyici durumunun IUnknown arabirim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Örnekleyici, belirtilen D3D örnekleyici durumunu temsil eder.
+Örnekleyici, sağlanan D3D örnekleyici durumunu temsil eder.
 
-## <a name="make_texture"></a>make_texture
+## <a name="make_texture"></a><a name="make_texture"></a>make_texture
 
 Belirtilen parametreleri kullanarak bir [doku](texture-class.md) nesnesi oluşturur.
 
@@ -125,21 +125,21 @@ Dokudaki öğelerin türü.
 Dokunun derecesi.
 
 *_Av*<br/>
-Dokunun oluşturulacağı D3D Hızlandırıcısı görünümü.
+Dokunun oluşturulacak d3D hızlandırıcı görünümü.
 
 *_D3D_texture*<br/>
-' Den doku oluşturmak için D3D dokusunun, IUnknown arabirim işaretçisi.
+D3D doku iUnknown arabirim işaretçisi doku oluşturmak için.
 
 *_View_format*<br/>
-Bu dokusundaki oluşturulan görünümler için kullanılacak DXGI biçimi. Biçimi _D3D_texture temel biçiminden ve bu şablonun value_type türeten DXGI_FORMAT_UNKNOWN geçirin (varsayılan). Belirtilen biçim _D3D_texture temel alınan biçimiyle uyumlu olmalıdır.
+Bu dokudan oluşturulan görünümler için kullanılacak DXGI biçimi. Biçimi _D3D_texture'nin temel biçiminden ve bu şablonun value_type türetmek için DXGI_FORMAT_UNKNOWN (varsayılan) geçirin. Sağlanan biçim, _D3D_texture temel biçimiyle uyumlu olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen D3D dokusunu kullanan bir doku.
+Sağlanan D3D dokusunu kullanan bir doku.
 
-## <a name="msad4"></a>msad4
+## <a name="msad4"></a><a name="msad4"></a>msad4
 
-4 baytlık bir başvuru değerini ve 8 baytlık bir kaynak değeri karşılaştırır ve 4 toplamların bir vektörünü toplar. Her bir toplam, başvuru değeri ile kaynak değer arasındaki farklı bayt hizalamalarının maskelenmiş toplamına karşılık gelir.
+4 baytlık referans değerini ve 8 baytlık kaynak değerini karşılaştırır ve 4 toplamlı bir vektör birikir. Her toplam, başvuru değeri ve kaynak değer arasındaki farklı bayt hizalamalarının mutlak farklarının maskeli toplamına karşılık gelir.
 
 ```cpp
 inline uint4 msad4(
@@ -151,23 +151,23 @@ inline uint4 msad4(
 ### <a name="parameters"></a>Parametreler
 
 *_Reference*<br/>
-Tek bir uint değerindeki 4 baytlık başvuru dizisi
+Bir uint değerinde4 baytreferans dizisi
 
 *_Source*<br/>
-İki uint değerinin vektörde 8 baytlık Kaynak dizisi.
+İki uint değerden oluşan bir vektördeki 8 baytlık kaynak dizi.
 
 *_Accum*<br/>
-Başvuru değeri ile kaynak değer arasındaki farklı bayt hizalamalarının maskelenmiş toplamına eklenecek 4 değerin vektörü.
+Referans değeri ve kaynak değer arasındaki farklı bayt hizalamalarının mutlak farklarının maskeli toplamına eklenecek 4 değerden oluşan bir vektör.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-4 toplamların vektörünü döndürür. Her bir toplam, başvuru değeri ile kaynak değer arasındaki farklı bayt hizalamalarının maskelenmiş toplamına karşılık gelir.
+4 toplamlı bir vektör verir. Her toplam, başvuru değeri ve kaynak değer arasındaki farklı bayt hizalamalarının mutlak farklarının maskeli toplamına karşılık gelir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** amp_graphics. h
+**Üstbilgi:** amp_graphics.h
 
-**Ad alanı:** Concurrency:: Graphics::d irect3d
+**Ad alanı:** Eşzamanlılık::grafikler::direct3d
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

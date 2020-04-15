@@ -1,5 +1,5 @@
 ---
-title: Cdocıtem sınıfı
+title: CdocItem Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDocItem
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CDocItem [MFC], GetDocument
 - CDocItem [MFC], IsBlank
 ms.assetid: 84fb8610-a4c8-4211-adc0-e70e8d002c11
-ms.openlocfilehash: 6c1c1da14d732b6aff6ae07f86ae7b9c1b690b84
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 438bc2a03239946dbfca53d5f2989c731b682ab0
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62168199"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375617"
 ---
-# <a name="cdocitem-class"></a>Cdocıtem sınıfı
+# <a name="cdocitem-class"></a>CdocItem Sınıfı
 
-Bir belgenin verilerinin bileşenleri olan belge öğeleri için temel sınıf.
+Belge nin verilerinin bileşenleri olan belge öğeleri için taban sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,32 +31,32 @@ class CDocItem : public CCmdTarget
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDocItem::GetDocument](#getdocument)|Öğeyi içeren belge döndürür.|
-|[CDocItem::IsBlank](#isblank)|Öğe bilgileri içerip içermediğini belirler.|
+|[CDocItem::GetDocument](#getdocument)|Öğeyi içeren belgeyi döndürür.|
+|[CdocItem::IsBlank](#isblank)|Öğenin herhangi bir bilgi içerip içermediğini belirler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDocItem` nesneler, istemci ve sunucu belgelerde OLE öğeleri göstermek için kullanılır.
+`CDocItem`nesneler, hem istemci hem de sunucu belgelerinde OLE öğelerini temsil etmek için kullanılır.
 
-Daha fazla bilgi için bkz [kapsayıcıları: Bir kapsayıcı uygulama](../../mfc/containers-implementing-a-container.md).
+Daha fazla bilgi için, makale [Kapsayıcılar bakın: Bir Kapsayıcı uygulama.](../../mfc/containers-implementing-a-container.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
 `CDocItem`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxole.h
+**Üstbilgi:** afxole.h
 
-##  <a name="getdocument"></a>  CDocItem::GetDocument
+## <a name="cdocitemgetdocument"></a><a name="getdocument"></a>CDocItem::GetDocument
 
-Öğeyi içeren belge almak için bu işlevi çağırın.
+Öğeyi içeren belgeyi almak için bu işlevi arayın.
 
 ```
 CDocument* GetDocument() const;
@@ -64,15 +64,15 @@ CDocument* GetDocument() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeyi içeren belge için bir işaretçi; Bir belge bir parçası değilse NULL.
+Öğeyi içeren belgenin işaretçisi; NULL, öğe belgenin bir parçası değilse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, türetilmiş sınıflarda kılınır [Coleclientıtem](../../mfc/reference/coleclientitem-class.md) ve [Coleserverıtem](../../mfc/reference/coleserveritem-class.md), ya da bir işaretçi döndüren bir [COleDocument](../../mfc/reference/coledocument-class.md), [ COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md), veya bir [COleServerDoc](../../mfc/reference/coleserverdoc-class.md) nesne.
+Bu işlev, [coleClientItem](../../mfc/reference/coleclientitem-class.md) ve [COleServerItem](../../mfc/reference/coleserveritem-class.md)türemiş sınıflarda geçersiz kılınır, bir işaretçi [coleDocument,](../../mfc/reference/coledocument-class.md) [cOleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md)veya [COleServerDoc](../../mfc/reference/coleserverdoc-class.md) nesnesine döndürülür.
 
-##  <a name="isblank"></a>  CDocItem::IsBlank
+## <a name="cdocitemisblank"></a><a name="isblank"></a>CdocItem::IsBlank
 
-Varsayılan serileştirme oluştuğunda framework tarafından çağırılır.
+Varsayılan serileştirme gerçekleştiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL IsBlank() const;
@@ -80,13 +80,13 @@ virtual BOOL IsBlank() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeyi içeren hiçbir bilgi olursa sıfır dışı; Aksi durumda 0.
+Öğe bilgi içermisse sıfır olmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, `CDocItem` nesneler boş değildir. [Coleclientıtem](../../mfc/reference/coleclientitem-class.md) nesneleri bazen boş olduğundan, bunlar doğrudan öğesinden türetilen `CDocItem`. Ancak, [Coleserverıtem](../../mfc/reference/coleserveritem-class.md) nesnelerdir her zaman boş. Varsayılan olarak, OLE uygulamaları içeren `COleClientItem` hiçbir x veya y sahip nesneleri uzantı serileştirilir. Bu geçersiz kılma TRUE döndürerek yapılır `IsBlank` hiçbir x veya y öğesi olduğunda kapsam.
+Varsayılan olarak, `CDocItem` nesneler boş değildir. [COleClientItem](../../mfc/reference/coleclientitem-class.md) nesneleri bazen boştur, çünkü `CDocItem`doğrudan .'den türediler. Ancak, [COleServerItem](../../mfc/reference/coleserveritem-class.md) nesneleri her zaman boştur. Varsayılan olarak, x veya `COleClientItem` y boyutu olmayan nesneleri içeren OLE uygulamaları seri hale getirilmiştir. Bu, maddenin x veya y boyutu `IsBlank` olmadığında bir geçersiz kılmadan TRUE döndürülerek yapılır.
 
-Serileştirme sırasında diğer işlemleri uygulamak istiyorsanız, bu işlev geçersiz kılar.
+Serileştirme sırasında başka eylemler uygulamak istiyorsanız bu işlevi geçersiz kılın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

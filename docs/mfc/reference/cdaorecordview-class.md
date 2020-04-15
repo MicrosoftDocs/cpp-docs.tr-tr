@@ -1,5 +1,5 @@
 ---
-title: CDaoRecordView sınıfı
+title: CDaoRecordView Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDaoRecordView
@@ -16,14 +16,14 @@ helpviewer_keywords:
 - CDaoRecordView [MFC], OnGetRecordset
 - CDaoRecordView [MFC], OnMove
 ms.assetid: 5aa7d0e2-bd05-413e-b216-80c404ce18ac
-ms.openlocfilehash: f63aa8ed17619a9eef36e36bcc9243a3b973889a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8c411dbd29316219759351f1f1633b6e57b92e8
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62207200"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377140"
 ---
-# <a name="cdaorecordview-class"></a>CDaoRecordView sınıfı
+# <a name="cdaorecordview-class"></a>CDaoRecordView Sınıfı
 
 Denetimlerde veritabanı kayıtlarını görüntüleyen bir görünüm.
 
@@ -37,61 +37,61 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDaoRecordView::CDaoRecordView](#cdaorecordview)|Oluşturur bir `CDaoRecordView` nesne.|
+|[CDaoRecordView::CDaoRecordView](#cdaorecordview)|Bir `CDaoRecordView` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDaoRecordView::IsOnFirstRecord](#isonfirstrecord)|Geçerli kayıt ilişkili kayıt bulunan ilk kayda ise sıfır döndürür.|
-|[CDaoRecordView::IsOnLastRecord](#isonlastrecord)|Geçerli kayıt ilişkili kümesinde son kaydını ise sıfır döndürür.|
-|[CDaoRecordView::OnGetRecordset](#ongetrecordset)|Türetilen bir sınıfın bir nesnesi için bir işaretçi döndürür `CDaoRecordset`. ClassWizard bu işlevi için geçersiz kılar ve gerekirse kayıt kümesi oluşturur.|
-|[CDaoRecordView::OnMove](#onmove)|Geçerli kayıt değiştiyse, veri kaynağında güncelleştirir, sonra belirtilen kayıda taşır (sonraki, önceki, ilk veya son).|
+|[CDaoRecordView::IsOnFirstRecord](#isonfirstrecord)|Geçerli kayıt ilişkili kayıt kümesindeki ilk kayıtsa sıfırsız döndürür.|
+|[CDaoRecordView::IsOnLastRecord](#isonlastrecord)|Geçerli kayıt ilişkili kayıt kümesindeki son kayıtsa sıfırsız döndürür.|
+|[CDaoRecordView::OnGetRecordset](#ongetrecordset)|Bir işaretçiyi türetilen bir `CDaoRecordset`sınıfın nesnesine döndürür. ClassWizard bu işlevi sizin için geçersiz kılar ve gerekirse kayıt kümesini oluşturur.|
+|[CDaoRecordView::OnMove](#onmove)|Geçerli kayıt değiştiyse, veri kaynağında güncelleştirir, ardından belirtilen kayda (sonraki, önceki, ilk veya son) taşınır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Doğrudan bağlı bir form görünümü görünümdür bir `CDaoRecordset` nesne. Görünüm iletişim şablon kaynağı oluşturulur ve alanlarını görüntüler `CDaoRecordset` iletişim şablonun denetimlerinde nesne. `CDaoRecordView` Form üzerinde denetimleri ve alanları kümesi arasında veri taşıma işlemlerini otomatik hale getirmek için nesne kullanan iletişim kutusu veri değişimi (DDX) ve DAO kayıt alanı değişimi (DFX). `CDaoRecordView` Ayrıca taşımak için varsayılan bir uygulama sağlar, ilk İleri, önceki veya son kaydını ve kayıtta şu anda Görünümü güncelleştirmek için bir arabirim.
+Görünüm, doğrudan bir nesneye `CDaoRecordset` bağlı bir form görünümüdür. Görünüm bir iletişim şablonu kaynağından oluşturulur ve `CDaoRecordset` iletişim şablonunun denetimlerinde nesnenin alanlarını görüntüler. Nesne, `CDaoRecordView` form daki denetimler ile kayıt kümesinin alanları arasındaki veri hareketini otomatikleştirmek için iletişim veri alışverişi (DDX) ve DAO kayıt alanı değişimi (DFX) kullanır. `CDaoRecordView`ayrıca, ilk, sonraki, önceki veya son kayda geçmek için varsayılan bir uygulama ve şu anda görünümde olan kaydı güncelleştirmek için bir arabirim sağlar.
 
 > [!NOTE]
->  DAO veritabanı sınıfları, açık veritabanı bağlantısı (ODBC) üzerinde göre MFC veritabanı sınıflarından farklıdır. Tüm DAO veritabanı sınıf adları "CDao" önekini alır. Hala DAO sınıfları ile ODBC veri kaynaklarına erişim de kullanabilirsiniz. DAO sınıfları, genellikle Microsoft Jet Veritabanı Altyapısı'na kullandığından üstün özellikler sunar.
+> DAO veritabanı sınıfları Açık Veritabanı Bağlantısı (ODBC) dayalı MFC veritabanı sınıfları farklıdır. Tüm DAO veritabanı sınıf adları "CDao" öneki vardır. DaO sınıfları ile ODBC veri kaynaklarına erişebilirsiniz; DAO sınıfları, Microsoft Jet veritabanı altyapısını kullandıklarından genellikle üstün özellikler sunar.
 
-Uygulama Sihirbazı'nı, kayıt görünümü oluşturmak için en yaygın yoludur. Kayıt görünümü sınıfını hem ilişkili kayıt kümesi sınıfıyla iskelet başlangıç uygulamanızın bir parçası olarak uygulama Sihirbazı oluşturur.
+Kayıt görünümünüzü oluşturmanın en yaygın yolu Uygulama Sihirbazı'dır. Uygulama Sihirbazı, iskelet başlatıcı uygulamanızın bir parçası olarak hem kayıt görünümü sınıfını hem de ilişkili kayıt kümesi sınıfını oluşturur.
 
-Yalnızca tek bir form gerekiyorsa, Uygulama Sihirbazı yaklaşım daha kolay olur. ClassWizard kayıt görünümü geliştirme işlemine daha sonra kullanmak karar vermenize olanak tanır. ClassWizard ile Uygulama Sihirbazı'nı kayıt görünüm sınıfı oluşturmazsanız, daha sonra oluşturabilirsiniz. ClassWizard kullanarak kayıt görünümü ve bir kayıt kümesi ayrı olarak oluşturma ve bunları bağlayın olduğundan en esnek bir yaklaşım, kayıt kümesi sınıfı adlandırma içinde daha fazla denetim verir ve kendi. S /. CPP dosyalarına. Bu yaklaşım, aynı kayıt sınıfta birden çok kayıt görünümleri sahip sağlar.
+Tek bir forma ihtiyacınız varsa, Uygulama Sihirbazı yaklaşımı daha kolaydır. ClassWizard, geliştirme işleminin ilerleyen saatlerinde bir kayıt görünümü kullanmaya karar vermenizi sağlar. Uygulama Sihirbazı ile kayıt görünümü sınıfını oluşturmazsanız, daha sonra ClassWizard ile oluşturabilirsiniz. Bir kayıt görünümü ve bir kayıt kümesi oluşturmak için ClassWizard kullanarak ayrı ayrı ve sonra bunları bağlamak en esnek bir yaklaşımdır çünkü kayıt kümesi sınıf ve onun adlandırma daha fazla kontrol sağlar. H/. CPP dosyaları. Bu yaklaşım, aynı kayıt kümesi sınıfında birden çok kayıt görüntülemeniz iniz de sağlar.
 
-Kayıt görünümünde kaydı başka bir kayda git yapmasını kolaylaştırır, Uygulama Sihirbazı'nı menü (ve isteğe bağlı olarak araç) oluşturur ve kaynaklarını taşımak için ilk İleri, önceki ya da son kayıt. Kayıt görünümü sınıfı ClassWizard ile oluşturursanız, bu kaynakları kendiniz menü ve bit eşlem ile düzenleyicileri oluşturmanız gerekir.
+Son kullanıcıların kayıt görünümünde kayıttan kayda geçmelerini kolaylaştırmak için, Uygulama Sihirbazı ilk, sonraki, önceki veya son kayda geçmek için menü (ve isteğe bağlı araç çubuğu) kaynakları oluşturur. ClassWizard ile bir kayıt görünümü sınıfı oluşturursanız, menü ve bitmap düzenleyicileri ile bu kaynakları kendiniz oluşturmanız gerekir.
 
-Kayıttan diğerine taşımak için varsayılan uygulaması hakkında daha fazla bilgi için bkz: `IsOnFirstRecord` ve `IsOnLastRecord` ve makale [kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md), her ikisi de olarak uygulandığı `CRecordView` ve `CDaoRecordView`.
+Kayıttan kayda geçmek için varsayılan uygulama `IsOnFirstRecord` hakkında `IsOnLastRecord` bilgi [Using a Record View](../../data/using-a-record-view-mfc-data-access.md)için, bkz ve hem de `CRecordView` `CDaoRecordView`.
 
-`CDaoRecordView` kullanıcının konumunu kayıt kümesindeki kayıt görünümü kullanıcı arabirimi güncelleştirebilmeniz izler. Kullanıcı kayıt ya da sonuna taşır, kayıt görünümü kullanıcı arabirimi nesneleri devre dışı bırakır; menü öğeleri ya da araç çubuğu düğmeleri gibi — taşımak için aynı yönde başka.
+`CDaoRecordView`kayıt görünümünün kullanıcı arabirimini güncelleştirebilmeleri için kullanıcının kayıt kümesindeki konumunu izler. Kullanıcı kayıt kümesinin her iki ucuna da taşındığında, kayıt görünümü aynı yönde daha fazla hareket etmek için kullanıcı arabirimi nesnelerini (menü öğeleri veya araç çubuğu düğmeleri gibi) devre dışı kılabilir.
 
-Bildirme ve kayıt kümesi sınıfları ve kayıt görünümünü kullanma hakkında daha fazla bilgi için "tasarlama ve oluşturma bir kayıt" makalesinde görmek [kayıt görünümleri](../../data/record-views-mfc-data-access.md). Nasıl iş kayıt görünümleri ve bunların nasıl kullanılacağı hakkında daha fazla bilgi için bkz [kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md). Yukarıda belirtilen tüm makaleler için her ikisinin de geçerli `CRecordView` ve `CDaoRecordView`.
+Kayıt görünümü ve kayıt kümesi sınıflarınızı bildirme ve kullanma hakkında daha fazla bilgi için [Kayıt Görünümleri](../../data/record-views-mfc-data-access.md)makalesinde "Kayıt Görünümü Tasarlama ve Oluşturma" bölümüne bakın. Kayıt görünümleri nasıl çalıştığı ve bunların nasıl kullanılacağı hakkında daha fazla bilgi için [Kayıt Görünümü Kullanma](../../data/using-a-record-view-mfc-data-access.md)makalesine bakın. Yukarıda belirtilen tüm makaleler hem `CRecordView` `CDaoRecordView`de geçerlidir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CView](../../mfc/reference/cview-class.md)
+[Cview](../../mfc/reference/cview-class.md)
 
-[CScrollView](../../mfc/reference/cscrollview-class.md)
+[Cscrollview](../../mfc/reference/cscrollview-class.md)
 
-[CFormView](../../mfc/reference/cformview-class.md)
+[Cformview](../../mfc/reference/cformview-class.md)
 
 `CDaoRecordView`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdao.h
+**Üstbilgi:** afxdao.h
 
-##  <a name="cdaorecordview"></a>  CDaoRecordView::CDaoRecordView
+## <a name="cdaorecordviewcdaorecordview"></a><a name="cdaorecordview"></a>CDaoRecordView::CDaoRecordView
 
-Bir türde bir nesne oluşturduğunuzda, türetilen `CDaoRecordView`, görünüm nesnesini başlatır ve görünüm tabanlı iletişim kaynağı tanımlamak için oluşturucu biçimindeki çağırın.
+Türetilen bir tür bir nesne `CDaoRecordView`oluşturduğunuzda, görünüm nesnesini başlatmaya ve görünümün dayandığı iletişim kaynağını tanımlamak için yapı oluşturucunun her iki formunu da arayın.
 
 ```
 explicit CDaoRecordView(LPCTSTR lpszTemplateName);
@@ -101,28 +101,28 @@ explicit CDaoRecordView(UINT nIDTemplate);
 ### <a name="parameters"></a>Parametreler
 
 *lpszTemplateName*<br/>
-Bir iletişim şablonunu kaynak adı null ile sonlandırılmış bir dize içerir.
+İletişim şablonu kaynağının adı olan null-sonlandırılan bir dize içerir.
 
 *nIDTemplate*<br/>
-Bir iletişim şablonunu kaynak kimliği numarasını içerir.
+İletişim şablonu kaynağının kimlik numarasını içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak adı (pass bağımsız değişkeni olarak bir dize oluşturucuya) veya kendi Kimliğini (pass bağımsız değişkeni olarak bir işaretsiz tamsayı) ya da tespit edebilirsiniz. Bir kaynağı kullanarak kimliği önerilir.
+Kaynağı ada göre tanımlayabilir (bir dizeyi oluşturucuya bağımsız değişken olarak geçirin) veya kimliğiyle (bağımsız değişken olarak imzasız bir tamsayı geçirin). Kaynak kimliği kullanılması önerilir.
 
 > [!NOTE]
->  Türetilmiş sınıfınızın kendi Oluşturucusu sağlamanız gerekir. Türetilmiş sınıfınızın oluşturucuda oluşturucusunu `CDaoRecordView::CDaoRecordView` kaynak adı veya kimliği bağımsız değişken olarak.
+> Türemiş sınıfınız kendi oluşturucusu sağlamalıdır. Türemiş sınıfınızın oluşturucusunda, `CDaoRecordView::CDaoRecordView` kaynak adı veya kimliği olan oluşturucuyu bağımsız değişken olarak arayın.
 
-`CDaoRecordView::OnInitialUpdate` çağrıları `CWnd::UpdateData`, çağıran `CWnd::DoDataExchange`. Bu ilk çağrı `DoDataExchange` bağlayan `CDaoRecordView` (dolaylı olarak) denetimleri `CDaoRecordset` alan ClassWizard tarafından oluşturulan veri üyeleri. Kadar da taban sınıfını çağırın, sonra bu veri üyeleri kullanılamaz `CFormView::OnInitialUpdate` üye işlevi.
+`CDaoRecordView::OnInitialUpdate`aramalar `CWnd::UpdateData`, `CWnd::DoDataExchange`hangi çağırır . Bu ilk `DoDataExchange` çağrı, `CDaoRecordView` denetimleri (dolaylı `CDaoRecordset` olarak) ClassWizard tarafından oluşturulan alan veri üyelerine bağlar. Bu veri üyeleri, taban sınıf `CFormView::OnInitialUpdate` üye işlevini aramadan sonra kullanılamaz.
 
 > [!NOTE]
->  ClassWizard kullanırsanız, sihirbazın tanımlayan bir **enum** değer `CDaoRecordView::IDD` Oluşturucu üye başlatma içinde listesinde kullanımları ve sınıf bildirimi içinde.
+> ClassWizard kullanırsanız, sihirbaz sınıf bildiriminde `CDaoRecordView::IDD` bir **enum** değeri tanımlar ve oluşturucu için üye başlatma listesinde kullanır.
 
 [!code-cpp[NVC_MFCDatabase#35](../../mfc/codesnippet/cpp/cdaorecordview-class_1.cpp)]
 
-##  <a name="isonfirstrecord"></a>  CDaoRecordView::IsOnFirstRecord
+## <a name="cdaorecordviewisonfirstrecord"></a><a name="isonfirstrecord"></a>CDaoRecordView::IsOnFirstRecord
 
-Bu kayıt görünümü ile ilişkili kayıt kümesi nesnesi bulunan ilk kayda geçerli kayıt olup olmadığını belirlemek için bu üye işlevini çağırın.
+Geçerli kaydın bu kayıt görünümüyle ilişkili kayıt kümesi nesnesindeki ilk kayıt olup olmadığını belirlemek için bu üye işlevi arayın.
 
 ```
 BOOL IsOnFirstRecord();
@@ -130,17 +130,17 @@ BOOL IsOnFirstRecord();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli kayıt kümesinde ilk kaydı ise sıfır olmayan; Aksi durumda 0.
+Geçerli kayıt kayıt kümesindeki ilk kayıtsa sıfır sız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ClassWizard tarafından yazılan komut güncelleştirme işleyicileri varsayılan kendi uygulamaları yazmak için yararlıdır.
+Bu işlev, ClassWizard tarafından yazılmış varsayılan komut güncelleştirme işleyicileri kendi uygulamalarını yazmak için yararlıdır.
 
-Kullanıcının ilk kayda geçerse framework devre dışı bırakır (örneğin, menü öğeleri veya araç çubuğu düğmeleri) herhangi bir kullanıcı arabirimi nesneleri ilk veya önceki kayda taşımak için sahip.
+Kullanıcı ilk kayda geçerse, çerçeve ilk veya önceki kayda geçmek için sahip olduğunuz kullanıcı arabirimi nesnelerini (örneğin, menü öğeleri veya araç çubuğu düğmeleri) devre dışı kılabilir.
 
-##  <a name="isonlastrecord"></a>  CDaoRecordView::IsOnLastRecord
+## <a name="cdaorecordviewisonlastrecord"></a><a name="isonlastrecord"></a>CDaoRecordView::IsOnLastRecord
 
-Bu kayıt görünümü ile ilişkili kayıt kümesi nesnesi son kayıtta geçerli kayıt olup olmadığını belirlemek için bu üye işlevini çağırın.
+Geçerli kaydın bu kayıt görünümüyle ilişkili kayıt kümesi nesnesindeki son kayıt olup olmadığını belirlemek için bu üye işlevi arayın.
 
 ```
 BOOL IsOnLastRecord();
@@ -148,18 +148,18 @@ BOOL IsOnLastRecord();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli kayıt kümesinde son kayıttır olursa sıfır dışı; Aksi durumda 0.
+Geçerli kayıt kayıt kümesindeki son kayıtsa sıfıra inme; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ClassWizard kayıttan diğerine taşımak için bir kullanıcı arabirimi desteklemek için yazar komut güncelleştirme işleyicileri varsayılan kendi uygulamaları yazmak için yararlıdır.
+Bu işlev, ClassWizard'ın kayıttan kayda geçmek için kullanıcı arabirimini desteklemek için yazdığı varsayılan komut güncelleştirme işleyicilerinin kendi uygulamalarını yazmak için yararlıdır.
 
 > [!CAUTION]
->  Görünüm kümesi son kullanıcı, taşınan kadar algılayabilir olmayabilir dışında bu işlevin sonucu güvenilirdir. Kullanıcı, kayıt görünümü İleri veya son kayda taşımak için herhangi bir kullanıcı arabirimi nesneleri mamtelemetrydisabled söyleyebilirsiniz önce en son kaydını taşınması gerekebilir. Kullanıcının son kaydı ve ardından geri son kayıt taşır (veya önceki), kayıt görünümü kümesinde kullanıcının konumunu izlemenize ve kullanıcı arabirimi nesneleri doğru bir şekilde devre dışı bırakabilirsiniz.
+> Bu işlevin sonucu, kullanıcı geçmiş taşıyınceye kadar görünümün kayıt kümesinin sonunu algılayamaması dışında güvenilirdir. Kayıt görünümü, bir sonraki veya son kayda geçmek için herhangi bir kullanıcı arabirimi nesnelerini devre dışı bırakmanız gerektiğini söyleyebilmek için kullanıcının son kaydın ötesine geçmesi gerekebilir. Kullanıcı son kaydı geçip son kayda (veya ondan önce) geri dönerse, kayıt görünümü kullanıcının kayıt kümesindeki konumunu izleyebilir ve kullanıcı arabirimi nesnelerini doğru şekilde devre dışı bırakabilirsiniz.
 
-##  <a name="ongetrecordset"></a>  CDaoRecordView::OnGetRecordset
+## <a name="cdaorecordviewongetrecordset"></a><a name="ongetrecordset"></a>CDaoRecordView::OnGetRecordset
 
-Bir işaretçi döndürür `CDaoRecordset`-türetilmiş bir nesneye kayıt görünümü ile ilişkili.
+Bir işaretçiyi `CDaoRecordset`kayıt görünümüyle ilişkili türetilmiş nesneye döndürür.
 
 ```
 virtual CDaoRecordset* OnGetRecordset() = 0;
@@ -167,17 +167,17 @@ virtual CDaoRecordset* OnGetRecordset() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir `CDaoRecordset`-başarıyla oluşturulmuş; tersi durumda nesne, türetilmiş bir nesneye bir NULL işaretçi.
+Nesne başarıyla `CDaoRecordset`oluşturulduysa, türetilmiş bir nesneye işaretçi; aksi takdirde bir NULL işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi oluşturmak veya bir kayıt kümesi nesnesi elde etmek için bir işaretçi döndürür geçersiz kılmanız gerekir. Kayıt görünümü sınıfınıza ClassWizard ile bildirirseniz, sihirbaz sizin için varsayılan geçersiz kılma yazar. ClassWizard'ın varsayılan uygulama, varsa, kayıt görünümü'nde depolanan kayıt kümesi işaretçi döndürür. Türünde bir kayıt kümesi nesnesi oluşturur, varsa çağrıları ve ClassWizard ile belirtilen kendi `Open` üye işlevi tabloyu veya sorguyu çalıştırmak için ve ardından nesneye bir işaretçi döndürür.
+Bir kayıt kümesi nesnesi oluşturmak veya elde etmek ve bir işaretçi döndürmek için bu üye işlevi geçersiz kılmanız gerekir. ClassWizard ile kayıt görünümü sınıfını bildirirseniz, sihirbaz sizin için varsayılan geçersiz kılma yazar. ClassWizard'ın varsayılan uygulaması, varsa kayıt görünümünde depolanan kayıt kümesi işaretçisini döndürür. Değilse, ClassWizard ile belirttiğiniz türün bir kayıt kümesi nesnesi inşa eder ve tabloyu açmak veya sorguyu çalıştırmak için `Open` üye işlevini çağırır ve sonra nesneye bir işaretçi döndürür.
 
-Daha fazla bilgi ve örnekler için bkz [kayıt görünümleri: Kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md).
+Daha fazla bilgi ve örnekler için Kayıt Görünümleri makalesine [bakın: Kayıt Görünümü kullanma.](../../data/using-a-record-view-mfc-data-access.md)
 
-##  <a name="onmove"></a>  CDaoRecordView::OnMove
+## <a name="cdaorecordviewonmove"></a><a name="onmove"></a>CDaoRecordView::OnMove
 
-Kayıt kümesi farklı bir kayda ve kayıt görünümü denetimlerinde alanlarını görüntülemek için bu üye işlevini çağırın.
+Kayıt kümesinde farklı bir kayda geçmek ve alanlarını kayıt görünümü denetimlerinde görüntülemek için bu üye işlevini çağırın.
 
 ```
 virtual BOOL OnMove(UINT nIDMoveCommand);
@@ -186,32 +186,32 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 ### <a name="parameters"></a>Parametreler
 
 *nIDMoveCommand*<br/>
-Aşağıdaki standart komut kimliği değerlerden biri:
+Aşağıdaki standart komut kimliği değerlerinden biri:
 
-- Kayıt kümesi bulunan ilk kayda ID_RECORD_FIRST taşıyın.
+- ID_RECORD_FIRST Kayıt setindeki ilk rekora geçin.
 
-- Kümesinde son kaydını ID_RECORD_LAST taşıyın.
+- ID_RECORD_LAST Kayıt setindeki son rekora geçin.
 
-- Sonraki kayıt kümesinde ID_RECORD_NEXT taşıyın.
+- ID_RECORD_NEXT Kayıt setinde bir sonraki kayda geçin.
 
-- Önceki kayıt kümesinde ID_RECORD_PREV taşıyın.
+- ID_RECORD_PREV Kayıt kümesindeki önceki rekora geçin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Taşıma başarılı olursa sıfır dışı; taşıma isteği reddedildi, aksi durumda 0.
+Hareket başarılı olduysa sıfırolmayan; aksi takdirde 0 taşıma isteği reddedildi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama uygun taşıma üye işlevini çağırır `CDaoRecordset` kayıt görünümü ile ilişkili nesne.
+Varsayılan uygulama, kayıt görünümüyle ilişkili `CDaoRecordset` nesnenin uygun Taşı üye işlevini çağırır.
 
-Varsayılan olarak, `OnMove` geçerli kayıt veri kaynağı için kullanıcı kayıt görünümünde değişmişse güncelleştirir.
+Varsayılan olarak, kullanıcı kayıt görünümünde değiştirdiyse, `OnMove` veri kaynağındaki geçerli kaydı güncelleştirir.
 
-Uygulama Sihirbazı, bir menü kaynağı ile ilk kaydı son kayda sonraki kayıt ve önceki kayıt menü öğesi oluşturur. İlk araç seçeneği seçerseniz, Uygulama Sihirbazı'nı bir araç çubuğu düğmeleri için şu komutları karşılık gelen de oluşturur.
+Uygulama Sihirbazı, İlk Kayıt, Son Kayıt, Sonraki Kayıt ve Önceki Kayıt menü öğelerini içeren bir menü kaynağı oluşturur. İlk Araç Çubuğu seçeneğini seçerseniz, Uygulama Sihirbazı da bu komutlara karşılık gelen düğmeleri içeren bir araç çubuğu oluşturur.
 
-Kümesinde son kaydını geçmiş taşırsanız, kayıt görünümü en son kaydını görüntülemek devam eder. Kayıt görünümü ilk kaydı geriye taşırsanız, ilk kaydı görüntülemek devam eder.
+Kayıt kümesindeki son kaydı geçerseniz, kayıt görünümü son kaydı görüntülemeye devam edin. İlk kaydın ötesine geçerseniz, kayıt görünümü ilk kaydı görüntülemeye devam edin.
 
 > [!CAUTION]
->  Çağırma `OnMove` kayıt kayıt içermeyen bir özel durum oluşturur. Uygun kullanıcı arabirimini güncelleştirme işleyici işlevi çağrısı — `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, veya `OnUpdateRecordPrev` — karşılık gelen önce kayıt herhangi bir kayıt olup olmadığını belirlemek için işlem taşıyın.
+> Kayıt `OnMove` kümesinde kayıt yoksa arama bir özel durum oluşturur. Kayıt kümesinde herhangi bir kayıt `OnUpdateRecordFirst` `OnUpdateRecordLast`olup `OnUpdateRecordNext`olmadığını `OnUpdateRecordPrev` belirlemek için ilgili taşıma işleminden önce uygun kullanıcı arabirimi güncelleştirme işleyicisi işlevini (, , , veya — ) çağırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -221,5 +221,5 @@ Kümesinde son kaydını geçmiş taşırsanız, kayıt görünümü en son kayd
 [CDaoTableDef Sınıfı](../../mfc/reference/cdaotabledef-class.md)<br/>
 [CDaoQueryDef Sınıfı](../../mfc/reference/cdaoquerydef-class.md)<br/>
 [CDaoDatabase Sınıfı](../../mfc/reference/cdaodatabase-class.md)<br/>
-[CDaoWorkspace Sınıfı](../../mfc/reference/cdaoworkspace-class.md)<br/>
+[CDaoWorkspace Sınıf](../../mfc/reference/cdaoworkspace-class.md)<br/>
 [CFormView Sınıfı](../../mfc/reference/cformview-class.md)

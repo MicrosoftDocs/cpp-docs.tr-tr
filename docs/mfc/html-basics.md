@@ -4,89 +4,89 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - HTML [MFC], about HTML
 ms.assetid: aab8ea9f-12d4-4bdd-a585-ac3124081a2a
-ms.openlocfilehash: 63a866786abc3b1eaa87a06492b43b1c9e354882
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6d3a692eab47a1309ee0248b51ab8563fb077d5a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263002"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377243"
 ---
 # <a name="html-basics"></a>HTML Temelleri
 
-Çoğu tarayıcısı HTML kaynağını göz sayfaları İnceleme özelliğine sahip. HTML (Köprü Metni İşaretleme Dili) etiket sayısı göreceğiniz kaynak görüntülediğinizde, açılı ayraçlar (<>) metin ile interspersed çevrelenerek.
+Çoğu tarayıcı, göz atmanız sayfaların HTML kaynağını inceleme özelliğine sahiptir. Kaynağı görüntülediğinizde, metinle serpiştirilmiş açı parantezi(<>) ile çevrili bir dizi HTML (Hypertext biçimlendirme dili) etiketi görürsünüz.
 
-Aşağıdaki adımlar, basit bir Web sayfası oluşturmak için HTML etiketlerini kullanın. Bu adımlarda, Defteri'nde dosyasına düz metin yazın, birkaç değişiklik, dosyayı kaydedin ve yaptığınız değişiklikleri görmek için tarayıcıda, sayfayı yeniden yükleyin.
+Aşağıdaki adımlar, basit bir Web sayfası oluşturmak için HTML etiketlerini kullanır. Bu adımlarda, Not Defteri'ndeki bir dosyaya düz metin yazar, birkaç değişiklik yapar, dosyayı kaydeder ve sayfanızı tarayıcıda yeniden yükleyerek değişikliklerinizi görürsünüz.
 
-#### <a name="to-create-an-html-file"></a>Bir HTML dosyası oluşturmak için
+#### <a name="to-create-an-html-file"></a>HTML dosyası oluşturmak için
 
-1. Not Defteri'ni veya herhangi bir düz metin Düzenleyicisi'ni açın.
+1. Not Defteri'ni veya herhangi bir düz metin düzenleyiciyi açın.
 
-1. Gelen **dosya** menüsünde seçin **yeni**.
+1. **Dosya** menüsünden **Yeni'yi**seçin.
 
 1. Aşağıdaki satırları yazın:
 
-```
-<HTML>
-<HEAD>
-<TITLE>Top HTML Tags</TITLE>
-</HEAD>
-</HTML>
-```
+    ```html
+    <HTML>
+    <HEAD>
+    <TITLE>Top HTML Tags</TITLE>
+    </HEAD>
+    </HTML>
+    ```
 
-1. Gelen **dosya** menüsünde seçin **Kaydet**ve dosyayı c:\webpages\First.htm kaydedin. Dosya düzenleyicide açık bırakın.
+1. **Dosya** menüsünden **Kaydet'i**seçin ve dosyayı c:\webpages\First.htm olarak kaydedin. Dosyayı düzenleyicide açık bırakın.
 
-1. Gelen ve tarayıcınız, anahtar **dosya** menüsünde seçin **açık**, veya tür *file://C:/webpages/first.htm* tarayıcının URL'si düzenleme kutusuna. Pencere başlığı "Üst HTML etiketleri" ile boş bir sayfa görmeniz gerekir
+1. Tarayıcınıza geçin ve **Dosya** menüsünden **Tarayıcının**URL'si için file://C:/webpages/first.htm aç'ı seçin veya *file://C:/webpages/first.htm* yazın. Pencere başlığı "Üst HTML Etiketleri" ile boş bir sayfa görmeniz gerekir.
 
-   Etiketler halindedir ve köşeli ayraçlar içine dahil dikkat edin. Etiketler büyük küçük harfe duyarlı değildir, ancak büyük/küçük harf genellikle göze etiketleri oluşturmak için kullanılır.
+   Etiketlerin eşleştirilmiş ve açı braketlerine dahil olduğuna dikkat edin. Etiketler büyük/küçük harf duyarlı değildir, ancak büyük harf genellikle etiketleri öne yapmak için kullanılır.
 
-   Etiket \<HTML > belge ve etiket başlar \</HTML > Bu da sona erer. Bitiş etiketleri (her zaman gerekli değil) başlangıç etiketi ile aynıdır, ancak bir eğik çizgi (/) etiketi önünde sahip. Açılı ayraç (<) ve etiket alanınızda başlangıcı arasındaki boşluk olmamalıdır.
+   HTML \<etiketi> belgeyi başlatır \<ve /HTML> etiketi belgeyi sona erdirer. Bitiş etiketleri (her zaman gerekli değildir) başlangıç etiketiyle aynıdır, ancak etiketin önünde ileri eğik çizgi (/) bulunur. Açı braketi (<) ile etiketinizin başlangıcı arasında boşluk olmamalıdır.
 
-1. Anahtarı not defteri dönün ve sonra  \< /HEAD > Satır, yazın:
+1. Not Defteri'ne geri dön \<ve /HEAD> satırından sonra şunları yazın:
 
-```
-<BODY>
-    HTML is swell.
-    Life is good.
-</BODY>
-```
+    ```html
+    <BODY>
+        HTML is swell.
+        Life is good.
+    </BODY>
+    ```
 
-1. Gelen **dosya** menüsünde seçin **Kaydet**.
+1. **Dosya** menüsünden **Kaydet'i**seçin.
 
-1. Tarayıcıya geri dönün ve sayfayı yenileyin.
+1. Tarayıcınıza geri dön ve sayfayı yenileyin.
 
-   Sözcükler, tarayıcı penceresinin istemci alanında görünür. Satır başı göz ardı edilir dikkat edin. Satır sonu isterseniz içermelidir bir `<BR>` ilk satırdan etiketi.
+   Sözcükler tarayıcınızın penceresinin istemci alanında görünür. Taşıma nızın geri dönüşügöz ardı edilir dikkat edin. Satır sonu istiyorsanız, ilk satırdan sonra `<BR>` bir etiket eklemeniz gerekir.
 
-   Herhangi bir yere arasına metin Ekle, takip tüm adımlar için \<GÖVDESİ > ve  \< /BODY > belgenizin gövdesine eklenecek.
+   İzleyen tüm adımlar için, belgenizin \<gövdesine \<eklemek için METNI BODY> ve /BODY> arasına ekleyin.
 
-9. Bir üst bilgisi ekleyin:
+1. Üstbilgi ekleyin:
 
-```
-<H3>Here's the big picture</H3>
-```
+    ```html
+    <H3>Here's the big picture</H3>
+    ```
 
-10. Sayfanız aynı dizine kaydedilen .gif dosya kullanarak görüntü, ekleyin:
+1. Sayfanızla aynı dizinde kaydedilmiş bir .gif dosyasını kullanarak bir resim ekleyin:
 
-```
-<IMG src="yourfile.gif">
-```
+    ```html
+    <IMG src="yourfile.gif">
+    ```
 
-11. Bir listeye ekleyin:
+1. Liste ekle:
 
-```
-<UL>Make me an unordered list.
-<LI>One programmer</LI>
-<LI>Ten SDKs</LI>
-<LI>Great Internet Apps</LI>
-</UL>
-```
+    ```html
+    <UL>Make me an unordered list.
+    <LI>One programmer</LI>
+    <LI>Ten SDKs</LI>
+    <LI>Great Internet Apps</LI>
+    </UL>
+    ```
 
-12. Bunun yerine listenin sayı, kullanın eşleştirilmiş \<OL > ve \</OL > etiketleri yerine \<UL > ve \</UL > etiketleri.
+1. Bunun yerine listeyi \<numaralandırmak \< \<için, UL> ve /UL \<> etiketleri yerine eşleştirilmiş OL> ve /OL> etiketleri kullanın.
 
-Başlamanıza yardımcı olmak. Bir Web sayfasında harika bir özellik görürseniz, HTML kaynağını inceleyerek oluşturulma kullanıma bulabilirsiniz. HTML düzenleyicisi Microsoft ön sayfa gibi hem basit hem de Gelişmiş sayfaları oluşturmak için kullanılabilir.
+Bu seni işe bular. Bir Web sayfasında harika bir özellik görürseniz, HTML kaynağını inceleyerek nasıl oluşturulduğunu öğrenebilirsiniz. Microsoft Front Page gibi HTML düzenleyicileri hem basit hem de gelişmiş sayfalar oluşturmak için kullanılabilir.
 
-Tüm HTML kaynak oluşturmakta dosya için şu şekildedir:
+Oluşturmakta olduğunuz dosyanın tüm HTML kaynağı aşağıda verilmiştir:
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>Top HTML Tags</TITLE>
@@ -105,10 +105,10 @@ Life is good.
 </HTML>
 ```
 
-Etiketler, öznitelikleri ve uzantıları eksiksiz bir açıklaması için köprü metni işaretleme dili (HTML) belirtime bakın:
+Etiketlerin, özniteliklerin ve uzantıların tam açıklaması için, Hypertext Markup Language (HTML) belirtimine bakın:
 
-[En son yayımlanan sürümünü HTML](https://www.w3.org/TR/html/) W3C.org konumunda.
+[W3C.org'da HTML'nin en son yayınlanan sürümü.](https://www.w3.org/TR/html/)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
+[MFC İnternet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)

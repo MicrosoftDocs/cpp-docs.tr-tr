@@ -1,5 +1,5 @@
 ---
-title: COleMessageFilter sınıfı
+title: COleMessageFilter Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleMessageFilter
@@ -28,16 +28,16 @@ helpviewer_keywords:
 - COleMessageFilter [MFC], SetMessagePendingDelay
 - COleMessageFilter [MFC], SetRetryReply
 ms.assetid: b1fd1639-fac4-4fd0-bf17-15172deba13c
-ms.openlocfilehash: a06891f9413979895175808e109cc4abb7d75e09
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f6db5f012aedf08edd87980e304e181295bfb953
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224376"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374921"
 ---
-# <a name="colemessagefilter-class"></a>COleMessageFilter sınıfı
+# <a name="colemessagefilter-class"></a>COleMessageFilter Sınıfı
 
-OLE uygulamalarının etkileşimi tarafından gereken eşzamanlılığı yönetir.
+OLE uygulamalarının etkileşimi için gerekli eşzamanlılığı yönetir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,52 +49,52 @@ class COleMessageFilter : public CCmdTarget
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[COleMessageFilter::COleMessageFilter](#colemessagefilter)|Oluşturur bir `COleMessageFilter` nesne.|
+|[COleMessageFiltresi::COleMessageFiltresi](#colemessagefilter)|Bir `COleMessageFilter` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[COleMessageFilter::BeginBusyState](#beginbusystate)|Uygulama meşgul duruma geçer.|
-|[COleMessageFilter::EnableBusyDialog](#enablebusydialog)|Adlı bir uygulama meşgul olduğunda görüntülenen iletişim kutusunda devre dışı bırakır ve sağlar.|
-|[COleMessageFilter::EnableNotRespondingDialog](#enablenotrespondingdialog)|Adlı bir uygulama yanıt vermediğinde görüntülenen iletişim kutusunda devre dışı bırakır ve sağlar.|
-|[COleMessageFilter::EndBusyState](#endbusystate)|Uygulama meşgul durumu sonlandırır.|
-|[COleMessageFilter::OnMessagePending](#onmessagepending)|OLE çağrısı devam ederken işlemek için framework tarafından çağırılır.|
-|[COleMessageFilter::Register](#register)|İleti Filtresi OLE sistem DLL'lerini kaydeder.|
-|[COleMessageFilter::Revoke](#revoke)|OLE sistem DLL'lerini ileti filtrenin kaydı iptal eder.|
-|[COleMessageFilter::SetBusyReply](#setbusyreply)|OLE çağrısı meşgul uygulamanın yanıt belirler.|
-|[COleMessageFilter::SetMessagePendingDelay](#setmessagependingdelay)|Uygulama yanıt OLE çağrısı ne kadar bekleyeceğini belirler.|
-|[COleMessageFilter::SetRetryReply](#setretryreply)|Çağıran uygulamanın yanıt meşgul bir uygulamaya belirler.|
+|[COleMessageFiltre::BeginBusyState](#beginbusystate)|Uygulamayı meşgul durumuna getirir.|
+|[COleMessageFilter::EnableBusyDialog](#enablebusydialog)|Çağrılan bir uygulama meşgul olduğunda görünen iletişim kutusunu etkinleştirir ve devre dışı kılabilir.|
+|[COleMessageFilter::EnableNotRespondingDialog](#enablenotrespondingdialog)|Çağrılan bir uygulama yanıt vermiyorsa görünen iletişim kutusunu etkinleştirir ve devre dışı kılabilir.|
+|[COleMessageFiltresi::EndBusyState](#endbusystate)|Uygulamanın meşgul durumunu sona erdirir.|
+|[COleMessageFilter::OnMessagePending](#onmessagepending)|OLE çağrısı devam ederken iletileri işlemek için çerçeve tarafından çağrılır.|
+|[COleMessageFilter::Kayıt](#register)|İleti filtresini OLE sistemi DL'lerine kaydeder.|
+|[COleMessageFilter::İptal](#revoke)|İleti filtresinin OLE sistemi DL'leri ile kaydını iptal eder.|
+|[COleMessageFiltresi::SetBusyReply](#setbusyreply)|Meşgul uygulamanın Bir OLE çağrısına yanıtını belirler.|
+|[COleMessageFiltresi::SetMessagePendingDelay](#setmessagependingdelay)|Uygulamanın Bir OLE çağrısına yanıt için ne kadar bekleyeceğini belirler.|
+|[COleMessageFiltresi::SetRetryYanıtla](#setretryreply)|Arama uygulamasının meşgul bir uygulamaya yanıtını belirler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`COleMessageFilter` Sınıfı, görsel düzenleme sunucusu ve kapsayıcı uygulamaları, aynı zamanda OLE Otomasyon uygulamaları kullanışlıdır. Çağrıldığını sunucu uygulamaları için bu sınıf, böylece diğer kapsayıcı uygulamalardan gelen çağrıları iptal edildi veya daha sonra yeniden uygulamayı "meşgul" yapmak için kullanılabilir. Bu sınıf, çağrılan uygulama meşgul olduğunda çağıran bir uygulama tarafından gerçekleştirilecek eylemi belirlemek için de kullanılabilir.
+Sınıf, `COleMessageFilter` görsel düzenleme sunucusu ve kapsayıcı uygulamalarının yanı sıra OLE otomasyon uygulamalarında da yararlıdır. Çağrılan sunucu uygulamaları için, bu sınıf uygulamayı "meşgul" yapmak için kullanılabilir, böylece diğer kapsayıcı uygulamalarından gelen çağrılar iptal edilir veya daha sonra yeniden denenmiştir. Bu sınıf, çağrılan uygulama meşgul olduğunda bir arama uygulaması tarafından yapılacak eylemi belirlemek için de kullanılabilir.
 
-Yaygın kullanım çağırmak bir sunucu uygulaması için olan [BeginBusyState](#beginbusystate) ve [EndBusyState](#endbusystate) ne zaman, bir belge veya diğer OLE erişilebilir nesne yok edileceği için tehlikeli olabilir. İçinde bu çağrıları yapılan [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#onidle) sırasında kullanıcı arabirimi güncelleştirmeleri.
+Bir sunucu uygulamasının, bir belgenin veya diğer OLE erişilebilir nesnenin yok edilmesinin tehlikeli olacağı durumlarda [BeginBusyState](#beginbusystate) ve [EndBusyState'i](#endbusystate) araması yaygın olarak kullanılabilir. Bu aramalar [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#onidle) kullanıcı arabirimi güncellemeleri sırasında yapılır.
 
-Varsayılan olarak, bir `COleMessageFilter` nesne, uygulama başlatıldığında ayrılır. İle alınabilir [AfxOleGetMessageFilter](application-control.md#afxolegetmessagefilter).
+Varsayılan olarak, `COleMessageFilter` uygulama baş harfe çevrilir bir nesne ayrılır. [AfxOleGetMessageFilter](application-control.md#afxolegetmessagefilter)ile alınabilir.
 
-Bu gelişmiş bir sınıftır; nadiren ile doğrudan çalışmanız gerekiyor.
+Bu gelişmiş bir sınıftır; nadiren doğrudan çalışmak gerekir.
 
-Daha fazla bilgi için bkz [sunucuları: Sunucu uygulama](../../mfc/servers-implementing-a-server.md).
+Daha fazla bilgi için, makale [Sunucular bakın: Bir Sunucu uygulama.](../../mfc/servers-implementing-a-server.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
 `COleMessageFilter`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxole.h
+**Üstbilgi:** afxole.h
 
-##  <a name="beginbusystate"></a>  COleMessageFilter::BeginBusyState
+## <a name="colemessagefilterbeginbusystate"></a><a name="beginbusystate"></a>COleMessageFiltre::BeginBusyState
 
-Meşgul bir durum başlamak için bu işlevi çağırın.
+Meşgul bir durum başlatmak için bu işlevi arayın.
 
 ```
 virtual void BeginBusyState();
@@ -102,23 +102,23 @@ virtual void BeginBusyState();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle birlikte çalıştığını [EndBusyState](#endbusystate) uygulamanın meşgul durumu denetlemek için. İşlev [SetBusyReply](#setbusyreply) meşgul olduğunda, uygulamalar için uygulamanın yanıt belirler.
+Uygulamanın yoğun durumunu denetlemek için [EndBusyState](#endbusystate) ile birlikte çalışır. [SetBusyReply](#setbusyreply) işlevi, meşgul olduğunda uygulamanın arama uygulamalarına yanıtını belirler.
 
-`BeginBusyState` Ve `EndBusyState` çağrıları artırmak ve sırasıyla uygulama meşgul olup olmadığını belirleyen bir sayaç azaltma. Örneğin, iki için çağırdığı `BeginBusyState` ve çağrı `EndBusyState` hala meşgul bir durum sonuçlanır. Bu çağrı için gerekli meşgul bir durum iptal etmek için `EndBusyState` aynı sayıda `BeginBusyState` çağrıldı.
+Ve `BeginBusyState` `EndBusyState` sırasıyla artış ve karar çağırır, uygulama meşgul olup olmadığını belirleyen bir sayaç. Örneğin, iki arama `BeginBusyState` ve bir `EndBusyState` arama hala meşgul bir durum neden. Meşgul bir durumu iptal etmek `EndBusyState` için aynı sayıda `BeginBusyState` kez çağrılması gerekir.
 
-Varsayılan olarak, çerçeve tarafından gerçekleştirilen boşta işleme sırasında meşgul duruma girer [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#onidle). Uygulama bildirimleri ON_COMMANDUPDATEUI işlerken boşta işleme tamamlandıktan sonra gelen çağrıları daha sonra işlenir.
+Varsayılan olarak, çerçeve CWinApp tarafından gerçekleştirilen boşta işleme sırasında meşgul durumuna [girer::OnIdle](../../mfc/reference/cwinapp-class.md#onidle). Uygulama bildirimleri ON_COMMANDUPDATEUI işlerken, boşta işleme tamamlandıktan sonra gelen aramalar daha sonra işlenir.
 
-##  <a name="colemessagefilter"></a>  COleMessageFilter::COleMessageFilter
+## <a name="colemessagefiltercolemessagefilter"></a><a name="colemessagefilter"></a>COleMessageFiltresi::COleMessageFiltresi
 
-Oluşturur bir `COleMessageFilter` nesne.
+Bir `COleMessageFilter` nesnesi oluşturur.
 
 ```
 COleMessageFilter();
 ```
 
-##  <a name="enablebusydialog"></a>  COleMessageFilter::EnableBusyDialog
+## <a name="colemessagefilterenablebusydialog"></a><a name="enablebusydialog"></a>COleMessageFilter::EnableBusyDialog
 
-İleti bekleyen gecikme süresi dolduğunda görüntülenen meşgul iletişim kutusu devre dışı bırakır ve sağlar (bkz [SetRetryReply](#setretryreply)) bir OLE çağrısı sırasında.
+İleti bekleyen gecikme süresi dolduğunda görüntülenen meşgul iletişim kutusunu etkinleştirir ve devre dışı katanır (Bkz. OLE çağrısı sırasında [SetRetryReply).](#setretryreply)
 
 ```
 void EnableBusyDialog(BOOL bEnableBusy = TRUE);
@@ -127,11 +127,11 @@ void EnableBusyDialog(BOOL bEnableBusy = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bEnableBusy*<br/>
-"Meşgul" iletişim kutusu etkin mi yoksa devre dışı mı olduğunu belirtir.
+"Meşgul" iletişim kutusunun etkin mi yoksa devre dışı mı olduğunu belirtir.
 
-##  <a name="enablenotrespondingdialog"></a>  COleMessageFilter::EnableNotRespondingDialog
+## <a name="colemessagefilterenablenotrespondingdialog"></a><a name="enablenotrespondingdialog"></a>COleMessageFilter::EnableNotRespondingDialog
 
-Sağlar ve bir klavye veya fare mesajı bekleme durumundaysa görüntülenen "vermiyor" iletişim kutusunda, devre dışı bırakır sırasında bir OLE çağrısı ve çağrısı zaman aşımına uğradı.
+OLE çağrısı sırasında klavye veya fare iletisi beklemedeyse ve arama zaman dolduysa görüntülenen "yanıt vermiyor" iletişim kutusunu etkinleştirer ve devre dışı katanır.
 
 ```
 void EnableNotRespondingDialog(BOOL bEnableNotResponding = TRUE);
@@ -140,11 +140,11 @@ void EnableNotRespondingDialog(BOOL bEnableNotResponding = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bEnableNotResponding*<br/>
-"Vermiyor" iletişim kutusu etkin mi yoksa devre dışı mı olduğunu belirtir.
+"Yanıt vermiyor" iletişim kutusunun etkin mi yoksa devre dışı mı bırakıldığını belirtir.
 
-##  <a name="endbusystate"></a>  COleMessageFilter::EndBusyState
+## <a name="colemessagefilterendbusystate"></a><a name="endbusystate"></a>COleMessageFiltresi::EndBusyState
 
-Meşgul bir durum sona erdirmek için bu işlevi çağırın.
+Yoğun bir durumu sona erdirmek için bu işlevi çağırın.
 
 ```
 virtual void EndBusyState();
@@ -152,15 +152,15 @@ virtual void EndBusyState();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle birlikte çalıştığını [BeginBusyState](#beginbusystate) uygulamanın meşgul durumu denetlemek için. İşlev [SetBusyReply](#setbusyreply) meşgul olduğunda, uygulamalar için uygulamanın yanıt belirler.
+Uygulamanın yoğun durumunu denetlemek için [BeginBusyState](#beginbusystate) ile birlikte çalışır. [SetBusyReply](#setbusyreply) işlevi, meşgul olduğunda uygulamanın arama uygulamalarına yanıtını belirler.
 
-`BeginBusyState` Ve `EndBusyState` çağrıları artırmak ve sırasıyla uygulama meşgul olup olmadığını belirleyen bir sayaç azaltma. Örneğin, iki için çağırdığı `BeginBusyState` ve çağrı `EndBusyState` hala meşgul bir durum sonuçlanır. Bu çağrı için gerekli meşgul bir durum iptal etmek için `EndBusyState` aynı sayıda `BeginBusyState` çağrıldı.
+Ve `BeginBusyState` `EndBusyState` sırasıyla artış ve karar çağırır, uygulama meşgul olup olmadığını belirleyen bir sayaç. Örneğin, iki arama `BeginBusyState` ve bir `EndBusyState` arama hala meşgul bir durum neden. Meşgul bir durumu iptal etmek `EndBusyState` için aynı sayıda `BeginBusyState` kez çağrılması gerekir.
 
-Varsayılan olarak, çerçeve tarafından gerçekleştirilen boşta işleme sırasında meşgul duruma girer [CWinApp::OnIdle](../../mfc/reference/cwinapp-class.md#onidle). Uygulama bildirimleri on_update_command_uı işlerken boşta işleme tamamlandıktan sonra gelen çağrıları işlenir.
+Varsayılan olarak, çerçeve CWinApp tarafından gerçekleştirilen boşta işleme sırasında meşgul durumuna [girer::OnIdle](../../mfc/reference/cwinapp-class.md#onidle). Uygulama bildirimleri ON_UPDATE_COMMAND_UI işlerken, boşta işleme tamamlandıktan sonra gelen aramalar işlenir.
 
-##  <a name="onmessagepending"></a>  COleMessageFilter::OnMessagePending
+## <a name="colemessagefilteronmessagepending"></a><a name="onmessagepending"></a>COleMessageFilter::OnMessagePending
 
-OLE çağrısı devam ederken işlemek için framework tarafından çağırılır.
+OLE çağrısı devam ederken iletileri işlemek için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnMessagePending(const MSG* pMsg);
@@ -169,21 +169,21 @@ virtual BOOL OnMessagePending(const MSG* pMsg);
 ### <a name="parameters"></a>Parametreler
 
 *pMsg*<br/>
-Bekleyen iletisi işaretçisi.
+Bekleyen iletiiçin işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; Aksi durumda 0.
+Sıfırsız başarı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran bir uygulama bir çağrı tamamlanması beklenirken framework çağırır `OnMessagePending` işaretçiyle bekleyen iletisi. Bir uzun süren bir çağrı sırasında penceresi güncelleştirmeleri gerçekleştirilmesi varsayılan olarak, çerçeve WM_PAINT iletileri gönderir.
+Bir arama uygulaması bir aramanın tamamlanmasını bekliyorsa, çerçeve bekleyen iletiye işaretçiyle çağırır. `OnMessagePending` Varsayılan olarak, çerçeve WM_PAINT iletileri gönderir, böylece pencere güncelleştirmeleri uzun zaman alan bir arama sırasında oluşabilir.
 
-Bir çağrı yoluyla, İleti Filtresi kaydetmelisiniz [kaydetme](#register) etkin olabilmesi için önce.
+İleti filtrenizi, etkin hale gelmeden önce [Kaydolmak](#register) için bir çağrı yoluyla kaydetmeniz gerekir.
 
-##  <a name="register"></a>  COleMessageFilter::Register
+## <a name="colemessagefilterregister"></a><a name="register"></a>COleMessageFilter::Kayıt
 
-İleti Filtresi OLE sistem DLL'lerini kaydeder.
+İleti filtresini OLE sistemi DL'lerine kaydeder.
 
 ```
 BOOL Register();
@@ -191,17 +191,17 @@ BOOL Register();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; Aksi durumda 0.
+Sıfırsız başarı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sistem DLL'lerini kayıtlı olduğu sürece bir ileti filtresi bir etkisi yoktur. Genellikle, uygulamanızın başlatma kodunu uygulama İleti Filtresi kaydeder. Program bir çağrı tarafından sonlandırılmadan önce uygulamanız tarafından kaydedilen diğer İleti Filtresi iptal edilip edilmeyeceğini [iptal](#revoke).
+İleti filtresi, sistem DL'lerine kayıtlı olmadığı sürece hiçbir etkisi yoktur. Genellikle uygulamanızın başlatma kodu uygulamanın ileti filtresini kaydeder. Uygulamanız tarafından kaydedilmiş diğer ileti filtresi, program [iptal](#revoke)etme çağrısıyla sona ermeden önce iptal edilmelidir.
 
-Varsayılan ileti filtre framework'ün otomatik olarak başlatma sırasında kayıtlı ve sonlandırma sırasında iptal edildi.
+Çerçevenin varsayılan ileti filtresi başlatma sırasında otomatik olarak kaydedilir ve sonlandırma sırasında iptal edilir.
 
-##  <a name="revoke"></a>  COleMessageFilter::Revoke
+## <a name="colemessagefilterrevoke"></a><a name="revoke"></a>COleMessageFilter::İptal
 
-Bir çağrı tarafından gerçekleştirilen bir önceki kaydı iptal eder [kaydetme](#register).
+[Kaydolmak](#register)için yapılan bir çağrı yla gerçekleştirilen önceki bir kaydı iptal eder.
 
 ```
 void Revoke();
@@ -209,13 +209,13 @@ void Revoke();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İleti filtresini, program sonlandırılmadan önce iptal edilmesi gerekir.
+Program sona ermeden önce bir ileti filtresi iptal edilmelidir.
 
-Oluşturulur ve framework tarafından otomatik olarak kayıtlı, varsayılan ileti filtresi da otomatik olarak iptal edilir.
+Çerçeve tarafından oluşturulan ve otomatik olarak kaydedilen varsayılan ileti filtresi de otomatik olarak iptal edilir.
 
-##  <a name="setbusyreply"></a>  COleMessageFilter::SetBusyReply
+## <a name="colemessagefiltersetbusyreply"></a><a name="setbusyreply"></a>COleMessageFiltresi::SetBusyReply
 
-Bu işlevi uygulamanın "meşgul yanıtı." ayarlar
+Bu işlev, uygulamanın "meşgul yanıtını" ayarlar.
 
 ```
 void SetBusyReply(SERVERCALL nBusyReply);
@@ -224,25 +224,25 @@ void SetBusyReply(SERVERCALL nBusyReply);
 ### <a name="parameters"></a>Parametreler
 
 *nBusyReply*<br/>
-Bir değer `SERVERCALL` COMPOBJ içinde tanımlanan sabit listesi. H Bunu, aşağıdaki değerlerden biri olabilir:
+COMPOBJ'de tanımlanan numaralandırmadan `SERVERCALL` bir değer. H. Aşağıdaki değerlerden herhangi birine sahip olabilir:
 
-- SERVERCALL_ISHANDLED uygulama çağrıları kabul edebilir, ancak belirli bir çağrı işlenirken başarısız olabilir.
+- SERVERCALL_ISHANDLED Uygulama aramaları kabul edebilir, ancak belirli bir aramayı işleme de başarısız olabilir.
 
-- SERVERCALL_REJECTED uygulamanın büyük olasılıkla hiçbir zaman bir çağrısı işleme mümkün olacaktır.
+- SERVERCALL_REJECTED Uygulama büyük olasılıkla bir aramayı asla işleyemeyecektir.
 
-- SERVERCALL_RETRYLATER uygulama geçici olarak bunu bir çağrı işlenemiyor bir durumda.
+- SERVERCALL_RETRYLATER Uygulama geçici olarak bir aramayı işleyemeyeceği bir durumdadır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[BeginBusyState](#beginbusystate) ve [EndBusyState](#endbusystate) işlevleri uygulamanın meşgul durumu denetleme.
+[BeginBusyState](#beginbusystate) ve [EndBusyState](#endbusystate) işlevleri uygulamanın meşgul durumunu denetler.
 
-Ne zaman bir uygulama yapılan bir çağrıyla meşgul `BeginBusyState`, son ayarı tarafından belirlenen bir değerle OLE sistem DLL'lerini çağrısına yanıt `SetBusyReply`. Çağıran uygulamanın bu meşgul yanıtı hangi eylemin yapılacağını belirlemek için kullanır.
+Bir uygulama bir çağrı ile meşgul `BeginBusyState`yapıldığında , o ole sistemi DLs gelen aramalara son ayarı tarafından belirlenen bir değer ile yanıt `SetBusyReply`verir. Arama uygulaması, hangi eylemin gerçekleşsüreceğini belirlemek için bu meşgul yanıtı kullanır.
 
-Varsayılan olarak, meşgul yanıtı SERVERCALL_RETRYLATER ' dir. Bu yanıt, çağıran uygulama çağrı mümkün olan en kısa sürede yeniden denemek neden olur.
+Varsayılan olarak, meşgul yanıtı SERVERCALL_RETRYLATER. Bu yanıt, arama uygulamasının aramayı mümkün olan en kısa sürede yeniden denemesine neden olur.
 
-##  <a name="setmessagependingdelay"></a>  COleMessageFilter::SetMessagePendingDelay
+## <a name="colemessagefiltersetmessagependingdelay"></a><a name="setmessagependingdelay"></a>COleMessageFiltresi::SetMessagePendingDelay
 
-Çağıran uygulamanın yanıt çağrılan uygulamadaki başka eyleme girişmeden önce ne kadar bekleyeceğini belirler.
+Arama uygulamasının daha fazla eylem yapmadan önce çağrılan uygulamadan yanıt için ne kadar bekleyeceğini belirler.
 
 ```
 void SetMessagePendingDelay(DWORD nTimeout = 5000);
@@ -251,15 +251,15 @@ void SetMessagePendingDelay(DWORD nTimeout = 5000);
 ### <a name="parameters"></a>Parametreler
 
 *nTimeout*<br/>
-İleti bekleyen gecikme süresini milisaniye sayısı.
+İleti bekleyen gecikme için milisaniye sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev uyumlu bir şekilde çalışır [SetRetryReply](#setretryreply).
+Bu fonksiyon [SetRetryReply](#setretryreply)ile birlikte çalışır.
 
-##  <a name="setretryreply"></a>  COleMessageFilter::SetRetryReply
+## <a name="colemessagefiltersetretryreply"></a><a name="setretryreply"></a>COleMessageFiltresi::SetRetryYanıtla
 
-Adlı bir uygulamadan meşgul yanıtı aldığında çağıran uygulama eylemi belirler.
+Çağrılan bir uygulamadan yoğun yanıt aldığında arama uygulamasının eylemini belirler.
 
 ```
 void SetRetryReply(DWORD nRetryReply = 0);
@@ -267,22 +267,22 @@ void SetRetryReply(DWORD nRetryReply = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*nRetryReply*<br/>
-Yeniden denemeler arasındaki milisaniye sayısı.
+*nRetryYanıtla*<br/>
+Yeniden denemeler arasında milisaniye sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Adlı bir uygulama meşgul olduğunu gösteriyorsa, çağıran uygulama sunucusu artık meşgul hemen yeniden deneyin ya da belirtilen bir süre sonra yeniden deneyin kadar bekleyin karar verebilirsiniz. Çağrı tamamen iptal etmek de karar verebilirsiniz.
+Çağrılan bir uygulama meşgul olduğunu gösterdiğinde, arama uygulaması sunucunun artık meşgul olmamasını, hemen yeniden denemesini veya belirli bir aradan sonra yeniden denemesini beklemeye karar verebilir. Ayrıca aramayı tamamen iptal etmeye karar verebilir.
 
-Çağıranın yanıt işlevleri tarafından denetlenir `SetRetryReply` ve [SetMessagePendingDelay](#setmessagependingdelay). `SetRetryReply` çağıran uygulamanın belirli bir çağrı için yeniden denemeler arasında ne kadar beklemesi gerektiğini belirler. `SetMessagePendingDelay` çağıran uygulama sunucusundan bir yanıt için başka bir eylemde bulunmadan önce bekleyeceği süreyi belirler.
+Arayanın yanıtı işlevler `SetRetryReply` ve [SetMessagePendingDelay](#setmessagependingdelay)tarafından denetlenir. `SetRetryReply`arama uygulamasının belirli bir arama için yeniden denemeler arasında ne kadar beklemesi gerektiğini belirler. `SetMessagePendingDelay`arama uygulamasının daha fazla işlem yapmadan önce sunucudan yanıt almayı ne kadar beklediğini belirler.
 
-Genellikle, Varsayılanları kabul edilir ve değiştirilmesi gerekmez. Çerçeve çağrı yeniden deneme her *nRetryReply* iletisi bekleyen gecikme süresi doldu veya çağrı geçtiği kadar milisaniye. Bir değer için 0 *nRetryReply* hemen yeniden ve - 1 iptal çağrısı belirtir.
+Genellikle varsayılanlar kabul edilebilir ve değiştirilmesi gerekmez. Çerçeve, arama geçene veya ileti bekleyen gecikme süresi dolana kadar her *nRetryReply* milisaniye aramasını yeniden dener. *nRetryReply* için 0 değeri hemen yeniden deneme belirtir ve - 1 aramanın iptalini belirtir.
 
-Ne zaman ileti bekleyen gecikme süresi, "meşgul iletişim kutusu" OLE (bkz [COleBusyDialog](../../mfc/reference/colebusydialog-class.md)) kullanıcı iptal etme veya çağrıyı yeniden denemesi seçebilmeniz görüntülenir. Çağrı [EnableBusyDialog](#enablebusydialog) etkinleştirme veya bu iletişim kutusunu devre dışı.
+İleti bekleyen gecikme süresi dolduğunda, kullanıcının aramayı iptal etmeyi veya yeniden denemeyi seçebilmeleri için OLE "meşgul iletişim kutusu" [(COleBusyDialog'a](../../mfc/reference/colebusydialog-class.md)bakın) görüntülenir. Bu iletişim kutusunu etkinleştirmek veya devre dışı kakmak için [EnableBusyDialog'u](#enablebusydialog) arayın.
 
-Klavye veya fare bir ileti olduğunda bekleyen bir çağrı ve çağrı sırasında zaman aşımına uğradı (ileti bekleyen gecikme aşıldı), "vermiyor" iletişim kutusu görüntülenir. Çağrı [EnableNotRespondingDialog](#enablenotrespondingdialog) etkinleştirme veya bu iletişim kutusunu devre dışı. Genellikle bu durumu, bir sorun oluştu ve kullanıcı sabırsız alma gösterir.
+Arama sırasında klavye veya fare iletisi beklemedeyken ve arama zaman aşımına uğradı (ileti bekleyen gecikmeyi aştı), "yanıt vermiyor" iletişim kutusu görüntülenir. Bu iletişim kutusunu etkinleştirmek veya devre dışı kakmak için [EnableNotRespondingDialog'u](#enablenotrespondingdialog) arayın. Genellikle bu durum bir şeylerin ters gittiğini ve kullanıcının sabırsızlaştığını gösterir.
 
-İletişim kutularını devre dışı bırakıldığında geçerli "yeniden deneme yanıt" her zaman çağrılar yoğun uygulamalar için kullanılır.
+İletişim araçları devre dışı bırakıldığında, geçerli "yeniden deneme yanıtı" her zaman meşgul uygulamalara yapılan aramalar için kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

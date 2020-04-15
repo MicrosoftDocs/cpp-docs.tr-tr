@@ -12,19 +12,19 @@ helpviewer_keywords:
 - static linking [C++]
 - libraries [C++], application deployment issues
 ms.assetid: fd8eb956-f4a0-4ffb-b401-328c73e66986
-ms.openlocfilehash: e2281effaa94c32454e88100c8b7020961f748d9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 633b76458fdc24ef9ba551d8209c5c99720df37e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514835"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377402"
 ---
 # <a name="choosing-a-deployment-method"></a>Dağıtım Yöntemi Seçme
 
-Görsel C++ uygulamanız kendi içinde ve bir Copy komutu kullanılarak dağıtılırsa, dağıtım için Windows Installer kullanmanızı öneririz. Windows Installer yükleme, onarım ve kaldırma işlemlerini ve ayrıca uygulama dosyalarının, bağımlılıkların ve kayıt defteri girişlerinin atomik güncelleştirilmesini destekler.
+Visual C++ uygulamanız bağımsız değilse ve bir kopya komutu kullanılarak dağıtılamıyorsa, dağıtım için Windows Installer'ı kullanmanızı öneririz. Windows Installer yükleme, onarım ve kaldırma işlemlerini ve ayrıca uygulama dosyalarının, bağımlılıkların ve kayıt defteri girişlerinin atomik güncelleştirilmesini destekler. 
 
 > [!NOTE]
->  Visual [](/visualstudio/deployment/clickonce-security-and-deployment) Studio 'da Visual C++ Native uygulamalar için ClickOnce dağıtımı mümkün olsa da, ek adımlar gerektirir. Daha fazla bilgi için bkz. [Visual C++ uygulamaları için ClickOnce dağıtımı](clickonce-deployment-for-visual-cpp-applications.md).
+> Visual Studio'da Visual C++ yerel uygulamaları için [ClickOnce](/visualstudio/deployment/clickonce-security-and-deployment) dağıtımı mümkün olsa da, ek adımlar gerekir. Daha fazla bilgi için [Visual C++ Uygulamaları için ClickOnce Dağıtım'a](clickonce-deployment-for-visual-cpp-applications.md)bakın.
 
 ## <a name="visual-c-libraries-are-shared-dlls"></a>Visual C++ Kitaplıkları Paylaşılan DLL'lerdir
 
@@ -34,22 +34,22 @@ Visual C++ kitaplıkları Visual Studio yükleyicisi tarafından %windir%\system
 
 Dağıtımlarınızda, yeniden dağıtım için lisanslı herhangi bir Visual C++ kitaplığı sürümünü yeniden dağıtabilirsiniz. Bunları dağıtmanın üç yolu vardır:
 
-- Visual C++ kitaplıklarını%Windir%\System32\\içinde paylaşılan DLL 'ler olarak yükleyecek olan yeniden dağıtılabilir paketleri kullanarak merkezi dağıtım. (Bu klasöre yüklemek için yönetici hakları gerekir.) Uygulamanızı hedef bilgisayara yüklemeden önce yeniden dağıtılabilir paketi çalıştıran bir komut dosyası veya kurulum programı oluşturabilirsiniz. Yeniden dağıtılabilir paketler x 86, x 64 ve ARM platformları (VCRedist_x86.exe, VCRedist_x64.exe veya VCRedist_arm.exe) için kullanılabilir. Visual Studio,% ProgramFiles (x86)% \ `version`Microsoft Visual Studio \vc\redist\\`locale ID`\\içindeki paketleri içerir. Bunları [Microsoft Indirme merkezi](https://www.microsoft.com/download)' nden de indirebilirsiniz. (Uygulama ile eşleşen "Visual C++ yeniden dağıtılabilir paket *Visual Studio sürümünü ve güncelleştirmesini*" aramak için indirme merkezi 'ndeki arama kutusunu kullanın. Örneğin, uygulamanızı derlemek için Visual Studio 2015 güncelleştirme 3 kullandıysanız, "Visual C++ yeniden dağıtılabilir paket 2015 güncelleştirme 3" ifadesini aratın.) Yeniden dağıtılabilir paket kullanma hakkında daha fazla bilgi için bkz [. İzlenecek yol: Görsel C++ C++ yeniden dağıtılabilir paketi](deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md)kullanarak görsel uygulama dağıtma.
+- Visual C++ kitaplıklarını %windir%\system32'de\\paylaşılan DL'ler olarak yükleyen yeniden dağıtılabilir paketler kullanarak merkezi dağıtım. (Bu klasöre yükleme yönetici hakları gerektirir.) Uygulamanızı hedef bilgisayara yüklemeden önce yeniden dağıtılabilir paketi çalıştıran bir komut dosyası veya kurulum programı oluşturabilirsiniz. Yeniden dağıtılabilir paketler x 86, x 64 ve ARM platformları (VCRedist_x86.exe, VCRedist_x64.exe veya VCRedist_arm.exe) için kullanılabilir. Visual Studio bu paketleri %ProgramFiles(x86)%\Microsoft `version`Visual Studio\\`locale ID`\\\VC\Redist'te içerir. Ayrıca [Microsoft Download Center'dan](https://www.microsoft.com/download)da indirebilirsiniz. (Uygulamanızla eşleşen "Visual C++ Yeniden Dağıtılabilir Paket Görsel Stüdyosu sürümünü ve *güncellemeyi*" aramak için İndirme Merkezi'ndeki arama kutusunu kullanın. Örneğin, uygulamanızı oluşturmak için Visual Studio 2015 update 3'u kullandıysanız, "Visual C++ Yeniden Dağıtılabilir Paket 2015 güncelleştirmesi 3" aramasını yapın.) Yeniden dağıtılabilir bir paketin nasıl kullanılacağı hakkında bilgi için Bkz. [Walkthrough: Visual C++ Yeniden Dağıtılabilir Paketi Kullanarak Visual C++ Uygulamasını Dağıtma](deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md).
 
-- Her biri özel bir görsel C++ kitaplığı%windir%\System32\\içinde paylaşılan DLL olarak yüklediği birleştirme modüllerini kullanarak merkezi dağıtım. (Bu klasöre yüklemek için yönetici hakları gerekir.) Birleştirme modülleri uygulamanız için .msi yükleyicisinin bir parçası haline gelir. Visual C++ yeniden dağıtılabilir birleştirme modülleri, Visual Studio 'Da \Program Files (x86) \Common Files\merge modüllerinde\\bulunur. Daha fazla bilgi için bkz. [birleştirme modüllerini kullanarak yeniden dağıtma](redistributing-components-by-using-merge-modules.md).
+- Her biri %windir%\system32'de\\paylaşılan bir DLL olarak belirli bir Visual C++ kitaplığını yükleyen birleştirme modülleri kullanarak merkezi dağıtım. (Bu klasöre yükleme yönetici hakları gerektirir.) Birleştirme modülleri, uygulamanız için .msi yükleyici dosyasının bir parçası haline gelir. Visual C++ yeniden dağıtılabilir birleştirme modülleri Visual Studio'da, \Program Dosyaları 'nda (x86)\Ortak Dosyalar\Birleştirme Modülleri\\dahildir. Daha fazla bilgi için, [Birleştirme Modüllerini Kullanarak Yeniden Dağıtma'ya](redistributing-components-by-using-merge-modules.md)bakın.
 
-- C++ Visual Studio yüklemenizin belirli görsel dll 'lerini (genellikle \Program Files (x86) \Microsoft Visual Studio `version`\vc\redist\\`platform`\\`library`\ içinde kopyaladığınız yerel dağıtım. — ve bunları hedef bilgisayarlara uygulama yürütülebiliri ile aynı klasöre yükler. Yönetici hakları olmayan kullanıcıların yükleme yapabilmesini sağlamak veya bir ağ paylaşımından çalıştırılabilen uygulamalar için bu dağıtım yöntemini kullanabilirsiniz.
+- Visual Studio yüklemenizden belirli Visual C++ DLL'leri kopyaladığınızı ve genellikle \Program Dosyaları (x86)\Microsoft\\`platform`\\`library`Visual Studio `version`\VC\Redist \— ve bunları yürütülebilir uygulamayla aynı klasördeki hedef bilgisayarlara yükleyin. Yönetici hakları olmayan kullanıcıların yükleme yapabilmesini sağlamak veya bir ağ paylaşımından çalıştırılabilen uygulamalar için bu dağıtım yöntemini kullanabilirsiniz.
 
-Bir dağıtım yeniden dağıtılabilir birleştirme modülleri kullanıyorsa ve bir yükleme, yönetici haklarına sahip olmayan bir kullanıcı tarafından çalıştırıldığında, görsel C++ dll 'ler yüklenmez ve uygulama çalışmaz. Ayrıca, kullanıcı başına esasına göre yüklemeye izin veren birleştirme modülleriyle derlenmiş uygulama yükleyicileri, kitaplıkları, tüm sistem kullanıcılarını etkileyen bir paylaşılan konuma yükler. Gerekli görsel C++ dll 'leri, diğer kullanıcıları etkilemeden veya yönetici hakları gerektirmeden, belirli bir kullanıcının uygulamasının dizinine yüklemek için yerel dağıtım kullanabilirsiniz. Bu, bakım sorunları oluşturabileceğinden, Visual C++ yeniden dağıtılabilir DLL 'lerin yerel dağıtımını önermiyoruz.
+Dağıtım yeniden dağıtılabilir birleştirme modülleri kullanırsa ve yükleme yönetim hakları olmayan bir kullanıcı tarafından çalıştırılırsa, Visual C++ DLL'ler yüklenmez ve uygulama çalışmaz. Ayrıca, kullanıcı başına esasına göre yüklemeye izin veren birleştirme modülleriyle derlenmiş uygulama yükleyicileri, kitaplıkları, tüm sistem kullanıcılarını etkileyen bir paylaşılan konuma yükler. Diğer kullanıcıları etkilemeden veya yönetici hakları gerektirmeden, belirli bir kullanıcının uygulamasının dizinine gerekli Visual C++ DLL'leri yüklemek için yerel dağıtımı kullanabilirsiniz. Bu, hizmet verebilirlik sorunları oluşturabileceğinden, Visual C++ yeniden dağıtılabilir DL'lerin yerel olarak dağıtılmasını önermiyoruz.
 
-Visual C++ kitaplıklarının yanlış dağıtılması, onlara bağımlı olan bir uygulamanın çalıştırılması esnasında çalışma zamanı hatalarına neden olabilir. İşletim sistemi uygulamayı yüklediğinde, [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw)bölümünde açıklanan arama sırasını kullanır.
+Visual C++ kitaplıklarının yanlış dağıtılması, onlara bağımlı olan bir uygulamanın çalıştırılması esnasında çalışma zamanı hatalarına neden olabilir. İşletim sistemi uygulamayı yüklerken, [LoadLibraryEx'te](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw)açıklanan arama sırasını kullanır.
 
 ## <a name="dynamic-linking-is-better-than-static-linking"></a>Dinamik Bağlama Statik Bağlamadan İyidir
 
-Görsel C++ kitaplıkları yeniden dağıttığınızda statik bağlama yapmaktan kaçınmanızı öneririz. Statik bağlama uygulama performansını neredeyse hiçbir zaman önemli ölçüde artırmamasına karşın, bakım uygulamalarını hemen her zaman daha pahalı kılar. Örneğin, güvenlik iyileştirmeleriyle güncelleştirilmiş bir kitaplığa statik olarak bağlı bir uygulama düşünün; uygulama yeniden derlenmediği ve yeniden dağıtılmadığı sürece bir fayda sağlayamaz. Bunun yerine, uygulamalarınızı bağlı oldukları kitaplıklar ile dinamik olarak ilişkilendirmenizi öneririz; böylece kitaplıklar dağıtıldıkları her konumda güncelleştirilebilirler.
+Visual C++ kitaplıklarını yeniden dağıttığınızda statik bağlantıdan kaçınmanızı öneririz. Statik bağlama uygulama performansını neredeyse hiçbir zaman önemli ölçüde artırmamasına karşın, bakım uygulamalarını hemen her zaman daha pahalı kılar. Örneğin, güvenlik iyileştirmeleriyle güncelleştirilmiş bir kitaplığa statik olarak bağlı bir uygulama düşünün; uygulama yeniden derlenmediği ve yeniden dağıtılmadığı sürece bir fayda sağlayamaz. Bunun yerine, uygulamalarınızı bağlı oldukları kitaplıklar ile dinamik olarak ilişkilendirmenizi öneririz; böylece kitaplıklar dağıtıldıkları her konumda güncelleştirilebilirler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Masaüstü uygulamaları dağıtma](deploying-native-desktop-applications-visual-cpp.md)<br>
+[Masaüstü Uygulamalarını Dağıtma](deploying-native-desktop-applications-visual-cpp.md)<br>
 [ClickOnce Güvenliği ve Dağıtımı](/visualstudio/deployment/clickonce-security-and-deployment)<br>
 [Dağıtım Örnekleri](deployment-examples.md)

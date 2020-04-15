@@ -1,5 +1,5 @@
 ---
-title: CAnimationVariableIntegerChangeHandler Class
+title: CAnimationVariableIntegerChangeHandler Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAnimationVariableIntegerChangeHandler
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CAnimationVariableIntegerChangeHandler [MFC], OnIntegerValueChanged
 - CAnimationVariableIntegerChangeHandler [MFC], SetAnimationController
 ms.assetid: 6ac8e91b-e514-4ff6-babd-33f77c4b2b61
-ms.openlocfilehash: e1c3dc080c23ba4ac05539674047a66059ce52d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 261f8eb17953c047fcc8ec05ae48dc369de4614c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338187"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377033"
 ---
-# <a name="canimationvariableintegerchangehandler-class"></a>CAnimationVariableIntegerChangeHandler Class
+# <a name="canimationvariableintegerchangehandler-class"></a>CAnimationVariableIntegerChangeHandler Sınıfı
 
-Animasyon değişkeninin bir değeri değiştiğinde animasyon API'sı tarafından çağrılan bir geri arama gerçekleştirir.
+Animasyon değişkeninin değeri değiştiğinde Animasyon API'si tarafından çağrılan bir geri arama uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,21 +35,21 @@ class CAnimationVariableIntegerChangeHandler : public CUIAnimationVariableIntege
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler](#canimationvariableintegerchangehandler)|Oluşturur bir `CAnimationVariableIntegerChangeHandler` nesne.|
+|[CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler](#canimationvariableintegerchangehandler)|Bir `CAnimationVariableIntegerChangeHandler` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationVariableIntegerChangeHandler::CreateInstance](#createinstance)|Örneği oluşturur `CAnimationVariableIntegerChangeHandler` geri çağırma.|
-|[CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged](#onintegervaluechanged)|Bir animasyon değişkeninin bir değeri değiştirildiğinde çağırılır. (Geçersiz kılmaları `CUIAnimationVariableIntegerChangeHandlerBase::OnIntegerValueChanged`.)|
-|[CAnimationVariableIntegerChangeHandler::SetAnimationController](#setanimationcontroller)|Animasyon denetleyicisini rota olaylar için bir işaretçi depolar.|
+|[CAnimationVariableIntegerChangeHandler::CreateInstance](#createinstance)|Geri `CAnimationVariableIntegerChangeHandler` arama örneği oluşturur.|
+|[CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged](#onintegervaluechanged)|Animasyon değişkeninin değeri değiştiğinde çağrılır. (Geçersiz `CUIAnimationVariableIntegerChangeHandlerBase::OnIntegerValueChanged`kılar .)|
+|[CAnimationVariableIntegerChangeHandler::SetAnimationController](#setanimationcontroller)|Olayları yönlendirmek için animasyon denetleyicisine işaretçi saklar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu olay işleyicisi oluşturulur ve CAnimationVariable::EnableIntegerValueChangedEvent veya (sağlayan CAnimationBaseObject::EnableIntegerValueChangedEvent çağırdığınızda IUIAnimationVariable::SetVariableIntegerChangeHandler yöntemine geçirilen Bu olay için bir animasyon nesnesinde tüm animasyon değişkenleri).
+Bu olay işleyicisi oluşturulur ve IUIAnimationVariable geçirilir::SetVariableIntegerChangeHandler yöntemi, CAnimationVariable::EnableIntegerValueChangedEvent veya CAnimationBaseObject::EnableIntegerValueChangedEvent (bir animasyon nesnesi içinde kapsüllenmiş tüm animasyon değişkenleri için bu olayı sağlar) çağırdığınızda.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -63,19 +63,19 @@ Bu olay işleyicisi oluşturulur ve CAnimationVariable::EnableIntegerValueChange
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="canimationvariableintegerchangehandler"></a>  CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler
+## <a name="canimationvariableintegerchangehandlercanimationvariableintegerchangehandler"></a><a name="canimationvariableintegerchangehandler"></a>CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler
 
-Canimationvariableıntegerchangehandler bir nesne oluşturur.
+CAnimationVariableIntegerChangeHandler nesnesi oluşturuyor.
 
 ```
 CAnimationVariableIntegerChangeHandler ();
 ```
 
-##  <a name="createinstance"></a>  CAnimationVariableIntegerChangeHandler::CreateInstance
+## <a name="canimationvariableintegerchangehandlercreateinstance"></a><a name="createinstance"></a>CAnimationVariableIntegerChangeHandler::CreateInstance
 
-Canimationvariableıntegerchangehandler geri çağırma örneği oluşturur.
+CAnimationVariableIntegerChangeHandler geri çağırma bir örneği oluşturur.
 
 ```
 static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
@@ -86,17 +86,17 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ### <a name="parameters"></a>Parametreler
 
 *pAnimationController*<br/>
-Olayları alacaksınız animasyon denetleyicisini bir işaretçi.
+Olayları alacak animasyon denetleyicisi için bir işaretçi.
 
 *ppHandler*
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
 
-##  <a name="onintegervaluechanged"></a>  CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged
+## <a name="canimationvariableintegerchangehandleronintegervaluechanged"></a><a name="onintegervaluechanged"></a>CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged
 
-Bir animasyon değişkeninin bir değeri değiştirildiğinde çağırılır.
+Animasyon değişkeninin değeri değiştiğinde çağrılır.
 
 ```
 IFACEMETHOD(OnIntegerValueChanged) (
@@ -108,25 +108,25 @@ IFACEMETHOD(OnIntegerValueChanged) (
 
 ### <a name="parameters"></a>Parametreler
 
-*görsel taslak*<br/>
-Değişken animasyon film şeridi.
+*Film şeridi*<br/>
+Değişkeni animateden hikaye tahtası.
 
-*Değişkeni*<br/>
-Animasyon değişkenin güncelleştirildi.
+*Değişken*<br/>
+Güncelleştirilen animasyon değişkeni.
 
-*newValue*<br/>
-Yeni yuvarlanan değer.
+*Newvalue*<br/>
+Yeni yuvarlatılmış değer.
 
-*previousValue*<br/>
-Önceki yuvarlanan değer.
+*öncekiDeğer*<br/>
+Önceki yuvarlatılmış değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK; Aksi takdirde E_FAIL.
+yöntem başarılı olursa S_OK; aksi takdirde E_FAIL.
 
-##  <a name="setanimationcontroller"></a>  CAnimationVariableIntegerChangeHandler::SetAnimationController
+## <a name="canimationvariableintegerchangehandlersetanimationcontroller"></a><a name="setanimationcontroller"></a>CAnimationVariableIntegerChangeHandler::SetAnimationController
 
-Animasyon denetleyicisini rota olaylar için bir işaretçi depolar.
+Olayları yönlendirmek için animasyon denetleyicisine işaretçi saklar.
 
 ```
 void SetAnimationController(CAnimationController* pAnimationController);
@@ -135,7 +135,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ### <a name="parameters"></a>Parametreler
 
 *pAnimationController*<br/>
-Olayları alacaksınız animasyon denetleyicisini bir işaretçi.
+Olayları alacak animasyon denetleyicisi için bir işaretçi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

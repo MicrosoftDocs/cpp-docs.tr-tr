@@ -8,32 +8,32 @@ helpviewer_keywords:
 - OLE DB provider templates, stored procedures
 - stored procedures, OLE DB
 ms.assetid: 90507e4c-eca2-46c9-ad8c-07e10dc1d41b
-ms.openlocfilehash: a7e97781d245e236c57942db15d61080d6418cfa
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 436c796b24b0fa498f2b3f45e848392635b22a34
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209280"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81376034"
 ---
 # <a name="using-stored-procedures"></a>Saklı Yordamları Kullanma
 
-Saklı yordam, veritabanında depolanan yürütülebilir bir nesnedir. Saklı yordamın çağrılması, SQL komutunu çağırmaya benzerdir. Veri kaynağında saklı yordamları kullanmak (istemci uygulamasında bir deyimin yürütülmesi veya hazırlanması yerine), daha yüksek performans, azaltılmış ağ yükü ve geliştirilmiş tutarlılık ve doğruluk gibi çeşitli avantajlar sağlayabilir.
+Depolanan yordam, veritabanında depolanan yürütülebilir bir nesnedir. Depolanmış yordamı çağırmak, SQL komutunu çağırmaya benzer. Veri kaynağında depolanan yordamları kullanmak (istemci uygulamasında bir bildirimi yürütmek veya hazırlamak yerine) daha yüksek performans, azaltılmış ağ yükü ve geliştirilmiş tutarlılık ve doğruluk dahil olmak üzere çeşitli avantajlar sağlayabilir.
 
-Saklı yordam herhangi bir sayıda (sıfır dahil) giriş veya çıkış parametresi içerebilir ve bir dönüş değeri geçirebilir. Parametre değerlerini belirli veri değerleri olarak sabit kodya da bir parametre işaretleyicisi (soru işareti '? ') kullanabilirsiniz.
-
-> [!NOTE]
->  Visual C++ kullanılarak oluşturulan, CLR SQL Server saklı yordamların `/clr:safe` derleyici seçeneğiyle derlenmesi gerekir.
-
-SQL Server (SQLOLEDB) için OLE DB sağlayıcısı, saklı yordamların verileri döndürmek için kullandığı aşağıdaki mekanizmaları destekler:
-
-- Yordamdaki her **Select** ifadesiyle bir sonuç kümesi oluşturulur.
-
-- Yordam, çıkış parametreleri aracılığıyla veri döndürebilir.
-
-- Yordam bir tamsayı dönüş koduna sahip olabilir.
+Depolanan yordam, herhangi bir sayıda (sıfır dahil) giriş veya çıkış parametrelerine sahip olabilir ve bir dönüş değerini geçebilir. Parametre değerlerini belirli veri değerleri olarak sabit kodlayabilir veya parametre işaretçisi (soru işareti '?') kullanabilirsiniz.
 
 > [!NOTE]
-> Bu sağlayıcı saklı yordamları desteklemediğinden, Jet için OLE DB sağlayıcısı ile saklı yordamları kullanamazsınız; sorgu dizelerinde yalnızca sabitlere izin verilir.
+> Visual C++ kullanılarak oluşturulan CLR SQL Server depolanan `/clr:safe` yordamlar derleyici seçeneği ile derlenmelidir.
+
+SQL Server için OLE DB sağlayıcısı (SQLOLEDB), depolanan yordamların veri döndürmek için kullandığı aşağıdaki mekanizmaları destekler:
+
+- Yordamdaki her **SELECT** deyimi bir sonuç kümesi oluşturur.
+
+- Yordam, çıktı parametreleri aracılığıyla veri döndürebilir.
+
+- Yordamda bir karşıcı iade kodu olabilir.
+
+> [!NOTE]
+> Depolanan yordamları Jet için OLE DB sağlayıcısında kullanamazsınız, çünkü bu sağlayıcı depolanan yordamları desteklemez; yalnızca sorgu dizelerinde sabitlere izin verilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -5,30 +5,30 @@ f1_keywords:
 - amp_graphics/concurrency::graphics::address_mode
 - amp_graphics/concurrency::graphics::filter_mode
 ms.assetid: 1d2e1859-a3d7-4d3d-8e03-1a877a86b3e0
-ms.openlocfilehash: 504de780a5db70def61fb47c7805b32e7de780b4
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: b099b7856d9ff5409311faed641c1d70eb6e4b2b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419296"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81376359"
 ---
 # <a name="concurrencygraphics-namespace-enums"></a>Concurrency::graphics ad alanı sabit listeleri
 
 |||
 |-|-|
-|[_mode numaralandırması](#address_mode)|[filter_mode numaralandırması](#filter_mode)|
+|[_mode Numaralandırma](#address_mode)|[filter_mode Numaralandırma](#filter_mode)|
 
-## <a name="address_mode"></a>address_mode numaralandırması
+## <a name="address_mode-enumeration"></a><a name="address_mode"></a>address_mode Numaralandırma
 
-Numaralandırma türü, doku örnekleme için desteklenen adres modlarını göstermek için kullanın.
+Doku örneklemesi için desteklenen adres modlarını belirtmek için numaralandırma türü kullanımı.
 
 ```cpp
 enum address_mode;
 ```
 
-## <a name="filter_mode"></a>filter_mode numaralandırması
+## <a name="filter_mode-enumeration"></a><a name="filter_mode"></a>filter_mode Numaralandırma
 
-Numaralandırma türü, doku örnekleme için desteklenen filtre modlarını göstermek için kullanın.
+Doku örneklemesi için desteklenen filtre modlarını belirtmek için numaralandırma türü kullanımı.
 
 ```cpp
 enum filter_mode;
@@ -36,7 +36,7 @@ enum filter_mode;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** amp_graphics. h **ad alanı:** concurrency:: Graphics
+**Üstbilgi:** amp_graphics.h **Namespace:** Eşzamanlılık::grafik
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

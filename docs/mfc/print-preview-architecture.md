@@ -8,56 +8,56 @@ helpviewer_keywords:
 - printing [MFC], print preview
 - print preview [MFC], modifications to MFC
 ms.assetid: 0efc87e6-ff8d-43c5-9d72-9b729a169115
-ms.openlocfilehash: ea80b67b3f6bb6980e4e8f7f12a967cb7bb5b6c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5943edc22cd48ed10d152f72624467ff87104b96
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62218735"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375942"
 ---
 # <a name="print-preview-architecture"></a>Baskı Önizleme Mimarisi
 
-Bu makalede, MFC çerçevesi baskı önizlemeyi işlevselliğini nasıl uyguladığını açıklanmaktadır. Kapsanan konular şunlardır:
+Bu makalede, MFC çerçevesinin yazdırma önizleme işlevini nasıl uyguladığı açıklanmaktadır. Ele alınan konular:
 
-- [Baskı Önizleme işlemi](#_core_the_print_preview_process)
+- [Önizleme işlemini yazdırma](#_core_the_print_preview_process)
 
-- [Baskı Önizleme ile değiştirme](#_core_modifying_print_preview)
+- [Yazdırma önizlemesini değiştirme](#_core_modifying_print_preview)
 
-Görüntüyü bir cihazda doğrudan çizim yerine, uygulama ekran kullanarak yazıcı benzetimini gerekir çünkü baskı önizlemeyi ekran görüntüsünü ve yazdırma biraz farklıdır. Buna uyum sağlamak için Microsoft Foundation Class Kitaplığı öğesinden türetilen özel (belgelenmemiş) bir sınıf tanımlar [CDC sınıfı](../mfc/reference/cdc-class.md)adlı `CPreviewDC`. Tüm `CDC` nesneleri içeren iki cihaz bağlamları, ancak genellikle bunlar aynıdır. İçinde bir `CPreviewDC` nesne farklı olduklarını: ilk benzetimli yazıcı ve ikinci üzerinde çıktı gerçekten görüntülendiği ekran temsil eder.
+Yazdırma önizlemesi ekran ekranından ve yazdırmadan biraz farklıdır, çünkü uygulamanın doğrudan bir aygıta görüntü çizmek yerine ekranı kullanarak yazıcıyı simüle etmesi gerekir. Bunu karşılamak için, Microsoft Hazırlık Sınıf Kitaplığı [CDC Sınıfından](../mfc/reference/cdc-class.md)türetilen özel `CPreviewDC`(belgesiz) bir sınıf tanımlar. Tüm `CDC` nesneler iki aygıt bağlamı içerir, ancak genellikle aynıdır. Bir `CPreviewDC` nesnede, bunlar farklıdır: birincisi simüle edilen yazıcıyı, ikincisi ise çıktının gerçekte görüntülendiği ekranı temsil eder.
 
-##  <a name="_core_the_print_preview_process"></a> Baskı Önizleme işlemi
+## <a name="the-print-preview-process"></a><a name="_core_the_print_preview_process"></a>Yazdırma Önizleme Süreci
 
-Kullanıcı yazdırma önizleme komutu seçtiğinde **dosya** framework menüsünde, oluşturur bir `CPreviewDC` nesne. Uygulamanızı bir karakteristik yazıcı cihaz bağlamının ayarlar bir işlem gerçekleştirdiğinde, framework de benzer bir ekran cihaz bağlamı işlemi gerçekleştirir. Örneğin, uygulamanızın bir yazı tipi yazdırma için seçerse, framework yazıcı yazı tipi benzetim ekran için bir yazı tipi seçer. Uygulamanızı yazıcıya çıktı gönderir gibi her framework ekrana bunun yerine çıkış gönderir.
+Kullanıcı **Dosya** menüsünden Yazdır Önizleme komutunu seçtiğinde, çerçeve `CPreviewDC` bir nesne oluşturur. Uygulamanız yazıcı aygıtı bağlamının bir özelliğini belirleyen bir işlem gerçekleştirdiğinde, çerçeve ekran aygıtı bağlamında da benzer bir işlem gerçekleştirir. Örneğin, uygulamanız yazdırmak için bir yazı tipi seçerse, çerçeve yazıcı yazı tipini taklit eden ekran ekranı için bir yazı tipi seçer. Uygulamanız çıktıyı yazıcıya gönderdiğinde, çerçeve bunun yerine çıktıyı ekrana gönderir.
 
-Baskı Önizleme ayrıca her bir belge sayfaları çizer sırada yazdırma farklıdır. Yazdırma sırasında belirli bir aralıkla sayfaların oluşturulmasını kadar framework yazdırma döngü devam eder. Baskı Önizleme sırasında herhangi bir anda bir veya iki sayfa görüntülenir ve uygulama bekler; kullanıcının yanıt verene kadar başka hiçbir sayfa görüntülenir. Baskı Önizleme sırasında uygulama sırasında normal ekran çalıştığı gibi WM_PAINT iletiler için ayrıca yanıtlamalıdır.
+Yazdırma önizlemesi, her birinin bir belgenin sayfalarını çizdiği sırayla yazdırmaktan da farklıdır. Yazdırma sırasında, çerçeve belirli bir sayfa aralığı işlenene kadar yazdırma döngüsüne devam eder. Yazdırma önizlemesi sırasında, herhangi bir zamanda bir veya iki sayfa görüntülenir ve uygulama bekler; kullanıcı yanıt layana kadar başka sayfa görüntülenmez. Yazdırma önizlemesi sırasında uygulama, sıradan ekran ekranında olduğu gibi WM_PAINT iletilerine de yanıt vermelidir.
 
-[CView::OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting) çağrıldığında Önizleme modunu çağrıldığında bir yazdırma işinin başlangıcında olduğu gibi. [Cprintınfo yapısı](../mfc/reference/cprintinfo-structure.md) işleve geçirilen yapı değerleri baskı önizlemeyi işlemi belirli özelliklerini ayarlamak için ayarlayabileceğiniz birçok üye içerir. Örneğin, ayarlayabilirsiniz *m_nNumPreviewPages* üyesi tek sayfalık veya iki sayfa modu belgede Önizleme isteyip istemediğinizi belirtin.
+[CView::OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting) işlevi, tıpkı bir yazdırma işinin başında olduğu gibi önizleme modu çağrıldığında çağrılır. İşleve geçirilen [CPrintInfo Yapısı](../mfc/reference/cprintinfo-structure.md) yapısı, yazdırma önizleme işleminin belirli özelliklerini ayarlamak için ayarlayabildiğiniz değerleri birkaç üye içerir. Örneğin, *m_nNumPreviewPages* üyeyi, belgeyi bir sayfa veya iki sayfa modunda önizlemek isteyip istemediğinizbelirtecek şekilde ayarlayabilirsiniz.
 
-##  <a name="_core_modifying_print_preview"></a> Baskı Önizleme ile değiştirme
+## <a name="modifying-print-preview"></a><a name="_core_modifying_print_preview"></a>Yazdırma Önizlemesini Değiştirme
 
-Bunun yerine bir kolayca baskı önizlemede çeşitli şekillerde görünümünü ve davranışını değiştirebilirsiniz. Örneğin, diğerlerinin yanında yapabilecekleriniz:
+Yazdırma önizlemesinin davranışını ve görünümünü çok kolay bir şekilde çeşitli şekillerde değiştirebilirsiniz. Örneğin, diğer şeylerin yanı sıra şunları yapabilirsiniz:
 
-- Herhangi bir belge sayfasına bir kolayca erişmek için kaydırma çubuğunu görüntülemek yazdırma önizleme penceresini neden.
+- Belgenin herhangi bir sayfasına kolay erişim için yazdırma önizleme penceresinin kaydırma çubuğunu görüntülemesine neden olun.
 
-- Baskı Önizleme, geçerli sayfa ekranına başlayarak kullanıcının belge içindeki konumunu korumak neden.
+- Geçerli sayfada görüntülemeye başlayarak kullanıcının belgedeki konumunu korumak için yazdırma önizlemesine neden olun.
 
-- Yazdırma ve baskı önizlemeyi gerçekleştirilen farklı başlatmanın neden.
+- Yazdırma önizleme ve yazdırma için farklı başlatmanın gerçekleştirilmesine neden olun.
 
-- Sayfa numaralarını kendi biçimlerde görüntülemek için yazdırma önizleme neden.
+- Sayfa numaralarını kendi biçimlerinizde görüntülemek için yazdırma önizlemesine neden olun.
 
-Belgenin ne olduğunu bilmeniz ve çağrı `SetMaxPage` uygun değerle framework bu bilgileri önizleme modunda yazdırma sırasında yanı sıra kullanabilirsiniz. Belgenin uzunluğunu framework belirledikten sonra bir kaydırma çubuğu, kullanıcının belgeyi önizleme modunda aracılığıyla sürekli sayfasında izin ile Önizleme penceresini sağlayabilir. Belgenin uzunluğunu ayarlamadıysanız, kaydırma kutusunun kaydırma çubuğu framework eklemez şekilde geçerli konumunu göstermek için framework yerleştiremezsiniz. Bu durumda, kullanıcı bir sonraki sayfa ve önceki sayfa düğmelerini Önizleme pencerenin denetim çubuğundaki Belge aracılığıyla sayfasına kullanmanız gerekir.
+Belgenin ne kadar uzun olduğunu `SetMaxPage` biliyorsanız ve uygun değerle arama yapıyorsanız, çerçeve bu bilgileri önizleme modunda ve yazdırma sırasında kullanabilir. Çerçeve belgenin uzunluğunu öğrendiğinde, önizleme penceresine bir kaydırma çubuğu sağlayarak kullanıcının önizleme modunda belge boyunca ileri geri sayfa atmasını sağlar. Belgenin uzunluğunu ayarlamadıysanız, çerçeve kaydırma kutusunu geçerli konumu belirtmek üzere konumlandıramaz, bu nedenle çerçeve kaydırma çubuğu eklemez. Bu durumda, kullanıcının belgeyi sayfalamak için önizleme penceresinin denetim çubuğundaki Sonraki Sayfa ve Önceki Sayfa düğmelerini kullanması gerekir.
 
-Baskı Önizleme için bir değer atamak faydalı *m_nCurPage* üyesi `CPrintInfo`rağmen hiçbir zaman sıradan yazdırma için yapmanız. Sıradan yazdırma sırasında bu üye çerçeveden bilgi görünümü sınıfınıza taşır. Hangi sayfa yazdırılıp framework görünümü nasıl söyler budur.
+Yazdırma önizlemesi için, normal yazdırma için bunu *m_nCurPage* asla `CPrintInfo`yapmazolsanız bile, m_nCurPage üyesine bir değer atamanız yararlı olabilir. Sıradan yazdırma sırasında, bu üye çerçeveden görünüm sınıfınıza bilgi taşır. Çerçeve, görünüme hangi sayfanın yazdırılması gerektiğini bu şekilde bildirir.
 
-Bunun aksine, yazdırma Önizleme modundan başlatıldığında, *m_nCurPage* üye izleme bilgilerini ters yönde: Framework görünümünden. Framework, hangi sayfa ilk önizlemesi belirlemek için bu üyenin değeri kullanır. Başlangıçta belgenin'ın ilk sayfasında görüntülenmesini sağlamak, bu üyenin varsayılan değeri 1 ' dir. Geçersiz kılabilirsiniz `OnPreparePrinting` Baskı Önizleme komutunu çağrıldığı zaman görüntülenmekte olan sayfa numarası için bu üye ayarlamak için. Bu şekilde, uygulama normal görüntüleme modunda Baskı Önizleme modunu taşırken kullanıcının geçerli konumunu korur.
+Bunun aksine, yazdırma önizleme modu başlatıldığında, *m_nCurPage* üye bilgileri ters yönde taşır: görünümden çerçeveye. Çerçeve, önce hangi sayfanın önizlemesi gerektiğini belirlemek için bu üyenin değerini kullanır. Bu üyenin varsayılan değeri 1'dir, bu nedenle belgenin ilk sayfası başlangıçta görüntülenir. Yazdır Önizleme `OnPreparePrinting` komutu çağrıldığı sırada görüntülenen sayfanın numarasına bu üyeyi ayarlamak için geçersiz kılınabilirsiniz. Bu şekilde, uygulama normal ekran modundan yazdırma önizleme moduna geçerken kullanıcının geçerli konumunu korur.
 
-Bazen isteyebilirsiniz `OnPreparePrinting` olup bir yazdırma işi ya da yazdırma önizleme adlandırılır bağlı olarak farklı başlatma gerçekleştirmek için. Bu incelenerek belirlenir *m_bPreview* üye değişkeni `CPrintInfo` yapısı. Bu üye kümesine **TRUE** baskı önizlemeyi zaman çağrılır.
+Bazen, yazdırma `OnPreparePrinting` işi veya yazdırma önizlemesi için çağrılıp çağrılmadığına bağlı olarak farklı başlatma gerçekleştirmek isteyebilirsiniz. Bunu, yapıdaki *m_bPreview* üye değişkeni `CPrintInfo` inceleyerek belirleyebilirsiniz. Yazdırma önizlemesi çağrıldığınızda bu üye **TRUE** olarak ayarlanır.
 
-`CPrintInfo` Yapı ayrıca adında bir üye içeriyor *m_strPageDesc*, tek sayfalık ve birden çok sayfalı modda ekranın alt kısmındaki görüntülenen dizeleri biçimlendirmek için kullanılır. Varsayılan olarak bu dize biçimindedir "sayfası *n*" ve "sayfaları *n* - *m*," ancak değiştirebilirsiniz *m_strPageDesc* gelen içinde `OnPreparePrinting` ve daha karmaşık bir şey için dizeleri ayarlayın. Bkz: [Cprintınfo yapısı](../mfc/reference/cprintinfo-structure.md) içinde *MFC başvurusu* daha fazla bilgi için.
+Yapı `CPrintInfo` da tek sayfa ve çoklu sayfa modlarında ekranın alt kısmında görüntülenen dizeleri biçimlendirmek için kullanılan *m_strPageDesc*adlı bir üye içerir. Varsayılan olarak bu dizeleri formu "Page *n*" ve "Pages *n* - *m*," ancak *içinde* `OnPreparePrinting` m_strPageDesc değiştirebilir ve daha ayrıntılı bir şey dizeleri ayarlayın. Daha fazla bilgi için *MFC Başvurusu'ndaki* [CPrintInfo Yapısı'na](../mfc/reference/cprintinfo-structure.md) bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[{1&gt;Yazdırma ve yazdırma önizleme&lt;1}](../mfc/printing-and-print-preview.md)<br/>
+[Yazdırma ve Yazdırma Önizlemesi](../mfc/printing-and-print-preview.md)<br/>
 [Yazdırma](../mfc/printing.md)<br/>
 [CView Sınıfı](../mfc/reference/cview-class.md)<br/>
 [CDC Sınıfı](../mfc/reference/cdc-class.md)

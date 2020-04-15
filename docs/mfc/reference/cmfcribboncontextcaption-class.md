@@ -1,5 +1,5 @@
 ---
-title: CMFCRibbonContextCaption sınıfı
+title: CMFCRibbonContextCaption Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonContextCaption
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CMFCRibbonContextCaption [MFC], GetColor
 - CMFCRibbonContextCaption [MFC], GetRightTabX
 ms.assetid: cce2c0a2-8370-4266-997e-f8d0eeb3d616
-ms.openlocfilehash: 26cc509db55bc95688123a7c6e673dcfc87c975b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7aacbe23684914c91129d9962ae847d442cc411b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62237331"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375213"
 ---
-# <a name="cmfcribboncontextcaption-class"></a>CMFCRibbonContextCaption sınıfı
+# <a name="cmfcribboncontextcaption-class"></a>CMFCRibbonContextCaption Sınıfı
 
-Şerit kategorisinin veya bağlam kategorisinin üst kısmında görünen renkli bir başlık uygular.
+Şerit kategorisinin veya bağlam kategorisinin üst kısmında görünen renkli bir resim yazısı uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,22 +31,22 @@ class CMFCRibbonContextCaption : public CMFCRibbonButton
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMFCRibbonContextCaption::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|
-|[CMFCRibbonContextCaption::GetColor](#getcolor)|Başlık rengi döndürür.|
+|`CMFCRibbonContextCaption::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için çerçeve tarafından kullanılır.|
+|[CMFCRibbonContextCaption::GetColor](#getcolor)|Başlığın rengini verir.|
 |[CMFCRibbonContextCaption::GetRightTabX](#getrighttabx)||
-|`CMFCRibbonContextCaption::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|
+|`CMFCRibbonContextCaption::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf doğrudan başlatılamaz. [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md) sınıfı bu sınıfı dahili olarak renk Şerit kategorileri eklemek için kullanır.
+Bu sınıf doğrudan anında kullanılamaz. [CMFCRibbonBar Class](../../mfc/reference/cmfcribbonbar-class.md) sınıfı, şerit kategorilere renk eklemek için bu sınıfı dahili olarak kullanır.
 
-Şerit kategorisi rengini ayarlamak için çağrı [CMFCRibbonCategory::SetTabColor](../../mfc/reference/cmfcribboncategory-class.md#settabcolor). Bağlam kategorisi rengini ayarlamak için çağrı [CMFCRibbonBar::AddContextCategory](../../mfc/reference/cmfcribbonbar-class.md#addcontextcategory).
+Şerit kategorileri için renk ayarlamak için [CMFCRibbonKategori::SetTabColor'u](../../mfc/reference/cmfcribboncategory-class.md#settabcolor)arayın. Bağlam kategorileri için renk ayarlamak için [CMFCRibbonBar'ı arayın::Bağlam Kategorisini Ekle.](../../mfc/reference/cmfcribbonbar-class.md#addcontextcategory)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)
 
@@ -56,11 +56,11 @@ Bu sınıf doğrudan başlatılamaz. [CMFCRibbonBar sınıfı](../../mfc/referen
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxRibbonBar.h
+**Üstbilgi:** afxRibbonBar.h
 
-##  <a name="getcolor"></a>  CMFCRibbonContextCaption::GetColor
+## <a name="cmfcribboncontextcaptiongetcolor"></a><a name="getcolor"></a>CMFCRibbonContextCaption::GetColor
 
-Başlık arka plan rengini döndürür.
+Başlığın arka plan rengini verir.
 
 ```
 AFX_RibbonCategoryColor GetColor() const;
@@ -68,7 +68,7 @@ AFX_RibbonCategoryColor GetColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürülen değer, aşağıdaki numaralandırılmış değerlerden biri olabilir:
+Döndürülen değer aşağıdaki numaralandırılmış değerlerden biri olabilir:
 
 - `AFX_CategoryColor_None`
 
@@ -88,11 +88,11 @@ Döndürülen değer, aşağıdaki numaralandırılmış değerlerden biri olabi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırarak başlık rengi ayarlanabilir [CMFCRibbonCategory::SetTabColor](../../mfc/reference/cmfcribboncategory-class.md#settabcolor) veya [CMFCRibbonBar::AddContextCategory](../../mfc/reference/cmfcribbonbar-class.md#addcontextcategory).
+Resim yazısının rengi [CMFCRibbonKategori::SetTabColor](../../mfc/reference/cmfcribboncategory-class.md#settabcolor) veya [CMFCRibbonBar::AddContextCategory](../../mfc/reference/cmfcribbonbar-class.md#addcontextcategory)numaralı çağrıyla ayarlanabilir.
 
-##  <a name="getrighttabx"></a>  CMFCRibbonContextCaption::GetRightTabX
+## <a name="cmfcribboncontextcaptiongetrighttabx"></a><a name="getrighttabx"></a>CMFCRibbonContextCaption::GetRightTabX
 
-Kategori Şerit sekmesinin sağ kenarı konumunu alır.
+Kategorinin şerit sekmesinin sağ kenarının konumunu alır.
 
 ```
 int GetRightTabX() const;
@@ -100,7 +100,7 @@ int GetRightTabX() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sağ taraftaki X değeri çevreleyen dikdörtgen döndürür `CMFCRibbonCategory` nesnenin şerit sekmesinden veya sekme kesilirse -1 değeri.
+`CMFCRibbonCategory` Nesnenin şerit sekmesinin çevreleyen dikdörtgeninin sağ x değerini veya sekme kesilirse -1 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -109,5 +109,5 @@ Sağ taraftaki X değeri çevreleyen dikdörtgen döndürür `CMFCRibbonCategory
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCRibbonButton Sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)<br/>
-[CMFCRibbonCategory Sınıfı](../../mfc/reference/cmfcribboncategory-class.md)<br/>
+[CMFCRibbonKategori Sınıfı](../../mfc/reference/cmfcribboncategory-class.md)<br/>
 [CMFCRibbonBar Sınıfı](../../mfc/reference/cmfcribbonbar-class.md)

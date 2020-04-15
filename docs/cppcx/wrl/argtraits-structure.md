@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ArgTraits structure
 - Microsoft::WRL::Details::ArgTraits::args constant
 ms.assetid: 58ae4115-c1bc-48c8-b01b-e60554841c30
-ms.openlocfilehash: c13e7fec3289b66b40e44f91404a50cba7a473b1
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+ms.openlocfilehash: 16c44d861ebbbc98fa1bffb62a00d1989c0c803c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821720"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377165"
 ---
 # <a name="argtraits-structure"></a>ArgTraits Yapısı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -130,47 +130,47 @@ struct ArgTraits<
 ### <a name="parameters"></a>Parametreler
 
 *TMemberFunction*<br/>
-Herhangi bir `Invoke` yöntemi imzasıyla eşleşmeyen bir Argnitelikler yapısı için typeName parametresi.
+Herhangi `Invoke` bir yöntem imzasıyla eşleşmeyen bir ArgTraits yapısı için ad adı parametresi.
 
-*Tdelegateınterface*<br/>
+*TDelegateArayüzü*<br/>
 Temsilci arabirimi.
 
 *TArg1*<br/>
-`Invoke` yönteminin ilk bağımsız değişkeninin türü.
+`Invoke` Yöntemin ilk bağımsız değişkeninin türü.
 
 *TArg2*<br/>
-`Invoke` yönteminin ikinci bağımsız değişkeninin türü.
+`Invoke` Yöntemin ikinci bağımsız değişkeninin türü.
 
 *TArg3*<br/>
-`Invoke` yönteminin üçüncü bağımsız değişkeninin türü.
+`Invoke` Yöntemin üçüncü bağımsız değişkeninin türü.
 
 *TArg4*<br/>
-`Invoke` yönteminin dördüncü bağımsız değişkeninin türü.
+`Invoke` Yöntemin dördüncü bağımsız değişkeninin türü.
 
 *TArg5*<br/>
-`Invoke` yönteminin beşinci bağımsız değişkeninin türü.
+`Invoke` Yöntemin beşinci bağımsız değişkeninin türü.
 
 *TArg6*<br/>
-`Invoke` yönteminin altıncı bağımsız değişkeninin türü.
+`Invoke` Yöntemin altıncı bağımsız değişkeninin türü.
 
 *TArg7*<br/>
-`Invoke` yönteminin yedinci bağımsız değişkeninin türü.
+`Invoke` Yöntemin yedinci bağımsız değişkeninin türü.
 
 *TArg8*<br/>
-`Invoke` yönteminin Sekizinci bağımsız değişkeninin türü.
+`Invoke` Yöntemin sekizinci bağımsız değişkeninin türü.
 
 *TArg9*<br/>
-`Invoke` yönteminin dokuzuncu bağımsız değişkeninin türü.
+`Invoke` Yöntemin dokuzuncu bağımsız değişkeninin türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`ArgTraits` yapısı belirtilen bir temsilci arabirimini ve belirtilen sayıda parametreye sahip anonim bir üye işlevini bildirir.
+Yapı, `ArgTraits` belirtilen sayıda parametreye sahip anonim bir temsilci arabirimi ve anonim bir üye işlev bildirir.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Ortak tür tanımları
+### <a name="public-typedefs"></a>Genel Typedefs
 
-Name       | Açıklama
+Adı       | Açıklama
 ---------- | ----------------------
 `Arg1Type` | TArg1 için typedef.
 `Arg2Type` | TArg2 için typedef.
@@ -182,11 +182,11 @@ Name       | Açıklama
 `Arg8Type` | TArg8 için typedef.
 `Arg9Type` | TArg9 için typedef.
 
-### <a name="public-constants"></a>Genel sabitler
+### <a name="public-constants"></a>Genel Sabitler
 
-Name                     | Açıklama
+Adı                     | Açıklama
 ------------------------ | ---------------------------------------------------------------------------------------
-[Argnitelikler:: args](#args) | Bir temsilci arabiriminin `Invoke` yönteminde parametre sayısı sayısını tutar.
+[ArgTraits::args](#args) | Temsilci arabirimi `Invoke` yöntemindeki parametre sayısını tutar.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -194,13 +194,13 @@ Name                     | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** Event. h
+**Üstbilgi:** event.h
 
-**Ad alanı:** Microsoft:: WRL::D euçlar
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="args"></a>Argnitelikler:: args
+## <a name="argtraitsargs"></a><a name="args"></a>ArgTraits::args
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 static const int args = -1;
@@ -208,4 +208,4 @@ static const int args = -1;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir temsilci arabiriminin `Invoke` yönteminde parametre sayısı sayısını tutar. `args`-1 ' e eşitse, `Invoke` yöntemi imzasında eşleşme olamaz.
+Temsilci arabirimi `Invoke` yöntemindeki parametre sayısını tutar. -1 eşitolduğunda, `args` `Invoke` yöntem imzası için eşleşme olamaz.

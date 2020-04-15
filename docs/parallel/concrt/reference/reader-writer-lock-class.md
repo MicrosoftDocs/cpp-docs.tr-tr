@@ -15,16 +15,16 @@ f1_keywords:
 helpviewer_keywords:
 - reader_writer_lock class
 ms.assetid: 91a59cd2-ca05-4b74-8398-d826d9f86736
-ms.openlocfilehash: 1a7386e527b5327d928bfdcb3281c88666f1b106
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 13b44387f3e9489090ec31345fe4347ff5f205ca
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417126"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81376250"
 ---
 # <a name="reader_writer_lock-class"></a>reader_writer_lock Sınıfı
 
-Yalnızca yerel olarak dönen bir yazıcı tercihi kuyruğu tabanlı okuyucu-yazıcı kilidi. Kilit, sürekli bir yazıcı yüklemesi altında yazıcılara ve başlangıç okuyucularına ilk çıkar (FıFO) erişimi verir.
+Yerel sadece iplik ile bir yazar-tercih sıra tabanlı okuyucu-yazar kilidi. Kilit ilk olarak verir - ilk çıkış (FIFO) yazarlar a erişim ve yazarların sürekli bir yük altında okuyucuları açlıktan.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,33 +34,33 @@ class reader_writer_lock;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-classes"></a>Ortak sınıflar
+### <a name="public-classes"></a>Genel Sınıflar
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[reader_writer_lock:: scoped_lock sınıfı](#scoped_lock_class)|Bir yazıcı olarak `reader_writer_lock` kilitleme nesneleri elde etmek için kullanılabilen özel durum güvenli bir KAıı sarmalayıcısı.|
-|[reader_writer_lock:: scoped_lock_read sınıfı](#scoped_lock_read_class)|Bir okuyucu olarak `reader_writer_lock` kilitleme nesneleri elde etmek için kullanılabilen özel durum güvenli bir KAıı sarmalayıcısı.|
+|[reader_writer_lock::scoped_lock Sınıfı](#scoped_lock_class)|Bir yazar olarak kilit nesneleri elde `reader_writer_lock` etmek için kullanılabilecek bir özel durum güvenli RAII sarıcı.|
+|[reader_writer_lock::scoped_lock_read Sınıfı](#scoped_lock_read_class)|Bir okuyucu olarak kilit nesneleri elde `reader_writer_lock` etmek için kullanılabilecek bir özel durum güvenli RAII sarıcı.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[reader_writer_lock](#ctor)|Yeni bir `reader_writer_lock` nesnesi oluşturur.|
-|[~ reader_writer_lock yok edici](#dtor)|`reader_writer_lock` nesnesini yok eder.|
+|[reader_writer_lock](#ctor)|Yeni `reader_writer_lock` bir nesne oluşturuyor.|
+|[~reader_writer_lock Yıkıcı](#dtor)|Nesneyi `reader_writer_lock` yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[lock](#lock)|Okuyucu-yazıcı kilidini bir yazıcı olarak alır.|
-|[lock_read](#lock_read)|Reader-yazıcı kilidini okuyucu olarak alır. Yazıcılar varsa, etkin okuyucular tamamlanana kadar beklemelidir. Okuyucu yalnızca kilit için bir ilgi kaydeder ve yazarların bunu serbest bırakmasını bekler.|
-|[try_lock](#try_lock)|Okuyucu-yazıcı kilidini engelleme olmadan bir yazıcı olarak almayı dener.|
-|[try_lock_read](#try_lock_read)|Reader-yazıcı kilidini engellemeye gerek kalmadan okuyucu olarak almayı dener.|
-|[kaldırın](#unlock)|It, Reader veya Writer 'ın kimin kilitlemesine göre okuyucu yazıcı kilidi 'nin kilidini açar.|
+|[Kilit](#lock)|Bir yazar olarak okuyucu-yazar kilidi kazanır.|
+|[lock_read](#lock_read)|Okuyucu-yazar kilidini okuyucu olarak edinir. Yazarlar varsa, aktif okuyucular onlar bitene kadar beklemek zorunda. Okuyucu sadece kilit bir ilgi kaydeder ve yazarlar serbest bırakmak için bekler.|
+|[try_lock](#try_lock)|Engellemeden bir yazar olarak okuyucu-yazar kilidi elde etmeye çalışır.|
+|[try_lock_read](#try_lock_read)|Engellemeden okuyucu-yazar kilidi elde etmeye çalışır.|
+|[Kilidini](#unlock)|Okuyucu-yazar kilidini kimin kilitlediğini, okuyucuyu veya yazarı açar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [eşitleme veri yapıları](../../../parallel/concrt/synchronization-data-structures.md).
+Daha fazla bilgi için [bkz.](../../../parallel/concrt/synchronization-data-structures.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -68,13 +68,13 @@ Daha fazla bilgi için bkz. [eşitleme veri yapıları](../../../parallel/concrt
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** concrt. h
+**Üstbilgi:** concrt.h
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="lock"></a>ine
+## <a name="lock"></a><a name="lock"></a>Kilit
 
-Okuyucu-yazıcı kilidini bir yazıcı olarak alır.
+Bir yazar olarak okuyucu-yazar kilidi kazanır.
 
 ```cpp
 void lock();
@@ -82,17 +82,17 @@ void lock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel durum güvenli bir şekilde bir `reader_writer_lock` nesnesini bir yazıcı olarak almak ve serbest bırakmak için [scoped_lock](#scoped_lock_class) yapısını kullanmak genellikle daha güvenlidir.
+Genellikle bir özel durum [scoped_lock](#scoped_lock_class) güvenli bir şekilde bir `reader_writer_lock` yazar olarak bir nesne elde etmek ve serbest bırakmak için scoped_lock yapı kullanmak daha güvenlidir.
 
-Bir yazıcı kilidi edinmeye çalıştıktan sonra, yazarları başarılı bir şekilde alıp serbest bırakılana kadar gelecek okuyucular bu işlemleri engeller. Bu kilit, yazıcılara sahiptir ve sürekli bir yazıcı yüklemesi altında okuyucuları açabilir.
+Bir yazar kilidi elde etmeye çalıştıktan sonra, gelecekteki okuyucular, yazarlar kilidi başarıyla elde edip serbest bırakana kadar bunu engeller. Bu kilit yazarlara karşı önyargılı ve yazarların sürekli bir yük altında okuyucuları açlıktan olabilir.
 
-Yazıcılar zincirdir, böylece kilidi çıkış sonrasında bir yazıcı, satırdaki sonraki yazıcıya serbest bırakır.
+Yazarlar zincirlenir, böylece kilitten çıkan bir yazar sıradaki yazarı serbest bırakır.
 
-Kilit çağıran bağlam tarafından zaten tutuluyorsa, bir [improper_lock](improper-lock-class.md) özel durumu oluşturulur.
+Kilit zaten arama bağlamında tutuluyorsa, [improper_lock](improper-lock-class.md) bir özel durum atılır.
 
-## <a name="lock_read"></a>lock_read
+## <a name="lock_read"></a><a name="lock_read"></a>lock_read
 
-Reader-yazıcı kilidini okuyucu olarak alır. Yazıcılar varsa, etkin okuyucular tamamlanana kadar beklemelidir. Okuyucu yalnızca kilit için bir ilgi kaydeder ve yazarların bunu serbest bırakmasını bekler.
+Okuyucu-yazar kilidini okuyucu olarak edinir. Yazarlar varsa, aktif okuyucular onlar bitene kadar beklemek zorunda. Okuyucu sadece kilit bir ilgi kaydeder ve yazarlar serbest bırakmak için bekler.
 
 ```cpp
 void lock_read();
@@ -100,21 +100,21 @@ void lock_read();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel durum güvenli bir şekilde bir `reader_writer_lock` nesnesini okuyucu olarak almak ve serbest bırakmak için [scoped_lock_read](#scoped_lock_read_class) yapısını kullanmak genellikle daha güvenlidir.
+Genellikle bir özel durum [scoped_lock_read](#scoped_lock_read_class) güvenli bir şekilde bir `reader_writer_lock` nesne elde etmek ve bir okuyucu olarak serbest bırakmak için scoped_lock_read yapı kullanmak daha güvenlidir.
 
-Kilit üzerinde bekleyen yazıcılar varsa, bu, satırdaki tüm yazarlar elde edilene ve kilidi serbest bırakılana kadar bekler. Bu kilit, yazıcılara sahiptir ve sürekli bir yazıcı yüklemesi altında okuyucuları açabilir.
+Kilitte bekleyen yazarlar varsa, okuyucu satırdaki tüm yazarlar kilidi alıp serbest bırakana kadar bekler. Bu kilit yazarlara karşı önyargılı ve yazarların sürekli bir yük altında okuyucuları açlıktan olabilir.
 
-## <a name="ctor"></a>reader_writer_lock
+## <a name="reader_writer_lock"></a><a name="ctor"></a>reader_writer_lock
 
-Yeni bir `reader_writer_lock` nesnesi oluşturur.
+Yeni `reader_writer_lock` bir nesne oluşturuyor.
 
 ```cpp
 reader_writer_lock();
 ```
 
-## <a name="dtor"></a>~ reader_writer_lock
+## <a name="reader_writer_lock"></a><a name="dtor"></a>~reader_writer_lock
 
-`reader_writer_lock` nesnesini yok eder.
+Nesneyi `reader_writer_lock` yok eder.
 
 ```cpp
 ~reader_writer_lock();
@@ -122,19 +122,19 @@ reader_writer_lock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yok edicinin çalıştırıldığı zaman kilidin artık tutulmuyor olması beklenmektedir. Okuyucu Yazıcı kilidinin kilit ile sınıfların 'a geçmesine izin, tanımsız davranışa neden olur.
+Yıkıcı çalışırken kilidin artık tutulmadığı beklenmektedir. Okuyucu yazar kilidi kilidi kilit ile imha izin hala tanımlanmamış davranış sonuçları düzenledi.
 
-## <a name="scoped_lock_class"></a>reader_writer_lock:: scoped_lock sınıfı
+## <a name="reader_writer_lockscoped_lock-class"></a><a name="scoped_lock_class"></a>reader_writer_lock::scoped_lock Sınıfı
 
-Bir yazıcı olarak `reader_writer_lock` kilitleme nesneleri elde etmek için kullanılabilen özel durum güvenli bir KAıı sarmalayıcısı.
+Bir yazar olarak kilit nesneleri elde `reader_writer_lock` etmek için kullanılabilecek bir özel durum güvenli RAII sarıcı.
 
 ```cpp
 class scoped_lock;
 ```
 
-## <a name="scoped_lock_ctor"></a>scoped_lock:: scoped_lock
+## <a name="scoped_lockscoped_lock"></a><a name="scoped_lock_ctor"></a>scoped_lock::scoped_lock
 
-`scoped_lock` nesnesi oluşturur ve `_Reader_writer_lock` parametresinde geçirilen `reader_writer_lock` nesnesini bir yazıcı olarak alır. Kilit başka bir iş parçacığı tarafından tutuluyorsa bu çağrı engellenir.
+Bir `scoped_lock` nesne inşa eder `reader_writer_lock` ve parametrede geçen nesneyi yazar olarak edinir. `_Reader_writer_lock` Kilit başka bir iş parçacığı tarafından tutulursa, bu çağrı engellenir.
 
 ```cpp
 explicit _CRTIMP scoped_lock(reader_writer_lock& _Reader_writer_lock);
@@ -143,27 +143,27 @@ explicit _CRTIMP scoped_lock(reader_writer_lock& _Reader_writer_lock);
 ### <a name="parameters"></a>Parametreler
 
 *_Reader_writer_lock*<br/>
-Bir yazıcı olarak elde edilecek `reader_writer_lock` nesnesi.
+Bir `reader_writer_lock` yazar olarak elde etmek için nesne.
 
-## <a name="scoped_lock_dtor"></a>scoped_lock:: ~ scoped_lock
+## <a name="scoped_lockscoped_lock"></a><a name="scoped_lock_dtor"></a>scoped_lock::~scoped_lock
 
-`reader_writer_lock` nesnesini yok eder ve yapıcısında sağlanan kilidi serbest bırakır.
+Bir `reader_writer_lock` nesneyi yok eder ve oluşturucusu yla birlikte verilen kilidi serbest bırakır.
 
 ```cpp
 ~scoped_lock();
 ```
 
-## <a name="scoped_lock_read_class"></a>reader_writer_lock:: scoped_lock_read sınıfı
+## <a name="reader_writer_lockscoped_lock_read-class"></a><a name="scoped_lock_read_class"></a>reader_writer_lock::scoped_lock_read Sınıfı
 
-Bir okuyucu olarak `reader_writer_lock` kilitleme nesneleri elde etmek için kullanılabilen özel durum güvenli bir KAıı sarmalayıcısı.
+Bir okuyucu olarak kilit nesneleri elde `reader_writer_lock` etmek için kullanılabilecek bir özel durum güvenli RAII sarıcı.
 
 ```cpp
 class scoped_lock_read;
 ```
 
-## <a name="scoped_lock_read_ctor"></a>scoped_lock_read:: scoped_lock_read
+## <a name="scoped_lock_readscoped_lock_read"></a><a name="scoped_lock_read_ctor"></a>scoped_lock_read:scoped_lock_read
 
-Bir `scoped_lock_read` nesnesi oluşturur ve `_Reader_writer_lock` parametresinde geçirilen `reader_writer_lock` nesnesini okuyucu olarak alır. Kilit başka bir iş parçacığı tarafından bir yazıcı olarak tutuluyorsa veya bekleyen yazıcılar varsa, bu çağrı engellenir.
+Bir `scoped_lock_read` nesne inşa eder `reader_writer_lock` ve parametrede geçen nesneyi okuyucu olarak edinir. `_Reader_writer_lock` Kilit yazar olarak başka bir iş parçacığı tarafından tutulursa veya bekleyen yazarlar varsa, bu çağrı engellenir.
 
 ```cpp
 explicit _CRTIMP scoped_lock_read(reader_writer_lock& _Reader_writer_lock);
@@ -172,19 +172,19 @@ explicit _CRTIMP scoped_lock_read(reader_writer_lock& _Reader_writer_lock);
 ### <a name="parameters"></a>Parametreler
 
 *_Reader_writer_lock*<br/>
-Okuyucu olarak elde edilecek `reader_writer_lock` nesnesi.
+Okuyucu `reader_writer_lock` olarak elde etmek için nesne.
 
-## <a name="a-namescoped_lock_read_dtor--reader_writer_lockscoped_lock_readscoped_lock_read-destructor"></a><a name="scoped_lock_read_dtor"> reader_writer_lock:: scoped_lock_read:: ~ scoped_lock_read yok edici
+## <a name="a-namescoped_lock_read_dtor--reader_writer_lockscoped_lock_readscoped_lock_read-destructor"></a><a name="scoped_lock_read_dtor">reader_writer_lock::scoped_lock_read::~scoped_lock_read Yıkıcı
 
-`scoped_lock_read` nesnesini yok eder ve yapıcısında sağlanan kilidi serbest bırakır.
+Bir `scoped_lock_read` nesneyi yok eder ve oluşturucusu yla birlikte verilen kilidi serbest bırakır.
 
 ```cpp
 ~scoped_lock_read();
 ```
 
-## <a name="try_lock"></a>try_lock
+## <a name="try_lock"></a><a name="try_lock"></a>try_lock
 
-Okuyucu-yazıcı kilidini engelleme olmadan bir yazıcı olarak almayı dener.
+Engellemeden bir yazar olarak okuyucu-yazar kilidi elde etmeye çalışır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -194,11 +194,11 @@ bool try_lock();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kilit alınırsa, **true**değeri; Aksi takdirde, değeri **false**olur.
+Kilit elde edildiyse, değer **doğru;** aksi takdirde, değer **yanlış**.
 
-## <a name="try_lock_read"></a>try_lock_read
+## <a name="try_lock_read"></a><a name="try_lock_read"></a>try_lock_read
 
-Reader-yazıcı kilidini engellemeye gerek kalmadan okuyucu olarak almayı dener.
+Engellemeden okuyucu-yazar kilidi elde etmeye çalışır.
 
 ```cpp
 bool try_lock_read();
@@ -206,11 +206,11 @@ bool try_lock_read();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kilit alınırsa, **true**değeri; Aksi takdirde, değeri **false**olur.
+Kilit elde edildiyse, değer **doğru;** aksi takdirde, değer **yanlış**.
 
-## <a name="unlock"></a>kaldırın
+## <a name="unlock"></a><a name="unlock"></a>Kilidini
 
-It, Reader veya Writer 'ın kimin kilitlemesine göre okuyucu yazıcı kilidi 'nin kilidini açar.
+Okuyucu-yazar kilidini kimin kilitlediğini, okuyucuyu veya yazarı açar.
 
 ```cpp
 void unlock();
@@ -218,9 +218,9 @@ void unlock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kilit üzerinde bekleyen yazıcılar varsa, kilit sürümü her zaman FıFO düzeninde bir sonraki yazıcıya gider. Bu kilit, yazıcılara sahiptir ve sürekli bir yazıcı yüklemesi altında okuyucuları açabilir.
+Kilitte bekleyen yazarlar varsa, kilidin serbest bırakılması her zaman FIFO sırasına göre bir sonraki yazara gider. Bu kilit yazarlara karşı önyargılı ve yazarların sürekli bir yük altında okuyucuları açlıktan olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
+[concurrency Ad Alanı](concurrency-namespace.md)<br/>
 [critical_section Sınıfı](critical-section-class.md)

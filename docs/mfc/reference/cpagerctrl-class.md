@@ -1,5 +1,5 @@
 ---
-title: CPagerCtrl sınıfı
+title: CPagerCtrl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CPagerCtrl
@@ -48,16 +48,16 @@ helpviewer_keywords:
 - CPagerCtrl [MFC], SetChild
 - CPagerCtrl [MFC], SetScrollPos
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
-ms.openlocfilehash: 519a376bdecc488a94eab65973e33d960ca50c8d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b2c4f1ac99735953f4832226b840ced4ea4c509a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69503021"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81376972"
 ---
-# <a name="cpagerctrl-class"></a>CPagerCtrl sınıfı
+# <a name="cpagerctrl-class"></a>CPagerCtrl Sınıfı
 
-`CPagerCtrl` Sınıfı Windows sayfalayıcı denetimini sarmalanmış ve kapsayan pencereye uymayan bir içerilen pencereyi görüntülemeye kaydırabilen.
+Sınıf, `CPagerCtrl` içerdiği pencereye uymayan bir pencereyi görüntülemek için kaydırabilirsiniz Windows çağrı cihazı denetimini sarar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,60 +69,60 @@ class CPagerCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CPagerCtrl:: CPagerCtrl](#cpagerctrl)|Bir `CPagerCtrl` nesnesi oluşturur.|
+|[CPagerCtrl::CPagerCtrl](#cpagerctrl)|Bir `CPagerCtrl` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CPagerCtrl:: Create](#create)|Belirtilen stillerle bir sayfalayıcı denetimi oluşturur ve geçerli `CPagerCtrl` nesneye ekler.|
-|[CPagerCtrl:: CreateEx](#createex)|Belirtilen genişletilmiş stillerle bir sayfalayıcı denetimi oluşturur ve geçerli `CPagerCtrl` nesneye ekler.|
-|[CPagerCtrl:: ForwardMouse](#forwardmouse)|Geçerli sayfalayıcı denetiminde bulunan pencereye [WM_MOUSEMOVE](/windows/win32/inputdev/wm-mousemove) iletilerini iletmeyi sağlar veya devre dışı bırakır.|
-|[CPagerCtrl:: GetBkColor](#getbkcolor)|Geçerli sayfalayıcı denetiminin arka plan rengini alır.|
-|[CPagerCtrl:: GetBorder](#getborder)|Geçerli sayfalayıcı denetiminin kenarlık boyutunu alır.|
-|[CPagerCtrl:: GetButtonSize](#getbuttonsize)|Geçerli sayfalayıcı denetiminin düğme boyutunu alır.|
-|[CPagerCtrl:: GetButtonState](#getbuttonstate)|Geçerli sayfalayıcı denetimindeki belirtilen düğmenin durumunu alır.|
-|[CPagerCtrl:: GetDropTarget](#getdroptarget)|Geçerli sayfalayıcı denetimi için [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) arabirimini alır.|
-|[CPagerCtrl:: GetScrollPos](#getscrollpos)|Geçerli sayfalayıcı denetiminin kaydırma konumunu alır.|
-|[CPagerCtrl:: Isbuttondepınat](#isbuttondepressed)|Geçerli sayfalayıcı denetiminin `pressed` belirtilen düğmesinin durumunda olup olmadığını gösterir.|
-|[CPagerCtrl:: Isbuttongridir](#isbuttongrayed)|Geçerli sayfalayıcı denetiminin `grayed` belirtilen düğmesinin durumunda olup olmadığını gösterir.|
-|[CPagerCtrl:: IsButtonHot](#isbuttonhot)|Geçerli sayfalayıcı denetiminin `hot` belirtilen düğmesinin durumunda olup olmadığını gösterir.|
-|[CPagerCtrl:: Isbuttongörünmez](#isbuttoninvisible)|Geçerli sayfalayıcı denetiminin `invisible` belirtilen düğmesinin durumunda olup olmadığını gösterir.|
-|[CPagerCtrl:: IsButtonNormal](#isbuttonnormal)|Geçerli sayfalayıcı denetiminin `normal` belirtilen düğmesinin durumunda olup olmadığını gösterir.|
-|[CPagerCtrl:: yeniden hesaplama](#recalcsize)|Geçerli sayfalayıcı denetiminin içerilen pencerenin boyutunu yeniden hesaplamasını sağlar.|
-|[CPagerCtrl:: SetBkColor](#setbkcolor)|Geçerli sayfalayıcı denetiminin arka plan rengini ayarlar.|
-|[CPagerCtrl:: SetBorder](#setborder)|Geçerli sayfalayıcı denetiminin kenarlık boyutunu ayarlar.|
-|[CPagerCtrl:: SetButtonSize](#setbuttonsize)|Geçerli sayfalayıcı denetiminin düğme boyutunu ayarlar.|
-|[CPagerCtrl:: SetChild](#setchild)|Geçerli sayfalayıcı denetimi için içerilen pencereyi ayarlar.|
-|[CPagerCtrl:: SetScrollPos](#setscrollpos)|Geçerli sayfalayıcı denetiminin kaydırma konumunu ayarlar.|
+|[CPagerCtrl::Oluştur](#create)|Belirtilen stilleri içeren bir çağrı cihazı denetimi oluşturur `CPagerCtrl` ve geçerli nesneye bağlar.|
+|[CPagerCtrl::CreateEx](#createex)|Belirtilen genişletilmiş stilleri içeren bir çağrı cihazı denetimi oluşturur `CPagerCtrl` ve geçerli nesneye bağlar.|
+|[CPagerCtrl::İleri Fare](#forwardmouse)|[İletileri](/windows/win32/inputdev/wm-mousemove) geçerli çağrı cihazı denetiminde bulunan pencereye WM_MOUSEMOVE iletmeyi etkinleştirer veya devre dışı kılabilir.|
+|[CPagerCtrl::GetBkColor](#getbkcolor)|Geçerli çağrı cihazı denetiminin arka plan rengini alır.|
+|[CPagerCtrl::GetBorder](#getborder)|Geçerli çağrı cihazı denetiminin kenarlık boyutunu alır.|
+|[CPagerCtrl::GetButtonSize](#getbuttonsize)|Geçerli çağrı cihazı denetiminin düğme boyutunu alır.|
+|[CPagerCtrl::GetButtonState](#getbuttonstate)|Geçerli çağrı cihazı denetiminde belirtilen düğmenin durumunu alır.|
+|[CPagerCtrl::GetDropTarget](#getdroptarget)|Geçerli çağrı cihazı denetimi için [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) arabirimini alır.|
+|[CPagerCtrl::GetScrollPos](#getscrollpos)|Geçerli çağrı cihazı denetiminin kaydırma konumunu alır.|
+|[CPagerCtrl::IsButtonDepressed](#isbuttondepressed)|Geçerli çağrı cihazı denetiminin belirtilen düğmesinin `pressed` durumda olup olmadığını gösterir.|
+|[CPagerCtrl::IsButtonGrayed](#isbuttongrayed)|Geçerli çağrı cihazı denetiminin belirtilen düğmesinin `grayed` durumda olup olmadığını gösterir.|
+|[CPagerCtrl::IsButtonHot](#isbuttonhot)|Geçerli çağrı cihazı denetiminin belirtilen düğmesinin `hot` durumda olup olmadığını gösterir.|
+|[CPagerCtrl::IsButtonInvisible](#isbuttoninvisible)|Geçerli çağrı cihazı denetiminin belirtilen düğmesinin `invisible` durumda olup olmadığını gösterir.|
+|[CPagerCtrl::IsButtonNormal](#isbuttonnormal)|Geçerli çağrı cihazı denetiminin belirtilen düğmesinin `normal` durumda olup olmadığını gösterir.|
+|[CPagerCtrl::RecalcSize](#recalcsize)|Geçerli çağrı cihazı denetiminin, içerdiği pencerenin boyutunu yeniden hesaplamasına neden olur.|
+|[CPagerCtrl::SetBkColor](#setbkcolor)|Geçerli çağrı cihazı denetiminin arka plan rengini ayarlar.|
+|[CPagerCtrl::SetBorder](#setborder)|Geçerli çağrı cihazı denetiminin kenarlık boyutunu ayarlar.|
+|[CPagerCtrl::SetButtonSize](#setbuttonsize)|Geçerli çağrı cihazı denetiminin düğme boyutunu ayarlar.|
+|[CPagerCtrl::SetChild](#setchild)|Geçerli çağrı cihazı denetimi için içerdiği pencereyi ayarlar.|
+|[CPagerCtrl::SetScrollPos](#setscrollpos)|Geçerli çağrı cihazı denetiminin kaydırma konumunu ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sayfalayıcı denetimi, kapsayan pencere ile doğrusal ve daha büyük bir pencere içeren ve içerilen pencereyi görünüme kaydırabilmenizi sağlayan bir penceredir. Sayfalayıcı denetimi, içerilen pencere en uzak kapsamına kaydırıldığında otomatik olarak kaybolan iki kaydırma düğmesini görüntüler ve aksi takdirde yeniden görüntülenir. Yatay veya dikey olarak kaydırma yapan bir sayfalayıcı denetimi oluşturabilirsiniz.
+Çağrı cihazı denetimi, doğrusal ve içerdiği pencereden daha büyük başka bir pencere içeren ve içerdiği pencereyi görünüme kaydırmanızı sağlayan bir penceredir. Çağrı cihazı denetimi, içerdiği pencere en uzak ölçüde kaydırıldığında otomatik olarak kaybolan iki kaydırma düğmesi görüntüler ve aksi takdirde yeniden görünür. Yatay veya dikey olarak kaydırılabilen bir çağrı cihazı denetimi oluşturabilirsiniz.
 
-Örneğin, uygulamanızın tüm öğelerini göstermek için yeterince geniş olmayan bir araç çubuğu varsa, araç çubuğunu bir sayfalayıcı denetimine atayabilirsiniz ve kullanıcılar araç çubuğunu sola veya sağa kaydırabilecektir ve öğelerin tümüne erişin. Microsoft Internet Explorer sürüm 4,0 (commctrl. dll sürüm 4,71) sayfalayıcı denetimini tanıtır.
+Örneğin, uygulamanızda tüm öğelerini gösterecek kadar geniş olmayan bir araç çubuğu varsa, araç çubuğunu bir çağrı cihazı denetimine atayabilirsiniz ve kullanıcılar tüm öğelere erişmek için araç çubuğunu sola veya sağa kaydırabilir. Microsoft Internet Explorer Sürüm 4.0 (commctrl.dll sürüm 4.71) çağrı cihazı denetimini sunar.
 
-Sınıfı, [CWnd sınıfından türetilir.](../../mfc/reference/cwnd-class.md) `CPagerCtrl` Daha fazla bilgi ve çağrı denetimi çizimi için bkz. [sayfalayıcı denetimleri](/windows/win32/Controls/pager-controls).
+Sınıf `CPagerCtrl` [CWnd](../../mfc/reference/cwnd-class.md) sınıfından türetilmiştir. Daha fazla bilgi ve çağrı cihazı denetiminin bir örneği için [Çağrı Cihazı Denetimleri](/windows/win32/Controls/pager-controls)bölümüne bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 `CPagerCtrl`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxcmn. h
+**Başlık:** afxcmn.h
 
-##  <a name="cpagerctrl"></a>CPagerCtrl:: CPagerCtrl
+## <a name="cpagerctrlcpagerctrl"></a><a name="cpagerctrl"></a>CPagerCtrl::CPagerCtrl
 
-Bir `CPagerCtrl` nesnesi oluşturur.
+Bir `CPagerCtrl` nesne inşa eder.
 
 ```
 CPagerCtrl();
@@ -130,11 +130,11 @@ CPagerCtrl();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sayfalayıcı denetimi oluşturmak ve `CPagerCtrl` nesneye iliştirmek için [CPagerCtrl:: Create](#create) veya [CPagerCtrl:: CreateEx](#createex) metodunu kullanın.
+Çağrı cihazı denetimi oluşturmak ve nesneye takmak için [CPagerCtrl::Create](#create) veya [CPagerCtrl::CreateEx](#createex) yöntemini `CPagerCtrl` kullanın.
 
-##  <a name="create"></a>CPagerCtrl:: Create
+## <a name="cpagerctrlcreate"></a><a name="create"></a>CPagerCtrl::Oluştur
 
-Belirtilen stillerle bir sayfalayıcı denetimi oluşturur ve geçerli `CPagerCtrl` nesneye ekler.
+Belirtilen stilleri içeren bir çağrı cihazı denetimi oluşturur `CPagerCtrl` ve geçerli nesneye bağlar.
 
 ```
 virtual BOOL Create(
@@ -148,28 +148,28 @@ virtual BOOL Create(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*dwStyle*|'ndaki Denetime uygulanacak [pencere stillerinin](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [sayfalayıcı denetim stillerinin](/windows/win32/Controls/pager-control-styles) BIT düzeyinde birleşimi (veya).|
-|*Rect*|'ndaki İstemci koordinatlarındaki denetimin konumunu ve boyutunu içeren bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.|
-|*pParentWnd*|'ndaki Denetimin üst penceresi olan [CWnd](../../mfc/reference/cwnd-class.md) nesnesine yönelik bir işaretçi. Bu parametre NULL olamaz.|
-|*NID*|'ndaki Denetimin KIMLIĞI.|
+|*Dwstyle*|[içinde] Denetime uygulanacak [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetim stillerinin](/windows/win32/Controls/pager-control-styles) bitwise kombinasyonu (VEYA).|
+|*Rect*|[içinde] İstemci koordinatlarında denetimin konumunu ve boyutunu içeren bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.|
+|*pParentWnd*|[içinde] Denetimin ana penceresi olan [CWnd](../../mfc/reference/cwnd-class.md) nesnesine işaretçi. Bu parametre NULL olamaz.|
+|*Nıd*|[içinde] Kontrol kimliği.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
+Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sayfalayıcı denetimi oluşturmak için bir `CPagerCtrl` değişken bildirin, ardından Bu değişkende [CPagerCtrl:: Create](#create) veya [CPagerCtrl:: CreateEx](#createex) metodunu çağırın.
+Çağrı cihazı denetimi oluşturmak için `CPagerCtrl` bir değişken bildirin ve ardından [CPagerCtrl'yi arayın::Bu](#create) değişkende CreateEx yöntemini oluşturun [veya CPagerCtrl::CreateEx](#createex) yöntemini oluşturun.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir sayfalayıcı denetimi oluşturur ve sonra çok uzun bir düğme denetimini sayfalayıcı denetimiyle ilişkilendirmek için [CPagerCtrl:: SetChild](#setchild) yöntemini kullanır. Örnek daha sonra [CPagerCtrl:: SetButtonSize](#setbuttonsize) yöntemini kullanarak sayfalayıcı denetiminin yüksekliğini 20 piksel, sonra da kenarlık kalınlığını 1 piksel olarak ayarlamak Için [CPagerCtrl:: SetBorder](#setborder) yöntemini kullanır.
+Aşağıdaki örnek bir çağrı cihazı denetimi oluşturur, ardından çağrı cihazı denetimi ile çok uzun bir düğme denetimini ilişkilendirmek için [CPagerCtrl::SetChild](#setchild) yöntemini kullanır. Örnek daha sonra çağrı cihazı denetiminin yüksekliğini 20 piksele ayarlamak için [CPagerCtrl::SetButtonSize](#setbuttonsize) yöntemini kullanır ve kenarlık kalınlığını 1 piksele ayarlamak için [CPagerCtrl::SetBorder](#setborder) yöntemi.
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_1.cpp)]
 
-##  <a name="createex"></a>CPagerCtrl:: CreateEx
+## <a name="cpagerctrlcreateex"></a><a name="createex"></a>CPagerCtrl::CreateEx
 
-Belirtilen genişletilmiş stillerle bir sayfalayıcı denetimi oluşturur ve geçerli `CPagerCtrl` nesneye ekler.
+Belirtilen genişletilmiş stilleri içeren bir çağrı cihazı denetimi oluşturur `CPagerCtrl` ve geçerli nesneye bağlar.
 
 ```
 virtual BOOL CreateEx(
@@ -184,23 +184,23 @@ virtual BOOL CreateEx(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*dwExStyle*|'ndaki Denetime uygulanacak genişletilmiş stillerin bit düzeyinde birleşimi. Daha fazla bilgi için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Işlevinin *dwExStyle* parametresi.|
-|*dwStyle*|'ndaki Denetime uygulanacak [pencere stillerinin](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [sayfalayıcı denetim stillerinin](/windows/win32/Controls/pager-control-styles) BIT düzeyinde birleşimi (veya).|
-|*Rect*|'ndaki İstemci koordinatlarındaki denetimin konumunu ve boyutunu içeren bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.|
-|*pParentWnd*|'ndaki Denetimin üst penceresi olan [CWnd](../../mfc/reference/cwnd-class.md) nesnesine yönelik bir işaretçi. Bu parametre NULL olamaz.|
-|*NID*|'ndaki Denetimin KIMLIĞI.|
+|*dwExStyle*|[içinde] Denetime uygulanacak genişletilmiş stillerin bitwise kombinasyonu. Daha fazla bilgi için [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) işlevinin *dwExStyle* parametresini görün.|
+|*Dwstyle*|[içinde] Denetime uygulanacak [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetim stillerinin](/windows/win32/Controls/pager-control-styles) bitwise kombinasyonu (VEYA).|
+|*Rect*|[içinde] İstemci koordinatlarında denetimin konumunu ve boyutunu içeren bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.|
+|*pParentWnd*|[içinde] Denetimin ana penceresi olan [CWnd](../../mfc/reference/cwnd-class.md) nesnesine işaretçi. Bu parametre NULL olamaz.|
+|*Nıd*|[içinde] Kontrol kimliği.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
+Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sayfalayıcı denetimi oluşturmak için bir `CPagerCtrl` değişken bildirin, ardından Bu değişkende [CPagerCtrl:: Create](#create) veya [CPagerCtrl:: CreateEx](#createex) metodunu çağırın.
+Çağrı cihazı denetimi oluşturmak için `CPagerCtrl` bir değişken bildirin ve ardından [CPagerCtrl'yi arayın::Bu](#create) değişkende CreateEx yöntemini oluşturun [veya CPagerCtrl::CreateEx](#createex) yöntemini oluşturun.
 
-##  <a name="forwardmouse"></a>CPagerCtrl:: ForwardMouse
+## <a name="cpagerctrlforwardmouse"></a><a name="forwardmouse"></a>CPagerCtrl::İleri Fare
 
-Geçerli sayfalayıcı denetiminde bulunan pencereye [WM_MOUSEMOVE](/windows/win32/inputdev/wm-mousemove) iletilerini iletmeyi sağlar veya devre dışı bırakır.
+[İletileri](/windows/win32/inputdev/wm-mousemove) geçerli çağrı cihazı denetiminde bulunan pencereye WM_MOUSEMOVE iletmeyi etkinleştirer veya devre dışı kılabilir.
 
 ```
 void ForwardMouse(BOOL bForward);
@@ -210,15 +210,15 @@ void ForwardMouse(BOOL bForward);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Bilet*|'ndaki Fare iletilerini iletmek için TRUE, fare iletilerini iletmeyen FALSE.|
+|*bForward*|[içinde] Fare iletilerini iletmek için TRUE veya fare iletilerini iletmemek için FALSE.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_FORWARDMOUSE](/windows/win32/Controls/pgm-forwardmouse) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [PGM_FORWARDMOUSE](/windows/win32/Controls/pgm-forwardmouse) iletisini gönderir.
 
-##  <a name="getborder"></a>CPagerCtrl:: GetBorder
+## <a name="cpagerctrlgetborder"></a><a name="getborder"></a>CPagerCtrl::GetBorder
 
-Geçerli sayfalayıcı denetiminin kenarlık boyutunu alır.
+Geçerli çağrı cihazı denetiminin kenarlık boyutunu alır.
 
 ```
 int GetBorder() const;
@@ -226,21 +226,21 @@ int GetBorder() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Piksel cinsinden ölçülen geçerli kenarlık boyutu.
+Geçerli kenarlık boyutu, piksel cinsinden ölçülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_GETBORDER](/windows/win32/Controls/pgm-getborder) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [PGM_GETBORDER](/windows/win32/Controls/pgm-getborder) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sayfalayıcı denetiminin kenarlığının kalınlığını almak için [CPagerCtrl:: GetBorder](#getborder) metodunu kullanır.
+Aşağıdaki örnekte, çağrı cihazı denetiminin kenarlığı kalınlığını almak için [CPagerCtrl::GetBorder](#getborder) yöntemi kullanır.
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#5](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_2.cpp)]
 
-##  <a name="getbkcolor"></a>CPagerCtrl:: GetBkColor
+## <a name="cpagerctrlgetbkcolor"></a><a name="getbkcolor"></a>CPagerCtrl::GetBkColor
 
-Geçerli sayfalayıcı denetiminin arka plan rengini alır.
+Geçerli çağrı cihazı denetiminin arka plan rengini alır.
 
 ```
 COLORREF GetBkColor() const;
@@ -248,21 +248,21 @@ COLORREF GetBkColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sayfalayıcı denetiminin geçerli arka plan rengini içeren bir [colorref](/windows/win32/gdi/colorref) değeri.
+Çağrı cihazı denetiminin geçerli arka plan rengini içeren bir [COLORREF](/windows/win32/gdi/colorref) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_GETBKCOLOR](/windows/win32/Controls/pgm-getbkcolor) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [PGM_GETBKCOLOR](/windows/win32/Controls/pgm-getbkcolor) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek [CPagerCtrl:: SetBkColor](#setbkcolor) metodunu kullanarak sayfalayıcı denetiminin arka plan rengini kırmızı olarak, [CPagerCtrl:: GetBkColor](#getbkcolor) yöntemini ise değişikliğin yapıldığını onaylayın.
+Aşağıdaki örnekte, çağrı cihazı denetiminin arka plan rengini kırmızıya ayarlamak için [CPagerCtrl::SetBkColor](#setbkcolor) yöntemi ve değişikliğin yapıldığını doğrulamak için [CPagerKColor](#getbkcolor) yöntemi kullanır.
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#4](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_3.cpp)]
 
-##  <a name="getbuttonsize"></a>CPagerCtrl:: GetButtonSize
+## <a name="cpagerctrlgetbuttonsize"></a><a name="getbuttonsize"></a>CPagerCtrl::GetButtonSize
 
-Geçerli sayfalayıcı denetiminin düğme boyutunu alır.
+Geçerli çağrı cihazı denetiminin düğme boyutunu alır.
 
 ```
 int GetButtonSize() const;
@@ -270,17 +270,17 @@ int GetButtonSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Piksel cinsinden ölçülen geçerli düğme boyutu.
+Geçerli düğme boyutu, piksel cinsinden ölçülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_GETBUTTONSIZE](/windows/win32/Controls/pgm-getbuttonsize) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [PGM_GETBUTTONSIZE](/windows/win32/Controls/pgm-getbuttonsize) iletigönderir.
 
-Sayfalayıcı denetiminin PGS_HORZ stili varsa, düğme boyutu sayfalayıcı düğmelerinin genişliğini belirler ve sayfalayıcı denetiminin PGS_VERT stili varsa, düğme boyutu sayfalayıcı düğmelerinin yüksekliğini belirler. Daha fazla bilgi için bkz. [sayfalayıcı denetim stilleri](/windows/win32/Controls/pager-control-styles).
+Çağrı cihazı denetimi PGS_HORZ stiline sahipse, düğme boyutu çağrı cihazı düğmelerinin genişliğini belirler ve çağrı cihazı denetimi PGS_VERT stiline sahipse, düğme boyutu çağrı cihazı düğmelerinin yüksekliğini belirler. Daha fazla bilgi için [Çağrı Cihazı Denetim Stilleri'ne](/windows/win32/Controls/pager-control-styles)bakın.
 
-##  <a name="getbuttonstate"></a>CPagerCtrl:: GetButtonState
+## <a name="cpagerctrlgetbuttonstate"></a><a name="getbuttonstate"></a>CPagerCtrl::GetButtonState
 
-Geçerli sayfalayıcı denetimindeki belirtilen kaydırma düğmesinin durumunu alır.
+Geçerli çağrı cihazı denetiminde belirtilen kaydırma düğmesinin durumunu alır.
 
 ```
 DWORD GetButtonState(int iButton) const;
@@ -290,19 +290,19 @@ DWORD GetButtonState(int iButton) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*IButton*|'ndaki Durumun alındığı düğmeyi gösterir. Sayfalayıcı denetim stili PGS_HORZ ise, sol düğme ve sağ düğme için PGB_BOTTOMORRIGHT için PGB_TOPORLEFT belirtin. Sayfalayıcı denetim stili PGS_VERT ise, en üstteki düğme ve alt düğme için PGB_BOTTOMORRIGHT için PGB_TOPORLEFT belirtin. Daha fazla bilgi için bkz. [sayfalayıcı denetim stilleri](/windows/win32/Controls/pager-control-styles).|
+|*iButton*|[içinde] Durum alınacağı düğmeyi gösterir. Çağrı cihazı denetim stili PGS_HORZ, sol düğme için PGB_TOPORLEFT belirtin ve sağ düğme için PGB_BOTTOMORRIGHT. Çağrı cihazı denetim stili PGS_VERT ise, üst düğme için PGB_TOPORLEFT belirtin ve alt düğme için PGB_BOTTOMORRIGHT. Daha fazla bilgi için [Çağrı Cihazı Denetim Stilleri'ne](/windows/win32/Controls/pager-control-styles)bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*IButton* parametresi tarafından belirtilen düğmenin durumu. Durum PGF_INVISIBLE, PGF_NORMAL, PGF_GRAYED, PGF_DEPRESSED veya PGF_HOT. Daha fazla bilgi için [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) Iletisinin dönüş değeri bölümüne bakın.
+*iButton* parametresi tarafından belirtilen düğmenin durumu. Devlet ya PGF_INVISIBLE, PGF_NORMAL, PGF_GRAYED, PGF_DEPRESSED, ya da PGF_HOT. Daha fazla bilgi için [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisinin İade Değeri bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisini gönderir.
 
-##  <a name="getdroptarget"></a>CPagerCtrl:: GetDropTarget
+## <a name="cpagerctrlgetdroptarget"></a><a name="getdroptarget"></a>CPagerCtrl::GetDropTarget
 
-Geçerli sayfalayıcı denetimi için [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) arabirimini alır.
+Geçerli çağrı cihazı denetimi için [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) arabirimini alır.
 
 ```
 IDropTarget* GetDropTarget() const;
@@ -310,17 +310,17 @@ IDropTarget* GetDropTarget() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli sayfalayıcı denetimi için `IDropTarget` arabirim işaretçisi.
+Geçerli çağrı `IDropTarget` cihazı denetimi için arabirime işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`IDropTarget`, uygulamanızda sürükle ve bırak işlemlerini desteklemek için uyguladığınız arabirimlerden biridir.
+`IDropTarget`uygulamanızda sürükle ve bırak işlemlerini desteklemek için uyguladığınız arabirimlerden biridir.
 
-Bu yöntem, Windows SDK açıklanan [PGM_GETDROPTARGET](/windows/win32/Controls/pgm-getdroptarget) iletisini gönderir. Bu yöntemin çağıranı, arabirime artık gerek kalmadığında `Release` [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) arabiriminin üyesini çağırmaktan sorumludur.
+Bu yöntem, Windows SDK'da açıklanan [PGM_GETDROPTARGET](/windows/win32/Controls/pgm-getdroptarget) iletisini gönderir. Bu yöntemin arayan arabirimi `Release` artık gerekli olduğunda [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) arabiriminin üyesini aramak için sorumludur.
 
-##  <a name="getscrollpos"></a>CPagerCtrl:: GetScrollPos
+## <a name="cpagerctrlgetscrollpos"></a><a name="getscrollpos"></a>CPagerCtrl::GetScrollPos
 
-Geçerli sayfalayıcı denetiminin kaydırma konumunu alır.
+Geçerli çağrı cihazı denetiminin kaydırma konumunu alır.
 
 ```
 int GetScrollPos() const;
@@ -328,21 +328,21 @@ int GetScrollPos() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Piksel cinsinden ölçülen geçerli kaydırma konumu.
+Geçerli kaydırma konumu, piksel cinsinden ölçülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_GETPOS](/windows/win32/Controls/pgm-getpos) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [PGM_GETPOS](/windows/win32/Controls/pgm-getpos) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sayfalayıcı denetiminin geçerli kaydırma konumunu almak için [CPagerCtrl:: GetScrollPos](#getscrollpos) metodunu kullanır. Sayfalayıcı denetimi zaten sıfıra kaydırılmaz, en soldaki konum, örnek, kaydırma konumunu sıfıra ayarlamak için [CPagerCtrl:: SetScrollPos](#setscrollpos) metodunu kullanır.
+Aşağıdaki örnekte, çağrı cihazı denetiminin geçerli kaydırma konumunu almak için [CPagerCtrl::GetScrollPos](#getscrollpos) yöntemi ni kullanır. Çağrı cihazı denetimi zaten sıfıra, en sol konuma kaydırılmazsa, örnek kaydırma konumunu sıfıra ayarlamak için [CPagerCtrl::SetScrollPos](#setscrollpos) yöntemini kullanır.
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#7](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_4.cpp)]
 
-##  <a name="isbuttondepressed"></a>CPagerCtrl:: Isbuttondepınat
+## <a name="cpagerctrlisbuttondepressed"></a><a name="isbuttondepressed"></a>CPagerCtrl::IsButtonDepressed
 
-Geçerli sayfalayıcı denetiminin belirtilen kaydırma düğmesinin basılı durumda olup olmadığını gösterir.
+Geçerli çağrı cihazı denetiminin belirtilen kaydırma düğmesinin basılı durumda olup olmadığını gösterir.
 
 ```
 BOOL IsButtonDepressed(int iButton) const;
@@ -352,19 +352,19 @@ BOOL IsButtonDepressed(int iButton) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*IButton*|'ndaki Durumun alındığı düğmeyi gösterir. Sayfalayıcı denetim stili PGS_HORZ ise, sol düğme ve sağ düğme için PGB_BOTTOMORRIGHT için PGB_TOPORLEFT belirtin. Sayfalayıcı denetim stili PGS_VERT ise, en üstteki düğme ve alt düğme için PGB_BOTTOMORRIGHT için PGB_TOPORLEFT belirtin. Daha fazla bilgi için bkz. [sayfalayıcı denetim stilleri](/windows/win32/Controls/pager-control-styles).|
+|*iButton*|[içinde] Durum alınacağı düğmeyi gösterir. Çağrı cihazı denetim stili PGS_HORZ, sol düğme için PGB_TOPORLEFT belirtin ve sağ düğme için PGB_BOTTOMORRIGHT. Çağrı cihazı denetim stili PGS_VERT ise, üst düğme için PGB_TOPORLEFT belirtin ve alt düğme için PGB_BOTTOMORRIGHT. Daha fazla bilgi için [Çağrı Cihazı Denetim Stilleri'ne](/windows/win32/Controls/pager-control-styles)bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen düğme basılı durumdaysa doğru; Aksi takdirde, FALSE.
+Belirtilen düğme basılı durumdaysa TRUE; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisini gönderir. Ardından, döndürülen durumun PGF_DEPRESSED olup olmadığını sınar. Daha fazla bilgi için [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) Iletisinin dönüş değeri bölümüne bakın.
+Bu yöntem, Windows SDK'da açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisini gönderir. Daha sonra döndürülen durum PGF_DEPRESSED olup olmadığını test edin. Daha fazla bilgi için [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisinin İade Değeri bölümüne bakın.
 
-##  <a name="isbuttongrayed"></a>CPagerCtrl:: Isbuttongridir
+## <a name="cpagerctrlisbuttongrayed"></a><a name="isbuttongrayed"></a>CPagerCtrl::IsButtonGrayed
 
-Geçerli sayfalayıcı denetiminin belirtilen kaydırma düğmesinin gri durumunda olup olmadığını gösterir.
+Geçerli çağrı cihazı denetiminin belirtilen kaydırma düğmesinin gri durumda olup olmadığını gösterir.
 
 ```
 BOOL IsButtonGrayed(int iButton) const;
@@ -374,19 +374,19 @@ BOOL IsButtonGrayed(int iButton) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*IButton*|'ndaki Durumun alındığı düğmeyi gösterir. Sayfalayıcı denetim stili PGS_HORZ ise, sol düğme ve sağ düğme için PGB_BOTTOMORRIGHT için PGB_TOPORLEFT belirtin. Sayfalayıcı denetim stili PGS_VERT ise, en üstteki düğme ve alt düğme için PGB_BOTTOMORRIGHT için PGB_TOPORLEFT belirtin. Daha fazla bilgi için bkz. [sayfalayıcı denetim stilleri](/windows/win32/Controls/pager-control-styles).|
+|*iButton*|[içinde] Durum alınacağı düğmeyi gösterir. Çağrı cihazı denetim stili PGS_HORZ, sol düğme için PGB_TOPORLEFT belirtin ve sağ düğme için PGB_BOTTOMORRIGHT. Çağrı cihazı denetim stili PGS_VERT ise, üst düğme için PGB_TOPORLEFT belirtin ve alt düğme için PGB_BOTTOMORRIGHT. Daha fazla bilgi için [Çağrı Cihazı Denetim Stilleri'ne](/windows/win32/Controls/pager-control-styles)bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen düğme gri durumdaysa doğru; Aksi takdirde, FALSE.
+Belirtilen düğme gri durumdaysa TRUE; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisini gönderir. Ardından, döndürülen durumun PGF_GRAYED olup olmadığını sınar. Daha fazla bilgi için [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) Iletisinin dönüş değeri bölümüne bakın.
+Bu yöntem, Windows SDK'da açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisini gönderir. Daha sonra döndürülen durum PGF_GRAYED olup olmadığını test edin. Daha fazla bilgi için [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisinin İade Değeri bölümüne bakın.
 
-##  <a name="isbuttonhot"></a>CPagerCtrl:: IsButtonHot
+## <a name="cpagerctrlisbuttonhot"></a><a name="isbuttonhot"></a>CPagerCtrl::IsButtonHot
 
-Geçerli sayfalayıcı denetiminin belirtilen kaydırma düğmesinin etkin durumda olup olmadığını gösterir.
+Geçerli çağrı cihazı denetiminin belirtilen kaydırma düğmesinin sıcak durumda olup olmadığını gösterir.
 
 ```
 BOOL IsButtonHot(int iButton) const;
@@ -396,19 +396,19 @@ BOOL IsButtonHot(int iButton) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*IButton*|'ndaki Durumun alındığı düğmeyi gösterir. Sayfalayıcı denetim stili PGS_HORZ ise, sol düğme ve sağ düğme için PGB_BOTTOMORRIGHT için PGB_TOPORLEFT belirtin. Sayfalayıcı denetim stili PGS_VERT ise, en üstteki düğme ve alt düğme için PGB_BOTTOMORRIGHT için PGB_TOPORLEFT belirtin. Daha fazla bilgi için bkz. [sayfalayıcı denetim stilleri](/windows/win32/Controls/pager-control-styles).|
+|*iButton*|[içinde] Durum alınacağı düğmeyi gösterir. Çağrı cihazı denetim stili PGS_HORZ, sol düğme için PGB_TOPORLEFT belirtin ve sağ düğme için PGB_BOTTOMORRIGHT. Çağrı cihazı denetim stili PGS_VERT ise, üst düğme için PGB_TOPORLEFT belirtin ve alt düğme için PGB_BOTTOMORRIGHT. Daha fazla bilgi için [Çağrı Cihazı Denetim Stilleri'ne](/windows/win32/Controls/pager-control-styles)bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen düğme etkin durumdaysa doğru; Aksi takdirde, FALSE.
+Belirtilen düğme sıcak durumdaysa TRUE; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisini gönderir. Ardından, döndürülen durumun PGF_HOT olup olmadığını sınar. Daha fazla bilgi için [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) Iletisinin dönüş değeri bölümüne bakın.
+Bu yöntem, Windows SDK'da açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisini gönderir. Daha sonra döndürülen durumu PGF_HOT olup olmadığını test edin. Daha fazla bilgi için [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisinin İade Değeri bölümüne bakın.
 
-##  <a name="isbuttoninvisible"></a>CPagerCtrl:: Isbuttongörünmez
+## <a name="cpagerctrlisbuttoninvisible"></a><a name="isbuttoninvisible"></a>CPagerCtrl::IsButtonInvisible
 
-Geçerli sayfalayıcı denetiminin belirtilen kaydırma düğmesinin görünmez durumda olup olmadığını gösterir.
+Geçerli çağrı cihazı denetiminin belirtilen kaydırma düğmesinin görünmez durumda olup olmadığını gösterir.
 
 ```
 BOOL IsButtonInvisible(int iButton) const;
@@ -418,27 +418,27 @@ BOOL IsButtonInvisible(int iButton) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*IButton*|'ndaki Durumun alındığı düğmeyi gösterir. Sayfalayıcı denetim stili PGS_HORZ ise, sol düğme ve sağ düğme için PGB_BOTTOMORRIGHT için PGB_TOPORLEFT belirtin. Sayfalayıcı denetim stili PGS_VERT ise, en üstteki düğme ve alt düğme için PGB_BOTTOMORRIGHT için PGB_TOPORLEFT belirtin. Daha fazla bilgi için bkz. [sayfalayıcı denetim stilleri](/windows/win32/Controls/pager-control-styles).|
+|*iButton*|[içinde] Durum alınacağı düğmeyi gösterir. Çağrı cihazı denetim stili PGS_HORZ, sol düğme için PGB_TOPORLEFT belirtin ve sağ düğme için PGB_BOTTOMORRIGHT. Çağrı cihazı denetim stili PGS_VERT ise, üst düğme için PGB_TOPORLEFT belirtin ve alt düğme için PGB_BOTTOMORRIGHT. Daha fazla bilgi için [Çağrı Cihazı Denetim Stilleri'ne](/windows/win32/Controls/pager-control-styles)bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen düğme görünmez durumdaysa doğru; Aksi takdirde, FALSE.
+Belirtilen düğme görünmez durumdaysa TRUE; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Pencereler, içerilen pencere daha fazla pencerenin görünüme daha fazlasını getiremediği için, bulunan pencerenin en üst kapsamına kaydırıldığında, kaydırma düğmesini belirli bir yönde görünmez hale getirir.
+Windows, içerdiği pencere en uzak ölçüde kaydırıldığında belirli bir yöndeki kaydırma düğmesini görünmez kılar, çünkü düğmeyi tıklatmak içerdiği pencereden daha fazlasını görüntüleyemez.
 
-Bu yöntem, Windows SDK açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisini gönderir. Ardından, döndürülen durumun PGF_INVISIBLE olup olmadığını sınar. Daha fazla bilgi için [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) Iletisinin dönüş değeri bölümüne bakın.
+Bu yöntem, Windows SDK'da açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisini gönderir. Daha sonra döndürülen durum PGF_INVISIBLE olup olmadığını test edin. Daha fazla bilgi için [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisinin İade Değeri bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sayfalayıcı denetiminin sol ve sağ kaydırma düğmelerinin görünür olup olmadığını anlamak için [CPagerCtrl:: Isbuttongörünmeyen](#isbuttoninvisible) yöntemini kullanır.
+Aşağıdaki örnekte, çağrı cihazı denetiminin sol ve sağ kaydırma düğmelerinin görünür olup olmadığını belirlemek için [CPagerCtrl::IsButtonInvisible](#isbuttoninvisible) yöntemi ni kullanır.
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#6](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_5.cpp)]
 
-##  <a name="isbuttonnormal"></a>CPagerCtrl:: IsButtonNormal
+## <a name="cpagerctrlisbuttonnormal"></a><a name="isbuttonnormal"></a>CPagerCtrl::IsButtonNormal
 
-Geçerli sayfalayıcı denetiminin belirtilen kaydırma düğmesinin normal durumda olup olmadığını gösterir.
+Geçerli çağrı cihazı denetiminin belirtilen kaydırma düğmesinin normal durumda olup olmadığını gösterir.
 
 ```
 BOOL IsButtonNormal(int iButton) const;
@@ -448,19 +448,19 @@ BOOL IsButtonNormal(int iButton) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*IButton*|'ndaki Durumun alındığı düğmeyi gösterir. Sayfalayıcı denetim stili PGS_HORZ ise, sol düğme ve sağ düğme için PGB_BOTTOMORRIGHT için PGB_TOPORLEFT belirtin. Sayfalayıcı denetim stili PGS_VERT ise, en üstteki düğme ve alt düğme için PGB_BOTTOMORRIGHT için PGB_TOPORLEFT belirtin. Daha fazla bilgi için bkz. [sayfalayıcı denetim stilleri](/windows/win32/Controls/pager-control-styles).|
+|*iButton*|[içinde] Durum alınacağı düğmeyi gösterir. Çağrı cihazı denetim stili PGS_HORZ, sol düğme için PGB_TOPORLEFT belirtin ve sağ düğme için PGB_BOTTOMORRIGHT. Çağrı cihazı denetim stili PGS_VERT ise, üst düğme için PGB_TOPORLEFT belirtin ve alt düğme için PGB_BOTTOMORRIGHT. Daha fazla bilgi için [Çağrı Cihazı Denetim Stilleri'ne](/windows/win32/Controls/pager-control-styles)bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen düğme normal durumdaysa doğru; Aksi takdirde, FALSE.
+Belirtilen düğme normal durumdaysa TRUE; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisini gönderir. Ardından, döndürülen durumun PGF_NORMAL olup olmadığını sınar. Daha fazla bilgi için [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) Iletisinin dönüş değeri bölümüne bakın.
+Bu yöntem, Windows SDK'da açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisini gönderir. Daha sonra döndürülen durum PGF_NORMAL olup olmadığını test edin. Daha fazla bilgi için [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) iletisinin İade Değeri bölümüne bakın.
 
-##  <a name="recalcsize"></a>CPagerCtrl:: yeniden hesaplama
+## <a name="cpagerctrlrecalcsize"></a><a name="recalcsize"></a>CPagerCtrl::RecalcSize
 
-Geçerli sayfalayıcı denetiminin içerilen pencerenin boyutunu yeniden hesaplamasını sağlar.
+Geçerli çağrı cihazı denetiminin, içerdiği pencerenin boyutunu yeniden hesaplamasına neden olur.
 
 ```
 void RecalcSize();
@@ -468,23 +468,23 @@ void RecalcSize();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_RECALCSIZE](/windows/win32/Controls/pgm-recalcsize) iletisini gönderir. Sonuç olarak, sayfalayıcı denetimi içerilen pencerenin kaydırılabilir boyutlarını almak için [PGN_CALCSIZE](/windows/win32/Controls/pgn-calcsize) bildirimini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [PGM_RECALCSIZE](/windows/win32/Controls/pgm-recalcsize) iletisini gönderir. Sonuç olarak, çağrı cihazı denetimi, içerdiği pencerenin kaydırılabilir boyutlarını elde etmek için [PGN_CALCSIZE](/windows/win32/Controls/pgn-calcsize) bildirimi gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, boyutunu yeniden hesaplamak için geçerli sayfalayıcı denetimini istemek üzere [CPagerCtrl:: yeniden hesaplama CSize](#recalcsize) yöntemini kullanır.
+Aşağıdaki örnekte [CPagerCtrl::RecalcSize](#recalcsize) yöntemini kullanır ve boyutunu yeniden hesaplamak için geçerli çağrı cihazı denetimini istemeyi sağlar.
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#3](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_6.cpp)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, denetimin üst iletişim kutusunun hesaplamayı gerçekleştirmesini gerektirmek yerine sayfalayıcı denetiminin kendi boyutunu yeniden hesaplamasını sağlamak için [ileti yansımasını](../../mfc/tn062-message-reflection-for-windows-controls.md) kullanır. Örnek, `MyPagerCtrl` [CPagerCtrl sınıfından](../../mfc/reference/cpagerctrl-class.md)sınıfını türeten sonra [PGN_CALCSIZE](/windows/win32/Controls/pgn-calcsize) bildirimini `OnCalcsize` bildirim işleyicisiyle ilişkilendirmek için bir ileti eşlemesi kullanır. Bu örnekte, bildirim işleyicisi sayfalayıcı denetiminin genişlik ve yüksekliğini sabit değerler olarak ayarlar.
+Aşağıdaki örnekte, hesaplamayı gerçekleştirmek için denetimin üst iletişim kutusunu gerektirmek yerine çağrı cihazı denetiminin kendi boyutunu yeniden hesaplamasını sağlamak için [ileti yansıması](../../mfc/tn062-message-reflection-for-windows-controls.md) kullanılır. Örnek, `MyPagerCtrl` sınıfı [CPagerCtrl sınıfından](../../mfc/reference/cpagerctrl-class.md)türetir, ardından [PGN_CALCSIZE](/windows/win32/Controls/pgn-calcsize) `OnCalcsize` bildirimini bildirim işleyicisiyle ilişkilendirmek için bir ileti eşlemi kullanır. Bu örnekte, bildirim işleyicisi çağrı cihazı denetiminin genişliğini ve yüksekliğini sabit değerlere ayarlar.
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#8](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_7.cpp)]
 
-##  <a name="setbkcolor"></a>CPagerCtrl:: SetBkColor
+## <a name="cpagerctrlsetbkcolor"></a><a name="setbkcolor"></a>CPagerCtrl::SetBkColor
 
-Geçerli sayfalayıcı denetiminin arka plan rengini ayarlar.
+Geçerli çağrı cihazı denetiminin arka plan rengini ayarlar.
 
 ```
 COLORREF SetBkColor(COLORREF clrBk);
@@ -494,25 +494,25 @@ COLORREF SetBkColor(COLORREF clrBk);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*clrBk*|'ndaki Sayfalayıcı denetiminin yeni arka plan rengini içeren bir [colorref](/windows/win32/gdi/colorref) değeri.|
+|*clrBk*|[içinde] Çağrı cihazı denetiminin yeni arka plan rengini içeren bir [COLORREF](/windows/win32/gdi/colorref) değeri.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sayfalayıcı denetiminin önceki arka plan rengini içeren bir [colorref](/windows/win32/gdi/colorref) değeri.
+Çağrı cihazı denetiminin önceki arka plan rengini içeren bir [COLORREF](/windows/win32/gdi/colorref) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_SETBKCOLOR](/windows/win32/Controls/pgm-setbkcolor) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [PGM_SETBKCOLOR](/windows/win32/Controls/pgm-setbkcolor) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek [CPagerCtrl:: SetBkColor](#setbkcolor) metodunu kullanarak sayfalayıcı denetiminin arka plan rengini kırmızı olarak, [CPagerCtrl:: GetBkColor](#getbkcolor) yöntemini ise değişikliğin yapıldığını onaylayın.
+Aşağıdaki örnekte, çağrı cihazı denetiminin arka plan rengini kırmızıya ayarlamak için [CPagerCtrl::SetBkColor](#setbkcolor) yöntemi ve değişikliğin yapıldığını doğrulamak için [CPagerKColor](#getbkcolor) yöntemi kullanır.
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#4](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_3.cpp)]
 
-##  <a name="setborder"></a>CPagerCtrl:: SetBorder
+## <a name="cpagerctrlsetborder"></a><a name="setborder"></a>CPagerCtrl::SetBorder
 
-Geçerli sayfalayıcı denetiminin kenarlık boyutunu ayarlar.
+Geçerli çağrı cihazı denetiminin kenarlık boyutunu ayarlar.
 
 ```
 int SetBorder(int iBorder);
@@ -522,25 +522,25 @@ int SetBorder(int iBorder);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*ıborder*|'ndaki Piksel cinsinden ölçülen yeni kenarlık boyutu. *Iborder* parametresi negatifse, kenarlık boyutu sıfır olarak ayarlanır.|
+|*iBorder*|[içinde] Yeni kenarlık boyutu, piksel cinsinden ölçülür. *iBorder* parametresi negatifse, kenarlık boyutu sıfıra ayarlanır.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki kenarlık boyutu piksel cinsinden ölçülür.
+Önceki kenarlık boyutu, piksel cinsinden ölçülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_SETBORDER](/windows/win32/Controls/pgm-setborder) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [PGM_SETBORDER](/windows/win32/Controls/pgm-setborder) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir sayfalayıcı denetimi oluşturur ve sonra çok uzun bir düğme denetimini sayfalayıcı denetimiyle ilişkilendirmek için [CPagerCtrl:: SetChild](#setchild) yöntemini kullanır. Örnek daha sonra [CPagerCtrl:: SetButtonSize](#setbuttonsize) yöntemini kullanarak sayfalayıcı denetiminin yüksekliğini 20 piksel, sonra da kenarlık kalınlığını 1 piksel olarak ayarlamak Için [CPagerCtrl:: SetBorder](#setborder) yöntemini kullanır.
+Aşağıdaki örnek bir çağrı cihazı denetimi oluşturur, ardından çağrı cihazı denetimi ile çok uzun bir düğme denetimini ilişkilendirmek için [CPagerCtrl::SetChild](#setchild) yöntemini kullanır. Örnek daha sonra çağrı cihazı denetiminin yüksekliğini 20 piksele ayarlamak için [CPagerCtrl::SetButtonSize](#setbuttonsize) yöntemini kullanır ve kenarlık kalınlığını 1 piksele ayarlamak için [CPagerCtrl::SetBorder](#setborder) yöntemi.
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_1.cpp)]
 
-##  <a name="setbuttonsize"></a>CPagerCtrl:: SetButtonSize
+## <a name="cpagerctrlsetbuttonsize"></a><a name="setbuttonsize"></a>CPagerCtrl::SetButtonSize
 
-Geçerli sayfalayıcı denetiminin düğme boyutunu ayarlar.
+Geçerli çağrı cihazı denetiminin düğme boyutunu ayarlar.
 
 ```
 int SetButtonSize(int iButtonSize);
@@ -550,27 +550,27 @@ int SetButtonSize(int iButtonSize);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*ıbuttonsize*|'ndaki Piksel cinsinden ölçülen yeni düğme boyutu.|
+|*iButtonSize*|[içinde] Piksel cinsinden ölçülen yeni düğme boyutu.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki düğme boyutu piksel cinsinden ölçülür.
+Önceki düğme boyutu, piksel cinsinden ölçülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_SETBUTTONSIZE](/windows/win32/Controls/pgm-setpos) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [PGM_SETBUTTONSIZE](/windows/win32/Controls/pgm-setpos) iletisini gönderir.
 
-Sayfalayıcı denetiminin PGS_HORZ stili varsa, düğme boyutu sayfalayıcı düğmelerinin genişliğini belirler ve sayfalayıcı denetiminin PGS_VERT stili varsa, düğme boyutu sayfalayıcı düğmelerinin yüksekliğini belirler. Varsayılan düğme boyutu, kaydırma çubuğunun genişliğinin üç onudur ve minimum düğme boyutu 12 pikselden oluşur. Daha fazla bilgi için bkz. [sayfalayıcı denetim stilleri](/windows/win32/Controls/pager-control-styles).
+Çağrı cihazı denetimi PGS_HORZ stiline sahipse, düğme boyutu çağrı cihazı düğmelerinin genişliğini belirler ve çağrı cihazı denetimi PGS_VERT stiline sahipse, düğme boyutu çağrı cihazı düğmelerinin yüksekliğini belirler. Varsayılan düğme boyutu kaydırma çubuğunun genişliğinin dörtte üçüdür ve minimum düğme boyutu 12 pikseldir. Daha fazla bilgi için [Çağrı Cihazı Denetim Stilleri'ne](/windows/win32/Controls/pager-control-styles)bakın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir sayfalayıcı denetimi oluşturur ve sonra çok uzun bir düğme denetimini sayfalayıcı denetimiyle ilişkilendirmek için [CPagerCtrl:: SetChild](#setchild) yöntemini kullanır. Örnek daha sonra [CPagerCtrl:: SetButtonSize](#setbuttonsize) yöntemini kullanarak sayfalayıcı denetiminin yüksekliğini 20 piksel, sonra da kenarlık kalınlığını 1 piksel olarak ayarlamak Için [CPagerCtrl:: SetBorder](#setborder) yöntemini kullanır.
+Aşağıdaki örnek bir çağrı cihazı denetimi oluşturur, ardından çağrı cihazı denetimi ile çok uzun bir düğme denetimini ilişkilendirmek için [CPagerCtrl::SetChild](#setchild) yöntemini kullanır. Örnek daha sonra çağrı cihazı denetiminin yüksekliğini 20 piksele ayarlamak için [CPagerCtrl::SetButtonSize](#setbuttonsize) yöntemini kullanır ve kenarlık kalınlığını 1 piksele ayarlamak için [CPagerCtrl::SetBorder](#setborder) yöntemi.
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_1.cpp)]
 
-##  <a name="setchild"></a>CPagerCtrl:: SetChild
+## <a name="cpagerctrlsetchild"></a><a name="setchild"></a>CPagerCtrl::SetChild
 
-Geçerli sayfalayıcı denetimi için içerilen pencereyi ayarlar.
+Geçerli çağrı cihazı denetimi için içerdiği pencereyi ayarlar.
 
 ```
 void SetChild(HWND hwndChild);
@@ -580,23 +580,23 @@ void SetChild(HWND hwndChild);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*hwndChild*|'ndaki Dahil edilecek pencere için tanıtıcı.|
+|*hwndÇocuk*|[içinde] Kontrol edilecek pencereye sapla.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_SETCHILD](/windows/win32/Controls/pgm-setchild) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [PGM_SETCHILD](/windows/win32/Controls/pgm-setchild) iletisini gönderir.
 
-Bu yöntem, içerilen pencerenin üst öğesini değiştirmez; yalnızca kaydırma için sayfalayıcı denetimine bir pencere tutamacı atar. Çoğu durumda, içerilen pencere sayfalayıcı denetiminin bir alt penceresi olacaktır.
+Bu yöntem, içerdiği pencerenin üst öğesini değiştirmez; yalnızca kaydırma için çağrı cihazı denetimine bir pencere tutamacı atar. Çoğu durumda, içerdiği pencere çağrı cihazı denetiminin alt penceresi olacaktır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir sayfalayıcı denetimi oluşturur ve sonra çok uzun bir düğme denetimini sayfalayıcı denetimiyle ilişkilendirmek için [CPagerCtrl:: SetChild](#setchild) yöntemini kullanır. Örnek daha sonra [CPagerCtrl:: SetButtonSize](#setbuttonsize) yöntemini kullanarak sayfalayıcı denetiminin yüksekliğini 20 piksel, sonra da kenarlık kalınlığını 1 piksel olarak ayarlamak Için [CPagerCtrl:: SetBorder](#setborder) yöntemini kullanır.
+Aşağıdaki örnek bir çağrı cihazı denetimi oluşturur, ardından çağrı cihazı denetimi ile çok uzun bir düğme denetimini ilişkilendirmek için [CPagerCtrl::SetChild](#setchild) yöntemini kullanır. Örnek daha sonra çağrı cihazı denetiminin yüksekliğini 20 piksele ayarlamak için [CPagerCtrl::SetButtonSize](#setbuttonsize) yöntemini kullanır ve kenarlık kalınlığını 1 piksele ayarlamak için [CPagerCtrl::SetBorder](#setborder) yöntemi.
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_1.cpp)]
 
-##  <a name="setscrollpos"></a>CPagerCtrl:: SetScrollPos
+## <a name="cpagerctrlsetscrollpos"></a><a name="setscrollpos"></a>CPagerCtrl::SetScrollPos
 
-Geçerli sayfalayıcı denetiminin kaydırma konumunu ayarlar.
+Geçerli çağrı cihazı denetiminin kaydırma konumunu ayarlar.
 
 ```
 void SetScrollPos(int iPos);
@@ -606,14 +606,14 @@ void SetScrollPos(int iPos);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*IPOS*|'ndaki Piksel cinsinden ölçülen yeni kaydırma konumu.|
+|*iPos*|[içinde] Piksel cinsinden ölçülen yeni kaydırma konumu.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [PGM_SETPOS](/windows/win32/Controls/pgm-setpos) iletisini gönderir.
+Bu yöntem, Windows SDK'da açıklanan [PGM_SETPOS](/windows/win32/Controls/pgm-setpos) iletisini gönderir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CPagerCtrl Sınıfı](../../mfc/reference/cpagerctrl-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[Sayfalayıcı denetimleri](/windows/win32/Controls/pager-controls)
+[Çağrı Cihazı Denetimleri](/windows/win32/Controls/pager-controls)

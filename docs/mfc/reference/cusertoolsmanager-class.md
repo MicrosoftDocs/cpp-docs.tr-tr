@@ -1,5 +1,5 @@
 ---
-title: CUserToolsManager sınıfı
+title: CusertoolsManager Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CUserToolsManager
@@ -44,16 +44,16 @@ helpviewer_keywords:
 - CUserToolsManager [MFC], SetDefExt
 - CUserToolsManager [MFC], SetFilter
 ms.assetid: bdfa37ae-efca-4616-abb5-9d0dcd2d335b
-ms.openlocfilehash: 857e86184e1b7ea399787520e9c4701547185133
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1f14657350c08679868299ce4878cca2ae10eec
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323378"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373234"
 ---
-# <a name="cusertoolsmanager-class"></a>CUserToolsManager sınıfı
+# <a name="cusertoolsmanager-class"></a>CusertoolsManager Sınıfı
 
-Koleksiyonunu tutar [CUserTool sınıfı](../../mfc/reference/cusertool-class.md) bir uygulamadaki nesneler. Kullanıcı aracı dış uygulamayı çalıştıran menü öğesidir. `CUserToolsManager` Kullanıcı veya uygulamaya yeni kullanıcı araçları eklemesine Geliştirici nesnesi sağlar. Kullanıcı araçlarıyla ilişkili komutların yürütülmesini destekler ve ayrıca Windows kayıt defterine kullanıcı araçlarıyla ilgili bilgileri kaydeder.
+Bir uygulamada [CUserTool Class](../../mfc/reference/cusertool-class.md) nesnelerinin toplanmasını sağlar. Kullanıcı aracı, harici bir uygulama çalıştıran bir menü öğesidir. Nesne, `CUserToolsManager` kullanıcının veya geliştiricinin uygulamaya yeni kullanıcı araçları eklemesini sağlar. Kullanıcı araçlarıyla ilişkili komutların yürütülmesini destekler ve Windows kayıt defterinde kullanıcı araçları hakkında bilgi kaydeder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,64 +65,64 @@ class CUserToolsManager : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CUserToolsManager::CUserToolsManager](#cusertoolsmanager)|Oluşturur bir `CUserToolsManager`.|
+|[CusertoolsManager::CusertoolsManager](#cusertoolsmanager)|Bir `CUserToolsManager`.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CUserToolsManager::CreateNewTool](#createnewtool)|Yeni bir kullanıcı aracı oluşturur.|
-|[CUserToolsManager::FindTool](#findtool)|Bir işaretçi geri döndürür `CMFCUserTool` belirtilen komut kimliğiyle ilişkili nesne|
-|[CUserToolsManager::GetArgumentsMenuID](#getargumentsmenuid)|İlişkili olduğu kaynak kimliği döndürür **bağımsız değişkenleri** menüsünde **Araçları** sekmesinde **Özelleştir** iletişim kutusu.|
-|[CUserToolsManager::GetDefExt](#getdefext)|Varsayılan uzantı döndüren **Dosya Aç** iletişim kutusu ( [CFileDialog](../../mfc/reference/cfiledialog-class.md#cfiledialog)) kullanır **komut** alanını **Araçları** sekmesi **Özelleştir** iletişim kutusu.|
-|[CUserToolsManager::GetFilter](#getfilter)|Dosya Filtresi döndüren **Dosya Aç** iletişim kutusu ( [CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md)) kullanır **komut** alanını **Araçları** sekmesi **Özelleştir** iletişim kutusu.|
-|[CUserToolsManager::GetInitialDirMenuID](#getinitialdirmenuid)|İlişkili olduğu kaynak kimliği döndürür **başlangıç dizini** menüsünde **Araçları** sekmesinde **Özelleştir** iletişim kutusu.|
-|[CUserToolsManager::GetMaxTools](#getmaxtools)|Uygulamada ayrılabilen kullanıcı araçlarını maksimum sayısını döndürür.|
-|[CUserToolsManager::GetToolsEntryCmd](#gettoolsentrycmd)|Kullanıcı araçlarını için menü öğesi yer tutucu komut Kimliğini döndürür.|
-|[CUserToolsManager::GetUserTools](#getusertools)|Kullanıcı araçlarını listesine bir başvuru döndürür.|
-|[CUserToolsManager::InvokeTool](#invoketool)|Belirtilen komut kimliğe sahip kullanıcı aracı ile ilişkili bir uygulama yürütüldüğünde|
-|[CUserToolsManager::IsUserToolCmd](#isusertoolcmd)|Komut kimliği bir kullanıcı aracı ile ilişkili olup olmadığını belirler.|
-|[CUserToolsManager::LoadState](#loadstate)|Kullanıcı araçlarıyla ilgili bilgileri Windows kayıt defterinden yükler.|
-|[CUserToolsManager::MoveToolDown](#movetooldown)|Belirtilen kullanıcı aracı kullanıcı araçlarını listesinde aşağı taşır.|
-|[CUserToolsManager::MoveToolUp](#movetoolup)|Belirtilen kullanıcı aracı kullanıcı araçlarını listesinde yukarı taşır.|
-|[CUserToolsManager::RemoveTool](#removetool)|Belirtilen kullanıcı aracı, uygulamadan kaldırır.|
-|[CUserToolsManager::SaveState](#savestate)|Windows kayıt defterine kullanıcı araçlarıyla ilgili bilgileri depolar.|
-|[CUserToolsManager::SetDefExt](#setdefext)|Varsayılan uzantı belirtir, **Dosya Aç** iletişim kutusu ( [CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md)) kullanır **komut** alanını **Araçları** sekmesi ' ın **Özelleştir** iletişim kutusu.|
-|[CUserToolsManager::SetFilter](#setfilter)|Dosya filtreleme belirtir **Dosya Aç** iletişim kutusu ( [CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md)) kullanır **komut** alanını **Araçları** sekmesi **Özelleştir** iletişim kutusu.|
+|[CuserToolsManager::CreateNewTool](#createnewtool)|Yeni bir kullanıcı aracı oluşturur.|
+|[CusertoolsManager::Findtool](#findtool)|İşaretçiyi belirtilen `CMFCUserTool` bir komut kimliğiyle ilişkili nesneye döndürür.|
+|[CUserToolsManager::GetArgumentsMenuID](#getargumentsmenuid)|**Özelleştir** iletişim kutusunun **Araçlar** sekmesinde **Bağımsızlar** menüsüyle ilişkili kaynak kimliğini döndürür.|
+|[CUserToolsManager::GetDefExt](#getdefext)|**Dosya Aç** iletişim kutusunun [(CFileDialog)](../../mfc/reference/cfiledialog-class.md#cfiledialog)Özelleştir iletişim kutusunun **Araçlar** sekmesindeki **Komut** alanında kullandığı varsayılan uzantıyı **döndürür.**|
+|[CuserToolsManager::GetFilter](#getfilter)|**Dosya Aç** iletişim kutusunun [(CFileDialog Class)](../../mfc/reference/cfiledialog-class.md)Kullandığı Dosya Filtresini, **Özelleştir** iletişim kutusunun **Araçlar** sekmesindeki **Komut** alanında kullanır.|
+|[CuserToolsManager::GetInitialDirMenuID](#getinitialdirmenuid)|**Özelleştir** iletişim kutusunun **Araçlar** sekmesinde **İlk dizin** menüsüyle ilişkili kaynak kimliğini döndürür.|
+|[CusertoolsManager::GetmaxTools](#getmaxtools)|Uygulamada ayrılabilecek maksimum kullanıcı aracı sayısını verir.|
+|[CUserToolsManager::GetToolsEntryCmd](#gettoolsentrycmd)|Kullanıcı araçları için menü öğesi yer tutucunun komut kimliğini verir.|
+|[CusertoolsManager::GetuserTools](#getusertools)|Kullanıcı araçları listesine bir başvuru verir.|
+|[CuserToolsManager::InvokeTool](#invoketool)|Belirli bir komut kimliğine sahip kullanıcı aracıyla ilişkili bir uygulamayı yürütür.|
+|[CUserToolsManager::IsUserToolCmd](#isusertoolcmd)|Komut kimliğinin bir kullanıcı aracıyla ilişkili olup olmadığını belirler.|
+|[CuserToolsManager::loadstate](#loadstate)|Windows kayıt defterinden kullanıcı araçları hakkında bilgi yükler.|
+|[CuserToolsManager::MoveToolDown](#movetooldown)|Belirtilen kullanıcı aracını kullanıcı araçları listesinde aşağı taşır.|
+|[CuserToolsManager::MoveToolUp](#movetoolup)|Belirtilen kullanıcı aracını kullanıcı araçları listesinde yukarı taşır.|
+|[CusertoolsManager::Removetool](#removetool)|Belirtilen kullanıcı aracını uygulamadan kaldırır.|
+|[CuserToolsManager::SaveState](#savestate)|Windows kayıt defterinde kullanıcı araçları yla ilgili bilgileri depolar.|
+|[CUserToolsManager::SetDefExt](#setdefext)|**Dosya Aç** iletişim kutusunun [(CFileDialog Class)](../../mfc/reference/cfiledialog-class.md) **Özelleştir** iletişim kutusunun **Araçlar** sekmesindeki **Komut** alanında kullandığı varsayılan uzantıyı belirtir.|
+|[CuserToolsManager::SetFilter](#setfilter)|**Dosya Aç** iletişim kutusunun [(CFileDialog Class)](../../mfc/reference/cfiledialog-class.md) **Özelleştir** iletişim kutusunun **Araçlar** sekmesindeki **Komut** alanında kullandığı dosya filtresini belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanıcı araçlarını uygulamanıza eklemenize için yapmanız gerekir:
+Kullanıcı araçlarını uygulamanıza dahil etmek için şunları yapmalısınız:
 
-1. Bir menü öğesi ve bir ilişkili komut kimliği için kullanıcı aracı menü girdisi saklı tutarız.
+1. Bir menü öğesi ve ilişkili komut kimliğini kullanıcı aracı menüsü girişi için ayırın.
 
-2. Bir kullanıcı uygulamanıza tanımlayabileceğiniz her kullanıcı aracı için bir sıralı komut kimliği saklı tutarız.
+2. Bir kullanıcının uygulamanızda tanımlayabileceği her kullanıcı aracı için sıralı bir komut kimliği ayırın.
 
-3. Çağrı [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) yöntemi ve aşağıdaki parametreleri girin: menü komut kimliği, ilk kullanıcı aracı komut kimliği ve son kullanıcı aracı komut kimliği.
+3. [CWinAppEx'i arayın::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) yöntemini ve aşağıdaki parametreleri verin: menü komut u, ilk kullanıcı araç komut kimliği ve son kullanıcı aracı komut kimliği.
 
-Bulunmamalıdır yalnızca bir genel `CUserToolsManager` uygulama başına nesne.
+Uygulama başına yalnızca `CUserToolsManager` bir genel nesne olmalıdır.
 
-Kullanıcı araçlarını örneği için VisualStudioDemo kodunuzla bakın.
+Kullanıcı araçları nın bir örneği için VisualStudioDemo örnek projesine bakın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir başvuru almak gösterilmiştir bir `CUserToolsManager` nesne ve yeni kullanıcı araçları oluşturma. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, bir `CUserToolsManager` nesneye nasıl başvuru alındığını ve yeni kullanıcı araçlarının nasıl oluşturulurtur olduğunu gösterir. Bu kod snippet [Visual Studio Demo örnek](../../overview/visual-cpp-samples.md)parçasıdır.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#38](../../mfc/codesnippet/cpp/cusertoolsmanager-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 `CUserToolsManager`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxusertoolsmanager.h
+**Üstbilgi:** afxusertoolsmanager.h
 
-##  <a name="createnewtool"></a>  CUserToolsManager::CreateNewTool
+## <a name="cusertoolsmanagercreatenewtool"></a><a name="createnewtool"></a>CuserToolsManager::CreateNewTool
 
 Yeni bir kullanıcı aracı oluşturur.
 
@@ -132,17 +132,17 @@ CUserTool* CreateNewTool();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan kullanıcı aracı ya da kullanıcı araçlarını sayısı üst sınırı aşarsa NULL bir işaretçi. Döndürülen türü geçirilir türü aynıdır `CWinAppEx::EnableUserTools` olarak *pToolRTC* parametresi.
+Yeni oluşturulan kullanıcı aracına işaretçi veya kullanıcı araçlarının sayısı maksimumu aşmışsa NULL. Döndürülen `CWinAppEx::EnableUserTools` *tür, pToolRTC* parametresi olarak geçirilen türle aynıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem çağrısında sağlanan aralıktaki ilk kullanılabilir menü komut Kimliğini bulur, [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) ve kullanıcı aracı, bu kimliği atar.
+Bu yöntem, CWinAppEx'e yapılan çağrıda verilen aralıktaki ilk kullanılabilir menü komut uyanının kimliğini [bulur::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) ve kullanıcı aracına bu kimliği atar.
 
-Araçlar sayısı üst sınıra ulaştı yöntemi başarısız olur. Kullanıcı araçlarını aralıktaki tüm komut kimlikleri atandığında gerçekleşir. Çağırarak araçları sayısı alabilirsiniz [CUserToolsManager::GetMaxTools](#getmaxtools). Çağırarak araçları listesine erişim sağlayabilmek için [CUserToolsManager::GetUserTools](#getusertools) yöntemi.
+Araç sayısı maksimuma ulaşmışsa yöntem başarısız olur. Bu, aralıktaki tüm komut d'leri kullanıcı araçlarına atandığında oluşur. CUserToolsManager'ı arayarak maksimum araç sayısını [alabilirsiniz::GetMaxTools.](#getmaxtools) [CUserToolsManager::GetUserTools](#getusertools) yöntemini arayarak araçlar listesine erişebilirsiniz.
 
-##  <a name="cusertoolsmanager"></a>  CUserToolsManager::CUserToolsManager
+## <a name="cusertoolsmanagercusertoolsmanager"></a><a name="cusertoolsmanager"></a>CusertoolsManager::CusertoolsManager
 
-Oluşturur bir `CUserToolsManager`. Her uygulama, en fazla bir kullanıcı araçları Yöneticisi olması gerekir.
+Bir `CUserToolsManager`. Her uygulamanın en fazla bir kullanıcı aracı yöneticisi olmalıdır.
 
 ```
 CUserToolsManager();
@@ -159,30 +159,30 @@ CUserToolsManager(
 ### <a name="parameters"></a>Parametreler
 
 *uiCmdToolsDummy*<br/>
-[in] Framework kullanıcı Araçlar menüsünden komut kimliği için bir yer tutucu olarak kullanan bir işaretsiz tamsayı.
+[içinde] Çerçevenin kullanıcı araçları menüsünün komut kimliği için yer tutucu olarak kullandığı imzasız bir tamsayı.
 
-*uiCmdFirst*<br/>
-[in] İlk kullanıcı aracı komutu için komut kimliği.
+*uiCmdİlk*<br/>
+[içinde] İlk kullanıcı aracı komutu için komut kimliği.
 
-*uiCmdLast*<br/>
-[in] Son kullanıcı aracı komutu için komut kimliği.
+*uiCmdSon*<br/>
+[içinde] Son kullanıcı aracı komutu için komut kimliği.
 
 *pToolRTC*<br/>
-[in] Sınıfı, [CUserToolsManager::CreateNewTool](#createnewtool) oluşturur. Bu sınıfı kullanarak, türetilmiş bir tür kullanabilirsiniz [CUserTool sınıfı](../../mfc/reference/cusertool-class.md) yerine varsayılan uygulaması.
+[içinde] [CUserToolsManager::CreateNewTool'un](#createnewtool) oluşturduğu sınıf. Bu sınıfı kullanarak, varsayılan uygulama yerine türetilmiş bir [CUserTool Sınıfı](../../mfc/reference/cusertool-class.md) türünü kullanabilirsiniz.
 
 *uArgMenuID*<br/>
-[in] Bağımsız değişken açılan menü menü kaynak kimliği.
+[içinde] Bağımsız değişkenler açılır menüsünün menü kaynak kimliği.
 
 *uInitDirMenuID*<br/>
-[in] Başlangıç dizini açılan menü menü kaynak kimliği.
+[içinde] İlk dizin açılır menüsünün menü kaynak kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu oluşturucu çağırmanız gerekmez. Bunun yerine çağrı [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) kullanıcı Araçları'nı etkinleştirin ve çağrı [CWinAppEx::GetUserToolsManager](../../mfc/reference/cwinappex-class.md#getusertoolsmanager) bir işaretçi alma için `CUserToolsManager`. Daha fazla bilgi için [kullanıcı tanımlı Araçlar](../../mfc/user-defined-tools.md).
+Bu yapıcıyı aramayın. Bunun yerine, [CWinAppEx'i arayın::Kullanıcı](../../mfc/reference/cwinappex-class.md#enableusertools) araçlarını etkinleştirmek için EnableUserTools'u arayın ve [CWinAppEx'i arayın::GetUserToolsManager'a](../../mfc/reference/cwinappex-class.md#getusertoolsmanager) bir işaretçi elde etmek için `CUserToolsManager`. Daha fazla bilgi için [Kullanıcı Tanımlı Araçlar'a](../../mfc/user-defined-tools.md)bakın.
 
-##  <a name="findtool"></a>  CUserToolsManager::FindTool
+## <a name="cusertoolsmanagerfindtool"></a><a name="findtool"></a>CusertoolsManager::Findtool
 
-Bir işaretçi geri döndürür [CUserTool sınıfı](../../mfc/reference/cusertool-class.md) belirtilen komut kimliğiyle ilişkili nesne
+İşaretçiyi, belirtilen bir komut kimliğiyle ilişkili [CUserTool Sınıfı](../../mfc/reference/cusertool-class.md) nesnesine döndürür.
 
 ```
 CUserTool* FindTool(UINT uiCmdId) const;
@@ -191,19 +191,19 @@ CUserTool* FindTool(UINT uiCmdId) const;
 ### <a name="parameters"></a>Parametreler
 
 *uiCmdId*<br/>
-[in] Menü komut tanımlayıcısı.
+[içinde] Menü komut tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir [CUserTool sınıfı](../../mfc/reference/cusertool-class.md) veya `CUserTool`-türetilmiş bir nesneye, başarı; Aksi takdirde NULL.
+Bir [CUserTool Sınıfı](../../mfc/reference/cusertool-class.md) veya `CUserTool`başarılı olursa türetilmiş nesne için bir işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `FindTool` olan başarılı, döndürülen tür ile aynı türdür *pToolRTC* parametresi [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).
+Başarılı `FindTool` olduğunda, döndürülen tür CWinAppEx *için pToolRTC* parametre türü ile [aynıdır::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).
 
-##  <a name="getargumentsmenuid"></a>  CUserToolsManager::GetArgumentsMenuID
+## <a name="cusertoolsmanagergetargumentsmenuid"></a><a name="getargumentsmenuid"></a>CUserToolsManager::GetArgumentsMenuID
 
-İlişkili olduğu kaynak kimliği döndürür **bağımsız değişkenleri** menüsünde **Araçları** sekmesinde **Özelleştir** iletişim kutusu.
+**Özelleştir** iletişim kutusunun **Araçlar** sekmesinde **Bağımsızlar** menüsüyle ilişkili kaynak kimliğini döndürür.
 
 ```
 UINT GetArgumentsMenuID() const;
@@ -211,15 +211,15 @@ UINT GetArgumentsMenuID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir menü kaynağı tanımlayıcısı.
+Menü kaynağının tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*UArgMenuID* parametresinin [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) kaynak Kimliğini belirtir.
+[CWinAppEx'in](../../mfc/reference/cwinappex-class.md#enableusertools) *uArgMenuID* parametresi::EnableUserTools kaynağın kimliğini belirtir.
 
-##  <a name="getdefext"></a>  CUserToolsManager::GetDefExt
+## <a name="cusertoolsmanagergetdefext"></a><a name="getdefext"></a>CUserToolsManager::GetDefExt
 
-Varsayılan uzantı döndüren **Dosya Aç** iletişim kutusu ( [CFileDialog](../../mfc/reference/cfiledialog-class.md#cfiledialog)) kullanır **komut** alanını **Araçları** sekmesi **Özelleştir** iletişim kutusu.
+**Dosya Aç** iletişim kutusunun [(CFileDialog)](../../mfc/reference/cfiledialog-class.md#cfiledialog)Özelleştir iletişim kutusunun **Araçlar** sekmesindeki **Komut** alanında kullandığı varsayılan uzantıyı **döndürür.**
 
 ```
 const CString& GetDefExt() const;
@@ -227,11 +227,11 @@ const CString& GetDefExt() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir başvuru `CString` uzantıyı içeren nesne.
+Uzantıyı `CString` içeren nesneye bir başvuru.
 
-##  <a name="getfilter"></a>  CUserToolsManager::GetFilter
+## <a name="cusertoolsmanagergetfilter"></a><a name="getfilter"></a>CuserToolsManager::GetFilter
 
-Dosya Filtresi döndüren **Dosya Aç** iletişim kutusu ( [CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md)) kullanır **komut** alanını **Araçları** sekmesi **Özelleştir** iletişim kutusu.
+**Dosya Aç** iletişim kutusunun [(CFileDialog Class)](../../mfc/reference/cfiledialog-class.md)Kullandığı Dosya Filtresini, **Özelleştir** iletişim kutusunun **Araçlar** sekmesindeki **Komut** alanında kullanır.
 
 ```
 const CString& GetFilter() const;
@@ -239,11 +239,11 @@ const CString& GetFilter() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir başvuru `CString` filtre içeren nesne.
+Filtreyi `CString` içeren nesneye bir başvuru.
 
-##  <a name="getinitialdirmenuid"></a>  CUserToolsManager::GetInitialDirMenuID
+## <a name="cusertoolsmanagergetinitialdirmenuid"></a><a name="getinitialdirmenuid"></a>CuserToolsManager::GetInitialDirMenuID
 
-İlişkili olduğu kaynak kimliği döndürür **başlangıç dizini** menüsünde **Araçları** sekmesinde **Özelleştir** iletişim kutusu.
+**Özelleştir** iletişim kutusunun **Araçlar** sekmesinde **İlk dizin** menüsüyle ilişkili kaynak kimliğini döndürür.
 
 ```
 UINT GetInitialDirMenuID() const;
@@ -251,15 +251,15 @@ UINT GetInitialDirMenuID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir menü kaynak tanımlayıcısı.
+Menü kaynak tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen kimliği belirtilen *uInitDirMenuID* parametresinin [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).
+Döndürülen kimlik CWinAppEx *uInitDirMenuID* parametre [belirtilir::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).
 
-##  <a name="getmaxtools"></a>  CUserToolsManager::GetMaxTools
+## <a name="cusertoolsmanagergetmaxtools"></a><a name="getmaxtools"></a>CusertoolsManager::GetmaxTools
 
-Uygulamada ayrılabilen kullanıcı araçlarını maksimum sayısını döndürür.
+Uygulamada ayrılabilecek maksimum kullanıcı aracı sayısını verir.
 
 ```
 int GetMaxTools() const;
@@ -267,15 +267,15 @@ int GetMaxTools() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılabilen kullanıcı araçlarını maksimum sayısı.
+Ayrılabilen maksimum kullanıcı aracı sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamada ayrılabilen araçları maksimum sayısını almak için bu yöntemi çağırın. Bu sayı kimlikleri aralığında sayısıdır *uiCmdFirst* aracılığıyla *uiCmdLast* geçirdiğiniz parametreler [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).
+Uygulamada ayrılabilecek en fazla araç sayısını almak için bu yöntemi arayın. Bu numara, CWinAppEx'e geçtiğiniz *uiCmdLast* parametreleri aracılığıyla *uiCmdFirst aralığındaki iICmdFirst'in* [numarasıdır::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).
 
-##  <a name="gettoolsentrycmd"></a>  CUserToolsManager::GetToolsEntryCmd
+## <a name="cusertoolsmanagergettoolsentrycmd"></a><a name="gettoolsentrycmd"></a>CUserToolsManager::GetToolsEntryCmd
 
-Kullanıcı araçlarını için menü öğesi yer tutucu komut Kimliğini döndürür.
+Kullanıcı araçları için menü öğesi yer tutucunun komut kimliğini verir.
 
 ```
 UINT GetToolsEntryCmd() const;
@@ -283,15 +283,15 @@ UINT GetToolsEntryCmd() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yer tutucu komut kimliği.
+Yer tutucunun komut kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı araçlarını etkinleştirmek için çağrı [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools). *UiCmdToolsDummy* parametresi araçları giriş komutu komut Kimliğini belirtir. Bu yöntem araçları giriş komut kimliği döndürür Bu kimliği bir menüde kullanıldığı her yerde, menü görüntülendiğinde kullanıcı araçlarını listesi tarafından değiştirilir.
+Kullanıcı araçlarını etkinleştirmek için [CWinAppEx::EnableUserTools'u](../../mfc/reference/cwinappex-class.md#enableusertools)arayabilirsiniz. *uiCmdToolsDummy* parametresi araçlar giriş komutunun komut kimliğini belirtir. Bu yöntem, araçlar giriş komut uyruşu kimliğini döndürür. Bu kimlik bir menüde nerede kullanılırsa kullanılsın, menü görüntülendiğinde kullanıcı araçları listesi yle değiştirilir.
 
-##  <a name="getusertools"></a>  CUserToolsManager::GetUserTools
+## <a name="cusertoolsmanagergetusertools"></a><a name="getusertools"></a>CusertoolsManager::GetuserTools
 
-Kullanıcı araçlarını listesine bir başvuru döndürür.
+Kullanıcı araçları listesine bir başvuru verir.
 
 ```
 const CObList& GetUserTools() const;
@@ -299,15 +299,15 @@ const CObList& GetUserTools() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Const başvuru bir [CObList sınıfı](../../mfc/reference/coblist-class.md) kullanıcı araçlarını listesini içeren nesne.
+Kullanıcı araçlarının listesini içeren [CObList Class](../../mfc/reference/coblist-class.md) nesnesine const başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı listesini almak için bu yöntemi araçları çağrı [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) nesnesini saklar. Her kullanıcı aracı türünde bir nesne tarafından temsil edilen [CUserTool sınıfı](../../mfc/reference/cusertool-class.md) veya türetilmiş bir tür `CUserTool`. Türü tarafından belirtilen *pToolRTC* çağırdığınızda parametresi [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) kullanıcı araçlarını etkinleştirmek için.
+[CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) nesnesinin koruduğu kullanıcı araçlarının listesini almak için bu yöntemi arayın. Her kullanıcı aracı [CUserTool Sınıfı](../../mfc/reference/cusertool-class.md) türünden bir nesne veya `CUserTool`türetilen bir tür tarafından temsil edilir. [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) kullanıcı araçlarını etkinleştirmek için aradiğinizde tip *pToolRTC* parametresi tarafından belirtilir.
 
-##  <a name="invoketool"></a>  CUserToolsManager::InvokeTool
+## <a name="cusertoolsmanagerinvoketool"></a><a name="invoketool"></a>CuserToolsManager::InvokeTool
 
-Belirtilen komut kimliğe sahip kullanıcı aracı ile ilişkili bir uygulama yürütüldüğünde
+Belirli bir komut kimliğine sahip kullanıcı aracıyla ilişkili bir uygulamayı yürütür.
 
 ```
 BOOL InvokeTool(UINT uiCmdId);
@@ -316,19 +316,19 @@ BOOL InvokeTool(UINT uiCmdId);
 ### <a name="parameters"></a>Parametreler
 
 *uiCmdId*<br/>
-[in] Kullanıcı aracı ile ilişkili menü komut kimliği.
+[içinde] Kullanıcı aracıyla ilişkili menü komut kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı aracı ile ilişkili komutu sorunsuz yürüttüğünü olursa sıfır dışı; Aksi durumda 0.
+Kullanıcı aracıyla ilişkili komut başarıyla yürütülürse sıfıra inmez; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem kullanıcıyla ilişkili bir uygulama yürüttüklerinde aracı çağrı tarafından belirtilen komut kimliği olan *uiCmdId*.
+*uiCmdId*tarafından belirtilen komut kimliğine sahip kullanıcı aracıyla ilişkili bir uygulamayı yürütmek için bu yöntemi arayın.
 
-##  <a name="isusertoolcmd"></a>  CUserToolsManager::IsUserToolCmd
+## <a name="cusertoolsmanagerisusertoolcmd"></a><a name="isusertoolcmd"></a>CUserToolsManager::IsUserToolCmd
 
-Komut kimliği bir kullanıcı aracı ile ilişkili olup olmadığını belirler.
+Komut kimliğinin bir kullanıcı aracıyla ilişkili olup olmadığını belirler.
 
 ```
 BOOL IsUserToolCmd(UINT uiCmdId) const;
@@ -337,19 +337,19 @@ BOOL IsUserToolCmd(UINT uiCmdId) const;
 ### <a name="parameters"></a>Parametreler
 
 *uiCmdId*<br/>
-[in] Menü öğesinin komut kimliği.
+[içinde] Menü öğesinin komut kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen komut kimliği bir kullanıcı aracı ile ilişkili ise sıfır olmayan; Aksi durumda 0.
+Verilen bir komut kimliği bir kullanıcı aracıyla ilişkiliyse sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, belirtilen komut kimliği komut kimliği aralık içinde olup olmadığını denetler. Çağırdığınızda aralığını belirtin [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) kullanıcı araçlarını etkinleştirmek için.
+Bu yöntem, verilen komut kimliği komut kimliği aralığında olup olmadığını denetler. Kullanıcı araçlarını etkinleştirmek için [CWinAppEx::EnableUserTools'u](../../mfc/reference/cwinappex-class.md#enableusertools) aradiğinizde aralığı belirtirsiniz.
 
-##  <a name="loadstate"></a>  CUserToolsManager::LoadState
+## <a name="cusertoolsmanagerloadstate"></a><a name="loadstate"></a>CuserToolsManager::loadstate
 
-Kullanıcı araçlarıyla ilgili bilgileri Windows kayıt defterinden yükler.
+Windows kayıt defterinden kullanıcı araçları hakkında bilgi yükler.
 
 ```
 BOOL LoadState(LPCTSTR lpszProfileName=NULL);
@@ -358,21 +358,21 @@ BOOL LoadState(LPCTSTR lpszProfileName=NULL);
 ### <a name="parameters"></a>Parametreler
 
 *lpszProfileName*<br/>
-[in] Windows kayıt defteri anahtarının yolu.
+[içinde] Windows kayıt defteri anahtarının yolu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Durumu başarıyla yüklendi olursa sıfır dışı; Aksi durumda 0.
+Devlet başarıyla yüklenmişse sıfıra inmez; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem durumunu yükler `CUserToolsManager` Windows kayıt defterinden nesne.
+Bu yöntem, `CUserToolsManager` Windows kayıt defterinden nesnenin durumunu yükler.
 
-Genellikle, bu yöntemi doğrudan çağırmanız gerekmez. [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#loadstate) çalışma başlatma işleminin parçası olarak çağırır.
+Genellikle, bu yöntemi doğrudan aramazsınız. [CWinAppEx::LoadState](../../mfc/reference/cwinappex-class.md#loadstate) bunu çalışma alanı başlatma sürecinin bir parçası olarak adlandırır.
 
-##  <a name="movetooldown"></a>  CUserToolsManager::MoveToolDown
+## <a name="cusertoolsmanagermovetooldown"></a><a name="movetooldown"></a>CuserToolsManager::MoveToolDown
 
-Belirtilen kullanıcı aracı kullanıcı araçlarını listesinde aşağı taşır.
+Belirtilen kullanıcı aracını kullanıcı araçları listesinde aşağı taşır.
 
 ```
 BOOL MoveToolDown(CUserTool* pTool);
@@ -381,19 +381,19 @@ BOOL MoveToolDown(CUserTool* pTool);
 ### <a name="parameters"></a>Parametreler
 
 *pTool*<br/>
-[in] Kullanıcı aracı taşımak için belirtir.
+[içinde] Taşımak için kullanıcı aracını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı aracı başarıyla taşındıktan sonra olursa sıfır dışı; Aksi durumda 0.
+Kullanıcı aracı başarıyla aşağı taşınmışsa sıfıra inme; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntemi, başarısız olur. araç, *pTool* belirtir iç listesinde değil veya listesinin sonunda bir araçtır.
+*PTool'un* belirttiği araç iç listede değilse veya araç listede sonuncuysa yöntem başarısız olur.
 
-##  <a name="movetoolup"></a>  CUserToolsManager::MoveToolUp
+## <a name="cusertoolsmanagermovetoolup"></a><a name="movetoolup"></a>CuserToolsManager::MoveToolUp
 
-Belirtilen kullanıcı aracı kullanıcı araçlarını listesinde yukarı taşır.
+Belirtilen kullanıcı aracını kullanıcı araçları listesinde yukarı taşır.
 
 ```
 BOOL MoveToolUp(CUserTool* pTool);
@@ -402,19 +402,19 @@ BOOL MoveToolUp(CUserTool* pTool);
 ### <a name="parameters"></a>Parametreler
 
 *pTool*<br/>
-[in] Kullanıcı aracı taşımak için belirtir.
+[içinde] Taşımak için kullanıcı aracını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı aracı başarıyla taşındı olursa sıfır dışı; Aksi durumda 0.
+Kullanıcı aracı başarıyla yukarı taşınmışsa sıfıra inme; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntemi, başarısız olur. araç, *pTool* parametresinin belirttiği değil iç listesinde veya aracı ilk aracı öğe listesinde ise.
+PTool parametresinin belirttiği *pTool* araç iç listede değilse veya araç listedeki ilk araç öğesiyse yöntem başarısız olur.
 
-##  <a name="removetool"></a>  CUserToolsManager::RemoveTool
+## <a name="cusertoolsmanagerremovetool"></a><a name="removetool"></a>CusertoolsManager::Removetool
 
-Belirtilen kullanıcı aracı, uygulamadan kaldırır.
+Belirtilen kullanıcı aracını uygulamadan kaldırır.
 
 ```
 BOOL RemoveTool(CUserTool* pTool);
@@ -423,19 +423,19 @@ BOOL RemoveTool(CUserTool* pTool);
 ### <a name="parameters"></a>Parametreler
 
 *pTool*<br/>
-[out içinde] Kaldırılacak kullanıcı aracı için bir işaretçi.
+[içinde, dışarı] Kaldırılacak bir kullanıcı aracına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aracı başarıyla kaldırılırsa TRUE. Aksi takdirde FALSE.
+Araç başarıyla kaldırılırsa DOĞRU. Aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aracı başarıyla kaldırılırsa, bu yöntem siler *pTool*.
+Araç başarıyla kaldırılırsa, bu yöntem *pTool'u*siler.
 
-##  <a name="savestate"></a>  CUserToolsManager::SaveState
+## <a name="cusertoolsmanagersavestate"></a><a name="savestate"></a>CuserToolsManager::SaveState
 
-Windows kayıt defterine kullanıcı araçlarıyla ilgili bilgileri depolar.
+Windows kayıt defterinde kullanıcı araçları yla ilgili bilgileri depolar.
 
 ```
 BOOL SaveState(LPCTSTR lpszProfileName=NULL);
@@ -444,21 +444,21 @@ BOOL SaveState(LPCTSTR lpszProfileName=NULL);
 ### <a name="parameters"></a>Parametreler
 
 *lpszProfileName*<br/>
-[in] Windows kayıt defteri anahtarı bir yolu.
+[içinde] Windows kayıt defteri anahtarına giden bir yol.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Durumu başarıyla kaydedildi olursa sıfır dışı; Aksi durumda 0.
+Devlet başarıyla kaydedilirse sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntem geçerli durumunu depolar `CUserToolsManager` Windows kayıt defterinde nesne.
+Yöntem, `CUserToolsManager` Windows kayıt defterinde nesnenin geçerli durumunu depolar.
 
-Genellikle, bu yöntemi doğrudan çağırmanız gerekmez [CWinAppEx::SaveState](../../mfc/reference/cwinappex-class.md#savestate) uygulama çalışma alanı seri hale getirme sürecinin bir parçası olarak otomatik olarak çağırır.
+Genellikle, doğrudan bu yöntemi aramak gerekmez, [CWinAppEx::SaveState](../../mfc/reference/cwinappex-class.md#savestate) uygulamanın çalışma alanı serileştirme sürecinin bir parçası olarak otomatik olarak çağırır.
 
-##  <a name="setdefext"></a>  CUserToolsManager::SetDefExt
+## <a name="cusertoolsmanagersetdefext"></a><a name="setdefext"></a>CUserToolsManager::SetDefExt
 
-Varsayılan uzantı belirtir, **Dosya Aç** iletişim kutusu ( [CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md)) kullanır **komut** alanını **Araçları** sekmesi ' ın **Özelleştir** iletişim kutusu.
+**Dosya Aç** iletişim kutusunun [(CFileDialog Class)](../../mfc/reference/cfiledialog-class.md) **Özelleştir** iletişim kutusunun **Araçlar** sekmesindeki **Komut** alanında kullandığı varsayılan uzantıyı belirtir.
 
 ```
 void SetDefExt(const CString& strDefExt);
@@ -467,15 +467,15 @@ void SetDefExt(const CString& strDefExt);
 ### <a name="parameters"></a>Parametreler
 
 *strDefExt*<br/>
-[in] Varsayılan dosya adı uzantısını içeren bir metin dizesi.
+[içinde] Varsayılan dosya adı uzantısını içeren bir metin dizesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir varsayılan dosya adı uzantısı belirtmek için bu yöntemi çağırın **Dosya Aç** kullanıcı aracı ile ilişkilendirmek için bir uygulama kullanıcının seçtiği kurduğunuzda gösterilen iletişim kutusu. "Exe" varsayılandır.
+Kullanıcı kullanıcı aracıyla ilişkilendirilecek bir uygulama seçtiğinde görüntülenen **Dosya Aç** iletişim kutusunda varsayılan dosya adı uzantısı belirtmek için bu yöntemi arayın. Varsayılan "exe"dir.
 
-##  <a name="setfilter"></a>  CUserToolsManager::SetFilter
+## <a name="cusertoolsmanagersetfilter"></a><a name="setfilter"></a>CuserToolsManager::SetFilter
 
-Dosya filtreleme belirtir **Dosya Aç** iletişim kutusu ( [CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md)) kullanır **komut** alanını **Araçları** sekmesi **Özelleştir** iletişim kutusu.
+**Dosya Aç** iletişim kutusunun [(CFileDialog Class)](../../mfc/reference/cfiledialog-class.md) **Özelleştir** iletişim kutusunun **Araçlar** sekmesindeki **Komut** alanında kullandığı dosya filtresini belirtir.
 
 ```
 void SetFilter(const CString& strFilter);
@@ -483,12 +483,12 @@ void SetFilter(const CString& strFilter);
 
 ### <a name="parameters"></a>Parametreler
 
-*strFilter*<br/>
-[in] Filtreyi belirtir.
+*strFiltre*<br/>
+[içinde] Filtreyi belirtir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)<br/>
-[CUserTool Sınıfı](../../mfc/reference/cusertool-class.md)
+[CuserTool Sınıfı](../../mfc/reference/cusertool-class.md)

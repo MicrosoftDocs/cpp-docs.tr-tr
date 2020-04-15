@@ -1,5 +1,5 @@
 ---
-title: CAnimationVariableChangeHandler sınıfı
+title: CAnimationVariableChangeHandler Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAnimationVariableChangeHandler
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CAnimationVariableChangeHandler [MFC], OnValueChanged
 - CAnimationVariableChangeHandler [MFC], SetAnimationController
 ms.assetid: 2ea4996d-5c04-4dfc-be79-d42d55050795
-ms.openlocfilehash: 92189ce5ea76811496d4462aa4254bbd03ebb219
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f45fdad00bacf56e2ee8c30b76e99d626902534
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338148"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377093"
 ---
-# <a name="canimationvariablechangehandler-class"></a>CAnimationVariableChangeHandler sınıfı
+# <a name="canimationvariablechangehandler-class"></a>CAnimationVariableChangeHandler Sınıfı
 
-Animasyon değişkeninin bir değeri değiştiğinde animasyon API'sı tarafından çağrılan bir geri arama gerçekleştirir.
+Animasyon değişkeninin değeri değiştiğinde Animasyon API'si tarafından çağrılan bir geri arama uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,21 +31,21 @@ class CAnimationVariableChangeHandler : public CUIAnimationVariableChangeHandler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CAnimationVariableChangeHandler::CAnimationVariableChangeHandler`|Oluşturur bir `CAnimationVariableChangeHandler` nesne.|
+|`CAnimationVariableChangeHandler::CAnimationVariableChangeHandler`|Bir `CAnimationVariableChangeHandler` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CAnimationVariableChangeHandler::CreateInstance`|Örneği oluşturur `CAnimationVariableChangeHandler` nesne.|
-|[CAnimationVariableChangeHandler::OnValueChanged](#onvaluechanged)|Bir animasyon değişkeninin bir değeri değiştirildiğinde çağırılır. (Geçersiz kılmaları `CUIAnimationVariableChangeHandlerBase::OnValueChanged`.)|
-|[CAnimationVariableChangeHandler::SetAnimationController](#setanimationcontroller)|Animasyon denetleyicisini rota olaylar için bir işaretçi depolar.|
+|`CAnimationVariableChangeHandler::CreateInstance`|Nesne örneği `CAnimationVariableChangeHandler` oluşturur.|
+|[CAnimationVariableChangeHandler::OnValueChanged](#onvaluechanged)|Animasyon değişkeninin değeri değiştiğinde çağrılır. (Geçersiz `CUIAnimationVariableChangeHandlerBase::OnValueChanged`kılar .)|
+|[CAnimationVariableChangeHandler::SetAnimationController](#setanimationcontroller)|Olayları yönlendirmek için animasyon denetleyicisine işaretçi saklar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu olay işleyicisi oluşturulur ve geçirilen `IUIAnimationVariable::SetVariableChangeHandler` yöntemi çağırdığınızda, `CAnimationVariable::EnableValueChangedEvent` veya `CAnimationBaseObject::EnableValueChangedEvent` (Bu olay için bir animasyon nesnesinde tüm animasyon değişkenleri sağlar).
+Bu olay işleyicisi `IUIAnimationVariable::SetVariableChangeHandler` oluşturulur ve yönteme geçirilir, ne zaman ya `CAnimationVariable::EnableValueChangedEvent` da `CAnimationBaseObject::EnableValueChangedEvent` (bir animasyon nesnesi içinde kapsüllenmiş tüm animasyon değişkenleri için bu olayı sağlar).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -57,11 +57,11 @@ Bu olay işleyicisi oluşturulur ve geçirilen `IUIAnimationVariable::SetVariabl
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="onvaluechanged"></a>  CAnimationVariableChangeHandler::OnValueChanged
+## <a name="canimationvariablechangehandleronvaluechanged"></a><a name="onvaluechanged"></a>CAnimationVariableChangeHandler::OnValueChanged
 
-Bir animasyon değişkeninin bir değeri değiştirildiğinde çağırılır.
+Animasyon değişkeninin değeri değiştiğinde çağrılır.
 
 ```
 IFACEMETHOD(OnValueChanged) (
@@ -73,25 +73,25 @@ IFACEMETHOD(OnValueChanged) (
 
 ### <a name="parameters"></a>Parametreler
 
-*görsel taslak*<br/>
-Değişken animasyon film şeridi.
+*Film şeridi*<br/>
+Değişkeni animateden hikaye tahtası.
 
-*Değişkeni*<br/>
-Animasyon değişkenin güncelleştirildi.
+*Değişken*<br/>
+Güncelleştirilen animasyon değişkeni.
 
-*newValue*<br/>
-Yeni değeri.
+*Newvalue*<br/>
+Yeni değer.
 
-*previousValue*<br/>
+*öncekiDeğer*<br/>
 Önceki değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
 
-##  <a name="setanimationcontroller"></a>  CAnimationVariableChangeHandler::SetAnimationController
+## <a name="canimationvariablechangehandlersetanimationcontroller"></a><a name="setanimationcontroller"></a>CAnimationVariableChangeHandler::SetAnimationController
 
-Animasyon denetleyicisini rota olaylar için bir işaretçi depolar.
+Olayları yönlendirmek için animasyon denetleyicisine işaretçi saklar.
 
 ```
 void SetAnimationController(CAnimationController* pAnimationController);
@@ -100,7 +100,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ### <a name="parameters"></a>Parametreler
 
 *pAnimationController*<br/>
-Olayları alacaksınız animasyon denetleyicisini bir işaretçi.
+Olayları alacak animasyon denetleyicisi için bir işaretçi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

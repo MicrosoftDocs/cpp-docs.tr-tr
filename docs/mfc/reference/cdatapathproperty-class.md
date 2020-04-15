@@ -1,5 +1,5 @@
 ---
-title: CDataPathProperty sınıfı
+title: CDataPathProperty Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDataPathProperty
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - CDataPathProperty [MFC], SetControl
 - CDataPathProperty [MFC], SetPath
 ms.assetid: 1f96efdb-54e4-460b-862c-eba5d4103488
-ms.openlocfilehash: 89cb8ddcdd42643f52f755516e8845109163c57a
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: e96106dcd6f496c6cc99c9d72d86052547b6d06b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79418694"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81376464"
 ---
-# <a name="cdatapathproperty-class"></a>CDataPathProperty sınıfı
+# <a name="cdatapathproperty-class"></a>CDataPathProperty Sınıfı
 
-Zaman uyumsuz olarak yüklenebilen bir OLE denetim özelliği uygular.
+Eş senkronize olarak yüklenebilen bir OLE denetim özelliği uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,56 +39,56 @@ class CDataPathProperty : public CAsyncMonikerFile
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CDataPathProperty:: CDataPathProperty](#cdatapathproperty)|`CDataPathProperty` nesnesi oluşturur.|
+|[CdataPathÖzelliği::CdataPathÖzelliği](#cdatapathproperty)|Bir `CDataPathProperty` nesne inşa eder.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CDataPathProperty:: GetControl](#getcontrol)|`CDataPathProperty` nesnesiyle ilişkili zaman uyumsuz OLE denetimini alır.|
-|[CDataPathProperty:: GetPath](#getpath)|Özelliğin yol adını alır.|
-|[CDataPathProperty:: Open](#open)|İlişkili ActiveX (OLE) denetimi için zaman uyumsuz özelliği yüklemeyi başlatır.|
-|[CDataPathProperty:: ResetData](#resetdata)|Kapsayıcıyı denetim özelliklerinin değiştiğini bildirmek için `CAsyncMonikerFile::OnDataAvailable` çağırır.|
-|[CDataPathProperty:: SetControl](#setcontrol)|Özelliği ile ilişkili, zaman uyumsuz ActiveX (OLE) denetimini ayarlar.|
-|[CDataPathProperty:: SetPath](#setpath)|Özelliğin yol adını ayarlar.|
+|[CDataPathÖzelliği::GetControl](#getcontrol)|Nesneyle ilişkili eşzamanlı OLE denetimini `CDataPathProperty` alır.|
+|[CDataPathÖzelliği::GetPath](#getpath)|Özelliğin yol adını alır.|
+|[CDataPathÖzelliği::Aç](#open)|İlişkili ActiveX (OLE) denetimi için eşzamanlı özelliğin yüklenmesi nin başlatılmasını sağlar.|
+|[CDataPathProperty::ResetData](#resetdata)|Denetim `CAsyncMonikerFile::OnDataAvailable` özelliklerinin değiştiğini kapsayıcıya bildirmek için çağrılar.|
+|[CDataPathÖzelliği::SetControl](#setcontrol)|Özellik ile ilişkili eşzamanlı ActiveX (OLE) denetimini ayarlar.|
+|[CDataPathÖzelliği::SetPath](#setpath)|Özelliğin yol adını ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zaman uyumsuz özellikler, zaman uyumlu başlatma işleminden sonra yüklenir.
+Senkron inisiyasyondan sonra asynchronous özellikleri yüklenir.
 
-`CDataPathProperty` sınıfı `CAysncMonikerFile`türetilir. OLE denetimleriniz içinde zaman uyumsuz özellikler uygulamak için, `CDataPathProperty`bir sınıf türetirsiniz ve [OnDataAvailable](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable)öğesini geçersiz kılın.
+Sınıf `CDataPathProperty` `CAysncMonikerFile`türetilmiştir. OLE denetimlerinizde eşzamanlı özellikler uygulamak için, bir `CDataPathProperty`sınıf türetin ve [OnDataAvailable'ı](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable)geçersiz kılın.
 
-Internet uygulamalarında zaman uyumsuz bilinen adlar ve ActiveX denetimleri kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
+Internet uygulamalarında eşzamanlı monikers ve ActiveX denetimlerinin nasıl kullanılacağı hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [Internet Ilk adımları: ActiveX denetimleri](../../mfc/activex-controls-on-the-internet.md)
+- [İnternet İlk Adımlar: ActiveX Denetimleri](../../mfc/activex-controls-on-the-internet.md)
 
-- [Internet Ilk adımları: zaman uyumsuz bilinen adlar](../../mfc/asynchronous-monikers-on-the-internet.md)
+- [İnternet İlk Adımlar: Asynchronous Monikers](../../mfc/asynchronous-monikers-on-the-internet.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CFile](../../mfc/reference/cfile-class.md)
+[Cfile](../../mfc/reference/cfile-class.md)
 
-[Cotastreamfile](../../mfc/reference/colestreamfile-class.md)
+[COleStreamFile](../../mfc/reference/colestreamfile-class.md)
 
-[CMonikerFile](../../mfc/reference/cmonikerfile-class.md)
+[CMonikerDosya](../../mfc/reference/cmonikerfile-class.md)
 
-[CAsyncMonikerFile](../../mfc/reference/casyncmonikerfile-class.md)
+[CAsyncMonikerDosya](../../mfc/reference/casyncmonikerfile-class.md)
 
 `CDataPathProperty`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** afxctl. h
+**Üstbilgi:** afxctl.h
 
-##  <a name="cdatapathproperty"></a>CDataPathProperty:: CDataPathProperty
+## <a name="cdatapathpropertycdatapathproperty"></a><a name="cdatapathproperty"></a>CdataPathÖzelliği::CdataPathÖzelliği
 
-`CDataPathProperty` nesnesi oluşturur.
+Bir `CDataPathProperty` nesne inşa eder.
 
 ```
 CDataPathProperty(COleControl* pControl = NULL);
@@ -97,19 +97,19 @@ CDataPathProperty(LPCTSTR lpszPath, COleControl* pControl = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*pControl*<br/>
-Bu `CDataPathProperty` nesnesiyle ilişkilendirilecek OLE denetim nesnesine yönelik bir işaretçi.
+*pKontrol*<br/>
+Bu `CDataPathProperty` nesneyle ilişkilendirilecek OLE denetim nesnesine işaretçi.
 
 *lpszPath*<br/>
-Mutlak veya göreli olabilen yol, özelliğin gerçek mutlak konumuna başvuran bir zaman uyumsuz bilinen ad oluşturmak için kullanılır. `CDataPathProperty`, dosya adlarını değil, URL 'Leri kullanır. Bir dosya için `CDataPathProperty` nesnesi istiyorsanız yola `file://` ekleyin.
+Mutlak veya göreceli olabilecek yol, özelliğin gerçek mutlak konumuna başvuran eşzamanlı bir takma sözcük oluşturmak için kullanılır. `CDataPathProperty`URL'leri kullanır, dosya adlarını değil. Dosya için `CDataPathProperty` bir nesne istiyorsanız, `file://` yola hazırlayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PControl* tarafından işaret edilen `COleControl` nesnesi `Open` tarafından kullanılır ve türetilmiş sınıflar tarafından alınır. *PControl* null ise, `Open` ile kullanılan denetim `SetControl`olarak ayarlanmalıdır. *LPSZPATH* null ise, yolu `Open` aracılığıyla geçirebilir veya `SetPath`olarak ayarlayabilirsiniz.
+*pControl* tarafından işaret edilen `Open` `COleControl` nesne türemiş sınıflar tarafından kullanılır ve alınır. *pControl* NULL ise, kullanılan `Open` denetim . `SetControl` *lpszPath* NULL ise, yoldan geçebilir `Open` veya ' ile `SetPath`ayarlayabilirsiniz.
 
-##  <a name="getcontrol"></a>CDataPathProperty:: GetControl
+## <a name="cdatapathpropertygetcontrol"></a><a name="getcontrol"></a>CDataPathÖzelliği::GetControl
 
-`CDataPathProperty` nesnesiyle ilişkili `COleControl` nesnesini almak için bu üye işlevi çağırın.
+Nesneyle ilişkili `COleControl` nesneyi almak için `CDataPathProperty` bu üye işlevi çağırın.
 
 ```
 COleControl* GetControl();
@@ -117,11 +117,11 @@ COleControl* GetControl();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CDataPathProperty` nesnesiyle ilişkili OLE denetimine yönelik bir işaretçi döndürür. Denetim ilişkilendirilmediği takdirde NULL.
+Nesneyle ilişkili OLE denetimine `CDataPathProperty` bir işaretçi döndürür. NULL değilse denetim ilişkilidir.
 
-##  <a name="getpath"></a>CDataPathProperty:: GetPath
+## <a name="cdatapathpropertygetpath"></a><a name="getpath"></a>CDataPathÖzelliği::GetPath
 
-Yolu almak için bu üye işlevi çağırın, `CDataPathProperty` nesne oluşturulduğunda ayarlayın veya `Open`veya `SetPath` üye işlevine yapılan bir önceki çağrıda belirtilir.
+Nesney oluşturulduğunda veya `CDataPathProperty` `Open` `SetPath` üye işleve önceki bir çağrıda belirtildiğinde ayarlanan yolu almak için bu üye işlevi çağırın.
 
 ```
 CString GetPath() const;
@@ -129,11 +129,11 @@ CString GetPath() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özelliğin kendi yol adını döndürür. Hiçbir yol belirtilmemişse boş olabilir.
+Yol adını özelliğin kendisine verir. Yol belirtilmemişse boş olabilir.
 
-##  <a name="open"></a>CDataPathProperty:: Open
+## <a name="cdatapathpropertyopen"></a><a name="open"></a>CDataPathÖzelliği::Aç
 
-İlişkili denetimin zaman uyumsuz özelliğini yüklemeyi başlatmak için bu üye işlevi çağırın.
+İlişkili denetim için eşzamanlı özelliğin yüklenmesi için bu üye işlevi arayın.
 
 ```
 virtual BOOL Open(
@@ -154,32 +154,32 @@ virtual BOOL Open(CFileException* pError = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*pControl*<br/>
-Bu `CDataPathProperty` nesnesiyle ilişkilendirilecek OLE denetim nesnesine yönelik bir işaretçi.
+*pKontrol*<br/>
+Bu `CDataPathProperty` nesneyle ilişkilendirilecek OLE denetim nesnesine işaretçi.
 
-*pError*<br/>
-Bir dosya özel durumunun işaretçisi. Bir hata durumunda nedenine ayarlanır.
+*pHata*<br/>
+Dosya özel durum için bir işaretçi. Bir hata durumunda, neden ayarlanır.
 
 *lpszPath*<br/>
-Mutlak veya göreli olabilen yol, özelliğin gerçek mutlak konumuna başvuran bir zaman uyumsuz bilinen ad oluşturmak için kullanılır. `CDataPathProperty`, dosya adlarını değil, URL 'Leri kullanır. Bir dosya için `CDataPathProperty` nesnesi istiyorsanız yola `file://` ekleyin.
+Mutlak veya göreceli olabilecek yol, özelliğin gerçek mutlak konumuna başvuran eşzamanlı bir takma sözcük oluşturmak için kullanılır. `CDataPathProperty`URL'leri kullanır, dosya adlarını değil. Dosya için `CDataPathProperty` bir nesne istiyorsanız, `file://` yola hazırlayın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, denetimden `IBindHost` arabirimini almaya çalışır.
+İşlev, `IBindHost` denetimden arabirimi elde etmeye çalışır.
 
-Yol olmadan `Open` çağrılmadan önce, özelliğin yolunun değeri ayarlanmalıdır. Bu, nesne oluşturulduğunda veya `SetPath` üye işlevi çağırarak yapılabilir.
+Yol `Open` olmadan aramadan önce, özelliğin yolunun değeri ayarlanmalıdır. Bu, nesne oluşturulduğunda veya `SetPath` üye işlevi çağırarak yapılabilir.
 
-Bir denetim olmadan `Open` çağrılmadan önce, bir ActiveX denetimi (daha önce OLE denetimi olarak bilinir) nesneyle ilişkilendirilebilir. Bu, nesne oluşturulduğunda veya `SetControl`çağırarak yapılabilir.
+Denetim `Open` olmadan aramadan önce, activex denetimi (eski adıyla OLE denetimi olarak bilinir) nesneyle ilişkilendirilebilir. Bu, nesne oluşturulduğunda veya . `SetControl`
 
-[CAsyncMonikerFile:: Open](../../mfc/reference/casyncmonikerfile-class.md#open) ' ın tüm aşırı yüklemeleri de `CDataPathProperty`de mevcuttur.
+[CAsyncMonikerFile tüm aşırı yükleri::Açık](../../mfc/reference/casyncmonikerfile-class.md#open) `CDataPathProperty`da mevcuttur .
 
-##  <a name="resetdata"></a>CDataPathProperty:: ResetData
+## <a name="cdatapathpropertyresetdata"></a><a name="resetdata"></a>CDataPathProperty::ResetData
 
-Kapsayıcıya denetim özellikleri değiştiği ve zaman uyumsuz olarak yüklenen tüm bilgiler artık yararlı olmadığı için `CAsyncMonikerFile::OnDataAvailable` almak için bu işlevi çağırın.
+Denetim özelliklerinin `CAsyncMonikerFile::OnDataAvailable` değiştiğini ve eşzamanlı olarak yüklenen tüm bilgilerin artık kullanışlı olmadığını kapsayıcıya bildirmek için bu işlevi arayın.
 
 ```
 virtual void ResetData();
@@ -187,11 +187,11 @@ virtual void ResetData();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Açma yeniden başlatılmalıdır. Türetilmiş sınıflar, farklı varsayılanlar için bu işlevi geçersiz kılabilir.
+Açılış yeniden başlatılmalıdır. Türetilen sınıflar farklı varsayılanlar için bu işlevi geçersiz kılabilir.
 
-##  <a name="setcontrol"></a>CDataPathProperty:: SetControl
+## <a name="cdatapathpropertysetcontrol"></a><a name="setcontrol"></a>CDataPathÖzelliği::SetControl
 
-Zaman uyumsuz bir OLE denetimini `CDataPathProperty` nesnesiyle ilişkilendirmek için bu üye işlevini çağırın.
+`CDataPathProperty` Nesne ile bir eşzamanlı OLE denetimi ilişkilendirmek için bu üye işlevi arayın.
 
 ```
 void SetControl(COleControl* pControl);
@@ -199,12 +199,12 @@ void SetControl(COleControl* pControl);
 
 ### <a name="parameters"></a>Parametreler
 
-*pControl*<br/>
-Özelliği ile ilişkilendirilecek zaman uyumsuz OLE denetimine yönelik bir işaretçi.
+*pKontrol*<br/>
+Özellik ile ilişkili olmak için eşzamanlı OLE denetimi için bir işaretçi.
 
-##  <a name="setpath"></a>CDataPathProperty:: SetPath
+## <a name="cdatapathpropertysetpath"></a><a name="setpath"></a>CDataPathÖzelliği::SetPath
 
-Özelliğin yol adını ayarlamak için bu üye işlevini çağırın.
+Özelliğin yol adını ayarlamak için bu üye işlevi arayın.
 
 ```
 void SetPath(LPCTSTR lpszPath);
@@ -213,11 +213,11 @@ void SetPath(LPCTSTR lpszPath);
 ### <a name="parameters"></a>Parametreler
 
 *lpszPath*<br/>
-Zaman uyumsuz olarak yüklenen özelliğe mutlak veya göreli olabilen bir yol. `CDataPathProperty`, dosya adlarını değil, URL 'Leri kullanır. Bir dosya için `CDataPathProperty` nesnesi istiyorsanız yola `file://` ekleyin.
+Mutlak veya göreceli olabilecek bir yol, eşit olarak yüklenen özellik için. `CDataPathProperty`URL'leri kullanır, dosya adlarını değil. Dosya için `CDataPathProperty` bir nesne istiyorsanız, `file://` yola hazırlayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek resmi](../../overview/visual-cpp-samples.md)<br/>
+[MFC Örnek Görüntü](../../overview/visual-cpp-samples.md)<br/>
 [CAsyncMonikerFile Sınıfı](../../mfc/reference/casyncmonikerfile-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CAsyncMonikerFile Sınıfı](../../mfc/reference/casyncmonikerfile-class.md)

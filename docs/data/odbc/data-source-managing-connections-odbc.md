@@ -18,71 +18,71 @@ helpviewer_keywords:
 - ODBC data sources [C++], connections
 - database connections [C++], MFC ODBC classes
 ms.assetid: c0adbcdd-c000-40c6-b199-09ffdc7b6ef2
-ms.openlocfilehash: 6186199ea51c1fc966783ed3c0a73496c6a307ee
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 107a5e20b70f67be74b6e6f861bd539446e9d4ee
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213306"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374525"
 ---
 # <a name="data-source-managing-connections-odbc"></a>Veri Kaynağı: Bağlantıları Yönetme (ODBC)
 
 Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bu konuda aşağıdakiler açıklanmaktadır:
+Bu konu açıklar:
 
-- [Veri kaynağını yapılandırma](#_core_configuring_a_data_source).
+- [Nasıl bir veri kaynağı yapılandırmak için](#_core_configuring_a_data_source).
 
-- [Çok kullanıcılı bir ortamın bir veri kaynağını ve kayıt kümelerini nasıl etkilediği](#_core_working_in_a_multiuser_environment).
+- [Çok kullanıcılı ortamın veri kaynağını ve kayıt kümelerini nasıl etkilediği.](#_core_working_in_a_multiuser_environment)
 
-- [Neden bir veri kaynağına bir bağlantı dizesi genelleştirdiğinizde](#_core_generalizing_the_connection_string).
+- [Bir bağlantı dizesini neden bir veri kaynağına genelleştirirsiniz.](#_core_generalizing_the_connection_string)
 
-- [Bir veri kaynağına bağlanma](#_core_connecting_to_a_specific_data_source).
+- [Nasıl bir veri kaynağına bağlanmak için](#_core_connecting_to_a_specific_data_source).
 
-- [Bir veri kaynağıyla bağlantısını kesme](#_core_disconnecting_from_a_data_source).
+- [Nasıl bir veri kaynağından kesmek için](#_core_disconnecting_from_a_data_source).
 
-- [Bir CDatabase nesnesini yeniden kullanma](#_core_reusing_a_cdatabase_object).
+- [CDatabase nesnesi nasıl yeniden kullanılır?](#_core_reusing_a_cdatabase_object)
 
-Bir veri kaynağına bağlanmak, verilere erişmek için bir DBMS ile iletişim kurulması anlamına gelir. Bir ODBC sürücüsü aracılığıyla bir uygulamadan bir veri kaynağına bağlandığınızda, sürücü yerel olarak veya ağ üzerinden sizin için bağlantıyı yapar.
+Bir veri kaynağına bağlanmak, verilere erişmek için bir DBMS ile iletişim kurmak anlamına gelir. Bir uygulamadan bir veri kaynağına ODBC sürücüsü aracılığıyla bağlandığınızda, sürücü bağlantıyı yerel olarak veya ağ üzerinden yapar.
 
-ODBC sürücünüze sahip olduğunuz herhangi bir veri kaynağına bağlanabilirsiniz. Uygulamanızın kullanıcıları, veri kaynakları için aynı ODBC sürücüsüne de sahip olmalıdır. ODBC sürücülerini yeniden dağıtma hakkında daha fazla bilgi için bkz. [ODBC bileşenlerini müşterilerinize yeniden dağıtma](../../data/odbc/redistributing-odbc-components-to-your-customers.md).
+ODBC sürücüsüne sahip olduğunuz herhangi bir veri kaynağına bağlanabilirsiniz. Uygulamanızın kullanıcıları da veri kaynağı için aynı ODBC sürücüsüne sahip olmalıdır. ODBC sürücülerinin yeniden dağıtılması hakkında daha fazla bilgi için Bkz. [ODBC Bileşenlerini Müşterilerinize Yeniden Dağıtma.](../../data/odbc/redistributing-odbc-components-to-your-customers.md)
 
-##  <a name="configuring-a-data-source"></a><a name="_core_configuring_a_data_source"></a>Veri kaynağını yapılandırma
+## <a name="configuring-a-data-source"></a><a name="_core_configuring_a_data_source"></a>Veri Kaynağını Yapılandırma
 
-ODBC Yöneticisi, veri kaynaklarınızı yapılandırmak için kullanılır. Veri kaynaklarını eklemek veya kaldırmak için yüklemeden sonra ODBC Yöneticisi 'ni de kullanabilirsiniz. Uygulama oluştururken, kullanıcılarınızı veri kaynakları eklemesine izin vermek için ODBC yöneticisine yönlendirebilirsiniz veya doğrudan ODBC yükleme çağrıları yaparak uygulamanızda bu işlevselliği oluşturabilirsiniz. Daha fazla bilgi için bkz. [ODBC Yöneticisi](../../data/odbc/odbc-administrator.md).
+ODBC Administrator, veri kaynaklarınızı yapılandırmak için kullanılır. Yüklemeden sonra veri kaynakları eklemek veya kaldırmak için ODBC Administrator'ı da kullanabilirsiniz. Uygulamalar oluşturduğunuzda, kullanıcılarınızı veri kaynakları eklemelerine izin vermeleri için ODBC Yöneticisi'ne yönlendirebilir veya doğrudan ODBC yükleme çağrıları yaparak bu işlevi uygulamanız haline getirebilirsiniz. Daha fazla bilgi için Bkz. [ODBC Yöneticisi.](../../data/odbc/odbc-administrator.md)
 
-Bir Excel dosyasını veri kaynağı olarak kullanabilirsiniz ve dosyayı kayıtlı olacak şekilde yapılandırmanız ve **veri kaynağı seç** iletişim kutusunda görünmesi gerekir.
+Bir Excel dosyasını veri kaynağı olarak kullanabilirsiniz ve dosyayı kayıtlı olacak ve Veri **Kaynağı Seç** iletişim kutusunda görünecek şekilde yapılandırmanız gerekir.
 
-#### <a name="to-use-an-excel-file-as-a-data-source"></a>Bir Excel dosyasını veri kaynağı olarak kullanmak için
+#### <a name="to-use-an-excel-file-as-a-data-source"></a>Excel dosyasını veri kaynağı olarak kullanmak için
 
-1. Dosyayı ODBC veri kaynağı Yöneticisi ile yapılandırın.
+1. Dosyayı ODBC Veri Kaynak Yöneticisi ile yapılandırın.
 
-1. **Dosya DSN** sekmesinde **Ekle**' ye tıklayın.
+1. Dosya **DSN** sekmesinde **Ekle'yi**tıklatın.
 
-1. **Yeni veri kaynağı oluştur** iletişim kutusunda bir Excel sürücüsü seçin ve ardından **İleri**' ye tıklayın.
+1. Yeni **Veri Kaynağı Oluştur** iletişim kutusunda bir Excel sürücüsü seçin ve sonra **İleri'yi**tıklatın.
 
-1. **Araştır**' a tıklayın ve bir tarih kaynağı olarak kullanılacak dosyanın adını seçin.
+1. **Gözat'ı**tıklatın ve tarih kaynağı olarak kullanılacak dosyanın adını seçin.
 
 > [!NOTE]
->  . Xls dosyalarını görüntülemek için açılan menüdeki **tüm dosyalar** ' ı seçmeniz gerekebilir.
+> .xls dosyalarını görüntülemek için açılan menüdeki **Tüm Dosyalar'ı** seçmeniz gerekebilir.
 
-1. **İleri**'ye ve ardından **Son**'a tıklayın.
+1. **İleri**’ye ve ardından **Son**’a tıklayın.
 
-1. **ODBC Microsoft Excel kurulumu** iletişim kutusunda veritabanı sürümünü ve çalışma kitabını seçin.
+1. **ODBC Microsoft Excel Kurulumu** iletişim kutusunda veritabanı Sürümü ve Çalışma Kitabı'nı seçin.
 
-##  <a name="working-in-a-multiuser-environment"></a><a name="_core_working_in_a_multiuser_environment"></a>Çok kullanıcılı bir ortamda çalışma
+## <a name="working-in-a-multiuser-environment"></a><a name="_core_working_in_a_multiuser_environment"></a>Çok Kullanıcılı Ortamda Çalışma
 
-Birden çok kullanıcı bir veri kaynağına bağlıysa, kayıt kümelerinizi değiştirirken verileri değiştirebilirler. Benzer şekilde, değişiklikleriniz diğer kullanıcıların kayıt kümelerini etkileyebilir. Daha fazla bilgi için bkz. [Recordset: kayıt kümeleri kayıtları güncelleştirme (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) ve [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
+Birden çok kullanıcı bir veri kaynağına bağlıysa, siz kayıt kümelerinizde verileri manipüle ederken verileri değiştirebilirler. Benzer şekilde, değişiklikleriniz diğer kullanıcıların kayıt ayarlarını etkileyebilir. Daha fazla bilgi için [bkz: Recordset: Recordssets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) ve [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).
 
-##  <a name="generalizing-the-connection-string"></a><a name="_core_generalizing_the_connection_string"></a>Bağlantı dizesi genelleştiriliyor
+## <a name="generalizing-the-connection-string"></a><a name="_core_generalizing_the_connection_string"></a>Bağlantı Dizesini Genelleme
 
-Sihirbazlar bir veri kaynağıyla bağlantı kurmak için varsayılan bir bağlantı dizesi kullanır. Uygulamanızı geliştirirken tabloları ve sütunları görüntülemek için bu bağlantıyı kullanın. Ancak, bu varsayılan bağlantı dizesi, kullanıcılarınızın uygulamanız aracılığıyla veri kaynağıyla bağlantıları için uygun olmayabilir. Örneğin, veri kaynakları ve konumunun yolu, uygulamanızı geliştirmede kullanılan verilerden farklı olabilir. Bu durumda, [CRecordset:: GetDefaultConnect](../../mfc/reference/crecordset-class.md#getdefaultconnect) üye işlevini daha genel bir biçimde yeniden uygulamanız ve sihirbaz uygulamasını atmanız gerekir. Örneğin, aşağıdaki yaklaşımlardan birini kullanın:
+Sihirbazlar, bir veri kaynağına bağlantı kurmak için varsayılan bağlantı dizesini kullanır. Uygulamanızı geliştirirken tabloları ve sütunları görüntülemek için bu bağlantıyı kullanırsınız. Ancak, bu varsayılan bağlantı dizesi, kullanıcılarınızın uygulamanız aracılığıyla veri kaynağına olan bağlantıları için uygun olmayabilir. Örneğin, veri kaynakları ve konumuna giden yol, uygulamanızı geliştirirken kullanılandan farklı olabilir. Bu durumda, [CRecordset yeniden uygulamak gerekir::GetDefaultConnect](../../mfc/reference/crecordset-class.md#getdefaultconnect) üye işlevi daha genel bir şekilde ve sihirbaz ı uygulama atın. Örneğin, aşağıdaki yaklaşımlardan birini kullanın:
 
-- ODBC Yöneticisi 'ni kullanarak bağlantı dizelerini kaydedin ve yönetin.
+- ODBC Administrator'ı kullanarak bağlantı dizelerini kaydedin ve yönetin.
 
-- Bağlantı dizesini düzenleyin ve veri kaynağı adını kaldırın. Framework, veri kaynağı olarak ODBC sağlar; çalışma zamanında ODBC, veri kaynağı adı ve diğer gerekli bağlantı bilgilerini soran bir iletişim kutusu görüntüler.
+- Bağlantı dizesini edin ve veri kaynağı adını kaldırın. Çerçeve veri kaynağı olarak ODBC sağlar; çalışma zamanında, ODBC veri kaynağı adını ve gerekli diğer bağlantı bilgilerini soran bir iletişim kutusu görüntüler.
 
-- Yalnızca veri kaynağı adını sağlayın. ODBC, gerekirse kullanıcı KIMLIĞINI ve parolayı ister. Örneğin, genelleştirmeye başlamadan önce bağlantı dizesi şöyle görünür:
+- Yalnızca veri kaynağı adını verin. ODBC gerekirse kullanıcı kimliği ve şifresini sorar. Örneğin, genellemeden önce bağlantı dizesi aşağıdaki gibi görünür:
 
     ```cpp
     CString CApp1Set::GetDefaultConnect()
@@ -91,7 +91,7 @@ Sihirbazlar bir veri kaynağıyla bağlantı kurmak için varsayılan bir bağla
     }
     ```
 
-   Bu bağlantı dizesi, Windows NT tümleşik güvenliğini kullanan güvenilir bir bağlantı belirtir. Bir parolanın sabit kodlanmasını veya boş bir parola belirtmekten kaçının, çünkü bu durum önemli bir güvenlik zayıflılığını oluşturuyor. Bunun yerine, bir kullanıcı KIMLIĞI ve parola sorgulaması için yeni bir bağlantı dizesi `GetDefaultConnect` verebilirsiniz.
+   Bu bağlantı dizesi, Windows NT tümleşik güvenliğini kullanan güvenilir bir bağlantı belirtir. Bunu yapmak büyük bir güvenlik zayıflığı oluşturduğundan, parolayı zorla kodlamaktan veya boş bir parola belirtmekten kaçınmalısınız. Bunun yerine, `GetDefaultConnect` yeni bir bağlantı dizesi böylece bir kullanıcı kimliği ve parola için sorgular verebilirsiniz.
 
     ```cpp
     // User must select data source and supply user ID and password:
@@ -104,37 +104,37 @@ Sihirbazlar bir veri kaynağıyla bağlantı kurmak için varsayılan bir bağla
         return "ODBC;DSN=mydb;UID=sa;PWD=777;";
     ```
 
-##  <a name="connecting-to-a-specific-data-source"></a><a name="_core_connecting_to_a_specific_data_source"></a>Belirli bir veri kaynağına bağlanma
+## <a name="connecting-to-a-specific-data-source"></a><a name="_core_connecting_to_a_specific_data_source"></a>Belirli bir Veri Kaynağına Bağlanma
 
-Belirli bir veri kaynağına bağlanmak için veri kaynağınız [ODBC yöneticisiyle](../../data/odbc/odbc-administrator.md)zaten yapılandırılmış olmalıdır.
+Belirli bir veri kaynağına bağlanmak için veri kaynağınızın [ODBC Yöneticisi](../../data/odbc/odbc-administrator.md)ile zaten yapılandırılmış olması gerekir.
 
 #### <a name="to-connect-to-a-specific-data-source"></a>Belirli bir veri kaynağına bağlanmak için
 
-1. `CDatabase` nesnesi oluşturun.
+1. Bir `CDatabase` nesne oluştur.
 
-1. `OpenEx` veya `Open` member işlevini çağırın.
+1. Onun `OpenEx` veya `Open` üye işlevini arayın.
 
-Veri kaynağının, sihirbazla belirtenden başka bir şey olması halinde belirtilmesi hakkında daha fazla bilgi için *MFC başvurusunda*bkz. [CDatabase:: OpenEx](../../mfc/reference/cdatabase-class.md#openex) veya [CDatabase:: Open](../../mfc/reference/cdatabase-class.md#open) .
+Bir sihirbazla belirttiğiniz veri kaynağından başka bir şey sayılsa nasıl belirtilir hakkında daha fazla bilgi için [Bkz. CDatabase::OpenEx](../../mfc/reference/cdatabase-class.md#openex) veya [CDatabase::MFC](../../mfc/reference/cdatabase-class.md#open) *Başvurusu'nda*aç.
 
-##  <a name="disconnecting-from-a-data-source"></a><a name="_core_disconnecting_from_a_data_source"></a>Veri kaynağı bağlantısı kesiliyor
+## <a name="disconnecting-from-a-data-source"></a><a name="_core_disconnecting_from_a_data_source"></a>Veri Kaynağından Bağlantı Kesme
 
-`CDatabase``Close` üye işlevini çağırmadan önce açık olan tüm kayıt kümelerini kapatmanız gerekir. Kapatmak istediğiniz `CDatabase` nesnesiyle ilişkili kayıt kümelerinde, bekleyen `AddNew` veya `Edit` deyimleri iptal edilir ve tüm bekleyen işlemler geri alınır.
+`CDatabase`Üye işlevini çağırmadan `Close` önce tüm açık kayıt kümelerini kapatmanız gerekir. Kapatmak istediğiniz `CDatabase` nesneyle ilişkili kayıt kümelerinde `AddNew` bekleyen `Edit` veya ekstreler iptal edilir ve bekleyen tüm hareketler geri alınır.
 
-#### <a name="to-disconnect-from-a-data-source"></a>Bir veri kaynağıyla bağlantısını kesmek için
+#### <a name="to-disconnect-from-a-data-source"></a>Bir veri kaynağından bağlantı kesmek için
 
-1. `CDatabase` nesnesinin [Close](../../mfc/reference/cdatabase-class.md#close) üye işlevini çağırın.
+1. Nesnenin `CDatabase` [Yakın](../../mfc/reference/cdatabase-class.md#close) üye işlevini arayın.
 
-1. Yeniden kullanmak istemediğiniz müddetçe nesneyi yok edin.
+1. Nesneyi yeniden kullanmak istemiyorsanız yok edin.
 
-##  <a name="reusing-a-cdatabase-object"></a><a name="_core_reusing_a_cdatabase_object"></a>Bir CDatabase nesnesini yeniden kullanma
+## <a name="reusing-a-cdatabase-object"></a><a name="_core_reusing_a_cdatabase_object"></a>CDatabase Nesnesi Yeniden Kullanma
 
-Bir `CDatabase` nesnesini, aynı veri kaynağına yeniden bağlanmak veya farklı bir veri kaynağına bağlanmak için kullanıp kullanmayacağınızı, bağlantısını kestikten sonra yeniden kullanabilirsiniz.
+Bir `CDatabase` nesneyi bağlantısını kestikten sonra, ister aynı veri kaynağına yeniden bağlanmak ister farklı bir veri kaynağına bağlanmak için kullanabilirsiniz.
 
-#### <a name="to-reuse-a-cdatabase-object"></a>Bir CDatabase nesnesini yeniden kullanmak için
+#### <a name="to-reuse-a-cdatabase-object"></a>CDatabase nesnesini yeniden kullanmak için
 
 1. Nesnenin özgün bağlantısını kapatın.
 
-1. Nesneyi yok etmek yerine `OpenEx` veya `Open` member işlevini yeniden çağırın.
+1. Nesneyi yok etmek yerine, nesnenin `OpenEx` veya `Open` üye işlevini yeniden çağırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

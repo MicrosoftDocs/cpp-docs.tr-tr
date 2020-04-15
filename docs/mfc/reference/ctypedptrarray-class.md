@@ -1,5 +1,5 @@
 ---
-title: CTypedPtrArray Class
+title: CTypedPtrArray Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CTypedPtrArray
@@ -22,16 +22,16 @@ helpviewer_keywords:
 - CTypedPtrArray [MFC], SetAt
 - CTypedPtrArray [MFC], SetAtGrow
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
-ms.openlocfilehash: 080e47746b83b6ff12db9f6df0fc27bcd202bb51
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: a996bca471ce82a7c2adaaad67670ddef417eda1
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346096"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373276"
 ---
-# <a name="ctypedptrarray-class"></a>CTypedPtrArray Class
+# <a name="ctypedptrarray-class"></a>CTypedPtrArray Sınıfı
 
-Sınıfındaki nesneler için tür açısından güvenli bir "sarmalayıcı" sağlar `CPtrArray` veya `CObArray`.
+Sınıf `CPtrArray` veya `CObArray`nesneler için tür güvenli bir "sarmalayıcı" sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,41 +43,41 @@ class CTypedPtrArray : public BASE_CLASS
 #### <a name="parameters"></a>Parametreler
 
 *BASE_CLASS*<br/>
-İşaretçi türü belirlenmiş dizi sınıfın temel sınıfına; array sınıfı olmalıdır ( `CObArray` veya `CPtrArray`).
+Daktio işaretçi dizi sınıfının taban sınıfı; bir dizi sınıfı `CObArray` olmalıdır `CPtrArray`( veya ).
 
-*TÜRÜ*<br/>
-Temel sınıf dizisinde depolanan öğelerin türü.
+*TÜR*<br/>
+Taban sınıf dizisinde depolanan öğelerin türü.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CTypedPtrArray::Add](#add)|Bir dizinin sonuna yeni bir öğe ekler. Gerekirse, dizi büyüyor|
-|[CTypedPtrArray::Append](#append)|Bir dizinin içeriğini başka sonuna ekler. Gerekirse, dizi büyüyor|
-|[CTypedPtrArray::Copy](#copy)|Diziyi başka diziye kopyalar; dizi gerekirse büyür.|
-|[CTypedPtrArray::ElementAt](#elementat)|Dizi içinde öğe işaretçisi için geçici bir başvuru döndürür.|
-|[CTypedPtrArray::GetAt](#getat)|Belirtilen dizindeki değeri döndürür.|
-|[CTypedPtrArray::InsertAt](#insertat)|Belirtilen dizindeki öğenin (veya başka bir dizideki tüm öğeler) ekler.|
-|[CTypedPtrArray::SetAt](#setat)|Belirtilen dizin için değeri ayarlar; dizi büyümesine izin verilmiyor.|
-|[CTypedPtrArray::SetAtGrow](#setatgrow)|Belirtilen dizin için değeri ayarlar; dizi gerekirse büyür.|
+|[CTypedPtrArray::Ekle](#add)|Dizinin sonuna yeni bir öğe ekler. Gerekirse diziyi büyütür|
+|[CTypedPtrArray::Ek](#append)|Bir dizinin içeriğini diğerinin sonuna ekler. Gerekirse diziyi büyütür|
+|[CTypedPtrArray::Kopyala](#copy)|Başka bir diziyi diziye kopyalar; gerekirse diziyi büyütür.|
+|[CTypedPtrArray::ElementAt](#elementat)|Dizi içindeki öğe işaretçisine geçici bir başvuru verir.|
+|[CTypedPtrArray::GetAt](#getat)|Belirli bir dizindeki değeri döndürür.|
+|[CTypedPtrArray::InsertAt](#insertat)|Belirli bir dizide bir öğe (veya başka bir dizideki tüm öğeler) ekler.|
+|[CTypedPtrArray::SetAt](#setat)|Belirli bir dizinin değerini ayarlar; dizi büyümeye izin verilmez.|
+|[CTypedPtrArray::SetAtGrow](#setatgrow)|Belirli bir dizinin değerini ayarlar; gerekirse diziyi büyütür.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CTypedPtrArray::operator \[ \]](#operator_at)|Belirtilen dizindeki öğeyi alır veya ayarlar.|
+|[CTypedPtrArray::operatör \[\]](#operator_at)|Belirtilen dizilişte öğeyi ayarlar veya alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanırken `CTypedPtrArray` yerine `CPtrArray` veya `CObArray`, C++ tür denetimi olanağı eşleşmeyen işaretçi türleri tarafından neden olduğu hata ortadan yardımcı olur.
+C++ `CTypedPtrArray` yazı `CPtrArray` denetimi `CObArray`tesisi yerine veya yerine kullandığınızda, eşleşmeyan işaretçi türlerinin neden olduğu hataların giderilmesine yardımcı olur.
 
-Ayrıca, `CTypedPtrArray` sarmalayıcı kullandıysanız, gerekli olacak atama çoğunu gerçekleştirir `CObArray` veya `CPtrArray`.
+Buna ek `CTypedPtrArray` olarak, sarıcı kullandıysanız `CObArray` veya `CPtrArray`gerekli olacak döküm çok gerçekleştirir.
 
-Çünkü tüm `CTypedPtrArray` satır içi işlevlerdir, bu şablonun kullanımını boyut veya hız kodunuzun önemli ölçüde etkilemez.
+Tüm `CTypedPtrArray` işlevler satır lı olduğundan, bu şablonun kullanımı kodunuzun boyutunu veya hızını önemli ölçüde etkilemez.
 
-Kullanma hakkında daha fazla bilgi için `CTypedPtrArray`, makalelere göz atın [koleksiyonları](../../mfc/collections.md) ve [şablona dayalı sınıflar](../../mfc/template-based-classes.md).
+Kullanma `CTypedPtrArray`hakkında daha fazla bilgi için [Koleksiyonlar](../../mfc/collections.md) ve [Şablon Tabanlı Sınıflar](../../mfc/template-based-classes.md)makalelerine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -89,9 +89,9 @@ Kullanma hakkında daha fazla bilgi için `CTypedPtrArray`, makalelere göz atı
 
 **Başlık:** afxtempl.h
 
-##  <a name="add"></a>  CTypedPtrArray::Add
+## <a name="ctypedptrarrayadd"></a><a name="add"></a>CTypedPtrArray::Ekle
 
-Bu üye işlevini çağırır `BASE_CLASS` **:: Ekle**.
+Bu üye `BASE_CLASS`işlev **::Ekle**.
 
 ```
 INT_PTR Add(TYPE newElement);
@@ -99,23 +99,23 @@ INT_PTR Add(TYPE newElement);
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Diziye eklenecek öğe türünü belirten bir şablon parametre.
+*TÜR*<br/>
+Diziye eklenecek öğe türünü belirten şablon parametresi.
 
 *newElement*<br/>
 Bu diziye eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eklenen öğenin dizini.
+Eklenen öğenin dizin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha ayrıntılı açıklamalar için bkz. [CObArray::Add](../../mfc/reference/cobarray-class.md#add).
+Daha ayrıntılı açıklamalar için [Bkz. CObArray::Ekle](../../mfc/reference/cobarray-class.md#add).
 
-##  <a name="append"></a>  CTypedPtrArray::Append
+## <a name="ctypedptrarrayappend"></a><a name="append"></a>CTypedPtrArray::Ek
 
-Bu üye işlevini çağırır `BASE_CLASS`:: Ekle **.
+Bu üye `BASE_CLASS`işlev ::Ek**' yi çağırır.
 
 ```
 INT_PTR Append(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
@@ -124,25 +124,25 @@ INT_PTR Append(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 ### <a name="parameters"></a>Parametreler
 
 *BASE_CLASS*<br/>
-İşaretçi türü belirlenmiş dizi sınıfın temel sınıfına; array sınıfı olmalıdır ( [CObArray](../../mfc/reference/cobarray-class.md) veya [CPtrArray](../../mfc/reference/cptrarray-class.md)).
+Daktio işaretçi dizi sınıfının taban sınıfı; bir dizi sınıfı [(CObArray](../../mfc/reference/cobarray-class.md) veya [CPtrArray)](../../mfc/reference/cptrarray-class.md)olmalıdır.
 
-*TÜRÜ*<br/>
-Temel sınıf dizisinde depolanan öğelerin türü.
+*TÜR*<br/>
+Taban sınıf dizisinde depolanan öğelerin türü.
 
 *src*<br/>
-Kaynak bir diziye eklenecek öğe.
+Bir diziye eklenecek öğelerin kaynağı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eklenen ilk öğenin dizini.
+İlk eklenen öğenin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha ayrıntılı açıklamalar için bkz. [CObArray::Append](../../mfc/reference/cobarray-class.md#append).
+Daha ayrıntılı açıklamalar için [CObArray::Append'e](../../mfc/reference/cobarray-class.md#append)bakın.
 
-##  <a name="copy"></a>  CTypedPtrArray::Copy
+## <a name="ctypedptrarraycopy"></a><a name="copy"></a>CTypedPtrArray::Kopyala
 
-Bu üye işlevini çağırır `BASE_CLASS` **:: kopyalama**.
+Bu üye `BASE_CLASS`işlev **::Kopyala**.
 
 ```
 void Copy(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
@@ -151,21 +151,21 @@ void Copy(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 ### <a name="parameters"></a>Parametreler
 
 *BASE_CLASS*<br/>
-İşaretçi türü belirlenmiş dizi sınıfın temel sınıfına; array sınıfı olmalıdır ( [CObArray](../../mfc/reference/cobarray-class.md) veya [CPtrArray](../../mfc/reference/cptrarray-class.md)).
+Daktio işaretçi dizi sınıfının taban sınıfı; bir dizi sınıfı [(CObArray](../../mfc/reference/cobarray-class.md) veya [CPtrArray)](../../mfc/reference/cptrarray-class.md)olmalıdır.
 
-*TÜRÜ*<br/>
-Temel sınıf dizisinde depolanan öğelerin türü.
+*TÜR*<br/>
+Taban sınıf dizisinde depolanan öğelerin türü.
 
 *src*<br/>
-Bir diziye kopyalanacak öğe kaynağı.
+Bir diziye kopyalanacak öğelerin kaynağı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha ayrıntılı açıklamalar için bkz. [CObArray::Copy](../../mfc/reference/cobarray-class.md#copy).
+Daha ayrıntılı açıklamalar için [Bkz. CObArray::Kopyala.](../../mfc/reference/cobarray-class.md#copy)
 
-##  <a name="elementat"></a>  CTypedPtrArray::ElementAt
+## <a name="ctypedptrarrayelementat"></a><a name="elementat"></a>CTypedPtrArray::ElementAt
 
-Bu satır içi işlev çağrıları `BASE_CLASS` **:: ElementAt**.
+Bu satır satırlı fonksiyon çağırır `BASE_CLASS` **::ElementAt**.
 
 ```
 TYPE& ElementAt(INT_PTR nIndex);
@@ -173,23 +173,23 @@ TYPE& ElementAt(INT_PTR nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Şablon parametresi bu dizinin içinde depolanan öğelerin türünü belirtme.
+*TÜR*<br/>
+Bu dizide depolanan öğelerin türünü belirten şablon parametresi.
 
-*nIndex*<br/>
-Büyük veya 0'a eşit bir tamsayı dizini ve tarafından döndürülen değer küçüktür veya eşittir `BASE_CLASS` **:: GetUpperBound**.
+*Nındex*<br/>
+0'dan büyük veya eşit ve `BASE_CLASS` **"GetUpperBound**" tarafından döndürülen değerden daha az veya eşit olan bir tümseci dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğesi tarafından belirtilen konumda bir geçici başvuru *nIndex*. Bu öğe şablon parametresi tarafından belirtilen tür olduğu *türü*.
+*nIndex*tarafından belirtilen konumdaki öğeye geçici bir başvuru. Bu öğe şablon parametre *TYPE*tarafından belirtilen tür .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha ayrıntılı açıklamalar için bkz. [CObArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat).
+Daha ayrıntılı açıklamalar için [CObArray::ElementAt'](../../mfc/reference/cobarray-class.md#elementat)a bakın.
 
-##  <a name="getat"></a>  CTypedPtrArray::GetAt
+## <a name="ctypedptrarraygetat"></a><a name="getat"></a>CTypedPtrArray::GetAt
 
-Bu satır içi işlev çağrıları `BASE_CLASS` **:: GetAt**.
+Bu satır satırlı fonksiyon çağırır `BASE_CLASS` **::GetAt**.
 
 ```
 TYPE GetAt(INT_PTR nIndex) const;
@@ -197,23 +197,23 @@ TYPE GetAt(INT_PTR nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Depolanan dizideki öğelerin türünü belirten bir şablon parametre.
+*TÜR*<br/>
+Dizide depolanan öğelerin türünü belirten şablon parametresi.
 
-*nIndex*<br/>
-Büyük veya 0'a eşit bir tamsayı dizini ve tarafından döndürülen değer küçüktür veya eşittir `BASE_CLASS` **:: GetUpperBound**.
+*Nındex*<br/>
+0'dan büyük veya eşit ve `BASE_CLASS` **"GetUpperBound**" tarafından döndürülen değerden daha az veya eşit olan bir tümseci dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğesi tarafından belirtilen konumda bir kopyasını *nIndex*. Bu öğe şablon parametresi tarafından belirtilen tür olduğu *türü*.
+*nIndex*tarafından belirtilen konumdaki öğenin bir kopyası. Bu öğe şablon parametre *TYPE*tarafından belirtilen tür .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha ayrıntılı açıklamalar için bkz. [CObArray::GetAt](../../mfc/reference/cobarray-class.md#getat)
+Daha ayrıntılı açıklamalar için [Bkz. CObArray::GetAt](../../mfc/reference/cobarray-class.md#getat)
 
-##  <a name="insertat"></a>  CTypedPtrArray::InsertAt
+## <a name="ctypedptrarrayinsertat"></a><a name="insertat"></a>CTypedPtrArray::InsertAt
 
-Bu üye işlevini çağırır `BASE_CLASS` **:: InsertAt**.
+Bu üye `BASE_CLASS`işlev **::InsertAt**.
 
 ```
 void InsertAt(
@@ -228,34 +228,34 @@ void InsertAt(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Tarafından döndürülen değeri,'den büyük bir tamsayı dizini [CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound).
+*Nındex*<br/>
+CObArray tarafından döndürülen değerden daha büyük olabilecek bir sonsayı [dizini::GetUpperBound.](../../mfc/reference/cobarray-class.md#getupperbound)
 
-*TÜRÜ*<br/>
-Temel sınıf dizisinde depolanan öğelerin türü.
+*TÜR*<br/>
+Taban sınıf dizisinde depolanan öğelerin türü.
 
 *newElement*<br/>
-Bu dizinin içinde yerleştirilecek nesne işaretçisi. A *newElement* değerinin **NULL** izin verilir.
+Bu diziye yerleştirilecek nesne işaretçisi. Null **değerinin** yeni bir *öğesine* izin verilir.
 
-*nCount*<br/>
-Bu öğe olmalıdır sayısı (varsayılan 1) eklenir.
+*nSayısı*<br/>
+Bu öğenin kaç kez eklenmesi gerekir (varsayılan olarak 1).
 
-*nStartIndex*<br/>
-Tarafından döndürülen değeri,'den büyük bir tamsayı dizini `CObArray::GetUpperBound`.
+*nBaşlangıç Endeksi*<br/>
+Tarafından döndürülen değerden büyük olabilecek bir `CObArray::GetUpperBound`karşılayon dizini.
 
 *BASE_CLASS*<br/>
-İşaretçi türü belirlenmiş dizi sınıfın temel sınıfına; array sınıfı olmalıdır ( [CObArray](../../mfc/reference/cobarray-class.md) veya [CPtrArray](../../mfc/reference/cptrarray-class.md)).
+Daktio işaretçi dizi sınıfının taban sınıfı; bir dizi sınıfı [(CObArray](../../mfc/reference/cobarray-class.md) veya [CPtrArray)](../../mfc/reference/cptrarray-class.md)olmalıdır.
 
 *pNewArray*<br/>
 Bu diziye eklenecek öğeleri içeren başka bir dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha ayrıntılı açıklamalar için bkz. [CObArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat).
+Daha ayrıntılı açıklamalar için [CObArray::InsertAt'](../../mfc/reference/cobarray-class.md#insertat)a bakın.
 
-##  <a name="operator_at"></a>  CTypedPtrArray::operator]
+## <a name="ctypedptrarrayoperator--"></a><a name="operator_at"></a>CTypedPtrArray::operatör [ ]
 
-Bu satır içi işleçler çağrı `BASE_CLASS` **:: operator []**.
+Bu satırlı `BASE_CLASS`işleçler **::operator [ ]** diyoruz.
 
 ```
 TYPE& operator[ ](int_ptr nindex);
@@ -264,21 +264,21 @@ TYPE operator[ ](int_ptr nindex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Depolanan dizideki öğelerin türünü belirten bir şablon parametre.
+*TÜR*<br/>
+Dizide depolanan öğelerin türünü belirten şablon parametresi.
 
-*nIndex*<br/>
-Büyük veya 0'a eşit bir tamsayı dizini ve tarafından döndürülen değer küçüktür veya eşittir `BASE_CLASS` **:: GetUpperBound**.
+*Nındex*<br/>
+0'dan büyük veya eşit ve `BASE_CLASS` **"GetUpperBound**" tarafından döndürülen değerden daha az veya eşit olan bir tümseci dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işleç değil diziler için çağrılır **const**, sağ (r) veya Atama ifadesinin solunda (lvalue) üzerinde kullanılabilir. İkincisi, çağrılan için **const** diziler, sağ tarafta yalnızca kullanılabilir.
+**Const**olmayan diziler için çağrılan ilk işleç, atama deyiminin sağında (r değeri) veya sol (l-değeri) kullanılabilir. Const diziler **const** için çağrılan ikinci, yalnızca sağda kullanılabilir.
 
-Kitaplığı hata ayıklama sürümünü (veya sol veya sağ tarafında bir atama ifadesi) alt simge sınırların dışında olup olmadığını onaylar.
+Kitaplığın Hata Ayıklama sürümü, alt yazının (atama deyiminin solunda veya sağ tarafında) sınırların dışında olduğunu ileri sürer.
 
-##  <a name="setat"></a>  CTypedPtrArray::SetAt
+## <a name="ctypedptrarraysetat"></a><a name="setat"></a>CTypedPtrArray::SetAt
 
-Bu üye işlevini çağırır `BASE_CLASS` **:: SetAt**.
+Bu üye `BASE_CLASS`işlev **::SetAt.**
 
 ```
 void SetAt(
@@ -288,22 +288,22 @@ void SetAt(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Büyük veya 0'a eşit bir tamsayı dizini ve tarafından döndürülen değer küçüktür veya eşittir [CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound).
+*Nındex*<br/>
+0'dan büyük veya eşit ve CObArray tarafından döndürülen değerden daha az veya eşit olan bir sonsayı [dizini::GetUpperBound.](../../mfc/reference/cobarray-class.md#getupperbound)
 
-*TÜRÜ*<br/>
-Temel sınıf dizisinde depolanan öğelerin türü.
+*TÜR*<br/>
+Taban sınıf dizisinde depolanan öğelerin türü.
 
-*ptr*<br/>
-Dizide nIndex eklenecek öğe için bir işaretçi. NULL değerine izin verilir.
+*Ptr*<br/>
+nIndex'teki diziye eklenecek öğeiçin bir işaretçi. NULL değerine izin verilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha ayrıntılı açıklamalar için bkz. [CObArray::SetAt](../../mfc/reference/cobarray-class.md#setat).
+Daha ayrıntılı açıklamalar için [CObArray::SetAt'a](../../mfc/reference/cobarray-class.md#setat)bakın.
 
-##  <a name="setatgrow"></a>  CTypedPtrArray::SetAtGrow
+## <a name="ctypedptrarraysetatgrow"></a><a name="setatgrow"></a>CTypedPtrArray::SetAtGrow
 
-Bu üye işlevini çağırır `BASE_CLASS` **:: SetAtGrow**.
+Bu üye `BASE_CLASS`işlev **::SetAtGrow**.
 
 ```
 void SetAtGrow(
@@ -313,22 +313,22 @@ void SetAtGrow(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Büyük veya 0'a eşit bir tamsayı dizini.
+*Nındex*<br/>
+0'dan büyük veya eşit bir sonsayı dizini.
 
-*TÜRÜ*<br/>
-Temel sınıf dizisinde depolanan öğelerin türü.
+*TÜR*<br/>
+Taban sınıf dizisinde depolanan öğelerin türü.
 
 *newElement*<br/>
-Bu diziye eklenecek nesne işaretçisi. A **NULL** değere izin verilir.
+Bu diziye eklenecek nesne işaretçisi. **NULL** değerine izin verilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha ayrıntılı açıklamalar için bkz. [CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow).
+Daha ayrıntılı açıklamalar için [CObArray::SetAtGrow'](../../mfc/reference/cobarray-class.md#setatgrow)a bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek Topla](../../overview/visual-cpp-samples.md)<br/>
+[MFC Örnek TOPLAMA](../../overview/visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CPtrArray Sınıfı](../../mfc/reference/cptrarray-class.md)<br/>
 [CObArray Sınıfı](../../mfc/reference/cobarray-class.md)

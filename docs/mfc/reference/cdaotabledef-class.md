@@ -1,5 +1,5 @@
 ---
-title: CDaoTableDef sınıfı
+title: CDaoTableDef Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDaoTableDef
@@ -72,16 +72,16 @@ helpviewer_keywords:
 - CDaoTableDef [MFC], m_pDAOTableDef
 - CDaoTableDef [MFC], m_pDatabase
 ms.assetid: 7c5d2254-8475-43c4-8a6c-2d32ead194c9
-ms.openlocfilehash: 485fe3533916e5e59bc87084f58acfb37368ac32
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 063d0b795c7e4f6af901f52563295883ef81de7d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79418764"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377131"
 ---
-# <a name="cdaotabledef-class"></a>CDaoTableDef sınıfı
+# <a name="cdaotabledef-class"></a>CDaoTableDef Sınıfı
 
-Bir temel tablonun veya eklenmiş tablonun saklı tanımını temsil eder.
+Bir taban tablonun veya ekli tablonun depolanan tanımını temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -91,107 +91,107 @@ class CDaoTableDef : public CObject
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CDaoTableDef:: CDaoTableDef](#cdaotabledef)|`CDaoTableDef` nesnesi oluşturur.|
+|[CDaoTableDef::CDaoTableDef](#cdaotabledef)|Bir `CDaoTableDef` nesne inşa eder.|
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CDaoTableDef:: Append](#append)|Veritabanına yeni bir tablo ekler.|
-|[CDaoTableDef:: CanUpdate](#canupdate)|Tablo güncelleştirilemeyebilir sıfır dışında bir değer döndürür (alanların tanımını veya tablo özelliklerini değiştirebilirsiniz).|
-|[CDaoTableDef:: Close](#close)|Açık bir TableDef kapatır.|
-|[CDaoTableDef:: Create](#create)|[Append](#append)kullanılarak veritabanına eklenebilen bir tablo oluşturur.|
-|[CDaoTableDef:: CreateField](#createfield)|Tablo için alan oluşturmak üzere çağırılır.|
-|[CDaoTableDef:: CreateIndex](#createindex)|Bir tablo için dizin oluşturmak üzere çağırılır.|
-|[CDaoTableDef::D eleteField](#deletefield)|Tablodaki bir alanı silmek için çağırılır.|
-|[CDaoTableDef::D Eleteındex](#deleteindex)|Tablodan bir dizini silmek için çağırılır.|
-|[CDaoTableDef:: GetAttributes](#getattributes)|Bir `CDaoTableDef` nesnesinin bir veya daha fazla özelliğini gösteren bir değer döndürür.|
-|[CDaoTableDef:: GetConnect](#getconnect)|Bir tablonun kaynağı hakkında bilgi sağlayan bir değer döndürür.|
-|[CDaoTableDef:: GetDateCreated](#getdatecreated)|Temel tablonun bir `CDaoTableDef` nesnesinin oluşturulduğu tarih ve saati döndürür.|
-|[CDaoTableDef:: GetDateLastUpdated](#getdatelastupdated)|Temel tablonun tasarımında yapılan en son değişikliğin tarih ve saatini döndürür.|
-|[CDaoTableDef:: GetFieldCount](#getfieldcount)|Tablodaki alan sayısını temsil eden bir değer döndürür.|
-|[CDaoTableDef:: GetFieldInfo](#getfieldinfo)|Tablodaki alanlarla ilgili belirli tür bilgileri döndürür.|
-|[CDaoTableDef:: GetIndexCount](#getindexcount)|Tablo için dizinlerin sayısını döndürür.|
-|[CDaoTableDef:: GetIndexInfo](#getindexinfo)|Tabloya yönelik dizinler hakkında belirli tür bilgileri döndürür.|
-|[CDaoTableDef:: GetName](#getname)|Tablonun Kullanıcı tanımlı adını döndürür.|
-|[CDaoTableDef:: GetRecordCount](#getrecordcount)|Tablodaki kayıt sayısını döndürür.|
-|[CDaoTableDef:: GetSourceTableName](#getsourcetablename)|Kaynak veritabanında eklenmiş tablonun adını belirten bir değer döndürür.|
-|[CDaoTableDef:: GetValidationRule](#getvalidationrule)|Bir alana değiştiği veya tabloya eklendiği için bir alandaki verileri doğrulayan bir değer döndürür.|
-|[CDaoTableDef:: GetValidationText](#getvalidationtext)|Bir alan nesnesinin değeri belirtilen doğrulama kuralını karşılamadığı takdirde, uygulamanızın görüntüleyeceği iletinin metnini belirten bir değer döndürür.|
-|[CDaoTableDef:: IsOpen](#isopen)|Tablo açıksa sıfır olmayan bir değer döndürür.|
-|[CDaoTableDef:: Open](#open)|Veritabanının Tabledefın koleksiyonunda depolanan mevcut bir TableDef öğesini açar.|
-|[CDaoTableDef:: RefreshLink](#refreshlink)|Ekli tablo için bağlantı bilgilerini güncelleştirir.|
-|[CDaoTableDef:: SetAttributes](#setattributes)|Bir `CDaoTableDef` nesnesinin bir veya daha fazla özelliğini gösteren bir değer ayarlar.|
-|[CDaoTableDef:: SetConnect](#setconnect)|Bir tablonun kaynağı hakkında bilgi sağlayan bir değer ayarlar.|
-|[CDaoTableDef:: SetName](#setname)|Tablonun adını ayarlar.|
-|[CDaoTableDef:: SetSourceTableName](#setsourcetablename)|Kaynak veritabanında eklenmiş bir tablonun adını belirten bir değer ayarlar.|
-|[CDaoTableDef:: SetValidationRule](#setvalidationrule)|Bir alandaki verileri değiştirilmiş veya tabloya eklendiği için doğrulayan bir değeri ayarlar.|
-|[CDaoTableDef:: SetValidationText](#setvalidationtext)|Bir alan nesnesinin değeri belirtilen doğrulama kuralını karşılamadığı takdirde, uygulamanızın görüntüleyeceği iletinin metnini belirten bir değer ayarlar.|
+|[CDaoTableDef::Ek](#append)|Veritabanına yeni bir tablo ekler.|
+|[CDaoTableDef::CanUpdate](#canupdate)|Tablo güncelleştirilebiliyorsa sıfırsız döndürür (alanların veya tablo özelliklerinin tanımını değiştirebilirsiniz).|
+|[CDaoTableDef::Kapat](#close)|Açık bir tabledef kapatır.|
+|[CDaoTableDef::Oluştur](#create)|[Append](#append)kullanarak veritabanına eklenebilecek bir tablo oluşturur.|
+|[CDaoTableDef::CreateField](#createfield)|Tablo için alan oluşturmak için çağrıldı.|
+|[CDaoTableDef::CreateIndex](#createindex)|Tablo için dizin oluşturmak için çağrıldı.|
+|[CDaoTableDef::DeleteField](#deletefield)|Bir tablodan bir alanı silmek için çağrıldı.|
+|[CDaoTableDef::DeleteIndex](#deleteindex)|Bir tablodan bir dizin silmek için çağrıldı.|
+|[CDaoTableDef::GetAttributes](#getattributes)|Nesnenin bir veya daha fazla `CDaoTableDef` özelliğini gösteren bir değer verir.|
+|[CDaoTableDef::GetConnect](#getconnect)|Tablonun kaynağı hakkında bilgi sağlayan bir değer verir.|
+|[CDaoTableDef::GetDateCreated](#getdatecreated)|`CDaoTableDef` Nesnenin altında yatan temel tablonun oluşturulduğu tarihi ve saati döndürür.|
+|[CDaoTableDef::GetDateLastUpdated](#getdatelastupdated)|Taban tablonun tasarımında yapılan en son değişikliğin tarih ve saatini verir.|
+|[CDaoTableDef::GetFieldCount](#getfieldcount)|Tablodaki alan sayısını temsil eden bir değer verir.|
+|[CDaoTableDef::GetFieldInfo](#getfieldinfo)|Tablodaki alanlar hakkında belirli türde bilgiler verir.|
+|[CDaoTableDef::GetIndexCount](#getindexcount)|Tablo için dizin sayısını verir.|
+|[CDaoTableDef::GetIndexInfo](#getindexinfo)|Tablonun dizinleri hakkında belirli türde bilgiler verir.|
+|[CDaoTableDef::GetName](#getname)|Tablonun kullanıcı tanımlı adını döndürür.|
+|[CDaoTableDef::GetRecordCount](#getrecordcount)|Tablodaki kayıt sayısını verir.|
+|[CDaoTableDef::GetSourceTableName](#getsourcetablename)|Kaynak veritabanında ekli tablonun adını belirten bir değer döndürür.|
+|[CDaoTableDef::GetValidationRule](#getvalidationrule)|Değiştirildikçe veya tabloya eklendikçe alandaki verileri doğrulayan bir değer verir.|
+|[CDaoTableDef::GetValidationMetin](#getvalidationtext)|Alan nesnesinin değeri belirtilen doğrulama kuralını karşılamazsa, uygulamanızın görüntülediği iletimetnini belirten bir değer döndürür.|
+|[CDaoTableDef::Açık](#isopen)|Tablo açıksa sıfırsız döndürür.|
+|[CDaoTableDef::Aç](#open)|Veritabanının TableDef koleksiyonunda depolanan varolan bir tabloyu açar.|
+|[CDaoTableDef::RefreshLink](#refreshlink)|Ekli tablonun bağlantı bilgilerini güncelleştirir.|
+|[CDaoTableDef::SetAttributes](#setattributes)|Nesnenin bir veya daha fazla `CDaoTableDef` özelliğini gösteren bir değer ayarlar.|
+|[CDaoTableDef::SetConnect](#setconnect)|Tablonun kaynağı hakkında bilgi sağlayan bir değer ayarlar.|
+|[CDaoTableDef::SetName](#setname)|Tablonun adını ayarlar.|
+|[CDaoTableDef::SetSourceTableName](#setsourcetablename)|Kaynak veritabanında ekli bir tablonun adını belirten bir değer ayarlar.|
+|[CDaoTableDef::SetValidationRule](#setvalidationrule)|Tablodeğiştirildikçe veya tabloya eklendikçe alandaki verileri doğrulayan bir değer ayarlar.|
+|[CDaoTableDef::SetValidationMetin](#setvalidationtext)|Alan nesnesinin değeri belirtilen doğrulama kuralını karşılamazsa, uygulamanızın görüntülediği iletimetnini belirten bir değer ayarlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CDaoTableDef:: m_pDAOTableDef](#m_pdaotabledef)|Tabledef nesnesini temel alan DAO arabirimine yönelik bir işaretçi.|
-|[CDaoTableDef:: m_pDatabase](#m_pdatabase)|Bu tablo için kaynak veritabanı.|
+|[CDaoTableDef::m_pDAOTableDef](#m_pdaotabledef)|Tabledef nesnesinin altında yatan DAO arabirimine işaretçi.|
+|[CDaoTableDef::m_pDatabase](#m_pdatabase)|Bu tablo için kaynak veritabanı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her DAO veritabanı nesnesi, tüm kaydedilmiş DAO TableDef nesnelerini içeren TableDefs adlı bir koleksiyon tutar.
+Her DAO veritabanı nesnesi, kaydedilen tüm DAO tabledef nesnelerini içeren TableDefs adlı bir koleksiyon tutar.
 
-Bir `CDaoTableDef` nesnesi kullanarak bir tablo tanımını işlersiniz. Örneğin, şunları yapabilirsiniz:
+Bir `CDaoTableDef` nesne kullanarak tablo tanımını manipüle emzirsiniz. Örneğin, şunları yapabilirsiniz:
 
-- Bir veritabanındaki herhangi bir yerel, ekli veya dış tablonun alanını ve dizin yapısını inceleyin.
+- Veritabanındaki herhangi bir yerel, bağlı veya harici tablonun alan ve dizin yapısını inceleyin.
 
-- Eklenmiş tablolar için `SetConnect` ve `SetSourceTableName` üye işlevlerini çağırın ve ekli tabloların bağlantılarını güncelleştirmek için `RefreshLink` üye işlevini kullanın.
+- Ekli `SetConnect` tablolar `SetSourceTableName` için ve üye işlevleri arayın `RefreshLink` ve bağlı tablolara bağlantıları güncelleştirmek için üye işlevi kullanın.
 
-- Tablodaki alan tanımlarını düzenleyip düzenleyebiliyorsanız, bunu öğrenmek için `CanUpdate` üye işlevini çağırın.
+- Tablodaki `CanUpdate` alan tanımlarını yeniden belirleyip erteleyip edinamayacağınızı belirlemek için üye işlevi arayın.
 
-- `GetValidationRule` ve `SetValidationRule`ve `GetValidationText` ve `SetValidationText` üye işlevlerini kullanarak doğrulama koşullarını alın veya ayarlayın.
+- `GetValidationRule` Ve `SetValidationRule` `SetValidationText` üye işlevlerini kullanarak `GetValidationText` doğrulama koşullarını alın veya ayarlayın.
 
-- Tablo, dynaset veya anlık görüntü türü `CDaoRecordset` nesnesi oluşturmak için `Open` member işlevini kullanın.
+- Tablo, `Open` dynaset veya anlık görüntü türü `CDaoRecordset` nde bir nesne oluşturmak için üye işlevi kullanın.
 
     > [!NOTE]
-    >  DAO veritabanı sınıfları, açık veritabanı bağlantısı (ODBC) tabanlı MFC veritabanı sınıflarından farklıdır. Tüm DAO veritabanı sınıf adlarında "CDao" öneki vardır. ODBC veri kaynaklarına yine de DAO sınıfları ile erişebilirsiniz; DAO sınıfları, Microsoft Jet veritabanı altyapısına özgü olduklarından üstün yetenekler sunar.
+    >  DAO veritabanı sınıfları Açık Veritabanı Bağlantısı (ODBC) dayalı MFC veritabanı sınıfları farklıdır. Tüm DAO veritabanı sınıf adları "CDao" öneki vardır. DaO sınıfları ile ODBC veri kaynaklarına erişebilirsiniz; DAO sınıfları genellikle microsoft jet veritabanı altyapısına özgü olduğundan üstün özellikler sunar.
 
-### <a name="to-use-tabledef-objects-either-to-work-with-an-existing-table-or-to-create-a-new-table"></a>TableDef nesnelerini, var olan bir tabloyla çalışmak ya da yeni bir tablo oluşturmak için kullanmak için
+### <a name="to-use-tabledef-objects-either-to-work-with-an-existing-table-or-to-create-a-new-table"></a>Varolan bir tabloyla çalışmak veya yeni bir tablo oluşturmak için tabledef nesnelerini kullanmak için
 
-1. Her durumda, ilk olarak tablonun ait olduğu bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesine bir işaretçi sağlayan bir `CDaoTableDef` nesnesi oluşturun.
+1. Her durumda, önce `CDaoTableDef` tablonun ait olduğu [bir CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesine işaretçi sağlayan bir nesne oluştur.
 
-1. Ardından, istediğiniz seçeneğe bağlı olarak aşağıdakileri yapın:
+1. Sonra ne istediğinize bağlı olarak, aşağıdakileri yapın:
 
-   - Varolan bir kaydedilmiş tabloyu kullanmak için, kayıt tablosunun adını sağlayarak TableDef nesnesinin [Open](#open) üye işlevini çağırın.
+   - Varolan kaydedilmiş bir tabloyu kullanmak için tabledef nesnesinin [Açık](#open) üye işlevini arayarak kaydedilen tablonun adını belirtin.
 
-   - Yeni bir tablo oluşturmak için, tablo adını sağlayarak TableDef nesnesinin üye [Oluştur](#create) işlevini çağırın. Tabloya alanlar ve dizinler eklemek için [CreateField](#createfield) ve [CreateIndex](#createindex) ' i çağırın.
+   - Yeni bir tablo oluşturmak için tabledef object'in tablonun adını sağlayan Üye [Oluştur](#create) işlevini çağırın. Tabloya alan ve dizin eklemek için [CreateField](#createfield) ve [CreateIndex'i](#createindex) arayın.
 
-   - Tabloyu veritabanının TableDefs koleksiyonuna ekleyerek kaydetmek için [append](#append) çağrısı yapın. `Create`, TableDef 'i açık duruma geçirir, bu nedenle `Create` çağrıldıktan sonra `Open`çağırmayın.
+   - Veritabanının TableDefs koleksiyonuna ekleyerek tabloyu kaydetmek için [Append'i](#append) arayın. `Create`açık bir duruma tabledef koyar, `Create` bu yüzden `Open`aradıktan sonra aramayın .
 
         > [!TIP]
-        >  Kaydedilmiş tabloları oluşturmanın en kolay yolu, bunları oluşturmak ve Microsoft Access 'i kullanarak veritabanınızda depolar. Bu durumda, MFC kodunuzda açabilir ve kullanabilirsiniz.
+        >  Kaydedilen tabloları oluşturmanın en kolay yolu, bunları oluşturmak ve Microsoft Access'i kullanarak veritabanınızda depolamaktır. Ardından bunları MFC kodunuzda açıp kullanabilirsiniz.
 
-Açtığınız veya oluşturduğunuz TableDef nesnesini kullanmak için, *nOpenType* parametresinde bir `dbOpenTable` değeri ile TableDef adını belirterek bir `CDaoRecordset` nesnesi oluşturun ve açın.
+Açtığınız veya oluşturduğunuz tabledef nesnesini kullanmak `CDaoRecordset` için, *nOpenType* parametresinde bir `dbOpenTable` değeriçeren tablodef adını belirterek bir nesne oluşturun ve açın.
 
-Bir `CDaoRecordset` nesnesi oluşturmak için bir TableDef nesnesi kullanmak için, genellikle yukarıda açıklanan bir TableDef oluşturun veya açın, ardından bir kayıt kümesi nesnesi oluşturur ve bu, [CDaoRecordset:: Open](../../mfc/reference/cdaorecordset-class.md#open)' ı çağırdığınızda TableDef nesnesine bir işaretçi geçirerek bir işaretçi alır. Geçirdiğiniz tabledef açık durumda olmalıdır. Daha fazla bilgi için bkz. Class [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).
+Bir nesne oluşturmak için bir `CDaoRecordset` tabledef nesnesi kullanmak için, genellikle oluşturmak veya yukarıda açıklandığı gibi bir tabledef açmak, sonra [cDaoRecordset::Aç](../../mfc/reference/cdaorecordset-class.md#open)çağırdığınızda tabledef nesnesine bir işaretçi geçerek bir kayıt kümesi nesnesi oluşturmak. Geçtiğin tablo açık bir durumda olmalıdır. Daha fazla bilgi için [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md)sınıfına bakın.
 
-Bir TableDef nesnesi kullanmayı bitirdiğinizde, [Close](../../mfc/reference/cdaorecordset-class.md#close) üye işlevini çağırın; Sonra TableDef nesnesini yok edin.
+Tabledef nesnesini kullanmayı bitirdiğinizde, [Yakın](../../mfc/reference/cdaorecordset-class.md#close) üye işlevini arayın; sonra tabledef nesnesini yok edin.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 `CDaoTableDef`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdao. h
+**Üstbilgi:** afxdao.h
 
-##  <a name="append"></a>CDaoTableDef:: Append
+## <a name="cdaotabledefappend"></a><a name="append"></a>CDaoTableDef::Ek
 
-TableDef 'i veritabanına kaydetmek üzere yeni bir TableDef nesnesi oluşturmak için [Oluştur](#create) ' a çağrı yaptıktan sonra bu üye işlevini çağırın.
+Veritabanında tabledef kaydetmek için yeni bir tabledef nesnesi oluşturmak için [Oluştur'u](#create) aradıktan sonra bu üye işlevi arayın.
 
 ```
 virtual void Append();
@@ -199,16 +199,16 @@ virtual void Append();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, nesneyi veritabanının TableDefs koleksiyonuna ekler. TableDef öğesini ekleyerek geçici bir nesne olarak kullanabilirsiniz, ancak onu kaydedip kullanmak istiyorsanız, `Append`çağırmanız gerekir.
+İşlev, nesneyi veritabanının TableDefs koleksiyonuna ekler. Tabledef'i geçici bir nesne olarak kullanabilirsiniz, ancak ekolarak tanımlayarak, ancak kaydetmek ve kullanmak `Append`istiyorsanız, aramanız gerekir.
 
 > [!NOTE]
->  Adlandırılmamış bir TableDef (null veya boş dize içeren) eklemeye çalışırsanız, MFC bir özel durum oluşturur.
+> Adsız bir tabledef (null veya boş dize içeren) eklemeye çalışırsanız, MFC bir özel durum atar.
 
-İlgili bilgiler için, DAO yardımı 'nda "ekleme yöntemi" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Uygulama Yöntemi" konusuna bakın.
 
-##  <a name="canupdate"></a>CDaoTableDef:: CanUpdate
+## <a name="cdaotabledefcanupdate"></a><a name="canupdate"></a>CDaoTableDef::CanUpdate
 
-`CDaoTableDef` nesnesini temel alan tablonun tanımının değiştirilip değiştirilemeyeceğini öğrenmek için bu üye işlevi çağırın.
+Bir `CDaoTableDef` nesnenin altında yatan tablonun tanımının değiştirilip değiştirilemeyeceğini belirlemek için bu üye işlevi arayın.
 
 ```
 BOOL CanUpdate();
@@ -216,17 +216,17 @@ BOOL CanUpdate();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tablo yapısı (şema) değiştirilemiyorsa (alanlar ve dizinler ekleyin veya silin), aksi takdirde 0.
+Tablo yapısı (şema) değiştirilebilirse (alanları ve dizinleri ekleme veya silme) sıfırsız, aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, `CDaoTableDef` nesnesini temel alan yeni oluşturulan bir tablo güncelleştirilebilecek ve bir `CDaoTableDef` nesnesini temel alan eklenmiş bir tablo güncelleştirilemez. Sonuç kümesi güncelleştirilebilir olmasa bile `CDaoTableDef` nesnesi güncelleştirilebilir.
+Varsayılan olarak, bir nesnenin `CDaoTableDef` altında yatan yeni oluşturulan tablo güncelleştirilebilir ve nesnenin altında yatan eklenmiş tablo `CDaoTableDef` güncelleştirilemez. Elde `CDaoTableDef` edilen kayıt kümesi güncel tutulamaz olsa bile, bir nesne güncellenebilir olabilir.
 
-İlgili bilgiler için, DAO yardımı 'nda "güncelleştirilebilir özellik" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Güncelilebilir Özellik" konusuna bakın.
 
-##  <a name="cdaotabledef"></a>CDaoTableDef:: CDaoTableDef
+## <a name="cdaotabledefcdaotabledef"></a><a name="cdaotabledef"></a>CDaoTableDef::CDaoTableDef
 
-`CDaoTableDef` nesnesi oluşturur.
+Bir `CDaoTableDef` nesne inşa eder.
 
 ```
 CDaoTableDef(CDaoDatabase* pDatabase);
@@ -235,15 +235,15 @@ CDaoTableDef(CDaoDatabase* pDatabase);
 ### <a name="parameters"></a>Parametreler
 
 *pDatabase*<br/>
-Bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesine yönelik bir işaretçi.
+[CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnesi oluşturulduktan sonra [Create](#create) veya [Open](#open) member işlevini çağırmanız gerekir. Nesnesiyle bitirdiğinizde, [Close](#close) üye işlevini çağırmanız ve `CDaoTableDef` nesnesini yok etmeniz gerekir.
+Nesneyi oluşturduktan sonra [Oluştur](#create) veya [Aç](#open) üye işlevini aramanız gerekir. Nesneyle bitirdiğinizde, [Yakın](#close) üye işlevini aramalı ve `CDaoTableDef` nesneyi yok etmelisiniz.
 
-##  <a name="close"></a>CDaoTableDef:: Close
+## <a name="cdaotabledefclose"></a><a name="close"></a>CDaoTableDef::Kapat
 
-Tabledef nesnesini kapatmak ve serbest bırakmak için bu üye işlevi çağırın.
+Tabledef nesnesini kapatmak ve serbest bırakmak için bu üye işlevi arayın.
 
 ```
 virtual void Close();
@@ -251,15 +251,15 @@ virtual void Close();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle `Close`çağrıldıktan sonra TableDef nesnesini **Yeni**ile ayrıldıysa silinir.
+Genellikle aradıktan `Close`sonra, yeni ile tahsis edildi eğer tabledef nesnesi silersiniz. **new**
 
-`Close`çağrıldıktan sonra tekrar [Aç](#open) ' a çağrı yapabilirsiniz. Bu, TableDef nesnesini yeniden kullanmanıza olanak sağlar.
+Aradıktan sonra [aç'ı](#open) tekrar arayabilirsiniz. `Close` Bu, tabledef nesnesini yeniden kullanmanıza olanak tanır.
 
-İlgili bilgiler için, DAO yardımı 'nda "Yöntem kapatma" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Yöntemi Kapat" konusuna bakın.
 
-##  <a name="create"></a>CDaoTableDef:: Create
+## <a name="cdaotabledefcreate"></a><a name="create"></a>CDaoTableDef::Oluştur
 
-Yeni bir kaydedilmiş tablo oluşturmak için bu üye işlevini çağırın.
+Yeni bir kaydedilmiş tablo oluşturmak için bu üye işlevi arayın.
 
 ```
 virtual void Create(
@@ -271,34 +271,34 @@ virtual void Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*<br/>
-Tablonun adını içeren bir dize işaretçisi.
+*Lpszname*<br/>
+Tablonun adını içeren bir dize için bir işaretçi.
 
 *lAttributes*<br/>
-TableDef nesnesi tarafından temsil edilen tablonun özelliklerine karşılık gelen bir değer. Aşağıdaki sabitlerden herhangi birini birleştirmek için bit düzeyinde veya kullanabilirsiniz:
+Tablonun özelliklerine karşılık gelen bir değer tabledef nesnesi tarafından temsil edilir. Aşağıdaki sabitlerden herhangi birini birleştirmek için bitwise-OR'u kullanabilirsiniz:
 
 |Sabit|Açıklama|
 |--------------|-----------------|
-|`dbAttachExclusive`|Microsoft Jet veritabanı altyapısını kullanan veritabanları için, tablonun özel kullanım için açılmış bir eklenmiş tablo olduğunu gösterir.|
-|`dbAttachSavePWD`|Microsoft Jet veritabanı altyapısını kullanan veritabanları için, ekli tablo için Kullanıcı KIMLIĞI ve parolanın bağlantı bilgileriyle kaydedildiğini belirtir.|
-|`dbSystemObject`|Tablonun Microsoft Jet veritabanı altyapısı tarafından sunulan bir sistem tablosu olduğunu gösterir.|
-|`dbHiddenObject`|Tablonun Microsoft Jet veritabanı altyapısı tarafından sunulan gizli bir tablo olduğunu gösterir.|
+|`dbAttachExclusive`|Microsoft Jet veritabanı altyapısını kullanan veritabanları için tablo, özel kullanım için açılmış ekli bir tablo olduğunu gösterir.|
+|`dbAttachSavePWD`|Microsoft Jet veritabanı altyapısını kullanan veritabanları için, bağlı tablonun kullanıcı kimliği ve parolasının bağlantı bilgileriyle birlikte kaydedildiğini gösterir.|
+|`dbSystemObject`|Tablonun Microsoft Jet veritabanı altyapısı tarafından sağlanan bir sistem tablosu olduğunu gösterir.|
+|`dbHiddenObject`|Tablonun Microsoft Jet veritabanı altyapısı tarafından sağlanan gizli bir tablo olduğunu gösterir.|
 
 *lpszSrcTable*<br/>
-Kaynak tablo adını içeren bir dize işaretçisi. Varsayılan olarak bu değer, NULL olarak başlatılır.
+Kaynak tablo adını içeren bir dize için işaretçi. Varsayılan olarak bu değer NULL olarak başharfe çevrilir.
 
 *lpszConnect*<br/>
-Varsayılan bağlantı dizesini içeren bir dize işaretçisi. Varsayılan olarak bu değer, NULL olarak başlatılır.
+Varsayılan bağlantı dizesini içeren bir dize için işaretçi. Varsayılan olarak bu değer NULL olarak başharfe çevrilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-TableDef 'i adlandırdıktan sonra, TableDef ' [i çağırıp veritabanının](#append) TableDefs koleksiyonuna kaydedebilirsiniz. `Append`çağrıldıktan sonra, TableDef açık durumdadır ve bunu bir [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesi oluşturmak için kullanabilirsiniz.
+Tabledef adını verdikten sonra, veritabanının TableDefs koleksiyonunda tabledef kaydetmek için [Append'i](#append) arayabilirsiniz. Aradıktan `Append`sonra, tabledef açık durumdadır ve [cdaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesi oluşturmak için kullanabilirsiniz.
 
-İlgili bilgiler için, DAO yardımı 'nda "CreateTableDef yöntemi" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "CreateTableDef Method" konusuna bakın.
 
-##  <a name="createfield"></a>CDaoTableDef:: CreateField
+## <a name="cdaotabledefcreatefield"></a><a name="createfield"></a>CDaoTableDef::CreateField
 
-Tabloya bir alan eklemek için bu üye işlevini çağırın.
+Tabloya alan eklemek için bu üye işlevi arayın.
 
 ```
 void CreateField(
@@ -312,48 +312,48 @@ void CreateField(CDaoFieldInfo& fieldinfo);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*<br/>
-Bu alanın adını belirten bir dize ifadesi işaretçisi.
+*Lpszname*<br/>
+Bu alanın adını belirten bir dize ifadesine işaretçi.
 
-*nTür*<br/>
+*nTipi*<br/>
 Alanın veri türünü gösteren bir değer. Ayar şu değerlerden biri olabilir:
 
 |Tür|Boyut (bayt)|Açıklama|
 |----------|--------------------|-----------------|
-|`dbBoolean`|1 bayt|BOOL|
+|`dbBoolean`|1 bayt|Bool|
 |`dbByte`|BYTE|
 |`dbInteger`|2|int|
 |`dbLong`|4|long|
-|`dbCurrency`|8|Para birimi ( [Copapara birimi](../../mfc/reference/colecurrency-class.md))|
+|`dbCurrency`|8|Para Birimi ( [COleCurrency](../../mfc/reference/colecurrency-class.md))|
 |`dbSingle`|4|float|
 |`dbDouble`|8|double|
-|`dbDate`|8|Tarih/saat ( [Copadatetime](../../atl-mfc-shared/reference/coledatetime-class.md))|
+|`dbDate`|8|Tarih/Saat ( [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md))|
 |`dbText`|1 - 255|Metin ( [CString](../../atl-mfc-shared/reference/cstringt-class.md))|
-|`dbLongBinary`|0|Long Binary (OLE nesnesi), [CLongBinary](../../mfc/reference/clongbinary-class.md) veya [CByteArray](../../mfc/reference/cbytearray-class.md)|
-|`dbMemo`|0|Memo ( [CString](../../atl-mfc-shared/reference/cstringt-class.md))|
+|`dbLongBinary`|0|Uzun İkili (OLE Nesnesi), [CLongBinary](../../mfc/reference/clongbinary-class.md) veya [CByteArray](../../mfc/reference/cbytearray-class.md)|
+|`dbMemo`|0|Not ( [CString](../../atl-mfc-shared/reference/cstringt-class.md))|
 
-*lSize dili*<br/>
-Metin içeren bir alanın en büyük boyutunu bayt cinsinden veya metin veya sayısal değerler içeren bir alanın sabit boyutunu belirten bir değer. Tüm metin alanları için *lSize* parametresi yok sayılır.
+*lSize*<br/>
+Metin içeren bir alanın veya metin veya sayısal değerler içeren bir alanın sabit boyutunu baytlarda en büyük boyutunu gösteren değer. *lSize* parametresi metin alanları hariç tüm için yoksayılır.
 
 *lAttributes*<br/>
-Alanın özelliklerine karşılık gelen ve bit düzeyinde OR kullanılarak birleştirilebilen bir değer.
+Alanın özelliklerine karşılık gelen ve bitwise-OR kullanılarak birleştirilebilen bir değer.
 
 |Sabit|Açıklama|
 |--------------|-----------------|
-|`dbFixedField`|Alan boyutu sabittir (sayısal alanlar için varsayılan).|
-|`dbVariableField`|Alan boyutu değişken (yalnızca metin alanları).|
-|`dbAutoIncrField`|Yeni kayıtlar için alan değeri, değiştirilemeyen benzersiz bir uzun tamsayıya otomatik olarak artırılır. Yalnızca Microsoft Jet veritabanı tabloları için desteklenir.|
+|`dbFixedField`|Alan boyutu sabittir (Sayısal alanlar için varsayılan).|
+|`dbVariableField`|Alan boyutu değişkendir (yalnızca Metin alanları).|
+|`dbAutoIncrField`|Yeni kayıtların alan değeri otomatik olarak değiştirilemeyen benzersiz uzun bir tamsayıya dönüştürülr. Yalnızca Microsoft Jet veritabanı tabloları için desteklenir.|
 |`dbUpdatableField`|Alan değeri değiştirilebilir.|
-|`dbDescending`|Alan azalan (Z-A veya 100-0) düzende sıralanır (yalnızca bir dizin nesnesinin Fields koleksiyonundaki Field nesnesi için geçerlidir). Bu sabiti atlarsanız, alan artan (A-Z veya 0-100) bir düzende sıralanır (varsayılan).|
+|`dbDescending`|Alan azalan (Z - A veya 100 - 0) sırasına göre sıralanır (yalnızca Dizin nesnesinin Alanları koleksiyonundaki bir Alan nesnesi için geçerlidir). Bu sabiti atlarsanız, alan artan (A - Z veya 0 - 100) sırada (varsayılan) sıralanır.|
 
-*sağlanırken*<br/>
-[Cdadofielınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısına başvuru.
+*Fieldınfo*<br/>
+[CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısına bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `DAOField` (OLE) nesnesi oluşturulur ve `DAOTableDef` (OLE) nesnesinin alanlar koleksiyonuna eklenir. Nesne özelliklerini incelemek için kullanmanın yanı sıra, bir TableDef içinde yeni alanlar oluşturmak için bir giriş parametresi oluşturmak üzere `CDaoFieldInfo` de kullanabilirsiniz. `CreateField` ilk sürümü kullanımı basittir, ancak daha hassas bir denetim istiyorsanız, bir `CDaoFieldInfo` parametresi alan `CreateField`ikinci sürümünü kullanabilirsiniz.
+Bir `DAOField` (OLE) nesnesi oluşturulur ve `DAOTableDef` (OLE) nesnesinin Alanlar koleksiyonuna eklenir. Nesne özelliklerini incelemek için kullanımının yanı `CDaoFieldInfo` sıra, bir tablodef yeni alanlar oluşturmak için bir giriş parametresi oluşturmak için de kullanabilirsiniz. İlk sürümü `CreateField` kullanmak daha kolaydır, ancak daha ince kontrol istiyorsanız, bir `CreateField` `CDaoFieldInfo` parametre alır , ikinci sürümünü kullanabilirsiniz.
 
-Bir `CDaoFieldInfo` parametresi alan `CreateField` sürümünü kullanıyorsanız, `CDaoFieldInfo` yapısının aşağıdaki üyelerinin her birini dikkatle ayarlamanız gerekir:
+Bunun bir `CreateField` `CDaoFieldInfo` parametre sayılsa, `CDaoFieldInfo` yapının aşağıdaki üyelerinin her birini dikkatlice ayarlamanız gerekir:
 
 - `m_strName`
 
@@ -365,13 +365,13 @@ Bir `CDaoFieldInfo` parametresi alan `CreateField` sürümünü kullanıyorsanı
 
 - `m_bAllowZeroLength`
 
-`CDaoFieldInfo` kalan üyeleri, üyeye uygun şekilde **0**, false veya boş bir dize olarak ayarlanmalıdır ya da bir `CDaoException` olabilir.
+Kalan üyeler `CDaoFieldInfo` üye için uygun olarak **0,** FALSE veya boş bir dize `CDaoException` olarak ayarlanmalıdır veya bir oluşabilir.
 
-İlgili bilgiler için, DAO yardımı 'nda "CreateField yöntemi" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "CreateField Method" konusuna bakın.
 
-##  <a name="createindex"></a>CDaoTableDef:: CreateIndex
+## <a name="cdaotabledefcreateindex"></a><a name="createindex"></a>CDaoTableDef::CreateIndex
 
-Tabloya bir dizin eklemek için bu işlevi çağırın.
+Tabloya dizin eklemek için bu işlevi çağırın.
 
 ```
 void CreateIndex(CDaoIndexInfo& indexinfo);
@@ -379,28 +379,28 @@ void CreateIndex(CDaoIndexInfo& indexinfo);
 
 ### <a name="parameters"></a>Parametreler
 
-*ındexınfo*<br/>
-Bir [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) yapısına başvuru.
+*indexinfo*<br/>
+[CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) yapısına bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizinler, veritabanı tablolarından erişilen kayıt sırasını ve yinelenen kayıtların kabul edilip edilmeyeceğini belirtir. Dizinler ayrıca verilere verimli erişim sağlar.
+Dizinler, veritabanı tablolarından erişilen kayıtların sırasını ve yinelenen kayıtların kabul edilip edilemeyeceğini belirtir. Dizinler de verilere verimli erişim sağlar.
 
-Tablolar için dizin oluşturmanız gerekmez, ancak büyük, dizine alınmamış tablolarda, belirli bir kayda erişmek veya bir kayıt kümesi oluşturmak uzun sürebilir. Öte yandan, çok sayıda dizin oluşturmak güncelleştirme, ekleme ve silme işlemlerini yavaşlattığından tüm dizinler otomatik olarak güncelleştirilir. Hangi dizinlerin oluşturulacağı konusunda karar verirken bu faktörleri göz önünde bulundurun.
+Tablolar için dizin oluşturmanız gerekmez, ancak büyük, dizine eklenmemiş tablolarda, belirli bir kayda erişmek veya bir kayıt kümesi oluşturmak uzun zaman alabilir. Diğer taraftan, çok fazla dizin oluşturmak, tüm dizinler otomatik olarak güncelleştirildikçe güncelleştirmeyi, eklemeyi ve silme işlemlerini yavaşlatır. Hangi dizinlerin oluşturacağına karar vererken bu faktörleri göz önünde bulundurun.
 
-`CDaoIndexInfo` yapısının aşağıdaki üyeleri ayarlanmalıdır:
+Yapının `CDaoIndexInfo` aşağıdaki üyeleri ayarlanmalıdır:
 
-- `m_strName` bir ad sağlanmalıdır.
+- `m_strName`Bir ad sağlanmalıdır.
 
-- `m_pFieldInfos`, bir `CDaoIndexFieldInfo` yapıları dizisine işaret etmelidir.
+- `m_pFieldInfos`Bir dizi `CDaoIndexFieldInfo` yapıyı işaret etmelidir.
 
-- `m_nFields`, `CDaoFieldInfo` yapıları dizisindeki alan sayısını belirtmelidir.
+- `m_nFields``CDaoFieldInfo` Yapı dizisindeki alan sayısını belirtmeniz gerekir.
 
-Kalan Üyeler FALSE olarak ayarlandıysa yok sayılır. Ayrıca, dizin oluşturma sırasında `m_lDistinctCount` üye yok sayılır.
+Kalan üyeler FALSE olarak ayarlanırsa yoksayılır. Buna ek `m_lDistinctCount` olarak, üye dizin oluşturulması sırasında göz ardı edilir.
 
-##  <a name="deletefield"></a>CDaoTableDef::D eleteField
+## <a name="cdaotabledefdeletefield"></a><a name="deletefield"></a>CDaoTableDef::DeleteField
 
-Bir alanı kaldırmak ve erişilebilir hale getirmek için bu üye işlevini çağırın.
+Bir alanı kaldırmak ve erişilemez hale getirmek için bu üye işlevi arayın.
 
 ```
 void DeleteField(LPCTSTR lpszName);
@@ -409,21 +409,21 @@ void DeleteField(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*<br/>
-Varolan bir alanın adı olan bir dize ifadesinin işaretçisi.
+*Lpszname*<br/>
+Varolan bir alanın adı olan bir dize ifadesiiçin işaretçi.
 
-*nDizin*<br/>
-Dizine göre arama için tablonun sıfır tabanlı alanlar koleksiyonundaki alanının dizini.
+*Nındex*<br/>
+Dizin tarafından arama için tablonun sıfır tabanlı Alanlar koleksiyonundaki alanın dizin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevini veritabanına eklenmemiş yeni bir nesne üzerinde veya [CanUpdate](#canupdate) , sıfır dışında bir değer döndürdüğünde kullanabilirsiniz.
+Bu üye işlevini, veritabanına ekedilmemiş veya [CanUpdate](#canupdate) sıfırsız döndüğünde yeni bir nesne üzerinde kullanabilirsiniz.
 
-İlgili bilgiler için, DAO yardımında "Yöntem silme" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Silme Yöntemi" konusuna bakın.
 
-##  <a name="deleteindex"></a>CDaoTableDef::D Eleteındex
+## <a name="cdaotabledefdeleteindex"></a><a name="deleteindex"></a>CDaoTableDef::DeleteIndex
 
-Temel tablodaki bir dizini silmek için bu üye işlevini çağırın.
+Altta yatan tablodaki bir dizini silmek için bu üye işlevi arayın.
 
 ```
 void DeleteIndex(LPCTSTR lpszName);
@@ -432,21 +432,21 @@ void DeleteIndex(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*<br/>
-Varolan bir dizinin adı olan bir dize ifadesinin işaretçisi.
+*Lpszname*<br/>
+Varolan bir dizinin adı olan dize ifadesine işaretçi.
 
-*nDizin*<br/>
-Dizine göre arama için veritabanının sıfır tabanlı TableDefs koleksiyonundaki dizin nesnesinin dizi dizini.
+*Nındex*<br/>
+Dizin tarafından arama için veritabanının sıfır tabanlı TableDefs koleksiyonundaki dizin nesnesinin dizi dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevini veritabanına eklenmemiş yeni bir nesne üzerinde veya [CanUpdate](#canupdate) , sıfır dışında bir değer döndürdüğünde kullanabilirsiniz.
+Bu üye işlevini, veritabanına ekilmemiş yeni bir nesne de veya [CanUpdate](#canupdate) sıfırsız döndüğünde kullanabilirsiniz.
 
-İlgili bilgiler için, DAO yardımında "Yöntem silme" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Silme Yöntemi" konusuna bakın.
 
-##  <a name="getattributes"></a>CDaoTableDef:: GetAttributes
+## <a name="cdaotabledefgetattributes"></a><a name="getattributes"></a>CDaoTableDef::GetAttributes
 
-`CDaoTableDef` nesnesi için, dönüş değeri, `CDaoTableDef` nesnesi tarafından temsil edilen tablonun özelliklerini belirtir ve bu sabitlerin toplamı olabilir:
+Bir `CDaoTableDef` nesne için, iade değeri `CDaoTableDef` nesne tarafından temsil edilen tablonun özelliklerini belirtir ve bu sabitlerin toplamı olabilir:
 
 ```
 long GetAttributes();
@@ -454,28 +454,28 @@ long GetAttributes();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `CDaoTableDef` nesnesinin bir veya daha fazla özelliğini gösteren bir değer döndürür.
+Nesnenin bir veya daha fazla `CDaoTableDef` özelliğini gösteren bir değer verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 |Sabit|Açıklama|
 |--------------|-----------------|
-|`dbAttachExclusive`|Microsoft Jet veritabanı altyapısını kullanan veritabanları için, tablonun özel kullanım için açılmış bir eklenmiş tablo olduğunu gösterir.|
-|`dbAttachSavePWD`|Microsoft Jet veritabanı altyapısını kullanan veritabanları için, ekli tablo için Kullanıcı KIMLIĞI ve parolanın bağlantı bilgileriyle kaydedildiğini belirtir.|
-|`dbSystemObject`|Tablonun Microsoft Jet veritabanı altyapısı tarafından sunulan bir sistem tablosu olduğunu gösterir.|
-|`dbHiddenObject`|Tablonun Microsoft Jet veritabanı altyapısı tarafından sunulan gizli bir tablo olduğunu gösterir.|
-|`dbAttachedTable`|Tablonun, Paradox veritabanı gibi ODBC olmayan bir veritabanından ekli tablo olduğunu gösterir.|
-|`dbAttachedODBC`|Tablonun, Microsoft SQL Server gibi bir ODBC veritabanından ekli tablo olduğunu gösterir.|
+|`dbAttachExclusive`|Microsoft Jet veritabanı altyapısını kullanan veritabanları için tablo, özel kullanım için açılmış ekli bir tablo olduğunu gösterir.|
+|`dbAttachSavePWD`|Microsoft Jet veritabanı altyapısını kullanan veritabanları için, bağlı tablonun kullanıcı kimliği ve parolasının bağlantı bilgileriyle birlikte kaydedildiğini gösterir.|
+|`dbSystemObject`|Tablonun Microsoft Jet veritabanı altyapısı tarafından sağlanan bir sistem tablosu olduğunu gösterir.|
+|`dbHiddenObject`|Tablonun Microsoft Jet veritabanı altyapısı tarafından sağlanan gizli bir tablo olduğunu gösterir.|
+|`dbAttachedTable`|Tablonun, Paradox veritabanı gibi ODBC olmayan bir veritabanından eklenmiş bir tablo olduğunu gösterir.|
+|`dbAttachedODBC`|Tablonun Microsoft SQL Server gibi bir ODBC veritabanından eklenmiş bir tablo olduğunu gösterir.|
 
-Bir sistem tablosu, çeşitli iç bilgileri içerecek şekilde Microsoft Jet veritabanı altyapısı tarafından oluşturulan bir tablodur.
+Sistem tablosu, Microsoft Jet veritabanı altyapısı tarafından çeşitli dahili bilgileri içerecek şekilde oluşturulan tablodur.
 
-Gizli tablo, Microsoft Jet veritabanı altyapısı tarafından geçici kullanım için oluşturulan bir tablodur.
+Gizli tablo, Microsoft Jet veritabanı altyapısı tarafından geçici olarak kullanılmak üzere oluşturulan tablodur.
 
-İlgili bilgiler için, DAO yardımı 'nda "öznitelikler özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Öznitelikler Özelliği" konusuna bakın.
 
-##  <a name="getconnect"></a>CDaoTableDef:: GetConnect
+## <a name="cdaotabledefgetconnect"></a><a name="getconnect"></a>CDaoTableDef::GetConnect
 
-Bir veri kaynağı için bağlantı dizesi almak üzere bu üye işlevini çağırın.
+Bir veri kaynağının bağlantı dizesini elde etmek için bu üye işlevi arayın.
 
 ```
 CString GetConnect();
@@ -483,25 +483,25 @@ CString GetConnect();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tablonun yolunu ve veritabanı türünü içeren `CString` nesnesi.
+Tablo `CString` için yol ve veritabanı türünü içeren bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eklenmiş bir tabloyu temsil eden bir `CDaoTableDef` nesnesi için, `CString` nesnesi bir veya iki bölümden oluşur (bir veritabanı türü belirticisi ve veritabanının yolu).
+Ekli `CDaoTableDef` bir tabloyu temsil eden `CString` bir nesne için nesne bir veya iki bölümden (veritabanı türü belirtimi ve veritabanına giden bir yol) oluşur.
 
-Aşağıdaki tabloda gösterildiği gibi yol, veritabanı dosyalarını içeren dizinin tam yoludur ve öncesinde "DATABASE =" tanımlayıcısı gelmelidir. Bazı durumlarda (Microsoft Jet ve Microsoft Excel veritabanlarında olduğu gibi), veritabanı yolu bağımsız değişkenine belirli bir dosya adı eklenir.
+Aşağıdaki tabloda gösterildiği gibi yol veritabanı dosyalarını içeren dizin için tam yoldur ve tanımlayıcı "DATABASE=" tarafından önce olmalıdır. Bazı durumlarda (Microsoft Jet ve Microsoft Excel veritabanlarında olduğu gibi), veritabanı yolu bağımsız değişkenine belirli bir dosya adı dahildir.
 
-[CDaoTableDef:: SetConnect](#setconnect) içindeki tablo olası veritabanı türlerini ve bunlara karşılık gelen veritabanı belirticilerini ve yollarını gösterir:
+[CDaoTableDef tablosu::SetConnect](#setconnect) olası veritabanı türlerini ve bunların karşılık gelen veritabanı belirteçlerini ve yollarını gösterir:
 
-Microsoft Jet veritabanı temel tabloları için, belirtici boş bir dizedir ("").
+Microsoft Jet veritabanı taban tabloları için belirtici boş bir dize ("") dir.
 
-Bir parola gerekliyse ancak sağlanmazsa, ODBC sürücüsü bir tabloya ilk kez erişildiğinde bir oturum açma iletişim kutusu görüntüler ve bağlantı kapatılıp yeniden açılabilir. Eklenmiş bir tabloda `dbAttachSavePWD` özniteliği varsa, tablo yeniden açıldığında oturum açma istemi görünmez.
+Parola gerekliyse ancak sağlanmadıysa, ODBC sürücüsü bir tabloya ilk erişici olduğunda ve bağlantı kapatıp yeniden açıldığında tekrar bir giriş iletişim kutusu görüntüler. Ekli bir tablo özniteliği `dbAttachSavePWD` varsa, tablo yeniden açıldığında giriş istemi görünmez.
 
-İlgili bilgiler için, DAO yardımı 'nda "bağlama özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Özelliği Bağla" konusuna bakın.
 
-##  <a name="getdatecreated"></a>CDaoTableDef:: GetDateCreated
+## <a name="cdaotabledefgetdatecreated"></a><a name="getdatecreated"></a>CDaoTableDef::GetDateCreated
 
-`CDaoTableDef` nesnesinin temel aldığı tablonun tarihini ve saatini öğrenmek için bu işlevi çağırın.
+`CDaoTableDef` Nesnenin altında yatan tablonun oluşturulduğu tarih ve saati belirlemek için bu işlevi arayın.
 
 ```
 COleDateTime GetDateCreated();
@@ -509,17 +509,17 @@ COleDateTime GetDateCreated();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CDaoTableDef` nesnesini temel alan tablonun oluşturulma tarihini ve saatini içeren bir değer.
+Nesnenin altında yatan tablonun oluşturulma tarih `CDaoTableDef` ve saatini içeren bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarih ve saat ayarları, temel tablonun oluşturulduğu veya en son güncelleştirildiği bilgisayardan türetilir. Çok kullanıcılı bir ortamda, kullanıcıların tutarsızlıkları önlemek için bu ayarları doğrudan dosya sunucusundan alması gerekir; diğer bir deyişle, tüm istemciler belki de bir sunucudan "standart" bir zaman kaynağı kullanmalıdır.
+Tarih ve saat ayarları, temel tablonun oluşturulduğu veya en son güncelleştirildiği bilgisayardan türetilir. Çok kullanıcılı bir ortamda, kullanıcılar tutarsızlıkları önlemek için bu ayarları doğrudan dosya sunucusundan almalıdır; yani, tüm istemciler bir "standart" zaman kaynağı kullanmalısınız - belki de bir sunucudan.
 
-İlgili bilgiler için, DAO yardımı 'nda "DateCreated, LastUpdated özellikleri" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "DateCreated, LastUpdated Properties" konusuna bakın.
 
-##  <a name="getdatelastupdated"></a>CDaoTableDef:: GetDateLastUpdated
+## <a name="cdaotabledefgetdatelastupdated"></a><a name="getdatelastupdated"></a>CDaoTableDef::GetDateLastUpdated
 
-`CDaoTableDef` nesnesinin temel aldığı tablonun son güncelleştirilme tarihini ve saatini öğrenmek için bu işlevi çağırın.
+`CDaoTableDef` Nesnenin en son güncelleştirilen tablonun tarihini ve saatini belirlemek için bu işlevi arayın.
 
 ```
 COleDateTime GetDateLastUpdated();
@@ -527,17 +527,17 @@ COleDateTime GetDateLastUpdated();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CDaoTableDef` nesnesinin temelindeki tablonun son güncelleştirildiği tarih ve saati içeren bir değer.
+`CDaoTableDef` Nesnenin altında yatan tablonun en son güncelleştirilen tarih ve saati içeren bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarih ve saat ayarları, temel tablonun oluşturulduğu veya en son güncelleştirildiği bilgisayardan türetilir. Çok kullanıcılı bir ortamda, kullanıcıların tutarsızlıkları önlemek için bu ayarları doğrudan dosya sunucusundan alması gerekir; diğer bir deyişle, tüm istemciler belki de bir sunucudan "standart" bir zaman kaynağı kullanmalıdır.
+Tarih ve saat ayarları, temel tablonun oluşturulduğu veya en son güncelleştirildiği bilgisayardan türetilir. Çok kullanıcılı bir ortamda, kullanıcılar tutarsızlıkları önlemek için bu ayarları doğrudan dosya sunucusundan almalıdır; yani, tüm istemciler bir "standart" zaman kaynağı kullanmalısınız - belki de bir sunucudan.
 
-İlgili bilgiler için, DAO yardımı 'nda "DateCreated, LastUpdated özellikleri" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "DateCreated, LastUpdated Properties" konusuna bakın.
 
-##  <a name="getfieldcount"></a>CDaoTableDef:: GetFieldCount
+## <a name="cdaotabledefgetfieldcount"></a><a name="getfieldcount"></a>CDaoTableDef::GetFieldCount
 
-Tabloda tanımlanan alan sayısını almak için bu üye işlevi çağırın.
+Tabloda tanımlanan alanların sayısını almak için bu üye işlevi arayın.
 
 ```
 short GetFieldCount();
@@ -549,13 +549,13 @@ Tablodaki alan sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değeri 0 ise, koleksiyonda nesne yoktur.
+Değeri 0 ise, koleksiyonda nesne yok.
 
-İlgili bilgiler için, DAO yardımı 'nda "Count Property" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Count Property" konusuna bakın.
 
-##  <a name="getfieldinfo"></a>CDaoTableDef:: GetFieldInfo
+## <a name="cdaotabledefgetfieldinfo"></a><a name="getfieldinfo"></a>CDaoTableDef::GetFieldInfo
 
-TableDef içinde tanımlı bir alanla ilgili çeşitli bilgi türlerini almak için bu üye işlevi çağırın.
+Tabloda tanımlanan bir alan hakkında çeşitli bilgiler elde etmek için bu üye işlevi arayın.
 
 ```
 void GetFieldInfo(
@@ -571,35 +571,35 @@ void GetFieldInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*nDizin*<br/>
-Dizine göre arama için tablonun sıfır tabanlı alanlar koleksiyonundaki alan nesnesinin dizini.
+*Nındex*<br/>
+Dizin tarafından arama için tablonun sıfır tabanlı Alanlar koleksiyonundaki alan nesnesinin dizin.
 
-*sağlanırken*<br/>
-[Cdadofielınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısına başvuru.
+*Fieldınfo*<br/>
+[CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısına bir başvuru.
 
 *dwInfoOptions*<br/>
-Alınacak alanla ilgili hangi bilgilerin alındığını belirleyen seçenekler. Kullanılabilir seçenekler, işlevin döndürmesine neden olan özellikler ile birlikte aşağıda listelenmiştir:
+Alan hakkında hangi bilgilerin alınaaçık olduğunu belirten seçenekler. Kullanılabilir seçenekler, işlevin döndürülmesine neden oldukları yla birlikte burada listelenir:
 
-- `AFX_DAO_PRIMARY_INFO` (varsayılan) ad, tür, boyut, öznitelik. En hızlı performans için bu seçeneği kullanın.
+- `AFX_DAO_PRIMARY_INFO`(Varsayılan) Ad, tür, boyut, öznitelikler. En hızlı performans için bu seçeneği kullanın.
 
-- Birincil bilgileri `AFX_DAO_SECONDARY_INFO`, ayrıca: sıralı konum, gerekli, sıfır uzunluğa Izin ver, harmanlama sırası, yabancı ad, kaynak alanı, kaynak tablo
+- `AFX_DAO_SECONDARY_INFO`Birincil bilgi, artı: Ordinal Position, Gerekli, İzin Sıfır Uzunluk, Collating Sipariş, Yabancı Ad, Kaynak Alan, Kaynak Tablo
 
-- Birincil ve ikincil bilgileri `AFX_DAO_ALL_INFO`, ayrıca: doğrulama kuralı, doğrulama metni, varsayılan değer
+- `AFX_DAO_ALL_INFO`Birincil ve ikincil bilgiler, artı: Doğrulama Kuralı, Doğrulama Metni, Varsayılan Değer
 
-*lpszName*<br/>
-Ada göre arama için alan nesnesinin adına yönelik bir işaretçi. Ad, alanı benzersiz şekilde adlandıran en fazla 64 karakter içeren bir dizedir.
+*Lpszname*<br/>
+Ada göre arama yapmak için alan nesnesinin adına işaretçi. Ad, alanı benzersiz olarak adlandıran 64 karaktere kadar olan bir dizedir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevin bir sürümü bir alanı dizine göre arama yapmanızı sağlar. Diğer sürüm, bir alanı adına göre arama yapmanızı sağlar.
+İşlevin bir sürümü, bir alanı dizin olarak aramanızı sağlar. Diğer sürüm, bir alanı ada göre aramanızı sağlar.
 
-Döndürülen bilgilerin açıklaması için bkz. [Cdadofielınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısı. Bu yapının, *Dwinfooptions*açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki tüm düzeyler için de bilgi alırsınız.
+Döndürülen bilgilerin açıklaması için [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısına bakın. Bu yapı, *dwInfoOptions*açıklamasında yukarıda listelenen bilgi öğeleri karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki düzeyler için de bilgi alırsınız.
 
-İlgili bilgiler için, DAO yardımı 'nda "öznitelikler özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Öznitelikler Özelliği" konusuna bakın.
 
-##  <a name="getindexcount"></a>CDaoTableDef:: GetIndexCount
+## <a name="cdaotabledefgetindexcount"></a><a name="getindexcount"></a>CDaoTableDef::GetIndexCount
 
-Bir tablo için dizin sayısını almak üzere bu üye işlevini çağırın.
+Bir tablo için dizin sayısını elde etmek için bu üye işlevi arayın.
 
 ```
 short GetIndexCount();
@@ -611,13 +611,13 @@ Tablo için dizin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değeri 0 ise, koleksiyonda dizin yoktur.
+Değeri 0 ise, koleksiyonda dizin yok.
 
-İlgili bilgiler için, DAO yardımı 'nda "Count Property" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Count Property" konusuna bakın.
 
-##  <a name="getindexinfo"></a>CDaoTableDef:: GetIndexInfo
+## <a name="cdaotabledefgetindexinfo"></a><a name="getindexinfo"></a>CDaoTableDef::GetIndexInfo
 
-TableDef içinde tanımlı bir dizin hakkında çeşitli bilgiler almak için bu üye işlevi çağırın.
+Tabloda tanımlanan bir dizin hakkında çeşitli bilgiler elde etmek için bu üye işlevi arayın.
 
 ```
 void GetIndexInfo(
@@ -633,35 +633,35 @@ void GetIndexInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*nDizin*<br/>
-Koleksiyondaki konumuna göre arama için tablonun sıfır tabanlı dizinler koleksiyonundaki dizin nesnesinin sayısal dizini.
+*Nındex*<br/>
+Tablonun sıfır tabanlı Dizinler koleksiyonundaki Dizin nesnesinin sayısal dizini, koleksiyondaki konumuna göre arama için.
 
-*ındexınfo*<br/>
-Bir [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) yapısına başvuru.
+*indexinfo*<br/>
+[CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) yapısına bir başvuru.
 
 *dwInfoOptions*<br/>
-Alınacak dizin hakkındaki bilgileri belirten seçenekler. Kullanılabilir seçenekler, işlevin döndürmesine neden olan özellikler ile birlikte aşağıda listelenmiştir:
+Dizin hakkında hangi bilgilerin alınaaçık olduğunu belirten seçenekler. Kullanılabilir seçenekler, işlevin döndürülmesine neden oldukları yla birlikte burada listelenir:
 
-- `AFX_DAO_PRIMARY_INFO` adı, alan bilgileri, alanlar. En hızlı performans için bu seçeneği kullanın.
+- `AFX_DAO_PRIMARY_INFO`İsim, Alan Bilgisi, Alanlar. En hızlı performans için bu seçeneği kullanın.
 
-- Birincil bilgileri `AFX_DAO_SECONDARY_INFO`, ek olarak: birincil, benzersiz, kümelenmiş, Yoksay null, gerekli, yabancı
+- `AFX_DAO_SECONDARY_INFO`Birincil bilgi, artı: Birincil, Benzersiz, Kümelenmiş, Nulls yoksay, Gerekli, Yabancı
 
-- Birincil ve ikincil bilgileri `AFX_DAO_ALL_INFO`, ayrıca: ayrı sayım
+- `AFX_DAO_ALL_INFO`Birincil ve ikincil bilgiler, artı: Farklı Sayı
 
-*lpszName*<br/>
-Ada göre arama için dizin nesnesinin adına yönelik bir işaretçi.
+*Lpszname*<br/>
+Ada göre arama yapmak için dizin nesnesinin adına işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevin bir sürümü, koleksiyondaki konumuyla bir dizin araması yapmanızı sağlar. Diğer sürüm, dizin adına göre arama yapmanızı sağlar.
+İşlevin bir sürümü, bir dizini koleksiyondaki konumuna göre aramanızı sağlar. Diğer sürüm, bir dizini ada göre aramanızı sağlar.
 
-Döndürülen bilgilerin açıklaması için, [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions*açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki tüm düzeyler için de bilgi alırsınız.
+Döndürülen bilgilerin açıklaması için [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) yapısına bakın. Bu yapı, *dwInfoOptions*açıklamasında yukarıda listelenen bilgi öğeleri karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki düzeyler için de bilgi alırsınız.
 
-İlgili bilgiler için, DAO yardımı 'nda "öznitelikler özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Öznitelikler Özelliği" konusuna bakın.
 
-##  <a name="getname"></a>CDaoTableDef:: GetName
+## <a name="cdaotabledefgetname"></a><a name="getname"></a>CDaoTableDef::GetName
 
-Temel alınan tablonun Kullanıcı tanımlı adını almak için bu üye işlevi çağırın.
+Altta yatan tablonun kullanıcı tanımlı adını almak için bu üye işlevini arayın.
 
 ```
 CString GetName();
@@ -669,17 +669,17 @@ CString GetName();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tablo için Kullanıcı tanımlı bir ad.
+Tablo için kullanıcı tanımlı bir ad.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu ad, bir harfle başlar ve en fazla 64 karakter içerebilir. Sayılar ve alt çizgi karakterlerini içerebilir, ancak noktalama veya boşluk içeremez.
+Bu ad bir harfle başlar ve en fazla 64 karakter içerebilir. Sayıları içerebilir ve karakterleri alt çizebilir, ancak noktalama işareti veya boşluk içeremez.
 
-İlgili bilgiler için, DAO yardımı 'nda "ad özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Ad Özelliği" konusuna bakın.
 
-##  <a name="getrecordcount"></a>CDaoTableDef:: GetRecordCount
+## <a name="cdaotabledefgetrecordcount"></a><a name="getrecordcount"></a>CDaoTableDef::GetRecordCount
 
-`CDaoTableDef` nesnesinde kaç kayıt olduğunu öğrenmek için bu üye işlevi çağırın.
+Bir `CDaoTableDef` nesnede kaç kayıt olduğunu öğrenmek için bu üye işlevi arayın.
 
 ```
 long GetRecordCount();
@@ -687,17 +687,17 @@ long GetRecordCount();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir tabledef nesnesinde erişilen kayıt sayısı.
+Tabledef nesnesinde erişilen kayıt sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tablo türü `CDaoTableDef` nesnesi için `GetRecordCount` çağırmak, tablodaki yaklaşık kayıt sayısını yansıtır ve tablo kayıtları eklenip silindiğine hemen etkilenir. Geri alınmış işlemler, [CDaoWorkspace:: CompactDatabase](../../mfc/reference/cdaoworkspace-class.md#compactdatabase)öğesini çağırana kadar kayıt sayısının bir parçası olarak görüntülenir. Kayıtları olmayan bir `CDaoTableDef` nesnesi, 0 kayıt sayısı özelliği ayarına sahiptir. Eklenmiş tablolar veya ODBC veritabanları ile çalışırken `GetRecordCount` her zaman-1 döndürür.
+Tablo `GetRecordCount` türünde `CDaoTableDef` bir nesne çağrısı, tablodaki yaklaşık kayıt sayısını yansıtır ve tablo kayıtları ekleyip silinir silinmez hemen etkilenir. Geri alındı işlemleri CDaoWorkSpace arayana kadar kayıt sayısının bir parçası olarak [görünür::CompactDatabase](../../mfc/reference/cdaoworkspace-class.md#compactdatabase). Kaydı `CDaoTableDef` olmayan bir nesnenin kayıt sayısı özelliği 0'a sahiptir. Ekli tablolar veya ODBC veritabanları ile `GetRecordCount` çalışırken, her zaman -1 döndürür.
 
-İlgili bilgiler için, DAO yardımı 'nda "RecordCount özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "RecordCount Property" konusuna bakın.
 
-##  <a name="getsourcetablename"></a>CDaoTableDef:: GetSourceTableName
+## <a name="cdaotabledefgetsourcetablename"></a><a name="getsourcetablename"></a>CDaoTableDef::GetSourceTableName
 
-Bir kaynak veritabanında eklenmiş bir tablonun adını almak için bu üye işlevini çağırın.
+Kaynak veritabanında ekli bir tablonun adını almak için bu üye işlevi arayın.
 
 ```
 CString GetSourceTableName();
@@ -705,17 +705,17 @@ CString GetSourceTableName();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eklenmiş bir tablonun kaynak adını veya yerel veri tablosu ise boş bir dizeyi belirten `CString` nesne.
+Eklenmiş bir tablonun kaynak adını belirten bir `CString` nesne veya yerel bir veri tablosu varsa boş bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ekli tablo, bir Microsoft Jet veritabanıyla bağlantılı başka bir veritabanındaki tablodur. Ekli tablo verileri, diğer uygulamalar tarafından işlenebileceği dış veritabanında kalır.
+Ekli tablo, Microsoft Jet veritabanına bağlı başka bir veritabanındaki tablodur. Ekteki tablolara ait veriler, diğer uygulamalar tarafından manipüle edilebildiği dış veritabanında kalır.
 
-İlgili bilgiler için, DAO yardımı 'nda "SourceTableName özelliği" konusuna bakın.
+İlgili bilgiler için DAO Help'deki "SourceTableName Property" konusuna bakın.
 
-##  <a name="getvalidationrule"></a>CDaoTableDef:: GetValidationRule
+## <a name="cdaotabledefgetvalidationrule"></a><a name="getvalidationrule"></a>CDaoTableDef::GetValidationRule
 
-Bir TableDef için doğrulama kuralını almak üzere bu üye işlevi çağırın.
+Bir tablo def için doğrulama kuralını almak için bu üye işlevi arayın.
 
 ```
 CString GetValidationRule();
@@ -723,17 +723,17 @@ CString GetValidationRule();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değiştirilen veya tabloya eklenen bir alandaki verileri doğrulayan `CString` nesne.
+Değiştirilen `CString` veya tabloya eklenen bir alandaki verileri doğrulayan nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Doğrulama kuralları, güncelleştirme işlemleriyle bağlantılı olarak kullanılır. Bir TableDef bir doğrulama kuralı içeriyorsa, veri değiştirilmeden önce bu TableDef güncelleştirmelerinin önceden belirlenmiş ölçütlerle eşleşmesi gerekir. Değişiklik ölçütlere eşleşmezse [GetValidationText](#getvalidationtext) değerini içeren bir özel durum oluşturulur. `CDaoTableDef` nesnesi için, bu `CString`, ekli tablo için salt okunurdur ve temel tablo için okuma/yazma işlemi yapılır.
+Doğrulama kuralları güncelleştirme işlemleriyle bağlantılı olarak kullanılır. Bir tabledef bir doğrulama kuralı içeriyorsa, veriler değiştirilmeden önce bu tablodaki güncelleştirmelerin önceden belirlenmiş ölçütlere uyması gerekir. Değişiklik ölçütle eşleşmiyorsa, [GetValidationText](#getvalidationtext) değerini içeren bir özel durum atılır. Bir `CDaoTableDef` nesne için `CString` bu, ekli bir tablo için salt okunur ve taban tablo için okuma/yazma dır.
 
-İlgili bilgiler için, DAO yardımı 'nda "ValidationRule özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Doğrulama Kuralı Özelliği" konusuna bakın.
 
-##  <a name="getvalidationtext"></a>CDaoTableDef:: GetValidationText
+## <a name="cdaotabledefgetvalidationtext"></a><a name="getvalidationtext"></a>CDaoTableDef::GetValidationMetin
 
-Kullanıcı doğrulama kuralıyla eşleşmeyen verileri girdiğinde görüntülenecek dizeyi almak için bu işlevi çağırın.
+Bir kullanıcı doğrulama kuralıyla eşleşmeyen verileri girdiğinde görüntülenecek dizeyi almak için bu işlevi çağırın.
 
 ```
 CString GetValidationText();
@@ -741,17 +741,17 @@ CString GetValidationText();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı doğrulama kuralıyla eşleşmeyen verileri girerse görüntülenen metni belirten `CString` nesne.
+Kullanıcı `CString` doğrulama kuralıyla eşleşmeyen verileri girerse görüntülenen metni belirten bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CDaoTableDef` nesnesi için, bu `CString`, ekli tablo için salt okunurdur ve temel tablo için okuma/yazma işlemi yapılır.
+Bir `CDaoTableDef` nesne için `CString` bu, ekli bir tablo için salt okunur ve taban tablo için okuma/yazma dır.
 
-İlgili bilgiler için, DAO yardımı 'nda "ValidationText özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "DoğrulamaMetni Özelliği" konusuna bakın.
 
-##  <a name="isopen"></a>CDaoTableDef:: IsOpen
+## <a name="cdaotabledefisopen"></a><a name="isopen"></a>CDaoTableDef::Açık
 
-`CDaoTableDef` nesnesinin açık olup olmadığını anlamak için bu üye işlevi çağırın.
+Nesnenin `CDaoTableDef` şu anda açık olup olmadığını belirlemek için bu üye işlevi arayın.
 
 ```
 BOOL IsOpen() const;
@@ -759,27 +759,27 @@ BOOL IsOpen() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CDaoTableDef` nesnesi açıksa sıfır dışı; Aksi takdirde 0.
+Nesne açıksa `CDaoTableDef` sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_pdatabase"></a>CDaoTableDef:: m_pDatabase
+## <a name="cdaotabledefm_pdatabase"></a><a name="m_pdatabase"></a>CDaoTableDef::m_pDatabase
 
-Bu tablo için [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesine bir işaretçi içeriyor.
+Bu tablo için [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesine bir işaretçi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_pdaotabledef"></a>CDaoTableDef:: m_pDAOTableDef
+## <a name="cdaotabledefm_pdaotabledef"></a><a name="m_pdaotabledef"></a>CDaoTableDef::m_pDAOTableDef
 
-`CDaoTableDef` nesnesini temel alan DAO TableDef nesnesi için OLE arabirimine yönelik bir işaretçi içerir.
+Nesnenin altında yatan DAO tabledef nesnesi `CDaoTableDef` için OLE arabirimine bir işaretçi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 DAO arabirimine doğrudan erişmeniz gerekiyorsa bu işaretçiyi kullanın.
 
-##  <a name="open"></a>CDaoTableDef:: Open
+## <a name="cdaotabledefopen"></a><a name="open"></a>CDaoTableDef::Aç
 
-Daha önce veritabanının Tabledefın koleksiyonunda kayıtlı olan bir TableDef açmak için bu üye işlevini çağırın.
+Veritabanının TableDef koleksiyonunda daha önce kaydedilmiş bir tabledef açmak için bu üye işlevi arayın.
 
 ```
 virtual void Open(LPCTSTR lpszName);
@@ -787,14 +787,14 @@ virtual void Open(LPCTSTR lpszName);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*<br/>
-Bir tablo adı belirten bir dize işaretçisi.
+*Lpszname*<br/>
+Tablo adını belirten bir dize için işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="refreshlink"></a>CDaoTableDef:: RefreshLink
+## <a name="cdaotabledefrefreshlink"></a><a name="refreshlink"></a>CDaoTableDef::RefreshLink
 
-Ekli bir tablonun bağlantı bilgilerini güncelleştirmek için bu üye işlevi çağırın.
+Ekli bir tablonun bağlantı bilgilerini güncelleştirmek için bu üye işlevini arayın.
 
 ```
 void RefreshLink();
@@ -802,15 +802,15 @@ void RefreshLink();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ekli bir tablo için bağlantı bilgilerini, karşılık gelen `CDaoTableDef` nesnesinde [SetConnect](#setconnect) 'i çağırarak ve sonra bilgileri güncelleştirmek için `RefreshLink` member işlevini kullanarak değiştirirsiniz. `RefreshLink`çağırdığınızda, eklenen tablonun özellikleri değiştirilmez.
+İlgili `CDaoTableDef` nesneüzerinde [SetConnect'i](#setconnect) arayarak ve bilgileri güncelleştirmek için `RefreshLink` üye işlevini kullanarak ekli bir tablonun bağlantı bilgilerini değiştirirsiniz. Aradığınızda, `RefreshLink`ekli tablonun özellikleri değişmez.
 
-Değiştirilen bağlantı bilgilerinin etkili olmasını zorlamak için, bu TableDef 'e dayalı tüm açık [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnelerinin kapatılması gerekir.
+Değiştirilen bağlantı bilgilerini etkili olmaya zorlamak için, bu tabloya dayalı tüm açık [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnelerinin kapatılması gerekir.
 
-İlgili bilgiler için, DAO yardımı 'nda "RefreshLink method" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "RefreshLink Method" konusuna bakın.
 
-##  <a name="setattributes"></a>CDaoTableDef:: SetAttributes
+## <a name="cdaotabledefsetattributes"></a><a name="setattributes"></a>CDaoTableDef::SetAttributes
 
-Bir `CDaoTableDef` nesnesinin bir veya daha fazla özelliğini gösteren bir değer ayarlar.
+Nesnenin bir veya daha fazla `CDaoTableDef` özelliğini gösteren bir değer ayarlar.
 
 ```
 void SetAttributes(long lAttributes);
@@ -819,28 +819,28 @@ void SetAttributes(long lAttributes);
 ### <a name="parameters"></a>Parametreler
 
 *lAttributes*<br/>
-`CDaoTableDef` nesnesi tarafından temsil edilen tablonun özellikleri ve bu sabitlerin toplamı olabilir:
+`CDaoTableDef` Nesne tarafından temsil edilen tablonun özellikleri ve bu sabitlerin toplamı olabilir:
 
 |Sabit|Açıklama|
 |--------------|-----------------|
-|`dbAttachExclusive`|Microsoft Jet veritabanı altyapısını kullanan veritabanları için, tablonun özel kullanım için açılmış bir eklenmiş tablo olduğunu gösterir.|
-|`dbAttachSavePWD`|Microsoft Jet veritabanı altyapısını kullanan veritabanları için, ekli tablo için Kullanıcı KIMLIĞI ve parolanın bağlantı bilgileriyle kaydedildiğini belirtir.|
-|`dbSystemObject`|Tablonun Microsoft Jet veritabanı altyapısı tarafından sunulan bir sistem tablosu olduğunu gösterir.|
-|`dbHiddenObject`|Tablonun Microsoft Jet veritabanı altyapısı tarafından sunulan gizli bir tablo olduğunu gösterir.|
+|`dbAttachExclusive`|Microsoft Jet veritabanı altyapısını kullanan veritabanları için tablo, özel kullanım için açılmış ekli bir tablo olduğunu gösterir.|
+|`dbAttachSavePWD`|Microsoft Jet veritabanı altyapısını kullanan veritabanları için, bağlı tablonun kullanıcı kimliği ve parolasının bağlantı bilgileriyle birlikte kaydedildiğini gösterir.|
+|`dbSystemObject`|Tablonun Microsoft Jet veritabanı altyapısı tarafından sağlanan bir sistem tablosu olduğunu gösterir.|
+|`dbHiddenObject`|Tablonun Microsoft Jet veritabanı altyapısı tarafından sağlanan gizli bir tablo olduğunu gösterir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birden çok öznitelik ayarlarken, bit düzeyinde OR işlecini kullanarak uygun sabitleri toplayarak bunları birleştirebilirsiniz. Eklenmemiş bir tabloda `dbAttachExclusive` ayarlama işlemi özel durum oluşturur. Aşağıdaki değerleri birleştirmek özel bir durum da üretir:
+Birden çok öznitelik ayarlarken, bitwise-OR işleci kullanarak uygun sabitleri toplamı yaparak bunları birleştirebilirsiniz. Eksiz bir tabloüzerinde ayar `dbAttachExclusive` bir özel durum oluşturur. Aşağıdaki değerleri birleştirme de bir özel durum üretir:
 
-- **dbAttachExclusive &#124; dbattachedodbc**
+- **dbAttachExclusive &#124; dbAttachedODBC**
 
 - **dbAttachSavePWD &#124; dbAttachedTable**
 
-İlgili bilgiler için, DAO yardımı 'nda "öznitelikler özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Öznitelikler Özelliği" konusuna bakın.
 
-##  <a name="setconnect"></a>CDaoTableDef:: SetConnect
+## <a name="cdaotabledefsetconnect"></a><a name="setconnect"></a>CDaoTableDef::SetConnect
 
-Eklenmiş bir tabloyu temsil eden bir `CDaoTableDef` nesnesi için, dize nesnesi bir veya iki bölümden oluşur (bir veritabanı türü belirticisi ve veritabanının yolu).
+Ekli `CDaoTableDef` bir tabloyu temsil eden bir nesne için dize nesnesi bir veya iki bölümden (veritabanı türü belirtimi ve veritabanına giden bir yol) oluşur.
 
 ```
 void SetConnect(LPCTSTR lpszConnect);
@@ -849,50 +849,50 @@ void SetConnect(LPCTSTR lpszConnect);
 ### <a name="parameters"></a>Parametreler
 
 *lpszConnect*<br/>
-ODBC veya yüklenebilir ISAM sürücülerine geçirilecek ek parametreleri belirten bir dize ifadesi işaretçisi.
+ODBC veya yüklenebilir ISAM sürücüleri geçmek için ek parametreleri belirten bir dize ifade için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki tabloda gösterildiği gibi yol, veritabanı dosyalarını içeren dizinin tam yoludur ve öncesinde "DATABASE =" tanımlayıcısı gelmelidir. Bazı durumlarda (Microsoft Jet ve Microsoft Excel veritabanlarında olduğu gibi), veritabanı yolu bağımsız değişkenine belirli bir dosya adı eklenir.
+Aşağıdaki tabloda gösterildiği gibi yol veritabanı dosyalarını içeren dizin için tam yoldur ve tanımlayıcı "DATABASE=" tarafından önce olmalıdır. Bazı durumlarda (Microsoft Jet ve Microsoft Excel veritabanlarında olduğu gibi), veritabanı yolu bağımsız değişkenine belirli bir dosya adı dahildir.
 
 > [!NOTE]
->  "DATABASE = Drive:\\\path" biçimindeki eşittir oturum açma yolu deyimlerinin etrafına boşluk eklemeyin. Bu, bir özel durumun oluşmasına ve bağlantının başarısız olmasına neden olur.
+> "DATABASE=drive:\\\path" formunun yol ifadelerinde eşit işaretin etrafında boşluk eklemeyin. Bu, bir özel durum atılmasına ve bağlantının başarısız olmasına neden olur.
 
-Aşağıdaki tabloda, olası veritabanı türleri ve bunlara karşılık gelen veritabanı belirticileri ve yolları gösterilmektedir:
+Aşağıdaki tablo, olası veritabanı türlerini ve bunların karşılık gelen veritabanı belirteçlerini ve yollarını gösterir:
 
 |Veritabanı türü|Belirleyici|Yol|
 |-------------------|---------------|----------|
-|Jet veritabanı altyapısını kullanan veritabanı|"[`database`];"|"`drive`:\\\ *yol*\\\ *filename*. TATIL|
-|dBASE III|"dBASE III;"|"`drive`:\\\ *yolu*"|
-|dBASE IV|"dBASE IV;"|"`drive`:\\\ *yolu*"|
-|dBASE 5|"dBASE 5,0;"|"`drive`:\\\ *yolu*"|
-|Paradox 3. x|"Paradox 3. x;"|"`drive`:\\\ *yolu*"|
-|Paradox 4. x|"Paradox 4. x;"|"`drive`:\\\ *yolu*"|
-|Paradox 5. x|"Paradox 5. x;"|"`drive`:\\\ *yolu*"|
-|Excel 3,0|"Excel 3,0;"|"`drive`:\\\ *yol*\\\ *filename*. XLS|
-|Excel 4,0|"Excel 4,0;"|"`drive`:\\\ *yol*\\\ *filename*. XLS|
-|Excel 5,0 veya Excel 95|"Excel 5,0;"|"`drive`:\\\ *yol*\\\ *filename*. XLS|
-|Excel 97|"Excel 8,0;"|"`drive`:\\\ *yol*\ *filename*. XLS|
-|HTML Içeri aktarma|"HTML Içeri aktarma;"|"`drive`:\\\ *yol*\ *filename*"|
-|HTML dışarı aktarma|"HTML dışarı aktarma;"|"`drive`:\\\ *yolu*"|
-|Metin|"Metin;"|"sürücü:\\\Yol"|
-|ODBC|ISTI VERITABANı = `database`; UID = *User*; PWD = *parola*; DSN = *DataSourceName;* LOGINTIMEOUT = *saniye;* " (Bu, tüm sunucular için tam bir bağlantı dizesi olmayabilir; yalnızca bir örnektir. Parametreler arasında boşluk olmaması çok önemlidir.)|Yok|
-|Exchange|Değişimi<br /><br /> MAPILELEVEL = *FolderPath*;<br /><br /> [TABLETYPE = {0 &#124; 1};]<br /><br /> [PROFILE = *profile*;]<br /><br /> [PWD = *Password*;]<br /><br /> [VERITABANı = `database`;] "|*"sürücü*:\\\ *yol*\\\ *dosya adı*. TATIL|
+|Jet veritabanı altyapısını kullanarak veritabanı|"[ `database`];"|" `drive`\\\ :*yol*\\\ *dosya adı*. MDB"|
+|dBASE III|"dBASE III;"|" `drive`\\\ :*yol*"|
+|dBASE IV|"dBASE IV;"|" `drive`\\\ :*yol*"|
+|dBASE 5|"dBASE 5.0;"|" `drive`\\\ :*yol*"|
+|Paradoks 3.x|"Paradoks 3.x;"|" `drive`\\\ :*yol*"|
+|Paradoks 4.x|"Paradoks 4.x;"|" `drive`\\\ :*yol*"|
+|Paradoks 5.x|"Paradoks 5.x;"|" `drive`\\\ :*yol*"|
+|Excel 3.0|"Excel 3.0;"|" `drive`\\\ :*yol*\\\ *dosya adı*. XLS"|
+|Excel 4.0|"Excel 4.0;"|" `drive`\\\ :*yol*\\\ *dosya adı*. XLS"|
+|Excel 5.0 veya Excel 95|"Excel 5.0;"|" `drive`\\\ :*yol*\\\ *dosya adı*. XLS"|
+|Excel 97|"Excel 8.0;"|" `drive`\\\ :*yol*\ *dosya adı*. XLS"|
+|HTML İçe Aktarma|"HTML Alma;"|" `drive`\\\ :*yol*\ *dosya adı*"|
+|HTML Dışa Aktarma|"HTML Dışa Aktarma;"|" `drive`\\\ :*yol*"|
+|Metin|"Metin;"|"sürücü:\\\yol"|
+|ODBC|"ODBC; VERITABANı= `database`; UID= *kullanıcı;* PWD= *şifre;* DSN= *datasourcename;* GİrİşZAMANI= *saniye;*" (Bu, tüm sunucular için tam bir bağlantı dizesi olmayabilir; Parametreler arasında boşluk olmaması çok önemlidir.)|Hiçbiri|
+|Exchange|"Değişim;<br /><br /> MAPILEVEL= *folderpath*;<br /><br /> [TABLETYPE={ 0 &#124; 1 };]<br /><br /> [PROFILE= *profili*;]<br /><br /> [PWD= *şifre*;]<br /><br /> [DATABASE= `database`;]"|*"drive*\\\ :*yol*\\\ *dosya adı*. MDB"|
 
 > [!NOTE]
->  Btrieve, DAO 3,5 itibariyle artık desteklenmiyor.
+> Btrieve artık DAO 3.5 olarak desteklenmez.
 
-Bağlantı dizelerinde çift ters eğik çizgi (\\\\) kullanmanız gerekir. `SetConnect`kullanarak mevcut bir bağlantının özelliklerini değiştirdiyseniz, daha sonra [RefreshLink](#refreshlink)çağrısı yapmanız gerekir. `SetConnect`kullanarak bağlantı özelliklerini başlatdıysanız, `RefreshLink`çağırmamalıdır, ancak bunu yapmanız gerekir, önce TableDef 'i ekleyin.
+Bağlantı dizelerinde çift\\\\eğik çizgi ( ) kullanmanız gerekir. Varolan bir bağlantının özelliklerini kullanarak `SetConnect`değiştirdiyseniz, daha sonra [RefreshLink'i](#refreshlink)aramanız gerekir. Bağlantı özelliklerini kullanarak `SetConnect`başlatma yapıyorsanız, aramanız `RefreshLink`gerekmez, ancak bunu yapmayı seçerseniz, önce tabledef'i eklersiniz.
 
-Bir parola gerekliyse ancak sağlanmazsa, ODBC sürücüsü bir tabloya ilk kez erişildiğinde bir oturum açma iletişim kutusu görüntüler ve bağlantı kapatılıp yeniden açılabilir.
+Parola gerekliyse ancak sağlanmadıysa, ODBC sürücüsü bir tabloya ilk erişici olduğunda ve bağlantı kapatıp yeniden açıldığında tekrar bir giriş iletişim kutusu görüntüler.
 
-`Create` üye işlevine bir kaynak bağımsız değişkeni sağlayarak bir `CDaoTableDef` nesnesi için bağlantı dizesi ayarlayabilirsiniz. Bu ayarı, veritabanının türünü, yolunu, kullanıcı KIMLIĞINI, parolasını veya ODBC veri kaynağını tespit etmek için denetleyebilirsiniz. Daha fazla bilgi için, belirli sürücü için belgelere bakın.
+Üye işleviçin kaynak bağımsız `CDaoTableDef` değişken sağlayarak bir nesnenin `Create` bağlantı dizesini ayarlayabilirsiniz. Veritabanının türünü, yolunu, kullanıcı kimliğini, parolasını veya ODBC veri kaynağını belirlemek için ayarı denetleyebilirsiniz. Daha fazla bilgi için, belirli sürücü için belgelere bakın.
 
-İlgili bilgiler için, DAO yardımı 'nda "bağlama özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Özelliği Bağla" konusuna bakın.
 
-##  <a name="setname"></a>CDaoTableDef:: SetName
+## <a name="cdaotabledefsetname"></a><a name="setname"></a>CDaoTableDef::SetName
 
-Bir tablo için Kullanıcı tanımlı bir ad ayarlamak üzere bu üye işlevini çağırın.
+Tablo için kullanıcı tanımlı bir ad ayarlamak için bu üye işlevini çağırın.
 
 ```
 void SetName(LPCTSTR lpszName);
@@ -900,18 +900,18 @@ void SetName(LPCTSTR lpszName);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*<br/>
-Bir tablo için ad belirten bir dize ifadesi işaretçisi.
+*Lpszname*<br/>
+Tablo için bir ad belirten bir dize ifadesiiçin işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ad bir harfle başlamalı ve en fazla 64 karakter içerebilir. Sayılar ve alt çizgi karakterlerini içerebilir, ancak noktalama veya boşluk içeremez.
+Ad bir harfle başlamalı ve en fazla 64 karakter içerebilir. Sayıları içerebilir ve karakterleri alt çizebilir, ancak noktalama işareti veya boşluk içeremez.
 
-İlgili bilgiler için, DAO yardımı 'nda "ad özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Ad Özelliği" konusuna bakın.
 
-##  <a name="setsourcetablename"></a>CDaoTableDef:: SetSourceTableName
+## <a name="cdaotabledefsetsourcetablename"></a><a name="setsourcetablename"></a>CDaoTableDef::SetSourceTableName
 
-Eklenen bir tablonun adını veya `CDaoTableDef` nesnesinin temel aldığı temel tablonun adını belirtmek için bu üye işlevi çağırın, çünkü verilerin özgün kaynağında bulunur.
+Ekteki tablonun adını veya nesnenin temel tablosunun `CDaoTableDef` adını belirtmek için bu üye işlevi arayın, çünkü verilerin özgün kaynağında var.
 
 ```
 void SetSourceTableName(LPCTSTR lpszSrcTableName);
@@ -920,17 +920,17 @@ void SetSourceTableName(LPCTSTR lpszSrcTableName);
 ### <a name="parameters"></a>Parametreler
 
 *lpszSrcTableName*<br/>
-Dış veritabanında tablo adı belirten bir dize ifadesi işaretçisi. Temel tablo için, ayar boş bir dizedir ("").
+Dış veritabanında bir tablo adı belirten bir dize ifadesi için işaretçi. Bir taban tablo için ayar boş bir dize ("") dir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ardından [RefreshLink](#refreshlink)çağrısı yapmanız gerekir. Bu özellik ayarı bir temel tablo için boştur ve ekli tablo veya bir koleksiyona eklenmemiş bir nesne için okuma/yazma işlemi.
+Daha sonra [RefreshLink'i](#refreshlink)aramanız gerekir. Bu özellik ayarı bir taban tablo için boştur ve ekli bir tablo veya koleksiyona eklenmemiş bir nesne için okuma/yazma.
 
-İlgili bilgiler için, DAO yardımı 'nda "SourceTableName özelliği" konusuna bakın.
+İlgili bilgiler için DAO Help'deki "SourceTableName Property" konusuna bakın.
 
-##  <a name="setvalidationrule"></a>CDaoTableDef:: SetValidationRule
+## <a name="cdaotabledefsetvalidationrule"></a><a name="setvalidationrule"></a>CDaoTableDef::SetValidationRule
 
-Bir TableDef için doğrulama kuralı ayarlamak için bu üye işlevi çağırın.
+Bir tablo def için bir doğrulama kuralı ayarlamak için bu üye işlevi arayın.
 
 ```
 void SetValidationRule(LPCTSTR lpszValidationRule);
@@ -938,24 +938,24 @@ void SetValidationRule(LPCTSTR lpszValidationRule);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszValidationRule*<br/>
-Bir işlemi doğrulayan dize ifadesinin işaretçisi.
+*lpszValidationKural*<br/>
+Bir işlemi doğrulayan bir dize ifadesiiçin işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Doğrulama kuralları, güncelleştirme işlemleriyle bağlantılı olarak kullanılır. Bir TableDef bir doğrulama kuralı içeriyorsa, veri değiştirilmeden önce bu TableDef güncelleştirmelerinin önceden belirlenmiş ölçütlerle eşleşmesi gerekir. Değişiklik ölçütlere eşleşmezse [GetValidationText](#getvalidationtext) metnini içeren bir özel durum görüntülenir.
+Doğrulama kuralları güncelleştirme işlemleriyle bağlantılı olarak kullanılır. Bir tabledef bir doğrulama kuralı içeriyorsa, veriler değiştirilmeden önce bu tablodaki güncelleştirmelerin önceden belirlenmiş ölçütlere uyması gerekir. Değişiklik ölçütle eşleşmiyorsa, [GetValidationText](#getvalidationtext) metnini içeren bir özel durum görüntülenir.
 
-Doğrulama yalnızca Microsoft Jet veritabanı altyapısını kullanan veritabanları için desteklenir. İfade Kullanıcı tanımlı işlevlere, etki alanı toplama işlevlerine, SQL toplama işlevlerine veya sorgulara başvuramaz. Bir `CDaoTableDef` nesnesi için bir doğrulama kuralı, bu nesnedeki birden çok alana başvurabilir.
+Doğrulama yalnızca Microsoft Jet veritabanı altyapısını kullanan veritabanları için desteklenir. İfade, kullanıcı tanımlı işlevler, etki alanı toplama işlevleri, SQL toplama işlevleri veya sorgulara atıfta bulunamaz. Bir `CDaoTableDef` nesne için doğrulama kuralı, söz konusu nesnedeki birden çok alana başvurabilir.
 
-Örneğin, *hire_date* ve *termination_date*adlı alanlar için, bir doğrulama kuralı şu olabilir:
+Örneğin, *hire_date* ve *termination_date*adlı alanlar için bir doğrulama kuralı olabilir:
 
 [!code-cpp[NVC_MFCDatabase#34](../../mfc/codesnippet/cpp/cdaotabledef-class_1.cpp)]
 
-İlgili bilgiler için, DAO yardımı 'nda "ValidationRule özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "Doğrulama Kuralı Özelliği" konusuna bakın.
 
-##  <a name="setvalidationtext"></a>CDaoTableDef:: SetValidationText
+## <a name="cdaotabledefsetvalidationtext"></a><a name="setvalidationtext"></a>CDaoTableDef::SetValidationMetin
 
-Microsoft Jet veritabanı altyapısı tarafından desteklenen temel bir temel tabloyla bir `CDaoTableDef` nesnesi için bir doğrulama kuralının özel durum metnini ayarlamak için bu üye işlevi çağırın.
+Microsoft Jet veritabanı altyapısı tarafından desteklenen temel taban `CDaoTableDef` tablosu olan bir nesne için doğrulama kuralının özel durum metnini ayarlamak için bu üye işlevi arayın.
 
 ```
 void SetValidationText(LPCTSTR lpszValidationText);
@@ -963,14 +963,14 @@ void SetValidationText(LPCTSTR lpszValidationText);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszValidationText*<br/>
-Girilen veriler geçersizse görüntülenen metni belirten bir dize ifadesi işaretçisi.
+*lpszValidationMetin*<br/>
+Girilen veriler geçersizse görüntülenen metni belirten bir dize ifadesinin işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eklenmiş bir tablonun doğrulama metnini ayarlayamazsınız.
+Ekli tablonun doğrulama metnini ayarlayamazsınız.
 
-İlgili bilgiler için, DAO yardımı 'nda "ValidationText özelliği" konusuna bakın.
+İlgili bilgiler için DAO Yardım'daki "DoğrulamaMetni Özelliği" konusuna bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

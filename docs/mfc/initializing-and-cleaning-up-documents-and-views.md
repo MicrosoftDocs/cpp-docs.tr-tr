@@ -11,44 +11,44 @@ helpviewer_keywords:
 - document objects [MFC], life cycle of
 - initializing views [MFC]
 ms.assetid: 95d6f09b-a047-4079-856a-ae7d0548e9d2
-ms.openlocfilehash: 59e86f4000e2da588749ca48887d34c3effdfc3a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3c92d60941cd6542bd0d6c27e8a879dc85e3a3d6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62297196"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377210"
 ---
 # <a name="initializing-and-cleaning-up-documents-and-views"></a>Belgeleri ve Görünümleri Başlatma ve Temizleme
 
-Başlatma ve, belgeler ve görünümler sonra Temizleme için aşağıdaki yönergeleri kullanın:
+Belgelerinizi ve görünümlerinizi aldıktan sonra başlatma ve temizleme için aşağıdaki yönergeleri kullanın:
 
-- MFC çerçevesi, belgeler ve görünümler başlatır; bunları Ekle herhangi bir veri başlatır.
+- MFC çerçevesi belgeleri ve görünümleri önkarşılar; bunlara eklediğiniz verileri başlangıç olarak alabilirsiniz.
 
-- Framework belgeleri olarak temizler ve görünümleri kapatın; yığından bu belgeleri ve görünümleri içindeki üye işlevleri ayrılan herhangi bir bellek ayırması gerekir.
+- Çerçeve, belgeler ve görünümler yaklaştıkça temizlenir; yığına ayırdığınız herhangi bir belleği bu belge ve görünümlerin üye işlevleri içinden ayırmanız gerekir.
 
 > [!NOTE]
->  Tüm uygulama geçersiz kılmada en iyi şekilde yapılır için o başlatma geri çağırma [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) sınıfının üye işlevinde `CWinApp`, ve temizleme tüm uygulama için en iyi geçersiz Bitti`CWinApp`üye işlevi [ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance).
+> Tüm uygulama için başlatma en iyi sınıfın `CWinApp` [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) üye işlevini geçersiz kılma yapılır ve tüm uygulama için temizleme en iyi `CWinApp` üye işlevi [ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance)geçersiz kılma yapılır hatırlayın.
 
-Bir belge (ve alt çerçeve penceresi ve görünümü veya görünümlerde) bir MDI yaşam döngüsünü uygulama aşağıdaki gibidir:
+Bir MDI uygulamasındabir belgenin yaşam döngüsü (ve çerçeve penceresi ve görünümü veya görünümleri) aşağıdaki gibidir:
 
-1. Belge Oluşturucu dinamik oluşturma sırasında çağrılır.
+1. Dinamik oluşturma sırasında, belge oluşturucu denir.
 
-1. Her yeni belgenin, belge için [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) veya [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) çağrılır.
+1. Her yeni belge için belgenin [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) veya [OnOpenDocument'ı](../mfc/reference/cdocument-class.md#onopendocument) çağrılır.
 
-1. Belgenin ömrü boyunca kullanıcının etkileşime. Seçme ve veri düzenleme belge verilerine görünüm aracılığıyla kullanıcı çalışıyor gibi genellikle bu gerçekleşir. Görünüm, belge depolama ve diğer görünümleri güncelleştirme için değişiklikleri geçirir. Bu süre boyunca, hem belge ve görünüm komutları işleyebilir.
+1. Kullanıcı, ömrü boyunca belgeyle etkileşime geçer. Genellikle bu, kullanıcı görünüm üzerinden belge verileri üzerinde çalışırken, verileri seçip düzenlerken gerçekleşir. Görünüm, diğer görünümleri depolamak ve güncelleştirmek için belgeye değişiklikleri geçirir. Bu süre zarfında hem belge hem de görünüm komutları işleyebilir.
 
-1. Framework çağrıları [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) belgeye özgü verileri silmek için.
+1. Çerçeve, [DeleteContents'i](../mfc/reference/cdocument-class.md#deletecontents) belgeye özgü verileri silmek için çağırır.
 
-1. Belgenin yok Edicisi çağrılır.
+1. Belgenin yıkıcıdenir.
 
-Belge ilk oluşturulduğunda sonra bir SDI uygulamasında, 1. adım gerçekleştirilir. Daha sonra 2 ile 4 arasındaki adımları her bir yeni belge açıldığında sürekli olarak gerçekleştirilir. Yeni belge mevcut belge nesnesi kullanır. Son olarak, uygulama sona erdiğinde 5. adım gerçekleştirilir.
+Bir SDI uygulamasında, belge ilk oluşturulduğunda adım 1 bir kez gerçekleştirilir. Daha sonra, yeni bir belge her açıldığında 2'den 4'e kadar olan adımlar tekrar tekrar gerçekleştirilir. Yeni belge, varolan belge nesnesini yeniden kullanır. Son olarak, uygulama sona erdiğinde adım 5 gerçekleştirilir.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilmek istiyorum
 
 - [Belgeleri ve Görünümleri Başlatma](../mfc/initializing-documents-and-views.md)
 
-- [Belgeleri ve Görünümleri Temizleme](../mfc/cleaning-up-documents-and-views.md)
+- [Belge ve Görünümleri Temizleme](../mfc/cleaning-up-documents-and-views.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
+[Belge/Görünüm Mimarisi](../mfc/document-view-architecture.md)

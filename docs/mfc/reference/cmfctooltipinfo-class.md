@@ -1,5 +1,5 @@
 ---
-title: CMFCToolTipInfo Class
+title: CMFCToolTipInfo Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCToolTipInfo
@@ -32,16 +32,16 @@ helpviewer_keywords:
 - CMFCToolTipInfo [MFC], m_nGradientAngle
 - CMFCToolTipInfo [MFC], m_nMaxDescrWidth
 ms.assetid: f9d3d7f8-1f08-4342-a7b2-683860e5d2a5
-ms.openlocfilehash: b38c3a62cca376ef7a19a111fe3a34c923983d1b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 000a2fd33928e59685efa6f145406542a4935819
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338227"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81377332"
 ---
-# <a name="cmfctooltipinfo-class"></a>CMFCToolTipInfo Class
+# <a name="cmfctooltipinfo-class"></a>CMFCToolTipInfo Sınıfı
 
-Araç ipuçlarının görsel görünümünü hakkındaki bilgileri depolar.
+Araç ipuçlarının görsel görünümü hakkında bilgi depolar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,35 +53,35 @@ class CMFCToolTipInfo
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CMFCToolTipInfo::operator=](#operator_eq)||
 
-### <a name="data-members"></a>Veri üyeleri
+### <a name="data-members"></a>Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCToolTipInfo::m_bBalloonTooltip](#m_bballoontooltip)|Araç İpucu bir balon görünüm olup olmadığını belirten bir Boolean değişkeni.|
-|[CMFCToolTipInfo::m_bBoldLabel](#m_bboldlabel)|Araç İpucu etiketleri bir kalın yazı tipiyle görüntülenip görüntülenmeyeceğini belirten bir Boolean değişkeni.|
-|[CMFCToolTipInfo::m_bDrawDescription](#m_bdrawdescription)|Tooltip açıklamasını içerip içermediğini gösteren bir Boolean değişkeni.|
-|[CMFCToolTipInfo::m_bDrawIcon](#m_bdrawicon)|Araç İpucu simge içerip içermediğini gösteren bir Boolean değişkeni.|
-|[CMFCToolTipInfo::m_bDrawSeparator](#m_bdrawseparator)|Araç İpucu etiket ve araç ipucu açıklaması arasında bir ayırıcı görüntülenip görüntülenmeyeceğini belirten bir Boolean değişkeni.|
-|[CMFCToolTipInfo::m_bRoundedCorners](#m_broundedcorners)|Araç İpucu yuvarlatılmış köşelere olup olmadığını belirten bir Boolean değişkeni.|
-|[CMFCToolTipInfo::m_bVislManagerTheme](#m_bvislmanagertheme)|Araç İpucu görünümünü bir görsel yöneticiyi tarafından denetlenen olup olmadığını belirten bir Boolean değişkeni (bkz [CMFCVisualManager sınıfı](../../mfc/reference/cmfcvisualmanager-class.md)).|
-|[CMFCToolTipInfo::m_clrBorder](#m_clrborder)|Araç İpucu kenarlığı rengi.|
-|[CMFCToolTipInfo::m_clrFill](#m_clrfill)|Araç İpucu arka plan rengi.|
-|[CMFCToolTipInfo::m_clrFillGradient](#m_clrfillgradient)|Araç ipucunda Gradyan Dolgu rengi.|
-|[CMFCToolTipInfo::m_clrText](#m_clrtext)|Araç İpucu metin rengi.|
-|[CMFCToolTipInfo::m_nGradientAngle](#m_ngradientangle)|Araç ipucunda Gradyan Dolgu açısı.|
-|[CMFCToolTipInfo::m_nMaxDescrWidth](#m_nmaxdescrwidth)|En fazla olası piksel genişliği, araç ipucunda açıklaması.|
+|[CMFCToolTipInfo::m_bBalloonTooltip](#m_bballoontooltip)|Araç ucunun balon görünümüne sahip olup olmadığını gösteren bir Boolean değişkeni.|
+|[CMFCToolTipInfo::m_bBoldLabel](#m_bboldlabel)|Araç ipucu etiketlerinin kalın bir yazı tipinde görüntülenip görüntülenmediğini gösteren bir Boolean değişkeni.|
+|[CMFCToolTipInfo::m_bDrawDescription](#m_bdrawdescription)|Araç ucunun bir açıklama içerip içermediğini gösteren bir Boolean değişkeni.|
+|[CMFCToolTipInfo::m_bDrawIcon](#m_bdrawicon)|Araç ucunun bir simge bulunup içermediğini gösteren bir Boolean değişkeni.|
+|[CMFCToolTipInfo::m_bDrawSeparator](#m_bdrawseparator)|Araç ucu etiketi ile araç ucu açıklaması arasında ayırıcının görüntülenip görüntülenmediğini gösteren bir Boolean değişkeni.|
+|[CMFCToolTipInfo::m_bRoundedCorners](#m_broundedcorners)|Araç ucunun yuvarlak köşeleri olup olmadığını gösteren bir Boolean değişkeni.|
+|[CMFCToolTipInfo::m_bVislManagerTheme](#m_bvislmanagertheme)|Araç ucunun görünümünün görsel bir yönetici tarafından kontrol edilip edilmemesi gerektiğini belirten bir Boolean değişkeni (bkz. [CMFCVisualManager Sınıfı).](../../mfc/reference/cmfcvisualmanager-class.md)|
+|[CMFCToolTipInfo::m_clrBorder](#m_clrborder)|Araç ucu kenarlığı rengi.|
+|[CMFCToolTipInfo::m_clrFill](#m_clrfill)|Araç ucu arka planının rengi.|
+|[CMFCToolTipInfo::m_clrFillGradient](#m_clrfillgradient)|Degradenin rengi araç ucunu doldurur.|
+|[CMFCToolTipInfo::m_clrText](#m_clrtext)|Araç ucundaki metin rengi.|
+|[CMFCToolTipInfo::m_nGradientAngle](#m_ngradientangle)|Degradenin açısı araç ucunu doldurur.|
+|[CMFCToolTipInfo::m_nMaxDescrWidth](#m_nmaxdescrwidth)|Araç ucundaki açıklamanın piksellerde mümkün olan en yüksek genişlik.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanım [CMFCToolTipCtrl sınıfı](../../mfc/reference/cmfctooltipctrl-class.md), `CMFCToolTipInfo`, ve [CTooltipManager sınıfı](../../mfc/reference/ctooltipmanager-class.md) birlikte, uygulamanızda özel araç ipuçları uygulamak için. Bu araç ipucu sınıflarını kullanma örneği için bkz: [CMFCToolTipCtrl sınıfı](../../mfc/reference/cmfctooltipctrl-class.md) konu.
+Uygulamanızda özelleştirilmiş araç ipuçlarını uygulamak için [CMFCToolTipCtrl Class](../../mfc/reference/cmfctooltipctrl-class.md)ve `CMFCToolTipInfo` [CTooltipManager Class'ı](../../mfc/reference/ctooltipmanager-class.md) birlikte kullanın. Bu araç ipucu sınıflarının nasıl kullanılacağına bir örnek olarak [CMFCToolTipCtrl Sınıfı](../../mfc/reference/cmfctooltipctrl-class.md) konusuna bakın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek çeşitli üye değişkenlerinde değerlerini ayarlamak gösterilmiştir `CMFCToolTipInfo` sınıfı.
+Aşağıdaki örnek, `CMFCToolTipInfo` sınıftaki çeşitli üye değişkenlerin değerlerinin nasıl ayarlandığını göstermektedir.
 
 [!code-cpp[NVC_MFC_RibbonApp#42](../../mfc/reference/codesnippet/cpp/cmfctooltipinfo-class_1.cpp)]
 
@@ -91,11 +91,11 @@ Aşağıdaki örnek çeşitli üye değişkenlerinde değerlerini ayarlamak gös
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxtooltipctrl.h
+**Üstbilgi:** afxtooltipctrl.h
 
-##  <a name="m_bballoontooltip"></a>  CMFCToolTipInfo::m_bBalloonTooltip
+## <a name="cmfctooltipinfom_bballoontooltip"></a><a name="m_bballoontooltip"></a>CMFCToolTipInfo::m_bBalloonTooltip
 
-Tüm araç ipuçlarını görüntüleme stilini belirtir.
+Tüm araç ipuçlarının ekran stilini belirtir.
 
 ```
 BOOL m_bBalloonTooltip;
@@ -103,11 +103,11 @@ BOOL m_bBalloonTooltip;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç ipuçları balon stili kullanan doğru gösterir, yanlış araç ipuçları dikdörtgen stili kullanan gösterir.
+TRUE, araç uçlarının balon stilini kullandığını, FALSE ise araç uçlarının dikdörtgen stili kullandığını gösterir.
 
-##  <a name="m_bboldlabel"></a>  CMFCToolTipInfo::m_bBoldLabel
+## <a name="cmfctooltipinfom_bboldlabel"></a><a name="m_bboldlabel"></a>CMFCToolTipInfo::m_bBoldLabel
 
-Araç ipucu metninin yazı tipini kalın olup olmadığını belirtir.
+Araç ipucu metninin yazı tipinin kalın olup olmadığını belirtir.
 
 ```
 BOOL m_bBoldLabel;
@@ -115,11 +115,11 @@ BOOL m_bBoldLabel;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birlikte yazı tipinin kalın araç ipucu etiketleri görüntülemek için bu üye için görünen araç ipucu metni kalın yazı tipiyle ya da yanlış true olarak ayarlayın.
+Araç ipucu metinlerini kalın yazı tipiyle görüntülemek için bu üyeyi TRUE veya kalın olmayan yazı tipiyle araç ipucu etiketlerini görüntülemek için FALSE olarak ayarlayın.
 
-##  <a name="m_bdrawdescription"></a>  CMFCToolTipInfo::m_bDrawDescription
+## <a name="cmfctooltipinfom_bdrawdescription"></a><a name="m_bdrawdescription"></a>CMFCToolTipInfo::m_bDrawDescription
 
-Her araç ipucu açıklaması metni görüntülenip görüntülenmeyeceğini belirtir.
+Her araç ucunun açıklama metnini gösterip görüntülemediğini belirtir.
 
 ```
 BOOL m_bDrawDescription;
@@ -127,11 +127,11 @@ BOOL m_bDrawDescription;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye için görüntü açıklaması veya açıklama gizlemek için FALSE true olarak ayarlayın. Çağırarak bir araç ipucu açıklaması belirtebilirsiniz [CMFCToolTipCtrl::SetDescription](../../mfc/reference/cmfctooltipctrl-class.md#setdescription)
+Açıklamayı görüntülemek için bu üyeyi TRUE'ya veya açıklamayı gizlemek için FALSE'a ayarlayın. [CMFCToolTipCtrl'i](../../mfc/reference/cmfctooltipctrl-class.md#setdescription) arayarak açıklamayı bir araç ipucunda belirtebilirsiniz::SetDescription
 
-##  <a name="m_bdrawicon"></a>  CMFCToolTipInfo::m_bDrawIcon
+## <a name="cmfctooltipinfom_bdrawicon"></a><a name="m_bdrawicon"></a>CMFCToolTipInfo::m_bDrawIcon
 
-Tüm araç ipuçları simgeleri görüntüler olup olmadığını belirtir.
+Tüm araç ipuçlarının simgeleri gösterip göstermediğini belirtir.
 
 ```
 BOOL m_bDrawIcon;
@@ -139,11 +139,11 @@ BOOL m_bDrawIcon;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her araç ipucu bir simge görüntülemek için TRUE veya FALSE araç ipuçları simgeler olmadan görüntülemek için bu üye ayarlayın.
+Bu üyeyi, her araç ucunda bir simge görüntülemek için TRUE veya simgeleri olmayan araç ipuçlarını görüntülemek için FALSE olarak ayarlayın.
 
-##  <a name="m_bdrawseparator"></a>  CMFCToolTipInfo::m_bDrawSeparator
+## <a name="cmfctooltipinfom_bdrawseparator"></a><a name="m_bdrawseparator"></a>CMFCToolTipInfo::m_bDrawSeparator
 
-Her araç ipucu etiketini açıklamasını arasındaki ayırıcı olup olmadığını belirtir.
+Her araç ucunun etiketi ile açıklaması arasında bir ayırıcı olup olmadığını belirtir.
 
 ```
 BOOL m_bDrawSeparator;
@@ -151,11 +151,11 @@ BOOL m_bDrawSeparator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç İpucu etiket ve açıklama arasındaki ayırıcı görüntülemek için TRUE veya FALSE araç ipuçları ayırıcı olmadan görüntülemek için bu üye ayarlayın.
+Bu üyeyi, araç ucu etiketi ve açıklaması arasında ayırıcı yı görüntülemek için TRUE veya takım uçlarını ayırıcı olmadan görüntülemek için FALSE olarak ayarlayın.
 
-##  <a name="m_broundedcorners"></a>  CMFCToolTipInfo::m_bRoundedCorners
+## <a name="cmfctooltipinfom_broundedcorners"></a><a name="m_broundedcorners"></a>CMFCToolTipInfo::m_bRoundedCorners
 
-Tüm araç ipuçları yuvarlatılmış köşelere sahip olup olmadığını belirtir.
+Tüm araç uçlarının yuvarlak köşelere sahip olup olmadığını belirtir.
 
 ```
 BOOL m_bRoundedCorners;
@@ -163,19 +163,19 @@ BOOL m_bRoundedCorners;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç ipuçları dikdörtgen köşelerinde görüntülemek için bu üye için araç ipuçları, veya yanlış ekran yuvarlak köşeler için true olarak ayarlayın.
+Bu üyeyi, araç uçlarında yuvarlatılmış köşeleri görüntülemek için TRUE'ya veya araç uçlarında dikdörtgen köşeleri görüntülemek için FALSE olarak ayarlayın.
 
-##  <a name="m_clrborder"></a>  CMFCToolTipInfo::m_clrBorder
+## <a name="cmfctooltipinfom_clrborder"></a><a name="m_clrborder"></a>CMFCToolTipInfo::m_clrBorder
 
-Tüm araç ipuçları kenarlık rengini belirtir.
+Tüm araç uçlarında kenarlıkların rengini belirtir.
 
 ```
 COLORREF m_clrBorder;
 ```
 
-##  <a name="m_clrfill"></a>  CMFCToolTipInfo::m_clrFill
+## <a name="cmfctooltipinfom_clrfill"></a><a name="m_clrfill"></a>CMFCToolTipInfo::m_clrFill
 
-Araç İpucu arka plan rengini belirtir.
+Araç ucu arka planlarının rengini belirtir.
 
 ```
 COLORREF m_clrFill;
@@ -183,11 +183,11 @@ COLORREF m_clrFill;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa [CMFCToolTipInfo::m_clrFillGradient](#m_clrfillgradient) -1, araç ipucu arka plan rengi `m_clrFill`. Aksi takdirde, `m_clrFill` gradyanın başlangıç rengini belirtir ve `m_clrFillGradient` gradyanının Bitiş rengini belirtir. [CMFCToolTipInfo::m_nGradientAngle](#m_ngradientangle) geçişin yönü belirler.
+[CMFCToolTipInfo::m_clrFillGradient](#m_clrfillgradient) -1 ise, araç ucu `m_clrFill`arka plan rengidir. Aksi `m_clrFill` takdirde, degradenin başlangıcının rengini belirtir `m_clrFillGradient` ve degradenin ucunun rengini belirtir. [CMFCToolTipInfo::m_nGradientAngle](#m_ngradientangle) degrade yönünü belirler.
 
-##  <a name="m_clrfillgradient"></a>  CMFCToolTipInfo::m_clrFillGradient
+## <a name="cmfctooltipinfom_clrfillgradient"></a><a name="m_clrfillgradient"></a>CMFCToolTipInfo::m_clrFillGradient
 
-Araç ipuçları için gradyan arka plan için Bitiş rengini belirtir.
+Araç uçları için degrade arka plan için son rengi belirtir.
 
 ```
 COLORREF m_clrFillGradient;
@@ -195,9 +195,9 @@ COLORREF m_clrFillGradient;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `m_clrFillGradient` -1, hiçbir gradyan yoktur. Gradyan başlangıç rengi tarafından aksi takdirde, belirtilen [CMFCToolTipInfo::m_clrFill](#m_clrfill) ve gradyan bitiş rengi tarafından belirtilen `m_clrFillGradient`. [CMFCToolTipInfo::m_nGradientAngle](#m_ngradientangle) geçişin yönü belirler.
+-1 ise, `m_clrFillGradient` degrade yoktur. Aksi takdirde, degrade ilk renk [CMFCToolTipInfo tarafından belirtilir::m_clrFill](#m_clrfill) ve `m_clrFillGradient`degrade bitiş rengi tarafından belirtilir. [CMFCToolTipInfo::m_nGradientAngle](#m_ngradientangle) degrade yönünü belirler.
 
-##  <a name="m_clrtext"></a>  CMFCToolTipInfo::m_clrText
+## <a name="cmfctooltipinfom_clrtext"></a><a name="m_clrtext"></a>CMFCToolTipInfo::m_clrText
 
 Tüm araç ipuçlarının metin rengini belirtir.
 
@@ -205,9 +205,9 @@ Tüm araç ipuçlarının metin rengini belirtir.
 COLORREF m_clrText;
 ```
 
-##  <a name="m_ngradientangle"></a>  CMFCToolTipInfo::m_nGradientAngle
+## <a name="cmfctooltipinfom_ngradientangle"></a><a name="m_ngradientangle"></a>CMFCToolTipInfo::m_nGradientAngle
 
-Gradyan arka planda araç ipuçlarının çizilmiş açıyı belirtir.
+Araç uçlarının arka planında bir degradenin çizildiği açıyı belirtir.
 
 ```
 int m_nGradientAngle;
@@ -215,21 +215,21 @@ int m_nGradientAngle;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_nGradientAngle` açısını derece araç ipuçlarının arka planı gradyan yatay uzaklığını belirtir. Varsa `m_nGradientAngle` 0 ise, geçişin soldan sağa çizilir. Varsa `m_nGradientAngle` olan 1 ile 360 arasında geçişin o derece sayısına göre saat yönünde döndürme. Varsa `m_nGradientAngle` varsayılan değerdir, -1'dir gradyan üstten alta çizilir. Bu ayar ile aynı olur `m_nGradientAngle` 90.
+`m_nGradientAngle`derece olarak açıyı, takım uçlarının arka planındaki degradenin yataydan dengelendiğini belirtir. 0 `m_nGradientAngle` ise, degrade soldan sağa doğru çizilir. 1 `m_nGradientAngle` ile 360 arasındaysa, degrade bu derece sayısına göre saat yönünde dönüyor. Varsayılan `m_nGradientAngle` değer olan -1 ise, degrade yukarıdan aşağıya doğru çizilir. Bu, 90'a ayar `m_nGradientAngle` la aynıdır.
 
-[CMFCToolTipInfo::m_clrFill](#m_clrfill) `clrFill` gradyanın başlangıç rengini belirtir ve [CMFCToolTipInfo::m_clrFillGradient](#m_clrfillgradient) `clrFillGradient` gradyanının Bitiş rengini belirtir. Varsa `m_clrFillGradient` -1, hiçbir gradyan yoktur.
+[CMFCToolTipInfo::m_clrFill](#m_clrfill) `clrFill` degrade nin başlangıcının rengini belirtir ve [CMFCToolTipInfo::m_clrFillGradient](#m_clrfillgradient) `clrFillGradient` degradenin ucunun rengini belirtir. -1 ise, `m_clrFillGradient` degrade yoktur.
 
-##  <a name="m_nmaxdescrwidth"></a>  CMFCToolTipInfo::m_nMaxDescrWidth
+## <a name="cmfctooltipinfom_nmaxdescrwidth"></a><a name="m_nmaxdescrwidth"></a>CMFCToolTipInfo::m_nMaxDescrWidth
 
-Her araç ipucunda görüntülenen açıklama en fazla genişliğini belirtir. Metin açıklama genişliğini belirtilen değeri aşıyorsa, paketlenir.
+Her araç ipucunda görüntülendiği açıklamanın maksimum genişliğini belirtir. Açıklama genişliği belirtilen değeri aşarsa, metin sarılır.
 
 ```
 int m_nMaxDescrWidth;
 ```
 
-##  <a name="m_bvislmanagertheme"></a>  CMFCToolTipInfo::m_bVislManagerTheme
+## <a name="cmfctooltipinfom_bvislmanagertheme"></a><a name="m_bvislmanagertheme"></a>CMFCToolTipInfo::m_bVislManagerTheme
 
-Görsel yöneticiyi uygulamanın tüm araç ipuçlarının görünüm denetimleri olup olmadığını belirtir.
+Uygulamanın görsel yöneticisinin tüm araç ipuçlarının görünümünü kontrol edip etmediğini belirtir.
 
 ```
 BOOL m_bVislManagerTheme;
@@ -237,11 +237,11 @@ BOOL m_bVislManagerTheme;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `m_bVislManagerTheme` doğru ise, her araç ipucu yeni bir istek [Cmfctooltipınfo](../../mfc/reference/cmfctooltipinfo-class.md) ekrana gelen ve değerleri o nesnenin görünümlerini belirlemek için kullanır. önce uygulamanın visual Yöneticisi'nden. Diğer üyeleri, [Cmfctooltipınfo](../../mfc/reference/cmfctooltipinfo-class.md) göz ardı edilir.
+`m_bVislManagerTheme` Doğruysa, her araç ucu ekranda görünmeden önce uygulamanın görsel yöneticisinden yeni bir [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) ister ve görünümlerini belirlemek için bu nesnedeki değerleri kullanır. [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) diğer üyeleri göz ardı edilir.
 
-##  <a name="operator_eq"></a>  CMFCToolTipInfo::operator =
+## <a name="cmfctooltipinfooperator"></a><a name="operator_eq"></a>CMFCToolTipInfo::operator=
 
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ```
 CMFCToolTipInfo& operator=(CMFCToolTipInfo& src);
@@ -249,7 +249,7 @@ CMFCToolTipInfo& operator=(CMFCToolTipInfo& src);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *src*<br/>
+[içinde] *src*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 

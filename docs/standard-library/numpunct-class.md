@@ -30,16 +30,16 @@ helpviewer_keywords:
 - std::numpunct [C++], thousands_sep
 - std::numpunct [C++], truename
 ms.assetid: 73fb93cc-ac11-4c98-987c-bfa6267df596
-ms.openlocfilehash: 07285f5c014db1ddf419c372913cac0364538a55
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 0bdd6556df892e5e231919dbc4ae95d14a6f95fe
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419723"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373623"
 ---
 # <a name="numpunct-class"></a>numpunct Sınıfı
 
-Sayısal ve Boolean ifadelerin biçimlendirme ve noktalama bilgileri hakkında bilgi temsil etmek için kullanılan `CharType` türlerini açıklayan bir nesneyi tanımlayan bir sınıf şablonu.
+Sayısal ve Boolean ifadelerinbiçimlendirme ve noktalama işaretleri hakkındaki bilgileri `CharType` temsil etmek için kullanılan tür dizilerini açıklamak için yerel bir fakal olarak hizmet verebilen bir nesneyi açıklayan bir sınıf şablonu.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,48 +50,48 @@ class numpunct : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType*\
+*Chartype*\
 Bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için yapılan ilk girişim, kimlik içinde benzersiz bir pozitif değer depolar **.**
+Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için ilk **girişim, kimlikte** benzersiz bir pozitif değer depolar.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[numpunct](#numpunct)|`numpunct`türündeki nesneler için Oluşturucu.|
+|[nükpunct](#numpunct)|Tür `numpunct`nesneleri için oluşturucu.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[char_type](#char_type)|Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.|
-|[string_type](#string_type)|`CharType`türünde karakterler içeren bir dizeyi tanımlayan tür.|
+|[Char_type](#char_type)|Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.|
+|[string_type](#string_type)|Tür `CharType`karakterleri içeren bir dize açıklayan bir tür.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="member-functions"></a>Üye işlevler
 
-|Üye işlevi|Açıklama|
+|Üye fonksiyonu|Açıklama|
 |-|-|
 |[decimal_point](#decimal_point)|Ondalık noktası olarak kullanılacak yerel ayara özgü bir öğeyi döndürür.|
 |[do_decimal_point](#do_decimal_point)|Ondalık noktası olarak kullanılacak yerel ayara özgü bir öğeyi döndürmek için çağrılan korumalı sanal üye işlevi.|
-|[do_falsename](#do_falsename)|**False**değerinin metin temsili olarak kullanılacak bir dize döndürmek için çağrılan korumalı bir sanal üye işlevi.|
+|[do_falsename](#do_falsename)|Bir dize yi **false**değerinin metin gösterimi olarak kullanmak üzere döndürmek için çağrılan korumalı sanal üye işlev.|
 |[do_grouping](#do_grouping)|Herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürmek için çağrılan korumalı sanal üye işlevi.|
 |[do_thousands_sep](#do_thousands_sep)|Binlik ayırıcı olarak kullanılacak yerel ayara özgü bir öğeyi döndürmek için çağrılan korumalı sanal üye işlevi.|
-|[do_truename](#do_truename)|**True**değerinin metin temsili olarak kullanılacak bir dize döndürmek için çağrılan korumalı bir sanal üye işlevi.|
-|[falsename](#falsename)|**False**değerinin metin temsili olarak kullanılacak bir dize döndürür.|
-|[gruplama](#grouping)|Herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürür.|
+|[do_truename](#do_truename)|**Doğru**değerin metin gösterimi olarak kullanmak için bir dize döndürmek için çağrılan korumalı sanal üye işlevi.|
+|[falsename](#falsename)|**Yanlış**değerin metin gösterimi olarak kullanılacak bir dize döndürür.|
+|[gruplandırma](#grouping)|Herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürür.|
 |[thousands_sep](#thousands_sep)|Binlik ayırıcı olarak kullanılacak yerel ayara özgü bir öğeyi döndürür.|
-|[truename](#truename)|**True**değerinin metin temsili olarak kullanılacak bir dize döndürür.|
+|[truename](#truename)|**Doğru**değerin metin gösterimi olarak kullanılacak bir dize döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yerel ayar >
+**Üstbilgi:** \<yerel>
 
 **Ad alanı:** std
 
-## <a name="char_type"></a>sayısal tuş takımı:: char_type
+## <a name="numpunctchar_type"></a><a name="char_type"></a>sayısal::char_type
 
 Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.
 
@@ -101,9 +101,9 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, **CharType** şablon parametresi için bir eş anlamlı.
+Tür, şablon parametresi **CharType** ile eş anlamlıdır.
 
-## <a name="decimal_point"></a>tuş takımı unct::d ecimal_point
+## <a name="numpunctdecimal_point"></a><a name="decimal_point"></a>numpunct::decimal_point
 
 Ondalık noktası olarak kullanılacak yerel ayara özgü bir öğeyi döndürür.
 
@@ -113,11 +113,11 @@ CharType decimal_point() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ondalık noktası olarak kullanılacak yerel ayara özgü bir öğe.
+Ondalık nokta olarak kullanılacak yerelöğe özgü bir öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [do_decimal_point](#do_decimal_point)döndürür.
+Üye işlev [do_decimal_point](#do_decimal_point)döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -146,7 +146,7 @@ German_Germany.1252 decimal point ,
 German_Germany.1252 thousands separator .
 ```
 
-## <a name="do_decimal_point"></a>tuş takımı unct::d o_decimal_point
+## <a name="numpunctdo_decimal_point"></a><a name="do_decimal_point"></a>numpunct::do_ondalık_nokta
 
 Ondalık noktası olarak kullanılacak yerel ayara özgü bir öğeyi döndürmek için çağrılan korumalı sanal üye işlevi.
 
@@ -156,15 +156,15 @@ virtual CharType do_decimal_point() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ondalık noktası olarak kullanılacak yerel ayara özgü bir öğe.
+Ondalık nokta olarak kullanılacak yerelöğe özgü bir öğe.
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `decimal_point`tarafından çağrıldığı [decimal_point](#decimal_point)için örneğe bakın.
+Sanal üye işlevinin çağrıldığı [decimal_point](#decimal_point)örneğine `decimal_point`bakın.
 
-## <a name="do_falsename"></a>tuş takımı unct::d o_falsename
+## <a name="numpunctdo_falsename"></a><a name="do_falsename"></a>numpunct::do_falsename
 
-Korumalı sanal üye işlevi, **false**değerinin metin temsili olarak kullanılacak bir dizi döndürür.
+Korumalı sanal üye **işlevi, yanlış**değerin metin gösterimi olarak kullanılacak bir sıra döndürür.
 
 ```cpp
 virtual string_type do_falsename() const;
@@ -172,17 +172,17 @@ virtual string_type do_falsename() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**False**değerinin metin temsili olarak kullanılacak bir dizi içeren dize.
+**Yanlış**değerin metin gösterimi olarak kullanılacak bir dizi içeren bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, tüm yerel ayarlarda **false** değerini göstermek için "false" dizesini döndürür.
+Üye işlev, tüm yerel bölgelerde **yanlış** değeri temsil etmek için "false" dizesini döndürür.
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `falsename`tarafından çağrıldığı [falsename](#falsename)için örneğe bakın.
+Sanal üye [falsename](#falsename)işlevinin `falsename`.
 
-## <a name="do_grouping"></a>tuş takımı unct::d o_grouping
+## <a name="numpunctdo_grouping"></a><a name="do_grouping"></a>numpunct::do_grouping
 
 Herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürmek için çağrılan korumalı sanal üye işlevi.
 
@@ -192,17 +192,17 @@ virtual string do_grouping() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını belirlemek için yerel ayara özgü bir kural.
+Basamakların herhangi bir ondalık noktanın solunda nasıl gruplandırılmayı belirlemek için yerele özgü bir kural.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürür. Kodlama, **lconv:: Grouping**ile aynıdır.
+Korumalı sanal üye işlevi herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürür. Kodlama lconv için **aynıdır::gruplandırma**.
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `grouping`tarafından çağrıldığı [Gruplandırma](#grouping)için örneğe bakın.
+Sanal üye işlevin çağrıldığı [gruplandırma](#grouping)örneğine `grouping`bakın.
 
-## <a name="do_thousands_sep"></a>tuş takımı unct::d o_thousands_sep
+## <a name="numpunctdo_thousands_sep"></a><a name="do_thousands_sep"></a>numpunct::do_bins_sep
 
 Binlik ayırıcı olarak kullanılacak yerel ayara özgü bir öğeyi döndürmek için çağrılan korumalı sanal üye işlevi.
 
@@ -216,15 +216,15 @@ Binlik ayırıcı olarak kullanılacak yerel ayara özgü bir öğeyi döndürü
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi herhangi bir ondalık noktanın solunda bir grup ayırıcısı olarak kullanılmak üzere `CharType` türünde bir yerel ayara özgü öğe döndürür.
+Korumalı sanal üye işlevi, herhangi bir `CharType` ondalık noktanın solunda grup ayırıcısı olarak kullanılacak yerele özgü bir tür öğesi döndürür.
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `thousands_sep`tarafından çağrıldığı [thousands_sep](#thousands_sep)için örneğe bakın.
+Sanal üye [thousands_sep](#thousands_sep)işlevinin `thousands_sep`çağrıldığı thousands_sep örneğine bakın.
 
-## <a name="do_truename"></a>tuş takımı unct::d o_truename
+## <a name="numpunctdo_truename"></a><a name="do_truename"></a>numpunct::do_truename
 
-**True**değerinin metin temsili olarak kullanılacak bir dize döndürmek için çağrılan korumalı bir sanal üye işlevi.
+**Doğru**değerin metin gösterimi olarak kullanmak için bir dize döndürmek için çağrılan korumalı sanal üye işlevi.
 
 ```cpp
 virtual string_type do_truename() const;
@@ -232,17 +232,17 @@ virtual string_type do_truename() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-**True**değerinin metin temsili olarak kullanılacak bir dize.
+**Doğru**değerin metin gösterimi olarak kullanılacak bir dize.
 
-Tüm yerel ayarlar, **doğru**değeri göstermek için "true" dizesini döndürür.
+Tüm yerel **değerler, değeri doğru**temsil etmek için "true" dizesini döndürer.
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `truename`tarafından çağrıldığı [truename](#truename)örneğine bakın.
+[Truename](#truename)için örneğe bakın , sanal üye `truename`işlevi tarafından çağrılır.
 
-## <a name="falsename"></a>tuş takımı unct:: falsename
+## <a name="numpunctfalsename"></a><a name="falsename"></a>numpunct::falsename
 
-**False**değerinin metin temsili olarak kullanılacak bir dize döndürür.
+**Yanlış**değerin metin gösterimi olarak kullanılacak bir dize döndürür.
 
 ```cpp
 string_type falsename() const;
@@ -250,13 +250,13 @@ string_type falsename() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**False**değerinin metin temsili olarak kullanılacak `CharType`s dizisini içeren bir dize.
+`CharType` **Yanlış**değerin metin gösterimi olarak kullanılacak bir s dizisi içeren bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, tüm yerel ayarlarda **false** değerini göstermek için "false" dizesini döndürür.
+Üye işlev, tüm yerel bölgelerde **yanlış** değeri temsil etmek için "false" dizesini döndürür.
 
-Üye işlevi [do_falsename](#do_falsename)döndürür.
+Üye işlev [do_falsename](#do_falsename)döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -289,7 +289,7 @@ French_France.1252 truename true
 French_France.1252 falsename false
 ```
 
-## <a name="grouping"></a>tuş takımı unct:: Grouping
+## <a name="numpunctgrouping"></a><a name="grouping"></a>numpunct::gruplandırma
 
 Herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürür.
 
@@ -299,11 +299,11 @@ string grouping() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını belirlemek için yerel ayara özgü bir kural.
+Basamakların herhangi bir ondalık noktanın solunda nasıl gruplandırılmayı belirlemek için yerele özgü bir kural.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [do_grouping](#do_grouping)döndürür.
+Üye işlev [do_grouping](#do_grouping)döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -335,9 +335,9 @@ German_Germany.1252 international grouping:
 the 0th group to the left of the radix character is of size 3
 ```
 
-## <a name="numpunct"></a>tuş takımı unct:: tuş takımı unct
+## <a name="numpunctnumpunct"></a><a name="numpunct"></a>sayısal::numpunct
 
-`numpunct`türündeki nesneler için Oluşturucu.
+Tür `numpunct`nesneleri için oluşturucu.
 
 ```cpp
 explicit numpunct(size_t _Refs = 0);
@@ -345,26 +345,26 @@ explicit numpunct(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs*\
-Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
+*_refs*\
+Nesneiçin bellek yönetimi türünü belirtmek için kullanılan eden arameger değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*_Refs* parametresi için olası değerler ve bunların önemi şunlardır:
+*_Refs* parametresi için olası değerler ve önemi şunlardır:
 
-- 0: nesnenin ömrü, kendisini içeren yerel ayarlara göre yönetilir.
+- 0: Nesnenin ömrü, onu içeren yerel nesneler tarafından yönetilir.
 
-- 1: nesnenin ömrü el ile yönetilmelidir.
+- 1: Nesnenin ömrü el ile yönetilmelidir.
 
-- \> 1: Bu değerler tanımlı değil.
+- \>1: Bu değerler tanımlı değildir.
 
-Yok edicisi korunduğu için doğrudan örnek mümkün değildir.
+Yıkıcı korunduğundan, doğrudan örnek yoktur.
 
-Oluşturucu kendi temel nesnesini **locale::** [model](../standard-library/locale-class.md#facet_class)(`_Refs`) ile başlatır.
+Kurucu, temel nesnesini yerel olarak başlaşır:: **locale::**[fason](../standard-library/locale-class.md#facet_class)( ).`_Refs`
 
-## <a name="string_type"></a>sayısal tuş takımı:: string_type
+## <a name="numpunctstring_type"></a><a name="string_type"></a>sayısal::string_type
 
-**CharType**türünde karakterler içeren bir dizeyi tanımlayan tür.
+**CharType**türünde karakterler içeren bir dize açıklayan bir tür.
 
 ```cpp
 typedef basic_string<CharType, Traits, Allocator> string_type;
@@ -372,9 +372,9 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, nesne noktalama sıralarının kopyalarını depolayabilen [basic_string](../standard-library/basic-string-class.md) sınıf şablonu özelleştirmesi tanımlar.
+Tür, nesneleri noktalama işaretlerinin kopyalarını depolayabilen sınıf şablonu [basic_string](../standard-library/basic-string-class.md) bir uzmanlık açıklar.
 
-## <a name="thousands_sep"></a>sayısal tuş takımı:: thousands_sep
+## <a name="numpunctthousands_sep"></a><a name="thousands_sep"></a>sayısal::thousands_sep
 
 Binlik ayırıcı olarak kullanılacak yerel ayara özgü bir öğeyi döndürür.
 
@@ -384,11 +384,11 @@ CharType thousands_sep() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Binlik ayırıcı olarak kullanılacak yerel ayara özgü bir öğe.
+Binlerce ayırıcı olarak kullanılacak yerele özgü bir öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [do_thousands_sep](#do_thousands_sep)döndürür.
+Üye işlev [do_thousands_sep](#do_thousands_sep)döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -417,9 +417,9 @@ German_Germany.1252 decimal point ,
 German_Germany.1252 thousands separator .
 ```
 
-## <a name="truename"></a>tuş takımı unct:: truename
+## <a name="numpuncttruename"></a><a name="truename"></a>numpunct::truename
 
-**True**değerinin metin temsili olarak kullanılacak bir dize döndürür.
+**Doğru**değerin metin gösterimi olarak kullanılacak bir dize döndürür.
 
 ```cpp
 string_type falsename() const;
@@ -427,13 +427,13 @@ string_type falsename() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**True**değerinin metin temsili olarak kullanılacak bir dize.
+**Doğru**değerin metin gösterimi olarak kullanılacak bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [do_truename](#do_truename)döndürür.
+Üye işlev [do_truename](#do_truename)döndürür.
 
-Tüm yerel ayarlar, **doğru**değeri göstermek için "true" dizesini döndürür.
+Tüm yerel **değerler, değeri doğru**temsil etmek için "true" dizesini döndürer.
 
 ### <a name="example"></a>Örnek
 
@@ -468,6 +468,6 @@ French_France.1252 falsename false
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<yerel ayar >](../standard-library/locale.md)\
-[model sınıfı](../standard-library/locale-class.md#facet_class)\
+[\<yerel>](../standard-library/locale.md)\
+[fateks Sınıf](../standard-library/locale-class.md#facet_class)\
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

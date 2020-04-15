@@ -13,53 +13,53 @@ helpviewer_keywords:
 - status bars [MFC], tool tips
 - flyby status bar updates
 ms.assetid: d1696305-b604-4fad-9f09-638878371412
-ms.openlocfilehash: 4582b03844e1be3d4cf70bcc3fff1c3b66119ae3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1762931b75734801659fd6271377260bd0473614
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351780"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373451"
 ---
 # <a name="toolbar-tool-tips"></a>Araç Çubuğu Araç İpuçları
 
-Araç ipuçları, fare bir süre için bir düğmenin üzerine getirdiğinizde, bir araç çubuğu düğmesinin amaçlı kısa açıklamaları sunan küçük bir açılır pencereleri ' dir. Uygulama Sihirbazı ile bir araç olan bir uygulama oluşturduğunuzda, sizin için araç ipucu desteği sağlanır. Bu makalede, Uygulama Sihirbazı'nı ve uygulamanıza nasıl araç ipucu desteği ekleme tarafından oluşturulan her iki araç ipucu desteği açıklanmaktadır.
+Araç ipuçları, fareyi bir süre boyunca bir düğmeüzerinde konumlandırdığınızda araç çubuğu düğmesinin amacının kısa açıklamalarını sunan küçük açılır pencerelerdir. Uygulama Sihirbazı'nda araç çubuğu olan bir uygulama oluşturduğunuzda, sizin için araç ipucu desteği sağlanır. Bu makalede, hem Uygulama Sihirbazı tarafından oluşturulan araç ipucu desteği hem de uygulamanıza araç ipucu desteği nin nasıl ekleyeceğiniaçık.
 
-Bu makalede ele alınmıştır:
+Bu makale şunları kapsamaktadır:
 
 - [Araç ipuçlarını etkinleştirme](#_core_activating_tool_tips)
 
-- [Flyby durum çubuğu güncelleştirmeleri](#_core_fly_by_status_bar_updates)
+- [Flyby durum çubuğu güncellemeleri](#_core_fly_by_status_bar_updates)
 
-##  <a name="_core_activating_tool_tips"></a> Araç ipuçlarını etkinleştirme
+## <a name="activating-tool-tips"></a><a name="_core_activating_tool_tips"></a>Etkinleştirme Aracı İpuçları
 
-Araç ipuçları, uygulamanızda etkinleştirmek için iki işlem yapmanız gerekir:
+Uygulamanızdaki araç ipuçlarını etkinleştirmek için iki şey yapmanız gerekir:
 
-- Diğer stil cbrs_tooltıps stili eklemek (WS_CHILD ws_vısıble ve diğer gibi **CBRS_** stilleri) olarak geçirilen *dwStyle* parametresi [CToolBar::Create](../mfc/reference/ctoolbar-class.md#create) işlev veya [SetBarStyle](../mfc/reference/ccontrolbar-class.md#setbarstyle).
+- CToolBar için *dwStyle* parametresi olarak geçirilen diğer stiller (WS_CHILD, WS_VISIBLE ve diğer **CBRS_** stilleri gibi) CBRS_TOOLTIPS stili [ekleyin::İşlev oluştur](../mfc/reference/ctoolbar-class.md#create) veya [SetBarStyle'da.](../mfc/reference/ccontrolbar-class.md#setbarstyle)
 
-- Aşağıdaki yordamda açıklandığı gibi bir yeni satır karakteri ('\n'), araç komutu için komut satırı istemi içeren dize kaynağına ayrılmış araç ipucu metni ekleyin. Araç çubuğu düğmesini kimliği dize kaynağını paylaşır.
+- Aşağıdaki yordamda açıklandığı gibi, araç çubuğu komutu komut satırı istemini içeren dize kaynağına yeni bir satır karakteri ('\n') ile ayrılan araç çubuğu ipucu metnini ekleyin. Dize kaynağı araç çubuğu düğmesinin kimliğini paylaşır.
 
-#### <a name="to-add-the-tool-tip-text"></a>Araç İpucu metni eklemek için
+#### <a name="to-add-the-tool-tip-text"></a>Araç ipucu metnini eklemek için
 
-1. Araç çubuğu Düzenleyicisi araç düzenlerken açın **araç çubuğu düğmesi özellikleri** penceresi için belirli bir düğme.
+1. Araç çubuğu düzenleyicisinde araç çubuğunu düzenlerken, belirli bir düğme için **Araç Çubuğu Düğme Özellikleri** penceresini açın.
 
-1. İçinde **istemi** kutusunda, düğmenin araç ipucu olarak görünmesini istediğiniz metni belirtin.
+1. **İstem** kutusunda, bu düğmenin araç ucunda görünmesini istediğiniz metni belirtin.
 
 > [!NOTE]
->  Metin bir düğme özelliği araç çubuğu düzenleyicisinde zorunda kalınan önceki yordamı değiştirir gibi ayarlar açın ve dize kaynağı düzenleyemez.
+> Metni araç çubuğu düzenleyicisinde bir düğme özelliği olarak ayarlamak, dize kaynağını açmanız ve düzenlemeniz gereken eski yordamın yerini alır.
 
-Araç ipuçları etkin bir denetim çubuğu üzerinde alt denetimlerin varsa, aşağıdaki ölçütleri karşıladığı sürece denetim çubuğu denetim çubuğundaki her alt denetim için araç ipucu görüntülenir:
+Araç uçları etkinleştirilmiş bir denetim çubuğunda alt denetimler varsa, denetim çubuğu aşağıdaki ölçütleri karşıladığı sürece denetim çubuğundaki her alt denetim için bir araç ipucu görüntüler:
 
-- 1. değil - denetiminin kimliği.
+- Denetimin kimliği - 1 değildir.
 
-- Dize tablosu girişi alt denetimin kaynak dosyasında aynı Kimliğe sahip bir araç ipucu dize var.
+- Kaynak dosyasındaki alt denetimle aynı kimliği içeren dize tablosu girişinin bir araç ipucu dizesi vardır.
 
-##  <a name="_core_fly_by_status_bar_updates"></a> Flyby durum çubuğu güncelleştirmeleri
+## <a name="flyby-status-bar-updates"></a><a name="_core_fly_by_status_bar_updates"></a>Flyby Durum Çubuğu Güncellemeleri
 
-Araç ipuçları için ilgili bir güncelleştirme çubuğu "flyby" durumu özelliğidir. Düğme etkin olduğunda varsayılan olarak, yalnızca belirli bir araç çubuğu düğmesi durum çubuğundaki ileti açıklar. CBRS_FLYBY geçirilen stilleri listesine ekleyerek `CToolBar::Create`, bu iletileri fare imleci düğmenin etkinleştirmeden araç geçerken güncelleştirilmiş olabilir.
+Araç ipuçlarıyla ilgili bir özellik "flyby" durum çubuğu güncelleştirmedir. Varsayılan olarak, durum çubuğundaki ileti, düğme etkinleştirildiğinde yalnızca belirli bir araç çubuğu düğmesini açıklar. Geçirilen stiller listenize CBRS_FLYBY `CToolBar::Create`ekleyerek, fare imleci düğmeyi etkinleştirmeden araç çubuğunun üzerinden geçtiğinde bu iletileri güncelleştirebilirsiniz.
 
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilmek istiyorum
 
-- [MFC araç çubuğu uygulaması (araç çubuklarında genel bakış bilgileri)](../mfc/mfc-toolbar-implementation.md)
+- [MFC Araç Çubuğu Uygulaması (araç çubuklarına genel bakış bilgileri)](../mfc/mfc-toolbar-implementation.md)
 
 - [Yerleşen ve kayan araç çubukları](../mfc/docking-and-floating-toolbars.md)
 
