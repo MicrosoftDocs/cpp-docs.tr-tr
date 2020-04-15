@@ -1,5 +1,5 @@
 ---
-title: CCachedDataPathProperty Class
+title: CCachedDataPathProperty Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CCachedDataPathProperty
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CCachedDataPathProperty [MFC], CCachedDataPathProperty
 - CCachedDataPathProperty [MFC], m_Cache
 ms.assetid: 0d81356b-4fe5-43f6-aed2-2eb5a5485706
-ms.openlocfilehash: e7394250c93bcc718d50f2ea9b3522256df7c820
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ebab34433f23b119e3444b3eaa8b0ad6313555af
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206788"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81352362"
 ---
-# <a name="ccacheddatapathproperty-class"></a>CCachedDataPathProperty Class
+# <a name="ccacheddatapathproperty-class"></a>CCachedDataPathProperty Sınıfı
 
-Uygulayan bir OLE denetim, zaman uyumsuz olarak aktarılabilen ve bir bellek dosyasında önbelleğe özelliği.
+Bir bellek dosyasında eşsenkronize ve önbelleğe alınmış bir OLE denetim özelliği uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,53 +31,53 @@ class CCachedDataPathProperty : public CDataPathProperty
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CCachedDataPathProperty::CCachedDataPathProperty](#ccacheddatapathproperty)|Oluşturur bir `CCachedDataPathProperty` nesne.|
+|[CCachedDataPathProperty::CCachedDataPathProperty](#ccacheddatapathproperty)|Bir `CCachedDataPathProperty` nesne inşa eder.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CCachedDataPathProperty::m_Cache](#m_cache)|`CMemFile` verileri önbelleğe nesne içine.|
+|[CCachedDataPathÖzellik::m_Cache](#m_cache)|`CMemFile`verileri önbelleğe almak için nesne.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bellek dosya RAM yerine diskte depolanır ve hızlı bir geçici aktarımları için kullanışlıdır.
+Bellek dosyası diskte değil RAM'de depolanır ve hızlı geçici aktarımlar için yararlıdır.
 
-İle birlikte `CAysncMonikerFile` ve `CDataPathProperty`, `CCachedDataPathProperty` OLE denetimleri içinde zaman uyumsuz adların kullanılması için işlevsellik sağlar. İle `CCachedDataPathProperty` nesneler, verileri zaman uyumsuz olarak bir URL veya dosya kaynaktan aktarmak ve bir bellek dosyasında depolamak için `m_Cache` genel değişkeni. Tüm verileri, bellek dosyasında depolanır ve geçersiz kılmak için gerek yoktur [OnDataAvailable](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable) bildirimleri için izlemek ve yanıtlamak istemediğiniz sürece. Örneğin, bir büyük aktarıyorsanız. GIF dosyası ve daha fazla veri geldi ve bu kendisi yeniden çizmeniz gerekir denetiminiz bildirmek istiyorsanız geçersiz kılma `OnDataAvailable` bildirim yapmak.
+OLE `CAysncMonikerFile` `CDataPathProperty`kontrollerinde eşzamanlı monikers kullanımı için işlevsellik `CCachedDataPathProperty` sağlar. Nesnelerle, `CCachedDataPathProperty` verileri bir URL veya dosya kaynağından eşit bir şekilde aktarabilir ve ortak `m_Cache` değişken üzerinden bir bellek dosyasında depolayabilirsiniz. Tüm veriler bellek dosyasında depolanır ve bildirimleri izlemek ve yanıt vermek istemediğiniz sürece [OnDataAvailable'ı](../../mfc/reference/casyncmonikerfile-class.md#ondataavailable) geçersiz kılmaya gerek yoktur. Örneğin, büyük bir . GIF dosyası ve daha fazla veri geldi ve bildirim yapmak için `OnDataAvailable` geçersiz kılmak, kendini yeniden çizmek gerektiğini kontrol bildirmek istiyorum.
 
-Sınıf `CCachedDataPathProperty` türetilir `CDataPathProperty`.
+Sınıf `CCachedDataPathProperty` `CDataPathProperty`türetilmiştir.
 
-Zaman uyumsuz adlar ve ActiveX denetimleri, Internet uygulamalarında kullanma hakkında daha fazla bilgi için aşağıdaki konulara bakın:
+Internet uygulamalarında eşzamanlı monikers ve ActiveX denetimlerinin nasıl kullanılacağı hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
-- [Internet ilk adımlar: ActiveX denetimleri](../../mfc/activex-controls-on-the-internet.md)
+- [İnternet İlk Adımlar: ActiveX Denetimleri](../../mfc/activex-controls-on-the-internet.md)
 
-- [Internet ilk adımlar: Zaman uyumsuz adlar](../../mfc/asynchronous-monikers-on-the-internet.md)
+- [İnternet İlk Adımlar: Asynchronous Monikers](../../mfc/asynchronous-monikers-on-the-internet.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CFile](../../mfc/reference/cfile-class.md)
+[Cfile](../../mfc/reference/cfile-class.md)
 
 [COleStreamFile](../../mfc/reference/colestreamfile-class.md)
 
-[CMonikerFile](../../mfc/reference/cmonikerfile-class.md)
+[CMonikerDosya](../../mfc/reference/cmonikerfile-class.md)
 
-[CAsyncMonikerFile](../../mfc/reference/casyncmonikerfile-class.md)
+[CAsyncMonikerDosya](../../mfc/reference/casyncmonikerfile-class.md)
 
-[CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md)
+[Cdatapathproperty](../../mfc/reference/cdatapathproperty-class.md)
 
 `CCachedDataPathProperty`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxctl.h
+**Üstbilgi:** afxctl.h
 
-##  <a name="ccacheddatapathproperty"></a>  CCachedDataPathProperty::CCachedDataPathProperty
+## <a name="ccacheddatapathpropertyccacheddatapathproperty"></a><a name="ccacheddatapathproperty"></a>CCachedDataPathProperty::CCachedDataPathProperty
 
-Oluşturur bir `CCachedDataPathProperty` nesne.
+Bir `CCachedDataPathProperty` nesne inşa eder.
 
 ```
 CCachedDataPathProperty(COleControl* pControl = NULL);
@@ -89,19 +89,19 @@ CCachedDataPathProperty(
 
 ### <a name="parameters"></a>Parametreler
 
-*pControl*<br/>
-Şununla ilişkili olmasını ActiveX denetimi nesneye bir işaretçi `CCachedDataPathProperty` nesne.
+*pKontrol*<br/>
+ActiveX denetim nesnesine işaretçibu `CCachedDataPathProperty` nesneyle ilişkilendirilecek.
 
 *lpszPath*<br/>
-Mutlak veya göreli olabilir, yolun özelliği gerçek mutlak konumunu başvuran bir zaman uyumsuz bir bilinen ad oluşturmak için kullanılır. `CCachedDataPathProperty` URL değil dosya adlarını kullanır. İsterseniz bir `CCachedDataPathProperty` nesne için bir dosya, file:// yolunun önüne ekleyin.
+Mutlak veya göreceli olabilecek yol, özelliğin gerçek mutlak konumuna başvuran eşzamanlı bir takma sözcük oluşturmak için kullanılır. `CCachedDataPathProperty`URL'leri kullanır, dosya adlarını değil. Bir dosya `CCachedDataPathProperty` için bir nesne istiyorsanız, yola hazırlık file://.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`COleControl` Nesne tarafından işaret edilen *pControl* tarafından kullanılan [açık](../../mfc/reference/cdatapathproperty-class.md#open) ve türetilmiş sınıflar tarafından alınır. Varsa *pControl* null ile kullanılan denetimi `Open` ile ayarlanmalıdır [SetControl](../../mfc/reference/cdatapathproperty-class.md#setcontrol). Varsa *lpszPath* NULL ise yolunda geçirebilirsiniz `Open` veya ile ayarlayın [SetPath](../../mfc/reference/cdatapathproperty-class.md#setpath).
+`COleControl` *pControl* tarafından işaret edilen nesne [Açık](../../mfc/reference/cdatapathproperty-class.md#open) tarafından kullanılır ve türemiş sınıflar tarafından alınır. *pControl* NULL ise, kullanılan `Open` denetim [SetControl](../../mfc/reference/cdatapathproperty-class.md#setcontrol)ile ayarlanmalıdır. *lpszPath* NULL ise, yoldan geçebilir `Open` veya [SetPath](../../mfc/reference/cdatapathproperty-class.md#setpath)ile ayarlayabilirsiniz.
 
-##  <a name="m_cache"></a>  CCachedDataPathProperty::m_Cache
+## <a name="ccacheddatapathpropertym_cache"></a><a name="m_cache"></a>CCachedDataPathÖzellik::m_Cache
 
-Hangi veriler önbelleğe bellek dosyasının sınıf adını içerir.
+Verilerin önbelleğe aldığı bellek dosyasının sınıf adını içerir.
 
 ```
 CMemFile m_Cache;
@@ -109,7 +109,7 @@ CMemFile m_Cache;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bellek dosya RAM yerine diskte depolanır.
+Bellek dosyası diskte değil, RAM'de depolanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

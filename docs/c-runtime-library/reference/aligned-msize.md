@@ -1,8 +1,9 @@
 ---
 title: _aligned_msize
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _aligned_msize
+- _o__aligned_msize
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -26,16 +28,16 @@ helpviewer_keywords:
 - aligned_msize function
 - _aligned_msize function
 ms.assetid: 10995edc-2110-4212-9ca9-5e0220a464f4
-ms.openlocfilehash: 922224dc81858076770a36551df26c89940b3282
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 21ae07c90bbf9a729a212a97b7de3e0916f8e2c6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943914"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81350603"
 ---
 # <a name="_aligned_msize"></a>_aligned_msize
 
-Yığında ayrılan bellek bloğunun boyutunu döndürür.
+Yığında ayrılan bellek bloğu boyutunu döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,37 +52,39 @@ size_t _msize(
 ### <a name="parameters"></a>Parametreler
 
 *memblock*<br/>
-Bellek bloğunun işaretçisi.
+Bellek bloğuna işaretçi.
 
-*hizalar*<br/>
-2 ' nin tam sayı üssü olması gereken hizalama değeri.
+*Hizalama*<br/>
+2'lik bir karşımat güç olması gereken hizalama değeri.
 
-*konumu*<br/>
-Hizalamayı zorlamak için bellek ayırmaya olan fark.
+*Uzaklık*<br/>
+Hizalamazorlamak için bellek ayırma içine ofset.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Boyutu (bayt olarak) işaretsiz bir tamsayı olarak döndürür.
+Boyutu (bayt içinde) imzasız bir karşımsayı olarak verir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Aligned_msize** işlevi, [_aligned_malloc](aligned-malloc.md) veya [_aligned_realloc](aligned-realloc.md)çağrısıyla ayrılan bellek bloğunun boyutunu bayt cinsinden döndürür. *Hizalama* ve *Aralık* değerleri, bloğu ayrılmış işleve geçirilen değerlerle aynı olmalıdır.
+**_aligned_msize** işlevi, [_aligned_malloc](aligned-malloc.md) veya [_aligned_realloc](aligned-realloc.md)için bir çağrı tarafından ayrılan bellek bloğunun boyutunu baytolarak döndürür. *Hizalama* ve *mahsup* değerleri, bloğu ayıran işleve geçirilen değerlerle aynı olmalıdır.
 
-Uygulama, C çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlandığında, **_aligned_msize** , [_aligned_msize_dbg](aligned-msize-dbg.md)olarak çözümlenir. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
+Uygulama C çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlantılı olduğunda, **_aligned_msize** [_aligned_msize_dbg.](aligned-msize-dbg.md) Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için [CRT Hata Ayıklama Yığını'na](/visualstudio/debugger/crt-debug-heap-details)bakın.
 
-Bu işlev, parametresini doğrular. *Memblock* null bir işaretçisiyse veya *Hizalama* 2 ' nin üssü değilse, **_msıze** [parametresi doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Hata işlenirse, işlev **errno** ' ı **EINVAL** olarak ayarlar ve-1 döndürür.
+Bu işlev parametresini doğrular. *Memblock* null işaretçisi ise veya *hizalama* 2'nin bir gücü değilse, **_msize** [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre işleyicisini çağırır. Hata işlenirse, işlev **errno'yu** **EINVAL'e** ayarlar ve -1 döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_msize**|\<malloc. h >|
+|**_msize**|\<malloc.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="libraries"></a>Kitaplıklar
 
-[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

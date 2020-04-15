@@ -1,5 +1,5 @@
 ---
-title: COM eşlemesi genel işlevleri
+title: COM Eşlemesi Genel İşlevleri
 ms.date: 11/04/2016
 f1_keywords:
 - atlbase/ATL::AtlInternalQueryInterface
@@ -7,27 +7,27 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM map global functions
 ms.assetid: b9612d30-eb23-46ef-8093-d56f237d3cf1
-ms.openlocfilehash: 75d081674fa4b63e66f1296834d3de305665ab9a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c4ce7c7a68c0744ad65ef4914088fa12d3340628
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258422"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81326691"
 ---
-# <a name="com-map-global-functions"></a>COM eşlemesi genel işlevleri
+# <a name="com-map-global-functions"></a>COM Eşlemesi Genel İşlevleri
 
-Bu işlevler için COM eşleme desteği `IUnknown` uygulamaları.
+Bu işlevler COM `IUnknown` Map uygulamaları için destek sağlar.
 
 |||
 |-|-|
-|[AtlInternalQueryInterface](#atlinternalqueryinterface)|Devreder `IUnknown` toplanmayan bir nesne.|
-|[InlineIsEqualIUnknown](#inlineisequaliunknown)|Arabirimleri karşı karşılaştırma verimli kod oluşturur `IUnknown`.|
+|[AtlInternalQueryInterface](#atlinternalqueryinterface)|Birbirlemeyen `IUnknown` bir nesnenin temsilcileri.|
+|[InlineIsEqualIUnknown](#inlineisequaliunknown)|Arayüzleri `IUnknown`' nle karşılaştırmak için verimli kod oluşturur.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase.h
 
-##  <a name="atlinternalqueryinterface"></a>  AtlInternalQueryInterface
+## <a name="atlinternalqueryinterface"></a><a name="atlinternalqueryinterface"></a>AtlInternalQueryInterface
 
 İstenen arabirim için bir işaretçi alır.
 
@@ -41,17 +41,17 @@ HRESULT AtlInternalQueryInterface(
 
 ### <a name="parameters"></a>Parametreler
 
-*pThis*<br/>
-[in] Açık arabirimler COM haritasını içeren nesneye bir işaretçi `QueryInterface`.
+*pBu*<br/>
+[içinde] Açıkta kalan arabirimlerin COM eşlemi içeren `QueryInterface`nesneye bir işaretçi.
 
 *pEntries*<br/>
-[in] Bir dizi `_ATL_INTMAP_ENTRY` kullanılabilir arabirim haritasını erişim yapılar.
+[içinde] Kullanılabilir arabirimlerin haritasına erişen bir dizi `_ATL_INTMAP_ENTRY` yapı.
 
-*IID*<br/>
-[in] İstenen arabiriminin GUID'si.
+*ııd*<br/>
+[içinde] İstenmekte olan arabirimin GUID'i.
 
-*ppvObject*<br/>
-[out] Belirtilen arabirim işaretçisini bir işaretçi *IID*, veya arabirim bulunamazsa NULL.
+*ppvNesne*<br/>
+[çıkış] Arabirim bulunamazsa *iid*veya NULL'da belirtilen arabirim işaretçisine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -59,15 +59,15 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AtlInternalQueryInterface` yalnızca COM eşleme tablosunda arabirimleri işler. Nesne toplanırsa, `AtlInternalQueryInterface` için dış bilinmeyen temsilci değil. COM eşlemesi tablosuna makro arabirimleri girebilirsiniz [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) veya türevleri biri.
+`AtlInternalQueryInterface`yalnızca COM harita tablosundaki arabirimleri işler. Nesneniz biraraya geliyorsa, `AtlInternalQueryInterface` dış bilinmeyene temsilci vermez. Makro [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) veya türevlerinden biriyle COM harita tablosuna arayüzler girebilirsiniz.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#94](../../atl/codesnippet/cpp/com-map-global-functions_1.cpp)]
 
-##  <a name="inlineisequaliunknown"></a>  InlineIsEqualIUnknown
+## <a name="inlineisequaliunknown"></a><a name="inlineisequaliunknown"></a>InlineIsEqualIUnknown
 
-Sınama özel durum için bu işlevi çağırın `IUnknown`.
+Bu işlevi çağırın, için test `IUnknown`özel durumda.
 
 ```
 BOOL InlineIsEqualUnknown(REFGUID rguid1);
@@ -76,7 +76,7 @@ BOOL InlineIsEqualUnknown(REFGUID rguid1);
 ### <a name="parameters"></a>Parametreler
 
 *rguid1*<br/>
-[in] Karşılaştırma yapılacak GUID `IID_IUnknown`.
+[içinde] Guid ile `IID_IUnknown`karşılaştırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

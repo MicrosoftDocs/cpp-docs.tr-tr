@@ -1,5 +1,5 @@
 ---
-title: Centerpolatorbase sınıfı
+title: CInterpolatorBase Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CInterpolatorBase
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - CInterpolatorBase [MFC], SetDuration
 - CInterpolatorBase [MFC], SetInitialValueAndVelocity
 ms.assetid: bbc3dce7-8398-47f9-b97e-e4fd2d737232
-ms.openlocfilehash: d1fc675b1014ab9a099e8310b52b7458f2bff65f
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: e5294aabc42301e2f874d5b8328d648f4deeb3c9
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916211"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372363"
 ---
-# <a name="cinterpolatorbase-class"></a>Centerpolatorbase sınıfı
+# <a name="cinterpolatorbase-class"></a>CInterpolatorBase Sınıfı
 
-Animasyon değişkeninin yeni bir değerini hesaplamak zorunda olduğunda animasyon API 'SI tarafından çağrılan bir geri çağırma uygular.
+Animasyon değişkeninin yeni bir değerini hesaplaması gerektiğinde Animasyon API'sı tarafından çağrılan bir geri arama uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,27 +47,27 @@ class CInterpolatorBase : public CUIAnimationInterpolatorBase<CInterpolatorBase>
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Centerpolatorbase:: Centerpolatorbase](#cinterpolatorbase)|`CInterpolatorBase` Nesnesini oluşturur.|
+|[CInterpolatorBase::CInterpolatorBase](#cinterpolatorbase)|Nesneyi `CInterpolatorBase` inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Centerpolatorbase:: CreateInstance](#createinstance)|Bir örneği `CInterpolatorBase` oluşturur ve olayları işlemek için özel bir ara değer için bir işaretçi depolar.|
-|[Centerpolatorbase:: GetDependencies](#getdependencies)|Enterpolatörü 'nin bağımlılıklarını alır. (Geçersiz `CUIAnimationInterpolatorBase::GetDependencies`kılmalar.)|
-|[Centerpolatorbase:: GetDuration](#getduration)|Enterpolatör 'ın süresini alır. (Geçersiz `CUIAnimationInterpolatorBase::GetDuration`kılmalar.)|
-|[Centerpolatorbase:: GetFinalValue](#getfinalvalue)|Enterpolatörü 'nin müşteri adaylarına son değeri alır. (Geçersiz `CUIAnimationInterpolatorBase::GetFinalValue`kılmalar.)|
-|[Centerpolatorbase:: Enterpolatevalue](#interpolatevalue)|Verilen bir uzaklığında değeri enterpolasyonlar (geçersiz kılmalar `CUIAnimationInterpolatorBase::InterpolateValue`.)|
-|[Centerpolatorbase:: Enterpolatevelocity](#interpolatevelocity)|Verilen bir uzaklığa göre hızı enterpolasyonlar (geçersiz `CUIAnimationInterpolatorBase::InterpolateVelocity`kılmalar.)|
-|[Centerpolatorbase:: Setcustominterpolatör](#setcustominterpolator)|Olayları işlemek için özel bir ara değer denetimi için bir işaretçi depolar.|
-|[Centerpolatorbase:: SetDuration](#setduration)|Enterpolatör 'ın süresini (geçersiz kılmalar `CUIAnimationInterpolatorBase::SetDuration`) ayarlar.|
-|[Centerpolatorbase:: SetInitialValueAndVelocity](#setinitialvalueandvelocity)|Enterpolatör 'un ilk değerini ve hızını ayarlar. (Geçersiz `CUIAnimationInterpolatorBase::SetInitialValueAndVelocity`kılmalar.)|
+|[CInterpolatorBase::CreateInstance](#createinstance)|Bir örneğini `CInterpolatorBase` oluşturur ve olayları işleyecek olan özel enterpolatöriçin bir işaretçi depolar.|
+|[CInterpolatorBase::GetDependencies](#getdependencies)|Enterpolatörün bağımlılıklarını alır. (Geçersiz `CUIAnimationInterpolatorBase::GetDependencies`kılar .)|
+|[CInterpolatorBase::GetDuration](#getduration)|Enterpolatörün süresini alır. (Geçersiz `CUIAnimationInterpolatorBase::GetDuration`kılar .)|
+|[CInterpolatorBase::GetFinalValue](#getfinalvalue)|Enterpolatörün yol açtığı son değeri alır. (Geçersiz `CUIAnimationInterpolatorBase::GetFinalValue`kılar .)|
+|[CInterpolatorBase::InterpolateValue](#interpolatevalue)|Değeri belirli bir ofsetteki enterpolasyonlar (Geçersiz Kılar `CUIAnimationInterpolatorBase::InterpolateValue`.)|
+|[CInterpolatorBase::InterpolateVelocity](#interpolatevelocity)|Hızı belirli bir ofsette interpolates (Overrides `CUIAnimationInterpolatorBase::InterpolateVelocity`.)|
+|[CInterpolatorBase::SetCustomInterpolator](#setcustominterpolator)|Olayları işleyen özel enterpolatör için bir işaretçi depolar.|
+|[CInterpolatorBase::SetDuration](#setduration)|Enterpolatörün süresini ayarlar (Geçersiz `CUIAnimationInterpolatorBase::SetDuration`kılar.)|
+|[CInterpolatorBase::SetInitialValueAndVelocity](#setinitialvalueandvelocity)|Enterpolatörün başlangıç değerini ve hızını ayarlar. (Geçersiz `CUIAnimationInterpolatorBase::SetInitialValueAndVelocity`kılar .)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işleyici oluşturulur ve animasyon başlatma işleminin `IUIAnimationTransitionFactory::CreateTransition` (tarafından `CCustomTransition` `CAnimationController::AnimateGroup`başlatılan) bir parçası olarak bir nesne oluşturulduğunda öğesine geçirilir. Genellikle, bu sınıfı doğrudan kullanmanız gerekmez, işaretçi `CCustomInterpolator` `CCustomTransition`oluşturucuya geçilen tüm olayları yalnızca türetilmiş bir sınıfa döner.
+Bu işleyici oluşturulur ve `IUIAnimationTransitionFactory::CreateTransition` bir `CCustomTransition` nesne animasyon başlatma işleminin bir parçası olarak `CAnimationController::AnimateGroup`oluşturulur (tarafından başlatılan) geçirilir. Genellikle doğrudan bu sınıfı kullanmak gerekmez, sadece işaretçi sisizin `CCustomInterpolator`oluşturucuya geçirilen bir -türetilmiş sınıf, tüm olayları `CCustomTransition`bozan.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -79,19 +79,19 @@ Bu işleyici oluşturulur ve animasyon başlatma işleminin `IUIAnimationTransit
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller. h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="cinterpolatorbase"></a>Centerpolatorbase:: Centerpolatorbase
+## <a name="cinterpolatorbasecinterpolatorbase"></a><a name="cinterpolatorbase"></a>CInterpolatorBase::CInterpolatorBase
 
-Cınterlatorbase nesnesini oluşturur.
+CInterpolatorBase nesnesini oluşturuyor.
 
 ```
 CInterpolatorBase();
 ```
 
-##  <a name="createinstance"></a>Centerpolatorbase:: CreateInstance
+## <a name="cinterpolatorbasecreateinstance"></a><a name="createinstance"></a>CInterpolatorBase::CreateInstance
 
-Cınterlatorbase 'in bir örneğini oluşturur ve olayları işlemek için özel bir ara değer atma için bir işaretçi depolar.
+CInterpolatorBase bir örnek oluşturur ve olayları işleme olacak özel interpolator, bir işaretçi depolar.
 
 ```
 static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
@@ -101,17 +101,17 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ince merdiven*<br/>
-Özel enterpolatörü işaretçisi.
+*pInterpolator*<br/>
+Özel enterpolatör için bir işaretçi.
 
 *ppHandler*<br/>
-Çıktıların. İşlev döndürüldüğünde CInterpolatorBase örneğine yönelik bir işaretçi içerir.
+Çıkış. İşlev döndüğünde CInterpolatorBase örneğine işaretçi içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-##  <a name="getdependencies"></a>Centerpolatorbase:: GetDependencies
+## <a name="cinterpolatorbasegetdependencies"></a><a name="getdependencies"></a>CInterpolatorBase::GetDependencies
 
-Enterpolatörü 'nin bağımlılıklarını alır.
+Enterpolatörün bağımlılıklarını alır.
 
 ```
 IFACEMETHOD(GetDependencies)(
@@ -122,22 +122,22 @@ IFACEMETHOD(GetDependencies)(
 
 ### <a name="parameters"></a>Parametreler
 
-*ınitialvaluedependencies*<br/>
-Çıktıların. SetInitialValueAndVelocity öğesine geçirilen ilk değere bağlı olan ara değer ayırmanın yönleri.
+*ilkDeğer Bağımlılıkları*<br/>
+Çıkış. Enterpolatörün setinitialvalueAndVelocity geçirilen ilk değere bağlı yönleri.
 
-*initialVelocityDependencies*<br/>
-Çıktıların. SetInitialValueAndVelocity öğesine geçirilen ilk hıza bağlı olan ara değer ayırmanın yönleri.
+*ilkVelocityDependencies*<br/>
+Çıkış. İlk hıza bağlı olarak interpolatörün yönleri SetInitialValueAndVelocity'ye geçer.
 
-*durationDependencies*<br/>
-Çıktıların. SetDuration 'a geçirilen süreye bağlı olan ara değer ayırmanın yönleri.
+*süreBağımlılıklar*<br/>
+Çıkış. İnterpolatörün SetDuration'e geçirilen süreye bağlı yönleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Ccustominterpolatör ayarlanmamışsa, veya özel uygulama GetDependencies yönteminden FALSE değerini döndürürse E_FAıL 'yi döndürür.
+Yöntem başarılı olursa, S_OK döndürür. CCustomInterpolator ayarlanmazsa veya özel uygulama GetDependencies yönteminden FALSE döndürür saE_FAIL döndürür.
 
-##  <a name="getduration"></a>Centerpolatorbase:: GetDuration
+## <a name="cinterpolatorbasegetduration"></a><a name="getduration"></a>CInterpolatorBase::GetDuration
 
-Enterpolatör 'ın süresini alır.
+Enterpolatörün süresini alır.
 
 ```
 IFACEMETHOD(GetDuration)(__out UI_ANIMATION_SECONDS* duration);
@@ -145,16 +145,16 @@ IFACEMETHOD(GetDuration)(__out UI_ANIMATION_SECONDS* duration);
 
 ### <a name="parameters"></a>Parametreler
 
-*Süresi*<br/>
-Çıktıların. Geçişin süresi (saniye cinsinden).
+*Süre*<br/>
+Çıkış. Geçiş süresi, saniye cinsinden.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Ccustominterpolatör ayarlanmamışsa veya özel uygulama GetDuration yönteminden FALSE değerini döndürürse E_FAıL 'yi döndürür.
+Yöntem başarılı olursa, S_OK döndürür. CCustomInterpolator ayarlanmazsa veya özel uygulama GetDuration yönteminden FALSE döndürürse E_FAIL döndürür.
 
-##  <a name="getfinalvalue"></a>Centerpolatorbase:: GetFinalValue
+## <a name="cinterpolatorbasegetfinalvalue"></a><a name="getfinalvalue"></a>CInterpolatorBase::GetFinalValue
 
-Enterpolatörü 'nin müşteri adaylarına son değeri alır.
+Enterpolatörün yol açtığı son değeri alır.
 
 ```
 IFACEMETHOD(GetFinalValue)(__out DOUBLE* value);
@@ -162,16 +162,16 @@ IFACEMETHOD(GetFinalValue)(__out DOUBLE* value);
 
 ### <a name="parameters"></a>Parametreler
 
-*value*<br/>
-Çıktıların. Geçişin sonundaki bir değişkenin son değeri.
+*Değer*<br/>
+Çıkış. Geçiş sonundaki değişkenin son değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Ccustominterpolatör ayarlanmamışsa, veya özel uygulama GetFinalValue yönteminden FALSE değerini döndürürse E_FAıL 'yi döndürür.
+Yöntem başarılı olursa, S_OK döndürür. CCustomInterpolator ayarlanmazsa veya özel uygulama GetFinalValue yönteminden FALSE döndürürse E_FAIL döndürür.
 
-##  <a name="interpolatevalue"></a>Centerpolatorbase:: Enterpolatevalue
+## <a name="cinterpolatorbaseinterpolatevalue"></a><a name="interpolatevalue"></a>CInterpolatorBase::InterpolateValue
 
-Verilen bir uzaklığında değeri enterpolasyonlar
+Değeri belirli bir ofsette interpolates
 
 ```
 IFACEMETHOD(InterpolateValue)(
@@ -181,19 +181,19 @@ IFACEMETHOD(InterpolateValue)(
 
 ### <a name="parameters"></a>Parametreler
 
-*konumu*<br/>
-Geçişin başlangıcından itibaren fark. Konum her zaman sıfıra eşit veya daha büyük ve geçiş süresinden küçüktür. Bu yöntem, geçişin süresi sıfırsa çağrılmaz.
+*Uzaklık*<br/>
+Geçişin başlangıcından itibaren mahsup. Ofset her zaman sıfırdan büyük veya eşit ve geçiş süresinden daha azdır. Geçiş süresi sıfır ise bu yöntem çağrılmaz.
 
-*value*<br/>
-Çıktıların. Enterpolasyonlu değer.
+*Değer*<br/>
+Çıkış. İnterpolated değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Ccustominterpolatör ayarlanmamışsa veya özel uygulama, Enterpolatevalue yönteminden yanlış döndürürse, E_FAıL değerini döndürür.
+Yöntem başarılı olursa, S_OK döndürür. CCustomInterpolator ayarlanmazsa veya özel uygulama InterpolateValue yönteminden FALSE döndürürse E_FAIL döndürür.
 
-##  <a name="interpolatevelocity"></a>Centerpolatorbase:: Enterpolatevelocity
+## <a name="cinterpolatorbaseinterpolatevelocity"></a><a name="interpolatevelocity"></a>CInterpolatorBase::InterpolateVelocity
 
-Verilen bir uzaklığa göre hızı enterpolasyonlar
+Hızı belirli bir ofsette interpolates
 
 ```
 IFACEMETHOD(InterpolateVelocity)(
@@ -203,19 +203,19 @@ IFACEMETHOD(InterpolateVelocity)(
 
 ### <a name="parameters"></a>Parametreler
 
-*konumu*<br/>
-Geçişin başlangıcından itibaren fark. Konum her zaman sıfıra eşit veya daha büyük ve geçişin süresinden küçük ya da buna eşit. Bu yöntem, geçişin süresi sıfırsa çağrılmaz.
+*Uzaklık*<br/>
+Geçişin başlangıcından itibaren mahsup. Ofset her zaman sıfırdan büyük veya eşit ve geçiş süresinden daha az veya eşittir. Geçiş süresi sıfır ise bu yöntem çağrılmaz.
 
-*mı*<br/>
-Çıktıların. Uzaklığında değişkenin hızı.
+*Hız*<br/>
+Çıkış. Dengedeki değişkenin hızı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Ccustominterpolatör ayarlanmamışsa veya özel uygulama, Enterpolatevelocity yönteminden yanlış döndürürse, E_FAıL değerini döndürür.
+Yöntem başarılı olursa, S_OK döndürür. CCustomInterpolator ayarlanmazveya özel uygulama InterpolateVelocity yönteminden FALSE döndürür E_FAIL döndürür.
 
-##  <a name="setcustominterpolator"></a>Centerpolatorbase:: Setcustominterpolatör
+## <a name="cinterpolatorbasesetcustominterpolator"></a><a name="setcustominterpolator"></a>CInterpolatorBase::SetCustomInterpolator
 
-Olayları işlemek için özel bir ara değer denetimi için bir işaretçi depolar.
+Olayları işleyen özel enterpolatör için bir işaretçi depolar.
 
 ```
 void SetCustomInterpolator(CCustomInterpolator* pInterpolator);
@@ -223,12 +223,12 @@ void SetCustomInterpolator(CCustomInterpolator* pInterpolator);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ince merdiven*<br/>
-Özel enterpolatörü işaretçisi.
+*pInterpolator*<br/>
+Özel enterpolatör için bir işaretçi.
 
-##  <a name="setduration"></a>Centerpolatorbase:: SetDuration
+## <a name="cinterpolatorbasesetduration"></a><a name="setduration"></a>CInterpolatorBase::SetDuration
 
-Enterpolatör 'ın süresini ayarlar
+Enterpolatörün süresini ayarlar
 
 ```
 IFACEMETHOD(SetDuration)(__in UI_ANIMATION_SECONDS duration);
@@ -236,16 +236,16 @@ IFACEMETHOD(SetDuration)(__in UI_ANIMATION_SECONDS duration);
 
 ### <a name="parameters"></a>Parametreler
 
-*Süresi*<br/>
-Geçişin süresi.
+*Süre*<br/>
+Geçiş süresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Ccustominterpolatör ayarlanmamışsa veya özel uygulama SetDuration yönteminden FALSE değerini döndürürse E_FAıL 'yi döndürür.
+Yöntem başarılı olursa, S_OK döndürür. CCustomInterpolator ayarlanmazsa veya özel uygulama SetDuration yönteminden FALSE döndürürse E_FAIL döndürür.
 
-##  <a name="setinitialvalueandvelocity"></a>Centerpolatorbase:: SetInitialValueAndVelocity
+## <a name="cinterpolatorbasesetinitialvalueandvelocity"></a><a name="setinitialvalueandvelocity"></a>CInterpolatorBase::SetInitialValueAndVelocity
 
-Enterpolatör 'un ilk değerini ve hızını ayarlar.
+Enterpolatörün başlangıç değerini ve hızını ayarlar.
 
 ```
 IFACEMETHOD(SetInitialValueAndVelocity)(
@@ -255,15 +255,15 @@ IFACEMETHOD(SetInitialValueAndVelocity)(
 
 ### <a name="parameters"></a>Parametreler
 
-*InitialValue*<br/>
-Geçişin başlangıcında değişkenin değeri.
+*ınitialvalue*<br/>
+Geçişin başındaki değişkenin değeri.
 
-*InitialVelocity*<br/>
-Geçişin başlangıcında değişkenin hızı.
+*ilkHız*<br/>
+Geçişin başlangıcındaki değişkenin hızı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa S_OK döndürür. Ccustominterpolatör ayarlanmamışsa veya özel uygulama SetInitialValueAndVelocity yönteminden FALSE döndürürse, E_FAıL değerini döndürür.
+Yöntem başarılı olursa, S_OK döndürür. CCustomInterpolator ayarlanmazsa veya özel uygulama SetInitialValueAndVelocity yönteminden FALSE döndürür saE_FAIL döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

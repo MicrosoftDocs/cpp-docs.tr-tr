@@ -18,29 +18,29 @@ helpviewer_keywords:
 - activation [MFC], embedded OLE items
 - OLE activation [MFC]
 ms.assetid: ed8357d9-e487-4aaa-aa6b-2edc4de25dfa
-ms.openlocfilehash: a6009e5209ce71c6eed28faff2f55792a64de408
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9f3fba71002a19a0be0e3429a0faeeefb7c65197
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392940"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81354178"
 ---
 # <a name="activation-c"></a>Etkinleştirme (C++)
 
-Bu makalede visual OLE öğelerini düzenleme etkinleştirme rolünü açıklar. Bir kullanıcı bir OLE öğesini bir kapsayıcı belgeye gömülü sonra kullanılması gerekebilir. Bunu yapmak için bu öğeyi etkinleştiren öğesi kullanıcı çift tıkladığında. Etkinleştirme için en sık etkinlik düzenliyor. Düzenleme için etkinleştirildiğinde birçok geçerli OLE öğeleri, bu öğeyi oluşturan sunucu uygulamaya ait yansıtacak şekilde değiştirmek için geçerli çerçeve penceresindeki menüleri ve araç çubuklarını neden. Olarak yerinde etkinleştirme, bilinen bu davranış, bileşik bir belgeye ekli herhangi bir öğeye kapsayıcı belge penceresi çıkmadan düzenlemesine olanak tanır.
+Bu makalede, OLE öğelerinin görsel düzenleme etkinleştirme rolü açıklanmaktadır. Bir kullanıcı bir ole öğesini kapsayıcı belgesine katışarttıktan sonra kullanılması gerekebilir. Bunu yapmak için, kullanıcı öğeyi çift tıklatıyor ve bu öğeyi etkinleştirir. Etkinleştirme için en sık karşılaşılan etkinlik düzenlemedir. Düzenleme için etkinleştirildiğinde, geçerli çerçeve penceresindeki menülerin ve araç çubuklarının öğeyi oluşturan sunucu uygulamasına ait olanları yansıtacak şekilde değişmesine neden olan birçok geçerli OLE öğesi. Yerinde etkinleştirme olarak bilinen bu davranış, kullanıcının kapsayıcı belgenin penceresinden çıkmadan bileşik belgedeki katışmış öğeyi yeniden düzenledirmesine olanak tanır.
 
-Katıştırılmış OLE öğeleri ayrı bir pencerede düzenlemek mümkündür. Bu, kapsayıcı veya bir sunucu uygulaması yerinde etkinleştirme desteklemiyorsa gerçekleşir. Bu durumda, kullanıcı gömülü bir öğe çift tıkladığında, sunucu uygulaması ayrı bir pencerede başlatılır ve kendi belge olarak gömülü bir öğe görünür. Kullanıcı Bu pencere öğesinde düzenler. Düzenleme tamamlandığında, kullanıcının sunucu uygulaması kapatır ve kapsayıcılı bir uygulama döndürür.
+Katıştırılmış OLE öğelerini ayrı bir pencerede de döşeyen mümkündür. Kapsayıcı veya sunucu uygulaması yerinde etkinleştirme desteklemiyorsa bu durum gerçekleşir. Bu durumda, kullanıcı katıştırılmış bir öğeyi çift tıklattığında, sunucu uygulaması ayrı bir pencerede başlatılır ve közlenmiş öğe kendi belgesi olarak görünür. Kullanıcı bu penceredeki öğeyi yeniden dikir. Düzenleme tamamlandığında, kullanıcı sunucu uygulamasını kapatır ve kapsayıcı uygulamasına geri döner.
 
-Alternatif olarak, kullanıcı "düzenleme Aç" ile seçebilir  **\<Nesne > açık** komutunu **Düzenle** menüsü. Bu nesne ayrı bir pencerede açar.
+Alternatif olarak, kullanıcı **Düzenle** menüsündeki aç komutu ** \<> nesneyle** "düzenlemeyi aç"ı seçebilir. Bu, nesneyi ayrı bir pencerede açar.
 
 > [!NOTE]
->  Standart davranışı OLE 1 sürümünde olan ayrı bir pencerede katıştırılmış öğeleri düzenleme ve bazı OLE uygulamaları düzenleme yalnızca bu stil destekleyebilir.
+> Katıştırılmış öğeleri ayrı bir pencerede düzenlemek OLE'nin sürüm 1'inde standart davranıştı ve bazı OLE uygulamaları yalnızca bu düzenleme stilini destekleyebilir.
 
-Yerinde etkinleştirme belge oluşturma için belge merkezli bir yaklaşım yükseltir. Kullanıcı, tek bir varlık olarak üzerinde çalışan uygulamalar arasında geçiş olmadan bir bileşik belge davranabilirsiniz. Ancak, yalnızca bağlantılı öğeler için değil, katıştırılmış öğeler için yerinde etkinleştirme kullanılır: ayrı bir pencerede düzenlenmelidir. Bağlantılı bir öğe farklı bir yerde depolandığından budur. Düzenleme bağlantılı öğe verilerin depolandığı veri, diğer bir deyişle, gerçek bağlamında gerçekleşir. Bağlantılı bir öğe ayrı bir pencerede düzenleme, verileri başka bir belgeye ait kullanıcı anımsatır.
+Yerinde etkinleştirme, belge oluşturma için belge merkezli bir yaklaşımı teşvik eder. Kullanıcı, bileşik bir belgeyi uygulamalar arasında geçiş yapmadan üzerinde çalışarak tek bir varlık olarak işleyebilir. Ancak, yerinde etkinleştirme yalnızca bağlı öğeler için değil, gömülü öğeler için kullanılır: bunlar ayrı bir pencerede düzenlenmelidir. Bunun nedeni, bağlantılı bir öğenin aslında farklı bir yerde depolanmış olmasıdır. Bağlı bir öğenin düzenlenmesi, verilerin gerçek bağlamı içinde, yani verilerin depolandığı yer içinde gerçekleşir. Bağlantılı bir öğeyi ayrı bir pencerede düzenlemek, kullanıcıya verilerin başka bir belgeye ait olduğunu hatırladır.
 
-MFC, iç içe geçmiş yerinde etkinleştirme desteklemez. Kapsayıcı/sunucu uygulaması'oluşturma ve kapsayıcı/sunucu başka bir kapsayıcı ve yerinde etkinleştirilmiş eklenir, bunu yerinde olamaz katıştırılmış nesneleri etkinleştirin.
+MFC iç içe yer etkinleştirme desteklemez. Bir kapsayıcı/sunucu uygulaması oluşturursanız ve bu kapsayıcı/sunucu başka bir kapsayıcıya gömülüyse ve yerinde etkinleştirilmişse, içine katıştırılmış nesneleri yerinde etkinleştiremez.
 
-Kullanıcı tıkladığında gömülü bir öğe için ne öğesi için tanımlanan fiilleri bağlıdır. Bilgi için [etkinleştirme: Fiiller](../mfc/activation-verbs.md).
+Kullanıcı çift tıklatıldığında katıştırılmış bir öğeye ne olur, öğe için tanımlanan fiillere bağlıdır. Bilgi için, [bkz. Etkinleştirme: Fiiller](../mfc/activation-verbs.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

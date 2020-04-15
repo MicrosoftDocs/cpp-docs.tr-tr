@@ -24,70 +24,70 @@ helpviewer_keywords:
 - CRT, security enhancements
 - parameters [C++], validation
 ms.assetid: d9568b08-9514-49cd-b3dc-2454ded195a3
-ms.openlocfilehash: cf8bee39d6ec0f41049586d3861dcf450b7b2aaa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1b42c766a7b75cb3f4d5c20d715968905d529d04
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62268791"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81361002"
 ---
 # <a name="security-features-in-the-crt"></a>CRT'deki Güvenlik Özellikleri
 
-Eski pek çok CRT işlevi daha yeni ve daha güvenli sürümleri vardır. Güvenli işlevi varsa, eski ve daha az güvenli sürümü kullanım dışı olarak işaretlenmiş ve yeni sürümü, `_s` ("güvenli") soneki.
+Birçok eski CRT işlevi daha yeni, daha güvenli sürümlere sahiptir. Güvenli bir işlev varsa, eski, daha az güvenli sürüm amortismana lı `_s` olarak işaretlenir ve yeni sürümde ("güvenli") sonek bulunur.
 
-Bu bağlamda "kullanım dışı" yalnızca işlevin kullanımı önerilmez anlamına gelir; işlev CRT kaldırılması için zamanlandı göstermez.
+Bu bağlamda, "amortismana" sadece bir işlevin kullanımı tavsiye edilmez anlamına gelir; işlevinin CRT'den kaldırılacak zamanlandığını göstermez.
 
-Güvenli işlevler değil engellemek veya güvenlik hataları düzeltmek; Bunun yerine, ortaya çıkan hataları yakalayın. Bunlar hata koşulları için ek denetimler gerçekleştirmek ve bir hata olması durumunda, bunlar bir hata işleyicisini çağırır (bkz [Parameter Validation](../c-runtime-library/parameter-validation.md)).
+Güvenli işlevler güvenlik hatalarını önlemez veya düzeltmez; bunun yerine, oluştuklarında hataları yakalarlar. Hata koşulları için ek denetimler gerçekleştirirler ve bir hata durumunda bir hata işleyicisi çağırırlar [(bkz. Parametre Doğrulama).](../c-runtime-library/parameter-validation.md)
 
-Örneğin, `strcpy` işleve sahip kopyalama dize, hedef arabelleği için çok büyük olup olmadığını belirten bir yolu yoktur. Ancak, güvenli çözümlemesiyle `strcpy_s`, parametre olarak arabellek boyutunu alır, böylece bir arabellek taşması durumunda belirleyebilir meydana gelir. Kullanırsanız `strcpy_s` yapmanıza; bir hata on karakter arabelleğine, on karakter kopyalamak için `strcpy_s` , hata düzeltemezsiniz ancak bu, hata algılama ve geçersiz parametre işleyicisini çağırarak bildirin.
+Örneğin, işlevin, `strcpy` kopyaladığının dize hedef arabelleği için çok büyük olup olmadığını söylemenin bir yolu yoktur. Ancak, güvenli muadili, `strcpy_s`arabellek boyutunu bir parametre olarak alır, böylece bir arabellek taşması oluşacak olup olmadığını belirleyebilirsiniz. On bir `strcpy_s` karakteri on karakterli bir arabelleğe kopyalamak için kullanırsanız, bu sizin tarafınızdan bir hatadır; `strcpy_s` hatanızı düzeltemez, ancak hatanızı algılayabilir ve geçersiz parametre işleyicisini çağırarak sizi bilgilendirebilir.
 
-## <a name="eliminating-deprecation-warnings"></a>Kullanımdan kaldırma uyarıları ortadan kaldırır.
+## <a name="eliminating-deprecation-warnings"></a>Amortisman uyarılarını ortadan kaldırma
 
-Eski ve daha az güvenli işlevler için kullanımdan kaldırılma uyarıları ortadan kaldırmak için birkaç yolu vardır. Basit yalnızca tanımlamaktır `_CRT_SECURE_NO_WARNINGS` veya [uyarı](../preprocessor/warning.md) pragması. Ya da kullanımdan kaldırma uyarıları devre dışı bırakır, ancak Elbette uyarıları neden olan güvenlik sorunları mevcut. Uyarıları etkin ve yeni CRT güvenlik özelliklerinden yararlanmak kullanımdan kaldırma bırakın kadar iyidir.
+Eski, daha az güvenli işlevler için amortisman uyarılarını ortadan kaldırmanın çeşitli yolları vardır. En basiti, `_CRT_SECURE_NO_WARNINGS` [uyarı](../preprocessor/warning.md) pragmasını tanımlamak veya kullanmaktır. Ya amortisman uyarıları devre dışı, ama tabii ki uyarılar neden güvenlik sorunları hala var. Amortisman uyarılarını etkin bırakmak ve yeni CRT güvenlik özelliklerinden yararlanmak çok daha iyidir.
 
-C++'da, bunu yapmanın en kolay yolu kullanmaktır [güvenli şablon aşırı yüklemeleri](../c-runtime-library/secure-template-overloads.md), çoğu durumda, ortadan kullanımdan kaldırma uyarıları kullanım dışı işlev çağrıları bu işlevlerin güvenli sürümleri yeni çağrıları ile değiştirerek. Örneğin, bu kullanım çağrı düşünün `strcpy`:
+C++'da bunu yapmanın en kolay yolu, çoğu durumda bu işlevlerin yeni güvenli sürümlerine yapılan çağrılarla amortismanlı işlevlere yapılan çağrıları değiştirerek amortisman uyarılarını ortadan kaldıran [Secure Template Overloads'ı](../c-runtime-library/secure-template-overloads.md)kullanmaktır. Örneğin, bu amortismana lı aramayı `strcpy`şu şekilde düşünün:
 
 ```
 char szBuf[10];
 strcpy(szBuf, "test"); // warning: deprecated
 ```
 
-Tanımlama `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` değiştirerek 1 uyarı ortadan kaldırır gibi `strcpy` çağrısı `strcpy_s`, arabellek taşmalarına engeller. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../c-runtime-library/secure-template-overloads.md).
+1 `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` olarak tanımlanması, aramayı `strcpy` `strcpy_s`değiştirerek uyarıyı ortadan kaldırır , bu da arabellek taşmasını önler. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../c-runtime-library/secure-template-overloads.md)
 
-Güvenli şablon aşırı yüklemeleri olmadan bu kullanım dışı bırakılan işlevler için kesinlikle güvenli sürümler kullanmak için kodunuzu el ile güncelleştirme dikkate almalısınız.
+Güvenli şablon aşırı yüklemeleri olmadan amortismana tabi olan işlevler için, güvenli sürümleri kullanmak için kodunuzu el ile güncelleştirmeyi kesinlikle düşünmelisiniz.
 
-Başka bir kullanımdan kaldırma uyarıları, güvenlik, ilgisiz POSIX işlevleri kaynağıdır. POSIX işlev adlarını standart eşdeğerleriyle değiştirin (değiştirin; Örneğin, [erişim](../c-runtime-library/reference/access-crt.md) için [_access](../c-runtime-library/reference/access-waccess.md)), veya tanımlayarak POSIX ile ilgili kullanımdan kaldırma uyarıları devre dışı bırakma `_CRT_NONSTDC_NO_WARNINGS`. Daha fazla bilgi için [Uyumluluk](compatibility.md).
+Güvenlikle ilgisi olmayan bir diğer amortisman uyarıları kaynağı da POSIX işlevleridir. POSIX işlev adlarını standart eşdeğerleriyle değiştirin (örneğin, `_CRT_NONSTDC_NO_WARNINGS` [_access'a erişimi](../c-runtime-library/reference/access-crt.md) değiştirin ) veya POSIX ile ilgili amortisman uyarılarını tanımlayarak devre dışı [_access](../c-runtime-library/reference/access-waccess.md) Daha fazla bilgi için [Uyumluluk'a](compatibility.md)bakın.
 
-## <a name="additional-security-features"></a>Ek güvenlik özellikleri
+## <a name="additional-security-features"></a>Ek Güvenlik Özellikleri
 
 Güvenlik özelliklerinden bazıları şunlardır:
 
-- `Parameter Validation`. Güvenli her iki işlev ve birçok önceden var olan sürümü işlevleri CRT işlevleri için geçirilen parametre doğrulanır. Bu doğrulama şunlardır:
+- `Parameter Validation`. CRT işlevlerine geçirilen parametreler, hem güvenli işlevlerde hem de işlevlerin önceden var olan birçok sürümünde doğrulanır. Bu doğrulamalar şunlardır:
 
-   - Denetleme **NULL** değerleri, işleve geçirilen.
+  - Null **değerleri** işlevleri geçti denetle.
 
-   - Numaralandırılmış değerler geçerliliğini denetleniyor.
+  - Geçerlilik için numaralandırılmış değerleri denetleme.
 
-   - Tamsayı değerlerinin geçerli aralığı olduğunu denetleme.
+  - Integral değerlerinin geçerli aralıklarda olup olmadığını denetleme.
 
-- Daha fazla bilgi için [Parameter Validation](../c-runtime-library/parameter-validation.md).
+- Daha fazla bilgi için [Parametre Doğrulama'ya](../c-runtime-library/parameter-validation.md)bakın.
 
-- Geçersiz parametre işleyicisi da geliştiriciler için erişilebilir. Bir mekanizmanın ve uygulamadan çıkmak yerine geçersiz bir parametre ile karşılaşıldığında CRT ile ilgili sorunları kontrol etmek için bir yol sağlar. [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)işlevi.
+- Geçersiz parametreler için bir işleyici de geliştirici tarafından erişilebilir. Geçersiz bir parametreyle karşılaştığında, uygulamanın öne çıkması ve çıkmak yerine, CRT bu sorunları [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) işleviyle denetlemek için bir yol sağlar.
 
-- `Sized Buffers`. Güvenli İşlevler, arabellek boyutu bir arabelleğe Yazar herhangi bir işleve geçirilen gerektirir. Güvenli sürümler, yürütülecek kötü amaçlı kod yürütülmesine tehlikeli arabellek taşma hataları önlemeye yardımcı yazmadan önce arabellek büyüklüğü olduğunu doğrulayın. Bu işlevler genellikle döndürür bir `errno` hata kodunu yazın ve arabellek boyutu çok küçükse, geçersiz parametre işleyicisini çağırır. Giriş önbelleklerden okuma işlevleri `gets`, boyut sınırı belirtmek ihtiyaç duyduğunuz güvenli sürümlere sahiptir.
+- `Sized Buffers`. Güvenli işlevler, arabellek boyutunun arabelleğe yazan herhangi bir işleve geçirilmesini gerektirir. Güvenli sürümler, arabellek ona yazmadan önce yeterince büyük olduğunu doğrular, kötü amaçlı kod yürütmek için izin verebilir tehlikeli arabellek taşma hataları önlemek için yardımcı. Bu işlevler `errno` genellikle bir hata kodu türü döndürür ve arabellek boyutu çok küçükse geçersiz parametre işleyicisini çağırır. Giriş arabelleklerinden okunan işlevler, örneğin, `gets`maksimum boyut belirtmenizi gerektiren güvenli sürümlere sahiptir.
 
-- `Null termination`. Olası olmayan sonlandırılmış dizeler sol bazı işlevler düzgün null ile sonlandırılmış dizeler olduğundan emin olun güvenli sürümleri vardır.
+- `Null termination`. Sonlandırılmayan dizeleri bırakan bazı işlevler, dizelerin düzgün bir şekilde geçersiz kılınmasını sağlayan güvenli sürümlere sahiptir.
 
-- `Enhanced error reporting`. Güvenli işlevler önceden var olan işlevleriyle kullanılabilir olandan daha fazla hata bilgileri ile hata kodlarını döndürür. Güvenli işlevler ve önceden var olan işlevlerin çoğunu kümesini şimdi `errno` ve genellikle bir `errno` kod türü de daha iyi hata raporlama sağlamak için.
+- `Enhanced error reporting`. Güvenli işlevler, önceden varolan işlevlerle birlikte kullanılabilenden daha fazla hata bilgisiyle hata kodları döndürdü. Güvenli işlevler ve önceden varolan `errno` işlevlerin çoğu `errno` artık ayarlanır ve daha iyi hata raporlaması sağlamak için genellikle bir kod türünü de döndürmektedir.
 
-- `Filesystem security`. Güvenli dosya g/ç API'leri destek güvenli dosya erişimi varsayılan durumda.
+- `Filesystem security`. Güvenli dosya G/Ç API'leri varsayılan durumda güvenli dosya erişimini destekler.
 
-- `Windows security`. Güvenli işlem API'leri, güvenlik ilkelerini zorunlu kılmasına ve belirtilmesi için sistem ACL'lerini sağlar.
+- `Windows security`. Güvenli işlem API'leri güvenlik ilkelerini uygular ve ADC'lerin belirtilmesine izin verir.
 
-- `Format string syntax checking`. Geçersiz dizeler algılandı, örneğin, yanlış türü alan karakterleri kullanarak `printf` biçim dizeleri.
+- `Format string syntax checking`. Geçersiz dizeleri, örneğin, `printf` biçim dizeleri yanlış tür alan karakterleri kullanılarak algılanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Parametre Doğrulama](../c-runtime-library/parameter-validation.md)<br/>
-[Güvenli Şablon Aşırı Yüklemeleri](../c-runtime-library/secure-template-overloads.md)<br/>
+[Güvenli Şablon Overloads](../c-runtime-library/secure-template-overloads.md)<br/>
 [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

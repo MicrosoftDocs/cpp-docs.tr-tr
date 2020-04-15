@@ -1,5 +1,5 @@
 ---
-title: ODBC veri kaynağında program aracılığıyla tablo oluşturma
+title: ODBC Veri Kaynağında Programlı Bir Tablo Oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - programmatically creating ODBC tables [C++]
@@ -7,30 +7,30 @@ helpviewer_keywords:
 - ODBC data sources, creating tables in
 - tables [C++], creating programmatically
 ms.assetid: 9ca68fb5-c3df-424a-a75c-e3fb01cc1b18
-ms.openlocfilehash: 25c975560d6a73ce67294d97830b2f5bec9cd635
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6cf26cad7fe39f374daf371902525087b446658c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213284"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81358834"
 ---
 # <a name="data-source-programmatically-creating-a-table-in-an-odbc-data-source"></a>Veri Kaynağı: Program Aracılığıyla ODBC Veri Kaynağında Tablo Oluşturma
 
-Bu konuda, `CDatabase`sınıfının `ExecuteSQL` üye işlevini kullanarak, işlevi bir **Create Table** SQL ifadesini içeren bir dize geçirerek veri kaynağınız için bir tablo oluşturma işlemi açıklanmaktadır.
+Bu konu, sınıfın `ExecuteSQL` `CDatabase`üye işlevini kullanarak, create **TABLE** SQL deyimi içeren bir dize geçirerek, veri kaynağınız için nasıl bir tablo oluşturulutamamgerektiğini açıklar.
 
-MFC 'deki ODBC veri kaynakları hakkında genel bilgi için bkz. [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md). Konu [veri kaynağı: program aracılığıyla ODBC veri kaynağını yapılandırma](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md) veri kaynakları oluşturmayı açıklar.
+MFC'deki ODBC veri kaynakları hakkında genel bilgi için [bkz.](../../data/odbc/data-source-odbc.md) Konu [Veri Kaynağı: Bir ODBC Veri Kaynağının Programlı olarak yapılandırılarak](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md) yapılandırılması, veri kaynakları oluşturmayı açıklar.
 
-Veri kaynağı oluşturulduğunda, `ExecuteSQL` üye işlevini ve **Create Table** SQL ifadesini kullanarak kolayca tablo oluşturabilirsiniz. Örneğin, `myDB`adlı bir `CDatabase` nesneniz varsa, bir tablo oluşturmak için aşağıdaki MFC kodunu kullanabilirsiniz:
+Veri kaynağını oluşturduğunuzda, üye işlevve CREATE `ExecuteSQL` **TABLE** SQL deyimini kullanarak kolayca tablo oluşturabilirsiniz. Örneğin, adında `CDatabase` `myDB`bir nesneniz varsa, tablo oluşturmak için aşağıdaki MFC kodunu kullanabilirsiniz:
 
 ```
 myDB.ExecuteSQL("CREATE TABLE OFFICES (OfficeID TEXT(4)" ",
                          OfficeName TEXT(10))");
 ```
 
-Bu kod örneği, `myDB`tarafından tutulan Microsoft Access veri kaynağı bağlantısında "OFISLERI" adlı bir tablo oluşturur; tablo, "OfficeId" ve "OfficeName" iki alanını içerir.
+Bu kod örneği, `myDB`Microsoft Access veri kaynağı bağlantısında "OFFICE" adlı bir tablo oluşturur; tabloda "OfficeID" ve "OfficeName" olmak için iki alan bulunmaktadır.
 
 > [!NOTE]
->  **Create Table** SQL ifadesinde belirtilen alan türleri, kullanmakta olduğunuz ODBC sürücüsüne göre değişiklik gösterebilir. Microsoft Query programı (Visual C++ 1,5 ile dağıtılır), bir veri kaynağı için hangi alan türlerinin kullanılabilir olduğunu keşfetmenin bir yoludur. Microsoft Query 'de **Dosya**' ya tıklayın, **Table_Definition**' a tıklayın, veri kaynağından bir tablo seçin ve **tür** Birleşik giriş kutusunda gösterilen türe bakın. Dizinler oluşturmak için SQL sözdizimi de mevcuttur.
+> **CREATE TABLE** SQL deyiminde belirtilen alan türleri, kullanmakta olduğunuz ODBC sürücüsüne göre değişiklik gösterebilir. Microsoft Sorgu programı (Visual C++ 1.5 ile dağıtılır) bir veri kaynağı için hangi alan türlerinin kullanılabilerini keşfetmenin bir yoludur. Microsoft Sorgusu'nda **Dosya'yı**tıklatın, **Table_Definition**tıklatın, veri kaynağından bir tablo seçin ve **Tür** açılan kutusunda gösterilen türe bakın. Dizinoluşturmak için SQL sözdizimi de vardır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

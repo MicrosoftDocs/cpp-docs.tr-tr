@@ -6,37 +6,37 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, application settings
 ms.assetid: 48475194-cc63-467f-8499-f142269a4c1c
-ms.openlocfilehash: 3201b5882a1de4064d924fbb28ee1c575ab8ccbe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 55f202ffabe945e55589ab1fc771a1757e23ca2f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62151311"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372469"
 ---
 # <a name="application-settings-mfc-activex-control-wizard"></a>Uygulama Ayarları, MFC ActiveX Denetim Sihirbazı
 
-Tasarım ve temel özelliklerine yeni MFC ActiveX projeye eklemek için MFC ActiveX Denetim Sihirbazı'nın bu sayfayı kullanın. Bu ayarlar, uygulamanın kendisi için ve belirli özellik ya da öğe denetimi için geçerlidir.
+Yeni bir MFC ActiveX projesinin temel özelliklerini tasarlamak ve eklemek için MFC ActiveX Denetim Sihirbazı'nın bu sayfasını kullanın. Bu ayarlar, denetimin belirli bir özelliği ne de öğesi için değil, uygulamanın kendisi için geçerlidir.
 
 - **Çalışma zamanı lisansı**
 
-   Denetim ile dağıtmak için bir kullanıcı lisans dosyası oluşturmak için bu seçeneği seçin. Bir metin dosyası lisanstır *projname*.lic. Bu dosya, bir tasarım zamanı ortamında oluşturulması için denetimi bir örneğini izin vermek için Denetim DLL ile aynı dizinde olmalıdır. Genellikle bu dosya ile denetiminizi dağıtmak, ancak müşterilerinizin dağıtmayın.
+   Denetimle dağıtmak için bir kullanıcı lisans dosyası oluşturmak için bu seçeneği belirleyin. Lisans bir metin dosyası, *projname*.lic olduğunu. Bu dosya, denetimin bir örneğinin tasarım zamanı ortamında oluşturulmasına izin vermek için denetimin DLL'si ile aynı dizinde olmalıdır. Bu dosyayı genellikle denetiminiz ile dağıtırsınız, ancak müşterileriniz dağıtmaz.
 
-- **Yardım dosyaları oluştur**
+- **Yardım dosyaları oluşturma**
 
-   Saptama Yardım dosyaları oluşturmak ve proje denetiminiz için Yardım'ı içerecek şekilde yapılandırmak için bu seçeneği belirleyin. Bu seçenek olmadan oluşturulan bir varsayılan proje yalnızca oluşturduğu bir **hakkında** kullanıcı denetimi sağ tıkladıktan sonra görüntülenen kutusunda F1 kullanır veya tıkladığında **yardımcı** denetimin kapsayıcısı üzerinde.
+   Saplı yardım dosyaları oluşturmak için bu seçeneği seçin ve projeyi denetiminize yardımcı olacak şekilde yapılandırın. Bu seçenek olmadan oluşturulan varsayılan proje, yalnızca kullanıcı denetimi sağ tıklattığında, F1 kullandığında veya denetimin kapsayıcısı **üzerinde Yardım'ı** tıklattığında görüntülenen bir **About** kutusu oluşturur.
 
    > [!NOTE]
-   > Yardım nasıl görüntüleneceğini denetim kapsayıcısı ile nasıl etkileştiğini bağlıdır. Yardım ile kapsayıcınız dahil ederseniz, Yardım'ı uygun şekilde görüntülemek için Denetim ve kapsayıcı arasında iletileri işlemesi gerekir.
+   > Yardımın nasıl görüntüleneceği, denetiminizin kapsayıcısıyla nasıl etkileşimde deleneceğine bağlıdır. Kapsayıcınıza yardım eklerseniz, yardımı uygun şekilde görüntülemek için denetim ve kapsayıcı arasındaki iletileri işlemeniz gerekir.
 
-   Yardım dosyaları Sihirbazı'nı kullanarak oluşturduğunuzda, projenizi aşağıdakileri içerir:
+   Sihirbazı kullanarak yardım dosyaları oluşturduğunuzda, projeniz aşağıdakileri içerir:
 
-   - Dosya .vcxproj oluşturmak ve proje derlenirken Yardım dosyasını yapılandırmak için kodu içerir.
+  - .vcxproj dosyası, proje oluşturulurken yardım dosyasını oluşturmak ve yapılandırmak için kod içerir.
 
-   - Dosya *projnamePropPage*.cpp dosyası içeren bir [SetHelpInfo](../../mfc/reference/colepropertypage-class.md#sethelpinfo) oluşturucu işlevi.
+  - Dosya *projnamePropPage*.cpp dosyası oluşturucu bir [SetHelpInfo](../../mfc/reference/colepropertypage-class.md#sethelpinfo) işlevi içerir.
 
-   - Dosya projname.hpj ActiveX denetiminin Yardım dosyasını oluşturmak için Yardım Derleyici tarafından kullanılan Yardım proje dosyası var. Yardım dosyanızı ve Yardım dosyasını içerir (örneğin, bit eşlemler) ek dosyalara olan yolları oluşturma hakkında bilgi içeren bir metin dosyasının .hpj dosyasıdır.
+  - Projname.hpj dosyası, ActiveX denetiminin yardım dosyasını oluşturmak için yardım derleyicisi tarafından kullanılan yardım projesi dosyasıdır. .hpj dosyası, yardım dosyanızı oluşturma yla ilgili bilgileri ve yardım dosyasının içerdiği ek dosyalara (örneğin bit eşlemler) giden yolları içeren bir metin dosyasıdır.
 
-   - Projenin proje Yardım bit eşlem dosyaları ve Yardım konusu dosyasını içerecek şekilde HLP dizini içerir (*projname*.rtf). Bu Yardım konusu dosya için yaygın özellikleri, olayları ve çok sayıda ActiveX denetimi tarafından desteklenen yöntemleri standart Yardım konularını içerir. .Rtf dosyasının belirli Yardım konuları ekleyip düzenleyebilirsiniz.
+  - Proje, bitmap dosyalarını ve yardım konusu dosyasını *(projname*.rtf) içeren HLP dizinini içerir. Bu yardım konusu dosyası, birçok ActiveX denetimi tarafından desteklenen ortak özellikler, olaylar ve yöntemler için standart yardım konularını içerir. Belirli yardım konularını eklemek veya kaldırmak için .rtf dosyasını edebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

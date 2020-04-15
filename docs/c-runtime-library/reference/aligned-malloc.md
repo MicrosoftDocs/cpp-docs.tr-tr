@@ -1,8 +1,9 @@
 ---
 title: _aligned_malloc
-ms.date: 12/11/2019
+ms.date: 4/2/2020
 api_name:
 - _aligned_malloc
+- _o__aligned_malloc
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -26,16 +28,16 @@ helpviewer_keywords:
 - aligned_malloc function
 - _aligned_malloc function
 ms.assetid: fb788d40-ee94-4039-aa4d-97d73dab1ca0
-ms.openlocfilehash: c06c822ae4e7584a172c260a5c06e25019a1ce5e
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: b7d7f29f50b28ff713de94cc3304014e96d45b70
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75300137"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81350616"
 ---
 # <a name="_aligned_malloc"></a>_aligned_malloc
 
-Belirtilen hizalama sınırında belleği ayırır.
+Belleği belirli bir hizalama sınırına ayırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,31 +50,33 @@ void * _aligned_malloc(
 
 ### <a name="parameters"></a>Parametreler
 
-*boyutla*<br/>
-İstenen bellek ayırmasının boyutu.
+*Boyutu*<br/>
+İstenen bellek ayırmaboyutu.
 
-*hizalar*<br/>
-2 ' nin tam sayı üssü olması gereken hizalama değeri.
+*Hizalama*<br/>
+2'lik bir karşımat güç olması gereken hizalama değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarısız olursa, ayrılan veya NULL olan bellek bloğunun işaretçisi. İşaretçi *hizalamanın*bir katı.
+İşlem başarısız olduysa ayrılan bellek bloğuna işaretçi veya NULL. İşaretçi *hizalamanın*bir katıdır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_malloc** [malloc](malloc.md)'yi temel alır.
+**_aligned_malloc** [malloc](malloc.md)dayanmaktadır.
 
-**_aligned_malloc** `__declspec(noalias)` ve `__declspec(restrict)`olarak işaretlenir, yani işlevin genel değişkenleri değiştirmeyeceği ve döndürülen işaretçinin diğer ad olmadığından garanti edilir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
+**_aligned_malloc** `__declspec(noalias)` işaretlenir `__declspec(restrict)`ve işlevin genel değişkenleri değiştirmemesi ve döndürülen işaretçinin diğer adı olmadığı anlamına gelir. Daha fazla bilgi için [noalias'a](../../cpp/noalias.md) bakın ve [kısıtlayın.](../../cpp/restrict.md)
 
-Bu işlev, bellek ayırma başarısız olursa veya istenen boyut `_HEAP_MAXREQ`büyükse `ENOMEM` `errno` ayarlar. `errno`hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_malloc** parametrelerini doğrular. *Hizalama* 2 ' nin üssü veya *boyutu* sıfır değilse, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev NULL değerini döndürür ve `errno` `EINVAL`olarak ayarlar.
+Bu işlev, `ENOMEM` bellek ayırma başarısız olup olmadığını veya istenen `_HEAP_MAXREQ`boyutun 'dan büyük olması durumunda . `errno` Hakkında daha `errno`fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr.](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) Ayrıca, **_aligned_malloc** parametrelerini doğrular. *Hizalama* 2'lik bir güç değilse veya *boyut* sıfır ise, bu işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin verilirse, `errno` bu `EINVAL`işlev NULL döndürür ve ' yi ayarlar.
 
-Hem **_aligned_malloc** hem de `_aligned_offset_malloc`tarafından alınan belleği serbest bırakmak için [_aligned_free](aligned-free.md) kullanın. `free`kullanmayın, bu, hizalanmış belleği doğru bir şekilde geri almamıştır ve tanılayan hatalara yol açabilir.
+**Hem _aligned_malloc** hem `_aligned_offset_malloc`de _aligned_malloc tarafından elde edilen belleği bulmak için [_aligned_free](aligned-free.md) kullanın. Hizalanmış belleği doğru şekilde geri almayan ve tanılaması zor hatalara yol açabilecek şekilde kullanmayın. `free`
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_aligned_malloc**|\<malloc. h >|
+|**_aligned_malloc**|\<malloc.h>|
 
 ## <a name="example"></a>Örnek
 

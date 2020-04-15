@@ -1,8 +1,9 @@
 ---
 title: ___lc_locale_name_func
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - ___lc_locale_name_func
+- _o____lc_locale_name_func
 api_location:
 - msvcrt.dll
 - msvcr110.dll
@@ -11,6 +12,7 @@ api_location:
 - msvcr120.dll
 - msvcr80.dll
 - msvcr110_clr0400.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -20,16 +22,16 @@ f1_keywords:
 helpviewer_keywords:
 - ___lc_locale_name_func
 ms.assetid: ef858308-872e-43de-95e0-9b1b4084343e
-ms.openlocfilehash: abc1ade393538586ad07f57e6838591833c9948b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f38d4d9b11189a8313b26dd3313a5def800c2410
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944238"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81351123"
 ---
 # <a name="___lc_locale_name_func"></a>___lc_locale_name_func
 
-İç CRT işlevi. İş parçacığının geçerli yerel ayar adını alır.
+Dahili CRT fonksiyonu. İş parçacığının geçerli yerel adını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,13 +41,15 @@ wchar_t** ___lc_locale_name_func(void);
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İş parçacığının geçerli yerel ayar adını içeren bir dize işaretçisi.
+İş parçacığının geçerli yerel adını içeren bir dize işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`___lc_locale_name_func`, CRT verileri için iş parçacığı yerel depolama alanından geçerli yerel ayar adını almak için diğer CRT işlevleri tarafından kullanılan bir iç CRT işlevidir. Bu bilgiler, [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) işlevi veya [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) işlevleri kullanılarak da kullanılabilir.
+`___lc_locale_name_func`crt verileri için iş parçacığı yerel depolama geçerli yerel ad almak için diğer CRT işlevleri tarafından kullanılan bir iç CRT işlevidir. Bu [bilgiler, _get_current_locale](../c-runtime-library/reference/get-current-locale.md) işlevi veya [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) işlevleri kullanılarak da kullanılabilir.
 
-İç CRT işlevleri uygulamaya özgüdür ve her sürümde değiştirilebilir. Kodunuzda kullanımını önermiyoruz.
+Dahili CRT işlevleri uygulamaya özgüdir ve her sürümde değiştirilebilir. Kodunuzda kullanılmasını önermiyoruz.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 

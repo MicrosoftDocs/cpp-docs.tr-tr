@@ -1,8 +1,9 @@
 ---
 title: __p__commode
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - __p__commode
+- _o___p__commode
 api_location:
 - msvcr110.dll
 - msvcrt.dll
@@ -12,6 +13,7 @@ api_location:
 - msvcr80.dll
 - msvcr110_clr0400.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -21,16 +23,16 @@ f1_keywords:
 helpviewer_keywords:
 - __p__commode
 ms.assetid: 4380acb8-e3e4-409c-a60f-6205ac5189ce
-ms.openlocfilehash: e3121c127c3ebf0f5fccdeb7ae0f67d0164d0965
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fa589c1972d27854e3f794d8283f49d9db5d053a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171482"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81349314"
 ---
 # <a name="__p__commode"></a>__p__commode
 
-Dosya g/ç işlemleri için varsayılan *dosya kaydetme modunu* belirten `_commode` genel değişkenine işaret eder.
+Dosya G/Ç işlemleri için varsayılan `_commode` *dosya işleme modunu* belirten genel değişkene işaret eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,16 +43,18 @@ int * __p__commode(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`_commode` genel değişkenine yönelik işaretçi.
+Genel değişkene `_commode` işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__p__commode` işlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
+İşlev `__p__commode` yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
 
-Dosya tamamlama modu, kritik verilerin diske ne zaman yazıldığını belirtir. Daha fazla bilgi için bkz. [fflush](../c-runtime-library/reference/fflush.md).
+Dosya işleme modu, kritik verilerin diske yazıldığında belirtilir. Daha fazla bilgi için [bkz.](../c-runtime-library/reference/fflush.md)
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|__p\__commode|iç. h|
+|__p\__commode|dahili.h|

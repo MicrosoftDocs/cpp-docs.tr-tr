@@ -4,55 +4,55 @@ ms.date: 09/12/2018
 helpviewer_keywords:
 - ActiveX control containers [MFC], application support
 ms.assetid: 5ff0bf37-07f4-49aa-ad9c-c63d3756243a
-ms.openlocfilehash: 23cd9e41ee704327728322f869e67d1a2d0c6cd9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 57b359d4d78c71ef2b0c8ceefad20c6521307a1b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62302201"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81353561"
 ---
 # <a name="containers-for-activex-controls"></a>ActiveX Denetimleri için Kapsayıcılar
 
-ActiveX denetimi kapsamasını destekledikleri sürece, diğer uygulamalar, Visual C++'da geliştirilmiş ActiveX denetimleri kullanabilirsiniz. Microsoft uygulamaları, listelenen sürümler ile başlayan bir dizi ActiveX denetimi kapsamasını destekler.
+ActiveX denetim intülatüründen destek aldıkları sürece Visual C++'da geliştirilen ActiveX denetimlerini diğer uygulamalarda kullanabilirsiniz. Listelenen sürümlerden başlayarak bir dizi Microsoft uygulaması ActiveX denetim ini destekler.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
 
 > [!NOTE]
->  Aşağıdaki listede, ActiveX denetimlerini destekleyen ancak sınamada en sık kullanılan kümesini temsil eden uygulamaların tam bir listesi değil:
+> Aşağıdaki liste ActiveX denetimlerini destekleyen uygulamaların tam listesi değil, ancak sınamada en sık kullanılan kümeyi temsil eder:
 
-ActiveX denetimi kapsamasını destekleyen uygulamalar şunlardır:
+ActiveX denetim insalarını destekleyen uygulamalar şunlardır:
 
-- Internet Explorer 3.x ve büyük
+- Internet Explorer 3.x ve üzeri
 
-- Visual Basic 4.x ve büyük
+- Visual Basic 4.x ve üzeri
 
-- Visual C++ 4.x ve büyük
+- Görsel C++ 4.x ve üzeri
 
-- Erişim 95 ve daha sonraki sürümleri
+- 95 ve üzeri erişin
 
-- Excel 97 ve daha sonraki sürümleri
+- Excel 97 ve üzeri
 
-- Word 97 ve daha sonraki sürümleri
+- Word 97 ve daha büyük
 
-- Access 97 ve daha sonraki sürümleri
+- 97 ve üzeri erişin
 
-- FrontPage 97 ve daha sonraki sürümleri
+- FrontPage 97 ve daha büyük
 
-- PowerPoint 97 ve daha sonraki sürümleri
+- PowerPoint 97 ve üzeri
 
-- Visual InterDev 97 ve daha sonraki sürümleri
+- Visual InterDev 97 ve üzeri
 
-ActiveX denetimi kapsamasını destekleyen Microsoft dışı uygulamalar şunlardır:
+ActiveX denetim insasını destekleyen Microsoft dışı uygulamalar şunlardır:
 
 - PowerBuilder
 
 - Delphi
 
-- C++ Oluşturucusu
+- C++ Oluşturucu
 
-- NCompass Netscape Navigator için eklenti
+- Netscape Navigator için NCompass Eklentisi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
+[ActiveX Kontrol Kapları](../mfc/activex-control-containers.md)

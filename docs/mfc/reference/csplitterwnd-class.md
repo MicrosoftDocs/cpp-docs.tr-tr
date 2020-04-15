@@ -1,5 +1,5 @@
 ---
-title: CSplitterWnd sınıfı
+title: CSplitterWnd Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSplitterWnd
@@ -72,16 +72,16 @@ helpviewer_keywords:
 - CSplitterWnd [MFC], OnDrawSplitter
 - CSplitterWnd [MFC], OnInvertTracker
 ms.assetid: fd0de258-6dbe-4552-9e47-a39de0471d51
-ms.openlocfilehash: bee6deed3052d6cc923e432e97ad9a7904060cb6
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 8c8ce90f5e36d6cdc2592233588bc3bd7bf2c9d6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447442"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371691"
 ---
-# <a name="csplitterwnd-class"></a>CSplitterWnd sınıfı
+# <a name="csplitterwnd-class"></a>CSplitterWnd Sınıfı
 
-Birden çok bölme içeren bir pencere olan Bölümlendirici pencerenin işlevlerini sağlar.
+Birden çok bölme içeren bir pencere olan bir ayırıcı pencerenin işlevselliğini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -95,107 +95,107 @@ class CSplitterWnd : public CWnd
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CSplitterWnd:: CSplitterWnd](#csplitterwnd)|`CSplitterWnd` nesnesi oluşturmak için çağırın.|
+|[CSplitterWnd::CSplitterWnd](#csplitterwnd)|Bir `CSplitterWnd` nesne oluşturmak için arayın.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CSplitterWnd:: ActivateNext](#activatenext)|Sonraki bölmeyi veya önceki bölme komutunu uygular.|
-|[CSplitterWnd:: CanActivateNext](#canactivatenext)|Sonraki bölme veya önceki bölme komutunun mümkün olup olmadığını denetler.|
-|[CSplitterWnd:: Create](#create)|Dinamik Bölümlendirici penceresi oluşturma ve `CSplitterWnd` nesnesine iliştirme çağrısı.|
-|[CSplitterWnd:: CreateScrollBarCtrl](#createscrollbarctrl)|Paylaşılan bir kaydırma çubuğu denetimi oluşturur.|
-|[CSplitterWnd:: CreateStatic](#createstatic)|Statik Bölümlendirici penceresi oluşturma ve `CSplitterWnd` nesnesine iliştirme çağrısı.|
-|[CSplitterWnd:: CreateView](#createview)|Bölümlendirici penceresinde bölme oluşturma çağrısı.|
-|[CSplitterWnd::D eleteColumn](#deletecolumn)|Ayırıcı penceresinden bir sütun siler.|
-|[CSplitterWnd::D eleteRow](#deleterow)|Ayırıcı penceresinden bir satır siler.|
-|[CSplitterWnd::D eleteView](#deleteview)|Ayırıcı penceresinden bir görünüm siler.|
-|[CSplitterWnd::D oKeyboardSplit](#dokeyboardsplit)|Klavye bölme komutunu, genellikle "pencere Böl" gerçekleştirir.|
-|[CSplitterWnd::D oScroll](#doscroll)|Bölünmüş pencerelerin eşitlenmiş kaydırmasını gerçekleştirir.|
-|[CSplitterWnd::D oScrollBy](#doscrollby)|Bölünmüş pencereleri verilen sayıda pikselle kaydırır.|
-|[CSplitterWnd:: GetActivePane](#getactivepane)|Çerçevedeki odağın veya etkin görünümden etkin bölmeyi belirler.|
-|[CSplitterWnd:: GetColumnCount](#getcolumncount)|Geçerli bölme sütun sayısını döndürür.|
-|[CSplitterWnd:: GetColumnInfo](#getcolumninfo)|Belirtilen sütundaki bilgileri döndürür.|
-|[CSplitterWnd:: GetPane](#getpane)|Belirtilen satır ve sütundaki bölmeyi döndürür.|
-|[CSplitterWnd:: GetRowCount](#getrowcount)|Geçerli bölme satırı sayısını döndürür.|
-|[CSplitterWnd:: Getrowinınfo](#getrowinfo)|Belirtilen satırdaki bilgileri döndürür.|
-|[CSplitterWnd:: GetScrollStyle](#getscrollstyle)|Paylaşılan kaydırma çubuğu stilini döndürür.|
-|[CSplitterWnd:: ıdfromrowcol](#idfromrowcol)|Belirtilen satırda ve sütunda bölmenin alt pencere KIMLIĞINI döndürür.|
-|[CSplitterWnd:: ıschildpane](#ischildpane)|Pencerenin Şu anda bu splitter penceresinin alt bölmesi olup olmadığını belirleme çağrısı.|
-|[CSplitterWnd:: IsTracking](#istracking)|Ayırıcı çubuğun Şu anda taşınıp taşınmadığını belirler.|
-|[CSplitterWnd:: RecalcLayout](#recalclayout)|Satır veya sütun boyutunu ayarladıktan sonra ayırıcı penceresini yeniden görüntülemek için çağırın.|
-|[CSplitterWnd:: SetActivePane](#setactivepane)|Çerçevede etkin bir bölme olacak şekilde ayarlar.|
-|[CSplitterWnd:: SetColumnInfo](#setcolumninfo)|Belirtilen sütun bilgilerini ayarlamak için çağırın.|
-|[CSplitterWnd:: SetRowInfo](#setrowinfo)|Belirtilen satır bilgilerini ayarlamak için çağırın.|
-|[CSplitterWnd:: SetScrollStyle](#setscrollstyle)|Ayırıcı pencerenin paylaşılan kaydırma çubuğu desteği için yeni kaydırma çubuğu stilini belirtir.|
-|[CSplitterWnd:: SplitColumn](#splitcolumn)|Bir çerçeve penceresinin dikey olarak bölündüğünü gösterir.|
-|[CSplitterWnd:: Sptrow](#splitrow)|Bir çerçeve penceresinin yatay olarak bölündüğünü gösterir.|
+|[CSplitterWnd::ActivateNext](#activatenext)|Sonraki Bölme veya Önceki Bölme komutunu gerçekleştirir.|
+|[CSplitterWnd::CanActivateNext](#canactivatenext)|Sonraki Bölme veya Önceki Bölme komutu şu anda mümkün olup olmadığını denetler.|
+|[CSplitterWnd::Oluştur](#create)|Dinamik bir ayırıcı penceresi oluşturmak ve `CSplitterWnd` nesneye takmak için arayın.|
+|[CSplitterWnd::CreateScrollBarCtrl](#createscrollbarctrl)|Paylaşılan kaydırma çubuğu denetimi oluşturur.|
+|[CSplitterWnd::CreateStatic](#createstatic)|Statik bir ayırıcı penceresi oluşturmak ve `CSplitterWnd` nesneye takmak için arayın.|
+|[CSplitterWnd::CreateView](#createview)|Bölücü penceresinde bölme oluşturmak için arayın.|
+|[CSplitterWnd::DeleteSütun](#deletecolumn)|Bölme penceresinden bir sütunu siler.|
+|[CSplitterWnd::DeleteRow](#deleterow)|Ayırıcı penceresinden bir satırı siler.|
+|[CSplitterWnd::DeleteView](#deleteview)|Ayırıcı penceresinden bir görünümü siler.|
+|[CSplitterWnd::DoKeyboardSplit](#dokeyboardsplit)|Klavye bölme komutunu gerçekleştirir, genellikle "Pencere Bölme" olur.|
+|[CSplitterWnd::DoScroll](#doscroll)|Bölünmüş pencerelerin senkronize kaydırma gerçekleştirir.|
+|[CSplitterWnd::DoScrollBy](#doscrollby)|Kaydırma, pencereleri belirli bir piksel sayısına böler.|
+|[CSplitterWnd::GetActivePane](#getactivepane)|Etkin bölmeyi odaktan veya çerçevedeki etkin görünümden belirler.|
+|[CSplitterWnd::GetColumnCount](#getcolumncount)|Geçerli bölme sütun sayısını döndürür.|
+|[CSplitterWnd::GetColumnInfo](#getcolumninfo)|Belirtilen sütundaki bilgileri verir.|
+|[CSplitterWnd::GetPane](#getpane)|Bölmesi belirtilen satır ve sütunda döndürür.|
+|[CSplitterWnd::GetRowCount](#getrowcount)|Geçerli bölme satır sayısını döndürür.|
+|[CSplitterWnd::GetRowInfo](#getrowinfo)|Belirtilen satırdaki bilgileri verir.|
+|[CSplitterWnd::GetScrollStyle](#getscrollstyle)|Paylaşılan kaydırma çubuğu stilini döndürür.|
+|[CSplitterWnd::IdFromRowCol](#idfromrowcol)|Belirtilen satır ve sütunda bölmenin alt pencere kimliğini verir.|
+|[CSplitterWnd::IsChildPane](#ischildpane)|Pencerenin şu anda bu ayırıcı pencerenin alt bölmesi olup olmadığını belirlemek için arayın.|
+|[CSplitterWnd::IsTracking](#istracking)|Splitter çubuğunun şu anda taşınıp taşınmayanlarını belirler.|
+|[CSplitterWnd::RecalcLayout](#recalclayout)|Satır veya sütun boyutunu ayarladıktan sonra ayırıcı penceresini yeniden görüntülemek için arayın.|
+|[CSplitterWnd::SetActivePane](#setactivepane)|Çerçevedeki etkin bölmeyi ayarlar.|
+|[CSplitterWnd::SetColumnInfo](#setcolumninfo)|Belirtilen sütun bilgilerini ayarlamak için arayın.|
+|[CSplitterWnd::SetRowInfo](#setrowinfo)|Belirtilen satır bilgilerini ayarlamak için arayın.|
+|[CSplitterWnd::SetScrollStyle](#setscrollstyle)|Bölücü penceresinin paylaşılan kaydırma çubuğu desteği için yeni kaydırma çubuğu stilini belirtir.|
+|[CSplitterWnd::SplitSütun](#splitcolumn)|Çerçeve penceresinin dikey olarak nerede bölündüğünü gösterir.|
+|[CSplitterWnd::SplitRow](#splitrow)|Çerçeve penceresinin yatay olarak bölündüğü yeri gösterir.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CSplitterWnd:: OnDraw](#ondraw)|Ayırıcı penceresini çizmek için Framework tarafından çağırılır.|
-|[CSplitterWnd:: OnDrawSplitter](#ondrawsplitter)|Bölünmüş pencerenin bir görüntüsünü oluşturur.|
-|[CSplitterWnd:: Onınevirttracker](#oninverttracker)|Bölünmüş pencerenin görüntüsünü, çerçeve penceresiyle aynı boyut ve şekle sahip olacak şekilde işler.|
+|[CSplitterWnd::OnDraw](#ondraw)|Ayırıcı penceresini çizmek için çerçeve tarafından çağrılır.|
+|[CSplitterWnd::OnDrawSplitter](#ondrawsplitter)|Bölünmüş bir pencerenin görüntüsünü görüntüler.|
+|[CSplitterWnd::OnInvertTracker](#oninverttracker)|Bölünmüş pencerenin görüntüsünü çerçeve penceresiyle aynı boyut ve şekle bölüyor.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir bölme genellikle [CView](../../mfc/reference/cview-class.md)'dan türetilmiş uygulamaya özel bir nesnedir, ancak uygun alt pencere kimliğine sahip herhangi bir [CWnd](../../mfc/reference/cwnd-class.md) nesnesi olabilir.
+Bölme genellikle [CView'dan](../../mfc/reference/cview-class.md)türetilen uygulamaya özgü bir nesnedir, ancak uygun alt pencere kimliğine sahip herhangi bir [CWnd](../../mfc/reference/cwnd-class.md) nesnesi olabilir.
 
-`CSplitterWnd` nesnesi genellikle üst bir [CFrameWnd](../../mfc/reference/cframewnd-class.md) veya [Cmdictepdwnd](../../mfc/reference/cmdichildwnd-class.md) nesnesine katıştırılır. Aşağıdaki adımları kullanarak bir `CSplitterWnd` nesnesi oluşturun:
+Bir `CSplitterWnd` nesne genellikle bir üst [CFrameWnd](../../mfc/reference/cframewnd-class.md) veya [CMDIChildWnd](../../mfc/reference/cmdichildwnd-class.md) nesnesine katıştırılır. Aşağıdaki `CSplitterWnd` adımları kullanarak bir nesne oluşturun:
 
-1. Ana çerçeveye bir `CSplitterWnd` üye değişkeni ekleyin.
+1. Üst çerçeveye bir `CSplitterWnd` üye değişken gömün.
 
-2. Üst çerçevenin [CFrameWnd:: OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) üye işlevini geçersiz kılın.
+2. Üst çerçevenin [CFrameWnd geçersiz kılın::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) üye işlevi.
 
-3. Geçersiz kılınan `OnCreateClient`içinden `CSplitterWnd`[Create](#create) veya [CreateStatic](#createstatic) üye işlevini çağırın.
+3. Geçersiz kılınan `OnCreateClient`içinden, Create veya [CreateStatic](#createstatic) `CSplitterWnd`üye işlevini arayın. [Create](#create)
 
-Dinamik bir Splitter penceresi oluşturmak için `Create` member işlevini çağırın. Bir dinamik ayırıcı pencere, genellikle aynı belgenin bir dizi bölmeyi veya görünümünü oluşturmak ve kaydırmak için kullanılır. Çerçeve, Bölümlendirici için otomatik olarak bir başlangıç bölmesi oluşturur; daha sonra, Kullanıcı ayırıcı penceresinin denetimlerini yaptığı için çerçeve ek bölmeler oluşturur, yeniden boyutlandırır ve atar.
+Dinamik `Create` bir ayırıcı penceresi oluşturmak için üye işlevi arayın. Dinamik bir ayırıcı penceresi genellikle aynı belgenin tek tek bölmeleri veya görünümleri bir dizi oluşturmak ve kaydırma kıtır. Çerçeve otomatik olarak ayırıcı için bir başlangıç bölmesi oluşturur; daha sonra, kullanıcı ayırıcı penceresinin denetimlerini çalıştırırken çerçeve ek bölmeleri oluşturur, yeniden boyutlandırır ve bertaraf eder.
 
-`Create`çağırdığınızda, bölmelerin tam olarak ne zaman küçük gösterileceğini belirleyen bir minimum satır yüksekliği ve sütun genişliği belirtirsiniz. `Create`çağırdıktan sonra, [SetColumnInfo](#setcolumninfo) ve [Setrowinfo](#setrowinfo) üye işlevlerini çağırarak bu en düşük düzeyde UMS ayarlayabilirsiniz.
+Aradığınızda, `Create`bölmelerin tam olarak görüntülenemeyecek kadar küçük olduğunu belirleyen minimum satır yüksekliği ve sütun genişliği belirtirsiniz. Aradıktan `Create`sonra, [SetColumnInfo](#setcolumninfo) ve [SetRowInfo](#setrowinfo) üye işlevlerini arayarak bu minimum ları ayarlayabilirsiniz.
 
-Ayrıca, bir sütun için "ideal" bir genişlik ve bir satır için "ideal" yüksekliğini ayarlamak için `SetColumnInfo` ve `SetRowInfo` üye işlevlerini kullanın. Çerçeve bir ayırıcı pencere görüntülediğinde, önce üst kareyi, sonra ayırıcı penceresini görüntüler. Daha sonra çerçeve, sütun ve satırlardaki bölmeleri, ayırıcı pencerenin istemci alanının sağ alt köşesine doğru olan en sol üst köşesinden çalışarak, en iyi boyutlarına göre sütunlar ve satırlar halinde yerleştirir.
+Ayrıca, `SetColumnInfo` bir `SetRowInfo` sütun için "ideal" genişlik ve bir satır için "ideal" yükseklik ayarlamak için ve üye işlevleri kullanın. Çerçeve bir ayırıcı penceresi görüntülediğinde, önce üst çerçeveyi, sonra da ayırıcı pencereyi görüntüler. Çerçeve daha sonra bölmeleri ideal boyutlarına göre sütunlar ve satırlar halinde sıralar halinde, bölücü pencerenin istemci alanının sağ alt köşesinden sol üst köşeye kadar çalışır.
 
-Dinamik Bölümlendirici penceresindeki tüm bölmeler aynı sınıfta olmalıdır. Dinamik Bölümlendirici pencerelerini destekleyen tanıdık uygulamalar Microsoft Word ve Microsoft Excel içerir.
+Dinamik bir ayırıcı penceresindeki tüm bölmeler aynı sınıfta olmalıdır. Dinamik ayırıcı pencerelerini destekleyen tanıdık uygulamalar arasında Microsoft Word ve Microsoft Excel yer almaktadır.
 
-Statik Bölümlendirici penceresi oluşturmak için `CreateStatic` member işlevini kullanın. Kullanıcı yalnızca bir statik Bölümlendirici penceresindeki bölmelerin boyutunu veya sıralarını değil, yalnızca bölmeleri değiştirebilir.
+Statik `CreateStatic` ayırıcı penceresi oluşturmak için üye işlevi kullanın. Kullanıcı, yalnızca statik ayırıcı penceresindeki bölmelerin boyutunu değiştirebilir, sayılarını veya siparişlerini değil.
 
-Statik bölücüyü oluştururken tüm statik Bölümlendirici bölmelerini özel olarak oluşturmanız gerekir. Üst çerçevenin `OnCreateClient` üye işlevi döndürülmadan önce tüm bölmeleri oluşturun veya Framework pencereyi doğru bir şekilde görüntülemediğinizden emin olun.
+Statik ayırıcıyı oluştururken özellikle tüm statik ayırıcı bölmelerini oluşturmanız gerekir. Üst çerçevenin `OnCreateClient` üye işlevi dönmeden önce tüm bölmeleri oluşturduğunuzdan emin olun, yoksa çerçeve pencereyi doğru şekilde görüntülemez.
 
-`CreateStatic` member işlevi, minimum satır yüksekliği ve sütun genişliği 0 olan statik bir ayırıcıyı otomatik olarak başlatır. `Create`çağırdıktan sonra, [SetColumnInfo](#setcolumninfo) ve [Setrowinfo](#setrowinfo) üye işlevlerini çağırarak bu en az UMS ayarlayın. Ayrıca, istenen ideal bölme boyutlarını göstermek için `CreateStatic` çağırdıktan sonra `SetColumnInfo` ve `SetRowInfo` kullanın.
+`CreateStatic` Üye işlev, en az satır yüksekliği ve sütun genişliği 0 olan statik bir ayırıcıyı otomatik olarak başolarak alır. Aradıktan `Create` [sonra, SetColumnInfo](#setcolumninfo) ve [SetRowInfo](#setrowinfo) üye işlevlerini arayarak bu minimumları ayarlayın. Ayrıca `SetColumnInfo` kullanmak `SetRowInfo` ve `CreateStatic` sonra istenilen ideal bölme boyutları belirtmek için arayın.
 
-Statik ayırıcının tek tek bölmeleri genellikle farklı sınıflara aittir. Statik Bölümlendirici pencereler örnekleri için bkz. grafik Düzenleyicisi ve Windows Dosya Yöneticisi.
+Statik bir ayırıcının tek tek bölmeleri genellikle farklı sınıflara aittir. Statik ayırıcı pencere örnekleri için grafik düzenleyicisi ve Windows Dosya Yöneticisi'ne bakın.
 
-Ayırıcı pencere, özel kaydırma çubuklarını destekler (Bu, bölmelerin sahip olabileceği kaydırma çubuklarından ayrı olarak). Bu kaydırma çubukları `CSplitterWnd` nesnenin alt öğesi ve bölmelerle paylaşılır.
+Ayırıcı penceresi özel kaydırma çubuklarını destekler (bölmelerin sahip olabileceği kaydırma çubukları dışında). Bu kaydırma çubukları nesnenin `CSplitterWnd` alt larıdır ve bölmelerle paylaşılır.
 
-Ayırıcı penceresini oluştururken bu özel kaydırma çubuklarını oluşturursunuz. Örneğin, tek satıra sahip bir `CSplitterWnd`, iki sütun ve WS_VSCROLL stili, iki bölme tarafından paylaşılan dikey bir kaydırma çubuğu görüntüler. Kullanıcı kaydırma çubuğunu taşıdıkça WM_VSCROLL iletiler her iki bölmeye de gönderilir. Bölmeler, kaydırma çubuğu konumunu ayarlandığında paylaşılan kaydırma çubuğu ayarlanır.
+Ayırıcı penceresini oluştururken bu özel kaydırma çubuklarını oluşturursunuz. Örneğin, bir `CSplitterWnd` satır, iki sütun ve WS_VSCROLL stili olan bir iki bölme tarafından paylaşılan dikey kaydırma çubuğu görüntüler. Kullanıcı kaydırma çubuğunu hareket ettirdiğinde, WM_VSCROLL iletileri her iki bölmeye de gönderilir. Bölmeler kaydırma çubuğu konumunu ayarladığında, paylaşılan kaydırma çubuğu ayarlanır.
 
-Bölünmüş pencereler hakkında daha fazla bilgi için bkz. [teknik notta 29](../../mfc/tn029-splitter-windows.md).
+Splitter pencereleri hakkında daha fazla bilgi için [Teknik Not 29'a](../../mfc/tn029-splitter-windows.md)bakın.
 
-Dinamik Bölümlendirici pencereleri oluşturma hakkında daha fazla bilgi için bkz.:
+Dinamik ayırıcı pencereleri oluşturma hakkında daha fazla bilgi için bkz:
 
-- MFC örnek [karalama](../../overview/visual-cpp-samples.md)
+- MFC örnek [Karalama](../../overview/visual-cpp-samples.md)
 
-- MFC örnek [Viewex](../../overview/visual-cpp-samples.md).
+- MFC örnek [VIEWEX](../../overview/visual-cpp-samples.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 `CSplitterWnd`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxext. h
+**Üstbilgi:** afxext.h
 
-##  <a name="activatenext"></a>CSplitterWnd:: ActivateNext
+## <a name="csplitterwndactivatenext"></a><a name="activatenext"></a>CSplitterWnd::ActivateNext
 
-Bir sonraki bölmeyi veya önceki bölme komutunu gerçekleştirmek için Framework tarafından çağırılır.
+Sonraki Bölme veya Önceki Bölme komutunu gerçekleştirmek için çerçeve tarafından çağrılır.
 
 ```
 virtual void ActivateNext(BOOL bPrev = FALSE);
@@ -203,16 +203,16 @@ virtual void ActivateNext(BOOL bPrev = FALSE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bÖnceki*<br/>
-Hangi pencerenin etkinleşdiğini gösterir. Previous için **true** ; İleri için **false** .
+*bPrev*<br/>
+Hangi pencerenin etkinleştirilen gösterir. Önceki için **DOĞRU;** Sonraki için **YANLIŞ.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, `CSplitterWnd` uygulamasına temsilci seçmek için [CView](../../mfc/reference/cview-class.md) sınıfı tarafından kullanılan yüksek düzeyli bir komuttur.
+Bu üye işlev, [CView](../../mfc/reference/cview-class.md) sınıfı tarafından uygulamaya temsilci vermek `CSplitterWnd` için kullanılan üst düzey bir komutdur.
 
-##  <a name="canactivatenext"></a>CSplitterWnd:: CanActivateNext
+## <a name="csplitterwndcanactivatenext"></a><a name="canactivatenext"></a>CSplitterWnd::CanActivateNext
 
-Sonraki bölme veya önceki bölme komutunun mümkün olup olmadığını denetlemek için Framework tarafından çağırılır.
+Sonraki Bölme veya Önceki Bölme komutu şu anda mümkün olup olmadığını görmek için kontrol etmek için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL CanActivateNext(BOOL bPrev = FALSE);
@@ -220,20 +220,20 @@ virtual BOOL CanActivateNext(BOOL bPrev = FALSE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bÖnceki*<br/>
-Hangi pencerenin etkinleşdiğini gösterir. Previous için **true** ; İleri için **false** .
+*bPrev*<br/>
+Hangi pencerenin etkinleştirilen gösterir. Önceki için **DOĞRU;** Sonraki için **YANLIŞ.**
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, `CSplitterWnd` uygulamasına temsilci seçmek için [CView](../../mfc/reference/cview-class.md) sınıfı tarafından kullanılan yüksek düzeyli bir komuttur.
+Bu üye işlev, [CView](../../mfc/reference/cview-class.md) sınıfı tarafından uygulamaya temsilci vermek `CSplitterWnd` için kullanılan üst düzey bir komutdur.
 
-##  <a name="create"></a>CSplitterWnd:: Create
+## <a name="csplitterwndcreate"></a><a name="create"></a>CSplitterWnd::Oluştur
 
-Dinamik bir ayırıcı penceresi oluşturmak için `Create` üye işlevini çağırın.
+Dinamik bir ayırıcı penceresi oluşturmak `Create` için üye işlevi arayın.
 
 ```
 virtual BOOL Create(
@@ -249,53 +249,53 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-Bölümlendirici penceresinin üst çerçeve penceresi.
+Ayırıcı penceresinin ana çerçeve penceresi.
 
 *nMaxRows*<br/>
-Bölümlendirici penceresindeki en fazla satır sayısı. Bu değer 2 ' den fazla olmamalıdır.
+Bölücü penceresindeki en fazla satır sayısı. Bu değer 2'yi geçmemelidir.
 
 *nMaxCols*<br/>
-Bölümlendirici penceresindeki en fazla sütun sayısı. Bu değer 2 ' den fazla olmamalıdır.
+Bölücü penceresindeki en fazla sütun sayısı. Bu değer 2'yi geçmemelidir.
 
 *sizeMin*<br/>
-Bir bölmenin gösterileceği en küçük boyutu belirtir.
+Bölmenin görüntülenebileceği minimum boyutu belirtir.
 
-*pContext*<br/>
-[CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısına yönelik bir işaretçi. Çoğu durumda bu, üst çerçeve penceresine geçirilen *pContext* olabilir.
+*Pcontext*<br/>
+[CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısıiçin bir işaretçi. Çoğu durumda, bu üst çerçeve penceresine geçirilen *pContext* olabilir.
 
-*dwStyle*<br/>
+*Dwstyle*<br/>
 Pencere stilini belirtir.
 
-*NID*<br/>
-Pencerenin alt pencere KIMLIĞI. Ayırıcı pencere başka bir ayırıcı penceresinin içinde iç içe olmadığı takdirde KIMLIK AFX_IDW_PANE_FIRST olabilir.
+*Nıd*<br/>
+Pencerenin alt pencere kimliği. Ayırıcı penceresi başka bir ayırıcı penceresinin içine girmedikçe kimlik AFX_IDW_PANE_FIRST edilebilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki adımları gerçekleştirerek bir `CSplitterWnd` üst [CFrameWnd](../../mfc/reference/cframewnd-class.md) veya [Cmdicchild dwnd](../../mfc/reference/cmdichildwnd-class.md) nesnesine ekleyebilirsiniz:
+Aşağıdaki adımları atarak `CSplitterWnd` bir üst [CFrameWnd](../../mfc/reference/cframewnd-class.md) veya [CMDIChildWnd](../../mfc/reference/cmdichildwnd-class.md) nesnesi gömebilirsiniz:
 
-1. Ana çerçeveye bir `CSplitterWnd` üye değişkeni ekleyin.
+1. Üst çerçeveye bir `CSplitterWnd` üye değişken gömün.
 
-1. Üst çerçevenin [CFrameWnd:: OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) üye işlevini geçersiz kılın.
+1. Üst çerçevenin [CFrameWnd geçersiz kılın::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) üye işlevi.
 
-1. Geçersiz kılınan `OnCreateClient`içinden `Create` member işlevini çağırın.
+1. `Create` Üye işlevini geçersiz kılından `OnCreateClient`arayın.
 
-Üst çerçevenin içinden bir ayırıcı penceresi oluşturduğunuzda, üst çerçevenin *pContext* parametresini Bölümlendirici penceresine geçirin. Aksi takdirde, bu parametre NULL olabilir.
+Bir üst çerçeve içinden bir ayırıcı penceresi oluşturduğunuzda, üst çerçevenin *pContext* parametresini bölücü penceresine geçirin. Aksi takdirde, bu parametre NULL olabilir.
 
-Dinamik Bölümlendirici penceresinin başlangıçtaki en küçük satır yüksekliği ve sütun genişliği *sizeMin* parametresine göre ayarlanır. Bir bölmenin tamamen gösterilemeyecek kadar küçük olup olmadığını belirleyen bu minimum değer, [Setrowinfo](#setrowinfo) ve [SetColumnInfo](#setcolumninfo) üye işlevleriyle değiştirilebilir.
+Dinamik bir ayırıcı penceresinin ilk minimum satır yüksekliği ve sütun genişliği *sizeMin* parametresi tarafından ayarlanır. Bir bölmenin bütünüyle gösterilemeyecek kadar küçük olup olmadığını belirleyen bu minimum lar [SetRowInfo](#setrowinfo) ve [SetColumnInfo](#setcolumninfo) üye işlevleriyle değiştirilebilir.
 
-Dinamik Bölümlendirici pencereleri hakkında daha fazla bilgi için bkz. [birden çok belge türü, görünümler ve çerçeve pencereleri](../../mfc/multiple-document-types-views-and-frame-windows.md), [Teknik notun 29](../../mfc/tn029-splitter-windows.md)ve `CSplitterWnd` sınıfına genel bakış makalesindeki "Splitter pencereleri".
+Dinamik ayırıcı pencereler hakkında daha fazla bilgi için, birden [çok belge türleri, görünümler ve Çerçeve Windows,](../../mfc/multiple-document-types-views-and-frame-windows.md) [Teknik Not 29](../../mfc/tn029-splitter-windows.md)ve `CSplitterWnd` sınıfa genel bakış makalesinde "Splitter Windows" bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#125](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_1.cpp)]
 
-##  <a name="createscrollbarctrl"></a>CSplitterWnd:: CreateScrollBarCtrl
+## <a name="csplitterwndcreatescrollbarctrl"></a><a name="createscrollbarctrl"></a>CSplitterWnd::CreateScrollBarCtrl
 
-Paylaşılan bir kaydırma çubuğu denetimi oluşturmak için Framework tarafından çağırılır.
+Paylaşılan kaydırma çubuğu denetimi oluşturmak için çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL CreateScrollBarCtrl(
@@ -305,23 +305,23 @@ virtual BOOL CreateScrollBarCtrl(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwStyle*<br/>
+*Dwstyle*<br/>
 Pencere stilini belirtir.
 
-*NID*<br/>
-Pencerenin alt pencere KIMLIĞI. Ayırıcı pencere başka bir ayırıcı penceresinin içinde iç içe olmadığı takdirde KIMLIK AFX_IDW_PANE_FIRST olabilir.
+*Nıd*<br/>
+Pencerenin alt pencere kimliği. Ayırıcı penceresi başka bir ayırıcı penceresinin içine girmedikçe kimlik AFX_IDW_PANE_FIRST edilebilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kaydırma çubuğunun yanına daha fazla denetim eklemek için `CreateScrollBarCtrl` geçersiz kılın. Varsayılan davranış, normal Windows kaydırma çubuğu denetimleri oluşturmaktır.
+Kaydırma `CreateScrollBarCtrl` çubuğunun yanına ek denetimler eklemek için geçersiz kılın. Varsayılan davranış, normal Windows kaydırma çubuğu denetimleri oluşturmaktır.
 
-##  <a name="createstatic"></a>CSplitterWnd:: CreateStatic
+## <a name="csplitterwndcreatestatic"></a><a name="createstatic"></a>CSplitterWnd::CreateStatic
 
-Statik Bölümlendirici penceresi oluşturmak için `CreateStatic` üye işlevini çağırın.
+Statik bir ayırıcı penceresi oluşturmak `CreateStatic` için üye işlevi arayın.
 
 ```
 virtual BOOL CreateStatic(
@@ -335,47 +335,47 @@ virtual BOOL CreateStatic(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-Bölümlendirici penceresinin üst çerçeve penceresi.
+Ayırıcı penceresinin ana çerçeve penceresi.
 
-*nsatırlar*<br/>
-Sıra sayısı. Bu değer 16 ' yı aşmamalıdır.
+*Nrows*<br/>
+Sıra sayısı. Bu değer 16'yı geçmemelidir.
 
 *nCols*<br/>
-Sütun sayısı. Bu değer 16 ' yı aşmamalıdır.
+Sütun sayısı. Bu değer 16'yı geçmemelidir.
 
-*dwStyle*<br/>
+*Dwstyle*<br/>
 Pencere stilini belirtir.
 
-*NID*<br/>
-Pencerenin alt pencere KIMLIĞI. Ayırıcı pencere başka bir ayırıcı penceresinin içinde iç içe olmadığı takdirde KIMLIK AFX_IDW_PANE_FIRST olabilir.
+*Nıd*<br/>
+Pencerenin alt pencere kimliği. Ayırıcı penceresi başka bir ayırıcı penceresinin içine girmedikçe kimlik AFX_IDW_PANE_FIRST edilebilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CSplitterWnd`, genellikle aşağıdaki adımları uygulayarak bir üst `CFrameWnd` veya [Cmdictepdwnd](../../mfc/reference/cmdichildwnd-class.md) nesnesine katıştırılır:
+A `CSplitterWnd` genellikle aşağıdaki adımları `CFrameWnd` atarak bir üst veya [CMDIChildWnd](../../mfc/reference/cmdichildwnd-class.md) nesnesine katıştırılır:
 
-1. Ana çerçeveye bir `CSplitterWnd` üye değişkeni ekleyin.
+1. Üst çerçeveye bir `CSplitterWnd` üye değişken gömün.
 
 1. Üst çerçevenin `OnCreateClient` üye işlevini geçersiz kılın.
 
-1. Geçersiz kılınan [CFrameWnd:: OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient)içinden `CreateStatic` member işlevini çağırın.
+1. `CreateStatic` Üye işlevini geçersiz kılınan [CFrameWnd içinden arayın::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient).
 
-Statik Bölümlendirici penceresi, genellikle farklı sınıflardan sabit sayıda bölme içerir.
+Statik ayırıcı penceresi, genellikle farklı sınıflardan gelen sabit sayıda bölme içerir.
 
-Bir statik Bölümlendirici penceresi oluşturduğunuzda, tüm bölmelerini de aynı zamanda oluşturmanız gerekir. [CreateView](#createview) üye işlevi genellikle bu amaçla kullanılır, ancak başka bir görünüm olmayan sınıflar da oluşturabilirsiniz.
+Statik bir ayırıcı penceresi oluşturduğunuzda, aynı anda tüm bölmelerini oluşturmanız gerekir. [CreateView](#createview) üye işlevi genellikle bu amaç için kullanılır, ancak diğer nonview sınıfları da oluşturabilirsiniz.
 
-Statik Bölümlendirici penceresi için başlangıçtaki en küçük satır yüksekliği ve sütun genişliği 0 ' dır. Bu minimum değer, bir bölmenin tamamen gösterilemeyecek kadar küçük olduğunu belirleyen, [Setrowinfo](#setrowinfo) ve [SetColumnInfo](#setcolumninfo) üye işlevleriyle değiştirilebilir.
+Statik ayırıcı penceresi için ilk minimum satır yüksekliği ve sütun genişliği 0'dır. Bir bölmenin tam olarak gösterilemeyecek kadar küçük olduğunu belirleyen bu minimum lar [SetRowInfo](#setrowinfo) ve [SetColumnInfo](#setcolumninfo) üye işlevleriyle değiştirilebilir.
 
-Bir statik ayırıcı penceresine kaydırma çubukları eklemek için, WS_HSCROLL ve WS_VSCROLL stilleri *dwStyle*'a ekleyin.
+Statik ayırıcı penceresine kaydırma çubukları eklemek *için, dwStyle'a*WS_HSCROLL ve WS_VSCROLL stilleri ekleyin.
 
-Statik Bölümlendirici pencereleri hakkında daha fazla bilgi için, bkz. [birden çok belge türü, görünüm ve çerçeve penceresi](../../mfc/multiple-document-types-views-and-frame-windows.md), [Teknik notun 29](../../mfc/tn029-splitter-windows.md)ve `CSplitterWnd` sınıfına genel bakış.
+Birden [Çok Belge Türleri, Görünümler ve Çerçeve Windows](../../mfc/multiple-document-types-views-and-frame-windows.md), Teknik Not [29](../../mfc/tn029-splitter-windows.md)ve statik ayırıcı pencereler hakkında daha fazla bilgi için `CSplitterWnd` sınıf genel bakış makalede "Splitter Windows" bakın.
 
-##  <a name="createview"></a>CSplitterWnd:: CreateView
+## <a name="csplitterwndcreateview"></a><a name="createview"></a>CSplitterWnd::CreateView
 
-Bir statik ayırıcı pencere için bölmeleri oluşturur.
+Statik bir ayırıcı penceresi için bölmeleri oluşturur.
 
 ```
 virtual BOOL CreateView(
@@ -388,38 +388,38 @@ virtual BOOL CreateView(
 
 ### <a name="parameters"></a>Parametreler
 
-*sırada*<br/>
-Yeni görünümün yerleştirileceği ayırıcı pencere satırını belirtir.
+*Satır*<br/>
+Yeni görünümü yerleştirmek için ayırıcı pencere satırını belirtir.
 
-*sütun*<br/>
-Yeni görünümün yerleştirileceği ayırıcı pencere sütununu belirtir.
+*Albay*<br/>
+Yeni görünümü yerleştirmek için ayırıcı pencere sütunu belirtir.
 
 *pViewClass*<br/>
-Yeni görünümün [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) öğesini belirtir.
+Yeni görünümün [CRuntimeClass'ını](../../mfc/reference/cruntimeclass-structure.md) belirtir.
 
 *sizeInit*<br/>
 Yeni görünümün başlangıç boyutunu belirtir.
 
-*pContext*<br/>
-Görünümü oluşturmak için kullanılan oluşturma bağlamına yönelik bir işaretçi (genellikle üst *çerçeveye geçirilen geçersiz* kılınan [CFrameWnd:: OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient) üye işlevine ayırıcı pencerenin oluşturulduğu).
+*Pcontext*<br/>
+Görünümü oluşturmak için kullanılan bir oluşturma bağlamına işaretçi (genellikle *alt* çerçevenin geçersiz kılınan [CFrameWnd'ine geçirilen bağlam::Ayırıcı](../../mfc/reference/cframewnd-class.md#oncreateclient) penceresinin oluşturulduğu OnCreateClient üye işlevi).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve ayırıcıyı görüntülemeden önce statik Bölümlendirici penceresinin tüm bölmeleri oluşturulmalıdır.
+Çerçeve ayırıcıyı görüntülemeden önce statik ayırıcı pencerenin tüm bölmeleri oluşturulmalıdır.
 
-Çerçeve ayrıca bir dinamik ayırıcı penceresinin kullanıcısı bir bölmeyi, satırı veya sütunu böldüğünü yeni bölmeler oluşturmak için bu üye işlevini çağırır.
+Çerçeve ayrıca, dinamik bir ayırıcı penceresinin kullanıcısı bölmeyi, satırı veya sütunu böldüğünde yeni bölmeler oluşturmak için bu üye işlevi de çağırır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#4](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_2.cpp)]
 
-##  <a name="csplitterwnd"></a>CSplitterWnd:: CSplitterWnd
+## <a name="csplitterwndcsplitterwnd"></a><a name="csplitterwnd"></a>CSplitterWnd::CSplitterWnd
 
-`CSplitterWnd` nesnesi oluşturmak için çağırın.
+Bir `CSplitterWnd` nesne oluşturmak için arayın.
 
 ```
 CSplitterWnd();
@@ -427,11 +427,11 @@ CSplitterWnd();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki adımda `CSplitterWnd` nesnesi oluşturun. İlk olarak, `CSplitterWnd` nesnesini oluşturan oluşturucuyu çağırın ve ardından Bölümlendirici penceresini oluşturan ve `CSplitterWnd` nesnesine ekleyen üye [Oluştur](#create) işlevini çağırın.
+Bir `CSplitterWnd` nesneyi iki adımda oluştur. İlk olarak, `CSplitterWnd` nesneyi oluşturan oluşturucuyu çağırın ve ardından ayırıcı penceresini oluşturan ve `CSplitterWnd` nesneye bağlanan Üye [Oluştur](#create) işlevini çağırın.
 
-##  <a name="deletecolumn"></a>CSplitterWnd::D eleteColumn
+## <a name="csplitterwnddeletecolumn"></a><a name="deletecolumn"></a>CSplitterWnd::DeleteSütun
 
-Ayırıcı penceresinden bir sütun siler.
+Bölme penceresinden bir sütunu siler.
 
 ```
 virtual void DeleteColumn(int colDelete);
@@ -444,11 +444,11 @@ Silinecek sütunu belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, dinamik ayırıcı penceresinin mantığını (ayırıcı pencere SPLS_DYNAMIC_SPLIT stiline sahipse) uygulamak için çerçeve tarafından çağırılır. Daha gelişmiş dinamik bölümlendiricileri uygulamak için, [CreateView](#createview)sanal işleviyle birlikte özelleştirilebilir.
+Bu üye işlev, dinamik ayırıcı penceresinin mantığını uygulamak için çerçeve tarafından çağrılır (yani, ayırıcı penceresi SPLS_DYNAMIC_SPLIT stiline sahipse). Bu özelleştirilebilir, sanal fonksiyonu [CreateView](#createview)ile birlikte , daha gelişmiş dinamik bölücüler uygulamak için.
 
-##  <a name="deleterow"></a>CSplitterWnd::D eleteRow
+## <a name="csplitterwnddeleterow"></a><a name="deleterow"></a>CSplitterWnd::DeleteRow
 
-Ayırıcı penceresinden bir satır siler.
+Ayırıcı penceresinden bir satırı siler.
 
 ```
 virtual void DeleteRow(int rowDelete);
@@ -456,16 +456,16 @@ virtual void DeleteRow(int rowDelete);
 
 ### <a name="parameters"></a>Parametreler
 
-*rowDelete*<br/>
+*satırSilin*<br/>
 Silinecek satırı belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, dinamik ayırıcı penceresinin mantığını (ayırıcı pencere SPLS_DYNAMIC_SPLIT stiline sahipse) uygulamak için çerçeve tarafından çağırılır. Daha gelişmiş dinamik bölümlendiricileri uygulamak için, [CreateView](#createview)sanal işleviyle birlikte özelleştirilebilir.
+Bu üye işlev, dinamik ayırıcı penceresinin mantığını uygulamak için çerçeve tarafından çağrılır (yani, ayırıcı penceresi SPLS_DYNAMIC_SPLIT stiline sahipse). Bu özelleştirilebilir, sanal fonksiyonu [CreateView](#createview)ile birlikte , daha gelişmiş dinamik bölücüler uygulamak için.
 
-##  <a name="deleteview"></a>CSplitterWnd::D eleteView
+## <a name="csplitterwnddeleteview"></a><a name="deleteview"></a>CSplitterWnd::DeleteView
 
-Ayırıcı penceresinden bir görünüm siler.
+Ayırıcı penceresinden bir görünümü siler.
 
 ```
 virtual void DeleteView(
@@ -475,21 +475,21 @@ virtual void DeleteView(
 
 ### <a name="parameters"></a>Parametreler
 
-*sırada*<br/>
-Görünümün silineceği ayırıcı pencere satırını belirtir.
+*Satır*<br/>
+Görünümü silmek için ayırıcı pencere satırını belirtir.
 
-*sütun*<br/>
-Görünümün silineceği ayırıcı pencere sütununu belirtir.
+*Albay*<br/>
+Görünümü silmek için ayırıcı pencere sütunu belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Etkin görünüm siliniyorsa, sonraki görünüm etkin olur. Varsayılan uygulama, görünümün [PostNcDestroy](../../mfc/reference/cwnd-class.md#postncdestroy)'da otomatik olarak silineceğini varsayar.
+Etkin görünüm siliniyorsa, bir sonraki görünüm etkin olur. Varsayılan uygulama görünümü [PostNcDestroy](../../mfc/reference/cwnd-class.md#postncdestroy)otomatik siler varsayar.
 
-Bu üye işlevi, dinamik ayırıcı penceresinin mantığını (ayırıcı pencere SPLS_DYNAMIC_SPLIT stiline sahipse) uygulamak için çerçeve tarafından çağırılır. Daha gelişmiş dinamik bölümlendiricileri uygulamak için, [CreateView](#createview)sanal işleviyle birlikte özelleştirilebilir.
+Bu üye işlev, dinamik ayırıcı penceresinin mantığını uygulamak için çerçeve tarafından çağrılır (yani, ayırıcı penceresi SPLS_DYNAMIC_SPLIT stiline sahipse). Bu özelleştirilebilir, sanal fonksiyonu [CreateView](#createview)ile birlikte , daha gelişmiş dinamik bölücüler uygulamak için.
 
-##  <a name="dokeyboardsplit"></a>CSplitterWnd::D oKeyboardSplit
+## <a name="csplitterwnddokeyboardsplit"></a><a name="dokeyboardsplit"></a>CSplitterWnd::DoKeyboardSplit
 
-Klavye bölme komutunu, genellikle "pencere Böl" gerçekleştirir.
+Klavye bölme komutunu gerçekleştirir, genellikle "Pencere Bölme" olur.
 
 ```
 virtual BOOL DoKeyboardSplit();
@@ -497,15 +497,15 @@ virtual BOOL DoKeyboardSplit();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, `CSplitterWnd` uygulamasına temsilci seçmek için [CView](../../mfc/reference/cview-class.md) sınıfı tarafından kullanılan yüksek düzeyli bir komuttur.
+Bu üye işlev, [CView](../../mfc/reference/cview-class.md) sınıfı tarafından uygulamaya temsilci vermek `CSplitterWnd` için kullanılan üst düzey bir komutdur.
 
-##  <a name="doscroll"></a>CSplitterWnd::D oScroll
+## <a name="csplitterwnddoscroll"></a><a name="doscroll"></a>CSplitterWnd::DoScroll
 
-Bölünmüş pencerelerin eşitlenmiş kaydırmasını gerçekleştirir.
+Bölünmüş pencerelerin senkronize kaydırma gerçekleştirir.
 
 ```
 virtual BOOL DoScroll(
@@ -517,37 +517,37 @@ virtual BOOL DoScroll(
 ### <a name="parameters"></a>Parametreler
 
 *pViewFrom*<br/>
-Kaydırılan iletinin kaynaklandığı görünüme yönelik bir işaretçi.
+Kaydırma iletisinin kaynağı olan görünüme işaretçi.
 
 *nScrollCode*<br/>
-Kullanıcının kaydırma isteğini gösteren bir kaydırma çubuğu kodu. Bu parametre iki bölümden oluşur: yatay olarak oluşan kaydırma türünü belirleyen düşük sıralı bir bayt ve dikey olarak oluşan kaydırma türünü belirleyen yüksek sıralı bir bayt.
+Kullanıcının kaydırma isteğini gösteren bir kaydırma-barkod kodu. Bu parametre iki bölümden oluşur: yatay olarak gerçekleşen kaydırma türünü belirleyen düşük sıralı bayt ve dikey olarak gerçekleşen kaydırma türünü belirleyen yüksek sıralı bayt:
 
-- SB_BOTTOM en alta kayar.
+- SB_BOTTOM Kayar alta.
 
-- SB_LINEDOWN bir satır aşağı kaydırır.
+- SB_LINEDOWN Bir satır aşağı kaydırır.
 
-- SB_LINEUP bir satır yukarı kaydırır.
+- SB_LINEUP Bir sıra yukarı kaydırır.
 
-- SB_PAGEDOWN bir sayfa aşağı kaydırır.
+- SB_PAGEDOWN Bir sayfa aşağı kaydırır.
 
 - SB_PAGEUP bir sayfa yukarı kaydırır.
 
-- SB_TOP üste kayar.
+- SB_TOP Üst lere kaydırır.
 
 *bDoScroll*<br/>
-Belirtilen kaydırma eyleminin oluşup oluşmadığını belirler. *BDoScroll* true ise (yani, bir alt pencere varsa ve bölünmüş pencerelerin bir kaydırma aralığı varsa), belirtilen kaydırma eylemi gerçekleştirilebilir; *bDoScroll* false ise (yani, alt pencere yoksa veya bölünmüş görünümlerin hiçbir kaydırma aralığı yoksa), kaydırma gerçekleşmez.
+Belirtilen kaydırma eyleminin oluşup oluşmadığını belirler. *bDoScroll* TRUE ise (diğer bir alt pencere varsa ve bölünmüş pencerelerde kaydırma aralığı varsa), belirtilen kaydırma eylemi gerçekleşebilir; *bDoScroll* FALSE ise (yani, alt pencere yoksa veya bölünmüş görünümler kaydırma aralığı yoksa), kaydırma oluşmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşitlenmiş kaydırma oluşursa sıfır dışı; Aksi takdirde 0.
+Senkronize kaydırma oluşursa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, görünüm bir kaydırma iletisi aldığında bölünmüş pencerelerin eşitlenmiş kaydırmasını gerçekleştirmek için çerçevesi tarafından çağırılır. Eşitlenmiş kaydırmaya izin verilmediğinden Kullanıcı tarafından bir eylem gerektirecek şekilde geçersiz kılın.
+Bu üye işlev, görünüm bir kaydırma iletisi aldığında bölünmüş pencerelerin eşitlenmiş kaydırma gerçekleştirmek için çerçeve tarafından çağrılır. Eşitlenmiş kaydırma izin verilmeden önce kullanıcı tarafından bir eylem gerektiren geçersiz kılma.
 
-##  <a name="doscrollby"></a>CSplitterWnd::D oScrollBy
+## <a name="csplitterwnddoscrollby"></a><a name="doscrollby"></a>CSplitterWnd::DoScrollBy
 
-Bölünmüş pencereleri verilen sayıda pikselle kaydırır.
+Kaydırma, pencereleri belirli bir piksel sayısına böler.
 
 ```
 virtual BOOL DoScrollBy(
@@ -559,27 +559,27 @@ virtual BOOL DoScrollBy(
 ### <a name="parameters"></a>Parametreler
 
 *pViewFrom*<br/>
-Kaydırılan iletinin kaynaklandığı görünüme yönelik bir işaretçi.
+Kaydırma iletisinin kaynağı olan görünüme işaretçi.
 
-*sizeScroll*<br/>
-Yatay ve dikey olarak kaydırılacağı piksel sayısı.
+*boyutKaydırma*<br/>
+Yatay ve dikey olarak kaydırılacak piksel sayısı.
 
 *bDoScroll*<br/>
-Belirtilen kaydırma eyleminin oluşup oluşmadığını belirler. *BDoScroll* true ise (yani, bir alt pencere varsa ve bölünmüş pencerelerin bir kaydırma aralığı varsa), belirtilen kaydırma eylemi gerçekleştirilebilir; *bDoScroll* false ise (yani, alt pencere yoksa veya bölünmüş görünümlerin hiçbir kaydırma aralığı yoksa), kaydırma gerçekleşmez.
+Belirtilen kaydırma eyleminin oluşup oluşmadığını belirler. *bDoScroll* TRUE ise (diğer bir alt pencere varsa ve bölünmüş pencerelerde kaydırma aralığı varsa), belirtilen kaydırma eylemi gerçekleşebilir; *bDoScroll* FALSE ise (yani, alt pencere yoksa veya bölünmüş görünümler kaydırma aralığı yoksa), kaydırma oluşmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşitlenmiş kaydırma oluşursa sıfır dışı; Aksi takdirde 0.
+Senkronize kaydırma oluşursa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, bir kaydırma iletisine yanıt olarak çerçeve tarafından, bölünmüş pencerelerin, *sizeScroll*tarafından belirtilen piksel cinsinden miktarı eşitlenmiş şekilde kaymasını gerçekleştirecek şekilde çağrılır. Pozitif değerler aşağı kaydırmayı ve sağa doğru gösterir; negatif değerler yukarı ve sola kaydırma gösterir.
+Bu üye işlev, bölünmüş pencerelerin *boyutScroll*ile gösterilen piksel miktarına göre senkronize kaydırma yapmak için bir kaydırma iletisine yanıt olarak çerçeve tarafından çağrılır. Pozitif değerler aşağı ve sağa kaydırma gösterir; negatif değerler yukarı ve sola kaydırma gösterir.
 
-Kaydırmaya izin vermeden önce Kullanıcı tarafından bir eylem gerektirecek şekilde geçersiz kılın.
+Kaydırmaya izin vermeden önce kullanıcı tarafından bir eylem gerektirecek şekilde geçersiz kılın.
 
-##  <a name="getactivepane"></a>CSplitterWnd:: GetActivePane
+## <a name="csplitterwndgetactivepane"></a><a name="getactivepane"></a>CSplitterWnd::GetActivePane
 
-Çerçevedeki odağın veya etkin görünümden etkin bölmeyi belirler.
+Etkin bölmeyi odaktan veya çerçevedeki etkin görünümden belirler.
 
 ```
 virtual CWnd* GetActivePane(
@@ -590,20 +590,20 @@ virtual CWnd* GetActivePane(
 ### <a name="parameters"></a>Parametreler
 
 *pRow*<br/>
-Etkin bölmenin satır numarasını almak için bir **int** işaretçisi.
+Etkin bölmenin satır numarasını almak için **int** için bir işaretçi.
 
 *pCol*<br/>
-Etkin bölmenin sütun numarasını almak için bir **int** işaretçisi.
+Etkin bölmenin sütun numarasını almak için **int** için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Etkin bölmeye yönelik işaretçi. Etkin bir bölme bulunmuyorsa NULL.
+Etkin bölmeye işaretçi. Etkin bölme yoksa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, bir bölücü penceresinde etkin bölmeyi belirlemede, Framework tarafından çağırılır. Etkin bölmeyi almadan önce Kullanıcı tarafından bir eylem gerektirecek şekilde geçersiz kılın.
+Bu üye işlev, bir ayırıcı penceresinde etkin bölmeyi belirlemek için çerçeve tarafından çağrılır. Etkin bölmeyi almadan önce kullanıcı tarafından bir eylem gerektirecek şekilde geçersiz kılın.
 
-##  <a name="getcolumncount"></a>CSplitterWnd:: GetColumnCount
+## <a name="csplitterwndgetcolumncount"></a><a name="getcolumncount"></a>CSplitterWnd::GetColumnCount
 
 Geçerli bölme sütun sayısını döndürür.
 
@@ -613,11 +613,11 @@ int GetColumnCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölümlendirici içindeki geçerli sütun sayısını döndürür. Statik Bölümlendirici için, en fazla sütun sayısı da bu olacaktır.
+Ayırıcıdaki geçerli sütun sayısını verir. Statik bir ayırıcı için bu da en fazla sütun sayısı olacaktır.
 
-##  <a name="getcolumninfo"></a>CSplitterWnd:: GetColumnInfo
+## <a name="csplitterwndgetcolumninfo"></a><a name="getcolumninfo"></a>CSplitterWnd::GetColumnInfo
 
-Belirtilen sütundaki bilgileri döndürür.
+Belirtilen sütundaki bilgileri verir.
 
 ```
 void GetColumnInfo(
@@ -628,18 +628,18 @@ void GetColumnInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*sütun*<br/>
-Bir sütunu belirtir.
+*Albay*<br/>
+Bir sütun belirtir.
 
 *cxCur*<br/>
 Sütunun geçerli genişliğine ayarlanacak bir **int** başvurusu.
 
 *cxMin*<br/>
-Sütunun geçerli en küçük genişliğine ayarlanacak bir **int** başvurusu.
+Sütunun geçerli minimum genişliğine ayarlanacak bir **int** başvurusu.
 
-##  <a name="getpane"></a>CSplitterWnd:: GetPane
+## <a name="csplitterwndgetpane"></a><a name="getpane"></a>CSplitterWnd::GetPane
 
-Belirtilen satır ve sütundaki bölmeyi döndürür.
+Bölmesi belirtilen satır ve sütunda döndürür.
 
 ```
 CWnd* GetPane(
@@ -649,19 +649,19 @@ CWnd* GetPane(
 
 ### <a name="parameters"></a>Parametreler
 
-*sırada*<br/>
-Bir satırı belirtir.
+*Satır*<br/>
+Bir satır belirtir.
 
-*sütun*<br/>
-Bir sütunu belirtir.
+*Albay*<br/>
+Bir sütun belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen satır ve sütundaki bölmeyi döndürür. Döndürülen bölme genellikle bir [CView](../../mfc/reference/cview-class.md)ile türetilmiş sınıftır.
+Bölmesi belirtilen satır ve sütunda döndürür. Döndürülen bölme genellikle [CView](../../mfc/reference/cview-class.md)türetilmiş bir sınıftır.
 
-##  <a name="getrowcount"></a>CSplitterWnd:: GetRowCount
+## <a name="csplitterwndgetrowcount"></a><a name="getrowcount"></a>CSplitterWnd::GetRowCount
 
-Geçerli bölme satırı sayısını döndürür.
+Geçerli bölme satır sayısını döndürür.
 
 ```
 int GetRowCount() const;
@@ -669,11 +669,11 @@ int GetRowCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayırıcı penceresindeki geçerli satır sayısını döndürür. Statik Bölümlendirici penceresinde bu, en fazla satır sayısı olarak da olacaktır.
+Ayırıcı penceresindegeçerli satır sayısını verir. Statik ayırıcı penceresi için bu da en fazla satır sayısı olacaktır.
 
-##  <a name="getrowinfo"></a>CSplitterWnd:: Getrowinınfo
+## <a name="csplitterwndgetrowinfo"></a><a name="getrowinfo"></a>CSplitterWnd::GetRowInfo
 
-Belirtilen satırdaki bilgileri döndürür.
+Belirtilen satırdaki bilgileri verir.
 
 ```
 void GetRowInfo(
@@ -684,22 +684,22 @@ void GetRowInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*sırada*<br/>
-Bir satırı belirtir.
+*Satır*<br/>
+Bir satır belirtir.
 
-*Bu*<br/>
-Satırın piksel cinsinden geçerli yüksekliğine ayarlanması için **tamsayı** başvurusu.
+*cyCur*<br/>
+Satırın pikseldeki geçerli yüksekliğine ayarlanacak **int'e** başvuru.
 
-*Cydk*<br/>
-Satırın piksel cinsinden geçerli minimum yüksekliğine ayarlanması için **tamsayı** başvurusu.
+*cyMin*<br/>
+Satırın piksellerde geçerli minimum yüksekliğe ayarlanacak **int'e** başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen satır hakkında bilgi edinmek için bu üye işlevi çağırın. *Cyur* parametresi, belirtilen satırın geçerli yüksekliğiyle doldurulmuştur ve *cyMin* değeri satırın en küçük yüksekliğiyle doldurulur.
+Belirtilen satır hakkında bilgi almak için bu üye işlevini arayın. *CyCur* parametresi belirtilen satırın geçerli yüksekliğiyle doldurulur ve *cyMin* satırın minimum yüksekliğiyle doldurulur.
 
-##  <a name="getscrollstyle"></a>CSplitterWnd:: GetScrollStyle
+## <a name="csplitterwndgetscrollstyle"></a><a name="getscrollstyle"></a>CSplitterWnd::GetScrollStyle
 
-Ayırıcı pencerenin paylaşılan kaydırma çubuğu stilini döndürür.
+Bölücü penceresi için paylaşılan kaydırma çubuğu stilini döndürür.
 
 ```
 DWORD GetScrollStyle() const;
@@ -707,17 +707,17 @@ DWORD GetScrollStyle() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, aşağıdaki Windows stil bayraklarından bir veya daha fazlası:
+Başarılı olursa, aşağıdaki windows stili bayraklarından biri veya birkaçı:
 
-- Ayırıcı şu anda paylaşılan yatay kaydırma çubuklarını yönetirse WS_HSCROLL.
+- WS_HSCROLL Bölücü şu anda paylaşılan yatay kaydırma çubuklarını yönetiyorsa.
 
-- Ayırıcı şu anda paylaşılan dikey kaydırma çubuklarını yönetirse WS_VSCROLL.
+- WS_VSCROLL Bölücü şu anda paylaşılan dikey kaydırma çubuklarını yönetiyorsa.
 
-Sıfır ise, ayırıcı pencere şu anda herhangi bir paylaşılan kaydırma çubuğunu yönetmez.
+Sıfır ise, bölücü penceresi şu anda paylaşılan kaydırma çubuklarını yönetmez.
 
-##  <a name="idfromrowcol"></a>CSplitterWnd:: ıdfromrowcol
+## <a name="csplitterwndidfromrowcol"></a><a name="idfromrowcol"></a>CSplitterWnd::IdFromRowCol
 
-Bölme için alt pencere KIMLIĞINI belirtilen satırda ve sütunda alır.
+Belirtilen satır ve sütundaki bölmenin alt pencere kimliğini alır.
 
 ```
 int IdFromRowCol(
@@ -727,27 +727,27 @@ int IdFromRowCol(
 
 ### <a name="parameters"></a>Parametreler
 
-*sırada*<br/>
+*Satır*<br/>
 Ayırıcı pencere satırını belirtir.
 
-*sütun*<br/>
-Ayırıcı pencere sütununu belirtir.
+*Albay*<br/>
+Ayırıcı pencere sütunu belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölmenin alt pencere KIMLIĞI.
+Bölmenin alt pencere kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, görünüm olmayan görünümler oluşturmak için kullanılır ve bölme mevcut olmadan önce çağrılabilir.
+Bu üye işlev, görünüm olmayan ları bölme olarak oluşturmak için kullanılır ve bölme var olmadan önce çağrılabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#5](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_3.cpp)]
 
-##  <a name="ischildpane"></a>CSplitterWnd:: ıschildpane
+## <a name="csplitterwndischildpane"></a><a name="ischildpane"></a>CSplitterWnd::IsChildPane
 
-*PWnd* 'in Şu anda bu splitter penceresinin alt bölmesi olup olmadığını belirler.
+*pWnd'nin* şu anda bu ayırıcı pencerenin alt bölmesi olup olmadığını belirler.
 
 ```
 BOOL IsChildPane(
@@ -758,30 +758,30 @@ BOOL IsChildPane(
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-Sınanacak [CWnd](../../mfc/reference/cwnd-class.md) nesnesine yönelik bir işaretçi.
+*Pwnd*<br/>
+Test edilecek bir [CWnd](../../mfc/reference/cwnd-class.md) nesnesine işaretçi.
 
 *pRow*<br/>
-Satır numarasının kaydedileceği bir **int** işaretçisi.
+Satır numarasını depolayabilmek için bir **int** işaretçisi.
 
 *pCol*<br/>
-Sütun numarasının depolandığı bir **int** için bir işaretçi.
+Sütun numarasını depolayabilmek için bir **int** işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır değilse, *pWnd* Şu anda bu ayırıcı pencerenin bir alt bölmesi ve *Prow* ve *pCol* , bölme penceresindeki bölmenin konumuyla doldurulmuştur. *PWnd* bu splitter penceresinin alt bölmesi değilse, 0 döndürülür.
+Sıfır değilse, *pWnd* şu anda bu bölücü penceresinin bir alt bölmesi ve *pRow* ve *pCol* ayırıcı penceresinde bölmekonumu ile doldurulur. *pWnd* bu ayırıcı penceresinin alt bölmesi değilse, 0 döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-6,0 ' C++ dan önceki Visual sürümlerinde bu işlev şu şekilde tanımlanmıştır
+6.0'dan önceki Visual C++ sürümlerinde bu işlev,
 
 `BOOL IsChildPane(CWnd* pWnd, int& row, int& col);`
 
-Bu sürüm artık kullanılmıyor ve kullanılmamalıdır.
+Bu sürüm artık eskidir ve kullanılmamalıdır.
 
-##  <a name="istracking"></a>CSplitterWnd:: IsTracking
+## <a name="csplitterwndistracking"></a><a name="istracking"></a>CSplitterWnd::IsTracking
 
-Penceredeki Bölümlendirici çubuğunun Şu anda taşınıp taşınmadığını öğrenmek için bu üye işlevi çağırın.
+Penceredeki ayırıcı çubuğunun şu anda taşınıp taşınmamakta olup olmadığını belirlemek için bu üye işlevi arayın.
 
 ```
 BOOL IsTracking();
@@ -789,11 +789,11 @@ BOOL IsTracking();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir Splitter işlemi devam ediyorsa sıfır dışı; Aksi takdirde 0.
+Bir ayırıcı işlemi devam ediyorsa sıfır olmayan; aksi takdirde 0.
 
-##  <a name="ondrawsplitter"></a>CSplitterWnd:: OnDrawSplitter
+## <a name="csplitterwndondrawsplitter"></a><a name="ondrawsplitter"></a>CSplitterWnd::OnDrawSplitter
 
-Bölünmüş pencerenin bir görüntüsünü oluşturur.
+Bölünmüş bir pencerenin görüntüsünü görüntüler.
 
 ```
 virtual void OnDrawSplitter(
@@ -804,32 +804,32 @@ virtual void OnDrawSplitter(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-İçinde çizilecek cihaz bağlamına yönelik bir işaretçi. *PDC* null Ise, [CWnd:: RedrawWindow](../../mfc/reference/cwnd-class.md#redrawwindow) Framework tarafından çağrılır ve bölünmüş pencere çizilmez.
+*Pdc*<br/>
+Çizmek için aygıt bağlamına bir işaretçi. *pDC* NULL ise, [cwnd::RedrawWindow](../../mfc/reference/cwnd-class.md#redrawwindow) çerçeve tarafından çağrılır ve hiçbir bölünmüş pencere çizilir.
 
-*nTür*<br/>
-`enum ESplitType`bir değeri, aşağıdakilerden biri olabilir:
+*nTipi*<br/>
+Bir değeri `enum ESplitType`, aşağıdakilerden biri olabilir:
 
-- Bölümlendirici sürükleme kutusunu `splitBox`.
+- `splitBox`Ayırıcı sürükleme kutusu.
 
-- iki bölünmüş pencere arasında görünen çubuğu `splitBar`.
+- `splitBar`İki bölme pencere arasında görünen çubuk.
 
-- bölünmüş pencerelerin kesişimini `splitIntersection`. Bu öğe, Windows 95/98 üzerinde çalışırken çağrılmayacak.
+- `splitIntersection`Bölünmüş pencerelerin kesiştiği yer. Bu öğe, Windows 95/98'de çalışırken çağrılmaz.
 
-- Bölünmüş pencere kenarlıklarını `splitBorder`.
+- `splitBorder`Bölünmüş pencere kenarlıkları.
 
 *Rect*<br/>
-Bölünmüş pencerelerin boyutunu ve şeklini belirten bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine başvuru.
+Bölünmüş pencerelerin boyutunu ve şeklini belirten bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine yapılan başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, bir splitter penceresinin tam özelliklerini çizmek ve belirtmek için Framework tarafından çağırılır. Bir ayırıcı penceresinin çeşitli grafik bileşenleri için canlandırın 'nin gelişmiş özelleştirmesi için `OnDrawSplitter` geçersiz kılın. Varsayılan görüntü, Splitter çubuklarının Kesişimleriyle birlikte karıştırılmasının yanı sıra Windows veya Microsoft Windows 95/98 için Microsoft 'a yönelik bölümlendiricine benzer.
+Bu üye işlev, bir ayırıcı pencerenin tam özelliklerini çizmek ve belirtmek için çerçeve tarafından çağrılır. Bir `OnDrawSplitter` ayırıcı pencerenin çeşitli grafik bileşenleri için görüntülerin gelişmiş özelleştirme için geçersiz kılma. Varsayılan görüntüler, bölünen çubukların kesişmelerinin bir araya getirilmiş olması nedeniyle Windows için Microsoft İşleri veya Microsoft Windows 95/98'deki ayırıcıya benzer.
 
-Dinamik Bölümlendirici pencereleri hakkında daha fazla bilgi için bkz. [birden çok belge türü, görünümler ve çerçeve pencereleri](../../mfc/multiple-document-types-views-and-frame-windows.md), [Teknik notun 29](../../mfc/tn029-splitter-windows.md)ve `CSplitterWnd` sınıfına genel bakış makalesindeki "Splitter pencereleri".
+Dinamik ayırıcı pencereler hakkında daha fazla bilgi için, birden [çok belge türleri, görünümler ve Çerçeve Windows,](../../mfc/multiple-document-types-views-and-frame-windows.md) [Teknik Not 29](../../mfc/tn029-splitter-windows.md)ve `CSplitterWnd` sınıfa genel bakış makalesinde "Splitter Windows" bakın.
 
-##  <a name="oninverttracker"></a>CSplitterWnd:: Onınevirttracker
+## <a name="csplitterwndoninverttracker"></a><a name="oninverttracker"></a>CSplitterWnd::OnInvertTracker
 
-Bölünmüş pencerenin görüntüsünü, çerçeve penceresiyle aynı boyut ve şekle sahip olacak şekilde işler.
+Bölünmüş pencerenin görüntüsünü çerçeve penceresiyle aynı boyut ve şekle bölüyor.
 
 ```
 virtual void OnInvertTracker(const CRect& rect);
@@ -838,17 +838,17 @@ virtual void OnInvertTracker(const CRect& rect);
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-İzleme dikdörtgenini belirten `CRect` nesnesine başvuru.
+İzleme dikdörtgenini belirten bir `CRect` nesneye başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, bölümlendiricileri yeniden boyutlandırılırken Framework tarafından çağırılır. Ayırıcı penceresinin Imagery öğesinin gelişmiş özelleştirmesi için `OnInvertTracker` geçersiz kılın. Varsayılan görüntü, Splitter çubuklarının Kesişimleriyle birlikte karıştırılmasının yanı sıra Windows veya Microsoft Windows 95/98 için Microsoft 'a yönelik bölümlendiricine benzer.
+Bu üye işlev, bölücülerin yeniden boyutlandırılması sırasında çerçeve tarafından çağrılır. Ayırıcı `OnInvertTracker` penceresinin görüntülerinin gelişmiş özelleştirmesi için geçersiz kılın. Varsayılan görüntüler, bölünen çubukların kesişmelerinin bir araya getirilmiş olması nedeniyle Windows için Microsoft İşleri veya Microsoft Windows 95/98'deki ayırıcıya benzer.
 
-Dinamik Bölümlendirici pencereleri hakkında daha fazla bilgi için bkz. [birden çok belge türü, görünümler ve çerçeve pencereleri](../../mfc/multiple-document-types-views-and-frame-windows.md), [Teknik notun 29](../../mfc/tn029-splitter-windows.md)ve `CSplitterWnd` sınıfına genel bakış makalesindeki "Splitter pencereleri".
+Dinamik ayırıcı pencereler hakkında daha fazla bilgi için, birden [çok belge türleri, görünümler ve Çerçeve Windows,](../../mfc/multiple-document-types-views-and-frame-windows.md) [Teknik Not 29](../../mfc/tn029-splitter-windows.md)ve `CSplitterWnd` sınıfa genel bakış makalesinde "Splitter Windows" bakın.
 
-##  <a name="recalclayout"></a>CSplitterWnd:: RecalcLayout
+## <a name="csplitterwndrecalclayout"></a><a name="recalclayout"></a>CSplitterWnd::RecalcLayout
 
-Satır veya sütun boyutunu ayarladıktan sonra ayırıcı penceresini yeniden görüntülemek için çağırın.
+Satır veya sütun boyutunu ayarladıktan sonra ayırıcı penceresini yeniden görüntülemek için arayın.
 
 ```
 virtual void RecalcLayout();
@@ -856,17 +856,17 @@ virtual void RecalcLayout();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Satır ve sütun boyutlarını [Setrowinfo](#setrowinfo) ve [SetColumnInfo](#setcolumninfo) üye işlevleriyle ayarladıktan sonra Bölümlendirici penceresini doğru şekilde yeniden görüntülemek için bu üye işlevi çağırın. Ayırıcı penceresi görünür olmadan önce, satır ve sütun boyutlarını oluşturma işleminin parçası olarak değiştirirseniz, bu üye işlevi çağırmak gerekli değildir.
+[SetRowInfo](#setrowinfo) ve [SetColumnInfo](#setcolumninfo) üye işlevleriyle satır ve sütun boyutlarını ayarladıktan sonra ayırıcı penceresini doğru bir şekilde yeniden görüntülemek için bu üye işlevi arayın. Bölünen pencere görünmeden önce oluşturma işleminin bir parçası olarak satır ve sütun boyutlarını değiştirirseniz, bu üye işlevi çağırmak gerekmez.
 
-Çerçeve, ayırıcı pencereyi yeniden boyutlandırdığında veya bir bölmeyi taşırken bu üye işlevini çağırır.
+Çerçeve, kullanıcı ayırıcı penceresini yeniden boyutlandırır veya bir bölme taşırsa bu üye işlevi çağırır.
 
 ### <a name="example"></a>Örnek
 
-  [CSplitterWnd:: SetColumnInfo](#setcolumninfo)örneğine bakın.
+  [CSplitterWnd örneğine bakın:SetColumnInfo](#setcolumninfo).
 
-##  <a name="setactivepane"></a>CSplitterWnd:: SetActivePane
+## <a name="csplitterwndsetactivepane"></a><a name="setactivepane"></a>CSplitterWnd::SetActivePane
 
-Çerçevede etkin bir bölme olacak şekilde ayarlar.
+Çerçevedeki etkin bölmeyi ayarlar.
 
 ```
 virtual void SetActivePane(
@@ -877,24 +877,24 @@ virtual void SetActivePane(
 
 ### <a name="parameters"></a>Parametreler
 
-*sırada*<br/>
-*PWnd* null ise, bölmedeki etkin olacak satırı belirtir.
+*Satır*<br/>
+*pWnd* NULL ise, etkin olacak bölmedeki satırı belirtir.
 
-*sütun*<br/>
-*PWnd* null ise, bölmedeki etkin olacak sütunu belirtir.
+*Albay*<br/>
+*pWnd* NULL ise, etkin olacak bölmedeki sütunu belirtir.
 
-*pWnd*<br/>
-`CWnd` nesnesine yönelik bir işaretçi. NULL ise, *satır* ve *sütun* tarafından belirtilen bölme etkin ayarlanır. NULL değilse, etkin olarak ayarlanan bölmeyi belirtir.
+*Pwnd*<br/>
+Bir `CWnd` nesneye işaretçi. NULL ise, *satır* ve *col* tarafından belirtilen bölme etkin olarak ayarlanır. NULL değilse, etkin olarak ayarlanmış bölmeyi belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Kullanıcı odağı çerçeve penceresi içindeki bir bölmeye değiştirdiğinde, bir bölmeyi etkin olarak ayarlamak için çerçeve tarafından çağrılır. Odağı belirtilen görünüme değiştirmek için `SetActivePane` açıkça çağırabilirsiniz.
+Bu üye işlev, kullanıcı çerçeve penceresi içindeki bir bölmeye odak değiştirdiğinde bir bölmeyi etkin olarak ayarlamak için çerçeve tarafından çağrılır. Odağı belirtilen görünüme değiştirmek için açıkça arayabilirsiniz. `SetActivePane`
 
-Bir satır ve sütun belirterek **ya** da *pWnd*sağlayarak bölmeyi belirtin.
+Satır ve sütun sağlayarak **veya** *pWnd*sağlayarak bölmeyi belirtin.
 
-##  <a name="setcolumninfo"></a>CSplitterWnd:: SetColumnInfo
+## <a name="csplitterwndsetcolumninfo"></a><a name="setcolumninfo"></a>CSplitterWnd::SetColumnInfo
 
-Belirtilen sütun bilgilerini ayarlamak için çağırın.
+Belirtilen sütun bilgilerini ayarlamak için arayın.
 
 ```
 void SetColumnInfo(
@@ -905,28 +905,28 @@ void SetColumnInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*sütun*<br/>
-Ayırıcı pencere sütununu belirtir.
+*Albay*<br/>
+Ayırıcı pencere sütunu belirtir.
 
-*cxIdeal*<br/>
-Ayırıcı pencere sütunu için piksel cinsinden ideal bir genişlik belirtir.
+*cxİdeal*<br/>
+Piksellerde ayırıcı pencere sütunu için ideal bir genişlik belirtir.
 
 *cxMin*<br/>
-Ayırıcı pencere sütunu için piksel cinsinden minimum genişliği belirtir.
+Piksellerde bölücü pencere sütunu için minimum genişlik belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sütun için yeni bir en düşük genişlik ve ideal genişlik ayarlamak için bu üye işlevi çağırın. Sütun en küçük değeri, sütunun tam olarak görüntülenmek için ne zaman küçük olacağını belirler.
+Bir sütun için yeni bir minimum genişlik ve ideal genişlik ayarlamak için bu üye işlevi arayın. Sütun minimum değeri, sütunun tam olarak görüntülenemeyecek kadar küçük olacağını belirler.
 
-Çerçeve Bölümlendirici penceresini görüntülediğinde, bölme penceresinin istemci alanının sağ alt köşesine doğru çalışarak, sütun ve satırlardaki bölmeleri ideal boyutlara göre yerleştirir.
+Çerçeve ayırıcı penceresini görüntülediğinde, bölmeleri sütunlar ve satırlar ideal boyutlarına göre düzenler ve bölme penceresinin istemci alanının sağ alt köşesinden sol üst köşesine çalışır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#6](../../mfc/reference/codesnippet/cpp/csplitterwnd-class_4.cpp)]
 
-##  <a name="setrowinfo"></a>CSplitterWnd:: SetRowInfo
+## <a name="csplitterwndsetrowinfo"></a><a name="setrowinfo"></a>CSplitterWnd::SetRowInfo
 
-Belirtilen satır bilgilerini ayarlamak için çağırın.
+Belirtilen satır bilgilerini ayarlamak için arayın.
 
 ```
 void SetRowInfo(
@@ -937,24 +937,24 @@ void SetRowInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*sırada*<br/>
-Ayırıcı pencere satırını belirtir.
+*Satır*<br/>
+Bir ayırıcı pencere satırını belirtir.
 
-*cyIdeal*<br/>
-Ayırıcı pencere satırı için piksel cinsinden ideal bir yükseklik belirtir.
+*cyİdeal*<br/>
+Piksellerde ayırıcı pencere satırı için ideal bir yükseklik belirtir.
 
-*Cydk*<br/>
-Ayırıcı pencere satırı için piksel cinsinden minimum yüksekliği belirtir.
+*cyMin*<br/>
+Piksellerde ayırıcı pencere satırı için minimum yükseklik belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir satır için yeni bir minimum yükseklik ve ideal yükseklik ayarlamak için bu üye işlevini çağırın. Satır en küçük değeri, satırın tam olarak görüntülenemeyecek kadar küçük olacağını belirler.
+Bir satır için yeni bir minimum yükseklik ve ideal yükseklik ayarlamak için bu üye işlevi arayın. Satır minimum değeri, satırın tam olarak görüntülenemeyecek kadar küçük olacağını belirler.
 
-Çerçeve Bölümlendirici penceresini görüntülediğinde, bölme penceresinin istemci alanının sağ alt köşesine doğru çalışarak, sütun ve satırlardaki bölmeleri ideal boyutlara göre yerleştirir.
+Çerçeve ayırıcı penceresini görüntülediğinde, bölmeleri sütunlar ve satırlar ideal boyutlarına göre düzenler ve bölme penceresinin istemci alanının sağ alt köşesinden sol üst köşesine çalışır.
 
-##  <a name="setscrollstyle"></a>CSplitterWnd:: SetScrollStyle
+## <a name="csplitterwndsetscrollstyle"></a><a name="setscrollstyle"></a>CSplitterWnd::SetScrollStyle
 
-Ayırıcı pencerenin paylaşılan kaydırma çubuğu desteği için yeni kaydırma stilini belirtir.
+Bölücü penceresinin paylaşılan kaydırma çubuğu desteği için yeni kaydırma stilini belirtir.
 
 ```
 void SetScrollStyle(DWORD dwStyle);
@@ -962,20 +962,20 @@ void SetScrollStyle(DWORD dwStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwStyle*<br/>
-Ayırıcı pencerenin paylaşılan kaydırma çubuğu desteği için aşağıdaki değerlerden biri olabilecek yeni kaydırma stili:
+*Dwstyle*<br/>
+Ayırıcı penceresinin paylaşılan kaydırma çubuğu desteği için aşağıdaki değerlerden biri olabilecek yeni kaydırma stili:
 
-- WS_HSCROLL yatay paylaşılan kaydırma çubuklarını oluşturun/görüntüleyin.
+- WS_HSCROLL Yatay paylaşılan kaydırma çubuklarını oluşturun/gösterin.
 
-- WS_VSCROLL dikey paylaşılan kaydırma çubuklarını oluşturun/gösterin.
+- WS_VSCROLL Dikey paylaşılan kaydırma çubuklarını oluşturun/gösterin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kaydırma çubuğu oluşturulduktan sonra, `SetScrollStyle` bu stil olmadan çağrılsa bile yok edilmez; Bunun yerine, bu kaydırma çubukları gizlenir. Bu, kaydırma çubuklarının gizli olsalar bile durumlarını korumasını sağlar. `SetScrollStyle` çağrıldıktan sonra tüm değişikliklerin etkili olması için [RecalcLayout](#recalclayout) çağrısı yapmanız gerekir.
+Bir kaydırma çubuğu oluşturulduktan sonra, bu `SetScrollStyle` stil olmadan çağrılsa bile yok edilmez; bunun yerine bu kaydırma çubukları gizlidir. Bu, kaydırma çubuklarının gizli olmalarına rağmen durumlarını korumalarını sağlar. Aradıktan `SetScrollStyle` sonra tüm değişikliklerin etkili olması için [RecalcLayout'ı](#recalclayout) aramak gerekir.
 
-##  <a name="splitcolumn"></a>CSplitterWnd:: SplitColumn
+## <a name="csplitterwndsplitcolumn"></a><a name="splitcolumn"></a>CSplitterWnd::SplitSütun
 
-Bir çerçeve penceresinin dikey olarak bölündüğünü gösterir.
+Çerçeve penceresinin dikey olarak nerede bölündüğünü gösterir.
 
 ```
 virtual BOOL SplitColumn(int cxBefore);
@@ -984,21 +984,21 @@ virtual BOOL SplitColumn(int cxBefore);
 ### <a name="parameters"></a>Parametreler
 
 *cxBefore*<br/>
-Bölme işleminin gerçekleştiği konum (piksel cinsinden).
+Piksellerde, bölmenin gerçekleştiği önce konum.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi dikey bir ayırıcı pencere oluşturulduğunda çağrılır. `SplitColumn`, bölme işleminin gerçekleştiği varsayılan konumu gösterir.
+Dikey bir ayırıcı penceresi oluşturulduğunda bu üye işlev çağrılır. `SplitColumn`bölmenin gerçekleştiği varsayılan konumu gösterir.
 
-`SplitColumn`, çerçeve tarafından dinamik ayırıcı penceresinin mantığını uygulamak için çağrılır (ayırıcı pencerenin SPLS_DYNAMIC_SPLIT stili varsa). Daha gelişmiş dinamik bölümlendiricileri uygulamak için, [CreateView](#createview)sanal işleviyle birlikte özelleştirilebilir.
+`SplitColumn`dinamik ayırıcı penceresinin mantığını uygulamak için çerçeve tarafından çağrılır (yani, ayırıcı penceresi SPLS_DYNAMIC_SPLIT stiline sahipse). Bu özelleştirilebilir, sanal fonksiyonu [CreateView](#createview)ile birlikte , daha gelişmiş dinamik bölücüler uygulamak için.
 
-##  <a name="splitrow"></a>CSplitterWnd:: Sptrow
+## <a name="csplitterwndsplitrow"></a><a name="splitrow"></a>CSplitterWnd::SplitRow
 
-Bir çerçeve penceresinin yatay olarak bölündüğünü gösterir.
+Çerçeve penceresinin yatay olarak bölündüğü yeri gösterir.
 
 ```
 virtual BOOL SplitRow(int cyBefore);
@@ -1007,21 +1007,21 @@ virtual BOOL SplitRow(int cyBefore);
 ### <a name="parameters"></a>Parametreler
 
 *cyBefore*<br/>
-Bölme işleminin gerçekleştiği konum (piksel cinsinden).
+Piksellerde, bölmenin gerçekleştiği önce konum.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, yatay bir ayırıcı pencere oluşturulduğunda çağrılır. `SplitRow`, bölme işleminin gerçekleştiği varsayılan konumu gösterir.
+Yatay bir ayırıcı penceresi oluşturulduğunda bu üye işlev çağrılır. `SplitRow`bölmenin gerçekleştiği varsayılan konumu gösterir.
 
-`SplitRow`, çerçeve tarafından dinamik ayırıcı penceresinin mantığını uygulamak için çağrılır (ayırıcı pencerenin SPLS_DYNAMIC_SPLIT stili varsa). Daha gelişmiş dinamik bölümlendiricileri uygulamak için, [CreateView](#createview)sanal işleviyle birlikte özelleştirilebilir.
+`SplitRow`dinamik ayırıcı penceresinin mantığını uygulamak için çerçeve tarafından çağrılır (yani, ayırıcı penceresi SPLS_DYNAMIC_SPLIT stiline sahipse). Bu özelleştirilebilir, sanal fonksiyonu [CreateView](#createview)ile birlikte , daha gelişmiş dinamik bölücüler uygulamak için.
 
-##  <a name="ondraw"></a>CSplitterWnd:: OnDraw
+## <a name="csplitterwndondraw"></a><a name="ondraw"></a>CSplitterWnd::OnDraw
 
-Ayırıcı penceresini çizmek için Framework tarafından çağırılır.
+Ayırıcı penceresini çizmek için çerçeve tarafından çağrılır.
 
 ```
 virtual void OnDraw(CDC* pDC);
@@ -1029,14 +1029,14 @@ virtual void OnDraw(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-Cihaz bağlamına yönelik bir işaretçi.
+*Pdc*<br/>
+Aygıt bağlamına işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek VIEWEX](../../overview/visual-cpp-samples.md)<br/>
+[MFC Örnek VIEWEX](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CView Sınıfı](../../mfc/reference/cview-class.md)<br/>

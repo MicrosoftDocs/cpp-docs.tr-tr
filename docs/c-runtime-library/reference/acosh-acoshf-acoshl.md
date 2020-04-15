@@ -1,10 +1,13 @@
 ---
 title: acosh, acoshf, acoshl
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - acoshf
 - acosh
 - acoshl
+- _o_acosh
+- _o_acoshf
+- _o_acoshl
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -33,16 +37,16 @@ helpviewer_keywords:
 - acosh function
 - acoshl function
 ms.assetid: 6985c4d7-9e2a-44ce-9a9b-5a43015f15f7
-ms.openlocfilehash: da1d6024cc9f00ebfc7696ddedf92ea9f25728a1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b719f67651643885351843fb8e995964e03de105
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170364"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81350838"
 ---
 # <a name="acosh-acoshf-acoshl"></a>acosh, acoshf, acoshl
 
-Ters hiperbolik kosinüsü hesaplar.
+Ters hiperbolik kosinüs hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,29 +63,31 @@ long double acosh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*X*<br/>
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**ACOSH** işlevleri, *x*'in ters hyberbolik kosinüsünü (Ark hiperbolik kosinüs) döndürür. Bu işlevler, *x* ≥ 1 etki alanı üzerinde geçerlidir. *X* 1 ' den küçükse, `errno` `EDOM` olarak ayarlanır ve sonuç bir sessiz NaN olur. *X* sessiz bir NaN, sonsuz veya sonsuz ise, aynı değer döndürülür.
+**Acosh** fonksiyonları x ters hyberbolik kosinüs (ark hiperbolik kosinüs) dönmek *.* Bu işlevler *x* ≥ 1 etki alanı üzerinden geçerlidir. *x* 1'den `errno` küçükse, `EDOM` ayarlanır ve sonuç sessiz bir NaN'dir. *X* sessiz bir NaN, belirsiz veya sonsuz ise, aynı değer döndürülür.
 
-|Girdi|SEH özel durumu|`_matherr` özel durumu|
+|Girdi|SEH Özel Durumu|`_matherr`Özel durum|
 |-----------|-------------------|--------------------------|
-|± QNAN, IND, ıNF|yok|yok|
+|± QNAN, IND, INF|yok|yok|
 |*x* < 1|yok|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullandığınızda C++, **float** veya **Long** **Double** değerlerini alıp döndüren **ACOSH** aşırı yüklerini çağırabilirsiniz. C programında, **ACOSH** her zaman **Double**değerini alır ve döndürür.
+C++'ı kullandığınızda, **float** veya **uzun** **çift** değerleri alan ve döndüren aşırı **acosh** yüklerini arayabilirsiniz. Bir C programında, **acosh** her zaman alır ve **çift**döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgi|C++ üstbilgi|
 |--------------|--------------|------------------|
-|**ACOSH**, **acoshf**, **acoshl**|\<Math. h >|\<cmath >|
+|**acosh**, **acoshf**, **acoshl**|\<math.h>|\<cmath>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

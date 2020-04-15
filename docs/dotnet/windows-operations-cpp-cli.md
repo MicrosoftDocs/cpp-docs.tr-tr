@@ -43,22 +43,22 @@ helpviewer_keywords:
 - registry, writing to
 - Visual C++, writing to Windows Registry
 ms.assetid: b9a75cb4-0589-4d5b-92cb-5e8be42b4ac0
-ms.openlocfilehash: 413ccc3b66d76f8779861d4d65eb262ee8640725
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 99fce804ad30e01bdbaa99b1636a5238ff535f8b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384382"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371766"
 ---
 # <a name="windows-operations-ccli"></a>Windows İşlemleri (C++/CLI)
 
-Windows SDK'sını kullanarak Windows özgü çeşitli görevleri gösterir.
+Windows SDK'yı kullanarak Windows'a özgü çeşitli görevleri gösterir.
 
-Aşağıdaki konular Windows Visual C++ kullanarak SDK ile gerçekleştirilen çeşitli Windows işlemlerini gösterir.
+Aşağıdaki konular, Visual C++'ı kullanarak Windows SDK ile gerçekleştirilen çeşitli Windows işlemlerini göstermektedir.
 
-## <a name="determine_shutdown"></a> Kapatmanın başlayıp başlamadığını belirleme
+## <a name="determine-if-shutdown-has-started"></a><a name="determine_shutdown"></a>KapatmaNın Başlatıp Başlad'ı Olup Olmadığını Belirleme
 
-Aşağıdaki kod örneği, uygulamanın veya .NET Framework şu anda sonlandırıyor olup olmadığını belirlemek nasıl gösterir. Bu, .NET Framework'teki statik öğeler bu yapıları kapatma sırasında sistem tarafından kesin ve güvenilir bir şekilde kullanılamaz çünkü erişmek için kullanışlıdır. Denetleyerek <xref:System.Environment.HasShutdownStarted%2A> özelliği ilk olarak, bu öğeleri erişilmemesi olası hataları önleyebilirsiniz.
+Aşağıdaki kod örneği, uygulamanın veya .NET Çerçevesinin şu anda sonlandırma olup olmadığının nasıl belirlendiğini gösterir. Bu, .NET Framework'deki statik öğelere erişmek için yararlıdır, çünkü kapatma sırasında bu yapılar sistem tarafından sonuçlandırılır ve güvenilir bir şekilde kullanılamaz. Önce <xref:System.Environment.HasShutdownStarted%2A> özelliği denetleyerek, bu öğelere erişmeyerak olası hataları önleyebilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -76,9 +76,9 @@ int main()
 }
 ```
 
-## <a name="determine_user"></a> Kullanıcı etkileşimli durumunu belirleme
+## <a name="determine-the-user-interactive-state"></a><a name="determine_user"></a>Kullanıcı Etkileşimli Durumunu Belirleme
 
-Aşağıdaki kod örneği, kodu kullanıcı etkileşimli bir bağlamda çalıştırıldığını olmadığının nasıl gösterir. Varsa <xref:System.Environment.UserInteractive%2A> false ise, kodu bir hizmet işlemi olarak çalışıyor veya gelen içinde bir Web uygulaması, bu durumda, kullanıcı ile etkileşim kurmak kullanmamanız gerekir.
+Aşağıdaki kod örneği, kodun kullanıcı etkileşimli bir bağlamda çalıştırılıp çalıştırılmadığının nasıl belirlendiğini gösterir. Yanlışsa, <xref:System.Environment.UserInteractive%2A> kod bir hizmet işlemi olarak veya bir Web uygulamasının içinden çalışıyor, bu durumda kullanıcıyla etkileşimkurmaya çalışmamalısınız.
 
 ### <a name="example"></a>Örnek
 
@@ -97,9 +97,9 @@ int main()
 }
 ```
 
-## <a name="read_registry"></a> Windows kayıt defterinden veri okuma
+## <a name="read-data-from-the-windows-registry"></a><a name="read_registry"></a>Windows Kayıt Defteri'nden Verileri Okuma
 
-Aşağıdaki kod örneğinde <xref:Microsoft.Win32.Registry.CurrentUser> anahtarını Windows kayıt defterinden veri okuma için. İlk olarak, anahtarlar kullanılarak numaralandırılır <xref:Microsoft.Win32.RegistryKey.GetSubKeyNames%2A> yöntemi ve kimliklerini alt açıldığında kullanarak <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> yöntemi. Kök anahtarları gibi her alt tarafından temsil edilen <xref:Microsoft.Win32.RegistryKey> sınıfı. Son olarak, yeni <xref:Microsoft.Win32.RegistryKey> nesne, anahtar/değer çiftleri listeleme için kullanılır.
+Aşağıdaki kod örneği, <xref:Microsoft.Win32.Registry.CurrentUser> Windows kayıt defterindeki verileri okumak için anahtarı kullanır. Önce alt tuşlar <xref:Microsoft.Win32.RegistryKey.GetSubKeyNames%2A> yöntem kullanılarak numaralandırılır ve daha sonra Kimlikler alt <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> anahtarı yöntem kullanılarak açılır. Kök anahtarlar gibi, her alt anahtar <xref:Microsoft.Win32.RegistryKey> sınıf tarafından temsil edilir. Son olarak, <xref:Microsoft.Win32.RegistryKey> yeni nesne anahtar/değer çiftlerini sayısallandırmak için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -142,20 +142,20 @@ int main( )
 
 ### <a name="remarks"></a>Açıklamalar
 
-<xref:Microsoft.Win32.Registry> Sınıfı, yalnızca statik örnekleri için bir kapsayıcı <xref:Microsoft.Win32.RegistryKey>. Her örnek, bir kök kayıt defteri düğümü temsil eder. Örnekleri <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, ve <xref:Microsoft.Win32.Registry.Users>.
+Sınıf, <xref:Microsoft.Win32.Registry> statik örnekleri için yalnızca <xref:Microsoft.Win32.RegistryKey>bir kapsayıcıdır. Her örnek bir kök kayıt defteri düğümünü temsil eder. Örnekler <xref:Microsoft.Win32.Registry.ClassesRoot>, , <xref:Microsoft.Win32.Registry.CurrentConfig> <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, <xref:Microsoft.Win32.Registry.Users>ve .
 
-Olmanın yanı sıra statik içindeki nesneleri <xref:Microsoft.Win32.Registry> sınıfı salt okunurdur. Ayrıca, örnekler, <xref:Microsoft.Win32.RegistryKey> kayıt içeriğine erişmek için oluşturulan sınıf nesneleri salt okunurdur de. Bu davranışı geçersiz kılmak nasıl bir örnek için bkz [nasıl yapılır: Windows kayıt defterine veri yazma (C++/CLI)](../dotnet/how-to-write-data-to-the-windows-registry-cpp-cli.md).
+Statik olmanın yanı sıra, <xref:Microsoft.Win32.Registry> sınıf içindeki nesneler salt okunur. Ayrıca, kayıt defteri <xref:Microsoft.Win32.RegistryKey> nesnelerinin içeriğine erişmek için oluşturulan sınıfın örnekleri de salt okunur. Bu davranışı nasıl geçersiz kılabilirsiniz bir örnek için [bkz: Windows Kayıt Defterine Veri Yazma (C++/CLI)](../dotnet/how-to-write-data-to-the-windows-registry-cpp-cli.md).
 
-İki ek nesnesi vardır <xref:Microsoft.Win32.Registry> sınıfı: <xref:Microsoft.Win32.Registry.DynData> ve <xref:Microsoft.Win32.Registry.PerformanceData>. Her ikisi de örnekleridir <xref:Microsoft.Win32.RegistryKey> sınıfı. <xref:Microsoft.Win32.Registry.DynData> Nesnesi yalnızca Windows 98 ve Windows Me desteklenmeyen dinamik kayıt defteri bilgileri içerir <xref:Microsoft.Win32.Registry.PerformanceData> Nesnesini Windows performans izleme sistemi kullanan uygulamalar için performans sayacı bilgileri erişmek için kullanılabilir. <xref:Microsoft.Win32.Registry.PerformanceData> Düğümü gerçekten kayıt defterinde depolanır ve bu nedenle Regedit.exe kullanarak görüntülenemiyor bilgileri temsil eder.
+<xref:Microsoft.Win32.Registry> Sınıfta iki ek nesne vardır: <xref:Microsoft.Win32.Registry.DynData> <xref:Microsoft.Win32.Registry.PerformanceData>ve . Her ikisi de <xref:Microsoft.Win32.RegistryKey> sınıfın örnekleridir. Nesne, <xref:Microsoft.Win32.Registry.DynData> yalnızca Windows 98 ve Windows Me'de desteklenen dinamik kayıt defteri bilgileri içerir. Nesne, <xref:Microsoft.Win32.Registry.PerformanceData> Windows Performans İzleme Sistemi'ni kullanan uygulamaların performans sayacı bilgilerine erişmek için kullanılabilir. Düğüm, <xref:Microsoft.Win32.Registry.PerformanceData> kayıt defterinde gerçekte depolanamayan ve bu nedenle Regedit.exe kullanılarak görüntülenemeyen bilgileri temsil eder.
 
-## <a name="read_performance"></a> Windows performans sayaçlarını okuma
+## <a name="read-windows-performance-counters"></a><a name="read_performance"></a>Windows Performans Sayaçlarını Okuma
 
-Bazı uygulamalar ve Windows alt sistemlerin performans verileri Windows Performans sistemi aracılığıyla kullanıma sunar. Bu sayaçlardan kullanılarak erişilebilir <xref:System.Diagnostics.PerformanceCounterCategory> ve <xref:System.Diagnostics.PerformanceCounter> bulunan sınıfları <xref:System.Diagnostics?displayProperty=fullName> ad alanı.
+Bazı uygulamalar ve Windows alt sistemleri, Windows performans sistemi aracılığıyla performans verilerini ortaya çıkarır. Bu sayaçlara <xref:System.Diagnostics.PerformanceCounterCategory> <xref:System.Diagnostics.PerformanceCounter> <xref:System.Diagnostics?displayProperty=fullName> ad alanında bulunan ve sınıfları kullanılarak erişilebilir.
 
-Aşağıdaki kod örneği bu sınıfları almak ve görüntülemek işlemcinin meşgul olduğu sürenin yüzdesini belirtmek için Windows tarafından güncelleştirilmiş bir sayaç için kullanır.
+Aşağıdaki kod örneği, işlemcinin meşgul olduğu süre yüzdesini belirtmek için Windows tarafından güncelleştirilen bir sayacı almak ve görüntülemek için bu sınıfları kullanır.
 
 > [!NOTE]
->  Bu örnek, Windows Vista üzerinde çalıştırmak için yönetici ayrıcalıkları gerektirir.
+> Bu örnek, Windows Vista'da çalıştırmak için yönetim ayrıcalıkları gerektirir.
 
 ### <a name="example"></a>Örnek
 
@@ -246,9 +246,9 @@ int main()
 }
 ```
 
-## <a name="retrieve_text"></a> Panodan Metin Alma
+## <a name="retrieve-text-from-the-clipboard"></a><a name="retrieve_text"></a>Panodan Metin Alma
 
-Aşağıdaki kod örneğinde <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> üye işlevi işaretçisi döndürülecek <xref:System.Windows.Forms.IDataObject> arabirimi. Bu arabirim için verilerin biçimi sorgulanabilir ve gerçek veri almak için kullanılır.
+Aşağıdaki kod örneği, <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> bir işaretçiyi <xref:System.Windows.Forms.IDataObject> arabirime döndürmek için üye işlevi kullanır. Bu arabirim daha sonra verilerin biçimi için sorgulanabilir ve gerçek verileri almak için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -286,9 +286,9 @@ using namespace System::Windows::Forms;
 }
 ```
 
-## <a name="retrieve_current"></a> Geçerli kullanıcı adını alma
+## <a name="retrieve-the-current-username"></a><a name="retrieve_current"></a>Geçerli Kullanıcı Adını Alma
 
-Aşağıdaki kod örneği, geçerli kullanıcı adını (Windows açmış olan kullanıcının adını) alma gösterir. Ad içinde depolanan <xref:System.Environment.UserName%2A> tanımlanan dize <xref:System.Environment> ad alanı.
+Aşağıdaki kod örneği, geçerli kullanıcı adının (Windows'a giriş yapılan kullanıcının adı) alınmasını gösterir. Ad, <xref:System.Environment> ad alanında <xref:System.Environment.UserName%2A> tanımlanan dizede depolanır.
 
 ### <a name="example"></a>Örnek
 
@@ -304,9 +304,9 @@ int main()
 }
 ```
 
-## <a name="retrieve_dotnet"></a> .NET Framework sürümünü alma
+## <a name="retrieve-the-net-framework-version"></a><a name="retrieve_dotnet"></a>.NET Framework Sürümünü Al
 
-Aşağıdaki kod örneği ile şu anda yüklü olan .NET Framework sürümünü belirlemek gösterilmiştir <xref:System.Environment.Version%2A> bir işaretçi olan bir özellik için bir <xref:System.Version> sürüm bilgisi içeren nesne.
+Aşağıdaki kod örneği, sürüm bilgilerini içeren bir <xref:System.Environment.Version%2A> <xref:System.Version> nesneye işaretçi olan özellik ile şu anda yüklenen .NET Framework sürümünü nasıl belirleyeceklerini gösterir.
 
 ### <a name="example"></a>Örnek
 
@@ -331,9 +331,9 @@ int main()
 }
 ```
 
-## <a name="retrieve_local"></a> Yerel makine adını alma
+## <a name="retrieve-the-local-machine-name"></a><a name="retrieve_local"></a>Yerel Makine Adını Alma
 
-Aşağıdaki kod örneğinde yerel makine adını alma gösterir (gibi bilgisayar adını, ağ üzerinde görünür). Bunu alarak gerçekleştirmek <xref:System.Environment.MachineName%2A> tanımlanan dize <xref:System.Environment> ad alanı.
+Aşağıdaki kod örneği, yerel makine adının (ağda görünen bilgisayarın adı) alınmasını gösterir. Bunu, <xref:System.Environment> ad alanında <xref:System.Environment.MachineName%2A> tanımlanan dizeyi alarak başarabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -349,9 +349,9 @@ int main()
 }
 ```
 
-## <a name="retrieve_version"></a> Windows sürümünü alma
+## <a name="retrieve-the-windows-version"></a><a name="retrieve_version"></a>Windows Sürümünü Alma
 
-Aşağıdaki kod örneği, geçerli işletim sistemi platformu ve sürüm bilgilerini almak nasıl gösterir. Bu bilgiler saklanır <xref:System.Environment.OSVersion%2A?displayProperty=fullName> özelliği ve ayrıntılı koşullarla Windows sürümünü tanımlayan bir numaralandırma oluşur ve <xref:System.Environment.Version%2A> işletim sisteminin tam derleme içeren nesne.
+Aşağıdaki kod örneği, geçerli işletim sisteminin platform ve sürüm bilgilerinin nasıl alınabildiğini gösterir. Bu bilgiler <xref:System.Environment.OSVersion%2A?displayProperty=fullName> özellikte depolanır ve Windows'un sürümünü geniş terimlerle açıklayan bir <xref:System.Environment.Version%2A> numaralandırma ve işletim sisteminin tam oluşturmasını içeren bir nesneden oluşur.
 
 ### <a name="example"></a>Örnek
 
@@ -391,9 +391,9 @@ int main()
 }
 ```
 
-## <a name="retrieve_time"></a> Başlangıçtan itibaren geçen zamanı alma
+## <a name="retrieve-time-elapsed-since-startup"></a><a name="retrieve_time"></a>Başlangıçtan Bu Yana Geçen Süreyi Al
 
-Aşağıdaki kod örneği, işaret sayısını belirlemek gösterilmiştir veya Windows beri geçen milisaniye sayısını başlatıldı. Bu değer depolanan <xref:System.Environment.TickCount%2A?displayProperty=fullName> üyesi ve 32-bit bir değer olduğundan, 24,9 günde yaklaşık olarak sıfırlar.
+Aşağıdaki kod örneği, Windows'un başlatılmasından bu yana geçen onay sayısının veya milisaniye sayısının nasıl belirlendiğini gösterir. Bu değer <xref:System.Environment.TickCount%2A?displayProperty=fullName> üyede depolanır ve 32 bitlik bir değer olduğundan, yaklaşık olarak her 24,9 günde bir sıfırlanır.
 
 ### <a name="example"></a>Örnek
 
@@ -420,9 +420,9 @@ int main( )
 }
 ```
 
-## <a name="store_text"></a> Metin panoya Store
+## <a name="store-text-in-the-clipboard"></a><a name="store_text"></a>Metni Panoda Depola
 
-Aşağıdaki kod örneğinde <xref:System.Windows.Forms.Clipboard> içinde tanımlanan nesne <xref:System.Windows.Forms> bir dize depolamak için ad alanı. Bu nesne iki üye işlevleri sağlar: <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> ve <xref:System.Windows.Forms.Clipboard.GetDataObject%2A>. Verileri panoya türetilen herhangi bir nesnenin göndererek depolandığı <xref:System.Object> için <xref:System.Windows.Forms.Clipboard.SetDataObject%2A>.
+Aşağıdaki kod örneği, <xref:System.Windows.Forms.Clipboard> bir dize depolamak için <xref:System.Windows.Forms> ad alanında tanımlanan nesneyi kullanır. Bu nesne iki üye <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> <xref:System.Windows.Forms.Clipboard.GetDataObject%2A>işlev sağlar: ve . Veriler, <xref:System.Object> <xref:System.Windows.Forms.Clipboard.SetDataObject%2A>''den türetilen herhangi bir nesne gönderilerek Pano'da depolanır.
 
 ### <a name="example"></a>Örnek
 
@@ -451,9 +451,9 @@ using namespace System::Windows::Forms;
 }
 ```
 
-## <a name="write_data"></a> Windows kayıt defterine veri yazma
+## <a name="write-data-to-the-windows-registry"></a><a name="write_data"></a>Windows Kayıt Defterine Veri Yazma
 
-Aşağıdaki kod örneğinde <xref:Microsoft.Win32.Registry.CurrentUser> yazılabilir bir örneğini oluşturmak için anahtar <xref:Microsoft.Win32.RegistryKey> sınıfı karşılık gelen **yazılım** anahtarı. <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A> Yöntemi ardından yeni bir anahtar oluşturun ve anahtar/değer çiftlerini eklemek için kullanılır.
+Aşağıdaki kod örneği, <xref:Microsoft.Win32.Registry.CurrentUser> <xref:Microsoft.Win32.RegistryKey> **sınıfın Yazılım** anahtarına karşılık gelen yazılabilir bir örneğini oluşturmak için anahtarı kullanır. Yöntem <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A> daha sonra yeni bir anahtar oluşturmak ve anahtar/değer çiftleri eklemek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -503,7 +503,7 @@ int main()
 
 ### <a name="remarks"></a>Açıklamalar
 
-.NET Framework ile kayıt defterine erişmek için kullanabileceğiniz <xref:Microsoft.Win32.Registry> ve <xref:Microsoft.Win32.RegistryKey> her ikisi de sınıfları tanımlanan <xref:Microsoft.Win32> ad alanı. **Kayıt defteri** sınıfı statik örnekleri için bir kapsayıcıdır <xref:Microsoft.Win32.RegistryKey> sınıfı. Her örnek, bir kök kayıt defteri düğümü temsil eder. Örnekleri <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, ve <xref:Microsoft.Win32.Registry.Users>.
+.NET Framework'u kullanarak kayıt defterine <xref:Microsoft.Win32.Registry> her <xref:Microsoft.Win32.RegistryKey> ikisi de <xref:Microsoft.Win32> ad alanında tanımlanan sınıfları ve sınıfları ile erişebilirsiniz. **Kayıt Defteri** sınıfı, <xref:Microsoft.Win32.RegistryKey> sınıfın statik örnekleri için bir kapsayıcıdır. Her örnek bir kök kayıt defteri düğümünü temsil eder. Örnekler <xref:Microsoft.Win32.Registry.ClassesRoot>, , <xref:Microsoft.Win32.Registry.CurrentConfig> <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, <xref:Microsoft.Win32.Registry.Users>ve .
 
 ## <a name="related-sections"></a>İlgili Bölümler
 

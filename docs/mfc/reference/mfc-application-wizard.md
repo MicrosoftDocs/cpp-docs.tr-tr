@@ -7,77 +7,77 @@ helpviewer_keywords:
 - MFC Application Wizard
 - executable files, creating
 ms.assetid: 227ac090-921d-4b2f-be0a-66a5f4cab0d4
-ms.openlocfilehash: e97c7a29dd56a69fad99e85c206ca2104fa71798
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 6949f136890e8274f225a49496b2eb1b8f78b6fc
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708192"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81351829"
 ---
 # <a name="mfc-application-wizard"></a>MFC Uygulama Sihirbazı
 
-MFC Uygulama Sihirbazı bir uygulama oluşturur, bir Windows yürütülebilir (.exe) uygulamasının temel özelliklerini derlendiğinde uygular. MFC başlangıç uygulaması C++ kaynak (.cpp) dosyaları, kaynak (.rc) dosyaları, üstbilgi (.h) dosyaları ve proje (.vcxproj) dosyasını içerir. Bu Başlatıcı dosyalarında oluşturulan kodu MFC'ye dayalı.
+MFC Uygulama Sihirbazı, derlendiğinde, windows çalıştırılabilir (.exe) uygulamasının temel özelliklerini uygulayan bir uygulama oluşturur. MFC başlangıç uygulaması C++ kaynak (.cpp) dosyaları, kaynak (.rc) dosyaları, üstbilgi (.h) dosyaları ve bir proje (.vcxproj) dosyasını içerir. Bu başlangıç dosyalarında oluşturulan kod MFC'yi temel adatır.
 
 > [!NOTE]
->  Seçtiğiniz seçeneklere bağlı olarak, sihirbaz projenize ek dosyaları oluşturur. Örneğin, **bağlama duyarlı Yardım** üzerinde [Gelişmiş Özellikler](../../mfc/reference/advanced-features-mfc-application-wizard.md) sayfasında, Sihirbazı, projenin Yardım dosyalarını derlemek için gerekli olan dosyaları oluşturur. Sihirbazın oluşturduğu dosyaları hakkında daha fazla bilgi için bkz. [Visual Studio için oluşturulan dosya türleri C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md)ve proje Readme.txt dosyasına bakın.
+> Sihirbaz, seçtiğiniz seçeneklere bağlı olarak projenizde ek dosyalar oluşturur. Örneğin, [Gelişmiş Özellikler](../../mfc/reference/advanced-features-mfc-application-wizard.md) sayfasında **İçeriğe duyarlı yardımı** seçerseniz, sihirbaz projenin Yardım dosyalarını derlemek için gerekli dosyaları oluşturur. Sihirbazın oluşturduğu dosyalar hakkında daha fazla bilgi için [Visual Studio C++ projeleri için Oluşturulan Dosya Türleri'ne](../../build/reference/file-types-created-for-visual-cpp-projects.md)bakın ve projedeki Readme.txt dosyasına bakın.
 
 ## <a name="overview"></a>Genel Bakış
 
-Bu sihirbaz sayfası oluşturduğunuz MFC uygulamasını geçerli uygulama ayarlarını açıklar. Varsayılan olarak, Sihirbazı gibi bir proje oluşturur:
+Bu sihirbaz sayfası, oluşturduğunuz MFC uygulaması için geçerli uygulama ayarlarını açıklar. Varsayılan olarak, sihirbaz aşağıdaki gibi bir proje oluşturur:
 
 - [Uygulama Türü, MFC Uygulama Sihirbazı](../../mfc/reference/application-type-mfc-application-wizard.md)
 
-   - Proje sekmeli Çok Belgeli Arabirim (MDI) desteği ile oluşturulur. Daha fazla bilgi için [SDI ve MDI](../../mfc/sdi-and-mdi.md).
+  - Proje sekmeli çoklu belge arabirimi (MDI) desteği ile oluşturulur. Daha fazla bilgi için Bkz. [SDI ve MDI.](../../mfc/sdi-and-mdi.md)
 
-   - Projenin kullandığı [belge/görünüm mimarisi](../../mfc/document-view-architecture.md).
+  - Proje, [Belge/Görünüm Mimarisini](../../mfc/document-view-architecture.md)kullanır.
 
-   - Proje Unicode kitaplıklarını kullanır.
+  - Proje, Unicode kitaplıklarını kullanır.
 
-   - Proje, Visual Studio Proje stili kullanılarak oluşturulur ve görsel stilini değiştirme sağlar.
+  - Proje Visual Studio proje stili kullanılarak oluşturulur ve görsel stil geçişi sağlar.
 
-   - Proje MFC paylaşılan DLL olarak kullanır. Daha fazla bilgi için [C Oluştur /C++ DLL'leri Visual Studio'da](../../build/dlls-in-visual-cpp.md).
+  - Proje paylaşılan bir DLL MFC kullanır. Daha fazla bilgi için Visual [Studio'da C/C++ DL'ler oluştur'a](../../build/dlls-in-visual-cpp.md)bakın.
 
-- [Birleşik Belge Desteği, MFC Uygulama Sihirbazı](../../mfc/reference/compound-document-support-mfc-application-wizard.md)
+- [Bileşik Belge Desteği, MFC Uygulama Sihirbazı](../../mfc/reference/compound-document-support-mfc-application-wizard.md)
 
-   - Proje bileşik belgeler için destek sağlar.
+  - Proje bileşik belgeler için destek sağlamaz.
 
-- [Belge Şablonu Dizeleri, MFC Uygulama Sihirbazı](../../mfc/reference/document-template-strings-mfc-application-wizard.md)
+- [Belge Şablon Dizeleri, MFC Uygulama Sihirbazı](../../mfc/reference/document-template-strings-mfc-application-wizard.md)
 
-   - Proje için varsayılan belge şablonu dizeleri proje adı kullanır.
+  - Proje, varsayılan belge şablon dizeleri için proje adını kullanır.
 
 - [Veritabanı Desteği, MFC Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md)
 
-   - Proje veritabanları için destek sağlar.
+  - Proje veritabanları için destek sağlamaz.
 
 - [Kullanıcı Arabirimi Özellikleri, MFC Uygulama Sihirbazı](../../mfc/reference/user-interface-features-mfc-application-wizard.md)
 
-   - Proje kullanıcı arabirimi özellikleri, durum çubuğu, bir sistem menüsünü en üst düzeye çıkarmak ve kutularında en aza indirmek gibi standart Windows uygulayan bir **hakkında** kutusunda, bir standart menü çubuğu ve takma araç çubuğu ve alt çerçeve.
+  - Proje, sistem menüsü, durum çubuğu, kutuları en üst düzeye çıkarma ve simge durumuna geçirme, **Hakkında** kutusu, standart menü çubuğu ve yerleştirme araç çubuğu ve alt çerçeveler gibi standart Windows kullanıcı arabirimi özelliklerini uygular.
 
 - [Gelişmiş Özellikler, MFC Uygulama Sihirbazı](../../mfc/reference/advanced-features-mfc-application-wizard.md)
 
-   - Proje yazdırmayı ve baskı önizlemeyi destekler.
+  - Proje, yazdırma ve yazdırma önizlemesini destekler.
 
-   - Proje ActiveX denetimlerini destekler. Daha fazla bilgi için [ActiveX denetimleri oluşturmak için işlem dizisi](../../mfc/sequence-of-operations-for-creating-activex-controls.md).
+  - Proje ActiveX denetimlerini destekler. Daha fazla bilgi için [ActiveX Denetimleri Oluşturmak için Operasyon Dizisi'ne](../../mfc/sequence-of-operations-for-creating-activex-controls.md)bakın.
 
-   - Proje için destek sağlar [Otomasyon](../../mfc/automation.md), [MAPI](../../mfc/mapi-support-in-mfc.md), [Windows Sockets](../../mfc/windows-sockets-in-mfc.md), ya da Active Accessibility.
+  - Proje [Otomasyon,](../../mfc/automation.md) [MAPI,](../../mfc/mapi-support-in-mfc.md)Windows [Soketleri](../../mfc/windows-sockets-in-mfc.md)veya Etkin Erişilebilirlik için destek sağlamaz.
 
-   - Projeyi destekleyen bir **Gezgini** yerleştirme bölmesi, bir **çıkış** yerleştirme bölmesi ve **özellikleri** yerleştirme bölmesi.
+  - Proje, **Explorer** yerleştirme bölmesini, **Çıktı** yerleştirme bölmesini ve **Özellikler** yerleştirme bölmesini destekler.
 
 - [Oluşturulan Sınıflar, MFC Uygulama Sihirbazı](../../mfc/reference/generated-classes-mfc-application-wizard.md)
 
-   - Projenin görünüm sınıfı türetilen [CView sınıfı](../../mfc/reference/cview-class.md).
+  - Projenin görünüm sınıfı [CView Sınıfından](../../mfc/reference/cview-class.md)türetilmiştir.
 
-   - Projenin uygulama sınıfı türetilir [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md).
+  - Projenin uygulama sınıfı [CWinAppEx Sınıfından](../../mfc/reference/cwinappex-class.md)türetilmiştir.
 
-   - Projenin belge sınıfı türetilen [CDocument sınıfı](../../mfc/reference/cdocument-class.md).
+  - Projenin belge sınıfı [CDocument Sınıfından](../../mfc/reference/cdocument-class.md)türetilmiştir.
 
-   - Projenin ana çerçeve sınıf türetilir [Cmdıframewndex sınıfı](../../mfc/reference/cmdiframewndex-class.md).
+  - Projenin ana çerçeve sınıfı [CMDIFrameWndEx Sınıfından](../../mfc/reference/cmdiframewndex-class.md)türetilmiştir.
 
-   - Proje alt çerçeve sınıfı türetilen [Cmdıchildwndex sınıfı](../../mfc/reference/cmdichildwndex-class.md).
+  - Projenin alt çerçeve sınıfı [CMDIChildWndEx Sınıfından](../../mfc/reference/cmdichildwndex-class.md)türetilmiştir.
 
-Bu varsayılan ayarları değiştirmek için sihirbazın sol sütununda uygun sekmeyi başlığa tıklayın ve görünen sayfa değişiklikleri yapın.
+Bu varsayılan ayarları değiştirmek için sihirbazın sol sütunundaki uygun sekme başlığını tıklatın ve görünen sayfada değişiklikleri yapın.
 
-Bir MFC uygulaması projesi oluşturduktan sonra nesneler veya denetimler Visual C++ kullanarak projenize ekleyebilirsiniz [kod sihirbazları](../../ide/adding-functionality-with-code-wizards-cpp.md).
+Bir MFC uygulama projesi oluşturduktan sonra, Visual C++ [kod sihirbazlarını](../../ide/adding-functionality-with-code-wizards-cpp.md)kullanarak projenize nesneler veya denetimler ekleyebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

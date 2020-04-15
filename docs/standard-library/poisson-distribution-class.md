@@ -23,16 +23,16 @@ helpviewer_keywords:
 - std::poisson_distribution [C++], param_type
 - std::poisson_distribution [C++], param_type
 ms.assetid: 09614281-349a-45f7-8e95-c0196be0a937
-ms.openlocfilehash: 180b84c6ac7bef94a93f73c0bdefc6a6f95164f0
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: fd1464c099d6f666b53387326c1dd863048defdc
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689124"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372041"
 ---
 # <a name="poisson_distribution-class"></a>poisson_distribution Sınıfı
 
-Bir Poisson dağılımı üretir.
+Bir Poisson dağılımı oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,31 +67,31 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*IntType* \
-Tamsayı sonuç türü, varsayılan olarak **int 'tir**. Olası türler için bkz. [\<random >](../standard-library/random.md).
+*IntType*\
+**İnt**varsayılan olarak, tümsedo sonuç türü. Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, bir Poisson dağılımı ile Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
+Sınıf şablonu, Poisson dağılımı olan kullanıcı tarafından belirtilen integral türüdeğerlerini üreten bir dağılım açıklar. Aşağıdaki tablo, tek tek üyelerle ilgili makalelere bağlantılar ala.
 
 ||||
 |-|-|-|
 |[poisson_distribution](#poisson_distribution)|`poisson_distribution::mean`|`poisson_distribution::param`|
 |`poisson_distribution::operator()`||[param_type](#param_type)|
 
-Özellik işlevi `mean()`, depolanan dağıtım parametresi *ortalaması*için değeri döndürür.
+Özellik işlevi `mean()` depolanan dağıtım parametresi *ortalaması*nın değerini döndürür.
 
-Özellik üyesi `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
+Özellik üyesi, `param()` depolanan `param_type` dağıtım parametre paketini ayarlar veya döndürür.
 
-@No__t_0 ve `max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
+`min()` Ve `max()` üye işlevler, sırasıyla mümkün olan en küçük sonucu ve mümkün olan en büyük sonucu döndürer.
 
-@No__t_0 member işlevi, önbelleğe alınmış tüm değerleri atar, böylece `operator()` bir sonraki çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
+`reset()` Üye işlev önbelleğe alınan değerleri atar, böylece bir sonraki `operator()` çağrının sonucu çağrıdan önce motordan elde edilen değerlere bağlı olmaz.
 
-@No__t_0 üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
+Üye `operator()` işlevler, geçerli parametre paketinden veya belirtilen parametre paketinden URNG motoruna dayalı olarak oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz. [\<random >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için [ \<rastgele>](../standard-library/random.md)bakın.
 
-POISSON dağıtımı hakkında ayrıntılı bilgi için Wolfram MathWorld article [Poisson dağıtımına](https://go.microsoft.com/fwlink/p/?linkid=401112)bakın.
+Poisson dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld makalesi [Poisson Distribution'a](https://go.microsoft.com/fwlink/p/?linkid=401112)bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -192,13 +192,13 @@ Distribution for 100 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<random >
+**Üstbilgi:** \<rastgele>
 
 **Ad alanı:** std
 
-## <a name="poisson_distribution"></a>poisson_distribution::p oisson_distribution
+## <a name="poisson_distributionpoisson_distribution"></a><a name="poisson_distribution"></a>poisson_distribution::poisson_distribution
 
-Dağıtımı oluşturur.
+Dağıtımı kurar.
 
 ```cpp
 explicit poisson_distribution(RealType mean = 1.0);
@@ -207,23 +207,23 @@ explicit binomial_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*ortalama* \
-@No__t_0 dağıtım parametresi.
+*Demek*\
+Dağıtım `mean` parametresi.
 
-*para* \
-Dağıtımı oluşturmak için kullanılan parametre yapısı.
+*parm*\
+Dağılımı oluşturmak için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < mean`
+**Ön koşul:**`0.0 < mean`
 
-İlk Oluşturucu, depolanan `mean` değeri *Ortalama*değeri tutan bir nesne oluşturur.
+İlk oluşturucu, depolanan `mean` değeri *ortalamayı*tutan bir nesne yi inşa eder.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. @No__t_0 üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci oluşturucu, depolanan parametreleri *parm'dan*başharfe çevrilmiş bir nesne inşa eder. Üye işlevi arayarak varolan bir dağıtımın `param()` geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
-## <a name="param_type"></a>poisson_distribution::p aram_type
+## <a name="poisson_distributionparam_type"></a><a name="param_type"></a>poisson_distribution::param_type
 
-Dağıtımın parametrelerini depolar.
+Dağıtım parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -238,14 +238,14 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-Bkz. [poisson_distribution](#poisson_distribution)için Oluşturucu parametreleri.
+poisson_distribution için konstrüktör [parametrelerine](#poisson_distribution)bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < mean`
+**Ön koşul:**`0.0 < mean`
 
-Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, var olan bir dağıtımın saklı parametrelerini ayarlamak için `param()` member işlevine ve depolanan parametrelerin yerine kullanılacak `operator()` geçirilebilir.
+Bu yapı, varolan bir dağılımın depolanan parametrelerini `param()` ayarlamak ve `operator()` depolanan parametrelerin yerine kullanılmak üzere üye işlevine anında dağıtım Sınıfı oluşturucuya geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<random >](../standard-library/random.md)
+[\<rastgele>](../standard-library/random.md)

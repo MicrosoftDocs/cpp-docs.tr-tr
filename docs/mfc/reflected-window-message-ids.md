@@ -46,24 +46,24 @@ helpviewer_keywords:
 - OCM_NOTIFY message [MFC]
 - reflected messages
 ms.assetid: 3417ff51-ff9f-458c-bff4-17c200f00d96
-ms.openlocfilehash: 6be7d29a4b43ac10980601708f5bcc666a48dd58
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 5b44a1b4e96d92d9ddd150a5b5f68cf83863f8db
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69511377"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372845"
 ---
 # <a name="reflected-window-message-ids"></a>Yansımış Pencere İletisi Kimlikleri
 
-Bir ActiveX denetimi veya diğer özelleştirilmiş denetim oluşturmanın hızlı bir yolu, bir pencerenin alt sınıfını oluşturmaktır. Daha fazla bilgi için bkz [. MFC ActiveX denetimleri: Altsınıflama a Windows Control](../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
+ActiveX denetimi veya diğer özel denetim oluşturmak için hızlı bir yol, bir pencere alt sınıflamaktır. Daha fazla bilgi için Bkz. [MFC ActiveX Denetimleri: Windows Denetimi'ni alt sınıflandırma.](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)
 
-Denetimin kapsayıcısının, alt sınıf Windows denetimi tarafından gönderilen pencere iletilerini almasını engellemek için, [Copacontrol](../mfc/reference/colecontrol-class.md) bazı pencere iletilerini ele almak ve bunları denetime geri göndermek için bir "yansıtıcı" penceresi oluşturur. Bu denetim, kendi pencere yordamında, ActiveX denetimine uygun eylemleri gerçekleştirerek bu yansıtılan iletileri işleyebilir.
+Denetimin kapsayıcısının alt sınıflı bir Windows denetimi tarafından gönderilen pencere iletilerini almasını önlemek için [COleControl,](../mfc/reference/colecontrol-class.md) belirli pencere iletilerini engellemek ve denetime geri göndermek için bir "yansıtıcı" penceresi oluşturur. Denetim, penceresinde yordamı, daha sonra activex denetimi için uygun eylemleri gerçekleştirerek bu yansıyan iletileri işleyebilir.
 
-Aşağıdaki tabloda, kesilen iletiler ve yansıtıcı penceresinin gönderdiği karşılık gelen iletiler gösterilmektedir.
+Aşağıdaki tablo, ele geçirilen iletileri ve reflektör penceresinin gönderdiği ilgili iletileri gösterir.
 
-|Denetim tarafından gönderilen ileti|Denetime yansıtılan ileti|
+|Denetim tarafından gönderilen ileti|Denetime yansıyan ileti|
 |---------------------------------|--------------------------------------|
-|[WM_COMMAND](/windows/win32/menurc/wm-command)|OCM_COMMAND|
+|[Wm_command](/windows/win32/menurc/wm-command)|OCM_COMMAND|
 |[WM_CTLCOLORBTN](/windows/win32/Controls/wm-ctlcolorbtn)|OCM_CTLCOLORBTN|
 |[WM_CTLCOLOREDIT](/windows/win32/Controls/wm-ctlcoloredit)|OCM_CTLCOLOREDIT|
 |[WM_CTLCOLORDLG](/windows/win32/dlgbox/wm-ctlcolordlg)|OCM_CTLCOLORDLG|
@@ -79,12 +79,12 @@ Aşağıdaki tabloda, kesilen iletiler ve yansıtıcı penceresinin gönderdiği
 |[WM_HSCROLL](/windows/win32/Controls/wm-hscroll)|OCM_HSCROLL|
 |[WM_VSCROLL](/windows/win32/Controls/wm-vscroll)|OCM_VSCROLL|
 |[WM_PARENTNOTIFY](/previous-versions/windows/desktop/inputmsg/wm-parentnotify)|OCM_PARENTNOTIFY|
-|[WM_NOTIFY](/windows/win32/controls/wm-notify)|OCM_NOTIFY|
+|[Wm_notıfy](/windows/win32/controls/wm-notify)|OCM_NOTIFY|
 
 > [!NOTE]
->  Denetim bir Win32 sisteminde çalışıyorsa, alabileceği birkaç WM_CTLCOLOR\* ileti türü vardır. Daha fazla bilgi için bkz. WM_CTLCOLORBTN, WM_CTLCOLORDLG, WM_CTLCOLOREDIT, WM_CTLCOLORLISTBOX, WM_CTLCOLORMSGBOX, WM_CTLCOLORSCROLLBAR, WM_CTLCOLORSTATIC.
+> Denetim Win32 sisteminde çalışıyorsa, alabileceği çeşitli\* WM_CTLCOLOR iletileri vardır. Daha fazla bilgi için WM_CTLCOLORBTN, WM_CTLCOLORDLG, WM_CTLCOLOREDIT, WM_CTLCOLORLISTBOX, WM_CTLCOLORMSGBOX, WM_CTLCOLORSCROLLBAR, WM_CTLCOLORSTATIC.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri: Windows Denetimlerinin Alt Sınıfını Oluşturma](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)<br/>
+[MFC ActiveX Denetimleri: Bir Windows Denetimini Alt Sınıf Yapma](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)<br/>
 [TN062: Windows Denetimleri için İleti Yansıması](../mfc/tn062-message-reflection-for-windows-controls.md)

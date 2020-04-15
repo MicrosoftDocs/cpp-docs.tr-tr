@@ -4,81 +4,81 @@ ms.date: 08/29/2019
 helpviewer_keywords:
 - wizards [MFC]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-ms.openlocfilehash: fd7e8df6692889914af2dd060ac42ed4ca3ebb8b
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 45087434c0093f99383096761d58a8029c9d5009
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446428"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373016"
 ---
 # <a name="mfc-odbc-consumer-wizard"></a>MFC ODBC Tüketici Sihirbazı
 
 ::: moniker range="vs-2019"
 
-Bu sihirbaz, Visual Studio 2019 ve sonrasında kullanılamaz.
+Bu sihirbaz Visual Studio 2019 ve sonraki yıllarda kullanılamaz.
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-Bu sihirbaz, belirtilen veri kaynağına erişmek için gereken bir ODBC kayıt kümesi sınıfını ve veri bağlamalarını ayarlar.
+Bu sihirbaz, bir ODBC kayıt kümesi sınıfı ve belirtilen veri kaynağına erişmek için gerekli veri bağlamaları ayarlar.
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
 - **Veri Kaynağı**
 
-  **Veri kaynağı** düğmesi, belirtilen ODBC sürücüsünü kullanarak belirtilen veri kaynağını ayarlamanıza olanak sağlar. Veri kaynağı dosyaları (DSN) hakkında daha fazla bilgi için bkz. ODBC SDK 'daki [dosya veri kaynakları](/sql/odbc/reference/file-data-sources) .
+  **Veri Kaynağı** düğmesi, belirtilen ODBC sürücüsünü kullanarak belirtilen veri kaynağını ayarlamanızı sağlar. Veri kaynağı dosyaları (DSN) hakkında daha fazla bilgi için, ODBC SDK'daki [Dosya Veri Kaynakları'na](/sql/odbc/reference/file-data-sources) bakın.
 
-  **Veri kaynağı seç** iletişim kutusu iki sekmeye sahiptir:
+  **Veri Kaynağı Seç** iletişim kutusunda iki sekme vardır:
 
-  - **Dosya veri kaynağı** sekmesi:
+  - **Dosya Veri Kaynağı** sekmesi:
 
-     **Içindeki ara** kutusu, veri kaynağı olarak kullanılacak dosyaların seçilecek dizini belirtir. Varsayılan değer \Program Files\Common Files\ODBC\Data kaynaklarıdır. Mevcut dosya veri kaynakları (. DSN dosyaları) ana liste kutusunda görünür. [ODBC veri kaynağı Yöneticisi](/sql/odbc/admin/odbc-data-source-administrator)'NDEKI **dosya DSN** sekmesini kullanarak veri kaynaklarını zaman içinde ayarlayabilir veya bu iletişim kutusunu kullanarak yeni bir tane oluşturabilirsiniz.
+     **Görünüm kutusunda,** veri kaynağı olarak kullanılacak dosyaları seçilecek dizini belirtir. Varsayılan \Program Dosyaları\Ortak Dosyalar\ODBC\Veri Kaynakları. Varolan dosya veri kaynakları (.dsn dosyaları) ana liste kutusunda görünür. Veri kaynaklarını [ODBC Veri Kaynağı Yöneticisi'ndeki](/sql/odbc/admin/odbc-data-source-administrator) **Dosya DSN** sekmesini kullanarak önceden ayarlayabilir veya bu iletişim kutusunu kullanarak yenilerini oluşturabilirsiniz.
 
-     Bu iletişim kutusundan yeni bir dosya veri kaynağı oluşturmak için `New` ' ye tıklayarak bir DSN adı belirtin; **Yeni veri kaynağı oluştur** iletişim kutusu görüntülenir. **Yeni veri kaynağı oluştur** iletişim kutusunda, uygun bir sürücü seçin ve `Next`' a tıklayın. **Araştır**' a tıklayın ve veri kaynağı olarak kullanılacak dosyanın adını seçin (. xls dosyaları gıbı, DSN olmayan dosyaları görüntülemek Için "tüm dosyalar" ı seçmeniz gerekir); `Next`' ye ve ardından **son**' a tıklayın. (DSN olmayan bir dosya seçtiyseniz, dosyayı bir DSN 'e dönüştürecek "ODBC Microsoft Excel kurulumu" gibi sürücüye özgü bir iletişim kutusu alacaksınız.)
+     Bu iletişim kutusundan yeni bir dosya veri `New` kaynağı oluşturmak için bir DSN adı belirtmek için tıklatın; **Yeni Veri Kaynağı Oluştur** iletişim kutusu görüntülenir. Yeni **Veri Kaynağı Oluştur** iletişim kutusunda, uygun bir `Next`sürücü seçin ve ; **Gözat'ı**tıklatın ve veri kaynağı olarak kullanılacak dosyanın adını seçin (.xls dosyaları gibi DSN olmayan dosyaları görüntülemek için "Tüm Dosyalar"ı seçmeniz gerekir); tıklatın `Next`ve sonra **Bitir'i**tıklatın. (DSN olmayan bir dosya seçtiyseniz, dosyayı DSN'ye dönüştürecek "ODBC Microsoft Excel Kurulumu" gibi sürücüye özgü bir iletişim kutusu alırsınız.)
 
      > [!NOTE]
-     > ODBC veri kaynağı Yöneticisi 'ni kullanarak önceden yeni bir dosya veri kaynağı da oluşturabilirsiniz. **Başlat** menüsünde **Ayarlar**, **Denetim Masası**, **Yönetim Araçları**, **veri kaynakları (ODBC)** ve ardından **ODBC veri kaynağı Yöneticisi**' ni seçin.
+     > ODBC Veri Kaynağı Yöneticisi'ni kullanarak önceden yeni bir dosya veri kaynağı oluşturabilirsiniz. **Başlat** menüsünden **Ayarlar,** **Denetim Masası,** **Yönetim Araçları,** **Veri Kaynakları (ODBC)** ve ardından **ODBC Veri Kaynak Yöneticisi'ni**seçin.
 
-     **DSN adı** kutusu, dosya veri kaynağı için bir ad belirtmenizi sağlar. DSN adının, Excel dosyaları için. xls veya erişim dosyaları için. mdb gibi uygun dosya uzantısıyla bitdiğinden emin olmanız gerekir.
+     **DSN Adı** kutusu, dosya veri kaynağı için bir ad belirtmenize olanak tanır. DSN adının Excel dosyaları için .xls veya Access dosyaları için .mdb gibi uygun dosya uzantısı ile sona erdiğinden emin olmalısınız.
 
-     DSN hakkında daha fazla bilgi için bkz. ODBC SDK 'sında [dosya veri kaynakları](/sql/odbc/reference/file-data-sources) .
+     DSN'ler hakkında daha fazla bilgi için ODBC SDK'daki [Dosya Veri Kaynakları'na](/sql/odbc/reference/file-data-sources) bakın.
 
-  - **Makine veri kaynağı** sekmesi:
+  - **Makine Veri Kaynağı** sekmesi:
 
-     Bu sekme, sistem ve Kullanıcı VERI kaynaklarını listeler. Kullanıcı veri kaynakları, bu makinedeki bir kullanıcıya özeldir. Sistem veri kaynakları, bu makinedeki veya bir sistem genelinde bir hizmette bulunan tüm kullanıcılar tarafından kullanılabilir. Bkz. ODBC SDK 'sindeki [makine veri kaynakları](/sql/odbc/reference/machine-data-sources)
+     Bu sekme, sistem ve Kullanıcı VERİlerİ kaynaklarını listeler. Kullanıcı veri kaynakları bu makinedeki bir kullanıcıya özgür. Sistem veri kaynakları bu makinedeki tüm kullanıcılar tarafından veya sistem çapında bir hizmette kullanılabilir. ODBC SDK'daki [Makine Veri Kaynaklarına](/sql/odbc/reference/machine-data-sources) Bakın
 
-     ODBC veri kaynakları hakkında daha fazla bilgi için bkz. ODBC SDK 'daki [veri kaynakları](/sql/odbc/reference/data-sources) .
+     ODBC veri kaynakları hakkında daha fazla bilgi için, ODBC SDK'daki [Veri Kaynakları'na](/sql/odbc/reference/data-sources) bakın.
 
-  Ayarlamayı bitirmek için **Tamam**'a tıklayın. **Veritabanı nesnesi Seç** iletişim kutusu görünür. Bu iletişim kutusunda, tüketicinin kullanacağı tabloyu veya görünümü seçin. Öğeler ' i tıklatırken denetim tuşunu basılı tutarak birden çok görünüm ve tablo seçebilirsiniz. Ayarlamayı bitirmek için **Tamam**'a tıklayın.
+  Ayarlamayı bitirmek için **Tamam**'a tıklayın. **Veritabanı Nesnesini Seç** iletişim kutusu görüntülenir. Bu iletişim kutusundan, tüketicinin kullanacağı tabloyu veya görünümü seçin. Öğelere tıklarken denetim tuşunu basılı tutarak birden çok görünüm ve tablo seçebileceğinizi unutmayın. Ayarlamayı bitirmek için **Tamam**'a tıklayın.
 
 - **Sınıfı**
 
-   Seçtiğiniz dosya veya makine veri kaynağı adı üzerinde varsayılan olarak temel alan tüketici sınıfının adı.
+   Seçtiğiniz dosyanın veya makine veri kaynağının adına varsayılan olarak dayalı tüketici sınıfının adı.
 
-- **. h dosyası**
+- **.h dosyası**
 
-   Seçtiğiniz dosya veya makine veri kaynağı adı üzerinde varsayılan olarak temel alan tüketici sınıfı üstbilgi dosyasının adı.
+   Seçtiğiniz dosyanın veya makine veri kaynağının adına varsayılan olarak dayalı tüketici sınıfı üstbilgi dosyasının adı.
 
-- **. cpp dosyası**
+- **.cpp dosyası**
 
-   Seçtiğiniz dosya veya makine veri kaynağı adı üzerinde varsayılan olarak temel alan tüketici sınıfı uygulama dosyasının adı.
+   Seçtiğiniz dosyanın veya makine veri kaynağının adına varsayılan olarak dayalı tüketici sınıfı uygulama dosyasının adı.
 
 - **Tür**
 
-   Kayıt kümesinin Dynaset (varsayılan) veya anlık görüntü olduğunu belirtir.
+   Kayıt kümesinin bir dinamit (varsayılan) veya anlık görüntü olup olmadığını belirtir.
 
-   - **Dynaset**: kayıt kümesinin bir Dynaset olduğunu belirtir. DYNASET, sorgulanan veritabanının verilerine dizinli bir görünüm sağlayan sorgunun sonucudur. DYNASET, özgün verilerin yalnızca bir integral dizinini önbelleğe alır ve bu nedenle bir anlık görüntü üzerinde performans kazancı sağlar. Dizin, bir sorgunun sonucu olarak bulunan her bir kayda doğrudan işaret eder ve bir kaydın kaldırılıp kaldırılmadığını gösterir. Ayrıca, sorgulanan kayıtlardaki güncelleştirilmiş bilgilere erişebilirsiniz. Bu varsayılandır.
+  - **Dynaset**: Kayıt setinin bir dinamit olduğunu belirtir. Dynaset, sorgulanan veritabanıverilerine dizinlenmiş görünüm sağlayan bir sorgunun sonucudur. Bir dinamit, özgün verilere yalnızca ayrılmaz bir dizin önbelleğe gelir ve böylece anlık görüntü üzerinden performans artışı sağlar. Dizin, sorgu nun sonucu olarak bulunan her kayda doğrudan işaret ediyor ve bir kaydın kaldırılıp kaldırılmadı olduğunu gösterir. Ayrıca sorgulanmış kayıtlarda güncelleştirilmiş bilgilere erişebilirsiniz. Bu varsayılandır.
 
-   - **Anlık görüntü**: kayıt kümesinin bir anlık görüntü olduğunu belirtir. Anlık görüntü, bir sorgunun sonucudur ve tek seferde bir veritabanında görüntülenir. Sorgunun bir sonucu olarak bulunan tüm kayıtlar önbelleğe alınır, bu nedenle özgün kayıtlarda herhangi bir değişiklik görmezsiniz.
+  - **Anlık Görüntü**: Kayıt kümesinin anlık görüntü olduğunu belirtir. Anlık görüntü bir sorgunun sonucudur ve bir zaman içinde bir veritabanına bir görünümdür. Sorgu nun sonucu olarak bulunan tüm kayıtlar önbelleğe alınır, bu nedenle özgün kayıtlarda herhangi bir değişiklik görmezsiniz.
 
-- **Tüm sütunları bağla**
+- **Tüm sütunları bağlama**
 
-   Seçili tablodaki tüm sütunların bağlanıp bağlanmadığını belirtir. Bu kutuyu (varsayılan) seçerseniz, tüm sütunlar bağlanır; Bu kutuyu seçmezseniz, hiçbir sütun bağlı değildir ve bunları kayıt kümesi sınıfında el ile bağlamanız gerekir.
+   Seçili tablodaki tüm sütunların bağlı olup olmadığını belirtir. Bu kutuyu (varsayılan) seçerseniz, tüm sütunlar bağlanır; Bu kutuyu seçmezseniz, sütun bağlı değildir ve bunları kayıt kümesi sınıfında el ile bağlamanız gerekir.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ODBC tüketme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
+[MFC ODBC Tüketimi](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
 [Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)

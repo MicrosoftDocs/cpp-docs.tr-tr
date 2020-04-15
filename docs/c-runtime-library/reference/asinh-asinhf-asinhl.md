@@ -1,10 +1,13 @@
 ---
 title: asinh, asinhf, asinhl
-ms.date: 04/05/2018
+ms.date: 4/2/2020
 api_name:
 - asinh
 - asinhf
 - asinhl
+- _o_asinh
+- _o_asinhf
+- _o_asinhl
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -17,6 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -30,16 +34,16 @@ helpviewer_keywords:
 - asinhl function
 - asinhf function
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
-ms.openlocfilehash: f4d93f121c0124293a5bdff9041d0adfaab5d83c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 299ee0ff3014dcfd2f6ab712d01766119fab5894
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939649"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81350473"
 ---
 # <a name="asinh-asinhf-asinhl"></a>asinh, asinhf, asinhl
 
-Ters hiperbolik sinüsü hesaplar.
+Ters hiperbolik sinüs hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,28 +60,30 @@ long double asinh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*X*<br/>
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**ASİNH** işlevleri, *x*'in ters hyberbolik sinüsü (Ark hiperbolik sinüs) döndürür. Bu işlev, kayan nokta etki alanı üzerinde geçerlidir. *X* sessiz bir NaN, sonsuz veya sonsuz ise, aynı değer döndürülür.
+**Asin** fonksiyonları *x'in*ters hyberbolik sinüs (ark hiperbolik sinüs) geri döndürür. Bu işlev kayan nokta etki alanı üzerinde geçerlidir. *X* sessiz bir NaN, belirsiz veya sonsuz ise, aynı değer döndürülür.
 
-|Giriş|SEH özel durumu|**_matherr** Duruma|
+|Girdi|SEH Özel Durumu|**_matherr** Özel durum|
 |-----------|-------------------|--------------------------|
 |± QNAN, IND, INF|yok|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullandığınızda C++, **ASİNH** 'nin **float** veya **Long** **Double** değerleri alıp döndüren aşırı yüklerini çağırabilirsiniz. C programında, **ASİNH** her zaman **Double**alır ve döndürür.
+C++'ı kullandığınızda, **float** veya **uzun** **çift** değerleri alan ve döndüren aşırı **asinh** yüklerini arayabilirsiniz. Bir C programında, **asinh** her zaman alır ve **çift**döndürür.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli C üstbilgisi|Gerekli C++ üst bilgi|
+|İşlev|Gerekli C üstbilgi|Gerekli C++ üstbilgi|
 |--------------|--------------|------------------|
-|**ASİNH**, **asınhf**, **asinhl**|\<Math. h >|\<cmath > veya \<Math. h <|
+|**asinh**, **asinhf**, **asinhl**|\<math.h>|\<cmath> \<veya math.h<|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

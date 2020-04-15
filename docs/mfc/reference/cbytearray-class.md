@@ -1,5 +1,5 @@
 ---
-title: CByteArray sınıfı
+title: CByteArray Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CByteArray
@@ -42,16 +42,16 @@ helpviewer_keywords:
 - CByteArray [MFC], SetAtGrow
 - CByteArray [MFC], SetSize
 ms.assetid: 53d4a512-657c-4187-9609-e3f5339a78e0
-ms.openlocfilehash: 2453e7c040b9101f9c3a3b018e274b16e76ebea7
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 9da30f6546a69a51c56bf4b27668e1603c13290b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446355"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81352394"
 ---
-# <a name="cbytearray-class"></a>CByteArray sınıfı
+# <a name="cbytearray-class"></a>CByteArray Sınıfı
 
-, Dinamik bayt dizilerini destekler.
+Dinamik bayt dizilerini destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,11 +61,11 @@ class CByteArray : public CObject
 
 ## <a name="members"></a>Üyeler
 
-`CByteArray` üye işlevleri [CObArray](../../mfc/reference/cobarray-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, üye işlevi özellikleri için `CObArray` başvuru belgelerini kullanabilirsiniz. İşlev parametresi veya dönüş değeri olarak `CObject` bir işaretçi Gördüğünüz her yerde, bir bayt yerine koyun.
+CObArray `CByteArray` sınıfının üye işlevleri ne [CObArray](../../mfc/reference/cobarray-class.md)benzer. Bu benzerlik nedeniyle, üye işlev `CObArray` özellikleri için başvuru belgelerini kullanabilirsiniz. Bir `CObject` işaretçiyi işlev parametresi veya iade değeri olarak gördüğünüz her yerde, bir BYTE değiştirin.
 
 `CObject* CObArray::GetAt( int <nIndex> ) const;`
 
-Örneğin, öğesine çevirir
+örneğin, çevirir
 
 `BYTE CByteArray::GetAt( int <nIndex> ) const;`
 
@@ -73,56 +73,56 @@ class CByteArray : public CObject
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CByteArray:: CByteArray](../../mfc/reference/cobarray-class.md#cobarray)|Boş bir dizi oluşturur.|
+|[CByteArray::CByteArray](../../mfc/reference/cobarray-class.md#cobarray)|Boş bir dizi oluşturuyor.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CByteArray:: Add](../../mfc/reference/cobarray-class.md#add)|Dizinin sonuna bir öğesi ekler; gerekirse diziyi büyür.|
-|[CByteArray:: Append](../../mfc/reference/cobarray-class.md#append)|Diziye başka bir dizi ekler; gerekirse diziyi büyür.|
-|[CByteArray:: Copy](../../mfc/reference/cobarray-class.md#copy)|Başka bir diziyi diziye kopyalar; gerekirse diziyi büyür.|
-|[CByteArray:: ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Dizi içindeki bayta geçici bir başvuru döndürür.|
-|[CByteArray:: FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Geçerli üst sınırın üzerinde kullanılmayan tüm belleği serbest bırakır.|
-|[CByteArray:: GetAt](../../mfc/reference/cobarray-class.md#getat)|Verilen dizindeki değeri döndürür.|
-|[CByteArray:: GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizideki öğelerin sayısını alır.|
-|[CByteArray:: GetData](../../mfc/reference/cobarray-class.md#getdata)|Dizideki öğelere erişime izin verir. NULL olabilir.|
-|[CByteArray:: GetSize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizideki öğelerin sayısını alır.|
-|[CByteArray:: Getüstsınırı](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizini döndürür.|
-|[CByteArray:: InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Belirtilen dizine bir öğe (veya başka bir dizide bulunan tüm öğeleri) ekler.|
-|[CByteArray:: IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Dizinin boş olup olmadığını belirler.|
-|[CByteArray:: RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Bu dizideki tüm öğeleri kaldırır.|
-|[CByteArray:: RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Belirli bir dizindeki bir öğeyi kaldırır.|
-|[CByteArray:: SetAt](../../mfc/reference/cobarray-class.md#setat)|Belirli bir dizin için değeri ayarlar; dizinin büyümesine izin verilmiyor.|
-|[CByteArray:: SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Belirli bir dizin için değeri ayarlar; gerekirse diziyi büyür.|
-|[CByteArray:: SetSize](../../mfc/reference/cobarray-class.md#setsize)|Bu dizide yer alan öğelerin sayısını ayarlar.|
+|[CByteArray::Ekle](../../mfc/reference/cobarray-class.md#add)|Dizinin sonuna bir öğe ekler; gerekirse diziyi büyütür.|
+|[CByteArray::Ek](../../mfc/reference/cobarray-class.md#append)|Diziye başka bir dizi ekler; gerekirse diziyi büyütür.|
+|[CByteArray::Kopyala](../../mfc/reference/cobarray-class.md#copy)|Başka bir diziyi diziye kopyalar; gerekirse diziyi büyütür.|
+|[CByteArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Dizi içindeki bayt için geçici bir başvuru verir.|
+|[CByteArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Tüm kullanılmayan belleği geçerli üst sınır üzerinde serbest eder.|
+|[CByteArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Belirli bir dizindeki değeri döndürür.|
+|[CByteArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizideki öğelerin sayısını alır.|
+|[CByteArray::Veri Alın](../../mfc/reference/cobarray-class.md#getdata)|Dizideki öğelere erişim sağlar. NULL olabilir.|
+|[CByteArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizideki öğelerin sayısını alır.|
+|[CByteArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizini döndürür.|
+|[CByteArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Belirli bir dizide bir öğe (veya başka bir dizideki tüm öğeler) ekler.|
+|[CByteArray::Boş](../../mfc/reference/cobarray-class.md#isempty)|Dizinin boş olup olmadığını belirler.|
+|[CByteArray::RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Bu dizideki tüm öğeleri kaldırır.|
+|[CByteArray::RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Belirli bir dizindeki bir öğeyi kaldırır.|
+|[CByteArray::SetAt](../../mfc/reference/cobarray-class.md#setat)|Belirli bir dizinin değerini ayarlar; dizi büyümeye izin verilmez.|
+|[CByteArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Belirli bir dizinin değerini ayarlar; gerekirse diziyi büyütür.|
+|[CByteArray::SetSize](../../mfc/reference/cobarray-class.md#setsize)|Bu dizide yer alan öğe sayısını ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CByteArray:: operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi ayarlar veya alır.|
+|[CByteArray::operatör \[\]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizilişte öğeyi ayarlar veya alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CByteArray`, öğelerinin serileştirilmesi ve dökümünü desteklemek için IMPLEMENT_SERIAL makrosunu içerir. Bir bayt dizisi, aşırı yüklenmiş ekleme ( **<<** ) işleci veya `Serialize` member işleviyle birlikte bir arşive depolanıyorsa, her öğe sırasıyla serileştirilmiş olur.
+`CByteArray`öğelerinin serileştirilmesini ve dampingini desteklemek için IMPLEMENT_SERIAL makroyu içerir. Bir dizi bayt arşive depolanırsa, aşırı yüklü ekleme ( **<<**) işleci veya `Serialize` üye işlevle, her öğe sırayla seri hale getirilir.
 
 > [!NOTE]
->  Bir dizi kullanmadan önce, boyutunu belirlemek ve için bellek ayırmak üzere `SetSize` kullanın. `SetSize`kullanmıyorsanız, dizine öğe eklemek, bu öğenin sık olarak yeniden tahsis edilmesine ve kopyalanmasına neden olur. Sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara ayırma yapılabilir.
+> Bir dizi kullanmadan `SetSize` önce, boyutunu oluşturmak ve bunun için bellek ayırmak için kullanın. `SetSize`Kullanmazsanız, dizinize öğe eklemek, dizinin sık sık yeniden tahsis edilmesine ve kopyalanmasını sağlar. Sık yeniden tahsis ve kopyalama verimsizdir ve belleği parçalayabilir.
 
-Dizideki ayrı öğelerden oluşan hata ayıklama gerekirse, `CDumpContext` nesnesinin derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
+Dizideki tek tek öğelerden hata ayıklama çıktısına ihtiyacınız `CDumpContext` varsa, nesnenin derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
-`CByteArray`kullanma hakkında daha fazla bilgi için bkz. Makale [koleksiyonları](../../mfc/collections.md).
+Kullanma `CByteArray`hakkında daha fazla bilgi için [Koleksiyonlar](../../mfc/collections.md)makalesine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 `CByteArray`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxcoll. h
+**Üstbilgi:** afxcoll.h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

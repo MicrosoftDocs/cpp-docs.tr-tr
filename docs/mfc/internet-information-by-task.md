@@ -4,50 +4,50 @@ ms.date: 09/12/2018
 helpviewer_keywords:
 - MFC, Internet applications
 ms.assetid: da078bf5-53c3-4167-b1ef-509b5a544ad9
-ms.openlocfilehash: 94bc17f59e0d0a7ed5627d0ed20d31e471c22fd9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2ba99658dcef92ee36e60d52982dcd9ffc577d03
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152810"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81353080"
 ---
 # <a name="internet-information-by-task"></a>Göreve Göre Internet Bilgileri
 
-Bu konuda listelenen görevleri gerçekleştirmek istediğiniz göreve göre sıralanır.
+Bu konuda listelenen görevler, gerçekleştirmek istediğiniz göreve göre sıralanır.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
 
-Bu konudaki görevleri aşağıdaki kategorileri listelenmiştir:
+Aşağıdaki görev kategorileri bu konuda listelenmiştir:
 
-- [ActiveX denetimleri, belgeler ve zaman uyumsuz ad görevleri](#_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks)
+- [ActiveX Denetimleri, Belgeler ve Eşzamanlı Takma Alma Görevleri](#_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks)
 
-- [WinINet görevleri](#_core_wininet_tasks)
+- [WinInet Görevleri](#_core_wininet_tasks)
 
-## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz
+## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsun?
 
-###  <a name="_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks"></a> ActiveX denetimleri, belgeler ve zaman uyumsuz ad görevleri
+### <a name="activex-controls-documents-and-asynchronous-moniker-tasks"></a><a name="_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks"></a>ActiveX Denetimleri, Belgeler ve Eşzamanlı Takma Alma Görevleri
 
-- [Zaman uyumsuz adlar hakkında bilgi edinin](../mfc/asynchronous-monikers-on-the-internet.md)
+- [Asynchronous Monikers hakkında bilgi edinin](../mfc/asynchronous-monikers-on-the-internet.md)
 
-- [ActiveX denetimlerinde Internet bağlamı hakkında bilgi edinin](../mfc/activex-controls-on-the-internet.md)
+- [Internet bağlamında ActiveX denetimleri hakkında bilgi edinin](../mfc/activex-controls-on-the-internet.md)
 
-- [ActiveX denetimi en iyi duruma getirme](../mfc/mfc-activex-controls-optimization.md)
+- [ActiveX denetimini optimize edin](../mfc/mfc-activex-controls-optimization.md)
 
-###  <a name="_core_wininet_tasks"></a> WinINet görevleri
+### <a name="wininet-tasks"></a><a name="_core_wininet_tasks"></a>WinInet Görevleri
 
-- [WinINet, Internet erişimi için Win32 API işlevleri hakkında bilgi edinin](../mfc/wininet-basics.md)
+- [Internet erişimi için Win32 API işlevleri wininet hakkında bilgi edinin](../mfc/wininet-basics.md)
 
-- [WinINet ile söz konusu gözden programlama](../mfc/win32-internet-extensions-wininet.md)
+- [WinInet programlama ile ilgili ne leri inceleyin](../mfc/win32-internet-extensions-wininet.md)
 
-- [MFC WinINet sınıfları kullanarak Internet istemci uygulaması yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+- [MFC WinInet sınıflarını kullanarak bir Internet istemcisi uygulaması yazın](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
 
-- [Bir FTP istemci uygulaması yazma](../mfc/steps-in-a-typical-ftp-client-application.md)
+- [FTP istemci uygulaması yazma](../mfc/steps-in-a-typical-ftp-client-application.md)
 
-- [Bir HTTP istemci uygulaması yazma](../mfc/steps-in-a-typical-http-client-application.md)
+- [HTTP istemci uygulaması yazma](../mfc/steps-in-a-typical-http-client-application.md)
 
-- [Bir Gopher istemci uygulaması yazma](../mfc/steps-in-a-typical-gopher-client-application.md)
+- [Bir Gopher istemci uygulaması yazın](../mfc/steps-in-a-typical-gopher-client-application.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
+[MFC İnternet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)

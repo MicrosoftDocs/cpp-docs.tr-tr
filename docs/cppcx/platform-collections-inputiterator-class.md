@@ -1,5 +1,5 @@
 ---
-title: 'Platform::Collections:: ınputıterator sınıfı'
+title: Platform::Collections::InputIterator Sınıfı
 ms.date: 03/27/2019
 ms.topic: reference
 f1_keywords:
@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - InputIterator Class
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-ms.openlocfilehash: 49b131b01fe3d9cad5f8366fd4cc0c110b5d060c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 92f9b15f474a5aa3d063f0ccfb663f56baf8de31
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161803"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81354560"
 ---
-# <a name="platformcollectionsinputiterator-class"></a>Platform::Collections:: ınputıterator sınıfı
+# <a name="platformcollectionsinputiterator-class"></a>Platform::Collections::InputIterator Sınıfı
 
-Windows çalışma zamanını şuradan türetilmiş koleksiyonlar için bir standart Şablon kitaplığı Inputıterator sağlar.
+Windows Runtime'dan türetilen koleksiyonlar için Standart Şablon Kitaplığı Girişi Sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,35 +28,35 @@ class InputIterator;
 #### <a name="parameters"></a>Parametreler
 
 *X*<br/>
-Typename Inputıterator Şablon sınıfı.
+Giriş Kaydedici şablon sınıfının dis adı.
 
 ### <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Genel Typedefs
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`difference_type`|İşaretçi farkı (ptrdiff_t).|
-|`iterator_category`|Bir giriş yineleyici kategorisi (:: std::input_iterator_tag).|
-|`pointer`|Bir işaretçi bir `const X`|
-|`reference`|Bir başvuru bir `const X`|
-|`value_type`|`X` Typename.|
+|`iterator_category`|Giriş yineleme kategorisi (::std::input_iterator_tag).|
+|`pointer`|Bir işaretçi`const X`|
+|`reference`|Bir başvuru`const X`|
+|`value_type`|Yazı `X` adı.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[InputIterator::InputIterator](#ctor)|Inputıterator sınıfının yeni bir örneğini başlatır.|
+|[Giriş::Giriş](#ctor)|InputIterator sınıfının yeni bir örneğini başolarak karşılar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[InputIterator::operator!= Operator](#operator-inequality)|Geçerli Inputıterator için belirtilen bir Inputıterator eşit olup olmadığını gösterir.|
-|[InputIterator::operator * işleci](#operator-dereference)|Geçerli Inputıterator tarafından belirtilen öğeye bir başvuru alır.|
-|[InputIterator::operator ++ işleci](#operator-increment)|Geçerli Inputıterator artırır.|
-|[InputIterator::operator== Operator](#operator-equality)|Geçerli Inputıterator için belirtilen bir Inputıterator eşit olup olmadığını gösterir.|
-|[InputIterator::operator -> işleci](#operator-arrow)|Geçerli Inputıterator tarafından başvurulan bir öğenin adresi alır.|
+|[Giriş::operator!= Operatör](#operator-inequality)|Geçerli InputIterator'un belirtilen bir InputIterator'a eşit olup olmadığını gösterir.|
+|[Giriş::operator* Operatör](#operator-dereference)|Geçerli InputIterator tarafından belirtilen öğeye bir başvuru alır.|
+|[GirişIterator::operator++ Operatör](#operator-increment)|Geçerli InputIterator'u da artışlar.|
+|[Giriş::operator== Operatör](#operator-equality)|Geçerli InputIterator'un belirtilen bir InputIterator'a eşit olup olmadığını gösterir.|
+|[Giriş::operatör-> Operatörü](#operator-arrow)|Geçerli InputIterator tarafından başvurulan öğenin adresini alır.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -64,13 +64,13 @@ Typename Inputıterator Şablon sınıfı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** collection.h
+**Üstbilgi:** collection.h
 
-**Namespace:** Platform::Collections
+**Ad alanı:** Platform::Koleksiyonlar
 
-## <a name="ctor"></a>  InputIterator::InputIterator Oluşturucusu
+## <a name="inputiteratorinputiterator-constructor"></a><a name="ctor"></a>Giriş::Giriş Oluşturucu
 
-Inputıterator sınıfının yeni bir örneğini başlatır.
+InputIterator sınıfının yeni bir örneğini başolarak karşılar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -84,9 +84,9 @@ explicit InputIterator(Windows::Foundation::Collections<X>^ iterator);
 *Yineleyici*<br/>
 Bir yineleyici nesnesi.
 
-## <a name="operator-arrow"></a>  InputIterator::operator -&gt; işleci
+## <a name="inputiteratoroperator-gt-operator"></a><a name="operator-arrow"></a>GirişIterator::operator-&gt; Operatör
 
-Geçerli Inputıterator tarafından belirtilen bir öğenin adresi alır.
+Geçerli InputIterator tarafından belirtilen öğenin adresini alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -96,11 +96,11 @@ pointer operator->() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli Inputıterator tarafından belirtilen bir öğenin adresi.
+Geçerli InputIterator tarafından belirtilen öğenin adresi.
 
-## <a name="operator-dereference"></a>  InputIterator::operator\* işleci
+## <a name="inputiteratoroperator-operator"></a><a name="operator-dereference"></a>Giriş::operatör Operatörü\*
 
-Geçerli Inputıterator tarafından belirtilen öğeye bir başvuru alır.
+Geçerli InputIterator tarafından belirtilen öğeye bir başvuru alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -110,11 +110,11 @@ reference operator*() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli Inputıterator tarafından belirtilen öğe.
+Geçerli InputIterator tarafından belirtilen öğe.
 
-## <a name="operator-equality"></a>  InputIterator::operator== Operator
+## <a name="inputiteratoroperator-operator"></a><a name="operator-equality"></a>Giriş::operator== Operatör
 
-Geçerli Inputıterator için belirtilen bir Inputıterator eşit olup olmadığını gösterir.
+Geçerli InputIterator'un belirtilen bir InputIterator'a eşit olup olmadığını gösterir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -125,15 +125,15 @@ bool operator== (const InputIterator& other) const;
 ### <a name="parameters"></a>Parametreler
 
 *Diğer*<br/>
-Başka bir Inputıterator.
+Başka bir GirişIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** geçerli Inputıterator eşitse *diğer*; Aksi takdirde **false**.
+geçerli InputIterator *diğer*eşitise **doğru** ; aksi takdirde, **yanlış**.
 
-## <a name="operator-increment"></a>  InputIterator::operator ++ işleci
+## <a name="inputiteratoroperator-operator"></a><a name="operator-increment"></a>GirişIterator::operator++ Operatör
 
-Geçerli Inputıterator artırır.
+Geçerli InputIterator'u da artışlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -144,17 +144,17 @@ InputIterator operator++(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk söz dizimi artırır ve geçerli Inputıterator döndürür. İkinci sözdizimi geçerli Inputıterator bir kopyasını döndürür ve ardından geçerli Inputıterator artırır.
+İlk sözdizimi artışlarını ve ardından geçerli InputIterator'u döndürür. İkinci sözdizimi, geçerli InputIterator'un bir kopyasını döndürür ve ardından geçerli InputIterator'u da arta erdirilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Inputıterator söz dizimi geçerli Inputıterator önceden artırır.
+İlk InputIterator sözdizimi geçerli InputIterator ön-artışlar.
 
-İkinci sözdizimi geçerli Inputıterator sonrası artırır. `int` İkinci söz diziminde türü sonrası artırma işlemi, gerçek tamsayı işlenen gösterir.
+İkinci sözdizimi sonrası geçerli InputIterator'u atar. İkinci `int` sözdiziminde tür, gerçek bir tamsayı operand değil, artış sonrası işlemi gösterir.
 
-## <a name="operator-inequality"></a>  InputIterator::operator!= Operator
+## <a name="inputiteratoroperator-operator"></a><a name="operator-inequality"></a>Giriş::operator!= Operatör
 
-Geçerli Inputıterator için belirtilen bir Inputıterator eşit olup olmadığını gösterir.
+Geçerli InputIterator'un belirtilen bir InputIterator'a eşit olup olmadığını gösterir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -165,12 +165,12 @@ bool operator!=(const InputIterator& other) const;
 ### <a name="parameters"></a>Parametreler
 
 *Diğer*<br/>
-Başka bir Inputıterator.
+Başka bir GirişIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** geçerli Inputıterator eşit değilse *diğer*; Aksi takdirde **false**.
+geçerli InputIterator *diğer*eşit değilse **doğru** ; aksi takdirde, **yanlış**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)
+[Platform İsim Alanı](platform-namespace-c-cx.md)

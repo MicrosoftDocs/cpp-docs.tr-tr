@@ -5,16 +5,16 @@ ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMap
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-ms.openlocfilehash: 7790b363ef3f30b0ad0602568190ab443a2c1401
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c6f702850f5bf84b8b1bc857c9d0a744728d0cbd
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161738"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81354416"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap Sınıfı
 
-Sırasız bir temsil *harita*, anahtar-değer çiftleri koleksiyonu.
+Anahtar değer çiftleri topluluğu olan sıralanmamış bir *haritayı*temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,14 +29,14 @@ ref class Map sealed;
 
 #### <a name="parameters"></a>Parametreler
 
-*K*<br/>
-Anahtar-değer çifti anahtar türü.
+*Kahraman*<br/>
+Anahtar değeri çiftindeki anahtarın türü.
 
 *V*<br/>
-Anahtar-değer çiftindeki değer türü.
+Anahtar değeri çiftindeki değerin türü.
 
 *C*<br/>
-İki öğenin değerlerini haritadaki kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Varsayılan olarak, [std::equal_to\<K >](../standard-library/equal-to-struct.md).
+Haritadaki göreli sıralarını belirlemek için iki öğe değerini sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan bir tür. Varsayılan olarak, [\<std::equal_to K>](../standard-library/equal-to-struct.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -44,45 +44,45 @@ Anahtar-değer çiftindeki değer türü.
 
 - tamsayılar
 
-- arabirim sınıfı ^
+- arayüz sınıfı^
 
-- Genel başvuru sınıfı ^
+- kamu ref sınıfı^
 
-- değer yapısı
+- değer struct
 
-- Genel sabit listesi sınıfı
+- public enum sınıfı
 
-**UnorderedMap** temelde için bir sarmalayıcı olan [std::unordered_map](../standard-library/unordered-map-class.md) , Windows çalışma zamanı türleri depolama destekler. Bu, somut bir uygulama [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) ve [Iobservablemap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) Windows çalışma zamanı arasında ortak geçirilen türleri arabirimi. Kullanmayı denerseniz bir `Platform::Collections::UnorderedMap` türü ortak dönüş değeri veya parametre, derleyici hatası C3986 oluşturulur. Hata, parametre veya dönüş değerinin türünü değiştirerek düzeltebilirsiniz [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_).
+**UnorderedMap** temelde std için bir [sarmalayıcı::Windows](../standard-library/unordered-map-class.md) Runtime türlerinin depolama destekleyen unordered_map. Windows'un somut bir [uygulamasıdır::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) ve [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) türleri genel Windows Runtime arabirimleri arasında geçirilir. Ortak iade değeri `Platform::Collections::UnorderedMap` veya parametrebir tür kullanmaya çalışırsanız, derleyici hatası C3986 yükseltilir. Parametrenin türünü veya döndürme değerini Windows'a değiştirerek hatayı [düzeltebilirsiniz::Temel::Koleksiyonlar::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_).
 
-Daha fazla bilgi için [koleksiyonları](../cppcx/collections-c-cx.md).
+Daha fazla bilgi için [Koleksiyonlar'a](../cppcx/collections-c-cx.md)bakın.
 
 ### <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[UnorderedMap::UnorderedMap](#ctor)|Eşleme sınıfının yeni bir örneğini başlatır.|
+|[SırasızMap::SıradışıMap](#ctor)|Harita sınıfının yeni bir örneğini başolarak karşılar.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[UnorderedMap::Clear](#clear)|Tüm anahtar-değer çiftleri geçerli harita nesnesinden kaldırır.|
-|[UnorderedMap::First](#first)|Haritada ilk öğeyi belirleyen bir yineleyici döndürür.|
-|[UnorderedMap::GetView](#getview)|Geçerli eşlemesi salt okunur bir görünümünü verir. diğer bir deyişle, Platform::Collections:: unorderedmapview sınıfı.|
-|[UnorderedMap::HasKey](#haskey)|Geçerli eşleme belirtilen anahtarı içerip içermediğini belirler.|
-|[Unorderedmap::INSERT](#insert)|Geçerli harita nesnesi belirtilen anahtar-değer çifti ekler.|
-|[UnorderedMap::Lookup](#lookup)|Öğe geçerli harita nesnedeki belirtilen anahtarı alır.|
-|[UnorderedMap::Remove](#remove)|Belirtilen anahtar-değer çifti geçerli harita nesneyi siler.|
-|[UnorderedMap::Size](#size)|Geçerli eşleme nesnesinde öğelerin sayısını döndürür.|
+|[SırasızMap::Temizleyin](#clear)|Geçerli Harita nesnesinden tüm anahtar değeri çiftlerini kaldırır.|
+|[SırasızMap::İlk](#first)|Haritadaki ilk öğeyi belirten bir yineleyici döndürür.|
+|[SırasızMap::GetView](#getview)|Geçerli Haritanın salt okunur görünümünü döndürür; diğer bir, bir Platform::Koleksiyonlar::SırasızMapView Sınıfı.|
+|[SırasızMap::HasKey](#haskey)|Geçerli Haritanın belirtilen anahtarı bulunup içermediğini belirler.|
+|[SırasızMap::Ekle](#insert)|Geçerli Eşleşme nesnesine belirtilen anahtar-dekis çiftini ekler.|
+|[SırasızMap::Arama](#lookup)|Geçerli Harita nesnesinde belirtilen anahtardaki öğeyi alır.|
+|[SırasızMap::Kaldır](#remove)|Geçerli Eşalan nesnesinden belirtilen anahtar değeri çiftini siler.|
+|[SırasızMap::Boyut](#size)|Geçerli Eşleman nesnesindeki öğe sayısını döndürür.|
 
 ### <a name="events"></a>Olaylar
 
 |||
 |-|-|
-|Ad|Açıklama|
-|[Map::MapChanged](#mapchanged) olay|Harita değiştiğinde gerçekleşir.|
+|Adı|Açıklama|
+|[Harita::MapChanged](#mapchanged) olay|Harita değiştiğinde oluşur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -90,13 +90,13 @@ Daha fazla bilgi için [koleksiyonları](../cppcx/collections-c-cx.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** collection.h
+**Üstbilgi:** collection.h
 
-**Namespace:** Platform::Collections
+**Ad alanı:** Platform::Koleksiyonlar
 
-## <a name="clear"></a>  UnorderedMap::Clear yöntemi
+## <a name="unorderedmapclear-method"></a><a name="clear"></a>SırasızMap::Açık Yöntem
 
-Tüm anahtar-değer çiftleri geçerli UnorderedMap nesnesinden kaldırır.
+Geçerli UnorderedMap nesnesinden tüm anahtar değeri çiftlerini kaldırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -104,9 +104,9 @@ Tüm anahtar-değer çiftleri geçerli UnorderedMap nesnesinden kaldırır.
 virtual void Clear();
 ```
 
-## <a name="first"></a>  UnorderedMap::First yöntemi
+## <a name="unorderedmapfirst-method"></a><a name="first"></a>SırasızMap::İlk Yöntem
 
-İlk belirten bir yineleyici döndüren [Windows::Foundation::Collections::IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) sıralanmamış eşleme öğesi.
+İlk [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) öğesini sıralanmamış haritada belirten bir yineleyici döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -118,15 +118,15 @@ virtual Windows::Foundation::Collections::IIterator<
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Haritada ilk öğeyi belirleyen bir yineleyici.
+Haritadaki ilk öğeyi belirten bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin: `auto x = myUnorderedMap->First();`
+First() tarafından döndürülen yineleyiciyi tutmanın kullanışlı bir yolu, otomatik **tür** kesintisi anahtar sözcüğüyle birlikte bildirilen bir değişkene iade değerini atamaktır. Örneğin, `auto x = myUnorderedMap->First();`.
 
-## <a name="getview"></a>  UnorderedMap::GetView metodu
+## <a name="unorderedmapgetview-method"></a><a name="getview"></a>SırasızMap::GetView Yöntemi
 
-Geçerli UnorderedMap salt okunur bir görünümünü verir. diğer bir deyişle, bir [Platform::Collections:: unorderedmapview sınıfı](../cppcx/platform-collections-unorderedmapview-class.md) uygulayan [Windows::Foundation::Collections::IMapView::IMapView]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) arabirim.
+Geçerli Sıradışı Haritanın salt okunur görünümünü döndürür; yani, bir Platform::Koleksiyonlar::[Windows:Foundation::Collections::IMapView::IMapView]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) arabirimini uygulayan [sırasızMapView Sınıfıdır.](../cppcx/platform-collections-unorderedmapview-class.md)
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -136,11 +136,11 @@ Windows::Foundation::Collections::IMapView<K, V>^ GetView();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `UnorderedMapView` nesne.
+Bir `UnorderedMapView` nesnesi.
 
-## <a name="haskey"></a>  UnorderedMap::HasKey yöntemi
+## <a name="unorderedmaphaskey-method"></a><a name="haskey"></a>SırasızMap::HasKey Yöntemi
 
-Geçerli UnorderedMap belirtilen anahtarı içerip içermediğini belirler.
+Geçerli UnorderedMap'in belirtilen anahtarı içerip içerip içermediğini belirler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -153,15 +153,15 @@ bool HasKey(
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-UnorderedMap öğeyi bulmak için kullanılan anahtar. Türünü *anahtarı* TypeName *K*.
+Sıradışı Harita öğesini bulmak için kullanılan anahtar. *Anahtar* türü *k*türüdür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** anahtar bulunduysa, **false**.
+anahtar bulunursa **doğru;** aksi takdirde, **yanlış**.
 
-## <a name="insert"></a>  Unorderedmap::INSERT yöntemi
+## <a name="unorderedmapinsert-method"></a><a name="insert"></a>SırasızMap::Ekle Yöntemi
 
-Belirtilen anahtar-değer çifti geçerli UnorderedMap nesneye ekler.
+Geçerli Sıradışı Harita nesnesine belirtilen anahtar değeri çiftini ekler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -175,18 +175,18 @@ virtual bool Insert(
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Anahtar-değer çifti anahtar bölümü. Türünü *anahtarı* TypeName *K*.
+Anahtar değeri çiftinin anahtar kısmı. *Anahtar* türü *k*türüdür.
 
-*value*<br/>
-Anahtar-değer çiftinin değer bölümünü. Türünü *değer* TypeName *V*.
+*Değer*<br/>
+Anahtar değeri çiftinin değer kısmı. *Değer* *türü, V*türüdür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**true** geçerli Haritası'nda var olan bir öğenin anahtarı eşleşip eşleşmediğini *anahtarı* ve bu öğenin değeri kısmı kümesine *değer*. **false** geçerli Haritası'nda var olan bir öğe yok eşleşiyorsa *anahtar* ve *anahtar* ve *değer* parametreleri bir anahtar-değer çifti yapılan ve ardından eklenir Geçerli UnorderedMap.
+geçerli Harita'daki varolan bir öğenin anahtarı *anahtarla* eşleşirse ve bu öğenin değer bölümü *değerlenecek*şekilde ayarlanmışsa **doğru.** **false** geçerli Harita'da varolan hiçbir öğe *anahtarla* eşleşmezse ve *anahtar* ve *değer* parametreleri anahtar değeri çiftine dönüştürülürve ardından geçerli Sırasız Harita'ya eklenir.
 
-## <a name="lookup"></a>  UnorderedMap::Lookup yöntemi
+## <a name="unorderedmaplookup-method"></a><a name="lookup"></a>SırasızMap::Arama Yöntemi
 
-V türünün türü K. belirtilen anahtarla ilişkili değeri alır.
+Belirtilen K türünün anahtarıyla ilişkili V türünün değerini alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -199,15 +199,15 @@ V Lookup(
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Bir öğe içinde UnorderedMap bulmak için kullanılan anahtar. Türünü *anahtarı* TypeName *K*.
+Sırasız Harita'da bir öğeyi bulmak için kullanılan anahtar. *Anahtar* türü *k*türüdür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İle eşleştirilmiş değeri *anahtar*. Dönüş değeri typename türüdür *V*.
+*Anahtarla*eşleştirilmiş değer. İade değerinin türü *V*türüdür.
 
-## <a name="mapchanged"></a>  UnorderedMap::MapChanged
+## <a name="unorderedmapmapchanged"></a><a name="mapchanged"></a>SırasızMap::MapChanged
 
-Bir öğe eklenen veya eşleme kaldırılmış olduğunda oluşturulur.
+Bir öğe eşliğe eklendiğinde veya haritadan kaldırıldığında yükseltilir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -217,15 +217,15 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
 
-A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) olay ve gerçekleşen değişiklik türünü oluşturan nesneye hakkında bilgiler içerir. Ayrıca bkz: [IMapChangedEventArgs\<K >](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) ve [CollectionChange numaralandırma](/uwp/api/windows.foundation.collections.collectionchange).
+[Bir MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler) olayı yükselten nesne ve meydana gelen değişiklik türü hakkında bilgi içerir. Ayrıca bakınız [IMapChangedEventArgs\<K>](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) ve [CollectionChange Numaralandırma](/uwp/api/windows.foundation.collections.collectionchange).
 
 ## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri
 
-Windows çalışma zamanı uygulamaları IMAP bize C# veya Visual Basic proje\<K, V > IDictionary olarak\<K, V >.
+Windows Runtime uygulamaları bize C# veya\<Visual Basic proje IMap K,V> olarak IDictionary\<K,V>.
 
-## <a name="remove"></a>  UnorderedMap::Remove yöntemi
+## <a name="unorderedmapremove-method"></a><a name="remove"></a>SırasızMap::Kaldırma Yöntemi
 
-Belirtilen anahtar-değer çifti UnorderedMap nesneyi siler.
+Sıradışı Harita nesnesinden belirtilen anahtar değeri çiftini siler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -237,11 +237,11 @@ virtual void Remove(
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Anahtar-değer çifti anahtar bölümü. Türünü *anahtarı* TypeName *K*.
+Anahtar değeri çiftinin anahtar kısmı. *Anahtar* türü *k*türüdür.
 
-## <a name="size"></a>  UnorderedMap::Size yöntemi
+## <a name="unorderedmapsize-method"></a><a name="size"></a>SırasızMap::Boyut Yöntemi
 
-Sayısını döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) UnorderedMap öğeleri.
+Sıradışı Haritadaki [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) öğelerini verir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -251,11 +251,11 @@ virtual property unsigned int Size;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sırasız eşlem içindeki öğelerin sayısı.
+Sırasız Haritadaki öğe sayısı.
 
-## <a name="ctor"></a>  UnorderedMap::UnorderedMap Oluşturucusu
+## <a name="unorderedmapunorderedmap-constructor"></a><a name="ctor"></a>SırasızMap::Sırasız Map Constructor
 
-UnorderedMap sınıfının yeni bir örneğini başlatır.
+Sıradışı Harita sınıfının yeni bir örneğini başlattı.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -340,32 +340,32 @@ UnorderedMap(
 
 ### <a name="parameters"></a>Parametreler
 
-*InIt*<br/>
-Geçerli UnorderedMap tür adı.
+*ınit*<br/>
+Geçerli UnorderedMap'in türü.
 
 *P*<br/>
-Eşit olup olmadığını belirlemek için iki anahtarı karşılaştıran bir işlev nesnesi. Bu parametre için varsayılan olarak [std::equal_to\<K >](../standard-library/equal-to-struct.md).
+Eşit olup olmadıklarını belirlemek için iki anahtarı karşılaştırabilen bir işlev nesnesi. Bu parametre [varsayılan\<std::equal_to K>](../standard-library/equal-to-struct.md).
 
 *H*<br/>
-Bir anahtar için bir karma değer üreten bir işlev nesnesi. Bu parametre için varsayılan olarak [sınıf 1 karma](../standard-library/hash-class.md) sınıfı, anahtar türleri için destekler.
+Anahtarlar için karma değer üreten bir işlev nesnesi. Bu parametre, sınıfın desteklediği anahtar türleri için [karma Sınıf 1'e](../standard-library/hash-class.md) varsayılan olarak gelir.
 
-*m*<br/>
-Bir başvuru veya [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) için bir [std::unordered_map](../standard-library/unordered-map-class.md) geçerli UnorderedMap başlatmak için kullanılır.
+*M*<br/>
+Geçerli UnorderedMap'i başlatmada kullanılan [bir std::unordered_map](../standard-library/unordered-map-class.md) için bir başvuru veya [Lvalues ve Rvalues.](../cpp/lvalues-and-rvalues-visual-cpp.md)
 
-*IL*<br/>
-A [std::initializer_list](../standard-library/initializer-list-class.md) , [std::pair](../standard-library/pair-structure.md) harita başlatmak için kullanılan nesne.
+*ıl*<br/>
+Bir [std::initializer_list](../standard-library/initializer-list-class.md) [std::pharitayı](../standard-library/pair-structure.md) başlatmak için kullanılan hava nesneleri.
 
-*ilk*<br/>
-Geçerli UnorderedMap başlatmak için kullanılan öğelerin bir aralıktaki ilk öğenin bir giriş yineleyici.
+*Ilk*<br/>
+Geçerli Sıradışı Haritayı başlatmada kullanılan bir dizi öğedeki ilk öğenin giriş yineleyicisi.
 
 *Son*<br/>
-Geçerli UnorderedMap başlatmak için kullanılan öğelerin bir aralığını sonra ilk öğenin bir giriş yineleyici.
+Geçerli Sıra dışı Haritayı başlatmada kullanılan bir dizi öğeden sonra ilk öğenin giriş yineleyicisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)<br/>
-[Platform::Collections Ad Alanı](../cppcx/platform-collections-namespace.md)<br/>
+[Platform İsim Alanı](platform-namespace-c-cx.md)<br/>
+[Platform::Koleksiyonlar Namespace](../cppcx/platform-collections-namespace.md)<br/>
 [Platform::Collections::Map Sınıfı](../cppcx/platform-collections-map-class.md)<br/>
-[Platform::Collections::UnorderedMapView Sınıfı](../cppcx/platform-collections-unorderedmapview-class.md)<br/>
+[Platform::Koleksiyonlar::SırasızMapView Sınıfı](../cppcx/platform-collections-unorderedmapview-class.md)<br/>
 [Koleksiyonlar](../cppcx/collections-c-cx.md)<br/>
-[C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+[C++'da Windows Runtime Bileşenleri Oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

@@ -9,36 +9,36 @@ helpviewer_keywords:
 - sockets [MFC], asynchronous operation
 - Windows Sockets [MFC], converting Unicode and MBCS strings
 ms.assetid: 825dae17-7c1b-4b86-8d6c-da7f1afb5d8d
-ms.openlocfilehash: 3977308776c4ec6fed844038c4453ad03d065f98
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: d3fc32d9da54d9cf8c79e9e5de45b81c2ef64a6e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445946"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371964"
 ---
 # <a name="windows-sockets-using-class-casyncsocket"></a>Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma
 
-Bu makalede, [CAsyncSocket](../mfc/reference/casyncsocket-class.md)sınıfının nasıl kullanılacağı açıklanmaktadır. Bu sınıfın Windows Sockets API 'sini çok düşük bir düzeyde Kapsüller unutmayın. `CAsyncSocket`, ağ iletişimini ayrıntılı olarak bilen ancak ağ olaylarının bildirilmesi için geri çağırmaların rahatlığını sağlayan programcılar tarafından kullanım içindir. Bu varsayım temelinde, bu makalede yalnızca temel yönerge sunulmaktadır. Windows Sockets 'in bir MFC uygulamasında birden çok ağ protokolle ilgilenme kolaylığını tercih etmek, ancak esneklik sağlamak istemiyorsanız `CAsyncSocket` kullanmayı göz önünde bulundurmanız gerekir. Ayrıca, `CSocket`sınıfının daha genel alternatif modelini kullanmaktan daha doğrudan iletişim başlatarak daha fazla verimlilik sağlayabilirsiniz.
+Bu makalede, [casyncSocket](../mfc/reference/casyncsocket-class.md)sınıfının nasıl kullanılacağı açıklanmaktadır. Bu sınıfın Windows Soketleri API'sini çok düşük bir düzeyde kapsüllediğini unutmayın. `CAsyncSocket`ağ iletişimini ayrıntılı olarak bilen ancak ağ olaylarının bildirilmesi için geri arama kolaylığı isteyen programcılar tarafından kullanım içindir. Bu varsayıma dayanarak, bu makalede yalnızca temel yönerge sağlar. Windows Soketleri'nin bir MFC uygulamasında birden çok ağ protokolüyle başa çıkma kolaylığı istiyorsanız, ancak esneklikkullanmaktan ödün vermek istemiyorsanız, büyük olasılıkla kullanmayı `CAsyncSocket` düşünmelisiniz. Ayrıca, daha genel alternatif sınıf `CSocket`modelini kullanarak iletişimi daha doğrudan kendiniz programlayarak daha iyi verimlilik elde edebileceğinizi hissedebilirsiniz.
 
-`CAsyncSocket` *MFC başvurusunda*belgelenmiştir. Görsel C++ , Windows SDK bulunan Windows Yuvaları belirtimini de sağlar. Ayrıntılar size ayrıldı. Visual C++ , `CAsyncSocket`için örnek bir uygulama sağlamaz.
+`CAsyncSocket`*MFC Başvurusu'nda*belgelenmiştir. Visual C++, Windows SDK'da bulunan Windows Soketleri belirtimini de sağlar. Detaylar size bırakılmış. Visual C++ için `CAsyncSocket`örnek bir uygulama sağlamaz.
 
-Ağ iletişimleri hakkında çok bilgi sahibi değilseniz ve basit bir çözüm istiyorsanız, `CArchive` nesnesi ile sınıf [Csoketi](../mfc/reference/csocket-class.md) kullanın. Daha fazla bilgi için bkz. [Windows Yuvaları: Arşivlerle yuvaları kullanma](../mfc/windows-sockets-using-sockets-with-archives.md) .
+Ağ iletişimi hakkında son derece bilgili değilseniz ve basit bir `CArchive` çözüm istiyorsanız, [cSocket](../mfc/reference/csocket-class.md) sınıfı bir nesneyle kullanın. Bkz. Windows Soketleri: Daha fazla bilgi için [Arşivli Soketleri Kullanma.](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-Bu makalede ele alınmıştır:
+Bu makale şunları kapsamaktadır:
 
-- `CAsyncSocket` nesnesi oluşturma ve kullanma.
+- Nesne `CAsyncSocket` oluşturma ve kullanma.
 
-- [CAsyncSocket ile sorumluluklarınız](#_core_your_responsibilities_with_casyncsocket).
+- [CAsyncSocket ile sorumluluklarınız.](#_core_your_responsibilities_with_casyncsocket)
 
-##  <a name="_core_creating_and_using_a_casyncsocket_object"></a>CAsyncSocket nesnesi oluşturma ve kullanma
+## <a name="creating-and-using-a-casyncsocket-object"></a><a name="_core_creating_and_using_a_casyncsocket_object"></a>CAsyncSocket Nesneoluşturma ve Kullanma
 
 #### <a name="to-use-casyncsocket"></a>CAsyncSocket kullanmak için
 
-1. Bir [CAsyncSocket](../mfc/reference/casyncsocket-class.md) nesnesi oluşturun ve temel alınan **yuva** tanıtıcısını oluşturmak için nesnesini kullanın.
+1. [CAsyncSocket](../mfc/reference/casyncsocket-class.md) nesnesi oluşturun ve altta yatan **SOCKET** tutamacını oluşturmak için nesneyi kullanın.
 
-   Bir yuvanın oluşturulması, iki aşamalı oluşturma MFC deseninin izlediği bir yuva izler.
+   Bir soket oluşturulması, iki aşamalı yapının MFC desenini izler.
 
-   Örnek:
+   Örneğin:
 
    [!code-cpp[NVC_MFCSimpleSocket#3](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_1.cpp)]
 
@@ -46,58 +46,58 @@ Bu makalede ele alınmıştır:
 
    [!code-cpp[NVC_MFCSimpleSocket#4](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_2.cpp)]
 
-   Yukarıdaki ilk Oluşturucu yığında bir `CAsyncSocket` nesnesi oluşturur. İkinci Oluşturucu yığında bir `CAsyncSocket` oluşturur. Yukarıdaki ilk [oluşturma](../mfc/reference/casyncsocket-class.md#create) çağrısı, akış yuvası oluşturmak için varsayılan parametreleri kullanır. İkinci `Create` çağrısı, belirtilen bağlantı noktası ve adresle bir veri birimi yuvası oluşturur. (Yapı yöntemiyle birlikte `Create` sürümünü kullanabilirsiniz.)
+   Yukarıdaki ilk oluşturucu yığında bir `CAsyncSocket` nesne oluşturur. İkinci yapıcı yığın üzerinde `CAsyncSocket` bir oluşturur. Yukarıdaki ilk [Create](../mfc/reference/casyncsocket-class.md#create) araması, bir akış soketi oluşturmak için varsayılan parametreleri kullanır. İkinci `Create` arama, belirli bir bağlantı noktası ve adresi olan bir veri gramsoketi oluşturur. (Her iki `Create` sürümü de inşaat yöntemiyle kullanabilirsiniz.)
 
-   `Create` parametreler şunlardır:
+   Parametreler şunlardır: `Create`
 
    - Bir "bağlantı noktası": kısa bir tamsayı.
 
-      Sunucu yuvası için bir bağlantı noktası belirtmeniz gerekir. Bir istemci yuvasında genellikle bu parametre için varsayılan değeri kabul etmiş olursunuz ve bu, Windows Sockets 'in bir bağlantı noktası seçmesini sağlar.
+      Bir sunucu soketi için bir bağlantı noktası belirtmeniz gerekir. İstemci yuvası için, windows soketlerinin bir bağlantı noktası seçmesine olanak tanıyan bu parametrenin varsayılan değerini genellikle kabul eylesiniz.
 
-   - Yuva türü: **sock_stream** (varsayılan) veya **sock_dgram**.
+   - Soket türü: **SOCK_STREAM** (varsayılan) veya **SOCK_DGRAM.**
 
-   - "Ftp.microsoft.com" veya "128.56.22.8" gibi bir yuva "adres".
+   - "ftp.microsoft.com" veya "128.56.22.8" gibi bir soket "adresi".
 
-      Bu, ağdaki Internet Protokolü (IP) adresidir. Muhtemelen bu parametre için varsayılan değere her zaman güvenirsiniz.
+      Bu, ağdaki Internet Protokolü (IP) adresinizdir. Büyük olasılıkla her zaman bu parametre için varsayılan değere güvenirsiniz.
 
-   "Bağlantı noktası" ve "yuva adresi" terimleri [Windows Yuvaları: bağlantı noktaları ve yuva adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md)bölümünde açıklanmaktadır.
+   "Bağlantı noktası" ve "soket adresi" terimleri [Windows Soketlerinde açıklanmıştır: Bağlantı noktaları ve Soket Adresleri.](../mfc/windows-sockets-ports-and-socket-addresses.md)
 
-1. Yuva bir istemcise, [CAsyncSocket:: Connect](../mfc/reference/casyncsocket-class.md#connect)kullanarak yuva nesnesini bir sunucu yuvasına bağlayın.
+1. Soket istemciyse, [CAsyncSocket kullanarak](../mfc/reference/casyncsocket-class.md#connect)soket nesnesini bir sunucu soketine bağlayın::Bağlanın.
 
      -veya-
 
-   Yuva bir sunucu ise, bir istemciden gelen bağlantı girişimleri için dinlemeyi başlamaya ( [CAsyncSocket:: Listen](../mfc/reference/casyncsocket-class.md#listen)) ayarlayın. Bir bağlantı isteği aldıktan sonra, [CAsyncSocket:: Accept](../mfc/reference/casyncsocket-class.md#accept)ile bunu kabul edin.
+   Soket bir sunucuysa, istemciden gelen bağlantı girişimleri için soketi dinlemeye başlayacak şekilde ayarlayın [(CAsyncSocket ile::Dinle).](../mfc/reference/casyncsocket-class.md#listen) Bir bağlantı isteği aldıktan sonra, [CAsyncSocket](../mfc/reference/casyncsocket-class.md#accept)ile kabul edin::Kabul edin.
 
-   Bir bağlantıyı kabul ettikten sonra, bu gibi görevleri parola doğrulama olarak gerçekleştirebilirsiniz.
+   Bir bağlantıyı kabul ettikten sonra, parolaları doğrulama gibi görevleri gerçekleştirebilirsiniz.
 
     > [!NOTE]
-    >  `Accept` member işlevi, parametresi olarak yeni, boş bir `CSocket` nesnesine bir başvuru alır. `Accept`çağırmadan önce bu nesneyi oluşturmanız gerekir. Bu yuva nesnesi kapsam dışına geçtiğinde bağlantı kapanır. Bu yeni yuva nesnesi için `Create` çağırmayın. Bir örnek için bkz. [Windows Yuvaları: Işlem dizisi](../mfc/windows-sockets-sequence-of-operations.md).
+    >  `Accept` Üye işlev, parametresi olarak `CSocket` yeni, boş bir nesneye başvuru alır. Bu nesneyi aramadan `Accept`önce oluşturmanız gerekir. Bu soket nesnesi kapsam dışına çıkarsa, bağlantı kapanır. Bu yeni `Create` soket nesnesi için aramayın. Örneğin, [Windows Soketleri: İşlemler Dizisi makalesine](../mfc/windows-sockets-sequence-of-operations.md)bakın.
 
-1. Windows Sockets API işlevlerini kapsülleyen `CAsyncSocket` nesnenin üye işlevlerini çağırarak diğer yuvalarla iletişim gerçekleştirin.
+1. Windows Soketleri API işlevlerini `CAsyncSocket` kapsülleyen nesnenin üye işlevlerini çağırarak diğer soketlerle iletişimi gerçekleştirin.
 
-   *MFC başvurusunda*Windows Yuvaları belirtimi ve sınıf [CAsyncSocket](../mfc/reference/casyncsocket-class.md) sınıfına bakın.
+   *MFC Başvurusu'ndaki*Windows Soketleri belirtimine ve [casyncSocket sınıfına](../mfc/reference/casyncsocket-class.md) bakın.
 
-1. `CAsyncSocket` nesnesini yok edin.
+1. Nesneyi `CAsyncSocket` yok et.
 
-   Eğer yuva nesnesini yığında oluşturduysanız, kapsayıcı işlevi kapsam dışına geçtiğinde yıkıcısı çağırılır. **New** işlecini kullanarak öbek üzerinde yuva nesnesini oluşturduysanız, nesneyi yok etmek için **Delete** işlecini kullanmaktan siz sorumlusunuz.
+   Yığındaki soket nesnesini oluşturduysanız, içeren işlev kapsam dışına çıktığında yıkıcısı çağrılır. Yeni **işleci** kullanarak yığındaki soket nesnesini oluşturduysanız, nesneyi yok etmek için **silme** işlecinin kullanılmasından siz sorumlusunuz.
 
-   Yıkıcı, nesneyi yok etmeden önce nesnenin [Close](../mfc/reference/casyncsocket-class.md#close) üye işlevini çağırır.
+   Yıkıcı nesneyi yok etmeden önce nesnenin [Yakın](../mfc/reference/casyncsocket-class.md#close) üye işlevini çağırır.
 
-Koddaki bu dizi bir örnek için (aslında `CSocket` nesnesi için) bkz. [Windows Yuvaları: Işlem dizisi](../mfc/windows-sockets-sequence-of-operations.md).
+Koddaki bu dizinin bir örneği için `CSocket` (aslında bir nesne için), [bkz.](../mfc/windows-sockets-sequence-of-operations.md)
 
-##  <a name="_core_your_responsibilities_with_casyncsocket"></a>CAsyncSocket ile sorumluluklar
+## <a name="your-responsibilities-with-casyncsocket"></a><a name="_core_your_responsibilities_with_casyncsocket"></a>CAsyncSocket ile Sorumluluklarınız
 
-[CAsyncSocket](../mfc/reference/casyncsocket-class.md)sınıfından bir nesne oluşturduğunuzda, nesne bir Windows **yuva** tutamacı kapsüller ve bu tanıtıcı üzerinde işlemler sağlar. `CAsyncSocket`kullandığınızda, API 'YI doğrudan kullanıyorsanız yüz yüze olabileceğiniz tüm sorunlar ile uğraşmanız gerekir. Örnek:
+[CAsyncSocket](../mfc/reference/casyncsocket-class.md)sınıfıbir nesne oluşturduğunuzda, nesne bir Windows **SOCKET** tutamacını kapsüller ve bu tutamaç üzerinde işlem sağlar. Kullandığınızda, `CAsyncSocket`API'yi doğrudan kullanıyorsanız karşılaşabileceğiniz tüm sorunlarla ilgilenmeniz gerekir. Örneğin:
 
-- "Engelleyici" senaryolar.
+- "Engelleme" senaryoları.
 
-- Gönderen ve alan makineler arasındaki bayt sırası farklılıkları.
+- Gönderme ve alma makineleri arasındaki bayt sipariş farkları.
 
-- Unicode ve çok baytlı karakter kümesi (MBCS) dizeleri arasında dönüştürme.
+- Unicode ve multibayt karakter kümesi (MBCS) dizeleri arasında dönüştürme.
 
-Bu koşulların ve ek bilgilerin tanımları için bkz. [Windows Yuvaları: engelleme](../mfc/windows-sockets-blocking.md), [Windows Yuvaları: bayt sıralaması](../mfc/windows-sockets-byte-ordering.md), [Windows Yuvaları: dizeleri dönüştürme](../mfc/windows-sockets-converting-strings.md).
+Bu terimlerin ve ek bilgilerin tanımları için [bkz: Windows Soketleri: Engelleme,](../mfc/windows-sockets-blocking.md) [Windows Soketleri: Bayt Sıralama,](../mfc/windows-sockets-byte-ordering.md) [Windows Soketleri: Dizeleri dönüştürme.](../mfc/windows-sockets-converting-strings.md)
 
-Bu sorunlar söz konusu olduğunda, uygulamanız sizin için gerekli olan tüm esnekliği ve denetimleri gerektiriyorsa, sınıf `CAsycnSocket` sizin için doğru seçim olabilir. Aksi takdirde, bunun yerine sınıf `CSocket` kullanmayı göz önünde bulundurmanız gerekir. `CSocket`, sizin için çok sayıda ayrıntıyı gizler: Bu, engelleme çağrıları sırasında Windows iletileri elde edin ve size, size ait bayt sırası farklarını ve dize dönüştürmeyi yöneten `CArchive`erişmenizi sağlar.
+Bu sorunlara rağmen, uygulamanız alabileceğiniz tüm esnekliği ve denetimi gerektiriyorsa, sınıf `CAsycnSocket` sizin için doğru seçim olabilir. Değilse, bunun yerine sınıf `CSocket` kullanmayı düşünmelisiniz. `CSocket`sizden çok fazla ayrıntı gizler: aramaları engelleme sırasında Windows iletileri pompalar ve erişim sağlar `CArchive`, hangi sizin için bayt sipariş farklılıkları ve dize dönüşüm yönetir.
 
 Daha fazla bilgi için bkz.
 

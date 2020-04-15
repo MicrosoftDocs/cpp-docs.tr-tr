@@ -1,11 +1,15 @@
 ---
 title: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _ungetch_nolock
 - _ungetwch_nolock
 - _ungetwch
 - _ungetch
+- _o__ungetch
+- _o__ungetch_nolock
+- _o__ungetwch
+- _o__ungetwch_nolock
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -18,6 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -46,19 +51,19 @@ helpviewer_keywords:
 - ungetwch_nolock function
 - _ungetwch function
 ms.assetid: 70ae71c6-228c-4883-a57d-de6d5f873825
-ms.openlocfilehash: 5fd34d0c975ee49bce688cd902a6df856b5d6963
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 8a6c03c0a17f5c7a4f7fb7088696ba97073af6c9
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443752"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81361318"
 ---
 # <a name="_ungetch-_ungetwch-_ungetch_nolock-_ungetwch_nolock"></a>_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 
-Konsolundan okunan son karakteri geri gönderir.
+Konsoldan okunan son karakteri geri iter.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,22 +84,24 @@ wint_t _ungetwch_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*,*<br/>
-Gönderilecek karakter.
+*C*<br/>
+Karakter itilecek.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her iki işlev de başarılı olursa *c* karakterini döndürür. Bir hata varsa, **_Ungetch** **EOF** değerini döndürür ve **_ungetwch** **weof**döndürür.
+Her iki işlev de başarılı olursa *c* karakterini döndürür. Bir hata varsa, **_ungetch** **EOF** değerini döndürür ve **_ungetwch** **WEOF**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler *c* karakterini konsola geri göndererek, **_getch** veya **_getche** (veya **_getwch** ya da **_getwche**) tarafından okunan bir sonraki karakter *olmasına neden olur* . **_ungetch** ve **_ungetwch** bir sonraki okumadan önce birden çok kez çağrıldıklarında başarısız olur. *C* bağımsız değişkeni **EOF** (veya **weof**) olmayabilir.
+Bu işlevler *c* karakterini konsola geri iterek *c'nin* **_getch** veya **_getche** (veya **_getwch** veya **_getwche)** tarafından okunan bir sonraki karakter olmasını sağlar. **_ungetch** ve **_ungetwch** bir sonraki okumadan önce birden fazla çağrılırsa başarısız olurlar. *C* bağımsız değişkeni EOF (veya **WEOF)** olmayabilir. **WEOF**
 
-**_Nolock** sonekine sahip sürümler, diğer iş parçacıkları tarafından girişime karşı korunmamaları dışında aynıdır. Diğer iş parçacıklarını kilitleyen ek yüke neden olmadıklarından bu, daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
+**_nolock** sonekli sürümler, diğer iş parçacıkları tarafından parazite karşı korunmayan sürümler dışında aynıdır. Diğer iş parçacığı kilitleme yükü ne sularına tabi olmadığından daha hızlı olabilir. Bu işlevleri yalnızca tek iş parçacığı uygulamaları gibi iş parçacığı güvenli bağlamlarda veya arama kapsamının iş parçacığı yalıtımını zaten işlediği durumlarda kullanın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_ungettch**|**_ungetch**|**_ungetch**|**_ungetwch**|
 |**_ungettch_nolock**|**_ungetch_nolock**|**_ungetch_nolock**|**_ungetwch_nolock**|
@@ -103,10 +110,10 @@ Bu işlevler *c* karakterini konsola geri göndererek, **_getch** veya **_getche
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ungetch**, **_ungetch_nolock**|\<conio. h >|
-|**_ungetwch**, **_ungetwch_nolock**|\<conio. h > veya \<wchar. h >|
+|**_ungetch**, **_ungetch_nolock**|\<conio.h>|
+|**_ungetwch**, **_ungetwch_nolock**|\<conio.h> \<veya wchar.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -152,6 +159,6 @@ Whitetoken = White
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve bağlantı noktası g/ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve Bağlantı Noktası G/Ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>

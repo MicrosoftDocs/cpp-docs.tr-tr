@@ -8,31 +8,31 @@ f1_keywords:
 helpviewer_keywords:
 - __restrict keyword [C++]
 ms.assetid: 2d151b4d-f930-49df-bd16-d8757ec7fa83
-ms.openlocfilehash: cb340554bc20516175400c4d14a5d0dba934a313
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 27ac76251456d9a0bf5908ad6d1fc2bee7534e9f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188967"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81360811"
 ---
 # <a name="__restrict"></a>__restrict
 
-**__Declspec ( [Restrict](../cpp/restrict.md) )** değiştiricisine benzer şekilde, **__restrict** anahtar sözcüğü geçerli kapsamda bir simgenin diğer adı olmadığını gösterir. **__Restrict** anahtar sözcüğü, `__declspec ( restrict )` değiştiricisinden aşağıdaki yollarla farklılık gösterir:
+__declspec ** [(kısıt)](../cpp/restrict.md) ** değiştirici gibi, **__restrict** anahtar kelimesi de bir sembolün geçerli kapsamda başka bir deyişle kullanılmadığını gösterir. anahtar kelime **__restrict** aşağıdaki `__declspec ( restrict )` şekillerde değiştirici farklıdır:
 
-- **__Restrict** anahtar sözcüğü yalnızca değişkenlerde geçerlidir ve `__declspec ( restrict )` yalnızca işlev bildirimlerinde ve tanımlarda geçerlidir.
+- **__restrict** anahtar kelimesi yalnızca değişkenler üzerinde `__declspec ( restrict )` geçerlidir ve yalnızca işlev bildirimleri ve tanımları için geçerlidir.
 
-- **__restrict** , C99 spec **kısıtlaması** ile benzerdir, ancak **__restrict** C++ veya C programlarında kullanılabilir.
+- **__restrict** C99 **spec'i kısıtlamaya** benzer, ancak **c++** veya C programlarında __restrict kullanılabilir.
 
-- **__Restrict** kullanıldığında, derleyici bir değişkenin diğer ad olmayan özelliğini yayılmaz. Diğer bir deyişle, bir **__restrict** değişkenini **__restrict** olmayan bir değişkene atarsanız, derleyici hala __restrict olmayan değişkenin diğer ad olarak izin vermeyecektir. Bu, C99 belirtiminin **Restrict** anahtar sözcüğünün davranışından farklıdır.
+- **__restrict** kullanıldığında, derleyici bir değişkenin diğer ad olmayan özelliğini yaymaz. Diğer bir de,**__restrict** olmayan bir değişkene **__restrict** bir değişken atarsanız, derleyici yine de __restrict olmayan değişkenin diğer adı verilmesine izin verir. Bu, c99 belirtiminden **kısıtlayan** anahtar kelimenin davranışından farklıdır.
 
-Genellikle, bir işlevin tüm davranışını etkileiyorsa, anahtar sözcükten daha `__declspec ( restrict )` kullanmak daha iyidir.
+Genellikle, tüm işlevin davranışını etkilerseniz, anahtar kelimeden daha iyi kullanılır. `__declspec ( restrict )`
 
-Önceki sürümlerle uyumluluk için, [/za \(dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, **_restrict** **__restrict** için bir eş anlamlı.
+Önceki sürümlerle uyumluluk için **_restrict,** derleyici seçeneği [/Za \(Dil uzantıları)](../build/reference/za-ze-disable-language-extensions.md) belirtilmedikçe **__restrict** eşanlamlıdır.
 
-Visual Studio 2015 ve üzeri sürümlerde **__restrict** C++ başvurularda kullanılabilir.
+Visual Studio 2015 ve sonraki yıllarda **__restrict** C++ referanslarında kullanılabilir.
 
 > [!NOTE]
->  [Geçici](../cpp/volatile-cpp.md) anahtar sözcüğü de olan bir değişkende kullanıldığında, **geçici** bir öncelik alır.
+> [Geçici](../cpp/volatile-cpp.md) anahtar kelimesi de olan bir değişkende kullanıldığında, **geçici** önceliğe sahip olur.
 
 ## <a name="example"></a>Örnek
 
@@ -60,4 +60,4 @@ union z {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)
