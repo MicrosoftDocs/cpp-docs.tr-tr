@@ -1,56 +1,56 @@
 ---
-title: DHTML denetim projesinin öğelerini tanımlama
+title: DHTML Kontrol Projesinin Öğelerinin Belirlenmesi
 ms.date: 11/19/2018
 helpviewer_keywords:
 - HTML controls, ATL support
 - DHTML controls, ATL support
 ms.assetid: b627547a-3768-4346-9900-4b7a21fb8e27
-ms.openlocfilehash: 32b1c00e3ad3ed15fa56f7718789fe1a2e3ecbab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5fabdc815989c21bdf6b0932b9d6826e28d7012a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261975"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81319500"
 ---
-# <a name="identifying-the-elements-of-the-dhtml-control-project"></a>DHTML denetim projesinin öğelerini tanımlama
+# <a name="identifying-the-elements-of-the-dhtml-control-project"></a>DHTML Kontrol Projesinin Öğelerinin Belirlenmesi
 
-DHTML denetimi kodların çoğu için herhangi bir ATL denetimi, tam olarak oluşturulur. Genel kod temel bir anlayış için çalışmak [ATL öğretici](../atl/active-template-library-atl-tutorial.md), ve bölümleri okuyun [ATL projesi oluşturma](../atl/reference/creating-an-atl-project.md) ve [ATL COM nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md).
+Çoğu DHTML denetim kodu tam olarak herhangi bir ATL denetimi için oluşturulan gibidir. Genel kodun temel bir anlaşılması için, [ATL öğretici](../atl/active-template-library-atl-tutorial.md)ile çalışmak ve [atl com nesnelerin](../atl/fundamentals-of-atl-com-objects.md)bir [ATL Projesi](../atl/reference/creating-an-atl-project.md) ve Temelleri oluşturma bölümleri okuyun.
 
-DHTML denetimi herhangi bir ATL denetimi için benzer hariç:
+DHTML denetimi, şu durumlar dışında herhangi bir ATL denetimine benzer:
 
-- Bir denetim uygular normal arabirimlerine ek olarak HTML kullanıcı arabirimi (UI) ve C++ kodu arasında iletişim kurmak için kullanılan ek bir arabirim uygular. HTML kullanıcı Arabirimi bu arabirim kullanarak C++ kodu çağırır.
+- Denetimin uyguladığı normal arabirimlere ek olarak, C++ kodu ile HTML kullanıcı arabirimi (UI) arasında iletişim kurmak için kullanılan ek bir arabirim uygular. HTML UI bu arabirimi kullanarak C++ koduna çağırır.
 
-- Bir HTML kaynak UI denetimi oluşturur.
+- Denetim UI için bir HTML kaynağı oluşturur.
 
-- DHTML nesne modeli üye değişkeni aracılığıyla erişim sağlayan `m_spBrowser`, akıllı bir işaretçi türünde olduğu [Iwebbrowser2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127\(v=vs.85\)). DHTML nesne modeli, herhangi bir bölümünü erişmek için bu işaretçiyi kullanın.
+- Bu üye değişken `m_spBrowser`üzerinden DHTML nesne modeline erişim sağlar , hangi tip [IWebBrowser2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127\(v=vs.85\))akıllı bir işaretçi. DHTML nesne modelinin herhangi bir bölümüne erişmek için bu işaretçiyi kullanın.
 
-Aşağıdaki grafikte, DLL, DHTML denetimi, Web tarayıcısı ve HTML kaynak arasındaki ilişkiyi gösterir.
+Aşağıdaki grafik, DLL, DHTML denetimi, Web tarayıcısı ve HTML kaynağı arasındaki ilişkiyi göstermektedir.
 
-![DHTML denetim projesinin öğelerini](../atl/media/vc52en1.gif "DHTML denetim projesinin öğelerini")
+![Bir DHTML kontrol projesinin öğeleri](../atl/media/vc52en1.gif "Bir DHTML kontrol projesinin öğeleri")
 
 > [!NOTE]
->  Bu grafikte yer tutucuları adlarıdır. Adları, HTML kaynak denetiminizi kullanıma sunulan arabirimler ve ATL denetimi Sihirbazı'nda atama adları temel alır.
+> Bu grafikteki adlar yer tutuculardır. HTML kaynağınızın adları ve denetiminizde açığa çıkan arabirimler, ATL Denetim Sihirbazı'nda atadığınız adları temel almaktadır.
 
-Bu grafikte öğeler şunlardır:
+Bu grafikte, öğeler şunlardır:
 
-- **My DLL** ATL projesi Sihirbazı kullanılarak oluşturulan DLL.
+- **Benim DLL** DLL, ATL Proje Sihirbazı kullanılarak oluşturuldu.
 
-- **DHTML denetimi** (`m_spBrowser`) ATL nesnesi Sihirbazı kullanılarak oluşturulan DHTML denetimi. Bu denetimi Web tarayıcı nesnesi ve metotlarını Web tarayıcı nesnenin arabirimi aracılığıyla erişen `IWebBrowser2`. Denetim, aşağıdaki iki arabirim denetimi için gereken diğer standart arabirimler yanı sıra kullanıma sunar.
+- **DHTML** Denetimi`m_spBrowser`( ) ATL Nesne Sihirbazı kullanılarak oluşturulan DHTML denetimi. Bu denetim, Web tarayıcısı nesnesinin arabirimi üzerinden Web `IWebBrowser2`tarayıcısı nesnesine ve yöntemlerine erişir. Denetimin kendisi, denetim için gerekli olan diğer standart arabirimlere ek olarak aşağıdaki iki arabirimi ortaya çıkarır.
 
-   - `IDHCTL1` Yalnızca kapsayıcı tarafından kullanılmak üzere bir denetim tarafından kullanıma sunulan arabirim.
+  - `IDHCTL1`Yalnızca kapsayıcı tarafından kullanılmak üzere denetim tarafından maruz arayüz.
 
-   - `IDHCTLUI1` C++ kodu ve HTML kullanıcı arabirimi arasında iletişim kurmak için gönderme arabirimi. Web tarayıcısı denetimin gönderme arabirimi denetim görüntülemek için kullanır. Bu dağıtım arabirimi çeşitli yöntemleri çağırarak denetimin kullanıcı arabiriminden çağırabilirsiniz `window.external`ve ardından çağırmak istediğiniz bu gönderme arabirimdeki yöntem adı. Erişmek `window.external` gelen bir komut dosyası etiketi oluşturan kullanıcı arabirimini bu denetim için HTML içinde. Kaynak dosyasındaki dış yöntemlerini çağırma hakkında daha fazla bilgi için bkz. [DHTML C++ kodu çağırma](../atl/calling-cpp-code-from-dhtml.md).
+  - `IDHCTLUI1`C++ kodu ile HTML kullanıcı arabirimi arasında iletişim kurmak için gönderme arabirimi. Web tarayıcısı denetimi görüntülemek için denetimin gönderme arabirimini kullanır. Bu gönderme arabiriminin çeşitli yöntemlerini, çağırmak istediğiniz bu `window.external`gönderi arabirimindeki yöntem adını çağırarak, denetimin kullanıcı arabiriminden arayabilirsiniz. Bu denetim `window.external` için UI'yi oluşturan HTML içindeki bir SCRIPT etiketinden erişebilirsiniz. Kaynak dosyasında dış yöntemleri çağırma hakkında daha fazla bilgi için Bkz. [DHTML'den C++ Kodu Arama.](../atl/calling-cpp-code-from-dhtml.md)
 
-- **IDR_CTL1** HTML kaynağının kaynak kimliği. Bu durumda, dosya adını DHCTL1UI.htm ' dir. DHTML denetimi, standart HTML etiketleri ve metin düzenleyicisi kullanarak düzenleyebileceğiniz encerede gönderme komutları içeren bir HTML kaynak kullanır.
+- **IDR_CTL1** HTML kaynağının kaynak kimliği. Dosya adı, bu durumda, DHCTL1UI.htm olduğunu. DHTML denetimi, Metin düzenleyicisini kullanarak ayarlayabileceğiniz standart HTML etiketleri ve harici pencere gönderme komutları içeren bir HTML kaynağı kullanır.
 
-- **Web tarayıcısı** Web tarayıcı denetim UI, HTML HTML kaynağında göre görüntüler. Web tarayıcısının bir işaretçiye `IWebBrowser2` arabirimi DHTML denetimi; DHTML nesne modeli erişmesine izin vermek için kullanılabilir.
+- **Web Tarayıcısı** Web tarayıcısı, HTML kaynağındaki HTML'yi temel alan denetimin UI'sini görüntüler. DHTML nesne modeline `IWebBrowser2` erişimsağlamak için DHTML denetiminde Web tarayıcısının arabirimine işaretçi kullanılabilir.
 
-ATL Denetim Sihirbazı'nı varsayılan kod denetimiyle HTML kaynak ve .cpp dosyası oluşturur. Derleme ve sihirbaz tarafından oluşturulan denetim çalıştırın ve ardından Denetim Web tarayıcısını veya ActiveX denetimi Test kapsayıcısı içinde görüntüleyin. Aşağıdaki resimde varsayılan ATL DHTML denetimini Test kapsayıcısında görüntülenen üç düğme göstermektedir:
+ATL Denetim Sihirbazı, hem HTML kaynağında hem de .cpp dosyasında varsayılan kodiçeren bir denetim oluşturur. Denetimi sihirbaz tarafından oluşturulan denetimi derleyebilir ve çalıştırabilir ve ardından denetimi Web tarayıcısında veya ActiveX Denetim Test Kapsayıcısı'nda görüntüleyebilirsiniz. Aşağıdaki resimde, Test Kapsayıcısı'nda görüntülenen üç düğmeyle varsayılan ATL DHTML denetimi gösterilmektedir:
 
-![ATL DHTML denetimini](../atl/media/vc52en2.gif "ATL DHTML denetimi")
+![ATL DHTML denetimi](../atl/media/vc52en2.gif "ATL DHTML denetimi")
 
-Bkz: [ATL DHTML denetimi oluşturma](../atl/creating-an-atl-dhtml-control.md) DHTML denetimi oluşturmaya başlamak için. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) Test kapsayıcısı erişim hakkında daha fazla bilgi için.
+Bkz. DHTML denetimi oluşturmaya başlamak için [ATL DHTML Denetimi Oluşturma.](../atl/creating-an-atl-dhtml-control.md) Test Kapsayıcısına nasıl erişilisüreceğiniz hakkında bilgi almak için [Test Kapsayıcısı ile Test Özellikleri ve Olayları'na](../mfc/testing-properties-and-events-with-test-container.md) bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[DHTML denetimi için destek](../atl/atl-support-for-dhtml-controls.md)
+[DHTML Denetimi desteği](../atl/atl-support-for-dhtml-controls.md)

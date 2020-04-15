@@ -1,5 +1,5 @@
 ---
-title: İletişim kutusu uygulama
+title: İletişim Kutusu Uygulama
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CSimpleDialog class, implementing dialog boxes in ATL
@@ -7,38 +7,38 @@ helpviewer_keywords:
 - CAxDialogImpl class, implementing dialog boxes in ATL
 - ATL, dialog boxes
 ms.assetid: 478525f2-aa6a-435a-b162-68fc8aa98a8e
-ms.openlocfilehash: 1a3084d4655e173234d3bb6e8d411b28e8968377
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 435926b0a0affde03580ceb2b479cb08a17d0454
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62198059"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81319482"
 ---
-# <a name="implementing-a-dialog-box"></a>İletişim kutusu uygulama
+# <a name="implementing-a-dialog-box"></a>İletişim Kutusu Uygulama
 
-Bir iletişim kutusu, ATL projesine eklemek için iki yolu vardır: ATL iletişim kutusu Sihirbazı'nı kullanın veya el ile ekleyin.
+ATL projenize iletişim kutusu eklemenin iki yolu vardır: ATL İletişim Sihirbazı'nı kullanın veya el ile ekleyin.
 
-## <a name="adding-a-dialog-box-with-the-atl-dialog-wizard"></a>ATL iletişim kutusu Sihirbazı ile bir iletişim kutusu ekleme
+## <a name="adding-a-dialog-box-with-the-atl-dialog-wizard"></a>ATL İletişim Sihirbazı ile İletişim Kutusu Ekleme
 
-İçinde [Sınıf Ekle iletişim kutusu](../ide/add-class-dialog-box.md), bir iletişim kutusu, ATL projesine eklemek için ATL iletişim kutusu nesnesini seçin. ATL iletişim kutusu Sihirbazı uygun şekilde doldurun ve **son**. Türetilen bir sınıf sihirbaz ekler [Caxdialogımpl](../atl/reference/caxdialogimpl-class.md) projenize. Açık **kaynak görünümü** gelen **görünümü** menüsünde iletişim bulun ve Kaynak Düzenleyicisi'nde açmak için çift tıklayın.
-
-> [!NOTE]
->  Varsa, iletişim kutusu türetilir `CAxDialogImpl`, her iki ActiveX barındırabilir ve Windows denetler. ActiveX denetimi desteği yükü iletişim kutusu sınıfınızda istemiyorsanız kullanın [CSimpleDialog](../atl/reference/csimpledialog-class.md) veya [Cdialogımpl](../atl/reference/cdialogimpl-class.md) yerine.
-
-İleti ve olay işleyicileri, sınıf görünümünden iletişim sınıfınızı eklenebilir. Daha fazla bilgi için [ATL ileti işleyicisi ekleme](../atl/adding-an-atl-message-handler.md).
-
-## <a name="adding-a-dialog-box-manually"></a>Bir iletişim kutusu el ile ekleme
-
-İletişim kutusu uygulama pencere uygulama için benzerdir. Öğesinden bir sınıf türetin [Caxdialogımpl](../atl/reference/caxdialogimpl-class.md), [Cdialogımpl](../atl/reference/cdialogimpl-class.md), veya [CSimpleDialog](../atl/reference/csimpledialog-class.md) ve bildirmek bir [ileti eşlemesi](../atl/message-maps-atl.md) iletileri işlemek için. Ancak, türetilmiş sınıf içinde de bir iletişim şablonunu kaynak kimliği belirtmeniz gerekir. Sınıfınıza adlı bir veri üyesi olmalıdır `IDD` bu değerini tutacak.
+Sınıf [Ekle iletişim kutusunda,](../ide/add-class-dialog-box.md)ATL projenize bir iletişim kutusu eklemek için ATL iletişim nesnesini seçin. Uygun şekilde ATL İletişim Sihirbazı'nı doldurun ve **Bitir'i**tıklatın. Sihirbaz, projenize [CAxDialogImpl'den](../atl/reference/caxdialogimpl-class.md) türetilen bir sınıf ekler. **Görünüm** menüsünden **Kaynak Görünümü'nü** açın, iletişim inizi bulun ve kaynak düzenleyicisinde açmak için çift tıklatın.
 
 > [!NOTE]
->  ATL iletişim kutusu Sihirbazı'nı kullanarak bir iletişim kutusu oluşturduğunuzda, sihirbaz otomatik olarak ekler `IDD` üyesi olarak bir **enum** türü.
+> İletişim kutunuz `CAxDialogImpl`türetilmişse, hem ActiveX hem de Windows denetimlerini barındırabilir. İletişim kutusu sınıfınızda ActiveX denetim desteğinin ek yükü istemiyorsanız, bunun yerine [CSimpleDialog](../atl/reference/csimpledialog-class.md) veya [CDialogImpl'i](../atl/reference/cdialogimpl-class.md) kullanın.
 
-`CDialogImpl` kalıcı bir ya da Windows denetimlerini barındıran modsuz iletişim kutusu olanak tanır. `CAxDialogImpl` kalıcı bir ya da ActiveX hem Windows denetimlerini barındıran modsuz iletişim kutusu olanak tanır.
+İleti ve olay işleyicileri Sınıf Görünümü'nden iletişim sınıfınıza eklenebilir. Daha fazla bilgi için Bkz. [ATL İleti İmlası Ekleme.](../atl/adding-an-atl-message-handler.md)
 
-Kalıcı bir iletişim kutusu oluşturmak için bir örneğini oluşturmak, `CDialogImpl`-türetilmiş (veya `CAxDialogImpl`-türetilmiş) sınıfı ve sonra çağrı [DoModal](../atl/reference/cdialogimpl-class.md#domodal) yöntemi. Kalıcı iletişim kutusunu kapatmak için çağrı [EndDialog](../atl/reference/cdialogimpl-class.md#enddialog) yöntemden bir ileti işleyicisi. Modsuz iletişim kutusu oluşturmak için arama [Oluştur](../atl/reference/cdialogimpl-class.md#create) yöntemi yerine `DoModal`. Modsuz iletişim kutusu yok etmek için çağrı [DestroyWindow](../atl/reference/cdialogimpl-class.md#destroywindow).
+## <a name="adding-a-dialog-box-manually"></a>El ile İletişim Kutusu Ekleme
 
-İndirme olayları otomatik olarak gerçekleştirilir [Caxdialogımpl](../atl/reference/caxdialogimpl-class.md). İşleyicileri gibi iletişim kutusunun ileti işleyicilerini uygulayan bir `CWindowImpl`-türetilmiş sınıf. İletiye özgü dönüş değeri varsa, olarak iade bir `LRESULT`. Döndürülen `LRESULT` değerleri Windows iletişim Yöneticisi tarafından uygun işleme için ATL göre eşleştirilir. Ayrıntılar için kaynak kodu bkz [CDialogImplBaseT::DialogProc](../atl/reference/cdialogimpl-class.md#dialogproc) atlwin.h içinde.
+İletişim kutusu uygulamak, pencere uygulamasına benzer. [CAxDialogImpl,](../atl/reference/caxdialogimpl-class.md) [CDialogImpl](../atl/reference/cdialogimpl-class.md)veya [CSimpleDialog'dan](../atl/reference/csimpledialog-class.md) bir sınıf türetin ve iletileri işlemek için bir [ileti eşlemi](../atl/message-maps-atl.md) beyan emz. Ancak, türemiş sınıfınızda bir iletişim şablonu kaynak kimliği de belirtmeniz gerekir. Sınıfınızın bu değeri tutmak `IDD` için çağrılan bir veri üyesi olması gerekir.
+
+> [!NOTE]
+> ATL İletişim Sihirbazı'nı kullanarak bir iletişim kutusu oluşturduğunuzda, sihirbaz üyeyi `IDD` otomatik olarak **enum** türüolarak ekler.
+
+`CDialogImpl`Windows denetimlerini barındıran bir modal veya modeless iletişim kutusu uygulamanızı sağlar. `CAxDialogImpl`hem ActiveX hem de Windows denetimlerini barındıran bir modal veya modeless iletişim kutusu uygulamanızı sağlar.
+
+Modal iletişim kutusu oluşturmak için, türetilmiş `CDialogImpl`(veya `CAxDialogImpl`türetilmiş) sınıfınızın bir örneğini oluşturun ve ardından [DoModal](../atl/reference/cdialogimpl-class.md#domodal) yöntemini arayın. Modal iletişim kutusunu kapatmak için, ileti işleyicisinden [EndDialog](../atl/reference/cdialogimpl-class.md#enddialog) yöntemini arayın. Modeless iletişim kutusu oluşturmak için, [Create](../atl/reference/cdialogimpl-class.md#create) `DoModal`'' yerine Oluştur yöntemini arayın. Modeless iletişim kutusunu yok etmek için [DestroyWindow'u](../atl/reference/cdialogimpl-class.md#destroywindow)arayın.
+
+Batma olayları otomatik olarak [CAxDialogImpl](../atl/reference/caxdialogimpl-class.md)yapılır. Türetilmiş bir `CWindowImpl`sınıftaki işleyicileri gibi iletişim kutusunun ileti işleyicilerini uygulayın. İletiye özgü bir iade değeri varsa, `LRESULT`iletiyi ' olarak döndürün. Döndürülen `LRESULT` değerler, Windows iletişim yöneticisi tarafından doğru işleme için ATL tarafından eşlenir. Ayrıntılar için, [CDialogImplBaseT::DialogProc](../atl/reference/cdialogimpl-class.md#dialogproc) in atlwin.h kaynak koduna bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -48,4 +48,4 @@ Aşağıdaki sınıf bir iletişim kutusu uygular:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pencere sınıfları](../atl/atl-window-classes.md)
+[Pencere Sınıfları](../atl/atl-window-classes.md)

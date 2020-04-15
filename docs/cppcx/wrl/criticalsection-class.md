@@ -19,16 +19,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::CriticalSection::CriticalSection, constructor
 - Microsoft::WRL::Wrappers::CriticalSection::TryLock method
 ms.assetid: f2e0a024-71a3-4f6b-99ea-d93a4a608ac4
-ms.openlocfilehash: dd34206741ba8fee8b283e22b6e8eefb3b3efb0e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5deb89e795d1886ca316886ae1ea260ce1f36fd1
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398595"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372594"
 ---
 # <a name="criticalsection-class"></a>CriticalSection Sınıfı
 
-Kritik bölüm nesneyi temsil eder.
+Kritik bir bölüm nesnesi temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,24 +40,24 @@ class CriticalSection;
 
 ### <a name="constructor"></a>Oluşturucu
 
-Ad                                                        | Açıklama
+Adı                                                        | Açıklama
 ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------
-[CriticalSection::CriticalSection](#criticalsection)        | Mutex nesnesine benzer, ancak yalnızca tek bir işlem iş parçacığı tarafından kullanılan bir eşitleme nesnesi başlatır.
-[CriticalSection:: ~ CriticalSection](#tilde-criticalsection) | Başlatılmasını geri alır ve geçerli yok eder `CriticalSection` nesne.
+[Kritik Bölüm::KritikBölüm](#criticalsection)        | Mutex nesnesine benzeyen, ancak yalnızca tek bir işlemin iş parçacıkları tarafından kullanılabilen bir eşitleme nesnesini başolarak karşılar.
+[Kritik Bölüm::~CriticalSection](#tilde-criticalsection) | Geçerli `CriticalSection` nesneyi deinitialize eder ve yok eder.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                                 | Açıklama
+Adı                                 | Açıklama
 ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------
-[Criticalsection::IsValid](#isvalid) | Geçerli kritik bölüm geçerli olup olmadığını belirtir.
-[CriticalSection::Lock](#lock)       | Belirtilen kritik bölüm Nesne sahipliği için bekler. Çağıran iş parçacığını sahipliği verildiğinde işlevi döndürür.
-[CriticalSection::TryLock](#trylock) | Engelleme olmadan kritik bir bölüm girin dener. Çağrı başarılı olursa, çağıran iş parçacığı, kritik bölüm sahipliğini alır.
+[Kritik Bölüm::Geçersiz](#isvalid) | Geçerli kritik bölümün geçerli olup olmadığını gösterir.
+[Kritik Bölüm::Kilitle](#lock)       | Belirtilen kritik bölüm nesnesinin sahipliğini bekler. Arama iş parçacığına sahiplik verildiğinde işlev geri döner.
+[Kritik Bölüm::TryLock](#trylock) | Engellemeden kritik bir bölüme girmeye çalışır. Arama başarılı olursa, arama iş parçacığı kritik bölümün sahipliğini alır.
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-Ad                        | Açıklama
+Adı                        | Açıklama
 --------------------------- | ----------------------------------------
-[CriticalSection::cs_](#cs) | Kritik bölüm veri üyesi bildirir.
+[Kritik Bölüm::cs_](#cs) | Kritik bir bölüm veri üyesi bildirir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -65,21 +65,21 @@ Ad                        | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrappers.h
 
-**Namespace:** Microsoft::wrl:: Wrappers
+**Ad alanı:** Microsoft::WRL::Sarmalayıcılar
 
-## <a name="tilde-criticalsection"></a>CriticalSection:: ~ CriticalSection
+## <a name="criticalsectioncriticalsection"></a><a name="tilde-criticalsection"></a>Kritik Bölüm::~CriticalSection
 
-Başlatılmasını geri alır ve geçerli yok eder `CriticalSection` nesne.
+Geçerli `CriticalSection` nesneyi deinitialize eder ve yok eder.
 
 ```cpp
 WRL_NOTHROW ~CriticalSection();
 ```
 
-## <a name="criticalsection"></a>CriticalSection::CriticalSection
+## <a name="criticalsectioncriticalsection"></a><a name="criticalsection"></a>Kritik Bölüm::KritikBölüm
 
-Mutex nesnesine benzer, ancak yalnızca tek bir işlem iş parçacığı tarafından kullanılan bir eşitleme nesnesi başlatır.
+Mutex nesnesine benzeyen, ancak yalnızca tek bir işlemin iş parçacıkları tarafından kullanılabilen bir eşitleme nesnesini başolarak karşılar.
 
 ```cpp
 explicit CriticalSection(
@@ -90,15 +90,15 @@ explicit CriticalSection(
 ### <a name="parameters"></a>Parametreler
 
 *spincount*<br/>
-Kritik bölüm nesnenin dönüş sayısı. Varsayılan değer 0’dır.
+Kritik bölüm nesnesi için spin sayısı. Varsayılan değer 0’dır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kritik bölümler ve spincounts hakkında daha fazla bilgi için bkz: `InitializeCriticalSectionAndSpinCount` işlevi `Synchronization` Windows API platformlarının bölümü.
+Kritik bölümler ve spincounts hakkında daha `InitializeCriticalSectionAndSpinCount` fazla `Synchronization` bilgi için, Windows API documenation bölümünde işlevi bakın.
 
-## <a name="cs"></a>CriticalSection::cs_
+## <a name="criticalsectioncs_"></a><a name="cs"></a>Kritik Bölüm::cs_
 
-Kritik bölüm veri üyesi bildirir.
+Kritik bir bölüm veri üyesi bildirir.
 
 ```cpp
 CRITICAL_SECTION cs_;
@@ -108,9 +108,9 @@ CRITICAL_SECTION cs_;
 
 Bu veri üyesi korunur.
 
-## <a name="isvalid"></a>Criticalsection::IsValid
+## <a name="criticalsectionisvalid"></a><a name="isvalid"></a>Kritik Bölüm::Geçersiz
 
-Geçerli kritik bölüm geçerli olup olmadığını belirtir.
+Geçerli kritik bölümün geçerli olup olmadığını gösterir.
 
 ```cpp
 bool IsValid() const;
@@ -118,11 +118,11 @@ bool IsValid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan olarak, her zaman döndürür **true**.
+Varsayılan olarak, her zaman **doğru**döndürür.
 
-## <a name="lock"></a>CriticalSection::Lock
+## <a name="criticalsectionlock"></a><a name="lock"></a>Kritik Bölüm::Kilitle
 
-Belirtilen kritik bölüm Nesne sahipliği için bekler. Çağıran iş parçacığını sahipliği verildiğinde işlevi döndürür.
+Belirtilen kritik bölüm nesnesinin sahipliğini bekler. Arama iş parçacığına sahiplik verildiğinde işlev geri döner.
 
 ```cpp
 SyncLock Lock();
@@ -134,20 +134,20 @@ SyncLock Lock();
 
 ### <a name="parameters"></a>Parametreler
 
-*cs*<br/>
-Bir kullanıcı tarafından belirtilen kritik bölüm nesnesi.
+*Cs*<br/>
+Kullanıcı tarafından belirtilen kritik bölüm nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli kritik bölümün kilidini açmak için kullanılan nesnesi kilitlenemedi.
+Geçerli kritik bölümün kilidini açmak için kullanılabilecek bir kilit nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk `Lock` işlevi, geçerli kritik bölüm nesnesini etkiler. İkinci `Lock` işlevi kullanıcı tanımlı bir kritik bölüm etkiler.
+İlk `Lock` işlev geçerli kritik bölüm nesnesini etkiler. İkinci `Lock` işlev, kullanıcı tarafından belirtilen kritik bölümü etkiler.
 
-## <a name="trylock"></a>CriticalSection::TryLock
+## <a name="criticalsectiontrylock"></a><a name="trylock"></a>Kritik Bölüm::TryLock
 
-Engelleme olmadan kritik bir bölüm girin dener. Çağrı başarılı olursa, çağıran iş parçacığı, kritik bölüm sahipliğini alır.
+Engellemeden kritik bir bölüme girmeye çalışır. Arama başarılı olursa, arama iş parçacığı kritik bölümün sahipliğini alır.
 
 ```cpp
 SyncLock TryLock();
@@ -159,13 +159,13 @@ static SyncLock TryLock(
 
 ### <a name="parameters"></a>Parametreler
 
-*cs*<br/>
-Bir kullanıcı tarafından belirtilen kritik bölüm nesnesi.
+*Cs*<br/>
+Kullanıcı tarafından belirtilen kritik bölüm nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kritik bölüm başarıyla girdiyseniz sıfır olmayan bir değer veya geçerli iş parçacığı, kritik bölüm zaten sahip. Başka bir iş parçacığı kritik bölüm sahipse sıfır.
+Kritik bölüm başarıyla girilirse veya geçerli iş parçacığı kritik bölümün sahibiyse sıfır olmayan bir değer. Başka bir iş parçacığı zaten kritik bölüme sahipse sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk `TryLock` işlevi, geçerli kritik bölüm nesnesini etkiler. İkinci `TryLock` işlevi kullanıcı tanımlı bir kritik bölüm etkiler.
+İlk `TryLock` işlev geçerli kritik bölüm nesnesini etkiler. İkinci `TryLock` işlev, kullanıcı tarafından belirtilen kritik bölümü etkiler.

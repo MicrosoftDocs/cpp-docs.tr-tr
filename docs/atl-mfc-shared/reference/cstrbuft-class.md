@@ -1,5 +1,5 @@
 ---
-title: CStrBufT sınıfı
+title: CStrBufT Sınıfı
 ms.date: 10/18/2018
 f1_keywords:
 - CStrBufT
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - CStrBufT class
 - shared classes, CStrBufT
 ms.assetid: 6b50fa8f-87e8-4ed4-a229-157ce128710f
-ms.openlocfilehash: 81c3b429089eab3ba95c178e3fc7cf2bf55783a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 84c67aa8ea819f420368a72a2374f800f3d89055
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223499"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81317641"
 ---
-# <a name="cstrbuft-class"></a>CStrBufT sınıfı
+# <a name="cstrbuft-class"></a>CStrBufT Sınıfı
 
-Otomatik kaynak Temizleme için bu sınıfın sağladığı `GetBuffer` ve `ReleaseBuffer` çağırır var olan bir `CStringT` nesne.
+Bu sınıf için `GetBuffer` otomatik kaynak `ReleaseBuffer` temizleme sağlar `CStringT` ve varolan bir nesneyi çağırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,63 +34,63 @@ class CStrBufT
 #### <a name="parameters"></a>Parametreler
 
 *TCharType*<br/>
-Karakter türü `CStrBufT` sınıfı. Aşağıdakilerden biri olabilir:
+`CStrBufT` Sınıfın karakter türü. Aşağıdakilerden biri olabilir:
 
-- **char** (için ANSI karakter dizeleri)
+- **char** (ANSI karakter dizeleri için)
 
-- **wchar_t** (için Unicode karakter dizeleri)
+- **wchar_t** (Unicode karakter dizeleri için)
 
-- TCHAR (için ANSI hem Unicode karakter dizeleri)
+- TCHAR (hem ANSI hem de Unicode karakter dizeleri için)
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Genel Typedefs
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|PCXSTR|Bir sabit dize işaretçisi.|
-|PXSTR|Bir dizeye bir işaretçi.|
-|`StringType`|Bu sınıf şablonu uzmanlıklarıyla yönetilebilmesini, arabellek olan dize türü.|
+|PCXSTR|Sabit bir dize için bir işaretçi.|
+|PXSTR|Dize için bir işaretçi.|
+|`StringType`|Arabelleği bu sınıf şablonunun uzmanlıkları tarafından manipüle edilecek dize türü.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CStrBufT::CStrBufT](#cstrbuft)|Dize arabellek nesnesi için oluşturucu.|
+|[CStrBufT::CStrBufT](#cstrbuft)|Dize arabellek nesnesinin oluşturucusu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CStrBufT::SetLength](#setlength)|Karakter arabelleği uzunluğu ilişkilendirilmiş dize nesnesine ayarlar.|
+|[CStrBufT::SetLength](#setlength)|İlişkili dize nesnesinin karakter arabellek uzunluğunu ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CStrBufT::operator PCXSTR](#operator_pcxstr)|Alır bir **const** ilişkili dize nesnesinin karakter arabellek için işaretçi.|
-|[CStrBufT::operator PXSTR](#operator_pxstr)|Karakter arabelleği ilişkilendirilmiş dize nesnesine bir işaretçi alır.|
+|[CStrBufT::operatör PCXSTR](#operator_pcxstr)|İlişkili dize nesnesinin karakter arabelleği için bir **const** işaretçisi alır.|
+|[CStrBufT::operatör PXSTR](#operator_pxstr)|İlişkili dize nesnesinin karakter arabelleği için bir işaretçi alır.|
 
-### <a name="public-constants"></a>Genel sabitler
+### <a name="public-constants"></a>Genel Sabitler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CStrBufT::AUTO_LENGTH](#auto_length)|Otomatik olarak yeni sürümde bir dizenin uzunluğunu belirler.|
-|[CStrBufT::SET_LENGTH](#set_length)|Dize nesnesi uzunluğunu GetBuffer zamanında ayarlama|
+|[CStrBufT::AUTO_LENGTH](#auto_length)|Yayımdaki dizenin yeni uzunluğunu otomatik olarak belirleyin.|
+|[CStrBufT::SET_LENGTH](#set_length)|GetBuffer zamanında dize nesnesinin uzunluğunu ayarlama|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf çağrıları değiştirme için bir sarmalayıcı sınıf olarak kullanılan [GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) ve [ReleaseBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer), veya [GetBufferSetLength](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) ve `ReleaseBuffer`.
+Bu sınıf [GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) ve [ReleaseBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer)veya [GetBufferSetLength](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) ve `ReleaseBuffer`aramaları değiştirmek için bir sarmalayıcı sınıfı olarak kullanılır.
 
-Öncelikle bir yardımcı sınıfı tasarlanmış `CStrBufT` hakkında endişelenmeden dizenin başlangıcının karakter arabelleği ile çalışmak bir geliştirici için kolay bir yol sağlar veya çağrısı yapıldığında `ReleaseBuffer`. Sarmalayıcı nesnesine doğal olarak bir özel durum ya da birden çok mevcut kod yolları'durumunda kapsam dışında olduğundan, bu mümkündür; dize kaynağı serbest bırakmak yok edici neden oluyor.
+Öncelikle yardımcı sınıf olarak `CStrBufT` tasarlanmış, bir geliştirici için uygun bir yol nasıl ve ne zaman aramak `ReleaseBuffer`için endişelenmeden bir dize nesnenin karakter arabelleği ile çalışmak için sağlar. Bu, sarıcı nesnesi bir özel durum veya birden çok çıkan kod yolu durumunda doğal olarak kapsam dışına gittiğinden mümkündür; destructor dize kaynağı serbest neden.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsimpstr.h
+**Üstbilgi:** atlsimpstr.h
 
-##  <a name="auto_length"></a>  CStrBufT::AUTO_LENGTH
+## <a name="cstrbuftauto_length"></a><a name="auto_length"></a>CStrBufT::AUTO_LENGTH
 
-Otomatik olarak yeni sürümde bir dizenin uzunluğunu belirler.
+Yayımdaki dizenin yeni uzunluğunu otomatik olarak belirleyin.
 
 ```
 static const DWORD AUTO_LENGTH = 0x01;
@@ -98,11 +98,11 @@ static const DWORD AUTO_LENGTH = 0x01;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Otomatik olarak yeni sürümde bir dizenin uzunluğunu belirler. Null ile sonlandırılmış bir dize olmalıdır.
+Yayımdaki dizenin yeni uzunluğunu otomatik olarak belirleyin. Dize geçersiz kılınmalıdır.
 
-##  <a name="cstrbuft"></a>  CStrBufT::CStrBufT
+## <a name="cstrbuftcstrbuft"></a><a name="cstrbuft"></a>CStrBufT::CStrBufT
 
-Arabellek bir nesne oluşturur.
+Bir arabellek nesnesi oluşturuyor.
 
 ```
 CStrBufT(StringType& str, int nMinLength, DWORD dwFlags = AUTO_LENGTH) throw(...);
@@ -111,28 +111,28 @@ explicit CStrBufT(StringType& str) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
-Arabellek ile ilişkili dize nesnesi. Genellikle, geliştirici, önceden tanımlanmış tür tanımları kullanırsınız `CStrBuf` (TCHAR değişken) `CStrBufA` (**char** değişken) ve `CStrBufW` (**wchar_t** değişken).
+*Str*<br/>
+Arabellek ile ilişkili dize nesnesi. Tipik olarak, geliştirici `CStrBuf` önceden tanımlanmış typedefs (TCHAR `CStrBufA` varyant),**(char** varyantı) ve `CStrBufW` **(wchar_t** varyantı) kullanır.
 
 *nMinLength*<br/>
-En düşük karakter arabelleği uzunluğu.
+Karakter arabelleği minimum uzunluğu.
 
-*CertOpenStore*<br/>
-Dize uzunluğu otomatik olarak belirlenen belirler. Aşağıdakilerden biri olabilir:
+*Dwflags*<br/>
+Dize uzunluğunun otomatik olarak belirlenip belirlenmediğini belirler. Aşağıdakilerden biri olabilir:
 
-- AUTO_LENGTH dize uzunluğu, otomatik olarak belirlenen zaman [CSimpleStringT::Release](../../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer) çağrılır. Null ile sonlandırılmış bir dize olmalıdır. Varsayılan değer.
+- AUTO_LENGTH String uzunluğu [CSimpleStringT::Release](../../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer) çağrıldığında otomatik olarak belirlenir. Dize geçersiz kılınmalıdır. Varsayılan değer.
 
-- SET_LENGTH dize uzunluğu ne zaman ayarlanır [CSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) çağrılır.
+- [cSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) çağrıldığında SET_LENGTH String uzunluğu ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize arabellek için ilişkilendirilmiş dize nesnesi oluşturur. Oluşturma sırasında [CSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) veya [CSimpleStringT::GetBufferSetLength](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) çağrılır.
+İlişkili dize nesnesi için bir dize arabelleği oluşturur. İnşaat sırasında [CSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) veya [CSimpleStringT::GetBufferSetLength](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) denir.
 
-Kopya Oluşturucu olduğuna dikkat edin **özel**.
+Kopya oluşturucunun **özel**olduğunu unutmayın.
 
-##  <a name="operator_pcxstr"></a>  CStrBufT::operator PCXSTR
+## <a name="cstrbuftoperator-pcxstr"></a><a name="operator_pcxstr"></a>CStrBufT::operatör PCXSTR
 
-C stili dize olarak ilişkili dize nesnede depolanan karakter doğrudan erişir.
+İlişkili dize nesnesinde depolanan karakterlere C stili dize olarak doğrudan erişir.
 
 ```
 operator PCXSTR() const throw();
@@ -140,15 +140,15 @@ operator PCXSTR() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizenin veri karakter işaretçisi.
+Dize verilerine bir karakter işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizenin başlangıcının karakter arabelleği için bir işaretçiyi döndürmek için bu işlevi çağırın. Bu işaretçiyle içeriğini bir dize nesnesi değiştirilemez.
+Bir dize nesnesinin karakter arabelleği için bir işaretçi dönmek için bu işlevi arayın. Dize nesnesinin içeriği bu işaretçiyle değiştirilemez.
 
-##  <a name="operator_pxstr"></a>  CStrBufT::operator PXSTR
+## <a name="cstrbuftoperator-pxstr"></a><a name="operator_pxstr"></a>CStrBufT::operatör PXSTR
 
-C stili dize olarak ilişkili dize nesnede depolanan karakter doğrudan erişir.
+İlişkili dize nesnesinde depolanan karakterlere C stili dize olarak doğrudan erişir.
 
 ```
 operator PXSTR() throw();
@@ -156,31 +156,31 @@ operator PXSTR() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizenin veri karakter işaretçisi.
+Dize verilerine bir karakter işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizenin başlangıcının karakter arabelleği için bir işaretçiyi döndürmek için bu işlevi çağırın. Geliştirici, bu işaretçi ile dize nesnenin içeriğini değiştirebilir.
+Bir dize nesnesinin karakter arabelleği için bir işaretçi dönmek için bu işlevi arayın. Geliştirici bu işaretçi ile dize nesnesinin içeriğini değiştirebilir.
 
-##  <a name="pcxstr"></a>  CStrBufT::PCXSTR
+## <a name="cstrbuftpcxstr"></a><a name="pcxstr"></a>CStrBufT::PCXSTR
 
-Bir sabit dize işaretçisi.
+Sabit bir dize için bir işaretçi.
 
 ```
 typedef CSimpleStringT<TCharType>::PCXSTR PCXSTR;
 ```
 
-##  <a name="pxstr"></a>  CStrBufT::PXSTR
+## <a name="cstrbuftpxstr"></a><a name="pxstr"></a>CStrBufT::PXSTR
 
-Bir dizeye bir işaretçi.
+Dize için bir işaretçi.
 
 ```
 typedef CSimpleStringT<TCharType>::PXSTR PXSTR;
 ```
 
-##  <a name="set_length"></a>  CStrBufT::SET_LENGTH
+## <a name="cstrbuftset_length"></a><a name="set_length"></a>CStrBufT::SET_LENGTH
 
-Dize nesne uzunluğunu ayarlayın `GetBuffer` zaman.
+Dize nesnesinin uzunluğunu `GetBuffer` zaman anına ayarlayın.
 
 ```
 static const DWORD SET_LENGTH = 0x02;
@@ -188,13 +188,13 @@ static const DWORD SET_LENGTH = 0x02;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize nesnesi uzunluğunu GetBuffer zamanında ayarlama.
+GetBuffer zamanında dize nesnesinin uzunluğunu ayarlayın.
 
-Belirler [CSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) ve [CSimpleStringT::GetBufferSetLength](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) dize arabellek nesne oluşturulduğunda çağrılır.
+[CSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) ve [CSimpleStringT::GetBufferSetLength](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) dize arabellek nesnesi oluşturulduğunda çağrılır belirler.
 
-##  <a name="setlength"></a>  CStrBufT::SetLength
+## <a name="cstrbuftsetlength"></a><a name="setlength"></a>CStrBufT::SetLength
 
-Karakter arabelleği uzunluğu ayarlar.
+Karakter arabelleği uzunluğunu ayarlar.
 
 ```
 void SetLength(int nLength);
@@ -202,19 +202,19 @@ void SetLength(int nLength);
 
 ### <a name="parameters"></a>Parametreler
 
-*nLength*<br/>
-Yeni dize nesnesinin karakter arabelleği uzunluğu.
+*nUzunluk*<br/>
+Dize nesnesinin karakter arabelleği yeni uzunluğu.
 
 > [!NOTE]
->  Oluşturucusunun içinde belirtilen en düşük arabellek uzunluğundan küçük veya buna eşit olmalıdır `CStrBufT`.
+> `CStrBufT`'nin yapısında belirtilen minimum arabellek uzunluğundan daha az veya eşit olmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arabellek nesne tarafından temsil edilen dizenin uzunluğunu ayarlamak için bu işlevi çağırın.
+Arabellek nesnesi tarafından temsil edilen dize uzunluğunu ayarlamak için bu işlevi çağırın.
 
-##  <a name="stringtype"></a>  CStrBufT::StringType
+## <a name="cstrbuftstringtype"></a><a name="stringtype"></a>CStrBufT::StringType
 
-Bu sınıf şablonu uzmanlıklarıyla yönetilebilmesini, arabellek olan dize türü.
+Arabelleği bu sınıf şablonunun uzmanlıkları tarafından manipüle edilecek dize türü.
 
 ```
 typedef CSimpleStringT<TCharType> StringType;
@@ -222,9 +222,9 @@ typedef CSimpleStringT<TCharType> StringType;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`TCharType` karakter türü sınıf şablonu özelleştirmek için kullanılır.
+`TCharType`sınıf şablonu uzmanlaşmak için kullanılan karakter türüdür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
+[ATL/MFC Paylaşılan Sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)

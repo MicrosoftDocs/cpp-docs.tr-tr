@@ -1,6 +1,6 @@
 ---
 title: OptICF sınıfı
-description: C++ Build Insights SDK 'Sı OptICF sınıfı başvurusu.
+description: C++ Build Insights SDK OptICF sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: b7594d573a0e4eaf2e19f306b8a109923ba235dc
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: f63fea61f9defc216390fa377b2d1eeace01371b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333113"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81324472"
 ---
 # <a name="opticf-class"></a>OptICF sınıfı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`OptICF` sınıfı [Matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [OPT_ICF](../event-table.md#opt-icf) bir olayla eşleştirmek için kullanın.
+Sınıf `OptICF` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [OPT_ICF](../event-table.md#opt-icf) bir olayı eşleştirmek için kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-Devralınan üyelerin [etkinlik](activity.md) temel sınıfından birlikte `OptICF` sınıfı aşağıdaki üyeleri içerir:
+[Etkinlik](activity.md) taban sınıfından devralınan üyelerle `OptICF` birlikte, sınıf aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
 [OptICF](#opt-icf)
 
-## <a name="opt-icf"></a>OptICF
+## <a name="opticf"></a><a name="opt-icf"></a>OptICF
 
 ```cpp
 OptICF(const RawEvent& event);
@@ -53,7 +53,7 @@ OptICF(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*olay*\
+*Olay*\
 [OPT_ICF](../event-table.md#opt-icf) bir olay.
 
 ::: moniker-end

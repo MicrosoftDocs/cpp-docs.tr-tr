@@ -1,5 +1,5 @@
 ---
-title: CDataRecoveryHandler sınıfı
+title: CDataRecoveryHandler Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
 - CDataRecoveryHandler
@@ -62,16 +62,16 @@ helpviewer_keywords:
 - CDataRecoveryHandler [MFC], SetShutdownByRestartManager
 - CDataRecoveryHandler [MFC], UpdateDocumentInfo
 ms.assetid: 7794802c-e583-4eba-90b9-2fed1a161f9c
-ms.openlocfilehash: 5c5836a11dbf9e05db5b56e0bc5c062dd1617b2f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bdfcbea6c345235358384691388afcdbbd2d0a42
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62253588"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81321940"
 ---
-# <a name="cdatarecoveryhandler-class"></a>CDataRecoveryHandler sınıfı
+# <a name="cdatarecoveryhandler-class"></a>CDataRecoveryHandler Sınıfı
 
-`CDataRecoveryHandler` Kapanıyorsa belgeler ve uygulama beklenmedik bir şekilde geri yükler.
+Bir `CDataRecoveryHandler` uygulama beklenmedik bir şekilde çıkarsa belgeleri otomatik olarak kaydeder ve geri yüklenir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -85,76 +85,76 @@ class CDataRecoveryHandler : public CObject
 
 |||
 |-|-|
-|[CDataRecoveryHandler::CDataRecoveryHandler](#cdatarecoveryhandler)|Oluşturur bir `CDataRecoveryHandler` nesne.|
+|[CDataRecoveryHandler::CDataRecoveryHandler](#cdatarecoveryhandler)|Bir `CDataRecoveryHandler` nesne inşa eder.|
 
 ### <a name="methods"></a>Yöntemler
 
 |||
 |-|-|
-|[CDataRecoveryHandler::AutosaveAllDocumentInfo](#autosavealldocumentinfo)|Her dosya kaydedildi kapanıyorsa `CDataRecoveryHandler` sınıfı.|
-|[CDataRecoveryHandler::AutosaveDocumentInfo](#autosavedocumentinfo)|Belirtilen belge kapanıyorsa.|
-|[CDataRecoveryHandler::CreateDocumentInfo](#createdocumentinfo)|Bir belge açık belgelerin listesine ekler.|
-|[CDataRecoveryHandler::DeleteAllAutosavedFiles](#deleteallautosavedfiles)|Tüm geçerli otomatik kaydedilmiş dosyaları siler.|
+|[CDataRecoveryHandler::AutosaveAllDocumentInfo](#autosavealldocumentinfo)|Sınıfa kayıtlı her dosyayı `CDataRecoveryHandler` otomatik olarak kaydeder.|
+|[CDataRecoveryHandler::AutosaveDocumentInfo](#autosavedocumentinfo)|Belirtilen belgeyi otomatik olarak kaydeder.|
+|[CDataRecoveryHandler::CreateDocumentInfo](#createdocumentinfo)|Açık belgeler listesine bir belge ekler.|
+|[CDataRecoveryHandler::DeleteAllAutosavedFiles](#deleteallautosavedfiles)|Geçerli otomatik kaydedilmiş tüm dosyaları siler.|
 |[CDataRecoveryHandler::DeleteAutosavedFile](#deleteautosavedfile)|Belirtilen otomatik kaydedilmiş dosyayı siler.|
-|[CDataRecoveryHandler::GenerateAutosaveFileName](#generateautosavefilename)|Sağlanan belge adıyla ilişkili bir otomatik kaydetme dosyası adını oluşturur.|
-|[CDataRecoveryHandler::GetAutosaveInterval](#getautosaveinterval)|Otomatik kaydetme denemeler aralığı döndürür.|
-|[CDataRecoveryHandler::GetAutosavePath](#getautosavepath)|Otomatik kaydedilmiş dosyaların yolunu döndürür.|
-|[CDataRecoveryHandler::GetDocumentListName](#getdocumentlistname)|Belge adından alır bir `CDocument` nesne.|
-|[CDataRecoveryHandler::GetNormalDocumentTitle](#getnormaldocumenttitle)|Belirtilen belge normal başlığını alır.|
-|[CDataRecoveryHandler::GetRecoveredDocumentTitle](#getrecovereddocumenttitle)|Oluşturur ve kurtarılan belgenin başlığını döndürür.|
-|[CDataRecoveryHandler::GetRestartIdentifier](#getrestartidentifier)|Uygulama için benzersiz bir yeniden başlatma tanımlayıcısını alır.|
-|[CDataRecoveryHandler::GetSaveDocumentInfoOnIdle](#getsavedocumentinfoonidle)|Belirtir olup olmadığını `CDataRecoveryHandler` geçerli boşta döngü üzerinde bir otomatik kaydetme gerçekleştirir.|
-|[CDataRecoveryHandler::GetShutdownByRestartManager](#getshutdownbyrestartmanager)|Yeniden başlatma Yöneticisi uygulamadan çıkmak neden olup olmadığını gösterir.|
-|[CDataRecoveryHandler::Initialize](#initialize)|Başlatır `CDataRecoveryHandler`.|
-|[CDataRecoveryHandler::QueryRestoreAutosavedDocuments](#queryrestoreautosaveddocuments)|Her belge için bir iletişim kutusu kullanıcı için görüntüler `CDataRecoveryHandler` otomatik kaydedilmiş. İletişim kutusu, kullanıcının otomatik kaydedilmiş belge geri yüklemek isteyip istemediğini belirler.|
-|[CDataRecoveryHandler::ReadOpenDocumentList](#readopendocumentlist)|Açık belge listesi kayıt defterinden yükler.|
-|[CDataRecoveryHandler::RemoveDocumentInfo](#removedocumentinfo)|Sağlanan belgesi açık belge listesinden kaldırır.|
-|[CDataRecoveryHandler::ReopenPreviousDocuments](#reopenpreviousdocuments)|Daha önce açık belgeleri açar.|
-|[CDataRecoveryHandler::RestoreAutosavedDocuments](#restoreautosaveddocuments)|Kullanıcı girişini temel alarak otomatik kaydedilmiş belgeleri geri yükler.|
-|[CDataRecoveryHandler::SaveOpenDocumentList](#saveopendocumentlist)|Windows kayıt defterine geçerli açık belgelerin listesini kaydeder.|
-|[CDataRecoveryHandler::SetAutosaveInterval](#setautosaveinterval)|Milisaniye cinsinden otomatik kaydetme döngüleri arasındaki süreyi ayarlar.|
-|[CDataRecoveryHandler::SetAutosavePath](#setautosavepath)|Otomatik kaydedilmiş dosyalarının depolandığı dizine ayarlar.|
-|[CDataRecoveryHandler::SetRestartIdentifier](#setrestartidentifier)|Bu örneği için benzersiz bir yeniden başlatma tanımlayıcısını ayarlar `CDataRecoveryHandler`.|
-|[CDataRecoveryHandler::SetSaveDocumentInfoOnIdle](#setsavedocumentinfoonidle)|Kümeleri olup olmadığını `CDataRecoveryHandler` açık belge bilgileri Windows kayıt defterinde geçerli boşta döngü sırasında kaydeder.|
-|[CDataRecoveryHandler::SetShutdownByRestartManager](#setshutdownbyrestartmanager)|Uygulamanın önceki çıkış yeniden başlatma Yöneticisi tarafından kaynaklandı olup olmadığını belirler.|
-|[CDataRecoveryHandler::UpdateDocumentInfo](#updatedocumentinfo)|Kullanıcı kaydedilmeden çünkü bir belgenin bilgilerini güncelleştirir.|
+|[CDataRecoveryHandler::Otomatik kaydetmeDosyaName oluşturma](#generateautosavefilename)|Sağlanan belge dosya adı ile ilişkili bir otomatik kaydetme dosyasının adını oluşturur.|
+|[CDataRecoveryHandler::GetAutosaveInterval](#getautosaveinterval)|Otomatik kaydetme denemeleri arasındaki aralığı döndürür.|
+|[CDataRecoveryHandler::GetAutosavePath](#getautosavepath)|Otomatik kaydedilen dosyaların yolunu döndürür.|
+|[CDataRecoveryHandler::GetDocumentListName](#getdocumentlistname)|Belge adını bir `CDocument` nesneden alır.|
+|[CDataRecoveryHandler::GetNormalDocumentTitle](#getnormaldocumenttitle)|Belirtilen belgenin normal başlığını alır.|
+|[CDataRecoveryHandler::GetRecoveredDocumentTitle](#getrecovereddocumenttitle)|Kurtarılan belgenin başlığını oluşturur ve döndürür.|
+|[CDataRecoveryHandler::GetRestartIdentifier](#getrestartidentifier)|Uygulama için benzersiz yeniden başlatma tanımlayıcısını alır.|
+|[CDataRecoveryHandler::GetSaveDocumentInfoOnIdle](#getsavedocumentinfoonidle)|Geçerli boşta döngü üzerinde otomatik kaydetme `CDataRecoveryHandler` yapıp gerçekleştirmediğini gösterir.|
+|[CDataRecoveryHandler::GetShutdownByRestartManager](#getshutdownbyrestartmanager)|Yeniden başlatma yöneticisinin uygulamanın çıkışına neden olup olmadığını gösterir.|
+|[CDataRecoveryHandler::Initialize](#initialize)|Initializes `CDataRecoveryHandler`.|
+|[CDataRecoveryHandler::QueryRestoreAutosavedDocuments](#queryrestoreautosaveddocuments)|`CDataRecoveryHandler` Otomatik olarak kaydedilen her belge için kullanıcıya bir iletişim kutusu görüntüler. İletişim kutusu, kullanıcının otomatik kaydedilen belgeyi geri yüklemek isteyip istemediğini belirler.|
+|[CDataRecoveryHandler::ReadOpenDocumentList](#readopendocumentlist)|Açık belge listesini kayıt defterinden yükler.|
+|[CDataRecoveryHandler::RemoveDocumentInfo](#removedocumentinfo)|Sağlanan belgeyi açık belge listesinden kaldırır.|
+|[CDataRecoveryHandler::ReopenPreviousDocuments](#reopenpreviousdocuments)|Daha önce açık olan belgeleri açar.|
+|[CDataRecoveryHandler::RestoreAutosavedDocuments](#restoreautosaveddocuments)|Kullanıcı girişine dayalı otomatik kaydedilen belgeleri geri yükler.|
+|[CDataRecoveryHandler::SaveOpenDocumentList](#saveopendocumentlist)|Geçerli açık belgelerin listesini Windows kayıt defterine kaydeder.|
+|[CDataRecoveryHandler::SetAutosaveInterval](#setautosaveinterval)|Otomatik kaydetme döngüleri arasındaki süreyi milisaniye cinsinden ayarlar.|
+|[CDataRecoveryHandler::SetAutosavePath](#setautosavepath)|Otomatik kaydedilen dosyaların depolandığı dizini ayarlar.|
+|[CDataRecoveryHandler::SetRestartIdentifier](#setrestartidentifier)|Bu örnek için benzersiz yeniden başlatma tanımlayıcısını `CDataRecoveryHandler`ayarlar.|
+|[CDataRecoveryHandler::SetSaveDocumentInfoOnIdle](#setsavedocumentinfoonidle)|Geçerli boşta döngü sırasında açık belge bilgilerini Windows kayıt defterine `CDataRecoveryHandler` kaydedip kaydetmediğini ayarlar.|
+|[CDataRecoveryHandler::SetShutdownByRestartManager](#setshutdownbyrestartmanager)|Uygulamanın önceki çıkışının yeniden başlatma yöneticisitarafından neden olup olmadığını ayarlar.|
+|[CDataRecoveryHandler::UpdateDocumentInfo](#updatedocumentinfo)|Kullanıcı kaydettiği için belgenin bilgilerini güncelleştirir.|
 
-### <a name="data-members"></a>Veri üyeleri
+### <a name="data-members"></a>Veri Üyeleri
 
 |||
 |-|-|
-|m_bRestoringPreviousOpenDocs|Veri kurtarma işleyicisi daha önce açık belgeleri yeniden açana olup olmadığını gösterir.|
-|m_bSaveDocumentInfoOnIdle|Veri kurtarma işleyici kapanıyorsa sonraki boşta döngü üzerinde belgeleri olup olmadığını gösterir.|
-|m_bShutdownByRestartManager|Yeniden başlatma Yöneticisi uygulamadan çıkmak neden olup olmayacağını belirtir.|
-|m_dwRestartManagerSupportFlags|Uygulama için yeniden başlatma Yöneticisi desteği ne belirten bayrakları sağlar.|
-|m_lstAutosavesToDelete|Özgün belge kapatıldığında silinmedi otomatik olarak kaydedilmiş dosyaların listesi. Uygulama, dosyaları silmeyi yeniden başlatma Yöneticisi deneme çıktığında.|
-|m_mapDocNameToAutosaveName|Otomatik kaydedilmiş dosya adları için belge adlarının bir harita.|
-|m_mapDocNameToDocumentPtr|Belge adlarının bir harita [CDocument](../../mfc/reference/cdocument-class.md) işaretçileri.|
-|m_mapDocNameToRestoreBool|Bir harita belge adlarının otomatik kaydedilmiş belge geri gösteren bir Boole parametresi.|
-|m_mapDocumentPtrToDocName|Haritasını `CDocument` belge adlarının işaretçileri.|
-|m_mapDocumentPtrToDocTitle|Haritasını `CDocument` Belge başlıkları işaretçileri. Bu başlık dosyaları kaydetmek için kullanılır.|
-|m_nAutosaveInterval|Kapanıyorsa arasındaki milisaniye cinsinden süre.|
-|m_nTimerID|Otomatik kaydetme zamanlayıcı tanımlayıcısı.|
-|m_strAutosavePath|Otomatik kaydedilmiş belgeleri depolandığı konum.|
-|m_strRestartIdentifier|Yeniden başlatma Yöneticisi için bir GUID dize gösterimi.|
+|m_bRestoringPreviousOpenDocs|Veri kurtarma işleyicisinin daha önce açık belgeleri yeniden açıp açmadığını gösterir.|
+|m_bSaveDocumentInfoOnIdle|Veri kurtarma işleyicisinin belgeleri bir sonraki boşalma döngüsünde otomatik olarak kaydedip kaydetmediğini gösterir.|
+|m_bShutdownByRestartManager|Yeniden başlatma yöneticisinin uygulamanın çıkmasına neden olup olmadığını gösterir.|
+|m_dwRestartManagerSupportFlags|Yeniden başlatma yöneticisinin uygulama için hangi desteği sağladığını gösteren bayraklar.|
+|m_lstAutosavesToDelete|Özgün belgeler kapatıldığında silinmeyen otomatik olarak kaydedilen dosyaların listesi. Uygulama çıktığında, yeniden başlat yöneticisi dosyaları silmeye çalışır.|
+|m_mapDocNameToAutosaveName|Otomatik kaydedilmiş dosya adlarına belge adlarının haritası.|
+|m_mapDocNameToDocumentPtr|[CDocument](../../mfc/reference/cdocument-class.md) işaretçileri için belge adlarının bir haritası.|
+|m_mapDocNameToRestoreBool|Belge adlarının, otomatik olarak kaydedilen belgeyi geri yükleyip geri yüklemeyeceğini belirten boolean parametresinin haritası.|
+|m_mapDocumentPtrToDocName|Belge adlarının `CDocument` işaretçilerin haritası.|
+|m_mapDocumentPtrToDocTitle|Belge başlıklarıiçin `CDocument` işaretçilerin haritası. Bu başlıklar dosyaları kaydetmek için kullanılır.|
+|m_nAutosaveInterval|Otomatik kaydetmeler arasında milisaniye cinsinden zaman.|
+|m_nTimerID|Otomatik kaydetme zamanlayıcısı için tanımlayıcı.|
+|m_strAutosavePath|Otomatik kaydedilen belgelerin depolandığı konum.|
+|m_strRestartIdentifier|Yeniden başlatma yöneticisi için GUID dize gösterimi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yeniden başlatma Yöneticisi'ni kullanan `CDataRecoveryHandler` tutmak sınıfı izlemek bütün açık belgeleri ve otomatik kaydetme için bunları gerektiği şekilde. Otomatik kaydetme etkinleştirmek için [CDataRecoveryHandler::SetSaveDocumentInfoOnIdle](#setsavedocumentinfoonidle) yöntemi. Bu yöntem yönlendirir `CDataRecoveryHandler` bir otomatik kaydetme üzerinde sonraki boşta döngü gerçekleştirmek için. Yeniden başlatma Yöneticisi çağrıları `SetSaveDocumentInfoOnIdle` olduğunda `CDataRecoveryHandler` bir otomatik kaydetme gerçekleştirmeniz gerekir.
+Yeniden başlatma `CDataRecoveryHandler` yöneticisi, tüm açık belgeleri izlemek ve gerektiğinde otomatik olarak kaydetmek için sınıfı kullanır. Otomatik kaydetmeyi etkinleştirmek için [CDataRecoveryHandler::SetSaveDocumentInfoOnIdle](#setsavedocumentinfoonidle) yöntemini kullanın. Bu yöntem, `CDataRecoveryHandler` bir sonraki boşalma döngüsünde otomatik kaydetme gerçekleştirmeyi yönlendirir. Yeniden başlatma yöneticisi, `CDataRecoveryHandler` otomatik kaydetme yapılması gerektiğinde çağırır. `SetSaveDocumentInfoOnIdle`
 
-Tüm yöntemleri `CDataRecoveryHandler` sanal sınıf. Kendi özel veri kurtarma işleyicisi oluşturmak için bu sınıftaki yöntemleri geçersiz kılın. Kendi veri kurtarma işleyicinizi oluşturma veya yeniden başlatma Yöneticisi sürece bir CDataRecoveryHandler başlatmazsınız. [CWinApp sınıfı](../../mfc/reference/cwinapp-class.md) oluşturur bir `CDataRecoveryHandler` nesne gerekli olduğu gibi.
+`CDataRecoveryHandler` Sınıfın tüm yöntemleri sanaldır. Kendi özel veri kurtarma işleyicinizi oluşturmak için bu sınıftaki yöntemleri geçersiz kılın. Kendi veri kurtarma işleyicinizi oluşturmadığınız veya yöneticiyi yeniden başlatmadığınız sürece, bir CDataRecoveryHandler'ı anında oluşturmayın. [CWinApp Sınıfı](../../mfc/reference/cwinapp-class.md) gerektiği `CDataRecoveryHandler` gibi bir nesne oluşturur.
 
-Kullanabilmeniz için önce bir `CDataRecoveryHandler` nesne çağırmanız [CDataRecoveryHandler::Initialize](#initialize).
+Bir `CDataRecoveryHandler` nesneyi kullanamadan önce [CDataRecoveryHandler'ı aramanız gerekir::Initialize](#initialize).
 
-Çünkü `CDataRecoveryHandler` sınıfı yakından yeniden başlatma Yöneticisi'ne bağlı `CDataRecoveryHandler` genel parametresine bağlı `m_dwRestartManagerSupportFlags`. Bu parametre hangi izinlere sahip bir yeniden başlatma Yöneticisi ve uygulamanızla nasıl etkileşim kurduğunu belirler. Mevcut bir uygulamaya yeniden başlatma Yöneticisi eklemek için atamanız gerekir `m_dwRestartManagerSupportFlags` Oluşturucusu ana uygulamanızı, uygun değeri. Yeniden başlatma Yöneticisi'ni kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Yeniden başlatma Yöneticisi desteği ekleme](../../mfc/how-to-add-restart-manager-support.md).
+`CDataRecoveryHandler` Sınıf yeniden başlatma yöneticisine yakından bağlı `CDataRecoveryHandler` olduğundan, genel parametreye `m_dwRestartManagerSupportFlags`bağlıdır. Bu parametre, yeniden başlatma yöneticisinin hangi izinlere sahip olduğunu ve uygulamanızla nasıl etkileşimde olduğunu belirler. Yeniden başlatma yöneticisini varolan bir uygulamaya dahil etmek `m_dwRestartManagerSupportFlags` için, ana uygulamanızın oluşturucusuna uygun değeri atamanız gerekir. Yeniden başlatma yöneticisinin nasıl kullanılacağı hakkında daha fazla bilgi için [bkz.](../../mfc/how-to-add-restart-manager-support.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdatarecovery.h
+**Üstbilgi:** afxdatarecovery.h
 
-##  <a name="autosavealldocumentinfo"></a>  CDataRecoveryHandler::AutosaveAllDocumentInfo
+## <a name="cdatarecoveryhandlerautosavealldocumentinfo"></a><a name="autosavealldocumentinfo"></a>CDataRecoveryHandler::AutosaveAllDocumentInfo
 
-Her dosya kaydedildi kapanıyorsa `CDataRecoveryHandler` sınıfı.
+Sınıfa kayıtlı her dosyayı `CDataRecoveryHandler` otomatik olarak kaydeder.
 
 ```
 virtual BOOL AutosaveAllDocumentInfo();
@@ -162,17 +162,17 @@ virtual BOOL AutosaveAllDocumentInfo();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise `CDataRecoveryHandler` tüm belgeler için; kaydedildi Varsa FALSE Belge kaydedilmedi.
+DOĞRU tüm `CDataRecoveryHandler` belgeleri kaydedilmiş ise; Herhangi bir belge kaydedilmediyse YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, kaydedilmesi gereken belge varsa TRUE döndürür. Tüm belgeleri almak, kaydetmeden de TRUE döndürür `CWinApp` veya `CDocManager` uygulama bir hata üretir.
+Kaydedilmesi gereken belge yoksa, bu yöntem TRUE döndürür. Uygulama nın alınması `CWinApp` veya `CDocManager` uygulama için bir hata oluşturuyorsa, herhangi bir belge kaydetmeden TRUE'yu döndürür.
 
-Bu yöntemi kullanmak için AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART ya da AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL ayarlanmalıdır `m_dwRestartManagerSupportFlags`. Daha fazla bilgi için [nasıl yapılır: Yeniden başlatma Yöneticisi desteği ekleme](../../mfc/how-to-add-restart-manager-support.md).
+Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART veya `m_dwRestartManagerSupportFlags`AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL olarak ayarlanmalıdır. Daha fazla bilgi için [bkz: Yeniden Başlat Yöneticisi Desteği ekle.](../../mfc/how-to-add-restart-manager-support.md)
 
-##  <a name="autosavedocumentinfo"></a>  CDataRecoveryHandler::AutosaveDocumentInfo
+## <a name="cdatarecoveryhandlerautosavedocumentinfo"></a><a name="autosavedocumentinfo"></a>CDataRecoveryHandler::AutosaveDocumentInfo
 
-Belirtilen belge kapanıyorsa.
+Belirtilen belgeyi otomatik olarak kaydeder.
 
 ```
 virtual BOOL AutosaveDocumentInfo(
@@ -185,27 +185,27 @@ virtual BOOL AutosaveDocumentInfo(
 |||
 |-|-|
 |Parametre|Açıklama|
-|*pDocument*|[in] Bir işaretçi `CDocument` kaydetmek için.|
-|*bResetModifiedFlag*|[in] TRUE gösterir `CDataRecoveryHandler` göz önünde bulundurur *pDocument* değiştirilecek; FALSE gösterir framework hesaba katıldığından emin *pDocument* değiştirilmemiş olacak. Bu bayrak etkisi hakkında daha fazla bilgi için Açıklamalar bölümüne bakın.|
+|*pBelge*|[içinde] Kaydetmek için `CDocument` bir işaretçi.|
+|*bResetModifibayrak*|[içinde] TRUE, `CDataRecoveryHandler` *pDocument'ın* değiştirilmesi gerektiğini gösterir; FALSE, çerçevenin *pDocument'ı* değiştirilmemiş olarak gördüğünü gösterir. Bu bayrağın etkisi hakkında daha fazla bilgi için Açıklamalar bölümüne bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uygun bayrakları ayarlandıysa TRUE ve *pDocument* geçerli bir `CDocument` nesne.
+Uygun bayraklar ayarlanmışsa ve *pDocument* geçerli `CDocument` bir nesneyse DOĞRU.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her `CDocument` nenesindeki son kaydetme işleminden sonra değişip değişmediğini gösteren bir bayrak. Kullanım [CDocument::IsModified](../../mfc/reference/cdocument-class.md#ismodified) Bu bayrak durumunu belirlemek için. Varsa bir `CDocument` son kaydetmenizden değişmemiştir `AutosaveDocumentInfo` otomatik kaydedilmiş belge dosyaları siler. Son kaydetme işleminden sonra bir belge değiştiyse, kapatma kapatmadan önce belgeyi kaydetmek için kullanıcı ister.
+Her `CDocument` nesnenin son kaydedilmeden sonra değişip değişmediğini gösteren bir bayrağı vardır. Bu bayrağın durumunu belirlemek için [CDocument::Ismodified](../../mfc/reference/cdocument-class.md#ismodified) kullanın. Son `CDocument` kaydedilmeden bu `AutosaveDocumentInfo` yana a değişmediyse, bu belge için otomatik olarak kaydedilen dosyaları siler. Bir belge son kaydedilmeden sonra değiştiyse, belgenin kapatılması, kullanıcıdan kapatmadan önce belgeyi kaydetmesini ister.
 
 > [!NOTE]
->  Kullanarak *bResetModifiedFlag* değiştirilmemiş için belgenin durumunu değiştirmek için kullanıcı kaydedilmemiş veri kaybına neden olabilir. Framework değiştirilmemiş bir belge olarak değerlendirir, kapatma, kullanıcının kaydetmesine sormaz.
+> Belgenin durumunu değiştirilmemiş olarak değiştirmek için *bResetModifiedFlag'in* kullanılması, kullanıcının kaydedilmemiş verileri kaybetmesine neden olabilir. Çerçeve, bir belgenin değiştirilmediğini düşünüyorsa, kapatma, kullanıcıdan kaydolmasını gerektirmez.
 
-Bu yöntem ile aykırı [ASSERT](diagnostic-services.md#assert) makrosu, *pDocument* geçerli değil `CDocument` nesne.
+*PDocument* geçerli `CDocument` bir nesne değilse, bu yöntem [ASSERT](diagnostic-services.md#assert) makrosu yla bir özel durum oluşturur.
 
-Bu yöntemi kullanmak için AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART ya da AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL ayarlanmalıdır *m_dwRestartManagerSupportFlags*.
+Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART veya AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL *m_dwRestartManagerSupportFlags*olarak ayarlanmalıdır.
 
-##  <a name="cdatarecoveryhandler"></a>  CDataRecoveryHandler::CDataRecoveryHandler
+## <a name="cdatarecoveryhandlercdatarecoveryhandler"></a><a name="cdatarecoveryhandler"></a>CDataRecoveryHandler::CDataRecoveryHandler
 
-Oluşturur bir `CDataRecoveryHandler` nesne.
+Bir `CDataRecoveryHandler` nesne inşa eder.
 
 ```
 CDataRecoveryHandler(
@@ -218,16 +218,16 @@ CDataRecoveryHandler(
 |||
 |-|-|
 |Parametre|Açıklama|
-|*dwRestartManagerSupportFlags*|[in] Yeniden başlatma Yöneticisi'nin hangi seçeneklerin desteklendiğini gösterir.|
-|*nAutosaveInterval*|[in] Kapanıyorsa arasındaki süre. Bu parametre, milisaniye cinsindendir.|
+|*dwRestartManagerSupportFlags*|[içinde] Yeniden başlatma yöneticisinin hangi seçeneklerinin desteklendiğibelirtilir.|
+|*nAutosaveInterval*|[içinde] Otomatik kaydetmeler arasındaki zaman. Bu parametre milisaniye cinsindendir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-MFC çerçevesi otomatik olarak oluşturur bir `CDataRecoveryHandler` kullandığınızda, uygulamanız için nesne **yeni proje** Sihirbazı. Veri kurtarma davranışı veya yeniden başlatma Yöneticisi'ni özelleştirme sürece değil, oluşturmalısınız bir `CDataRecoveryHandler` nesne.
+**Yeni Proje** sihirbazını kullandığınızda `CDataRecoveryHandler` MFC çerçevesi uygulamanız için otomatik olarak bir nesne oluşturur. Veri kurtarma davranışını veya yeniden başlatma yöneticisini özelleştirmediğiniz sürece, bir `CDataRecoveryHandler` nesne oluşturmamalısınız.
 
-##  <a name="createdocumentinfo"></a>  CDataRecoveryHandler::CreateDocumentInfo
+## <a name="cdatarecoveryhandlercreatedocumentinfo"></a><a name="createdocumentinfo"></a>CDataRecoveryHandler::CreateDocumentInfo
 
-Bir belge açık belgelerin listesine ekler.
+Açık belgeler listesine bir belge ekler.
 
 ```
 virtual BOOL CreateDocumentInfo(CDocument* pDocument);
@@ -238,21 +238,21 @@ virtual BOOL CreateDocumentInfo(CDocument* pDocument);
 |||
 |-|-|
 |Parametre|Açıklama|
-|*pDocument*|[in] Bir işaretçi bir `CDocument`. Bu yöntem, bu belge bilgilerini oluşturur `CDocument`.|
+|*pBelge*|[içinde] Bir işaretçi `CDocument`. Bu yöntem, bunun `CDocument`için belge bilgilerini oluşturur.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan uygulama, TRUE döndürür.
+Varsayılan uygulama TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem denetler *pDocument* belge eklemeden önce belgeler listesinde zaten olduğunu. Varsa *pDocument* listesinde, bu yöntem otomatik kaydedilmiş dosyası ile ilişkili siler zaten *pDocument*.
+Bu yöntem, belgeyi ekleyenden önce *pDocument'ın* zaten belge listesinde olup olmadığını denetler. *pDocument* zaten listedeyse, bu yöntem *pDocument*ile ilişkili otomatik kaydedilmiş dosyayı siler.
 
-Bu yöntemi kullanmak için AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART ya da AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL ayarlanmalıdır *m_dwRestartManagerSupportFlags*.
+Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART veya AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL *m_dwRestartManagerSupportFlags*olarak ayarlanmalıdır.
 
-##  <a name="deleteallautosavedfiles"></a>  CDataRecoveryHandler::DeleteAllAutosavedFiles
+## <a name="cdatarecoveryhandlerdeleteallautosavedfiles"></a><a name="deleteallautosavedfiles"></a>CDataRecoveryHandler::DeleteAllAutosavedFiles
 
-Tüm geçerli otomatik kaydedilmiş dosyaları siler.
+Geçerli otomatik kaydedilmiş tüm dosyaları siler.
 
 ```
 virtual BOOL DeleteAllAutosavedFiles();
@@ -260,9 +260,9 @@ virtual BOOL DeleteAllAutosavedFiles();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan uygulama her zaman TRUE değerini döndürür.
+Varsayılan uygulama her zaman TRUE döndürür.
 
-##  <a name="deleteautosavedfile"></a>  CDataRecoveryHandler::DeleteAutosavedFile
+## <a name="cdatarecoveryhandlerdeleteautosavedfile"></a><a name="deleteautosavedfile"></a>CDataRecoveryHandler::DeleteAutosavedFile
 
 Belirtilen otomatik kaydedilmiş dosyayı siler.
 
@@ -275,19 +275,19 @@ virtual BOOL DeleteAutosavedFile(const CString& strAutosavedFile);
 |||
 |-|-|
 |Parametre|Açıklama|
-|*strAutosavedFile*|[in] Otomatik kaydedilmiş dosya adını içeren bir dize.|
+|*strAutosavedDosya*|[içinde] Otomatik kaydedilmiş dosya adını içeren bir dize.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan uygulama her zaman TRUE döndürür.
+Varsayılan uygulama her zaman TRUE döndürün.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem otomatik kaydedilmiş dosyası silinemiyor, dosya adını bir listede kaydeder. Yok Edicisi `CDataRecoveryHandler` bu listesinde belirtilen her otomatik kaydedilmiş dosyayı silmek çalışır.
+Bu yöntem otomatik olarak kaydedilen dosyayı silemezse, dosyanın adını bir listeye kaydeder. Bu listede belirtilen otomatik `CDataRecoveryHandler` kaydedilmiş her dosyayı silmeye çalışan yıkıcı.
 
-##  <a name="generateautosavefilename"></a>  CDataRecoveryHandler::GenerateAutosaveFileName
+## <a name="cdatarecoveryhandlergenerateautosavefilename"></a><a name="generateautosavefilename"></a>CDataRecoveryHandler::Otomatik kaydetmeDosyaName oluşturma
 
-Sağlanan belge adıyla ilişkili bir otomatik kaydetme dosyası adını oluşturur.
+Sağlanan belge dosya adı ile ilişkili bir otomatik kaydetme dosyasının adını oluşturur.
 
 ```
 virtual CString GenerateAutosaveFileName(const CString& strDocumentName) const;
@@ -296,19 +296,19 @@ virtual CString GenerateAutosaveFileName(const CString& strDocumentName) const;
 ### <a name="parameters"></a>Parametreler
 
 *strDocumentName*<br/>
-[in] Belge adını içeren bir dize. `GenerateAutosaveFileName` Bu belge adı, karşılık gelen bir otomatik kaydetme dosyası adı oluşturmak için kullanır.
+[içinde] Belge adını içeren bir dize. `GenerateAutosaveFileName`karşılık gelen otomatik kaydetme dosya adını oluşturmak için bu belge adını kullanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Oluşturulan otomatik kaydetme dosyası adı *strDocumentName*.
+*strDocumentName'den*oluşturulan otomatik kaydetme dosya adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her bir belge adı bir otomatik kaydetme dosyası adı ile bire bir eşleme var.
+Her belge adının otomatik kaydetme dosya adı içeren bire bir eşlemevardır.
 
-##  <a name="getautosaveinterval"></a>  CDataRecoveryHandler::GetAutosaveInterval
+## <a name="cdatarecoveryhandlergetautosaveinterval"></a><a name="getautosaveinterval"></a>CDataRecoveryHandler::GetAutosaveInterval
 
-Otomatik kaydetme denemeler aralığı döndürür.
+Otomatik kaydetme denemeleri arasındaki aralığı döndürür.
 
 ```
 virtual int GetAutosaveInterval() const;
@@ -316,11 +316,11 @@ virtual int GetAutosaveInterval() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Otomatik kaydetme arasındaki milisaniye sayısını çalışır.
+Otomatik kaydetme denemeleri arasındaki milisaniye sayısı.
 
-##  <a name="getautosavepath"></a>  CDataRecoveryHandler::GetAutosavePath
+## <a name="cdatarecoveryhandlergetautosavepath"></a><a name="getautosavepath"></a>CDataRecoveryHandler::GetAutosavePath
 
-Otomatik kaydedilmiş dosyaların yolunu döndürür.
+Otomatik kaydedilen dosyaların yolunu döndürür.
 
 ```
 virtual CString GetAutosavePath() const;
@@ -328,11 +328,11 @@ virtual CString GetAutosavePath() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Otomatik kaydedilmiş belgeleri depolandığı konum.
+Otomatik kaydedilen belgelerin depolandığı konum.
 
-##  <a name="getdocumentlistname"></a>  CDataRecoveryHandler::GetDocumentListName
+## <a name="cdatarecoveryhandlergetdocumentlistname"></a><a name="getdocumentlistname"></a>CDataRecoveryHandler::GetDocumentListName
 
-Belge adından alır bir `CDocument` nesne.
+Belge adını bir `CDocument` nesneden alır.
 
 ```
 virtual CString GetDocumentListName(CDocument* pDocument) const;
@@ -343,19 +343,19 @@ virtual CString GetDocumentListName(CDocument* pDocument) const;
 |||
 |-|-|
 |Parametre|Açıklama|
-|*pDocument*|[in] Bir işaretçi bir `CDocument`. `GetDocumentListName` Bu belge adını alır `CDocument`.|
+|*pBelge*|[içinde] Bir işaretçi `CDocument`. `GetDocumentListName`belge adını buradan `CDocument`alır.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belge adından *pDocument*.
+*pDocument*belge adı .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CDataRecoveryHandler` Belge adı, anahtar olarak kullanır *m_mapDocNameToAutosaveName*, *m_mapDocNameToDocumentPtr*, ve *m_mapDocNameToRestoreBool*. Bu parametre etkinleştirme `CDataRecoveryHandler` izlemek için `CDocument` nesneleri, otomatik kaydetme dosyası adı ve Otomatik Kaydet ayarları.
+Belge `CDataRecoveryHandler` *adı, m_mapDocNameToAutosaveName,* *m_mapDocNameToDocumentPtr*ve *m_mapDocNameToRestoreBool*anahtar olarak kullanır. Bu parametre `CDataRecoveryHandler` nesneleri, `CDocument` otomatik kaydetme dosya adını ve otomatik kaydetme ayarlarını izlemesini sağlar.
 
-##  <a name="getnormaldocumenttitle"></a>  CDataRecoveryHandler::GetNormalDocumentTitle
+## <a name="cdatarecoveryhandlergetnormaldocumenttitle"></a><a name="getnormaldocumenttitle"></a>CDataRecoveryHandler::GetNormalDocumentTitle
 
-Belirtilen belge normal başlığını alır.
+Belirtilen belgenin normal başlığını alır.
 
 ```
 virtual CString GetNormalDocumentTitle(CDocument* pDocument);
@@ -366,19 +366,19 @@ virtual CString GetNormalDocumentTitle(CDocument* pDocument);
 |||
 |-|-|
 |Parametre|Açıklama|
-|*pDocument*|[in] Bir işaretçi bir `CDocument`.|
+|*pBelge*|[içinde] Bir işaretçi `CDocument`.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen belge için normal başlığı.
+Belirtilen belgenin normal başlığı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normal bir belge başlığının genellikle yol olmadan belgenin dosya adıdır. Bu başlık, **dosya adı** alanını **Kaydet** iletişim kutusu.
+Belgenin normal başlığı genellikle yol olmadan belgenin dosya adıdır. Bu, **Farklı Kaydet** iletişim kutusunun **Dosya adı** alanındaki başlıktır.
 
-##  <a name="getrecovereddocumenttitle"></a>  CDataRecoveryHandler::GetRecoveredDocumentTitle
+## <a name="cdatarecoveryhandlergetrecovereddocumenttitle"></a><a name="getrecovereddocumenttitle"></a>CDataRecoveryHandler::GetRecoveredDocumentTitle
 
-Oluşturur ve kurtarılan belgenin başlığını döndürür.
+Kurtarılan belgenin başlığını oluşturur ve döndürür.
 
 ```
 virtual CString GetRecoveredDocumentTitle(const CString& strDocumentTitle) const;
@@ -387,19 +387,19 @@ virtual CString GetRecoveredDocumentTitle(const CString& strDocumentTitle) const
 ### <a name="parameters"></a>Parametreler
 
 *strDocumentTitle*<br/>
-[in] Belge için normal başlığı.
+[içinde] Belgenin normal başlığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kurtarılan belgenin başlığı.
+Kurtarılan belge başlığı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, kurtarılan bir belge normal başlığıyla başlığıdır **[kurtarıldı]** eklenmiş. Kurtarılan başlığı kullanıcıya görüntülenen zaman `CDataRecoveryHandler` otomatik kaydedilmiş belgeleri geri yüklemek için kullanıcı sorgular.
+Varsayılan olarak, bir belgenin kurtarılan başlığı, belgeye eklenen **[kurtarıldı]** normal başlıktır. Otomatik olarak kaydedilen belgeleri geri yüklemek `CDataRecoveryHandler` için kullanıcı sorguladığında kurtarılan başlık kullanıcıya görüntülenir.
 
-##  <a name="getrestartidentifier"></a>  CDataRecoveryHandler::GetRestartIdentifier
+## <a name="cdatarecoveryhandlergetrestartidentifier"></a><a name="getrestartidentifier"></a>CDataRecoveryHandler::GetRestartIdentifier
 
-Uygulama için benzersiz bir yeniden başlatma tanımlayıcısını alır.
+Uygulama için benzersiz yeniden başlatma tanımlayıcısını alır.
 
 ```
 virtual CString GetRestartIdentifier() const;
@@ -407,17 +407,17 @@ virtual CString GetRestartIdentifier() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Benzersiz tanımlayıcı yeniden başlatın.
+Benzersiz yeniden başlatma tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeniden başlatma olarak her uygulamanın yürütülmesi için benzersiz tanımlayıcısıdır.
+Yeniden başlatma tanımlayıcısı, uygulamanın her yürütülmesi için benzersizdir.
 
-`CDataRecoveryHandler` Kayıt defteri şu anda açık belgeler hakkında bilgi depolar. Yeniden başlatma Yöneticisi bir uygulamadan çıkar ve yeniden başlatır, yeniden başlatma tanımlayıcısına sağlar. `CDataRecoveryHandler`. `CDataRecoveryHandler` Daha önce açık belgelerin listesini almak için yeniden başlatma tanımlayıcısını kullanır. Böylece `CDataRecoveryHandler` otomatik olarak kaydedilmiş dosyaların geri denemek için.
+Şu `CDataRecoveryHandler` anda açık olan belgelerle ilgili bilgileri kayıt defterinde saklar. Yeniden başlatma yöneticisi bir uygulamadan çıkıp yeniden başlattığında, yeniden başlat tanımlayıcısını `CDataRecoveryHandler`. Daha `CDataRecoveryHandler` önce açılmış belgelerin listesini almak için yeniden başlat tanımlayıcısı kullanır. Bu, `CDataRecoveryHandler` otomatik olarak kaydedilen dosyaları bulmayı ve geri yüklemeyi denemenizi sağlar.
 
-##  <a name="getsavedocumentinfoonidle"></a>  CDataRecoveryHandler::GetSaveDocumentInfoOnIdle
+## <a name="cdatarecoveryhandlergetsavedocumentinfoonidle"></a><a name="getsavedocumentinfoonidle"></a>CDataRecoveryHandler::GetSaveDocumentInfoOnIdle
 
-Belirtir olup olmadığını `CDataRecoveryHandler` geçerli boşta döngü üzerinde bir otomatik kaydetme gerçekleştirir.
+Geçerli boşta döngü üzerinde otomatik kaydetme `CDataRecoveryHandler` yapıp gerçekleştirmediğini gösterir.
 
 ```
 virtual BOOL GetSaveDocumentInfoOnIdle() const;
@@ -425,11 +425,11 @@ virtual BOOL GetSaveDocumentInfoOnIdle() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU gösterir `CDataRecoveryHandler` kapanıyorsa geçerli boşta döngü;'üzerinde FALSE yok gösterir.
+TRUE, `CDataRecoveryHandler` geçerli boşalma döngüsündeki otomatik kaydetmeleri gösterir; FALSE olmadığını gösterir.
 
-##  <a name="getshutdownbyrestartmanager"></a>  CDataRecoveryHandler::GetShutdownByRestartManager
+## <a name="cdatarecoveryhandlergetshutdownbyrestartmanager"></a><a name="getshutdownbyrestartmanager"></a>CDataRecoveryHandler::GetShutdownByRestartManager
 
-Yeniden başlatma Yöneticisi uygulamadan çıkmak neden olup olmadığını gösterir.
+Yeniden başlatma yöneticisinin uygulamanın çıkışına neden olup olmadığını gösterir.
 
 ```
 virtual BOOL GetShutdownByRestartManager() const;
@@ -437,11 +437,11 @@ virtual BOOL GetShutdownByRestartManager() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE, yeniden başlatma Yöneticisi uygulamadan çıkmak neden gösterir; FALSE, belirtmiyor gösterir.
+TRUE, yeniden başlatma yöneticisinin uygulamanın çıkmasına neden olduğunu gösterir; YANLIŞ olmadığını gösterir.
 
-##  <a name="initialize"></a>  CDataRecoveryHandler::Initialize
+## <a name="cdatarecoveryhandlerinitialize"></a><a name="initialize"></a>CDataRecoveryHandler::Initialize
 
-Başlatır `CDataRecoveryHandler`.
+Initializes `CDataRecoveryHandler`.
 
 ```
 virtual BOOL Initialize();
@@ -449,19 +449,19 @@ virtual BOOL Initialize();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başlatma başarılı ise TRUE; Aksi durumda FALSE.
+Başlatma başarılı olursa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başlatma işlemi, kayıt defterinden otomatik kaydetme dosyalarını depolamak için bir yol yükler. Varsa `Initialize` yöntemi, bu dizin bulunamıyor veya yol NULL olup olmadığını `Initialize` döndürür ve başarısız `FALSE`.
+Başlatma işlemi, otomatik kaydetme dosyalarını kayıt defterinden depolama yolunu yükler. `Initialize` Yöntem bu dizini bulamıyorsa veya yol `Initialize` NULL ise `FALSE`başarısız olur ve döndürür.
 
-Kullanım [CDataRecoveryHandler::SetAutosavePath](#setautosavepath) uygulamanızı başlatır sonra otomatik kaydetme yolu değiştirmek için `CDataRecoveryHandler`.
+[CDataRecoveryHandler kullanın::SetAutosavePath](#setautosavepath) uygulamanız baş harflerini aldıktan sonra `CDataRecoveryHandler`otomatik kaydetme yolunu değiştirmek için .
 
-`Initialize` Yöntemi ayrıca sonraki otomatik kaydetme oluştuğunda izlemek için bir zamanlayıcı başlatır. Kullanım [CDataRecoveryHandler::SetAutosaveInterval](#setautosaveinterval) uygulamanızı başlatır sonra otomatik kaydetme aralığını değiştirmek için `CDataRecoveryHandler`.
+Yöntem, `Initialize` bir sonraki otomatik kaydetme gerçekleştiğinde izlemek için bir zamanlayıcı da başlatır. [CDataRecoveryHandler kullanın::SetAutosaveInterval](#setautosaveinterval) uygulamanız baş harfe geldikten `CDataRecoveryHandler`sonra otomatik kaydetme aralığını değiştirmek için .
 
-##  <a name="queryrestoreautosaveddocuments"></a>  CDataRecoveryHandler::QueryRestoreAutosavedDocuments
+## <a name="cdatarecoveryhandlerqueryrestoreautosaveddocuments"></a><a name="queryrestoreautosaveddocuments"></a>CDataRecoveryHandler::QueryRestoreAutosavedDocuments
 
-Her belge için bir iletişim kutusu kullanıcı için görüntüler `CDataRecoveryHandler` otomatik kaydedilmiş. İletişim kutusu, kullanıcının otomatik kaydedilmiş belge geri yüklemek isteyip istemediğini belirler.
+`CDataRecoveryHandler` Otomatik olarak kaydedilen her belge için kullanıcıya bir iletişim kutusu görüntüler. İletişim kutusu, kullanıcının otomatik kaydedilen belgeyi geri yüklemek isteyip istemediğini belirler.
 
 ```
 virtual void QueryRestoreAutosavedDocuments();
@@ -469,13 +469,13 @@ virtual void QueryRestoreAutosavedDocuments();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamanız Unicode ise, bu yöntem görüntüler bir [CTaskDialog](../../mfc/reference/ctaskdialog-class.md) kullanıcı. Aksi takdirde, framework kullanan [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) kullanıcı sorgulanamıyor.
+Uygulamanız Unicode ise, bu yöntem kullanıcıya bir [CTaskDialog](../../mfc/reference/ctaskdialog-class.md) görüntüler. Aksi takdirde, çerçeve kullanıcıyı sorgulamak için [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) kullanır.
 
-Sonra `QueryRestoreAutosavedDocuments` tüm yanıtları toplayan kullanıcıdan bilgi üye değişkeni depolar *m_mapDocNameToRestoreBool*. Bu yöntem otomatik kaydedilmiş belgeleri geri yüklemez.
+Kullanıcıdan gelen tüm yanıtları topladıktan sonra, `QueryRestoreAutosavedDocuments` m_mapDocNameToRestoreBool üye değişkeninde bilgileri depolar. *m_mapDocNameToRestoreBool* Bu yöntem otomatik olarak kaydedilen belgeleri geri yüklemez.
 
-##  <a name="readopendocumentlist"></a>  CDataRecoveryHandler::ReadOpenDocumentList
+## <a name="cdatarecoveryhandlerreadopendocumentlist"></a><a name="readopendocumentlist"></a>CDataRecoveryHandler::ReadOpenDocumentList
 
-Açık belge listesi kayıt defterinden yükler.
+Açık belge listesini kayıt defterinden yükler.
 
 ```
 virtual BOOL ReadOpenDocumentList();
@@ -483,17 +483,17 @@ virtual BOOL ReadOpenDocumentList();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE gösterir `ReadOpenDocumentList` en az bir belgenin bilgilerini kayıt defterinden; yüklendi FALSE, belge bilgi yüklendi gösterir.
+TRUE, `ReadOpenDocumentList` kayıt defterinden en az bir belgeiçin bilgi yüklendiğini gösterir; FALSE, belge bilgisinin yüklenmemediğini gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev açık belge bilgileri kayıt defterinden yükler ve üye değişkeni depolar *m_mapDocNameToAutosaveName*.
+Bu işlev, açık belge bilgilerini kayıt defterinden yükler ve üye değişken *m_mapDocNameToAutosaveName*depolar.
 
-Sonra `ReadOpenDocumentList` verileri yükler belge bilgileri kayıt defterinden siler.
+Tüm `ReadOpenDocumentList` verileri yüklendikten sonra, kayıt defterinden belge bilgilerini siler.
 
-##  <a name="removedocumentinfo"></a>  CDataRecoveryHandler::RemoveDocumentInfo
+## <a name="cdatarecoveryhandlerremovedocumentinfo"></a><a name="removedocumentinfo"></a>CDataRecoveryHandler::RemoveDocumentInfo
 
-Sağlanan belgesi açık belge listesinden kaldırır.
+Sağlanan belgeyi açık belge listesinden kaldırır.
 
 ```
 virtual BOOL RemoveDocumentInfo(CDocument* pDocument);
@@ -504,23 +504,23 @@ virtual BOOL RemoveDocumentInfo(CDocument* pDocument);
 |||
 |-|-|
 |Parametre|Açıklama|
-|*pDocument*|[in] Belgenin kaldırmak için bir işaretçi.|
+|*pBelge*|[içinde] Kaldırılacak belgenin işaretçisi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise *pDocument* listeden kaldırıldı Bir hata oluştuğunda FALSE.
+*pDocument* listeden kaldırıldıysa DOĞRU; Bir hata oluştuysa FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı bir belge kapatıldığında, çerçeve açık belge listesinden kaldırmak için bu yöntemi kullanır.
+Kullanıcı bir belgeyi kapattığında, çerçeve belgeyi açık belgeler listesinden kaldırmak için bu yöntemi kullanır.
 
-Varsa `RemoveDocumentInfo` bulunamıyor *pDocument* açık belge listesinde, hiçbir şey yapmaz ve TRUE döndürür.
+Açık `RemoveDocumentInfo` belgeler listesinde *pDocument* bulamazsa, hiçbir şey yapmaz ve TRUE döndürür.
 
-Bu yöntemi kullanmak için AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES ayarlanmalıdır *m_dwRestartManagerSupportFlags*.
+Bu yöntemi kullanmak için AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES *m_dwRestartManagerSupportFlags*olarak ayarlanmalıdır.
 
-##  <a name="reopenpreviousdocuments"></a>  CDataRecoveryHandler::ReopenPreviousDocuments
+## <a name="cdatarecoveryhandlerreopenpreviousdocuments"></a><a name="reopenpreviousdocuments"></a>CDataRecoveryHandler::ReopenPreviousDocuments
 
-Daha önce açık belgeleri açar.
+Daha önce açık olan belgeleri açar.
 
 ```
 virtual BOOL ReopenPreviousDocuments();
@@ -528,19 +528,19 @@ virtual BOOL ReopenPreviousDocuments();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-En az bir belge açarsa TRUE; Aksi durumda FALSE.
+En az bir belge açılmışsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, daha önce açık belgelerin en son kaydetme açılır. Belge kaydedilmedi varsa veya otomatik kaydedilmiş, `ReopenPreviousDocuments` dosya türü için şablona dayalı bir boş belge açılır.
+Bu yöntem, daha önce açık olan belgelerin en son kaydini açar. Belge kaydedilmediyse veya otomatik `ReopenPreviousDocuments` olarak kaydedilmediyse, bu dosya türü için şablonu temel alan boş bir belge açılır.
 
-Bu yöntemi kullanmak için AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES ayarlanmalıdır *m_dwRestartManagerSupportFlags*. Bu parametre ayarlanmazsa `ReopenPreviousDocuments` hiçbir şey yapmaz ve false değerini döndürür.
+Bu yöntemi kullanmak için AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES *m_dwRestartManagerSupportFlags*olarak ayarlanmalıdır. Bu parametre ayarlanmazsa, `ReopenPreviousDocuments` hiçbir şey yapmaz ve FALSE döndürür.
 
-Daha önce açık belge listesinde depolanan hiçbir belge varsa `ReopenPreviousDocuments` hiçbir şey yapmaz ve false değerini döndürür.
+Daha önce açılmış belgeler listesinde depolanan hiçbir belge `ReopenPreviousDocuments` yoksa, hiçbir şey yapmaz ve FALSE döndürür.
 
-##  <a name="restoreautosaveddocuments"></a>  CDataRecoveryHandler::RestoreAutosavedDocuments
+## <a name="cdatarecoveryhandlerrestoreautosaveddocuments"></a><a name="restoreautosaveddocuments"></a>CDataRecoveryHandler::RestoreAutosavedDocuments
 
-Kullanıcı girişini temel alarak otomatik kaydedilmiş belgeleri geri yükler.
+Kullanıcı girişine dayalı otomatik kaydedilen belgeleri geri yükler.
 
 ```
 virtual BOOL RestoreAutosavedDocuments();
@@ -548,17 +548,17 @@ virtual BOOL RestoreAutosavedDocuments();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eğer bu yöntem, belgelerin başarıyla geri yükler.
+Bu yöntem belgeleri başarıyla geri yüklerse DOĞRU.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin çağırdığı [CDataRecoveryHandler::QueryRestoreAutosavedDocuments](#queryrestoreautosaveddocuments) geri yüklemek, hangi kullanıcı belgeleri belirlemek için istemektedir. Bir kullanıcı bir otomatik kaydedilmiş belge geri karar verirse `RestoreAutosavedDocuments` otomatik kaydetme dosyayı siler. Aksi takdirde, `RestoreAutosavedDocuments` açık belge otomatik olarak kaydedilmiş sürüm ile değiştirir.
+Bu yöntem, kullanıcının geri yüklemek istediği belgeleri belirlemek için [CDataRecoveryHandler::QueryRestoreAutosavedDocuments](#queryrestoreautosaveddocuments) çağırır. Bir kullanıcı otomatik kaydedilmiş bir belgeyi `RestoreAutosavedDocuments` geri yüklememeye karar verirse, otomatik kaydetme dosyasını siler. Aksi `RestoreAutosavedDocuments` takdirde, açık belgeyi otomatik kaydedilmiş sürümle değiştirir.
 
-Bu yöntemi kullanmak için AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES ya da AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES ayarlanmalıdır `m_dwRestartManagerSupportFlags`.
+Bu yöntemi kullanmak için AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES veya AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES `m_dwRestartManagerSupportFlags`olarak ayarlanmalıdır.
 
-##  <a name="saveopendocumentlist"></a>  CDataRecoveryHandler::SaveOpenDocumentList
+## <a name="cdatarecoveryhandlersaveopendocumentlist"></a><a name="saveopendocumentlist"></a>CDataRecoveryHandler::SaveOpenDocumentList
 
-Windows kayıt defterine geçerli açık belgelerin listesini kaydeder.
+Geçerli açık belgelerin listesini Windows kayıt defterine kaydeder.
 
 ```
 virtual BOOL SaveOpenDocumentList();
@@ -566,17 +566,17 @@ virtual BOOL SaveOpenDocumentList();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaydetmek için hiçbir açık belgeler olduğunda veya başarılı bir şekilde kaydedilmiş ise TRUE. Kayıt defterine kaydetmek için belgeleri vardır, ancak bir hata oluştuğundan, kaydedilmedi FALSE.
+Kaydedilen açık belge yoksa veya başarıyla kaydedildiyse DOĞRU. Kayıt defterine kaydedilmesi gereken belgeler varsa, ancak bir hata oluştuğu için kaydedilmediler.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeniden başlatma Yöneticisi çağrıları `SaveOpenDocumentList` uygulama beklenmedik bir şekilde çıktığında veya yükseltme çıktığında. Uygulama yeniden başlatıldığında, kullandığı [CDataRecoveryHandler::ReadOpenDocumentList](#readopendocumentlist) açık belgeler listesi alınamıyor.
+Yeniden başlatma yöneticisi, uygulama beklenmedik bir şekilde çıktığında veya yükseltme için çıktığında çağırır. `SaveOpenDocumentList` Uygulama yeniden başlatıldığında, açık belgelerin listesini almak için [CDataRecoveryHandler::ReadOpenDocumentList](#readopendocumentlist) kullanır.
 
-Bu yöntem yalnızca açık belgelerin listesini kaydeder. Yöntem [CDataRecoveryHandler::AutosaveDocumentInfo](#autosavedocumentinfo) belgeleri kaydetmek için sorumludur.
+Bu yöntem yalnızca açık belgelerin listesini kaydeder. Yöntem [CDataRecoveryHandler::AutosaveDocumentInfo](#autosavedocumentinfo) belgeleri kendilerini kaydetmekten sorumludur.
 
-##  <a name="setautosaveinterval"></a>  CDataRecoveryHandler::SetAutosaveInterval
+## <a name="cdatarecoveryhandlersetautosaveinterval"></a><a name="setautosaveinterval"></a>CDataRecoveryHandler::SetAutosaveInterval
 
-Milisaniye cinsinden otomatik kaydetme döngüleri arasındaki süreyi ayarlar.
+Otomatik kaydetme döngüleri arasındaki süreyi milisaniye cinsinden ayarlar.
 
 ```
 Virtual void SetAutosaveInterval(int nAutosaveInterval);
@@ -585,11 +585,11 @@ Virtual void SetAutosaveInterval(int nAutosaveInterval);
 ### <a name="parameters"></a>Parametreler
 
 *nAutosaveInterval*<br/>
-[in] Yeni otomatik kaydetme aralığını milisaniye cinsinden.
+[içinde] Milisaniye cinsinden yeni otomatik kaydetme aralığı.
 
-##  <a name="setautosavepath"></a>  CDataRecoveryHandler::SetAutosavePath
+## <a name="cdatarecoveryhandlersetautosavepath"></a><a name="setautosavepath"></a>CDataRecoveryHandler::SetAutosavePath
 
-Otomatik kaydedilmiş dosyalarının depolandığı dizine ayarlar.
+Otomatik kaydedilen dosyaların depolandığı dizini ayarlar.
 
 ```
 virtual void SetAutosavePath(const CString& strAutosavePath);
@@ -600,15 +600,15 @@ virtual void SetAutosavePath(const CString& strAutosavePath);
 |||
 |-|-|
 |Parametre|Açıklama|
-|*strAutosavePath*|[in] Otomatik kaydetme dosyalarının depolandığı yolu.|
+|*strAutosavePath*|[içinde] Otomatik kaydetme dosyalarının depolandığı yol.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Otomatik kaydetme dizini değiştirmek şu anda otomatik kaydedilmiş dosyaları taşımaz.
+Otomatik kaydetme dizinini değiştirmek, şu anda otomatik olarak kaydedilen dosyaları hareket ettirmiyor.
 
-##  <a name="setrestartidentifier"></a>  CDataRecoveryHandler::SetRestartIdentifier
+## <a name="cdatarecoveryhandlersetrestartidentifier"></a><a name="setrestartidentifier"></a>CDataRecoveryHandler::SetRestartIdentifier
 
-Bu örneği için benzersiz bir yeniden başlatma tanımlayıcısını ayarlar `CDataRecoveryHandler`.
+Bu örnek için benzersiz yeniden başlatma tanımlayıcısını `CDataRecoveryHandler`ayarlar.
 
 ```
 virtual void SetRestartIdentifier(const CString& strRestartIdentifier);
@@ -619,15 +619,15 @@ virtual void SetRestartIdentifier(const CString& strRestartIdentifier);
 |||
 |-|-|
 |Parametre|Açıklama|
-|*strRestartIdentifier*|[in] Yeniden başlatma Yöneticisi için benzersiz tanımlayıcı.|
+|*strRestartIdentifier*|[içinde] Yeniden başlatma yöneticisi için benzersiz tanımlayıcı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeniden başlatma Yöneticisi, kayıt defterinde açık belgeleri ilgili bilgileri kaydeder. Bu bilgileri yeniden benzersiz tanımlayıcısına sahip anahtar olarak depolanır. Yeniden başlatma tanımlayıcısı uygulamanın her örneği için benzersiz olduğundan, bir uygulamanın birden çok örneği beklenmedik bir şekilde sonlandırılabilir ve yeniden başlatma Yöneticisi her birine kurtarabilirsiniz.
+Yeniden başlatma yöneticisi, kayıt defterindeki açık belgelerle ilgili bilgileri kaydeder. Bu bilgiler, anahtar olarak benzersiz yeniden başlatma tanımlayıcısı ile depolanır. Yeniden başlatma tanımlayıcısı bir uygulamanın her örneği için benzersiz olduğundan, bir uygulamanın birden çok örneği beklenmeyen bir şekilde çıkabilir ve yeniden başlatma yöneticisi bunların her birini kurtarabilir.
 
-##  <a name="setsavedocumentinfoonidle"></a>  CDataRecoveryHandler::SetSaveDocumentInfoOnIdle
+## <a name="cdatarecoveryhandlersetsavedocumentinfoonidle"></a><a name="setsavedocumentinfoonidle"></a>CDataRecoveryHandler::SetSaveDocumentInfoOnIdle
 
-Kümeleri olup olmadığını `CDataRecoveryHandler` açık belge bilgileri Windows kayıt defterinde geçerli boşta döngü sırasında kaydeder.
+Geçerli boşta döngü sırasında açık belge bilgilerini Windows kayıt defterine `CDataRecoveryHandler` kaydedip kaydetmediğini ayarlar.
 
 ```
 virtual void SetSaveDocumentInfoOnIdle(BOOL bSaveOnIdle);
@@ -638,11 +638,11 @@ virtual void SetSaveDocumentInfoOnIdle(BOOL bSaveOnIdle);
 |||
 |-|-|
 |Parametre|Açıklama|
-|*bSaveOnIdle*|[in] Geçerli boşta döngü sırasında belge bilgileri kaydetmek için TRUE; Kaydetme işlemi yapmayacak şekilde FALSE.|
+|*bSaveOnIdle*|[içinde] Geçerli boşta döngü sırasında belge bilgilerini kaydetmek için TRUE; Kaydet yapmamak için YANLIŞ.|
 
-##  <a name="setshutdownbyrestartmanager"></a>  CDataRecoveryHandler::SetShutdownByRestartManager
+## <a name="cdatarecoveryhandlersetshutdownbyrestartmanager"></a><a name="setshutdownbyrestartmanager"></a>CDataRecoveryHandler::SetShutdownByRestartManager
 
-Uygulamanın önceki çıkış yeniden başlatma Yöneticisi tarafından kaynaklandı olup olmadığını belirler.
+Uygulamanın önceki çıkışının yeniden başlatma yöneticisitarafından neden olup olmadığını ayarlar.
 
 ```
 virtual void SetShutdownByRestartManager(BOOL bShutdownByRestartManager);
@@ -653,15 +653,15 @@ virtual void SetShutdownByRestartManager(BOOL bShutdownByRestartManager);
 |||
 |-|-|
 |Parametre|Açıklama|
-|*bShutdownByRestartManager*|[in] Yeniden başlatma Yöneticisi uygulamadan çıkmak neden belirtmek için TRUE; Uygulama başka bir nedenle çıkıldı belirtmek için FALSE.|
+|*bShutdownByRestartManager*|[içinde] Uygulamanın çıkmasına yeniden başlatma yöneticisinin neden olduğunu belirtmek için TRUE; UYGULAMANIN başka bir nedenle çıktığını belirtmek için YANLIŞ.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, önceki çıkış olup olmadığını beklenmiyordu veya olup yeniden başlatma Yöneticisi tarafından başlatılan farklı göre davranır.
+Çerçeve, önceki çıkışın beklenmeyen olup olmadığına veya yeniden başlatma yöneticisi tarafından başlatılıp başlatılmadığına bağlı olarak farklı şekilde çalışır.
 
-##  <a name="updatedocumentinfo"></a>  CDataRecoveryHandler::UpdateDocumentInfo
+## <a name="cdatarecoveryhandlerupdatedocumentinfo"></a><a name="updatedocumentinfo"></a>CDataRecoveryHandler::UpdateDocumentInfo
 
-Kullanıcı kaydedilmeden çünkü bir belgenin bilgilerini güncelleştirir.
+Kullanıcı kaydettiği için belgenin bilgilerini güncelleştirir.
 
 ```
 virtual BOOL UpdateDocumentInfo(CDocument* pDocument);
@@ -672,21 +672,21 @@ virtual BOOL UpdateDocumentInfo(CDocument* pDocument);
 |||
 |-|-|
 |Parametre|Açıklama|
-|*pDocument*|[in] Kaydedilen belge işaretçisi.|
+|*pBelge*|[içinde] Kaydedilen belgeiçin bir işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem otomatik kaydedilmiş belge silindi ve güncelleştirilmiş belge bilgileri gerekiyorsa TRUE; Bir hata oluştuğunda FALSE.
+Bu yöntem otomatik olarak kaydedilen belgeyi sildiyse ve belge bilgilerini güncellediyse DOĞRU; Bir hata oluştuysa FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kullanıcı bir belgeyi kaydederken, artık gerekli olmadığından uygulamayı otomatik olarak kaydedilmiş dosyanın kaldırır. `UpdateDocumentInfo` otomatik kaydedilmiş dosyasını çağırarak siler [CDataRecoveryHandler::RemoveDocumentInfo](#removedocumentinfo). `UpdateDocumentInfo` ardından gelen bilgileri ekler *pDocument* listesine şu anda açık belgeler çünkü `RemoveDocumentInfo` bu bilgileri, ancak kaydedilen siler belge hala açık.
+Bir kullanıcı bir belge yi kaydettiğinde, uygulama artık gerekmediği için otomatik olarak kaydedilen dosyayı kaldırır. `UpdateDocumentInfo`[CDataRecoveryHandler](#removedocumentinfo)arayarak otomatik olarak kaydedilen dosyayı siler::RemoveDocumentInfo . `UpdateDocumentInfo`daha sonra *pDocument'daki* bilgileri şu anda `RemoveDocumentInfo` açık olan belgeler listesine ekler, çünkü bu bilgileri siler, ancak kaydedilen belge hala açıktır.
 
-Bu yöntemi kullanmak için AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES ayarlanmalıdır *m_dwRestartManagerSupportFlags*.
+Bu yöntemi kullanmak için AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES *m_dwRestartManagerSupportFlags*olarak ayarlanmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[Nasıl yapılır: Yeniden başlatma Yöneticisi desteği ekleme](../../mfc/how-to-add-restart-manager-support.md)
+[Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme](../../mfc/how-to-add-restart-manager-support.md)

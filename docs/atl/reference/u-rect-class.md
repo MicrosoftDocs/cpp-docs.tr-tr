@@ -1,5 +1,5 @@
 ---
-title: _U_RECT sınıfı
+title: _U_RECT Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - ATL::_U_RECT
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - U_RECT class
 - _U_RECT class
 ms.assetid: 5f880a2d-09cf-4327-bf32-a3519c4dcd63
-ms.openlocfilehash: 306092a00a1e119263f4563eea181d7d3ee2b4b2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8a4d5b2a770b3f0ecfe10be0fbad22a702aa0531
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274531"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81325803"
 ---
-# <a name="urect-class"></a>_U_RECT sınıfı
+# <a name="_u_rect-class"></a>_U_RECT Sınıfı
 
-Bu bağımsız değişken bağdaştırıcı sınıfı ya da tanır `RECT` işaretçiler veya başvurular açısından işaretçileri uygulanan bir işleve geçirilecek.
+Bu bağımsız değişken bağdaştırıcı sı, işaretçilerin `RECT` veya başvuruların işaretçiler açısından uygulanan bir işleve geçirilmesine izin verir.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,35 +33,35 @@ class _U_RECT
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[_U_RECT::_U_RECT](#_u_rect___u_rect)|Oluşturucu.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[_U_RECT::m_lpRect](#_u_rect__m_lprect)|İşaretçi bir `RECT`.|
+|[_U_RECT:m_lpRect](#_u_rect__m_lprect)|İşaretçi `RECT`bir .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İki oluşturucu aşırı yüklemeleri sınıfı tanımlar: bir kabul bir **RECT &** ve diğer bağımsız değişken kabul eden bir `LPRECT` bağımsız değişken. İlk Oluşturucu, sınıfın tek veri üyesi içinde başvuru bağımsız değişkeni adresini depolar [m_lpRect](#_u_rect__m_lprect). İşaretçi oluşturucusu için bağımsız değişken doğrudan dönüştürme depolanır.
+Sınıf iki oluşturucu aşırı tanımlar: biri **RECT&** bağımsız değişkenini, diğeri ise bir `LPRECT` bağımsız değişkeni kabul eder. İlk oluşturucu, başvuru bağımsız değişkeninin adresini sınıfın tek veri [üyesinde m_lpRect.](#_u_rect__m_lprect) İşaretçi oluşturucuya bağımsız değişken dönüştürme olmadan doğrudan depolanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin.h
 
-##  <a name="_u_rect__m_lprect"></a>  _U_RECT::m_lpRect
+## <a name="_u_rectm_lprect"></a><a name="_u_rect__m_lprect"></a>_U_RECT:m_lpRect
 
-Sınıf ya da kendi oluşturucular için genel geçirilen değeri içerir `LPRECT` veri üyesi.
+Sınıf, ortak `LPRECT` veri üyesi olarak oluşturucularından herhangi biri için geçirilen değeri tutar.
 
 ```
 LPRECT m_lpRect;
 ```
 
-##  <a name="_u_rect___u_rect"></a>  _U_RECT::_U_RECT
+## <a name="_u_rect_u_rect"></a><a name="_u_rect___u_rect"></a>_U_RECT::_U_RECT
 
-Adresini başvuru bağımsız değişkeni sınıfın tek veri üyesi içinde depolanan [m_lpRect](#_u_rect__m_lprect).
+Başvuru bağımsız değişkeninin adresi sınıfın tek veri üyesinde [depolanır, m_lpRect.](#_u_rect__m_lprect)
 
 ```
 _U_RECT(RECT& rc);
@@ -70,16 +70,16 @@ _U_RECT(LPRECT lpRect);
 
 ### <a name="parameters"></a>Parametreler
 
-*RC*<br/>
-A `RECT` başvuru.
+*Rc*<br/>
+Bir `RECT` referans.
 
-*lpRect*<br/>
-A `RECT` işaretçi.
+*Lprect*<br/>
+Bir `RECT` işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretçi oluşturucusu için bağımsız değişken doğrudan dönüştürme depolanır.
+İşaretçi oluşturucuya bağımsız değişken dönüştürme olmadan doğrudan depolanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

@@ -1,6 +1,6 @@
 ---
 title: SymbolName sınıfı
-description: C++ Build Insights SDK 'Sı symbolname sınıf başvurusu.
+description: C++ Build Insights SDK SymbolName sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: b5e9a9b22db99c099b9f7dc1813fb335358a83e8
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 1306fb43d6c2140a75b36c5f142532916cf26ae4
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333001"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81324348"
 ---
 # <a name="symbolname-class"></a>SymbolName sınıfı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`SymbolName` sınıfı [Matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. Bunu bir [SYMBOL_NAME](../event-table.md#symbol-name) olayına uyacak şekilde kullanın.
+Sınıf `SymbolName` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [SYMBOL_NAME](../event-table.md#symbol-name) bir olayı eşleştirmek için kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,18 +42,18 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[SimpleEvent](simple-event.md) temel sınıfından devralınan üyelerle birlikte `SymbolName` sınıfı aşağıdaki üyeleri içerir:
+[SimpleEvent](simple-event.md) taban sınıfından devralınan üyelerle `SymbolName` birlikte, sınıf aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[SymbolName](#symbol-name)
+[Sembol Adı](#symbol-name)
 
 ### <a name="functions"></a>İşlevler
 
 [Anahtar](#key)
-[adı](#name)
+[Adı](#name)
 
-## <a name="key"></a>Anahtar
+## <a name="key"></a><a name="key"></a>Anahtar
 
 ```cpp
 const unsigned long long& Key() const;
@@ -61,9 +61,9 @@ const unsigned long long& Key() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu simge tarafından temsil edilen tür için sayısal tanımlayıcı. Bu tanımlayıcı, bir derleyici ön ucu geçişi içinde benzersizdir.
+Bu sembolle temsil edilen tür için sayısal bir tanımlayıcı. Bu tanımlayıcı, derleyici ön uç geçişi nde benzersizdir.
 
-## <a name="name"></a>Ada
+## <a name="name"></a><a name="name"></a>Adı
 
 ```cpp
 const char* Name() const;
@@ -71,9 +71,9 @@ const char* Name() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-UTF-8 ile kodlanmış, simgesiyle temsil edilen türün adı.
+UTF-8'de kodlanan sembolle temsil edilen türün adı.
 
-## <a name="symbol-name"></a>SymbolName
+## <a name="symbolname"></a><a name="symbol-name"></a>Sembol Adı
 
 ```cpp
 SymbolName(const RawEvent& event);
@@ -81,7 +81,7 @@ SymbolName(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*olay*\
+*Olay*\
 [SYMBOL_NAME](../event-table.md#symbol-name) bir olay.
 
 ::: moniker-end

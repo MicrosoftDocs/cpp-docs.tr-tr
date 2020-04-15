@@ -1,5 +1,5 @@
 ---
-title: CComCachedTearOffObject sınıfı
+title: CComCachedTearOffObject Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComCachedTearOffObject
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - cache, ATL cached tear-off objects
 - CComCachedTearOffObject class
 ms.assetid: ae19507d-a1de-4dbc-a988-da9f75a50c95
-ms.openlocfilehash: d993a349d38342bda30a83dfdbe25577953799b3
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 43f914a52666788fc0bf394d9d14830b28f5adc7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497545"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81321036"
 ---
-# <a name="ccomcachedtearoffobject-class"></a>CComCachedTearOffObject sınıfı
+# <a name="ccomcachedtearoffobject-class"></a>CComCachedTearOffObject Sınıfı
 
-Bu sınıf, bir tear arabirimi için [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) uygular.
+Bu sınıf, yırtılma arabirimi için [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,47 +39,47 @@ public CComObjectRootEx<contained
 
 #### <a name="parameters"></a>Parametreler
 
-*içindedir*<br/>
-' Dan türetilmiş, ve yırt nesnenizin `CComTearOffObjectBase` olmasını istediğiniz arabirimlerden türeten kapalı sınıfınız.
+*Bulunan*<br/>
+Yırtılma sınıfınız, `CComTearOffObjectBase` türetilmiş ve yırtılma nesnenizin desteklenmesini istediğiniz arabirimler.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComCachedTearOffObject:: CComCachedTearOffObject](#ccomcachedtearoffobject)|Oluşturucu.|
-|[CComCachedTearOffObject:: ~ CComCachedTearOffObject](#dtor)|Yok edicisi.|
+|[CComCachedTearOffObject::CComCachedTearOffObject](#ccomcachedtearoffobject)|Oluşturucu.|
+|[CComCachedTearOffObject::~CComCachedTearOffObject](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComCachedTearOffObject:: AddRef](#addref)|Bir `CComCachedTearOffObject` nesne için başvuru sayısını artırır.|
-|[CComCachedTearOffObject:: Finalyapısı](#finalconstruct)|' İ çağırır (tear sınıfı ' yöntemi). `m_contained::FinalConstruct`|
-|[CComCachedTearOffObject:: FinalRelease](#finalrelease)|' İ çağırır (tear sınıfı ' yöntemi). `m_contained::FinalRelease`|
-|[CComCachedTearOffObject:: QueryInterface](#queryinterface)|Nesne için `IUnknown` bir işaretçi ya da (sınıf `contained`), yırt sınıfınıza veya istenen arabirime döner. `CComCachedTearOffObject`|
-|[CComCachedTearOffObject:: Release](#release)|Bir `CComCachedTearOffObject` nesnenin başvuru sayısını azaltır ve başvuru sayısı 0 ise bunu yok eder.|
+|[CComCachedTearOffObject::AddRef](#addref)|Bir `CComCachedTearOffObject` nesne için başvuru sayısını artırımı.|
+|[CComCachedTearOffObject::FinalConstruct](#finalconstruct)|(yırtılma sınıfı' yöntemini) `m_contained::FinalConstruct` çağırır.|
+|[CComCachedTearOffObject::FinalRelease](#finalrelease)|(yırtılma sınıfı' yöntemini) `m_contained::FinalRelease` çağırır.|
+|[CComCachedTearOffObject::QueryInterface](#queryinterface)|Bir işaretçiyi `IUnknown` `CComCachedTearOffObject` nesnenin nesnesine veya yırtılma sınıfınızdaki (sınıf) `contained`istenen arabirime döndürür.|
+|[CComCachedTearOffObject::Sürüm](#release)|Bir `CComCachedTearOffObject` nesne için başvuru sayısını eriter ve başvuru sayısı 0 ise onu yok eder.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComCachedTearOffObject:: m_contained](#m_contained)|Bir `CComContainedObject` nesne, yırt sınıfından (sınıf `contained`) türetilmiş bir nesne.|
+|[CComCachedTearOffObject::m_contained](#m_contained)|Yırtılma sınıfınızdan türetilen bir `CComContainedObject` `contained`nesne (sınıf).|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComCachedTearOffObject`bir tear arabirimi için [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) uygular. Bu sınıf `IUnknown`, sahip `CComTearOffObject` olan `CComCachedTearOffObject` öğesinden farklı, sahip nesnesinden `IUnknown` farklı olan ' den farklıdır (sahibi, onun oluşturulduğu nesnedir). `CComCachedTearOffObject`kendi başvuru sayısını `IUnknown` saklar ve başvuru sayısı sıfır olduğunda kendisini siler. Ancak, herhangi bir ayırma arabirimini sorgulayıp, sahip nesnesinin `IUnknown` başvuru sayısı artırılır.
+`CComCachedTearOffObject`yırtılma arabirimi için [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) uygular. Bu sınıf, `CComTearOffObject` sahibi `CComCachedTearOffObject` nesnenin `IUnknown`(sahibi için yırtılma `IUnknown` oluşturulduğu nesnedir) ayrı, kendi vardır farklıdır. `CComCachedTearOffObject`kendi referans sayısını korur `IUnknown` ve referans sayısı sıfır olduğunda kendini siler. Ancak, yırtılma arabirimlerinden herhangi birini sorgularsanız, sahibi nesnenin `IUnknown` başvuru sayısı artımlı olacaktır.
 
-Tear uygulayan `CComCachedTearOffObject` nesne zaten örneklenmiştir ve ayırma arabirimi tekrar için sorgulanırsa, aynı nesne yeniden kullanılır. `CComCachedTearOffObject` Buna karşılık, bir `CComTearOffObject` tarafından uygulanan bir yırt arabirimi, sahip nesnesi aracılığıyla için yeniden sorgulanırsa, başka `CComTearOffObject` bir örneği oluşturulur.
+Yırtılma yıkıntısını uygulayan `CComCachedTearOffObject` nesne zaten anında alınmışsa ve yırtılma arabirimi `CComCachedTearOffObject` yeniden sorgulanırsa, aynı nesne yeniden kullanılır. Buna karşılık, bir parçalama `CComTearOffObject` arabirimi tarafından uygulanan bir gözyaşı arabirimi `CComTearOffObject` yine sahibi nesne saracılığıyla sorgulanırsa, başka bir instantiated olacaktır.
 
-Sahip `FinalRelease` sınıfı için `Release` `IUnknown` önbelleğe alınmış öğesine uymalıdır ve çağırmalıdır, bu da başvuru sayısını azaltır. `CComCachedTearOffObject` Bu, çağrılıp `FinalRelease` silinmesine neden `CComCachedTearOffObject`olur.
+Sahip sınıfı, `FinalRelease` başvuru `Release` sayısını azalacak `IUnknown` `CComCachedTearOffObject`olan önbelleğe alınmış olan alete başvurmalı ve çağrıda bulunmalıdır. Bu, `CComCachedTearOffObject` `FinalRelease` çağrılmasına ve yırtılmayı silmesine neden olur.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
 `CComObjectRootBase`
 
-[CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)
+[Ccomobjectrootex](../../atl/reference/ccomobjectrootex-class.md)
 
 `IUnknown`
 
@@ -87,11 +87,11 @@ Sahip `FinalRelease` sınıfı için `Release` `IUnknown` önbelleğe alınmış
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcom. h
+**Başlık:** atlcom.h
 
-##  <a name="addref"></a>CComCachedTearOffObject:: AddRef
+## <a name="ccomcachedtearoffobjectaddref"></a><a name="addref"></a>CComCachedTearOffObject::AddRef
 
-`CComCachedTearOffObject` Nesnenin başvuru sayısını 1 ' i arttırır.
+Nesnenin `CComCachedTearOffObject` başvuru sayısını 1 ile karşılar.
 
 ```
 STDMETHOD_(ULONG, AddRef)();
@@ -101,7 +101,7 @@ STDMETHOD_(ULONG, AddRef)();
 
 Tanılama ve test için yararlı olabilecek bir değer.
 
-##  <a name="ccomcachedtearoffobject"></a>CComCachedTearOffObject:: CComCachedTearOffObject
+## <a name="ccomcachedtearoffobjectccomcachedtearoffobject"></a><a name="ccomcachedtearoffobject"></a>CComCachedTearOffObject::CComCachedTearOffObject
 
 Oluşturucu.
 
@@ -111,16 +111,16 @@ CComCachedTearOffObject(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*bakın*<br/>
-'ndaki `IUnknown` İşaretçisinin`CComCachedTearOffObject`işaretçisi.
+*Pv*<br/>
+[içinde] Işaretçi `IUnknown` için `CComCachedTearOffObject`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[M_contained](#m_contained)üyesini başlatır `CComContainedObject` .
+Üye, `CComContainedObject` [m_contained.](#m_contained)
 
-##  <a name="dtor"></a>CComCachedTearOffObject:: ~ CComCachedTearOffObject
+## <a name="ccomcachedtearoffobjectccomcachedtearoffobject"></a><a name="dtor"></a>CComCachedTearOffObject::~CComCachedTearOffObject
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 ~CComCachedTearOffObject();
@@ -128,11 +128,11 @@ Yok edicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan tüm kaynakları serbest bırakır ve [Sonlandıryayım](#finalrelease)çağırır.
+Ayrılan tüm kaynakları boşaltıyor ve [FinalRelease'i](#finalrelease)çağırıyor.
 
-##  <a name="finalconstruct"></a>CComCachedTearOffObject:: Finalyapısı
+## <a name="ccomcachedtearoffobjectfinalconstruct"></a><a name="finalconstruct"></a>CComCachedTearOffObject::FinalConstruct
 
-, `m_contained::FinalConstruct` Bir `CComContainedObject` `m_contained` < > nesnesioluşturmakiçin,`contained`Bu sınıf tarafından uygulanan arabirime erişmek için kullanılan çağrılar.
+Oluşturma `m_contained::FinalConstruct` `m_contained`çağrıları , `CComContainedObject` <  `contained` yırtılma sınıfınız tarafından uygulanan arabirime erişmek için kullanılan> nesne.
 
 ```
 HRESULT FinalConstruct();
@@ -142,17 +142,17 @@ HRESULT FinalConstruct();
 
 Standart bir HRESULT değeri.
 
-##  <a name="finalrelease"></a>CComCachedTearOffObject:: FinalRelease
+## <a name="ccomcachedtearoffobjectfinalrelease"></a><a name="finalrelease"></a>CComCachedTearOffObject::FinalRelease
 
-`m_contained::FinalRelease` `m_contained` >Nesnesini`CComContainedObject`ücretsiz olarak< çağırır. `contained`
+Özgüre `m_contained::FinalRelease` `m_contained`çağırır `CComContainedObject` <  `contained` ,> nesnesi.
 
 ```
 void FinalRelease();
 ```
 
-##  <a name="m_contained"></a>CComCachedTearOffObject:: m_contained
+## <a name="ccomcachedtearoffobjectm_contained"></a><a name="m_contained"></a>CComCachedTearOffObject::m_contained
 
-Tear sınıfından türetilmiş bir [Ccomkirinedobject](../../atl/reference/ccomcontainedobject-class.md) nesnesi.
+Yırtılma sınıfınızdan türetilen [bir CComContainedObject](../../atl/reference/ccomcontainedobject-class.md) nesnesi.
 
 ```
 CcomContainedObject <contained> m_contained;
@@ -160,14 +160,14 @@ CcomContainedObject <contained> m_contained;
 
 ### <a name="parameters"></a>Parametreler
 
-*içindedir*<br/>
-'ndaki ' Dan türetilmiş, ve yırt nesnenizin `CComTearOffObjectBase` olmasını istediğiniz arabirimlerden türeten kapalı sınıfınız.
+*Bulunan*<br/>
+[içinde] Yırtılma sınıfınız, `CComTearOffObjectBase` türetilmiş ve yırtılma nesnenizin desteklenmesini istediğiniz arabirimler.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Devralınan Yöntemler `m_contained` , `FinalConstruct`,, ve,,, ve,,,, ve `FinalRelease`' ı kullanarak `QueryInterface`, ayırma sınıfındaki ayırma arabirimine erişim için kullanılır.
+Devralınan `m_contained` yöntemler, önbelleğe alınmış yırtılma nesnesinin `QueryInterface`, `FinalConstruct`ve `FinalRelease`.
 
-##  <a name="queryinterface"></a>CComCachedTearOffObject:: QueryInterface
+## <a name="ccomcachedtearoffobjectqueryinterface"></a><a name="queryinterface"></a>CComCachedTearOffObject::QueryInterface
 
 İstenen arabirim için bir işaretçi alır.
 
@@ -177,11 +177,11 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*'si*<br/>
-'ndaki İstenen arabirimin GUID 'SI.
+*ııd*<br/>
+[içinde] İstenmekte olan arabirimin GUID'i.
 
-*ppvObject*<br/>
-dışı Arabirim bulunmazsa, *IID*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi veya ARABIRIM bulunamazsa null.
+*ppvNesne*<br/>
+[çıkış] Arabirim bulunamazsa *iid*veya NULL tarafından tanımlanan arabirim işaretçisine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -189,11 +189,11 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İstenen arabirim ise `IUnknown`, kendisine `IUnknown` bir işaretçi `CComCachedTearOffObject`döndürür ve başvuru sayısını artırır. Aksi takdirde, ' den `CComObjectRootEx`devralınan [InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) yöntemini kullanarak, çıkarma sınıfınızdan arabirim için sorgular.
+İstenen arabirim `IUnknown`ise, bir `CComCachedTearOffObject`işaretçiyi `IUnknown` 'nin kendi'sine döndürür ve başvuru sayısını nitonlarını genişletir. Aksi takdirde, [InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) yöntemini kullanarak yırtılma sınıfınızdaki arabirim sorguları `CComObjectRootEx`.
 
-##  <a name="release"></a>CComCachedTearOffObject:: Release
+## <a name="ccomcachedtearoffobjectrelease"></a><a name="release"></a>CComCachedTearOffObject::Sürüm
 
-Başvuru sayısını 1 ' den azaltır ve başvuru sayısı 0 ise `CComCachedTearOffObject` nesneyi siler.
+Başvuru sayısını 1 ile erteler ve başvuru sayısı 0 ise `CComCachedTearOffObject` nesneyi siler.
 
 ```
 STDMETHOD_(ULONG, Release)();
@@ -201,10 +201,10 @@ STDMETHOD_(ULONG, Release)();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hata ayıklama olmayan derlemelerde, her zaman 0 döndürür. Hata ayıklama yapılarında, tanılama veya test için yararlı olabilecek bir değer döndürür.
+Hata ayıklama yapılarında her zaman 0 döndürür. Hata ayıklama oluştururda, tanılama veya sınama için yararlı olabilecek bir değer verir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CComTearOffObject Sınıfı](../../atl/reference/ccomtearoffobject-class.md)<br/>
 [CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

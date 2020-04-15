@@ -1,6 +1,6 @@
 ---
-title: StartTracingSessionW
-description: C++ Build Insights SDK 'Sı StartTracingSessionW işlev başvurusu.
+title: Başlangıç OturumuW
+description: C++ Build Insights SDK StartTracingSessionW fonksiyon başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 072b02166f2841e6d210306ef75c9fc64fea9778
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: af67c3be50cb19ccbfb7fe286e5d61cd1d241bf8
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332651"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81323792"
 ---
-# <a name="starttracingsessionw"></a>StartTracingSessionW
+# <a name="starttracingsessionw"></a>Başlangıç OturumuW
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`StartTracingSessionW` işlevi bir izleme oturumu başlatır. Bu işlevi çağıran yürütülebilir dosyalar yönetici ayrıcalıklarına sahip olmalıdır.
+İşlev `StartTracingSessionW` bir izleme oturumu başlatır. Bu işlevi çağıran yürütülebilirlerin yönetici ayrıcalıkları olmalıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,14 +37,14 @@ enum RESULT_CODE StartTracingSessionW(
 
 ### <a name="parameters"></a>Parametreler
 
-*oturumadı*\
-Başlatılacak izleme oturumunun adı. [Stoptracingsessionw](stop-tracing-session-w.md)veya diğer durdurma izleme işlevini çağırırken aynı adı kullanın.
+*Oturumadı*\
+Başlayacak izleme oturumunun adı. [StopTracingSessionW](stop-tracing-session-w.md)veya başka bir durdurma izleme işlevini ararken aynı adı kullanın.
 
-*seçenekler*\
-[TRACING_SESSION_OPTIONS](../other-types/tracing-session-options-struct.md) nesnesine yönelik işaretçi. İzleme oturumu tarafından hangi olayların toplanması gerektiğini seçmek için bu nesneyi kullanın.
+*Seçenekler*\
+[TRACING_SESSION_OPTIONS](../other-types/tracing-session-options-struct.md) bir nesneye işaretçi. İzleme oturumu tarafından hangi olayların toplanması gerektiğini seçmek için bu nesneyi kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[RESULT_CODE](../other-types/result-code-enum.md) numaralandırmasından elde edilen sonuç kodu.
+[RESULT_CODE](../other-types/result-code-enum.md) enum bir sonuç kodu.
 
 ::: moniker-end

@@ -1,5 +1,5 @@
 ---
-title: Başvuru sayımı (ATL)
+title: Referans Sayma (ATL)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - AddRef method [C++], reference counting
@@ -8,31 +8,31 @@ helpviewer_keywords:
 - reference counts
 - references, counting
 ms.assetid: b1fd4514-6de6-429f-9e60-2777c0d07a3d
-ms.openlocfilehash: 565b74956280d4e80c41376ead4249e69980a80e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 095f0ad2ecc1e1a870077899d61a3c594f8cc95f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492229"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81321737"
 ---
-# <a name="reference-counting"></a>Başvuru sayımı
+# <a name="reference-counting"></a>Referans Sayma
 
-COM 'un kendisi, nesnenin artık kullanılmıyor olduğunu düşündüğü zaman bir nesneyi bellekten kaldırmayı otomatik olarak denemez. Bunun yerine, nesne programlayıcı kullanılmamış nesneyi kaldırmalıdır. Programcı, bir nesnenin bir başvuru sayısına göre kaldırılıp kaldırılamayacağını belirler.
+COM kendisi, nesnenin artık kullanılmadığını düşündüğünde bir nesneyi bellekten otomatik olarak kaldırmaya çalışmaz. Bunun yerine, nesne programcısı kullanılmayan nesneyi kaldırmalıdır. Programcı, bir nesnenin başvuru sayısına göre kaldırılıp kaldırılamayacağına karar vetır.
 
-COM, bir `IUnknown` nesnedeki arabirimlerin başvuru sayısını yönetmek için, [AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) ve [Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release)yöntemlerini kullanır. Bu yöntemleri çağırmak için genel kurallar şunlardır:
+`IUnknown` COM, bir nesneüzerindeki arabirimlerin başvuru sayısını yönetmek için [AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) ve [Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release)yöntemlerini kullanır. Bu yöntemleri çağırmak için genel kurallar şunlardır:
 
-- Bir istemci bir arabirim işaretçisi `AddRef` aldığında arabirim üzerinde çağrılmalıdır.
+- Bir istemci bir arabirim `AddRef` işaretçisi aldığında, arabirimde çağrılmalıdır.
 
-- İstemci, arabirim işaretçisini kullanmayı bitirdiğinde, çağrısı `Release`gerekir.
+- İstemci arabirim işaretçisini kullanmayı bitirdiğinde, 'yi aramalı. `Release`
 
-Basit bir uygulamada her `AddRef` bir çağrı artar ve her `Release` bir çağrı nesnenin içindeki bir sayaç değişkenini azaltır. Sayı sıfıra döndüğünde, arabirimin artık kullanıcıları yoktur ve kendisini bellekten kaldırmak ücretsizdir.
+Basit bir uygulamada, `AddRef` her çağrı artışları `Release` ve her çağrı nesneiçinde bir sayaç değişkeni kararver. Sayım sıfıra döndüğünde, arabirimartık kullanıcı içermez ve kendisini bellekten kaldırmakta özgürdür.
 
-Başvuru sayımı, nesneye yapılan her başvurunun (tek bir arabirime değil) sayılmasını sağlamak için de uygulanabilir. Bu durumda, her `AddRef` ve `Release` çağrısı nesnesi üzerinde merkezi bir uygulamaya temsilci atar ve `Release` başvuru sayısı sıfıra ulaştığında tüm nesneyi serbest bırakır.
+Başvuru sayımı, nesneye yapılan her başvurunun (tek bir arabirime değil) sayılması için de uygulanabilir. Bu durumda, `AddRef` her `Release` ve nesne üzerinde merkezi bir uygulamaya `Release` delegeleri çağırın ve başvuru sayısı sıfıra ulaştığında tüm nesneyi serbest.
 
 > [!NOTE]
->  Türetilmiş bir `CComObject`nesne **New** işleci kullanılarak oluşturulduğunda, başvuru sayısı 0 ' dır. Bu nedenle, `CComObject`ile türetilmiş `AddRef` nesne başarıyla oluşturulduktan sonra bir çağrısı yapılmalıdır.
+> Yeni `CComObject` **işleç** kullanılarak türetilmiş bir nesne oluşturulduğunda, başvuru sayısı 0'dır. Bu nedenle, `AddRef` başarılı bir şekilde `CComObject`türetilen nesne oluşturulduktan sonra bir çağrı yapılmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[COM’a Giriş](../atl/introduction-to-com.md)<br/>
-[Başvuru sayımı aracılığıyla nesne ömrünü yönetme](/windows/win32/com/managing-object-lifetimes-through-reference-counting)
+[COM'a Giriş](../atl/introduction-to-com.md)<br/>
+[Başvuru Sayımı yoluyla Nesne Yaşam Ömürlerini Yönetme](/windows/win32/com/managing-object-lifetimes-through-reference-counting)

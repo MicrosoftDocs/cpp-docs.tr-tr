@@ -1,5 +1,5 @@
 ---
-title: CA2AEX sınıfı
+title: CA2AEX Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CA2AEX
@@ -10,19 +10,19 @@ f1_keywords:
 helpviewer_keywords:
 - CA2AEX class
 ms.assetid: 57dc65df-d9cf-4a84-99d3-6e031dde3664
-ms.openlocfilehash: 712e663ab58e2c9de4e2f25090b84b35d0bced71
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4f8b9f91e9bc499523fe3484bc76325e2efb8140
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62247644"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81319176"
 ---
-# <a name="ca2aex-class"></a>CA2AEX sınıfı
+# <a name="ca2aex-class"></a>CA2AEX Sınıfı
 
-Bu sınıf, dize dönüşüm makroları CA2TEX ve CT2AEX ve typedef CA2A tarafından kullanılır.
+Bu sınıf dize dönüştürme makroları CA2TEX ve CT2AEX ve typedef CA2A tarafından kullanılır.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,61 +34,61 @@ class CA2AEX
 #### <a name="parameters"></a>Parametreler
 
 *t_nBufferLength*<br/>
-Çeviri işlemde kullanılan arabellek boyutu. Varsayılan uzunluk 128 bayt'tır.
+Çeviri işleminde kullanılan arabelleğe boyutu. Varsayılan uzunluk 128 bayttır.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CA2AEX::CA2AEX](#ca2aex)|Oluşturucu.|
 |[CA2AEX::~CA2AEX](#dtor)|Yıkıcı.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CA2AEX::operator LPSTR](#operator_lpstr)|Dönüştürme işleci.|
+|[CA2AEX::operatör LPSTR](#operator_lpstr)|Dönüşüm işleci.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CA2AEX::m_psz](#m_psz)|Kaynak dizesi depolar veri üyesi.|
-|[CA2AEX::m_szBuffer](#m_szbuffer)|Dönüştürülmüş dize depolamak için kullanılan statik arabelleği.|
+|[CA2AEX::m_psz](#m_psz)|Kaynak dizesini depolayan veri üyesi.|
+|[CA2AEX::m_szBuffer](#m_szbuffer)|Dönüştürülmüş dizeyi depolamak için kullanılan statik arabellek.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ek işlevler gerekmiyorsa, kendi kodunuzda CA2TEX, CT2AEX veya CA2A kullanın.
+İlave işlevsellik gerekmedikçe, kendi kodunuzda CA2TEX, CT2AEX veya CA2A kullanın.
 
-Bu sınıf, dönüştürmenin sonucu depolamak için kullanılan sabit boyutlu bir statik arabellek içerir. Sonucu statik arabelleğe sığamayacak kadar büyük olursa, sınıfı kullanarak bellek ayırır **malloc**, nesne kapsam dışına çıktığında bellek boşaltma. Bu, metin dönüşüm makroları önceki sürümlerinde ATL, bu sınıf Döngülerde güvenlidir ve stack overflow olmaz sağlar.
+Bu sınıf, dönüştürme sonucunu depolamak için kullanılan sabit boyutlu statik arabellek içerir. Sonuç statik arabelleğe sığmayacak kadar büyükse, sınıf **malloc**kullanarak belleği ayırır ve nesne kapsam dışına çıktığında belleği serbest eder. Bu, ATL'nin önceki sürümlerinde bulunan metin dönüştürme makrolarının aksine, bu sınıfın döngülerde kullanımının güvenli olmasını ve yığını nakışlamamasını sağlar.
 
-Sınıfı başarısız olur ve yığın bellek çalışırsa, çağrı `AtlThrow` E_OUTOFMEMORY bağımsız.
+Sınıf yığınüzerinde bellek ayırmaya çalışır ve başarısız olursa, `AtlThrow` E_OUTOFMEMORY bir argüman ile çağırır.
 
-Varsayılan olarak, geçerli iş parçacığının ANSI kod sayfasına dönüştürme için ATL dönüştürme sınıfları ve makroları kullanın.
+Varsayılan olarak, ATL dönüştürme sınıfları ve makrolar dönüşüm için geçerli iş parçacığının ANSI kod sayfasını kullanır.
 
-Aşağıdaki makroları bu sınıfa bağlıdır:
+Aşağıdaki makrolar bu sınıfa dayanır:
 
 - CA2TEX
 
 - CT2AEX
 
-Aşağıdaki tür tanımı bu sınıfa bağlıdır:
+Aşağıdaki typedef bu sınıfa dayanır:
 
 - CA2A
 
-Bu metin dönüşüm makroları bir tartışma için bkz [ATL ve MFC dize dönüşüm makroları](string-conversion-macros.md).
+Bu metin dönüştürme makrolarının tartışılması için [ATL ve MFC String Dönüşüm Makroları'na](string-conversion-macros.md)bakın.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [ATL ve MFC dize dönüşüm makroları](string-conversion-macros.md) Bu dize dönüştürme makrolarını kullanma örneği için.
+Bu dize dönüştürme makrolarını kullanma örneği için [ATL ve MFC String Dönüşüm Makrolarına](string-conversion-macros.md) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlconv.h
+**Üstbilgi:** atlconv.h
 
-##  <a name="ca2aex"></a>  CA2AEX::CA2AEX
+## <a name="ca2aexca2aex"></a><a name="ca2aex"></a>CA2AEX::CA2AEX
 
 Oluşturucu.
 
@@ -99,17 +99,17 @@ CA2AEX(LPCSTR psz) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*psz*<br/>
+*Psz*<br/>
 Dönüştürülecek metin dizesi.
 
 *nCodePage*<br/>
-Bu sınıftaki kullanılmayan.
+Bu sınıfta kullanılmayan.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çeviri için gerekli arabellek oluşturur.
+Çeviri için gerekli arabelleği oluşturur.
 
-##  <a name="dtor"></a>  CA2AEX::~CA2AEX
+## <a name="ca2aexca2aex"></a><a name="dtor"></a>CA2AEX::~CA2AEX
 
 Yıkıcı.
 
@@ -119,27 +119,27 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılmış ara belleğini serbest bırakır.
+Ayrılan arabelleği serbest bırakın.
 
-##  <a name="m_psz"></a>  CA2AEX::m_psz
+## <a name="ca2aexm_psz"></a><a name="m_psz"></a>CA2AEX::m_psz
 
-Kaynak dizesi depolar veri üyesi.
+Kaynak dizesini depolayan veri üyesi.
 
 ```
 LPSTR m_psz;
 ```
 
-##  <a name="m_szbuffer"></a>  CA2AEX::m_szBuffer
+## <a name="ca2aexm_szbuffer"></a><a name="m_szbuffer"></a>CA2AEX::m_szBuffer
 
-Dönüştürülmüş dize depolamak için kullanılan statik arabelleği.
+Dönüştürülmüş dizeyi depolamak için kullanılan statik arabellek.
 
 ```
 char m_szBuffer[ t_nBufferLength];
 ```
 
-##  <a name="operator_lpstr"></a>  CA2AEX::operator LPSTR
+## <a name="ca2aexoperator-lpstr"></a><a name="operator_lpstr"></a>CA2AEX::operatör LPSTR
 
-Dönüştürme işleci.
+Dönüşüm işleci.
 
 ```
 operator LPSTR() const throw();
@@ -147,7 +147,7 @@ operator LPSTR() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Metin dizesi LPSTR türü olarak döndürür.
+Metin dizesini LPSTR türü olarak döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -156,4 +156,4 @@ Metin dizesi LPSTR türü olarak döndürür.
 [CW2AEX Sınıfı](../../atl/reference/cw2aex-class.md)<br/>
 [CW2CWEX Sınıfı](../../atl/reference/cw2cwex-class.md)<br/>
 [CW2WEX Sınıfı](../../atl/reference/cw2wex-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

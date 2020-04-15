@@ -1,6 +1,6 @@
 ---
-title: Stopandçözümleyiciler Etracingsessionw
-description: C++ BUILD Insights SDK Stopandçözümleyicileri Etracingsessionw işlev başvurusu.
+title: StopAndAnalyzeTracingSessionW
+description: C++ Build Insights SDK StopAndAnalyzeTracingSessionW fonksiyon başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: ec36162efcd2bfcf17cb07a997a7ff170338d3d2
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 2f5f232c3e58c66bc36099d954d97a8f945187ef
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332672"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81323711"
 ---
-# <a name="stopandanalyzetracingsessionw"></a>Stopandçözümleyiciler Etracingsessionw
+# <a name="stopandanalyzetracingsessionw"></a>StopAndAnalyzeTracingSessionW
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`StopAndAnalyzeTracingSessionW` işlevi devam eden bir izleme oturumunu durduruyor ve elde edilen izlemeyi geçici bir dosyaya kaydeder. Daha sonra bir analiz oturumu, giriş olarak geçici dosyayı kullanmaya hemen başlatılır. Bu işlevi çağıran yürütülebilir dosyalar yönetici ayrıcalıklarına sahip olmalıdır.
+İşlev `StopAndAnalyzeTracingSessionW` devam eden bir izleme oturumunu durdurur ve ortaya çıkan izlemeyi geçici bir dosyaya kaydeder. Bir analiz oturumu sonra hemen bir giriş olarak geçici dosya kullanmaya başlar. Bu işlevi çağıran yürütülebilirlerin yönetici ayrıcalıkları olmalıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,17 +38,17 @@ enum RESULT_CODE StopAndAnalyzeTracingSessionW(
 
 ### <a name="parameters"></a>Parametreler
 
-*oturumadı*\
-Durdurulacak izleme oturumunun adı. [Starttracingsession](start-tracing-session.md), [starttracingsessiona](start-tracing-session-a.md)veya [starttracingsessionw](start-tracing-session-w.md)öğesine geçirilen oturum adını kullanın.
+*Oturumadı*\
+Durdurmak için izleme oturumunun adı. [StartTracingSession , StartTracingSessionA](start-tracing-session.md)veya [StartTracingSessionW'e](start-tracing-session-w.md)geçen oturum adı ile aynı oturum adını kullanın. [StartTracingSessionA](start-tracing-session-a.md)
 
-*istatistikler*\
-[TRACING_SESSION_STATISTICS](../other-types/tracing-session-statistics-struct.md) nesnesine yönelik işaretçi. `StopAndAnalyzeTracingSessionW`, döndürmeden önce bu nesnedeki izleme toplama istatistiklerini yazar.
+*Istatistik*\
+[TRACING_SESSION_STATISTICS](../other-types/tracing-session-statistics-struct.md) bir nesneye işaretçi. `StopAndAnalyzeTracingSessionW`dönmeden önce bu nesneye izleme toplama istatistikleri yazar.
 
-*Analysisdescriptor*\
-[ANALYSIS_DESCRIPTOR](../other-types/analysis-descriptor-struct.md) nesnesine yönelik işaretçi. `StopAndAnalyzeTracingSessionW`tarafından başlatılan analiz oturumunu yapılandırmak için bu nesneyi kullanın.
+*analizAçıklayıcı*\
+[ANALYSIS_DESCRIPTOR](../other-types/analysis-descriptor-struct.md) bir nesneye işaretçi. 'tarafından başlatılan `StopAndAnalyzeTracingSessionW`çözümleme oturumunu yapılandırmak için bu nesneyi kullanın
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[RESULT_CODE](../other-types/result-code-enum.md) numaralandırmasından elde edilen sonuç kodu.
+[RESULT_CODE](../other-types/result-code-enum.md) enum bir sonuç kodu.
 
 ::: moniker-end

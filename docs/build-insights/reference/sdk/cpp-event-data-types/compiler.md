@@ -1,6 +1,6 @@
 ---
 title: Derleyici sınıfı
-description: C++ BUILD Insights SDK derleyicisi sınıf başvurusu.
+description: C++ Build Insights SDK Derleyici sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: a63a0bad1ab6063d5986fec77b5135f500ded1ce
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 9b0a2622c4bc0bc19d7222977fe24c060ee8709e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333463"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81325026"
 ---
 # <a name="compiler-class"></a>Derleyici sınıfı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`Compiler` sınıfı [Matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. Bir [derleyici](../event-table.md#compiler) olayını eşleştirmek için kullanın.
+Sınıf `Compiler` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [DerLEYICI](../event-table.md#compiler) olayıyla eşleştirmek için kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-Devralınan üyelerin, [çağırma](invocation.md) temel sınıfından birlikte `Compiler` sınıfı aşağıdaki üyeleri içerir:
+[Çağrı](invocation.md) taban sınıfından devralınan üyelerle birlikte, `Compiler` sınıf aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
 [Derleyici](#compiler)
 
-## <a name="compiler"></a>Derleyici
+## <a name="compiler"></a><a name="compiler"></a>Derleyici
 
 ```cpp
 Compiler(const RawEvent& event);
@@ -53,7 +53,7 @@ Compiler(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*olay*\
-Bir [derleyici](../event-table.md#compiler) olayı.
+*Olay*\
+[Derleyici](../event-table.md#compiler) olayı.
 
 ::: moniker-end

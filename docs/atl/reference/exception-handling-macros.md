@@ -1,5 +1,5 @@
 ---
-title: Özel durum işleme makroları
+title: Özel Durum İşleme Makroları
 ms.date: 11/04/2016
 f1_keywords:
 - atldef/ATL::_ATLCATCH
@@ -9,30 +9,30 @@ helpviewer_keywords:
 - exception handling, macros
 - C++ exception handling, macros
 ms.assetid: a8385d34-3fb0-4006-a42a-de045cacf0f4
-ms.openlocfilehash: 8afb2019e38f7548467e85d9a2c1c12c538cf744
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2beffbbed0efee799005190bd7fd071a2087e4d9
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62276269"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330080"
 ---
-# <a name="exception-handling-macros"></a>Özel durum işleme makroları
+# <a name="exception-handling-macros"></a>Özel Durum İşleme Makroları
 
-Bu makrolar, özel durum işleme için destek sağlar.
+Bu makrolar özel durum işleme desteği sağlar.
 
 |||
 |-|-|
-|[_ATLCATCH](#_atlcatch)|Deyim ilişkili oluşan hataları işleyecek `_ATLTRY`.|
-|[_ATLCATCHALL](#_atlcatchall)|Deyim ilişkili oluşan hataları işleyecek `_ATLTRY`.|
-|[_ATLTRY](#_atltry)|Burada bir hata büyük olasılıkla oluşabilir bir korumalı kod bölümünde işaretler.|
+|[_ATLCATCH](#_atlcatch)|Ekstre(ler) ilişkili `_ATLTRY`de oluşan hataları işlemek için .|
+|[_ATLCATCHALL](#_atlcatchall)|Ekstre(ler) ilişkili `_ATLTRY`de oluşan hataları işlemek için .|
+|[_ATLTRY](#_atltry)|Bir hatanın oluşabileceği korunan bir kod bölümünü işaretler.|
 
 ## <a name="requirements"></a>Gereksinimler:
 
-**Başlık:** atldef.h
+**Üstbilgi:** atldef.h
 
-##  <a name="_atlcatch"></a>  _ATLCATCH
+## <a name="_atlcatch"></a><a name="_atlcatch"></a>_ATLCATCH
 
-Deyim ilişkili oluşan hataları işleyecek `_ATLTRY`.
+Ekstre(ler) ilişkili `_ATLTRY`de oluşan hataları işlemek için .
 
 ```
 _ATLCATCH(e)
@@ -40,16 +40,16 @@ _ATLCATCH(e)
 
 ### <a name="parameters"></a>Parametreler
 
-*e*<br/>
-Yakalamak için özel durum.
+*E*<br/>
+Yakalamanın istisnası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle birlikte kullanılan `_ATLTRY`. C++ için çözümler [(CAtlException e) catch](../../cpp/try-throw-and-catch-statements-cpp.md) C++ özel durumlarını belirli bir tür işlemek için.
+`_ATLTRY`ile birlikte kullanılır. Belirli bir C++ özel durum türünü işlemek için C++ [catch(CAtlException e)](../../cpp/try-throw-and-catch-statements-cpp.md) giderir.
 
-##  <a name="_atlcatchall"></a>  _ATLCATCHALL
+## <a name="_atlcatchall"></a><a name="_atlcatchall"></a>_ATLCATCHALL
 
-Deyim ilişkili oluşan hataları işleyecek `_ATLTRY`.
+Ekstre(ler) ilişkili `_ATLTRY`de oluşan hataları işlemek için .
 
 ```
 _ATLCATCHALL
@@ -57,11 +57,11 @@ _ATLCATCHALL
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle birlikte kullanılan `_ATLTRY`. C++ için çözümler [gt;catch(...) ](../../cpp/try-throw-and-catch-statements-cpp.md) türlü C++ özel durumlarını işlemek için.
+`_ATLTRY`ile birlikte kullanılır. C++ [catch(...)](../../cpp/try-throw-and-catch-statements-cpp.md) için tüm C++ özel durumlarını işlemek için çözümler.
 
-##  <a name="_atltry"></a>  _ATLTRY
+## <a name="_atltry"></a><a name="_atltry"></a>_ATLTRY
 
-Burada bir hata büyük olasılıkla oluşabilir bir korumalı kod bölümünde işaretler.
+Bir hatanın oluşabileceği korunan bir kod bölümünü işaretler.
 
 ```
 _ATLTRY
@@ -69,8 +69,8 @@ _ATLTRY
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle birlikte kullanılan [_ATLCATCH](#_atlcatch) veya [_ATLCATCHALL](#_atlcatchall). C++ sembole çözümler [deneyin](../../cpp/try-throw-and-catch-statements-cpp.md).
+[_ATLCATCH](#_atlcatch) veya [_ATLCATCHALL](#_atlcatchall)ile birlikte kullanılır. C++ simgesine [gider.](../../cpp/try-throw-and-catch-statements-cpp.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları](../../atl/reference/atl-macros.md)
+[Makrolar](../../atl/reference/atl-macros.md)

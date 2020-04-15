@@ -1,6 +1,6 @@
 ---
 title: Çözümleme
-description: C++ Build Insights SDK 'sı Işlev başvurusunu çözümle.
+description: C++ Build Insights SDK Analiz fonksiyonu başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 49161641d1cff1c64261d95bb2caace2f802543a
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 08b3643270cc785b3fbea36720d192b4a1473104
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332868"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81324104"
 ---
 # <a name="analyze"></a>Çözümleme
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`Analyze` işlevi, bir C++ DERLEMEYI izlerken MSVC 'ten alınan bir Windows Için olay Izleme (ETW) izlemesi çözümlemek için kullanılır. ETW izlemesinde olaylar, çağıran tarafından belirtilen bir çözümleyici grubuna sırayla iletilir. Bu işlev, olay akışını bir satırda birden çok kez çözümleyici grubuna iletmeyi sağlayan çoklu geçiş analizlerini destekler.
+İşlev, `Analyze` C++ yapısını izlerken MSVC'den alınan Windows (ETW) için Olay İzleme çözümlemesi için kullanılır. ETW izlemedeki olaylar, arayan tarafından sağlanan bir çözümleyici grubuna sırayla iletilir. Bu işlev, olay akışının çözümleyici grubuna art arda birden çok kez iletilmesine olanak tanıyan çok geçişli analizleri destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,20 +45,20 @@ RESULT_CODE Analyze(
 
 ### <a name="parameters"></a>Parametreler
 
-*TAnalyzerGroupMembers*\
+*TAnalyzerGroupÜyeleri*\
 Bu parametre her zaman çıkarılır.
 
-*ınputlogfile*\
-Olaylarını okumak istediğiniz giriş ETW izlemesi.
+*inputLogFile*\
+Olayları okumak istediğiniz giriş ETW izi.
 
-*Numberofgeçişleri*\
-Giriş izlemede çalıştırılacak analiz geçişi sayısı. İzleme, her analiz geçişi için belirtilen çözümleyici grubundan bir kez geçirilir.
+*numberOfPasses*\
+Giriş izleme üzerinde çalıştırmak için çözümleme geçer sayısı. İz, analiz başına bir kez sağlanan analizör grubundan geçirilir.
 
-*analiz Zergrubu*\
-Analiz için kullanılan çözümleyici grubu. Bir çözümleyici grubu oluşturmak için [Makestaticanalizzergroup](make-static-analyzer-group.md) öğesini çağırın. [Makedynamicanalizzergroup](make-dynamic-analyzer-group.md)'tan elde edilen dinamik bir çözümleyici grubunu kullanmak için, önce adresini `MakeStaticAnalyzerGroup`adresine geçirerek bir statik çözümleyici grubu içinde kapsülleyebilirsiniz.
+*analyzerGroup*\
+Analiz için kullanılan analizci grubu. Bir çözümleyici grubu oluşturmak için [MakeStaticAnalyzerGroup'u](make-static-analyzer-group.md) arayın. [MakeDynamicAnalyzerGroup'tan](make-dynamic-analyzer-group.md)elde edilen dinamik bir analizör grubunu kullanmak için, önce adresini statik `MakeStaticAnalyzerGroup`bir çözümleyici grubuna ileterek kapsülle.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[RESULT_CODE](../other-types/result-code-enum.md) numaralandırmasından elde edilen sonuç kodu.
+[RESULT_CODE](../other-types/result-code-enum.md) enum bir sonuç kodu.
 
 ::: moniker-end

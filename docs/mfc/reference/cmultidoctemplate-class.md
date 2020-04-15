@@ -1,5 +1,5 @@
 ---
-title: CMultiDocTemplate sınıfı
+title: CMultidocTemplate Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMultiDocTemplate
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMultiDocTemplate [MFC], CMultiDocTemplate
 ms.assetid: 5b8aa328-e461-41d0-b388-00594535e119
-ms.openlocfilehash: 5fefe91fa2067831c0263146ff3b2cd143b9c647
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b3f239b05b1cf7661929333e2d616acce6bedb0
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366946"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81319737"
 ---
-# <a name="cmultidoctemplate-class"></a>CMultiDocTemplate sınıfı
+# <a name="cmultidoctemplate-class"></a>CMultidocTemplate Sınıfı
 
-Çok Belgeli Arabirim (MDI) uygulayan bir belge şablonu tanımlar.
+Birden çok belge arabirimini (MDI) uygulayan bir belge şablonu tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,47 +29,47 @@ class CMultiDocTemplate : public CDocTemplate
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMultiDocTemplate::CMultiDocTemplate](#cmultidoctemplate)|Oluşturur bir `CMultiDocTemplate` nesne.|
+|[CMultidocTemplate::cmultidoctemplate](#cmultidoctemplate)|Bir `CMultiDocTemplate` nesne inşa eder.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir MDI uygulaması ana çerçeve penceresinin her biri bir belgeyi görüntüler kullanıcı sıfır veya daha fazla belge çerçeve pencereleri açabilirsiniz bir çalışma alanı olarak kullanır. MDI daha ayrıntılı bir açıklaması için bkz. *yazılım tasarımı için Windows arabirimi yönergelerine*.
+MDI uygulaması, ana çerçeve penceresini, kullanıcının her biri bir belgeyi görüntüleyen sıfır veya daha fazla belge çerçeve penceresini açabileceği bir çalışma alanı olarak kullanır. MDI'nin daha ayrıntılı bir açıklaması *için, Yazılım Tasarımı için Windows Arabirim Yönergeleri'ne*bakın.
 
-Üç tür sınıflar arasındaki ilişkileri bir belge şablonu tanımlar:
+Belge şablonu, üç sınıf türü arasındaki ilişkileri tanımlar:
 
-- Öğesinden türetilen bir belge sınıfı [CDocument](../../mfc/reference/cdocument-class.md).
+- [CDocument'den](../../mfc/reference/cdocument-class.md)türediğiniz bir belge sınıfı.
 
-- Yukarıda listelenen belge sınıfı verileri görüntüleyen bir görünüm sınıfı. Bu sınıftan türetilip [CView](../../mfc/reference/cview-class.md), `CScrollView`, `CFormView`, veya `CEditView`. (Ayrıca `CEditView` doğrudan.)
+- Yukarıda listelenen belge sınıfından verileri görüntüleyen bir görünüm sınıfı. Bu sınıfı [CView'dan](../../mfc/reference/cview-class.md) `CScrollView` `CFormView`türetebilirsiniz, `CEditView`, veya . (Ayrıca doğrudan `CEditView` kullanabilirsiniz.)
 
-- Görünüm içeren bir çerçeve penceresi sınıfı. Bir MDI belge şablonu için bu sınıftan türetilen `CMDIChildWnd`, ya da belge çerçeve pencereleri davranışını özelleştirmek gerekmiyorsa, kullanabileceğiniz [Cmdıchildwnd](../../mfc/reference/cmdichildwnd-class.md) kendi sınıf türetme olmadan doğrudan.
+- Görünümü içeren bir çerçeve penceresi sınıfı. Bir MDI belge şablonu için, bu `CMDIChildWnd`sınıfı belge çerçevesi pencerelerinin davranışını özelleştirmeniz gerekmiyorsa, kendi sınıfınızı oluşturmadan doğrudan [CMDIChildWnd'den](../../mfc/reference/cmdichildwnd-class.md) türetebilirsiniz.
 
-Bir MDI uygulaması birden fazla belge türünü destekleyebilir ve aynı anda farklı türde açık olabilir. Uygulamanızın desteklediği her bir belge türü için bir belge şablonu vardır. MDI uygulamanıza elektronik hem metin belgeleri destekliyorsa, örneğin, uygulama iki içeren `CMultiDocTemplate` nesneleri.
+Bir MDI uygulaması birden fazla belge türünü destekleyebilir ve farklı türdeki belgeler aynı anda açılabilir. Uygulamanızda desteklediği her belge türü için bir belge şablonu vardır. Örneğin, MDI uygulamanız hem elektronik tabloları hem de metin `CMultiDocTemplate` belgelerini destekliyorsa, uygulamanın iki nesnesi vardır.
 
-Kullanıcı yeni bir belge oluşturduğunda, uygulamanın belge şablonlarını kullanır. Uygulama birden fazla belge türünü destekliyorsa, framework belge şablonlarından desteklenen belge türlerinin adlarını alır ve bunları bir listede yeni dosya iletişim kutusu görüntüler. Kullanıcı bir belge türü seçtikten sonra uygulama belge sınıf nesnesi, bir çerçeve pencere nesnesi ve bir görünüm nesnesi oluşturur ve bunları birbirine ekler.
+Kullanıcı yeni bir belge oluşturduğunda uygulama belge şablonu(lar)ı kullanır. Uygulama birden fazla belge türünü destekliyorsa, çerçeve desteklenen belge türlerinin adlarını belge şablonlarından alır ve bunları Yeni Dosya iletişim kutusundaki bir listede görüntüler. Kullanıcı bir belge türünü seçtikten sonra, uygulama bir belge sınıfı nesnesi, bir çerçeve penceresi nesnesi ve bir görünüm nesnesi oluşturur ve bunları birbirine bağlar.
 
-Herhangi bir üye işlevlerini çağırmaya gerek kalmayacak `CMultiDocTemplate` Oluşturucu dışında. Framework tutamaçları `CMultiDocTemplate` dahili olarak nesneleri.
+Oluşturucu `CMultiDocTemplate` dışında herhangi bir üye işlevleri çağırmak gerekmez. Çerçeve `CMultiDocTemplate` nesneleri dahili olarak işler.
 
-Daha fazla bilgi için `CMultiDocTemplate`, bkz: [belge şablonları ve belge/görünüm oluşturma işlemi](../../mfc/document-templates-and-the-document-view-creation-process.md).
+Daha fazla `CMultiDocTemplate`bilgi için [Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi'ne](../../mfc/document-templates-and-the-document-view-creation-process.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CDocTemplate](../../mfc/reference/cdoctemplate-class.md)
+[Cdoctemplate](../../mfc/reference/cdoctemplate-class.md)
 
 `CMultiDocTemplate`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** afxwin.h
 
-##  <a name="cmultidoctemplate"></a>  CMultiDocTemplate::CMultiDocTemplate
+## <a name="cmultidoctemplatecmultidoctemplate"></a><a name="cmultidoctemplate"></a>CMultidocTemplate::cmultidoctemplate
 
-Oluşturur bir `CMultiDocTemplate` nesne.
+Bir `CMultiDocTemplate` nesne inşa eder.
 
 ```
 CMultiDocTemplate(
@@ -81,10 +81,10 @@ CMultiDocTemplate(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDResource*<br/>
-Belge türü ile kullanılan kaynakları Kimliğini belirtir. Bu menü, simge, Hızlandırıcı tablosu ve dize kaynakları içerebilir.
+*nIDKaynak*<br/>
+Belge türüyle birlikte kullanılan kaynakların kimliğini belirtir. Bu menü, simge, hızlandırıcı tablo ve dize kaynaklarını içerebilir.
 
-'\N' karakteriyle ayrılmış en fazla yedi alt dizeler dize kaynağını oluşur ('\n' karakteri bir alt dizesi değilse, bir yer tutucu gereklidir; ancak, sonunda '\n' karakterler gerekli değildir) Bu alt dizeleri belge türü açıklar. Alt dizeler hakkında daha fazla bilgi için bkz: [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). Bu dize kaynağı uygulama kaynak dosyası bulunamadı. Örneğin:
+Dize kaynağı ,'\n' karakteriyle ayrılmış en fazla yedi alt dizeden oluşur (bir alt dize dahil değilse yer tutucu olarak '\n' karakteri gereklidir; ancak,'\n' karakterleri izleyerek gerekli değildir); bu alt dizeleri belge türünü açıklar. Alt dizeleri hakkında bilgi için [Bkz. CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). Bu dize kaynağı, uygulamanın kaynak dosyasında bulunur. Örneğin:
 
 ```RC
 // MYCALC.RC
@@ -94,28 +94,28 @@ BEGIN
 END
 ```
 
-Unutmayın; dize '\n' karakteri ile başlar. ilk alt dizeyi MDI uygulamaları için kullanılmaz ve bu nedenle dahil olmadığından budur. Dize Düzenleyicisi'ni kullanarak bu dizeni düzenleyebilirsiniz; Tüm dize tek bir giriş dizesini Düzenleyicisi'nde, olarak değil yedi ayrı girişleri olarak görünür.
+Dize '\n' karakteriyle başladığını unutmayın; bunun nedeni, ilk alt dizeMin MDI uygulamaları için kullanılmaması ve bu nedenle dahil olmamasıdır. Bu dizeyi dize düzenleyicisini kullanarak edebilirsiniz; dize tüm dizeleri, yedi ayrı girişleri olarak değil, String Düzenleyicisi tek bir giriş olarak görünür.
 
-Bu kaynak türleri hakkında daha fazla bilgi için bkz. [kaynak düzenleyicileri](../../windows/resource-editors.md).
+Bu kaynak türleri hakkında daha fazla bilgi için [Kaynak Düzenleyiciler'e](../../windows/resource-editors.md)bakın.
 
 *pDocClass*<br/>
-İşaret `CRuntimeClass` belge sınıfının nesne. Bu sınıf, bir `CDocument`-türetilmiş tanımladığınız belgelerinizi temsil eden sınıf.
+Belge sınıfının `CRuntimeClass` nesnesine işaret edin. Bu sınıf, `CDocument`belgelerinizi temsil etmek üzere tanımladığınız türetilmiş bir sınıftır.
 
 *pFrameClass*<br/>
-İşaret `CRuntimeClass` çerçeve pencere sınıfının nesnesi. Bu sınıf olabilir bir `CMDIChildWnd`-derived class veya olabilir `CMDIChildWnd` kendisi, belge çerçeve pencereleri için varsayılan davranışı istiyorsanız.
+Çerçeve penceresi `CRuntimeClass` sınıfının nesnesine işaret ediyor. Bu sınıf türetilmiş bir `CMDIChildWnd`sınıf olabilir `CMDIChildWnd` veya belge çerçevenizin pencereleri için varsayılan davranış istiyorsanız kendisi olabilir.
 
 *pViewClass*<br/>
-İşaret `CRuntimeClass` nesne görünüm sınıfı. Bu sınıf, bir `CView`-türetilmiş sınıf belgelerinizi görüntülenecek tanımlayın.
+Görünüm sınıfının `CRuntimeClass` nesnesine işaret edin. Bu sınıf, `CView`belgelerinizi görüntülemek için tanımladığınız türetilmiş bir sınıftır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dinamik olarak ayırabilir `CMultiDocTemplate` uygulamanızı destekleyen ve her bir sonrakine her bir belge türü için nesne `CWinApp::AddDocTemplate` gelen `InitInstance` uygulama sınıfının üye işlevi.
+Uygulamanızın desteklediği `CMultiDocTemplate` her belge türü için dinamik olarak bir `CWinApp::AddDocTemplate` nesne `InitInstance` ayırın ve her bir nesneyi uygulama sınıfınızın üye işlevine geçirin.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#92](../../mfc/codesnippet/cpp/cmultidoctemplate-class_1.cpp)]
 
-İkinci bir örnek aşağıda verilmiştir.
+İşte ikinci bir örnektir.
 
 [!code-cpp[NVC_MFCDocView#93](../../mfc/codesnippet/cpp/cmultidoctemplate-class_2.cpp)]
 
@@ -124,5 +124,5 @@ Bir dinamik olarak ayırabilir `CMultiDocTemplate` uygulamanızı destekleyen ve
 [CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
-[CSingleDocTemplate Sınıfı](../../mfc/reference/csingledoctemplate-class.md)<br/>
+[CSingledocTemplate Sınıfı](../../mfc/reference/csingledoctemplate-class.md)<br/>
 [CWinApp Sınıfı](../../mfc/reference/cwinapp-class.md)

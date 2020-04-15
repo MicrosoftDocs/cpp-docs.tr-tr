@@ -7,35 +7,35 @@ helpviewer_keywords:
 - __asm keyword [C++], data members
 - structure types in __asm blocks
 ms.assetid: e99f5a28-0381-4090-8ece-6af8f2436a49
-ms.openlocfilehash: 1f56cc5c049c1501ea09c76f31be3ab9dea5ed10
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b4341f87226118906749dcdb18b9227e68be6a23
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167614"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81318086"
 ---
-# <a name="accessing-c-or-c-data-in-asm-blocks"></a>__asm Bloklarında C veya C++ Verilerine Erişme
+# <a name="accessing-c-or-c-data-in-__asm-blocks"></a>__asm Bloklarında C veya C++ Verilerine Erişme
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Satır içi derlemenin harika bir kolaylık sağlamak adına göre C veya C++ değişkenlerine başvurmak için yeteneğidir. Bir `__asm` blok kapsamlı bloğunu göründüğü değişken adları da dahil olmak üzere tüm sembolleri başvurabilir. Örneğin, C değişkeni `var` kapsamındaki yönergesi
+Satır aralarının büyük kolaylığı, C veya C++ değişkenlerine ada göre başvurma yeteneğidir. Blok, `__asm` bloğun göründüğü kapsamda değişken adları da dahil olmak üzere tüm sembollere başvurabilir. Örneğin, C değişkeni `var` kapsam içindeyse, yönerge
 
 ```cpp
 __asm mov eax, var
 ```
 
-değerini depolar `var` eax'daki.
+değerini `var` EAX'ta saklar.
 
-Bir sınıf, yapı veya birleşim üyesi benzersiz bir ad varsa bir `__asm` bloğu değişkeni belirtmeden üye adı yalnızca kendisine başvurabilir veya `typedef` süre önce ad (**.**) işleci. Ancak, üye adı benzersiz değilse, bir değişken yerleştirmeniz gerekir veya `typedef` hemen önce dönem işleç adı. Örneğin, aşağıdaki örnek paylaşımı yapısı türlerini `same_name` kendi üye adıyla:.
+Bir sınıf, yapı veya sendika üyesinin benzersiz `__asm` bir adı varsa, bir blok, dönem ( `typedef` **.**) işlecinden önce değişkeni veya adı belirtmeden yalnızca üye adını kullanarak bu ada başvurabilir. Ancak üye adı benzersiz değilse, dönem işlecinden `typedef` hemen önce bir değişken veya ad yerleştirmeniz gerekir. Örneğin, aşağıdaki örnekteki `same_name` yapı türleri üye adı olarak paylaş:.
 
-Değişkenleri türlerle bildirirseniz
+Değişkenleri türleri ile bildirirseniz
 
 ```cpp
 struct first_type hal;
 struct second_type oat;
 ```
 
-tüm başvuruları üye `same_name` değişken adı kullanmanız gerekir çünkü `same_name` benzersiz değil. Ancak üye `weasel` benzersiz bir ad olduğundan, yalnızca üye adını kullanarak başvurabilirsiniz:
+üyeye `same_name` yapılan tüm başvurular değişken `same_name` adını kullanmalıdır, çünkü benzersiz değildir. Ancak üyenin `weasel` benzersiz bir adı vardır, bu nedenle yalnızca üye adını kullanarak bu adı başvurabilirsiniz:
 
 ```cpp
 // InlineAssembler_Accessing_C_asm_Blocks.cpp
@@ -68,11 +68,11 @@ int main()
 }
 ```
 
-Değişken adı atlama yalnızca bir kodlama kullanışlı olduğunu unutmayın. Değişken adı mevcut olup olmadığını aynı derleme yönergelerini oluşturulur.
+Değişken adını atlayarak yalnızca bir kodlama kolaylığı olduğunu unutmayın. Değişken adı olup olmadığı aynı derleme yönergeleri oluşturulur.
 
-C++ veri üyelerine erişim kısıtlamalarını dikkate almaksızın erişebilirsiniz. Ancak, üye işlevleri çağrılamıyor.
+C++'daki veri üyelerine erişim kısıtlamalarına bakılmaksızın erişebilirsiniz. Ancak, üye işlevleri arayamazsınız.
 
-**END Microsoft özgü**
+**END Microsoft Özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: CSinusoidalTransitionFromRange Class
+title: CSinusoidalTransitionFromRange Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSinusoidalTransitionFromRange
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - CSinusoidalTransitionFromRange [MFC], m_period
 - CSinusoidalTransitionFromRange [MFC], m_slope
 ms.assetid: 8b66a729-5f10-431a-b055-e3600d0065da
-ms.openlocfilehash: df360493413e850f4c0fcee41c925cd256c16dad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0612a4b365b928d3c9be6d76168a76b4ee1caa85
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62324031"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81318251"
 ---
-# <a name="csinusoidaltransitionfromrange-class"></a>CSinusoidalTransitionFromRange Class
+# <a name="csinusoidaltransitionfromrange-class"></a>CSinusoidalTransitionFromRange Sınıfı
 
-Belirli bir salınım aralığına sahip bir sinüzoidal aralıklı geçişi kapsüller.
+Belirli bir salınım aralığına sahip bir sinüzoidal aralık lı geçişi kapsüller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,33 +41,33 @@ class CSinusoidalTransitionFromRange : public CBaseTransition;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange](#csinusoidaltransitionfromrange)|Geçiş bir nesne oluşturur.|
+|[CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange](#csinusoidaltransitionfromrange)|Bir geçiş nesnesi oluşturuyor.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSinusoidalTransitionFromRange::Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır. (Geçersiz kılmaları [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|
+|[CSinusoidalTransitionFromRange::Oluştur](#create)|Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. (CBaseTransition geçersiz [kılar::Oluştur](../../mfc/reference/cbasetransition-class.md#create).)|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSinusoidalTransitionFromRange::m_dblMaximumValue](#m_dblmaximumvalue)|Animasyon değişken sinüzoidal wave değerinin en yüksek değeri.|
-|[CSinusoidalTransitionFromRange::m_dblMinimumValue](#m_dblminimumvalue)|Bir trough sinüzoidal wave'nın, animasyon değişkeninin değeri.|
+|[CSinusoidalTransitionFromRange::m_dblMaximumValue](#m_dblmaximumvalue)|Sinüzoidal dalganın zirvesindeki animasyon değişkeninin değeri.|
+|[CSinusoidalTransitionFromRange::m_dblMinimumValue](#m_dblminimumvalue)|Sinüzoidal dalganın bir çukurundaki animasyon değişkeninin değeri.|
 |[CSinusoidalTransitionFromRange::m_duration](#m_duration)|Geçiş süresi.|
-|[CSinusoidalTransitionFromRange::m_period](#m_period)|Salınıma sinüzoidal wave, saniye cinsinden süre.|
-|[CSinusoidalTransitionFromRange::m_slope](#m_slope)|Geçiş başlangıcında eğimi.|
+|[CSinusoidalTransitionFromRange::m_period](#m_period)|Saniyeler içinde sinüzoidal dalganın salınım dönemi.|
+|[CSinusoidalTransitionFromRange::m_slope](#m_slope)|Geçişin başlangıcındaki eğim.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Animasyon değişkeninin değeri bir sinüzoidal aralıklı geçişi sürenin tamamı boyunca belirtilen minimum ve maksimum değerler arasında dalgalanma. Eğim parametre, iki olası sinüs diğer parametreler ile belirtilen Dalgalar arasında ayırt etmek için kullanılır. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.
+Animasyon değişkeninin değeri, sinüzoidal aralıklı geçişin tüm süresi boyunca belirtilen minimum ve maksimum değerler arasında dalgalandırılıyor. Eğim parametresi, diğer parametrelertarafından belirtilen iki olası sinüs dalgası arasında ayrıştırmak için kullanılır. Tüm geçişler otomatik olarak temizlenerek, operatör yeni kullanılarak ayrılması önerilir. Kapsüllü IUIAnimationTransition COM nesnesi CAnimationController tarafından oluşturulur::AnimateGroup, o zamana kadar NULL' s. Bu COM nesnesinin oluşturulduktan sonra üye değişkenleri değiştirmenin hiçbir etkisi yoktur.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
@@ -75,11 +75,11 @@ Animasyon değişkeninin değeri bir sinüzoidal aralıklı geçişi sürenin ta
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="create"></a>  CSinusoidalTransitionFromRange::Create
+## <a name="csinusoidaltransitionfromrangecreate"></a><a name="create"></a>CSinusoidalTransitionFromRange::Oluştur
 
-Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.
+Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
 
 ```
 virtual BOOL Create(
@@ -89,16 +89,16 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*pLibrary*<br/>
-Standart geçişleri oluşturulması için sorumlu geçiş kitaplığı için bir işaretçi.
+*pKütüphane*<br/>
+Standart geçişlerin oluşturulmasından sorumlu geçiş kitaplığı için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.
+Geçiş başarıyla oluşturulursa DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="csinusoidaltransitionfromrange"></a>  CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange
+## <a name="csinusoidaltransitionfromrangecsinusoidaltransitionfromrange"></a><a name="csinusoidaltransitionfromrange"></a>CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange
 
-Geçiş bir nesne oluşturur.
+Bir geçiş nesnesi oluşturuyor.
 
 ```
 CSinusoidalTransitionFromRange(
@@ -111,38 +111,38 @@ CSinusoidalTransitionFromRange(
 
 ### <a name="parameters"></a>Parametreler
 
-*Süresi*<br/>
+*Süre*<br/>
 Geçiş süresi.
 
 *dblMinimumValue*<br/>
-Bir trough sinüzoidal wave'nın, animasyon değişkeninin değeri.
+Sinüzoidal dalganın bir çukurundaki animasyon değişkeninin değeri.
 
 *dblMaximumValue*<br/>
-Animasyon değişken sinüzoidal wave değerinin en yüksek değeri.
+Sinüzoidal dalganın zirvesindeki animasyon değişkeninin değeri.
 
 *Dönem*<br/>
-Salınıma sinüzoidal wave, saniye cinsinden süre.
+Saniyeler içinde sinüzoidal dalganın salınım dönemi.
 
-*eğimi*<br/>
-Geçiş başlangıcında eğimi.
+*Eğim*<br/>
+Geçişin başlangıcındaki eğim.
 
-##  <a name="m_dblmaximumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMaximumValue
+## <a name="csinusoidaltransitionfromrangem_dblmaximumvalue"></a><a name="m_dblmaximumvalue"></a>CSinusoidalTransitionFromRange::m_dblMaximumValue
 
-Animasyon değişken sinüzoidal wave değerinin en yüksek değeri.
+Sinüzoidal dalganın zirvesindeki animasyon değişkeninin değeri.
 
 ```
 DOUBLE m_dblMaximumValue;
 ```
 
-##  <a name="m_dblminimumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMinimumValue
+## <a name="csinusoidaltransitionfromrangem_dblminimumvalue"></a><a name="m_dblminimumvalue"></a>CSinusoidalTransitionFromRange::m_dblMinimumValue
 
-Bir trough sinüzoidal wave'nın, animasyon değişkeninin değeri.
+Sinüzoidal dalganın bir çukurundaki animasyon değişkeninin değeri.
 
 ```
 DOUBLE m_dblMinimumValue;
 ```
 
-##  <a name="m_duration"></a>  CSinusoidalTransitionFromRange::m_duration
+## <a name="csinusoidaltransitionfromrangem_duration"></a><a name="m_duration"></a>CSinusoidalTransitionFromRange::m_duration
 
 Geçiş süresi.
 
@@ -150,17 +150,17 @@ Geçiş süresi.
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-##  <a name="m_period"></a>  CSinusoidalTransitionFromRange::m_period
+## <a name="csinusoidaltransitionfromrangem_period"></a><a name="m_period"></a>CSinusoidalTransitionFromRange::m_period
 
-Salınıma sinüzoidal wave, saniye cinsinden süre.
+Saniyeler içinde sinüzoidal dalganın salınım dönemi.
 
 ```
 UI_ANIMATION_SECONDS m_period;
 ```
 
-##  <a name="m_slope"></a>  CSinusoidalTransitionFromRange::m_slope
+## <a name="csinusoidaltransitionfromrangem_slope"></a><a name="m_slope"></a>CSinusoidalTransitionFromRange::m_slope
 
-Geçiş başlangıcında eğimi.
+Geçişin başlangıcındaki eğim.
 
 ```
 UI_ANIMATION_SLOPE m_slope;

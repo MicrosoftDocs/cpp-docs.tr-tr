@@ -1,22 +1,22 @@
 ---
 title: Açıklama blokları
-description: NMAKE, bir Makefile içindeki hedefleri, bağımlılıkları ve komutları ilişkilendirmek için açıklama blokları kullanır.
+description: NMAKE, bir makefiledeki hedefleri, bağımlılıkları ve komutları ilişkilendirmek için açıklama bloklarını kullanır.
 ms.date: 10/29/2019
 helpviewer_keywords:
 - description blocks
 - NMAKE program, description blocks
 - blocks, description
 ms.assetid: 1321f228-d389-40ac-b0cd-4f6e9293602b
-ms.openlocfilehash: fb9cf4400c96b588e8704e972dd29ab27f41cae9
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: e4e80b59d3d30b3b34c55b40d337ef5c078e6404
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417301"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81322257"
 ---
 # <a name="description-blocks"></a>Açıklama blokları
 
-Açıklama blokları, derleme görevleri dosyasının çekirdeğini oluşturur. *Hedefleri veya*oluşturulacak dosyaları ve bunların *bağımlılıklarını*, hedefleri oluşturmak için gereken dosyaları tanımlarlar. Bir açıklama bloğu, bağımlılıklardan hedefleri oluşturmayı betimleyen *komutları*içerebilir. Açıklama bloğu, isteğe bağlı olarak bir komut bloğu tarafından izlenen bir bağımlılık hatlığıdır:
+Açıklama blokları bir makefilenin çekirdeğini oluşturur. *Hedefleri*veya oluşturulacak dosyaları ve *bunların bağımlılıklarını,* hedefleri oluşturmak için gereken dosyaları açıklarlar. Açıklama bloğu, bağımlılıklardan hedeflerin nasıl oluşturulabileceğini açıklayan *komutlar*içerebilir. Açıklama bloğu, isteğe bağlı olarak komutbloğu tarafından izlenen bir bağımlılık çizgisidir:
 
 ```makefile
 targets... : dependents...
@@ -25,25 +25,25 @@ targets... : dependents...
 
 ## <a name="dependency-lines"></a>Bağımlılık çizgileri
 
-Bir *bağımlılık çizgisi* , bir veya daha fazla hedefi ve sıfır veya daha fazla bağımlılığı belirtir. Bir hedef yoksa veya daha önce bağımlı bir zaman damgasına sahipse NMAKE komutları komut bloğunda yürütür. NMAKE, hedef bir [sözde hedef](pseudotargets.md)ise, komut bloğunu de yürütür. Aşağıda örnek bir bağımlılık satırı verilmiştir:
+*Bağımlılık satırı* bir veya daha fazla hedef ve sıfır veya daha fazla bağımlı belirtir. Bir hedef yoksa veya bağımlı dan daha erken bir zaman damgası varsa, NMAKE komut bloğundaki komutları yürütür. Hedef [sözde hedef](pseudotargets.md)ise NMAKE komut bloğunu da yürütür. Aşağıda bir örnek bağımlılık satırı verilmiştir:
 
 ```makefile
 hi_bye.exe : hello.obj goodbye.obj helper.lib
 ```
 
-Bu bağımlılık satırında `hi_bye.exe` hedeftir. Bağımlılıkları `hello.obj`, `goodbye.obj`ve `helper.lib`. Bağımlılık çizgisi, `hello.obj`, `goodbye.obj`veya `helper.lib` `hi_bye.exe`'tan daha yeni bir kez değiştirildiğinde, NMAKE 'in hedefi oluşturmasını söyler.
+Bu bağımlılık satırında, `hi_bye.exe` hedeftir. Bağımlılıkları `hello.obj`, `goodbye.obj`ve `helper.lib`. Bağımlılık satırı NMAKE'e hedefi oluşturmasını `hello.obj` `goodbye.obj`söyler, `helper.lib` ne zaman `hi_bye.exe`, ne zaman , veya daha yakın zamanda değişti .
 
-Bir hedefin satırın başlangıcında olması gerekir. Boşluk veya sekme ile girintilenebilir. Hedefleri bağımlılardan ayırmak için iki nokta üst üste (`:`) kullanın. Hedefler, iki nokta ayırıcısı (`:`) ve bağımlılar arasında boşluk veya sekmeye izin verilir. Bağımlılık çizgisini ayırmak için bir hedefin veya bağımlı bir ters eğik çizgi (`\`) kullanın.
+Bir hedef hattın başında olmalıdır. Herhangi bir boşluk veya sekmeyle girintisi olamaz. Hedefleri bağımlılardan`:`ayırmak için bir iki nokta üst üste ( ) kullanın. Boşluklar veya sekmeler hedefler, iki nokta`:`üst üste ayırıcı ( ), ve bağımlıları arasında izin verilir. Bağımlılık çizgisini bölmek için, hedeften`\`veya bağımlıdan sonra ters eğik çizgi () kullanın.
 
-Komut bloklarını yürütmeden önce NMAKE, *bağımlılık ağacı*oluşturmak için tüm bağımlılıkları ve ilgili tüm çıkarım kurallarını tarar. Bir bağımlılık ağacı, hedefi tamamen güncelleştirmek için gereken adımları belirtir. NMAKE, bir bağımlı, başka bir bağımlılık listesindeki bir hedef olup olmadığını yinelemeli olarak denetler. Bağımlılık ağacını oluşturduktan sonra NMAKE, zaman damgalarını denetler. Ağaçtaki herhangi bir bağımlı, hedeften daha yeniyse, NMAKE hedefi oluşturur.
+Komut bloklarını yürütmeden önce, NMAKE bağımlılık *ağacı*oluşturmak için tüm bağımlılıkları ve geçerli çıkarım kurallarını tarar. Bağımlılık ağacı, hedefi tam olarak güncelleştirmek için gereken adımları belirtir. NMAKE, bağımlının başka bir bağımlılık listesinde hedef olup olmadığını özyinelemeli olarak denetler. Bağımlılık ağacını inşa ettikten sonra, NMAKE zaman damgalarını denetler. Ağaçtaki bağımlılar hedeften daha yeniyse, Hedefi NMAKE oluşturur.
 
-## <a name="targets"></a>Lerden
+## <a name="targets"></a><a name="targets"></a>Hedef
 
-Bir bağımlılık satırının hedefler bölümü bir veya daha fazla hedef belirtir. Hedef herhangi bir geçerli dosya adı, dizin adı veya [sözde hedef](pseudotargets.md)olabilir. Birden çok hedefi bir veya daha fazla boşluk veya sekme kullanarak ayırın. Hedefler büyük/küçük harfe duyarlı değildir. Dosya adlarıyla yollara izin verilir. Hedef ve yolu 256 karakterden uzun olamaz. İki nokta üst üste gelen hedef tek bir karakter ise, ayrılan alan kullanın. Aksi halde NMAKE, harf iki nokta bileşimini bir sürücü tanımlayıcısı olarak yorumlar.
+Bağımlılık satırının hedefler bölümü bir veya daha fazla hedef belirtir. Hedef herhangi bir geçerli dosya adı, dizin adı veya [pseudotarget](pseudotargets.md)olabilir. Bir veya daha fazla boşluk veya sekme kullanarak birden çok hedefi ayırın. Hedefler büyük/küçük harf duyarlı değildir. Dosya adlarıyla yollara izin verilir. Bir hedef ve yolu 256 karakteri geçemez. Üst üste gelen hedef tek bir karakterse, ayıran boşluk kullanın. Aksi takdirde, NMAKE bir sürücü belirtimi olarak harf-kolon kombinasyonu yorumlar.
 
-### <a name="multiple-targets"></a>Birden çok hedef
+### <a name="multiple-targets"></a><a name="multiple-targets"></a>Birden çok hedef
 
-NMAKE, her biri ayrı bir açıklama bloğunda belirtilmiş gibi birden çok hedefi tek bir bağımlılığa göre değerlendirir.
+NMAKE, her biri ayrı bir açıklama bloğunda belirtilmiş gibi tek bir bağımlılıkta birden çok hedefi değerlendirir.
 
 Örneğin, bu kural:
 
@@ -52,7 +52,7 @@ bounce.exe leap.exe : jump.obj
    echo Building...
 ```
 
-şöyle değerlendirilir:
+olarak değerlendirilir:
 
 ```makefile
 bounce.exe : jump.obj
@@ -62,9 +62,9 @@ leap.exe : jump.obj
    echo Building...
 ```
 
-### <a name="cumulative-dependencies"></a>Birikmeli bağımlılıklar
+### <a name="cumulative-dependencies"></a><a name="cumulative-dependencies"></a>Kümülatif bağımlılıklar
 
-Bir hedef tekrarlandığında, bir açıklama bloğunda bağımlılıklar birikimlidir.
+Bir hedef yinelenirse, bağımlılıklar bir açıklama bloğunda birikmelidir.
 
 Örneğin, bu kurallar kümesi,
 
@@ -74,14 +74,14 @@ bounce.exe : up.obj
    echo Building bounce.exe...
 ```
 
-şöyle değerlendirilir:
+olarak değerlendirilir:
 
 ```makefile
 bounce.exe : jump.obj up.obj
    echo Building bounce.exe...
 ```
 
-Tek bir açıklama bloğunda birden çok bağımlılık satırı içinde birden çok hedef olduğunda NMAKE, her biri ayrı bir açıklama bloğunda belirtilmiş gibi değerlendirilir. Ancak, yalnızca son bağımlılık satırındaki hedefler, komutlar bloğunu kullanır. NMAKE diğer hedefler için bir çıkarım kuralı kullanmaya çalışır.
+Tek bir açıklama bloğunda birden çok bağımlılık satırında birden çok hedefiniz varsa, NMAKE bunları her biri ayrı bir açıklama bloğunda belirtilmiş gibi değerlendirir. Ancak, yalnızca son bağımlılık satırındaki hedefler komutbloğunu kullanır. NMAKE diğer hedefler için bir çıkarım kuralı kullanmaya çalışır.
 
 Örneğin, bu kurallar kümesi,
 
@@ -91,7 +91,7 @@ bounce.exe climb.exe : up.obj
    echo Building bounce.exe...
 ```
 
-şöyle değerlendirilir:
+olarak değerlendirilir:
 
 ```makefile
 leap.exe : jump.obj
@@ -104,9 +104,9 @@ climb.exe : up.obj
    echo Building bounce.exe...
 ```
 
-### <a name="targets-in-multiple-description-blocks"></a>Birden çok açıklama bloklarında hedefler
+### <a name="targets-in-multiple-description-blocks"></a><a name="targets-in-multiple-description-blocks"></a>Birden çok açıklama bloğundaki hedefler
 
-Farklı komutlar kullanarak birden fazla açıklama bloğunda bir hedefi güncelleştirmek için iki ardışık çift nokta (::)) belirtin hedefler ve bağımlılıklar arasında.
+Bir hedefi farklı komutlar kullanarak birden fazla açıklama bloğunda güncelleştirmek için art arda iki nokta üst üste (::) hedefler ve bağımlılar arasında.
 
 ```makefile
 target.lib :: one.asm two.asm three.asm
@@ -117,9 +117,9 @@ target.lib :: four.c five.c
     lib target four.obj five.obj
 ```
 
-### <a name="dependency-side-effects"></a>Bağımlılık yan etkileri
+### <a name="dependency-side-effects"></a><a name="dependency-side-effects"></a>Bağımlılık yan etkileri
 
-İki nokta üst üste (:)) bir hedef belirtebilirsiniz iki bağımlılık satırı içinde farklı konumlarda. Komutlar yalnızca bir satırdan sonra görünürse, NMAKE, çizgileri satır bitişik veya birleştirilmiş olarak yorumlar. Komutu olmayan bağımlılık için bir çıkarım kuralı çağırmaz. Bunun yerine, NMAKE bağımlılıkların bir açıklama bloğuna ait olduğunu varsayar ve diğer bağımlılıkla belirtilen komutları yürütür. Bu kural kümesini göz önünde bulundurun:
+Bir iki nokta üst üste bir hedef belirtebilirsiniz (:) farklı konumlarda iki bağımlılık satırında. Komutlar satırlardan yalnızca birinden sonra görünürse, NMAKE bağımlılıkları satırlar bitişik veya birleştirilmiş gibi yorumlar. Komutları olmayan bağımlılık için çıkarım kuralı nı çağırmaz. Bunun yerine, NMAKE bağımlılıkların bir açıklama bloğuna ait olduğunu varsayar ve diğer bağımlılıkla belirtilen komutları yürütür. Bu kurallar kümesini göz önünde bulundurun:
 
 ```makefile
 bounce.exe : jump.obj
@@ -128,14 +128,14 @@ bounce.exe : jump.obj
 bounce.exe : up.obj
 ```
 
-şöyle değerlendirilir:
+olarak değerlendirilir:
 
 ```makefile
 bounce.exe : jump.obj up.obj
    echo Building bounce.exe...
 ```
 
-Çift iki nokta (`::`) kullanılırsa bu efekt oluşmaz. Örneğin, bu kurallar kümesi:
+Çift kolon (`::`) kullanılırsa bu etki oluşmaz. Örneğin, bu kurallar kümesi:
 
 ```makefile
 bounce.exe :: jump.obj
@@ -144,7 +144,7 @@ bounce.exe :: jump.obj
 bounce.exe :: up.obj
 ```
 
-şöyle değerlendirilir:
+olarak değerlendirilir:
 
 ```makefile
 bounce.exe : jump.obj
@@ -154,24 +154,24 @@ bounce.exe : up.obj
 # invokes an inference rule
 ```
 
-### <a name="pseudotargets"></a>Sözde hedefler
+### <a name="pseudotargets"></a><a name="pseudotargets"></a>Sözde hedefler
 
-*Sözde hedef* , bir bağımlılık satırındaki dosya adı yerine kullanılan bir etikettir. Mevcut olmayan bir dosya olarak yorumlanır ve bu nedenle güncel değildir. NMAKE, sözde hedefin zaman damgasının, tüm bağımlılarından en son ile aynı olduğunu varsayar. Bağımlı değilse, geçerli zaman varsayılır. Bir sözde hedef, hedef olarak kullanılıyorsa, komutları her zaman yürütülür. Bağımlı olarak kullanılan bir sözde hedef, başka bir bağımlılıkta hedef olarak da görünmelidir. Ancak, bu bağımlılığın bir komut bloğuna sahip olması gerekmez.
+*Sözde hedef,* bağımlılık satırındaki bir dosya adının yerine kullanılan bir etikettir. Var olmayan bir dosya olarak yorumlanır, ve bu yüzden güncel değildir. NMAKE, bir sözde hedefin zaman damgasının tüm bağımlılarının en sonuncusuyla aynı olduğunu varsayar. Bağımlısı yoksa, geçerli saat varsayılılır. Sözde hedef hedef olarak kullanılırsa, komutları her zaman yürütülür. Bağımlı olarak kullanılan bir sözde hedef, başka bir bağımlılıkta hedef olarak da görünmelidir. Ancak, bu bağımlılık bir komutbloğu olması gerekmez.
 
-Sözde hedef adları, hedefler için dosya adı sözdizimi kurallarını izler. Ancak, adın bir uzantısı yoksa, dosya adları için 8 karakterlik sınırı aşabilir ve en fazla 256 karakter uzunluğunda olabilir.
+Pseudotarget adları hedefler için dosya adı sözdizimi kurallarını izler. Ancak, adında bir uzantı yoksa, dosya adları için 8 karakter sınırını aşabilir ve en fazla 256 karakter uzunluğunda olabilir.
 
-Sözde hedefler, NMAKE 'in birden fazla hedefi otomatik olarak oluşturmasını istediğinizde faydalıdır. NMAKE yalnızca komut satırında belirtilen hedefleri oluşturur. Ya da hiçbir komut satırı hedefi belirtilmemişse, derleme görevleri dosyasının ilk bağımlılığında yalnızca ilk hedefi oluşturur. NMAKE 'e, komut satırında ayrı ayrı listelemeden birden çok hedef oluşturmasını söyleyebilirsiniz. Sözde hedef içeren bir bağımlılığı olan bir açıklama bloğu yazın ve bağımlılığı olarak derlemek istediğiniz hedefleri listeleyin. Ardından, bu açıklama bloğunu önce derleme görevleri dosyasına yerleştirin veya NMAKE komut satırında sözde hedefi belirtin.
+Sözde hedefler, NMAKE'nin otomatik olarak birden fazla hedef oluşturmasını istediğinizde yararlıdır. NMAKE yalnızca komut satırında belirtilen hedefleri oluşturur. Veya, komut satırı hedefi belirtilmemişse, makefiledeki ilk bağımlılıkta yalnızca ilk hedefi oluşturur. NMAKE'e, komut satırında tek tek listelemeden birden çok hedef oluşturmasını söyleyebilirsiniz. Sözde hedef içeren bir bağımlılık içeren bir açıklama bloğu yazın ve oluşturmak istediğiniz hedefleri bağımlıları olarak listele. Ardından, bu açıklama bloğunu önce makefile'ye yerleştirin veya NMAKE komut satırındaki sözde hedefi belirtin.
 
-Bu örnekte, UPDATE sözde bir hedeftir.
+Bu örnekte, UPDATE bir sözde hedeftir.
 
 ```makefile
 UPDATE : *.*
 !COPY $** c:\product\release
 ```
 
-GÜNCELLEŞTIRME değerlendirildiğinde, NMAKE geçerli dizindeki tüm dosyaları belirtilen sürücü ve dizine kopyalar.
+UPDATE değerlendirildiğinde, NMAKE geçerli dizindeki tüm dosyaları belirtilen sürücü ve dizin için kopyalar.
 
-Aşağıdaki derleme görevleri dosyasında, sözde hedef `all`, komut satırında `all` veya hiçbir hedef belirtilmemişse hem `project1.exe` hem de `project2.exe` oluşturur. Sözde hedef `setenv`, `.exe` dosyalar güncelleştirildikten sonra LıB ortam değişkenini değiştirir:
+Aşağıdaki makefilede, sözde `all` hedef her `project1.exe` `project2.exe` ikisini `all` de oluşturur ve komut satırında hedeften biri veya hiç belirtilmemişse. Sözde hedef, `setenv` dosyalar güncelleştirilmeden `.exe` önce LIB ortamı değişkenini değiştirir:
 
 ```makefile
 all : setenv project1.exe project2.exe
@@ -186,32 +186,32 @@ setenv :
     set LIB=\project\lib
 ```
 
-## <a name="dependents"></a>Uyar
+## <a name="dependents"></a><a name="dependents"></a>Bağımlı
 
-Bir bağımlılık satırında, herhangi bir geçerli dosya adı veya [sözde hedef](pseudotargets.md)kullanarak, iki nokta üst üste (`:`) veya iki nokta üst üste (`::`) sonra sıfır veya daha fazla bağımlı belirtin. Bir veya daha fazla boşluk veya sekme kullanarak birden çok etkilenenleri ayırın. Bağımlılar büyük/küçük harfe duyarlı değildir. Dosya adlarıyla yollara izin verilir.
+Bağımlılık satırında, geçerli bir dosya adı veya`:` [pseudotarget](pseudotargets.md)kullanarak`::`iki nokta üst üste ( ) veya çift üst üste (), sonra sıfır veya daha fazla bağımlı belirtin. Bir veya daha fazla boşluk veya sekme kullanarak birden çok bağımlıyı ayırın. Bağımlılar vakaya duyarlı değildir. Dosya adlarıyla yollara izin verilir.
 
-### <a name="inferred-dependents"></a>Gösterilen etkilenenler
+### <a name="inferred-dependents"></a><a name="inferred-dependents"></a>Çıkarılan bağımlılar
 
-Bağımlılık satırında açıkça listeettiğiniz bağımlılarla birlikte, NMAKE, *gösterilen bir bağımlı*olduğunu varsayabilir. Çıkarılan bir bağımlı, çıkarım kuralından türetilir ve açık bağımlılardan önce değerlendirilir. Çıkarılan bir bağımlı, hedefine kıyasla güncel olmadığında NMAKE, bağımlılık için komut bloğunu çağırır. Çıkarsanan bağımlı yoksa veya kendi bağımlılarına kıyasla güncel değilse, NMAKE önce gösterilen bağımlı ' ı günceller. Çıkartılan bağımlılar hakkında daha fazla bilgi için bkz. [çıkarım kuralları](inference-rules.md).
+Bağımlılık satırında açıkça listelediğiniz bağımlılarla birlikte, NMAKE çıkarılan bir *bağımlı*yı varsayabilir. Çıkarım bağımlısı bir çıkarım kuralından türetilir ve açık bağımlılardan önce değerlendirilir. Çıkarılan bir bağımlı hedefiyle karşılaştırıldığında güncel olmadığında, NMAKE bağımlılık için komut bloğunu çağırır. Çıkarılan bir bağımlı yoksa veya kendi bağımlılarına göre güncel değilse, NMAKE ilk olarak çıkarılan bağımlıyı güncelleştirir. Çıkarılan bağımlılar hakkında daha fazla bilgi için [Çıkarım kurallarına](inference-rules.md)bakın.
 
-### <a name="search-paths-for-dependents"></a>Bağımlılıklar için arama yolları
+### <a name="search-paths-for-dependents"></a><a name="search-paths-for-dependents"></a>Bağımlılar için arama yolları
 
-Her bağımlı için isteğe bağlı bir arama yolu belirtebilirsiniz. Aranacak Dizin kümesini belirten sözdizimi aşağıda verilmiştir:
+Bağımlı her biri için isteğe bağlı bir arama yolu belirtebilirsiniz. Arama yapmak için bir dizi dizin belirtmek için sözdizimi aşağıda veda eder:
 
-> **{** _Dizin_\[ **;** _Dizin_...] **}** _bağımlı_
+> **{**_dizin_\[**;** _dizin_...] **}**_bağımlı_
 
-Dizin adlarını ayraç içine alın (`{ }`). Birden çok dizini noktalı virgülle ayırın (`;`). Boşluk veya sekmeye izin verilmez. NMAKE, ilk olarak geçerli dizinde ve ardından dizin listesinde belirtilen sırada bağlı olarak görünür. Bir arama yolunun bir kısmını veya tamamını belirtmek için bir makro kullanabilirsiniz. Yalnızca belirtilen bağımlı bu arama yolunu kullanır.
+Dizin adlarını ayraçlara`{ }`ekle ( ). Bir yarı kolon ile ayrı`;`birden fazla dizin ( ). Boşluk veya sekme lere izin verilmez. NMAKE, geçerli dizinde önce bağımlıyı, daha sonra belirtilen sırada dizinler listesinde arar. Bir arama yolunun bir kısmını veya tamamını belirtmek için makro kullanabilirsiniz. Yalnızca belirtilen bağımlı bu arama yolunu kullanır.
 
 #### <a name="directory-search-path-example"></a>Dizin arama yolu örneği
 
-Bu bağımlılık satırı, bir arama için Dizin belirtiminin nasıl oluşturulacağını gösterir:
+Bu bağımlılık satırı, arama için dizin belirtiminin nasıl oluşturulabildiğini gösterir:
 
 ```makefile
 reverse.exe : {\src\omega;e:\repo\backwards}retro.obj
 ```
 
-Hedef `reverse.exe` bir bağımlı `retro.obj`sahip. Küme ayracı içine alınmış liste iki dizin belirtir. NMAKE önce geçerli dizinde `retro.obj` arar. Orada yoksa, NMAKE `\src\omega` dizininde ve sonra `e:\repo\backwards` dizininde arama yapar.
+Hedefin `reverse.exe` bir bağımlısı `retro.obj`var. Ayraç ekteki liste iki dizin belirtir. NMAKE ilk `retro.obj` geçerli dizinde arar. Orada değilse, NMAKE `\src\omega` dizini arar, sonra `e:\repo\backwards` dizin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[NMAKE Başvurusu](nmake-reference.md)
+[NMAKE Referans](nmake-reference.md)

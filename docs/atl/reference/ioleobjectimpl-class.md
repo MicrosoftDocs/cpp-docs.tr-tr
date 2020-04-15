@@ -1,5 +1,5 @@
 ---
-title: IOleObjectImpl sınıfı
+title: IOleObjectImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IOleObjectImpl
@@ -49,19 +49,19 @@ helpviewer_keywords:
 - IOleObject, ATL implementation
 - IOleObjectImpl class
 ms.assetid: 59750b2d-1633-4a51-a4c2-6455b6b90c45
-ms.openlocfilehash: ded158b0ec862de5b0d0b23dd4b9edb50ad577ef
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 86d82aea2e92eb99903284abe4ac03478369616c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417623"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81326518"
 ---
-# <a name="ioleobjectimpl-class"></a>IOleObjectImpl sınıfı
+# <a name="ioleobjectimpl-class"></a>IOleObjectImpl Sınıfı
 
-Bu sınıf `IUnknown` uygular ve bir kapsayıcının bir denetimle iletişim kurduğu asıl arabirimdir.
+Bu sınıf, `IUnknown` bir kapsayıcının denetimle iletişim kurduğu temel arabirimi uygular ve bu arabirimdir.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,61 +72,61 @@ class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 
 #### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Sınıfınız `IOleObjectImpl`türetilir.
+*T*<br/>
+Sınıfınızdan `IOleObjectImpl`türetilmiştir.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[IOleObjectImpl:: Advise](#advise)|Denetimle bir danışmanlık bağlantısı kurar.|
-|[IOleObjectImpl:: Close](#close)|Denetim durumunu çalışır durumundan yüklendi olarak değiştirir.|
-|[IOleObjectImpl::D fazla b](#doverb)|Denetime, numaralandırılmış eylemlerden birini gerçekleştirmesini söyler.|
-|[IOleObjectImpl::D oVerbDiscardUndo](#doverbdiscardundo)|Denetime, çalıştığı tüm geri alma durumlarını atmasını söyler.|
-|[IOleObjectImpl::D fazla Bhide](#doverbhide)|Denetime kullanıcı arabirimini görünümden kaldırmasını söyler.|
-|[IOleObjectImpl::D oVerbInPlaceActivate](#doverbinplaceactivate)|Denetimi çalıştırır ve penceresini yükler, ancak denetimin kullanıcı arabirimini yüklemez.|
-|[IOleObjectImpl::D fazla baç](#doverbopen)|Denetimin ayrı bir pencerede açık olarak düzenlenmesine neden olur.|
-|[IOleObjectImpl::D fazla Bbirincil](#doverbprimary)|Kullanıcı denetimi çift tıkladığında belirtilen eylemi gerçekleştirir. Denetim, genellikle denetimi yerinde etkinleştirmek için eylemi tanımlar.|
-|[IOleObjectImpl::D fazla bShow](#doverbshow)|Kullanıcıya yeni ekli bir denetim gösterir.|
-|[IOleObjectImpl::D oVerbUIActivate](#doverbuiactivate)|Denetimi yerinde etkinleştirir ve denetimin menü ve araç çubukları gibi kullanıcı arabirimini gösterir.|
-|[IOleObjectImpl:: Trmadmenlik](#enumadvise)|Denetimin danışmanlık bağlantılarını numaralandırır.|
-|[IOleObjectImpl:: EnumVerbs](#enumverbs)|Denetim için eylemleri numaralandırır.|
-|[IOleObjectImpl:: GetClientSite](#getclientsite)|Denetimin istemci sitesini alır.|
-|[IOleObjectImpl:: GetClipboardData](#getclipboarddata)|Panodan verileri alır. ATL uygulama E_NOTIMPL döndürür.|
-|[IOleObjectImpl:: GetExtent](#getextent)|Denetimin görüntüleme alanının kapsamını alır.|
-|[IOleObjectImpl:: GetMiscStatus](#getmiscstatus)|Denetimin durumunu alır.|
-|[IOleObjectImpl:: Getbilinen ad](#getmoniker)|Denetimin bilinen adını alır. ATL uygulama E_NOTIMPL döndürür.|
-|[IOleObjectImpl:: GetUserClassID](#getuserclassid)|Denetimin sınıf tanımlayıcısını alır.|
-|[IOleObjectImpl:: GetUserType](#getusertype)|Denetimin kullanıcı türü adını alır.|
-|[IOleObjectImpl:: InitFromData](#initfromdata)|Seçili verilerden denetimi başlatır. ATL uygulama E_NOTIMPL döndürür.|
-|[IOleObjectImpl:: IsUpToDate](#isuptodate)|Denetimin güncel olup olmadığını denetler. ATL uygulama S_OK döndürür.|
-|[IOleObjectImpl:: OnPostVerbDiscardUndo](#onpostverbdiscardundo)|Geri alma durumu atıldıktan sonra [DoVerbDiscardUndo](#doverbdiscardundo) tarafından çağırılır.|
-|[IOleObjectImpl:: OnPostVerbHide](#onpostverbhide)|Denetim gizlendikten sonra [DoVerbHide](#doverbhide) tarafından çağırılır.|
-|[IOleObjectImpl:: OnPostVerbInPlaceActivate](#onpostverbinplaceactivate)|Denetim etkin olduktan sonra [Doverbinplaceactivate](#doverbinplaceactivate) tarafından çağırılır.|
-|[IOleObjectImpl:: OnPostVerbOpen](#onpostverbopen)|Denetim ayrı bir pencerede düzenlenmek üzere açıldıktan sonra [DoVerbOpen](#doverbopen) tarafından çağırılır.|
-|[IOleObjectImpl:: OnPostVerbShow](#onpostverbshow)|Denetim görünür yapıldıktan sonra [DoVerbShow](#doverbshow) tarafından çağırılır.|
-|[IOleObjectImpl:: OnPostVerbUIActivate](#onpostverbuiactivate)|Denetimin kullanıcı arabirimi etkinleştirildikten sonra [Doverbuiactivate](#doverbuiactivate) tarafından çağırılır.|
-|[IOleObjectImpl:: OnPreVerbDiscardUndo](#onpreverbdiscardundo)|Geri alma durumu atılmadan önce [DoVerbDiscardUndo](#doverbdiscardundo) tarafından çağırılır.|
-|[IOleObjectImpl:: OnPreVerbHide](#onpreverbhide)|Denetim gizlenmadan önce [DoVerbHide](#doverbhide) tarafından çağırılır.|
-|[IOleObjectImpl:: OnPreVerbInPlaceActivate](#onpreverbinplaceactivate)|Denetim etkinleştirilmeden önce [Doverbinplaceactivate](#doverbinplaceactivate) tarafından çağırılır.|
-|[IOleObjectImpl:: OnPreVerbOpen](#onpreverbopen)|Denetim ayrı bir pencerede düzenlenmek üzere açılmadan önce [DoVerbOpen](#doverbopen) tarafından çağırılır.|
-|[IOleObjectImpl:: OnPreVerbShow](#onpreverbshow)|Denetim görünür yapılmadan önce [DoVerbShow](#doverbshow) tarafından çağırılır.|
-|[IOleObjectImpl:: OnPreVerbUIActivate](#onpreverbuiactivate)|Denetimin kullanıcı arabirimi etkinleştirilmeden önce [Doverbuiactivate](#doverbuiactivate) tarafından çağırılır.|
-|[IOleObjectImpl:: SetClientSite](#setclientsite)|Denetime kapsayıcıda istemci sitesiyle ilgili olduğunu söyler.|
-|[IOleObjectImpl:: SetColorScheme](#setcolorscheme)|Varsa, denetimin uygulamasına bir renk şeması önerir. ATL uygulama E_NOTIMPL döndürür.|
-|[IOleObjectImpl:: SetExtent](#setextent)|Denetimin görüntüleme alanının kapsamını ayarlar.|
-|[IOleObjectImpl:: SetHostNames](#sethostnames)|Denetime kapsayıcı uygulamasının ve kapsayıcı belgenin adlarını bildirir.|
-|[IOleObjectImpl:: Setbilinen adı](#setmoniker)|Denetime adının ne olduğunu söyler. ATL uygulama E_NOTIMPL döndürür.|
-|[IOleObjectImpl:: Unadvise](#unadvise)|Denetim ile bir danışmanlık bağlantısını siler.|
-|[IOleObjectImpl:: Update](#update)|Denetimi güncelleştirir. ATL uygulama S_OK döndürür.|
+|[IOleObjectImpl::Tavsiye](#advise)|Denetimle bir danışma bağlantısı kurar.|
+|[IOleObjectImpl::Kapat](#close)|Denetim durumunun çalışmadan yüklenmiş olarak değiştirilmesi.|
+|[IOleObjectImpl::DoVerb](#doverb)|Denetime numaralandırılmış eylemlerinden birini gerçekleştirmesini söyler.|
+|[IOleObjectImpl::DoVerbDiscardUndo](#doverbdiscardundo)|Denetime, koruduğu geri alma durumunu atmasını söyler.|
+|[IOleObjectImpl::DoVerbHide](#doverbhide)|Denetime kullanıcı arabirimini görünümden kaldırmasını söyler.|
+|[IOleObjectImpl::DoVerbInPlaceActivate](#doverbinplaceactivate)|Denetimi çalıştırıyor ve penceresini yükler, ancak denetimin kullanıcı arabirimini yüklemez.|
+|[IOleObjectImpl::DoVerbOpen](#doverbopen)|Denetimin ayrı bir pencerede açık düzenlenmesine neden olur.|
+|[IOleObjectImpl::DoFiilBirincil](#doverbprimary)|Kullanıcı denetimi çift tıklattığında belirtilen eylemi gerçekleştirir. Denetim, genellikle denetimyerinde etkinleştirmek için eylemi tanımlar.|
+|[IOleObjectImpl::DoVerbShow](#doverbshow)|Kullanıcıya yeni eklenen denetimi gösterir.|
+|[IOleObjectImpl::DoVerbUIActivate](#doverbuiactivate)|Denetimyerinde etkinleştirir ve menüler ve araç çubukları gibi denetimin kullanıcı arabirimini gösterir.|
+|[IOleObjectImpl::EnumAdvise](#enumadvise)|Denetimin danışma bağlantılarını oyalar.|
+|[IOleObjectImpl::EnumVerbs](#enumverbs)|Denetim için eylemleri sayısallandırır.|
+|[IOleObjectImpl::GetClientSite](#getclientsite)|Denetimin istemci sitesini alır.|
+|[IOleObjectImpl::GetClipboardData](#getclipboarddata)|Pano'dan veri alır. ATL uygulaması E_NOTIMPL döndürür.|
+|[IOleObjectImpl::GetExtent](#getextent)|Denetimin görüntü alanının kapsamını alır.|
+|[IOleObjectImpl::GetMiscStatus](#getmiscstatus)|Denetimin durumunu alır.|
+|[IOleObjectImpl::GetMoniker](#getmoniker)|Kontrolün lakabını alır. ATL uygulaması E_NOTIMPL döndürür.|
+|[IOleObjectImpl::GetUserClassID](#getuserclassid)|Denetimin sınıf tanımlayıcısını alır.|
+|[IOleObjectImpl::GetUserType](#getusertype)|Denetimin kullanıcı türü adını alır.|
+|[IOleObjectImpl::InitFromData](#initfromdata)|Seçili verilerden denetimi başlatma. ATL uygulaması E_NOTIMPL döndürür.|
+|[IOleObjectImpl::IsUpToDate](#isuptodate)|Denetimin güncel olup olmadığını denetler. ATL uygulaması S_OK döndürür.|
+|[IOleObjectImpl::OnPostVerbDiscardUndo](#onpostverbdiscardundo)|Geri alalı durum atıldıktan sonra [DoVerbDiscardUndo](#doverbdiscardundo) tarafından çağrılır.|
+|[IOleObjectImpl::OnPostVerbHide](#onpostverbhide)|Denetim gizlendikten sonra [DoVerbHide](#doverbhide) tarafından çağrılır.|
+|[IOleObjectImpl::OnPostVerbInPlaceActivate](#onpostverbinplaceactivate)|Kontrol yerinde etkinleştirildikten sonra [DoVerbInPlaceActivate](#doverbinplaceactivate) tarafından çağrılır.|
+|[IOleObjectImpl::OnPostVerbOpen](#onpostverbopen)|Denetim ayrı bir pencerede düzenleme için açıldıktan sonra [DoVerbOpen](#doverbopen) tarafından çağrılır.|
+|[IOleObjectImpl::OnPostVerbShow](#onpostverbshow)|Denetim görünür hale getirildikten sonra [DoVerbShow](#doverbshow) tarafından çağrılır.|
+|[IOleObjectImpl::OnPostVerbUIActivate](#onpostverbuiactivate)|Denetimin kullanıcı arabirimi etkinleştirildikten sonra [DoVerbUIActivate](#doverbuiactivate) tarafından çağrılır.|
+|[IOleObjectImpl::OnPreVerbDiscardUndo](#onpreverbdiscardundo)|Geri alalı durum atılmadan önce [DoVerbDiscardUndo](#doverbdiscardundo) tarafından çağrılır.|
+|[IOleObjectImpl::OnPreVerbHide](#onpreverbhide)|Denetim gizlenmeden önce [DoVerbHide](#doverbhide) tarafından çağrılır.|
+|[IOleObjectImpl::OnPreVerbInPlaceActivate](#onpreverbinplaceactivate)|Denetim yerinde etkinleştirilmeden önce [DoVerbInPlaceActivate](#doverbinplaceactivate) tarafından çağrılır.|
+|[IOleObjectImpl::OnPreVerbOpen](#onpreverbopen)|Denetim ayrı bir pencerede düzenleme için açılmadan önce [DoVerbOpen](#doverbopen) tarafından çağrılır.|
+|[IOleObjectImpl::OnPreVerbShow](#onpreverbshow)|Denetim görünür hale getirilmeden önce [DoVerbShow](#doverbshow) tarafından çağrılır.|
+|[IOleObjectImpl::OnPreVerbUIActivate](#onpreverbuiactivate)|Denetimin kullanıcı arabirimi etkinleştirilmeden önce [DoVerbUIActivate](#doverbuiactivate) tarafından çağrılır.|
+|[IOleObjectImpl::SetClientSite](#setclientsite)|Kapsayıcıdaki istemci sitesi hakkındaki denetimi bildirir.|
+|[IOleObjectImpl::SetColorScheme](#setcolorscheme)|Varsa, denetimin uygulamasına bir renk düzeni önerir. ATL uygulaması E_NOTIMPL döndürür.|
+|[IOleObjectImpl::SetExtent](#setextent)|Denetimin görüntü alanının kapsamını ayarlar.|
+|[IOleObjectImpl::SetHostNames](#sethostnames)|Denetime kapsayıcı uygulamasının ve kapsayıcı belgesinin adlarını söyler.|
+|[IOleObjectImpl::SetMoniker](#setmoniker)|Kontrole lakabının ne olduğunu söyler. ATL uygulaması E_NOTIMPL döndürür.|
+|[IOleObjectImpl::Tavsiye siz](#unadvise)|Denetimle ilgili bir danışma bağlantısını siler.|
+|[IOleObjectImpl::Güncelleme](#update)|Denetimi güncelleştirir. ATL uygulaması S_OK döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IOleObject](/windows/win32/api/oleidl/nn-oleidl-ioleobject) arabirimi, bir kapsayıcının bir denetimle iletişim kurduğu asıl arabirimdir. Sınıf `IOleObjectImpl`, bu arabirimin varsayılan bir uygulamasını sağlar ve hata ayıklama yapılarında döküm cihazına bilgi göndererek `IUnknown` uygular.
+[IOleObject](/windows/win32/api/oleidl/nn-oleidl-ioleobject) arabirimi, bir kapsayıcının denetimle iletişim kurduğu temel arabirimdir. Sınıf `IOleObjectImpl` bu arabirimin varsayılan bir `IUnknown` uygulamasını sağlar ve hata ayıklama oluştururda dökümü aygıtına bilgi göndererek uygular.
 
-**Ilgili makaleler** [ATL öğreticisi](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
+**İlgili Makaleler** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -136,11 +136,11 @@ Sınıfınız `IOleObjectImpl`türetilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlctl. h
+**Üstbilgi:** atlctl.h
 
-##  <a name="advise"></a>IOleObjectImpl:: Advise
+## <a name="ioleobjectimpladvise"></a><a name="advise"></a>IOleObjectImpl::Tavsiye
 
-Denetimle bir danışmanlık bağlantısı kurar.
+Denetimle bir danışma bağlantısı kurar.
 
 ```
 STDMETHOD(Advise)(
@@ -150,11 +150,11 @@ STDMETHOD(Advise)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [IOleObject:: Advise](/windows/win32/api/oleidl/nf-oleidl-ioleobject-advise) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-advise) SDK'da tavsiye de bulunun.
 
-##  <a name="close"></a>IOleObjectImpl:: Close
+## <a name="ioleobjectimplclose"></a><a name="close"></a>IOleObjectImpl::Kapat
 
-Denetim durumunu çalışır durumundan yüklendi olarak değiştirir.
+Denetim durumunun çalışmadan yüklenmiş olarak değiştirilmesi.
 
 ```
 STDMETHOD(Close)(DWORD dwSaveOption);
@@ -162,15 +162,15 @@ STDMETHOD(Close)(DWORD dwSaveOption);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimi devre dışı bırakır ve varsa Denetim penceresini yok eder. Denetim sınıfı veri üyesi [CComControlBase:: M_BREQUIRESSAVE](../../atl/reference/ccomcontrolbase-class.md#m_brequiressave) true Ise ve *dwSaveOption* parametresi OLECLOSE_SAVEIFDIRTY veya OLECLOSE_PROMPTSAVE ise, denetim özellikleri kapatılmadan önce kaydedilir.
+Denetimi devre dışı bırakır ve varsa denetim penceresini yok eder. Denetim sınıfı veri üyesi [CComControlBase::m_bRequiresSave](../../atl/reference/ccomcontrolbase-class.md#m_brequiressave) TRUE ise ve *dwSaveOption* parametresi OLECLOSE_SAVEIFDIRTY veya OLECLOSE_PROMPTSAVE ise, denetim özellikleri kapanmadan önce kaydedilir.
 
-[CComControlBase:: m_spInPlaceSite](../../atl/reference/ccomcontrolbase-class.md#m_spinplacesite) ve [ccomcontrolbase:: m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink) denetim sınıfı veri üyelerinde tutulan Işaretçiler ve [ccomcontrolbase:: m_bNegotiatedWnd](../../atl/reference/ccomcontrolbase-class.md#m_bnegotiatedwnd), [CComControlBase:: m_bWndLess](../../atl/reference/ccomcontrolbase-class.md#m_bwndless)ve [CCOMCONTROLBASE:: m_bInPlaceSiteEx](../../atl/reference/ccomcontrolbase-class.md#m_binplacesiteex) veri üyeleri false olarak ayarlanmıştır.
+Kontrol sınıfı veri üyeleri [CComControlBase düzenlenen işaretçiler::m_spInPlaceSite](../../atl/reference/ccomcontrolbase-class.md#m_spinplacesite) ve [CComControlBase::m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink) serbest bırakılır ve veri üyeleri [CComControlBase::m_bNegotiatedWnd](../../atl/reference/ccomcontrolbase-class.md#m_bnegotiatedwnd), [CComControlBase::m_bWndless](../../atl/reference/ccomcontrolbase-class.md#m_bwndless), ve [CComControlBase::m_bInPlaceSiteEx](../../atl/reference/ccomcontrolbase-class.md#m_binplacesiteex) FALSE olarak ayarlanır.
 
-Windows SDK için bkz. [IOleObject:: Close](/windows/win32/api/oleidl/nf-oleidl-ioleobject-close) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-close) SDK'da kapatın.
 
-##  <a name="doverb"></a>IOleObjectImpl::D fazla b
+## <a name="ioleobjectimpldoverb"></a><a name="doverb"></a>IOleObjectImpl::DoVerb
 
-Denetime, numaralandırılmış eylemlerden birini gerçekleştirmesini söyler.
+Denetime numaralandırılmış eylemlerinden birini gerçekleştirmesini söyler.
 
 ```
 STDMETHOD(DoVerb)(
@@ -184,24 +184,24 @@ STDMETHOD(DoVerb)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-`iVerb`değerine bağlı olarak, ATL `DoVerb` yardımcı işlevlerinden biri aşağıdaki gibi çağrılır:
+`iVerb`Değerine bağlı olarak, ATL `DoVerb` yardımcı işlevlerinden biri aşağıdaki gibi adlandırılır:
 
-|*ıverb* Deeri|DoVerb yardımcı işlevi çağrıldı|
+|*iFiil* Değer|DoVerb yardımcı işlevi denir|
 |-------------------|-----------------------------------|
 |OLEIVERB_DISCARDUNDOSTATE|[DoVerbDiscardUndo](#doverbdiscardundo)|
 |OLEIVERB_HIDE|[DoVerbHide](#doverbhide)|
-|OLEIVERB_INPLACEACTIVATE|[DoVerbInPlaceActivate](#doverbinplaceactivate)|
+|OLEIVERB_INPLACEACTIVATE|[DoVerbinPlaceActivate](#doverbinplaceactivate)|
 |OLEIVERB_OPEN|[DoVerbOpen](#doverbopen)|
 |OLEIVERB_PRIMARY|[DoVerbPrimary](#doverbprimary)|
-|OLEIVERB_PROPERTIES|[CComControlBase::D fazla Bproperties](../../atl/reference/ccomcontrolbase-class.md#doverbproperties)|
+|OLEIVERB_PROPERTIES|[CComControlBase::DoVerbProperties](../../atl/reference/ccomcontrolbase-class.md#doverbproperties)|
 |OLEIVERB_SHOW|[DoVerbShow](#doverbshow)|
-|OLEIVERB_UIACTIVATE|[DoVerbUIActivate](#doverbuiactivate)|
+|OLEIVERB_UIACTIVATE|[DoVerbuiactivate](#doverbuiactivate)|
 
-Bkz. [IOleObject::D fazla b](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK.
+Bkz. [IOleObject::DWindows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) SDK'daki oVerb.
 
-##  <a name="doverbdiscardundo"></a>IOleObjectImpl::D oVerbDiscardUndo
+## <a name="ioleobjectimpldoverbdiscardundo"></a><a name="doverbdiscardundo"></a>IOleObjectImpl::DoVerbDiscardUndo
 
-Denetime, çalıştığı tüm geri alma durumlarını atmasını söyler.
+Denetime, koruduğu geri alma durumunu atmasını söyler.
 
 ```
 HRESULT DoVerbDiscardUndo(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
@@ -210,18 +210,18 @@ HRESULT DoVerbDiscardUndo(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 ### <a name="parameters"></a>Parametreler
 
 *prcPosRec*<br/>
-'ndaki Kapsayıcının denetimin çizmesini istediğini dikdörtgenin işaretçisi.
+[içinde] Dikdörtgen işaretçisi kapsayıcı içine çekmek için denetim istiyor.
 
 *hwndParent*<br/>
-'ndaki Denetimi içeren pencerenin tanıtıcısı.
+[içinde] Denetimi içeren pencerenin tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 S_OK döndürür.
 
-##  <a name="doverbhide"></a>IOleObjectImpl::D fazla Bhide
+## <a name="ioleobjectimpldoverbhide"></a><a name="doverbhide"></a>IOleObjectImpl::DoVerbHide
 
-Denetimin kullanıcı arabirimini devre dışı bırakır ve kaldırır ve denetimi gizler.
+Denetimi devre dışı bırakır ve kaldırır ve denetimi gizler.
 
 ```
 HRESULT DoVerbHide(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
@@ -230,18 +230,18 @@ HRESULT DoVerbHide(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 ### <a name="parameters"></a>Parametreler
 
 *prcPosRec*<br/>
-'ndaki Kapsayıcının denetimin çizmesini istediğini dikdörtgenin işaretçisi.
+[içinde] Dikdörtgen işaretçisi kapsayıcı içine çekmek için denetim istiyor.
 
 *hwndParent*<br/>
-'ndaki Denetimi içeren pencerenin tanıtıcısı. ATL uygulamasında kullanılmıyor.
+[içinde] Denetimi içeren pencerenin tutamacı. ATL uygulamasında kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 S_OK döndürür.
 
-##  <a name="doverbinplaceactivate"></a>IOleObjectImpl::D oVerbInPlaceActivate
+## <a name="ioleobjectimpldoverbinplaceactivate"></a><a name="doverbinplaceactivate"></a>IOleObjectImpl::DoVerbInPlaceActivate
 
-Denetimi çalıştırır ve penceresini yükler, ancak denetimin kullanıcı arabirimini yüklemez.
+Denetimi çalıştırıyor ve penceresini yükler, ancak denetimin kullanıcı arabirimini yüklemez.
 
 ```
 HRESULT DoVerbInPlaceActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
@@ -250,10 +250,10 @@ HRESULT DoVerbInPlaceActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 ### <a name="parameters"></a>Parametreler
 
 *prcPosRec*<br/>
-'ndaki Kapsayıcının denetimin çizmesini istediğini dikdörtgenin işaretçisi.
+[içinde] Dikdörtgen işaretçisi kapsayıcı içine çekmek için denetim istiyor.
 
 *hwndParent*<br/>
-'ndaki Denetimi içeren pencerenin tanıtıcısı. ATL uygulamasında kullanılmıyor.
+[içinde] Denetimi içeren pencerenin tutamacı. ATL uygulamasında kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -261,11 +261,11 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CComControlBase:: InPlaceActivate öğesini](../../atl/reference/ccomcontrolbase-class.md#inplaceactivate)çağırarak denetimi yerinde etkinleştirir. Denetim sınıfının veri üyesi `m_bWindowOnly` TRUE değilse `DoVerbInPlaceActivate`, ilk olarak denetimi bir penceresiz denetim olarak etkinleştirmeye çalışır (yalnızca kapsayıcı [ıoleınplacesitepenceresiz](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless)' i destekliyorsa mümkündür). Bu başarısız olursa, işlev genişletilmiş özelliklerle denetimi etkinleştirmeye çalışır (yalnızca kapsayıcı [IOleInPlaceSiteEx](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex)' ı destekliyorsa mümkündür). Bu başarısız olursa, işlev, genişletilmiş özellikler olmadan denetimi etkinleştirmeye çalışır (yalnızca kapsayıcı [IOleInPlaceSite](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite)' ı destekliyorsa mümkündür). Etkinleştirme başarılı olursa, işlev kapsayıcıyı denetimin etkinleştirildiğini bildirir.
+[CComControlBase::InPlaceActivate'i](../../atl/reference/ccomcontrolbase-class.md#inplaceactivate)arayarak denetimi yerinde etkinleştirir. Denetim sınıfının veri üyesi `m_bWindowOnly` TRUE `DoVerbInPlaceActivate` olmadığı sürece, ilk önce denetimi penceresiz bir denetim olarak etkinleştirmeye çalışır (yalnızca kapsayıcı [IOleInPlaceSiteWindowless'ı](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless)destekliyorsa mümkündür). Bu başarısız olursa, işlev denetimi genişletilmiş özelliklerle etkinleştirmeye çalışır (yalnızca kapsayıcı [IOleInPlaceSiteEx'i](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex)destekliyorsa mümkündür). Bu başarısız olursa, işlev denetimi genişletilmiş özelliklere sahip olmadan etkinleştirmeye çalışır (yalnızca kapsayıcı [IOleInPlaceSite'yi](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite)destekliyorsa mümkündür). Etkinleştirme başarılı olursa, işlev denetimin etkinleştirildiğini kapsayıcıyı bildirir.
 
-##  <a name="doverbopen"></a>IOleObjectImpl::D fazla baç
+## <a name="ioleobjectimpldoverbopen"></a><a name="doverbopen"></a>IOleObjectImpl::DoVerbOpen
 
-Denetimin ayrı bir pencerede açık olarak düzenlenmesine neden olur.
+Denetimin ayrı bir pencerede açık düzenlenmesine neden olur.
 
 ```
 HRESULT DoVerbOpen(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
@@ -274,18 +274,18 @@ HRESULT DoVerbOpen(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 ### <a name="parameters"></a>Parametreler
 
 *prcPosRec*<br/>
-'ndaki Kapsayıcının denetimin çizmesini istediğini dikdörtgenin işaretçisi.
+[içinde] Dikdörtgen işaretçisi kapsayıcı içine çekmek için denetim istiyor.
 
 *hwndParent*<br/>
-'ndaki Denetimi içeren pencerenin tanıtıcısı.
+[içinde] Denetimi içeren pencerenin tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 S_OK döndürür.
 
-##  <a name="doverbprimary"></a>IOleObjectImpl::D fazla Bbirincil
+## <a name="ioleobjectimpldoverbprimary"></a><a name="doverbprimary"></a>IOleObjectImpl::DoFiilBirincil
 
-Kullanıcı denetimi çift tıkladığında gerçekleştirilecek eylemi tanımlar.
+Kullanıcı denetimi çift tıklattığında yapılan eylemi tanımlar.
 
 ```
 HRESULT DoVerbPrimary(LPCRECT prcPosRect, HWND hwndParent);
@@ -294,10 +294,10 @@ HRESULT DoVerbPrimary(LPCRECT prcPosRect, HWND hwndParent);
 ### <a name="parameters"></a>Parametreler
 
 *prcPosRec*<br/>
-'ndaki Kapsayıcının denetimin çizmesini istediğini dikdörtgenin işaretçisi.
+[içinde] Dikdörtgen işaretçisi kapsayıcı içine çekmek için denetim istiyor.
 
 *hwndParent*<br/>
-'ndaki Denetimi içeren pencerenin tanıtıcısı.
+[içinde] Denetimi içeren pencerenin tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -305,11 +305,11 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, özellik sayfalarını görüntüleyecek şekilde ayarlanır. Çift tıklama üzerinde farklı bir davranışı çağırmak için denetim sınıfınıza bunu geçersiz kılabilirsiniz; Örneğin, bir video oynayın veya yerinde etkin olun.
+Varsayılan olarak, özellik sayfalarını görüntülemek için ayarlayın. Çift tıklatmada farklı bir davranış çağırmak için denetim sınıfınızda bunu geçersiz kılabilirsiniz; örneğin, bir video oynatma veya etkin bir şekilde yerinde hareket edin.
 
-##  <a name="doverbshow"></a>IOleObjectImpl::D fazla bShow
+## <a name="ioleobjectimpldoverbshow"></a><a name="doverbshow"></a>IOleObjectImpl::DoVerbShow
 
-Kapsayıcıya denetimi görünür hale getirir.
+Denetimi görünür hale getirmek için kapsayıcıya söyler.
 
 ```
 HRESULT DoVerbShow(LPCRECT prcPosRect, HWND /* hwndParent */);
@@ -318,18 +318,18 @@ HRESULT DoVerbShow(LPCRECT prcPosRect, HWND /* hwndParent */);
 ### <a name="parameters"></a>Parametreler
 
 *prcPosRec*<br/>
-'ndaki Kapsayıcının denetimin çizmesini istediğini dikdörtgenin işaretçisi.
+[içinde] Dikdörtgen işaretçisi kapsayıcı içine çekmek için denetim istiyor.
 
 *hwndParent*<br/>
-'ndaki Denetimi içeren pencerenin tanıtıcısı. ATL uygulamasında kullanılmıyor.
+[içinde] Denetimi içeren pencerenin tutamacı. ATL uygulamasında kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Standart HRESULT değerlerinden biri.
 
-##  <a name="doverbuiactivate"></a>IOleObjectImpl::D oVerbUIActivate
+## <a name="ioleobjectimpldoverbuiactivate"></a><a name="doverbuiactivate"></a>IOleObjectImpl::DoVerbUIActivate
 
-Denetimin kullanıcı arabirimini etkinleştirir ve kapsayıcının menülerini, bileşik menüler tarafından değiştirilmekte olduğunu bildirir.
+Denetimin kullanıcı arabirimini etkinleştirir ve kapsayıcıya menülerinin bileşik menülerle değiştirildiğini haber vetir.
 
 ```
 HRESULT DoVerbUIActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
@@ -338,18 +338,18 @@ HRESULT DoVerbUIActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 ### <a name="parameters"></a>Parametreler
 
 *prcPosRec*<br/>
-'ndaki Kapsayıcının denetimin çizmesini istediğini dikdörtgenin işaretçisi.
+[içinde] Dikdörtgen işaretçisi kapsayıcı içine çekmek için denetim istiyor.
 
 *hwndParent*<br/>
-'ndaki Denetimi içeren pencerenin tanıtıcısı. ATL uygulamasında kullanılmıyor.
+[içinde] Denetimi içeren pencerenin tutamacı. ATL uygulamasında kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Standart HRESULT değerlerinden biri.
 
-##  <a name="enumadvise"></a>IOleObjectImpl:: Trmadmenlik
+## <a name="ioleobjectimplenumadvise"></a><a name="enumadvise"></a>IOleObjectImpl::EnumAdvise
 
-Bu denetim için kayıtlı danışmanlık bağlantılarının bir listesini sağlar.
+Bu denetim için kayıtlı danışma bağlantılarının numaralandırması sağlar.
 
 ```
 STDMETHOD(EnumAdvise)(IEnumSTATDATA** ppenumAdvise);
@@ -357,11 +357,11 @@ STDMETHOD(EnumAdvise)(IEnumSTATDATA** ppenumAdvise);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [IOleObject:: Trmadmenlik](/windows/win32/api/oleidl/nf-oleidl-ioleobject-enumadvise) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-enumadvise) SDK'da EnumAdvise.
 
-##  <a name="enumverbs"></a>IOleObjectImpl:: EnumVerbs
+## <a name="ioleobjectimplenumverbs"></a><a name="enumverbs"></a>IOleObjectImpl::EnumVerbs
 
-`OleRegEnumVerbs`çağırarak bu denetim için kayıtlı eylemlerin (fiiller) bir listesini sağlar.
+Bu denetim için kayıtlı eylemlerin (fiillerin) numaralandırması' nı . `OleRegEnumVerbs`
 
 ```
 STDMETHOD(EnumVerbs)(IEnumOLEVERB** ppEnumOleVerb);
@@ -369,13 +369,13 @@ STDMETHOD(EnumVerbs)(IEnumOLEVERB** ppEnumOleVerb);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Projenizin. rgs dosyasına fiil ekleyebilirsiniz. Örneğin bkz. CIRCCTL. [Circ](../../overview/visual-cpp-samples.md) örneğinde RGS.
+Projenizin .rgs dosyasına fiiller ekleyebilirsiniz. Örneğin, bkz. [CIRC](../../overview/visual-cpp-samples.md) örneğinde RGS.
 
-Windows SDK için bkz. [IOleObject:: EnumVerbs](/windows/win32/api/oleidl/nf-oleidl-ioleobject-enumverbs) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-enumverbs) SDK'daki EnumVerbs.
 
-##  <a name="getclientsite"></a>IOleObjectImpl:: GetClientSite
+## <a name="ioleobjectimplgetclientsite"></a><a name="getclientsite"></a>IOleObjectImpl::GetClientSite
 
-İşaretçiyi, *Ppclientsite* Içindeki [CComControlBase:: m_spClientSite](../../atl/reference/ccomcontrolbase-class.md#m_spclientsite) denetim sınıfı veri üyesine koyar ve işaretçinin başvuru sayısını artırır.
+İşaretçiyi denetim sınıfı veri üyesi [CComControlBase::m_spClientSite](../../atl/reference/ccomcontrolbase-class.md#m_spclientsite) *ppClientSite'ye* koyar ve işaretçideki başvuru sayısını artım.
 
 ```
 STDMETHOD(GetClientSite)(IOleClientSite** ppClientSite);
@@ -383,11 +383,11 @@ STDMETHOD(GetClientSite)(IOleClientSite** ppClientSite);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK bkz. [IOleObject:: GetClientSite](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getclientsite) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getclientsite) SDK'da Müşteri Sitesi Alın.
 
-##  <a name="getclipboarddata"></a>IOleObjectImpl:: GetClipboardData
+## <a name="ioleobjectimplgetclipboarddata"></a><a name="getclipboarddata"></a>IOleObjectImpl::GetClipboardData
 
-Panodan verileri alır.
+Pano'dan veri alır.
 
 ```
 STDMETHOD(GetClipboardData)(
@@ -401,11 +401,11 @@ E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK bkz. [IOleObject:: GetClipboardData](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getclipboarddata) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getclipboarddata) SDK'daki GetClipboardData.
 
-##  <a name="getextent"></a>IOleObjectImpl:: GetExtent
+## <a name="ioleobjectimplgetextent"></a><a name="getextent"></a>IOleObjectImpl::GetExtent
 
-Çalışan bir denetimin görüntüleme boyutunu HIMETRIK birimlerde alır (birim başına 0,01 milimetre).
+HIMETRIC birimlerinde (birim başına 0,01 milimetre) çalışan bir denetimin ekran boyutunu alır.
 
 ```
 STDMETHOD(GetExtent)(
@@ -415,13 +415,13 @@ STDMETHOD(GetExtent)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Boyut, [CComControlBase:: m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent)denetim sınıfı veri üyesinde saklanır.
+Boyutu denetim sınıfı veri üyesi [CComControlBase saklanır::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent).
 
-Windows SDK için bkz. [IOleObject:: GetExtent](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getextent) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getextent) SDK'da GetExtent.
 
-##  <a name="getmiscstatus"></a>IOleObjectImpl:: GetMiscStatus
+## <a name="ioleobjectimplgetmiscstatus"></a><a name="getmiscstatus"></a>IOleObjectImpl::GetMiscStatus
 
-`OleRegGetMiscStatus`çağırarak Denetim için kayıtlı durum bilgilerine yönelik bir işaretçi döndürür.
+Bir işaretçiyi çağırarak denetim için `OleRegGetMiscStatus`kayıtlı durum bilgilerine döndürür.
 
 ```
 STDMETHOD(GetMiscStatus)(
@@ -431,13 +431,13 @@ STDMETHOD(GetMiscStatus)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Durum bilgileri, denetim ve sunum verileri tarafından desteklenen davranışları içerir. Projenizin. rgs dosyasına durum bilgilerini ekleyebilirsiniz.
+Durum bilgileri, denetim ve sunu verileri tarafından desteklenen davranışları içerir. Projenizin .rgs dosyasına durum bilgilerini ekleyebilirsiniz.
 
-Bkz. Windows SDK [IOleObject:: GetMiscStatus](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getmiscstatus) .
+Bkz. [IOleObject::Windows SDK'daki GetMiscStatus.](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getmiscstatus)
 
-##  <a name="getmoniker"></a>IOleObjectImpl:: Getbilinen ad
+## <a name="ioleobjectimplgetmoniker"></a><a name="getmoniker"></a>IOleObjectImpl::GetMoniker
 
-Denetimin bilinen adını alır.
+Kontrolün lakabını alır.
 
 ```
 STDMETHOD(GetMoniker)(
@@ -452,9 +452,9 @@ E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK bkz. [IOleObject:: Getbilinen ad](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getmoniker) .
+Bkz. [IOleObject::Windows SDK'daki GetMoniker.](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getmoniker)
 
-##  <a name="getuserclassid"></a>IOleObjectImpl:: GetUserClassID
+## <a name="ioleobjectimplgetuserclassid"></a><a name="getuserclassid"></a>IOleObjectImpl::GetUserClassID
 
 Denetimin sınıf tanımlayıcısını döndürür.
 
@@ -464,11 +464,11 @@ STDMETHOD(GetUserClassID)(CLSID* pClsid);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK ' de [IOleObject:: GetUserClassID](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getuserclassid) öğesine bakın.
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getuserclassid) SDK'da Kullanıcı ClassID'i alın.
 
-##  <a name="getusertype"></a>IOleObjectImpl:: GetUserType
+## <a name="ioleobjectimplgetusertype"></a><a name="getusertype"></a>IOleObjectImpl::GetUserType
 
-`OleRegGetUserType`çağırarak denetimin kullanıcı türü adını döndürür.
+'yi arayarak `OleRegGetUserType`denetimin kullanıcı türü adını verir.
 
 ```
 STDMETHOD(GetUserType)(
@@ -478,13 +478,13 @@ STDMETHOD(GetUserType)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı türü adı, menüler ve iletişim kutuları gibi kullanıcı arabirimleri öğelerinde görüntülenmek üzere kullanılır. Projenizin. rgs dosyasındaki kullanıcı türü adını değiştirebilirsiniz.
+Kullanıcı türü adı, menüler ve iletişim kutuları gibi kullanıcı arabirimlerinde görüntülenmek için kullanılır. Projenizin .rgs dosyasındaki kullanıcı türü adını değiştirebilirsiniz.
 
-Windows SDK bkz. [IOleObject:: GetUserType](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getusertype) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getusertype) SDK'da Kullanıcı Tipi' ni alın.
 
-##  <a name="initfromdata"></a>IOleObjectImpl:: InitFromData
+## <a name="ioleobjectimplinitfromdata"></a><a name="initfromdata"></a>IOleObjectImpl::InitFromData
 
-Seçili verilerden denetimi başlatır.
+Seçili verilerden denetimi başlatma.
 
 ```
 STDMETHOD(InitFromData)(
@@ -499,9 +499,9 @@ E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz. Windows SDK [IOleObject:: InitFromData](/windows/win32/api/oleidl/nf-oleidl-ioleobject-initfromdata) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-initfromdata) SDK'daki InitFromData.
 
-##  <a name="isuptodate"></a>IOleObjectImpl:: IsUpToDate
+## <a name="ioleobjectimplisuptodate"></a><a name="isuptodate"></a>IOleObjectImpl::IsUpToDate
 
 Denetimin güncel olup olmadığını denetler.
 
@@ -515,11 +515,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK bkz. [IOleObject:: IsUpToDate](/windows/win32/api/oleidl/nf-oleidl-ioleobject-isuptodate) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-isuptodate) SDK'da IsUpToDate.
 
-##  <a name="onpostverbdiscardundo"></a>IOleObjectImpl:: OnPostVerbDiscardUndo
+## <a name="ioleobjectimplonpostverbdiscardundo"></a><a name="onpostverbdiscardundo"></a>IOleObjectImpl::OnPostVerbDiscardUndo
 
-Geri alma durumu atıldıktan sonra [DoVerbDiscardUndo](#doverbdiscardundo) tarafından çağırılır.
+Geri alalı durum atıldıktan sonra [DoVerbDiscardUndo](#doverbdiscardundo) tarafından çağrılır.
 
 ```
 HRESULT OnPostVerbDiscardUndo();
@@ -531,11 +531,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geri alma durumu atıldıktan sonra, yürütülmesi istediğiniz kodla bu yöntemi geçersiz kılın.
+Geri alma durumu atıldıktan sonra yürütülmesini istediğiniz kodla bu yöntemi geçersiz kılın.
 
-##  <a name="onpostverbhide"></a>IOleObjectImpl:: OnPostVerbHide
+## <a name="ioleobjectimplonpostverbhide"></a><a name="onpostverbhide"></a>IOleObjectImpl::OnPostVerbHide
 
-Denetim gizlendikten sonra [DoVerbHide](#doverbhide) tarafından çağırılır.
+Denetim gizlendikten sonra [DoVerbHide](#doverbhide) tarafından çağrılır.
 
 ```
 HRESULT OnPostVerbHide();
@@ -547,11 +547,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetim gizlendikten sonra, yürütülmesi istediğiniz kodla bu yöntemi geçersiz kılın.
+Denetim gizli olduktan sonra yürütülmesini istediğiniz kodla bu yöntemi geçersiz kılın.
 
-##  <a name="onpostverbinplaceactivate"></a>IOleObjectImpl:: OnPostVerbInPlaceActivate
+## <a name="ioleobjectimplonpostverbinplaceactivate"></a><a name="onpostverbinplaceactivate"></a>IOleObjectImpl::OnPostVerbInPlaceActivate
 
-Denetim etkin olduktan sonra [Doverbinplaceactivate](#doverbinplaceactivate) tarafından çağırılır.
+Kontrol yerinde etkinleştirildikten sonra [DoVerbInPlaceActivate](#doverbinplaceactivate) tarafından çağrılır.
 
 ```
 HRESULT OnPostVerbInPlaceActivate();
@@ -563,11 +563,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetim etkinleştirildikten sonra, yürütülmesi istediğiniz kodla bu yöntemi geçersiz kılın.
+Denetim yerinde etkinleştirildikten sonra yürütülmesini istediğiniz kodla bu yöntemi geçersiz kılın.
 
-##  <a name="onpostverbopen"></a>IOleObjectImpl:: OnPostVerbOpen
+## <a name="ioleobjectimplonpostverbopen"></a><a name="onpostverbopen"></a>IOleObjectImpl::OnPostVerbOpen
 
-Denetim ayrı bir pencerede düzenlenmek üzere açıldıktan sonra [DoVerbOpen](#doverbopen) tarafından çağırılır.
+Denetim ayrı bir pencerede düzenleme için açıldıktan sonra [DoVerbOpen](#doverbopen) tarafından çağrılır.
 
 ```
 HRESULT OnPostVerbOpen();
@@ -579,11 +579,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetim ayrı bir pencerede düzenlenmek üzere açıldıktan sonra, yürütülmesini istediğiniz kodla bu yöntemi geçersiz kılın.
+Denetim ayrı bir pencerede düzenleme için açıldıktan sonra yürütülmesini istediğiniz kod ile bu yöntemi geçersiz kılın.
 
-##  <a name="onpostverbshow"></a>IOleObjectImpl:: OnPostVerbShow
+## <a name="ioleobjectimplonpostverbshow"></a><a name="onpostverbshow"></a>IOleObjectImpl::OnPostVerbShow
 
-Denetim görünür yapıldıktan sonra [DoVerbShow](#doverbshow) tarafından çağırılır.
+Denetim görünür hale getirildikten sonra [DoVerbShow](#doverbshow) tarafından çağrılır.
 
 ```
 HRESULT OnPostVerbShow();
@@ -595,11 +595,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetim görünür yapıldıktan sonra, yürütülmesi istediğiniz kodla bu yöntemi geçersiz kılın.
+Denetim görünür hale getirildikten sonra yürütülmesini istediğiniz kodla bu yöntemi geçersiz kılın.
 
-##  <a name="onpostverbuiactivate"></a>IOleObjectImpl:: OnPostVerbUIActivate
+## <a name="ioleobjectimplonpostverbuiactivate"></a><a name="onpostverbuiactivate"></a>IOleObjectImpl::OnPostVerbUIActivate
 
-Denetimin kullanıcı arabirimi etkinleştirildikten sonra [Doverbuiactivate](#doverbuiactivate) tarafından çağırılır.
+Denetimin kullanıcı arabirimi etkinleştirildikten sonra [DoVerbUIActivate](#doverbuiactivate) tarafından çağrılır.
 
 ```
 HRESULT OnPostVerbUIActivate();
@@ -611,11 +611,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin kullanıcı arabirimi etkinleştirildikten sonra, yürütülmesi istediğiniz kodla bu yöntemi geçersiz kılın.
+Denetimin kullanıcı arabirimi etkinleştirildikten sonra yürütülmesini istediğiniz kodla bu yöntemi geçersiz kılın.
 
-##  <a name="onpreverbdiscardundo"></a>IOleObjectImpl:: OnPreVerbDiscardUndo
+## <a name="ioleobjectimplonpreverbdiscardundo"></a><a name="onpreverbdiscardundo"></a>IOleObjectImpl::OnPreVerbDiscardUndo
 
-Geri alma durumu atılmadan önce [DoVerbDiscardUndo](#doverbdiscardundo) tarafından çağırılır.
+Geri alalı durum atılmadan önce [DoVerbDiscardUndo](#doverbdiscardundo) tarafından çağrılır.
 
 ```
 HRESULT OnPreVerbDiscardUndo();
@@ -627,11 +627,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geri alma durumunun atılmasına engel olmak için, HRESULT hatası döndürecek şekilde bu yöntemi geçersiz kılın.
+Geri alma durumunun atılmasını önlemek için, hata HRESULT'ı döndürmek için bu yöntemi geçersiz kılın.
 
-##  <a name="onpreverbhide"></a>IOleObjectImpl:: OnPreVerbHide
+## <a name="ioleobjectimplonpreverbhide"></a><a name="onpreverbhide"></a>IOleObjectImpl::OnPreVerbHide
 
-Denetim gizlenmadan önce [DoVerbHide](#doverbhide) tarafından çağırılır.
+Denetim gizlenmeden önce [DoVerbHide](#doverbhide) tarafından çağrılır.
 
 ```
 HRESULT OnPreVerbHide();
@@ -643,11 +643,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin gizlenmasını engellemek için, HRESULT hatası döndürecek şekilde bu yöntemi geçersiz kılın.
+Denetimin gizlenmesini önlemek için, hata HRESULT döndürmek için bu yöntemi geçersiz kılın.
 
-##  <a name="onpreverbinplaceactivate"></a>IOleObjectImpl:: OnPreVerbInPlaceActivate
+## <a name="ioleobjectimplonpreverbinplaceactivate"></a><a name="onpreverbinplaceactivate"></a>IOleObjectImpl::OnPreVerbInPlaceActivate
 
-Denetim etkinleştirilmeden önce [Doverbinplaceactivate](#doverbinplaceactivate) tarafından çağırılır.
+Denetim yerinde etkinleştirilmeden önce [DoVerbInPlaceActivate](#doverbinplaceactivate) tarafından çağrılır.
 
 ```
 HRESULT OnPreVerbInPlaceActivate();
@@ -659,11 +659,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin etkin olmasını engellemek için bu yöntemi HRESULT bir hata döndürecek şekilde geçersiz kılın.
+Denetimin yerinde etkinleştirilmesini önlemek için, hata HRESULT'ı döndürmek için bu yöntemi geçersiz kılın.
 
-##  <a name="onpreverbopen"></a>IOleObjectImpl:: OnPreVerbOpen
+## <a name="ioleobjectimplonpreverbopen"></a><a name="onpreverbopen"></a>IOleObjectImpl::OnPreVerbOpen
 
-Denetim ayrı bir pencerede düzenlenmek üzere açılmadan önce [DoVerbOpen](#doverbopen) tarafından çağırılır.
+Denetim ayrı bir pencerede düzenleme için açılmadan önce [DoVerbOpen](#doverbopen) tarafından çağrılır.
 
 ```
 HRESULT OnPreVerbOpen();
@@ -675,11 +675,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin ayrı bir pencerede düzenlenmek üzere açılmasını engellemek için, HRESULT hatası döndürecek şekilde bu yöntemi geçersiz kılın.
+Denetimin ayrı bir pencerede düzenleme için açılmasını önlemek için, hata HRESULT döndürmek için bu yöntemi geçersiz kılın.
 
-##  <a name="onpreverbshow"></a>IOleObjectImpl:: OnPreVerbShow
+## <a name="ioleobjectimplonpreverbshow"></a><a name="onpreverbshow"></a>IOleObjectImpl::OnPreVerbShow
 
-Denetim görünür yapılmadan önce [DoVerbShow](#doverbshow) tarafından çağırılır.
+Denetim görünür hale getirilmeden önce [DoVerbShow](#doverbshow) tarafından çağrılır.
 
 ```
 HRESULT OnPreVerbShow();
@@ -691,11 +691,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin görünür yapılmasını engellemek için, HRESULT hatası döndürecek şekilde bu yöntemi geçersiz kılın.
+Denetimin görünür olmasını önlemek için, hata HRESULT'ı döndürmek için bu yöntemi geçersiz kılın.
 
-##  <a name="onpreverbuiactivate"></a>IOleObjectImpl:: OnPreVerbUIActivate
+## <a name="ioleobjectimplonpreverbuiactivate"></a><a name="onpreverbuiactivate"></a>IOleObjectImpl::OnPreVerbUIActivate
 
-Denetimin kullanıcı arabirimi etkinleştirilmeden önce [Doverbuiactivate](#doverbuiactivate) tarafından çağırılır.
+Denetimin kullanıcı arabirimi etkinleştirilmeden önce [DoVerbUIActivate](#doverbuiactivate) tarafından çağrılır.
 
 ```
 HRESULT OnPreVerbUIActivate();
@@ -707,11 +707,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin kullanıcı arabiriminin etkinleştirilmesini engellemek için bu yöntemi bir HRESULT hatası döndürecek şekilde geçersiz kılın.
+Denetimin kullanıcı arabiriminin etkinleştirilmesini önlemek için, hata HRESULT döndürmek için bu yöntemi geçersiz kılın.
 
-##  <a name="setclientsite"></a>IOleObjectImpl:: SetClientSite
+## <a name="ioleobjectimplsetclientsite"></a><a name="setclientsite"></a>IOleObjectImpl::SetClientSite
 
-Denetime kapsayıcıda istemci sitesiyle ilgili olduğunu söyler.
+Kapsayıcıdaki istemci sitesi hakkındaki denetimi bildirir.
 
 ```
 STDMETHOD(SetClientSite)(IOleClientSite* pClientSite);
@@ -719,13 +719,13 @@ STDMETHOD(SetClientSite)(IOleClientSite* pClientSite);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntemi daha sonra S_OK döndürür.
+Yöntem daha sonra S_OK döndürür.
 
-Windows SDK bkz. [IOleObject:: SetClientSite](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setclientsite) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setclientsite) SDK'da SetClientSite.
 
-##  <a name="setcolorscheme"></a>IOleObjectImpl:: SetColorScheme
+## <a name="ioleobjectimplsetcolorscheme"></a><a name="setcolorscheme"></a>IOleObjectImpl::SetColorScheme
 
-Varsa, denetimin uygulamasına bir renk şeması önerir.
+Varsa, denetimin uygulamasına bir renk düzeni önerir.
 
 ```
 STDMETHOD(SetColorScheme)(LOGPALETTE* /* pLogPal */);
@@ -737,11 +737,11 @@ E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK bkz. [IOleObject:: SetColorScheme](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) SDK'da ColorScheme'ı ayarlayın.
 
-##  <a name="setextent"></a>IOleObjectImpl:: SetExtent
+## <a name="ioleobjectimplsetextent"></a><a name="setextent"></a>IOleObjectImpl::SetExtent
 
-Denetimin görüntüleme alanının kapsamını ayarlar.
+Denetimin görüntü alanının kapsamını ayarlar.
 
 ```
 STDMETHOD(SetExtent)(
@@ -751,17 +751,17 @@ STDMETHOD(SetExtent)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aksi takdirde `SetExtent`, `psizel` tarafından işaret edilen değeri, [CComControlBase:: m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent)denetim sınıfı veri üyesine depolar. Bu değer, HIMETRIK birimlerde (birim başına 0,01 milimetre).
+Aksi `SetExtent` takdirde, denetim sınıfı `psizel` veri üyesi CComControlBase tarafından işaret değeri depolar::m_sizeExtent . [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent) Bu değer HIMETRIC birimlerindedir (birim başına 0,01 milimetre).
 
-[CComControlBase:: m_bResizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_bresizenatural) denetim sınıfı VERI üyesi true ise, `SetExtent` Ayrıca [ccomcontrolbase:: m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural)denetim sınıfı veri üyesinde `psizel` tarafından işaret edilen değeri depolar.
+Denetim sınıfı veri üyesi [CComControlBase::m_bResizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_bresizenatural) `SetExtent` DOĞRU ise, aynı `psizel` zamanda denetim sınıfı veri üyesi CComControlBase işaret değeri depolar::m_sizeNatural . [CComControlBase::m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural)
 
-Denetim sınıfı veri üyesi [CComControlBase:: M_BRECOMPOSEONRESIZE](../../atl/reference/ccomcontrolbase-class.md#m_brecomposeonresize) true ise, denetim boyutunun değiştiği öneri sahibine kayıtlı tüm danışmanlık havuzlarını bildirmek için `SendOnDataChange` ve `SendOnViewChange` çağırır `SetExtent`.
+Kontrol sınıfı veri üyesi [CComControlBase::m_bRecomposeOnResize](../../atl/reference/ccomcontrolbase-class.md#m_brecomposeonresize) `SetExtent` DOĞRU `SendOnDataChange` `SendOnViewChange` ise, aramaları ve kontrol boyutu değişti tavsiye sahibi ile kayıtlı tüm danışma lavabolar bildirmek için.
 
-Bkz. Windows SDK [IOleObject:: SetExtent](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setextent) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setextent) SDK'da Ayar Kapsamı.
 
-##  <a name="sethostnames"></a>IOleObjectImpl:: SetHostNames
+## <a name="ioleobjectimplsethostnames"></a><a name="sethostnames"></a>IOleObjectImpl::SetHostNames
 
-Denetime kapsayıcı uygulamasının ve kapsayıcı belgenin adlarını bildirir.
+Denetime kapsayıcı uygulamasının ve kapsayıcı belgesinin adlarını söyler.
 
 ```
 STDMETHOD(SetHostNames)(LPCOLESTR /* szContainerApp */, LPCOLESTR /* szContainerObj */);
@@ -773,11 +773,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [IOleObject:: SetHostNames](/windows/win32/api/oleidl/nf-oleidl-ioleobject-sethostnames) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-sethostnames) SDK'daki SetHostNames.
 
-##  <a name="setmoniker"></a>IOleObjectImpl:: Setbilinen adı
+## <a name="ioleobjectimplsetmoniker"></a><a name="setmoniker"></a>IOleObjectImpl::SetMoniker
 
-Denetime adının ne olduğunu söyler.
+Kontrole lakabının ne olduğunu söyler.
 
 ```
 STDMETHOD(SetMoniker)(
@@ -791,11 +791,11 @@ E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK bkz. [IOleObject:: Settakma](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setmoniker) adı.
+Bkz. [IOleObject::Windows SDK'daki SetMoniker.](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setmoniker)
 
-##  <a name="unadvise"></a>IOleObjectImpl:: Unadvise
+## <a name="ioleobjectimplunadvise"></a><a name="unadvise"></a>IOleObjectImpl::Tavsiye siz
 
-Denetim sınıfının `m_spOleAdviseHolder` veri üyesinde saklanan danışmanlık bağlantısını siler.
+Denetim sınıfının `m_spOleAdviseHolder` veri üyesinde depolanan danışma bağlantısını siler.
 
 ```
 STDMETHOD(Unadvise)(DWORD dwConnection);
@@ -803,9 +803,9 @@ STDMETHOD(Unadvise)(DWORD dwConnection);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [IOleObject:: Unadvise](/windows/win32/api/oleidl/nf-oleidl-ioleobject-unadvise) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-unadvise) SDK'da tavsiye edilmemiş.
 
-##  <a name="update"></a>IOleObjectImpl:: Update
+## <a name="ioleobjectimplupdate"></a><a name="update"></a>IOleObjectImpl::Güncelleme
 
 Denetimi güncelleştirir.
 
@@ -819,10 +819,10 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [IOleObject:: Update](/windows/win32/api/oleidl/nf-oleidl-ioleobject-update) .
+Bkz. [IOleObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleobject-update) SDK'da güncelleştir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
-[ActiveX denetimleri arabirimleri](/windows/win32/com/activex-controls-interfaces)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[ActiveX Arayüzleri Kontrol Eder](/windows/win32/com/activex-controls-interfaces)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

@@ -1,42 +1,42 @@
 ---
-title: Önemli hata C1060
+title: Önemli Hata C1060
 ms.date: 11/04/2016
 f1_keywords:
 - C1060
 helpviewer_keywords:
 - C1060
 ms.assetid: feaf305c-c84c-4160-b974-50e283412849
-ms.openlocfilehash: f1a7c3ccab716a9281d4520f4c5fce2afff60187
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 83135b77ceb75b4c2b05211260d1aed8fac6777f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204444"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81320288"
 ---
-# <a name="fatal-error-c1060"></a>Önemli hata C1060
+# <a name="fatal-error-c1060"></a>Önemli Hata C1060
 
-Derleyicinin yığın alanı kalmadı
+derleyici yığın alanı dışında
 
-İşletim sistemi veya çalışma zamanı kitaplığı bir bellek isteğini dolduramaz.
+İşletim sistemi veya çalışma zamanı kitaplığı bellek isteğini dolduramaz.
 
-### <a name="to-fix-this-error-try-the-following-possible-solutions"></a>Bu hatayı onarmak için aşağıdaki olası çözümleri deneyin
+### <a name="to-fix-this-error-try-the-following-possible-solutions"></a>Bu hatayı düzeltmek için aşağıdaki olası çözümleri deneyin
 
-1. Derleyici Ayrıca [C1076](../../error-messages/compiler-errors-1/fatal-error-c1076.md) ve [C3859](../../error-messages/compiler-errors-2/compiler-error-c3859.md)hatalarını da kullanıyorsa, bellek ayırma sınırını düşürmek için [/ZD](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) derleyici seçeneğini kullanın. Kalan bellek ayırmayı düşürürseniz, uygulamanız için daha fazla yığın alanı kullanılabilir.
+1. Derleyici [c1076](../../error-messages/compiler-errors-1/fatal-error-c1076.md) ve [C3859](../../error-messages/compiler-errors-2/compiler-error-c3859.md)hataları da varsa, bellek ayırma sınırını düşürmek için [/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) derleyicisi seçeneğini kullanın. Kalan bellek ayırmayı düşürürseniz, uygulamanız için daha fazla yığın alanı kullanılabilir.
 
-   [/Zı](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) seçeneği zaten ayarlandıysa, kaldırmayı deneyin. Seçeneğinde belirtilen bellek ayırma sınırı çok yüksek olduğu için yığın alanı tükeniyor olabilir. [/ZD](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) seçeneğini kaldırırsanız, derleyici varsayılan sınırı kullanır.
+   [/ZM](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) seçeneği zaten ayarlanmışsa, kaldırmayı deneyin. Seçenekte belirtilen bellek ayırma sınırı çok yüksek olduğundan yığın alanı tükenmiş olabilir. [/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) seçeneğini kaldırırsanız derleyici varsayılan bir sınır kullanır.
 
-1. 64 bitlik bir platformda derlerken, 64 bit derleyici araç takımını kullanın. Bilgi için bkz. [nasıl yapılır: 64 bitlik görsel C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md).
+1. 64 bit platformda derleme yapıyorsunuz, 64 bit derleyici araç kümesini kullanın. Bilgi için [bkz: Komut Satırında 64 Bit Görsel C++ Araç Kümesini etkinleştirin.](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 
-1. 32 bit Windows üzerinde [/3GB](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) Boot. ini anahtarını kullanmayı deneyin.
+1. 32 bit Windows'da [/3GB](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) boot.ini anahtarını kullanmayı deneyin.
 
 1. Windows takas dosyasının boyutunu artırın.
 
-1. Çalışan diğer programları kapatın.
+1. Diğer çalışan programları kapatın.
 
 1. Gereksiz ekleme dosyalarını silin.
 
-1. Örneğin, büyük bir dizi bildirmek yerine, dinamik olarak bellek ayırarak gereksiz genel değişkenleri kaldırın.
+1. Örneğin, büyük bir dizi bildirmek yerine belleği dinamik olarak ayırarak gereksiz genel değişkenleri ortadan kaldırın.
 
 1. Kullanılmayan bildirimleri ortadan kaldırın.
 
-9. Geçerli dosyayı daha küçük dosyalara bölün.
+1. Geçerli dosyayı daha küçük dosyalara bölün.

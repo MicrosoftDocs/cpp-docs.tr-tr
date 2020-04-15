@@ -10,29 +10,29 @@ helpviewer_keywords:
 - scripts, Registrar scripts
 - registry, Registrar
 ms.assetid: 106752ae-4cfc-4030-8cb2-d36a1d635a2e
-ms.openlocfilehash: c64d47be6df515a0bd4a8d2cfef51f8d56311f4a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9b4492ea393c01b3fa382828d3ca6097d52493f0
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252020"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81317357"
 ---
 # <a name="atl-registry-component-registrar"></a>ATL Kayıt Defteri Bileşeni (Kaydedici)
 
-ATL Kaydedicisi, sistem kayıt defterine özel bir arabirim üzerinden en iyi duruma getirilmiş erişim sağlar. Kayıt şirketi, ücretsiz iş parçacıklı ve kodu C++ istemciler için statik bağlama sağlar.
+ATL Registrar, özel bir arayüz aracılığıyla sistem kayıt defterine en iyi şekilde erişmemi sağlar. Registrar serbest iş parçacığı ve C++ istemcileri için kodun statik bağlanmasına izin verir.
 
 > [!NOTE]
->  ATL kayıt şirketi için kaynak kodu atlmfc\include\atliface.h içinde bulunabilir.
+> ATL Kayıt Şirketi'nin kaynak kodunu atlmfc\include\atliface.h adresinde bulabilirsiniz.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Kaydedici Betikleri Oluşturma](../atl/creating-registrar-scripts.md)<br/>
-Kaydedici betikleri oluşturma için bir kılavuz. BNF sözdizimi, ayrıştırma ağaçlarını değiştirilebilir parametreler kullanma ve betikleri çağırma örnekler, komut dosyası kayıt defteri hakkında konuları içerir.
+[Kayıt Defteri Komut Dosyaları Oluşturma](../atl/creating-registrar-scripts.md)<br/>
+Kayıt defteri komut dosyaları oluşturma kılavuzu. BNF sözdizimi, ayrışdırma ağaçları, kayıt defteri komut dosyası örnekleri, değiştirilebilir parametreleri kullanarak ve komut dosyalarını çağırmak la ilgili konuları içerir.
 
-[(Yalnızca C++) Kaydedici koduna statik bağlantı ayarlama](../atl/setting-up-a-static-link-to-the-registrar-code-cpp-only.md)<br/>
-Kayıt şirketi için statik bağlama adımları listeler.
+[Kayıt Koduna Statik Bağlantı Kurma (yalnızca C++ )](../atl/setting-up-a-static-link-to-the-registrar-code-cpp-only.md)<br/>
+Kayıt Şirketi'ne statik bağlantı kurmak için adımları listeler.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
-Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.
+Etkin Şablon Kitaplığını kullanarak programlama ya da programlama hakkında kavramsal konulara bağlantılar sağlar.

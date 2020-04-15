@@ -1,96 +1,96 @@
 ---
-title: Launch. vs. JSON şema başvurusu (C++)
+title: launch.vs.json şema referansı (C++)
 ms.date: 08/20/2019
 helpviewer_keywords:
 - launch.vs.json file [C++]
-ms.openlocfilehash: 4ef83787856135faa430227d5c123c0b73a505d3
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: ff4713642ab95a9bbc31f1a06236de459e53f9c3
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078507"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81323049"
 ---
-# <a name="launchvsjson-schema-reference-c"></a>Launch. vs. JSON şema başvurusu (C++)
+# <a name="launchvsjson-schema-reference-c"></a>launch.vs.json şema referansı (C++)
 
-Hata ayıklama parametrelerini yapılandırmak için *Launch. vs. JSON* dosyasını kullanın. Dosyasını oluşturun. **Çözüm Gezgini** bir çalıştırılabilir dosyaya sağ tıklayın ve **Hata Ayıkla ve başlatma ayarları**' nı seçin. Projenizle en yakından eşleşen seçeneği seçin ve ardından yapılandırmayı gerektiği şekilde değiştirmek için aşağıdaki özellikleri kullanın. CMake projelerinde hata ayıklama hakkında daha fazla bilgi için bkz. [CMake hata ayıklama oturumlarını yapılandırma](/cpp/build/configure-cmake-debugging-sessions).
+Hata ayıklama parametrelerini yapılandırmak için *launch.vs.json* dosyasını kullanın. Dosyayı oluşturmak için. **Solution Explorer'da** çalıştırılabilir bir dosyaya sağ tıklayın ve **Hata Ayıklama ve Başlatma Ayarları'nı**seçin. Projenize en yakın eşleşen seçeneği seçin ve ardından yapılandırmayı gerektiği gibi değiştirmek için aşağıdaki özellikleri kullanın. CMake projelerinin hata ayıklama hakkında daha fazla bilgi için Bkz. [CMake hata ayıklama oturumlarını yapılandırın.](/cpp/build/configure-cmake-debugging-sessions)
 
-## <a name="default-properties"></a>Varsayılan Özellikler
+## <a name="default-properties"></a>Varsayılan özellikler
 
 ||||
 |-|-|-|
 |**Özellik**|**Tür**|**Açıklama**|
-|`name`|string|Hata ayıklama hedefi açılan menüsünde girdinin adını belirtir.|
-|`type`|string|Projenin bir dll veya. exe olup olmadığını belirtir (varsayılan olarak. exe)|
-|`project`|string|Proje dosyasının göreli yolunu belirtir.|
-|`projectTarget`|string|`project`oluşturulurken çağrılan isteğe bağlı hedefi belirtir. Bu `projectTarget` zaten mevcut olmalı ve **hata ayıklama hedefi** açılan menüsünde adıyla eşleşmelidir.|
-|`debugType`|string|Kod türüne göre hata ayıklama modunu belirtir (yerel, yönetilen veya karma). Bu parametre ayarlanmadığı takdirde bu otomatik olarak algılanır. İzin verilen değerler: "Native", "Managed", "mixed".|
-|`inheritEnvironments`|array|Birden çok kaynaktan devralınan bir ortam değişkenleri kümesini belirtir. *Cmakesettings. JSON* veya *cppproperties. JSON* gibi dosyalarda bazı değişkenler tanımlayabilir ve bunları hata ayıklama bağlamı için kullanılabilir hale getirebilirsiniz.  **Visual Studio 16,4:** : `env.VARIABLE_NAME` sözdizimini kullanarak her hedef için ortam değişkenlerini belirtin. Bir değişkeni kaldırmak için, "null" olarak ayarlayın.|
+|`name`|string|Hata Ayıklama hedef açılır düşüşündeki girişin adını belirtir.|
+|`type`|string|Projenin dll veya .exe olup olmadığını belirtir (Varsayılan olarak .exe)|
+|`project`|string|Proje dosyasına göreli yolu belirtir.|
+|`projectTarget`|string|Bina inşa `project`ederken çağrılan isteğe bağlı hedefi belirtir. Bu `projectTarget` zaten var olmalı ve **Hata Ayıklama Hedef** açılır durumdaki adı eşleştirmelidir.|
+|`debugType`|string|Hata ayıklama modunu kod türüne (yerel, yönetilen veya karışık) göre belirtir. Bu parametre ayarlanmadıkça bu otomatik olarak algılanır. İzin verilen değerler: "yerel", "yönetilen", "karışık".|
+|`inheritEnvironments`|array|Birden çok kaynaktan devralınan bir ortam değişkenleri kümesini belirtir. *CMakeSettings.json* veya *CppProperties.json* gibi dosyalarda bazı değişkenleri tanımlayabilir ve bunları hata ayıklama bağlamında kullanılabilir hale getirebilirsiniz.  **Visual Studio 16.4:**: `env.VARIABLE_NAME` Sözdizimini kullanarak ortam değişkenlerini hedef başına belirtin. Bir değişkeni ayarlamak için "null" olarak ayarlayın.|
 |`args`|array|Başlatılan programa geçirilen komut satırı bağımsız değişkenlerini belirtir.|
-|`currentDir`|string|Derleme hedefinin tam dizin yolunu belirtir. Bu parametre ayarlanmadığı takdirde bu otomatik olarak algılanır.|
-|`noDebug`|boole|Başlatılan programda hata ayıklama yapılıp yapılmayacağını belirtir. Bu parametre için varsayılan değer belirtilmezse `false`.|
-|`stopOnEntry`|boole|İşlem başlatıldığında ve hata ayıklayıcı iliştirip bu işlemin ne kadar kesmeyeceğini belirtir. Bu parametre için varsayılan değer `false`.|
+|`currentDir`|string|Hedef Oluştur'a giden tam dizin yolunu belirtir. Bu parametre ayarlanmadıkça bu otomatik olarak algılanır.|
+|`noDebug`|boole|Başlatılan programın hata ayıklanıp ayıklanmayacağını belirtir. Bu parametrenin varsayılan `false` değeri belirtilmemişse.|
+|`stopOnEntry`|boole|İşlem başlatılır başlatılır ve hata ayıklama takılır kısa bir süre içinde kırılıp kırılmayacağını belirtir. Bu parametrenin varsayılan `false`değeri .|
 |`remoteMachine`|string|Programın başlatıldığı uzak makinenin adını belirtir.|
-|`env`|array| Özel ortam değişkenlerinin anahtar-değer listesini belirtir. env: {"myEnv": "myVal"}.|
-|`portName`|string|Çalışan bir işleme eklenirken bağlantı noktasının adını belirtir.|
-|`buildConfigurations`|array| Yapılandırmaların uygulanacağı yapı modunun adını belirten bir anahtar-değer çifti. Örneğin, `Debug` veya `Release` ve seçilen derleme moduna göre kullanılacak yapılandırma.
+|`env`|array| Özel ortam değişkenlerinin anahtar değer listesini belirtir. env:{"myEnv":"myVal"}.|
+|`portName`|string|Çalışan bir işleme iliştirirken bağlantı noktasının adını belirtir.|
+|`buildConfigurations`|array| Yapılandırmaları uygulamak için yapı modunun adını belirten anahtar değer çifti. Örneğin, `Debug` veya `Release` ve seçili yapı moduna göre kullanılacak yapılandırmalar.
 
-## <a name="c-linux-properties"></a>C++Linux özellikleri
+## <a name="c-linux-properties"></a>C++ Linux özellikleri
 
 ||||
 |-|-|-|
 |**Özellik**|**Tür**|**Açıklama**|
-|`program`|string|Uzak makinedeki program yürütülebilirinin tam yolu. CMake kullanılırken makro `${debugInfo.fullTargetPath}` bu alanın değeri olarak kullanılabilir.|
-|`processId`|integer|Hata ayıklayıcıyı iliştirmek için isteğe bağlı işlem KIMLIĞI.|
-|`sourceFileMap`|object|Hata ayıklama altyapısına geçirilen isteğe bağlı kaynak dosya eşlemeleri. Biçim: `{ "\<Compiler source location>": "\<Editor source location>" }` veya `{ "\<Compiler source location>": { "editorPath": "\<Editor source location>", "useForBreakpoints": true } }`. Örnek: `{ "/home/user/foo": "C:\\foo" }` veya `{ "/home/user/foo": { "editorPath": "c:\\foo", "useForBreakpoints": true } }`. Bkz. [kaynak dosya haritası seçenekleri](#source_file_map_options).|
-|`additionalProperties`|string|SourceFileMapOptions biri. (Aşağıya bakın.)|
-|`MIMode`|string|MIDebugEngine 'in bağlanacağı mı özellikli konsol hata ayıklayıcısı türünü gösterir. İzin verilen değerler "gdb", "lldb" dir.|
-|`args`|array|Programa geçirilen komut satırı bağımsız değişkenleri.|
-|`environment`|array|Program için ortama eklenecek ortam değişkenleri. Örnek: [{"Name": "SQUID", "Value": "Clad"}].|
-|`targetArchitecture`|string|Hata ayıklanan mimarisi. Bu parametre ayarlanmadığı takdirde bu otomatik olarak algılanır. İzin verilen değerler x86, ARM, arm64, MIPS, x64, AMD64, x86_64.|
-|`visualizerFile`|string|Bu işlemde hata ayıklanırken kullanılacak. natvis dosyası. Bu seçenek, GDB düzgün yazdırma ile uyumlu değildir. Bu ayar kullanılıyorsa "showDisplayString" başlığına bakın.|
-|`showDisplayString`|boole|Bir Visualizerdosyası belirtildiğinde, showDisplayString Görüntüleme dizesini etkinleştirir. Bu seçeneği açmak hata ayıklama sırasında daha yavaş performans oluşmasına neden olabilir.|
-|`remoteMachineName`|string|GDB 'yi barındıran uzak Linux makinesi ve hata ayıklamak için program. Yeni Linux makineleri eklemek için bağlantı yöneticisini kullanın. CMake kullanılırken makro `${debugInfo.remoteMachineName}` bu alanın değeri olarak kullanılabilir.|
-|`cwd`|string|Uzak makinedeki hedefin çalışma dizini. CMake kullanılırken makro `${debugInfo.defaultWorkingDirectory}` bu alanın değeri olarak kullanılabilir. *Cmakelists. txt* dosyasında geçersiz kılınmadığı müddetçe, varsayılan değer uzak çalışma alanı köküdür.|
-|`miDebuggerPath`|string|Mı özellikli hata ayıklayıcının (gdb gibi) yolu. Belirtilmediğinde, ilk olarak hata ayıklayıcı için yol arar.|
-|`miDebuggerServerAddress`|string|Bağlanılacak mı özellikli hata ayıklayıcı sunucusunun ağ adresi. Örnek: localhost: 1234.|
-|`setupCommands`|array|Temel alınan hata ayıklayıcıyı ayarlamak için yürütülecek bir veya daha fazla GDB/LLDB komutu. Örnek: `"setupCommands": [ { "text": "-enable-pretty-printing", "description": "Enable GDB pretty printing", "ignoreFailures": true }]`. Bkz. [Kurulum komutlarını başlatma](#launch_setup_commands).|
-|`customLaunchSetupCommands`|array|Sağlanmışsa, bu, bir hedefi diğer komutlarla başlatmak için kullanılan varsayılan komutları değiştirir. Örneğin, bir hedef işleme iliştirmek için bu "-target-Attach" olabilir. Boş bir komut listesi, başlatma komutlarının hata ayıklayıcıda komut satırı seçenekleri olarak sağlanmakta olduğu durumlarda yararlı olabilecek hiçbir şey ile birlikte değiştirilir. Örnek: `"customLaunchSetupCommands": [ { "text": "target-run", "description": "run target", "ignoreFailures": false }]`.|
-|`launchCompleteCommand`|string|Hata ayıklayıcı, hedef işlemin çalışmasına neden olacak şekilde tamamen ayarlandıktan sonra yürütülecek komut. İzin verilen değerler şunlardır "exec-Run", "exec-Continue", "none". Varsayılan değer "exec-Run" değeridir.|
-|`debugServerPath`|string|Başlatılacak sunucuda hata ayıklama için isteğe bağlı tam yol. Varsayılan olarak null değerini alır.|
-|`debugServerArgs`|string|İsteğe bağlı hata ayıklama sunucusu bağımsız değişkenleri. Varsayılan olarak null değerini alır.|
-|`filterStderr`|boole|Sunucu tarafından başlatılan model için stderr akışında arama yapın ve hata ayıklama çıkışı için günlük stderr. `false` değerini varsayılan olarak alır.|
-|`coreDumpPath`|string|Belirtilen program için bir çekirdek döküm dosyasının isteğe bağlı tam yolu. Varsayılan olarak null değerini alır.|
-externalConsole|boole|True ise hata ayıklanan için bir konsol başlatılır. `false`, hiçbir konsol başlatılmaz. `false` değerini varsayılan olarak alır. NOTE: Bu seçenek, bazı durumlarda teknik nedenlerden dolayı yok sayılır.|
-|`pipeTransport`|string|Mevcut olduğunda, hata ayıklayıcıya, Visual Studio ile mı etkin hata ayıklayıcı (gdb gibi) arasında standart giriş/çıkış geçişi yapan bir kanal olarak başka bir yürütülebilir dosyayı kullanarak uzak bir bilgisayara bağlanmasını söyler. İzin verilen değerler: bir veya daha fazla [kanal taşıma seçeneği](#pipe_transport_options).|
+|`program`|string|Uzak makinede çalıştırılabilir programa tam yol. CMake kullanırken, `${debugInfo.fullTargetPath}` makro bu alanın değeri olarak kullanılabilir.|
+|`processId`|integer|Hata ayıklamayı eklemek için isteğe bağlı işlem kimliği.|
+|`sourceFileMap`|object|İsteğe bağlı kaynak dosya eşlemeleri hata ayıklama altyapısına geçti. `{ "\<Compiler source location>": "\<Editor source location>" }` Biçimlendirme: `{ "\<Compiler source location>": { "editorPath": "\<Editor source location>", "useForBreakpoints": true } }`veya . Örnek: `{ "/home/user/foo": "C:\\foo" }` veya `{ "/home/user/foo": { "editorPath": "c:\\foo", "useForBreakpoints": true } }`. [Bkz. Kaynak dosya eşlemi seçenekleri.](#source_file_map_options)|
+|`additionalProperties`|string|KaynakFileMapOptions biri. (Aşağıya bakın.)|
+|`MIMode`|string|MIDebugEngine'in bağlanacak MI özellikli konsol hata ayıklama türünü gösterir. İzin verilen değerler "gdb", "lldb"dir.|
+|`args`|array|Komut satırı bağımsız değişkenleri programa geçti.|
+|`environment`|array|Program için ortama eklemek için ortam değişkenleri. Örnek: [ { "isim": "kalamar", "değer": "istiridye" } }.|
+|`targetArchitecture`|string|Hata ayıklamanın mimarisi. Bu parametre ayarlanmadıkça bu otomatik olarak algılanır. İzin verilen değerler x86, kol, arm64, mips, x64, amd64, x86_64.|
+|`visualizerFile`|string|.natvis dosyası bu işlemi hata ayıklarken kullanılacaktır. Bu seçenek GDB güzel baskı ile uyumlu değildir. Bu ayarı kullanıyorsanız "showDisplayString" adlı bakın.|
+|`showDisplayString`|boole|VisualizerFile belirtildiğinde, showDisplayString ekran dizesini etkinleştirecektir. Bu seçeneğin açıkça çıkırılışhata hatası sırasında daha düşü|
+|`remoteMachineName`|string|Hata ayıklamak için gdb ve program barındıran uzak Linux makinesi. Yeni Linux makineleri eklemek için Bağlantı Yöneticisi'ni kullanın. CMake kullanırken, `${debugInfo.remoteMachineName}` makro bu alanın değeri olarak kullanılabilir.|
+|`cwd`|string|Uzak makinedeki hedefin çalışma dizini. CMake kullanırken, `${debugInfo.defaultWorkingDirectory}` makro bu alanın değeri olarak kullanılabilir. Varsayılan değer, *CMakeLists.txt* dosyasında geçersiz kılınmadığı sürece uzak çalışma alanı köküdür.|
+|`miDebuggerPath`|string|MI etkin hata ayıklama (gdb gibi) yolu. Belirtilmemiş olduğunda, hata ayıklama için önce PATH'i arar.|
+|`miDebuggerServerAddress`|string|Bağlanmak için MI etkin hata ayıklama sunucusunun ağ adresi. Örnek: localhost:1234.|
+|`setupCommands`|array|Altta yatan hata ayıklayıcıyı ayarlamak için yürütülmesi gereken bir veya daha fazla GDB/LLDB komutu. Örnek: `"setupCommands": [ { "text": "-enable-pretty-printing", "description": "Enable GDB pretty printing", "ignoreFailures": true }]`. Bkz. [Başlat kurulum komutları.](#launch_setup_commands)|
+|`customLaunchSetupCommands`|array|Sağlanan, bu diğer bazı komutları ile bir hedef başlatmak için kullanılan varsayılan komutları değiştirir. Örneğin, bu bir hedef işlemine eklemek için "hedef ekleme" olabilir. Boş bir komut listesi, başlatma komutlarının yerini hiçbir şey olmadan alır ve hata ayıklama komut satırı seçenekleri olarak başlatma seçenekleri sağlanıyorsa yararlı olabilir. Örnek: `"customLaunchSetupCommands": [ { "text": "target-run", "description": "run target", "ignoreFailures": false }]`.|
+|`launchCompleteCommand`|string|Hata ayıklama tamamen ayarlandıktan sonra yürütülecek komut, hedef işlemin çalışmasına neden olmak için. İzin verilen değerler "exec-run", "exec-continue", "None" dır. Varsayılan değer "exec-run"dır.|
+|`debugServerPath`|string|Başlatılan sunucu hata ayıklama için isteğe bağlı tam yol. Varsayılan olarak null.|
+|`debugServerArgs`|string|İsteğe bağlı hata ayıklama sunucusu args. Varsayılan olarak null.|
+|`filterStderr`|boole|Sunucu tarafından başlatılan desen için stderr akışını arayın ve çıktıyı hata ayıklamak için stderr'ı günlüğe kaydedin. Varsayılan `false`değer.|
+|`coreDumpPath`|string|Belirtilen program için bir çekirdek dökümü dosyasına isteğe bağlı tam yol. Varsayılan olarak null.|
+hariciKonsol|boole|Doğruysa, hata ayıklama için bir konsol başlatılır. Eğer `false`, hiçbir konsol başlatılır. Varsayılan `false`değer. NOT: Bu seçenek bazı durumlarda teknik nedenlerle yoksayılır.|
+|`pipeTransport`|string|Bu, hata ayıklama cıvık bir kullanıcıya Visual Studio ile MI özellikli hata ayıklama (gdb gibi) arasında standart giriş/çıkışı aktaracak bir boru olarak çalıştırılabilir başka bir çalıştırıcı kullanarak uzak bir bilgisayara bağlanmasını söyler. İzin verilen değerler: bir veya daha fazla [Boru Taşıma Seçeneği.](#pipe_transport_options)|
 
-## <a name="launch-setup-commands"></a><a name="launch_setup_commands"></a>Kurulum komutlarını Başlat
+## <a name="launch-setup-commands"></a><a name="launch_setup_commands"></a>Başlatma kurulum komutları
 
-`setupCommands` özelliği ile kullanılır:
+`setupCommands` Özellik ile birlikte kullanılır:
 
 ||||
 |-|-|-|
-|`text`|string|Yürütülecek hata ayıklayıcı komutu.|
+|`text`|string|Yürütmeiçin hata ayıklama komutu.|
 |`description`|string|Komut için isteğe bağlı açıklama.|
-|`ignoreFailures`|boole|Doğru ise, komuttan gelen hataların yok sayılacak olması gerekir. `false` değerini varsayılan olarak alır.|
+|`ignoreFailures`|boole|Doğruysa, komuttaki hatalar yoksayılmalıdır. Varsayılan `false`değer.|
 
-## <a name="pipe-transport-options"></a><a name = "pipe_transport_options"></a>Kanal taşıma seçenekleri
+## <a name="pipe-transport-options"></a><a name = "pipe_transport_options"></a>Boru taşıma seçenekleri
 
-`pipeTransport` özelliği ile kullanılır:
-
-||||
-|-|-|-|
-|`pipeCwd`|string|Kanal programı için çalışma dizininin tam yolu.|
-|`pipeProgram`|string|Yürütülecek tam kanal komutu.|
-|`pipeArgs`|array|Bağlantıyı yapılandırmak için kanal programına geçirilen komut satırı bağımsız değişkenleri.|
-|`debuggerPath`|string|Hedef makinedeki hata ayıklayıcının tam yolu; Örneğin,/usr/bin/gdb.|
-|`pipeEnv`|object|Kanal programına geçirilen ortam değişkenleri.|
-|`quoteArgs`|boole|Bağımsız değişkenler tek tek karakterler içeriyorsa (boşluk veya sekmeler gibi) tırnak içine alınmalıdır mi? `false`, hata ayıklayıcı komutu artık otomatik olarak tırnak içine alınmaz. `true` varsayılan değerdir.|
-
-## <a name="source-file-map-options"></a><a name="source_file_map_options"></a>Kaynak dosya eşleme seçenekleri
-
-`sourceFileMap` özelliği ile kullanın:
+`pipeTransport` Özellik ile birlikte kullanılır:
 
 ||||
 |-|-|-|
-|`editorPath`|string|Bulacak düzenleyicinin kaynak kodunun konumu.|
-|`useForBreakpoints`|boole|Kesme noktaları ayarlanırken, bu kaynak eşlemesinin kullanılması gerekir. `false`, kesme noktaları ayarlamak için yalnızca dosya adı ve satır numarası kullanılır. `true`, kesme noktaları dosyanın tam yolu ve yalnızca bu kaynak eşleme kullanıldığında satır numarası ile ayarlanır. Aksi takdirde, kesme noktaları ayarlanırken yalnızca dosya adı ve satır numarası kullanılacaktır. `true` varsayılan değerdir.|
+|`pipeCwd`|string|Boru programı için çalışma dizinine tam nitelikli yol.|
+|`pipeProgram`|string|Yürütmek için tam nitelikli boru komutu.|
+|`pipeArgs`|array|Bağlantıyı yapılandırmak için boru programına geçirilen komut satırı bağımsız değişkenleri.|
+|`debuggerPath`|string|Hedef makinedeki hata ayıklayıcıya giden tam yol, örneğin /usr/bin/gdb.|
+|`pipeEnv`|object|Çevre değişkenleri boru programına geçti.|
+|`quoteArgs`|boole|Tek tek bağımsız değişkenler karakterler içeriyorsa (boşluklar veya sekmeler gibi), alıntı yapılmalı mıdır? Eğer `false`, hata ayıklama komutu artık otomatik olarak alıntı olacaktır. `true` varsayılan değerdir.|
+
+## <a name="source-file-map-options"></a><a name="source_file_map_options"></a>Kaynak dosya eşlemi seçenekleri
+
+`sourceFileMap` Özellik ile kullanın:
+
+||||
+|-|-|-|
+|`editorPath`|string|Düzenleyicinin bulması için kaynak kodun konumu.|
+|`useForBreakpoints`|boole|Kesme noktaları ayarı yaparken, bu kaynak eşleme kullanılmalıdır. Kesme `false`noktalarını ayarlamak için yalnızca dosya adı ve satır numarası kullanılırsa. Eğer, `true`kesme noktaları yalnızca bu kaynak eşlemi kullanıldığında dosya ve satır numarasına tam yol ile ayarlanır. Aksi takdirde, kesme noktaları ayarlanırken sadece dosya adı ve satır numarası kullanılır. `true` varsayılan değerdir.|

@@ -1,6 +1,6 @@
 ---
 title: Bağlayıcı sınıfı
-description: C++ Derleme ÖNGÖRÜLERI SDK Bağlayıcısı sınıf başvurusu.
+description: C++ Build Insights SDK Linker sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: bb8948d7772046e18d5db5002deed48d0dd88375
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: e5d4c0c3841377fc2e029c23d5cbbd076c8029cc
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333190"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81324594"
 ---
 # <a name="linker-class"></a>Bağlayıcı sınıfı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`Linker` sınıfı [Matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [Bağlayıcı](../event-table.md#linker) olayını eşleştirmek için kullanın.
+Sınıf `Linker` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [Bir LINKER](../event-table.md#linker) olayıyla eşleştirmek için kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-Devralınan üyelerin, [çağırma](invocation.md) temel sınıfından birlikte `Linker` sınıfı aşağıdaki üyeleri içerir:
+[Çağrı](invocation.md) taban sınıfından devralınan üyelerle birlikte, `Linker` sınıf aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
 [Bağlayıcı](#linker)
 
-## <a name="linker"></a>Bağlayıcı
+## <a name="linker"></a><a name="linker"></a>Bağlayıcı
 
 ```cpp
 Linker(const RawEvent& event);
@@ -53,7 +53,7 @@ Linker(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*olay*\
-[Bağlayıcı](../event-table.md#linker) olayı.
+*Olay*\
+Bir [LINKER](../event-table.md#linker) olayı.
 
 ::: moniker-end

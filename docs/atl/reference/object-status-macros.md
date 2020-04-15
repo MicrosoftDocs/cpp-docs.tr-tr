@@ -1,19 +1,19 @@
 ---
-title: Nesne durumu makroları
+title: Nesne Durumu Makroları
 ms.date: 11/04/2016
 f1_keywords:
 - atlcom/ATL::DECLARE_OLEMISC_STATUS
 ms.assetid: 727dbef2-a342-4157-9d64-a421805d9747
-ms.openlocfilehash: dc50825d6b6e74dc263a097e86d8ea0d42989825
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 5617ce7fb972c98775072f72244f91052d41ece3
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69495315"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81326174"
 ---
-# <a name="object-status-macros"></a>Nesne durumu makroları
+# <a name="object-status-macros"></a>Nesne Durumu Makroları
 
-Bu makro, ActiveX denetimlerine ait olan bayrakları ayarlar.
+Bu makro, ActiveX denetimlerine ait bayrakları ayarlar.
 
 |||
 |-|-|
@@ -21,9 +21,9 @@ Bu makro, ActiveX denetimlerine ait olan bayrakları ayarlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcom. h
+**Başlık:** atlcom.h
 
-##  <a name="declare_olemisc_status"></a>DECLARE_OLEMISC_STATUS
+## <a name="declare_olemisc_status"></a><a name="declare_olemisc_status"></a>DECLARE_OLEMISC_STATUS
 
 OLEMISC bayraklarını ayarlamak için ATL ActiveX denetimlerinde kullanılır.
 
@@ -33,12 +33,12 @@ DECLARE_OLEMISC_STATUS( miscstatus )
 
 ### <a name="parameters"></a>Parametreler
 
-*Hatalı CStatus*<br/>
+*yanlış durum*<br/>
 Tüm geçerli OLEMISC bayrakları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro, bir ActiveX denetimi için OLEMISC bayraklarını ayarlamak üzere kullanılır. Daha fazla ayrıntı için [IOleObject:: GetMiscStatus](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getmiscstatus) öğesine bakın.
+Bu makro, ActiveX denetimi için OLEMISC bayraklarını ayarlamak için kullanılır. Daha fazla bilgi için [IOleObject::GetMiscStatus'e](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getmiscstatus) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -46,4 +46,4 @@ Bu makro, bir ActiveX denetimi için OLEMISC bayraklarını ayarlamak üzere kul
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Larının](../../atl/reference/atl-macros.md)
+[Makrolar](../../atl/reference/atl-macros.md)

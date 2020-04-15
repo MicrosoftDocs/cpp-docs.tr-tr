@@ -1,5 +1,5 @@
 ---
-title: '/ ZC: alignednew (c ++ 17 aşırı hizalanmış ayırma)'
+title: /Zc:alignedNew (C++17 aşırı hizalanmış ayırma)
 ms.date: 05/18/2019
 f1_keywords:
 - /Zc:alignedNew
@@ -7,32 +7,32 @@ helpviewer_keywords:
 - /Zc:alignedNew
 - Zc:alignedNew
 - -Zc:alignedNew
-ms.openlocfilehash: dfcc4982e1b5f67b5a01d5a0d09d4fd9279deacf
-ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
+ms.openlocfilehash: 041f62bbbf5f7a2750960d21d1534cf6daf4b874
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934188"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81335691"
 ---
-# <a name="zcalignednew-c17-over-aligned-allocation"></a>/ ZC: alignednew (c ++ 17 aşırı hizalanmış ayırma)
+# <a name="zcalignednew-c17-over-aligned-allocation"></a>/Zc:alignedNew (C++17 aşırı hizalanmış ayırma)
 
-C ++ 17 aşırı hizalanmış desteğini etkinleştirme **yeni**, dinamik bellek ayırma türü için varsayılan en büyük boyutlu standart hizalanmış, büyüktür sınırlarda hizalanmış **max\_hizalama\_t**.
+C++17 için desteği etkinleştirin aşırı hizalanmış **yeni,** dinamik bellek ayırma sınırları maksimum boyutlu standart hizalanmış türü için varsayılandan daha büyük hizalanmış, **max\_align\_t**.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ Zc:alignedNew**\[-]
+> **/Zc:alignedYeni**\[-]
 
 ## <a name="remarks"></a>Açıklamalar
 
-MSVC derleyici ve kitaplık C ++ 17 aşırı hizalanmış standart dinamik bellek ayırma destekler. Zaman **/ZC: alignednew** seçeneği belirtildiğinde, bir dinamik ayırma gibi `new Example;` hizalamasını uyar *örnek* bile büyük olduğunda `max_align_t`, en büyük hizalama herhangi bir temel türü için gereklidir. Ayrılmış türün hizalama olduğunda özgün işleciyle garanti hizalama en fazla **yeni**önceden tanımlanmış makro değeri olarak sunulan  **\_ \_STDCPP\_ Varsayılan\_yeni\_hizalama\_\_**, deyim `new Example;` sonuçları bir çağrıda `::operator new(size_t)` C ++ 14 sürümünde yaptığınız gibi. Hizalama olduğunda daha büyük  **\_ \_STDCPP\_varsayılan\_yeni\_hizalama\_\_**, bunun yerine uygulama alır kullanarak bellek `::operator new(size_t, align_val_t)`. Benzer şekilde, aşırı hizalanmış türlere silinmesini çağırır `::operator delete(void*, align_val_t)` veya imza boyutlu silme `::operator delete(void*, size_t, align_val_t)`.
+MSVC derleyicisi ve kitaplık C++17 standart aşırı hizalanmış dinamik bellek ayırmayı destekler. **/Zc:alignedNew** seçeneği belirtildiğinde, herhangi bir `new Example;` temel tür için gereken en büyük hizalamadan daha büyük `max_align_t`olsa bile *Örnek'in* hizalanmasına saygı gösterin gibi dinamik bir ayırma. Ayrılan türün hizalaması, önceden tanımlanmış makro `new Example;` `::operator new(size_t)` ** \_ \_STDCPP\_DEFAULT\_YENİ\_HIZALAMA\_** değeri olarak kullanılabilir orijinal işleç **tarafından**garanti edilen hizalama dan daha fazla olmadığında, ekstre C++14'te olduğu gibi bir çağrıyla sonuçlanır. Hizalama ** \_ \_STDCPP\_VARSAYıLAN\_Yenİ\_HIZALAMA\_** daha büyük olduğunda, uygulama yerine kullanarak `::operator new(size_t, align_val_t)`bellek elde eder. Benzer şekilde, aşırı hizalanmış türleri silme `::operator delete(void*, align_val_t)` çağırır veya boyutu `::operator delete(void*, size_t, align_val_t)`silme imza.
 
-**/ZC: alignednew** seçeneği, yalnızca kullanılabilir olduğunda [/Std: c ++ 17](std-specify-language-standard-version.md) veya [/Std: c ++ Son](std-specify-language-standard-version.md) etkinleştirilir. Altında **/Std: c ++ 17** veya **/Std: c ++ Son**, **/ZC: alignednew** ISO C ++ 17 standardına uygun olması için varsayılan olarak etkindir. Tek nedeni, işleci uygulamak **yeni** ve **Sil** aşırı hizalanmış ayırma desteklemek için artık C ++ 17 modunda bu kodu ihtiyacınız. Bu seçeneği kapatmak ve C ++ 14 davranışı için dönmek için **yeni** ve **Sil** kullandığınızda **/std::c ++ 17** veya **/Std: c ++ Son**, belirtin **/Zc:alignedNew-**. İşleç uygularsanız **yeni** ve **Sil** ancak aşırı hizalanmış işleci uygulamak hazır değilseniz **yeni** ve **Sil** sahip aşırı yüklemeler `align_val_t` parametresi, kullanım **/Zc:alignedNew-** çağrılarını aşırı hizalanmış aşırı yüklemeler için standart kitaplık ve derleyici oluşturmasını önlemek için seçeneği. [/ Permissive-](permissive-standards-conformance.md) seçeneği, varsayılan ayar değiştirmez **/ZC: alignednew**.
+**/Zc:alignedYeni** seçenek yalnızca [/std:c++17](std-specify-language-standard-version.md) veya [/std:c++en son](std-specify-language-standard-version.md) etkinleştirildiğinde kullanılabilir. **/std:c++17** veya **/std:c++en son**, **/Zc:alignedNew** varsayılan olarak ISO C++17 standardına uygun olarak etkinleştirilir. Operatör **yeni** ve **silme** uygulamanıztek nedeni aşırı hizalanmış ayırmaları desteklemekse, artık Bu koda C++17 modunda ihtiyacınız olmayabilir. Bu seçeneği kapatmak ve **delete** **/std::c++17** veya **/std:c++latest**, belirt **/Zc:alignedNew-**. **new** İşleç **yeni** uygular ve **sil,** ancak aşırı hizalanmış işleç **yeni** uygulamak ve `align_val_t` parametre var aşırı yükleri **silmek** için hazır değilseniz, derleyici ve Standart Kitaplık aşırı hizalanmış aşırı yüklere çağrı lar üreten önlemek için **/Zc:alignedNew-** seçeneğini kullanın. [/izin verme seçeneği](permissive-standards-conformance.md) **/Zc:alignedNew**varsayılan ayarını değiştirmez.
 
-Destek **/ZC: alignednew** Visual Studio 2017 15.5 sürümünden itibaren kullanıma sunuluyor.
+**/Zc:alignedNew** desteği Visual Studio 2017 sürüm 15.5'ten itibaren kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, gösterir nasıl işleci **yeni** ve işleci **Sil** ne zaman davranır **/ZC: alignednew** seçeneği ayarlanır.
+Bu örnek, **/Zc:alignedNew** seçeneği ayarlandığında işleç **yeni** ve işleci **silmenin** nasıl bir şekilde nasıl olduğunu gösterir.
 
 ```cpp
 // alignedNew.cpp
@@ -86,7 +86,7 @@ int main() {
 }
 ```
 
-Bu çıkış, 32-bit derlemeler için yaygın bir durumdur. Değerler farklı işaretçi, uygulamanızın bellek içinde çalıştığı temel.
+Bu çıktı 32 bit yapılar için tipiktir. İşaretçi değerleri, uygulamanızın bellekte nerede çalıştığına bağlı olarak değişir.
 
 ```Output
 unaligned new(4) = 009FD0D0
@@ -95,15 +95,15 @@ aligned new(256, 256) = 009FE800
 aligned sized delete(009FE800, 256, 256)
 ```
 
-Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Visual C++'daki uyumluluk sorunları hakkında bilgi için standart [dışı davranış](../../cpp/nonstandard-behavior.md)konusuna bakın.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+1. Yapılandırma **Özellikleri** > **C/C++** > **Komut Satırı** özelliği sayfasını seçin.
 
-1. Değiştirme **ek seçenekler** eklenecek özellik **/ZC: alignednew** veya **/Zc:alignedNew-** seçip **Tamam**.
+1. Ek **Seçenekler** özelliğini **/Zc:alignedNew** veya **/Zc:alignedNew-** içerecek şekilde değiştirin ve ardından **Tamam'ı**seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

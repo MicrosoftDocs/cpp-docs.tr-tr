@@ -1,5 +1,5 @@
 ---
-title: CComCoClass sınıfı
+title: Ccomcoclass Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComCoClass
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - CComCoClass class
 - aggregation [C++], aggregation models
 ms.assetid: 67cfefa4-8df9-47fa-ad58-2d1a1ae25762
-ms.openlocfilehash: 5b4e39fa4d93893d288bb8de03d8a71b671be087
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 11e724a982f3a2f404473dbdd34d848842cc8e14
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417945"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81320835"
 ---
-# <a name="ccomcoclass-class"></a>CComCoClass sınıfı
+# <a name="ccomcoclass-class"></a>Ccomcoclass Sınıfı
 
-Bu sınıf, bir sınıfın örneklerini oluşturmak ve özelliklerini almak için yöntemler sağlar.
+Bu sınıf, bir sınıfın örneklerini oluşturmak ve özelliklerini elde etmek için yöntemler sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,44 +32,44 @@ class CComCoClass
 
 #### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Sınıfınız `CComCoClass`türetilir.
+*T*<br/>
+Sınıfınızdan `CComCoClass`türetilmiştir.
 
-*pCLSID*<br/>
-Nesnenin CLSID 'sine yönelik bir işaretçi.
+*pclsid*<br/>
+Nesnenin CLSID için bir işaretçi.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CComCoClass:: CreateInstance](#createinstance)|Se Bir arabirim için sınıf ve sorgular örneği oluşturur.|
-|[CComCoClass:: Error](#error)|Se İstemciye zengin hata bilgileri döndürür.|
-|[CComCoClass:: GetObjectCLSID](#getobjectclsid)|Se Nesnenin sınıf tanımlayıcısını döndürür.|
-|[CComCoClass:: GetObjectDescription](#getobjectdescription)|Se Nesnenin açıklamasını döndürmek için geçersiz kılın.|
+|[CcomcoClass::CreateInstance](#createinstance)|(Statik) Sınıfın bir örneğini ve arabirim sorgularını oluşturur.|
+|[CcomcoClass::Hata](#error)|(Statik) İstemciye zengin hata bilgilerini verir.|
+|[CcomcoClass::GetObjectCLSID](#getobjectclsid)|(Statik) Nesnenin sınıf tanımlayıcısını döndürür.|
+|[CcomcoClass::GetObjectDescription](#getobjectdescription)|(Statik) Nesnenin açıklamasını döndürmek için geçersiz kılın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComCoClass`, bir nesnenin CLSID 'SINI alma, hata bilgilerini ayarlama ve sınıfının örneklerini oluşturma yöntemlerini sağlar. Nesne haritasında kayıtlı olan herhangi bir sınıf `CComCoClass`türetilmelidir.
+`CComCoClass`nesnenin CLSID'sini almak, hata bilgilerini ayarlamak ve sınıfın örneklerini oluşturmak için yöntemler sağlar. Nesne eşlemi'nde kayıtlı herhangi `CComCoClass`bir sınıf.
 
-`CComCoClass` Ayrıca nesneniz için varsayılan sınıf fabrikası ve toplama modelini tanımlar. `CComCoClass` aşağıdaki iki makroyu kullanır:
+`CComCoClass`nesneniz için varsayılan sınıf fabrika sını ve toplama modelini de tanımlar. `CComCoClass`aşağıdaki iki makroyu kullanır:
 
 - [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory) Sınıf fabrikasını [CComClassFactory](../../atl/reference/ccomclassfactory-class.md)olarak bildirir.
 
-- [declare_aggregatable](aggregation-and-class-factory-macros.md#declare_aggregatable) Nesnenizin toplanabilecek olduğunu bildirir.
+- [DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable) Nesnenizin toklanınabileceğini bildirir.
 
-Sınıf tanımınızda başka bir makro belirterek, bu varsayılandan birini geçersiz kılabilirsiniz. Örneğin, `CComClassFactory`yerine [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) kullanmak için [DECLARE_CLASSFACTORY2](aggregation-and-class-factory-macros.md#declare_classfactory2) makrosunu belirtin:
+Sınıf tanımınızda başka bir makro belirterek bu varsayılanlardan birini geçersiz kılabilirsiniz. Örneğin, [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) yerine kullanmak `CComClassFactory`için, [DECLARE_CLASSFACTORY2](aggregation-and-class-factory-macros.md#declare_classfactory2) makro belirtin:
 
 [!code-cpp[NVC_ATL_COM#2](../../atl/codesnippet/cpp/ccomcoclass-class_1.h)]
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcom. h
+**Başlık:** atlcom.h
 
-##  <a name="createinstance"></a>CComCoClass:: CreateInstance
+## <a name="ccomcoclasscreateinstance"></a><a name="createinstance"></a>CcomcoClass::CreateInstance
 
-Com API 'SI kullanmadan bir COM nesnesi örneği oluşturmak ve bir arabirim işaretçisi almak için bu `CreateInstance` işlevleri kullanın.
+Com `CreateInstance` nesnesinin bir örneğini oluşturmak ve COM API'sini kullanmadan bir arabirim işaretçisi almak için bu işlevleri kullanın.
 
 ```
 template <class  Q>
@@ -81,38 +81,38 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ç*<br/>
-*PP*aracılığıyla DÖNDÜRÜLMESI gereken com arabirimi.
+*S*<br/>
+*pp*üzerinden döndürülmesi gereken COM arabirimi .
 
 *punkOuter*<br/>
-'ndaki Toplam bilinmiyor veya bilinmeyen denetim.
+[içinde] Dış bilinmeyen veya toplam bilinmeyen kontrol.
 
-*Sy*<br/>
-dışı Oluşturma başarılı olursa istenen arabirim işaretçisini alan bir işaretçi değişkeninin adresi.
+*S*<br/>
+[çıkış] Oluşturma başarılı olursa istenen arabirim işaretçisi alan bir işaretçi değişkeninin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değeri. Olası dönüş değerlerinin bir açıklaması için Windows SDK 'de [Cocreateınstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) ' a bakın.
+Standart bir HRESULT değeri. Olası iade değerlerinin açıklaması için Windows SDK'daki [CoCreateInstance'a](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normal nesne oluşturma için bu işlevin ilk tekrar yüklemesini kullanın; oluşturulan nesneyi toplamanız gerektiğinde ikinci aşırı yüklemeyi kullanın.
+Tipik nesne oluşturma için bu işlevin ilk aşırı yükünü kullanın; oluşturulan nesneyi toplamanız gerektiğinde ikinci aşırı yüklemeyi kullanın.
 
-Gerekli COM nesnesini uygulayan ATL sınıfı (yani, [CComCoClass](../../atl/reference/ccomcoclass-class.md)için ilk şablon parametresi olarak kullanılan sınıf), çağıran kodla aynı projede olmalıdır. COM nesnesinin oluşturulması, bu ATL sınıfı için kaydedilen sınıf fabrikası tarafından yürütülür.
+Gerekli COM nesnesini (diğer bir deyişle [CComCoClass'ın](../../atl/reference/ccomcoclass-class.md)ilk şablon parametresi olarak kullanılan sınıf) uygulayan ATL sınıfı, arama koduyla aynı projede olmalıdır. COM nesnesinin oluşturulması, bu ATL sınıfı için kayıtlı sınıf fabrikası tarafından gerçekleştirilir.
 
-Bu işlevler, [object_entry_non_createable_ex_auto](object-map-macros.md#object_entry_non_createable_ex_auto) makrosunu kullanarak dışarıdan oluşturulaönleyen nesneleri oluşturmak için faydalıdır. Bu durumlar Ayrıca, verimlilik açısından COM API 'sinden kaçınmak istediğiniz durumlarda faydalıdır.
+Bu işlevler, [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO makroyu](object-map-macros.md#object_entry_non_createable_ex_auto) kullanarak harici olarak gıyatılabilir olmasını engellediğiniz nesneleri oluşturmak için yararlıdır. Bunlar, verimlilik nedenleriyle COM API'den kaçınmak istediğiniz durumlarda da yararlıdır.
 
-*Q* arabiriminin, [__uuidof](../../cpp/uuidof-operator.md) işleci kullanılarak ALıNABILECEK kendisiyle ilişkili bir IID 'ye sahip olması gerektiğini unutmayın.
+*Q* arabiriminin [__uuidof](../../cpp/uuidof-operator.md) işleci kullanılarak alınabilecek bir IID'si olması gerektiğini unutmayın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte `CDocument`, `IDocument` arabirimini uygulayan `CComCoClass` türetilmiş, sihirbaz tarafından oluşturulan ATL sınıfıdır. Bu sınıf, OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO makrosuna sahip nesne haritasına kaydedilir, böylelikle istemciler [Cocreateınstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)kullanarak belge örnekleri oluşturamaz. `CApplication`, kendi COM arabirimlerinden birine belge sınıfının örneklerini oluşturmak için bir yöntem sağlayan bir CoClass ' dır. Aşağıdaki kod, `CComCoClass` temel sınıfından devralınan `CreateInstance` üyesini kullanarak belge sınıfının örneklerinin ne kadar kolay oluşturulduğunu gösterir.
+Aşağıdaki örnekte, `CDocument` `IDocument` arabirimi uygulayan sihirbaz tarafından `CComCoClass` oluşturulan BirTL sınıfı türetilmiştir. Sınıf, OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO makrosuyla nesne eşlemi içinde kayıtlıdır, bu nedenle istemciler [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)kullanarak belgenin örneklerini oluşturamaz. `CApplication`belge sınıfının örneklerini oluşturmak için kendi COM arabirimlerinden birinde bir yöntem sağlayan bir CoClass'tır. Aşağıdaki kod, taban sınıftan devralınan `CreateInstance` üyeyi kullanarak belge sınıfının `CComCoClass` örneklerini oluşturmanın ne kadar kolay olduğunu gösterir.
 
 [!code-cpp[NVC_ATL_COM#11](../../atl/codesnippet/cpp/ccomcoclass-class_2.cpp)]
 
-##  <a name="error"></a>CComCoClass:: Error
+## <a name="ccomcoclasserror"></a><a name="error"></a>CcomcoClass::Hata
 
-Bu statik işlev, istemciye hata bilgilerini sağlamak için `IErrorInfo` arabirimini ayarlar.
+Bu statik işlev `IErrorInfo` istemciye hata bilgisi sağlamak için arabirimi ayarlar.
 
 ```
 static HRESULT WINAPI Error(
@@ -157,39 +157,39 @@ static HRESULT Error(
 ### <a name="parameters"></a>Parametreler
 
 *lpszDesc*<br/>
-'ndaki Hatayı açıklayan dize. `Error` Unicode sürümü, *lpszDesc* 'ın LPCOTASTR; türünde olduğunu belirtir ANSI sürümü bir LPCSTR türü belirtir.
+[içinde] Hatayı açıklayan dize. `Error` *LpszDesc'in* Unicode sürümü LPCOLESTR tipi olduğunu belirtir; ANSI sürümü bir LPCSTR türünü belirtir.
 
-*'si*<br/>
-'ndaki Hata veya GUID_NULL tanımlayan arabirimin IID 'si (varsayılan değer) işletim sistemi tarafından tanımlanmışsa.
+*ııd*<br/>
+[içinde] Hata işletim sistemi tarafından tanımlanırsa, hatayı tanımlayan arabirimin ikimliği veya GUID_NULL (varsayılan değer).
 
 *hRes*<br/>
-'ndaki Çağırana geri dönmek istediğiniz HRESULT. Varsayılan değer 0'dır. *HRes*hakkında daha fazla bilgi için bkz. açıklamalar.
+[içinde] Arayana döndürülmek istediğiniz HRESULT. Varsayılan değer 0’dır. *hRes*hakkında daha fazla bilgi için, Açıklamalar'a bakın.
 
-*NID*<br/>
-'ndaki Hata açıklaması dizesinin depolandığı kaynak tanımlayıcısı. Bu değer, ikisi de dahil olmak üzere 0x0200 ile 0xFFFF arasında olmalıdır. Hata ayıklama yapılarında, *NID* geçerli bir dizeye Dizin oluşturmadığı takdirde bir **onaylama** sonucu olur. Yayın derlemeleri ' nde hata açıklaması dizesi "Bilinmeyen hata" olarak ayarlanır.
+*Nıd*<br/>
+[içinde] Hata açıklaması dizesinin depolandığı kaynak tanımlayıcısı. Bu değer 0x0200 ile 0xFFFF arasında olmalıdır. Hata ayıklama yapılarında, *nID* geçerli bir dize ekizin vermezse bir **Assert** ortaya çıkacaktır. Sürüm yapılarında, hata açıklaması dizesi "Bilinmeyen Hata" olarak ayarlanır.
 
 *dwHelpID*<br/>
-'ndaki Hatanın yardım bağlamı tanımlayıcısı.
+[içinde] Hata için yardım bağlamı tanımlayıcısı.
 
 *lpszHelpFile*<br/>
-'ndaki Hatayı açıklayan Yardım dosyasının yolu ve adı.
+[içinde] Hatayı açıklayan yardım dosyasının yolu ve adı.
 
 *hInst*<br/>
-'ndaki Kaynağın tanıtıcısı. Varsayılan olarak, bu parametre `_AtlModule::GetResourceInstance`, burada `_AtlModule` [CAtlModule](../../atl/reference/catlmodule-class.md)'un genel örneğidir.
+[içinde] Kaynağa tanıtıcı. Varsayılan olarak, bu `_AtlModule::GetResourceInstance`parametre `_AtlModule` , [CAtlModule'in](../../atl/reference/catlmodule-class.md)genel örneğidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değeri. Ayrıntılar için bkz. açıklamalar.
+Standart bir HRESULT değeri. Ayrıntılar için Açıklamalar'a bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Error`çağırmak için, nesnenizin `ISupportErrorInfo Interface` arabirimini uygulaması gerekir.
+Aramak `Error`için nesnenizin `ISupportErrorInfo Interface` arabirimi uygulaması gerekir.
 
-*HRes* parametresi sıfır değilse `Error`, *hRes*'nin değerini döndürür. *HRes* sıfırsa, `Error` ilk dört sürümü DISP_E_EXCEPTION döndürür. Son iki sürüm MAKE_HRESULT makro sonucunu döndürür **(1, FACILITY_ITF,** *NID* **)** .
+*hRes* parametresi sıfır değilse, `Error` *hRes*değerini döndürür. *HRes* sıfır ise, `Error` daha sonra DISP_E_EXCEPTION dönmek ilk dört sürümü. Son iki sürüm makro MAKE_HRESULT **(1, FACILITY_ITF,** *nID)* **)** sonucunu döndürer.
 
-##  <a name="getobjectclsid"></a>CComCoClass:: GetObjectCLSID
+## <a name="ccomcoclassgetobjectclsid"></a><a name="getobjectclsid"></a>CcomcoClass::GetObjectCLSID
 
-Nesnenin CLSID 'sini almak için tutarlı bir yol sağlar.
+Nesnenin CLSID'sini almak için tutarlı bir yol sağlar.
 
 ```
 static const CLSID& WINAPI GetObjectCLSID();
@@ -199,7 +199,7 @@ static const CLSID& WINAPI GetObjectCLSID();
 
 Nesnenin sınıf tanımlayıcısı.
 
-##  <a name="getobjectdescription"></a>CComCoClass:: GetObjectDescription
+## <a name="ccomcoclassgetobjectdescription"></a><a name="getobjectdescription"></a>CcomcoClass::GetObjectDescription
 
 Bu statik işlev, sınıf nesnenizin metin açıklamasını alır.
 
@@ -213,14 +213,14 @@ Sınıf nesnesinin açıklaması.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama NULL değerini döndürür. Bu yöntemi [DECLARE_OBJECT_DESCRIPTION](object-map-macros.md#declare_object_description) makroyla geçersiz kılabilirsiniz. Örneğin:
+Varsayılan uygulama NULL döndürür. Bu yöntemi [DECLARE_OBJECT_DESCRIPTION](object-map-macros.md#declare_object_description) makrosuyla geçersiz kılabilirsiniz. Örneğin:
 
 [!code-cpp[NVC_ATL_COM#12](../../atl/codesnippet/cpp/ccomcoclass-class_3.h)]
 
-`GetObjectDescription`, `IComponentRegistrar::GetComponents`tarafından çağrılır. `IComponentRegistrar`, bir DLL 'deki tek tek bileşenleri kaydetmenize ve kaydını kaldırmanıza olanak tanıyan bir Otomasyon arabirimidir. ATL Proje sihirbazıyla bir bileşen kaydedici nesnesi oluşturduğunuzda, sihirbaz `IComponentRegistrar` arabirimini otomatik olarak uygular. `IComponentRegistrar` genellikle Microsoft Transaction Server tarafından kullanılır.
+`GetObjectDescription`tarafından `IComponentRegistrar::GetComponents`çağrılır. `IComponentRegistrar`bir DLL'de tek tek bileşenleri kaydetmenize ve kaydetmenize olanak tanıyan bir Otomasyon arabirimidir. ATL Project Sihirbazı ile bir Bileşen Kayıt Defteri nesnesi `IComponentRegistrar` oluşturduğunuzda, sihirbaz arabirimi otomatik olarak uygular. `IComponentRegistrar`genellikle Microsoft Transaction Server tarafından kullanılır.
 
-ATL Proje Sihirbazı hakkında daha fazla bilgi için, [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)makalesine bakın.
+ATL Proje Sihirbazı hakkında daha fazla bilgi için, [ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)makalesine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

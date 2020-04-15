@@ -1,5 +1,5 @@
 ---
-title: Kategori makroları
+title: Kategori Makroları
 ms.date: 11/04/2016
 f1_keywords:
 - atlcom/ATL::BEGIN_CATEGORY_MAP
@@ -7,31 +7,31 @@ f1_keywords:
 - atlcom/ATL::IMPLEMENTED_CATEGORY
 - atlcom/ATL::REQUIRED_CATEGORY
 ms.assetid: 223578cb-6180-4787-a8d8-ba3787a5d3ee
-ms.openlocfilehash: 411e06cc795827eef356018ba427510fd9eb7c06
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 1d8bbae4608aa661bbc612604f7d85855f325f5f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79418134"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81321594"
 ---
-# <a name="category-macros"></a>Kategori makroları
+# <a name="category-macros"></a>Kategori Makroları
 
-Bu makrolar kategori eşlemelerini tanımlar.
+Bu makrolar kategori eşlemlerini tanımlar.
 
 |||
 |-|-|
-|[BEGIN_CATEGORY_MAP](#begin_category_map)|Kategori eşlemesinin başlangıcını işaretler.|
-|[END_CATEGORY_MAP](#end_category_map)|Kategori eşlemesinin sonunu işaretler.|
+|[BEGIN_CATEGORY_MAP](#begin_category_map)|Kategori haritasının başlangıcını işaretler.|
+|[END_CATEGORY_MAP](#end_category_map)|Kategori haritasının sonunu işaretler.|
 |[IMPLEMENTED_CATEGORY](#implemented_category)|COM nesnesi tarafından uygulanan kategorileri gösterir.|
-|[REQUIRED_CATEGORY](#required_category)|COM nesnesi tarafından kapsayıcı için gerekli olan kategorileri gösterir.|
+|[REQUIRED_CATEGORY](#required_category)|COM nesnesi tarafından kapsayıcının gerekli olduğu kategorileri gösterir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcom. h
+**Başlık:** atlcom.h
 
-##  <a name="begin_category_map"></a>BEGIN_CATEGORY_MAP
+## <a name="begin_category_map"></a><a name="begin_category_map"></a>BEGIN_CATEGORY_MAP
 
-Kategori eşlemesinin başlangıcını işaretler.
+Kategori haritasının başlangıcını işaretler.
 
 ```
 BEGIN_CATEGORY_MAP(theClass)
@@ -39,29 +39,29 @@ BEGIN_CATEGORY_MAP(theClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıf*<br/>
-'ndaki Kategori eşlemesini içeren sınıfın adı.
+*theClass*<br/>
+[içinde] Kategori eşlemini içeren sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kategori Haritası, COM sınıfının hangi bileşen kategorilerinin uygulanacağını ve kapsayıcısından hangi kategorilerin gerektirdiğini belirtmek için kullanılır.
+Kategori eşlemi, COM sınıfının hangi bileşen kategorilerini uygulayacağını ve kapsayıcısından hangi kategorileri gerektireceğini belirtmek için kullanılır.
 
-COM sınıfı tarafından uygulanan her kategori için haritaya bir [IMPLEMENTED_CATEGORY](#implemented_category) girişi ekleyin. Sınıfın istemcilerinin uygulanmasını gerektirdiği her kategori için haritaya bir [REQUIRED_CATEGORY](#required_category) girişi ekleyin. Haritanın sonunu [END_CATEGORY_MAP](#end_category_map) makroyla işaretleyin.
+COM sınıfı tarafından uygulanan her kategori için haritaya [IMPLEMENTED_CATEGORY](#implemented_category) girişi ekleyin. Sınıfın istemcilerinin uygulaması gereken her kategori için haritaya [REQUIRED_CATEGORY](#required_category) bir giriş ekleyin. Haritanın sonunu [END_CATEGORY_MAP](#end_category_map) makrosuyla işaretleyin.
 
-Haritada listelenen Bileşen kategorileri, sınıf ilişkili bir [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) veya [object_entry_non_createable_ex_auto](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto)varsa, modül kaydedildiğinde otomatik olarak kaydedilir.
+Haritada listelenen bileşen kategorileri, sınıfın ilişkili bir [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) veya [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto)varsa, modül kaydedildiğinde otomatik olarak kaydedilir.
 
 > [!NOTE]
->  ATL, bileşen kategorilerini kaydetmek için standart Bileşen kategorileri yöneticisini kullanır. Modül kaydedildiğinde yönetici sistemde yoksa, kayıt başarılı olur, ancak Bileşen kategorileri bu sınıf için kaydedilmeyecektir.
+> ATL, bileşen kategorilerini kaydetmek için standart bileşen kategorileri yöneticisini kullanır. Modül kaydedildiğinde yönetici sistemde yoksa, kayıt başarılı olur, ancak bileşen kategorileri o sınıf için kaydedilmez.
 
-Bileşen kategorileri hakkında daha fazla bilgi için bkz. [Bileşen kategorileri nedir ve Windows SDK nasıl çalışır](/windows/win32/com/component-categories-and-how-they-work) .
+Bileşen kategorileri hakkında daha fazla bilgi için, [Bileşen Kategorileri nedir ve](/windows/win32/com/component-categories-and-how-they-work) Windows SDK'da nasıl çalışırlar.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]
 
-##  <a name="end_category_map"></a>END_CATEGORY_MAP
+## <a name="end_category_map"></a><a name="end_category_map"></a>END_CATEGORY_MAP
 
-Kategori eşlemesinin sonunu işaretler.
+Kategori haritasının sonunu işaretler.
 
 ```
 END_CATEGORY_MAP()
@@ -71,9 +71,9 @@ END_CATEGORY_MAP()
 
 [BEGIN_CATEGORY_MAP](#begin_category_map)için örneğe bakın.
 
-##  <a name="implemented_category"></a>IMPLEMENTED_CATEGORY
+## <a name="implemented_category"></a><a name="implemented_category"></a>IMPLEMENTED_CATEGORY
 
-Bir IMPLEMENTED_CATEGORY makrosunu, *catID* parametresi tarafından tanımlanan kategoriyi uygulayarak kaydedilmesi gerektiğini belirtmek için bileşeninizin [Kategori haritasına](#begin_category_map) ekleyin.
+*CatID* parametresi tarafından tanımlanan kategoriyi uygularken kaydedilmesi gerektiğini belirtmek için bileşeninizin [kategori haritasına](#begin_category_map) IMPLEMENTED_CATEGORY bir makro ekleyin.
 
 ```
 IMPLEMENTED_CATEGORY(catID)
@@ -81,36 +81,36 @@ IMPLEMENTED_CATEGORY(catID)
 
 ### <a name="parameters"></a>Parametreler
 
-*CATID*<br/>
-'ndaki Uygulanan kategorinin genel benzersiz tanımlayıcısını (GUID) tutan bir CATıD sabiti veya değişkeni. *CatID* adresi alınır ve haritaya eklenir. Stok kategorilerinin seçilmesi için aşağıdaki tabloya bakın.
+*Catıd*<br/>
+[içinde] Uygulanan kategori için genel olarak benzersiz tanımlayıcıyı (GUID) tutan CATID sabiti veya değişkeni. *CatID* adresi alınacak ve haritaya eklenecektir. Stok kategorileri seçimi için aşağıdaki tabloya bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Modülün ilişkili bir [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) veya [object_entry_non_createable_ex_auto](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) makrosu varsa, haritada listelenen Bileşen kategorileri otomatik olarak kaydedilir.
+Haritada listelenen bileşen kategorileri, sınıfın ilişkili bir [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) veya [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) makrosu varsa, modül kaydedildiğinde otomatik olarak kaydedilir.
 
-İstemciler, bir örneği oluşturmak zorunda kalmadan özelliklerini ve gereksinimlerini belirlemede sınıf için kayıtlı kategori bilgilerini kullanabilir.
+İstemciler, bir örnek oluşturmak zorunda kalmadan yeteneklerini ve gereksinimlerini belirlemek için sınıf için kayıtlı kategori bilgilerini kullanabilir.
 
-Bileşen kategorileri hakkında daha fazla bilgi için bkz. [Bileşen kategorileri nedir ve Windows SDK nasıl çalışır](/windows/win32/com/component-categories-and-how-they-work) .
+Bileşen kategorileri hakkında daha fazla bilgi için, [Bileşen Kategorileri nedir ve](/windows/win32/com/component-categories-and-how-they-work) Windows SDK'da nasıl çalışırlar.
 
-### <a name="a-selection-of-stock-categories"></a>Stok kategorilerinin bir seçimi
+### <a name="a-selection-of-stock-categories"></a>Stok Kategorilerinden Seçmeler
 
-|Açıklama|Sembol|Kayıt defteri GUID 'SI|
+|Açıklama|Sembol|Kayıt DEFTERI GUID|
 |-----------------|------------|-------------------|
-|Betik Için güvenli|CATID_SafeForScripting|{7DD95801-9882-11CF-9FA9-00AA006C42C4}|
-|Başlatma Için güvenli|CATID_SafeForInitializing|{7DD95802-9882-11CF-9FA9-00AA006C42C4}|
-|Basit çerçeve site kapsama|CATID_SimpleFrameControl|{157083E0-2368-11cf-87B9-00AA006C8166}|
-|Basit veri bağlama|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|
-|Gelişmiş veri bağlama|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|
-|Penceresiz denetimler|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|
-|Internet 'e duyarlı nesneler|Örnek bir liste için Windows SDK [Internet 'e duyarlı nesneleri](/windows/win32/com/internet-aware-objects) inceleyin.||
+|Komut Dosyası Için Güvenli|CATID_SafeForScripting|{7DD95801-9882-11CF-9FA9-00AA006C42C4}|
+|Başlatma için güvenli|CATID_SafeForInitializing|{7DD95802-9882-11CF-9FA9-00AA006C42C4}|
+|Basit Çerçeve Site Çevreleme|CATID_SimpleFrameControl|{157083E0-2368-11cf-87B9-00AA006C8166}|
+|Basit Veri Bağlama|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|
+|Gelişmiş Veri Bağlama|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|
+|Penceresiz Denetimler|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|
+|Internet'e Duyarlı Nesneler|Örnek bir liste için Windows SDK'daki [Internet Farkında Nesnelere](/windows/win32/com/internet-aware-objects) bakın.||
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]
 
-##  <a name="required_category"></a>REQUIRED_CATEGORY
+## <a name="required_category"></a><a name="required_category"></a>REQUIRED_CATEGORY
 
-Bir REQUIRED_CATEGORY makrosunu, *catID* parametresi tarafından tanımlanan kategorinin gerektirdiği şekilde kaydedilmesi gerektiğini belirtmek için bileşeninizin [Kategori haritasına](#begin_category_map) ekleyin.
+*CatID* parametresi tarafından tanımlanan kategoriyi gerektiren olarak kaydedilmesi gerektiğini belirtmek için bileşeninizin [kategori haritasına](#begin_category_map) bir REQUIRED_CATEGORY makro ekleyin.
 
 ```
 REQUIRED_CATEGORY( catID )
@@ -118,28 +118,28 @@ REQUIRED_CATEGORY( catID )
 
 ### <a name="parameters"></a>Parametreler
 
-*CATID*<br/>
-'ndaki Gerekli kategorinin genel benzersiz tanımlayıcısını (GUID) tutan bir CATıD sabiti veya değişkeni. *CatID* adresi alınır ve haritaya eklenir. Stok kategorilerinin seçilmesi için aşağıdaki tabloya bakın.
+*Catıd*<br/>
+[içinde] CatID sabiti veya değişkeni, gerekli kategori için genel olarak benzersiz tanımlayıcıyı (GUID) tutar. *CatID* adresi alınacak ve haritaya eklenecektir. Stok kategorileri seçimi için aşağıdaki tabloya bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Modülün ilişkili bir [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) veya [object_entry_non_createable_ex_auto](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) makrosu varsa, haritada listelenen Bileşen kategorileri otomatik olarak kaydedilir.
+Haritada listelenen bileşen kategorileri, sınıfın ilişkili bir [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) veya [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) makrosu varsa, modül kaydedildiğinde otomatik olarak kaydedilir.
 
-İstemciler, bir örneği oluşturmak zorunda kalmadan özelliklerini ve gereksinimlerini belirlemede sınıf için kayıtlı kategori bilgilerini kullanabilir. Örneğin, bir Denetim kapsayıcının veri bağlamayı desteklemesini gerektirebilir. Kapsayıcı, denetim için gereken kategorilerin kategori yöneticisini sorgulayarak, denetimi barındırmak için gereken yeteneklere sahip olup olmadığını bulabilir. Kapsayıcı gerekli bir özelliği desteklemiyorsa COM nesnesini barındırmak reddedebilir.
+İstemciler, bir örnek oluşturmak zorunda kalmadan yeteneklerini ve gereksinimlerini belirlemek için sınıf için kayıtlı kategori bilgilerini kullanabilir. Örneğin, bir denetim, bir kapsayıcı destek veri bağlama gerektirebilir. Kapsayıcı, bu denetimin gerektirdiği kategoriler için kategori yöneticisini sorgulayarak denetimi barındırmak için gereken özelliklere sahip olup olmadığını öğrenebilir. Kapsayıcı gerekli bir özelliği desteklemiyorsa, COM nesnesini barındırmayı reddedebilir.
 
-Örnek liste dahil Bileşen kategorileri hakkında daha fazla bilgi için bkz. [Bileşen kategorileri nedir ve Windows SDK nasıl çalışır](/windows/win32/com/component-categories-and-how-they-work) .
+Örnek liste de dahil olmak üzere bileşen kategorileri hakkında daha fazla bilgi için, [Bileşen Kategorileri nedir ve](/windows/win32/com/component-categories-and-how-they-work) Windows SDK'da nasıl çalışırlar bakın.
 
-### <a name="a-selection-of-stock-categories"></a>Stok kategorilerinin bir seçimi
+### <a name="a-selection-of-stock-categories"></a>Stok Kategorilerinden Seçmeler
 
-|Açıklama|Sembol|Kayıt defteri GUID 'SI|
+|Açıklama|Sembol|Kayıt DEFTERI GUID|
 |-----------------|------------|-------------------|
-|Betik Için güvenli|CATID_SafeForScripting|{7DD95801-9882-11CF-9FA9-00AA006C42C4}|
-|Başlatma Için güvenli|CATID_SafeForInitializing|{7DD95802-9882-11CF-9FA9-00AA006C42C4}|
-|Basit çerçeve site kapsama|CATID_SimpleFrameControl|{157083E0-2368-11cf-87B9-00AA006C8166}|
-|Basit veri bağlama|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|
-|Gelişmiş veri bağlama|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|
-|Penceresiz denetimler|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|
-|Internet 'e duyarlı nesneler|Örnek bir liste için Windows SDK [Internet 'e duyarlı nesneleri](/windows/win32/com/internet-aware-objects) inceleyin.||
+|Komut Dosyası Için Güvenli|CATID_SafeForScripting|{7DD95801-9882-11CF-9FA9-00AA006C42C4}|
+|Başlatma için güvenli|CATID_SafeForInitializing|{7DD95802-9882-11CF-9FA9-00AA006C42C4}|
+|Basit Çerçeve Site Çevreleme|CATID_SimpleFrameControl|{157083E0-2368-11cf-87B9-00AA006C8166}|
+|Basit Veri Bağlama|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|
+|Gelişmiş Veri Bağlama|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|
+|Penceresiz Denetimler|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|
+|Internet'e Duyarlı Nesneler|Örnek bir liste için Windows SDK'daki [Internet Farkında Nesnelere](/windows/win32/com/internet-aware-objects) bakın.||
 
 ### <a name="example"></a>Örnek
 
@@ -147,4 +147,4 @@ Modülün ilişkili bir [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macro
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Larının](../../atl/reference/atl-macros.md)
+[Makrolar](../../atl/reference/atl-macros.md)

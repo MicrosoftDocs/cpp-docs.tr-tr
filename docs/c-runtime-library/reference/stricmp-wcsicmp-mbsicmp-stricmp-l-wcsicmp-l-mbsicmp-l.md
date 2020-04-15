@@ -1,6 +1,6 @@
 ---
 title: _stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _stricmp_l
 - _mbsicmp
@@ -8,6 +8,12 @@ api_name:
 - _mbsicmp_l
 - _stricmp
 - _wcsicmp_l
+- _o__mbsicmp
+- _o__mbsicmp_l
+- _o__stricmp
+- _o__stricmp_l
+- _o__wcsicmp
+- _o__wcsicmp_l
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -22,6 +28,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -59,19 +66,19 @@ helpviewer_keywords:
 - mbsicmp_l function
 - _strcmpi function
 ms.assetid: 0e1ee515-0d75-435a-a445-8875d4669b50
-ms.openlocfilehash: 108a3c572174be5048d0bba48a4da0f4a735f458
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 315a86c5cf7e58219bad25f2b6633dd91275c09f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940689"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81320465"
 ---
 # <a name="_stricmp-_wcsicmp-_mbsicmp-_stricmp_l-_wcsicmp_l-_mbsicmp_l"></a>_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l
 
-Dizelerin büyük/küçük harf duyarsız bir karşılaştırmasını yapar.
+Dizeleri bir büyük/küçük harf duyarsız karşılaştırma gerçekleştirir.
 
 > [!IMPORTANT]
-> **_mbsıcmp** ve **_mbsicmp_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsicmp** ve **_mbsicmp_l,** Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -107,47 +114,49 @@ int _mbsicmp_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dize1*, *dize2*<br/>
-Karşılaştırılacak null ile sonlandırılmış dizeler.
+*string1*, *string2*<br/>
+Karşılaştırmak için null-sonlandırılan dizeleri.
 
-*ayarlar*<br/>
-Kullanılacak yerel ayar.
+*Yerel ayar*<br/>
+Kullanılacak yerel yer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri, *Dize1* ile *dize2* arasındaki ilişkiyi aşağıda gösterildiği gibi gösterir.
+İade değeri *string1* ile *string2* arasındaki ilişkiyi aşağıdaki gibi gösterir.
 
-|Dönüş değeri|Açıklama|
+|Döndürülen değer|Açıklama|
 |------------------|-----------------|
-|< 0|*Dize1* küçüktür *dize2*|
-|0|*Dize1* ile *dize2* özdeş|
-|> 0|*dize2* 'den büyük *Dize1*|
+|< 0|*string1* *string2'den* daha az|
+|0|*string1* *string2* ile özdeş|
+|> 0|*string1* *string2'den* büyük|
 
-Bir hatada, **_mbsıcmp** , \<String. h > ve \<mbstring. h > tanımlı **_NLSCMPERROR**döndürür.
+Bir hatada, **_mbsicmp** \<string.h> ve \<mbstring.h> tanımlanan **_NLSCMPERROR**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Stricmp** işlevi, her karakteri küçük harfe dönüştürdükten sonra *Dize1* ve *dize2* 'yi karşılaştırır ve ilişkilerini gösteren bir değer döndürür. **_stricmp,** **_stricd karşılaştırmasının** yalnızca **LC_CTYPE**tarafından etkilendiğine göre, hangi karakterlerin büyük ve küçük harf olduğunu belirleyen **_stricoll** 'den farklıdır. **_Stricoll** işlevi, hem durumu hem de harmanlama sırasını içeren yerel ayarın **LC_CTYPE** ve **LC_COLLATE** kategorilerine göre dizeleri karşılaştırır. **LC_COLLATE** kategorisi hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) ve [locale kategorileri](../../c-runtime-library/locale-categories.md). **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. Sonekine sahip sürümler, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Yerel ayar ayarlanmamışsa, C yerel ayarı kullanılır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**_stricmp** işlevi, her karakteri küçük harfe dönüştürdükten sonra *string1* ve *string2* ile karşılaştırır ve ilişkilerini gösteren bir değer döndürür. **_stricmp,** _stricmp **_stricoll** karşılaştırmasının **_stricmp** yalnızca **LC_CTYPE,hangi**karakterlerin daha büyük ve küçük olduğunu belirleyen _stricoll farklıdır. **_stricoll** işlevi, dizeleri hem servis talebi hem de harmanlama sırasını içeren yerel anın **LC_CTYPE** ve **LC_COLLATE** kategorilerine göre karşılaştırır. **LC_COLLATE** kategorisi hakkında daha fazla bilgi için [setyerel ve](setlocale-wsetlocale.md) [Yerel Kategoriler'e](../../c-runtime-library/locale-categories.md)bakın. Bu işlevlerin **_l** soneki olmayan sürümleri, yerel çözüme bağlı davranış için geçerli yerel alanı kullanır. Sonekli sürümler, bunun yerine geçirilen yerel liği kullanmaları dışında aynıdır. Yerel ayar ayarlanmadıysa, C yerel alanı kullanılır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
 
 > [!NOTE]
-> **_stricmp** , **_strcmpi**ile eşdeğerdir. Bunlar birbirinin yerine kullanılabilir, ancak **_stricmp** tercih edilen standarttır.
+> **_stricmp** **_strcmpi**eşdeğerdir. Bunlar birbirinin yerine kullanılabilir ancak **_stricmp** tercih edilen standarttır.
 
-**_Strcmpi** işlevi **_stricmp** ile eşdeğerdir ve yalnızca geriye dönük uyumluluk için sağlanır.
+**_strcmpi** işlevi **_stricmp** eşdeğerdir ve yalnızca geriye dönük uyumluluk için sağlanır.
 
-**_Stricmp** küçük harf karşılaştırmaları yaptığından, beklenmeyen davranışlara neden olabilir.
+**_stricmp** küçük karşılaştırmalar yaptığından, beklenmeyen davranışlara neden olabilir.
 
-**_Stricmp** tarafından büyük/küçük harf dönüştürmenin bir karşılaştırmanın sonucunu etkilediği zaman göstermek için, iki DIZININ Johnston ve JOHN_HENRY olduğunu varsayalım. "_" Küçük harfli bir ASCII değerine sahip olduğu için JOHN_HENRY dizesi JOHNSTON 'tan daha az kabul edilir. Aslında, 91 ve 96 arasında bir ASCII değeri olan herhangi bir karakter herhangi bir harften daha az kabul edilir.
+**_stricmp'a** göre durum dönüştürmesinin bir karşılaştırmanın sonucunu ne zaman etkilediğini göstermek için, iki dize JOHNSTON ve JOHN_HENRY sahip olduğunuzu varsayalım. "_" küçük bir S'den daha düşük ascii değeri ne olduğundan, JOHN_HENRY dize JOHNSTON'dan daha az kabul edilir. Aslında, 91 ve 96 arasında ASCII değeri olan herhangi bir karakter herhangi bir harfdaha az kabul edilecektir.
 
-[Strcmp](strcmp-wcscmp-mbscmp.md) işlevi **_stricmp**yerine KULLANıLıRSA, JOHN_HENRY, Johnston 'den büyük olur.
+[strcmp](strcmp-wcscmp-mbscmp.md) işlevi _stricmp yerine **kullanılırsa,** JOHN_HENRY JOHNSTON'dan büyük olacaktır.
 
-**_wcsıcmp** ve **_mbsıcmp** , **_stricmp**'nin geniş karakterli ve çok baytlı karakter sürümleridir. **_Wcsıcmp** 'nin bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsıcmp** 'nin bu tür çok baytlı karakter dizeleridir. **_mbsıcmp** , geçerli çok baytlı kod sayfasına göre çok baytlı karakter dizilerini tanır ve hata üzerinde **_Nlscmperror** döndürür. Daha fazla bilgi için bkz. [kod sayfaları](../../c-runtime-library/code-pages.md). Bu üç işlev, aynı şekilde davranır.
+**_wcsicmp** ve **_mbsicmp** **_stricmp**geniş karakterli ve çok bayt karakterli versiyonlarıdır. _wcsicmp bağımsız **değişkenleri** ve getiri değeri geniş karakterli dizeleridir; **_mbsicmp** çok bayt karakterli dizeleri vardır. **_mbsicmp,** geçerli çok bayt kod sayfasına göre çok bayt karakter dizilerini tanır ve bir hata üzerine **_NLSCMPERROR** döndürür. Daha fazla bilgi için [Kod Sayfaları'na](../../c-runtime-library/code-pages.md)bakın. Bu üç işlev aynı şekilde çalışır.
 
-**_wcsıcmp** ve **wcscmp** , bunları karşılaştırmadan önce bağımsız değişkenlerini küçük harfe **dönüştürmediğinden aynı** şekilde davranır. **_mbsıcmp** ve **_mbscmp** aynı şekilde davranır, bu **_mbscmp** , bağımsız değişkenlerini karşılaştırmadan önce küçük harfe dönüştürmez.
+**_wcsicmp** ve **wcscmp** **wcscmp** onları karşılaştırmadan önce küçük harfiçin bağımsız değişkenleri dönüştürmek değil dışında aynı şekilde çalışır. **_mbsicmp** ve **_mbscmp,** **_mbscmp'nin** bağımsız değişkenlerini karşılaştırmadan önce küçük harfe dönüştürmemesi dışında aynı şekilde çalışır.
 
-Bu Latin 1 karakterle çalışmak için **_wcsıcmp** için [setlocale](setlocale-wsetlocale.md) çağrısı yapmanız gerekir. C yerel ayarı varsayılan olarak etkindir, bu nedenle örneğin ä, Ä ile eşit olarak karşılaştırmaz. **_Wcsıcmp**çağrısından önce C yerel ayarından başka bir yerel ayar ile **setlocale** çağrısı yapın. Aşağıdaki örnek, **_wcsıcmp** 'nin yerel ayara nasıl duyarlı olduğunu gösterir:
+Latin 1 karakterleri ile çalışmak için **_wcsicmp** için [setlocale'yi](setlocale-wsetlocale.md) aramanız gerekir. C yerel alanı varsayılan olarak geçerli olduğundan, örneğin Ä, ğile eşit karşılaştırmaz. **_wcsicmp'a**çağrı dan önce C yerel alanı dışında herhangi bir yerel ayar ile **setlocale'yi** arayın. Aşağıdaki örnek, **_wcsicmp'ın** yerel e göre ne kadar hassas olduğunu gösterir:
 
 ```C
 // crt_stricmp_locale.c
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+
 #include <string.h>
 #include <stdio.h>
 #include <locale.h>
@@ -160,25 +169,25 @@ int main() {
 }
 ```
 
-Diğer bir seçenek de [_create_locale, _wcreate_locale öğesini](create-locale-wcreate-locale.md) çağırıp döndürülen yerel ayar nesnesini **_wcsicmp_l**öğesine bir parametre olarak iletmektir.
+Alternatif, _create_locale [aramak, _wcreate_locale](create-locale-wcreate-locale.md) ve **_wcsicmp_l**için bir parametre olarak döndürülen yerel nesne geçmektir.
 
-Bu işlevlerin hepsi parametrelerini doğrular. *Dize1* veya *dize2* null Işaretçilerdir, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **_Nlscmperror** döndürür ve **errno** öğesini **EINVAL**olarak ayarlayın.
+Tüm bu işlevler parametrelerini doğrular. *String1* veya *string2* null işaretçileri ise, geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md) açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlevler **_NLSCMPERROR** döndürdü ve **EINVAL'e** **errno** ayarlayın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcsıcmp**|**_stricmp**|**_mbsıcmp**|**_wcsıcmp**|
+|**_tcsicmp**|**_stricmp**|**_mbsicmp**|**_wcsicmp**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_stricmp**, **_stricmp_l**|\<String. h >|
-|**_wcsıcmp**, **_wcsicmp_l**|\<String. h > veya \<wchar. h >|
-|**_mbsıcmp**, **_mbsicmp_l**|\<mbstring. h >|
+|**_stricmp**, **_stricmp_l**|\<string.h>|
+|**_wcsicmp**, **_wcsicmp_l**|\<string.h> \<veya wchar.h>|
+|**_mbsicmp**, **_mbsicmp_l**|\<mbstring.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -231,7 +240,7 @@ Compare strings:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
 [_memicmp, _memicmp_l](memicmp-memicmp-l.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>

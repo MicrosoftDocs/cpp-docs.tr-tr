@@ -1,9 +1,11 @@
 ---
 title: gets_s, _getws_s
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _getws_s
 - gets_s
+- _o__getws_s
+- _o_gets_s
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -34,16 +37,16 @@ helpviewer_keywords:
 - gets_s function
 - standard input, reading from
 ms.assetid: 5880c36f-122c-4061-a1a5-aeeced6fe58c
-ms.openlocfilehash: f282b4e8de12185a19e07374cf565788dc549136
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: aac64a42a2979623f4314f7bf28d7e4917eaee18
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954967"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81344212"
 ---
 # <a name="gets_s-_getws_s"></a>gets_s, _getws_s
 
-**Stdin** akışından bir satır alır. Bu [, _getws](../../c-runtime-library/gets-getws.md) SÜRÜMLERININ, [CRT 'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
+**Stdin** akışından bir çizgi alır. CrT Güvenlik [Özellikleri](../../c-runtime-library/security-features-in-the-crt.md)açıklandığı [gibi, alır, _getws](../../c-runtime-library/gets-getws.md) güvenlik geliştirmeleri var bu sürümleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,31 +71,33 @@ wchar_t *_getws_s( wchar_t (&buffer)[size] ); // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*arabelleğin*<br/>
+*Arabellek*<br/>
 Giriş dizesi için depolama konumu.
 
-*sizeInCharacters*<br/>
-Arabelleğin boyutu.
+*sizeKarakter*<br/>
+Arabelleğe in boyutu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa *arabelleği* döndürür. **Null** işaretçisi bir hata veya dosya sonu koşulunu gösterir. Hangi birinin oluştuğunu öğrenmek için [ferror](ferror.md) veya [feof](feof.md) kullanın.
+Başarılı olursa *arabellek* döndürür. **NULL** işaretçisi bir hata veya dosya sonu koşulunu gösterir. Hangisinin oluştuğunu belirlemek için [ferror](ferror.md) veya [feof](feof.md) kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Gets_s** işlevi standart giriş akışı **stdin** ' nden bir satırı okur ve *arabelleğe*kaydeder. Satır, ilk yeni satır karakteri (' \n ') dahil olmak üzere tüm karakterlerden oluşur. **gets_s** ardından satırı döndürmeden önce yeni satır karakterini null karakter (' \ 0 ') ile değiştirir. Buna karşılık, **fgets_s** işlevi yeni satır karakterini korur.
+**gets_s** işlevi standart giriş akışı **stdin** bir satır okur ve *arabellek*tepolar. Çizgi, ilk yeni satır karakteri ('\n') dahil olmak üzere tüm karakterlerden oluşur. **gets_s** sonra satırı döndürmeden önce yeni satır karakterini null karakterle ('\0') değiştirir. Buna karşılık, **fgets_s** işlevi yeni satır karakterini korur.
 
-Okunan ilk karakter dosya sonu karakter ise, *arabelleğin* başlangıcında null karakter depolanır ve **null** döndürülür.
+Okunan ilk karakter dosya sonu karakteriyse, *arabellek* başında null bir karakter depolanır ve **NULL** döndürülür.
 
-**_getws_s** , **gets_s**öğesinin geniş karakterli bir sürümüdür; bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir.
+**_getws_s** **gets_s**geniş karakterli bir versiyonudur; bağımsız değişkeni ve döndürme değeri geniş karakterli dizeleridir.
 
-*Buffer* **null** veya *sizeInCharacters* , sıfıra eşit veya daha küçükse ya da arabellek giriş satırını ve null sonlandırıcıyı içermesi için çok küçük ise, bu işlevler parametre bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır [ Doğrulama](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **null** döndürür ve errno, **ERANGE**olarak ayarlanır.
+*Arabellek* **NULL** veya *sizeInCharacters* az veya sıfıra eşit ise veya arabellek giriş satırı ve null sonlandırıcı içerecek kadar küçükise, bu işlevler [Parametre Doğrulama](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre işleyicisi çağırır. Yürütme devam etmesine izin verilirse, bu işlevler **NULL** döndürün ve **ERANGE**için errno ayarlayın.
 
-' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevleri kullanmak şablon aşırı yükleri ile basitleştirilir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkartabilir (boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir) ve eski, güvenli olmayan işlevleri yeni, güvenli karşılıklarıyla otomatik olarak değiştirebilirler. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_getts_s**|**gets_s**|**gets_s**|**_getws_s**|
 
@@ -100,10 +105,10 @@ Okunan ilk karakter dosya sonu karakter ise, *arabelleğin* başlangıcında nul
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**gets_s**|\<stdio. h >|
-|**_getws_s**|\<stdio. h > veya \<wchar. h >|
+|**gets_s**|\<stdio.h>|
+|**_getws_s**|\<stdio.h> \<veya wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol, Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Konsol, **stdin,** **stdout**ve **stderr**ile ilişkili standart akış kolları, C çalışma zamanı işlevleri UWP uygulamalarında bunları kullanamadan önce yönlendirilmelidir. Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
@@ -132,7 +137,7 @@ The line entered was: Hello there!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
 [fgets, fgetws](fgets-fgetws.md)<br/>
 [fputs, fputws](fputs-fputws.md)<br/>

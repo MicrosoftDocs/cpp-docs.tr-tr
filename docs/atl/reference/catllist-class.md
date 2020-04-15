@@ -1,5 +1,5 @@
 ---
-title: CAtlList sınıfı
+title: CAtlList Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlList
@@ -37,16 +37,16 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlList class
 ms.assetid: 09e98053-64b2-4efa-99ab-d0542caaf981
-ms.openlocfilehash: faed99197eb14da8ea095bef81d0d1a9845b18ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 91b1841423fe159bb5fdd0f06a112c601b1dbc83
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62247020"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81318937"
 ---
-# <a name="catllist-class"></a>CAtlList sınıfı
+# <a name="catllist-class"></a>CAtlList Sınıfı
 
-Bu sınıf, oluşturmak ve bir liste nesnesi yönetmek için yöntemler sağlar.
+Bu sınıf, bir liste nesnesi oluşturma ve yönetme yöntemleri sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,72 +60,72 @@ class CAtlList
 *E*<br/>
 Öğe türü.
 
-*ETraits*<br/>
-Kopyalama veya öğeleri taşıma için kullanılan kod. Bkz: [CElementTraits sınıfı](../../atl/reference/celementtraits-class.md) daha fazla ayrıntı için.
+*EÖzellikler*<br/>
+Öğeleri kopyalamak veya taşımak için kullanılan kod. Daha fazla bilgi için [CElementTraits Sınıfına](../../atl/reference/celementtraits-class.md) bakın.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Genel Typedefs
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CAtlList::INARGTYPE](#inargtype)||
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CAtlList::CAtlList](#catllist)|Oluşturucu.|
-|[CAtlList:: ~ CAtlList](#dtor)|Yıkıcı.|
+|[CAtlList::~CAtlList](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAtlList::AddHead](#addhead)|Listenin başındaki öğeyi eklemek için bu yöntemi çağırın.|
-|[CAtlList::AddHeadList](#addheadlist)|Listenin başındaki mevcut bir listeyi eklemek için bu yöntemi çağırın.|
-|[CAtlList::AddTail](#addtail)|Bu liste kuyruğu için bir öğe eklemek için bu yöntemi çağırın.|
-|[CAtlList::AddTailList](#addtaillist)|Bu liste kuyruğu için mevcut bir listeyi eklemek için bu yöntemi çağırın.|
-|[CAtlList::AssertValid](#assertvalid)|Listenin geçerli olup olmadığını onaylamak için bu yöntemi çağırın.|
-|[CAtlList::Find](#find)|Belirtilen öğe listesi aramak için bu yöntemi çağırın.|
-|[CAtlList::FindIndex](#findindex)|Bir dizin değeri belirtilen bir öğenin konumunu almak için bu yöntemi çağırın.|
-|[CAtlList::GetAt](#getat)|Listesinde belirtilen konumda bir öğeyi döndürmek için bu yöntemi çağırın.|
-|[CAtlList::GetCount](#getcount)|Listede nesne sayısını döndürmek için bu yöntemi çağırın.|
-|[CAtlList::GetHead](#gethead)|Listenin başındaki öğeyi döndürmek için bu yöntemi çağırın.|
-|[CAtlList::GetHeadPosition](#getheadposition)|Listenin başındaki konumunu almak için bu yöntemi çağırın.|
-|[CAtlList::GetNext](#getnext)|Sonraki öğeyi listeden döndürmek için bu yöntemi çağırın.|
-|[CAtlList::GetPrev](#getprev)|Önceki öğeyle listeden döndürmek için bu yöntemi çağırın.|
-|[CAtlList::GetTail](#gettail)|Liste sonu öğe döndürmek için bu yöntemi çağırın.|
-|[CAtlList::GetTailPosition](#gettailposition)|Liste sonu konumunu almak için bu yöntemi çağırın.|
-|[CAtlList::InsertAfter](#insertafter)|Yeni bir öğe belirtilen konuma sonra listeye eklemek için bu yöntemi çağırın.|
-|[CAtlList::InsertBefore](#insertbefore)|Yeni bir öğe belirtilen konuma önce listeye eklemek için bu yöntemi çağırın.|
-|[CAtlList::IsEmpty](#isempty)|Listesinin boş olup olmadığını belirlemek için bu yöntemi çağırın.|
-|[CAtlList::MoveToHead](#movetohead)|Listenin başında belirtilen öğe taşımak için bu yöntemi çağırın.|
-|[CAtlList::MoveToTail](#movetotail)|Belirtilen öğe listesinin kuyruk için taşımak için bu yöntemi çağırın.|
-|[CAtlList::RemoveAll](#removeall)|Tüm öğeler listeden kaldırmak için bu yöntemi çağırın.|
-|[CAtlList::RemoveAt](#removeat)|Listeden tek bir öğe kaldırmak için bu yöntemi çağırın.|
-|[CAtlList::RemoveHead](#removehead)|Listenin başındaki öğeyi kaldırmak için bu yöntemi çağırın.|
-|[CAtlList::RemoveHeadNoReturn](#removeheadnoreturn)|Bir değer döndüren olmadan listenin başındaki öğeyi kaldırmak için bu yöntemi çağırın.|
-|[CAtlList::RemoveTail](#removetail)|Liste sonu öğe kaldırmak için bu yöntemi çağırın.|
-|[CAtlList::RemoveTailNoReturn](#removetailnoreturn)|Bir değer döndüren olmadan listenin sonu öğe kaldırmak için bu yöntemi çağırın.|
-|[CAtlList::SetAt](#setat)|Listede verilen konumda öğenin değerini ayarlamak için bu yöntemi çağırın.|
-|[CAtlList::SwapElements](#swapelements)|Listedeki öğeleri değiştirmek için bu yöntemi çağırın.|
+|[CAtlList::AddHead](#addhead)|Listenin başına bir öğe eklemek için bu yöntemi arayın.|
+|[CAtlList::AddHeadList](#addheadlist)|Varolan bir listeyi listenin başına eklemek için bu yöntemi arayın.|
+|[CAtlList::AddTail](#addtail)|Bu listenin kuyruğuna bir öğe eklemek için bu yöntemi arayın.|
+|[CAtlList::AddTailList](#addtaillist)|Varolan bir listeyi bu listenin kuyruğuna eklemek için bu yöntemi arayın.|
+|[CAtlList::AssertValid](#assertvalid)|Listenin geçerli olduğunu doğrulamak için bu yöntemi arayın.|
+|[CAtlList::Bul](#find)|Belirtilen öğeyi listeyi aramak için bu yöntemi arayın.|
+|[CAtlList::FindIndex](#findindex)|Dizin değeri verilen bir öğenin konumunu elde etmek için bu yöntemi çağırın.|
+|[CAtlList::GetAt](#getat)|Öğeyi listede belirtilen bir konumda döndürmek için bu yöntemi çağırın.|
+|[CAtlList::GetCount](#getcount)|Listedeki nesne sayısını döndürmek için bu yöntemi arayın.|
+|[CAtlList::GetHead](#gethead)|Listenin başındaki öğeyi döndürmek için bu yöntemi arayın.|
+|[CAtlList::GetHeadPosition](#getheadposition)|Listenin başkanının konumunu elde etmek için bu yöntemi arayın.|
+|[CAtlList::GetNext](#getnext)|Sonraki öğeyi listeden döndürmek için bu yöntemi arayın.|
+|[CAtlList::GetPrev](#getprev)|Önceki öğeyi listeden döndürmek için bu yöntemi çağırın.|
+|[CAtlList::GetTail](#gettail)|Listenin kuyruğundaki öğeyi döndürmek için bu yöntemi arayın.|
+|[CAtlList::GetTailPosition](#gettailposition)|Listenin kuyruğunun konumunu elde etmek için bu yöntemi arayın.|
+|[CAtlList::InsertAfter](#insertafter)|Belirtilen konumdan sonra listeye yeni bir öğe eklemek için bu yöntemi çağırın.|
+|[CAtlList::EkleBefore](#insertbefore)|Belirtilen konumdan önce listeye yeni bir öğe eklemek için bu yöntemi çağırın.|
+|[CAtlList::Boş](#isempty)|Listenin boş olup olmadığını belirlemek için bu yöntemi arayın.|
+|[CAtlList::MoveToHead](#movetohead)|Belirtilen öğeyi listenin başına taşımak için bu yöntemi çağırın.|
+|[CAtlList::MoveToTail](#movetotail)|Belirtilen öğeyi listenin kuyruğuna taşımak için bu yöntemi arayın.|
+|[CAtlList::RemoveAll](#removeall)|Tüm öğeleri listeden kaldırmak için bu yöntemi arayın.|
+|[CAtlList::RemoveAt](#removeat)|Tek bir öğeyi listeden kaldırmak için bu yöntemi çağırın.|
+|[CAtlList::RemoveHead](#removehead)|Listenin başındaki öğeyi kaldırmak için bu yöntemi arayın.|
+|[CAtlList::RemoveHeadNoReturn](#removeheadnoreturn)|Bir değer döndürmeden listenin başındaki öğeyi kaldırmak için bu yöntemi arayın.|
+|[CAtlList::RemoveTail](#removetail)|Listenin kuyruğundaki öğeyi kaldırmak için bu yöntemi arayın.|
+|[CAtlList::RemoveTailNoReturn](#removetailnoreturn)|Bir değer döndürmeden listenin kuyruğundaki öğeyi kaldırmak için bu yöntemi arayın.|
+|[CAtlList::SetAt](#setat)|Listede belirli bir konumda öğenin değerini ayarlamak için bu yöntemi arayın.|
+|[CAtlList::SwapElements](#swapelements)|Listedeki öğeleri değiştirmek için bu yöntemi arayın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAtlList` Sınıfı sırayla veya değere göre sıralı listeler erişilebilir benzersiz olmayan nesnelerin destekler. `CAtlList` listeleri karakteriyle bağlantılı liste gibi davranır. Her liste head ve bir kuyruk sahip ve yeni öğeler (veya bazı durumlarda listeleri) ya da listenin sonuna eklenebilir, veya önce veya sonra belirli öğeleri eklenir.
+Sınıf, `CAtlList` sırayla veya değere göre erişilebilen benzersiz olmayan nesnelerin sıralı listelerini destekler. `CAtlList`listeler iki kat bağlantılı listeler gibi olur. Her listenin bir kafası ve kuyruğu vardır ve listenin sonuna yeni öğeler (veya bazı durumlarda listeler) eklenebilir veya belirli öğelerden önce veya sonra eklenebilir.
 
-Çoğu `CAtlList` yöntemleri olun konum değeri kullanın. Bu değer, burada öğeleri depolanan ve hesaplanan veya doğrudan tahmin edilen gerçek bellek konumunu başvurmak için yöntemleri tarafından kullanılır. Erişim için gerekirse *n*öğedeki yöntemi listesinde [CAtlList::FindIndex](#findindex) belirtilen dizin için karşılık gelen konum değerini döndürür. Yöntemleri [CAtlList::GetNext](#getnext) ve [CAtlList::GetPrev](#getprev) liste içindeki nesneler aracılığıyla yineleme yapmak için kullanılabilir.
+Yöntemlerin `CAtlList` çoğu bir konum değerini kullanır. Bu değer, öğelerin depolandığı gerçek bellek konumuna başvurmak için yöntemlerle kullanılır ve doğrudan hesaplanmamalı veya öngörülmemeli. Listedeki *n*th öğesine erişmek gerekiyorsa, [CAtlList::FindIndex](#findindex) yöntemi belirli bir dizin için karşılık gelen konum değerini döndürür. [CAtlList::GetNext](#getnext) ve [CAtlList::GetPrev,](#getprev) listedeki nesneler aracılığıyla yinelemek için kullanılabilir.
 
-İle ATL koleksiyon sınıfları hakkında daha fazla bilgi için bkz. [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
+ATL ile kullanılabilen toplama sınıfları hakkında daha fazla bilgi için [ATL Toplama Sınıfları'na](../../atl/atl-collection-classes.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcoll.h
+**Üstbilgi:** atlcoll.h
 
-##  <a name="addhead"></a>  CAtlList::AddHead
+## <a name="catllistaddhead"></a><a name="addhead"></a>CAtlList::AddHead
 
-Listenin başındaki öğeyi eklemek için bu yöntemi çağırın.
+Listenin başına bir öğe eklemek için bu yöntemi arayın.
 
 ```
 POSITION AddHead();
@@ -134,8 +134,8 @@ POSITION AddHead(INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*Öğesi*<br/>
-Yeni öğe.
+*Öğe*<br/>
+Yeni eleman.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -143,15 +143,15 @@ Yeni eklenen öğenin konumunu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk sürüm kullanılıyorsa, kopya Oluşturucu yerine kendi varsayılan oluşturucusunu kullanarak boş bir öğe oluşturulur.
+İlk sürüm kullanılırsa, kopya oluşturucusu yerine varsayılan oluşturucusu kullanılarak boş bir öğe oluşturulur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#13](../../atl/codesnippet/cpp/catllist-class_1.cpp)]
 
-##  <a name="addheadlist"></a>  CAtlList::AddHeadList
+## <a name="catllistaddheadlist"></a><a name="addheadlist"></a>CAtlList::AddHeadList
 
-Listenin başındaki mevcut bir listeyi eklemek için bu yöntemi çağırın.
+Varolan bir listeyi listenin başına eklemek için bu yöntemi arayın.
 
 ```
 void AddHeadList(const CAtlList<E, ETraits>* plNew);
@@ -159,20 +159,20 @@ void AddHeadList(const CAtlList<E, ETraits>* plNew);
 
 ### <a name="parameters"></a>Parametreler
 
-*plNew*<br/>
-Eklenecek listesi.
+*plYeni*<br/>
+Eklenecek liste.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Listenin tarafından işaret edilen *plNew* mevcut listenin başında eklenir. Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *plNew* NULL değerine eşittir.
+*plNew* tarafından işaret edilen liste varolan listenin başına eklenir. Hata ayıklama oluştururda, *plNew* NULL'a eşitse bir tasnif hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#14](../../atl/codesnippet/cpp/catllist-class_2.cpp)]
 
-##  <a name="addtail"></a>  CAtlList::AddTail
+## <a name="catllistaddtail"></a><a name="addtail"></a>CAtlList::AddTail
 
-Bu liste kuyruğu için bir öğe eklemek için bu yöntemi çağırın.
+Bu listenin kuyruğuna bir öğe eklemek için bu yöntemi arayın.
 
 ```
 POSITION AddTail();
@@ -181,7 +181,7 @@ POSITION AddTail(INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*Öğesi*<br/>
+*Öğe*<br/>
 Eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -190,15 +190,15 @@ Yeni eklenen öğenin KONUMUNU döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk sürüm kullanılıyorsa, kopya Oluşturucu yerine kendi varsayılan oluşturucusunu kullanarak boş bir öğe oluşturulur. Öğe listesinin sonuna eklenir ve böylece artık kuyruk olur. Bu yöntem boş bir liste ile kullanılabilir.
+İlk sürüm kullanılırsa, kopya oluşturucusu yerine varsayılan oluşturucusu kullanılarak boş bir öğe oluşturulur. Öğe listenin sonuna eklenir ve böylece artık kuyruk olur. Bu yöntem boş bir liste ile kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#15](../../atl/codesnippet/cpp/catllist-class_3.cpp)]
 
-##  <a name="addtaillist"></a>  CAtlList::AddTailList
+## <a name="catllistaddtaillist"></a><a name="addtaillist"></a>CAtlList::AddTailList
 
-Bu liste kuyruğu için mevcut bir listeyi eklemek için bu yöntemi çağırın.
+Varolan bir listeyi bu listenin kuyruğuna eklemek için bu yöntemi arayın.
 
 ```
 void AddTailList(const CAtlList<E, ETraits>* plNew);
@@ -206,20 +206,20 @@ void AddTailList(const CAtlList<E, ETraits>* plNew);
 
 ### <a name="parameters"></a>Parametreler
 
-*plNew*<br/>
-Eklenecek listesi.
+*plYeni*<br/>
+Eklenecek liste.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Listenin tarafından işaret edilen *plNew* (varsa) bir liste nesnesi son öğeden sonra eklenir. İçindeki son öğeden *plNew* liste bu nedenle kuyruğunu olur. Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *plNew* NULL değerine eşittir.
+*plNew* tarafından işaret edilen liste, liste nesnesindeki son öğeden (varsa) sonra eklenir. *PlNew* listesindeki son öğe bu nedenle kuyruk olur. Hata ayıklama oluştururda, *plNew* NULL'a eşitse bir tasnif hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#16](../../atl/codesnippet/cpp/catllist-class_4.cpp)]
 
-##  <a name="assertvalid"></a>  CAtlList::AssertValid
+## <a name="catllistassertvalid"></a><a name="assertvalid"></a>CAtlList::AssertValid
 
-Listenin geçerli olup olmadığını onaylamak için bu yöntemi çağırın.
+Listenin geçerli olduğunu doğrulamak için bu yöntemi arayın.
 
 ```
 void AssertValid() const;
@@ -227,13 +227,13 @@ void AssertValid() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste nesnesi geçerli değil. hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir. Geçerli olması için boş bir liste head ve kuyruk NULL değerini gösteriyor olmalıdır ve boş olmayan bir listesi head ve kuyruk işaret eden geçerli bir adresi olmalıdır.
+Hata ayıklama oluştururda, liste nesnesi geçerli değilse bir sedama hatası oluşur. Geçerli olabilmesi için, boş bir listenin hem başı hem de kuyruğu NULL'u işaret etmeli ve boş olmayan bir listenin hem baş hem de kuyruk geçerli adresleri işaret etmesi gerekir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#17](../../atl/codesnippet/cpp/catllist-class_5.cpp)]
 
-##  <a name="catllist"></a>  CAtlList::CAtlList
+## <a name="catllistcatllist"></a><a name="catllist"></a>CAtlList::CAtlList
 
 Oluşturucu.
 
@@ -248,13 +248,13 @@ Blok boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucusu `CAtlList` nesne. Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarını ölçüsüdür. Büyük blok boyutları için bellek ayırma yordamlarını aramalarını azaltır, ancak daha fazla kaynağı kullanır.
+Nesnenin oluşturucusu. `CAtlList` Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarının ölçüsüdür. Daha büyük blok boyutları, bellek ayırma yordamlarına yapılan çağrıları azaltır, ancak daha fazla kaynak kullanır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#18](../../atl/codesnippet/cpp/catllist-class_6.cpp)]
 
-##  <a name="dtor"></a>  CAtlList:: ~ CAtlList
+## <a name="catllistcatllist"></a><a name="dtor"></a>CAtlList::~CAtlList
 
 Yıkıcı.
 
@@ -264,13 +264,13 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir çağrı dahil olmak üzere, ayrılan tüm kaynakları serbest bırakan [CAtlList::RemoveAll](#removeall) tüm öğeler listeden kaldırılacak.
+CAtlList'e yapılan çağrı da dahil olmak üzere ayrılan tüm kaynakları serbest [sağlar::Listeden](#removeall) tüm öğeleri kaldırmak için RemoveAll.
 
-Liste, bazı öğeler çağrısından sonra hala içeriyorsa, hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir `RemoveAll`.
+Hata ayıklama oluşturur, liste hala çağrıdan sonra bazı öğeleri içeriyorsa `RemoveAll`bir sedama hatası oluşacaktır.
 
-##  <a name="find"></a>  CAtlList::Find
+## <a name="catllistfind"></a><a name="find"></a>CAtlList::Bul
 
-Belirtilen öğe listesi aramak için bu yöntemi çağırın.
+Belirtilen öğeyi listeyi aramak için bu yöntemi arayın.
 
 ```
 POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
@@ -278,27 +278,27 @@ POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Öğesi*<br/>
-Listesinde bulunacak öğe.
+*Öğe*<br/>
+Listede bulunacak öğe.
 
 *posStartAfter*<br/>
-Arama için başlangıç konumu. Hiçbir değer belirtilmemişse arama head öğesi ile başlar.
+Arama için başlangıç konumu. Değer belirtilmemişse, arama baş öğesi ile başlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğenin KONUMUNU değerini döndürür bulundu, aksi takdirde NULL değerini döndürür.
+Bulunursa öğenin POZISYON değerini verir, aksi takdirde NULL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama derlemelerinde, liste nesnesi geçerli değilse veya bir onaylama işlemi hatası meydana gelir *posStartAfter* değer aralık dışında.
+Hata ayıklama oluştururda, liste nesnesi geçerli değilse veya *posStartAfter* değeri kapsama alanı dışındaysa bir hata hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#19](../../atl/codesnippet/cpp/catllist-class_7.cpp)]
 
-##  <a name="findindex"></a>  CAtlList::FindIndex
+## <a name="catllistfindindex"></a><a name="findindex"></a>CAtlList::FindIndex
 
-Bir dizin değeri belirtilen bir öğenin konumunu almak için bu yöntemi çağırın.
+Dizin değeri verilen bir öğenin konumunu elde etmek için bu yöntemi çağırın.
 
 ```
 POSITION FindIndex(size_t iElement) const throw();
@@ -306,26 +306,26 @@ POSITION FindIndex(size_t iElement) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*IElement*<br/>
-Gerekli bir liste öğesinin sıfır tabanlı dizini.
+*ıelement*<br/>
+Gerekli liste öğesinin sıfır tabanlı dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karşılık gelen konum değeri ya da NULL döndürür *IElement* je mimo rozsah.
+Karşılık gelen POSITION değerini veya *iElement* kapsama alanı dışındaysa NULL değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem erişimine izin verilen dizin değerine karşılık gelen KONUMUNU döndürür *n*öğedeki listesinde.
+Bu yöntem, listedeki *n*th öğesine erişim sağlayan, belirli bir dizin değerine karşılık gelen POSITION'ı döndürür.
 
-Liste nesnesi geçerli değil. hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir.
+Hata ayıklama oluştururda, liste nesnesi geçerli değilse bir sedama hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#20](../../atl/codesnippet/cpp/catllist-class_8.cpp)]
 
-##  <a name="getat"></a>  CAtlList::GetAt
+## <a name="catllistgetat"></a><a name="getat"></a>CAtlList::GetAt
 
-Listesinde belirtilen konumda bir öğeyi döndürmek için bu yöntemi çağırın.
+Öğeyi listede belirtilen bir konumda döndürmek için bu yöntemi çağırın.
 
 ```
 E& GetAt(POSITION pos) throw();
@@ -334,28 +334,28 @@ const E& GetAt(POSITION pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-Belirli bir öğenin belirten konum değeri.
+*Pos*<br/>
+Belirli bir öğeyi belirten POSITION değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir başvuru veya, öğenin kopyasını.
+Öğeye başvuru veya bir kopyası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste **const**, `GetAt` öğenin bir kopyasını döndürür. Bu yöntemi yalnızca sağ tarafta Atama ifadesinin kullanılacak sağlar ve listenin değişikliklere karşı korur.
+Liste **const**ise, `GetAt` öğenin bir kopyasını döndürür. Bu, yöntemin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve listeyi değişiklikten korur.
 
-Listede değilse **const**, `GetAt` öğeye bir başvuru döndürür. Bu yöntem, atama deyiminin her iki tarafında kullanılacak ve bu nedenle değiştirilecek Liste girişlerini olanak sağlar.
+Liste **const**değilse, `GetAt` öğeye bir başvuru döndürür. Bu, yöntemin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
 
-Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *pos* NULL değerine eşittir.
+Hata ayıklama oluştururda, *pos* NULL'a eşitse bir tasnif hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlList::FindIndex](#findindex).
+[CAtlList örneğine bakın:FindIndex.](#findindex)
 
-##  <a name="getcount"></a>  CAtlList::GetCount
+## <a name="catllistgetcount"></a><a name="getcount"></a>CAtlList::GetCount
 
-Listede nesne sayısını döndürmek için bu yöntemi çağırın.
+Listedeki nesne sayısını döndürmek için bu yöntemi arayın.
 
 ```
 size_t GetCount() const throw();
@@ -363,15 +363,15 @@ size_t GetCount() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listedeki öğe sayısını döndürür.
+Listedeki öğe sayısını verir.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlList::Find](#find).
+CAtlList için örneğe [bakın::Bul](#find).
 
-##  <a name="gethead"></a>  CAtlList::GetHead
+## <a name="catllistgethead"></a><a name="gethead"></a>CAtlList::GetHead
 
-Listenin başındaki öğeyi döndürmek için bu yöntemi çağırın.
+Listenin başındaki öğeyi döndürmek için bu yöntemi arayın.
 
 ```
 E& GetHead() throw();
@@ -380,23 +380,23 @@ const E& GetHead() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir başvuru ya da bir kopyasını, listenin başındaki öğeyi döndürür.
+Listenin başındaki öğeye bir başvuru veya bir kopyasını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste **const**, `GetHead` listenin başındaki öğeyi bir kopyasını döndürür. Bu yöntemi yalnızca sağ tarafta Atama ifadesinin kullanılacak sağlar ve listenin değişikliklere karşı korur.
+Liste **const**ise, `GetHead` listenin başındaöğenin bir kopyasını döndürür. Bu, yöntemin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve listeyi değişiklikten korur.
 
-Listede değilse **const**, `GetHead` listenin başındaki öğeyi bir başvuru döndürür. Bu yöntem, atama deyiminin her iki tarafında kullanılacak ve bu nedenle değiştirilecek Liste girişlerini olanak sağlar.
+Liste **const**değilse, `GetHead` listenin başındaki öğeye bir başvuru verir. Bu, yöntemin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
 
-Listenin başındaki NULL olarak işaret ediyorsa hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir.
+Hata ayıklama oluştururda, listenin başı NULL'a işaret ederse bir sevehatası oluşur.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlList::AddHead](#addhead).
+[CAtlList örneğine bakın:AddHead](#addhead).
 
-##  <a name="getheadposition"></a>  CAtlList::GetHeadPosition
+## <a name="catllistgetheadposition"></a><a name="getheadposition"></a>CAtlList::GetHeadPosition
 
-Listenin başındaki konumunu almak için bu yöntemi çağırın.
+Listenin başkanının konumunu elde etmek için bu yöntemi arayın.
 
 ```
 POSITION GetHeadPosition() const throw();
@@ -404,19 +404,19 @@ POSITION GetHeadPosition() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listenin başındaki öğeyi karşılık gelen konum değerini döndürür.
+Listenin başındaki öğeye karşılık gelen POSITION değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste boşsa, döndürülen değer NULL olur.
+Liste boşsa, döndürülen değer NULL'dur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#21](../../atl/codesnippet/cpp/catllist-class_9.cpp)]
 
-##  <a name="getnext"></a>  CAtlList::GetNext
+## <a name="catllistgetnext"></a><a name="getnext"></a>CAtlList::GetNext
 
-Sonraki öğeyi listeden döndürmek için bu yöntemi çağırın.
+Sonraki öğeyi listeden döndürmek için bu yöntemi arayın.
 
 ```
 E& GetNext(POSITION& pos) throw();
@@ -425,26 +425,26 @@ const E& GetNext(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-Önceki bir çağrı tarafından döndürülen bir konum değeri `GetNext`, [CAtlList::GetHeadPosition](#getheadposition), veya diğer `CAtlList` yöntemi.
+*Pos*<br/>
+Bir önceki arama tarafından döndürülen, [CAtlList:::GetHeadPosition](#getheadposition) `CAtlList` veya başka bir yöntem. `GetNext`
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste **const**, `GetNext` sonraki öğe listesinin bir kopyasını döndürür. Bu yöntemi yalnızca sağ tarafta Atama ifadesinin kullanılacak sağlar ve listenin değişikliklere karşı korur.
+Liste **const**ise, `GetNext` listenin bir sonraki öğesinin bir kopyasını döndürür. Bu, yöntemin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve listeyi değişiklikten korur.
 
-Listede değilse **const**, `GetNext` listesinin sonraki öğeye bir başvuru döndürür. Bu yöntem, atama deyiminin her iki tarafında kullanılacak ve bu nedenle değiştirilecek Liste girişlerini olanak sağlar.
+Liste **const**değilse, `GetNext` listenin bir sonraki öğesine bir başvuru döndürür. Bu, yöntemin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Konum sayacı *pos*, daha fazla öğe yoksa NULL veya listedeki sonraki öğeye işaret edecek şekilde güncelleştirilir. Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *pos* NULL değerine eşittir.
+POSITION sayacı, *pos*, listedeki bir sonraki öğeye işaret etmek için güncelleştirilir veya başka öğe yoksa NULL. Hata ayıklama oluştururda, *pos* NULL'a eşitse bir tasnif hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlList::GetHeadPosition](#getheadposition).
+[CAtlList örneğine bakın:GetHeadPosition](#getheadposition).
 
-##  <a name="getprev"></a>  CAtlList::GetPrev
+## <a name="catllistgetprev"></a><a name="getprev"></a>CAtlList::GetPrev
 
-Önceki öğeyle listeden döndürmek için bu yöntemi çağırın.
+Önceki öğeyi listeden döndürmek için bu yöntemi çağırın.
 
 ```
 E& GetPrev(POSITION& pos) throw();
@@ -453,26 +453,26 @@ const E& GetPrev(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-Önceki bir çağrı tarafından döndürülen bir konum değeri `GetPrev`, [CAtlList::GetTailPosition](#gettailposition), veya diğer `CAtlList` yöntemi.
+*Pos*<br/>
+Bir önceki arama tarafından döndürülen, [CAtlList:::GetTailPosition](#gettailposition) `CAtlList` veya başka bir yöntem. `GetPrev`
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste **const**, `GetPrev` listedeki bir öğe bir kopyasını döndürür. Bu yöntemi yalnızca sağ tarafta Atama ifadesinin kullanılacak sağlar ve listenin değişikliklere karşı korur.
+Liste **const**ise, `GetPrev` listenin bir öğesinin bir kopyasını döndürür. Bu, yöntemin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve listeyi değişiklikten korur.
 
-Listede değilse **const**, `GetPrev` listedeki bir öğeye bir başvuru döndürür. Bu yöntem, atama deyiminin her iki tarafında kullanılacak ve bu nedenle değiştirilecek Liste girişlerini olanak sağlar.
+Liste **const**değilse, `GetPrev` listenin bir öğesiiçin bir başvuru döndürür. Bu, yöntemin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Konum sayacı *pos*, listesinde önceki öğeye işaret edin veya daha fazla öğe yoksa NULL şekilde güncelleştirilir. Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *pos* NULL değerine eşittir.
+POSITION sayacı, *pos*, listedeönceki öğeye işaret etmek için güncelleştirilir veya başka öğe yoksa NULL. Hata ayıklama oluştururda, *pos* NULL'a eşitse bir tasnif hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlList::GetTailPosition](#gettailposition).
+[CAtlList örneğine bakın::GetTailPosition](#gettailposition).
 
-##  <a name="gettail"></a>  CAtlList::GetTail
+## <a name="catllistgettail"></a><a name="gettail"></a>CAtlList::GetTail
 
-Liste sonu öğe döndürmek için bu yöntemi çağırın.
+Listenin kuyruğundaki öğeyi döndürmek için bu yöntemi arayın.
 
 ```
 E& GetTail() throw();
@@ -481,23 +481,23 @@ const E& GetTail() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir başvuru veya listenin sonu öğe, bir kopyasını döndürür.
+Listenin kuyruğundaki öğeye bir başvuru veya bir kopyasını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste **const**, `GetTail` listenin başındaki öğeyi bir kopyasını döndürür. Bu yöntemi yalnızca sağ tarafta Atama ifadesinin kullanılacak sağlar ve listenin değişikliklere karşı korur.
+Liste **const**ise, `GetTail` listenin başındaöğenin bir kopyasını döndürür. Bu, yöntemin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve listeyi değişiklikten korur.
 
-Listede değilse **const**, `GetTail` listenin başındaki öğeyi bir başvuru döndürür. Bu yöntem, atama deyiminin her iki tarafında kullanılacak ve bu nedenle değiştirilecek Liste girişlerini olanak sağlar.
+Liste **const**değilse, `GetTail` listenin başındaki öğeye bir başvuru verir. Bu, yöntemin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
 
-Liste sonu NULL olarak işaret ediyorsa hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir.
+Hata ayıklama oluştururda, listenin kuyruğu NULL'a işaret ederse bir tasnif hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlList::AddTail](#addtail).
+[CAtlList örneğine bakın:AddTail](#addtail).
 
-##  <a name="gettailposition"></a>  CAtlList::GetTailPosition
+## <a name="catllistgettailposition"></a><a name="gettailposition"></a>CAtlList::GetTailPosition
 
-Liste sonu konumunu almak için bu yöntemi çağırın.
+Listenin kuyruğunun konumunu elde etmek için bu yöntemi arayın.
 
 ```
 POSITION GetTailPosition() const throw();
@@ -505,27 +505,27 @@ POSITION GetTailPosition() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe listesinin kuyruğunu karşılık gelen konum değerini döndürür.
+Listenin kuyruğundaki öğeye karşılık gelen POSITION değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste boşsa, döndürülen değer NULL olur.
+Liste boşsa, döndürülen değer NULL'dur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#22](../../atl/codesnippet/cpp/catllist-class_10.cpp)]
 
-##  <a name="inargtype"></a>  CAtlList::INARGTYPE
+## <a name="catllistinargtype"></a><a name="inargtype"></a>CAtlList::INARGTYPE
 
-Bir giriş bağımsız değişkeni bir öğe geçirildiğinde kullanılan türü.
+Bir öğe giriş bağımsız değişkeni olarak geçirildiğinde kullanılan tür.
 
 ```
 typedef ETraits::INARGTYPE INARGTYPE;
 ```
 
-##  <a name="insertafter"></a>  CAtlList::InsertAfter
+## <a name="catllistinsertafter"></a><a name="insertafter"></a>CAtlList::InsertAfter
 
-Yeni bir öğe belirtilen konuma sonra listeye eklemek için bu yöntemi çağırın.
+Belirtilen konumdan sonra listeye yeni bir öğe eklemek için bu yöntemi çağırın.
 
 ```
 POSITION InsertAfter(POSITION pos, INARGTYPE element);
@@ -533,27 +533,27 @@ POSITION InsertAfter(POSITION pos, INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-Sonra yeni öğenin ekleneceği konum değeri.
+*Pos*<br/>
+Yeni öğenin eklendiği POSITION değeri.
 
-*Öğesi*<br/>
+*Öğe*<br/>
 Eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni öğe konumu değerini döndürür.
+Yeni öğenin POSITION değerini verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ekleme başarısız olursa veya sonra kuyruk öğe eklemek için bir girişimde listenin geçerli değilse, hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir.
+Hata ayıklama oluştururda, liste geçerli değilse, ekleme başarısız olursa veya öğeyi kuyruktan sonra eklemegirişiminde bulunulmuşsa, bir hata hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#23](../../atl/codesnippet/cpp/catllist-class_11.cpp)]
 
-##  <a name="insertbefore"></a>  CAtlList::InsertBefore
+## <a name="catllistinsertbefore"></a><a name="insertbefore"></a>CAtlList::EkleBefore
 
-Yeni bir öğe belirtilen konuma önce listeye eklemek için bu yöntemi çağırın.
+Belirtilen konumdan önce listeye yeni bir öğe eklemek için bu yöntemi çağırın.
 
 ```
 POSITION InsertBefore(POSITION pos, INARGTYPE element);
@@ -561,27 +561,27 @@ POSITION InsertBefore(POSITION pos, INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-Yeni bir öğe, bu konum değeri önce listeye eklenir.
+*Pos*<br/>
+Yeni öğe bu POSITION değerinden önce listeye eklenir.
 
-*Öğesi*<br/>
+*Öğe*<br/>
 Eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni öğe konumu değerini döndürür.
+Yeni öğenin POSITION değerini verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ekleme başarısız olursa veya önce head öğesi eklemek için bir girişimde listenin geçerli değilse, hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir.
+Hata ayıklama oluştururda, liste geçerli değilse, ekleme başarısız olursa veya öğeyi kafadan önce ekleme girişiminde bulunulmuşsa, bir hata hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#24](../../atl/codesnippet/cpp/catllist-class_12.cpp)]
 
-##  <a name="isempty"></a>  CAtlList::IsEmpty
+## <a name="catllistisempty"></a><a name="isempty"></a>CAtlList::Boş
 
-Listesinin boş olup olmadığını belirlemek için bu yöntemi çağırın.
+Listenin boş olup olmadığını belirlemek için bu yöntemi arayın.
 
 ```
 bool IsEmpty() const throw();
@@ -589,15 +589,15 @@ bool IsEmpty() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste nesne, aksi takdirde false içeriyorsa true döndürür.
+Liste hiçbir nesne içeriyorsa, aksi takdirde yanlış gerçek döndürür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#25](../../atl/codesnippet/cpp/catllist-class_13.cpp)]
 
-##  <a name="movetohead"></a>  CAtlList::MoveToHead
+## <a name="catllistmovetohead"></a><a name="movetohead"></a>CAtlList::MoveToHead
 
-Listenin başında belirtilen öğe taşımak için bu yöntemi çağırın.
+Belirtilen öğeyi listenin başına taşımak için bu yöntemi çağırın.
 
 ```
 void MoveToHead(POSITION pos) throw();
@@ -605,20 +605,20 @@ void MoveToHead(POSITION pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-Öğeyi taşımak için konum değeri.
+*Pos*<br/>
+Hareket etmek için öğenin KONUM değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen öğeyi listenin başındaki geçerli konumundan taşınır. Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *pos* NULL değerine eşittir.
+Belirtilen öğe geçerli konumundan listenin başına taşınır. Hata ayıklama oluştururda, *pos* NULL'a eşitse bir tasnif hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#26](../../atl/codesnippet/cpp/catllist-class_14.cpp)]
 
-##  <a name="movetotail"></a>  CAtlList::MoveToTail
+## <a name="catllistmovetotail"></a><a name="movetotail"></a>CAtlList::MoveToTail
 
-Belirtilen öğe listesinin kuyruk için taşımak için bu yöntemi çağırın.
+Belirtilen öğeyi listenin kuyruğuna taşımak için bu yöntemi arayın.
 
 ```
 void MoveToTail(POSITION pos) throw();
@@ -626,20 +626,20 @@ void MoveToTail(POSITION pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-Öğeyi taşımak için konum değeri.
+*Pos*<br/>
+Hareket etmek için öğenin KONUM değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen öğe listesinin kuyruk için geçerli konumundan taşınır. Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *pos* NULL değerine eşittir.
+Belirtilen öğe geçerli konumundan listenin kuyruğuna taşınır. Hata ayıklama oluştururda, *pos* NULL'a eşitse bir tasnif hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlList::MoveToHead](#movetohead).
+[CAtlList örneğine bakın::MoveToHead](#movetohead).
 
-##  <a name="removeall"></a>  CAtlList::RemoveAll
+## <a name="catllistremoveall"></a><a name="removeall"></a>CAtlList::RemoveAll
 
-Tüm öğeler listeden kaldırmak için bu yöntemi çağırın.
+Tüm öğeleri listeden kaldırmak için bu yöntemi arayın.
 
 ```
 void RemoveAll() throw();
@@ -647,15 +647,15 @@ void RemoveAll() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, tüm öğeler listeden kaldırır ve ayrılan belleği serbest bırakır. Tüm öğeler silinmez veya liste yapısı bozuksa, hatalarını düzeltir yapılarında bir ATLASSERT gerçekleştirilecektir.
+Bu yöntem, tüm öğeleri listeden kaldırır ve ayrılan belleği serbest sağlar. Debugs oluştururda, tüm öğeler silinmezse veya liste yapısı bozulmuşsa bir ATLASSERT yükseltilir.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlList::IsEmpty](#isempty).
+[CAtlList örneğine bakın::Boş.](#isempty)
 
-##  <a name="removeat"></a>  CAtlList::RemoveAt
+## <a name="catllistremoveat"></a><a name="removeat"></a>CAtlList::RemoveAt
 
-Listeden tek bir öğe kaldırmak için bu yöntemi çağırın.
+Tek bir öğeyi listeden kaldırmak için bu yöntemi çağırın.
 
 ```
 void RemoveAt(POSITION pos) throw();
@@ -663,22 +663,22 @@ void RemoveAt(POSITION pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-Kaldırılacak öğe konumu değeri.
+*Pos*<br/>
+Kaldırılacak öğenin KONUM değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarafından başvurulan öğenin *pos* kaldırılır ve bellek serbest. Kullanmak için kabul edilebilir `RemoveAt` kafası veya listenin kuyruğu kaldırmak için.
+*Pos* tarafından başvurulan öğe kaldırılır ve bellek serbest bırakılır. Listenin başını `RemoveAt` veya kuyruğunu çıkarmak için kullanılması kabul edilebilir.
 
-Hata ayıklama yapılarında, listenin geçerli değilse veya liste yapısı parçası olmayan bellek erişimi listeye öğe kaldırıldığında neden olursa, onaylama işlemi hatası meydana gelir.
+Hata ayıklama yapılarda, liste geçerli değilse veya öğenin kaldırılması liste yapısının bir parçası olmayan belleğe erişmesine neden oluyorsa bir tasnif hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#27](../../atl/codesnippet/cpp/catllist-class_15.cpp)]
 
-##  <a name="removehead"></a>  CAtlList::RemoveHead
+## <a name="catllistremovehead"></a><a name="removehead"></a>CAtlList::RemoveHead
 
-Listenin başındaki öğeyi kaldırmak için bu yöntemi çağırın.
+Listenin başındaki öğeyi kaldırmak için bu yöntemi arayın.
 
 ```
 E RemoveHead();
@@ -690,15 +690,15 @@ Listenin başındaki öğeyi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Head öğesi listesinden silinir ve bellek serbest bırakılır. Öğenin bir kopyasını döndürülür. Liste boşsa, hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir.
+Kafa öğesi listeden silinir ve bellek serbest bırakılır. Öğenin bir kopyası döndürülür. Hata ayıklama oluştururda, liste boşsa bir sancak hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#28](../../atl/codesnippet/cpp/catllist-class_16.cpp)]
 
-##  <a name="removeheadnoreturn"></a>  CAtlList::RemoveHeadNoReturn
+## <a name="catllistremoveheadnoreturn"></a><a name="removeheadnoreturn"></a>CAtlList::RemoveHeadNoReturn
 
-Bir değer döndüren olmadan listenin başındaki öğeyi kaldırmak için bu yöntemi çağırın.
+Bir değer döndürmeden listenin başındaki öğeyi kaldırmak için bu yöntemi arayın.
 
 ```
 void RemoveHeadNoReturn() throw();
@@ -706,15 +706,15 @@ void RemoveHeadNoReturn() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Head öğesi listesinden silinir ve bellek serbest bırakılır. Liste boşsa, hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir.
+Kafa öğesi listeden silinir ve bellek serbest bırakılır. Hata ayıklama oluştururda, liste boşsa bir sancak hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlList::IsEmpty](#isempty).
+[CAtlList örneğine bakın::Boş.](#isempty)
 
-##  <a name="removetail"></a>  CAtlList::RemoveTail
+## <a name="catllistremovetail"></a><a name="removetail"></a>CAtlList::RemoveTail
 
-Liste sonu öğe kaldırmak için bu yöntemi çağırın.
+Listenin kuyruğundaki öğeyi kaldırmak için bu yöntemi arayın.
 
 ```
 E RemoveTail();
@@ -722,19 +722,19 @@ E RemoveTail();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste sonu öğe döndürür.
+Listenin kuyruğundaki öğeyi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kuyruk öğesi listesinden silinir ve bellek serbest bırakılır. Öğenin bir kopyasını döndürülür. Liste boşsa, hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir.
+Kuyruk öğesi listeden silinir ve bellek serbest bırakılır. Öğenin bir kopyası döndürülür. Hata ayıklama oluştururda, liste boşsa bir sancak hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#29](../../atl/codesnippet/cpp/catllist-class_17.cpp)]
 
-##  <a name="removetailnoreturn"></a>  CAtlList::RemoveTailNoReturn
+## <a name="catllistremovetailnoreturn"></a><a name="removetailnoreturn"></a>CAtlList::RemoveTailNoReturn
 
-Bir değer döndüren olmadan listenin sonu öğe kaldırmak için bu yöntemi çağırın.
+Bir değer döndürmeden listenin kuyruğundaki öğeyi kaldırmak için bu yöntemi arayın.
 
 ```
 void RemoveTailNoReturn() throw();
@@ -742,15 +742,15 @@ void RemoveTailNoReturn() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kuyruk öğesi listesinden silinir ve bellek serbest bırakılır. Liste boşsa, hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir.
+Kuyruk öğesi listeden silinir ve bellek serbest bırakılır. Hata ayıklama oluştururda, liste boşsa bir sancak hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlList::IsEmpty](#isempty).
+[CAtlList örneğine bakın::Boş.](#isempty)
 
-##  <a name="setat"></a>  CAtlList::SetAt
+## <a name="catllistsetat"></a><a name="setat"></a>CAtlList::SetAt
 
-Listede verilen konumda öğenin değerini ayarlamak için bu yöntemi çağırın.
+Listede belirli bir konumda öğenin değerini ayarlamak için bu yöntemi arayın.
 
 ```
 void SetAt(POSITION pos, INARGTYPE element);
@@ -758,23 +758,23 @@ void SetAt(POSITION pos, INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-KONUMU değiştirmek için öğenin karşılık gelen değer.
+*Pos*<br/>
+Değişmek üzere öğeye karşılık gelen POSITION değeri.
 
-*Öğesi*<br/>
+*Öğe*<br/>
 Yeni öğe değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Mevcut değerle değiştiren *öğesi*. Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *pos* NULL değerine eşittir.
+Varolan değeri *öğeyle*değiştirir. Hata ayıklama oluştururda, *pos* NULL'a eşitse bir tasnif hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#30](../../atl/codesnippet/cpp/catllist-class_18.cpp)]
 
-##  <a name="swapelements"></a>  CAtlList::SwapElements
+## <a name="catllistswapelements"></a><a name="swapelements"></a>CAtlList::SwapElements
 
-Listedeki öğeleri değiştirmek için bu yöntemi çağırın.
+Listedeki öğeleri değiştirmek için bu yöntemi arayın.
 
 ```
 void SwapElements(POSITION pos1, POSITION pos2) throw();
@@ -783,14 +783,14 @@ void SwapElements(POSITION pos1, POSITION pos2) throw();
 ### <a name="parameters"></a>Parametreler
 
 *pos1*<br/>
-İlk konum değeri.
+İlk POSITION değeri.
 
 *pos2*<br/>
-İkinci konum değeri.
+İkinci POSITION değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen iki konumlarda öğeleri değiştirir. Hata ayıklama derlemelerinde, ya konum değeri NULL değerine eşit olup olmadığını onaylama işlemi hatası meydana gelir.
+Belirtilen iki pozisyondaki öğeleri değiştirir. Hata ayıklama oluştururda, her iki konum değeri null'a eşitse bir tasnif hatası oluşur.
 
 ### <a name="example"></a>Örnek
 
@@ -799,4 +799,4 @@ Belirtilen iki konumlarda öğeleri değiştirir. Hata ayıklama derlemelerinde,
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CList Sınıfı](../../mfc/reference/clist-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

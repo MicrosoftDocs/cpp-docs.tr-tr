@@ -1,9 +1,11 @@
 ---
 title: _putch_nolock, _putwch_nolock
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _putwch_nolock
 - _putch_nolock
+- _o__putch_nolock
+- _o__putwch_nolock
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -36,19 +39,19 @@ helpviewer_keywords:
 - console, writing characters to
 - _putwch_nolock function
 ms.assetid: edbc811d-bac6-47fa-a872-fe4f3a1590b0
-ms.openlocfilehash: 74f1ba5fe43fb8d29a441fd7e024fa195c1c9082
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 16f01e626f72269286cda045615665152361a887
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70950088"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81338444"
 ---
 # <a name="_putch_nolock-_putwch_nolock"></a>_putch_nolock, _putwch_nolock
 
-İş parçacığını kilitlemeden konsola bir karakter yazar.
+İş parçacığı kilitlemeden konsola bir karakter yazar.
 
 > [!IMPORTANT]
-> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,16 +66,18 @@ wchar_t c
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
-Çıkış olacak karakter.
+*C*<br/>
+Karakter çıktı olmak.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa *c* döndürür. **_Putch_nolock** başarısız olursa, **EOF**döndürür; **_putwch_nolock** başarısız olursa, **weof**döndürür.
+Başarılı olursa *c* verir. **_putch_nolock** başarısız olursa, **EOF**döndürür; **_putwch_nolock** başarısız olursa, **WEOF**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_putch_nolock** ve **_putwch_nolock** , sırasıyla **_putch** ve **_putwch**ile aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmazlar. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
+**_putch_nolock** ve **_putwch_nolock,** diğer iş parçacıkları tarafından parazite karşı korunmayanlar dışında, sırasıyla **_putch** ve **_putwch**ile aynıdır. Diğer iş parçacığı kilitleme yükü ne olursa olsun onlar daha hızlı olabilir. Bu işlevleri yalnızca tek iş parçacığı uygulamaları gibi iş parçacığı güvenli bağlamlarda veya arama kapsamının iş parçacığı yalıtımını zaten işlediği durumlarda kullanın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -84,17 +89,17 @@ Başarılıysa *c* döndürür. **_Putch_nolock** başarısız olursa, **EOF**d�
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putch_nolock**|\<conio. h >|
-|**_putwch_nolock**|\<conio. h >|
+|**_putch_nolock**|\<conio.h>|
+|**_putwch_nolock**|\<conio.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="libraries"></a>Kitaplıklar
 
-[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve bağlantı noktası g/ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve Bağlantı Noktası G/Ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>

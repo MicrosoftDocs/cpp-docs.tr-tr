@@ -6,56 +6,56 @@ helpviewer_keywords:
 - ATL, module classes
 - module classes
 ms.assetid: fd75382d-c955-46ba-a38e-37728b7fa00f
-ms.openlocfilehash: 2fe659b47893f821aab4cda31ab1a4e9a6788ec6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b72cac0da06b70a40e01fcc75da52f1678f3f64
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252076"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81317367"
 ---
 # <a name="atl-module-classes"></a>ATL Modül Sınıfları
 
-Bu konu, ATL 7. 0'yeni modül sınıfları açıklar.
+Bu konu, 7.0 TL'de yeni olan modül sınıflarını tartışır.
 
-## <a name="ccommodule-replacement-classes"></a>CComModule değiştirme sınıfları
+## <a name="ccommodule-replacement-classes"></a>Ccommodule Değiştirme Sınıfları
 
-Önceki sürümlerinde kullanılan ATL `CComModule`. ATL 7. 0'da, `CComModule` işlevleri, çeşitli sınıfları tarafından değiştirilir:
+ATL önceki sürümlerinde kullanılır. `CComModule` ATL 7.0'da `CComModule` işlevsellik çeşitli sınıflar la değiştirilir:
 
-- [CAtlBaseModule](../atl/reference/catlbasemodule-class.md) ATL kullanabiliyorsanız, çoğu uygulama tarafından gerekli olan bilgileri içerir. Modül ve kaynak örneğinin HINSTANCE içerir.
+- [CAtlBaseModülü](../atl/reference/catlbasemodule-class.md) ATL kullanan çoğu uygulama tarafından gerekli bilgileri içerir. Modülün HINSTANCE'ını ve kaynak örneğini içerir.
 
-- [CAtlComModule](../atl/reference/catlcommodule-class.md) ATL COM sınıfları tarafından gerekli olan bilgileri içerir.
+- [CAtlComModülü](../atl/reference/catlcommodule-class.md) ATL'deki COM sınıfları tarafından gerekli bilgileri içerir.
 
-- [CAtlWinModule](../atl/reference/catlwinmodule-class.md) ATL Pencereleme sınıfları tarafından gerekli olan bilgileri içerir.
+- [CAtlWinModülü](../atl/reference/catlwinmodule-class.md) ATL'deki pencere sınıfları tarafından gerekli bilgileri içerir.
 
-- [Catldebugınterfacesmodule](../atl/reference/catldebuginterfacesmodule-class.md) arabirimi hata ayıklama desteği içerir.
+- [CAtlDebugInterfacesModülü](../atl/reference/catldebuginterfacesmodule-class.md) Arabirim hata ayıklama desteği içerir.
 
-- [CAtlModule](../atl/reference/catlmodule-class.md) aşağıdaki `CAtlModule`-türetilmiş sınıflar belirli uygulama türde de gerekli bilgileri içeren özelleştirilmiş. Bu sınıfların çoğu üyeleri geçersiz kılınabilir:
+- [CAtlModülü](../atl/reference/catlmodule-class.md) Aşağıdaki `CAtlModule`türetilmiş sınıflar, belirli bir uygulama türünde gerekli bilgileri içerecek şekilde özelleştirilmiştir. Bu sınıflardaki üyelerin çoğu geçersiz kılınabilir:
 
-   - [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) DLL uygulamalarında kullanılır. Standart dışarı aktarmaları için kod sağlar.
+  - [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) DLL uygulamalarında kullanılır. Standart dışa aktarma için kod sağlar.
 
-   - [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) EXE uygulamalarında kullanılır. Bir EXE gerekli kodu sağlar.
+  - [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) EXE uygulamalarında kullanılır. EXE'de gerekli kodu sağlar.
 
-   - [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) Windows NT ve Windows 2000 hizmetleri oluşturmak için destek sağlar.
+  - [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) Windows NT ve Windows 2000 Hizmetleri oluşturmak için destek sağlar.
 
-`CComModule` Geriye dönük uyumluluk için yine de kullanılabilir.
+`CComModule`geriye dönük uyumluluk için hala kullanılabilir.
 
-## <a name="reasons-for-distributing-ccommodule-functionality"></a>CComModule işlevselliği dağıtmak için nedenler
+## <a name="reasons-for-distributing-ccommodule-functionality"></a>CComModule İşlevsellik Dağıtma Nedenleri
 
-İşlevselliğini `CComModule` birkaç yeni sınıfı aşağıdaki nedenlerle dağıtıldı:
+İşlevsellik `CComModule` aşağıdaki nedenlerle birkaç yeni sınıfa dağıtıldı:
 
-- İşlevleri olun `CComModule` ayrıntılı.
+- İşlevselliği `CComModule` parçalı olarak yapın.
 
-   COM, Pencereleme, arabirimi hata ayıklama ve uygulamaya özgü (DLL veya EXE) özellikleri için destek ayrı sınıflarda sunulmuştur.
+   COM, pencereleme, arabirim hata ayıklama ve uygulamaya özgü (DLL veya EXE) özellikleri için destek artık ayrı sınıflarda.
 
-- Otomatik olarak bu modüllerin her biri genel örneğini bildirir.
+- Bu modüllerin her birinin genel örneğini otomatik olarak bildirin.
 
-   Gerekli modül sınıfları genel bir örneğini projeye bağlı.
+   Gerekli modül sınıflarının genel bir örneği projeye bağlanır.
 
-- Init ve terimi yöntemleri çağırma ihtiyacını kaldırın.
+- Init ve Terim yöntemlerini arama zorunluluğunu ortadan kaldırın.
 
-   Init ve terimi yöntemleri için modül sınıfları oluşturucular ve Yıkıcılar taşındı; artık Init ve istediğiniz dönemi çağırmaya gerek yoktur.
+   Init ve Terim yöntemleri modül sınıfları için yapıcılar ve yıkıcılar içine taşınmış; Artık Init ve Term'i aramaya gerek yoktur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../atl/active-template-library-atl-concepts.md)<br/>
-[Sınıfına genel bakış](../atl/atl-class-overview.md)
+[Kavramlar](../atl/active-template-library-atl-concepts.md)<br/>
+[Sınıfa Genel Bakış](../atl/atl-class-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: CComObjectRootEx sınıfı
+title: CComObjectRootEx Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComObjectRootEx
@@ -20,16 +20,16 @@ f1_keywords:
 helpviewer_keywords:
 - reference counting
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
-ms.openlocfilehash: 8fa4e7a035ded2e1a20dd278a5d54d40252e1958
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: e8db86f6214f95cd9bb08d3b5f6c6c1a38ca475c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417931"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81327601"
 ---
-# <a name="ccomobjectrootex-class"></a>CComObjectRootEx sınıfı
+# <a name="ccomobjectrootex-class"></a>CComObjectRootEx Sınıfı
 
-Bu sınıf, hem toplanmış hem de toplanmış nesneler için nesne başvuru sayısı yönetimini işlemek için yöntemler sağlar.
+Bu sınıf, hem birleştirilmiş olmayan hem de birleştirilmiş nesneler için nesne başvuru sayısı yönetimini işlemek için yöntemler sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,7 +41,7 @@ class CComObjectRootEx : public CComObjectRootBase
 #### <a name="parameters"></a>Parametreler
 
 *ThreadModel*<br/>
-Yöntemleri istenen iş parçacığı modelini uygulayan sınıf. İş parçacığı modelini *ThreadModel* olarak [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)veya [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)olarak ayarlayarak seçebilirsiniz. *ThreadModel* ' i [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) veya [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)olarak ayarlayarak sunucunun varsayılan iş parçacığı modelini kabul edebilirsiniz.
+Yöntemleri istenen iş parçacığı modelini uygulayan sınıf. Açıkça [CComSingleThreadModel,](../../atl/reference/ccomsinglethreadmodel-class.md) [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)veya [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md) *threadmodel* ayarlayarak iş parçacığı modeli seçebilirsiniz. *ThreadModel'i* [CComObjectThreadModel veya CComGlobalsThreadModel'e](atl-typedefs.md#ccomobjectthreadmodel) ayarlayarak sunucunun varsayılan iş parçacığı modelini kabul edebilirsiniz. [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)
 
 ## <a name="members"></a>Üyeler
 
@@ -49,67 +49,67 @@ Yöntemleri istenen iş parçacığı modelini uygulayan sınıf. İş parçacı
 
 |||
 |-|-|
-|[CComObjectRootEx](#ccomobjectrootex)|Oluşturucu.|
-|[InternalAddRef](#internaladdref)|Toplanmayan bir nesne için başvuru sayısını artırır.|
-|[InternalRelease](#internalrelease)|Toplanmayan bir nesne için başvuru sayısını azaltır.|
-|[İne](#lock)|İş parçacığı modeli çok iş parçacıklı ise, kritik bir bölüm nesnesinin sahipliğini edinir.|
-|[Kaldırın](#unlock)|İş parçacığı modeli çok iş parçacıklı ise, kritik bir bölüm nesnesinin sahipliğini yayınlar.|
+|[Ccomobjectrootex](#ccomobjectrootex)|Oluşturucu.|
+|[InternalAddref](#internaladdref)|Birbirlemeyen bir nesne için başvuru sayısını artırımı.|
+|[Dahili Sürüm](#internalrelease)|Birbirlemeyen bir nesne için başvuru sayısını eriter.|
+|[Kilit](#lock)|İş parçacığı modeli çok iş parçacığı varsa, kritik bir bölüm nesnesinin sahipliğini alır.|
+|[Kilidini](#unlock)|İş parçacığı modeli çok iş parçacığı varsa, kritik bir bölüm nesnesinin sahipliğini serbest bırakır.|
 
-### <a name="ccomobjectrootbase-methods"></a>CComObjectRootBase yöntemleri
+### <a name="ccomobjectrootbase-methods"></a>CcomObjectRootBase Yöntemleri
 
 |||
 |-|-|
-|[Sonlandıryapısı](#finalconstruct)|Nesneniz için gereken başlatma işlemini gerçekleştirmek için sınıfınıza geçersiz kılın.|
-|[Sonlandırın sürümü](#finalrelease)|Nesneniz için gereken temizleme işlemini gerçekleştirmek için sınıfınıza geçersiz kılın.|
-|[OuterAddRef](#outeraddref)|Toplanmış bir nesne için başvuru sayısını artırır.|
-|[OuterQueryInterface](#outerqueryinterface)|Toplu bir nesnenin dış `IUnknown` temsilciler.|
-|[OuterRelease](#outerrelease)|Toplanmış bir nesne için başvuru sayısını azaltır.|
+|[Finalconstruct](#finalconstruct)|Nesnenizin gerektirdiği herhangi bir başlatmayı gerçekleştirmek için sınıfınızdaki geçersiz kılma.|
+|[FinalRelease](#finalrelease)|Nesnenizin gerektirdiği temizlemeyi gerçekleştirmek için sınıfınızdaki geçersiz kılmayı.|
+|[DışAddref](#outeraddref)|Toplanan bir nesne için başvuru sayısını artırımı.|
+|[DışSorguAra Birimi](#outerqueryinterface)|Toplanan bir nesnenin dış `IUnknown` temsilcisi.|
+|[Dış Sürüm](#outerrelease)|Toplanan bir nesne için başvuru sayısını eriter.|
 
 ### <a name="static-functions"></a>Statik işlevler
 
 |||
 |-|-|
-|[InternalQueryInterface](#internalqueryinterface)|Toplanmayan bir nesnenin `IUnknown` temsilciler.|
-|[ObjectMain](#objectmain)|Modül başlatma sırasında ve nesne eşlemesinde listelenen türetilmiş sınıfların sonlandırılması sırasında çağırılır.|
+|[InternalQueryInterface](#internalqueryinterface)|Birbirlemeyen `IUnknown` bir nesnenin temsilcileri.|
+|[ObjectMain](#objectmain)|Nesne haritasında listelenen türemiş sınıflar için modül başlatma ve sonlandırma sırasında çağrılır.|
 
-### <a name="data-members"></a>Veri üyeleri
+### <a name="data-members"></a>Veri Üyeleri
 
 |||
 |-|-|
-|[m_dwRef](#m_dwref)|`m_pOuterUnknown`, birleşimin bir parçası. Nesne, `AddRef` başvuru sayısını ve `Release`tutmak için toplanmadığınızda kullanılır.|
-|[m_pOuterUnknown](#m_pouterunknown)|`m_dwRef`, birleşimin bir parçası. Nesne toplanırsa, bilinmeyen dış öğesine bir işaretçi tutacak şekilde kullanılır.|
+|[m_dwRef](#m_dwref)|Bir `m_pOuterUnknown`sendikanın parçası yla. Nesne referans sayısını tutmak için toplanmadığında `AddRef` kullanılır `Release`ve .|
+|[m_pOuterUnknown](#m_pouterunknown)|Bir `m_dwRef`sendikanın parçası yla. Nesne dış bilinmeyenbir işaretçi tutmak için toplandığında kullanılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComObjectRootEx` hem toplanmış hem de toplanmış nesneler için nesne başvuru sayısı yönetimini işler. Nesneniz toplanmıyor ise nesne başvuru sayısını tutar ve nesneniz toplanırsa bu, bilinmeyen dış öğesine işaretçiyi barındırır. Toplu nesneler için `CComObjectRootEx` Yöntemler, oluşturulacak iç nesnenin başarısızlığını işlemek ve iç arabirimler serbest bırakıldığında ya da iç nesne silindiğinde, dış nesne silinmeye karşı korumak için kullanılabilir.
+`CComObjectRootEx`hem birleştirilmiş hem de birleştirilmiş nesneler için nesne başvuru sayımı yönetimini işler. Nesneniz toplanmıyorsa nesne başvuru sayısını tutar ve nesneniz toplanmışsa işaretçiyi dış bilinmeyene tutar. Birleştirilmiş nesneler `CComObjectRootEx` için, iç nesnenin oluşturma daki hatasını işlemek ve iç arabirimler serbest bırakıldığında veya iç nesne silindiğinde dış nesneyi silmeden korumak için yöntemler kullanılabilir.
 
-COM sunucusu uygulayan bir sınıf `CComObjectRootEx` veya [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md)öğesinden kalıtımla almalıdır.
+COM sunucusu uygulayan bir sınıf devralmalı `CComObjectRootEx` veya [CComObjectRoot.](../../atl/reference/ccomobjectroot-class.md)
 
-Sınıf tanımınız [DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable) makrosunu BELIRTIYORSA, ATL `IClassFactory::CreateInstance` çağrıldığında bir `CComPolyObject<CYourClass>` örneği oluşturur. Oluşturma sırasında, bilinmeyen dıştaki değeri denetlenir. NULL ise, toplanmayan bir nesne için `IUnknown` uygulanır. Bilinmeyen dış değer NULL değilse, toplanan bir nesne için `IUnknown` uygulanır.
+Sınıf tanımınız [DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable) makroyu belirtirse, ATL `CComPolyObject<CYourClass>` ne `IClassFactory::CreateInstance` zaman çağrılırken bir örnek oluşturur. Oluşturma sırasında, dış bilinmeyenin değeri denetlenir. NULL ise, `IUnknown` birbirlmeyen bir nesne için uygulanır. Dış bilinmeyen NULL değilse, `IUnknown` birleştirilmiş bir nesne için uygulanır.
 
-Sınıfınız DECLARE_POLY_AGGREGATABLE makrosunu belirtmezse, ATL toplanmış nesneler için bir `CAggComObject<CYourClass>` örneği veya toplanmayan nesneler için bir `CComObject<CYourClass>` örneği oluşturur.
+Sınıfınız DECLARE_POLY_AGGREGATABLE makrobelirtmezse, ATL birleştirilmiş nesnelerin `CAggComObject<CYourClass>` bir örneğini veya birbirlmeyen nesnelerin örneğini `CComObject<CYourClass>` oluşturur.
 
-`CComPolyObject` kullanmanın avantajı, toplu ve toplu olmayan durumları işlemek için modülünüzün hem `CComAggObject` hem de `CComObject` olmasını önlemenize olanak sağlar. Tek bir `CComPolyObject` nesnesi her iki durumu da işler. Bu nedenle, bir vtable 'ın yalnızca bir kopyası ve işlevlerinizin bir kopyası var. Vtable 'niz büyükse bu, modül boyutunuzu önemli ölçüde azaltabilir. Ancak, vtable 'niz küçükse `CComPolyObject` kullanmak, `CComAggObject` ve `CComObject`gibi toplanmış veya toplanmayan bir nesne için en iyi duruma getirilmediğinden biraz daha büyük bir modül boyutuna neden olabilir.
+Kullanmanın `CComPolyObject` avantajı, birleştirilmiş ve `CComAggObject` `CComObject` birbirlemeyen servis taleplerini işlemek için hem hem de modülünüzde olmasını önlemenizdir. Tek `CComPolyObject` bir nesne her iki durumda da işler. Bu nedenle, modülünüzde vtable'ın yalnızca bir kopyası ve işlevlerin bir kopyası bulunur. Vtable'ınız büyükse, bu durum modül boyutunu önemli ölçüde azaltabilir. Ancak, vtable'ınız küçükse, `CComPolyObject` toplanmış veya birleştirilmiş olmayan bir nesne için optimize `CComAggObject` edilmedikve `CComObject`.
 
-Nesneniz toplanırsa, [ıunknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) `CComAggObject` veya `CComPolyObject`tarafından uygulanır. Bu sınıflar, bilinmeyen dış öğesine iletmek için `CComObjectRootEx``OuterQueryInterface`, `OuterAddRef`ve `OuterRelease` için `QueryInterface`, `AddRef`ve `Release` çağrılarını devredebilir. Genellikle, derlenmiş nesneleri oluşturmak için sınıfınıza `CComObjectRootEx::FinalConstruct` geçersiz kılar ve toplanmış nesneleri serbest bırakmak için `CComObjectRootEx::FinalRelease` geçersiz kılabilirsiniz.
+Nesneniz biraraya toplanmışsa, [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) tarafından `CComAggObject` veya `CComPolyObject`. Bu sınıflar `QueryInterface` `AddRef`, `Release` , `CComObjectRootEx`ve `OuterQueryInterface`'s çağırır , `OuterAddRef`ve `OuterRelease` dış bilinmeyene iletmek için. Genellikle, toplanan nesneleri `CComObjectRootEx::FinalConstruct` oluşturmak için sınıfınızda geçersiz kılarsınız ve `CComObjectRootEx::FinalRelease` toplanan nesneleri serbest kılmak için geçersiz kılarsınız.
 
-Nesneniz toplanmadığından, `IUnknown` `CComObject` veya `CComPolyObject`tarafından uygulanır. Bu durumda `QueryInterface`, `AddRef`ve `Release` çağrıları, gerçek işlemleri gerçekleştirmek için `CComObjectRootEx``InternalQueryInterface`, `InternalAddRef`ve `InternalRelease` için atanır.
+Nesneniz biraraya gelmezse, `IUnknown` ya `CComObject` `CComPolyObject`da . Bu `QueryInterface`durumda, ''''''nin `AddRef` `Release` `CComObjectRootEx` `InternalQueryInterface` `InternalAddRef`, ve gerçek `InternalRelease` işlemleri gerçekleştirmek için ' olarak adverilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcom. h
+**Başlık:** atlcom.h
 
-##  <a name="ccomobjectrootex"></a>CComObjectRootEx:: CComObjectRootEx
+## <a name="ccomobjectrootexccomobjectrootex"></a><a name="ccomobjectrootex"></a>Ccomobjectrootex::ccomobjectrootex
 
-Oluşturucu başvuru sayısını 0 olarak başlatır.
+Oluşturucu, başvuru sayısını 0'a göre başlatleştirir.
 
 ```
 CComObjectRootEx();
 ```
 
-##  <a name="finalconstruct"></a>CComObjectRootEx:: Finalyapısı
+## <a name="ccomobjectrootexfinalconstruct"></a><a name="finalconstruct"></a>Ccomobjectrootex::finalconstruct
 
-Nesneniz için gereken başlatma işlemini gerçekleştirmek için türetilmiş sınıfınıza bu yöntemi geçersiz kılabilirsiniz.
+Nesneniz için gerekli olan herhangi bir başlatmayı gerçekleştirmek için türetilmiş sınıfınızda bu yöntemi geçersiz kılabilirsiniz.
 
 ```
 HRESULT FinalConstruct();
@@ -117,43 +117,43 @@ HRESULT FinalConstruct();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı veya standart hata HRESULT değerlerinden birine S_OK döndürün.
+Başarı veya standart hata HRESULT değerlerinden biri S_OK döndürün.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, `CComObjectRootEx::FinalConstruct` S_OK döndürür.
+Varsayılan olarak, `CComObjectRootEx::FinalConstruct` yalnızca S_OK döndürür.
 
-Sınıfınızın Oluşturucusu yerine `FinalConstruct` başlatmayı gerçekleştirmenin avantajları vardır:
+Sınıfınızın oluşturucusu `FinalConstruct` yerine başlatma gerçekleştirmenin avantajları vardır:
 
-- Bir oluşturucudan bir durum kodu döndüremez, ancak `FinalConstruct`dönüş değeri ile bir HRESULT döndürebilirsiniz. Sınıfınızın nesneleri ATL tarafından sunulan standart sınıf fabrikası kullanılarak oluşturulduğunda, bu dönüş değeri COM istemcisine geri dağıtılır ve bunları ayrıntılı hata bilgileri sağlamanıza olanak tanır.
+- Bir kurucudan durum kodu döndüremezsiniz, ancak `FinalConstruct`''nin iade değeri' ile bir HRESULT döndürebilirsiniz. Sınıfınızın nesneleri ATL tarafından sağlanan standart sınıf fabrikası kullanılarak oluşturulurken, bu iade değeri COM istemcisine geri yayılarak ayrıntılı hata bilgileri sağlamanıza olanak sağlar.
 
-- Bir sınıfın oluşturucusundan sanal işlev mekanizması aracılığıyla sanal işlevleri çağrılamaz. Bir sınıfın oluşturucusundan bir sanal işlevin çağrılması, devralma hiyerarşisinde bu noktada tanımlandığından, işleve statik olarak çözümlenmiş bir çağrıya neden olur. Saf sanal işlevlere yapılan çağrılar bağlayıcı hatalarına neden olacak.
+- Bir sınıfın oluşturucusundan sanal işlev mekanizması üzerinden sanal işlevleri çağıramazsınız. Bir sınıfın oluşturucusu sanal bir işlev çağrılması, devralma hiyerarşisinde bu noktada tanımlandığı gibi işleviçin statik olarak çözülmüş bir çağrı yla sonuçlanır. Saf sanal işlevlere yapılan çağrılar, bağlayıcı hatalarıyla sonuçlanır.
 
-   Sınıfınız devralma hiyerarşisinde en çok türetilen sınıf değildir; bu özellik, bazı işlevlerinden bazılarını sağlamak için ATL tarafından sağlanan türetilmiş bir sınıfa bağımlıdır. Başlatmanın Bu sınıf tarafından sunulan özellikleri kullanması gerektiği konusunda iyi bir fikir vardır (sınıfınızın nesneleri diğer nesneleri toplamanız gerektiğinde bu kesinlikle doğrudur), ancak sınıfınıza olan oluşturucunun bu özelliklere erişme yolu yoktur. Sınıfınız için oluşturma kodu, en çok türetilen sınıf tam olarak oluşturulmadan önce yürütülür.
+   Sınıfınız devralma hiyerarşisinde en çok türetilmiş sınıf değildir - bazı işlevlerini sağlamak için ATL tarafından sağlanan türemiş bir sınıfa dayanır. Başlatmanızın bu sınıfın sağladığı özellikleri kullanması gerekebilir (sınıfınızdaki nesnelerin diğer nesneleri toplaması gerektiğinde bu kesinlikle doğrudur), ancak sınıfınızdaki oluşturucunun bu özelliklere erişme şekli yoktur. Sınıfınızın yapı kodu, en çok türetilen sınıf tam olarak oluşturulmadan önce yürütülür.
 
-   Ancak, en çok türetilen sınıf tam olarak oluşturulduktan sonra, sanal işlevleri çağırıp ATL tarafından verilen başvuru sayma uygulamasını kullanmanıza olanak tanıyan `FinalConstruct` hemen çağrılır.
+   Ancak, `FinalConstruct` sanal işlevleri aramanıza ve ATL tarafından sağlanan başvuru sayma uygulamasını kullanmanıza olanak tanıyan en türetilmiş sınıf tam olarak oluşturulduktan hemen sonra çağrılır.
 
 ### <a name="example"></a>Örnek
 
-Genellikle, toplanan nesneleri oluşturmak için `CComObjectRootEx` türetilen sınıfta bu yöntemi geçersiz kılın. Örneğin:
+Genellikle, toplanan nesneleri oluşturmak `CComObjectRootEx` için türetilen sınıfta bu yöntemi geçersiz kılmak. Örneğin:
 
 [!code-cpp[NVC_ATL_COM#40](../../atl/codesnippet/cpp/ccomobjectrootex-class_1.h)]
 
-Oluşturma başarısız olursa, bir hata döndürebilir. Ayrıca, oluşturma sırasında iç toplanmış nesne başvuru sayısını artırır ve sonra sayıyı 0 olarak azaltır ve dış nesnenizin silinmesini korumak için makro [DECLARE_PROTECT_FINAL_CONSTRUCT](aggregation-and-class-factory-macros.md#declare_protect_final_construct) de kullanabilirsiniz.
+Yapı başarısız olursa, bir hata döndürebilirsiniz. Makro [DECLARE_PROTECT_FINAL_CONSTRUCT,](aggregation-and-class-factory-macros.md#declare_protect_final_construct) oluşturma sırasında iç toplu nesne başvuru sayısını artımlıve sayıyı 0'a çıkararsa dış nesnenizin silinmesini korumak için de kullanabilirsiniz.
 
-Toplama oluşturmanın tipik bir yolu aşağıda verilmiştir:
+Aşağıda, bir toplu oluşturmanın tipik bir yolu vereme şekli vereme şekli ve
 
-- Sınıf nesneniz için `IUnknown` bir işaretçi ekleyin ve oluşturucuda NULL olarak başlatın.
+- Sınıf `IUnknown` nesnenize bir işaretçi ekleyin ve oluşturucudaki NULL'a başharf.
 
-- Toplama oluşturmak için `FinalConstruct` geçersiz kılın.
+- Toplamı `FinalConstruct` oluşturmak için geçersiz kılın.
 
-- [COM_INTERFACE_ENTRY_AGGREGATE](com-interface-entry-macros.md#com_interface_entry_aggregate) makrosunda parametre olarak tanımladığınız `IUnknown` işaretçisini kullanın.
+- COM_INTERFACE_ENTRY_AGGREGATE `IUnknown` makronun parametresi olarak [COM_INTERFACE_ENTRY_AGGREGATE](com-interface-entry-macros.md#com_interface_entry_aggregate) tanımladığınız işaretçiyi kullanın.
 
-- `IUnknown` işaretçisini serbest bırakmak için `FinalRelease` geçersiz kılın.
+- İşaretçiyi `FinalRelease` `IUnknown` serbest bırakmak için geçersiz kılın.
 
-##  <a name="finalrelease"></a>CComObjectRootEx:: FinalRelease
+## <a name="ccomobjectrootexfinalrelease"></a><a name="finalrelease"></a>Ccomobjectrootex::finalrelease
 
-Nesneniz için gereken herhangi bir temizleme işlemini gerçekleştirmek için, türetilmiş sınıfınıza bu yöntemi geçersiz kılabilirsiniz.
+Nesneniz için gerekli herhangi bir temizleme gerçekleştirmek için türetilmiş sınıfınızda bu yöntemi geçersiz kılabilirsiniz.
 
 ```
 void FinalRelease();
@@ -163,11 +163,11 @@ void FinalRelease();
 
 Varsayılan olarak, `CComObjectRootEx::FinalRelease` hiçbir şey yapmaz.
 
-Nesne hala `FinalRelease` çağrıldığı noktada tamamen oluşturulduğundan, `FinalRelease` Temizleme işleminin yerine, sınıfınızın yıkıcıya kod eklenmesi tercih edilir. Bu, en çok türetilen sınıf tarafından sunulan yöntemlere güvenle erişmenizi sağlar. Bu, silmeden önce toplanmış nesneleri serbest bırakma için özellikle önemlidir.
+`FinalRelease` Nesne çağrıldığı noktada `FinalRelease` hala tam olarak inşa edildiğinden, temizlemeyi yapmak sınıfınızın yıkıcısına kod eklemekten daha iyidir. Bu, en çok türetilmiş sınıf tarafından sağlanan yöntemlere güvenle erişmenizi sağlar. Bu, özellikle silinmeden önce toplanan nesneleri serbest bırakma için önemlidir.
 
-##  <a name="internaladdref"></a>CComObjectRootEx:: InternalAddRef
+## <a name="ccomobjectrootexinternaladdref"></a><a name="internaladdref"></a>Ccomobjectrootex::internaladdref
 
-Toplanmayan bir nesnenin başvuru sayısını 1 artırır.
+Birbirlemeyen bir nesnenin başvuru sayısını 1 ile artışlar.
 
 ```
 ULONG InternalAddRef();
@@ -179,9 +179,9 @@ Tanılama ve test için yararlı olabilecek bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İş parçacığı modeli çok iş parçacıklı ise, aynı anda birden fazla iş parçacığının başvuru sayısını değiştirmesini engellemek için `InterlockedIncrement` kullanılır.
+İş parçacığı modeli çok iş `InterlockedIncrement` parçacığı varsa, aynı anda birden fazla iş parçacığı nın başvuru sayısını değiştirmesini önlemek için kullanılır.
 
-##  <a name="internalqueryinterface"></a>CComObjectRootEx:: InternalQueryInterface
+## <a name="ccomobjectrootexinternalqueryinterface"></a><a name="internalqueryinterface"></a>CcomObjectRootEx::InternalQueryInterface
 
 İstenen arabirim için bir işaretçi alır.
 
@@ -195,17 +195,17 @@ static HRESULT InternalQueryInterface(
 
 ### <a name="parameters"></a>Parametreler
 
-*pThis*<br/>
-'ndaki `QueryInterface`sunulan arabirimlerin COM haritasını içeren nesneye yönelik bir işaretçi.
+*pBu*<br/>
+[içinde] Açıkta kalan arabirimlerin COM eşlemi içeren `QueryInterface`nesneye bir işaretçi.
 
 *pEntries*<br/>
-'ndaki Kullanılabilir arabirimlerin eşlemesine erişen `_ATL_INTMAP_ENTRY` yapısına yönelik bir işaretçi.
+[içinde] Kullanılabilir arabirimlerin `_ATL_INTMAP_ENTRY` haritasına erişen yapının işaretçisi.
 
-*'si*<br/>
-'ndaki İstenen arabirimin GUID 'SI.
+*ııd*<br/>
+[içinde] İstenmekte olan arabirimin GUID'i.
 
-*ppvObject*<br/>
-dışı Arabirim bulunamazsa, *IID*'de belirtilen arabirim işaretçisi IŞARETÇISI veya null.
+*ppvNesne*<br/>
+[çıkış] Arabirim bulunamazsa *iid*veya NULL'da belirtilen arabirim işaretçisine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -213,11 +213,11 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`InternalQueryInterface` yalnızca COM Map tablosundaki arabirimleri işler. Nesneniz toplanırsa, `InternalQueryInterface` bilinmeyen dış öğesine temsilci eklemez. COM harita tablosuna, makro [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) veya türevlerinden biri ile arabirimler girebilirsiniz.
+`InternalQueryInterface`yalnızca COM harita tablosundaki arabirimleri işler. Nesneniz biraraya geliyorsa, `InternalQueryInterface` dış bilinmeyene temsilci vermez. Makro [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) veya türevlerinden biriyle COM harita tablosuna arayüzler girebilirsiniz.
 
-##  <a name="internalrelease"></a>CComObjectRootEx:: InternalRelease
+## <a name="ccomobjectrootexinternalrelease"></a><a name="internalrelease"></a>Ccomobjectrootex::Internalrelease
 
-Toplanmayan bir nesnenin başvuru sayısını 1 azaltır.
+Birbiri toplamı olmayan bir nesnenin başvuru sayısını 1 olarak adlandırın.
 
 ```
 ULONG InternalRelease();
@@ -225,15 +225,15 @@ ULONG InternalRelease();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hata ayıklama olmayan ve hata ayıklama yapılarında, bu işlev tanılama veya test için yararlı olabilecek bir değer döndürür. Döndürülen tam değer, kullanılan işletim sistemi gibi birçok faktöre bağlıdır ve başvuru sayısı olabilir veya olmayabilir.
+Hem hata ayıklama hem de hata ayıklama oluştururda, bu işlev tanılama veya sınama için yararlı olabilecek bir değer döndürür. Tam döndürülen değer, kullanılan işletim sistemi gibi birçok etkene bağlıdır ve başvuru sayısı olabilir veya olmayabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İş parçacığı modeli çok iş parçacıklı ise, aynı anda birden fazla iş parçacığının başvuru sayısını değiştirmesini engellemek için `InterlockedDecrement` kullanılır.
+İş parçacığı modeli çok iş `InterlockedDecrement` parçacığı varsa, aynı anda birden fazla iş parçacığı nın başvuru sayısını değiştirmesini önlemek için kullanılır.
 
-##  <a name="lock"></a>CComObjectRootEx:: Lock
+## <a name="ccomobjectrootexlock"></a><a name="lock"></a>CcomObjectRootEx::Kilit
 
-İş parçacığı modeli çok iş parçacıklı ise, bu yöntem, iş parçacığının özel bir veri üyesi aracılığıyla elde edilen kritik bölüm nesnesinin sahipliğini üstlemeyeceğini bekleyen Win32 API Function [Entercriticalhandle bölümünü](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection)çağırır.
+İş parçacığı modeli çok iş parçacığı ise, bu yöntem iş parçacığı özel bir veri üyesi aracılığıyla elde edilen kritik bölüm nesnesinin sahipliğini alabilir kadar bekler Win32 API işlevi [EnterCriticalSection](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection)çağırır.
 
 ```
 void Lock();
@@ -241,13 +241,13 @@ void Lock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korunan kod yürütmeyi bitirdiğinde, iş parçacığının kritik bölümün sahipliğini serbest bırakmak için `Unlock` çağırması gerekir.
+Korumalı kod yürütmeyi bitirdiğinde, iş `Unlock` parçacığı kritik bölümün sahipliğini serbest bırakmak için çağrıda gerekir.
 
-İş parçacığı modeli tek iş parçacıklı ise, bu yöntem hiçbir şey yapmaz.
+İş parçacığı modeli tek iş parçacığı ise, bu yöntem hiçbir şey yapmaz.
 
-##  <a name="m_dwref"></a>CComObjectRootEx:: m_dwRef
+## <a name="ccomobjectrootexm_dwref"></a><a name="m_dwref"></a>CComObjectRootEx::m_dwRef
 
-Dört baytlık belleğe erişen bir birleşimin parçası.
+Dört bayt belleğe erişen bir birliğin parçası.
 
 ```
 long m_dwRef;
@@ -255,7 +255,7 @@ long m_dwRef;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_pOuterUnknown`, birleşimin bir parçası:
+Bir `m_pOuterUnknown`birliğin parçası ile:
 
 ```
 union {
@@ -264,11 +264,11 @@ union {
 };
 ```
 
-Nesne toplanmıyorsa, `AddRef` tarafından erişilen başvuru sayısı ve `Release` `m_dwRef`depolanır. Nesne toplanırsa, bilinmeyen dıştaki işaretçi [m_pOuterUnknown](#m_pouterunknown)depolanır.
+Nesne toplanmış değilse, başvuru sayısı tarafından `AddRef` erişilen ve `m_dwRef` `Release` depolanır. Nesne toplanırsa, dış bilinmeyenişaretçi [m_pOuterUnknown](#m_pouterunknown)depolanır.
 
-##  <a name="m_pouterunknown"></a>CComObjectRootEx:: m_pOuterUnknown
+## <a name="ccomobjectrootexm_pouterunknown"></a><a name="m_pouterunknown"></a>CComObjectRootEx::m_pOuterUnknown
 
-Dört baytlık belleğe erişen bir birleşimin parçası.
+Dört bayt belleğe erişen bir birliğin parçası.
 
 ```
 IUnknown*
@@ -277,7 +277,7 @@ IUnknown*
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_dwRef`, birleşimin bir parçası:
+Bir `m_dwRef`birliğin parçası ile:
 
 ```
 union {
@@ -286,11 +286,11 @@ union {
 };
 ```
 
-Nesne toplanırsa, bilinmeyen dıştaki işaretçi `m_pOuterUnknown`depolanır. Nesne toplanmıyorsa, `AddRef` tarafından erişilen başvuru sayısı ve `Release` [m_dwRef](#m_dwref)depolanır.
+Nesne toplanırsa, dış bilinmeyenişaretçi `m_pOuterUnknown`. Nesne toplanmış değilse, başvuru sayısı tarafından `AddRef` erişilen ve `Release` [m_dwRef](#m_dwref)saklanır.
 
-##  <a name="objectmain"></a>CComObjectRootEx:: ObjectMain
+## <a name="ccomobjectrootexobjectmain"></a><a name="objectmain"></a>CcomObjectRootEx::ObjectMain
 
-Nesne eşlemesinde listelenen her bir sınıf için, bu işlev modül başlatıldığında bir kez ve sonlandırıldığında yeniden çağrılır.
+Nesne eşleğinde listelenen her sınıf için, modül baş harfe döndüğünde bu işlev bir kez ve sonlandırıldığında tekrar çağrılır.
 
 ```
 static void WINAPI ObjectMain(bool bStarting);
@@ -298,22 +298,22 @@ static void WINAPI ObjectMain(bool bStarting);
 
 ### <a name="parameters"></a>Parametreler
 
-*bStarting*<br/>
-dışı Sınıf başlatılmışsa değer TRUE 'dur; Aksi halde yanlış.
+*bBaşlangıç*<br/>
+[çıkış] Sınıf başharfe çevrilir değeri DOĞRUDUR; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*BStarting* parametresinin değeri, modülün başlatılmış veya sonlandırılmış olduğunu gösterir. `ObjectMain` varsayılan uygulanması hiçbir şey yapmaz, ancak sınıfı için ayırmak istediğiniz kaynakları başlatmak veya temizlemek için sınıfınızdan bu işlevi geçersiz kılabilirsiniz. Sınıfın herhangi bir örneği istenmadan önce `ObjectMain` çağırılır.
+*bBaşlangıç* parametresinin değeri, modülün başlatılıp başlatılmadığını veya sonlandırılıp sonlandırılmadığını gösterir. Varsayılan uygulama `ObjectMain` hiçbir şey yapmaz, ancak sınıf için ayırmak istediğiniz kaynakları başlatmaveya temizlemek için sınıfınızdaki bu işlevi geçersiz kılabilirsiniz. Sınıfın `ObjectMain` herhangi bir örneği istenmeden önce çağrıldığını unutmayın.
 
-`ObjectMain`, DLL 'nin giriş noktasından çağrılır, bu nedenle giriş noktası işlevinin gerçekleştirebileceği işlem türü kısıtlıdır. Bu kısıtlamalar hakkında daha fazla bilgi için bkz. [DLL 'ler C++ ve görsel çalışma zamanı kitaplığı davranışı](../../build/run-time-library-behavior.md) ve [DllMain](/windows/win32/Dlls/dllmain).
+`ObjectMain`DLL'nin giriş noktasından çağrılır, bu nedenle giriş noktası işlevinin gerçekleştirebileceği işlem türü kısıtlanır. Bu kısıtlamalar hakkında daha fazla bilgi için [DL'ler ve Visual C++ çalışma zamanı kitaplık davranışı](../../build/run-time-library-behavior.md) ve [DllMain'e](/windows/win32/Dlls/dllmain)bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_COM#41](../../atl/codesnippet/cpp/ccomobjectrootex-class_2.h)]
 
-##  <a name="outeraddref"></a>CComObjectRootEx:: OuterAddRef
+## <a name="ccomobjectrootexouteraddref"></a><a name="outeraddref"></a>Ccomobjectrootex::DışAddref
 
-Bir toplama için bilinmeyen dış öğenin başvuru sayısını artırır.
+Bir toplamanın dış bilinmeyeninin referans sayısını artırımına eder.
 
 ```
 ULONG OuterAddRef();
@@ -323,7 +323,7 @@ ULONG OuterAddRef();
 
 Tanılama ve test için yararlı olabilecek bir değer.
 
-##  <a name="outerqueryinterface"></a>CComObjectRootEx:: OuterQueryInterface
+## <a name="ccomobjectrootexouterqueryinterface"></a><a name="outerqueryinterface"></a>CcomObjectRootEx::OuterQueryInterface
 
 İstenen arabirime dolaylı bir işaretçi alır.
 
@@ -333,19 +333,19 @@ HRESULT OuterQueryInterface(REFIID iid, void** ppvObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*'si*<br/>
-'ndaki İstenen arabirimin GUID 'SI.
+*ııd*<br/>
+[içinde] İstenmekte olan arabirimin GUID'i.
 
-*ppvObject*<br/>
-dışı *IID*'de belirtilen arabirim işaretçisine yönelik bir işaretçi veya toplama ARABIRIMI desteklemiyorsa NULL.
+*ppvNesne*<br/>
+[çıkış] Toplama arabirimi desteklemiyorsa, *iid*veya NULL'da belirtilen arabirim işaretçisine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Standart HRESULT değerlerinden biri.
 
-##  <a name="outerrelease"></a>CComObjectRootEx:: OuterRelease
+## <a name="ccomobjectrootexouterrelease"></a><a name="outerrelease"></a>Ccomobjectrootex::Dış Sürüm
 
-Bir toplama için bilinmeyen dış öğenin başvuru sayısını azaltır.
+Bir toplamanın dış bilinmeyeninin referans sayısını erteler.
 
 ```
 ULONG OuterRelease();
@@ -353,11 +353,11 @@ ULONG OuterRelease();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hata ayıklama olmayan derlemelerde, her zaman 0 döndürür. Hata ayıklama yapılarında, tanılama veya test için yararlı olabilecek bir değer döndürür.
+Hata ayıklama yapılarında her zaman 0 döndürür. Hata ayıklama oluştururda, tanılama veya sınama için yararlı olabilecek bir değer verir.
 
-##  <a name="unlock"></a>CComObjectRootEx:: unlock
+## <a name="ccomobjectrootexunlock"></a><a name="unlock"></a>Ccomobjectrootex::Kilidini Aç
 
-İş parçacığı modeli çok iş parçacıklı ise, bu yöntem, özel bir veri üyesi aracılığıyla elde edilen kritik bölüm nesnesinin sahipliğini serbest bırakır [LeaveCriticalSection](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection)Win32 API işlevini çağırır.
+İş parçacığı modeli çok iş parçacığı ise, bu yöntem, özel bir veri üyesi aracılığıyla elde edilen kritik bölüm nesnesinin sahipliğini serbest bırakan Win32 API işlevini [LeaveCriticalSection](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection)olarak adlandırır.
 
 ```
 void Unlock();
@@ -365,13 +365,13 @@ void Unlock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sahipliği almak için iş parçacığının `Lock`çağrısı gerekir. `Lock` yapılan her çağrıya, kritik bölümün sahipliğini serbest bırakmak için `Unlock` için karşılık gelen bir çağrı gerekir.
+Sahipliği elde etmek için `Lock`iş parçacığının araması gerekir. Her çağrı, `Lock` kritik bölümün `Unlock` sahipliğini serbest bırakmak için karşılık gelen bir çağrı gerektirir.
 
-İş parçacığı modeli tek iş parçacıklı ise, bu yöntem hiçbir şey yapmaz.
+İş parçacığı modeli tek iş parçacığı ise, bu yöntem hiçbir şey yapmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CComAggObject Sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>
 [CComObject Sınıfı](../../atl/reference/ccomobject-class.md)<br/>
 [CComPolyObject Sınıfı](../../atl/reference/ccompolyobject-class.md)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

@@ -1,9 +1,11 @@
 ---
 title: _strtime_s, _wstrtime_s
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _wstrtime_s
 - _strtime_s
+- _o__strtime_s
+- _o__wstrtime_s
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -16,6 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -33,16 +36,16 @@ helpviewer_keywords:
 - time, copying
 - _strtime_s function
 ms.assetid: 42acf013-c334-485d-b610-84c0af8a46ec
-ms.openlocfilehash: c74e7359f68469fd8322ba1c9348acffd636282a
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 771dfdb6bd8035fe8683d62d52b3b4980ecda215
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73625912"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81316931"
 ---
 # <a name="_strtime_s-_wstrtime_s"></a>_strtime_s, _wstrtime_s
 
-Geçerli saati bir arabelleğe kopyalayın. Bu sürümler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle birlikte [_wstrtime](strtime-wstrtime.md) .
+Geçerli saati arabelleğe kopyalayın. Bunlar, [CRT'deki](strtime-wstrtime.md) Güvenlik Özellikleri'nde açıklandığı gibi güvenlik geliştirmeleriyle _wstrtime _strtime [sürümleridir.](../../c-runtime-library/security-features-in-the-crt.md)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,46 +70,48 @@ errno_t _wstrtime_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*arabelleğin*<br/>
-Saatin yazılacağı, en az 10 bayt uzunluğunda bir arabellek.
+*Arabellek*<br/>
+Bir arabellek, en az 10 bayt uzunluğunda, zaman yazılacak.
 
 *numberOfElements*<br/>
-Arabelleğin boyutu.
+Arabelleğe in boyutu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır.
+Başarılı olursa sıfır.
 
-Bir hata durumu oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Hata varsa dönüş değeri bir hata kodudur. Hata kodları ERRNO içinde tanımlanmıştır. Olsun Bu işlev tarafından oluşturulan tam hatalar için aşağıdaki tabloya bakın. Hata kodları hakkında daha fazla bilgi için bkz. [errno sabitleri](../../c-runtime-library/errno-constants.md).
+Bir hata koşulu oluşursa, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. İade değeri, bir hata varsa bir hata kodudur. Hata kodları ERRNO'da tanımlanır. H; bu işlev tarafından oluşturulan tam hatalar için aşağıdaki tabloya bakın. Hata kodları hakkında daha fazla bilgi için [errno Sabitleri'ne](../../c-runtime-library/errno-constants.md)bakın.
 
-### <a name="error-conditions"></a>Hata koşulları
+### <a name="error-conditions"></a>Hata Koşulları
 
-|*arabelleğin*|*numberOfElements*|döndürülmesini|*Arabelleğin* içeriği|
+|*Arabellek*|*numberOfElements*|Dönüş|*Arabellek* içeriği|
 |--------------|------------------------|------------|--------------------------|
-|**DEĞER**|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
-|**Null** değil (geçerli arabelleğe işaret ediyor)|0|**EıNVAL**|değiştirilmedi|
-|**Null** değil (geçerli arabelleğe işaret ediyor)|0 < boyutu < 9|**EıNVAL**|Boş dize|
-|**Null** değil (geçerli arabelleğe işaret ediyor)|Boyut > 9|0|Geçerli saat, açıklamalara belirtilen şekilde biçimlendirildi|
+|**Null**|(herhangi bir)|**Eınval**|Değiştirilmedi|
+|**NULL** değil (geçerli arabelleği işaret eden)|0|**Eınval**|Değiştirilmedi|
+|**NULL** değil (geçerli arabelleği işaret eden)|0 < boyutu < 9|**Eınval**|Boş dize|
+|**NULL** değil (geçerli arabelleği işaret eden)|Boyut > 9|0|Açıklamalarta belirtildiği gibi biçimlendirilmiş geçerli zaman|
 
 ## <a name="security-issues"></a>Güvenlik Sorunları
 
-*NumberOfElements* parametresi 9 ' dan büyükse, arabellek Için geçersiz**null** olmayan bir değer geçirmek erişim ihlaline neden olur.
+Arabellek için geçersiz bir**NULL** olmayan değer in passing *numberOfElements* parametresi 9'dan büyükse bir erişim ihlaline neden olur.
 
-Arabelleğin gerçek boyutundan daha büyük olan *numberOfElements* için değer geçirilmesi arabellek taşmasına neden olur.
+Arabellek gerçek boyutundan büyük olan *numberOfElements* için bir değer geçirilmesi arabellek taşma neden olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, [_strtime](strtime-wstrtime.md) ve [_wstrtime](strtime-wstrtime.md)'in daha güvenli sürümlerini sağlar. **_Strtime_s** işlevi, geçerli yerel saati *timestr*tarafından işaret edilen arabelleğe kopyalar. Süre SS **: DD: ss** olarak biçimlendirilir; burada **SS** , 24 saatlik gösterimde saati temsil eden iki haneye, **mm** , saati geçen dakikaları temsil eden iki haneye ve **nn** saniyeyi temsil eden iki haneye sahiptir. Örneğin, **18:23:44** dizesi 23 dakika ve 44 saniye içinde 6 P.M. temsil eder Arabellek en az 9 bayt uzunluğunda olmalıdır; Gerçek Boyut ikinci parametre ile belirtilir.
+Bu işlevler [_strtime](strtime-wstrtime.md) ve [_wstrtime](strtime-wstrtime.md)daha güvenli sürümlerini sağlar. **_strtime_s** işlevi, geçerli yerel saati *zamantr*tarafından işaret edilen arabelleğe kopyalar. Saat **hh:mm:ss olarak biçimlendirilir hh:mm:ss** **24** saatlik gösterimde saati temsil eden iki basamak, **mm** saati geçen dakikayı temsil eden iki basamak ve **ss** saniyeyi temsil eden iki basamaktır. Örneğin, **dize 18:23:44** 23 dakika ve 44 saniye 18:00 geçmiş temsil eder. Arabellek en az 9 bayt uzunluğunda olmalıdır; gerçek boyut ikinci parametre ile belirtilir.
 
-**_wstrtime** , **_strtime**öğesinin geniş karakterli bir sürümüdür; **_wstrtime** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır.
+**_wstrtime** **_strtime**geniş karakterli bir versiyonudur; _wstrtime bağımsız değişkeni **_wstrtime** ve geri dönüş değeri geniş karakterli dizeleridir. Bu işlevler aynı şekilde başka türlü çalışır.
 
-' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevleri kullanmak şablon aşırı yükleri ile basitleştirilir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkartabilir (boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir) ve eski, güvenli olmayan işlevleri yeni, güvenli karşılıklarıyla otomatik olarak değiştirebilirler. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
 
-Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevlerin hata ayıklama kitaplığı sürümleri önce arabelleği 0xFE ile doldurur. Bu davranışı devre dışı kullanabilirsiniz, [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)kullanın.
 
-### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme:
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+### <a name="generic-text-routine-mapping"></a>Genel Metin Rutin Eşleme:
+
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tstrtime_s**|**_strtime_s**|**_strtime_s**|**_wstrtime_s**|
 
@@ -114,10 +119,10 @@ Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0x
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strtime_s**|\<zaman. h >|
-|**_wstrtime_s**|\<Time. h > veya \<wchar. h >|
+|**_strtime_s**|\<time.h>|
+|**_wstrtime_s**|\<time.h> \<veya wchar.h>|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 

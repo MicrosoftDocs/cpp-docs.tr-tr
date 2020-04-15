@@ -1,8 +1,9 @@
 ---
 title: _get_doserrno
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _get_doserrno
+- _o__get_doserrno
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -26,16 +28,16 @@ helpviewer_keywords:
 - get_doserrno function
 - _get_doserrno function
 ms.assetid: 7fec7be3-6e39-4181-846b-8ef24489361c
-ms.openlocfilehash: 2810ead8bdd7d6c77cb2b55f4f97371bfc9751e6
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 2d5d4e224b39e9fa597e12975d27fa5720fbfbc7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956034"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81345251"
 ---
 # <a name="_get_doserrno"></a>_get_doserrno
 
-Bir **errno** değerine çevrilmeden önce işletim sistemi tarafından döndürülen hata değerini alır.
+**Bir errno** değerine çevrilmeden önce işletim sistemi tarafından döndürülen hata değerini alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,28 +49,30 @@ errno_t _get_doserrno(
 
 ### <a name="parameters"></a>Parametreler
 
-*pValue*<br/>
-**_Doserrno** genel makrosunun geçerli değeriyle doldurulacak bir tamsayıya yönelik bir işaretçi.
+*pDeğer*<br/>
+Genel makronun geçerli değeriyle doldurulması için **_doserrno bir** tamsayı işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Get_doserrno** başarılı olursa, sıfır döndürür; başarısız olursa, bir hata kodu döndürür. *PValue* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+**_get_doserrno** başarılı olursa, sıfır döndürür; başarısız olursa, bir hata kodu döndürür. *pValue* **NULL**ise, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL için errno** ayarlar ve **EINVAL** döndürür. **EINVAL**
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Doserrno** genel makrosu, işlem yürütme başlamadan önce CRT başlatma sırasında sıfır olarak ayarlanır. Bu, işletim sistemi hatası döndüren herhangi bir sistem düzeyi işlev çağrısıyla döndürülen işletim sistemi hata değerine ayarlanır ve yürütme sırasında hiçbir şekilde sıfıra sıfırlanmaz. Bir işlev tarafından döndürülen hata değerini denetlemek için kod yazdığınızda, işlev çağrısından önce [_set_doserrno](set-doserrno.md) kullanarak her zaman **_doserrno** ' ı temizleyin. Başka bir işlev çağrısı **_doserrno**'nın üzerine yazabileceğinden, işlev çağrısından hemen sonra **_get_doserrno** kullanarak değeri denetleyin.
+_doserrno **_doserrno** genel makro, işlem yürütme başlamadan önce CRT başlatma sırasında sıfıra ayarlanır. İşletim sistemi hatasını döndüren herhangi bir sistem düzeyindeki işlev çağrısı tarafından döndürülen işletim sistemi hata değerine ayarlanır ve yürütme sırasında sıfırlanır. Bir işlev tarafından döndürülen hata değerini denetlemek için kod yazdığınızda, işlev çağrısından önce [_set_doserrno](set-doserrno.md) kullanarak her zaman **_doserrno** temizleyin. Başka bir işlev çağrısı **_doserrno**üzerine yazabileceğinden, işlev çağrısından hemen sonra **_get_doserrno** kullanarak değeri kontrol edin.
 
-Taşınabilir hata kodları için **_get_doserrno** yerine [_get_errno](get-errno.md) önerilir.
+Taşınabilir hata kodları için **_get_doserrno** yerine [_get_errno](get-errno.md) öneririz.
 
-**_Doserrno** 'nun olası değerleri errno. \<h > içinde tanımlanmıştır.
+_doserrno olası değerleri errno.h> tanımlanır. **_doserrno** \<
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı başlık|
+|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
 |-------------|---------------------|---------------------|
-|**_get_doserrno**|\<Stdlib. h >, \<cstdlib > (C++)|\<errno. h >, \<cerrno > (C++)|
+|**_get_doserrno**|\<stdlib.h>, \<cstdlib> (C++)|\<errno.h>, \<cerrno> (C++)|
 
-**_get_doserrno** bir Microsoft uzantısıdır. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**_get_doserrno** bir Microsoft uzantısıdır. Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

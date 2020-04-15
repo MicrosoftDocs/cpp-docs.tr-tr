@@ -1,6 +1,6 @@
 ---
-title: SYMBOL_NAME_DATA yapısı
-description: C++ Derleme ÖNGÖRÜLERI SDK SYMBOL_NAME_DATA yapısı başvurusu.
+title: SYMBOL_NAME_DATA yapı
+description: C++ Build Insights SDK yapı referansı SYMBOL_NAME_DATA.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 618e84f198c20aa089dc7e06e1e6c09b96b6d273
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 1217572f20a772fde629533d6ab170c14dc5b5e0
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78333638"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81325346"
 ---
-# <a name="symbol_name_data-structure"></a>SYMBOL_NAME_DATA yapısı
+# <a name="symbol_name_data-structure"></a>SYMBOL_NAME_DATA yapı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`SYMBOL_NAME_DATA` yapısı bir derleyici ön uç sembolünü açıklar.
+Yapı `SYMBOL_NAME_DATA` derleyici ön uç simgesini açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,11 +42,11 @@ typedef struct SYMBOL_NAME_DATA_TAG
 
 |  |  |
 |--|--|
-| `Key` | Simgenin anahtarı. Bu değer, çözümlenmekte olan izleme içinde benzersizdir. |
-| `Name` | Simgenin adı. |
+| `Key` | Sembolün anahtarı. Bu değer, analiz edilen izleme içinde benzersizdir. |
+| `Name` | Sembolün adı. |
 
 ## <a name="remarks"></a>Açıklamalar
 
-İki farklı derleyici ön uç geçişlerinden gelen semboller aynı ada ancak farklı bir anahtara sahip olabilir. Bu durumda, iki türün aynı olup olmadığını anlamak için sembol adlarını kullanın.
+İki farklı derleyici ön uç geçişinden gelen semboller aynı ada ama farklı bir anahtara sahip olabilir. Bu durumda, iki tür aynı olup olmadığını belirlemek için sembol adlarını kullanın.
 
 ::: moniker-end

@@ -89,18 +89,18 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 27d3628c-741a-43a7-bef1-5085536f679e
-ms.openlocfilehash: a5e98a9fe32c71e87f80c2cfc2e733a5d0fe5c94
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 38b0a3278efd10ef5cc989a5fc900bf82d377eae
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80208344"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81320316"
 ---
 # <a name="set-stlclr"></a>set (STL/CLR)
 
-Şablon sınıfı, çift yönlü erişime sahip olan öğelerin değişen uzunluklu bir dizisini denetleyen bir nesneyi tanımlar. Öğe dizisini, her biri bir öğe depolayan (neredeyse) dengeli sıralı düğüm ağacı olarak yönetmek için kapsayıcı `set` kullanırsınız.
+Şablon sınıfı, çift yönlü erişimi olan öğelerin değişen uzunluktaki dizisini kontrol eden bir nesneyi açıklar. Kapsayıcıyı, `set` her biri bir öğeyi depolayan (neredeyse) dengeli sıralı bir düğüm ağacı olarak bir dizi öğeyi yönetmek için kullanırsınız.
 
-Aşağıdaki açıklamada `GValue`, ikincisi bir başvuru türü olmadığı sürece bu *anahtarla* aynı `GKey`ve bu durumda `Key^`.
+Aşağıdaki `GValue` açıklamada, ikincisi bir `GKey`ref türü *olmadığı* sürece, bu durumda anahtar ile `Key^`aynıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -121,11 +121,11 @@ template<typename Key>
 ### <a name="parameters"></a>Parametreler
 
 *Anahtar*<br/>
-Denetlenen dizideki bir öğenin anahtar bileşeni türü.
+Denetlenmeyen dizideki bir öğenin anahtar bileşeninin türü.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<clienext/set >
+**Üstbilgi:** \<cliext/set>
 
 **Ad alanı:** cliext
 
@@ -135,18 +135,18 @@ Denetlenen dizideki bir öğenin anahtar bileşeni türü.
 |---------------------|-----------------|
 |[set::const_iterator (STL/CLR)](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
 |[set::const_reference (STL/CLR)](#const_reference)|Bir öğe için sabit bir başvuru türü.|
-|[set::const_reverse_iterator (STL/CLR)](#const_reverse_iterator)|Denetlenen sıra için bir sabit ters yineleyicinin türü.|
-|[set::difference_type (STL/CLR)](#difference_type)|İki öğe arasındaki mesafe (muhtemelen imzalı) türü.|
-|[set::generic_container (STL/CLR)](#generic_container)|Kapsayıcının genel arabiriminin türü.|
+|[set::const_reverse_iterator (STL/CLR)](#const_reverse_iterator)|Denetlenmeyen dizi için sabit bir ters yineleyici türü.|
+|[set::difference_type (STL/CLR)](#difference_type)|İki öğe arasındaki (büyük olasılıkla imzalanmış) uzaklık türü.|
+|[set::generic_container (STL/CLR)](#generic_container)|Kapsayıcı için genel arabirimin türü.|
 |[set::generic_iterator (STL/CLR)](#generic_iterator)|Kapsayıcının genel arabirimi için bir yineleyici türü.|
-|[set::generic_reverse_iterator (STL/CLR)](#generic_reverse_iterator)|Kapsayıcının genel arabirimi için ters yineleyicinin türü.|
-|[set::generic_value (STL/CLR)](#generic_value)|Kapsayıcının genel arabirimi için bir öğenin türü.|
+|[set::generic_reverse_iterator (STL/CLR)](#generic_reverse_iterator)|Kapsayıcının genel arabirimi için ters yineleyici türü.|
+|[set::generic_value (STL/CLR)](#generic_value)|Kapsayıcı için genel arabirim için bir öğetürü.|
 |[set::iterator (STL/CLR)](#iterator)|Denetlenen dizi için bir yineleyici türü.|
-|[set::key_compare (STL/CLR)](#key_compare)|İki anahtar için sıralama temsilcisi.|
+|[set::key_compare (STL/CLR)](#key_compare)|İki anahtar için sipariş temsilcisi.|
 |[set::key_type (STL/CLR)](#key_type)|Bir sıralama anahtarının türü.|
 |[set::reference (STL/CLR)](#reference)|Bir öğe için bir başvuru türü.|
-|[set::reverse_iterator (STL/CLR)](#reverse_iterator)|Denetlenen sıra için ters yineleyicinin türü.|
-|[set::size_type (STL/CLR)](#size_type)|İki öğe arasındaki (negatif olmayan) bir mesafe türü.|
+|[set::reverse_iterator (STL/CLR)](#reverse_iterator)|Denetlenen dizi için ters yineleyici türü.|
+|[set::size_type (STL/CLR)](#size_type)|İki öğe arasındaki (negatif olmayan) uzaklık türü.|
 |[set::value_compare (STL/CLR)](#value_compare)|İki öğe değeri için sıralama temsilcisi.|
 |[set::value_type (STL/CLR)](#value_type)|Öğenin türü.|
 
@@ -161,70 +161,70 @@ Denetlenen dizideki bir öğenin anahtar bileşeni türü.
 |[set::erase (STL/CLR)](#erase)|Belirtilen konumlardaki öğeleri kaldırır.|
 |[set::find (STL/CLR)](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
 |[set::insert (STL/CLR)](#insert)|Öğeleri ekler.|
-|[set::key_comp (STL/CLR)](#key_comp)|Sıralama temsilcisini iki anahtar için kopyalar.|
-|[set::lower_bound (STL/CLR)](#lower_bound)|Belirtilen anahtarla eşleşen aralığın başlangıcını bulur.|
-|[set::make_value (STL/CLR)](#make_value)|Değer nesnesi oluşturur.|
-|[set::rbegin (STL/CLR)](#rbegin)|Ters denetlenen sıranın başlangıcını belirtir.|
-|[set::rend (STL/CLR)](#rend)|Ters denetlenen sıranın sonunu belirtir.|
+|[set::key_comp (STL/CLR)](#key_comp)|İki anahtar için sipariş temsilcisini kopyalar.|
+|[set::lower_bound (STL/CLR)](#lower_bound)|Belirtilen bir anahtarla eşleşen aralığın başlangıcını bulur.|
+|[set::make_value (STL/CLR)](#make_value)|Bir değer nesnesi oluşturuyor.|
+|[set::rbegin (STL/CLR)](#rbegin)|Ters denetimli dizinin başlangıcını belirler.|
+|[set::rend (STL/CLR)](#rend)|Ters denetimli dizinin sonunu belirler.|
 |[set::set (STL/CLR)](#set)|Bir kapsayıcı nesnesi oluşturur.|
 |[set::size (STL/CLR)](#size)|Öğe sayısını sayar.|
 |[set::swap (STL/CLR)](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
-|[set::to_array (STL/CLR)](#to_array)|Denetimli sırayı yeni bir diziye kopyalar.|
-|[set::upper_bound (STL/CLR)](#upper_bound)|Belirtilen anahtarla eşleşen aralığın sonunu bulur.|
-|[set::value_comp (STL/CLR)](#value_comp)|İki öğe değeri için sıralama temsilcisini kopyalar.|
+|[set::to_array (STL/CLR)](#to_array)|Denetedilen sırayı yeni bir diziye kopyalar.|
+|[set::upper_bound (STL/CLR)](#upper_bound)|Belirtilen bir anahtarla eşleşen aralık sonu bulur.|
+|[set::value_comp (STL/CLR)](#value_comp)|İki öğe değeri için sipariş temsilcisini kopyalar.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|[set::operator= (STL/CLR)](#op_as)|Denetlenen sırayı değiştirir.|
-|[operator!= (set) (STL/CLR)](#op_neq)|`set` nesnenin başka bir `set` nesnesine eşit olup olmadığını belirler.|
-|[operator< (set) (STL/CLR)](#op_lt)|`set` nesnenin başka bir `set` nesnesinden küçük olup olmadığını belirler.|
-|[operator<= (set) (STL/CLR)](#op_lteq)|`set` nesnenin başka bir `set` nesnesinden küçük veya ona eşit olup olmadığını belirler.|
-|[operator== (set) (STL/CLR)](#op_eq)|`set` nesnenin başka bir `set` nesnesine eşit olup olmadığını belirler.|
-|[operator> (set) (STL/CLR)](#op_gt)|`set` nesnenin başka bir `set` nesnesinden büyük olup olmadığını belirler.|
-|[operator>= (set) (STL/CLR)](#op_gteq)|`set` nesnenin başka bir `set` nesnesinden büyük veya ona eşit olup olmadığını belirler.|
+|[set::operator= (STL/CLR)](#op_as)|Denetedilen sırayı değiştirir.|
+|[işleç!= (set) (STL/CLR)](#op_neq)|Bir nesnenin `set` başka `set` bir nesneye eşit olup olmadığını belirler.|
+|[operatör< (set) (STL/CLR)](#op_lt)|Bir nesnenin `set` başka `set` bir nesneden küçük olup olmadığını belirler.|
+|[işleç<= (set) (STL/CLR)](#op_lteq)|Bir nesnenin `set` başka `set` bir nesneden küçük veya eşit olup olmadığını belirler.|
+|[işleci== (set) (STL/CLR)](#op_eq)|Bir nesnenin `set` başka `set` bir nesneye eşit olup olmadığını belirler.|
+|[operatör> (set) (STL/CLR)](#op_gt)|Bir nesnenin `set` başka `set` bir nesneden büyük olup olmadığını belirler.|
+|[operator>= (set) (STL/CLR)](#op_gteq)|Bir nesnenin `set` başka `set` bir nesneden büyük mü yoksa eşit mi olduğunu belirler.|
 
 ## <a name="interfaces"></a>Arabirimler
 
 |Arabirim|Açıklama|
 |---------------|-----------------|
-|<xref:System.ICloneable>|Bir nesneyi çoğaltın.|
-|<xref:System.Collections.IEnumerable>|Öğeler aracılığıyla sıralama.|
-|<xref:System.Collections.ICollection>|Öğe grubunu saklayın.|
-|<xref:System.Collections.Generic.IEnumerable%601>|Yazılı öğeler aracılığıyla sıralama.|
-|<xref:System.Collections.Generic.ICollection%601>|Türü belirtilmiş öğelerin grubunu koruyun.|
-|\<anahtar, değer >|Genel kapsayıcıyı koruyun.|
+|<xref:System.ICloneable>|Bir nesneyi çoğaltma.|
+|<xref:System.Collections.IEnumerable>|Elementler arasında sırala.|
+|<xref:System.Collections.ICollection>|Elementler grubunu koruyun.|
+|<xref:System.Collections.Generic.IEnumerable%601>|Yazılan öğeler arasında sıralanır.|
+|<xref:System.Collections.Generic.ICollection%601>|Yazılan öğelergrubunu koruyun.|
+|ITree\<Anahtarı, Değer>|Genel kapsayıcıyı koruyun.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesnesi, tek tek düğümler olarak denetlediği sıra için depolamayı ayırır ve boşaltır. Tek bir düğümün içeriğini başka bir düğüme kopyalayarak düğümler arasındaki bağlantıları değiştirerek sıralı bir (neredeyse) dengeli ağaca öğe ekler. Diğer bir deyişle, daha fazla Bing, kalan öğeleri etkilemeden öğeleri ekleyebileceğiniz ve kaldırabileceğiniz anlamına gelir.
+Nesne, tek tek düğümler olarak denetlenen dizi için depolama yı ayırır ve boşaltır. Düğümler arasındaki bağlantıları değiştirerek, bir düğümün içeriğini diğerine kopyalayarak asla düzenli tuttuğu (neredeyse) dengeli bir ağaca öğeleri ekler. Bu, kalan öğeleri rahatsız etmeden öğeleri serbestçe ekebileceğiniz ve kaldırabileceğiniz anlamına gelir.
 
-Nesnesi, [set:: key_compare (STL/CLR)](../dotnet/set-key-compare-stl-clr.md)türünde depolanan bir temsilci nesnesi çağırarak denetlediği diziyi sıralar. Kümeyi oluştururken depolanan temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırma `operator<(key_type, key_type)`. Bu saklı nesneye, [set:: key_comp (STL/CLR)](../dotnet/set-key-comp-stl-clr.md)`()`üye işlevini çağırarak erişirsiniz.
+Nesne, denetlenen sırayı, tür kümesinin depolanmış bir temsilci nesnesini çağırarak [sıralar:key_compare (STL/CLR)](../dotnet/set-key-compare-stl-clr.md). Kümeyi oluştursanız depolanan temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan `operator<(key_type, key_type)`değer karşılaştırmadır. Bu depolanan nesneye üye işlev kümesini çağırarak erişebilirsiniz::key_comp [(STL/CLR)](../dotnet/set-key-comp-stl-clr.md)`()`.
 
-Bu tür bir temsilci nesnesi, [set:: key_type (STL/CLR)](../dotnet/set-key-type-stl-clr.md)türündeki anahtarlar üzerinde katı zayıf bir sıralama getirmelidir. Yani, her iki anahtar için `X` ve `Y`:
+Böyle bir temsilci nesnesi, tür kümesi tuşlarına katı bir zayıf sıralama empoze [etmelidir::key_type (STL/CLR)](../dotnet/set-key-type-stl-clr.md). Yani, herhangi bir `X` iki `Y`anahtar için ve:
 
-`key_comp()(X, Y)` her çağrıda aynı Boole sonucunu döndürür.
+`key_comp()(X, Y)`her çağrıda aynı Boolean sonucunu döndürür.
 
-`key_comp()(X, Y)` true ise, `key_comp()(Y, X)` false olmalıdır.
+Eğer `key_comp()(X, Y)` doğruysa, `key_comp()(Y, X)` o zaman yanlış olmalıdır.
 
-`key_comp()(X, Y)` true ise, `X` `Y`önce sipariş olarak kabul edilir.
+Eğer `key_comp()(X, Y)` doğruysa, `X` o zaman önce `Y`sipariş olduğu söyleniyor .
 
-`!key_comp()(X, Y) && !key_comp()(Y, X)` true ise, `X` ve `Y` eşdeğer sıralamaya sahip olarak kabul edilir.
+Eğer `!key_comp()(X, Y) && !key_comp()(Y, X)` doğruysa, `X` o `Y` zaman ve eşdeğer sipariş olduğu söyleniyor.
 
-Denetlenen dizide `Y` önce gelen herhangi bir öğe `X` için, `key_comp()(Y, X)` false olur. (Varsayılan temsilci nesnesi için, anahtarlar hiçbir şekilde değerde azalmayın.) Şablon sınıfı [kümesinden](../dotnet/set-stl-clr.md)farklı olarak, `set` şablon sınıfının bir nesnesi tüm öğeler için anahtarların benzersiz olmasını gerektirmez. (İki veya daha fazla anahtarın eşdeğer sıralaması olabilir.)
+Denetlenir `X` sırada önce `Y` herhangi bir `key_comp()(Y, X)` öğe için, yanlıştır. (Varsayılan temsilci nesnesi için anahtarlar hiçbir zaman değerde azalmaz.) Şablon sınıf [kümesinin](../dotnet/set-stl-clr.md)aksine, `set` şablon sınıfının bir nesnesi tüm öğeler için anahtarların benzersiz olduğunu gerektirmez. (İki veya daha fazla anahtar eşdeğer sipariş olabilir.)
 
-Her öğe hem bir ey hem de bir değer görevi görür. Sıra, dizi içindeki öğe sayısının logaritmasına orantılı bir şekilde bir dizi işlem içeren rastgele bir öğenin aranması, eklenmesine ve kaldırılmasına izin veren bir şekilde temsil edilir. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
+Her öğe hem bir ey hem de bir değer olarak hizmet vermektedir. Dizi, dizideki (logaritmik zaman) öğe sayısının logaritması ile orantılı bir dizi işlemle rasgele bir öğenin aramaya, eklenmesine ve kaldırılmasına izin veren bir şekilde temsil edilir. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
 
-Bir küme çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm, [set:: End (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`tarafından döndürülen Yineleyici öğesine karşılık gelir. Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir küme yineleyicisini arttırıp, daha sonra `end()`eşit olarak karşılaştırılacağını sağlayabilirsiniz. Ancak `end()`tarafından döndürülen yineleyici başvurusu oluşturamazsınız.
+Bir küme çift yönlü yineleyicileri destekler, bu da denetitilen dizideki bir öğeyi belirleyen bir yineleyici verilen bitişik öğelere adım atabileceğiniz anlamına gelir. Özel bir kafa düğümü, ayarla döndürülen yineleyiciye karşılık [gelir::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`. Varsa, bu yineleyiciyi denetitilen dizideki son öğeye ulaşmak için atayabilirsiniz. Kafa düğümüne ulaşmak için bir ayar yineleyici yiyebilirsiniz ve daha sonra `end()`'a eşit. Ancak, döndürülen `end()`yineleyiciyi dereference yapamazsınız.
 
-Bir küme öğesine, bir rastgele erişim Yineleyici gerektiren sayısal konumuna doğrudan başvurmayacağınızı unutmayın.
+Rasgele erişim yinelemesi gerektiren sayısal konumu göz önüne alındığında, bir küme öğesine doğrudan başvuramayacağınızı unutmayın.
 
-Bir küme Yineleyici, ilişkili kapsayıcısına bir tutamacı depolayan bir tutamacı ilişkili küme düğümüne depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleriyle birlikte kullanabilirsiniz. Bir küme yineleyicisi, ilişkili küme düğümü bazı bir ayarla ilişkili olduğu sürece geçerli kalır. Ayrıca, geçerli bir yineleyici bir şekilde başvurulmasını sağlar--bunu, oluşturduğu öğe değerine erişmek veya değiştirmek için kullanabilirsiniz. `end()`eşit olmadığı sürece.
+Küme yineleyici, bir tutamacı ilişkili küme düğümüne depolar ve bu da bir tutamacı ilişkili kapsayıcısına depolar. Yineleyicileri yalnızca ilişkili kapsayıcı nesneleri ile kullanabilirsiniz. Bir küme yineleyici, ilişkili küme düğümü bazı kümelerle ilişkili olduğu sürece geçerli kalır. Dahası, geçerli bir yineleyici dereferencable - erişmek veya belirlediği öğe değerini değiştirmek için `end()`kullanabilirsiniz - sürece eşit değildir .
 
-Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağırır. Kapsayıcının yok edilmesi tüm öğeleri siler. Bu nedenle, öğe türü bir başvuru sınıfı olan bir kapsayıcı, kapsayıcının hiçbir öğenin etkin olmamasını sağlar. Ancak, bir işleç kapsayıcısının *öğelerini yok ettiğini* unutmayın.
+Bir öğeyi silme veya kaldırma, depolanan değeri için yıkıcı çağırır. Kapsayıcıyı yok etmek tüm öğeleri siler. Böylece, eleman türü ref sınıfı olan bir kapsayıcı, hiçbir öğenin kapsayıcıdan daha uzun yaşamamasını sağlar. Ancak, bir tutamaçların kapsayıcısının öğelerini yok *etmediğini* unutmayın.
 
 ## <a name="members"></a>Üyeler
 
-## <a name="setbegin-stlclr"></a><a name="begin"></a>Set:: Begin (STL/CLR)
+## <a name="setbegin-stlclr"></a><a name="begin"></a>set::begin (STL/CLR)
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -236,7 +236,7 @@ iterator begin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın ilk öğesini veya boş bir dizinin sonunun ötesinde bir çift yönlü yineleyiciyi döndürür. Denetlenen sıranın başlangıcını `current` atayan bir yineleyici elde etmek için bunu kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durumu değişebilir.
+Üye işlev, denetlenmeyen dizinin ilk öğesini veya boş bir dizinin sonunun hemen ötesini belirleyen çift yönlü bir yineleme döndürür. Bunu, denetlenen dizinin başlangıcını `current` belirleyen bir yineleyici elde etmek için kullanırsınız, ancak denetlenen dizinin uzunluğu değişirse durumu değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -272,7 +272,7 @@ a b c
 *++begin() = b
 ```
 
-## <a name="setclear-stlclr"></a><a name="clear"></a>Set:: Clear (STL/CLR)
+## <a name="setclear-stlclr"></a><a name="clear"></a>set::clear (STL/CLR)
 
 Tüm öğeleri kaldırır.
 
@@ -284,7 +284,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi etkin bir şekilde [set:: Erase](../dotnet/set-erase-stl-clr.md) (stl/clr)`(` [set:: BEGIN (](../dotnet/set-begin-stl-clr.md) stl/clr)`(),` [set:: End (STL/CLR)](../dotnet/set-end-stl-clr.md)`())`çağırır. Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
+Üye işlevi etkin bir şekilde [set çağırır::sil (STL/CLR)](../dotnet/set-erase-stl-clr.md) `(` [kümesi::begin (STL/CLR)](../dotnet/set-begin-stl-clr.md) `(),` [kümesi::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`())`. Denetlenen dizinin boş olduğundan emin olmak için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -330,7 +330,7 @@ a b
 size() = 0
 ```
 
-## <a name="setconst_iterator-stlclr"></a><a name="const_iterator"></a>Set:: const_iterator (STL/CLR)
+## <a name="setconst_iterator-stlclr"></a><a name="const_iterator"></a>set::const_iterator (STL/CLR)
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -342,7 +342,7 @@ typedef T2 const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetlenen dizi için bir sabit çift yönlü Yineleyici olarak kullanılabilecek belirtilmemiş türdeki bir nesneyi tanımlar `T2`.
+Tür, denetlenen dizi `T2` için sabit bir çift yönlü yineleme olarak hizmet verebilir belirtilmemiş türünde bir nesne açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -372,7 +372,7 @@ int main()
 a b c
 ```
 
-## <a name="setconst_reference-stlclr"></a><a name="const_reference"></a>Set:: const_reference (STL/CLR)
+## <a name="setconst_reference-stlclr"></a><a name="const_reference"></a>set::const_reference (STL/CLR)
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -384,7 +384,7 @@ typedef value_type% const_reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü bir öğeye sabit bir başvuru tanımlar.
+Tür, bir öğeye sabit bir başvuru açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -417,9 +417,9 @@ int main()
 a b c
 ```
 
-## <a name="setconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>Set:: const_reverse_iterator (STL/CLR)
+## <a name="setconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>set::const_reverse_iterator (STL/CLR)
 
-Denetlenen sıra için bir sabit ters yineleyicinin türü..
+Denetlenmeyen dizi için sabit bir ters yineleyici türü...
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -429,7 +429,7 @@ typedef T4 const_reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için sabit bir ters Yineleyici olarak kullanılabilecek belirtilmemiş türde `T4` bir nesne tanımlar.
+Tür, denetlenen dizi `T4` için sabit bir ters yineleyici olarak hizmet verebilen belirtilmemiş türde bir nesneyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -459,7 +459,7 @@ int main()
 c b a
 ```
 
-## <a name="setcount-stlclr"></a><a name="count"></a>Set:: Count (STL/CLR)
+## <a name="setcount-stlclr"></a><a name="count"></a>set::count (STL/CLR)
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
@@ -476,7 +476,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Member işlevi, *anahtar*ile eşdeğer sıralamaya sahip olan denetimli dizideki öğe sayısını döndürür. Belirtilen bir anahtarla eşleşen denetimli dizide bulunan öğe sayısını öğrenmek için bunu kullanırsınız.
+Üye işlev, *anahtarla*eşdeğer sıraya sahip kontrollü dizideki eleman sayısını döndürür. Belirli bir anahtarla eşleşen denetitilmiş sırada bulunan öğe sayısını belirlemek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -512,9 +512,9 @@ count(L'b') = 1
 count(L'C') = 0
 ```
 
-## <a name="setdifference_type-stlclr"></a><a name="difference_type"></a>ayarla::d ifference_type (STL/CLR)
+## <a name="setdifference_type-stlclr"></a><a name="difference_type"></a>set::difference_type (STL/CLR)
 
-İki öğe arasındaki işaretli bir mesafe türü.
+İki öğe arasındaki imzalı uzaklık türleri.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -524,7 +524,7 @@ typedef int difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, büyük olasılıkla negatif bir öğe sayısını tanımlar.
+Tür, büyük olasılıkla negatif öğe sayısını açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -567,7 +567,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="setempty-stlclr"></a><a name="empty"></a>Set:: Empty (STL/CLR)
+## <a name="setempty-stlclr"></a><a name="empty"></a>set::boş (STL/CLR)
 
 Bir öğe olup olmadığını sınar.
 
@@ -579,7 +579,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenen dizi için true döndürür. [Set:: size (STL/CLR)](../dotnet/set-size-stl-clr.md)`() == 0`ile eşdeğerdir. Bu ayarı, kümesinin boş olup olmadığını test etmek için kullanırsınız.
+Üye işlev boş bir kontrollü dizi için doğru döndürür. Bu set [eşdeğerdir::boyutu (STL / CLR)](../dotnet/set-size-stl-clr.md)`() == 0`. Kümenin boş olup olmadığını sınamak için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -619,7 +619,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="setend-stlclr"></a><a name="end"></a>Set:: End (STL/CLR)
+## <a name="setend-stlclr"></a><a name="end"></a>set::end (STL/CLR)
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -631,7 +631,7 @@ iterator end();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli dizinin sonunun hemen ötesinde işaret eden çift yönlü bir yineleyici döndürür. Denetlenen dizinin sonunu atayan bir yineleyici elde etmek için bunu kullanırsınız; denetlenen sıranın uzunluğu değişirse, durumu değişmez.
+Üye işlev, denetite edilen dizinin sonundan hemen ötesine işaret eden çift yönlü bir yineleme döndürür. Bunu, denetlenen dizinin sonunu belirleyen bir yineleyici elde etmek için kullanırsınız; denetitilen dizinin uzunluğu değişirse durumu değişmez.
 
 ### <a name="example"></a>Örnek
 
@@ -668,7 +668,7 @@ a b c
 *--end() = c
 ```
 
-## <a name="setequal_range-stlclr"></a><a name="equal_range"></a>Set:: equal_range (STL/CLR)
+## <a name="setequal_range-stlclr"></a><a name="equal_range"></a>set::equal_range (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen aralığı bulur.
 
@@ -685,7 +685,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, set:: [lower_bound (STL](../dotnet/set-lower-bound-stl-clr.md) /clr)`(key),` [set:: upper_bound (stl/clr)](../dotnet/set-upper-bound-stl-clr.md)`(key))``cliext::pair<iterator, iterator>(` bir çift yineleyiciyi döndürür. Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
+Üye işlev `cliext::pair<iterator, iterator>(` [kümesi::lower_bound (STL/CLR)](../dotnet/set-lower-bound-stl-clr.md) `(key),` [kümesi::upper_bound (STL/CLR) kümesini](../dotnet/set-upper-bound-stl-clr.md)`(key))`döndürür. Belirli bir anahtarla eşleşen denetitilmiş sırada bulunan öğelerin aralığını belirlemek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -728,7 +728,7 @@ equal_range(L'x') empty = True
 b
 ```
 
-## <a name="seterase-stlclr"></a><a name="erase"></a>Set:: Erase (STL/CLR)
+## <a name="seterase-stlclr"></a><a name="erase"></a>set::silme (STL/CLR)
 
 Belirtilen konumlardaki öğeleri kaldırır.
 
@@ -742,27 +742,27 @@ size_type erase(key_type key)
 
 #### <a name="parameters"></a>Parametreler
 
-*adı*<br/>
-Silinecek aralığın başlangıcı.
+*Ilk*<br/>
+Silmek için aralığın başlangıcı.
 
 *anahtar*<br/>
-Silinecek anahtar değer.
+Silmek için anahtar değeri.
 
-*soyadına*<br/>
-Silinecek aralığın sonu.
+*Son*<br/>
+Silmek için aralığın sonu.
 
-*olmadığı*<br/>
-Silinecek öğe.
+*Nerede*<br/>
+Silecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye *işlevi, öğesinin*işaret ettiği denetimli sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa, [:: End (STL/CLR)`()` ayarlanır](../dotnet/set-end-stl-clr.md) . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
+İlk üye işlev, işaret edilen kontrollü dizinin *where*öğesini nerede işaret eder ve kaldırılan öğenin ötesinde kalan ilk öğeyi belirleyen bir yineleyici döndürür veya böyle bir öğe [yoksa:end (STL/CLR)](../dotnet/set-end-stl-clr.md) `()` kümesini belirler. Tek bir öğeyi kaldırmak için kullanırsınız.
 
-İkinci üye işlevi, [`first`, `last`) aralığındaki denetimli sıranın öğelerini kaldırır ve kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi atayan bir yineleyici döndürür veya böyle bir öğe yoksa `end()`. Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
+İkinci üye işlev,`first`[, `last`) aralığındaki kontrollü dizinin öğelerini kaldırır ve kaldırılan öğelerin ötesinde kalan ilk öğeyi belirleyen veya `end()` böyle bir öğe yoksa... Sıfır veya daha fazla bitişik öğeyi kaldırmak için kullanabilirsiniz.
 
-Üçüncü üye işlevi, anahtarı *anahtara*denk sıralama değerine sahip denetimli dizinin herhangi bir öğesini kaldırır ve kaldırılan öğe sayısının sayısını döndürür. Bu anahtarı, belirtilen bir anahtarla eşleşen tüm öğeleri kaldırmak ve saymak için kullanırsınız.
+Üçüncü üye işlev, anahtara eşdeğer sıralama olan kontrollü *key*dizinin herhangi bir öğesini kaldırır ve kaldırılan öğe sayısının sayısını döndürür. Belirli bir anahtarla eşleşen tüm öğeleri kaldırmak ve saymak için kullanırsınız.
 
-Her bir öğe, denetlenen dizideki öğelerin sayısının logaritması ile orantılı bir zaman alır.
+Her öğe silme, kontrol edilen dizideki eleman sayısının logaritması ile orantılı zaman alır.
 
 ### <a name="example"></a>Örnek
 
@@ -812,7 +812,7 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="setfind-stlclr"></a><a name="find"></a>Set:: Find (STL/CLR)
+## <a name="setfind-stlclr"></a><a name="find"></a>set::bul (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
@@ -829,7 +829,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi takdirde, [set:: End (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`döndürür. Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
+Denetlenmeyen sırada en az bir öğe *anahtarla*eşdeğer sıralamaya sahipse, üye işlev bu öğelerden birini atayan bir yineleyici döndürür; aksi takdirde [ayarlanır döndürür::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`. Belirli bir anahtarla eşleşen denetimli sırada bulunan bir öğeyi bulmak için kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -868,9 +868,9 @@ find b = b
 find C = False
 ```
 
-## <a name="setgeneric_container-stlclr"></a><a name="generic_container"></a>Set:: generic_container (STL/CLR)
+## <a name="setgeneric_container-stlclr"></a><a name="generic_container"></a>set::generic_container (STL/CLR)
 
-Kapsayıcının genel arabiriminin türü.
+Kapsayıcı için genel arabirimin türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -882,7 +882,7 @@ typedef Microsoft::VisualC::StlClr::
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon kapsayıcı sınıfı için genel arabirimi tanımlar.
+Tür, bu şablon kapsayıcı sınıfının genel arabirimini açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -932,9 +932,9 @@ a b c d
 a b c d e
 ```
 
-## <a name="setgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>Set:: generic_iterator (STL/CLR)
+## <a name="setgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>set::generic_iterator (STL/CLR)
 
-Kapsayıcı için genel arabirimle birlikte kullanılacak bir yineleyici türü.
+Kapsayıcının genel arabirimiyle kullanılmak üzere bir yineleyici türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -946,7 +946,7 @@ typedef Microsoft::VisualC::StlClr::Generic::
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon kapsayıcı sınıfı için genel arabirim ile kullanılabilen genel bir yineleyiciyi açıklar.
+Tür, bu şablon kapsayıcı sınıfı nın genel arabirimiyle kullanılabilecek genel bir yineleyiciyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -988,9 +988,9 @@ a b c
 a
 ```
 
-## <a name="setgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>Set:: generic_reverse_iterator (STL/CLR)
+## <a name="setgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>set::generic_reverse_iterator (STL/CLR)
 
-Kapsayıcı için genel arabirimle birlikte kullanılacak ters yineleyicinin türü.
+Kapsayıcının genel arabirimiyle kullanılmak üzere ters yineleyici türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1002,7 +1002,7 @@ typedef Microsoft::VisualC::StlClr::Generic::
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılabilecek bir genel ters yineleyici tanımlar.
+Tür, bu şablon kapsayıcı sınıfının genel arabirimiyle kullanılabilecek genel bir ters yineleyiciyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -1044,9 +1044,9 @@ a b c
 c
 ```
 
-## <a name="setgeneric_value-stlclr"></a><a name="generic_value"></a>Set:: generic_value (STL/CLR)
+## <a name="setgeneric_value-stlclr"></a><a name="generic_value"></a>set::generic_value (STL/CLR)
 
-Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
+Kapsayıcının genel arabirimiyle kullanılmak üzere bir öğenin türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1056,7 +1056,7 @@ typedef GValue generic_value;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan `GValue` türünde bir nesne tanımlar.
+Tür, bu şablon `GValue` kapsayıcı sınıfının genel arabirimiyle kullanılmak üzere depolanan öğe değerini açıklayan bir tür nesnesini açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -1098,7 +1098,7 @@ a b c
 a
 ```
 
-## <a name="setinsert-stlclr"></a><a name="insert"></a>Set:: insert (STL/CLR)
+## <a name="setinsert-stlclr"></a><a name="insert"></a>set::insert (STL/CLR)
 
 Öğeleri ekler.
 
@@ -1114,34 +1114,34 @@ void insert(System::Collections::Generic::IEnumerable<value_type>^ right);
 
 #### <a name="parameters"></a>Parametreler
 
-*adı*<br/>
-Eklenecek aralığın başlangıcı.
+*Ilk*<br/>
+Eklemek için aralığın başlangıcı.
 
-*soyadına*<br/>
-Eklenecek aralığın sonu.
+*Son*<br/>
+Eklenecek aralık sonu.
 
-*Right*<br/>
-Eklenecek sabit listesi.
+*Doğru*<br/>
+Ekleme için numaralandırma.
 
-*Acil*<br/>
-Eklenecek anahtar değer.
+*Val*<br/>
+Eklemek için anahtar değeri.
 
-*olmadığı*<br/>
-Kapsayıcının ekleneceği yer (yalnızca ipucu).
+*Nerede*<br/>
+Eklemek için kapsayıcıda nerede (yalnızca ipucu).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevlerinin her biri, kalan işlenenler tarafından belirtilen bir sıra ekler.
+Üye işlevlerin her biri kalan operandlar tarafından belirtilen bir dizi ekler.
 
-İlk üye işlevi, value değeri olan bir öğe eklemek için endeavors ve `X`bir *çift değer döndürür*. `X.second` true ise, `X.first` yeni ekli öğeyi belirtir; Aksi takdirde `X.first`, zaten var olan ve yeni bir öğe eklenmemiş eşdeğer sıralamaya sahip bir öğe belirler. Tek bir öğe eklemek için bunu kullanırsınız.
+İlk üye işlev değer *val'i*olan bir öğe eklemeye `X`çalışır ve bir çift değer verir. Doğruysa, `X.second` `X.first` yeni eklenen öğeyi belirler; aksi `X.first` takdirde, eşdeğer sıralamaya sahip bir öğe belirler ve yeni bir öğe eklenmez. Tek bir öğe eklemek için kullanabilirsiniz.
 
-İkinci üye işlevi, bir ipucu olarak *WHERE* (performansı artırmak için) ve yeni eklenen öğeyi atayan bir yineleyici döndüren bir *değer değeri olan*bir öğe ekler. Bildiğiniz bir öğeye bitişik olabilecek tek bir öğe eklemek için bunu kullanırsınız.
+İkinci üye işlev, bir ipucu olarak (performansı artırmak için) *kullanarak* değer *val'i*olan bir öğe ekler ve yeni eklenen öğeyi belirleyen bir yineleyici döndürür. Bildiğiniz bir öğeye bitişik olabilecek tek bir öğe eklemek için kullanırsınız.
 
-Üçüncü üye işlevi [`first`, `last`) dizisini ekler. Başka bir dizide kopyalanmış sıfır veya daha fazla öğe eklemek için bunu kullanırsınız.
+Üçüncü üye işlev diziekler [`first` `last`, ). Başka bir diziden kopyalanan sıfır veya daha fazla öğe eklemek için kullanırsınız.
 
-Dördüncü üye işlevi, *sağ*tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
+Dördüncü üye *işlev, sağ*tarafından belirlenen sırayı ekler. Bir sayıcı tarafından açıklanan bir sıra eklemek için kullanabilirsiniz.
 
-Her öğe ekleme, denetlenen dizideki öğelerin sayısının logaritması ile orantılı bir zaman alır. Ekleme noktası, ekleme noktasına bitişik bir öğe atayan bir ipucu verildiğinde, sabit zamanlı olarak ekleme yapılabilir.
+Her öğe ekleme, kontrol edilen dizideki eleman sayısının logaritması ile orantılı zaman alır. Ekleme, ekleme noktasına bitişik bir öğe belirleyen bir ipucu verilen, amortismana tabi sabit zaman oluşabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1214,7 +1214,7 @@ a b c x
 a b c x y
 ```
 
-## <a name="setiterator-stlclr"></a><a name="iterator"></a>Set:: yineleyici (STL/CLR)
+## <a name="setiterator-stlclr"></a><a name="iterator"></a>set::yineleyici (STL/CLR)
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -1226,7 +1226,7 @@ typedef T1 iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için çift yönlü bir yineleyici olarak kullanılabilecek belirtilmemiş türde `T1` bir nesne tanımlar.
+Tür, denetlenen dizi `T1` için çift yönlü bir yineleme olarak hizmet verebilen belirtilmemiş türde bir nesneyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -1256,9 +1256,9 @@ int main()
 a b c
 ```
 
-## <a name="setkey_comp-stlclr"></a><a name="key_comp"></a>Set:: key_comp (STL/CLR)
+## <a name="setkey_comp-stlclr"></a><a name="key_comp"></a>set::key_comp (STL/CLR)
 
-Sıralama temsilcisini iki anahtar için kopyalar.
+İki anahtar için sipariş temsilcisini kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1268,7 +1268,7 @@ key_compare^key_comp();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sırayı sıralamak için kullanılan sıralama temsilcisini döndürür. İki anahtarı karşılaştırmak için bunu kullanırsınız.
+Üye işlev, denetlenen sırayı sıralamak için kullanılan sıralama temsilcisini döndürür. İki anahtarı karşılaştırmak için kullanırsın.
 
 ### <a name="example"></a>Örnek
 
@@ -1315,9 +1315,9 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="setkey_compare-stlclr"></a><a name="key_compare"></a>Set:: key_compare (STL/CLR)
+## <a name="setkey_compare-stlclr"></a><a name="key_compare"></a>set::key_compare (STL/CLR)
 
-İki anahtar için sıralama temsilcisi.
+İki anahtar için sipariş temsilcisi.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1328,7 +1328,7 @@ Microsoft::VisualC::StlClr::BinaryDelegate<GKey, GKey, bool>
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, anahtar bağımsız değişkenlerinin sıralamasını belirleyen temsilcinin eşanlamlısıdır.
+Tür, anahtar bağımsız değişkenlerinin sırasını belirleyen temsilcinin eşanlamlısa.
 
 ### <a name="example"></a>Örnek
 
@@ -1375,7 +1375,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="setkey_type-stlclr"></a><a name="key_type"></a>Set:: key_type (STL/CLR)
+## <a name="setkey_type-stlclr"></a><a name="key_type"></a>set::key_type (STL/CLR)
 
 Bir sıralama anahtarının türü.
 
@@ -1387,7 +1387,7 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametre *anahtarı*için bir eş anlamlı.
+Tür, şablon parametresi *Anahtarı*ile eş anlamlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1420,9 +1420,9 @@ int main()
 a b c
 ```
 
-## <a name="setlower_bound-stlclr"></a><a name="lower_bound"></a>Set:: lower_bound (STL/CLR)
+## <a name="setlower_bound-stlclr"></a><a name="lower_bound"></a>set::lower_bound (STL/CLR)
 
-Belirtilen anahtarla eşleşen aralığın başlangıcını bulur.
+Belirtilen bir anahtarla eşleşen aralığın başlangıcını bulur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1437,7 +1437,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, *anahtara*denk sıralamaya sahip olan denetimli dizideki ilk öğeyi `X` belirler. Böyle bir öğe yoksa, [set:: End (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`döndürür; Aksi takdirde, `X`atayan bir yineleyici döndürür. Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
+Üye işlev, anahtara `X` eşdeğer sıralama olan kontrollü dizideki ilk *öğeyi*belirler. Böyle bir öğe yoksa, [kümesi döndürür::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`; aksi takdirde belirleyen `X`bir yineleyici döndürür. Belirli bir anahtarla eşleşen denetimli sırada bulunan öğeler dizisinin başlangıcını bulmak için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1477,9 +1477,9 @@ lower_bound(L'x')==end() = True
 *lower_bound(L'b') = b
 ```
 
-## <a name="setmake_value-stlclr"></a><a name="make_value"></a>Set:: make_value (STL/CLR)
+## <a name="setmake_value-stlclr"></a><a name="make_value"></a>set::make_value (STL/CLR)
 
-Değer nesnesi oluşturur.
+Bir değer nesnesi oluşturuyor.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1494,7 +1494,7 @@ Kullanılacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, anahtarı *anahtar*olan bir `value_type` nesnesi döndürür. Diğer birçok üye işlevi ile kullanmak üzere uygun bir nesne oluşturmak için bunu kullanırsınız.
+Üye işlev, `value_type` anahtarı *anahtar*olan bir nesneyi döndürür. Diğer birkaç üye işlevle kullanıma uygun bir nesne oluşturmak için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1523,9 +1523,9 @@ int main()
 a b c
 ```
 
-## <a name="setoperator-stlclr"></a><a name="op_as"></a>Set:: operator = (STL/CLR)
+## <a name="setoperator-stlclr"></a><a name="op_as"></a>set::operator= (STL/CLR)
 
-Denetlenen sırayı değiştirir.
+Denetedilen sırayı değiştirir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1535,12 +1535,12 @@ set<Key>% operator=(set<Key>% right);
 
 #### <a name="parameters"></a>Parametreler
 
-*Right*<br/>
-Kopyalanacak kapsayıcı.
+*Doğru*<br/>
+Kopyalanması gereken konteyner.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci nesnesine *sağ* kopyalar ve ardından `*this`döndürür. Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
+Üye işleç *nesneye doğru* kopyalar, sonra döndürür. `*this` Bunu, denetlenir sırayı *sağdaki*kontrollü dizinin bir kopyasıyla değiştirmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1578,9 +1578,9 @@ a b c
 a b c
 ```
 
-## <a name="setrbegin-stlclr"></a><a name="rbegin"></a>Set:: rbegin (STL/CLR)
+## <a name="setrbegin-stlclr"></a><a name="rbegin"></a>set::rbegin (STL/CLR)
 
-Ters denetlenen sıranın başlangıcını belirtir.
+Ters denetimli dizinin başlangıcını belirler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1590,7 +1590,7 @@ reverse_iterator rbegin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın son öğesini veya boş bir dizinin başlangıcının ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `beginning` belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın başlangıcını `current` atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
+Üye işlev, denetlenen dizinin son öğesini veya boş bir dizinin başlangıcının hemen ötesini belirleyen bir ters yineleyici döndürür. Bu nedenle, ters `beginning` sırayı belirler. Ters sırada görülen denetlenen dizinin `current` başlangıcını belirleyen bir yineleyici elde etmek için kullanabilirsiniz, ancak denetlenen dizinin uzunluğu değişirse durumu değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1626,7 +1626,7 @@ a b c
 *++rbegin() = b
 ```
 
-## <a name="setreference-stlclr"></a><a name="reference"></a>Set:: Reference (STL/CLR)
+## <a name="setreference-stlclr"></a><a name="reference"></a>set::referans (STL/CLR)
 
 Bir öğe için bir başvuru türü.
 
@@ -1638,7 +1638,7 @@ typedef value_type% reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü bir öğesi başvurusunu tanımlar.
+Tür, bir öğeye başvuru açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -1671,9 +1671,9 @@ int main()
 a b c
 ```
 
-## <a name="setrend-stlclr"></a><a name="rend"></a>Set:: rend (STL/CLR)
+## <a name="setrend-stlclr"></a><a name="rend"></a>set::rend (STL/CLR)
 
-Ters denetlenen sıranın sonunu belirtir.
+Ters denetimli dizinin sonunu belirler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1683,7 +1683,7 @@ reverse_iterator rend();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın başlangıcının hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `end` belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın `current` sonunu atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
+Üye işlev, denetitilen dizinin başlangıcının hemen ötesine işaret eden bir ters yineleyici döndürür. Bu nedenle, ters `end` sırayı belirler. Ters sırada görülen denetlenen dizinin `current` sonunu belirleyen bir yineleyici elde etmek için kullanabilirsiniz, ancak denetlenen dizinin uzunluğu değişirse durumu değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1720,9 +1720,9 @@ a b c
 *--rend() = a
 ```
 
-## <a name="setreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>Set:: reverse_iterator (STL/CLR)
+## <a name="setreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>set::reverse_iterator (STL/CLR)
 
-Denetlenen sıra için ters yineleyicinin türü.
+Denetlenen dizi için ters yineleyici türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1732,7 +1732,7 @@ typedef T3 reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen sıra için ters Yineleyici olarak kullanılabilecek belirtilmemiş türdeki bir nesneyi tanımlar `T3`.
+Tür, denetlenen dizi `T3` için ters yineleyici olarak hizmet verebilen belirtilmemiş türde bir nesneyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -1762,7 +1762,7 @@ int main()
 c b a
 ```
 
-## <a name="setset-stlclr"></a><a name="set"></a>Set:: set (STL/CLR)
+## <a name="setset-stlclr"></a><a name="set"></a>set::set (STL/CLR)
 
 Bir kapsayıcı nesnesi oluşturur.
 
@@ -1785,67 +1785,67 @@ set(System::Collections::Generic::IEnumerable<GValue>^ right,
 
 #### <a name="parameters"></a>Parametreler
 
-*adı*<br/>
-Eklenecek aralığın başlangıcı.
+*Ilk*<br/>
+Eklemek için aralığın başlangıcı.
 
-*soyadına*<br/>
-Eklenecek aralığın sonu.
+*Son*<br/>
+Eklenecek aralık sonu.
 
-*pred*<br/>
-Denetlenen sıra için sıralama koşulu.
+*Pred*<br/>
+Denetlenen sıra için yüklem sıralama.
 
-*Right*<br/>
-Eklenecek nesne veya Aralık.
+*Doğru*<br/>
+Eklemek için nesne veya aralık.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucu:
+Yapıcı:
 
 `set();`
 
-denetlenen sırayı, varsayılan sıralama koşulu `key_compare()`, hiçbir öğesi olmadan başlatır. Varsayılan sıralama koşulu ile boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
+varsayılan sıralama yüklemi `key_compare()`ile, hiçbir öğe ile denetlenmeyen sırayı başlatir. Varsayılan sıralama yüklemi ile boş bir ilk denetim sırası belirtmek için kullanabilirsiniz.
 
-Oluşturucu:
+Yapıcı:
 
 `explicit set(key_compare^ pred);`
 
-denetlenen sırayı, sıralama koşulu *Pred*ile birlikte hiçbir öğe olmadan başlatır. Belirtilen sıralama koşulu ile boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
+sıralama yüklemi *pred*ile, hiçbir öğe ile kontrollü dizi başlatir. Belirtilen sıralama yüklemi ile boş bir ilk denetim sırası belirtmek için kullanabilirsiniz.
 
-Oluşturucu:
+Yapıcı:
 
 `set(set<Key>% right);`
 
-[`right.begin()`, `right.end()`) sırası ile denetimli sırayı varsayılan sıralama koşulu ile başlatır. Varsayılan sıralama koşulu ile, *küme nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
+varsayılan sıralama yüklemi ile`right.begin()`[, `right.end()`), ile denetitilen sırayı başlatir. Varsayılan sıralama yüklemi ile küme nesnesi *sağ*tarafından denetlenir dizi bir kopyası olan bir ilk denetimsırası belirtmek için kullanabilirsiniz.
 
-Oluşturucu:
+Yapıcı:
 
 `set(set<Key>^ right);`
 
-[`right->begin()`, `right->end()`) sırası ile denetimli sırayı varsayılan sıralama koşulu ile başlatır. Varsayılan sıralama koşulu ile, *küme nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
+varsayılan sıralama yüklemi ile`right->begin()`[, `right->end()`), ile denetitilen sırayı başlatir. Varsayılan sıralama yüklemi ile küme nesnesi *sağ*tarafından denetlenir dizi bir kopyası olan bir ilk denetimsırası belirtmek için kullanabilirsiniz.
 
-Oluşturucu:
+Yapıcı:
 
 `template<typename InIter> set(InIter first, InIter last);`
 
-[`first`, `last`) sırası ile denetimli sırayı varsayılan sıralama koşulu ile başlatır. Varsayılan sıralama koşulu ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
+varsayılan sıralama yüklemi ile`first`[, `last`), ile denetitilen sırayı başlatir. Denetlenir sırayı varsayılan sıralama yüklemi ile başka bir dizinin kopyası yapmak için kullanırsınız.
 
-Oluşturucu:
+Yapıcı:
 
 `template<typename InIter> set(InIter first, InIter last, key_compare^ pred);`
 
-[`first`, `last`) sırası ile denetimli sırayı, sıralama koşulu *Pred*ile başlatır. Belirtilen sıralama koşulu ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
+sıralama yüklemi *pred*ile`first` `last`[, ), ile kontrollü sırayı başlatir. Denetedilen sırayı, belirtilen sıralama yüklemi yle birlikte başka bir dizinin kopyası yapmak için kullanırsınız.
 
-Oluşturucu:
+Yapıcı:
 
 `set(System::Collections::Generic::IEnumerable<Key>^ right);`
 
-denetlenen sırayı, varsayılan sıralama koşulu ile Numaralandırıcı *hakkı*tarafından belirlenen sırayla başlatır. Denetim, varsayılan sıralama koşulu ile, bir Numaralandırıcı tarafından tanımlanan başka bir dizinin kopyasını oluşturmak için kullanılır.
+varsayılan sıralama yüklemi ile, enumerator *sağ*tarafından belirlenen sıra ile kontrollü sırayı başlatir. Denetedilen sırayı, varsayılan sıralama yüklemi ile bir yerumerator tarafından açıklanan başka bir dizinin bir kopyasını yapmak için kullanabilirsiniz.
 
-Oluşturucu:
+Yapıcı:
 
 `set(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`
 
-denetlenen diziyi Numaralandırıcı *hakkı*ile belirlenen sıra ile başlatır, sıralama koşulu *Pred*. Denetim, belirtilen sıralama koşulu ile bir Numaralandırıcı tarafından tanımlanan başka bir dizinin bir kopyasını oluşturmak için kullanılır.
+hadis idamı ile, sıralama yüklemi *pred'i*ile, sayısallaştırıcı *sağ*tarafından belirlenen sıra ile kontrollü sırayı başlatir. Denetedilen sırayı, belirtilen sıralama yüklemi yle bir yerumerator tarafından açıklanan başka bir dizinin bir kopyasını yapmak için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1933,7 +1933,7 @@ c b a
 a b c
 ```
 
-## <a name="setsize-stlclr"></a><a name="size"></a>Set:: size (STL/CLR)
+## <a name="setsize-stlclr"></a><a name="size"></a>set::boyut (STL/CLR)
 
 Öğe sayısını sayar.
 
@@ -1945,7 +1945,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı hakkında bilgi için bkz. [set:: Empty (STL/CLR)](../dotnet/set-empty-stl-clr.md)`()`.
+Üye işlev, denetitilen dizinin uzunluğunu döndürür. Şu anda denetlenmeyen sırada bulunan öğe sayısını belirlemek için kullanırsınız. Tek umursadığınız dizinin sıfır olmayan boyuta sahip olup olmadığıysa, [bkz.](../dotnet/set-empty-stl-clr.md)`()`
 
 ### <a name="example"></a>Örnek
 
@@ -1987,9 +1987,9 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="setsize_type-stlclr"></a><a name="size_type"></a>Set:: size_type (STL/CLR)
+## <a name="setsize_type-stlclr"></a><a name="size_type"></a>set::size_type (STL/CLR)
 
-İki öğe arasındaki işaretli bir mesafe türü.
+İki öğe arasındaki imzalı uzaklık türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1999,7 +1999,7 @@ typedef int size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, negatif olmayan bir öğe sayısını tanımlar.
+Tür negatif olmayan öğe sayısını açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -2035,7 +2035,7 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="setswap-stlclr"></a><a name="swap"></a>Set:: swap (STL/CLR)
+## <a name="setswap-stlclr"></a><a name="swap"></a>set::swap (STL/CLR)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -2047,12 +2047,12 @@ void swap(set<Key>% right);
 
 #### <a name="parameters"></a>Parametreler
 
-*Right*<br/>
-İçeriği takas eden kapsayıcı.
+*Doğru*<br/>
+İçeriği takas etmek için konteyner.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `this` ve *sağ*arasındaki denetlenen dizileri değiştirir. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
+Üye işlev, kontrollü dizileri `this` sağ ve *arasındaki*sıraları değiştirir. Bunu sürekli zaman içinde yapar ve hiçbir istisna atar. İki kapsayıcının içeriğini değiştirmek için hızlı bir yol olarak kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -2103,9 +2103,9 @@ d e f
 a b c
 ```
 
-## <a name="setto_array-stlclr"></a><a name="to_array"></a>Set:: to_array (STL/CLR)
+## <a name="setto_array-stlclr"></a><a name="to_array"></a>set::to_array (STL/CLR)
 
-Denetimli sırayı yeni bir diziye kopyalar.
+Denetedilen sırayı yeni bir diziye kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2115,7 +2115,7 @@ cli::array<value_type>^ to_array();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sırayı içeren bir dizi döndürür. Dizi biçiminde denetlenen sıranın bir kopyasını almak için bunu kullanırsınız.
+Üye işlev, denetitilmiş sırayı içeren bir dizi döndürür. Bunu, denetitilmiş dizinin dizi biçiminde bir kopyasını elde etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2153,9 +2153,9 @@ a b c d
 a b c
 ```
 
-## <a name="setupper_bound-stlclr"></a><a name="upper_bound"></a>Set:: upper_bound (STL/CLR)
+## <a name="setupper_bound-stlclr"></a><a name="upper_bound"></a>set::upper_bound (STL/CLR)
 
-Belirtilen anahtarla eşleşen aralığın sonunu bulur.
+Belirtilen bir anahtarla eşleşen aralık sonu bulur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2170,7 +2170,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, *anahtara*denk sıralama içeren kontrollü dizide `X` son öğeyi belirler. Böyle bir öğe yoksa veya denetlenen dizideki son öğe `X`, [set:: End (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`döndürür. Aksi takdirde, `X`ötesinde ilk öğeyi atayan bir yineleyici döndürür. Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
+Üye işlev, anahtara `X` eşdeğer sıralama olan kontrollü dizideki son *öğeyi*belirler. Böyle bir öğe yoksa `X` veya denetlenir dizideki son öğe [ise, set::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`döndürür; aksi takdirde, ötesindeki `X`ilk öğeyi belirleyen bir yineleyici döndürür. Belirli bir anahtarla eşleşen denetimli dizideki şu anda bir dizi öğenin sonunu bulmak için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2210,9 +2210,9 @@ upper_bound(L'x')==end() = True
 *upper_bound(L'b') = c
 ```
 
-## <a name="setvalue_comp-stlclr"></a><a name="value_comp"></a>Set:: value_comp (STL/CLR)
+## <a name="setvalue_comp-stlclr"></a><a name="value_comp"></a>set::value_comp (STL/CLR)
 
-İki öğe değeri için sıralama temsilcisini kopyalar.
+İki öğe değeri için sipariş temsilcisini kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2222,7 +2222,7 @@ value_compare^ value_comp();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sırayı sıralamak için kullanılan sıralama temsilcisini döndürür. İki öğe değerini karşılaştırmak için bunu kullanırsınız.
+Üye işlev, denetlenen sırayı sıralamak için kullanılan sıralama temsilcisini döndürür. İki öğe değerlerini karşılaştırmak için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2254,7 +2254,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="setvalue_compare-stlclr"></a><a name="value_compare"></a>Set:: value_compare (STL/CLR)
+## <a name="setvalue_compare-stlclr"></a><a name="value_compare"></a>set::value_compare (STL/CLR)
 
 İki öğe değeri için sıralama temsilcisi.
 
@@ -2267,7 +2267,7 @@ Microsoft::VisualC::StlClr::BinaryDelegate<generic_value, generic_value, bool>
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, değer bağımsız değişkenlerinin sıralamasını belirleyen temsilcinin eşanlamlısıdır.
+Tür, değer bağımsız değişkenlerinin sırasını belirleyen temsilcinin eşanlamlısa.
 
 ### <a name="example"></a>Örnek
 
@@ -2299,7 +2299,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="setvalue_type-stlclr"></a><a name="value_type"></a>Set:: value_type (STL/CLR)
+## <a name="setvalue_type-stlclr"></a><a name="value_type"></a>set::value_type (STL/CLR)
 
 Öğenin türü.
 
@@ -2311,7 +2311,7 @@ typedef generic_value value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür `generic_value`için bir eş anlamlı.
+Türü için `generic_value`eşanlamlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -2344,9 +2344,9 @@ int main()
 a b c
 ```
 
-## <a name="operator-set-stlclr"></a><a name="op_neq"></a>operator! = (set) (STL/CLR)
+## <a name="operator-set-stlclr"></a><a name="op_neq"></a>işleç!= (set) (STL/CLR)
 
-Liste eşit değildir karşılaştırması.
+Eşit karşılaştırma değil liste.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2358,15 +2358,15 @@ template<typename Key>
 
 #### <a name="parameters"></a>Parametreler
 
-*tarafta*<br/>
-Karşılaştırılacak sol kapsayıcı.
+*Sol*<br/>
+Karşılaştırmak için sol konteyner.
 
-*Right*<br/>
-Karşılaştırılacak doğru kapsayıcı.
+*Doğru*<br/>
+Karşılaştırmak için doğru konteyner.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(left == right)`döndürür. İki küme öğe öğesine göre karşılaştırıldığı zaman *solinin* *doğru* olarak sıralanmadığını test etmek için bunu kullanırsınız.
+Operatör işlevi `!(left == right)`döndürür. İki küme öğeile karşılaştırıldığında sağ *olarak* aynı sıralı *olup* olmadığını test etmek için kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -2414,9 +2414,9 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-set-stlclr"></a><a name="op_lt"></a>işleç&lt; (küme) (STL/CLR)
+## <a name="operatorlt-set-stlclr"></a><a name="op_lt"></a>işleç&lt; (set) (STL/CLR)
 
-Liste karşılaştırmadan daha az.
+Karşılaştırmadan daha az liste.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2428,15 +2428,15 @@ template<typename Key>
 
 #### <a name="parameters"></a>Parametreler
 
-*tarafta*<br/>
-Karşılaştırılacak sol kapsayıcı.
+*Sol*<br/>
+Karşılaştırmak için sol konteyner.
 
-*Right*<br/>
-Karşılaştırılacak doğru kapsayıcı.
+*Doğru*<br/>
+Karşılaştırmak için doğru konteyner.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi true değerini döndürür, en düşük konum için de bu `!(right[i] < left[i])` `left[i] < right[i]`true `i`. Aksi takdirde, bu, iki küme öğe öğesine göre karşılaştırıldığı *zaman,* *sol taraftan ayrılmadığını* test etmek için onu `left->size() < right->size()` döndürür.
+Operatör işlevi, en düşük pozisyon `i` için `!(right[i] < left[i])` de doğru ysa `left[i] < right[i]`doğru döndürür. Aksi takdirde, `left->size() < right->size()` iki küme öğe ile karşılaştırıldığında sağ *önce* *sol* sıralanır olup olmadığını test etmek için kullanabilirsiniz döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -2484,9 +2484,9 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-set-stlclr"></a><a name="op_lteq"></a>işleç&lt;= (küme) (STL/CLR)
+## <a name="operatorlt-set-stlclr"></a><a name="op_lteq"></a>işleç&lt;= (set) (STL/CLR)
 
-Küçüktür veya eşit karşılaştırma listesi.
+Daha az veya eşit karşılaştırma listele.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2498,15 +2498,15 @@ template<typename Key>
 
 #### <a name="parameters"></a>Parametreler
 
-*tarafta*<br/>
-Karşılaştırılacak sol kapsayıcı.
+*Sol*<br/>
+Karşılaştırmak için sol konteyner.
 
-*Right*<br/>
-Karşılaştırılacak doğru kapsayıcı.
+*Doğru*<br/>
+Karşılaştırmak için doğru konteyner.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(right < left)`döndürür. İki küme öğe öğesine göre karşılaştırıldığı zaman *farenin sağ* *tarafında* sıralı olup olmadığını test etmek için bunu kullanırsınız.
+Operatör işlevi `!(right < left)`döndürür. İki küme öğeile karşılaştırıldığında *sağdan* sonra sol sıralanıp sıralanmadığını *left* test etmek için kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -2554,9 +2554,9 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-set-stlclr"></a><a name="op_eq"></a>operator = = (set) (STL/CLR)
+## <a name="operator-set-stlclr"></a><a name="op_eq"></a>işleci== (set) (STL/CLR)
 
-Liste eşit karşılaştırması.
+Eşit karşılaştırmayı listele.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2568,15 +2568,15 @@ template<typename Key>
 
 #### <a name="parameters"></a>Parametreler
 
-*tarafta*<br/>
-Karşılaştırılacak sol kapsayıcı.
+*Sol*<br/>
+Karşılaştırmak için sol konteyner.
 
-*Right*<br/>
-Karşılaştırılacak doğru kapsayıcı.
+*Doğru*<br/>
+Karşılaştırmak için doğru konteyner.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler aynı uzunlukta ve her konum için `i``left[i] ==` `right[i]`için true değerini döndürür. İki küme öğe öğesine göre karşılaştırıldığı zaman *solinin* *doğru* olup olmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler `i`aynı `left[i] ==` `right[i]`uzunluğa sahipse ve her pozisyon için doğru döndürür. İki küme öğeile karşılaştırıldığında sağ *olarak* aynı sıralı *olup* olmadığını test etmek için kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -2624,9 +2624,9 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-set-stlclr"></a><a name="op_gt"></a>işleç&gt; (küme) (STL/CLR)
+## <a name="operatorgt-set-stlclr"></a><a name="op_gt"></a>işleç&gt; (set) (STL/CLR)
 
-Karşılaştırmadan daha büyük bir liste.
+Karşılaştırmadan daha büyük liste.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2638,15 +2638,15 @@ template<typename Key>
 
 #### <a name="parameters"></a>Parametreler
 
-*tarafta*<br/>
-Karşılaştırılacak sol kapsayıcı.
+*Sol*<br/>
+Karşılaştırmak için sol konteyner.
 
-*Right*<br/>
-Karşılaştırılacak doğru kapsayıcı.
+*Doğru*<br/>
+Karşılaştırmak için doğru konteyner.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `right` `<` `left`döndürüyor. İki küme öğe öğesine göre karşılaştırıldığı zaman, *sol* *taraftaki bir* değer olup olmadığını test etmek için bunu kullanırsınız.
+Operatör işlevi `right` `<` `left`döndürür. İki küme öğeile karşılaştırıldığında *sağdan* sonra sol sıralanıp sıralanmadığını *left* test etmek için kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -2694,9 +2694,9 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-set-stlclr"></a><a name="op_gteq"></a>işleç&gt;= (küme) (STL/CLR)
+## <a name="operatorgt-set-stlclr"></a><a name="op_gteq"></a>işleç&gt;= (set) (STL/CLR)
 
-Büyük veya eşit karşılaştırmayı listele.
+Karşılaştırmadan büyük veya eşit olarak listele.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2708,15 +2708,15 @@ template<typename Key>
 
 #### <a name="parameters"></a>Parametreler
 
-*tarafta*<br/>
-Karşılaştırılacak sol kapsayıcı.
+*Sol*<br/>
+Karşılaştırmak için sol konteyner.
 
-*Right*<br/>
-Karşılaştırılacak doğru kapsayıcı.
+*Doğru*<br/>
+Karşılaştırmak için doğru konteyner.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(left < right)`döndürür. İki küme öğe öğesine göre karşılaştırıldığı zaman *sağdan* *sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
+Operatör işlevi `!(left < right)`döndürür. İki küme öğeile karşılaştırıldığında sağ *önce* sol sıralı *olup* olmadığını test etmek için kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 

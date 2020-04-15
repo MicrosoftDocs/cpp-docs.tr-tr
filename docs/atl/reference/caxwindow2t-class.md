@@ -1,5 +1,5 @@
 ---
-title: CAxWindow2T sınıfı
+title: CAxWindow2T Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAxWindow2T
@@ -12,19 +12,19 @@ f1_keywords:
 helpviewer_keywords:
 - CAxWindow2 class
 ms.assetid: b87bc943-7991-4537-b902-2138d7f4d837
-ms.openlocfilehash: 0d5991dcbf79d1c2415594636a09908586d1dc2f
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 14080b624132979df533135bc1eef108dc793398
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417994"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81318694"
 ---
-# <a name="caxwindow2t-class"></a>CAxWindow2T sınıfı
+# <a name="caxwindow2t-class"></a>CAxWindow2T Sınıfı
 
-Bu sınıf, ActiveX denetimi barındıran bir pencerenin işlenmesine yönelik yöntemler sağlar ve ayrıca lisanslı ActiveX denetimlerini barındırmak için destek içerir.
+Bu sınıf, ActiveX denetimi barındıran bir pencereyi işlemek için yöntemler sağlar ve lisanslı ActiveX denetimlerini barındırma desteğine de sahiptir.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,43 +37,43 @@ template <class TBase = CWindow>
 #### <a name="parameters"></a>Parametreler
 
 *TBase*<br/>
-`CAxWindowT` türetildiği sınıf.
+`CAxWindowT` Türetilen sınıf.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAxWindow2T::CAxWindow2T](#caxwindow2t)|`CAxWindow2T` nesnesi oluşturur.|
+|[CAxWindow2T::CAxWindow2T](#caxwindow2t)|Bir `CAxWindow2T` nesne inşa eder.|
 
-### <a name="public-methods"></a>Genel Yöntemler
-
-|Adı|Açıklama|
-|----------|-----------------|
-|[CAxWindow2T:: Create](#create)|Bir konak penceresi oluşturur.|
-|[CAxWindow2T:: Createcontrollik](#createcontrollic)|Lisanslı bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır.|
-|[CAxWindow2T:: CreateControlLicEx](#createcontrollicex)|Lisanslı bir ActiveX denetimi oluşturur, onu başlatır, belirtilen pencerede barındırır ve denetimden bir arabirim işaretçisi (veya işaretçiler) alır.|
-|[CAxWindow2T:: GetWndClassName](#getwndclassname)|Pencere sınıfının adını alan statik yöntem.|
-
-### <a name="public-operators"></a>Genel İşleçler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAxWindow2T:: operator =](#operator_eq)|Varolan bir `CAxWindow2T` nesnesine bir HWND atar.|
+|[CAxWindow2T::Oluştur](#create)|Ana bilgisayar penceresi oluşturur.|
+|[CAxWindow2T::CreateControlLic](#createcontrollic)|Lisanslı bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır.|
+|[CAxWindow2T::CreateControlLicEx](#createcontrollicex)|Lisanslı activex denetimi oluşturur, başlatılmasını, belirtilen pencerede barındırır ve denetimden bir arabirim işaretçisi (veya işaretçisi) alır.|
+|[CAxWindow2T::GetWndClassName](#getwndclassname)|Pencere sınıfının adını alan statik yöntem.|
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Adı|Açıklama|
+|----------|-----------------|
+|[CAxWindow2T::operatör =](#operator_eq)|Varolan `CAxWindow2T` bir nesneye BIR HWND atar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAxWindow2T`, ActiveX denetimi barındıran bir pencereyi işlemek için yöntemler sağlar. `CAxWindow2T`, lisanslı ActiveX denetimlerini barındırmak için de destek içerir. Barındırma, `CAxWindow2T`tarafından Sarmalanan " **AtlAxWinLic80**" tarafından sağlanır.
+`CAxWindow2T`ActiveX denetimi barındıran bir pencereyi işlemek için yöntemler sağlar. `CAxWindow2T`lisanslı ActiveX denetimlerini barındırma desteğine de sahiptir. Barındırma tarafından sağlanmaktadır " **AtlAxWinLic80**", `CAxWindow2T`hangi tarafından sarılır .
 
-Sınıf `CAxWindow2`, `CAxWindow2T` sınıfının özelleştirmesi olarak uygulanır. Bu özelleşme şöyle bildirilmiştir:
+`CAxWindow2T` Sınıf, `CAxWindow2` sınıfın uzmanlık alanı olarak uygulanır. Bu uzmanlık şu şekilde beyan edilir:
 
 `typedef CAxWindow2T <CWindow> CAxWindow2;`
 
 > [!NOTE]
-> `CAxWindowT` Üyeler [CAxWindow](../../atl/reference/caxwindow-class.md)altında belgelenmiştir.
+> `CAxWindowT`üyeler [CAxWindow](../../atl/reference/caxwindow-class.md)altında belgelenmiştir.
 
-Bu sınıfın üyelerini kullanan bir örnek için bkz. [atl AXHost kullanılarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) .
+Bu sınıfın üyelerini kullanan bir örnek için [ATL AXHost kullanarak ActiveX Denetimleri Barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) bölümüne bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -85,11 +85,11 @@ Bu sınıfın üyelerini kullanan bir örnek için bkz. [atl AXHost kullanılara
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlwin. h
+**Üstbilgi:** atlwin.h
 
-##  <a name="caxwindow2t"></a>CAxWindow2T::CAxWindow2T
+## <a name="caxwindow2tcaxwindow2t"></a><a name="caxwindow2t"></a>CAxWindow2T::CAxWindow2T
 
-`CAxWindow2T` nesnesi oluşturur.
+Bir `CAxWindow2T` nesne inşa eder.
 
 ```
 CAxWindow2T(HWND  hWnd = NULL) : CAxWindowT<TBase>(hWnd)
@@ -97,12 +97,12 @@ CAxWindow2T(HWND  hWnd = NULL) : CAxWindowT<TBase>(hWnd)
 
 ### <a name="parameters"></a>Parametreler
 
-*lendiği*<br/>
-Mevcut pencerenin bir tutamacı.
+*Hwnd*<br/>
+Varolan bir pencerenin tutamacı.
 
-##  <a name="create"></a>CAxWindow2T:: Create
+## <a name="caxwindow2tcreate"></a><a name="create"></a>CAxWindow2T::Oluştur
 
-Bir konak penceresi oluşturur.
+Ana bilgisayar penceresi oluşturur.
 
 ```
 HWND Create(
@@ -117,17 +117,17 @@ HWND Create(
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CAxWindow2T::Create`, LPCTSTR *Lpstrwndclass* parametresi ile denetim barındırma (`AtlAxWinLic80`) sağlayan pencere sınıfına ayarlanmış [CWindow:: Create](../../atl/reference/cwindow-class.md#create) yöntemini çağırır.
+`CAxWindow2T::Create`[cwindow çağırır::LPCTSTR](../../atl/reference/cwindow-class.md#create) *lpstrWndClass* parametre ile denetim barındırma sağlayan pencere`AtlAxWinLic80`sınıfına ayarlanmış ().
 
-Parametrelerin açıklaması ve dönüş değeri için bkz. `CWindow::Create`.
+Parametrelerin ve iade değerinin açıklaması için bkz. `CWindow::Create`
 
-**Göz önünde** Eğer, *MenuOrID* parametresinin değeri olarak kullanılırsa, bir derleyici hatasından kaçınmak Için 0u (varsayılan değer) olarak belirtilmelidir.
+**Not** *MenuOrID* parametresi için değer olarak 0 kullanılırsa, derleyici hatasını önlemek için 0U (varsayılan değer) olarak belirtilmelidir.
 
 ### <a name="example"></a>Örnek
 
-`CAxWindow2T::Create`kullanan bir örnek için [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) bölümüne bakın.
+Kullanan `CAxWindow2T::Create`bir örnek için [ATL AXHost kullanarak ActiveX Denetimleri Barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) bakın.
 
-##  <a name="createcontrollic"></a>CAxWindow2T:: Createcontrollik
+## <a name="caxwindow2tcreatecontrollic"></a><a name="createcontrollic"></a>CAxWindow2T::CreateControlLic
 
 Lisanslı bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır.
 
@@ -148,19 +148,19 @@ HRESULT CreateControlLic(
 ### <a name="parameters"></a>Parametreler
 
 *bstrLicKey*<br/>
-Denetim için lisans anahtarı; Lisanslı olmayan bir denetim oluşturulmışsa NULL.
+Denetim için lisans anahtarı; Lisanssız denetim oluşturuyorsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kalan parametrelerin ve dönüş değerinin açıklaması için bkz. [CAxWindow:: CreateControl](../../atl/reference/caxwindow-class.md#createcontrol) .
+Bkz. [CAxWindow::Kalan](../../atl/reference/caxwindow-class.md#createcontrol) parametrelerin ve iade değerinin açıklaması için Denetim Oluştur.
 
 ### <a name="example"></a>Örnek
 
-`CAxWindow2T::CreateControlLic`kullanan bir örnek için [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) bölümüne bakın.
+Kullanan `CAxWindow2T::CreateControlLic`bir örnek için [ATL AXHost kullanarak ActiveX Denetimleri Barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) bakın.
 
-##  <a name="createcontrollicex"></a>CAxWindow2T:: CreateControlLicEx
+## <a name="caxwindow2tcreatecontrollicex"></a><a name="createcontrollicex"></a>CAxWindow2T::CreateControlLicEx
 
-Lisanslı bir ActiveX denetimi oluşturur, onu başlatır, belirtilen pencerede barındırır ve denetimden bir arabirim işaretçisi (veya işaretçiler) alır.
+Lisanslı activex denetimi oluşturur, başlatılmasını, belirtilen pencerede barındırır ve denetimden bir arabirim işaretçisi (veya işaretçisi) alır.
 
 ```
 HRESULT CreateControlLicEx(
@@ -185,17 +185,17 @@ HRESULT CreateControlLicEx(
 ### <a name="parameters"></a>Parametreler
 
 *bstrLicKey*<br/>
-Denetim için lisans anahtarı; Lisanslı olmayan bir denetim oluşturulmışsa NULL.
+Denetim için lisans anahtarı; Lisanssız denetim oluşturuyorsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kalan parametrelerin ve dönüş değerinin açıklaması için bkz. [CAxWindow:: CreateControlEx](../../atl/reference/caxwindow-class.md#createcontrolex) .
+Bkz. [CAxWindow::Kalan](../../atl/reference/caxwindow-class.md#createcontrolex) parametrelerin ve iade değerinin açıklaması için CreateControlEx.
 
 ### <a name="example"></a>Örnek
 
-`CAxWindow2T::CreateControlLicEx`kullanan bir örnek için [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) bölümüne bakın.
+Kullanan `CAxWindow2T::CreateControlLicEx`bir örnek için [ATL AXHost kullanarak ActiveX Denetimleri Barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) bakın.
 
-##  <a name="getwndclassname"></a>CAxWindow2T:: GetWndClassName
+## <a name="caxwindow2tgetwndclassname"></a><a name="getwndclassname"></a>CAxWindow2T::GetWndClassName
 
 Pencere sınıfının adını alır.
 
@@ -205,11 +205,11 @@ static LPCTSTR GetWndClassName();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Lisanslı ve lisanslı olmayan ActiveX denetimlerini barındırasağlayan pencere sınıfının (`AtlAxWinLic80`) adını içeren bir dize işaretçisi.
+Lisanslı ve lisanssız ActiveX denetimlerini`AtlAxWinLic80`barındırabilen pencere sınıfının adını () içeren bir dize işaretçisi.
 
-##  <a name="operator_eq"></a>CAxWindow2T:: operator =
+## <a name="caxwindow2toperator-"></a><a name="operator_eq"></a>CAxWindow2T::operatör =
 
-Varolan bir `CAxWindow2T` nesnesine bir HWND atar.
+Varolan `CAxWindow2T` bir nesneye BIR HWND atar.
 
 ```
 CAxWindow2T<TBase>& operator= (HWND hWnd);
@@ -217,10 +217,10 @@ CAxWindow2T<TBase>& operator= (HWND hWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*lendiği*<br/>
-Mevcut pencerenin bir tutamacı.
+*Hwnd*<br/>
+Varolan bir pencerenin tutamacı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
-[Denetim kapsama hakkında SSS](../../atl/atl-control-containment-faq.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
+[Kontrol Çevreleme SSS](../../atl/atl-control-containment-faq.md)

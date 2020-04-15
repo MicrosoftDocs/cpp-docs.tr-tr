@@ -7,46 +7,46 @@ helpviewer_keywords:
 - browse information files (.bsc)
 - browse information files (.bsc), creating
 ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
-ms.openlocfilehash: 94cb5865e56e12f51ef4a8598a5df3fcbe69fa0f
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: ffacb7aaf9ac1f7ad6fc4cf12ab479099dc57725
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078354"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81320680"
 ---
 # <a name="building-browse-information-files-overview"></a>Gözatma Bilgileri Dosyası Derleme: Genel Bakış
 
 > [!WARNING]
-> BSCMAKE, Visual Studio ile hala yüklü olsa da artık IDE tarafından kullanılmıyor. Visual Studio 2008 ' den itibaren, gezinme ve sembol bilgileri çözüm klasöründeki bir SQL Server. sdf dosyasında otomatik olarak depolanır.
+> BSCMAKE hala Visual Studio yüklü olmasına rağmen, artık IDE tarafından kullanılmaz. Visual Studio 2008'den bu yana, göz atma ve sembol bilgileri çözüm klasöründe bir SQL Server .sdf dosyasında otomatik olarak depolanır.
 
-Sembol göz atmaya yönelik gözatma bilgileri oluşturmak için, derleyici projenizdeki her kaynak dosya için bir. sbr dosyası oluşturur, sonra BSCMAKE. EXE. sbr dosyalarını tek bir. bsc dosyasında birleştirir.
+Sembol tarama için gözatma bilgileri oluşturmak için derleyici, projenizdeki her kaynak dosya için bir .sbr dosyası, ardından BSCMAKE oluşturur. EXE.sbr dosyalarını tek bir .bsc dosyasında birleştirir.
 
-. Sbr ve. bsc dosyalarının oluşturulması zaman alır, bu nedenle Visual Studio bu işlevleri varsayılan olarak devre dışı bırakır. Geçerli bilgilere gözatabilmeniz istiyorsanız, üzerinde gezinme seçeneklerini açıp projenizi yeniden oluşturmanız gerekir.
+.sbr ve .bsc dosyaları oluşturmak zaman alır, bu nedenle Visual Studio varsayılan olarak bu işlevleri kapatır. Geçerli bilgilere göz atmak istiyorsanız, gözatma seçeneklerini açmanız ve projenizi yeniden oluşturmanız gerekir.
 
-Derleyiciye. sbr dosyaları oluşturmasını söylemek için [/fr](fr-fr-create-dot-sbr-file.md) veya [/fr](fr-fr-create-dot-sbr-file.md) kullanın. . Bsc dosyaları oluşturmak için, komut satırından [BSCMAKE](bscmake-command-line.md) öğesini çağırabilirsiniz. Komut satırından BSCMAKE kullanılması, tarama bilgileri dosyalarının düzenlemesi üzerinde daha kesin denetim sağlar. Daha fazla bilgi için bkz. [BSCMAKE başvurusu](bscmake-reference.md) .
+Derleyiciye .sbr dosyaları oluşturmasını söylemek için [/FR](fr-fr-create-dot-sbr-file.md) veya [/Fr'yi](fr-fr-create-dot-sbr-file.md) kullanın. .bsc dosyaları oluşturmak için komut satırından [BSCMAKE'yi](bscmake-command-line.md) arayabilirsiniz. Komut satırından BSCMAKE'nin kullanılması, bilgi dosyalarına göz atma nın manipülasyonu üzerinde daha hassas bir kontrol sağlar. Daha fazla bilgi için [BSCMAKE Referans'a](bscmake-reference.md) bakın.
 
 > [!TIP]
->  . Sbr dosya oluşturmayı açabilir ancak. bsc dosya oluşturmayı kapatabilirsiniz. Bu, hızlı derlemeler sağlar, ancak. bsc dosya üretimini açıp projeyi oluşturarak yeni bir. bsc dosyası oluşturmanıza olanak sağlar.
+> .sbr dosya oluşturmayı açabilir ancak .bsc dosya oluşturmayı kapalı bırakabilirsiniz. Bu, hızlı yapılar sağlar, ancak aynı zamanda .bsc dosya oluşturma yı açıp projeyi oluşturarak hızlı bir şekilde yeni bir .bsc dosyası oluşturmanıza olanak tanır.
 
-. Bsc dosyasının boyutunu azaltarak bir. bsc dosyası oluşturmak için gereken süre, bellek ve disk alanını azaltabilirsiniz.
+.bsc dosyasının boyutunu azaltarak .bsc dosyası oluşturmak için gereken zamanı, belleği ve disk alanını azaltabilirsiniz.
 
-Geliştirme ortamında bir tarayıcı dosyası oluşturma hakkında bilgi için bkz. [genel özellik sayfası (proje)](general-property-page-project.md) .
+Geliştirme ortamında bir tarayıcı dosyasının nasıl oluşturulabildiğini öğrenmek için [Genel Özellik Sayfasına (Proje)](general-property-page-project.md) bakın.
 
-### <a name="to-create-a-smaller-bsc-file"></a>Daha küçük bir. bsc dosyası oluşturmak için
+### <a name="to-create-a-smaller-bsc-file"></a>Daha küçük bir .bsc dosyası oluşturmak için
 
-1. Tarama bilgileri dosyasındaki bilgileri dışlamak için [bscmake komut satırı seçeneklerini](bscmake-options.md) kullanın.
+1. Bilgileri gözatma bilgileri dosyasından hariç tutmak için [BSCMAKE komut satırı seçeneklerini](bscmake-options.md) kullanın.
 
-1. Derleme veya montaj sırasında bir veya daha fazla. sbr dosyasında yerel sembolleri atlayın.
+1. Derleme veya derleme yaparken bir veya daha fazla .sbr dosyasında yerel sembolleri atayın.
 
-1. Bir nesne dosyası geçerli hata ayıklama aşamalarınız için gereken bilgileri içermiyorsa, göz at bilgi dosyasını yeniden oluştururken BSCMAKE komutundan. sbr dosyasını atlayın.
+1. Bir nesne dosyası hata ayıklama nın geçerli aşaması için gerekli bilgileri içermiyorsa, gözatma bilgileri dosyasını yeniden oluşturunuzda .sbr dosyasını BSCMAKE komutundan atla.
 
-### <a name="to-combine-the-browse-information-from-several-projects-into-one-browser-file-bsc"></a>Birçok projeden gözatma bilgilerini tek bir tarayıcı dosyasına (. bsc) birleştirmek için
+### <a name="to-combine-the-browse-information-from-several-projects-into-one-browser-file-bsc"></a>Çeşitli projelerdeki gözatma bilgilerini tek bir tarayıcı dosyasında birleştirmek için (.bsc)
 
-1. Proje düzeyinde. bsc dosyasını oluşturmayın ya da. sbr dosyalarının kırpılmasını engellemek için/n anahtarını kullanın.
+1. .bsc dosyasını proje düzeyinde oluşturmayın veya .sbr dosyalarının kesildikten korunmak için /n anahtarını kullanın.
 
-1. Tüm projeler derlendikten sonra, tüm. sbr dosyaları için giriş olarak BSCMAKE komutunu çalıştırın. Joker karakterler kabul edilir. Örneğin, C:\X, C:\Y ve C:\Z proje dizinleriniz içinde. sbr dosyaları varsa ve bunları tek bir. bsc dosyasında birleştirmek istiyorsanız BSCMAKE C:\X\\\*. sbr C:\Y\\\*. sbr C:\Z\\\*. sbr/o c:\ whatever_directory \combined.bsc kullanarak birleştirilmiş. bsc dosyasını oluşturun.
+1. Tüm projeler inşa edildikten sonra, bscmake'i tüm .sbr dosyalarıyla birlikte çalıştırın. Joker karakterler kabul edilir. Örneğin, c:\x, c:\Y ve C:\Z ve c:\Z dosyalarıyla birlikte proje dizinleriniz varsa ve bunları tek bir .bsc dosyasında birleştirmek istiyorsanız, bscMAKE C:\X .sbr\\\*C:\Y\\\*.sbr C:\Z\\\*.sbr /o c:\whatever_directory\combined.bsc'yi kullanarak birleştirilmiş .bsc dosyasını oluşturun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ek MSVC derleme araçları](c-cpp-build-tools.md)<br/>
+[Ek MSVC Oluşturma Araçları](c-cpp-build-tools.md)<br/>
 [BSCMAKE Başvurusu](bscmake-reference.md)

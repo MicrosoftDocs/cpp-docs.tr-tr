@@ -1,5 +1,5 @@
 ---
-title: CDefaultCompareTraits sınıfı
+title: CDefaultCompareTraits Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDefaultCompareTraits
@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CDefaultCompareTraits class
 ms.assetid: a17e2740-e7b4-48f2-aeb7-c80ce84b63f7
-ms.openlocfilehash: c5f4ab3737838af11501c4a0f2037b57087939c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8262800ef613424c37c53931d97dd4b1b1a71321
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245926"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81327070"
 ---
-# <a name="cdefaultcomparetraits-class"></a>CDefaultCompareTraits sınıfı
+# <a name="cdefaultcomparetraits-class"></a>CDefaultCompareTraits Sınıfı
 
-Bu sınıf, varsayılan öğe karşılaştırma işlevleri sağlar.
+Bu sınıf varsayılan öğe karşılaştırma işlevleri sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,24 +36,24 @@ Koleksiyonda depolanacak veri türü.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDefaultCompareTraits::CompareElements](#compareelements)|(Statik) Eşitlik için iki öğe karşılaştırmak için bu işlevi çağırın.|
-|[CDefaultCompareTraits::CompareElementsOrdered](#compareelementsordered)|(Statik) Büyük ve daha az öğe belirlemek için bu işlevi çağırın.|
+|[CDefaultCompareÖzellikler::Öğeleri Karşılaştır](#compareelements)|(Statik) Eşitlik için iki öğeyi karşılaştırmak için bu işlevi arayın.|
+|[CDefaultCompareTraits::CompareElementsOrdered](#compareelementsordered)|(Statik) Daha büyük ve daha küçük öğeyi belirlemek için bu işlevi çağırın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, bir koleksiyon sınıfı nesnesinde saklanan öğe karşılaştırmak için iki statik işlevler içerir. Bu sınıf tarafından kullanılan [CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md).
+Bu sınıf, bir koleksiyon sınıfı nesnesinde depolanan öğeleri karşılaştırmak için iki statik işlev içerir. Bu sınıf [CDefaultElementTraits Sınıfı](../../atl/reference/cdefaultelementtraits-class.md)tarafından kullanılır.
 
-Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
+Daha fazla bilgi için [ATL Koleksiyon Sınıfları'na](../../atl/atl-collection-classes.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcoll.h
+**Üstbilgi:** atlcoll.h
 
-##  <a name="compareelements"></a>  CDefaultCompareTraits::CompareElements
+## <a name="cdefaultcomparetraitscompareelements"></a><a name="compareelements"></a>CDefaultCompareÖzellikler::Öğeleri Karşılaştır
 
-Eşitlik için iki öğe karşılaştırmak için bu işlevi çağırın.
+Eşitlik için iki öğeyi karşılaştırmak için bu işlevi arayın.
 
 ```
 static bool CompareElements(const T& element1, const T& element2);
@@ -61,23 +61,23 @@ static bool CompareElements(const T& element1, const T& element2);
 
 ### <a name="parameters"></a>Parametreler
 
-*element1*<br/>
-İlk öğe.
+*öğe1*<br/>
+İlk element.
 
-*element2*<br/>
-İkinci öğe.
+*eleman2*<br/>
+İkinci element.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe yanlış Aksi takdirde, eşitse true döndürür.
+Öğeler eşitse doğru döndürür, aksi takdirde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev varsayılan uygulamasını eşitliği olan (**==**) işleci. Basit veri türleri dışındaki nesneler için bu işlev geçersiz kılınması gerekebilir.
+Bu işlevin varsayılan uygulaması eşitlik**==**( ) işlecidir. Basit veri türleri dışındaki nesneler için bu işlevin geçersiz kılınması gerekebilir.
 
-##  <a name="compareelementsordered"></a>  CDefaultCompareTraits::CompareElementsOrdered
+## <a name="cdefaultcomparetraitscompareelementsordered"></a><a name="compareelementsordered"></a>CDefaultCompareTraits::CompareElementsOrdered
 
-Büyük ve daha az öğe belirlemek için bu işlevi çağırın.
+Daha büyük ve daha küçük öğeyi belirlemek için bu işlevi çağırın.
 
 ```
 static int CompareElementsOrdered(const T& element1, const T& element2);
@@ -85,17 +85,17 @@ static int CompareElementsOrdered(const T& element1, const T& element2);
 
 ### <a name="parameters"></a>Parametreler
 
-*element1*<br/>
-İlk öğe.
+*öğe1*<br/>
+İlk element.
 
-*element2*<br/>
-İkinci öğe.
+*eleman2*<br/>
+İkinci element.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aşağıdaki tabloyu temel alan bir tamsayı döndürür:
+Aşağıdaki tabloya göre bir sonda döndürür:
 
-|Koşul|Dönüş değeri|
+|Koşul|Döndürülen değer|
 |---------------|------------------|
 |*element1* < *element2*|<0|
 |*element1* == *element2*|0|
@@ -103,8 +103,8 @@ Aşağıdaki tabloyu temel alan bir tamsayı döndürür:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev varsayılan uygulamasını kullanan **==**, **\<**, ve **>** işleçleri. Basit veri türleri dışındaki nesneler için bu işlev geçersiz kılınması gerekebilir.
+Bu işlevin varsayılan uygulaması **==** **\<**, **>** ve işleçleri kullanır. Basit veri türleri dışındaki nesneler için bu işlevin geçersiz kılınması gerekebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

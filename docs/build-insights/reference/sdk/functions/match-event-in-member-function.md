@@ -1,6 +1,6 @@
 ---
-title: MatchEventInMemberFunction
-description: C++ Build Insights SDK 'Sı MatchEventInMemberFunction işlev başvurusu.
+title: MatchEventInmemberFunction
+description: C++ Build Insights SDK MatchEventInMemberFunction fonksiyon başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: eabbb8a91609b1447ebcc19af32df2ffed347c24
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 522630da16e3f4a1294316d88140f4bc25dca2c8
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332805"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81323894"
 ---
-# <a name="matcheventinmemberfunction"></a>MatchEventInMemberFunction
+# <a name="matcheventinmemberfunction"></a>MatchEventInmemberFunction
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`MatchEventInMemberFunction` işlevi, bir olayı bir üye işlevinin ilk parametresi tarafından tanımlanan türe karşı eşleştirmek için kullanılır. Eşleşen olay, daha fazla işleme için üye işlevine iletilir.
+İşlev, `MatchEventInMemberFunction` bir olayı bir üye işlevin ilk parametresi tarafından açıklanan türle eşleştirmek için kullanılır. Eşleşen olay daha fazla işleme için üye işlevine iletilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,39 +46,39 @@ bool MatchEventInMemberFunction(
 ### <a name="parameters"></a>Parametreler
 
 *TInterface*\
-Üye işlevini içeren tür.
+Üye işlevi içeren tür.
 
-*TReturn*\
-Üye işlevinin dönüş türü.
+*Geri Dönüş*\
+Üye işlevin dönüş türü.
 
 *TEvent*\
-Eşleştirilecek etkinliğin türü.
+Eşleşecek olayın türü.
 
-*Textraparams*\
-Eşleştirilecek olay türü ile birlikte, üye işlevi tarafından kabul edilen ek parametrelerin türleri.
+*TExtraParams*\
+Üye işlev tarafından kabul edilen ekstra parametrelerin türleri ve eşleşecek olay türü.
 
-*Textraargs*\
-`MatchEventInMemberFunction`geçirilen ek bağımsız değişkenlerin türleri.
+*TExtraArgs*\
+Geçirilen ek bağımsız değişkenlerin `MatchEventInMemberFunction`türleri.
 
-*olay*\
-*Tevent*tarafından tanımlanan olay türüyle eşleşecek olay.
+*Olay*\
+*TEvent*tarafından açıklanan olay türüne göre eşleşecek olay.
 
 *objectPtr*\
-*Memberfunc* 'ın çağrıldığı nesne için bir işaretçi.
+*Üye Func'ın* çağrıldığı bir nesneye işaretçi.
 
-*Memberfunc*\
-Eşleştirilecek olay türünü açıklayan üye işlevi.
+*üyeFunc*\
+Eşleşmek için olay türünü açıklayan üye işlev.
 
-*Extraargs*\
-Mükemmel şekilde olan bağımsız değişkenler, olay türü parametresiyle birlikte *Memberfunc* 'a iletilir.
+*extraArgs*\
+Olay türü parametresi ile birlikte *üyeFunc* için mükemmel iletilir olsun argümanlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşleşme başarılı olursa **true** olan bir **bool** değeri veya aksi takdirde **false** .
+Eşleştirme başarılı veya **yanlış** başka bir şekilde **doğru** bir **bool** değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Tevent* parametresi için kullanılacak olay türü, *yakalama sınıfları*listesinden seçilebilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için bkz. [olay tablosu](../event-table.md).
+*TEvent* parametresi için kullanılacak olay *türü, yakalama sınıfları*listesinden seçilebilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için [olay tablosuna](../event-table.md)bakın.
 
 ## <a name="example"></a>Örnek
 

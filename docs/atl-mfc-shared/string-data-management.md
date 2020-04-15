@@ -1,87 +1,87 @@
 ---
-title: Dize veri yönetimi
+title: Dize Veri Yönetimi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Unicode, string objects
 ms.assetid: 0b53a542-eeb1-4108-9ada-6700645b6f8f
-ms.openlocfilehash: b247e97f5aa6b5e85a6a6b6f57a64224a9e0f435
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f92b38ac659faef2dd9319b2f204ba837f0d473
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252668"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81317460"
 ---
-# <a name="string-data-management"></a>Dize veri yönetimi
+# <a name="string-data-management"></a>Dize Veri Yönetimi
 
-Visual C++ dize verileri yönetmek için birçok yol sağlar:
+Visual C++ dize verilerini yönetmenin çeşitli yollarını sağlar:
 
-- [Dize düzenlemesi](../c-runtime-library/string-manipulation-crt.md) null ile sonlandırılmış C stili dizeler ile çalışma
+- C stili null-sonlandırılan dizeleri ile çalışmak için [String Manipülasyon](../c-runtime-library/string-manipulation-crt.md)
 
 - Dizeleri yönetmek için Win32 API işlevleri
 
-- MFC'nin sınıfı [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md), esnek, yeniden boyutlandırılabilir dize nesnelerinin sağlar
+- MFC'nin esnek, yeniden boyutlandırılabilir dize nesneleri sağlayan [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md)
 
-- Sınıf [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md), aynı işlevlere sahip bir MFC bağımsız dize nesnesi sağlar `CString`
+- Sınıf [CStringT Sınıfı](../atl-mfc-shared/reference/cstringt-class.md), aynı işlevsellik ile MFC bağımsız bir dize nesnesi sağlayan`CString`
 
-Neredeyse tüm programlar dize verileri ile çalışma. MFC'nin `CString` sınıfı, genellikle esnek dize işleme için en iyi çözümü. Sürüm 7.0 `CString` MFC veya MFC bağımsız programlarında kullanılabilir. Çalışma zamanı kitaplığı ve `CString` destek Unicode veya MBCS programlama olduğu gibi (geniş) birden çok baytlı karakterler içeren bir dize.
+Neredeyse tüm programlar dize verileriyle çalışır. MFC'nin `CString` sınıfı genellikle esnek dize işleme için en iyi çözümdür. Sürüm 7.0 ile `CString` başlayarak, MFC veya MFC bağımsız programlarda kullanılabilir. Hem çalışma zamanı kitaplığı hem de Unicode veya `CString` MBCS programlamada olduğu gibi çok bayt (geniş) karakterler içeren destek dizeleri.
 
-Dize düzenlemesi için ilgili sınıf kitaplığının sağladığı genel amaçlı hizmetler bu makalede açıklanır. Bu makalede ele alınan konular:
+Bu makalede, sınıf kitaplığı dize işleme ile ilgili sağladığı genel amaçlı hizmetleri açıklanır. Bu makalede ele alınan konular şunlardır:
 
-- [Unicode ve MBCS sağlamak taşınabilirlik](#_core_unicode_and_mbcs_provide_portability)
+- [Unicode ve MBCS Taşınabilirlik sağlayın](#_core_unicode_and_mbcs_provide_portability)
 
-- [CStrings ve const char işaretçiler](#_core_cstrings_and_const_char_pointers)
+- [CStrings ve const char Pointers](#_core_cstrings_and_const_char_pointers)
 
-- [CString başvuru sayımı](#_core_cstring_reference_counting)
+- [CString Başvuru Sayımı](#_core_cstring_reference_counting)
 
-[CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md) sınıfı, dizeleri işlemek için destek sağlar. Değiştirin ve normalde C çalışma zamanı kitaplığı dize paketi tarafından sağlanan işlevselliği genişletmek için tasarlanmıştır. `CString` Sınıf üye işlevleri ve Basitleştirilmiş dize işleme, Basic bulunanlar benzer işleçleri sağlar. Sınıf ayrıca taşıma oluşturucuları ve işleçleri oluşturma, atama ve karşılaştırma sağlar `CString`s ve standart C++ dize veri türleri. Çünkü `CString` türünden türetilmediğinden `CObject`, kullanabileceğiniz `CString` çoğu, Microsoft Foundation Class Kitaplığı'nı (MFC) bağımsız olarak nesne.
+[CStringT Sınıfı](../atl-mfc-shared/reference/cstringt-class.md) sınıfı dizeleri işlemek için destek sağlar. Normalde C çalışma zamanı kitaplık dize paketi tarafından sağlanan işlevselliği değiştirmek ve genişletmek için tasarlanmıştır. Sınıf, `CString` Temel'de bulunanlara benzer şekilde basitleştirilmiş dize işleme için üye işlevleri ve işleçleri sağlar. Sınıf `CString`ayrıca, s ve standart C++ dize veri türlerinin oluşturulması, atanması ve karşılaştırılması için oluşturucular ve işleçler de sağlar. Türetilen `CString` `CObject`olmadığından, microsoft hazırlık `CString` sınıf kitaplığı (MFC) çoğubağımsız nesneleri kullanabilirsiniz.
 
-`CString` "semantiği değeri" nesneleri izleyin A `CString` nesnesini temsil eden benzersiz bir değer. Düşünün bir `CString` gerçek bir dize olarak, bir dizeye bir işaretçi olarak değil.
+`CString`nesneler "değer semantik" izleyin. Nesne `CString` benzersiz bir değeri temsil eder. Bir dize `CString` için bir işaretçi olarak değil, gerçek bir dize olarak düşünün.
 
-A `CString` nesne bir değişken sayıda karakter dizisini temsil eder. `CString` nesneleri, karakter dizileri olarak düşünülebilir.
+Bir `CString` nesne değişken karakter sayısının sırasını temsil eder. `CString`nesneler karakter dizileri olarak düşünülebilir.
 
-##  <a name="_core_unicode_and_mbcs_provide_portability"></a> Unicode ve MBCS taşınabilirlik sağlar.
+## <a name="unicode-and-mbcs-provide-portability"></a><a name="_core_unicode_and_mbcs_provide_portability"></a>Unicode ve MBCS Taşınabilirlik sağlar
 
-MFC sürüm 3.0 ve daha sonra MFC, dahil olan `CString`, Unicode ve çok baytlı karakter kümesi (MBCS) için etkinleştirilmiş. Bu destek, Unicode veya ANSI karakterler için oluşturabileceğiniz taşınabilir uygulamaları yazmak kolaylaştırır. Bu taşınabilirlik, her bir karakteri etkinleştirmek için bir `CString` nesnedir türü olarak tanımlanmış TCHAR `wchar_t` uygulamanızı oluştururken _UNICODE tanımlarsanız veya olarak `char` Aksi takdirde. A `wchar_t` 16 bit genişliğinde karakterdir. Sembol _MBCS tanımlanmış yapı MBCS etkinleştirilir. MFC'nin (için NAFX kitaplıklar) _MBCS simgesiyle oluşturulmuştur veya _UNICODE simgesi (UAFX kitaplıklar) tanımlanmış.
+MFC sürüm 3.0 ve sonraki sürümlerde, Hem Unicode hem de multibayt karakter kümeleri (MBCS) için MFC `CString`etkindir. Bu destek, Unicode veya ANSI karakterleri için oluşturabileceğiniz taşınabilir uygulamaları yazmanızı kolaylaştırır. Bu taşınabilirliği etkinleştirmek için, `CString` bir nesnedeki her karakter, `wchar_t` uygulamanızı oluştururken _UNICODE veya değilmiş gibi `char` simgeyi tanımlıyormuş gibi tanımlanan TCHAR türündendir. Bir `wchar_t` karakter 16 bit genişliğindedir. Tanımlanan _MBCS sembolüyle oluşturursanız MBCS etkinleştirilir. MFC kendisi ya _MBCS sembolü (NAFX kitaplıkları için) veya _UNICODE sembolü (UAFX kitaplıklar için) tanımlanmış ile inşa edilmiştir.
 
 > [!NOTE]
->  `CString` Örnekler bu ve eşlik eden makaleler dizeler değişmez değer dizeleri Unicode taşınabilir sabit dizesini forma çevirir _T makrosunu kullanarak, doğru şekilde biçimlendirildiğini:
+> Bu `CString` ve dizeleri üzerinde eşlik eden makalelerde örnekler düzgün Unicode taşınabilirlik için biçimlendirilmiş edebi dizeleri göstermek, _T makro kullanarak, hangi forma edebi dize çevirir:
 
 `L"literal string"`
 
 > [!NOTE]
->  Derleyici bir Unicode dize olarak değerlendirir. Örneğin, aşağıdaki kodu:
+> derleyicinin Unicode dizesi olarak ele aldığı. Örneğin, aşağıdaki kod:
 
 [!code-cpp[NVC_ATLMFC_Utilities#187](../atl-mfc-shared/codesnippet/cpp/string-data-management_1.cpp)]
 
 > [!NOTE]
->  _UNICODE tanımlanmış olması durumunda bir Unicode dize veya bir ANSI dizesine değilse olarak çevrilir. Daha fazla bilgi için bkz [Unicode ve çok baytlı karakter kümesi (MBCS) desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md).
+> _UNICODE tanımlıysa Unicode dizesi olarak veya tanımlanmamışsa ANSI dizesi olarak çevrilir. Daha fazla bilgi için [Unicode ve Multibyte Karakter Kümesi (MBCS) Desteği makalesine](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)bakın.
 
-A `CString` nesne depolayabileceğiniz INT_MAX (2,147,483,647) karakter. TCHAR veri türünü almak veya içindeki karakterlerin tek tek ayarlamak için kullanılan bir `CString` nesne. Karakter dizilerini aksine `CString` sınıfında yerleşik bellek ayırma yeteneği. Böylece `CString` gerektiğinde otomatik olarak büyütmeyi nesneleri (diğer bir deyişle, büyüyen hakkında endişelenmeniz gerekmez bir `CString` uzun dizeler uyacak şekilde nesnesi).
+Bir `CString` nesne en fazla INT_MAX (2.147.483.647) karakter depolayabilir. TCHAR veri türü, bir `CString` nesnenin içindeki karakterleri almak veya ayarlamak için kullanılır. Karakter dizilerinin aksine, `CString` sınıfın yerleşik bellek ayırma özelliği vardır. Bu, `CString` nesnelerin gerektiği gibi otomatik olarak büyümesine izin verir (diğer `CString` bir zamanda, daha uzun dizeleri sığdıracak bir nesne yetiştirme konusunda endişelenmenize gerek yoktur).
 
-##  <a name="_core_cstrings_and_const_char_pointers"></a> CStrings ve const char işaretçiler
+## <a name="cstrings-and-const-char-pointers"></a><a name="_core_cstrings_and_const_char_pointers"></a>CStrings ve const char Pointers
 
-A `CString` nesne ayrıca bir C stili, dize gibi hareket edebilir (bir `PCXSTR`, aynı olduğu **const char** <strong>\*</strong> Unicode altında ise). [CSimpleStringT::operator PCXSTR](../atl-mfc-shared/reference/csimplestringt-class.md#operator_pcxstr) dönüştürme işleci verir `CString` nesneleri serbestçe işlev çağrılarında karakter işaretçileri yerine kullanılacak. **CString (LPCWSTR** `pszSrc` **)** Oluşturucu için değiştirilecek karakter işaretçileri tanır `CString` nesneleri.
+Bir `CString` nesne aynı zamanda gerçek bir C stili `PCXSTR`dize gibi hareket edebilir (bir , Unicode altında değilse **const char** <strong>\*</strong> aynıdır). [CSimpleStringT::işleç PCXSTR](../atl-mfc-shared/reference/csimplestringt-class.md#operator_pcxstr) dönüştürme `CString` işleci, nesnelerin işlev çağrılarında karakter işaretçileri için serbestçe değiştirilmesine izin verir. **CString (LPCWSTR)** `pszSrc` **)** oluşturucu karakter işaretçileri nesneleri `CString` yerine izin verir.
 
-Katlama için hiç girişimde `CString` nesneleri. İki yaparsanız `CString` içeren nesneleri `Chicago`, örneğin, karakterleri `Chicago` iki yerde saklanır. (, Ona bağımlı olmaması için bu MFC, gelecek sürümlerinde doğru olmayabilir.)
-
-> [!NOTE]
->  Kullanım [CSimpleStringT::GetBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) ve [CSimpleStringT::ReleaseBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer) üye işlevleri, doğrudan erişim gerektiğinde bir `CString` bir karakter nonconstant işaretçisi olarak.
+Nesneleri katlamak `CString` için hiçbir girişimde bulunulmadı. Örneğin, iki `CString` nesne `Chicago`içeren yaparsanız, karakterler `Chicago` iki yerde depolanır. (Bu, MFC'nin gelecekteki sürümleri için geçerli olmayabilir, bu nedenle buna bağlı olmamalısınız.)
 
 > [!NOTE]
->  Kullanım [CStringT::AllocSysString](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring) ve [CStringT::SetSysString](../atl-mfc-shared/reference/cstringt-class.md#setsysstring) üye işlevleri ayırmak ve Otomasyon (eski adıyla OLE Otomasyonu da bilinir) kullanılan BSTR nesneleri ayarlamak için.
+> [CSimpleStringT kullanın::GetBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) ve [CSimpleStringT::ReleaseBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer) üye işlevleri doğrudan `CString` bir karakter için sabit olmayan bir işaretçi olarak erişmek gerekir.
 
 > [!NOTE]
->  Mümkün olduğunda, tahsis `CString` çerçevesi yerine yığındaki nesneler. Bu işlem, bellek kaydeder ve parametre geçirme basitleştirir.
+> Otomasyonda kullanılan BSTR nesnelerini (eski adıyla OLE Automation olarak bilinir) ayırmak ve ayarlamak için [CStringT:AllocSysString](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring) ve [CStringT::SetSysString](../atl-mfc-shared/reference/cstringt-class.md#setsysstring) üye işlevlerini kullanın.
 
-`CString` Sınıfı Microsoft Foundation Class Kitaplığı koleksiyon sınıfı, ancak uygulanmadı `CString` nesneleri kesinlikle depolanabilir koleksiyonlarında bulunan öğeleri olarak.
+> [!NOTE]
+> Mümkün olduğunda, `CString` nesneleri yığın yerine çerçeveye ayırın. Bu bellek kaydeder ve parametre geçişini kolaylaştırır.
 
-##  <a name="_core_cstring_reference_counting"></a> CString başvuru sayımı
+Sınıf `CString` Microsoft Hazırlık Sınıfı Kitaplığı koleksiyonu sınıfı olarak `CString` uygulanmaz, ancak nesneler koleksiyonlarda öğeler olarak kesinlikle depolanabilir.
 
-MFC sürüm 4.0 itibariyle, [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md) nesneler kopyalanır, MFC, veri kopyalama yerine bir başvuru sayısını artırır. Bu değer ve parametreleri geçirme kılar `CString` daha verimli değeriyle nesneleri. Bu işlemler, bazen birden çok kez çağrılması için Kopyala oluşturucusunu neden. Bu ortak işlemler için bu ek yükünü azaltır ve yapar kullanarak bir başvuru sayısı artan `CString` daha cazip bir seçenektir.
+## <a name="cstring-reference-counting"></a><a name="_core_cstring_reference_counting"></a>CString Başvuru Sayımı
 
-Her kopyası yok olarak özgün nesneye başvuru sayısı azaltılır. Özgün `CString` nesne, başvuru sayısı sıfıra azaltılana kadar yok edilmez.
+MFC sürüm 4.0 itibariyle, [CStringT Sınıf](../atl-mfc-shared/reference/cstringt-class.md) nesneleri kopyalandığında, MFC verileri kopyalamak yerine bir başvuru sayısı artışlar. Bu, parametreleri değere `CString` göre geçirmeve nesneleri değere göre döndürmeyi daha verimli hale getirir. Bu işlemler, kopya oluşturucunun bazen birden fazla kez çağrılmasını neden olur. Başvuru sayısını niçin artım, bu yaygın işlemler için `CString` ek yükü azaltır ve daha cazip bir seçenek kullanır.
 
-Kullanabileceğiniz `CString` üye işlevleri [CSimpleStringT::LockBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) ve [CSimpleStringT::UnlockBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) başvuru sayımı etkinleştir veya devre dışı bırakmak.
+Her kopya yok edildikçe, özgün nesnedeki başvuru sayısı verilir. Özgün `CString` nesne, başvuru sayısı sıfıra indirilene kadar yok edilmez.
+
+`CString` [CSimpleStringT::LockAraffer](../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) ve [CSimpleStringT::UnlockBuffer'ı](../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) kullanarak başvuru sayma kullanımını devre dışı bırakın veya etkinleştirebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

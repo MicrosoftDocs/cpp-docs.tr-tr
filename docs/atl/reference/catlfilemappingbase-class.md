@@ -1,5 +1,5 @@
 ---
-title: CAtlFileMappingBase sınıfı
+title: CAtlFileMappingBase Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlFileMappingBase
@@ -16,19 +16,19 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlFileMappingBase class
 ms.assetid: be555723-2790-4f57-a8fb-be4d68460775
-ms.openlocfilehash: a20a8f6c00f9404aa819b87a6a69ad2c08fb4561
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: ae790cf1248c78ff9aa70c0e586f86af6c8f3b9a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739556"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81318948"
 ---
-# <a name="catlfilemappingbase-class"></a>CAtlFileMappingBase sınıfı
+# <a name="catlfilemappingbase-class"></a>CAtlFileMappingBase Sınıfı
 
-Bu sınıf, bellek eşlemeli bir dosyayı temsil eder.
+Bu sınıf, bellek eşlenen bir dosyayı temsil eder.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,41 +40,41 @@ class CAtlFileMappingBase
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAtlFileMappingBase:: CAtlFileMappingBase](#catlfilemappingbase)|Oluşturucu.|
-|[CAtlFileMappingBase:: ~ CAtlFileMappingBase](#dtor)|Yok edicisi.|
+|[CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase)|Oluşturucu.|
+|[CAtlFileMappingBase::~CAtlFileMappingBase](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAtlFileMappingBase:: CopyFrom](#copyfrom)|Dosya eşleme nesnesinden kopyalamak için bu yöntemi çağırın.|
-|[CAtlFileMappingBase:: GetData](#getdata)|Bir dosya eşleme nesnesinden verileri almak için bu yöntemi çağırın.|
-|[CAtlFileMappingBase:: GetHandle](#gethandle)|Dosya tanıtıcısını döndürmek için bu yöntemi çağırın.|
-|[CAtlFileMappingBase:: GetMappingSize](#getmappingsize)|Bir dosya eşleme nesnesinden eşleme boyutunu almak için bu yöntemi çağırın.|
-|[CAtlFileMappingBase:: MapFile](#mapfile)|Dosya eşleme nesnesi oluşturmak için bu yöntemi çağırın.|
-|[CAtlFileMappingBase:: MapSharedMem](#mapsharedmem)|Tüm işlemlere tam erişime izin veren bir dosya eşleme nesnesi oluşturmak için bu yöntemi çağırın.|
-|[CAtlFileMappingBase:: OpenMapping](#openmapping)|Dosya eşleme nesnesine bir tanıtıcı döndürmek için bu yöntemi çağırın.|
-|[CAtlFileMappingBase:: eşlemesini Kaldır](#unmap)|Dosya eşleme nesnesinin eşlemesini kaldırmak için bu yöntemi çağırın.|
+|[CAtlFileMappingBase::CopyFrom](#copyfrom)|Dosya eşleme nesnesinden kopyalamak için bu yöntemi çağırın.|
+|[CAtlFileMappingBase::Veri Alın](#getdata)|Dosya eşleme nesnesinden veri almak için bu yöntemi arayın.|
+|[CAtlFileMappingBase::GetHandle](#gethandle)|Dosya tanıtıcısını döndürmek için bu yöntemi arayın.|
+|[CAtlFileMappingBase::GetMappingSize](#getmappingsize)|Dosya eşleme nesnesinden eşleme boyutunu almak için bu yöntemi arayın.|
+|[CAtlFileMappingBase::MapFile](#mapfile)|Dosya eşleme nesnesi oluşturmak için bu yöntemi çağırın.|
+|[CAtlFileMappingBase::MapSharedMem](#mapsharedmem)|Tüm işlemlere tam erişime izin veren bir dosya eşleme nesnesi oluşturmak için bu yöntemi arayın.|
+|[CAtlFileMappingBase::OpenMapping](#openmapping)|Dosya eşleme nesnesine bir tanıtıcı döndürmek için bu yöntemi çağırın.|
+|[CAtlFileMappingBase::Haritayı kapatma](#unmap)|Dosya eşleme nesnesini açmak için bu yöntemi çağırın.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAtlFileMappingBase:: operator =](#operator_eq)|Geçerli dosya eşleme nesnesini başka bir dosya eşleme nesnesi olarak ayarlar.|
+|[CAtlFileMappingBase::operatör =](#operator_eq)|Geçerli dosya eşleme nesnesini başka bir dosya eşleme nesnesine ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dosya eşleme, bir dosyanın içeriğinin bir işlemin sanal adres alanının bir bölümüyle ilişkilendirilmesi. Bu sınıf, programların verilere kolayca erişip paylaşmasına izin veren dosya eşleme nesneleri oluşturmak için yöntemler sağlar.
+Dosya eşleme, bir işlemin sanal adres alanının bir bölümüyle dosya içeriğinin ilişkilendirilmesidir. Bu sınıf, programların verilere kolayca erişebilen ve paylaşabilen dosya eşleme nesneleri oluşturmak için yöntemler sağlar.
 
-Daha fazla bilgi için Windows SDK [dosya eşleme](/windows/win32/Memory/file-mapping) konusuna bakın.
+Daha fazla bilgi için Windows SDK'daki [Dosya Eşleme'ye](/windows/win32/Memory/file-mapping) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlfile. h
+**Üstbilgi:** atlfile.h
 
-##  <a name="catlfilemappingbase"></a>CAtlFileMappingBase:: CAtlFileMappingBase
+## <a name="catlfilemappingbasecatlfilemappingbase"></a><a name="catlfilemappingbase"></a>CAtlFileMappingBase::CAtlFileMappingBase
 
 Oluşturucu.
 
@@ -85,20 +85,20 @@ CAtlFileMappingBase() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*cumg*<br/>
-Yeni nesneyi oluşturmak için kopyalanacak özgün dosya eşleme nesnesi.
+*orig*<br/>
+Yeni nesne oluşturmak için kopyalamak için özgün dosya eşleme nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İsteğe bağlı olarak, var olan bir nesneyi kullanarak yeni bir dosya eşleme nesnesi oluşturur. Belirli bir dosya için dosya eşleme nesnesini açmak veya oluşturmak üzere [CAtlFileMappingBase:: MapFile](#mapfile) çağrısı yapmak yine de gereklidir.
+İsteğe bağlı olarak varolan bir nesneyi kullanarak yeni bir dosya eşleme nesnesi oluşturur. Belirli bir dosya için dosya eşleme nesnesini açmak veya oluşturmak için [CAtlFileMappingBase::MapFile'ı](#mapfile) aramak yine de gereklidir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#71](../../atl/codesnippet/cpp/catlfilemappingbase-class_1.cpp)]
 
-##  <a name="dtor"></a>CAtlFileMappingBase:: ~ CAtlFileMappingBase
+## <a name="catlfilemappingbasecatlfilemappingbase"></a><a name="dtor"></a>CAtlFileMappingBase::~CAtlFileMappingBase
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 ~CAtlFileMappingBase() throw();
@@ -106,9 +106,9 @@ Yok edicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfı tarafından ayrılan kaynakları serbest bırakır ve [CAtlFileMappingBase:: eşlemesini Kaldır](#unmap) yöntemini çağırır.
+Sınıf tarafından ayrılan tüm kaynakları serbest eder ve [CAtlFileMappingBase::Unmap](#unmap) yöntemini çağırır.
 
-##  <a name="copyfrom"></a>CAtlFileMappingBase:: CopyFrom
+## <a name="catlfilemappingbasecopyfrom"></a><a name="copyfrom"></a>CAtlFileMappingBase::CopyFrom
 
 Dosya eşleme nesnesinden kopyalamak için bu yöntemi çağırın.
 
@@ -118,16 +118,16 @@ HRESULT CopyFrom(CAtlFileMappingBase& orig) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*cumg*<br/>
-Kopyalanacak özgün dosya eşleme nesnesi.
+*orig*<br/>
+Kopyalanması gereken özgün dosya eşleme nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="getdata"></a>CAtlFileMappingBase:: GetData
+## <a name="catlfilemappingbasegetdata"></a><a name="getdata"></a>CAtlFileMappingBase::Veri Alın
 
-Bir dosya eşleme nesnesinden verileri almak için bu yöntemi çağırın.
+Dosya eşleme nesnesinden veri almak için bu yöntemi arayın.
 
 ```
 void* GetData() const throw();
@@ -135,9 +135,9 @@ void* GetData() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Veriye bir işaretçi döndürür.
+Verilere bir işaretçi döndürür.
 
-##  <a name="gethandle"></a>CAtlFileMappingBase:: GetHandle
+## <a name="catlfilemappingbasegethandle"></a><a name="gethandle"></a>CAtlFileMappingBase::GetHandle
 
 Dosya eşleme nesnesine bir tanıtıcı döndürmek için bu yöntemi çağırın.
 
@@ -147,11 +147,11 @@ HANDLE GetHandle() throw ();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya eşleme nesnesine bir tanıtıcı döndürür.
+Bir tanıtıcıyı dosya eşleme nesnesine döndürür.
 
-##  <a name="getmappingsize"></a>CAtlFileMappingBase:: GetMappingSize
+## <a name="catlfilemappingbasegetmappingsize"></a><a name="getmappingsize"></a>CAtlFileMappingBase::GetMappingSize
 
-Bir dosya eşleme nesnesinden eşleme boyutunu almak için bu yöntemi çağırın.
+Dosya eşleme nesnesinden eşleme boyutunu almak için bu yöntemi arayın.
 
 ```
 SIZE_T GetMappingSize() throw();
@@ -163,11 +163,11 @@ Eşleme boyutunu döndürür.
 
 ### <a name="example"></a>Örnek
 
-[CAtlFileMappingBase:: CAtlFileMappingBase](#catlfilemappingbase)örneğine bakın.
+[CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase)için örneğe bakın.
 
-##  <a name="mapfile"></a>CAtlFileMappingBase:: MapFile
+## <a name="catlfilemappingbasemapfile"></a><a name="mapfile"></a>CAtlFileMappingBase::MapFile
 
-Belirtilen dosya için bir dosya eşleme nesnesi açmak veya oluşturmak için bu yöntemi çağırın.
+Belirtilen dosya için bir dosya eşleme nesnesini açmak veya oluşturmak için bu yöntemi çağırın.
 
 ```
 HRESULT MapFile(
@@ -181,35 +181,35 @@ HRESULT MapFile(
 ### <a name="parameters"></a>Parametreler
 
 *hFile*<br/>
-Eşleme nesnesi oluşturulacak dosyanın tanıtıcısı. *hfile* geçerli OLMALıDıR ve INVALID_HANDLE_VALUE olarak ayarlanamaz.
+Eşleme nesnesi oluşturmak için dosyaya işitin. *hFile* geçerli olmalıdır ve INVALID_HANDLE_VALUE olarak ayarlanamaz.
 
 *nMappingSize*<br/>
-Eşleme boyutu. 0 ise, dosya eşleme nesnesinin en büyük boyutu *hfile* tarafından tanımlanan dosyanın geçerli boyutuna eşittir.
+Haritalama boyutu. 0 ise, dosya eşleme nesnesinin maksimum boyutu hFile tarafından tanımlanan dosyanın geçerli boyutuna *eşittir.*
 
-*nKonum*<br/>
-Eşlemenin başlayacağı dosya konumu. Fark değeri, sistemin bellek ayırma ayrıntı düzeyinin katı olmalıdır.
+*nOffset*<br/>
+Eşlemenin başlayacağı dosya ofset. Ofset değeri, sistemin bellek ayırma parçalı lığının bir katı olmalıdır.
 
 *dwMappingProtection*<br/>
-Dosya eşlendiğinde dosya görünümü için istenen koruma. Windows SDK bkz. [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga) Içinde *flprotect* .
+Dosya eşlendiğinde dosya görünümü için istenen koruma. Windows SDK'da [CreateFileMapping'te](/windows/win32/api/winbase/nf-winbase-createfilemappinga) *flProtect'e* bakın.
 
 *dwViewDesiredAccess*<br/>
-Dosya görünümüne erişimin türünü ve bu nedenle dosya tarafından eşlenen sayfaların korumasını belirtir. Windows SDK [MapViewOfFileEx](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) Içindeki *dwDesiredAccess* öğesine bakın.
+Dosya görünümüne erişim türünü ve bu nedenle dosya tarafından eşlenen sayfaların korunmasını belirtir. Windows SDK'daki [MapViewOfFileEx'te](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) *dwDesiredAccess'e* bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dosya eşleme nesnesi oluşturulduktan sonra dosyanın boyutu dosya eşleme nesnesinin boyutunu aşmamalıdır; varsa, dosyanın içeriğinin hepsi paylaşım için kullanılabilir olmayacaktır. Daha fazla ayrıntı için Windows SDK [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga) ve [MapViewOfFileEx](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) bölümüne bakın.
+Bir dosya eşleme nesnesi oluşturulduktan sonra, dosyanın boyutu dosya eşleme nesnesinin boyutunu aşmamalıdır; varsa, dosyanın tüm içeriği paylaşılacak değildir. Daha fazla bilgi için Windows SDK'daki [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga) ve [MapViewOfFileEx](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
-[CAtlFileMappingBase:: CAtlFileMappingBase](#catlfilemappingbase)örneğine bakın.
+[CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase)için örneğe bakın.
 
-##  <a name="mapsharedmem"></a>CAtlFileMappingBase:: MapSharedMem
+## <a name="catlfilemappingbasemapsharedmem"></a><a name="mapsharedmem"></a>CAtlFileMappingBase::MapSharedMem
 
-Tüm işlemlere tam erişime izin veren bir dosya eşleme nesnesi oluşturmak için bu yöntemi çağırın.
+Tüm işlemlere tam erişime izin veren bir dosya eşleme nesnesi oluşturmak için bu yöntemi arayın.
 
 ```
 HRESULT MapSharedMem(
@@ -224,32 +224,32 @@ HRESULT MapSharedMem(
 ### <a name="parameters"></a>Parametreler
 
 *nMappingSize*<br/>
-Eşleme boyutu. 0 ise, dosya eşleme nesnesinin en büyük boyutu, *szName*tarafından tanımlanan dosya eşleme nesnesinin geçerli boyutuna eşittir.
+Haritalama boyutu. 0 ise, dosya eşleme nesnesinin maksimum boyutu *szName*tarafından tanımlanan dosya eşleme nesnesinin geçerli boyutuna eşittir.
 
-*szName*<br/>
+*Szname*<br/>
 Eşleme nesnesinin adı.
 
-*Pbalreadyvardı*<br/>
-Eşleme nesnesi zaten mevcutsa, TRUE olarak ayarlanmış bir BOOL değeri gösterir.
+*pbAlreadyExisted*<br/>
+Eşleme nesnesi zaten varsa TRUE olarak ayarlanmış bir BOOL değerine işaret ediyor.
 
 *lpsa*<br/>
-Döndürülen Tanıtıcının alt süreçler `SECURITY_ATTRIBUTES` tarafından devralınıp alınmayacağını belirleyen bir yapıya yönelik işaretçi. Windows SDK [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga) Içindeki *lpattributes* bölümüne bakın.
+Döndürülen tanıtıcının alt işlemler tarafından devralınıp alınamayacağını belirleyen bir `SECURITY_ATTRIBUTES` yapının işaretçisi. Windows SDK'da [CreateFileMapping'te](/windows/win32/api/winbase/nf-winbase-createfilemappinga) *lpAttributes'a* bakın.
 
 *dwMappingProtection*<br/>
-Dosya eşlendiğinde dosya görünümü için istenen koruma. Windows SDK 'da *flprotect* `CreateFileMapping` bölümüne bakın.
+Dosya eşlendiğinde dosya görünümü için istenen koruma. Bkz. windows `CreateFileMapping` SDK'da *flProtect* içinde.
 
 *dwViewDesiredAccess*<br/>
-Dosya görünümüne erişimin türünü ve bu nedenle dosya tarafından eşlenen sayfaların korumasını belirtir. Windows SDK [MapViewOfFileEx](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) Içindeki *dwDesiredAccess* öğesine bakın.
+Dosya görünümüne erişim türünü ve bu nedenle dosya tarafından eşlenen sayfaların korunmasını belirtir. Windows SDK'daki [MapViewOfFileEx'te](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) *dwDesiredAccess'e* bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`MapShareMem`[CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga)tarafından oluşturulan mevcut bir dosya eşleme nesnesinin süreçler arasında paylaşılmasını sağlar.
+`MapShareMem`[CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga)tarafından oluşturulan varolan bir dosya eşleme nesnesi, işlemler arasında paylaşılmasına izin verir.
 
-##  <a name="openmapping"></a>CAtlFileMappingBase:: OpenMapping
+## <a name="catlfilemappingbaseopenmapping"></a><a name="openmapping"></a>CAtlFileMappingBase::OpenMapping
 
 Belirtilen dosya için adlandırılmış bir dosya eşleme nesnesi açmak için bu yöntemi çağırın.
 
@@ -263,29 +263,29 @@ HRESULT OpenMapping(
 
 ### <a name="parameters"></a>Parametreler
 
-*szName*<br/>
-Eşleme nesnesinin adı. Bu ada sahip bir dosya eşleme nesnesine yönelik açık bir tanıtıcı varsa ve eşleme nesnesindeki güvenlik tanımlayıcısı *dwViewDesiredAccess* parametresiyle çakışıyorsa, açma işlemi başarılı olur.
+*Szname*<br/>
+Eşleme nesnesinin adı. Bu ada göre bir dosya eşleme nesnesine açık bir tutamaç varsa ve eşleme nesnesindeki güvenlik tanımlayıcısı *dwViewDesiredAccess* parametresi ile çakışmazsa, açık işlem başarılı olur.
 
 *nMappingSize*<br/>
-Eşleme boyutu. 0 ise, dosya eşleme nesnesinin en büyük boyutu, *szName*tarafından tanımlanan dosya eşleme nesnesinin geçerli boyutuna eşittir.
+Haritalama boyutu. 0 ise, dosya eşleme nesnesinin maksimum boyutu *szName*tarafından tanımlanan dosya eşleme nesnesinin geçerli boyutuna eşittir.
 
-*nKonum*<br/>
-Eşlemenin başlayacağı dosya konumu. Fark değeri, sistemin bellek ayırma ayrıntı düzeyinin katı olmalıdır.
+*nOffset*<br/>
+Eşlemenin başlayacağı dosya ofset. Ofset değeri, sistemin bellek ayırma parçalı lığının bir katı olmalıdır.
 
 *dwViewDesiredAccess*<br/>
-Dosya görünümüne erişimin türünü ve bu nedenle dosya tarafından eşlenen sayfaların korumasını belirtir. Windows SDK [MapViewOfFileEx](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) Içindeki *dwDesiredAccess* öğesine bakın.
+Dosya görünümüne erişim türünü ve bu nedenle dosya tarafından eşlenen sayfaların korunmasını belirtir. Windows SDK'daki [MapViewOfFileEx'te](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) *dwDesiredAccess'e* bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama yapılarında, giriş parametreleri geçersiz olduğunda bir onaylama hatası oluşur.
+Hata ayıklama oluştururda, giriş parametreleri geçersizse bir tasnif hatası oluşur.
 
-##  <a name="operator_eq"></a>CAtlFileMappingBase:: operator =
+## <a name="catlfilemappingbaseoperator-"></a><a name="operator_eq"></a>CAtlFileMappingBase::operatör =
 
-Geçerli dosya eşleme nesnesini başka bir dosya eşleme nesnesi olarak ayarlar.
+Geçerli dosya eşleme nesnesini başka bir dosya eşleme nesnesine ayarlar.
 
 ```
 CAtlFileMappingBase& operator=(CAtlFileMappingBase& orig);
@@ -293,16 +293,16 @@ CAtlFileMappingBase& operator=(CAtlFileMappingBase& orig);
 
 ### <a name="parameters"></a>Parametreler
 
-*cumg*<br/>
+*orig*<br/>
 Geçerli dosya eşleme nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli nesneye bir başvuru döndürür.
+Geçerli nesneye bir başvuru verir.
 
-##  <a name="unmap"></a>CAtlFileMappingBase:: eşlemesini Kaldır
+## <a name="catlfilemappingbaseunmap"></a><a name="unmap"></a>CAtlFileMappingBase::Haritayı kapatma
 
-Dosya eşleme nesnesinin eşlemesini kaldırmak için bu yöntemi çağırın.
+Dosya eşleme nesnesini açmak için bu yöntemi çağırın.
 
 ```
 HRESULT Unmap() throw();
@@ -310,13 +310,13 @@ HRESULT Unmap() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla ayrıntı için Windows SDK [UnmapViewOfFile dosyasına](/windows/win32/api/memoryapi/nf-memoryapi-unmapviewoffile) bakın.
+Daha fazla bilgi için Windows SDK'da [UnmapViewOfFile](/windows/win32/api/memoryapi/nf-memoryapi-unmapviewoffile) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CAtlFileMapping Sınıfı](../../atl/reference/catlfilemapping-class.md)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

@@ -1,6 +1,6 @@
 ---
 title: TRACING_SESSION_OPTIONS yapısı
-description: C++ Derleme ÖNGÖRÜLERI SDK TRACING_SESSION_OPTIONS yapısı başvurusu.
+description: C++ Yapı Öngörüleri SDK TRACING_SESSION_OPTIONS yapı referansı.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 3f02552d5df4ffe71bc4be5c46e4b5239f25d73c
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: 5aeb6299aea8dc0661b9469ee524e7aa4d010aca
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332210"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81323436"
 ---
 # <a name="tracing_session_options-structure"></a>TRACING_SESSION_OPTIONS yapısı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`TRACING_SESSION_OPTIONS` yapısı, bir [ANALYSIS_DESCRIPTOR](analysis-descriptor-struct.md) veya [RELOG_DESCRIPTOR](relog-descriptor-struct.md) yapısı başlatırken kullanılır. Bir izlemenin toplanması sırasında hangi olayların yakalanacağını açıklar.
+Yapı, `TRACING_SESSION_OPTIONS` [bir ANALYSIS_DESCRIPTOR](analysis-descriptor-struct.md) veya [RELOG_DESCRIPTOR](relog-descriptor-struct.md) yapının başlatılmasında kullanılır. Bir izlemenin toplanması sırasında hangi olayların yakalandığı açıklanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,7 +42,7 @@ typedef struct TRACING_SESSION_OPTIONS_TAG
 
 |  |  |
 |--|--|
-| `SystemEventFlags` | Yakalanacak sistem olaylarını açıklayan bir bit maskesi. Daha fazla bilgi için bkz. [TRACING_SESSION_SYSTEM_EVENT_FLAGS](tracing-session-system-event-flags-constants.md). |
-| `MsvcEventFlags` | Yakalanacak MSVC olaylarını açıklayan bir bit maskesi. Daha fazla bilgi için bkz. [TRACING_SESSION_MSVC_EVENT_FLAGS](tracing-session-msvc-event-flags-constants.md). |
+| `SystemEventFlags` | Yakalamak için sistem olaylarını açıklayan bir bitmaskesi. Daha fazla bilgi için [TRACING_SESSION_SYSTEM_EVENT_FLAGS.](tracing-session-system-event-flags-constants.md) |
+| `MsvcEventFlags` | Yakalamak için MSVC olaylarını açıklayan bir bitmask. Daha fazla bilgi için [TRACING_SESSION_MSVC_EVENT_FLAGS.](tracing-session-msvc-event-flags-constants.md) |
 
 ::: moniker-end

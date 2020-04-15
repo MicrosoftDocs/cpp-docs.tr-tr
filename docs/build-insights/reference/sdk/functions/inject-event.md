@@ -1,6 +1,6 @@
 ---
-title: Injectevent
-description: C++ Build Insights SDK 'Sı ınjectevent işlev başvurusu.
+title: Enjektör Olayı
+description: C++ Build Insights SDK InjectEvent fonksiyon başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 7b53eb71cf7a2ae40d04dbc3f8b5829f2737aba4
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: c82aad5923eff60e5c72ceccaa39aa136f942665
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332847"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81324045"
 ---
-# <a name="injectevent"></a>Injectevent
+# <a name="injectevent"></a>Enjektör Olayı
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`InjectEvent` işlevi, [ıregünlükçü](../other-types/irelogger-class.md) arabirimini uygulayan bir yeniden günlükçü içinde çağırılır. Yeniden günlüğe kaydetme oturumunun çıkış izleme dosyasında Windows için olay Izleme (ETW) olayı yazmak için kullanılır.
+`InjectEvent` [İşlev, IRelogger](../other-types/irelogger-class.md) arabirimini uygulayan bir relogger içinde çağrılır. Bir yeniden günleme oturumunun çıktı izleme dosyasına Windows için Olay İzleme (ETW) olayı yazmak için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,35 +44,35 @@ void InjectEvent(
 
 ### <a name="parameters"></a>Parametreler
 
-*Relogsession*\
-Yeniden günlüğe kaydetme oturumunun bir işaretçisi. `IRelogger` arabirimini uygulayan yeniden Günlükçüler için yeniden günlüğe kaydetme oturumu sağlanır. Daha fazla bilgi için bkz. [ıregünlükçü](../other-types/irelogger-class.md).
+*relogSession*\
+Yeniden günlüğe kaydetme oturumuiçin bir işaretçi. `IRelogger` Arabirimi uygulayan relogger'lara yeniden günlüğe kaydetme oturumu sağlanır. Daha fazla bilgi için [Bkz. IRelogger.](../other-types/irelogger-class.md)
 
-*ProviderID*\
-ETW olayının yeniden günlüğe kaydedildiği bir Windows (ETW) sağlayıcısı GUID 'SI için olay Izleme.
+*Providerıd*\
+Windows (ETW) sağlayıcısı GUID için Bir Olay İzleme altında ETW olay relogged alır.
 
-*EventDescriptor*\
-Yeniden günlüğe kaydedilen ETW olayının ETW olay tanımlayıcısı.
+*Eventdescriptor*\
+Yeniden kaydedilmiş Olan ETW olayı için ETW olay tanımlayıcısı.
 
-*işlemkimliği*\
-Yeniden günlüğe kaydedilen ETW olayının işlem tanımlayıcısı (PID).
+*Processıd*\
+Yeniden kaydedilmiş ETW olayı için işlem tanımlayıcısı (PID).
 
-*ThreadID*\
-Yeniden günlüğe kaydedilen ETW olayının iş parçacığı tanımlayıcısı (TıD).
+*Threadıd*\
+Yeniden kaydedilmiş ETW olayı için iş parçacığı tanımlayıcısı (TID).
 
-*Processorındex*\
-Yeniden günlüğe kaydedilen ETW olayının işlemci dizini.
+*processorIndex*\
+Yeniden kaydedilmiş ETW olayının işlemci dizini.
 
-*zaman damgası*\
-Yeniden günlüğe kaydedilen ETW olayının zaman damgası.
+*Zaman damgası*\
+Yeniden kaydedilmiş ETW olayının zaman damgası.
 
-*veri*\
-Yeniden günlüğe kaydedilen ETW olayına dahil edilecek verilerin bir işaretçisi.
+*Veri*\
+Yeniden kaydedilmiş ETW olayına dahil edilmesi gereken verilere işaretçi.
 
-*ByteCount*\
-Verilerin bayt cinsinden *verileri*tarafından işaret edilen boyutu.
+*Bytecount*\
+Verilerin boyutu, baytlar halinde, *veriler*tarafından işaret.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Sağlayıcı GUID 'si* ve *olay tanımlayıcısı*gibi ETW kavramları hakkında daha fazla bilgi için bkz. [ETW belgeleri](/windows/win32/etw/about-event-tracing). C++ Build Insights SDK 'sı ile yeniden günlüğe kaydetme oturumunun nasıl başlatılacağı hakkında ayrıntılı bilgi için bkz. [relog](relog.md).
+*Sağlayıcı GUID* ve *olay tanımlayıcısı*gibi ETW kavramları hakkında daha fazla bilgi için [ETW belgelerine](/windows/win32/etw/about-event-tracing)bakın. C++ Build Insights SDK ile yeniden kaydetme oturumu başlatma hakkında ayrıntılı bilgi [için](relog.md)Bkz.
 
 ::: moniker-end

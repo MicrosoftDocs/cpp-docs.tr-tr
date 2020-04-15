@@ -1,5 +1,5 @@
 ---
-title: CNoWorkerThread sınıfı
+title: CNoWorkerThread Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CNoWorkerThread
@@ -14,19 +14,19 @@ f1_keywords:
 helpviewer_keywords:
 - CNoWorkerThread class
 ms.assetid: 29f06bae-b658-4aac-9c14-331e996d25d1
-ms.openlocfilehash: fcd103283738ce7d573faa2fb1025ee2af642021
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90056e648a53218ac06083d43ca34870e1ca72fc
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258500"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81326704"
 ---
-# <a name="cnoworkerthread-class"></a>CNoWorkerThread sınıfı
+# <a name="cnoworkerthread-class"></a>CNoWorkerThread Sınıfı
 
-Bu sınıf için bağımsız değişken olarak kullanmak `MonitorClass` şablon parametresi için dinamik önbellek bakım devre dışı bırakmak isterseniz önbellek sınıfları.
+Dinamik önbellek bakımını `MonitorClass` devre dışı kıfsaytak etmek istiyorsanız, şablon parametresinin önbellek sınıflarını önbelleğe almak için bağımsız değişkenolarak bu sınıfı kullanın.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,29 +38,29 @@ class CNoWorkerThread
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CNoWorkerThread::AddHandle](#addhandle)|İşlevsel olmayan denk [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).|
-|[CNoWorkerThread::AddTimer](#addtimer)|İşlevsel olmayan denk [CWorkerThread::AddTimer](../../atl/reference/cworkerthread-class.md#addtimer).|
-|[CNoWorkerThread::GetThreadHandle](#getthreadhandle)|İşlevsel olmayan denk [CWorkerThread::GetThreadHandle](../../atl/reference/cworkerthread-class.md#getthreadhandle).|
-|[CNoWorkerThread::GetThreadId](#getthreadid)|İşlevsel olmayan denk [CWorkerThread::GetThreadId](../../atl/reference/cworkerthread-class.md#getthreadid).|
-|[CNoWorkerThread::Initialize](#initialize)|İşlevsel olmayan denk [CWorkerThread::Initialize](../../atl/reference/cworkerthread-class.md#initialize).|
-|[CNoWorkerThread::RemoveHandle](#removehandle)|İşlevsel olmayan denk [CWorkerThread::RemoveHandle](../../atl/reference/cworkerthread-class.md#removehandle).|
-|[CNoWorkerThread::Shutdown](#shutdown)|İşlevsel olmayan denk [CWorkerThread::Shutdown](../../atl/reference/cworkerthread-class.md#shutdown).|
+|[CNoWorkerThread::AddHandle](#addhandle)|CWorkerThread'in işlevsel olmayan [eşdeğeri::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).|
+|[CNoWorkerThread::AddTimer](#addtimer)|CWorkerThread'in işlevsel olmayan [eşdeğeri::AddTimer](../../atl/reference/cworkerthread-class.md#addtimer).|
+|[CNoWorkerThread::GetThreadHandle](#getthreadhandle)|CWorkerThread fonksiyonel olmayan [eşdeğer::GetThreadHandle](../../atl/reference/cworkerthread-class.md#getthreadhandle).|
+|[CNoWorkerThread::GetThreadid](#getthreadid)|CWorkerThread fonksiyonel olmayan [eşdeğer::GetThreadId](../../atl/reference/cworkerthread-class.md#getthreadid).|
+|[CNoWorkerThread::Initialize](#initialize)|CWorkerThread'in işlevsel olmayan [eşdeğeri::Initialize](../../atl/reference/cworkerthread-class.md#initialize).|
+|[CNoWorkerThread::RemoveHandle](#removehandle)|CWorkerThread'in işlevsel olmayan [eşdeğeri::RemoveHandle](../../atl/reference/cworkerthread-class.md#removehandle).|
+|[CNoWorkerThread::Kapatma](#shutdown)|CWorkerThread'in işlevsel olmayan [eşdeğeri::Kapatma](../../atl/reference/cworkerthread-class.md#shutdown).|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aynı genel arabirimi olarak bu sınıfın sağladığı [CWorkerThread](../../atl/reference/cworkerthread-class.md). Bu arabirim tarafından sağlanan beklenir `MonitorClass` önbellek sınıfları için şablon parametresi.
+Bu [sınıf, CWorkerThread](../../atl/reference/cworkerthread-class.md)ile aynı ortak arabirimi sağlar. Bu arabirimin `MonitorClass` önbellek sınıflarına şablon parametresi tarafından sağlanması beklenir.
 
-Bu sınıftaki yöntemlerin yapmamak için uygulanır. Her zaman bir HRESULT döndüren yöntemler S_OK döndürür ve her zaman bir tanıtıcı veya iş parçacığı kimliği döndüren yöntemler 0 değerini döndürür.
+Bu sınıftaki yöntemler hiçbir şey yapmamak için uygulanır. HRESULT'i döndüren yöntemler her zaman S_OK döndürer ve HANDLE veya iş parçacığı kimliğini döndüren yöntemler her zaman 0 döndürer.
 
 ## <a name="requirements"></a>Gereksinimler
 
 **Başlık:** atlutil.h
 
-##  <a name="addhandle"></a>  CNoWorkerThread::AddHandle
+## <a name="cnoworkerthreadaddhandle"></a><a name="addhandle"></a>CNoWorkerThread::AddHandle
 
-İşlevsel olmayan denk [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).
+CWorkerThread'in işlevsel olmayan [eşdeğeri::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).
 
 ```
 HRESULT AddHandle(HANDLE /* hObject */,
@@ -76,9 +76,9 @@ Her zaman S_OK döndürür.
 
 Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
 
-##  <a name="addtimer"></a>  CNoWorkerThread::AddTimer
+## <a name="cnoworkerthreadaddtimer"></a><a name="addtimer"></a>CNoWorkerThread::AddTimer
 
-İşlevsel olmayan denk [CWorkerThread::AddTimer](../../atl/reference/cworkerthread-class.md#addtimer).
+CWorkerThread'in işlevsel olmayan [eşdeğeri::AddTimer](../../atl/reference/cworkerthread-class.md#addtimer).
 
 ```
 HRESULT AddTimer(DWORD /* dwInterval */,
@@ -95,9 +95,9 @@ Her zaman S_OK döndürür.
 
 Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
 
-##  <a name="getthreadhandle"></a>  CNoWorkerThread::GetThreadHandle
+## <a name="cnoworkerthreadgetthreadhandle"></a><a name="getthreadhandle"></a>CNoWorkerThread::GetThreadHandle
 
-İşlevsel olmayan denk [CWorkerThread::GetThreadHandle](../../atl/reference/cworkerthread-class.md#getthreadhandle).
+CWorkerThread fonksiyonel olmayan [eşdeğer::GetThreadHandle](../../atl/reference/cworkerthread-class.md#getthreadhandle).
 
 ```
 HANDLE GetThreadHandle() throw();
@@ -111,9 +111,9 @@ Her zaman NULL döndürür.
 
 Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
 
-##  <a name="getthreadid"></a>  CNoWorkerThread::GetThreadId
+## <a name="cnoworkerthreadgetthreadid"></a><a name="getthreadid"></a>CNoWorkerThread::GetThreadid
 
-İşlevsel olmayan denk [CWorkerThread::GetThreadId](../../atl/reference/cworkerthread-class.md#getthreadid).
+CWorkerThread fonksiyonel olmayan [eşdeğer::GetThreadId](../../atl/reference/cworkerthread-class.md#getthreadid).
 
 ```
 DWORD GetThreadId() throw();
@@ -127,9 +127,9 @@ Her zaman 0 değerini döndürür.
 
 Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
 
-##  <a name="initialize"></a>  CNoWorkerThread::Initialize
+## <a name="cnoworkerthreadinitialize"></a><a name="initialize"></a>CNoWorkerThread::Initialize
 
-İşlevsel olmayan denk [CWorkerThread::Initialize](../../atl/reference/cworkerthread-class.md#initialize).
+CWorkerThread'in işlevsel olmayan [eşdeğeri::Initialize](../../atl/reference/cworkerthread-class.md#initialize).
 
 ```
 HRESULT Initialize() throw();
@@ -143,9 +143,9 @@ Her zaman S_OK döndürür.
 
 Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
 
-##  <a name="removehandle"></a>  CNoWorkerThread::RemoveHandle
+## <a name="cnoworkerthreadremovehandle"></a><a name="removehandle"></a>CNoWorkerThread::RemoveHandle
 
-İşlevsel olmayan denk [CWorkerThread::RemoveHandle](../../atl/reference/cworkerthread-class.md#removehandle).
+CWorkerThread'in işlevsel olmayan [eşdeğeri::RemoveHandle](../../atl/reference/cworkerthread-class.md#removehandle).
 
 ```
 HRESULT RemoveHandle(HANDLE /* hObject */) throw();
@@ -159,9 +159,9 @@ Her zaman S_OK döndürür.
 
 Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
 
-##  <a name="shutdown"></a>  CNoWorkerThread::Shutdown
+## <a name="cnoworkerthreadshutdown"></a><a name="shutdown"></a>CNoWorkerThread::Kapatma
 
-İşlevsel olmayan denk [CWorkerThread::Shutdown](../../atl/reference/cworkerthread-class.md#shutdown).
+CWorkerThread'in işlevsel olmayan [eşdeğeri::Kapatma](../../atl/reference/cworkerthread-class.md#shutdown).
 
 ```
 HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();

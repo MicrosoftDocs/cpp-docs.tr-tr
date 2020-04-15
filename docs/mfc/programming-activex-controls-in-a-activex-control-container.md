@@ -1,5 +1,5 @@
 ---
-title: 'ActiveX denetim kapsayıcıları: Bir ActiveX denetim kapsayıcısındaki ActiveX denetimlerini programlama'
+title: 'ActiveX Denetim Kapsayıcıları: Bir ActiveX Denetim Kapsayıcısındaki ActiveX Denetimlerini Programlama'
 ms.date: 09/12/2018
 helpviewer_keywords:
 - ActiveX control containers [MFC], accessing ActiveX controls
@@ -12,90 +12,90 @@ helpviewer_keywords:
 - wrapper classes [MFC], using
 - ActiveX controls [MFC], wrapper classes
 ms.assetid: ef9b2480-92d6-4191-b16e-8055c4fd7b73
-ms.openlocfilehash: eaeb5275ce825272e1c605e7ceeefa24db7a32ab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9620f4d47197147db4972c9f2024f6018a705902
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62378121"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371182"
 ---
-# <a name="activex-control-containers-programming-activex-controls-in-an-activex-control-container"></a>ActiveX denetim kapsayıcıları: Bir ActiveX denetim kapsayıcısındaki ActiveX denetimlerini programlama
+# <a name="activex-control-containers-programming-activex-controls-in-an-activex-control-container"></a>ActiveX Denetim Kapsayıcıları: Bir ActiveX Denetim Kapsayıcısındaki ActiveX Denetimlerini Programlama
 
-Bu makalede gösterilen erişme işlemi [yöntemleri](../mfc/mfc-activex-controls-methods.md) ve [özellikleri](../mfc/mfc-activex-controls-properties.md) katıştırılmış ActiveX denetimi.
+Bu makalede, katıştırılmış ActiveX denetimlerinin açıkta kalan [yöntemlerine](../mfc/mfc-activex-controls-methods.md) ve [özelliklerine](../mfc/mfc-activex-controls-properties.md) erişme işlemi açıklanmaktadır.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
 
-Temel olarak, aşağıdaki adımları izler:
+Temel olarak, aşağıdaki adımları izleyeceksiniz:
 
-1. [Bir ActiveX denetimini ActiveX kapsayıcı projeye ekleyin](../mfc/inserting-a-control-into-a-control-container-application.md) galerisini kullanarak.
+1. Galeri'yi kullanarak [ActiveX kapsayıcı projesine activex denetimi ekleyin.](../mfc/inserting-a-control-into-a-control-container-application.md)
 
-1. [Üye değişkeni tanımlamak](../mfc/activex-control-containers-connecting-an-activex-control-to-a-member-variable.md) (veya başka bir form erişim) aynı tür olarak ActiveX denetimi sarmalayıcı sınıfı.
+1. ActiveX denetim sarıcı sınıfıyla aynı türden [bir üye değişken](../mfc/activex-control-containers-connecting-an-activex-control-to-a-member-variable.md) (veya başka bir erişim biçimi) tanımlayın.
 
-1. [ActiveX denetimi program](#_core_programming_the_activex_control) önceden tanımlanmış sarmalayıcı sınıfın üye işlevleri kullanarak.
+1. [Sarmalayıcı sınıfının](#_core_programming_the_activex_control) önceden tanımlanmış üye işlevlerini kullanarak ActiveX denetimini programla.
 
-Bu tartışma için ActiveX denetimi desteği (kapsayıcı olarak adlandırılır) ve iletişim tabanlı bir proje oluşturdunuz varsayılır. Dai örnek denetimi Dai, sonuçta elde edilen projeye eklenir.
+Bu tartışma için ActiveX denetim desteğine sahip iletişim tabanlı bir proje (Kapsayıcı adlı) oluşturduğunuzu varsayalım. Circ örnek kontrolü, Circ, ortaya çıkan projeye eklenecektir.
 
-(1. adım) projeye Dai denetimi ekledikten sonra Dai denetim örneği uygulamanın ana iletişim kutusuna yerleştirin.
+Circ denetimi projeye (adım 1) takıldıktan sonra, uygulamanın ana iletişim kutusuna Circ denetiminin bir örneğini ekleyin.
 
 ## <a name="procedures"></a>Yordamlar
 
-#### <a name="to-add-the-circ-control-to-the-dialog-template"></a>İletişim şablona Dai denetimi eklemek için
+#### <a name="to-add-the-circ-control-to-the-dialog-template"></a>İletişim şablonuna Circ denetimini eklemek için
 
-1. ActiveX denetimi kapsayıcısı projesine yükleyin. Bu örneğin `Container` proje.
+1. ActiveX kontrol konteyneri projesini yükleyin. Bu örnekte, `Container` projeyi kullanın.
 
-1. Kaynak Görünümü sekmesine tıklayın.
+1. Kaynak Görünümü sekmesini tıklatın.
 
-1. Açık **iletişim** klasör.
+1. **İletişim** klasörünü açın.
 
-1. Ana iletişim kutusu şablonu çift tıklayın. Bu örneğin **IDD_CONTAINER_DIALOG**.
+1. Ana iletişim kutusu şablonuna çift tıklayın. Bu örnekte, **IDD_CONTAINER_DIALOG.**
 
-1. Araç kutusu Dai denetim simgesine tıklayın.
+1. Araç Kutusu'ndaki Circ denetim simgesini tıklatın.
 
-1. Bir nokta Dai denetim eklemek için iletişim kutusuna tıklayın.
+1. Circ denetimini eklemek için iletişim kutusu içindeki bir noktayı tıklatın.
 
-1. Gelen **dosya** menüsünde seçin **Tümünü Kaydet** iletişim kutusunda şablon için tüm değişiklikleri kaydedin.
+1. **Dosya** menüsünden, iletişim kutusu şablonundaki tüm değişiklikleri kaydetmek için **Tümlerini Kaydet'i** seçin.
 
-## <a name="modifications-to-the-project"></a>Proje yapılan değişiklikler
+## <a name="modifications-to-the-project"></a>Projede Yapılan Değişiklikler
 
-Kapsayıcı uygulamanın erişim Dai denetimi etkinleştirmek için Visual C++ otomatik olarak sarmalayıcı sınıfı ekler (`CCirc`) uygulama dosyası (. CPP) kapsayıcı proje ile sarmalayıcı sınıfı üst bilgisi (. H) dosyası için iletişim kutusunun üst bilgi dosyası:
+Kapsayıcı uygulamasının Circ denetimine erişmesini sağlamak için Visual C++`CCirc`otomatik olarak sarıcı sınıfı ( ) uygulama dosyasını ekler (. ) CPP) Konteyner projesine ve sarmalayıcı sınıfı üstbilgisine (. H) iletişim kutusu üstbilgi dosyasına dosya:
 
 [!code-cpp[NVC_MFC_AxCont#1](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_1.h)]
 
-##  <a name="_core_the_wrapper_class_header_28h29_file"></a> Sarmalayıcı sınıf üst bilgisi (. H) dosyası
+## <a name="the-wrapper-class-header-h-file"></a><a name="_core_the_wrapper_class_header_28h29_file"></a>Sarıcı Sınıf Üstbilgisi (. H) Dosya
 
-Almak ve özelliklerini ayarlayın (ve yöntemlerini çağırmak için) Dai denetimi için `CCirc` sarmalayıcı sınıfı bildirimi kullanıma sunulan tüm yöntemleri ve özellikleri sağlar. Örnekte, bu bildirimleri CIRC. içinde bulunur. H Aşağıdaki örnek sınıf bölümüdür `CCirc` , arabirimleri ActiveX denetiminin tanımlar:
+Circ denetimi için özellikleri almak ve ayarlamak (ve `CCirc` yöntemleri çağırmak) için sarıcı sınıfı, açığa çıkan tüm yöntem ve özelliklerin bir bildirimini sağlar. Örnekte, bu bildirimler CIRC bulunur. H. Aşağıdaki örnek, sınıfın `CCirc` ActiveX denetiminin açıkta kalan arabirimlerini tanımlayan bölümüdür:
 
 [!code-cpp[NVC_MFC_AxCont#2](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_2.h)]
 [!code-cpp[NVC_MFC_AxCont#3](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_3.h)]
 
-Bu işlevler ardından diğer uygulamanın yordamları normal bir C++ sözdizimi kullanılarak çağrılabilir. Denetimin yöntemlere ve özelliklere erişmek için bu üye işlevini kullanma hakkında daha fazla bilgi için bkz [ActiveX denetimini programlama](#_core_programming_the_activex_control).
+Bu işlevler daha sonra normal C++ sözdizimi kullanılarak uygulamanın diğer yordamlarından çağrılabilir. Denetimin yöntemlerine ve özelliklerine erişmek için bu üye işlev kümesini kullanma hakkında daha fazla bilgi için [ActiveX denetimini programlama bölümüne](#_core_programming_the_activex_control)bakın.
 
-##  <a name="_core_member_variable_modifications_to_the_project"></a> Üye değişkeni değişiklikleri projeye
+## <a name="member-variable-modifications-to-the-project"></a><a name="_core_member_variable_modifications_to_the_project"></a>Projede Üye Değişken Değişiklikleri
 
-ActiveX denetimi projeye eklenir ve bir iletişim kutusu kapsayıcıda katıştırılmış sonra projenin diğer bölümlerinde tarafından erişilebilir. Erişim denetimi için en kolay yolu [bir üye değişkeni oluşturma](../mfc/activex-control-containers-connecting-an-activex-control-to-a-member-variable.md) iletişim sınıfının `CContainerDlg` (, yani adım 2) Visual C++ tarafından projeye eklenen sarmalayıcı sınıfı ile aynı türde. Ardından, katıştırılmış denetime herhangi bir zamanda erişmek için üye değişkeni kullanabilirsiniz.
+ActiveX denetimi projeye eklendikten ve bir iletişim kutusu kapsayıcısına katıştırıldıktan sonra, projenin diğer bölümleri tarafından erişilebilir. Denetime erişmesinin en kolay yolu, `CContainerDlg` Visual C++tarafından projeye eklenen sarıcı sınıfıyla aynı türde olan iletişim sınıfının (adım 2) bir üye [değişkeni oluşturmaktır.](../mfc/activex-control-containers-connecting-an-activex-control-to-a-member-variable.md) Daha sonra, katıştılmış denetime istediğiniz zaman erişmek için üye değişkeni kullanabilirsiniz.
 
-Zaman **üye değişkeni ekleme** iletişim kutusu ekler *m_circctl* üye değişkeni projeye de aşağıdaki satırları üstbilgi dosyasına ekler (. H), `CContainerDlg` sınıfı:
+Üye **Değişken ekle** iletişim kutusu projeye *m_circctl* üye değişkeni eklediğinde, üstbilgi dosyasına aşağıdaki satırları da ekler (. H) `CContainerDlg` Sınıfın:
 
 [!code-cpp[NVC_MFC_AxCont#4](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_4.h)]
 [!code-cpp[NVC_MFC_AxCont#5](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_5.h)]
 
-Ayrıca, bir çağrı **DDX_Control** otomatik olarak eklenir `CContainerDlg`'s uygulaması `DoDataExchange`:
+Buna ek olarak, **DDX_Control'a** yapılan `CContainerDlg`bir çağrı `DoDataExchange`otomatik olarak 'ın uygulamasına eklenir:
 
 [!code-cpp[NVC_MFC_AxCont#6](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_6.cpp)]
 
-##  <a name="_core_programming_the_activex_control"></a> ActiveX denetimi programlama
+## <a name="programming-the-activex-control"></a><a name="_core_programming_the_activex_control"></a>ActiveX Denetimini Programlama
 
-Bu noktada, iletişim şablonunuza ActiveX denetimi eklenir ve bir üye değişkeni oluşturulduğu. Artık, özellikleri ve yöntemleri gömülü denetimin erişmek için ortak C++ söz dizimini kullanabilirsiniz.
+Bu noktada, activex denetimini iletişim şablonunuza eklediniz ve bunun için bir üye değişken oluşturdunuz. Artık katıştılmış denetimin özelliklerine ve yöntemlerine erişmek için ortak C++ sözdizimini kullanabilirsiniz.
 
-Belirtildiği gibi (içinde [sarmalayıcı sınıfı üst bilgisi (. H) dosya](#_core_the_wrapper_class_header_28h29_file)), üst bilgi dosyası (. H) için `CCirc` bu büyük/küçük harf CIRC. içinde sarmalayıcı sınıfı H, almak ve herhangi bir kullanıma sunulan bir özelliğin değerini ayarlamak için kullanabileceğiniz üye işlevlerin listesini içerir. Üye işlevleri için kullanıma sunulan yöntemleri de mevcuttur.
+Belirtildiği gibi [(The Wrapper Class Header(. H) Dosya](#_core_the_wrapper_class_header_28h29_file)), üstbilgi dosyası (. H) `CCirc` sarma sınıfı için, bu durumda CIRC. H, herhangi bir açık özellik değerini almak ve ayarlamak için kullanabileceğiniz üye işlevlerin bir listesini içerir. Maruz kalan yöntemler için üye işlevler de mevcuttur.
 
-Denetimin özelliklerini değiştirmek için ortak bir konum `OnInitDialog` ana iletişim sınıfının üye işlevi. Yeni iletişim kutusu görünür ve içerikleri denetimlerinden birini de dahil olmak üzere, başlatmak için kullanılan önce bu işlev çağrılır.
+Denetimin özelliklerini değiştirmek için ortak bir `OnInitDialog` yer ana iletişim sınıfının üye işlevindedir. Bu işlev, iletişim kutusu görünmeden hemen önce çağrılır ve denetimlerinden herhangi biri de dahil olmak üzere içeriğini başlatmaya kullanılır.
 
-Aşağıdaki kod örneğinde *m_circctl* üye değişkeni, eklenen Dai denetimin açıklamalı alt yazı ve CircleShape özelliklerini değiştirmek için:
+Aşağıdaki kod örneği, katıştirilen Circ denetiminin Resim Yazısı ve CircleShape özelliklerini değiştirmek için *m_circctl* üye değişkenini kullanır:
 
 [!code-cpp[NVC_MFC_AxCont#7](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_7.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
+[ActiveX Kontrol Kapları](../mfc/activex-control-containers.md)

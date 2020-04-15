@@ -1,8 +1,9 @@
 ---
 title: _get_errno
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _get_errno
+- _o__get_errno
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -26,16 +28,16 @@ helpviewer_keywords:
 - errno global variable
 - _get_errno function
 ms.assetid: b3fd5ebc-f41b-4314-a2f4-2f2d79d6e740
-ms.openlocfilehash: 4d60f7ea7a36b4a8c4be678d26c0b0c59e5ec534
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f693655ecd1eb0122577446e39d4188703674419
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955968"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81345172"
 ---
 # <a name="_get_errno"></a>_get_errno
 
-Errno genel değişkeninin geçerli değerini alır.
+Errno global değişkeninin geçerli değerini alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,16 +49,18 @@ errno_t _get_errno(
 
 ### <a name="parameters"></a>Parametreler
 
-*pValue*<br/>
-**Errno** değişkeninin geçerli değeriyle doldurulacak bir tamsayıya yönelik bir işaretçi.
+*pDeğer*<br/>
+**Errno** değişkeninin geçerli değeriyle doldurulacak bir tamsayı işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır döndürür; hatada hata kodu. *PValue* **null**ise, geçersiz parametre işleyicisi [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+Başarılı olursa sıfır döndürür; hata bir hata kodu. *pValue* **NULL**ise, geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL için errno** ayarlar ve **EINVAL** döndürür. **EINVAL**
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Errno** 'un olası değerleri errno. h içinde tanımlanır. Ayrıca bkz. [errno sabitleri](../../c-runtime-library/errno-constants.md).
+**Errno'nun** olası değerleri Errno.h'de tanımlanmıştır. Ayrıca, [errno Sabitleri](../../c-runtime-library/errno-constants.md)bakın.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -86,11 +90,11 @@ fyi, ENOENT = 2
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı başlık|
+|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
 |-------------|---------------------|---------------------|
-|**_get_errno**|\<Stdlib. h >|\<errno. h >|
+|**_get_errno**|\<stdlib.h>|\<errno.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

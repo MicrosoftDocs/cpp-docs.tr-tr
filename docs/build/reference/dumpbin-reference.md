@@ -10,21 +10,21 @@ helpviewer_keywords:
 - COFF files, displaying information about
 - binary file dumper
 ms.assetid: 4bc06822-5330-44b4-8a3f-6180dfd41dfb
-ms.openlocfilehash: 45f6b9c71eaea93597e90de93c704d2ea260235e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ad421b0c90ad55126f69a899503d6a73184979f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273280"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81320528"
 ---
 # <a name="dumpbin-reference"></a>DUMPBIN Başvurusu
 
-Microsoft COFF ikili dosya Dumper (DUMPBIN. Exe dosyası) ikili dosyaları ortak nesne dosyası biçimi (COFF) ilgili bilgileri görüntüler. COFF nesnesi dosyaları, standart kitaplıkları COFF nesneleri, yürütülebilir dosyalar ve dinamik bağlantı kitaplıklarını (DLL'ler) incelemek için DUMPBIN kullanabilirsiniz.
+Microsoft COFF İkili Dosya Damperli (DUMPBIN. EXE) Ortak Nesne Dosya Biçimi (COFF) ikili dosyaları hakkındaki bilgileri görüntüler. COFF nesne dosyalarını, COFF nesnelerinin standart kitaplıklarını, çalıştırılabilir dosyaları ve dinamik bağlantı kitaplıklarını (DL'leri) incelemek için DUMPBIN'i kullanabilirsiniz.
 
 > [!NOTE]
->  Bu araç yalnızca Visual Studio komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.
+> Bu aracı yalnızca Visual Studio komut isteminden başlatabilirsiniz. Sistem komut isteminden veya Dosya Gezgini'nden başlatamazsınız.
 
-Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
+[/GL](gl-whole-program-optimization.md) derleyici seçeneği ile üretilen dosyalarda yalnızca [/HEADERS](headers.md) DUMPBIN seçeneği kullanılabilir.
 
 - [DUMPBIN komut satırı](dumpbin-command-line.md)
 
@@ -32,4 +32,4 @@ Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kulla
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ek MSVC derleme araçları](c-cpp-build-tools.md)
+[Ek MSVC Oluşturma Araçları](c-cpp-build-tools.md)

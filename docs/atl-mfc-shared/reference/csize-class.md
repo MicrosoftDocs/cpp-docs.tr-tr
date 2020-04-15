@@ -1,5 +1,5 @@
 ---
-title: CSize sınıfı
+title: CSize Sınıfı
 ms.date: 10/18/2018
 f1_keywords:
 - CSize
@@ -11,16 +11,16 @@ helpviewer_keywords:
 - dimensions
 - CSize class
 ms.assetid: fb2cf85a-0bc1-46f8-892b-309c108b52ae
-ms.openlocfilehash: 26bb43355f4dff3f77a905068bea83dd1ceaf79c
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 6d1b82e3f60428e3a778709dc69de983a7f886bf
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491649"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81317670"
 ---
-# <a name="csize-class"></a>CSize sınıfı
+# <a name="csize-class"></a>CSize Sınıfı
 
-Göreli bir koordinat veya konum uygulayan Windows [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına benzer.
+Göreceli bir koordinat veya konum uygulayan Windows [SIZE](/windows/win32/api/windef/ns-windef-size) yapısına benzer.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,29 +32,29 @@ class CSize : public tagSIZE
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSize:: CSize](#csize)|Bir `CSize` nesnesi oluşturur.|
+|[CSize::CSize](#csize)|Bir `CSize` nesne inşa eder.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSize:: operator-](#operator_-)|İki boyutu çıkartır.|
-|[CSize:: operator! =](#operator_neq)|Ve arasında `CSize` eşitsizlik olup olmadığını denetler.|
-|[CSize:: operator +](#operator_add)|İki boyut ekler.|
-|[CSize:: operator + =](#operator_add_eq)|Bir boyut `CSize`ekler.|
-|[CSize:: operator-=](#operator_-_eq)|Bir boyutu `CSize`çıkartır.|
-|[CSize:: operator = =](#operator_eq_eq)|Ve boyutu arasında `CSize` eşitlik olup olmadığını denetler.|
+|[CSize::operatör -](#operator_-)|İki boyutu çıkarır.|
+|[CSize::operatör !=](#operator_neq)|Bir boyut arasındaki `CSize` eşitsizliği denetler.|
+|[CSize::operatör +](#operator_add)|İki boyut ekler.|
+|[CSize::operatör +=](#operator_add_eq)|Bir boyut `CSize`ekler.|
+|[CSize::operatör -=](#operator_-_eq)|Bir boyutu `CSize`çıkarır.|
+|[CSize::işleç ==](#operator_eq_eq)|Bir boyut arasında `CSize` eşitlik için denetler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf `SIZE` yapıdan türetilir. Bu, bir `SIZE` ' a çağrı `CSize` yapan bir parametreye geçirebilmeniz ve `SIZE` yapının veri üyelerinin erişilebilir veri üyeleri `CSize`olması anlamına gelir.
+Bu sınıf `SIZE` yapıdan türetilmiştir. Bu, `CSize` bir parametrede bir `SIZE` parametreyi geçebileceğiniz ve yapının `SIZE` veri üyelerinin `CSize`erişilebilir veri üyeleri olduğu anlamına gelir.
 
-`cx` Ve `SIZE` (ve )`CSize`üyeleri geneldir. `cy` Ayrıca, `CSize` `SIZE` yapıyı işlemek için üye işlevleri uygular.
+(ve) `cx` `cy` `SIZE` `CSize`üyeleri kamuya açıktır. Buna ek `CSize` olarak, `SIZE` yapıişlemek için üye işlevleri uygular.
 
 > [!NOTE]
-> Paylaşılan yardımcı sınıflar (gibi `CSize`) hakkında daha fazla bilgi için bkz. [paylaşılan sınıflar](../../atl-mfc-shared/atl-mfc-shared-classes.md).
+> Paylaşılan yardımcı program sınıfları `CSize`hakkında daha fazla bilgi için (örneğin), [Bkz. Paylaşılan Sınıflar](../../atl-mfc-shared/atl-mfc-shared-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -64,11 +64,11 @@ Bu sınıf `SIZE` yapıdan türetilir. Bu, bir `SIZE` ' a çağrı `CSize` yapan
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atltypes. h
+**Üstbilgi:** atltypes.h
 
-##  <a name="csize"></a>CSize:: CSize
+## <a name="csizecsize"></a><a name="csize"></a>CSize::CSize
 
-Bir `CSize` nesnesi oluşturur.
+Bir `CSize` nesne inşa eder.
 
 ```
 CSize() throw();
@@ -80,32 +80,32 @@ CSize( DWORD dwSize) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*ınitcx*<br/>
-İçin üyesini ayarlar. `CSize` `cx`
+*initCX*<br/>
+Üyeyi `cx` . `CSize`
 
-*ınitcy*<br/>
-İçin üyesini ayarlar. `CSize` `cy`
+*initCY*<br/>
+Üyeyi `cy` . `CSize`
 
 *initSize*<br/>
-[](/windows/win32/api/windef/ns-windef-size) `CSize` Başlatmak için`CSize`kullanılan boyut yapısı veya nesne.
+[SIZE](/windows/win32/api/windef/ns-windef-size) yapısı `CSize` veya nesnesini `CSize`başlatmaiçin kullanılır.
 
-*ınitpt*<br/>
-[](/windows/win32/api/windef/ns-windef-point) `CPoint` Başlatmak için`CSize`kullanılan nokta yapısı veya nesnesi.
+*initPt*<br/>
+[Başlangıç](/windows/win32/api/windef/ns-windef-point) için `CPoint` kullanılan POINT `CSize`yapısı veya nesnesi.
 
 *dwSize*<br/>
-Başlatmak `CSize`için kullanılan DWORD. Düşük sıralı sözcük `cx` üyedir ve yüksek sıralı kelime `cy` üye olur.
+DWORD, ilk `CSize`olarak kullanılır. Düşük sıralı sözcük `cx` üyedir ve üst düzey `cy` sözcük üyedir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Herhangi bir bağımsız değişken verilmezse `cx` ve `cy` sıfıra başlatıluyorsa.
+Hiçbir bağımsız değişken `cx` verilirse ve `cy` sıfıra başlatIf.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#97](../../atl-mfc-shared/codesnippet/cpp/csize-class_1.cpp)]
 
-##  <a name="operator_eq_eq"></a>CSize:: operator = =
+## <a name="csizeoperator-"></a><a name="operator_eq_eq"></a>CSize::işleç ==
 
-İki boyut arasında eşitlik olup olmadığını denetler.
+İki boyut arasındaki eşitliği denetler.
 
 ```
 BOOL operator==(SIZE size) const throw();
@@ -113,15 +113,15 @@ BOOL operator==(SIZE size) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Boyutlar eşitse, diğerwize 0 olan sıfır dışı döndürür.
+Boyutlar eşitse sıfırsız döndürür, otherwize 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#98](../../atl-mfc-shared/codesnippet/cpp/csize-class_2.cpp)]
 
-##  <a name="operator_neq"></a>CSize:: operator! =
+## <a name="csizeoperator-"></a><a name="operator_neq"></a>CSize::operatör !=
 
-İki boyut arasında eşitsizlik olup olmadığını denetler.
+İki boyut arasındaki eşitsizliği denetler.
 
 ```
 BOOL operator!=(SIZE size) const throw();
@@ -129,15 +129,15 @@ BOOL operator!=(SIZE size) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Boyutlar eşit değilse sıfır dışında bir değer döndürür, aksi takdirde 0.
+Boyutlar eşit değilse sıfırsız döndürür, aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#99](../../atl-mfc-shared/codesnippet/cpp/csize-class_3.cpp)]
 
-##  <a name="operator_add_eq"></a>CSize:: operator + =
+## <a name="csizeoperator-"></a><a name="operator_add_eq"></a>CSize::operatör +=
 
-Buna `CSize`bir boyut ekler.
+Bu `CSize`bir boyut ekler.
 
 ```
 void operator+=(SIZE size) throw();
@@ -147,9 +147,9 @@ void operator+=(SIZE size) throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#100](../../atl-mfc-shared/codesnippet/cpp/csize-class_4.cpp)]
 
-##  <a name="operator_-_eq"></a>CSize:: operator-=
+## <a name="csizeoperator--"></a><a name="operator_-_eq"></a>CSize::operatör -=
 
-Bir boyutu bundan `CSize`çıkartır.
+Bu `CSize`bir boyut çıkarır.
 
 ```
 void operator-=(SIZE size) throw();
@@ -159,9 +159,9 @@ void operator-=(SIZE size) throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#101](../../atl-mfc-shared/codesnippet/cpp/csize-class_5.cpp)]
 
-##  <a name="operator_add"></a>CSize:: operator +
+## <a name="csizeoperator-"></a><a name="operator_add"></a>CSize::operatör +
 
-Bu işleçler, bu `CSize` değeri parametresinin değerine ekler.
+Bu işleçler bu `CSize` değeri parametre değerine ekler.
 
 ```
 CSize operator+(SIZE size) const throw();
@@ -171,27 +171,27 @@ CRect operator+(const RECT* lpRect) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrı işleçlerin aşağıdaki açıklamalarına bakın:
+Tek tek işleçlerin aşağıdaki açıklamalarına bakın:
 
-- **işleç + (** *Boyut* **)**
+- **operatör +(** *boyut* **)**
 
-  Bu işlem iki `CSize` değer ekler.
+  Bu işlem `CSize` iki değer ekler.
 
-- **işleç + (** *nokta* **)**
+- **işleç +(** *nokta)* **)**
 
-  Bu işlem bir [nokta](/previous-versions/dd162805\(v=vs.85\)) (veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) değerini bu değere kaydırır (ya da `CSize` bu değeri gider). `cy` `x` Bu `cx` değerin`CSize` ve üyeleri, değerin`POINT` ve veriüyelerineeklenir`y` . Bir [Boyut](/windows/win32/api/windef/ns-windef-size) parametresi alan [CPoint:: operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) sürümüne benzerdir.
+  Bu işlem, bir [POINT](/previous-versions/dd162805\(v=vs.85\)) (veya [CPoint)](../../atl-mfc-shared/reference/cpoint-class.md)değerini `CSize` bu değere göre dengeler (taşır). Bu `cx` `CSize` `cy` değerin üyeleri ve `POINT` üyeleri, `y` değerin veri üyelerine `x` eklenir. Bir [SIZE](/windows/win32/api/windef/ns-windef-size) parametresi alan [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) sürümüne benzer.
 
-- **operator + (** *lpRect* **)**
+- **operatör +(** *lpRect* **)**
 
-   Bu işlem, bu `CSize` değere göre bir [Rect](/previous-versions/dd162897\(v=vs.85\)) (veya [CRect](../../atl-mfc-shared/reference/crect-class.md)) değeri kaydırır (gider). `cy` `left`Bu `cx` değerinve`top`üyeleri değerin ,`right`, ve`bottom` veri üyelerine eklenir. `RECT` `CSize` Bir [Boyut](/windows/win32/api/windef/ns-windef-size) parametresi alan [CRect:: operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) sürümüne benzerdir.
+   Bu işlem, bir [RECT](/previous-versions/dd162897\(v=vs.85\)) (veya [CRect)](../../atl-mfc-shared/reference/crect-class.md)değerini `CSize` bu değerle dengeler (taşır). Bu `cx` `CSize` `cy` değerin üyeleri ve `left`üyeleri, `top` `right` `RECT` , `bottom` , ve değerin veri üyelerine eklenir. [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) bir [SIZE](/windows/win32/api/windef/ns-windef-size) parametresi alan sürümüne benzer.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#102](../../atl-mfc-shared/codesnippet/cpp/csize-class_6.cpp)]
 
-##  <a name="operator_-"></a>CSize:: operator-
+## <a name="csizeoperator--"></a><a name="operator_-"></a>CSize::operatör -
 
-Bu operatörlerin ilk üçü, bu `CSize` değeri parametre değerine çıkarır.
+Bu işleçlerin ilk üçü `CSize` bu değeri parametre nin değerine çıkarır.
 
 ```
 CSize operator-(SIZE size) const throw();
@@ -202,23 +202,23 @@ CSize operator-() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birli eksi olan dördüncü operatör, `CSize` değerin işaretini değiştirir. Ayrı işleçlerin aşağıdaki açıklamalarına bakın:
+Dördüncü işleç, unary eksi, `CSize` değerişareti değiştirir. Tek tek işleçlerin aşağıdaki açıklamalarına bakın:
 
-- **işleç-(** *Boyut* **)**
+- **işleç -(** *boyutu* **)**
 
-  Bu işlem iki `CSize` değeri çıkartır.
+  Bu işlem iki `CSize` değer çıkarır.
 
-- **işleç-(** *nokta* **)**
+- **işleç -(** *nokta)* **)**
 
-  Bu işlem, bu `CSize` değerin Toplamsal tersini yaparak bir [nokta](/previous-versions/dd162805\(v=vs.85\)) veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) değeri kaydırır (gider). `cy` Bu `cx` değerinve`y` veri üyelerinden çıkarılan`x` ve değeri.`POINT` `CSize` Bir [Boyut](/windows/win32/api/windef/ns-windef-size) parametresi alan [CPoint:: operator](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) sürümüne benzerdir.
+  Bu işlem, bir [POINT](/previous-versions/dd162805\(v=vs.85\)) veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) değerini bu `CSize` değerin tersi olan katkı maddesiyle dengeler (taşır). Bu `cx` `CSize` `cy` değerin `x` ve değerin `y` veri üyeleri `POINT` çıkarılır. Bir [SIZE](/windows/win32/api/windef/ns-windef-size) parametresi alır [CPoint:operator sürümüne](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) benzer.
 
-- **operator-(** *lpRect* **)**
+- **işleç -(** *lpRect* **)**
 
-  Bu işlem, bu `CSize` değerin Toplamsal tersini yaparak bir [Rect](/previous-versions/dd162897\(v=vs.85\)) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) değeri kaydırır (taşımalar). `cy` `right` `top` `left`Bu `cx` değerinveüyeleri`RECT` değerin,, ve`bottom` veri üyelerinden çıkarılır. `CSize` Bir [Boyut](/windows/win32/api/windef/ns-windef-size) parametresi alan [CRect:: operator](../../atl-mfc-shared/reference/crect-class.md#operator_-) sürümüne benzerdir.
+  Bu işlem, bir [RECT](/previous-versions/dd162897\(v=vs.85\)) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) değerini bu `CSize` değerin tersi olan katkı maddesi yle dengeler (taşır). Bu `cx` `CSize` `cy` değerin üyeleri ve `left` `top`üyeleri, `RECT` , `right`, `bottom` ve değerin veri üyelerinden çıkarılır. Bir [SIZE](/windows/win32/api/windef/ns-windef-size) parametresi alır [CRect sürümüne benzer::operator -](../../atl-mfc-shared/reference/crect-class.md#operator_-) .
 
-- **operator-()**
+- **işleç -()**
 
-  Bu işlem, bu `CSize` değerin Toplamsal tersini döndürür.
+  Bu işlem, bu `CSize` değerin ters katkı sını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -226,7 +226,7 @@ Birli eksi olan dördüncü operatör, `CSize` değerin işaretini değiştirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek MDI](../../overview/visual-cpp-samples.md)<br/>
+[MFC Örnek MDI](../../overview/visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CRect Sınıfı](../../atl-mfc-shared/reference/crect-class.md)<br/>
 [CPoint Sınıfı](../../atl-mfc-shared/reference/cpoint-class.md)

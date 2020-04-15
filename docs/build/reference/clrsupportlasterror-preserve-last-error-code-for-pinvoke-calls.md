@@ -7,16 +7,16 @@ helpviewer_keywords:
 - /CLRSUPPORTLASTERROR linker option
 - -CLRSUPPORTLASTERROR linker option
 ms.assetid: b7057990-4154-4b1d-9fc9-6236f7be7575
-ms.openlocfilehash: 64948d81759d415245e741bc6152d56bb35480d2
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 19930591c2d0406c68b1a408622a49c9e8b1d551
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988345"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81322271"
 ---
 # <a name="clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls"></a>/CLRSUPPORTLASTERROR (PInvoke Çağrıları için Son Hata Kodunu Koru)
 
-Varsayılan olarak açık olan **/CLRSUPPORTLASTERROR**, P/Invoke mekanizması aracılığıyla çağrılan işlevlerin son hata kodunu korur, bu da **/clr**ile derlenen koddan dll 'lerde yerel işlevleri çağırmanıza olanak sağlar.
+**/CLRSUPPORTLASTERROR**, varsayılan olarak, **/clr**ile derlenen koddan, DLLS'de yerel işlevleri aramanızı sağlayan P/Invoke mekanizması aracılığıyla çağrılan işlevlerin son hata kodunu korur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,55 +26,55 @@ Varsayılan olarak açık olan **/CLRSUPPORTLASTERROR**, P/Invoke mekanizması a
 
 ## <a name="remarks"></a>Açıklamalar
 
-Son hata kodunun korunması, performansı azaltır.  Son hata kodunu korumak için performans etkisi uygulanmasını istemiyorsanız, **/CLRSUPPORTLASTERROR: No**ile bağlayın.
+Son hata kodunun korunması, performansın düşmesi anlamına gelir.  Son hata kodunu korumanın performans etkisine maruz kalmak istemiyorsanız, **/CLRSUPPORTLASTERROR:NO**ile bağlantı kurun.
 
-Yalnızca sistem dll 'Lerinde işlevlere yönelik son hata kodunu koruyan **/CLRSUPPORTLASTERROR: SYSTEMDLL**ile bağlantı kurarak performans etkisini en aza indirmenize sağlayabilirsiniz.  Bir sistem DLL 'SI, aşağıdakilerden biri olarak tanımlanır:
+**/CLRSUPPORTLASTERROR:SYSTEMDLL**ile bağlantı yaparak performans etkisini en aza indirebilirsiniz, bu da yalnızca sistem DL'leri üzerindeki işlevler için son hata kodunu korur.  Bir sistem DLL aşağıdakilerden biri olarak tanımlanır:
 
 |||||
 |-|-|-|-|
-|ACLUI. DOSYASıNı|ACTIVED. DOSYASıNı|ADPTIF. DOSYASıNı|ADVAPI32. DOSYASıNı|
-|ASYCFILT. DOSYASıNı|AUTHZ. DOSYASıNı|AVICAP32. DOSYASıNı|AVIFIL32. DOSYASıNı|
-|Dolap. DOSYASıNı|CLUSAPı. DOSYASıNı|Comctl32. DOSYASıNı|COMDLG32. DOSYASıNı|
-|COMSVCS. DOSYASıNı|CREDUı. DOSYASıNı|Crypt32. DOSYASıNı|CRYPTNET. DOSYASıNı|
-|CRYPTUI. DOSYASıNı|D3D8THK. DOSYASıNı|DBGENG. DOSYASıNı|DBGHELP. DOSYASıNı|
-|DCIMAN32. DOSYASıNı|DNSAPI. DOSYASıNı|DSPROP. DOSYASıNı|DSUIEXT. DOSYASıNı|
-|GDI32. DOSYASıNı|GLU32. DOSYASıNı|H. DOSYASıNı|ICM32. DOSYASıNı|
-|Gereken Imagehlp. DOSYASıNı|IMM32. DOSYASıNı|IPHLPAPI. DOSYASıNı|IPROP. DOSYASıNı|
-|Kernel32. DOSYASıNı|KSUSER. DOSYASıNı|LOADPERF. DOSYASıNı|LZ32. DOSYASıNı|
-|MAPI32. DOSYASıNı|MGMTAPI. DOSYASıNı|MOBSYNC. DOSYASıNı|MPR. DOSYASıNı|
-|MPRAPı. DOSYASıNı|MQRT. DOSYASıNı|MSACM32. DOSYASıNı|Mscms. DOSYASıNı|
-|Defteri. DOSYASıNı|MSIMG32. DOSYASıNı|MSRATING. DOSYASıNı|Mstask. DOSYASıNı|
-|MSVFW32. DOSYASıNı|MSWSOCK. DOSYASıNı|MTXEX. DOSYASıNı|NDDEAPı. DOSYASıNı|
-|NETAPI32. DOSYASıNı|NPPTOOLS. DOSYASıNı|NTDSAPı. DOSYASıNı|NTDSBCLI. DOSYASıNı|
-|NTMSAPı. DOSYASıNı|Odbc32. DOSYASıNı|ODBCBCP. DOSYASıNı|Ole32. DOSYASıNı|
-|OLEACC. DOSYASıNı|Duy. DOSYASıNı|OLEDLG. DOSYASıNı|OPENGL32. DOSYASıNı|
-|PDH. DOSYASıNı|POWRPROF. DOSYASıNı|QOSNAME. DOSYASıNı|Sorgulayamadı. DOSYASıNı|
-|RASAPI32. DOSYASıNı|OYSDLG. DOSYASıNı|RASSAPı. DOSYASıNı|RESUTILS. DOSYASıNı|
-|RICHED20. DOSYASıNı|RPCNS4. DOSYASıNı|RPCRT4. DOSYASıNı|RTM. DOSYASıNı|
-|RTUTILS. DOSYASıNı|SCARDDLG. DOSYASıNı|Aracılığıyla secur32 kullanır. DOSYASıNı|SENSAPı. DOSYASıNı|
-|SETUPAPI. DOSYASıNı|Sfc. DOSYASıNı|Shell32. DOSYASıNı|SHFOLDER. DOSYASıNı|
-|SHLWAPI. DOSYASıNı|SISDK. DOSYASıNı|SNMPAPı. DOSYASıNı|SRCLIENT. DOSYASıNı|
-|I. DOSYASıNı|TAPI32. DOSYASıNı|Ğinden. DOSYASıNı|'Deki. DOSYASıNı|
-|Urlmon. DOSYASıNı|User32. DOSYASıNı|Userenv. DOSYASıNı|USP10. DOSYASıNı|
-|UXTHEME. DOSYASıNı|VDMDBG. DOSYASıNı|Sürüm. DOSYASıNı|WINFAX. DOSYASıNı|
-|WINHTTP. DOSYASıNı|Dosyasında. DOSYASıNı|WıNMM. DOSYASıNı|WINSCARD. DOSYASıNı|
-|WINTRUST. DOSYASıNı|WLDAP32. DOSYASıNı|WOW32. DOSYASıNı|WS2_32. DLL|
-|WSNMP32. DOSYASıNı|WSOCK32.DLL|WTSAPI32. DOSYASıNı|XOLEHLP. DOSYASıNı|
+|ACLUI, ne kadar. Dll|EtkİnLİkLER. Dll|ADPTIF. Dll|ADVAPI32. Dll|
+|ASYCFILT. Dll|AUTHZ'da. Dll|AVICAP32. Dll|AVIFIL32. Dll|
+|Kabine. Dll|CLUSAPI' ye. Dll|COMCTL32. Dll|COMDLG32. Dll|
+|COMSVCS. Dll|CREDUI, ne kadar çok şey var? Dll|CRYPT32' YE. Dll|CRYPTNET' E. Dll|
+|CRYPTUI. Dll|D3D8THK. Dll|DBGENG. Dll|DBGHELP. Dll|
+|DCIMAN32. Dll|DNSAPI' ya. Dll|DSPROP. Dll|DSUIEXT' den. Dll|
+|GDI32' ye göre. Dll|GLU32' ye göre. Dll|HLINK. Dll|ICM32' ye ait. Dll|
+|IMAGEHLP. Dll|IMM32' ye ait. Dll|IPHLPAPI' ya. Dll|IPROP' dan. Dll|
+|KERNEL32. Dll|KSUSER. Dll|LOADPERF. Dll|LZ32'de. Dll|
+|MAPI32' ye ait. Dll|MGMTAPI. Dll|MOBSYNC. Dll|Mpr. Dll|
+|MPRAPI' de. Dll|MQRT' dan. Dll|MSACM32' ye. Dll|MSCMS. Dll|
+|Msı. Dll|MSIMG32. Dll|MSRATING. Dll|MSTASK. Dll|
+|MSVFW32. Dll|MSWSOCK' A Mı AIT? Dll|MTXEX. Dll|NDDEAPI. Dll|
+|NETAPI32. Dll|NPPTOOLS. Dll|NTDSAPI' den. Dll|NTDSBCLI. Dll|
+|NTMSAPI' ye. Dll|ODBC32. Dll|ODBCBCP. Dll|OLE32. Dll|
+|OLEACC' da. Dll|OLEAUT32. Dll|OLEDLG, NE? Dll|OPENGL32' YE AIT. Dll|
+|Pdh. Dll|POWRPROF. Dll|QOSNAME. Dll|Sorgu. Dll|
+|RASAPI32. Dll|RASDLG, NE? Dll|RASSAPI, NE? Dll|RESUTILS. Dll|
+|RICHED20. Dll|RPCNS4' de. Dll|RPCRT4' e. Dll|Rtm. Dll|
+|RTUTILS, ne kadar çok şey var? Dll|SCARDDLG. Dll|SECUR32. Dll|SENSAPI. Dll|
+|Setupapı. Dll|Sfc. Dll|KABUK 32. Dll|SHFOLDER. Dll|
+|SHLWAPI. Dll|SISBKUP. Dll|SNMPAPI, ne oldu? Dll|SRCLIENT. Dll|
+|Şti. Dll|TAPI32. Dll|Trafik. Dll|Url. Dll|
+|URLMON' da. Dll|KULLANıCı 32. Dll|Userenv. Dll|USP10' u. Dll|
+|Uxtheme. Dll|VDMDBG' den. Dll|Sürüm. Dll|Winfax. Dll|
+|WINHTTP. Dll|Winınet. Dll|WINMM' DEN. Dll|WINSCARD' ı. Dll|
+|WINTRUST' ı. Dll|WLDAP32. Dll|VAY CANıNa32. Dll|WS2_32.DLL|
+|WSNMP32. Dll|WSOCK32.DLL|WTSAPI32. Dll|XOLEHLP. Dll|
 
 > [!NOTE]
->  Son hatanın korunması, CLR kodu tarafından tüketilen yönetilmeyen işlevlerde aynı modülde desteklenmez.
+> Son hatanın korunması, clr kodu tarafından tüketilen yönetilmeyen işlevler için aynı modülde desteklenmez.
 
-- Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](clr-common-language-runtime-compilation.md).
+- Daha fazla bilgi için bkz: [/clr (Ortak Dil Çalışma Zamanı Derlemesi).](clr-common-language-runtime-compilation.md)
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
 
-1. **Bağlayıcı** klasörüne tıklayın.
+1. **Bağlayıcı** klasörünü tıklatın.
 
-1. **Komut satırı** Özellik sayfasına tıklayın.
+1. Komut **Satırı** özelliği sayfasını tıklatın.
 
-1. Seçeneği **ek seçenekler** kutusuna yazın.
+1. Seçeneği **Ek Seçenekler** kutusuna yazın.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -82,7 +82,7 @@ Yalnızca sistem dll 'Lerinde işlevlere yönelik son hata kodunu koruyan **/CLR
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, son hatayı değiştiren bir içe aktarılmış işlevle yerel bir DLL tanımlar.
+Aşağıdaki örnek, son hatayı değiştiren bir dışa aktarılan işleve sahip yerel bir DLL tanımlar.
 
 ```cpp
 // CLRSUPPORTLASTERROR_dll.cpp
@@ -99,7 +99,7 @@ __declspec(dllexport) double MySqrt(__int64 n) {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, **/CLRSUPPORTLASTERROR**'in nasıl KULLANıLACAĞıNı gösteren dll 'yi kullanır.
+Aşağıdaki örnek , **/CLRSUPPORTLASTERROR'ın**nasıl kullanılacağını gösteren DLL'yi tüketir.
 
 ```cpp
 // CLRSUPPORTLASTERROR_client.cpp

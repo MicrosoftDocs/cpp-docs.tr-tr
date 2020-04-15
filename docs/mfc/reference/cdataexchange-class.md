@@ -1,5 +1,5 @@
 ---
-title: CDataExchange Class
+title: CDataExchange Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDataExchange
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - CDataExchange [MFC], m_bSaveAndValidate
 - CDataExchange [MFC], m_pDlgWnd
 ms.assetid: 84ed6113-325d-493e-a75d-223f03a992b8
-ms.openlocfilehash: 0e7a9d429acb1acd72942e5f10ac0815232ddc69
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 73319ad898bfebf4caf191954ebb3935bd4ebce9
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62253575"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81321959"
 ---
-# <a name="cdataexchange-class"></a>CDataExchange Class
+# <a name="cdataexchange-class"></a>CDataExchange Sınıfı
 
-İletişim kutusu veri değişimi (DDX) ve Microsoft Foundation sınıfları tarafından kullanılan iletişim kutusu veri doğrulama (DDV) yordamlarını destekler.
+Microsoft Foundation sınıfları tarafından kullanılan iletişim veri alışverişi (DDX) ve iletişim veri doğrulama (DDV) yordamlarını destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,33 +41,33 @@ class CDataExchange
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDataExchange::CDataExchange](#cdataexchange)|Oluşturur bir `CDataExchange` nesne.|
+|[CDataExchange::CDataExchange](#cdataexchange)|Bir `CDataExchange` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDataExchange::Fail](#fail)|Doğrulama başarısız olduğunda çağrılır. Odağı önceki denetim sıfırlar ve bir özel durum oluşturur.|
-|[CDataExchange::PrepareCtrl](#preparectrl)|Belirtilen denetim veri değişimi veya doğrulama için hazırlar. Nonedit denetimleri için kullanın.|
-|[CDataExchange::PrepareEditCtrl](#prepareeditctrl)|Belirtilen düzenleme denetiminin, veri değişimi veya doğrulama için hazırlar.|
-|[CDataExchange::PrepareOleCtrl](#prepareolectrl)|Belirtilen OLE denetim veri değişimi veya doğrulama için hazırlar. Nonedit denetimleri için kullanın.|
+|[CDataExchange::Fail](#fail)|Doğrulama başarısız olduğunda çağrılır. Önceki denetime odak sıfırlamave bir özel durum atar.|
+|[CDataExchange::PrepareCtrl](#preparectrl)|Veri alışverişi veya doğrulama için belirtilen denetimi hazırlar. Nonedit denetimleri için kullanın.|
+|[CDataExchange::PrepareEditCtrl](#prepareeditctrl)|Veri alışverişi veya doğrulama için belirtilen edit denetimini hazırlar.|
+|[CDataExchange::PrepareOleCtrl](#prepareolectrl)|Veri alışverişi veya doğrulama için belirtilen OLE denetimini hazırlar. Nonedit denetimleri için kullanın.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CDataExchange::m_bSaveAndValidate](#m_bsaveandvalidate)|DDX ve DDV yönü için bayrak.|
-|[CDataExchange::m_pDlgWnd](#m_pdlgwnd)|Burada veri değişimi iletişim kutusu ya da pencere gerçekleşir.|
+|[CDataExchange::m_pDlgWnd](#m_pdlgwnd)|Veri alışverişinin gerçekleştiği iletişim kutusu veya penceresi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDataExchange` bir temel sınıfa sahip değil.
+`CDataExchange`taban sınıfa sahip değildir.
 
-Bu sınıf, özel veri türleri veya denetimleri için veri değişimi rutinleri yazıyorsanız kullanın veya kendi veri doğrulama rutinleri yazıyorsanız. Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutuları](../../mfc/dialog-boxes.md).
+Özel veri türleri veya denetimler için veri alışverişi yordamları yazıyorsanız veya kendi veri doğrulama yordamlarınızı yazıyorsanız bu sınıfı kullanın. Kendi DDX ve DDV rutinlerinizi yazma hakkında daha fazla bilgi için [Teknik Not 26'ya](../../mfc/tn026-ddx-and-ddv-routines.md)bakın. DDX ve DDV'ye genel bir bakış için, [Bkz. İletişim Veri Alışverişi ve Doğrulama](../../mfc/dialog-data-exchange-and-validation.md) ve [İletişim Kutuları.](../../mfc/dialog-boxes.md)
 
-A `CDataExchange` nesnesi DDX ve DDV gerçekleştirilecek yerleştirmek için gereken bağlam bilgilerini sağlar. Bayrağı *m_bSaveAndValidate* FALSE olduğunda DDX veri üyelerinden iletişim denetimlerin ilk değerleri doldurmak için kullanılır. Bayrağı *m_bSaveAndValidate* DDX veri üyeleri ve DDV veri değerleri doğrulaması için kullanıldığında halinde iletişim kutusu denetimleri geçerli değerlerini ayarlamak için kullanılan zaman true'dur. DDV doğrulama başarısız olursa DDV yordam giriş hatayı açıklayan bir ileti kutusu görüntüler. DDV yordamı ardından çağırın `Fail` odağı sorunlu denetime sıfırlama ve doğrulama işlemi durdurmak için bir özel durum.
+Bir `CDataExchange` nesne, DDX ve DDV'nin gerçekleşmesi için gereken bağlam bilgilerini sağlar. DDX, veri üyelerinden gelen iletişim denetimlerinin ilk değerlerini doldurmak için kullanıldığında *m_bSaveAndValidate* bayrak FALSE'dur. DDX, iletişim denetimlerinin geçerli değerlerini veri üyelerine ayarlamak için kullanıldığında ve DDV veri değerlerini doğrulamak için kullanıldığında m_bSaveAndValidate doğrudur. *m_bSaveAndValidate* DDV doğrulama başarısız olursa, DDV yordamı giriş hatasını açıklayan bir ileti kutusu görüntüler. DDV yordamı daha `Fail` sonra rahatsız edici denetime odak sıfırlamak ve doğrulama işlemini durdurmak için bir özel durum atmak için çağırır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -75,11 +75,11 @@ A `CDataExchange` nesnesi DDX ve DDV gerçekleştirilecek yerleştirmek için ge
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** afxwin.h
 
-##  <a name="cdataexchange"></a>  CDataExchange::CDataExchange
+## <a name="cdataexchangecdataexchange"></a><a name="cdataexchange"></a>CDataExchange::CDataExchange
 
-Oluşturmak için bu üye işlevi çağrısı bir `CDataExchange` nesne.
+Bir `CDataExchange` nesne oluşturmak için bu üye işlevi çağırın.
 
 ```
 CDataExchange(
@@ -90,22 +90,22 @@ CDataExchange(
 ### <a name="parameters"></a>Parametreler
 
 *pDlgWnd*<br/>
-Denetimi içeren üst penceresine bir işaretçi. Genellikle bu, bir [CDialog](../../mfc/reference/cdialog-class.md)-türetilmiş bir nesneye.
+Denetimi içeren ana pencereiçin bir işaretçi. Genellikle bu [CDialog](../../mfc/reference/cdialog-class.md)türetilmiş bir nesnedir.
 
 *bSaveAndValidate*<br/>
-TRUE ise, bu nesne verileri doğrular, sonra veri üyeleri denetimlerden yazar. FALSE ise, bu nesne üyelerinden verileri denetimlere taşıyın.
+TRUE ise, bu nesne verileri doğrular ve denetimlerden verileri üyelere yazar. FALSE ise, bu nesne verileri üyelerden denetimlere taşır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturmak bir `CDataExchange` nesne, pencerenin geçirmek için veri değişimi nesnede ek bilgi depolamak için kendiniz [CWnd::DoDataExchange](../../mfc/reference/cwnd-class.md#dodataexchange) üye işlevi.
+Pencerenizin `CDataExchange` [CWnd::DoDataExchange](../../mfc/reference/cwnd-class.md#dodataexchange) üye işlevine geçmek için veri alışverişi nesnesinde fazladan bilgi depolamak için kendiniz bir nesne oluşturun.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCControlLadenDialog#70](../../mfc/codesnippet/cpp/cdataexchange-class_1.cpp)]
 
-##  <a name="fail"></a>  CDataExchange::Fail
+## <a name="cdataexchangefail"></a><a name="fail"></a>CDataExchange::Fail
 
-Framework, bir iletişim kutusu veri doğrulama (DDV) işlemi başarısız olduğunda bu üye işlevini çağırır.
+Bir iletişim veri doğrulama (DDV) işlemi başarısız olduğunda çerçeve bu üye işlevi çağırır.
 
 ```
 void Fail();
@@ -113,15 +113,15 @@ void Fail();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Fail` odak ve seçim (geri yüklemek için bir denetim varsa), doğrulama başarısız oldu denetime geri yükler. `Fail` ardından türünde bir özel durum oluşturduğunda [CUserException](../../mfc/reference/cuserexception-class.md) doğrulama işlemini durdurmak için. Özel durum görüntülenecek hatayı açıklayan bir ileti kutusu neden olur. DDV doğrulama başarısız olduktan sonra kullanıcı sorunlu denetiminde verileri yeniden girebilirsiniz.
+`Fail`odağı ve seçimi doğrulama başarısız olan denetime geri yükler (geri yükleme denetimi varsa). `Fail`ardından doğrulama işlemini durdurmak için [CUserException](../../mfc/reference/cuserexception-class.md) türünden bir özel durum oluşturur. Özel durum, görüntülenecek hatayı açıklayan bir ileti kutusuna neden olur. DDV doğrulama başarısız olduktan sonra, kullanıcı rahatsız edici denetimverileri yeniden girebilirsiniz.
 
-Özel DDV rutinleri, implementors çağırabilir `Fail` gelen bir doğrulama başarısız olduğunda, yordamlar.
+Özel DDV yordamlarının uygulayıcıları, `Fail` doğrulama başarısız olduğunda rutinlerinden arayabilirler.
 
-Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutusu konuları](../../mfc/dialog-boxes.md).
+Kendi DDX ve DDV rutinlerinizi yazma hakkında daha fazla bilgi için [Teknik Not 26'ya](../../mfc/tn026-ddx-and-ddv-routines.md)bakın. DDX ve DDV'ye genel bir bakış için, [Bkz. İletişim Veri Alışverişi ve Doğrulama](../../mfc/dialog-data-exchange-and-validation.md) ve [İletişim Kutusu Konuları.](../../mfc/dialog-boxes.md)
 
-##  <a name="m_bsaveandvalidate"></a>  CDataExchange::m_bSaveAndValidate
+## <a name="cdataexchangem_bsaveandvalidate"></a><a name="m_bsaveandvalidate"></a>CDataExchange::m_bSaveAndValidate
 
-Bu bayrak, bir iletişim kutusu veri değişimi (DDX) işleminin yönünü belirtir.
+Bu bayrak, bir iletişim veri alışverişi (DDX) işleminin yönünü gösterir.
 
 ```
 BOOL m_bSaveAndValidate;
@@ -129,15 +129,15 @@ BOOL m_bSaveAndValidate;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bayrağı sıfır olmayan, `CDataExchange` nesne, kullanıcı denetimleri düzenledikten sonra verileri iletişim sınıf veri üyeleri için iletişim kutusu denetimleri taşımak için kullanılıyor. İletişim kutusu sınıfı veri üyelerini denetimlerden iletişim başlatmak için nesne kullanılıyorsa bayrağı sıfırdır.
+`CDataExchange` Kullanıcı denetimleri yaptıktan sonra iletişim denetimlerinden iletişim sınıfı veri üyelerine veri taşımak için kullanılıyorsa, bayrak sıfır değildir. Nesne iletişim sınıfı veri üyelerinden iletişim denetimleri başlatmaiçin kullanılıyorsa, bayrak sıfırdır.
 
-Ayrıca iletişim verisi doğrulama (DDV) sırasında sıfır olmayan bir göstergedir.
+İletim veri doğrulaması (DDV) sırasında bayrak da sıfırdeğildir.
 
-Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutusu konuları](../../mfc/dialog-boxes.md).
+Kendi DDX ve DDV rutinlerinizi yazma hakkında daha fazla bilgi için [Teknik Not 26'ya](../../mfc/tn026-ddx-and-ddv-routines.md)bakın. DDX ve DDV'ye genel bir bakış için, [Bkz. İletişim Veri Alışverişi ve Doğrulama](../../mfc/dialog-data-exchange-and-validation.md) ve [İletişim Kutusu Konuları.](../../mfc/dialog-boxes.md)
 
-##  <a name="m_pdlgwnd"></a>  CDataExchange::m_pDlgWnd
+## <a name="cdataexchangem_pdlgwnd"></a><a name="m_pdlgwnd"></a>CDataExchange::m_pDlgWnd
 
-Bir işaretçi içeren [CWnd](../../mfc/reference/cwnd-class.md) nesnesi için hangi iletişim kutusu veri değişimi (DDX) veya doğrulama (DDV) sürüyor yerleştir.
+[CWnd](../../mfc/reference/cwnd-class.md) nesnesine iletişim veri alışverişi (DDX) veya doğrulama (DDV) için bir işaretçi içerir.
 
 ```
 CWnd* m_pDlgWnd;
@@ -145,13 +145,13 @@ CWnd* m_pDlgWnd;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle bu nesne olduğu bir [CDialog](../../mfc/reference/cdialog-class.md) nesne. İmplementors özel DDX veya DDV rutinleri, bu işaretçi üzerinde çalıştıkları denetimleri içeren iletişim kutusu penceresine erişim sağlamak için kullanabilirsiniz.
+Bu nesne genellikle bir [CDialog nesnesidir.](../../mfc/reference/cdialog-class.md) Özel DDX veya DDV yordamlarının uygulayıcıları, üzerinde çalıştıkları denetimleri içeren iletişim penceresine erişmek için bu işaretçiyi kullanabilir.
 
-Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutusu konuları](../../mfc/dialog-boxes.md).
+Kendi DDX ve DDV rutinlerinizi yazma hakkında daha fazla bilgi için [Teknik Not 26'ya](../../mfc/tn026-ddx-and-ddv-routines.md)bakın. DDX ve DDV'ye genel bir bakış için, [Bkz. İletişim Veri Alışverişi ve Doğrulama](../../mfc/dialog-data-exchange-and-validation.md) ve [İletişim Kutusu Konuları.](../../mfc/dialog-boxes.md)
 
-##  <a name="preparectrl"></a>  CDataExchange::PrepareCtrl
+## <a name="cdataexchangepreparectrl"></a><a name="preparectrl"></a>CDataExchange::PrepareCtrl
 
-Framework'te iletişim kutusu veri değişimi (DDX) ve doğrulama (DDV) için belirtilen denetim hazırlamak için bu üye işlevini çağırır.
+Çerçeve, iletişim veri alışverişi (DDX) ve doğrulama (DDV) için belirtilen denetimi hazırlamak için bu üye işlevi çağırır.
 
 ```
 HWND PrepareCtrl(int nIDC);
@@ -160,25 +160,25 @@ HWND PrepareCtrl(int nIDC);
 ### <a name="parameters"></a>Parametreler
 
 *nIDC*<br/>
-DDX veya DDV için hazırlıklı olmak için denetimin kimliği.
+DDX veya DDV için hazırlanacak denetimin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-HWND denetimin DDX veya DDV için hazırlanıyor.
+Kontrolün HWND'si DDX veya DDV için hazırlanıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanma [PrepareEditCtrl](#prepareeditctrl) düzenleme denetimlerinde; diğer tüm denetimler için bu üye işlevini kullanın.
+Denetimleri yerine [PrepareEditCtrl'i](#prepareeditctrl) kullanın; diğer tüm denetimler için bu üye işlevi kullanın.
 
-Hazırlama oluşur, denetimin HWND depolayabilen `CDataExchange` sınıfı. Çerçeve odağı önceden odaklı denetimin DDX veya DDV bir arıza olması durumunda geri yüklemek için bu tutamacı kullanır.
+Hazırlık, kontrolün HWND'sinin sınıfta `CDataExchange` depolanmasından oluşur. Çerçeve, bir DDX veya DDV hatası durumunda odağı daha önce odaklanmış denetime geri yüklemek için bu tutamacı kullanır.
 
-Özel DDX veya DDV rutinleri, implementors çağırmalıdır `PrepareCtrl` , bunlar DDX aracılığıyla veri değişimi veya DDV aracılığıyla verileri doğrulamak için tüm düzen olmayan denetimler için.
+Özel DDX veya DDV yordamlarının uygulayıcıları, DDX üzerinden veri alışverişi yaptıkları veya DDV üzerinden veri doğrulama yaptıkları tüm edit olmayan denetimleri çağırmalıdır. `PrepareCtrl`
 
-Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutusu konuları](../../mfc/dialog-boxes.md).
+Kendi DDX ve DDV rutinlerinizi yazma hakkında daha fazla bilgi için [Teknik Not 26'ya](../../mfc/tn026-ddx-and-ddv-routines.md)bakın. DDX ve DDV'ye genel bir bakış için, [Bkz. İletişim Veri Alışverişi ve Doğrulama](../../mfc/dialog-data-exchange-and-validation.md) ve [İletişim Kutusu Konuları.](../../mfc/dialog-boxes.md)
 
-##  <a name="prepareeditctrl"></a>  CDataExchange::PrepareEditCtrl
+## <a name="cdataexchangeprepareeditctrl"></a><a name="prepareeditctrl"></a>CDataExchange::PrepareEditCtrl
 
-Framework'te iletişim kutusu veri değişimi (DDX) ve doğrulama (DDV) için belirtilen düzenleme denetiminin hazırlamak için bu üye işlevini çağırır.
+Çerçeve, iletişim veri alışverişi (DDX) ve doğrulama (DDV) için belirtilen edit denetimini hazırlamak için bu üye işlevi çağırır.
 
 ```
 HWND PrepareEditCtrl(int nIDC);
@@ -187,25 +187,25 @@ HWND PrepareEditCtrl(int nIDC);
 ### <a name="parameters"></a>Parametreler
 
 *nIDC*<br/>
-DDX veya DDV için hazırlanması düzenleme denetiminin kimliği.
+DDX veya DDV için hazırlanacak edit denetiminin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-HWND düzenleme denetiminin DDX veya DDV için hazırlanıyor.
+DDX veya DDV için hazırlanan edit denetiminin HWND'si.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım [PrepareCtrl](#preparectrl) bunun yerine tüm düzen olmayan denetimler için.
+Tüm olmayan denetimler için [PrepareCtrl'ı](#preparectrl) kullanın.
 
-Hazırlama iki şey oluşur. İlk olarak, `PrepareEditCtrl` denetimin HWND içinde depolar `CDataExchange` sınıfı. Çerçeve odağı önceden odaklı denetimin DDX veya DDV bir arıza olması durumunda geri yüklemek için bu tutamacı kullanır. İkinci olarak, `PrepareEditCtrl` bir bayrak ayarlar `CDataExchange` göstermek için sınıf verisini değiştirilen veya doğrulanmış bir düzenleme denetimi olan denetim.
+Hazırlık iki şeyden oluşur. İlk `PrepareEditCtrl` olarak, denetimin HWND'sini sınıfta saklar. `CDataExchange` Çerçeve, bir DDX veya DDV hatası durumunda odağı daha önce odaklanmış denetime geri yüklemek için bu tutamacı kullanır. İkinci `PrepareEditCtrl` olarak, verileri `CDataExchange` değiştirilen veya doğrulanan denetimin bir denetim denetimi olduğunu belirtmek için sınıfta bir bayrak ayarlar.
 
-Özel DDX veya DDV rutinleri, implementors çağırmalıdır `PrepareEditCtrl` tüm kendisi için bunlar DDX aracılığıyla veri değişimi veya DDV aracılığıyla veri doğrulama denetimleri düzenlemek için.
+Özel DDX veya DDV yordamlarının uygulayıcıları, DDX üzerinden veri alışverişi yaptıkları veya DDV üzerinden verileri doğruladıkları tüm edit denetimlerini çağırmalıdır. `PrepareEditCtrl`
 
-Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutusu konuları](../../mfc/dialog-boxes.md).
+Kendi DDX ve DDV rutinlerinizi yazma hakkında daha fazla bilgi için [Teknik Not 26'ya](../../mfc/tn026-ddx-and-ddv-routines.md)bakın. DDX ve DDV'ye genel bir bakış için, [Bkz. İletişim Veri Alışverişi ve Doğrulama](../../mfc/dialog-data-exchange-and-validation.md) ve [İletişim Kutusu Konuları.](../../mfc/dialog-boxes.md)
 
-##  <a name="prepareolectrl"></a>  CDataExchange::PrepareOleCtrl
+## <a name="cdataexchangeprepareolectrl"></a><a name="prepareolectrl"></a>CDataExchange::PrepareOleCtrl
 
-Framework'te iletişim kutusu veri değişimi (DDX) ve doğrulama (DDV) için belirtilen OLE denetim hazırlamak için bu üye işlevini çağırır.
+Çerçeve, iletişim veri alışverişi (DDX) ve doğrulama (DDV) için belirtilen OLE denetimini hazırlamak için bu üye işlevi çağırır.
 
 ```
 COleControlSite* PrepareOleCtrl(int nIDC);
@@ -214,23 +214,23 @@ COleControlSite* PrepareOleCtrl(int nIDC);
 ### <a name="parameters"></a>Parametreler
 
 *nIDC*<br/>
-DDX veya DDV için hazırlanması OLE denetiminin kimliği.
+DDX veya DDV için hazırlanacak OLE denetiminin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-OLE denetim site için bir işaretçi.
+OLE denetim sitesine bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım [PrepareEditCtrl](#prepareeditctrl) yerine düzenleme denetimleri için veya [PrepareCtrl](#preparectrl) diğer tüm OLE olmayan denetimler için.
+Bunun [yerine](#prepareeditctrl) denetimleri veya Diğer OLE olmayan tüm denetimler için [PrepareCtrl'yi](#preparectrl) kullanın.
 
-Özel DDX veya DDV rutinleri, implementors çağırmalıdır `PrepareOleCtrl` tüm OLE denetimleri için bunlar DDX aracılığıyla veri değişimi veya DDV aracılığıyla verileri doğrulamak için.
+Özel DDX veya DDV yordamlarının uygulayıcıları, DDX üzerinden veri alışverişi yaptıkları veya DDV üzerinden verileri doğruladıkları tüm OLE denetimlerini aramalıdır. `PrepareOleCtrl`
 
-Kendi DDX ve DDV rutinleri yazma ile ilgili daha fazla bilgi için bkz: [Teknik Not 26](../../mfc/tn026-ddx-and-ddv-routines.md). DDX ve DDV genel bakış için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md) ve [iletişim kutusu konuları](../../mfc/dialog-boxes.md).
+Kendi DDX ve DDV rutinlerinizi yazma hakkında daha fazla bilgi için [Teknik Not 26'ya](../../mfc/tn026-ddx-and-ddv-routines.md)bakın. DDX ve DDV'ye genel bir bakış için, [Bkz. İletişim Veri Alışverişi ve Doğrulama](../../mfc/dialog-data-exchange-and-validation.md) ve [İletişim Kutusu Konuları.](../../mfc/dialog-boxes.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek VIEWEX](../../overview/visual-cpp-samples.md)<br/>
+[MFC Örnek VIEWEX](../../overview/visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CWnd::DoDataExchange](../../mfc/reference/cwnd-class.md#dodataexchange)<br/>
 [CWnd::UpdateData](../../mfc/reference/cwnd-class.md#updatedata)

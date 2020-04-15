@@ -1,41 +1,41 @@
 ---
-title: MSVC derleyici komut satırı sözdizimi
+title: MSVC Derleyicisi Komut Satırı Söz Dizimi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - syntax, CL compiler command line
 - cl.exe compiler, command-line syntax
 ms.assetid: acba2c1c-0803-4a3a-af25-63e849b930a2
-ms.openlocfilehash: 5cee76d5c053dbcfef33a191dc38a958338e4a82
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a56474b537d78a3d0bea8a74d9082007cd2e295
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294349"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81320542"
 ---
 # <a name="compiler-command-line-syntax"></a>Derleyici Komut Satırı Sözdizimi
 
-CL komut satırında aşağıdaki sözdizimini kullanır:
+CL komut satırı aşağıdaki sözdizimini kullanır:
 
 ```
 CL [option...] file... [option | file]... [lib...] [@command-file] [/link link-opt...]
 ```
 
-CL komut girişine aşağıdaki tabloda açıklanmaktadır.
+Aşağıdaki tabloda CL komutuna giriş açıklanmaktadır.
 
-|Giriş|Açıklama|
+|Girdi|Anlamı|
 |-----------|-------------|
-|*Seçeneği*|Bir veya daha fazla [CL seçenekleri](compiler-options.md). Tüm seçenekleri tüm belirtilen kaynak dosyaları için geçerli olduğunu unutmayın. Eğik çizgi (/) veya tire (-) tarafından belirtilen seçenekler. Seçenek ve bağımsız değişkenler boşluk izin verilip verilmediğini seçeneği bir bağımsız değişken, seçeneğin açıklama belgeleri sürerse. (Hariç, / Help seçeneği) seçeneği adları büyük/küçük harfe duyarlıdır. Bkz: [CL seçenekleri sırası](order-of-cl-options.md) daha fazla bilgi için.|
-|`file`|Bir veya daha fazla kaynak dosyaları, .obj dosyaları veya kitaplığı adı. CL kaynak dosyaları derler ve .obj dosyaları ve kitaplıkları adlarını bağlayıcıya iletir. Bkz: [CL dosya adı sözdizimi](cl-filename-syntax.md) daha fazla bilgi için.|
-|*lib*|Bir veya daha fazla kitaplık adları. CL bu adlar bağlayıcıya iletir.|
-|*komut dosyası*|Birden fazla seçeneği ve dosya adı içeren bir dosya. Bkz: [CL komut dosyaları](cl-command-files.md) daha fazla bilgi için.|
-|*bağlantı-opt*|Bir veya daha fazla [MSVC bağlayıcı seçenekleri](linker-options.md). Bu seçenekler, CL bağlayıcıya iletir.|
+|*Seçeneği*|Bir veya daha fazla [CL seçeneği.](compiler-options.md) Tüm seçeneklerin tüm belirtilen kaynak dosyalariçin geçerli olduğunu unutmayın. Seçenekler, ileri eğik çizgi (/) veya tire (-) tarafından belirtilir. Bir seçenek bir bağımsız değişken alırsa, seçeneğin açıklaması seçenek ve bağımsız değişkenler arasında bir alana izin verilip verilmediğini belgeler. Seçenek adları (/HELP seçeneği hariç) büyük/küçük harf duyarlıdır. Daha fazla bilgi için [CL Seçenekleri Sırası'na](order-of-cl-options.md) bakın.|
+|`file`|Bir veya daha fazla kaynak dosyanın, .obj dosyasının veya kitaplıkların adı. CL kaynak dosyaları derler ve .obj dosyalarının ve kitaplıklarının adlarını bağlayıcıya geçirir. Daha fazla bilgi için [CL Dosya Adı Sözdizimine](cl-filename-syntax.md) bakın.|
+|*Lib*|Bir veya daha fazla kitaplık adı. CL bu adları bağlayıcıya geçirir.|
+|*komut dosyası*|Birden çok seçenek ve dosya adı içeren bir dosya. Daha fazla bilgi için [CL Komut Dosyaları'na](cl-command-files.md) bakın.|
+|*bağlantı-opt*|Bir veya daha fazla [MSVC Bağlantı Seçeneği.](linker-options.md) CL bu seçenekleri bağlayıcıya geçirir.|
 
-Komut satırında karakter sayısı 1024, işletim sistemi tarafından dikte sınırı aşmadığından sürece herhangi bir sayıda seçenekleri, dosya adları ve kitaplık adlarını belirtebilirsiniz.
+Komut satırındaki karakter sayısı işletim sistemi tarafından dikte edilen sınır olan 1024'ü geçmediği sürece, istediğiniz sayıda seçenek, dosya adı ve kitaplık adı belirtebilirsiniz.
 
-Cl.exe dönüş değeri hakkında daha fazla bilgi için bkz. [cl.exe dönüş değeri](return-value-of-cl-exe.md) .
+cl.exe'nin geri dönüş değeri hakkında bilgi için [cl.exe'nin İade Değeri'ne](return-value-of-cl-exe.md) bakın.
 
 > [!NOTE]
->  Komut satırı giriş sınırını 1024 karakter gelecekteki Windows sürümlerinde aynı kalması garanti edilmez.
+> 1024 karakterin komut satırı giriş sınırının, Windows'un gelecekteki sürümlerinde aynı kalacağı garanti edilmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
