@@ -1,44 +1,44 @@
 ---
-title: 'TN070: MFC pencere sınıfı adları'
+title: 'TN070: MFC Pencere Sınıfı Adları'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - window class names [MFC]
 - TN070 [MFC]
 ms.assetid: 90617912-dd58-4a7c-9082-ced71736d7cd
-ms.openlocfilehash: 1d9b5de07bcc2545df6294557d1ac9f9d29e856c
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ad43f5af5d2e90cb5fc2bc90f0909c2b495b4a4c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513347"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373494"
 ---
-# <a name="tn070-mfc-window-class-names"></a>TN070: MFC pencere sınıfı adları
+# <a name="tn070-mfc-window-class-names"></a>TN070: MFC Pencere Sınıfı Adları
 
 > [!NOTE]
->  Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
+> Aşağıdaki teknik not, çevrimiçi belgelere ilk olarak eklenmediğinden beri güncelleştirilemedi. Sonuç olarak, bazı yordamlar ve konular güncel veya yanlış olabilir. En son bilgiler için, çevrimiçi belge dizini ilgi alanı için arama nız önerilir.
 
-MFC Windows, pencerenin özelliklerini yansıtan dinamik olarak oluşturulmuş bir sınıf adı kullanır. MFC, uygulama tarafından oluşturulan çerçeve pencereleri, görünümler ve açılan pencereler için dinamik olarak sınıf adları oluşturur. Bir MFC uygulaması tarafından oluşturulan iletişim kutuları ve denetimler, söz konusu pencerenin sınıfının Windows tarafından sağlanan adına sahiptir.
+MFC pencereleri, pencerenin özelliklerini yansıtan dinamik olarak oluşturulmuş bir sınıf adı kullanır. MFC, uygulama tarafından üretilen çerçeve pencereleri, görünümler ve açılır pencereler için sınıf adlarını dinamik olarak oluşturur. Bir MFC uygulaması tarafından üretilen iletişim kutuları ve denetimleri, söz konusu pencere sınıfı için Windows tarafından sağlanan ada sahiptir.
 
-Kendi pencere sınıfınızı kaydederek ve bunu [ön](../mfc/reference/cwnd-class.md#precreatewindow)planda bir geçersiz kılmada kullanarak dinamik olarak sağlanmış sınıf adını değiştirebilirsiniz. MFC tarafından sağlanan sınıf adları aşağıdaki iki formdan birine uyum ister:
+Dinamik olarak sağlanan sınıf adını kendi pencere sınıfınızı kaydederek ve [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow)geçersiz kılında kullanarak değiştirebilirsiniz. MFC tarafından sağlanan sınıf adları aşağıdaki iki formdan birine uyar:
 
 ```
 Afx:%x:%x
 Afx:%x:%x:%x:%x:%x
 ```
 
-`%x` Karakterlerin yerini alan onaltılık basamaklar [WNDCLASS](/windows/win32/api/winuser/ns-winuser-wndclassw) yapısındaki verilerden doldurulur. MFC bu tekniği, aynı C++ **WNDCLASS** yapılarını gerektiren birden çok sınıfın aynı kayıtlı pencere sınıfını paylaşabilmesi için kullanır. Çoğu basit Win32 uygulamasının aksine, MFC uygulamalarında yalnızca bir **WndProc**vardır; bu sayede, zaman ve bellek tasarrufu sağlamak Için **WNDCLASS** yapılarını kolayca paylaşabilirsiniz. Yukarıda gösterilen `%x` karakterlerin değiştirilebilen değerleri şunlardır:
+`%x` Karakterlerin yerini alan hex basamakları [WNDCLASS](/windows/win32/api/winuser/ns-winuser-wndclassw) yapısındaki verilerden doldurulur. MFC, aynı **WNDCLASS** yapıları gerektiren birden çok C++ sınıfının aynı kayıtlı pencere sınıfını paylaşabilmesi için bu tekniği kullanır. En basit Win32 uygulamalarının aksine, MFC uygulamaları sadece bir **WNDPROC'a**sahiptir, böylece zamandan ve bellekten tasarruf etmek için **WNDCLASS** yapılarını kolayca paylaşabilirsiniz. Yukarıda gösterilen `%x` karakterler için değiştirilebilir değerler aşağıdaki gibidir:
 
-- **WNDCLASS. HINSTANCE**
+- **WNDCLASS.hInstance**
 
-- **WNDCLASS. Style**
+- **WNDCLASS.style**
 
-- **WNDCLASS. hCursor**
+- **WNDCLASS.hCursor**
 
-- **WNDCLASS. hbrBackground**
+- **WNDCLASS.hbrArka Plan**
 
-- **WNDCLASS. HICON**
+- **WNDCLASS.hIcon**
 
-İlk`Afx:%x:%x`form (), **hCursor**, **hbrBackground**ve **HICON** 'ın tamamen **null**olduğu durumlarda kullanılır.
+İlk form`Afx:%x:%x`( ) **hCursor**, **hbrBackground**ve **hIcon** tüm **NULL**olduğunda kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

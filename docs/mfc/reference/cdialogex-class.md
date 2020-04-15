@@ -1,5 +1,5 @@
 ---
-title: CDialogEx sınıfı
+title: CDialogEx Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDialogEx
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - CDialogEx [MFC], SetBackgroundColor
 - CDialogEx [MFC], SetBackgroundImage
 ms.assetid: a6ed3b1f-aef8-4b66-ac78-2160faf63c13
-ms.openlocfilehash: f92058d1aa0dabccf6623d20a248fed8eb99ab26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b34c441ac63b023ae6272a1646151aad4be1bfbc
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62168056"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375630"
 ---
-# <a name="cdialogex-class"></a>CDialogEx sınıfı
+# <a name="cdialogex-class"></a>CDialogEx Sınıfı
 
-`CDialogEx` Sınıfı bir iletişim kutusunun arka plan görüntüsü ve arka plan rengini belirtir.
+Sınıf, `CDialogEx` iletişim kutusunun arka plan rengini ve arka plan görüntüsünü belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,45 +33,45 @@ class CDialogEx : public CDialog
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDialogEx::CDialogEx](#cdialogex)|Oluşturur bir `CDialogEx` nesne.|
+|[CDialogEx::CDialogEx](#cdialogex)|Bir `CDialogEx` nesne inşa eder.|
 |`CDialogEx::~CDialogEx`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CDialogEx::SetBackgroundColor](#setbackgroundcolor)|İletişim kutusunun arka plan rengini ayarlar.|
-|[CDialogEx::SetBackgroundImage](#setbackgroundimage)|İletişim kutusunun arka plan resmini ayarlar.|
+|[CDialogEx::SetBackgroundImage](#setbackgroundimage)|İletişim kutusunun arka plan görüntüsünü ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanılacak `CDialogEx` sınıfı, sizin iletişim kutusu sınıfından türetilir `CDialogEx` sınıfı yerine `CDialog` sınıfı.
+Sınıfı kullanmak için iletişim kutusu sınıfınızı `CDialog` sınıf `CDialogEx` yerine sınıftan türetin. `CDialogEx`
 
-İletişim kutusunu görüntüler, bir kaynak dosyasında depolanır. Framework kaynak dosyasından yüklenen herhangi bir görüntüyü otomatik olarak siler. Geçerli arka plan resmi program aracılığıyla silme çağrısı [CDialogEx::SetBackgroundImage](#setbackgroundimage) yöntemi veya uygulama bir `OnDestroy` olay işleyicisi. Çağırdığınızda [CDialogEx::SetBackgroundImage](#setbackgroundimage) geçişinde yöntemi bir `HBITMAP` parametre olarak görüntü tanıtıcısı. `CDialogEx` Nesne görüntü sahipliğini ve varsa silin `m_bAutoDestroyBmp` bayrağı `TRUE`.
+İletişim kutusu görüntüleri bir kaynak dosyasında depolanır. Çerçeve, kaynak dosyasından yüklenen tüm görüntüleri otomatik olarak siler. Geçerli arka plan görüntüsünü programlı bir şekilde silmek için [CDialogEx::SetBackgroundImage](#setbackgroundimage) yöntemini arayın veya bir `OnDestroy` olay işleyicisi uygulayın. [CDialogEx::SetBackgroundImage](#setbackgroundimage) yöntemini aradiğinizde, görüntü `HBITMAP` tutamacı olarak bir parametre geçirin. Nesne `CDialogEx` görüntünün sahipliğini alır ve `m_bAutoDestroyBmp` bayrak. `TRUE`
 
-A `CDialogEx` nesnenin üst öğesi olabilir bir [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md) nesne. [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md) nesne çağrıları `CDialogEx::SetActiveMenu` yöntemi zaman [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md) nesnesini açar. Daha sonra `CDialogEx` nesnesini kadar herhangi bir menü olay işleme [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md) nesnesi kapalı.
+`CDialogEx` Nesne, [CMFCPopUpMenu Sınıf](../../mfc/reference/cmfcpopupmenu-class.md) nesnesinin üst öğesi olabilir. [CMFCPopUpMenu Sınıf](../../mfc/reference/cmfcpopupmenu-class.md) nesnesi `CDialogEx::SetActiveMenu` [CMFCPopUpMenu Sınıf](../../mfc/reference/cmfcpopupmenu-class.md) nesnesi açıldığında yöntemi çağırır. Daha sonra, `CDialogEx` [cmfcpopupMenu Sınıf](../../mfc/reference/cmfcpopupmenu-class.md) nesnesi kapatılır kadar nesne herhangi bir menü olay işler.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CDialog](../../mfc/reference/cdialog-class.md)
+[Cdialog](../../mfc/reference/cdialog-class.md)
 
 [CDialogEx](../../mfc/reference/cdialogex-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdialogex.h
+**Üstbilgi:** afxdialogex.h
 
-##  <a name="cdialogex"></a>  CDialogEx::CDialogEx
+## <a name="cdialogexcdialogex"></a><a name="cdialogex"></a>CDialogEx::CDialogEx
 
-Oluşturur bir `CDialogEx` nesne.
+Bir `CDialogEx` nesne inşa eder.
 
 ```
 CDialogEx(
@@ -86,22 +86,22 @@ CDialogEx(
 ### <a name="parameters"></a>Parametreler
 
 *nIDTemplate*<br/>
-[in] Bir iletişim kutusu şablonu kaynak kimliği.
+[içinde] İletişim kutusu şablonunun kaynak kimliği.
 
 *lpszTemplateName*<br/>
-[in] Bir iletişim kutusu şablonu kaynak adı.
+[içinde] İletişim kutusu şablonunun kaynak adı.
 
 *pParent*<br/>
-[in] Üst penceresine bir işaretçi. Varsayılan değer NULL olur.
+[içinde] Üst pencereiçin bir işaretçi. Varsayılan değer NULL'dur.
 
 *pParentWnd*<br/>
-[in] Üst penceresine bir işaretçi. Varsayılan değer NULL olur.
+[içinde] Üst pencereiçin bir işaretçi. Varsayılan değer NULL'dur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setbackgroundcolor"></a>  CDialogEx::SetBackgroundColor
+## <a name="cdialogexsetbackgroundcolor"></a><a name="setbackgroundcolor"></a>CDialogEx::SetBackgroundColor
 
 İletişim kutusunun arka plan rengini ayarlar.
 
@@ -113,17 +113,17 @@ void SetBackgroundColor(
 
 ### <a name="parameters"></a>Parametreler
 
-*Renk*<br/>
-[in] Bir RGB renk değeri.
+*color*<br/>
+[içinde] RGB renk değeri.
 
 *bRepaint*<br/>
-[in] Ekranın hemen güncelleştirmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.
+[içinde] EKRANI HEMEN GÜNCELLEMEK IÇIN TRUE; aksi takdirde, YANLIŞ. Varsayılan değer TRUE'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setbackgroundimage"></a>  CDialogEx::SetBackgroundImage
+## <a name="cdialogexsetbackgroundimage"></a><a name="setbackgroundimage"></a>CDialogEx::SetBackgroundImage
 
-İletişim kutusunun arka plan resmini ayarlar.
+İletişim kutusunun arka plan görüntüsünü ayarlar.
 
 ```
 void SetBackgroundImage(
@@ -141,31 +141,31 @@ BOOL SetBackgroundImage(
 ### <a name="parameters"></a>Parametreler
 
 *Hbıtmap*<br/>
-[in] Arka plan görüntüsü için bir tanıtıcı.
+[içinde] Arka plan görüntüsüne bir tutamaç.
 
 *uiBmpResId*<br/>
-[in] Arka plan görüntü kaynak kimliği.
+[içinde] Arka plan görüntüsünün kaynak kimliği.
 
-*konum*<br/>
-[in] Aşağıdakilerden birini `CDialogEx::BackgroundLocation` görüntüsünün konumu belirten değerleri. Geçerli değerler BACKGR_TILE, BACKGR_TOPLEFT BACKGR_TOPRIGHT BACKGR_BOTTOMLEFT ve BACKGR_BOTTOMRIGHT içerir. BACKGR_TILE varsayılan değerdir.
+*Konum*<br/>
+[içinde] Görüntünün `CDialogEx::BackgroundLocation` konumunu belirten değerlerden biri. Geçerli değerler BACKGR_TILE, BACKGR_TOPLEFT, BACKGR_TOPRIGHT, BACKGR_BOTTOMLEFT ve BACKGR_BOTTOMRIGHT içerir. Varsayılan değer BACKGR_TILE.
 
 *bAutoDestroy*<br/>
-[in] Otomatik olarak arka plan görüntüsü yok etmek için TRUE; Aksi takdirde FALSE.
+[içinde] TRUE otomatik olarak arka plan görüntüsünü yok etmek için; aksi takdirde, YANLIŞ.
 
 *bRepaint*<br/>
-[in] Hemen iletişim kutusunu yeniden çizmek için TRUE; Aksi takdirde FALSE.
+[içinde] İletişim kutusunu hemen yeniden çizmek için TRUE; aksi takdirde, YANLIŞ.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa İkinci yöntemde sözdiziminin doğru aşırı; Aksi takdirde FALSE.
+İkinci yöntemde sözdizimini aşırı yükle, yöntem başarılı olursa TRUE; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirttiğiniz görüntü iletişim kutusu istemci alanını uyacak şekilde uzatılır değil.
+Belirttiğiniz görüntü iletişim kutusu istemci alanına uyacak şekilde uzatılmış değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCPopupMenu Sınıfı](../../mfc/reference/cmfcpopupmenu-class.md)<br/>
+[CMFCPopUpMenü Sınıfı](../../mfc/reference/cmfcpopupmenu-class.md)<br/>
 [CContextMenuManager Sınıfı](../../mfc/reference/ccontextmenumanager-class.md)

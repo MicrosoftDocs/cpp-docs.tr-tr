@@ -1,26 +1,26 @@
 ---
-title: '&lt;ostream&gt; tür tanımları'
+title: '&lt;ostream&gt; typedefs'
 ms.date: 11/04/2016
 f1_keywords:
 - iosfwd/std::ostream
 - iosfwd/std::wostream
 ms.assetid: 2ec4dc52-a01f-4654-bd65-dd5288777c48
-ms.openlocfilehash: d0ceae12069712c7a124990d0f81968c21bc683a
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 82539a3fdadf10d340ca957756e235e8ae00b267
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419716"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373578"
 ---
-# <a name="ltostreamgt-typedefs"></a>&lt;ostream&gt; tür tanımları
+# <a name="ltostreamgt-typedefs"></a>&lt;ostream&gt; typedefs
 
 |||
 |-|-|
-|[ostream](#ostream)|[wostream](#wostream)|
+|[Ostream](#ostream)|[wostream](#wostream)|
 
-## <a name="ostream"></a>ostream
+## <a name="ostream"></a><a name="ostream"></a>Ostream
 
-Char **üzerinde özelleştirilmiş** basic_ostream, **char**üzerinde özelleştirilmiş `char_traits` bir tür oluşturur.
+**Char** üzerinde uzmanlaşmış ve `char_traits` **char**üzerinde uzmanlaşmış basic_ostream bir tür oluşturur.
 
 ```cpp
 typedef basic_ostream<char, char_traits<char>> ostream;
@@ -28,11 +28,11 @@ typedef basic_ostream<char, char_traits<char>> ostream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, varsayılan karakter nitelikleri ile **char** türündeki öğeler için özelleştirilmiş [basic_ostream](../standard-library/basic-ostream-class.md)sınıf şablonu için bir eş anlamlı.
+Türü sınıf şablonu [basic_ostream](../standard-library/basic-ostream-class.md)için eşanlamlıdır , varsayılan karakter özellikleri ile tür **char** öğeleri için özel.
 
-## <a name="wostream"></a>wostream
+## <a name="wostream"></a><a name="wostream"></a>wostream
 
-**Wchar_t** ve **wchar_t**üzerinde özelleştirilmiş `char_traits` basic_ostream bir tür oluşturur.
+**wchar_t** konusunda uzmanlaşmış ve `char_traits` **wchar_t**konusunda uzmanlaşmış basic_ostream bir tür oluşturur.
 
 ```cpp
 typedef basic_ostream<wchar_t, char_traits<wchar_t>> wostream;
@@ -40,8 +40,8 @@ typedef basic_ostream<wchar_t, char_traits<wchar_t>> wostream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, varsayılan karakter nitelikleri olan **wchar_t** türündeki öğeler için özelleştirilmiş [basic_ostream](../standard-library/basic-ostream-class.md)sınıf şablonu için bir eş anlamlıdır.
+Tür, varsayılan karakter özelliklerine sahip tür **wchar_t** öğeleri için özelleştirilmiş sınıf şablonu [basic_ostream](../standard-library/basic-ostream-class.md)eşanlamlıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ostream > \<](../standard-library/ostream.md)
+[\<ostream>](../standard-library/ostream.md)

@@ -1,5 +1,5 @@
 ---
-title: CMFCRibbonLabel sınıfı
+title: CMFCRibbonLabel Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonLabel
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CMFCRibbonLabel [MFC], CMFCRibbonLabel
 - CMFCRibbonLabel [MFC], SetACCData
 ms.assetid: 0346c891-83bf-4f20-b8a1-c84cf2aadced
-ms.openlocfilehash: b79d6191d2deb0a295e81da1150cc7b38fd81232
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd30e374441661368d3ea7abf5177424f8dffb3c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388416"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375131"
 ---
-# <a name="cmfcribbonlabel-class"></a>CMFCRibbonLabel sınıfı
+# <a name="cmfcribbonlabel-class"></a>CMFCRibbonLabel Sınıfı
 
-Bir Şerit için tıklanmayan bir metin etiketi uygular.
+Şerit için tıklanabilir olmayan bir metin etiketi uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,42 +31,42 @@ class CMFCRibbonLabel : public CMFCRibbonButton
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonLabel::CMFCRibbonLabel](#cmfcribbonlabel)|Oluşturur ve başlatır bir `CMFCRibbonLabel` nesnesi ile belirtilen metin dizesi.|
+|[CMFCRibbonLabel::CMFCRibbonEtiket](#cmfcribbonlabel)|Belirtilen metin dizesiyle `CMFCRibbonLabel` bir nesne yi inşa eder ve başharfe atar.|
 |`CMFCRibbonLabel::~CMFCRibbonLabel`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMFCRibbonLabel::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|
-|`CMFCRibbonLabel::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|
-|[CMFCRibbonLabel::SetACCData](#setaccdata)|Geçerli Şerit label öğesinin erişilebilirlik verileri belirler. (Geçersiz kılmaları [CMFCRibbonButton::SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#setaccdata).)|
+|`CMFCRibbonLabel::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için çerçeve tarafından kullanılır.|
+|`CMFCRibbonLabel::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
+|[CMFCRibbonLabel::SetACCData](#setaccdata)|Geçerli şerit etiket öğesiiçin erişilebilirlik verilerini belirler. [(CMFCRibbonButton geçersiz kılar::SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#setaccdata).)|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir Şerit etiketi oluşturduktan sonra çağırarak bir paneline Ekle [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).
+Bir şerit etiketi oluşturduktan sonra CMFCRibbonPanel'i arayarak bir panele [ekleyin::Ekle.](../../mfc/reference/cmfcribbonpanel-class.md#add)
 
-Hızlı Erişim Araç çubuğuna, Şerit etiket ekleyemezsiniz.
+Hızlı Erişim Araç Çubuğu'na şerit etiketi ekleyemezsiniz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)
 
 [CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md)
 
-[CMFCRibbonLabel](../../mfc/reference/cmfcribbonlabel-class.md)
+[CMFCRibbonEtiket](../../mfc/reference/cmfcribbonlabel-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxRibbonLabel.h
+**Üstbilgi:** afxRibbonLabel.h
 
-##  <a name="cmfcribbonlabel"></a>  CMFCRibbonLabel::CMFCRibbonLabel
+## <a name="cmfcribbonlabelcmfcribbonlabel"></a><a name="cmfcribbonlabel"></a>CMFCRibbonLabel::CMFCRibbonEtiket
 
-Oluşturur ve başlatır bir [CMFCRibbonLabel](../../mfc/reference/cmfcribbonlabel-class.md) nesnesini belirtilen metin dizesini görüntüler.
+Belirtilen metin dizesini görüntüleyen bir [CMFCRibbonLabel](../../mfc/reference/cmfcribbonlabel-class.md) nesnesi oluşturuyor ve baş harflerini algılar.
 
 ```
 CMFCRibbonLabel(
@@ -76,15 +76,15 @@ CMFCRibbonLabel(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszText*<br/>
-[in] Etikette görüntülenecek metin.
+*lpszMetin*<br/>
+[içinde] Etikette görünecek metin.
 
 *bIsMultiLine*<br/>
-[in] Etiket çok satırlı etiket olduğunu belirtmek için TRUE; Aksi takdirde FALSE.
+[içinde] Etiketin çok satırlı bir etiket olduğunu belirtmek için TRUE; aksi takdirde, YANLIŞ.
 
-##  <a name="setaccdata"></a>  CMFCRibbonLabel::SetACCData
+## <a name="cmfcribbonlabelsetaccdata"></a><a name="setaccdata"></a>CMFCRibbonLabel::SetACCData
 
-Geçerli Şerit label öğesinin erişilebilirlik verileri belirler.
+Geçerli şerit etiket öğesiiçin erişilebilirlik verilerini belirler.
 
 ```
 virtual BOOL SetACCData(
@@ -95,14 +95,14 @@ virtual BOOL SetACCData(
 ### <a name="parameters"></a>Parametreler
 
 *pParent*<br/>
-[in] Geçerli Şerit etiketin üst pencereyi temsil eder.
+[içinde] Geçerli şerit etiketinin ana penceresini temsil eder.
 
 *Veri*<br/>
-[out] Bir nesne türü `CAccessibilityData` geçerli Şerit etiket erişilebilirlik verilerle doldurulur.
+[çıkış] Geçerli şerit `CAccessibilityData` etiketinin erişilebilirlik verileriyle doldurulan tür degisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise *veri* parametre başarıyla geçerli Şerit etiketin erişilebilirlik verilerle doldurulmuş; Aksi takdirde FALSE.
+*Veri* parametresi geçerli şerit etiketinin erişilebilirlik verileriyle başarıyla doldurulduysa DOĞRU; aksi takdirde, YANLIŞ.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

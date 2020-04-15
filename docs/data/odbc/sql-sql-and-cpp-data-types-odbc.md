@@ -6,53 +6,53 @@ helpviewer_keywords:
 - SQL data types [C++]
 - SQL [C++], vs. C++ data types
 ms.assetid: 066e0070-d4da-435c-9c4b-f7cab3352c86
-ms.openlocfilehash: 1c1ce908b5c8d345906d49adc79e322225ed49f5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cffe44b832ac1eb28d368072b8f0e92ea9f57feb
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212621"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374472"
 ---
 # <a name="sql-sql-and-c-data-types-odbc"></a>SQL: SQL ve C++ Veri Türleri (ODBC)
 
 > [!NOTE]
->  Bu bilgiler MFC ODBC sınıfları için geçerlidir. MFC DAO sınıflarıyla çalışıyorsanız, DAO yardımı 'nda "Microsoft Jet veritabanı altyapısı SQL ve ANSI SQL karşılaştırması" konusuna bakın.
+> Bu bilgiler MFC ODBC sınıfları için geçerlidir. MFC DAO sınıfları ile çalışıyorsanız, DAO Help'de "Microsoft Jet Database Engine SQL ve ANSI SQL karşılaştırması" konusuna bakın.
 
-Aşağıdaki tablo, ANSI SQL veri türlerini C++ veri türlerine eşler. Bu, MSDN Kitaplığı CD 'sindeki {1 & gt; *ODBC SDK* *programcısı* & lt; 1}. Sihirbazlar, sizin için çoğu veri türü eşlemesini yönetir. Sihirbaz kullanmıyorsanız, alan değişimi kodunu el ile yazmanıza yardımcı olması için eşleme bilgilerini kullanabilirsiniz.
+Aşağıdaki tablo, ANSI SQL veri türlerini C++ veri türleri ile eşler. Bu, MSDN Kitaplığı CD'sindeki *ODBC SDK* *Programcı Referansı'nın* Ek D'sinde verilen C dil bilgilerini genişletir. Sihirbazlar sizin için çoğu veri türü eşleme yönetir. Sihirbaz kullanmıyorsanız, alan değişim kodunu el ile yazmanıza yardımcı olmak için eşleme bilgilerini kullanabilirsiniz.
 
-### <a name="ansi-sql-data-types-mapped-to-c-data-types"></a>C++ Veri TÜRLERIYLE eşlenen ANSI SQL veri türleri
+### <a name="ansi-sql-data-types-mapped-to-c-data-types"></a>ANSI SQL Veri Türleri C++ Veri Türlerine Eşlendi
 
-|ANSI SQL veri türü|C++veri türü|
+|ANSI SQL veri türü|C++ veri türü|
 |------------------------|---------------------|
-|**CHAR**|`CString`|
-|**KATEGORI**|`CString` 1|
-|**Small**|**int**|
-|**GERÇEK**|**float**|
-|**GIR**|**long**|
-|**FLOAT**|**double**|
-|**ÇIFT**|**double**|
-|**RAKAMLARDAN**|`CString` 1|
-|**VARCHAR**|`CString`|
-|**LONGVARCHAR**|`CLongBinary`, `CString` 2|
-|**SÜRÜMLERI**|**BOOL**|
-|**Iç**|**BAYT**|
-|**BIGıNT**|`CString` 1|
-|**Ý**|`CByteArray`|
-|**IKILI**|`CByteArray`|
-|**LONGVARBINARY**|`CLongBinary`, `CByteArray` 3|
-|**DATE**|`CTime`, `CString`|
-|**TIME**|`CTime`, `CString`|
-|**ILIŞKIN**|`CTime`, `CString`|
+|**Char**|`CString`|
+|**On -da -lık**|`CString`1|
+|**Smallint**|**int**|
+|**Gerçek**|**float**|
+|**Tamsayı**|**long**|
+|**Float**|**double**|
+|**Çift**|**double**|
+|**Sayısal**|`CString`1|
+|**Varchar**|`CString`|
+|**LONGVARCHAR**|`CLongBinary`, `CString` 2, 2|
+|**Bit**|**Bool**|
+|**Tinyint**|**BYTE**|
+|**Bigint**|`CString`1|
+|**Ikili**|`CByteArray`|
+|**Varbinary**|`CByteArray`|
+|**LONGVARBINARY**|`CLongBinary`, `CByteArray` 3,|
+|**Tarih**|`CTime`, `CString`|
+|**Zaman**|`CTime`, `CString`|
+|**Zaman damgası**|`CTime`, `CString`|
 
-1. **Sql_c_char** varsayılan ODBC aktarım türü olduğundan, ANSI **DECIMAL** ve **sayısal** eşleme `CString`.
+1. ANSI **DECIMAL** ve **NUMERIC** harita çünkü `CString` **SQL_C_CHAR** varsayılan ODBC aktarım türüdür.
 
-2. 255 karakterlerin ötesindeki karakter verileri, `CString`ile eşlendiğinde varsayılan olarak kesilir. `RFX_Text`*nMaxLength* bağımsız değişkenini açıkça ayarlayarak kesme uzunluğunu genişletebilirsiniz.
+2. 255 karakter dışındaki karakter verileri, `CString`eşlendiğinde varsayılan olarak kesilir. *NMaxLength* bağımsız değişkenini `RFX_Text`açıkça ayarlayarak kesilme uzunluğunu uzatabilirsiniz.
 
-3. 255 karakter dışında ikili veriler, `CByteArray`ile eşlendiğinde varsayılan olarak kesilir. `RFX_Binary`*nMaxLength* bağımsız değişkenini açıkça ayarlayarak kesme uzunluğunu genişletebilirsiniz.
+3. 255 karakterin ötesindeki ikili `CByteArray`veriler, eşlendiğinde varsayılan olarak kesilir. *NMaxLength* bağımsız değişkenini `RFX_Binary`açıkça ayarlayarak kesilme uzunluğunu uzatabilirsiniz.
 
-ODBC imleç kitaplığını kullanmıyorsanız, Microsoft SQL Server ODBC sürücüsünü ve MFC ODBC veritabanı sınıflarını kullanarak iki veya daha fazla uzun değişken uzunluklu alanı güncelleştirmeye çalışırken bir sorunla karşılaşabilirsiniz. ODBC türleri, **SQL_LONGVARCHAR** ve **SQL_LONGVARBINARY**, metin ve görüntü SQL Server türleriyle eşlenir. Aynı `CRecordset::Update`iki veya daha fazla değişken uzunlukta alanı güncelleştirirseniz `CDBException` oluşturulur. Bu nedenle, birden çok uzun sütunu eşzamanlı olarak `CRecordset::Update`güncelleştirmeyin. Birden çok uzun sütunu eşzamanlı olarak ODBC API `SQLPutData`güncelleştirebilirsiniz. ODBC imleç kitaplığını da kullanabilirsiniz, ancak bu, imleçleri destekleyen ve imleç kitaplığına gerek olmayan SQL Server sürücüsü gibi sürücüler için önerilmez.
+ODBC imleç kitaplığını kullanmıyorsanız, Microsoft SQL Server ODBC sürücüsünü ve MFC ODBC veritabanı sınıflarını kullanarak iki veya daha fazla uzun değişken uzunlukta alanı güncelleştirmeye çalışırken bir sorunla karşılaşabilirsiniz. ODBC türleri, **SQL_LONGVARCHAR** ve **SQL_LONGVARBINARY,** metin ve görüntü SQL Server türleri için eş. Aynı `CDBException` çağrıda iki veya daha fazla uzun değişken uzunlukta alanı `CRecordset::Update`güncellerseniz A atılır. Bu nedenle, aynı anda birden `CRecordset::Update`çok uzun sütun güncelleştirmeyin. ODBC API `SQLPutData`ile aynı anda birden çok uzun sütunu güncelleştirebilirsiniz. ODBC imleç kitaplığını da kullanabilirsiniz, ancak bu imleçleri destekleyen ve imleç kitaplığını gerekmeyen SQL Server sürücüsü gibi sürücüler için önerilmez.
 
-MFC ODBC veritabanı sınıfları ve Microsoft SQL Server ODBC sürücüsü ile ODBC imleç kitaplığını kullanıyorsanız, `CRecordset::Update` çağrısı `CRecordset::Requery`için bir çağrıyı izleyen bir `CDBException` ile birlikte bir **onaylama** gerçekleşmeyebilir. Bunun yerine, `CRecordset::Requery`yerine `CRecordset::Close` ve `CRecordset::Open` çağırın. SQL Server ve SQL Server ODBC sürücüsü yerel imleçler için yerel destek sağladığından ve ODBC imleç kitaplığı gerekli olmadığından, başka bir çözüm ODBC imleç kitaplığını kullanmaz.
+MFC ODBC veritabanı sınıfları ve Microsoft SQL Server ODBC sürücüsü ile ODBC imleç kitaplığını `CDBException` kullanıyorsanız, `CRecordset::Update` bir if `CRecordset::Requery`acall ile birlikte bir **Assert** ' da bir çağrı yı takip edebilir. Bunun yerine, `CRecordset::Open` arama `CRecordset::Requery` `CRecordset::Close` ve yerine . SQL Server ve SQL Server ODBC sürücüsü imleçler için yerel destek sağladığından ve ODBC imleç kitaplığı gerekli olmadığından, başka bir çözüm de ODBC imleç kitaplığını kullanmamaktır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

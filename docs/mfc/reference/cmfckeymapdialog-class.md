@@ -1,5 +1,5 @@
 ---
-title: CMFCKeyMapDialog sınıfı
+title: CMFCKeyMapDialog Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCKeyMapDialog
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - CMFCKeyMapDialog [MFC], PrintKeyMap
 - CMFCKeyMapDialog [MFC], SetColumnsWidth
 ms.assetid: 5feb4942-d636-462d-a162-0104dd320f4e
-ms.openlocfilehash: 65aa5ab0f24999ee23a97f383577b69584825502
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 22aa006ce214ca720192bb761e2ff2b35a64fce3
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388507"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374408"
 ---
-# <a name="cmfckeymapdialog-class"></a>CMFCKeyMapDialog sınıfı
+# <a name="cmfckeymapdialog-class"></a>CMFCKeyMapDialog Sınıfı
 
-`CMFCKeyMapDialog` Sınıfı komutları klavyedeki tuşlarla eşleyen bir denetimi destekler.
+Sınıf, `CMFCKeyMapDialog` klavyedeki tuşlarla komutları eşleyen bir denetimi destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,56 +47,56 @@ class CMFCKeyMapDialog : public CDialogEx
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCKeyMapDialog::CMFCKeyMapDialog](#cmfckeymapdialog)|Oluşturur bir `CMFCKeyMapDialog` nesne.|
+|[CMFCKeyMapDialog::CMFCKeyMapDialog](#cmfckeymapdialog)|Bir `CMFCKeyMapDialog` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CMFCKeyMapDialog::DoModal](#domodal)|Klavye eşleme iletişim kutusunu görüntüler.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCKeyMapDialog::FormatItem](#formatitem)|Tuş eşlemesini tanımlayan bir dize oluşturmak için framework tarafından çağırılır. Varsayılan olarak, komut adı, kullanılan kısayol tuşları ve kısayol anahtar açıklama dizesi içerir.|
-|[CMFCKeyMapDialog::GetCommandKeys](#getcommandkeys)|Belirtilen komut ile ilişkili kısayol tuşlarının bir listesini içeren bir dize alır.|
-|[CMFCKeyMapDialog::OnInsertItem](#oninsertitem)|Yeni bir öğe klavye eşleme denetimi destekleyen iç liste denetimine eklenmeden önce framework tarafından çağırılır.|
-|[CMFCKeyMapDialog::OnPrintHeader](#onprintheader)|Klavye eşleme için başlığı üzerinde yeni bir sayfa yazdırmak için framework tarafından çağırılır.|
-|[CMFCKeyMapDialog::OnPrintItem](#onprintitem)|Klavye eşleme öğesi yazdırmak için framework tarafından çağırılır.|
-|[CMFCKeyMapDialog::OnSetColumns](#onsetcolumns)|Klavye eşleme denetimi destekleyen iç liste denetiminde sütunlar için açıklamalı alt yazılar ayarlamak için framework tarafından çağırılır.|
-|[CMFCKeyMapDialog::PrintKeyMap](#printkeymap)|Kullanıcı tıkladığında framework tarafından çağırılır **yazdırma** düğmesi.|
-|[CMFCKeyMapDialog::SetColumnsWidth](#setcolumnswidth)|Klavye eşleme denetimi destekleyen iç liste denetiminde sütunların genişliğini ayarlamak için framework tarafından çağırılır.|
+|[CMFCKeyMapDialog::BiçimÖğesi](#formatitem)|Anahtar eşlemi açıklayan bir dize oluşturmak için çerçeve tarafından çağrılır. Varsayılan olarak, dize komut adını, kullanılan kısayol tuşlarını ve kısayol tuşu açıklamasını içerir.|
+|[CMFCKeyMapDialog::GetCommandKeys](#getcommandkeys)|Belirtilen komutla ilişkili kısayol anahtarlarının listesini içeren bir dize alır.|
+|[CMFCKeyMapDialog::OnInsertItem](#oninsertitem)|Klavye eşleme denetimini destekleyen iç liste denetimine yeni bir öğe eklenmeden önce çerçeve tarafından çağrılır.|
+|[CMFCKeyMapDialog::OnPrintHeader](#onprintheader)|Klavye haritasıüstbilgisini yeni bir sayfaya yazdırmak için çerçeve tarafından çağrılır.|
+|[CMFCKeyMapDialog::OnPrintItem](#onprintitem)|Bir klavye eşleme öğesi yazdırmak için çerçeve tarafından çağrılır.|
+|[CMFCKeyMapDialog::OnSetColumns](#onsetcolumns)|Klavye eşleme denetimini destekleyen iç liste denetimindeki sütunlar için altyazılar ayarlamak için çerçeve tarafından çağrılır.|
+|[CMFCKeyMapDialog::PrintKeyMap](#printkeymap)|Kullanıcı **Yazdır** düğmesini tıklattığında çerçeve tarafından çağrılır.|
+|[CMFCKeyMapDialog::SetColumnsWidth](#setcolumnswidth)|Klavye eşleme denetimini destekleyen iç liste denetimindeki sütunların genişliğini ayarlamak için çerçeve tarafından çağrılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanım `CMFCKeyMapDialog` yeniden boyutlandırılabilir klavye eşleme iletişim kutusunu uygulamak için sınıfı. İletişim kutusu, klavye kısayolları ve bunlarla ilişkilendirilmiş komutları görüntülemek için bir liste görünümü denetimi kullanır.
+Yeniden `CMFCKeyMapDialog` boyutlandırılabilir klavye eşleme iletişim kutusunu uygulamak için sınıfı kullanın. İletişim kutusu, klavye kısayollarını ve ilişkili komutlarını görüntülemek için bir liste görünümü denetimi kullanır.
 
-Kullanılacak `CMFCKeyMapDialog` sınıfı bir uygulamada, bir parametre olarak ana çerçeve penceresine bir işaretçi geçirmek `CMFCKeyMapDialog` Oluşturucusu. Ardından çağırın `DoModal` kalıcı bir iletişim kutusu başlatmak için yöntemi.
+`CMFCKeyMapDialog` Bir uygulamada sınıfı kullanmak için, oluşturucuya parametre olarak ana çerçeve `CMFCKeyMapDialog` penceresine işaretçi geçirin. Ardından modal iletişim kutusunu başlatmak için `DoModal` yöntemi arayın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CDialog](../../mfc/reference/cdialog-class.md)
+[Cdialog](../../mfc/reference/cdialog-class.md)
 
 [CDialogEx](../../mfc/reference/cdialogex-class.md)
 
-[CMFCKeyMapDialog](../../mfc/reference/cmfckeymapdialog-class.md)
+[Cmfckeymapdialog](../../mfc/reference/cmfckeymapdialog-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxkeymapdialog.h
+**Üstbilgi:** afxkeymapdialog.h
 
-##  <a name="cmfckeymapdialog"></a>  CMFCKeyMapDialog::CMFCKeyMapDialog
+## <a name="cmfckeymapdialogcmfckeymapdialog"></a><a name="cmfckeymapdialog"></a>CMFCKeyMapDialog::CMFCKeyMapDialog
 
-Oluşturur bir `CMFCKeyMapDialog` nesne.
+Bir `CMFCKeyMapDialog` nesne inşa eder.
 
 ```
 CMFCKeyMapDialog(
@@ -107,20 +107,20 @@ CMFCKeyMapDialog(
 ### <a name="parameters"></a>Parametreler
 
 *pWndParentFrame*<br/>
-[in] Üst penceresine bir işaretçi `CMFCKeyMapDialog` nesne.
+[içinde] `CMFCKeyMapDialog` Nesnenin ana penceresine bir işaretçi.
 
 *bEnablePrint*<br/>
-[in] Kısayol tuşları listesi yazdırılabilir TRUE; Aksi takdirde FALSE. Varsayılan değer false'tur.
+[içinde] Hızlandırıcı tuşlarının listesi yazdırılabiliyorsa DOĞRU; aksi takdirde, YANLIŞ. Varsayılan FALSE'dır.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCKeyMapDialog` sınıfı. Bu örneğin parçasıdır [Visual Studio gösterim örneği](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, sınıfın bir nesnesinin `CMFCKeyMapDialog` nasıl inşa edilebildiğini gösterir. Bu örnek Visual [Studio Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#21](../../mfc/codesnippet/cpp/cmfckeymapdialog-class_1.cpp)]
 
-##  <a name="domodal"></a>  CMFCKeyMapDialog::DoModal
+## <a name="cmfckeymapdialogdomodal"></a><a name="domodal"></a>CMFCKeyMapDialog::DoModal
 
 Klavye eşleme iletişim kutusunu görüntüler.
 
@@ -130,15 +130,15 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-IDOK veya geçirilir IDCANCEL, gibi imzalı bir tamsayı [CDialog::EndDialog](../../mfc/reference/cdialog-class.md#enddialog) yöntemi. Yöntemi, sırasıyla iletişim kutusu kapanır. Daha fazla bilgi için [CDialog::DoModal](../../mfc/reference/cdialog-class.md#domodal).
+IDOK veya IDCANCEL gibi, [CDialog::EndDialog](../../mfc/reference/cdialog-class.md#enddialog) yöntemine geçirilen imzalı bir tamsayı. Yöntem, sırayla, iletişim kutusunu kapatır. Daha fazla bilgi [için, CDialog bakınız::DoModal](../../mfc/reference/cdialog-class.md#domodal).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Klavye eşleme iletişim kutusunu seçin ve kısayol tuşları komutları için çeşitli kategorileri atamak sağlar. Ayrıca, seçili kısayol tuşları ve bunların açıklaması panoya kopyalayabilirsiniz.
+Klavye eşleme iletişim kutusu, hızlandırıcı tuşlarını seçmenizi ve çeşitli komut kategorilerine atamanızı sağlar. Ayrıca, seçili hızlandırıcı tuşlarını ve bunların açıklamasını panoya kopyalayabilirsiniz.
 
-##  <a name="formatitem"></a>  CMFCKeyMapDialog::FormatItem
+## <a name="cmfckeymapdialogformatitem"></a><a name="formatitem"></a>CMFCKeyMapDialog::BiçimÖğesi
 
-Tuş eşlemesini tanımlayan bir dize oluşturmak için framework tarafından çağırılır. Varsayılan olarak, komut adı, kullanılan kısayol tuşları ve kısayol anahtar açıklama dizesi içerir.
+Anahtar eşlemi açıklayan bir dize oluşturmak için çerçeve tarafından çağrılır. Varsayılan olarak, dize komut adını, kullanılan kısayol tuşlarını ve kısayol tuşu açıklamasını içerir.
 
 ```
 virtual CString FormatItem(int nItem) const;
@@ -146,18 +146,18 @@ virtual CString FormatItem(int nItem) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nItem*<br/>
-[in] Anahtar eşlemelerinin iç listesinde bir öğe sıfır tabanlı dizini.
+*nÖğe*<br/>
+[içinde] Anahtar eşlemeleri iç listesindebir öğenin sıfır tabanlı dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` biçimlendirilmiş öğesi metni içeren nesne.
+Biçimlendirilmiş öğe metnini içeren bir `CString` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getcommandkeys"></a>  CMFCKeyMapDialog::GetCommandKeys
+## <a name="cmfckeymapdialoggetcommandkeys"></a><a name="getcommandkeys"></a>CMFCKeyMapDialog::GetCommandKeys
 
-Bir dize değeri alır. Dize, belirtilen bir komut ile ilişkili kısayol tuşlarının bir listesini içerir.
+Bir dize değeri alır. Dize, belirtilen bir komutla ilişkili kısayol anahtarlarının listesini içerir.
 
 ```
 virtual CString GetCommandKeys(UINT uiCmdID) const;
@@ -166,17 +166,17 @@ virtual CString GetCommandKeys(UINT uiCmdID) const;
 ### <a name="parameters"></a>Parametreler
 
 *uiCmdID*<br/>
-[in] Komut kimliği.
+[içinde] Bir komut kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Noktalı virgül ile ayrılmış belirtilen komutu ile ilişkilendirilmiş (';') kısayol tuşları listesi.
+Belirtilen komutla ilişkili kısayol tuşlarının yarı sütunlu (';') listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="oninsertitem"></a>  CMFCKeyMapDialog::OnInsertItem
+## <a name="cmfckeymapdialogoninsertitem"></a><a name="oninsertitem"></a>CMFCKeyMapDialog::OnInsertItem
 
-Yeni bir öğe klavye eşleme denetimi destekleyen bir iç liste denetimine eklenmeden önce framework tarafından çağırılır.
+Yeni bir öğe klavye eşleme denetimini destekleyen bir iç liste denetimine eklenmeden önce çerçeve tarafından çağrılır.
 
 ```
 virtual void OnInsertItem(
@@ -186,17 +186,17 @@ virtual void OnInsertItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*pButton*<br/>
-[in] Klavye tuş bileşimi bir komut ad ve açıklama eşlemek için kullanılan bir araç çubuğu düğmesi için bir işaretçi. Anahtar eşleme öğesi bir iç liste denetiminde saklanır.
+*pDüğme*<br/>
+[içinde] Klavye tuşu birleşimini komut adı ve açıklamayla eşlemek için kullanılan araç çubuğu düğmesine işaretçi. Anahtar eşleme öğesi bir iç liste denetiminde depolanır.
 
-*nItem*<br/>
-[in] Yeni anahtar eşleme öğesi iç listesi denetimi eklemek istediğiniz yeri belirtir sıfır tabanlı dizini.
+*nÖğe*<br/>
+[içinde] Yeni anahtar eşharita öğesinin iç liste denetimine nereye ekalınacağını belirten sıfır tabanlı dizin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onprintheader"></a>  CMFCKeyMapDialog::OnPrintHeader
+## <a name="cmfckeymapdialogonprintheader"></a><a name="onprintheader"></a>CMFCKeyMapDialog::OnPrintHeader
 
-Klavye eşleme için başlığı üzerinde yeni bir sayfa yazdırmak için framework tarafından çağırılır.
+Klavye haritasıüstbilgisini yeni bir sayfaya yazdırmak için çerçeve tarafından çağrılır.
 
 ```
 virtual int OnPrintHeader(
@@ -207,26 +207,26 @@ virtual int OnPrintHeader(
 
 ### <a name="parameters"></a>Parametreler
 
-*DC*<br/>
-[in] Yazıcı için cihaz bağlamı.
+*Dc*<br/>
+[içinde] Yazıcı için aygıt bağlamı.
 
 *nPage*<br/>
-[in] Yazdırılacak sayfa numarası.
+[içinde] Yazdırırılacak sayfa numarası.
 
-*cx*<br/>
-[in] Üstbilginin piksel cinsinden yatay uzaklık.
+*Cx*<br/>
+[içinde] Üstbilginin piksel olarak yatay mahsup.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, yazdırılan metin yüksekliği. Daha fazla bilgi için dönüş değeri bölümüne bakın. [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext).
+Başarılı olursa, yazdırılan metnin yüksekliği. Daha fazla bilgi için [CDC::DrawText'in](../../mfc/reference/cdc-class.md#drawtext)İade Değeri bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, klavye eşleme yazdırmak için bu yöntemi kullanır. Varsayılan olarak, bu yöntem, sayfa numarası, uygulama adı ve iletişim kutusu başlığı yazdırır.
+Çerçeve klavye eşlemi yazdırmak için bu yöntemi kullanır. Varsayılan olarak, bu yöntem sayfa numarasını, uygulama adını ve iletişim kutusu başlığını yazdırır.
 
-##  <a name="onprintitem"></a>  CMFCKeyMapDialog::OnPrintItem
+## <a name="cmfckeymapdialogonprintitem"></a><a name="onprintitem"></a>CMFCKeyMapDialog::OnPrintItem
 
-Klavye eşleme öğesi yazdırmak için framework tarafından çağırılır.
+Bir klavye eşleme öğesi yazdırmak için çerçeve tarafından çağrılır.
 
 ```
 virtual int OnPrintItem(
@@ -239,32 +239,32 @@ virtual int OnPrintItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*DC*<br/>
-[in] Yazıcı cihaz bağlamı.
+*Dc*<br/>
+[içinde] Yazıcının aygıt bağlamı.
 
-*nItem*<br/>
-[in] Yazdırmak için öğenin sıfır tabanlı dizini.
+*nÖğe*<br/>
+[içinde] Yazdırırılacak öğenin sıfır tabanlı dizini.
 
 *Y*<br/>
-[in] Sayfanın üst öğenin konumunu arasındaki dikey uzaklık.
+[içinde] Sayfanın üst kısmı ile öğenin konumu arasındaki dikey ofset.
 
-*cx*<br/>
-[in] Sayfanın solundaki öğenin konumunu arasındaki yatay uzaklık.
+*Cx*<br/>
+[içinde] Sayfanın solundaki ile öğenin konumu arasındaki yatay ofset.
 
-*bCalcHeight*<br/>
-[in] Yazıcı öğesi için en iyi yükseklik hesaplamak için TRUE; Böylece varsayılan alanı sığar yazdırma öğesi kesmek için FALSE.
+*bCalcYükseklik*<br/>
+[içinde] Yazdırma öğesi için en iyi yüksekliği hesaplamak için TRUE; Varsayılan alana sığacak şekilde yazdırma öğesini parçalamak için FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazdırılan öğe yüksekliği.
+Yazdırılan öğenin yüksekliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework anahtar eşleme iletişim kutusunu öğeyi yazdırmak için bu yöntemi çağırır. Varsayılan olarak, bu yöntem, öğenin komut adı, kısayol tuşları ve komut açıklama yazdırır.
+Çerçeve, anahtar eşleme kutusu öğesi yazdırmak için bu yöntemi çağırır. Varsayılan olarak, bu yöntem öğenin komut adını, kısayol anahtarlarını ve komut açıklamasını yazdırır.
 
-##  <a name="onsetcolumns"></a>  CMFCKeyMapDialog::OnSetColumns
+## <a name="cmfckeymapdialogonsetcolumns"></a><a name="onsetcolumns"></a>CMFCKeyMapDialog::OnSetColumns
 
-Klavye eşleme denetimi destekleyen iç liste denetiminde sütunlar için açıklamalı alt yazılar ayarlamak için framework tarafından çağırılır.
+Klavye eşleme denetimini destekleyen iç liste denetimindeki sütunlar için altyazılar ayarlamak için çerçeve tarafından çağrılır.
 
 ```
 virtual void OnSetColumns();
@@ -272,11 +272,11 @@ virtual void OnSetColumns();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem, üç kaynaklardan sütun başlıklarını alır. Komut sütun başlığını IDS_AFXBARRES_COMMAND, IDS_AFXBARRES_KEYS anahtar sütunu başlıktır ve açıklama sütun başlığını IDS_AFXBARRES_DESCRIPTION.
+Varsayılan olarak, bu yöntem sütunlar için altyazıları üç kaynaktan alır. Komut sütunu başlığı IDS_AFXBARRES_COMMAND, anahtar sütun başlığı IDS_AFXBARRES_KEYS ve açıklama sütunbaşlığı IDS_AFXBARRES_DESCRIPTION.
 
-##  <a name="printkeymap"></a>  CMFCKeyMapDialog::PrintKeyMap
+## <a name="cmfckeymapdialogprintkeymap"></a><a name="printkeymap"></a>CMFCKeyMapDialog::PrintKeyMap
 
-Kullanıcı tıkladığında framework tarafından çağırılır **yazdırma** düğmesi.
+Kullanıcı **Yazdır** düğmesini tıklattığında çerçeve tarafından çağrılır.
 
 ```
 virtual void PrintKeyMap();
@@ -284,11 +284,11 @@ virtual void PrintKeyMap();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`PrintKeyMap` Yöntemi anahtar eşleme yazdırır. Yeni bir yazdırma işi başlatır ve ardından tekrar tekrar çağırır [CMFCKeyMapDialog::OnPrintHeader](#onprintheader) ve [CMFCKeyMapDialog::OnPrintItem](#onprintitem) tüm anahtar eşlemelerinin yazdırılır kadar yöntemleri.
+Yöntem `PrintKeyMap` anahtar eşlemi yazdırır. Yeni bir yazdırma işi başlatır ve sonra tekrar tekrar [CMFCKeyMapDialog çağırır::OnPrintHeader](#onprintheader) ve [CMFCKeyMapDialog::OnPrintItem](#onprintitem) yöntemleri tüm anahtar eşlemeler yazdırılır kadar.
 
-##  <a name="setcolumnswidth"></a>  CMFCKeyMapDialog::SetColumnsWidth
+## <a name="cmfckeymapdialogsetcolumnswidth"></a><a name="setcolumnswidth"></a>CMFCKeyMapDialog::SetColumnsWidth
 
-Klavye eşleme denetimi destekleyen iç liste denetiminde sütunların genişliğini ayarlamak için framework tarafından çağırılır.
+Klavye eşleme denetimini destekleyen iç liste denetimindeki sütunların genişliğini ayarlamak için çerçeve tarafından çağrılır.
 
 ```
 virtual void SetColumnsWidth();
@@ -296,7 +296,7 @@ virtual void SetColumnsWidth();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem iç listesi denetimin sütunlar için varsayılan genişliğini ayarlar. Kısayol tuşları sütunun genişliği ilk olarak hesaplanır. Ardından kalan genişliğini üçte komut sütuna ayrılır ve kalan üçte iki açıklama sütuna ayrılır.
+Bu yöntem, iç liste denetiminin sütunlarını varsayılan genişliklere ayarlar. İlk olarak, kısayol tuşları sütununun genişliği hesaplanır. Daha sonra kalan genişliğin üçte biri komut sütununa, geri kalan üçte ikisi ise açıklama sütununa ayrılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

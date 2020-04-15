@@ -21,65 +21,65 @@ helpviewer_keywords:
 - CMainFrame class [MFC]
 - styles [MFC], windows
 ms.assetid: 77fa4f03-96b4-4687-9ade-41e46f7e4b0a
-ms.openlocfilehash: ef79fc88604d565a942fdb0ae07d5fc5a2e0ebeb
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 221092eb25a4f044cda5b379d6774659d9e9d2d1
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509007"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374587"
 ---
 # <a name="changing-the-styles-of-a-window-created-by-mfc"></a>MFC Tarafından Oluşturulan Pencerenin Stillerini Değiştirme
 
-`WinMain` İşlevin sürümünde MFC, sizin için birkaç standart pencere sınıfı kaydeder. MFC 'nin `WinMain`normalde düzenlenmediği için, bu işlev mfc varsayılan pencere stillerini değiştirme fırsatına sahip olmanızı sağlar. Bu makalede, var olan bir uygulamada böyle bir önkoşul olan pencere sınıfının stillerinin nasıl değiştirileceği açıklanmaktadır.
+`WinMain` Fonksiyonun kendi sürümünde, MFC sizin için birkaç standart pencere sınıfları kaydeder. Normalde MFC'yi `WinMain`değiştirmediğiniz için, bu işlev size MFC varsayılan pencere stillerini değiştirme fırsatı vermez. Bu makalede, varolan bir uygulamada böyle bir önceden kaydedilmiş pencere sınıfının stilleri nasıl değiştirebilirsiniz açıklar.
 
-##  <a name="_core_changing_styles_in_a_new_mfc_application"></a>Yeni bir MFC uygulamasındaki stilleri değiştirme
+## <a name="changing-styles-in-a-new-mfc-application"></a><a name="_core_changing_styles_in_a_new_mfc_application"></a>Yeni Bir MFC Uygulamasında Stilleri Değiştirme
 
-Visual C++ 2,0 veya sonraki bir sürümünü kullanıyorsanız, uygulamanızı oluştururken uygulama Sihirbazı 'ndaki varsayılan pencere stillerini değiştirebilirsiniz. Uygulama Sihirbazının Kullanıcı arabirimi özellikleri sayfasında, ana çerçeve pencerenizin ve MDI alt pencerelerinin stillerini değiştirebilirsiniz. Her iki pencere türü için, çerçeve kalınlığını (kalın veya ince) ve aşağıdakilerden herhangi birini belirtebilirsiniz:
+Visual C++ 2.0 veya daha yeni bir şekilde kullanıyorsanız, uygulamanızı oluştururken Uygulama Sihirbazı'ndaki varsayılan pencere stillerini değiştirebilirsiniz. Uygulama Sihirbazı'nın Kullanıcı Arabirimi Özellikleri sayfasında, ana çerçeve pencereniz ve MDI alt pencerenizin stillerini değiştirebilirsiniz. Pencere türünden biri için çerçeve kalınlığını (kalın veya ince) ve aşağıdakilerden herhangi birini belirtebilirsiniz:
 
-- Pencerenin denetimleri en aza Indirdiğini veya ekranı kaplamadığını belirtir.
+- Pencerede Simge durumuna Küçültme veya Üst Düzeye Çıkarma denetimleri olup olmadığı.
 
-- Pencerenin başlangıçta simge durumuna küçültülmüş, büyütülmüş veya hiçbirini değiştirmediği.
+- Pencerenin başlangıçta en aza indirgenmiş, en üst düzeye çıkarılıp çıkarılmadığı veya görünmediği.
 
-Ana çerçeve pencereleri için pencerenin bir sistem menüsü olup olmadığını da belirtebilirsiniz. MDI alt pencereleri için pencerenin Bölümlendirici bölmeleri destekleyip desteklemediğini belirtebilirsiniz.
+Ana çerçeve pencereleri için, pencerenin Sistem Menüsü olup olmadığını da belirtebilirsiniz. MDI alt pencereleriçin, pencerenin ayırıcı bölmelerini destekleyip desteklemediğini belirtebilirsiniz.
 
-##  <a name="_core_changing_styles_in_an_existing_application"></a>Mevcut bir uygulamadaki stilleri değiştirme
+## <a name="changing-styles-in-an-existing-application"></a><a name="_core_changing_styles_in_an_existing_application"></a>Varolan Bir Uygulamada Stilleri Değiştirme
 
-Mevcut bir uygulamadaki pencere özniteliklerini değiştiriyorsanız, bunun yerine bu makalenin geri kalanında bulunan yönergeleri izleyin.
+Varolan bir uygulamada pencere özniteliklerini değiştiriyorsanız, bunun yerine bu makalenin geri kalanındaki yönergeleri izleyin.
 
-Uygulama Sihirbazıyla oluşturulmuş bir Framework uygulaması tarafından kullanılan varsayılan pencere özniteliklerini değiştirmek için, pencerenin önceden [Reatewindow](../mfc/reference/cwnd-class.md#precreatewindow) sanal üye işlevini geçersiz kılın. `PreCreateWindow`bir uygulamanın, normal olarak [CDocTemplate](../mfc/reference/cdoctemplate-class.md) sınıfı tarafından yönetilen oluşturma işlemine erişmesine izin verir. Framework, pencereyi `PreCreateWindow` oluşturmadan hemen önce çağırır. Uygulamasına geçirilen `PreCreateWindow` [CREATESTRUCT](/windows/win32/api/winuser/ns-winuser-createstructw) yapısını değiştirerek, uygulamanız pencereyi oluşturmak için kullanılan öznitelikleri değiştirebilir. Örneğin, bir pencerenin açıklamalı alt yazı kullandığından emin olmak için aşağıdaki bit düzeyinde işlemi kullanın:
+Uygulama Sihirbazı ile oluşturulan bir çerçeve uygulaması tarafından kullanılan varsayılan pencere özniteliklerini değiştirmek için, pencerenin [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) sanal üye işlevini geçersiz kılın. `PreCreateWindow`bir uygulamanın [normalde CDocTemplate](../mfc/reference/cdoctemplate-class.md) sınıfı tarafından dahili olarak yönetilen oluşturma işlemine erişmesine izin verir. Çerçeve, `PreCreateWindow` pencereyi oluşturmadan hemen önce çağırır. Geçirilen [CREATESTRUCT](/windows/win32/api/winuser/ns-winuser-createstructw) yapısını `PreCreateWindow`değiştirerek, uygulamanız pencereoluşturmak için kullanılan öznitelikleri değiştirebilir. Örneğin, bir pencerenin resim yazısı kullanmadığından emin olmak için aşağıdaki bit yönünde işlemi kullanın:
 
 [!code-cpp[NVC_MFCDocView#15](../mfc/codesnippet/cpp/changing-the-styles-of-a-window-created-by-mfc_1.cpp)]
 
-[CTRLBARS](../overview/visual-cpp-samples.md) örnek uygulaması, pencere özniteliklerini değiştirmek için bu tekniği gösterir. Uygulamanızın ' de `PreCreateWindow`değiştiği seçeneğe bağlı olarak, işlevin temel sınıf uygulamasını çağırmak gerekebilir.
+[CTRLBARS](../overview/visual-cpp-samples.md) örnek uygulaması, pencere özniteliklerini değiştirmek için bu tekniği gösterir. Uygulamanızın ne degistirdiğine bağlı `PreCreateWindow`olarak, iþlevin taban sınıf uygulamasını aramak gerekebilir.
 
-Aşağıdaki tartışmada SDI ve [MDI büyük/](#_core_the_mdi_case)küçük harf konuları ele alınmaktadır.
+Aşağıdaki tartışma SDI durumda ve [MDI durumda](#_core_the_mdi_case)kapsar.
 
-##  <a name="_core_the_sdi_case"></a>SDI durumu
+## <a name="the-sdi-case"></a><a name="_core_the_sdi_case"></a>SDİ Davası
 
-Tek bir belge arabirimi (SDI) uygulamasında, Framework içindeki varsayılan pencere stili **WS_OVERLAPPEDWINDOW** ve **FWS_ADDTOTITLE** stillerinin bir birleşimidir. **FWS_ADDTOTITLE** , çerçeveye belge başlığını pencerenin açıklamalı alt başlığına EKLEMESINI sağlayan MFC 'ye özgü bir stildir. Bir SDI uygulamasındaki pencere özniteliklerini değiştirmek için, sınıfınızdan `PreCreateWindow` `CFrameWnd` türetilmiş (uygulama Sihirbazı adları `CMainFrame`) işlevini geçersiz kılın. Örneğin:
+Tek bir belge arabirimi (SDI) uygulamasında, çerçevedeki varsayılan pencere stili **WS_OVERLAPPEDWINDOW** ve **FWS_ADDTOTITLE** stillerinin bir birleşimidir. **FWS_ADDTOTITLE,** çerçeveye belge başlığını pencerenin alt yazısına eklemesini söyleyen MFC'ye özgü bir stildir. Bir SDI uygulamasındaki pencere özniteliklerini `PreCreateWindow` değiştirmek için, sınıfınızdaki `CFrameWnd` (Uygulama Sihirbazı adları) işlevi geçersiz kılın. `CMainFrame` Örneğin:
 
 [!code-cpp[NVC_MFCDocViewSDI#11](../mfc/codesnippet/cpp/changing-the-styles-of-a-window-created-by-mfc_2.cpp)]
 
-Bu kod, simge durumuna küçültmek ve en üst düzeye çıkarmadan ve boyutlandırılabilir kenarlık olmadan bir ana çerçeve penceresi oluşturur. Pencere başlangıçta ekranda ortalanır.
+Bu kod, Simge Durumuna Küçült ve Üst Düzeye Çıkarma düğmeleri olmadan ve büyükçe kenarlık olmadan bir ana çerçeve penceresi oluşturur. Pencere başlangıçta ekranda ortalanır.
 
-##  <a name="_core_the_mdi_case"></a>MDI durumu
+## <a name="the-mdi-case"></a><a name="_core_the_mdi_case"></a>MDI Davası
 
-Birden çok belge arabirimi (MDI) uygulamasında bir alt pencerenin pencere stilini değiştirmek için biraz daha fazla çalışma gerekir. Varsayılan olarak, uygulama sihirbazıyla oluşturulan bir MDI uygulaması MFC 'de tanımlanan varsayılan [Cmdicchild Dwnd](../mfc/reference/cmdichildwnd-class.md) sınıfını kullanır. MDI alt penceresinin pencere stilini değiştirmek için, ' dan `CMDIChildWnd` yeni bir sınıf türemeli ve projenizdeki tüm `CMDIChildWnd` başvuruları yeni sınıfa başvurularla değiştirmelisiniz. Büyük olasılıkla, uygulamada yapılan `CMDIChildWnd` tek başvuru `InitInstance` uygulamanızın üye işlevinde bulunur.
+Birden çok belge arabirimi (MDI) uygulamasında bir alt pencerenin pencere stilini değiştirmek için biraz daha fazla çalışma gerekir. Varsayılan olarak, Uygulama Sihirbazı ile oluşturulan bir MDI uygulaması, MFC'de tanımlanan varsayılan [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) sınıfını kullanır. Bir MDI alt penceresinin pencere stilini değiştirmek için, `CMDIChildWnd` projenizdeki tüm `CMDIChildWnd` başvuruları yeni sınıfa yapılan başvurularla değiştirmeniz ve yeni bir sınıfa ait yeni bir sınıf türetmeniz gerekir. Büyük olasılıkla, uygulamada `CMDIChildWnd` tek başvuru uygulamanızın `InitInstance` üye işlevinde yer alır.
 
-MDI uygulamasında kullanılan varsayılan pencere stili, **WS_CHILD**, **WS_OVERLAPPEDWINDOW**ve **FWS_ADDTOTITLE** stillerinin bir birleşimidir. Bir MDI uygulamasının alt pencerelerinin pencere özniteliklerini değiştirmek için, sınıfınızın sınıfından türetilmiş, [ön](../mfc/reference/cwnd-class.md#precreatewindow) planda olan `CMDIChildWnd`işlevini geçersiz kılın. Örneğin:
+Bir MDI uygulamasında kullanılan varsayılan pencere stili, **WS_CHILD,** **WS_OVERLAPPEDWINDOW**ve **FWS_ADDTOTITLE** stillerinin bir birleşimidir. Bir MDI uygulamasının alt pencerelerinin pencere özniteliklerini değiştirmek için, sınıfınızda `CMDIChildWnd`türetilen [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) işlevini geçersiz kılın. Örneğin:
 
 [!code-cpp[NVC_MFCDocView#16](../mfc/codesnippet/cpp/changing-the-styles-of-a-window-created-by-mfc_3.cpp)]
 
-Bu kod, EkranıKapla düğmesi olmadan MDI alt pencereleri oluşturur.
+Bu kod, MDI alt pencerelerini Üst düzeye çıkarma düğmesi olmadan oluşturur.
 
-### <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
+### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilmek istiyorum
 
 - [Windows stilleri](../mfc/reference/styles-used-by-mfc.md#window-styles)
 
-- [Çerçeve pencere stilleri](../mfc/frame-window-styles-cpp.md)
+- [Çerçeve penceresi stilleri](../mfc/frame-window-styles-cpp.md)
 
 - [Pencere stilleri](/windows/win32/winmsg/window-styles)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çerçeve pencere stilleri](../mfc/frame-window-styles-cpp.md)
+[Çerçeve-Pencere Stilleri](../mfc/frame-window-styles-cpp.md)

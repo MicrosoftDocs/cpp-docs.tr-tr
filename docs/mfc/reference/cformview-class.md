@@ -1,5 +1,5 @@
 ---
-title: CFormView Class
+title: CFormView Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CFormView
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - CFormView [MFC], CFormView
 - CFormView [MFC], IsInitDlgCompleted
 ms.assetid: a99ec313-36f0-4f28-9d2b-de11de14ac19
-ms.openlocfilehash: 8a0c11352ffab37f50ede5c67aa810fa20e838ed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a9b897c661731878f0bf78c9d04ae7c4ba28cd42
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182011"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81373796"
 ---
-# <a name="cformview-class"></a>CFormView Class
+# <a name="cformview-class"></a>CFormView Sınıfı
 
 Form görünümleri için kullanılan taban sınıf.
 
@@ -31,47 +31,47 @@ class CFormView : public CScrollView
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CFormView::CFormView](#cformview)|Oluşturur bir `CFormView` nesne.|
+|[CFormView::CFormView](#cformview)|Bir `CFormView` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CFormView::IsInitDlgCompleted](#isinitdlgcompleted)|Eşitleme başlatma sırasında kullanılır.|
+|[CFormView::IsInitDlgTamamlandı](#isinitdlgcompleted)|Başlatma sırasında eşitleme için kullanılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir form görünümü denetimleri içeren temel bir görünümüdür. Bu denetimlerin bir iletişim şablonunu kaynak göre düzenlenmiştir. Kullanım `CFormView` uygulamanızda forms istiyorsanız. Bu görünümler destek dikey kaydırma kullanarak, gerektiği şekilde [CScrollView](../../mfc/reference/cscrollview-class.md) işlevselliği.
+Form görünümü temelde denetimleri içeren bir görünümdür. Bu denetimler, iletişim şablonu kaynağına göre düzenlenir. Başvurunuzdaki formları istiyorsanız kullanın. `CFormView` Bu görünümler, [gerektiğinde CScrollView](../../mfc/reference/cscrollview-class.md) işlevini kullanarak kaydırmayı destekler.
 
-Olduğunuzda [form tabanlı bir uygulama oluşturma](../../mfc/reference/creating-a-forms-based-mfc-application.md), kendi görünüm sınıfı dayandırabilir `CFormView`, form tabanlı bir uygulamayı kolaylaştırır.
+[Form Tabanlı Bir Uygulama Oluştururken,](../../mfc/reference/creating-a-forms-based-mfc-application.md)görünüm sınıfını `CFormView`form tabanlı bir uygulama haline getirerek temel alabilirsiniz.
 
-Ayrıca yeni ekleyebilirsiniz [Form konuları](../../mfc/form-views-mfc.md) belge-görünüm-tabanlı uygulamalara. Uygulamanızı forms başlangıçta desteklemiyor olsa da, Visual C++, yeni bir form eklediğinizde bu desteği ekler.
+Belge görünümü tabanlı uygulamalara yeni [Form Konuları](../../mfc/form-views-mfc.md) da ekleyebilirsiniz. Uygulamanız başlangıçta formları desteklememiş olsa bile, yeni bir form eklediğinizde Visual C++ bu desteği ekler.
 
-MFC Uygulama Sihirbazı ve sınıf Ekle komutu form tabanlı uygulamalar oluşturmak için tercih edilen yöntemlerdir. Bu yöntemleri kullanarak olmadan bir form tabanlı uygulama oluşturma gerekiyorsa bkz [form tabanlı bir uygulama oluşturma](../../mfc/reference/creating-a-forms-based-mfc-application.md).
+MFC Uygulama Sihirbazı ve Sınıf Ekle komutu form tabanlı uygulamalar oluşturmak için tercih edilen yöntemlerdir. Bu yöntemleri kullanmadan forms tabanlı bir uygulama oluşturmanız gerekiyorsa, [bkz.](../../mfc/reference/creating-a-forms-based-mfc-application.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CView](../../mfc/reference/cview-class.md)
+[Cview](../../mfc/reference/cview-class.md)
 
-[CScrollView](../../mfc/reference/cscrollview-class.md)
+[Cscrollview](../../mfc/reference/cscrollview-class.md)
 
 `CFormView`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxext.h
+**Üstbilgi:** afxext.h
 
-##  <a name="cformview"></a>  CFormView::CFormView
+## <a name="cformviewcformview"></a><a name="cformview"></a>CFormView::CFormView
 
-Oluşturur bir `CFormView` nesne.
+Bir `CFormView` nesne inşa eder.
 
 ```
 CFormView(LPCTSTR lpszTemplateName);
@@ -81,19 +81,19 @@ CFormView(UINT nIDTemplate);
 ### <a name="parameters"></a>Parametreler
 
 *lpszTemplateName*<br/>
-Bir iletişim şablonunu kaynak adı null ile sonlandırılmış bir dize içerir.
+İletişim şablonu kaynağının adı olan null-sonlandırılan bir dize içerir.
 
 *nIDTemplate*<br/>
-Bir iletişim şablonunu kaynak kimliği numarasını içerir.
+İletişim şablonu kaynağının kimlik numarasını içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir türde bir nesne oluşturduğunuzda, türetilen `CFormView`, Görünüm nesnesi oluşturup, görünüm temel iletişim kaynağı tanımlamak için oluşturucular birini çağırın. Kaynak adı (pass bağımsız değişkeni olarak bir dize oluşturucuya) veya (pass bağımsız değişkeni olarak bir işaretsiz tamsayı) Kimliğini tanımlayabilirsiniz.
+Türetilen bir tür bir nesne `CFormView`oluşturduğunuzda, görünüm nesnesi oluşturmak ve görünümün dayandığı iletişim kaynağını tanımlamak için oluşturuculardan birini çağırın. Kaynağı ada göre (bir dizeyi bağımsız değişken olarak oluşturucuya geçirin) veya kimliğiyle (bağımsız değişken olarak imzasız bir tamsayı geçirin) tanımlayabilirsiniz.
 
-Form görünümü penceresi ve alt denetimler kadar oluşturulmaz `CWnd::Create` çağrılır. `CWnd::Create` Belge şablonu tarafından yönetildiği için belge ve görünüm oluşturma işleminin bir parçası olarak framework tarafından çağırılır.
+Form görünümü penceresi ve alt denetimler `CWnd::Create` çağrılana kadar oluşturulmaz. `CWnd::Create`belge ve görünüm oluşturma işleminin bir parçası olarak çerçeve tarafından çağrılır, belge şablonu tarafından yönlendirilir.
 
 > [!NOTE]
->  Türetilmiş sınıfınızın *gerekir* kendi Oluşturucu sağlayın. Oluşturucusunun içinde bir oluşturucu çağırmak `CFormView::CFormView`, kaynak adı veya kimliği önceki sınıfına genel bakış ' gösterildiği gibi bir bağımsız değişken olarak.
+> Türemiş sınıfınız kendi oluşturucusu *sağlamalıdır.* Oluşturucuolarak, önceki sınıfgenel `CFormView::CFormView`bakışta gösterildiği gibi bir bağımsız değişken olarak kaynak adı veya kimlik ile, oluşturucu çağırın.
 
 ### <a name="example"></a>Örnek
 
@@ -101,9 +101,9 @@ Form görünümü penceresi ve alt denetimler kadar oluşturulmaz `CWnd::Create`
 
 [!code-cpp[NVC_MFCDocView#91](../../mfc/codesnippet/cpp/cformview-class_2.cpp)]
 
-##  <a name="isinitdlgcompleted"></a>  CFormView::IsInitDlgCompleted
+## <a name="cformviewisinitdlgcompleted"></a><a name="isinitdlgcompleted"></a>CFormView::IsInitDlgTamamlandı
 
-MFC tarafından diğer işlemleri gerçekleştirmeden önce bu başlatma tamamlandı emin olmak için kullanılır.
+Diğer işlemleri gerçekleştirmeden önce başlatmanın tamamlandığından emin olmak için MFC tarafından kullanılır.
 
 ```
 BOOL IsInitDlgCompleted() const;
@@ -111,12 +111,12 @@ BOOL IsInitDlgCompleted() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu iletişim kutusunu başlatma işlevi tamamlandıysa true.
+Bu iletişim kutusunun başlatma işlevi tamamlandıysa doğru.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
-[MFC örnek VIEWEX](../../overview/visual-cpp-samples.md)<br/>
+[MFC Örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC Örnek VIEWEX](../../overview/visual-cpp-samples.md)<br/>
 [CScrollView Sınıfı](../../mfc/reference/cscrollview-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CDialog Sınıfı](../../mfc/reference/cdialog-class.md)<br/>

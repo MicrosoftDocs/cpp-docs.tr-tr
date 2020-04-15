@@ -1,5 +1,5 @@
 ---
-title: CMFCRibbonEdit sınıfı
+title: CMFCRibbonEdit Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonEdit
@@ -73,20 +73,20 @@ helpviewer_keywords:
 - CMFCRibbonEdit [MFC], SetTextAlign
 - CMFCRibbonEdit [MFC], SetWidth
 ms.assetid: 9b85f1f2-446b-454e-9af9-104fdad8a897
-ms.openlocfilehash: 4f973074fbec3d04b1c1a74852b02ff2564217c1
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ab621a05f9b658eee9babb14e257680fa95e0f96
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504944"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375172"
 ---
-# <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit sınıfı
+# <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit Sınıfı
 
-Şerit çubuğunda bulunan bir düzenleme denetimi uygular.
+Şerit çubuğunda bulunan bir denetim uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class CMFCRibbonEdit : public CMFCRibbonButton
 ```
 
@@ -94,65 +94,65 @@ class CMFCRibbonEdit : public CMFCRibbonButton
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonEdit:: CMFCRibbonEdit](#cmfcribbonedit)|Bir `CMFCRibbonEdit` nesnesi oluşturur.|
+|[CMFCRibbonEdit::CMFCRibbonEdit](#cmfcribbonedit)|Bir `CMFCRibbonEdit` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonEdit:: Canbeesnetilen](#canbestretched)|`CMFCRibbonEdit` Denetimin yüksekliğinin bir şerit satırının yüksekliğine dikey olarak artırıp artamayacağını gösterir.|
-|[CMFCRibbonEdit:: CMFCRibbonEdit](#cmfcribbonedit)|Bir `CMFCRibbonEdit` nesnesi oluşturur.|
-|[CMFCRibbonEdit:: CopyFrom](#copyfrom)|Belirtilen `CMFCRibbonEdit` nesnenin durumunu geçerli `CMFCRibbonEdit` nesneye kopyalar.|
-|[CMFCRibbonEdit:: CreateEdit](#createedit)|`CMFCRibbonEdit` Nesnesi için yeni bir metin kutusu oluşturur.|
-|[CMFCRibbonEdit::D estroyCtrl](#destroyctrl)|`CMFCRibbonEdit` Nesneyi yok eder.|
-|[CMFCRibbonEdit::D ropDownList](#dropdownlist)|Liste kutusunu kapatır.|
-|[CMFCRibbonEdit:: EnableSpinButtons](#enablespinbuttons)|Metin kutusu için döndürme düğmesinin aralığını belirler ve ayarlar.|
-|[CMFCRibbonEdit:: GetCompactSize](#getcompactsize)|`CFMCRibbonEdit` Nesnenin sıkıştırılmış boyutunu alır.|
-|[CMFCRibbonEdit:: GetEditText](#getedittext)|Metin kutusundaki metni alır.|
-|[CMFCRibbonEdit:: GetIntermediateSize](#getintermediatesize)|`CMFCRibbonEdit` Nesnenin ara boyutunu alır.|
-|[CMFCRibbonEdit:: GetTextAlign](#gettextalign)|Metin kutusuna metnin hizalamasını alır.|
-|[CMFCRibbonEdit:: GetWidth](#getwidth)|`CMFCRibbonEdit` Denetimin piksel cinsinden genişliğini alır.|
-|[CMFCRibbonEdit:: HasCompactMode](#hascompactmode)|`CMFCRibbonEdit` Denetim için görüntü boyutunun sıkıştırılamayacağını belirtir.|
-|[CMFCRibbonEdit:: HasFocus](#hasfocus)|`CMFCRIbbonEdit` Denetimin odağa sahip olup olmadığını gösterir.|
-|[CMFCRibbonEdit:: HasLargeMode](#haslargemode)|`CMFCRibbonEdit` Denetimin görüntüleme boyutunun büyük olup olmadığını gösterir.|
-|[CMFCRibbonEdit:: HasSpinButtons](#hasspinbuttons)|Metin kutusunun bir döndürme düğmesine sahip olup olmadığını gösterir.|
-|[CMFCRibbonEdit:: ısvurgulu](#ishighlighted)|`CMFCRibbonEdit` Denetimin vurgulanıp vurgulanmadığını gösterir.|
-|[CMFCRibbonEdit:: OnAfterChangeRect](#onafterchangerect)|`CMFCRibbonEdit` Denetim için görüntü dikdörtgeninin boyutları değiştiğinde Framework tarafından çağırılır.|
-|[CMFCRibbonEdit:: OnDraw](#ondraw)|`CMFCRibbonEdit` Denetimi çizmek için Framework tarafından çağırılır.|
-|[CMFCRibbonEdit:: Ondrawlabelandımage](#ondrawlabelandimage)|`CMFCRibbonEdit` Denetim için etiket ve resim çizmek üzere Framework tarafından çağırılır.|
-|[CMFCRibbonEdit:: OnDrawOnList](#ondrawonlist)|Bir komut listesi kutusunda `CMFCRibbonEdit` denetimi çizmek için Framework tarafından çağırılır.|
-|[CMFCRibbonEdit:: OnEnable](#onenable)|`CMFCRibbonEdit` Denetimi etkinleştirmek veya devre dışı bırakmak için Framework tarafından çağırılır.|
-|[CMFCRibbonEdit:: OnHighlight](#onhighlight)|İşaretçi `CMFCRibbonEdit` denetimin sınırları içine girdiğinde veya ayrıldığında Framework tarafından çağırılır.|
-|[CMFCRibbonEdit:: OnKey](#onkey)|Kullanıcı bir KeyTip tuşuna bastığında ve `CMFCRibbonEdit` denetim odağa sahip olduğunda Framework tarafından çağırılır.|
-|[CMFCRibbonEdit:: Onlbuttonazaltma](#onlbuttondown)|Kullanıcı denetimdeki sol fare düğmesine bastığında `CMFCRibbonEdit` denetimi güncelleştirmek için Framework tarafından çağırılır.|
-|[CMFCRibbonEdit:: OnLButtonUp](#onlbuttonup)|Kullanıcı sol fare düğmesini bıraktığında Framework tarafından çağırılır.|
-|[CMFCRibbonEdit:: OnRTLChanged](#onrtlchanged)|Düzen yön değiştirdiğinde `CMFCRibbonEdit` denetimi güncelleştirmek için Framework tarafından çağırılır.|
-|[CMFCRibbonEdit:: OnShow](#onshow)|`CMFCRibbonEdit` Denetimi göstermek veya gizlemek için Framework tarafından çağırılır.|
-|[CMFCRibbonEdit:: yeniden Çiz](#redraw)|`CMFCRibbonEdit` Denetimin görüntüsünü güncelleştirir.|
-|[CMFCRibbonEdit:: SetACCData](#setaccdata)|`CMFCRibbonEdit` Nesne için erişilebilirlik verilerini ayarlar.|
-|[CMFCRibbonEdit:: SetEditText](#setedittext)|Metin kutusundaki metni ayarlar.|
-|[CMFCRibbonEdit:: SetTextAlign](#settextalign)|Metin kutusunun metin hizalamasını ayarlar.|
-|[CMFCRibbonEdit:: SetWidth](#setwidth)|`CMFCRibbonEdit` Denetimin metin kutusunun genişliğini ayarlar.|
+|[CMFCRibbonEdit::CanBeStretched](#canbestretched)|`CMFCRibbonEdit` Denetimyüksekliğinin dikey olarak şerit satırının yüksekliğine yükselip artamayacağını gösterir.|
+|[CMFCRibbonEdit::CMFCRibbonEdit](#cmfcribbonedit)|Bir `CMFCRibbonEdit` nesne inşa eder.|
+|[CMFCRibbonEdit::CopyFrom](#copyfrom)|Belirtilen `CMFCRibbonEdit` nesnenin durumunu geçerli `CMFCRibbonEdit` nesneye kopyalar.|
+|[CMFCRibbonEdit::CreateEdit](#createedit)|`CMFCRibbonEdit` Nesne için yeni bir metin kutusu oluşturur.|
+|[CMFCRibbonEdit::DestroyCtrl](#destroyctrl)|Nesneyi `CMFCRibbonEdit` yok eder.|
+|[CMFCRibbonEdit::DropDownList](#dropdownlist)|Liste kutusunu düşürür.|
+|[CMFCRibbonEdit::EnableSpinButtons](#enablespinbuttons)|Metin kutusu için döndürme düğmesinin aralığını etkinleştirer ve ayarlar.|
+|[CMFCRibbonEdit::GetCompactSize](#getcompactsize)|`CFMCRibbonEdit` Nesnenin kompakt boyutunu alır.|
+|[CMFCRibbonEdit::GetEditText](#getedittext)|Metin kutusundaki metni alır.|
+|[CMFCRibbonEdit::GetIntermediateSize](#getintermediatesize)|`CMFCRibbonEdit` Nesnenin ara boyutunu alır.|
+|[CMFCRibbonEdit::GetTextAlign](#gettextalign)|Metin kutusundaki metnin hizalanmasını alır.|
+|[CMFCRibbonEdit::GetWidth](#getwidth)|`CMFCRibbonEdit` Denetimin genişliğini, piksel olarak alır.|
+|[CMFCRibbonEdit::HasCompactMode](#hascompactmode)|Denetimin ekran boyutunun `CMFCRibbonEdit` kompakt olup olmadığını gösterir.|
+|[CMFCRibbonEdit::HasFocus](#hasfocus)|Denetimin `CMFCRIbbonEdit` odak noktası olup olmadığını gösterir.|
+|[CMFCRibbonEdit::HasLargeMode](#haslargemode)|Denetimin görüntü boyutunun `CMFCRibbonEdit` büyük olup olmadığını gösterir.|
+|[CMFCRibbonEdit::HasSpinButtons](#hasspinbuttons)|Metin kutusunun döndürme düğmesi olup olmadığını gösterir.|
+|[CMFCRibbonEdit::Vurgulanmış](#ishighlighted)|Denetimin `CMFCRibbonEdit` vurgulanıp vurgulanmadığını gösterir.|
+|[CMFCRibbonEdit::OnAfterChangeRect](#onafterchangerect)|Denetim için ekran dikdörtgeninin boyutları değiştiğinde `CMFCRibbonEdit` çerçeve tarafından çağrılır.|
+|[CMFCRibbonEdit::OnDraw](#ondraw)|Kontrolü çekmek için çerçeve `CMFCRibbonEdit` tarafından çağrıldı.|
+|[CMFCRibbonEdit::OnDrawLabelAndImage](#ondrawlabelandimage)|`CMFCRibbonEdit` Denetim için etiket ve görüntü çizmek için çerçeve tarafından çağrılır.|
+|[CMFCRibbonEdit::OnDrawOnList](#ondrawonlist)|Bir komut listesi kutusunda `CMFCRibbonEdit` denetim çizmek için çerçeve tarafından çağrılır.|
+|[CMFCRibbonEdit::OnEnable](#onenable)|`CMFCRibbonEdit` Denetimi etkinleştirmek veya devre dışı etmek için çerçeve tarafından çağrılır.|
+|[CMFCRibbonEdit::OnHighlight](#onhighlight)|İşaretçi `CMFCRibbonEdit` denetimin sınırlarını girdiğinde veya ayrıldığında çerçeve tarafından çağrılır.|
+|[CMFCRibbonEdit::OnKey](#onkey)|Kullanıcı bir tuş ucuna bastığında ve `CMFCRibbonEdit` denetim odaknoktası olduğunda çerçeve tarafından çağrılır.|
+|[CMFCRibbonEdit::OnLButtonDown](#onlbuttondown)|Kullanıcı `CMFCRibbonEdit` denetimde sol fare düğmesine bastığında denetimi güncelleştirmek için çerçeve tarafından çağrılır.|
+|[CMFCRibbonEdit::OnLButtonUp](#onlbuttonup)|Kullanıcı sol fare düğmesini serbest bıraktığında çerçeve tarafından çağrılır.|
+|[CMFCRibbonEdit::OnRTLChanged](#onrtlchanged)|Düzen yön değiştirdiğinde `CMFCRibbonEdit` denetimi güncelleştirmek için çerçeve tarafından çağrılır.|
+|[CMFCRibbonEdit::OnShow](#onshow)|Denetimi göstermek veya gizlemek için `CMFCRibbonEdit` çerçeve tarafından çağrılır.|
+|[CMFCRibbonEdit::Yeniden çiz](#redraw)|Denetimin ekranını `CMFCRibbonEdit` güncelleştirir.|
+|[CMFCRibbonEdit::SetACCData](#setaccdata)|`CMFCRibbonEdit` Nesneiçin erişilebilirlik verilerini ayarlar.|
+|[CMFCRibbonEdit::SetEditText](#setedittext)|Metin kutusundaki metni ayarlar.|
+|[CMFCRibbonEdit::SetTextAlign](#settextalign)|Metin kutusunun metin hizasını ayarlar.|
+|[CMFCRibbonEdit::Set Width](#setwidth)|`CMFCRibbonEdit` Denetim için metin kutusunun genişliğini ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir `CMFCRibbonEdit` nesne oluşturmayı, düzenleme denetiminin yanındaki döndürme düğmelerini göstermeyi ve düzenleme denetiminin metnini ayarlamayı gösterir. Bu kod parçacığı, [MS Office 2007 demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, bir `CMFCRibbonEdit` nesnenin nasıl oluşturulabildiğini, döndürme denetiminin yanındaki döndürme düğmelerini nasıl göstereceğimi ve denetim metnini nasıl ayarlayamacını gösterir. Bu kod parçacığı MS Office [2007 Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#7](../../mfc/reference/codesnippet/cpp/cmfcribbonedit-class_1.cpp)]
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxRibbonEdit. h
+**Üstbilgi:** afxRibbonEdit.h
 
-##  <a name="canbestretched"></a>CMFCRibbonEdit:: Canbeesnetilen
+## <a name="cmfcribboneditcanbestretched"></a><a name="canbestretched"></a>CMFCRibbonEdit::CanBeStretched
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin yüksekliğinin bir şerit satırının yüksekliğine dikey olarak artırıp artamayacağını gösterir.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin yüksekliğinin dikey olarak bir şerit satırının yüksekliğine yükselip artamayacağını gösterir.
 
-```
+```cpp
 virtual BOOL CanBeStretched();
 ```
 
@@ -162,11 +162,11 @@ Her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="cmfcribbonedit"></a>CMFCRibbonEdit:: CMFCRibbonEdit
+## <a name="cmfcribboneditcmfcribbonedit"></a><a name="cmfcribbonedit"></a>CMFCRibbonEdit::CMFCRibbonEdit
 
-Bir [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesnesi oluşturur.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesnesi oluşturuyor.
 
-```
+```cpp
 CMFCRibbonEdit(
     UINT nID,
     int nWidth,
@@ -178,44 +178,44 @@ CMFCRibbonEdit();
 
 ### <a name="parameters"></a>Parametreler
 
-*NID*<br/>
-'ndaki `CMFCRibbonEdit` Denetim için komut kimliği.
+*Nıd*<br/>
+[içinde] `CMFCRibbonEdit` Denetim için komut kimliği.
 
-*nWidth*<br/>
-'ndaki `CMFCRibbonEdit` Denetimin metin kutusunun piksel cinsinden genişliği.
+*Nwidth*<br/>
+[içinde] `CMFCRibbonEdit` Denetim için metin kutusunun piksel genişliği.
 
-*lpszLabel*<br/>
-'ndaki `CMFCRibbonEdit` Denetimin etiketi.
+*lpszEtiket*<br/>
+[içinde] `CMFCRibbonEdit` Kontrol için etiket.
 
-*Ngörüntü*<br/>
-'ndaki `CMFCRibbonEdit` Denetim için kullanılacak küçük görüntünün dizini. Küçük görüntülerin koleksiyonu üst şerit kategorisi tarafından korunur.
+*nImage*<br/>
+[içinde] Denetim için kullanılacak küçük görüntü `CMFCRibbonEdit` dizini. Küçük görüntülerin toplanması üst şerit kategorisi tarafından korunur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMFCRibbonEdit` Denetim büyük bir görüntü kullanmaz.
+Denetim `CMFCRibbonEdit` büyük bir görüntü kullanmaz.
 
-##  <a name="copyfrom"></a>CMFCRibbonEdit:: CopyFrom
+## <a name="cmfcribboneditcopyfrom"></a><a name="copyfrom"></a>CMFCRibbonEdit::CopyFrom
 
 Belirtilen [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesnesinin durumunu geçerli [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesnesine kopyalar.
 
-```
+```cpp
 virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*YN*<br/>
-'ndaki Kaynak `CMFCRibbonEdit` nesne.
+*src*<br/>
+[içinde] Kaynak `CMFCRibbonEdit` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Src* parametresinin türünde `CMFCRibbonEdit`olması gerekir.
+*Src* parametresi türünde `CMFCRibbonEdit`olmalıdır.
 
-##  <a name="createedit"></a>CMFCRibbonEdit:: CreateEdit
+## <a name="cmfcribboneditcreateedit"></a><a name="createedit"></a>CMFCRibbonEdit::CreateEdit
 
 [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesnesi için yeni bir metin kutusu oluşturur.
 
-```
+```cpp
 virtual CMFCRibbonRichEditCtrl* CreateEdit(
     CWnd* pWndParent,
     DWORD dwEditStyle);
@@ -224,58 +224,58 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
 ### <a name="parameters"></a>Parametreler
 
 *pWndParent*<br/>
-'ndaki `CMFCRibbonEdit` Nesnenin üst penceresine yönelik bir işaretçi.
+[içinde] `CMFCRibbonEdit` Nesnenin ana penceresine bir işaretçi.
 
 *dwEditStyle*<br/>
-'ndaki Metin kutusunun stilini belirtir. Açıklamalar bölümünde listelenen pencere stillerini, Windows SDK açıklanan [düzenleme denetim stilleriyle](/windows/win32/Controls/edit-control-styles) birleştirebilirsiniz.
+[içinde] Metin kutusunun stilini belirtir. Açıklamalar bölümünde listelenen pencere stillerini Windows SDK'da açıklanan [denetim stilleriyle](/windows/win32/Controls/edit-control-styles) birleştirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa yeni metin kutusu işaretçisi. Aksi takdirde, NULL.
+Yöntem başarılı olduysa yeni metin kutusuna işaretçi; aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel metin kutusu oluşturmak için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
+Özel bir metin kutusu oluşturmak için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-Aşağıdaki [pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#window-styles) bir metin kutusuna uygulayabilirsiniz:
+Aşağıdaki [Pencere Stilleri'ni](../../mfc/reference/styles-used-by-mfc.md#window-styles) bir metin kutusuna uygulayabilirsiniz:
 
-- **WS_CHILD**
+- **Ws_chıld**
 
-- **WS_VISIBLE**
+- **Ws_vısıble**
 
-- **WS_DISABLED**
+- **Ws_dısabled**
 
 - **WS_GROUP**
 
 - **WS_TABSTOP**
 
-##  <a name="destroyctrl"></a>CMFCRibbonEdit::D estroyCtrl
+## <a name="cmfcribboneditdestroyctrl"></a><a name="destroyctrl"></a>CMFCRibbonEdit::DestroyCtrl
 
 [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesnesini yok eder.
 
-```
+```cpp
 virtual void DestroyCtrl();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="dropdownlist"></a>CMFCRibbonEdit::D ropDownList
+## <a name="cmfcribboneditdropdownlist"></a><a name="dropdownlist"></a>CMFCRibbonEdit::DropDownList
 
-Liste kutusunu kapatır.
+Liste kutusunu düşürür.
 
-```
+```cpp
 virtual void DropDownList();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak bu yöntem hiçbir şey yapmaz. Liste kutusunu aşağı eklemek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem hiçbir şey yapmaz. Liste kutusunu düşürmek için bu yöntemi geçersiz kılın.
 
-##  <a name="enablespinbuttons"></a>CMFCRibbonEdit:: EnableSpinButtons
+## <a name="cmfcribboneditenablespinbuttons"></a><a name="enablespinbuttons"></a>CMFCRibbonEdit::EnableSpinButtons
 
-Metin kutusu için döndürme düğmesinin aralığını belirler ve ayarlar.
+Metin kutusu için döndürme düğmesinin aralığını etkinleştirer ve ayarlar.
 
-```
+```cpp
 void EnableSpinButtons(
     int nMin,
     int nMax);
@@ -283,40 +283,40 @@ void EnableSpinButtons(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ngünde en az*<br/>
-'ndaki Döndürme düğmesinin en küçük değeri.
+*nMin*<br/>
+[içinde] Döndürme düğmesinin minimum değeri.
 
-*Ngünde en çok*<br/>
-'ndaki Döndürme düğmesinin en büyük değeri.
+*nMax*<br/>
+[içinde] Döndürme düğmesinin maksimum değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürme düğmeleri, bir yukarı ve aşağı ok görüntüler ve kullanıcıların sabit bir değer kümesi arasında hareket kurmasını sağlar.
+Döndürme düğmeleri yukarı ve aşağı ok görüntüler ve kullanıcıların sabit bir değer kümesi nde hareket etmesini sağlar.
 
-##  <a name="getcompactsize"></a>CMFCRibbonEdit:: GetCompactSize
+## <a name="cmfcribboneditgetcompactsize"></a><a name="getcompactsize"></a>CMFCRibbonEdit::GetCompactSize
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesnesinin sıkıştırılmış boyutunu alır.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesnesinin kompakt boyutunu alır.
 
-```
+```cpp
 virtual CSize GetCompactSize(CDC* pDC);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki `CMFCRibbonEdit` Nesne için bir cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Nesne için aygıt bağlamını `CMFCRibbonEdit` işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CMFCRibbonEdit` Nesnenin sıkıştırılmış boyutu.
+Nesnenin `CMFCRibbonEdit` kompakt boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getedittext"></a>CMFCRibbonEdit:: GetEditText
+## <a name="cmfcribboneditgetedittext"></a><a name="getedittext"></a>CMFCRibbonEdit::GetEditText
 
 Metin kutusundaki metni alır.
 
-```
+```cpp
 CString GetEditText() const;
 ```
 
@@ -326,73 +326,73 @@ Metin kutusundaki metin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getintermediatesize"></a>CMFCRibbonEdit:: GetIntermediateSize
+## <a name="cmfcribboneditgetintermediatesize"></a><a name="getintermediatesize"></a>CMFCRibbonEdit::GetIntermediateSize
 
 [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesnesinin ara boyutunu alır.
 
-```
+```cpp
 virtual CSize GetIntermediateSize(CDC* pDC);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki `CMFCRibbonEdit` Nesne için bir cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Nesne için aygıt bağlamını `CMFCRibbonEdit` işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CMFCRibbonEdit` Nesnenin ara boyutu.
+Nesnenin `CMFCRibbonEdit` ara boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="gettextalign"></a>CMFCRibbonEdit:: GetTextAlign
+## <a name="cmfcribboneditgettextalign"></a><a name="gettextalign"></a>CMFCRibbonEdit::GetTextAlign
 
-Metin kutusuna metnin hizalamasını alır.
+Metin kutusundaki metnin hizalanmasını alır.
 
-```
+```cpp
 int GetTextAlign() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Metin hizalaması numaralandırılmış değeri. Olası değerler için açıklamalar bölümüne bakın.
+Metin hizalama numaralandırılmış değer. Olası değerler için Açıklamalar bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen değer aşağıdaki düzenleme denetimi stillerinden biridir:
+Döndürülen değer aşağıdaki edit denetim stillerinden biridir:
 
 - Sol hizalama için **ES_LEFT**
 
-- **ES_CENTER** for Center hizalaması
+- Merkez hizalama için **ES_CENTER**
 
-- Sağ hizalama için **ES_RIGHT**
+- Doğru hizalama için **ES_RIGHT**
 
-Bu stiller hakkında daha fazla bilgi için bkz. [Denetim stillerini düzenleme](/windows/win32/Controls/edit-control-styles).
+Bu stiller hakkında daha fazla bilgi için Denetim [Stillerini Edit'e](/windows/win32/Controls/edit-control-styles)bakın.
 
-##  <a name="getwidth"></a>CMFCRibbonEdit:: GetWidth
+## <a name="cmfcribboneditgetwidth"></a><a name="getwidth"></a>CMFCRibbonEdit::GetWidth
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin piksel cinsinden genişliğini alır.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin piksel olarak genişliğini alır.
 
-```
+```cpp
 int GetWidth(BOOL bInFloatyMode = FALSE) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Binfloatyımode*<br/>
-'ndaki `CMFCRibbonEdit` Denetim kayan moddaysa true, aksi durumda false.
+*bInFloatyMode*<br/>
+[içinde] `CMFCRibbonEdit` Denetim kayan moddaysa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CMFCRibbonEdit` Denetimin piksel cinsinden genişliği.
+Denetimin `CMFCRibbonEdit` piksel genişliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="hascompactmode"></a>CMFCRibbonEdit:: HasCompactMode
+## <a name="cmfcribbonedithascompactmode"></a><a name="hascompactmode"></a>CMFCRibbonEdit::HasCompactMode
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin görüntüleme boyutunun sıkıştırılamayacağını gösterir.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimiiçin ekran boyutunun kompakt olup olmadığını gösterir.
 
-```
+```cpp
 virtual BOOL HasCompactMode() const;
 ```
 
@@ -402,27 +402,27 @@ Her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman TRUE değerini döndürür. Görüntü boyutunun sıkıştıramayacağını belirtmek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman TRUE döndürür. Ekran boyutunun kompakt olup olmadığını belirtmek için bu yöntemi geçersiz kılın.
 
-##  <a name="hasfocus"></a>CMFCRibbonEdit:: HasFocus
+## <a name="cmfcribbonedithasfocus"></a><a name="hasfocus"></a>CMFCRibbonEdit::HasFocus
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin odağa sahip olup olmadığını gösterir.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin odak noktası olup olmadığını gösterir.
 
-```
+```cpp
 virtual BOOL HasFocus() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CMFCRibbonEdit` Denetim odağa sahipse true; Aksi takdirde false.
+Doğru kontrol `CMFCRibbonEdit` odak varsa; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="haslargemode"></a>CMFCRibbonEdit:: HasLargeMode
+## <a name="cmfcribbonedithaslargemode"></a><a name="haslargemode"></a>CMFCRibbonEdit::HasLargeMode
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimi için görüntüleme boyutunun büyük olup olmadığını gösterir.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin ekran boyutunun büyük olup olmadığını gösterir.
 
-```
+```cpp
 virtual BOOL HasLargeMode() const;
 ```
 
@@ -432,86 +432,86 @@ Her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman FALSE döndürür. Görüntülenen boyutun büyük olup olmadığını belirtmek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman FALSE döndürür. Görüntü boyutunun büyük olup olmadığını belirtmek için bu yöntemi geçersiz kılın.
 
-##  <a name="hasspinbuttons"></a>CMFCRibbonEdit:: HasSpinButtons
+## <a name="cmfcribbonedithasspinbuttons"></a><a name="hasspinbuttons"></a>CMFCRibbonEdit::HasSpinButtons
 
-Metin kutusunun bir döndürme düğmesine sahip olup olmadığını gösterir.
+Metin kutusunun döndürme düğmesi olup olmadığını gösterir.
 
-```
+```cpp
 virtual BOOL HasSpinButtons() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Metin kutusunda bir döndürme düğmesi varsa doğru; Aksi halde yanlış.
+Metin kutusunda döndürme düğmesi varsa TRUE; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="ishighlighted"></a>CMFCRibbonEdit:: ısvurgulu
+## <a name="cmfcribboneditishighlighted"></a><a name="ishighlighted"></a>CMFCRibbonEdit::Vurgulanmış
 
 [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin vurgulanıp vurgulanmadığını gösterir.
 
-```
+```cpp
 virtual BOOL IsHighlighted() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CMFCRibbonEdit` Denetim vurgulanmışsa true; Aksi takdirde false.
+`CMFCRibbonEdit` Denetim vurgulanırsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onafterchangerect"></a>CMFCRibbonEdit:: OnAfterChangeRect
+## <a name="cmfcribboneditonafterchangerect"></a><a name="onafterchangerect"></a>CMFCRibbonEdit::OnAfterChangeRect
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetim değişikliğinin görüntüleme dikdörtgeninin boyutları değiştiğinde Framework tarafından çağırılır.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimi için ekran dikdörtgeninin boyutları değiştiğinde çerçeve tarafından çağrılır.
 
-```
+```cpp
 virtual void OnAfterChangeRect(CDC* pDC);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki `CMFCRibbonEdit` Denetim için bir cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Denetim için aygıt bağlamını işaretçi. `CMFCRibbonEdit`
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="ondraw"></a>CMFCRibbonEdit:: OnDraw
+## <a name="cmfcribboneditondraw"></a><a name="ondraw"></a>CMFCRibbonEdit::OnDraw
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimini çizmek için Framework tarafından çağırılır.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetim çizmek için çerçeve tarafından çağrıldı.
 
-```
+```cpp
 virtual void OnDraw(CDC* pDC);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki `CMFCRibbonEdit` Denetim için bir cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Denetim için aygıt bağlamını işaretçi. `CMFCRibbonEdit`
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="ondrawlabelandimage"></a>CMFCRibbonEdit:: Ondrawlabelandımage
+## <a name="cmfcribboneditondrawlabelandimage"></a><a name="ondrawlabelandimage"></a>CMFCRibbonEdit::OnDrawLabelAndImage
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimi için etiket ve resim çizmek üzere Framework tarafından çağırılır.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimi için etiket ve görüntü çizmek için çerçeve tarafından çağrılır.
 
-```
+```cpp
 virtual void OnDrawLabelAndImage(CDC* pDC);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki `CMFCRibbonEdit` Denetim için bir cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Denetim için aygıt bağlamını işaretçi. `CMFCRibbonEdit`
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="ondrawonlist"></a>CMFCRibbonEdit:: OnDrawOnList
+## <a name="cmfcribboneditondrawonlist"></a><a name="ondrawonlist"></a>CMFCRibbonEdit::OnDrawOnList
 
-Bir Komutlar liste kutusuna [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimini çizmek için Framework tarafından çağırılır.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimini komutlistesi kutusunda çizmek için çerçeve tarafından çağrılır.
 
-```
+```cpp
 virtual void OnDrawOnList(
     CDC* pDC,
     CString strText,
@@ -523,154 +523,154 @@ virtual void OnDrawOnList(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki `CMFCRibbonEdit` Denetim için bir cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Denetim için aygıt bağlamını işaretçi. `CMFCRibbonEdit`
 
 *strText*<br/>
-'ndaki Görüntüleme metni [ ] (../../mfc/reference/cmfcribbonedit-class.md "CMFCRibbonEdit sınıfı").
+[içinde] Görüntü metni. [ ](../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit sınıfı")
 
 *nTextOffset*<br/>
-'ndaki Liste kutusunun sol tarafındaki görüntü metnine göre piksel cinsinden uzaklık.
+[içinde] Pikselolarak, liste kutusunun sol tarafından ekran metnine kadar uzaklık.
 
 *Rect*<br/>
-'ndaki `CMFCRibbonEdit` Denetimin görüntüleme dikdörtgeni.
+[içinde] Denetim için ekran dikdörtgeni. `CMFCRibbonEdit`
 
 *bIsSelected*<br/>
-'ndaki Bu parametre kullanılmaz.
+[içinde] Bu parametre kullanılmaz.
 
-*Bvurgulu*<br/>
-'ndaki Bu parametre kullanılmaz.
+*bVurgulu*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Komutlar liste kutusu, kullanıcıların hızlı erişim araç çubuğunu özelleştirmesini sağlamak için şerit denetimleri görüntüler.
+Komutlar listesi kutusu, kullanıcıların hızlı erişim araç çubuğunu özelleştirmelerini sağlamak için şerit denetimlerini görüntüler.
 
-##  <a name="onenable"></a>CMFCRibbonEdit:: OnEnable
+## <a name="cmfcribboneditonenable"></a><a name="onenable"></a>CMFCRibbonEdit::OnEnable
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimini etkinleştirmek veya devre dışı bırakmak için Framework tarafından çağırılır.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimini etkinleştirmek veya devre dışı etmek için çerçeve tarafından çağrılır.
 
-```
+```cpp
 virtual void OnEnable(BOOL bEnable);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*bEnable*<br/>
-'ndaki Denetimi etkinleştirmek için TRUE; Denetimi devre dışı bırakmak için FALSE.
+*bEtkinleştir*<br/>
+[içinde] DOĞRU denetimi etkinleştirmek için; Denetimi devre dışı bırakabilmek için YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onhighlight"></a>CMFCRibbonEdit:: OnHighlight
+## <a name="cmfcribboneditonhighlight"></a><a name="onhighlight"></a>CMFCRibbonEdit::OnHighlight
 
-İşaretçi [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin sınırları içine girdiğinde ya da ayrıldığında Framework tarafından çağırılır.
+İşaretçi [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin sınırlarını girdiğinde veya ayrıldığında çerçeve tarafından çağrılır.
 
-```
+```cpp
 virtual void OnHighlight(BOOL bHighlight);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*bHighlight*<br/>
-'ndaki İşaretçi `CMFCRibbonEdit` denetimin sınırları içinde ise true, aksi durumda false.
+*bVurgu*<br/>
+[içinde] İşaretçi `CMFCRibbonEdit` denetimin sınırlarındaysa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onkey"></a>CMFCRibbonEdit:: OnKey
+## <a name="cmfcribboneditonkey"></a><a name="onkey"></a>CMFCRibbonEdit::OnKey
 
-Kullanıcı bir KeyTip tuşuna bastığında ve [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimi odağa sahip olduğunda Framework tarafından çağırılır.
+Kullanıcı bir tuş ucuna bastığında ve [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimi odak noktası olduğunda çerçeve tarafından çağrılır.
 
-```
+```cpp
 virtual BOOL OnKey(BOOL bIsMenuKey);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Bımenukey*<br/>
-'ndaki Keytıp bir açılır menü görüntülüyorsa, doğru. Aksi takdirde, FALSE.
+*bIsMenuKey*<br/>
+[içinde] Anahtar ucu açılır menü yütse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Olay işlenirse doğru; Aksi takdirde, FALSE.
+Olay ele alındıysa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onlbuttondown"></a>CMFCRibbonEdit:: Onlbuttonazaltma
+## <a name="cmfcribboneditonlbuttondown"></a><a name="onlbuttondown"></a>CMFCRibbonEdit::OnLButtonDown
 
-Kullanıcı denetimdeki sol fare düğmesine bastığında [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimini güncellemek için Framework tarafından çağırılır.
+Kullanıcı denetimde sol fare düğmesine bastığında [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimini güncelleştirmek için çerçeve tarafından çağrılır.
 
-```
+```cpp
 virtual void OnLButtonDown(CPoint point);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*seçeneğinin*<br/>
-'ndaki Bu parametre kullanılmaz.
+*Nokta*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onlbuttonup"></a>CMFCRibbonEdit:: OnLButtonUp
+## <a name="cmfcribboneditonlbuttonup"></a><a name="onlbuttonup"></a>CMFCRibbonEdit::OnLButtonUp
 
-Kullanıcı sol fare düğmesini bıraktığında Framework tarafından çağırılır.
+Kullanıcı sol fare düğmesini serbest bıraktığında çerçeve tarafından çağrılır.
 
-```
+```cpp
 virtual void OnLButtonUp(CPoint point);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*seçeneğinin*<br/>
-'ndaki Bu parametre kullanılmaz.
+*Nokta*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onrtlchanged"></a>CMFCRibbonEdit:: OnRTLChanged
+## <a name="cmfcribboneditonrtlchanged"></a><a name="onrtlchanged"></a>CMFCRibbonEdit::OnRTLChanged
 
-Düzen yön değiştirdiğinde [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimini güncellemek için Framework tarafından çağırılır.
+Düzen yön değiştirdiğinde [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimini güncelleştirmek için çerçeve tarafından çağrılır.
 
-```
+```cpp
 virtual void OnRTLChanged(BOOL bIsRTL);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *bIsRTL*<br/>
-'ndaki Düzen sağdan sola ise doğru; Düzen soldan sağa ise FALSE.
+[içinde] Düzen sağdan sola doğruysa DOĞRU; Düzen soldan sağa ise YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onshow"></a>CMFCRibbonEdit:: OnShow
+## <a name="cmfcribboneditonshow"></a><a name="onshow"></a>CMFCRibbonEdit::OnShow
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimini göstermek veya gizlemek için Framework tarafından çağırılır.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimini göstermek veya gizlemek için çerçeve tarafından çağrılır.
 
-```
+```cpp
 virtual void OnShow(BOOL bShow);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*bShow*<br/>
-'ndaki Denetimi göstermek için TRUE; Denetimi gizlemek için FALSE.
+*bGöster*<br/>
+[içinde] DOĞRU kontrol göstermek için; Kontrol gizlemek için YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="redraw"></a>CMFCRibbonEdit:: yeniden Çiz
+## <a name="cmfcribboneditredraw"></a><a name="redraw"></a>CMFCRibbonEdit::Yeniden çiz
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin görüntülenmesini güncelleştirir.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetiminin ekranını güncelleştirir.
 
-```
+```cpp
 virtual void Redraw();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `CMFCRibbonEdit` [CWnd:: RedrawWindow](/windows/win32/api/winuser/nf-winuser-redrawwindow) öğesini dolaylı olarak RDW_INVALIDATE, RDW_ERASE ve RDW_UPDATENOW Flags kümesiyle çağırarak nesnenin görüntüleme dikdörtgenini yeniden çizer.
+Bu yöntem, dolaylı olarak CWnd çağırarak `CMFCRibbonEdit` nesne için ekran dikdörtgeni yeniden çizer::RDW_INVALIDATE, RDW_ERASE ve RDW_UPDATENOW bayrakları ayarlanmış yeniden çizim [penceresi.](/windows/win32/api/winuser/nf-winuser-redrawwindow)
 
-##  <a name="setaccdata"></a>CMFCRibbonEdit:: SetACCData
+## <a name="cmfcribboneditsetaccdata"></a><a name="setaccdata"></a>CMFCRibbonEdit::SetACCData
 
-[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesnesi için erişilebilirlik verilerini ayarlar.
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesnesinin erişilebilirlik verilerini ayarlar.
 
-```
+```cpp
 virtual BOOL SetACCData(
     CWnd* pParent,
     CAccessibilityData& data);
@@ -679,10 +679,10 @@ virtual BOOL SetACCData(
 ### <a name="parameters"></a>Parametreler
 
 *pParent*<br/>
-`CMFCRibbonEdit` Nesnenin üst penceresine yönelik işaretçi.
+Nesne için ana pencereye `CMFCRibbonEdit` işaretçi.
 
-*verileri*<br/>
-`CMFCRibbonEdit` Nesne için erişilebilirlik verileri.
+*Veri*<br/>
+Nesnenin `CMFCRibbonEdit` erişilebilirlik verileri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -690,49 +690,49 @@ Her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setedittext"></a>CMFCRibbonEdit:: SetEditText
+## <a name="cmfcribboneditsetedittext"></a><a name="setedittext"></a>CMFCRibbonEdit::SetEditText
 
 Metin kutusundaki metni ayarlar.
 
-```
+```cpp
 void SetEditText(CString strText);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *strText*<br/>
-'ndaki Metin kutusu metni.
+[içinde] Metin kutusunun metni.
 
-##  <a name="settextalign"></a>CMFCRibbonEdit:: SetTextAlign
+## <a name="cmfcribboneditsettextalign"></a><a name="settextalign"></a>CMFCRibbonEdit::SetTextAlign
 
-Metin kutusunun metin hizalamasını ayarlar.
+Metin kutusunun metin hizasını ayarlar.
 
-```
+```cpp
 void SetTextAlign(int nAlign);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *nAlign*<br/>
-'ndaki Metin hizalaması numaralandırılmış değeri. Olası değerler için açıklamalar bölümüne bakın.
+[içinde] Metin hizalama numaralandırılmış değer. Olası değerler için Açıklamalar bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*NAlign* parametresi aşağıdaki düzenleme denetimi stillerinden biridir:
+*nAlign* parametresi aşağıdaki düzenle denetim stillerinden biridir:
 
 - Sol hizalama için ES_LEFT
 
-- ES_CENTER for Center hizalaması
+- Merkez hizalama için ES_CENTER
 
-- Sağ hizalama için ES_RIGHT
+- Doğru hizalama için ES_RIGHT
 
-Bu stiller hakkında daha fazla bilgi için bkz. [Denetim stillerini düzenleme](/windows/win32/Controls/edit-control-styles).
+Bu stiller hakkında daha fazla bilgi için Denetim [Stillerini Edit'e](/windows/win32/Controls/edit-control-styles)bakın.
 
-##  <a name="setwidth"></a>CMFCRibbonEdit:: SetWidth
+## <a name="cmfcribboneditsetwidth"></a><a name="setwidth"></a>CMFCRibbonEdit::Set Width
 
 [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimi için metin kutusunun genişliğini ayarlar.
 
-```
+```cpp
 void SetWidth(
     int nWidth,
     BOOL bInFloatyMode = FALSE);
@@ -740,15 +740,15 @@ void SetWidth(
 
 ### <a name="parameters"></a>Parametreler
 
-*nWidth*<br/>
-'ndaki Metin kutusunun piksel cinsinden genişliği.
+*Nwidth*<br/>
+[içinde] Metin kutusunun piksel genişliği.
 
-*Binfloatyımode*<br/>
-Kayan mod için genişliği ayarlamak için TRUE; Normal mod için genişliği ayarlamak için FALSE.
+*bInFloatyMode*<br/>
+True kayan modu için genişlik ayarlamak için; Normal mod için genişliği ayarlamak için FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMFCRibbonEdit` Denetimin, görüntüleme moduna bağlı olarak iki genişliği vardır: kayan mod ve normal mod.
+Denetim, `CMFCRibbonEdit` ekran moduna bağlı olarak iki genişliğe sahiptir: kayan mod ve normal mod.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

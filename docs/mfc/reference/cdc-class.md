@@ -1,5 +1,5 @@
 ---
-title: CDC sınıfı
+title: CDC Sınıfı
 ms.date: 11/19/2018
 f1_keywords:
 - CDC
@@ -402,16 +402,16 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: bae2f9a5a4f39c4eeffe68cc33e744e44c6800c8
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 830c6d068a5074d0918107ca601c51d198a8a912
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420682"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375709"
 ---
-# <a name="cdc-class"></a>CDC sınıfı
+# <a name="cdc-class"></a>CDC Sınıfı
 
-Cihaz bağlamı nesnelerinin bir sınıfını tanımlar.
+Aygıt bağlamı nesneleri sınıfı tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -423,266 +423,266 @@ class CDC : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDC:: CDC](#cdc)|`CDC` nesnesi oluşturur.|
+|[CDC::CDC](#cdc)|Bir `CDC` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDC:: AbortDoc](#abortdoc)|`StartDoc` member işlevinin son çağrısından bu yana uygulamanın cihaza yazdığı her şeyi silerek geçerli yazdırma işini sonlandırır.|
-|[CDC:: AbortPath](#abortpath)|Cihaz bağlamındaki tüm yolları kapatır ve atar.|
-|[CDC:: AddMetaFileComment](#addmetafilecomment)|Bir arabellekteki yorumu belirtilen bir Gelişmiş Biçim meta dosyasına kopyalar.|
-|[CDC:: harflerden Blend](#alphablend)|Saydam veya yarı saydam piksel olan bit eşlemleri görüntüler.|
-|[CDC:: AngleArc](#anglearc)|Bir çizgi segmenti ve bir yay çizer ve geçerli konumu, yayı bitiş noktasına taşımaktır.|
-|[CDC:: Arc](#arc)|Elips bir yay çizer.|
-|[CDC:: ArcTo](#arcto)|Elips bir yay çizer. Bu işlev, geçerli konumun güncelleştirildiğinden `Arc`benzerdir.|
-|[CDC:: Attach](#attach)|Bu `CDC` nesnesine bir Windows cihaz bağlamı ekler.|
-|[CDC:: BeginPath](#beginpath)|Cihaz bağlamında bir yol ayracı açar.|
-|[CDC:: BitBlt](#bitblt)|Belirtilen cihaz bağlamından bir bit eşlem kopyalar.|
-|[CDC:: Chof](#chord)|Bir çizgi çizer (bir elips ve Çizgi segmentinin kesişimine göre kapalı bir şekil).|
-|[CDC:: CloseFigure](#closefigure)|Yoldaki açık bir şekli kapatır.|
-|[CDC:: Createuyumluluk Bledc](#createcompatibledc)|Başka bir cihaz bağlamıyla uyumlu bir bellek-cihaz bağlamı oluşturur. Bellekte görüntü hazırlamak için kullanabilirsiniz.|
-|[CDC:: CreateDC](#createdc)|Belirli bir cihaz için bir cihaz bağlamı oluşturur.|
-|[CDC:: CreateIC](#createic)|Belirli bir cihaz için bilgi bağlamı oluşturur. Bu, cihaz bağlamı oluşturmadan cihaz hakkında bilgi almanın hızlı bir yolunu sağlar.|
-|[CDC::D eleteDC](#deletedc)|Bu `CDC` nesnesiyle ilişkili Windows cihaz bağlamını siler.|
-|[CDC::D eleteTempMap](#deletetempmap)|`FromHandle`tarafından oluşturulan geçici `CDC` nesnesini silmek için `CWinApp` boşta kalma süresi işleyicisi tarafından çağırılır. Ayrıca cihaz bağlamını ayırır.|
-|[CDC::D etach](#detach)|Windows cihaz bağlamını bu `CDC` nesnesinden ayırır.|
-|[CDC::D PtoHIMETRIC](#dptohimetric)|Cihaz birimlerini HIMETRIK birimlerine dönüştürür.|
-|[CDC::D PtoLP](#dptolp)|Cihaz birimlerini mantıksal birimlere dönüştürür.|
-|[CDC::D raw3dRect](#draw3drect)|Üç boyutlu bir dikdörtgen çizer.|
-|[CDC::D rawDragRect](#drawdragrect)|Sürüklenerek bir dikdörtgeni siler ve yeniden çizer.|
-|[CDC::D rampa](#drawedge)|Dikdörtgenin kenarlarını çizer.|
-|[CDC::D Rawkaçış](#drawescape)|Grafik cihaz arabirimi (GDI) aracılığıyla doğrudan kullanılamayan bir video görüntüsüne ait çizim özelliklerine erişir.|
-|[CDC::D rawFocusRect](#drawfocusrect)|Odağı göstermek için kullanılan stilde bir dikdörtgen çizer.|
-|[CDC::D rawFrameControl](#drawframecontrol)|Çerçeve denetimi çizin.|
-|[CDC::D Rawıcon](#drawicon)|Bir simge çizer.|
-|[CDC::D rawState](#drawstate)|Bir görüntü görüntüler ve bir durumu belirtmek için görsel bir efekt uygular.|
-|[CDC::D rawText](#drawtext)|Belirtilen dikdörtgende biçimli metin çizer.|
-|[CDC::D rawTextEx](#drawtextex)|Ek biçimleri kullanarak belirtilen dikdörtgende biçimli metin çizer.|
-|[CDC:: Elips](#ellipse)|Elips çizer.|
-|[CDC:: EndDoc](#enddoc)|`StartDoc` üye işlevi tarafından başlatılan bir yazdırma işini sonlandırır.|
-|[CDC:: EndPage](#endpage)|Cihaz sürücüsüne bir sayfanın sonlandırdığını bildirir.|
-|[CDC:: EndPath](#endpath)|Bir yol ayracını kapatır ve köşeli ayracın cihaz bağlamına göre tanımlanan yolu seçer.|
-|[CDC:: EnumObjects](#enumobjects)|Bir cihaz bağlamında kullanılabilen kalemleri ve fırçaları numaralandırır.|
-|[CDC:: kaçış](#escape)|Uygulamaların, belirli bir cihazdan GDI aracılığıyla doğrudan kullanılamayan tesislere erişmesini sağlar. Ayrıca Windows kaçış işlevlerine erişime de izin verir. Bir uygulama tarafından yapılan kaçış çağrıları, cihaz sürücüsüne çevrilir ve gönderilir.|
-|[CDC:: Excludeclienprect](#excludecliprect)|Varolan kırpma bölgesinin belirtilen dikdörtgenden oluşan yeni bir kırpma bölgesi oluşturur.|
-|[CDC:: ExcludeUpdateRgn](#excludeupdatergn)|Penceredeki güncelleştirilmiş bir bölgeyi bir kırpma bölgesinden dışlayarak pencerenin geçersiz alanlarının çizilmesini önler.|
-|[CDC:: Extfgevdfill](#extfloodfill)|Geçerli fırçayla bir alanı doldurur. [CDC:: FloodFill](#floodfill) üye işlevinden daha fazla esneklik sağlar.|
-|[CDC:: ExtTextOut](#exttextout)|Şu anda seçili olan yazı tipini kullanarak dikdörtgen bir bölge içinde bir karakter dizesi yazar.|
-|[CDC:: FillPath](#fillpath)|Geçerli yoldaki tüm açık rakamları kapatır ve geçerli fırça ve çokgen doldurma modunu kullanarak yolun iç kısmını doldurur.|
-|[CDC:: FillRect](#fillrect)|Belirli bir fırçayı kullanarak belirli bir dikdörtgeni doldurur.|
-|[CDC:: FillRgn](#fillrgn)|Belirtilen fırçayla belirli bir bölgeyi doldurur.|
-|[CDC:: FillSolidRect](#fillsolidrect)|Bir dikdörtgeni düz bir renkle doldurur.|
-|[CDC:: DÜZEDEN yol](#flattenpath)|Seçili yoldaki tüm eğrileri geçerli cihaz bağlamına dönüştürür ve her eğriyi bir satır dizisine dönüştürür.|
-|[CDC:: FloodFill](#floodfill)|Geçerli fırçayla bir alanı doldurur.|
-|[CDC:: FrameRect](#framerect)|Dikdörtgen etrafında bir kenarlık çizer.|
-|[CDC:: FrameRgn](#framergn)|Fırçayı kullanarak belirli bir bölgenin etrafına bir kenarlık çizer.|
-|[CDC:: FromHandle](#fromhandle)|Bir cihaz bağlamına bir tanıtıcı verildiğinde `CDC` nesnesine yönelik bir işaretçi döndürür. Bir `CDC` nesnesi tutamaya iliştirilmişse, geçici bir `CDC` nesnesi oluşturulur ve eklenir.|
-|[CDC:: GetArcDirection](#getarcdirection)|Cihaz bağlamı için geçerli yay yönünü döndürür.|
-|[CDC:: GetAspectRatioFilter](#getaspectratiofilter)|Geçerli en boy oranı filtresinin ayarını alır.|
-|[CDC:: GetBkColor](#getbkcolor)|Geçerli arka plan rengini alır.|
-|[CDC:: GetBkMode](#getbkmode)|Arka plan modunu alır.|
-|[CDC:: GetBoundsRect](#getboundsrect)|Belirtilen cihaz bağlamı için geçerli birikmiş sınırlayıcı dikdörtgeni döndürür.|
-|[CDC:: Getbrühorg](#getbrushorg)|Geçerli fırçanın kaynağını alır.|
-|[CDC:: GetCharABCWidths](#getcharabcwidths)|Geçerli yazı tipindeki belirli bir aralıktaki ardışık karakterlerin, mantıksal birimlerde genişlikleri alır.|
-|[CDC:: GetCharABCWidthsI](#getcharabcwidthsi)|Geçerli TrueType yazı tipinde belirtilen bir aralıktaki ardışık karakter dizinlerinin genişliğini mantıksal birimlerde alır.|
-|[CDC:: Getkarakteryerleşimi](#getcharacterplacement)|Bir karakter dizesindeki çeşitli bilgi türlerini alır.|
-|[CDC:: GetCharWidth](#getcharwidth)|Geçerli yazı tipindeki belirli bir aralıktaki ardışık karakterlerin kesirli genişliklerini alır.|
-|[CDC:: GetCharWidthI](#getcharwidthi)|Geçerli yazı tipindeki belirli bir aralıktaki ardışık karakter dizinlerinin mantıksal koordinatlara göre genişlerini alır.|
-|[CDC:: GetClipBox](#getclipbox)|Geçerli kırpma sınırının etrafında daha sıkı test sınırlayıcı dikdörtgeninin boyutlarını alır.|
-|[CDC:: Getcolorayarlaması](#getcoloradjustment)|Cihaz bağlamı için renk ayarlama değerlerini alır.|
-|[CDC:: GetCurrentBitmap](#getcurrentbitmap)|Şu anda seçili `CBitmap` nesnesine bir işaretçi döndürür.|
-|[CDC:: GetCurrentBrush](#getcurrentbrush)|Şu anda seçili `CBrush` nesnesine bir işaretçi döndürür.|
-|[CDC:: GetCurrentFont](#getcurrentfont)|Şu anda seçili `CFont` nesnesine bir işaretçi döndürür.|
-|[CDC:: GetCurrentPalette](#getcurrentpalette)|Şu anda seçili `CPalette` nesnesine bir işaretçi döndürür.|
-|[CDC:: GetCurrentPen](#getcurrentpen)|Şu anda seçili `CPen` nesnesine bir işaretçi döndürür.|
-|[CDC:: GetCurrentPosition](#getcurrentposition)|Kalemin geçerli konumunu alır (mantıksal koordinatlarda).|
-|[CDC:: Getdcbrühcolor](#getdcbrushcolor)|Geçerli fırça rengini alır.|
-|[CDC:: GetDCPenColor](#getdcpencolor)|Geçerli kalem rengini alır.|
-|[CDC:: GetDeviceCaps](#getdevicecaps)|Belirli bir görüntüleme cihazının özelliklerine ilişkin belirli türde bir cihaza özgü bilgi alır.|
-|[CDC:: GetFontData](#getfontdata)|Ölçeklenebilir bir yazı tipi dosyasından yazı tipi ölçüm bilgilerini alır. Alınacak bilgiler, yazı tipi dosyasına bir konum ve döndürülecek bilgilerin uzunluğu belirtilerek tanımlanır.|
-|[CDC:: GetFontLanguageInfo](#getfontlanguageinfo)|Belirtilen görüntüleme bağlamı için seçili olan yazı tipiyle ilgili bilgileri döndürür.|
-|[CDC:: GetGlyphOutline](#getglyphoutline)|Geçerli yazı tipinde bir ana hat karakteri için ana hat eğrisini veya bit eşlemi alır.|
-|[CDC:: GetGraphicsMode](#getgraphicsmode)|Belirtilen cihaz bağlamı için geçerli grafik modunu alır.|
-|[CDC:: GetHalftoneBrush](#gethalftonebrush)|Bir yarı ton fırçası alır.|
-|[CDC:: GetKerningPairs](#getkerningpairs)|Belirtilen cihaz bağlamında seçili olan yazı tipi için karakter karakter aralığı çiftlerini alır.|
-|[CDC:: GetLayout](#getlayout)|Bir cihaz bağlamının (DC) yerleşimini alır. Düzen, soldan sağa (varsayılan) veya sağdan sola (yansıtmalı) olabilir.|
-|[CDC:: GetMapMode](#getmapmode)|Geçerli eşleme modunu alır.|
-|[CDC:: Getmıterlimit](#getmiterlimit)|Cihaz bağlamı için gönye sınırını döndürür.|
-|[CDC:: GetNearestColor](#getnearestcolor)|Verilen cihazın temsil ettiği belirli bir mantıksal renge en yakın mantıksal rengi alır.|
-|[CDC:: Getoutlinetextölçümleri](#getoutlinetextmetrics)|TrueType yazı tiplerinin yazı tipi ölçüm bilgilerini alır.|
-|[CDC:: GetOutputCharWidth](#getoutputcharwidth)|Çıkış cihazı bağlamını kullanarak geçerli yazı tipindeki ardışık bir karakter grubundaki tek tek karakterlerin genişliklerini alır.|
-|[CDC:: GetOutputTabbedTextExtent](#getoutputtabbedtextextent)|Çıkış cihazı bağlamındaki bir karakter dizesinin genişliğini ve yüksekliğini hesaplar.|
-|[CDC:: GetOutputTextExtent](#getoutputtextextent)|Boyutları belirleyebilmek için geçerli yazı tipini kullanarak çıkış cihazı bağlamındaki bir metin satırının genişliğini ve yüksekliğini hesaplar.|
-|[CDC:: Getoutputtextölçümleri](#getoutputtextmetrics)|Çıkış cihazı bağlamından geçerli yazı tipine ait ölçümleri alır.|
-|[CDC:: GetPath](#getpath)|Satır bitiş noktaları ve cihaz bağlamına seçilen yolda bulunan eğrilerin denetim noktaları tanımlayan koordinatları alır.|
-|[CDC:: GetPixel](#getpixel)|Belirtilen noktadaki pikselin RGB renk değerini alır.|
-|[CDC:: GetPolyFillMode](#getpolyfillmode)|Geçerli Çokgen doldurma modunu alır.|
-|[CDC:: GetROP2](#getrop2)|Geçerli çizim modunu alır.|
-|[CDC:: GetSafeHdc](#getsafehdc)|Çıkış cihazı bağlamını, [CDC:: m_hDC](#m_hdc)döndürür.|
-|[CDC:: Getıblbltmode](#getstretchbltmode)|Geçerli bit eşlem uzatma modunu alır.|
-|[CDC:: GetTabbedTextExtent](#gettabbedtextextent)|Öznitelik cihaz bağlamındaki bir karakter dizesinin genişliğini ve yüksekliğini hesaplar.|
-|[CDC:: GetTextAlign](#gettextalign)|Metin hizalama bayraklarını alır.|
-|[CDC:: Gettextkarakterextra](#gettextcharacterextra)|Intercharacter aralıklarının miktarı için geçerli ayarı alır.|
-|[CDC:: GetTextColor](#gettextcolor)|Geçerli metin rengini alır.|
-|[CDC:: GetTextExtent](#gettextextent)|Boyutları belirleyebilmek için geçerli yazı tipini kullanarak öznitelik cihaz bağlamındaki bir metin satırının genişliğini ve yüksekliğini hesaplar.|
-|[CDC:: Gettexıtexpointı](#gettextextentexpointi)|Belirtilen bir dizedeki belirli bir alana sığacak ve bir diziyi bu karakterlerin her biri için metin Uzantısı ile dolduracak olan karakter sayısını alır.|
-|[CDC:: Gettextpointı](#gettextextentpointi)|Belirtilen glif dizinleri dizisinin genişliğini ve yüksekliğini alır.|
-|[CDC:: GetTextFace](#gettextface)|Geçerli yazı tipinin yazı tipi adını, null ile sonlandırılmış bir dize olarak bir arabelleğe kopyalar.|
-|[CDC:: Gettextölçümleri](#gettextmetrics)|Öznitelik cihaz bağlamından geçerli yazı tipinin ölçümlerini alır.|
-|[CDC:: GetViewportExt](#getviewportext)|Görünüm penceresinin x ve y-kapsamlarını alır.|
-|[CDC:: GetViewportOrg](#getviewportorg)|Görünüm penceresinin x ve y koordinatlarını alır.|
-|[CDC:: GetWindow](#getwindow)|Görüntüleme cihazı içeriğiyle ilişkili pencereyi döndürür.|
-|[CDC:: GetWindowExt](#getwindowext)|İlişkili pencerenin x ve y-kapsamlarını alır.|
-|[CDC:: GetWindowOrg](#getwindoworg)|İlişkili pencerenin kaynağının x ve y koordinatlarını alır.|
-|[CDC:: GetWorldTransform](#getworldtransform)|Geçerli dünya alanını sayfa boşluğu dönüşümüne alır.|
-|[CDC:: GradientFill](#gradientfill)|Dikdörtgen ve üçgen yapılarını bir yerçekimi rengiyle doldurur.|
-|[CDC:: gri dize](#graystring)|Verilen konumda soluk (gri) metin çizer.|
-|[CDC:: HIMETRICtoDP](#himetrictodp)|HIMETRIK birimleri cihaz birimlerine dönüştürür.|
-|[CDC:: HIMETRICtoLP](#himetrictolp)|HIMETRIK birimleri mantıksal birimlere dönüştürür.|
-|[CDC:: IntersectClipRect](#intersectcliprect)|Geçerli bölgenin ve bir dikdörtgenin kesişimini oluşturarak yeni bir kırpma bölgesi oluşturur.|
-|[CDC:: ınevirtrect](#invertrect)|Bir dikdörtgenin içeriğini tersine çevirir.|
-|[CDC:: Evirtrgn](#invertrgn)|Bir bölgedeki renkleri tersine çevirir.|
-|[CDC:: IsPrinting](#isprinting)|Cihaz bağlamının yazdırma için kullanılıp kullanılmadığını belirler.|
-|[CDC:: LineTo](#lineto)|Geçerli konumdan bir çizgi çizer, ancak bir noktayı dahil etmez.|
-|[CDC:: LPtoDP](#lptodp)|Mantıksal birimleri cihaz birimlerine dönüştürür.|
-|[CDC:: Lptohimetrik](#lptohimetric)|Mantıksal birimleri HIMETRIK birimlerine dönüştürür.|
-|[CDC:: MaskBlt](#maskblt)|Verilen maske ve tarama işlemini kullanarak kaynak ve hedef bit eşlemlerin renk verilerini birleştirir.|
-|[CDC:: ModifyWorldTransform](#modifyworldtransform)|Belirtilen modu kullanarak bir cihaz bağlamı için dünya dönüşümünü değiştirir.|
-|[CDC:: MoveTo](#moveto)|Geçerli konumu gider.|
-|[CDC:: OffsetClipRgn](#offsetcliprgn)|Verilen cihazın kırpma bölgesini taşıdıkça.|
-|[CDC:: OffsetViewportOrg](#offsetviewportorg)|Görünüm penceresi kaynağını geçerli görünüm penceresinin koordinatlarına göre değiştirir.|
-|[CDC:: OffsetWindowOrg](#offsetwindoworg)|Pencere kaynağını geçerli pencere başlangıcının koordinatlarına göre değiştirir.|
-|[CDC::P aintRgn](#paintrgn)|Bir bölgeyi seçili fırçayla doldurur.|
-|[CDC::P atBlt](#patblt)|Bit bir model oluşturur.|
-|[CDC::P IE](#pie)|Pasta şeklindeki bir kama çizer.|
-|[CDC::P layMetaFile](#playmetafile)|Belirtilen meta dosya içeriğini verilen cihazda oynatır. `PlayMetaFile` gelişmiş sürümü, verilen gelişmiş biçimdeki meta dosya dosyasında depolanan resmi görüntüler. Meta dosyası herhangi bir sayıda yürütülebilir.|
-|[CDC::P lgBlt](#plgblt)|Kaynak cihaz bağlamındaki belirtilen dikdörtgenden alınan renk verileri bitlerinin, belirtilen cihaz bağlamında belirtilen parallekenar ile bir bit blok aktarımı gerçekleştirir.|
-|[CDC::P olyBezier](#polybezier)|Bir veya daha fazla Bzier splines çizer. Geçerli konum kullanılmıyor veya güncelleştirilmedi.|
-|[CDC::P olyBezierTo](#polybezierto)|Bir veya daha fazla Bzier splines çizer ve geçerli konumu son Bzier eğrisi bitiş noktasına taşımaktır.|
-|[CDC::P olyDraw](#polydraw)|Çizgi parçaları ve Bzier splines kümesi çizer. Bu işlev geçerli konumu güncelleştirir.|
-|[CDC::P olygon](#polygon)|Satırlara göre bağlı iki veya daha fazla noktadan (köşe) oluşan bir çokgen çizer.|
-|[CDC::P olyline](#polyline)|Belirtilen noktaları bağlayan bir çizgi segmentleri kümesi çizer.|
-|[CDC::P olylineTo](#polylineto)|Bir veya daha fazla düz çizgi çizer ve geçerli konumu son satırın bitiş noktasına taşımaktır.|
-|[CDC::P olyPolygon](#polypolygon)|Geçerli Çokgen doldurma modu kullanılarak doldurulmuş iki veya daha fazla Çokgen oluşturur. Çokgenler kopuk olabilir veya örtüşebilir.|
-|[CDC::P olyPolyline](#polypolyline)|Birden çok bağlantılı çizgi segmentini çizer. Geçerli konum bu işlev tarafından kullanılmıyor veya güncelleştirilmedi.|
-|[CDC::P tVisible](#ptvisible)|Verilen noktanın kırpma bölgesi içinde olup olmadığını belirtir.|
-|[CDC:: RealizePalette](#realizepalette)|Geçerli mantıksal Paletteki palet girdilerini sistem paletine eşler.|
-|[CDC:: dikdörtgen](#rectangle)|Geçerli kalemi kullanarak bir dikdörtgen çizer ve geçerli fırçayı kullanarak doldurur.|
-|[CDC:: RectVisible](#rectvisible)|Verilen dikdörtgenin herhangi bir kısmının kırpma bölgesi içinde olup olmadığını belirler.|
-|[CDC:: ReleaseAttribDC](#releaseattribdc)|`m_hAttribDC`, öznitelik cihazı bağlamını yayınlar.|
-|[CDC:: ReleaseOutputDC](#releaseoutputdc)|, Çıkış cihazı bağlamını `m_hDC`yayınlar.|
-|[CDC:: ResetDC](#resetdc)|`m_hAttribDC` cihaz bağlamını güncelleştirir.|
-|[CDC:: RestoreDC](#restoredc)|Cihaz bağlamını `SaveDC`ile kaydedilmiş önceki bir duruma geri yükler.|
-|[CDC:: RoundRect](#roundrect)|Geçerli kalemi kullanarak yuvarlatılmış köşeler içeren bir dikdörtgen çizer ve geçerli fırçayı kullanarak doldurulur.|
-|[CDC:: SaveDC](#savedc)|Cihaz bağlamının geçerli durumunu kaydeder.|
-|[CDC:: ScaleViewportExt](#scaleviewportext)|Geçerli değerlere göre görünüm penceresinin kapsamını değiştirir.|
-|[CDC:: ScaleWindowExt](#scalewindowext)|Pencere kapsamlarını geçerli değerlere göre değiştirir.|
-|[CDC:: ScrollDC](#scrolldc)|Bit bir dikdörtgeni yatay ve dikey olarak kaydırır.|
-|[CDC:: SelectClipPath](#selectclippath)|Geçerli yolu cihaz bağlamı için bir kırpma bölgesi olarak seçer ve yeni bölgeyi belirtilen modu kullanarak var olan herhangi bir kırpma bölgesiyle birleştirerek.|
-|[CDC:: Selectclienprgn](#selectcliprgn)|Belirtilen modu kullanarak, belirtilen bölgeyi geçerli kırpma bölgesiyle birleştirir.|
-|[CDC:: NesneSeç](#selectobject)|Kalem gibi bir GDI çizim nesnesi seçer.|
-|[CDC:: SelectPalette](#selectpalette)|Mantıksal paleti seçer.|
-|[CDC:: Selectstokobject](#selectstockobject)|Windows tarafından sunulan önceden tanımlanmış hisse senedi kalemleri, fırçaları veya yazı tiplerinden birini seçer.|
-|[CDC:: SetAbortProc](#setabortproc)|Bir yazdırma işinin durdurulması gerekiyorsa, Windows 'un çağırdığı bir programcı tarafından sağlanan geri çağırma işlevi ayarlar.|
-|[CDC:: SetArcDirection](#setarcdirection)|Yay ve dikdörtgen işlevleri için kullanılacak çizim yönünü ayarlar.|
-|[CDC:: SetAttribDC](#setattribdc)|`m_hAttribDC`, öznitelik cihazı bağlamını ayarlar.|
-|[CDC:: SetBkColor](#setbkcolor)|Geçerli arka plan rengini ayarlar.|
-|[CDC:: SetBkMode](#setbkmode)|Arka plan modunu ayarlar.|
-|[CDC:: SetBoundsRect](#setboundsrect)|Belirtilen cihaz bağlamı için sınırlayıcı dikdörtgen bilgilerin birikdiğini denetler.|
-|[CDC:: Setbrühorg](#setbrushorg)|Bir cihaz bağlamında seçilen bir sonraki fırçanın başlangıcını belirtir.|
-|[CDC:: Setcolorayarlaması](#setcoloradjustment)|Belirtilen değerleri kullanarak cihaz bağlamı için renk ayarlama değerlerini ayarlar.|
-|[CDC:: Setdcbrühcolor](#setdcbrushcolor)|Geçerli fırça rengini ayarlar.|
-|[CDC:: SetDCPenColor](#setdcpencolor)|Geçerli kalem rengini ayarlar.|
-|[CDC:: SetGraphicsMode](#setgraphicsmode)|Belirtilen cihaz bağlamı için geçerli grafik modunu ayarlar.|
-|[CDC:: SetLayout](#setlayout)|Bir cihaz bağlamının (DC) yerleşimini değiştirir.|
-|[CDC:: SetMapMode](#setmapmode)|Geçerli eşleme modunu ayarlar.|
-|[CDC:: SetMapperFlags](#setmapperflags)|Mantıksal yazı tiplerini fiziksel yazı tipleriyle eşleştiriyorsa, yazı tipi Eşleyicisi 'nin kullandığı algoritmayı değiştirir.|
-|[CDC:: Setmıterlimit](#setmiterlimit)|Cihaz bağlamı için Gönye birleştirmeleri uzunluğunun sınırını ayarlar.|
-|[CDC:: SetOutputDC](#setoutputdc)|, Çıkış cihazı bağlamını `m_hDC`ayarlar.|
-|[CDC:: SetPixel](#setpixel)|Belirtilen renkteki pikseli belirtilen rengin en yakın rengine ayarlar.|
-|[CDC:: SetPixelV](#setpixelv)|Belirtilen koordinatlardaki pikseli belirtilen rengin en yakın yaklaşık rengine ayarlar. `SetPixelV`, gerçekten boyanmış olan noktanın renk değerini döndürmesi gerekmediğinden `SetPixel` daha hızlıdır.|
-|[CDC:: SetPolyFillMode](#setpolyfillmode)|Çokgen doldurma modunu ayarlar.|
-|[CDC:: SetROP2](#setrop2)|Geçerli çizim modunu ayarlar.|
-|[CDC:: Setıdblttrmode](#setstretchbltmode)|Bit eşlem uzatma modunu ayarlar.|
-|[CDC:: SetTextAlign](#settextalign)|Metin hizalama bayraklarını ayarlar.|
-|[CDC:: Settextkarakterekstra](#settextcharacterextra)|Intercharacter boşluk miktarını ayarlar.|
-|[CDC:: SetTextColor](#settextcolor)|Metin rengini ayarlar.|
-|[CDC:: Settextgerekçe](#settextjustification)|Dizedeki kesme karakterlerine boşluk ekler.|
-|[CDC:: SetViewportExt](#setviewportext)|Görünüm penceresinin x ve y-kapsamlarını ayarlar.|
-|[CDC:: SetViewportOrg](#setviewportorg)|Görünüm penceresi kaynağını ayarlar.|
-|[CDC:: SetWindowExt](#setwindowext)|İlişkili pencerenin x ve y-kapsamlarını ayarlar.|
-|[CDC:: SetWindowOrg](#setwindoworg)|Cihaz bağlamının pencere kaynağını ayarlar.|
-|[CDC:: SetWorldTransform](#setworldtransform)|Geçerli dünya alanını sayfa boşluğu dönüşümüne ayarlar.|
-|[CDC:: StartDoc](#startdoc)|Yeni bir yazdırma işinin başladığı cihaz sürücüsüne bildirir.|
-|[CDC:: StartPage](#startpage)|Yeni bir sayfanın başladığı cihaz sürücüsüne bildirir.|
-|[CDC::% Blblt](#stretchblt)|Hedef dikdörtgenin boyutlarına sığması gerekirse, bit eşlemi genişleterek veya sıkıştırarak bir kaynak dikdörtgenden ve cihazdan bir bit eşlemi hedef dikdörtgene dönüştürür.|
-|[CDC:: StrokeAndFillPath](#strokeandfillpath)|Bir yoldaki tüm açık rakamları kapatır, geçerli kalemi kullanarak yolun ana hattını kaplar ve geçerli fırçayı kullanarak iç kısmını doldurur.|
-|[CDC:: StrokePath](#strokepath)|Geçerli kalemi kullanarak belirtilen yolu işler.|
-|[CDC:: TabbedTextOut](#tabbedtextout)|Sekme durağı konumlarından oluşan bir dizide belirtilen değerlere genişleterek, belirtilen konuma bir karakter dizesi yazar.|
-|[CDC:: TextOut](#textout)|Seçili olan yazı tipini kullanarak belirtilen konuma bir karakter dizesi yazar.|
-|[CDC:: TransparentBlt](#transparentblt)|Belirli bir rengi aktarım sırasında saydam bir şekilde işlemek için, belirtilen kaynak cihaz bağlamından bir renk verileri bit bloğunu hedef cihaz bağlamına aktarır.|
-|[CDC:: UpdateColors](#updatecolors)|İstemci alanındaki geçerli renkleri piksel olarak bir piksel temelinde sistem paletiyle eşleştirerek cihaz bağlamının istemci alanını güncelleştirir.|
-|[CDC:: WidenPath](#widenpath)|Yol, şu anda cihaz bağlamına seçili olan kalem kullanılarak konturlandığında, geçerli yolu boyanmış alan olarak tekrar tanımlar.|
+|[CDC::AbortDoc](#abortdoc)|`StartDoc` Üye işlevin son çağrısından bu yana uygulamanın aygıta yazdığı her şeyi silerak geçerli yazdırma işini sonlandırır.|
+|[CDC::AbortPath](#abortpath)|Aygıt bağlamında tüm yolları kapatır ve atar.|
+|[CDC::AddMetaFileComment](#addmetafilecomment)|Açıklamayı arabellekten belirli bir gelişmiş biçimli metadosyaya kopyalar.|
+|[CDC::AlphaBlend](#alphablend)|Saydam veya yarı saydam piksellere sahip bit eşlemleri görüntüler.|
+|[CDC::AngleArc](#anglearc)|Bir çizgi kesimi ve bir yay çizer ve geçerli konumu yay bitiş noktasına taşır.|
+|[CDC::Yay](#arc)|Eliptik bir yay çizer.|
+|[CDC::Arcto](#arcto)|Eliptik bir yay çizer. Bu `Arc`işlev, geçerli konumun güncelleştirilen dışında benzer.|
+|[CDC::Ekle](#attach)|Bu `CDC` nesneye bir Windows aygıt bağlamı bağlar.|
+|[CDC::Başlangıç Yolu](#beginpath)|Aygıt bağlamında bir yol parantezi açar.|
+|[CDC::BitBlt](#bitblt)|Belirli bir aygıt bağlamından bir bit eşlemi kopyalar.|
+|[CDC::Akor](#chord)|Bir akor (bir elips ve çizgi segmentinin kesiştiği ile sınırlanmış kapalı bir şekil) çizer.|
+|[CDC::CloseFigure](#closefigure)|Açık bir figürü bir yolda kapatır.|
+|[CDC::CreateCompatibleDC](#createcompatibledc)|Başka bir aygıt bağlamıyla uyumlu bir bellek aygıtı bağlamı oluşturur. Bellekte görüntüleri hazırlamak için kullanabilirsiniz.|
+|[CDC::CreateDC](#createdc)|Belirli bir aygıt için aygıt bağlamı oluşturur.|
+|[CDC::CreateIC](#createic)|Belirli bir aygıt için bilgi bağlamı oluşturur. Bu, aygıt bağlamı oluşturmadan aygıt hakkında bilgi almak için hızlı bir yol sağlar.|
+|[CDC::DeleteDC](#deletedc)|Bu `CDC` nesneyle ilişkili Windows aygıt bağlamını siler.|
+|[CDC::DeleteTempMap](#deletetempmap)|Tarafından oluşturulan `CWinApp` geçici `CDC` nesneyi silmek için boşta zaman işleyicisi tarafından `FromHandle`çağrıldı. Ayrıca aygıt bağlamını da ayırır.|
+|[CDC::Detach](#detach)|Windows aygıt bağlamını bu `CDC` nesneden ayırır.|
+|[CDC::DPtoHIMETRIC](#dptohimetric)|Aygıt birimlerini HIMETRIC birimlerine dönüştürür.|
+|[CDC::DPtoLP](#dptolp)|Aygıt birimlerini mantıksal birimlere dönüştürür.|
+|[CDC::Draw3dRect](#draw3drect)|Üç boyutlu bir dikdörtgen çizer.|
+|[CDC::DrawDragRect](#drawdragrect)|Sürüklenirken dikdörtgeni siler ve yeniden çizer.|
+|[CDC::DrawEdge](#drawedge)|Dikdörtgenin kenarlarını çizer.|
+|[CDC::DrawEscape](#drawescape)|Grafik aygıtı arabirimi (GDI) aracılığıyla doğrudan kullanılamayan bir video ekranının çizim özelliklerine erişir.|
+|[CDC::DrawFocusRect](#drawfocusrect)|Odak noktasını belirtmek için kullanılan stilde bir dikdörtgen çizer.|
+|[CDC::DrawFrameControl](#drawframecontrol)|Bir kare denetimi çizin.|
+|[CDC::DrawIcon](#drawicon)|Bir simge çizer.|
+|[CDC::DrawState](#drawstate)|Görüntüyü görüntüler ve durumu belirtmek için görsel efekt uygular.|
+|[CDC::DrawText](#drawtext)|Belirtilen dikdörtgende biçimlendirilmiş metin çizer.|
+|[CDC::DrawTextEx](#drawtextex)|Ek biçimler kullanarak belirtilen dikdörtgende biçimlendirilmiş metin çizer.|
+|[CDC::Elips](#ellipse)|Bir elips çizer.|
+|[CDC::EndDoc](#enddoc)|Üye işlev tarafından başlatılan `StartDoc` yazdırma işini sona erdirer.|
+|[CDC::Son Sayfa](#endpage)|Aygıt sürücüsüne bir sayfanın sona erdiğini bildirir.|
+|[CDC::EndPath](#endpath)|Bir yol köşeli ayraçını kapatır ve parantez tarafından tanımlanan yolu aygıt bağlamına seçer.|
+|[CDC::EnumObjects](#enumobjects)|Aygıt bağlamında kullanılabilen kalem ve fırçaları oyalar.|
+|[CDC::Kaçış](#escape)|Uygulamaların gdi aracılığıyla belirli bir cihazdan doğrudan erişmeyen tesislere erişmesine olanak tanır. Ayrıca Windows kaçış işlevlerine erişim sağlar. Bir uygulama tarafından yapılan kaçış çağrıları tercüme edilir ve aygıt sürücüsüne gönderilir.|
+|[CDC::ExcludeClipRect](#excludecliprect)|Belirtilen dikdörtgen eksi varolan kırpma bölgesinden oluşan yeni bir kırpma bölgesi oluşturur.|
+|[CDC::ExcludeUpdateRgn](#excludeupdatergn)|Penceredeki güncelleştirilmiş bir bölgeyi kırpma bölgesinden dışlayarak pencerenin geçersiz alanları içinde çizim ilerler.|
+|[CDC::ExtFloodFill](#extfloodfill)|Bir alanı geçerli fırçayla doldurur. [CDC::FloodFill](#floodfill) üye işlevinden daha fazla esneklik sağlar.|
+|[CDC::ExtTextOut](#exttextout)|Şu anda seçili yazı tipini kullanarak dikdörtgen bir bölge içinde bir karakter dizesini yazar.|
+|[CDC::FillPath](#fillpath)|Geçerli yoldaki açık şekilleri kapatır ve geçerli fırça ve çokgen dolum modunu kullanarak yolun iç kısımlarını doldurur.|
+|[CDC::FillRect](#fillrect)|Belirli bir dikdörtgeni belirli bir fırça kullanarak doldurur.|
+|[CDC::FillRgn](#fillrgn)|Belirli bir bölgeyi belirtilen fırçayla doldurur.|
+|[CDC::FillSolidRect](#fillsolidrect)|Dikdörtgeni düz bir renkle doldurur.|
+|[CDC::FlattenPath](#flattenpath)|Seçili yoldaki eğrileri geçerli aygıt bağlamına dönüştürür ve her eğriyi bir çizgi dizisine dönüştürür.|
+|[CDC::Sel Dolgusu](#floodfill)|Bir alanı geçerli fırçayla doldurur.|
+|[CDC::FrameRect](#framerect)|Dikdörtgenin etrafına kenarlık çizer.|
+|[CDC::FrameRgn](#framergn)|Fırça kullanarak belirli bir bölgenin çevresine kenarlık çizer.|
+|[CDC::FromHandle](#fromhandle)|Bir aygıt bağlamına bir tanıtıcı verildiğinde bir `CDC` işaretçiyi nesneye döndürür. Bir `CDC` nesne tutamacına bağlı değilse, `CDC` geçici bir nesne oluşturulur ve eklenir.|
+|[CDC::GetArcDirection](#getarcdirection)|Aygıt bağlamı için geçerli yay yönünü döndürür.|
+|[CDC::GetAspectRatioFilter](#getaspectratiofilter)|Geçerli en boy oranı filtresinin ayarını alır.|
+|[CDC::GetBkColor](#getbkcolor)|Geçerli arka plan rengini alır.|
+|[CDC::GetBkMode](#getbkmode)|Arka plan modunu alır.|
+|[CDC::GetBoundsRect](#getboundsrect)|Belirtilen aygıt bağlamı için geçerli birikmiş sınırdikdörtgenini döndürür.|
+|[CDC::GetBrushOrg](#getbrushorg)|Geçerli fırçanın kaynağını alır.|
+|[CDC::GetCharABCWidths](#getcharabcwidths)|Geçerli yazı tipinden belirli bir aralıktaki ardışık karakterlerin genişliklerini mantıksal birimler halinde alır.|
+|[CDC::GetCharABCWidthsI](#getcharabcwidthsi)|Geçerli TrueType yazı tipinden belirli bir aralıkta ardışık glyph endekslerinin genişliklerini mantıksal birimler halinde alır.|
+|[CDC::Karakter Yerleştirme](#getcharacterplacement)|Karakter dizesindeki çeşitli türde bilgileri alır.|
+|[CDC::GetCharWidth](#getcharwidth)|Geçerli yazı tipinden belirli bir aralıkta ardışık karakterlerin kesirli genişliklerini alır.|
+|[CDC::GetCharWidthi](#getcharwidthi)|Geçerli yazı tipinden belirli bir aralıkta ardışık glyph endekslerinin genişliklerini mantıksal koordinatlarla alır.|
+|[CDC::GetClipBox](#getclipbox)|Geçerli kırpma sınırı etrafındaki en sıkı sınırlayıcı dikdörtgenin boyutlarını alır.|
+|[CDC::GetColorAdjustment](#getcoloradjustment)|Aygıt bağlamı için renk ayarlama değerlerini alır.|
+|[CDC::GetCurrentBitmap](#getcurrentbitmap)|Bir işaretçiyi şu `CBitmap` anda seçili nesneye döndürür.|
+|[CDC::GetCurrentBrush](#getcurrentbrush)|Bir işaretçiyi şu `CBrush` anda seçili nesneye döndürür.|
+|[CDC::GetCurrentFont](#getcurrentfont)|Bir işaretçiyi şu `CFont` anda seçili nesneye döndürür.|
+|[CDC::GetCurrentPalette](#getcurrentpalette)|Bir işaretçiyi şu `CPalette` anda seçili nesneye döndürür.|
+|[CDC::GetCurrentPen](#getcurrentpen)|Bir işaretçiyi şu `CPen` anda seçili nesneye döndürür.|
+|[CDC::GetCurrentPosition](#getcurrentposition)|Kalemin geçerli konumunu (mantıksal koordinatlarda) alır.|
+|[CDC::GetDCBrushColor](#getdcbrushcolor)|Geçerli fırça rengini alır.|
+|[CDC::GetDCPenColor](#getdcpencolor)|Geçerli kalem rengini alır.|
+|[CDC::GetDeviceCaps](#getdevicecaps)|Belirli bir görüntüleme aygıtının yetenekleri hakkında aygıta özgü belirli bir tür bilgi alır.|
+|[CDC::GetFontData](#getfontdata)|Ölçeklenebilir bir yazı tipi dosyasından yazı tipi metrik bilgilerini alır. Alınacak bilgiler, yazı tipi dosyasına bir ofset ve döndürülecek bilgilerin uzunluğu belirtilerek tanımlanır.|
+|[CDC::GetFontLanguageInfo](#getfontlanguageinfo)|Belirtilen görüntü bağlamı için şu anda seçili yazı tipi hakkındaki bilgileri verir.|
+|[CDC::GetGlyphOutline](#getglyphoutline)|Geçerli yazı tipindeki anahat karakteri için anahat eğrisini veya bit eşlemi alır.|
+|[CDC::GetGraphicsMode](#getgraphicsmode)|Belirtilen aygıt bağlamı için geçerli grafik modunu alır.|
+|[CDC::GetHalftoneBrush](#gethalftonebrush)|Yarım ton fırçasını alır.|
+|[CDC::GetKerningPairs](#getkerningpairs)|Belirtilen aygıt bağlamında şu anda seçili olan yazı tipi için karakter çekirdek çiftlerini alır.|
+|[CDC::GetLayout](#getlayout)|Aygıt bağlamının (DC) düzenini alır. Düzen soldan sağa (varsayılan) veya sağdan sola (yansıtılmış) olabilir.|
+|[CDC::GetMapMode](#getmapmode)|Geçerli eşleme modunu alır.|
+|[CDC::GetMiterLimit](#getmiterlimit)|Aygıt bağlamı için gönye sınırını döndürür.|
+|[CDC::GetNearestColor](#getnearestcolor)|Verilen aygıtın temsil edebileceği belirli bir mantıksal renge en yakın mantıksal rengi alır.|
+|[CDC::GetOutlineTextMetrics](#getoutlinetextmetrics)|TrueType yazı tipleri için yazı tipi metrik bilgilerini alır.|
+|[CDC::GetOutputCharWidth](#getoutputcharwidth)|Çıktı aygıtı bağlamını kullanarak geçerli yazı tipinden art arda bir karakter grubundaki tek tek karakterlerin genişliklerini alır.|
+|[CDC::GetOutputTabbedTextExtent](#getoutputtabbedtextextent)|Çıkış aygıtı bağlamında bir karakter dizesinin genişliğini ve yüksekliğini hesaplar.|
+|[CDC::GetOutputTextExtent](#getoutputtextextent)|Boyutları belirlemek için geçerli yazı tipini kullanarak çıktı aygıtı bağlamında bir metin satırının genişliğini ve yüksekliğini hesaplar.|
+|[CDC::GetOutputTextMetrics](#getoutputtextmetrics)|Çıktı aygıtı bağlamından geçerli yazı tipinin ölçümlerini alır.|
+|[CDC::GetPath](#getpath)|Aygıt bağlamında seçilen yolda bulunan eğrilerin uç noktalarını ve eğrilerin denetim noktalarını tanımlayan koordinatları alır.|
+|[CDC::GetPixel](#getpixel)|Belirtilen noktada pikselin RGB renk değerini alır.|
+|[CDC::GetPolyFillMode](#getpolyfillmode)|Geçerli çokgen dolum modunu alır.|
+|[CDC::GetROP2](#getrop2)|Geçerli çizim modunu alır.|
+|[CDC::GetSafeHdc](#getsafehdc)|[CD::m_hDC,](#m_hdc)çıktı aygıtı bağlamını döndürür.|
+|[CDC::GetStretchBltMode](#getstretchbltmode)|Geçerli bit map germe modunu alır.|
+|[CDC::GetTabbedTextExtent](#gettabbedtextextent)|Öznitelik aygıtı bağlamında bir karakter dizesinin genişliğini ve yüksekliğini hesaplar.|
+|[CDC::GetTextAlign](#gettextalign)|Metin hizalama bayraklarını alır.|
+|[CDC::GetTextCharacterExtra](#gettextcharacterextra)|Karakterler arası aralık miktarı için geçerli ayarı alır.|
+|[CDC::GetTextColor](#gettextcolor)|Geçerli metin rengini alır.|
+|[CDC::GetTextExtent](#gettextextent)|Boyutları belirlemek için geçerli yazı tipini kullanarak öznitelik aygıtı bağlamında bir metin satırının genişliğini ve yüksekliğini hesaplar.|
+|[CDC::GetTextExtentExPointi](#gettextextentexpointi)|Belirli bir astara sığacak belirli bir dizedeki karakter sayısını alır ve bir diziyi bu karakterlerin her biri için metin kapsamıyla doldurur.|
+|[CDC::GetTextExtentPointi](#gettextextentpointi)|Belirtilen gifof endekslerinin genişliğini ve yüksekliğini alır.|
+|[CDC::GetTextFace](#gettextface)|Geçerli yazı tipinin yazı tipinin yazı tipi adını boş sonlandırılmış dize olarak arabellekte kopyalar.|
+|[CDC::GetTextMetrics](#gettextmetrics)|Öznitelik aygıtı bağlamından geçerli yazı tipinin ölçümlerini alır.|
+|[CDC::GetViewportExt](#getviewportext)|Viewport'un x- ve y-derecelerini alır.|
+|[CDC::GetViewportOrg](#getviewportorg)|Viewport kökenli x- ve y-koordinatlarını alır.|
+|[CDC::GetWindow](#getwindow)|Görüntü aygıtı bağlamıyla ilişkili pencereyi döndürür.|
+|[CDC::GetWindowExt](#getwindowext)|İlişkili pencerenin x- ve y-kapsamlarını alır.|
+|[CDC::GetWindowOrg](#getwindoworg)|İlişkili pencerenin kaynağının x- ve y koordinatlarını alır.|
+|[CDC::GetWorldTransform](#getworldtransform)|Geçerli dünya alanını sayfa-uzay dönüşümüne alır.|
+|[CDC::GradientFill](#gradientfill)|Dikdörtgen ve üçgen yapılarını gradating bir renkle doldurur.|
+|[CDC::GrayString](#graystring)|Verilen konuma soluk (gri) metin çizer.|
+|[CDC::HIMETRICtoDP](#himetrictodp)|HIMETRIC birimlerini aygıt birimlerine dönüştürür.|
+|[CDC::HIMETRICtoLP](#himetrictolp)|HIMETRIC birimlerini mantıksal birimlere dönüştürür.|
+|[CDC::Kesişme Klipsi](#intersectcliprect)|Geçerli bölgenin kesişimini ve bir dikdörtgeni oluşturarak yeni bir kırpma bölgesi oluşturur.|
+|[CDC::InvertRect](#invertrect)|Dikdörtgenin içeriğini ters çeviren.|
+|[CDC::InvertRgn](#invertrgn)|Bir bölgedeki renkleri ters çevirer.|
+|[CDC::Yazdırma](#isprinting)|Aygıt bağlamının yazdırmaiçin kullanılıp kullanılmayacağını belirler.|
+|[CDC::LineTo](#lineto)|Geçerli konumdan bir noktaya kadar bir çizgi çizer, ancak dahil etmez.|
+|[CDC::LPtoDP](#lptodp)|Mantıksal birimleri aygıt birimlerine dönüştürür.|
+|[CDC::LPtoHIMETRIC](#lptohimetric)|Mantıksal birimleri HIMETRIC birimlerine dönüştürür.|
+|[CDC::MaskBlt](#maskblt)|Verilen maske ve raster işlemini kullanarak kaynak ve hedef bit eşlemlerinin renk verilerini birleştirir.|
+|[CDC::ModifyWorldTransform](#modifyworldtransform)|Belirtilen modu kullanarak bir aygıt bağlamı için dünya dönüşüm değiştirir.|
+|[CDC::MoveTo](#moveto)|Geçerli konumu hareket ettirir.|
+|[CDC::OfsetClipRgn](#offsetcliprgn)|Verilen aygıtın kırpma bölgesini hareket ettirir.|
+|[CDC::OfsetViewportOrg](#offsetviewportorg)|Geçerli viewport kaynağının koordinatlarına göre görüntü kaynağı kaynağını değiştirir.|
+|[CDC::OfsetWindowOrg](#offsetwindoworg)|Geçerli pencere kaynağının koordinatlarına göre pencere kaynağını değiştirir.|
+|[CDC::PaintRgn](#paintrgn)|Bir bölgeyi seçili fırçayla doldurur.|
+|[CDC::PatBlt](#patblt)|Biraz desen oluşturur.|
+|[CDC::Pie](#pie)|Pasta şeklinde bir kama çizer.|
+|[CDC::PlayMetaFile](#playmetafile)|Belirtilen metadosyanın içeriğini verilen aygıtta çalar. Verilen gelişmiş `PlayMetaFile` biçimli metadosyada depolanan resmin geliştirilmiş sürümü görüntülenir. Metadosya herhangi bir sayıda çalınabilir.|
+|[CDC::PlgBlt](#plgblt)|Kaynak aygıt bağlamında belirtilen dikdörtgenden belirli aygıt bağlamında belirtilen paralelograma renk veri bitlerinin bit bloğu aktarımını gerçekleştirir.|
+|[CDC::PolyBezier](#polybezier)|Bir veya daha fazla Bzier splines çizer. Geçerli konum ne kullanılır ne de güncelleştirilir.|
+|[CDC::PolyBezierTo](#polybezierto)|Bir veya daha fazla Bzier spline çizer ve geçerli konumu son Bzier spline bitiş noktasına taşır.|
+|[CDC::PolyDraw](#polydraw)|Çizgi parçaları ve Bzier splines kümesi çizer. Bu işlev geçerli konumu güncelleştirir.|
+|[CDC::Polygon](#polygon)|Çizgilerle birbirine bağlanmış iki veya daha fazla noktadan (tepe) oluşan bir çokgen çizer.|
+|[CDC::Polyline](#polyline)|Belirtilen noktaları bağlayan bir çizgi segmentleri kümesi çizer.|
+|[CDC::PolylineTo](#polylineto)|Bir veya daha fazla düz çizgi çizer ve geçerli konumu son satırın bitiş noktasına taşır.|
+|[CDC::PolyPolygon](#polypolygon)|Geçerli çokgen doldurma modu kullanılarak doldurulan iki veya daha fazla çokgen oluşturur. Çokgenler kopuk olabilir veya çakışabilir.|
+|[CDC::PolyPolyline](#polypolyline)|Birden çok bağlı çizgi parçası serisi çizer. Geçerli konum bu işlev tarafından ne kullanılır ne de güncelleştirilir.|
+|[CDC::PtVisible](#ptvisible)|Verilen noktanın kırpma bölgesinde olup olmadığını belirtir.|
+|[CDC::RealizePalette](#realizepalette)|Geçerli mantıksal paletteki palet girişlerini sistem paletine eşler.|
+|[CDC::Dikdörtgen](#rectangle)|Geçerli kalemi kullanarak bir dikdörtgen çizer ve geçerli fırçayı kullanarak doldurur.|
+|[CDC::RectVisible](#rectvisible)|Verilen dikdörtgenin herhangi bir bölümünün kırpma bölgesinde olup olmadığını belirler.|
+|[CDC::ReleaseAttribDC](#releaseattribdc)|Öznitelik aygıtı bağlamını yayımlar. `m_hAttribDC`|
+|[CDC::ReleaseOutputDC](#releaseoutputdc)|Çıkış `m_hDC`aygıtı bağlamını serbest bırakır.|
+|[CDC::ResetDC](#resetdc)|Aygıt `m_hAttribDC` bağlamını güncelleştirir.|
+|[CDC::RestoreDC](#restoredc)|Aygıt bağlamını önceki duruma geri `SaveDC`yükler.|
+|[CDC::RoundRect](#roundrect)|Geçerli kalemi kullanarak yuvarlak köşeli bir dikdörtgen çizer ve geçerli fırçayı kullanarak doldurulur.|
+|[CDC::SaveDC](#savedc)|Aygıt bağlamının geçerli durumunu kaydeder.|
+|[CDC::ScaleViewportExt](#scaleviewportext)|Geçerli değerlere göre görüntü alanı kapsamını değiştirir.|
+|[CDC::ScaleWindowExt](#scalewindowext)|Geçerli değerlere göre pencere boyutlarını değiştirir.|
+|[CDC::ScrollDC](#scrolldc)|Bir bit dikdörtgenini yatay ve dikey olarak kaydırır.|
+|[CDC::SelectClipPath](#selectclippath)|Aygıt bağlamı için kırpma bölgesi olarak geçerli yolu seçer ve yeni bölgeyi belirtilen modu kullanarak varolan herhangi bir kırpma bölgesiyle birleştirir.|
+|[CDC::SelectClipRgn](#selectcliprgn)|Belirtilen modu kullanarak verilen bölgeyi geçerli kırpma bölgesiyle birleştirir.|
+|[CDC::Nesne Seç](#selectobject)|Kalem gibi bir GDI çizim nesnesi seçer.|
+|[CDC::SelectPalette](#selectpalette)|Mantıksal paleti seçer.|
+|[CDC::SelectStockObject](#selectstockobject)|Windows tarafından sağlanan önceden tanımlanmış stok kalemlerinden, fırçalardan veya yazı tiplerinden birini seçer.|
+|[CDC::SetAbortProc](#setabortproc)|Yazdırma işi iptal edilmesi gerekiyorsa Windows'un çağırdığı programcı tarafından sağlanan bir geri arama işlevi ayarlar.|
+|[CDC::SetArcDirection](#setarcdirection)|Yay ve dikdörtgen işlevleri için kullanılacak çizim yönünü ayarlar.|
+|[CDC::SetAttribDC](#setattribdc)|Ayarlar `m_hAttribDC`, öznitelik aygıt bağlamı.|
+|[CDC::SetBkColor](#setbkcolor)|Geçerli arka plan rengini ayarlar.|
+|[CDC::SetBkMode](#setbkmode)|Arka plan modunu ayarlar.|
+|[CDC::SetBoundsRect](#setboundsrect)|Belirtilen aygıt bağlamı için sınırlama-dikdörtgen bilgilerinin birikimini denetler.|
+|[CDC::SetBrushOrg](#setbrushorg)|Aygıt bağlamında seçilen sonraki fırçanın kaynağını belirtir.|
+|[CDC::AyarRenk Ayarlaması](#setcoloradjustment)|Belirtilen değerleri kullanarak aygıt bağlamı için renk ayarlama değerlerini ayarlar.|
+|[CDC::SetDCBrushColor](#setdcbrushcolor)|Geçerli fırça rengini ayarlar.|
+|[CDC::SetDCPenColor](#setdcpencolor)|Geçerli kalem rengini ayarlar.|
+|[CDC::SetGraphicsMode](#setgraphicsmode)|Belirtilen aygıt bağlamı için geçerli grafik modunu ayarlar.|
+|[CDC::SetLayout](#setlayout)|Aygıt bağlamının (DC) düzenini değiştirir.|
+|[CDC::SetMapMode](#setmapmode)|Geçerli eşleme modunu ayarlar.|
+|[CDC::SetMapperFlags](#setmapperflags)|Mantıksal yazı tiplerini fiziksel yazı tiplerine eşlerken yazı tipi haritaper'ın kullandığı algoritmayı değiştirir.|
+|[CDC::SetMiterLimit](#setmiterlimit)|Aygıt bağlamı için gönye birleştirmelerinin uzunluğu için sınırı ayarlar.|
+|[CDC::SetOutputDC](#setoutputdc)|Ayarlar `m_hDC`, çıkış aygıtı bağlamı.|
+|[CDC::SetPixel](#setpixel)|Belirtilen noktadaki pikseli, belirtilen rengin en yakın yaklaşık yaklaşmasına ayarlar.|
+|[CDC::SetPixelV](#setpixelv)|Belirtilen koordinatlarda pikseli belirtilen rengin en yakın yaklaşık yaklaşık olarak ayarlar. `SetPixelV`aslında boyalı `SetPixel` noktanın renk değerini döndürmek gerekmez çünkü daha hızlıdır.|
+|[CDC::SetPolyFillMode](#setpolyfillmode)|Çokgen doldurma modunu ayarlar.|
+|[CDC::SetROP2](#setrop2)|Geçerli çizim modunu ayarlar.|
+|[CDC::SetStretchBltMode](#setstretchbltmode)|Bitmap germe modunu ayarlar.|
+|[CDC::SetTextAlign](#settextalign)|Metin hizalama bayraklarını ayarlar.|
+|[CDC::SetTextCharacterEkstra](#settextcharacterextra)|Karakterler arası aralık miktarını ayarlar.|
+|[CDC::SetTextColor](#settextcolor)|Metin rengini ayarlar.|
+|[CDC::SetTextJustification](#settextjustification)|Dizedeki kesme karakterlerine alan ekler.|
+|[CDC::SetViewportExt](#setviewportext)|Viewport'un x- ve y-derecelerini ayarlar.|
+|[CDC::SetViewportOrg](#setviewportorg)|Viewport kaynağını ayarlar.|
+|[CDC::SetWindowExt](#setwindowext)|İlişkili pencerenin x- ve y-derecelerini ayarlar.|
+|[CDC::SetWindowOrg](#setwindoworg)|Aygıt bağlamının pencere kaynağını ayarlar.|
+|[CDC::SetWorldTransform](#setworldtransform)|Geçerli dünya alanını sayfa-uzay dönüşümüne ayarlar.|
+|[CDC::Başlangıç Doc](#startdoc)|Aygıt sürücüsüne yeni bir yazdırma işinin başladığını bildirir.|
+|[CDC::Başlangıç Sayfası](#startpage)|Aygıt sürücüsüne yeni bir sayfanın başlatılmaya başladığını bildirir.|
+|[CDC::StretchBlt](#stretchblt)|Bir bit eşemi bir kaynak dikdörtgen ve aygıttan hedef dikdörtgen içine taşır, hedef dikdörtgenin boyutlarına uyacak şekilde gerekirse bit eşlemi uzatır veya sıkıştırır.|
+|[CDC::StrokeAndFillPath](#strokeandfillpath)|Bir yoldaki açık şekilleri kapatır, geçerli kalemi kullanarak yolun anahatlarını vurur ve geçerli fırçayı kullanarak içini doldurur.|
+|[CDC::StrokePath](#strokepath)|Geçerli kalemi kullanarak belirtilen yolu işler.|
+|[CDC::TabbedTextOut](#tabbedtextout)|Sekmeleri sekme durdurma pozisyonları dizisinde belirtilen değerlere genişleterek, belirli bir konuma bir karakter dizesi yazar.|
+|[CDC::TextOut](#textout)|Şu anda seçili yazı tipini kullanarak belirli bir konuma bir karakter dizesi yazar.|
+|[CDC::ŞeffafBlt](#transparentblt)|Belirtilen kaynak aygıt bağlamından bir bit renk bloğu verisini hedef aygıt bağlamına aktarArak aktarımda belirli bir rengi saydam hale getirir.|
+|[CDC::UpdateColors](#updatecolors)|İstemci alanındaki geçerli renkleri piksel piksel olarak sistem paleti ile eşleştirerek aygıt bağlamının istemci alanını güncelleştirir.|
+|[CDC::WidenPath](#widenpath)|Yol aygıt bağlamında şu anda seçili kalem kullanılarak okşandıysa, geçerli yolu boyanacak alan olarak yeniden tanımlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDC:: operator HDC](#operator_hdc)|Cihaz bağlamının tanıtıcısını alır.|
+|[CDC::operatör HDC](#operator_hdc)|Aygıt bağlamının tutamacını alır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDC:: m_hAttribDC](#m_hattribdc)|Bu `CDC` nesnesi tarafından kullanılan öznitelik-cihaz bağlamı.|
-|[CDC:: m_hDC](#m_hdc)|Bu `CDC` nesnesi tarafından kullanılan çıkış aygıtı bağlamı.|
+|[CDC::m_hAttribDC](#m_hattribdc)|Bu `CDC` nesne tarafından kullanılan öznitelik-aygıt bağlamı.|
+|[CDC::m_hDC](#m_hdc)|Bu `CDC` nesne tarafından kullanılan çıktı aygıtı bağlamı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDC` nesnesi, bir ekran veya yazıcı gibi bir cihaz bağlamı ile çalışmak için üye işlevleri sağlar ve bir pencerenin istemci alanıyla ilişkili bir görüntüleme bağlamı ile çalışmaya yönelik Üyeler de vardır.
+Nesne, `CDC` ekran veya yazıcı gibi bir aygıt bağlamıyla çalışmak için üye işlevlerin yanı sıra pencerenin istemci alanıyla ilişkili bir görüntü bağlamıyla çalışmak için üye işlevler sağlar.
 
-Tüm çizim `CDC` nesnesinin üye işlevleri aracılığıyla yapılır. Sınıfı, cihaz bağlamı işlemleri için üye işlevleri, çizim araçlarıyla çalışma, tür kullanımı uyumlu grafik cihaz arabirimi (GDI) nesne seçimi ve renkler ve paletler ile çalışma için sağlar. Ayrıca, çizim özniteliklerini alma ve ayarlama, eşleme, Görünüm penceresi ile çalışma, pencere kapsamı ile çalışma, koordinatları dönüştürme, bölgeler ile çalışma, kırpma, çizim çizgileri ve basit şekiller, üç nokta ve çizim için üye işlevleri sağlar Gen. Ayrıca üye işlevleri, metin çizme, yazı tipleriyle çalışma, yazıcı çıkar, kaydırma ve meta dosyaları oynatma için de sağlanır.
+Bir `CDC` nesnenin üye işlevleri ile tüm çizim yapın. Sınıf, aygıt bağlamı işlemleri için üye işlevler, çizim araçları, tür güvenli grafik aygıtı arabirimi (GDI) nesne seçimi ve renkler ve paletlerle çalışma için üye işlevler sağlar. Ayrıca çizim özniteliklerialmak ve ayarlamak, eşleme, viewport ile çalışma, pencere kapsamı ile çalışma, koordinatları dönüştürme, bölgelerle çalışma, kırpma, çizgiler çizme ve basit şekiller, elipsler ve çokgenler çizmek için üye işlevler sağlar. Metin çizmek, yazı tipleriyle çalışmak, yazıcı kaçışlarını kullanmak, kaydırmak ve meta dosyaları oynatmak için üye işlevler de sağlanır.
 
-`CDC` nesnesini kullanmak için, oluşturun ve ardından üye işlevlerini, cihaz bağlamlarını kullanan paralel Windows işlevlerine çağırın.
+Bir `CDC` nesneyi kullanmak, oluşturmak ve ardından aygıt bağlamlarını kullanan Paralel Windows işlevlerini arayan üye işlevleri ni çağırın.
 
 > [!NOTE]
->  Windows 95/98 ' de tüm ekran koordinatları 16 bitle sınırlıdır. Bu nedenle, `CDC` üye işlevine geçirilen bir **int** ,-32767 32768 aralığında olmalıdır.
+> Windows 95/98 altında, tüm ekran koordinatları 16 bit ile sınırlıdır. Bu nedenle, bir üye `CDC` işleve geçen bir **int** -32768 ile 32767 aralığında olmalıdır.
 
-Belirli kullanımlar için Microsoft Foundation Class Kitaplığı `CDC` türetilmiş birkaç sınıf sağlar. `CPaintDC`, `BeginPaint` ve `EndPaint`çağrılarını saklar. `CClientDC`, pencerenin istemci alanıyla ilişkili bir görüntüleme bağlamını yönetir. `CWindowDC`, çerçevesi ve denetimleri dahil olmak üzere tüm pencereyle ilişkili bir görüntüleme bağlamını yönetir. `CMetaFileDC` bir cihaz bağlamını bir meta dosyası ile ilişkilendirir.
+Belirli kullanımlar için, Microsoft Hazırlık Sınıf `CDC` Kitaplığı. `CPaintDC`aramaları kapsüller `BeginPaint` ve `EndPaint`. `CClientDC`pencerenin istemci alanıyla ilişkili bir görüntü bağlamını yönetir. `CWindowDC`çerçevesi ve denetimleri de dahil olmak üzere tüm pencereyle ilişkili bir görüntü bağlamını yönetir. `CMetaFileDC`aygıt bağlamını meta dosyayla ilişkilendirer.
 
-`CDC`, bir cihaz bağlamının yerleşimini tersine çevirme için, bir pencereden bir pencereden kalıtımla almayan iki üye işlevi ( [GetLayout](#getlayout) ve [SetLayout](#setlayout)) sağlar. Bu tür sağdan sola yön, Arapça veya Ibranice gibi kültürler için yazılan uygulamalar için, karakter düzeninin Avrupa standardı olmadığı durumlarda gereklidir.
+`CDC`düzenini pencereden devralmayan bir aygıt bağlamının düzenini tersine çevirmek için [GetLayout](#getlayout) ve [SetLayout](#setlayout)olmak üzere iki üye işlev sağlar. Bu tür sağdan sola yönlendirme, karakter düzeninin Avrupa standardı olmadığı Arapça veya İbranice gibi kültürler için yazılmış uygulamalar için gereklidir.
 
-`CDC`, [m_hDC](#m_hdc) ve [m_hAttribDC](#m_hattribdc)iki cihaz bağlamı içerir. Bu, `CDC` bir nesne oluştururken aynı cihaza başvurur. `CDC` tüm çıktı GDI çağrılarını `m_hDC` ve çoğu öznitelik GDI çağrısı `m_hAttribDC`yönlendirir. (Bir öznitelik çağrısı örneği `GetTextColor`, `SetTextColor` bir çıkış çağrıdır.)
+`CDC`bir `CDC` nesnenin oluşturulmasında aynı aygıta başvuran [m_hDC](#m_hdc) ve [m_hAttribDC](#m_hattribdc)olmak üzere iki aygıt bağlamı içerir. `CDC`tüm çıkış GDI aramaları `m_hDC` yönlendirir ve en öznitelik GDI aramaları `m_hAttribDC`. (Öznitelik çağrısının bir `GetTextColor`örneği, `SetTextColor` çıktı çağrısı ise dir.)
 
-Örneğin, çerçeve fiziksel bir cihazdan öznitelikleri okurken bir meta dosyasına çıktı gönderecek bir `CMetaFileDC` nesnesini uygulamak için bu iki cihaz bağlamlarını kullanır. Baskı Önizleme, çerçevede benzer bir biçimde uygulanır. Ayrıca, uygulamaya özgü kodunuzda benzer bir şekilde iki cihaz bağlamı da kullanabilirsiniz.
+Örneğin, çerçeve fiziksel bir aygıttan öznitelikleri `CMetaFileDC` okurken meta dosyaya çıktı gönderecek bir nesne uygulamak için bu iki aygıt bağlamını kullanır. Baskı önizleme benzer bir şekilde çerçevesinde uygulanır. Ayrıca, iki aygıt bağlamını uygulamaya özgü kodunuzda benzer bir şekilde kullanabilirsiniz.
 
-Hem `m_hDC` hem de `m_hAttribDC` cihaz bağlamlarından metin ölçümü bilgilerine ihtiyacınız olabilecek zamanlar vardır. Aşağıdaki işlev çiftleri bu özelliği sağlar:
+Hem aygıt `m_hDC` `m_hAttribDC` bağlamlarından metin metrik bilgilere ihtiyaç duyabileceğiniz zamanlar vardır. Aşağıdaki işlev çiftleri bu özelliği sağlar:
 
-|M_hAttribDC kullanır|M_hDC kullanır|
+|m_hAttribDC kullanır|m_hDC kullanır|
 |-----------------------|-----------------|
-|[GetTextExtent](#gettextextent)|[GetOutputTextExtent](#getoutputtextextent)|
+|[Gettextextent](#gettextextent)|[GetOutputTextExtent](#getoutputtextextent)|
 |[GetTabbedTextExtent](#gettabbedtextextent)|[GetOutputTabbedTextExtent](#getoutputtabbedtextextent)|
-|[Gettextölçümleri](#gettextmetrics)|[Getoutputtextölçümleri](#getoutputtextmetrics)|
+|[GetTextMetrics](#gettextmetrics)|[GetOutputTextMetrics](#getoutputtextmetrics)|
 |[GetCharWidth](#getcharwidth)|[GetOutputCharWidth](#getoutputcharwidth)|
 
-`CDC`hakkında daha fazla bilgi için bkz. [cihaz bağlamları](../../mfc/device-contexts.md).
+Daha fazla `CDC`bilgi için [Bkz. Aygıt Bağlamları.](../../mfc/device-contexts.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 `CDC`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** Afxwin. h
+**Üstbilgi:** afxwin.h
 
-##  <a name="abortdoc"></a>CDC:: AbortDoc
+## <a name="cdcabortdoc"></a><a name="abortdoc"></a>CDC::AbortDoc
 
-Geçerli yazdırma işini sonlandırır ve [StartDoc](#startdoc) üye işlevine yapılan son çağrıdan bu yana uygulamanın cihaza yazdığı her şeyi siler.
+Geçerli yazdırma işini sonlandırır ve [BaşlatDoc](#startdoc) üye işlevine yapılan son çağrıdan bu yana uygulamanın aygıta yazdığı her şeyi siler.
 
 ```
 int AbortDoc();
@@ -690,39 +690,39 @@ int AbortDoc();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa 0 ' dan büyük veya buna eşit bir değer ya da bir hata oluştuysa negatif bir değer. Aşağıdaki listede yaygın hata değerleri ve anlamları gösterilmektedir:
+Başarılı olursa 0'dan büyük veya eşit bir değer veya bir hata oluştuysa negatif değer. Aşağıdaki liste ortak hata değerlerini ve anlamlarını gösterir:
 
-- SP_ERROR genel hata.
+- Genel SP_ERROR hata.
 
-- SP_OUTOFDISK, şu anda bekletilmekte olan yeterli disk alanı yok ve kullanılabilir alan yok.
+- SP_OUTOFDISK Şu anda biriktirme için yeterli disk alanı yok ve başka alan kullanılamaz.
 
-- Kuyruğa alma için yeterli bellek SP_OUTOFMEMORY yok.
+- SP_OUTOFMEMORY Biriktirme için yeterli bellek yok.
 
-- SP_USERABORT Kullanıcı, işi Yazdırma Yöneticisi aracılığıyla sonlandırdı.
+- SP_USERABORT Kullanıcı Yazdırma Yöneticisi aracılığıyla işi sonlandırdı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, ABORTDOC yazıcı kaçış yerini alır.
+Bu üye işlev, ABORTDOC yazıcı kaçışının yerini alır.
 
-`AbortDoc`, aşağıdakileri sonlandırmak için kullanılmalıdır:
+`AbortDoc`aşağıdakileri sona erdirmek için kullanılmalıdır:
 
-- [SetAbortProc](#setabortproc)kullanarak bir Abort işlevi belirtmeyen işlemler yazdırılıyor.
+- [SetAbortProc](#setabortproc)kullanarak bir iptal işlevi belirtmeyen yazdırma işlemleri.
 
-- İlk NEWFRAME veya NEXTBAND kaçış çağrısına henüz erişilemeyen yazdırma işlemleri.
+- İlk NEWFRAME veya NEXTBAND kaçış çağrısına henüz ulaşmamış yazdırma işlemleri.
 
-Bir uygulama bir yazdırma hatasıyla veya iptal edilen bir yazdırma işlemiyle karşılaşırsa, `CDC`sınıfının [EndDoc](#enddoc) veya `AbortDoc` member işlevlerini kullanarak işlemi sonlandırmayı denememelidir. GDI, hata değerini döndürmeden önce işlemi otomatik olarak sonlandırır.
+Bir uygulama yazdırma hatası veya iptal edilmiş bir yazdırma işlemiyle karşılaşırsa, [EndDoc](#enddoc) veya `AbortDoc` sınıfın `CDC`üye işlevlerini kullanarak işlemi sonlandırmaya çalışmamalıdır. GDI, hata değerini döndürmeden önce işlemi otomatik olarak sonlandırır.
 
-Uygulama, kullanıcının yazdırma işlemini iptal edebilmesini sağlamak için bir iletişim kutusu görüntülüyorsa, iletişim kutusunu yok etmeden önce `AbortDoc` çağırmalıdır.
+Uygulama, kullanıcının yazdırma işlemini iptal etmesine izin vermek için `AbortDoc` bir iletişim kutusu görüntülerse, iletişim kutusunu yok etmeden önce araması gerekir.
 
-Yazdırma işini başlatmak için Print Manager kullanılmışsa, `AbortDoc` çağrısı tüm biriktirme işini siler; yazıcı hiçbir şey almaz. Yazdırma Yöneticisi, yazdırma işini başlatmak için kullanılmıyorsa, `AbortDoc` çağrılmadan önce veriler yazıcıya gönderilmiş olabilir. Bu durumda, yazıcı sürücüsü yazıcıyı sıfırlayıp (mümkün olduğunda) ve yazdırma işini kapatacaktır.
+Yazdırma Yöneticisi yazdırma işini başlatmak için `AbortDoc` kullanıldıysa, arama tüm biriktirme işini siler — yazıcı hiçbir şey almaz. Yazdırma Yöneticisi yazdırma işini başlatmak için kullanılmamışsa, veriler çağrılmadan önce `AbortDoc` yazıcıya gönderilmiş olabilir. Bu durumda, yazıcı sürücüsü yazıcıyı sıfırlamış olur (mümkünse) ve yazdırma işini kapatır.
 
 ### <a name="example"></a>Örnek
 
-  [CDC:: StartDoc](#startdoc)örneğine bakın.
+  CDC örneğine [bakın::StartDoc](#startdoc).
 
-##  <a name="abortpath"></a>CDC:: AbortPath
+## <a name="cdcabortpath"></a><a name="abortpath"></a>CDC::AbortPath
 
-Cihaz bağlamındaki tüm yolları kapatır ve atar.
+Aygıt bağlamında tüm yolları kapatır ve atar.
 
 ```
 BOOL AbortPath();
@@ -734,11 +734,11 @@ BOOL AbortPath();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Cihaz bağlamında açık yol ayracı varsa, yol köşeli ayracı kapatılır ve yol atılır. Cihaz bağlamında kapalı bir yol varsa, yol atılır.
+Aygıt bağlamında açık bir yol ayraç varsa, yol ayraç kapatılır ve yol atılır. Aygıt bağlamında kapalı bir yol varsa, yol atılır.
 
-##  <a name="addmetafilecomment"></a>CDC:: AddMetaFileComment
+## <a name="cdcaddmetafilecomment"></a><a name="addmetafilecomment"></a>CDC::AddMetaFileComment
 
-Bir arabellekteki yorumu belirtilen bir Gelişmiş Biçim meta dosyasına kopyalar.
+Açıklamayı arabellekten belirli bir gelişmiş biçimli metadosyaya kopyalar.
 
 ```
 BOOL AddMetaFileComment(
@@ -749,10 +749,10 @@ BOOL AddMetaFileComment(
 ### <a name="parameters"></a>Parametreler
 
 *nDataSize*<br/>
-Açıklama arabelleğinin uzunluğunu bayt cinsinden belirtir.
+Yorum arabelleği, bayt olarak uzunluğunu belirtir.
 
 *pCommentData*<br/>
-Yorumu içeren arabelleğe işaret eder.
+Yorumu içeren arabelleğe işaret edin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -760,11 +760,11 @@ Yorumu içeren arabelleğe işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir yorum, örneğin, resmin kaynağı ve oluşturulduğu tarih gibi herhangi bir özel bilgi içerebilir. Bir yorum, bir uygulama imzasıyla ve ardından verilerin ardından başlamalıdır. Açıklamalar konuma özgü verileri içermemelidir. Konuma özgü veriler bir kaydın konumunu belirtir ve bir meta dosyasının başka bir meta dosya içine katıştırılabileceğinden dahil edilmemelidir. Bu işlev yalnızca gelişmiş meta dosyalarla birlikte kullanılabilir.
+Bir açıklama herhangi bir özel bilgi içerebilir - örneğin, resmin kaynağı ve oluşturulduğu tarih. Bir açıklama bir uygulama imzası ile başlamalı ve ardından veriler izlemelidir. Açıklamalar konuma özgü veriler içermemelidir. Konuma özgü veriler bir kaydın konumunu belirtir ve bir meta dosya başka bir meta dosyanın içine katıştıolabileceğinden bu kaydın konumuna dahil edilmemelidir. Bu işlev yalnızca gelişmiş meta dosyalarla kullanılabilir.
 
-##  <a name="alphablend"></a>CDC:: harflerden Blend
+## <a name="cdcalphablend"></a><a name="alphablend"></a>CDC::AlphaBlend
 
-Saydam veya yarı saydam piksel olan bit eşlemleri göstermek için bu üye işlevi çağırın.
+Saydam veya yarı saydam piksellere sahip bit eşlemleri görüntülemek için bu üye işlevi arayın.
 
 ```
 BOOL AlphaBlend(
@@ -783,46 +783,46 @@ BOOL AlphaBlend(
 ### <a name="parameters"></a>Parametreler
 
 *xDest*<br/>
-Hedef dikdörtgenin sol üst köşesinin x koordinatını (mantıksal birimler) belirler.
+Hedef dikdörtgenin sol üst köşesindeki x koordinatını mantıksal birimler halinde belirtir.
 
-*En dest*<br/>
-Hedef dikdörtgenin sol üst köşesinin y koordinatını, mantıksal birimler cinsinden belirtir.
+*yDest*<br/>
+Hedef dikdörtgenin sol üst köşesindeki y-koordinatını mantıksal birimler halinde belirtir.
 
-*nDestWidth*<br/>
-Hedef dikdörtgenin mantıksal birimleri cinsinden genişliği belirtir.
+*nDestGenişliği*<br/>
+Hedef dikdörtgenin genişliğini mantıksal birimler halinde belirtir.
 
-*nDestHeight*<br/>
-Hedef dikdörtgenin mantıksal birimlerindeki yüksekliğini belirtir.
+*nDestYükseklik*<br/>
+Hedef dikdörtgenin yüksekliğini mantıksal birimler halinde belirtir.
 
 *pSrcDC*<br/>
-Kaynak cihaz bağlamına yönelik bir işaretçi.
+Kaynak aygıt bağlamına işaretçi.
 
 *xSrc*<br/>
-Kaynak dikdörtgenin sol üst köşesinin x koordinatını (mantıksal birimler) belirler.
+Kaynak dikdörtgenin sol üst köşesindeki x koordinatını mantıksal birimler halinde belirtir.
 
 *ySrc*<br/>
-Kaynak dikdörtgenin sol üst köşesinin y koordinatını, mantıksal birimler cinsinden belirtir.
+Kaynak dikdörtgenin sol üst köşesindeki y-koordinatını mantıksal birimler halinde belirtir.
 
-*nSrcWidth*<br/>
-Kaynak dikdörtgenin mantıksal birimleri cinsinden genişliği belirtir.
+*nSrcGenişlik*<br/>
+Kaynak dikdörtgenin genişliğini mantıksal birimler halinde belirtir.
 
-*nSrcHeight*<br/>
-Kaynak dikdörtgenin mantıksal birimlerindeki yüksekliğini belirtir.
+*nSrcYükseklik*<br/>
+Kaynak dikdörtgenin yüksekliğini mantıksal birimler halinde belirtir.
 
-*karıştır*<br/>
-Bir [BLENDFUNCTION](/windows/win32/api/wingdi/ns-wingdi-blendfunction) yapısını belirtir.
+*Karışım*<br/>
+[BLENDFUNCTION](/windows/win32/api/wingdi/ns-wingdi-blendfunction) yapısını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa doğru; Aksi halde yanlış.
+Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. Windows SDK [Alfablend](/windows/win32/api/wingdi/nf-wingdi-alphablend) .
+Daha fazla bilgi için Windows SDK'da [AlphaBlend'e](/windows/win32/api/wingdi/nf-wingdi-alphablend) bakın.
 
-##  <a name="anglearc"></a>CDC:: AngleArc
+## <a name="cdcanglearc"></a><a name="anglearc"></a>CDC::AngleArc
 
-Bir çizgi segmenti ve bir yay çizer.
+Bir çizgi kesimi ve bir yay çizer.
 
 ```
 BOOL AngleArc(
@@ -835,36 +835,36 @@ BOOL AngleArc(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Dairenin merkezinin mantıksal x koordinatını belirtir.
+*X*<br/>
+Dairenin merkezinin mantıksal x-koordinatını belirtir.
 
-*Iz*<br/>
-Dairenin merkezinin mantıksal y koordinatını belirtir.
+*Y*<br/>
+Dairenin merkezinin mantıksal y-koordinatını belirtir.
 
-*nRadius*<br/>
-Mantıksal birimlerde dairenin yarıçapını belirtir. Bu değer pozitif olmalıdır.
+*nYarıçapı*<br/>
+Dairenin yarıçapını mantıksal birimler halinde belirtir. Bu değer pozitif olmalıdır.
 
 *fStartAngle*<br/>
-X eksenine göre derece cinsinden başlangıç açısını belirtir.
+X eksenine göre derece olarak başlangıç açısını belirtir.
 
 *fSweepAngle*<br/>
-Başlangıç açısına göre derece cinsinden tarama açısını belirtir.
+Süpürme açısını başlangıç açısına göre derece olarak belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çizgi segmenti, geçerli konumdan yay başlangıcına çizilir. Yay, verilen yarıçap ve merkeziyle bir dairenin çevresi üzerinde çizilir. Yay uzunluğu, verilen başlatma ve tarama açılarla tanımlanır.
+Çizgi kesimi geçerli konumdan yay başına çizilir. Yay verilen yarıçapı ve merkezi ile bir dairenin çevresi boyunca çizilir. Yay uzunluğu verilen başlangıç ve süpürme açıları ile tanımlanır.
 
-`AngleArc` geçerli konumu, yayı bitiş noktasına taşımaktır. Bu işlev tarafından çizilen yay, geçerli dönüştürme ve eşleme moduna bağlı olarak elips olarak görünebilir. Yayı çizmadan önce, bu işlev çizgi segmentini geçerli konumdan yay başlangıcına çizer. Yay, belirtilen orta nokta etrafında belirtilen yarıçapla bir sanal daire oluşturarak çizilir. Yay başlangıç noktası, dairenin x ekseninden, başlangıç açısına kadar olan derecenin arasında saatin ters olarak ölçülerek belirlenir. Bitiş noktası benzer şekilde, başlangıç noktasından saatin tersi yönde, tarama açısına kadar olan bir ölçüden ölçerek bulunur.
+`AngleArc`akım konumunu yay bitiş noktasına taşır. Bu işlev tarafından çizilen yay, geçerli dönüşüm ve eşleme moduna bağlı olarak eliptik gibi görünebilir. Yay çizmeden önce, bu işlev çizgi kesimini geçerli konumdan yay başına çeker. Yay, belirtilen merkez noktasıetrafında belirtilen yarıçapı ile hayali bir daire inşa edilerek çizilir. Yay başlangıç noktası, dairenin x ekseninden saat yönünün tersine, başlangıç açısındaki derece sayısına göre ölçülerek belirlenir. Bitiş noktası da, süpürme açısındaki derece sayısına göre başlangıç noktasından saat yönünün tersine ölçülerek benzer şekilde yer alır.
 
-Tarama açısı 360 dereceden fazlaysa, yay birden çok kez artar. Bu işlev, satırları geçerli kalemi kullanarak çizer. Şekil doldurulmamış.
+Süpürme açısı 360 dereceden büyükse, yay birden çok kez süpürülür. Bu işlev, geçerli kalemi kullanarak çizgiler çizer. Şekil doldurulmadı.
 
-##  <a name="arc"></a>CDC:: Arc
+## <a name="cdcarc"></a><a name="arc"></a>CDC::Yay
 
-Elips bir yay çizer.
+Eliptik bir yay çizer.
 
 ```
 BOOL Arc(
@@ -886,37 +886,37 @@ BOOL Arc(
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-Sınırlayıcı dikdörtgenin sol üst köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
+Sınırlayan dikdörtgenin sol üst köşesinin x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y1*<br/>
-Sınırlayıcı dikdörtgenin sol üst köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
+*y1*<br/>
+Sınırlayan dikdörtgenin sol üst köşesinin y-koordinatını (mantıksal birimler halinde) belirtir.
 
 *x2*<br/>
-Sınırlayıcı dikdörtgenin sağ alt köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
+Sınırlayan dikdörtgenin sağ alt köşesinin x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y2*<br/>
-Sınırlayıcı dikdörtgenin sağ alt köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
+*y2*<br/>
+Sınırlayan dikdörtgenin sağ alt köşesinin y-koordinatını (mantıksal birimler halinde) belirtir.
 
 *x3*<br/>
-Yay başlangıç noktasını tanımlayan noktanın x koordinatını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez.
+Arkın başlangıç noktasını tanımlayan noktanın x-koordinatını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez.
 
-*Y3*<br/>
-Yay başlangıç noktasını tanımlayan noktanın y koordinatını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez.
+*y3*<br/>
+Arkın başlangıç noktasını tanımlayan noktanın y-koordinatını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez.
 
 *x4*<br/>
-Yay uç noktasını tanımlayan noktanın x koordinatını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez.
+Arkın bitiş noktasını tanımlayan noktanın x-koordinatını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez.
 
-*Y4*<br/>
-Yay uç noktasını tanımlayan noktanın y koordinatını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez.
+*y4*<br/>
+Arkın bitiş noktasını tanımlayan noktanın y-koordinatını (mantıksal birimler de) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez.
 
-*lpRect*<br/>
-Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parametre için bir LPRECT ya da [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
+*Lprect*<br/>
+Sınırlayıcı dikdörtgeni (mantıksal birimler halinde) belirtir. Bu parametre için bir LPRECT veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
 
-*ptStart*<br/>
-Yay başlangıç noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını ya da [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
+*ptBaşlat*<br/>
+Arkın başlangıç noktasını tanımlayan noktanın x- ve y koordinatlarını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez. Bu parametre için bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısını veya [CPoint nesnesinden](../../atl-mfc-shared/reference/cpoint-class.md) geçebilirsiniz.
 
-*ptEnd 'ler*<br/>
-Yay bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir `POINT` yapısını ya da bir `CPoint` nesnesini geçirebilirsiniz.
+*ptEnd*<br/>
+Arkın bitiş noktasını tanımlayan noktanın x- ve y koordinatlarını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez. Bu parametre `POINT` için bir `CPoint` yapı veya nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -924,17 +924,17 @@ Yay bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi kullanılarak çizilen yay, belirtilen sınırlayıcı dikdörtgenle tanımlanan elipsin bir segmenttir.
+İşlev kullanılarak çizilen yay, belirtilen sınırlayıcı dikdörtgen tarafından tanımlanan elipsin bir kesimidir.
 
-Yay gerçek başlangıç noktası, belirtilen başlangıç noktası aracılığıyla sınırlayıcı dikdörtgenin merkezinden çizilen bir ışın, elipsi kesiştiği bir noktasıdır. Yay gerçek bitiş noktası, belirtilen bitiş noktası üzerinden, sınırlayıcı dikdörtgenin merkezinden çizilen bir ışın, elipsi kesiştiği noktasıdır. Yay saatin tersi yönde çizilir. Bir yay kapalı bir şekil olmadığından, doldurulmaz. Dikdörtgenin genişliği ve yüksekliği 2 birimden büyük ve 32.767 birimden az olmalıdır.
+Yay gerçek başlangıç noktası, belirtilen başlangıç noktası ile sınırlayan dikdörtgenin merkezinden çizilen bir ışının elipsle kesiştiği noktadır. Yay gerçek bitiş noktası, belirtilen bitiş noktası ile sınırlayan dikdörtgenin merkezinden çizilen bir ışının elipsle kesiştiği noktadır. Yay saat yönünün tersine çizilir. Bir yay kapalı bir şekil olmadığından, doldurulmadı. Dikdörtgenin genişliği ve yüksekliği 2 birimden büyük ve 32.767 birimden az olmalıdır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#29](../../mfc/codesnippet/cpp/cdc-class_1.cpp)]
 
-##  <a name="arcto"></a>CDC:: ArcTo
+## <a name="cdcarcto"></a><a name="arcto"></a>CDC::Arcto
 
-Elips bir yay çizer.
+Eliptik bir yay çizer.
 
 ```
 BOOL ArcTo(
@@ -956,37 +956,37 @@ BOOL ArcTo(
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-Sınırlayıcı dikdörtgenin sol üst köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
+Sınırlayan dikdörtgenin sol üst köşesinin x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y1*<br/>
-Sınırlayıcı dikdörtgenin sol üst köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
+*y1*<br/>
+Sınırlayan dikdörtgenin sol üst köşesinin y-koordinatını (mantıksal birimler halinde) belirtir.
 
 *x2*<br/>
-Sınırlayıcı dikdörtgenin sağ alt köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
+Sınırlayan dikdörtgenin sağ alt köşesinin x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y2*<br/>
-Sınırlayıcı dikdörtgenin sağ alt köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
+*y2*<br/>
+Sınırlayan dikdörtgenin sağ alt köşesinin y-koordinatını (mantıksal birimler halinde) belirtir.
 
 *x3*<br/>
-Yay başlangıç noktasını tanımlayan noktanın x koordinatını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez.
+Arkın başlangıç noktasını tanımlayan noktanın x-koordinatını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez.
 
-*Y3*<br/>
-Yay başlangıç noktasını tanımlayan noktanın y koordinatını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez.
+*y3*<br/>
+Arkın başlangıç noktasını tanımlayan noktanın y-koordinatını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez.
 
 *x4*<br/>
-Yay uç noktasını tanımlayan noktanın x koordinatını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez.
+Arkın bitiş noktasını tanımlayan noktanın x-koordinatını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez.
 
-*Y4*<br/>
-Yay uç noktasını tanımlayan noktanın y koordinatını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez.
+*y4*<br/>
+Arkın bitiş noktasını tanımlayan noktanın y-koordinatını (mantıksal birimler de) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez.
 
-*lpRect*<br/>
-Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parametre için, bir [Rect](/windows/win32/api/windef/ns-windef-rect) veri yapısına veya bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine bir işaretçi geçirebilirsiniz.
+*Lprect*<br/>
+Sınırlayıcı dikdörtgeni (mantıksal birimler halinde) belirtir. Bu parametre için bir [işaretçiyi BIR RECT](/windows/win32/api/windef/ns-windef-rect) veri yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine geçirebilirsiniz.
 
-*ptStart*<br/>
-Yay başlangıç noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapısını veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
+*ptBaşlat*<br/>
+Arkın başlangıç noktasını tanımlayan noktanın x- ve y koordinatlarını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez. Bu parametre için bir [POINT](/windows/win32/api/windef/ns-windef-point) veri yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi geçirebilirsiniz.
 
-*ptEnd 'ler*<br/>
-Yay bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir `POINT` veri yapısını ya da bir `CPoint` nesnesini geçirebilirsiniz.
+*ptEnd*<br/>
+Arkın bitiş noktasını tanımlayan noktanın x- ve y koordinatlarını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez. Bu parametre `POINT` için bir `CPoint` veri yapısı veya bir nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -994,13 +994,13 @@ Yay bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, geçerli konumun güncelleştirildiğinden `CDC::Arc`benzerdir. ( *X1*, *Y1*) ve ( *x2*, *Y2*) noktaları, sınırlayıcı dikdörtgeni belirler. Verilen sınırlayıcı dikdörtgenle biçimlendirilmiş bir elips, yay eğrisini tanımlar. Yay, sınırlayıcı dikdörtgenin merkezinden ( *x3*, *Y3*) bir radyal çizgiyi kesiştiği noktadan saatin tersi yönde (varsayılan yay yönü) uzatır. Yay, sınırlayıcı dikdörtgenin merkezinden ( *x4*, *Y4*) radyal çizgiyi kesiştiği yere kadar sonlandırır. Başlangıç noktası ve bitiş noktası aynıysa, bir bütün elips çizilir.
+Bu `CDC::Arc`işlev, geçerli konumun güncelleştirilen dışında benzer. Noktalar ( *x1*, *y1*) ve ( *x2*, *y2*) sınırlayıcı dikdörtgeni belirtir. Verilen sınırlayıcı dikdörtgentarafından oluşturulan bir elips, yay eğrisini tanımlar. Yay, radyal çizginin sınırlayan dikdörtgenin merkezinden *(x3*, *y3)* kesiştiği noktadan saat yönünün tersine (varsayılan yay yönü) uzanır. Yay, radyal çizginin sınırlayıcı dikdörtgenin merkezinden ( *x4*, *y4)* kesiştiği yerde sona erer. Başlangıç noktası ve bitiş noktası aynıysa, tam bir elips çizilir.
 
-Geçerli konumdan, yayı başlangıç noktasına bir çizgi çizilir. Bir hata oluşursa geçerli konum, yayı bitiş noktasına ayarlanır. Yay geçerli kalem kullanılarak çizilir; doldurulmamış.
+Bir çizgi, geçerli konumdan yay başlangıç noktasına çizilir. Hata yoksa, geçerli konum yay bitiş noktasına ayarlanır. Yay, geçerli kalem kullanılarak çizilir; doldurulmadı.
 
-##  <a name="attach"></a>CDC:: Attach
+## <a name="cdcattach"></a><a name="attach"></a>CDC::Ekle
 
-`CDC` nesnesine bir *HDC* eklemek için bu üye işlevini kullanın.
+Nesneye *bir hDC* eklemek için bu üye işlevi kullanın. `CDC`
 
 ```
 BOOL Attach(HDC hDC);
@@ -1008,8 +1008,8 @@ BOOL Attach(HDC hDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*hDC*<br/>
-Bir Windows cihaz bağlamı.
+*Hdc*<br/>
+Windows aygıt bağlamı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1017,11 +1017,11 @@ Bir Windows cihaz bağlamı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*HDC* , hem `m_hDC`, hem de çıkış cihazı bağlamında ve `m_hAttribDC`, öznitelik cihaz bağlamı 'nda depolanır.
+*hDC* hem `m_hDC`de , çıktı aygıtı bağlamında ve `m_hAttribDC`, öznitelik aygıt bağlamında saklanır.
 
-##  <a name="beginpath"></a>CDC:: BeginPath
+## <a name="cdcbeginpath"></a><a name="beginpath"></a>CDC::Başlangıç Yolu
 
-Cihaz bağlamında bir yol ayracı açar.
+Aygıt bağlamında bir yol parantezi açar.
 
 ```
 BOOL BeginPath();
@@ -1033,17 +1033,17 @@ BOOL BeginPath();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yol ayracı açıldıktan sonra bir uygulama, yolda bulunan noktaları tanımlamak için GDI çizim işlevlerini çağırmaya başlayabilir. Bir uygulama `EndPath` üye işlevini çağırarak açık yol ayracını kapatabilir. Bir uygulama `BeginPath`çağırdığında, önceki tüm yollar atılır.
+Bir yol ayracı açıldıktan sonra, bir uygulama yolda yatan noktaları tanımlamak için GDI çizim işlevleri ni çağırmaya başlayabilir. Bir `EndPath` uygulama, üye işlevi arayarak açık bir yol köşeli ayraç kapatabilirsiniz. Bir uygulama `BeginPath`aradığında, önceki yollar atılır.
 
-Bir yoldaki noktaları tanımlayan çizim işlevlerinin bir listesi için Windows SDK [BeginPath](/windows/win32/api/wingdi/nf-wingdi-beginpath) bölümüne bakın.
+Bir yoldaki noktaları tanımlayan çizim işlevlerinin listesi için Windows SDK'daki [BeginPath'e](/windows/win32/api/wingdi/nf-wingdi-beginpath) bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#30](../../mfc/codesnippet/cpp/cdc-class_2.cpp)]
 
-##  <a name="bitblt"></a>CDC:: BitBlt
+## <a name="cdcbitblt"></a><a name="bitblt"></a>CDC::BitBlt
 
-Kaynak cihaz bağlamından bir bit eşlemi Bu geçerli cihaz bağlamına kopyalar.
+Kaynak aygıt bağlamından bu geçerli aygıt bağlamına bir bit eşlemi kopyalar.
 
 ```
 BOOL BitBlt(
@@ -1059,31 +1059,31 @@ BOOL BitBlt(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Hedef dikdörtgenin sol üst köşesinin mantıksal x koordinatını belirtir.
+*X*<br/>
+Hedef dikdörtgenin sol üst köşesindeki mantıksal x koordinatını belirtir.
 
-*Iz*<br/>
-Hedef dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.
+*Y*<br/>
+Hedef dikdörtgenin sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
-*nWidth*<br/>
-Hedef dikdörtgenin ve kaynak bit eşlemin genişliğini (mantıksal birimler cinsinden) belirtir.
+*Nwidth*<br/>
+Hedef dikdörtgenin ve kaynak bit eşleminin genişliğini (mantıksal birimler halinde) belirtir.
 
-*nHeight*<br/>
-Hedef dikdörtgenin ve kaynak bit eşlemin yüksekliğini (mantıksal birimler cinsinden) belirtir.
+*Nheight*<br/>
+Hedef dikdörtgenin ve kaynak bit eşleninin yüksekliğini (mantıksal birimler halinde) belirtir.
 
 *pSrcDC*<br/>
-Bit eşlemin kopyalanacağı cihaz bağlamını tanımlayan `CDC` nesnesine yönelik işaretçi. *DwRop* bir kaynak içermeyen bir tarama işlemi belirtiyorsa, bu null olmalıdır.
+Bit eşleninin kopyalanacağı aygıt bağlamını tanımlayan bir `CDC` nesneye işaretçi. *DwRop* bir kaynak içermeyen bir raster işlemi belirtir eğer NULL olmalıdır.
 
 *xSrc*<br/>
-Kaynak bit eşlemin sol üst köşesinin mantıksal x koordinatını belirtir.
+Kaynak bit eşleninin sol üst köşesindeki mantıksal x koordinatını belirtir.
 
 *ySrc*<br/>
-Kaynak bit eşlemin sol üst köşesinin mantıksal y koordinatını belirtir.
+Kaynak bit haritasının sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
 *dwRop*<br/>
-Gerçekleştirilecek ızgara işlemini belirtir. Raster-işlem kodları, GDI 'nın renkleri geçerli bir fırça, olası bir kaynak bit eşlem ve hedef bit eşlem içeren çıkış işlemlerinde nasıl birleştirdiğini tanımlar. *DwRop* için raster işlem kodlarının listesi ve açıklamaları Için Windows SDK [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) ' i inceleyin
+Gerçekleştirilecek ızgara işlemini belirtir. Raster işlem kodları, GDI'nin geçerli bir fırça, olası bir kaynak bit eşlemi ve hedef bit eşlemi içeren çıktı işlemlerinde renkleri nasıl birleştirdiğini tanımlar. *DwRop* ve açıklamaları için raster-işlem kodlarının bir listesi için Windows SDK'daki [BitBlt'e](/windows/win32/api/wingdi/nf-wingdi-bitblt) bakın
 
-Raster işlem kodlarının tam listesi için, Windows SDK [tarama Işlemi kodları hakkında](/windows/win32/gdi/raster-operation-codes) bölümüne bakın.
+Raster çalışma kodlarının tam listesi için Windows SDK'daki [Raster İşlem Kodları Hakkında'ya](/windows/win32/gdi/raster-operation-codes) bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1091,33 +1091,33 @@ Raster işlem kodlarının tam listesi için, Windows SDK [tarama Işlemi kodlar
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulama, bayt hizalanmış dikdörtgenlerde `BitBlt` işlemlerinin gerçekleşmesini sağlamak için, bayt sınırlarındaki Windows veya istemci alanlarının üzerine hizalanabilir. (Pencere sınıflarını kaydettiğinizde CS_BYTEALIGNWINDOW veya CS_BYTEALIGNCLIENT bayraklarını ayarlayın.)
+Uygulama, işlemlerin `BitBlt` bayt hizalı dikdörtgenler üzerinde oluştuğundan emin olmak için pencereleri veya istemci alanlarını bayt sınırları üzerinde hizalayabilir. (Pencere sınıflarını kaydettirirken CS_BYTEALIGNWINDOW veya CS_BYTEALIGNCLIENT bayraklarını ayarlayın.)
 
-bayt hizalı dikdörtgenlerde `BitBlt` işlemler, bayt hizalı dikdörtgenlerde `BitBlt` işlemlerden önemli ölçüde daha hızlıdır. Kendi cihaz içeriğiniz için bayt hizalama gibi sınıf stilleri belirtmek istiyorsanız, Microsoft Foundation sınıflarına güvenmek yerine bir pencere sınıfını kaydetmeniz gerekir. [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass)genel işlevini kullanın.
+`BitBlt`bayt hizalı dikdörtgenler üzerindeki işlemler, bayt `BitBlt` hizalı olmayan dikdörtgenler üzerindeki işlemlerden çok daha hızlıdır. Kendi aygıt içeriğiniz için bayt hizalama gibi sınıf stilleri belirtmek istiyorsanız, bunu sizin yerinize yapmak için Microsoft Foundation sınıflarına güvenmek yerine bir pencere sınıfı kaydetmeniz gerekir. [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass)global işlevini kullanın.
 
-GDI, hedef cihaz bağlamını kullanarak bir kez ve kaynak cihaz bağlamını kullanarak *nWidth* ve *nHeight*değerlerini dönüştürür. Elde edilen kapsamlar eşleşmiyorsa, GDI, kaynak bit eşlemi gereken şekilde sıkıştırmak veya uzatmak için Windows `StretchBlt` işlevini kullanır.
+GDI, hedef aygıt bağlamını kullanarak bir kez ve kaynak aygıt bağlamını kullanarak bir kez *nWidth* ve *nHeight'ı*dönüştürür. Ortaya çıkan kapsamlar eşleşmiyorsa, GDI kaynak bit eşlemi gerektiği gibi sıkıştırmak veya germek için Windows `StretchBlt` işlevini kullanır.
 
-Hedef, kaynak ve kalıp bit eşlemler aynı renk biçimine sahip değilse, `BitBlt` işlevi kaynak ve kalıp bit eşlemlerini hedefle eşleşecek şekilde dönüştürür. Hedef bit eşlemin ön plan ve arka plan renkleri dönüştürme sırasında kullanılır.
+Hedef, kaynak ve desen bit eşlemleri aynı renk `BitBlt` biçimine sahip değilse, işlev hedefle eşleşecek kaynak ve desen bit eşlemlerini dönüştürür. Dönüşümde hedef bit eşleminin ön plan ve arka plan renkleri kullanılır.
 
-`BitBlt` işlevi tek renkli bir bit eşlemi renge dönüştürdüğünde, beyaz bitleri (1) arka plan rengine ve siyah bit (0) ön plan rengine ayarlar. Hedef cihaz bağlamının ön plan ve arka plan renkleri kullanılır. Rengi tek renkli olarak dönüştürmek için `BitBlt`, arka plan rengiyle eşleşen pikselleri beyaz olarak ayarlar ve diğer tüm pikselleri siyah olarak ayarlar. `BitBlt`, renkli cihaz bağlamının ön plan ve arka plan renklerini kullanarak renkten tek renkli renge dönüştürülür.
+`BitBlt` İşlev tek renkli bit eşlemi renge dönüştürdüğünde, beyaz bitleri (1) arka plan rengine, siyah bitleri (0) ön plan rengine ayarlar. Hedef aygıt bağlamının ön plan ve arka plan renkleri kullanılır. Rengi tek renkliye `BitBlt` dönüştürmek için, arka plan rengiyle eşleşen pikselleri beyaza ayarlar ve diğer tüm pikselleri siyaha ayarlar. `BitBlt`renk ten tek renkliye dönüştürmek için renk aygıtı bağlamının ön plan ve arka plan renklerini kullanır.
 
-Tüm cihaz bağlamlarının `BitBlt`desteklemediğini unutmayın. Belirli bir cihaz bağlamının `BitBlt`destekleyip desteklemediğini denetlemek için, `GetDeviceCaps` üye işlevini kullanın ve RASTERLEŞTIRCAPS dizinini belirtin.
+Tüm aygıt bağlamlarının desteklenmediğini `BitBlt`unutmayın. Belirli bir aygıt bağlamını `BitBlt`destekleyip `GetDeviceCaps` desteklemediğini kontrol etmek için üye işlevi kullanın ve RASTERCAPS dizinini belirtin.
 
 ### <a name="example"></a>Örnek
 
-  [CDC:: Createuyumluluk Bledc](#createcompatibledc)için örneğe bakın.
+  CDC örneğine [bakın:CreateCompatibleDC](#createcompatibledc).
 
-##  <a name="cdc"></a>CDC:: CDC
+## <a name="cdccdc"></a><a name="cdc"></a>CDC::CDC
 
-`CDC` nesnesi oluşturur.
+Bir `CDC` nesne inşa eder.
 
 ```
 CDC();
 ```
 
-##  <a name="chord"></a>CDC:: Chof
+## <a name="cdcchord"></a><a name="chord"></a>CDC::Akor
 
-Bir çizgi çizer (bir elips ve Çizgi segmentinin kesişimine göre kapalı bir şekil).
+Bir akor (bir elips ve çizgi segmentinin kesiştiği ile sınırlanmış kapalı bir şekil) çizer.
 
 ```
 BOOL Chord(
@@ -1139,37 +1139,37 @@ BOOL Chord(
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-CHA 'nın sınırlayıcı dikdörtgeninin sol üst köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
+Akorun sınırlayıcı dikdörtgeninin sol üst köşesinin x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y1*<br/>
-CHA 'nın sınırlayıcı dikdörtgeninin sol üst köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
+*y1*<br/>
+Akorun sınırlayıcı dikdörtgeninin sol üst köşesinin y-koordinatını (mantıksal birimler halinde) belirtir.
 
 *x2*<br/>
-CHA 'nın sınırlayıcı dikdörtgeninin sağ alt köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
+Akorun sınırlayıcı dikdörtgeninin sağ alt köşesinin x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y2*<br/>
-CHA 'nın sınırlayıcı dikdörtgeninin sağ alt köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
+*y2*<br/>
+Akorun sınırlayıcı dikdörtgeninin sağ alt köşesinin y-koordinatını (mantıksal birimler halinde) belirtir.
 
 *x3*<br/>
-Bir birimin başlangıç noktasını tanımlayan noktanın x koordinatını belirtir (mantıksal birimler cinsinden).
+Akorun başlangıç noktasını tanımlayan noktanın x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y3*<br/>
-Birimin başlangıç noktasını tanımlayan noktanın y koordinatını belirtir (mantıksal birimler cinsinden).
+*y3*<br/>
+Akorun başlangıç noktasını tanımlayan noktanın y-koordinatını (mantıksal birimler halinde) belirtir.
 
 *x4*<br/>
-CHA 'nın uç noktasını tanımlayan noktanın x koordinatını belirtir (mantıksal birimler cinsinden).
+Akorun bitiş noktasını tanımlayan noktanın x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y4*<br/>
-CHA 'nın uç noktasını tanımlayan noktanın y koordinatını belirtir (mantıksal birimler cinsinden).
+*y4*<br/>
+Akorun bitiş noktasını tanımlayan noktanın y-koordinatını (mantıksal birimler halinde) belirtir.
 
-*lpRect*<br/>
-Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parametre için bir LPRECT ya da [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
+*Lprect*<br/>
+Sınırlayıcı dikdörtgeni (mantıksal birimler halinde) belirtir. Bu parametre için bir LPRECT veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
 
-*ptStart*<br/>
-Başların başlangıç noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın tam olarak bu noktada olması gerekmez. Bu parametre için bir `POINT` yapısını ya da bir `CPoint` nesnesini geçirebilirsiniz.
+*ptBaşlat*<br/>
+Akorun başlangıç noktasını tanımlayan noktanın x- ve y-koordinatlarını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak akor yalan gerekmez. Bu parametre `POINT` için bir `CPoint` yapı veya nesne geçirebilirsiniz.
 
-*ptEnd 'ler*<br/>
-Chmalların bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın tam olarak bu noktada olması gerekmez. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını ya da [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
+*ptEnd*<br/>
+Akorun bitiş noktasını tanımlayan noktanın x- ve y-koordinatlarını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak akor yalan gerekmez. Bu parametre için bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısını veya [CPoint nesnesinden](../../atl-mfc-shared/reference/cpoint-class.md) geçebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1177,17 +1177,17 @@ Chmalların bitiş noktasını tanımlayan noktanın x ve y koordinatlarını be
 
 ### <a name="remarks"></a>Açıklamalar
 
-( *X1*, *Y1*) ve ( *x2*, *Y2*) parametreleri, üst düzey ve sağ alt köşelerden oluşan bir dikdörtgenin bir parçası olan elips sınırlayıcı bir dikdörtgen sınırlayıcı belirler. ( *X3*, *Y3*) ve ( *x4*, *Y4*) parametreleri, elipsi kesiştiği bir çizginin uç noktalarını belirtir. Bu, seçili kalem kullanılarak çizilir ve seçili fırça kullanılarak doldurulur.
+( *x1*, *y1*) ve ( *x2*, *y2*) parametreleri, akorun bir parçası olan elipsi sınırlayan bir dikdörtgenin sırasıyla üst-sol ve alt-sağ köşelerini belirtir. ( *x3*, *y3*) ve ( *x4*, *y4*) parametreleri elipsle kesişen bir çizginin uç noktalarını belirtir. Akor seçili kalem kullanılarak çizilir ve seçili fırça kullanılarak doldurulur.
 
-`Chord` işlevi tarafından çizilen Şekil, ' ı genişletir, ancak sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *y2* - *Y1* ve şeklin genişliği *x2* - *x1*olduğu anlamına gelir.
+İşlev tarafından `Chord` çizilen şekil kadar uzanır, ancak sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *y2* - *y1,* şeklin genişliğinin *x2* - *x1*olduğu anlamına gelir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#31](../../mfc/codesnippet/cpp/cdc-class_3.cpp)]
 
-##  <a name="closefigure"></a>CDC:: CloseFigure
+## <a name="cdcclosefigure"></a><a name="closefigure"></a>CDC::CloseFigure
 
-Yoldaki açık bir şekli kapatır.
+Açık bir figürü bir yolda kapatır.
 
 ```
 BOOL CloseFigure();
@@ -1199,13 +1199,13 @@ BOOL CloseFigure();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, geçerli konumdan şeklin ilk noktasına bir çizgi çizerek (genellikle `MoveTo` üye işlevine en son çağrı tarafından belirtilen nokta) ve çizgi birleşimi stilini kullanarak satırları bağlayan şekli kapatır. Bir şekil `CloseFigure`yerine `LineTo` üye işlevi kullanılarak kapatılırsa, bir JOIN yerine köşeyi oluşturmak için bitiş üst sınırı kullanılır. `CloseFigure` yalnızca cihaz bağlamında açık yol ayracı varsa çağrılmalıdır.
+İşlev, geçerli konumdan şeklin ilk noktasına bir çizgi çizerek `MoveTo` (genellikle, üye işleviçin en son çağrının belirttiği nokta) rakamı kapatır ve satır birleştirme stilini kullanarak çizgileri bağlar. Bir rakam `LineTo` yerine üye işlevi kullanılarak `CloseFigure`kapatılırsa, bitiş kapakları birleştirme yerine köşe oluşturmak için kullanılır. `CloseFigure`yalnızca aygıt bağlamında açık bir yol ayraç varsa çağrılmalıdır.
 
-Bir yol içindeki bir şekil, bu işlev kullanılarak açıkça kapatılmadığı takdirde açıktır. (Geçerli nokta ve şeklin başlangıç noktası aynı olsa bile bir şekil açık olabilir.) `CloseFigure` sonra yola eklenen herhangi bir çizgi veya eğri yeni bir şekil başlatır.
+Bu işlev kullanılarak açıkça kapatılmadığı sürece, yoldaki bir şekil açıktır. (Geçerli nokta ve şeklin başlangıç noktası aynı olsa bile bir rakam açılabilir.) Yeni bir şekil başladıktan `CloseFigure` sonra yola eklenen herhangi bir çizgi veya eğri.
 
-##  <a name="createcompatibledc"></a>CDC:: Createuyumluluk Bledc
+## <a name="cdccreatecompatibledc"></a><a name="createcompatibledc"></a>CDC::CreateCompatibleDC
 
-*PDC*tarafından belirtilen cihazla uyumlu bir bellek cihaz bağlamı oluşturur.
+*pDC*tarafından belirtilen aygıtla uyumlu bir bellek aygıtı bağlamı oluşturur.
 
 ```
 BOOL CreateCompatibleDC(CDC* pDC);
@@ -1213,8 +1213,8 @@ BOOL CreateCompatibleDC(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-Cihaz bağlamına yönelik bir işaretçi. *PDC* null ise, işlev sistem ekranı ile uyumlu bir bellek cihaz bağlamı oluşturur.
+*Pdc*<br/>
+Aygıt bağlamına işaretçi. *pDC* NULL ise, işlev sistem ekranıyla uyumlu bir bellek aygıtı bağlamı oluşturur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1222,19 +1222,19 @@ Cihaz bağlamına yönelik bir işaretçi. *PDC* null ise, işlev sistem ekranı
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bellek cihaz bağlamı, bir görüntü yüzeyini temsil eden bir bellek bloğudur. Uyumlu aygıtın gerçek cihaz yüzeyine kopyalamadan önce bellekte görüntü hazırlamak için kullanılabilir.
+Bellek aygıtı bağlamı, görüntü yüzeyini temsil eden bir bellek bloğudur. Görüntüleri uyumlu aygıtın gerçek aygıt yüzeyine kopyalamadan önce bellekte hazırlamak için kullanılabilir.
 
-Bir bellek cihaz bağlamı oluşturulduğunda, GDI otomatik olarak 1-1 ' i y bir tek renkli monbit eşlemi seçer. GDI çıkış işlevleri, yalnızca bir bit eşlem oluşturulup bu bağlam üzerinde seçilirse bir bellek cihaz bağlamı ile kullanılabilir.
+Bir bellek aygıtı bağlamı oluşturulduğunda, GDI bunun için otomatik olarak 1'e 1 tek renkli stok bit eşlemi seçer. GDI çıktı işlevleri, yalnızca bir bit eşlemi oluşturulduğunda ve bu içeriğe seçilmişse bellek aygıtı bağlamıyla kullanılabilir.
 
-Bu işlev yalnızca, raster işlemlerini destekleyen cihazlar için uyumlu cihaz bağlamları oluşturmak için kullanılabilir. Cihaz bağlamları arasında bit blok aktarımları hakkında bilgi için bkz. [CDC:: BitBlt](#bitblt) üye işlevi. Bir cihaz bağlamının tarama işlemlerini destekleyip desteklemediğini anlamak için, `CDC::GetDeviceCaps`üye işlevindeki RC_BITBLT tarama özelliğine bakın.
+Bu işlev yalnızca raster işlemlerini destekleyen aygıtlar için uyumlu aygıt bağlamları oluşturmak için kullanılabilir. [CdC::BitBlt](#bitblt) üye işlevine aygıt bağlamları arasında bit bloğu aktarımları ile ilgili bilgi için bakın. Bir aygıt bağlamınının raster işlemlerini destekleyip desteklemediğini belirlemek `CDC::GetDeviceCaps`için, üye işlevdeki RC_BITBLT raster özelliğine bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#32](../../mfc/codesnippet/cpp/cdc-class_4.cpp)]
 
-##  <a name="createdc"></a>CDC:: CreateDC
+## <a name="cdccreatedc"></a><a name="createdc"></a>CDC::CreateDC
 
-Belirtilen cihaz için bir cihaz bağlamı oluşturur.
+Belirtilen aygıt için bir aygıt bağlamı oluşturur.
 
 ```
 BOOL CreateDC(
@@ -1247,16 +1247,16 @@ BOOL CreateDC(
 ### <a name="parameters"></a>Parametreler
 
 *lpszDriverName*<br/>
-Aygıt sürücüsünün dosya adını (uzantısı olmadan) belirten, null ile sonlandırılmış bir dizeye işaret eder (örneğin, "EPSON"). Ayrıca, bu parametre için bir `CString` nesnesi geçirebilirsiniz.
+Aygıt sürücüsünün dosya adını (uzantısı olmadan) belirten geçersiz sonlandırılmış bir dize işaret eder (örneğin, "EPSON"). Ayrıca bu parametre için bir `CString` nesne geçirebilirsiniz.
 
 *lpszDeviceName*<br/>
-Desteklenecek belirli bir cihazın adını belirten, null ile sonlandırılmış bir dizeye işaret eder (örneğin, "EPSON FX-80"). Modül birden fazla cihazı destekliyorsa *lpszDeviceName* parametresi kullanılır. Ayrıca, bu parametre için bir `CString` nesnesi geçirebilirsiniz.
+Desteklenecek belirli aygıtın adını belirten geçersiz sonlandırılmış bir dize işaret eder (örneğin, "EPSON FX-80"). *LpszDeviceName* parametresi, modül birden fazla aygıtı destekliyorsa kullanılır. Ayrıca bu parametre için bir `CString` nesne geçirebilirsiniz.
 
-*lpszOutput*<br/>
-Fiziksel çıkış ortamının (dosya veya çıkış bağlantı noktası) dosya veya cihaz adını belirten, null ile sonlandırılmış bir dizeye işaret eder. Ayrıca, bu parametre için bir `CString` nesnesi geçirebilirsiniz.
+*lpszÇıktı*<br/>
+Fiziksel çıktı ortamı (dosya veya çıktı bağlantı noktası) için dosya veya aygıt adını belirten null-sonlandırılmış dizeyi işaret eder. Ayrıca bu parametre için bir `CString` nesne geçirebilirsiniz.
 
 *lpInitData*<br/>
-Aygıt sürücüsü için cihaza özgü başlatma verilerini içeren `DEVMODE` yapısını gösterir. Windows `DocumentProperties` işlevi, belirli bir cihaz için doldurulmuş bu yapıyı alır. Cihaz sürücüsü, Kullanıcı tarafından Denetim Masası aracılığıyla belirtilen varsayılan başlatma (varsa) kullanıyorsa, *lpInitData* parametresi null olmalıdır.
+Aygıt sürücüsü `DEVMODE` için aygıta özgü başlatma verilerini içeren bir yapıyı işaret eder. Windows `DocumentProperties` işlevi, belirli bir aygıt için doldurulan bu yapıyı alır. Cihaz sürücüsü, kullanıcı tarafından Denetim Masası aracılığıyla belirtilen varsayılan başlatmayı (varsa) kullanacaksa, *lpInitData* parametresi NULL olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1264,13 +1264,13 @@ Aygıt sürücüsü için cihaza özgü başlatma verilerini içeren `DEVMODE` y
 
 ### <a name="remarks"></a>Açıklamalar
 
-YAZDıR. [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) yapısı kullanılıyorsa H üst bilgi dosyası gereklidir.
+The PRINT. [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) yapısı kullanılıyorsa H üstbilgi dosyası gereklidir.
 
-Cihaz adları şu kuralları izler: son nokta üst üste (:) önerilir, ancak isteğe bağlıdır. Windows, iki nokta üst üste ile biten bir cihaz adının, iki nokta olmadan aynı adla aynı bağlantı noktasıyla eşlenmesi için Sonlandırıcı iki noktayı de şeritler. Sürücü ve bağlantı noktası adları başında veya sonunda boşluk içermemelidir. GDI çıkış işlevleri, bilgi bağlamlarla kullanılamaz.
+Aygıt adları şu kuralları izler: bitiş iki bir nokta üst üste (:) önerilir, ancak isteğe bağlıdır. Windows, son nokta nokta nokta noktasını şeritler, böylece üst nokta ile biten bir aygıt adı üst nokta olmadan aynı adla aynı bağlantı noktasına eşlenir. Sürücü ve bağlantı noktası adları öncü veya sondaki boşlukları içermemelidir. GDI çıkış işlevleri bilgi bağlamları ile kullanılamaz.
 
-##  <a name="createic"></a>CDC:: CreateIC
+## <a name="cdccreateic"></a><a name="createic"></a>CDC::CreateIC
 
-Belirtilen cihaz için bir bilgi bağlamı oluşturur.
+Belirtilen aygıt için bir bilgi bağlamı oluşturur.
 
 ```
 BOOL CreateIC(
@@ -1283,30 +1283,30 @@ BOOL CreateIC(
 ### <a name="parameters"></a>Parametreler
 
 *lpszDriverName*<br/>
-Aygıt sürücüsünün dosya adını (uzantısı olmadan) belirten, null ile sonlandırılmış bir dizeye işaret eder (örneğin, "EPSON"). Bu parametre için bir `CString` nesnesi geçirebilirsiniz.
+Aygıt sürücüsünün dosya adını (uzantısı olmadan) belirten geçersiz sonlandırılmış bir dize işaret eder (örneğin, "EPSON"). Bu parametre `CString` için bir nesne geçirebilirsiniz.
 
 *lpszDeviceName*<br/>
-Desteklenecek belirli bir cihazın adını belirten, null ile sonlandırılmış bir dizeye işaret eder (örneğin, "EPSON FX-80"). Modül birden fazla cihazı destekliyorsa *lpszDeviceName* parametresi kullanılır. Bu parametre için bir `CString` nesnesi geçirebilirsiniz.
+Desteklenecek belirli aygıtın adını belirten geçersiz sonlandırılmış bir dize işaret eder (örneğin, "EPSON FX-80"). *LpszDeviceName* parametresi, modül birden fazla aygıtı destekliyorsa kullanılır. Bu parametre `CString` için bir nesne geçirebilirsiniz.
 
-*lpszOutput*<br/>
-Fiziksel çıkış ortamının (dosya veya bağlantı noktası) dosya veya cihaz adını belirten, null ile sonlandırılmış bir dizeye işaret eder. Bu parametre için bir `CString` nesnesi geçirebilirsiniz.
+*lpszÇıktı*<br/>
+Fiziksel çıktı ortamı (dosya veya bağlantı noktası) için dosya veya aygıt adını belirten null-sonlandırılan dizeyi işaret eder. Bu parametre `CString` için bir nesne geçirebilirsiniz.
 
 *lpInitData*<br/>
-Aygıt sürücüsü için cihaza özgü başlatma verilerine işaret eder. Cihaz sürücüsü, Kullanıcı tarafından Denetim Masası aracılığıyla belirtilen varsayılan başlatma (varsa) kullanıyorsa, *lpInitData* parametresi null olmalıdır. Cihaza özgü başlatma için veri biçimi `CreateDC` bakın.
+Aygıt sürücüsü için aygıta özgü başlatma verilerine işaret. Cihaz sürücüsü, kullanıcı tarafından Denetim Masası aracılığıyla belirtilen varsayılan başlatmayı (varsa) kullanacaksa, *lpInitData* parametresi NULL olmalıdır. Aygıta özgü başlatma için veri biçimi için bkz. `CreateDC`
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bilgi bağlamı cihaz bağlamı oluşturmadan cihaz hakkında bilgi almanın hızlı bir yolunu sağlar.
+Bilgi bağlamı, aygıt bağlamı oluşturmadan aygıt hakkında bilgi almak için hızlı bir yol sağlar.
 
-Cihaz adları şu kuralları izler: son nokta üst üste (:) önerilir, ancak isteğe bağlıdır. Windows, iki nokta üst üste ile biten bir cihaz adının, iki nokta olmadan aynı adla aynı bağlantı noktasıyla eşlenmesi için Sonlandırıcı iki noktayı de şeritler. Sürücü ve bağlantı noktası adları başında veya sonunda boşluk içermemelidir. GDI çıkış işlevleri, bilgi bağlamlarla kullanılamaz.
+Aygıt adları şu kuralları izler: bitiş iki bir nokta üst üste (:) önerilir, ancak isteğe bağlıdır. Windows, son nokta nokta nokta noktasını şeritler, böylece üst nokta ile biten bir aygıt adı üst nokta olmadan aynı adla aynı bağlantı noktasına eşlenir. Sürücü ve bağlantı noktası adları öncü veya sondaki boşlukları içermemelidir. GDI çıkış işlevleri bilgi bağlamları ile kullanılamaz.
 
-##  <a name="deletedc"></a>CDC::D eleteDC
+## <a name="cdcdeletedc"></a><a name="deletedc"></a>CDC::DeleteDC
 
-Genel olarak, bu işlevi çağırmayın; yok edicisi sizin için bunu sizin için kullanacaktır.
+Genel olarak, bu işlevi aramayın; Yıkıcı bunu senin için yapacak.
 
 ```
 BOOL DeleteDC();
@@ -1314,33 +1314,33 @@ BOOL DeleteDC();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarıyla tamamlanırsa sıfır dışı; Aksi takdirde 0.
+İşlev başarıyla tamamlanırsa sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DeleteDC` member işlevi, geçerli `CDC` nesnesindeki `m_hDC` ilişkili Windows cihaz bağlamlarını siler. Bu `CDC` nesnesi belirli bir cihazın son etkin cihaz bağlamıdır, cihaza bildirilir ve cihaz tarafından kullanılan tüm depolama ve sistem kaynakları yayımlanır.
+Üye `DeleteDC` işlev, geçerli `m_hDC` `CDC` nesneyle ilişkili Windows aygıt bağlamlarını siler. Bu `CDC` nesne, belirli bir aygıt için son etkin aygıt bağlamıysa, aygıt bildirilir ve aygıt tarafından kullanılan tüm depolama ve sistem kaynakları serbest bırakılır.
 
-Nesneler cihaz bağlamına seçildiyse, bir uygulama `DeleteDC` çağırmamalıdır. Önce nesneler silinmeden önce cihaz içeriğinden önce seçilmelidir.
+Nesneler aygıt bağlamına seçildiyse uygulama çağrılmamalıdır. `DeleteDC` Nesnelerin silinmeden önce aygıt bağlamından seçilmesi gerekir.
 
-Uygulama, işleyicisi [CWnd:: GetDC](../../mfc/reference/cwnd-class.md#getdc)çağırarak elde edilen bir cihaz bağlamını silmemelidir. Bunun yerine, cihaz bağlamını boşaltmak için [CWnd:: ReleaseDC](../../mfc/reference/cwnd-class.md#releasedc) 'yi çağırmalıdır. [CClientDC](../../mfc/reference/cclientdc-class.md) ve [CWindowDC](../../mfc/reference/cwindowdc-class.md) sınıfları, bu işlevselliği sarması için sağlanır.
+Bir uygulama, tanıtıcısı [CWnd::GetDC'](../../mfc/reference/cwnd-class.md#getdc)yi arayarak elde edilen bir aygıt bağlamını silmemelidir. Bunun yerine, aygıt bağlamını serbest bırakmak için [CWnd::ReleaseDC'yi](../../mfc/reference/cwnd-class.md#releasedc) araması gerekir. [CClientDC](../../mfc/reference/cclientdc-class.md) ve [CWindowDC](../../mfc/reference/cwindowdc-class.md) sınıfları bu işlevselliği kaydırmak için sağlanır.
 
-`DeleteDC` işlevi genellikle [CreateDC](#createdc), [Createic](#createic)veya [createuyumluluk bledc](#createcompatibledc)ile oluşturulan cihaz bağlamlarını silmek için kullanılır.
+İşlev `DeleteDC` genellikle [CreateDC](#createdc), [CreateIC](#createic)veya [CreateCompatibleDC](#createcompatibledc)ile oluşturulan aygıt bağlamlarını silmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
-  [CPrintDialog:: GetPrinterDC](../../mfc/reference/cprintdialog-class.md#getprinterdc)örneğine bakın.
+  [CPrintDialog örneğine bakın:GetPrinterDC](../../mfc/reference/cprintdialog-class.md#getprinterdc).
 
-##  <a name="deletetempmap"></a>CDC::D eleteTempMap
+## <a name="cdcdeletetempmap"></a><a name="deletetempmap"></a>CDC::DeleteTempMap
 
-`CWinApp` boşta kalma süresi işleyicisi tarafından otomatik olarak çağırılır, `DeleteTempMap` `FromHandle`tarafından oluşturulan geçici `CDC` nesnelerini siler, ancak `hDC`nesneleriyle geçici olarak ilişkili cihaz bağlamı tutamaçlarını (`CDC` s) yok etmez.
+Boşta kalan `CWinApp` zaman işleyicisi `DeleteTempMap` tarafından otomatik `CDC` olarak çağrılır, `FromHandle`tarafından oluşturulan geçici nesneleri `hDC`siler, `CDC` ancak aygıt bağlamını yok etmez (ler) nesnelerle geçici olarak ilişkili.
 
 ```
 static void PASCAL DeleteTempMap();
 ```
 
-##  <a name="detach"></a>CDC::D etach
+## <a name="cdcdetach"></a><a name="detach"></a>CDC::Detach
 
-`m_hDC` (çıkış cihazı bağlamını) `CDC` nesnesinden ayırmak ve hem `m_hDC` hem de `m_hAttribDC` NULL olarak ayarlamak için bu işlevi çağırın.
+Bu işlevi nesneden `m_hDC` ayırmak (çıktı aygıtı bağlamı) çağırmak `m_hDC` `m_hAttribDC` ve hem de NULL'u ayarlamak için çağırın. `CDC`
 
 ```
 HDC Detach();
@@ -1348,11 +1348,11 @@ HDC Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir Windows cihaz bağlamı.
+Windows aygıt bağlamı.
 
-##  <a name="dptohimetric"></a>CDC::D PtoHIMETRIC
+## <a name="cdcdptohimetric"></a><a name="dptohimetric"></a>CDC::DPtoHIMETRIC
 
-Bu işlevi, bir OLE 'e HIMETRIK boyutları verdiğinizde, pikselleri HIMETRIK 'e dönüştürerek kullanın.
+HiMETRIC boyutlarını OLE'ye vererek pikselleri HIMETRIC'e dönüştürdüğünüzde bu işlevi kullanın.
 
 ```
 void DPtoHIMETRIC(LPSIZE lpSize) const;
@@ -1361,15 +1361,15 @@ void DPtoHIMETRIC(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpSize*<br/>
-[Boyut](/windows/win32/api/windef/ns-windef-size) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
+[SIZE](/windows/win32/api/windef/ns-windef-size) yapısını veya [CSize nesnesini](../../atl-mfc-shared/reference/csize-class.md) işaret edin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Cihaz bağlamı nesnesinin eşleme modu MM_LOENGLISH, MM_HIENGLISH, MM_LOMETRIC veya MM_HIMETRIC ise, dönüştürme fiziksel inç piksel sayısını temel alır. Eşleme modu, kısıtlanmış olmayan diğer modlardan (ör. MM_TEXT) biriyse, dönüştürme mantıksal inç piksel sayısını temel alır.
+Aygıt bağlamı nesnesinin eşleme modu MM_LOENGLISH, MM_HIENGLISH, MM_LOMETRIC veya MM_HIMETRIC ise, dönüştürme fiziksel inçteki piksel sayısına bağlıdır. Eşleme modu diğer sınırlandırılmamış modlardan biriyse (örneğin, MM_TEXT), dönüştürme mantıksal inçteki piksel sayısına bağlıdır.
 
-##  <a name="dptolp"></a>CDC::D PtoLP
+## <a name="cdcdptolp"></a><a name="dptolp"></a>CDC::DPtoLP
 
-Cihaz birimlerini mantıksal birimlere dönüştürür.
+Aygıt birimlerini mantıksal birimlere dönüştürür.
 
 ```
 void DPtoLP(
@@ -1382,25 +1382,25 @@ void DPtoLP(LPSIZE lpSize) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-[Nokta](/windows/win32/api/windef/ns-windef-point) yapıları veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesneleri dizisine işaret eder.
+*Lppoints*<br/>
+Point [yapıları](/windows/win32/api/windef/ns-windef-point) veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnelerinin bir dizi işaret eder.
 
-*nCount*<br/>
-Dizideki noktaların sayısı.
+*nSayısı*<br/>
+Dizideki nokta sayısı.
 
-*lpRect*<br/>
-Bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder. Bu parametre, bir dikdörtgeni cihaz noktalarından mantıksal noktalara dönüştürmekle ilgili basit bir durum için kullanılır.
+*Lprect*<br/>
+[RECT](/windows/win32/api/windef/ns-windef-rect) yapısını veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesini işaret edin. Bu parametre, aygıt noktalarından mantıksal noktalara bir dikdörtgendönüştürme basit durumda için kullanılır.
 
 *lpSize*<br/>
-[Boyut](/windows/win32/api/windef/ns-windef-size) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
+[SIZE](/windows/win32/api/windef/ns-windef-size) yapısını veya [CSize nesnesini](../../atl-mfc-shared/reference/csize-class.md) işaret edin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, cihaz koordinat sisteminden GDI 'nın mantıksal koordinat sistemine kadar her bir noktanın koordinatlarını veya boyut boyutunu eşler. Dönüştürme geçerli eşleme moduna ve cihazın penceresi ve görünüm penceresinin kaynakları ve kapsamları ayarlarına bağlıdır.
+İşlev, aygıt koordinat sisteminden GDI'nin mantıksal koordinat sistemine kadar her noktanın koordinatlarını veya bir boyutun boyutunu eşler. Dönüştürme, geçerli eşleme moduna ve aygıtın penceresi ve görünümü için kaynak ve kapsam ayarlarına bağlıdır.
 
-##  <a name="draw3drect"></a>CDC::D raw3dRect
+## <a name="cdcdraw3drect"></a><a name="draw3drect"></a>CDC::Draw3dRect
 
-Üç boyutlu bir dikdörtgen çizmek için bu üye işlevini çağırın.
+Üç boyutlu bir dikdörtgen çizmek için bu üye işlevi çağırın.
 
 ```
 void Draw3dRect(
@@ -1419,38 +1419,38 @@ void Draw3dRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parametre için bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına ya da [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine bir işaretçi geçirebilirsiniz.
+*Lprect*<br/>
+Sınırlayıcı dikdörtgeni (mantıksal birimler halinde) belirtir. Bu parametre için bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine bir işaretçi geçirebilirsiniz.
 
 *clrTopLeft*<br/>
-Üç boyutlu dikdörtgenin üst ve sol taraflarındaki rengi belirtir.
+Üç boyutlu dikdörtgenin üst ve sol kenarlarının rengini belirtir.
 
 *clrBottomRight*<br/>
-Üç boyutlu dikdörtgenin alt ve sağ taraflarındaki rengi belirtir.
+Üç boyutlu dikdörtgenin alt ve sağ kenarlarının rengini belirtir.
 
-*sayı*<br/>
-Üç boyutlu dikdörtgenin sol üst köşesinin mantıksal x koordinatını belirtir.
+*X*<br/>
+Üç boyutlu dikdörtgenin sol üst köşesindeki mantıksal x koordinatını belirtir.
 
-*Iz*<br/>
-Üç boyutlu dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.
+*Y*<br/>
+Üç boyutlu dikdörtgenin sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
-*yazmaç*<br/>
+*Cx*<br/>
 Üç boyutlu dikdörtgenin genişliğini belirtir.
 
-*lı*<br/>
+*Cy*<br/>
 Üç boyutlu dikdörtgenin yüksekliğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dikdörtgen, *clrTopLeft* tarafından belirtilen rengin üst ve sol taraflarla, sonra da *clrBottomRight*tarafından belirtilen rengin alt ve sağ taraflarından çizilir.
+Dikdörtgen *clrTopLeft* tarafından belirtilen renk üst ve sol kenarları ile çizilecektir ve *clrBottomRight*tarafından belirtilen renk alt ve sağ taraf .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#33](../../mfc/codesnippet/cpp/cdc-class_5.cpp)]
 
-##  <a name="drawdragrect"></a>CDC::D rawDragRect
+## <a name="cdcdrawdragrect"></a><a name="drawdragrect"></a>CDC::DrawDragRect
 
-Bir sürükleme dikdörtgenini yeniden çizmek için bu üye işlevi tekrar tekrar çağırın.
+Sürükle dikdörtgenini yeniden çizmek için bu üye işlevi tekrar tekrar çağırın.
 
 ```
 void DrawDragRect(
@@ -1464,33 +1464,33 @@ void DrawDragRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Bir dikdörtgenin mantıksal koordinatlarını belirten bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder — bu durumda dikdörtgenin, yeniden çizilmekte olan bitiş konumudur.
+*Lprect*<br/>
+Dikdörtgenin mantıksal koordinatlarını belirten bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder — bu durumda, dikdörtgenin bitiş konumu yeniden çizilir.
 
-*boyutla*<br/>
-Dış kenarlığın sol üst köşesinden (yani kenarlığın kalınlığı) bir dikdörtgenin sol üst köşesine kadar olan öteyi belirtir.
+*Boyutu*<br/>
+Dış kenarlığın sol altındaki çiştirmeyi bir dikdörtgenin iç kenarlığın ıs.sol altındaki sol altına (yani kenarlığın kalınlığına) düşürürü
 
 *lpRectLast*<br/>
-Dikdörtgen [bir yapının veya](/windows/win32/api/windef/ns-windef-rect) bir dikdörtgenin konumunun mantıksal koordinatlarını belirten bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder; bu durumda dikdörtgenin orijinal konumu yeniden çizilir.
+Dikdörtgenin konumunun mantıksal koordinatlarını belirten bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder — bu durumda, dikdörtgenin özgün konumu yeniden çizilir.
 
-*sizeLast*<br/>
-Yeniden çizmekte olan özgün dikdörtgenin sol üst köşesinin (yani kenarlığın kalınlığı) dış kenarlığın sol üst köşesinden yer alan öteyi belirtir.
+*boyutSon*<br/>
+Dış sınırın sol üst köşesinden, yeniden çizilmekte olan orijinal dikdörtgenin iç kenarlığı (diğer bir şekilde kenarlık kalınlığı) üst-sol köşesine olan yer değiştirmeyi belirtir.
 
-*pBrush*<br/>
-Fırça nesnesine yönelik işaretçi. Varsayılan yarı ton fırçayı kullanmak için NULL olarak ayarlayın.
+*pFırça*<br/>
+Fırça nesnesine işaretçi. Varsayılan yarı ton fırçasını kullanmak için NULL olarak ayarlayın.
 
-*Pbrühlast*<br/>
-Kullanılan son fırça nesnesine yönelik işaretçi. Varsayılan yarı ton fırçayı kullanmak için NULL olarak ayarlayın.
+*pBrushLast*<br/>
+Kullanılan son fırça nesnesine işaretçi. Varsayılan yarı ton fırçasını kullanmak için NULL olarak ayarlayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görsel geri bildirimde bulunmak için bunu örnek fare konumu olarak bir döngüde çağırın. `DrawDragRect`çağırdığınızda, önceki dikdörtgen silinir ve yeni bir tane çizilir. Örneğin, Kullanıcı ekranın üzerine bir dikdörtgen sürüklediği için, `DrawDragRect` orijinal dikdörtgeni silecek ve yeni konumunda yeni bir tane yeniden çizilecektir. Varsayılan olarak, `DrawDragRect` titreşimi ortadan kaldırmak ve sorunsuz hareketli bir dikdörtgenin görünümünü oluşturmak için bir yarı ton fırçası kullanarak dikdörtgeni çizer.
+Görsel geribildirim vermek için fare konumunu örnekledikçe bir döngü içinde arayın. Aradiğinizde, `DrawDragRect`önceki dikdörtgen silinir ve yenibir dikdörtgen çizilir. Örneğin, kullanıcı ekran boyunca bir dikdörtgen sürükledikçe, `DrawDragRect` özgün dikdörtgeni siler ve yeni konumunda yeni bir dikdörtgeni yeniden çizer. Varsayılan olarak, `DrawDragRect` titremeyi ortadan kaldırmak ve düzgün hareket eden bir dikdörtgen görünümünü oluşturmak için bir yarı ton fırçası kullanarak dikdörtgençizer.
 
-`DrawDragRect`ilk kez çağırdığınızda, *lpRectLast* parametresi null olmalıdır.
+İlk kez `DrawDragRect`aradığınızda, *lpRectLast* parametresi NULL olmalıdır.
 
-##  <a name="drawedge"></a>CDC::D rampa
+## <a name="cdcdrawedge"></a><a name="drawedge"></a>CDC::DrawEdge
 
-Belirtilen tür ve stil dikdörtgeninin kenarlarını çizmek için bu üye işlevi çağırın.
+Belirtilen tür ve stildeki bir dikdörtgenin kenarlarını çizmek için bu üye işlevi çağırın.
 
 ```
 BOOL DrawEdge(
@@ -1501,22 +1501,22 @@ BOOL DrawEdge(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Dikdörtgenin mantıksal koordinatlarını içeren `RECT` yapısına yönelik bir işaretçi.
+*Lprect*<br/>
+Dikdörtgenin mantıksal `RECT` koordinatlarını içeren bir yapıya işaretçi.
 
-*nEdge*<br/>
-Çizilecek iç ve dış kenarın türünü belirtir. Bu parametre bir iç kenarlık bayrağının ve bir dış kenarlık bayrağının bir birleşimi olmalıdır. Parametrenin türlerin bir tablosu için Windows SDK bkz. [Drasürgülü](/windows/win32/api/winuser/nf-winuser-drawedge) .
+*nKenar*<br/>
+Çizecek iç ve dış kenar türünü belirtir. Bu parametre, bir iç kenarlık bayrağı ve bir dış kenarlık bayrağının bir leşimi olmalıdır. Parametre türlerinin bir tablosu için Windows SDK'daki [DrawEdge'e](/windows/win32/api/winuser/nf-winuser-drawedge) bakın.
 
-*nFlags*<br/>
-Çizilecek kenarlık türünü belirten bayraklar. Parametrenin değerlerinin bir tablosu için Windows SDK `DrawEdge` bakın. Çapraz çizgiler için BF_RECT bayrakları, dikdörtgen parametresi tarafından sınırlanmış vektör bitiş noktasını belirtir.
+*Nflags*<br/>
+Çizilecek kenarlık türünü belirten bayraklar. Parametre değerlerinin tablosu için Windows SDK'da bkz. `DrawEdge` Diyagonal çizgiler için BF_RECT bayrakları, dikdörtgen parametreile sınırlanan vektörün bitiş noktasını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
-##  <a name="drawescape"></a>CDC::D Rawkaçış
+## <a name="cdcdrawescape"></a><a name="drawescape"></a>CDC::DrawEscape
 
-Grafik cihaz arabirimi (GDI) aracılığıyla doğrudan kullanılamayan bir video görüntüsüne ait çizim özelliklerine erişir.
+Grafik aygıtı arabirimi (GDI) aracılığıyla doğrudan kullanılamayan bir video ekranının çizim özelliklerine erişir.
 
 ```
 int DrawEscape(
@@ -1531,22 +1531,22 @@ int DrawEscape(
 Gerçekleştirilecek kaçış işlevini belirtir.
 
 *nInputSize*<br/>
-*LpszInputData* parametresi tarafından işaret edilen veri baytlarının sayısını belirtir.
+*lpszInputData* parametresi tarafından işaret edilen bayt veri sayısını belirtir.
 
 *lpszInputData*<br/>
-Belirtilen kaçış için gereken giriş yapısına işaret eder.
+Belirtilen kaçış için gerekli giriş yapısına işaret.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlevin sonucunu belirtir. Başarılı olursa sıfırdan büyük, yalnızca uygulamayı denetleyen QUERYESCSUPPORT beraberlik kaçış hariç; ya da kaçış uygulanmadığından sıfır; ya da bir hata oluştuysa sıfırdan küçüktür.
+Fonksiyonun sonucunu belirtir. Yalnızca uygulama için denetler QUERYESCSUPPORT çizmek kaçış dışında, başarılı olursa sıfırdan büyük; veya sıfır kaçış uygulanmazsa; veya bir hata oluştuysa sıfırdan az.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir uygulama `DrawEscape`çağırdığında, *nInputSize* ve *lpszInputData* tarafından tanımlanan veriler doğrudan belirtilen görüntü sürücüsüne geçirilir.
+Bir uygulama `DrawEscape`aradığında, *nInputSize* ve *lpszInputData* tarafından tanımlanan veriler doğrudan belirtilen ekran sürücüsüne iletilir.
 
-##  <a name="drawfocusrect"></a>CDC::D rawFocusRect
+## <a name="cdcdrawfocusrect"></a><a name="drawfocusrect"></a>CDC::DrawFocusRect
 
-Dikdörtgenin odağa sahip olduğunu göstermek için kullanılan stilde bir dikdörtgen çizer.
+Dikdörtgenin odak noktası olduğunu belirtmek için kullanılan stilde bir dikdörtgen çizer.
 
 ```
 void DrawFocusRect(LPCRECT lpRect);
@@ -1554,19 +1554,19 @@ void DrawFocusRect(LPCRECT lpRect);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Çizilecek dikdörtgenin mantıksal koordinatlarını belirten bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
+*Lprect*<br/>
+Çizilecek dikdörtgenin mantıksal koordinatlarını belirten bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu bir Boolean XOR işlevi olduğundan, bu işlevi aynı dikdörtgenle ikinci kez çağırmak, dikdörtgeni ekranda kaldırır. Bu işlev tarafından çizilen dikdörtgen kaydırılamıyor. Bu işlev tarafından çizilmiş bir dikdörtgen içeren bir alanı kaydırmak için, ilk olarak `DrawFocusRect` çağırın, sonra dikdörtgeni ekran içinden kaldırın ve ardından yeni konumda dikdörtgeni çizmek için `DrawFocusRect` yeniden çağırın.
+Bu bir Boolean XOR işlevi olduğundan, bu işlevi aynı dikdörtgenle ikinci kez çağırmak dikdörtgeni ekrandan kaldırır. Bu işlev tarafından çizilen dikdörtgen kaydırılamaz. Bu işlev tarafından çizilen dikdörtgen içeren bir `DrawFocusRect` alanı kaydırmak için önce dikdörtgeni ekrandan kaldırmak için `DrawFocusRect` çağrıda bulunuyorum, sonra alanı kaydırın ve sonra yeni konumda dikdörtgeni çizmek için yeniden arayın.
 
 > [!CAUTION]
-> `DrawFocusRect` yalnızca MM_TEXT modunda kullanılabilir. Diğer modlarda, bu işlev odak dikdörtgenini doğru çizmez, ancak hata değerlerini döndürmez.
+> `DrawFocusRect`yalnızca MM_TEXT modunda çalışır. Diğer modlarda, bu işlev odak dikdörtgenini doğru çizmez, ancak hata değerlerini döndürmez.
 
-##  <a name="drawframecontrol"></a>CDC::D rawFrameControl
+## <a name="cdcdrawframecontrol"></a><a name="drawframecontrol"></a>CDC::DrawFrameControl
 
-Belirtilen tür ve stilin kare denetimini çizmek için bu üye işlevini çağırın.
+Belirtilen tür ve stilin kare denetimini çizmek için bu üye işlevi arayın.
 
 ```
 BOOL DrawFrameControl(
@@ -1577,80 +1577,80 @@ BOOL DrawFrameControl(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Dikdörtgenin mantıksal koordinatlarını içeren `RECT` yapısına yönelik bir işaretçi.
+*Lprect*<br/>
+Dikdörtgenin mantıksal `RECT` koordinatlarını içeren bir yapıya işaretçi.
 
-*nTür*<br/>
-Çizilecek çerçeve denetiminin türünü belirtir. Bu parametrenin olası değerlerinin bir listesi için Windows SDK, [DrawFrameControl](/windows/win32/api/winuser/nf-winuser-drawframecontrol) Içindeki *Utürü* parametresi ' ne bakın.
+*nTipi*<br/>
+Çizecek çerçeve denetiminin türünü belirtir. Bu parametrenin olası değerlerinin listesi için Windows SDK'daki [DrawFrameControl'deki](/windows/win32/api/winuser/nf-winuser-drawframecontrol) *uType* parametresine bakın.
 
-*nDurum*<br/>
-Çerçeve denetiminin başlangıç durumunu belirtir. Windows SDK `DrawFrameControl` *Ustate* parametresi için tanımlanan değerlerden bir veya daha fazlası olabilir. Basma düğmesinin çevresindeki kenarı hariç tutmak için sınırlayıcı dikdörtgeni ayarlamak üzere *nState* değerini DFCS_ADJUSTRECT kullanın.
+*Nstate*<br/>
+Çerçeve denetiminin ilk durumunu belirtir. Windows SDK'da `DrawFrameControl` *uState* parametresi için açıklanan değerlerden biri veya birkaçı olabilir. Basma düğmesinin çevre kenarını dışlamak için sınırlayıcı dikdörtgeni ayarlamak için *nState* değerini DFCS_ADJUSTRECT kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birçok durumda *nState* *nType* parametresine bağlıdır. Aşağıdaki listede, dört *nType* değeri ve *nState*arasındaki ilişki gösterilmektedir:
+Bazı durumlarda, *nState* *nType* parametreye bağlıdır. Aşağıdaki liste dört *nType* değerleri ve *nState*arasındaki ilişkiyi gösterir:
 
 - DFC_BUTTON
 
-    - DFCS_BUTTON3STATE üç durumlu düğme
+  - DFCS_BUTTON3STATE Üç durumlu düğme
 
-    - DFCS_BUTTONCHECK onay kutusu
+  - DFCS_BUTTONCHECK Onay kutusu
 
-    - DFCS_BUTTONPUSH basma düğmesi
+  - DFCS_BUTTONPUSH Düğmesine Basın
 
-    - DFCS_BUTTONRADIO radyo düğmesi
+  - DFCS_BUTTONRADIO Radyo düğmesi
 
-    - Radyo düğmesi için DFCS_BUTTONRADIOIMAGE görüntüsü (kare dışı gereksinimler görüntüsü)
+  - radyo düğmesi için DFCS_BUTTONRADIOIMAGE Görüntü (nonsquare ihtiyacı görüntü)
 
-    - Radyo düğmesi için DFCS_BUTTONRADIOMASK maskesi (kare olmayan ihtiyaç maske)
+  - radyo düğmesi için DFCS_BUTTONRADIOMASK Maskesi (kare olmayan maske gerekir)
 
 - DFC_CAPTION
 
-    - DFCS_CAPTIONCLOSE Kapat düğmesi
+  - DFCS_CAPTIONCLOSE Kapat düğmesi
 
-    - DFCS_CAPTIONHELP Yardım düğmesi
+  - DFCS_CAPTIONHELP Yardım düğmesi
 
-    - DFCS_CAPTIONMAX Ekranı Kapla düğmesi
+  - DFCS_CAPTIONMAX Maximize düğmesi
 
-    - DFCS_CAPTIONMIN en aza Indir düğmesi
+  - DFCS_CAPTIONMIN Simge Durumuna Küçült düğmesi
 
-    - DFCS_CAPTIONRESTORE geri yükleme düğmesi
+  - DFCS_CAPTIONRESTORE Geri Yükleme düğmesi
 
 - DFC_MENU
 
-    - DFCS_MENUARROW alt menü oku
+  - DFCS_MENUARROW Alt menü oku
 
-    - DFCS_MENUBULLET madde Işareti
+  - DFCS_MENUBULLET Mermisi
 
-    - DFCS_MENUCHECK onay işareti
+  - DFCS_MENUCHECK Onay işareti
 
 - DFC_SCROLL
 
-    - DFCS_SCROLLCOMBOBOX Birleşik giriş kutusu kaydırma çubuğu
+  - DFCS_SCROLLCOMBOBOX Combo kutu kaydırma çubuğu
 
-    - DFCS_SCROLLDOWN aşağı kaydırma çubuğu oku
+  - DFCS_SCROLLDOWN Kaydırma çubuğunun Aşağı okunu
 
-    - Kaydırma çubuğunun sol ok DFCS_SCROLLLEFT
+  - kaydırma çubuğunun sol ok DFCS_SCROLLLEFT
 
-    - DFCS_SCROLLRIGHT sağ ok kaydırma çubuğu
+  - DFCS_SCROLLRIGHT Kaydırma çubuğunun sağ oku
 
-    - Pencerenin sağ alt köşesinde bulunan boyut tutamacı DFCS_SCROLLSIZEGRIP
+  - DFCS_SCROLLSIZEGRIP Pencerenin sağ alt köşesinde Boyut kavrama
 
-    - DFCS_SCROLLUP yukarı kaydırma çubuğunun oku
+  - DFCS_SCROLLUP Kaydırma çubuğunun Yukarı ok
 
 ### <a name="example"></a>Örnek
 
-Bu kod, pencerenin sağ alt köşesine boyut kavrayıcıyı çizer. Stili olmayan ve normalde bir boyut kavrayıcı veren diğer denetimleri (bir durum çubuğu gibi) içermeyen bir iletişim kutusunun `OnPaint` işleyicisine uygundur.
+Bu kod, pencerenizin sağ alt köşesindeki boyut kavrayanını çizer. Stilleri olmayan ve `OnPaint` normalde boyut tutucusu verebilecek diğer denetimleri (durum çubuğu gibi) içermeyen bir iletişim kutusunun işleyicisi için uygundur.
 
 [!code-cpp[NVC_MFCDocView#34](../../mfc/codesnippet/cpp/cdc-class_6.cpp)]
 
-##  <a name="drawicon"></a>CDC::D Rawıcon
+## <a name="cdcdrawicon"></a><a name="drawicon"></a>CDC::DrawIcon
 
-Geçerli `CDC` nesnesi tarafından temsil edilen cihaza bir simge çizer.
+Geçerli `CDC` nesne tarafından temsil edilen aygıta bir simge çizer.
 
 ```
 BOOL DrawIcon(
@@ -1665,38 +1665,38 @@ BOOL DrawIcon(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Simgenin sol üst köşesinin mantıksal x koordinatını belirtir.
+*X*<br/>
+Simgenin sol üst köşesindeki mantıksal x koordinatını belirtir.
 
-*Iz*<br/>
-Simgenin sol üst köşesinin mantıksal y koordinatını belirtir.
+*Y*<br/>
+Simgenin sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
-*HICON*<br/>
-Çizilecek simgenin tanıtıcısını tanımlar.
+*Hıcon*<br/>
+Çizilecek simgenin tutamacını tanımlar.
 
-*seçeneğinin*<br/>
-Simgenin sol üst köşesinin mantıksal x ve y koordinatlarını belirtir. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını veya bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
+*Nokta*<br/>
+Simgenin sol üst köşesindeki mantıksal x ve y koordinatlarını belirtir. Bu parametre için bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısını veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarıyla tamamlanırsa sıfır dışı; Aksi takdirde 0.
+İşlev başarıyla tamamlanırsa sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, simgenin sol üst köşesini *x* ve *y*tarafından belirtilen konuma koyar. Konum, cihaz bağlamının geçerli eşleme moduna tabidir.
+İşlev, simgenin sol üst köşesini *x* ve *y*ile belirtilen konuma yerleştirir. Konum, aygıt bağlamının geçerli eşleme moduna tabidir.
 
-Simge kaynağı daha önce `CWinApp::LoadIcon`, `CWinApp::LoadStandardIcon`veya `CWinApp::LoadOEMIcon`işlevleri kullanılarak yüklenmiş olmalıdır. Bu işlev kullanılmadan önce `MM_TEXT` eşleme modunun seçilmesi gerekir.
+Simge kaynağı daha önce işlevleri `CWinApp::LoadIcon`kullanılarak yüklenmiş `CWinApp::LoadStandardIcon`olmalıdır `CWinApp::LoadOEMIcon`, veya . `MM_TEXT` Bu işlevi kullanmadan önce eşleme modu seçilmelidir.
 
 ### <a name="example"></a>Örnek
 
-  [CWnd:: ısiconic](../../mfc/reference/cwnd-class.md#isiconic)için örneğe bakın.
+  CWnd örneğine [bakın::IsIconic](../../mfc/reference/cwnd-class.md#isiconic).
 
-##  <a name="drawstate"></a>CDC::D rawState
+## <a name="cdcdrawstate"></a><a name="drawstate"></a>CDC::DrawState
 
-Bir görüntüyü göstermek ve devre dışı veya varsayılan durum gibi bir durumu belirtmek için görsel bir efekt uygulamak üzere bu üye işlevini çağırın.
+Görüntüyü görüntülemek ve devre dışı bırakılmış veya varsayılan durum gibi bir durumu belirtmek için görsel efekt uygulamak için bu üye işlevi arayın.
 
 > [!NOTE]
->  DSS_NORMAL dışındaki tüm *Nbayrak* durumları için, görsel efekt uygulanmadan önce görüntü tek renkli olarak dönüştürülür.
+> DSS_NORMAL dışındaki tüm *nFlag* durumları için, görüntü görsel efekt uygulanmadan önce tek renkliye dönüştürülür.
 
 ```
 BOOL DrawState(
@@ -1764,52 +1764,52 @@ BOOL DrawState(
 
 ### <a name="parameters"></a>Parametreler
 
-*yönergelerinin*<br/>
+*Pt*<br/>
 Görüntünün konumunu belirtir.
 
-*boyutla*<br/>
+*Boyutu*<br/>
 Görüntünün boyutunu belirtir.
 
-*HBITMAP*<br/>
-Bit eşlem tutamacı.
+*Hbıtmap*<br/>
+Bitmap için bir tutamaç.
 
-*nFlags*<br/>
-Görüntü türünü ve durumunu belirten bayraklar. Olası *nFlags* türleri ve durumları Için Windows SDK [DrawState](/windows/win32/api/winuser/nf-winuser-drawstatew) bölümüne bakın.
+*Nflags*<br/>
+Görüntü türünü ve durumunu belirten bayraklar. Olası *nFlags* türleri ve durumları için Windows SDK'daki [DrawState'e](/windows/win32/api/winuser/nf-winuser-drawstatew) bakın.
 
-*hBrush*<br/>
-Bir fırçanın tutamacı.
+*hFırça*<br/>
+Fırçaya sap.
 
-*Pbımap*<br/>
-CBitmap nesnesine yönelik bir işaretçi.
+*pBitmap*<br/>
+CBitmap nesnesine işaretçi.
 
-*pBrush*<br/>
-CBrush nesnesine yönelik bir işaretçi.
+*pFırça*<br/>
+CBrush nesnesine işaretçi.
 
-*HICON*<br/>
-Simgenin bir tutamacı.
+*Hıcon*<br/>
+Simgenin tutamacı.
 
-*lpszText*<br/>
-Metin işaretçisi.
+*lpszMetin*<br/>
+Metin için bir işaretçi.
 
 *bPrefixText*<br/>
-Hızlandırıcı anımsatıcı içerebilen metin. *LDATA* parametresi, dizenin adresini belirtir ve *nTextLen* parametresi uzunluğu belirtir. *NTextLen* 0 ise, dizenin null ile sonlandırıldığını kabul edilir.
+Hızlandırıcı mnemonik içerebilecek metin. *lData* parametresi dize adresini belirtir ve *nTextLen* parametresi uzunluğu belirtir. *nTextLen* 0 ise, dize null-sonlandırıldığı varsayılır.
 
 *nTextLen*<br/>
-*LpszText*tarafından işaret edilen metin dizesinin uzunluğu. *NTextLen* 0 ise, dizenin null ile sonlandırıldığını kabul edilir.
+*LpszText*tarafından işaret edilen metin dizesinin uzunluğu. *nTextLen* 0 ise, dize null-sonlandırıldığı varsayılır.
 
 *lpDrawProc*<br/>
-Bir görüntüyü işlemek için kullanılan geri çağırma işlevine yönelik bir işaretçi. *NFlags* içindeki görüntü türü DST_COMPLEX ise bu parametre gereklidir. Bu, isteğe bağlıdır ve görüntü türü DST_TEXT NULL olabilir. Diğer tüm görüntü türleri için bu parametre yok sayılır. Geri çağırma işlevi hakkında daha fazla bilgi için Windows SDK [DrawStateProc](/windows/win32/api/winuser/nc-winuser-drawstateproc) işlevine bakın.
+Görüntüyü işlemek için kullanılan geri arama işleviiçin bir işaretçi. *nFlags'deki* görüntü türü DST_COMPLEX ise bu parametre gereklidir. İsteğe bağlıdır ve görüntü türü DST_TEXT ise NULL olabilir. Diğer tüm görüntü türleri için bu parametre yoksayılır. Geri arama işlevi hakkında daha fazla bilgi için Windows SDK'daki [DrawStateProc](/windows/win32/api/winuser/nc-winuser-drawstateproc) işlevine bakın.
 
 *lData*<br/>
-Görüntüyle ilgili bilgileri belirtir. Bu parametrenin anlamı, görüntü türüne bağlıdır.
+Görüntü yle ilgili bilgileri belirtir. Bu parametrenin anlamı görüntü türüne bağlıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
-##  <a name="drawtext"></a>CDC::D rawText
+## <a name="cdcdrawtext"></a><a name="drawtext"></a>CDC::DrawText
 
-Verilen dikdörtgenin metnini biçimlendirmek için bu üye işlevi çağırın. Ek biçimlendirme seçenekleri belirtmek için, [CDC::D rawTextEx](#drawtextex)kullanın.
+Verilen dikdörtgendeki metni biçimlendirmek için bu üye işlevi arayın. Ek biçimlendirme seçenekleri belirtmek için [CDC::DrawTextEx'](#drawtextex)i kullanın.
 
 ```
 virtual int DrawText(
@@ -1827,22 +1827,22 @@ int DrawText(
 ### <a name="parameters"></a>Parametreler
 
 *lpszString*<br/>
-Çizilecek dizeyi işaret eder. *NCount* değeri-1 ise, dize null ile sonlandırılmış olmalıdır.
+Çizilecek dizeyi işaret edin. *nCount* -1 ise, dize null-sonlandırılmalıdır.
 
-*nCount*<br/>
-Dizedeki karakter sayısını belirtir. *NCount* değeri-1 Ise, *lpszString* null ile sonlandırılmış bir dizeye uzun bir işaretçi olarak kabul edilir ve `DrawText` karakter sayısını otomatik olarak hesaplar.
+*nSayısı*<br/>
+Dizedeki karakter sayısını belirtir. *nCount* -1 ise, *lpszString'in* null-sonlandırılan dize için `DrawText` uzun bir işaretçi olduğu varsayılır ve karakter sayısını otomatik olarak hesaplar.
 
-*lpRect*<br/>
-Metnin biçimlendirildiği dikdörtgeni (mantıksal koordinatlarla) içeren bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
+*Lprect*<br/>
+Metnin biçimlendirilecek dikdörtgeni (mantıksal koordinatlar halinde) içeren bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
 
-*üstbilgisine*<br/>
+*Str*<br/>
 Çizilecek belirtilen karakterleri içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
 
 *nFormat*<br/>
-Metni biçimlendirme yöntemini belirtir. Windows SDK [DrawText](/windows/win32/api/winuser/nf-winuser-drawtext) Içindeki *uFormat* parametresi için tanımlanan değerlerin herhangi bir birleşimi olabilir. (bit düzeyinde OR işlecini kullanarak birleştirin):
+Metni biçimlendirme yöntemini belirtir. Windows SDK'daki [DrawText'te](/windows/win32/api/winuser/nf-winuser-drawtext) *uFormat* parametresi için açıklanan değerlerin herhangi bir birleşimi olabilir. (bitwise VEYA işleci kullanarak birleştirmek):
 
 > [!NOTE]
->  Bazı *uFormat* bayrak birleşimleri, geçen dizenin değiştirilmesine neden olabilir. DT_END_ELLIPSIS veya DT_PATH_ELLIPSIS ile DT_MODIFYSTRING kullanmak dizenin değiştirilmesine neden olabilir ve bu da `CString` geçersiz kılmada bir onaylama işlemi yapılmasına neden olur. DT_CALCRECT, DT_EXTERNALLEADING, DT_INTERNAL, DT_NOCLIP ve DT_NOPREFIX değerleri DT_TABSTOP değer ile kullanılamaz.
+> Bazı *uFormat* bayrak kombinasyonları geçirilen dize değiştirilebilir neden olabilir. DT_END_ELLIPSIS veya DT_PATH_ELLIPSIS ile DT_MODIFYSTRING kullanılması dize değiştirilebilir neden olabilir, `CString` geçersiz kılma bir iddianeden. DT_EXTERNALLEADING, DT_INTERNAL, DT_NOCLIP ve DT_NOPREFIX DT_CALCRECT değerler DT_TABSTOP değeriyle kullanılamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1850,21 +1850,21 @@ Metni biçimlendirme yöntemini belirtir. Windows SDK [DrawText](/windows/win32/
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sekmeleri uygun alanlara genişleterek, metni belirli bir dikdörtgenin soluna, sağına veya merkezine hizalayarak ve metni verilen dikdörtgenin içine sığan çizgilere bölerek metin biçimlendirir. Biçimlendirme türü *nFormat*tarafından belirtilir.
+Sekmeleri uygun boşluklara genişleterek, metni verilen dikdörtgenin soluna, sağına veya ortasına hizalayarak ve metni verilen dikdörtgenin içine sığan satırlara ayırarak metni biçimlendirir. Biçimlendirme türü *nFormat*tarafından belirtilir.
 
-Bu üye işlevi, metin çizmek için cihaz bağlamının seçili yazı tipini, metin rengini ve arka plan rengini kullanır. DT_NOCLIP biçim kullanılmamışsa metnin, metni verilen dikdörtgenin dışında görünmemesi için `DrawText` kırpar. DT_SINGLELINE biçim verilmediği takdirde, tüm biçimlendirmenin birden çok satıra sahip olduğu varsayılır.
+Bu üye işlev, metni çizmek için aygıt bağlamını seçili yazı tipini, metin rengini ve arka plan rengini kullanır. DT_NOCLIP biçimi kullanılmadığı `DrawText` sürece, metnin verilen dikdörtgenin dışında görünmemesi için metni klipler. DT_SINGLELINE biçimi verilmedikçe tüm biçimlendirmenin birden çok satırı olduğu varsayılır.
 
-Seçilen yazı tipi belirtilen dikdörtgen için çok büyükse, `DrawText` member işlevi daha küçük bir yazı tipini değiştirme girişiminde bulunmaz.
+Seçili yazı tipi belirtilen dikdörtgen için çok `DrawText` büyükse, üye işlev daha küçük bir yazı tipini yerine geçmeye çalışmaz.
 
-DT_CALCRECT Bayrağı belirtilmişse, *lpRect* tarafından belirtilen dikdörtgen, metni çizmek için gereken genişlik ve yüksekliği yansıtacak şekilde güncelleştirilir.
+DT_CALCRECT bayrağı belirtilirse, *lpRect* tarafından belirtilen dikdörtgen, metni çizmek için gereken genişliği ve yüksekliği yansıtacak şekilde güncelleştirilir.
 
-TA_UPDATECP metin hizalama bayrağı ayarlandıysa (bkz [. CDC:: SetTextAlign](#settextalign)), `DrawText`, belirtilen dikdörtgenin solunda değil, geçerli konumdan başlayan metni görüntüler. `DrawText`, TA_UPDATECP bayrağı ayarlandığında metni kaydıramaz (yani, DT_WORDBREAK bayrağının hiçbir etkisi olmayacaktır).
+metin hizalama bayrağı TA_UPDATECP ayarlanmışsa (bkz. [CDC::SetTextAlign),](#settextalign) `DrawText` metin geçerli konumdan başlayarak, verilen dikdörtgenin solunda değil görüntülenir. `DrawText`TA_UPDATECP bayrağı ayarlandığında metni kaydırmaz (diğer bir şekilde DT_WORDBREAK bayrağının hiçbir etkisi olmayacaktır).
 
-Metin rengi [CDC:: SetTextColor](#settextcolor)ile ayarlanabilir.
+Metin rengi CDC tarafından [ayarlanabilir::SetTextColor](#settextcolor).
 
-##  <a name="drawtextex"></a>CDC::D rawTextEx
+## <a name="cdcdrawtextex"></a><a name="drawtextex"></a>CDC::DrawTextEx
 
-Metni verilen dikdörtgende biçimlendirir.
+Metni verilen dikdörtgende biçimlendirin.
 
 ```
 virtual int DrawTextEx(
@@ -1884,35 +1884,35 @@ int DrawTextEx(
 ### <a name="parameters"></a>Parametreler
 
 *lpszString*<br/>
-Çizilecek dizeyi işaret eder. *NCount* değeri-1 ise, dize null sonlandırılmış olmalıdır.
+Çizilecek dizeyi işaret edin. *nCount* -1 ise, dize null sonlandırılmalıdır.
 
-*nCount*<br/>
-Dizedeki karakter sayısını belirtir. *NCount* değeri-1 Ise, *lpszString* null ile sonlandırılmış bir dizeye uzun bir işaretçi olarak kabul edilir ve `DrawText` karakter sayısını otomatik olarak hesaplar.
+*nSayısı*<br/>
+Dizedeki karakter sayısını belirtir. *nCount* -1 ise, *lpszString'in* null-sonlandırılan dize için `DrawText` uzun bir işaretçi olduğu varsayılır ve karakter sayısını otomatik olarak hesaplar.
 
-*lpRect*<br/>
-Metnin biçimlendirildiği dikdörtgeni (mantıksal koordinatlarla) içeren bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
+*Lprect*<br/>
+Metnin biçimlendirilecek dikdörtgeni (mantıksal koordinatlar halinde) içeren bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
 
-*üstbilgisine*<br/>
+*Str*<br/>
 Çizilecek belirtilen karakterleri içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
 
 *nFormat*<br/>
-Metni biçimlendirme yöntemini belirtir. Windows SDK [DrawText](/windows/win32/api/winuser/nf-winuser-drawtext) Içindeki *uFormat* parametresi için tanımlanan değerlerin herhangi bir birleşimi olabilir. (Bit düzeyinde **or** işlecini kullanarak birleştirin):
+Metni biçimlendirme yöntemini belirtir. Windows SDK'daki [DrawText'te](/windows/win32/api/winuser/nf-winuser-drawtext) *uFormat* parametresi için açıklanan değerlerin herhangi bir birleşimi olabilir. (Bitwise **VEYA** işleci kullanarak birleştirin):
 
 > [!NOTE]
->  Bazı *uFormat* bayrak birleşimleri, geçen dizenin değiştirilmesine neden olabilir. DT_END_ELLIPSIS veya DT_PATH_ELLIPSIS ile DT_MODIFYSTRING kullanmak dizenin değiştirilmesine neden olabilir ve bu da `CString` geçersiz kılmada bir onaylama işlemi yapılmasına neden olur. DT_CALCRECT, DT_EXTERNALLEADING, DT_INTERNAL, DT_NOCLIP ve DT_NOPREFIX değerleri DT_TABSTOP değer ile kullanılamaz.
+> Bazı *uFormat* bayrak kombinasyonları geçirilen dize değiştirilebilir neden olabilir. DT_END_ELLIPSIS veya DT_PATH_ELLIPSIS ile DT_MODIFYSTRING kullanılması dize değiştirilebilir neden olabilir, `CString` geçersiz kılma bir iddianeden. DT_EXTERNALLEADING, DT_INTERNAL, DT_NOCLIP ve DT_NOPREFIX DT_CALCRECT değerler DT_TABSTOP değeriyle kullanılamaz.
 
 *lpDTParams*<br/>
-Ek biçimlendirme seçenekleri belirten bir [drawtextparams](/windows/win32/api/winuser/ns-winuser-drawtextparams) yapısına yönelik işaretçi. Bu parametre NULL olabilir.
+Ek biçimlendirme seçenekleri belirten [DRAWTEXTPARAMS](/windows/win32/api/winuser/ns-winuser-drawtextparams) yapısına işaretçi. Bu parametre NULL olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sekmeleri uygun alanlara genişleterek, metni belirli bir dikdörtgenin soluna, sağına veya merkezine hizalayarak ve metni verilen dikdörtgenin içine sığan çizgilere bölerek metin biçimlendirir. Biçimlendirme türü *nFormat* ve *lpDTParams*tarafından belirtilir. Daha fazla bilgi için Windows SDK bkz. [CDC::D rawText](#drawtext) ve [DrawTextEx](/windows/win32/api/winuser/nf-winuser-drawtextexw) .
+Sekmeleri uygun boşluklara genişleterek, metni verilen dikdörtgenin soluna, sağına veya ortasına hizalayarak ve metni verilen dikdörtgenin içine sığan satırlara ayırarak metni biçimlendirir. Biçimlendirme türü *nFormat* ve *lpDTParams*tarafından belirtilir. Daha fazla bilgi için Windows [SDK'daki CDC::DrawText](#drawtext) ve [DrawTextEx'e](/windows/win32/api/winuser/nf-winuser-drawtextexw) bakın.
 
-Metin rengi [CDC:: SetTextColor](#settextcolor)ile ayarlanabilir.
+Metin rengi CDC tarafından [ayarlanabilir::SetTextColor](#settextcolor).
 
-##  <a name="ellipse"></a>CDC:: Elips
+## <a name="cdcellipse"></a><a name="ellipse"></a>CDC::Elips
 
-Elips çizer.
+Bir elips çizer.
 
 ```
 BOOL Ellipse(
@@ -1927,19 +1927,19 @@ BOOL Ellipse(LPCRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-Elipsin sınırlayıcı dikdörtgenin sol üst köşesinin mantıksal x koordinatını belirtir.
+Elipsin sınırlayıcı dikdörtgeninin sol üst köşesinin mantıksal x-koordinatını belirtir.
 
-*Y1*<br/>
-Elipsin sınırlayıcı dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.
+*y1*<br/>
+Elipsin sınırlayıcı dikdörtgeninin sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
 *x2*<br/>
-Elipsin sınırlayıcı dikdörtgeninin sağ alt köşesinin mantıksal x koordinatını belirtir.
+Elipsin sınırlayan dikdörtgeninin sağ alt köşesinin mantıksal x-koordinatını belirtir.
 
-*Y2*<br/>
-Elipsin sınırlayıcı dikdörtgeninin sağ alt köşesinin mantıksal y koordinatını belirtir.
+*y2*<br/>
+Elipsin sınırlayan dikdörtgeninin sağ alt köşesinin mantıksal y-koordinatını belirtir.
 
-*lpRect*<br/>
-Elips 'in sınırlayıcı dikdörtgenini belirtir. Ayrıca, bu parametre için bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
+*Lprect*<br/>
+Elipsin sınırlayıcı dikdörtgenini belirtir. Ayrıca bu parametre için bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1947,15 +1947,15 @@ Elips 'in sınırlayıcı dikdörtgenini belirtir. Ayrıca, bu parametre için b
 
 ### <a name="remarks"></a>Açıklamalar
 
-Elipsin ortası, *x1*, *Y1*, *x2*, ve *Y2*veya *lpRect*tarafından belirtilen sınırlayıcı dikdörtgenin ortatdır. Elips geçerli kalemle çizilir ve iç kısmı geçerli fırçayla doldurulur.
+Elipsin merkezi *x1*, *y1*, *x2*, ve *y2*, veya *lpRect*tarafından belirtilen sınırlayıcı dikdörtgenin merkezidir. Elips, geçerli kalemle çizilir ve iç mekanı geçerli fırçayla doldurulur.
 
-Bu işlev tarafından çizilen Şekil, sağ ve alt koordinatları kapsamaz, ancak içermez. Bu, şeklin yüksekliğinin *y2* - *Y1* ve şeklin genişliği *x2* - *x1*olduğu anlamına gelir.
+Bu işlev tarafından çizilen şekil, sağ ve alt koordinatlarına kadar uzanır, ancak içermez. Bu, şeklin yüksekliğinin *y2* - *y1,* şeklin genişliğinin *x2* - *x1*olduğu anlamına gelir.
 
-Sınırlayıcı dikdörtgenin genişliği veya yüksekliği 0 ise, elips çizilmez.
+Sınırlayan dikdörtgenin genişliği veya yüksekliği 0 ise, elips çizilmez.
 
-##  <a name="enddoc"></a>CDC:: EndDoc
+## <a name="cdcenddoc"></a><a name="enddoc"></a>CDC::EndDoc
 
-[StartDoc](#startdoc) üye işlevine yapılan bir çağrı ile başlatılan bir yazdırma işini sonlandırır.
+[StartDoc](#startdoc) üye işlevine yapılan bir çağrıyla başlatılan yazdırma işini sona erdirer.
 
 ```
 int EndDoc();
@@ -1963,23 +1963,23 @@ int EndDoc();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa 0 ' dan büyük veya buna eşit veya bir hata oluştuysa negatif bir değer.
+İşlev başarılı olursa 0'dan büyük veya eşit veya bir hata oluştuysa negatif değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, ENDDOC yazıcı kaçış yerini alır ve başarılı bir yazdırma işini tamamladıktan hemen sonra çağrılmalıdır.
+Bu üye işlev ENDDOC yazıcı kaçışının yerini alır ve başarılı bir yazdırma işini tamamladıktan hemen sonra çağrılmalıdır.
 
-Bir uygulama bir yazdırma hatasıyla veya iptal edilen bir yazdırma işlemiyle karşılaşırsa, `EndDoc` veya [AbortDoc](#abortdoc)kullanarak işlemi sonlandırmayı denememelidir. GDI, hata değerini döndürmeden önce işlemi otomatik olarak sonlandırır.
+Bir uygulama bir yazdırma hatası veya iptal edilmiş bir yazdırma işlemiyle karşılaşırsa, işlemi ya da `EndDoc` [AbortDoc'u](#abortdoc)kullanarak sonlandırmaya çalışmamalıdır. GDI, hata değerini döndürmeden önce işlemi otomatik olarak sonlandırır.
 
-Bu işlev meta dosyaların içinde kullanılmamalıdır.
+Bu işlev metadosyalar içinde kullanılmamalıdır.
 
 ### <a name="example"></a>Örnek
 
-  [CDC:: StartDoc](#startdoc)örneğine bakın.
+  CDC örneğine [bakın::StartDoc](#startdoc).
 
-##  <a name="endpage"></a>CDC:: EndPage
+## <a name="cdcendpage"></a><a name="endpage"></a>CDC::Son Sayfa
 
-Cihaza uygulamanın bir sayfaya yazma tamamlandığını bildirir.
+Cihazı, uygulamanın bir sayfaya yazmayı bitirdiğini bildirir.
 
 ```
 int EndPage();
@@ -1987,21 +1987,21 @@ int EndPage();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa 0 ' dan büyük veya buna eşit veya bir hata oluştuysa negatif bir değer.
+İşlev başarılı olursa 0'dan büyük veya eşit veya bir hata oluştuysa negatif değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, genellikle cihaz sürücüsünü yeni bir sayfaya ilerlemek üzere yönlendirmek için kullanılır.
+Bu üye işlev genellikle aygıt sürücüsünü yeni bir sayfaya ilerlemek için yönlendirmek için kullanılır.
 
-Bu üye işlevi, NEWFRAME yazıcı kaçış yerini alır. NEWFRAME 'in aksine, bu işlev her zaman bir sayfa yazdırıldıktan sonra çağrılır.
+Bu üye işlev, NEWFRAME yazıcı kaçışının yerini alır. NEWFRAME'in aksine, bu işlev her zaman bir sayfa yazdırıldıktan sonra çağrılır.
 
 ### <a name="example"></a>Örnek
 
-  [CDC:: StartDoc](#startdoc)örneğine bakın.
+  CDC örneğine [bakın::StartDoc](#startdoc).
 
-##  <a name="endpath"></a>CDC:: EndPath
+## <a name="cdcendpath"></a><a name="endpath"></a>CDC::EndPath
 
-Bir yol ayracını kapatır ve köşeli ayracın cihaz bağlamına göre tanımlanan yolu seçer.
+Bir yol köşeli ayraçını kapatır ve parantez tarafından tanımlanan yolu aygıt bağlamına seçer.
 
 ```
 BOOL EndPath();
@@ -2013,11 +2013,11 @@ BOOL EndPath();
 
 ### <a name="example"></a>Örnek
 
-  [CDC:: BeginPath](#beginpath)örneğine bakın.
+  CDC örneğine [bakın::BeginPath](#beginpath).
 
-##  <a name="enumobjects"></a>CDC:: EnumObjects
+## <a name="cdcenumobjects"></a><a name="enumobjects"></a>CDC::EnumObjects
 
-Bir cihaz bağlamında kullanılabilen kalemleri ve fırçaları numaralandırır.
+Aygıt bağlamında kullanılabilen kalem ve fırçaları oyalar.
 
 ```
 int EnumObjects(
@@ -2031,41 +2031,41 @@ int EnumObjects(
 ### <a name="parameters"></a>Parametreler
 
 *nObjectType*<br/>
-Nesne türünü belirtir. OBJ_BRUSH veya OBJ_PEN değerlere sahip olabilir.
+Nesne türünü belirtir. OBJ_BRUSH veya OBJ_PEN değerlerine sahip olabilir.
 
 *lpfn*<br/>
-, Uygulama tarafından sağlanan geri arama işlevinin yordam örneği adresidir. Aşağıdaki "açıklamalar" bölümüne bakın.
+Uygulama tarafından sağlanan geri arama işlevinin yordam örneği adresidir. Aşağıdaki "Açıklamalar" bölümüne bakın.
 
 *lpData*<br/>
-Uygulama tarafından sağlanan verileri gösterir. Veriler, nesne bilgileri ile birlikte geri çağırma işlevine geçirilir.
+Uygulama tarafından sağlanan verilere işaret edilir. Veriler, nesne bilgileriyle birlikte geri arama işlevine aktarılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[Geri çağırma işlevi](callback-functions-used-by-mfc.md#enum_objects)tarafından döndürülen son değeri belirtir. Bunun anlamı Kullanıcı tanımlı ' dır.
+[Geri arama işlevi](callback-functions-used-by-mfc.md#enum_objects)tarafından döndürülen son değeri belirtir. Anlamı kullanıcı tanımlıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirli bir türün her bir nesnesi için, geçirdiğiniz geri çağırma işlevi bu nesnenin bilgileriyle çağırılır. Sistem, daha fazla nesne kalmayana veya geri çağırma işlevi 0 döndürünceye kadar geri çağırma işlevini çağırır.
+Belirli bir türdeki her nesne için, geçtiğiniz geri arama işlevi, o nesnenin bilgileriyle birlikte çağrılır. Sistem, başka nesne veya geri arama işlevi 0 döndürene kadar geri arama işlevini çağırır.
 
-Microsoft Visual C++ 'ın yeni özelliklerinin, `EnumObjects`geçirilen işlev olarak sıradan bir işlev kullanacağınızı unutmayın. `EnumObjects` geçirilen adres, **Export** ile dışarı aktarılan ve Pascal çağırma kuralına sahip bir işlevin işaretçisidir. Koruma modu uygulamalarında, bu işlevi Windows MakeProcInstance işleviyle oluşturmanız veya FreeProcInstance Windows işleviyle kullandıktan sonra işlevi boşaltmaya ihtiyacınız yoktur.
+Microsoft Visual C++'ın yeni özelliklerinin, işlev `EnumObjects`. Geçirilen `EnumObjects` adres, **Export** ile ve Pascal arama kuralıyla dışa aktarılan bir işlevin işaretçisidir. Koruma modu uygulamalarında, bu işlevi Windows MakeProcInstance işleviyle oluşturmanız veya FreeProcInstance Windows işleviyle kullanımdan sonra işlevi boşaltmanız gerekmez.
 
-Ayrıca, uygulamanızın modül tanımı dosyasındaki bir **dışarı aktarmalar** ifadesinde işlev adını dışarı aktarmanız gerekmez. Bunun yerine **dışa aktarma** işlev değiştiricisini içinde olduğu gibi kullanabilirsiniz.
+Ayrıca, uygulamanızın modül tanım dosyasındaki **BIR İhRACAT** bildiriminde işlev adını dışa aktarmanız gerekmez. Bunun **yerine,** export işlev değiştiricisini kullanabilirsiniz,
 
-**Int GERI çağırma dışarı aktarma** AFunction **(LPSTR**, **LPSTR);**
+**int CALLBACK İhRACAT** AFunction **(LPSTR**, **LPSTR);**
 
-Derleyicinin ada göre dışarı aktarma için uygun dışarı aktarma kaydını takma ad olmadan yaymasına neden olmak için. Bu, çoğu gereksinimde için geçerlidir. Bir işlevi sıralı veya dışa aktarmaya göre dışarı aktarma gibi bazı özel durumlarda, yine de modül tanımı dosyasında bir **dışarı** aktarma ifadesini kullanmanız gerekir.
+derlemenin diğer adla ihracat için uygun ihracat kaydını yontmasını sağlamak. Bu en çok ihtiyaç lar için çalışır. Bir işlevi ordinal tarafından dışa aktarma veya dışa aktarma takma adı gibi bazı özel durumlar için, yine de bir modül tanım dosyasında BIR **İHRACAT** deyimi kullanmanız gerekir.
 
-Microsoft Foundation programlarını derlemek için normalde/GA ve/GEs derleyici seçeneklerini kullanacaksınız. /GW derleyici seçeneği Microsoft Foundation sınıflarıyla birlikte kullanılmaz. (`MakeProcInstance`Windows işlevini kullanırsanız, döndürülen işlev işaretçisini bu API 'de gereken türe açıkça atamalısınız.) Geri çağırma kayıt arabirimleri artık tür açısından güvenlidir (belirli bir geri çağırma için doğru işlev türünü işaret eden bir işlev işaretçisi geçirmeniz gerekir).
+Microsoft Foundation programlarını derlemek için normalde /GA ve /GEs derleyici seçeneklerini kullanırsınız. /Gw derleyici seçeneği Microsoft Foundation sınıflarında kullanılmaz. (Windows işlevini `MakeProcInstance`kullanıyorsanız, döndürülen işlev işaretçisini FARPROC'tan bu API'de gereken türe açıkça dökmeniz gerekir.) Geri arama kayıt arabirimleri artık tür güvenlidir (belirli geri arama için doğru işlev türünü gösteren bir işlev işaretçisi geçmeniz gerekir).
 
-Ayrıca, geri çağırma işlevlerinin Windows 'a döndürülmeden önce Microsoft Foundation özel durumlarını yakalamayacağını unutmayın. Özel durumlar hakkında daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
+Ayrıca, özel durumlar geri arama sınırları dışına atılamayacağından, tüm geri arama işlevlerinin Windows'a dönmeden önce Microsoft Foundation özel durumlarını hapsetmesi gerektiğini de unutmayın. Özel durumlar hakkında daha fazla bilgi için [özel durumlar](../../mfc/exception-handling-in-mfc.md)makalesine bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#35](../../mfc/codesnippet/cpp/cdc-class_7.cpp)]
 
-##  <a name="escape"></a>CDC:: kaçış
+## <a name="cdcescape"></a><a name="escape"></a>CDC::Kaçış
 
-Bu üye işlevi Win32 programlamasında neredeyse kullanılmıyor.
+Bu üye işlev Win32 programlama için hemen hemen kullanılmaz.
 
 ```
 virtual int Escape(
@@ -2087,68 +2087,68 @@ int Escape(
 *nEscape*<br/>
 Gerçekleştirilecek kaçış işlevini belirtir.
 
-Kaçış işlevlerinin tüm listesi için, Windows SDK [kaçış](/windows/win32/api/wingdi/nf-wingdi-escape) bölümüne bakın.
+Kaçış işlevlerinin tam listesi için Windows SDK'da [Kaçış](/windows/win32/api/wingdi/nf-wingdi-escape) bölümüne bakın.
 
-*nCount*<br/>
-*LpszInData*tarafından işaret edilen veri baytlarının sayısını belirtir.
+*nSayısı*<br/>
+*lpszInData*tarafından işaret edilen bayt veri sayısını belirtir.
 
 *lpszInData*<br/>
-Bu kaçış için gereken giriş veri yapısına işaret eder.
+Bu kaçış için gerekli giriş veri yapısına işaret.
 
 *lpOutData*<br/>
-Bu Escape 'tan çıkış almak için olan yapıya işaret eder. Hiçbir veri döndürülmezse *lpOutData* parametresi null olur.
+Bu kaçıştan çıktı almak için yapıya işaret ediyor. Veri döndürülmezse *lpOutData* parametresi NULL'dur.
 
 *nInputSize*<br/>
-*LpszInputData* parametresi tarafından işaret edilen veri baytlarının sayısını belirtir.
+*lpszInputData* parametresi tarafından işaret edilen bayt veri sayısını belirtir.
 
 *lpszInputData*<br/>
-Belirtilen kaçış için gereken giriş yapısına işaret eder.
+Belirtilen kaçış için gerekli giriş yapısına işaret.
 
 *nOutputSize*<br/>
-*LpszOutputData* parametresi tarafından işaret edilen veri baytlarının sayısını belirtir.
+*lpszOutputData* parametresi tarafından işaret edilen bayt veri sayısını belirtir.
 
 *lpszOutputData*<br/>
-Bu kaçış öğesinden çıkış alan yapıya işaret eder. Hiçbir veri döndürülmezse Bu parametre NULL olmalıdır.
+Bu kaçıştan çıktı alan yapıyı işaret ediyor. Veri döndürülmezse bu parametre NULL olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa pozitif bir değer döndürülür. Bu, yalnızca uygulamayı denetleyen QUERYESCSUPPORT kaçış hariç olur. Kaçış uygulanmadığından sıfır döndürülür. Bir hata oluştuysa negatif bir değer döndürülür. Ortak hata değerleri şunlardır:
+İşlev başarılı olursa, yalnızca uygulama için denetlenen QUERYESCSUPPORT kaçışı dışında pozitif bir değer döndürülür. Kaçış uygulanmazsa sıfır döndürülür. Bir hata oluştuysa negatif bir değer döndürülür. Sık karşılaşılan hata değerleri şunlardır:
 
-- SP_ERROR genel hata.
+- Genel SP_ERROR hata.
 
-- SP_OUTOFDISK, şu anda bekletilmekte olan yeterli disk alanı yok ve kullanılabilir alan yok.
+- SP_OUTOFDISK Şu anda biriktirme için yeterli disk alanı yok ve başka alan kullanılamaz.
 
-- Kuyruğa alma için yeterli bellek SP_OUTOFMEMORY yok.
+- SP_OUTOFMEMORY Biriktirme için yeterli bellek yok.
 
-- SP_USERABORT Kullanıcı, işi Yazdırma Yöneticisi aracılığıyla sonlandırdı.
+- SP_USERABORT Kullanıcı Yazdırma Yöneticisi aracılığıyla işi sona erdirti.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özgün yazıcı çıkar, Win32 uygulamaları için yalnızca QUERYESCSUPPORT desteklenir. Diğer tüm yazıcı çıkışları artık kullanılmıyor ve yalnızca 16 bit uygulamalarla uyumluluk için destekleniyor.
+Orijinal yazıcı kaçışları, win32 uygulamaları için yalnızca QUERYESCSUPPORT desteklenir. Diğer tüm yazıcı kaçışları eskidir ve yalnızca 16 bit uygulamalarla uyumluluk için desteklenir.
 
-Win32 programlama için, `CDC` artık bunlara karşılık gelen yazıcı kaçışlarını yerine geçen altı üye işlevi sağlamaktadır:
+Win32 programlama için, `CDC` şimdi karşılık gelen yazıcı kaçar yerine altı üye işlevleri sağlar:
 
-- [CDC:: AbortDoc](#abortdoc)
+- [CDC::AbortDoc](#abortdoc)
 
-- [CDC:: EndDoc](#enddoc)
+- [CDC::EndDoc](#enddoc)
 
-- [CDC:: EndPage](#endpage)
+- [CDC::Son Sayfa](#endpage)
 
-- [CDC:: SetAbortProc](#setabortproc)
+- [CDC::SetAbortProc](#setabortproc)
 
-- [CDC:: StartDoc](#startdoc)
+- [CDC::Başlangıç Doc](#startdoc)
 
-- [CDC:: StartPage](#startpage)
+- [CDC::Başlangıç Sayfası](#startpage)
 
-Ayrıca, [CDC:: GetDeviceCaps](#getdevicecaps) , diğer yazıcı kaçışları yerine geçen Win32 dizinlerini destekler. Daha fazla bilgi için Windows SDK bkz. [GetDeviceCaps](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) .
+Buna ek olarak, [CDC::GetDeviceCaps](#getdevicecaps) diğer yazıcı kaçar yerini Win32 dizinleri destekler. Daha fazla bilgi için Windows SDK'daki [GetDeviceCaps'e](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) bakın.
 
-Bu üye işlevi, uygulamaların GDI aracılığıyla doğrudan kullanılamayan belirli bir cihazın tesislere erişmesini sağlar.
+Bu üye işlevi, uygulamaların GDI aracılığıyla doğrudan kullanılamayan belirli bir aygıtın tesislerine erişmesine olanak tanır.
 
-Uygulamanız önceden tanımlanmış kaçış değerlerini kullanıyorsa, ilk sürümü kullanın. Uygulamanız özel kaçış değerlerini tanımlıyorsa ikinci sürümü kullanın. İkinci sürüm hakkında daha fazla bilgi için Windows SDK [ExtEscape](/windows/win32/api/wingdi/nf-wingdi-extescape) bakın.
+Uygulamanız önceden tanımlanmış kaçış değerlerini kullanıyorsa ilk sürümü kullanın. Uygulamanız özel kaçış değerlerini tanımlıyorsa ikinci sürümü kullanın. İkinci sürüm hakkında daha fazla bilgi için Windows SDK'daki [ExtEscape'e](/windows/win32/api/wingdi/nf-wingdi-extescape) bakın.
 
-##  <a name="excludecliprect"></a>CDC:: Excludeclienprect
+## <a name="cdcexcludecliprect"></a><a name="excludecliprect"></a>CDC::ExcludeClipRect
 
-Varolan kırpma bölgesinin belirtilen dikdörtgenden oluşan yeni bir kırpma bölgesi oluşturur.
+Belirtilen dikdörtgen eksi varolan kırpma bölgesinden oluşan yeni bir kırpma bölgesi oluşturur.
 
 ```
 int ExcludeClipRect(
@@ -2163,39 +2163,39 @@ int ExcludeClipRect(LPCRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-Dikdörtgenin sol üst köşesinin mantıksal x koordinatını belirtir.
+Dikdörtgenin sol üst köşesinin mantıksal x-koordinatını belirtir.
 
-*Y1*<br/>
-Dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.
+*y1*<br/>
+Dikdörtgenin sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
 *x2*<br/>
-Dikdörtgenin sağ alt köşesinin mantıksal x koordinatını belirtir.
+Dikdörtgenin sağ alt köşesinin mantıksal x-koordinatını belirtir.
 
-*Y2*<br/>
-Dikdörtgenin sağ alt köşesinin mantıksal y koordinatını belirtir.
+*y2*<br/>
+Dikdörtgenin sağ alt köşesinin mantıksal y-koordinatını belirtir.
 
-*lpRect*<br/>
-Dikdörtgeni belirtir. Ayrıca bir `CRect` nesnesi olabilir.
+*Lprect*<br/>
+Dikdörtgeni belirtir. Bir `CRect` nesne de olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Yeni kırpma bölgesinin türünü belirtir. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- KARMAŞıKLıK BÖLGESI bölgenin çakışan kenarlıkları vardır.
+- KOMPLEKS BÖLGE Bölgenin çakışan sınırları vardır.
 
-- Hiçbir bölge oluşturulmadığından hata oluştu.
+- HATA Hiçbir bölge oluşturuldu.
 
-- NULLREGION bölge boş.
+- NULLREGION Bölge boş.
 
-- Bölgede SIMPLEREGIÇAKıŞAN kenarlık yok.
+- SIMPLEREGION Bölgenin çakışan sınırları yoktur.
 
 ### <a name="remarks"></a>Açıklamalar
 
- - *x1*'nin mutlak değeriyle belirtilen dikdörtgenin genişliği, 32.767 birimi aşmamalıdır . Bu sınır, dikdörtgenin yüksekliği de için geçerlidir.
+*X2* - *x1'in*mutlak değeri ile belirtilen dikdörtgenin genişliği 32.767 birimi geçmemelidir. Bu sınır dikdörtgenin yüksekliği için de geçerlidir.
 
-##  <a name="excludeupdatergn"></a>CDC:: ExcludeUpdateRgn
+## <a name="cdcexcludeupdatergn"></a><a name="excludeupdatergn"></a>CDC::ExcludeUpdateRgn
 
-Penceredeki güncelleştirilmiş bir bölgeyi `CDC` nesnesiyle ilişkili kırpma bölgesinden dışlayarak pencerenin geçersiz alanlarının çizilmesini önler.
+Penceredeki güncelleştirilmiş bir bölgeyi nesneyle ilişkili kırpma bölgesinden dışlayarak pencerenin geçersiz `CDC` alanları içinde çizim ilerler.
 
 ```
 int ExcludeUpdateRgn(CWnd* pWnd);
@@ -2203,24 +2203,24 @@ int ExcludeUpdateRgn(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*pWnd*<br/>
-Penceresi güncelleştirilmekte olan pencere nesnesine işaret eder.
+*Pwnd*<br/>
+Penceresi güncelleştirilen pencere nesnesine işaret ediyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Dışlanan bölgenin türü. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- KARMAŞıKLıK BÖLGESI bölgenin çakışan kenarlıkları vardır.
+- KOMPLEKS BÖLGE Bölgenin çakışan sınırları vardır.
 
-- Hiçbir bölge oluşturulmadığından hata oluştu.
+- HATA Hiçbir bölge oluşturuldu.
 
-- NULLREGION bölge boş.
+- NULLREGION Bölge boş.
 
-- Bölgede SIMPLEREGIÇAKıŞAN kenarlık yok.
+- SIMPLEREGION Bölgenin çakışan sınırları yoktur.
 
-##  <a name="extfloodfill"></a>CDC:: Extfgevdfill
+## <a name="cdcextfloodfill"></a><a name="extfloodfill"></a>CDC::ExtFloodFill
 
-Görüntüleme yüzeyi alanını geçerli fırçayla doldurur.
+Ekran yüzeyinin bir alanını geçerli fırçayla doldurur.
 
 ```
 BOOL ExtFloodFill(
@@ -2232,39 +2232,39 @@ BOOL ExtFloodFill(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Doldurmanın başladığı noktanın mantıksal x koordinatını belirtir.
+*X*<br/>
+Dolgunun başladığı noktanın mantıksal x koordinatını belirtir.
 
-*Iz*<br/>
-Doldurmanın başladığı noktanın mantıksal y koordinatını belirtir.
+*Y*<br/>
+Dolgunun başladığı noktanın mantıksal y koordinatını belirtir.
 
 *crColor*<br/>
-Doldurulacak alanın veya sınırın rengini belirtir. *CrColor* yorumu *nFillType*değerine bağlıdır.
+Sınırın veya doldurulacak alanın rengini belirtir. *crColor* yorumu *nFillType*değerine bağlıdır.
 
 *nFillType*<br/>
-Gerçekleştirilecek taşma dolgusu türünü belirtir. Bu, aşağıdaki değerlerden biri olmalıdır:
+Yapılacak sel dolgutürünü belirtir. Aşağıdaki değerlerden biri olmalıdır:
 
-- FLOODFILLBORDER doldurma alanı, *crColor*tarafından belirtilen renge göre sınırlanır. Bu stil, `FloodFill`tarafından gerçekleştirilen doldurma ile aynıdır.
+- FLOODFILLBORDER Dolgu alanı *crColor*tarafından belirtilen renk ile sınırlanır. Bu stil, '. tarafından `FloodFill`gerçekleştirilen dolgu ile aynıdır.
 
-- FLOODFILLSURFACE doldurma alanı *crColor*tarafından belirtilen renkle tanımlanır. Doldurma, renkle karşılaşıldığı sürece tüm yönlere sürekli olarak devam eder. Bu stil, çok renkli sınırlara sahip alanların doldurulması için faydalıdır.
+- FLOODFILLSURFACE Dolgu alanı *crColor*tarafından belirtilen renk ile tanımlanır. Renk le karşılaşınca dolgu her yönde dışa doğru devam ediyor. Bu stil, çok renkli sınırları olan alanları doldurmak için yararlıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa sıfır dışı; Aksi halde, belirtilen nokta *crColor* tarafından belirtilen sınır rengine SAHIPSE (FLOODFILLBORDER isteniyorsa), verilen nokta *crColor* tarafından belirtilen renge sahıp DEĞILSE (floodfillsurface isteniyorsa) veya nokta kırpma bölgesinin dışındaysa.
+İşlev başarılı olursa sıfırsız; aksi takdirde dolgu tamamlanamadıysa, verilen nokta *crColor* tarafından belirtilen sınır rengine sahipse (FLOODFILLBORDER isteniyorsa), verilen nokta *crColor* tarafından belirtilen renge sahip değilse (FLOODFILLSURFACE isteniyorsa) veya nokta kırpma bölgesinin dışındaysa.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, *nFillType*içinde bir doldurma türü belirtebileceğiniz için `FloodFill` kıyasla daha fazla esneklik sunar.
+Bu üye işlev, `FloodFill` *nFillType'da*dolgu türü belirtebildiğiniziçin daha fazla esneklik sunar.
 
-*NFillType* , FLOODFILLBORDER olarak ayarlandıysa, alanın *crColor*tarafından belirtilen renkle tamamen sınırlı olduğu varsayılır. İşlevi *x* ve *y* tarafından belirtilen noktada başlar ve tüm yönlere renk sınırına girer.
+*nFillType* FLOODFILLBORDER olarak ayarlanmışsa, alan *tamamen crColor*tarafından belirtilen renk ile sınırlı olduğu varsayılır. İşlev *x* ve *y* ile belirtilen noktada başlar ve renk sınırına kadar her yönde doldurur.
 
-*NFillType* , ÇIÇODFILLSURFACE olarak ayarlandıysa, işlev *x* ve *y* tarafından belirtilen noktada başlar ve tüm yönlere devam ederek *crColor*tarafından belirtilen rengi içeren tüm bitişik alanları doldurun.
+*nFillType* FLOODFILLSURFACE olarak ayarlanırsa, fonksiyon *x* ve *y* tarafından belirtilen noktada başlar ve *crColor*tarafından belirtilen renk içeren tüm bitişik alanları doldurarak, her yönde devam eder.
 
-Yalnızca bellek cihaz bağlamları ve raster görüntüleme teknolojisini destekleyen cihazlar `ExtFloodFill`. Daha fazla bilgi için bkz. [GetDeviceCaps](#getdevicecaps) üye işlevi.
+Yalnızca raster ekran teknolojisini destekleyen bellek aygıtı bağlamları ve aygıtları `ExtFloodFill`desteklenir. Daha fazla bilgi için [GetDeviceCaps](#getdevicecaps) üye işlevine bakın.
 
-##  <a name="exttextout"></a>CDC:: ExtTextOut
+## <a name="cdcexttextout"></a><a name="exttextout"></a>CDC::ExtTextOut
 
-Şu anda seçili olan yazı tipini kullanarak dikdörtgen bir bölge içinde bir karakter dizesi yazmak için bu üye işlevi çağırın.
+Şu anda seçili yazı tipini kullanarak dikdörtgen bir bölge içinde bir karakter dizesi yazmak için bu üye işlevi arayın.
 
 ```
 virtual BOOL ExtTextOut(
@@ -2287,33 +2287,33 @@ BOOL ExtTextOut(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Belirtilen dizedeki ilk karakter için karakter hücresinin mantıksal x koordinatını belirtir.
+*X*<br/>
+Belirtilen dizedeki ilk karakter için karakter hücresinin mantıksal x-koordinatını belirtir.
 
-*Iz*<br/>
-Belirtilen dizedeki ilk karakter için karakter hücresinin en üstünde bulunan mantıksal y koordinatını belirtir.
+*Y*<br/>
+Belirtilen dizedeki ilk karakter için karakter hücresinin üst üstündeki mantıksal y-koordinatını belirtir.
 
-*Önemli seçenekler*<br/>
-Dikdörtgen türünü belirtir. Bu parametre bir, her ikisi de olabilir ya da aşağıdaki değerlerden hiçbiri olabilir:
+*nSeçenekler*<br/>
+Dikdörtgen türünü belirtir. Bu parametre aşağıdaki değerlerden biri, her ikisi veya ikisi olabilir:
 
-- ETO_CLIPPED metnin dikdörtgene kırpılacağını belirtir.
+- ETO_CLIPPED Metnin dikdörtgenin kırpılmış olduğunu belirtir.
 
-- ETO_OPAQUE, geçerli arka plan renginin dikdörtgeni doldurduğunu belirtir. (Geçerli arka plan rengini [SetBkColor](#setbkcolor) ve [GetBkColor](#getbkcolor) üye işlevleriyle ayarlayıp sorgulayabilirsiniz.)
+- ETO_OPAQUE Geçerli arka plan renginin dikdörtgeni doldurduğunu belirtir. [(SetBkColor ve GetBkColor](#setbkcolor) üye işlevleri [GetBkColor](#getbkcolor) ile geçerli arka plan rengini ayarlayabilir ve sorgulayabilirsiniz.)
 
-*lpRect*<br/>
-Dikdörtgenin boyutlarını belirleyen bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına işaret eder. Bu parametre NULL olabilir. Ayrıca, bu parametre için bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
+*Lprect*<br/>
+Dikdörtgenin boyutlarını belirleyen bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaret eder. Bu parametre NULL olabilir. Ayrıca bu parametre için bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
 
 *lpszString*<br/>
-Çizilecek belirtilen karakter dizesine işaret eder. Ayrıca, bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
+Çizilecek belirtilen karakter dizesine işaret edin. Ayrıca bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
 
-*nCount*<br/>
+*nSayısı*<br/>
 Dizedeki karakter sayısını belirtir.
 
-*Lpdxgenişlikleri*<br/>
-Bitişik karakter hücrelerinin kaynakları arasındaki mesafeyi belirten bir değer dizisine işaret eder. Örneğin, *Lpdxgenişlikler*[ *i*] mantıksal birimleri karakter hücresi *ı* ve karakter hücresi *ı* + 1 ' in kaynakları ayırır. *Lpdxgenişlikleri* null ise, `ExtTextOut` karakterler arasındaki varsayılan aralığı kullanır.
+*lpDxGenişlik*<br/>
+Bitişik karakter hücrelerinin kökenleri arasındaki mesafeyi gösteren bir dizi değere işaret eder. Örneğin, *lpDxWidths*[ *i*] mantıksal birimleri karakter hücre *i* ve karakter hücre *i* + 1 kökenlerini ayırır. *LPDxWidths* NULL ise, `ExtTextOut` karakterler arasındaki varsayılan aralığı kullanır.
 
-*üstbilgisine*<br/>
-Çizilecek belirtilen karakterleri içeren `CString` nesnesi.
+*Str*<br/>
+Çizilecek belirtilen karakterleri içeren bir `CString` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2321,13 +2321,13 @@ Bitişik karakter hücrelerinin kaynakları arasındaki mesafeyi belirten bir de
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dikdörtgen bölge donuk olabilir (geçerli arka plan rengiyle doldurulmuştur) ve bir kırpma bölgesi olabilir.
+Dikdörtgen bölge opak (geçerli arka plan rengi ile dolu) olabilir ve bir kırpma bölgesi olabilir.
 
-*Noseçenekler* 0 Ise ve *lpRect* null ise, işlev dikdörtgen bir bölge kullanmadan cihaz bağlamına metin yazar. Varsayılan olarak, geçerli konum işlev tarafından kullanılmaz veya güncelleştirilmez. Bir uygulamanın `ExtTextOut`çağırdığında geçerli konumu güncelleştirmesi gerekiyorsa, uygulama *nFlags* TA_UPDATECP olarak ayarlanan nflags olan `CDC` [üye işlevini çağırabilir](#settextalign) . Bu bayrak ayarlandığında, Windows `ExtTextOut` sonraki çağrılarındaki *x* ve *y* 'yi yoksayar ve bunun yerine geçerli konumu kullanır. Bir uygulama geçerli konumu güncelleştirmek için TA_UPDATECP kullandığında, `ExtTextOut` önceki metin satırının sonuna veya *Lpdxgenişlikleri*tarafından işaret edilen dizideki son öğe tarafından belirtilen konuma, hangisi daha büyükse,.
+*nOptions* 0 ve *lpRect* NULL ise, işlev dikdörtgen bir bölge kullanmadan aygıt bağlamına metin yazar. Varsayılan olarak, geçerli konum işlev tarafından kullanılmaz veya güncelleştirilmez. Bir uygulama `ExtTextOut`nın aradığında geçerli konumu güncellemesi gerekiyorsa, `CDC` uygulama üye işlevini *nFlags* TA_UPDATECP ayarlanmış [SetTextAlign'ı](#settextalign) arayabilir. Bu bayrak ayarlandığında, Windows *x* sonraki aramalarda x `ExtTextOut` ve *y'yi* yoksa ve bunun yerine geçerli konumu kullanır. Bir uygulama geçerli konumu güncelleştirmek `ExtTextOut` için TA_UPDATECP kullandığında, geçerli konumu önceki metin satırının sonuna veya *lpDxWidths*tarafından işaret edilen dizinin son öğesi tarafından belirtilen konuma ayarlar ( hangisi daha büyükse).
 
-##  <a name="fillpath"></a>CDC:: FillPath
+## <a name="cdcfillpath"></a><a name="fillpath"></a>CDC::FillPath
 
-Geçerli yoldaki tüm açık rakamları kapatır ve geçerli fırça ve çokgen doldurma modunu kullanarak yolun iç kısmını doldurur.
+Geçerli yoldaki açık şekilleri kapatır ve geçerli fırça ve çokgen dolum modunu kullanarak yolun iç kısımlarını doldurur.
 
 ```
 BOOL FillPath();
@@ -2339,11 +2339,11 @@ BOOL FillPath();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İç kısmı doldurulduktan sonra, yol cihaz bağlamından atılır.
+İç alanı doldurulduktan sonra yol aygıt bağlamından atılır.
 
-##  <a name="fillrect"></a>CDC:: FillRect
+## <a name="cdcfillrect"></a><a name="fillrect"></a>CDC::FillRect
 
-Belirtilen fırçayı kullanarak belirli bir dikdörtgeni dolduracak şekilde bu üye işlevini çağırın.
+Belirtilen fırçayı kullanarak belirli bir dikdörtgeni doldurmak için bu üye işlevi arayın.
 
 ```
 void FillRect(
@@ -2353,25 +2353,25 @@ void FillRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Doldurulacak dikdörtgenin mantıksal koordinatlarını içeren bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına işaret eder. Ayrıca, bu parametre için bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
+*Lprect*<br/>
+Doldurulacak dikdörtgenin mantıksal koordinatlarını içeren bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaret eder. Ayrıca bu parametre için bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
 
-*pBrush*<br/>
-Dikdörtgeni dolduracak şekilde kullanılan fırçayı tanımlar.
+*pFırça*<br/>
+Dikdörtgeni doldurmak için kullanılan fırçayı tanımlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, sol ve üst kenarlıklar dahil olmak üzere tüm dikdörtgeni doldurur, ancak sağ ve alt kenarlıkları doldurmaz.
+İşlev, sol ve üst kenarlıklar da dahil olmak üzere tam dikdörtgeni doldurur, ancak sağ ve alt kenarlıkları doldurmaz.
 
-Fırçanın, [CBrush](../../mfc/reference/cbrush-class.md) üye Işlevleri [CreateHatchBrush](../../mfc/reference/cbrush-class.md#createhatchbrush), [CreatePatternBrush](../../mfc/reference/cbrush-class.md#createpatternbrush)ve [createsolidbrush](../../mfc/reference/cbrush-class.md#createsolidbrush)kullanılarak oluşturulması ya da `GetStockObject` Windows işlevi tarafından alınması gerekir.
+Fırça ya [CBrush](../../mfc/reference/cbrush-class.md) üye işlevleri [CreateHatchBrush](../../mfc/reference/cbrush-class.md#createhatchbrush)kullanılarak oluşturulması gerekir , [CreatePatternBrush](../../mfc/reference/cbrush-class.md#createpatternbrush), ve `GetStockObject` [CreateSolidBrush](../../mfc/reference/cbrush-class.md#createsolidbrush), veya Windows fonksiyonu tarafından alınan.
 
-Belirtilen dikdörtgeni doldururken `FillRect` dikdörtgenin sağ ve alt taraflarını içermez. GDI, geçerli eşleme modundan bağımsız olarak, bir dikdörtgeni, doğru sütunu ve alt satırı içermez, ancak eklemez. `FillRect`, belirtilen dikdörtgenin `top`, `bottom`, `left`ve `right` üyelerinin değerlerini karşılaştırır. `bottom` `top`veya daha küçükse veya `right` eşitse ya da `left`eşitse, dikdörtgen çizilmez.
+Belirtilen dikdörtgeni doldururken, `FillRect` dikdörtgenin sağ ve alt taraflarını içermez. GDI, geçerli eşleme moduna bakılmaksızın sağ sütun ve alt satıra kadar bir dikdörtgen doldurur, ancak içermez. `FillRect`belirtilen dikdörtgenin , `top` `bottom`, `left`ve `right` üyelerinin değerlerini karşılaştırır. Daha `bottom` az veya `top`eşitse, `right` veya daha az `left`veya eşitse, dikdörtgen çizilmez.
 
-`FillRect` [CDC:: FillSolidRect](#fillsolidrect); ile benzerdir. Ancak, `FillRect` bir fırça alır ve bu nedenle bir dikdörtgeni düz renk, titremeli rengi, taranmış fırçalar veya bir örüntü dolduracak şekilde kullanabilirsiniz. `FillSolidRect` yalnızca düz renkler kullanır (COLORREF parametresiyle gösterilir). `FillRect` genellikle `FillSolidRect`daha yavaştır.
+`FillRect`[CDC benzer::FillSolidRect](#fillsolidrect); ancak, `FillRect` bir fırça alır ve bu nedenle düz bir renk, bir dithered renk, yumurtadan fırçalar veya bir desen ile bir dikdörtgen doldurmak için kullanılabilir. `FillSolidRect`yalnızca düz renkler kullanır (COLORREF parametresi ile gösterilir). `FillRect`genellikle `FillSolidRect`daha yavaştır.
 
-##  <a name="fillrgn"></a>CDC:: FillRgn
+## <a name="cdcfillrgn"></a><a name="fillrgn"></a>CDC::FillRgn
 
-*PRgn* tarafından belirtilen bölgeyi *pBrush*tarafından belirtilen fırçayla doldurur.
+*pRgn* tarafından belirtilen bölgeyi *pBrush*tarafından belirtilen fırça ile doldurur.
 
 ```
 BOOL FillRgn(
@@ -2382,10 +2382,10 @@ BOOL FillRgn(
 ### <a name="parameters"></a>Parametreler
 
 *pRgn*<br/>
-Doldurulacak bölgeye yönelik bir işaretçi. Verilen bölgenin koordinatları mantıksal birimlerde belirtilir.
+Doldurulacak bölgeye işaretçi. Verilen bölgenin koordinatları mantıksal birimler halinde belirtilir.
 
-*pBrush*<br/>
-Bölgeyi doldururken kullanılacak fırçayı tanımlar.
+*pFırça*<br/>
+Bölgeyi doldurmak için kullanılacak fırçayı tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2393,15 +2393,15 @@ Bölgeyi doldururken kullanılacak fırçayı tanımlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Fırça, `CBrush` üye işlevleri kullanılarak oluşturulmalıdır `CreateHatchBrush`, `CreatePatternBrush`, `CreateSolidBrush`veya `GetStockObject`tarafından alınır.
+Fırça, `CBrush` `CreateHatchBrush`üye işlevler `CreatePatternBrush` `CreateSolidBrush`kullanılarak oluşturulmalı veya . `GetStockObject`
 
 ### <a name="example"></a>Örnek
 
-  [CRgn:: CreateRoundRectRgn](../../mfc/reference/crgn-class.md#createroundrectrgn)için örneğe bakın.
+  CRgn için örnek [bakınız::CreateRoundRectRgn](../../mfc/reference/crgn-class.md#createroundrectrgn).
 
-##  <a name="fillsolidrect"></a>CDC:: FillSolidRect
+## <a name="cdcfillsolidrect"></a><a name="fillsolidrect"></a>CDC::FillSolidRect
 
-Verilen dikdörtgeni belirtilen düz renkle dolduracak şekilde bu üye işlevi çağırın.
+Verilen dikdörtgeni belirtilen düz renkle doldurmak için bu üye işlevi arayın.
 
 ```
 void FillSolidRect(
@@ -2418,33 +2418,33 @@ void FillSolidRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parametre için, bir [Rect](/windows/win32/api/windef/ns-windef-rect) veri yapısına veya `CRect` nesnesine bir işaretçi geçirebilirsiniz.
+*Lprect*<br/>
+Sınırlayıcı dikdörtgeni (mantıksal birimler halinde) belirtir. Bu parametre için bir işaretçiyi BIR `CRect` [RECT](/windows/win32/api/windef/ns-windef-rect) veri yapısına veya bir nesneye geçirebilirsiniz.
 
-*clr* Dikdörtgeni doldururken kullanılacak rengi belirtir.
+*clr* Dikdörtgeni doldurmak için kullanılacak rengi belirtir.
 
-*sayı*<br/>
-Dikdörtgenin sol üst köşesinin mantıksal x koordinatını belirtir.
+*X*<br/>
+Dikdörtgenin sol üst köşesinin mantıksal x-koordinatını belirtir.
 
-*Iz*<br/>
-Hedef dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.
+*Y*<br/>
+Hedef dikdörtgenin sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
-*yazmaç*<br/>
+*Cx*<br/>
 Dikdörtgenin genişliğini belirtir.
 
-*lı*<br/>
+*Cy*<br/>
 Dikdörtgenin yüksekliğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`FillSolidRect` [CDC:: FillRect](#fillrect); öğesine çok benzer. Ancak, `FillSolidRect` yalnızca düz renkler kullanır (COLORREF parametresi tarafından gösterilir), `FillRect` bir fırça alır ve bu nedenle düz bir renk, bir titremeli rengi, taranmış fırçalar veya bir desenli dikdörtgeni dolduracak şekilde kullanılabilir. `FillSolidRect` genellikle `FillRect`daha hızlıdır.
+`FillSolidRect`CDC çok [benzer::FillRect](#fillrect); ancak, `FillSolidRect` bir fırça alır ve bu nedenle düz `FillRect` bir renk, bir dithered renk, yumurtadan fırçalar veya bir desen ile bir dikdörtgen doldurmak için kullanılabilir iken, sadece düz renkler (COLORREF parametre ile gösterilir) kullanır. `FillSolidRect`genellikle daha `FillRect`hızlıdır .
 
 > [!NOTE]
->  `FillSolidRect`çağırdığınızda, daha önce [SetBkColor](#setbkcolor)kullanılarak ayarlanan arka plan rengi *clr*tarafından belirtilen renge ayarlanır.
+> Ne zaman `FillSolidRect`, daha önce [SetBkColor](#setbkcolor)kullanılarak ayarlanmış arka plan rengi, *clr*tarafından belirtilen renk ayarlanır.
 
-##  <a name="flattenpath"></a>CDC:: DÜZEDEN yol
+## <a name="cdcflattenpath"></a><a name="flattenpath"></a>CDC::FlattenPath
 
-Seçili yoldaki tüm eğrileri geçerli cihaz bağlamına dönüştürür ve her eğriyi bir satır dizisine dönüştürür.
+Seçili yoldaki eğrileri geçerli aygıt bağlamına dönüştürür ve her eğriyi bir çizgi dizisine dönüştürür.
 
 ```
 BOOL FlattenPath();
@@ -2454,9 +2454,9 @@ BOOL FlattenPath();
 
 İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.
 
-##  <a name="floodfill"></a>CDC:: FloodFill
+## <a name="cdcfloodfill"></a><a name="floodfill"></a>CDC::Sel Dolgusu
 
-Görüntüleme yüzeyi alanını geçerli fırçayla doldurur.
+Ekran yüzeyinin bir alanını geçerli fırçayla doldurur.
 
 ```
 BOOL FloodFill(
@@ -2467,30 +2467,30 @@ BOOL FloodFill(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Doldurmanın başladığı noktanın mantıksal x koordinatını belirtir.
+*X*<br/>
+Dolgunun başladığı noktanın mantıksal x koordinatını belirtir.
 
-*Iz*<br/>
-Doldurmanın başladığı noktanın mantıksal y koordinatını belirtir.
+*Y*<br/>
+Dolgunun başladığı noktanın mantıksal y koordinatını belirtir.
 
 *crColor*<br/>
 Sınırın rengini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa sıfır dışı; Aksi takdirde 0 döndürülür, doldurma tamamlanmayabilir, verilen nokta *crColor*tarafından belirtilen sınır rengine sahiptir veya nokta kırpma bölgesinin dışındadır.
+İşlev başarılı olursa sıfırsız; aksi takdirde dolgu tamamlanamadı, verilen nokta *crColor*tarafından belirtilen sınır rengi vardır, aksi takdirde 0 döndürülür , ya da nokta kırpma bölgesi dışındadır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alanın, *crColor*tarafından belirtilen şekilde sınırlı olduğu varsayılır. `FloodFill` işlevi *x* ve *y* tarafından belirtilen noktada başlar ve renk sınırlarına tüm yönlere devam eder.
+Alan *crColor*tarafından belirtildiği gibi sınırlanmış olarak kabul edilir. Fonksiyon `FloodFill` *x* ve *y* tarafından belirtilen noktada başlar ve renk sınırına kadar her yönde devam eder.
 
-Yalnızca bellek cihaz bağlamları ve raster görüntüleme teknolojisini destekleyen cihazlar `FloodFill` üye işlevini destekler. RC_BITBLT özelliği hakkında daha fazla bilgi için bkz. `GetDeviceCaps` member işlevi.
+Yalnızca raster ekran teknolojisini destekleyen bellek aygıtı bağlamları `FloodFill` ve aygıtlar üye işlevini destekler. RC_BITBLT özelliği hakkında bilgi `GetDeviceCaps` için üye işlevine bakın.
 
-`ExtFloodFill` işlevi, benzer bir özellik sağlar ancak daha fazla esneklik sağlar.
+İşlev `ExtFloodFill` benzer yetenek ancak daha fazla esneklik sağlar.
 
-##  <a name="framerect"></a>CDC:: FrameRect
+## <a name="cdcframerect"></a><a name="framerect"></a>CDC::FrameRect
 
-*LpRect*tarafından belirtilen dikdörtgenin çevresine bir kenarlık çizer.
+*lpRect*tarafından belirtilen dikdörtgenin etrafına kenarlık çizer.
 
 ```
 void FrameRect(
@@ -2500,23 +2500,23 @@ void FrameRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Dikdörtgenin sol üst ve sağ alt köşelerinden oluşan mantıksal koordinatları içeren bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder. Ayrıca, bu parametre için bir `CRect` nesnesi geçirebilirsiniz.
+*Lprect*<br/>
+Dikdörtgenin sol üst ve alt-sağ köşelerinin mantıksal koordinatlarını içeren bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder. Ayrıca bu parametre için bir `CRect` nesne geçirebilirsiniz.
 
-*pBrush*<br/>
-Dikdörtgenin çerçeveleme için kullanılacak fırçayı tanımlar.
+*pFırça*<br/>
+Dikdörtgeni çerçevelemek için kullanılacak fırçayı tanımlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, kenarlık çizmek için verilen fırçayı kullanır. Kenarlığın genişliği ve yüksekliği her zaman 1 mantıksal birimdir.
+İşlev kenarlığı çizmek için verilen fırçayı kullanır. Kenarlığın genişliği ve yüksekliği her zaman 1 mantıksal birimdir.
 
-Dikdörtgenin `bottom` koordinatı `top`küçüktür veya eşitse ya da `right` küçük ya da `left`eşitse, dikdörtgen çizilmez.
+Dikdörtgenin `bottom` koordinatı daha az veya eşitse `top`veya `right` daha az veya `left`eşitse, dikdörtgen çizilmez.
 
-`FrameRect` tarafından çizilen sınır, aynı koordinatları kullanılarak `Rectangle` member işlevi tarafından çizilen bir kenarlıkla aynı konumdadır (`Rectangle` 1 mantıksal birim genişliğinde bir kalem kullanıyorsa). Dikdörtgenin iç kısmı `FrameRect`tarafından doldurulmamış.
+Çizilen `FrameRect` kenarlık, `Rectangle` üye işlev tarafından aynı koordinatları kullanarak çizilen `Rectangle` kenarlıkile aynı konumdadır (1 mantıksal birim genişliğinde bir kalem kullanıyorsa). Dikdörtgenin iç kısmı `FrameRect`.
 
-##  <a name="framergn"></a>CDC:: FrameRgn
+## <a name="cdcframergn"></a><a name="framergn"></a>CDC::FrameRgn
 
-*PBrush*tarafından belirtilen fırçayı kullanarak *pRgn* tarafından belirtilen bölgenin etrafına bir kenarlık çizer.
+*pBrush*tarafından belirtilen fırçayı kullanarak *pRgn* tarafından belirtilen bölgenin çevresine kenarlık çizer.
 
 ```
 BOOL FrameRgn(
@@ -2529,16 +2529,16 @@ BOOL FrameRgn(
 ### <a name="parameters"></a>Parametreler
 
 *pRgn*<br/>
-Bir kenarlık içine eklenecek bölgeyi tanımlayan `CRgn` nesnesine işaret eder. Verilen bölgenin koordinatları mantıksal birimlerde belirtilir.
+Bir kenarlık içinde kapalı olmak için bölgeyi tanımlayan `CRgn` nesneyi işaret ediyor. Verilen bölgenin koordinatları mantıksal birimler halinde belirtilir.
 
-*pBrush*<br/>
-Kenarlığı çizmek için kullanılacak fırçayı tanımlayan `CBrush` nesnesine işaret eder.
+*pFırça*<br/>
+Kenarlığı `CBrush` çizmek için kullanılacak fırçayı tanımlayan nesneyi işaret edin.
 
-*nWidth*<br/>
-Dikey fırça vuruşlarının cihaz birimlerindeki kenarlığının genişliğini belirtir.
+*Nwidth*<br/>
+Aygıt birimlerindeki dikey fırça darbelerinde kenarlık genişliğini belirtir.
 
-*nHeight*<br/>
-Cihaz birimlerindeki yatay fırça darbeleri içindeki kenarlığın yüksekliğini belirtir.
+*Nheight*<br/>
+Aygıt birimlerindeki yatay fırça darbelerinde kenarlığın yüksekliğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2546,11 +2546,11 @@ Cihaz birimlerindeki yatay fırça darbeleri içindeki kenarlığın yüksekliğ
 
 ### <a name="example"></a>Örnek
 
-  [CRgn:: CombineRgn](../../mfc/reference/crgn-class.md#combinergn)için örneğe bakın.
+  CRgn için örnek [bakınız::CombineRgn](../../mfc/reference/crgn-class.md#combinergn).
 
-##  <a name="fromhandle"></a>CDC:: FromHandle
+## <a name="cdcfromhandle"></a><a name="fromhandle"></a>CDC::FromHandle
 
-Bir cihaz bağlamına bir tanıtıcı verildiğinde `CDC` nesnesine yönelik bir işaretçi döndürür.
+Bir aygıt bağlamına bir tanıtıcı verildiğinde bir `CDC` işaretçiyi nesneye döndürür.
 
 ```
 static CDC* PASCAL FromHandle(HDC hDC);
@@ -2558,24 +2558,24 @@ static CDC* PASCAL FromHandle(HDC hDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*hDC*<br/>
-Windows cihaz bağlamına yönelik bir tanıtıcı içerir.
+*Hdc*<br/>
+Windows aygıt bağlamına bir tanıtıcı içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi geçici olabilir ve acil kullanım ötesinde depolanmamalıdır.
+İşaretçi geçici olabilir ve hemen kullanılmayacak şekilde depolanmamalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CDC` nesnesi tutamaya iliştirilmişse, geçici bir `CDC` nesnesi oluşturulur ve eklenir.
+Bir `CDC` nesne tutamacına bağlı değilse, `CDC` geçici bir nesne oluşturulur ve eklenir.
 
 ### <a name="example"></a>Örnek
 
-  [CPrintDialog:: GetPrinterDC](../../mfc/reference/cprintdialog-class.md#getprinterdc)örneğine bakın.
+  [CPrintDialog örneğine bakın:GetPrinterDC](../../mfc/reference/cprintdialog-class.md#getprinterdc).
 
-##  <a name="getarcdirection"></a>CDC:: GetArcDirection
+## <a name="cdcgetarcdirection"></a><a name="getarcdirection"></a>CDC::GetArcDirection
 
-Cihaz bağlamı için geçerli yay yönünü döndürür.
+Aygıt bağlamı için geçerli yay yönünü döndürür.
 
 ```
 int GetArcDirection() const;
@@ -2583,19 +2583,19 @@ int GetArcDirection() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa geçerli yay yönünü belirtir. Geçerli dönüş değerleri şunlardır:
+Başarılı olursa, geçerli yay yönünü belirtir. Geçerli iade değerleri şunlardır:
 
-- Ters saat olarak çizilen yay ve dikdörtgenler AD_COUNTERCLOCKWISE.
+- AD_COUNTERCLOCKWISE Yaylar ve dikdörtgenler saat yönünün tersine çizilir.
 
-- Saat yönünde çizilmiş yay ve dikdörtgenler AD_CLOCKWISE.
+- AD_CLOCKWISE Yaylar ve dikdörtgenler saat yönünde çizilir.
 
-Bir hata oluşursa, dönüş değeri sıfırdır.
+Bir hata oluşursa, iade değeri sıfırdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Yay ve dikdörtgen işlevleri yay yönünü kullanır.
 
-##  <a name="getaspectratiofilter"></a>CDC:: GetAspectRatioFilter
+## <a name="cdcgetaspectratiofilter"></a><a name="getaspectratiofilter"></a>CDC::GetAspectRatioFilter
 
 Geçerli en boy oranı filtresinin ayarını alır.
 
@@ -2605,15 +2605,15 @@ CSize GetAspectRatioFilter() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli en boy oranı filtresi tarafından kullanılan en boy oranını temsil eden bir `CSize` nesnesi.
+Geçerli `CSize` en boy oranı filtresi tarafından kullanılan en boy oranını temsil eden bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-En boy oranı, bir cihazın piksel genişliği ve yüksekliğiyle oluşturulan orandır. Bir cihazın en boy oranıyla ilgili bilgiler, yazı tiplerinin oluşturulması, seçilmesi ve gösterilmesi için kullanılır. Windows, tüm kullanılabilir yazı tiplerinin belirli bir boyut oranı için tasarlanan yazı tiplerini seçmek için, en boy oranı filtresi olan özel bir filtre sağlar. Filtre, `SetMapperFlags` üye işlevi tarafından belirtilen en boy oranını kullanır.
+En boy oranı, bir aygıtın piksel genişliği ve yüksekliğinin oluşturduğu orandır. Bir aygıtın en boy oranı hakkındaki bilgiler yazı tiplerinin oluşturulmasında, seçiminde ve görüntülenmesinde kullanılır. Windows, kullanılabilir tüm yazı tiplerinden belirli bir en boy oranı için tasarlanmış yazı tiplerini seçmek için özel bir filtre, en boy oranı filtresi sağlar. `SetMapperFlags` Filtre, üye işlev tarafından belirtilen en boy oranını kullanır.
 
-##  <a name="getbkcolor"></a>CDC:: GetBkColor
+## <a name="cdcgetbkcolor"></a><a name="getbkcolor"></a>CDC::GetBkColor
 
-Geçerli arka plan rengini döndürür.
+Geçerli arka plan rengini verir.
 
 ```
 COLORREF GetBkColor() const;
@@ -2621,13 +2621,13 @@ COLORREF GetBkColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir RGB renk değeri.
+RGB renk değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arka plan modu donuk ise, sistem, stili oluşturulmuş satırlardaki boşlukları, fırçalar içindeki taranmış çizgiler arasındaki boşlukları ve karakter hücrelerindeki arka planı bir arada dolduracak şekilde arka plan rengini kullanır. Sistem Ayrıca renk ve tek renkli cihaz bağlamları arasında bit eşlemler dönüştürürken arka plan rengini de kullanır.
+Arka plan modu OPAQUE ise, sistem stildeki çizgilerdeki boşlukları, fırçalarda yumurtadan çıkan çizgiler arasındaki boşlukları ve karakter hücrelerindeki arka planı doldurmak için arka plan rengini kullanır. Sistem ayrıca renk ve tek renkli aygıt bağlamları arasında bit eşlemleri dönüştürürken arka plan rengini kullanır.
 
-##  <a name="getbkmode"></a>CDC:: GetBkMode
+## <a name="cdcgetbkmode"></a><a name="getbkmode"></a>CDC::GetBkMode
 
 Arka plan modunu döndürür.
 
@@ -2637,15 +2637,15 @@ int GetBkMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DONUK veya saydam olabilen geçerli arka plan modu.
+OPAK veya SAYDAM olabilir geçerli arka plan modu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arka plan modu, sistemin metin, taranmış fırçalar veya düz bir çizgi olmayan herhangi bir kalem stili çizmeksizin çizim yüzeyindeki mevcut arka plan renklerini kaldırıp kaldırmadığını tanımlar.
+Arka plan modu, sistemin metin çizmeden önce çizim yüzeyindeki varolan arka plan renklerini, yumurtadan çıkan fırçaları veya düz çizgi olmayan herhangi bir kalem stilini ortadan kaldırıp kaldırmadığını tanımlar.
 
-##  <a name="getboundsrect"></a>CDC:: GetBoundsRect
+## <a name="cdcgetboundsrect"></a><a name="getboundsrect"></a>CDC::GetBoundsRect
 
-Belirtilen cihaz bağlamı için geçerli birikmiş sınırlayıcı dikdörtgeni döndürür.
+Belirtilen aygıt bağlamı için geçerli birikmiş sınırdikdörtgenini döndürür.
 
 ```
 UINT GetBoundsRect(
@@ -2655,31 +2655,31 @@ UINT GetBoundsRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lprectsınır*<br/>
-Geçerli sınırlayıcı dikdörtgeni alacak bir arabelleğe işaret eder. Dikdörtgen, mantıksal koordinatlarla döndürülür.
+*lpRectBounds*<br/>
+Geçerli sınırlayıcı dikdörtgeni alacak bir arabelleğe işaret ediyor. Dikdörtgen mantıksal koordinatlarda döndürülür.
 
-*larına*<br/>
-Sınırlayıcı dikdörtgenin döndürülmeden sonra temizlenip temizlenmeyeceğini belirtir. Bu parametre sıfır olmalıdır veya aşağıdaki değere ayarlanmalıdır:
+*bayraklar*<br/>
+Sınırlayan dikdörtgenin döndürülmeden sonra temizlenip temizlenmeyeceğini belirtir. Bu parametre sıfır veya aşağıdaki değere ayarlanmalıdır:
 
-- DCB_RESET, geri döndürülmeden sonra sınırlayıcı dikdörtgeni temizlenmeye zorlar.
+- DCB_RESET Sınırlayıcı dikdörtgeni döndürüldikten sonra temizlenecek şekilde zorlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa sınırlayıcı dikdörtgenin geçerli durumunu belirtir. Aşağıdaki değerlerin bir birleşimi olabilir:
+İşlev başarılı olursa sınırlayan dikdörtgenin geçerli durumunu belirtir. Aşağıdaki değerlerin bir birleşimi olabilir:
 
-- DCB_ACCUMULATE sınırlayıcı dikdörtgen birikmesi meydana geldiğini belirtir.
+- DCB_ACCUMULATE Sınırlayıcı dikdörtgen birikimi meydana gelmektedir.
 
-- DCB_RESET sınırlayıcı dikdörtgen boş.
+- DCB_RESET Sınırlayıcı dikdörtgen boş.
 
-- DCB_SET sınırlayıcı dikdörtgen boş değil.
+- DCB_SET Sınırlayıcı dikdörtgen boş değildir.
 
-- DCB_ENABLE sınırlayıcı birikme açık.
+- DCB_ENABLE Sınırlama birikimi açıktır.
 
-- DCB_DISABLE sınırlayıcı birikme kapalıdır.
+- DCB_DISABLE Sınırlama birikimi kapalıdır.
 
-##  <a name="getbrushorg"></a>CDC:: Getbrühorg
+## <a name="cdcgetbrushorg"></a><a name="getbrushorg"></a>CDC::GetBrushOrg
 
-Cihaz bağlamı için seçili olan fırçanın başlangıcını (cihaz birimlerinde) alır.
+Aygıt bağlamı için şu anda seçili olan fırçanın kaynağını (aygıt birimlerinde) alır.
 
 ```
 CPoint GetBrushOrg() const;
@@ -2687,15 +2687,15 @@ CPoint GetBrushOrg() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fırçanın (cihaz birimlerindeki) bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi olarak geçerli kaynağı.
+[CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi olarak fırçanın (aygıt birimlerinde) geçerli kaynağı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk fırça kaynağı, istemci alanının (0, 0). Dönüş değeri, bu noktayı Masaüstü penceresinin kaynağına göre cihaz birimlerinde belirtir.
+İlk fırça kaynağı istemci alanının (0,0) adresindedir. İade değeri, aygıt birimlerinde masaüstü penceresinin kaynağına göre bu noktayı belirtir.
 
-##  <a name="getcharacterplacement"></a>CDC:: Getkarakteryerleşimi
+## <a name="cdcgetcharacterplacement"></a><a name="getcharacterplacement"></a>CDC::Karakter Yerleştirme
 
-Bir karakter dizesindeki çeşitli bilgi türlerini alır.
+Karakter dizesindeki çeşitli türde bilgileri alır.
 
 ```
 DWORD GetCharacterPlacement(
@@ -2714,37 +2714,37 @@ DWORD GetCharacterPlacement(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpstrıng*<br/>
-İşlenecek karakter dizesine yönelik bir işaretçi.
+*lpString*<br/>
+İşlenmesi gereken karakter dizesine işaretçi.
 
-*nCount*<br/>
-Dizenin uzunluğunu belirtir. ANSI sürümü için, bir bayt sayısıdır ve Unicode işlevi için bir sözcük sayısı olur. Daha fazla bilgi için bkz. [Getkarakteryerleşimi](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw).
+*nSayısı*<br/>
+Dize uzunluğunu belirtir. ANSI sürümü için, bir BYTE sayısı ve Unicode işlevi için bir WORD sayısıdır. Daha fazla bilgi için [GetCharacterPlacement](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw)'a bakın.
 
-*Nmaxkapsam*<br/>
-Dizenin işlendiği maksimum kapsamı (mantıksal birimler cinsinden) belirtir. İşlenirse, bu kapsamı aşacağından karakterler yok sayılır. Gerekli sıralama veya glif dizileri için hesaplamalar yalnızca dahil edilen karakterlere uygulanır. Bu parametre yalnızca, *dwFlags* parametresinde GCP_MAXEXTENT değeri belirtilmişse kullanılır. İşlev giriş dizesini işlerken, her bir karakter ve kapsamı yalnızca toplam kapsam en yüksek değeri aşmadığı takdirde çıkışa, kapsama ve diğer dizilere eklenir. Sınıra ulaşıldığında işleme durdurulur.
+*nMaxExtent*<br/>
+Dize işlendiği maksimum ölçüde (mantıksal birimler halinde) belirtir. İşlenirse, bu kapsamı aşacak karakterler yoksayılır. Gerekli sipariş veya gph dizileri için hesaplamalar yalnızca dahil edilen karakterler için geçerlidir. Bu parametre yalnızca GCP_MAXEXTENT değeri *dwFlags* parametresinde belirtilmişse kullanılır. İşlev giriş dizesini işlerken, her karakter ve kapsamı çıktıya, ölçüde ve diğer dizilere yalnızca toplam kapsam henüz maksimumu aşmamışsa eklenir. Sınıra ulaşıldıktan sonra işleme durdurulacaktır.
 
-*lpResults*<br/>
-İşlevin sonuçlarını alan [GCP_Results](/windows/win32/api/wingdi/ns-wingdi-gcp_resultsw) yapısına yönelik işaretçi.
+*lpSonuçlar*<br/>
+İşlevin sonuçlarını alan [GCP_Results](/windows/win32/api/wingdi/ns-wingdi-gcp_resultsw) bir yapıyı işaretle.
 
-*dwFlags*<br/>
-Dizenin gerekli dizilere nasıl işlenmesi gerektiğini belirtir. Bu parametre, [Getkarakteryerleşimi](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw) konusunun *dwFlags* bölümünde listelenen değerlerden biri veya daha fazlası olabilir.
+*Dwflags*<br/>
+Dize nin gerekli dizilere nasıl işlenir şekilde işlenir olduğunu belirtir. Bu parametre, [GetCharacterPlacement](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw) konusunun *dwFlags* bölümünde listelenen değerlerden biri veya birkaçı olabilir.
 
-*üstbilgisine*<br/>
-İşlemek için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi işaretçisi.
+*Str*<br/>
+İşleme için [cstring](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri mantıksal birimlerdeki dizenin genişliği ve yüksekliğidir.
+İşlev başarılı olursa, geri dönüş değeri mantıksal birimlerdeki dize genişliği ve yüksekliğidir.
 
-İşlev başarısız olursa, dönüş değeri sıfırdır.
+İşlev başarısız olursa, geri dönüş değeri sıfırdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [Getkarakteryerleştirmesi](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw)işlevinin işlevselliğine öykünür.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [GetCharacterPlacement](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw)işlevini taklit eder.
 
-##  <a name="getcharabcwidths"></a>CDC:: GetCharABCWidths
+## <a name="cdcgetcharabcwidths"></a><a name="getcharabcwidths"></a>CDC::GetCharABCWidths
 
-Geçerli TrueType yazı tipinde belirtilen aralıktaki ardışık karakterlerin genişliğini alır.
+Geçerli TrueType yazı tipinden belirli bir aralıkta ardışık karakterlerin genişliklerini alır.
 
 ```
 BOOL GetCharABCWidths(
@@ -2761,16 +2761,16 @@ BOOL GetCharABCWidths(
 ### <a name="parameters"></a>Parametreler
 
 *nFirstChar*<br/>
-Karakter genişliklerinin döndürüldüğü geçerli yazı tipindeki karakter aralığındaki ilk karakteri belirtir.
+Karakter genişliklerinin döndürüldettiği geçerli yazı tipinden karakter aralığındaki ilk karakteri belirtir.
 
 *nLastChar*<br/>
-Geçerli yazı tipindeki karakter genişliklerinin döndürüldüğü karakter aralığındaki son karakteri belirtir.
+Karakter genişliklerinin döndürüldettiği geçerli yazı tipinden karakter aralığındaki son karakteri belirtir.
 
 *lpabc*<br/>
-İşlev döndürüldüğünde karakter genişliklerini alan bir [ABC](/windows/win32/api/wingdi/ns-wingdi-abc) yapıları dizisine işaret eder. Bu dizi en az sayıda `ABC` yapısı içermeli ve *nFirstChar* ve *nLastChar* parametreleri tarafından belirtilen aralıkta karakterler olmalıdır.
+İşlev döndüğünde karakter genişliklerini alan bir dizi [ABC](/windows/win32/api/wingdi/ns-wingdi-abc) yapısına işaret eder. Bu dizi, nFirstChar `ABC` ve *nLastChar* parametreleri tarafından belirtilen aralıkta *nLastChar* karakter olduğu kadar en az sayıda yapı içermelidir.
 
 *lpABCF*<br/>
-İşlev döndürüldüğünde karakter genişliklerinin alınacağı bir [abcfloat](/windows/win32/api/wingdi/ns-wingdi-abcfloat) yapıları dizisiyle uygulama tarafından sağlanan bir arabelleğe işaret eder. Bu işlevin döndürdüğü genişlikler IEEE kayan nokta biçimindedir.
+İşlev döndüğünde karakter genişliklerini almak için uygulama tarafından sağlanan arabelleği [abcfloat](/windows/win32/api/wingdi/ns-wingdi-abcfloat) yapıları dizisiyle işaret eder. Bu işlevtarafından döndürülen genişlikler IEEE kayan nokta biçimindedir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2778,21 +2778,21 @@ Geçerli yazı tipindeki karakter genişliklerinin döndürüldüğü karakter a
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genişlikler mantıksal birimlerde döndürülür. Bu işlev yalnızca TrueType yazı tipleriyle başarılı olur.
+Genişlikleri mantıksal birimler halinde döndürülür. Bu işlev yalnızca TrueType yazı tipleriyle başarılı dır.
 
-TrueType tarayıcısı, belirli bir nokta boyutu seçildikten sonra "ABC" karakter aralığı sağlar. "A" aralığı, glifi yerleştirmeden önce geçerli konuma eklenen uzaklığın bir uzaklığı. "B" aralığı, glifin siyah kısmının genişliğidir. "C" aralığı, glifi sağ tarafındaki boşluk için hesaba yönelik geçerli konuma eklenir. Toplam gelişmiş genişlik + B + C tarafından verilir.
+TrueType rasterizer belirli bir nokta boyutu seçildikten sonra "ABC" karakter aralığı sağlar. "A" aralığı, gph'yi yerleştirmeden önce geçerli konuma eklenen uzaklıktır. "B" aralığı, gliflerin siyah kısmının genişliğidir. "C" aralığı, gliflerin sağındaki beyaz boşluğu hesaba katmak için geçerli konuma eklenir. Toplam gelişmiş genişlik A + B + C ile verilir.
 
-`GetCharABCWidths` member işlevi bir karakter için negatif "A" veya "C" genişlikleri aldığında, bu karakter eksik askıda kalıyor veya aşırı askıda kalıyor.
+`GetCharABCWidths` Üye işlev bir karakter için negatif "A" veya "C" genişlikleri aldığında, bu karakter çıkıntıları veya çıkıntıları içerir.
 
-ABC genişliklerini yazı tipi tasarım birimlerine dönüştürmek için bir uygulama, yüksekliğinin ( [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısının `lfHeight` üyesinde belirtildiği gibi), [newtextmetric](/windows/win32/api/wingdi/ns-wingdi-newtextmetricw) yapısının `ntmSizeEM` üyesinde depolanan değere eşit olan bir yazı tipi oluşturur. (`ntmSizeEM` üyesinin değeri, [Enumfontaileleri](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesw) Windows işlevi çağırarak alınabilir.)
+ABC genişliklerini yazı tipi tasarım birimlerine dönüştürmek için, bir uygulamanın `lfHeight` yüksekliği [(LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısının üyesinde belirtildiği gibi) `ntmSizeEM` [NEWTEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-newtextmetricw) yapısının üyesinde depolanan değere eşit olan bir yazı tipi oluşturması gerekir. (Üyenin `ntmSizeEM` değeri [EnumFontFamilies](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesw) Windows işlevini arayarak alınabilir.)
 
-Varsayılan karakterin ABC genişlikleri, şu anda seçili olan yazı tipinin dışında kalan karakterler için kullanılır.
+Varsayılan karakterin ABC genişlikleri, şu anda seçili yazı tipinin aralığının dışında kalan karakterler için kullanılır.
 
 TrueType olmayan yazı tiplerinde karakterlerin genişliklerini almak için, uygulamaların [GetCharWidth](/windows/win32/api/wingdi/nf-wingdi-getcharwidthw) Windows işlevini kullanması gerekir.
 
-##  <a name="getcharabcwidthsi"></a>CDC:: GetCharABCWidthsI
+## <a name="cdcgetcharabcwidthsi"></a><a name="getcharabcwidthsi"></a>CDC::GetCharABCWidthsI
 
-Geçerli TrueType yazı tipinde belirtilen bir aralıktaki ardışık karakter dizinlerinin genişliğini mantıksal birimlerde alır.
+Geçerli TrueType yazı tipinden belirli bir aralıkta ardışık glyph endekslerinin genişliklerini mantıksal birimler halinde alır.
 
 ```
 BOOL GetCharABCWidthsI(
@@ -2804,17 +2804,17 @@ BOOL GetCharABCWidthsI(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hediye IRST*<br/>
-Geçerli yazı tipindeki ardışık karakter dizinlerinin grubundaki ilk glif dizinini belirtir. Bu parametre yalnızca *PGI* parametresi null ise kullanılır.
+*giİlk*<br/>
+Geçerli yazı tipinden ardışık glyph endeksleri grubundaki ilk glyph dizinini belirtir. Bu parametre yalnızca *pgi* parametresi NULL ise kullanılır.
 
-*CGI*<br/>
-Glif dizinlerinin sayısını belirtir.
+*Cgı*<br/>
+Gliflerin sayısını belirtir.
 
-*PGI*<br/>
-Glif dizinleri içeren bir dizi işaretçisi. Değer NULL ise, bunun yerine *GIST* parametresi kullanılır. *CGI* parametresi, bu dizideki glif dizinlerinin sayısını belirtir.
+*Pgı*<br/>
+Glyph endeksleri içeren bir dizi için bir işaretçi. Değer NULL ise, bunun yerine *giFirst* parametresi kullanılır. *CGI* parametresi bu dizideki glyph indekslerinin sayısını belirtir.
 
 *lpabc*<br/>
-Karakter genişliklerini alan bir [ABC](/windows/win32/api/wingdi/ns-wingdi-abc) yapıları dizisine yönelik işaretçi. Bu dizi en az sayıda `ABC` yapısı içermelidir, çünkü *CGI* parametresi tarafından belirtilen glif dizinleri vardır.
+Karakter genişliklerini alan bir dizi [ABC](/windows/win32/api/wingdi/ns-wingdi-abc) yapısını işaretle. Bu *dizi, cgi* `ABC` parametresi tarafından belirtilen glyph indices olduğu kadar en az sayıda yapı içermelidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2822,11 +2822,11 @@ Karakter genişliklerini alan bir [ABC](/windows/win32/api/wingdi/ns-wingdi-abc)
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetCharABCWidthsI](/windows/win32/api/wingdi/nf-wingdi-getcharabcwidthsi)işlevinin işlevselliğine öykünür.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [GetCharABCWidthsI](/windows/win32/api/wingdi/nf-wingdi-getcharabcwidthsi)işlevini taklit eder.
 
-##  <a name="getcharwidth"></a>CDC:: GetCharWidth
+## <a name="cdcgetcharwidth"></a><a name="getcharwidth"></a>CDC::GetCharWidth
 
-`m_hAttribDC`, giriş cihazı bağlamını kullanarak, ardışık bir karakter grubundaki tek tek karakterlerin genişliklerini geçerli yazı tipinde alır.
+Giriş aygıtı bağlamını kullanarak `m_hAttribDC`geçerli yazı tipinden ardışık bir karakter grubundaki tek tek karakterlerin genişliklerini alır.
 
 ```
 BOOL GetCharWidth(
@@ -2843,16 +2843,16 @@ BOOL GetCharWidth(
 ### <a name="parameters"></a>Parametreler
 
 *nFirstChar*<br/>
-Geçerli yazı tipindeki ardışık bir karakter grubundaki ilk karakteri belirtir.
+Geçerli yazı tipinde ardışık bir karakter grubundaki ilk karakteri belirtir.
 
 *nLastChar*<br/>
-Geçerli yazı tipindeki birbirini izleyen bir karakter grubundaki son karakteri belirtir.
+Geçerli yazı tipinde ardışık bir karakter grubundaki son karakteri belirtir.
 
 *lpBuffer*<br/>
 Geçerli yazı tipinde ardışık bir karakter grubu için genişlik değerlerini alacak bir arabelleğe işaret eder.
 
 *lpFloatBuffer*<br/>
-Karakter genişliklerini almak için bir arabelleğe işaret eder. Döndürülen genişlikler 32 bitlik IEEE kayan nokta biçimindedir. (Genişlikler karakterlerin taban çizgisi üzerinde ölçülür.)
+Karakter genişliklerini almak için bir arabellek işaret eder. Döndürülen genişlikler 32 bit IEEE kayan nokta biçimindedir. (Genişlikler karakterlerin taban çizgisi boyunca ölçülür.)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2860,15 +2860,15 @@ Karakter genişliklerini almak için bir arabelleğe işaret eder. Döndürülen
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, *nFirstChar* , ' a ' harfini tanımlarsa ve *nLastChar* ' z ' harfini tanımlıyorsa, işlev tüm küçük harfli karakterlerin genişliklerini alır.
+Örneğin, *nFirstChar* 'a' harfini tanımlarsa ve *nLastChar* 'z' harfini tanımlarsa, işlev tüm küçük karakterlerin genişliklerini alır.
 
-İşlevi, *lpBuffer*tarafından işaret edilen arabellekteki değerleri depolar. Bu arabellek, tüm genişlikleri tutabilecek kadar büyük olmalıdır. Diğer bir deyişle, verilen örnekte en az 26 giriş olmalıdır.
+*İşlev, lpBuffer*tarafından işaret edilen arabellekteki değerleri depolar. Bu arabellek tüm genişlikleri tutmak için yeterince büyük olmalıdır. Diğer bir deyişle, verilen örnekte en az 26 giriş olmalıdır.
 
 Ardışık karakter grubundaki bir karakter belirli bir yazı tipinde yoksa, varsayılan karakterin genişlik değeri atanır.
 
-##  <a name="getcharwidthi"></a>CDC:: GetCharWidthI
+## <a name="cdcgetcharwidthi"></a><a name="getcharwidthi"></a>CDC::GetCharWidthi
 
-Geçerli yazı tipindeki belirli bir aralıktaki ardışık karakter dizinlerinin mantıksal koordinatlara göre genişlerini alır.
+Geçerli yazı tipinden belirli bir aralıkta ardışık glyph endekslerinin genişliklerini mantıksal koordinatlarla alır.
 
 ```
 BOOL GetCharWidthI(
@@ -2880,17 +2880,17 @@ BOOL GetCharWidthI(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hediye IRST*<br/>
-Geçerli yazı tipindeki ardışık karakter dizinlerinin grubundaki ilk glif dizinini belirtir. Bu parametre yalnızca *PGI* parametresi null ise kullanılır.
+*giİlk*<br/>
+Geçerli yazı tipinden ardışık glyph endeksleri grubundaki ilk glyph dizinini belirtir. Bu parametre yalnızca *pgi* parametresi NULL ise kullanılır.
 
-*CGI*<br/>
-Glif dizinlerinin sayısını belirtir.
+*Cgı*<br/>
+Gliflerin sayısını belirtir.
 
-*PGI*<br/>
-Glif dizinleri içeren bir dizi işaretçisi. Değer NULL ise, bunun yerine *GIST* parametresi kullanılır. *CGI* parametresi, bu dizideki glif dizinlerinin sayısını belirtir.
+*Pgı*<br/>
+Glyph endeksleri içeren bir dizi için bir işaretçi. Değer NULL ise, bunun yerine *giFirst* parametresi kullanılır. *CGI* parametresi bu dizideki glyph indekslerinin sayısını belirtir.
 
 *lpBuffer*<br/>
-Genişlikler alan bir arabelleğin işaretçisi.
+Genişlikleri alan bir arabellek için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2898,11 +2898,11 @@ Genişlikler alan bir arabelleğin işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetCharWidthI](/windows/win32/api/wingdi/nf-wingdi-getcharwidthi)işlevinin işlevselliğine öykünür.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [GetCharWidthI](/windows/win32/api/wingdi/nf-wingdi-getcharwidthi)işlevini taklit eder.
 
-##  <a name="getclipbox"></a>CDC:: GetClipBox
+## <a name="cdcgetclipbox"></a><a name="getclipbox"></a>CDC::GetClipBox
 
-Geçerli kırpma sınırının etrafında daha sıkı test sınırlayıcı dikdörtgeninin boyutlarını alır.
+Geçerli kırpma sınırı etrafındaki en sıkı sınırlayıcı dikdörtgenin boyutlarını alır.
 
 ```
 virtual int GetClipBox(LPRECT lpRect) const;
@@ -2910,28 +2910,28 @@ virtual int GetClipBox(LPRECT lpRect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Dikdörtgen boyutlarını alacak olan [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
+*Lprect*<br/>
+Dikdörtgen boyutlarını almak için [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret edin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Kırpma bölgesinin türü. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- COMPLEXREGION kırpma bölgesinde çakışan kenarlıklar vardır.
+- COMPLEXREGION Kırpma bölgesi çakışan kenarlıklara sahiptir.
 
-- HATA cihaz bağlamı geçerli değil.
+- HATA Aygıt bağlamı geçerli değildir.
 
-- NULLREGION kırpma bölgesi boş.
+- NULLREGION Kırpma bölgesi boş.
 
-- Kırpma bölgesinde SIMPLEREGIÇAKıŞAN kenarlık yok.
+- SIMPLEREGION Kırpma bölgesinin çakışan kenarlıkları yoktur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Boyutlar, *lpRect*tarafından işaret edilen arabelleğe kopyalanır.
+Boyutlar *lpRect*tarafından işaret edilen tampon kopyalanır.
 
-##  <a name="getcoloradjustment"></a>CDC:: Getcolorayarlaması
+## <a name="cdcgetcoloradjustment"></a><a name="getcoloradjustment"></a>CDC::GetColorAdjustment
 
-Cihaz bağlamı için renk ayarlama değerlerini alır.
+Aygıt bağlamı için renk ayarlama değerlerini alır.
 
 ```
 BOOL GetColorAdjustment(LPCOLORADJUSTMENT lpColorAdjust) const;
@@ -2939,16 +2939,16 @@ BOOL GetColorAdjustment(LPCOLORADJUSTMENT lpColorAdjust) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpcolorayarla*<br/>
-Renk ayarlama değerlerini almak için [colorayarlamasının](/windows/win32/api/wingdi/ns-wingdi-coloradjustment) veri yapısına işaret eder.
+*lpColorAdjust*<br/>
+Renk ayarlama değerlerini almak için [COLORADJUSTMENT](/windows/win32/api/wingdi/ns-wingdi-coloradjustment) veri yapısına işaret ediyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.
 
-##  <a name="getcurrentbitmap"></a>CDC:: GetCurrentBitmap
+## <a name="cdcgetcurrentbitmap"></a><a name="getcurrentbitmap"></a>CDC::GetCurrentBitmap
 
-Şu anda seçili `CBitmap` nesnesine bir işaretçi döndürür.
+Bir işaretçiyi şu `CBitmap` anda seçili nesneye döndürür.
 
 ```
 CBitmap* GetCurrentBitmap() const;
@@ -2956,15 +2956,15 @@ CBitmap* GetCurrentBitmap() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CBitmap` nesnesine yönelik işaretçi; Aksi takdirde NULL.
+Başarılı olursa `CBitmap` nesneye işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, geçici nesneler döndürebilir.
+Bu üye işlev geçici nesneleri döndürebilir.
 
-##  <a name="getcurrentbrush"></a>CDC:: GetCurrentBrush
+## <a name="cdcgetcurrentbrush"></a><a name="getcurrentbrush"></a>CDC::GetCurrentBrush
 
-Şu anda seçili `CBrush` nesnesine bir işaretçi döndürür.
+Bir işaretçiyi şu `CBrush` anda seçili nesneye döndürür.
 
 ```
 CBrush* GetCurrentBrush() const;
@@ -2972,15 +2972,15 @@ CBrush* GetCurrentBrush() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CBrush` nesnesine yönelik işaretçi; Aksi takdirde NULL.
+Başarılı olursa `CBrush` nesneye işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, geçici nesneler döndürebilir.
+Bu üye işlev geçici nesneleri döndürebilir.
 
-##  <a name="getcurrentfont"></a>CDC:: GetCurrentFont
+## <a name="cdcgetcurrentfont"></a><a name="getcurrentfont"></a>CDC::GetCurrentFont
 
-Şu anda seçili `CFont` nesnesine bir işaretçi döndürür.
+Bir işaretçiyi şu `CFont` anda seçili nesneye döndürür.
 
 ```
 CFont* GetCurrentFont() const;
@@ -2988,15 +2988,15 @@ CFont* GetCurrentFont() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CFont` nesnesine yönelik işaretçi; Aksi takdirde NULL.
+Başarılı olursa `CFont` nesneye işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, geçici nesneler döndürebilir.
+Bu üye işlev geçici nesneleri döndürebilir.
 
-##  <a name="getcurrentpalette"></a>CDC:: GetCurrentPalette
+## <a name="cdcgetcurrentpalette"></a><a name="getcurrentpalette"></a>CDC::GetCurrentPalette
 
-Şu anda seçili `CPalette` nesnesine bir işaretçi döndürür.
+Bir işaretçiyi şu `CPalette` anda seçili nesneye döndürür.
 
 ```
 CPalette* GetCurrentPalette() const;
@@ -3004,15 +3004,15 @@ CPalette* GetCurrentPalette() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CPalette` nesnesine yönelik işaretçi; Aksi takdirde NULL.
+Başarılı olursa `CPalette` nesneye işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, geçici nesneler döndürebilir.
+Bu üye işlev geçici nesneleri döndürebilir.
 
-##  <a name="getcurrentpen"></a>CDC:: GetCurrentPen
+## <a name="cdcgetcurrentpen"></a><a name="getcurrentpen"></a>CDC::GetCurrentPen
 
-Şu anda seçili `CPen` nesnesine bir işaretçi döndürür.
+Bir işaretçiyi şu `CPen` anda seçili nesneye döndürür.
 
 ```
 CPen* GetCurrentPen() const;
@@ -3020,15 +3020,15 @@ CPen* GetCurrentPen() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CPen` nesnesine yönelik işaretçi; Aksi takdirde NULL.
+Başarılı olursa `CPen` nesneye işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, geçici nesneler döndürebilir.
+Bu üye işlev geçici nesneleri döndürebilir.
 
-##  <a name="getcurrentposition"></a>CDC:: GetCurrentPosition
+## <a name="cdcgetcurrentposition"></a><a name="getcurrentposition"></a>CDC::GetCurrentPosition
 
-Geçerli konumu alır (mantıksal koordinatlardaki).
+Geçerli konumu (mantıksal koordinatlarda) alır.
 
 ```
 CPoint GetCurrentPosition() const;
@@ -3036,13 +3036,13 @@ CPoint GetCurrentPosition() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CPoint` nesne olarak geçerli konum.
+Nesne olarak `CPoint` geçerli konum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli konum `MoveTo` member işleviyle ayarlanabilir.
+Geçerli konum `MoveTo` üye işlevi ile ayarlanabilir.
 
-##  <a name="getdcbrushcolor"></a>CDC:: Getdcbrühcolor
+## <a name="cdcgetdcbrushcolor"></a><a name="getdcbrushcolor"></a>CDC::GetDCBrushColor
 
 Geçerli fırça rengini alır.
 
@@ -3052,15 +3052,15 @@ COLORREF GetDCBrushColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri geçerli fırça rengi için [colorref](/windows/win32/gdi/colorref) değeridir.
+İşlev başarılı olursa, iade değeri geçerli fırça renginin [COLORREF](/windows/win32/gdi/colorref) değeridir.
 
-İşlev başarısız olursa, dönüş değeri CLR_INVALID.
+İşlev başarısız olursa, iade değeri CLR_INVALID.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi [Getdcbrühcolor](/windows/win32/api/wingdi/nf-wingdi-getdcbrushcolor)işlevinin işlevselliğine öykünür.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [GetDCBrushColor](/windows/win32/api/wingdi/nf-wingdi-getdcbrushcolor)işlevini taklit eder.
 
-##  <a name="getdcpencolor"></a>CDC:: GetDCPenColor
+## <a name="cdcgetdcpencolor"></a><a name="getdcpencolor"></a>CDC::GetDCPenColor
 
 Geçerli kalem rengini alır.
 
@@ -3070,17 +3070,17 @@ COLORREF GetDCPenColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri geçerli kalem rengi için [colorref](/windows/win32/gdi/colorref) değeridir.
+İşlev başarılı olursa, iade değeri geçerli kalem renginin [COLORREF](/windows/win32/gdi/colorref) değeridir.
 
-İşlev başarısız olursa, dönüş değeri CLR_INVALID.
+İşlev başarısız olursa, iade değeri CLR_INVALID.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetDCPenColor](/windows/win32/api/wingdi/nf-wingdi-getdcpencolor)Win32 işlevini kullanır.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 işlevini [GetDCPenColor](/windows/win32/api/wingdi/nf-wingdi-getdcpencolor)kullanır.
 
-##  <a name="getdevicecaps"></a>CDC:: GetDeviceCaps
+## <a name="cdcgetdevicecaps"></a><a name="getdevicecaps"></a>CDC::GetDeviceCaps
 
-Görüntü cihazı hakkında çok çeşitli cihaza özgü bilgileri alır.
+Görüntü aygıtı hakkında cihaza özgü çok çeşitli bilgileri alır.
 
 ```
 int GetDeviceCaps(int nIndex) const;
@@ -3088,20 +3088,20 @@ int GetDeviceCaps(int nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nDizin*<br/>
-Döndürülecek bilgi türünü belirtir. Değerlerin listesi için Windows SDK bkz. [GetDeviceCaps](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) .
+*Nındex*<br/>
+Döndürülecek bilgi türünü belirtir. Değerler listesi için Windows SDK'daki [GetDeviceCaps'e](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa istenen özelliğin değeri.
+İşlev başarılı olursa istenen yeteneğin değeri.
 
 ### <a name="example"></a>Örnek
 
-  [CPrintDialog:: GetDefaults](../../mfc/reference/cprintdialog-class.md#getdefaults)örneğine bakın.
+  [CPrintDialog örneğine bakın:GetDefaults](../../mfc/reference/cprintdialog-class.md#getdefaults).
 
-##  <a name="getfontdata"></a>CDC:: GetFontData
+## <a name="cdcgetfontdata"></a><a name="getfontdata"></a>CDC::GetFontData
 
-Ölçeklenebilir bir yazı tipi dosyasından yazı tipi ölçümü bilgilerini alır.
+Ölçeklenebilir bir yazı tipi dosyasından yazı tipi metrik bilgilerini alır.
 
 ```
 DWORD GetFontData(
@@ -3114,34 +3114,34 @@ DWORD GetFontData(
 ### <a name="parameters"></a>Parametreler
 
 *dwTable*<br/>
-Döndürülecek ölçüm tablosunun adını belirtir. Bu parametre, Microsoft Corporation tarafından yayımlanan TrueType yazı tipi dosyaları belirtiminde belgelenen ölçüm tablolarından biri olabilir. Bu parametre 0 ise, bilgiler yazı tipi dosyasının başından başlayarak alınır.
+Döndürülecek metrik tablonun adını belirtir. Bu parametre, Microsoft Corporation tarafından yayınlanan TrueType Font Files belirtiminde belgelenen metrik tablolardan biri olabilir. Bu parametre 0 ise, bilgiler yazı tipi dosyasının başlangıcından başlayarak alınır.
 
-*Dwsapmayı*<br/>
-Bilgilerin alınması için kullanılacak tablonun başından itibaren boşluğu belirtir. Bu parametre 0 ise, bilgiler *dwtable* parametresi tarafından belirtilen tablonun başından başlayarak alınır. Bu değer tablonun boyutundan büyük veya buna eşitse `GetFontData` 0 döndürür.
+*dwOffset*<br/>
+Bilgileri almaya başlamak için tablonun başından itibaren mahsup belirtir. Bu parametre 0 ise, *dwTable* parametresi tarafından belirtilen tablonun başından itibaren bilgiler alınır. Bu değer tablonun boyutundan büyük veya eşitse, `GetFontData` 0 döndürür.
 
 *lpData*<br/>
-Yazı tipi bilgilerini alacak bir arabelleğe işaret eder. Bu değer NULL ise, işlev *Dwtable* parametresinde belirtilen yazı tipi verileri için gereken arabelleğin boyutunu döndürür.
+Yazı tipi bilgilerini alacak bir arabelleğe işaret edin. Bu değer NULL ise, işlev *dwTable* parametresinde belirtilen yazı tipi verileri için gereken arabellek boyutunu döndürür.
 
-*cbData*<br/>
-Alınacak bilgilerin uzunluğunu bayt cinsinden belirtir. Bu parametre 0 ise, `GetFontData` *Dwtable* parametresinde belirtilen verilerin boyutunu döndürür.
+*Cbdata*<br/>
+Alınacak bilgilerin uzunluğunu, baytolarak belirtir. Bu parametre 0 `GetFontData` ise, *dwTable* parametresinde belirtilen verilerin boyutunu döndürür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa *lpData* tarafından işaret edilen arabellekte döndürülen bayt sayısını belirtir; Aksi takdirde-1.
+İşlev başarılı olursa *lpData* tarafından işaret edilen arabellekte döndürülen bayt sayısını belirtir; aksi takdirde -1.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alınacak bilgiler, yazı tipi dosyasına bir konum ve döndürülecek bilgilerin uzunluğu belirtilerek tanımlanır.
+Alınacak bilgiler, yazı tipi dosyasına bir ofset ve döndürülecek bilgilerin uzunluğu belirtilerek tanımlanır.
 
-Uygulama bazen bir belge ile bir TrueType yazı tipi kaydetmek için `GetFontData` member işlevini kullanabilir. Bunu yapmak için, uygulama yazı tipinin katıştırılabileceğini belirler ve ardından, *Dwtable*, *Dwkayması*ve *cbData* parametreleri için 0 belirterek tüm yazı tipi dosyasını alır.
+Bir uygulama bazen `GetFontData` bir TrueType yazı tipini belgeyle kaydetmek için üye işlevi kullanabilir. Bunu yapmak için, uygulama yazı tipinin katıştırılmış olup olmadığını belirler ve *dwTable*, *dwOffset*ve *cbData* parametreleri için 0 belirterek, tüm yazı tipi dosyasını alır.
 
-Uygulamalar, [Outlinetextmetric](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) yapısının `otmfsType` üyesini denetleyerek bir yazı tipinin katıştırılamayacağını tespit edebilir. `otmfsType` bit 1 ' i ayarlarsanız, yazı tipi için eklemeye izin verilmez. Bit 1 boş ise, yazı tipi gömülebilir. Bit 2 ayarlanmışsa, katıştırma salt okunurdur.
+Uygulamalar, [ANAHATTEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) yapısının üyesini `otmfsType` denetleyerek bir yazı tipinin katıştırılıp katıştırılamayacağına karar verebilir. Bit 1 `otmfsType` ayarlanırsa, yazı tipi için katıştırmaya izin verilmez. Bit 1 temizse, yazı tipi katıştırılabilir. Bit 2 ayarlanırsa, katıştırma yalnızca okunur.
 
-Bir uygulama, TrueType olmayan bir yazı tipi için bilgi almak üzere bu işlevi kullanmayı denerse `GetFontData` üye işlevi-1 döndürür.
+Bir uygulama TrueType olmayan bir yazı tipi için bilgi almak `GetFontData` için bu işlevi kullanmaya çalışırsa, üye işlev -1 döndürür.
 
-##  <a name="getfontlanguageinfo"></a>CDC:: GetFontLanguageInfo
+## <a name="cdcgetfontlanguageinfo"></a><a name="getfontlanguageinfo"></a>CDC::GetFontLanguageInfo
 
-Belirtilen görüntüleme bağlamı için seçili olan yazı tipiyle ilgili bilgileri döndürür.
+Belirtilen görüntü bağlamı için şu anda seçili yazı tipi hakkındaki bilgileri verir.
 
 ```
 DWORD GetFontLanguageInfo() const;
@@ -3149,15 +3149,15 @@ DWORD GetFontLanguageInfo() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri şu anda seçili olan yazı tipinin özelliklerini tanımlar. Olası değerlerin tamamen listesi için bkz. [GetFontLanguageInfo](/windows/win32/api/wingdi/nf-wingdi-getfontlanguageinfo).
+İade değeri, şu anda seçili yazı tipinin özelliklerini tanımlar. Olası değerlerin tam listesi için [GetFontLanguageInfo'ya](/windows/win32/api/wingdi/nf-wingdi-getfontlanguageinfo)bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklanan [GetFontLanguageInfo](/windows/win32/api/wingdi/nf-wingdi-getfontlanguageinfo)işlevinin işlevselliğine öykünür.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [GetFontLanguageInfo](/windows/win32/api/wingdi/nf-wingdi-getfontlanguageinfo)işlevini taklit eder.
 
-##  <a name="getglyphoutline"></a>CDC:: GetGlyphOutline
+## <a name="cdcgetglyphoutline"></a><a name="getglyphoutline"></a>CDC::GetGlyphOutline
 
-Geçerli yazı tipinde bir ana hat karakteri için ana hat eğrisini veya bit eşlemi alır.
+Geçerli yazı tipindeki anahat karakteri için anahat eğrisini veya bit eşlemi alır.
 
 ```
 DWORD GetGlyphOutline(
@@ -3171,44 +3171,44 @@ DWORD GetGlyphOutline(
 
 ### <a name="parameters"></a>Parametreler
 
-*nChar*<br/>
-Bilgilerin döndürüleceği karakteri belirtir.
+*Nchar*<br/>
+Bilgilerin döndürülecek karakteri belirtir.
 
 *nFormat*<br/>
-İşlevin bilgi döndürmek için olduğu biçimi belirtir. Aşağıdaki değerlerden biri olabilir veya 0:
+İşlevin bilgi döndürecek biçimi belirtir. Aşağıdaki değerlerden biri veya 0 olabilir:
 
-|Değer|Açıklama|
+|Değer|Anlamı|
 |-----------|-------------|
-|GGO_BITMAP|Glif bit eşlemini döndürür. İşlev döndürüldüğünde, *lpBuffer* tarafından işaret edilen arabellek, satırları doubleword sınırları üzerinde başlayan bir piksel başına 1 bit eşlem içerir.|
-|GGO_NATIVE|Cihaz birimleri kullanarak, tarayıcının yerel biçimindeki eğri veri noktalarını döndürür. Bu değer belirtildiğinde, *lpmat2* içinde belirtilen herhangi bir dönüşüm yok sayılır.|
+|GGO_BITMAP|Glyph bit eşlemi döndürür. İşlev döndüğünde, *lpBuffer* tarafından işaret edilen arabellek, satırları çift sözcük sınırları yla başlayan piksel başına 1 bit bit eşlemi içerir.|
+|GGO_NATIVE|Cihaz birimlerini kullanarak eğri veri noktalarını rasterizer'in yerel biçiminde döndürür. Bu değer belirtildiğinde, *lpmat2'de* belirtilen herhangi bir dönüştürme yoksayılır.|
 
-*NFormat* değeri 0 olduğunda, Işlev bir [glyphölçümler](/windows/win32/api/wingdi/ns-wingdi-glyphmetrics) yapısını doldurur ancak glif ana hat verilerini döndürmez.
+*nFormat* değeri 0 olduğunda, işlev bir [GLYPHMETRICS](/windows/win32/api/wingdi/ns-wingdi-glyphmetrics) yapısını doldurur, ancak glyph-anahat verilerini döndürmez.
 
 *lpgm*<br/>
-Karakter hücresindeki glifin yerleşimini açıklayan bir GLYPHÖLÇÜMLER yapısına işaret eder.
+Karakter hücresindeki gliflerin yerleşimini açıklayan bir GLYPHMETRICS yapısına işaret eder.
 
 *cbBuffer*<br/>
-İşlevin, ana hat karakteriyle ilgili bilgileri kopyaladığı arabelleğin boyutunu belirtir. Bu değer 0 ise ve *nFormat* parametresi GGO_BITMAP ya da GGO_NATIVE değerlerdir, işlev arabelleğin gereken boyutunu döndürür.
+İşlevin anahat karakteri hakkındaki bilgileri kopyaladığı arabelleğe boyutunu belirtir. Bu değer 0 ise ve *nFormat* parametresi GGO_BITMAP veya GGO_NATIVE değerleri ise, işlev arabelleğe gerekli boyutu döndürür.
 
 *lpBuffer*<br/>
-İşlevin, ana hat karakteriyle ilgili bilgileri kopyaladığı bir arabelleğe işaret eder. *NFormat* GGO_NATIVE değerini belirtiyorsa, bilgiler TTPOLYGONHEADER ve TTPOLYCURVE yapıları biçiminde kopyalanır. Bu değer NULL ise ve *nFormat* GGO_BITMAP ya da GGO_NATIVE değeri ise, işlev arabelleğin gereken boyutunu döndürür.
+İşlevin anahat karakteri hakkındaki bilgileri kopyaladığı bir arabelleğe işaret eder. *nFormat* GGO_NATIVE değerini belirtirse, bilgiler TTPOLYGONHEADER ve TTPOLYCURVE yapıları şeklinde kopyalanır. Bu değer NULL ise ve *nFormat* GGO_BITMAP veya GGO_NATIVE değeri ise, işlev arabellek gerekli boyutunu döndürür.
 
 *lpmat2*<br/>
-Karakter için bir dönüştürme matrisi içeren bir [mat2](/windows/win32/api/wingdi/ns-wingdi-mat2) yapısına işaret eder. Bu parametre, *nFormat*için GGO_NATIVE değeri BELIRTILDIĞINDE bile null olamaz.
+Karakter için bir dönüşüm matrisi içeren bir [MAT2](/windows/win32/api/wingdi/ns-wingdi-mat2) yapısına işaret. Bu parametre, GGO_NATIVE değeri *nFormat*için belirtilmiş olsa bile NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*CbBuffer* 0 veya *lpBuffer* null ise alınan bilgiler için gereken arabelleğin bayt cinsinden boyutu. Aksi takdirde, işlev başarılı olursa pozitif bir değer veya hata varsa-1.
+*CbBuffer* 0 veya *lpBuffer* NULL ise alınan bilgiler için gerekli arabellek, bayt, boyutu. Aksi takdirde, işlev başarılı olursa pozitif bir değer veya bir hata varsa -1 olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir uygulama, *lpmat2*tarafından işaret edilen yapıda 2 ' ye kadar bir dönüşüm matrisi belirterek bit eşlem biçiminde alınan karakterleri döndürebilir.
+Uygulama, *lpmat2*tarafından işaret edilen yapıda 2'ye 2 dönüşüm matrisi belirterek bitmap biçiminde alınan karakterleri döndürebilir.
 
-Glif anahattı bir dizi kontur olarak döndürülür. Her bir dağılım, bir [TTPOLYGONHEADER](/windows/win32/api/wingdi/ns-wingdi-ttpolygonheader) yapısı tarafından tanımlanır ve bunu anlatmak için gereken birçok `TTPOLYCURVE` yapıyı izler. Tüm noktaları [Pointfx](/windows/win32/api/wingdi/ns-wingdi-pointfx) yapıları olarak döndürülür ve göreli taşımaları değil mutlak konumları temsil eder. [TTPOLYGONHEADER](/windows/win32/api/wingdi/ns-wingdi-ttpolygonheader) yapısının `pfxStart` üyesi tarafından verilen başlangıç noktası, bir konturun ana hattının başladığı noktasıdır. Aşağıdaki [TTPOLYCURVE](/windows/win32/api/wingdi/ns-wingdi-ttpolycurve) yapıları, tek çizgi kayıtları veya eğri kayıtları olabilir. Çoklu çizgi kayıtları bir dizi noktalardır; noktaları arasına çizilen çizgiler, karakterin ana hattını anlatmaktadır. Eğri kayıtları, TrueType tarafından kullanılan karesel eğrileri temsil eder (yani, ikinci derece b-splines).
+Bir glyph anahattı bir dizi kontur olarak döndürülür. Her kontur bir [TTPOLYGONHEADER](/windows/win32/api/wingdi/ns-wingdi-ttpolygonheader) yapısı tarafından `TTPOLYCURVE` tanımlanır ve bunu tanımlamak için gerekli olduğu kadar çok yapı tarafından izlenir. Tüm puanlar [POINTFX](/windows/win32/api/wingdi/ns-wingdi-pointfx) yapıları olarak döndürülür ve göreceli hamleleri değil mutlak pozisyonları temsil eder. `pfxStart` [TTPOLYGONHEADER](/windows/win32/api/wingdi/ns-wingdi-ttpolygonheader) yapısının üyesi tarafından verilen başlangıç noktası, kontur için anahat başlangıcı noktasıdır. Takip eden [TTPOLYCURVE](/windows/win32/api/wingdi/ns-wingdi-ttpolycurve) yapıları çok çizgi kayıtları veya spline kayıtları olabilir. Polyline kayıtları bir dizi noktadır; noktalar arasında çizilen çizgiler karakterin anahatlarını açıklar. Spline kayıtları TrueType tarafından kullanılan kuadratik eğrileri temsil eder (diğer bir şekilde, kuadratik b-splines).
 
-##  <a name="getgraphicsmode"></a>CDC:: GetGraphicsMode
+## <a name="cdcgetgraphicsmode"></a><a name="getgraphicsmode"></a>CDC::GetGraphicsMode
 
-Belirtilen cihaz bağlamı için geçerli grafik modunu alır.
+Belirtilen aygıt bağlamı için geçerli grafik modunu alır.
 
 ```
 int GetGraphicsMode() const;
@@ -3216,19 +3216,19 @@ int GetGraphicsMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda geçerli grafik modunu döndürür. Bu yöntemin döndüreme değerlerinin bir listesi için bkz. [GetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-getgraphicsmode).
+Geçerli grafik modunu başarıyla döndürür. Bu yöntemin döndürebileceği değerlerin listesi için [GetGraphicsMode'a](/windows/win32/api/wingdi/nf-wingdi-getgraphicsmode)bakın.
 
 Hatada 0 döndürür.
 
-Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+Genişletilmiş hata bilgilerini almak için [GetLastError'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)arayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [GetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-getgraphicsmode)Windows GDI işlevini sarmalanmış.
+Bu yöntem, Windows GDI işlevini [GetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-getgraphicsmode)sarar.
 
-##  <a name="gethalftonebrush"></a>CDC:: GetHalftoneBrush
+## <a name="cdcgethalftonebrush"></a><a name="gethalftonebrush"></a>CDC::GetHalftoneBrush
 
-Bir yarı ton fırçası almak için bu üye işlevini çağırın.
+Bir yarı ton fırçaalmak için bu üye işlevi arayın.
 
 ```
 static CBrush* PASCAL GetHalftoneBrush();
@@ -3236,17 +3236,17 @@ static CBrush* PASCAL GetHalftoneBrush();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CBrush` nesnesine yönelik bir işaretçi; Aksi takdirde NULL.
+Başarılı olursa `CBrush` nesneye işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir yarı ton fırçası, titremeli deseni oluşturmak için alternatif ön plan ve arka plan rengi olan pikselleri gösterir. Aşağıda, bir yarı ton fırçası tarafından oluşturulan bir titremeli deseninin örneği verilmiştir.
+Yarı ton fırçası, dithered deseni oluşturmak için dönüşümlü olarak ön plan ve arka plan renkleri olan pikselleri gösterir. Aşağıda, yarı ton fırçası tarafından oluşturulan bir desenin bir örneği verilmiştir.
 
-![Bir titremeli Pen darbesinin ayrıntısı](../../mfc/reference/media/vc318s1.gif "Bir titremeli Pen darbesinin ayrıntısı")
+![Dithered kalem konturunun ayrıntıları](../../mfc/reference/media/vc318s1.gif "Dithered kalem konturunun ayrıntıları")
 
-##  <a name="getkerningpairs"></a>CDC:: GetKerningPairs
+## <a name="cdcgetkerningpairs"></a><a name="getkerningpairs"></a>CDC::GetKerningPairs
 
-Belirtilen cihaz bağlamında seçili olan yazı tipi için karakter karakter aralığı çiftlerini alır.
+Belirtilen aygıt bağlamında şu anda seçili olan yazı tipi için karakter çekirdek çiftlerini alır.
 
 ```
 int GetKerningPairs(
@@ -3256,19 +3256,19 @@ int GetKerningPairs(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nçiftler*<br/>
-*Lpkronnpair*tarafından Işaret edilen [kerningpair](/windows/win32/api/wingdi/ns-wingdi-kerningpair) yapılarının sayısını belirtir. İşlev, *nPairs*tarafından belirtilenden daha fazla karakter aralığı çifti kopyalamacaktır.
+*nPairs*<br/>
+*LPKrnpair*tarafından işaret edilen [KERNINGPAIR](/windows/win32/api/wingdi/ns-wingdi-kerningpair) yapılarının sayısını belirtir. *İşlev, nPairs*tarafından belirtilenden daha fazla kerning çifti kopyalamaz.
 
-*lpkronnpair*<br/>
-İşlev döndürüldüğünde karakter aralığı çiftlerini alan `KERNINGPAIR` yapısı dizisine işaret eder. Bu dizi en az *nPairs*tarafından belirtilen sayıda yapıya sahip olmalıdır. Bu parametre NULL ise, işlev yazı tipi için karakter aralığı çiftinin toplam sayısını döndürür.
+*lpkrnpair*<br/>
+İşlev döndüğünde `KERNINGPAIR` kerning çiftlerini alan bir dizi yapıyı işaret eder. Bu dizi *nPairs*tarafından belirtilen en az sayıda yapı içermelidir. Bu parametre NULL ise, işlev yazı tipi için toplam kerning çifti sayısını döndürür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, alınan karakter çiftinin sayısını veya yazı tipindeki toplam karakter aralığı çiftinin sayısını belirtir. İşlev başarısız olursa veya yazı tipi için bir karakter aralığı çifti yoksa sıfır döndürülür.
+İşlev başarılı olursa, alınan kerning çiftlerinin sayısını veya yazı tipindeki toplam kerning çifti sayısını belirtir. İşlev başarısız olursa veya yazı tipi için kerning çifti yoksa sıfır döndürülür.
 
-##  <a name="getlayout"></a>CDC:: GetLayout
+## <a name="cdcgetlayout"></a><a name="getlayout"></a>CDC::GetLayout
 
-Yazıcı veya dosya dosyası gibi bir cihaz bağlamı için metin ve grafiklerin yerleşimini öğrenmek için bu üye işlevini çağırın.
+Yazıcı veya metadosya gibi bir aygıt bağlamının metin ve grafik düzenini belirlemek için bu üye işlevi arayın.
 
 ```
 DWORD GetLayout() const;
@@ -3276,13 +3276,13 @@ DWORD GetLayout() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, geçerli cihaz bağlamı için Düzen bayrakları. Aksi takdirde, GDI_ERROR. Genişletilmiş hata bilgileri için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın. Düzen bayraklarının bir listesi için bkz. [CDC:: SetLayout](#setlayout).
+Başarılı olursa, geçerli aygıt bağlamı için düzen bayraklar. Aksi takdirde, GDI_ERROR. Genişletilmiş hata bilgileri için [GetLastError'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)arayın. Düzen bayraklarının listesi için [bkz: CDC::SetLayout.](#setlayout)
 
 ### <a name="remarks"></a>Açıklamalar
 
 Varsayılan düzen soldan sağa doğru.
 
-##  <a name="getmapmode"></a>CDC:: GetMapMode
+## <a name="cdcgetmapmode"></a><a name="getmapmode"></a>CDC::GetMapMode
 
 Geçerli eşleme modunu alır.
 
@@ -3292,18 +3292,18 @@ int GetMapMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşleme modu.
+Haritalama modu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşleme modlarının bir açıklaması için `SetMapMode` üye işlevine bakın.
+Eşleme modlarının açıklaması için üye `SetMapMode` işlevine bakın.
 
 > [!NOTE]
->  DC 'yi sağdan sola düzenine dönüştürmek için [SetLayout](#setlayout) ' ı çağırırsanız, `SetLayout` eşleme modunu otomatik olarak MM_ISOTROPIC olarak değiştirir. Sonuç olarak, `GetMapMode` sonraki tüm çağrı MM_ISOTROPIC döndürür.
+> DC'yi sağdan sola düzene değiştirmek için `SetLayout` [SetLayout'ı](#setlayout) çağırırsanız, eşleme modunu otomatik olarak MM_ISOTROPIC olarak değiştirir. Sonuç olarak, sonraki `GetMapMode` herhangi bir çağrı MM_ISOTROPIC geri dönecektir.
 
-##  <a name="getmiterlimit"></a>CDC:: Getmıterlimit
+## <a name="cdcgetmiterlimit"></a><a name="getmiterlimit"></a>CDC::GetMiterLimit
 
-Cihaz bağlamı için gönye sınırını döndürür.
+Aygıt bağlamı için gönye sınırını döndürür.
 
 ```
 float GetMiterLimit() const;
@@ -3315,9 +3315,9 @@ float GetMiterLimit() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gönye birleştirmeleri olan geometrik çizgiler çizilirken, Gönye sınırı kullanılır.
+Gönye sınırı, gönye birleşimleri olan geometrik çizgiler çizilirken kullanılır.
 
-##  <a name="getnearestcolor"></a>CDC:: GetNearestColor
+## <a name="cdcgetnearestcolor"></a><a name="getnearestcolor"></a>CDC::GetNearestColor
 
 Belirtilen mantıksal renkle en iyi eşleşen düz rengi döndürür.
 
@@ -3328,19 +3328,19 @@ COLORREF GetNearestColor(COLORREF crColor) const;
 ### <a name="parameters"></a>Parametreler
 
 *crColor*<br/>
-Eşleştirilecek rengi belirtir.
+Eşleşecek rengi belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Cihazın temsil ettiği *crColor* değerine en yakın düz rengi TANıMLAYAN bir RGB (kırmızı, yeşil, mavi) renk değeri.
+Aygıtın temsil edebileceği *crColor* değerine en yakın düz rengi tanımlayan bir RGB (kırmızı, yeşil, mavi) renk değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Verilen cihaz bu rengi temsil edebiliyor olmalıdır.
+Verilen aygıt bu rengi temsil edebilmelidir.
 
-##  <a name="getoutlinetextmetrics"></a>CDC:: Getoutlinetextölçümleri
+## <a name="cdcgetoutlinetextmetrics"></a><a name="getoutlinetextmetrics"></a>CDC::GetOutlineTextMetrics
 
-TrueType yazı tiplerinin ölçüm bilgilerini alır.
+TrueType yazı tipleri için metrik bilgileri alır.
 
 ```
 UINT GetOutlineTextMetrics(
@@ -3351,13 +3351,13 @@ UINT GetOutlineTextMetrics(
 ### <a name="parameters"></a>Parametreler
 
 *lpotm*<br/>
-Bir [Outlinetextmetric](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) yapıları dizisine işaret eder. Bu parametre NULL ise, işlev alınan ölçüm verileri için gereken arabelleğin boyutunu döndürür.
+Bir dizi [ANAHATTEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) yapısına işaret edilir. Bu parametre NULL ise, işlev alınan metrik veriler için gereken arabellek boyutunu döndürür.
 
-*cbData*<br/>
-Bilgilerin döndürüldüğü arabelleğin boyutunu bayt cinsinden belirtir.
+*Cbdata*<br/>
+Bilgilerin döndürüldettiği arabelleğe baytlar halinde boyutunu belirtir.
 
 *lpotm*<br/>
-`OUTLINETEXTMETRIC` yapısına işaret eder. Bu parametre NULL ise, işlev alınan ölçüm bilgileri için gereken arabelleğin boyutunu döndürür.
+Bir `OUTLINETEXTMETRIC` yapıyı işaret edin. Bu parametre NULL ise, işlev alınan metrik bilgiler için gereken arabellek boyutunu döndürür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3365,11 +3365,11 @@ Bilgilerin döndürüldüğü arabelleğin boyutunu bayt cinsinden belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Outlinetextmetric](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) yapısı, bir [textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) yapısı dahil olmak üzere TrueType biçimiyle birlikte sunulan yazı tipi ölçüm bilgilerinin çoğunu içerir. `OUTLINETEXTMETRIC` yapısının son dört üyesi, dizelerin işaretçileridir. Uygulamalar, diğer Üyeler için gereken alana ek olarak bu dizeler için alan ayırmalıdır. Dizelerin boyutuyla ilgili sistem tarafından uygulanan sınır olmadığından, bellek ayırma en basit yöntemi, `GetOutlineTextMetrics` işlevine yapılan ilk çağrıda *lpotm* için null belirterek gereken boyutu almadır.
+[ANAHATTEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) yapısı, [TEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-textmetricw) yapısı da dahil olmak üzere TrueType biçimiyle sağlanan yazı tipi metrik bilgilerinin çoğunu içerir. Yapının `OUTLINETEXTMETRIC` son dört üyesi dizeleri işaretçilervardır. Uygulamalar, diğer üyeler için gerekli olan alana ek olarak bu dizeleri için alan ayırmalıdır. Dizelerin boyutuiçin sistem dayatılan bir sınır olmadığından, bellek ayırmanın en basit `GetOutlineTextMetrics` yöntemi, işleve yapılan ilk çağrıda *lpotm* için NULL belirterek gerekli boyutu almaktır.
 
-##  <a name="getoutputcharwidth"></a>CDC:: GetOutputCharWidth
+## <a name="cdcgetoutputcharwidth"></a><a name="getoutputcharwidth"></a>CDC::GetOutputCharWidth
 
-, `m_hDC`çıkış cihazı bağlamını kullanır ve geçerli yazı tipindeki ardışık bir karakter grubundaki tek tek karakterlerin genişliklerini alır.
+Çıktı aygıtı bağlamını `m_hDC`kullanır ve geçerli yazı tipinden ardışık bir karakter grubundaki tek tek karakterlerin genişliklerini alır.
 
 ```
 BOOL GetOutputCharWidth(
@@ -3381,10 +3381,10 @@ BOOL GetOutputCharWidth(
 ### <a name="parameters"></a>Parametreler
 
 *nFirstChar*<br/>
-Geçerli yazı tipindeki ardışık bir karakter grubundaki ilk karakteri belirtir.
+Geçerli yazı tipinde ardışık bir karakter grubundaki ilk karakteri belirtir.
 
 *nLastChar*<br/>
-Geçerli yazı tipindeki birbirini izleyen bir karakter grubundaki son karakteri belirtir.
+Geçerli yazı tipinde ardışık bir karakter grubundaki son karakteri belirtir.
 
 *lpBuffer*<br/>
 Geçerli yazı tipinde ardışık bir karakter grubu için genişlik değerlerini alacak bir arabelleğe işaret eder.
@@ -3395,15 +3395,15 @@ Geçerli yazı tipinde ardışık bir karakter grubu için genişlik değerlerin
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, *nFirstChar* , ' a ' harfini tanımlarsa ve *nLastChar* ' z ' harfini tanımlıyorsa, işlev tüm küçük harfli karakterlerin genişliklerini alır.
+Örneğin, *nFirstChar* 'a' harfini tanımlarsa ve *nLastChar* 'z' harfini tanımlarsa, işlev tüm küçük karakterlerin genişliklerini alır.
 
-İşlevi, *lpBuffer*tarafından işaret edilen arabellekteki değerleri depolar. Bu arabellek, tüm genişlikleri tutabilecek kadar büyük olmalıdır; diğer bir deyişle, verilen örnekte en az 26 giriş olmalıdır.
+*İşlev, lpBuffer*tarafından işaret edilen arabellekteki değerleri depolar. Bu arabellek tüm genişlikleri tutmak için yeterince büyük olmalıdır; diğer bir deyişle, verilen örnekte en az 26 giriş olmalıdır.
 
 Ardışık karakter grubundaki bir karakter belirli bir yazı tipinde yoksa, varsayılan karakterin genişlik değeri atanır.
 
-##  <a name="getoutputtabbedtextextent"></a>CDC:: GetOutputTabbedTextExtent
+## <a name="cdcgetoutputtabbedtextextent"></a><a name="getoutputtabbedtextextent"></a>CDC::GetOutputTabbedTextExtent
 
-[M_hDC](#m_hdc), çıkış cihazı bağlamını kullanarak bir karakter dizesinin genişlik ve yüksekliğini hesaplamak için bu üye işlevini çağırın.
+[m_hDC,](#m_hdc)çıkış aygıtı bağlamını kullanarak bir karakter dizesinin genişliğini ve yüksekliğini hesaplamak için bu üye işlevi arayın.
 
 ```
 CSize GetOutputTabbedTextExtent(
@@ -3421,37 +3421,37 @@ CSize GetOutputTabbedTextExtent(
 ### <a name="parameters"></a>Parametreler
 
 *lpszString*<br/>
-Ölçülecek bir karakter dizesini işaret eder. Ayrıca, bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
+Ölçülecek bir karakter dizesini işaret edin. Ayrıca bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
 
-*nCount*<br/>
-*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
+*nSayısı*<br/>
+*LpszString*tarafından işaret [edilen dize uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
 
 *nTabPositions*<br/>
-Dizideki, *lpnTabStopPositions*tarafından işaret edilen sekme durağı konumlarının sayısını belirtir.
+*lpnTabStopPositions*tarafından işaret edilen dizideki sekme durdurma pozisyonlarının sayısını belirtir.
 
 *lpnTabStopPositions*<br/>
-Mantıksal birimlerde sekme durağı konumlarını içeren bir tamsayı dizisine işaret eder. Sekme duraklarının artan sırada sıralanması gerekir; en küçük x değeri dizideki ilk öğe olmalıdır. Geri sekmelere izin verilmez.
+Mantıksal birimlerdeki sekme durağı konumlarını içeren bir dizi arayıişaret eder. Sekme durakları artan sırayla sıralanmalıdır; en küçük x değeri dizideki ilk öğe olmalıdır. Geri sekmelere izin verilmez.
 
-*üstbilgisine*<br/>
-Ölçülecek belirtilen karakterleri içeren `CString` nesnesi.
+*Str*<br/>
+Ölçülecek belirtilen karakterleri içeren bir `CString` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesindeki dizenin boyutları (mantıksal birimler cinsinden).
+[CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesindeki dize (mantıksal birimler halinde) boyutları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize bir veya daha fazla sekme karakteri içeriyorsa, dizenin genişliği *lpnTabStopPositions*tarafından belirtilen sekme duraklarını temel alır. İşlev, dizenin boyutlarını hesaplamak için seçili olan yazı tipini kullanır.
+Dize bir veya daha fazla sekme karakteri içeriyorsa, dize genişliği *lpnTabStopPositions*tarafından belirtilen sekme durakları dayanmaktadır. İşlev, dize boyutlarını hesaplamak için şu anda seçili yazı tipini kullanır.
 
-Geçerli kırpma bölgesi `GetOutputTabbedTextExtent` işlevi tarafından döndürülen genişliği ve yüksekliği kaydırmıyor.
+Geçerli kırpma `GetOutputTabbedTextExtent` bölgesi, işlev tarafından döndürülen genişlik ve yüksekliği dengelemez.
 
-Bazı cihazlar normal hücre dizilerine karakter yerleştirmediğinden (yani karakterlerin karakter aralığı varsa), bir dizedeki karakterlerin kapsamlarının toplamı, dizenin kapsamına eşit olmayabilir.
+Bazı aygıtlar karakterleri normal hücre dizilerine yerleştirmediğinden (diğer bir deyişle, karakterleri kern), bir dizedeki karakterlerin kapsamlarının toplamı dize derecesine eşit olmayabilir.
 
-*NTabPositions* 0 Ise ve *lpnTabStopPositions* null ise, sekmeler sekiz ortalama karakter genişliğine genişletilir. *NTabPositions* 1 ise, sekme durağı, dizideki ilk değer tarafından belirtilen uzaklığa göre, *lpnTabStopPositions* işaret eder. *LpnTabStopPositions* tek bir değerden daha fazla işaret ediyorsa, dizideki her bir değer Için *nTabPositions*tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır.
+*nTabPositions* 0 ve *lpnTabStopPositions* NULL ise sekmeler sekiz ortalama karakter genişlikleri genişletilir. *nTabPositions* 1 ise, sekme durakları *lpnTabStopPositions* noktaları dizideki ilk değer tarafından belirtilen mesafe ile ayrılır. *LPnTabStopPositions* tek bir değerden daha fazlasına işaret ederse, dizideki her değer için *nTabPositions*tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır.
 
-##  <a name="getoutputtextextent"></a>CDC:: GetOutputTextExtent
+## <a name="cdcgetoutputtextextent"></a><a name="getoutputtextextent"></a>CDC::GetOutputTextExtent
 
-Bu üye işlevi, çıkış cihazı bağlamını kullanmak için çağırın, [m_hDC](#m_hdc)ve geçerli yazı tipini kullanarak bir metin satırının genişliğini ve yüksekliğini hesaplar.
+Çıkış aygıtı bağlamını kullanmak için bu üye işlevi arayın, [m_hDC](#m_hdc)ve geçerli yazı tipini kullanarak bir metin satırının genişliğini ve yüksekliğini hesaplayın.
 
 ```
 CSize GetOutputTextExtent(
@@ -3464,27 +3464,27 @@ CSize GetOutputTextExtent(const CString& str) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpszString*<br/>
-Bir karakter dizesini işaret eder. Ayrıca, bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
+Bir karakter dizisini işaret eder. Ayrıca bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
 
-*nCount*<br/>
-*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
+*nSayısı*<br/>
+*LpszString*tarafından işaret [edilen dize uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
 
-*üstbilgisine*<br/>
-Ölçülecek belirtilen karakterleri içeren `CString` nesnesi.
+*Str*<br/>
+Ölçülecek belirtilen karakterleri içeren bir `CString` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesinde döndürülen dize (mantıksal birimler cinsinden) boyutları.
+CSize nesnesinde döndürülen dize boyutları [CSize](../../atl-mfc-shared/reference/csize-class.md) (mantıksal birimlerde).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli kırpma bölgesi `GetOutputTextExtent`tarafından döndürülen genişliği ve yüksekliği etkilemez.
+Geçerli kırpma bölgesi tarafından `GetOutputTextExtent`döndürülen genişlik ve yüksekliği etkilemez.
 
-Bazı cihazlar normal hücre dizilerine karakter yerleştirmediğinden (yani, karakter aralığı yerine geçen), bir dizedeki karakterlerin kapsamlarının toplamı, dizenin kapsamına eşit olmayabilir.
+Bazı aygıtlar karakterleri normal hücre dizilerine yerleştirmediğinden (diğer bir deyişle, kerning yaparlar), bir dizedeki karakterlerin kapsamlarının toplamı dize nin derecesine eşit olmayabilir.
 
-##  <a name="getoutputtextmetrics"></a>CDC:: Getoutputtextölçümleri
+## <a name="cdcgetoutputtextmetrics"></a><a name="getoutputtextmetrics"></a>CDC::GetOutputTextMetrics
 
-`m_hDC`, çıkış cihazı bağlamını kullanarak geçerli yazı tipinin ölçümlerini alır.
+Çıktı aygıtı bağlamını kullanarak `m_hDC`geçerli yazı tipinin ölçümlerini alır.
 
 ```
 BOOL GetOutputTextMetrics(LPTEXTMETRIC lpMetrics) const;
@@ -3492,16 +3492,16 @@ BOOL GetOutputTextMetrics(LPTEXTMETRIC lpMetrics) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpmetrikleri*<br/>
-Ölçümleri alan [Textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) yapısına işaret eder.
+*lpMetrics*<br/>
+Ölçümleri alan [TEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-textmetricw) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.
 
-##  <a name="getpath"></a>CDC:: GetPath
+## <a name="cdcgetpath"></a><a name="getpath"></a>CDC::GetPath
 
-Satır bitiş noktaları ve cihaz bağlamına seçilen yolda bulunan eğrilerin denetim noktaları tanımlayan koordinatları alır.
+Aygıt bağlamında seçilen yolda bulunan eğrilerin uç noktalarını ve eğrilerin denetim noktalarını tanımlayan koordinatları alır.
 
 ```
 int GetPath(
@@ -3512,42 +3512,42 @@ int GetPath(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-Çizgi uç noktaları ve eğri denetim noktalarının yerleştirildiği bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapıları veya `CPoint` nesneleri dizisine işaret eder.
+*Lppoints*<br/>
+Çizgi uç noktalarının ve `CPoint` eğri kontrol noktalarının yerleştirildiği [point](/windows/win32/api/windef/ns-windef-point) veri yapıları veya nesneleri dizisini işaret eder.
 
 *lpTypes*<br/>
-Köşe türlerinin yerleştirildiği bir bayt dizisine işaret eder. Değerler aşağıdakilerden biridir:
+Tepe noktası türlerinin yerleştirildiği bir dizi baytı işaret eder. Değerler aşağıdakilerden biridir:
 
-- PT_MOVETO, *Lppunto* içindeki karşılık gelen noktanın ayrık bir şekilde başlayacağını belirtir.
+- PT_MOVETO *LPPoints'te* karşılık gelen noktanın ayrıbir rakam başlattığını belirtir.
 
-- PT_LINETO, önceki noktanın ve *lpPoints* içindeki karşılık gelen noktanın bir satırın uç noktaları olduğunu belirtir.
+- PT_LINETO Önceki nokta nın ve *lpPoints'teki* karşılık gelen noktanın bir satırın bitiş noktaları olduğunu belirtir.
 
-- PT_BEZIERTO, *Lppunto* içindeki karşılık gelen noktanın bir Bzier eğrisi için bir denetim noktası veya bitiş noktası olduğunu belirtir.
+- PT_BEZIERTO *LPPoints'te* karşılık gelen noktanın Bzier eğrisi için bir kontrol noktası veya bitiş noktası olduğunu belirtir.
 
-PT_BEZIERTO türler her zaman üç kümede oluşur. Yolun hemen önünde yer aldığı nokta, Bzier eğrisi için başlangıç noktasını tanımlar. İlk iki PT_BEZIERTO noktası denetim noktalarıdır ve üçüncü PT_BEZIERTO noktası bitiş noktasıdır (sabit kodlanmış ise).
+PT_BEZIERTO türleri her zaman üç kümeler halinde oluşur. Kendilerinden hemen önceki yoldaki nokta, Bzier eğrisinin başlangıç noktasını tanımlar. İlk iki PT_BEZIERTO noktası kontrol noktaları, üçüncü PT_BEZIERTO noktası ise bitiş noktasıdır (sabit kodlanmışsa).
 
-   Bir PT_LINETO veya PT_BEZIERTO türü aşağıdaki bayrağıyla birleştirilebilir (bit düzeyinde işleç **veya**), karşılık gelen noktanın bir şekildeki son nokta olduğunu ve şeklin kapatılacağını göstermek için kullanılabilir:
+   Bir PT_LINETO veya PT_BEZIERTO türü aşağıdaki bayrakla (bitwise işleci **VEYA**kullanılarak) ilgili noktanın bir rakamdaki son nokta olduğunu ve şeklin kapatılması gerektiğini belirtmek için birleştirilebilir:
 
-- PT_CLOSEFIGURE, ilgili çizgi veya eğri çizildikten sonra şeklin otomatik olarak kapatıldığını belirtir. Şekil, satır veya eğri uç noktasından son PT_MOVETO karşılık gelen noktaya bir çizgi çizerek kapalıdır.
+- PT_CLOSEFIGURE, ilgili çizgi veya eğri çizildikten sonra şeklin otomatik olarak kapatılır olduğunu belirtir. Şekil, çizgi veya eğri bitiş noktasından son PT_MOVETO karşılık gelen noktaya bir çizgi çizilerek kapatılır.
 
-*nCount*<br/>
-*LpPoints* dizisine yerleştirilebilecek olan [nokta](/windows/win32/api/windef/ns-windef-point) veri yapılarının toplam sayısını belirtir. Bu değer, *lpTypes* dizisine yerleştirilebilecek bayt sayısıyla aynı olmalıdır.
+*nSayısı*<br/>
+*LPPoints* dizisine yerleştirilebilir [POINT](/windows/win32/api/windef/ns-windef-point) veri yapıları toplam sayısını belirtir. Bu *değer, lpTypes* dizisine yerleştirilebilir bayt sayısı ile aynı olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*NCount* parametresi sıfır değilse, numaralandırılan noktaların sayısı. Eğer *nCount* 0 ise, yoldaki toplam noktası sayısı (ve `GetPath` arabelleğe hiçbir şey yazmadığını). *NCount* değeri sıfır değilse ve yoldaki noktaların sayısından küçükse, dönüş değeri-1 ' dir.
+*nCount* parametresi sıfır değilse, numaralandırılmış nokta sayısı. *nCount* 0 ise, yoldaki toplam nokta sayısı `GetPath` (ve arabelleklere hiçbir şey yazmaz). *nCount* sıfır değilse ve yoldaki nokta sayısından azsa, iade değeri -1'dir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Cihaz bağlamı kapalı bir yol içermelidir. Yolun noktaları mantıksal koordinatlarda döndürülür. Noktaları cihaz koordinatlarındaki yolda depolanır, bu nedenle `GetPath` geçerli dönüştürmenin tersini kullanarak cihaz koordinatlarından mantıksal koordinatlara kadar olan noktaları değiştirir. `FlattenPath` member işlevi, yoldaki tüm eğrileri çizgi segmentlerine dönüştürmek için `GetPath`önce çağrılabilir.
+Aygıt bağlamı kapalı bir yol içermelidir. Yolun noktaları mantıksal koordinatlar halinde döndürülür. Noktalar aygıt koordinatlarında yolda depolanır, `GetPath` bu nedenle geçerli dönüşümün tersini kullanarak aygıt koordinatlarından mantıksal koordinatlara noktaları değiştirir. Üye `FlattenPath` işlev, yoldaki `GetPath`tüm eğrileri çizgi segmentlerine dönüştürmek için önce çağrılabilir.
 
 ### <a name="example"></a>Örnek
 
-  [CDC:: BeginPath](#beginpath)örneğine bakın.
+  CDC örneğine [bakın::BeginPath](#beginpath).
 
-##  <a name="getpixel"></a>CDC:: GetPixel
+## <a name="cdcgetpixel"></a><a name="getpixel"></a>CDC::GetPixel
 
-*X* ve *y*tarafından belirtilen noktada pikselin RGB renk değerini alır.
+*Pikselin* RGB renk değerini x ve *y*tarafından belirtilen noktada alır.
 
 ```
 COLORREF GetPixel(
@@ -3559,30 +3559,30 @@ COLORREF GetPixel(POINT point) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-İncelenme noktasının mantıksal x koordinatını belirtir.
+*X*<br/>
+İncelenecek noktanın mantıksal x-koordinatını belirtir.
 
-*Iz*<br/>
-İncelenme noktasının mantıksal y koordinatını belirtir.
+*Y*<br/>
+İncelenecek noktanın mantıksal y-koordinatını belirtir.
 
-*seçeneğinin*<br/>
-İncelenme noktasının mantıksal x ve y koordinatlarını belirtir.
+*Nokta*<br/>
+İncelenecek noktanın mantıksal x- ve y-koordinatlarını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlevin iki sürümü için, verilen noktanın rengi için bir RGB renk değeri. Koordinatlar kırpma bölgesinde bir nokta belirtmediğinden,-1 ' dir.
+İşlevin her iki sürümü için, verilen noktanın rengi için bir RGB renk değeri. Koordinatlar kırpma bölgesinde bir nokta belirtmiyorsa -1'dir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nokta, kırpma bölgesinde olmalıdır. Nokta kırpma bölgesinde değilse, işlevin etkisi yoktur ve-1 döndürür.
+Nokta kırpma bölgesinde olmalıdır. Nokta kırpma bölgesinde değilse, işlevin etkisi yoktur ve -1 döndürür.
 
-Tüm cihazlar `GetPixel` işlevini desteklemez. Daha fazla bilgi için bkz. [GetDeviceCaps](#getdevicecaps) üye işlevinin altındaki RC_BITBLT raster özelliği.
+Tüm aygıtlar `GetPixel` işlevi desteklemez. Daha fazla bilgi için [GetDeviceCaps](#getdevicecaps) üye işlevi altında RC_BITBLT raster özelliğine bakın.
 
-`GetPixel` member işlevinin iki biçimi vardır. Birincisi iki koordinat değeri alır; İkincisi, bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını veya bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini alır.
+Üye `GetPixel` işlevin iki biçimi vardır. İlk iki koordinat değerleri alır; ikinci bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi alır.
 
-##  <a name="getpolyfillmode"></a>CDC:: GetPolyFillMode
+## <a name="cdcgetpolyfillmode"></a><a name="getpolyfillmode"></a>CDC::GetPolyFillMode
 
-Geçerli Çokgen doldurma modunu alır.
+Geçerli çokgen dolum modunu alır.
 
 ```
 int GetPolyFillMode() const;
@@ -3590,13 +3590,13 @@ int GetPolyFillMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, geçerli Çokgen dolgulu mod, ALTERNATIF veya SARGı.
+İşlev başarılı olursa geçerli çokgen dolu mod, ALTERNATİf veya SARMA.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çokgen doldurma modlarının bir açıklaması için `SetPolyFillMode` üye işlevine bakın.
+Çokgen `SetPolyFillMode` doldurma modlarının açıklaması için üye işlevine bakın.
 
-##  <a name="getrop2"></a>CDC:: GetROP2
+## <a name="cdcgetrop2"></a><a name="getrop2"></a>CDC::GetROP2
 
 Geçerli çizim modunu alır.
 
@@ -3606,15 +3606,15 @@ int GetROP2() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çizim modu. Çizim modu değerlerinin bir listesi için `SetROP2` üye işlevine bakın.
+Çizim modu. Çizim modu değerlerinin listesi için `SetROP2` üye işlevine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çizim modu, kalemin renklerinin ve Dolgulu nesnelerin iç kısmının, görüntüleme yüzeyinde zaten bulunan renkle nasıl birleştirildiğini belirtir.
+Çizim modu, kalemin renklerinin ve dolu nesnelerin iç renklerinin ekran yüzeyindeki renkle nasıl birleştirildiğinden ilerler.
 
-##  <a name="getsafehdc"></a>CDC:: GetSafeHdc
+## <a name="cdcgetsafehdc"></a><a name="getsafehdc"></a>CDC::GetSafeHdc
 
-Çıkış cihazı bağlamını [m_hDC](#m_hdc)almak için bu üye işlevi çağırın.
+çıkış aygıtı bağlamına [m_hDC](#m_hdc)almak için bu üye işlevi arayın.
 
 ```
 HDC GetSafeHdc() const;
@@ -3622,15 +3622,15 @@ HDC GetSafeHdc() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir cihaz bağlamı tanıtıcısı.
+Aygıt bağlam tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi null işaretçilerle de çalışır.
+Bu üye işlev de null işaretçileri ile çalışır.
 
-##  <a name="getstretchbltmode"></a>CDC:: Getıblbltmode
+## <a name="cdcgetstretchbltmode"></a><a name="getstretchbltmode"></a>CDC::GetStretchBltMode
 
-Geçerli bit eşlem uzatma modunu alır.
+Geçerli bit map germe modunu alır.
 
 ```
 int GetStretchBltMode() const;
@@ -3638,17 +3638,17 @@ int GetStretchBltMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürülen değer, geçerli bit eşlem uzatma modunu belirtir — STRETCH_ANDSCANS, STRETCH_DELETESCANS veya STRETCH_ORSCANS — işlev başarılı olursa.
+İade değeri, işlev başarılı olursa, geçerli bit map germe modunu (STRETCH_ANDSCANS, STRETCH_DELETESCANS veya STRETCH_ORSCANS olarak belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit eşlem uzatma modu, `StretchBlt` üye işlevi tarafından uzatılmış veya sıkıştırılan bitmaplerden bilgilerin nasıl kaldırıldığını tanımlar.
+Biteş-germe modu, bilginin üye işlev tarafından uzatılmış veya `StretchBlt` sıkıştırılan bit eşlemlerinden nasıl kaldırıldığını tanımlar.
 
-STRETCH_ANDSCANS ve STRETCH_ORSCANS modları genellikle tek renkli bit eşlemlerde ön plan piksellerini korumak için kullanılır. STRETCH_DELETESCANS modu, genellikle renk bit eşlemlerinin rengini korumak için kullanılır.
+STRETCH_ANDSCANS ve STRETCH_ORSCANS modları genellikle tek renkli bit eşlemlerde ön plan pikselleri korumak için kullanılır. STRETCH_DELETESCANS modu genellikle renk bit eşlemlerinde rengi korumak için kullanılır.
 
-##  <a name="gettabbedtextextent"></a>CDC:: GetTabbedTextExtent
+## <a name="cdcgettabbedtextextent"></a><a name="gettabbedtextextent"></a>CDC::GetTabbedTextExtent
 
-[M_hAttribDC](#m_hattribdc), öznitelik cihazı bağlamını kullanarak bir karakter dizesinin genişlik ve yüksekliğini hesaplamak için bu üye işlevini çağırın.
+[m_hAttribDC,](#m_hattribdc)öznitelik aygıtı bağlamını kullanarak bir karakter dizesinin genişliğini ve yüksekliğini hesaplamak için bu üye işlevi arayın.
 
 ```
 CSize GetTabbedTextExtent(
@@ -3666,37 +3666,37 @@ CSize GetTabbedTextExtent(
 ### <a name="parameters"></a>Parametreler
 
 *lpszString*<br/>
-Bir karakter dizesini işaret eder. Ayrıca, bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
+Bir karakter dizesini işaret edin. Ayrıca bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
 
-*nCount*<br/>
-*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
+*nSayısı*<br/>
+*LpszString*tarafından işaret [edilen dize uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
 
 *nTabPositions*<br/>
-Dizideki, *lpnTabStopPositions*tarafından işaret edilen sekme durağı konumlarının sayısını belirtir.
+*lpnTabStopPositions*tarafından işaret edilen dizideki sekme durdurma pozisyonlarının sayısını belirtir.
 
 *lpnTabStopPositions*<br/>
-Mantıksal birimlerde sekme durağı konumlarını içeren bir tamsayı dizisine işaret eder. Sekme duraklarının artan sırada sıralanması gerekir; en küçük x değeri dizideki ilk öğe olmalıdır. Geri sekmelere izin verilmez.
+Mantıksal birimlerdeki sekme durağı konumlarını içeren bir dizi arayıişaret eder. Sekme durakları artan sırayla sıralanmalıdır; en küçük x değeri dizideki ilk öğe olmalıdır. Geri sekmelere izin verilmez.
 
-*üstbilgisine*<br/>
-Çizilecek belirtilen karakterleri içeren `CString` nesnesi.
+*Str*<br/>
+Çizilecek belirtilen karakterleri içeren bir `CString` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesindeki dizenin boyutları (mantıksal birimler cinsinden).
+[CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesindeki dize (mantıksal birimler halinde) boyutları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize bir veya daha fazla sekme karakteri içeriyorsa, dizenin genişliği *lpnTabStopPositions*tarafından belirtilen sekme duraklarını temel alır. İşlev, dizenin boyutlarını hesaplamak için seçili olan yazı tipini kullanır.
+Dize bir veya daha fazla sekme karakteri içeriyorsa, dize genişliği *lpnTabStopPositions*tarafından belirtilen sekme durakları dayanmaktadır. İşlev, dize boyutlarını hesaplamak için şu anda seçili yazı tipini kullanır.
 
-Geçerli kırpma bölgesi `GetTabbedTextExtent` işlevi tarafından döndürülen genişliği ve yüksekliği kaydırmıyor.
+Geçerli kırpma `GetTabbedTextExtent` bölgesi, işlev tarafından döndürülen genişlik ve yüksekliği dengelemez.
 
-Bazı cihazlar normal hücre dizilerine karakter yerleştirmediğinden (yani karakterlerin karakter aralığı varsa), bir dizedeki karakterlerin kapsamlarının toplamı, dizenin kapsamına eşit olmayabilir.
+Bazı aygıtlar karakterleri normal hücre dizilerine yerleştirmediğinden (diğer bir deyişle, karakterleri kern), bir dizedeki karakterlerin kapsamlarının toplamı dize derecesine eşit olmayabilir.
 
-*NTabPositions* 0 Ise ve *lpnTabStopPositions* null ise, sekmeler ortalama karakter genişliği sekiz katına genişletilir. *NTabPositions* 1 ise, sekme durağı, dizideki ilk değer tarafından belirtilen uzaklığa göre, *lpnTabStopPositions* işaret eder. *LpnTabStopPositions* tek bir değerden daha fazla işaret ediyorsa, dizideki her bir değer Için *nTabPositions*tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır.
+*nTabPositions* 0 ve *lpnTabStopPositions* NULL ise sekmeler sekiz kez ortalama karakter genişliği genişletilir. *nTabPositions* 1 ise, sekme durakları *lpnTabStopPositions* noktaları dizideki ilk değer tarafından belirtilen mesafe ile ayrılır. *LPnTabStopPositions* tek bir değerden daha fazlasına işaret ederse, dizideki her değer için *nTabPositions*tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır.
 
-##  <a name="gettextalign"></a>CDC:: GetTextAlign
+## <a name="cdcgettextalign"></a><a name="gettextalign"></a>CDC::GetTextAlign
 
-Cihaz bağlamı için metin hizalama bayraklarının durumunu alır.
+Aygıt bağlamı için metin hizalama bayraklarının durumunu alır.
 
 ```
 UINT GetTextAlign() const;
@@ -3704,43 +3704,43 @@ UINT GetTextAlign() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Metin hizalama bayraklarının durumu. Dönüş değeri aşağıdaki değerlerden biri veya daha fazlası:
+Metin hizalama bayraklarının durumu. İade değeri aşağıdaki değerlerden biridir:
 
-- TA_BASELINE, x ekseninin ve sınırlayıcı dikdörtgenin içindeki seçili yazı tipinin taban çizgisinin hizalamasını belirtir.
+- TA_BASELINE X ekseninin hizalanmasını ve seçilen yazı tipinin taban çizgisini sınırlayıcı dikdörtgen içinde belirtir.
 
-- TA_BOTTOM, x ekseninin ve sınırlayıcı dikdörtgenin alt öğesinin hizalamasını belirtir.
+- TA_BOTTOM X ekseninin hizalanmasını ve sınırlayan dikdörtgenin alt kısmını belirtir.
 
-- TA_CENTER, sınırlayıcı dikdörtgenin y ekseninin ve merkezinin hizalamasını belirtir.
+- TA_CENTER y ekseninin ve sınırlayıcı dikdörtgenin ortasının hizalanmasını belirtir.
 
-- TA_LEFT, sınırlayıcı dikdörtgenin y ekseninin ve sol tarafının hizalamasını belirtir.
+- TA_LEFT Y ekseninin ve sınırlayan dikdörtgenin sol tarafının hizalanmasını belirtir.
 
-- TA_NOUPDATECP geçerli konumun güncelleştirilmediğini belirtir.
+- TA_NOUPDATECP Geçerli konumun güncelleştirilemediğini belirtir.
 
-- TA_RIGHT, sınırlayıcı dikdörtgenin y ekseninin ve sağ tarafının hizalamasını belirtir.
+- TA_RIGHT y ekseninin ve sınırlayan dikdörtgenin sağ tarafının hizalanmasını belirtir.
 
-- TA_TOP, x ekseninin ve sınırlayıcı dikdörtgenin üst kısmına yönelik hizalamayı belirtir.
+- TA_TOP x ekseninin ve sınırlayan dikdörtgenin üst hizalama belirtir.
 
-- TA_UPDATECP geçerli konumun güncelleştirileceğini belirtir.
+- TA_UPDATECP Geçerli konumun güncelleştirdiğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Metin hizalama bayrakları, `TextOut` ve `ExtTextOut` üyesinin, dizenin başlangıç noktasıyla ilgili bir metin dizesini nasıl hizaladığını belirlenir. Metin hizalama bayrakları tek bitlik bayraklar değildir ve 0 ' a eşit olabilir. Bir bayrağın ayarlanmış olup olmadığını test etmek için bir uygulama aşağıdaki adımları izlemelidir:
+Metin hizalama bayrakları, `TextOut` ve `ExtTextOut` üye işlevlerin dize başlangıç noktasıyla ilişkili olarak bir metin dizesini nasıl hizaladığını belirler. Metin hizalama bayrakları tek bit bayrakları olmak zorunda değildir ve 0'a eşit olabilir. Bir bayrağın ayarlanıp ayarlanıp ayarlmadığını sınamak için, bir uygulama aşağıdaki adımları izlemeli:
 
-1. Bayrak için bit düzeyinde OR işlecini ve ilgili bayraklarını şu şekilde gruplanmış şekilde uygulayın:
+1. Aşağıdaki gibi gruplanmış bayrak ve ilgili bayraklar için bitwise VEYA işleci uygulayın:
 
-    - TA_LEFT, TA_CENTER ve TA_RIGHT
+   - TA_LEFT, TA_CENTER ve TA_RIGHT
 
-    - TA_BASELINE, TA_BOTTOM ve TA_TOP
+   - TA_BASELINE, TA_BOTTOM ve TA_TOP
 
-    - TA_NOUPDATECP ve TA_UPDATECP
+   - TA_NOUPDATECP ve TA_UPDATECP
 
-1. `GetTextAlign`için bit düzeyinde AND işlecini ve dönüş değerini uygulayın.
+1. Bitwise-AND işlecinin sonucuna ve geri `GetTextAlign`dönüş değerine uygulayın.
 
-1. Bu sonucun ve bayrağın eşitliğini test edin.
+1. Bu sonucun eşitliği ve bayrak için test edin.
 
-##  <a name="gettextcharacterextra"></a>CDC:: Gettextkarakterextra
+## <a name="cdcgettextcharacterextra"></a><a name="gettextcharacterextra"></a>CDC::GetTextCharacterExtra
 
-Intercharacter aralıklarının miktarı için geçerli ayarı alır.
+Karakterler arası aralık miktarı için geçerli ayarı alır.
 
 ```
 int GetTextCharacterExtra() const;
@@ -3748,15 +3748,15 @@ int GetTextCharacterExtra() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Intercharacter aralıklarının miktarı.
+Karakter arası aralığın miktarı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-GDI, bir metin satırını cihaz bağlamına yazdığında, bu boşluğu kesme karakterleri de dahil olmak üzere her karaktere ekler.
+GDI, aygıt bağlamına bir metin satırı yazdığında, kesme karakterleri de dahil olmak üzere her karaktere bu aralığı ekler.
 
-Intercharacter boşluk miktarı için varsayılan değer 0 ' dır.
+Karakterler arası aralık miktarı için varsayılan değer 0'dır.
 
-##  <a name="gettextcolor"></a>CDC:: GetTextColor
+## <a name="cdcgettextcolor"></a><a name="gettextcolor"></a>CDC::GetTextColor
 
 Geçerli metin rengini alır.
 
@@ -3766,15 +3766,15 @@ COLORREF GetTextColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir RGB renk değeri olarak geçerli metin rengi.
+RGB renk değeri olarak geçerli metin rengi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Metin rengi, GDI metin-çıkış üye işlevleri [TextOut](#textout), [ExtTextOut](#exttextout)ve [TabbedTextOut](#tabbedtextout)kullanılarak çizilen karakterlerin ön plan rengidir.
+Metin rengi GDI metin çıkışı üye işlevleri [TextOut,](#textout) [ExtTextOut](#exttextout)ve [TabbedTextOut](#tabbedtextout)kullanılarak çizilen karakterlerin ön planda renktir.
 
-##  <a name="gettextextent"></a>CDC:: GetTextExtent
+## <a name="cdcgettextextent"></a><a name="gettextextent"></a>CDC::GetTextExtent
 
-Boyutları belirleyebilmek için geçerli yazı tipini kullanarak bir metin satırının genişliğini ve yüksekliğini hesaplamak üzere bu üye işlevini çağırın.
+Boyutları belirlemek için geçerli yazı tipini kullanarak bir metin satırının genişliğini ve yüksekliğini hesaplamak için bu üye işlevi arayın.
 
 ```
 CSize GetTextExtent(
@@ -3787,31 +3787,31 @@ CSize GetTextExtent(const CString& str) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpszString*<br/>
-Bir karakter dizesini işaret eder. Ayrıca, bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
+Bir karakter dizisini işaret eder. Ayrıca bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
 
-*nCount*<br/>
+*nSayısı*<br/>
 Dizedeki karakter sayısını belirtir.
 
-*üstbilgisine*<br/>
-Belirtilen karakterleri içeren `CString` nesnesi.
+*Str*<br/>
+Belirtilen `CString` karakterleri içeren bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesindeki dizenin boyutları (mantıksal birimler cinsinden).
+[CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesindeki dize (mantıksal birimler halinde) boyutları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bilgiler, öznitelik cihaz bağlamından [m_hAttribDC](#m_hattribdc)alınır.
+Bilgiler, öznitelik aygıtı bağlamı olan [m_hAttribDC'dan](#m_hattribdc)alınır.
 
-Varsayılan olarak `GetTextExtent`, boyutun aldığı metnin yatay bir çizgi boyunca (yani, yürüyen değer 0) ayarlandığını varsayar. Sıfır olmayan bir ilerleme belirten bir yazı tipi oluşturursanız, dizenin boyutlarını almak için metnin açısını açıkça dönüştürmeniz gerekir.
+Varsayılan olarak, `GetTextExtent` boyutu aldığı metnin yatay bir çizgi boyunca ayarlandığı varsayar (diğer bir süre, kaçış 0'dır). Sıfır olmayan bir kaçış belirten bir yazı tipi oluşturursanız, dize boyutlarını almak için metnin açısını açıkça dönüştürmeniz gerekir.
 
-Geçerli kırpma bölgesi `GetTextExtent`tarafından döndürülen genişliği ve yüksekliği etkilemez.
+Geçerli kırpma bölgesi tarafından `GetTextExtent`döndürülen genişlik ve yüksekliği etkilemez.
 
-Bazı cihazlar normal hücre dizilerine karakter yerleştirmediğinden (yani, karakter aralığı yerine geçen), bir dizedeki karakterlerin kapsamlarının toplamı, dizenin kapsamına eşit olmayabilir.
+Bazı aygıtlar karakterleri normal hücre dizilerine yerleştirmediğinden (diğer bir deyişle, kerning yaparlar), bir dizedeki karakterlerin kapsamlarının toplamı dize nin derecesine eşit olmayabilir.
 
-##  <a name="gettextextentexpointi"></a>CDC:: Gettexıtexpointı
+## <a name="cdcgettextextentexpointi"></a><a name="gettextextentexpointi"></a>CDC::GetTextExtentExPointi
 
-Belirtilen bir dizedeki belirli bir alana sığacak ve bir diziyi bu karakterlerin her biri için metin Uzantısı ile dolduracak olan karakter sayısını alır.
+Belirli bir astara sığacak belirli bir dizedeki karakter sayısını alır ve bir diziyi bu karakterlerin her biri için metin kapsamıyla doldurur.
 
 ```
 BOOL GetTextExtentExPointI(
@@ -3826,22 +3826,22 @@ BOOL GetTextExtentExPointI(
 ### <a name="parameters"></a>Parametreler
 
 *pgiIn*<br/>
-Kapsam alınacak bir karakter dizini dizisine yönelik bir işaretçi.
+Kapsamların alınabilmek için bir dizi glyph endeksine işaretçi.
 
-*CGI*<br/>
-*Pgiin*tarafından işaret edilen dizideki karakter sayısını belirtir.
+*Cgı*<br/>
+*pgiIn*tarafından işaret edilen dizideki gliflerin sayısını belirtir.
 
-*Nmaxkapsam*<br/>
-Biçimlendirilen dizenin mantıksal birimlerinde izin verilen en büyük genişliği belirtir.
+*nMaxExtent*<br/>
+Biçimlendirilmiş dizenin mantıksal birimleriyle izin verilen maksimum genişliği belirtir.
 
 *lpnFit*<br/>
-*Nmaxuzantısı*tarafından belirtilen alana sığacak en fazla karakter sayısını alan bir tamsayı işaretçisi. *LPNFit* null olduğunda, *nmaxkapsam* yok sayılır.
+*nMaxExtent*tarafından belirtilen alana sığacak maksimum karakter sayısı nın sayısını alan bir tamsayı için işaretçi . *LPNFit* NULL olduğunda, *nMaxExtent* yoksayılır.
 
 *alpDx*<br/>
-Kısmi karakter kapsamlarını alan tamsayılar dizisine yönelik bir işaretçi. Dizideki her öğe, karakter indisler dizisinin başlangıcı ve *Nmaxuzantısı*tarafından belirtilen boşluğa uyan karakterlerden biri arasındaki uzaklığı mantıksal birimlerde verir. Bu dizide en az *CGI*tarafından belirtilen karakter dizinleri olan çok sayıda öğe olması gerekse de işlev, diziyi, *LPNFit*tarafından belirtilen sayıda karakter dizini için yalnızca uzantıya doldurur. *LpnDx* null ise, işlev kısmi dize genişliklerini hesaplamaz.
+Kısmi glyph dereceleri alan bir tamsayı dizisiiçin bir işaretçi. Dizideki her öğe, mantıksal birimler halinde, glyph indices dizisinin başlangıcı ile *nMaxExtent*tarafından belirtilen alana uyan gliflerden biri arasındaki mesafeyi verir. Bu dizi *cgi*tarafından belirtilen glyph indices olarak en az kadar sayıda eleman olması gerekir rağmen, fonksiyon *lpnFit*tarafından belirtilen birçok glyph indices sadece ölçüde dizi doldurur . *LPNDx* NULL ise, işlev kısmi dize genişliklerini hesaplamaz.
 
 *lpSize*<br/>
-Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına yönelik işaretçi. Bu değer NULL olamaz.
+Mantıksal birimler halinde, glyph indices dizisinin boyutlarını alan bir [SIZE](/windows/win32/api/windef/ns-windef-size) yapısıiçin işaretçi. Bu değer NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3849,11 +3849,11 @@ Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windo
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi [Gettexbir Texpointi](/windows/win32/api/wingdi/nf-wingdi-gettextextentexpointi)işlevinin işlevselliğine öykünür.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [GetTextExtentExPointI](/windows/win32/api/wingdi/nf-wingdi-gettextextentexpointi)işlevini taklit eder.
 
-##  <a name="gettextextentpointi"></a>CDC:: Gettextpointı
+## <a name="cdcgettextextentpointi"></a><a name="gettextextentpointi"></a>CDC::GetTextExtentPointi
 
-Belirtilen glif dizinleri dizisinin genişliğini ve yüksekliğini alır.
+Belirtilen gifof endekslerinin genişliğini ve yüksekliğini alır.
 
 ```
 BOOL GetTextExtentPointI(
@@ -3865,13 +3865,13 @@ BOOL GetTextExtentPointI(
 ### <a name="parameters"></a>Parametreler
 
 *pgiIn*<br/>
-Kapsam alınacak bir karakter dizini dizisine yönelik bir işaretçi.
+Kapsamların alınabilmek için bir dizi glyph endeksine işaretçi.
 
-*CGI*<br/>
-*Pgiin*tarafından işaret edilen dizideki karakter sayısını belirtir.
+*Cgı*<br/>
+*pgiIn*tarafından işaret edilen dizideki gliflerin sayısını belirtir.
 
 *lpSize*<br/>
-Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına yönelik işaretçi. Bu değer NULL olamaz.
+Mantıksal birimler halinde, glyph indices dizisinin boyutlarını alan bir [SIZE](/windows/win32/api/windef/ns-windef-size) yapısıiçin işaretçi. Bu değer NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3879,11 +3879,11 @@ Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windo
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklanan [Gettexıda Tpointi](/windows/win32/api/wingdi/nf-wingdi-gettextextentpointi)işlevinin işlevselliğine öykünür.
+Bu üye işlev, Windows SDK'da açıklandığı gibi [GetTextExtentPointI](/windows/win32/api/wingdi/nf-wingdi-gettextextentpointi)işlevini taklit eder.
 
-##  <a name="gettextface"></a>CDC:: GetTextFace
+## <a name="cdcgettextface"></a><a name="gettextface"></a>CDC::GetTextFace
 
-Geçerli fontun yazı tipi adını bir arabelleğe kopyalamak için bu üye işlevi çağırın.
+Geçerli yazı tipinin yazı tipinin yazı tipi adını arabelleğe kopyalamak için bu üye işlevi arayın.
 
 ```
 int GetTextFace(
@@ -3895,26 +3895,26 @@ int GetTextFace(CString& rString) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nCount*<br/>
-Arabelleğin boyutunu (bayt olarak) belirtir. Yazı tipi adı bu parametre tarafından belirtilen bayt sayısından uzunsa, ad kesilir.
+*nSayısı*<br/>
+Arabelleğe (baytlar içinde) boyutunu belirtir. Yazı tipi adı, bu parametre tarafından belirtilen bayt sayısından daha uzunsa, ad kesilir.
 
 *lpszFacename*<br/>
-Yazı tipi adı için arabelleğe işaret eder.
+Yazı tipi adı için arabelleğe işaret.
 
 *rString*<br/>
-Bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine başvuru.
+[CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonlandırıcı null karakteri dahil değil, arabelleğe kopyalanmış bayt sayısı. Bir hata oluşursa 0 ' dır.
+Sonlandırıcı null karakteri dahil değil, arabelleğe kopyalanan bayt sayısı. Bir hata oluşursa 0'dır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yazı tipi adı null ile sonlandırılmış bir dize olarak kopyalanır.
+Yazı tipi adı null-sonlandırılan dize olarak kopyalanır.
 
-##  <a name="gettextmetrics"></a>CDC:: Gettextölçümleri
+## <a name="cdcgettextmetrics"></a><a name="gettextmetrics"></a>CDC::GetTextMetrics
 
-Geçerli yazı tipine ait ölçümleri, öznitelik cihaz bağlamını kullanarak alır.
+Öznitelik aygıtı bağlamını kullanarak geçerli yazı tipinin ölçümlerini alır.
 
 ```
 BOOL GetTextMetrics(LPTEXTMETRIC lpMetrics) const;
@@ -3922,16 +3922,16 @@ BOOL GetTextMetrics(LPTEXTMETRIC lpMetrics) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpmetrikleri*<br/>
-Ölçümleri alan [Textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) yapısına işaret eder.
+*lpMetrics*<br/>
+Ölçümleri alan [TEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-textmetricw) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.
 
-##  <a name="getviewportext"></a>CDC:: GetViewportExt
+## <a name="cdcgetviewportext"></a><a name="getviewportext"></a>CDC::GetViewportExt
 
-Cihaz bağlamının görünüm penceresinin x ve y-kapsamlarını alır.
+Aygıt bağlamının görünüm portunun x ve y derecelerini alır.
 
 ```
 CSize GetViewportExt() const;
@@ -3939,11 +3939,11 @@ CSize GetViewportExt() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CSize` nesne olarak x ve y kapsamları (cihaz birimlerinde).
+X- ve y-extents (aygıt birimlerinde) bir `CSize` nesne olarak.
 
-##  <a name="getviewportorg"></a>CDC:: GetViewportOrg
+## <a name="cdcgetviewportorg"></a><a name="getviewportorg"></a>CDC::GetViewportOrg
 
-Cihaz içeriğiyle ilişkili görünüm penceresinin kaynağının x ve y koordinatlarını alır.
+Aygıt bağlamıyla ilişkili görüntü noktasının kaynağının x- ve y koordinatlarını alır.
 
 ```
 CPoint GetViewportOrg() const;
@@ -3951,11 +3951,11 @@ CPoint GetViewportOrg() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görünüm penceresinin (cihaz koordinatlarındaki) `CPoint` nesne olarak kaynağı.
+Bir `CPoint` nesne olarak viewport (aygıt koordinatlarında) kökeni.
 
-##  <a name="getwindow"></a>CDC:: GetWindow
+## <a name="cdcgetwindow"></a><a name="getwindow"></a>CDC::GetWindow
 
-Görüntüleme cihazı içeriğiyle ilişkili pencereyi döndürür.
+Görüntü aygıtı bağlamıyla ilişkili pencereyi döndürür.
 
 ```
 CWnd* GetWindow() const;
@@ -3963,15 +3963,15 @@ CWnd* GetWindow() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CWnd` nesnesine yönelik işaretçi; Aksi takdirde NULL.
+Başarılı olursa `CWnd` nesneye işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu gelişmiş bir işlevdir. Örneğin, bu üye işlevi yazdırırken veya baskı önizlemede görüntüleme penceresini döndüremeyebilir. Her zaman çıktı ile ilişkili pencereyi döndürür. Verilen DC 'yi kullanan çıkış işlevleri Bu pencerede çizilir.
+Bu gelişmiş bir fonksiyondur. Örneğin, bu üye işlev yazdırılırken veya yazdırma önizlemesinde görünüm penceresini döndürmeyebilir. Her zaman çıktıile ilişkili pencereyi döndürür. Verilen DC'yi kullanan çıkış işlevleri bu pencereye çekilir.
 
-##  <a name="getwindowext"></a>CDC:: GetWindowExt
+## <a name="cdcgetwindowext"></a><a name="getwindowext"></a>CDC::GetWindowExt
 
-Cihaz içeriğiyle ilişkili pencerenin x ve y-kapsamlarını alır.
+Aygıt bağlamıyla ilişkili pencerenin x ve y derecelerini alır.
 
 ```
 CSize GetWindowExt() const;
@@ -3979,11 +3979,11 @@ CSize GetWindowExt() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CSize` nesne olarak x ve y-uzantıları (mantıksal birimler cinsinden).
+X- ve y-extents (mantıksal birimler) `CSize` bir nesne olarak.
 
-##  <a name="getwindoworg"></a>CDC:: GetWindowOrg
+## <a name="cdcgetwindoworg"></a><a name="getwindoworg"></a>CDC::GetWindowOrg
 
-Cihaz içeriğiyle ilişkili pencerenin kaynağının x ve y koordinatlarını alır.
+Aygıt bağlamıyla ilişkili pencerenin kaynağının x- ve y koordinatlarını alır.
 
 ```
 CPoint GetWindowOrg() const;
@@ -3991,11 +3991,11 @@ CPoint GetWindowOrg() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Pencerenin (mantıksal koordinatlardaki) `CPoint` nesne olarak kaynağı.
+Pencerenin (mantıksal koordinatlarda) nesne `CPoint` olarak kökeni.
 
-##  <a name="getworldtransform"></a>CDC:: GetWorldTransform
+## <a name="cdcgetworldtransform"></a><a name="getworldtransform"></a>CDC::GetWorldTransform
 
-Geçerli dünya alanını sayfa boşluğu dönüşümüne alır.
+Geçerli dünya alanını sayfa-uzay dönüşümüne alır.
 
 ```
 BOOL GetWorldTransform(XFORM& rXform) const;
@@ -4004,23 +4004,23 @@ BOOL GetWorldTransform(XFORM& rXform) const;
 ### <a name="parameters"></a>Parametreler
 
 *rXform*<br/>
-Geçerli dünya alanını sayfa boşluğu dönüşümüne alan bir [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform) yapısına başvuru.
+Geçerli dünya-alandan sayfa-uzay dönüşümüne alan bir [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform) yapısına başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda sıfır olmayan bir değer döndürür.
+Başarının sıfır olmayan bir değerini verir.
 
 Hatada 0 döndürür.
 
-Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+Genişletilmiş hata bilgilerini almak için [GetLastError'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)arayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [GetWorldTransform](/windows/win32/api/wingdi/nf-wingdi-getworldtransform)Windows GDI işlevini sarmalanmış.
+Bu yöntem, Windows GDI fonksiyonu [GetWorldTransform](/windows/win32/api/wingdi/nf-wingdi-getworldtransform)sarar.
 
-##  <a name="gradientfill"></a>CDC:: GradientFill
+## <a name="cdcgradientfill"></a><a name="gradientfill"></a>CDC::GradientFill
 
-Dikdörtgen ve üçgen yapıları bir taraftan diğerine düzgün bir şekilde aşağı doğru bir renkle dolduracak şekilde bu üye işlevi çağırın.
+Dikdörtgen ve üçgen yapıları bir taraftan diğerine düzgün bir şekilde solan renkle doldurmak için bu üye işlevi arayın.
 
 ```
 BOOL GradientFill(
@@ -4033,32 +4033,32 @@ BOOL GradientFill(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pköşeleri*<br/>
-Her birinin üçgen köşe tanımlayan bir [üç](/windows/win32/api/wingdi/ns-wingdi-trivertex) nokta yapısı dizisine yönelik işaretçi.
+*pVertices*<br/>
+Her biri bir üçgen tepe noktası tanımlayan bir dizi [TRIVERTEX](/windows/win32/api/wingdi/ns-wingdi-trivertex) yapısına işaretçi.
 
-*Nköşeleri*<br/>
-Köşe sayısı.
+*nVertices*<br/>
+Tepe sayısı.
 
-*Pkafes*<br/>
-Üçgen modundaki [GRADIENT_TRIANGLE](/windows/win32/api/wingdi/ns-wingdi-gradient_triangle) yapıları dizisi veya dikdörtgen modundaki [GRADIENT_RECT](/windows/win32/api/wingdi/ns-wingdi-gradient_rect) yapıtlarından oluşan dizi.
+*pMesh*<br/>
+Üçgen modunda [GRADIENT_TRIANGLE](/windows/win32/api/wingdi/ns-wingdi-gradient_triangle) yapıları dizisi veya dikdörtgen modunda [GRADIENT_RECT](/windows/win32/api/wingdi/ns-wingdi-gradient_rect) yapıları dizisi.
 
 *nMeshElements*<br/>
-*Pkafes*'teki öğelerin (üçgenler veya dikdörtgenler) sayısı.
+*pMesh'teki*eleman sayısı (üçgenler veya dikdörtgenler).
 
 *dwMode*<br/>
-Gradyan dolgusu modunu belirtir. Olası değerler listesi için Windows SDK [GradientFill](/windows/win32/api/wingdi/nf-wingdi-gradientfill) bakın.
+Degrade dolgu modunu belirtir. Olası değerlerin listesi için Windows SDK'daki [GradientFill](/windows/win32/api/wingdi/nf-wingdi-gradientfill) bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa doğru; Aksi halde yanlış.
+Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK `GradientFill` bakın.
+Daha fazla bilgi `GradientFill` için Windows SDK'ya bakın.
 
-##  <a name="graystring"></a>CDC:: gri dize
+## <a name="cdcgraystring"></a><a name="graystring"></a>CDC::GrayString
 
-Bir bellek bit eşlemine metin yazarak, bit eşlem 'i seçerek ve ardından bit eşlemi görüntülemeye kopyalayarak, belirtilen konumda soluk (gri) metin çizer.
+Metni bir bellek bit eşlemine yazarak, bit eşlemi karartarak ve sonra bit eşlemi ekrana kopyalayarak verilen konuma soluk (gri) metin çizer.
 
 ```
 virtual BOOL GrayString(
@@ -4077,51 +4077,51 @@ virtual BOOL GrayString(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBrush*<br/>
-Karartma (gri tonlamalı) için kullanılacak fırçayı tanımlar.
+*pFırça*<br/>
+Karartma (ağarma) için kullanılacak fırçayı tanımlar.
 
-*lpfnOutput*<br/>
-Uygulama tarafından sağlanan geri çağırma işlevinin, dizeyi çizecek yordam örneği adresini belirtir. Daha fazla bilgi için Windows `OutputFunc` [geri çağırma işlevinin](callback-functions-used-by-mfc.md#graystring)açıklamasına bakın. Bu parametre NULL ise, sistem dizeyi çizmek için Windows `TextOut` işlevini kullanır ve *lpData* , çıkış olacak karakter dizesinin uzun bir işaretçisi olarak kabul edilir.
+*lpfnÇıktı*<br/>
+Dize çizecek uygulama tarafından sağlanan geri arama işlevinin yordam örneği adresini belirtir. Daha fazla bilgi için Windows `OutputFunc` geri arama [işlevinin](callback-functions-used-by-mfc.md#graystring)açıklamasına bakın. Bu parametre NULL ise, sistem `TextOut` dize çizmek için Windows işlevini kullanır ve *lpData* çıktı olmak için karakter dizeiçin uzun bir işaretçi olarak kabul edilir.
 
 *lpData*<br/>
-Çıkış işlevine geçirilecek veriye yönelik bir işaretçi belirtir. *LpfnOutput* null Ise, *lpData* bir dizenin çıkış olması için uzun bir işaretçi olmalıdır.
+Çıktı işlevine aktaredilecek verilere uzak bir işaretçi belirtir. *lpfnOutput* NULL ise, *lpData* çıktı olmak için dize için uzun bir işaretçi olmalıdır.
 
-*nCount*<br/>
-Çıkış yapılacak karakter sayısını belirtir. Bu parametre 0 ise, `GrayString` dizenin uzunluğunu hesaplar ( *lpData* dizesinin bir işaretçisi olduğunu varsayarak). *NCount* değeri 1 Ise ve *lpfnOutput* tarafından işaret edilen işlev 0 döndürürse, görüntü gösterilir ancak soluk değildir.
+*nSayısı*<br/>
+Çıktı edilecek karakter sayısını belirtir. Bu parametre 0 `GrayString` ise, dize uzunluğunu hesaplar *(lpData* dize için bir işaretçi olduğunu varsayarak). *nCount* 1 ise ve *lpfnOutput* tarafından işaret edilen işlev 0 döndürür, görüntü gösterilir, ancak soluk değil.
 
-*sayı*<br/>
-Dizeyi kapsayan dikdörtgenin başlangıç konumunun mantıksal x koordinatını belirtir.
+*X*<br/>
+Dizeyi içine alan dikdörtgenin başlangıç konumunun mantıksal x-koordinatını belirtir.
 
-*Iz*<br/>
-Dizeyi kapsayan dikdörtgenin başlangıç konumunun mantıksal y koordinatını belirtir.
+*Y*<br/>
+Dizeyi içine alan dikdörtgenin başlangıç konumunun mantıksal y-koordinatını belirtir.
 
-*nWidth*<br/>
-Dizeyi kapsayan dikdörtgenin genişliğini (mantıksal birimler cinsinden) belirtir. *NWidth* 0 ise `GrayString`, *lpData* 'ın dizeye yönelik bir işaretçi olduğu varsayıldığında alanın genişliğini hesaplar.
+*Nwidth*<br/>
+Dizeyi içine alan dikdörtgenin genişliğini (mantıksal birimler halinde) belirtir. *nWidth* 0 ise, `GrayString` *lpData* dize için bir işaretçi olduğunu varsayarak, alanın genişliğini hesaplar.
 
-*nHeight*<br/>
-Dizeyi kapsayan dikdörtgenin yüksekliğini (mantıksal birimler cinsinden) belirtir. Eğer *nHeight* değeri 0 ise, `GrayString`, *lpData* 'ın dizeye yönelik bir işaretçi olduğu varsayıldığında alanın yüksekliğini hesaplar.
+*Nheight*<br/>
+Dizeyi içine alan dikdörtgenin yüksekliğini (mantıksal birimler halinde) belirtir. *nHeight* 0 ise, `GrayString` *lpData* dize için bir işaretçi olduğunu varsayarak, alanın yüksekliğini hesaplar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize çizildiyse veya `TextOut` işlevi ya da uygulama tarafından sağlanan çıkış işlevi 0 olarak döndürülürse ya da bir bellek bit eşlemi oluşturmak için yeterli bellek yoksa 0 olarak sıfır veya
+Dize çizilirse sıfır veya `TextOut` işlev veya uygulama tarafından sağlanan çıkış işlevi 0 döndürülürse veya karartma için bir bellek bit eşlemi oluşturmak için yeterli bellek varsa 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, seçilen fırçaya ve arka plana bakılmaksızın metni kararlar. `GrayString` member işlevi şu anda seçili olan yazı tipini kullanır. Bu işlev kullanılmadan önce MM_TEXT eşleme modunun seçilmesi gerekir.
+İşlev, seçili fırça ve arka plandan bağımsız olarak metni karartıyor. `GrayString` Üye işlev, şu anda seçili yazı tipini kullanır. Bu işlevi kullanmadan önce MM_TEXT eşleme modu seçilmelidir.
 
-Bir uygulama, `GrayString` üye işlevini çağırmadan düz bir gri rengi destekleyen cihazlarda soluk (gri) dizeler çizebilirler. Sistem rengi COLOR_GRAYTEXT, devre dışı bırakılan metni çizmek için kullanılan, düz gri sistem rengidir. Uygulama, COLOR_GRAYTEXT Color değerini almak için `GetSysColor` Windows işlevini çağırabilir. Renk 0 ' dan (siyah) farklı ise, uygulama `SetTextColor` üye işlevini çağırıp metin rengini renk değerine ayarlayabilir ve ardından dizeyi doğrudan çizebilirler. Alınan renk siyahsa, uygulamanın metni karartma (gri) için `GrayString` çağırması gerekir.
+Bir `GrayString` uygulama, üye işlevi aramadan düz gri rengi destekleyen aygıtlara soluk (gri) dizeleri çizebilir. Sistem rengi COLOR_GRAYTEXT devre dışı metin çizmek için kullanılan katı-gri sistem rengidir. Uygulama, COLOR_GRAYTEXT `GetSysColor` renk değerini almak için Windows işlevini çağırabilir. Renk 0 (siyah) dışındaysa, uygulama `SetTextColor` metin rengini renk değerine ayarlamak için üye işlevi arayabilir ve ardından dizeyi doğrudan çizebilir. Alınan renk siyahsa, uygulama metni `GrayString` karartmak (gri) olarak çağırmalıdır.
 
-*LpfnOutput* null Ise, GDI Windows [TextOut](/windows/win32/api/wingdi/nf-wingdi-textoutw) Işlevini kullanır ve *lpData* , çıkış olacak karaktere bir işaretçi olarak kabul edilir. Çıktı olacak karakterler `TextOut` üye işlevi tarafından işlenemezse (örneğin, dize bir bit eşlem olarak depolanır), uygulamanın kendi çıkış işlevini sağlaması gerekir.
+*lpfnOutput* NULL ise, GDI Windows [TextOut](/windows/win32/api/wingdi/nf-wingdi-textoutw) işlevini kullanır ve *lpData'nın* çıktı olması için karaktere uzak bir işaretçi olduğu varsayılır. Çıktı alınacak karakterler `TextOut` üye işlev tarafından işlenemezse (örneğin, dize bit eşleme olarak depolanırsa), uygulamanın kendi çıktı işlevini sağlaması gerekir.
 
-Ayrıca, geri çağırma işlevlerinin Windows 'a döndürülmeden önce Microsoft Foundation özel durumlarını yakalamayacağını unutmayın. Özel durumlar hakkında daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
+Ayrıca, özel durumlar geri arama sınırları dışına atılamayacağından, tüm geri arama işlevlerinin Windows'a dönmeden önce Microsoft Foundation özel durumlarını hapsetmesi gerektiğini de unutmayın. Özel durumlar hakkında daha fazla bilgi için [özel durumlar](../../mfc/exception-handling-in-mfc.md)makalesine bakın.
 
-`GrayString` öğesine geçirilen geri çağırma işlevi `__stdcall` çağırma kuralını kullanmalıdır ve `__declspec`ile verilmesi gerekir.
+Geçirilen geri arama `GrayString` işlevi çağrı `__stdcall` kuralını kullanmalı `__declspec`ve '' ile dışa aktarılmalı.
 
-Çerçeve Önizleme modundayken, `GrayString` member işlevine yapılan bir çağrı `TextOut` çağrısına çevrilir ve geri çağırma işlevi çağrılmaz.
+Çerçeve önizleme modundayken, `GrayString` üye işleviçin bir çağrı çağrıya `TextOut` çevrilir ve geri arama işlevi çağrılmaz.
 
-##  <a name="himetrictodp"></a>CDC:: HIMETRICtoDP
+## <a name="cdchimetrictodp"></a><a name="himetrictodp"></a>CDC::HIMETRICtoDP
 
-Bu işlevi kullanarak, HIMETRIK boyutları OLE 'den piksellere dönüştürebilirsiniz.
+HIMETRIC boyutlarını OLE'den piksellere dönüştürdüğünüzde bu işlevi kullanın.
 
 ```
 void HIMETRICtoDP(LPSIZE lpSize) const;
@@ -4130,15 +4130,15 @@ void HIMETRICtoDP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpSize*<br/>
-[Boyut](/windows/win32/api/windef/ns-windef-size) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
+[SIZE](/windows/win32/api/windef/ns-windef-size) yapısını veya [CSize nesnesini](../../atl-mfc-shared/reference/csize-class.md) işaret edin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Cihaz bağlamı nesnesinin eşleme modu MM_LOENGLISH, MM_HIENGLISH, MM_LOMETRIC veya MM_HIMETRIC ise, dönüştürme fiziksel inç piksel sayısını temel alır. Eşleme modu, kısıtlanmış olmayan diğer modlardan (ör. MM_TEXT) biriyse, dönüştürme mantıksal inç piksel sayısını temel alır.
+Aygıt bağlamı nesnesinin eşleme modu MM_LOENGLISH, MM_HIENGLISH, MM_LOMETRIC veya MM_HIMETRIC ise, dönüştürme fiziksel inçpiksel sayısına bağlıdır. Eşleme modu diğer sınırlandırılmamış modlardan biriyse (örneğin, MM_TEXT), dönüştürme mantıksal inçteki piksel sayısına bağlıdır.
 
-##  <a name="himetrictolp"></a>CDC:: HIMETRICtoLP
+## <a name="cdchimetrictolp"></a><a name="himetrictolp"></a>CDC::HIMETRICtoLP
 
-HIMETRIK birimleri mantıksal birimlere dönüştürmek için bu işlevi çağırın.
+HIMETRIC birimlerini mantıksal birimlere dönüştürmek için bu işlevi arayın.
 
 ```
 void HIMETRICtoLP(LPSIZE lpSize) const;
@@ -4147,17 +4147,17 @@ void HIMETRICtoLP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpSize*<br/>
-[Boyut](/windows/win32/api/windef/ns-windef-size) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
+[SIZE](/windows/win32/api/windef/ns-windef-size) yapısını veya [CSize nesnesini](../../atl-mfc-shared/reference/csize-class.md) işaret edin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-OLE 'den HIMETRIK boyutları alırken ve bunları uygulamanızın doğal eşleme moduna dönüştürmek istiyorsanız bu işlevi kullanın.
+OLE'den HIMETRIC boyutları aldığınızda ve bunları uygulamanızın doğal eşleme moduna dönüştürmek istediğinizde bu işlevi kullanın.
 
-Dönüştürme, önce HIMETRIK birimleri piksel olarak dönüştürerek ve ardından bu birimleri, cihaz bağlamının geçerli eşleme birimleri kullanılarak mantıksal birimlere dönüştürerek yapılır. Cihazın penceresi ve görünüm penceresinin uzatmaların sonucu etkileyeceğini unutmayın.
+Dönüştürme, önce HIMETRIC birimlerini piksellere dönüştürerek ve daha sonra aygıt bağlamının geçerli eşleme birimlerini kullanarak bu birimleri mantıksal birimlere dönüştürerek gerçekleştirilir. Aygıtın penceresinin ve viewportunun kapsamlarının sonucu etkileyeceğini unutmayın.
 
-##  <a name="intersectcliprect"></a>CDC:: IntersectClipRect
+## <a name="cdcintersectcliprect"></a><a name="intersectcliprect"></a>CDC::Kesişme Klipsi
 
-Geçerli bölgenin kesişimini ve *x1*, *Y1*, *x2*ve *Y2*tarafından belirtilen dikdörtgeni oluşturarak yeni bir kırpma bölgesi oluşturur.
+Geçerli bölgenin kesişimini ve *x1*, *y1*, *x2*ve *y2*ile belirtilen dikdörtgeni oluşturarak yeni bir kırpma bölgesi oluşturur.
 
 ```
 int IntersectClipRect(
@@ -4172,39 +4172,39 @@ int IntersectClipRect(LPCRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-Dikdörtgenin sol üst köşesinin mantıksal x koordinatını belirtir.
+Dikdörtgenin sol üst köşesinin mantıksal x-koordinatını belirtir.
 
-*Y1*<br/>
-Dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.
+*y1*<br/>
+Dikdörtgenin sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
 *x2*<br/>
-Dikdörtgenin sağ alt köşesinin mantıksal x koordinatını belirtir.
+Dikdörtgenin sağ alt köşesinin mantıksal x-koordinatını belirtir.
 
-*Y2*<br/>
-Dikdörtgenin sağ alt köşesinin mantıksal y koordinatını belirtir.
+*y2*<br/>
+Dikdörtgenin sağ alt köşesinin mantıksal y-koordinatını belirtir.
 
-*lpRect*<br/>
-Dikdörtgeni belirtir. Bu parametre için bir `CRect` nesnesini ya da bir `RECT` yapısına yönelik bir işaretçi geçirebilirsiniz.
+*Lprect*<br/>
+Dikdörtgeni belirtir. Bu parametre `CRect` için bir nesneyi `RECT` veya işaretçiyi bir yapıya geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Yeni kırpma bölgesinin türü. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- COMPLEXREGION yeni kırpma bölgesinde çakışan kenarlıklar vardır.
+- COMPLEXREGION Yeni kırpma bölgesi çakışan kenarlıklara sahiptir.
 
-- HATA cihaz bağlamı geçerli değil.
+- HATA Aygıt bağlamı geçerli değildir.
 
-- NULLREGION yeni kırpma bölgesi boş.
+- NULLREGION Yeni kırpma bölgesi boş.
 
-- Yeni kırpma bölgesinde SIMPLEREGIÇAKıŞAN kenarlık yok.
+- SIMPLEREGION Yeni kırpma bölgesinin çakışan kenarlıkları yoktur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-GDI, sonraki tüm çıktıyı yeni sınır içine sığacak şekilde kırpar. Genişlik ve yükseklik 32.767 ' i aşmamalıdır.
+GDI, sonraki tüm çıktıları yeni sınıra sığacak şekilde klipler. Genişlik ve yükseklik 32.767'yi geçmemelidir.
 
-##  <a name="invertrect"></a>CDC:: ınevirtrect
+## <a name="cdcinvertrect"></a><a name="invertrect"></a>CDC::InvertRect
 
-Verilen dikdörtgenin içeriğini tersine çevirir.
+Verilen dikdörtgenin içeriğini ters çevirer.
 
 ```
 void InvertRect(LPCRECT lpRect);
@@ -4212,22 +4212,22 @@ void InvertRect(LPCRECT lpRect);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-Ters çevrilen dikdörtgenin mantıksal koordinatlarını içeren bir `RECT` gösterir. Ayrıca, bu parametre için bir `CRect` nesnesi geçirebilirsiniz.
+*Lprect*<br/>
+Ters çevrilecek dikdörtgenin mantıksal koordinatlarını içeren bir `RECT` işaret. Ayrıca bu parametre için bir `CRect` nesne geçirebilirsiniz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Inversion, mantıksal olmayan bir işlemdir ve her bir pikselin bitlerini çevirir. Tek renkli ekranlarda, işlev beyaz pikselleri siyah ve siyah piksel beyaz hale getirir. Renkli ekranlarda, INVERSION ekran için renklerin nasıl oluşturulduğuna bağlıdır. Aynı dikdörtgenle `InvertRect` iki kez çağırmak, ekranı önceki renklerine geri yükler.
+Ters çevirme mantıksal bir Değİl işlemdir ve her pikselin bitlerini çevirir. Tek renkli ekranlarda işlev, beyaz pikselleri siyah ve siyah pikselleri beyaz yapar. Renkli ekranlarda, ters çevirme, renklerin ekran için nasıl oluşturulduğuna bağlıdır. Aynı `InvertRect` dikdörtgenle iki kez arama yapmak ekranı önceki renklerine geri yükler.
 
-Dikdörtgen boşsa hiçbir şey çizilmez.
+Dikdörtgen boşsa, hiçbir şey çizilmemiştir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#36](../../mfc/codesnippet/cpp/cdc-class_8.cpp)]
 
-##  <a name="invertrgn"></a>CDC:: Evirtrgn
+## <a name="cdcinvertrgn"></a><a name="invertrgn"></a>CDC::InvertRgn
 
-*PRgn*tarafından belirtilen bölgedeki renkleri tersine çevirir.
+*pRgn*tarafından belirtilen bölgedeki renkleri ters çeviren.
 
 ```
 BOOL InvertRgn(CRgn* pRgn);
@@ -4236,7 +4236,7 @@ BOOL InvertRgn(CRgn* pRgn);
 ### <a name="parameters"></a>Parametreler
 
 *pRgn*<br/>
-Tersine kullanılacak bölgeyi tanımlar. Bölgenin koordinatları mantıksal birimlerde belirtilir.
+Ters çevrilecek bölgeyi tanımlar. Bölgenin koordinatları mantıksal birimler halinde belirtilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4244,11 +4244,11 @@ Tersine kullanılacak bölgeyi tanımlar. Bölgenin koordinatları mantıksal bi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tek renkli ekranlarda, işlev beyaz pikselleri siyah ve siyah piksel beyaz hale getirir. Renkli ekranlarda, Inversion, renklerin ekran için nasıl oluşturulduğuna bağlıdır.
+Tek renkli ekranlarda işlev, beyaz pikselleri siyah ve siyah pikselleri beyaz yapar. Renkli ekranlarda, ters çevirme, renklerin ekran için nasıl oluşturulduğuna bağlıdır.
 
-##  <a name="isprinting"></a>CDC:: IsPrinting
+## <a name="cdcisprinting"></a><a name="isprinting"></a>CDC::Yazdırma
 
-Cihaz bağlamının yazdırma için kullanılıp kullanılmadığını belirler.
+Aygıt bağlamının yazdırmaiçin kullanılıp kullanılmayacağını belirler.
 
 ```
 BOOL IsPrinting() const;
@@ -4256,11 +4256,11 @@ BOOL IsPrinting() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CDC` nesnesi bir yazıcı DC 'si ise sıfır dışında; Aksi takdirde 0.
+`CDC` Nesne yazıcı DC ise sıfır olmayan; aksi takdirde 0.
 
-##  <a name="lineto"></a>CDC:: LineTo
+## <a name="cdclineto"></a><a name="lineto"></a>CDC::LineTo
 
-Geçerli konumdan *x* ve *y* (veya *Point*) tarafından belirtilen noktayı içerecek şekilde bir çizgi çizer.
+X *ve* *y* (veya *nokta)* tarafından belirtilen noktaya kadar geçerli konumdan bir çizgi çizer, ancak dahil etmez.
 
 ```
 BOOL LineTo(
@@ -4272,30 +4272,30 @@ BOOL LineTo(POINT point);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Çizginin bitiş noktasının mantıksal x koordinatını belirtir.
+*X*<br/>
+Satır için bitiş noktasının mantıksal x koordinatını belirtir.
 
-*Iz*<br/>
-Çizginin uç noktasının mantıksal y koordinatını belirtir.
+*Y*<br/>
+Satır için bitiş noktasının mantıksal y koordinatını belirtir.
 
-*seçeneğinin*<br/>
-Satırın uç noktasını belirtir. Bu parametre için bir `POINT` yapısını ya da bir `CPoint` nesnesini geçirebilirsiniz.
+*Nokta*<br/>
+Satırın bitiş noktasını belirtir. Bu parametre `POINT` için bir `CPoint` yapı veya nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çizgi çizildiyse sıfır dışı; Aksi takdirde 0.
+Çizgi çizilirse sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çizgi seçili kalemle çizilir. Geçerli konum *x*, *y* veya *işaret*olarak ayarlandı.
+Çizgi seçili kalemle çizilir. Geçerli konum *x*, *y* veya *noktasına*ayarlanır.
 
 ### <a name="example"></a>Örnek
 
-  [CRect:: CenterPoint](../../atl-mfc-shared/reference/crect-class.md#centerpoint)örneğine bakın.
+  CRect örneğine [bakın:CenterPoint](../../atl-mfc-shared/reference/crect-class.md#centerpoint).
 
-##  <a name="lptodp"></a>CDC:: LPtoDP
+## <a name="cdclptodp"></a><a name="lptodp"></a>CDC::LPtoDP
 
-Mantıksal birimleri cihaz birimlerine dönüştürür.
+Mantıksal birimleri aygıt birimlerine dönüştürür.
 
 ```
 void LPtoDP(
@@ -4308,27 +4308,27 @@ void LPtoDP(LPSIZE lpSize) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-Bir dizi noktaya işaret eder. Dizideki her bir nokta bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısı veya bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesidir.
+*Lppoints*<br/>
+Bir dizi noktaya işaret edin. Dizideki her nokta bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesidir.
 
-*nCount*<br/>
-Dizideki noktaların sayısı.
+*nSayısı*<br/>
+Dizideki nokta sayısı.
 
-*lpRect*<br/>
-Bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder. Bu parametre, bir dikdörtgeni mantıksal ile cihaz birimlerine eşlemek için kullanılan yaygın bir durumdur.
+*Lprect*<br/>
+[RECT](/windows/win32/api/windef/ns-windef-rect) yapısını veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesini işaret edin. Bu parametre, mantıksaldan aygıt birimlerine dikdörtgeneşleme ortak durumda kullanılır.
 
 *lpSize*<br/>
-[Boyut](/windows/win32/api/windef/ns-windef-size) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
+[SIZE](/windows/win32/api/windef/ns-windef-size) yapısını veya [CSize nesnesini](../../atl-mfc-shared/reference/csize-class.md) işaret edin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, GDI 'nın mantıksal koordinat sisteminden bir cihaz koordinat sistemine kadar her bir noktanın veya boyutun boyutlarının koordinatlarını eşler. Dönüştürme geçerli eşleme moduna ve cihazın penceresi ve görünüm penceresinin kaynakları ve kapsamları ayarlarına bağlıdır.
+İşlev, GDI'nin mantıksal koordinat sisteminden bir aygıt koordinat sistemine kadar her noktanın koordinatlarını veya bir boyutun boyutlarını eşler. Dönüştürme, geçerli eşleme moduna ve aygıtın penceresinin ve görünümün kaynak ve kapsamlarının ayarlarına bağlıdır.
 
-Noktanın x ve y koordinatları,-32.768 ile 32.767 arasında 2 baytlık işaretli tamsayılardır. Eşleme modunun Bu limitlerden daha büyük değerlere neden olacağı durumlarda, sistem değerleri sırasıyla-32.768 ve 32.767 olarak ayarlar.
+Noktaların x ve y koordinatları -32.768 ile 32.767 aralığında 2 bayt imzalı tümsavardır. Eşleme modunun bu sınırlardan daha büyük değerlere neden olacağı durumlarda, sistem değerleri sırasıyla -32.768 ve 32.767 olarak ayarlar.
 
-##  <a name="lptohimetric"></a>CDC:: Lptohimetrik
+## <a name="cdclptohimetric"></a><a name="lptohimetric"></a>CDC::LPtoHIMETRIC
 
-Mantıksal birimleri HIMETRIK birimlerine dönüştürmek için bu işlevi çağırın.
+Mantıksal birimleri HIMETRIC birimlerine dönüştürmek için bu işlevi arayın.
 
 ```
 void LPtoHIMETRIC(LPSIZE lpSize) const;
@@ -4337,17 +4337,17 @@ void LPtoHIMETRIC(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpSize*<br/>
-`SIZE` yapısına veya `CSize` nesnesine işaret eder.
+Bir `SIZE` yapıyı veya `CSize` nesneyi işaret edin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi kullanarak, bir OLE için HIMETRIK boyutlar verdiğinizde, uygulamanızın doğal eşleme modundan dönüştürmeniz gerekir. Cihazın penceresi ve görünüm penceresinin uzatmaların sonucu etkileyeceğini unutmayın.
+Uygulamanızın doğal eşleme modundan dönüştürerek OLE'ye HIMETRIC boyutları verdiğinizde bu işlevi kullanın. Aygıtın penceresinin ve viewportunun kapsamlarının sonucu etkileyeceğini unutmayın.
 
-Dönüştürme işlemi, önce mantıksal birimleri, cihaz bağlamının geçerli eşleme birimlerini kullanarak piksellere dönüştürerek ve sonra bu birimleri HIMETRIMETRIK birimlerine dönüştürerek gerçekleştirilir.
+Dönüştürme, önce aygıt bağlamının geçerli eşleme birimlerini kullanarak mantıksal birimleri piksellere dönüştürerek ve daha sonra bu birimleri HIMETRIC birimlerine dönüştürerek gerçekleştirilir.
 
-##  <a name="m_hattribdc"></a>CDC:: m_hAttribDC
+## <a name="cdcm_hattribdc"></a><a name="m_hattribdc"></a>CDC::m_hAttribDC
 
-Bu `CDC` nesnesinin öznitelik cihaz bağlamı.
+Bu `CDC` nesne için öznitelik aygıt bağlamı.
 
 ```
 HDC m_hAttribDC;
@@ -4355,11 +4355,11 @@ HDC m_hAttribDC;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu cihaz bağlamı `m_hDC`eşittir. Genel olarak, cihaz bağlamından bilgi isteyen `CDC` GDI çağrıları `m_hAttribDC`yönlendirilir. Bu iki cihaz bağlamlarının kullanımı hakkında daha fazla bilgi için [CDC](../../mfc/reference/cdc-class.md) sınıfının açıklamasına bakın.
+Varsayılan olarak, bu aygıt `m_hDC`bağlamı . Genel olarak, `CDC` aygıt bağlamından bilgi isteyen GDI `m_hAttribDC`çağrıları. Bu iki aygıt bağlamının kullanımı hakkında daha fazla bilgi için [CDC](../../mfc/reference/cdc-class.md) sınıfı açıklamasına bakın.
 
-##  <a name="m_hdc"></a>CDC:: m_hDC
+## <a name="cdcm_hdc"></a><a name="m_hdc"></a>CDC::m_hDC
 
-Bu `CDC` nesnesi için çıkış aygıtı bağlamı.
+Bu `CDC` nesne için çıktı aygıtı bağlamı.
 
 ```
 HDC m_hDC;
@@ -4367,11 +4367,11 @@ HDC m_hDC;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_hDC`, varsayılan olarak, `CDC`tarafından Sarmalanan diğer cihaz bağlamı `m_hAttribDC`eşittir. Genel olarak, çıktı oluşturan GDI çağrılarını `CDC` `m_hDC` cihaz bağlamına gidebilirsiniz. Farklı cihazlara işaret etmek için `m_hDC` ve `m_hAttribDC` başlatabilirsiniz. Bu iki cihaz bağlamlarının kullanımı hakkında daha fazla bilgi için [CDC](../../mfc/reference/cdc-class.md) sınıfının açıklamasına bakın.
+Varsayılan olarak, `m_hDC` eşittir `m_hAttribDC`, tarafından sarılmış `CDC`diğer aygıt bağlamı . Genel olarak, `CDC` çıktı oluşturan GDI `m_hDC` çağrıları aygıt bağlamına gider. Baş `m_hAttribDC` harfe `m_hDC` ve farklı aygıtlara işaret edebilirsiniz. Bu iki aygıt bağlamının kullanımı hakkında daha fazla bilgi için [CDC](../../mfc/reference/cdc-class.md) sınıfı açıklamasına bakın.
 
-##  <a name="maskblt"></a>CDC:: MaskBlt
+## <a name="cdcmaskblt"></a><a name="maskblt"></a>CDC::MaskBlt
 
-Verilen maske ve tarama işlemini kullanarak kaynak ve hedef bit eşlemlerin renk verilerini birleştirir.
+Verilen maske ve raster işlemini kullanarak kaynak ve hedef bit eşlemlerinin renk verilerini birleştirir.
 
 ```
 BOOL MaskBlt(
@@ -4390,38 +4390,38 @@ BOOL MaskBlt(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Hedef dikdörtgenin sol üst köşesinin mantıksal x koordinatını belirtir.
+*X*<br/>
+Hedef dikdörtgenin sol üst köşesindeki mantıksal x koordinatını belirtir.
 
-*Iz*<br/>
-Hedef dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.
+*Y*<br/>
+Hedef dikdörtgenin sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
-*nWidth*<br/>
-Hedef dikdörtgenin ve kaynak bit eşlemin mantıksal birimlerindeki genişliği belirtir.
+*Nwidth*<br/>
+Hedef dikdörtgenin ve kaynak bit eşleminin genişliğini mantıksal birimler halinde belirtir.
 
-*nHeight*<br/>
-Hedef dikdörtgenin ve kaynak bit eşlemin mantıksal birimleri cinsinden yüksekliğini belirtir.
+*Nheight*<br/>
+Hedef dikdörtgenin ve kaynak bit haritasının yüksekliğini mantıksal birimler halinde belirtir.
 
 *pSrcDC*<br/>
-Bit eşlemin kopyalanacağı cihaz bağlamını tanımlar. *DwRop* parametresi bir kaynak içermeyen bir tarama işlemi belirtiyorsa sıfır olmalıdır.
+Bit eşleninin kopyalanabilmek için aygıt bağlamını tanımlar. *dwRop* parametresi kaynak içermeyen bir raster işlemi belirtecekse sıfır olmalıdır.
 
 *xSrc*<br/>
-Kaynak bit eşlemin sol üst köşesinin mantıksal x koordinatını belirtir.
+Kaynak bit eşleninin sol üst köşesindeki mantıksal x koordinatını belirtir.
 
 *ySrc*<br/>
-Kaynak bit eşlemin sol üst köşesinin mantıksal y koordinatını belirtir.
+Kaynak bit haritasının sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
-*Maskbit eşlem*<br/>
-Kaynak cihaz bağlamındaki renk bit eşlemiyle birleştirilmiş tek renkli maske bit eşlemini tanımlar.
+*maskBitmap*<br/>
+Kaynak aygıt bağlamında renkli bit eşlemi ile birlikte tek renkli maske bit eşlemi tanımlar.
 
-*xMask*<br/>
-*Maskbıx* parametresi tarafından belirtilen maske bit eşleminin yatay piksel sapmasını belirtir.
+*xMaske*<br/>
+*MaskeBitmap* parametresi tarafından belirtilen maske biteşiçin yatay piksel ofset belirtir.
 
-*Yımask*<br/>
-*Maskbıx* parametresi tarafından belirtilen maske bit eşleminin dikey piksel sapmasını belirtir.
+*yMask*<br/>
+*MaskeBitmap* parametresi tarafından belirtilen maske bit eşlemi için dikey piksel ofset belirtir.
 
 *dwRop*<br/>
-İşlevin kaynak ve hedef verilerin birleşimini denetlemek için kullandığı ön plan ve arka plan Üçlü tarama işlem kodlarını belirtir. Arka plan tarama işlem kodu, bu değerin üst sözcüğünün yüksek baytında depolanır; ön plan tarama işlem kodu, bu değerin üst sözcüğünün düşük baytında depolanır; Bu değerin alt sözcük yok sayılır ve sıfır olmalıdır. Macro MAKEROP4, bu tür ön plan ve arka plan tarama işlem kodlarının bileşimlerini oluşturur. Bu işlevin bağlamındaki ön plan ve arka plan hakkında tartışmak için açıklamalar bölümüne bakın. Ortak tarama işlemi kodlarının listesi için bkz. `BitBlt` üye işlevi.
+İşlevin kaynak ve hedef verilerinin birleşimini denetlemek için kullandığı hem ön plan hem de arka plan tersiyer raster işlem kodlarını belirtir. Arka plan raster işlem kodu bu değerin yüksek kelimeyüksek bayt saklanır; ön plan raster işlem kodu bu değerin yüksek kelimenin düşük bayt saklanır; bu değerin düşük sözcüğü yoksayılır ve sıfır olmalıdır. Makro MAKEROP4 ön plan ve arka plan raster çalışma kodları gibi kombinasyonları oluşturur. Bu işlev bağlamında ön plan ve arka plan tartışması için Açıklamalar bölümüne bakın. Ortak `BitBlt` raster işlem kodları listesi için üye işlevine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4429,15 +4429,15 @@ Kaynak cihaz bağlamındaki renk bit eşlemiyle birleştirilmiş tek renkli mask
 
 ### <a name="remarks"></a>Açıklamalar
 
-*MaskBitmap* tarafından belirtilen maskede 1 değeri, *dwRop* tarafından belirtilen ön plan tarama işlem kodunun o konumda uygulanması gerektiğini gösterir. Maskede 0 değeri, *dwRop* tarafından belirtilen arka plan tarama işlem kodunun o konumda uygulanması gerektiğini gösterir. Raster işlemleri bir kaynak gerektiriyorsa, maske dikdörtgeni kaynak dikdörtgeni kapsamalıdır. Aksi takdirde, işlev başarısız olur. Raster işlemleri bir kaynak gerektirmiyorsa, maske dikdörtgeni hedef dikdörtgeni kapsamalıdır. Aksi takdirde, işlev başarısız olur.
+*maskBitmap* tarafından belirtilen maskede 1 değeri, *dwRop* tarafından belirtilen ön plan raster operasyon kodunun o konumda uygulanması gerektiğini gösterir. Maskedeki 0 değeri, *dwRop* tarafından belirtilen arka plan raster işlem kodunun o konumda uygulanması gerektiğini gösterir. Raster işlemleri bir kaynak gerektiriyorsa, maske dikdörtgeni kaynak dikdörtgeni kapsaymalıdır. Yoksa, işlev başarısız olur. Raster işlemleri bir kaynak gerektirmiyorsa, maske dikdörtgeni hedef dikdörtgeni kapsaymalıdır. Yoksa, işlev başarısız olur.
 
-Bu işlev çağrıldığında kaynak cihaz bağlamı için bir döndürme veya yamultma dönüştürmesi varsa, bir hata oluşur. Ancak, diğer dönüştürme türlerine izin verilir.
+Bu işlev çağrıldığında kaynak aygıt bağlamı için bir döndürme veya yama dönüşümü etkinse, bir hata oluşur. Ancak, diğer dönüşüm türlerine izin verilir.
 
-Kaynak, model ve hedef bit eşlemlerin renk biçimleri farklıysa, bu işlev, hedef biçimiyle eşleşecek şekilde, ya da her ikisini de veya her ikisini birden dönüştürür. Maske bit eşlemi tek renkli bir bit eşlem değilse bir hata oluşur. Gelişmiş bir dosya kaydedilirken, kaynak cihaz bağlamı gelişmiş bir dosya cihazı bağlamını tanımlarsa bir hata oluşur (ve işlev 0 döndürür). Tüm cihazlar `MaskBlt`desteklemez. Bir uygulama, bir cihazın bu işlevi destekleyip desteklemediğini belirlemesi için `GetDeviceCaps` çağırmalıdır. Hiçbir maske bit eşlem sağlanmazsa, bu işlev `BitBlt`, ön plan tarama işlem kodu kullanılarak tam olarak benzer şekilde davranır. Maske bit eşlemindeki piksel uzaklıkları, kaynak cihaz bağlamının bit eşlemindeki noktaya (0, 0) eşlenir. Bu, bir maske bit eşleminin bir maske kümesi içerdiği durumlarda faydalıdır; bir uygulama, `MaskBlt`gönderilen piksel farklarını ve dikdörtgen boyutlarını ayarlayarak maske duyarlı bir göreve her birini kolayca uygulayabilir.
+Kaynak, desen ve hedef bit eşlemlerinin renk biçimleri farklıysa, bu işlev hedef biçimiyle eşleşecek şekilde deseni veya kaynak biçimini veya her ikisini de dönüştürür. Maske bit eşlemi tek renkli bit eşlemesi değilse, bir hata oluşur. Gelişmiş bir metadosya kaydedildiğinde, kaynak aygıt bağlamı gelişmiş bir metadosya aygıt bağlamı tanımlıyorsa bir hata oluşur (ve işlev 0'ı döndürür). Tüm aygıtlar `MaskBlt`desteklenmez. Bir aygıt `GetDeviceCaps` bu işlevi destekler olup olmadığını belirlemek için bir uygulama çağırmalısınız. Maske bit eşlemi sağlanmışsa, bu `BitBlt`işlev ön plan raster işlem kodunu kullanarak tam olarak aynı şekilde çalışır. Maske biteş haritasındaki piksel, kaynak aygıt bağlamındaki nokta (0,0) eşlemidir. Bu, maske bit eşlemi nin bir dizi maske içerdiği durumlar için yararlıdır; bir uygulama, gönderilen piksel uzaklıklarını ve dikdörtgen boyutlarını ayarlayarak herhangi birini maske blitting `MaskBlt`görevine kolayca uygulayabilir.
 
-##  <a name="modifyworldtransform"></a>CDC:: ModifyWorldTransform
+## <a name="cdcmodifyworldtransform"></a><a name="modifyworldtransform"></a>CDC::ModifyWorldTransform
 
-Belirtilen modu kullanarak bir cihaz bağlamı için dünya dönüşümünü değiştirir.
+Belirtilen modu kullanarak bir aygıt bağlamı için dünya dönüşüm değiştirir.
 
 ```
 BOOL ModifyWorldTransform(
@@ -4448,26 +4448,26 @@ BOOL ModifyWorldTransform(
 ### <a name="parameters"></a>Parametreler
 
 *rXform*<br/>
-Verilen cihaz bağlamı için dünya dönüşümünü değiştirmek üzere kullanılan bir [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform) yapısına başvuru.
+Verilen aygıt bağlamı için dünya dönüşümlerini değiştirmek için kullanılan bir [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform) yapısına başvuru.
 
-*ımode*<br/>
-Dönüştürme verilerinin geçerli dünya dönüşümünü nasıl değiştirdiğine belirtir. Bu parametrenin ele aldığı değerlerin bir listesi için bkz. [ModifyWorldTransform](/windows/win32/api/wingdi/nf-wingdi-modifyworldtransform).
+*iMode*<br/>
+Dönüşüm verilerinin mevcut dünya dönüşümlerini nasıl modiblebelirlediğini belirtir. Bu parametrenin alabilecekleri değerlerin listesi [için](/windows/win32/api/wingdi/nf-wingdi-modifyworldtransform)bkz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda sıfır olmayan bir değer döndürür.
+Başarının sıfır olmayan bir değerini verir.
 
 Hatada 0 döndürür.
 
-Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+Genişletilmiş hata bilgilerini almak için [GetLastError'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)arayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows GDI işlevi [ModifyWorldTransform](/windows/win32/api/wingdi/nf-wingdi-modifyworldtransform)' i sarmalanmış.
+Bu yöntem Windows GDI işlevini [değiştirinWorldTransform'i](/windows/win32/api/wingdi/nf-wingdi-modifyworldtransform)sarar.
 
-##  <a name="moveto"></a>CDC:: MoveTo
+## <a name="cdcmoveto"></a><a name="moveto"></a>CDC::MoveTo
 
-Geçerli konumu *x* ve *y* (veya *Point*) tarafından belirtilen noktaya kaydırır.
+Geçerli konumu *x* ve *y* tarafından belirtilen noktaya (veya *noktaya*göre) taşır.
 
 ```
 CPoint MoveTo(
@@ -4479,26 +4479,26 @@ CPoint MoveTo(POINT point);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Yeni konumun mantıksal x koordinatını belirtir.
+*X*<br/>
+Yeni konumun mantıksal x-koordinatını belirtir.
 
-*Iz*<br/>
-Yeni konumun mantıksal y koordinatını belirtir.
+*Y*<br/>
+Yeni konumun mantıksal y-koordinatını belirtir.
 
-*seçeneğinin*<br/>
-Yeni konumu belirtir. Bu parametre için bir `POINT` yapısını ya da bir `CPoint` nesnesini geçirebilirsiniz.
+*Nokta*<br/>
+Yeni konumu belirtir. Bu parametre `POINT` için bir `CPoint` yapı veya nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki konumun x ve y koordinatları `CPoint` nesne olarak.
+Bir `CPoint` nesne olarak önceki konumun x- ve y-koordinatları.
 
 ### <a name="example"></a>Örnek
 
-  [CRect:: CenterPoint](../../atl-mfc-shared/reference/crect-class.md#centerpoint)örneğine bakın.
+  CRect örneğine [bakın:CenterPoint](../../atl-mfc-shared/reference/crect-class.md#centerpoint).
 
-##  <a name="offsetcliprgn"></a>CDC:: OffsetClipRgn
+## <a name="cdcoffsetcliprgn"></a><a name="offsetcliprgn"></a>CDC::OfsetClipRgn
 
-Cihaz bağlamının kırpma bölgesini belirtilen uzaklıklara göre kaydırır.
+Aygıt bağlamının kırpma bölgesini belirtilen uzaklıklara göre taşır.
 
 ```
 int OffsetClipRgn(
@@ -4510,34 +4510,34 @@ int OffsetClipRgn(SIZE size);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Sol veya sağ taşınacak mantıksal birim sayısını belirtir.
+*X*<br/>
+Sola veya sağa hareket etmek için mantıksal birimlerin sayısını belirtir.
 
-*Iz*<br/>
-Yukarı veya aşağı taşımak için mantıksal birim sayısını belirtir.
+*Y*<br/>
+Yukarı veya aşağı hareket etmek için mantıksal birimlerin sayısını belirtir.
 
-*boyutla*<br/>
-Kaydırılacağı miktarı belirtir.
+*Boyutu*<br/>
+Mahsup etmek için miktarı belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Yeni bölgenin türü. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- COMPLEXREGION kırpma bölgesinde çakışan kenarlıklar vardır.
+- COMPLEXREGION Kırpma bölgesi çakışan kenarlıklara sahiptir.
 
-- HATA cihaz bağlamı geçerli değil.
+- HATA Aygıt bağlamı geçerli değildir.
 
-- NULLREGION kırpma bölgesi boş.
+- NULLREGION Kırpma bölgesi boş.
 
-- Kırpma bölgesinde SIMPLEREGIÇAKıŞAN kenarlık yok.
+- SIMPLEREGION Kırpma bölgesinin çakışan kenarlıkları yoktur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi x-ekseni ve *y* birimlerinin bölge *x* birimlerini y ekseni üzerinde taşır.
+İşlev, bölge *x* birimlerini x ekseni boyunca, *y* birimlerini ise y ekseni boyunca hareket ettirir.
 
-##  <a name="offsetviewportorg"></a>CDC:: OffsetViewportOrg
+## <a name="cdcoffsetviewportorg"></a><a name="offsetviewportorg"></a>CDC::OfsetViewportOrg
 
-Görünüm penceresinin koordinatlarını geçerli görünüm penceresinin koordinatlarına göre değiştirir.
+Geçerli viewport kaynağının koordinatlarına göre görüntü kaynağının koordinatlarını değiştirir.
 
 ```
 virtual CPoint OffsetViewportOrg(
@@ -4547,19 +4547,19 @@ virtual CPoint OffsetViewportOrg(
 
 ### <a name="parameters"></a>Parametreler
 
-*nWidth*<br/>
-Geçerli kaynağın x koordinatına eklenecek cihaz birimi sayısını belirtir.
+*Nwidth*<br/>
+Geçerli kaynağın x koordinatına eklenecek aygıt birimlerinin sayısını belirtir.
 
-*nHeight*<br/>
-Geçerli kaynağın y koordinatına eklenecek cihaz birimi sayısını belirtir.
+*Nheight*<br/>
+Geçerli kaynağın y koordinatına eklenecek aygıt birimlerinin sayısını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `CPoint` nesne olarak önceki Görünüm penceresi kaynağı (cihaz koordinatlarında).
+Önceki viewport kökeni (aygıt koordinatlarında) `CPoint` bir nesne olarak.
 
-##  <a name="offsetwindoworg"></a>CDC:: OffsetWindowOrg
+## <a name="cdcoffsetwindoworg"></a><a name="offsetwindoworg"></a>CDC::OfsetWindowOrg
 
-Pencere kaynağının koordinatlarını geçerli pencere başlangıcının koordinatlarına göre değiştirir.
+Geçerli pencere kaynağının koordinatlarına göre pencere kökeninin koordinatlarını değiştirir.
 
 ```
 CPoint OffsetWindowOrg(
@@ -4569,19 +4569,19 @@ CPoint OffsetWindowOrg(
 
 ### <a name="parameters"></a>Parametreler
 
-*nWidth*<br/>
-Geçerli kaynağın x koordinatına eklenecek mantıksal birim sayısını belirtir.
+*Nwidth*<br/>
+Geçerli kaynağın x koordinatına eklenecek mantıksal birimlerin sayısını belirtir.
 
-*nHeight*<br/>
-Geçerli kaynağın y koordinatına eklenecek mantıksal birim sayısını belirtir.
+*Nheight*<br/>
+Geçerli kaynağın y koordinatına eklenecek mantıksal birimlerin sayısını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki pencere kaynağı (mantıksal koordinatlardaki) `CPoint` nesnesi olarak.
+Nesne olarak `CPoint` önceki pencere kökeni (mantıksal koordinatlarda).
 
-##  <a name="operator_hdc"></a>CDC:: operator HDC
+## <a name="cdcoperator-hdc"></a><a name="operator_hdc"></a>CDC::operatör HDC
 
-`CDC` nesnesinin cihaz bağlamı tanıtıcısını almak için bu işleci kullanın.
+`CDC` Nesnenin aygıt bağlam tutamacını almak için bu işleci kullanın.
 
 ```
 operator HDC() const;
@@ -4589,13 +4589,13 @@ operator HDC() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, cihaz bağlamı nesnesinin tanıtıcısı; Aksi takdirde, NULL.
+Başarılı olursa, aygıt bağlam nesnesinin tutamacı; aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleyiciyi doğrudan Windows API 'Leri çağırmak için kullanabilirsiniz.
+Windows API'lerini doğrudan aramak için tutamacı kullanabilirsiniz.
 
-##  <a name="paintrgn"></a>CDC::P aintRgn
+## <a name="cdcpaintrgn"></a><a name="paintrgn"></a>CDC::PaintRgn
 
 Geçerli fırçayı kullanarak *pRgn* tarafından belirtilen bölgeyi doldurur.
 
@@ -4606,15 +4606,15 @@ BOOL PaintRgn(CRgn* pRgn);
 ### <a name="parameters"></a>Parametreler
 
 *pRgn*<br/>
-Doldurulacak bölgeyi tanımlar. Verilen bölgenin koordinatları mantıksal birimlerde belirtilir.
+Doldurulacak bölgeyi tanımlar. Verilen bölgenin koordinatları mantıksal birimler halinde belirtilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.
 
-##  <a name="patblt"></a>CDC::P atBlt
+## <a name="cdcpatblt"></a><a name="patblt"></a>CDC::PatBlt
 
-Cihazda bir bit model oluşturur.
+Aygıtta biraz desen oluşturur.
 
 ```
 BOOL PatBlt(
@@ -4627,30 +4627,30 @@ BOOL PatBlt(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Kalıbı alacak olan dikdörtgenin sol üst köşesinin mantıksal x koordinatını belirtir.
+*X*<br/>
+Deseni almak için dikdörtgenin sol üst köşesindeki mantıksal x-koordinatını belirtir.
 
-*Iz*<br/>
-Kalıbı alacak olan dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.
+*Y*<br/>
+Deseni almak için dikdörtgenin sol üst köşesindeki mantıksal y-koordinatını belirtir.
 
-*nWidth*<br/>
-Kalıbı alacak olan dikdörtgenin genişliğini (mantıksal birimler cinsinden) belirtir.
+*Nwidth*<br/>
+Deseni alacak olan dikdörtgenin genişliğini (mantıksal birimler halinde) belirtir.
 
-*nHeight*<br/>
-Kalıbı alacak olan dikdörtgenin yüksekliğini (mantıksal birimler cinsinden) belirtir.
+*Nheight*<br/>
+Deseni alacak olan dikdörtgenin yüksekliğini (mantıksal birimler halinde) belirtir.
 
 *dwRop*<br/>
-Raster işlem kodunu belirtir. Raster-işlem kodları (ROPs), GDI 'nın geçerli fırça, olası bir kaynak bit eşlem ve hedef bit eşlem içeren çıkış işlemlerinde renkleri nasıl birleştirdiğini tanımlar. Bu parametre aşağıdaki değerlerden biri olabilir:
+Raster-işlem kodunu belirtir. Raster çalışma kodları (ROP'lar), GDI'nin geçerli bir fırça, olası bir kaynak bit eşlemi ve hedef bit eşlemi içeren çıktı işlemlerinde renkleri nasıl birleştirdiğini tanımlar. Bu parametre aşağıdaki değerlerden biri olabilir:
 
-- PATCOPY, kalıbı hedef bit eşlem 'e kopyalar.
+- PATCOPY Hedef bitmap için desen kopyaları.
 
-- PATINVERT, Boolean XOR işlecini kullanarak hedef bit eşlemi desenli şekilde birleştirir.
+- PATINVERT Boolean XOR işleci kullanarak hedef bit haritasını desenle birleştirir.
 
-- DSTıNVERT, hedef bit eşlemini tersine çevirir.
+- DSTINVERT hedef bit eşlemi ters çeviriyor.
 
-- BLACKıCE tüm çıktıyı dönüştürür.
+- BLACKNESS tüm çıkışı siyaha çevirir.
 
-- DUMAN, tüm çıktıyı dönüştürür.
+- BEYAZLIK Tüm çıktıyı beyaza çevirir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4658,13 +4658,13 @@ Raster işlem kodunu belirtir. Raster-işlem kodları (ROPs), GDI 'nın geçerli
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kalıp, seçilen fırçanın bir birleşimidir ve zaten cihazda olan deseninin bir birleşimidir. *DwRop* tarafından belirtilen raster işlem kodu, desenlerin nasıl birleştirileceğini tanımlar. Bu işlev için listelenen Raster işlemleri, tam 256 Üçlü tarama-işlem kodlarının sınırlı bir alt kümesidir; Özellikle, bir kaynağa başvuran bir raster işlem kodu kullanılamaz.
+Desen, seçili fırça ve aygıttaki desenin bir leşimidir. *dwRop* tarafından belirtilen raster-işlem kodu desenleri nasıl birleştirilir tanımlar. Bu işlev için listelenen raster işlemleri tam 256 tersiyer raster-işlem kodları sınırlı bir alt kümesidir; özellikle, bir kaynağa başvuran bir raster-işlem kodu kullanılamaz.
 
-Tüm cihaz bağlamları `PatBlt` işlevini desteklemez. Bir cihaz bağlamının `PatBlt`destekleyip desteklemediğini öğrenmek için, bir `GetDeviceCaps` üye işlevini, RASTERLEŞTIRME diziniyle çağırın ve RC_BITBLT bayrağı için dönüş değerini denetleyin.
+Tüm aygıt bağlamları `PatBlt` işlevi desteklemez. Aygıt bağlamını destekleyip `PatBlt`desteklemediğini `GetDeviceCaps` belirlemek için, RASTERCAPS dizinini içeren üye işlevini arayın ve RC_BITBLT bayrağının iade değerini denetleyin.
 
-##  <a name="pie"></a>CDC::P IE
+## <a name="cdcpie"></a><a name="pie"></a>CDC::Pie
 
-Ortası ve iki uç nokta satırlara göre birleştirilmiş bir elips yay çizerek pasta şekilli bir kama çizer.
+Merkezi ve iki uç noktası çizgilerle birleşen eliptik bir yay çizerek pasta şeklinde bir kama çizer.
 
 ```
 BOOL Pie(
@@ -4686,37 +4686,37 @@ BOOL Pie(
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-Sınırlayıcı dikdörtgenin sol üst köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
+Sınırlayan dikdörtgenin sol üst köşesinin x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y1*<br/>
-Sınırlayıcı dikdörtgenin sol üst köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
+*y1*<br/>
+Sınırlayan dikdörtgenin sol üst köşesinin y-koordinatını (mantıksal birimler halinde) belirtir.
 
 *x2*<br/>
-Sınırlayıcı dikdörtgenin sağ alt köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
+Sınırlayan dikdörtgenin sağ alt köşesinin x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y2*<br/>
-Sınırlayıcı dikdörtgenin sağ alt köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
+*y2*<br/>
+Sınırlayan dikdörtgenin sağ alt köşesinin y-koordinatını (mantıksal birimler halinde) belirtir.
 
 *x3*<br/>
-Yay başlangıç noktasının x koordinatını (mantıksal birimler cinsinden) belirtir. Bu noktanın, tam olarak yay üzerinde olması gerekmez.
+Arkın başlangıç noktasının x-koordinatını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez.
 
-*Y3*<br/>
-Yay başlangıç noktasının y koordinatını (mantıksal birimler cinsinden) belirtir. Bu noktanın, tam olarak yay üzerinde olması gerekmez.
+*y3*<br/>
+Arkın başlangıç noktasının y-koordinatını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez.
 
 *x4*<br/>
-Yay uç noktasının x koordinatını (mantıksal birimler cinsinden) belirtir. Bu noktanın, tam olarak yay üzerinde olması gerekmez.
+Arkın bitiş noktasının x-koordinatını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez.
 
-*Y4*<br/>
-Yay uç noktasının y koordinatını (mantıksal birimler cinsinden) belirtir. Bu noktanın, tam olarak yay üzerinde olması gerekmez.
+*y4*<br/>
+Arkın bitiş noktasının y-koordinatını (mantıksal birimler halinde) belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez.
 
-*lpRect*<br/>
-Sınırlayıcı dikdörtgeni belirtir. Bu parametre için bir `CRect` nesnesini ya da bir `RECT` yapısına yönelik bir işaretçi geçirebilirsiniz.
+*Lprect*<br/>
+Sınırlayıcı dikdörtgeni belirtir. Bu parametre `CRect` için bir nesneyi `RECT` veya işaretçiyi bir yapıya geçirebilirsiniz.
 
-*ptStart*<br/>
-Yay başlangıç noktasını belirtir. Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını ya da [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
+*ptBaşlat*<br/>
+Yay başlangıç noktasını belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez. Bu parametre için bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısını veya [CPoint nesnesinden](../../atl-mfc-shared/reference/cpoint-class.md) geçebilirsiniz.
 
-*ptEnd 'ler*<br/>
-Yay uç noktasını belirtir. Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir `POINT` yapısını ya da bir `CPoint` nesnesini geçirebilirsiniz.
+*ptEnd*<br/>
+Yay uç noktasını belirtir. Bu nokta tam olarak yay üzerinde yalan gerekmez. Bu parametre `POINT` için bir `CPoint` yapı veya nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4724,19 +4724,19 @@ Yay uç noktasını belirtir. Bu noktanın, tam olarak yay üzerinde olması ger
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yay Merkezi, *x1*, *Y1*, *x2*ve *Y2* (veya *lpRect*tarafından) tarafından belirtilen sınırlayıcı dikdörtgenin ortatdır. Yayı başlangıç ve bitiş noktaları, *x3*, *Y3*, *x4*ve *Y4* (ya da *ptStart* ve *ptEnd*tarafından) tarafından belirtilir.
+Yay merkezi *x1*, *y1*, *x2*, ve *y2* (veya *lpRect*tarafından) tarafından belirtilen sınırlayıcı dikdörtgenin merkezidir. Yay başlangıç ve bitiş noktaları *x3*, *y3*, *x4*, ve *y4* (veya *ptStart* ve *ptEnd*tarafından) ile belirtilir.
 
-Yay, seçili kalemle çizilir ve saatin tersi yönde taşınır. Her bir uç noktadan yay merkezine iki ek çizgi çizilir. Pasta şeklindeki alan, geçerli fırça ile doldurulur. *X3* eşittir *x4* ve *Y3* *eşitse, sonuç olarak elips*merkezinden noktaya ( *x3*, *Y3*) veya ( *x4*, *Y4*) tek bir çizgi içeren bir elips olur.
+Yay, saat yönünün tersine hareket eden seçili kalemle çizilir. Her uç noktadan arkın merkezine iki ek çizgi çizilir. Pasta şeklindeki alan geçerli fırçayla doldurulur. *x3* x4'e eşitse ve *y3* *y4'e* eşitse, sonuç elipsin merkezinden noktaya kadar tek bir çizgiye sahip bir elipstir ( *x3*, *y3*) veya ( *x4*, *y4*). *y4*
 
-Bu işlev tarafından çizilen Şekil, ' i uzatır, ancak sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *y2* - *Y1* ve şeklin genişliği *x2* - *x1*olduğu anlamına gelir. Sınırlayıcı dikdörtgenin Width ve yüksekliğinin her ikisi de 2 birimden büyük ve 32.767 birimden az olmalıdır.
+Bu işlev tarafından çizilen şekil kadar uzanır ama sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *y2* - *y1,* şeklin genişliğinin *x2* - *x1*olduğu anlamına gelir. Sınırlayan dikdörtgenin genişliği ve yüksekliği 2 birimden büyük ve 32.767 birimden az olmalıdır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#37](../../mfc/codesnippet/cpp/cdc-class_9.cpp)]
 
-##  <a name="playmetafile"></a>CDC::P layMetaFile
+## <a name="cdcplaymetafile"></a><a name="playmetafile"></a>CDC::PlayMetaFile
 
-Belirtilen meta dosya içeriğini cihaz bağlamında çalar.
+Belirtilen metadosyanın içeriğini aygıt bağlamında yürüter.
 
 ```
 BOOL PlayMetaFile(HMETAFILE hMF);
@@ -4749,13 +4749,13 @@ BOOL PlayMetaFile(
 ### <a name="parameters"></a>Parametreler
 
 *hMF*<br/>
-Çalınabilecek meta dosyasını tanımlar.
+Çalınacak metadosyayı tanımlar.
 
 *hEnhMetaFile*<br/>
-Gelişmiş Meta dosyası tanımlar.
+Geliştirilmiş metadosyayı tanımlar.
 
-*Lpsınır*<br/>
-Resmi göstermek için kullanılan sınırlayıcı dikdörtgenin koordinatlarını içeren bir `RECT` yapısına veya bir `CRect` nesnesine işaret eder. Koordinatlar mantıksal birimlerde belirtilir.
+*lpBounds*<br/>
+Resmi görüntülemek `RECT` için `CRect` kullanılan sınırlayıcı dikdörtgenin koordinatlarını içeren bir yapıya veya nesneye işaret eder. Koordinatlar mantıksal birimler halinde belirtilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4763,17 +4763,17 @@ Resmi göstermek için kullanılan sınırlayıcı dikdörtgenin koordinatların
 
 ### <a name="remarks"></a>Açıklamalar
 
-Meta dosyası herhangi bir sayıda yürütülebilir.
+Metadosya herhangi bir sayıda çalınabilir.
 
-`PlayMetaFile` ikinci sürümü, verilen gelişmiş biçimdeki meta dosya dosyasında depolanan resmi görüntüler. Bir uygulama `PlayMetaFile`ikinci sürümünü çağırdığında, Windows, resmi *Lpsınır* parametresi tarafından işaret edilen dikdörtgenin üzerine eşlemek için gelişmiş-meta dosyası üstbilgisindeki resim çerçevesini kullanır. (Bu resim, `PlayMetaFile`çağrılmadan önce çıkış cihazında dünya dönüştürmesi ayarlanarak Sheared veya döndürülebilir.) Dikdörtgenin kenarları üzerindeki noktaları resme dahil edilir. Gelişmiş Meta dosyası resmi, gelişmiş meta dosyası oynatımadan önce çıkış cihazında kırpma bölgesini tanımlayarak kırpılabilir.
+İkinci sürümü, `PlayMetaFile` verilen gelişmiş biçimli metadosyada depolanan resmi görüntüler. Bir uygulama ikinci sürümünü `PlayMetaFile`aradığında, Windows gelişmiş metadosya üstbilgisinde resmi *lpBounds* parametresi tarafından işaret edilen dikdörtgen üzerine eşlemek için resim çerçevesini kullanır. (Bu resim, aramadan `PlayMetaFile`önce çıkış cihazında dünya dönüşümü ayarlayarak kırpılmış veya döndürülebilir.) Dikdörtgenin kenarlarındaki noktalar resimde yer alıyor. Gelişmiş metadosya resmi, gelişmiş metadosyayı çalmadan önce çıktı aygıtındaki kırpma bölgesini tanımlayarak kırpılabilir.
 
-Gelişmiş bir meta dosya isteğe bağlı bir palet içeriyorsa, bir uygulama `PlayMetaFile`ikinci sürümünü çağırmadan önce çıkış cihazında bir renk paleti ayarlayarak tutarlı renkler elde edebilir. İsteğe bağlı paleti almak için `GetEnhMetaFilePaletteEntries` Windows işlevini kullanın. Gelişmiş bir meta dosyası, `PlayMetaFile` ikinci sürümü çağırarak ve kaynak gelişmiş meta dosyası yeni gelişmiş meta dosyası için cihaz bağlamına yürütülebildiğinden, yeni oluşturulan bir geliştirilmiş meta dosyasına eklenebilir.
+Geliştirilmiş bir metadosya isteğe bağlı bir palet içeriyorsa, bir uygulama `PlayMetaFile`ikinci sürümünü aramadan önce çıktı aygıtında bir renk paleti kurarak tutarlı renkler elde edebilirsiniz. İsteğe bağlı paleti almak `GetEnhMetaFilePaletteEntries` için Windows işlevini kullanın. Geliştirilmiş bir metadosya, yeni oluşturulmuş metadosyanın `PlayMetaFile` ikinci sürümünü arayarak ve kaynak geliştirilmiş metadosyayı yeni geliştirilmiş metadosya için aygıt bağlamına aktararak katıştırılabilir.
 
-Çıkış cihazı bağlamının durumları bu işlev tarafından korunur. Oluşturulan ancak gelişmiş meta dosyasında silinmediği tüm nesneler bu işlev tarafından silinir. Bu işlevi durdurmak için bir uygulama, işlemi sonlandırmak için başka bir iş parçacığından `CancelDC` Windows işlevini çağırabilir. Bu durumda, işlev sıfır döndürür.
+Çıktı aygıtı bağlamının durumları bu işlev tarafından korunur. Geliştirilmiş metadosyada oluşturulan ancak silinmeyen tüm nesneler bu işlev tarafından silinir. Bu işlevi durdurmak için, bir `CancelDC` uygulama işlemi sonlandırmak için başka bir iş parçacığı ndan Windows işlevini çağırabilir. Bu durumda, işlev sıfır döndürür.
 
-##  <a name="plgblt"></a>CDC::P lgBlt
+## <a name="cdcplgblt"></a><a name="plgblt"></a>CDC::PlgBlt
 
-Kaynak cihaz bağlamındaki belirtilen dikdörtgenden alınan renk verileri bitlerinin, belirtilen cihaz bağlamında belirtilen parallekenar ile bir bit blok aktarımı gerçekleştirir.
+Kaynak aygıt bağlamında belirtilen dikdörtgenden belirli aygıt bağlamında belirtilen paralelograma renk veri bitlerinin bit bloğu aktarımını gerçekleştirir.
 
 ```
 BOOL PlgBlt(
@@ -4790,32 +4790,32 @@ BOOL PlgBlt(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lppoınt*<br/>
-Mantıksal alandaki, hedef paralel kenarın üç köşesini tanımlayan üç noktaya oluşan bir diziyi işaret eder. Kaynak dikdörtgenin sol üst köşesi bu dizideki ilk noktaya, bu dizideki ikinci noktaya sağ üst köşeye ve üçüncü noktanın sol alt köşesine eşlenir. Kaynak dikdörtgenin sağ alt köşesi paralelkenar içindeki örtük dördüncü noktaya eşlenir.
+*lpPoint*<br/>
+Hedef paralelkenarın üç köşesini tanımlayan mantıksal alanda üç noktadan oluşan bir diziye işaret edin. Kaynak dikdörtgenin sol üst köşesi bu dizideki ilk noktaya, sağ üst köşeye bu dizideki ikinci noktaya ve sol alt köşeüçüncü noktaya eşlenir. Kaynak dikdörtgenin sağ alt köşesi paralelkenardaki örtük dördüncü noktaya eşlenir.
 
 *pSrcDC*<br/>
-Kaynak cihaz bağlamını tanımlar.
+Kaynak aygıt bağlamını tanımlar.
 
 *xSrc*<br/>
-Kaynak dikdörtgenin sol üst köşesinin x koordinatını (mantıksal birimler) belirler.
+Kaynak dikdörtgenin sol üst köşesindeki x koordinatını mantıksal birimler halinde belirtir.
 
 *ySrc*<br/>
-Kaynak dikdörtgenin sol üst köşesinin y koordinatını, mantıksal birimler cinsinden belirtir.
+Kaynak dikdörtgenin sol üst köşesindeki y-koordinatını mantıksal birimler halinde belirtir.
 
-*nWidth*<br/>
-Kaynak dikdörtgenin mantıksal birimleri cinsinden genişliği belirtir.
+*Nwidth*<br/>
+Kaynak dikdörtgenin genişliğini mantıksal birimler halinde belirtir.
 
-*nHeight*<br/>
-Kaynak dikdörtgenin mantıksal birimlerindeki yüksekliğini belirtir.
+*Nheight*<br/>
+Kaynak dikdörtgenin yüksekliğini mantıksal birimler halinde belirtir.
 
-*Maskbit eşlem*<br/>
-Kaynak dikdörtgenin renklerini maskelemek için kullanılan isteğe bağlı bir tek renkli bit eşlemi tanımlar.
+*maskBitmap*<br/>
+Kaynak dikdörtgenin renklerini maskelemek için kullanılan isteğe bağlı tek renkli bit eşlemi tanımlar.
 
-*xMask*<br/>
-Tek renkli bit eşlemin sol üst köşesinin x koordinatını belirtir.
+*xMaske*<br/>
+Tek renkli bit eşlenin sol üst köşesinin x-koordinatını belirtir.
 
-*Yımask*<br/>
-Tek renkli bit eşlemin sol üst köşesinin y koordinatını belirtir.
+*yMask*<br/>
+Tek renkli bit eşlenin sol üst köşesinin y-koordinatını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4823,21 +4823,21 @@ Tek renkli bit eşlemin sol üst köşesinin y koordinatını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Verilen bit maskesi tanıtıcısı geçerli bir tek renkli bit eşlem tanımlarsa, işlev bu bit eşlemi kaynak dikdörtgenden renk verileri bitlerini maskelemek için kullanır.
+Verilen bitmask tutamacı geçerli bir tek renkli bit eşlemi tanımlıyorsa, işlev kaynak dikdörtgenden renk verilerinin bitlerini maskelemek için bu bit eşlemi kullanır.
 
-Paralelkenar (D) dördüncü köşesi, ilk üç noktayı (A, B ve C) vektör ve bilgi işlem D = B + C-A olarak düşünerek tanımlanır.
+Paralelkenarın dördüncü tepe noktası (D), ilk üç noktanın (A, B ve C) vektör olarak ele alılarak ve D = B + C - A'nın hesaplanmasıyla tanımlanır.
 
-Bit maskesi varsa, maskede 1 değeri kaynak piksel renginin hedefe kopyalanması gerektiğini gösterir. Maskede 0 değeri, hedef piksel renginin değiştirilmeyeceğini belirtir.
+Bitmaskesi varsa, maskedeki 1 değeri kaynak piksel renginin hedefe kopyalanmasını gösterir. Maskedeki 0 değeri, hedef piksel renginin değiştirilmeyeceğini gösterir.
 
-Maske dikdörtgeni kaynak ve hedef dikdörtgenlerden küçükse işlev, maske modelini çoğaltır.
+Maske dikdörtgeni kaynak ve hedef dikdörtgenlerden daha küçükse, işlev maske deseni çoğaltır.
 
-Kaynak cihaz bağlamında ölçekleme, çeviri ve yansıma dönüşümlerine izin verilir; Ancak, döndürme ve yamultma dönüştürmeleri değildir. Maske bit eşlemi tek renkli bir bit eşlem değilse bir hata oluşur. Hedef cihaz bağlamı için uzatma modu, gerekirse piksellerin nasıl uzatılarak veya sıkıştırılacağını belirlemekte kullanılır. Gelişmiş bir dosya kaydedilirken, kaynak cihaz bağlamı gelişmiş bir dosya cihazı bağlamını tanımlarsa bir hata oluşur.
+Kaynak aygıt bağlamında ölçekleme, çeviri ve yansıma dönüşümlerine izin verilir; ancak, döndürme ve kesme dönüşümleri değildir. Maske bit eşlemi tek renkli bit eşlemesi değilse, bir hata oluşur. Hedef aygıt bağlamı için germe modu, gerekirse piksellerin nasıl uzatılabildiğini veya sıkıştırılabildiğini belirlemek için kullanılır. Gelişmiş bir metadosya kaydediliyorsa, kaynak aygıt bağlamı gelişmiş bir metadosya aygıt bağlamını tanımlıyorsa bir hata oluşur.
 
-Hedef koordinatları hedef cihaz bağlamına göre dönüştürülür; kaynak koordinatları kaynak cihaz bağlamına göre dönüştürülür. Kaynak dönüşümünün bir döndürme veya yamultma varsa, bir hata döndürülür. Hedef ve kaynak dikdörtgenlerinin renk biçimi yoksa `PlgBlt` kaynak dikdörtgeni hedef dikdörtgenle eşleşecek şekilde dönüştürür. Tüm cihazlar `PlgBlt`desteklemez. Daha fazla bilgi için `CDC::GetDeviceCaps` üye işlevindeki RC_BITBLT tarama özelliğinin açıklamasına bakın.
+Hedef koordinatları hedef cihaz bağlamına göre dönüştürülür; kaynak koordinatları kaynak cihaz bağlamına göre dönüştürülür. Kaynak dönüşüm bir döndürme veya yama varsa, bir hata döndürülür. Hedef ve kaynak dikdörtgenler aynı renk biçimine sahip `PlgBlt` değilse, hedef dikdörtgenle eşleşecek şekilde kaynak dikdörtgeni dönüştürür. Tüm aygıtlar `PlgBlt`desteklenmez. Daha fazla bilgi için, üye işlevdeki RC_BITBLT `CDC::GetDeviceCaps` raster kapasitesinin açıklamasına bakın.
 
-Kaynak ve hedef cihaz bağlamları uyumsuz cihazları temsil ediyorsa, `PlgBlt` bir hata döndürür.
+Kaynak ve hedef aygıt bağlamları uyumsuz `PlgBlt` aygıtları temsil ediyorsa, bir hata döndürür.
 
-##  <a name="polybezier"></a>CDC::P olyBezier
+## <a name="cdcpolybezier"></a><a name="polybezier"></a>CDC::PolyBezier
 
 Bir veya daha fazla Bzier splines çizer.
 
@@ -4849,11 +4849,11 @@ BOOL PolyBezier(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-, Nesnelerin uç noktalarını ve denetim noktalarını içeren bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapıları dizisine işaret eder.
+*Lppoints*<br/>
+Spline(ler)'in uç noktalarını ve kontrol noktalarını içeren bir dizi [POINT](/windows/win32/api/windef/ns-windef-point) veri yapısına işaret eder.
 
-*nCount*<br/>
-*LpPoints* dizisindeki noktaların sayısını belirtir. Her Bzier eğrisi iki denetim noktası ve bir uç nokta gerektirdiğinden ve başlangıç eğrisi ek bir başlangıç noktası gerektirdiğinden, bu değer üç kereden fazla üç kez olmalıdır.
+*nSayısı*<br/>
+*lpPoints* dizisindeki nokta sayısını belirtir. Her Bzier spline iki denetim noktası ve bir bitiş noktası gerektirdiğinden, bu değer çizilecek spline sayısının üç katından fazla olmalıdır ve ilk spline ek bir başlangıç noktası gerektirir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4861,11 +4861,11 @@ BOOL PolyBezier(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, *lpPoints* parametresi tarafından belirtilen uç noktaları ve denetim noktalarını kullanarak üçüncü dereceden Bzier daki cetvelleri çizer. İlk eğri, ikinci ve üçüncü noktaları denetim noktaları olarak kullanarak ilk noktadan dördüncü noktaya çizilir. Dizideki izleyen her bir eğri için tam olarak üç nokta gerekir: önceki eğri bitiş noktası başlangıç noktası olarak kullanılır, dizideki sonraki iki nokta denetim noktaları olur ve üçüncüsü bitiş noktasıdır.
+Bu *işlev, lpPoints* parametresi tarafından belirtilen uç noktaları ve kontrol noktalarını kullanarak kübik Bzier splines çizer. İlk spline kontrol noktaları olarak ikinci ve üçüncü noktaları kullanılarak birinci noktadan dördüncü noktaya çizilir. Dizideki sonraki her spline tam olarak üç puan adabına ihtiyaç duyar: önceki spline'ın bitiş noktası başlangıç noktası olarak kullanılır, dizideki sonraki iki nokta kontrol noktalarıdır ve üçüncüsü bitiş noktasıdır.
 
-Geçerli konum `PolyBezier` işlevi tarafından kullanılmıyor veya güncelleştirilmedi. Şekil doldurulmamış. Bu işlev, satırları geçerli kalemi kullanarak çizer.
+Geçerli konum `PolyBezier` işlev tarafından ne kullanılır ne de güncelleştirilir. Şekil doldurulmadı. Bu işlev, geçerli kalemi kullanarak çizgiler çizer.
 
-##  <a name="polybezierto"></a>CDC::P olyBezierTo
+## <a name="cdcpolybezierto"></a><a name="polybezierto"></a>CDC::PolyBezierTo
 
 Bir veya daha fazla Bzier splines çizer.
 
@@ -4877,11 +4877,11 @@ BOOL PolyBezierTo(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-Uç noktaları ve denetim noktalarını içeren bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapıları dizisine işaret eder.
+*Lppoints*<br/>
+Uç noktaları ve denetim noktalarını içeren bir dizi [POINT](/windows/win32/api/windef/ns-windef-point) veri yapısına işaret edin.
 
-*nCount*<br/>
-*LpPoints* dizisindeki noktaların sayısını belirtir. Her Bzier eğrisi iki denetim noktası ve bir uç nokta gerektirdiğinden bu değer çizilecek daki cetvelleri sayısının üç katı olmalıdır.
+*nSayısı*<br/>
+*lpPoints* dizisindeki nokta sayısını belirtir. Her Bzier spline iki denetim noktası ve bir bitiş noktası gerektirdiğinden, bu değer çizilecek splines sayısının üç katı olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4889,13 +4889,13 @@ Uç noktaları ve denetim noktalarını içeren bir [nokta](/windows/win32/api/w
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, *lpPoints* parametresi tarafından belirtilen denetim noktalarını kullanarak üçüncü dereceden Bzier daki cetvelleri çizer. İlk eğri, denetim noktaları olarak ilk iki noktayı kullanarak geçerli konumdan üçüncü noktaya çizilir. Sonraki her eğri için, işlevin tam olarak üç noktası olması gerekir ve bir sonraki için başlangıç noktası olarak önceki eğri bitiş noktasını kullanır. `PolyBezierTo` geçerli konumu son Bzier eğrisi bitiş noktasına taşımaktır. Şekil doldurulmamış. Bu işlev, satırları geçerli kalemi kullanarak çizer.
+Bu işlev *lpPoints* parametresi tarafından belirtilen kontrol noktalarını kullanarak kübik Bzier splines çizer. İlk spline, ilk iki noktayı kontrol noktası olarak kullanarak geçerli konumdan üçüncü noktaya doğru çekilir. Sonraki her spline için, işlev tam olarak üç nokta daha gerekir ve bir sonraki için başlangıç noktası olarak önceki spline bitiş noktasını kullanır. `PolyBezierTo`geçerli konumu son Bzier spline bitiş noktasına taşır. Şekil doldurulmadı. Bu işlev, geçerli kalemi kullanarak çizgiler çizer.
 
 ### <a name="example"></a>Örnek
 
-  [CDC:: BeginPath](#beginpath)örneğine bakın.
+  CDC örneğine [bakın::BeginPath](#beginpath).
 
-##  <a name="polydraw"></a>CDC::P olyDraw
+## <a name="cdcpolydraw"></a><a name="polydraw"></a>CDC::PolyDraw
 
 Çizgi parçaları ve Bzier splines kümesi çizer.
 
@@ -4908,28 +4908,28 @@ BOOL PolyDraw(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-Her bir satır parçasının bitiş noktalarını ve her bir Bzier eğrisi için uç noktaları ve denetim noktalarını içeren bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapıları dizisine işaret eder.
+*Lppoints*<br/>
+Her satır kesimi için uç noktaları ve her Bzier spline için uç noktaları ve denetim noktalarını içeren point [veri](/windows/win32/api/windef/ns-windef-point) yapıları dizisini işaret eder.
 
 *lpTypes*<br/>
-*LpPoints* dizisindeki her noktanın nasıl kullanıldığını belirten bir diziyi işaret eder. Değerler aşağıdakilerden biri olabilir:
+*LPPoints* dizisindeki her noktanın nasıl kullanıldığını belirten bir diziye işaret ediyor. Değerler aşağıdakilerden biri olabilir:
 
-- PT_MOVETO, bu noktanın ayrık bir şekil başlatıldığını belirtir. Bu nokta, yeni geçerli konum olur.
+- PT_MOVETO Bu noktanın kopuk bir şekil başlattığını belirtir. Bu nokta yeni geçerli konum olur.
 
-- PT_LINETO geçerli konumdan bu noktaya çizilmek üzere bir çizgi olduğunu belirtir ve bu yeni geçerli konum olur.
+- PT_LINETO Bir çizginin geçerli konumdan bu noktaya çekilecek ve daha sonra yeni geçerli konum olur belirtir.
 
-- PT_BEZIERTO, bu noktanın bir Bzier eğrisi için bir denetim noktası veya bitiş noktası olduğunu belirtir.
+- PT_BEZIERTO Bu noktanın bir Bzier spline için bir denetim noktası veya bitiş noktası olduğunu belirtir.
 
-PT_BEZIERTO türler her zaman üç kümede oluşur. Geçerli konum Bzier eğrisi için başlangıç noktasını tanımlar. İlk iki PT_BEZIERTO noktası denetim noktalarıdır ve üçüncü PT_BEZIERTO noktası bitiş noktasıdır. Bitiş noktası yeni geçerli konum olur. Art arda üç PT_BEZIERTO noktası yoksa bir hata oluşur.
+PT_BEZIERTO türleri her zaman üç kümeler halinde oluşur. Geçerli konum Bzier spline için başlangıç noktasını tanımlar. İlk iki PT_BEZIERTO noktası kontrol noktaları, üçüncü PT_BEZIERTO noktası ise bitiş noktasıdır. Bitiş noktası yeni geçerli konum olur. Art arda üç PT_BEZIERTO noktası yoksa, bir hata sonucu.
 
-   Bir PT_LINETO veya PT_BEZIERTO türü, bit düzeyinde operatör kullanılarak veya ilgili noktanın bir şekildeki son nokta olduğunu ve şeklin kapandığını göstermek için aşağıdaki sabitle birleştirilebilir:
+   Bir PT_LINETO veya PT_BEZIERTO türü, karşılık gelen noktanın bir rakamdaki son nokta olduğunu ve şeklin kapalı olduğunu belirtmek için bit yönünden işleç VEYA kullanılarak aşağıdaki sabitle birleştirilebilir:
 
-- PT_CLOSEFIGURE, bu nokta için PT_LINETO veya PT_BEZIERTO türü yapıldıktan sonra şeklin otomatik olarak kapatıldığını belirtir. Bu noktadan en son PT_MOVETO veya `MoveTo` noktasına bir çizgi çizilir.
+- PT_CLOSEFIGURE Bu nokta için PT_LINETO veya PT_BEZIERTO türü yapıldıktan sonra şeklin otomatik olarak kapatılır olduğunu belirtir. Bir çizgi bu noktadan en son `MoveTo` PT_MOVETO veya noktaya çizilir.
 
-   Bu bayrak, bir çizgi için PT_LINETO türü ile veya bit düzeyinde **or** Işleci kullanılarak Bzier eğrisi için bitiş noktasının PT_BEZIERTO türü ile birleştirilir. Geçerli konum kapanış satırının bitiş noktasına ayarlanır.
+   Bu bayrak, bitwise **OR** işleci kullanılarak, bir satır için PT_LINETO türü veya bzier spline için PT_BEZIERTO bitiş noktası türü yle birleştirilir. Geçerli konum kapanış satırının bitiş noktasına ayarlanır.
 
-*nCount*<br/>
-*LpTypes* dizisindeki bayt sayısıyla aynı olan, *lpPoints* dizisindeki toplam noktaların sayısını belirtir.
+*nSayısı*<br/>
+*LPPoints* dizisindeki toplam nokta sayısını, *lpTypes* dizisindeki bayt sayısıyla aynı olarak belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4937,15 +4937,15 @@ PT_BEZIERTO türler her zaman üç kümede oluşur. Geçerli konum Bzier eğrisi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, `CDC::MoveTo`, `CDC::LineTo`ve `CDC::PolyBezierTo` üye işlevlerine yönelik ardışık çağrıların yerine ayrık şekiller çizmek için kullanılabilir. Çizgiler ve daki cetvelleri, geçerli kalem kullanılarak çizilir ve şekiller doldurulmaz. `CDC::BeginPath` üye işlevi çağırarak başlatılan etkin bir yol varsa, `PolyDraw` yola ekler. *LpPoints* dizisinde ve *lpTypes* içinde bulunan noktaları, her noktanın bir `CDC::MoveTo`, `CDC::LineTo`veya `CDC::BezierTo` işleminin parçası olup olmadığını gösterir. Şekilleri kapatmak da mümkündür. Bu işlev geçerli konumu güncelleştirir.
+Bu işlev, ardışık çağrılar yerine ayrık rakamlar çizmek `CDC::MoveTo` `CDC::LineTo`için `CDC::PolyBezierTo` kullanılabilir , ve üye işlevler. Çizgiler ve splines geçerli kalem kullanılarak çizilir ve rakamlar doldurulmaz. `CDC::BeginPath` Üye işlevi çağırarak başlatılan etkin bir `PolyDraw` yol varsa, yola ekler. *LPPoints* dizisinde ve *lpTypes'de* yer alan noktalar, her `CDC::MoveTo`noktanın bir , a `CDC::LineTo`veya işlemin `CDC::BezierTo` parçası olup olmadığını gösterir. Rakamları kapatmak da mümkündür. Bu işlev geçerli konumu güncelleştirir.
 
 ### <a name="example"></a>Örnek
 
-  [CDC:: BeginPath](#beginpath)örneğine bakın.
+  CDC örneğine [bakın::BeginPath](#beginpath).
 
-##  <a name="polygon"></a>CDC::P olygon
+## <a name="cdcpolygon"></a><a name="polygon"></a>CDC::Polygon
 
-Geçerli kalemi kullanarak, satırlara göre bağlı iki veya daha fazla noktadan (köşeler) oluşan bir çokgen çizer.
+Geçerli kalemi kullanarak çizgilerle birbirine bağlanmış iki veya daha fazla noktadan (tepe noktaları) oluşan bir çokgen çizer.
 
 ```
 BOOL Polygon(
@@ -4955,11 +4955,11 @@ BOOL Polygon(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-Çokgenin köşelerini belirten bir işaret dizisine işaret eder. Dizideki her nokta bir `POINT` yapısıdır veya bir `CPoint` nesnesidir.
+*Lppoints*<br/>
+Çokgenin tepe noktalarını belirten bir dizi noktaya işaret eder. Dizideki her nokta `POINT` bir yapı `CPoint` veya nesnedir.
 
-*nCount*<br/>
-Dizideki köşelerin sayısını belirtir.
+*nSayısı*<br/>
+Dizideki vertices sayısını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4967,17 +4967,17 @@ Dizideki köşelerin sayısını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sistem, gerekirse, en son köşenin ilk köşesini bir çizgi çizerek otomatik olarak çokgeni kapatır.
+Sistem, gerekirse, son tepe noktasından ilk tepeye bir çizgi çizerek çokgeni otomatik olarak kapatır.
 
-Geçerli Çokgen doldurma modu `GetPolyFillMode` ve `SetPolyFillMode` üye işlevleri kullanılarak alınabilir veya ayarlanabilir.
+Geçerli çokgen doldurma modu ve `GetPolyFillMode` `SetPolyFillMode` üye işlevler kullanılarak alınabilir veya ayarlanabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#38](../../mfc/codesnippet/cpp/cdc-class_10.cpp)]
 
-##  <a name="polyline"></a>CDC::P olyline
+## <a name="cdcpolyline"></a><a name="polyline"></a>CDC::Polyline
 
-*LpPoints*tarafından belirtilen noktaları bağlayan bir çizgi kesimleri kümesi çizer.
+*lpPoints*tarafından belirtilen noktaları bağlayan çizgi segmentleri kümesi çizer.
 
 ```
 BOOL Polyline(
@@ -4987,11 +4987,11 @@ BOOL Polyline(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-Bağlanacak bir `POINT` yapısı veya `CPoint` nesneleri dizisine işaret eder.
+*Lppoints*<br/>
+Bağlanacak bir `POINT` dizi `CPoint` yapı ya da nesneye işaret eder.
 
-*nCount*<br/>
-Dizideki noktaların sayısını belirtir. Bu değer en az 2 olmalıdır.
+*nSayısı*<br/>
+Dizideki nokta sayısını belirtir. Bu değer en az 2 olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4999,11 +4999,11 @@ Dizideki noktaların sayısını belirtir. Bu değer en az 2 olmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Satırlar, geçerli kalemin kullanıldığı sonraki noktalara göre ilk noktadan çizilir. `LineTo` member işlevinin aksine, `Polyline` işlevi geçerli konumu kullanmaz veya güncelleştirmez.
+Çizgiler, geçerli kalem kullanılarak sonraki noktalara kadar ilk noktadan çizilir. Üye `LineTo` işlevin aksine, `Polyline` işlev geçerli konumu ne kullanır ne de güncelleştirir.
 
-Daha fazla bilgi için Windows SDK [Çoklu çizgi](/windows/win32/api/wingdi/nf-wingdi-polyline) bölümüne bakın.
+Daha fazla bilgi için Windows SDK'daki [PolyLine'a](/windows/win32/api/wingdi/nf-wingdi-polyline) bakın.
 
-##  <a name="polylineto"></a>CDC::P olylineTo
+## <a name="cdcpolylineto"></a><a name="polylineto"></a>CDC::PolylineTo
 
 Bir veya daha fazla düz çizgi çizer.
 
@@ -5015,11 +5015,11 @@ BOOL PolylineTo(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-Çizginin köşelerini içeren bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapıları dizisine işaret eder.
+*Lppoints*<br/>
+Satırın vertices içeren [POINT](/windows/win32/api/windef/ns-windef-point) veri yapıları bir dizi işaret eder.
 
-*nCount*<br/>
-Dizideki noktaların sayısını belirtir.
+*nSayısı*<br/>
+Dizideki nokta sayısını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -5027,11 +5027,11 @@ Dizideki noktaların sayısını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli konumdan, geçerli kalemden *lpPoints* parametresi tarafından belirtilen ilk noktaya bir çizgi çizilir. Her ek satır için işlev, önceki satırın bitiş noktasından *lpPoints*tarafından belirtilen bir sonraki noktaya çizer. `PolylineTo` geçerli konumu son satırın bitiş noktasına taşımaktır. Bu işlev tarafından çizilen çizgi kesimleri kapalı bir şekil içeriyorsa, şekil doldurulmaz.
+Bir çizgi geçerli konumdan *lpPoints* parametresi tarafından belirtilen ilk noktaya geçerli kalem kullanılarak çizilir. Her ek satır için işlev, önceki satırın bitiş noktasından *lpPoints*tarafından belirtilen bir sonraki noktaya çizer. `PolylineTo`geçerli konumu son satırın bitiş noktasına taşır. Bu işlev tarafından çizilen çizgi segmentleri kapalı bir şekil oluşturursa, şekil doldurulmaz.
 
-##  <a name="polypolygon"></a>CDC::P olyPolygon
+## <a name="cdcpolypolygon"></a><a name="polypolygon"></a>CDC::PolyPolygon
 
-Geçerli Çokgen doldurma modu kullanılarak doldurulmuş iki veya daha fazla Çokgen oluşturur.
+Geçerli çokgen doldurma modu kullanılarak doldurulan iki veya daha fazla çokgen oluşturur.
 
 ```
 BOOL PolyPolygon(
@@ -5042,14 +5042,14 @@ BOOL PolyPolygon(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-`POINT` yapılarının dizisini veya poligonun köşelerini tanımlayan `CPoint` nesneleri işaret eder.
+*Lppoints*<br/>
+Çokgenlerin tepe `POINT` noktalarını tanımlayan bir dizi yapı veya `CPoint` nesneye işaret eder.
 
 *lpPolyCounts*<br/>
-Her biri, *lpPoints* dizisindeki çokgenlerin birindeki noktaların sayısını belirten bir tamsayılar dizisine işaret eder.
+LpPoints dizisindeki çokgenlerden birinde nokta sayısını belirten bir dizi karşıcıyı işaret eder. *lpPoints*
 
-*nCount*<br/>
-*LpPolyCounts* dizisindeki giriş sayısı. Bu sayı, çizilecek çokgenler sayısını belirtir. Bu değer en az 2 olmalıdır.
+*nSayısı*<br/>
+*lpPolyCounts* dizisindeki giriş sayısı. Bu sayı çizilecek çokgen lerin sayısını belirtir. Bu değer en az 2 olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -5057,17 +5057,17 @@ Her biri, *lpPoints* dizisindeki çokgenlerin birindeki noktaların sayısını 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çokgenler kopuk veya örtülen olabilir.
+Çokgenler kopuk veya çakışıyor olabilir.
 
-`PolyPolygon` işlevine yapılan çağrıda belirtilen her Çokgen kapatılmalıdır. `Polygon` member işlevi tarafından oluşturulan çokgenler farklı olarak, `PolyPolygon` tarafından oluşturulan çokgenler otomatik olarak kapanmaz.
+`PolyPolygon` İşlev çağrısında belirtilen her çokgen kapatılmalıdır. `Polygon` Üye işlev tarafından oluşturulan çokgenlerin aksine, oluşturulan `PolyPolygon` çokgenler otomatik olarak kapatılmaz.
 
-İşlev iki veya daha fazla Çokgen oluşturur. Tek bir çokgen oluşturmak için, bir uygulamanın `Polygon` üye işlevini kullanması gerekir.
+İşlev iki veya daha fazla çokgen oluşturur. Tek bir çokgen oluşturmak için, bir `Polygon` uygulama üye işlevi kullanmalıdır.
 
-Geçerli Çokgen doldurma modu `GetPolyFillMode` ve `SetPolyFillMode` üye işlevleri kullanılarak alınabilir veya ayarlanabilir.
+Geçerli çokgen doldurma modu ve `GetPolyFillMode` `SetPolyFillMode` üye işlevler kullanılarak alınabilir veya ayarlanabilir.
 
-##  <a name="polypolyline"></a>CDC::P olyPolyline
+## <a name="cdcpolypolyline"></a><a name="polypolyline"></a>CDC::PolyPolyline
 
-Birden çok bağlantılı çizgi segmentini çizer.
+Birden çok bağlı çizgi parçası serisi çizer.
 
 ```
 BOOL PolyPolyline(
@@ -5078,14 +5078,14 @@ BOOL PolyPolyline(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoints*<br/>
-Polylines köşeleri içeren bir yapı dizisine işaret eder. Çoklu çizgilerin çizgisini ardışık olarak belirtilir.
+*Lppoints*<br/>
+Çok çizgilerin vertices içeren yapıların bir dizi işaret eder. Polilinler art arda belirtilir.
 
 *lpPolyPoints*<br/>
-Karşılık gelen Çokgen için *lpPoints* dizisindeki noktaların sayısını belirten bir değişken dizisine işaret eder. Her giriş 2 ' den büyük veya buna eşit olmalıdır.
+İlgili çokgen için *lpPoints* dizisindeki nokta sayısını belirten bir dizi değişkene işaret eder. Her giriş 2'den büyük veya eşit olmalıdır.
 
-*nCount*<br/>
-*LpPolyPoints* dizisindeki toplam sayı sayısını belirtir.
+*nSayısı*<br/>
+*lpPolyPoints* dizisindeki toplam sayım sayısını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -5093,11 +5093,11 @@ Karşılık gelen Çokgen için *lpPoints* dizisindeki noktaların sayısını b
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çizgi kesimleri, geçerli kalem kullanılarak çizilir. Segmentler tarafından oluşturulan rakamlar doldurulmamış. Geçerli konum bu işlev tarafından kullanılmıyor veya güncelleştirilmedi.
+Çizgi segmentleri geçerli kalem kullanılarak çizilir. Segmentlerin oluşturduğu rakamlar doldurulmamaktadır. Geçerli konum bu işlev tarafından ne kullanılır ne de güncelleştirilir.
 
-##  <a name="ptvisible"></a>CDC::P tVisible
+## <a name="cdcptvisible"></a><a name="ptvisible"></a>CDC::PtVisible
 
-Verilen noktanın cihaz bağlamının kırpma bölgesi içinde olup olmadığını belirler.
+Verilen noktanın aygıt bağlamının kırpma bölgesinde olup olmadığını belirler.
 
 ```
 virtual BOOL PtVisible(
@@ -5109,22 +5109,22 @@ BOOL PtVisible(POINT point) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Noktanın mantıksal x koordinatını belirtir.
+*X*<br/>
+Noktanın mantıksal x-koordinatını belirtir.
 
-*Iz*<br/>
-Noktanın mantıksal y koordinatını belirtir.
+*Y*<br/>
+Noktanın mantıksal y-koordinatını belirtir.
 
-*seçeneğinin*<br/>
-Mantıksal koordinatları denetlenecek noktayı belirtir. Bu parametre için bir `POINT` yapısını ya da bir `CPoint` nesnesini geçirebilirsiniz.
+*Nokta*<br/>
+Mantıksal koordinatları kontrol etmek için nokta belirtir. Bu parametre `POINT` için bir `CPoint` yapı veya nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen nokta kırpma bölgesi içindeyse sıfır dışı; Aksi takdirde 0.
+Belirtilen nokta kırpma bölgesi içindeyse sıfırsız; aksi takdirde 0.
 
-##  <a name="queryabort"></a>CDC:: QueryAbort
+## <a name="cdcqueryabort"></a><a name="queryabort"></a>CDC::QueryAbort
 
-Yazdırma uygulaması için [SetAbortProc](#setabortproc) üye işlevi tarafından yüklenen Abort işlevini çağırır ve yazdırmanın sonlandırılması gerekip gerekmediğini sorgular.
+Yazdırma uygulaması için [SetAbortProc](#setabortproc) üye işlevi tarafından yüklenen iptal işlevini çağırır ve yazdırmanın sonlandırılıp sonlandırılmaması gerektiğini sorgular.
 
 ```
 BOOL QueryAbort() const;
@@ -5132,11 +5132,11 @@ BOOL QueryAbort() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazdırma devam etmelidir veya bir iptal yordamı yoksa, dönüş değeri sıfır dışı olur. Yazdırma işinin sonlandırılması gerekiyorsa bu 0 ' dır. Dönüş değeri, Abort işlevi tarafından sağlanır.
+Yazdırma devam ederse veya iptal yordamı yoksa iade değeri sıfır değildir. Yazdırma işi sonlandırılmalı ysa 0'dır. İade değeri iptal işlevi tarafından sağlanır.
 
-##  <a name="realizepalette"></a>CDC:: RealizePalette
+## <a name="cdcrealizepalette"></a><a name="realizepalette"></a>CDC::RealizePalette
 
-Geçerli mantıksal paletten sistem paletine olan girdileri eşler.
+Girişleri geçerli mantıksal paletten sistem paletine eşler.
 
 ```
 UINT RealizePalette();
@@ -5144,17 +5144,17 @@ UINT RealizePalette();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Mantıksal Paletteki kaç giriş, sistem paletindeki farklı girdilerle eşlendiğini gösterir. Bu, mantıksal paletin en son gerçekleştirildiği bu yana, sistem paletindeki değişikliklere uyum sağlamak için bu işlevin yeniden eşlenen giriş sayısını temsil eder.
+Mantıksal paletteki kaç girişin sistem paletindeki farklı girişlere eşlandığını gösterir. Bu, mantıksal palet en son gerçekleştirildiğinden beri bu işlevin sistem paletindeki değişiklikleri karşılamak için yeniden ele aldığı giriş sayısını gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir mantıksal renk paleti, renkleri yoğun uygulamalar ve sistem arasında bir arabellek görevi görür ve bir uygulamanın, kendi Görüntülenme renkleriyle veya diğer pencereler tarafından görüntülenmeksizin gereken sayıda renk kullanmasına izin verir.
+Mantıksal renk paleti, renk yoğun uygulamalar ve sistem arasında bir arabellek görevi görerek, bir uygulamanın kendi görüntülenen renklerine veya diğer pencerelertarafından görüntülenen renklere müdahale etmeden gerektiği kadar renk kullanmasına olanak tanır.
 
-Bir pencere giriş odağını ve `RealizePalette`çağırdığında, Windows, ekranda aynı anda en fazla kullanılabilir olan en fazla sayıya kadar tüm istenen renkleri görüntülemesini sağlar. Windows, mevcut renklerle eşleştirerek pencere paletinde bulunmayan renkleri de görüntüler.
+Bir pencere giriş odağına sahipse ve aramalar `RealizePalette`yaptığında, Windows pencerenin istenen tüm renkleri görüntülemesini sağlar, ekranda aynı anda bulunan maksimum sayıya kadar. Windows ayrıca, pencerenin paletinde bulunmayan renkleri kullanılabilir renklerle eşleştirerek görüntüler.
 
-Ayrıca, Windows, etkin olmayan pencereler tarafından istenen renklerle, işlevi mümkün olan renge en yakın şekilde çağıran renklerle eşleşir. Bu, etkin olmayan Windows 'da görüntülenrenklerde istenmeyen değişiklikleri önemli ölçüde azaltır.
+Ayrıca, Windows, işlevi kullanılabilir renklere mümkün olduğunca yakın çağıran etkin olmayan pencereler tarafından istenen renklerle eşleşir. Bu, etkin olmayan pencerelerde görüntülenen renklerdeki istenmeyen değişiklikleri önemli ölçüde azaltır.
 
-##  <a name="rectangle"></a>CDC:: dikdörtgen
+## <a name="cdcrectangle"></a><a name="rectangle"></a>CDC::Dikdörtgen
 
 Geçerli kalemi kullanarak bir dikdörtgen çizer.
 
@@ -5171,19 +5171,19 @@ BOOL Rectangle(LPCRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-Dikdörtgenin sol üst köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
+Dikdörtgenin sol üst köşesinin x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y1*<br/>
-Dikdörtgenin sol üst köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
+*y1*<br/>
+Dikdörtgenin sol üst köşesinin y-koordinatını (mantıksal birimler halinde) belirtir.
 
 *x2*<br/>
-Dikdörtgenin sağ alt köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
+Dikdörtgenin sağ alt köşesinin x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y2*<br/>
-Dikdörtgenin sağ alt köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
+*y2*<br/>
+Dikdörtgenin sağ alt köşesinin y-koordinatını (mantıksal birimler halinde) belirtir.
 
-*lpRect*<br/>
-Mantıksal birimlerde dikdörtgeni belirtir. Bu parametre için bir `CRect` nesnesini ya da bir `RECT` yapısına yönelik bir işaretçi geçirebilirsiniz.
+*Lprect*<br/>
+Dikdörtgeni mantıksal birimler halinde belirtir. Bu parametre `CRect` için bir nesneyi `RECT` veya işaretçiyi bir yapıya geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -5191,17 +5191,17 @@ Mantıksal birimlerde dikdörtgeni belirtir. Bu parametre için bir `CRect` nesn
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dikdörtgenin iç kısmı geçerli fırça kullanılarak doldurulur.
+Dikdörtgenin iç akımı fırça kullanılarak doldurulur.
 
-Dikdörtgen, sağ ve alt koordinatları kapsamaz, ancak içermez. Bu, dikdörtgenin yüksekliğinin *y2* - *Y1* , dikdörtgenin genişliği ise *x2* - *x1*olduğu anlamına gelir. Dikdörtgenin Width ve Height değeri 2 birimden büyük ve 32.767 birimden az olmalıdır.
+Dikdörtgen kadar uzanır, ancak içermez, sağ ve alt koordinatları. Bu, dikdörtgenin yüksekliğinin *y2* - *y1,* dikdörtgenin genişliğinin *x2* - *x1*olduğu anlamına gelir. Dikdörtgenin genişliği ve yüksekliği 2 birimden büyük ve 32.767 birimden az olmalıdır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#39](../../mfc/codesnippet/cpp/cdc-class_11.cpp)]
 
-##  <a name="rectvisible"></a>CDC:: RectVisible
+## <a name="cdcrectvisible"></a><a name="rectvisible"></a>CDC::RectVisible
 
-Verilen dikdörtgenin herhangi bir kısmının görüntüleme bağlamının kırpma bölgesi içinde olup olmadığını belirler.
+Verilen dikdörtgenin herhangi bir bölümünün görüntü bağlamının kırpma bölgesinde olup olmadığını belirler.
 
 ```
 virtual BOOL RectVisible(LPCRECT lpRect) const;
@@ -5209,16 +5209,16 @@ virtual BOOL RectVisible(LPCRECT lpRect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*<br/>
-`RECT` yapısına veya belirtilen dikdörtgenin mantıksal koordinatlarını içeren bir `CRect` nesnesine işaret eder.
+*Lprect*<br/>
+Belirtilen dikdörtgenin mantıksal `CRect` koordinatlarını içeren bir `RECT` yapıya veya nesneye işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirli bir dikdörtgenin herhangi bir bölümü kırpma bölgesi içinde yer alıyorsa sıfır dışı. Aksi takdirde 0.
+Verilen dikdörtgenin herhangi bir bölümü kırpma bölgesi içinde yatıyorsa sıfır olmayan; aksi takdirde 0.
 
-##  <a name="releaseattribdc"></a>CDC:: ReleaseAttribDC
+## <a name="cdcreleaseattribdc"></a><a name="releaseattribdc"></a>CDC::ReleaseAttribDC
 
-`m_hAttribDC` NULL olarak ayarlamak için bu üye işlevini çağırın.
+NULL ayarlamak `m_hAttribDC` için bu üye işlevini çağırın.
 
 ```
 virtual void ReleaseAttribDC();
@@ -5226,11 +5226,11 @@ virtual void ReleaseAttribDC();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, `Detach` oluşmasına neden olmaz. Yalnızca çıkış aygıtı bağlamı `CDC` nesnesine iliştirilir ve yalnızca ayrılmış olabilir.
+Bu bir `Detach` oluşmasına neden olmaz. `CDC` Nesneye yalnızca çıktı aygıtı bağlamı eklenir ve yalnızca ayrıştırılabilir.
 
-##  <a name="releaseoutputdc"></a>CDC:: ReleaseOutputDC
+## <a name="cdcreleaseoutputdc"></a><a name="releaseoutputdc"></a>CDC::ReleaseOutputDC
 
-`m_hDC` üyesini NULL olarak ayarlamak için bu üye işlevini çağırın.
+Üyeyi `m_hDC` NULL olarak ayarlamak için bu üye işlevini arayın.
 
 ```
 virtual void ReleaseOutputDC();
@@ -5238,11 +5238,11 @@ virtual void ReleaseOutputDC();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, çıkış aygıtı bağlamı `CDC` nesnesine eklendiğinde çağrılamaz. Çıkış cihazı bağlamını ayırmak için `Detach` member işlevini kullanın.
+Çıktı aygıtı bağlamı `CDC` nesneye eklendiğinde bu üye işlev çağrılamaz. Çıktı `Detach` aygıtı bağlamını ayırmak için üye işlevi kullanın.
 
-##  <a name="resetdc"></a>CDC:: ResetDC
+## <a name="cdcresetdc"></a><a name="resetdc"></a>CDC::ResetDC
 
-`CDC` nesnesi tarafından Sarmalanan cihaz bağlamını güncelleştirmek için bu üye işlevi çağırın.
+`CDC` Nesne tarafından sarılmış aygıt bağlamını güncelleştirmek için bu üye işlevi arayın.
 
 ```
 BOOL ResetDC(const DEVMODE* lpDevMode);
@@ -5251,7 +5251,7 @@ BOOL ResetDC(const DEVMODE* lpDevMode);
 ### <a name="parameters"></a>Parametreler
 
 *lpDevMode*<br/>
-Windows `DEVMODE` yapısına yönelik bir işaretçi.
+Windows `DEVMODE` yapısına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -5259,17 +5259,17 @@ Windows `DEVMODE` yapısına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Cihaz bağlamı, Windows `DEVMODE` yapısında belirtilen bilgilerden güncelleştirilir. Bu üye işlevi yalnızca öznitelik cihazı bağlamını sıfırlar.
+Aygıt bağlamı, Windows `DEVMODE` yapısında belirtilen bilgilerden güncelleştirilir. Bu üye işlev yalnızca öznitelik aygıtı bağlamını sıfırlar.
 
-Bir uygulama, bir pencere `WM_DEVMODECHANGE` iletisini işlediğinde genellikle `ResetDC` member işlevini kullanır. Belge yazdırırken Kağıt yönünü veya kağıt sepetlerinizi değiştirmek için de bu üye işlevi kullanabilirsiniz.
+Bir pencere bir `ResetDC` `WM_DEVMODECHANGE` iletiyi işlediğinde bir uygulama genellikle üye işlevi kullanır. Belge yazdırırken kağıt yönünü veya kağıt kutularını değiştirmek için bu üye işlevi de kullanabilirsiniz.
 
-Bu üye işlevi, sürücü adını, cihaz adını veya çıkış bağlantı noktasını değiştirmek için kullanamazsınız. Kullanıcı bağlantı noktası bağlantısını veya cihaz adını değiştirdiğinde, özgün cihaz bağlamını silmeniz ve yeni bilgilerle yeni bir cihaz bağlamı oluşturmanız gerekir.
+Sürücü adını, aygıt adını veya çıkış bağlantı noktasını değiştirmek için bu üye işlevini kullanamazsınız. Kullanıcı bağlantı noktası bağlantısını veya aygıt adını değiştirdiğinde, özgün aygıt bağlamını silmeniz ve yeni bilgilerle birlikte yeni bir aygıt bağlamı oluşturmanız gerekir.
 
-Bu üye işlevi çağırmadan önce, cihaz bağlamına seçilmiş olan tüm nesnelerin (hisse senedi nesneleri) seçili olduğundan emin olmanız gerekir.
+Bu üye işlevi çağırmadan önce, aygıt bağlamında seçilen tüm nesnelerin (stok nesneleri dışında) seçildiğinden emin olmalısınız.
 
-##  <a name="restoredc"></a>CDC:: RestoreDC
+## <a name="cdcrestoredc"></a><a name="restoredc"></a>CDC::RestoreDC
 
-Cihaz bağlamını *nSavedDC*tarafından tanımlanan önceki duruma geri yükler.
+Aygıt bağlamını *nSavedDC*tarafından tanımlanan önceki duruma geri yükler.
 
 ```
 virtual BOOL RestoreDC(int nSavedDC);
@@ -5278,21 +5278,21 @@ virtual BOOL RestoreDC(int nSavedDC);
 ### <a name="parameters"></a>Parametreler
 
 *nSavedDC*<br/>
-Geri yüklenecek cihaz bağlamını belirtir. Bu, önceki bir `SaveDC` işlev çağrısının döndürdüğü bir değer olabilir. *NSavedDC* -1 ise, en son kaydedilen cihaz bağlamı geri yüklenir.
+Geri yüklenecek aygıt bağlamını belirtir. Önceki işlev çağrısıyla döndürülen `SaveDC` bir değer olabilir. *nSavedDC* -1 ise, en son kaydedilen aygıt bağlamı geri yüklenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen bağlam geri yüklenmişse sıfır dışı; Aksi takdirde 0.
+Belirtilen bağlam geri yüklenirse sıfırolmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`RestoreDC`, daha önce `SaveDC` member işlevine yapılan çağrılar tarafından oluşturulan bir yığından durum bilgilerini oluşturan cihaz bağlamını geri yükler.
+`RestoreDC`üye işlevine daha önce yapılan çağrılar tarafından oluşturulan bir `SaveDC` yığından durum bilgilerini çıkararak aygıt bağlamını geri yükler.
 
-Yığın, çeşitli cihaz bağlamlarının durum bilgilerini içerebilir. *NSavedDC* tarafından belirtilen bağlam yığının en üstünde değilse `RestoreDC`, *nSavedDC* tarafından belirtilen cihaz bağlamı ve yığının en üstü arasındaki tüm durum bilgilerini siler. Silinen bilgiler kaybolur.
+Yığın, çeşitli aygıt bağlamları için durum bilgilerini içerebilir. *nSavedDC* tarafından belirtilen bağlam yığının en üstünde `RestoreDC` değilse, *nSavedDC* tarafından belirtilen aygıt bağlamı ile yığının üst kısmı arasındaki tüm durum bilgilerini siler. Silinen bilgiler kaybolur.
 
-##  <a name="roundrect"></a>CDC:: RoundRect
+## <a name="cdcroundrect"></a><a name="roundrect"></a>CDC::RoundRect
 
-Geçerli kalemi kullanarak yuvarlatılmış köşeler içeren bir dikdörtgen çizer.
+Geçerli kalemi kullanarak yuvarlak köşeli dikdörtgen çizer.
 
 ```
 BOOL RoundRect(
@@ -5311,28 +5311,28 @@ BOOL RoundRect(
 ### <a name="parameters"></a>Parametreler
 
 *x1*<br/>
-Dikdörtgenin sol üst köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
+Dikdörtgenin sol üst köşesinin x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y1*<br/>
-Dikdörtgenin sol üst köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
+*y1*<br/>
+Dikdörtgenin sol üst köşesinin y-koordinatını (mantıksal birimler halinde) belirtir.
 
 *x2*<br/>
-Dikdörtgenin sağ alt köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
+Dikdörtgenin sağ alt köşesinin x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*Y2*<br/>
-Dikdörtgenin sağ alt köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
+*y2*<br/>
+Dikdörtgenin sağ alt köşesinin y-koordinatını (mantıksal birimler halinde) belirtir.
 
 *x3*<br/>
-Yuvarlatılmış köşeleri çizmek için kullanılan elipsin genişliğini belirtir (mantıksal birimler cinsinden).
+Yuvarlatılmış köşeleri çizmek için kullanılan elipsin genişliğini (mantıksal birimler halinde) belirtir.
 
-*Y3*<br/>
-Yuvarlatılmış köşeleri çizmek için kullanılan elipsin yüksekliğini belirtir (mantıksal birimler cinsinden).
+*y3*<br/>
+Yuvarlatılmış köşeleri çizmek için kullanılan elipsin yüksekliğini (mantıksal birimler halinde) belirtir.
 
-*lpRect*<br/>
-Mantıksal birimlerde sınırlayıcı dikdörtgeni belirtir. Bu parametre için bir `CRect` nesnesini ya da bir `RECT` yapısına yönelik bir işaretçi geçirebilirsiniz.
+*Lprect*<br/>
+Sınırlayıcı dikdörtgeni mantıksal birimler halinde belirtir. Bu parametre `CRect` için bir nesneyi `RECT` veya işaretçiyi bir yapıya geçirebilirsiniz.
 
-*seçeneğinin*<br/>
-*Noktanın* x koordinatı, yuvarlak köşeler çizmek için Elips genişliğini belirtir (mantıksal birimler cinsinden). *Noktanın* y koordinatı, yuvarlak köşeler çizmek için elipsin yüksekliğini belirtir (mantıksal birimler cinsinden). Bu parametre için bir `POINT` yapısını ya da bir `CPoint` nesnesini geçirebilirsiniz.
+*Nokta*<br/>
+*Noktanın* x-koordinatı, yuvarlatılmış köşeleri (mantıksal birimler halinde) çizmek için elipsin genişliğini belirtir. *Noktanın* y-koordinatı, yuvarlatılmış köşeleri (mantıksal birimler halinde) çizmek için elipsin yüksekliğini belirtir. Bu parametre `POINT` için bir `CPoint` yapı veya nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -5340,17 +5340,17 @@ Mantıksal birimlerde sınırlayıcı dikdörtgeni belirtir. Bu parametre için 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dikdörtgenin iç kısmı geçerli fırça kullanılarak doldurulur.
+Dikdörtgenin iç akımı fırça kullanılarak doldurulur.
 
-Bu işlevin çiztiği şekil, sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *y2* - *Y1* ve şeklin genişliği *x2* - *x1*olduğu anlamına gelir. Sınırlayıcı dikdörtgenin yüksekliği ve genişliği 2 birimden büyük ve 32.767 birimden az olmalıdır.
+Bu işlevin çizdiği şekil, sağ ve alt koordinatlara kadar uzanır, ancak içermez. Bu, şeklin yüksekliğinin *y2* - *y1,* şeklin genişliğinin *x2* - *x1*olduğu anlamına gelir. Sınırlayan dikdörtgenin yüksekliği ve genişliği 2 birimden büyük ve 32.767 birimden az olmalıdır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#40](../../mfc/codesnippet/cpp/cdc-class_12.cpp)]
 
-##  <a name="savedc"></a>CDC:: SaveDC
+## <a name="cdcsavedc"></a><a name="savedc"></a>CDC::SaveDC
 
-Durum bilgilerini (kırpma bölgesi, seçili nesneler ve eşleme modu gibi) Windows tarafından tutulan bir bağlam yığınına kopyalayarak cihaz bağlamının geçerli durumunu kaydeder.
+Durum bilgilerini (kırpma bölgesi, seçili nesneler ve eşleme modu gibi) Windows tarafından tutulan bir bağlam yığınına kopyalayarak aygıt bağlamının geçerli durumunu kaydeder.
 
 ```
 virtual int SaveDC();
@@ -5358,17 +5358,17 @@ virtual int SaveDC();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaydedilen cihaz bağlamını tanımlayan bir tamsayı. Bir hata oluşursa 0 ' dır. Bu dönüş değeri, `RestoreDC`çağırarak cihaz bağlamını geri yüklemek için kullanılabilir.
+Kaydedilen aygıt bağlamını tanımlayan bir sonseda. Bir hata oluşursa 0'dır. Bu iade değeri, aygıt bağlamını geri `RestoreDC`yüklemek için .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaydedilen cihaz bağlamı daha sonra `RestoreDC`kullanılarak geri yüklenebilir.
+Kaydedilen aygıt bağlamı daha sonra `RestoreDC`kullanılarak geri yüklenebilir.
 
-`SaveDC`, herhangi bir sayıda cihaz bağlamı durumunu kaydetmek için herhangi bir sayıda kullanılabilir.
+`SaveDC`herhangi bir sayıda aygıt bağlamı durumlarını kaydetmek için herhangi bir sayıda kullanılabilir.
 
-##  <a name="scaleviewportext"></a>CDC:: ScaleViewportExt
+## <a name="cdcscaleviewportext"></a><a name="scaleviewportext"></a>CDC::ScaleViewportExt
 
-Geçerli değerlere göre görünüm penceresi genişletmesini değiştirir.
+Geçerli değerlere göre görüntü alanı boyutlarını değiştirir.
 
 ```
 virtual CSize ScaleViewportExt(
@@ -5381,20 +5381,20 @@ virtual CSize ScaleViewportExt(
 ### <a name="parameters"></a>Parametreler
 
 *xNum*<br/>
-Geçerli x kapsamının çarpılacağı miktarı belirtir.
+Geçerli x-ölçüde çarpMak için hangi miktarı belirtir.
 
 *xDenom*<br/>
-Geçerli x kapsamını, *xNum* parametresinin değerine göre çarpmanın sonucunun bölüneceği miktarı belirtir.
+Geçerli x-ölçüde *xNum* parametredeğeri ile çarpılması sonucu bölmek için hangi tutar belirtir.
 
-*Azum*<br/>
-Geçerli y kapsamının çarpılacağı miktarı belirtir.
+*yNum*<br/>
+Geçerli y-ölçüde çarpılması için hangi miktarı belirtir.
 
-*Yılalıkları*<br/>
-Geçerli y kapsamının, *Azum* parametresinin değerine göre çarpılması sonucunun bölüneceği miktarı belirtir.
+*yDenom*<br/>
+*YNum* parametresinin değeri ile geçerli y-ölçüde çarpma sonucu bölmek için hangi miktarı belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki Görünüm penceresi uzantıları (cihaz birimlerinde) `CSize` nesne olarak.
+Önceki görünüm portu `CSize` bir nesne olarak (aygıt birimlerinde) ölçüde.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -5404,11 +5404,11 @@ Formüller aşağıdaki gibi yazılır:
 
 `yNewVE = ( yOldVE * yNum ) / yDenom`
 
-Yeni Görünüm penceresi uzantıları, geçerli kapsamlar belirtilen pay ile çarpılarak ve ardından belirtilen paydaya bölünerek hesaplanır.
+Yeni viewport kapsamları, geçerli kapsamların verilen payile çarpılması ve verilen payda ile bölünmesi yle hesaplanır.
 
-##  <a name="scalewindowext"></a>CDC:: ScaleWindowExt
+## <a name="cdcscalewindowext"></a><a name="scalewindowext"></a>CDC::ScaleWindowExt
 
-Pencere kapsamlarını geçerli değerlere göre değiştirir.
+Geçerli değerlere göre pencere boyutlarını değiştirir.
 
 ```
 virtual CSize ScaleWindowExt(
@@ -5421,20 +5421,20 @@ virtual CSize ScaleWindowExt(
 ### <a name="parameters"></a>Parametreler
 
 *xNum*<br/>
-Geçerli x kapsamının çarpılacağı miktarı belirtir.
+Geçerli x-ölçüde çarpMak için hangi miktarı belirtir.
 
 *xDenom*<br/>
-Geçerli x kapsamını, *xNum* parametresinin değerine göre çarpmanın sonucunun bölüneceği miktarı belirtir.
+Geçerli x-ölçüde *xNum* parametredeğeri ile çarpılması sonucu bölmek için hangi tutar belirtir.
 
-*Azum*<br/>
-Geçerli y kapsamının çarpılacağı miktarı belirtir.
+*yNum*<br/>
+Geçerli y-ölçüde çarpılması için hangi miktarı belirtir.
 
-*Yılalıkları*<br/>
-Geçerli y kapsamının, *Azum* parametresinin değerine göre çarpılması sonucunun bölüneceği miktarı belirtir.
+*yDenom*<br/>
+*YNum* parametresinin değeri ile geçerli y-ölçüde çarpma sonucu bölmek için hangi miktarı belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki pencere uzantıları (mantıksal birimler cinsinden) `CSize` nesne olarak.
+Önceki pencere bir `CSize` nesne olarak (mantıksal birimler halinde) ölçüde.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -5444,11 +5444,11 @@ Formüller aşağıdaki gibi yazılır:
 
 `yNewWE = ( yOldWE * yNum ) / yDenom`
 
-Yeni pencere kapsamları, geçerli kapsamlar belirtilen pay ile çarpılarak ve ardından belirtilen paydaya bölünerek hesaplanır.
+Yeni pencere kapsamları, geçerli kapsamların verilen payla çarpılması ve verilen payda ile bölünmesi yle hesaplanır.
 
-##  <a name="scrolldc"></a>CDC:: ScrollDC
+## <a name="cdcscrolldc"></a><a name="scrolldc"></a>CDC::ScrollDC
 
-Bit bir dikdörtgeni yatay ve dikey olarak kaydırır.
+Bir bit dikdörtgenini yatay ve dikey olarak kaydırır.
 
 ```
 BOOL ScrollDC(
@@ -5462,37 +5462,37 @@ BOOL ScrollDC(
 
 ### <a name="parameters"></a>Parametreler
 
-*DX*<br/>
+*Dx*<br/>
 Yatay kaydırma birimlerinin sayısını belirtir.
 
-*rengi*<br/>
+*Dy*<br/>
 Dikey kaydırma birimlerinin sayısını belirtir.
 
 *lpRectScroll*<br/>
-`RECT` yapısına veya kayan dikdörtgenin koordinatlarını içeren `CRect` nesnesine işaret eder.
+Kayan `RECT` dikdörtgenin `CRect` koordinatlarını içeren yapı veya nesneyi işaret eder.
 
 *lpRectClip*<br/>
-`RECT` yapısına veya kırpma dikdörtgeninin koordinatlarını içeren `CRect` nesnesine işaret eder. Bu dikdörtgen, *lpRectScroll*tarafından işaret edilen orijinalden daha küçük olduğunda, kaydırma yalnızca küçük dikdörtgende gerçekleşir.
+Kırpma `RECT` dikdörtgeninin `CRect` koordinatlarını içeren yapı veya nesneyi işaret eder. Bu dikdörtgen *lpRectScroll*tarafından işaret edilen orijinal daha küçük olduğunda, kaydırma sadece küçük dikdörtgen oluşur.
 
 *pRgnUpdate*<br/>
-Kaydırma işleminin kapsamadığı bölgeyi tanımlar. `ScrollDC` işlevi bu bölgeyi tanımlar; bir dikdörtgen olması gerekmez.
+Kaydırma işlemi tarafından ortaya çıkarılan bölgeyi tanımlar. İşlev `ScrollDC` bu bölgeyi tanımlar; mutlaka bir dikdörtgen değildir.
 
 *lpRectUpdate*<br/>
-Kayan güncelleştirme bölgesini sınıralan dikdörtgenin koordinatlarını alan `RECT` yapısına veya `CRect` nesnesine işaret eder. Bu, tekrar boyanması gereken en büyük dikdörtgen alandır. İşlev döndürüldüğünde yapı veya nesne içindeki değerler, belirtilen cihaz bağlamı için eşleme modundan bağımsız olarak istemci koordinatsındadır.
+Kaydırma güncelleştirme `RECT` söylene bağlı olan dikdörtgenin koordinatlarını alan yapı veya `CRect` nesneyi işaret eder. Bu, yeniden boyama gerektiren en büyük dikdörtgen alandır. İşlev döndürdüğünde yapı veya nesnedeki değerler, verilen aygıt bağlamının eşleme modundan bağımsız olarak istemci koordinatlarındadır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaydırma yürütülürse sıfır dışı; Aksi takdirde 0.
+Kaydırma yürütülürse sıfır olmayan; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*LpRectUpdate* null Ise, Windows güncelleştirme dikdörtgenini hesaplamaz. Hem *prgnUpdate* hem de *LPRECTUPDATE* null ise, Windows güncelleştirme bölgesini hesaplamaz. *PrgnUpdate* null değilse, Windows, kaydırma işlemi tarafından kapsanmayan bölge için geçerli bir işaretçi içerdiğini varsayar (`ScrollDC` üye işlevi tarafından tanımlanır). *LpRectUpdate* içinde döndürülen güncelleştirme bölgesi, gerekirse `CWnd::InvalidateRgn` geçirilebilir.
+*lpRectUpdate* NULL ise, Windows güncelleştirme dikdörtgenini hesaplamaz. Hem *pRgnUpdate* hem de *lpRectUpdate* NULL ise, Windows güncelleştirme bölgesini hesaplamaz. *pRgnUpdate* NULL değilse, Windows kaydırma işlemi `ScrollDC` (üye işlev tarafından tanımlanan) tarafından ortaya çıkarılan bölgeye geçerli bir işaretçi içerdiğini varsayar. *LPRectUpdate* döndürülen güncelleştirme bölgesi gerekirse `CWnd::InvalidateRgn` geçirilebilir.
 
-Bir uygulama, bir pencerenin tüm istemci alanının kaymasını gerekli olduğunda, sınıfının `ScrollWindow` üye işlevini kullanmalıdır `CWnd`. Aksi takdirde, `ScrollDC`kullanmalıdır.
+Bir uygulama, `ScrollWindow` bir pencerenin `CWnd` tüm istemci alanını kaydırmak gerektiğinde sınıfın üye işlevini kullanmalıdır. Aksi takdirde, `ScrollDC`kullanmalısınız.
 
-##  <a name="selectclippath"></a>CDC:: SelectClipPath
+## <a name="cdcselectclippath"></a><a name="selectclippath"></a>CDC::SelectClipPath
 
-Geçerli yolu cihaz bağlamı için bir kırpma bölgesi olarak seçer ve yeni bölgeyi belirtilen modu kullanarak var olan herhangi bir kırpma bölgesiyle birleştirerek.
+Aygıt bağlamı için kırpma bölgesi olarak geçerli yolu seçer ve yeni bölgeyi belirtilen modu kullanarak varolan herhangi bir kırpma bölgesiyle birleştirir.
 
 ```
 BOOL SelectClipPath(int nMode);
@@ -5501,17 +5501,17 @@ BOOL SelectClipPath(int nMode);
 ### <a name="parameters"></a>Parametreler
 
 *nMode*<br/>
-Yolu kullanma yöntemini belirtir. Aşağıdaki değerlere izin verilir:
+Yolu kullanmanın yolunu belirtir. Aşağıdaki değerlere izin verilir:
 
-- Yeni kırpma bölgesine RGN_AND, geçerli kırpma bölgesinin ve geçerli yolun kesişimini (çakışan bölgeler) içerir.
+- RGN_AND Yeni kırpma bölgesi, geçerli kırpma bölgesinin kesişim (çakışan alanları) ve geçerli yolu içerir.
 
-- Yeni kırpma bölgesi geçerli yoldur RGN_COPY.
+- RGN_COPY Yeni kırpma bölgesi geçerli yoldur.
 
-- Yeni kırpma bölgesi RGN_DIFF geçerli kırpma bölgesinin alanını içerir ve geçerli yol dışarıda bırakılır.
+- RGN_DIFF Yeni kırpma bölgesi geçerli kırpma bölgesinin alanlarını içerir ve geçerli yolun alanları hariç tutulur.
 
-- Yeni kırpma bölgesi RGN_OR, geçerli kırpma bölgesinin ve geçerli yolun birleşimini (birleştirilmiş alan) içerir.
+- RGN_OR Yeni kırpma bölgesi, geçerli kırpma bölgesinin birliğini (birleşik alanları) ve geçerli yolu içerir.
 
-- Yeni kırpma bölgesi RGN_XOR, geçerli kırpma bölgesinin ve geçerli yolun birleşimini, ancak çakışan alanlarla içerir.
+- RGN_XOR Yeni kırpma bölgesi, çakışan alanlar olmadan, mevcut kırpma bölgesi ve mevcut yolun birliğini içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -5519,11 +5519,11 @@ Yolu kullanma yöntemini belirtir. Aşağıdaki değerlere izin verilir:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tanımlanan cihaz bağlamı kapalı bir yol içermelidir.
+Tanımlanan aygıt bağlamı kapalı bir yol içermelidir.
 
-##  <a name="selectcliprgn"></a>CDC:: Selectclienprgn
+## <a name="cdcselectcliprgn"></a><a name="selectcliprgn"></a>CDC::SelectClipRgn
 
-Belirtilen bölgeyi cihaz bağlamı için geçerli kırpma bölgesi olarak seçer.
+Aygıt bağlamı için geçerli kırpma bölgesi olarak verilen bölgeyi seçer.
 
 ```
 int SelectClipRgn(CRgn* pRgn);
@@ -5538,46 +5538,46 @@ int SelectClipRgn(
 *pRgn*<br/>
 Seçilecek bölgeyi tanımlar.
 
-- Bu işlevin ilk sürümü için, bu değer NULL ise, tüm istemci alanı seçilir ve çıkış hala pencereye kırpılır.
+- Bu işlevin ilk sürümü için, bu değer NULL ise, tüm istemci alanı seçilir ve çıktı yine de pencereye kırpılır.
 
-- Bu işlevin ikinci sürümünde, bu tanıtıcı yalnızca RGN_COPY modu belirtildiğinde NULL olabilir.
+- Bu işlevin ikinci sürümü için, bu işlem yalnızca RGN_COPY modu belirtildiğinde NULL olabilir.
 
 *nMode*<br/>
-Gerçekleştirilecek işlemi belirtir. Aşağıdaki değerlerden biri olmalıdır:
+Yapılacak işlemi belirtir. Aşağıdaki değerlerden biri olmalıdır:
 
-- Yeni kırpma bölgesi RGN_AND, geçerli kırpma bölgesinin çakışan alanlarının ve *pRgn*tarafından tanımlanan bölgenin birleştirir.
+- RGN_AND Yeni kırpma bölgesi, geçerli kırpma bölgesinin çakışan alanlarını ve *pRgn*tarafından tanımlanan bölgeyi birleştirir.
 
-- Yeni kırpma bölgesinin RGN_COPY, *pRgn*tarafından tanımlanan bölgenin bir kopyasıdır. Bu işlevsellik, `SelectClipRgn`ilk sürümü ile aynıdır. *PRgn* tarafından tanımlanan bölge null ise, yeni kırpma bölgesi varsayılan kırpma bölgesi (null bölge) olur.
+- RGN_COPY Yeni kırpma bölgesi *pRgn*tarafından tanımlanan bölgenin bir kopyasıdır. Bu işlevsellik ilk sürümü ile `SelectClipRgn`aynıdır. *pRgn* tarafından tanımlanan bölge NULL ise, yeni kırpma bölgesi varsayılan kırpma bölgesi (null region) olur.
 
-- Yeni kırpma bölgesinin RGN_DIFF, geçerli kırpma bölgesinin alanını *pRgn*tarafından tanımlanan bölgeden çıkarılan alanlarla birleştirir.
+- RGN_DIFF Yeni kırpma bölgesi, mevcut kırpma bölgesinin alanlarını *pRgn*tarafından tanımlanan bölgeden dışlanan bu alanlar ile birleştirir.
 
-- Yeni kırpma bölgesi RGN_OR, geçerli kırpma bölgesini ve *pRgn*tarafından tanımlanan bölgeyi birleştirir.
+- RGN_OR Yeni kırpma bölgesi, mevcut kırpma bölgesini ve *pRgn*tarafından tanımlanan bölgeyi birleştirir.
 
-- Yeni kırpma bölgesi RGN_XOR, geçerli kırpma bölgesini ve *pRgn* tarafından tanımlanan bölgeyi birleştirir ancak çakışan tüm bölgeleri dışlar.
+- RGN_XOR Yeni kırpma bölgesi, mevcut kırpma bölgesini ve *pRgn* tarafından tanımlanan bölgeyi birleştirir, ancak çakışan alanları hariç tutar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölgenin türü. Aşağıdaki değerlerden herhangi biri olabilir:
+Bölgenin tipi. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- COMPLEXREGION yeni kırpma bölgesinde çakışan kenarlıklar vardır.
+- COMPLEXREGION Yeni kırpma bölgesi çakışan kenarlıklara sahiptir.
 
-- Hatalı cihaz bağlamı veya bölgesi geçerli değil.
+- HATA Aygıt bağlamı veya bölgesi geçerli değildir.
 
-- NULLREGION yeni kırpma bölgesi boş.
+- NULLREGION Yeni kırpma bölgesi boş.
 
-- Yeni kırpma bölgesinde SIMPLEREGIÇAKıŞAN kenarlık yok.
+- SIMPLEREGION Yeni kırpma bölgesinin çakışan kenarlıkları yoktur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca seçili bölgenin bir kopyası kullanılır. Bölgenin kendisi herhangi bir sayıda diğer cihaz bağlamı için seçilebilir ya da silinebilirler.
+Yalnızca seçili bölgenin bir kopyası kullanılır. Bölgenin kendisi diğer aygıt bağlamları herhangi bir sayı için seçilebilir veya silinebilir.
 
-İşlevi, belirtilen bölge koordinatlarının cihaz birimlerinde belirtildiğinizi varsayar. Bazı yazıcı aygıtları, metin ölçümlerini hızlı bir şekilde sağlamak için gereken duyarlık ' ı daha yüksek bir çözünürlükte destekler. Bu cihazlar, daha yüksek çözünürlükte, diğer bir deyişle, metin birimlerinde cihaz birimleri rapor ediyor. Bu cihazlar daha sonra, bildirilen birkaç cihaz birimi yalnızca 1 grafik birimiyle eşlenecek şekilde grafik koordinatlarını ölçeklendirir. `SelectClipRgn` işlevini her zaman metin birimi kullanarak çağırmanız gerekir.
+İşlev, verilen bölgenin koordinatlarının aygıt birimlerinde belirtildiğini varsayar. Bazı yazıcı aygıtları, metin ölçümlerini ifade etmek için gereken hassasiyeti korumak için metin çıktısını grafik çıkışından daha yüksek çözünürlükte destekler. Bu aygıtlar aygıt birimlerini daha yüksek çözünürlükte, yani metin birimlerinde raporlar. Bu aygıtlar daha sonra grafiklerin koordinatlarını ölçeklendirecek, böylece rapor edilen birkaç aygıt birimi yalnızca 1 grafik birimiyle eşlenir. Her zaman metin `SelectClipRgn` birimlerini kullanarak işlevi aramalısınız.
 
-GDI 'daki grafik nesnelerinin ölçeklendirilmesi gereken uygulamalar, ölçekleme faktörünü belirleyebilmek için GETSCALINGFACTOR yazıcı kaçış işlevini kullanabilir. Bu ölçeklendirme faktörü kırpmayı etkiler. Grafikleri kırpmak için bir bölge kullanılıyorsa, GDI koordinatları ölçekleme faktörüne böler. Bölge metin kırpmak için kullanılırsa, GDI hiçbir ölçeklendirme ayarı yapmaz. 1 ölçekleme faktörü, koordinatların 2 ' ye bölünmesine neden olur. 2 ölçekleme faktörü, koordinatların 4 ' e bölünmesine neden olur; vb.
+GDI'deki grafik nesnelerinin ölçeklemesi gereken uygulamalar, ölçekleme faktörünün belirlenmesi için GETSCALINGFACTOR yazıcı kaçışını kullanabilir. Bu ölçekleme faktörü kırpma etkiler. Grafikleri kesmek için bir bölge kullanılırsa, GDI koordinatları ölçekleme faktörüne böler. Bölge metni kesmek için kullanılırsa, GDI ölçekleme ayarı yapmayız. 1'in ölçekleme faktörü koordinatların 2'ye bölünmesine neden olur; 2'nin ölçekleme faktörü koordinatların 4'e bölünmesine neden olur; ve saire.
 
-##  <a name="selectobject"></a>CDC:: NesneSeç
+## <a name="cdcselectobject"></a><a name="selectobject"></a>CDC::Nesne Seç
 
-Cihaz bağlamında bir nesne seçer.
+Aygıtın bağlamına bir nesne seçer.
 
 ```
 CPen* SelectObject(CPen* pPen);
@@ -5590,49 +5590,49 @@ CGdiObject* SelectObject(CGdiObject* pObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*pPen*<br/>
-Seçilecek [CPen](../../mfc/reference/cpen-class.md) nesnesine yönelik bir işaretçi.
+*pKalem*<br/>
+[CPen](../../mfc/reference/cpen-class.md) nesnesine işaretçi seçilecek.
 
-*pBrush*<br/>
-Seçilecek bir [CBrush](../../mfc/reference/cbrush-class.md) nesnesi işaretçisi.
+*pFırça*<br/>
+[CBrush](../../mfc/reference/cbrush-class.md) nesnesine işaretçi seçilecek.
 
 *pFont*<br/>
-Seçilecek [CFont](../../mfc/reference/cfont-class.md) nesnesine yönelik bir işaretçi.
+Seçilecek [CFont](../../mfc/reference/cfont-class.md) nesnesine işaretçi.
 
-*Pbımap*<br/>
-Seçilecek [CBitmap](../../mfc/reference/cbitmap-class.md) nesnesine yönelik bir işaretçi.
+*pBitmap*<br/>
+Seçilecek bir [CBitmap](../../mfc/reference/cbitmap-class.md) nesnesine işaretçi.
 
 *pRgn*<br/>
-Seçilecek [CRgn](../../mfc/reference/crgn-class.md) nesnesine yönelik bir işaretçi.
+Seçilecek [Bir CRgn](../../mfc/reference/crgn-class.md) nesnesine işaretçi.
 
-*Nesnesini*<br/>
-Seçilecek bir [CGdiObject](../../mfc/reference/cgdiobject-class.md) nesnesine yönelik bir işaretçi.
+*Pobject*<br/>
+Seçilecek bir [CGdiObject](../../mfc/reference/cgdiobject-class.md) nesnesine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değiştirilen nesneye yönelik bir işaretçi. Bu, işlevin hangi sürümünün kullanıldığına bağlı olarak, `CPen`gibi `CGdiObject`türetilen sınıflardan birine yönelik bir işaretçidir. Bir hata varsa dönüş değeri NULL olur. Bu işlev, geçici bir nesneye bir işaretçi döndürebilir. Bu geçici nesne yalnızca bir Windows iletisinin işlenmesi sırasında geçerlidir. Daha fazla bilgi için bkz. `CGdiObject::FromHandle`.
+Değiştirilen nesneye işaretçi. Bu, işlevin hangi sürümüne bağlı olarak `CGdiObject`türetilen `CPen`sınıflardan birinin nesnesine işaretçidir. Bir hata varsa iade değeri NULL'dur. Bu işlev, bir işaretçiyi geçici bir nesneye döndürebilir. Bu geçici nesne yalnızca bir Windows iletisinin işlenmesi sırasında geçerlidir. Daha fazla bilgi için bkz. `CGdiObject::FromHandle`.
 
-Bir Region parametresi alan üye işlevinin sürümü `SelectClipRgn` member işleviyle aynı görevi gerçekleştirir. Dönüş değeri, aşağıdakilerden herhangi biri olabilir:
+Bölge parametresi alan üye işlevin `SelectClipRgn` sürümü, üye işlevle aynı görevi gerçekleştirir. İade değeri aşağıdakilerden biri olabilir:
 
-- COMPLEXREGION yeni kırpma bölgesinde çakışan kenarlıklar vardır.
+- COMPLEXREGION Yeni kırpma bölgesi çakışan kenarlıklara sahiptir.
 
-- Hatalı cihaz bağlamı veya bölgesi geçerli değil.
+- HATA Aygıt bağlamı veya bölgesi geçerli değildir.
 
-- NULLREGION yeni kırpma bölgesi boş.
+- NULLREGION Yeni kırpma bölgesi boş.
 
-- Yeni kırpma bölgesinde SIMPLEREGIÇAKıŞAN kenarlık yok.
+- SIMPLEREGION Yeni kırpma bölgesinin çakışan kenarlıkları yoktur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf `CDC`, kalemler, fırçalar, yazı tipleri, bit eşlemler ve bölgeler dahil olmak üzere belirli tür GDI nesneleri için özelleştirilmiş beş sürüm sağlar. Yeni seçilen nesne, aynı türdeki önceki nesnenin yerini almıştır. Örneğin, `SelectObject` genel sürümünün *pObject* 'ı bir [CPen](../../mfc/reference/cpen-class.md) nesnesine işaret ediyorsa, Işlev geçerli kalemin *pObject*tarafından belirtilen kalemle yerini alır.
+Sınıf, `CDC` kalemler, fırçalar, yazı tipleri, bit eşlemler ve bölgeler de dahil olmak üzere belirli GDI nesneleri türleri için özelleştirilmiş beş sürüm sağlar. Yeni seçilen nesne, aynı türden önceki nesnenin yerini alır. Örneğin, [bir CPen](../../mfc/reference/cpen-class.md) nesnesine `SelectObject` nokta genel sürümü *pObject* ise, işlev *pObject*tarafından belirtilen kalem ile geçerli kalem değiştirir.
 
-Bir uygulama tek seferde yalnızca bir bellek cihaz bağlamına bir bit eşlem seçebilir. Bit eşlemin biçimi tek renkli olmalıdır veya cihaz içeriğiyle uyumlu olmalıdır; değilse, `SelectObject` bir hata döndürür.
+Bir uygulama, bellek aygıtı bağlamlarına yalnızca ve aynı anda yalnızca bir bellek aygıtı bağlamına bir bit eşlemi seçebilir. Bit eşleminin biçimi tek renkli veya aygıt bağlamıyla uyumlu olmalıdır; değilse, `SelectObject` bir hata döndürür.
 
-Windows 3,1 ve üzeri için `SelectObject` işlevi, bir meta dosyasında kullanılıp kullanılmadığını değil, aynı değeri döndürür. Önceki Windows sürümlerinde, `SelectObject` başarılı için sıfır olmayan bir değer ve bir meta dosyasında kullanıldığında hata için 0 döndürür.
+Windows 3.1 ve sonrası `SelectObject` için işlev, meta dosyada kullanılsa da kullanılmasa da aynı değeri döndürür. Windows'un önceki `SelectObject` sürümlerinde, bir metadosyada kullanıldığında başarı için sıfır olmayan bir değer ve hata için 0 döndürüldü.
 
-##  <a name="selectpalette"></a>CDC:: SelectPalette
+## <a name="cdcselectpalette"></a><a name="selectpalette"></a>CDC::SelectPalette
 
-*PPalette* tarafından, cihaz bağlamının seçili palet nesnesi olarak belirtilen mantıksal paleti seçer.
+*PPalette* tarafından aygıt bağlamının seçili palet nesnesi olarak belirtilen mantıksal paleti seçer.
 
 ```
 CPalette* SelectPalette(
@@ -5643,24 +5643,24 @@ CPalette* SelectPalette(
 ### <a name="parameters"></a>Parametreler
 
 *pPalette*<br/>
-Seçilecek mantıksal paleti tanımlar. Bu palet zaten bir [CreatePalette](../../mfc/reference/cpalette-class.md#createpalette)`CPalette` üye işlevi ile oluşturulmuş olmalıdır.
+Seçilecek mantıksal paleti tanımlar. Bu palet zaten `CPalette` üye işlevi [CreatePalette](../../mfc/reference/cpalette-class.md#createpalette)ile oluşturulmuş olmalıdır.
 
 *bForceBackground*<br/>
-Mantıksal paletin bir arka plan paleti olmaya zorlanıp zorlanmayacağını belirtir. *BForceBackground* sıfır değilse, pencerenin giriş odağa sahip olup olmamasına bakılmaksızın seçili palet her zaman bir arka plan palettir. *BForceBackground* 0 ise ve cihaz bağlamı bir pencereye eklenmişse, mantıksal palet pencere giriş odağa sahip olduğunda bir ön plan paleti olur.
+Mantıksal paletin arka plan paleti olmaya zorlanıp zorlanmadığını belirtir. *bForceBackground* sıfır değilse, seçilen palet, pencerenin giriş odağına sahip olup olmadığına bakılmaksızın her zaman bir arka plan paletidir. *bForceBackground* 0 ise ve aygıt bağlamı bir pencereye bağlıysa, pencere giriş odağına sahipolduğunda mantıksal palet ön plan paletidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*PPalette*tarafından belirtilen paletle değiştirilmiş mantıksal paleti tanımlayan `CPalette` nesnesine yönelik bir işaretçi. Bir hata oluşursa NULL olur.
+*PPalette* `CPalette` tarafından belirtilen palet le değiştirilen mantıksal paleti tanımlayan bir nesneye işaretçi. Bir hata varsa NULL'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni palet, GDI tarafından cihaz bağlamında görüntülenecek renkleri denetlemek için kullanılan palet nesnesi olur ve önceki paletin yerini alır.
+Yeni palet, aygıt bağlamında görüntülenen renkleri denetlemek için GDI tarafından kullanılan palet nesnesi olur ve önceki paletin yerini alır.
 
-Bir uygulama, birden fazla cihaz bağlamına bir mantıksal palet seçebilir. Ancak, mantıksal bir paletteki değişiklikler seçildiği tüm cihaz bağlamlarını etkileyecektir. Bir uygulama birden fazla cihaz bağlamına bir palet seçerse, cihaz bağlamlarının hepsi aynı fiziksel cihaza ait olmalıdır.
+Uygulama, birden fazla aygıt bağlamında mantıksal bir palet seçebilir. Ancak, mantıksal bir paletteki değişiklikler, seçildiği tüm aygıt bağlamlarını etkiler. Bir uygulama bir paleti birden fazla aygıt bağlamına seçerse, aygıt bağlamlarının tümü aynı fiziksel aygıta ait olmalıdır.
 
-##  <a name="selectstockobject"></a>CDC:: Selectstokobject
+## <a name="cdcselectstockobject"></a><a name="selectstockobject"></a>CDC::SelectStockObject
 
-Önceden tanımlanmış hisse senedi kalemlerden, fırçalardan veya yazı tiplerinden birine karşılık gelen bir [CGdiObject](../../mfc/reference/cgdiobject-class.md) nesnesi seçer.
+Önceden tanımlanmış stok kalemlerinden, fırçalardan veya yazı tiplerinden birine karşılık gelen bir [CGdiObject](../../mfc/reference/cgdiobject-class.md) nesnesi seçer.
 
 ```
 virtual CGdiObject* SelectStockObject(int nIndex);
@@ -5668,50 +5668,50 @@ virtual CGdiObject* SelectStockObject(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nDizin*<br/>
-İstenen stok nesnesi türünü belirtir. Aşağıdaki değerlerden biri olabilir:
+*Nındex*<br/>
+İstenilen stok nesnesinin türünü belirtir. Aşağıdaki değerlerden biri olabilir:
 
-- BLACK_BRUSH siyah fırça.
+- BLACK_BRUSH Siyah fırça.
 
-- Koyu gri fırça DKGRAY_BRUSH.
+- koyu gri fırça DKGRAY_BRUSH.
 
-- GRAY_BRUSH gri fırçası.
+- GRAY_BRUSH Gri fırça.
 
-- Boş fırça HOLLOW_BRUSH.
+- HOLLOW_BRUSH Içi Boş fırça.
 
-- Açık gri fırça LTGRAY_BRUSH.
+- LTGRAY_BRUSH Açık gri fırça.
 
-- Null fırçayı NULL_BRUSH.
+- null fırça NULL_BRUSH.
 
-- WHITE_BRUSH beyaz fırça.
+- WHITE_BRUSH Beyaz fırça.
 
-- BLACK_PEN siyah kalem.
+- BLACK_PEN Siyah kalem.
 
-- Null NULL_PEN kalem.
+- NULL_PEN Null kalem.
 
-- WHITE_PEN beyaz kalem.
+- WHITE_PEN Beyaz kalem.
 
 - ANSI_FIXED_FONT ANSI sabit sistem yazı tipi.
 
 - ANSI_VAR_FONT ANSI değişken sistem yazı tipi.
 
-- Cihaza bağımlı yazı tipi DEVICE_DEFAULT_FONT.
+- aygıta bağımlı yazı tipini DEVICE_DEFAULT_FONT.
 
-- OEM 'e bağlı sabit yazı OEM_FIXED_FONT.
+- oem bağımlı sabit yazı tipi OEM_FIXED_FONT.
 
-- Sistem yazı tipini SYSTEM_FONT. Varsayılan olarak, Windows, menü, iletişim kutusu denetimleri ve diğer metinleri çizmek için sistem yazı tipini kullanır. Ancak, iletişim kutuları ve pencereler tarafından kullanılan yazı tipini almak için SYSTEM_FONT güvenmemelidir. Bunun yerine, geçerli yazı tipini almak için `SystemParametersInfo` işlevini SPI_GETNONCLIENTMETRICS parametresiyle kullanın. `SystemParametersInfo` geçerli temayı hesaba alıp açıklamalı alt yazılar, menüler ve ileti iletişimleri için yazı tipi bilgileri sağlar.
+- SYSTEM_FONT Sistem yazı tipi. Varsayılan olarak, Windows menüler, iletişim kutusu denetimleri ve diğer metin çizmek için sistem yazı tipini kullanır. Ancak, iletişim ve pencereler tarafından kullanılan yazı tipini elde etmek için SYSTEM_FONT güvenmemek en iyisidir. Bunun yerine, `SystemParametersInfo` geçerli yazı tipini almak için SPI_GETNONCLIENTMETRICS parametreile işlevi kullanın. `SystemParametersInfo`geçerli teonu dikkate alır ve altyazılar, menüler ve ileti iletişim kutuları için yazı tipi bilgileri sağlar.
 
-- 3,0 sürümünden önceki Windows 'da kullanılan sabit genişlikte sistem yazı tipini SYSTEM_FIXED_FONT. Bu nesne Windows 'un önceki sürümleriyle uyumluluk için kullanılabilir.
+- SYSTEM_FIXED_FONT Sürüm 3.0'dan önce Windows'da kullanılan sabit genişlikli sistem yazı tipi. Bu nesne, Windows'un önceki sürümleriyle uyumluluk için kullanılabilir.
 
-- DEFAULT_PALETTE varsayılan renk paleti. Bu palet, sistem paletindeki 20 statik renkten oluşur.
+- DEFAULT_PALETTE Varsayılan renk paleti. Bu palet, sistem paletindeki 20 statik renkten oluşur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa değiştirilmiş `CGdiObject` nesnesine yönelik bir işaretçi. İşaret eden gerçek nesne bir [CPen](../../mfc/reference/cpen-class.md), [CBrush](../../mfc/reference/cbrush-class.md)veya [CFont](../../mfc/reference/cfont-class.md) nesnesidir. Çağrı başarısız olursa, dönüş değeri NULL olur.
+İşlev başarılı `CGdiObject` olursa değiştirilen nesneye işaretçi. Işaret eden gerçek nesne [CPen](../../mfc/reference/cpen-class.md), [CBrush](../../mfc/reference/cbrush-class.md)veya [CFont nesnesidir.](../../mfc/reference/cfont-class.md) Arama başarısız olursa, iade değeri NULL'dur.
 
-##  <a name="setabortproc"></a>CDC:: SetAbortProc
+## <a name="cdcsetabortproc"></a><a name="setabortproc"></a>CDC::SetAbortProc
 
-Yazdırma işi için iptal yordamını kurar.
+Yazdırma işi için iptal yordamını yükler.
 
 ```
 int SetAbortProc(BOOL (CALLBACK* lpfn)(HDC, int));
@@ -5720,37 +5720,37 @@ int SetAbortProc(BOOL (CALLBACK* lpfn)(HDC, int));
 ### <a name="parameters"></a>Parametreler
 
 *lpfn*<br/>
-Abort işlevine, iptal prosedürü olarak yüklenecek bir işaretçi. Geri çağırma işlevi hakkında daha fazla bilgi için bkz. [CDC:: SetAbortProc Için geri çağırma işlevi](callback-functions-used-by-mfc.md#setabortproc).
+İptal yordamı olarak yüklemek için iptal işlevine işaretçi. Geri arama işlevi hakkında daha fazla şey için [CDC için Geri Arama Fonksiyonu::SetAbortProc.](callback-functions-used-by-mfc.md#setabortproc)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`SetAbortProc` işlevinin sonucunu belirtir. Aşağıdaki değerlerden bazıları diğerlerinden daha olasıdır, ancak tümü mümkündür.
+Fonksiyonun `SetAbortProc` sonucunu belirtir. Aşağıdaki değerlerden bazıları diğerlerinden daha olasıdır, ancak bunların tümü mümkündür.
 
-- SP_ERROR genel hata.
+- Genel SP_ERROR hata.
 
-- SP_OUTOFDISK, şu anda bekletilmekte olan yeterli disk alanı yok ve kullanılabilir alan yok.
+- SP_OUTOFDISK Şu anda biriktirme için yeterli disk alanı yok ve başka alan kullanılamaz.
 
-- Kuyruğa alma için yeterli bellek SP_OUTOFMEMORY yok.
+- SP_OUTOFMEMORY Biriktirme için yeterli bellek yok.
 
-- SP_USERABORT Kullanıcı, işi Yazdırma Yöneticisi aracılığıyla sonlandırdı.
+- SP_USERABORT Kullanıcı Yazdırma Yöneticisi aracılığıyla işi sona erdirti.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir uygulama, yazdırma işinin bekletilme sırasında iptal edilmesine izin verse, yazdırma işi [StartDoc](#startdoc) üye işleviyle başlatılmadan önce Abort işlevini ayarlaması gerekir. Yazdırma Yöneticisi, uygulamanın yazdırma işini iptal edebilmesini veya disk dışı alan koşullarını işlemesini sağlamak için bekletme sırasında iptal işlevini çağırır. Hiçbir durdurma işlevi ayarlanmamışsa, kuyruğa alma için yeterli disk alanı yoksa yazdırma işi başarısız olur.
+Bir uygulama, yazdırma işinin biriktirme sırasında iptal edilmesine izin verecekse, Yazdırma işi [Başlatma Doc](#startdoc) üye işlevi yle başlamadan önce iptal işlevini ayarlaması gerekir. Yazdırma Yöneticisi, uygulamanın yazdırma işini iptal etmesine veya disk dışı alan koşullarını işlemesine izin vermek için biriktirme sırasında iptal işlevini çağırır. İptal işlevi ayarlanmazsa, biriktirme için yeterli disk alanı yoksa yazdırma işi başarısız olur.
 
-Microsoft Visual C++ 'nın özelliklerinin `SetAbortProc`öğesine geçirilen geri çağırma işlevinin oluşturulmasını basitleştirdiğini unutmayın. `EnumObjects` üye işlevine geçirilen adres, `__declspec(dllexport)` ve `__stdcall` çağırma kuralına sahip bir işlevin bir işaretçisidir.
+Microsoft Visual C++ özelliklerinin, 'ye `SetAbortProc`geçen geri arama işlevinin oluşturulmasını basitleştirdiğini unutmayın. `EnumObjects` Üye işlevine geçirilen adres, `__stdcall` çağrı kuralıyla ve çağrı kuralıyla `__declspec(dllexport)` dışa aktarılan bir işleve işaretçidir.
 
-Ayrıca, uygulamanızın modül tanımı dosyasındaki bir **dışarı aktarmalar** ifadesinde işlev adını dışarı aktarmanız gerekmez. Bunun yerine **dışa aktarma** işlev değiştiricisini içinde olduğu gibi kullanabilirsiniz.
+Ayrıca, uygulamanızın modül tanım dosyasındaki **BIR İhRACAT** bildiriminde işlev adını dışa aktarmanız gerekmez. Bunun **yerine,** export işlev değiştiricisini kullanabilirsiniz,
 
-**bool GERI çağırma dışarı aktarma** AFunction ( **HDC**, `int` **);**
+**BOOL CALLBACK İhracat** AFunction( **HDC**, `int` **);**
 
-Derleyicinin ada göre dışarı aktarma için uygun dışarı aktarma kaydını takma ad olmadan yaymasına neden olmak için. Bu, çoğu gereksinimde için geçerlidir. Bir işlevi sıralı veya dışa aktarmaya göre dışarı aktarma gibi bazı özel durumlarda, yine de modül tanımı dosyasında bir **dışarı** aktarma ifadesini kullanmanız gerekir.
+derlemenin diğer adla ihracat için uygun ihracat kaydını yontmasını sağlamak. Bu en çok ihtiyaç lar için çalışır. Bir işlevi ordinal tarafından dışa aktarma veya dışa aktarma takma adı gibi bazı özel durumlar için, yine de bir modül tanım dosyasında BIR **İHRACAT** deyimi kullanmanız gerekir.
 
-Geri çağırma kayıt arabirimleri artık tür açısından güvenlidir (belirli bir geri çağırma için doğru işlev türünü işaret eden bir işlev işaretçisi geçirmeniz gerekir).
+Geri arama kayıt arabirimleri artık tür güvenlidir (belirli geri arama için doğru işlev türünü gösteren bir işlev işaretçisi geçmeniz gerekir).
 
-Ayrıca, geri çağırma işlevlerinin Windows 'a döndürülmeden önce Microsoft Foundation özel durumlarını yakalamayacağını unutmayın. Özel durumlar hakkında daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
+Ayrıca, özel durumlar geri arama sınırları dışına atılamayacağından, tüm geri arama işlevlerinin Windows'a dönmeden önce Microsoft Foundation özel durumlarını hapsetmesi gerektiğini de unutmayın. Özel durumlar hakkında daha fazla bilgi için [özel durumlar](../../mfc/exception-handling-in-mfc.md)makalesine bakın.
 
-##  <a name="setarcdirection"></a>CDC:: SetArcDirection
+## <a name="cdcsetarcdirection"></a><a name="setarcdirection"></a>CDC::SetArcDirection
 
 Yay ve dikdörtgen işlevleri için kullanılacak çizim yönünü ayarlar.
 
@@ -5763,27 +5763,27 @@ int SetArcDirection(int nArcDirection);
 *nArcDirection*<br/>
 Yeni yay yönünü belirtir. Bu parametre aşağıdaki değerlerden biri olabilir:
 
-- Saatin tersi olarak çizilen AD_COUNTERCLOCKWISE şekil.
+- AD_COUNTERCLOCKWISE Rakamlar saat yönünün tersine çizilmiştir.
 
-- Saat yönünde çizilen AD_CLOCKWISE şekil.
+- AD_CLOCKWISE Rakamlar saat yönünde çizilmiştir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa eski yay yönünü belirtir; Aksi takdirde 0.
+Başarılı olursa, eski yay yönünü belirtir; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan yönü saatin tersi olur. `SetArcDirection` işlevi aşağıdaki işlevlerin çizildiği yönü belirtir:
+Varsayılan yön saat yönünün tersine. İşlev, `SetArcDirection` aşağıdaki işlevlerin çizdiği yönü belirtir:
 
-|Çizil|Pasta|
+|Arc|Pasta|
 |---------|---------|
 |`ArcTo`|`Rectangle`|
 |`Chord`|`RoundRect`|
 |`Ellipse`||
 
-##  <a name="setattribdc"></a>CDC:: SetAttribDC
+## <a name="cdcsetattribdc"></a><a name="setattribdc"></a>CDC::SetAttribDC
 
-`m_hAttribDC`öznitelik cihazı bağlamını ayarlamak için bu işlevi çağırın.
+Öznitelik aygıtı bağlamını ayarlamak için `m_hAttribDC`bu işlevi çağırın.
 
 ```
 virtual void SetAttribDC(HDC hDC);
@@ -5791,14 +5791,14 @@ virtual void SetAttribDC(HDC hDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*hDC*<br/>
-Bir Windows cihaz bağlamı.
+*Hdc*<br/>
+Windows aygıt bağlamı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, `CDC` nesnesine cihaz bağlamını eklemez. Yalnızca çıkış aygıtı bağlamı `CDC` nesnesine iliştirilir.
+Bu üye işlev aygıt bağlamını `CDC` nesneye eklemez. Yalnızca çıktı aygıtı bağlamı bir `CDC` nesneye eklenir.
 
-##  <a name="setbkcolor"></a>CDC:: SetBkColor
+## <a name="cdcsetbkcolor"></a><a name="setbkcolor"></a>CDC::SetBkColor
 
 Geçerli arka plan rengini belirtilen renge ayarlar.
 
@@ -5813,15 +5813,15 @@ Yeni arka plan rengini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir RGB renk değeri olarak önceki arka plan rengi. Bir hata oluşursa, dönüş değeri 0x80000000 ' dir.
+RGB renk değeri olarak önceki arka plan rengi. Bir hata oluşursa, iade değeri 0x8000000.000'dir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arka plan modu donuk ise, sistem, stili oluşturulmuş satırlardaki boşlukları, fırçalar içindeki taranmış çizgiler arasındaki boşlukları ve karakter hücrelerindeki arka planı bir arada dolduracak şekilde arka plan rengini kullanır. Sistem Ayrıca renk ve tek renkli cihaz bağlamları arasında bit eşlemler dönüştürürken arka plan rengini de kullanır.
+Arka plan modu OPAQUE ise, sistem stildeki çizgilerdeki boşlukları, fırçalarda yumurtadan çıkan çizgiler arasındaki boşlukları ve karakter hücrelerindeki arka planı doldurmak için arka plan rengini kullanır. Sistem ayrıca renk ve tek renkli aygıt bağlamları arasında bit eşlemleri dönüştürürken arka plan rengini kullanır.
 
-Cihaz belirtilen rengi görüntüleyemez, sistem arka plan rengini en yakın fiziksel renge ayarlar.
+Aygıt belirtilen rengi görüntüleyemiyorsa, sistem arka plan rengini en yakın fiziksel renge ayarlar.
 
-##  <a name="setbkmode"></a>CDC:: SetBkMode
+## <a name="cdcsetbkmode"></a><a name="setbkmode"></a>CDC::SetBkMode
 
 Arka plan modunu ayarlar.
 
@@ -5834,9 +5834,9 @@ int SetBkMode(int nBkMode);
 *nBkMode*<br/>
 Ayarlanacak modu belirtir. Bu parametre aşağıdaki değerlerden biri olabilir:
 
-- DONUK arka plan, metinden, taranmış fırçaya veya kalemle çizilmeden önce geçerli arka plan rengiyle doldurulur. Bu, varsayılan arka plan modudur.
+- OPAQUE Arka Plan metin, yumurtadan çıkmış fırça veya kalem çizilmeden önce geçerli arka plan rengi ile doldurulur. Bu varsayılan arka plan modudur.
 
-- SAYDAM arka plan, çizimden önce değiştirilmez.
+- SAYDAM Arka Plan çizimden önce değiştirilmez.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -5844,15 +5844,15 @@ Ayarlanacak modu belirtir. Bu parametre aşağıdaki değerlerden biri olabilir:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arka plan modu, sistemin metin, taranmış fırçalar veya düz bir çizgi olmayan herhangi bir kalem stili çizmeksizin çizim yüzeyindeki mevcut arka plan renklerini kaldırıp kaldırmadığını tanımlar.
+Arka plan modu, sistemin metin çizmeden önce çizim yüzeyindeki varolan arka plan renklerini, yumurtadan çıkan fırçaları veya düz çizgi olmayan herhangi bir kalem stilini ortadan kaldırıp kaldırmadığını tanımlar.
 
 ### <a name="example"></a>Örnek
 
-  [CWnd:: OnCtlColor](../../mfc/reference/cwnd-class.md#onctlcolor)için örneğe bakın.
+  CWnd örneğine [bakın:OnCtlColor](../../mfc/reference/cwnd-class.md#onctlcolor).
 
-##  <a name="setboundsrect"></a>CDC:: SetBoundsRect
+## <a name="cdcsetboundsrect"></a><a name="setboundsrect"></a>CDC::SetBoundsRect
 
-Belirtilen cihaz bağlamı için sınırlayıcı dikdörtgen bilgilerin birikdiğini denetler.
+Belirtilen aygıt bağlamı için sınırlama-dikdörtgen bilgilerinin birikimini denetler.
 
 ```
 UINT SetBoundsRect(
@@ -5862,35 +5862,35 @@ UINT SetBoundsRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lprectsınır*<br/>
-Sınırlayıcı dikdörtgeni ayarlamak için kullanılan bir `RECT` yapısına veya `CRect` nesnesine işaret eder. Dikdörtgen boyutları mantıksal koordinatlara verilir. Bu parametre NULL olabilir.
+*lpRectBounds*<br/>
+Sınırlayıcı `RECT` dikdörtgeni `CRect` ayarlamak için kullanılan bir yapıveya nesneyi işaret ediyor. Dikdörtgen boyutları mantıksal koordinatlarda verilir. Bu parametre NULL olabilir.
 
-*larına*<br/>
+*bayraklar*<br/>
 Yeni dikdörtgenin birikmiş dikdörtgenle nasıl birleştirileceğini belirtir. Bu parametre aşağıdaki değerlerin bir birleşimi olabilir:
 
-- DCB_ACCUMULATE, *Lprectlimitle* belirtilen dikdörtgeni sınırlayıcı dikdörtgene ekleyin (dikdörtgen birleşim işlemi kullanarak).
+- DCB_ACCUMULATE *LpRectBounds* tarafından belirtilen dikdörtgeni sınırlayan dikdörtgenin (dikdörtgen-birleşim işlemi kullanılarak) ekleyin.
 
-- Sınır birikmesi DCB_DISABLE.
+- DCB_DISABLE Sınır birikimini kapatın.
 
-- Sınır birikmesi DCB_ENABLE açın. (Sınır birikmesi için varsayılan ayar devre dışıdır.)
+- DCB_ENABLE Sınır birikimini açın. (Sınır biriktirme için varsayılan ayar devre dışı bırakılır.)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa sınırlayıcı dikdörtgenin geçerli durumu. *Bayraklar*gibi, dönüş değeri **DCB_** değerlerinin bir birleşimi olabilir:
+İşlev başarılı olursa, sınırlayan dikdörtgenin geçerli durumu. *Bayraklar*gibi, iade değeri **DCB_** değerlerin bir birleşimi olabilir:
 
-- DCB_ACCUMULATE sınırlayıcı dikdörtgen boş değil. Bu değer, her zaman ayarlanır.
+- DCB_ACCUMULATE Sınırlayıcı dikdörtgen boş değil. Bu değer her zaman ayarlanır.
 
-- DCB_DISABLE sınırları birikmesi kapalı.
+- DCB_DISABLE Bounds birikimi kapalıdır.
 
-- DCB_ENABLE sınırları birikmesi açık.
+- DCB_ENABLE Bounds birikimi açıktır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows, tüm çizim işlemleri için sınırlayıcı bir dikdörtgen tutabilir. Bu dikdörtgen, uygulama tarafından sorgulanabilir ve sıfırlanabilir. Çizim sınırları, bit eşlem önbellekleri için geçersiz kılma için yararlıdır.
+Windows, tüm çizim işlemleri için sınırlayıcı bir dikdörtgen sağlayabilir. Bu dikdörtgen sorgulanabilir ve uygulama tarafından sıfırlanabilir. Çizim sınırları bit eşleme önbellekleri geçersiz hale için yararlıdır.
 
-##  <a name="setbrushorg"></a>CDC:: Setbrühorg
+## <a name="cdcsetbrushorg"></a><a name="setbrushorg"></a>CDC::SetBrushOrg
 
-GDI 'nın uygulamanın cihaz bağlamında seçtiği bir sonraki fırçaya atayabileceği kaynağı belirtir.
+GDI'nin, uygulamanın aygıt bağlamına seçtiği bir sonraki fırçaya atayacağı kaynağı belirtir.
 
 ```
 CPoint SetBrushOrg(
@@ -5902,28 +5902,28 @@ CPoint SetBrushOrg(POINT point);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Yeni başlangıcının x koordinatını (cihaz birimlerinde) belirtir. Bu değer 0-7 aralığında olmalıdır.
+*X*<br/>
+Yeni kaynağın x-koordinatını (aygıt birimlerinde) belirtir. Bu değer 0-7 aralığında olmalıdır.
 
-*Iz*<br/>
-Yeni başlangıcının y koordinatını (cihaz birimlerinde) belirtir. Bu değer 0-7 aralığında olmalıdır.
+*Y*<br/>
+Yeni kaynağın y-koordinatını (aygıt birimlerinde) belirtir. Bu değer 0-7 aralığında olmalıdır.
 
-*seçeneğinin*<br/>
-Yeni başlangıcının x ve y koordinatlarını belirtir. Her değer 0-7 aralığında olmalıdır. Bu parametre için bir `POINT` yapısını ya da bir `CPoint` nesnesini geçirebilirsiniz.
+*Nokta*<br/>
+Yeni kaynağın x- ve y-koordinatlarını belirtir. Her değer 0-7 aralığında olmalıdır. Bu parametre `POINT` için bir `CPoint` yapı veya nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fırçanın cihaz birimlerindeki önceki kaynağı.
+Aygıt birimlerinde fırçanın önceki kaynağı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Fırça kaynağı için varsayılan Koordinatlar (0, 0). Bir fırçanın kaynağını değiştirmek için, `CBrush` nesnesi için `UnrealizeObject` işlevini çağırın, `SetBrushOrg`çağırın ve ardından, cihaz bağlamına fırçayı seçmek için `SelectObject` member işlevini çağırın.
+Fırça kaynağı için varsayılan koordinatlar (0, 0) olur. Bir fırçanın kaynağını değiştirmek için `UnrealizeObject` `CBrush` nesnenin işlevini `SetBrushOrg`çağırın, çağırın ve ardından aygıt bağlamına fırçayı seçmek için `SelectObject` üye işlevi arayın.
 
-Hisse senedi `CBrush` nesneleriyle `SetBrushOrg` kullanmayın.
+Stok `CBrush` nesneleri `SetBrushOrg` ile kullanmayın.
 
-##  <a name="setcoloradjustment"></a>CDC:: Setcolorayarlaması
+## <a name="cdcsetcoloradjustment"></a><a name="setcoloradjustment"></a>CDC::AyarRenk Ayarlaması
 
-Belirtilen değerleri kullanarak cihaz bağlamı için renk ayarlama değerlerini ayarlar.
+Belirtilen değerleri kullanarak aygıt bağlamı için renk ayarlama değerlerini ayarlar.
 
 ```
 BOOL SetColorAdjustment(const COLORADJUSTMENT* lpColorAdjust);
@@ -5931,20 +5931,20 @@ BOOL SetColorAdjustment(const COLORADJUSTMENT* lpColorAdjust);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpcolorayarla*<br/>
-Renk ayarlama değerlerini içeren bir [colorayarlamasının](/windows/win32/api/wingdi/ns-wingdi-coloradjustment) veri yapısına işaret eder.
+*lpColorAdjust*<br/>
+Renk ayarlama değerlerini içeren [COLORADJUSTMENT](/windows/win32/api/wingdi/ns-wingdi-coloradjustment) veri yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0.
+Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Renk ayarlama değerleri, yarı ton modu ayarlandığında `CDC::StretchBlt` üye işlevine yapılan çağrılar için kaynak bit eşlemin giriş rengini ayarlamak için kullanılır.
+HALFTONE modu `CDC::StretchBlt` ayarlandığında, üye işlevdeki çağrılar için kaynak bit eşlemi giriş rengini ayarlamak için renk ayarlama değerleri kullanılır.
 
-##  <a name="setdcbrushcolor"></a>CDC:: Setdcbrühcolor
+## <a name="cdcsetdcbrushcolor"></a><a name="setdcbrushcolor"></a>CDC::SetDCBrushColor
 
-Geçerli cihaz bağlamı (DC) fırça rengini belirtilen renk değerine ayarlar.
+Geçerli aygıt bağlamını (DC) fırça rengini belirtilen renk değerine ayarlar.
 
 ```
 COLORREF SetDCBrushColor(COLORREF crColor);
@@ -5957,17 +5957,17 @@ Yeni fırça rengini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri bir COLORREF değeri olarak önceki DC fırçası rengini belirtir.
+İşlev başarılı olursa, iade değeri önceki DC fırça rengini COLORREF değeri olarak belirtir.
 
-İşlev başarısız olursa, dönüş değeri CLR_INVALID.
+İşlev başarısız olursa, iade değeri CLR_INVALID.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklandığı gibi [Setdcbrühcolor](/windows/win32/api/wingdi/nf-wingdi-setdcbrushcolor)işlevinin işlevselliğine öykünür.
+Bu yöntem, Windows SDK'da açıklandığı gibi [SetDCBrushColor](/windows/win32/api/wingdi/nf-wingdi-setdcbrushcolor)işlevini taklit eder.
 
-##  <a name="setdcpencolor"></a>CDC:: SetDCPenColor
+## <a name="cdcsetdcpencolor"></a><a name="setdcpencolor"></a>CDC::SetDCPenColor
 
-Geçerli cihaz bağlamı (DC) kalem rengini belirtilen renk değerine ayarlar.
+Geçerli aygıt bağlamını (DC) kalem rengini belirtilen renk değerine ayarlar.
 
 ```
 COLORREF SetDCPenColor(COLORREF crColor);
@@ -5984,11 +5984,11 @@ Yeni kalem rengini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [SetDCPenColor](/windows/win32/api/wingdi/nf-wingdi-setdcpencolor)Win32 işlevini kullanır.
+Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 fonksiyonu [SetDCPenColor'u](/windows/win32/api/wingdi/nf-wingdi-setdcpencolor)kullanır.
 
-##  <a name="setgraphicsmode"></a>CDC:: SetGraphicsMode
+## <a name="cdcsetgraphicsmode"></a><a name="setgraphicsmode"></a>CDC::SetGraphicsMode
 
-Belirtilen cihaz bağlamı için grafik modunu ayarlar.
+Belirtilen aygıt bağlamı için grafik modunu ayarlar.
 
 ```
 int SetGraphicsMode(int iMode);
@@ -5996,22 +5996,22 @@ int SetGraphicsMode(int iMode);
 
 ### <a name="parameters"></a>Parametreler
 
-*ımode*<br/>
-Grafik modunu belirtir. Bu parametrenin ele aldığı değerlerin bir listesi için bkz. [SetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-setgraphicsmode).
+*iMode*<br/>
+Grafik modunu belirtir. Bu parametrenin alabilecekleri değerlerin listesi için [SetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-setgraphicsmode)bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda eski grafik modunu döndürür.
+Başarı için eski grafik modunu döndürür.
 
-Hatada 0 döndürür. Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+Hatada 0 döndürür. Genişletilmiş hata bilgilerini almak için [GetLastError'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)arayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [SetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-setgraphicsmode)Windows GDI işlevini sarmalanmış.
+Bu yöntem Windows GDI fonksiyonu [SetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-setgraphicsmode)sarar.
 
-##  <a name="setlayout"></a>CDC:: SetLayout
+## <a name="cdcsetlayout"></a><a name="setlayout"></a>CDC::SetLayout
 
-Bir cihaz bağlamı için metin ve grafiklerin yerleşimini sağdan sola, Arapça ve Ibranice gibi kültürler için standart düzeni değiştirmek üzere bu üye işlevini çağırın.
+Arapça ve İbranice gibi kültürler için standart düzen olan bir aygıt bağlamının düzenini sağdan sola değiştirmek için bu üye işlevi arayın.
 
 ```
 DWORD SetLayout(DWORD dwLayout);
@@ -6019,32 +6019,32 @@ DWORD SetLayout(DWORD dwLayout);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwLayout*<br/>
-Cihaz bağlamı düzeni ve bit eşlem denetim bayrakları. Aşağıdaki değerlerin bir birleşimi olabilir.
+*dwDüzen*<br/>
+Aygıt bağlam düzeni ve bitmap denetim bayrakları. Aşağıdaki değerlerin bir birleşimi olabilir.
 
-|Değer|Açıklama|
+|Değer|Anlamı|
 |-----------|-------------|
-|LAYOUT_BITMAPORIENTATIONPRESERVED|[CDC:: BitBlt](#bitblt) ve [CDC:: ırblt](#stretchblt)çağrıları için herhangi bir yansımayı devre dışı bırakır.|
-|LAYOUT_RTL|Varsayılan yatay düzeni sağdan sola olacak şekilde ayarlar.|
-|LAYOUT_LTR|Varsayılan düzeni sağdan sola olacak şekilde ayarlar.|
+|LAYOUT_BITMAPORIENTATIONPRESERVED|CDC çağrıları için herhangi bir yansıma devre dışı [kalıyor::BitBlt](#bitblt) ve [CDC::StretchBlt](#stretchblt).|
+|LAYOUT_RTL|Varsayılan yatay düzeni sağdan sola olarak ayarlar.|
+|LAYOUT_LTR|Varsayılan düzeni soldan sağa doğru ayarlar.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, cihaz bağlamının önceki düzeni.
+Başarılı olursa, aygıt bağlamının önceki düzeni.
 
-Başarısız olursa, GDI_ERROR. Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+Başarısız olursa, GDI_ERROR. Genişletilmiş hata bilgilerini almak için [GetLastError'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)arayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normalde, bir pencere için `SetLayout` çağırmayın. Bunun yerine, WS_EX_RTLREADING gibi [genişletilmiş pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) ayarlayarak bir pencerede sağdan sola düzeni kontrol edersiniz. Yazıcı veya dosya dosyası gibi bir cihaz bağlamı bu düzeni almıyor. Sağdan sola düzen için cihaz bağlamını ayarlamaya yönelik tek yol `SetLayout`' i çağırarak.
+Normalde, bir pencere `SetLayout` için aramazsınız. Bunun yerine, WS_EX_RTLREADING gibi [genişletilmiş pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) ayarlayarak bir pencerede sağdan sola düzeni denetlersiniz. Yazıcı veya metadosya gibi bir aygıt bağlamı bu düzeni devralmaz. Aygıt bağlamını sağdan sola düzen için ayarlamanın tek `SetLayout`yolu.
 
-**SetLayout (LAYOUT_RTL** ) çağrısı yaparsanız, `SetLayout` eşleme modunu otomatik olarak MM_ISOTROPIC olarak değiştirir. Sonuç olarak, sonraki [GetMapMode](#getmapmode) çağrısı MM_TEXT yerine MM_ISOTROPIC döndürür.
+**SetLayout(LAYOUT_RTL)** çağırırsanız, `SetLayout` eşleme modunu otomatik olarak MM_ISOTROPIC olarak değiştirir. Sonuç olarak, [GetMapMode](#getmapmode) sonraki bir çağrı MM_TEXT yerine MM_ISOTROPIC döndürecektir.
 
-Birçok bit eşlem gibi bazı durumlarda, soldan sağa düzeni korumak isteyebilirsiniz. Bu durumlarda, `BitBlt` veya `StretchBlt`çağırarak görüntüyü işleme, sonra *dwLayout* için bit eşlem denetim bayrağını LAYOUT_BITMAPORIENTATIONPRESERVED olarak ayarlayın.
+Birçok bit eşlem gibi bazı durumlarda, soldan sağa düzeni korumak isteyebilirsiniz. Bu gibi durumlarda, *dwLayout* için bit eşlem denetim bayrağını LAYOUT_BITMAPORIENTATIONPRESERVED için çağırarak `BitBlt` veya `StretchBlt`sonra bitmap denetim bayrağını ayarlayarak görüntüyü işleyin.
 
-Düzeni LAYOUT_RTL bayrağıyla değiştirdiğinizde normalde sağ veya sol belirten bayraklar ters çevrilir. Karışıklıkları önlemek için standart bayraklar için alternatif adlar tanımlamak isteyebilirsiniz. Önerilen alternatif bayrak adlarının bir listesi için Windows SDK [SetLayout](/windows/win32/api/wingdi/nf-wingdi-setlayout) bölümüne bakın.
+Düzeni LAYOUT_RTL bayrağıyla değiştirdikten sonra, normalde sağ veya sol ada diyen bayraklar tersine çevrilir. Karışıklığı önlemek için standart bayraklar için alternatif adlar tanımlamak isteyebilirsiniz. Önerilen alternatif bayrak adlarının listesi için Windows SDK'daki [SetDüzeni'ne](/windows/win32/api/wingdi/nf-wingdi-setlayout) bakın.
 
-##  <a name="setmapmode"></a>CDC:: SetMapMode
+## <a name="cdcsetmapmode"></a><a name="setmapmode"></a>CDC::SetMapMode
 
 Eşleme modunu ayarlar.
 
@@ -6057,21 +6057,21 @@ virtual int SetMapMode(int nMapMode);
 *nMapMode*<br/>
 Yeni eşleme modunu belirtir. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- MM_ANISOTROPIC mantıksal birimler rastgele ölçeklendirilen eksenlerle rastgele birimlere dönüştürülür. Eşleme modunun MM_ANISOTROPIC olarak ayarlanması geçerli pencere veya Görünüm penceresi ayarlarını değiştirmez. Birimleri, yönü ve ölçeklendirmeyi değiştirmek için [SetWindowExt](#setwindowext) ve [Setviewpormetinmember](#setviewportext) işlevlerini çağırın.
+- MM_ANISOTROPIC Mantıksal birimler rasgele ölçeklenmiş eksenleri ile rasgele birimler dönüştürülür. Eşleme modunu MM_ANISOTROPIC ayarlamak geçerli pencereyi veya viewport ayarlarını değiştirmez. Birimleri, yönlendirmeyi ve ölçeklemeyi değiştirmek için [SetWindowExt](#setwindowext) ve [SetViewportExt](#setviewportext) üye işlevlerini arayın.
 
-- MM_HIENGLISH her mantıksal birim 0,001 inç 'e dönüştürülür. Pozitif x doğru; pozitif y çalışır.
+- MM_HIENGLISH Her mantıksal birim 0,001 inç dönüştürülür. Pozitif x sağda; pozitif y kadar.
 
-- MM_HIMETRIC her bir mantıksal birim 0,01 milimetreye dönüştürülür. Pozitif x doğru; pozitif y çalışır.
+- MM_HIMETRIC Her mantıksal birim 0,01 milimetreye dönüştürülür. Pozitif x sağda; pozitif y kadar.
 
-- MM_ISOTROPIC mantıksal birimler, eşit ölçekli eksenlerle rastgele birimlere dönüştürülür; diğer bir deyişle, x ekseni üzerinde 1 birim y ekseni üzerinde 1 birime eşittir. İstenen birimleri ve eksenlerin yönünü belirtmek için `SetWindowExt` ve `SetViewportExt` üye işlevlerini kullanın. GDI, x ve y birimlerinin aynı boyutta kalmasını sağlamak için gereken ayarlamaları yapar.
+- MM_ISOTROPIC Mantıksal birimler eşit ölçeklenmiş eksenlere sahip rasgele birimlere dönüştürülür; yani, x ekseni boyunca 1 birim y ekseni boyunca 1 birim eşittir. İstenilen `SetWindowExt` birimleri ve eksenlerin yönünü belirtmek için ve `SetViewportExt` üye işlevleri kullanın. GDI, x ve y birimlerinin aynı boyutta kalmasını sağlamak için gerekli ayarlamaları yapar.
 
-- MM_LOENGLISH her mantıksal birim 0,01 inç 'e dönüştürülür. Pozitif x doğru; pozitif y çalışır.
+- MM_LOENGLISH Her mantıksal birim 0,01 inç dönüştürülür. Pozitif x sağda; pozitif y kadar.
 
-- MM_LOMETRIC her bir mantıksal birim 0,1 milimetreye dönüştürülür. Pozitif x doğru; pozitif y çalışır.
+- MM_LOMETRIC Her mantıksal birim 0,1 milimetreye dönüştürülür. Pozitif x sağda; pozitif y kadar.
 
-- MM_TEXT her mantıksal birim 1 cihaz pikseline dönüştürülür. Pozitif x doğru; pozitif y çalışmıyor.
+- MM_TEXT Her mantıksal birim 1 aygıt pikseline dönüştürülür. Pozitif x sağda; pozitif y düştü.
 
-- MM_TWIPS her mantıksal birim bir noktanın 1/20 ' ine dönüştürülür. (Bir nokta 1/72 inç olduğundan, twip 1/1440 inç olur.) Pozitif x doğru; pozitif y çalışır.
+- MM_TWIPS Her mantıksal birim bir noktanın 1/20'sine dönüştürülür. (Bir nokta 1/72 inç olduğundan, bir twip 1/1440 inç'tir.) Pozitif x sağda; pozitif y kadar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6079,20 +6079,20 @@ Yeni eşleme modunu belirtir. Aşağıdaki değerlerden herhangi biri olabilir:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşleme modu, mantıksal birimleri cihaz birimlerine dönüştürmek için kullanılan ölçü birimini tanımlar; Ayrıca, cihazın x ve y eksenlerinin yönünü de tanımlar. GDI, mantıksal koordinatları uygun cihaz koordinatlarına dönüştürmek için eşleme modunu kullanır. MM_TEXT modu, uygulamaların cihaz piksellerinde çalışmasına izin verir, burada 1 birim 1 piksele eşittir. Bir pikselin fiziksel boyutu cihazdan cihaza farklılık gösterir.
+Eşleme modu, mantıksal birimleri aygıt birimlerine dönüştürmek için kullanılan ölçü birimini tanımlar; ayrıca cihazın x- ve y-eksenlerinin yönünü tanımlar. GDI, mantıksal koordinatları uygun aygıt koordinatlarına dönüştürmek için eşleme modunu kullanır. MM_TEXT modu, uygulamaların 1 ünitenin 1 piksele eşit olduğu aygıt piksellerinde çalışmasını sağlar. Pikselin fiziksel boyutu aygıttan aygıta değişir.
 
-MM_HIENGLISH, MM_HIMETRIC, MM_LOENGLISH, MM_LOMETRIC ve MM_TWIPS modları, fiziksel olarak anlamlı birimlerde (inç veya milimetre gibi) çizilmesi gereken uygulamalar için yararlıdır. MM_ISOTROPIC modu, bir görüntünün tam şeklinin korunması önemli olduğunda faydalı olan 1:1 boyut oranını sağlar. MM_ANISOTROPIC modu, x ve y koordinatlarının bağımsız olarak ayarlanmasına olanak tanır.
+MM_HIENGLISH, MM_HIMETRIC, MM_LOENGLISH, MM_LOMETRIC ve MM_TWIPS modları fiziksel olarak anlamlı birimler (inç veya milimetre gibi) çizmek gerekir uygulamalar için yararlıdır. MM_ISOTROPIC modu, görüntünün tam şeklini korumak önemli olduğunda yararlı olan 1:1 en boy oranı sağlar. MM_ANISOTROPIC modu x- ve y-koordinatlarının bağımsız olarak ayarlanmasını sağlar.
 
 > [!NOTE]
->  DC 'yi (cihaz bağlamı) sağdan sola düzenine dönüştürmek için [SetLayout](#setlayout) ' ı çağırırsanız, `SetLayout` eşleme modunu otomatik olarak MM_ISOTROPIC olarak değiştirir.
+> DC'yi (aygıt bağlamı) sağdan sola düzene değiştirmek `SetLayout` için [SetLayout'ı](#setlayout) çağırırsanız, eşleme modunu otomatik olarak MM_ISOTROPIC olarak değiştirir.
 
 ### <a name="example"></a>Örnek
 
-  [CView:: Onhazırlık EDC](../../mfc/reference/cview-class.md#onpreparedc)örneğine bakın.
+  CView örneğine [bakın::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc).
 
-##  <a name="setmapperflags"></a>CDC:: SetMapperFlags
+## <a name="cdcsetmapperflags"></a><a name="setmapperflags"></a>CDC::SetMapperFlags
 
-Bir mantıksal yazı tipini fiziksel bir yazı tipine dönüştürürken yazı tipi Eşleyici tarafından kullanılan yöntemi değiştirir.
+Mantıksal bir yazı tipini fiziksel bir yazı tipine dönüştürdüğünde yazı tipi eşleği tarafından kullanılan yöntemi değiştirir.
 
 ```
 DWORD SetMapperFlags(DWORD dwFlag);
@@ -6100,24 +6100,24 @@ DWORD SetMapperFlags(DWORD dwFlag);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwFlag*<br/>
-Yazı tipi eşleştiricisini, bir yazı tipinin boyut yüksekliğini ve genişliğini cihazla eşleştirmeye çalışıp çalışmadığını belirtir. Bu değer ASPECT_FILTERING olduğunda Eşleyici yalnızca x-görünüş ve y-y en boy değerlerini belirtilen cihazdan tam olarak eşleşen yazı tiplerini seçer.
+*dwBayrak*<br/>
+Yazı tipi eşleminin bir yazı tipinin boy yüksekliğini ve genişliğini aygıtla eşleştirmeye çalışıp çalışmadığını belirtir. Bu değer ASPECT_FILTERING olduğunda, mapper yalnızca x-boy ve y-yönü belirtilen aygıtınkiyle tam olarak eşleşen yazı tiplerini seçer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazı tipi-Eşleyici bayrağının önceki değeri.
+Yazı tipi mapper bayrağının önceki değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir uygulama, yazı tipi eşleştiricisini yalnızca belirtilen cihazın en boy oranıyla tam olarak eşleşen bir fiziksel yazı tipi seçme girişiminde bulunan `SetMapperFlags` kullanabilir.
+Bir uygulama, `SetMapperFlags` yazı tipi haritaper'ının yalnızca belirtilen aygıtın en boy oranıyla tam olarak eşleşen fiziksel bir yazı tipi seçmeye çalışmasına neden olmak için kullanabilir.
 
-Yalnızca raster yazı tiplerini kullanan bir uygulama, yazı tipi Eşleyici tarafından seçilen yazı tipinin, belirtilen cihazda etkileyici ve okunabilir olduğundan emin olmak için `SetMapperFlags` işlevini kullanabilir. Ölçeklenebilir (TrueType) yazı tiplerini kullanan uygulamalar genellikle `SetMapperFlags`kullanmaz.
+Yalnızca raster yazı tipleri kullanan bir `SetMapperFlags` uygulama, yazı tipi haritacısı tarafından seçilen yazı tipinin belirtilen aygıtta çekici ve okunabilir olmasını sağlamak için işlevi kullanabilir. Ölçeklenebilir (TrueType) yazı tiplerini kullanan uygulamalar genellikle `SetMapperFlags`.
 
-Fiziksel yazı tipinin, mantıksal yazı tipinde belirtile eşleşen bir en boy oranı yoksa, GDI yeni bir en boy oranı seçer ve bu yeni en boy oranıyla eşleşen bir yazı tipi seçer.
+Hiçbir fiziksel yazı tipi mantıksal yazı tipinde belirtim eşleşen bir en boy oranı varsa, GDI yeni bir en boy oranı seçer ve bu yeni en boy oranı eşleşen bir yazı tipi seçer.
 
-##  <a name="setmiterlimit"></a>CDC:: Setmıterlimit
+## <a name="cdcsetmiterlimit"></a><a name="setmiterlimit"></a>CDC::SetMiterLimit
 
-Cihaz bağlamı için Gönye birleştirmeleri uzunluğunun sınırını ayarlar.
+Aygıt bağlamı için gönye birleştirmelerinin uzunluğu için sınırı ayarlar.
 
 ```
 BOOL SetMiterLimit(float fMiterLimit);
@@ -6125,8 +6125,8 @@ BOOL SetMiterLimit(float fMiterLimit);
 
 ### <a name="parameters"></a>Parametreler
 
-*Fmıterlimit*<br/>
-Cihaz bağlamı için yeni gönye sınırını belirtir.
+*fMiterLimit*<br/>
+Aygıt bağlamı için yeni gönye sınırını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6134,11 +6134,11 @@ Cihaz bağlamı için yeni gönye sınırını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gönye uzunluğu, birleştirmenin dışında bulunan satır duvarlarının kesişimindeki çizgi duvarlarının kesişiminden uzaklık olarak tanımlanır (). Gönye sınırı, gönye uzunluğunun çizgi genişliğine olan izin verilen en yüksek orandır. Varsayılan Gönye sınırı 10,0 ' dir.
+Gönye uzunluğu, birleştirmenin içindeki çizgi duvarlarının kesişme noktasından, birleştirmenin dışındaki çizgi duvarlarının kesiştiği mesafe olarak tanımlanır. Gönye limiti, gönye uzunluğunun hat genişliğine izin verilen maksimum oranıdır. Varsayılan gönye sınırı 10.0'dır.
 
-##  <a name="setoutputdc"></a>CDC:: SetOutputDC
+## <a name="cdcsetoutputdc"></a><a name="setoutputdc"></a>CDC::SetOutputDC
 
-Çıkış cihazı bağlamını ayarlamak için bu üye işlevi çağırın `m_hDC`.
+Çıktı aygıtı bağlamını ayarlamak için `m_hDC`bu üye işlevi arayın.
 
 ```
 virtual void SetOutputDC(HDC hDC);
@@ -6146,16 +6146,16 @@ virtual void SetOutputDC(HDC hDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*hDC*<br/>
-Bir Windows cihaz bağlamı.
+*Hdc*<br/>
+Windows aygıt bağlamı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi yalnızca `CDC` nesnesine bir cihaz bağlamı iliştirilmişse çağrılabilir. Bu üye işlevi `m_hDC` ayarlar, ancak cihaz bağlamını `CDC` nesnesine eklemez.
+Bu üye işlev yalnızca aygıt bağlamı `CDC` nesneye eklenmediğinde çağrılabilir. Bu üye `m_hDC` işlev, aygıt bağlamını `CDC` nesneye bağlamaz.
 
-##  <a name="setpixel"></a>CDC:: SetPixel
+## <a name="cdcsetpixel"></a><a name="setpixel"></a>CDC::SetPixel
 
-Belirtilen noktadaki pikseli, *crColor*tarafından belirtilen rengin en yakın yaklaşık olarak ayarlar.
+Pikseli *crColor*tarafından belirtilen rengin en yakın yaklaşık'ına belirtilen noktada ayarlar.
 
 ```
 COLORREF SetPixel(
@@ -6170,31 +6170,31 @@ COLORREF SetPixel(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*X*<br/>
 Ayarlanacak noktanın mantıksal x koordinatını belirtir.
 
-*Iz*<br/>
+*Y*<br/>
 Ayarlanacak noktanın mantıksal y koordinatını belirtir.
 
 *crColor*<br/>
-Noktayı boyamak için kullanılan rengi belirten COLORREF RGB değeri. Bu değerin bir açıklaması için Windows SDK [colorref](/windows/win32/gdi/colorref) bölümüne bakın.
+Noktayı boyamak için kullanılan rengi belirten bir COLORREF RGB değeri. Bu değerin açıklaması için Windows SDK'daki [COLORREF'a](/windows/win32/gdi/colorref) bakın.
 
-*seçeneğinin*<br/>
-Ayarlanacak noktanın mantıksal x ve y koordinatlarını belirtir. Bu parametre için bir `POINT` yapısını ya da bir `CPoint` nesnesini geçirebilirsiniz.
+*Nokta*<br/>
+Ayarlanacak noktanın mantıksal x- ve y-koordinatlarını belirtir. Bu parametre `POINT` için bir `CPoint` yapı veya nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Noktanın gerçekten boyanmış olduğu renk için bir RGB değeri. Bu rengin yaklaşık bir değeri kullanılıyorsa, bu değer *crColor* tarafından belirtilen değerden farklı olabilir. İşlev başarısız olursa (nokta kırpma bölgesinin dışındaysa), dönüş değeri-1 ' dir.
+Noktanın gerçekten boyandığı renk için Bir RGB değeri. Bu renk yaklaşık kullanılırsa bu değer *crColor* tarafından belirtilen farklı olabilir. İşlev başarısız olursa (nokta kırpma bölgesinin dışındaysa), iade değeri -1'dir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nokta, kırpma bölgesinde olmalıdır. Nokta kırpma bölgesinde değilse, işlev hiçbir şey yapmaz.
+Nokta kırpma bölgesinde olmalıdır. Nokta kırpma bölgesinde değilse, işlev hiçbir şey yapmaz.
 
-Tüm cihazlar `SetPixel` işlevini desteklemez. Bir cihazın `SetPixel`destekleyip desteklemediğini anlamak için, bir `GetDeviceCaps` üye işlevini, RASTERLEŞTIRME diziniyle çağırın ve RC_BITBLT bayrağının dönüş değerini denetleyin.
+Tüm aygıtlar `SetPixel` işlevi desteklemez. Aygıtın destekleyip `SetPixel`desteklemediğini `GetDeviceCaps` belirlemek için, RASTERCAPS dizinini içeren üye işlevini arayın ve RC_BITBLT bayrağının iade değerini denetleyin.
 
-##  <a name="setpixelv"></a>CDC:: SetPixelV
+## <a name="cdcsetpixelv"></a><a name="setpixelv"></a>CDC::SetPixelV
 
-Belirtilen koordinatlardaki pikseli belirtilen rengin en yakın yaklaşık rengine ayarlar.
+Belirtilen koordinatlarda pikseli belirtilen rengin en yakın yaklaşık yaklaşık olarak ayarlar.
 
 ```
 BOOL SetPixelV(
@@ -6209,17 +6209,17 @@ BOOL SetPixelV(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Ayarlanacak noktanın, mantıksal birimlerde x koordinatını belirtir.
+*X*<br/>
+Ayarlanacak noktanın x-koordinatını mantıksal birimler halinde belirtir.
 
-*Iz*<br/>
-Ayarlanacak noktanın, mantıksal birimler cinsinden y koordinatını belirtir.
+*Y*<br/>
+Ayarlanacak noktanın y-koordinatını mantıksal birimler halinde belirtir.
 
 *crColor*<br/>
 Noktayı boyamak için kullanılacak rengi belirtir.
 
-*seçeneğinin*<br/>
-Ayarlanacak noktanın mantıksal x ve y koordinatlarını belirtir. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapısını veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
+*Nokta*<br/>
+Ayarlanacak noktanın mantıksal x- ve y-koordinatlarını belirtir. Bu parametre için bir [POINT](/windows/win32/api/windef/ns-windef-point) veri yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6227,9 +6227,9 @@ Ayarlanacak noktanın mantıksal x ve y koordinatlarını belirtir. Bu parametre
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nokta, hem kırpma bölgesinde hem de cihaz yüzeyi görünür bölümünde olmalıdır. Tüm cihazlar üye işlevini desteklemez. Daha fazla bilgi için `CDC::GetDeviceCaps` üye işlevindeki RC_BITBLT özelliğine bakın. `SetPixelV`, gerçekten boyanmış olan noktanın renk değerini döndürmesi gerekmediğinden `SetPixel` daha hızlıdır.
+Nokta hem kırpma bölgesinde hem de cihaz yüzeyinin görünen kısmında olmalıdır. Tüm aygıtlar üye işlevini desteklemez. Daha fazla bilgi için üye `CDC::GetDeviceCaps` işlevdeki RC_BITBLT özelliğine bakın. `SetPixelV`aslında boyalı `SetPixel` noktanın renk değerini döndürmek gerekmez çünkü daha hızlıdır.
 
-##  <a name="setpolyfillmode"></a>CDC:: SetPolyFillMode
+## <a name="cdcsetpolyfillmode"></a><a name="setpolyfillmode"></a>CDC::SetPolyFillMode
 
 Çokgen doldurma modunu ayarlar.
 
@@ -6240,19 +6240,19 @@ int SetPolyFillMode(int nPolyFillMode);
 ### <a name="parameters"></a>Parametreler
 
 *nPolyFillMode*<br/>
-Yeni doldurma modunu belirtir. Bu değer ALTERNATIF ya da SARGı olabilir. Windows 'da ayarlanan varsayılan mod ALTERNATIF.
+Yeni dolum modunu belirtir. Bu değer ALTERNATİf veya SARMA olabilir. Windows'da ayarlanan varsayılan mod ALTERNATE'dir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa önceki doldurma modu; Aksi takdirde 0.
+Önceki dolum modu, başarılı olursa; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çokgen doldurma modu ALTERNATIF olduğunda, sistem, her tarama satırındaki tek sayılı ve çift numaralı Çokgen kenarları arasında alanı doldurur. Diğer bir deyişle, sistem alanı birinci ve ikinci kenar arasında, üçüncü ve dördüncü taraf arasında doldurur ve bu şekilde devam eder. Bu mod varsayılandır.
+Çokgen doldurma modu ALTERNATE olduğunda, sistem her tetkik satırında tek numaralı ve çift numaralı çokgen kenarlar arasındaki alanı doldurur. Diğer bir tarihte, sistem birinci ve ikinci taraf arasındaki alanı, üçüncü ve dördüncü taraf arasındaki alanı doldurur, ve saire. Bu varsayılan moddur.
 
-Çokgen doldurma modu SARGı olduğunda, sistem bir alanın doldurulup doldurulmayacağını belirleyen yönü kullanır. Bir Çokgendeki her çizgi segmenti saat yönünde veya saatin tersi yönde çizilir. Kapalı bir alandan bir şeklin dışına çizilen bir sanal çizgi saat yönünde bir satır segmentinde geçtiğinde bir sayı artırılır. Satır saatin tersi bir satır segmentinden geçtiğinde, sayı azaltılır. Satır, şekil şeklin dışına ulaştığında sayı sıfır değilse, alan doldurulur.
+Çokgen doldurma modu SARMA olduğunda, sistem bir alanı doldurup doldurmayacağını belirlemek için bir şeklin çizildiği yönü kullanır. Çokgendeki her çizgi kesimi saat yönünde veya saat yönünün tersine çizilir. Kapalı bir alandan bir figürün dışına çizilen hayali bir çizgi saat yönünde bir çizgi parçasından geçse, bir sayı artımlanır. Hat saat yönünün tersine bir çizgi parçasından geçtiğinde, sayım azat edilir. Satır şeklin dışına ulaştığında sayım sıfır değilse alan doldurulur.
 
-##  <a name="setrop2"></a>CDC:: SetROP2
+## <a name="cdcsetrop2"></a><a name="setrop2"></a>CDC::SetROP2
 
 Geçerli çizim modunu ayarlar.
 
@@ -6265,53 +6265,53 @@ int SetROP2(int nDrawMode);
 *nDrawMode*<br/>
 Yeni çizim modunu belirtir. Aşağıdaki değerlerden herhangi biri olabilir:
 
-- R2_BLACK piksel her zaman siyah olur.
+- R2_BLACK Pixel her zaman siyahtır.
 
-- R2_WHITE piksel her zaman beyazdır.
+- R2_WHITE Pixel her zaman beyazdır.
 
-- R2_NOP piksel değişmeden kalır.
+- R2_NOP Pixel değişmeden kalır.
 
-- R2_NOT piksel, ekran renginin tersidir.
+- R2_NOT Pixel ekran renginin tersidir.
 
-- R2_COPYPEN piksel kalem rengidir.
+- R2_COPYPEN Pixel kalem rengidir.
 
-- R2_NOTCOPYPEN piksel kalem renginin tersidir.
+- R2_NOTCOPYPEN Pixel kalem renginin tersidir.
 
-- R2_MERGEPENNOT piksel, kalem renginin ve ekran renginin ters tersidir (son piksel = (ekran pikseli) veya kalem) birleşimidir.
+- R2_MERGEPENNOT Piksel kalem rengi ve ekran rengi (son piksel = (NOT ekran piksel) VEYA kalem ters) bir kombinasyonudur.
 
-- R2_MASKPENNOT piksel, hem kalem hem de ekranın ters (son piksel = (ekran pikseli) ve kalem) için ortak olan renklerin bir birleşimidir.
+- R2_MASKPENNOT Piksel, hem kalemhem de ekranın tersi (son piksel = (NOT ekran pikseli) VE kalem) için ortak renklerin bir kombinasyonudur.
 
-- R2_MERGENOTPEN piksel, ekran renginin ve kalem renginin ters bileşiminin (son piksel = (kalem) veya ekran pikseli) birleşimidir.
+- R2_MERGENOTPEN Pixel ekran rengi ve kalem rengi (son piksel = (NOT kalem) VEYA ekran pikselters bir kombinasyonudur.
 
-- R2_MASKNOTPEN piksel hem ekranda hem de kalemin ters (son piksel = (kalem DEĞIL) ve ekran pikseli için ortak olan renklerin bir birleşimidir.
+- R2_MASKNOTPEN Piksel, hem ekranhem de kalemin tersi (son piksel = (KALEM Değİl) VE ekran pikseli) için ortak renklerin bir kombinasyonudur.
 
-- R2_MERGEPEN piksel, kalem rengi ve ekran renginin bir birleşimidir (son piksel = kalem veya ekran pikseli).
+- R2_MERGEPEN Pixel kalem rengi ve ekran rengi (son piksel = kalem VEYA ekran piksel) bir kombinasyonudur.
 
-- R2_NOTMERGEPEN piksel R2_MERGEPEN rengin tersidir (son piksel = DEĞIL (kalem veya ekran pikseli)).
+- R2_NOTMERGEPEN Piksel R2_MERGEPEN rengin tersidir (son piksel = NOT(kalem VEYA ekran pikseli)).
 
-- R2_MASKPEN piksel, hem kalem hem de ekran için ortak olan renklerin bir birleşimidir (son piksel = kalem ve ekran pikseli).
+- R2_MASKPEN Piksel, hem kalemhem de ekran (son piksel = kalem VE ekran pikseli) için ortak renklerin bir kombinasyonudur.
 
-- R2_NOTMASKPEN piksel R2_MASKPEN rengin tersidir (son piksel = DEĞIL (kalem ve ekran pikseli)).
+- R2_NOTMASKPEN Piksel R2_MASKPEN rengin tersidir (son piksel = NOT(kalem VE ekran pikseli)).
 
-- R2_XORPEN piksel, kalemin veya ekrandaki renklerin bir birleşimidir, ancak her ikisinde de değildir (son piksel = Pen XOR ekran pikseli).
+- R2_XORPEN Piksel kalem veya ekranda olan renklerin bir kombinasyonudur, ancak her ikiside de değil (son piksel = kalem XOR ekran pikseli).
 
-- R2_NOTXORPEN piksel R2_XORPEN rengin tersidir (son piksel = DEĞIL (kalem XOR ekran pikseli)).
+- R2_NOTXORPEN Piksel R2_XORPEN rengin tersidir (son piksel = NOT(kalem XOR ekran pikseli)).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Önceki çizim modu.
 
-Windows SDK verilen değerlerden herhangi biri olabilir.
+Windows SDK'da verilen değerlerden herhangi biri olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çizim modu, kalemin renklerinin ve Dolgulu nesnelerin iç kısmının, görüntüleme yüzeyinde zaten bulunan renkle nasıl birleştirildiğini belirtir.
+Çizim modu, kalemin renklerinin ve dolu nesnelerin iç renklerinin ekran yüzeyindeki renkle nasıl birleştirildiğinden ilerler.
 
-Çizim modu yalnızca raster cihazlar içindir; vektör cihazlara uygulanmaz. Çizim modları, ikili işleçler ve, OR ve XOR (dışlamalı veya) ve birli işlem DEĞIL, iki değişkenin olası tüm Boole birleşimlerini temsil eden ikili raster işlem kodlarıdır.
+Çizim modu sadece raster cihazlar içindir; vektör aygıtları için geçerli değildir. Çizim modları, ikili operatörler VE OR ve XOR (özel OR) ve unary işlemi NOT kullanarak, iki değişkenin olası tüm Boolean kombinasyonlarını temsil eden ikili raster-işlem kodlarıdır.
 
-##  <a name="setstretchbltmode"></a>CDC:: Setıdblttrmode
+## <a name="cdcsetstretchbltmode"></a><a name="setstretchbltmode"></a>CDC::SetStretchBltMode
 
-`StretchBlt` üye işlevi için bit eşlem uzatma modunu ayarlar.
+Üye işlev için bitmap `StretchBlt` germe modunu ayarlar.
 
 ```
 int SetStretchBltMode(int nStretchMode);
@@ -6319,36 +6319,36 @@ int SetStretchBltMode(int nStretchMode);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nayarlayıcı modu*<br/>
-Uzatma modunu belirtir. Aşağıdaki değerlerden herhangi biri olabilir:
+*nStretchMode*<br/>
+Germe modunu belirtir. Aşağıdaki değerlerden herhangi biri olabilir:
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|BLACKONWHITE|Ortadan kaldırılan ve var olan piksellerin renk değerlerini kullanarak bir Boole ve işlem gerçekleştirir. Bit eşlem, tek renkli bir bit eşlemdir, bu mod beyaz piksellerin masrafına göre Siyah pikselleri korur.|
-|COLORONCOLOR|Pikselleri siler. Bu mod, bilgilerini korumaya çalışmamadan tüm ortadan kaldırılan piksel satırları siler.|
-|LAMASı|Kaynak dikdörtgenden pikselleri hedef dikdörtgendeki piksel bloklarına eşler. Piksel hedef bloğunun üzerindeki ortalama renk, kaynak piksellerin rengine yaklaştırır.|
-||YARı ton uzatma modunu ayarladıktan sonra bir uygulamanın, fırça kaynağını ayarlamak için [SetBrushOrgEx](/windows/win32/api/wingdi/nf-wingdi-setbrushorgex) Win32 işlevini çağırması gerekir. Başarısız olursa, fırça hatalı hizalaması oluşur.|
+|BLACKONWHITE|Ortadan kaldırılmış ve varolan piksellerin renk değerlerini kullanarak boolean VE işlemi gerçekleştirir. Bit eşlemi tek renkli bir bit eşlemiyse, bu mod beyaz pikseller pahasına siyah pikselleri korur.|
+|COLORONCOLOR|Pikselleri siler. Bu mod, bilgilerini korumaya çalışmadan tüm elenen piksel satırlarını siler.|
+|HALFTONE|Pikselleri kaynak dikdörtgenden hedef dikdörtgendeki piksel blokları halinde eşler. Piksellerin hedef bloğu üzerindeki ortalama renk, kaynak piksellerin rengine yaklaşık olarak tahmin eder.|
+||HALFTONE germe modunu ayarladıktan sonra, bir uygulama fırçanın kaynağını ayarlamak için Win32 fonksiyonu [SetBrushOrgEx'i](/windows/win32/api/wingdi/nf-wingdi-setbrushorgex) aramalıdır. Bunu yapamazsa, fırça yanlış hizalaması oluşur.|
 |STRETCH_ANDSCANS|**Windows 95/98**: BLACKONWHITE ile aynı|
 |STRETCH_DELETESCANS|**Windows 95/98**: COLORONCOLOR ile aynı|
-|STRETCH_HALFTONE|**Windows 95/98**: noktalı resim ile aynı.|
-|STRETCH_ORSCANS|**Windows 95/98**: beyaz onsiyaha benzer|
-|Beyaz ONSIYAH|Ortadan kaldırılan ve mevcut piksellerin renk değerlerini kullanarak Boole veya işlem gerçekleştirir. Bit eşlem, tek renkli bir bit eşlemdir, bu mod siyah piksellerin masrafına göre beyaz pikselleri korur.|
+|STRETCH_HALFTONE|**Windows 95/98**: HALFTONE ile aynıdır.|
+|STRETCH_ORSCANS|**Windows 95/98**: WHITEONBLACK ile aynı|
+|WHITEONBLACK|Ortadan kaldırılmış ve varolan piksellerin renk değerlerini kullanarak boolean OR işlemi gerçekleştirir. Bit eşlemi tek renkli bir bit eşlemiyse, bu mod siyah pikseller pahasına beyaz pikselleri korur.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki uzatma modu. STRETCH_ANDSCANS, STRETCH_DELETESCANS veya STRETCH_ORSCANS olabilir.
+Önceki germe modu. STRETCH_ANDSCANS, STRETCH_DELETESCANS veya STRETCH_ORSCANS olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit eşlem uzatma modu, bu işlev kullanılarak sıkıştırılan bit eşlemlerden bilgilerin nasıl kaldırıldığını tanımlar.
+Bitmap germe modu, işlev kullanılarak sıkıştırılan bit eşlemlerinden bilgilerin nasıl kaldırıldığını tanımlar.
 
-BLACKONWHITE (STRETCH_ANDSCANS) ve beyaz ONSIYAH (STRETCH_ORSCANS) modları genellikle tek renkli bit eşlemlerde ön plan piksellerini korumak için kullanılır. COLORONCOLOR (STRETCH_DELETESCANS) modu, genellikle renk bit eşlemlerinin rengini korumak için kullanılır.
+BLACKONWHITE (STRETCH_ANDSCANS) ve WHITEONBLACK (STRETCH_ORSCANS) modları genellikle ön plan piksellerini tek renkli bit eşlemlerde korumak için kullanılır. COLORONCOLOR (STRETCH_DELETESCANS) modu genellikle renk biteşlerinde rengi korumak için kullanılır.
 
-NOKTALı resım modu, kaynak görüntünün diğer üç moddan daha fazla işlenmesini gerektirir; diğerlerinden daha yavaştır, ancak daha yüksek kaliteli görüntüler üretir. Ayrıca, fırça hizalanmasından kaçınmak üzere yarı ton modunu ayarladıktan sonra `SetBrushOrgEx` çağrılması gerektiğini unutmayın.
+HALFTONE modu, kaynak görüntünün diğer üç moddan daha fazla işlenmesini gerektirir; diğerlerinden daha yavaştır, ancak daha yüksek kaliteli görüntüler üretir. Ayrıca, `SetBrushOrgEx` fırçanın yanlış hizalanmasını önlemek için HALFTONE modunu ayarladıktan sonra çağrılması gerektiğini de unutmayın.
 
-Cihaz sürücüsünün özelliklerine bağlı olarak ek uzatma modları de kullanılabilir olabilir.
+Aygıt sürücüsünün özelliklerine bağlı olarak ek germe modları da kullanılabilir.
 
-##  <a name="settextalign"></a>CDC:: SetTextAlign
+## <a name="cdcsettextalign"></a><a name="settextalign"></a>CDC::SetTextAlign
 
 Metin hizalama bayraklarını ayarlar.
 
@@ -6358,40 +6358,40 @@ UINT SetTextAlign(UINT nFlags);
 
 ### <a name="parameters"></a>Parametreler
 
-*nFlags*<br/>
-Metin hizalama bayraklarını belirtir. Bayraklar, bir nokta ile metni sınıralan bir dikdörtgen arasındaki ilişkiyi belirler. Nokta, bir metin çıkış işlevi tarafından belirtilen geçerli konum veya koordinat olabilir. Metnin sınırlarını belirten dikdörtgen metin dizesindeki bitişik karakter hücreleri tarafından tanımlanır. *NFlags* parametresi, aşağıdaki üç kategoriden bir veya daha fazla bayrak olabilir. Her kategoriden yalnızca bir bayrak seçin. İlk kategori x yönünde metin hizalamasını etkiler:
+*Nflags*<br/>
+Metin hizalama bayraklarını belirtir. Bayraklar, metni sınırlayan bir nokta ve dikdörtgen arasındaki ilişkiyi belirtir. Nokta, bir metin çıktısı işlevi tarafından belirtilen geçerli konum veya koordinatlar olabilir. Metni sınırlayan dikdörtgen, metin dizesindeki bitişik karakter hücreleri tarafından tanımlanır. *nFlags* parametresi aşağıdaki üç kategoriden bir veya daha fazla bayrak olabilir. Her kategoriden yalnızca bir bayrak seçin. İlk kategori x yönünde metin hizalama etkiler:
 
-- TA_CENTER, noktayı sınırlayıcı dikdörtgenin yatay merkezine hizalar.
+- TA_CENTER Noktayı sınırlayan dikdörtgenin yatay merkeziyle hizalar.
 
-- TA_LEFT, noktayı sınırlayıcı dikdörtgenin sol tarafıyla hizalar. Varsayılan ayar budur.
+- TA_LEFT noktayı sınırlayan dikdörtgenin sol tarafıyla hizalar. Bu varsayılan ayardır.
 
-- TA_RIGHT, noktayı sınırlayıcı dikdörtgenin sağ tarafıyla hizalar.
+- TA_RIGHT Noktayı sınırlayan dikdörtgenin sağ tarafıyla hizalar.
 
-İkinci kategori y yönünde metin hizalamasını etkiler:
+İkinci kategori y yönünde metin hizalama etkiler:
 
-- TA_BASELINE, noktayı seçilen yazı tipinin taban satırıyla hizalar.
+- TA_BASELINE Noktayı seçilen yazı tipinin taban çizgisiyle hizalar.
 
-- TA_BOTTOM, noktayı sınırlayıcı dikdörtgenin alt tarafıyla hizalar.
+- TA_BOTTOM Noktayı sınırlayan dikdörtgenin alt kısmıyla hizalar.
 
-- TA_TOP, noktayı sınırlayıcı dikdörtgenin en üstüne hizalar. Varsayılan ayar budur.
+- TA_TOP noktayı sınırlayan dikdörtgenin üst kısmıyla hizalar. Bu varsayılan ayardır.
 
-Üçüncü kategori, metin yazıldığında geçerli konumun güncelleştirilip güncelleştirilmediğini belirler:
+Üçüncü kategori, metin yazıldığında geçerli konumun güncelleştirilip güncellenmediğini belirler:
 
-- TA_NOUPDATECP, bir metin çıkışı işlevine yapılan her çağrıdan sonra geçerli konumu güncelleştirmez. Varsayılan ayar budur.
+- TA_NOUPDATECP Bir metin çıktısı işlevine her çağrıdan sonra geçerli konumu güncelleştirmez. Bu varsayılan ayardır.
 
-- TA_UPDATECP, bir metin çıkışı işlevine yapılan her çağrıdan sonra geçerli x konumunu güncelleştirir. Yeni konum metin için sınırlayıcı dikdörtgenin sağ tarafındadır. Bu bayrak ayarlandığında, `TextOut` üye işlevine yapılan çağrılarında belirtilen koordinatlar yok sayılır.
+- TA_UPDATECP Her çağrıdan sonra geçerli x konumunu bir metin çıktı işlevine güncelleştirir. Yeni konum, metin için sınırlayan dikdörtgenin sağ tarafındadır. Bu bayrak ayarlandığında, `TextOut` üye işleve yapılan çağrılarda belirtilen koordinatlar yoksayılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, önceki metin hizalama ayarı. Düşük sıralı bayt yatay ayarı içerir ve yüksek sıralı bayt dikey ayarı içerir; Aksi takdirde 0.
+Başarılı olursa önceki metin hizalama ayarı. Düşük sıralı bayt yatay ayarı içerir ve yüksek sıralı bayt dikey ayarı içerir; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`TextOut` ve `ExtTextOut` üye işlevleri, bir metin dizesini bir görüntü veya cihazda konumlandırılırken bu bayrakları kullanır. Bayraklar, belirli bir nokta ile metni sınıralan bir dikdörtgen arasındaki ilişkiyi belirtir. Bu noktanın koordinatları `TextOut` üye işlevine parametre olarak geçirilir. Metnin sınırlarını belirten dikdörtgen metin dizesindeki bitişik karakter hücrelerine göre biçimlendirilir.
+`TextOut` Ve `ExtTextOut` üye işlevler, bir metin dizesini bir ekrana veya aygıta konumlandırırken bu bayrakları kullanır. Bayraklar, belirli bir nokta ile metni sınırlayan bir dikdörtgen arasındaki ilişkiyi belirtir. Bu noktanın koordinatları `TextOut` üye işlevine parametreler olarak geçirilir. Metni sınırlayan dikdörtgen, metin dizesindeki bitişik karakter hücreleri tarafından oluşturulur.
 
-##  <a name="settextcharacterextra"></a>CDC:: Settextkarakterekstra
+## <a name="cdcsettextcharacterextra"></a><a name="settextcharacterextra"></a>CDC::SetTextCharacterEkstra
 
-Intercharacter boşluk miktarını ayarlar.
+Karakterler arası aralık miktarını ayarlar.
 
 ```
 int SetTextCharacterExtra(int nCharExtra);
@@ -6400,17 +6400,17 @@ int SetTextCharacterExtra(int nCharExtra);
 ### <a name="parameters"></a>Parametreler
 
 *nCharExtra*<br/>
-Her karaktere eklenecek ek alan miktarını (mantıksal birimler cinsinden) belirtir. Geçerli eşleme modu `MM_TEXT`değilse, *nCharExtra* dönüştürülür ve en yakın piksele yuvarlanır.
+Her karaktere eklenecek ekstra alan miktarını (mantıksal birimler halinde) belirtir. Geçerli eşleme modu `MM_TEXT`değilse, *nCharExtra* dönüştürülür ve en yakın piksele yuvarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki bir ıntercharacter aralığının miktarı.
+Önceki karakter aralığının miktarı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-GDI, bir metin satırını cihaz bağlamına yazdığında, bu boşluğu kesme karakterleri de dahil olmak üzere her karaktere ekler. Intercharacter boşluk miktarı için varsayılan değer 0 ' dır.
+GDI, aygıt bağlamına bir metin satırı yazdığında, kesme karakterleri de dahil olmak üzere her karaktere bu aralığı ekler. Karakterler arası aralık miktarı için varsayılan değer 0'dır.
 
-##  <a name="settextcolor"></a>CDC:: SetTextColor
+## <a name="cdcsettextcolor"></a><a name="settextcolor"></a>CDC::SetTextColor
 
 Metin rengini belirtilen renge ayarlar.
 
@@ -6421,25 +6421,25 @@ virtual COLORREF SetTextColor(COLORREF crColor);
 ### <a name="parameters"></a>Parametreler
 
 *crColor*<br/>
-Metnin rengini bir RGB renk değeri olarak belirtir.
+Metnin rengini RGB renk değeri olarak belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki metin rengi için bir RGB değeri.
+Önceki metin rengi için Bir RGB değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sistem bu cihaz bağlamına metin yazarken ve ayrıca renk ve tek renkli cihaz bağlamları arasında bit eşlemler dönüştürürken bu metin rengini kullanacaktır.
+Sistem, bu aygıt bağlamına metin yazarken ve ayrıca renkli ve tek renkli aygıt bağlamları arasında bit eşlemleri dönüştürürken bu metin rengini kullanır.
 
-Cihaz belirtilen rengi temsil edemez, sistem metin rengini en yakın fiziksel renge ayarlar. Bir karakterin arka plan rengi, `SetBkColor` ve `SetBkMode` üye işlevleri tarafından belirtilir.
+Aygıt belirtilen rengi temsil edemiyorsa, sistem metin rengini en yakın fiziksel renge ayarlar. Bir karakterin arka plan rengi `SetBkColor` ve `SetBkMode` üye işlevler tarafından belirtilir.
 
 ### <a name="example"></a>Örnek
 
-  [CWnd:: OnCtlColor](../../mfc/reference/cwnd-class.md#onctlcolor)için örneğe bakın.
+  CWnd örneğine [bakın:OnCtlColor](../../mfc/reference/cwnd-class.md#onctlcolor).
 
-##  <a name="settextjustification"></a>CDC:: Settextgerekçe
+## <a name="cdcsettextjustification"></a><a name="settextjustification"></a>CDC::SetTextJustification
 
-Dizedeki kesme karakterlerine boşluk ekler.
+Dizedeki kesme karakterlerine alan ekler.
 
 ```
 int SetTextJustification(
@@ -6450,32 +6450,32 @@ int SetTextJustification(
 ### <a name="parameters"></a>Parametreler
 
 *nBreakExtra*<br/>
-Metin satırına eklenecek toplam ek alanı belirtir (mantıksal birimler cinsinden). Geçerli eşleme modu `MM_TEXT`değilse, bu parametre tarafından verilen değer geçerli eşleme moduna dönüştürülür ve en yakın cihaz birimine yuvarlanır.
+Metin satırına eklenecek toplam ek alanı (mantıksal birimler halinde) belirtir. Geçerli eşleme modu `MM_TEXT`değilse, bu parametre tarafından verilen değer geçerli eşleme moduna dönüştürülür ve en yakın aygıt birimine yuvarlanır.
 
 *nBreakCount*<br/>
-Satırdaki kesme karakterlerinin sayısını belirtir.
+Satırdaki kesme karakter sayısını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa bir tane; Aksi takdirde 0.
+Bir işlev başarılı olursa; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir uygulama, bir yazı tipinin kesme karakterini almak için `GetTextMetrics` üye işlevlerini kullanabilir.
+Bir uygulama, `GetTextMetrics` bir yazı tipinin kesme karakterini almak için üye işlevleri kullanabilir.
 
-`SetTextJustification` member işlevi çağrıldıktan sonra, bir metin çıkış işlevine (`TextOut`gibi) yapılan bir çağrı, belirtilen ek alanı belirtilen sayıda kesme karakteri arasında eşit olarak dağıtır. Kesme karakteri genellikle boşluk karakteridir (ASCII 32), ancak başka bir karakter olarak bir yazı tipi ile tanımlanabilir.
+`SetTextJustification` Üye işlev çağrıldıktan sonra, metin çıkışı işlevine yapılan `TextOut`çağrı (örneğin) belirtilen ek alanı belirtilen kesme karakter sayısı arasında eşit olarak dağıtır. Kesme karakteri genellikle boşluk karakteridir (ASCII 32), ancak bir yazı tipi tarafından başka bir karakter olarak tanımlanabilir.
 
-`GetTextExtent` üye işlevi, genellikle `SetTextJustification`ile kullanılır. `GetTextExtent`, hizalamadan önce belirli bir çizginin genişliğini hesaplar. Bir uygulama, `GetTextExtent` tarafından döndürülen değeri hizalamadan sonra dizenin genişliğinden çıkararak *nBreakExtra* parametresinde ne kadar alan belirleyeceğini belirleyebilir.
+Üye işlev `GetTextExtent` genellikle `SetTextJustification`. `GetTextExtent`hizalamadan önce belirli bir satırın genişliğini hesaplar. Bir uygulama, hizalamadan sonra dize genişliğinden döndürülen `GetTextExtent` değeri çıkararak *nBreakExtra* parametresinde ne kadar boşluk belirtebileceğini belirleyebilir.
 
-`SetTextJustification` işlevi, farklı yazı tiplerinde birden çok çalıştırma içeren bir çizgiyi hizalamak için kullanılabilir. Bu durumda, her bir çalıştırmayı ayrı ayrı hizalayarak ve yazarak satırın öbek oluşturulması gerekir.
+İşlev, `SetTextJustification` farklı yazı tiplerinde birden çok çalıştırma içeren bir satırı hizalamak için kullanılabilir. Bu durumda, satır ayrı ayrı her çalıştırma hizalama ve yazarak parça parça oluşturulmalıdır.
 
-Hizalama sırasında yuvarlama hataları oluşabileceğinden, sistem geçerli hatayı tanımlayan çalışır durumda bir hata terimi tutar. Birden çok çalıştırma içeren bir satırı hizalarken, `GetTextExtent` sonraki çalıştırmanın kapsamını hesapladığı zaman bu hata terimini otomatik olarak kullanır. Bu, metin çıkış işlevinin hatayı yeni çalıştırmaya karışmasını sağlar.
+Hizalama sırasında yuvarlama hataları oluşabileceğinden, sistem geçerli hatayı tanımlayan çalışan bir hata terimi tutar. Birden çok çalıştırma içeren bir `GetTextExtent` satırı hizalarken, bir sonraki çalıştırmanın kapsamını hesapladığında bu hata terimini otomatik olarak kullanır. Bu, metin çıktısı işlevinin hatayı yeni çalıştırmaya karıştırmasına olanak tanır.
 
-Her satır hizalandıktan sonra, bir sonraki satıra eklenmesini engellemek için bu hata koşulunun temizlenmesi gerekir. Terim, *nBreakExtra* kümesi 0 olan `SetTextJustification` çağırarak temizlenemez.
+Her satır hizalandıktan sonra, bir sonraki satıra dahil olmasını önlemek için bu hata terimi temizlenmelidir. Terim *nBreakExtra* ile `SetTextJustification` 0'a ayarlayarak temizlenebilir.
 
-##  <a name="setviewportext"></a>CDC:: SetViewportExt
+## <a name="cdcsetviewportext"></a><a name="setviewportext"></a>CDC::SetViewportExt
 
-Cihaz bağlamının görünüm penceresinin x ve y-kapsamlarını belirler.
+Aygıt bağlamının görünüm noktasının x- ve y-derecelerini ayarlar.
 
 ```
 virtual CSize SetViewportExt(
@@ -6487,39 +6487,39 @@ CSize SetViewportExt(SIZE size);
 
 ### <a name="parameters"></a>Parametreler
 
-*yazmaç*<br/>
-Görünüm penceresinin x kapsamını belirtir (cihaz birimleri cinsinden).
+*Cx*<br/>
+Viewportun x-kapsamını belirtir (aygıt birimlerinde).
 
-*lı*<br/>
-Görünüm penceresinin y kapsamını belirtir (cihaz birimleri cinsinden).
+*Cy*<br/>
+Viewport 'un y-kapsamını belirtir (aygıt birimlerinde).
 
-*boyutla*<br/>
-Görünüm penceresinin x ve y-kapsamlarını belirtir (cihaz birimleri cinsinden).
+*Boyutu*<br/>
+Viewportun x- ve y-derecelerini (aygıt birimlerinde) belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görünüm penceresinin önceki kapsamları [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi olarak. Bir hata oluştuğunda, döndürülen `CSize` nesnesinin x ve y koordinatları her ikisi de 0 olarak ayarlanır.
+[CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi olarak viewport önceki kapsamları. Bir hata oluştuğunda, döndürülen `CSize` nesnenin x- ve y-koordinatları her ikisi de 0 olarak ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görünüm penceresi, cihaz bağlamı penceresiyle birlikte, GDI eşlemelerinin mantıksal koordinat sisteminde gerçek cihazın koordinat sistemine işaret etmek üzere nasıl kullanıldığını tanımlar. Diğer bir deyişle, GDI 'nın mantıksal koordinatları cihaz koordinatlarına nasıl dönüştürdüğü tanımlar.
+Görünüm portu, aygıt bağlamı penceresi ile birlikte, GDI'nin mantıksal koordinat sistemindegerçek aygıtın koordinat sistemindeki noktalara nasıl işaret lerini eşlemeyi tanımlar. Başka bir deyişle, GDI'nin mantıksal koordinatları aygıt koordinatlarına nasıl dönüştürdüğünü tanımlarlar.
 
-Aşağıdaki eşleme modları ayarlandığında, `SetWindowExt` ve `SetViewportExt` çağrıları yok sayılır:
+Aşağıdaki eşleme modları ayarlandığında, `SetWindowExt` `SetViewportExt` çağrılar ve yoksayılır:
 
 |MM_HIENGLISH|MM_LOMETRIC|
 |-------------------|------------------|
-|MM_HIMETRIC|MM_TEXT|
+|MM_HIMETRIC|Mm_text|
 |MM_LOENGLISH|MM_TWIPS|
 
-MM_ISOTROPIC modu ayarlandığında, bir uygulamanın `SetViewportExt`çağırmadan önce `SetWindowExt` üye işlevini çağırması gerekir.
+MM_ISOTROPIC modu ayarlandığında, bir uygulama `SetWindowExt` çağıran `SetViewportExt`önce üye işlevi aramak gerekir.
 
 ### <a name="example"></a>Örnek
 
-  [CView:: Onhazırlık EDC](../../mfc/reference/cview-class.md#onpreparedc)örneğine bakın.
+  CView örneğine [bakın::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc).
 
-##  <a name="setviewportorg"></a>CDC:: SetViewportOrg
+## <a name="cdcsetviewportorg"></a><a name="setviewportorg"></a>CDC::SetViewportOrg
 
-Cihaz bağlamının Görünüm penceresi kaynağını ayarlar.
+Aygıt bağlamının görüntü kaynağının kaynağını ayarlar.
 
 ```
 virtual CPoint SetViewportOrg(
@@ -6531,32 +6531,32 @@ CPoint SetViewportOrg(POINT point);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Görünüm penceresinin kaynağının x koordinatını (cihaz birimleri cinsinden) belirtir. Değer, cihaz koordinat sisteminin aralığı içinde olmalıdır.
+*X*<br/>
+Viewport'un kaynağının x-koordinatını (aygıt birimlerinde) belirtir. Değer, aygıt koordinat sisteminin aralığında olmalıdır.
 
-*Iz*<br/>
-Görünüm penceresinin noktasının y koordinatını (cihaz birimlerinde) belirtir. Değer, cihaz koordinat sisteminin aralığı içinde olmalıdır.
+*Y*<br/>
+Viewport'un kaynağının y koordinatını (aygıt birimlerinde) belirtir. Değer, aygıt koordinat sisteminin aralığında olmalıdır.
 
-*seçeneğinin*<br/>
-Görünüm penceresinin başlangıcını belirtir. Değerler, cihaz koordinat sisteminin aralığı içinde olmalıdır. Bu parametre için bir `POINT` yapısını ya da bir `CPoint` nesnesini geçirebilirsiniz.
+*Nokta*<br/>
+Viewport'un kaynağını belirtir. Değerler, aygıt koordinat sisteminin aralığında olmalıdır. Bu parametre `POINT` için bir `CPoint` yapı veya nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görünüm penceresinin (cihaz koordinatlarındaki) bir `CPoint` nesne olarak önceki kaynağı.
+Bir `CPoint` nesne olarak viewport (aygıt koordinatlarında) önceki kökeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görünüm penceresi, cihaz bağlamı penceresiyle birlikte, GDI eşlemelerinin mantıksal koordinat sisteminde gerçek cihazın koordinat sistemine işaret etmek üzere nasıl kullanıldığını tanımlar. Diğer bir deyişle, GDI 'nın mantıksal koordinatları cihaz koordinatlarına nasıl dönüştürdüğü tanımlar.
+Görünüm portu, aygıt bağlamı penceresi ile birlikte, GDI'nin mantıksal koordinat sistemindegerçek aygıtın koordinat sistemindeki noktalara nasıl işaret lerini eşlemeyi tanımlar. Başka bir deyişle, GDI'nin mantıksal koordinatları aygıt koordinatlarına nasıl dönüştürdüğünü tanımlarlar.
 
-Görünüm penceresi, GDI 'nın, `SetWindowOrg` üye işlevi tarafından belirtilen mantıksal koordinat sistemindeki bir nokta olan pencere başlangıcını eşlendiği cihaz koordinat sistemindeki noktayı işaret ediyor. GDI, pencere kaynağını Görünüm penceresi kaynağına eşlemek için gereken aynı süreci izleyerek diğer tüm noktaları eşler. Örneğin, pencere başlangıç noktasındaki nokta etrafında bir daire içinde olan tüm noktaları, görünüm penceresinin başlangıç noktasındaki bir daire içinde olacaktır. Benzer şekilde, bir satırdaki pencere kaynağı üzerinden geçen tüm noktaları, görünüm penceresinin kaynağı üzerinden geçen bir satırda olacaktır.
+Viewport kaynağı, gdi'nin pencere kaynağını eşlediği aygıt koordinat sistemindeki noktayı, `SetWindowOrg` üye işlev tarafından belirtilen mantıksal koordinat sistemindeki bir noktayı işaretler. GDI, pencere nin kaynağını viewport kaynağıyla eşlemek için gereken aynı işlemi izleyerek diğer tüm noktaları eşler. Örneğin, pencere nin kaynağındaki noktanın etrafındaki dairedeki tüm noktalar, viewport kökenli noktanın etrafında bir daire içinde olacaktır. Benzer şekilde, pencere kaynağından geçen bir satırdaki tüm noktalar, görünüm kaynağından geçen bir satırda olacaktır.
 
 ### <a name="example"></a>Örnek
 
-  [CView:: Onhazırlık EDC](../../mfc/reference/cview-class.md#onpreparedc)örneğine bakın.
+  CView örneğine [bakın::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc).
 
-##  <a name="setwindowext"></a>CDC:: SetWindowExt
+## <a name="cdcsetwindowext"></a><a name="setwindowext"></a>CDC::SetWindowExt
 
-Cihaz içeriğiyle ilişkili pencerenin x ve y-kapsamlarını ayarlar.
+Aygıt bağlamıyla ilişkili pencerenin x ve y derecelerini ayarlar.
 
 ```
 virtual CSize SetWindowExt(
@@ -6568,24 +6568,24 @@ CSize SetWindowExt(SIZE size);
 
 ### <a name="parameters"></a>Parametreler
 
-*yazmaç*<br/>
-Pencerenin x kapsamını (mantıksal birimler cinsinden) belirtir.
+*Cx*<br/>
+Pencerenin x-extent'ini (mantıksal birimler halinde) belirtir.
 
-*lı*<br/>
-Pencerenin y kapsamını (mantıksal birimler cinsinden) belirtir.
+*Cy*<br/>
+Pencerenin y-kapsamını (mantıksal birimler halinde) belirtir.
 
-*boyutla*<br/>
-Pencerenin x ve y-kapsamlarını belirtir (mantıksal birimler cinsinden).
+*Boyutu*<br/>
+Pencerenin x- ve y-derecelerini (mantıksal birimler halinde) belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Pencerenin önceki kapsamları (mantıksal birimler cinsinden) `CSize` nesnesi olarak. Bir hata oluşursa döndürülen `CSize` nesnesinin x ve y koordinatları her ikisi de 0 olarak ayarlanır.
+Pencerenin önceki kapsamları (mantıksal birimler halinde) bir `CSize` nesne olarak. Bir hata oluşursa, döndürülen `CSize` nesnenin x- ve y-koordinatları her ikisi de 0 olarak ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Pencere, cihaz bağlamı Görünüm penceresi ile birlikte, GDI eşlemelerinin mantıksal koordinat sisteminde cihaz koordinat sisteminde nasıl işaret ettiğini tanımlar.
+Pencere, aygıt bağlamı viewportuyla birlikte, GDI'nin mantıksal koordinat sistemindeki noktaları aygıt koordinat sistemindeki noktalara nasıl eşleştireceklerini tanımlar.
 
-Aşağıdaki eşleme modları ayarlandığında, `SetWindowExt` ve `SetViewportExt` işlevlerine yapılan çağrılar yok sayılır:
+Aşağıdaki eşleme modları ayarlandığında, `SetWindowExt` `SetViewportExt` aramalar ve işlevler yoksayılır:
 
 - MM_HIENGLISH
 
@@ -6595,19 +6595,19 @@ Aşağıdaki eşleme modları ayarlandığında, `SetWindowExt` ve `SetViewportE
 
 - MM_LOMETRIC
 
-- MM_TEXT
+- Mm_text
 
 - MM_TWIPS
 
-MM_ISOTROPIC modu ayarlandığında, uygulamanın `SetViewportExt`çağrılmadan önce `SetWindowExt` üye işlevini çağırması gerekir.
+MM_ISOTROPIC modu ayarlandığında, bir uygulama' yı `SetWindowExt` `SetViewportExt`aramadan önce üye işlevi aramalı.
 
 ### <a name="example"></a>Örnek
 
-  [CView:: Onhazırlık EDC](../../mfc/reference/cview-class.md#onpreparedc)örneğine bakın.
+  CView örneğine [bakın::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc).
 
-##  <a name="setwindoworg"></a>CDC:: SetWindowOrg
+## <a name="cdcsetwindoworg"></a><a name="setwindoworg"></a>CDC::SetWindowOrg
 
-Cihaz bağlamının pencere kaynağını ayarlar.
+Aygıt bağlamının pencere kaynağını ayarlar.
 
 ```
 CPoint SetWindowOrg(
@@ -6619,28 +6619,28 @@ CPoint SetWindowOrg(POINT point);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Pencerenin yeni başlangıcının mantıksal x koordinatını belirtir.
+*X*<br/>
+Pencerenin yeni kaynağının mantıksal x-koordinatını belirtir.
 
-*Iz*<br/>
-Pencerenin yeni başlangıcının mantıksal y koordinatını belirtir.
+*Y*<br/>
+Pencerenin yeni kaynağının mantıksal y-koordinatını belirtir.
 
-*seçeneğinin*<br/>
-Pencerenin yeni başlangıcının mantıksal koordinatlarını belirtir. Bu parametre için bir `POINT` yapısını ya da bir `CPoint` nesnesini geçirebilirsiniz.
+*Nokta*<br/>
+Pencerenin yeni kaynağının mantıksal koordinatlarını belirtir. Bu parametre `POINT` için bir `CPoint` yapı veya nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CPoint` nesne olarak pencerenin önceki kaynağı.
+Nesne olarak `CPoint` pencerenin önceki kaynağı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Pencere, cihaz bağlamı Görünüm penceresi ile birlikte, GDI eşlemelerinin mantıksal koordinat sisteminde cihaz koordinat sisteminde nasıl işaret ettiğini tanımlar.
+Pencere, aygıt bağlamı viewportuyla birlikte, GDI'nin mantıksal koordinat sistemindeki noktaları aygıt koordinat sistemindeki noktalara nasıl eşleştireceklerini tanımlar.
 
-Pencere kaynağı, GDI 'nın, `SetWindowOrg` işlevi tarafından belirtilen cihaz koordinat sistemindeki bir nokta olan görünüm penceresi kaynağını eşlendiği mantıksal koordinat sistemindeki noktayı işaretler. GDI, pencere kaynağını Görünüm penceresi kaynağına eşlemek için gereken aynı süreci izleyerek diğer tüm noktaları eşler. Örneğin, pencere başlangıç noktasındaki nokta etrafında bir daire içinde olan tüm noktaları, görünüm penceresinin başlangıç noktasındaki bir daire içinde olacaktır. Benzer şekilde, bir satırdaki pencere kaynağı üzerinden geçen tüm noktaları, görünüm penceresinin kaynağı üzerinden geçen bir satırda olacaktır.
+Pencere kaynağı, GDI'nin `SetWindowOrg` görüntü alanı kaynağını eşlediği mantıksal koordinat sistemindeki noktayı, işlev tarafından belirtilen aygıt koordinat sistemindeki bir noktayı işaretler. GDI, pencere nin kaynağını viewport kaynağıyla eşlemek için gereken aynı işlemi izleyerek diğer tüm noktaları eşler. Örneğin, pencere nin kaynağındaki noktanın etrafındaki dairedeki tüm noktalar, viewport kökenli noktanın etrafında bir daire içinde olacaktır. Benzer şekilde, pencere kaynağından geçen bir satırdaki tüm noktalar, görünüm kaynağından geçen bir satırda olacaktır.
 
-##  <a name="setworldtransform"></a>CDC:: SetWorldTransform
+## <a name="cdcsetworldtransform"></a><a name="setworldtransform"></a>CDC::SetWorldTransform
 
-Belirtilen cihaz bağlamı için dünya alanı ve sayfa alanı arasında iki boyutlu doğrusal bir dönüşüm ayarlar. Bu dönüşüm, grafik çıkışını ölçeklendirmek, döndürmek, yamultmak veya çevirmek için kullanılabilir.
+Belirtilen aygıt bağlamı için dünya alanı ve sayfa alanı arasında iki boyutlu doğrusal dönüşüm ayarlar. Bu dönüştürme, grafik çıktısını ölçeklendirmek, döndürmek, yalamak veya çevirmek için kullanılabilir.
 
 ```
 BOOL SetWorldTransform(const XFORM& rXform);
@@ -6653,19 +6653,19 @@ Dönüşüm verilerini içeren bir [XFORM](/windows/win32/api/wingdi/ns-wingdi-x
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda sıfır olmayan bir değer döndürür.
+Başarının sıfır olmayan bir değerini verir.
 
 Hatada 0 döndürür.
 
-Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+Genişletilmiş hata bilgilerini almak için [GetLastError'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)arayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [SetWorldTransform](/windows/win32/api/wingdi/nf-wingdi-setworldtransform)Windows GDI işlevini sarmalanmış.
+Bu yöntem Windows GDI fonksiyonu [SetWorldTransform](/windows/win32/api/wingdi/nf-wingdi-setworldtransform)sarar.
 
-##  <a name="startdoc"></a>CDC:: StartDoc
+## <a name="cdcstartdoc"></a><a name="startdoc"></a>CDC::Başlangıç Doc
 
-Yeni bir yazdırma işinin başladığı ve sonraki tüm `StartPage` ve `EndPage` çağrılarının `EndDoc` bir çağrı gerçekleşene kadar aynı iş altında biriktirilmelidir.
+Aygıt sürücüsüne yeni bir yazdırma işinin başladığını `StartPage` ve `EndPage` bir `EndDoc` arama gerçekleşene kadar sonraki tüm aramaların ve çağrıların aynı iş altında biriktirmesi gerektiğini bildirir.
 
 ```
 int StartDoc(LPDOCINFO lpDocInfo);
@@ -6675,34 +6675,34 @@ int StartDoc(LPCTSTR lpszDocName);
 ### <a name="parameters"></a>Parametreler
 
 *lpDocInfo*<br/>
-Belge dosyasının adını ve çıkış dosyasının adını içeren bir [DOCINFO](/windows/win32/api/wingdi/ns-wingdi-docinfow) yapısına işaret eder.
+Belge dosyasının adını ve çıktı dosyasının adını içeren bir [DOCINFO](/windows/win32/api/wingdi/ns-wingdi-docinfow) yapısına işaret eder.
 
 *lpszDocName*<br/>
 Belge dosyasının adını içeren bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri sıfırdan büyük olur. Bu değer, belge için yazdırma işi tanımlayıcısıdır.
+İşlev başarılı olursa, geri dönüş değeri sıfırdan büyükolur. Bu değer, belgenin yazdırma iş tanımlayıcısıdır.
 
-İşlev başarısız olursa, dönüş değeri sıfıra eşit veya daha küçüktür.
+İşlev başarısız olursa, iade değeri sıfırdan küçük veya eşittir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, bir sayfadan daha uzun belgelerin diğer işlerle birlikte etkilenmemesini sağlar.
+Bu, bir sayfadan uzun belgelerin diğer işlerle serpiştirilmesini sağlar.
 
-Windows sürümleri 3,1 ve üzeri için, bu işlev STARTDOC yazıcı kaçış yerini alır. Bu işlevin kullanılması, birden fazla sayfa içeren belgelerin diğer yazdırma işleriyle birlikte olmamasını sağlar.
+Windows sürümleri 3.1 ve sonraki sürümlerde, bu işlev STARTDOC yazıcı kaçışının yerini alır. Bu işlevi kullanmak, birden fazla sayfa içeren belgelerin diğer yazdırma işleri ile serpiştirilmiş olmamasını sağlar.
 
-`StartDoc` meta dosyaların içinde kullanılmamalıdır.
+`StartDoc`metadosyalar içinde kullanılmamalıdır.
 
 ### <a name="example"></a>Örnek
 
-Bu kod parçası varsayılan yazıcıyı alır, bir yazdırma işi açar ve "Hello, World!" ile bir sayfa biriktirir. üzerinde. Bu kod tarafından yazdırılan metin yazıcının mantıksal birimlerine ölçeklenmediğinden, çıkış metni sonucun okunamaz olduğu küçük harflerle olabilir. `SetMapMode`, `SetViewportOrg`ve `SetWindowExt`gibi CDC ölçekleme işlevleri ölçeklendirmeyi onarmak için kullanılabilir.
+Bu kod parçası varsayılan yazıcıyı alır, yazdırma işini açar ve bir sayfayı "Merhaba, Dünya!" ile biriktirir. üzerinde. Bu kod tarafından yazdırılan metin yazıcının mantıksal birimlerine ölçeklendirilmedığından, çıktı metni o kadar küçük harflerle olabilir ki sonuç okunamıyor. CDC ölçekleme işlevleri, gibi `SetMapMode` `SetViewportOrg`, `SetWindowExt`, ve , ölçekleme düzeltmek için kullanılabilir.
 
 [!code-cpp[NVC_MFCDocView#41](../../mfc/codesnippet/cpp/cdc-class_13.cpp)]
 
-##  <a name="startpage"></a>CDC:: StartPage
+## <a name="cdcstartpage"></a><a name="startpage"></a>CDC::Başlangıç Sayfası
 
-Yazıcı sürücüsünü veri alacak şekilde hazırlamak için bu üye işlevi çağırın.
+Yazıcı sürücüsünü veri almaya hazırlamak için bu üye işlevini arayın.
 
 ```
 int StartPage();
@@ -6710,21 +6710,21 @@ int StartPage();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa 0 ' dan büyük veya buna eşit veya bir hata oluştuysa negatif bir değer.
+İşlev başarılı olursa 0'dan büyük veya eşit veya bir hata oluştuysa negatif değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`StartPage` NEWFRAME ve BANıNFO kaçışları yerine geçiyor.
+`StartPage`NEWFRAME ve BANDINFO kaçar yerini.
 
-Yazdırma çağrılarının dizisine genel bakış için, [StartDoc](#startdoc) üye işlevine bakın.
+Yazdırma çağrıları dizisine genel bir bakış için [StartDoc](#startdoc) üye işlevine bakın.
 
-Sistem, `StartPage` ve `EndPage`çağrıları arasında `ResetDC` üye işlevini devre dışı bırakır.
+Sistem, `ResetDC` üye işlevini aramalar arasında devre `StartPage` `EndPage`dışı katır ve .
 
 ### <a name="example"></a>Örnek
 
-  [CDC:: StartDoc](#startdoc)örneğine bakın.
+  CDC örneğine [bakın::StartDoc](#startdoc).
 
-##  <a name="stretchblt"></a>CDC::% Blblt
+## <a name="cdcstretchblt"></a><a name="stretchblt"></a>CDC::StretchBlt
 
 Bir bit eşlemi kaynak dikdörtgenden hedef dikdörtgene kopyalar ve gerekirse, bit eşlem öğesini hedef dikdörtgenin boyutlarına uyacak şekilde uzatır veya sıkıştırır.
 
@@ -6744,16 +6744,16 @@ BOOL StretchBlt(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*X*<br/>
 Hedef dikdörtgenin sol üst köşesinin x koordinatını (mantıksal birimler cinsinden) belirtir.
 
-*Iz*<br/>
+*Y*<br/>
 Hedef dikdörtgenin sol üst köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
 
-*nWidth*<br/>
+*Nwidth*<br/>
 Hedef dikdörtgenin genişliğini (mantıksal birimler cinsinden) belirtir.
 
-*nHeight*<br/>
+*Nheight*<br/>
 Hedef dikdörtgenin yüksekliğini (mantıksal birimler cinsinden) belirtir.
 
 *pSrcDC*<br/>
@@ -6765,44 +6765,44 @@ Kaynak dikdörtgenin sol üst köşesinin x koordinatını (mantıksal birimler 
 *ySrc*<br/>
 Kaynak dikdörtgenin sol üst köşesinin y koordinatını (mantıksal birimler cinsinden) belirtir.
 
-*nSrcWidth*<br/>
+*nSrcGenişlik*<br/>
 Kaynak dikdörtgenin genişliğini (mantıksal birimler cinsinden) belirtir.
 
-*nSrcHeight*<br/>
+*nSrcYükseklik*<br/>
 Kaynak dikdörtgenin yüksekliğini (mantıksal birimler cinsinden) belirtir.
 
 *dwRop*<br/>
 Gerçekleştirilecek ızgara işlemini belirtir. Izgara işlemi kodları, GDI'nin geçerli fırça, olası bir kaynak bit eşlem ve hedef bit eşlem içeren çıkış işlemlerinde renkleri nasıl birleştirdiğini tanımlar. Bu parametre aşağıdaki değerlerden biri olabilir:
 
-- BLACKıCE tüm çıktıyı dönüştürür.
+- BLACKNESS tüm çıkışı siyaha çevirir.
 
-- DSTıNVERT, hedef bit eşlemini tersine çevirir.
+- DSTINVERT hedef bit eşlemi ters çeviriyor.
 
-- MERGECOPY, Boolean ve işlecini kullanarak stili ve kaynak bit eşlemini birleştirir.
+- MERGECOPY Boolean AND işleci kullanarak desen ve kaynak bit map birleştirir.
 
-- MERGEPAINT, ters kaynak bit eşlemini Boole veya işlecini kullanarak hedef bit eşlem ile birleştirir.
+- MERGEPAINT Ters kaynak bit eşlemi boolean OR işleci kullanarak hedef bit haritası ile birleştirir.
 
-- NOTSRCCOPY tersine çevrilmiş kaynak bit eşlemini hedefe kopyalar.
+- NOTSRCCOPY Ters kaynak bit eşlemi hedefe kopyalar.
 
-- NOTSRCERAO, Boolean veya işlecini kullanarak hedef ve kaynak bit eşlemlerini birleştirmenin sonucunu tersine çevirir.
+- NOTSRCERASE, Boolean OR işleci kullanarak hedef ve kaynak bit eşlemlerini birleştirme sonucunu tersine çevirir.
 
-- PATCOPY, stili hedef bit eşlem 'e kopyalar.
+- PATCOPY Deseni hedef bit haritasına kopyalar.
 
-- PATıNVERT, Boolean XOR işlecini kullanarak hedef bit eşlemini desen ile birleştirir.
+- PATINVERT Boolean XOR işleci kullanarak hedef bit haritasını desenle birleştirir.
 
-- PATPAINT, ters kaynak bit eşlemini Boolean veya işlecini kullanarak düzeniyle birleştirir. Boole türü OR işlecini kullanarak, bu işlemin sonucunu hedef bit işlem ile birleştirir.
+- PATPAINT Ters kaynak bit eşlemi boolean OR işleci kullanarak desen ile birleştirir. Boole türü OR işlecini kullanarak, bu işlemin sonucunu hedef bit işlem ile birleştirir.
 
-- SRCAND, Boolean ve işlecini kullanarak hedef ve kaynak bit eşlemlerinin piksellerini birleştirir.
+- SRCAND Boolean AND işleci kullanarak hedef ve kaynak bit eşlemlerinin piksellerini birleştirir.
 
-- SRCCOPY, kaynak bit eşlemi hedef bit eşlem 'e kopyalar.
+- SRCCOPY Kaynak bit eşlemi hedef bit haritasını kopyalar.
 
-- SRCERAO, hedef bit eşlemini tersine çevirir ve sonucu, Boolean ve işlecini kullanarak kaynak bit eşlem ile birleştirir.
+- SRCERASE hedef bit eşlemesini tersine çevirir ve sonucu Boolean AND işleci kullanarak kaynak bit haritasıyla birleştirir.
 
-- SRCINVERT, Boolean XOR işlecini kullanarak hedef ve kaynak bit eşlemlerinin piksellerini birleştirir.
+- SRCINVERT Boolean XOR işleci kullanarak hedef ve kaynak bit eşlemlerinin piksellerini birleştirir.
 
-- SRCPAINT, Boolean veya işlecini kullanarak hedef ve kaynak bit eşlemlerin piksellerini birleştirir.
+- SRCPAINT Boolean OR işleci kullanarak hedef ve kaynak bit eşlemlerinin piksellerini birleştirir.
 
-- DUMAN, tüm çıktıyı dönüştürür.
+- BEYAZLIK Tüm çıktıyı beyaza çevirir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6810,23 +6810,23 @@ Bit eşlem çizilirse sıfır dışında bir değer, aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, bit eşlemin nasıl uzatılaceğini veya sıkıştırılacağını anlamak için hedef cihaz bağlamının uzatma modunu kullanır (`SetStretchBltMode`göre ayarlanır).
+İşlev, bit eşleminin nasıl uzatılabildiğini veya sıkıştırılabildiğini belirlemek için hedef aygıt bağlamının `SetStretchBltMode`(ayarlanan) germe modunu kullanır.
 
-`StretchBlt` işlevi, *pSrcDC* tarafından verilen kaynak cihazdan bit eşlemi, üye işlevi çağrılan cihaz bağlamı nesnesi tarafından temsil edilen hedef cihaza taşımaktadır. *XSrc*, *ySrc*, *nSrcWidth*ve *nsrchsekiz* parametreleri, kaynak dikdörtgenin sol üst köşesini ve boyutlarını tanımlar. *X*, *y*, *nWidth*ve *nHeight* parametreleri, hedef dikdörtgenin sol üst köşesini ve boyutlarını verir. *DwRop* tarafından belirtilen raster işlemi, kaynak bit eşlemin ve hedef cihazda bulunan bitlerin nasıl birleştirildiğini tanımlar.
+İşlev, `StretchBlt` *pSrcDC* tarafından verilen kaynak aygıttan üye işlev çağrılan aygıt bağlamı nesnesi tarafından temsil edilen hedef aygıta bit eşlemi taşır. *xSrc*, *ySrc*, *nSrcWidth ve nSrcHeight*parametreleri üst-sol köşe ve kaynak dikdörtgenin boyutlarını tanımlar. *nSrcHeight* *X*, *y*, *nWidth*ve *nHeight* parametreleri hedef dikdörtgenin sol üst köşesini ve boyutlarını verir. *dwRop* tarafından belirtilen raster işlemi, hedef cihazdaki kaynak bit eşlemi ve bitlerinin nasıl birleştirilebildiğini tanımlar.
 
-`StretchBlt` işlevi, *nSrcWidth* ve *nWidth* veya *Nsrchsekiz* ve *nHeight* parametrelerinin işaretleri farklıysa bir bit eşlemin ayna görüntüsünü oluşturur. *NSrcWidth* ve *nWidth* farklı işaretlere sahipse, işlev bit eşlemin x ekseni üzerinde bir ayna görüntüsünü oluşturur. *Nsrchsekiz* ve *nHeight* farklı işaretlere sahipse, işlev y ekseni üzerinde bit eşlemin ayna görüntüsünü oluşturur.
+Işlev, `StretchBlt` *nSrcWidth* ve nWidth veya *nSrcHeight* ve *nWidth* *nHeight* parametrelerinin işaretleri farklıysa, bir biteşme ayna görüntüsü oluşturur. *nSrcWidth* ve *nWidth* farklı işaretler varsa, işlev x ekseni boyunca bit eşlem bir ayna görüntüsü oluşturur. *nSrcHeight* ve *nHeight* farklı işaretler varsa, işlev y ekseni boyunca bit eşlem bir ayna görüntüsü oluşturur.
 
-`StretchBlt` işlevi, bellekteki kaynak bit eşlemini uzatır veya sıkıştırır ve sonucu hedefe kopyalar. Sonuç ile bir desen birleştirilecekse, uzatılan kaynak bit eşlem hedefe kopyalanıncaya kadar birleştirilmez. Fırça kullanılırsa, hedef cihaz bağlamında seçili fırçadır. Hedef koordinatları hedef cihaz bağlamına göre dönüştürülür; kaynak koordinatları kaynak cihaz bağlamına göre dönüştürülür.
+İşlev `StretchBlt` bellekteki kaynak bit eşlemi uzalar veya sıkıştırır ve sonra sonucu hedefe kopyalar. Sonuç ile bir desen birleştirilecekse, uzatılan kaynak bit eşlem hedefe kopyalanıncaya kadar birleştirilmez. Fırça kullanılırsa, hedef cihaz bağlamında seçili fırçadır. Hedef koordinatları hedef cihaz bağlamına göre dönüştürülür; kaynak koordinatları kaynak cihaz bağlamına göre dönüştürülür.
 
-Hedef, kaynak ve model bit eşlemlerinin aynı renk biçimi yoksa `StretchBlt` kaynak ve kalıp bit eşlemlerini hedef bit eşlemlerle eşleşecek şekilde dönüştürür. Hedef cihaz bağlamının ön plan ve arka plan renkleri dönüşümde kullanılır.
+Hedef, kaynak ve desen bit eşlemleri aynı renk `StretchBlt` biçimine sahip değilse, kaynak ve desen bit eşlemlerini hedef bit eşlemlerle eşleşecek şekilde dönüştürür. Hedef cihaz bağlamının ön plan ve arka plan renkleri dönüşümde kullanılır.
 
-`StretchBlt`, tek renkli bir bit eşlemi renge dönüştürmelidir, beyaz bitleri (1) arka plan rengine ve siyah bit (0) ön plan rengine ayarlar. Renkliyi tek renkliye dönüştürmek için, arka plan rengiyle uyuşan pikselleri beyaz (1) olarak ve tüm diğer pikselleri de siyah (0) olarak ayarlar. Renkli cihaz bağlamının ön plan ve arka plan renkleri kullanılır.
+Tek `StretchBlt` renkli bit eşlemi renge dönüştürmesi gerekiyorsa, beyaz bitleri (1) arka plan rengine, siyah bitleri (0) ön plan rengine ayarlar. Renkliyi tek renkliye dönüştürmek için, arka plan rengiyle uyuşan pikselleri beyaz (1) olarak ve tüm diğer pikselleri de siyah (0) olarak ayarlar. Renkli cihaz bağlamının ön plan ve arka plan renkleri kullanılır.
 
-Tüm cihazlar `StretchBlt` işlevini desteklemez. Bir cihazın `StretchBlt`destekleyip desteklemediğini anlamak için, bir `GetDeviceCaps` üye işlevini, RASTERLEŞTIRME diziniyle çağırın ve RC_STRETCHBLT bayrağının dönüş değerini denetleyin.
+Tüm aygıtlar `StretchBlt` işlevi desteklemez. Aygıtın destekleyip `StretchBlt`desteklemediğini `GetDeviceCaps` belirlemek için, RASTERCAPS dizinini içeren üye işlevini arayın ve RC_STRETCHBLT bayrağının iade değerini denetleyin.
 
-##  <a name="strokeandfillpath"></a>CDC:: StrokeAndFillPath
+## <a name="cdcstrokeandfillpath"></a><a name="strokeandfillpath"></a>CDC::StrokeAndFillPath
 
-Bir yoldaki tüm açık rakamları kapatır, geçerli kalemi kullanarak yolun ana hattını konturleyerek, geçerli fırçayı kullanarak iç kısmını doldurur.
+Bir yoldaki açık şekilleri kapatır, geçerli kalemi kullanarak yolun anahatlarını dizer ve geçerli fırçayı kullanarak iç kısmını doldurur.
 
 ```
 BOOL StrokeAndFillPath();
@@ -6838,9 +6838,9 @@ BOOL StrokeAndFillPath();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Cihaz bağlamı kapalı bir yol içermelidir. `StrokeAndFillPath` member işlevi, yoldaki tüm açık rakamları kapatmakla aynı etkiye sahiptir ve bu, doldurulmuş bölge, kalem geniş olsa bile konturlu bölge ile çakışmaz.
+Aygıt bağlamı kapalı bir yol içermelidir. `StrokeAndFillPath` Üye işlev, kalem geniş olsa bile dolgulu bölgenin konturlu bölgeyle örtüşmemesi dışında, yoldaki tüm açık rakamları kapatma ve yolu ayrı ayrı okşayarak doldurma yla aynı etkiye sahiptir.
 
-##  <a name="strokepath"></a>CDC:: StrokePath
+## <a name="cdcstrokepath"></a><a name="strokepath"></a>CDC::StrokePath
 
 Geçerli kalemi kullanarak belirtilen yolu işler.
 
@@ -6854,11 +6854,11 @@ BOOL StrokePath();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Cihaz bağlamı kapalı bir yol içermelidir.
+Aygıt bağlamı kapalı bir yol içermelidir.
 
-##  <a name="tabbedtextout"></a>CDC:: TabbedTextOut
+## <a name="cdctabbedtextout"></a><a name="tabbedtextout"></a>CDC::TabbedTextOut
 
-Sekme durağı konumları dizisinde belirtilen değerlere genişleterek, belirtilen konumda bir karakter dizesi yazmak için bu üye işlevi çağırın.
+Sekme-durdurma konumları dizisinde belirtilen değerlere sekmeleri genişleterek, belirtilen konuma bir karakter dizesi yazmak için bu üye işlevi arayın.
 
 ```
 virtual CSize TabbedTextOut(
@@ -6881,43 +6881,43 @@ CSize TabbedTextOut(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
-Dizenin başlangıç noktasının mantıksal x koordinatını belirtir.
+*X*<br/>
+Dizenin başlangıç noktasının mantıksal x-koordinatını belirtir.
 
-*Iz*<br/>
-Dizenin başlangıç noktasının mantıksal y koordinatını belirtir.
+*Y*<br/>
+Dizenin başlangıç noktasının mantıksal y-koordinatını belirtir.
 
 *lpszString*<br/>
-Çizilecek karakter dizesini işaret eder. Bu parametre için bir karakter dizisine ya da bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine bir işaretçi geçirebilirsiniz.
+Çizecek karakter dizesini işaret edin. Bu parametre için bir karakter dizisine veya [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine bir işaretçi geçirebilirsiniz.
 
-*nCount*<br/>
-*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
+*nSayısı*<br/>
+*LpszString*tarafından işaret [edilen dize uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
 
 *nTabPositions*<br/>
-Sekme durağı konumları dizisindeki değer sayısını belirtir.
+Sekme durdurma konumları dizisindeki değer sayısını belirtir.
 
 *lpnTabStopPositions*<br/>
-Sekme durağı konumlarını içeren bir diziyi işaret eder (mantıksal birimler cinsinden). Sekme duraklarının artan sırada sıralanması gerekir; en küçük x değeri dizideki ilk öğe olmalıdır.
+Sekme-stop konumlarını içeren bir diziye (mantıksal birimler halinde) işaret eder. Sekme durakları artan sırayla sıralanmalıdır; en küçük x değeri dizideki ilk öğe olmalıdır.
 
 *nTabOrigin*<br/>
-Sekmelerin genişletildiği başlangıç konumunun x koordinatını belirtir (mantıksal birimler cinsinden).
+Sekmelerin genişletildiği başlangıç konumunun x-koordinatını (mantıksal birimler halinde) belirtir.
 
-*üstbilgisine*<br/>
-Belirtilen karakterleri içeren `CString` nesnesi.
+*Str*<br/>
+Belirtilen `CString` karakterleri içeren bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizenin (mantıksal birimler cinsinden) `CSize` nesne olarak boyutları.
+Bir `CSize` nesne olarak dize (mantıksal birimler) boyutları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Metin şu anda seçili olan yazı tipinde yazılır. *NTabPositions* 0 Ise ve *lpnTabStopPositions* null ise, sekmeler ortalama karakter genişliği sekiz katına genişletilir.
+Metin, şu anda seçili yazı tipinde yazılır. *nTabPositions* 0 ve *lpnTabStopPositions* NULL ise sekmeler sekiz kez ortalama karakter genişliği genişletilir.
 
-*NTabPositions* 1 ise, sekme durağı *lpnTabStopPositions* dizisindeki ilk değer tarafından belirtilen uzaklığa göre ayrılır. *LpnTabStopPositions* dizisi birden fazla değer içeriyorsa dizideki her bir değer Için *nTabPositions*tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır. *NTabOrigin* parametresi, bir uygulamanın tek bir çizgi için birkaç kez `TabbedTextOut` işlevini çağırmasını sağlar. Uygulama her seferinde *nTabOrigin* değeri aynı değere ayarlandığında, işlevi birden çok kez çağırırsa, Işlevi *nTabOrigin*tarafından belirtilen konuma göre tüm sekmeleri genişletir.
+*nTabPositions* 1 ise, sekme durakları *lpnTabStopPositions* dizisinde ilk değer tarafından belirtilen mesafe ile ayrılır. *lpnTabStopPositions* dizisi birden fazla değer içeriyorsa, dizideki her değer için *nTabPositions*tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır. *nTabOrigin* parametresi, bir uygulamanın `TabbedTextOut` işlevi tek bir satır için birkaç kez aramasına olanak tanır. Uygulama işlevi her seferinde aynı değere ayarlanmış *nTabOrigin* ile birden fazla kez çağırırsa, işlev *nTabOrigin*tarafından belirtilen konuma göre tüm sekmeleri genişletir.
 
-Varsayılan olarak, geçerli konum işlev tarafından kullanılmaz veya güncelleştirilmez. Bir uygulamanın işlevi çağırdığında geçerli konumu güncelleştirmesi gerekiyorsa, uygulama, *nFlags* TA_UPDATECP olarak ayarlanan [SetTextAlign](#settextalign) üye işlevini çağırabilir. Bu bayrak ayarlandığında, Windows, `TabbedTextOut`sonraki çağrılarındaki *x* ve *y* parametrelerini, bunun yerine geçerli konumu kullanarak yoksayar.
+Varsayılan olarak, geçerli konum işlev tarafından kullanılmaz veya güncelleştirilmez. Bir uygulama işlevi aradığında geçerli konumu güncelleştirmek gerekiyorsa, uygulama *nFlags* TA_UPDATECP ayarlanmış [SetTextAlign](#settextalign) üye işlevini çağırabilir. Bu bayrak ayarlandığında, Windows sonraki çağrılarda *x* ve `TabbedTextOut` *y* parametrelerini yoksayarlar , bunun yerine geçerli konumu kullanarak.
 
-##  <a name="textout"></a>CDC:: TextOut
+## <a name="cdctextout"></a><a name="textout"></a>CDC::TextOut
 
 O anda seçili yazı tipini kullanarak belirtilen konumda bir karakter dizesi yazar.
 
@@ -6936,20 +6936,20 @@ BOOL TextOut(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*X*<br/>
 Metnin başlangıç noktasının mantıksal x koordinatını belirtir.
 
-*Iz*<br/>
+*Y*<br/>
 Metnin başlangıç noktasının mantıksal y koordinatını belirtir.
 
 *lpszString*<br/>
 Çizilecek karakter dizesine işaret eder.
 
-*nCount*<br/>
+*nSayısı*<br/>
 Dizedeki karakter sayısını belirtir.
 
-*üstbilgisine*<br/>
-Çizilecek karakterleri içeren `CString` nesnesi.
+*Str*<br/>
+Çizilecek karakterleri içeren bir `CString` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6959,15 +6959,15 @@ Dizedeki karakter sayısını belirtir.
 
 Karakter başlangıç noktaları karakter hücresinin sol üst köşesindedir. Varsayılan olarak, geçerli konum işlev tarafından kullanılmaz veya güncelleştirilmez.
 
-Bir uygulamanın `TextOut`çağırdığında geçerli konumu güncelleştirmesi gerekiyorsa, uygulama, *nFlags* TA_UPDATECP olarak ayarlanan `SetTextAlign` üye işlevini çağırabilir. Bu bayrak ayarlandığında, Windows, `TextOut`sonraki çağrılarındaki *x* ve *y* parametrelerini, bunun yerine geçerli konumu kullanarak yoksayar.
+Bir uygulama nın aradığında `TextOut`geçerli konumu güncelleştirmesi gerekiyorsa, uygulama `SetTextAlign` *nFlags* TA_UPDATECP ayarlanmış üye işlevini çağırabilir. Bu bayrak ayarlandığında, Windows sonraki çağrılarda *x* ve `TextOut` *y* parametrelerini yoksayarlar , bunun yerine geçerli konumu kullanarak.
 
 ### <a name="example"></a>Örnek
 
-  [CDC:: BeginPath](#beginpath)örneğine bakın.
+  CDC örneğine [bakın::BeginPath](#beginpath).
 
-##  <a name="transparentblt"></a>CDC:: TransparentBlt
+## <a name="cdctransparentblt"></a><a name="transparentblt"></a>CDC::ŞeffafBlt
 
-Belirtilen kaynak cihaz bağlamından bir piksel dikdörtgeni hedef cihaz bağlamına karşılık gelen renk verilerinin bit bloğunu aktarmak için bu üye işlevini çağırın.
+Belirtilen kaynak aygıt bağlamından piksel dikdörtgenine karşılık gelen renk verilerinin bir bit bloğunu hedef aygıt bağlamına aktarmak için bu üye işlevi arayın.
 
 ```
 BOOL TransparentBlt(
@@ -6986,48 +6986,48 @@ BOOL TransparentBlt(
 ### <a name="parameters"></a>Parametreler
 
 *xDest*<br/>
-Hedef dikdörtgenin sol üst köşesinin x koordinatını (mantıksal birimler) belirler.
+Hedef dikdörtgenin sol üst köşesindeki x koordinatını mantıksal birimler halinde belirtir.
 
-*En dest*<br/>
-Hedef dikdörtgenin sol üst köşesinin y koordinatını, mantıksal birimler cinsinden belirtir.
+*yDest*<br/>
+Hedef dikdörtgenin sol üst köşesindeki y-koordinatını mantıksal birimler halinde belirtir.
 
-*nDestWidth*<br/>
-Hedef dikdörtgenin mantıksal birimleri cinsinden genişliği belirtir.
+*nDestGenişliği*<br/>
+Hedef dikdörtgenin genişliğini mantıksal birimler halinde belirtir.
 
-*nDestHeight*<br/>
-Hedef dikdörtgenin mantıksal birimlerindeki yüksekliğini belirtir.
+*nDestYükseklik*<br/>
+Hedef dikdörtgenin yüksekliğini mantıksal birimler halinde belirtir.
 
 *pSrcDC*<br/>
-Kaynak cihaz bağlamı işaretçisi.
+Kaynak aygıt bağlamını işaretçi.
 
 *xSrc*<br/>
-Kaynak dikdörtgenin mantıksal birimleri cinsinden x koordinatını belirtir.
+Kaynak dikdörtgenin x-koordinatını mantıksal birimler halinde belirtir.
 
 *ySrc*<br/>
-Kaynak dikdörtgenin mantıksal birimlerindeki y koordinatını belirtir.
+Kaynak dikdörtgenin y-koordinatını mantıksal birimler halinde belirtir.
 
-*nSrcWidth*<br/>
-Kaynak dikdörtgenin mantıksal birimleri cinsinden genişliği belirtir.
+*nSrcGenişlik*<br/>
+Kaynak dikdörtgenin genişliğini mantıksal birimler halinde belirtir.
 
-*nSrcHeight*<br/>
-Kaynak dikdörtgenin mantıksal birimlerindeki yüksekliğini belirtir.
+*nSrcYükseklik*<br/>
+Kaynak dikdörtgenin yüksekliğini mantıksal birimler halinde belirtir.
 
-*clrTransparent*<br/>
-Saydam olarak değerlendirmek için kaynak bit eşlemdeki RGB rengi.
+*clrŞeffaf*<br/>
+Kaynak bit haritasındaki RGB rengi saydam olarak ele almak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa doğru; Aksi halde yanlış.
+Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`TransparentBlt` saydamlığa izin verir; diğer bir deyişle, *clrTransparent* tarafından belirtilen RGB rengi aktarım için saydam olarak işlenir.
+`TransparentBlt`saydamlığa izin verir; diğer bir *de, clrTransparent* tarafından belirtilen RGB rengi aktarım için saydam hale getirilir.
 
-Daha fazla bilgi için Windows SDK [TransparentBlt](/windows/win32/api/wingdi/nf-wingdi-transparentblt) bakın.
+Daha fazla bilgi için Windows SDK'daki [TransparentBlt'a](/windows/win32/api/wingdi/nf-wingdi-transparentblt) bakın.
 
-##  <a name="updatecolors"></a>CDC:: UpdateColors
+## <a name="cdcupdatecolors"></a><a name="updatecolors"></a>CDC::UpdateColors
 
-İstemci alanındaki geçerli renkleri piksel olarak bir piksel temelinde sistem paletiyle eşleştirerek cihaz bağlamının istemci alanını güncelleştirir.
+İstemci alanındaki geçerli renkleri piksel piksel olarak sistem paleti ile eşleştirerek aygıt bağlamının istemci alanını güncelleştirir.
 
 ```
 void UpdateColors();
@@ -7035,15 +7035,15 @@ void UpdateColors();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gerçekleştirilmiş bir mantıksal palet içeren etkin olmayan bir pencere, sistem paleti değiştiğinde istemci alanının yeniden çizilmesini alternatif olarak `UpdateColors` çağırabilir.
+Gerçekleştirilmiş mantıksal palete sahip etkin `UpdateColors` olmayan bir pencere, sistem paleti değiştiğinde istemci alanını yeniden çizmek için alternatif olarak çağırabilir.
 
-Renk paletleri kullanma hakkında daha fazla bilgi için Windows SDK [UpdateColors](/windows/win32/api/wingdi/nf-wingdi-updatecolors) bölümüne bakın.
+Renk paletleri kullanma hakkında daha fazla bilgi için Windows SDK'daki [UpdateColors'a](/windows/win32/api/wingdi/nf-wingdi-updatecolors) bakın.
 
-`UpdateColors` member işlevi, genellikle alanı yeniden çizmeyi kullanmaktan daha hızlı bir şekilde istemci alanı güncelleştirir. Ancak, işlev, sistem paleti değiştirilmeden önce her bir pikselin rengine bağlı olarak renk çevirisini gerçekleştirdiğinden, bu işleve yapılan her çağrı bazı renk doğruluğu kaybına neden olur.
+`UpdateColors` Üye işlev genellikle bir istemci alanını alanı yeniden çizmekten daha hızlı güncelleştirir. Ancak, işlev sistem paleti değişmeden önce her pikselin rengine göre renk çevirisini gerçekleştirdiğinden, bu işleve yapılan her çağrı bazı renk doğruluğunun kaybolmasına neden olabilir.
 
-##  <a name="widenpath"></a>CDC:: WidenPath
+## <a name="cdcwidenpath"></a><a name="widenpath"></a>CDC::WidenPath
 
-Yol, şu anda cihaz bağlamına seçili olan kalem kullanılarak konturlandığında, geçerli yolu boyanmış alan olarak tekrar tanımlar.
+Yol aygıt bağlamında şu anda seçili kalem kullanılarak okşandıysa, geçerli yolu boyanacak alan olarak yeniden tanımlar.
 
 ```
 BOOL WidenPath();
@@ -7055,7 +7055,7 @@ BOOL WidenPath();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, yalnızca geçerli kalem, `CreatePen` member işlevinin ikinci sürümü tarafından oluşturulan bir geometrik kalem ise veya kalem `CreatePen` ilk sürümü ile oluşturulduysa ve cihaz birimlerinde, 1 ' den büyük bir genişlik içeriyorsa başarılı olur. Cihaz bağlamı kapalı bir yol içermelidir. Yoldaki tüm Bzier eğrileri, iletildiklerinde eğrilerine yakın bir şekilde düz çizgilerin dizilerine dönüştürülür. Bu nedenle, `WidenPath` çağrıldıktan sonra Bzier eğrileri hiçbir şekilde kalmaz.
+Bu işlev, yalnızca geçerli kalem üye işlevin `CreatePen` ikinci sürümü tarafından oluşturulan geometrik bir kalemse `CreatePen` veya kalemin ilk sürümüyle oluşturulmuşsa ve aygıt birimlerinde 1'den büyük bir genişliğe sahipse başarılı olur. Aygıt bağlamı kapalı bir yol içermelidir. Yoldaki bzier eğrileri, genişlenmiş eğrilere yaklaşan düz çizgiler dizilerine dönüştürülür. Bu nedenle, hiçbir Bzier eğrileri `WidenPath` sonra çağrılır yolda kalır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

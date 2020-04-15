@@ -1,5 +1,5 @@
 ---
-title: CMFCRibbonLinkCtrl sınıfı
+title: CMFCRibbonLinkCtrl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonLinkCtrl
@@ -32,17 +32,17 @@ helpviewer_keywords:
 - CMFCRibbonLinkCtrl [MFC], OpenLink
 - CMFCRibbonLinkCtrl [MFC], SetLink
 ms.assetid: 77ae1941-e0ab-4a9d-911e-1752d34c079b
-ms.openlocfilehash: 12a83e45176f7fc6020da1f0d0ee5923ef0f466c
-ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
+ms.openlocfilehash: 5d00c17b2ede654b9bdd214a8649f1237b9d9fdc
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68866158"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375113"
 ---
-# <a name="cmfcribbonlinkctrl-class"></a>CMFCRibbonLinkCtrl sınıfı
+# <a name="cmfcribbonlinkctrl-class"></a>CMFCRibbonLinkCtrl Sınıfı
 
-Şeritte konumlandırılmış bir köprü uygular. Köprü, tıkladığınızda bir Web sayfası açar.
-Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC\\atlmfc\\\\src MFC** klasöründe bulunan kaynak koduna bakın.
+Şerit üzerinde konumlandırılmış bir köprü uygular. Köprü, tıklattığınızda bir Web sayfası açar.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,45 +54,45 @@ class CMFCRibbonLinkCtrl : public CMFCRibbonButton
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonLinkCtrl:: CMFCRibbonLinkCtrl](#cmfcribbonlinkctrl)|Bir `CMFCRibbonLinkCtrl` nesnesi oluşturur ve başlatır.|
+|[CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl](#cmfcribbonlinkctrl)|Bir `CMFCRibbonLinkCtrl` nesne yi inşa eder ve başharfe ait hale raz.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonLinkCtrl:: CopyFrom](#copyfrom)|(Geçersiz `CMFCRibbonButton::CopyFrom`kılmalar.)|
-|[CMFCRibbonLinkCtrl:: GetCompactSize](#getcompactsize)|( [CMFCRibbonButton:: GetCompactSize](../../mfc/reference/cmfcribbonbutton-class.md#getcompactsize).) öğesini geçersiz kılar|
-|[CMFCRibbonLinkCtrl:: GetLink](#getlink)|Köprünün değerini döndürür.|
-|[CMFCRibbonLinkCtrl:: GetRegularSize](#getregularsize)|( [CMFCRibbonButton:: GetRegularSize](../../mfc/reference/cmfcribbonbutton-class.md#getregularsize).) öğesini geçersiz kılar|
-|[CMFCRibbonLinkCtrl:: GetToolTipText](#gettooltiptext)|( [CMFCRibbonButton:: GetToolTipText](../../mfc/reference/cmfcribbonbutton-class.md#gettooltiptext)geçersiz kılar.)|
-|[CMFCRibbonLinkCtrl:: IsDrawTooltipImage](#isdrawtooltipimage)|(Geçersiz `CMFCRibbonButton::IsDrawTooltipImage`kılmalar.)|
-|[CMFCRibbonLinkCtrl:: OnDraw](#ondraw)|( [CMFCRibbonButton:: OnDraw](../../mfc/reference/cmfcribbonbutton-class.md#ondraw)geçersiz kılar.)|
-|[CMFCRibbonLinkCtrl:: OnDrawMenuImage](#ondrawmenuimage)|( [CMFCRibbonBaseElement:: OnDrawMenuImage](../../mfc/reference/cmfcribbonbaseelement-class.md#ondrawmenuimage)geçersiz kılar.)|
-|[CMFCRibbonLinkCtrl:: OnMouseMove](#onmousemove)|(Geçersiz `CMFCRibbonButton::OnMouseMove`kılmalar.)|
-|[CMFCRibbonLinkCtrl:: OnSetIcon](#onseticon)||
-|[CMFCRibbonLinkCtrl:: OpenLink](#openlink)|Köprüde belirtilen Web sayfasını açar.|
-|[CMFCRibbonLinkCtrl:: SetLink](#setlink)|Köprünün değerini ayarlar.|
+|[CMFCRibbonLinkCtrl::CopyFrom](#copyfrom)|(Geçersiz `CMFCRibbonButton::CopyFrom`kılar .)|
+|[CMFCRibbonLinkCtrl::GetCompactSize](#getcompactsize)|[(CMFCRibbonButton geçersiz kılar::GetCompactSize](../../mfc/reference/cmfcribbonbutton-class.md#getcompactsize).)|
+|[CMFCRibbonLinkCtrl::GetLink](#getlink)|Köprü değerini verir.|
+|[CMFCRibbonLinkCtrl::GetRegularSize](#getregularsize)|[(CMFCRibbonButton geçersiz kılar::GetRegularSize](../../mfc/reference/cmfcribbonbutton-class.md#getregularsize).)|
+|[CMFCRibbonLinkCtrl::GetToolTipText](#gettooltiptext)|[(CMFCRibbonButton geçersiz kılar::GetToolTipText](../../mfc/reference/cmfcribbonbutton-class.md#gettooltiptext).)|
+|[CMFCRibbonLinkCtrl::IsDrawTooltipImage](#isdrawtooltipimage)|(Geçersiz `CMFCRibbonButton::IsDrawTooltipImage`kılar .)|
+|[CMFCRibbonLinkCtrl::OnDraw](#ondraw)|[(CMFCRibbonButton geçersiz kılar::OnDraw](../../mfc/reference/cmfcribbonbutton-class.md#ondraw).)|
+|[CMFCRibbonLinkCtrl::OnDrawMenuImage](#ondrawmenuimage)|[(CMFCRibbonBaseElement geçersiz kılar::OnDrawMenuImage](../../mfc/reference/cmfcribbonbaseelement-class.md#ondrawmenuimage).)|
+|[CMFCRibbonLinkCtrl::OnMouseMove](#onmousemove)|(Geçersiz `CMFCRibbonButton::OnMouseMove`kılar .)|
+|[CMFCRibbonLinkCtrl::OnSetIcon](#onseticon)||
+|[CMFCRibbonLinkCtrl::OpenLink](#openlink)|Köprüde belirtilen Web sayfasını açar.|
+|[CMFCRibbonLinkCtrl::SetLink](#setlink)|Köprüdeğerini ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Köprü oluşturduktan sonra [CMFCRibbonPanel:: Add](../../mfc/reference/cmfcribbonpanel-class.md#add)yöntemini çağırarak bir panele ekleyin.
+Bir köprü oluşturduktan sonra CMFCRibbonPanel'i arayarak bir panele [ekleyin::Ekle.](../../mfc/reference/cmfcribbonpanel-class.md#add)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)\
-└&nbsp;[CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[Cmfcribbondüğmesi](../../mfc/reference/cmfcribbonbutton-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CMFCRibbonLinkCtrl](../../mfc/reference/cmfcribbonlinkctrl-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)\
+•&nbsp;[CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CMFCRibbonLinkCtrl](../../mfc/reference/cmfcribbonlinkctrl-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxribbonlinkctrl. h
+**Üstbilgi:** afxRibbonLinkCtrl.h
 
-##  <a name="cmfcribbonlinkctrl"></a>CMFCRibbonLinkCtrl:: CMFCRibbonLinkCtrl
+## <a name="cmfcribbonlinkctrlcmfcribbonlinkctrl"></a><a name="cmfcribbonlinkctrl"></a>CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl
 
-Bir [CMFCRibbonLinkCtrl](../../mfc/reference/cmfcribbonlinkctrl-class.md) nesnesi oluşturur ve başlatır.
+[CMFCRibbonLinkCtrl](../../mfc/reference/cmfcribbonlinkctrl-class.md) nesnesi inşa eder ve başharflerini.
 
 ```
 CMFCRibbonLinkCtrl(
@@ -103,22 +103,22 @@ CMFCRibbonLinkCtrl(
 
 ### <a name="parameters"></a>Parametreler
 
-*NID*<br/>
-'ndaki Bağlantı denetimi tıklandığında yürütülen komutun komut KIMLIĞINI belirtir.
+*Nıd*<br/>
+[içinde] Bağlantı denetimi tıklatıldığında çalıştıran komutun komut kimliğini belirtir.
 
-*lpszText*<br/>
-'ndaki Bağlantı denetiminde görüntülenecek etiketi belirtir.
+*lpszMetin*<br/>
+[içinde] Bağlantı denetiminde görüntülenecek etiketi belirtir.
 
 *lpszLink*<br/>
-'ndaki Bağlantı denetimiyle ilişkili köprüyü belirtir.
+[içinde] Bağlantı denetimiyle ilişkili köprünün belirtinir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCRibbonLinkCtrl` sınıfının oluşturucusunun nasıl kullanılacağını göstermektedir. Bu kod parçacığı, [Şerit araçları örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfın oluşturucusu nasıl `CMFCRibbonLinkCtrl` kullanılacağını gösterir. Bu kod parçacığı [Şerit Gadget'lar örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_RibbonGadgets#1](../../mfc/reference/codesnippet/cpp/cmfcribbonlinkctrl-class_1.cpp)]
 
-##  <a name="copyfrom"></a>CMFCRibbonLinkCtrl:: CopyFrom
+## <a name="cmfcribbonlinkctrlcopyfrom"></a><a name="copyfrom"></a>CMFCRibbonLinkCtrl::CopyFrom
 
 ```
 virtual void CopyFrom(const CMFCRibbonBaseElement& src);
@@ -126,11 +126,11 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *src*<br/>
+[içinde] *src*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getcompactsize"></a>CMFCRibbonLinkCtrl:: GetCompactSize
+## <a name="cmfcribbonlinkctrlgetcompactsize"></a><a name="getcompactsize"></a>CMFCRibbonLinkCtrl::GetCompactSize
 
 ```
 virtual CSize GetCompactSize(CDC* pDC);
@@ -138,15 +138,15 @@ virtual CSize GetCompactSize(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *PDC*<br/>
+[içinde] *pDC*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getlink"></a>CMFCRibbonLinkCtrl:: GetLink
+## <a name="cmfcribbonlinkctrlgetlink"></a><a name="getlink"></a>CMFCRibbonLinkCtrl::GetLink
 
-Köprünün değerini döndürür.
+Köprü değerini verir.
 
 ```
 LPCTSTR GetLink() const;
@@ -158,7 +158,7 @@ Köprünün geçerli değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getregularsize"></a>CMFCRibbonLinkCtrl:: GetRegularSize
+## <a name="cmfcribbonlinkctrlgetregularsize"></a><a name="getregularsize"></a>CMFCRibbonLinkCtrl::GetRegularSize
 
 ```
 virtual CSize GetRegularSize(CDC* pDC);
@@ -166,13 +166,13 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *PDC*<br/>
+[içinde] *pDC*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="gettooltiptext"></a>CMFCRibbonLinkCtrl:: GetToolTipText
+## <a name="cmfcribbonlinkctrlgettooltiptext"></a><a name="gettooltiptext"></a>CMFCRibbonLinkCtrl::GetToolTipText
 
 ```
 virtual CString GetToolTipText() const;
@@ -182,7 +182,7 @@ virtual CString GetToolTipText() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="ondrawmenuimage"></a>CMFCRibbonLinkCtrl:: OnDrawMenuImage
+## <a name="cmfcribbonlinkctrlondrawmenuimage"></a><a name="ondrawmenuimage"></a>CMFCRibbonLinkCtrl::OnDrawMenuImage
 
 ```
 virtual BOOL OnDrawMenuImage(CDC*, CRect);
@@ -190,14 +190,14 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *CDC&#42;*<br/>
-'ndaki *CRect*<br/>
+[içinde] *CDC&#42;*<br/>
+[içinde] *CRect*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isdrawtooltipimage"></a>CMFCRibbonLinkCtrl:: IsDrawTooltipImage
+## <a name="cmfcribbonlinkctrlisdrawtooltipimage"></a><a name="isdrawtooltipimage"></a>CMFCRibbonLinkCtrl::IsDrawTooltipImage
 
 ```
 virtual BOOL IsDrawTooltipImage() const;
@@ -207,7 +207,7 @@ virtual BOOL IsDrawTooltipImage() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="ondraw"></a>CMFCRibbonLinkCtrl:: OnDraw
+## <a name="cmfcribbonlinkctrlondraw"></a><a name="ondraw"></a>CMFCRibbonLinkCtrl::OnDraw
 
 ```
 virtual void OnDraw(CDC* pDC);
@@ -215,11 +215,11 @@ virtual void OnDraw(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *PDC*<br/>
+[içinde] *pDC*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onmousemove"></a>CMFCRibbonLinkCtrl:: OnMouseMove
+## <a name="cmfcribbonlinkctrlonmousemove"></a><a name="onmousemove"></a>CMFCRibbonLinkCtrl::OnMouseMove
 
 ```
 virtual void OnMouseMove(CPoint point);
@@ -227,11 +227,11 @@ virtual void OnMouseMove(CPoint point);
 
 ### <a name="parameters"></a>Parametreler
 
-'ndaki *nokta*<br/>
+[içinde] *nokta*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onseticon"></a>CMFCRibbonLinkCtrl:: OnSetIcon
+## <a name="cmfcribbonlinkctrlonseticon"></a><a name="onseticon"></a>CMFCRibbonLinkCtrl::OnSetIcon
 
 ```
 virtual void OnSetIcon();
@@ -239,7 +239,7 @@ virtual void OnSetIcon();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="openlink"></a>CMFCRibbonLinkCtrl:: OpenLink
+## <a name="cmfcribbonlinkctrlopenlink"></a><a name="openlink"></a>CMFCRibbonLinkCtrl::OpenLink
 
 Köprüde belirtilen Web sayfasını açar.
 
@@ -249,15 +249,15 @@ BOOL OpenLink();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlişkili Web sayfası başarıyla açıldıysa doğru; Aksi takdirde, FALSE.
+İlişkili web sayfası başarıyla açıldıysa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMFCRibbonLinkCtrl` Nesneyle ilişkili köprüyü kullanarak bir Web sayfasını açar.
+`CMFCRibbonLinkCtrl` Nesneyle ilişkili köprükullanarak bir web sayfası açar.
 
-##  <a name="setlink"></a>CMFCRibbonLinkCtrl:: SetLink
+## <a name="cmfcribbonlinkctrlsetlink"></a><a name="setlink"></a>CMFCRibbonLinkCtrl::SetLink
 
-Köprünün değerini ayarlar.
+Köprüdeğerini ayarlar.
 
 ```
 void SetLink(LPCTSTR lpszLink);
@@ -266,7 +266,7 @@ void SetLink(LPCTSTR lpszLink);
 ### <a name="parameters"></a>Parametreler
 
 *lpszLink*<br/>
-'ndaki Köprü metnini belirtir.
+[içinde] Köprü metnini belirtir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

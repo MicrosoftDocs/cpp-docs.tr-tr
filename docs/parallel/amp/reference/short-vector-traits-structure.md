@@ -7,16 +7,16 @@ f1_keywords:
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::short_vector_traits
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::size Constant
 ms.assetid: cd9492da-9e02-4a6e-9d50-b61252cdb460
-ms.openlocfilehash: 7531a57dddcc85392380029afc6edd577bbc5cf3
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: d743f74deaea5cb31cd609ece90891c8cfe2258f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126388"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374739"
 ---
 # <a name="short_vector_traits-structure"></a>short_vector_traits Yapısı
 
-short_vector_traits, bir kısa vektör türünün veya skaler türün temel vektör uzunluğunun ve skaler türünün alınmasına izin verir
+short_vector_traits, altta yatan vektör uzunluğunun ve kısa vektör tipinin veya skaler türünün skaler türünün alınmasını sağlar
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -81,23 +81,23 @@ struct short_vector_traits<double_4>;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Ortak tür tanımları
+### <a name="public-typedefs"></a>Genel Typedefs
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[short_vector_traits:: short_vector_traits Oluşturucusu](#ctor)||
+|[short_vector_traits::short_vector_traits Yapıcı](#ctor)||
 
-### <a name="public-constants"></a>Genel sabitler
+### <a name="public-constants"></a>Genel Sabitler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[short_vector_traits:: size sabiti](#size)||
+|[short_vector_traits::boyut Sabiti](#size)||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -105,17 +105,17 @@ struct short_vector_traits<double_4>;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** amp_short_vectors. h
+**Üstbilgi:** amp_short_vectors.h
 
-**Ad alanı:** Eşzamanlılık:: grafik
+**Ad alanı:** Eşzamanlılık::grafikler
 
-## <a name="ctor"></a>short_vector_traits:: short_vector_traits Oluşturucusu
+## <a name="short_vector_traitsshort_vector_traits-constructor"></a><a name="ctor"></a>short_vector_traits::short_vector_traits Yapıcı
 
 ```cpp
 short_vector_traits();
 ```
 
-## <a name="size"></a>short_vector_traits:: size sabiti
+## <a name="short_vector_traitssize-constant"></a><a name="size"></a>short_vector_traits::boyut Sabiti
 
 ```cpp
 static int const size = 1;

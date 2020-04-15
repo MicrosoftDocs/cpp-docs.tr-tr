@@ -17,16 +17,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Details::SyncLockT::~SyncLockT, destructor
 - Microsoft::WRL::Wrappers::Details::SyncLockT::Unlock method
 ms.assetid: a967f6f7-3555-43d1-b210-2bb65d63d15e
-ms.openlocfilehash: d27e6ba8601d0e822113bf3a4a65269c89437271
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 52c4404fa28f680a9a7a4592d03f535e8406d1a4
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398166"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374276"
 ---
 # <a name="synclockt-class"></a>SyncLockT Sınıfı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,42 +37,42 @@ class SyncLockT;
 
 ### <a name="parameters"></a>Parametreler
 
-*SyncTraits*<br/>
-Bir kaynağın sahipliğini türü.
+*Eşitleme Özellikleri*<br/>
+Kaynağın sahipliğini alabilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Özel alan türünü temsil eder ya da bir kaynak ilişkin paylaşılan sahipliğiniz.
+Kaynağın münhasır veya ortak sahipliğini alabilecek bir türü temsil eder.
 
-`SyncLockT` Sınıfı kullanılır, örneğin, uygulamak için [SRWLock](srwlock-class.md) sınıfı.
+Sınıf, `SyncLockT` örneğin, [SRWLock](srwlock-class.md) sınıfının uygulanmasına yardımcı olmak için kullanılır.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Ad                                      | Açıklama
+Adı                                      | Açıklama
 ----------------------------------------- | ----------------------------------------------------
-[SyncLockT::SyncLockT](#synclockt)        | Yeni bir örneğini başlatır `SyncLockT` sınıfı.
-[SyncLockT::~SyncLockT](#tilde-synclockt) | Örneği başlatılmasını geri alır `SyncLockT` sınıfı.
+[Synclockt::synclockt](#synclockt)        | `SyncLockT` sınıfının yeni bir örneğini başlatır.
+[Synclockt::~synclockt](#tilde-synclockt) | Sınıfın bir örneğini `SyncLockT` deinitialize eder.
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-Ad                               | Açıklama
+Adı                               | Açıklama
 ---------------------------------- | ----------------------------------------------------
-[SyncLockT::SyncLockT](#synclockt) | Yeni bir örneğini başlatır `SyncLockT` sınıfı.
+[Synclockt::synclockt](#synclockt) | `SyncLockT` sınıfının yeni bir örneğini başlatır.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                             | Açıklama
+Adı                             | Açıklama
 -------------------------------- | --------------------------------------------------------------------------------------------------------------
-[Synclockt::IsLocked](#islocked) | Belirtir olup olmadığını geçerli `SyncLockT` nesnesi bir kaynağa sahiptir; diğer bir deyişle, `SyncLockT` nesnedir *kilitli*.
-[SyncLockT::Unlock](#unlock)     | Serbest geçerli tarafından tutulan kaynak denetimi `SyncLockT` varsa, nesne.
+[SyncLockT::Kilitli](#islocked) | Geçerli `SyncLockT` nesnenin bir kaynağa sahip olup olmadığını gösterir; diğer bir `SyncLockT` şey, nesne *kilitlenir.*
+[SyncLockT::Kilidini Aç](#unlock)     | Varsa, geçerli `SyncLockT` nesne tarafından tutulan kaynağın denetimini serbest bırakır.
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-Ad                      | Açıklama
+Adı                      | Açıklama
 ------------------------- | -------------------------------------------------------------------
-[SyncLockT::sync_](#sync) | Temel alınan kaynak tarafından temsil edilen tutar `SyncLockT` sınıfı.
+[SyncLockT::sync_](#sync) | `SyncLockT` Sınıfın temsil ettiği temel kaynağı tutar.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -80,13 +80,13 @@ Ad                      | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrappers.h
 
-**Namespace:** Microsoft::WRL::Wrappers::details
+**Ad alanı:** Microsoft::WRL::Sarmalayıcılar::D kuyrukları
 
-## <a name="tilde-synclockt"></a>SyncLockT::~SyncLockT
+## <a name="synclocktsynclockt"></a><a name="tilde-synclockt"></a>Synclockt::~synclockt
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 ~SyncLockT();
@@ -94,13 +94,13 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneği başlatılmasını geri alır `SyncLockT` sınıfı.
+Sınıfın bir örneğini `SyncLockT` deinitialize eder.
 
-Bu yok Edicisi de geçerli kilidini açarak `SyncLockT` örneği.
+Bu yıkıcı aynı zamanda geçerli `SyncLockT` örneğin kilidini açar.
 
-## <a name="islocked"></a>Synclockt::IsLocked
+## <a name="synclocktislocked"></a><a name="islocked"></a>SyncLockT::Kilitli
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 bool IsLocked() const;
@@ -108,15 +108,15 @@ bool IsLocked() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa `SyncLockT` nesnedir kilitli; Aksi takdirde **false**.
+`SyncLockT` nesne kilitliyse **doğru;** aksi takdirde, **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtir olup olmadığını geçerli `SyncLockT` nesnesi bir kaynağa sahiptir; diğer bir deyişle, `SyncLockT` nesnedir *kilitli*.
+Geçerli `SyncLockT` nesnenin bir kaynağa sahip olup olmadığını gösterir; diğer bir `SyncLockT` şey, nesne *kilitlenir.*
 
-## <a name="sync"></a>SyncLockT::sync_
+## <a name="synclocktsync_"></a><a name="sync"></a>SyncLockT::sync_
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 typename SyncTraits::Type sync_;
@@ -124,11 +124,11 @@ typename SyncTraits::Type sync_;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel alınan kaynak tarafından temsil edilen tutar `SyncLockT` sınıfı.
+`SyncLockT` Sınıfın temsil ettiği temel kaynağı tutar.
 
-## <a name="synclockt"></a>SyncLockT::SyncLockT
+## <a name="synclocktsynclockt"></a><a name="synclockt"></a>Synclockt::synclockt
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 SyncLockT(
@@ -143,20 +143,20 @@ explicit SyncLockT(
 ### <a name="parameters"></a>Parametreler
 
 *Diğer*<br/>
-Diğer bir rvalue başvurusuna `SyncLockT` nesne.
+Başka bir `SyncLockT` nesneye rvalue-reference.
 
 *Eşitleme*<br/>
-Başka bir başvuru `SyncLockWithStatusT` nesne.
+Başka bir `SyncLockWithStatusT` nesneye başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir örneğini başlatır `SyncLockT` sınıfı.
+`SyncLockT` sınıfının yeni bir örneğini başlatır.
 
-İlk Oluşturucu geçerli başlatır `SyncLockT` başka bir nesne `SyncLockT` parametresi tarafından belirtilen nesne *diğer*ve diğeri geçersiz kılar `SyncLockT` nesne. İkinci oluşturucu `protected`ve geçerli başlatır `SyncLockT` nesnesi için geçersiz bir durumda.
+İlk oluşturucu, *diğer*parametre ile `SyncLockT` belirtilen başka bir nesneden geçerli `SyncLockT` nesneyi `SyncLockT` başharfe ait hale gelirse ve diğer nesneyi geçersiz kılarak geçersiz kılınır. İkinci oluşturucu `protected`ve geçersiz bir duruma `SyncLockT` geçerli nesneyi başharf.
 
-## <a name="unlock"></a>SyncLockT::Unlock
+## <a name="synclocktunlock"></a><a name="unlock"></a>SyncLockT::Kilidini Aç
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 void Unlock();
@@ -164,4 +164,4 @@ void Unlock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Serbest geçerli tarafından tutulan kaynak denetimi `SyncLockT` varsa, nesne.
+Varsa, geçerli `SyncLockT` nesne tarafından tutulan kaynağın denetimini serbest bırakır.

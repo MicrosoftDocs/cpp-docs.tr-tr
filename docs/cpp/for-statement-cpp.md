@@ -1,42 +1,43 @@
 ---
 title: for Deyimi (C++)
-ms.date: 11/04/2016
+description: Microsoft Visual Studio C++'daki deyim için Standart C++'a başvuru.
+f1_keywords:
+- for_cpp
+ms.date: 04/14/2020
 helpviewer_keywords:
 - for keyword [C++]
 ms.assetid: 6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a
-ms.openlocfilehash: e3dfdb45bdf8a508eca9d29e90b3f7c05e7b147d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 92f7ae4b1f2fbaaf710cd5a8739b78cb98a0accb
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179920"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375390"
 ---
 # <a name="for-statement-c"></a>for Deyimi (C++)
 
-Koşul yanlış olana kadar sürekli olarak bir deyimi yürütür. Aralık tabanlı for ifadesiyle ilgili bilgi için bkz. [Range-based for deyimin (C++)](../cpp/range-based-for-statement-cpp.md).
+Koşul yanlış olana kadar sürekli olarak bir deyimi yürütür. İfade için aralık tabanlı bilgi [için, Deyim için Aralık tabanlı (C++)](../cpp/range-based-for-statement-cpp.md)bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-for ( init-expression ; cond-expression ; loop-expression )
-    statement;
-```
+> **`for (`***init-expression* **`;`** *cond-expression* **`;`** *döngü-ifade***`)`**\
+> &nbsp;&nbsp;&nbsp;&nbsp;_Deyim_**`;`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirli sayıda yürütülmesi gereken döngüler oluşturmak için **for** ifadesini kullanın.
+Belirli sayıda kez yürütülmesi gereken döngüler oluşturmak için **for** deyimini kullanın.
 
-**For** deyimleri, aşağıdaki tabloda gösterildiği gibi üç isteğe bağlı bölümden oluşur.
+**For** deyimi, aşağıdaki tabloda gösterildiği gibi üç isteğe bağlı bölümden oluşur.
 
 ### <a name="for-loop-elements"></a>Döngü Öğeleri için
 
 |Söz Dizimi Adı|Yürütüldüğünde|Açıklama|
 |-----------------|-------------------|-----------------|
-|`init-expression`|**For** deyimindeki diğer öğeden önce `init-expression` yalnızca bir kez yürütülür. Denetim daha sonra `cond-expression`geçirir.|Döngü dizinlerini başlatmak için sık kullanılır. Deyimler ya da bildirimler içerebilir.|
-|`cond-expression`|Her bir `statement`yinelemesi yürütmeden önce, ilk yineleme dahil. `statement`, yalnızca `cond-expression` true (sıfır dışında) olarak değerlendirilirse yürütülür.|Tamsayı türüne benzersiz bir dönüştürmesi olan bir integral türünü ya da sınıf türünü değerlendiren deyimdir. Genellikle döngü sonlandırma ölçütünü sınamak için kullanılır.|
-|`loop-expression`|Her `statement`yinelemesi sonunda. `loop-expression` yürütüldükten sonra, `cond-expression` değerlendirilir.|Genellikle döngü dizinlerini artırmak için kullanılır.|
+|`init-expression`|**For** deyiminin başka bir `init-expression` öğesinden önce, yalnızca bir kez yürütülür. Denetim sonra `cond-expression`geçer.|Döngü dizinlerini başlatmak için sık kullanılır. Deyimler ya da bildirimler içerebilir.|
+|`cond-expression`|Her yineleme nin yürütülmesinden `statement`önce, ilk yineleme de dahil olmak üzere. `statement`yalnızca doğru `cond-expression` (sıfır olmayan) değerlendirilirse yürütülür.|Tamsayı türüne benzersiz bir dönüştürmesi olan bir integral türünü ya da sınıf türünü değerlendiren deyimdir. Genellikle döngü sonlandırma ölçütünü sınamak için kullanılır.|
+|`loop-expression`|Her yinelemenin sonunda `statement`. `loop-expression` Yürütüldükten `cond-expression` sonra değerlendirilir.|Genellikle döngü dizinlerini artırmak için kullanılır.|
 
-Aşağıdaki örneklerde **for** ifadesini kullanmanın farklı yolları gösterilmektedir.
+Aşağıdaki örnekler, ifade için kullanmak **için** farklı yollar gösterir.
 
 ```cpp
 #include <iostream>
@@ -63,7 +64,7 @@ int main() {
     // Output: 012
 ```
 
-`init-expression` ve `loop-expression`, virgülle ayrılmış birden çok deyim içerebilir. Örneğin:
+`init-expression`ve `loop-expression` virgülle ayrılmış birden çok deyim içerebilir. Örneğin:
 
 ```cpp
 #include <iostream>
@@ -81,7 +82,7 @@ int main(){
     i + j = 19
 ```
 
-`loop-expression` arttırılabilmeli veya azaltılır ya da başka yollarla değiştirilebilir.
+`loop-expression`artımlı veya kararnameye eklenebilir veya başka şekillerde değiştirilebilir.
 
 ```cpp
 #include <iostream>
@@ -98,11 +99,11 @@ for (int i = 10; i > 0; i--) {
     // Output: 10 12 14 16 18
 ```
 
-`statement` içinde bir [Break](../cpp/break-statement-cpp.md), [Return](../cpp/return-statement-cpp.md)veya [goto](../cpp/goto-statement-cpp.md) ( **for** döngüsünün dışında) yürütüldüğünde bir **for** döngüsü sonlandırılır. **For** döngüsünde [Continue](../cpp/continue-statement-cpp.md) deyimleri yalnızca geçerli yinelemeyi sonlandırır.
+A **için** döngü, bir [kesme,](../cpp/break-statement-cpp.md) [döndürme](../cpp/return-statement-cpp.md)veya [goto](../cpp/goto-statement-cpp.md) **(for** döngüsü dışında `statement` etiketli bir deyim) yürütüldüğünde sona erer. **For** döngüsündeki [devam](../cpp/continue-statement-cpp.md) deyimi yalnızca geçerli yinelemeyi sonlandırır.
 
-`cond-expression` atlanırsa, true olarak değerlendirilir ve **for** döngüsü, `statement`içinde **Break**, **Return**veya **goto** olmadan sonlandırılmaz.
+Atlanırsa, `cond-expression` `true`bu kabul edilir , ve **for** döngüsü bir **mola**olmadan sona ermez , **return**, veya içinde `statement` **goto** .
 
-**For** ifadesinin üç alanı genellikle başlatma için, sonlandırma için test etmek ve arttırılsa da bu kullanımları sınırlandırılmazlar. Örneğin, aşağıdaki kod numaraları 0 ile 4 arasında yazdırır. Bu durumda, `statement` null deyimidir:
+**For** deyiminin üç alanı normalde başlatma, sonlandırma için sınama ve artış için kullanılır, ancak bunlar bu kullanımlarla sınırlı değildir. Örneğin, aşağıdaki kod numaraları 0 ile 4 arasında yazdırır. Bu durumda, `statement` null deyimidir:
 
 ```cpp
 #include <iostream>
@@ -119,7 +120,7 @@ int main()
 
 ## <a name="for-loops-and-the-c-standard"></a>Döngüler ve C++ Standartı için
 
-Standart C++ , **for döngüsünde bildirildiği** bir değişkenin **for** döngüsü bittikten sonra kapsam dışına gidemeyeceğini söyler. Örneğin:
+C++ standardı, **for** döngüsünde bildirilen bir değişkenin **for** döngüsü sona erdikten sonra kapsam dışına gideceğini söyler. Örneğin:
 
 ```cpp
 for (int i = 0 ; i < 5 ; i++) {
@@ -128,11 +129,11 @@ for (int i = 0 ; i < 5 ; i++) {
 // i is now out of scope under /Za or /Zc:forScope
 ```
 
-Varsayılan olarak, [/ze](../build/reference/za-ze-disable-language-extensions.md)altında **, for döngüsünün** kapsayan kapsamı bitene kadar **for** döngüsünde belirtilen bir değişken kapsamda kalır.
+Varsayılan olarak, [/Ze](../build/reference/za-ze-disable-language-extensions.md)altında , **for** döngüsünde bildirilen bir **değişken, for** döngüsünün çevreleyen kapsamı sona erene kadar kapsamda kalır.
 
-[/Zc: forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) , `/Za`belirtmeye gerek kalmadan döngüler için belirtilen değişkenlerin standart davranışlarını sağlar.
+[/Zc:forScope,](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) döngüler için bildirilen değişkenlerin standart davranışını `/Za`belirtmeye gerek kalmadan sağlar.
 
-Ayrıca, **for** döngüsünün kapsam farklılıklarını, `/Ze` altındaki değişkenleri aşağıdaki gibi yeniden bildirmek üzere kullanmak da mümkündür:
+Değişkenleri aşağıdaki `/Ze` gibi yeniden bildirmek için **for** döngüsünün kapsam farklarını da kullanmak mümkündür:
 
 ```cpp
 // for_statement5.cpp
@@ -144,12 +145,12 @@ int main(){
 }
 ```
 
-Bu, **for döngüsünde belirtilen** bir değişkenin standart davranışını daha yakından taklit eder. bu **, for döngüsünde** belirtilen değişkenlerin döngü yapıldıktan sonra kapsam dışına gitmesini gerektirir. Bir değişken bir **for** döngüsünde bildirildiği zaman, derleyici, aynı ada sahip bir yerel değişken zaten olsa bile, kendisini **for** döngüsünün kapsayan kapsamındaki yerel bir değişkene yükseltir.
+Bu davranış, **for** döngüsünde bildirilen bir değişkenin standart davranışını daha yakından taklit eder ve döngü bittikten sonra for **döngüsünde** bildirilen değişkenlerin kapsam dışına gitmesini gerektirir. Bir değişken **for** döngüsünde bildirildiğinde, derleyici dahili olarak **döngünün** çevreleyen kapsamında yerel bir değişkene terfi ettirir. Zaten aynı ada sahip yerel bir değişken olsa bile tanıtılırsa.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Yineleme Deyimleri](../cpp/iteration-statements-cpp.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[while Deyimi (C++)](../cpp/while-statement-cpp.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[while Statement (C++)](../cpp/while-statement-cpp.md)<br/>
 [do-while Deyimi (C++)](../cpp/do-while-statement-cpp.md)<br/>
 [Range-based for Deyimi (C++)](../cpp/range-based-for-statement-cpp.md)

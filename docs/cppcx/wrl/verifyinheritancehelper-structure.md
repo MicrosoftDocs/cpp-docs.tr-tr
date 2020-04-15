@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::VerifyInheritanceHelper structure
 - Microsoft::WRL::Details::VerifyInheritanceHelper::Verify method
 ms.assetid: 8a48a702-0f71-4807-935b-8311f0a7a8b6
-ms.openlocfilehash: c37a0eb74fd65b3d349d5b8b7c792fbaf7d1ac9a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3650cfb70ffc12572b3965534eff4e1f2ecb2cf5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398088"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374227"
 ---
 # <a name="verifyinheritancehelper-structure"></a>VerifyInheritanceHelper Yapısı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,23 +32,23 @@ struct VerifyInheritanceHelper<I, Nil>;
 
 ### <a name="parameters"></a>Parametreler
 
-*I*<br/>
+*Ⅰ*<br/>
 Bir tür.
 
-*temel*<br/>
+*Temel*<br/>
 Başka bir tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Başka bir arabirimden türetilmiş bir arabirim olup olmadığını sınar.
+Bir arabirimin başka bir arabirimden türetilip türetilenin test edilir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                                       | Açıklama
+Adı                                       | Açıklama
 ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------
-[Verifyınheritancehelper::Verify](#verify) | Geçerli şablon parametreler ile belirtilen iki arabirim test eder ve bir arabirimin diğer türetilip türetilmediğini belirler.
+[VerifyInheritanceHelper::Doğrula](#verify) | Geçerli şablon parametreleri tarafından belirtilen iki arabirimi sınar ve bir arabirimin diğerinden türetilip türetilip türetilemeyeceğini belirler.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -56,13 +56,13 @@ Ad                                       | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üstbilgi:** implements.h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="verify"></a>Verifyınheritancehelper::Verify
+## <a name="verifyinheritancehelperverify"></a><a name="verify"></a>VerifyInheritanceHelper::Doğrula
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 static void Verify();
@@ -70,6 +70,6 @@ static void Verify();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli şablon parametreler ile belirtilen iki arabirim test eder ve bir arabirimin diğer türetilip türetilmediğini belirler.
+Geçerli şablon parametreleri tarafından belirtilen iki arabirimi sınar ve bir arabirimin diğerinden türetilip türetilip türetilemeyeceğini belirler.
 
-Bir arabirim diğerinden türetilmiş değil, bir hata yayılır.
+Bir arabirim diğerinden türetilmiş değilse bir hata yayımlanır.

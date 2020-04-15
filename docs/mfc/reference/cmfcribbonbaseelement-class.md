@@ -1,5 +1,5 @@
 ---
-title: CMFCRibbonBaseElement sınıfı
+title: CMFCRibbonBaseElement Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonBaseElement
@@ -232,16 +232,16 @@ helpviewer_keywords:
 - CMFCRibbonBaseElement [MFC], OnProcessKey
 - CMFCRibbonBaseElement [MFC], OnSetFocus
 ms.assetid: 419ea91b-5062-44cc-b0a3-f87d29566f62
-ms.openlocfilehash: 20b5e6b38f11a257472713c18ee64559cfb7b9a3
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f28ba975b060de149edaa5e3b93eac61d4cd6703
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505012"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81375306"
 ---
-# <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement sınıfı
+# <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement Sınıfı
 
-Sınıfı, şerit çubuğuna ekleyebileceğiniz tüm öğeler için temel sınıftır. [](../../mfc/reference/cmfcribbonbar-class.md) `CMFCRibbonBaseElement` Şerit öğeleri örnekleri Şerit düğmeleri, şerit onay kutuları ve Şerit açılan kutularıdır.
+Sınıf, `CMFCRibbonBaseElement` [şerit çubuğuna](../../mfc/reference/cmfcribbonbar-class.md)ekleyebileceğiniz tüm öğelerin taban sınıfıdır. Şerit öğelerine örnek olarak şerit düğmeleri, şerit onay kutuları ve şerit açılan kutular verilebilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -253,165 +253,165 @@ class CMFCRibbonBaseElement : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMFCRibbonBaseElement`|Bir `CMFCRibbonBaseElement` nesnesi oluşturur.|
+|`CMFCRibbonBaseElement`|Bir `CMFCRibbonBaseElement` nesne inşa eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonBaseElement:: AddToKeyList](#addtokeylist)|Şerit öğesi için bir KeyTips dizisine bir KeyTip ekler.|
-|[CMFCRibbonBaseElement:: AddToListBox](#addtolistbox)|Belirtilen şerit komutları liste kutusuna bir şerit öğesi ekler.|
-|[CMFCRibbonBaseElement:: CanBeAddedToQuickAccessToolBar](#canbeaddedtoquickaccesstoolbar)|Şerit öğesinin hızlı erişim araç çubuğuna eklenip eklenemeyeceğini belirtir.|
-|[CMFCRibbonBaseElement:: Canbesıkıştırılıyor](#canbecompacted)|Şerit öğesinin boyutunun sıkıştırılamayacağını gösterir.|
-|[CMFCRibbonBaseElement:: Canbeesnetilen](#canbestretched)|Şerit öğesinin yüksekliğinin bir şerit satırının yüksekliğine dikey olarak artırıp artamayacağını gösterir.|
-|[CMFCRibbonBaseElement:: canbe, Edyatay](#canbestretchedhorizontally)|Şerit öğesinin genişliğinin değiştirip değiştiremeyeceğini gösterir.|
-|[CMFCRibbonBaseElement:: Cleanupboyutlar](#cleanupsizes)|Şerit öğesi için boyut ayarlarını temizler.|
-|[CMFCRibbonBaseElement:: ClosePopupMenu](#closepopupmenu)|Şerit öğesi için açılan menüyü kapatır.|
-|[CMFCRibbonBaseElement:: CopyFrom](#copyfrom)|Belirtilen `CMFCRibbonBaseElement` durumunu geçerli nesneye kopyalar.|
-|[CMFCRibbonBaseElement::D estroyCtrl](#destroyctrl)|Şerit öğesini yok eder.|
-|[CMFCRibbonBaseElement::D Kwimage](#drawimage)|Şerit öğesi için görüntüyü çizer.|
-|[CMFCRibbonBaseElement:: Find](#find)|Geçerli nesneye işaret ediyorsa, belirtilen işaretçiyi Ribbon öğesine döndürür.|
-|[CMFCRibbonBaseElement:: FindByData](#findbydata)|Belirtilen verileri içeriyorsa Ribbon öğesine bir işaretçi alır.|
-|[CMFCRibbonBaseElement:: Findbyıd](#findbyid)|Bu öğe belirtilen komut KIMLIĞIYLE tanımlanmışsa Ribbon öğesine bir işaretçi alır.|
-|[CMFCRibbonBaseElement:: FindByOriginal](#findbyoriginal)|Özgün şerit öğesi belirtilen şerit öğesiyle eşleşiyorsa, Ribbon öğesine bir işaretçi alır.|
-|[CMFCRibbonBaseElement:: GetCompactSize](#getcompactsize)|Şerit öğesinin sıkıştırılmış boyutunu döndürür.|
-|[CMFCRibbonBaseElement:: GetData](#getdata)|Şerit öğesiyle ilişkili kullanıcı tanımlı verileri alır.|
-|[CMFCRibbonBaseElement:: GetDescription](#getdescription)|Şerit öğesinin açıklamasını döndürür.|
-|[CMFCRibbonBaseElement:: Getdroppedaşağı](#getdroppeddown)|Açılır menü kapalıysa, Ribbon öğesine bir işaretçi alır.|
-|[CMFCRibbonBaseElement:: GetElements](#getelements)|Geçerli şerit öğesini belirtilen diziye ekler.|
-|[CMFCRibbonBaseElement:: GetElementsById](#getelementsbyid)|Geçerli şerit öğesi belirtilen komut KIMLIĞINI içeriyorsa, belirtilen diziye geçerli şerit öğesini ekler.|
-|[CMFCRibbonBaseElement:: Gethighışıklı](#gethighlighted)|Vurgulandığında şerit öğesine bir işaretçi alır.|
-|[CMFCRibbonBaseElement:: GetId](#getid)|Şerit öğesinin komut KIMLIĞINI döndürür.|
-|[CMFCRibbonBaseElement:: Getıgesize](#getimagesize)|Şerit öğesinin resim boyutunu döndürür.|
-|[CMFCRibbonBaseElement:: GetIntermediateSize](#getintermediatesize)|Şerit öğesinin ara durumundaki boyutunu döndürür.|
-|[CMFCRibbonBaseElement:: GetKeys](#getkeys)|Şerit öğesiyle ilişkili tuş ipucunu döndürür.|
-|[CMFCRibbonBaseElement:: Getkeytıprect](#getkeytiprect)|Şerit öğesi için keytip sınır dikdörtgenini alır.|
-|[CMFCRibbonBaseElement:: GetKeyTipSize](#getkeytipsize)|KeyTip metninin boyutunu alır.|
-|[CMFCRibbonBaseElement:: GetLocationInGroup](#getlocationingroup)|Şerit öğesinin bir şerit grubundaki görüntüleme konumunu gösterir.|
-|[CMFCRibbonBaseElement:: GetMenuKeys](#getmenukeys)|Bir düğmeyle ilişkili KeyTips 'ı döndürür.|
-|[CMFCRibbonBaseElement:: Getnotifyıd](#getnotifyid)|Şerit öğesi için bildirim komutu KIMLIĞINI alır.|
-|[CMFCRibbonBaseElement:: Getoriguinal](#getoriginal)|Özgün şerit öğesini alır.|
-|[CMFCRibbonBaseElement:: GetParentCategory](#getparentcategory)|Şerit öğesi için şerit kategorisini alır.|
-|[CMFCRibbonBaseElement:: GetParentPanel](#getparentpanel)|Şerit öğesini içeren şerit panelini alır.|
-|[CMFCRibbonBaseElement:: GetParentRibbonBar](#getparentribbonbar)|Şerit öğesi için üst şerit çubuğunu alır.|
-|[CMFCRibbonBaseElement:: GetParentWnd](#getparentwnd)|Şerit öğesi için üst pencereyi alır.|
-|[CMFCRibbonBaseElement:: Getbasılan](#getpressed)|Kullanıcı şu anda ona basarsa şerit öğesine bir işaretçi alır.|
-|[CMFCRibbonBaseElement:: Getquickaccesstoolbarıd](#getquickaccesstoolbarid)|Hızlı erişim araç çubuğunda yer aldığında şerit öğesinin komut KIMLIĞINI alır.|
-|[CMFCRibbonBaseElement:: GetRect](#getrect)|Şerit öğesinin sınırlayıcı dikdörtgenini döndürür.|
-|[CMFCRibbonBaseElement:: GetRegularSize](#getregularsize)|Şerit öğesinin normal boyutunu döndürür.|
-|[CMFCRibbonBaseElement:: GetSize](#getsize)|Şerit öğesinin geçerli boyutunu döndürür.|
-|[CMFCRibbonBaseElement:: GetText](#gettext)|Şerit öğesiyle ilişkili metni döndürür.|
-|[CMFCRibbonBaseElement:: GetToolTipText](#gettooltiptext)|Şerit öğesinin araç ipucu metnini döndürür.|
-|[CMFCRibbonBaseElement:: GetTopLevelRibbonBar](#gettoplevelribbonbar)|Şerit öğesi için üst düzey şerit çubuğunu alır.|
-|[CMFCRibbonBaseElement:: HasCompactMode](#hascompactmode)|Şerit öğesinin Compact moduna sahip olup olmadığını belirtir.|
-|[CMFCRibbonBaseElement:: HasFocus](#hasfocus)|Üst öğenin klavye odağına sahip olup olmadığını gösterir.|
-|[CMFCRibbonBaseElement:: HasIntermediateMode](#hasintermediatemode)|Şerit öğesinin ara moduna sahip olup olmadığını belirtir.|
-|[CMFCRibbonBaseElement:: HasLargeMode](#haslargemode)|Şerit öğesinin büyük bir moda sahip olup olmadığını belirtir.|
-|[CMFCRibbonBaseElement:: HasMenu](#hasmenu)|Şerit öğesinde bir menü olup olmadığını gösterir.|
-|[CMFCRibbonBaseElement:: HitTest](#hittest)|Belirtilen nokta bulunuyorsa şerit öğesine bir işaretçi alır.|
-|[CMFCRibbonBaseElement:: ıshizalaması Bycolumn](#isalignbycolumn)|Şerit öğesinin diğer şerit öğeleriyle dikey olarak hizalanıp hizalanmayacağını gösterir.|
-|[CMFCRibbonBaseElement:: IsAlwaysLargeImage](#isalwayslargeimage)|Şerit öğesi resim boyutunun her zaman büyük olup olmadığını gösterir.|
-|[CMFCRibbonBaseElement:: ısoto Repeatmode](#isautorepeatmode)|Şerit öğesinin otomatik yineleme modunda olup olmadığını gösterir.|
-|[CMFCRibbonBaseElement:: IsChecked](#ischecked)|Şerit öğesinin işaretli olup olmadığını belirtir.|
-|[CMFCRibbonBaseElement:: IsCompactMode](#iscompactmode)|Şerit öğesinin Kompakt modda olup olmadığını belirtir.|
-|[CMFCRibbonBaseElement:: ısdefaultmenulook](#isdefaultmenulook)||
-|[CMFCRibbonBaseElement:: IsDisabled](#isdisabled)|Şerit öğesinin devre dışı bırakılıp bırakılmadığını belirtir.|
-|[CMFCRibbonBaseElement:: ısdroppedaşağı](#isdroppeddown)|Şerit öğesinin bir açılan menü görüntüleyip kullanmadığını belirler.|
-|[CMFCRibbonBaseElement:: ısodaklanmış](#isfocused)|Şerit öğesinin odağa sahip olup olmadığını belirtir.|
-|[CMFCRibbonBaseElement:: ısgallerıcon](#isgalleryicon)|Şerit öğesinin şerit galerisinde içerilip içerilmeyeceğini gösterir.|
-|[CMFCRibbonBaseElement:: ısvurgulu](#ishighlighted)|Şerit öğesinin vurgulanıp vurgulanmayacağını belirtir.|
-|[CMFCRibbonBaseElement:: IsIntermediateMode](#isintermediatemode)|Şerit öğesi için geçerli görüntünün ara boyut olup olmadığını gösterir.|
-|[CMFCRibbonBaseElement:: ıslargemode](#islargemode)|Şerit öğesi için geçerli görüntünün büyük ölçekli olup olmadığını gösterir.|
-|[CMFCRibbonBaseElement:: ısmenumode](#ismenumode)|Şerit öğesinin bir menüde içerilip içerilmeyeceğini gösterir.|
-|[CMFCRibbonBaseElement:: ısbasılmış](#ispressed)|Kullanıcının şerit öğesine tıklamış olup olmadığını gösterir.|
-|[CMFCRibbonBaseElement:: ısqatmode](#isqatmode)|Şerit öğesinin hızlı erişim araç çubuğunda içerilip içerilmeyeceğini gösterir.|
-|[CMFCRibbonBaseElement:: IsSeparator](#isseparator)|Şerit öğesinin bir görüntüleme ayırıcısı olup olmadığını gösterir.|
-|[CMFCRibbonBaseElement:: ısshowgroupborder](#isshowgroupborder)|Şerit öğesinin ortak bir kenarlık görüntüleyen bir grupta içerilip içerilmeyeceğini gösterir.|
-|[CMFCRibbonBaseElement:: ısshowtooltiponbottom](#isshowtooltiponbottom)|Araç ipucunun şerit öğesinin altında görüntülenip görüntülenmeyeceğini gösterir.|
-|[CMFCRibbonBaseElement:: IsTabStop](#istabstop)|Şerit öğesinin klavyeyle seçilebilir olup olmadığını gösterir.|
-|[CMFCRibbonBaseElement:: IsTextAlwaysOnRight](#istextalwaysonright)|Şerit öğesi için metnin sağ tarafta görüntülenip görüntülenmeyeceğini gösterir.|
-|[CMFCRibbonBaseElement:: IsVisible](#isvisible)|Şerit öğesinin Şu anda gösterilip gösterilmediğini gösterir.|
-|[CMFCRibbonBaseElement:: ıswholerowheight](#iswholerowheight)|Şerit öğesinin görüntüleme genişliği, kendisini içeren şerit panelinin görüntüleme yüksekliğiyle aynı olup olmadığını gösterir.|
-|[CMFCRibbonBaseElement:: NotifyCommand](#notifycommand)|Şerit öğesinin üst penceresine bir komut bildirimi gönderir.|
-|[CMFCRibbonBaseElement:: Notifyhighlightlistıtem](#notifyhighlightlistitem)|Bir Kullanıcı listede bulunan bir şerit öğesi vurgulandığı zaman şerit çubuğunun üst penceresine bildirir.|
-|[CMFCRibbonBaseElement:: OnAddToQAToolbar](#onaddtoqatoolbar)|Belirtilen hızlı erişim araç çubuğuna şerit öğesi ekler.|
-|[CMFCRibbonBaseElement:: OnAfterChangeRect](#onafterchangerect)|Şerit öğesi için araç ipucunu güncelleştirir.|
-|[CMFCRibbonBaseElement:: OnoTo Repeat](#onautorepeat)|Sürekli Kullanıcı girişine yanıt olarak şerit öğesini güncelleştirir.|
-|[CMFCRibbonBaseElement:: OnCalcTextSize](#oncalctextsize)|Şerit öğesi için metnin boyutunu hesaplar.|
-|[CMFCRibbonBaseElement:: OnChangeMenuHighlight](#onchangemenuhighlight)|Bir menüde bulunan şerit öğesi için vurgu değiştiğinde Framework tarafından çağırılır.|
-|[CMFCRibbonBaseElement:: OnDraw](#ondraw)|Şerit öğesi çizmek için Framework tarafından çağırılır.|
-|[CMFCRibbonBaseElement:: Ondrawkeytıp](#ondrawkeytip)|Şerit öğesi için keytip çizmek üzere Framework tarafından çağırılır.|
-|[CMFCRibbonBaseElement:: OnDrawMenuImage](#ondrawmenuimage)|Şerit öğesi için menü görüntüsü çizildiğinde Framework tarafından çağırılır.|
-|[CMFCRibbonBaseElement:: OnDrawOnList](#ondrawonlist)|Bir Komutlar liste kutusunda şerit öğesi çizmek için Framework tarafından çağırılır.|
-|[CMFCRibbonBaseElement:: OnKey](#onkey)|Kullanıcı bir KeyTip tuşuna bastığında ve şerit öğesi odağa sahip olduğunda Framework tarafından çağırılır.|
-|[CMFCRibbonBaseElement:: OnMenuKey](#onmenukey)||
-|[CMFCRibbonBaseElement:: OnRTLChanged](#onrtlchanged)|Düzen yön değiştirdiğinde Framework tarafından çağırılır.|
-|[CMFCRibbonBaseElement:: OnShow](#onshow)|Şerit öğesini göstermek veya gizlemek için Framework tarafından çağırılır.|
-|[CMFCRibbonBaseElement:: OnShowPopupMenu](#onshowpopupmenu)|Şerit öğesi bir açılan menüyü görüntüleyecekse Framework tarafından çağırılır.|
-|[CMFCRibbonBaseElement::P ostMenuCommand](#postmenucommand)||
-|[CMFCRibbonBaseElement:: yeniden Çiz](#redraw)|Şerit öğesi için görünümü güncelleştirir.|
-|[CMFCRibbonBaseElement:: SetACCData](#setaccdata)|Şerit öğesi için erişilebilirlik verilerini ayarlar.|
-|[CMFCRibbonBaseElement:: SetCompactMode](#setcompactmode)|Şerit öğesi için görüntüleme boyutunu ayarlar.|
-|[CMFCRibbonBaseElement:: SetData](#setdata)|Bir veri öğesini Ribbon öğesiyle ilişkilendirir.|
-|[CMFCRibbonBaseElement:: SetDefaultMenuLook](#setdefaultmenulook)||
-|[CMFCRibbonBaseElement:: SetDescription](#setdescription)|Şerit öğesi için açıklama ayarlar.|
-|[CMFCRibbonBaseElement:: SetID](#setid)|Şerit öğesinin komut KIMLIĞINI ayarlar.|
-|[CMFCRibbonBaseElement:: Setınitialmode](#setinitialmode)|Şerit öğesi için ilk görüntüleme boyutunu ayarlar.|
-|[CMFCRibbonBaseElement:: SetKeys](#setkeys)|Şerit öğesi için bir KeyTip belirler.|
-|[CMFCRibbonBaseElement:: Setoriguinal](#setoriginal)|Şerit öğesi için özgün şerit öğesini ayarlar.|
-|[CMFCRibbonBaseElement:: SetParentCategory](#setparentcategory)|Şerit öğesi için üst kategoriyi ayarlar.|
-|[CMFCRibbonBaseElement:: SetParentMenu](#setparentmenu)|Şerit öğesi için üst menü kapsayıcısını ayarlar.|
-|[CMFCRibbonBaseElement:: SetParentRibbonBar](#setparentribbonbar)|Şerit öğesi için üst şerit çubuğunu ayarlar.|
-|[CMFCRibbonBaseElement:: SetRect](#setrect)|Şerit öğesi için görüntüleme dikdörtgeni olan boyutları ayarlar.|
-|[CMFCRibbonBaseElement:: SetText](#settext)|Şerit öğesi için metni ayarlar.|
-|[CMFCRibbonBaseElement:: SetTextAlwaysOnRight](#settextalwaysonright)|Sağ tarafta görüntülenecek Şerit öğesi için metni ayarlar.|
-|[CMFCRibbonBaseElement:: SetToolTipText](#settooltiptext)|Şerit öğesi için araç ipucu metnini ayarlar.|
-|[CMFCRibbonBaseElement:: SetVisible](#setvisible)|Şerit öğesinin görünürlük durumunu ayarlar.|
-|[CMFCRibbonBaseElement::, yatay](#stretchhorizontally)|Şerit öğesinin genişliğini uzatır.|
-|[CMFCRibbonBaseElement:: ısetowholerow](#stretchtowholerow)|Şerit öğesinin görüntüleme yüksekliğini belirtilen satır yüksekliğine dönüştürür.|
-|[CMFCRibbonBaseElement:: Updatetooltipınfo](#updatetooltipinfo)|Şerit öğesi için komut kaynağını kullanarak araç ipucu metnini güncelleştirir.|
+|[CMFCRibbonBaseElement::addtokeylist](#addtokeylist)|Bir dizi anahtar ipucuna şerit öğesi için bir anahtar ucu ekler.|
+|[CMFCRibbonBaseElement::addtolistbox](#addtolistbox)|Belirtilen şerit komutları listesi kutusuna bir şerit öğesi ekler.|
+|[CMFCRibbonBaseElement::CanbeaddedtoQuickAccessToolbar](#canbeaddedtoquickaccesstoolbar)|Şerit öğesinin hızlı erişim araç çubuğuna eklenip eklenmeyeceğini gösterir.|
+|[CMFCRibbonBaseElement::CanBeCompacted](#canbecompacted)|Şerit öğesinin boyutunun kompakt olup olmadığını gösterir.|
+|[CMFCRibbonBaseElement::Canbestretched](#canbestretched)|Şerit öğesinin yüksekliğinin dikey olarak şerit satırının yüksekliğine yükselip artamayacağını gösterir.|
+|[CMFCRibbonBaseElement::CanBeStretchedYatay](#canbestretchedhorizontally)|Şerit öğesinin genişliğinin değişip değişemeyeceğini gösterir.|
+|[CMFCRibbonBaseElement::Temizleme Boyutlar](#cleanupsizes)|Şerit öğesiiçin boyut ayarlarını temizler.|
+|[CMFCRibbonBaseElement::ClosePopupMenu](#closepopupmenu)|Şerit öğesi için açılır menüyü kapatır.|
+|[CMFCRibbonBaseElement::CopyFrom](#copyfrom)|Geçerli nesneye belirtilen `CMFCRibbonBaseElement` durumu kopyalar.|
+|[CMFCRibbonBaseElement::DestroyCtrl](#destroyctrl)|Şerit öğesini yok eder.|
+|[CMFCRibbonBaseElement::DrawImage](#drawimage)|Şerit öğesi için görüntüyü çizer.|
+|[CMFCRibbonBaseElement::Bul](#find)|Geçerli nesneyi işaret ederse, belirtilen işaretçiyi şerit öğesine döndürür.|
+|[CMFCRibbonBaseElement::FindbyData](#findbydata)|Belirtilen verileri içeriyorsa şerit öğesiiçin bir işaretçi alır.|
+|[CMFCRibbonBaseElement::FindByID](#findbyid)|Bu öğe belirtilen komut kimliği tarafından tanımlanırsa şerit öğesi için bir işaretçi alır.|
+|[CMFCRibbonBaseElement::FindbyOriginal](#findbyoriginal)|Özgün şerit öğesi belirtilen şerit öğesiyle eşleşiyorsa, şerit öğesi için bir işaretçi alır.|
+|[CMFCRibbonBaseElement::GetCompactsize](#getcompactsize)|Şerit elemanının kompakt boyutunu döndürür.|
+|[CMFCRibbonBaseElement::Veri Alma](#getdata)|Şerit öğesi ile ilişkili kullanıcı tanımlı verileri alır.|
+|[CMFCRibbonBaseElement::GetDescription](#getdescription)|Şerit öğesinin açıklamasını döndürür.|
+|[CMFCRibbonBaseElement::GetDroppedDown](#getdroppeddown)|Açılır menüsü aşağı bırakılırsa şerit öğesi için bir işaretçi alır.|
+|[CMFCRibbonBaseElement::GetElements](#getelements)|Geçerli şerit öğesini belirtilen diziye ekler.|
+|[CMFCRibbonBaseElement::GetElementsByID](#getelementsbyid)|Geçerli şerit öğesi belirtilen komut kimliği içeriyorsa, geçerli şerit öğesini belirtilen diziye geçerli şerit öğesi ekler.|
+|[CMFCRibbonBaseElement::GetHighlighted](#gethighlighted)|Vurgulanırsa şerit öğesiiçin bir işaretçi alır.|
+|[CMFCRibbonBaseElement::GetID](#getid)|Şerit öğesinin komut kimliğini döndürür.|
+|[CMFCRibbonBaseElement::GetImageSize](#getimagesize)|Şerit öğesinin görüntü boyutunu döndürür.|
+|[CMFCRibbonBaseElement::GetIntermediateSize](#getintermediatesize)|Ara durumunda şerit öğesinin boyutunu döndürür.|
+|[CMFCRibbonBaseElement::GetKeys](#getkeys)|Şerit öğesi ile ilişkili anahtar ucunu döndürür.|
+|[CMFCRibbonBaseElement::GetKeyTipRect](#getkeytiprect)|Şerit öğesi için anahtar ucu sınır dikdörtgenini alır.|
+|[CMFCRibbonBaseElement::GetKeyTipSize](#getkeytipsize)|Anahtar ucu metninin boyutunu alır.|
+|[CMFCRibbonBaseElement::GetLocationInGroup](#getlocationingroup)|Şerit grubundaki şerit öğesinin görüntü konumunu gösterir.|
+|[CMFCRibbonBaseElement::GetMenuKeys](#getmenukeys)|Düğmeyle ilişkili tuş uçlarını döndürür.|
+|[CMFCRibbonBaseElement::GetNotifyID](#getnotifyid)|Şerit öğesi için bildirim komut uytunu alır.|
+|[CMFCRibbonBaseElement::GetOriginal](#getoriginal)|Özgün şerit öğesini alır.|
+|[CMFCRibbonBaseElement::GetParentCategory](#getparentcategory)|Şerit öğesi için şerit kategorisini alır.|
+|[CMFCRibbonBaseElement::GetParentPanel](#getparentpanel)|Şerit öğesini içeren şerit panelini alır.|
+|[CMFCRibbonBaseElement::GetParentRibbonBar](#getparentribbonbar)|Şerit öğesi için üst şerit çubuğunu alır.|
+|[CMFCRibbonBaseElement::GetParentWnd](#getparentwnd)|Şerit öğesi için üst pencereyi alır.|
+|[CMFCRibbonBaseElement::Getpressed](#getpressed)|Kullanıcı şu anda basıyorsa şerit öğesi için bir işaretçi alır.|
+|[CMFCRibbonBaseElement::GetQuickAccessToolBarID](#getquickaccesstoolbarid)|Hızlı erişim araç çubuğunda bulunduğunda şerit öğesinin komut kimliğini alır.|
+|[CMFCRibbonBaseElement::GetRect](#getrect)|Şerit elemanının sınırlayıcı dikdörtgenini döndürür.|
+|[CMFCRibbonBaseElement::GetRegularSize](#getregularsize)|Şerit öğesinin normal boyutunu döndürür.|
+|[CMFCRibbonBaseElement::GetSize](#getsize)|Şerit öğesinin geçerli boyutunu döndürür.|
+|[CMFCRibbonBaseElement::GetText](#gettext)|Şerit öğesi ile ilişkili metni döndürür.|
+|[CMFCRibbonBaseElement::GetToolTipText](#gettooltiptext)|Şerit öğesinin araç ipucu metnini döndürür.|
+|[CMFCRibbonBaseElement::GetTopLevelRibbonBar](#gettoplevelribbonbar)|Şerit öğesi için üst düzey şerit çubuğunu alır.|
+|[CMFCRibbonBaseElement::HascompactMode](#hascompactmode)|Şerit elemanının kompakt bir modu olup olmadığını belirtir.|
+|[CMFCRibbonBaseElement::HasFocus](#hasfocus)|Üst öğenin klavye odağı olup olmadığını gösterir.|
+|[CMFCRibbonBaseElement::HasIntermediateMode](#hasintermediatemode)|Şerit elemanının ara modu olup olmadığını belirtir.|
+|[CMFCRibbonBaseElement::HaslargeMode](#haslargemode)|Şerit öğesinin büyük bir modu olup olmadığını belirtir.|
+|[CMFCRibbonBaseElement::Hasmenu](#hasmenu)|Şerit öğesinin bir menüsü olup olmadığını gösterir.|
+|[CMFCRibbonBaseElement::HitTest](#hittest)|Belirtilen nokta içinde bulunuyorsa, şerit öğesiiçin bir işaretçi alır.|
+|[CMFCRibbonBaseElement::Isalignbycolumn](#isalignbycolumn)|Şerit öğesinin diğer şerit öğeleriyle dikey olarak hizalanıp hizalanmadığını gösterir.|
+|[CMFCRibbonBaseElement::IsAlwayslargeImage](#isalwayslargeimage)|Şerit öğesi görüntü boyutunun her zaman büyük olup olmadığını gösterir.|
+|[CMFCRibbonBaseElement::IsAutoRepeatMode](#isautorepeatmode)|Şerit öğesinin otomatik yineleme modunda olup olmadığını gösterir.|
+|[CMFCRibbonBaseElement::Kontrol Edildi](#ischecked)|Şerit öğesinin denetlenip denetlenmediğini belirtir.|
+|[CMFCRibbonBaseElement::IscompactMode](#iscompactmode)|Şerit elemanının kompakt bir modda olup olmadığını belirtir.|
+|[CMFCRibbonBaseElement::IsdefaultMenuLook](#isdefaultmenulook)||
+|[CMFCRibbonBaseElement::Devre Dışı](#isdisabled)|Şerit öğesinin devre dışı kalıp kalmayacağını belirtir.|
+|[CMFCRibbonBaseElement::IsDroppedDown](#isdroppeddown)|Şerit öğesinin açılır menüyü gösterip görüntülemeyeceğini ve bırakılıp bırakılmadığını belirler.|
+|[CMFCRibbonBaseElement::Isfocused](#isfocused)|Şerit öğesinin odak noktası olup olmadığını belirtir.|
+|[CMFCRibbonBaseElement::IsGalleryicon](#isgalleryicon)|Şerit öğesinin şerit galerisinde bulunup bulunmadığını gösterir.|
+|[CMFCRibbonBaseElement::Vurgulanmış](#ishighlighted)|Şerit öğesinin vurgulanıp vurgulanmayacağını belirtir.|
+|[CMFCRibbonBaseElement::IsIntermediateMode](#isintermediatemode)|Şerit öğesi için geçerli görüntünün ara boyutu olup olmadığını gösterir.|
+|[CMFCRibbonBaseElement::IslargeMode](#islargemode)|Şerit öğesi için geçerli görüntünün büyük boyutlu olup olmadığını gösterir.|
+|[CMFCRibbonBaseElement::IsmenuMode](#ismenumode)|Şerit öğesinin menüde bulunup bulunmadığını gösterir.|
+|[CMFCRibbonBaseElement::Ispressed](#ispressed)|Kullanıcının şerit öğesini tıklatıp tıklatmadığını gösterir.|
+|[CMFCRibbonBaseElement::IsQATMode](#isqatmode)|Şerit öğesinin hızlı erişim araç çubuğunda bulunup bulunmadığını gösterir.|
+|[CMFCRibbonBaseElement::IsSeparator](#isseparator)|Şerit elemanının görüntü ayırıcısı olup olmadığını gösterir.|
+|[CMFCRibbonBaseElement::IsShowGroupBorder](#isshowgroupborder)|Şerit öğesinin ortak kenarlık gösteren bir grupta bulunup bulunmadığını gösterir.|
+|[CMFCRibbonBaseElement::IsShowTooltipOnBottom](#isshowtooltiponbottom)|Araç ucunun şerit öğesinin altında görüntülenip görüntülenmediğini gösterir.|
+|[CMFCRibbonBaseElement::istabstop](#istabstop)|Şerit öğesinin klavyeyle seçilip seçilemeyeceğini gösterir.|
+|[CMFCRibbonBaseElement::IstextAlwaysonRight](#istextalwaysonright)|Şerit öğesi için metnin sağtarafta görüntülenip görüntülenmediğini gösterir.|
+|[CMFCRibbonBaseElement::Visible](#isvisible)|Şerit öğesinin şu anda görüntülenip görüntülenmediğini gösterir.|
+|[CMFCRibbonBaseElement::IswholeRowheight](#iswholerowheight)|Şerit öğesinin ekran heigth'inin, onu içeren şerit panelinin ekran yüksekliğiyle aynı olup olmadığını gösterir.|
+|[CMFCRibbonBaseElement::NotifyCommand](#notifycommand)|Şerit öğesinin üst penceresine bir komut bildirimi gönderir.|
+|[CMFCRibbonBaseElement::NotifyHighlightListItem](#notifyhighlightlistitem)|Kullanıcı bir listede bulunan bir şerit öğesini vurguladığında şerit çubuğunun üst penceresini bildirir.|
+|[CMFCRibbonBaseElement::OnAddToQAToolbar](#onaddtoqatoolbar)|Belirtilen hızlı erişim araç çubuğuna şerit öğesi ekler.|
+|[CMFCRibbonBaseElement::OnAfterChangeRect](#onafterchangerect)|Şerit öğesi için araç ucunu güncelleştirir.|
+|[CMFCRibbonBaseElement::OnAutoRepeat](#onautorepeat)|Sürekli kullanıcı girişine yanıt olarak şerit öğesini güncelleştirir.|
+|[CMFCRibbonBaseElement::OnCalcTextSize](#oncalctextsize)|Şerit öğesi için metnin boyutunu hesaplar.|
+|[CMFCRibbonBaseElement::OnChangeMenuHighlight](#onchangemenuhighlight)|Bir menüde bulunan bir şerit öğesi için vurgu değişiklikleri çerçeve tarafından çağrılır.|
+|[CMFCRibbonBaseElement::Ondraw](#ondraw)|Şerit öğesini çizmek için çerçeve tarafından çağrılır.|
+|[CMFCRibbonBaseElement::OnDrawKeyTip](#ondrawkeytip)|Şerit öğesi için anahtar ucunu çizmek için çerçeve tarafından çağrılır.|
+|[CMFCRibbonBaseElement::OnDrawMenuImage](#ondrawmenuimage)|Şerit öğesiiçin menü görüntüsü çizildiğinde çerçeve tarafından çağrılır.|
+|[CMFCRibbonBaseElement::OnDrawonlist](#ondrawonlist)|Bir komut listesi kutusunda şerit öğesi çizmek için çerçeve tarafından çağrılır.|
+|[CMFCRibbonBaseElement::OnKey](#onkey)|Kullanıcı bir tuş ucuna bastığında ve şerit öğesi odaklandığında çerçeve tarafından çağrılır.|
+|[CMFCRibbonBaseElement::OnMenuKey](#onmenukey)||
+|[CMFCRibbonBaseElement::OnRTLChanged](#onrtlchanged)|Düzen yön değiştirdiğinde çerçeve tarafından çağrılır.|
+|[CMFCRibbonBaseElement::OnShow](#onshow)|Şerit öğesini göstermek veya gizlemek için çerçeve tarafından çağrılır.|
+|[CMFCRibbonBaseElement::OnShowPopupMenu](#onshowpopupmenu)|Şerit öğesi bir açılır menü görüntülemek için gidiyor çerçeve tarafından çağrılır.|
+|[CMFCRibbonBaseElement::PostMenuCommand](#postmenucommand)||
+|[CMFCRibbonBaseElement::Yeniden Çiz](#redraw)|Şerit öğesi için ekranı güncelleştirir.|
+|[CMFCRibbonBaseElement::SetACCData](#setaccdata)|Şerit öğesi için erişilebilirlik verilerini ayarlar.|
+|[CMFCRibbonBaseElement::SetCompactMode](#setcompactmode)|Şerit öğesi için ekran boyutunu ayarlar.|
+|[CMFCRibbonBaseElement::SetData](#setdata)|Bir veri öğesini şerit öğesiyle ilişkilendirer.|
+|[CMFCRibbonBaseElement::SetDefaultMenuLook](#setdefaultmenulook)||
+|[CMFCRibbonBaseElement::SetDescription](#setdescription)|Şerit öğesinin açıklamasını ayarlar.|
+|[CMFCRibbonBaseElement::SetID](#setid)|Şerit öğesinin komut kimliğini ayarlar.|
+|[CMFCRibbonBaseElement::SetInitialMode](#setinitialmode)|Şerit öğesi için ilk ekran boyutunu ayarlar.|
+|[CMFCRibbonBaseElement::SetKeys](#setkeys)|Şerit öğesi için bir anahtar ucu ayarlar.|
+|[CMFCRibbonBaseElement::SetOriginal](#setoriginal)|Şerit öğesi için özgün şerit öğesini ayarlar.|
+|[CMFCRibbonBaseElement::SetParentCategory](#setparentcategory)|Şerit öğesi için üst kategoriyi ayarlar.|
+|[CMFCRibbonBaseElement::SetParentMenu](#setparentmenu)|Şerit öğesi için üst menü kapsayıcısını ayarlar.|
+|[CMFCRibbonBaseElement::SetParentRibbonÇubuğu](#setparentribbonbar)|Şerit öğesi için üst şerit çubuğunu ayarlar.|
+|[CMFCRibbonBaseElement::SetRect](#setrect)|Şerit öğesi için dikdörtgen gösterdiği boyutları ayarlar.|
+|[CMFCRibbonBaseElement::SetText](#settext)|Şerit öğesi için metni ayarlar.|
+|[CMFCRibbonBaseElement::SetTextAlwaysonRight](#settextalwaysonright)|Şerit öğesinin metnini sağda görüntülemek üzere ayarlar.|
+|[CMFCRibbonBaseElement::SetToolTipText](#settooltiptext)|Şerit öğesi için araç ipucu metnini ayarlar.|
+|[CMFCRibbonBaseElement::SetVisible](#setvisible)|Şerit öğesinin görünürlük durumunu ayarlar.|
+|[CMFCRibbonBaseElement::StretchHorizontally](#stretchhorizontally)|Şerit öğesinin genişliğini genişletir.|
+|[CMFCRibbonBaseElement::Stretchtowholerow](#stretchtowholerow)|Şerit öğesinin ekran yüksekliğini belirtilen satır yüksekliğiyle değiştirir.|
+|[CMFCRibbonBaseElement::UpdateTooltipInfo](#updatetooltipinfo)|Şerit öğesi için komut kaynağını kullanarak araç ipucu metnini güncelleştirir.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonBaseElement:: OnProcessKey](#onprocesskey)|Kullanıcı bir kısayol tuşuna bastığında Framework tarafından çağırılır.|
-|[CMFCRibbonBaseElement:: OnSetFocus](#onsetfocus)|Bir şerit öğesi giriş odağını aldığında veya kaybettiğinde Framework tarafından çağırılır.|
+|[CMFCRibbonBaseElement::OnProcessKey](#onprocesskey)|Kullanıcı bir kısayol tuşuna bastığında çerçeve tarafından çağrılır.|
+|[CMFCRibbonBaseElement::OnsetFocus](#onsetfocus)|Bir şerit öğesi giriş odağı aldığında veya kaybettiğinde çerçeve tarafından çağrılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMFCRibbonBaseElement` Sınıfı, komut kimliği, metin etiketi, araç ipucu metni, öğe açıklaması ve durumu (odaklanmış, vurgulanmış, basılan, devre dışı, denetlenen veya bırakılmış olabilir) içeren tüm şerit öğeleri için ortak olan özellikleri tanımlar.
+Sınıf, `CMFCRibbonBaseElement` komut kimliği, metin etiketi, araç ipucu metni, öğe açıklaması ve durum (odaklanılabilir, vurgulanabilir, basılı, devre dışı bırakılmış, denetlenebilir veya bırakılabilir) tüm şerit öğeleriiçin ortak olan özellikleri tanımlar.
 
-Bir şerit öğesinin resim boyutu `RibbonImageType` üye tarafından tanımlanır, bu, aşağıdaki değerlerden biri olabilir:
+Bir şerit öğesinin görüntü boyutu, `RibbonImageType` aşağıdaki değerlerden biri olabilecek üye tarafından tanımlanır:
 
 - `RibbonImageLarge`
 
 - `RibbonImageSmall`
 
-Bir şerit öğesi boyutuna bağlı olarak küçük veya büyük bir görüntü görüntüler.
+Boyutuna bağlı olarak, bir şerit öğesi küçük veya büyük bir görüntü görüntüler.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCRibbonBaseElement` sınıfında çeşitli yöntemlerin nasıl kullanıldığını gösterir. Örnek, bir `CMFCRibbonBaseElement` `CMFCRibbonStatusBar` sınıftan nasıl bir nesne alınacağını, şerit öğesi için açıklama ayarlamayı, metin ayarlamayı, bir KeyTip ayarlamayı ve şerit öğesi için araç ipucu metnini ayarlamayı gösterir. Bu kod parçacığı, [Çizim istemci örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfta çeşitli yöntemlerin `CMFCRibbonBaseElement` nasıl kullanılacağını göstermektedir. Örnek, bir `CMFCRibbonBaseElement` `CMFCRibbonStatusBar` nesnenin sınıftan nasıl alınır, şerit öğesinin açıklamasını ayarlamak, metni ayarlamak, bir anahtar ucu ayarlamak ve şerit öğesi için araç ipucu metnini ayarlamak gösterir. Bu kod snippet [Çekme İstemci örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_DrawClient#8](../../mfc/reference/codesnippet/cpp/cmfcribbonbaseelement-class_1.cpp)]
 [!code-cpp[NVC_MFC_DrawClient#9](../../mfc/reference/codesnippet/cpp/cmfcribbonbaseelement-class_2.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxbaseribbonelement. h
+**Üstbilgi:** afxbaseribbonelement.h
 
-##  <a name="addtokeylist"></a>CMFCRibbonBaseElement:: AddToKeyList
+## <a name="cmfcribbonbaseelementaddtokeylist"></a><a name="addtokeylist"></a>CMFCRibbonBaseElement::addtokeylist
 
-Şerit öğesi için bir KeyTips dizisine bir KeyTip ekler.
+Bir dizi anahtar ipucuna şerit öğesi için bir anahtar ucu ekler.
 
 ```
 virtual void AddToKeyList(
@@ -420,16 +420,16 @@ virtual void AddToKeyList(
 
 ### <a name="parameters"></a>Parametreler
 
-*Aretams*<br/>
-'ndaki KeyTips 'ın [CArray](../../mfc/reference/carray-class.md) öğesine başvuru.
+*arElems*<br/>
+[içinde] Anahtar ipuçlarının [CArray'ine](../../mfc/reference/carray-class.md) başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit KeyTips özelliği etkinleştirildiğinde, çerçeve, Kullanıcı ALT tuşuna veya F10 tuşuna bastığında şerit tuş ipuçlarını görüntüler.
+Şerit tuş uçları özelliği etkinleştirildiğinde, kullanıcı ALT tuşuna veya F10 tuşuna bastığında çerçeve şerit tuş uçlarını görüntüler.
 
-##  <a name="addtolistbox"></a>CMFCRibbonBaseElement:: AddToListBox
+## <a name="cmfcribbonbaseelementaddtolistbox"></a><a name="addtolistbox"></a>CMFCRibbonBaseElement::addtolistbox
 
-Belirtilen şerit komutları liste kutusuna bir şerit öğesi ekler.
+Belirtilen şerit komutları listesi kutusuna bir şerit öğesi ekler.
 
 ```
 virtual int AddToListBox(
@@ -440,22 +440,22 @@ virtual int AddToListBox(
 ### <a name="parameters"></a>Parametreler
 
 *pWndListBox*<br/>
-'ndaki Bir Komutlar liste kutusu işaretçisi.
+[içinde] Komutlistesi kutusuna işaretçi.
 
-*Bderin*<br/>
-'ndaki Bu parametre kullanılmaz.
+*bDerin*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eklenen Şerit öğesinin sıfır tabanlı dizini.
+Eklenen şerit öğesinin sıfır tabanlı dizin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, kullanıcının Kullanıcı arabirimini özelleştirmesini sağlamak için bir Komutlar liste kutusuna Şerit öğeleri ekler.
+Çerçeve, kullanıcının kullanıcı arabirimini özelleştirmesini sağlamak için komutlistesi kutusuna şerit öğeleri ekler.
 
-##  <a name="canbeaddedtoquickaccesstoolbar"></a>CMFCRibbonBaseElement:: CanBeAddedToQuickAccessToolBar
+## <a name="cmfcribbonbaseelementcanbeaddedtoquickaccesstoolbar"></a><a name="canbeaddedtoquickaccesstoolbar"></a>CMFCRibbonBaseElement::CanbeaddedtoQuickAccessToolbar
 
-Şerit öğesinin hızlı erişim araç çubuğuna eklenip eklenemeyeceğini belirtir.
+Şerit öğesinin hızlı erişim araç çubuğuna eklenip eklenmeyeceğini gösterir.
 
 ```
 virtual BOOL CanBeAddedToQuickAccessToolBar() const;
@@ -463,13 +463,13 @@ virtual BOOL CanBeAddedToQuickAccessToolBar() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe eklenebiliyorsa, doğru; Aksi takdirde, FALSE.
+Öğe eklenebiliyorsa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="canbecompacted"></a>CMFCRibbonBaseElement:: Canbesıkıştırılıyor
+## <a name="cmfcribbonbaseelementcanbecompacted"></a><a name="canbecompacted"></a>CMFCRibbonBaseElement::CanBeCompacted
 
-Şerit öğesinin boyutunun sıkıştırılamayacağını gösterir.
+Şerit öğesinin boyutunun kompakt olup olmadığını gösterir.
 
 ```
 virtual BOOL CanBeCompacted() const;
@@ -477,15 +477,15 @@ virtual BOOL CanBeCompacted() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesinin boyutu sıkıştırıbiliyorsa TRUE; Aksi takdirde, FALSE.
+Şerit öğesinin boyutu kompakt olabilirse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit öğesinin boyutu sıkıştırma, ara veya büyük olabilir.
+Şerit öğesinin boyutu kompakt, orta veya büyük olabilir.
 
-##  <a name="canbestretched"></a>CMFCRibbonBaseElement:: Canbeesnetilen
+## <a name="cmfcribbonbaseelementcanbestretched"></a><a name="canbestretched"></a>CMFCRibbonBaseElement::Canbestretched
 
-Şerit öğesinin yüksekliğinin bir şerit satırının yüksekliğine dikey olarak artırıp artamayacağını gösterir.
+Şerit öğesinin yüksekliğinin dikey olarak şerit satırının yüksekliğine yükselip artamayacağını gösterir.
 
 ```
 virtual BOOL CanBeStretched();
@@ -497,11 +497,11 @@ Her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman TRUE değerini döndürür. Şerit öğesinin yüksekliğinin bir şerit satırının yüksekliğine dikey olarak artırıp artamayacağını belirtmek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman TRUE döndürür. Şerit öğesinin yüksekliğinin dikey olarak şerit satırının yüksekliğine yükselip artamayacağını belirtmek için bu yöntemi geçersiz kılın.
 
-##  <a name="canbestretchedhorizontally"></a>CMFCRibbonBaseElement:: canbe, Edyatay
+## <a name="cmfcribbonbaseelementcanbestretchedhorizontally"></a><a name="canbestretchedhorizontally"></a>CMFCRibbonBaseElement::CanBeStretchedYatay
 
-Şerit öğesinin genişliğinin değiştirip değiştiremeyeceğini gösterir.
+Şerit öğesinin genişliğinin değişip değişemeyeceğini gösterir.
 
 ```
 virtual BOOL CanBeStretchedHorizontally();
@@ -513,11 +513,11 @@ Her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman FALSE döndürür. Şerit öğesinin genişliğinin değiştirip değiştiremeyeceğini belirtmek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman FALSE döndürür. Şerit öğesinin genişliğinin değişip değişemeyeceğini belirtmek için bu yöntemi geçersiz kılın.
 
-##  <a name="cleanupsizes"></a>CMFCRibbonBaseElement:: Cleanupboyutlar
+## <a name="cmfcribbonbaseelementcleanupsizes"></a><a name="cleanupsizes"></a>CMFCRibbonBaseElement::Temizleme Boyutlar
 
-Şerit öğesi için boyut ayarlarını temizler.
+Şerit öğesiiçin boyut ayarlarını temizler.
 
 ```
 virtual void CleanUpSizes();
@@ -527,9 +527,9 @@ virtual void CleanUpSizes();
 
 Varsayılan olarak bu yöntem hiçbir şey yapmaz. Şerit öğesinin boyut ayarlarını sıfırlamak için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-##  <a name="closepopupmenu"></a>CMFCRibbonBaseElement:: ClosePopupMenu
+## <a name="cmfcribbonbaseelementclosepopupmenu"></a><a name="closepopupmenu"></a>CMFCRibbonBaseElement::ClosePopupMenu
 
-Şerit öğesi için açılır menüyü kapatır.
+Şerit öğesi için açılan menüyü kapatır.
 
 ```
 virtual void ClosePopupMenu();
@@ -537,9 +537,9 @@ virtual void ClosePopupMenu();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="copyfrom"></a>CMFCRibbonBaseElement:: CopyFrom
+## <a name="cmfcribbonbaseelementcopyfrom"></a><a name="copyfrom"></a>CMFCRibbonBaseElement::CopyFrom
 
-Belirtilen [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) durumunu geçerli nesneye kopyalar.
+Geçerli nesneye belirtilen [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) durumunu kopyalar.
 
 ```
 virtual void CopyFrom(const CMFCRibbonBaseElement& src);
@@ -547,12 +547,12 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 
 ### <a name="parameters"></a>Parametreler
 
-*YN*<br/>
-'ndaki Kaynak [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) nesnesi.
+*src*<br/>
+[içinde] Kaynak [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="destroyctrl"></a>CMFCRibbonBaseElement::D estroyCtrl
+## <a name="cmfcribbonbaseelementdestroyctrl"></a><a name="destroyctrl"></a>CMFCRibbonBaseElement::DestroyCtrl
 
 Şerit öğesini yok eder.
 
@@ -564,7 +564,7 @@ virtual void DestroyCtrl();
 
 Varsayılan olarak bu yöntem hiçbir şey yapmaz. Şerit öğesini yok etmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-##  <a name="drawimage"></a>CMFCRibbonBaseElement::D Kwimage
+## <a name="cmfcribbonbaseelementdrawimage"></a><a name="drawimage"></a>CMFCRibbonBaseElement::DrawImage
 
 Şerit öğesi için görüntüyü çizer.
 
@@ -577,29 +577,29 @@ virtual void DrawImage(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
-*type*<br/>
-'ndaki Bir görüntü türü Enum değeri. Olası değerler listesi için açıklamalar bölümüne bakın.
+*Türü*<br/>
+[içinde] Görüntü türü numaralandırılmış değer. Olası değerlerin listesi için Açıklamalar bölümüne bakın.
 
 *rectImage*<br/>
-'ndaki Resim dikdörtgeni.
+[içinde] Görüntü dikdörtgeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak bu yöntem hiçbir şey yapmaz. Şerit öğesi için resim çizmek üzere türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem hiçbir şey yapmaz. Şerit öğesi için görüntü çizmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-Aşağıdaki tabloda *tür* parametresi için olası değerler listelenmektedir:
+Aşağıdaki *tablo, tür* parametresi için olası değerleri listeler:
 
 |||
 |-|-|
-| `RibbonImageLarge`  | Büyük 32x32 piksel resim boyutu.  |
-| `RibbonImageSmall`  | Küçük 16x16 piksel resim boyutu.  |
+| `RibbonImageLarge`  | Büyük 32x32 piksel görüntü boyutu.  |
+| `RibbonImageSmall`  | Küçük 16x16 piksel görüntü boyutu.  |
 
-##  <a name="find"></a>CMFCRibbonBaseElement:: Find
+## <a name="cmfcribbonbaseelementfind"></a><a name="find"></a>CMFCRibbonBaseElement::Bul
 
-Geçerli nesneyi işaret ediyorsa, belirtilen işaretçiyi döndürür.
+Geçerli nesneye işaret ederse belirtilen işaretçiyi döndürür.
 
 ```
 virtual CMFCRibbonBaseElement* Find(const CMFCRibbonBaseElement* pElement);
@@ -608,17 +608,17 @@ virtual CMFCRibbonBaseElement* Find(const CMFCRibbonBaseElement* pElement);
 ### <a name="parameters"></a>Parametreler
 
 *pElement*<br/>
-'ndaki Şerit öğesi işaretçisi.
+[içinde] Şerit öğesiiçin işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*PElement* geçerli nesneye işaret ediyorsa Ribbon öğesine yönelik bir işaretçi; Aksi takdirde NULL.
+*pElement* geçerli nesneyi işaret ederse şerit öğesiiçin bir işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="findbydata"></a>CMFCRibbonBaseElement:: FindByData
+## <a name="cmfcribbonbaseelementfindbydata"></a><a name="findbydata"></a>CMFCRibbonBaseElement::FindbyData
 
-Belirtilen verileri içeriyorsa Ribbon öğesine bir işaretçi alır.
+Belirtilen verileri içeriyorsa şerit öğesiiçin bir işaretçi alır.
 
 ```
 virtual CMFCRibbonBaseElement* FindByData(DWORD_PTR dwData);
@@ -626,18 +626,18 @@ virtual CMFCRibbonBaseElement* FindByData(DWORD_PTR dwData);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwData*<br/>
-'ndaki Şerit öğesiyle ilişkili veriler.
+*Dwdata*<br/>
+[içinde] Şerit öğesi ile ilişkili veriler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen verileri içeriyorsa şerit öğesine yönelik bir işaretçi; Aksi takdirde NULL.
+Belirtilen verileri içeriyorsa şerit öğesiiçin bir işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="findbyid"></a>CMFCRibbonBaseElement:: Findbyıd
+## <a name="cmfcribbonbaseelementfindbyid"></a><a name="findbyid"></a>CMFCRibbonBaseElement::FindByID
 
-Bu öğe belirtilen komut KIMLIĞIYLE tanımlanmışsa Ribbon öğesine bir işaretçi alır.
+Bu öğe belirtilen komut kimliği tarafından tanımlanırsa şerit öğesi için bir işaretçi alır.
 
 ```
 virtual CMFCRibbonBaseElement* FindByID(UINT uiCmdID);
@@ -645,18 +645,18 @@ virtual CMFCRibbonBaseElement* FindByID(UINT uiCmdID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Uıımıdıd*<br/>
-'ndaki Şerit öğesi için komut KIMLIĞI.
+*uiCmdID*<br/>
+[içinde] Şerit öğesi için komut kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu öğe belirtilen komut KIMLIĞIYLE tanımlanmışsa Ribbon öğesine yönelik bir işaretçi; Aksi takdirde NULL.
+Bu öğe belirtilen komut kimliği tarafından tanımlanırsa şerit öğesi için bir işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="findbyoriginal"></a>CMFCRibbonBaseElement:: FindByOriginal
+## <a name="cmfcribbonbaseelementfindbyoriginal"></a><a name="findbyoriginal"></a>CMFCRibbonBaseElement::FindbyOriginal
 
-Özgün şerit öğesi belirtilen şerit öğesiyle eşleşiyorsa geçerli şerit öğesine bir işaretçi alır.
+Özgün şerit öğesi belirtilen şerit öğesiyle eşleşiyorsa, geçerli şerit öğesi için bir işaretçi alır.
 
 ```
 virtual CMFCRibbonBaseElement* FindByOriginal(CMFCRibbonBaseElement* pOriginal);
@@ -664,20 +664,20 @@ virtual CMFCRibbonBaseElement* FindByOriginal(CMFCRibbonBaseElement* pOriginal);
 
 ### <a name="parameters"></a>Parametreler
 
-*pOriginal*<br/>
-'ndaki Şerit öğesi işaretçisi.
+*pOrijinal*<br/>
+[içinde] Şerit öğesiiçin işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özgün şerit öğesi belirtilen şerit öğesiyle eşleşiyorsa Ribbon öğesine yönelik bir işaretçi; Aksi takdirde NULL.
+Özgün şerit öğesi belirtilen şerit öğesiyle eşleşiyorsa, şerit öğesiiçin bir işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başka bir kapsayıcıya kopyalanmış Şerit öğeleri, orijinal şerit öğesine yönelik bir işaretçi tutar.
+Başka bir kapsayıcıya kopyalanan şerit öğeleri özgün şerit öğesi için bir işaretçi tutar.
 
-##  <a name="getcompactsize"></a>CMFCRibbonBaseElement:: GetCompactSize
+## <a name="cmfcribbonbaseelementgetcompactsize"></a><a name="getcompactsize"></a>CMFCRibbonBaseElement::GetCompactsize
 
-Şerit öğesinin sıkıştırılmış boyutunu döndürür.
+Şerit elemanının kompakt boyutunu döndürür.
 
 ```
 virtual CSize GetCompactSize(CDC* pDC);
@@ -685,19 +685,19 @@ virtual CSize GetCompactSize(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamına yönelik bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesinin sıkıştırılmış boyutu.
+Bir şerit öğesinin kompakt boyutu.
 
 > [!NOTE]
->  Sıkıştırılmış boyut, şerit öğesinin kesildiği anlamına gelir (küçük bir görüntü veya metin içermeyen bir görüntü görüntüler).
+> Kompakt boyutu, şerit öğesinin kesilmeye zor olduğu anlamına gelir (küçük bir görüntü veya metin olmadan bir görüntü görüntüler).
 
-##  <a name="getdata"></a>CMFCRibbonBaseElement:: GetData
+## <a name="cmfcribbonbaseelementgetdata"></a><a name="getdata"></a>CMFCRibbonBaseElement::Veri Alma
 
-Şerit öğesiyle ilişkili kullanıcı tanımlı verileri alır.
+Şerit öğesi ile ilişkili kullanıcı tanımlı verileri alır.
 
 ```
 DWORD_PTR GetData() const;
@@ -705,9 +705,9 @@ DWORD_PTR GetData() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesiyle ilişkili kullanıcı tanımlı veriler.
+Şerit öğesi ile ilişkili kullanıcı tanımlı veriler.
 
-##  <a name="getdescription"></a>CMFCRibbonBaseElement:: GetDescription
+## <a name="cmfcribbonbaseelementgetdescription"></a><a name="getdescription"></a>CMFCRibbonBaseElement::GetDescription
 
 Şerit öğesinin açıklamasını döndürür.
 
@@ -717,11 +717,11 @@ virtual CString GetDescription() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi açıklaması. Açıklama, durum çubuğunda veya bir araç ipucunda ya da şerit öğesi [CMFCRibbonMainPanel sınıfında](../../mfc/reference/cmfcribbonmainpanel-class.md)bulunuyorsa menü düğmesi altında görüntülenir.
+Şerit öğesi açıklaması. Açıklama durum çubuğunda veya bir araç ucunda veya [cmfcRibbonMainPanel Sınıfı'nda](../../mfc/reference/cmfcribbonmainpanel-class.md)şerit öğesi bulunuyorsa menü düğmesinin altında görüntülenir.
 
-##  <a name="getdroppeddown"></a>CMFCRibbonBaseElement:: Getdroppedaşağı
+## <a name="cmfcribbonbaseelementgetdroppeddown"></a><a name="getdroppeddown"></a>CMFCRibbonBaseElement::GetDroppedDown
 
-Açılır menü kapalıysa, Ribbon öğesine bir işaretçi alır.
+Açılır menüsü aşağı bırakılırsa şerit öğesi için bir işaretçi alır.
 
 ```
 virtual CMFCRibbonBaseElement* GetDroppedDown();
@@ -729,11 +729,11 @@ virtual CMFCRibbonBaseElement* GetDroppedDown();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Açılır menü kapalıysa şerit öğesine yönelik bir işaretçi. Aksi takdirde NULL.
+Açılır menüsü aşağı bırakılırsa şerit öğesiiçin bir işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getelements"></a>CMFCRibbonBaseElement:: GetElements
+## <a name="cmfcribbonbaseelementgetelements"></a><a name="getelements"></a>CMFCRibbonBaseElement::GetElements
 
 Geçerli şerit öğesini belirtilen diziye ekler.
 
@@ -745,13 +745,13 @@ virtual void GetElements(
 ### <a name="parameters"></a>Parametreler
 
 *arElements*<br/>
-[in, out] Şerit öğelerinden oluşan dizi.
+[içinde, dışarı] Bir dizi şerit öğesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getelementsbyid"></a>CMFCRibbonBaseElement:: GetElementsById
+## <a name="cmfcribbonbaseelementgetelementsbyid"></a><a name="getelementsbyid"></a>CMFCRibbonBaseElement::GetElementsByID
 
-Geçerli şerit öğesi belirtilen komut KIMLIĞINI içeriyorsa, belirtilen diziye geçerli şerit öğesini ekler.
+Geçerli şerit öğesi belirtilen komut kimliği içeriyorsa, geçerli şerit öğesini belirtilen diziye geçerli şerit öğesi ekler.
 
 ```
 virtual void GetElementsByID(
@@ -761,17 +761,17 @@ virtual void GetElementsByID(
 
 ### <a name="parameters"></a>Parametreler
 
-*Uıımıdıd*<br/>
-'ndaki Şerit öğesinin komut KIMLIĞI.
+*uiCmdID*<br/>
+[içinde] Şerit öğesinin komut kimliği.
 
 *arElements*<br/>
-'ndaki Şerit öğelerinden oluşan dizi.
+[içinde] Bir dizi şerit öğesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="gethighlighted"></a>CMFCRibbonBaseElement:: Gethighışıklı
+## <a name="cmfcribbonbaseelementgethighlighted"></a><a name="gethighlighted"></a>CMFCRibbonBaseElement::GetHighlighted
 
-Vurgulandığında şerit öğesine bir işaretçi alır.
+Vurgulanırsa şerit öğesiiçin bir işaretçi alır.
 
 ```
 virtual CMFCRibbonBaseElement* GetHighlighted();
@@ -779,13 +779,13 @@ virtual CMFCRibbonBaseElement* GetHighlighted();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Vurgulandığında şerit öğesine yönelik bir işaretçi. Aksi takdirde NULL.
+Vurgulanırsa şerit öğesiiçin bir işaretçi; aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getid"></a>CMFCRibbonBaseElement:: GetId
+## <a name="cmfcribbonbaseelementgetid"></a><a name="getid"></a>CMFCRibbonBaseElement::GetID
 
-Şerit öğesinin komut KIMLIĞINI döndürür.
+Şerit öğesinin komut kimliğini döndürür.
 
 ```
 UINT GetID() const;
@@ -793,11 +793,11 @@ UINT GetID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesinin komut KIMLIĞI.
+Şerit öğesinin komut kimliği.
 
-##  <a name="getimagesize"></a>CMFCRibbonBaseElement:: Getıgesize
+## <a name="cmfcribbonbaseelementgetimagesize"></a><a name="getimagesize"></a>CMFCRibbonBaseElement::GetImageSize
 
-Şerit öğesinin resim boyutunu döndürür.
+Şerit öğesinin görüntü boyutunu döndürür.
 
 ```
 virtual CSize GetImageSize(RibbonImageType R) const;
@@ -805,11 +805,11 @@ virtual CSize GetImageSize(RibbonImageType R) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesinin resim boyutu.
+Şerit öğesinin görüntü boyutu.
 
-##  <a name="getintermediatesize"></a>CMFCRibbonBaseElement:: GetIntermediateSize
+## <a name="cmfcribbonbaseelementgetintermediatesize"></a><a name="getintermediatesize"></a>CMFCRibbonBaseElement::GetIntermediateSize
 
-Şerit öğesinin ara durumundaki boyutunu döndürür.
+Ara durumunda şerit öğesinin boyutunu döndürür.
 
 ```
 virtual CSize GetIntermediateSize(CDC* pDC);
@@ -817,16 +817,16 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamına yönelik bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesinin ara durumunda olan boyutu.
+Ara durumundaşerit öğesinin boyutu.
 
-##  <a name="getkeys"></a>CMFCRibbonBaseElement:: GetKeys
+## <a name="cmfcribbonbaseelementgetkeys"></a><a name="getkeys"></a>CMFCRibbonBaseElement::GetKeys
 
-Şerit öğesiyle ilişkili tuş ipucunu döndürür.
+Şerit öğesi ile ilişkili anahtar ucunu döndürür.
 
 ```
 LPCTSTR GetKeys() const;
@@ -834,11 +834,11 @@ LPCTSTR GetKeys() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesiyle ilişkili bir KeyTip.
+Şerit öğesi ile ilişkili bir anahtar ucu.
 
-##  <a name="getkeytiprect"></a>CMFCRibbonBaseElement:: Getkeytıprect
+## <a name="cmfcribbonbaseelementgetkeytiprect"></a><a name="getkeytiprect"></a>CMFCRibbonBaseElement::GetKeyTipRect
 
-Şerit öğesi için keytip sınır dikdörtgenini alır.
+Şerit öğesi için anahtar ucu sınır dikdörtgenini alır.
 
 ```
 virtual CRect GetKeyTipRect(
@@ -848,23 +848,23 @@ virtual CRect GetKeyTipRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 *bIsMenu*<br/>
-'ndaki Şerit öğesi bir açılır menü görüntülüyorsa TRUE. Aksi halde yanlış.
+[içinde] Şerit öğesi açılır menü görüntülerse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman 0 değeri olan bir dikdörtgen döndürür.
+Her zaman 0 değerleri olan bir dikdörtgen döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-KeyTip sınır dikdörtgenini döndürmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
+Anahtar ucu sınır dikdörtgenini döndürmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-##  <a name="getkeytipsize"></a>CMFCRibbonBaseElement:: GetKeyTipSize
+## <a name="cmfcribbonbaseelementgetkeytipsize"></a><a name="getkeytipsize"></a>CMFCRibbonBaseElement::GetKeyTipSize
 
-KeyTip metninin boyutunu alır.
+Anahtar ucu metninin boyutunu alır.
 
 ```
 virtual CSize GetKeyTipSize(CDC* pDC);
@@ -872,18 +872,18 @@ virtual CSize GetKeyTipSize(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-KeyTip metninin boyutu.
+Anahtar ucu metninin boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getlocationingroup"></a>CMFCRibbonBaseElement:: GetLocationInGroup
+## <a name="cmfcribbonbaseelementgetlocationingroup"></a><a name="getlocationingroup"></a>CMFCRibbonBaseElement::GetLocationInGroup
 
-Şerit öğesinin bir şerit grubundaki görüntüleme konumunu gösterir.
+Şerit grubundaki şerit öğesinin görüntü konumunu gösterir.
 
 ```
 RibbonElementLocation GetLocationInGroup() const;
@@ -891,23 +891,23 @@ RibbonElementLocation GetLocationInGroup() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Numaralandırılmış `RibbonElementLocation` bir değer. Aşağıdaki tabloda olası değerler listelenmektedir.
+`RibbonElementLocation` Numaralandırılmış bir değer. Aşağıdaki tabloda olası değerler listeleilmektedir.
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|`RibbonElementNotInGroup`|Şerit öğesi bir şerit grubunda yer alır.|
-|`RibbonElementSingleInGroup`|Şerit öğesi bir şerit grubundaki tek öğe olarak görüntülenir.|
-|`RibbonElementFirstInGroup`|Şerit öğesi, şerit grubunun sol ucunda görüntülenir.|
-|`RibbonElementLastInGroup`|Şerit öğesi, şerit grubunun sağ ucunda görüntülenir.|
-|`RibbonElementMiddleInGroup`|Şerit öğesi, şerit grubunun herhangi bir ucunda gösterilmez.|
+|`RibbonElementNotInGroup`|Şerit öğesi bir şerit grubunda içermez.|
+|`RibbonElementSingleInGroup`|Şerit öğesi, şerit grubundaki tek öğe olarak görüntülenir.|
+|`RibbonElementFirstInGroup`|Şerit öğesi bir şerit grubunun sol ucunda görüntülenir.|
+|`RibbonElementLastInGroup`|Şerit öğesi bir şerit grubunun sağ ucunda görüntülenir.|
+|`RibbonElementMiddleInGroup`|Şerit öğesi, şerit grubunun her iki ucunda görüntülenmez.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit öğe grupları yalnızca yatay olarak hizalanır.
+Şerit öğesi grupları yalnızca yatay olarak hizalanır.
 
-##  <a name="getmenukeys"></a>CMFCRibbonBaseElement:: GetMenuKeys
+## <a name="cmfcribbonbaseelementgetmenukeys"></a><a name="getmenukeys"></a>CMFCRibbonBaseElement::GetMenuKeys
 
-Şerit öğesi için menü keytip ' i döndürür.
+Şerit öğesi için menü tuş ucunu döndürür.
 
 ```
 LPCTSTR GetMenuKeys() const;
@@ -915,15 +915,15 @@ LPCTSTR GetMenuKeys() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesiyle ilişkili menü tuş ipucu.
+Şerit öğesi ile ilişkili menü anahtar ucu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıldığında, bir menü tuş ipucu açılan menüyü görüntüler.
+Çağrıldığınızda, menü anahtarı ucu açılır menü görüntüler.
 
-##  <a name="getnotifyid"></a>CMFCRibbonBaseElement:: Getnotifyıd
+## <a name="cmfcribbonbaseelementgetnotifyid"></a><a name="getnotifyid"></a>CMFCRibbonBaseElement::GetNotifyID
 
-Şerit öğesi için bildirim komutu KIMLIĞINI alır.
+Şerit öğesi için bildirim komut uytunu alır.
 
 ```
 virtual UINT GetNotifyID();
@@ -931,11 +931,11 @@ virtual UINT GetNotifyID();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bildirim komut KIMLIĞI.
+Bildirim komut uyruşu kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getoriginal"></a>CMFCRibbonBaseElement:: Getoriguinal
+## <a name="cmfcribbonbaseelementgetoriginal"></a><a name="getoriginal"></a>CMFCRibbonBaseElement::GetOriginal
 
 Özgün şerit öğesini alır.
 
@@ -945,13 +945,13 @@ CMFCRibbonBaseElement* GetOriginal() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özgün şerit öğesine yönelik bir işaretçi.
+Özgün şerit öğesi için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başka bir kapsayıcıya kopyalanmış Şerit öğeleri, orijinal şerit öğesine yönelik bir işaretçi tutar.
+Başka bir kapsayıcıya kopyalanan şerit öğeleri özgün şerit öğesi için bir işaretçi tutar.
 
-##  <a name="getparentcategory"></a>CMFCRibbonBaseElement:: GetParentCategory
+## <a name="cmfcribbonbaseelementgetparentcategory"></a><a name="getparentcategory"></a>CMFCRibbonBaseElement::GetParentCategory
 
 Şerit öğesi için şerit kategorisini alır.
 
@@ -961,11 +961,11 @@ CMFCRibbonCategory* GetParentCategory() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit kategorisine yönelik bir işaretçi.
+Şerit kategorisiiçin bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getparentpanel"></a>CMFCRibbonBaseElement:: GetParentPanel
+## <a name="cmfcribbonbaseelementgetparentpanel"></a><a name="getparentpanel"></a>CMFCRibbonBaseElement::GetParentPanel
 
 Şerit öğesini içeren şerit panelini alır.
 
@@ -975,11 +975,11 @@ virtual CMFCRibbonPanel* GetParentPanel() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesini içeren şerit paneline yönelik bir işaretçi.
+Şerit öğesini içeren şerit paneliiçin bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getparentribbonbar"></a>CMFCRibbonBaseElement:: GetParentRibbonBar
+## <a name="cmfcribbonbaseelementgetparentribbonbar"></a><a name="getparentribbonbar"></a>CMFCRibbonBaseElement::GetParentRibbonBar
 
 Şerit öğesi için üst şerit çubuğunu alır.
 
@@ -989,11 +989,11 @@ CMFCRibbonBar* GetParentRibbonBar() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi için üst şerit çubuğuna yönelik bir işaretçi.
+Şerit öğesi için üst şerit çubuğuna işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getparentwnd"></a>CMFCRibbonBaseElement:: GetParentWnd
+## <a name="cmfcribbonbaseelementgetparentwnd"></a><a name="getparentwnd"></a>CMFCRibbonBaseElement::GetParentWnd
 
 Şerit öğesi için üst pencereyi alır.
 
@@ -1003,15 +1003,15 @@ virtual CWnd* GetParentWnd() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa şerit öğesi için üst pencereye yönelik bir işaretçi. Aksi takdirde, NULL.
+Yöntem başarılı olduysa şerit öğesi için ana pencereye işaretçi; aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir şerit öğesinin üst penceresi bir [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md) veya [CMFCRibbonPanelMenuBar](internal-classes.md).
+Şerit öğesinin üst penceresi [CMFCRibbonBar Sınıfı](../../mfc/reference/cmfcribbonbar-class.md) veya [CMFCRibbonPanelMenuBar'dır.](internal-classes.md)
 
-##  <a name="getpressed"></a>CMFCRibbonBaseElement:: Getbasılan
+## <a name="cmfcribbonbaseelementgetpressed"></a><a name="getpressed"></a>CMFCRibbonBaseElement::Getpressed
 
-Kullanıcı şu anda ona basarsa şerit öğesine bir işaretçi alır.
+Kullanıcı şu anda basıyorsa şerit öğesi için bir işaretçi alır.
 
 ```
 virtual CMFCRibbonBaseElement* GetPressed();
@@ -1019,13 +1019,13 @@ virtual CMFCRibbonBaseElement* GetPressed();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı şu anda ona basarsa şerit öğesine yönelik bir işaretçi. Aksi takdirde, NULL.
+Kullanıcı şu anda basıyorsa şerit öğesiiçin bir işaretçi; aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getquickaccesstoolbarid"></a>CMFCRibbonBaseElement:: Getquickaccesstoolbarıd
+## <a name="cmfcribbonbaseelementgetquickaccesstoolbarid"></a><a name="getquickaccesstoolbarid"></a>CMFCRibbonBaseElement::GetQuickAccessToolBarID
 
-Hızlı erişim araç çubuğunda yer aldığında şerit öğesinin komut KIMLIĞINI alır.
+Hızlı erişim araç çubuğunda bulunduğunda şerit öğesinin komut kimliğini alır.
 
 ```
 virtual UINT GetQuickAccessToolBarID() const;
@@ -1033,13 +1033,13 @@ virtual UINT GetQuickAccessToolBarID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hızlı erişim araç çubuğunda yer alan şerit öğesinin komut KIMLIĞI.
+Hızlı erişim araç çubuğunda bulunduğunda şerit öğesinin komut kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getrect"></a>CMFCRibbonBaseElement:: GetRect
+## <a name="cmfcribbonbaseelementgetrect"></a><a name="getrect"></a>CMFCRibbonBaseElement::GetRect
 
-Şerit öğesinin sınırlayıcı dikdörtgenini döndürür.
+Şerit elemanının sınırlayıcı dikdörtgenini döndürür.
 
 ```
 CRect GetRect() const;
@@ -1047,9 +1047,9 @@ CRect GetRect() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesinin sınırlayıcı dikdörtgeni. Dikdörtgenin konumu üst şerit denetiminin koordinatlarından oluşur.
+Şerit elemanının sınırlayıcı dikdörtgeni. Dikdörtgenin konumu üst Şerit denetiminin koordinatlarındadır.
 
-##  <a name="getregularsize"></a>CMFCRibbonBaseElement:: GetRegularSize
+## <a name="cmfcribbonbaseelementgetregularsize"></a><a name="getregularsize"></a>CMFCRibbonBaseElement::GetRegularSize
 
 Şerit öğesinin normal boyutunu döndürür.
 
@@ -1059,8 +1059,8 @@ virtual CSize GetRegularSize(CDC* pDC) = 0;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamına yönelik bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1069,9 +1069,9 @@ virtual CSize GetRegularSize(CDC* pDC) = 0;
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Normal boyut, şerit öğesinin olası en büyük boyut boyutudur.
+> Normal boyut, şerit öğesinin maksimal olası boyutudur.
 
-##  <a name="getsize"></a>CMFCRibbonBaseElement:: GetSize
+## <a name="cmfcribbonbaseelementgetsize"></a><a name="getsize"></a>CMFCRibbonBaseElement::GetSize
 
 Şerit öğesinin geçerli boyutunu döndürür.
 
@@ -1081,16 +1081,16 @@ virtual CSize GetSize(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamına yönelik bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Şerit öğesinin geçerli boyutu.
 
-##  <a name="gettext"></a>CMFCRibbonBaseElement:: GetText
+## <a name="cmfcribbonbaseelementgettext"></a><a name="gettext"></a>CMFCRibbonBaseElement::GetText
 
-Şerit öğesiyle ilişkili metni döndürür.
+Şerit öğesi ile ilişkili metni döndürür.
 
 ```
 LPCTSTR GetText() const;
@@ -1098,9 +1098,9 @@ LPCTSTR GetText() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesiyle ilişkili metin.
+Şerit öğesi ile ilişkili metin.
 
-##  <a name="gettooltiptext"></a>CMFCRibbonBaseElement:: GetToolTipText
+## <a name="cmfcribbonbaseelementgettooltiptext"></a><a name="gettooltiptext"></a>CMFCRibbonBaseElement::GetToolTipText
 
 Şerit öğesinin araç ipucu metnini döndürür.
 
@@ -1110,9 +1110,9 @@ virtual CString GetToolTipText() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesinin araç ipucu metni.
+Şerit öğesinin araç ucu metni.
 
-##  <a name="gettoplevelribbonbar"></a>CMFCRibbonBaseElement:: GetTopLevelRibbonBar
+## <a name="cmfcribbonbaseelementgettoplevelribbonbar"></a><a name="gettoplevelribbonbar"></a>CMFCRibbonBaseElement::GetTopLevelRibbonBar
 
 Şerit öğesi için üst düzey şerit çubuğunu alır.
 
@@ -1122,13 +1122,13 @@ CMFCRibbonBar* GetTopLevelRibbonBar() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa şerit öğesi için üst düzey şerit çubuğuna yönelik bir işaretçi; Aksi takdirde, NULL.
+Yöntem başarılı olduysa, şerit öğesi için en üst düzey şerit çubuğuna işaretçi; aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="hascompactmode"></a>CMFCRibbonBaseElement:: HasCompactMode
+## <a name="cmfcribbonbaseelementhascompactmode"></a><a name="hascompactmode"></a>CMFCRibbonBaseElement::HascompactMode
 
-Şerit öğesinin Compact moduna sahip olup olmadığını belirtir.
+Şerit elemanının kompakt bir modu olup olmadığını belirtir.
 
 ```
 virtual BOOL HasCompactMode() const;
@@ -1136,16 +1136,16 @@ virtual BOOL HasCompactMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi Compact moduna sahipse TRUE. Aksi takdirde FALSE.
+Şerit öğesi kompakt bir modu varsa DOĞRU. YANLIŞ aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Kompakt modda bir öğe yalnızca küçük bir görüntü görüntüler.
+> Kompakt modda, bir öğe yalnızca küçük bir görüntü görüntüler.
 
-##  <a name="hasintermediatemode"></a>CMFCRibbonBaseElement:: HasIntermediateMode
+## <a name="cmfcribbonbaseelementhasintermediatemode"></a><a name="hasintermediatemode"></a>CMFCRibbonBaseElement::HasIntermediateMode
 
-Şerit öğesinin ara moduna sahip olup olmadığını belirtir.
+Şerit elemanının ara modu olup olmadığını belirtir.
 
 ```
 virtual BOOL HasIntermediateMode() const;
@@ -1153,13 +1153,13 @@ virtual BOOL HasIntermediateMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesinin bir ara modu varsa TRUE, aksi durumda FALSE. Ara modda bir öğesi görüntünün sağında küçük bir resim ve metin görüntüler.
+Doğru şerit öğesi bir ara modu varsa, FALSE aksi. Ara modda, bir öğe görüntünün sağında küçük bir görüntü ve metin görüntüler.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="haslargemode"></a>CMFCRibbonBaseElement:: HasLargeMode
+## <a name="cmfcribbonbaseelementhaslargemode"></a><a name="haslargemode"></a>CMFCRibbonBaseElement::HaslargeMode
 
-Şerit öğesinin büyük bir moda sahip olup olmadığını belirler.
+Şerit öğesinin büyük bir modu olup olmadığını belirler.
 
 ```
 virtual BOOL HasLargeMode() const;
@@ -1167,15 +1167,15 @@ virtual BOOL HasLargeMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesinin büyük bir modu varsa TRUE. Aksi takdirde FALSE.
+Şerit öğesi büyük bir modu varsa DOĞRU. YANLIŞ aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Büyük modda, bir öğe üst bölmenin tam yüksekliğini alabilir.
+Büyük modda, bir öğe üst panelin tam yüksekliğini alabilir.
 
-##  <a name="hasmenu"></a>CMFCRibbonBaseElement:: HasMenu
+## <a name="cmfcribbonbaseelementhasmenu"></a><a name="hasmenu"></a>CMFCRibbonBaseElement::Hasmenu
 
-Şerit öğesinde bir menü olup olmadığını gösterir.
+Şerit öğesinin bir menüsü olup olmadığını gösterir.
 
 ```
 virtual BOOL HasMenu() const;
@@ -1187,11 +1187,11 @@ Her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman FALSE döndürür. Şerit öğesinde bir menü olup olmadığını belirtmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman FALSE döndürür. Şerit öğesinin bir menü olup olmadığını belirtmek için türetilmiş sınıfta bu yöntemi geçersiz kılın.
 
-##  <a name="hittest"></a>CMFCRibbonBaseElement:: HitTest
+## <a name="cmfcribbonbaseelementhittest"></a><a name="hittest"></a>CMFCRibbonBaseElement::HitTest
 
-Belirtilen nokta bulunuyorsa şerit öğesine bir işaretçi alır.
+Belirtilen nokta içinde bulunuyorsa, şerit öğesiiçin bir işaretçi alır.
 
 ```
 virtual CMFCRibbonBaseElement* HitTest(CPoint point);
@@ -1199,20 +1199,20 @@ virtual CMFCRibbonBaseElement* HitTest(CPoint point);
 
 ### <a name="parameters"></a>Parametreler
 
-*seçeneğinin*<br/>
-'ndaki Bu parametre kullanılmaz.
+*Nokta*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsa şerit öğesi için bir işaretçi; Aksi halde yanlış.
+Varsa şerit öğesi için bir işaretçi; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem, varsa şerit öğesine her zaman geçerli bir işaretçi döndürür. Noktanın şerit öğesinde yer olup olmadığını göstermek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem var olduğunda her zaman şerit öğesine geçerli bir işaretçi döndürür. Noktanın şerit öğesinde olup olmadığını belirtmek için bu yöntemi geçersiz kılın.
 
-##  <a name="isalignbycolumn"></a>CMFCRibbonBaseElement:: ıshizalaması Bycolumn
+## <a name="cmfcribbonbaseelementisalignbycolumn"></a><a name="isalignbycolumn"></a>CMFCRibbonBaseElement::Isalignbycolumn
 
-Şerit öğesinin diğer şerit öğeleriyle dikey olarak hizalanıp hizalanmayacağını gösterir.
+Şerit öğesinin diğer şerit öğeleriyle dikey olarak hizalanıp hizalanmadığını gösterir.
 
 ```
 virtual BOOL IsAlignByColumn() const;
@@ -1224,11 +1224,11 @@ Her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman TRUE değerini döndürür. Türetilmiş şerit öğesinin diğer şerit öğeleriyle dikey olarak hizalanıp hizalanmayacağını belirtmek için bu yöntemi türetilmiş bir sınıfta geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman TRUE döndürür. Türemiş şerit öğesinin diğer şerit öğeleriyle dikey olarak hizalanıp hizalanmadığını belirtmek için türetilmiş sınıfta bu yöntemi geçersiz kılın.
 
-##  <a name="isalwayslargeimage"></a>CMFCRibbonBaseElement:: IsAlwaysLargeImage
+## <a name="cmfcribbonbaseelementisalwayslargeimage"></a><a name="isalwayslargeimage"></a>CMFCRibbonBaseElement::IsAlwayslargeImage
 
-Şerit öğesi resim boyutunun her zaman büyük olup olmadığını gösterir.
+Şerit öğesi görüntü boyutunun her zaman büyük olup olmadığını gösterir.
 
 ```
 virtual BOOL IsAlwaysLargeImage() const;
@@ -1236,13 +1236,13 @@ virtual BOOL IsAlwaysLargeImage() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi resim boyutu her zaman büyükse doğru; Aksi halde yanlış.
+Şerit öğesi görüntü boyutu her zaman büyükse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Büyük görüntü boyutu 32 x 32 pikseldir.
 
-##  <a name="isautorepeatmode"></a>CMFCRibbonBaseElement:: ısoto Repeatmode
+## <a name="cmfcribbonbaseelementisautorepeatmode"></a><a name="isautorepeatmode"></a>CMFCRibbonBaseElement::IsAutoRepeatMode
 
 Şerit öğesinin otomatik yineleme modunda olup olmadığını gösterir.
 
@@ -1252,8 +1252,8 @@ virtual BOOL IsAutoRepeatMode(int& nDelay) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nDelay*<br/>
-'ndaki Bu parametre kullanılmaz.
+*nGecikme*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1261,13 +1261,13 @@ Her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman FALSE döndürür. Şerit öğesinin otomatik yineleme modunda olup olmadığını belirtmek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman FALSE döndürür. Şerit öğesinin otomatik yineleme modunda olup olmadığını belirtmek için bu yöntemi geçersiz kılın.
 
-Otomatik yineleme modunda, şerit öğesi, sürekli Kullanıcı girişine milisaniye cinsinden ölçülen bir küme aralığı ile yanıt verir.
+Otomatik yineleme modunda, şerit öğesi, milisaniye cinsinden ölçülen belirli bir aralıkta, sürekli kullanıcı girişine yanıt verir.
 
-##  <a name="ischecked"></a>CMFCRibbonBaseElement:: IsChecked
+## <a name="cmfcribbonbaseelementischecked"></a><a name="ischecked"></a>CMFCRibbonBaseElement::Kontrol Edildi
 
-Şerit öğesinin işaretli olup olmadığını belirtir.
+Şerit öğesinin denetlenip denetlenmediğini belirtir.
 
 ```
 virtual BOOL IsChecked() const;
@@ -1275,11 +1275,11 @@ virtual BOOL IsChecked() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi işaretliyse TRUE; Aksi halde yanlış.
+Şerit öğesi işaretlenirse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="iscompactmode"></a>CMFCRibbonBaseElement:: IsCompactMode
+## <a name="cmfcribbonbaseelementiscompactmode"></a><a name="iscompactmode"></a>CMFCRibbonBaseElement::IscompactMode
 
-Şerit öğesinin Kompakt modda olup olmadığını belirtir.
+Şerit elemanının kompakt bir modda olup olmadığını belirtir.
 
 ```
 BOOL IsCompactMode() const;
@@ -1287,11 +1287,11 @@ BOOL IsCompactMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi Compact modundaysa TRUE; Aksi halde yanlış.
+Şerit öğesi kompakt bir moddaysa DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="isdefaultmenulook"></a>CMFCRibbonBaseElement:: ısdefaultmenulook
+## <a name="cmfcribbonbaseelementisdefaultmenulook"></a><a name="isdefaultmenulook"></a>CMFCRibbonBaseElement::IsdefaultMenuLook
 
-Şerit öğesinin açılır komut olarak görünüp görünmeyeceğini gösterir.
+Şerit öğesinin açılır pencere komutu olarak görüntülenip ayarlanıp ayarlmadığını gösterir.
 
 ```
 BOOL IsDefaultMenuLook() const;
@@ -1299,13 +1299,13 @@ BOOL IsDefaultMenuLook() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi bir açılır komut olarak görünecek şekilde ayarlandıysa TRUE; Aksi halde yanlış.
+Şerit öğesi açılır komut olarak görünecek şekilde ayarlanmışsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isdisabled"></a>CMFCRibbonBaseElement:: IsDisabled
+## <a name="cmfcribbonbaseelementisdisabled"></a><a name="isdisabled"></a>CMFCRibbonBaseElement::Devre Dışı
 
-Şerit öğesinin devre dışı bırakılıp bırakılmadığını belirtir.
+Şerit öğesinin devre dışı kalıp kalmayacağını belirtir.
 
 ```
 virtual BOOL IsDisabled() const;
@@ -1313,11 +1313,11 @@ virtual BOOL IsDisabled() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi devre dışıysa TRUE; Aksi halde yanlış.
+Şerit öğesi devre dışı bırakılırsa DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="isdroppeddown"></a>CMFCRibbonBaseElement:: ısdroppedaşağı
+## <a name="cmfcribbonbaseelementisdroppeddown"></a><a name="isdroppeddown"></a>CMFCRibbonBaseElement::IsDroppedDown
 
-Şerit öğesinin bir açılır menü görüntüleyip kullanmadığını belirtir.
+Şerit öğesinin açılır menü yütleyip görüntülenmediğini ve bırakılıp bırakılmayacağını belirtir.
 
 ```
 virtual BOOL IsDroppedDown() const;
@@ -1325,11 +1325,11 @@ virtual BOOL IsDroppedDown() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi kapalıysa TRUE, bir açılır menü görüntüler; Aksi halde yanlış.
+Şerit öğesi aşağı bırakılırsa ve açılır menü görüntülerse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="isfocused"></a>CMFCRibbonBaseElement:: ısodaklanmış
+## <a name="cmfcribbonbaseelementisfocused"></a><a name="isfocused"></a>CMFCRibbonBaseElement::Isfocused
 
-Şerit öğesinin odağa sahip olup olmadığını belirtir.
+Şerit öğesinin odak noktası olup olmadığını belirtir.
 
 ```
 virtual BOOL IsFocused() const;
@@ -1337,11 +1337,11 @@ virtual BOOL IsFocused() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi odağa sahipse TRUE; Aksi halde yanlış.
+Şerit öğesi odak varsa DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="isgalleryicon"></a>CMFCRibbonBaseElement:: ısgallerıcon
+## <a name="cmfcribbonbaseelementisgalleryicon"></a><a name="isgalleryicon"></a>CMFCRibbonBaseElement::IsGalleryicon
 
-Şerit öğesinin şerit galerisinde içerilip içerilmeyeceğini gösterir.
+Şerit öğesinin şerit galerisinde bulunup bulunmadığını gösterir.
 
 ```
 virtual BOOL IsGalleryIcon() const;
@@ -1353,9 +1353,9 @@ Her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman FALSE döndürür. Şerit öğesinin şerit galerisinde içerilip içerilmeyeceğini belirtmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman FALSE döndürür. Şerit öğesinin şerit galerisinde bulunup bulunmadığını belirtmek için türetilmiş sınıfta bu yöntemi geçersiz kılın.
 
-##  <a name="ishighlighted"></a>CMFCRibbonBaseElement:: ısvurgulu
+## <a name="cmfcribbonbaseelementishighlighted"></a><a name="ishighlighted"></a>CMFCRibbonBaseElement::Vurgulanmış
 
 Şerit öğesinin vurgulanıp vurgulanmayacağını belirtir.
 
@@ -1365,13 +1365,13 @@ virtual BOOL IsHighlighted() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi vurgulandığında doğru; Aksi halde yanlış.
+Şerit öğesi vurgulanırsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isintermediatemode"></a>CMFCRibbonBaseElement:: IsIntermediateMode
+## <a name="cmfcribbonbaseelementisintermediatemode"></a><a name="isintermediatemode"></a>CMFCRibbonBaseElement::IsIntermediateMode
 
-Şerit öğesi için geçerli görüntünün ara boyut olup olmadığını gösterir.
+Şerit öğesi için geçerli görüntünün ara boyutu olup olmadığını gösterir.
 
 ```
 BOOL IsIntermediateMode() const;
@@ -1379,13 +1379,13 @@ BOOL IsIntermediateMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi için görüntü ara boyut ise TRUE; Aksi halde yanlış.
+Şerit öğesi için görüntü ara boyutu ise DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Ara görüntü boyutu 16 x 16 pikseldir.
 
-##  <a name="islargemode"></a>CMFCRibbonBaseElement:: ıslargemode
+## <a name="cmfcribbonbaseelementislargemode"></a><a name="islargemode"></a>CMFCRibbonBaseElement::IslargeMode
 
 Şerit öğesi için geçerli görüntünün büyük boyutta olup olmadığını gösterir.
 
@@ -1395,15 +1395,15 @@ BOOL IsLargeMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi için resim büyük boyutlu ise TRUE; Aksi halde yanlış.
+Şerit öğesi için görüntü büyük boyuttaysa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Büyük görüntü boyutu 32 x 32 pikseldir.
 
-##  <a name="ismenumode"></a>CMFCRibbonBaseElement:: ısmenumode
+## <a name="cmfcribbonbaseelementismenumode"></a><a name="ismenumode"></a>CMFCRibbonBaseElement::IsmenuMode
 
-Şerit öğesinin bir menüde içerilip içerilmeyeceğini gösterir.
+Şerit öğesinin menüde bulunup bulunmadığını gösterir.
 
 ```
 BOOL IsMenuMode() const;
@@ -1411,13 +1411,13 @@ BOOL IsMenuMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi bir menüde yer alıyorsa TRUE; Aksi takdirde, FALSE.
+Şerit öğesi bir menüde yer alırsa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="ispressed"></a>CMFCRibbonBaseElement:: ısbasılmış
+## <a name="cmfcribbonbaseelementispressed"></a><a name="ispressed"></a>CMFCRibbonBaseElement::Ispressed
 
-Kullanıcının şerit öğesine tıklamış olup olmadığını gösterir.
+Kullanıcının şerit öğesini tıklatıp tıklatmadığını gösterir.
 
 ```
 virtual BOOL IsPressed() const;
@@ -1425,11 +1425,11 @@ virtual BOOL IsPressed() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı şerit öğesine tıklamışsa TRUE, Aksi halde yanlış.
+Kullanıcı şerit öğesini tıklattıysa DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="isqatmode"></a>CMFCRibbonBaseElement:: ısqatmode
+## <a name="cmfcribbonbaseelementisqatmode"></a><a name="isqatmode"></a>CMFCRibbonBaseElement::IsQATMode
 
-Şerit öğesinin hızlı erişim araç çubuğunda içerilip içerilmeyeceğini gösterir.
+Şerit öğesinin hızlı erişim araç çubuğunda bulunup bulunmadığını gösterir.
 
 ```
 BOOL IsQATMode() const;
@@ -1437,13 +1437,13 @@ BOOL IsQATMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi hızlı erişim araç çubuğunda içerilse, TRUE. Aksi takdirde, FALSE.
+Şerit öğesi hızlı erişim araç çubuğunda yer alırsa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isseparator"></a>CMFCRibbonBaseElement:: IsSeparator
+## <a name="cmfcribbonbaseelementisseparator"></a><a name="isseparator"></a>CMFCRibbonBaseElement::IsSeparator
 
-Şerit öğesinin bir görüntüleme ayırıcısı olup olmadığını gösterir.
+Şerit elemanının görüntü ayırıcısı olup olmadığını gösterir.
 
 ```
 virtual BOOL IsSeparator() const;
@@ -1451,13 +1451,13 @@ virtual BOOL IsSeparator() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi bir görüntüleme ayırıcıysa TRUE; Aksi halde yanlış.
+Şerit öğesi bir görüntü ayırıcısı ise DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isshowgroupborder"></a>CMFCRibbonBaseElement:: ısshowgroupborder
+## <a name="cmfcribbonbaseelementisshowgroupborder"></a><a name="isshowgroupborder"></a>CMFCRibbonBaseElement::IsShowGroupBorder
 
-Şerit öğesinin ortak bir kenarlık görüntüleyen bir grupta içerilip içerilmeyeceğini gösterir.
+Şerit öğesinin ortak kenarlık gösteren bir grupta bulunup bulunmadığını gösterir.
 
 ```
 BOOL IsShowGroupBorder() const;
@@ -1465,13 +1465,13 @@ BOOL IsShowGroupBorder() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi ortak bir kenarlığı görüntüleyen bir grupta yer alıyorsa TRUE. Aksi takdirde, FALSE.
+Şerit öğesi ortak kenarlık gösteren bir grupta yer alırsa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isshowtooltiponbottom"></a>CMFCRibbonBaseElement:: ısshowtooltiponbottom
+## <a name="cmfcribbonbaseelementisshowtooltiponbottom"></a><a name="isshowtooltiponbottom"></a>CMFCRibbonBaseElement::IsShowTooltipOnBottom
 
-Araç ipucunun şerit öğesinin altında görüntülenip görüntülenmeyeceğini gösterir.
+Araç ucunun şerit öğesinin altında görüntülenip görüntülenmediğini gösterir.
 
 ```
 virtual BOOL IsShowTooltipOnBottom() const;
@@ -1479,13 +1479,13 @@ virtual BOOL IsShowTooltipOnBottom() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç ipucu şerit öğesinin altında görüntüleniyorsa TRUE; Araç ipucu işaretçinin yakınında görüntüleniyorsa FALSE.
+Araç ipucu şerit öğesinin altında görüntüleniyorsa DOĞRU; Araç ucu işaretçinin yanında görüntülenirse YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="istabstop"></a>CMFCRibbonBaseElement:: IsTabStop
+## <a name="cmfcribbonbaseelementistabstop"></a><a name="istabstop"></a>CMFCRibbonBaseElement::istabstop
 
-Şerit öğesinin klavyeyle seçilebilir olup olmadığını gösterir.
+Şerit öğesinin klavyeyle seçilip seçilemeyeceğini gösterir.
 
 ```
 virtual BOOL IsTabStop() const;
@@ -1497,11 +1497,11 @@ Her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman TRUE değerini döndürür. Şerit öğesinin klavyeyle seçilemeyeceğini belirtmek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman TRUE döndürür. Şerit öğesinin klavyeyle seçilip seçilemeyeceğini belirtmek için bu yöntemi geçersiz kılın.
 
-##  <a name="istextalwaysonright"></a>CMFCRibbonBaseElement:: IsTextAlwaysOnRight
+## <a name="cmfcribbonbaseelementistextalwaysonright"></a><a name="istextalwaysonright"></a>CMFCRibbonBaseElement::IstextAlwaysonRight
 
-Şerit öğesi için metnin sağ tarafta görüntülenip görüntülenmeyeceğini gösterir.
+Şerit öğesi için metnin sağtarafta görüntülenip görüntülenmediğini gösterir.
 
 ```
 BOOL IsTextAlwaysOnRight() const;
@@ -1509,13 +1509,13 @@ BOOL IsTextAlwaysOnRight() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi için metin sağda görüntüleniyorsa TRUE; Aksi takdirde, FALSE.
+Şerit öğesiiçin metin sağda görüntülenirse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isvisible"></a>CMFCRibbonBaseElement:: IsVisible
+## <a name="cmfcribbonbaseelementisvisible"></a><a name="isvisible"></a>CMFCRibbonBaseElement::Visible
 
-Şerit öğesinin Şu anda gösterilip gösterilmediğini gösterir.
+Şerit öğesinin şu anda görüntülenip görüntülenmediğini gösterir.
 
 ```
 BOOL IsVisible() const;
@@ -1523,13 +1523,13 @@ BOOL IsVisible() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi şu anda görüntüleniyorsa doğru; Aksi takdirde, FALSE.
+Şerit öğesi şu anda görüntüleniyorsa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="iswholerowheight"></a>CMFCRibbonBaseElement:: ıswholerowheight
+## <a name="cmfcribbonbaseelementiswholerowheight"></a><a name="iswholerowheight"></a>CMFCRibbonBaseElement::IswholeRowheight
 
-Şerit öğesinin görüntüleme yüksekliğinin, kendisini içeren şerit panelinin görüntüleme yüksekliğiyle aynı olup olmadığını gösterir.
+Şerit öğesinin ekran yüksekliğinin, onu içeren şerit panelinin ekran yüksekliğiyle aynı olup olmadığını gösterir.
 
 ```
 virtual BOOL IsWholeRowHeight() const;
@@ -1541,9 +1541,9 @@ Her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman FALSE döndürür. Şerit öğesinin görüntüleme yüksekliğinin, kendisini içeren şerit panelinin görüntüleme yüksekliğiyle aynı olup olmadığını belirtmek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman FALSE döndürür. Şerit öğesinin ekran yüksekliğinin, onu içeren şerit panelinin ekran yüksekliğiyle aynı olup olmadığını belirtmek için bu yöntemi geçersiz kılın.
 
-##  <a name="notifycommand"></a>CMFCRibbonBaseElement:: NotifyCommand
+## <a name="cmfcribbonbaseelementnotifycommand"></a><a name="notifycommand"></a>CMFCRibbonBaseElement::NotifyCommand
 
 Şerit öğesinin üst penceresine bir komut bildirimi gönderir.
 
@@ -1554,17 +1554,17 @@ BOOL NotifyCommand(BOOL bWithDelay = FALSE);
 ### <a name="parameters"></a>Parametreler
 
 *bWithDelay*<br/>
-'ndaki Ana pencerenin ileti kuyruğuna komut bildirimini eklemek için TRUE; İletiyi hemen ana pencereye göndermek için FALSE.
+[içinde] Komut bildirimini üst pencerenin ileti sırasına eklemek için TRUE; İletiyi hemen üst pencereye göndermek için FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti gönderildiyse doğru; Aksi takdirde, FALSE.
+İleti gönderildiyse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="notifyhighlightlistitem"></a>CMFCRibbonBaseElement:: Notifyhighlightlistıtem
+## <a name="cmfcribbonbaseelementnotifyhighlightlistitem"></a><a name="notifyhighlightlistitem"></a>CMFCRibbonBaseElement::NotifyHighlightListItem
 
-Bir Kullanıcı listede bulunan bir şerit öğesi vurgulandığı zaman şerit çubuğunun üst penceresine bildirir.
+Kullanıcı bir listede bulunan bir şerit öğesini vurguladığında şerit çubuğunun üst penceresini bildirir.
 
 ```
 virtual void NotifyHighlightListItem(int nIndex);
@@ -1572,12 +1572,12 @@ virtual void NotifyHighlightListItem(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nDizin*<br/>
-'ndaki Listedeki şerit öğesinin dizini.
+*Nındex*<br/>
+[içinde] Listedeki şerit öğesinin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onaddtoqatoolbar"></a>CMFCRibbonBaseElement:: OnAddToQAToolbar
+## <a name="cmfcribbonbaseelementonaddtoqatoolbar"></a><a name="onaddtoqatoolbar"></a>CMFCRibbonBaseElement::OnAddToQAToolbar
 
 Belirtilen hızlı erişim araç çubuğuna şerit öğesi ekler.
 
@@ -1587,18 +1587,18 @@ virtual BOOL OnAddToQAToolbar(CMFCRibbonQuickAccessToolBar& qat);
 
 ### <a name="parameters"></a>Parametreler
 
-*QAT*<br/>
-'ndaki Hızlı erişim araç çubuğu.
+*Qat*<br/>
+[içinde] Hızlı erişim araç çubuğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman, şerit öğesinin hızlı erişim araç çubuğuna eklendiğini belirten TRUE değerini döndürür.
+Hızlı erişim araç çubuğuna şerit öğesinin eklandığını belirten TRUE her zaman döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onafterchangerect"></a>CMFCRibbonBaseElement:: OnAfterChangeRect
+## <a name="cmfcribbonbaseelementonafterchangerect"></a><a name="onafterchangerect"></a>CMFCRibbonBaseElement::OnAfterChangeRect
 
-Şerit öğesi için araç ipucunu güncelleştirir.
+Şerit öğesi için araç ucunu güncelleştirir.
 
 ```
 virtual void OnAfterChangeRect(CDC* pDC);
@@ -1606,16 +1606,16 @@ virtual void OnAfterChangeRect(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Bu parametre kullanılmaz.
+*Pdc*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem şerit öğesi için araç ipucunu günceller. ' In görüntüleme dikdörtgeni değiştirildikten sonra şerit öğesini güncelleştirmek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem, şerit öğesi için araç ucunu güncelleştirir. Ekran dikdörtgeni değiştikten sonra şerit öğesini güncelleştirmek için bu yöntemi geçersiz kılın.
 
-##  <a name="onautorepeat"></a>CMFCRibbonBaseElement:: OnoTo Repeat
+## <a name="cmfcribbonbaseelementonautorepeat"></a><a name="onautorepeat"></a>CMFCRibbonBaseElement::OnAutoRepeat
 
-Sürekli Kullanıcı girişine yanıt olarak şerit öğesini güncelleştirir.
+Sürekli kullanıcı girişine yanıt olarak şerit öğesini güncelleştirir.
 
 ```
 virtual BOOL OnAutoRepeat();
@@ -1627,9 +1627,9 @@ Her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak bu yöntem her zaman FALSE döndürür. Sürekli Kullanıcı girişini işlemek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman FALSE döndürün. Sürekli kullanıcı girişini işlemek için bu yöntemi geçersiz kılın.
 
-##  <a name="oncalctextsize"></a>CMFCRibbonBaseElement:: OnCalcTextSize
+## <a name="cmfcribbonbaseelementoncalctextsize"></a><a name="oncalctextsize"></a>CMFCRibbonBaseElement::OnCalcTextSize
 
 Şerit öğesi için metnin boyutunu hesaplar.
 
@@ -1639,16 +1639,16 @@ virtual void OnCalcTextSize(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Bu parametre kullanılmaz.
+*Pdc*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak bu yöntem hiçbir şey yapmaz. Şerit öğesi metninin boyutunu hesaplamak için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem hiçbir şey yapmaz. Şerit öğesi için metnin boyutunu hesaplamak için bu yöntemi geçersiz kılın.
 
-##  <a name="onchangemenuhighlight"></a>CMFCRibbonBaseElement:: OnChangeMenuHighlight
+## <a name="cmfcribbonbaseelementonchangemenuhighlight"></a><a name="onchangemenuhighlight"></a>CMFCRibbonBaseElement::OnChangeMenuHighlight
 
-Bir menüde bulunan şerit öğesi için vurgu değiştiğinde Framework tarafından çağırılır.
+Bir menüde bulunan bir şerit öğesi için vurgu değişiklikleri çerçeve tarafından çağrılır.
 
 ```
 virtual void OnChangeMenuHighlight(CMFCRibbonPanelMenuBar* pPanelMenuBar
@@ -1658,18 +1658,18 @@ virtual void OnChangeMenuHighlight(CMFCRibbonPanelMenuBar* pPanelMenuBar
 ### <a name="parameters"></a>Parametreler
 
 *pPanelMenuBar*<br/>
-'ndaki Bu parametre kullanılmaz.
+[içinde] Bu parametre kullanılmaz.
 
-*FOT*<br/>
-'ndaki Bu parametre kullanılmaz.
+*pSıcak*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak bu yöntem hiçbir şey yapmaz. Vurgu değiştiğinde menüde bulunan bir şerit öğesini güncelleştirmek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem hiçbir şey yapmaz. Vurgular değiştiğinde menüde bulunan bir şerit öğesini güncelleştirmek için bu yöntemi geçersiz kılın.
 
-##  <a name="ondraw"></a>CMFCRibbonBaseElement:: OnDraw
+## <a name="cmfcribbonbaseelementondraw"></a><a name="ondraw"></a>CMFCRibbonBaseElement::Ondraw
 
-Şerit öğesi çizmek için Framework tarafından çağırılır.
+Şerit öğesini çizmek için çerçeve tarafından çağrılır.
 
 ```
 virtual void OnDraw(CDC* pDC) = 0;
@@ -1677,16 +1677,16 @@ virtual void OnDraw(CDC* pDC) = 0;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamına yönelik bir işaretçi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirli bir şerit öğesinin çizimini özelleştirmek istiyorsanız bu yöntemi türetilmiş bir sınıfta geçersiz kılın.
+Belirli bir şerit öğesinin çizimini özelleştirmek istiyorsanız, türemiş bir sınıfta bu yöntemi geçersiz kılın.
 
-##  <a name="ondrawkeytip"></a>CMFCRibbonBaseElement:: Ondrawkeytıp
+## <a name="cmfcribbonbaseelementondrawkeytip"></a><a name="ondrawkeytip"></a>CMFCRibbonBaseElement::OnDrawKeyTip
 
-Şerit öğesi için keytip çizmek üzere Framework tarafından çağırılır.
+Şerit öğesi için anahtar ucunu çizmek için çerçeve tarafından çağrılır.
 
 ```
 virtual void OnDrawKeyTip(
@@ -1697,20 +1697,20 @@ virtual void OnDrawKeyTip(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 *Rect*<br/>
-'ndaki KeyTip için sınır dikdörtgeni.
+[içinde] Anahtar ucu için sınır dikdörtgeni.
 
 *bIsMenu*<br/>
-'ndaki KeyTip bir açılır menü düğmesi için ise TRUE; Aksi takdirde, FALSE.
+[içinde] Anahtar ucu açılır menü düğmesi içinse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="ondrawmenuimage"></a>CMFCRibbonBaseElement:: OnDrawMenuImage
+## <a name="cmfcribbonbaseelementondrawmenuimage"></a><a name="ondrawmenuimage"></a>CMFCRibbonBaseElement::OnDrawMenuImage
 
-Şerit öğesi için menü görüntüsü çizildiğinde Framework tarafından çağırılır.
+Şerit öğesiiçin menü görüntüsü çizildiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnDrawMenuImage(
@@ -1720,21 +1720,21 @@ virtual BOOL OnDrawMenuImage(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Aygıt bağlamına işaretçi.
 
 *Rect*<br/>
-'ndaki Menü resmi dikdörtgeni.
+[içinde] Menü görüntüsü dikdörtgeni.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman, görüntünün çizildiğini belirtmek için TRUE döndürür.
+Görüntünün çizildiğini belirtmek için her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="ondrawonlist"></a>CMFCRibbonBaseElement:: OnDrawOnList
+## <a name="cmfcribbonbaseelementondrawonlist"></a><a name="ondrawonlist"></a>CMFCRibbonBaseElement::OnDrawonlist
 
-Bir Komutlar liste kutusunda şerit öğesi çizmek için Framework tarafından çağırılır.
+Bir komut listesi kutusunda şerit öğesi çizmek için çerçeve tarafından çağrılır.
 
 ```
 virtual void OnDrawOnList(
@@ -1748,31 +1748,31 @@ virtual void OnDrawOnList(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Şerit öğesi için bir cihaz bağlamı işaretçisi.
+*Pdc*<br/>
+[içinde] Şerit öğesi için aygıt bağlamını işaretçi.
 
 *strText*<br/>
-'ndaki Görüntü metni.
+[içinde] Görüntü metni.
 
 *nTextOffset*<br/>
-'ndaki Liste kutusunun sol tarafındaki görüntü metnine göre piksel cinsinden uzaklık.
+[içinde] Pikselolarak, liste kutusunun sol tarafından ekran metnine kadar uzaklık.
 
 *Rect*<br/>
-'ndaki Şerit öğesi için görüntüleme dikdörtgeni.
+[içinde] Şerit öğesi için ekran dikdörtgeni.
 
 *bIsSelected*<br/>
-'ndaki Bu parametre kullanılmaz.
+[içinde] Bu parametre kullanılmaz.
 
-*Bvurgulu*<br/>
-'ndaki Bu parametre kullanılmaz.
+*bVurgulu*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Komutlar liste kutusu, kullanıcıların hızlı erişim araç çubuğunu özelleştirmesini sağlamak için Şerit öğelerini görüntüler.
+Komutlar listesi kutusu, kullanıcıların hızlı erişim araç çubuğunu özelleştirmelerini sağlamak için şerit öğelerini görüntüler.
 
-##  <a name="onkey"></a>CMFCRibbonBaseElement:: OnKey
+## <a name="cmfcribbonbaseelementonkey"></a><a name="onkey"></a>CMFCRibbonBaseElement::OnKey
 
-Kullanıcı bir KeyTip tuşuna bastığında ve şerit öğesi odağa sahip olduğunda Framework tarafından çağırılır.
+Kullanıcı bir tuş ucuna bastığında ve şerit öğesi odaklandığında çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnKey(BOOL bIsMenuKey);
@@ -1780,18 +1780,18 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
 
 ### <a name="parameters"></a>Parametreler
 
-*Bımenukey*<br/>
-'ndaki Keytıp bir açılır menü görüntülüyorsa, doğru. Aksi takdirde, FALSE.
+*bIsMenuKey*<br/>
+[içinde] Anahtar ucu açılır menü yütse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Olay işlenirse doğru; Aksi halde yanlış.
+Olay ele alındıysa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onmenukey"></a>CMFCRibbonBaseElement:: OnMenuKey
+## <a name="cmfcribbonbaseelementonmenukey"></a><a name="onmenukey"></a>CMFCRibbonBaseElement::OnMenuKey
 
-Kullanıcı ana paneldeki bir menü keytip 'e bastığında Framework tarafından çağırılır.
+Kullanıcı ana panelde bir menü anahtar ucu na bastığında çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnMenuKey(UINT nUpperChar);
@@ -1799,8 +1799,8 @@ virtual BOOL OnMenuKey(UINT nUpperChar);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nüstekarakteri*<br/>
-'ndaki Bu parametre kullanılmaz.
+*nUpperChar*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1808,11 +1808,11 @@ Her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman FALSE döndürür. Bir Kullanıcı ana paneldeki bir menü keytip 'e bastığında yanıt vermek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem her zaman FALSE döndürür. Bir kullanıcı ana panelde bir menü anahtar ucuna bastığında yanıt vermek için bu yöntemi geçersiz kılın.
 
-##  <a name="onprocesskey"></a>CMFCRibbonBaseElement:: OnProcessKey
+## <a name="cmfcribbonbaseelementonprocesskey"></a><a name="onprocesskey"></a>CMFCRibbonBaseElement::OnProcessKey
 
-Kullanıcı bir kısayol tuşuna bastığında Framework tarafından çağırılır.
+Kullanıcı bir kısayol tuşuna bastığında çerçeve tarafından çağrılır.
 
 ```
 virtual BOOL OnProcessKey(UINT nChar);
@@ -1820,8 +1820,8 @@ virtual BOOL OnProcessKey(UINT nChar);
 
 ### <a name="parameters"></a>Parametreler
 
-*nChar*<br/>
-'ndaki Bu parametre kullanılmaz.
+*Nchar*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1829,11 +1829,11 @@ Her zaman FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit öğesinin bir kısayol tuşunu işlemesini istiyorsanız bu yöntemi geçersiz kılın.
+Şerit öğesinin bir kısayol anahtarını işlemesini istiyorsanız bu yöntemi geçersiz kılın.
 
-##  <a name="onrtlchanged"></a>CMFCRibbonBaseElement:: OnRTLChanged
+## <a name="cmfcribbonbaseelementonrtlchanged"></a><a name="onrtlchanged"></a>CMFCRibbonBaseElement::OnRTLChanged
 
-Düzen yön değiştirdiğinde Framework tarafından çağırılır.
+Düzen yön değiştirdiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual void OnRTLChanged(BOOL bIsRTL);
@@ -1842,15 +1842,15 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ### <a name="parameters"></a>Parametreler
 
 *bIsRTL*<br/>
-'ndaki Bu parametre kullanılmaz.
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak bu yöntem hiçbir şey yapmaz. Düzen yön değiştirdiğinde şerit öğesini ayarlamak için bu yöntemi geçersiz kılın. Varsayılan düzen yönü soldan sağa doğru.
+Varsayılan olarak bu yöntem hiçbir şey yapmaz. Düzen yön değiştirdiğinde şerit öğesini ayarlamak için bu yöntemi geçersiz kılın. Varsayılan düzen yönü soldan sağadoğrudur.
 
-##  <a name="onsetfocus"></a>CMFCRibbonBaseElement:: OnSetFocus
+## <a name="cmfcribbonbaseelementonsetfocus"></a><a name="onsetfocus"></a>CMFCRibbonBaseElement::OnsetFocus
 
-Bir şerit öğesi giriş odağını aldığında veya kaybettiğinde Framework tarafından çağırılır.
+Bir şerit öğesi giriş odağı aldığında veya kaybettiğinde çerçeve tarafından çağrılır.
 
 ```
 virtual void OnSetFocus(BOOL B);
@@ -1858,11 +1858,11 @@ virtual void OnSetFocus(BOOL B);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamanızın bir şerit öğesinin odağında bir değişikliği işlemesini istiyorsanız, türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
+Uygulamanızın bir şerit öğesinin odağındaki bir değişikliği işlemesini istiyorsanız, türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-##  <a name="onshow"></a>CMFCRibbonBaseElement:: OnShow
+## <a name="cmfcribbonbaseelementonshow"></a><a name="onshow"></a>CMFCRibbonBaseElement::OnShow
 
-Şerit öğesini göstermek veya gizlemek için Framework tarafından çağırılır.
+Şerit öğesini göstermek veya gizlemek için çerçeve tarafından çağrılır.
 
 ```
 virtual void OnShow(BOOL bShow);
@@ -1870,16 +1870,16 @@ virtual void OnShow(BOOL bShow);
 
 ### <a name="parameters"></a>Parametreler
 
-*bShow*<br/>
-'ndaki Bu parametre kullanılmaz.
+*bGöster*<br/>
+[içinde] Bu parametre kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Varsayılan olarak bu yöntem hiçbir şey yapmaz. Şerit öğesini göstermek veya gizlemek için bu yöntemi geçersiz kılın.
 
-##  <a name="onshowpopupmenu"></a>CMFCRibbonBaseElement:: OnShowPopupMenu
+## <a name="cmfcribbonbaseelementonshowpopupmenu"></a><a name="onshowpopupmenu"></a>CMFCRibbonBaseElement::OnShowPopupMenu
 
-Ribbon öğesi bir açılır menü göstermadan önce Framework tarafından çağırılır.
+Şerit öğesi açılır menü den önce çerçeve tarafından çağrılır.
 
 ```
 virtual void OnShowPopupMenu();
@@ -1887,11 +1887,11 @@ virtual void OnShowPopupMenu();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, şerit öğesinin bir açılır menü göstereceği Kısayol çubuğunun üst penceresine bildirimde bulunur.
+Bu yöntem, şerit çubuğunun üst penceresine şerit öğesinin açılır menü göstereceğini bildirir.
 
-##  <a name="postmenucommand"></a>CMFCRibbonBaseElement::P ostMenuCommand
+## <a name="cmfcribbonbaseelementpostmenucommand"></a><a name="postmenucommand"></a>CMFCRibbonBaseElement::PostMenuCommand
 
-Şerit öğesinin açılır menüsünü kapatır ve üst menüye bir kapatma iletisi gönderir.
+Şerit öğesi için açılır menüyü kapatır ve üst menüye yakın bir ileti gönderir.
 
 ```
 void PostMenuCommand(UINT uiCmdId);
@@ -1899,16 +1899,16 @@ void PostMenuCommand(UINT uiCmdId);
 
 ### <a name="parameters"></a>Parametreler
 
-*Uıımıdıd*<br/>
-'ndaki Parametresi kullanılmıyor.
+*uiCmdId*<br/>
+[içinde] Parametre kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Close iletisi yalnızca şerit öğesi bir açılır menüde bulunuyorsa gönderilir.
+Yakın ileti yalnızca şerit öğesi açılır menüde bulunursa gönderilir.
 
-##  <a name="redraw"></a>CMFCRibbonBaseElement:: yeniden Çiz
+## <a name="cmfcribbonbaseelementredraw"></a><a name="redraw"></a>CMFCRibbonBaseElement::Yeniden Çiz
 
-Şerit öğesi için görünümü güncelleştirir.
+Şerit öğesi için ekranı güncelleştirir.
 
 ```
 virtual void Redraw();
@@ -1916,9 +1916,9 @@ virtual void Redraw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [CWnd:: RedrawWindow](/windows/win32/api/winuser/nf-winuser-redrawwindow) öğesini RDW_INVALIDATE, RDW_ERASE ve RDW_UPDATENOW Flags kümesiyle çağırarak şerit öğesi için görüntüleme dikdörtgenini yeniden çizer.
+Bu yöntem, [CWnd::RDW_INVALIDATE,](/windows/win32/api/winuser/nf-winuser-redrawwindow) RDW_ERASE ve RDW_UPDATENOW bayrakları ayarlanmış yeniden açılan pencereyi çağırarak şerit öğesi için görüntü dikdörtgenini yeniden çizer.
 
-##  <a name="setaccdata"></a>CMFCRibbonBaseElement:: SetACCData
+## <a name="cmfcribbonbaseelementsetaccdata"></a><a name="setaccdata"></a>CMFCRibbonBaseElement::SetACCData
 
 Şerit öğesi için erişilebilirlik verilerini ayarlar.
 
@@ -1931,9 +1931,9 @@ virtual BOOL SetACCData(
 ### <a name="parameters"></a>Parametreler
 
 *pParent*<br/>
-Şerit öğesi için üst pencere.
+Şerit öğesi için ana pencere.
 
-*verileri*<br/>
+*Veri*<br/>
 Şerit öğesi için erişilebilirlik verileri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1942,11 +1942,11 @@ Her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem Ribbon öğesi için erişilebilirlik verilerini ayarlar ve her zaman TRUE değerini döndürür. Erişilebilirlik verilerini ayarlamak ve başarılı veya başarısız olduğunu belirten bir değer döndürmek için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem şerit öğesi için erişilebilirlik verilerini ayarlar ve her zaman TRUE döndürür. Erişilebilirlik verilerini ayarlamak ve başarı veya başarısızlığı gösteren bir değer döndürmek için bu yöntemi geçersiz kılın.
 
-##  <a name="setcompactmode"></a>CMFCRibbonBaseElement:: SetCompactMode
+## <a name="cmfcribbonbaseelementsetcompactmode"></a><a name="setcompactmode"></a>CMFCRibbonBaseElement::SetCompactMode
 
-Şerit öğesi için görüntüleme boyutunu ayarlar.
+Şerit öğesi için ekran boyutunu ayarlar.
 
 ```
 virtual void SetCompactMode(BOOL bCompactMode = TRUE);
@@ -1955,22 +1955,22 @@ virtual void SetCompactMode(BOOL bCompactMode = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bCompactMode*<br/>
-'ndaki Şerit öğesinin görüntü boyutunu azaltmak için TRUE; Şerit öğesinin görüntü boyutunu artırmak için FALSE.
+[içinde] Şerit elemanının ekran boyutunu küçültmek için TRUE; Şerit öğesinin ekran boyutunu artırmak için FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki tabloda bu yöntemin mantığı özetlenmektedir.
+Aşağıdaki tabloda bu yöntemin mantığını özetleyin.
 
-|*bCompactMode*|Geçerli şerit öğe boyutu|Yeni şerit öğe boyutu|
+|*bCompactMode*|Geçerli şerit öğesi boyutu|Yeni şerit öğesi boyutu|
 |--------------------|---------------------------------|-----------------------------|
-|TRUE|Sıkıştırabilirsiniz|Değişiklik yok.|
-|TRUE|Ara|Mümkünse sıkıştır.|
-|TRUE|Büyük|Mümkünse ara.|
-|YANLÝÞ|Sıkıştırabilirsiniz|Mümkünse ara; Aksi takdirde büyük.|
+|TRUE|Kompakt|Değişiklik yok.|
+|TRUE|Ara|Mümkünse kompakt.|
+|TRUE|Büyük|Mümkünse orta.|
+|FALSE|Kompakt|Mümkünse orta; aksi takdirde büyük.|
 
-##  <a name="setdata"></a>CMFCRibbonBaseElement:: SetData
+## <a name="cmfcribbonbaseelementsetdata"></a><a name="setdata"></a>CMFCRibbonBaseElement::SetData
 
-Bir veri öğesini Ribbon öğesiyle ilişkilendirir.
+Bir veri öğesini şerit öğesiyle ilişkilendirer.
 
 ```
 void SetData(DWORD_PTR dwData);
@@ -1978,10 +1978,10 @@ void SetData(DWORD_PTR dwData);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwData*<br/>
-'ndaki Veri değeri.
+*Dwdata*<br/>
+[içinde] Veri değeri.
 
-##  <a name="setdefaultmenulook"></a>CMFCRibbonBaseElement:: SetDefaultMenuLook
+## <a name="cmfcribbonbaseelementsetdefaultmenulook"></a><a name="setdefaultmenulook"></a>CMFCRibbonBaseElement::SetDefaultMenuLook
 
 Şerit öğesini açılır komut olarak görünecek şekilde ayarlar.
 
@@ -1992,13 +1992,13 @@ void SetDefaultMenuLook(BOOL bIsDefaultMenuLook = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bIsDefaultMenuLook*<br/>
-'ndaki Şerit öğesini açılır komut olarak görünecek şekilde ayarlamak için TRUE; Aksi halde yanlış.
+[içinde] Şerit öğesini açılır komut olarak görünecek şekilde ayarlamak için TRUE; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setdescription"></a>CMFCRibbonBaseElement:: SetDescription
+## <a name="cmfcribbonbaseelementsetdescription"></a><a name="setdescription"></a>CMFCRibbonBaseElement::SetDescription
 
-Şerit öğesi için açıklama ayarlar.
+Şerit öğesinin açıklamasını ayarlar.
 
 ```
 virtual void SetDescription(LPCTSTR lpszText);
@@ -2006,16 +2006,16 @@ virtual void SetDescription(LPCTSTR lpszText);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszText*<br/>
-'ndaki Şerit öğesi için açıklama.
+*lpszMetin*<br/>
+[içinde] Şerit öğesinin açıklaması.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, yeni açıklamayı durum çubuğunda veya araç ipucunda ya da menü düğmesi altında görüntüler.
+Çerçeve, durum çubuğunda veya araç ucunda veya menü düğmesinin altında yeni açıklamayı görüntüler.
 
-##  <a name="setid"></a>CMFCRibbonBaseElement:: SetID
+## <a name="cmfcribbonbaseelementsetid"></a><a name="setid"></a>CMFCRibbonBaseElement::SetID
 
-Şerit öğesinin komut KIMLIĞINI ayarlar.
+Şerit öğesinin komut kimliğini ayarlar.
 
 ```
 virtual void SetID(UINT nID);
@@ -2023,12 +2023,12 @@ virtual void SetID(UINT nID);
 
 ### <a name="parameters"></a>Parametreler
 
-*NID*<br/>
-'ndaki Komut KIMLIĞI.
+*Nıd*<br/>
+[içinde] Komut kimliği.
 
-##  <a name="setinitialmode"></a>CMFCRibbonBaseElement:: Setınitialmode
+## <a name="cmfcribbonbaseelementsetinitialmode"></a><a name="setinitialmode"></a>CMFCRibbonBaseElement::SetInitialMode
 
-Şerit öğesi için ilk görüntüleme boyutunu ayarlar.
+Şerit öğesi için ilk ekran boyutunu ayarlar.
 
 ```
 virtual void SetInitialMode(BOOL bOneRow = FALSE);
@@ -2037,15 +2037,15 @@ virtual void SetInitialMode(BOOL bOneRow = FALSE);
 ### <a name="parameters"></a>Parametreler
 
 *bOneRow*<br/>
-'ndaki Şerit öğesi için görüntü boyutunu Compact veya ara olarak sınırlandırmak için TRUE; Aksi takdirde, FALSE.
+[içinde] Şerit elemanının ekran boyutunu kompakt veya orta ile sınırlamak için TRUE; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit öğelerinin görüntüleme boyutu sıkıştırma, ara veya büyük olabilir.
+Şerit elemanlarının ekran boyutu kompakt, orta veya büyük olabilir.
 
-##  <a name="setkeys"></a>CMFCRibbonBaseElement:: SetKeys
+## <a name="cmfcribbonbaseelementsetkeys"></a><a name="setkeys"></a>CMFCRibbonBaseElement::SetKeys
 
-Şerit öğesi için KeyTips 'ı ayarlar.
+Şerit öğesi için anahtar uçlarını ayarlar.
 
 ```
 virtual void SetKeys(
@@ -2056,12 +2056,12 @@ virtual void SetKeys(
 ### <a name="parameters"></a>Parametreler
 
 *lpszKeys*<br/>
-'ndaki Şerit öğesi için KeyTip.
+[içinde] Şerit öğesi için anahtar ucu.
 
 *lpszMenuKeys*<br/>
-'ndaki Şerit öğesinin açılır menüsünün KeyTip.
+[içinde] Şerit öğesinin açılır menüsünün anahtar ucu.
 
-##  <a name="setoriginal"></a>CMFCRibbonBaseElement:: Setoriguinal
+## <a name="cmfcribbonbaseelementsetoriginal"></a><a name="setoriginal"></a>CMFCRibbonBaseElement::SetOriginal
 
 Şerit öğesi için özgün şerit öğesini ayarlar.
 
@@ -2071,14 +2071,14 @@ virtual void SetOriginal(CMFCRibbonBaseElement* pOriginal);
 
 ### <a name="parameters"></a>Parametreler
 
-*pOriginal*<br/>
-'ndaki Şerit öğesi işaretçisi.
+*pOrijinal*<br/>
+[içinde] Şerit öğesiiçin işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başka bir kapsayıcıya kopyalanmış Şerit öğeleri, orijinal şerit öğesine yönelik bir işaretçi tutar.
+Başka bir kapsayıcıya kopyalanan şerit öğeleri özgün şerit öğesi için bir işaretçi tutar.
 
-##  <a name="setparentcategory"></a>CMFCRibbonBaseElement:: SetParentCategory
+## <a name="cmfcribbonbaseelementsetparentcategory"></a><a name="setparentcategory"></a>CMFCRibbonBaseElement::SetParentCategory
 
 Şerit öğesi için üst kategoriyi ayarlar.
 
@@ -2089,13 +2089,13 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 ### <a name="parameters"></a>Parametreler
 
 *pParent*<br/>
-'ndaki Şerit kategorisine yönelik işaretçi.
+[içinde] Şerit kategorisine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit denetimlerindeki sekmeli gruplar kategoriler olarak adlandırılır.
+Şerit denetimlerinde sekmeli gruplara kategoriler denir.
 
-##  <a name="setparentmenu"></a>CMFCRibbonBaseElement:: SetParentMenu
+## <a name="cmfcribbonbaseelementsetparentmenu"></a><a name="setparentmenu"></a>CMFCRibbonBaseElement::SetParentMenu
 
 Şerit öğesi için üst menü kapsayıcısını ayarlar.
 
@@ -2106,11 +2106,11 @@ virtual void SetParentMenu(CMFCRibbonPanelMenuBar* pMenuBar);
 ### <a name="parameters"></a>Parametreler
 
 *pMenuBar*<br/>
-'ndaki Ana menü.
+[içinde] Ana menü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setparentribbonbar"></a>CMFCRibbonBaseElement:: SetParentRibbonBar
+## <a name="cmfcribbonbaseelementsetparentribbonbar"></a><a name="setparentribbonbar"></a>CMFCRibbonBaseElement::SetParentRibbonÇubuğu
 
 Şerit öğesi için üst şerit çubuğunu ayarlar.
 
@@ -2120,14 +2120,14 @@ virtual void SetParentRibbonBar(CMFCRibbonBar* pRibbonBar);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pribbonçubuğu*<br/>
-'ndaki Üst şerit çubuğu işaretçisi.
+*pRibbonBar*<br/>
+[içinde] Üst şerit çubuğuna işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setrect"></a>CMFCRibbonBaseElement:: SetRect
+## <a name="cmfcribbonbaseelementsetrect"></a><a name="setrect"></a>CMFCRibbonBaseElement::SetRect
 
-Şerit öğesi için görüntüleme dikdörtgeninin boyutlarını ayarlar.
+Şerit öğesi için ekran dikdörtgeninin boyutlarını ayarlar.
 
 ```
 void SetRect(CRect rect);
@@ -2136,13 +2136,13 @@ void SetRect(CRect rect);
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-'ndaki Dikdörtgenin boyutları.
+[içinde] Dikdörtgenin boyutları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="settext"></a>CMFCRibbonBaseElement:: SetText
+## <a name="cmfcribbonbaseelementsettext"></a><a name="settext"></a>CMFCRibbonBaseElement::SetText
 
-Şerit öğesi için metni ve KeyTip 'i ayarlar.
+Şerit öğesi için metni ve anahtar ucunu ayarlar.
 
 ```
 virtual void SetText(LPCTSTR lpszText);
@@ -2150,12 +2150,12 @@ virtual void SetText(LPCTSTR lpszText);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszText*<br/>
-'ndaki Şerit öğesi için metin ve KeyTip.
+*lpszMetin*<br/>
+[içinde] Şerit öğesi için metin ve anahtar ucu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit öğesi için keytıp 'yi ayarlamak için, yeni satır kaçış dizisini ve ardından *lpszText*için keytip karakterlerinden sonuna ekleyin.
+Şerit öğesi için anahtar ucunu ayarlamak için, *lpszText*için anahtar ucu karakterleri ardından yeni satır kaçış sırasını eklemek.
 
 ### <a name="example"></a>Örnek
 
@@ -2168,9 +2168,9 @@ SetText(_T("Margins\nm"))
 SetText(_T("Line Numbers\nln"))
 ```
 
-##  <a name="settextalwaysonright"></a>CMFCRibbonBaseElement:: SetTextAlwaysOnRight
+## <a name="cmfcribbonbaseelementsettextalwaysonright"></a><a name="settextalwaysonright"></a>CMFCRibbonBaseElement::SetTextAlwaysonRight
 
-Sağ tarafta görüntülenecek Şerit öğesi için metni ayarlar.
+Şerit öğesinin metnini sağda görüntülemek üzere ayarlar.
 
 ```
 virtual void SetTextAlwaysOnRight(BOOL bSet = TRUE);
@@ -2179,11 +2179,11 @@ virtual void SetTextAlwaysOnRight(BOOL bSet = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bSet*<br/>
-'ndaki Sağ tarafta metin göstermek için TRUE; Aksi halde yanlış.
+[içinde] Sağdaki metni görüntülemek için DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="settooltiptext"></a>CMFCRibbonBaseElement:: SetToolTipText
+## <a name="cmfcribbonbaseelementsettooltiptext"></a><a name="settooltiptext"></a>CMFCRibbonBaseElement::SetToolTipText
 
 Şerit öğesi için araç ipucu metnini ayarlar.
 
@@ -2193,10 +2193,10 @@ virtual void SetToolTipText(LPCTSTR lpszText);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszText*<br/>
-'ndaki Araç ipucu metni.
+*lpszMetin*<br/>
+[içinde] Araç ipucu metni.
 
-##  <a name="setvisible"></a>CMFCRibbonBaseElement:: SetVisible
+## <a name="cmfcribbonbaseelementsetvisible"></a><a name="setvisible"></a>CMFCRibbonBaseElement::SetVisible
 
 Şerit öğesinin görünürlüğünü ayarlar.
 
@@ -2207,13 +2207,13 @@ void SetVisible(BOOL bIsVisible);
 ### <a name="parameters"></a>Parametreler
 
 *bIsVisible*<br/>
-'ndaki Şerit öğesini göstermek için TRUE; Şerit öğesini gizlemek için FALSE.
+[içinde] Şerit öğesini görüntülemek için DOĞRU; Şerit öğesini gizlemek için FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="stretchhorizontally"></a>CMFCRibbonBaseElement::, yatay
+## <a name="cmfcribbonbaseelementstretchhorizontally"></a><a name="stretchhorizontally"></a>CMFCRibbonBaseElement::StretchHorizontally
 
-Şerit öğesinin genişliğini uzatır.
+Şerit öğesinin genişliğini genişletir.
 
 ```
 virtual void StretchHorizontally();
@@ -2221,11 +2221,11 @@ virtual void StretchHorizontally();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem hata ayıklama yapılarında bir onaylama hatası oluşturur ve bu nedenle çağrılmamalıdır. Şerit öğesinin genişliğini uzatmak için bu yöntemi geçersiz kılın.
+Varsayılan olarak bu yöntem hata ayıklama oluşturur bir sedama hatası oluşturur ve bu nedenle çağrılmamalıdır. Şerit öğesinin genişliğini genişletmek için bu yöntemi geçersiz kılın.
 
-##  <a name="stretchtowholerow"></a>CMFCRibbonBaseElement:: ısetowholerow
+## <a name="cmfcribbonbaseelementstretchtowholerow"></a><a name="stretchtowholerow"></a>CMFCRibbonBaseElement::Stretchtowholerow
 
-Şerit öğesinin görüntüleme yüksekliğini belirtilen satır yüksekliğine dönüştürür.
+Şerit öğesinin ekran yüksekliğini belirtilen satır yüksekliğiyle değiştirir.
 
 ```
 virtual BOOL StretchToWholeRow(
@@ -2235,21 +2235,21 @@ virtual BOOL StretchToWholeRow(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kökündeki*<br/>
-'ndaki Bu parametre kullanılmaz.
+*Pdc*<br/>
+[içinde] Bu parametre kullanılmaz.
 
-*nHeight*<br/>
-'ndaki Satırın yüksekliği.
+*Nheight*<br/>
+[içinde] Sıranın yüksekliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görüntüleme yüksekliği ayarlandıysa doğru; Aksi takdirde, FALSE.
+Ekran yüksekliği ayarlanmışsa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit öğesinin görüntüleme yüksekliğini belirtilen satır yüksekliğine değiştirmek için bu yöntemi geçersiz kılın.
+Şerit öğesinin ekran yüksekliğini belirtilen satır yüksekliğiyle değiştirmek için bu yöntemi geçersiz kılın.
 
-##  <a name="updatetooltipinfo"></a>CMFCRibbonBaseElement:: Updatetooltipınfo
+## <a name="cmfcribbonbaseelementupdatetooltipinfo"></a><a name="updatetooltipinfo"></a>CMFCRibbonBaseElement::UpdateTooltipInfo
 
 Şerit öğesi için komut kaynağını kullanarak araç ipucu metnini güncelleştirir.
 
@@ -2259,9 +2259,9 @@ virtual void UpdateTooltipInfo();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="hasfocus"></a>CMFCRibbonBaseElement:: HasFocus
+## <a name="cmfcribbonbaseelementhasfocus"></a><a name="hasfocus"></a>CMFCRibbonBaseElement::HasFocus
 
-Üst öğenin klavye odağına sahip olup olmadığını gösterir.
+Üst öğenin klavye odağı olup olmadığını gösterir.
 
 ```
 virtual BOOL HasFocus() const;
@@ -2269,7 +2269,7 @@ virtual BOOL HasFocus() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit öğesi odaklı ise doğru; Aksi halde yanlış.
+Şerit öğesi odaklanmışsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 

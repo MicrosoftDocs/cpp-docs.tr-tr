@@ -5,22 +5,22 @@ f1_keywords:
 - concrt/concurrency::operator!=
 - concrt/concurrency:[operator&amp;&amp
 ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
-ms.openlocfilehash: 676e1936af317a6ab19959f8fd09b1de06dfaf69
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: aac43a15b09bd792118fbfe7ea51493b73b8ac9d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422145"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374388"
 ---
 # <a name="concurrency-namespace-operators"></a>eşzamanlılık ad alanı İşleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#operator_neq)|[işleç&amp;&amp;](#operator_amp_amp)|[işleç&gt;](#operator_gt)|
-|[işleç&gt;=](#operator_gt_eq)|[işleç&lt;](#operator_lt)|[işleç&lt;=](#operator_lt_eq)|
-|[işleç = =](#operator_eq_eq)|[işlecinde&#124;&#124;](#operator_lor)| |
+|[işleç!=](#operator_neq)|[Işleç&amp;&amp;](#operator_amp_amp)|[Işleç&gt;](#operator_gt)|
+|[Işleç&gt;=](#operator_gt_eq)|[Işleç&lt;](#operator_lt)|[Işleç&lt;=](#operator_lt_eq)|
+|[işleç==](#operator_eq_eq)|[operatör&#124;&#124;](#operator_lor)| |
 
-## <a name="operator_lor"></a>işleç&#124; &#124; işleci
+## <a name="operator124124-operator"></a><a name="operator_lor"></a>operatör&#124;&#124; Operatörü
 
 Bağımsız değişken olarak sağlanan görevlerden biri başarıyla tamamlandığında başarıyla tamamlanacak bir görev oluşturur.
 
@@ -47,24 +47,24 @@ inline task<void> operator||(
 
 ### <a name="parameters"></a>Parametreler
 
-*'Indaki*<br/>
+*Returntype*<br/>
 Döndürülen görevin türü.
 
-*Point*<br/>
-Elde edilen görevde birleştirilecek ilk görev.
+*Lhs*<br/>
+Elde edilen görev de birleştirmek için ilk görev.
 
-*sağ taraftan*<br/>
-Elde edilen görevde birleştirilecek ikinci görev.
+*Rhs*<br/>
+İkinci görev ortaya çıkan görev içine birleştirmek için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Giriş görevlerinden herhangi biri başarıyla tamamlandığında başarıyla tamamlanan bir görev. Giriş görevleri `T`türünde ise, bu işlevin çıktısı bir `task<std::vector<T>`olur. Giriş görevleri türü `void`, çıkış görevi de bir `task<void>`olacaktır.
+Giriş görevlerinden biri başarıyla tamamlandığında başarıyla tamamlayan bir görev. Giriş görevleri türde `T`ise, bu işlevin çıktısı `task<std::vector<T>`. Giriş görevleri tür `void` varsa çıktı görevi de bir `task<void>`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görevlerin her ikisi de iptal edilirse veya özel durum fırlalırsa, döndürülen görev iptal edildi durumunda tamamlanır ve bu görevde karşılaşılırsa, bu görevde `get()` veya `wait()` çağırdığınızda oluşturulur.
+Görevlerin her ikisi de iptal edilirse veya özel durumlar atılırsa, döndürülen görev iptal edilen durumda tamamlanır ve karşılaşırsa `get()` özel `wait()` durumlardan biri, aradığınızda veya bu görevde atılır.
 
-## <a name="operator_amp_amp"></a>işleç&amp;&amp; Işleci
+## <a name="operatorampamp-operator"></a><a name="operator_amp_amp"></a>operatör&amp; &amp; Operatörü
 
 Bağımsız değişken olarak sağlanan görevlerin her ikisi de başarıyla tamamlandığında başarıyla tamamlanacak bir görev oluşturur.
 
@@ -96,26 +96,26 @@ inline task<void>  operator&&(
 
 ### <a name="parameters"></a>Parametreler
 
-*'Indaki*<br/>
+*Returntype*<br/>
 Döndürülen görevin türü.
 
-*Point*<br/>
-Elde edilen görevde birleştirilecek ilk görev.
+*Lhs*<br/>
+Elde edilen görev de birleştirmek için ilk görev.
 
-*sağ taraftan*<br/>
-Elde edilen görevde birleştirilecek ikinci görev.
+*Rhs*<br/>
+İkinci görev ortaya çıkan görev içine birleştirmek için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Giriş görevlerinin her ikisi de başarıyla tamamlandığında başarıyla tamamlanan bir görev. Giriş görevleri `T`türünde ise, bu işlevin çıktısı bir `task<std::vector<T>>`olur. Giriş görevleri türü `void`, çıkış görevi de bir `task<void>`olacaktır.
+Her iki giriş görevi de başarıyla tamamlandığında başarıyla tamamlayan bir görev. Giriş görevleri türde `T`ise, bu işlevin çıktısı `task<std::vector<T>>`. Giriş görevleri tür `void` varsa çıktı görevi de bir `task<void>`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görevlerden biri iptal edildiğinde veya bir özel durum oluşturursa, döndürülen görev erken tamamlanır, iptal edildi durumunda ve bir hata oluşursa özel durum, bu görevde `get()` veya `wait()` çağırdıysanız oluşturulur.
+Görevlerden biri iptal edilirse veya özel bir durum atarsa, döndürülen görev iptal edilen durumda erken tamamlanır ve biri oluşursa, bu görevde `get()` veya `wait()` bu görevde özel durum atılır.
 
-## <a name="operator_eq_eq"></a>operator = = Işleci
+## <a name="operator-operator"></a><a name="operator_eq_eq"></a>işleç== Operatör
 
-İşlecin sol tarafındaki `concurrent_vector` nesnesinin sağ taraftaki `concurrent_vector` nesnesine eşit olup olmadığını sınar.
+Işlecinin `concurrent_vector` sol tarafındaki nesnenin sağ taraftaki `concurrent_vector` nesneye eşit olup olmadığını test edin.
 
 ```cpp
 template<typename T, class A1, class A2>
@@ -126,14 +126,14 @@ inline bool operator== (
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Eşzamanlı vektörde depolanan öğelerin veri türü.
+*T*<br/>
+Eşzamanlı vektörlerde depolanan öğelerin veri türü.
 
-*Sırasıyla*<br/>
-İlk `concurrent_vector` nesnesinin ayırıcı türü.
+*A1*<br/>
+İlk `concurrent_vector` nesnenin ayırıcı türü.
 
-*Y2*<br/>
-İkinci `concurrent_vector` nesnesinin ayırıcı türü.
+*A2*<br/>
+İkinci `concurrent_vector` nesnenin ayırıcı türü.
 
 *_A*<br/>
 `concurrent_vector` türünün bir nesnesi.
@@ -143,17 +143,17 @@ Eşzamanlı vektörde depolanan öğelerin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki eşzamanlı vektör, işlecin sağ tarafındaki eşzamanlı vektöre eşitse **true** ; Aksi halde **yanlış**.
+işlecinin sol tarafındaki eşzamanlı vektör işlecinin sağ tarafındaki eşzamanlı vektöre eşitse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olmaları durumunda iki eşzamanlı vektör eşittir. Aksi takdirde, bunlar eşit değildir.
+Aynı sayıda eleman varsa ve ilgili öğeleri aynı değerlere sahipse, iki eşzamanlı vektör eşittir. Aksi takdirde, eşit değildir.
 
-Bu yöntem, eşzamanlı vektörlerle `_A` ya da `_B`değiştirebilen diğer yöntemlere göre eşzamanlılık açısından güvenli değildir.
+Bu yöntem, eşzamanlı vektörlerden `_A` herhangi birini değiştirebilecek diğer yöntemlerle ilgili `_B`olarak eşzamanlılık açısından güvenli değildir veya.
 
-## <a name="operator_neq"></a>operator! = Işleci
+## <a name="operator-operator"></a><a name="operator_neq"></a>işleç!= Operatör
 
-İşlecin sol tarafındaki `concurrent_vector` nesnesinin sağ taraftaki `concurrent_vector` nesnesine eşit olup olmadığını sınar.
+Işlecinin `concurrent_vector` sol tarafındaki nesnenin sağ taraftaki `concurrent_vector` nesneye eşit olmamasını test edin.
 
 ```cpp
 template<typename T, class A1, class A2>
@@ -164,14 +164,14 @@ inline bool operator!= (
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Eşzamanlı vektörde depolanan öğelerin veri türü.
+*T*<br/>
+Eşzamanlı vektörlerde depolanan öğelerin veri türü.
 
-*Sırasıyla*<br/>
-İlk `concurrent_vector` nesnesinin ayırıcı türü.
+*A1*<br/>
+İlk `concurrent_vector` nesnenin ayırıcı türü.
 
-*Y2*<br/>
-İkinci `concurrent_vector` nesnesinin ayırıcı türü.
+*A2*<br/>
+İkinci `concurrent_vector` nesnenin ayırıcı türü.
 
 *_A*<br/>
 `concurrent_vector` türünün bir nesnesi.
@@ -181,17 +181,17 @@ Eşzamanlı vektörde depolanan öğelerin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-eşzamanlı vektörler eşit değilse **doğru** ; eşzamanlı vektörler eşitse **false** .
+eşzamanlı vektörler eşit değilse **doğrudur;** eşzamanlı vektörler eşitse **yanlış** olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olmaları durumunda iki eşzamanlı vektör eşittir. Aksi takdirde, bunlar eşit değildir.
+Aynı sayıda eleman varsa ve ilgili öğeleri aynı değerlere sahipse, iki eşzamanlı vektör eşittir. Aksi takdirde, eşit değildir.
 
-Bu yöntem, eşzamanlı vektörlerle `_A` ya da `_B`değiştirebilen diğer yöntemlere göre eşzamanlılık açısından güvenli değildir.
+Bu yöntem, eşzamanlı vektörlerden `_A` herhangi birini değiştirebilecek diğer yöntemlerle ilgili `_B`olarak eşzamanlılık açısından güvenli değildir veya.
 
-## <a name="operator_lt"></a>işleç&lt; Işleci
+## <a name="operatorlt-operator"></a><a name="operator_lt"></a>operatör&lt; Operatörü
 
-İşlecin sol tarafındaki `concurrent_vector` nesnesinin sağ taraftaki `concurrent_vector` nesnesinden küçük olup olmadığını sınar.
+İşleticinin `concurrent_vector` sol tarafındaki nesnenin sağ taraftaki `concurrent_vector` nesneden daha az olup olmadığını test edin.
 
 ```cpp
 template<typename T, class A1, class A2>
@@ -202,14 +202,14 @@ inline bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Eşzamanlı vektörde depolanan öğelerin veri türü.
+*T*<br/>
+Eşzamanlı vektörlerde depolanan öğelerin veri türü.
 
-*Sırasıyla*<br/>
-İlk `concurrent_vector` nesnesinin ayırıcı türü.
+*A1*<br/>
+İlk `concurrent_vector` nesnenin ayırıcı türü.
 
-*Y2*<br/>
-İkinci `concurrent_vector` nesnesinin ayırıcı türü.
+*A2*<br/>
+İkinci `concurrent_vector` nesnenin ayırıcı türü.
 
 *_A*<br/>
 `concurrent_vector` türünün bir nesnesi.
@@ -219,17 +219,17 @@ Eşzamanlı vektörde depolanan öğelerin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki eşzamanlı vektör, işlecin sağ tarafındaki eşzamanlı vektörden küçükse **true** ; Aksi halde **yanlış**.
+işlecinin sol tarafındaki eşzamanlı vektör işlecinin sağ tarafındaki eşzamanlı vektörden daha azsa **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlecin davranışı, `std` ad alanındaki `vector` sınıfı için eşdeğer işleçle aynıdır.
+Bu işlecinin `vector` `std` davranışı, ad alanındaki sınıfın eşdeğer işleciyle aynıdır.
 
-Bu yöntem, eşzamanlı vektörlerle `_A` ya da `_B`değiştirebilen diğer yöntemlere göre eşzamanlılık açısından güvenli değildir.
+Bu yöntem, eşzamanlı vektörlerden `_A` herhangi birini değiştirebilecek diğer yöntemlerle ilgili `_B`olarak eşzamanlılık açısından güvenli değildir veya.
 
-## <a name="operator_lt_eq"></a>operator&lt;= Işleci
+## <a name="operatorlt-operator"></a><a name="operator_lt_eq"></a>işleç&lt;= Operatör
 
-İşlecin sol tarafındaki `concurrent_vector` nesnesinin sağ taraftaki `concurrent_vector` nesnesinden küçük veya ona eşit olup olmadığını sınar.
+İşleticinin `concurrent_vector` sol tarafındaki nesnenin sağ taraftaki `concurrent_vector` nesneye daha az veya eşit olup olmadığını test edin.
 
 ```cpp
 template<typename T, class A1, class A2>
@@ -240,14 +240,14 @@ inline bool operator<= (
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Eşzamanlı vektörde depolanan öğelerin veri türü.
+*T*<br/>
+Eşzamanlı vektörlerde depolanan öğelerin veri türü.
 
-*Sırasıyla*<br/>
-İlk `concurrent_vector` nesnesinin ayırıcı türü.
+*A1*<br/>
+İlk `concurrent_vector` nesnenin ayırıcı türü.
 
-*Y2*<br/>
-İkinci `concurrent_vector` nesnesinin ayırıcı türü.
+*A2*<br/>
+İkinci `concurrent_vector` nesnenin ayırıcı türü.
 
 *_A*<br/>
 `concurrent_vector` türünün bir nesnesi.
@@ -257,17 +257,17 @@ Eşzamanlı vektörde depolanan öğelerin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki eşzamanlı vektör, işlecin sağ tarafındaki eşzamanlı vektörden küçük veya bu değere eşitse **true** ; Aksi halde **yanlış**.
+işlecinin sol tarafındaki eşzamanlı vektör operatörün sağ tarafındaki eşzamanlı vektörden daha az veya eşitse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlecin davranışı, `std` ad alanındaki `vector` sınıfı için eşdeğer işleçle aynıdır.
+Bu işlecinin `vector` `std` davranışı, ad alanındaki sınıfın eşdeğer işleciyle aynıdır.
 
-Bu yöntem, eşzamanlı vektörlerle `_A` ya da `_B`değiştirebilen diğer yöntemlere göre eşzamanlılık açısından güvenli değildir.
+Bu yöntem, eşzamanlı vektörlerden `_A` herhangi birini değiştirebilecek diğer yöntemlerle ilgili `_B`olarak eşzamanlılık açısından güvenli değildir veya.
 
-## <a name="operator_gt"></a>işleç&gt; Işleci
+## <a name="operatorgt-operator"></a><a name="operator_gt"></a>operatör&gt; Operatörü
 
-İşlecin sol tarafındaki `concurrent_vector` nesnesinin sağ taraftaki `concurrent_vector` nesnesinden büyük olup olmadığını sınar.
+İşleticinin `concurrent_vector` sol tarafındaki nesnenin sağ taraftaki `concurrent_vector` nesneden büyük olup olmadığını test edin.
 
 ```cpp
 template<typename T, class A1, class A2>
@@ -278,14 +278,14 @@ inline bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Eşzamanlı vektörde depolanan öğelerin veri türü.
+*T*<br/>
+Eşzamanlı vektörlerde depolanan öğelerin veri türü.
 
-*Sırasıyla*<br/>
-İlk `concurrent_vector` nesnesinin ayırıcı türü.
+*A1*<br/>
+İlk `concurrent_vector` nesnenin ayırıcı türü.
 
-*Y2*<br/>
-İkinci `concurrent_vector` nesnesinin ayırıcı türü.
+*A2*<br/>
+İkinci `concurrent_vector` nesnenin ayırıcı türü.
 
 *_A*<br/>
 `concurrent_vector` türünün bir nesnesi.
@@ -295,17 +295,17 @@ Eşzamanlı vektörde depolanan öğelerin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki eşzamanlı vektör, işlecin sağ tarafındaki eşzamanlı vektörden büyükse **true** ; Aksi halde **yanlış**.
+işlecinin sol tarafındaki eşzamanlı vektör işlecinin sağ tarafındaki eşzamanlı vektörden büyükse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlecin davranışı, `std` ad alanındaki `vector` sınıfı için eşdeğer işleçle aynıdır.
+Bu işlecinin `vector` `std` davranışı, ad alanındaki sınıfın eşdeğer işleciyle aynıdır.
 
-Bu yöntem, eşzamanlı vektörlerle `_A` ya da `_B`değiştirebilen diğer yöntemlere göre eşzamanlılık açısından güvenli değildir.
+Bu yöntem, eşzamanlı vektörlerden `_A` herhangi birini değiştirebilecek diğer yöntemlerle ilgili `_B`olarak eşzamanlılık açısından güvenli değildir veya.
 
-## <a name="operator_gt_eq"></a>operator&gt;= Işleci
+## <a name="operatorgt-operator"></a><a name="operator_gt_eq"></a>işleç&gt;= Operatör
 
-İşlecin sol tarafındaki `concurrent_vector` nesnesinin sağ taraftaki `concurrent_vector` nesnesinden büyük veya ona eşit olup olmadığını sınar.
+İşleticinin `concurrent_vector` sol tarafındaki nesnenin sağ taraftaki `concurrent_vector` nesneyden büyük veya eşit olup olmadığını test edin.
 
 ```cpp
 template<typename T, class A1, class A2>
@@ -316,14 +316,14 @@ inline bool operator>= (
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Eşzamanlı vektörde depolanan öğelerin veri türü.
+*T*<br/>
+Eşzamanlı vektörlerde depolanan öğelerin veri türü.
 
-*Sırasıyla*<br/>
-İlk `concurrent_vector` nesnesinin ayırıcı türü.
+*A1*<br/>
+İlk `concurrent_vector` nesnenin ayırıcı türü.
 
-*Y2*<br/>
-İkinci `concurrent_vector` nesnesinin ayırıcı türü.
+*A2*<br/>
+İkinci `concurrent_vector` nesnenin ayırıcı türü.
 
 *_A*<br/>
 `concurrent_vector` türünün bir nesnesi.
@@ -333,14 +333,14 @@ Eşzamanlı vektörde depolanan öğelerin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki eşzamanlı vektör, işlecin sağ tarafındaki eşzamanlı vektörden büyükse veya buna eşitse **true** ; Aksi halde **yanlış**.
+işlecinin sol tarafındaki eşzamanlı vektör operatörün sağ tarafındaki eşzamanlı vektörden büyük veya eşitse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlecin davranışı, `std` ad alanındaki `vector` sınıfı için eşdeğer işleçle aynıdır.
+Bu işlecinin `vector` `std` davranışı, ad alanındaki sınıfın eşdeğer işleciyle aynıdır.
 
-Bu yöntem, eşzamanlı vektörlerle `_A` ya da `_B`değiştirebilen diğer yöntemlere göre eşzamanlılık açısından güvenli değildir.
+Bu yöntem, eşzamanlı vektörlerden `_A` herhangi birini değiştirebilecek diğer yöntemlerle ilgili `_B`olarak eşzamanlılık açısından güvenli değildir veya.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+[concurrency Ad Alanı](concurrency-namespace.md)

@@ -6,16 +6,16 @@ f1_keywords:
 - AMP_SHORT_VECTORS/short_vector
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector::short_vector Constructor
 ms.assetid: e4f50b8f-1150-437d-b58c-79c5fb883708
-ms.openlocfilehash: 531b8d53eac8d997b7e8ca4d29aad7d34ef90e22
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: fc2864477da80885b18dabb08b9ccbee30f31387
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126441"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374744"
 ---
 # <a name="short_vector-structure"></a>short_vector Yapısı
 
-short_vector, kısa vektörlerini genelden programlamak için yararlı olan metaprogramlama tanımları sağlar.
+short_vector, kısa vektörleri genel olarak programlamak için yararlı olan meta programlama tanımları sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,17 +83,17 @@ struct short_vector<double, 4>;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Ortak tür tanımları
+### <a name="public-typedefs"></a>Genel Typedefs
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |`type`||
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[short_vector:: short_vector Oluşturucusu](#ctor)||
+|[short_vector::short_vector Yapıcı](#ctor)||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -101,11 +101,11 @@ struct short_vector<double, 4>;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** amp_short_vectors. h
+**Üstbilgi:** amp_short_vectors.h
 
-**Ad alanı:** Eşzamanlılık:: grafik
+**Ad alanı:** Eşzamanlılık::grafikler
 
-## <a name="ctor"></a>short_vector:: short_vector Oluşturucusu
+## <a name="short_vectorshort_vector-constructor"></a><a name="ctor"></a>short_vector::short_vector Yapıcı
 
 ```cpp
 short_vector();

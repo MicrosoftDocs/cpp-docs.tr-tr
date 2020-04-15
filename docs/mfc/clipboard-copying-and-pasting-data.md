@@ -1,69 +1,69 @@
 ---
-title: 'Pano: Veri kopyalama ve yapıştırma'
+title: 'Pano: Veri Kopyalama ve Yapıştırma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Clipboard, copying data to
 - Clipboard, pasting
 ms.assetid: 580e10be-241f-4f9f-94cf-8302edc5beef
-ms.openlocfilehash: cff9094315dc97e2040eb4dbad25d044c7c51a81
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 74348dd3e790cceada9aafd718464694997316ed
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327151"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81374565"
 ---
-# <a name="clipboard-copying-and-pasting-data"></a>Pano: Veri kopyalama ve yapıştırma
+# <a name="clipboard-copying-and-pasting-data"></a>Pano: Veri Kopyalama ve Yapıştırma
 
-Bu konu, kopyalama ve OLE uygulamanızda panodan yapıştırma uygulamak gerekli en düşük iş açıklar. Okumanızı tavsiye edilir [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md) devam etmeden önce konuları.
+Bu konu, OLE uygulamanızda Pano'ya kopyalama ve yapıştırma uygulamak için gereken minimum çalışmayı açıklar. İşleme başlamadan önce [Veri Nesneleri ve Veri Kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md) konularını okumanız önerilir.
 
-Kopyalama veya yapıştırarak uygulamadan önce ilk Düzen menüsünde Kopyala, Kes ve Yapıştır seçeneklerini işlemek için işlevleri sağlamanız gerekir.
+Kopyalama veya yapıştırma uygulamadan önce, Edit menüsündeki Kopyala, Kes ve Yapıştır seçeneklerini işlemek için işlevler sağlamanız gerekir.
 
-##  <a name="_core_copying_or_cutting_data"></a> Kopyalama veya kesme verileri
+## <a name="copying-or-cutting-data"></a><a name="_core_copying_or_cutting_data"></a>Verileri Kopyalama veya Kesme
 
-#### <a name="to-copy-data-to-the-clipboard"></a>Verileri panoya kopyalamak için
+#### <a name="to-copy-data-to-the-clipboard"></a>Verileri Panoya kopyalamak için
 
-1. Kopyalanacak verileri yerel veriler veya gömülü veya bağlantılı bir öğe olup olmadığını belirler.
+1. Kopyalanacak verilerin yerel veri mi yoksa katıştırılmış veya bağlantılı bir öğe mi olduğunu belirleyin.
 
-   - Veri gömülü veya bağlantılı bir işaretçi alma `COleClientItem` seçildi bir nesne.
+   - Veriler katıştırılmış veya bağlıysa, `COleClientItem` seçilen nesneye bir işaretçi edinin.
 
-   - Verileri yerel olarak ve bir sunucu uygulaması ise, türetilen yeni nesne oluşturma `COleServerItem` seçilen verileri içeren. Aksi takdirde, oluşturun bir `COleDataSource` veri nesnesi.
+   - Veriler yerelse ve uygulama bir sunucuysa, seçili `COleServerItem` verileri içeren yeni bir nesne oluşturun. Aksi takdirde, `COleDataSource` veriler için bir nesne oluşturun.
 
-1. Seçilen öğenin arama `CopyToClipboard` üye işlevi.
+1. Seçili öğenin `CopyToClipboard` üye işlevini arayın.
 
-1. Kullanıcı, bir kopyalama işlemi yerine bir kesme işlemi seçerseniz, seçilen verileri uygulamanızdan silin.
+1. Kullanıcı Kopyalama işlemi yerine bir Kesme işlemi seçtiyse, uygulamanızdan seçili verileri silin.
 
-Bu sıralı bir örneğini görmek için bkz: `OnEditCut` ve `OnEditCopy` işlevlerde MFC OLE örnek programlar [OCLIENT](../overview/visual-cpp-samples.md) ve [HIERSVR](../overview/visual-cpp-samples.md). 1. adım zaten tamamlandı, bu nedenle bu örnekleri şu anda seçili veri işaretçisi korumak unutmayın.
+Bu dizinin bir örneğini görmek `OnEditCut` `OnEditCopy` için, MFC OLE örnek programları [OCLIENT](../overview/visual-cpp-samples.md) ve [HIERSVR'daki](../overview/visual-cpp-samples.md)işlevleri ve işlevleri görün. Bu örneklerin şu anda seçili verilere işaretçisi koruduğunu, bu nedenle adım 1'in zaten tamamlandığını unutmayın.
 
-##  <a name="_core_pasting_data"></a> Veri yapıştırma
+## <a name="pasting-data"></a><a name="_core_pasting_data"></a>Verileri Yapıştırma
 
-Veri yapıştırma uygulamanıza veri yapıştırma içinde kullanılacak biçimi seçin gerektiğinden kopyalayarak değerinden daha karmaşık bir işlemdir.
+Verileri yapıştırmak, verileri uygulamanıza yapıştırmada kullanılacak biçimi seçmeniz gerektiğinden kopyalamaktan daha karmaşıktır.
 
-#### <a name="to-paste-data-from-the-clipboard"></a>Pano verileri yapıştırmak için
+#### <a name="to-paste-data-from-the-clipboard"></a>Panodan veri yapıştırmak için
 
-1. View sınıfında, uygulama `OnEditPaste` Düzenle Menüsü'nden Yapıştır seçeneği seçerek kullanıcılar işlemek için.
+1. Görünüm sınıfınızda, `OnEditPaste` Edit menüsünden Yapıştır seçeneğini seçen kullanıcıları işlemek için uygulayın.
 
-1. İçinde `OnEditPaste` işlev, oluşturun bir `COleDataObject` nesne ve çağrı kendi `AttachClipboard` Panodaki veriler için bu nesneyi bağlamak için üye işlevi.
+1. İşlevde, `OnEditPaste` bir `COleDataObject` nesne oluşturun `AttachClipboard` ve bu nesneyi Pano'daki verilere bağlamak için üye işlevini çağırın.
 
-1. Çağrı `COleDataObject::IsDataAvailable` belirli bir biçimde kullanılabilir olup olmadığını denetlemek için.
+1. Belirli `COleDataObject::IsDataAvailable` bir biçimin kullanılabilir olup olmadığını kontrol etmek için arayın.
 
-   Alternatif olarak, kullanabileceğiniz `COleDataObject::BeginEnumFormats` bir uygulamanız için en uygun bulana kadar diğer biçimleri için aranacak.
+   Alternatif olarak, uygulamanız için en uygun biçimleri bulana kadar diğer biçimleri aramak için kullanabilirsiniz. `COleDataObject::BeginEnumFormats`
 
-1. Yapıştırma biçimi gerçekleştirin.
+1. Biçimin yapıştırını gerçekleştirin.
 
-Bunun nasıl çalıştığına ilişkin bir örnek için bkz: `OnEditPaste` MFC OLE örnek programlardan içinde tanımlanan görünüm sınıflardaki üye işlevleri [OCLIENT](../overview/visual-cpp-samples.md) ve [HIERSVR](../overview/visual-cpp-samples.md).
+Bunun nasıl çalıştığına bir örnek olarak, `OnEditPaste` MFC OLE örnek programlarında tanımlanan görünüm sınıflarında üye işlevlerin uygulanmasına bakın [OCLIENT](../overview/visual-cpp-samples.md) ve [HIERSVR.](../overview/visual-cpp-samples.md)
 
 > [!TIP]
->  Yapıştırma işlemi kendi işlevine ayırma ana avantajı, bir Sürükle ve bırak işlemi sırasında uygulamanızdaki veri bırakıldığında aynı Yapıştır kodu kullanılabilir ' dir. OCLIENT ve HIERSVR, olduğu gibi `OnDrop` işlevi ayrıca çağırabilir `DoPasteItem`, yapıştır işlemlerini uygulamak için yazılmış kodu yeniden kullanma.
+> Yapıştırma işlemini kendi işlevine ayırmanın en büyük yararı, sürükle ve bırak işlemi sırasında uygulamanızda veriler bırakıldığında aynı yapıştırma kodunun kullanılabilmesidir. OCLIENT ve HIERSVR'da `OnDrop` olduğu gibi, işleviniz yapıştır işlemleri uygulamak için yazılan kodu yeniden kullanarak da arayabilir. `DoPasteItem`
 
-Düzen menüsündeki Özel Yapıştır seçeneği işlemek için Ek Yardım konusuna [ole'deki iletişim kutuları](../mfc/dialog-boxes-in-ole.md).
+Edit menüsünde Özel Yapıştır seçeneğini işlemek için [OLE'deki](../mfc/dialog-boxes-in-ole.md)konuya bakın İletişim Kutuları.
 
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilmek istiyorum
 
-- [Diğer biçimleri ekleme](../mfc/clipboard-adding-other-formats.md)
+- [Diğer biçimler ekleme](../mfc/clipboard-adding-other-formats.md)
 
-- [OLE veri nesneleri ve veri kaynaklarını ve Tekdüzen veri aktarımı](../mfc/data-objects-and-data-sources-ole.md)
+- [OLE veri nesneleri ve veri kaynakları ve tek tip veri aktarımı](../mfc/data-objects-and-data-sources-ole.md)
 
-- [OLE sürükleme ve bırakma](../mfc/drag-and-drop-ole.md)
+- [OLE sürükle ve bırak](../mfc/drag-and-drop-ole.md)
 
 - [OLE](../mfc/ole-background.md)
 
