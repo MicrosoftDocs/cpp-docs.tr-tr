@@ -13,16 +13,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::Invoke method
 - Microsoft::WRL::Details::InvokeHelper, constructor
 ms.assetid: 555ad2bc-4dd6-4e65-a2e2-1242c395f0e5
-ms.openlocfilehash: 3fcba210d4018d22487d234b437acfee3634cec6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9cb4e166628a6b5e7671494446d467e73c9f8cc3
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386141"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371381"
 ---
 # <a name="invokehelper-structure"></a>InvokeHelper Yapısı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -103,44 +103,44 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> :
 
 ### <a name="parameters"></a>Parametreler
 
-*TDelegateInterface*<br/>
-Temsilci arabirim türü.
+*TDelegateArayüzü*<br/>
+Temsilci arabirimi türü.
 
 *TCallback*<br/>
-Olay işleyici işlevi türü.
+Olay işleyicisi işlevinin türü.
 
 *argCount*<br/>
-Bağımsız değişken sayısı bir `InvokeHelper` özelleştirmesi.
+Uzmanlık alanındaki `InvokeHelper` bağımsız değişkenlerin sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir uygulamasını sağlar `Invoke()` tabanlı yöntemini belirtilen sayı ve bağımsız değişken türü.
+Belirtilen sayı ve `Invoke()` bağımsız değişken türüne dayalı yöntemin uygulanmasını sağlar.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Genel Typedefs
 
-Ad     | Açıklama
+Adı     | Açıklama
 -------- | -----------------------------------------------------------------------------
-`Traits` | Her olay işleyicisi bağımsız değişken türünü tanımlayan sınıf için bir eşanlamlı.
+`Traits` | Her olay işleyicisi bağımsız değişkeninin türünü tanımlayan sınıfın eşanlamlısı.
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Ad                                        | Açıklama
+Adı                                        | Açıklama
 ------------------------------------------- | -------------------------------------------------------
-[Invokehelper::ınvokehelper](#invokehelper) | Yeni bir örneğini başlatır `InvokeHelper` sınıfı.
+[InvokeHelper::InvokeHelper](#invokehelper) | `InvokeHelper` sınıfının yeni bir örneğini başlatır.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                            | Açıklama
+Adı                            | Açıklama
 ------------------------------- | -----------------------------------------------------------------------------------
-[Invokehelper::Invoke](#invoke) | İmzası olan, belirtilen sayıda bağımsız değişken içeren olay işleyicisini çağırır.
+[InvokeHelper::Invoke](#invoke) | İmzası belirtilen sayıda bağımsız değişken içeren olay işleyicisini çağırır.
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-Ad                                 | Açıklama
+Adı                                 | Açıklama
 ------------------------------------ | ----------------------------------------------------------
-[Invokehelper::callback_](#callback) | Bir olay oluştuğunda çağrılacak olay işleyicisini temsil eder.
+[InvokeHelper::callback_](#callback) | Bir olay gerçekleştiğinde çağırılabilmek için olay işleyicisini temsil eder.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -148,13 +148,13 @@ Ad                                 | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** event.h
+**Üstbilgi:** event.h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="callback"></a>Invokehelper::callback_
+## <a name="invokehelpercallback_"></a><a name="callback"></a>InvokeHelper::callback_
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 TCallback callback_;
@@ -162,13 +162,13 @@ TCallback callback_;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir olay oluştuğunda çağrılacak olay işleyicisini temsil eder.
+Bir olay gerçekleştiğinde çağırılabilmek için olay işleyicisini temsil eder.
 
-`TCallback` Şablon parametresi, olay işleyicisi türünü belirtir.
+Şablon `TCallback` parametresi olay işleyicisinin türünü belirtir.
 
-## <a name="invoke"></a>Invokehelper::Invoke
+## <a name="invokehelperinvoke"></a><a name="invoke"></a>InvokeHelper::Invoke
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 STDMETHOD(
@@ -206,16 +206,16 @@ STDMETHOD(
 ### <a name="parameters"></a>Parametreler
 
 *arg1*<br/>
-Bağımsız değişkeni 1.
+Bağımsız değişken 1.
 
 *arg2*<br/>
 Bağımsız değişken 2.
 
-*Arg3*<br/>
+*arg3*<br/>
 Bağımsız değişken 3.
 
-*Arg4*<br/>
-4 bağımsız değişkeni.
+*arg4*<br/>
+Argüman 4.
 
 *arg5*<br/>
 Bağımsız değişken 5.
@@ -227,22 +227,22 @@ Bağımsız değişken 6.
 Bağımsız değişken 7.
 
 *arg8*<br/>
-8 bağımsız değişkeni.
+Bağımsız değişken 8.
 
 *arg9*<br/>
 Bağımsız değişken 9.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+S_OK başarılı olursa; aksi takdirde, hatayı açıklayan bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İmzası olan, belirtilen sayıda bağımsız değişken içeren olay işleyicisini çağırır.
+İmzası belirtilen sayıda bağımsız değişken içeren olay işleyicisini çağırır.
 
-## <a name="invokehelper"></a>Invokehelper::ınvokehelper
+## <a name="invokehelperinvokehelper"></a><a name="invokehelper"></a>InvokeHelper::InvokeHelper
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 explicit InvokeHelper(
@@ -252,11 +252,11 @@ explicit InvokeHelper(
 
 ### <a name="parameters"></a>Parametreler
 
-*geri çağırma*<br/>
-Bir olay işleyicisi.
+*Geri*<br/>
+Olay işleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir örneğini başlatır `InvokeHelper` sınıfı.
+`InvokeHelper` sınıfının yeni bir örneğini başlatır.
 
-`TCallback` Şablon parametresi, olay işleyicisi türünü belirtir.
+Şablon `TCallback` parametresi olay işleyicisinin türünü belirtir.

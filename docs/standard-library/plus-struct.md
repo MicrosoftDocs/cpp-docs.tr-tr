@@ -7,20 +7,20 @@ helpviewer_keywords:
 - plus class
 - plus struct
 ms.assetid: 4594abd5-b2f2-4fac-9b6b-fc9a2723f8cf
-ms.openlocfilehash: 7071b7709f106fc974e401f89bb98c2525bd6558
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 628823a7fc3c176f83bbb1dca59ec194b5d3db97
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240501"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372077"
 ---
 # <a name="plus-struct"></a>plus Yapısı
 
-Toplama işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (ikili `operator+`) üzerinde bağımsız değişkenleri.
+Bağımsız değişkenlerinde ekleme işlemini (ikili) `operator+`gerçekleştiren önceden tanımlanmış bir işlev nesnesi.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template <class Type = void>
 struct plus : public binary_function <Type, Type, Type>
 {
@@ -39,18 +39,18 @@ struct plus<void>
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür*, *T*, *U*\
-Bir ikili destekleyen bir türü `operator+` , belirtilen veya çıkarsanan tür işlenen alır.
+*Türü*, *T*, *U*\
+Belirtilen veya çıkarılan `operator+` türlerin operands alan bir ikili destekleyen bir tür.
 
 *Sol*\
-Toplama işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+Ekleme işleminin sol operand'ı. Özelleştirilmemiş *şablon, türünden*bir lvalue başvuru bağımsız değişkeni alır. Özelleştirilmiş şablon, çıkarılan *t*tipinin lvalue ve rvalue referans bağımsız değişkenlerinin mükemmel iletilmesi yapar.
 
-*sağ*\
-Toplama işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*Doğru*\
+Ekleme işleminin sağ operand'ı. Özelleştirilmemiş *şablon, türünden*bir lvalue başvuru bağımsız değişkeni alır. Özelleştirilmiş şablon, çıkarılan *u*türündeki lvalue ve rvalue referans bağımsız değişkenlerinin mükemmel iletilmesi yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left + Right`. Özelleşmiş şablon ikili tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator+`.
+Bunun `Left + Right`sonucu. Özelleştirilmiş şablon, ikili olarak döndürülen türe sahip sonucun mükemmel `operator+`iletilmesi yapar.
 
 ## <a name="example"></a>Örnek
 

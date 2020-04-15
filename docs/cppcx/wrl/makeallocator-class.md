@@ -15,16 +15,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::MakeAllocator::MakeAllocator, constructor
 - Microsoft::WRL::Details::MakeAllocator::~MakeAllocator, destructor
 ms.assetid: a1114615-abd7-4a56-9bc3-750c118f0fa1
-ms.openlocfilehash: 805f0c09b0490d8cec1a0be96dcb1fc99a051371
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dc0d83f2550646572a4eff2bec7850037c6dbf6a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161244"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371330"
 ---
 # <a name="makeallocator-class"></a>MakeAllocator Sınıfı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,34 +47,34 @@ class MakeAllocator<T, true>;
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Tür adı.
+Bir tür adı.
 
 *hasWeakReferenceSupport*<br/>
-**doğru** zayıf başvurular; destekleyen bir nesne için bellek ayrılamadı **false** zayıf başvuru desteği olmayan bir nesne için bellek ayrılamadı.
+zayıf başvuruları destekleyen bir nesne için bellek ayırmak için **doğru;** zayıf başvuruları desteklemeyen bir nesne için bellek ayırmak için **yanlış.**
 
 ## <a name="remarks"></a>Açıklamalar
 
-İle veya zayıf başvuru desteği olmayan bir etkinleştirilebilir sınıf için bellek ayırır.
+Zayıf başvuru desteği olan veya olmayan bir eyleme geçilebilir sınıf için bellek ayırır.
 
-Geçersiz kılma `MakeAllocator` bir kullanıcı tarafından tanımlanan bellek ayırma modeli uygulamak için sınıfı.
+Kullanıcı tanımlı bellek ayırma modeli uygulamak için `MakeAllocator` sınıfı geçersiz kılın.
 
-`MakeAllocator` genellikle bir nesne oluşturma sırasında oluşturursa bellek sızıntılarını önlemek için kullanılır.
+`MakeAllocator`genellikle bir nesne inşaat sırasında atar bellek sızıntıları önlemek için kullanılır.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Ad                                                  | Açıklama
+Adı                                                  | Açıklama
 ----------------------------------------------------- | ----------------------------------------------------------------
-[MakeAllocator::MakeAllocator](#makeallocator)        | Yeni bir örneğini başlatır `MakeAllocator` sınıfı.
-[MakeAllocator:: ~ MakeAllocator](#tilde-makeallocator) | Geçerli örneğinin başlatmasını geri alır `MakeAllocator` sınıfı.
+[MakeAllocator::MakeAllocator](#makeallocator)        | `MakeAllocator` sınıfının yeni bir örneğini başlatır.
+[MakeAllocator::~MakeAllocator](#tilde-makeallocator) | Sınıfın geçerli örneğini `MakeAllocator` deinitialize eder.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                                 | Açıklama
+Adı                                 | Açıklama
 ------------------------------------ | -----------------------------------------------------------------------------------------------------------
-[MakeAllocator::Allocate](#allocate) | Bellek ayırır ve geçerli ilişkilendirir `MakeAllocator` nesne.
-[MakeAllocator::Detach](#detach)     | Tarafından ayrılan bellek ayırır [ayırma](#allocate) yöntemi geçerli `MakeAllocator` nesne.
+[MakeAllocator::Ayırma](#allocate) | Belleği ayırır ve geçerli `MakeAllocator` nesneyle ilişkilendirer.
+[MakeAllocator::Detach](#detach)     | Geçerli `MakeAllocator` nesneden [Ayırma](#allocate) yöntemi tarafından ayrılan belleği ayırın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -82,13 +82,13 @@ Ad                                 | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üstbilgi:** implements.h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="allocate"></a>MakeAllocator::Allocate
+## <a name="makeallocatorallocate"></a><a name="allocate"></a>MakeAllocator::Ayırma
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 __forceinline void* Allocate();
@@ -96,19 +96,19 @@ __forceinline void* Allocate();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, ayrılan bellek; işaretçisi Aksi takdirde, `nullptr`.
+Başarılı olursa, ayrılan belleğe işaretçi; aksi `nullptr`takdirde, .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bellek ayırır ve geçerli ilişkilendirir `MakeAllocator` nesne.
+Belleği ayırır ve geçerli `MakeAllocator` nesneyle ilişkilendirer.
 
-Ayrılan bellek boyutu geçerli belirtilen tür boyutudur `MakeAllocator` şablon parametresi.
+Ayrılan belleğin boyutu, geçerli `MakeAllocator` şablon parametresi tarafından belirtilen türboyutudur.
 
-Yalnızca geçersiz kılmak bir geliştiricinin ihtiyaç duyduğu `Allocate()` farklı bellek ayırma modeli uygulamak için yöntemi.
+Bir geliştiricinin farklı bir `Allocate()` bellek ayırma modeli uygulamak için yalnızca yöntemi geçersiz kılması gerekir.
 
-## <a name="detach"></a>MakeAllocator::Detach
+## <a name="makeallocatordetach"></a><a name="detach"></a>MakeAllocator::Detach
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 __forceinline void Detach();
@@ -116,13 +116,13 @@ __forceinline void Detach();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarafından ayrılan bellek ayırır [ayırma](#allocate) yöntemi geçerli `MakeAllocator` nesne.
+Geçerli `MakeAllocator` nesneden [Ayırma](#allocate) yöntemi tarafından ayrılan belleği ayırın.
 
-Eğer `Detach()`, tarafından sağlanan belleği silmekten sorumlu `Allocate` yöntemi.
+Ararsanız, `Detach()` `Allocate` yöntem tarafından sağlanan belleği silmekten siz sorumlusunuz.
 
-## <a name="makeallocator"></a>MakeAllocator::MakeAllocator
+## <a name="makeallocatormakeallocator"></a><a name="makeallocator"></a>MakeAllocator::MakeAllocator
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 MakeAllocator();
@@ -130,11 +130,11 @@ MakeAllocator();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir örneğini başlatır `MakeAllocator` sınıfı.
+`MakeAllocator` sınıfının yeni bir örneğini başlatır.
 
-## <a name="tilde-makeallocator"></a>MakeAllocator:: ~ MakeAllocator
+## <a name="makeallocatormakeallocator"></a><a name="tilde-makeallocator"></a>MakeAllocator::~MakeAllocator
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 ~MakeAllocator();
@@ -142,6 +142,6 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli örneğinin başlatmasını geri alır `MakeAllocator` sınıfı.
+Sınıfın geçerli örneğini `MakeAllocator` deinitialize eder.
 
-Bu yok edici temel alınan ayrılmış bellek gerekirse da siler.
+Bu yıkıcı, gerekirse temel ayrılan belleği de siler.

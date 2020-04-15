@@ -1,5 +1,5 @@
 ---
-title: Ioleınplaceobjectwindowlessıl sınıfı
+title: IOleInPlaceObjectWindowlessImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IOleInPlaceObjectWindowlessImpl
@@ -20,19 +20,19 @@ helpviewer_keywords:
 - controls [ATL], windowless
 - deactivating ATL
 ms.assetid: a2e0feb4-bc59-4adf-aab2-105457bbdbb4
-ms.openlocfilehash: fdd660daae109ac2a656519131dd9869ceaeaf4e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b0438692161f38445eb7cbed54edcc8a0ba8c0d6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69495745"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81326573"
 ---
-# <a name="ioleinplaceobjectwindowlessimpl-class"></a>Ioleınplaceobjectwindowlessıl sınıfı
+# <a name="ioleinplaceobjectwindowlessimpl-class"></a>IOleInPlaceObjectWindowlessImpl Sınıfı
 
-Bu sınıf `IUnknown` , bir penceresiz denetimin pencere iletilerini almasını ve sürükle ve bırak işlemlerine katılmasını sağlayan yöntemler sağlar.
+Bu sınıf, `IUnknown` pencere iletileri almak ve sürükle ve bırak işlemlerine katılmak için penceresiz bir denetim sağlayan yöntemler uygular ve sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,29 +43,29 @@ class IOleInPlaceObjectWindowlessImpl
 
 #### <a name="parameters"></a>Parametreler
 
-*ŞI*<br/>
-Sınıfınız, öğesinden `IOleInPlaceObjectWindowlessImpl`türetilir.
+*T*<br/>
+Sınıfınızdan `IOleInPlaceObjectWindowlessImpl`türetilmiştir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Ioleınplaceobjectwindowlessıl:: ContextSensitiveHelp](#contextsensitivehelp)|Bağlama duyarlı yardımı etkinleştirilir. ATL uygulama E_NOTIMPL döndürür.|
-|[Ioleınplaceobjectwindowlessıl:: GetDropTarget](#getdroptarget)|Sürükleyip bırakmayı destekleyen, yerinde etkin ve penceresiz bir nesne için arabirimsağlar.`IDropTarget` ATL uygulama E_NOTIMPL döndürür.|
-|[Ioleınplaceobjectwindowlessıl:: GetWindow](#getwindow)|Bir pencere tutamacı alır.|
-|[Ioleınplaceobjectwindowlessıl:: InPlaceDeactivate](#inplacedeactivate)|Etkin bir yerinde denetimi devre dışı bırakır.|
-|[Ioleınplaceobjectwindowlessıl:: OnWindowMessage](#onwindowmessage)|Kapsayıcıdan, yerinde etkin olan penceresiz bir denetime ileti gönderir.|
-|[Ioleınplaceobjectwindowlessıl:: ReactivateAndUndo](#reactivateandundo)|Önceden devre dışı bırakılmış bir denetimi yeniden etkinleştirir. ATL uygulama E_NOTIMPL döndürür.|
-|[Ioleınplaceobjectwindowlessıl:: SetObjectRects](#setobjectrects)|Yerinde denetimin hangi bölümünün görünür olduğunu gösterir.|
-|[Ioleınplaceobjectwindowlessıl:: UIDeactivate](#uideactivate)|Yerinde etkinleştirmeyi destekleyen Kullanıcı arabirimini devre dışı bırakır ve kaldırır.|
+|[IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp](#contextsensitivehelp)|İçeriğe duyarlı yardımı sağlar. ATL uygulaması E_NOTIMPL döndürür.|
+|[IOleInPlaceObjectWindowlessImpl::GetDropTarget](#getdroptarget)|Sürükle `IDropTarget` ve bırak'ı destekleyen yerinde etkin, penceresiz bir nesne için arabirimi sağlar. ATL uygulaması E_NOTIMPL döndürür.|
+|[IOleInPlaceObjectWindowlessImpl::GetWindow](#getwindow)|Pencere kolu alır.|
+|[IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate](#inplacedeactivate)|Etkin bir yerinde denetimi devre dışı bırakır.|
+|[IOleInPlaceObjectWindowlessImpl::OnWindowMessage](#onwindowmessage)|Kapsayıcıdan etkin olan penceresiz denetime bir ileti gönderir.|
+|[IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo](#reactivateandundo)|Daha önce devre dışı bırakılmış bir denetimi yeniden etkinleştirir. ATL uygulaması E_NOTIMPL döndürür.|
+|[IOleInPlaceObjectWindowlessImpl::SetObjectRects](#setobjectrects)|Yerinde denetimin hangi bölümünün görünür olduğunu gösterir.|
+|[IOleInPlaceObjectWindowlessImpl::UIDeactivate](#uideactivate)|Yerinde etkinleştirme destekleyen kullanıcı arabirimini devre dışı bırakır ve kaldırır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IOleInPlaceObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceobject) arabirimi, yerinde denetimlerin yeniden etkinleştirmeyi ve devre dışı bırakmayı yönetir ve denetimin ne kadarının görünür olacağını belirler. [Ioleınplaceobjectpenceresiz](/windows/win32/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) arabirimi, penceresiz bir denetimin pencere iletilerini almasına ve sürükle ve bırak işlemlerine katılmasına olanak sağlar. Sınıfı `IOleInPlaceObjectWindowlessImpl` , ve `IOleInPlaceObject` `IUnknown` ' nin varsayılan bir uygulamasını sağlar ve hata ayıklama yapılarında döküm cihazına bilgi göndererek uygular. `IOleInPlaceObjectWindowless`
+[IOleInPlaceObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceobject) arabirimi yerinde denetimlerin yeniden etkinleştirilmesi ve devre dışı bırakılmasını yönetir ve denetimin ne kadarının görünür olması gerektiğini belirler. [IOleInPlaceObjectWindowless](/windows/win32/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) arabirimi pencere iletileri almak ve sürükle-bırak işlemlerine katılmak için penceresiz bir denetim sağlar. Sınıf `IOleInPlaceObjectWindowlessImpl` varsayılan bir `IOleInPlaceObject` uygulama `IOleInPlaceObjectWindowless` sağlar `IUnknown` ve hata ayıklama oluştururda dökümü aygıtına bilgi göndererek uygular.
 
-**Ilgili makaleler** ATL [öğreticisi](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
+**İlgili Makaleler** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -75,9 +75,9 @@ Sınıfınız, öğesinden `IOleInPlaceObjectWindowlessImpl`türetilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlctl. h
+**Üstbilgi:** atlctl.h
 
-##  <a name="contextsensitivehelp"></a>Ioleınplaceobjectwindowlessıl:: ContextSensitiveHelp
+## <a name="ioleinplaceobjectwindowlessimplcontextsensitivehelp"></a><a name="contextsensitivehelp"></a>IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp
 
 E_NOTIMPL döndürür.
 
@@ -87,9 +87,9 @@ HRESULT ContextSensitiveHelp(BOOL fEnterMode);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [IOleWindow:: ContextSensitiveHelp](/windows/win32/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp) .
+Bkz. [IOleWindow::ContextSensitiveHelp](/windows/win32/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp) windows SDK içinde.
 
-##  <a name="getdroptarget"></a>Ioleınplaceobjectwindowlessıl:: GetDropTarget
+## <a name="ioleinplaceobjectwindowlessimplgetdroptarget"></a><a name="getdroptarget"></a>IOleInPlaceObjectWindowlessImpl::GetDropTarget
 
 E_NOTIMPL döndürür.
 
@@ -99,11 +99,11 @@ HRESULT GetDropTarget(IDropTarget** ppDropTarget);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [ıoleınplaceobjectpenceresiz:: GetDropTarget](/windows/win32/api/ocidl/nf-ocidl-ioleinplaceobjectwindowless-getdroptarget) .
+Bkz. [IOleInPlaceObjectWindowless::GetDropTarget](/windows/win32/api/ocidl/nf-ocidl-ioleinplaceobjectwindowless-getdroptarget) windows SDK içinde.
 
-##  <a name="getwindow"></a>Ioleınplaceobjectwindowlessıl:: GetWindow
+## <a name="ioleinplaceobjectwindowlessimplgetwindow"></a><a name="getwindow"></a>IOleInPlaceObjectWindowlessImpl::GetWindow
 
-Kapsayıcı, denetimin pencere tanıtıcısını almak için bu işlevi çağırır.
+Kapsayıcı, denetimin pencere tutamacını almak için bu işlevi çağırır.
 
 ```
 HRESULT GetWindow(HWND* phwnd);
@@ -111,13 +111,13 @@ HRESULT GetWindow(HWND* phwnd);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bazı kapsayıcılar, şu anda pencereli olsa bile, penceresiz olan bir denetimle çalışmayacaktır. ATL 'nin uygulamasında, denetim sınıfının veri üyesi `m_bWasOnceWindowless` true ise, işlev E_FAIL döndürür. Aksi takdirde, *phwnd* null `GetWindow` değilse, denetim sınıfının \* veri üyesine `m_hWnd` *phwnd* 'i ayarlar ve s_ok döndürür.
+Bazı kapsayıcılar, şu anda pencereli olsa bile penceresiz olan bir denetimle çalışmaz. ATL'nin uygulamasında, denetim sınıfının veri `m_bWasOnceWindowless` üyesi TRUE ise, işlev E_FAIL döndürür. Aksi takdirde, *phwnd* NULL `GetWindow` \* değilse, *phwnd'yi* denetim `m_hWnd` sınıfının veri üyesine ayarlar ve S_OK döndürür.
 
-Windows SDK için bkz. [IOleWindow:: GetWindow](/windows/win32/api/oleidl/nf-oleidl-iolewindow-getwindow) .
+Bkz. [IOleWindow::Windows](/windows/win32/api/oleidl/nf-oleidl-iolewindow-getwindow) SDK'daki GetWindow.
 
-##  <a name="inplacedeactivate"></a>Ioleınplaceobjectwindowlessıl:: InPlaceDeactivate
+## <a name="ioleinplaceobjectwindowlessimplinplacedeactivate"></a><a name="inplacedeactivate"></a>IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate
 
-Yerinde etkin bir denetimi devre dışı bırakmak için kapsayıcı tarafından çağırılır.
+Yerinde etkin denetimi devre dışı bırakmak için kapsayıcı tarafından çağrılır.
 
 ```
 HRESULT InPlaceDeactivate(HWND* phwnd);
@@ -125,13 +125,13 @@ HRESULT InPlaceDeactivate(HWND* phwnd);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, denetimin durumuna bağlı olarak tam veya kısmi devre dışı bırakma gerçekleştirir. Gerekirse, denetimin kullanıcı arabirimi devre dışı bırakılır ve varsa denetimin penceresi yok edilir. Kapsayıcıya, denetimin artık etkin olmadığı bildirilir. Kapsayıcı tarafından menü ve kenarlık alanı üzerinde anlaşma için kullanılan arabirimserbestbırakılır.`IOleInPlaceUIWindow`
+Bu yöntem, denetimin durumuna bağlı olarak tam veya kısmi bir devre dışı bırakma gerçekleştirir. Gerekirse, denetimin kullanıcı arabirimi devre dışı bırakılır ve varsa denetimin penceresi yok edilir. Kapsayıcı, denetimin artık etkin olmadığı bildirilir. Menüler `IOleInPlaceUIWindow` ve kenarlık alanı müzakere kapsayıcı tarafından kullanılan arabirim serbest bırakılır.
 
-Windows SDK bkz. [IOleInPlaceObject:: InPlaceDeactivate devre dışı bırakma](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-inplacedeactivate) .
+Bkz. [IOleInPlaceObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-inplacedeactivate) SDK'da InPlaceDeactivate.
 
-##  <a name="onwindowmessage"></a>Ioleınplaceobjectwindowlessıl:: OnWindowMessage
+## <a name="ioleinplaceobjectwindowlessimplonwindowmessage"></a><a name="onwindowmessage"></a>IOleInPlaceObjectWindowlessImpl::OnWindowMessage
 
-Bir kapsayıcıdan, yerinde etkin olan penceresiz bir denetime ileti gönderir.
+Bir kapsayıcıdan yerinde etkin olan penceresiz denetime bir ileti gönderir.
 
 ```
 HRESULT OnWindowMessage(
@@ -143,9 +143,9 @@ HRESULT OnWindowMessage(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK için bkz. [ıoleınplaceobjectpenceresiz:: OnWindowMessage](/windows/win32/api/ocidl/nf-ocidl-ioleinplaceobjectwindowless-onwindowmessage) .
+Bkz. [IOleInPlaceObjectWindowless::Windows](/windows/win32/api/ocidl/nf-ocidl-ioleinplaceobjectwindowless-onwindowmessage) SDK'da OnWindowMessage.
 
-##  <a name="reactivateandundo"></a>Ioleınplaceobjectwindowlessıl:: ReactivateAndUndo
+## <a name="ioleinplaceobjectwindowlessimplreactivateandundo"></a><a name="reactivateandundo"></a>IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo
 
 E_NOTIMPL döndürür.
 
@@ -155,11 +155,11 @@ HRESULT ReactivateAndUndo();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz. Windows SDK [IOleInPlaceObject:: ReactivateAndUndo](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-reactivateandundo) .
+Bkz. [IOleInPlaceObject::Windows SDK'da ReactivateAndUndo.](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-reactivateandundo)
 
-##  <a name="setobjectrects"></a>Ioleınplaceobjectwindowlessıl:: SetObjectRects
+## <a name="ioleinplaceobjectwindowlessimplsetobjectrects"></a><a name="setobjectrects"></a>IOleInPlaceObjectWindowlessImpl::SetObjectRects
 
-Denetimin boyutunun ve/veya konumunun değiştiğini bildirmek için kapsayıcı tarafından çağırılır.
+Denetimi boyutunun ve/veya konumunun değiştiğini bildirmek için kapsayıcı tarafından çağrılır.
 
 ```
 HRESULT SetObjectRects(LPCRECT prcPos, LPCRECT prcClip);
@@ -167,13 +167,13 @@ HRESULT SetObjectRects(LPCRECT prcPos, LPCRECT prcClip);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin `m_rcPos` veri üyesini ve denetim görüntüsünü güncelleştirir. Yalnızca kırpma bölgesini kesişten denetimin bir kısmı görüntülenir. Bir denetimin ekranı daha önce kırpılıyordu ancak kırpma kaldırılırsa, denetimin tam görünümünü yeniden çizmek için bu işlev çağrılabilir.
+Denetimin `m_rcPos` veri üyesini ve denetim ekranını güncelleştirir. Denetimin yalnızca klip bölgesiyle kesişen bölümü görüntülenir. Denetimin ekranı daha önce kırpılmış ancak kırpma kaldırılmışsa, denetimin tam görünümünü yeniden çizmek için bu işlev çağrılabilir.
 
-Windows SDK için bkz. [IOleInPlaceObject:: SetObjectRects](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-setobjectrects) .
+Bkz. [IOleInPlaceObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-setobjectrects) SDK'da Nesne Düzeltmeleri Ayarlayın.
 
-##  <a name="uideactivate"></a>Ioleınplaceobjectwindowlessıl:: UIDeactivate
+## <a name="ioleinplaceobjectwindowlessimpluideactivate"></a><a name="uideactivate"></a>IOleInPlaceObjectWindowlessImpl::UIDeactivate
 
-Yerinde etkinleştirmeyi destekleyen denetimin kullanıcı arabirimini devre dışı bırakır ve kaldırır.
+Denetimin yerinde etkinleştirmeyi destekleyen kullanıcı arabirimini devre dışı bırakır ve kaldırır.
 
 ```
 HRESULT UIDeactivate();
@@ -181,11 +181,11 @@ HRESULT UIDeactivate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetim sınıfının veri üyesini `m_bUIActive` false olarak ayarlar. Bu işlevin ATL uygulamasında her zaman S_OK döndürülür.
+Denetim sınıfının veri üyesini `m_bUIActive` FALSE olarak ayarlar. Bu işlevin ATL uygulaması her zaman S_OK döndürür.
 
-Windows SDK için bkz. [IOleInPlaceObject:: UIDeactivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-uideactivate) .
+Bkz. [IOleInPlaceObject::Windows](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-uideactivate) SDK'da Etkinleştirilmesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

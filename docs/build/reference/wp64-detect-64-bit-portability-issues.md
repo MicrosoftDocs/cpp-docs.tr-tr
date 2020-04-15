@@ -11,16 +11,16 @@ helpviewer_keywords:
 - -Wp64 compiler option [C++]
 - Wp64 compiler option [C++]
 ms.assetid: 331ae5aa-e627-4d03-8f63-dd2c2d76dadd
-ms.openlocfilehash: 5a3cdaf85fa4dc05ece54fc630cb69fc93650e6b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e5c30ac9096094948a83195f5b3990794c421685
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316554"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81335881"
 ---
 # <a name="wp64-detect-64-bit-portability-issues"></a>/Wp64 (64 Bit Taşınabilirlik Sorunlarını Algıla)
 
-Bu derleyici seçeneğini kullanımdan kalkmıştır. Visual Studio 2013 önce Visual Studio sürümlerinde, 64-bit taşınabilirlik sorunlarını ile işaretlenmiş türlerinde bunu algılar [__w64](../../cpp/w64.md) anahtar sözcüğü.
+Bu derleyici seçeneği eskidir. Visual Studio 2013'ten önceki Visual Studio sürümlerinde, [__w64](../../cpp/w64.md) anahtar kelimeyle de işaretlenmiş türlerde 64 bit taşınabilirlik sorunları algılar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,12 +30,12 @@ Bu derleyici seçeneğini kullanımdan kalkmıştır. Visual Studio 2013 önce V
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, önce Visual Studio 2013, Visual Studio sürümlerinde **/Wp64** derleyici seçeneği 32-bit x86 oluşturan MSVC derleyici kapalıdır kod üzerinde MSVC derleyicisi, 64-bit, x64 yapılara ve kod.
+Varsayılan olarak, Visual Studio 2013'ten önceki Visual Studio sürümlerinde **, /Wp64** derleyici seçeneği 32 bit x86 kodu oluşturan MSVC derleyicisinde ve 64 bit, x64 kodu oluşturan MSVC derleyicisinde kapalıdır.
 
 > [!IMPORTANT]
->  [/Wp64](wp64-detect-64-bit-portability-issues.md) derleyici seçeneği ve [__w64](../../cpp/w64.md) anahtar sözcüğü, Visual Studio 2010 ve Visual Studio 2012'de kullanım dışı ve Visual Studio 2013 itibariyle desteklenmiyor. Bu anahtar kullanan bir proje dönüştürürseniz, anahtar dönüştürme sırasında geçirilmez. Visual Studio 2010 veya Visual Studio 2012'de bu seçeneği kullanmak için derleyici anahtarı altındaki yazın **ek seçenekler** içinde **komut satırı** Proje Özellikleri bölümünde. Kullanırsanız **/Wp64** derleyici seçeneği komut satırında derleyici komut satırı uyarısı D9002 verir. Bu seçenek ve anahtar sözcüğü 64-bit taşınabilirlik sorunlarını algılamak için kullanmak yerine 64-bit platformu hedefleyen bir MSVC derleyici kullanın ve belirtin [/W4](compiler-option-warning-level.md) seçeneği. Daha fazla bilgi için [yapılandırma C++ projeleri 64-bit için x64 hedefleri](../configuring-programs-for-64-bit-visual-cpp.md).
+> [/Wp64](wp64-detect-64-bit-portability-issues.md) derleyici seçeneği ve [__w64](../../cpp/w64.md) anahtar kelimesi Visual Studio 2010 ve Visual Studio 2012'de küçümsenmiş ve Visual Studio 2013'ten itibaren desteklenmez. Bu anahtarı kullanan bir projeyi dönüştürürseniz, geçiş dönüşüm sırasında geçirilmez. Visual Studio 2010 veya Visual Studio 2012'de bu seçeneği kullanmak için, proje özelliklerinin **Komut Satırı** bölümüne **Ek Seçenekler** altında derleyici anahtarı yazmanız gerekir. Komut satırında **/Wp64** derleyici seçeneğini kullanırsanız, derleyici Komut Satırı Uyarısı D9002'yi çalıştırUr. 64 bit taşınabilirlik sorunlarını algılamak için bu seçeneği ve anahtar kelimeyi kullanmak yerine, 64 bit platform hedefleyen ve [/W4](compiler-option-warning-level.md) seçeneğini belirten bir MSVC derleyicisi kullanın. Daha fazla bilgi için bkz: [64 bit, x64 hedefleri için C++ projelerini yapılandırın.](../configuring-programs-for-64-bit-visual-cpp.md)
 
-Bunlar bir 64-bit işletim sisteminde olarak kullanılıyorsa şu türlerinin değişkenleri bir 32-bit işletim sisteminde test edilmez:
+Aşağıdaki türdeki değişkenler, 64 bit işletim sisteminde kullanılıyormuş gibi 32 bit işletim sistemi üzerinde test edilir:
 
 - int
 
@@ -43,19 +43,19 @@ Bunlar bir 64-bit işletim sisteminde olarak kullanılıyorsa şu türlerinin de
 
 - pointer
 
-Düzenli olarak 64-bit, x64 oluşturan bir derleyici kullanarak uygulamanızı derlemek, kod, yalnızca devre dışı bırakabilirsiniz **/Wp64** , 32-bit derlemelerde çünkü 64 bit derleyici tüm sorunları algılar. Hedef bir Windows 64-bit işletim sistemi hakkında daha fazla bilgi için bkz. [yapılandırma C++ projeleri 64-bit için x64 hedefleri](../configuring-programs-for-64-bit-visual-cpp.md).
+64 bit, x64 kodu oluşturan bir derleyici kullanarak uygulamanızı düzenli olarak derlerseniz, 64 bit derleyici tüm sorunları algıladığı için 32 bit derlemelerinizde **/Wp64'ü** devre dışı bırakabilirsiniz. Windows 64 bit işletim sisteminin nasıl hedefleneöğretilen hakkında daha fazla bilgi için [bkz.](../configuring-programs-for-64-bit-visual-cpp.md)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projeyi açmak **özellik sayfaları** iletişim kutusu.
+1. Proje **Özellik Sayfaları** iletişim kutusunu açın.
 
-   Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+   Daha fazla bilgi için [Bkz. C++ derleyicisi ayarlanın ve Visual Studio'da özellikler oluşturun.](../working-with-project-properties.md)
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **komut satırı** özellik sayfası.
+1. Komut **Satırı** özelliği sayfasını tıklatın.
 
-1. Değiştirme **ek seçenekler** kutusuna **/Wp64**.
+1. Ek **Seçenekler** kutusunu **/Wp64'ü**içerecek şekilde değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -65,4 +65,4 @@ Düzenli olarak 64-bit, x64 oluşturan bir derleyici kullanarak uygulamanızı d
 
 [MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
 [MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
-[C++ projeleri için 64 bit x64 yapılandırma hedefleri](../configuring-programs-for-64-bit-visual-cpp.md)
+[C++ projelerini 64 bit, x64 hedefleri için yapılandırma](../configuring-programs-for-64-bit-visual-cpp.md)

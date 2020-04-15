@@ -17,50 +17,50 @@ helpviewer_keywords:
 - troubleshooting release builds
 - memory [C++], overwrites
 ms.assetid: 73cbc1f9-3e33-472d-9880-39a8e9977b95
-ms.openlocfilehash: 5372fe4e96c444d454c277394dd811cfac14d1f6
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 9bd1cafe40417872d42f2e9e1427e5f2eccad7a7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220902"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81328863"
 ---
 # <a name="common-problems-when-creating-a-release-build"></a>Yayın Derlemesi Oluşturmadaki Genel Sorunlar
 
-Geliştirme sırasında genellikle derleme ve projenizin hata ayıklama derlemesi ile test edin. Daha sonra uygulamanızı bir yayın yapısı için oluşturma, erişim ihlali alabilirsiniz.
+Geliştirme sırasında, genellikle projenizin hata ayıklama yapısıyla oluşturur ve sınarsınız. Daha sonra bir sürüm oluşturma için uygulama oluşturursanız, bir erişim ihlali alabilirsiniz.
 
-Aşağıdaki listede bir hata ayıklama ve yayın (nondebug) derleme arasındaki temel farklar gösterilmektedir. Diğer farklar vardır, ancak hata ayıklama yapısında çalışırken, bir yayın yapıda uygulamanın başarısız olmasına neden farklar aşağıda verilmiştir.
+Aşağıdaki liste, hata ayıklama ve sürüm (nondebug) yapısı arasındaki birincil farkları gösterir. Başka farklılıklar da vardır, ancak hata ayıklama yapısında çalıştığında bir uygulamanın sürüm yapısında başarısız olmasına neden olacak birincil farklar şunlardır.
 
-- [Yığın düzeni](#_core_heap_layout)
+- [Yığın Düzeni](#_core_heap_layout)
 
 - [Derleme](#_core_compilation)
 
-- [İşaretçi desteği](#_core_pointer_support)
+- [İşaretçi Desteği](#_core_pointer_support)
 
-- [En iyi duruma getirme](#_core_optimizations)
+- [İyileştirmeler](#_core_optimizations)
 
-Bkz: [/GZ (Catch yayın derleme hatalarını hata ayıklama derleme içinde)](reference/gz-enable-stack-frame-run-time-error-checking.md) derleyici seçeneği yayın catch hakkında bilgi için hata ayıklama yapılarında hata oluşturun.
+Hata ayıklama yapılarında sürüm oluşturma hatalarını nasıl yakalayacağınız hakkında bilgi için [/GZ (Hata Ayıklama Yapısında Sürüm Oluşturma Hatalarını Yakala)](reference/gz-enable-stack-frame-run-time-error-checking.md) derleyici seçeneğine bakın.
 
-##  <a name="_core_heap_layout"></a> Yığın düzeni
+## <a name="heap-layout"></a><a name="_core_heap_layout"></a>Yığın Düzeni
 
-Yığın düzeni, uygulamanın hata ayıklama, ancak değil yayın çalışırken yaklaşık yüzde doksanı görünen sorunlara neden olacaktır.
+Yığın düzeni, bir uygulama hata ayıklamada çalıştığında görünen sorunların yaklaşık yüzde doksanının nedeni olur, ancak yayımlanmaz.
 
-Hata ayıklama için projenizi yapılandırdığınızda, hata ayıklama bellek ayırıcısı kullanıyor. Bu, tüm bellek ayırmaları etrafında yerleştirilen guard bayt olduğu anlamına gelir. Bu koruma bayt belleğin üzerine yazma algılayın. Yığın düzeni yayınlama ve hata ayıklama arasında farklı olduğundan sürümleri, belleğin üzerine yazma sorunları, hata ayıklama derlemesinde oluşturmayabilir, ancak bir sürüm yapıda yıkıcı etkileri olabilir.
+Projenizi hata ayıklama için oluşturduğunuzda, hata ayıklayıcı bellek ayırıcısını kullanırsınız. Bu, tüm bellek ayırmalarının etrafına koruma baytları yerleştirildiği anlamına gelir. Bu koruma baytları bir belleğin üzerine yazı yazdığını algılar. Yığın düzeni sürüm ve hata ayıklama sürümleri arasında farklı olduğundan, bir bellek üzerine yazma hata ayıklama yapısında herhangi bir sorun oluşturmayabilir, ancak bir sürüm yapısında yıkıcı etkileri olabilir.
 
-Daha fazla bilgi için [denetlemek için bellek üzerine](checking-for-memory-overwrites.md) ve [bellek üzerine yazmak için hata ayıklama derleme denetleyin kullanın](using-the-debug-build-to-check-for-memory-overwrite.md).
+Daha fazla bilgi için bkz: [Memory Overwrite için denetle](checking-for-memory-overwrites.md) ve [Hata Ayıklama Yapısını Kullanarak Bellek Üzerine Yaz'ı Denetleyin.](using-the-debug-build-to-check-for-memory-overwrite.md)
 
-##  <a name="_core_compilation"></a> Derleme
+## <a name="compilation"></a><a name="_core_compilation"></a>Derleme
 
-MFC makroları ve çoğu için yayın oluşturma sırasında MFC uygulaması değişikliklerin birçoğu. Özellikle, ASSERTs içinde bulunan bir kodu hiçbiri yürütülecek şekilde ASSERT makrosu derleme, hiçbir şey için değerlendirir. Daha fazla bilgi için [ASSERT deyimleri inceleyin](using-verify-instead-of-assert.md).
+Serbest bırakılması için oluşturduğunuzda MFC makrolarının çoğu ve MFC uygulamasının çoğu değişir. Özellikle, ASSERT makrosu bir sürüm yapısında hiçbir şeyi değerlendirmez, bu nedenle ASSERT'lerde bulunan kodun hiçbiri yürütülmez. Daha fazla bilgi için [bkz.](using-verify-instead-of-assert.md)
 
-Yüksek hızda sürüm oluşturma için bazı işlevleri yapılırlar. İyileştirmeler genellikle bir yayın yapısı içinde etkinleştirilir. Farklı bellek ayırıcı da kullanılıyor.
+Bazı işlevler sürüm yapısında artan hız için inlined vardır. Optimizasyonlar genellikle bir sürüm yapısında açık. Farklı bir bellek ayırıcı sı da kullanılıyor.
 
-##  <a name="_core_pointer_support"></a> İşaretçi desteği
+## <a name="pointer-support"></a><a name="_core_pointer_support"></a>İşaretçi Desteği
 
-Hata ayıklama bilgilerini eksikliği doldurmayı uygulamadan kaldırır. Bir yayın yapıda parazit işaretçileri hata ayıklama bilgilerini işaret eden yerine başlatılmamış belleği işaret eden, büyük şansına sahip olabilirsiniz.
+Hata ayıklama bilgilerinin olmaması, dolguyu uygulamanızdan kaldırır. Sürüm oluşturmada, başıboş işaretçilerin hata ayıklama bilgilerini işaret etmek yerine başharflere getirilmemiş belleğe işaret etme şansı daha yüksektir.
 
-##  <a name="_core_optimizations"></a> En iyi duruma getirme
+## <a name="optimizations"></a><a name="_core_optimizations"></a>Iyileştirme
 
-Bazı kod parçalarını doğasına bağlı olarak, beklenmeyen bir kod iyileştirici derleyiciyi üretebilir. Yayın derlemesi sorunlarını az olası nedeni budur ancak bu durum ortaya çıkar. Bir çözüm için bkz: [kodunuzu en iyi duruma getirme](optimizing-your-code.md).
+Belirli kod segmentlerinin yapısına bağlı olarak, en iyi duruma ürün derleyici beklenmeyen kod oluşturabilir. Bu sürüm oluşturma sorunlarının en az olası nedenidir, ancak zaman zaman ortaya çıkar. Bir çözüm için [kodunuzu optimize etme](optimizing-your-code.md)'ye bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

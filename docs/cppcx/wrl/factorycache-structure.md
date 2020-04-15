@@ -11,16 +11,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::FactoryCache::cookie data member
 - Microsoft::WRL::Details::FactoryCache::factory data member
 ms.assetid: 624544e6-0989-47f6-a3e9-edb60e1ee6d4
-ms.openlocfilehash: 7196363567dffa43844bbbd1de76934a317302d1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 507d35179b9fa86399e56b18171800f41eaf1f10
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398504"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371498"
 ---
 # <a name="factorycache-structure"></a>FactoryCache Yapısı
 
-Windows çalışma zamanı C++ Şablon kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+Windows Runtime C++ Şablon Kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,16 +30,16 @@ struct FactoryCache;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir sınıf üreteci ve wrt kayıtlı tanımlayan değer veya COM sınıfı nesne konumunu içerir.
+Bir sınıf fabrikasının konumunu ve kayıtlı bir wrt veya COM sınıf nesnesini tanımlayan bir değeri içerir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-Ad                              | Açıklama
+Adı                              | Açıklama
 --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------
-[FactoryCache::cookie](#cookie)   | Kayıtlı bir Windows çalışma zamanı veya COM sınıfı nesnesini tanımlayan ve daha sonra nesnenin kaydını silmek için kullanılan bir değer içerir.
-[FactoryCache::factory](#factory) | Bir Windows çalışma zamanı veya COM sınıf üreteci işaret eder.
+[FactoryCache::çerez](#cookie)   | Kayıtlı bir Windows Runtime veya COM sınıf nesnesini tanımlayan ve daha sonra nesneyi çıkarmak için kullanılan bir değer içerir.
+[FactoryCache::fabrika](#factory) | Windows Runtime veya COM sınıfı fabrikayı işaret edin.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -47,13 +47,13 @@ Ad                              | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** module.h
+**Üstbilgi:** module.h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="cookie"></a>FactoryCache::cookie
+## <a name="factorycachecookie"></a><a name="cookie"></a>FactoryCache::çerez
 
-Windows çalışma zamanı C++ Şablon kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+Windows Runtime C++ Şablon Kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 union {
@@ -64,11 +64,11 @@ union {
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıtlı bir Windows çalışma zamanı veya COM sınıfı nesnesini tanımlayan ve daha sonra nesnenin kaydını silmek için kullanılan bir değer içerir.
+Kayıtlı bir Windows Runtime veya COM sınıf nesnesini tanımlayan ve daha sonra nesneyi çıkarmak için kullanılan bir değer içerir.
 
-## <a name="factory"></a>FactoryCache::factory
+## <a name="factorycachefactory"></a><a name="factory"></a>FactoryCache::fabrika
 
-Windows çalışma zamanı C++ Şablon kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+Windows Runtime C++ Şablon Kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 IUnknown* factory;
@@ -76,4 +76,4 @@ IUnknown* factory;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir Windows çalışma zamanı veya COM sınıf üreteci işaret eder.
+Windows Runtime veya COM sınıfı fabrikayı işaret edin.

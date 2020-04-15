@@ -1,5 +1,5 @@
 ---
-title: CSacl sınıfı
+title: CSacl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSacl
@@ -12,19 +12,19 @@ f1_keywords:
 helpviewer_keywords:
 - CSacl class
 ms.assetid: 8624889b-aebc-4183-9d29-a20f07837f05
-ms.openlocfilehash: c4bbdfccb2d6d8b167c537b7ae4df57c89438479
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 72b5c9fee3868286f9e4a0917f46aeb732349c62
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496510"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81331002"
 ---
-# <a name="csacl-class"></a>CSacl sınıfı
+# <a name="csacl-class"></a>CSacl Sınıfı
 
-Bu sınıf, bir SACL (sistem erişim denetimi listesi) yapısına yönelik bir sarmalayıcıdır.
+Bu sınıf, Bir SACL (sistem erişim denetim listesi) yapısı için bir sarmalayıcıdır.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,49 +36,49 @@ class CSacl : public CAcl
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSacl:: CSacl](#csacl)|Oluşturucu.|
-|[CSacl::~CSacl](#dtor)|Yok edicisi.|
+|[CSacl::CSacl](#csacl)|Oluşturucu.|
+|[CSacl::~CSacl](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSacl:: AddAuditAce](#addauditace)|`CSacl` Nesnesine bir denetim erişim denetimi girişi (ACE) ekler.|
-|[CSacl:: GetAceCount](#getacecount)|`CSacl` Nesnedeki erişim denetimi girişlerinin (ACE) sayısını döndürür.|
-|[CSacl:: RemoveAce](#removeace)|`CSacl` Nesnesinden belirli bir ACE 'yi (erişim denetimi girişi) kaldırır.|
-|[CSacl:: RemoveAllAces](#removeallaces)|`CSacl` Nesnesinde bulunan tüm Ace 'leri kaldırır.|
+|[CSacl::AddAuditAce](#addauditace)|`CSacl` Nesneye bir denetim erişim denetimi girişi (ACE) ekler.|
+|[CSacl::GetAceCount](#getacecount)|`CSacl` Nesnedeki erişim denetimi girişlerinin (ACE' ler) sayısını verir.|
+|[CSacl::RemoveAce](#removeace)|`CSacl` Nesneden belirli bir ACE (erişim denetimi girişi) kaldırır.|
+|[CSacl::RemoveAllAces](#removeallaces)|`CSacl` Nesnede bulunan tüm ACE'leri kaldırır.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CSacl:: operator =](#operator_eq)|Atama işleci.|
+|[CSacl::operatör =](#operator_eq)|Atama işleci.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir SACL, bir etki alanı denetleyicisinin güvenlik olay günlüğünde denetim kayıtları üreten erişim denemeleri türlerini belirten erişim denetimi girdileri (ACE 'Ler) içerir. Bir SACL 'nin yalnızca erişim girişiminin gerçekleştiği etki alanı denetleyicisinde, nesnenin bir çoğaltmasını içeren her etki alanı denetleyicisinde değil, günlük girişleri oluşturmadığını unutmayın.
+SACL, etki alanı denetleyicisinin güvenlik olay günlüğünde denetim kayıtları oluşturan erişim denemelerinin türlerini belirten erişim denetimi girişleri (ACE'ler) içerir. SACL'nin, nesnenin bir kopyasını içeren her etki alanı denetleyicisinde değil, yalnızca erişim girişiminin gerçekleştiği etki alanı denetleyicisinde günlük girişleri oluşturduğunu unutmayın.
 
-Bir nesnenin güvenlik tanımlayıcısına sahip SACL ayarlamak veya almak için, SE_SECURITY_NAME ayrıcalığının, istenen iş parçacığının erişim belirtecinde etkinleştirilmesi gerekir. Yöneticiler grubu varsayılan olarak bu ayrıcalığa sahiptir ve diğer kullanıcılara veya gruplara verilebilir. Ayrıcalığa izin verilmesi gereken tek şey gerekli değildir: ayrıcalık tarafından tanımlanan işlem gerçekleştirilemediği için, bu ayrıcalık, etkin olması için güvenlik erişim belirtecinde etkinleştirilmelidir. Model ayrıcalıkların yalnızca belirli sistem işlemlerinde etkinleştirilmesini sağlar ve artık gerekli olmadığında devre dışı kalır. SE_SECURITY_NAME etkinleştirme örnekleri için bkz. [AtlGetSacl](security-global-functions.md#atlgetsacl) ve [AtlSetSacl](security-global-functions.md#atlsetsacl) .
+Bir nesnenin güvenlik tanımlayıcısında SACL'yi ayarlamak veya almak için, istenen iş parçacığının erişim belirtecinde SE_SECURITY_NAME ayrıcalığı etkinleştirilmelidir. Yöneticiler grubunda varsayılan olarak verilen bu ayrıcalık vardır ve diğer kullanıcılara veya gruplara verilebilir. Verilen ayrıcalığın verilmesi gereken tek şey değildir: ayrıcalık tarafından tanımlanan işlem gerçekleştirilebilmesi için, etkinol için güvenlik erişim belirtecinde ayrıcalığın etkinleştirilmesi gerekir. Model, ayrıcalıkların yalnızca belirli sistem işlemleri için etkinleştirilmesine ve artık gerekmediğinde devre dışı bırakılmasına olanak tanır. SE_SECURITY_NAME etkinleştirme örnekleri için [AtlGetSacl](security-global-functions.md#atlgetsacl) ve [AtlSetSacl'a](security-global-functions.md#atlsetsacl) bakın.
 
-`SACL` Nesnesinden Ace 'leri eklemek, kaldırmak, oluşturmak ve silmek için belirtilen sınıf yöntemlerini kullanın. Ayrıca bkz. [AtlGetSacl](security-global-functions.md#atlgetsacl) ve [AtlSetSacl](security-global-functions.md#atlsetsacl).
+Ace'leri nesneden eklemek, kaldırmak, oluşturmak ve silmek için sağlanan sınıf yöntemlerini `SACL` kullanın. Ayrıca bakınız [AtlGetSacl](security-global-functions.md#atlgetsacl) ve [AtlSetSacl](security-global-functions.md#atlsetsacl).
 
-Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
+Windows'daki erişim denetimi modeline giriş için Windows SDK'daki [Access Denetimi'ne](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CAcl](../../atl/reference/cacl-class.md)
+[Cacl](../../atl/reference/cacl-class.md)
 
 `CSacl`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlsecurity. h
+**Üstbilgi:** atlsecurity.h
 
-##  <a name="addauditace"></a>CSacl:: AddAuditAce
+## <a name="csacladdauditace"></a><a name="addauditace"></a>CSacl::AddAuditAce
 
-`CSacl` Nesnesine bir denetim erişim denetimi girişi (ACE) ekler.
+`CSacl` Nesneye bir denetim erişim denetimi girişi (ACE) ekler.
 
 ```
 bool AddAuditAce(
@@ -100,38 +100,38 @@ bool AddAuditAce(
 
 ### <a name="parameters"></a>Parametreler
 
-*Rsıd*<br/>
-[CSID](../../atl/reference/csid-class.md) nesnesi.
+*rSid*<br/>
+[CSid nesnesi.](../../atl/reference/csid-class.md)
 
-*AccessMask*<br/>
+*Accessmask*<br/>
 Belirtilen `CSid` nesne için denetlenecek erişim haklarının maskesini belirtir.
 
-*bSuccess*<br/>
-İzin verilen erişim girişimlerinin denetlenmesi gerekip gerekmediğini belirtir. Denetimi etkinleştirmek için bu bayrağı true olarak ayarlayın; Aksi takdirde, false olarak ayarlayın.
+*bBaşarı*<br/>
+İzin verilen erişim girişimlerinin denetlenip denetlenmeyeceğini belirtir. Denetimi etkinleştirmek için bu bayrağı doğru olarak ayarlayın; aksi takdirde, yanlış ayarlayın.
 
-*bFailure*<br/>
-Reddedilen erişim girişimlerinin denetlenmesi gerekip gerekmediğini belirtir. Denetimi etkinleştirmek için bu bayrağı true olarak ayarlayın; Aksi takdirde, false olarak ayarlayın.
+*bBaşarısızlık*<br/>
+Reddedilen erişim girişimlerinin denetlenip denetlenmeyeceğini belirtir. Denetimi etkinleştirmek için bu bayrağı doğru olarak ayarlayın; aksi takdirde, yanlış ayarlayın.
 
-*Asetat bayrakları*<br/>
-ACE devralmayı denetleyen bit bayrakları kümesi.
+*AceFlags*<br/>
+ACE kalıtımını kontrol eden bit bayrakları kümesi.
 
 *pObjectType*<br/>
 Nesne türü.
 
-*Pınheritedobjecttype*<br/>
+*pInheritedObjectType*<br/>
 Devralınan nesne türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ace `CSacl` nesneye eklenirse true, hata durumunda FALSE döndürür.
+ACE `CSacl` nesneye eklenirse TRUE döndürür, hata üzerine FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CSacl` nesne, güvenlik olay günlüğünde denetim kayıtları üreten erişim denemeleri türlerini belirten erişim denetimi girdileri (ACE 'ler) içerir. Bu yöntem, `CSacl` nesnesine bir ace ekler.
+Nesne, `CSacl` güvenlik olayı günlüğünde denetim kayıtları oluşturan erişim denemelerinin türlerini belirten erişim denetimi girişleri (ACE'ler) içerir. Bu yöntem `CSacl` nesneye böyle bir ACE ekler.
 
-*Asetat bayrakları* parametresinde ayarlanbilen çeşitli bayrakların açıklaması için bkz. [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
+*AceFlags* parametresinde ayarlanabilen çeşitli bayrakların açıklaması için [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) bakın.
 
-##  <a name="csacl"></a>CSacl:: CSacl
+## <a name="csaclcsacl"></a><a name="csacl"></a>CSacl::CSacl
 
 Oluşturucu.
 
@@ -142,16 +142,16 @@ CSacl(const ACL& rhs) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ taraftan*<br/>
-Var olan `ACL` bir (erişim denetimi listesi) yapısı.
+*Rhs*<br/>
+Varolan `ACL` (erişim denetim listesi) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne `CSacl` , isteğe bağlı olarak, var olan `ACL` bir yapı kullanılarak oluşturulabilir. Bu parametrenin bir sistem erişim denetimi listesi (SACL) olduğundan ve isteğe bağlı erişim denetimi listesi (DACL) olduğundan emin olun. Hata ayıklama yapılarında, bir DACL sağlanırsa bir onaylama gerçekleşmeyecektir. Sürüm, bir DACL 'den gelen tüm girdileri yok sayılır.
+Nesne `CSacl` isteğe bağlı olarak varolan `ACL` bir yapı kullanılarak oluşturulabilir. Bu parametrenin isteğe bağlı erişim kontrol listesi (DACL) değil, bir sistem erişim denetim listesi (SACL) olduğundan emin olun. Hata ayıklama yapılarda, bir DACL sağlanırsa bir iddia oluşur. Sürümde bir DACL herhangi bir girişleri oluşturur yoksayılır.
 
-##  <a name="dtor"></a>  CSacl::~CSacl
+## <a name="csaclcsacl"></a><a name="dtor"></a>CSacl::~CSacl
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 ~CSacl() throw();
@@ -159,11 +159,11 @@ Yok edicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı, tüm erişim denetimi girdileri (ACE 'Ler) dahil olmak üzere, nesne tarafından alınan tüm kaynakları serbest bırakır.
+Yıkıcı, nesne tarafından edinilen tüm erişim denetimi girişleri (ACE'ler) dahil olmak üzere tüm kaynakları serbest bırakmaz.
 
-##  <a name="getacecount"></a>CSacl:: GetAceCount
+## <a name="csaclgetacecount"></a><a name="getacecount"></a>CSacl::GetAceCount
 
-`CSacl` Nesnedeki erişim denetimi girişlerinin (ACE) sayısını döndürür.
+`CSacl` Nesnedeki erişim denetimi girişlerinin (ACE' ler) sayısını verir.
 
 ```
 UINT GetAceCount() const throw();
@@ -173,7 +173,7 @@ UINT GetAceCount() const throw();
 
 `CSacl` Nesnede bulunan ACE sayısını döndürür.
 
-##  <a name="operator_eq"></a>CSacl:: operator =
+## <a name="csacloperator-"></a><a name="operator_eq"></a>CSacl::operatör =
 
 Atama işleci.
 
@@ -183,16 +183,16 @@ CSacl& operator=(const ACL& rhs) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ taraftan*<br/>
-Mevcut nesneye atanacak (erişim denetimi listesi). `ACL`
+*Rhs*<br/>
+Varolan `ACL` nesneye atamak için (erişim denetim listesi).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Güncelleştirilmiş `CSacl` nesneye bir başvuru döndürür. `ACL` Parametrenin gerçekten bir sistem erişim denetimi listesi (SACL) olduğundan ve isteğe bağlı erişim denetimi listesi (DACL) olduğundan emin olun. Hata ayıklama Derlemeleriyle bir onaylama gerçekleşir ve yayın derlemeleri `ACL` içinde parametre yok sayılır.
+Güncelleştirilmiş `CSacl` nesneye bir başvuru verir. Parametrenin `ACL` isteğe bağlı erişim denetim listesi (DACL) değil, aslında bir sistem erişim denetim listesi (SACL) olduğundan emin olun. Hata ayıklama bir iddia oluşur ve sürümde `ACL` parametre yoksayılır oluşturur.
 
-##  <a name="removeace"></a>CSacl:: RemoveAce
+## <a name="csaclremoveace"></a><a name="removeace"></a>CSacl::RemoveAce
 
-`CSacl` Nesnesinden belirli bir ACE 'yi (erişim denetimi girişi) kaldırır.
+`CSacl` Nesneden belirli bir ACE (erişim denetimi girişi) kaldırır.
 
 ```
 void RemoveAce(UINT nIndex) throw();
@@ -200,16 +200,16 @@ void RemoveAce(UINT nIndex) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nDizin*<br/>
-Kaldırılacak ACE girişinin dizini.
+*Nındex*<br/>
+Kaldırmak için ACE girişine dizin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [CAtlArray:: removeadresinden](../../atl/reference/catlarray-class.md#removeat)türetilir.
+Bu yöntem [CAtlArray türetilmiştir::RemoveAt](../../atl/reference/catlarray-class.md#removeat).
 
-##  <a name="removeallaces"></a>CSacl:: RemoveAllAces
+## <a name="csaclremoveallaces"></a><a name="removeallaces"></a>CSacl::RemoveAllAces
 
-`CSacl` Nesnesinde yer alan erişim denetimi girişlerinin (ACE) tümünü kaldırır.
+`CSacl` Nesnede bulunan tüm erişim denetimi girişlerini (ACE'ler) kaldırır.
 
 ```
 void RemoveAllAces() throw();
@@ -217,12 +217,12 @@ void RemoveAllAces() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CSacl` Nesnedeki her `ACE` yapıyı (varsa) kaldırır.
+Nesnedeki `ACE` her yapıyı `CSacl` (varsa) kaldırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CAcl Sınıfı](../../atl/reference/cacl-class.md)<br/>
-[Cacls](/windows/win32/SecAuthZ/access-control-lists)<br/>
-[Ace 'ler](/windows/win32/SecAuthZ/access-control-entries)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
+[Acl](/windows/win32/SecAuthZ/access-control-lists)<br/>
+[Ace](/windows/win32/SecAuthZ/access-control-entries)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

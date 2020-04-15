@@ -12,12 +12,12 @@ helpviewer_keywords:
 - arithmetic operators [C++], additive operators
 - '- operator [C++], additive operators in C++'
 ms.assetid: d4afafe7-e201-4c69-a649-37f17756e784
-ms.openlocfilehash: 739132ce1889b7e73b7ae19f5072a1dfec9c066d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2601debb0a21c4ab9cdcedb25b26085a1aff0a1b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181674"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370202"
 ---
 # <a name="additive-operators--and--"></a>Ek İşleçler: + and -
 
@@ -30,41 +30,41 @@ expression - expression
 
 ## <a name="remarks"></a>Açıklamalar
 
-Toplama işleçleri şunlardır:
+Katkı işleçleri şunlardır:
 
-- Ekleme ( **+** )
+- İlave (**+**)
 
-- Çıkarma ( **-** )
+- Çıkarma (**-**)
 
 Bu ikili işleçlerde soldan sağa ilişkilendirilebilirlik vardır.
 
-Adal işleçleri aritmetik veya işaretçi türündeki işlenenleri alır. Toplama ( **+** ) işlecinin sonucu, işlenenlerinin toplamıdır. Çıkarma ( **-** ) işlecinin sonucu işlenen arasındaki farktır. İşlenenlerinin bir veya her ikisi işaretçiler ise, işlevlere değil, nesnelere işaretçiler olmalıdır. Her iki işlenen de işaretçiler ise, her ikisi de aynı dizideki nesnelere işaretçiler olmadığı takdirde sonuçlar anlamlı değildir.
+Katkı işleçleri aritmetik veya işaretçi türlerinin operands alır. İlave (**+**) işlecinin sonucu operandların toplamıdır. Çıkarma (**-**) işlecinin sonucu operandlar arasındaki farktır. Operandlardan biri veya her ikisi işaretçiyse, işlevlere değil nesnelere işaretçiler olmalıdır. Her iki operands işaretçiler iseniz, her ikisi de aynı dizideki nesnelerin işaretçileri olmadığı sürece sonuçlar anlamlı değildir.
 
-Toplama işleçleri *Aritmetik*, *integral*ve *skaler* türlerin işlenenlerini alır. Bunlar aşağıdaki tabloda tanımlanmıştır.
+Katkı işleçleri *aritmetik,* *integral*ve *skaler* türlerin operands alır. Bunlar aşağıdaki tabloda tanımlanır.
 
-### <a name="types-used-with-additive-operators"></a>Toplamalı Işleçlerle kullanılan türler
+### <a name="types-used-with-additive-operators"></a>Katkı Operatörlerinde Kullanılan Tipler
 
 |Tür|Anlamı|
 |----------|-------------|
-|*tiğinin*|Integral ve kayan türler topluca "aritmetik" türler olarak adlandırılır.|
-|*tam*|Her boyuttaki char ve int (Long, short) ve numaralandırmalar türleri "integral" türleridir.|
-|*ler*|Skalar işlenenler, aritmetik ya da işaretçi türünün işlenenleri.|
+|*Aritmetik*|İntegral ve kayan türleri topluca "aritmetik" türleri olarak adlandırılır.|
+|*Integral*|Tüm boyutların (uzun, kısa) ve numaralandırmalarının char ve int türleri "integral" türleridir.|
+|*Skalar*|Skaler operands aritmetik veya işaretçi türünde operands vardır.|
 
-Bu işleçler için yasal birleşimler şunlardır:
+Bu işleçler için yasal kombinasyonlar şunlardır:
 
-*aritmetik* + *Aritmetik*
+*aritmetik* + *aritmetik*
 
-*skaler* + *integrali*
+*skaler* + *integral*
 
 *integral* + *skaler*
 
-*aritmetik* - *Aritmetik*
+*aritmetik* - *aritmetik*
 
 *skaler* - *skaler*
 
-Toplama ve çıkarma işlemlerinin eşdeğer işlemler olmadığına unutmayın.
+Ekleme ve çıkarmanın eşdeğer işlemler olmadığını unutmayın.
 
-Her iki işlenen de aritmetik bir tür ise, [Standart dönüştürmelerde](standard-conversions.md) kapsanan dönüştürmeler işlenenlere uygulanır ve sonuç, dönüştürülmüş tür olur.
+Her iki operandarit türündeise, [Standart Dönüşümler](standard-conversions.md) kapsamındaki dönüşümler operandlara uygulanır ve sonuç dönüştürülmüş türe ait olur.
 
 ## <a name="example"></a>Örnek
 
@@ -105,16 +105,16 @@ for( int i = 0; i < 10; ++i )
 `pIntArray` öğesine tamsayı değeri olarak 1 eklenmiş olmasına rağmen, "adrese 1 ekle" anlamına gelmez; daha çok, "işaretçiyi dizideki sonraki nesneye işaret edecek şekilde ayarla" anlamına gelir, bu da 2 bayt (veya `sizeof( int )`) uzakta olur.
 
 > [!NOTE]
->  `pIntArray = pIntArray + 1` formunun kodu C++ programlarında nadiren bulunur; arttırma yapmak için şu formlar tercih edilir: `pIntArray++` veya `pIntArray += 1`.
+> `pIntArray = pIntArray + 1` formunun kodu C++ programlarında nadiren bulunur; arttırma yapmak için şu formlar tercih edilir: `pIntArray++` veya `pIntArray += 1`.
 
 ## <a name="pointer-subtraction"></a>İşaretçi çıkarması
 
-Her iki işlenen de işaretçiyse, çıkarma işleminin sonucu işlenenler arasındaki farktır (dizi öğelerinde). Çıkarma ifadesi `ptrdiff_t` türünde imzalı bir integral sonucu verir (Standart içerme dosyasında \<stddef. h >).
+Her iki işlenen de işaretçiyse, çıkarma işleminin sonucu işlenenler arasındaki farktır (dizi öğelerinde). Çıkarma ifadesi, türün `ptrdiff_t` imzalı bir integral sonucu verir (standartta tanımlanan dosya \<stddef.h> içerir).
 
-İşlenenlerden biri, ikinci işlenen olduğu takdirde integral türünde olabilir. Çıkarma işleminin sonucu, orijinal işaretçiyle aynı türdendir. Çıkarma değeri, (*n* - *i*). Array öğesinin bir işaretçisidir; burada *n* , özgün işaretçinin gösterdiği öğe ve ikinci işlenenin *integral değeridir.*
+İşlenenlerden biri, ikinci işlenen olduğu takdirde integral türünde olabilir. Çıkarma işleminin sonucu, orijinal işaretçiyle aynı türdendir. Çıkarma nın değeri , (*n* - *i*)th dizi öğesine işaretçidir, *burada n* özgün işaretçi tarafından işaret edilen öğedir ve *i* ikinci operandUn integral değeridir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [İkili İşleçli İfadeler](../cpp/expressions-with-binary-operators.md)<br/>
 [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C Ek İşleçleri](../c-language/c-additive-operators.md)
+[C Katkı Operatörleri](../c-language/c-additive-operators.md)

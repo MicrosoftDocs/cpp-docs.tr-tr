@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::MutexTraits structure
 - Microsoft::WRL::Wrappers::HandleTraits::MutexTraits::Unlock method
 ms.assetid: 6582df80-b9ba-4892-948f-d572a3b23d54
-ms.openlocfilehash: 9bc4071e5699610a664cbf01ca3e7d36d7effc5e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6d4ba08ab1884e8584b0e98e931d2d63cdac5aec
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62379187"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371248"
 ---
 # <a name="mutextraits-structure"></a>MutexTraits Yapısı
 
-Ortak özelliklerini tanımlayan [Mutex](mutex-class.md) sınıfı.
+[Mutex](mutex-class.md) sınıfının ortak özelliklerini tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,9 +30,9 @@ struct MutexTraits : HANDLENullTraits;
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                           | Açıklama
+Adı                           | Açıklama
 ------------------------------ | ------------------------------------------------
-[MutexTraits::Unlock](#unlock) | Paylaşılan bir kaynağa özel denetimin serbest bırakır.
+[MutexTraits::Kilidini](#unlock) | Paylaşılan kaynağın özel denetimini serbest bırakır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -42,13 +42,13 @@ Ad                           | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrappers.h
 
-**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+**Ad alanı:** Microsoft::WRL::Sarmalayıcılar::HandleTraits
 
-## <a name="unlock"></a>MutexTraits::Unlock yöntemi
+## <a name="mutextraitsunlock-method"></a><a name="unlock"></a>MutexTraits::Unlock Yöntemi
 
-Paylaşılan bir kaynağa özel denetimin serbest bırakır.
+Paylaşılan kaynağın özel denetimini serbest bırakır.
 
 ```cpp
 inline static void Unlock(
@@ -58,5 +58,5 @@ inline static void Unlock(
 
 ### <a name="parameters"></a>Parametreler
 
-*h*<br/>
-Mutex nesnesi için işler.
+*H*<br/>
+Mutex nesnesine tut.

@@ -1,5 +1,5 @@
 ---
-title: IAxWinAmbientDispatchEx Interface
+title: IAxWinAmbientDispatchEx Arabirimi
 ms.date: 11/04/2016
 f1_keywords:
 - IAxWinAmbientDispatchEx
@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatchEx interface
 ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
-ms.openlocfilehash: 638152d8c49bd20742a586bc665efcdb662b6f3a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f4816846801e388619db62998ec979a1100916ee
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62276100"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81329988"
 ---
-# <a name="iaxwinambientdispatchex-interface"></a>IAxWinAmbientDispatchEx Interface
+# <a name="iaxwinambientdispatchex-interface"></a>IAxWinAmbientDispatchEx Arabirimi
 
-Bu arabirim, barındırılan bir denetim için ek ortam özelliklerine uygular.
+Bu arabirim, barındırılan denetim için ek ortam özellikleri uygular.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,33 +34,33 @@ MIDL_INTERFACE("B2D0778B - AC99 - 4c58 - A5C8 - E7724E5316B5") IAxWinAmbientDisp
 
 |||
 |-|-|
-|[SetAmbientDispatch](#setambientdispatch)|Bu yöntem, kullanıcı tanımlı bir arabirimi varsayılan ortam özelliği arabirimiyle desteklemek üzere çağrılır.|
+|[SetAmbientDispatch](#setambientdispatch)|Bu yöntem, varsayılan ortam özelliği arabirimini kullanıcı tanımlı bir arabirimle tamamlamak için çağrılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arabirimi statik olarak, ATL ve konak ActiveX denetimleri, özellikle ActiveX ortam özelliklerine sahip denetimler için bağlı olan ATL uygulamaları içermektedir. Bu arabirim dahil değil, bu onay oluşturur: "Kitaplık kimliği için Ccommodule::Init geçirilecek unuttunuz"
+Bu arabirimi, statik olarak ATL'ye bağlı ATL uygulamalarına ekleyin ve ActiveX Denetimlerini, özellikle ortam özelliklerine sahip ActiveX Denetimlerini barındırın. Bu arayüz dahil değil bu iddia yı oluşturacaktır: "Libid'i CComModule'e geçirmeyi unuttunuz mu:Init"
 
-Bu arabirim, nesneler barındırma ATL'nin ActiveX denetimi tarafından kullanıma sunulur. Türetilmiş [Iaxwinambientdispatch](../../atl/reference/iaxwinambientdispatch-interface.md), `IAxWinAmbientDispatchEx` biriyle kendi ATL tarafından sağlanan ortam özelliği arabirimi desteklemek üzere izin veren bir yöntem ekler.
+Bu arabirim, ATL'nin ActiveX denetim barındırma nesneleri tarafından ortaya çıkarır. [IAxWinAmbientDispatch](../../atl/reference/iaxwinambientdispatch-interface.md)türetilmiştir , `IAxWinAmbientDispatchEx` kendi biri ile ATL tarafından sağlanan ortam özelliği arayüzü tamamlamak için izin veren bir yöntem ekler.
 
-<xref:System.Windows.Forms.AxHost> tür bilgileri hakkında yüklenmeye çalışılacak `IAxWinAmbientDispatch` ve `IAxWinAmbientDispatchEx` tür kitaplığından kodunu içerir.
+<xref:System.Windows.Forms.AxHost>kodu içeren tür kitaplığı hakkında `IAxWinAmbientDispatch` ve `IAxWinAmbientDispatchEx` bu tür kitaplığından tür bilgilerini yüklemeye çalışır.
 
-ATL90.dll için bağlıyorsanız **AXHost** dll tür kitaplığındaki tür bilgilerini yükler.
+ATL90.dll'ye bağlayacaksanız, **AXHost** dll'deki tür kitaplığından tür bilgilerini yükler.
 
-Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) daha fazla ayrıntı için.
+Daha fazla bilgi için [ATL AXHost kullanarak ActiveX Denetimleri Barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Bu arabirim tanımı aşağıdaki tabloda gösterildiği gibi formlar, bir süre içinde kullanılabilir.
+Bu arabirimin tanımı, aşağıdaki tabloda gösterildiği gibi, çeşitli formlarda kullanılabilir.
 
-|Tanım türü|Dosya|
+|Tanım Türü|Dosya|
 |---------------------|----------|
-|IDL|atliface.idl|
-|Tür kitaplığı|ATL.dll|
-|C++|atliface.h (ATLBase.h içinde de dahil)|
+|ıdl|atliface.idl|
+|Tür Kitaplığı|ATL.dll|
+|C++|atliface.h (Ayrıca ATLBase.h dahil)|
 
-##  <a name="setambientdispatch"></a>  IAxWinAmbientDispatchEx::SetAmbientDispatch
+## <a name="iaxwinambientdispatchexsetambientdispatch"></a><a name="setambientdispatch"></a>IAxWinAmbientDispatchEx::SetAmbientDispatch
 
-Bu yöntem, kullanıcı tanımlı bir arabirimi varsayılan ortam özelliği arabirimiyle desteklemek üzere çağrılır.
+Bu yöntem, varsayılan ortam özelliği arabirimini kullanıcı tanımlı bir arabirimle tamamlamak için çağrılır.
 
 ```
 virtual HRESULT STDMETHODCALLTYPE SetAmbientDispatch(IDispatch* pDispatch) = 0;
@@ -69,15 +69,15 @@ virtual HRESULT STDMETHODCALLTYPE SetAmbientDispatch(IDispatch* pDispatch) = 0;
 ### <a name="parameters"></a>Parametreler
 
 *pDispatch*<br/>
-Yeni arabirim işaretçisi.
+Yeni arabirimi işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `SetAmbientDispatch` çağrılır yeni bir arabirim işaretçisi ile tüm özellikler veya yöntemler için bu özellikleri zaten tarafından sağlanmazsa barındırılan denetim tarafından sorulan çağırmak için bu yeni arabirim kullanılacak [Iaxwinambientdispatch](../../atl/reference/iaxwinambientdispatch-interface.md).
+Yeni `SetAmbientDispatch` bir arabirim için bir işaretçi ile çağrıldığında, bu yeni arabirim barındırılan denetim tarafından istenen herhangi bir özellik veya yöntemleri çağırmak için kullanılacak, bu özellikleri zaten [IAxWinAmbientDispatch](../../atl/reference/iaxwinambientdispatch-interface.md)tarafından sağlanmadı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

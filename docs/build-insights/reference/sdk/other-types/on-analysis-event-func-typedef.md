@@ -1,6 +1,6 @@
 ---
-title: Onanalsıseventfunc typedef
-description: C++ Build Insights SDK 'sı Onanalsıseventfunc typedef başvurusu.
+title: OnAnalysisEventFunc typedef
+description: C++ Build Insights SDK OnAnalysisEventFunc typedef referans.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: d260f6060e759f315589abda82e31c2c2b95a65e
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: eacd174279caff0db22586d5e40d3a866afc4459
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332434"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81329122"
 ---
-# <a name="onanalysiseventfunc-typedef"></a>Onanalsıseventfunc typedef
+# <a name="onanalysiseventfunc-typedef"></a>OnAnalysisEventFunc typedef
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`OnAnalysisEventFunc` typedef, [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) yapısında kullanılan işlev imzalarından biridir.
+`OnAnalysisEventFunc` [Typedef, ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) yapısında kullanılan işlev imzalarından biridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,14 +37,14 @@ typedef enum CALLBACK_CODE (BUILD_INSIGHTS_API *OnAnalysisEventFunc)(
 
 ### <a name="parameters"></a>Parametreler
 
-*Eventstack*\
-Geçerli olay için olay yığını. Olay yığınları hakkında daha fazla bilgi için bkz. [Olaylar](../event-table.md).
+*eventStack*\
+Geçerli olay için olay yığını. Olay yığınları hakkında daha fazla bilgi için [Etkinlikler'e](../event-table.md)bakın.
 
-*CallbackContext*\
-[ANALYSIS_DESCRIPTOR](analysis-descriptor-struct.md) veya [RELOG_DESCRIPTOR](relog-descriptor-struct.md)içinde bu geri çağırma için ayarlanan bağlam değeri.
+*geri aramaBağlam*\
+[bu](analysis-descriptor-struct.md) geri arama için ANALYSIS_DESCRIPTOR veya [RELOG_DESCRIPTOR](relog-descriptor-struct.md)olarak ayarlanan bağlam değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir sonraki ne olacağını denetleyen [CALLBACK_CODE](callback-code-enum.md) değeri.
+Bir sonraki adımı kontrol eden [CALLBACK_CODE](callback-code-enum.md) bir değer.
 
 ::: moniker-end

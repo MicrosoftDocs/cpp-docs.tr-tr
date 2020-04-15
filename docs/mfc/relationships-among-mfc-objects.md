@@ -7,48 +7,48 @@ helpviewer_keywords:
 - relationships, MFC objects
 - MFC object relationships
 ms.assetid: 6e8f3b51-e80f-4d88-94c8-4c1e4ee163ad
-ms.openlocfilehash: bb8d1fcd9737b33d52038746a26f4e1bd1043e95
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d7e40e25b405d3f8ec50a518889cc2b89bc8c725
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309050"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372807"
 ---
 # <a name="relationships-among-mfc-objects"></a>MFC Nesneleri Arasındaki İlişki
 
-Belge/görünüm oluşturma işlemi açıdan bakın yardımcı olmak için çalışan bir program göz önünde bulundurun: bir belge, görünüm kapsamak için kullanılmış çerçeve penceresi ve belgeyle ilişkili görünüm.
+Belge/görünüm oluşturma işlemini perspektife koymaya yardımcı olmak için çalışan bir programı düşünün: belge, görünümü içeren çerçeve penceresi ve belgeyle ilişkili görünüm.
 
-- Bir belge, belgeyi oluşturan bir belge şablonu belge ve bir işaretçi görünümlerini listesini tutar.
+- Belge, o belgenin görünümlerinin bir listesini ve belgeyi oluşturan belge şablonuna işaretçi tutar.
 
-- Bir görünüm, belgeye bir işaretçi tutar ve kendi ana çerçeve penceresinin bir alt öğesidir.
+- Görünüm, bir işaretçiyi belgeye tutar ve üst çerçeve penceresinin bir alt öğesidir.
 
-- Belge çerçeve penceresi, geçerli etkin görünüm için bir işaretçi tutar.
+- Belge çerçevesi penceresi, bir işaretçiyi geçerli etkin görünümüne tutar.
 
-- Bir belge şablonu, açık belgelerin listesini tutar.
+- Belge şablonu, açık belgelerinin listesini tutar.
 
-- Uygulama, belge şablonları listesini tutar.
+- Uygulama, belge şablonlarının bir listesini tutar.
 
-- Windows tüm pencereler için İleti gönderebilmek için izler.
+- Windows, onlara ileti gönderebilmek için tüm açık pencereleri izler.
 
-Bu ilişkiler belge/görünüm oluşturma sırasında oluşturulur. Aşağıdaki tabloda, çalışan bir program nesneleri diğer nesnelerin nasıl erişeceği gösterilmektedir. Genel bir işlev çağırarak application nesnesine bir işaretçi herhangi bir nesne elde edebilirsiniz [AfxGetApp](../mfc/reference/application-information-and-management.md#afxgetapp).
+Bu ilişkiler belge/görünüm oluşturma sırasında kurulur. Aşağıdaki tablo, çalışan bir programdaki nesnelerin diğer nesnelere nasıl erişebileceğini gösterir. Herhangi bir nesne global fonksiyon [AfxGetApp](../mfc/reference/application-information-and-management.md#afxgetapp)çağırarak uygulama nesnesi için bir işaretçi elde edebilirsiniz.
 
-### <a name="gaining-access-to-other-objects-in-your-application"></a>Uygulamanızdaki diğer nesnelere erişim elde etme
+### <a name="gaining-access-to-other-objects-in-your-application"></a>Başvurunuzdaki Diğer Nesnelere Erişim Sağlama
 
-|Nesneden|Diğer nesnelere erişmek nasıl|
+|Nesneden|Diğer nesnelere nasıl erişilir?|
 |-----------------|---------------------------------|
-|Belge|Kullanım [GetFirstViewPosition](../mfc/reference/cdocument-class.md#getfirstviewposition) ve [GetNextView](../mfc/reference/cdocument-class.md#getnextview) belge görünümü listesine erişmek için.<br /><br /> Çağrı [GetDocTemplate](../mfc/reference/cdocument-class.md#getdoctemplate) belgeler alınamıyor.|
-|Görüntüle|Çağrı [GetDocument](../mfc/reference/cview-class.md#getdocument) belge alınamıyor.<br /><br /> Çağrı [GetParentFrame](../mfc/reference/cwnd-class.md#getparentframe) çerçeve penceresi alınamıyor.|
-|Belge çerçeve penceresi|Çağrı [GetActiveView](../mfc/reference/cframewnd-class.md#getactiveview) geçerli bir görünüm elde edin.<br /><br /> Çağrı [GetActiveDocument](../mfc/reference/cframewnd-class.md#getactivedocument) geçerli görünüme iliştirilmiş belgeye alınamıyor.|
-|MDI çerçeve penceresi|Çağrı [MDIGetActive](../mfc/reference/cmdiframewnd-class.md#mdigetactive) etkin almak için [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md).|
+|Belge|Belgenin görünüm listesine erişmek için [GetFirstViewPosition](../mfc/reference/cdocument-class.md#getfirstviewposition) ve [GetNextView'i](../mfc/reference/cdocument-class.md#getnextview) kullanın.<br /><br /> Belge şablonuna ulaşmak için [GetDocTemplate'i](../mfc/reference/cdocument-class.md#getdoctemplate) arayın.|
+|Görüntüle|Belgeyi almak için [GetDocument'i](../mfc/reference/cview-class.md#getdocument) arayın.<br /><br /> Çerçeve penceresini almak için [GetParentFrame'i](../mfc/reference/cwnd-class.md#getparentframe) arayın.|
+|Belge çerçevesi penceresi|Geçerli görünümü almak için [GetActiveView'i](../mfc/reference/cframewnd-class.md#getactiveview) arayın.<br /><br /> Belgenin geçerli görünüme eklenmesi için [GetActiveDocument'i](../mfc/reference/cframewnd-class.md#getactivedocument) arayın.|
+|MDI çerçeve penceresi|Şu anda etkin [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md)almak için [MDIGetActive](../mfc/reference/cmdiframewnd-class.md#mdigetactive) arayın.|
 
-Genellikle, tek bir görünümde bir çerçeve penceresi sahiptir, ancak bazı durumlarda, bölümlendirici pencereler olduğu gibi aynı çerçeve penceresi birden çok görünüm içerir. Çerçeve penceresi şu anda etkin görünüm için bir işaretçi tutar; İşaretçiyi, başka bir görünüme etkinleştirilir dilediğiniz zaman güncelleştirilir.
+Genellikle, bir çerçeve penceresi bir görünüme sahiptir, ancak bazen, bölücü pencerelerde olduğu gibi, aynı çerçeve penceresi birden çok görünüm içerir. Çerçeve penceresi, şu anda etkin görünümü işaretçi tutar; işaretçi, başka bir görünüm etkinleştirildiğinde güncelleştirilir.
 
 > [!NOTE]
->  Ana çerçeve penceresine bir işaretçi depolanan [m_pMainWnd](../mfc/reference/cwinthread-class.md#m_pmainwnd) üye değişkeni uygulama nesnesi. Bir çağrı `OnFileNew` kılacağınızı içinde `InitInstance` üye işlevinin `CWinApp` ayarlar *m_pMainWnd* sizin için. Değil çağırırsanız `OnFileNew`, değişkenin değeri ayarlamanız gerekir `InitInstance` kendiniz. (Komut satırında/Embedding ise SDI COM bileşeni (sunucu) uygulamaları değişkeni ayarlanmamış.) Unutmayın *m_pMainWnd* artık sınıfın bir üyesidir `CWinThread` yerine `CWinApp`.
+> Ana çerçeve penceresine işaretçi, uygulama nesnesinin [m_pMainWnd](../mfc/reference/cwinthread-class.md#m_pmainwnd) üye değişkeninde depolanır. Kümelerin `InitInstance` üye işlevini geçersiz kılmanızda sizin için *m_pMainWnd* bir çağrı. `OnFileNew` `CWinApp` `OnFileNew`Aramazsanız, değişkenin değerini `InitInstance` kendiniz ayarlamanız gerekir. (SDI COM bileşeni (sunucu) uygulamaları komut satırında /Gömme varsa değişkeni ayarlamayabilir.) *m_pMainWnd* artık sınıfın bir üyesi `CWinThread` değil `CWinApp`de.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
+[Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
 [Belge Şablonu Oluşturma](../mfc/document-template-creation.md)<br/>
-[Belge/görünüm oluşturma](../mfc/document-view-creation.md)<br/>
-[Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
+[Belge/Görünüm Oluşturma](../mfc/document-view-creation.md)<br/>
+[Yeni Belgeler, Windows ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)

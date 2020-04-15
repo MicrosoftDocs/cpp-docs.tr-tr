@@ -26,16 +26,16 @@ helpviewer_keywords:
 - std::gamma_distribution [C++], param_type
 - std::gamma_distribution [C++], param_type
 ms.assetid: 2a6798ac-6152-41d7-8ef6-d684d92f1572
-ms.openlocfilehash: ab71ada5b1fb8b604b94ed098a46820b86a65c63
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 4bcc17ada430c1e3b14ef1ef67ea97e863dbdd5d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689616"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370679"
 ---
 # <a name="gamma_distribution-class"></a>gamma_distribution Sınıfı
 
-Gama dağılımı üretir.
+Gama dağılımı oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,34 +70,34 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* \
-Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz. [\<random >](../standard-library/random.md).
+*RealType*\
+Kayan nokta sonuç türü, varsayılan **olarak iki katına çıkar.** Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
 
-*URNG* \
-Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz. [\<random >](../standard-library/random.md).
+*ÜRNG*\
+Tek tip rastgele sayı üreteç motoru. Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, Kullanıcı tarafından belirtilen kayan **nokta türünün değerlerini** üreten bir dağılımı ya da hiçbiri sağlanmazsa, gama dağıtımına göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
+Sınıf şablonu, gama dağılımına göre dağıtılan kullanıcı tarafından belirtilen kayan nokta türü değerlerini üreten veya hiçbiri sağlanmamışsa **çift** yazın bir dağılım açıklar. Aşağıdaki tablo, tek tek üyelerle ilgili makalelere bağlantılar ala.
 
 ||||
 |-|-|-|
 |[gamma_distribution](#gamma_distribution)|`gamma_distribution::alpha`|`gamma_distribution::param`|
 |`gamma_distribution::operator()`|`gamma_distribution::beta`|[param_type](#param_type)|
 
-Özellik işlevleri `alpha()` ve `beta()` depolanan dağıtım parametreleri *Alpha* ve *Beta*için ilgili değerlerini döndürür.
+Özellik fonksiyonları `alpha()` `beta()` ve saklanan dağıtım parametreleri *alfa* ve *beta*için kendi değerlerini döndürün.
 
-Özellik üyesi `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
+Özellik üyesi, `param()` depolanan `param_type` dağıtım parametre paketini ayarlar veya döndürür.
 
-@No__t_0 ve `max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
+`min()` Ve `max()` üye işlevler, sırasıyla mümkün olan en küçük sonucu ve mümkün olan en büyük sonucu döndürer.
 
-@No__t_0 member işlevi, önbelleğe alınmış tüm değerleri atar, böylece `operator()` bir sonraki çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
+`reset()` Üye işlev önbelleğe alınan değerleri atar, böylece bir sonraki `operator()` çağrının sonucu çağrıdan önce motordan elde edilen değerlere bağlı olmaz.
 
-@No__t_0 üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
+Üye `operator()` işlevler, geçerli parametre paketinden veya belirtilen parametre paketinden URNG motoruna dayalı olarak oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz. [\<random >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için [ \<rastgele>](../standard-library/random.md)bakın.
 
-Gama dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld article [Gama dağıtımına](https://go.microsoft.com/fwlink/p/?linkid=401111)bakın.
+Gama dağıtımı hakkında ayrıntılı bilgi için Wolfram MathWorld makalesi [Gamma Distribution'a](https://go.microsoft.com/fwlink/p/?linkid=401111)bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -184,13 +184,13 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<random >
+**Üstbilgi:** \<rastgele>
 
 **Ad alanı:** std
 
-## <a name="gamma_distribution"></a>gamma_distribution::gamma_distribution
+## <a name="gamma_distributiongamma_distribution"></a><a name="gamma_distribution"></a>gamma_distribution:gamma_distribution
 
-Dağıtımı oluşturur.
+Dağıtımı kurar.
 
 ```cpp
 explicit gamma_distribution(result_type alpha = 1.0, result_type beta = 1.0);
@@ -199,26 +199,26 @@ explicit gamma_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*alfa* \
-@No__t_0 dağıtım parametresi.
+*Alfa*\
+Dağıtım `alpha` parametresi.
 
-*beta* \
-@No__t_0 dağıtım parametresi.
+*Beta*\
+Dağıtım `beta` parametresi.
 
-*para* \
-Dağıtımı oluşturmak için kullanılan parametre yapısı.
+*parm*\
+Dağılımı oluşturmak için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ön **koşul:** `0.0 < alpha` ve `0.0 < beta`
+**Ön koşul:** `0.0 < alpha` ve`0.0 < beta`
 
-İlk Oluşturucu, depolanan `alpha` değeri *Alpha* değerini tutan ve depolanan `beta` değeri *Beta*değerini tutan bir nesne oluşturur.
+İlk oluşturucu, `alpha` depolanan değeri *alfa* değerini tutan ve depolanan `beta` değeri *beta*değerini tutan bir nesne inşa eder.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. @No__t_0 üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci oluşturucu, depolanan parametreleri *parm'dan*başharfe çevrilmiş bir nesne inşa eder. Üye işlevi arayarak varolan bir dağıtımın `param()` geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
-## <a name="param_type"></a>gamma_distribution::p aram_type
+## <a name="gamma_distributionparam_type"></a><a name="param_type"></a>gamma_distribution::param_type
 
-Dağıtımın parametrelerini depolar.
+Dağıtım parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -234,21 +234,21 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*alfa* \
-@No__t_0 dağıtım parametresi.
+*Alfa*\
+Dağıtım `alpha` parametresi.
 
-*beta* \
-@No__t_0 dağıtım parametresi.
+*Beta*\
+Dağıtım `beta` parametresi.
 
-*sağ* \
-Bunu ile Karşılaştırılacak `param_type` örneği.
+*Doğru*\
+Bunu `param_type` karşılaştırmak için örnek.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ön **koşul:** `0.0 < alpha` ve `0.0 < beta`
+**Ön koşul:** `0.0 < alpha` ve`0.0 < beta`
 
-Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, var olan bir dağıtımın saklı parametrelerini ayarlamak için `param()` member işlevine ve depolanan parametrelerin yerine kullanılacak `operator()` geçirilebilir.
+Bu yapı, varolan bir dağılımın depolanan parametrelerini `param()` ayarlamak ve `operator()` depolanan parametrelerin yerine kullanılmak üzere üye işlevine anında dağıtım Sınıfı oluşturucuya geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<random >](../standard-library/random.md)
+[\<rastgele>](../standard-library/random.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - volatile objects
 - objects [C++], volatile
 ms.assetid: 81db4a85-ed5a-4a2c-9a53-5d07a771d2de
-ms.openlocfilehash: 6d193c530cbe0258d8713883b769fe4828a248c1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 841b2e1e4ffbec87a170c45be8ad0cd0f831a0ef
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187433"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371908"
 ---
 # <a name="volatile-c"></a>volatile (C++)
 
@@ -28,35 +28,35 @@ volatile declarator ;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleyicinin bu anahtar sözcüğü nasıl yorumlayacağını değiştirmek için [/volatile](../build/reference/volatile-volatile-keyword-interpretation.md) derleyici anahtarını kullanabilirsiniz.
+Derleyicinin bu anahtar sözcüğü nasıl yorumladığını değiştirmek için [/volatile](../build/reference/volatile-volatile-keyword-interpretation.md) derleyici anahtarını kullanabilirsiniz.
 
-Visual Studio, hedef mimarisine bağlı olarak **geçici** anahtar sözcüğünü farklı şekilde yorumlar. ARM için, bir **/volatile** derleyici seçeneği belirtilmemişse, derleyici **/volatile: iso** belirtilmişse olarak çalışır. ARM dışındaki mimariler için, bir **/volatile** derleyici seçeneği belirtilmemişse, derleyici, **/volatile: MS** belirtilmişse olarak çalışır; Bu nedenle, ARM dışındaki mimariler **için, iş**parçacıkları arasında paylaşılan bellek ile ilgilenirken doğrudan eşitleme temelleri ve derleyici iç bilgileri kullanmanızı kesinlikle öneririz.
+Visual **Studio, hedef** mimariye bağlı olarak geçici anahtar sözcüğü farklı şekilde yorumlar. ARM için **, /volatile** derleyici seçeneği belirtilmemişse, derleyici **/volatile:iso** belirtilmiş gibi gerçekleştirir. ARM dışındaki mimariler için , **/uçucu** derleyici seçeneği belirtilmemişse, derleyici **/volatile:ms** belirtilmiş gibi gerçekleştirir; bu nedenle, ARM dışındaki mimariler **için,/volatile:iso**belirtmenizi ve iş parçacıkları arasında paylaşılan bellekle uğraşırken açık senkronizasyon ilkelleri ve derleyici içsellerini kullanmanızı şiddetle öneririz.
 
-Kesme işleyicileri gibi zaman uyumsuz süreçler tarafından kullanılan bellek konumlarına erişim sağlamak için **geçici** niteleyiciyi kullanabilirsiniz.
+Kesme işleyicileri gibi eşsenkronize işlemler tarafından kullanılan bellek konumlarına erişim sağlamak için **geçici** niteleyiciyi kullanabilirsiniz.
 
-Aynı zamanda [__restrict](../cpp/extension-restrict.md) anahtar sözcüğünü içeren bir değişkende **geçici** kullanıldığında, **geçici** önceliklidir.
+**Uçucu** da [__restrict](../cpp/extension-restrict.md) anahtar kelime olan bir değişken üzerinde kullanıldığında, **uçucu** önceliklidir.
 
-Bir **struct** üyesi **geçici**olarak işaretlenmişse, **geçici** olarak tüm yapıya yayılır. Bir yapının bir yönerge kullanılarak geçerli mimariye kopyalanabilen bir uzunluğu yoksa, **geçici** olarak bu yapıda kaybolmuş olabilir.
+Bir **yapı** üyesi **uçucu**olarak işaretlenmişse, **uçucu** tüm yapıya yayılır. Bir yapının bir yönerge kullanılarak geçerli mimaride kopyalanabilecek bir uzunluğu yoksa, bu yapıda **geçici** madde tamamen kaybolabilir.
 
-Aşağıdaki koşullardan biri doğru ise, **geçici** anahtar sözcüğünün bir alanı üzerinde hiçbir etkisi olmayabilir:
+Aşağıdaki koşullardan biri **doğruysa, geçici** anahtar kelimenin bir alan üzerinde hiçbir etkisi olmayabilir:
 
 - Geçici alanın uzunluğu bir yönerge kullanarak geçerli mimariye kopyalanabilmesi için en büyük boyutu aşıyor.
 
-- En dıştaki içeren **yapının**uzunluğu — veya muhtemelen iç içe geçmiş bir **yapının**üyesiyse — bir yönerge kullanarak geçerli mimariye kopyalanabilecek maksimum boyutu aşıyor.
+- Dıştan en dışta bulunan **yapının**uzunluğu (veya iç içe ayrılmış bir **yapının**üyesiyse) tek bir yönerge kullanılarak geçerli mimaride kopyalanabilecek maksimum boyutu aşıyor.
 
-İşlemci, önbelleğe alınamayan bellek erişimlerini yeniden sıralayıp, derleyicinin bellek erişimlerini yeniden sıralayıp sağlamadığından emin olmak için önbelleklenebilir değişkenlerin **geçici** olarak işaretlenmesi gerekir.
+İşlemci önbelleğe alınamayan bellek erişimlerini yeniden sıralamasa da, derleyicinin bellek erişimlerini yeniden sipariş etmediğini garanti etmek için önbelleğe alınamayan değişkenler **geçici** olarak işaretlenmelidir.
 
-Her zaman değerleri değiştirebildiğinden, **geçici** olarak belirtilen nesneler belirli iyileştirmeler içinde kullanılmaz.  İstek geldiğinde, önceki yönerge aynı nesneden bir değer istese bile, sistem her zaman geçici bir nesnenin geçerli değerini okur.  Ayrıca, nesnenin değeri atama üzerine hemen yazılır.
+**Geçici** olarak bildirilen nesneler, değerleri herhangi bir zamanda değişebileceğinden belirli optimizasyonlarda kullanılmaz.  İstek geldiğinde, önceki yönerge aynı nesneden bir değer istese bile, sistem her zaman geçici bir nesnenin geçerli değerini okur.  Ayrıca, nesnenin değeri atama üzerine hemen yazılır.
 
 ## <a name="iso-compliant"></a>ISO Uyumlu
 
-C# Geçici anahtar C++ sözcük hakkında bilginiz varsa veya MICROSOFT derleyicisi 'nin (MSVC) önceki sürümlerinde **geçici** davranışı hakkında bilgi sahibiyseniz, c++ 11 ISO standart **geçici** anahtar sözcüğünün farklı olduğunu ve [/volatile: ISO](../build/reference/volatile-volatile-keyword-interpretation.md) derleyici seçeneği belirtildiğinde MSVC içinde desteklendiğini unutmayın. (ARM için bu varsayılan olarak belirtilir). C++ 11 ISO standart kodundaki **volatile** anahtar sözcüğü yalnızca donanım erişimi için kullanılır; iş parçacığı içi iletişim için kullanmayın. İş parçacıkları arası iletişim için [ C++ standart kitaplıktan](../standard-library/cpp-standard-library-reference.md) [std:: atomik\<t >](../standard-library/atomic.md) gibi mekanizmalar kullanın.
+C# geçici anahtar sözcüğüne aşinaysanız veya Microsoft C++ derleyicisinin (MSVC) önceki sürümlerindeki **geçici** davranışa aşinaysanız, C++11 ISO Standart **geçici** anahtar sözcüğünün farklı olduğunu ve [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) derleyici seçeneği belirtildiğinde MSVC'de desteklendiğinde niçin desteklendiklerini unutmayın. (ARM için bu varsayılan olarak belirtilir). C++11 ISO Standart kodundaki **geçici** anahtar kelime yalnızca donanım erişimi için kullanılır; iş parçacığı iletişimi için kullanmayın. İş parçacıkları arası iletişim için, [C++ Standart Kitaplığı'ndan](../standard-library/cpp-standard-library-reference.md) [\<std::atomik T>](../standard-library/atomic.md) gibi mekanizmaları kullanın.
 
 ## <a name="end-of-iso-compliant"></a>ISO Uyumluluğunun Sonu
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-**/Volatile: MS** derleyici seçeneği KULLANıLDıĞıNDA — ARM dışındaki mimariler hedeflenirse varsayılan olarak, derleyici diğer genel nesnelere yönelik başvurulara yönelik sıralamayı korumanın yanı sıra geçici nesnelere başvurular arasında sıralamayı sürdürmek için ek kod oluşturur. Özellikle:
+**/volatile:ms** derleyici sevesi kullanıldığında-varsayılan olarak ARM dışındaki mimariler hedeflendiğinde-derleyici, diğer genel nesnelere yapılan atıflara yapılan sıralamayı sürdürmenin yanı sıra geçici nesnelere yapılan atıflar arasında sıralamayı sürdürmek için ek kod oluşturur. Özellikle:
 
 - Geçici bir nesneye yazma (geçici yazma olarak da bilinir) işleminde Sürüm semantiği vardır; yani bir yönerge dizisindeki geçici bir nesne için yazma işleminden önce olan bir genel veya statik nesne başvurusu, derlenmiş ikili içindeki geçici yazmadan önce olur.
 
@@ -65,12 +65,12 @@ C# Geçici anahtar C++ sözcük hakkında bilginiz varsa veya MICROSOFT derleyic
 Bu, bellek kilitleri ve çok iş parçacıklı uygulamaların sürümlerinde geçici nesnelerin kullanılabilmesini sağlar.
 
 > [!NOTE]
->  **/Volatile: MS** derleyicisi seçeneği kullanıldığında, kod, taşınabilir değil olarak sağlanmış olan gelişmiş garantisi temel alır.
+> **/volatile:ms** derleyicisi seçeneği kullanıldığında sağlanan gelişmiş garantiye dayandığında, kod taşınabilir değildir.
 
-**SON Microsoft 'a özgü**
+**END Microsoft Özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
 [const](../cpp/const-cpp.md)<br/>
-[const ve volatile İşaretçileri](../cpp/const-and-volatile-pointers.md)
+[const ve volatile İşaretçiler](../cpp/const-and-volatile-pointers.md)

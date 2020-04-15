@@ -15,72 +15,72 @@ helpviewer_keywords:
 - destruction [MFC], data objects
 - data sources [MFC], creating
 ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
-ms.openlocfilehash: c5bbc2b3e19278a397e13c9b936d2434570c581c
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 58b68ca9597fd2a03cffb2bbab327dbc72d09599
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127435"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371211"
 ---
 # <a name="data-objects-and-data-sources-creation-and-destruction"></a>Veri Nesneleri ve Veri Kaynakları: Oluşturma ve Yok Etme
 
-Veri nesneleri [ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md)makalesinde açıklandığı gibi veri nesneleri ve veri kaynakları, veri aktarımının her iki tarafını da temsil eder. Bu makalede aşağıdakiler de dahil olmak üzere, veri aktarımlarını doğru şekilde gerçekleştirmek için bu nesne ve kaynakları oluşturma ve yok etme işlemleri açıklanmaktadır:
+Makalede Açıklandığı gibi [Veri Nesneleri ve Veri Kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md), veri nesneleri ve veri kaynakları bir veri aktarım her iki tarafı temsil eder. Bu makalede, veri aktarımlarınızı düzgün bir şekilde gerçekleştirmek için bu nesnelerin ve kaynakların ne zaman oluşturulup yok edilecekleri açıklanmaktadır:
 
 - [Veri nesneleri oluşturma](#_core_creating_data_objects)
 
 - [Veri nesnelerini yok etme](#_core_destroying_data_objects)
 
-- [Veri kaynakları oluşturma](#_core_creating_data_sources)
+- [Veri kaynağı oluşturma](#_core_creating_data_sources)
 
 - [Veri kaynaklarını yok etme](#_core_destroying_data_sources)
 
-##  <a name="_core_creating_data_objects"></a>Veri nesneleri oluşturma
+## <a name="creating-data-objects"></a><a name="_core_creating_data_objects"></a>Veri Nesneleri Oluşturma
 
-Veri nesneleri, hedef uygulama tarafından, istemci ya da sunucu tarafından kullanılır. Hedef uygulamadaki bir veri nesnesi, kaynak uygulamayla hedef uygulama arasında bir bağlantının bir sonu olur. Hedef uygulamadaki bir veri nesnesi, veri kaynağındaki verilere erişmek ve bu verilerle etkileşim kurmak için kullanılır.
+Veri nesneleri hedef uygulama tarafından kullanılır — istemci veya sunucu. Hedef uygulamadaki veri nesnesi, kaynak uygulama ile hedef uygulama arasındaki bağlantının bir sonudur. Hedef uygulamasındaki bir veri nesnesi, veri kaynağındaki verilere erişmek ve bunlarla etkileşimde kullanılmak üzere kullanılır.
 
-Bir veri nesnesi gereken iki yaygın durum vardır. İlk durum, sürükle ve bırak kullanılarak uygulamanızda verilerin bırakılmakta olduğu durumdur. İkinci durum, düzenleme menüsünde Özel Yapıştır veya Yapıştır ' ın seçildiği durumdur.
+Bir veri nesnesi gerekli iki ortak durum vardır. İlk durum, sürükle ve bırak kullanarak uygulamanızda veri bırakıldığında olur. İkinci durum, Yapıştır veya Yapıştır Özel'in Edit menüsünden seçilmesidir.
 
-Bir sürükle ve bırak durumunda veri nesnesi oluşturmanız gerekmez. Var olan bir veri nesnesine yönelik bir işaretçi `OnDrop` işlevinizi geçirilecek. Bu veri nesnesi, sürükle ve bırak işleminin bir parçası olarak Framework tarafından oluşturulur ve ayrıca onun tarafından yok edilir. Yapıştırma başka bir yöntem tarafından yapıldığında bu her zaman durum değildir. Daha fazla bilgi için bkz. [veri nesnelerini yok](#_core_destroying_data_objects)etme.
+Sürükle ve bırak durumunda, bir veri nesnesi oluşturmanız gerekmez. Varolan bir veri nesnesi için `OnDrop` bir işaretçi işlevinize geçirilir. Bu veri nesnesi sürükle ve bırak işleminin bir parçası olarak çerçeve tarafından oluşturulur ve aynı zamanda onun tarafından yok edilir. Yapıştırma başka bir yöntemle yapıldığında bu her zaman böyle değildir. Daha fazla bilgi için [bkz.](#_core_destroying_data_objects)
 
-Uygulama Paste veya Paste özel işlemi yapıyorsa, bir `COleDataObject` nesnesi oluşturmanız ve `AttachClipboard` üye işlevini çağırmanız gerekir. Bu, veri nesnesini panodaki verilerle ilişkilendirir. Daha sonra bu veri nesnesini, yapıştırma işlevinizde kullanabilirsiniz.
+Uygulama bir yapıştırveya yapıştır özel işlem gerçekleştiriyorsa, `COleDataObject` bir nesne `AttachClipboard` oluşturmalı ve üye işlevini çağırmalısınız. Bu, veri nesnesini Panodaki verilerle ilişkilendirer. Daha sonra bu veri nesnesi yapıştırı işlevik kullanabilirsiniz.
 
-##  <a name="_core_destroying_data_objects"></a>Veri nesnelerini yok etme
+## <a name="destroying-data-objects"></a><a name="_core_destroying_data_objects"></a>Veri Nesnelerini Yok Etme
 
-[Veri nesneleri oluşturma](#_core_creating_data_objects)bölümünde açıklanan düzeni izlerseniz veri nesnelerinin yok edilmesi, veri aktarımlarının önemsiz bir yönüdür. Yapıştırma işleviniz döndüğünde, yapıştırma işlevinizde oluşturulan veri nesnesi MFC tarafından yok edilir.
+[Veri Nesneleri Oluşturma'da](#_core_creating_data_objects)açıklanan düzeni izlerseniz, veri nesnelerini yok etmek veri aktarımlarının önemsiz bir yönüdür. Yapıştırma işlevinizde oluşturulan veri nesnesi, yapıştırma işleviniz döndüğünde MFC tarafından yok edilir.
 
-Yapıştırma işlemlerini işlemeye yönelik başka bir yöntemi izlerseniz, yapıştırma işleminizi tamamladıktan sonra veri nesnesinin yok edildiğinden emin olun. Veri nesnesi yok edilene kadar herhangi bir uygulamanın, verileri panoya başarıyla kopyalaması olanaksız olacaktır.
+Yapıştırı işlemleri işleme başka bir yöntem izlerseniz, yapıştırın işlemi tamamlandıktan sonra veri nesnesi yok olduğundan emin olun. Veri nesnesi yok edilene kadar, herhangi bir uygulamanın verileri Pano'ya başarıyla kopyalaması mümkün olmayacaktır.
 
-##  <a name="_core_creating_data_sources"></a>Veri kaynakları oluşturma
+## <a name="creating-data-sources"></a><a name="_core_creating_data_sources"></a>Veri Kaynakları Oluşturma
 
-Veri kaynakları, veri aktarımının istemcisi ya da sunucu tarafı olabilen veri aktarımının kaynağı tarafından kullanılır. Kaynak uygulamadaki bir veri kaynağı, kaynak uygulamayla hedef uygulama arasındaki bağlantının bir bitişdir. Hedef uygulamadaki veri nesnesi, veri kaynağındaki verilerle etkileşim kurmak için kullanılır.
+Veri kaynakları, veri aktarımının istemci veya sunucu tarafı olabilecek veri aktarım kaynağı tarafından kullanılır. Kaynak uygulamasındaki bir veri kaynağı, kaynak uygulama ile hedef uygulama arasındaki bağlantının bir ucudur. Hedef uygulamasındaki bir veri nesnesi, veri kaynağındaki verilerle etkileşim kurmak için kullanılır.
 
-Veri kaynakları, bir uygulamanın panoya veri kopyalaması gerektiğinde oluşturulur. Tipik bir senaryo şöyle çalışır:
+Bir uygulamanın verileri Pano'ya kopyalaması gerektiğinde veri kaynakları oluşturulur. Tipik bir senaryo şu şekilde çalışır:
 
 1. Kullanıcı bazı verileri seçer.
 
-1. Kullanıcı **düzenleme** menüsünden **Kopyala** (veya **Kes**) öğesini seçer veya bir sürükle ve bırak işlemi başlatır.
+1. Kullanıcı, **Edit** menüsünden **Kopyala** (veya **Kes)** seçeneğini seçer veya sürükle ve bırak işlemini başlatır.
 
-1. Uygulama, programın tasarımına bağlı olarak, bir `COleDataSource` nesnesi veya `COleDataSource`türetilmiş bir sınıftan bir nesne oluşturur.
+1. Programın tasarımına bağlı olarak, uygulama bir `COleDataSource` nesne ya da türetilen bir `COleDataSource`sınıftan bir nesne oluşturur.
 
-1. Seçilen veriler, `COleDataSource::CacheData` veya `COleDataSource::DelayRenderData` gruplarındaki işlevlerden birini çağırarak veri kaynağına eklenir.
+1. Seçili veriler, veri kaynağına, `COleDataSource::CacheData` `COleDataSource::DelayRenderData` veya gruplardaki işlevlerden biri çağrılarak eklenir.
 
-1. Uygulama, adım 3 ' te oluşturulan nesneye ait olan `SetClipboard` üye işlevini (veya bir sürükle ve bırak işlemi ise `DoDragDrop` üye işlevini) çağırır.
+1. Uygulama, adım `SetClipboard` 3'te `DoDragDrop` oluşturulan nesneye ait üye işlevi (veya bu bir sürükle ve bırak işlemiyse üye işlevi) çağırır.
 
-1. Bu bir **kesme** işlemidir veya `DoDragDrop` **DROPEFFECT_MOVE**döndürürse, 1. adımda seçilen veriler belgeden silinir.
+1. Bu bir **Kesme** işlemiyse veya `DoDragDrop` **DROPEFFECT_MOVE**döndürürse, adım 1'de seçilen veriler belgeden silinir.
 
-Bu senaryo MFC OLE örnekleri [Oclient](../overview/visual-cpp-samples.md) ve [hiersvr](../overview/visual-cpp-samples.md)tarafından uygulanır. Her uygulamanın `CView`türetilmiş sınıfının kaynağına, `GetClipboardData` ve `OnGetClipboardData` işlevlerine bakın. Bu iki işlev `COleClientItem` ya da `COleServerItem`türetilmiş sınıf uygulamalarında bulunur. Bu örnek programlar, bu kavramların nasıl uygulanacağını gösteren iyi bir örnek sağlar.
+Bu senaryo MFC OLE örnekleri [OCLIENT](../overview/visual-cpp-samples.md) ve [HIERSVR](../overview/visual-cpp-samples.md)tarafından uygulanır. Her uygulamanın `CView`türetilmiş sınıfının kaynağına `GetClipboardData` `OnGetClipboardData` bakın. Bu iki işlev `COleClientItem` ya `COleServerItem`veya türetilmiş sınıf uygulamalarında dır. Bu örnek programlar, bu kavramların nasıl uygulanacağının iyi bir örneğini sağlar.
 
-Bir sürükle ve bırak işleminin varsayılan davranışını değiştiriyorsanız `COleDataSource` nesne oluşturmak isteyebileceğiniz başka bir durum oluşur. Daha fazla bilgi için bkz. [OLE sürükle ve bırak: özelleştirme sürükle ve bırak](../mfc/drag-and-drop-ole.md#customize-drag-and-drop) makalesi.
+Bir sürükle ve bırak işleminin `COleDataSource` varsayılan davranışını değiştiriyorsanız, nesne oluşturmak isteyebileceğin başka bir durum oluşur. Daha fazla bilgi için [OLE Sürükle ve bırak'a bakın: Sürükle ve bırak](../mfc/drag-and-drop-ole.md#customize-drag-and-drop) makalesini özelleştirin.
 
-##  <a name="_core_destroying_data_sources"></a>Veri kaynaklarını yok etme
+## <a name="destroying-data-sources"></a><a name="_core_destroying_data_sources"></a>Veri Kaynaklarını Yok Etme
 
-Veri kaynaklarının Şu anda sorumlu olan uygulama tarafından yok edilmesi gerekir. Veri kaynağını OLE 'ye ( [Cotadatasource::D oDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop)) çağırma gibi durumlarda, `pDataSrc->InternalRelease`çağırmanız gerekir. Örneğin:
+Veri kaynakları, şu anda bunlardan sorumlu olan uygulama tarafından yok edilmelidir. [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop)arama gibi veri kaynağını OLE'ye teslim ettiğiniz durumlarda `pDataSrc->InternalRelease`aramanız gerekir. Örneğin:
 
 [!code-cpp[NVC_MFCListView#1](../atl/reference/codesnippet/cpp/data-objects-and-data-sources-creation-and-destruction_1.cpp)]
 
-Veri kaynağınızı OLE 'ye getiryapmadıysanız, herhangi bir normal C++ nesne gibi, yok edilirken yok etmeniz sorumludur.
+Veri kaynağınızı OLE'ye teslim etmediyseniz, herhangi bir tipik C++ nesnesi gibi bu kaynağı yok etmekten siz sorumlusunuz.
 
-Daha fazla bilgi için bkz. [sürükleme ve bırakma](../mfc/drag-and-drop-ole.md), [Pano](../mfc/clipboard.md)ve [veri nesnelerini ve veri kaynaklarını düzenleme](../mfc/data-objects-and-data-sources-manipulation.md).
+Daha fazla bilgi için bkz: [Sürükle ve Bırak,](../mfc/drag-and-drop-ole.md) [Pano](../mfc/clipboard.md)ve [Veri Nesnelerini ve Veri Kaynaklarını Manipüle](../mfc/data-objects-and-data-sources-manipulation.md)Etme.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

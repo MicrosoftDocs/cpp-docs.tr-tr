@@ -1,5 +1,5 @@
 ---
-title: CConstantTransition sınıfı
+title: CConstantTransition Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CConstantTransition
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - CConstantTransition [MFC], Create
 - CConstantTransition [MFC], m_duration
 ms.assetid: f6fa4780-a71b-4cd6-80aa-d4792ace36c2
-ms.openlocfilehash: ccf08b309e64cd82215acb6032bc2a777f4c809a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 0d5d92f02cc3b56268966f1cd79451578a5cc390
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507162"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369403"
 ---
-# <a name="cconstanttransition-class"></a>CConstantTransition sınıfı
+# <a name="cconstanttransition-class"></a>CConstantTransition Sınıfı
 
-Sabit bir geçişi kapsüller.
+Sürekli bir geçişi kapsüller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,29 +33,29 @@ class CConstantTransition : public CBaseTransition;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CConstantTransition::CConstantTransition](#cconstanttransition)|Bir geçiş nesnesi oluşturur ve süresini başlatır.|
+|[CConstantTransition::cconstanttransition](#cconstanttransition)|Bir geçiş nesnesi oluşturuyor ve süresini başharfe adazıyor.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CConstantTransition:: Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. ( [CBaseTransition:: Create](../../mfc/reference/cbasetransition-class.md#create)geçersiz kılar.)|
+|[CConstantTransition::Oluştur](#create)|Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. (CBaseTransition geçersiz [kılar::Oluştur](../../mfc/reference/cbasetransition-class.md#create).)|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CConstantTransition::m_duration](#m_duration)|Geçişin süresi.|
+|[CConstantTransition::m_duration](#m_duration)|Geçiş süresi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sabit geçiş sırasında, bir animasyon değişkeninin değeri geçiş süresince ilk değerde kalır. Tüm geçişler otomatik olarak temizlendiğinden, Yeni işleç kullanılarak ayrılmaları önerilir. Encapsulated IUIAnimationTransition COM nesnesi, NULL olana kadar CAnimationController:: AnimateGroup tarafından oluşturulur. Bu COM nesnesi oluşturulduktan sonra üye değişkenlerinin değiştirilmesinin etkisi olmaz.
+Sabit bir geçiş sırasında, animasyon değişkeninin değeri geçiş süresi boyunca başlangıç değerinde kalır. Tüm geçişler otomatik olarak temizlenerek, operatör yeni kullanılarak ayrılması önerilir. Kapsüllü IUIAnimationTransition COM nesnesi CAnimationController tarafından oluşturulur::AnimateGroup, o zamana kadar NULL' s. Bu COM nesnesinin oluşturulduktan sonra üye değişkenleri değiştirmenin hiçbir etkisi yoktur.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
@@ -63,11 +63,11 @@ Sabit geçiş sırasında, bir animasyon değişkeninin değeri geçiş süresin
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller. h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="cconstanttransition"></a>CConstantTransition::CConstantTransition
+## <a name="cconstanttransitioncconstanttransition"></a><a name="cconstanttransition"></a>CConstantTransition::cconstanttransition
 
-Bir geçiş nesnesi oluşturur ve süresini başlatır.
+Bir geçiş nesnesi oluşturuyor ve süresini başharfe adazıyor.
 
 ```
 CConstantTransition (UI_ANIMATION_SECONDS duration);
@@ -75,12 +75,12 @@ CConstantTransition (UI_ANIMATION_SECONDS duration);
 
 ### <a name="parameters"></a>Parametreler
 
-*Süresi*<br/>
-Geçişin süresi.
+*Süre*<br/>
+Geçiş süresi.
 
-##  <a name="create"></a>CConstantTransition:: Create
+## <a name="cconstanttransitioncreate"></a><a name="create"></a>CConstantTransition::Oluştur
 
-Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
+Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
 
 ```
 virtual BOOL Create(
@@ -90,16 +90,16 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*pLibrary*<br/>
-Standart geçişlerin kitaplığını tanımlayan [ıuıanimationgeçişli Tionlibrary arabirimine](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)yönelik bir işaretçi.
+*pKütüphane*<br/>
+Standart geçişler kitaplığını tanımlayan [IUIAnimationTransitionLibrary arabirimine](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçiş başarıyla oluşturulursa doğru; Aksi halde yanlış.
+Geçiş başarıyla oluşturulursa DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="m_duration"></a>CConstantTransition::m_duration
+## <a name="cconstanttransitionm_duration"></a><a name="m_duration"></a>CConstantTransition::m_duration
 
-Geçişin süresi.
+Geçiş süresi.
 
 ```
 UI_ANIMATION_SECONDS m_duration;

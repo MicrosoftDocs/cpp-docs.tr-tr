@@ -13,16 +13,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::RoInitializeWrapper::RoInitializeWrapper, constructor
 - Microsoft::WRL::Wrappers::RoInitializeWrapper::~RoInitializeWrapper, destructor
 ms.assetid: 4055fbe0-63a7-4c06-b5a0-414fda5640e5
-ms.openlocfilehash: b43d5bb2f553d298584ab2ae497c22637d3beb0d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eba9162f17b98d13a9caf956b4f110b89dd81c37
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403210"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371239"
 ---
 # <a name="roinitializewrapper-class"></a>RoInitializeWrapper Sınıfı
 
-Windows çalışma zamanı'nı başlatır.
+Windows Runtime'ı başharfe adaytır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,22 +32,22 @@ class RoInitializeWrapper;
 
 ## <a name="remarks"></a>Açıklamalar
 
-`RoInitializeWrapper` Windows çalışma zamanı başlatır ve işlemin başarılı olup olmadığını belirten bir HRESULT döndüren bir kolaylık bir özelliktir. Sınıf yok edicisini çağırır çünkü `::Windows::Foundation::Uninitialize`, örneklerini `RoInitializeWrapper` genel veya üst düzey kapsamda bildirilmelidir.
+`RoInitializeWrapper`Windows Runtime'ı başlatılan ve işlemin başarılı olup olmadığını gösteren bir HRESULT döndüren bir kolaylıktır. Sınıf yıkıcı çağrıları `::Windows::Foundation::Uninitialize`olduğundan, örnekleri genel `RoInitializeWrapper` veya üst düzey kapsamda bildirilmelidir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Ad                                                                    | Açıklama
+Adı                                                                    | Açıklama
 ----------------------------------------------------------------------- | -----------------------------------------------------------------
-[Roınitializewrapper::roınitializewrapper](#roinitializewrapper)        | Yeni bir örneğini başlatır `RoInitializeWrapper` sınıfı.
-[Roınitializewrapper:: ~ Roınitializewrapper](#tilde-roinitializewrapper) | Geçerli örneğini yok eder `RoInitializeWrapper` sınıfı.
+[RoInitialize Wrapper::RoInitializeWrapper](#roinitializewrapper)        | `RoInitializeWrapper` sınıfının yeni bir örneğini başlatır.
+[RoInitialize Wrapper::~RoInitializeWrapper](#tilde-roinitializewrapper) | Sınıfın geçerli örneğini `RoInitializeWrapper` yok eder.
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-Ad                                       | Açıklama
+Adı                                       | Açıklama
 ------------------------------------------ | ------------------------------------------------------------------------
-[Roınitializewrapper:: HRESULT()](#hresult) | Tarafından üretilen HRESULT alır `RoInitializeWrapper` Oluşturucusu.
+[RoInitialize Sarılayıcı::HRESULT()](#hresult) | Oluşturucu tarafından üretilen HRESULT'ı `RoInitializeWrapper` alır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -55,21 +55,21 @@ Ad                                       | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrappers.h
 
-**Namespace:** Microsoft::wrl:: Wrappers
+**Ad alanı:** Microsoft::WRL::Sarmalayıcılar
 
-## <a name="hresult"></a>Roınitializewrapper:: HRESULT()
+## <a name="roinitializewrapperhresult"></a><a name="hresult"></a>RoInitialize Sarılayıcı::HRESULT()
 
-HRESULT değerini son tarafından üretilen alır `RoInitializeWrapper` Oluşturucusu.
+Son `RoInitializeWrapper` oluşturucu tarafından üretilen HRESULT değerini alır.
 
 ```cpp
 operator HRESULT()
 ```
 
-## <a name="roinitializewrapper"></a>Roınitializewrapper::roınitializewrapper
+## <a name="roinitializewrapperroinitializewrapper"></a><a name="roinitializewrapper"></a>RoInitialize Wrapper::RoInitializeWrapper
 
-Yeni bir örneğini başlatır `RoInitializeWrapper` sınıfı.
+`RoInitializeWrapper` sınıfının yeni bir örneğini başlatır.
 
 ```cpp
 RoInitializeWrapper(RO_INIT_TYPE flags)
@@ -77,16 +77,16 @@ RoInitializeWrapper(RO_INIT_TYPE flags)
 
 ### <a name="parameters"></a>Parametreler
 
-*bayrakları*<br/>
-Windows çalışma zamanı tarafından sağlanan desteğin belirtir RO_INIT_TYPE numaralandırmalardan biri.
+*bayraklar*<br/>
+Windows Runtime tarafından sağlanan desteği belirten RO_INIT_TYPE sayılardan biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`RoInitializeWrapper` Sınıfı çağırır `Windows::Foundation::Initialize(flags)`.
+Sınıf `RoInitializeWrapper` `Windows::Foundation::Initialize(flags)`çağırır.
 
-## <a name="tilde-roinitializewrapper"></a>Roınitializewrapper:: ~ Roınitializewrapper
+## <a name="roinitializewrapperroinitializewrapper"></a><a name="tilde-roinitializewrapper"></a>RoInitialize Wrapper::~RoInitializeWrapper
 
-Windows çalışma zamanının başlamasını iptal eder.
+Windows Runtime'ı başlatmayı uninitialize eder.
 
 ```cpp
 ~RoInitializeWrapper()
@@ -94,4 +94,4 @@ Windows çalışma zamanının başlamasını iptal eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`RoInitializeWrapper` Sınıfı çağırır `Windows::Foundation::Uninitialize()`.
+Sınıf `RoInitializeWrapper` `Windows::Foundation::Uninitialize()`çağırır.

@@ -1,5 +1,5 @@
 ---
-title: 'TN026: DDX ve DDV rutinleri'
+title: 'TN026: DDX ve DDV Rutinleri'
 ms.date: 06/28/2018
 f1_keywords:
 - DDX
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - TN026
 - DDV (dialog data validation), procedures
 ms.assetid: c2eba87a-4b47-4083-b28b-e2fa77dfb4c4
-ms.openlocfilehash: 89916e60d9677240f2d70e37e9a80e6ad7a76fc3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 711d433b51ca09836f372d09a11f86c28b82cce6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305872"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370343"
 ---
-# <a name="tn026-ddx-and-ddv-routines"></a>TN026: DDX ve DDV rutinleri
+# <a name="tn026-ddx-and-ddv-routines"></a>TN026: DDX ve DDV Rutinleri
 
 > [!NOTE]
-> Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
+> Aşağıdaki teknik not, çevrimiçi belgelere ilk olarak eklenmediğinden beri güncelleştirilemedi. Sonuç olarak, bazı yordamlar ve konular güncel veya yanlış olabilir. En son bilgiler için, çevrimiçi belge dizini ilgi alanı için arama nız önerilir.
 
-Bu Not, iletişim kutusu veri değişimi (DDX) ve iletişim kutusu veri doğrulama (DDV) mimarisi açıklanmaktadır. Ayrıca, nasıl DDX_ veya DDV_ yordamı yazdığınızı ve ClassWizard, yordamları kullanmak için nasıl genişletebileceğinizi açıklar.
+Bu not, iletişim veri alışverişi (DDX) ve iletişim veri doğrulama (DDV) mimarisini açıklar. Ayrıca, bir DDX_ veya DDV_ yordamı nasıl yazdığınızı ve ClassWizard'ı yordamlarınızı kullanmak üzere nasıl genişletebileceğinizi de açıklar.
 
-## <a name="overview-of-dialog-data-exchange"></a>İletişim kutusu veri değişimi genel bakış
+## <a name="overview-of-dialog-data-exchange"></a>İletişim Veri Alışverişine Genel Bakış
 
-Tüm iletişim kutusu veri işlevleri, C++ kodu ile gerçekleştirilir. Özel kaynaklar veya Sihirli makroları yoktur. Bir iletişim kutusu veri değişimi mu her iletişim kutusu sınıfında geçersiz kılınan sanal işlev ve doğrulama mekanizması kalbidir. Her zaman bu formda de bulunur:
+Tüm iletişim veri fonksiyonları C++ kodu ile yapılır. Özel kaynaklar veya sihirli makrolar yoktur. Mekanizmanın kalbi, iletişim veri alışverişi ve doğrulama yapan her iletişim sınıfında geçersiz kılınan sanal bir işlevdir. Her zaman bu formda bulunur:
 
 ```cpp
 void CMyDialog::DoDataExchange(CDataExchange* pDX)
@@ -39,61 +39,61 @@ void CMyDialog::DoDataExchange(CDataExchange* pDX)
 }
 ```
 
-Özel biçim AFX açıklamaları ClassWizard bulun ve bu işlev içindeki kod düzenlemek izin verin. ClassWizard ile uyumlu olmayan kod dışında özel biçim açıklamaları yerleştirilmelidir.
+Özel biçimAFX açıklamaları ClassWizard'ın bu işlev içindeki kodu bulmasına ve yönetmesine olanak sağlar. ClassWizard ile uyumlu olmayan kod, özel biçim açıklamalarının dışına yerleştirilmelidir.
 
-Yukarıdaki örnekte, \<data_exchange_function_call > şu şekildedir:
+Yukarıdaki örnekte, \<data_exchange_function_call> şeklindedir:
 
 ```cpp
 DDX_Custom(pDX, nIDC, field);
 ```
 
-ve \<data_validation_function_call > isteğe bağlıdır ve şu şekildedir:
+ve \<data_validation_function_call> isteğe bağlıdır ve şeklindedir:
 
 ```cpp
 DDV_Custom(pDX, field, ...);
 ```
 
-Birden fazla DDX_/DDV_ çifti her eklenebilir `DoDataExchange` işlevi.
+Her `DoDataExchange` işleve birden fazla DDX_/DDV_ çifti dahil edilebilir.
 
-'Afxdd_.h' iletişim kutusu veri değişimi rutinleri ve MFC ile sağlanan iletişim kutusu veri doğrulama rutinleri listesi için bkz.
+MFC ile sağlanan tüm iletişim veri alışverişi yordamlarının ve iletişim veri doğrulama yordamlarının listesi için 'afxdd_.h' bölümüne bakın.
 
-İletişim verisi olduğundan bunu: üye verileri `CMyDialog` sınıfı. Bir yapı veya benzer bir şey depolanmaz.
+İletişim verileri sadece şudur: sınıftaki `CMyDialog` üye verileri. Bir yapı da veya benzeri bir şeyde depolanmaz.
 
 ## <a name="notes"></a>Notlar
 
-Bu "iletişim kutusu veri" dediğimiz olsa da, tüm özellikler türetilen sınıfta kullanılabilir `CWnd` ve sadece iletişim kutularına atanacağı sınırlı değildir.
+Buna "iletişim verileri" dememize rağmen, tüm özellikler `CWnd` yalnızca iletişim sahiplerinden türetilen herhangi bir sınıfta kullanılabilir ve bunlarla sınırlı değildir.
 
-İlk veri değerlerinin standart C++ oluşturucuda, genellikle bir bloğu ile ayarlanır `//{{AFX_DATA_INIT` ve `//}}AFX_DATA_INIT` yorumlar.
+Verilerin ilk değerleri standart C++ oluşturucusunda, genellikle `//{{AFX_DATA_INIT` bir `//}}AFX_DATA_INIT` blokta ve yorumlarda ayarlanır.
 
-`CWnd::UpdateData` başlatma ve hata işleme çağrısı etrafında işlemdir `DoDataExchange`.
+`CWnd::UpdateData`için çağrı etrafında başlatma ve hata işleme yapan `DoDataExchange`işlemdir.
 
-Çağırabilirsiniz `CWnd::UpdateData` veri değişimi ve doğrulaması gerçekleştirmek için herhangi bir zamanda. Varsayılan olarak `UpdateData`(TRUE), varsayılan olarak adlandırılır `CDialog::OnOK` işleyicisi ve `UpdateData`(FALSE), varsayılan olarak adlandırılır `CDialog::OnInitDialog`.
+Veri alışverişi ve doğrulama gerçekleştirmek için istediğiniz zaman arayabilirsiniz. `CWnd::UpdateData` Varsayılan `UpdateData`olarak (TRUE) varsayılan `CDialog::OnOK` işleyici `UpdateData`olarak adlandırılır ve (FALSE) varsayılan `CDialog::OnInitDialog`olarak çağrılır.
 
-DDV_ yordamı hemen DDX_ yordamı için izlemelidir *alan*.
+DDV_ rutin hemen bu *alan*için DDX_ rutin takip etmelidir.
 
-## <a name="how-does-it-work"></a>Nasıl çalışır
+## <a name="how-does-it-work"></a>Nasıl Çalışır?
 
-İletişim kutusu veri kullanmak için aşağıdakileri anlamanız gerekmez. Ancak, bu planda nasıl çalıştığını anlamak kendi exchange veya doğrulama yordamı yazmanıza yardımcı olur.
+İletişim verilerini kullanmak için aşağıdakileri anlamanız gerekmez. Ancak, bunun perde arkasında nasıl çalıştığını anlamak, kendi değişim veya doğrulama yordamınızı yazmanıza yardımcı olacaktır.
 
-`DoDataExchange` Üye işlevi olan çok benzer `Serialize` üye işlev - bu, alma veya verileri ayarlama/dış formundan sorumlu (Bu durumda denetleyen bir iletişim kutusunda) / sınıf üyesi verilerine. *PDX* parametre veri alışverişi yapmak için bağlam ve benzer `CArchive` parametresi `CObject::Serialize`. *PDX* (bir `CDataExchange` nesnesi) bayrak çok benzer bir yöne sahip `CArchive` yön bayrağı vardır:
+`DoDataExchange` Üye işlev üye işlevine `Serialize` çok benzer - sınıftaki üye verilerden /dış formdan (bu durumda bir iletişim kutusunda denetimler) veri almaktan veya ayarlamaktan sorumludur. *pDX* parametresi veri alışverişi yapmak için bağlamdır `CArchive` ve `CObject::Serialize`parametreye benzer. *pDX* (bir `CDataExchange` nesne) çok benzer `CArchive` bir yön bayrağı vardır bir yön bayrağı vardır:
 
-- Varsa `!m_bSaveAndValidate`, ardından veri durumu denetimlere yükleyebilirsiniz.
+- Eğer, `!m_bSaveAndValidate`daha sonra denetimlere veri durumu yükleyin.
 
-- Varsa `m_bSaveAndValidate`, ardından veri durumu denetimleri ayarlayın.
+- Eğer, `m_bSaveAndValidate`daha sonra denetimlerden veri durumunu ayarlayın.
 
-Doğrulama yalnızca oluşur, `m_bSaveAndValidate` ayarlanır. Değerini `m_bSaveAndValidate` BOOL parametresi tarafından belirlenir `CWnd::UpdateData`.
+Doğrulama yalnızca ayarlandığında `m_bSaveAndValidate` oluşur. Değeri `m_bSaveAndValidate` BOOL parametresi tarafından `CWnd::UpdateData`belirlenir.
 
-Var olan üç diğer ilginç `CDataExchange` üyeleri:
+Diğer üç ilginç `CDataExchange` üye vardır:
 
-- `m_pDlgWnd`: Denetimler içeren pencere (genellikle iletişim). 'This' geçirmek DDX_ ve DDV_ genel işlevleri arayanlar önlemek için her DDX/DDV yordamına budur.
+- `m_pDlgWnd`: Denetimleri içeren pencere (genellikle bir iletişim kutusu). Bu, DDX_ ve DDV_ genel işlevleri arayanların her DDX/DDV yordamına 'bu' geçmek zorunda kalmalarını önlemek içindir.
 
-- `PrepareCtrl`, ve `PrepareEditCtrl`: Bir iletişim denetimi için veri değişimi hazırlar. Odağı ayarlamak için bir doğrulama başarısız olursa, bu denetimin tanıtıcı depolar. `PrepareCtrl` Düzen olmayan denetimler için kullanılan ve `PrepareEditCtrl` düzenleme denetimleri için kullanılır.
+- `PrepareCtrl`ve `PrepareEditCtrl`: Veri alışverişi için bir iletişim denetimi hazırlar. Doğrulama başarısız olursa odağı ayarlamak için bu denetimin tutamacını depolar. `PrepareCtrl`olmayan edit denetimleri için `PrepareEditCtrl` kullanılır ve denetimleri edin için kullanılır.
 
-- `Fail`: Giriş hatası kullanıcıya uyarı bir ileti kutusu getirme sonra çağrılır. Bu yordam için son denetim odağı geri yükler (son çağrı `PrepareCtrl` veya `PrepareEditCtrl`) ve bir özel durum. Bu üye işlevi DDX_ hem DDV_ rutinleri çağrılabilir.
+- `Fail`: Kullanıcıyı giriş hatasıkonusunda uyaran bir ileti kutusu getirdikten sonra çağrılır. Bu yordam, odağı son denetime geri yükleyecek (son arama `PrepareCtrl` veya) `PrepareEditCtrl`ve bir özel durum atacaktır. Bu üye işlev hem DDX_ hem de DDV_ yordamlarından çağrılabilir.
 
 ## <a name="user-extensions"></a>Kullanıcı Uzantıları
 
-Varsayılan DDX/DDV mekanizmasını genişletmek için birkaç yolu vardır. Şunları yapabilirsiniz:
+Varsayılan DDX/DDV mekanizmasını genişletmenin birkaç yolu vardır. Şunları yapabilirsiniz:
 
 - Yeni veri türleri ekleyin.
 
@@ -101,29 +101,29 @@ Varsayılan DDX/DDV mekanizmasını genişletmek için birkaç yolu vardır. Şu
     CTime
     ```
 
-- Yeni exchange yordamlar (DDX_) ekleyin.
+- Yeni değişim yordamları ekleyin (DDX_).
 
     ```cpp
     void PASCAL DDX_Time(CDataExchange* pDX, int nIDC, CTime& tm);
     ```
 
-- Yeni doğrulama yordamları (DDV_) ekleyin.
+- Yeni doğrulama yordamları ekleyin (DDV_).
 
     ```cpp
     void PASCAL DDV_TimeFuture(CDataExchange* pDX, CTime tm, BOOL bFuture);
     // make sure time is in the future or past
     ```
 
-- Rastgele ifadeler için doğrulama yordamlarını geçirin.
+- Rasgele ifadeleri doğrulama yordamlarına geçirin.
 
     ```cpp
     DDV_MinMax(pDX, age, 0, m_maxAge);
     ```
 
     > [!NOTE]
-    > Rastgele tür ifadeleri ClassWizard tarafından düzenlenemez ve bu nedenle dışında özel biçim yorumları taşınacağını (/ / {{AFX_DATA_MAP(CMyClass)).
+    > Bu tür rasgele ifadeler ClassWizard tarafından düzenlenemez ve bu nedenle özel biçim açıklamaları (//{{AFX_DATA_MAP(CMyClass)) dışına taşınmalıdır.
 
-Sahip `DoDialogExchange` üye işlevi koşullular veya tüm diğer geçerli C++ deyimleri ile karıştırılmış değişimi ve doğrulaması işlev çağrılarını içerir.
+Üye `DoDialogExchange` işlevin, karışık değişim ve doğrulama işlevi çağrıları içeren koşullu veya diğer geçerli C++ deyimlerini içermesini sorun.
 
 ```cpp
 //{{AFX_DATA_MAP(CMyClass)
@@ -137,98 +137,98 @@ else
 ```
 
 > [!NOTE]
-> Yukarıda gösterildiği gibi bu tür kod ClassWizard tarafından düzenlenemez ve yalnızca özel biçim yorumları dışında kullanılmalıdır.
+> Yukarıda gösterildiği gibi, bu tür kod ClassWizard tarafından düzenlenemez ve yalnızca özel biçim açıklamaları dışında kullanılmalıdır.
 
-## <a name="classwizard-support"></a>ClassWizard desteği
+## <a name="classwizard-support"></a>ClassWizard Desteği
 
-ClassWizard, kendi DDX_ ve DDV_ yordamlarını ClassWizard kullanıcı arabirimi ile tümleştirmenize olanak tanıyarak DDX/DDV özelleştirmeleri kümesini destekler. Bir proje veya pek çok proje belirli DDX ve DDV rutinleri yeniden kullanmayı planlıyorsanız Bunun yapılması yalnızca yararlı maliyetidir.
+ClassWizard, kendi DDX_ ve DDV_ yordamlarınızı ClassWizard kullanıcı arabirimine entegre etmenize izin vererek DDX/DDV özelleştirmelerinin bir alt kümesini destekler. Bunu yapmak, yalnızca belirli DDX ve DDV yordamlarını bir projede veya birçok projede yeniden kullanmayı planlıyorsanız yararlı dır.
 
-Bunu yapmak için özel girişleri DDX içinde gerçekleştirilir. CLW (Visual C++'ın önceki sürümlerini depolanan bu bilgiler APSTUDIO. INI) veya projenizin. CLW dosyası. Özel girişleri olabilir ya da [genel bilgisi] bölümünde projenizin girildi. CLW dosya veya DDX [ExtraDDX] bölümünde. Görsel Studio\Visual \Program CLW dosyasında C++\bin dizinine. DDX oluşturmanız gerekebilir. Zaten mevcut değilse CLW dosyası. Özel DDX_/DDV_ yordamları yalnızca bir belirli projesinde kullanmayı planlıyorsanız, girişler projenizin [genel bilgisi] bölümüne ekleyin. Bunun yerine CLW dosya. Birçok projelerde rutinleri kullanmayı planlıyorsanız, girişleri DDX [ExtraDDX] bölümünü ekleyin. CLW.
+Bunu yapmak için, özel girişler DDX yapılır. CLW (Visual C++'ın önceki sürümleri bu bilgileri APSTUDIO'da depolatmilmiştir. INI) veya projenizin . CLW dosyası. Özel girişler projenizin [Genel Bilgi] bölümüne girilebilir. CLW dosyası veya DDX[ExtraDDX] bölümünde. \Program Files\Microsoft Visual Studio\Visual C++\bin dizinindeki CLW dosyası. DDX'i oluşturmanız gerekebilir. ZATEN yoksa CLW dosyası. Özel DDX_/DDV_ yordamlarını yalnızca belirli bir projede kullanmayı planlıyorsanız, girişleri projenizin [Genel Bilgi] bölümüne ekleyin. Bunun yerine CLW dosyası. Yordamları birçok projede kullanmayı planlıyorsanız, girişleri DDX'in [ExtraDDX] bölümüne ekleyin. CLW' den.
 
-Bu özel girişleri genel biçimi şöyledir:
+Bu özel girişlerin genel biçimi:
 
-> ExtraDDXCount=*n*
+> EkstraDDXCount=*n*
 
-Burada *n* ExtraDDX sayısı? biçiminin izleyebilecekleri satırları
+*nerede n* ExtraDDX sayısınedir? takip etmek için satırlar, form
 
-> ExtraDDX?=*keys*; *vb-keys*; *prompt*; *type*; *initValue*; *DDX_Proc* [; *DDV_Proc*; *prompt1*; *arg1* [; *prompt2*; *fmt2*]]
+> ExtraDDX?=*tuşları*; *vb tuşları*; *istemi*; *türü*; *initValue*; *DDX_Proc* [; *DDV_Proc*; *prompt1*; *arg1* [; *prompt2*; *fmt2*]]
 
-nerede? 1 - bir sayıdır *n* tanımlanıyorsa listesinde hangi DDX türünü belirten.
+Nerede? tanımlanan listede hangi *n* DDX türünü gösteren bir sayı 1 - n'dir.
 
-Her alanın bir ';' karakteriyle ayrılır. Alanlar ve bunların amacı, aşağıda açıklanmıştır.
+Her alan bir ';' karakteri ile sınırlandırılır. Alanlar ve amaçları aşağıda açıklanmıştır.
 
-- *anahtarları*
+- *Anahtar*
 
-  Bu değişken türü hangi iletişim kutusu denetimleri için izin verilen gösteren tek karakterleri içeren bir liste.
+  Bu değişken türünü denetleyen iletişim kutusunugösteren tek karakter listesi.
 
-  |Karakter|İzin verilen denetimi|
+  |Karakter|İzin verilen denetim|
   |-|-|
-  E | Düzenle
-  C | iki durum onay kutusu
-  c | üç durum onay kutusu
+  E | düzenle
+  C | iki durumlu onay kutusu
+  c | üç durumlu onay kutusu
   R | bir gruptaki ilk radyo düğmesi
-  L | nonsorted liste kutusu
-  l | Sıralı liste kutusu
-  M | Birleşik giriş kutusu (ile öğeyi düzenleme)
-  N | nonsorted bırakma listesi
+  L | sıralanmış olmayan liste kutusu
+  l | sıralanmış liste kutusu
+  M | açılan kutu (öğeyi edit ile)
+  N | sıralanmış olmayan bırakma listesi
   n | sıralanmış bırakma listesi
-  1. | DDX ekleme listesi gidin eklenip eklenmeyeceğini (kuyruk için varsayılan Ekle) Bu genellikle 'Denetim' özelliği aktarım DDX rutinleri için kullanılır.
+  1 | DDX eklentisi listenin başına eklenecekse (varsayılan kuyruk eklenir) Bu genellikle 'Denetim' özelliğini aktaran DDX yordamları için kullanılır.
 
-- *vb-keys*
+- *vb tuşları*
 
-  Bu alan yalnızca 16-bit üründe VBX denetimleri (VBX denetimler 32-bit üründe desteklenmiyor) için kullanılır.
+  Bu alan yalnızca VBX kontrolleri için 16 bit üründe kullanılır (VBX kontrolleri 32 bit üründe desteklenmez)
 
-- *istemi*
+- *Istemi*
 
-  Özellik birleşik giriş kutusu içinde (tırnak işareti gerekmez) yerleştirmek için dize
+  Özellik açılan kutusuna yerleştirilecek dize (tırnak işareti yok)
 
-- *type*
+- *Türü*
 
-  Üstbilgi dosyasında yayacak tek tanımlayıcısı. Bizim örneğimizde DDX_Time ile bu CTime için ayarlanır.
+  Üstbilgi dosyasına yatacak tür için tek tanımlayıcı. Yukarıdaki DDX_Time örneğimizde, bu CTime olarak ayarlanır.
 
-- *vb-keys*
+- *vb tuşları*
 
-  Bu sürümünde kullanılmaz ve her zaman boş olmalıdır
+  Bu sürümde kullanılmaz ve her zaman boş olmalıdır
 
 - *initValue*
 
-  İlk değer: 0 veya boş. Boş ise, hiçbir başlatma satırı uygulama dosyasının //{{AFX_DATA_INIT bölümünde yazılır. C++ nesneleri için boş bir girişi kullanılmalıdır (gibi `CString`, `CTime`ve benzeri) sahip olan doğru başlatma garanti oluşturucular.
+  İlk değer — 0 veya boş. Boşsa, uygulama dosyasının //{{AFX_DATA_INIT bölümüne hiçbir başlatma satırı yazılmaz. Boş bir giriş, doğru başlatmayı garanti `CString`eden `CTime`oluşturuculara sahip C++ nesneleri (, , vb. gibi) için kullanılmalıdır.
 
 - *DDX_Proc*
 
-  DDX_ yordamı tek tanımlayıcısı. C++ İşlev adı "İle DDX_" başlamalıdır, ancak "DDX_" dahil değildir \<DDX_Proc > tanımlayıcısı. Yukarıdaki örnekte \<DDX_Proc > tanımlayıcısı zaman olur. ClassWizard işlevi çağrısı v souboru implementace yazdığında {{AFX_DATA_MAP bölümünde, bu ekler bu ad için DDX_, bu nedenle DDX_Time ulaşan.
+  DDX_ yordamı için tek tanımlayıcı. C++ işlev adı "DDX_" ile başlamalı, ancak DDX_Proc \<> tanımlayıcıya "DDX_" eklemeyin. Yukarıdaki örnekte, \<> DDX_Proc Zaman olacaktır. ClassWizard {{AFX_DATA_MAP bölümündeki uygulama dosyasına işlev çağrısı yazdığında, bu adı DDX_ ekler ve böylece DDX_Time'a gelir.
 
-- *Açıklama*
+- *Yorum*
 
-  Bu DDX değişkenle için iletişim kutusu göstermek için bir açıklama. DDX/DDV çifti tarafından gerçekleştirilen işlem tanımlar burada ve genellikle bir şey sağlamak istediğiniz metni yerleştirin.
+  Bu DDX ile değişken için iletişim kutusunda göstermek için açıklama. İstediğini istediğiniz metni buraya yerleştirin ve genellikle DDX/DDV çifti tarafından gerçekleştirilen işlemi açıklayan bir şey sağlayın.
 
 - *DDV_Proc*
 
-  Giriş DDV kısmı isteğe bağlıdır. Tüm DDX yordamları karşılık gelen DDV rutinleri vardır. Genellikle, doğrulama aşamasını aktarımı ayrılmaz bir parçası dahil etmek daha uygundur. Herhangi bir parametre DDV alışkanlık gerektirmeyen ClassWizard DDV rutinleri hiçbir parametre olmadan desteklemediğinden bu genellikle durumdur.
+  Girişin DDV kısmı isteğe bağlıdır. Tüm DDX yordamları karşılık gelen DDV yordamları vardır. Genellikle, doğrulama aşamasını aktarımın ayrılmaz bir parçası olarak eklemek daha uygundur. ClassWizard herhangi bir parametre olmadan DDV yordamları desteklemez, çünkü DDV yordamı herhangi bir parametre gerektirmez, bu genellikle böyledir.
 
-- *bağımsız değişken*
+- *Arg*
 
-  DDV_ yordamı tek tanımlayıcısı. C++ İşlev adı "DDV_" ile başlamalıdır, ancak "DDX_" eklemeyin \<DDX_Proc > tanımlayıcısı.
+  DDV_ yordamı için tek tanımlayıcı. C++ işlev adı "DDV_" ile başlamalı, ancak DDX_Proc \<> tanımlayıcıya "DDX_" eklememelidir.
 
-  *arg* 1 veya 2 DDV args tarafından izlenir:
+  *arg* 1 veya 2 DDV args takip eder:
 
-   - *promptN*
+  - *promptN*
 
-      Düzenleme öğesi (ile & Hızlandırıcı için) yukarıda yerleştirmek için dize.
+      Dize, edit öğesinin üzerine yerleştirmek için (hızlandırıcı için &).
 
-   - *fmtN*
+  - *fmtN*
 
-      Biçim karakteri biri bağımsız değişken türü için:
+      Arg türü için biçim karakteri, biri:
 
       |Karakter|Tür|
       |-|-|
       |d | int|
       |u | unsigned int|
-      |D | long int (diğer bir deyişle, uzun)|
-      |U | işaretsiz uzun (DWORD)|
-      |F | float|
-      |F | çift|
-      |s | dize|
+      |D | uzun int (yani, uzun)|
+      |U | uzun imzasız (yani, DWORD)|
+      |f | float|
+      |F | double|
+      |s | string|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

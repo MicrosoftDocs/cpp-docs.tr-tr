@@ -1,5 +1,5 @@
 ---
-title: CComSafeArray sınıfı
+title: CComSafeArray Sınıfı
 ms.date: 05/06/2019
 f1_keywords:
 - CComSafeArray
@@ -28,16 +28,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeArray class
 ms.assetid: ee349aef-33db-4c85-bd08-5d86a3c9d53a
-ms.openlocfilehash: 79b1dc844f53f739dc48eb6177e57810ff0c8412
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: d1e72d364858ea31541d574ed77bdc8ccca7d748
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739585"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81327395"
 ---
-# <a name="ccomsafearray-class"></a>CComSafeArray sınıfı
+# <a name="ccomsafearray-class"></a>CComSafeArray Sınıfı
 
-Bu sınıf, `SAFEARRAY` yapı için bir sarmalayıcıdır.
+Bu sınıf `SAFEARRAY` yapı için bir sarmalayıcıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,97 +48,97 @@ class CComSafeArray
 
 #### <a name="parameters"></a>Parametreler
 
-*ŞI*<br/>
+*T*<br/>
 Dizide depolanacak veri türü.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComSafeArray:: CComSafeArray](#ccomsafearray)|Oluşturucu.|
-|[CComSafeArray:: ~ CComSafeArray](#dtor)|Yok edicisi.|
+|[CcomsafeArray::CcomsafeArray](#ccomsafearray)|Oluşturucu.|
+|[CcomsafeArray::~CcomsafeArray](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComSafeArray:: Add](#add)|' A `SAFEARRAY` `CComSafeArray`bir veya daha fazla öğe veya bir yapı ekler.|
-|[CComSafeArray:: Attach](#attach)|Bir `CComSafeArray` nesneye `SAFEARRAY` bir yapı ekler.|
-|[CComSafeArray:: CopyFrom](#copyfrom)|Bir `SAFEARRAY` yapının`CComSafeArray` içeriğini nesnesine kopyalar.|
-|[CComSafeArray:: CopyTo](#copyto)|`CComSafeArray` Nesnenin bir kopyasını oluşturur.|
-|[CComSafeArray:: Create](#create)|Bir `CComSafeArray` nesnesi oluşturur.|
-|[CComSafeArray::D estroy](#destroy)|Bir `CComSafeArray` nesneyi yok eder.|
-|[CComSafeArray::D etach](#detach)|Nesnesinden`CComSafeArray` bir `SAFEARRAY` ayırır.|
-|[CComSafeArray:: GetAt](#getat)|Tek boyutlu diziden tek bir öğe alır.|
-|[CComSafeArray:: GetCount](#getcount)|Dizideki öğe sayısını döndürür.|
-|[CComSafeArray:: GetDimensions](#getdimensions)|Dizideki boyutların sayısını döndürür.|
-|[CComSafeArray:: Getpın sınırı](#getlowerbound)|Dizinin belirli bir boyutu için alt sınır döndürür.|
-|[CComSafeArray:: GetSafeArrayPtr](#getsafearrayptr)|`m_psa` Veri üyesinin adresini döndürür.|
-|[CComSafeArray:: GetType](#gettype)|Dizide depolanan veri türünü döndürür.|
-|[CComSafeArray:: Getüstsınırı](#getupperbound)|Dizinin herhangi bir boyutu için üst sınırı döndürür.|
-|[CComSafeArray:: ıssizable](#issizable)|Bir `CComSafeArray` nesnenin yeniden boyutlandırılabileceğini sınar.|
-|[CComSafeArray:: MultiDimGetAt](#multidimgetat)|Çok boyutlu bir diziden tek bir öğe alır.|
-|[CComSafeArray:: MultiDimSetAt](#multidimsetat)|Çok boyutlu bir dizideki bir öğenin değerini ayarlar.|
-|[CComSafeArray:: Resize](#resize)|Bir `CComSafeArray` nesneyi yeniden boyutlandırır.|
-|[CComSafeArray:: SetAt](#setat)|Tek boyutlu dizideki bir öğenin değerini ayarlar.|
+|[CcomSafeArray::Ekle](#add)|Bir veya daha fazla `SAFEARRAY` öğe veya `CComSafeArray`yapı ekler.|
+|[CcomSafeArray::Ekle](#attach)|Bir nesneye `SAFEARRAY` `CComSafeArray` bir yapı bağlar.|
+|[CcomSafeArray::CopyFrom](#copyfrom)|Bir `SAFEARRAY` yapının içeriğini nesneye `CComSafeArray` kopyalar.|
+|[CcomsafeArray::Copyto](#copyto)|Nesnenin `CComSafeArray` bir kopyasını oluşturur.|
+|[CcomSafeArray::Oluştur](#create)|Bir `CComSafeArray` nesnesi oluşturur.|
+|[CComSafeArray::Destroy](#destroy)|Bir `CComSafeArray` nesneyi yok eder.|
+|[CComSafeArray::Detach](#detach)|Bir `SAFEARRAY` `CComSafeArray` nesneyi ayırın.|
+|[CcomsafeArray::Getat](#getat)|Tek boyutlu bir diziden tek bir öğe alır.|
+|[CcomSafeArray::GetCount](#getcount)|Dizideki öğe sayısını döndürür.|
+|[CcomSafeArray::GetDimensions](#getdimensions)|Dizideki boyut sayısını verir.|
+|[CcomsafeArray::GetLowerBound](#getlowerbound)|Dizinin belirli bir boyutu için alt sınırı döndürür.|
+|[CComSafeArray::GetSafeArrayPtr](#getsafearrayptr)|Veri üyesinin `m_psa` adresini verir.|
+|[CcomSafeArray::GetType](#gettype)|Dizide depolanan veri türünü döndürür.|
+|[CcomsafeArray::GetupperBound](#getupperbound)|Dizinin herhangi bir boyutu için üst sınırı döndürür.|
+|[CComSafeArray::IsSizable](#issizable)|Bir `CComSafeArray` nesne yeniden boyutlandırılabilirse sınar.|
+|[CcomsafeArray::multidimgetat](#multidimgetat)|Çok boyutlu bir diziden tek bir öğe alır.|
+|[CcomsafeArray::multidimsetat](#multidimsetat)|Çok boyutlu bir dizideki bir öğenin değerini ayarlar.|
+|[CComSafeArray::Yeniden boyutlandırma](#resize)|Nesneyi `CComSafeArray` yeniden boyutlandırıyor.|
+|[CcomsafeArray::Setat](#setat)|Tek boyutlu bir dizideki bir öğenin değerini ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComSafeArray:: operator LPSAFEARRAY](#operator_lpsafearray)|Bir `SAFEARRAY` işaretçiye değer yayınlar.|
-|[CComSafeArray:: işleci\[\]](ccomsafearray-class.md#operator_at)|Diziden bir öğe alır.|
-|[CComSafeArray:: operator =](#operator_eq)|Atama işleci.|
+|[CComSafeArray::operatör LPSAFEARRAY](#operator_lpsafearray)|Bir `SAFEARRAY` işaretçiye değer atar.|
+|[CComSafeArray::operatör\[\]](ccomsafearray-class.md#operator_at)|Diziden bir öğe alır.|
+|[CComSafeArray::operatör =](#operator_eq)|Atama işleci.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComSafeArray:: m_psa](#m_psa)|Bu veri üyesi `SAFEARRAY` yapının adresini tutar.|
+|[CComSafeArray::m_psa](#m_psa)|Bu veri üyesi `SAFEARRAY` yapının adresini tutar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComSafeArray`[SAFEARRAY veri türü](/windows/win32/api/oaidl/ns-oaidl-safearray) sınıfı için bir sarmalayıcı sağlar ve bu, değişken olarak desteklenen türlerin neredeyse her birinde tek ve çok boyutlu diziler oluşturup yönetmeniz basit bir işlemdir.
+`CComSafeArray`[SAFEARRAY Veri Türü](/windows/win32/api/oaidl/ns-oaidl-safearray) sınıfı için bir sarmalayıcı sağlar ve varyant destekli türlerin hemen hemen herhangi birinin tek ve çok boyutlu dizilerinin oluşturulmasını ve yönetilmesini basit bir mesele haline getirir.
 
-`CComSafeArray`süreçler arasında dizileri geçirmeyi basitleştirir ve ayrıca, dizi dizini değerlerini üst ve alt sınırlara göre denetleyerek ek güvenlik sağlar.
+`CComSafeArray`işlemler arasında geçen dizileri kolaylaştırır ve buna ek olarak dizi dizi değerlerini üst ve alt sınırlara göre denetleyerek ekstra güvenlik sağlar.
 
-Öğesinin `CComSafeArray` alt sınırı, Kullanıcı tanımlı herhangi bir değerle başlayabilir; ancak, üzerinden C++ erişilen diziler 0 alt sınırını kullanmalıdır. Visual Basic gibi diğer diller, diğer sınırlayıcı değerleri kullanabilir (örneğin,-10 ila 10).
+Bir alt sınır `CComSafeArray` herhangi bir kullanıcı tanımlı değerde başlatılabilir; ancak, C++ üzerinden erişilen diziler 0'ın alt sınırını kullanmalıdır. Visual Basic gibi diğer diller diğer sınırlayıcı değerleri (örneğin, -10-10) kullanabilir.
 
-[CComSafeArray:: Create](#create) komutunu kullanarak bir `CComSafeArray` nesne oluşturun ve [CComSafeArray::D estroy](#destroy) öğesini silin.
+[CComSafeArray kullanın::Bir](#create) `CComSafeArray` nesne oluşturmak için oluştur ve [CComSafeArray::Destroy](#destroy) silmek için.
 
-`CComSafeArray` , Değişken veri türlerinin aşağıdaki alt kümesini içerebilir:
+A, `CComSafeArray` VARIANT veri türlerinin aşağıdaki alt kümesini içerebilir:
 
-|VARTYPE|Açıklama|
+|Vartype|Açıklama|
 |-------------|-----------------|
 |VT_I1|char|
 |VT_I2|short|
 |VT_I4|int|
 |VT_I4|long|
-|VT_I8|longlong|
+|VT_I8|uzun süre|
 |VT_UI1|byte|
 |VT_UI2|ushort|
 |VT_UI4|uint|
 |VT_UI4|ulong|
-|VT_UI8|ULONGLONG|
+|VT_UI8|Ulonglong|
 |VT_R4|float|
-|VT_R8|çift|
+|VT_R8|double|
 |VT_DECIMAL|ondalık işaretçi|
 |VT_VARIANT|varyant işaretçisi|
-|VT_CY|Currency veri türü|
+|Vt_cy|Currency veri türü|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlsafe. h
+**Üstbilgi:** atlsafe.h
 
 ## <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#75](../../atl/codesnippet/cpp/ccomsafearray-class_1.cpp)]
 
-##  <a name="add"></a>CComSafeArray:: Add
+## <a name="ccomsafearrayadd"></a><a name="add"></a>CcomSafeArray::Ekle
 
-' A `SAFEARRAY` `CComSafeArray`bir veya daha fazla öğe veya bir yapı ekler.
+Bir veya daha fazla `SAFEARRAY` öğe veya `CComSafeArray`yapı ekler.
 
 ```
 HRESULT Add(const SAFEARRAY* psaSrc);
@@ -149,33 +149,33 @@ HRESULT Add(const T& t, BOOL bCopy = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *psaSrc*<br/>
-Bir `SAFEARRAY` nesne işaretçisi.
+Bir `SAFEARRAY` nesneye işaretçi.
 
 *ulCount*<br/>
 Diziye eklenecek nesne sayısı.
 
-*Yönergelerinin*<br/>
-Diziye eklenecek bir veya daha fazla nesneye yönelik bir işaretçi.
+*Pt*<br/>
+Diziye eklenecek bir veya daha fazla nesneye işaretçi.
 
-*şı*<br/>
+*T*<br/>
 Diziye eklenecek nesneye bir başvuru.
 
-*bCopy*<br/>
-Verilerin kopyasının oluşturulup oluşturulmayacağını gösterir. Varsayılan değer TRUE 'dur.
+*bFotokopi*<br/>
+Verilerin bir kopyasının oluşturulup oluşturulmayacağını gösterir. Varsayılan değer TRUE'dur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni nesneler varolan `SAFEARRAY` nesnenin sonuna eklenir. Çok boyutlu `SAFEARRAY` bir nesneye nesne ekleme desteklenmiyor. Varolan bir nesne dizisi eklenirken her iki dizi de aynı türde öğeler içermelidir.
+Yeni nesneler varolan `SAFEARRAY` nesnenin sonuna eklenir. Çok boyutlu `SAFEARRAY` bir nesneye nesne eklemek desteklenmez. Varolan bir nesne dizisi eklerken, her iki dizi de aynı türde öğeler içermelidir.
 
-BSTR veya VARIANT türündeki öğeler bir diziye eklendiğinde *bCopy* bayrağı dikkate alınır. Varsayılan TRUE değeri, öğe diziye eklendiğinde verilerin yeni bir kopyasının yapılmasını sağlar.
+BSTR veya VARIANT türü öğeleri bir diziye eklendiğinde *bCopy* bayrağı dikkate alınır. TRUE'nun varsayılan değeri, öğe diziye eklendiğinde yeni bir kopyanın verilerden yapılmasını sağlar.
 
-##  <a name="attach"></a>CComSafeArray:: Attach
+## <a name="ccomsafearrayattach"></a><a name="attach"></a>CcomSafeArray::Ekle
 
-Bir `CComSafeArray` nesneye `SAFEARRAY` bir yapı ekler.
+Bir nesneye `SAFEARRAY` `CComSafeArray` bir yapı bağlar.
 
 ```
 HRESULT Attach(const SAFEARRAY* psaSrc);
@@ -184,17 +184,17 @@ HRESULT Attach(const SAFEARRAY* psaSrc);
 ### <a name="parameters"></a>Parametreler
 
 *psaSrc*<br/>
-`SAFEARRAY` Yapıya yönelik bir işaretçi.
+Yapıiçin `SAFEARRAY` bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CComSafeArray` `CComSafeArray` Bir nesneye bir Yapıeklervemevcut`SAFEARRAY` yöntemleri kullanılabilir hale getirir.
+Bir `SAFEARRAY` `CComSafeArray` nesneye bir yapı bağlar `CComSafeArray` ve varolan yöntemleri kullanılabilir hale getirir.
 
-##  <a name="ccomsafearray"></a>CComSafeArray:: CComSafeArray
+## <a name="ccomsafearrayccomsafearray"></a><a name="ccomsafearray"></a>CcomsafeArray::CcomsafeArray
 
 Oluşturucu.
 
@@ -210,34 +210,34 @@ CComSafeArray(const SAFEARRAY* psaSrc);
 
 ### <a name="parameters"></a>Parametreler
 
-*bağlı*<br/>
+*Bağlı*<br/>
 Bir `SAFEARRAYBOUND` yapı.
 
 *ulCount*<br/>
 Dizideki öğelerin sayısı
 
-*Llsınırlanan*<br/>
+*lLBound*<br/>
 Alt sınır değeri; diğer bir deyişle, dizideki ilk öğenin dizini.
 
-*PUP*<br/>
-Bir `SAFEARRAYBOUND` yapıya yönelik işaretçi.
+*pBound*<br/>
+Bir yapıiçin `SAFEARRAYBOUND` bir işaretçi.
 
 *uDims*<br/>
-Dizideki boyutların sayısı.
+Dizideki boyut sayısı.
 
 *saSrc*<br/>
-Bir `SAFEARRAY` yapıya veya `CComSafeArray` nesneye bir başvuru. Her iki durumda da, oluşturucunun dizinin bir kopyasını oluşturmak için bu başvuruyu kullanması durumunda, dizi oluşturulduktan sonra başvuruya başvurulmaz.
+Bir `SAFEARRAY` yapı ya `CComSafeArray` da nesneye başvuru. Her iki durumda da oluşturucu dizinin bir kopyasını yapmak için bu başvuruyu kullanır, bu nedenle dizi inşaattan sonra başvurulmez.
 
 *psaSrc*<br/>
-Bir `SAFEARRAY` yapıya yönelik işaretçi. Oluşturucu, dizinin bir kopyasını oluşturmak için bu adresi kullanır, bu nedenle diziye oluşturulduktan sonra başvurulmaz.
+Bir yapıiçin `SAFEARRAY` bir işaretçi. Oluşturucu dizinin bir kopyasını oluşturmak için bu adresi kullanır, bu nedenle dizi inşaattan sonra başvurulmez.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bir `CComSafeArray` nesnesi oluşturur.
 
-##  <a name="dtor"></a>CComSafeArray:: ~ CComSafeArray
+## <a name="ccomsafearrayccomsafearray"></a><a name="dtor"></a>CcomsafeArray::~CcomsafeArray
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 ~CComSafeArray() throw()
@@ -245,11 +245,11 @@ Yok edicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan tüm kaynakları serbest bırakır.
+Ayrılan tüm kaynakları serbest sağlar.
 
-##  <a name="copyfrom"></a>CComSafeArray:: CopyFrom
+## <a name="ccomsafearraycopyfrom"></a><a name="copyfrom"></a>CcomSafeArray::CopyFrom
 
-Bir `SAFEARRAY` yapının`CComSafeArray` içeriğini nesnesine kopyalar.
+Bir `SAFEARRAY` yapının içeriğini nesneye `CComSafeArray` kopyalar.
 
 ```
 HRESULT CopyFrom(LPSAFEARRAY* ppArray);
@@ -258,19 +258,19 @@ HRESULT CopyFrom(LPSAFEARRAY* ppArray);
 ### <a name="parameters"></a>Parametreler
 
 *ppArray*<br/>
-`SAFEARRAY` Kopyalanacak yapılacak işaretçi.
+İşaretçi `SAFEARRAY` kopyalamak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, öğesinin `SAFEARRAY` içeriğini geçerli `CComSafeArray` nesneye kopyalar. Dizinin varolan içeriği değiştirilmiştir.
+Bu yöntem, bir `SAFEARRAY` nesnenin içeriğini `CComSafeArray` geçerli nesneye kopyalar. Dizinin varolan içeriği değiştirilir.
 
-##  <a name="copyto"></a>CComSafeArray:: CopyTo
+## <a name="ccomsafearraycopyto"></a><a name="copyto"></a>CcomsafeArray::Copyto
 
-`CComSafeArray` Nesnenin bir kopyasını oluşturur.
+Nesnenin `CComSafeArray` bir kopyasını oluşturur.
 
 ```
 HRESULT CopyTo(LPSAFEARRAY* ppArray);
@@ -279,19 +279,19 @@ HRESULT CopyTo(LPSAFEARRAY* ppArray);
 ### <a name="parameters"></a>Parametreler
 
 *ppArray*<br/>
-Yeni `SAFEARRAY`' nin oluşturulacağı konuma yönelik bir işaretçi.
+Yeni `SAFEARRAY`oluşturmak için bir konuma işaretçi .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem bir `CComSafeArray` nesnenin içeriğini bir `SAFEARRAY` yapıya kopyalar.
+Bu yöntem, bir `CComSafeArray` nesnenin içeriğini `SAFEARRAY` bir yapıya kopyalar.
 
-##  <a name="create"></a>CComSafeArray:: Create
+## <a name="ccomsafearraycreate"></a><a name="create"></a>CcomSafeArray::Oluştur
 
-`CComSafeArray`Oluşturur.
+Bir `CComSafeArray`.
 
 ```
 HRESULT Create(const SAFEARRAYBOUND* pBound, UINT uDims = 1);
@@ -300,27 +300,27 @@ HRESULT Create(ULONG ulCount = 0, LONG lLBound = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*PUP*<br/>
-Bir `SAFEARRAYBOUND` nesne işaretçisi.
+*pBound*<br/>
+Bir `SAFEARRAYBOUND` nesneye işaretçi.
 
 *uDims*<br/>
-Dizideki boyutların sayısı.
+Dizideki boyut sayısı.
 
 *ulCount*<br/>
 Dizideki öğelerin sayısı
 
-*Llsınırlanan*<br/>
+*lLBound*<br/>
 Alt sınır değeri; diğer bir deyişle, dizideki ilk öğenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CComSafeArray` nesne varolan `SAFEARRAYBOUND` bir yapıdan ve boyut sayısından, dizideki öğe sayısı ve alt sınır belirtilerek oluşturulabilir. Diziye erişilmesi gerekiyorsa C++, alt sınır 0 olmalıdır. Diğer diller, alt sınır için diğer değerlere izin verebilir (örneğin, Visual Basic-10 ila 10 gibi bir aralığa sahip olan öğeleri içeren dizileri destekler).
+Bir `CComSafeArray` nesne varolan `SAFEARRAYBOUND` bir yapıdan ve boyut sayısından veya dizideki ve alt sınırdaki öğe sayısını belirterek oluşturulabilir. Diziye C++'dan erişilecekse, alt sınır 0 olmalıdır. Diğer diller alt sınır için diğer değerlere izin verebilir (örneğin, Visual Basic -10 ile 10 gibi aralıklı dizileri destekler).
 
-##  <a name="destroy"></a>CComSafeArray::D estroy
+## <a name="ccomsafearraydestroy"></a><a name="destroy"></a>CComSafeArray::Destroy
 
 Bir `CComSafeArray` nesneyi yok eder.
 
@@ -330,15 +330,15 @@ HRESULT Destroy();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Var olan `CComSafeArray` bir nesneyi ve içerdiği tüm verileri yok eder.
+Varolan `CComSafeArray` bir nesneyi ve içerdiği tüm verileri yok eder.
 
-##  <a name="detach"></a>CComSafeArray::D etach
+## <a name="ccomsafearraydetach"></a><a name="detach"></a>CComSafeArray::Detach
 
-Nesnesinden`CComSafeArray` bir `SAFEARRAY` ayırır.
+Bir `SAFEARRAY` `CComSafeArray` nesneyi ayırın.
 
 ```
 LPSAFEARRAY Detach();
@@ -346,15 +346,15 @@ LPSAFEARRAY Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`SAFEARRAY` Nesnesine bir işaretçi döndürür.
+Bir işaretçiyi `SAFEARRAY` nesneye döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem nesneyi `CComSafeArray` nesnesinden `SAFEARRAY` ayırır.
+Bu yöntem nesneyi `SAFEARRAY` `CComSafeArray` nesneden ayırır.
 
-##  <a name="getat"></a>CComSafeArray:: GetAt
+## <a name="ccomsafearraygetat"></a><a name="getat"></a>CcomsafeArray::Getat
 
-Tek boyutlu diziden tek bir öğe alır.
+Tek boyutlu bir diziden tek bir öğe alır.
 
 ```
 T& GetAt(LONG lIndex) const;
@@ -362,14 +362,14 @@ T& GetAt(LONG lIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lIndex*<br/>
-Döndürülecek dizideki değerin Dizin numarası.
+*Lindex*<br/>
+Döndürülecek dizideki değerin dizin sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gerekli dizi öğesine bir başvuru döndürür.
+Gerekli dizi öğesine bir başvuru verir.
 
-##  <a name="getcount"></a>CComSafeArray:: GetCount
+## <a name="ccomsafearraygetcount"></a><a name="getcount"></a>CcomSafeArray::GetCount
 
 Dizideki öğe sayısını döndürür.
 
@@ -388,11 +388,11 @@ Dizideki öğe sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çok boyutlu bir dizi ile kullanıldığında, bu yöntem yalnızca belirli boyuttaki öğe sayısını döndürür.
+Çok boyutlu bir dizi ile kullanıldığında, bu yöntem yalnızca belirli bir boyuttaki öğe sayısını döndürecektir.
 
-##  <a name="getdimensions"></a>CComSafeArray:: GetDimensions
+## <a name="ccomsafearraygetdimensions"></a><a name="getdimensions"></a>CcomSafeArray::GetDimensions
 
-Dizideki boyutların sayısını döndürür.
+Dizideki boyut sayısını verir.
 
 ```
 UINT GetDimensions() const;
@@ -400,11 +400,11 @@ UINT GetDimensions() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizideki boyutların sayısını döndürür.
+Dizideki boyut sayısını verir.
 
-##  <a name="getlowerbound"></a>CComSafeArray:: Getpın sınırı
+## <a name="ccomsafearraygetlowerbound"></a><a name="getlowerbound"></a>CcomsafeArray::GetLowerBound
 
-Dizinin belirli bir boyutu için alt sınır döndürür.
+Dizinin belirli bir boyutu için alt sınırı döndürür.
 
 ```
 LONG GetLowerBound(UINT uDim = 0) const;
@@ -413,7 +413,7 @@ LONG GetLowerBound(UINT uDim = 0) const;
 ### <a name="parameters"></a>Parametreler
 
 *uDim*<br/>
-Alt sınırın alınacağı dizi boyutu. Atlanırsa varsayılan değer 0 ' dır.
+Alt sınırı almak için dizi boyutu. Atlanırsa, varsayılan değer 0'dır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -421,11 +421,11 @@ Alt sınırı döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alt sınır 0 ise bu, ilk öğesi öğe numarası 0 olan C benzeri bir diziyi gösterir. Bir hata durumunda, örneğin, geçersiz bir boyut bağımsız değişkeni olan bu yöntem, hatayı açıklayan bir `AtlThrow` HRESULT ile çağrı yapılır.
+Alt sınır 0 ise, bu, ilk öğesi 0 öğesi olan C benzeri bir dizigösterir. Bir hata durumunda, örneğin, geçersiz bir boyut bağımsız değişkeni, bu yöntem hatayı açıklayan bir HRESULT ile çağırır. `AtlThrow`
 
-##  <a name="getsafearrayptr"></a>CComSafeArray:: GetSafeArrayPtr
+## <a name="ccomsafearraygetsafearrayptr"></a><a name="getsafearrayptr"></a>CComSafeArray::GetSafeArrayPtr
 
-`m_psa` Veri üyesinin adresini döndürür.
+Veri üyesinin `m_psa` adresini verir.
 
 ```
 LPSAFEARRAY* GetSafeArrayPtr() throw();
@@ -433,9 +433,9 @@ LPSAFEARRAY* GetSafeArrayPtr() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[CComSafeArray:: m_psa](#m_psa) veri üyesine yönelik bir işaretçi döndürür.
+Bir işaretçiyi [CComSafeArray::m_psa](#m_psa) veri üyesine döndürür.
 
-##  <a name="gettype"></a>CComSafeArray:: GetType
+## <a name="ccomsafearraygettype"></a><a name="gettype"></a>CcomSafeArray::GetType
 
 Dizide depolanan veri türünü döndürür.
 
@@ -445,27 +445,27 @@ VARTYPE GetType() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizide depolanan veri türünü döndürür, bu şu türlerden herhangi biri olabilir:
+Dizide depolanan ve aşağıdaki türlerden herhangi biri olabilecek veri türünü döndürür:
 
-|VARTYPE|Açıklama|
+|Vartype|Açıklama|
 |-------------|-----------------|
 |VT_I1|char|
 |VT_I2|short|
 |VT_I4|int|
 |VT_I4|long|
-|VT_I8|longlong|
+|VT_I8|uzun süre|
 |VT_UI1|byte|
 |VT_UI2|ushort|
 |VT_UI4|uint|
 |VT_UI4|ulong|
-|VT_UI8|ULONGLONG|
+|VT_UI8|Ulonglong|
 |VT_R4|float|
-|VT_R8|çift|
+|VT_R8|double|
 |VT_DECIMAL|ondalık işaretçi|
 |VT_VARIANT|varyant işaretçisi|
-|VT_CY|Currency veri türü|
+|Vt_cy|Currency veri türü|
 
-##  <a name="getupperbound"></a>CComSafeArray:: Getüstsınırı
+## <a name="ccomsafearraygetupperbound"></a><a name="getupperbound"></a>CcomsafeArray::GetupperBound
 
 Dizinin herhangi bir boyutu için üst sınırı döndürür.
 
@@ -476,19 +476,19 @@ LONG GetUpperBound(UINT uDim = 0) const;
 ### <a name="parameters"></a>Parametreler
 
 *uDim*<br/>
-Üst sınır alınacak dizi boyutu. Atlanırsa varsayılan değer 0 ' dır.
+Üst sınırı almak için dizi boyutu. Atlanırsa, varsayılan değer 0'dır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üst sınırı döndürür. Bu değer, bu boyut için geçerli olan en yüksek dizin.
+Üst sınırı döndürür. Bu değer kapsayıcıdır, bu boyut için en büyük geçerli dizin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir hata durumunda, örneğin, geçersiz bir boyut bağımsız değişkeni olan bu yöntem, hatayı açıklayan bir `AtlThrow` HRESULT ile çağrı yapılır.
+Bir hata durumunda, örneğin, geçersiz bir boyut bağımsız değişkeni, bu yöntem hatayı açıklayan bir HRESULT ile çağırır. `AtlThrow`
 
-##  <a name="issizable"></a>CComSafeArray:: ıssizable
+## <a name="ccomsafearrayissizable"></a><a name="issizable"></a>CComSafeArray::IsSizable
 
-Bir `CComSafeArray` nesnenin yeniden boyutlandırılabileceğini sınar.
+Bir `CComSafeArray` nesne yeniden boyutlandırılabilirse sınar.
 
 ```
 bool IsSizable() const;
@@ -496,17 +496,17 @@ bool IsSizable() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeniden boyutlandırılabiliyorsa `CComSafeArray` true, değilse false döndürür.
+Yeniden boyutlandırılabiliyorsa `CComSafeArray` DOĞRU döndürür, yapamıyorsa FALSE.
 
-##  <a name="m_psa"></a>CComSafeArray:: m_psa
+## <a name="ccomsafearraym_psa"></a><a name="m_psa"></a>CComSafeArray::m_psa
 
-Erişilen `SAFEARRAY` yapının adresini tutar.
+Erişilen yapının `SAFEARRAY` adresini tutar.
 
 ```
 LPSAFEARRAY m_psa;
 ```
 
-##  <a name="multidimgetat"></a>CComSafeArray:: MultiDimGetAt
+## <a name="ccomsafearraymultidimgetat"></a><a name="multidimgetat"></a>CcomsafeArray::multidimgetat
 
 Çok boyutlu bir diziden tek bir öğe alır.
 
@@ -517,16 +517,16 @@ HRESULT MultiDimGetAt(const LONG* alIndex, T& t);
 ### <a name="parameters"></a>Parametreler
 
 *alIndex*<br/>
-Dizideki her boyut için Dizin vektörünün işaretçisi. En soldaki (en önemli) Boyut `alIndex[0]`.
+Dizideki her boyut için dizinvektörü işaretçi. En sol (en önemli) `alIndex[0]`boyuttur.
 
-*şı*<br/>
-Döndürülen verilere yönelik bir başvuru.
+*T*<br/>
+Döndürülen verilere bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
-##  <a name="multidimsetat"></a>CComSafeArray:: MultiDimSetAt
+## <a name="ccomsafearraymultidimsetat"></a><a name="multidimsetat"></a>CcomsafeArray::multidimsetat
 
 Çok boyutlu bir dizideki bir öğenin değerini ayarlar.
 
@@ -537,20 +537,20 @@ HRESULT MultiDimSetAt(const LONG* alIndex, const T& t);
 ### <a name="parameters"></a>Parametreler
 
 *alIndex*<br/>
-Dizideki her boyut için Dizin vektörünün işaretçisi. En sağdaki (en az önemli) Boyut `alIndex`[0].
+Dizideki her boyut için dizinvektörü işaretçi. En doğru (en az `alIndex`anlamlı) boyut [0]'dır.
 
-*ŞI*<br/>
+*T*<br/>
 Yeni öğenin değerini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, [CComSafeArray:: SetAt](#setat)'in çok boyutlu bir sürümüdür.
+Bu CComSafeArray çok boyutlu bir [sürümüdür::SetAt](#setat).
 
-##  <a name="operator_at"></a>CComSafeArray:: işleci\[\]
+## <a name="ccomsafearrayoperator-"></a><a name="operator_at"></a>CComSafeArray::operatör\[\]
 
 Diziden bir öğe alır.
 
@@ -570,9 +570,9 @@ Uygun dizi öğesini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CComSafeArray:: GetAt](#getat)için benzer bir işlev gerçekleştirir, ancak bu işleç yalnızca tek boyutlu dizilerle çalışır.
+CComSafeArray benzer bir işlev [gerçekleştirir::GetAt,](#getat)ancak bu işleç sadece tek boyutlu diziler ile çalışır.
 
-##  <a name="operator_eq"></a>CComSafeArray:: operator =
+## <a name="ccomsafearrayoperator-"></a><a name="operator_eq"></a>CComSafeArray::operatör =
 
 Atama işleci.
 
@@ -587,15 +587,15 @@ ATL::CComSafeArray<T>& operator=(const SAFEARRAY* psaSrc);
 Bir `CComSafeArray` nesneye başvuru.
 
 *psaSrc*<br/>
-Bir `SAFEARRAY` nesne işaretçisi.
+Bir `SAFEARRAY` nesneye işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Dizide depolanan veri türünü döndürür.
 
-##  <a name="operator_lpsafearray"></a>CComSafeArray:: operator LPSAFEARRAY
+## <a name="ccomsafearrayoperator-lpsafearray"></a><a name="operator_lpsafearray"></a>CComSafeArray::operatör LPSAFEARRAY
 
-Bir `SAFEARRAY` işaretçiye değer yayınlar.
+Bir `SAFEARRAY` işaretçiye değer atar.
 
 ```
 operator LPSAFEARRAY() const;
@@ -603,11 +603,11 @@ operator LPSAFEARRAY() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `SAFEARRAY` işaretçiye değer yayınlar.
+Bir `SAFEARRAY` işaretçiye değer atar.
 
-##  <a name="resize"></a>CComSafeArray:: Resize
+## <a name="ccomsafearrayresize"></a><a name="resize"></a>CComSafeArray::Yeniden boyutlandırma
 
-Bir `CComSafeArray` nesneyi yeniden boyutlandırır.
+Nesneyi `CComSafeArray` yeniden boyutlandırıyor.
 
 ```
 HRESULT Resize(const SAFEARRAYBOUND* pBound);
@@ -616,26 +616,26 @@ HRESULT Resize(ULONG ulCount, LONG lLBound = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*PUP*<br/>
-Öğe sayısı ve bir `SAFEARRAYBOUND` dizinin alt sınırı hakkında bilgi içeren bir yapıya yönelik işaretçi.
+*pBound*<br/>
+Öğelerin sayısı `SAFEARRAYBOUND` ve bir dizinin alt sınırı hakkında bilgi içeren bir yapıiçin işaretçi.
 
 *ulCount*<br/>
-Yeniden boyutlandırılan dizide istenen nesne sayısı.
+Yeniden boyutlandırılmış dizide istenen nesne sayısı.
 
-*Llsınırlanan*<br/>
+*lLBound*<br/>
 Alt sınır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem yalnızca en sağdaki boyutu yeniden boyutlandırır. Yanlış olarak döndürülen `IsResizable` dizileri yeniden boyutlandıramaz.
+Bu yöntem yalnızca en doğru boyutu yeniden boyutlandırıyor. FALSE olarak dönen `IsResizable` dizileri yeniden boyutlandırmaz.
 
-##  <a name="setat"></a>CComSafeArray:: SetAt
+## <a name="ccomsafearraysetat"></a><a name="setat"></a>CcomsafeArray::Setat
 
-Tek boyutlu dizideki bir öğenin değerini ayarlar.
+Tek boyutlu bir dizideki bir öğenin değerini ayarlar.
 
 ```
 HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
@@ -643,26 +643,26 @@ HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*lIndex*<br/>
-Ayarlanacak dizi öğesinin dizin numarası.
+*Lindex*<br/>
+Ayarlanan dizi öğesinin dizin sayısı.
 
-*şı*<br/>
+*T*<br/>
 Belirtilen öğenin yeni değeri.
 
-*bCopy*<br/>
-Verilerin kopyasının oluşturulup oluşturulmayacağını gösterir. Varsayılan değer TRUE 'dur.
+*bFotokopi*<br/>
+Verilerin bir kopyasının oluşturulup oluşturulmayacağını gösterir. Varsayılan değer TRUE'dur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-BSTR veya VARIANT türündeki öğeler bir diziye eklendiğinde *bCopy* bayrağı dikkate alınır. Varsayılan TRUE değeri, öğe diziye eklendiğinde verilerin yeni bir kopyasının yapılmasını sağlar.
+BSTR veya VARIANT türü öğeleri bir diziye eklendiğinde *bCopy* bayrağı dikkate alınır. TRUE'nun varsayılan değeri, öğe diziye eklendiğinde yeni bir kopyanın verilerden yapılmasını sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[SAFEARRAY veri türü](/windows/win32/api/oaidl/ns-oaidl-safearray)<br/>
-[CComSafeArray:: Create](#create)<br/>
-[CComSafeArray::D estroy](#destroy)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[SAFEARRAY Veri Türü](/windows/win32/api/oaidl/ns-oaidl-safearray)<br/>
+[CcomSafeArray::Oluştur](#create)<br/>
+[CComSafeArray::Destroy](#destroy)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

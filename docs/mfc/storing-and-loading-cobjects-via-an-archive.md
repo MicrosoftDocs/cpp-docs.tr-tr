@@ -8,33 +8,33 @@ helpviewer_keywords:
 - CObject class [MFC], CArchive objects
 - CObjects [MFC]
 ms.assetid: a829b6dd-bc31-47e0-8108-fbb946722db9
-ms.openlocfilehash: 368421a86d6ff6fc70455edd0ea9a32e05645007
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: f1b59516d5bba13b6f5e006f91d8ebd560543b05
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446369"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372153"
 ---
 # <a name="storing-and-loading-cobjects-via-an-archive"></a>Bir Arşiv Kullanarak CObject'leri Depolama ve Yükleme
 
-`CObject`s 'yi bir arşiv aracılığıyla depolamak ve yüklemek ek bir değerlendirme gerektirir. Belirli durumlarda, \< **<>>** veya **`CArchive`** işlecini kullanmanın aksine, `CArchive` nesnesinin `Serialize` çağrısının bir parametresi olduğu nesnenin `Serialize` işlevini çağırmanız gerekir. Göz önünde bulundurmanız gereken önemli olgu, `CArchive` **>>** işlecinin, daha önce depolayan Arşiv tarafından dosyaya yazılmış `CRuntimeClass` bilgilere göre bellekte `CObject` oluşturmasıdır.
+Bir arşiv `CObject`üzerinden depolama ve yükleme ekstra dikkate gerektirir. Bazı `Serialize` durumlarda, `CArchive` nesnenin çağrının `Serialize` ** < ** bir parametresi olduğu nesnenin işlevini, `CArchive`'nin işlevini **>>** veya işlecinin yerine Akılda tutulması gereken önemli bir `CArchive` **>>** gerçek, `CObject` işleç daha `CRuntimeClass` önce depolama arşivi tarafından dosyaya yazılmış bilgilere dayalı bellek inşa olmasıdır.
 
-Bu nedenle, `CArchive` **<\<** ve **>>** işleçlerini (`Serialize`çağırarak) kullandığınızda, daha önce depolanan `CRuntimeClass` bilgilerine göre nesneyi dinamik olarak yeniden oluşturmak için yükleme arşivine *ihtiyacınız* olup olmamasına bağlıdır. Aşağıdaki durumlarda `Serialize` işlevini kullanın:
+Bu nedenle, aramayı `CArchive` ** < ** **>>** karşıklayarak `Serialize`ve kullanıp kullanmadığınız, nesneyi daha önce depolanan `CRuntimeClass` bilgilere göre dinamik olarak yeniden yapılandırmak için yükleme arşivine *ihtiyaç duyup* duymadığınıza bağlıdır. Aşağıdaki `Serialize` durumlarda işlevi kullanın:
 
-- Nesne seri durumdan çıkarılırken, önceden nesnenin tam sınıfını bilirsiniz.
+- Nesneyi deserializing zaman, nesnenin tam sınıfını önceden biliyorum.
 
-- Nesne seri durumdan çıkarılırken, zaten ayrılan belleğe sahip olursunuz.
+- Nesneyi deserializing, zaten bunun için ayrılmış bellek var.
 
 > [!CAUTION]
->  Nesneyi `Serialize` işlevini kullanarak yüklerseniz, nesneyi `Serialize` işlevini kullanarak da depolamanız gerekir. `CArchive` **<<** işlecini kullanarak depolamayın, sonra `Serialize` işlevini kullanarak yükleyin veya `Serialize` işlevini kullanarak ve sonra `CArchive >>` işlecini kullanarak yükleyin.
+> Nesneyi `Serialize` işlevi kullanarak yüklerseniz, `Serialize` nesneyi işlevi kullanarak da depolamanız gerekir. İşleç kullanarak `CArchive` **<<** depoyapmayın ve `Serialize` ardından işlevi kullanarak `Serialize` yükleyin veya `CArchive >>` işlevi kullanarak depolayın ve ardından operatörü kullanarak yükleyin.
 
-Aşağıdaki örnekte durumlar gösterilmektedir:
+Aşağıdaki örnek, servis taleplerini göstermektedir:
 
 [!code-cpp[NVC_MFCSerialization#36](../mfc/codesnippet/cpp/storing-and-loading-cobjects-via-an-archive_1.h)]
 
 [!code-cpp[NVC_MFCSerialization#37](../mfc/codesnippet/cpp/storing-and-loading-cobjects-via-an-archive_2.cpp)]
 
-Özet olarak, seri hale getirilebilir sınıfınız bir üye olarak gömülü bir `CObject` tanımlıyorsa, bu nesne için `CArchive` **<\<** ve **>>** *işleçlerini kullanmamalısınız,* ancak bunun yerine `Serialize` işlevini çağırmalıdır. Ayrıca, seri hale getirilebilir sınıfınız üye olarak bir `CObject` (veya `CObject`öğesinden türetilmiş bir nesne) için bir işaretçi tanımlıyorsa, ancak bu nesneyi kendi oluşturucusunda oluşturur, ayrıca `Serialize`' yı da çağırmanız gerekir.
+Özetle, `CObject` serileştirilebilir sınıfınız katıştirilen bir nesneyi tanımlıyorsa, o nesne için `CArchive` ** < ** **>>** ve `Serialize` işleçleri *kullanmamalısınız,* bunun yerine işlevi aramalısınız. Ayrıca, serializable sınıf bir işaretçi `CObject` (veya türetilen `CObject`bir nesne) bir üye olarak tanımlar, ancak kendi oluşturucu `Serialize`bu diğer nesne inşa ederse, ayrıca çağırmalısınız.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: CComQIPtr sınıfı
+title: CComQIPtr Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComQIPtr
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComQIPtr class
 ms.assetid: 969cacb5-05b6-4af4-b683-24911d70242d
-ms.openlocfilehash: 64716d945ffbc6802ec23fb47523464246065192
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b1d8b92fbc5e95a5061956bafc4922d249a6f18
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258916"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81327427"
 ---
-# <a name="ccomqiptr-class"></a>CComQIPtr sınıfı
+# <a name="ccomqiptr-class"></a>CComQIPtr Sınıfı
 
-COM arabirim işaretçilerini yönetmek için bir akıllı işaretçi sınıfının.
+COM arabirim işaretçilerini yönetmek için akıllı işaretçi sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,42 +29,42 @@ class CComQIPtr: public CComPtr<T>
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Depolanacak işaretçi türü belirten bir COM arabirimi.
+Depolanacak işaretçi türünü belirten bir COM arabirimi.
 
 *piid*<br/>
-Laboratuvardaki işaretçisi *T*.
+*T*IID için bir işaretçi .
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CComQIPtr::CComQIPtr](#ccomqiptr)|Oluşturucu.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComQIPtr::operator =](#operator_eq)|Bir işaretçi, üye işaretçisi atar.|
+|[CComQIPtr::operatör =](#operator_eq)|Üye işaretçiye bir işaretçi atar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-ATL kullanan `CComQIPtr` ve [CComPtr](../../atl/reference/ccomptr-class.md) COM arabirim işaretçilerini yönetmek için ikisi için de öğesinden türetilen [CComPtrBase](../../atl/reference/ccomptrbase-class.md). Her iki sınıfları otomatik başvuru yapılan çağrılar aracılığıyla sayımı gerçekleştirmek `AddRef` ve `Release`. Aşırı yüklenmiş işleçler, işaretçi işlemleri işleyin.
+ATL, `CComQIPtr` her ikisi de [CComPtrBase'den](../../atl/reference/ccomptrbase-class.md)türetilen COM arabirim işaretçilerini yönetmek için Kullanır ve [CComPtr'ı](../../atl/reference/ccomptr-class.md) kullanır. Her iki sınıf `AddRef` da aramalar `Release`yoluyla otomatik başvuru sayma yapar ve. Aşırı yüklü işleçler işaretçi işlemlerini işler.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
 [CComPtrBase](../../atl/reference/ccomptrbase-class.md)
 
-[CComPtr](../../atl/reference/ccomptr-class.md)
+[Ccomptr](../../atl/reference/ccomptr-class.md)
 
 `CComQIPtr`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcomcli.h
+**Üstbilgi:** atlcomcli.h
 
-##  <a name="ccomqiptr"></a>  CComQIPtr::CComQIPtr
+## <a name="ccomqiptrccomqiptr"></a><a name="ccomqiptr"></a>CComQIPtr::CComQIPtr
 
 Oluşturucu.
 
@@ -77,16 +77,16 @@ CComQIPtr(const CComQIPtr<T, piid>& lp) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*LP*<br/>
-Arabirim işaretçisi başlatmak için kullanılır.
+*Lp*<br/>
+Arabirim işaretçisini başlatmak için kullanılır.
 
 *T*<br/>
-Bir COM arabirimi.
+Com arabirimi.
 
 *piid*<br/>
-Laboratuvardaki işaretçisi *T*.
+*T*IID için bir işaretçi .
 
-##  <a name="operator_eq"></a>  CComQIPtr::operator =
+## <a name="ccomqiptroperator-"></a><a name="operator_eq"></a>CComQIPtr::operatör =
 
 Atama işleci.
 
@@ -98,23 +98,23 @@ T* operator= (IUnknown* lp) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*LP*<br/>
-Arabirim işaretçisi başlatmak için kullanılır.
+*Lp*<br/>
+Arabirim işaretçisini başlatmak için kullanılır.
 
 *T*<br/>
-Bir COM arabirimi.
+Com arabirimi.
 
 *piid*<br/>
-Laboratuvardaki işaretçisi *T*.
+*T*IID için bir işaretçi .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Güncelleştirilmiş bir işaretçi döndürür `CComQIPtr` nesne.
+Güncelleştirilmiş nesneye `CComQIPtr` bir işaretçi döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CComPtr::CComPtr](../../atl/reference/ccomptr-class.md#ccomptr)<br/>
 [CComQIPtr::CComQIPtr](#ccomqiptr)<br/>
 [CComPtrBase Sınıfı](../../atl/reference/ccomptrbase-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
 [CComQIPtrElementTraits Sınıfı](../../atl/reference/ccomqiptrelementtraits-class.md)

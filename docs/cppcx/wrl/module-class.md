@@ -43,16 +43,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Module::UnregisterObjects method
 - Microsoft::WRL::Module::UnregisterWinRTObject method
 ms.assetid: dd67e3b8-c2e1-4f53-8c0f-565a140ba649
-ms.openlocfilehash: db3eb123382ac70f6198d094c5eb3fe44d3bbcd9
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: afd2edacefdf5d62b50a03c0a8c37f13ee5d9c9f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345794"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371313"
 ---
 # <a name="module-class"></a>Modül Sınıfı
 
-İlgili nesneler koleksiyonunu temsil eder.
+İlişkili nesnelerin bir koleksiyonunu temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,68 +69,70 @@ class Module<OutOfProc> : public Module<InProc>;
 
 ### <a name="parameters"></a>Parametreler
 
-*moduleType*<br/>
-Bir veya daha fazla birleşimi [ModuleType](moduletype-enumeration.md) sabit listesi değerleri.
+*modülTipi*<br/>
+Bir veya daha fazla [ModuleType](moduletype-enumeration.md) numaralandırma değerlerinin birleşimi.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="protected-classes"></a>Korumalı sınıflar
+### <a name="protected-classes"></a>Korumalı Sınıflar
 
-Ad                                                                                | Açıklama
+Adı                                                                                | Açıklama
 ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-[Module::GenericReleaseNotifier](module-genericreleasenotifier-class.md) | Geçerli modül içinde son nesnenin yayımlandığında bir olay işleyici çağırır. Olay işleyici lambda, functor veya işaretçi işlevi tarafından belirtilir.
-[Module::MethodReleaseNotifier](module-methodreleasenotifier-class.md)   | Geçerli modül içinde son nesnenin yayımlandığında bir olay işleyici çağırır. Olay işleyicisi, bir nesne ve onun yöntemi için işaretçi üye tarafından belirtilir.
-[Module::ReleaseNotifier](module-releasenotifier-class.md)               | Modül içindeki son nesnenin yayımlandığında bir olay işleyici çağırır.
+[Modül::GenericReleaseNotifier](module-genericreleasenotifier-class.md) | Geçerli modüldeki son nesne serbest bırakıldığında bir olay işleyicisi çağırır. Olay işleyicisi bir lambda, functor veya işaretçi-to-fonksiyon tarafından belirtilir.
+[Modül::MethodReleaseNotifier](module-methodreleasenotifier-class.md)   | Geçerli modüldeki son nesne serbest bırakıldığında bir olay işleyicisi çağırır. Olay işleyicisi bir nesne ve onun işaretçi-to-a-method üyesi tarafından belirtilir.
+[Modül::ReleaseNotifier](module-releasenotifier-class.md)               | Modüldeki son nesne serbest bırakıldığında bir olay işleyicisi çağırır.
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Ad                             | Açıklama
+Adı                             | Açıklama
 -------------------------------- | -----------------------------------------------------------
-[Modül:: ~ Modülü](#tilde-module) | Geçerli örneğinin başlatmasını geri alır `Module` sınıfı.
+[Modül::~Modül](#tilde-module) | Sınıfın geçerli örneğini `Module` deinitialize eder.
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-Ad                      | Açıklama
+Adı                      | Açıklama
 ------------------------- | ---------------------------------------------------
-[Module::Module](#module) | Yeni bir örneğini başlatır `Module` sınıfı.
+[Modül::Modül](#module) | `Module` sınıfının yeni bir örneğini başlatır.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                                                    | Açıklama
+Adı                                                    | Açıklama
 ------------------------------------------------------- | --------------------------------------------------------------------------------------------------
-[Module::Create](#create)                               | Bir modülün örneği oluşturur.
-[Module::DecrementObjectCount](#decrementobjectcount)   | Nesne sayısını modülü tarafından izlenen azaltır.
-[Module::GetActivationFactory](#getactivationfactory)   | Etkinleştirme fabrikası için modülü alır.
-[Module::GetClassObject](#getclassobject)               | Sınıf üreteçlerini önbelleğini alır.
-[Module::GetModule](#getmodule)                         | Bir modülün örneği oluşturur.
-[Module::GetObjectCount](#getobjectcount)               | Bu modülü tarafından yönetilen nesne sayısını alır.
-[Module::ıncrementobjectcount](#incrementobjectcount)   | Modül tarafından izlenen nesne sayısını artırır.
-[Module::RegisterCOMObject](#registercomobject)         | Diğer uygulamalar için bağlanabilmesi için bir veya daha fazla COM nesneleri kaydeder.
-[Module::RegisterObjects](#registerobjects)             | Diğer uygulamalar için bağlanabilmesi için COM veya Windows çalışma zamanı nesneleri kaydeder.
-[Module::RegisterWinRTObject](#registerwinrtobject)     | Diğer uygulamalar için bağlanabilmesi için bir veya daha fazla Windows çalışma zamanı nesneleri kaydeder.
-[Module::Terminate](#terminate)                         | Kapatmak için modülü tarafından oluşturulan tüm fabrikaları neden olur.
-[Module::UnregisterCOMObject](#unregistercomobject)     | Bir veya daha fazla COM nesneleri, diğer uygulamalar için bağlanmasını engelleyen kaydını siler.
-[Module::UnregisterObjects](#unregisterobjects)         | Diğer uygulamalar için bağlantı nesneleri belirtilen modüldeki kaydını siler.
-[Module::UnregisterWinRTObject](#unregisterwinrtobject) | Böylece diğer uygulamalar için bağlanılamıyor veya daha fazla Windows çalışma zamanı nesne kaydını siler.
+[Modül::Oluştur](#create)                               | Bir modül örneği oluşturur.
+[Modül::DecrementObjectCount](#decrementobjectcount)   | Modül tarafından izlenen nesne sayısını eriter.
+[Modül::GetActivationFactory](#getactivationfactory)   | Modül için bir aktivasyon fabrikası alır.
+[Modül::GetClassObject](#getclassobject)               | Sınıf fabrikalarının önbelleğini alır.
+[Modül::GetModule](#getmodule)                         | Bir modül örneği oluşturur.
+[Modül::GetObjectCount](#getobjectcount)               | Bu modül tarafından yönetilen nesne sayısını alır.
+[Modül::ArtışNesne Sayısı](#incrementobjectcount)   | Modül tarafından izlenen nesne sayısını artımlar.
+[Modül::RegisterCOMObject](#registercomobject)         | Diğer uygulamaların bunlara bağlanabilmesi için bir veya daha fazla COM nesnesini kaydeder.
+[Modül::RegisterObjects](#registerobjects)             | Diğer uygulamaların bunlara bağlanabilmesi için COM veya Windows Runtime nesnelerini kaydeder.
+[Modül:RegisterWinRTObject](#registerwinrtobject)     | Diğer uygulamaların bunlara bağlanabilmesi için bir veya daha fazla Windows Runtime nesnesini kaydeder.
+[Modül::Sonlandırma](#terminate)                         | Modül tarafından anında kapatılan tüm fabrikaların kapanmasına neden olur.
+[Modül::UnregisterCOMObject](#unregistercomobject)     | Diğer uygulamaların bunlara bağlanmasını engelleyen bir veya daha fazla COM nesnesini kaydeder.
+[Modül::Kayıt Dışı Nesneler](#unregisterobjects)         | Diğer uygulamaların bunlara bağlanamaması için belirtilen modüldeki nesneleri kaydeder.
+[Modül::Kayıt DışıWinRTObject](#unregisterwinrtobject) | Diğer uygulamaların bunlara bağlanamaması için bir veya daha fazla Windows Runtime nesnesini unregisters.
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-Ad                      | Açıklama
+Adı                      | Açıklama
 ------------------------- | --------------------------------
-[Module::Create](#create) | Bir modülün örneği oluşturur.
+[Modül::Oluştur](#create) | Bir modül örneği oluşturur.
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-Ad                                         | Açıklama
+Adı                                         | Açıklama
 -------------------------------------------- | --------------------------------------------------------------------------------------------------------
-[Module::objectCount_](#objectcount)         | Kaç tane sınıfları ile oluşturulmuş izler [olun](make-function.md) işlevi.
-[Module::releaseNotifier_](#releasenotifier) | Bir işaretçi tutan bir `ReleaseNotifier` nesne.
+[Modül:objectCount_](#objectcount)         | [Yap](make-function.md) işlevi yle kaç sınıf oluşturulduğunu izler.
+[Modül:releaseNotifier_](#releasenotifier) | Bir `ReleaseNotifier` nesneye işaretçi tutar.
 
 ### <a name="macros"></a>Makrolar
 
-Ad | Açıklama------| --- [ActivatableClass](activatableclass-macros.md) |  Belirtilen sınıfın bir örneğini oluşturan bir üreteci içeren bir iç önbelleğe doldurur. Bu makro, varsayılan fabrika ve grup kimliği parametreleri belirtir.
-[ActivatableClassWithFactory](activatableclass-macros.md) | Belirtilen sınıfın bir örneğini oluşturan bir üreteci içeren bir iç önbelleğe doldurur. Bu makro belirli Fabrika parametresi belirlemenize olanak sağlar.
-[ActivatableClassWithFactoryEx](activatableclass-macros.md) | Belirtilen sınıfın bir örneğini oluşturan bir üreteci içeren bir iç önbelleğe doldurur. Bu makro belirli Fabrika ve grup kimliği parametreleri belirtmenizi sağlar.
+Adı                                                                   | Açıklama
+---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[ActivatableSınıf](activatableclass-macros.md)              | Belirtilen sınıfın bir örneğini oluşturabilecek bir fabrika içeren bir iç önbelleği doldurur. Bu makro varsayılan fabrika ve grup kimliği parametrelerini belirtir.
+[ActivatableClassWithFactory](activatableclass-macros.md)   | Belirtilen sınıfın bir örneğini oluşturabilecek bir fabrika içeren bir iç önbelleği doldurur. Bu makro, belirli bir fabrika parametresi belirtmenizi sağlar.
+[ActivatableClassWithFactoryEx](activatableclass-macros.md) | Belirtilen sınıfın bir örneğini oluşturabilecek bir fabrika içeren bir iç önbelleği doldurur. Bu makro, belirli fabrika ve grup kimliği parametrelerini belirtmenizi sağlar.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -142,21 +144,21 @@ Ad | Açıklama------| --- [ActivatableClass](activatableclass-macros.md) |  Bel
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** module.h
+**Üstbilgi:** module.h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft::WRL
 
-## <a name="tilde-module"></a>Modül:: ~ Modülü
+## <a name="modulemodule"></a><a name="tilde-module"></a>Modül::~Modül
 
-Geçerli örneğinin başlatmasını geri alır `Module` sınıfı.
+Sınıfın geçerli örneğini `Module` deinitialize eder.
 
 ```cpp
 virtual ~Module();
 ```
 
-## <a name="create"></a>Module::Create
+## <a name="modulecreate"></a><a name="create"></a>Modül::Oluştur
 
-Bir modülün örneği oluşturur.
+Bir modül örneği oluşturur.
 
 ```cpp
 WRL_NOTHROW static Module& Create();
@@ -176,22 +178,22 @@ WRL_NOTHROW static Module& Create(
 *T*<br/>
 Modül türü.
 
-*geri çağırma*<br/>
-Son örnek nesnesi modülünün bırakıldığında çağırılır.
+*Geri*<br/>
+Modülün son örnek nesnesi serbest bırakıldığında çağrılır.
 
-*object*<br/>
-*Nesne* ve *yöntemi* parametreleri birlikte kullanılır. Son örnek nesne modülünde yayımlandığında son örnek nesnesi işaret eder.
+*Nesne*<br/>
+*Nesne* ve *yöntem* parametreleri birlikte kullanılır. Modüldeki son örnek nesne solduğunda son örnek nesneyi işaret edin.
 
-*Yöntemi*<br/>
-*Nesne* ve *yöntemi* parametreleri birlikte kullanılır. Nesnenin son örnek nesne modülünde yayımlandığında son örneği noktaları yöntemi.
+*Yöntem*<br/>
+*Nesne* ve *yöntem* parametreleri birlikte kullanılır. Modüldeki son örnek nesne solduğunda son örnek nesnenin yöntemine işaret edilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Modül başvuru.
+Modüle başvuru.
 
-## <a name="decrementobjectcount"></a>Module::DecrementObjectCount
+## <a name="moduledecrementobjectcount"></a><a name="decrementobjectcount"></a>Modül::DecrementObjectCount
 
-Nesne sayısını modülü tarafından izlenen azaltır.
+Modül tarafından izlenen nesne sayısını eriter.
 
 ```cpp
 virtual long DecrementObjectCount();
@@ -199,11 +201,11 @@ virtual long DecrementObjectCount();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Azaltma işleminden önce sayısı.
+Kararname işleminden önceki sayım.
 
-## <a name="getactivationfactory"></a>Module::GetActivationFactory
+## <a name="modulegetactivationfactory"></a><a name="getactivationfactory"></a>Modül::GetActivationFactory
 
-Etkinleştirme fabrikası için modülü alır.
+Modül için bir aktivasyon fabrikası alır.
 
 ```cpp
 WRL_NOTHROW HRESULT GetActivationFactory(
@@ -216,21 +218,21 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 ### <a name="parameters"></a>Parametreler
 
 *pActivatibleClassId*<br/>
-Laboratuvardaki bir çalışma zamanı sınıf.
+Çalışma zamanı sınıfının IID'si.
 
 *ppIFactory*<br/>
-Belirtilen çalışma zamanı sınıfının IActivationFactory.
+Belirtilen çalışma zamanı sınıfı için IActivationFactory.
 
-*SunucuAdı*<br/>
-Sınıf üreteçlerini geçerli modüldeki bir alt kümesi adı. Kullanılan sunucu adını belirtmek [ActivatableClassWithFactoryEx](activatableclass-macros.md) makro veya belirtin `nullptr` varsayılan sunucu adı alınamıyor.
+*Sunucuadı*<br/>
+Geçerli modüldeki sınıf fabrikalarının bir alt kümesinin adı. [ActivatableClassWithFactoryEx](activatableclass-macros.md) makroda kullanılan sunucu adını belirtin veya varsayılan sunucu adını almak için belirtin. `nullptr`
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde GetActivationFactory tarafından döndürülen HRESULT.
+S_OK başarılı olursa; aksi takdirde, HRESULT GetActivationFactory tarafından döndürülür.
 
-## <a name="getclassobject"></a>Module::GetClassObject
+## <a name="modulegetclassobject"></a><a name="getclassobject"></a>Modül::GetClassObject
 
-Sınıf üreteçlerini önbelleğini Retreives.
+Sınıf fabrikalarının önbelleğini retreives.
 
 ```cpp
 HRESULT GetClassObject(
@@ -243,27 +245,27 @@ HRESULT GetClassObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*<br/>
-Sınıf kimliği
+*Clsıd*<br/>
+Sınıf kimliği.
 
-*riid*<br/>
-İstek, arabirim kimliği.
+*Riid*<br/>
+İstediğinin arayüz kimliği.
 
-*ppv*<br/>
-Döndürülen nesne işaretçisi.
+*Ppv*<br/>
+Döndürülen nesneye işaretçi.
 
-*SunucuAdı*<br/>
-Ya da belirtilen sunucu adı `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`, veya `ActivatableClass` makrosu; veya `nullptr` varsayılan sunucu adı alınamıyor.
+*Sunucuadı*<br/>
+`ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`veya `ActivatableClass` makroda belirtilen sunucu adı; veya `nullptr` varsayılan sunucu adını almak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca COM için değil Windows çalışma zamanı bu yöntemi kullanın. Bu yöntem yalnızca sunan `IClassFactory` yöntemleri.
+Bu yöntemi Yalnızca COM için kullanın, Windows Runtime için değil. Bu yöntem yalnızca `IClassFactory` yöntemleri ortaya çıkarır.
 
-## <a name="getmodule"></a>Module::GetModule
+## <a name="modulegetmodule"></a><a name="getmodule"></a>Modül::GetModule
 
-Bir modülün örneği oluşturur.
+Bir modül örneği oluşturur.
 
 ```cpp
 static Module& GetModule();
@@ -272,11 +274,11 @@ WRL_NOTHROW static Module& GetModule();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Modül başvuru.
+Bir modüle başvuru.
 
-## <a name="getobjectcount"></a>Module::GetObjectCount
+## <a name="modulegetobjectcount"></a><a name="getobjectcount"></a>Modül::GetObjectCount
 
-Bu modülü tarafından yönetilen nesne sayısını alır.
+Bu modül tarafından yönetilen nesne sayısını alır.
 
 ```cpp
 virtual long GetObjectCount() const;
@@ -284,11 +286,11 @@ virtual long GetObjectCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu modülü tarafından yönetilen nesnelere geçerli sayısı.
+Bu modül tarafından yönetilen nesnelerin geçerli sayısı.
 
-## <a name="incrementobjectcount"></a>Module::ıncrementobjectcount
+## <a name="moduleincrementobjectcount"></a><a name="incrementobjectcount"></a>Modül::ArtışNesne Sayısı
 
-Modül tarafından izlenen nesne sayısını artırır.
+Modül tarafından izlenen nesne sayısını artımlar.
 
 ```cpp
 virtual long IncrementObjectCount();
@@ -296,11 +298,11 @@ virtual long IncrementObjectCount();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önce Artım işlemi sayısı.
+Artış işleminden önceki sayım.
 
-## <a name="module"></a>Module::Module
+## <a name="modulemodule"></a><a name="module"></a>Modül::Modül
 
-Yeni bir örneğini başlatır `Module` sınıfı.
+`Module` sınıfının yeni bir örneğini başlatır.
 
 ```cpp
 Module();
@@ -308,19 +310,19 @@ Module();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu oluşturucu korunur ve ile çağrılamaz `new` anahtar sözcüğü. Bunun yerine, ya da çağrı [Module::GetModule](#getmodule) veya [Module::Create](#create).
+Bu oluşturucu korunur ve `new` anahtar kelime ile çağrılamaz. Bunun yerine, [Modül::GetModule](#getmodule) veya [Modül::Oluştur'](#create)u arayın.
 
-## <a name="objectcount"></a>Module::objectCount_
+## <a name="moduleobjectcount_"></a><a name="objectcount"></a>Modül:objectCount_
 
-Kaç tane sınıfları ile oluşturulmuş izler [olun](make-function.md) işlevi.
+[Yap](make-function.md) işlevi yle kaç sınıf oluşturulduğunu izler.
 
 ```cpp
 volatile long objectCount_;
 ```
 
-## <a name="registercomobject"></a>Module::RegisterCOMObject
+## <a name="moduleregistercomobject"></a><a name="registercomobject"></a>Modül::RegisterCOMObject
 
-Diğer uygulamalar için bağlanabilmesi için bir veya daha fazla COM nesneleri kaydeder.
+Diğer uygulamaların bunlara bağlanabilmesi için bir veya daha fazla COM nesnesini kaydeder.
 
 ```cpp
 WRL_NOTHROW virtual HRESULT RegisterCOMObject(
@@ -333,34 +335,34 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*SunucuAdı*<br/>
-Bir sunucunun tam adı.
+*Sunucuadı*<br/>
+Bir sunucunun tam nitelikli adı.
 
-*CLSID*<br/>
-CLSID kaydetmek için bir dizi.
+*Clsıd*<br/>
+Kaydolmak için bir dizi CLSID.
 
-*fabrikaları*<br/>
-IUnknown arabirimi olan kullanılabilirlik yayımlanan sınıf nesnelerinin dizisi.
+*Fabrika*<br/>
+Kullanılabilirliği yayımlanmakta olan sınıf nesnelerinin Bilinmeyen arabirimleri dizisi.
 
-*Tanımlama bilgileri*<br/>
-İşlem tamamlandığında, kayıtlı olan bir sınıfı değerleri için işaretçiler dizisi nesneleri. Bu değerler daha sonra kullanılır kaydını iptal etme.
+*Kurabiye*<br/>
+İşlem tamamlandığında, sınıf nesneleri tanımlanan değerlere işaretçiler dizisi kaydedilir. Bu değerler daha sonra kaydı iptal etmek için kullanılır.
 
 *Sayısı*<br/>
-Kaydedilecek CLSID sayısı.
+Kaydolunacak CLSID sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK varsa saldırgan; Aksi takdirde, bir HRESULT nedenini belirten CO_E_OBJISREG gibi işlem başarısız oldu.
+S_OK eğer successfu; aksi takdirde, işlemin başarısız olmasının nedenini gösteren CO_E_OBJISREG gibi bir HRESULT olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-COM nesnelerinin CLSCTX numaralandırma CLSCTX_LOCAL_SERVER Numaralandırıcı ile kaydedilir.
+COM nesneleri CLSCTX numaralandırmaCLSCTX_LOCAL_SERVER numaralandırması ile kaydedilir.
 
-Kayıtlı nesneler için bağlantı türü, geçerli bir birleşimi tarafından belirtilen *comflag* şablon parametresi ile REGCLS numaralandırma REGCLS_SUSPENDED Numaralandırıcı.
+Kayıtlı nesnelere bağlantı türü, geçerli *comflag* şablon parametresi ve REGCLS numaralandırmasının REGCLS_SUSPENDED numaralandırmasının birleşimi ile belirtilir.
 
-## <a name="registerobjects"></a>Module::RegisterObjects
+## <a name="moduleregisterobjects"></a><a name="registerobjects"></a>Modül::RegisterObjects
 
-Diğer uygulamalar için bağlanabilmesi için COM veya Windows çalışma zamanı nesneleri kaydeder.
+Diğer uygulamaların bunlara bağlanabilmesi için COM veya Windows Runtime nesnelerini kaydeder.
 
 ```cpp
 HRESULT RegisterObjects(
@@ -370,19 +372,19 @@ HRESULT RegisterObjects(
 
 ### <a name="parameters"></a>Parametreler
 
-*module*<br/>
-COM veya Windows çalışma zamanı nesneleri dizisi.
+*Modülü*<br/>
+Bir dizi COM veya Windows Runtime nesnesi.
 
-*SunucuAdı*<br/>
+*Sunucuadı*<br/>
 Nesneleri oluşturan sunucunun adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, nedenini belirten bir HRESULT, işlem başarısız oldu.
+S_OK başarılı olursa; aksi takdirde, işlemin başarısız olmasının nedenini gösteren bir HRESULT olur.
 
-## <a name="registerwinrtobject"></a>Module::RegisterWinRTObject
+## <a name="moduleregisterwinrtobject"></a><a name="registerwinrtobject"></a>Modül:RegisterWinRTObject
 
-Diğer uygulamalar için bağlanabilmesi için bir veya daha fazla Windows çalışma zamanı nesneleri kaydeder.
+Diğer uygulamaların bunlara bağlanabilmesi için bir veya daha fazla Windows Runtime nesnesini kaydeder.
 
 ```cpp
 HRESULT RegisterWinRTObject(const wchar_t* serverName,
@@ -393,33 +395,33 @@ HRESULT RegisterWinRTObject(const wchar_t* serverName,
 
 ### <a name="parameters"></a>Parametreler
 
-*SunucuAdı*<br/>
-Bu işlemden etkilenen nesneler kümesini belirten bir ad.
+*Sunucuadı*<br/>
+Bu işlemden etkilenen nesnelerin bir alt kümesini belirten bir ad.
 
 *activatableClassIds*<br/>
-Kaydedilecek etkinleştirilebilir CLSID dizisi.
+Kaydolmak için etkinleştirilebilir CLSIDs bir dizi.
 
-*Tanımlama bilgisi*<br/>
-Kaydedilen sınıf nesneleri tanımlayan bir değer. Bu değer daha sonra kaydı iptal etmek için kullanılır.
+*Çerez*<br/>
+Kayıtlı sınıf nesnelerini tanımlayan bir değer. Bu değer daha sonra kaydı iptal etmek için kullanılır.
 
 *Sayısı*<br/>
-Kaydedilecek nesne sayısı.
+Kaydolunacak nesne sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde bir hata HRESULT nedenini belirten CO_E_OBJISREG gibi işlem başarısız oldu.
+S_OK başarılı olursa; aksi takdirde, işlemin başarısız olmasının nedenini gösteren CO_E_OBJISREG gibi bir hata HRESULT olur.
 
-## <a name="releasenotifier"></a>Module::releaseNotifier_
+## <a name="modulereleasenotifier_"></a><a name="releasenotifier"></a>Modül:releaseNotifier_
 
-Bir işaretçi tutan bir `ReleaseNotifier` nesne.
+Bir `ReleaseNotifier` nesneye işaretçi tutar.
 
 ```cpp
 ReleaseNotifier *releaseNotifier_;
 ```
 
-## <a name="terminate"></a>Module::Terminate
+## <a name="moduleterminate"></a><a name="terminate"></a>Modül::Sonlandırma
 
-Kapatmak için modülü tarafından oluşturulan tüm fabrikaları neden olur.
+Modül tarafından anında kapatılan tüm fabrikaların kapanmasına neden olur.
 
 ```cpp
 void Terminate();
@@ -427,11 +429,11 @@ void Terminate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Önbellek Fabrikalar serbest bırakır.
+Önbellekteki fabrikaları serbest bırakır.
 
-## <a name="unregistercomobject"></a>Module::UnregisterCOMObject
+## <a name="moduleunregistercomobject"></a><a name="unregistercomobject"></a>Modül::UnregisterCOMObject
 
-Bir veya daha fazla COM nesneleri, diğer uygulamalar için bağlanmasını engelleyen kaydını siler.
+Diğer uygulamaların bunlara bağlanmasını engelleyen bir veya daha fazla COM nesnesini kaydeder.
 
 ```cpp
 virtual HRESULT UnregisterCOMObject(
@@ -442,22 +444,22 @@ virtual HRESULT UnregisterCOMObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*SunucuAdı*<br/>
+*Sunucuadı*<br/>
 (Kullanılmayan)
 
-*Tanımlama bilgileri*<br/>
-Sınıf nesneleri silinmesine izin değerleri için işaretçiler dizisi. Dizi tarafından oluşturulan [RegisterCOMObject](#registercomobject) yöntemi.
+*Kurabiye*<br/>
+Sınıf nesnelerinin kaydedilmemiş olmasını tanımlayan değerlere işaretçiler dizisi. Dizi [RegisterCOMObject](#registercomobject) yöntemi tarafından oluşturuldu.
 
 *Sayısı*<br/>
-Sınıfların kaydını sayısı.
+Kayıt tanıtırılacak sınır sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu işlem başarılı olursa S_OK; Aksi takdirde bir hata nedenini belirten HRESULT işlemi başarısız oldu.
+Bu işlem başarılı olursa S_OK; aksi takdirde, işlemin başarısız olmasının nedenini gösteren bir hata HRESULT olur.
 
-## <a name="unregisterobjects"></a>Module::UnregisterObjects
+## <a name="moduleunregisterobjects"></a><a name="unregisterobjects"></a>Modül::Kayıt Dışı Nesneler
 
-Diğer uygulamalar için bağlantı nesneleri belirtilen modüldeki kaydını siler.
+Diğer uygulamaların bunlara bağlanamaması için belirtilen modüldeki nesneleri kaydeder.
 
 ```cpp
 HRESULT UnregisterObjects(
@@ -467,19 +469,19 @@ HRESULT UnregisterObjects(
 
 ### <a name="parameters"></a>Parametreler
 
-*module*<br/>
-Bir modül için işaretçi.
+*Modülü*<br/>
+Bir modüliçin işaretçi.
 
-*SunucuAdı*<br/>
-Bu işlemden etkilenen nesneler kümesini belirtir uygun bir ad.
+*Sunucuadı*<br/>
+Bu işlemden etkilenen nesnelerin bir alt kümesini belirten nitelikli bir ad.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu işlem başarılı olursa S_OK; Aksi takdirde bir hata nedenini belirten HRESULT bu işlemi başarısız oldu.
+Bu işlem başarılı olursa S_OK; aksi takdirde, bu işlemin başarısız olmasının nedenini gösteren bir hata HRESULT olur.
 
-## <a name="unregisterwinrtobject"></a>Module::UnregisterWinRTObject
+## <a name="moduleunregisterwinrtobject"></a><a name="unregisterwinrtobject"></a>Modül::Kayıt DışıWinRTObject
 
-Böylece diğer uygulamalar için bağlanılamıyor veya daha fazla Windows çalışma zamanı nesne kaydını siler.
+Diğer uygulamaların bunlara bağlanamaması için bir veya daha fazla Windows Runtime nesnesini unregisters.
 
 ```cpp
 virtual HRESULT UnregisterWinRTObject(
@@ -490,5 +492,5 @@ virtual HRESULT UnregisterWinRTObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*Tanımlama bilgisi*<br/>
-Kaydını iptal edilmesine izin sınıfı nesne tanımlayan bir değer için bir işaretçi.
+*Çerez*<br/>
+Kaydı iptal edilecek sınıf nesnesini tanımlayan bir değeriçin işaretçi.

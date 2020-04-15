@@ -1,8 +1,9 @@
 ---
 title: _set_new_handler
-ms.date: 11/04/2016
+ms.date: 4/2/2020
 api_name:
 - _set_new_handler
+- _o__set_new_handler
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -15,6 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0
 api_type:
 - DLLExport
 topic_type:
@@ -28,16 +30,16 @@ helpviewer_keywords:
 - error handling
 - transferring control to error handler
 ms.assetid: 1d1781b6-5cf8-486a-b430-f365e0bb023f
-ms.openlocfilehash: a1f340887efd657dd9ff9bf219534d77fdd90aa3
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c3f1b9bd8bf2a4404e2239858e4c3c59b755bacd
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948466"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81332370"
 ---
 # <a name="_set_new_handler"></a>_set_new_handler
 
-**Yeni** operatör bellek ayıramazsa, denetimi hata işleme mekanizmanıza aktarır.
+**Yeni** işleç bellek tahsis etmezse denetimi hata işleme mekanizmanıza aktarın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,24 +50,26 @@ _PNH _set_new_handler( _PNH pNewHandler );
 ### <a name="parameters"></a>Parametreler
 
 *pNewHandler*<br/>
-Uygulama tarafından sağlanan bellek işleme işlevine yönelik işaretçi. 0 bağımsız değişkeni, yeni işleyicinin kaldırılmasına neden olur.
+Uygulama tarafından sağlanan bellek işleme işlevini işaretçi. 0 bağımsız değişkeni yeni işleyicinin kaldırılmasına neden olur.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceki işlevin daha sonra geri yüklenebilmesi için **_set_new_handler**tarafından kaydedilen önceki özel durum işleme işlevine yönelik bir işaretçi döndürür. Önceki bir işlev ayarlanmamışsa, varsayılan davranışı geri yüklemek için dönüş değeri kullanılabilir; Bu değer **null**olabilir.
+Önceki işlevin daha sonra geri yüklenabilmesi **için, _set_new_handler**tarafından kayıtlı önceki özel durum işleme işlevine bir işaretçiyi döndürür. Önceki işlev ayarlanmadıysa, iade değeri varsayılan davranışı geri yüklemek için kullanılabilir; bu değer **NULL**olabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ **_Set_new_handler** işlevi, **Yeni** operatör bellek ayıramazsa denetimi karşılayan bir özel durum işleme işlevi belirtir. **Yeni** işlem başarısız olursa, çalışma zamanı sistemi otomatik olarak **_set_new_handler**için bir bağımsız değişken olarak geçirilen özel durum işleme işlevini çağırır. New. h içinde tanımlanan **_Pnh**, **int** türünde bir bağımsız değişken getiren ve **size_t**türünde bir bağımsız değişken alan bir işlev işaretçisidir. Ayrılacak alan miktarını belirtmek için **size_t** kullanın.
+C++ **_set_new_handler** işlevi, **yeni** işleç bellek ayırmayı başamazsa denetimi ele alan bir özel durum işleme işlevi belirtir. **Yeni** başarısız olursa, çalışma zamanı sistemi otomatik olarak **_set_new_handler**için bir bağımsız değişken olarak geçirilen özel durum işleme işlevini çağırır. **_PNH,** New.h tanımlanan, türü **int** döndürür ve tür **size_t**bir argüman alır bir işlev için bir işaretçi. Tahsis edilecek alan miktarını belirtmek için **size_t** kullanın.
 
 Varsayılan işleyici yok.
 
-**_set_new_handler** aslında bir atık toplama düzenidir. İşleviniz sıfır dışında bir değer döndürdüğünde çalışma zamanı sistemi yeniden deneme süresi ayırması, işleviniz 0 döndürürse başarısız olur.
+**_set_new_handler** aslında bir çöp toplama şemasıdır. Çalışma zamanı sistem ayırmayı, işleviniz her sıfır olmayan bir değeri döndürür ve işleviniz 0'ı döndürürse başarısız olur.
 
-Bir programdaki **_set_new_handler** işlevinin bir oluşumu, bağımsız değişken listesinde belirtilen özel durum işleme işlevini çalışma zamanı sistemiyle kaydeder:
+Programdaki **_set_new_handler** işlevinin oluşması, bağımsız değişken listesinde belirtilen özel durum işleme işlevini çalışma zamanı sistemine kaydeder:
 
 ```cpp
 // set_new_handler1.cpp
+By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+
 #include <new.h>
 
 int handle_program_memory_depletion( size_t )
@@ -80,7 +84,7 @@ int main( void )
 }
 ```
 
-En son **_set_new_handler** işlevine geçirilen işlev adresini kaydedebilir ve daha sonra yeniden devreye girebilirsiniz:
+**_set_new_handler** işlevine en son geçirilen işlev adresini kaydedebilir ve daha sonra eski haline getirebilirsiniz:
 
 ```cpp
    _PNH old_handler = _set_new_handler( my_handler );
@@ -91,31 +95,31 @@ En son **_set_new_handler** işlevine geçirilen işlev adresini kaydedebilir ve
    // . . .
 ```
 
-C++ [_Set_new_mode](set-new-mode.md) işlevi, [malloc](malloc.md)için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'in, **_set_new_handler**tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını aynı nedenden dolayı başarısız olduğunda **Yeni işlecin yaptığı** şekilde çağırır. Varsayılanı geçersiz kılmak için şunu çağırın:
+C++ [_set_new_mode](set-new-mode.md) işlevi [malloc](malloc.md)için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata, **malloc** **_set_new_handler**tarafından ayarlanan yeni işleyici yordamı aramak olup olmadığını gösterir. Varsayılan olarak, **malloc** bellek tahsis başarısız yeni işleyici yordamı aramaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayırmayı başaramayınca, **malloc** **yeni** işleyici yordamını yeni işlecinin aynı nedenle başarısız olduğu gibi çağırır. Varsayılanı geçersiz kılmak için şu çağrıyı
 
 ```cpp
 _set_new_mode(1);
 ```
 
-programınızın başlarında veya NewMode. obj ile bağlantılandırın.
+programınızın erken veya Newmode.obj ile bağlantı.
 
-Kullanıcı tanımlı `operator new` bir sağlanmışsa, yeni işleyici işlevleri hata durumunda otomatik olarak çağrılmaz.
+Kullanıcı tanımlı `operator new` bir sağlanırsa, yeni işleyici işlevleri otomatik olarak hata çağrılmaz.
 
-Daha fazla bilgi için bkz.  *C++ dil başvurusunda* [Yeni](../../cpp/new-operator-cpp.md) ve [Sil](../../cpp/delete-operator-cpp.md) .
+Daha fazla bilgi için *C++ Dil*Referansı'nda [yeni](../../cpp/new-operator-cpp.md) ve [silme](../../cpp/delete-operator-cpp.md) ye bakın.
 
-Dinamik olarak bağlı tüm dll 'Ler veya yürütülebilir dosyalar için tek bir **_set_new_handler** işleyicisi vardır; **_set_new_handler** çağırsanız bile işleyiciniz başka bir dll veya yürütülebilir dosya tarafından ayarlanmış bir işleyiciyi değiştirmiş olabilir.
+Tüm dinamik olarak birbirine bağlı DL'ler veya çalıştırılabilir ler için tek bir **_set_new_handler** işleyicisi vardır; **_set_new_handler** çağırsanız bile işleyiciniz başka bir dll veya çalıştırılabilir tarafından ayarlanmış bir işleyiciyi değiştirebilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_new_handler**|\<Yeni. h >|
+|**_set_new_handler**|\<new.h>|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, ayırma başarısız olduğunda denetim MyNewHandler 'a aktarılır. MyNewHandler öğesine geçirilen bağımsız değişken istenen bayt sayısıdır. MyNewHandler 'tan döndürülen değer ayırmanın yeniden denenip denenmeyeceğini belirten bir bayrak olur: sıfır dışında bir değer ayırmanın yeniden deneneceği ve sıfır değerinde ayırmanın başarısız olduğunu gösterir.
+Bu örnekte, ayırma başarısız olduğunda, denetim MyNewHandler aktarılır. MyNewHandler'a geçirilen bağımsız değişken, istenen bayt sayısıdır. MyNewHandler'dan döndürülen değer, ayırmanın yeniden denenip denemeyeceğini belirten bir bayraktır: sıfır olmayan bir değer ayırmanın yeniden denenmesi gerektiğini gösterir ve sıfır değer ayırmanın başarısız olduğunu gösterir.
 
 ```cpp
 // crt_set_new_handler.cpp
@@ -167,5 +171,5 @@ Please contact the application's support team for more information.
 
 [Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
-[free](free.md)<br/>
+[Ücret -siz](free.md)<br/>
 [realloc](realloc.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: CMFCListCtrl sınıfı
+title: CMFCListCtrl Sınıfı
 ms.date: 07/30/2019
 f1_keywords:
 - CMFCListCtrl
@@ -28,16 +28,16 @@ helpviewer_keywords:
 - CMFCListCtrl [MFC], SetSortColumn
 - CMFCListCtrl [MFC], Sort
 ms.assetid: 50d16aee-138c-4f34-8690-cb75d544ef2e
-ms.openlocfilehash: 599a00af28ee5b8effbabbe5b334022ceb49f91a
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 63fbfd236ed98eee3b90f4a20b191817026903c7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420318"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370767"
 ---
-# <a name="cmfclistctrl-class"></a>CMFCListCtrl sınıfı
+# <a name="cmfclistctrl-class"></a>CMFCListCtrl Sınıfı
 
-`CMFCListCtrl` sınıfı, [CMFCHeaderCtrl sınıfının](../../mfc/reference/cmfcheaderctrl-class.md)gelişmiş üstbilgi denetimi Işlevini destekleyerek [clienstctrl Class](../../mfc/reference/clistctrl-class.md) sınıfının işlevselliğini genişletir.
+Sınıf `CMFCListCtrl` [CMFCHeaderCtrl Sınıfıgelişmiş](../../mfc/reference/cmfcheaderctrl-class.md)üstbilgi denetimi işlevselliğini destekleyerek [CListCtrl Sınıf](../../mfc/reference/clistctrl-class.md) sınıfının işlevselliğini genişletir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,50 +49,50 @@ class CMFCListCtrl : public CListCtrl
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCListCtrl:: EnableMarkSortedColumn](#enablemarksortedcolumn)|Sıralanmış bir sütunu farklı bir arka plan rengiyle işaretleyebilme olanağı tanır.|
-|[CMFCListCtrl:: EnableMultipleSort](#enablemultiplesort)|Birden çok sıralama moduna izin vermez.|
-|[CMFCListCtrl:: GetHeaderCtrl](#getheaderctrl)|Altı çizili üstbilgi denetimine bir başvuru döndürür.|
-|[CMFCListCtrl:: Ismultiplesıralaması](#ismultiplesort)|Liste denetiminin birden çok sıralama modunda olup olmadığını denetler.|
-|[CMFCListCtrl:: OnCompareItems](#oncompareitems)|İki liste denetim öğesini karşılaştırmanız gerektiğinde Framework tarafından çağırılır.|
-|[CMFCListCtrl:: OnGetCellBkColor](#ongetcellbkcolor)|Tek bir hücrenin arka plan rengini belirlemesi gerektiğinde Framework tarafından çağırılır.|
-|[CMFCListCtrl:: OnGetCellFont](#ongetcellfont)|Çizilemekte olan hücrenin yazı tipini alması gereken Framework tarafından çağırılır.|
-|[CMFCListCtrl:: OnGetCellTextColor](#ongetcelltextcolor)|Tek bir hücrenin metin rengini belirlemesi gerektiğinde Framework tarafından çağırılır.|
-|[CMFCListCtrl:: RemoveSortColumn](#removesortcolumn)|Sıralanmış sütunlar listesinden bir sıralama sütununu kaldırır.|
-|[CMFCListCtrl:: SetSortColumn](#setsortcolumn)|Geçerli sıralanmış sütunu ve sıralama düzenini ayarlar.|
-|[CMFCListCtrl:: Sort](#sort)|Liste denetimini sıralar.|
+|[CMFCListCtrl::EnableMarkSortedColumn](#enablemarksortedcolumn)|Sıralanmış bir sütunu farklı bir arka plan rengiyle işaretleme olanağı sağlar.|
+|[CMFCListCtrl::EnableMultipleSort](#enablemultiplesort)|Birden çok sıralama modunu etkinleştirer.|
+|[CMFCListCtrl::GetHeaderCtrl](#getheaderctrl)|Altı çizili üstbilgi denetimine bir başvuru verir.|
+|[CMFCListCtrl::IsMultipleSort](#ismultiplesort)|Liste denetiminin birden çok sıralama modunda olup olmadığını denetler.|
+|[CMFCListCtrl::OnCompareItems](#oncompareitems)|İki liste denetim öğesini karşılaştırması gerektiğinde çerçeve tarafından çağrılır.|
+|[CMFCListCtrl::OnGetCellBkColor](#ongetcellbkcolor)|Tek bir hücrenin arka plan rengini belirlemesi gerektiğinde çerçeve tarafından çağrılır.|
+|[CMFCListCtrl::OnGetCellFont](#ongetcellfont)|Çizilen hücre için yazı tipini alması gerektiğinde çerçeve tarafından çağrılır.|
+|[CMFCListCtrl::OnGetCellTextColor](#ongetcelltextcolor)|Tek bir hücrenin metin rengini belirlemesi gerektiğinde çerçeve tarafından çağrılır.|
+|[CMFCListCtrl::RemoveSortColumn](#removesortcolumn)|Sıralanmış sütunlar listesinden bir sıralama sütunu kaldırır.|
+|[CMFCListCtrl::SetSortSütun](#setsortcolumn)|Geçerli sıralanmış sütunu ve sıralama sırasını ayarlar.|
+|[CMFCListCtrl::Sırala](#sort)|Liste denetimini sıralar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMFCListCtrl` [Clienstctrl sınıf](../../mfc/reference/clistctrl-class.md) sınıfında iki geliştirme sunar. İlk olarak, üst bilgide bir sıralama okunu otomatik olarak çizerek sütun sıralamanın kullanılabilir bir seçenek olduğunu gösterir. İkincisi, aynı anda birden çok sütunda veri sıralamayı destekler.
+`CMFCListCtrl`[CListCtrl Sınıf](../../mfc/reference/clistctrl-class.md) sınıfına iki geliştirme sunar. İlk olarak, sütun sıralama nın üstbilginin üzerine otomatik olarak bir sıralama oku çizerek kullanılabilir bir seçenek olduğunu gösterir. İkinci olarak, aynı anda birden çok sütunda veri sıralamadestekler.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCListCtrl` sınıfında çeşitli yöntemlerin nasıl kullanıldığını gösterir. Örnek, bir liste denetimi oluşturma, sütun ekleme, öğe ekleme, öğe metin ayarlama ve liste denetiminin yazı tipini ayarlama işlemlerinin nasıl yapılacağını gösterir. Bu kod parçacığı, [Visual Studio Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfta çeşitli yöntemlerin `CMFCListCtrl` nasıl kullanılacağını göstermektedir. Örnek, liste denetiminin nasıl oluşturulup sütun lar ekleyip, öğeler eklenin, bir öğenin metnini nasıl ayarlayıp liste denetiminin yazı tipini ayarlayabilirsiniz. Bu kod snippet [Visual Studio Demo örnek](../../overview/visual-cpp-samples.md)parçasıdır.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#25](../../mfc/codesnippet/cpp/cmfclistctrl-class_1.h)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#26](../../mfc/codesnippet/cpp/cmfclistctrl-class_2.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CListCtrl](../../mfc/reference/clistctrl-class.md)
+[Clistctrl](../../mfc/reference/clistctrl-class.md)
 
 [CMFCListCtrl](../../mfc/reference/cmfclistctrl-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxlistctrl. h
+**Üstbilgi:** afxlistctrl.h
 
-##  <a name="enablemarksortedcolumn"></a>CMFCListCtrl:: EnableMarkSortedColumn
+## <a name="cmfclistctrlenablemarksortedcolumn"></a><a name="enablemarksortedcolumn"></a>CMFCListCtrl::EnableMarkSortedColumn
 
-Sıralanan sütunları farklı bir arka plan rengiyle işaretler.
+Sıralanmış sütunları farklı bir arka plan rengiyle işaretler.
 
 ```
 void EnableMarkSortedColumn(
@@ -102,19 +102,19 @@ void EnableMarkSortedColumn(
 
 ### <a name="parameters"></a>Parametreler
 
-*bMark*<br/>
-'ndaki Farklı bir arka plan renginin etkinleştirilip etkinleştirilmeyeceğini belirleyen bir Boolean parametresi.
+*bİşaret*<br/>
+[içinde] Farklı bir arka plan rengini etkinleştirip etkinleştirmeyeceğini belirleyen boolean parametresi.
 
 *bRedraw*<br/>
-'ndaki Denetimin hemen yeniden çizilip çizmeyeceğini belirleyen bir Boolean parametresi.
+[içinde] Denetimi hemen yeniden çizip yeniden çizmeyeceğini belirleyen bir Boolean parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`EnableMarkSortedColumn`, sıralanan sütunlarda kullanılacak rengi hesaplamak için `CDrawingManager::PixelAlpha` yöntemini kullanır. Çekilen renk, normal arka plan rengine göre belirlenir.
+`EnableMarkSortedColumn`sıralanmış `CDrawingManager::PixelAlpha` sütunlar için hangi rengin kullanılacağını hesaplamak için yöntemi kullanır. Alınan renk normal arka plan rengine bağlıdır.
 
-##  <a name="enablemultiplesort"></a>CMFCListCtrl:: EnableMultipleSort
+## <a name="cmfclistctrlenablemultiplesort"></a><a name="enablemultiplesort"></a>CMFCListCtrl::EnableMultipleSort
 
-Liste denetimindeki veri satırlarını birden çok sütuna göre sıralamaya izin vermez.
+Liste denetimindeki veri satırlarını birden çok sütuna göre sıralamayı sağlar.
 
 ```
 void EnableMultipleSort(BOOL bEnable = TRUE);
@@ -122,16 +122,16 @@ void EnableMultipleSort(BOOL bEnable = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bEnable*<br/>
-'ndaki Birden çok sütunlu sıralama modunun etkinleştirilip etkinleştirilmeyeceğini belirten bir Boole değeri.
+*bEtkinleştir*<br/>
+[içinde] Birden çok sütun sıralama modunu etkinleştirip etkinleştirmeyeceğini belirten bir Boolean.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sıralamayı birden çok sütuna göre etkinleştirdiğinizde, sütunların bir hiyerarşisi vardır. Verilerin satırları ilk olarak birincil sütuna göre sıralanır. Bundan sonra eşdeğer değerler, öncelik temelinde izleyen her sütuna göre sıralanır.
+Birden çok sütuna göre sıralamayı etkinleştirdiğinizde, sütunların bir hiyerarşisi var. Veri satırları ilk olarak birincil sütuna göre sıralanır. Eşdeğer değerler daha sonra öncelik esas alınarak sonraki her sütuna göre sıralanır.
 
-##  <a name="getheaderctrl"></a>CMFCListCtrl:: GetHeaderCtrl
+## <a name="cmfclistctrlgetheaderctrl"></a><a name="getheaderctrl"></a>CMFCListCtrl::GetHeaderCtrl
 
-Üstbilgi denetimine bir başvuru döndürür.
+Üstbilgi denetimine bir başvuru verir.
 
 ```
 virtual CMFCHeaderCtrl& GetHeaderCtrl();
@@ -139,15 +139,15 @@ virtual CMFCHeaderCtrl& GetHeaderCtrl();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel alınan [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctrl-class.md) nesnesine bir başvuru.
+Altta yatan [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctrl-class.md) nesnesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste denetimi için üst bilgi denetimi, sütunların başlıklarını içeren penceresidir. Genellikle sütunların üzerinde doğrudan konumlandırılır.
+Liste denetimi için üstbilgi denetimi, sütunların başlıklarını içeren penceredir. Genellikle sütunların hemen üzerinde konumlandırılır.
 
-##  <a name="ismultiplesort"></a>CMFCListCtrl:: Ismultiplesıralaması
+## <a name="cmfclistctrlismultiplesort"></a><a name="ismultiplesort"></a>CMFCListCtrl::IsMultipleSort
 
-Liste denetiminin Şu anda birden çok sütunda sıralamayı destekleyip desteklemediğini denetler.
+Liste denetiminin şu anda birden çok sütunda sıralamayı destekleyip desteklemediğini denetler.
 
 ```
 BOOL IsMultipleSort() const;
@@ -155,15 +155,15 @@ BOOL IsMultipleSort() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste denetimi birden çok sıralamayı destekliyorsa doğru. Aksi takdirde FALSE.
+Liste denetimi birden çok sıralamayı destekliyorsa DOĞRU; YANLIŞ aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir [CMFCListCtrl sınıfı](../../mfc/reference/cmfclistctrl-class.md) birden çok sıralamayı desteklediğinde, Kullanıcı liste denetimindeki verileri birden çok sütuna göre sıralayabilir. Birden çok sıralamayı etkinleştirmek için [CMFCListCtrl:: EnableMultipleSort](#enablemultiplesort)komutunu çağırın.
+[CMFCListCtrl Sınıfı](../../mfc/reference/cmfclistctrl-class.md) birden çok sıralamayı desteklediğinde, kullanıcı liste denetimindeki verileri birden çok sütuna göre sıralayabilir. Birden çok sıralamayı etkinleştirmek için [CMFCListCtrl'i arayın::MultipleSort'u etkinleştirin.](#enablemultiplesort)
 
-##  <a name="oncompareitems"></a>CMFCListCtrl:: OnCompareItems
+## <a name="cmfclistctrloncompareitems"></a><a name="oncompareitems"></a>CMFCListCtrl::OnCompareItems
 
-Framework iki öğeyi karşılaştırırken bu yöntemi çağırır.
+Çerçeve, iki öğeyi karşıladığında bu yöntemi çağırır.
 
 ```
 virtual int OnCompareItems(
@@ -175,23 +175,23 @@ virtual int OnCompareItems(
 ### <a name="parameters"></a>Parametreler
 
 *lParam1*<br/>
-'ndaki Karşılaştırılacak ilk öğe.
+[içinde] Karşılaştırılacak ilk öğe.
 
 *lParam2*<br/>
-'ndaki Karşılaştırılacak ikinci öğe.
+[içinde] Karşılaştırılacak ikinci öğe.
 
-*ıolumn*<br/>
-'ndaki Bu yöntemin sıralama yaptığınız sütunun dizini.
+*ıcolumn*<br/>
+[içinde] Bu yöntemin sıraladığını sütunun dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İki öğenin göreli konumunu gösteren bir tamsayı. Negatif bir değer, ilk öğenin ikinciden önce gelmesi gerektiğini gösterir, pozitif bir değer ilk öğenin ikincisini izlemesi gerektiğini, sıfır ise iki öğenin eşdeğer olduğu anlamına gelir.
+İki öğenin göreli konumunu gösteren bir sonsayı. Negatif değer, ilk öğenin ikinci maddeden önce olması gerektiğini gösterir, pozitif değer ilk öğenin ikinci öğeyi izlemesi gerektiğini gösterir ve sıfır iki öğenin eşdeğer olduğu anlamına gelir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Varsayılan uygulama her zaman 0 döndürür. Kendi sıralama algoritmanızı sağlamak için bu işlevi geçersiz kılın.
 
-##  <a name="ongetcellbkcolor"></a>CMFCListCtrl:: OnGetCellBkColor
+## <a name="cmfclistctrlongetcellbkcolor"></a><a name="ongetcellbkcolor"></a>CMFCListCtrl::OnGetCellBkColor
 
 Çerçeve, tek bir hücrenin arka plan rengini belirlemesi gerektiğinde bu yöntemi çağırır.
 
@@ -203,23 +203,23 @@ virtual COLORREF OnGetCellBkColor(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nsatır*<br/>
-'ndaki Söz konusu hücrenin satırı.
+*nSatır*<br/>
+[içinde] Söz konusu hücrenin sırası.
 
-*Nsütun*<br/>
-'ndaki Söz konusu hücrenin sütunu.
+*nSütun*<br/>
+[içinde] Söz konusu hücrenin sütunu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hücrenin arka plan rengini belirten bir birlikte bulunan başvuru değeri.
+Hücrenin arka plan rengini belirten bir COLOREF değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`OnGetCellBkColor` varsayılan uygulanması, sağlanan giriş parametrelerini kullanmaz ve bunun yerine `GetBkColor`çağırır. Bu nedenle, varsayılan olarak tüm liste denetimi aynı arka plan rengine sahip olur. Tek tek hücreleri ayrı bir arka plan rengiyle işaretlemek için türetilmiş bir sınıftaki `OnGetCellBkColor` geçersiz kılabilirsiniz.
+Varsayılan uygulama `OnGetCellBkColor` sağlanan giriş parametrelerini kullanmaz ve `GetBkColor`bunun yerine sadece çağırır. Bu nedenle, varsayılan olarak, tüm liste denetimi aynı arka plan renge sahip olacaktır. Hücreleri ayrı `OnGetCellBkColor` bir arka plan rengiyle işaretlemek için türetilmiş bir sınıfta geçersiz kılabilirsiniz.
 
-##  <a name="ongetcellfont"></a>CMFCListCtrl:: OnGetCellFont
+## <a name="cmfclistctrlongetcellfont"></a><a name="ongetcellfont"></a>CMFCListCtrl::OnGetCellFont
 
-Çerçeve, tek bir hücrenin yazı tipini aldığında bu yöntemi çağırır.
+Çerçeve, tek bir hücre için yazı tipi elde ettiğinde bu yöntemi çağırır.
 
 ```
 virtual HFONT OnGetCellFont(
@@ -230,24 +230,24 @@ virtual HFONT OnGetCellFont(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nsatır*<br/>
-'ndaki Söz konusu hücrenin satırı.
+*nSatır*<br/>
+[içinde] Söz konusu hücrenin sırası.
 
-*Nsütun*<br/>
-'ndaki Söz konusu hücrenin sütunu.
+*nSütun*<br/>
+[içinde] Söz konusu hücrenin sütunu.
 
-*dwData*<br/>
-'ndaki Kullanıcı tanımlı veriler. Varsayılan uygulama bu parametreyi kullanmaz.
+*Dwdata*<br/>
+[içinde] Kullanıcı tanımlı veriler. Varsayılan uygulama bu parametreyi kullanmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli hücre için kullanılan yazı tipine yönelik bir tanıtıcı.
+Geçerli hücre için kullanılan yazı tipiiçin bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem NULL değerini döndürür. Liste denetimindeki tüm hücreler aynı yazı tipine sahip. Farklı hücrelere farklı yazı tipleri sağlamak için bu yöntemi geçersiz kılın.
+Varsayılan olarak, bu yöntem NULL döndürür. Liste denetimindeki tüm hücreler aynı yazı tipine sahiptir. Farklı hücreler için farklı yazı tipleri sağlamak için bu yöntemi geçersiz kılın.
 
-##  <a name="ongetcelltextcolor"></a>CMFCListCtrl:: OnGetCellTextColor
+## <a name="cmfclistctrlongetcelltextcolor"></a><a name="ongetcelltextcolor"></a>CMFCListCtrl::OnGetCellTextColor
 
 Çerçeve, tek bir hücrenin metin rengini belirlemesi gerektiğinde bu yöntemi çağırır.
 
@@ -259,23 +259,23 @@ virtual COLORREF OnGetCellTextColor(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nsatır*<br/>
-'ndaki Söz konusu hücrenin satırı.
+*nSatır*<br/>
+[içinde] Söz konusu hücrenin sırası.
 
-*Nsütun*<br/>
-'ndaki Söz konusu hücrenin sütunu.
+*nSütun*<br/>
+[içinde] Söz konusu hücrenin sütunu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hücrenin metin rengini belirten bir birlikte bulunan başvuru değeri.
+Hücrenin metin rengini belirten bir COLOREF değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem giriş parametrelerinden bağımsız olarak `GetTextColor` çağırır. Tüm liste denetimi aynı metin rengine sahip olur. Tek tek hücreleri ayrı bir metin rengiyle işaretlemek için türetilmiş bir sınıftaki `OnGetCellTextColor` geçersiz kılabilirsiniz.
+Varsayılan olarak, bu `GetTextColor` yöntem giriş parametreleri ne olursa olsun çağırır. Tüm liste denetimi aynı metin renge sahip olacaktır. Hücreleri ayrı `OnGetCellTextColor` bir metin rengiyle tek tek işaretlemek için türetilmiş bir sınıfta geçersiz kılabilirsiniz.
 
-##  <a name="removesortcolumn"></a>CMFCListCtrl:: RemoveSortColumn
+## <a name="cmfclistctrlremovesortcolumn"></a><a name="removesortcolumn"></a>CMFCListCtrl::RemoveSortColumn
 
-Sıralanmış sütunlar listesinden bir sıralama sütununu kaldırır.
+Sıralanmış sütunlar listesinden bir sıralama sütunu kaldırır.
 
 ```
 void RemoveSortColumn(int iColumn);
@@ -283,16 +283,16 @@ void RemoveSortColumn(int iColumn);
 
 ### <a name="parameters"></a>Parametreler
 
-*ıolumn*<br/>
-'ndaki Kaldırılacak sütun.
+*ıcolumn*<br/>
+[içinde] Kaldırılacak sütun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, üst bilgi denetiminden bir sıralama sütununu kaldırır. [CMFCHeaderCtrl:: RemoveSortColumn](../../mfc/reference/cmfcheaderctrl-class.md#removesortcolumn)öğesini çağırır.
+Bu yöntem üstbilgi denetiminden bir sıralama sütunu kaldırır. BU [CMFCHeaderCtrl çağırır::RemoveSortColumn](../../mfc/reference/cmfcheaderctrl-class.md#removesortcolumn).
 
-##  <a name="setsortcolumn"></a>CMFCListCtrl:: SetSortColumn
+## <a name="cmfclistctrlsetsortcolumn"></a><a name="setsortcolumn"></a>CMFCListCtrl::SetSortSütun
 
-Geçerli sıralanmış sütunu ve sıralama düzenini ayarlar.
+Geçerli sıralanmış sütunu ve sıralama sırasını ayarlar.
 
 ```
 void SetSortColumn(
@@ -303,20 +303,20 @@ void SetSortColumn(
 
 ### <a name="parameters"></a>Parametreler
 
-*ıolumn*<br/>
-'ndaki Sıralanacak sütun.
+*ıcolumn*<br/>
+[içinde] Sıralamak için sütun.
 
-*Bascbitiriliyor*<br/>
-'ndaki Sıralama düzenini belirten bir Boole değeri.
+*bArtan*<br/>
+[içinde] Sıralama sırasını belirten bir Boolean.
 
-*bAdd*<br/>
-'ndaki Yöntemin, *ıolumn* tarafından belirtilen sütunu sıralama sütunları listesine ekleyip eklememeyeceğini belirten bir Boole değeri.
+*Baran*<br/>
+[içinde] Yöntemin *iColumn* tarafından gösterilen sütunu sıralama sütunları listesine ekleyip eklemediğini belirten bir Boolean.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [CMFCHeaderCtrl:: SetSortColumn](../../mfc/reference/cmfcheaderctrl-class.md#setsortcolumn)metodunu kullanarak giriş parametrelerini üstbilgi denetimine geçirir.
+Bu yöntem [cmfcheaderCtrl::SetSortColumn](../../mfc/reference/cmfcheaderctrl-class.md#setsortcolumn)yöntemini kullanarak giriş parametrelerini üstbilgi denetimine geçirir.
 
-##  <a name="sort"></a>CMFCListCtrl:: Sort
+## <a name="cmfclistctrlsort"></a><a name="sort"></a>CMFCListCtrl::Sırala
 
 Liste denetimini sıralar.
 
@@ -329,14 +329,14 @@ virtual void Sort(
 
 ### <a name="parameters"></a>Parametreler
 
-*ıolumn*<br/>
-'ndaki Sıralanacak sütun.
+*ıcolumn*<br/>
+[içinde] Sıralamak için sütun.
 
-*Bascbitiriliyor*<br/>
-'ndaki Sıralama düzenini belirten bir Boole değeri.
+*bArtan*<br/>
+[içinde] Sıralama sırasını belirten bir Boolean.
 
-*bAdd*<br/>
-'ndaki Bu yöntemin, *ıolumn* tarafından belirtilen sütunu sıralama sütunları listesine ekleyip eklememeyeceğini belirten bir Boole değeri.
+*Baran*<br/>
+[içinde] Bu yöntemin *iColumn* tarafından gösterilen sütunu sıralama sütunları listesine ekleyip eklemediğini belirten bir Boolean.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

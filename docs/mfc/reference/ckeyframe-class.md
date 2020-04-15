@@ -1,5 +1,5 @@
 ---
-title: CKeyFrame sınıfı
+title: CKeyFrame Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CKeyFrame
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - CKeyFrame [MFC], m_pExistingKeyFrame
 - CKeyFrame [MFC], m_pTransition
 ms.assetid: d050a562-20f6-4c65-8ce5-ccb3aef1a20e
-ms.openlocfilehash: c2c6add30757e1d83b70001679b37a7a22b9d7d6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f535503338a82c7cc70455ae6a08cdab0f13c624
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392628"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372286"
 ---
-# <a name="ckeyframe-class"></a>CKeyFrame sınıfı
+# <a name="ckeyframe-class"></a>CKeyFrame Sınıfı
 
-Bir animasyon ana karesini temsil eder.
+Animasyon anahtar çerçeveyi temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,36 +47,36 @@ class CKeyFrame : public CBaseKeyFrame;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CKeyFrame::CKeyFrame](#ckeyframe)|Fazla Yüklendi. Diğer ana kare üzerinde bağlı bir anahtar kare oluşturur.|
+|[CKeyFrame::CKeyFrame](#ckeyframe)|Fazla Yüklendi. Diğer anahtar çerçeveye bağlı bir anahtar çerçevesi oluşturuyor.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CKeyFrame::AddToStoryboard](#addtostoryboard)|Bir anahtar kare bir film şeridini ekler. (Geçersiz kılmaları [CBaseKeyFrame::AddToStoryboard](../../mfc/reference/cbasekeyframe-class.md#addtostoryboard).)|
-|[CKeyFrame::AddToStoryboardAfterTransition](#addtostoryboardaftertransition)|Geçişten sonra görsel taslak için bir anahtar kare ekler.|
-|[CKeyFrame::AddToStoryboardAtOffset](#addtostoryboardatoffset)|Bir anahtar kare uzaklığında görsel taslağa dönüştürme ekler.|
-|[CKeyFrame::GetExistingKeyframe](#getexistingkeyframe)|Bu ana kare bağımlı bir ana kare bir işaretçi döndürür.|
-|[CKeyFrame::GetOffset](#getoffset)|Diğer bir kareden bir uzaklık döndürür.|
-|[CKeyFrame::GetTransition](#gettransition)|Bu ana kare bağımlı bir geçiş için bir işaretçi döndürür.|
+|[CKeyFrame::AddToStoryboard](#addtostoryboard)|Film şeridine anahtar kare ekler. [(CBaseKeyFrame geçersiz kılar::AddToStoryboard](../../mfc/reference/cbasekeyframe-class.md#addtostoryboard).)|
+|[CKeyFrame::AddToStoryboardAfterTransition](#addtostoryboardaftertransition)|Geçişten sonra film şeridine bir anahtar kare ekler.|
+|[CKeyFrame::AddToStoryboardAtOffset](#addtostoryboardatoffset)|Ofset'te film şeridine bir anahtar çerçevesi ekler.|
+|[CKeyFrame::GetExistingKeyframe](#getexistingkeyframe)|Bu anahtar çerçevesibağlı bir anahtar çerçevesi için bir işaretçi döndürür.|
+|[CKeyFrame::GetOffset](#getoffset)|Diğer anahtar dilimden bir ofset döndürür.|
+|[CKeyFrame::GetTransition](#gettransition)|Bu anahtar çerçevesibağlı bir geçiş için bir işaretçi döndürür.|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CKeyFrame::m_offset](#m_offset)|Bu ana kare m_pExistingKeyFrame içinde depolanan bir kareden uzaklığı belirtir.|
-|[CKeyFrame::m_pExistingKeyFrame](#m_pexistingkeyframe)|Mevcut bir keframe bir işaretçi depolar. Bu ana kare m_offset mevcut ana kareye sahip görsel taslağa dönüştürme eklenir.|
-|[CKeyFrame::m_pTransition](#m_ptransition)|Bu ana kare başlayan transtion bir işaretçi depolar.|
+|[CKeyFrame::m_offset](#m_offset)|Bu anahtar çerçevesinin m_pExistingKeyFrame depolanan bir anahtar çerçevesinden mahsup olduğunu belirtir.|
+|[CKeyFrame::m_pExistingKeyFrame](#m_pexistingkeyframe)|Bir işaretçiyi varolan bir keframe'e doğru depolar. Bu anahtar çerçevesi, varolan anahtar çerçevesine m_offset ile film şeridine eklenir.|
+|[CKeyFrame::m_pTransition](#m_ptransition)|Bu anahtar çerçevede başlayan bir transtion işaretçisi depolar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, bir animasyon ana karesini uygular. Bir anahtar kare biraz zaman içinde bir film şeridi temsil eder ve başlangıç ve bitiş zamanları geçişlerinin belirtmek için kullanılabilir. Bir ana kare üzerinde başka bir ana kare tabanlı uzaklık (saniye cinsinden), sahip veya bir geçiş üzerinde temel olabilir ve bu geçiş sona erdiğinde zaman içinde bir ana temsil eder.
+Bu sınıf bir animasyon anahtar çerçevesi uygular. Anahtar çerçevesi, bir film şeridi içindeki bir anı temsil eder ve geçişlerin başlangıç ve bitiş saatlerini belirtmek için kullanılabilir. Anahtar çerçeve, diğer anahtar çerçeveyi temel alabilir ve ondan bir ofset (saniye cinsinden) olabilir veya bir geçişe dayalı olabilir ve bu geçişin sona erdiğinde bir anı temsil edebilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CBaseKeyFrame](../../mfc/reference/cbasekeyframe-class.md)
 
@@ -84,11 +84,11 @@ Bu sınıf, bir animasyon ana karesini uygular. Bir anahtar kare biraz zaman iç
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="addtostoryboard"></a>  CKeyFrame::AddToStoryboard
+## <a name="ckeyframeaddtostoryboard"></a><a name="addtostoryboard"></a>CKeyFrame::AddToStoryboard
 
-Bir anahtar kare bir film şeridini ekler.
+Film şeridine anahtar kare ekler.
 
 ```
 virtual BOOL AddToStoryboard(
@@ -99,22 +99,22 @@ virtual BOOL AddToStoryboard(
 ### <a name="parameters"></a>Parametreler
 
 *pStoryboard*<br/>
-Görsel taslak için bir işaretçi.
+Bir film şeridi için bir işaretçi.
 
 *bDeepAdd*<br/>
-Anahtar Kare Ekle veya yinelemeli olarak geçiş belirtir.
+Anahtar çerçevesi veya geçiş özyinelemeli olarak eklenip eklenmeyeceğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE, ana kare başarıyla eklendi.
+DOĞRU, anahtar çerçevesi başarıyla eklendiyse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, film şeridi için bir anahtar kare ekler. Diğer ana kare veya geçiş bağlıdır ve bDeepAdd TRUE ise, bu yöntem, bunları yinelemeli olarak eklemeyi dener.
+Bu yöntem, film şeridine bir anahtar kare ekler. Diğer anahtar çerçevesi veya geçiş bağlıdır ve bDeepAdd TRUE ise, bu yöntem bunları özyinelemeli eklemeye çalışır.
 
-##  <a name="addtostoryboardaftertransition"></a>  CKeyFrame::AddToStoryboardAfterTransition
+## <a name="ckeyframeaddtostoryboardaftertransition"></a><a name="addtostoryboardaftertransition"></a>CKeyFrame::AddToStoryboardAfterTransition
 
-Geçişten sonra görsel taslak için bir anahtar kare ekler.
+Geçişten sonra film şeridine bir anahtar kare ekler.
 
 ```
 BOOL AddToStoryboardAfterTransition(
@@ -125,22 +125,22 @@ BOOL AddToStoryboardAfterTransition(
 ### <a name="parameters"></a>Parametreler
 
 *pStoryboard*<br/>
-Görsel taslak için bir işaretçi.
+Bir film şeridi için bir işaretçi.
 
 *bDeepAdd*<br/>
-Bir geçiş yinelemeli olarak eklenip eklenmeyeceğini belirtir.
+Bir geçiş özyinelemeli olarak eklenip eklenmeyeceğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE, ana kare başarıyla eklendi.
+DOĞRU, anahtar çerçevesi başarıyla eklendiyse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, geçişten sonra görsel taslak için bir anahtar kare eklemek için framework tarafından çağırılır.
+Bu işlev, geçişten sonra film şeridine bir anahtar çerçevesi eklemek için çerçeve tarafından çağrılır.
 
-##  <a name="addtostoryboardatoffset"></a>  CKeyFrame::AddToStoryboardAtOffset
+## <a name="ckeyframeaddtostoryboardatoffset"></a><a name="addtostoryboardatoffset"></a>CKeyFrame::AddToStoryboardAtOffset
 
-Bir anahtar kare uzaklığında görsel taslağa dönüştürme ekler.
+Ofset'te film şeridine bir anahtar çerçevesi ekler.
 
 ```
 virtual BOOL AddToStoryboardAtOffset(
@@ -151,22 +151,22 @@ virtual BOOL AddToStoryboardAtOffset(
 ### <a name="parameters"></a>Parametreler
 
 *pStoryboard*<br/>
-Görsel taslak için bir işaretçi.
+Bir film şeridi için bir işaretçi.
 
 *bDeepAdd*<br/>
-Bir ana kare eklemek için bu ana kare üzerinde yinelemeli olarak bağımlı olup olmadığını belirtir.
+Bu anahtar çerçevesinin özyinelemeli olarak bağlı olup olmadığını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE, ana kare başarıyla eklendi.
+DOĞRU, anahtar çerçevesi başarıyla eklendiyse.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, bir ana kare uzaklığında görsel taslağa dönüştürme eklemek için framework tarafından çağırılır.
+Bu işlev, ofset de film şeridine bir anahtar çerçevesi eklemek için çerçeve tarafından çağrılır.
 
-##  <a name="ckeyframe"></a>  CKeyFrame::CKeyFrame
+## <a name="ckeyframeckeyframe"></a><a name="ckeyframe"></a>CKeyFrame::CKeyFrame
 
-Bir geçiş üzerinde bağlı bir anahtar kare oluşturur.
+Geçişe bağlı bir anahtar çerçeve oluşturuyor.
 
 ```
 CKeyFrame(CBaseTransition* pTransition);
@@ -178,22 +178,22 @@ CKeyFrame(
 
 ### <a name="parameters"></a>Parametreler
 
-*pTransition*<br/>
+*pGeçiş*<br/>
 Geçiş için bir işaretçi.
 
 *pKeyframe*<br/>
-Ana kare işaretçi.
+Anahtar kare için bir işaretçi.
 
-*uzaklık*<br/>
-Saniye cinsinden bir kareden pKeyframe tarafından belirtilen uzaklık.
+*Uzaklık*<br/>
+PKeyframe tarafından belirtilen anahtar çerçevesinden saniyeler içinde ofset.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen geçiş sona erdiğinde oluşturulmuş ana kare biraz zaman içinde bir film şeridi temsil eder.
+Yapılandırılan anahtar çerçeve, belirtilen geçiş sona erdiğinde bir film şeridi içinde zaman içinde bir anı temsil edecektir.
 
-##  <a name="getexistingkeyframe"></a>  CKeyFrame::GetExistingKeyframe
+## <a name="ckeyframegetexistingkeyframe"></a><a name="getexistingkeyframe"></a>CKeyFrame::GetExistingKeyframe
 
-Bu ana kare bağımlı bir ana kare bir işaretçi döndürür.
+Bu anahtar çerçevesibağlı bir anahtar çerçevesi için bir işaretçi döndürür.
 
 ```
 CBaseKeyFrame* GetExistingKeyframe();
@@ -201,15 +201,15 @@ CBaseKeyFrame* GetExistingKeyframe();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir işaretçi ana kare ya da bu ana kare üzerinde başka bir ana kare bağlı değilse NULL.
+Anahtar çerçevesi için geçerli bir işaretçi veya bu anahtar çerçevesi diğer anahtar çerçevesine bağlı değilse NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu ana kare bağımlı bir ana kare için erişimci budur.
+Bu, bu anahtar çerçevesinin bağlı olduğu bir anahtar çerçevesinin erişimidir.
 
-##  <a name="getoffset"></a>  CKeyFrame::GetOffset
+## <a name="ckeyframegetoffset"></a><a name="getoffset"></a>CKeyFrame::GetOffset
 
-Diğer bir kareden bir uzaklık döndürür.
+Diğer anahtar dilimden bir ofset döndürür.
 
 ```
 UI_ANIMATION_SECONDS GetOffset();
@@ -217,15 +217,15 @@ UI_ANIMATION_SECONDS GetOffset();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Diğer ana kare saniyeler içinde bir uzaklık.
+Diğer anahtar dilimden saniyeler içinde bir ofset.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Diğer ana kare saniyeler içinde bir uzaklık belirlemek için bu yöntem çağrılmalıdır.
+Bu yöntem, diğer anahtar çerçeveden saniyeler içinde bir ofset belirlemek için çağrılmalıdır.
 
-##  <a name="gettransition"></a>  CKeyFrame::GetTransition
+## <a name="ckeyframegettransition"></a><a name="gettransition"></a>CKeyFrame::GetTransition
 
-Bu ana kare bağımlı bir geçiş için bir işaretçi döndürür.
+Bu anahtar çerçevesibağlı bir geçiş için bir işaretçi döndürür.
 
 ```
 CBaseTransition* GetTransition();
@@ -233,31 +233,31 @@ CBaseTransition* GetTransition();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir işaretçi için geçiş ya da bu ana kare geçişi bağlı değilse NULL.
+Geçiş için geçerli bir işaretçi veya bu anahtar çerçevesi geçişe bağlı değilse NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu ana kare bağımlı geçiş erişimci budur.
+Bu, anahtar çerçevesinin bağlı olduğu bir geçişin erişimidir.
 
-##  <a name="m_offset"></a>  CKeyFrame::m_offset
+## <a name="ckeyframem_offset"></a><a name="m_offset"></a>CKeyFrame::m_offset
 
-Bu ana kare m_pExistingKeyFrame içinde depolanan bir kareden uzaklığı belirtir.
+Bu anahtar çerçevesinin m_pExistingKeyFrame depolanan bir anahtar çerçevesinden mahsup olduğunu belirtir.
 
 ```
 UI_ANIMATION_SECONDS m_offset;
 ```
 
-##  <a name="m_pexistingkeyframe"></a>  CKeyFrame::m_pExistingKeyFrame
+## <a name="ckeyframem_pexistingkeyframe"></a><a name="m_pexistingkeyframe"></a>CKeyFrame::m_pExistingKeyFrame
 
-Mevcut bir keframe bir işaretçi depolar. Bu ana kare m_offset mevcut ana kareye sahip görsel taslağa dönüştürme eklenir.
+Bir işaretçiyi varolan bir keframe'e doğru depolar. Bu anahtar çerçevesi, varolan anahtar çerçevesine m_offset ile film şeridine eklenir.
 
 ```
 CBaseKeyFrame* m_pExistingKeyFrame;
 ```
 
-##  <a name="m_ptransition"></a>  CKeyFrame::m_pTransition
+## <a name="ckeyframem_ptransition"></a><a name="m_ptransition"></a>CKeyFrame::m_pTransition
 
-Bu ana kare başlayan transtion bir işaretçi depolar.
+Bu anahtar çerçevede başlayan bir transtion işaretçisi depolar.
 
 ```
 CBaseTransition* m_pTransition;

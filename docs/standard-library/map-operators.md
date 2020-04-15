@@ -1,5 +1,5 @@
 ---
-title: '&lt;Map&gt; işleçleri'
+title: '&lt;harita&gt; operatörleri'
 ms.date: 03/27/2019
 f1_keywords:
 - map/std::operator!=
@@ -16,18 +16,18 @@ helpviewer_keywords:
 - std::operator&lt; (map)
 - std::operator&lt;= (map)
 - std::operator== (map)
-ms.openlocfilehash: deb442d0ba1fbd180fdb41b66de73df92bee7fc9
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 1b16028ea4be5303df5c6337260de5098e9c6ed6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419968"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371034"
 ---
-# <a name="ltmapgt-operators"></a>&lt;Map&gt; işleçleri
+# <a name="ltmapgt-operators"></a>&lt;harita&gt; operatörleri
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a>işleç!=
 
-İşlecin sol tarafındaki Map nesnesinin, sağ taraftaki Map nesnesine eşit olup olmadığını sınar.
+İşleticinin sol tarafındaki harita nesnesinin sağ taraftaki harita nesnesine eşit olup olmadığını test edin.
 
 ```cpp
 bool operator!=(
@@ -37,19 +37,19 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*Sol*\
 `map` türünün bir nesnesi.
 
-*sağ*\
+*Doğru*\
 `map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Haritalar eşit değilse **doğru** ; eşlemeler eşitse **false** .
+haritalar eşit değilse **doğrudur;** haritalar **eşitse false.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Harita nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki eşleme aynı sayıda öğeye sahip olmaları ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
+Eşlemi nesneleri arasındaki karşılaştırma, öğelerinin çift eşli bir karşılaştırmasını temel adatır. Aynı sayıda eleman varsa ve ilgili öğeleri aynı değerlere sahipse, iki eşeeşittir. Aksi takdirde, eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -90,9 +90,9 @@ The maps m1 and m2 are not equal.
 The maps m1 and m3 are equal.
 ```
 
-## <a name="op_lt"></a>işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a>Işleç&lt;
 
-İşlecin sol tarafındaki Map nesnesinin, sağ taraftaki Map nesnesinden küçük olup olmadığını sınar.
+İşleticinin sol tarafındaki harita nesnesinin sağ taraftaki harita nesnesinden daha az olup olmadığını test edin.
 
 ```cpp
 bool operator<(
@@ -102,19 +102,19 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*Sol*\
 `map` türünün bir nesnesi.
 
-*sağ*\
+*Doğru*\
 `map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki harita işlecin sağ tarafındaki haritada tamamen daha küçükse **true** ; Aksi halde **yanlış**.
+işlecinin sol tarafındaki harita, operatörün sağ tarafındaki haritadan kesinlikle daha **azsa** doğrudur; aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Harita nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki nesne arasındaki daha az ilişki, eşit olmayan öğelerin ilk çiftinin karşılaştırmasına dayalıdır.
+Eşlemi nesneleri arasındaki karşılaştırma, öğelerinin çift eşli bir karşılaştırmasını temel adatır. İki nesne arasındaki az ilişki, eşit olmayan öğelerin ilk çiftinin karşılaştırılmasına dayanır.
 
 ### <a name="example"></a>Örnek
 
@@ -155,9 +155,9 @@ The map m1 is less than the map m2.
 The map m1 is not less than the map m3.
 ```
 
-## <a name="op_lt_eq"></a>işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a>Işleç&lt;=
 
-İşlecin sol tarafındaki Map nesnesinin, sağ taraftaki Map nesnesine eşit veya ondan küçük olup olmadığını test eder.
+İşleticinin sol tarafındaki harita nesnesinin sağ taraftaki harita nesnesinden daha az veya eşit olup olmadığını test edin.
 
 ```cpp
 bool operator<=(
@@ -167,15 +167,15 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*Sol*\
 `map` türünün bir nesnesi.
 
-*sağ*\
+*Doğru*\
 `map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki haritanın işlecin sağ tarafındaki haritaya eşit veya ondan küçük olması durumunda **true** ; Aksi halde **yanlış**.
+işlecinin sol tarafındaki harita operatörün sağ tarafındaki haritadan daha az veya eşitse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="example"></a>Örnek
 
@@ -223,9 +223,9 @@ The map m1 is greater than the map m3.
 The map m1 is less than or equal to the map m4.
 ```
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç==
 
-İşlecin sol tarafındaki Map nesnesinin, sağ taraftaki Map nesnesine eşit olup olmadığını sınar.
+İşleticinin sol tarafındaki harita nesnesinin sağ taraftaki harita nesnesine eşit olup olmadığını test edin.
 
 ```cpp
 bool operator==(
@@ -235,19 +235,19 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*Sol*\
 `map` türünün bir nesnesi.
 
-*sağ*\
+*Doğru*\
 `map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki haritanın işlecin sağ tarafındaki haritaya eşit olması durumunda **true** ; Aksi halde **yanlış**.
+işlecinin sol tarafındaki harita işlecinin sağ tarafındaki haritaya eşitse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Harita nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki eşleme aynı sayıda öğeye sahip olmaları ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
+Eşlemi nesneleri arasındaki karşılaştırma, öğelerinin çift eşli bir karşılaştırmasını temel adatır. Aynı sayıda eleman varsa ve ilgili öğeleri aynı değerlere sahipse, iki eşeeşittir. Aksi takdirde, eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -288,9 +288,9 @@ The maps m1 and m2 are not equal.
 The maps m1 and m3 are equal.
 ```
 
-## <a name="op_gt"></a>işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a>Işleç&gt;
 
-İşlecin sol tarafındaki harita nesnesinin sağ taraftaki harita nesnesinden büyük olup olmadığını sınar.
+İşleticinin sol tarafındaki harita nesnesinin sağ taraftaki harita nesnesinden büyük olup olmadığını test edin.
 
 ```cpp
 bool operator>(
@@ -300,19 +300,19 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*Sol*\
 `map` türünün bir nesnesi.
 
-*sağ*\
+*Doğru*\
 `map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki haritada işlecin sağ tarafındaki haritanın daha büyükse **true** . Aksi halde **yanlış**.
+işlecinin sol tarafındaki harita işlecinin sağ tarafındaki haritadan büyükse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Harita nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki nesne arasındaki büyüktür ilişkisi, eşit olmayan öğelerin ilk çiftinin karşılaştırmasını temel alır.
+Eşlemi nesneleri arasındaki karşılaştırma, öğelerinin çift eşli bir karşılaştırmasını temel adatır. İki nesne arasındaki büyük-daha büyük ilişki eşit olmayan öğelerin ilk çifti bir karşılaştırma dayanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -352,9 +352,9 @@ The map m1 is greater than the map m3.
 */
 ```
 
-## <a name="op_gt_eq"></a>işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a>Işleç&gt;=
 
-İşlecin sol tarafındaki harita nesnesinin sağ taraftaki harita nesnesinden büyük veya ona eşit olup olmadığını sınar.
+İşleticinin sol tarafındaki harita nesnesinin sağ taraftaki harita nesnesinden büyük veya eşit olup olmadığını test edin.
 
 ```cpp
 bool operator>=(
@@ -364,15 +364,15 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*Sol*\
 `map` türünün bir nesnesi.
 
-*sağ*\
+*Doğru*\
 `map` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki haritanın, listenin sağ tarafındaki haritaya eşit veya ondan büyük olması durumunda **doğru** ; Aksi halde **yanlış**.
+işlecinin sol tarafındaki harita listenin sağ tarafındaki haritadan daha büyük veya eşitse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="example"></a>Örnek
 
@@ -420,9 +420,9 @@ Map m1 is greater than or equal to map m3.
 Map m1 is greater than or equal to map m4.
 ```
 
-## <a name="op_neq_multimap"></a>işleç! = (multimap)
+## <a name="operator-multimap"></a><a name="op_neq_multimap"></a>işleç!= (çok harita)
 
-İşlecin sol tarafındaki multimap nesnesinin sağ taraftaki multimap nesnesine eşit olup olmadığını sınar.
+İşleticinin sol tarafındaki çok eşlilik nesnesinin sağ taraftaki çok eşli lik nesnesine eşit olup olmadığını test edin.
 
 ```cpp
 bool operator!=(
@@ -432,19 +432,19 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*Sol*\
 `multimap` türünün bir nesnesi.
 
-*sağ*\
+*Doğru*\
 `multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çoklu haritalar eşit değilse **doğru** ; Çoklu haritalar eşitse **false** .
+çoklu haritalar eşit değilse **doğrudur;** çoklu haritalar **eşitse yanlış.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Multimap nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki multimaps aynı sayıda öğeye sahip olmaları ve ilgili öğeleri aynı değerlere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
+Çok eşli nesneler arasındaki karşılaştırma, öğelerinin çift yönlü bir karşılaştırmasını temel adatır. İki çok eş, aynı sayıda elemana sahipse ve ilgili öğeleri aynı değerlere sahipse eşittir. Aksi takdirde, eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -485,9 +485,9 @@ The multimaps m1 and m2 are not equal.
 The multimaps m1 and m3 are equal.
 ```
 
-## <a name="op_lt_multimap"></a>işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt_multimap"></a>Işleç&lt;
 
-İşlecin sol tarafındaki multimap nesnesinin, sağ taraftaki multimap nesnesinden küçük olup olmadığını sınar.
+İşleticinin sol tarafındaki çok eşlilik nesnesinin sağ taraftaki çok eşli lik nesnesinden küçük olup olmadığını test edin.
 
 ```cpp
 bool operator<(
@@ -497,19 +497,19 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*Sol*\
 `multimap` türünün bir nesnesi.
 
-*sağ*\
+*Doğru*\
 `multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki multimap, işlecin sağ tarafındaki multimap öğesinden tamamen daha küçükse **true** . Aksi halde **yanlış**.
+işlecinin sol tarafındaki çoklu harita, operatörün sağ tarafındaki çoklu haritadan kesinlikle daha azsa **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Multimap nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki nesne arasındaki daha az ilişki, eşit olmayan öğelerin ilk çiftinin karşılaştırmasına dayalıdır.
+Çok eşli nesneler arasındaki karşılaştırma, öğelerinin çift yönlü bir karşılaştırmasını temel adatır. İki nesne arasındaki az ilişki, eşit olmayan öğelerin ilk çiftinin karşılaştırılmasına dayanır.
 
 ### <a name="example"></a>Örnek
 
@@ -550,9 +550,9 @@ The multimap m1 is less than the multimap m2.
 The multimap m1 is not less than the multimap m3.
 ```
 
-## <a name="op_lt_eq_multimap"></a>işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq_multimap"></a>Işleç&lt;=
 
-İşlecin sol tarafındaki multimap nesnesinin, sağ taraftaki multimap nesnesine eşit veya ondan küçük olup olmadığını test eder.
+İşleticinin sol tarafındaki çok eşlilik nesnesinin sağ taraftaki çok eşlilik nesnesinden daha az veya eşit olup olmadığını test edin.
 
 ```cpp
 bool operator<=(
@@ -562,15 +562,15 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*Sol*\
 `multimap` türünün bir nesnesi.
 
-*sağ*\
+*Doğru*\
 `multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki multimap, işlecin sağ tarafındaki multimap 'e eşit veya bundan küçükse **true** ; Aksi halde **yanlış**.
+işlecinin sol tarafındaki çoklu harita, işlecinin sağ tarafındaki çoklu haritadan daha az veya eşitse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="example"></a>Örnek
 
@@ -618,9 +618,9 @@ m1 is greater than m3
 m1 is less than or equal to m4
 ```
 
-## <a name="op_eq_eq_multimap"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq_multimap"></a>işleç==
 
-İşlecin sol tarafındaki multimap nesnesinin sağ taraftaki multimap nesnesine eşit olup olmadığını sınar.
+İşleticinin sol tarafındaki çok eşlilik nesnesinin sağ taraftaki çok eşli lik nesnesine eşit olup olmadığını test edin.
 
 ```cpp
 bool operator==(
@@ -630,19 +630,19 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*Sol*\
 `multimap` türünün bir nesnesi.
 
-*sağ*\
+*Doğru*\
 `multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki multimap, işlecin sağ tarafındaki multimap 'e eşitse **true** . Aksi halde **yanlış**.
+işlecinin sol tarafındaki çoklu harita, işlecinin sağ tarafındaki çoklu haritaya eşitse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Multimap nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki multimaps aynı sayıda öğeye sahip olmaları ve ilgili öğeleri aynı değerlere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
+Çok eşli nesneler arasındaki karşılaştırma, öğelerinin çift yönlü bir karşılaştırmasını temel adatır. İki çok eş, aynı sayıda elemana sahipse ve ilgili öğeleri aynı değerlere sahipse eşittir. Aksi takdirde, eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -683,9 +683,9 @@ m1 and m2 are not equal
 m1 and m3 are equal
 ```
 
-## <a name="op_gt_multimap"></a>işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt_multimap"></a>Işleç&gt;
 
-İşlecin sol tarafındaki multimap nesnesinin, sağ taraftaki multimap nesnesinden büyük olup olmadığını sınar.
+İşleticinin sol tarafındaki çok eşlilik nesnesinin sağ taraftaki çok eşli lik nesnesinden büyük olup olmadığını test edin.
 
 ```cpp
 bool operator>(
@@ -695,19 +695,19 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*Sol*\
 `multimap` türünün bir nesnesi.
 
-*sağ*\
+*Doğru*\
 `multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki multimap, işlecin sağ tarafındaki multimap 'ten büyükse **true** . Aksi halde **yanlış**.
+işlecinin sol tarafındaki çoklu harita operatörün sağ tarafındaki çoklu haritadan büyükse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Multimap nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki nesne arasındaki büyüktür ilişkisi, eşit olmayan öğelerin ilk çiftinin karşılaştırmasını temel alır.
+Çok eşli nesneler arasındaki karşılaştırma, öğelerinin çift yönlü bir karşılaştırmasını temel adatır. İki nesne arasındaki büyük-daha büyük ilişki eşit olmayan öğelerin ilk çifti bir karşılaştırma dayanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -748,9 +748,9 @@ Multimap m1 is not greater than multimap m2.
 The multimap m1 is greater than the multimap m3.
 ```
 
-## <a name="op_gt_eq_multimap"></a>işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq_multimap"></a>Işleç&gt;=
 
-İşlecin sol tarafındaki multimap nesnesinin, sağ taraftaki multimap nesnesine eşit veya ondan büyük olup olmadığını sınar.
+İşleticinin sol tarafındaki çok eşlilik nesnesinin sağ taraftaki çok eşli lik nesnesinden büyük veya eşit olup olmadığını test edin.
 
 ```cpp
 bool operator>=(
@@ -760,15 +760,15 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*Sol*\
 `multimap` türünün bir nesnesi.
 
-*sağ*\
+*Doğru*\
 `multimap` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki multimap, listenin sağ tarafındaki multimap 'e eşit veya daha büyükse **true** ; Aksi halde **yanlış**.
+işlecinin sol tarafındaki çoklu harita listenin sağ tarafındaki çoklu haritadan daha büyük veya eşitse **doğrudur;** aksi takdirde **yanlış**.
 
 ### <a name="example"></a>Örnek
 

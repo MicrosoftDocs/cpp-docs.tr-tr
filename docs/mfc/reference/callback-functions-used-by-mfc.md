@@ -7,16 +7,16 @@ helpviewer_keywords:
 - functions [MFC], callback
 - callback functions [MFC]
 ms.assetid: b2a6857c-fdd3-45ec-8fd8-2e71fac77582
-ms.openlocfilehash: 9e51774b2158a81fce05dc0bd27e296e4ad94faa
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 8d84f939795e768c6b1356dcd8dc291421aedfdc
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419051"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371133"
 ---
 # <a name="callback-functions-used-by-mfc"></a>MFC Tarafından Kullanılan Geri Çağırma İşlevleri
 
-Microsoft Foundation Class Kitaplığı üç geri çağırma işlevi görüntülenir. Bu geri çağırma işlevleri [CDC:: EnumObjects](../../mfc/reference/cdc-class.md#enumobjects), [CDC:: Gristring](../../mfc/reference/cdc-class.md#graystring)ve [CDC:: SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc)' a geçirilir. Tüm geri çağrı işlevlerinin, geri çağırma sınırları genelinde özel durumlar gerçekleştirilemediğinden, Windows 'a döndürmeden önce MFC özel durumlarını yakalamasını gerektiğini unutmayın. Özel durumlar hakkında daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
+Microsoft Hazırlık Sınıfı Kitaplığı'nda üç geri arama işlevi görünür. Bu geri arama işlevleri [CDC geçirilir::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects), [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring), ve [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc). Özel durumlar geri arama sınırları dışına atılamayacağından, tüm geri arama işlevlerinin Windows'a dönmeden önce MFC özel durumlarını hapsetmesi gerektiğini unutmayın. Özel durumlar hakkında daha fazla bilgi için [özel durumlar](../../mfc/exception-handling-in-mfc.md)makalesine bakın.
 
 |Adı||
 |----------|-----------------|
@@ -26,11 +26,11 @@ Microsoft Foundation Class Kitaplığı üç geri çağırma işlevi görüntül
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** Afxwin. h
+**Üstbilgi:** afxwin.h
 
-## <a name="enum_objects"></a>CDC:: EnumObjects için geri çağırma Işlevi
+## <a name="callback-function-for-cdcenumobjects"></a><a name="enum_objects"></a>CDC için Geri Arama Fonksiyonu::EnumObjects
 
-*Objectfunc* adı, uygulama tarafından sağlanan işlev adı için bir yer tutucudur.
+*ObjectFunc* adı, uygulama tarafından sağlanan işlev adı için bir yer tutucudur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -42,23 +42,23 @@ int CALLBACK EXPORT ObjectFunc(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszLogObject*<br/>
-Nesnenin mantıksal öznitelikleri hakkında bilgi içeren bir [logpen](/windows/win32/api/Wingdi/ns-wingdi-logpen) veya [LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush) veri yapısına işaret eder.
+*lpszLogNesne*<br/>
+Nesnenin mantıksal öznitelikleri hakkında bilgi içeren bir [LOGPEN](/windows/win32/api/Wingdi/ns-wingdi-logpen) veya [LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush) veri yapısına işaret eder.
 
 *lpData*<br/>
-`EnumObjects` işlevine geçirilen uygulama tarafından sağlanan verileri işaret eder.
+`EnumObjects` İşlev için geçirilen uygulama tarafından sağlanan verilere işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geri çağırma işlevi bir **int**döndürür. Bu döndürün değeri Kullanıcı tanımlı ' dır. Geri çağırma işlevi 0 döndürürse `EnumObjects` numaralandırmayı erken sonlandırır.
+Geri arama işlevi bir **int**döndürür. Bu iadenin değeri kullanıcı tarafından tanımlanır. Geri arama işlevi 0 `EnumObjects` döndürürse, numaralandırmayı erken durdurur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Asıl ad verilmelidir.
+Gerçek ad dışa aktarılmalıdır.
 
-## <a name="graystring"></a>CDC:: gri dize için geri çağırma Işlevi
+## <a name="callback-function-for-cdcgraystring"></a><a name="graystring"></a>CDC için Geri Arama Fonksiyonu::GrayString
 
-*OutputFunc* , uygulama tarafından sağlanan geri çağırma işlev adı için bir yer tutucudur.
+*OutputFunc,* uygulama tarafından sağlanan geri arama işlevi adı için bir yer tutucudur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -71,26 +71,26 @@ BOOL CALLBACK EXPORT OutputFunc(
 
 ### <a name="parameters"></a>Parametreler
 
-*hDC*<br/>
-En azından `nWidth` tarafından belirtilen genişlik ve yüksekliğin bit eşlemiyle bir bellek cihazı bağlamını tanımlar ve `GrayString``nHeight`.
+*Hdc*<br/>
+Bellek aygıtı bağlamını en az belirtilen genişlik ve `nWidth` yüksekte `GrayString`bir bit eşlemi ile tanımlar. `nHeight`
 
 *lpData*<br/>
 Çizilecek karakter dizesine işaret eder.
 
-*nCount*<br/>
-Çıktının kaç karakter sayısını belirtir.
+*nSayısı*<br/>
+Çıktıiçin karakter sayısını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geri çağırma işlevinin dönüş değeri başarıyı göstermek için TRUE olmalıdır; Aksi takdirde, FALSE olur.
+Geri arama işlevinin geri dönüş değeri başarıyı göstermek için TRUE olmalıdır; aksi takdirde FALSE olduğunu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geri çağırma işlevi (*OutputFunc*), (*x*, *y*) yerine koordinatlara (0, 0) göre bir resim çizmelidir.
+Geri arama işlevi *(OutputFunc)* yerine koordinatları (0,0) görebir görüntü çizmek gerekir (*x*, *y*).
 
-## <a name="setabortproc"></a>CDC:: SetAbortProc için geri çağırma Işlevi
+## <a name="callback-function-for-cdcsetabortproc"></a><a name="setabortproc"></a>CDC için Geri Arama Fonksiyonu::SetAbortProc
 
-*Abortfunc* adı, uygulama tarafından sağlanan işlev adı için bir yer tutucudur.
+*AbortFunc* adı, uygulama tarafından sağlanan işlev adı için bir yer tutucudur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -102,23 +102,23 @@ BOOL CALLBACK EXPORT AbortFunc(
 
 ### <a name="parameters"></a>Parametreler
 
-*hPr*<br/>
-Cihaz bağlamını tanımlar.
+*Hpr*<br/>
+Aygıt bağlamını tanımlar.
 
-*kodudur*<br/>
-Bir hata oluşup oluşmadığını belirtir. Herhangi bir hata oluştuysa 0 ' dır. Yazdırma yöneticisinin şu anda disk alanı tükenme ve uygulama bekliyorsa daha fazla disk alanı kullanılabilir hale gelmesi SP_OUTOFDISK. *Kod* SP_OUTOFDISK ise, uygulamanın yazdırma işini iptal etmek zorunda değildir. Değilse, `PeekMessage` veya `GetMessage` Windows işlevini çağırarak yazdırma Yöneticisi 'ne vermelidir.
+*Kod*<br/>
+Bir hata nın oluşup oluşmadığını belirtir. Hata oluştuysa 0'dır. Yazdırma Yöneticisi şu anda disk alanı dışında ysa ve uygulama beklerse daha fazla disk alanı kullanılabilir hale gelirse SP_OUTOFDISK. *Kod* SP_OUTOFDISK ise, uygulamayazdırma işini iptal etmek zorunda değildir. Yoksa, Yazdırma Yöneticisi'ne `PeekMessage` `GetMessage` veya Windows işlevini arayarak teslim olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazdırma işi devam edebiliyorsanız ve iptal edilirse 0, Abort-Handler işlevinin dönüş değeri sıfır değildir.
+Yazdırma işi devam edecekse iptal işleyici işlevinin geri dönüş değeri sıfırsız, iptal edilirse 0 olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Asıl ad, [CDC:: SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc)' nin açıklamalar bölümünde açıklandığı gibi verilmelidir.
+Gerçek ad CDC Açıklamalar bölümünde açıklandığı gibi dışa [aktarılmalıdır::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](structures-styles-callbacks-and-message-maps.md)<br/>
-[CDC:: EnumObjects](../../mfc/reference/cdc-class.md#enumobjects)<br/>
-[CDC:: SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc)<br/>
-[CDC:: gri dize](../../mfc/reference/cdc-class.md#graystring)
+[Yapılar, Stiller, Geri Aramalar ve İleti Haritaları](structures-styles-callbacks-and-message-maps.md)<br/>
+[CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects)<br/>
+[CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc)<br/>
+[CDC::GrayString](../../mfc/reference/cdc-class.md#graystring)

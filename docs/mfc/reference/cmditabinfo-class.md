@@ -1,5 +1,5 @@
 ---
-title: Cmdıtabınfo sınıfı
+title: CMDITabInfo Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMDITabInfo
@@ -28,16 +28,16 @@ helpviewer_keywords:
 - CMDITabInfo [MFC], m_style
 - CMDITabInfo [MFC], m_tabLocation
 ms.assetid: 988ae1b7-4f7f-4239-b88f-7e28b3291c5e
-ms.openlocfilehash: a42128d097c9d63d82243090e2e215a250ff432b
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 0d230d2a3401ab556adc1183f4c4210ec6ff3c29
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341688"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370028"
 ---
-# <a name="cmditabinfo-class"></a>Cmdıtabınfo sınıfı
+# <a name="cmditabinfo-class"></a>CMDITabInfo Sınıfı
 
-`CMDITabInfo` Sınıfı için parametreleri geçirmek için kullanılan [CMDIFrameWndEx::EnableMDITabbedGroups](../../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups) yöntemi. Sekmeli grupları MDI davranışını denetlemek için bu sınıfın üyelerini ayarlayın.
+Sınıf, `CMDITabInfo` parametreleri [CMDIFrameWndEx::EnableMDITabbedGroups](../../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups) yöntemine geçirmek için kullanılır. MDI sekmeli grupların davranışını denetlemek için bu sınıfın üyelerini ayarlayın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,53 +49,53 @@ class CMDITabInfo
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMDITabInfo::CMDITabInfo`|Varsayılan Oluşturucu.|
+|`CMDITabInfo::CMDITabInfo`|Varsayılan oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMDITabInfo::Serialize](#serialize)|Okur veya ya da bir arşivden bu nesneyi yazar.|
+|[CMDITabInfo::Serialize](#serialize)|Bu nesneyi arşivden veya arşivden okur veya yazar.|
 
-### <a name="data-members"></a>Veri üyeleri
+### <a name="data-members"></a>Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMDITabInfo::m_bActiveTabCloseButton;](#m_bactivetabclosebutton_)|Belirtir olup olmadığını bir **Kapat** düğmesi etkin sekmenin etiketi gösterilir.|
-|[CMDITabInfo::m_bAutoColor](#m_bautocolor)|MDI sekmeleri rengi belirtir.|
-|[CMDITabInfo::m_bDocumentMenu](#m_bdocumentmenu)|Sekme grubu, açılmış belgelerin listesini gösteren veya kaydırma düğmelerine görüntüler bir açılan menü görüntülenip görüntülenmeyeceğini belirtir.|
-|[CMDITabInfo::m_bEnableTabSwap](#m_benabletabswap)|Kullanıcının sekme sürükleyerek Değiştir olup olmadığını belirtir.|
-|[CMDITabInfo::m_bFlatFrame](#m_bflatframe)|Sekmeleri düz bir çerçeve sahip olup olmadığını belirtir.|
-|[CMDITabInfo::m_bTabCloseButton](#m_btabclosebutton)|Her sekme etiketi görüntülenip görüntülenmeyeceğini belirten bir **Kapat** düğmesi.|
-|[CMDITabInfo::m_bTabCustomTooltips](#m_btabcustomtooltips)|Özel araç ipuçları etkin olup olmadığını belirtir.|
-|[CMDITabInfo::m_bTabIcons](#m_btabicons)|MDI sekmeleri üzerinde simgeler görüntülenip görüntülenmeyeceğini belirtir.|
-|[CMDITabInfo::m_nTabBorderSize](#m_ntabbordersize)|Her sekme penceresinde kenarlık boyutunu belirtir.|
-|[CMDITabInfo::m_style](#m_style)|Sekme etiketleri stilini belirtir.|
-|[CMDITabInfo::m_tabLocation](#m_tablocation)|Sekmeleri etiketleri üstünde veya sayfanın altında bulunan olup olmadığını belirtir.|
+|[CMDITabInfo::m_bActiveTabCloseButton;](#m_bactivetabclosebutton_)|Etkin sekme etiketinde **Kapat** düğmesinin görüntülenip görüntülenmediğini belirtir.|
+|[CMDITabInfo::m_bAutoColor](#m_bautocolor)|MDI sekmelerini renklendirip renklendirmeyeceğini belirtir.|
+|[CMDITabInfo::m_bDocumentMenu](#m_bdocumentmenu)|Sekme grubunun açılan belgelerin listesini gösteren bir açılır menü veya kaydırma düğmelerini görüntüleyip görüntülemediğini belirtir.|
+|[CMDITabInfo::m_bEnableTabSwap](#m_benabletabswap)|Kullanıcının sekme konumlarını sürükleyerek değiştirip değiştiremeyeceğini belirtir.|
+|[CMDITabInfo::m_bFlatFrame](#m_bflatframe)|Sekmelerin düz bir çerçevesi olup olmadığını belirtir.|
+|[CMDITabInfo::m_bTabCloseButton](#m_btabclosebutton)|Her sekme etiketinin **Kapat** düğmesi gösterip görüntülemediğini belirtir.|
+|[CMDITabInfo::m_bTabCustomTooltips](#m_btabcustomtooltips)|Özel araç ipuçlarının etkin olup olmadığını belirtir.|
+|[CMDITabInfo::m_bTabIcons](#m_btabicons)|MDI sekmelerinde simgelerin gösterip göstermeyeceğini belirtir.|
+|[CMDITabInfo::m_nTabBorderSize](#m_ntabbordersize)|Her sekme penceresinin kenarlık boyutunu belirtir.|
+|[CMDITabInfo::m_style](#m_style)|Sekme etiketlerinin stilini belirtir.|
+|[CMDITabInfo::m_tabLocation](#m_tablocation)|Sekme etiketlerinin sayfanın üst veya alt kısmında bulunup bulunmadığı belirtilir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, framework oluşturur MDI sekme grupları parametrelerini belirtir.
+Bu sınıf, çerçevenin oluşturduğu MDI sekmesi gruplarının parametrelerini belirtir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek çeşitli üye değişkenlerinde değerlerini ayarlamak gösterilmiştir `CMDITabInfo` sınıfı.
+Aşağıdaki örnek, `CMDITabInfo` sınıftaki çeşitli üye değişkenlerin değerlerinin nasıl ayarlandığını göstermektedir.
 
 [!code-cpp[NVC_MFC_MDITab#1](../../mfc/reference/codesnippet/cpp/cmditabinfo-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cmdıtabınfo](../../mfc/reference/cmditabinfo-class.md)
+[CMDITabInfo](../../mfc/reference/cmditabinfo-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxmdiclientareawnd.h
+**Üstbilgi:** afxmdiclientareawnd.h
 
-##  <a name="m_bactivetabclosebutton_"></a>  CMDITabInfo::m_bActiveTabCloseButton;
+## <a name="cmditabinfom_bactivetabclosebutton"></a><a name="m_bactivetabclosebutton_"></a>CMDITabInfo::m_bActiveTabCloseButton;
 
-Belirtir olup olmadığını bir **Kapat** düğmesi etkin sekmenin etiketi gösterilir.
+Etkin sekme etiketinde **Kapat** düğmesinin görüntülenip görüntülenmediğini belirtir.
 
 ```
 BOOL m_bActiveTabCloseButton;
@@ -103,11 +103,11 @@ BOOL m_bActiveTabCloseButton;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TRUE ise active sekmenin etiketini görüntüler bir **Kapat** düğmesi. **Kapat** düğmesini sekme alanının sağ üst köşeden kaldırılacak. Aksi takdirde, etkin sekmede etiketi görüntülenmez bir **Kapat** düğmesi. **Kapat** düğmesini sekme alanının sağ üst köşesinde görünür.
+TRUE ise, etkin sekme etiketi bir **Kapat** düğmesi görüntüler. **Kapat** düğmesi sekme alanının sağ üst köşesinden kaldırılır. Aksi takdirde, etkin sekme etiketi **kapat** düğmesi görüntülemez. **Sekme** alanının sağ üst köşesinde Kapat düğmesi görünür.
 
-##  <a name="m_bautocolor"></a>  CMDITabInfo::m_bAutoColor
+## <a name="cmditabinfom_bautocolor"></a><a name="m_bautocolor"></a>CMDITabInfo::m_bAutoColor
 
-Her MDI sekme kendi rengi olup olmadığını belirtir.
+Her MDI sekmesinin kendi rengi olup olmadığını belirtir.
 
 ```
 BOOL m_bAutoColor;
@@ -115,11 +115,11 @@ BOOL m_bAutoColor;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TRUE ise, her sekme, kendi rengine sahip olur. Renkler kümesi MFC Kitaplığı tarafından yönetilir. Aksi takdirde, sekmeler beyaz görüntülenir. Varsayılan değer FALSE olur.
+TRUE ise, her sekme kendi renk olacaktır. Renk kümesi MFC kitaplığı tarafından yönetilir. Aksi takdirde, sekmeler beyaz olarak görüntülenir. Varsayılan değer FALSE'dur.
 
-##  <a name="m_bdocumentmenu"></a>  CMDITabInfo::m_bDocumentMenu
+## <a name="cmditabinfom_bdocumentmenu"></a><a name="m_bdocumentmenu"></a>CMDITabInfo::m_bDocumentMenu
 
-Her sekme bir sekme alanının sağ kenarında açılmış belgelerin listesini gösteren bir açılan menü görüntülenip görüntülenmeyeceğini belirtir.
+Her sekmenin, sekme alanının sağ kenarında açılan belgelerin listesini gösteren bir açılır menü gösterip göstermediğini belirtir.
 
 ```
 BOOL m_bDocumentMenu;
@@ -127,11 +127,11 @@ BOOL m_bDocumentMenu;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TRUE ise, her sekme windows sekme alanının sağ kenarında açılmış belgelerin listesini gösteren bir açılan menü görüntüler. Aksi takdirde, sekme penceresinde sekme alanının sağ kenardaki kaydırma düğmelerine görüntüler. Varsayılan değer FALSE olur.
+TRUE ise, her sekme windows sekme alanının sağ kenarında açılan belgelerin listesini gösteren bir açılır menü görüntüler; Aksi takdirde, sekme penceresi sekme alanının sağ kenarında kaydırma düğmelerini görüntüler. Varsayılan değer FALSE'dur.
 
-##  <a name="m_benabletabswap"></a>  CMDITabInfo::m_bEnableTabSwap
+## <a name="cmditabinfom_benabletabswap"></a><a name="m_benabletabswap"></a>CMDITabInfo::m_bEnableTabSwap
 
-Kullanıcının sekme sürükleyerek Değiştir olup olmadığını belirtir.
+Kullanıcının sekme konumlarını sürükleyerek değiştirip değiştiremeyeceğini belirtir.
 
 ```
 BOOL m_bEnableTabSwap;
@@ -139,19 +139,19 @@ BOOL m_bEnableTabSwap;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TRUE ise kullanıcı sekmeler konumları sekmeleri sürükleyerek değiştirebilirsiniz. Aksi takdirde, kullanıcı sekmeler konumlar değiştiremezsiniz. Varsayılan değer True'dur.
+TRUE ise, kullanıcı sekmeleri sürükleyerek sekme konumlarını değiştirebilir. Aksi takdirde, kullanıcı sekme konumlarını değiştiremez. Varsayılan değer TRUE'dur.
 
-##  <a name="m_bflatframe"></a>  CMDITabInfo::m_bFlatFrame
+## <a name="cmditabinfom_bflatframe"></a><a name="m_bflatframe"></a>CMDITabInfo::m_bFlatFrame
 
-Her sekme penceresinde düz bir çerçeve olup olmadığını belirtir.
+Her sekme penceresinin düz bir çerçevesi olup olmadığını belirtir.
 
 ```
 BOOL m_bFlatFrame;
 ```
 
-##  <a name="m_btabclosebutton"></a>  CMDITabInfo::m_bTabCloseButton
+## <a name="cmditabinfom_btabclosebutton"></a><a name="m_btabclosebutton"></a>CMDITabInfo::m_bTabCloseButton
 
-Her sekme penceresinde mı gösterileceğini belirten bir **Kapat** düğmesi.
+Her sekme penceresinin **Kapat** düğmesini gösterip görüntülemediğini belirtir.
 
 ```
 BOOL m_bTabCloseButton;
@@ -159,11 +159,11 @@ BOOL m_bTabCloseButton;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TRUE ise, her sekme penceresinde görüntüler **Kapat** sekmenin sağ kenarda düğmesi. Aksi takdirde, **Kapat** düğmesi görüntülenmez. Varsayılan değer True'dur.
+TRUE ise, her sekme penceresi sekmenin sağ **kenarındaki** **Close** Kapat düğmesini görüntüler. Varsayılan değer TRUE'dur.
 
-##  <a name="m_btabcustomtooltips"></a>  CMDITabInfo::m_bTabCustomTooltips
+## <a name="cmditabinfom_btabcustomtooltips"></a><a name="m_btabcustomtooltips"></a>CMDITabInfo::m_bTabCustomTooltips
 
-Sekmeleri araç ipuçlarını görüntüleme olup olmadığını belirtir.
+Sekmelerin araç uçlarını gösterip göstermediğini belirtir.
 
 ```
 BOOL m_bTabCustomTooltips;
@@ -171,11 +171,11 @@ BOOL m_bTabCustomTooltips;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TRUE ise, uygulama ana kareye AFX_WM_ON_GET_TAB_TOOLTIP iletisi gönderir. On_regıstered_message makrosu kullanarak bu ileti işleyebilir.
+DOĞRUysa, uygulama ana çerçeveye AFX_WM_ON_GET_TAB_TOOLTIP bir ileti gönderir. Bu iletiyi ON_REGISTERED_MESSAGE makroyu kullanarak işleyebilirsiniz.
 
-##  <a name="m_btabicons"></a>  CMDITabInfo::m_bTabIcons
+## <a name="cmditabinfom_btabicons"></a><a name="m_btabicons"></a>CMDITabInfo::m_bTabIcons
 
-MDI sekmeleri üzerinde simgeler görüntülenip görüntülenmeyeceğini belirtir.
+MDI sekmelerinde simgelerin gösterip göstermeyeceğini belirtir.
 
 ```
 BOOL m_bTabIcons;
@@ -183,11 +183,11 @@ BOOL m_bTabIcons;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TRUE ise simgeler her MDI sekmesinde görüntülenir. Aksi takdirde, sekmelerde simgeler görüntülenmez. Varsayılan değer FALSE olur.
+TRUE ise, simgeler her MDI sekmesinde görüntülenir. Aksi takdirde, sekmelerde simgeler görüntülenmez. Varsayılan değer FALSE'dur.
 
-##  <a name="m_ntabbordersize"></a>  CMDITabInfo::m_nTabBorderSize
+## <a name="cmditabinfom_ntabbordersize"></a><a name="m_ntabbordersize"></a>CMDITabInfo::m_nTabBorderSize
 
-Kenarlık boyutu her sekmesi penceresi piksel cinsinden belirtir.
+Her sekme penceresinin kenarlık boyutunu piksel olarak belirtir.
 
 ```
 int m_nTabBorderSize;
@@ -195,11 +195,11 @@ int m_nTabBorderSize;
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CMFCVisualManager::GetMDITabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getmditabsborderssize) varsayılan değerini döndürür.
+[CMFCVisualManager::GetMDITabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getmditabsborderssize) varsayılan değeri döndürür.
 
-##  <a name="m_style"></a>  CMDITabInfo::m_style
+## <a name="cmditabinfom_style"></a><a name="m_style"></a>CMDITabInfo::m_style
 
-Sekme etiketleri stilini belirtir.
+Sekme etiketlerinin stilini belirtir.
 
 ```
 CMFCTabCtrl::Style m_style
@@ -207,20 +207,20 @@ CMFCTabCtrl::Style m_style
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki stilleri için sekmesinde etiketleri birini belirtin:
+Sekme etiketleri için aşağıdaki stillerden birini belirtin:
 
 |||
 |-|-|
-|STYLE_3D|3B stili.  |
+|STYLE_3D|3D tarzı.  |
 |STYLE_3D_ONENOTE|Microsoft OneNote stili.  |
-|STYLE_3D_VS2005|Microsoft Visual Studio 2005 stili.  |
-|STYLE_3D_SCROLLED|Dikdörtgen sekme etiketleri ile 3B stili.  |
-|STYLE_FLAT_SHARED_HORZ_SCROLL|Paylaşılan yatay kaydırma çubuklu düz stili.  |
-|STYLE_3D_ROUNDED_SCROLL|Yuvarlak sekme etiketleri ile 3B stili.  |
+|STYLE_3D_VS2005|Microsoft Visual Studio 2005 tarzı.  |
+|STYLE_3D_SCROLLED|Dikdörtgen sekmesi etiketleri ile 3B stil.  |
+|STYLE_FLAT_SHARED_HORZ_SCROLL|Paylaşılan yatay kaydırma çubuğuna sahip düz stil.  |
+|STYLE_3D_ROUNDED_SCROLL|Yuvarlak sekme etiketleri ile 3B stil.  |
 
-##  <a name="m_tablocation"></a>  CMDITabInfo::m_tabLocation
+## <a name="cmditabinfom_tablocation"></a><a name="m_tablocation"></a>CMDITabInfo::m_tabLocation
 
-Sekmeleri etiketleri üstünde veya sayfanın altında bulunan olup olmadığını belirtir.
+Sekme etiketlerinin sayfanın üst veya alt kısmında bulunup bulunmadığı belirtilir.
 
 ```
 CMFCTabCtrl::Location m_tabLocation;
@@ -228,15 +228,15 @@ CMFCTabCtrl::Location m_tabLocation;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki konum bayrakları sekmeleri biri için geçerlidir:
+Sekmelere aşağıdaki konum bayraklarından birini uygulayın:
 
-- LOCATION_BOTTOM: sekmeler etiketleri sayfanın alt kısmında bulunur.
+- LOCATION_BOTTOM: sekme etiketleri sayfanın alt kısmında yer alır.
 
-- LOCATION_TOP: sekmeler etiketleri sayfanın en üstünde bulunur
+- LOCATION_TOP: sekme etiketleri sayfanın üst kısmında yer alır
 
-##  <a name="serialize"></a>  CMDITabInfo::Serialize
+## <a name="cmditabinfoserialize"></a><a name="serialize"></a>CMDITabInfo::Serialize
 
-Okur ya da bu nesne bir arşiv ya da bir arşivden yazar.
+Bu nesneyi bir arşivden veya arşivden okur veya yazar.
 
 ```
 void Serialize(CArchive& ar);
@@ -244,12 +244,12 @@ void Serialize(CArchive& ar);
 
 ### <a name="parameters"></a>Parametreler
 
-*ar*<br/>
-[in] A [CArchive sınıfı](../../mfc/reference/carchive-class.md) nesneyi serileştirmek için.
+*Ar*<br/>
+[içinde] Serihale getirmek için [carchive sınıfı](../../mfc/reference/carchive-class.md) nesnesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CMDIFrameWndEx Sınıfı](../../mfc/reference/cmdiframewndex-class.md)<br/>
-[MDI Sekmeli Grupları](../../mfc/mdi-tabbed-groups.md)<br/>
+[MDI Sekmeli Gruplar](../../mfc/mdi-tabbed-groups.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)

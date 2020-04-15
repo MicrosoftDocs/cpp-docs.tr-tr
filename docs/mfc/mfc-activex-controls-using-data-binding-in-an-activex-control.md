@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX denetimleri: ActiveX denetiminde veri bağlama işlemini kullanma'
+title: 'MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma'
 ms.date: 11/19/2018
 f1_keywords:
 - bindable
@@ -14,125 +14,125 @@ helpviewer_keywords:
 - controls [MFC], data binding
 - bound controls [MFC], MFC ActiveX
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
-ms.openlocfilehash: e21a31b71e681cdffed555c10079c2598967543f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 41ac0180242aea3143a1df2c32dc81fb18cd7dca
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62239538"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370789"
 ---
-# <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX denetimleri: ActiveX denetiminde veri bağlama işlemini kullanma
+# <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma
 
-ActiveX denetimleri daha güçlü kullanımlarını sağlayan bir veritabanında belirli bir alanla bağlamak için denetimin bir özelliğine veri bağlama biridir. Bir kullanıcı bu bağlı özelliğin veri değiştirdiğinde, Denetim veritabanı ve kayıt alanı güncelleştirilmesi istekleri bildirir. Veritabanı denetimi başarılı veya başarısız istek sonra bildirir.
+ActiveX denetimlerinin en güçlü kullanımlarından biri, denetimin bir özelliğinin veritabanındaki belirli bir alana bağlanmasını sağlayan veri bağlamadır. Bir kullanıcı bu bağlı özellikteki verileri değiştirirse, denetim veritabanını bilgilendirir ve kayıt alanının güncelleştirilmesini ister. Veritabanı daha sonra isteğin başarısını veya başarısızlığını denetler.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
 
-Bu makale, görevin denetim yan kapsar. Veri bağlama etkileşimleri veritabanı ile uygulama denetim kapsayıcısı sorumluluğundadır. Veritabanı etkileşimleri kapsayıcınızda nasıl yönettiğiniz, bu belgenin kapsamı dışındadır olduğu. Veri bağlama için denetimin nasıl hazırlamanız bu makalenin geri kalanında açıklanmıştır.
+Bu makale, görevinizin denetim tarafını kapsar. Veritabanı ile veri bağlama etkileşimleri uygulanması denetim kapsayıcısorumluluğundadır. Kapsayıcınızdaki veritabanı etkileşimlerini nasıl yönetmiş olduğunuz bu belgenin kapsamı dışındadır. Veri bağlama için denetimi nasıl hazırlayacağınız bu makalenin geri kalanında açıklanmıştır.
 
-![Bir veri kavramsal diyagramı&#45;bağlı denetim](../mfc/media/vc374v1.gif "veri kavramsal diyagramı&#45;bağlı denetimi") <br/>
-Veriye bağlı denetim kavramsal diyagramı
+![Bir veri&#45;bağlı denetiminin kavramsal diyagramı](../mfc/media/vc374v1.gif "Bir veri&#45;bağlı denetiminin kavramsal diyagramı") <br/>
+Veriye Bağlı Kontrolün Kavramsal Diyagramı
 
-`COleControl` Sınıfı uygulamak için kolay bir işlem bağlama verilerini iki üye işlevleri sağlar. İlk işlev [BoundPropertyRequestEdit](../mfc/reference/colecontrol-class.md#boundpropertyrequestedit), özellik değerini değiştirmek için izin istemek için kullanılır. [BoundPropertyChanged](../mfc/reference/colecontrol-class.md#boundpropertychanged), ikinci işlev, özellik değeri başarıyla değiştirildikten sonra çağırılır.
+Sınıf, `COleControl` veri bağlamayı kolay bir işlem yapan iki üye işlev sağlar. İlk işlev, [BoundPropertyRequestEdit](../mfc/reference/colecontrol-class.md#boundpropertyrequestedit), özellik değerini değiştirmek için izin istemek için kullanılır. İkinci işlev olan [BoundPropertyChanged,](../mfc/reference/colecontrol-class.md#boundpropertychanged)özellik değeri başarıyla değiştirildikten sonra çağrılır.
 
-Bu makalede, aşağıdaki konular ele alınmaktadır:
+Bu makalede aşağıdaki konular ele:
 
-- [Bağlanabilir bir stok özelliği oluşturma](#vchowcreatingbindablestockproperty)
+- [Bindable Stok Özelliği Oluşturma](#vchowcreatingbindablestockproperty)
 
-- [Bağlanabilir alma/ayarlama yöntemi oluşturma](#vchowcreatingbindablegetsetmethod)
+- [Bindable Get/Set Yöntemi Oluşturma](#vchowcreatingbindablegetsetmethod)
 
-##  <a name="vchowcreatingbindablestockproperty"></a> Bağlanabilir bir stok özelliği oluşturma
+## <a name="creating-a-bindable-stock-property"></a><a name="vchowcreatingbindablestockproperty"></a>Bindable Stok Özelliği Oluşturma
 
-Size daha isteyeceksinizdir olmasına rağmen bir verilere bağlı stok özelliği oluşturmak mümkün bir [bağlanabilir alma/ayarlama yöntemi](#vchowcreatingbindablegetsetmethod).
+Bağlayıcı bir [get/set yöntemi](#vchowcreatingbindablegetsetmethod)isteme olasılığınız daha yüksek olsa da, verilere bağlı bir stok özelliği oluşturmak mümkündür.
 
 > [!NOTE]
-> Stok özellikleri sahip `bindable` ve `requestedit` varsayılan öznitelikler.
+> Stok özellikleri `bindable` varsayılan `requestedit` olarak ve öznitelikleri ne var.
 
-#### <a name="to-add-a-bindable-stock-property-using-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı'nı kullanarak bağlanabilir bir stok özelliği eklemek için
+#### <a name="to-add-a-bindable-stock-property-using-the-add-property-wizard"></a>Özellik Ekle Sihirbazı'nı kullanarak bağlanabilir bir stok özelliği eklemek için
 
-1. Bir proje kullanmaya başlamak [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md).
+1. [MFC ActiveX Denetim Sihirbazı'nı](../mfc/reference/mfc-activex-control-wizard.md)kullanarak proje başlatın.
 
-1. Denetiminiz için arabirimin düğümüne sağ tıklayın.
+1. Denetiminiz için arabirim düğümüne sağ tıklayın.
 
-   Bu kısayol menüsü açılır.
+   Bu kısayol menüsünü açar.
 
-1. Kısayol menüsünden tıklayın **Ekle** ve ardından **Özellik Ekle**.
+1. Kısayol menüsünden **Ekle'yi** tıklatın ve ardından **Özellik Ekle'yi**tıklatın.
 
-1. Girişlerden birini **özellik adı** aşağı açılan listesi. Örneğin, seçebileceğiniz **metin**.
+1. **Özellik Adı** açılır listesinden girişlerden birini seçin. Örneğin, **Metin'i**seçebilirsiniz.
 
-   Çünkü **metin** bir stok özelliği **bağlanabilir** ve **requestedit** öznitelikleri zaten denetlenir.
+   **Metin** bir stok özelliği olduğundan, **bağlanabilir** ve **istenen** öznitelikleri zaten denetlenir.
 
-1. Aşağıdaki onay kutularından birini seçin **IDL öznitelikleri** sekmesi: **displaybind** ve **defaultbind** öznitelikleri, projenin özellik tanımı eklemek için. IDL dosyası. Bu öznitelikler denetim kullanıcıya görünür yapabilir ve stok özelliği varsayılan bağlanılabilir özellik.
+1. **IDL Öznitelikleri** sekmesinden aşağıdaki onay kutularını seçin: projenin özelliği tanımına öznitelikleri eklemek için **displaybind** ve **defaultbind.** IDL dosyası. Bu öznitelikler denetimi kullanıcı tarafından görünür hale getirmek ve stok özelliği varsayılan bağlanabilir özelliği olun.
 
-Bu noktada, denetim bir veri kaynağından verileri görüntüleyebilirsiniz, ancak kullanıcı veri alanlarını güncelleştirmeniz mümkün olmayacaktır. Ayrıca verileri güncelleştirme, değişiklik yapabilmek için denetim istiyorsanız `OnOcmCommand` [OnOcmCommand](../mfc/mfc-activex-controls-subclassing-a-windows-control.md) işlevi şu şekilde aramak için:
+Bu noktada, denetiminiz bir veri kaynağından veri görüntüleyebilir, ancak kullanıcı veri alanlarını güncelleştiremez. Denetiminizin verileri de güncelleyebilmesini istiyorsanız, `OnOcmCommand` [OnOcmCommand](../mfc/mfc-activex-controls-subclassing-a-windows-control.md) işlevini aşağıdaki gibi görünecek şekilde değiştirin:
 
 [!code-cpp[NVC_MFC_AxData#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_1.cpp)]
 
-Artık denetim kaydolacak proje oluşturabilirsiniz. Bir iletişim kutusu denetimi eklediğinizde **veri alanı** ve **veri kaynağı** özellikler eklendi ve artık bir veri kaynağı ve Denetimde görüntülenecek alan seçebilirsiniz.
+Artık denetimi kaydedecek projeyi oluşturabilirsiniz. Denetimi bir iletişim kutusuna eklediğinizde, **Veri Alanı** ve **Veri Kaynağı** özellikleri eklenmiş olur ve artık denetimde görüntülenecek bir veri kaynağı ve alan seçebilirsiniz.
 
-##  <a name="vchowcreatingbindablegetsetmethod"></a> Bağlanabilir alma/ayarlama yöntemi oluşturma
+## <a name="creating-a-bindable-getset-method"></a><a name="vchowcreatingbindablegetsetmethod"></a>Bindable Get/Set Yöntemi Oluşturma
 
-Bir veri alma/ayarlama yöntemi bağlantılı yanı sıra da oluşturabilirsiniz bir [bağlanılabilir stok özellik](#vchowcreatingbindablestockproperty).
+Veriye bağlı get/set yöntemine ek olarak, [bağlanabilir](#vchowcreatingbindablestockproperty)bir stok özelliği de oluşturabilirsiniz.
 
 > [!NOTE]
-> Bu yordamı, bir Windows denetimini alt sınıflara ayıran proje bir ActiveX denetimi olduğunu varsayar.
+> Bu yordam, windows denetimi alt sınıfları bir ActiveX denetim proje varsayıyor.
 
-#### <a name="to-add-a-bindable-getset-method-using-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı'nı kullanarak bir bağlanabilir alma/ayarlama yöntemini eklemek için
+#### <a name="to-add-a-bindable-getset-method-using-the-add-property-wizard"></a>Özellik Ekle Sihirbazı'nı kullanarak bağlayıcı kutulanabilir get/set yöntemi eklemek için
 
-1. Denetiminizin proje yükleyin.
+1. Denetiminizin projesini yükleyin.
 
-1. Üzerinde **denetim ayarları** sayfasında, denetimi alt pencere sınıfı seçin. Örneğin, bir düzenleme denetimini alt sınıf isteyebilirsiniz.
+1. Denetim **Ayarları** sayfasında, denetim için alt sınıf için bir pencere sınıfı seçin. Örneğin, bir EDIT denetimini alt sınıfa almak isteyebilirsiniz.
 
-1. Denetiminizin proje yükleyin.
+1. Denetiminizin projesini yükleyin.
 
-1. Denetiminiz için arabirimin düğümüne sağ tıklayın.
+1. Denetiminiz için arabirim düğümüne sağ tıklayın.
 
-   Bu kısayol menüsü açılır.
+   Bu kısayol menüsünü açar.
 
-1. Kısayol menüsünden tıklayın **Ekle** ve ardından **Özellik Ekle**.
+1. Kısayol menüsünden **Ekle'yi** tıklatın ve ardından **Özellik Ekle'yi**tıklatın.
 
-1. Özellik adı, türü **özellik adı** kutusu. Kullanım `MyProp` bu örneğin.
+1. **Özellik Adı** kutusuna özellik adını yazın. Bu `MyProp` örnek için kullanın.
 
-1. Bir veri türünden seçin **özellik türü** aşağı açılan liste kutusu. Kullanım **kısa** bu örneğin.
+1. **Özellik Türü** açılır liste kutusundan bir veri türü seçin. Bu örnek için **kısa** kullanın.
 
-1. İçin **uygulama türü**, tıklayın **Get/Set yöntemleri**.
+1. **Uygulama Türü** **için, Yöntemleri Al/Ayarla'yı**tıklatın.
 
-1. IDL öznitelikleri sekmesinden aşağıdaki onay kutularını işaretleyin: **bağlanabilir**, **requestedit**, **displaybind**, ve **defaultbind** eklemek için Projenin özellik tanımı öznitelikleri. IDL dosyası. Bu öznitelikler denetim kullanıcıya görünür yapabilir ve stok özelliği varsayılan bağlanılabilir özellik.
+1. IDL Öznitelikleri sekmesinden aşağıdaki onay kutularını seçin: **bindable**, **requestedit**, **displayedd**, ve **varsayılan bindirilmiş** projenin özelliği tanımına öznitelikleri eklemek için . IDL dosyası. Bu öznitelikler denetimi kullanıcı tarafından görünür hale getirmek ve stok özelliği varsayılan bağlanabilir özelliği olun.
 
 1. **Son**'a tıklayın.
 
-1. Gövde metni değiştirme `SetMyProp` aşağıdaki kodu içeren işlev:
+1. `SetMyProp` Aşağıdaki kodu içererek işlevin gövdesini değiştirin:
 
    [!code-cpp[NVC_MFC_AxData#2](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_2.cpp)]
 
-1. Parametre geçirilen `BoundPropertyChanged` ve `BoundPropertyRequestEdit` işlevleri, dispid özelliğinin id() özniteliği için bir özellik için geçirilen parametre. IDL dosyası.
+1. Parametre geçirilen `BoundPropertyChanged` ve `BoundPropertyRequestEdit` işlevleri özelliği, hangi parametre id() özelliği için geçirilen parametre dispid olduğunu . IDL dosyası.
 
-1. Değiştirme [OnOcmCommand](../mfc/mfc-activex-controls-subclassing-a-windows-control.md) aşağıdaki kodu içerecek şekilde işlev:
+1. [OnOcmCommand](../mfc/mfc-activex-controls-subclassing-a-windows-control.md) işlevini aşağıdaki kodu içererek değiştirin:
 
    [!code-cpp[NVC_MFC_AxData#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_1.cpp)]
 
-1. Değiştirme `OnDraw` aşağıdaki kodu içeren işlev:
+1. `OnDraw` İşlevi aşağıdaki kodu içererek değiştirin:
 
    [!code-cpp[NVC_MFC_AxData#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_3.cpp)]
 
-1. Üye değişkenleri aşağıdaki tanımları (oluşturucular), denetim sınıfı için üst bilgi dosyası üst bilgi dosyasının ortak bölümüne ekleyin:
+1. Üstbilgi dosyasının ortak bölümüne denetim sınıfınız için üstbilgi dosyası, üye değişkenler için aşağıdaki tanımları (oluşturucular) ekleyin:
 
    [!code-cpp[NVC_MFC_AxData#4](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_4.h)]
 
-1. Aşağıdaki satırı son satırında olun `DoPropExchange` işlevi:
+1. Aşağıdaki satırı `DoPropExchange` işlevdeki son satır yapın:
 
    [!code-cpp[NVC_MFC_AxData#5](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_5.cpp)]
 
-1. Değiştirme `OnResetState` aşağıdaki kodu içeren işlev:
+1. `OnResetState` İşlevi aşağıdaki kodu içererek değiştirin:
 
    [!code-cpp[NVC_MFC_AxData#6](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_6.cpp)]
 
-1. Değiştirme `GetMyProp` aşağıdaki kodu içeren işlev:
+1. `GetMyProp` İşlevi aşağıdaki kodu içererek değiştirin:
 
    [!code-cpp[NVC_MFC_AxData#7](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_7.cpp)]
 
-Artık denetim kaydolacak proje oluşturabilirsiniz. Bir iletişim kutusu denetimi eklediğinizde **veri alanı** ve **veri kaynağı** özellikler eklendi ve artık bir veri kaynağı ve Denetimde görüntülenecek alan seçebilirsiniz.
+Artık denetimi kaydedecek projeyi oluşturabilirsiniz. Denetimi bir iletişim kutusuna eklediğinizde, **Veri Alanı** ve **Veri Kaynağı** özellikleri eklenmiş olur ve artık denetimde görüntülenecek bir veri kaynağı ve alan seçebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
+[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)

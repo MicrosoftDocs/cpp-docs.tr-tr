@@ -1,5 +1,5 @@
 ---
-title: CComSafeArrayBound sınıfı
+title: CComSafeArrayBound Sınıfı
 ms.date: 05/06/2019
 f1_keywords:
 - CComSafeArrayBound
@@ -12,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeArrayBound class
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
-ms.openlocfilehash: 0386092ac26e71fcf5e840594a6b07f56cc9badd
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 2c2f8b787e5366ec893538a88049f6f53dc35caf
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739744"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81327378"
 ---
-# <a name="ccomsafearraybound-class"></a>CComSafeArrayBound sınıfı
+# <a name="ccomsafearraybound-class"></a>CComSafeArrayBound Sınıfı
 
-Bu sınıf, [safearraybound](/windows/win32/api/oaidl/ns-oaidl-safearraybound) yapısına yönelik bir sarmalayıcıdır.
+Bu sınıf [SAFEARRAYBOUND](/windows/win32/api/oaidl/ns-oaidl-safearraybound) yapısı için bir sarmalayıcıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,30 +35,30 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
 
 |||
 |-|-|
-|[CComSafeArrayBound](#ccomsafearraybound)|Oluşturucu.|
-|[GetCount](#getcount)|Öğe sayısını döndürmek için bu yöntemi çağırın.|
-|[Getharfe göre sınırı](#getlowerbound)|Alt sınır döndürmek için bu yöntemi çağırın.|
-|[Getüstsınırı](#getupperbound)|Üst sınırı döndürmek için bu yöntemi çağırın.|
+|[CcomsafeArrayBound](#ccomsafearraybound)|Oluşturucu.|
+|[GetCount](#getcount)|Öğe sayısını döndürmek için bu yöntemi arayın.|
+|[Getlowerbound](#getlowerbound)|Alt sınırı döndürmek için bu yöntemi arayın.|
+|[Getupperbound](#getupperbound)|Üst sınırı döndürmek için bu yöntemi arayın.|
 |[SetCount](#setcount)|Öğe sayısını ayarlamak için bu yöntemi çağırın.|
-|[Setalmi sınırı](#setlowerbound)|Alt sınır ayarlamak için bu yöntemi çağırın.|
+|[SetLowerBound](#setlowerbound)|Alt sınırı ayarlamak için bu yöntemi arayın.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[işleç =](#operator_eq)|`CComSafeArrayBound` ' İ yeni bir değere ayarlar.|
+|[işleç =](#operator_eq)|Yeni `CComSafeArrayBound` bir değer ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, [CComSafeArray](../../atl/reference/ccomsafearray-class.md)tarafından `SAFEARRAYBOUND` kullanılan yapı için bir sarmalayıcıdır. Bir `CComSafeArray` nesnenin tek boyutunun ve içerdiği öğe sayısının üst ve alt sınırlarını sorgulamak ve ayarlamak için yöntemler sağlar. Çok boyutlu `CComSafeArray` bir nesne, her boyut `CComSafeArrayBound` için bir dizi nesne kullanır. Bu nedenle, [GetCount](#getcount)gibi yöntemleri kullanırken, bu yöntemin çok boyutlu bir dizideki toplam öğe sayısını döndürmeyeceği farkında olun.
+Bu sınıf `SAFEARRAYBOUND` [CComSafeArray](../../atl/reference/ccomsafearray-class.md)tarafından kullanılan yapı için bir sarmalayıcıdır. Bir `CComSafeArray` nesnenin tek bir boyutunun üst ve alt sınırlarını ve içerdiği öğe sayısını sorgulama ve ayarlama yöntemleri sağlar. Çok boyutlu `CComSafeArray` bir nesne, `CComSafeArrayBound` her boyut için bir dizi nesne kullanır. Bu nedenle, [GetCount](#getcount)gibi yöntemleri kullanırken, bu yöntemin çok boyutlu bir dizideki toplam öğe sayısını döndürmeyeceğini unutmayın.
 
-**Üstbilgi:** atlsafe. h
+**Üstbilgi:** atlsafe.h
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlsafe. h
+**Üstbilgi:** atlsafe.h
 
-##  <a name="ccomsafearraybound"></a>CComSafeArrayBound::CComSafeArrayBound
+## <a name="ccomsafearrayboundccomsafearraybound"></a><a name="ccomsafearraybound"></a>Ccomsafearraybound::ccomsafearraybound
 
 Oluşturucu.
 
@@ -71,16 +71,16 @@ CComSafeArrayBound(ULONG ulCount = 0, LONG lLowerBound = 0) throw();
 *ulCount*<br/>
 Dizideki öğelerin sayısı
 
-*Lall sınırı*<br/>
-Dizinin numaralandırıldığı alt sınır.
+*lLowerBound*<br/>
+Dizinin numaralandığı alt sınır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Diziye bir C++ programdan erişiliyorsa, alt sınırın 0 olarak tanımlanması önerilir. Dizi Visual Basic gibi diğer dillerle birlikte kullanılacaksa, farklı bir alt sınır değeri kullanılması tercih edilebilir.
+Diziye bir C++ programından erişilecekse, alt sınır 0 olarak tanımlanması önerilir. Dizi Visual Basic gibi diğer dillerde kullanılacaksa, farklı bir alt sınır değeri kullanmak tercih edilebilir.
 
-##  <a name="getcount"></a>CComSafeArrayBound:: GetCount
+## <a name="ccomsafearrayboundgetcount"></a><a name="getcount"></a>Ccomsafearraybound::getcount
 
-Öğe sayısını döndürmek için bu yöntemi çağırın.
+Öğe sayısını döndürmek için bu yöntemi arayın.
 
 ```
 ULONG GetCount() const throw();
@@ -88,15 +88,15 @@ ULONG GetCount() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe sayısını döndürür.
+Öğe sayısını verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişkili `CComSafeArray` nesne bir çok boyutlu diziyi temsil ediyorsa, bu yöntem yalnızca en sağdaki boyuttaki öğelerin toplam sayısını döndürür. Toplam öğe sayısını almak için [CComSafeArray:: GetCount](../../atl/reference/ccomsafearray-class.md#getcount) kullanın.
+İlişkili `CComSafeArray` nesne çok boyutlu bir diziyi temsil ederse, bu yöntem yalnızca en doğru boyuttaki toplam öğe sayısını döndürecektir. Toplam öğe sayısını elde etmek için [CComSafeArray::GetCount'ı](../../atl/reference/ccomsafearray-class.md#getcount) kullanın.
 
-##  <a name="getlowerbound"></a>CComSafeArrayBound:: Getharfe dayalı
+## <a name="ccomsafearrayboundgetlowerbound"></a><a name="getlowerbound"></a>Ccomsafearraybound::GetLowerBound
 
-Alt sınır döndürmek için bu yöntemi çağırın.
+Alt sınırı döndürmek için bu yöntemi arayın.
 
 ```
 LONG GetLowerBound() const throw();
@@ -104,11 +104,11 @@ LONG GetLowerBound() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CComSafeArrayBound` Nesnenin alt sınırını döndürür.
+Nesnenin alt sınırını `CComSafeArrayBound` döndürür.
 
-##  <a name="getupperbound"></a>CComSafeArrayBound:: Getüstsınırı
+## <a name="ccomsafearrayboundgetupperbound"></a><a name="getupperbound"></a>Ccomsafearraybound::Getupperbound
 
-Üst sınırı döndürmek için bu yöntemi çağırın.
+Üst sınırı döndürmek için bu yöntemi arayın.
 
 ```
 LONG GetUpperBound() const throw();
@@ -116,15 +116,15 @@ LONG GetUpperBound() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CComSafeArrayBound` Nesnenin üst sınırını döndürür.
+Nesnenin üst sınırını `CComSafeArrayBound` döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üst sınır, öğe sayısına ve alt sınır değerine bağlıdır. Örneğin, alt sınır 0 ise ve öğe sayısı 10 ise, üst sınır otomatik olarak 9 olarak ayarlanır.
+Üst sınır, öğelerin sayısına ve alt sınır değerine bağlıdır. Örneğin, alt sınır 0 ve eleman sayısı 10 ise, üst sınır otomatik olarak 9 olarak ayarlanır.
 
-##  <a name="operator_eq"></a>CComSafeArrayBound:: operator =
+## <a name="ccomsafearrayboundoperator-"></a><a name="operator_eq"></a>CComSafeArrayBound::operatör =
 
-`CComSafeArrayBound` ' İ yeni bir değere ayarlar.
+Yeni `CComSafeArrayBound` bir değer ayarlar.
 
 ```
 CComSafeArrayBound& operator= (const CComSafeArrayBound& bound) throw();
@@ -133,21 +133,21 @@ CComSafeArrayBound& operator= (ULONG ulCount) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*bağlı*<br/>
-A `CComSafeArrayBound` nesne.
+*Bağlı*<br/>
+Bir `CComSafeArrayBound` nesnesi.
 
 *ulCount*<br/>
-Öğe sayısı.
+Öğelerin sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CComSafeArrayBound` Nesneye bir işaretçi döndürür.
+Nesneye bir `CComSafeArrayBound` işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne, var olan `CComSafeArrayBound`veya öğe sayısını sağlayarak atanabilir veya alt sınır varsayılan olarak 0 olarak ayarlanır. `CComSafeArrayBound`
+Nesne `CComSafeArrayBound` varolan `CComSafeArrayBound`bir kullanarak veya eleman sayısını sağlayarak atanabilir, bu durumda alt sınır varsayılan olarak 0 olarak ayarlanır.
 
-##  <a name="setcount"></a>CComSafeArrayBound:: SetCount
+## <a name="ccomsafearrayboundsetcount"></a><a name="setcount"></a>Ccomsafearraybound::setsayısı
 
 Öğe sayısını ayarlamak için bu yöntemi çağırın.
 
@@ -158,15 +158,15 @@ ULONG SetCount(ULONG ulCount) throw();
 ### <a name="parameters"></a>Parametreler
 
 *ulCount*<br/>
-Öğe sayısı.
+Öğelerin sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CComSafeArrayBound` Nesnedeki öğe sayısını döndürür.
+Nesnedeki `CComSafeArrayBound` öğe sayısını döndürür.
 
-##  <a name="setlowerbound"></a>CComSafeArrayBound:: Setalni sınırı
+## <a name="ccomsafearrayboundsetlowerbound"></a><a name="setlowerbound"></a>Ccomsafearraybound::setlowerbound
 
-Alt sınır ayarlamak için bu yöntemi çağırın.
+Alt sınırı ayarlamak için bu yöntemi arayın.
 
 ```
 LONG SetLowerBound(LONG lLowerBound) throw();
@@ -174,19 +174,19 @@ LONG SetLowerBound(LONG lLowerBound) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Lall sınırı*<br/>
+*lLowerBound*<br/>
 Alt sınır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CComSafeArrayBound` Nesnenin yeni alt sınırını döndürür.
+Nesnenin yeni alt `CComSafeArrayBound` sınırını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Diziye bir görsel C++ programdan erişiliyorsa, alt sınırın 0 olarak tanımlanması önerilir. Dizi Visual Basic gibi diğer dillerle birlikte kullanılacaksa, farklı bir alt sınır değeri kullanılması tercih edilebilir.
+Diziye Visual C++ programından erişilecekse, alt sınır 0 olarak tanımlanması önerilir. Dizi Visual Basic gibi diğer dillerde kullanılacaksa, farklı bir alt sınır değeri kullanmak tercih edilebilir.
 
-Üst sınır, öğe sayısına ve alt sınır değerine bağlıdır. Örneğin, alt sınır 0 ise ve öğe sayısı 10 ise, üst sınır otomatik olarak 9 olarak ayarlanır.
+Üst sınır, öğelerin sayısına ve alt sınır değerine bağlıdır. Örneğin, alt sınır 0 ve eleman sayısı 10 ise, üst sınır otomatik olarak 9 olarak ayarlanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

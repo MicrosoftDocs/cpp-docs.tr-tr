@@ -1,5 +1,5 @@
 ---
-title: Iaxwinhostwindow arabirimi
+title: IAxWinHostWindow Arabirimi
 ms.date: 11/04/2016
 f1_keywords:
 - IAxWinHostWindow
@@ -13,19 +13,19 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinHostWindow interface
 ms.assetid: 9821c035-cd52-4c46-b58a-9278064f09b4
-ms.openlocfilehash: 4bdfdf76b48c1e9f2c06213ee25cd15a113525dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ebecc611660a788ce59bb11beb95bd60eacaf01b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62276113"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81329992"
 ---
-# <a name="iaxwinhostwindow-interface"></a>Iaxwinhostwindow arabirimi
+# <a name="iaxwinhostwindow-interface"></a>IAxWinHostWindow Arabirimi
 
-Bu arabirim, Denetim ve onun ana nesneyi düzenlemek için yöntemler sağlar.
+Bu arabirim, bir denetimi ve ana bilgisayar nesnesini işlemek için yöntemler sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,29 +39,29 @@ interface IAxWinHostWindow : IUnknown
 
 |||
 |-|-|
-|[AttachControl](#attachcontrol)|Varolan bir denetimi için konak nesnesi ekler.|
-|[CreateControl](#createcontrol)|Bir denetimi oluşturur ve ana bilgisayar nesnesine iliştirir.|
-|[CreateControlEx](#createcontrolex)|Bir denetimi oluşturur, ana bilgisayar nesnesine iliştirir ve isteğe bağlı olarak bir olay işleyicisini ayarlar.|
-|[QueryControl](#querycontrol)|Barındırılan denetim için bir arabirim işaretçisini döndürür.|
-|[SetExternalDispatch](#setexternaldispatch)|Dış ayarlar `IDispatch` arabirimi.|
-|[SetExternalUIHandler](#setexternaluihandler)|Dış ayarlar `IDocHostUIHandlerDispatch` arabirimi.|
+|[Ekteki Kontrol](#attachcontrol)|Varolan bir denetimi ana bilgisayar nesnesine bağlar.|
+|[Createcontrol](#createcontrol)|Denetim oluşturur ve ana bilgisayar nesnesine bağlar.|
+|[CreateControlEx](#createcontrolex)|Denetim oluşturur, ana bilgisayar nesnesine bağlar ve isteğe bağlı olarak bir olay işleyicisi kurar.|
+|[SorguDenetimi](#querycontrol)|Bir arabirim işaretçisini barındırılan denetime döndürür.|
+|[SetExternalDispatch](#setexternaldispatch)|Dış `IDispatch` arabirimi ayarlar.|
+|[SetExternalUIHandler](#setexternaluihandler)|Dış `IDocHostUIHandlerDispatch` arabirimi ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arabirim, nesneler barındırma ATL'nin ActiveX denetimi tarafından kullanıma sunulur. Oluşturma ve/veya ana bilgisayar nesnesine bir arabirim barındırılan denetimden almak ya da dış dispinterface veya kullanıcı Arabirimi işleyicisi kullanmak için Web tarayıcısını barındırırken ayarlamak için bir denetim eklemek için bu arabirimdeki yöntemleri çağırın.
+Bu arabirim, ATL'nin ActiveX denetim barındırma nesneleri tarafından ortaya çıkarır. Barındırılan bir denetim oluşturmak ve/veya ana bilgisayar nesnesine denetim eklemek, barındırılan denetimden bir arabirim almak veya Web tarayıcısını barındırırken kullanılmak üzere harici arabirimi veya Kullanıcı Arabirimi işleyicisini ayarlamak için bu arabirimdeki yöntemleri çağırın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Bu arabirim tanımı aşağıda gösterildiği gibi IDL veya C++ olarak kullanılabilir.
+Bu arabirimin tanımı aşağıda gösterildiği gibi IDL veya C++ olarak kullanılabilir.
 
 |Tanım türü|Dosya|
 |---------------------|----------|
-|IDL|ATLIFace.idl|
-|C++|ATLIFace.h (ATLBase.h içinde de dahil)|
+|ıdl|ATLIFace.idl|
+|C++|ATLIFace.h (Ayrıca ATLBase.h dahil)|
 
-##  <a name="attachcontrol"></a>  IAxWinHostWindow::AttachControl
+## <a name="iaxwinhostwindowattachcontrol"></a><a name="attachcontrol"></a>IAxWinHostWindow::AttachControl
 
-Var olan (ve daha önce başlatılmış) bir denetim tarafından tanımlanan penceresini kullanarak konak nesnesi ekler *hWnd*.
+*hWnd*tarafından tanımlanan pencereyi kullanarak ana bilgisayar nesnesine varolan (ve daha önce başlatma) bir denetim bağlar.
 
 ```
 STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
@@ -69,19 +69,19 @@ STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnkControl*<br/>
-[in] Bir işaretçi `IUnknown` konak nesnesine eklenecek denetimin arabirimi.
+*pUnkKontrol*<br/>
+[içinde] Ana bilgisayar `IUnknown` nesnesine eklenecek denetimin arabirimine işaretçi.
 
-*hWnd*<br/>
-[in] Tanıtıcı penceresine barındırmak için kullanılacak.
+*Hwnd*<br/>
+[içinde] Barındırma için kullanılacak pencerenin tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="createcontrol"></a>  IAxWinHostWindow::CreateControl
+## <a name="iaxwinhostwindowcreatecontrol"></a><a name="createcontrol"></a>IAxWinHostWindow::CreateControl
 
-Bir denetimi oluşturur, onu başlatır ve tarafından tanımlanan penceresinde barındıran *hWnd*.
+Bir denetim oluşturur, başharflerini ilke landırır ve *hWnd*tarafından tanımlanan pencerede barındırışlar.
 
 ```
 STDMETHOD(CreateControl)(
@@ -93,29 +93,29 @@ STDMETHOD(CreateControl)(
 ### <a name="parameters"></a>Parametreler
 
 *lpTricsData*<br/>
-[in] Denetimi oluşturmak için tanımlayan bir dize. (Küme ayraçları içermelidir) CLSID, program kimliği, URL veya ham HTML olabilir (önek **MSHTML:**).
+[içinde] Oluşturmak için denetimi tanımlayan bir dize. CLSID (ayraçları içermelidir), ProgID, URL veya ham HTML **(MSHTML**tarafından önceden belirlenmiş: ) olabilir.
 
-*hWnd*<br/>
-[in] Tanıtıcı penceresine barındırmak için kullanılacak.
+*Hwnd*<br/>
+[içinde] Barındırma için kullanılacak pencerenin tutamacı.
 
 *pStream*<br/>
-[in] Denetim için başlatma verilerini içeren bir akış için bir arabirim işaretçisi. NULL olabilir.
+[içinde] Denetim için başlatma verilerini içeren bir akış için arabirim işaretçisi. NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu pencere, bu arabirim iletilerin denetimine yansıtılır ve diğer kapsayıcı özellikleri çalışır böylece gösterme konak nesnesi tarafından sınıflandırma.
+Bu pencere, iletilerin denetime yansıtılabilmesi ve diğer kapsayıcı özelliklerinin çalışabilmesi için bu arabirimi açığa çıkaran ana bilgisayar nesnesi tarafından alt sınıflanır.
 
-Bu yöntemin çağrılması için arama eşdeğer [IAxWinHostWindow::CreateControlEx](#createcontrolex).
+Bu yöntemi arama [iAxWinHostWindow arama eşdeğerdir::CreateControlEx](#createcontrolex).
 
-Lisanslı bir ActiveX denetimi oluşturmak için bkz [IAxWinHostWindowLic::CreateControlLic](../../atl/reference/iaxwinhostwindowlic-interface.md#createcontrollicex).
+Lisanslı activex denetimi oluşturmak için Bkz. [IAxWinHostWindowLic::CreateControlLic](../../atl/reference/iaxwinhostwindowlic-interface.md#createcontrollicex).
 
-##  <a name="createcontrolex"></a>  IAxWinHostWindow::CreateControlEx
+## <a name="iaxwinhostwindowcreatecontrolex"></a><a name="createcontrolex"></a>IAxWinHostWindow:CreateControlEx
 
-Bir ActiveX denetimi oluşturur, onu başlatır ve benzer şekilde belirtilen pencerede barındırır [IAxWinHostWindow::CreateControl](#createcontrol).
+ActiveX denetimi oluşturur, başlatılmasını sağlar ve [iAxWinHostWindow](#createcontrol)benzer belirtilen pencerede barındırır::CreateControl .
 
 ```
 STDMETHOD(CreateControlEx)(
@@ -130,34 +130,34 @@ STDMETHOD(CreateControlEx)(
 ### <a name="parameters"></a>Parametreler
 
 *lpTricsData*<br/>
-[in] Denetimi oluşturmak için tanımlayan bir dize. (Küme ayraçları içermelidir) CLSID, program kimliği, URL veya ham HTML olabilir (ön eki **MSHTML:**).
+[içinde] Oluşturmak için denetimi tanımlayan bir dize. CLSID (ayraçlar dahil olmalıdır), ProgID, URL veya ham HTML **(MSHTML**ile önceden belirlenmiş: ) olabilir.
 
-*hWnd*<br/>
-[in] Tanıtıcı penceresine barındırmak için kullanılacak.
+*Hwnd*<br/>
+[içinde] Barındırma için kullanılacak pencerenin tutamacı.
 
 *pStream*<br/>
-[in] Denetim için başlatma verilerini içeren bir akış için bir arabirim işaretçisi. NULL olabilir.
+[içinde] Denetim için başlatma verilerini içeren bir akış için arabirim işaretçisi. NULL olabilir.
 
 *ppUnk*<br/>
-[out] Adresi alacak bir işaretçi `IUnknown` arabirimi oluşturulan denetimi. NULL olabilir.
+[çıkış] Oluşturulan denetimin arabirimini `IUnknown` alacak bir işaretçinin adresi. NULL olabilir.
 
 *riidAdvise*<br/>
-[in] Kapsanan nesne üzerinde giden bir arabirim arabirimi tanımlayıcısı. IID_NULL olabilir.
+[içinde] İçe çıkan nesne üzerinde giden bir arabirimin arabirim tanımlayıcısı. IID_NULL olabilir.
 
 *punkAdvise*<br/>
-[in] Bir işaretçi `IUnknown` arabirimi tarafından belirtilen kapsanan nesne üzerindeki bağlantı noktasına bağlı havuz nesnenin `iidSink`.
+[içinde] Tarafından belirtilen `iidSink` `IUnknown` yer alan nesnenin bağlantı noktasına bağlanacak lavabo nesnesinin arabirimine bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Farklı `CreateControl` yöntemi `CreateControlEx` de yeni oluşturulan denetime bir arabirim işaretçisi alır ve denetimi tarafından tetiklenen olayları almak için bir olay havuzu ayarlamanıza olanak sağlar.
+Yöntemin `CreateControl` aksine, `CreateControlEx` aynı zamanda yeni oluşturulan denetim için bir arabirim işaretçisi almak ve denetim tarafından ateşlenen olayları almak için bir olay lavabo kurmak sağlar.
 
-Lisanslı bir ActiveX denetimi oluşturmak için bkz [IAxWinHostWindowLic::CreateControlLicEx](../../atl/reference/iaxwinhostwindowlic-interface.md#createcontrollicex).
+Lisanslı activex denetimi oluşturmak için Bkz. [IAxWinHostWindowLic::CreateControlLicEx](../../atl/reference/iaxwinhostwindowlic-interface.md#createcontrollicex).
 
-##  <a name="querycontrol"></a>  IAxWinHostWindow::QueryControl
+## <a name="iaxwinhostwindowquerycontrol"></a><a name="querycontrol"></a>IAxWinHostWindow::QueryControl
 
 Barındırılan denetim tarafından sağlanan belirtilen arabirim işaretçisini döndürür.
 
@@ -169,19 +169,19 @@ STDMETHOD(QueryControl)(
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*<br/>
-[in] İstenen denetimin bir arabirim kimliği.
+*Riid*<br/>
+[içinde] İstenmekte olan denetimdeki arabirimin kimliği.
 
-*ppvObject*<br/>
-[out] Oluşturulan denetimi belirtilen arabirim alacak bir işaretçi adresi.
+*ppvNesne*<br/>
+[çıkış] Oluşturulan denetimin belirtilen arabirimini alacak bir işaretçinin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="setexternaldispatch"></a>  IAxWinHostWindow::SetExternalDispatch
+## <a name="iaxwinhostwindowsetexternaldispatch"></a><a name="setexternaldispatch"></a>IAxWinHostWindow::SetExternalDispatch
 
-Kapsanan denetimlere kullanılabilir olan dış dispinterface ayarlar [IDocHostUIHandlerDispatch::GetExternal](../../atl/reference/idochostuihandlerdispatch-interface.md) yöntemi.
+[IDocHostUIHandlerDispatch::GetExternal](../../atl/reference/idochostuihandlerdispatch-interface.md) yöntemi ile denetimleri içerebilecek harici dispinterface'i ayarlar.
 
 ```
 STDMETHOD(SetExternalDispatch)(IDispatch* pDisp);
@@ -190,15 +190,15 @@ STDMETHOD(SetExternalDispatch)(IDispatch* pDisp);
 ### <a name="parameters"></a>Parametreler
 
 *pDisp*<br/>
-[in] Bir işaretçi bir `IDispatch` arabirimi.
+[içinde] `IDispatch` Arabirime işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="setexternaluihandler"></a>  IAxWinHostWindow::SetExternalUIHandler
+## <a name="iaxwinhostwindowsetexternaluihandler"></a><a name="setexternaluihandler"></a>IAxWinHostWindow::SetExternalUIHandler
 
-Dış ayarlamak için bu işlevi çağırın [Idochostuıhandlerdispatch](../../atl/reference/idochostuihandlerdispatch-interface.md) için arabirim `CAxWindow` nesne.
+Nesne için harici [IDocHostUIHandlerDispatch](../../atl/reference/idochostuihandlerdispatch-interface.md) arabirimini `CAxWindow` ayarlamak için bu işlevi arayın.
 
 ```
 STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
@@ -207,15 +207,15 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
 ### <a name="parameters"></a>Parametreler
 
 *pDisp*<br/>
-[in] Bir işaretçi bir `IDocHostUIHandlerDispatch` arabirimi.
+[içinde] `IDocHostUIHandlerDispatch` Arabirime işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev ana bilgisayarın site için sorgu denetimler (örneğin, Web tarayıcı denetimi) tarafından kullanılan `IDocHostUIHandlerDispatch` arabirimi.
+Bu işlev, `IDocHostUIHandlerDispatch` arabirim için ana bilgisayar sitesini sorgulayan denetimler (Web tarayıcıdenetimi gibi) tarafından kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::DontUseNewUseMake class
 - Microsoft::WRL::Details::DontUseNewUseMake::operator new operator
 ms.assetid: 8b38d07b-fc14-4cea-afb9-4c1a7dde0093
-ms.openlocfilehash: 02420f2657c7d7d6a7a0294f0321717a3bb2b5d7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ae67373b4f2f2d4a199b939b06e6f526f1365446
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398543"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371548"
 ---
 # <a name="dontusenewusemake-class"></a>DontUseNewUseMake Sınıfı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,15 +28,15 @@ class DontUseNewUseMake;
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşleç engel `new` içinde `RuntimeClass`. Sonuç olarak, kullanmanız gereken [olun işlevi](make-function.md) yerine.
+'de `RuntimeClass`operatör `new` kullanılmasını önler. Sonuç olarak, bunun yerine [Yap işlevini](make-function.md) kullanmanız gerekir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-Ad                                             | Açıklama
+Adı                                             | Açıklama
 ------------------------------------------------ | ---------------------------------------------------------------------------
-[DontUseNewUseMake::operator yeni](#operator-new) | İşleç aşırı `new` ve içinde kullanılmasını engeller `RuntimeClass`.
+[DontUseNewUseOlun::operatör yeni](#operator-new) | İşleticiaşırı `new` yükler ve 'de `RuntimeClass`kullanılmasını önler.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -44,13 +44,13 @@ Ad                                             | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üstbilgi:** implements.h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="operator-new"></a>DontUseNewUseMake::operator yeni
+## <a name="dontusenewusemakeoperator-new"></a><a name="operator-new"></a>DontUseNewUseOlun::operatör yeni
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 void* operator new(
@@ -62,15 +62,15 @@ void* operator new(
 ### <a name="parameters"></a>Parametreler
 
 *__unnamed0*<br/>
-Bir adlandırılmamış parametresi ayrılacak bellek bayt sayısını belirtir.
+Ayrılacak bellek baytlarının sayısını belirten adsız bir parametre.
 
-*yerleştirme*<br/>
-Ayrılacak türü.
+*Yerleşim*<br/>
+Tahsis edilecek tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleç işlecini aşırı yüklediyseniz ek bağımsız değişkenleri geçirmek için bir yol sağlar `new`.
+İşleç `new`aşırı yüklerseniz ek bağımsız değişkenleri geçirmek için bir yol sağlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç aşırı `new` ve içinde kullanılmasını engeller `RuntimeClass`.
+İşleticiaşırı `new` yükler ve 'de `RuntimeClass`kullanılmasını önler.

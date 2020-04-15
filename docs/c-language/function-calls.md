@@ -7,31 +7,31 @@ helpviewer_keywords:
 - function calls, about function calls
 - function calls
 ms.assetid: 2cfa897d-3874-4820-933c-e624f75d1712
-ms.openlocfilehash: 2402f3fef77b19c0420f0c4a52407a730b53b1d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cce1a888f3e1224822ab4e97c67bf59da4c46fc9
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233235"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81334569"
 ---
 # <a name="function-calls"></a>işlev Çağrıları
 
-A *işlev çağrısı* denetimi ve bağımsız değişken bir işleve geçirir (varsa) bir ifade olan ve biçime sahiptir:
+*İşlev çağrısı,* denetimi ve bağımsız değişkenleri (varsa) bir işleve geçen ve şu forma sahip bir ifadedir:
 
-*ifade* (*ifade listesi*<sub>iyileştirilmiş</sub>)
+*expression* (*expression-list*<sub>opt</sub>)
 
-Burada *ifade* bir işlev adı veya bir işlev adresini değerlendirir ve *ifade listesi* (virgülle ayrılmış) ifadelerin listesidir. Bu ikinci ifadelerin değerleri, işleve geçirilen bağımsız değişkenlerdir. İşlev bir değer döndürmeyen sonra döndüren bir işlev olarak bildirmek `void`.
+*ifadenin* bir işlev adı olduğu veya bir işlev adresine değerlendirildiği ve *ifade listesiifadelerin* (virgülle ayrılmış) listesidir. Bu ikinci ifadelerin değerleri, işleve geçirilen bağımsız değişkenlerdir. İşlev bir değer döndürmezse, onu döndüren `void`bir işlev olarak beyan emişsiniz.
 
-Önceki işlev çağrısında bir bildirimi var, ancak parametreleri hiçbir bilgiyi, bildirilmemiş herhangi bir bağımsız değişken yalnızca olağan aritmetik dönüştürmelerden.
+İşlev çağrısından önce bir bildirim varsa, ancak parametrelerle ilgili bilgi verilmiyorsa, bildirilmemiş bağımsız değişkenler yalnızca olağan aritmetik dönüşümlerden geçer.
 
 > [!NOTE]
->  Değerleri başka bir bağımsız değişkende yan etkileri tarafından değiştirilebilir bağımsız değişkenleri değerleri tanımsız şekilde ifadeleri işlevi bağımsız değişken listesindeki herhangi bir sırada değerlendirilebilir. İşlev çağrısı işleci tarafından tanımlanan bir dizi noktası, yalnızca denetim çağrılan işleve geçirmeden önce tüm yan etkiler bağımsız değişken listesinde değerlendirilir güvence altına alır. (Bağımsız değişkenler yığına itilir sırasını birkaç farklı olduğunu unutmayın.) Bkz: [dizi noktaları](../c-language/c-sequence-points.md) daha fazla bilgi için.
+> İşlev bağımsız değişken listesindeki ifadeler herhangi bir sırada değerlendirilebilir, bu nedenle değerleri başka bir bağımsız değişkenin yan etkileriyle değiştirilebilen bağımsız değişkenlerin tanımlanmamış değerleri vardır. İşlev-arama işleci tarafından tanımlanan sıra noktası, yalnızca denetim çağrılan işleve geçmeden önce bağımsız değişken listesindeki tüm yan etkilerin değerlendirildiğini garanti eder. (Bağımsız değişkenlerin yığına itildiği sıranın ayrı bir konu olduğunu unutmayın.) Daha fazla bilgi için [Sıra Noktaları'na](../c-language/c-sequence-points.md) bakın.
 
-Herhangi bir işlev çağrısındaki tek gereksinim, parantezler önce ifade bir işlev adresini değerlendirmelidir olmasıdır. Başka bir deyişle, bir işlev herhangi bir işlev işaretçisi ifade çağrılabilir.
+Herhangi bir işlev çağrısındaki tek gereksinim, parantez lerden önceki ifadenin bir işlev adresine değerlendirilmesi gerektiğidir. Bu, bir işlevin herhangi bir işlev işaretçisi ifadesi yle çağrılabileceği anlamına gelir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte çağrılır işlev çağrıları bir `switch` deyimi:
+Bu örnek, deyimden `switch` çağrılan işlev çağrılarını göstermektedir:
 
 ```
 int main()
@@ -73,23 +73,23 @@ void work( int number, long (*function)(int i) )
 }
 ```
 
-Bu örnekte, bir işlevi çağırmak `main`,
+Bu örnekte, işlev `main`çağrısı ,
 
 ```
 work( count, lift );
 ```
 
-bir tamsayı değişkeni geçirir `count`ve işlevin adresini `lift` işleve `work`. İşlev adresi için bir işaretçi ifadesi bir işlev tanımlayıcı değerlendirildiğinden yalnızca işlev tanımlayıcı vererek geçirildiğini unutmayın. Bir işlev tanımlayıcı bu şekilde kullanmak için işlev gerekir bildirilemez veya tanımlayıcı kullanılmadan önce tanımlanan; Aksi takdirde, tanımlayıcının tanınmıyor. Bu durumda, bir prototip için de `work` başında verilen `main` işlevi.
+bir sonda değişkeni `count`geçer ve işlevin `lift` adresini `work`işleve . İşlev tanımlayıcısı bir işaretçi ifadesine değer verdiğinden, işlev adresinin yalnızca işlev tanımlayıcısı vererek geçirildiğini unutmayın. Bir işlev tanımlayıcısını bu şekilde kullanmak için, tanımlayıcı kullanılmadan önce işlevin bildirilmesi veya tanımlanması gerekir; aksi takdirde, tanımlayıcı tanınmıyor. Bu durumda, `work` `main` fonksiyonun başında bir prototip verilir.
 
-Parametre `function` içinde `work` bir alan bir işlev işaretçisi olarak bildirilmiştir `int` bağımsız değişkeni ve döndüren bir **uzun** değeri. Parametre adı parantez gereklidir; bunlar olmadan bir işaretçi döndüren bir işlevin bildirimi belirtebilirdiniz bir **uzun** değeri.
+Parametre, `function` bir `int` bağımsız değişkeni alan ve uzun bir değer döndüren bir işlevin işaretçisi olarak bildirilir. **long** `work` Parametre adı etrafında parantez gereklidir; bunlar olmadan, bildirimde işaretçiyi **uzun** bir değere döndüren bir işlev belirtilir.
 
-İşlev `work` içinde seçili fonksiyonu çağıran **için** döngü kullanarak aşağıdaki işlev çağrısı:
+İşlev `work` aşağıdaki işlev çağrısını kullanarak for **döngüsü** içinden seçili işlevi çağırır:
 
 ```
 ( *function )( i );
 ```
 
-Tek bir bağımsız değişken `i`, çağrılan işleve geçirilir.
+Bir bağımsız `i`değişken, çağrılan işleve geçirilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

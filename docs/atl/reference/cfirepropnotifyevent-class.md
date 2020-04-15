@@ -1,5 +1,5 @@
 ---
-title: CFirePropNotifyEvent sınıfı
+title: CFirePropNotifyEvent Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CFirePropNotifyEvent
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - CFirePropNotifyEvent class
 - connection points [C++], notifying of events
 ms.assetid: eb7a563e-6bce-4cdf-8d20-8c6a5307781b
-ms.openlocfilehash: 694127ceccc1d1b55e5da9abca799dff77dcfc60
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 1dfce42176341d74ffc7d9b42f856e71b17bf4f5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417868"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81326963"
 ---
-# <a name="cfirepropnotifyevent-class"></a>CFirePropNotifyEvent sınıfı
+# <a name="cfirepropnotifyevent-class"></a>CFirePropNotifyEvent Sınıfı
 
-Bu sınıf, kapsayıcının havuzuna denetim özelliği değişiklikleriyle ilgili bildirimde bulunmak için yöntemler sağlar.
+Bu sınıf, denetim özelliği değişiklikleri ile ilgili kapsayıcının lavabo bildirmek için yöntemler sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,28 +33,28 @@ class CFirePropNotifyEvent
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-methods"></a>Genel Yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CFirePropNotifyEvent:: FireOnChanged](#fireonchanged)|Se Kapsayıcının havuzuna bir denetim özelliği değiştiğini bildirir.|
-|[CFirePropNotifyEvent:: Fireonrequestedıt](#fireonrequestedit)|Se Kapsayıcının havuzuna bir denetim özelliğinin değiştirmek üzere olduğunu bildirir.|
+|[CfirepropnotifyOlay::fireonchanged](#fireonchanged)|(Statik) Konteynerin lavabosuna bir denetim özelliğinin değiştiğini haber vetir.|
+|[CFirePropNotifyOlay::FireOnRequestedit](#fireonrequestedit)|(Statik) Konteynerin lavabosuna bir kontrol özelliğinin değişmek üzere olduğunu haber vetir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CFirePropNotifyEvent`, kapsayıcının havuzuna bir denetim özelliğinin değiştiğini veya değiştirmek üzere olduğunu bildiren iki yöntem içerir.
+`CFirePropNotifyEvent`bir denetim özelliğinin değiştiğini veya değişmek üzere olduğunu kapsayıcının lavabosuna bildiren iki yöntem vardır.
 
-Denetiminizi uygulayan sınıf `IPropertyNotifySink`türetildiyse, `FireOnRequestEdit` veya `FireOnChanged`çağırdığınızda `CFirePropNotifyEvent` yöntemleri çağrılır. Denetim sınıfınız `IPropertyNotifySink`türetilmediği takdirde, bu işlevlere yapılan çağrılar S_OK döndürür.
+Denetiminizi `IPropertyNotifySink`uygulayan sınıf türetilmişse, `CFirePropNotifyEvent` yöntemleri çağırdığınızda `FireOnRequestEdit` veya `FireOnChanged`. Denetim sınıfınız türetilmiş `IPropertyNotifySink`değilse, bu işlevlere yapılan çağrılar S_OK döndürün.
 
-Denetim oluşturma hakkında daha fazla bilgi için bkz. [ATL öğreticisi](../../atl/active-template-library-atl-tutorial.md).
+Denetim oluşturma hakkında daha fazla bilgi için [ATL Tutorial'a](../../atl/active-template-library-atl-tutorial.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlctl. h
+**Üstbilgi:** atlctl.h
 
-##  <a name="fireonchanged"></a>CFirePropNotifyEvent:: FireOnChanged
+## <a name="cfirepropnotifyeventfireonchanged"></a><a name="fireonchanged"></a>CfirepropnotifyOlay::fireonchanged
 
-Belirtilen nesne özelliğinin değiştiği tüm bağlı [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimlerini (nesnenin her bağlantı noktasında) bilgilendirir.
+Belirtilen nesne özelliğinin değiştiğini tüm bağlı [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimlerini (nesnenin her bağlantı noktasında) bildirir.
 
 ```
 static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
@@ -62,11 +62,11 @@ static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnk dili*<br/>
-'ndaki Bildirimi gönderen nesnenin `IUnknown` işaretçisi.
+*Punk*<br/>
+[içinde] Bildirimi gönderen `IUnknown` nesnenin işaretçisi.
 
-*Dı*<br/>
-'ndaki Değiştirilen özelliğin tanımlayıcısı.
+*Dıspıd*<br/>
+[içinde] Değiştirilen özelliğin tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -74,11 +74,11 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetiminiz bağlantı noktalarını desteklemeseler bile bu işlev güvenli bir şekilde çağrılamaz.
+Denetiminiz bağlantı noktalarını desteklemese bile bu işlevin çağrılması güvenlidir.
 
-##  <a name="fireonrequestedit"></a>CFirePropNotifyEvent:: Fireonrequestedıt
+## <a name="cfirepropnotifyeventfireonrequestedit"></a><a name="fireonrequestedit"></a>CFirePropNotifyOlay::FireOnRequestedit
 
-Belirtilen nesne özelliğinin değiştirmek üzere olduğu tüm bağlı [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimlerini (nesnesinin her bağlantı noktasında) bilgilendirir.
+Belirtilen nesne özelliğinin değişmek üzere olduğunu tüm bağlı [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimleri (nesnenin her bağlantı noktasında) bildirir.
 
 ```
 static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);
@@ -86,11 +86,11 @@ static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnk dili*<br/>
-'ndaki Bildirimi gönderen nesnenin `IUnknown` işaretçisi.
+*Punk*<br/>
+[içinde] Bildirimi gönderen `IUnknown` nesnenin işaretçisi.
 
-*Dı*<br/>
-'ndaki Değiştirilecek özelliğin tanımlayıcısı.
+*Dıspıd*<br/>
+[içinde] Değişmek üzere olan özelliğin tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -98,8 +98,8 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetiminiz bağlantı noktalarını desteklemeseler bile bu işlev güvenli bir şekilde çağrılamaz.
+Denetiminiz bağlantı noktalarını desteklemese bile bu işlevin çağrılması güvenlidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

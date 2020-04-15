@@ -1,5 +1,5 @@
 ---
-title: CNonStatelessWorker sınıfı
+title: CNonStatelessWorker Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CNonStatelessWorker
@@ -11,19 +11,19 @@ f1_keywords:
 helpviewer_keywords:
 - CNonStatelessWorker class
 ms.assetid: d00936c6-9e7d-49fb-b87d-417b963367d1
-ms.openlocfilehash: abfd3e585c843fcc4ed4ad273c8ed217eaaccb7d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f3604f95c8217c7407c100671265140bbadbab78
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245536"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81326726"
 ---
-# <a name="cnonstatelessworker-class"></a>CNonStatelessWorker sınıfı
+# <a name="cnonstatelessworker-class"></a>CNonStatelessWorker Sınıfı
 
-Bir iş parçacığı havuzundan isteklerini alır ve bunları her istekte oluşturulur ve imha bir alt nesnesi açın geçirir.
+İş parçacığı havuzundan istekler alır ve bunları her istekte oluşturulan ve yok edilen bir alt nesneye aktarın.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,38 +34,38 @@ class CNonStatelessWorker
 
 #### <a name="parameters"></a>Parametreler
 
-*Çalışan*<br/>
-Bir çalışan iş parçacığı sınıfı uyumludur [çalışan modeli](../../atl/reference/worker-archetype.md) üzerinde sıraya isteklerini işlemek için uygun [CThreadPool](../../atl/reference/cthreadpool-class.md).
+*Işçi*<br/>
+[CThreadPool'da](../../atl/reference/cthreadpool-class.md)sıraya konan istekleri işlemeye uygun [işçi arketipine](../../atl/reference/worker-archetype.md) uygun bir işçi iş parçacığı sınıfı.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Genel Typedefs
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CNonStatelessWorker::RequestType](#requesttype)|Uygulamasını [WorkerArchetype::RequestType](worker-archetype.md#requesttype).|
+|[CNonStatelessWorker::RequestType](#requesttype)|İşçi [Archetype Uygulanması::RequestType](worker-archetype.md#requesttype).|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CNonStatelessWorker::Execute](#execute)|Uygulamasını [WorkerArchetype::Execute](worker-archetype.md#execute).|
-|[CNonStatelessWorker::Initialize](#initialize)|Uygulamasını [WorkerArchetype::Initialize](worker-archetype.md#initialize).|
-|[CNonStatelessWorker::Terminate](#terminate)|Uygulamasını [WorkerArchetype::Terminate](worker-archetype.md#terminate).|
+|[CNonStatelessWorker::Execute](#execute)|İşçi [Arketipinin Uygulanması::Yürüt .](worker-archetype.md#execute)|
+|[CNonStatelessWorker::Initialize](#initialize)|İşçi [Archetype Uygulanması::Initialize](worker-archetype.md#initialize).|
+|[CNonStatelessWorker::Sonlandırma](#terminate)|İşçi [Archetype Uygulanması::Sonlandırmak](worker-archetype.md#terminate).|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, bir basit çalışan iş parçacığı ile kullanılmak üzere [CThreadPool](../../atl/reference/cthreadpool-class.md). Bu sınıf, herhangi bir istek işleme yetenek kendi sağlamaz. Bunun yerine, bir örneğinin örneğini oluşturur *çalışan* istek başına ve bu örneğe yöntemlerinin uygulaması atar.
+Bu sınıf [CThreadPool](../../atl/reference/cthreadpool-class.md)ile kullanılmak üzere basit bir işçi iş parçacığıdır. Bu sınıf kendi istek işleme yeteneklerini sağlamaz. Bunun yerine, istek başına *İşçi'nin* bir örneğini anında verir ve yöntemlerinin uygulanmasını o örneğe devreden.
 
-Bu sınıfın avantajı var olan çalışan iş parçacığı sınıfları için durum modeli değiştirmek için kullanışlı bir yol sağlamasıdır. `CThreadPool` tek bir çalışan iş parçacığının ömrü boyunca oluşturacak şekilde çalışan sınıfı durumu barındırıyorsa, birden çok istekler genelinde aktarabilecek. Yalnızca bu sınıfta sarmalama tarafından `CNonStatelessWorker` ile kullanmadan önce şablonu `CThreadPool`, alt ve içeren tek bir istek için sınırlı durumu ömrü.
+Bu sınıfın yararı, varolan alt iş parçacığı sınıfları için durum modelini değiştirmek için uygun bir yol sağlamasıdır. `CThreadPool`iş parçacığının ömrü boyunca tek bir alt lık oluşturur, bu nedenle işçi sınıfı durumu tutarsa, birden çok istek arasında tutar. Yalnızca bu sınıfı kullanmadan `CNonStatelessWorker` önce şablona sararak , işçinin ömrü ve sahip olduğu durum tek bir istekle `CThreadPool`sınırlıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 **Başlık:** atlutil.h
 
-##  <a name="execute"></a>  CNonStatelessWorker::Execute
+## <a name="cnonstatelessworkerexecute"></a><a name="execute"></a>CNonStatelessWorker::Execute
 
-Uygulamasını [WorkerArchetype::Execute](worker-archetype.md#execute).
+İşçi [Arketipinin Uygulanması::Yürüt .](worker-archetype.md#execute)
 
 ```
 void Execute(
@@ -76,11 +76,11 @@ void Execute(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem bir örneğini oluşturur *çalışan* sınıfı çağrılar ve yığın [başlatmak](worker-archetype.md#initialize) bu nesne üzerinde. Başlatma başarılı olursa, bu yöntem ayrıca çağırır [yürütme](worker-archetype.md#execute) ve [sonlandırma](worker-archetype.md#terminate) aynı nesne üzerinde.
+Bu yöntem yığında *İşçi* sınıfının bir örneğini oluşturur ve bu nesnede [Initialize](worker-archetype.md#initialize) çağırır. Başlatma başarılı olursa, bu yöntem aynı nesne üzerinde [Yürüt](worker-archetype.md#execute) ve [Sonlandırma](worker-archetype.md#terminate) çağırır.
 
-##  <a name="initialize"></a>  CNonStatelessWorker::Initialize
+## <a name="cnonstatelessworkerinitialize"></a><a name="initialize"></a>CNonStatelessWorker::Initialize
 
-Uygulamasını [WorkerArchetype::Initialize](worker-archetype.md#initialize).
+İşçi [Archetype Uygulanması::Initialize](worker-archetype.md#initialize).
 
 ```
 BOOL Initialize(void* /* pvParam */) throw();
@@ -88,15 +88,15 @@ BOOL Initialize(void* /* pvParam */) throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman TRUE değerini döndürür.
+Her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıf sıfırlamaları yapmaz `Initialize`.
+Bu sınıf' ta `Initialize`herhangi bir başlatma yapmaz.
 
-##  <a name="requesttype"></a>  CNonStatelessWorker::RequestType
+## <a name="cnonstatelessworkerrequesttype"></a><a name="requesttype"></a>CNonStatelessWorker::RequestType
 
-Uygulamasını [WorkerArchetype::RequestType](worker-archetype.md#requesttype).
+İşçi [Archetype Uygulanması::RequestType](worker-archetype.md#requesttype).
 
 ```
 typedef Worker::RequestType RequestType;
@@ -104,11 +104,11 @@ typedef Worker::RequestType RequestType;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, aynı iş öğesi türü için kullanılan sınıf olarak işleme *çalışan* şablon parametresi. Bkz: [CNonStatelessWorker genel bakış](../../atl/reference/cnonstatelessworker-class.md) Ayrıntılar için.
+Bu sınıf, *İşçi* şablonu parametresi için kullanılan sınıfla aynı çalışma öğesi türünü işler. Ayrıntılar için [CNonStatelessWorker Genel Bakış'a](../../atl/reference/cnonstatelessworker-class.md) bakın.
 
-##  <a name="terminate"></a>  CNonStatelessWorker::Terminate
+## <a name="cnonstatelessworkerterminate"></a><a name="terminate"></a>CNonStatelessWorker::Sonlandırma
 
-Uygulamasını [WorkerArchetype::Terminate](worker-archetype.md#terminate).
+İşçi [Archetype Uygulanması::Sonlandırmak](worker-archetype.md#terminate).
 
 ```
 void Terminate(void* /* pvParam */) throw();
@@ -116,10 +116,10 @@ void Terminate(void* /* pvParam */) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıfın tüm temizleme işlemlerini yapmaz `Terminate`.
+Bu sınıf herhangi bir temizlik `Terminate`yapmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CThreadPool Sınıfı](../../atl/reference/cthreadpool-class.md)<br/>
-[Çalışan Modeli](../../atl/reference/worker-archetype.md)<br/>
+[İşçi Arketipi](../../atl/reference/worker-archetype.md)<br/>
 [Sınıflar](../../atl/reference/atl-classes.md)

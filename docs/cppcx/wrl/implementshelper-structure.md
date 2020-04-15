@@ -15,16 +15,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ImplementsHelper::FillArrayWithIid method
 - Microsoft::WRL::Details::ImplementsHelper::IidCount constant
 ms.assetid: b857ba80-81bd-4e53-92b6-210991954243
-ms.openlocfilehash: 250a59152e9b41eb48c453caaa696fdc8ca3d3b4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e33842f574df5617fb40c5b3f6bb8324d5ba7c1e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398231"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371393"
 ---
 # <a name="implementshelper-structure"></a>ImplementsHelper Yapısı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,30 +36,30 @@ friend struct Details::ImplementsHelper;
 ### <a name="parameters"></a>Parametreler
 
 *RuntimeClassFlagsT*<br/>
-Bir veya daha fazla belirten bayraklar alanı [RuntimeClassType](runtimeclasstype-enumeration.md) numaralandırıcılar.
+Bir veya daha fazla [RuntimeClassType](runtimeclasstype-enumeration.md) sayıtaycı belirten bir bayrak alanı.
 
 *ILst*<br/>
-Arabirim kimlikleri listesi.
+Arabirim tümleri listesi.
 
-*IsDelegateToClass*<br/>
-Belirtin **true** varsa geçerli örneğini `Implements` ilk arabirim kimliği taban sınıfıdır *ILst*; Aksi takdirde **false**.
+*IsdelegatetoClass*<br/>
+Geçerli örneği *ILst'teki*ilk arabirim kimliğinin taban `Implements` sınıfıysa **doğru** belirtin; aksi takdirde, **yanlış**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uygulama yardımcı [uygular](implements-structure.md) yapısı.
+[Uygular](implements-structure.md) yapısının uygulanmasına yardımcı olur.
 
-Bu şablon, arabirimin bir listeyi dikkatle inceler ve temel sınıflar ve etkinleştirmek gereken bilgileri ekler `QueryInterface`.
+Bu şablon arabirimler listesini dolaşır ve bunları temel sınıflar olarak ve `QueryInterface`etkinleştirmek için gerekli olan bilgiler olarak ekler.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-Ad                                                    | Açıklama
+Adı                                                    | Açıklama
 ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------
-[Implementshelper::cancastto](#cancastto)               | Belirtilen arabirim kimliği için bir işaretçi alır
-[Implementshelper::casttounknown](#casttounknown)       | Temel alınan bir işaretçi alır `IUnknown` arabirimi için geçerli `Implements` yapısı.
-[Implementshelper::fillarraywithıid](#fillarraywithiid) | Belirtilen bir dizi öğesine geçerli sıfırıncı şablon parametresi tarafından belirtilen arabirim kimliği ekler.
-[Implementshelper::ıidcount](#iidcount)                 | Uygulanan arabirimi kimliği geçerli sayısını tutar `Implements` nesne.
+[UygularHelper::CanCastTo](#cancastto)               | Belirtilen arabirim kimliğiiçin bir işaretçi alır.
+[UygularHelper::CastToUnknown](#casttounknown)       | Geçerli `Implements` yapı için `IUnknown` temel arabirim için bir işaretçi alır.
+[UygularHelper::FillArrayWithIid](#fillarraywithiid) | Geçerli sıfırth şablon parametresi tarafından belirtilen arabirim kimliğini belirtilen dizi öğesine ekler.
+[UygularHelper::IidCount](#iidcount)                 | Geçerli `Implements` nesnede uygulanan arabirim dislerinin sayısını tutar.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -67,13 +67,13 @@ Ad                                                    | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üstbilgi:** implements.h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="cancastto"></a>Implementshelper::cancastto
+## <a name="implementshelpercancastto"></a><a name="cancastto"></a>UygularHelper::CanCastTo
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 HRESULT CanCastTo(
@@ -89,26 +89,26 @@ HRESULT CanCastTo(
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*<br/>
-Başvuru için bir arabirim kimliği.
+*Riid*<br/>
+Arabirim kimliğine başvuru.
 
-*ppv*<br/>
-Bu işlem başarılı olursa, arabirim işaretçisi tarafından belirtilen *riid* veya *IID*.
+*Ppv*<br/>
+Bu işlem başarılı olursa, *riid* veya *iid*tarafından belirtilen arabirimin işaretçisi.
 
-*IID*<br/>
-Başvuru için bir arabirim kimliği.
+*ııd*<br/>
+Arabirim kimliğine başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen arabirim kimliği için bir işaretçi alır
+Belirtilen arabirim kimliğiiçin bir işaretçi alır.
 
-## <a name="casttounknown"></a>Implementshelper::casttounknown
+## <a name="implementshelpercasttounknown"></a><a name="casttounknown"></a>UygularHelper::CastToUnknown
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 IUnknown* CastToUnknown();
@@ -116,15 +116,15 @@ IUnknown* CastToUnknown();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel işaretçisinin `IUnknown` arabirimi.
+Temel `IUnknown` arabirimi işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel alınan bir işaretçi alır `IUnknown` arabirimi için geçerli `Implements` yapısı.
+Geçerli `Implements` yapı için `IUnknown` temel arabirim için bir işaretçi alır.
 
-## <a name="fillarraywithiid"></a>Implementshelper::fillarraywithıid
+## <a name="implementshelperfillarraywithiid"></a><a name="fillarraywithiid"></a>UygularHelper::FillArrayWithIid
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 void FillArrayWithIid(
@@ -135,18 +135,18 @@ void FillArrayWithIid(
 ### <a name="parameters"></a>Parametreler
 
 *Dizin*<br/>
-Bu işlem için başlangıç dizi öğesini gösteren sıfır tabanlı dizini. Bu işlem tamamlandığında *dizin* 1 azaltılır.
+Bu işlem için başlangıç dizi öğesini gösteren sıfır tabanlı dizin. Bu işlem tamamlandığında, *dizin* 1 ile artımlanır.
 
-*IID'leri*<br/>
-IID'leri türünde bir dizi.
+*iids*<br/>
+Bir dizi tür iids.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen bir dizi öğesine geçerli sıfırıncı şablon parametresi tarafından belirtilen arabirim kimliği ekler.
+Geçerli sıfırth şablon parametresi tarafından belirtilen arabirim kimliğini belirtilen dizi öğesine ekler.
 
-## <a name="iidcount"></a>Implementshelper::ıidcount
+## <a name="implementshelperiidcount"></a><a name="iidcount"></a>UygularHelper::IidCount
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 static const unsigned long IidCount;
@@ -154,4 +154,4 @@ static const unsigned long IidCount;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulanan arabirimi kimliği geçerli sayısını tutar `Implements` nesne.
+Geçerli `Implements` nesnede uygulanan arabirim dislerinin sayısını tutar.

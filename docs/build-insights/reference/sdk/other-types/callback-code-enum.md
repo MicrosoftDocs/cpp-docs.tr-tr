@@ -1,6 +1,6 @@
 ---
-title: CALLBACK_CODE numaralandırması
-description: C++ Derleme ÖNGÖRÜLERI SDK CALLBACK_CODE enum başvurusu.
+title: CALLBACK_CODE enum
+description: C++ Build Insights SDK CALLBACK_CODE enum referansı.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,30 +9,30 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 68eaa9aa04d2f0a55ac12fb7dde14a080188a38d
-ms.sourcegitcommit: 3e8fa01f323bc5043a48a0c18b855d38af3648d4
+ms.openlocfilehash: d0d3dcc70040f562cd40755188e545f709a807b5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332469"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81329186"
 ---
-# <a name="callback_code-enum"></a>CALLBACK_CODE numaralandırması
+# <a name="callback_code-enum"></a>CALLBACK_CODE enum
 
 ::: moniker range="<=vs-2015"
 
-Build C++ Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio sürüm Seçicisi denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın.
+C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-`CALLBACK_CODE` numaralandırması, bir analiz veya yeniden günlüğe kaydetme oturumunun akışını kontrol etmek için kullanılır. Sonra ne olması gerektiğini denetlemek için [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) veya [RELOG_CALLBACKS](relog-callbacks-struct.md) işlevlerdeki CALLBACK_CODE bir değer döndürün.
+Enum `CALLBACK_CODE` bir analiz veya yeniden oturum akışını kontrol kullanılır. [ANALYSIS_CALLBACKS'daki](analysis-callbacks-struct.md) işlevlerden CALLBACK_CODE bir değer döndürün veya bundan sonra ne olacağını denetlemek [için RELOG_CALLBACKS.](relog-callbacks-struct.md)
 
 ## <a name="members"></a>Üyeler
 
 | Adı | Değer | Açıklama |
 |--|--|--|
-| `CALLBACK_CODE_ANALYSIS_SUCCESS` | 1 (0x00000001) | Geçerli çözümlemeye devam edin veya oturumu normal olarak yeniden günlüğe yazın. |
-| `CALLBACK_CODE_ANALYSIS_FAILURE` | 2 (0x00000002) | Geçerli analizi iptal edin veya oturumu yeniden günlüğe yazın ve bir hata sinyali yapın. |
-| `CALLBACK_CODE_ANALYSIS_CANCEL` | 4 (0x00000004) | Geçerli analizi veya yeniden günlüğe kaydetme oturumunu iptal edin. |
+| `CALLBACK_CODE_ANALYSIS_SUCCESS` | 1 (0x00000001) | Geçerli çözümleme veya oturumu normal olarak yeniden kaydetmeye devam edin. |
+| `CALLBACK_CODE_ANALYSIS_FAILURE` | 2 (0x00000002) | Geçerli çözümlemesi veya oturumu yeniden günlüğe kaydetmeyi iptal edin ve bir hata sinyali verdi. |
+| `CALLBACK_CODE_ANALYSIS_CANCEL` | 4 (0x00000004) | Geçerli çözümlemesi veya oturumu yeniden günlüğe kaydetmeyi iptal edin. |
 
 ::: moniker-end

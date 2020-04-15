@@ -7,25 +7,25 @@ helpviewer_keywords:
 - exporting DLLs [C++], ordinal values
 - NONAME attribute
 ms.assetid: 679719fd-d965-4df3-9f7a-7d86ad831702
-ms.openlocfilehash: d91b516253fc160686e2f1f6ae1ca1704f707f75
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 66e99b18d181e9067e90398c35a61db2da66c301
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221433"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81328583"
 ---
 # <a name="exporting-functions-from-a-dll-by-ordinal-rather-than-by-name"></a>DLL'den İşlevleri Ad Yerine Sıraya Göre Dışarı Aktarma
 
-En basit yolu, bir DLL'den işlevleri dışarı aktarmak için bunları adına göre dışa aktarılmamasıdır. Bu kullandığınızda neler olduğunu **__declspec(dllexport)**, örneğin. Ancak, bunun yerine sıralı olarak işlevleri dışarı aktarabilirsiniz. Bu teknikte bir .def dosyası yerine kullanmalısınız **__declspec(dllexport)**. Bir işlevin sıra değeri belirtmek için kendi sıra .def dosyasında işlev adı ekleyin. Sıra sayıları belirtme hakkında daha fazla bilgi için bkz: [.def dosyası kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-def-files.md).
+DLL'nizden işlevleri dışa aktarmanın en basit yolu, işlevleri ada göre dışa aktarmaktır. Örneğin, **__declspec(dllexport)** kullandığınızda ne olur. Ancak işlevleri ordinal ile dışa aktarabilirsiniz. Bu teknikle, **__declspec (dllexport)** yerine bir .def dosyası kullanmanız gerekir. Bir işlevin ordinal değerini belirtmek için,.def dosyasındaki işlev adına onun ordinal'ını ekle. Ordinals belirtme hakkında bilgi için [bkz.](exporting-from-a-dll-using-def-files.md)
 
 > [!TIP]
->  DLL dosyanızın boyutunu en iyi duruma getirmek istediğiniz kullanırsanız **NONAME** her dışarı aktarılan işlevin özniteliği. İle **NONAME** özniteliği, sıra sayıları içinde depolanıyorsa tablosu yerine işlev adlarını DLL'nin dışarı aktarma. Birçok işlevleri dışa aktarıyorsanız, bu önemli ölçüde tasarruf olabilir.
+> DLL dosya boyutunu optimize etmek istiyorsanız, dışa aktarılan her işlevde **NONAME** özniteliğini kullanın. **NONAME** özniteliği ile, ordinals işlev adları yerine DLL dışa aktarma tablosunda depolanır. Birçok işlev dışa aktarıyorsanız, bu önemli bir tasarruf olabilir.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Sıralı olarak dışarı aktarabilir, dolayısıyla bir .def dosyası kullanmanıza](exporting-from-a-dll-using-def-files.md)
+- [Bir .def dosyası kullanın, böylece ordinal ile dışa aktarabiliyorum](exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec(dllexport) kullanın](exporting-from-a-dll-using-declspec-dllexport.md)
+- [__declspec(dllexport) kullanın](exporting-from-a-dll-using-declspec-dllexport.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: CMFCAutoHideBar sınıfı
+title: CMFCAutoHideBar Sınıfı
 ms.date: 10/18/2018
 f1_keywords:
 - CMFCAutoHideBar
@@ -38,18 +38,18 @@ helpviewer_keywords:
 - CMFCAutoHideBar [MFC], UpdateVisibleState
 - CMFCAutoHideBar [MFC], m_nShowAHWndDelay
 ms.assetid: 54c8d84f-de64-4efd-8a47-3ea0ade40a70
-ms.openlocfilehash: b40e4d48e8204824375630f7517ff3f5aa5108d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 62750f4fb1261f4f30286297c3a240ab67e6df1c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403925"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369896"
 ---
-# <a name="cmfcautohidebar-class"></a>CMFCAutoHideBar sınıfı
+# <a name="cmfcautohidebar-class"></a>CMFCAutoHideBar Sınıfı
 
-`CMFCAutoHideBar` Otomatik gizleme özelliğini uygulayan bir özel araç sınıfı.
+Sınıf, `CMFCAutoHideBar` otomatik gizleme özelliğini uygulayan özel bir araç çubuğu sınıfıdır.
 
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,70 +61,70 @@ class CMFCAutoHideBar : public CPane
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CMFCAutoHideBar::CMFCAutoHideBar](#cmfcautohidebar)||
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CMFCAutoHideBar::AddAutoHideWindow](#addautohidewindow)||
-|[CMFCAutoHideBar::AllowShowOnPaneMenu](#allowshowonpanemenu)|(Geçersiz kılmaları `CPane::AllowShowOnPaneMenu`.)|
-|[CMFCAutoHideBar::CalcFixedLayout](#calcfixedlayout)|(Geçersiz kılmaları [CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).)|
-|[CMFCAutoHideBar::Create](#create)|Denetim çubuğu oluşturur ve ona ekler [CPane](../../mfc/reference/cpane-class.md) nesne. (Geçersiz kılmaları [CPane::Create](../../mfc/reference/cpane-class.md#create).)|
+|[CMFCAutoHideBar::İzinShowOnPaneMenu](#allowshowonpanemenu)|(Geçersiz `CPane::AllowShowOnPaneMenu`kılar .)|
+|[CMFCAutoHideBar::CalcFixedLayout](#calcfixedlayout)|[(Overrides CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).)|
+|[CMFCAutoHideBar::Oluştur](#create)|Bir denetim çubuğu oluşturur ve [CPane](../../mfc/reference/cpane-class.md) nesnesine bağlar. [(CPane geçersiz kılar::Oluştur](../../mfc/reference/cpane-class.md#create).)|
 |[CMFCAutoHideBar::GetFirstAHWindow](#getfirstahwindow)||
-|[CMFCAutoHideBar::GetVisibleCount](#getvisiblecount)||
-|[CMFCAutoHideBar::OnShowControlBarMenu](#onshowcontrolbarmenu)|Özel bölmesinde menü gösterilmek üzereyken framework tarafından çağırılır. (Geçersiz kılmaları [CPane::OnShowControlBarMenu](../../mfc/reference/cpane-class.md#onshowcontrolbarmenu).)|
+|[CMFCAutoHideBar::GetVisibleSayısı](#getvisiblecount)||
+|[CMFCAutoHideBar::OnShowControlBarMenu](#onshowcontrolbarmenu)|Özel bir bölme menüsü görüntülenmek üzereyken çerçeve tarafından çağrılır. [(Overrides CPane::OnShowControlBarMenu](../../mfc/reference/cpane-class.md#onshowcontrolbarmenu).)|
 |[CMFCAutoHideBar::RemoveAutoHideWindow](#removeautohidewindow)||
-|[CMFCAutoHideBar::SetActiveInGroup](#setactiveingroup)|(Geçersiz kılmaları [CPane::SetActiveInGroup](../../mfc/reference/cpane-class.md#setactiveingroup).)|
-|[CMFCAutoHideBar::SetRecentVisibleState](#setrecentvisiblestate)||
+|[CMFCAutoHideBar::SetactiveinGroup](#setactiveingroup)|[(CPane geçersiz kılar::SetActiveInGroup](../../mfc/reference/cpane-class.md#setactiveingroup).)|
+|[CMFCAutoHideBar::SetrecentVisibleState](#setrecentvisiblestate)||
 |[CMFCAutoHideBar::ShowAutoHideWindow](#showautohidewindow)||
-|[CMFCAutoHideBar::StretchPane](#stretchpane)|Bir bölme, yatay veya dikey olarak genişletir. (Geçersiz kılmaları [CBasePane::StretchPane](../../mfc/reference/cbasepane-class.md#stretchpane).)|
-|[CMFCAutoHideBar::UnSetAutoHideMode](#unsetautohidemode)||
+|[CMFCAutoHideBar::StretchPane](#stretchpane)|Bölmeyi dikey veya yatay olarak uzalar. [(Overrides CBasePane::StretchPane](../../mfc/reference/cbasepane-class.md#stretchpane).)|
+|[CMFCAutoHidebar::UnsetAutoHideMode](#unsetautohidemode)||
 |[CMFCAutoHideBar::UpdateVisibleState](#updatevisiblestate)||
 
-### <a name="data-members"></a>Veri üyeleri
+### <a name="data-members"></a>Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCAutoHideBar::m_nShowAHWndDelay](#m_nshowahwnddelay)|Ne zaman kullanıcı yerleştirir fare imleci üzerinde şu arasındaki gecikme süresini bir [CMFCAutoHideButton sınıfı](../../mfc/reference/cmfcautohidebutton-class.md) ve ilişkili pencere görüntülendiğinde framework şu.|
+|[CMFCAutoHideBar::m_nShowAHWndDelay](#m_nshowahwnddelay)|Kullanıcının fare imlecini [CMFCAutoHideButton Sınıfı'nın](../../mfc/reference/cmfcautohidebutton-class.md) üzerine yerleştirirken olduğu an ile çerçevenin ilişkili pencereyi gösterdiği an arasındaki zaman gecikmesi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanıcı bir yerleştirme bölmesi otomatik gizleme moduna geçirildiğinde, çerçeve otomatik olarak oluşturur bir `CMFCAutoHideBar` nesne. Ayrıca gerekli oluşturur [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md) ve [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) nesneleri. Her `CAutoHideDockSite` nesnesi olan bir kişi ile ilişkili `CMFCAutoHideButton`.
+Kullanıcı otomatik gizleme moduna bir dock bölmesini çevirdiğinde, çerçeve `CMFCAutoHideBar` otomatik olarak bir nesne oluşturur. Ayrıca gerekli [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md) ve [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) nesneleri oluşturur. Her `CAutoHideDockSite` nesne bir birey `CMFCAutoHideButton`ile ilişkilidir.
 
-`CMFCAutoHideBar` Sınıfın uyguladığı görüntüsünü bir `CAutoHideDockSite` kullanıcının fare geldiğinde üzerinden bir `CMFCAutoHideButton`. Araç bir WM_MOUSEMOVE iletisi aldığında `CMFCAutoHideBar` bir süreölçer başlatır. Zamanlayıcı sona erdiğinde, araç WM_TIMER olay bildirimi gönderir. Araç, fare işaretçisini Zamanlayıcı başlatıldığında üzerine yerleştirilmiş aynı otomatik gizleme düğmenin üzerine yerleştirilmiş olup olmadığını kontrol ederek bu olayını işler. Bu durumda, ekli `CAutoHideDockSite` görüntülenir.
+Sınıf, `CMFCAutoHideBar` kullanıcının faresi `CAutoHideDockSite` bir `CMFCAutoHideButton`. Araç çubuğu bir WM_MOUSEMOVE iletisi aldığında, `CMFCAutoHideBar` bir zamanlayıcı başlatır. Zamanlayıcı bittiğinde, araç çubuğuna WM_TIMER bir olay bildirimi gönderir. Araç çubuğu, fare işaretçisinin zamanlayıcı başlatıldığında üzerinde konumlandırıldığı otomatik gizleme düğmesinin üzerine yerleştirilip yerleştirilemediğini denetleyerek bu olayı işler. Eğer varsa, ekli `CAutoHideDockSite` görüntülenir.
 
-Ayarlayarak Zamanlayıcının gecikme uzunluğunu kontrol edebilirsiniz `m_nShowAHWndDelay`. 400 ms varsayılan değerdir.
+Zamanlayıcının gecikme sinin uzunluğunu ayarlayarak `m_nShowAHWndDelay`kontrol edebilirsiniz. Varsayılan değer 400 ms'dir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCAutoHideBar` nesne ve kullanmak, `GetDockSiteRow` yöntemi.
+Aşağıdaki örnek, bir `CMFCAutoHideBar` nesnenin nasıl oluşturup yöntemini nasıl kullanılacağını `GetDockSiteRow` gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#26](../../mfc/reference/codesnippet/cpp/cmfcautohidebar-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 [CBasePane](../../mfc/reference/cbasepane-class.md)
 
-[CPane](../../mfc/reference/cpane-class.md)
+[Cpane](../../mfc/reference/cpane-class.md)
 
-[CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md)
+[Cmfcautohidebar](../../mfc/reference/cmfcautohidebar-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxautohidebar.h
+**Üstbilgi:** afxautohidebar.h
 
-## <a name="addautohidewindow"></a>  CMFCAutoHideBar::AddAutoHideWindow
+## <a name="cmfcautohidebaraddautohidewindow"></a><a name="addautohidewindow"></a>CMFCAutoHideBar::AddAutoHideWindow
 
-İşlevsellik ekler bir `CDockablePane` pencere otomatik gizleme etkinleştirir.
+Otomatik gizleme `CDockablePane` sağlayan bir pencereye işlevsellik ekler.
 
 ```
 CMFCAutoHideButton* AddAutoHideWindow(
@@ -135,16 +135,16 @@ CMFCAutoHideButton* AddAutoHideWindow(
 ### <a name="parameters"></a>Parametreler
 
 *pAutoHideWnd*<br/>
-[in] Gizlemek istediğiniz penceresi.
+[içinde] Saklamak istediğin pencere.
 
-*dwAlignment*<br/>
-[in] Uygulama penceresiyle birlikte otomatik gizle düğmesi hizalamasını belirten bir değeri.
+*dwHizalama*<br/>
+[içinde] Otomatik gizle düğmesinin uygulama penceresiyle hizalanmasını belirten bir değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-*DwAlignment* parametresi gösterir otomatik gizle düğmesi uygulamayı bulunduğu. Parametre aşağıdaki değerlerden biri olabilir:
+*dwAlignment* parametresi, otomatik gizleme düğmesinin uygulamada nerede bulunduğunu gösterir. Parametre aşağıdaki değerlerden biri olabilir:
 
 - CBRS_ALIGN_LEFT
 
@@ -154,7 +154,7 @@ CMFCAutoHideButton* AddAutoHideWindow(
 
 - CBRS_ALIGN_BOTTOM
 
-## <a name="allowshowonpanemenu"></a>  CMFCAutoHideBar::AllowShowOnPaneMenu
+## <a name="cmfcautohidebarallowshowonpanemenu"></a><a name="allowshowonpanemenu"></a>CMFCAutoHideBar::İzinShowOnPaneMenu
 
 ```
 virtual BOOL AllowShowOnPaneMenu() const;
@@ -164,7 +164,7 @@ virtual BOOL AllowShowOnPaneMenu() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="calcfixedlayout"></a>  CMFCAutoHideBar::CalcFixedLayout
+## <a name="cmfcautohidebarcalcfixedlayout"></a><a name="calcfixedlayout"></a>CMFCAutoHideBar::CalcFixedLayout
 
 ```
 virtual CSize CalcFixedLayout(
@@ -174,17 +174,17 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bStretch*<br/>
+[içinde] *bStretch*<br/>
 
-[in] *bHorz*<br/>
+[içinde] *bHorz*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcautohidebar"></a>  CMFCAutoHideBar::CMFCAutoHideBar
+## <a name="cmfcautohidebarcmfcautohidebar"></a><a name="cmfcautohidebar"></a>CMFCAutoHideBar::CMFCAutoHideBar
 
-CMFCAutoHideBar bir nesne oluşturur.
+CMFCAutoHideBar nesnesi oluşturuyor.
 
 ```
 CMFCAutoHideBar();
@@ -192,7 +192,7 @@ CMFCAutoHideBar();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="create"></a>  CMFCAutoHideBar::Create
+## <a name="cmfcautohidebarcreate"></a><a name="create"></a>CMFCAutoHideBar::Oluştur
 
 ```
 virtual BOOL Create(
@@ -209,25 +209,25 @@ virtual BOOL Create(
 
 *lpszClassName*<br/>
 
-*dwStyle*<br/>
+*Dwstyle*<br/>
 
 *Rect*<br/>
 
 *pParentWnd*<br/>
 
-*nID*<br/>
+*Nıd*<br/>
 
 *dwControlBarStyle*<br/>
 
-*pContext*<br/>
+*Pcontext*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="getfirstahwindow"></a>  CMFCAutoHideBar::GetFirstAHWindow
+## <a name="cmfcautohidebargetfirstahwindow"></a><a name="getfirstahwindow"></a>CMFCAutoHideBar::GetFirstAHWindow
 
-Uygulamadaki ilk otomatik gizleme penceresine bir işaretçi döndürür.
+Bir işaretçiyi uygulamadaki ilk otomatik gizleme penceresine döndürür.
 
 ```
 CDockablePane* GetFirstAHWindow();
@@ -235,13 +235,13 @@ CDockablePane* GetFirstAHWindow();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk otomatik gizleme penceresi uygulama ya da mevcut değilse NULL.
+Uygulamadaki ilk otomatik gizleme penceresi veya yoksa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="getvisiblecount"></a>  CMFCAutoHideBar::GetVisibleCount
+## <a name="cmfcautohidebargetvisiblecount"></a><a name="getvisiblecount"></a>CMFCAutoHideBar::GetVisibleSayısı
 
-Görünür otomatik gizleme düğmeleri sayısını alır.
+Görünür otomatik gizleme düğmelerinin sayısını alır.
 
 ```
 int GetVisibleCount();
@@ -249,13 +249,13 @@ int GetVisibleCount();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görünür otomatik gizleme düğmeleri sayısını döndürür.
+Görünür otomatik gizleme düğmelerinin sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="m_nshowahwnddelay"></a>  CMFCAutoHideBar::m_nShowAHWndDelay
+## <a name="cmfcautohidebarm_nshowahwnddelay"></a><a name="m_nshowahwnddelay"></a>CMFCAutoHideBar::m_nShowAHWndDelay
 
-Ne zaman kullanıcı yerleştirir fare imleci üzerinde şu arasındaki gecikme süresini bir [CMFCAutoHideButton sınıfı](../../mfc/reference/cmfcautohidebutton-class.md) ve ilişkili pencere görüntülendiğinde framework şu.
+Kullanıcının fare imlecini [CMFCAutoHideButton Sınıfı'nın](../../mfc/reference/cmfcautohidebutton-class.md) üzerine yerleştirirken olduğu an ile çerçevenin ilişkili pencereyi gösterdiği an arasındaki zaman gecikmesi.
 
 ```
 int CMFCAutoHideBar::m_nShowAHWndDelay = 400;
@@ -263,9 +263,9 @@ int CMFCAutoHideBar::m_nShowAHWndDelay = 400;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ne zaman kullanıcı yerleştirir fare imleci üzerine bir `CMFCAutoHideButton`, ilişkili pencere çerçevesi görüntülemeden önce hafif bir gecikme olur. Bu parametre, milisaniye cinsinden gecikme uzunluğunu belirler.
+Kullanıcı fare imlecini bir `CMFCAutoHideButton`, çerçeve ilişkili pencereyi görüntülemeden önce hafif bir gecikmeye yerleştirir. Bu parametre, bu gecikmenin milisaniye cinsinden uzunluğunu belirler.
 
-## <a name="onshowcontrolbarmenu"></a>  CMFCAutoHideBar::OnShowControlBarMenu
+## <a name="cmfcautohidebaronshowcontrolbarmenu"></a><a name="onshowcontrolbarmenu"></a>CMFCAutoHideBar::OnShowControlBarMenu
 
 ```
 virtual BOOL OnShowControlBarMenu(CPoint);
@@ -273,15 +273,15 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *CPoint*<br/>
+[içinde] *CPoint*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="removeautohidewindow"></a>  CMFCAutoHideBar::RemoveAutoHideWindow
+## <a name="cmfcautohidebarremoveautohidewindow"></a><a name="removeautohidewindow"></a>CMFCAutoHideBar::RemoveAutoHideWindow
 
-Kaldırır ve otomatik gizleme penceresini yok eder.
+Otomatik gizleme penceresini kaldırır ve yok eder.
 
 ```
     BOOL RemoveAutoHideWindow(CDockablePane* pAutoHideWnd);
@@ -289,17 +289,17 @@ Kaldırır ve otomatik gizleme penceresini yok eder.
 
 ### <a name="parameters"></a>Parametreler
 
-CDockablePane * *pAutoHideWnd* kaldırmak için otomatik gizleme penceresi.
+CDockablePane* *pAutoHideWnd* Otomatik gizleme penceresini kaldırmak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa TRUE; Aksi durumda FALSE.
+Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="setactiveingroup"></a>  CMFCAutoHideBar::SetActiveInGroup
+## <a name="cmfcautohidebarsetactiveingroup"></a><a name="setactiveingroup"></a>CMFCAutoHideBar::SetactiveinGroup
 
-Bir otomatik gizleme Çubuğu etkin olarak işaretler.
+Otomatik gizleme çubuğunun etkin olduğunu işaretler.
 
 ```
 virtual void SetActiveInGroup(BOOL bActive);
@@ -307,13 +307,13 @@ virtual void SetActiveInGroup(BOOL bActive);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] BOOL *bActive* etkin; Aksi takdirde FALSE ayarlamak için TRUE.
+[içinde] BOOL *bActive* TRUE aktif olarak ayarlanır; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [CPane::SetActiveInGroup](../../mfc/reference/cpane-class.md#setactiveingroup).
+Bkz. [CPane::SetActiveInGroup](../../mfc/reference/cpane-class.md#setactiveingroup).
 
-## <a name="setrecentvisiblestate"></a>  CMFCAutoHideBar::SetRecentVisibleState
+## <a name="cmfcautohidebarsetrecentvisiblestate"></a><a name="setrecentvisiblestate"></a>CMFCAutoHideBar::SetrecentVisibleState
 
 ```
 void SetRecentVisibleState(BOOL bState);
@@ -321,14 +321,14 @@ void SetRecentVisibleState(BOOL bState);
 
 ### <a name="parameters"></a>Parametreler
 
-*bState*<br/>
-[in] Ayarlanacak durum.
+*bDevlet durumu*<br/>
+[içinde] Eyalet ayarlı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="showautohidewindow"></a>  CMFCAutoHideBar::ShowAutoHideWindow
+## <a name="cmfcautohidebarshowautohidewindow"></a><a name="showautohidewindow"></a>CMFCAutoHideBar::ShowAutoHideWindow
 
-Pencere otomatik gizleme gösterir.
+Otomatik gizleme penceresini gösterir.
 
 ```
 BOOL ShowAutoHideWindow(
@@ -340,23 +340,23 @@ BOOL ShowAutoHideWindow(
 ### <a name="parameters"></a>Parametreler
 
 *pAutoHideWnd*<br/>
-[in] Gösterilecek penceresini açın.
+[içinde] Gösterme penceresi.
 
-*bBilgi Göster*<br/>
-[in] Penceresini görüntülemek için TRUE.
+*bGöster*<br/>
+[içinde] DOĞRU pencereyi göstermek için.
 
-*bDelay*<br/>
-[in] Bu parametre yoksayılır.
+*bGecikme*<br/>
+[içinde] Bu parametre yoksayılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa TRUE; Aksi durumda FALSE.
+Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="stretchpane"></a>  CMFCAutoHideBar::StretchPane
+## <a name="cmfcautohidebarstretchpane"></a><a name="stretchpane"></a>CMFCAutoHideBar::StretchPane
 
-Otomatik gizleme çubuğu sığdırmak için daraltılmış durumunda yeniden boyutlandırır `CMFCAutoHideButton` nesne.
+`CMFCAutoHideButton` Nesneye uyacak şekilde otomatik gizleme çubuğunu daraltılmış durumunda yeniden boyutlandırıyor.
 
 ```
 virtual CSize StretchPane(
@@ -366,23 +366,23 @@ virtual CSize StretchPane(
 
 ### <a name="parameters"></a>Parametreler
 
-*nLength*<br/>
-[in] Temel uygulamada değer kullanılmıyor. Türetilmiş uygulamalarında, yeniden boyutlandırılan bölmesinde uzunluğunu belirtmek için bu değeri kullanın.
+*nUzunluk*<br/>
+[içinde] Değer temel uygulamada kullanılmaz. Türetilen uygulamalarda, yeniden boyutlandırılmış bölmenin uzunluğunu belirtmek için bu değeri kullanın.
 
 *bVert*<br/>
-[in] Temel uygulamada değer kullanılmıyor. Türetilmiş uygulamalarında, tanıtıcı burada otomatik gizleme çubuk dikey daraltılmış durumda ve FALSE true nerede otomatik gizleme çubuk yatay olarak daraltılmıştır çalışması için kullanın.
+[içinde] Değer temel uygulamada kullanılmaz. Türetilen uygulamalarda, otomatik gizleme çubuğunun dikey olarak daraltıldığı kılıfı işlemek için TRUE'yu ve otomatik gizleme çubuğunun yatay olarak daraltıldığı durum için FALSE'yi kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeniden boyutlandırılan bölmesinde elde edilen boyutu.
+Yeniden boyutlandırılmış bölmenin ortaya çıkan boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türetilen sınıfların davranışını özelleştirmek için bu yöntemin üzerine yazabilir.
+Türetilen sınıflar davranışı özelleştirmek için bu yöntemi geçersiz kılabilir.
 
-## <a name="unsetautohidemode"></a>  CMFCAutoHideBar::UnSetAutoHideMode
+## <a name="cmfcautohidebarunsetautohidemode"></a><a name="unsetautohidemode"></a>CMFCAutoHidebar::UnsetAutoHideMode
 
-Devre dışı bırakır otomatik bir grubu otomatik gizleme çubuk modunu gizleme.
+Bir grup otomatik gizleme çubukları için otomatik gizleme modunu devre dışı kılabilir.
 
 ```
 void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup)
@@ -390,13 +390,13 @@ void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup)
 
 ### <a name="parameters"></a>Parametreler
 
-[in] pFirstBarInGroup çubuğunu otomatik gizle grubundaki bir işaretçi.
+[in] pFirstBarInGroup Gruptaki ilk otomatik gizleme çubuğuna işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="updatevisiblestate"></a>  CMFCAutoHideBar::UpdateVisibleState
+## <a name="cmfcautohidebarupdatevisiblestate"></a><a name="updatevisiblestate"></a>CMFCAutoHideBar::UpdateVisibleState
 
-Otomatik gizleme çubuğu çizilmesi gerektiğinde framework tarafından çağırılır.
+Otomatik gizleme çubuğunun yeniden çizilmesi gerektiğinde çerçeve tarafından çağrılır.
 
 ```
 void UpdateVisibleState();

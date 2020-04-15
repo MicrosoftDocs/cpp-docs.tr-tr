@@ -1,5 +1,5 @@
 ---
-title: CList sınıfı
+title: CList Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CList
@@ -50,16 +50,16 @@ helpviewer_keywords:
 - CList [MFC], RemoveTail
 - CList [MFC], SetAt
 ms.assetid: 6f6273c3-c8f6-47f5-ac2a-0a950379ae5d
-ms.openlocfilehash: 383222e4892bccc653f010ce4939bca23f2adc93
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 253cf12033af497115ad600e457630ae834cc69c
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62225301"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372239"
 ---
-# <a name="clist-class"></a>CList sınıfı
+# <a name="clist-class"></a>CList Sınıfı
 
-Sırayla veya değere göre sıralı listeler erişilebilir benzersiz olmayan nesnelerin destekler.
+Sırayla veya değere göre erişilebilen benzersiz olmayan nesnelerin sıralı listelerini destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,57 +72,57 @@ class CList : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CList::CList](#clist)|Boş bir sıralı liste oluşturur.|
+|[CList::CList](#clist)|Boş bir sıralı liste oluşturuyor.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CList::AddHead](#addhead)|Bir öğenin (veya başka bir listedeki tüm öğeleri) (yeni head sağlar) listenin başındaki ekler.|
-|[CList::AddTail](#addtail)|Bir öğenin (veya başka bir listedeki tüm öğeleri) (yeni bir kuyruk sağlar) listesi kuyruğu için ekler.|
-|[CList::Find](#find)|İşaretçi değeri tarafından belirtilen bir öğenin konumunu alır.|
-|[CList::FindIndex](#findindex)|Sıfır tabanlı bir dizin tarafından belirtilen bir öğenin konumunu alır.|
-|[CList::GetAt](#getat)|Öğesini, belirli bir konumda alır.|
-|[CList::GetCount](#getcount)|Bu listedeki öğelerin sayısını döndürür.|
-|[CList::GetHead](#gethead)|Head öğesi (boş olamaz) listesi döndürür.|
-|[CList::GetHeadPosition](#getheadposition)|Head öğesi listesinin konumunu döndürür.|
-|[CList::GetNext](#getnext)|Yineleme için sonraki öğeyi alır.|
-|[CList::GetPrev](#getprev)|Yineleme için önceki öğeyi alır.|
-|[CList::GetSize](#getsize)|Bu listedeki öğelerin sayısını döndürür.|
-|[CList::GetTail](#gettail)|Kuyruk öğesini (boş olamaz) listesi döndürür.|
-|[CList::GetTailPosition](#gettailposition)|Listenin tail öğenin konumunu döndürür.|
-|[CList::InsertAfter](#insertafter)|Belirli bir pozisyon sonra yeni bir öğe ekler.|
-|[CList::InsertBefore](#insertbefore)|Belirli bir pozisyon önce yeni bir öğe ekler.|
-|[CList::IsEmpty](#isempty)|(Öğe yok) boş liste koşulu sınar.|
+|[CList::AddHead](#addhead)|Listenin başına bir öğe (veya başka bir listedeki tüm öğeler) ekler (yeni bir kafa yapar).|
+|[CList::AddTail](#addtail)|Listenin kuyruğuna bir öğe (veya başka bir listedeki tüm öğeler) ekler (yeni bir kuyruk yapar).|
+|[CList::Bul](#find)|İşaretçi değeriyle belirtilen bir öğenin konumunu alır.|
+|[CList::FindIndex](#findindex)|Sıfır tabanlı dizin tarafından belirtilen bir öğenin konumunu alır.|
+|[CList::Getat](#getat)|Öğeyi belirli bir konumda alır.|
+|[CList::GetCount](#getcount)|Bu listedeki öğe sayısını verir.|
+|[CList::GetHead](#gethead)|Listenin baş öğesini verir (boş olamaz).|
+|[CList::GetHeadPosition](#getheadposition)|Listenin baş öğesinin konumunu döndürür.|
+|[CList::GetNext](#getnext)|Yinelenmenin bir sonraki öğesini alır.|
+|[CList::GetPrev](#getprev)|Yinelenmeiçin önceki öğeyi alır.|
+|[CList::GetSize](#getsize)|Bu listedeki öğe sayısını verir.|
+|[CList::GetTail](#gettail)|Listenin kuyruk öğesini verir (boş olamaz).|
+|[CList::GetTailPosition](#gettailposition)|Listenin kuyruk öğesinin konumunu döndürür.|
+|[CList::InsertAfter](#insertafter)|Belirli bir konumdan sonra yeni bir öğe ekler.|
+|[CList::EkleBefore](#insertbefore)|Belirli bir konumdan önce yeni bir öğe ekler.|
+|[CList::Boş](#isempty)|Boş liste koşulu için testler (öğe yok).|
 |[CList::RemoveAll](#removeall)|Bu listeden tüm öğeleri kaldırır.|
-|[CList::RemoveAt](#removeat)|Belirtilen konuma göre bu listeden bir öğeyi kaldırır.|
-|[CList::RemoveHead](#removehead)|Öğe listesinin başından kaldırır.|
-|[CList::RemoveTail](#removetail)|Öğe listesinin kuyruğunu kaldırır.|
-|[CList::SetAt](#setat)|Öğe, belirli bir konumda ayarlar.|
+|[CList::Removeat](#removeat)|Konuma göre belirtilen bir öğeyi bu listeden kaldırır.|
+|[CList::RemoveHead](#removehead)|Öğeyi listenin başından kaldırır.|
+|[CList::RemoveTail](#removetail)|Öğeyi listenin kuyruğundan kaldırır.|
+|[CList::Setat](#setat)|Öğeyi belirli bir konumda ayarlar.|
 
 #### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
+*TÜR*<br/>
 Listede depolanan nesne türü.
 
 *ARG_TYPE*<br/>
-Nesneleri listesinde depolanan başvurmak için kullanılan tür. Bir başvuru olabilir.
+Listede depolanan nesnelere başvurmak için kullanılan yazı. Bir referans olabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CList` listeleri karakteriyle bağlantılı liste gibi davranır.
+`CList`listeler iki kat bağlantılı listeler gibi olur.
 
-KONUM türünde bir değişken listesi için bir anahtardır. Sıralı olarak ve bir yerde tutmak için yer işareti listesini geçirmek için bir yineleyici bir konumu değişkeni kullanabilirsiniz. Bir konum bir dizin aynı ancak değildir.
+Tür POZISYON değişkeni liste için bir anahtardır. Bir yeri tutmak için listeyi sırayla ve yer imi olarak geçmek için POSITION değişkenini yineleyici olarak kullanabilirsiniz. Ancak, bir konum dizinle aynı değildir.
 
-Öğe ekleme listesi sonunda, kuyruk ve bilinen bir konuma çok hızlı olması. Sıralı bir arama değeri veya dizin tarafından bir öğesini aramak gereklidir. Bu arama liste uzunsa yavaş olabilir.
+Eleman ekleme liste başında çok hızlı, kuyruk, ve bilinen bir POZISYONDA. Bir öğeyi değere veya dizine göre aramak için sıralı arama gereklidir. Liste uzunsa bu arama yavaş olabilir.
 
-Tek tek öğeleri listesinde bir dökümü gerekiyorsa, 1 veya daha büyük derinliği döküm bağlam ayarlamanız gerekir.
+Listede tek tek öğelerin dökümüne ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
-Bu sınıf, genel yardımcı işlevleri çağrının belirli üye işlevleri, çoğu kullanım için özelleştirilmelidir `CList` sınıfı. Bkz: [koleksiyon sınıfı Yardımcıları](../../mfc/reference/collection-class-helpers.md) "Makroları ve genel öğeleri" bölümünde.
+Bu sınıfın belirli üye işlevleri, `CList` sınıfın çoğu kullanımı için özelleştirilmiş olması gereken genel yardımcı işlevleri çağırır. "Makrolar ve Geneller" [bölümündeki Koleksiyon Sınıfı Yardımcıları](../../mfc/reference/collection-class-helpers.md) bölümüne bakın.
 
-Kullanma hakkında daha fazla bilgi için `CList`, makaleye göz atın [koleksiyonları](../../mfc/collections.md).
+Kullanma `CList`hakkında daha fazla bilgi için [Koleksiyonlar](../../mfc/collections.md)makalesine bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -130,7 +130,7 @@ Kullanma hakkında daha fazla bilgi için `CList`, makaleye göz atın [koleksiy
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 `CList`
 
@@ -138,9 +138,9 @@ Kullanma hakkında daha fazla bilgi için `CList`, makaleye göz atın [koleksiy
 
 **Başlık:** afxtempl.h
 
-##  <a name="addhead"></a>  CList::AddHead
+## <a name="clistaddhead"></a><a name="addhead"></a>CList::AddHead
 
-Bu listenin başındaki yeni bir öğe veya öğe listesi ekler.
+Bu listenin başına yeni bir öğe veya öğe listesi ekler.
 
 ```
 POSITION AddHead(ARG_TYPE newElement);
@@ -150,29 +150,29 @@ void AddHead(CList* pNewList);
 ### <a name="parameters"></a>Parametreler
 
 *ARG_TYPE*<br/>
-(Bir başvuru olabilir) liste öğesi türünü belirten bir şablon parametre.
+Liste öğesinin türünü belirten şablon parametresi (başvuru olabilir).
 
 *newElement*<br/>
-Yeni öğe.
+Yeni eleman.
 
 *pNewList*<br/>
-Başka bir işaretçiye `CList` listesi. Öğeleri *pNewList* bu listeye eklenir.
+Başka bir `CList` listeye işaretçi. *pNewList'teki* öğeler bu listeye eklenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk sürümü, yeni eklenen öğenin KONUMUNU değerini döndürür.
+İlk sürüm, yeni eklenen öğenin KONUM değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste işlemi önce boş olabilir.
+Liste işlemden önce boş olabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#36](../../mfc/codesnippet/cpp/clist-class_2.cpp)]
 
-##  <a name="addtail"></a>  CList::AddTail
+## <a name="clistaddtail"></a><a name="addtail"></a>CList::AddTail
 
-Bu liste kuyruğu için yeni bir öğe veya öğe listesi ekler.
+Bu listenin kuyruğuna yeni bir öğe veya öğe listesi ekler.
 
 ```
 POSITION AddTail(ARG_TYPE newElement);
@@ -182,29 +182,29 @@ void AddTail(CList* pNewList);
 ### <a name="parameters"></a>Parametreler
 
 *ARG_TYPE*<br/>
-(Bir başvuru olabilir) liste öğesi türünü belirten bir şablon parametre.
+Liste öğesinin türünü belirten şablon parametresi (başvuru olabilir).
 
 *newElement*<br/>
 Bu listeye eklenecek öğe.
 
 *pNewList*<br/>
-Başka bir işaretçiye `CList` listesi. Öğeleri *pNewList* bu listeye eklenir.
+Başka bir `CList` listeye işaretçi. *pNewList'teki* öğeler bu listeye eklenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk sürümü, yeni eklenen öğenin KONUMUNU değerini döndürür.
+İlk sürüm, yeni eklenen öğenin KONUM değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste işlemi önce boş olabilir.
+Liste işlemden önce boş olabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#37](../../mfc/codesnippet/cpp/clist-class_3.cpp)]
 
-##  <a name="clist"></a>  CList::CList
+## <a name="clistclist"></a><a name="clist"></a>CList::CList
 
-Boş bir sıralı liste oluşturur.
+Boş bir sıralı liste oluşturuyor.
 
 ```
 CList(INT_PTR nBlockSize = 10);
@@ -213,19 +213,19 @@ CList(INT_PTR nBlockSize = 10);
 ### <a name="parameters"></a>Parametreler
 
 *nBlockSize*<br/>
-Listeyi genişletmek için bellek ayırma ayrıntı düzeyi.
+Listeyi genişletmek için bellek ayırma parçalı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste genişledikçe birimleri cinsinden ayrılan bellek *nBlockSize* girdileri.
+Liste büyüdükçe, bellek *nBlockSize* girişleri birimlerine ayrılır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#38](../../mfc/codesnippet/cpp/clist-class_4.cpp)]
 
-##  <a name="find"></a>  CList::Find
+## <a name="clistfind"></a><a name="find"></a>CList::Bul
 
-Sıralı olarak belirtilen eşleşen ilk öğeyi bulmak için liste arar *searchValue*.
+Belirtilen *searchValue*eşleşen ilk öğeyi bulmak için listeyi sırayla arar.
 
 ```
 POSITION Find(
@@ -236,25 +236,25 @@ POSITION Find(
 ### <a name="parameters"></a>Parametreler
 
 *ARG_TYPE*<br/>
-(Bir başvuru olabilir) liste öğesi türünü belirten bir şablon parametre.
+Liste öğesinin türünü belirten şablon parametresi (başvuru olabilir).
 
 *searchValue*<br/>
-Listesinde bulunacak değer.
+Listede bulunacak değer.
 
-*startAfter*<br/>
-Arama için başlangıç konumu. Hiçbir değer belirtilmemişse arama head öğesi ile başlar.
+*başlangıçAfter*<br/>
+Arama için başlangıç konumu. Değer belirtilmemişse, arama baş öğesi ile başlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme veya nesne işaretçisi alımı için kullanılan konum değeri; Nesne bulunmazsa null değerini DÖNDÜRÜR.
+Yineleme veya nesne işaretçisi alımı için kullanılabilecek bir POSITION değeri; Nesne bulunamazsa NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#39](../../mfc/codesnippet/cpp/clist-class_5.cpp)]
 
-##  <a name="findindex"></a>  CList::FindIndex
+## <a name="clistfindindex"></a><a name="findindex"></a>CList::FindIndex
 
-Değerini kullanır *nIndex* listesine bir dizin olarak.
+listeye dizin olarak *nIndex* değerini kullanır.
 
 ```
 POSITION FindIndex(INT_PTR nIndex) const;
@@ -262,24 +262,24 @@ POSITION FindIndex(INT_PTR nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Bulunacak liste öğesinin sıfır tabanlı dizini.
+*Nındex*<br/>
+Bulunacak liste öğesinin sıfır tabanlı dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme veya nesne işaretçisi alımı için kullanılan konum değeri; NULL ise *nIndex* negatif veya çok büyük.
+Yineleme veya nesne işaretçisi alımı için kullanılabilecek bir POSITION değeri; *nIndex* negatif veya çok büyükse NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üzerinde durdurma listenin başındaki sıralı bir tarama başlatılır *n*öğedeki.
+Listenin başından sıralı bir tbmö başlar ve *n*th öğesi üzerinde durur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#40](../../mfc/codesnippet/cpp/clist-class_6.cpp)]
 
-##  <a name="getat"></a>  CList::GetAt
+## <a name="clistgetat"></a><a name="getat"></a>CList::Getat
 
-Liste öğesi, belirli bir konumda alır.
+Liste öğesini belirli bir konumda alır.
 
 ```
 TYPE& GetAt(POSITION position);
@@ -288,29 +288,29 @@ const TYPE& GetAt(POSITION position) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Listede nesne türünü belirten bir şablon parametre.
+*TÜR*<br/>
+Listedeki nesne türünü belirten şablon parametresi.
 
-*Konumu*<br/>
-Alınacak öğenin konumunu listesinde.
+*Konum*<br/>
+Eleman listesindeki konum.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri açıklamasına bakın `GetHead`.
+`GetHead`'nin getiri değeri açıklamasına bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetAt` belirli bir konum öğesi (veya öğeye bir başvuru) ilişkilendirilmiş döndürür. Bu dizin ile aynı değildir ve üzerinde bir konum değeri kendiniz çalışamaz. KONUM türünde bir değişken listesi için bir anahtardır.
+`GetAt`belirli bir konumla ilişkili öğeyi (veya öğeye bir başvuruyu) döndürür. Bu bir dizin ile aynı değildir ve bir POSITION değeri üzerinde kendiniz çalışamazsınız. Tür POZISYON değişkeni liste için bir anahtardır.
 
-KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerekir. Geçersiz ise, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar.
+POSITION değerinizin listede geçerli bir konumu temsil ettiğinden emin olmalısınız. Geçersizse, Microsoft Foundation Class Kitaplığı'nın Hata Ayıklama sürümü öne sürüler.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CList::GetHeadPosition](#getheadposition).
+  CList örneğine [bakın:GetHeadPosition](#getheadposition).
 
-##  <a name="getcount"></a>  CList::GetCount
+## <a name="clistgetcount"></a><a name="getcount"></a>CList::GetCount
 
-Bu listedeki öğe sayısını alır.
+Bu listedeki öğelerin sayısını alır.
 
 ```
 INT_PTR GetCount() const;
@@ -318,19 +318,19 @@ INT_PTR GetCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe sayısını içeren bir tamsayı değeri.
+Eleman sayısını içeren bir sayıdeğeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin çağrılması aynı sonucu üretir [CList::GetSize](#getsize) yöntemi.
+Bu yöntemi [çağırmak, CList::GetSize](#getsize) yöntemiyle aynı sonucu oluşturur.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CList::RemoveHead](#removehead).
+  CList örneğine [bakın:RemoveHead](#removehead).
 
-##  <a name="gethead"></a>  CList::GetHead
+## <a name="clistgethead"></a><a name="gethead"></a>CList::GetHead
 
-Bu listenin head öğesi (veya bir başvuru head öğesi) alır.
+Bu listenin baş öğesini (veya baş öğesine bir başvuruyu) alır.
 
 ```
 const TYPE& GetHead() const;
@@ -340,26 +340,26 @@ TYPE& GetHead();
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Listede nesne türünü belirten bir şablon parametre.
+*TÜR*<br/>
+Listedeki nesne türünü belirten şablon parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste **const**, `GetHead` listenin başındaki öğeyi bir kopyasını döndürür. Bu, yalnızca sağ tarafta Atama ifadesinin kullanılacak işlevine izin verir ve listenin değişikliklere karşı korur.
+Liste **const**ise, `GetHead` listenin başındaöğenin bir kopyasını döndürür. Bu, işlevin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve listeyi değişiklikten korur.
 
-Listede değilse **const**, `GetHead` listenin başındaki öğeyi bir başvuru döndürür. Bu işlev, atama deyiminin her iki tarafında kullanılacak ve bu nedenle değiştirilecek Liste girişlerini olanak sağlar.
+Liste **const**değilse, `GetHead` listenin başındaki öğeye bir başvuru verir. Bu, işlevin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Listenin çağırmadan önce boş olmadığından emin olmanız gerekir `GetHead`. Liste boşsa, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar. Kullanım [IsEmpty](#isempty) liste öğeleri içerdiğini doğrulayın.
+Aramadan `GetHead`önce listenin boş olmadığından emin olmalısınız. Liste boşsa, Microsoft Hazırlık Sınıfı Kitaplığı'nın Hata Ayıklama sürümü öne sürüler. Listenin öğeleri içerdiğini doğrulamak için [IsEmpty'ı](#isempty) kullanın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#41](../../mfc/codesnippet/cpp/clist-class_7.cpp)]
 
-##  <a name="getheadposition"></a>  CList::GetHeadPosition
+## <a name="clistgetheadposition"></a><a name="getheadposition"></a>CList::GetHeadPosition
 
-Bu listenin baş öğenin konumunu alır.
+Bu listenin baş öğesinin konumunu alır.
 
 ```
 POSITION GetHeadPosition() const;
@@ -367,15 +367,15 @@ POSITION GetHeadPosition() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme veya nesne işaretçisi alımı için kullanılan konum değeri; Liste boş ise NULL değerini DÖNDÜRÜR.
+Yineleme veya nesne işaretçisi alımı için kullanılabilecek bir POSITION değeri; Liste boşsa NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#42](../../mfc/codesnippet/cpp/clist-class_8.cpp)]
 
-##  <a name="getnext"></a>  CList::GetNext
+## <a name="clistgetnext"></a><a name="getnext"></a>CList::GetNext
 
-Tarafından tanımlanan liste öğesi alır *rPosition*, ardından ayarlar *rPosition* için listedeki sonraki giriş konum değeri.
+*rPosition*tarafından tanımlanan liste öğesini alır, ardından listedeki bir sonraki girişin KONUM değerine *rPosition'ı* ayarlar.
 
 ```
 TYPE& GetNext(POSITION& rPosition);
@@ -384,33 +384,33 @@ const TYPE& GetNext(POSITION& rPosition) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Listede öğelerin türünü belirten bir şablon parametre.
+*TÜR*<br/>
+Listedeki öğelerin türünü belirten şablon parametresi.
 
-*rPosition*<br/>
-Bir önceki tarafından döndürülen bir konum değeri başvurusu `GetNext`, [GetHeadPosition](#getheadposition), ya da diğer üye işlev çağrısı.
+*Rposition*<br/>
+Önceki , [GetHeadPosition](#getheadposition)veya `GetNext`diğer üye işlev çağrısı tarafından döndürülen bir POSITION değerine yapılan başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste **const**, `GetNext` listedeki bir öğe bir kopyasını döndürür. Bu, yalnızca sağ tarafta Atama ifadesinin kullanılacak işlevine izin verir ve listenin değişikliklere karşı korur.
+Liste **const**ise, `GetNext` listenin bir öğesinin bir kopyasını döndürür. Bu, işlevin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve listeyi değişiklikten korur.
 
-Listede değilse **const**, `GetNext` listedeki bir öğeye bir başvuru döndürür. Bu işlev, atama deyiminin her iki tarafında kullanılacak ve bu nedenle değiştirilecek Liste girişlerini olanak sağlar.
+Liste **const**değilse, `GetNext` listenin bir öğesiiçin bir başvuru döndürür. Bu, işlevin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanabileceğiniz `GetNext` çağrısıyla ilk konumunu kurarsanız ileriye doğru yineleme döngüsünde `GetHeadPosition` veya `Find`.
+Bir çağrı `GetNext` ile ilk konumu kurarsanız, bir ileri yineleme `GetHeadPosition` döngüsünde kullanabilirsiniz veya `Find`.
 
-KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerekir. Geçersiz ise, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar.
+POSITION değerinizin listede geçerli bir konumu temsil ettiğinden emin olmalısınız. Geçersizse, Microsoft Foundation Class Kitaplığı'nın Hata Ayıklama sürümü öne sürüler.
 
-Alınan öğe listesinde, son öğesinin yeni değeri ise `rPosition` NULL olarak ayarlandı.
+Alınan öğe listenin son öğesiyse, yeni değeri `rPosition` NULL olarak ayarlanır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#43](../../mfc/codesnippet/cpp/clist-class_9.cpp)]
 
-##  <a name="getprev"></a>  CList::GetPrev
+## <a name="clistgetprev"></a><a name="getprev"></a>CList::GetPrev
 
-Tarafından tanımlanan liste öğesi alır `rPosition`, ardından ayarlar `rPosition` konumu değerine listesinde önceki girişi.
+Liste öğesini, `rPosition`listedeki `rPosition` önceki girişin KONUM değerine ayarlar, sonra da tanımlar.
 
 ```
 TYPE& GetPrev(POSITION& rPosition);
@@ -419,33 +419,33 @@ const TYPE& GetPrev(POSITION& rPosition) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Listede öğelerin türünü belirten bir şablon parametre.
+*TÜR*<br/>
+Listedeki öğelerin türünü belirten şablon parametresi.
 
-*rPosition*<br/>
-Bir önceki tarafından döndürülen bir konum değeri başvurusu `GetPrev` veya diğer üye işlev çağrısı.
+*Rposition*<br/>
+Önceki `GetPrev` veya diğer bir üye işlev çağrısı tarafından döndürülen POSITION değerine yapılan başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste **const**, `GetPrev` listenin başındaki öğeyi bir kopyasını döndürür. Bu, yalnızca sağ tarafta Atama ifadesinin kullanılacak işlevine izin verir ve listenin değişikliklere karşı korur.
+Liste **const**ise, `GetPrev` listenin başındaöğenin bir kopyasını döndürür. Bu, işlevin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve listeyi değişiklikten korur.
 
-Listede değilse **const**, `GetPrev` listedeki bir öğeye bir başvuru döndürür. Bu işlev, atama deyiminin her iki tarafında kullanılacak ve bu nedenle değiştirilecek Liste girişlerini olanak sağlar.
+Liste **const**değilse, `GetPrev` listenin bir öğesiiçin bir başvuru döndürür. Bu, işlevin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanabileceğiniz `GetPrev` çağrısıyla ilk konumunu kurarsanız geriye doğru yineleme döngüsünde `GetTailPosition` veya `Find`.
+Bir çağrı `GetPrev` ile ilk konumu kurarsanız ters yineleme döngüsünde `GetTailPosition` kullanabilirsiniz veya `Find`.
 
-KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerekir. Geçersiz ise, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar.
+POSITION değerinizin listede geçerli bir konumu temsil ettiğinden emin olmalısınız. Geçersizse, Microsoft Foundation Class Kitaplığı'nın Hata Ayıklama sürümü öne sürüler.
 
-Alınan öğe listesinde ilk yeni değeri ise *rPosition* NULL olarak ayarlandı.
+Alınan öğe listede ilk sıradaysa, *rPosition'un* yeni değeri NULL olarak ayarlanır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#44](../../mfc/codesnippet/cpp/clist-class_10.cpp)]
 
-##  <a name="getsize"></a>  CList::GetSize
+## <a name="clistgetsize"></a><a name="getsize"></a>CList::GetSize
 
-Liste öğelerin sayısını döndürür.
+Liste öğelerinin sayısını verir.
 
 ```
 INT_PTR GetSize() const;
@@ -457,15 +457,15 @@ Listedeki öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Listedeki öğe sayısını almak için bu yöntemi çağırın.  Bu yöntemin çağrılması aynı sonucu üretir [CList::GetCount](#getcount) yöntemi.
+Listedeki öğe sayısını almak için bu yöntemi arayın.  Bu yöntemi [çağırmak, CList::GetCount](#getcount) yöntemiyle aynı sonucu oluşturur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#45](../../mfc/codesnippet/cpp/clist-class_11.cpp)]
 
-##  <a name="gettail"></a>  CList::GetTail
+## <a name="clistgettail"></a><a name="gettail"></a>CList::GetTail
 
-Alır `CObject` Kuyruk öğesi bu listenin temsil eden bir işaretçi.
+Bu `CObject` listenin kuyruk öğesini temsil eden işaretçiyi alır.
 
 ```
 TYPE& GetTail();
@@ -474,24 +474,24 @@ const TYPE& GetTail() const;
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Listesinde öğelerin türünü belirten bir şablon parametre.
+*TÜR*<br/>
+Listedeki öğelerin türünü belirten şablon parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri açıklamasına bakın [GetHead](../../mfc/reference/coblist-class.md#gethead).
+[GetHead](../../mfc/reference/coblist-class.md#gethead)için iade değeri açıklamasına bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Listenin çağırmadan önce boş olmadığından emin olmanız gerekir `GetTail`. Liste boşsa, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar. Kullanım [IsEmpty](../../mfc/reference/coblist-class.md#isempty) liste öğeleri içerdiğini doğrulayın.
+Aramadan `GetTail`önce listenin boş olmadığından emin olmalısınız. Liste boşsa, Microsoft Hazırlık Sınıfı Kitaplığı'nın Hata Ayıklama sürümü öne sürüler. Listenin öğeleri içerdiğini doğrulamak için [IsEmpty'ı](../../mfc/reference/coblist-class.md#isempty) kullanın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#46](../../mfc/codesnippet/cpp/clist-class_12.cpp)]
 
-##  <a name="gettailposition"></a>  CList::GetTailPosition
+## <a name="clistgettailposition"></a><a name="gettailposition"></a>CList::GetTailPosition
 
-Bu listenin tail öğenin konumunu alır; Liste boş ise NULL değerini DÖNDÜRÜR.
+Bu listenin kuyruk elemanının konumunu alır; Liste boşsa NULL.
 
 ```
 POSITION GetTailPosition() const;
@@ -499,15 +499,15 @@ POSITION GetTailPosition() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme veya nesne işaretçisi alımı için kullanılan konum değeri; Liste boş ise NULL değerini DÖNDÜRÜR.
+Yineleme veya nesne işaretçisi alımı için kullanılabilecek bir POSITION değeri; Liste boşsa NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#47](../../mfc/codesnippet/cpp/clist-class_13.cpp)]
 
-##  <a name="insertafter"></a>  CList::InsertAfter
+## <a name="clistinsertafter"></a><a name="insertafter"></a>CList::InsertAfter
 
-Belirli bir konumda öğesinden sonra bu listeye bir öğe ekler.
+Belirtilen konumdaöğe sonra bu listeye bir öğe ekler.
 
 ```
 POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
@@ -515,26 +515,26 @@ POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>Parametreler
 
-*Konumu*<br/>
-Bir önceki tarafından döndürülen bir konum değeri `GetNext`, `GetPrev`, veya `Find` üye işlev çağrısı.
+*Konum*<br/>
+Önceki `GetNext`, `GetPrev`veya `Find` üye işlev çağrısı yla döndürülen bir POSITION değeri.
 
 *ARG_TYPE*<br/>
-Liste öğesi türünü belirten bir şablon parametre.
+Liste öğesinin türünü belirten şablon parametresi.
 
 *newElement*<br/>
 Bu listeye eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme veya liste öğesi almak için kullanılan bir konum değeri.
+Yineleme veya liste öğesi alımı için kullanılabilecek bir POSITION değeri.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#48](../../mfc/codesnippet/cpp/clist-class_14.cpp)]
 
-##  <a name="insertbefore"></a>  CList::InsertBefore
+## <a name="clistinsertbefore"></a><a name="insertbefore"></a>CList::EkleBefore
 
-Belirli bir konumda öğesinden önce bu listeye bir öğe ekler.
+Belirtilen konumdaöğe önce bu listeye bir öğe ekler.
 
 ```
 POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
@@ -542,30 +542,30 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>Parametreler
 
-*Konumu*<br/>
-Bir önceki tarafından döndürülen bir konum değeri `GetNext`, `GetPrev`, veya `Find` üye işlev çağrısı.
+*Konum*<br/>
+Önceki `GetNext`, `GetPrev`veya `Find` üye işlev çağrısı yla döndürülen bir POSITION değeri.
 
 *ARG_TYPE*<br/>
-(Bir başvuru olabilir) liste öğesi türünü belirten bir şablon parametre.
+Liste öğesinin türünü belirten şablon parametresi (başvuru olabilir).
 
 *newElement*<br/>
 Bu listeye eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme veya liste öğesi almak için kullanılan bir konum değeri.
+Yineleme veya liste öğesi alımı için kullanılabilecek bir POSITION değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *konumu* NULL ise öğe listesinin kafası eklenir.
+*Konum* NULL ise, öğe listenin başına eklenir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#49](../../mfc/codesnippet/cpp/clist-class_15.cpp)]
 
-##  <a name="isempty"></a>  CList::IsEmpty
+## <a name="clistisempty"></a><a name="isempty"></a>CList::Boş
 
-Bu listeye öğe içerip içermediğini belirtir.
+Bu listenin öğe içerip içermediğini gösterir.
 
 ```
 BOOL IsEmpty() const;
@@ -573,15 +573,15 @@ BOOL IsEmpty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu listenin boş olduğunu olursa sıfır dışı; Aksi durumda 0.
+Bu liste boşsa sıfırolmayan; aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#50](../../mfc/codesnippet/cpp/clist-class_16.cpp)]
 
-##  <a name="removeall"></a>  CList::RemoveAll
+## <a name="clistremoveall"></a><a name="removeall"></a>CList::RemoveAll
 
-Tüm öğeleri bu listeden kaldırır ve ilişkili belleği serbest bırakır.
+Bu listeden tüm öğeleri kaldırır ve ilişkili belleği serbest sağlar.
 
 ```
 void RemoveAll();
@@ -589,15 +589,15 @@ void RemoveAll();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste boş ise, bir hata oluşturulmaz.
+Liste zaten boşsa hata oluşturulmadı.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#51](../../mfc/codesnippet/cpp/clist-class_17.cpp)]
 
-##  <a name="removeat"></a>  CList::RemoveAt
+## <a name="clistremoveat"></a><a name="removeat"></a>CList::Removeat
 
-Belirtilen öğeyi listeden kaldırır.
+Belirtilen öğeyi bu listeden kaldırır.
 
 ```
 void RemoveAt(POSITION position);
@@ -605,20 +605,20 @@ void RemoveAt(POSITION position);
 
 ### <a name="parameters"></a>Parametreler
 
-*Konumu*<br/>
-Listeden kaldırılacak öğenin konumu.
+*Konum*<br/>
+Öğenin listeden kaldırılacak konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerekir. Geçersiz ise, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar.
+POSITION değerinizin listede geçerli bir konumu temsil ettiğinden emin olmalısınız. Geçersizse, Microsoft Foundation Class Kitaplığı'nın Hata Ayıklama sürümü öne sürüler.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#52](../../mfc/codesnippet/cpp/clist-class_18.cpp)]
 
-##  <a name="removehead"></a>  CList::RemoveHead
+## <a name="clistremovehead"></a><a name="removehead"></a>CList::RemoveHead
 
-Öğe listesinin başından kaldırır ve bir işaretçi döndürür.
+Öğeyi listenin başından kaldırır ve bir işaretçi döndürür.
 
 ```
 TYPE RemoveHead();
@@ -626,24 +626,24 @@ TYPE RemoveHead();
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Listesinde öğelerin türünü belirten bir şablon parametre.
+*TÜR*<br/>
+Listedeki öğelerin türünü belirten şablon parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe listesinin daha önce sonunda.
+Öğe daha önce listenin başında.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Listenin çağırmadan önce boş olmadığından emin olmanız gerekir `RemoveHead`. Liste boşsa, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar. Kullanım [IsEmpty](#isempty) liste öğeleri içerdiğini doğrulayın.
+Aramadan `RemoveHead`önce listenin boş olmadığından emin olmalısınız. Liste boşsa, Microsoft Hazırlık Sınıfı Kitaplığı'nın Hata Ayıklama sürümü öne sürüler. Listenin öğeleri içerdiğini doğrulamak için [IsEmpty'ı](#isempty) kullanın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#53](../../mfc/codesnippet/cpp/clist-class_19.cpp)]
 
-##  <a name="removetail"></a>  CList::RemoveTail
+## <a name="clistremovetail"></a><a name="removetail"></a>CList::RemoveTail
 
-Listenin kuyruğunu öğeyi kaldırır ve bir işaretçi döndürür.
+Öğeyi listenin kuyruğundan kaldırır ve bir işaretçi döndürür.
 
 ```
 TYPE RemoveTail();
@@ -651,24 +651,24 @@ TYPE RemoveTail();
 
 ### <a name="parameters"></a>Parametreler
 
-*TÜRÜ*<br/>
-Listesinde öğelerin türünü belirten bir şablon parametre.
+*TÜR*<br/>
+Listedeki öğelerin türünü belirten şablon parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listenin kuyruğunu öğesi.
+Listenin kuyruğundaki öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Listenin çağırmadan önce boş olmadığından emin olmanız gerekir `RemoveTail`. Liste boşsa, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar. Kullanım [IsEmpty](#isempty) liste öğeleri içerdiğini doğrulayın.
+Aramadan `RemoveTail`önce listenin boş olmadığından emin olmalısınız. Liste boşsa, Microsoft Hazırlık Sınıfı Kitaplığı'nın Hata Ayıklama sürümü öne sürüler. Listenin öğeleri içerdiğini doğrulamak için [IsEmpty'ı](#isempty) kullanın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCCollections#54](../../mfc/codesnippet/cpp/clist-class_20.cpp)]
 
-##  <a name="setat"></a>  CList::SetAt
+## <a name="clistsetat"></a><a name="setat"></a>CList::Setat
 
-KONUM türünde bir değişken listesi için bir anahtardır.
+Tür POZISYON değişkeni liste için bir anahtardır.
 
 ```
 void SetAt(POSITION pos, ARG_TYPE newElement);
@@ -676,20 +676,20 @@ void SetAt(POSITION pos, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-Ayarlanacak öğenin konumu.
+*Pos*<br/>
+Ayarlanacak öğenin KONUMU.
 
 *ARG_TYPE*<br/>
-(Bir başvuru olabilir) liste öğesi türünü belirten bir şablon parametre.
+Liste öğesinin türünü belirten şablon parametresi (başvuru olabilir).
 
 *newElement*<br/>
 Listeye eklenecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu dizin ile aynı değildir ve üzerinde bir konum değeri kendiniz çalışamaz. `SetAt` öğe, listede belirtilen konuma yazar.
+Bu bir dizin ile aynı değildir ve bir POSITION değeri üzerinde kendiniz çalışamazsınız. `SetAt`öğeyi listede belirtilen konuma yazar.
 
-KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerekir. Geçersiz ise, ardından Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar.
+POSITION değerinizin listede geçerli bir konumu temsil ettiğinden emin olmalısınız. Geçersizse, Microsoft Foundation Class Kitaplığı'nın Hata Ayıklama sürümü öne sürüler.
 
 ### <a name="example"></a>Örnek
 
@@ -697,7 +697,7 @@ KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerek
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek Topla](../../overview/visual-cpp-samples.md)<br/>
+[MFC Örnek TOPLAMA](../../overview/visual-cpp-samples.md)<br/>
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CMap Sınıfı](../../mfc/reference/cmap-class.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: Giriş çıkışı Işleme için öneriler
+title: Giriş-Çıkış İşleme için Öneriler
 ms.date: 11/04/2016
 helpviewer_keywords:
 - I/O [MFC], about I/O
@@ -8,45 +8,45 @@ helpviewer_keywords:
 - I/O [MFC], options
 - I/O [MFC], file-based options
 ms.assetid: d664b175-3b4a-40c3-b14b-39de6b12e419
-ms.openlocfilehash: 956a92fd1761f61081afa2eb9c6cb35fe72b46d6
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: c365120a385c440f09f0ee4c0a2fc52afb55834f
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446904"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371732"
 ---
 # <a name="recommendations-for-handling-inputoutput"></a>Giriş/Çıkış İşleme için Öneriler
 
-Dosya tabanlı g/ç veya kullanma gibi, aşağıdaki karar ağacındaki sorulara nasıl yanıt verdiğinize bağlı değildir:
+Dosya tabanlı G/Ç kullanıp kullanmadığınız, aşağıdaki karar ağacındaki sorulara nasıl yanıt verilebildiğinize bağlıdır:
 
-**Uygulamanızdaki birincil veriler bir disk dosyasında yer alır**
+**Uygulamanızdaki birincil veriler bir disk dosyasında mı bulunur?**
 
 - Evet, birincil veriler bir disk dosyasında bulunur:
 
-     **Uygulama dosya açıkken tüm dosyayı belleğe okur ve dosya kaydetme sırasında tüm dosyayı diske geri yazar**
+   **Uygulama Dosya Aç'ta tüm dosyayı belleğe okur ve dosyanın tamamını Dosya Kaydet'te diske geri yazar mı?**
 
-   - Evet: Bu varsayılan MFC belge durumdur. `CDocument` serileştirme kullanın.
+  - Evet: Bu varsayılan MFC belge örneğidir. Serileştirme kullanın. `CDocument`
 
-   - Hayır: Bu genellikle dosyanın işlem tabanlı güncelleştirilmesi durumunda oluşur. Dosya işlem başına temelinde günceldir ve `CDocument` serileştirmesi gerekmez.
+  - Hayır: Bu genellikle dosyanın işlem tabanlı güncelleştirme durumudur. Dosyayı işlem başına olarak güncelleştirin ve `CDocument` serileştirme gerekmez.
 
-- Hayır, birincil veriler disk dosyasında yer almaz:
+- Hayır, birincil veriler bir disk dosyasında bulunmaz:
 
-     **Veriler bir ODBC veri kaynağında bulunur**
+   **Veriler Bir ODBC veri kaynağında mı?**
 
-   - Evet, veriler ODBC veri kaynağında bulunuyor:
+  - Evet, veriler bir ODBC veri kaynağında bulunur:
 
-      MFC 'nin veritabanı desteğini kullanın. Bu durum için standart MFC uygulamasında [MFC: belgeler ve görünümler Ile veritabanı sınıflarını kullanma](../data/mfc-using-database-classes-with-documents-and-views.md)başlıklı makalede açıklandığı gibi bir `CDatabase` nesnesi vardır. Uygulama ayrıca bir yardımcı dosyayı okuyabilir ve yazabilir (uygulama Sihirbazı 'nın her ikisi de bir veritabanı görünümü ve dosya desteği "seçeneğidir). Bu durumda, yardımcı dosya için serileştirme kullanacaksınız.
+      MFC'nin veritabanı desteğini kullanın. Bu servis talebi için standart `CDatabase` MFC uygulaması, [MFC: Belgeler ve Görünümlerle Veritabanı Sınıfları kullanma](../data/mfc-using-database-classes-with-documents-and-views.md)makalesinde belirtildiği gibi bir nesne içerir. Uygulama ayrıca yardımcı bir dosyayı okuyup yazabilir — uygulama sihirbazının amacı "hem veritabanı görünümü hem de dosya desteği" seçeneği. Bu durumda, yardımcı dosya için serileştirme kullanırsınız.
 
-   - Hayır, veriler ODBC veri kaynağında yer almamalıdır.
+  - Hayır, veriler ODBC veri kaynağında yok.
 
-      Bu örneğe örnekler: veriler ODBC olmayan bir DBMS 'de bulunur; veriler OLE veya DDE gibi başka bir mekanizma aracılığıyla okunabilir.
+      Bu duruma örnekler: veriler ODBC DBMS olmayan bir yerde bulunur; veriler OLE veya DDE gibi başka bir mekanizma aracılığıyla okunur.
 
-      Bu gibi durumlarda serileştirme kullanmayacaktır ve uygulamanız menü öğelerini açıp kaydetmezler. Bir MFC ODBC uygulamasının `CRecordset` nesneleri depolamak için belgeyi kullanması gibi, yine de bir `CDocument` giriş tabanı olarak kullanmak isteyebilirsiniz. Ancak çerçevenin varsayılan dosyasını aç/kaydet belge serileştirmesini kullanamazsınız.
+      Bu gibi durumlarda serileştirme kullanmazsınız ve uygulamanızda Aç ve Kaydet menü öğeleri olmaz. MFC ODBC `CDocument` uygulamasının nesneleri depolamak `CRecordset` için belgeyi kullandığı gibi, bir ana taban olarak da kullanmak isteyebilirsiniz. Ancak çerçevenin varsayılan Dosya Aç/Kaydet belge serileştirmesini kullanmazsınız.
 
-Dosya menüsünde Aç, Kaydet ve farklı Kaydet komutlarını desteklemek için Framework belge serileştirmesi sağlar. Serileştirme, `CObject`sınıfından türetilmiş nesneler dahil, normal olarak bir disk dosyası olan verileri okur ve yazar. Serileştirme kullanımı kolaydır ve gereksinimlerinize çok sayıda hizmet sunar, ancak birçok veri erişimi uygulamasında uygunsuz olabilir. Veri erişimi uygulamaları, verileri genellikle işlem başına temelinde güncelleştirir. Tüm veri dosyalarını bir kerede okumak ve yazmak yerine işlemin etkilediği kayıtları güncelleştirirler.
+Dosya menüsündeki Aç, Kaydet ve Kaydet komutlarını desteklemek için çerçeve belge serileştirmesağlar. Serileştirme, normalde bir disk dosyası olan `CObject`sınıftan kalıcı depolamaya türetilen nesneler de dahil olmak üzere verileri okur ve yazar. Serileştirme kullanımı kolaydır ve birçok gereksinimlerinize hizmet eder, ancak birçok veri erişim uygulamasında uygunsuz olabilir. Veri erişim uygulamaları genellikle verileri işlem başına olarak güncelleştirin. Tüm veri dosyasını aynı anda okuyup yazmak yerine işlemden etkilenen kayıtları güncellerler.
 
-Serileştirme hakkında daha fazla bilgi için bkz. [serileştirme](../mfc/serialization-in-mfc.md).
+Serileştirme hakkında bilgi için [serileştirme'ye](../mfc/serialization-in-mfc.md)bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Serileştirme: serileştirme ve veritabanı giriş/çıkış karşılaştırması](../mfc/serialization-serialization-vs-database-input-output.md)
+[Seri Hale Getirme: Seri Hale Getirme ve Veritabanı Giriş/Çıkışı](../mfc/serialization-serialization-vs-database-input-output.md)

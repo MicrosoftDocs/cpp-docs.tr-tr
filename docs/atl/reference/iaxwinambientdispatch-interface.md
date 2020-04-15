@@ -1,5 +1,5 @@
 ---
-title: Iaxwinambientdispatch arabirimi
+title: IAxWinAmbientDispatch Arabirimi
 ms.date: 11/04/2016
 f1_keywords:
 - IAxWinAmbientDispatch
@@ -35,19 +35,19 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatch interface
 ms.assetid: 55ba6f7b-7a3c-4792-ae47-c8a84b683ca9
-ms.openlocfilehash: 85a8f1d41c6c54f94b500807a1e4ca504206f56a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a4f5322d957b1e978bd123db3b4796be6b300da
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62276165"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330005"
 ---
-# <a name="iaxwinambientdispatch-interface"></a>Iaxwinambientdispatch arabirimi
+# <a name="iaxwinambientdispatch-interface"></a>IAxWinAmbientDispatch Arabirimi
 
-Bu arabirim, barındırılan denetim veya kapsayıcı özelliklerini belirtmek için yöntemler sağlar.
+Bu arabirim, barındırılan denetimin veya kapsayıcının özelliklerini belirtmek için yöntemler sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,58 +61,58 @@ interface IAxWinAmbientDispatch : IDispatch
 
 |||
 |-|-|
-|[get_AllowContextMenu](#get_allowcontextmenu)|`AllowContextMenu` Özelliği, bağlam menüsünü görüntülemek için denetimden izin verilip verilmeyeceğini belirtir.|
-|[get_AllowShowUI](#get_allowshowui)|`AllowShowUI` Özelliği, kendi kullanıcı arabirimini görüntülemek için denetimden izin verilip verilmeyeceğini belirtir.|
-|[get_AllowWindowlessActivation](#get_allowwindowlessactivation)|`AllowWindowlessActivation` Özelliği, kapsayıcı penceresiz etkinleştirme izin verip vermeyeceğini belirtir.|
-|[get_BackColor](#get_backcolor)|`BackColor` Özelliği, kapsayıcının ortam arka plan rengini belirtir.|
-|[get_DisplayAsDefault](#get_displayasdefault)|`DisplayAsDefault` Varsayılan Denetim olup olmadığını öğrenmek için bir denetim sağlayan bir ortam özelliğidir.|
-|[get_DocHostDoubleClickFlags](#get_dochostdoubleclickflags)|`DocHostDoubleClickFlags` Özelliği, yanıt bir çift olarak gerçekleşmesi gereken işlemi belirler.|
-|[get_DocHostFlags](#get_dochostflags)|`DocHostFlags` Özellik konak nesnesi kullanıcı arabirimi özelliklerini belirtir.|
-|[get_Font](#get_font)|`Font` Özelliği, kapsayıcının ortam yazı tipini belirtir.|
-|[get_ForeColor](#get_forecolor)|`ForeColor` Özelliği, kapsayıcının ortam ön plan rengini belirtir.|
-|[get_LocaleID](#get_localeid)|`LocaleID` Özelliği, kapsayıcının ortam yerel ayar Kimliğini belirtir.|
-|[get_MessageReflect](#get_messagereflect)|`MessageReflect` Ortam özelliği, kapsayıcıda barındırılan denetim iletileri yansıtmadığını belirtir.|
-|[get_OptionKeyPath](#get_optionkeypath)|`OptionKeyPath` Özelliği, kullanıcı ayarları için kayıt defteri anahtarının yolunu belirtir.|
-|[get_ShowGrabHandles](#get_showgrabhandles)|`ShowGrabHandles` Ortam özelliği, kendisini tutamaçların ile çizip varsa öğrenmek denetim sağlar.|
-|[get_ShowHatching](#get_showhatching)|`ShowHatching` Ortam özelliği, kendisini çizgili çizip varsa öğrenmek denetim sağlar.|
-|[get_UserMode](#get_usermode)|`UserMode` Özelliği, kapsayıcının ortam kullanıcı modunu belirtir.|
-|[put_AllowContextMenu](#put_allowcontextmenu)|`AllowContextMenu` Özelliği, bağlam menüsünü görüntülemek için denetimden izin verilip verilmeyeceğini belirtir.|
-|[put_AllowShowUI](#put_allowshowui)|`AllowShowUI` Özelliği, kendi kullanıcı arabirimini görüntülemek için denetimden izin verilip verilmeyeceğini belirtir.|
-|[put_AllowWindowlessActivation](#put_allowwindowlessactivation)|`AllowWindowlessActivation` Özelliği, kapsayıcı penceresiz etkinleştirme izin verip vermeyeceğini belirtir.|
-|[put_BackColor](#put_backcolor)|`BackColor` Özelliği, kapsayıcının ortam arka plan rengini belirtir.|
-|[put_DisplayAsDefault](#put_displayasdefault)|`DisplayAsDefault` Varsayılan Denetim olup olmadığını öğrenmek için bir denetim sağlayan bir ortam özelliğidir.|
-|[put_DocHostDoubleClickFlags](#put_dochostdoubleclickflags)|`DocHostDoubleClickFlags` Özelliği, yanıt bir çift olarak gerçekleşmesi gereken işlemi belirler.|
-|[put_DocHostFlags](#put_dochostflags)|`DocHostFlags` Özellik konak nesnesi kullanıcı arabirimi özelliklerini belirtir.|
-|[put_Font](#put_font)|`Font` Özelliği, kapsayıcının ortam yazı tipini belirtir.|
-|[put_ForeColor](#put_forecolor)|`ForeColor` Özelliği, kapsayıcının ortam ön plan rengini belirtir.|
-|[put_LocaleID](#put_localeid)|`LocaleID` Özelliği, kapsayıcının ortam yerel ayar Kimliğini belirtir.|
-|[put_MessageReflect](#put_messagereflect)|`MessageReflect` Ortam özelliği, kapsayıcıda barındırılan denetim iletileri yansıtmadığını belirtir.|
-|[put_OptionKeyPath](#put_optionkeypath)|`OptionKeyPath` Özelliği, kullanıcı ayarları için kayıt defteri anahtarının yolunu belirtir.|
-|[put_UserMode](#put_usermode)|`UserMode` Özelliği, kapsayıcının ortam kullanıcı modunu belirtir.|
+|[get_AllowContextMenu](#get_allowcontextmenu)|Özellik, `AllowContextMenu` barındırılan denetimin kendi bağlam menüsünü görüntülemesine izin verilip verilmediğini belirtir.|
+|[get_AllowShowUI](#get_allowshowui)|Özellik, `AllowShowUI` barındırılan denetimin kendi kullanıcı arabirimini görüntülemesine izin verilip verilmediğini belirtir.|
+|[get_AllowWindowlessActivation](#get_allowwindowlessactivation)|Özellik, `AllowWindowlessActivation` kapsayıcının penceresiz etkinleştirmeye izin verip vermeyeceği belirtilir.|
+|[get_BackColor](#get_backcolor)|Özellik, `BackColor` kapsayıcının ortam arka plan rengini belirtir.|
+|[get_DisplayAsDefault](#get_displayasdefault)|`DisplayAsDefault`denetimin varsayılan denetim olup olmadığını öğrenmesini sağlayan bir ortam özelliğidir.|
+|[get_DocHostDoubleClickFlags](#get_dochostdoubleclickflags)|Özellik, `DocHostDoubleClickFlags` çift tıklatmaya yanıt olarak gerçekleşmesi gereken işlemi belirtir.|
+|[get_DocHostFlags](#get_dochostflags)|Özellik, `DocHostFlags` ana bilgisayar nesnesinin kullanıcı arabirimi özelliklerini belirtir.|
+|[get_Font](#get_font)|Özellik, `Font` kapsayıcının ortam yazı tipini belirtir.|
+|[get_ForeColor](#get_forecolor)|Özellik, `ForeColor` konteynerin ortam ön plan rengini belirtir.|
+|[get_LocaleID](#get_localeid)|Özellik, `LocaleID` kapsayıcının ortam yerel kimliğini belirtir.|
+|[get_MessageReflect](#get_messagereflect)|Ortam `MessageReflect` özelliği, kapsayıcının iletileri barındırılan denetime yansıtıp yansıtmayacağını belirtir.|
+|[get_OptionKeyPath](#get_optionkeypath)|Özellik, `OptionKeyPath` kullanıcı ayarlarına giden kayıt defteri anahtar yolunu belirtir.|
+|[get_ShowGrabHandles](#get_showgrabhandles)|Ortam `ShowGrabHandles` özelliği, kontrolün kendisini tutamak kollarıyla çizip çizmemesi gerektiğini öğrenmesini sağlar.|
+|[get_ShowHatching](#get_showhatching)|Ortam `ShowHatching` özelliği, kontrolün kendisini yumurtadan çıkarıp çıkarmaması gerektiğini öğrenmesini sağlar.|
+|[get_UserMode](#get_usermode)|Özellik, `UserMode` kapsayıcının ortam kullanıcı modunu belirtir.|
+|[put_AllowContextMenu](#put_allowcontextmenu)|Özellik, `AllowContextMenu` barındırılan denetimin kendi bağlam menüsünü görüntülemesine izin verilip verilmediğini belirtir.|
+|[put_AllowShowUI](#put_allowshowui)|Özellik, `AllowShowUI` barındırılan denetimin kendi kullanıcı arabirimini görüntülemesine izin verilip verilmediğini belirtir.|
+|[put_AllowWindowlessActivation](#put_allowwindowlessactivation)|Özellik, `AllowWindowlessActivation` kapsayıcının penceresiz etkinleştirmeye izin verip vermeyeceği belirtilir.|
+|[put_BackColor](#put_backcolor)|Özellik, `BackColor` kapsayıcının ortam arka plan rengini belirtir.|
+|[put_DisplayAsDefault](#put_displayasdefault)|`DisplayAsDefault`denetimin varsayılan denetim olup olmadığını öğrenmesini sağlayan bir ortam özelliğidir.|
+|[put_DocHostDoubleClickFlags](#put_dochostdoubleclickflags)|Özellik, `DocHostDoubleClickFlags` çift tıklatmaya yanıt olarak gerçekleşmesi gereken işlemi belirtir.|
+|[put_DocHostFlags](#put_dochostflags)|Özellik, `DocHostFlags` ana bilgisayar nesnesinin kullanıcı arabirimi özelliklerini belirtir.|
+|[put_Font](#put_font)|Özellik, `Font` kapsayıcının ortam yazı tipini belirtir.|
+|[put_ForeColor](#put_forecolor)|Özellik, `ForeColor` konteynerin ortam ön plan rengini belirtir.|
+|[put_LocaleID](#put_localeid)|Özellik, `LocaleID` kapsayıcının ortam yerel kimliğini belirtir.|
+|[put_MessageReflect](#put_messagereflect)|Ortam `MessageReflect` özelliği, kapsayıcının iletileri barındırılan denetime yansıtıp yansıtmayacağını belirtir.|
+|[put_OptionKeyPath](#put_optionkeypath)|Özellik, `OptionKeyPath` kullanıcı ayarlarına giden kayıt defteri anahtar yolunu belirtir.|
+|[put_UserMode](#put_usermode)|Özellik, `UserMode` kapsayıcının ortam kullanıcı modunu belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arabirim, nesneler barındırma ATL'nin ActiveX denetimi tarafından kullanıma sunulur. Barındırılan denetim için kullanılabilir ortam özelliklerini ayarlamak için veya diğer yönleri kapsayıcının davranışını belirtmek için bu arabirimdeki yöntemleri çağırın. Tarafından sağlanan özellikleri desteklemek üzere `IAxWinAmbientDispatch`, kullanın [Iaxwinambientdispatchex](../../atl/reference/iaxwinambientdispatchex-interface.md).
+Bu arabirim, ATL'nin ActiveX denetim barındırma nesneleri tarafından ortaya çıkarır. Barındırılan denetimin kullanılabilir ortam özelliklerini ayarlamak veya kapsayıcının davranışının diğer yönlerini belirtmek için bu arabirimdeki yöntemleri çağırın. Tarafından sağlanan özellikleri `IAxWinAmbientDispatch`tamamlamak için , [iAxWinAmbientDispatchEx](../../atl/reference/iaxwinambientdispatchex-interface.md)kullanın.
 
-<xref:System.Windows.Forms.AxHost> tür bilgileri hakkında yüklenmeye çalışılacak `IAxWinAmbientDispatch` ve `IAxWinAmbientDispatchEx` typelib'den kodunu içerir.
+<xref:System.Windows.Forms.AxHost>kodu içeren typelib `IAxWinAmbientDispatch` hakkında `IAxWinAmbientDispatchEx` ve gelen tür bilgilerini yüklemeye çalışacaktır.
 
-ATL90.dll için bağlıyorsanız **AXHost** dll typelib'den tür bilgilerini yükler.
+ATL90.dll'ye bağlayacaksanız, **AXHost** dll'deki typelib'den tür bilgilerini yükler.
 
-Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) daha fazla ayrıntı için.
+Daha fazla bilgi için [ATL AXHost kullanarak ActiveX Denetimleri Barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Bu arabirim tanımı aşağıdaki tabloda gösterildiği gibi formlar, bir süre içinde kullanılabilir.
+Bu arabirimin tanımı, aşağıdaki tabloda gösterildiği gibi, çeşitli formlarda kullanılabilir.
 
-|Tanım türü|Dosya|
+|Tanım Türü|Dosya|
 |---------------------|----------|
-|IDL|atliface.idl|
-|Tür kitaplığı|ATL.dll|
-|C++|atliface.h (ATLBase.h içinde de dahil)|
+|ıdl|atliface.idl|
+|Tür Kitaplığı|ATL.dll|
+|C++|atliface.h (Ayrıca ATLBase.h dahil)|
 
-##  <a name="get_allowcontextmenu"></a>  IAxWinAmbientDispatch::get_AllowContextMenu
+## <a name="iaxwinambientdispatchget_allowcontextmenu"></a><a name="get_allowcontextmenu"></a>IAxWinAmbientDispatch::get_AllowContextMenu
 
-`AllowContextMenu` Özelliği, bağlam menüsünü görüntülemek için denetimden izin verilip verilmeyeceğini belirtir.
+Özellik, `AllowContextMenu` barındırılan denetimin kendi bağlam menüsünü görüntülemesine izin verilip verilmediğini belirtir.
 
 ```
 STDMETHOD(get_AllowContextMenu)(VARIANT_BOOL* pbAllowContextMenu);
@@ -121,19 +121,19 @@ STDMETHOD(get_AllowContextMenu)(VARIANT_BOOL* pbAllowContextMenu);
 ### <a name="parameters"></a>Parametreler
 
 *pbAllowContextMenu*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama VARIANT_TRUE bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak VARIANT_TRUE kullanır.
 
-##  <a name="get_allowshowui"></a>  IAxWinAmbientDispatch::get_AllowShowUI
+## <a name="iaxwinambientdispatchget_allowshowui"></a><a name="get_allowshowui"></a>IAxWinAmbientDispatch::get_AllowShowUI
 
-`AllowShowUI` Özelliği, kendi kullanıcı arabirimini görüntülemek için denetimden izin verilip verilmeyeceğini belirtir.
+Özellik, `AllowShowUI` barındırılan denetimin kendi kullanıcı arabirimini görüntülemesine izin verilip verilmediğini belirtir.
 
 ```
 STDMETHOD(get_AllowShowUI)(VARIANT_BOOL* pbAllowShowUI);
@@ -142,19 +142,19 @@ STDMETHOD(get_AllowShowUI)(VARIANT_BOOL* pbAllowShowUI);
 ### <a name="parameters"></a>Parametreler
 
 *pbAllowShowUI*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama özelliği, bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak VARIANT_FALSE kullanır.
 
-##  <a name="get_allowwindowlessactivation"></a>  IAxWinAmbientDispatch::get_AllowWindowlessActivation
+## <a name="iaxwinambientdispatchget_allowwindowlessactivation"></a><a name="get_allowwindowlessactivation"></a>IAxWinAmbientDispatch::get_AllowWindowlessActivation
 
-`AllowWindowlessActivation` Özelliği, kapsayıcı penceresiz etkinleştirme izin verip vermeyeceğini belirtir.
+Özellik, `AllowWindowlessActivation` kapsayıcının penceresiz etkinleştirmeye izin verip vermeyeceği belirtilir.
 
 ```
 STDMETHOD(get_AllowWindowlessActivation)(VARIANT_BOOL* pbAllowWindowless);
@@ -163,19 +163,19 @@ STDMETHOD(get_AllowWindowlessActivation)(VARIANT_BOOL* pbAllowWindowless);
 ### <a name="parameters"></a>Parametreler
 
 *pbAllowWindowless*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama VARIANT_TRUE bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak VARIANT_TRUE kullanır.
 
-##  <a name="get_backcolor"></a>  IAxWinAmbientDispatch::get_BackColor
+## <a name="iaxwinambientdispatchget_backcolor"></a><a name="get_backcolor"></a>IAxWinAmbientDispatch::get_BackColor
 
-`BackColor` Özelliği, kapsayıcının ortam arka plan rengini belirtir.
+Özellik, `BackColor` kapsayıcının ortam arka plan rengini belirtir.
 
 ```
 STDMETHOD(get_BackColor)(OLE_COLOR* pclrBackground);
@@ -183,20 +183,20 @@ STDMETHOD(get_BackColor)(OLE_COLOR* pclrBackground);
 
 ### <a name="parameters"></a>Parametreler
 
-*pclrBackground*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+*pclrArka*<br/>
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama COLOR_BTNFACE veya COLOR_WINDOW (ana penceresinin üst bir iletişim kutusu veya olup olmamasına bağlı olarak), bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak COLOR_BTNFACE veya COLOR_WINDOW kullanır (ana bilgisayar penceresinin üst öğesinin iletişim kutusu olup olmamasına bağlı olarak).
 
-##  <a name="get_displayasdefault"></a>  IAxWinAmbientDispatch::get_DisplayAsDefault
+## <a name="iaxwinambientdispatchget_displayasdefault"></a><a name="get_displayasdefault"></a>IAxWinAmbientDispatch::get_DisplayAsDefault
 
-`DisplayAsDefault` Varsayılan Denetim olup olmadığını öğrenmek için bir denetim sağlayan bir ortam özelliğidir.
+`DisplayAsDefault`denetimin varsayılan denetim olup olmadığını öğrenmesini sağlayan bir ortam özelliğidir.
 
 ```
 STDMETHOD(get_DisplayAsDefault)(VARIANT_BOOL* pbDisplayAsDefault);
@@ -204,20 +204,20 @@ STDMETHOD(get_DisplayAsDefault)(VARIANT_BOOL* pbDisplayAsDefault);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbDisplayAsDefault*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+*pbDisplayAsVarsayılan*<br/>
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama özelliği, bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak VARIANT_FALSE kullanır.
 
-##  <a name="get_dochostdoubleclickflags"></a>  IAxWinAmbientDispatch::get_DocHostDoubleClickFlags
+## <a name="iaxwinambientdispatchget_dochostdoubleclickflags"></a><a name="get_dochostdoubleclickflags"></a>IAxWinAmbientDispatch::get_DocHostDoubleClickFlags
 
-`DocHostDoubleClickFlags` Özelliği, yanıt bir çift olarak gerçekleşmesi gereken işlemi belirler.
+Özellik, `DocHostDoubleClickFlags` çift tıklatmaya yanıt olarak gerçekleşmesi gereken işlemi belirtir.
 
 ```
 STDMETHOD(get_DocHostDoubleClickFlags)(DWORD* pdwDocHostDoubleClickFlags);
@@ -225,20 +225,20 @@ STDMETHOD(get_DocHostDoubleClickFlags)(DWORD* pdwDocHostDoubleClickFlags);
 
 ### <a name="parameters"></a>Parametreler
 
-*pdwDocHostDoubleClickFlags*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+*pdwDocHostDoubleClickClickFlags*<br/>
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama DOCHOSTUIDBLCLK_DEFAULT bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak DOCHOSTUIDBLCLK_DEFAULT kullanır.
 
-##  <a name="get_dochostflags"></a>  IAxWinAmbientDispatch::get_DocHostFlags
+## <a name="iaxwinambientdispatchget_dochostflags"></a><a name="get_dochostflags"></a>IAxWinAmbientDispatch::get_DocHostFlags
 
-`DocHostFlags` Özellik konak nesnesi kullanıcı arabirimi özelliklerini belirtir.
+Özellik, `DocHostFlags` ana bilgisayar nesnesinin kullanıcı arabirimi özelliklerini belirtir.
 
 ```
 STDMETHOD(get_DocHostFlags)(DWORD* pdwDocHostFlags);
@@ -247,19 +247,19 @@ STDMETHOD(get_DocHostFlags)(DWORD* pdwDocHostFlags);
 ### <a name="parameters"></a>Parametreler
 
 *pdwDocHostFlags*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama DOCHOSTUIFLAG_NO3DBORDER bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak DOCHOSTUIFLAG_NO3DBORDER kullanır.
 
-##  <a name="get_font"></a>  IAxWinAmbientDispatch::get_Font
+## <a name="iaxwinambientdispatchget_font"></a><a name="get_font"></a>IAxWinAmbientDispatch::get_Font
 
-`Font` Özelliği, kapsayıcının ortam yazı tipini belirtir.
+Özellik, `Font` kapsayıcının ortam yazı tipini belirtir.
 
 ```
 STDMETHOD(get_Font)(IFontDisp** pFont);
@@ -268,19 +268,19 @@ STDMETHOD(get_Font)(IFontDisp** pFont);
 ### <a name="parameters"></a>Parametreler
 
 *pFont*<br/>
-[out] Adresini bir `IFontDisp` bu özelliğin geçerli değerini almak için kullanılan arabirim işaretçisi.
+[çıkış] Bu özelliğin `IFontDisp` geçerli değerini almak için kullanılan bir arabirim işaretçisinin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesne uygulamasını varsayılan GUI yazı tipi veya sistem yazı tipi, bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak varsayılan GUI yazı tipini veya sistem yazı tipini kullanır.
 
-##  <a name="get_forecolor"></a>  IAxWinAmbientDispatch::get_ForeColor
+## <a name="iaxwinambientdispatchget_forecolor"></a><a name="get_forecolor"></a>IAxWinAmbientDispatch::get_ForeColor
 
-`ForeColor` Özelliği, kapsayıcının ortam ön plan rengini belirtir.
+Özellik, `ForeColor` konteynerin ortam ön plan rengini belirtir.
 
 ```
 STDMETHOD(get_ForeColor)(OLE_COLOR* pclrForeground);
@@ -289,19 +289,19 @@ STDMETHOD(get_ForeColor)(OLE_COLOR* pclrForeground);
 ### <a name="parameters"></a>Parametreler
 
 *pclrForeground*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama, bu özelliğin varsayılan değeri sistem penceresi metin rengi kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak sistem penceresi metin rengini kullanır.
 
-##  <a name="get_localeid"></a>  IAxWinAmbientDispatch::get_LocaleID
+## <a name="iaxwinambientdispatchget_localeid"></a><a name="get_localeid"></a>IAxWinAmbientDispatch::get_LocaleID
 
-`LocaleID` Özelliği, kapsayıcının ortam yerel ayar Kimliğini belirtir.
+Özellik, `LocaleID` kapsayıcının ortam yerel kimliğini belirtir.
 
 ```
 STDMETHOD(get_LocaleID)(LCID* plcidLocaleID);
@@ -310,21 +310,21 @@ STDMETHOD(get_LocaleID)(LCID* plcidLocaleID);
 ### <a name="parameters"></a>Parametreler
 
 *plcidLocaleID*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama kullanıcının varsayılan yerel ayar, bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak kullanıcının varsayılan yerel sini kullanır.
 
-Bu yöntemle ortam localId bulabilir, diğer bir deyişle, programın LocaleID denetiminizin içinde kullanılıyor. LocaleID öğrendikten sonra yerel ayara özgü açıklamalı alt yazılar yükleyecek kodu hata iletisi metni, vb. bir kaynak dosyası veya uydu DLL çağırabilirsiniz.
+Bu yöntemle Ortam LocalID'ini, yani denetiminizin kullanıldığı programın LocaleID'ini keşfedebilirsiniz. LocaleID'yi anladıktan sonra, yerel e-özel altyazıları, hata iletisi metnini ve benzeri özellikleri bir kaynak dosyasından veya uydu DLL'den yüklemek için kodu arayabilirsiniz.
 
-##  <a name="get_messagereflect"></a>  IAxWinAmbientDispatch::get_MessageReflect
+## <a name="iaxwinambientdispatchget_messagereflect"></a><a name="get_messagereflect"></a>IAxWinAmbientDispatch::get_MessageReflect
 
-`MessageReflect` Ortam özelliği, kapsayıcıda barındırılan denetim iletileri yansıtmadığını belirtir.
+Ortam `MessageReflect` özelliği, kapsayıcının iletileri barındırılan denetime yansıtıp yansıtmayacağını belirtir.
 
 ```
 STDMETHOD(get_MessageReflect)(VARIANT_BOOL* pbMessageReflect);
@@ -333,19 +333,19 @@ STDMETHOD(get_MessageReflect)(VARIANT_BOOL* pbMessageReflect);
 ### <a name="parameters"></a>Parametreler
 
 *pbMessageReflect*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama VARIANT_TRUE bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak VARIANT_TRUE kullanır.
 
-##  <a name="get_optionkeypath"></a>  IAxWinAmbientDispatch::get_OptionKeyPath
+## <a name="iaxwinambientdispatchget_optionkeypath"></a><a name="get_optionkeypath"></a>IAxWinAmbientDispatch::get_OptionKeyPath
 
-`OptionKeyPath` Özelliği, kullanıcı ayarları için kayıt defteri anahtarının yolunu belirtir.
+Özellik, `OptionKeyPath` kullanıcı ayarlarına giden kayıt defteri anahtar yolunu belirtir.
 
 ```
 STDMETHOD(get_OptionKeyPath)(BSTR* pbstrOptionKeyPath);
@@ -354,15 +354,15 @@ STDMETHOD(get_OptionKeyPath)(BSTR* pbstrOptionKeyPath);
 ### <a name="parameters"></a>Parametreler
 
 *pbstrOptionKeyPath*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="get_showgrabhandles"></a>  IAxWinAmbientDispatch::get_ShowGrabHandles
+## <a name="iaxwinambientdispatchget_showgrabhandles"></a><a name="get_showgrabhandles"></a>IAxWinAmbientDispatch::get_ShowGrabHandles
 
-`ShowGrabHandles` Ortam özelliği, kendisini tutamaçların ile çizip varsa öğrenmek denetim sağlar.
+Ortam `ShowGrabHandles` özelliği, kontrolün kendisini tutamak kollarıyla çizip çizmemesi gerektiğini öğrenmesini sağlar.
 
 ```
 STDMETHOD(get_ShowGrabHandles)(VARIANT_BOOL* pbShowGrabHandles);
@@ -371,19 +371,19 @@ STDMETHOD(get_ShowGrabHandles)(VARIANT_BOOL* pbShowGrabHandles);
 ### <a name="parameters"></a>Parametreler
 
 *pbShowGrabHandles*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama her zaman VARIANT_FALSE bu özelliğin değeri döndürür.
+ATL ana bilgisayar nesnesi uygulaması her zaman bu özelliğin değeri olarak VARIANT_FALSE döndürür.
 
-##  <a name="get_showhatching"></a>  IAxWinAmbientDispatch::get_ShowHatching
+## <a name="iaxwinambientdispatchget_showhatching"></a><a name="get_showhatching"></a>IAxWinAmbientDispatch::get_ShowHatching
 
-`ShowHatching` Ortam özelliği, kendisini çizgili çizip varsa öğrenmek denetim sağlar.
+Ortam `ShowHatching` özelliği, kontrolün kendisini yumurtadan çıkarıp çıkarmaması gerektiğini öğrenmesini sağlar.
 
 ```
 STDMETHOD(get_ShowHatching)(VARIANT_BOOL* pbShowHatching);
@@ -392,19 +392,19 @@ STDMETHOD(get_ShowHatching)(VARIANT_BOOL* pbShowHatching);
 ### <a name="parameters"></a>Parametreler
 
 *pbShowHatching*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama her zaman VARIANT_FALSE bu özelliğin değeri döndürür.
+ATL ana bilgisayar nesnesi uygulaması her zaman bu özelliğin değeri olarak VARIANT_FALSE döndürür.
 
-##  <a name="get_usermode"></a>  IAxWinAmbientDispatch::get_UserMode
+## <a name="iaxwinambientdispatchget_usermode"></a><a name="get_usermode"></a>IAxWinAmbientDispatch::get_UserMode
 
-`UserMode` Özelliği, kapsayıcının ortam kullanıcı modunu belirtir.
+Özellik, `UserMode` kapsayıcının ortam kullanıcı modunu belirtir.
 
 ```
 STDMETHOD(get_UserMode)(VARIANT_BOOL* pbUserMode);
@@ -413,19 +413,19 @@ STDMETHOD(get_UserMode)(VARIANT_BOOL* pbUserMode);
 ### <a name="parameters"></a>Parametreler
 
 *pbUserMode*<br/>
-[out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
+[çıkış] Bu özelliğin geçerli değerini almak için bir değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama VARIANT_TRUE bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak VARIANT_TRUE kullanır.
 
-##  <a name="put_allowcontextmenu"></a>  IAxWinAmbientDispatch::put_AllowContextMenu
+## <a name="iaxwinambientdispatchput_allowcontextmenu"></a><a name="put_allowcontextmenu"></a>IAxWinAmbientDispatch::put_AllowContextMenu
 
-`AllowContextMenu` Özelliği, bağlam menüsünü görüntülemek için denetimden izin verilip verilmeyeceğini belirtir.
+Özellik, `AllowContextMenu` barındırılan denetimin kendi bağlam menüsünü görüntülemesine izin verilip verilmediğini belirtir.
 
 ```
 STDMETHOD(put_AllowContextMenu)(VARIANT_BOOL bAllowContextMenu);
@@ -434,19 +434,19 @@ STDMETHOD(put_AllowContextMenu)(VARIANT_BOOL bAllowContextMenu);
 ### <a name="parameters"></a>Parametreler
 
 *bAllowContextMenu*<br/>
-[in] Bu özelliğin yeni değeri.
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama VARIANT_TRUE bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak VARIANT_TRUE kullanır.
 
-##  <a name="put_allowshowui"></a>  IAxWinAmbientDispatch::put_AllowShowUI
+## <a name="iaxwinambientdispatchput_allowshowui"></a><a name="put_allowshowui"></a>IAxWinAmbientDispatch::put_AllowShowUI
 
-`AllowShowUI` Özelliği, kendi kullanıcı arabirimini görüntülemek için denetimden izin verilip verilmeyeceğini belirtir.
+Özellik, `AllowShowUI` barındırılan denetimin kendi kullanıcı arabirimini görüntülemesine izin verilip verilmediğini belirtir.
 
 ```
 STDMETHOD(put_AllowShowUI)(VARIANT_BOOL bAllowShowUI);
@@ -455,19 +455,19 @@ STDMETHOD(put_AllowShowUI)(VARIANT_BOOL bAllowShowUI);
 ### <a name="parameters"></a>Parametreler
 
 *bAllowShowUI*<br/>
-[in] Bu özelliğin yeni değeri.
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama özelliği, bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak VARIANT_FALSE kullanır.
 
-##  <a name="put_allowwindowlessactivation"></a>  IAxWinAmbientDispatch::put_AllowWindowlessActivation
+## <a name="iaxwinambientdispatchput_allowwindowlessactivation"></a><a name="put_allowwindowlessactivation"></a>IAxWinAmbientDispatch::put_AllowWindowlessActivation
 
-`AllowWindowlessActivation` Özelliği, kapsayıcı penceresiz etkinleştirme izin verip vermeyeceğini belirtir.
+Özellik, `AllowWindowlessActivation` kapsayıcının penceresiz etkinleştirmeye izin verip vermeyeceği belirtilir.
 
 ```
 STDMETHOD(put_AllowWindowlessActivation)(VARIANT_BOOL bAllowWindowless);
@@ -476,19 +476,19 @@ STDMETHOD(put_AllowWindowlessActivation)(VARIANT_BOOL bAllowWindowless);
 ### <a name="parameters"></a>Parametreler
 
 *bAllowWindowless*<br/>
-[in] Bu özelliğin yeni değeri.
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama VARIANT_TRUE bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak VARIANT_TRUE kullanır.
 
-##  <a name="put_backcolor"></a>  IAxWinAmbientDispatch::put_BackColor
+## <a name="iaxwinambientdispatchput_backcolor"></a><a name="put_backcolor"></a>IAxWinAmbientDispatch::put_BackColor
 
-`BackColor` Özelliği, kapsayıcının ortam arka plan rengini belirtir.
+Özellik, `BackColor` kapsayıcının ortam arka plan rengini belirtir.
 
 ```
 STDMETHOD(put_BackColor)(OLE_COLOR clrBackground);
@@ -496,20 +496,20 @@ STDMETHOD(put_BackColor)(OLE_COLOR clrBackground);
 
 ### <a name="parameters"></a>Parametreler
 
-*clrBackground*<br/>
-[in] Bu özelliğin yeni değeri.
+*clrArka*<br/>
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama COLOR_BTNFACE veya COLOR_WINDOW (ana penceresinin üst bir iletişim kutusu veya olup olmamasına bağlı olarak), bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak COLOR_BTNFACE veya COLOR_WINDOW kullanır (ana bilgisayar penceresinin üst öğesinin iletişim kutusu olup olmamasına bağlı olarak).
 
-##  <a name="put_displayasdefault"></a>  IAxWinAmbientDispatch::put_DisplayAsDefault
+## <a name="iaxwinambientdispatchput_displayasdefault"></a><a name="put_displayasdefault"></a>IAxWinAmbientDispatch::put_DisplayAsDefault
 
-`DisplayAsDefault` Varsayılan Denetim olup olmadığını öğrenmek için bir denetim sağlayan bir ortam özelliğidir.
+`DisplayAsDefault`denetimin varsayılan denetim olup olmadığını öğrenmesini sağlayan bir ortam özelliğidir.
 
 ```
 STDMETHOD(put_DisplayAsDefault)(VARIANT_BOOL bDisplayAsDefault);
@@ -518,19 +518,19 @@ STDMETHOD(put_DisplayAsDefault)(VARIANT_BOOL bDisplayAsDefault);
 ### <a name="parameters"></a>Parametreler
 
 *bDisplayAsDefault*<br/>
-[in] Bu özelliğin yeni değeri.
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama özelliği, bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak VARIANT_FALSE kullanır.
 
-##  <a name="put_dochostdoubleclickflags"></a>  IAxWinAmbientDispatch::put_DocHostDoubleClickFlags
+## <a name="iaxwinambientdispatchput_dochostdoubleclickflags"></a><a name="put_dochostdoubleclickflags"></a>IAxWinAmbientDispatch::put_DocHostDoubleClickFlags
 
-`DocHostDoubleClickFlags` Özelliği, yanıt bir çift olarak gerçekleşmesi gereken işlemi belirler.
+Özellik, `DocHostDoubleClickFlags` çift tıklatmaya yanıt olarak gerçekleşmesi gereken işlemi belirtir.
 
 ```
 STDMETHOD(put_DocHostDoubleClickFlags)(DWORD dwDocHostDoubleClickFlags);
@@ -539,19 +539,19 @@ STDMETHOD(put_DocHostDoubleClickFlags)(DWORD dwDocHostDoubleClickFlags);
 ### <a name="parameters"></a>Parametreler
 
 *dwDocHostDoubleClickFlags*<br/>
-[in] Bu özelliğin yeni değeri.
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama DOCHOSTUIDBLCLK_DEFAULT bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak DOCHOSTUIDBLCLK_DEFAULT kullanır.
 
-##  <a name="put_dochostflags"></a>  IAxWinAmbientDispatch::put_DocHostFlags
+## <a name="iaxwinambientdispatchput_dochostflags"></a><a name="put_dochostflags"></a>IAxWinAmbientDispatch::put_DocHostFlags
 
-`DocHostFlags` Özellik konak nesnesi kullanıcı arabirimi özelliklerini belirtir.
+Özellik, `DocHostFlags` ana bilgisayar nesnesinin kullanıcı arabirimi özelliklerini belirtir.
 
 ```
 STDMETHOD(put_DocHostFlags)(DWORD dwDocHostFlags);
@@ -560,19 +560,19 @@ STDMETHOD(put_DocHostFlags)(DWORD dwDocHostFlags);
 ### <a name="parameters"></a>Parametreler
 
 *dwDocHostFlags*<br/>
-[in] Bu özelliğin yeni değeri.
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama DOCHOSTUIFLAG_NO3DBORDER bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak DOCHOSTUIFLAG_NO3DBORDER kullanır.
 
-##  <a name="put_font"></a>  IAxWinAmbientDispatch::put_Font
+## <a name="iaxwinambientdispatchput_font"></a><a name="put_font"></a>IAxWinAmbientDispatch::put_Font
 
-`Font` Özelliği, kapsayıcının ortam yazı tipini belirtir.
+Özellik, `Font` kapsayıcının ortam yazı tipini belirtir.
 
 ```
 STDMETHOD(put_Font)(IFontDisp* pFont);
@@ -581,19 +581,19 @@ STDMETHOD(put_Font)(IFontDisp* pFont);
 ### <a name="parameters"></a>Parametreler
 
 *pFont*<br/>
-[in] Bu özelliğin yeni değeri.
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesne uygulamasını varsayılan GUI yazı tipi veya sistem yazı tipi, bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak varsayılan GUI yazı tipini veya sistem yazı tipini kullanır.
 
-##  <a name="put_forecolor"></a>  IAxWinAmbientDispatch::put_ForeColor
+## <a name="iaxwinambientdispatchput_forecolor"></a><a name="put_forecolor"></a>IAxWinAmbientDispatch::put_ForeColor
 
-`ForeColor` Özelliği, kapsayıcının ortam ön plan rengini belirtir.
+Özellik, `ForeColor` konteynerin ortam ön plan rengini belirtir.
 
 ```
 STDMETHOD(put_ForeColor)(OLE_COLOR clrForeground);
@@ -602,19 +602,19 @@ STDMETHOD(put_ForeColor)(OLE_COLOR clrForeground);
 ### <a name="parameters"></a>Parametreler
 
 *clrForeground*<br/>
-[in] Bu özelliğin yeni değeri.
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama, bu özelliğin varsayılan değeri sistem penceresi metin rengi kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak sistem penceresi metin rengini kullanır.
 
-##  <a name="put_localeid"></a>  IAxWinAmbientDispatch::put_LocaleID
+## <a name="iaxwinambientdispatchput_localeid"></a><a name="put_localeid"></a>IAxWinAmbientDispatch::put_LocaleID
 
-`LocaleID` Özelliği, kapsayıcının ortam yerel ayar Kimliğini belirtir.
+Özellik, `LocaleID` kapsayıcının ortam yerel kimliğini belirtir.
 
 ```
 STDMETHOD(put_LocaleID)(LCID lcidLocaleID);
@@ -623,19 +623,19 @@ STDMETHOD(put_LocaleID)(LCID lcidLocaleID);
 ### <a name="parameters"></a>Parametreler
 
 *lcidLocaleID*<br/>
-[in] Bu özelliğin yeni değeri.
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama kullanıcının varsayılan yerel ayar, bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak kullanıcının varsayılan yerel sini kullanır.
 
-##  <a name="put_messagereflect"></a>  IAxWinAmbientDispatch::put_MessageReflect
+## <a name="iaxwinambientdispatchput_messagereflect"></a><a name="put_messagereflect"></a>IAxWinAmbientDispatch::put_MessageReflect
 
-`MessageReflect` Ortam özelliği, kapsayıcıda barındırılan denetim iletileri yansıtmadığını belirtir.
+Ortam `MessageReflect` özelliği, kapsayıcının iletileri barındırılan denetime yansıtıp yansıtmayacağını belirtir.
 
 ```
 STDMETHOD(put_MessageReflect)(VARIANT_BOOL bMessageReflect);
@@ -644,19 +644,19 @@ STDMETHOD(put_MessageReflect)(VARIANT_BOOL bMessageReflect);
 ### <a name="parameters"></a>Parametreler
 
 *bMessageReflect*<br/>
-[in] Bu özelliğin yeni değeri.
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama VARIANT_TRUE bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak VARIANT_TRUE kullanır.
 
-##  <a name="put_optionkeypath"></a>  IAxWinAmbientDispatch::put_OptionKeyPath
+## <a name="iaxwinambientdispatchput_optionkeypath"></a><a name="put_optionkeypath"></a>IAxWinAmbientDispatch::put_OptionKeyPath
 
-`OptionKeyPath` Özelliği, kullanıcı ayarları için kayıt defteri anahtarının yolunu belirtir.
+Özellik, `OptionKeyPath` kullanıcı ayarlarına giden kayıt defteri anahtar yolunu belirtir.
 
 ```
 STDMETHOD(put_OptionKeyPath)(BSTR bstrOptionKeyPath);
@@ -665,15 +665,15 @@ STDMETHOD(put_OptionKeyPath)(BSTR bstrOptionKeyPath);
 ### <a name="parameters"></a>Parametreler
 
 *bstrOptionKeyPath*<br/>
-[in] Bu özelliğin yeni değeri.
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="put_usermode"></a>  IAxWinAmbientDispatch::put_UserMode
+## <a name="iaxwinambientdispatchput_usermode"></a><a name="put_usermode"></a>IAxWinAmbientDispatch::put_UserMode
 
-`UserMode` Özelliği, kapsayıcının ortam kullanıcı modunu belirtir.
+Özellik, `UserMode` kapsayıcının ortam kullanıcı modunu belirtir.
 
 ```
 STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
@@ -682,15 +682,15 @@ STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
 ### <a name="parameters"></a>Parametreler
 
 *bUserMode*<br/>
-[in] Bu özelliğin yeni değeri.
+[içinde] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL konak nesnesi uygulama VARIANT_TRUE bu özelliğin varsayılan değeri kullanır.
+ATL ana bilgisayar nesnesi uygulaması, bu özelliğin varsayılan değeri olarak VARIANT_TRUE kullanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

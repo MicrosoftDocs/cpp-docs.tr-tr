@@ -16,84 +16,84 @@ helpviewer_keywords:
 - collection classes [MFC], duplicates allowed
 - collection classes [MFC], shapes
 ms.assetid: a82188cd-443f-40d8-a244-edf292a53db4
-ms.openlocfilehash: c72a57385b0036d98629d1ee24111500b9d2f8ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 53a4eb3e30048d9dc82722d912a026d63a87586d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62218618"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371741"
 ---
 # <a name="recommendations-for-choosing-a-collection-class"></a>Koleksiyon Sınıfı Seçme Önerileri
 
-Bu makalede, bir koleksiyon sınıfı için belirli uygulamanızın gereksinimlerine göre seçmenize yardımcı olmak için tasarlanan ayrıntılı bilgiler içerir.
+Bu makalede, belirli uygulama gereksinimleriniz için bir koleksiyon sınıfı seçmenize yardımcı olmak üzere tasarlanmış ayrıntılı bilgiler yer alır.
 
-Seçtiğiniz koleksiyon sınıfı dahil çeşitli Etkenler sayısına bağlıdır:
+Bir koleksiyon sınıfı seçiminiz, aşağıdakiler de dahil olmak üzere bir dizi etkene bağlıdır:
 
-- Sınıf şeklinin özelliklerinin: sırası, dizin oluşturma ve performans gösterildiği gibi [koleksiyonu şekli özellikleri](#_core_collection_shape_features) tablo bu konunun devamındaki
+- Sınıf şeklinin özellikleri: bu konuda daha sonra [Toplama Şekli Özellikleri](#_core_collection_shape_features) tablosunda gösterildiği gibi, sıra, dizin oluşturma ve performans
 
-- Sınıf C++ şablonları kullanıp kullanmadığını
+- Sınıfın C++ şablonlarını kullanıp kullanmadığı
 
-- Bir koleksiyonda depolanan öğeleri seri hale getirilebilir
+- Koleksiyonda depolanan öğelerin serihale edilip edilemeyeceği
 
-- Bir koleksiyonda depolanan öğeleri tanılama için yazılan
+- Koleksiyonda depolanan öğelerin tanılama için atılıp atılamayacağı
 
-- Tür kullanımı uyumlu koleksiyon olup
+- Koleksiyonun tür güvenli olup olmadığı
 
-Aşağıdaki tabloda, [koleksiyonu şekli özellikleri](#_core_collection_shape_features), kullanılabilir toplama şekillerinin özellikleri özetlenmektedir.
+Aşağıdaki tablo, [Koleksiyon Şekli Özellikleri,](#_core_collection_shape_features)kullanılabilir koleksiyon şekillerinin özelliklerini özetler.
 
-- Sütun 2 ve 3 her şeklin sıralama açıklamak ve özelliklere erişim. Tabloda, bunların sırası koleksiyondaki belirleyen öğeleri eklenen ve Silinen sırası "sıralı" terimi anlamına gelir; öğeler içeriklerine göre sıralanır gelmez. "Dizin" terimi, koleksiyondaki öğelerin tipik bir dizi öğelerinde gibi bir tamsayı dizini tarafından alınabilen anlamına gelir.
+- 2 ve 3 sütunları her şeklin sıralama ve erişim özelliklerini açıklar. Tabloda, "sıralı" terimi, maddelerin eklendiği ve silindiği sıranın koleksiyondaki siparişlerini belirlediği anlamına gelir; öğelerin içerikleri üzerinde sıralanmış olduğu anlamına gelmez. "Dizinlenmiş" terimi, koleksiyondaki öğelerin tipik bir dizideki öğeler gibi bir tamsayı dizini tarafından alınabileceği anlamına gelir.
 
-- 4. ve 5 sütunları her şeklin performans açıklanmaktadır. Koleksiyona birçok eklemeler gerektiren uygulamalarda ekleme hızının özellikle önemli olabilir; diğer uygulamalar için hızlı arama daha önemli olabilir.
+- 4 ve 5 sütunları her şeklin performansını açıklar. Koleksiyona çok sayıda ekleme gerektiren uygulamalarda ekleme hızı özellikle önemli olabilir; diğer uygulamalar için, arama hızı daha önemli olabilir.
 
-- Her bir şeklin yinelenen öğeler izin verip vermediğini sütun 6 açıklar.
+- Sütun 6, her şeklin yinelenen öğelere izin verip vermediğini açıklar.
 
-### <a name="_core_collection_shape_features"></a>  Koleksiyonu şekli özellikleri
+### <a name="collection-shape-features"></a><a name="_core_collection_shape_features"></a>Koleksiyon Şekli Özellikleri
 
-|Şekil|Sıralı|Dizin|Öğe ekleme|Belirtilen öğeyi arayın|Yinelenen öğeler|
+|Şekil|Sipariş edildi|Dizine|Bir öğe ekleme|Belirtilen öğeyi arama|Yinelenen öğeler|
 |-----------|--------------|--------------|-----------------------|----------------------------------|-------------------------|
-|List|Evet|Hayır|Hızlı|Yavaş|Evet|
-|Dizi|Evet|Tarafından int|Yavaş|Yavaş|Evet|
-|Eşleme|Hayır|Anahtara göre|Hızlı|Hızlı|Evet (değerler) (anahtar)|
+|Liste|Evet|Hayır|Hızlı|Yavaş|Evet|
+|Dizi|Evet|Yazar: int|Yavaş|Yavaş|Evet|
+|Eşleme|Hayır|Anahtara göre|Hızlı|Hızlı|Hayır (tuşlar) Evet (değerler)|
 
-Aşağıdaki tabloda, [MFC koleksiyon sınıfları özellikleri](#_core_characteristics_of_mfc_collection_classes), seçim kılavuzu olarak belirli MFC koleksiyon sınıfları diğer önemli özelliklerini özetler. Öğeleri MFC'nin belge seri hale getirilebilir olup olmadığını seçtiğiniz olup C++ şablonları temel sınıf alan değişebilir [serileştirme](../mfc/serialization-in-mfc.md) mekanizması, öğeleri MFC yazılan olmadığını mekanizması dökme Tanılama veya sınıfı, tür kullanımı uyumlu olup — diğer bir deyişle, öğelerin türü garanti edebilir ve depolanan bir koleksiyon sınıfına göre alınır.
+Aşağıdaki tablo, [MFC Koleksiyon Sınıflarının Özellikleri,](#_core_characteristics_of_mfc_collection_classes)seçim kılavuzu olarak belirli MFC toplama sınıflarının diğer önemli özelliklerini özetler. Seçiminiz sınıfın C++ şablonlarına dayalı olup olmadığına, öğelerinin MFC'nin belge [serileştirme](../mfc/serialization-in-mfc.md) mekanizması aracılığıyla serihale edilip edilemeyeceğine, öğelerinin MFC'nin tanılama boşaltma mekanizması yla döşeyip atılamayacağına veya sınıfın tür açısından güvenli olup olmadığına , yani sınıfa dayalı bir koleksiyonda depolanan ve alınan öğelerin türünü garanti edip edemeyeceğinize bağlı olabilir.
 
-### <a name="_core_characteristics_of_mfc_collection_classes"></a>  MFC koleksiyon sınıfları, özellikleri
+### <a name="characteristics-of-mfc-collection-classes"></a><a name="_core_characteristics_of_mfc_collection_classes"></a>MFC Toplama Sınıflarının Özellikleri
 
-|örneği|C++ kullanır<br /><br /> templates|Olabilir<br /><br /> seri hale getirilmiş|Olabilir<br /><br /> yazılan|olduğu<br /><br /> tür kullanımı uyumlu|
+|Sınıf|C++ kullanır<br /><br /> templates|Olabilir<br /><br /> Seri|Olabilir<br /><br /> Terk|Is<br /><br /> tip güvenli|
 |-----------|------------------------------|---------------------------|-----------------------|-----------------------|
-|`CArray`|Evet|1 Evet|1 Evet|Hayır|
-|`CByteArray`|Hayır|Evet|Evet|3 Evet|
-|`CDWordArray`|Hayır|Evet|Evet|3 Evet|
-|`CList`|Evet|1 Evet|1 Evet|Hayır|
-|`CMap`|Evet|1 Evet|1 Evet|Hayır|
+|`CArray`|Evet|Evet 1|Evet 1|Hayır|
+|`CByteArray`|Hayır|Evet|Evet|Evet 3|
+|`CDWordArray`|Hayır|Evet|Evet|Evet 3|
+|`CList`|Evet|Evet 1|Evet 1|Hayır|
+|`CMap`|Evet|Evet 1|Evet 1|Hayır|
 |`CMapPtrToPtr`|Hayır|Hayır|Evet|Hayır|
 |`CMapPtrToWord`|Hayır|Hayır|Evet|Hayır|
 |`CMapStringToOb`|Hayır|Evet|Evet|Hayır|
 |`CMapStringToPtr`|Hayır|Hayır|Evet|Hayır|
-|`CMapStringToString`|Hayır|Evet|Evet|3 Evet|
+|`CMapStringToString`|Hayır|Evet|Evet|Evet 3|
 |`CMapWordToOb`|Hayır|Evet|Evet|Hayır|
 |`CMapWordToPtr`|Hayır|Hayır|Evet|Hayır|
 |`CObArray`|Hayır|Evet|Evet|Hayır|
 |`CObList`|Hayır|Evet|Evet|Hayır|
 |`CPtrArray`|Hayır|Hayır|Evet|Hayır|
 |`CPtrList`|Hayır|Hayır|Evet|Hayır|
-|`CStringArray`|Hayır|Evet|Evet|3 Evet|
-|`CStringList`|Hayır|Evet|Evet|3 Evet|
-|`CTypedPtrArray`|Evet|2 bağlıdır|Evet|Evet|
-|`CTypedPtrList`|Evet|2 bağlıdır|Evet|Evet|
-|`CTypedPtrMap`|Evet|2 bağlıdır|Evet|Evet|
-|`CUIntArray`|Hayır|Hayır|Evet|3 Evet|
-|`CWordArray`|Hayır|Evet|Evet|3 Evet|
+|`CStringArray`|Hayır|Evet|Evet|Evet 3|
+|`CStringList`|Hayır|Evet|Evet|Evet 3|
+|`CTypedPtrArray`|Evet|Değişir 2|Evet|Evet|
+|`CTypedPtrList`|Evet|Değişir 2|Evet|Evet|
+|`CTypedPtrMap`|Evet|Değişir 2|Evet|Evet|
+|`CUIntArray`|Hayır|Hayır|Evet|Evet 3|
+|`CWordArray`|Hayır|Evet|Evet|Evet 3|
 
-1. Seri hale getirmek için açıkça koleksiyon nesnesinin çağırmalıdır `Serialize` işlev; dökümünü almak için açıkça çağırmanız gerekir, `Dump` işlevi. Form kullanamazsınız `ar << collObj` serileştirilecek veya formun `dmp` `<< collObj` dökümünü almak için.
+1. Seri hale getirmek için, koleksiyon nesnesinin `Serialize` işlevini açıkça aramanız gerekir; dökümü için, açıkça işlevini `Dump` aramanız gerekir. Formu `ar << collObj` serihale getirmek için veya `dmp` `<< collObj` dökümü yapmak için formu kullanamazsınız.
 
-2. Serializability temel alınan koleksiyon türüne bağlıdır. Örneğin, bir işaretçi türü belirlenmiş dizi temel alıyorsa `CObArray`, bu temel seri hale getirilebilir; `CPtrArray`, serileştirilebilir değil. Genel olarak, "Ptr" sınıfları seri hale getirilemiyor.
+2. Serializability altta yatan toplama türüne bağlıdır. Örneğin, bir yazılı işaretçi dizisi `CObArray`temel alınabiliyorsa, serileştirilebilir; dayalı `CPtrArray`ise, serileştirilebilir değildir. Genel olarak, "Ptr" sınıfları seri hale getirilemez.
 
-3. Sağlanan beklendiği gibi kullanın Bu sütunda Evet işaretliyse, şablon Olmayandan koleksiyon sınıfı tür bakımından güvenlidir. Örneğin, bayt cinsinden depoladığınızda bir `CByteArray`, dizi tür bakımından güvenlidir. Ancak karakter depolamak için kullanmak, kendi tür güvenliği belirli daha az.
+3. Bu sütunda Evet işaretliyse, şablonsuz bir koleksiyon sınıfı, istediğiniz gibi kullanmanız koşuluyla tür güvenlidir. Örneğin, baytları bir `CByteArray`dizide depolarsanız, dizi tür açısından güvenlidir. Ancak karakterleri depolamak için kullanırsanız, türü güvenliği daha az kesindir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Koleksiyonlar](../mfc/collections.md)<br/>
 [Şablona Dayalı Sınıflar](../mfc/template-based-classes.md)<br/>
-[Nasıl yapılır: Tür kullanımı uyumlu koleksiyon yapma](../mfc/how-to-make-a-type-safe-collection.md)<br/>
+[Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma](../mfc/how-to-make-a-type-safe-collection.md)<br/>
 [Bir Koleksiyonun Tüm Üyelerine Erişme](../mfc/accessing-all-members-of-a-collection.md)

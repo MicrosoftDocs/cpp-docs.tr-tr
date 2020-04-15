@@ -1,62 +1,62 @@
 ---
-title: Çalışan arşiv Etype
+title: İşçi Arketipi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Worker archetype
 ms.assetid: 834145cd-09d3-4149-bc99-620e1871cbfb
-ms.openlocfilehash: 2e57c575ed778184cf319bb84e61f585fcfa2111
-ms.sourcegitcommit: 44eeb065c3148d0484de791080a3f963109744fc
+ms.openlocfilehash: b0b32232d7386df0c0f13a1c3af1003369b906e0
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79509347"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81329343"
 ---
-# <a name="worker-archetype"></a>Çalışan arşiv Etype
+# <a name="worker-archetype"></a>İşçi Arketipi
 
-*Çalışan* arşiv ETYPE ile uyumlu sınıflar, bir iş parçacığı havuzunda sıraya alınan iş öğelerini işlemek için kod sağlar.
+*Alt* arketipe uygun sınıflar, iş parçacığı havuzunda sıralanmış iş öğelerini işlemek için kodu sağlar.
 
 **Uygulama**
 
-Bu bir arşiv ETYPE ile uyumlu bir sınıf uygulamak için, sınıf aşağıdaki özellikleri sağlamalıdır:
+Bu arketipe uygun bir sınıf uygulamak için sınıfın aşağıdaki özellikleri sağlaması gerekir:
 
 |Yöntem|Açıklama|
 |------------|-----------------|
-|[Initialize](#initialize)|Herhangi bir istek [yürütülmeye](#execute)geçirilmeden önce çalışan nesnesini başlatmak için çağırılır.|
-|[Execute](#execute)|Bir iş öğesini işlemek için çağırılır.|
-|[Terminate](#terminate)|Tüm istekler [yürütülmeye](#execute)geçirilmeden sonra çalışan nesnesine Uninitialize için çağırılır.|
+|[Initialize](#initialize)|Herhangi bir istek [Yürüt tümevarıma](#execute)geçirilmeden önce alt nesneyi başlatmaya çağrıldı.|
+|[Yürütmek](#execute)|Bir çalışma öğesini işlemek için çağrıldı.|
+|[Terminate](#terminate)|Tüm istekler [Yürüt tüm'e](#execute)geçtikten sonra işçi nesnesinin başlatılması için çağrıldı.|
 
-|Genişletiyor|Açıklama|
+|Typedef|Açıklama|
 |-------------|-----------------|
-|[RequestType](#requesttype)|Çalışan sınıfının işlenebilmesi için iş öğesi türü için bir typedef.|
+|[Requesttype](#requesttype)|İşçi sınıfı tarafından işlenebilen iş öğesi türü için bir typedef.|
 
-Tipik bir *çalışan* sınıfı şöyle görünür:
+Tipik bir *işçi* sınıfı şuna benzer:
 
 [!code-cpp[NVC_ATL_Utilities#137](../../atl/codesnippet/cpp/worker-archetype_1.cpp)]
 
-**Mevcut uygulamalar**
+**Mevcut Uygulamalar**
 
-Bu sınıflar bu arşiv ETYPE ile uyumlu:
+Bu sınıflar bu arketipe uygundur:
 
 |Sınıf|Açıklama|
 |-----------|-----------------|
-|[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|İş parçacığı havuzundan gelen istekleri alır ve her istek için oluşturulan ve yok edilen bir çalışan nesnesine geçirir.|
+|[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|İş parçacığı havuzundan istekler alır ve bunları her istek için oluşturulan ve yok edilen bir alt nesneye aktarın.|
 
 **Kullanma**
 
-Bu şablon parametreleri, sınıfın bu arşiv ETYPE ile uyumlu olmasını bekler:
+Bu şablon parametreleri sınıfın bu arketipe uymasını bekler:
 
 |Parametre adı|Kullanan|
 |--------------------|-------------|
-|*Indan*|[CThreadPool](../../atl/reference/cthreadpool-class.md)|
-|*Indan*|[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|
+|*Işçi*|[Cthreadpool](../../atl/reference/cthreadpool-class.md)|
+|*Işçi*|[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlutil. h
+**Başlık:** atlutil.h
 
-## <a name="execute"></a>WorkerArchetype:: Execute
+## <a name="workerarchetypeexecute"></a><a name="execute"></a>İşçiArchetype::Yürüt
 
-Bir iş öğesini işlemek için çağırılır.
+Bir çalışma öğesini işlemek için çağrıldı.
 
 ```
 void Execute(
@@ -67,18 +67,18 @@ void Execute(
 
 #### <a name="parameters"></a>Parametreler
 
-*isteyen*<br/>
-İşlenecek iş öğesi. İş öğesi `RequestType`ile aynı türde.
+*Istek*<br/>
+İşlenecek iş öğesi. Çalışma öğesi `RequestType`aynı türdedir.
 
 *pvWorkerParam*<br/>
-Çalışan sınıfının anladığı özel parametre. Ayrıca `WorkerArchetype::Initialize` ve `Terminate`' a geçirilir.
+İşçi sınıfı tarafından anlaşılan özel bir parametre. Ayrıca geçti `WorkerArchetype::Initialize` `Terminate`ve .
 
-*Polatik*<br/>
-[Çakışan](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) yapının iş öğelerinin sıraya alındığı kuyruğu oluşturmak için kullanılan bir işaretçisi.
+*pOverlapped*<br/>
+İş öğelerinin sıralandığı sırayı oluşturmak için kullanılan [OverLAPPED](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) yapısına işaretçi.
 
-## <a name="initialize"></a>WorkerArchetype:: Initialize
+## <a name="workerarchetypeinitialize"></a><a name="initialize"></a>İşçiArchetype::Initialize
 
-Tüm istekler `WorkerArchetype::Execute`geçirilmeden önce çalışan nesnesini başlatmak için çağırılır.
+Herhangi bir istek. `WorkerArchetype::Execute`
 
 ```
 BOOL Initialize(void* pvParam) throw();
@@ -87,15 +87,15 @@ BOOL Initialize(void* pvParam) throw();
 #### <a name="parameters"></a>Parametreler
 
 *pvParam*<br/>
-Çalışan sınıfının anladığı özel parametre. Ayrıca `WorkerArchetype::Terminate` ve `WorkerArchetype::Execute`' a geçirilir.
+İşçi sınıfı tarafından anlaşılan özel bir parametre. Ayrıca geçti `WorkerArchetype::Terminate` `WorkerArchetype::Execute`ve .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE, hatada FALSE döndürün.
+Başarı doğru, başarısızlık false dön.
 
-## <a name="requesttype"></a>WorkerArchetype:: RequestType
+## <a name="workerarchetyperequesttype"></a><a name="requesttype"></a>İşçiArchetype::RequestType
 
-Çalışan sınıfının işlenebilmesi için iş öğesi türü için bir typedef.
+İşçi sınıfı tarafından işlenebilen iş öğesi türü için bir typedef.
 
 ```
 typedef MyRequestType RequestType;
@@ -103,11 +103,11 @@ typedef MyRequestType RequestType;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu tür, `WorkerArchetype::Execute` ilk parametresi olarak kullanılmalıdır ve bir ULONG_PTR ve ' a dönüştürme yeteneğine sahip olmalıdır.
+Bu tür ilk parametre olarak `WorkerArchetype::Execute` kullanılmalı ve bir ULONG_PTR döküm ve sahip olmalıdır.
 
-## <a name="terminate"></a>WorkerArchetype:: Terminate
+## <a name="workerarchetypeterminate"></a><a name="terminate"></a>İşçiArchetype::Sonlandırma
 
-Tüm istekler `WorkerArchetype::Execute`geçirildiğinde çalışan nesne Uninitialize için çağırılır.
+Tüm istekler geçtikten sonra işçi nesnesinin `WorkerArchetype::Execute`başlatılması için çağrıldı).
 
 ```
 void Terminate(void* pvParam) throw();
@@ -116,9 +116,9 @@ void Terminate(void* pvParam) throw();
 #### <a name="parameters"></a>Parametreler
 
 *pvParam*<br/>
-Çalışan sınıfının anladığı özel parametre. Ayrıca `WorkerArchetype::Initialize` ve `WorkerArchetype::Execute`' a geçirilir.
+İşçi sınıfı tarafından anlaşılan özel bir parametre. Ayrıca geçti `WorkerArchetype::Initialize` `WorkerArchetype::Execute`ve .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramlar ](../../atl/active-template-library-atl-concepts.md)<br/>
+[Kavramlar](../../atl/active-template-library-atl-concepts.md)<br/>
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)

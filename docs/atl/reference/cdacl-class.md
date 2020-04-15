@@ -1,5 +1,5 @@
 ---
-title: CDacl sınıfı
+title: CDacl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDacl
@@ -13,19 +13,19 @@ f1_keywords:
 helpviewer_keywords:
 - CDacl class
 ms.assetid: 2dc76616-6362-4967-b6cf-e2d39ca37ddd
-ms.openlocfilehash: a37ef47a4ea89d9ec24fac417e5b715bd2602fd7
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1540c90e3538d763708e161ba6c1a5e459bb2bdf
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496924"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81327147"
 ---
-# <a name="cdacl-class"></a>CDacl sınıfı
+# <a name="cdacl-class"></a>CDacl Sınıfı
 
-Bu sınıf, bir DACL (isteğe bağlı erişim denetimi listesi) yapısına yönelik bir sarmalayıcıdır.
+Bu sınıf, DACL (isteğe bağlı erişim denetim listesi) yapısı için bir sarmalayıcıdır.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,50 +37,50 @@ class CDacl : public CAcl
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDacl:: CDacl](#cdacl)|Oluşturucu.|
-|[CDacl::~CDacl](#dtor)|Yok edicisi.|
+|[CDacl::CDacl](#cdacl)|Oluşturucu.|
+|[CDacl::~CDacl](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDacl:: Addallowedadce](#addallowedace)|`CDacl` Nesnesine izin verilen ACE (erişim denetimi girişi) ekler.|
-|[CDacl::AddDeniedAce](#adddeniedace)|`CDacl` Nesnesine bir reddedildi ace ekler.|
-|[CDacl:: GetAceCount](#getacecount)|`CDacl` Nesnedeki ACE sayısını (erişim denetimi girdileri) döndürür.|
-|[CDacl:: RemoveAce](#removeace)|`CDacl` Nesnesinden belirli bir ACE 'yi (erişim denetimi girişi) kaldırır.|
-|[CDacl:: RemoveAllAces](#removeallaces)|`CDacl` Nesnesinde bulunan tüm Ace 'leri kaldırır.|
+|[CDacl::AddAllowedAce](#addallowedace)|`CDacl` Nesneye izin verilen ACE (erişim denetimi girişi) ekler.|
+|[CDacl::AddDeniedAce](#adddeniedace)|`CDacl` Nesneye reddedilen bir ACE ekler.|
+|[CDacl::GetAceCount](#getacecount)|`CDacl` Nesnedeki ACE (erişim denetimi girişleri) sayısını verir.|
+|[CDacl::RemoveAce](#removeace)|`CDacl` Nesneden belirli bir ACE (erişim denetimi girişi) kaldırır.|
+|[CDacl::RemoveAllAces](#removeallaces)|`CDacl` Nesnede bulunan tüm ACE'leri kaldırır.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CDacl:: operator =](#operator_eq)|Atama işleci.|
+|[CDacl::operatör =](#operator_eq)|Atama işleci.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir nesnenin güvenlik tanımlayıcısı, bir DACL içerebilir. Bir DACL, nesneye erişebilen kullanıcıları ve grupları belirleyen sıfır veya daha fazla ACE (erişim denetimi girişleri) içerir. Bir DACL boşsa (yani sıfır Ace 'Leri içeriyorsa), erişim örtük olarak reddedilir. Ancak, bir nesnenin güvenlik tanımlayıcısının bir DACL 'si yoksa, nesne korumasız olur ve herkesin erişimi tamamlanmıştır.
+Bir nesnenin güvenlik tanımlayıcısı bir DACL içerebilir. DACL, nesneye erişebilen kullanıcıları ve grupları tanımlayan sıfır veya daha fazla ACE (erişim denetimi girişleri) içerir. Bir DACL boşsa (diğer bir şekilde sıfır AC'ler içeriyorsa), erişim açıkça verilmez, bu nedenle erişim örtülü olarak reddedilir. Ancak, bir nesnenin güvenlik tanımlayıcısı DACL'si yoksa, nesne korumasızdır ve herkes tam erişime sahiptir.
 
-Bir nesnenin DACL 'sini almak için nesnenin sahibi olmanız veya nesneye READ_CONTROL erişiminizin olması gerekir. Bir nesnenin DACL 'sini değiştirmek için, nesnesine WRITE_DAC erişiminizin olması gerekir.
+Bir nesnenin DACL'sini almak için nesnenin sahibi olmalısınız veya nesneye READ_CONTROL erişiminiz olmalıdır. Bir nesnenin DACL'sini değiştirmek için nesneye WRITE_DAC erişiminiz olması gerekir.
 
-`CDacl` Nesnesinden Ace 'ler oluşturmak, eklemek, kaldırmak ve silmek için belirtilen sınıf yöntemlerini kullanın. Ayrıca bkz. [AtlGetDacl](security-global-functions.md#atlgetdacl) ve [AtlSetDacl](security-global-functions.md#atlsetdacl).
+Ace'leri oluşturmak, eklemek, kaldırmak ve silmek için `CDacl` sağlanan sınıf yöntemlerini kullanın. Ayrıca bakınız [AtlGetDacl](security-global-functions.md#atlgetdacl) ve [AtlSetDacl](security-global-functions.md#atlsetdacl).
 
-Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
+Windows'daki erişim denetimi modeline giriş için Windows SDK'daki [Access Denetimi'ne](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CAcl](../../atl/reference/cacl-class.md)
+[Cacl](../../atl/reference/cacl-class.md)
 
 `CDacl`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlsecurity. h
+**Üstbilgi:** atlsecurity.h
 
-##  <a name="addallowedace"></a>CDacl:: Addallowedadce
+## <a name="cdacladdallowedace"></a><a name="addallowedace"></a>CDacl::AddAllowedAce
 
-`CDacl` Nesnesine izin verilen ACE (erişim denetimi girişi) ekler.
+`CDacl` Nesneye izin verilen ACE (erişim denetimi girişi) ekler.
 
 ```
 bool AddAllowedAce(
@@ -98,34 +98,34 @@ bool AddAllowedAce(
 
 ### <a name="parameters"></a>Parametreler
 
-*Rsıd*<br/>
-Bir [CSID](../../atl/reference/csid-class.md) nesnesi.
+*rSid*<br/>
+CSid [nesnesi.](../../atl/reference/csid-class.md)
 
-*AccessMask*<br/>
-Belirtilen `CSid` nesne için izin verilen erişim haklarının maskesini belirtir.
+*Accessmask*<br/>
+Belirtilen `CSid` nesne için izin verilecek erişim haklarının maskesini belirtir.
 
-*Asetat bayrakları*<br/>
-ACE devralmayı denetleyen bit bayrakları kümesi.
+*AceFlags*<br/>
+ACE kalıtımını kontrol eden bit bayrakları kümesi.
 
 *pObjectType*<br/>
 Nesne türü.
 
-*Pınheritedobjecttype*<br/>
+*pInheritedObjectType*<br/>
 Devralınan nesne türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ace `CDacl` nesneye eklenirse true, hata durumunda FALSE döndürür.
+ACE `CDacl` nesneye eklenirse TRUE döndürür, hata üzerine FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CDacl` Nesne, nesnesine erişebilen kullanıcıları ve grupları belirleyen sıfır veya daha fazla ACE (erişim denetimi girişleri) içerir. Bu yöntem, `CDacl` nesnesine erişime izin veren bir ace ekler.
+Bir `CDacl` nesne, nesneye erişebilecek kullanıcıları ve grupları tanımlayan sıfır veya daha fazla ACE (erişim denetimi girişleri) içerir. Bu yöntem, `CDacl` nesneye erişim sağlayan bir ACE ekler.
 
-`AceFlags` Parametresinde ayarlayabilen çeşitli bayrakların açıklaması için bkz. [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
+Parametrede ayarlanabilen çeşitli bayrakların açıklaması için ACE_HEADER bakın. [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) `AceFlags`
 
-##  <a name="adddeniedace"></a>CDacl:: Adddenıedadce
+## <a name="cdacladddeniedace"></a><a name="adddeniedace"></a>CDacl::AddDeniedAce
 
-`CDacl` Nesneye reddedilen ACE (erişim denetimi girişi) ekler.
+`CDacl` Nesneye reddedilen ace (erişim denetimi girişi) ekler.
 
 ```
 bool AddDeniedAce(
@@ -143,32 +143,32 @@ bool AddDeniedAce(
 
 ### <a name="parameters"></a>Parametreler
 
-*Rsıd*<br/>
-A `CSid` nesne.
+*rSid*<br/>
+Bir `CSid` nesnesi.
 
-*AccessMask*<br/>
-Belirtilen `CSid` nesne için izin verilmeyen erişim haklarının maskesini belirtir.
+*Accessmask*<br/>
+Belirtilen `CSid` nesne için reddedilecek erişim haklarının maskesini belirtir.
 
-*Asetat bayrakları*<br/>
-ACE devralmayı denetleyen bit bayrakları kümesi. Metodun ilk biçiminde varsayılan değer 0 ' dır.
+*AceFlags*<br/>
+ACE kalıtımını kontrol eden bit bayrakları kümesi. Yöntemin ilk biçiminde varsayılan olarak 0'a kadar.
 
 *pObjectType*<br/>
 Nesne türü.
 
-*Pınheritedobjecttype*<br/>
+*pInheritedObjectType*<br/>
 Devralınan nesne türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ace `CDacl` nesneye eklenirse true, hata durumunda FALSE döndürür.
+ACE `CDacl` nesneye eklenirse TRUE döndürür, hata üzerine FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CDacl` Nesne, nesnesine erişebilen kullanıcıları ve grupları belirleyen sıfır veya daha fazla ACE (erişim denetimi girişleri) içerir. Bu yöntem, `CDacl` nesnesine erişimi reddeden bir ace ekler.
+Bir `CDacl` nesne, nesneye erişebilecek kullanıcıları ve grupları tanımlayan sıfır veya daha fazla ACE (erişim denetimi girişleri) içerir. Bu yöntem, `CDacl` nesneye erişimi reddeden bir ACE ekler.
 
-`AceFlags` Parametresinde ayarlayabilen çeşitli bayrakların açıklaması için bkz. [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
+Parametrede ayarlanabilen çeşitli bayrakların açıklaması için ACE_HEADER bakın. [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) `AceFlags`
 
-##  <a name="cdacl"></a>CDacl:: CDacl
+## <a name="cdaclcdacl"></a><a name="cdacl"></a>CDacl::CDacl
 
 Oluşturucu.
 
@@ -179,16 +179,16 @@ CDacl () throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ taraftan*<br/>
-Var olan `ACL` bir (erişim denetimi listesi) yapısı.
+*Rhs*<br/>
+Varolan `ACL` (erişim denetim listesi) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne `CDacl` , isteğe bağlı olarak, var olan `ACL` bir yapı kullanılarak oluşturulabilir. Yalnızca bir DACL (sistem erişimi-denetim listesi) değil, bu parametre olarak bir DACL (bir isteğe bağlı erişim denetimi listesi) geçtiğini unutmayın. Hata ayıklama yapılarında, SACL geçirilmesi bir onaylama yapılmasına neden olur. Yayın yapıları ' nda, SACL 'nin geçirilmesi ACL 'deki ACE (erişim denetimi girdileri) yoksayılmasına neden olur ve hata oluşmaz.
+Nesne `CDacl` isteğe bağlı olarak varolan `ACL` bir yapı kullanılarak oluşturulabilir. Bu parametre olarak yalnızca bir DACL (isteğe bağlı erişim denetim listesi) değil, bir SACL (sistem erişim denetim listesi) geçirilmesi gerektiğini unutmayın. Hata ayıklama oluşturur, bir SACL geçen bir ASSERT neden olur. Sürüm yapılarında, Bir SACL'nin geçirilmesi ACL'deki ACE'lerin (erişim denetimi girişleri) yoksayılmasına neden olur ve hiçbir hata oluşmaz.
 
-##  <a name="dtor"></a>  CDacl::~CDacl
+## <a name="cdaclcdacl"></a><a name="dtor"></a>CDacl::~CDacl
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 ~CDacl () throw();
@@ -196,11 +196,11 @@ Yok edicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı, [CDacl:: RemoveAllAces](#removeallaces)kullanarak tüm Ace 'ler (erişim-denetim girişleri) dahil olmak üzere, nesne tarafından alınan tüm kaynakları serbest bırakır.
+Yıkıcı CDacl kullanarak tüm ACE'ler (erişim-kontrol girişleri) dahil olmak üzere nesne tarafından edinilen tüm kaynakları [serbest::RemoveAllAces](#removeallaces).
 
-##  <a name="getacecount"></a>CDacl:: GetAceCount
+## <a name="cdaclgetacecount"></a><a name="getacecount"></a>CDacl::GetAceCount
 
-`CDacl` Nesnedeki ACE sayısını (erişim denetimi girdileri) döndürür.
+`CDacl` Nesnedeki ACE (erişim denetimi girişleri) sayısını verir.
 
 ```
 UINT GetAceCount() const throw();
@@ -210,7 +210,7 @@ UINT GetAceCount() const throw();
 
 `CDacl` Nesnede bulunan ACE sayısını döndürür.
 
-##  <a name="operator_eq"></a>CDacl:: operator =
+## <a name="cdacloperator-"></a><a name="operator_eq"></a>CDacl::operatör =
 
 Atama işleci.
 
@@ -220,20 +220,20 @@ CDacl& operator= (const ACL& rhs) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ taraftan*<br/>
-Mevcut nesneye atanacak ACL (erişim denetimi listesi).
+*Rhs*<br/>
+Varolan nesneye atamak için ACL (erişim denetim listesi).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Güncelleştirilmiş `CDacl` nesneye bir başvuru döndürür.
+Güncelleştirilmiş `CDacl` nesneye bir başvuru verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleve yalnızca bir DACL (isteğe bağlı erişim denetimi listesi) iletdiğinizden emin olmanız gerekir. Bu işleve bir SACL (sistem erişim denetimi listesi) geçirmek hata ayıklama yapılarında bir onaylama yapılmasına neden olur, ancak yayın yapılarında hata vermez.
+Bu işleve yalnızca bir DACL (isteğe bağlı erişim denetim listesi) geçtiğinden emin olmalısınız. SACL 'nin (sistem erişim denetim listesi) bu işleve geçirilmesi hata ayıklama yapılarda bir Assert'a neden olur, ancak sürüm yapılarında hata yayılmaz.
 
-##  <a name="removeace"></a>CDacl:: RemoveAce
+## <a name="cdaclremoveace"></a><a name="removeace"></a>CDacl::RemoveAce
 
-`CDacl` Nesnesinden belirli bir ACE 'yi (erişim denetimi girişi) kaldırır.
+`CDacl` Nesneden belirli bir ACE (erişim denetimi girişi) kaldırır.
 
 ```
 void RemoveAce(UINT nIndex) throw();
@@ -241,16 +241,16 @@ void RemoveAce(UINT nIndex) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nDizin*<br/>
-Kaldırılacak ACE girişinin dizini.
+*Nındex*<br/>
+Kaldırmak için ACE girişine dizin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [CAtlArray:: removeadresinden](../../atl/reference/catlarray-class.md#removeat)türetilir.
+Bu yöntem [CAtlArray türetilmiştir::RemoveAt](../../atl/reference/catlarray-class.md#removeat).
 
-##  <a name="removeallaces"></a>CDacl:: RemoveAllAces
+## <a name="cdaclremoveallaces"></a><a name="removeallaces"></a>CDacl::RemoveAllAces
 
-`CDacl` Nesnesinde bulunan tüm Ace 'leri (erişim denetimi girdileri) kaldırır.
+`CDacl` Nesnede bulunan tüm ACE'leri (erişim denetimi girişleri) kaldırır.
 
 ```
 void RemoveAllAces() throw();
@@ -258,13 +258,13 @@ void RemoveAllAces() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnesinde ( `ACE` varsa) her (erişim denetimi girişi) yapısını kaldırır. `CDacl`
+Nesnedeki `CDacl` `ACE` her (erişim denetimi girişi) yapısını (varsa) kaldırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Güvenlik örneği](../../overview/visual-cpp-samples.md)<br/>
+[Güvenlik Örneği](../../overview/visual-cpp-samples.md)<br/>
 [CAcl Sınıfı](../../atl/reference/cacl-class.md)<br/>
-[Cacls](/windows/win32/SecAuthZ/access-control-lists)<br/>
-[Ace 'ler](/windows/win32/SecAuthZ/access-control-entries)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
+[Acl](/windows/win32/SecAuthZ/access-control-lists)<br/>
+[Ace](/windows/win32/SecAuthZ/access-control-entries)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

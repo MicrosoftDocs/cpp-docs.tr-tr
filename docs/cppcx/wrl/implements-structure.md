@@ -15,16 +15,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Implements::FillArrayWithIid method
 - Microsoft::WRL::Implements::IidCount method
 ms.assetid: 29b13e90-34d4-4a0b-babd-5187c9eb0c36
-ms.openlocfilehash: 0ce6e9193107cbd0d033d99b257e41004b4343a8
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+ms.openlocfilehash: 223f37d7cabbd0b8cd238582773c05d7b9eaabf6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821863"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371402"
 ---
 # <a name="implements-structure"></a>Implements Yapısı
 
-Belirtilen arabirimler için `QueryInterface` ve `GetIid` uygular.
+Uygular `QueryInterface` ve `GetIid` belirtilen arabirimler için.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -77,65 +77,65 @@ struct __declspec(novtable) Implements<
 ### <a name="parameters"></a>Parametreler
 
 *I0*<br/>
-Diğer arabirim KIMLIĞI. Girilmesi
+Sıfırıncı arayüz kimliği. (Zorunlu)
 
 *I1*<br/>
-İlk arabirim KIMLIĞI. (İsteğe bağlı)
+İlk arayüz kimliği. (İsteğe bağlı)
 
 *I2*<br/>
-İkinci arabirim KIMLIĞI. (İsteğe bağlı)
+İkinci arayüz kimliği. (İsteğe bağlı)
 
 *I3*<br/>
-Üçüncü arabirim KIMLIĞI. (İsteğe bağlı)
+Üçüncü arayüz kimliği. (İsteğe bağlı)
 
 *I4*<br/>
-Dördüncü arabirim KIMLIĞI. (İsteğe bağlı)
+Dördüncü arayüz kimliği. (İsteğe bağlı)
 
 *I5*<br/>
-Beşinci arabirim KIMLIĞI. (İsteğe bağlı)
+Beşinci arayüz kimliği. (İsteğe bağlı)
 
 *I6*<br/>
-Altıncı arabirim KIMLIĞI. (İsteğe bağlı)
+Altıncı arayüz kimliği. (İsteğe bağlı)
 
 *I7*<br/>
-Yedinci arabirim KIMLIĞI. (İsteğe bağlı)
+Yedinci arayüz kimliği. (İsteğe bağlı)
 
 *I8*<br/>
-Sekizinci arabirim KIMLIĞI. (İsteğe bağlı)
+Sekizinci arayüz kimliği. (İsteğe bağlı)
 
 *I9*<br/>
-Dokuzuncu arabirim KIMLIĞI. (İsteğe bağlı)
+Dokuzuncu arayüz kimliği. (İsteğe bağlı)
 
-*larına*<br/>
-Sınıf için yapılandırma bayrakları. [RuntimeClassFlags](runtimeclassflags-structure.md) yapısında belirtilen bir veya daha fazla [RuntimeClassType](runtimeclasstype-enumeration.md) numaralandırması.
+*bayraklar*<br/>
+Sınıf için yapılandırma bayrakları. [RuntimeClassFlags](runtimeclassflags-structure.md) yapısında belirtilen bir veya daha fazla [RuntimeClassType](runtimeclasstype-enumeration.md) sayılandırma.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirtilen arabirimlerin listesinden türetilir ve `QueryInterface` ve `GetIid`için yardımcı şablonları uygular.
+Belirtilen arabirimler listesinden türetilmiştir ve yardımcı `QueryInterface` şablonları `GetIid`uygular ve.
 
-Her *I0* ile *I9* arabirimi parametresi `IUnknown`, `IInspectable`veya [ChainInterfaces](chaininterfaces-structure.md) şablonundan türetilmelidir. *Flags* parametresi, `IUnknown` veya `IInspectable`için desteğin oluşturulup oluşturulmayacağını belirler.
+I9 arabirim parametresi her *I0* `IInspectable`ya türetilmelidir *I9* `IUnknown`, veya [ChainInterfaces](chaininterfaces-structure.md) şablonu. *Bayraklar* parametresi, destek için `IUnknown` `IInspectable`oluşturulup oluşturulmadığını belirler.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Ortak tür tanımları
+### <a name="public-typedefs"></a>Genel Typedefs
 
-| Name        | Açıklama                               |
+| Adı        | Açıklama                               |
 | ----------- | ----------------------------------------- |
-| `ClassFlags`| `RuntimeClassFlags<WinRt>`için eş anlamlı. |
+| `ClassFlags`| Bir eşanlamlı `RuntimeClassFlags<WinRt>`. |
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-| Name                                              | Açıklama                                                                                                   |
+| Adı                                              | Açıklama                                                                                                   |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| [Şunları uygular:: Canroto](#cancastto)               | Belirtilen arabirime bir işaretçi alır.                                                                    |
-| [Implements:: Rotounknown](#casttounknown)       | Temel alınan `IUnknown` arabirimine yönelik bir işaretçi alır.                                                        |
-| [Implements:: Fillarraywithııd](#fillarraywithiid) | Belirtilen dizi öğesine geçerli bir diğer şablon parametresi tarafından belirtilen arabirim KIMLIĞINI ekler. |
+| [Uygular::CanCastTo](#cancastto)               | Belirtilen arabirime bir işaretçi alır.                                                                    |
+| [Uygular::CastToUnknown](#casttounknown)       | Temel `IUnknown` arabirim için bir işaretçi alır.                                                        |
+| [Uygular::FillArrayWithIid](#fillarraywithiid) | Geçerli sıfırth şablon parametresi tarafından belirtilen arabirim kimliğini belirtilen dizi öğesine ekler. |
 
-### <a name="protected-constants"></a>Korunan sabitler
+### <a name="protected-constants"></a>Korumalı Sabitler
 
-| Name                              | Açıklama                                    |
+| Adı                              | Açıklama                                    |
 | --------------------------------- | ---------------------------------------------- |
-| [Implements:: ııdcount](#iidcount) | Uygulanan arabirim kimliklerinin sayısını tutar. |
+| [Uygular::IidCount](#iidcount) | Uygulanan arabirim tayının sayısını tutar. |
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -153,11 +153,11 @@ Her *I0* ile *I9* arabirimi parametresi `IUnknown`, `IInspectable`veya [ChainInt
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** uygular. h
+**Üstbilgi:** implements.h
 
-**Ad alanı:** Microsoft:: WRL
+**Ad alanı:** Microsoft::WRL
 
-## <a name="cancastto"></a>Şunları uygular:: Canroto
+## <a name="implementscancastto"></a><a name="cancastto"></a>Uygular::CanCastTo
 
 Belirtilen arabirime bir işaretçi alır.
 
@@ -170,23 +170,23 @@ __forceinline HRESULT CanCastTo(
 
 ### <a name="parameters"></a>Parametreler
 
-*riıd*<br/>
-Arabirim KIMLIĞINE başvuru.
+*Riid*<br/>
+Arabirim kimliğine başvuru.
 
-*PPV*<br/>
-Başarılı olursa, *riıd*tarafından belirtilen arabirime yönelik bir işaretçi.
+*Ppv*<br/>
+Başarılı olursa, *riid*tarafından belirtilen arabirimin bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa S_OK; Aksi takdirde, E_NOINTERFACE gibi bir hata belirten HRESULT.
+S_OK başarılı olursa; aksi takdirde, E_NOINTERFACE gibi hatayı gösteren bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, bir QueryInterface işlemi gerçekleştiren iç yardımcı işlevdir.
+Bu, QueryInterface işlemini gerçekleştiren bir iç yardımcı işlevidir.
 
-## <a name="casttounknown"></a>Implements:: Rotounknown
+## <a name="implementscasttounknown"></a><a name="casttounknown"></a>Uygular::CastToUnknown
 
-Temel alınan `IUnknown` arabirimine yönelik bir işaretçi alır.
+Temel `IUnknown` arabirim için bir işaretçi alır.
 
 ```cpp
 __forceinline IUnknown* CastToUnknown();
@@ -194,15 +194,15 @@ __forceinline IUnknown* CastToUnknown();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu işlem her zaman başarılı olur ve `IUnknown` işaretçiyi döndürür.
+Bu işlem her zaman `IUnknown` başarılı ve işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İç yardımcı işlevi.
+Dahili yardımcı işlevi.
 
-## <a name="fillarraywithiid"></a>Implements:: Fillarraywithııd
+## <a name="implementsfillarraywithiid"></a><a name="fillarraywithiid"></a>Uygular::FillArrayWithIid
 
-Belirtilen dizi öğesine geçerli bir diğer şablon parametresi tarafından belirtilen arabirim KIMLIĞINI ekler.
+Geçerli sıfırth şablon parametresi tarafından belirtilen arabirim kimliğini belirtilen dizi öğesine ekler.
 
 ```cpp
 __forceinline static void FillArrayWithIid(
@@ -213,19 +213,19 @@ __forceinline static void FillArrayWithIid(
 
 ### <a name="parameters"></a>Parametreler
 
-*indeks*<br/>
-Bu işlem için başlangıç dizisi öğesini gösteren sıfır tabanlı bir dizin. Bu işlem tamamlandığında, *Dizin* 1 artırılır.
+*Dizin*<br/>
+Bu işlem için başlangıç dizi öğesini gösteren sıfır tabanlı dizin. Bu işlem tamamlandığında, *dizin* 1 ile artımlanır.
 
-*IID*<br/>
-IID türünde bir dizi.
+*iids*<br/>
+Tip IID bir dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İç yardımcı işlevi.
+Dahili yardımcı işlevi.
 
-## <a name="iidcount"></a>Implements:: ııdcount
+## <a name="implementsiidcount"></a><a name="iidcount"></a>Uygular::IidCount
 
-Uygulanan arabirim kimliklerinin sayısını tutar.
+Uygulanan arabirim tayının sayısını tutar.
 
 ```cpp
 static const unsigned long IidCount;

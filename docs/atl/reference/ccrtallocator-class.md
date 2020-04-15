@@ -1,5 +1,5 @@
 ---
-title: CCRTAllocator sınıfı
+title: CCRTAllocator Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CCRTAllocator
@@ -10,16 +10,16 @@ f1_keywords:
 helpviewer_keywords:
 - CCRTAllocator class
 ms.assetid: 3e1b8cb0-859a-41ab-8e93-6f0b5ceca49d
-ms.openlocfilehash: c08d594e1c0f4d532f46961e266bf6ced98c51b2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2f6bae3818fa0f1639e0e3cee4e09121580da768
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62259085"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81327175"
 ---
-# <a name="ccrtallocator-class"></a>CCRTAllocator sınıfı
+# <a name="ccrtallocator-class"></a>CCRTAllocator Sınıfı
 
-Bu sınıf, CRT bellek yordamları kullanarak bellek yönetmek için yöntemler sağlar.
+Bu sınıf, CRT bellek yordamlarını kullanarak bellek yönetmek için yöntemler sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,23 +31,23 @@ class ATL::CCRTAllocator
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CCRTAllocator::Allocate](#allocate)|(Statik) Bellek ayırmak için bu yöntemi çağırın.|
-|[CCRTAllocator::Free](#free)|(Statik) Belleği boşaltmak için bu yöntemi çağırın.|
-|[CCRTAllocator::Reallocate](#reallocate)|(Statik) Bellek yeniden ayırmak üzere bu yöntemi çağırın.|
+|[CCRTAllocator::Ayırma](#allocate)|(Statik) Bellek ayırmak için bu yöntemi arayın.|
+|[CCRTAllocator::Ücretsiz](#free)|(Statik) Bu yöntemi boş bellek için arayın.|
+|[CCRTAllocator::Yeniden tahsis](#reallocate)|(Statik) Belleği yeniden tahsis etmek için bu yöntemi arayın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf tarafından kullanılan [CHeapPtr](../../atl/reference/cheapptr-class.md) CRT bellek ayırma yordamlarını sağlamak için. Karşılık gelen sınıf [CComAllocator](../../atl/reference/ccomallocator-class.md), COM yordamları kullanarak aynı yöntemleri sağlar.
+Bu sınıf, CRT bellek ayırma yordamları sağlamak için [CHeapPtr](../../atl/reference/cheapptr-class.md) tarafından kullanılır. Muhatap sınıf, [CComAllocator](../../atl/reference/ccomallocator-class.md), COM yordamları kullanarak aynı yöntemleri sağlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcore.h
+**Üstbilgi:** atlcore.h
 
-##  <a name="allocate"></a>  CCRTAllocator::Allocate
+## <a name="ccrtallocatorallocate"></a><a name="allocate"></a>CCRTAllocator::Ayırma
 
-Bellek ayırma için statik bu işlevi çağırın.
+Belleği ayırmak için bu statik işlevi çağırın.
 
 ```
 static __declspec(allocator) void* Allocate(size_t nBytes) throw();
@@ -55,20 +55,20 @@ static __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBytes*<br/>
-Ayrılacak bayt sayısı.
+*nBayt*<br/>
+Tahsis edilebilen bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanılabilir bellek yetersiz ise bir void işaretçisine ayrılan alanı veya NULL döndürür.
+Boş bir işaretçiyi ayrılan alana döndürür veya boş bellek varsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bellek ayırır. Bkz: [malloc](../../c-runtime-library/reference/malloc.md) daha fazla ayrıntı için.
+Belleği ayırır. Daha fazla bilgi için [malloc](../../c-runtime-library/reference/malloc.md) bakın.
 
-##  <a name="free"></a>  CCRTAllocator::Free
+## <a name="ccrtallocatorfree"></a><a name="free"></a>CCRTAllocator::Ücretsiz
 
-Belleği boşaltmak için statik bu işlevi çağırın.
+Bu statik işlevi boş bellek için çağırın.
 
 ```
 static void Free(void* p) throw();
@@ -76,16 +76,16 @@ static void Free(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Ayrılan bellek işaretçisi.
+*P*<br/>
+Ayrılan belleğe işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan belleği serbest bırakır. Bkz: [ücretsiz](../../c-runtime-library/reference/free.md) daha fazla ayrıntı için.
+Ayrılan belleği serbest eder. Daha fazla bilgi için [ücretsiz](../../c-runtime-library/reference/free.md) bakın.
 
-##  <a name="reallocate"></a>  CCRTAllocator::Reallocate
+## <a name="ccrtallocatorreallocate"></a><a name="reallocate"></a>CCRTAllocator::Yeniden tahsis
 
-Bellek yeniden ayırmak üzere statik bu işlevi çağırın.
+Belleği yeniden tahsis etmek için bu statik işlevi çağırın.
 
 ```
 static __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
@@ -93,22 +93,22 @@ static __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Ayrılan bellek işaretçisi.
+*P*<br/>
+Ayrılan belleğe işaretçi.
 
-*nBytes*<br/>
-Ayrılacak bayt sayısı.
+*nBayt*<br/>
+Tahsis etmek için bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yetersiz bellek varsa, ayrılmış alanı veya NULL void bir işaretçi döndürür.
+Boş bir işaretçiyi ayrılan alana veya yetersiz bellek varsa NULL'a döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan bellek miktarını yeniden boyutlandırır. Bkz: [realloc](../../c-runtime-library/reference/realloc.md) daha fazla ayrıntı için.
+Ayrılan bellek miktarını yeniden boyutlandırır. Daha fazla bilgi için [realloc](../../c-runtime-library/reference/realloc.md) bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CHeapPtr Sınıfı](../../atl/reference/cheapptr-class.md)<br/>
 [CComAllocator Sınıfı](../../atl/reference/ccomallocator-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Klineartransition sınıfı
+title: CLinearTransition Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CLinearTransition
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - CLinearTransition [MFC], m_dblFinalValue
 - CLinearTransition [MFC], m_duration
 ms.assetid: 7fcb2dba-beb8-4933-9f5d-3b7fb1585ef0
-ms.openlocfilehash: 1a6348d1afd0117683bd31af61324b14e16f710c
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1d3bc50255dae93bfa80e8212c2349db66db4eb6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505739"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372276"
 ---
-# <a name="clineartransition-class"></a>Klineartransition sınıfı
+# <a name="clineartransition-class"></a>CLinearTransition Sınıfı
 
 Doğrusal bir geçişi kapsüller.
 
@@ -35,42 +35,42 @@ class CLinearTransition : public CBaseTransition;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Klineartransition:: Klineartransition](#clineartransition)|Doğrusal bir geçiş nesnesi oluşturur ve Duration ve final değeri ile başlatır.|
+|[ClinearTransition::clineartransition](#clineartransition)|Doğrusal bir geçiş nesnesi inşa eder ve süre ve son değerle başharfe doğrular.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Klineartransition:: Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. ( [CBaseTransition:: Create](../../mfc/reference/cbasetransition-class.md#create)geçersiz kılar.)|
+|[CLinearTransition::Oluştur](#create)|Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. (CBaseTransition geçersiz [kılar::Oluştur](../../mfc/reference/cbasetransition-class.md#create).)|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Klineartransition:: m_dblFinalValue](#m_dblfinalvalue)|Geçişin sonundaki animasyon değişkeninin değeri.|
-|[Klineartransition:: m_duration](#m_duration)|Geçişin süresi.|
+|[CLinearTransition::m_dblFinalValue](#m_dblfinalvalue)|Geçişin sonundaki animasyon değişkeninin değeri.|
+|[CLinearTransition::m_duration](#m_duration)|Geçiş süresi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Doğrusal bir geçiş sırasında animasyon değişkeninin değeri ilk değerinden belirtilen bir son değere göre doğrusal şekilde geçiş yapar. Tüm geçişler otomatik olarak temizlendiğinden, Yeni işleç kullanılarak ayrılmaları önerilir. Encapsulated IUIAnimationTransition COM nesnesi, NULL olana kadar CAnimationController:: AnimateGroup tarafından oluşturulur. Bu COM nesnesi oluşturulduktan sonra üye değişkenlerinin değiştirilmesinin etkisi olmaz.
+Doğrusal bir geçiş sırasında, animasyon değişkeninin değeri ilk değerinden belirli bir son değere doğrusal olarak geçiş eder. Tüm geçişler otomatik olarak temizlenerek, operatör yeni kullanılarak ayrılması önerilir. Kapsüllü IUIAnimationTransition COM nesnesi CAnimationController tarafından oluşturulur::AnimateGroup, o zamana kadar NULL' s. Bu COM nesnesinin oluşturulduktan sonra üye değişkenleri değiştirmenin hiçbir etkisi yoktur.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
-[Klinme geçişi](../../mfc/reference/clineartransition-class.md)
+[CLinearTransition](../../mfc/reference/clineartransition-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller. h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="clineartransition"></a>Klineartransition:: Klineartransition
+## <a name="clineartransitionclineartransition"></a><a name="clineartransition"></a>ClinearTransition::clineartransition
 
-Doğrusal bir geçiş nesnesi oluşturur ve Duration ve final değeri ile başlatır.
+Doğrusal bir geçiş nesnesi inşa eder ve süre ve son değerle başharfe doğrular.
 
 ```
 CLinearTransition(
@@ -80,15 +80,15 @@ CLinearTransition(
 
 ### <a name="parameters"></a>Parametreler
 
-*Süresi*<br/>
-Geçişin süresi.
+*Süre*<br/>
+Geçiş süresi.
 
-*Dblfinaldeğeri*<br/>
+*dblFinalValue*<br/>
 Geçişin sonundaki animasyon değişkeninin değeri.
 
-##  <a name="create"></a>Klineartransition:: Create
+## <a name="clineartransitioncreate"></a><a name="create"></a>CLinearTransition::Oluştur
 
-Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
+Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
 
 ```
 virtual BOOL Create(
@@ -98,14 +98,14 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*pLibrary*<br/>
-Standart geçişlerin kitaplığını tanımlayan [ıuıanimationgeçişli Tionlibrary arabirimine](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)yönelik bir işaretçi.
+*pKütüphane*<br/>
+Standart geçişler kitaplığını tanımlayan [IUIAnimationTransitionLibrary arabirimine](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçiş başarıyla oluşturulursa doğru; Aksi halde yanlış.
+Geçiş başarıyla oluşturulursa DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="m_dblfinalvalue"></a>Klineartransition:: m_dblFinalValue
+## <a name="clineartransitionm_dblfinalvalue"></a><a name="m_dblfinalvalue"></a>CLinearTransition::m_dblFinalValue
 
 Geçişin sonundaki animasyon değişkeninin değeri.
 
@@ -113,9 +113,9 @@ Geçişin sonundaki animasyon değişkeninin değeri.
 DOUBLE m_dblFinalValue;
 ```
 
-##  <a name="m_duration"></a>Klineartransition:: m_duration
+## <a name="clineartransitionm_duration"></a><a name="m_duration"></a>CLinearTransition::m_duration
 
-Geçişin süresi.
+Geçiş süresi.
 
 ```
 UI_ANIMATION_SECONDS m_duration;

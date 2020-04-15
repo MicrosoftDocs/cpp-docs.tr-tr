@@ -1,5 +1,5 @@
 ---
-title: CW2AEX sınıfı
+title: CW2AEX Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CW2AEX
@@ -10,19 +10,19 @@ f1_keywords:
 helpviewer_keywords:
 - CW2AEX class
 ms.assetid: 44dc2cf5-dd30-440b-a9b9-b21b43f49843
-ms.openlocfilehash: 4dda1cb9e54c44f7940475660bc629192b9ead61
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 849cbe5c26d7c7af7a8925a26057b5777554471d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496261"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81330447"
 ---
-# <a name="cw2aex-class"></a>CW2AEX sınıfı
+# <a name="cw2aex-class"></a>CW2AEX Sınıfı
 
-Bu sınıf, CT2AEX, CW2TEX, CW2CTEX ve CT2CAEX ve typedef CW2A dize dönüştürme makroları tarafından kullanılır.
+Bu sınıf dize dönüştürme makroları CT2AEX, CW2TEX, CW2CTEX ve CT2CAEX ve typedef CW2A tarafından kullanılır.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,41 +34,41 @@ class CW2AEX
 #### <a name="parameters"></a>Parametreler
 
 *t_nBufferLength*<br/>
-Çeviri işleminde kullanılan arabelleğin boyutu. Varsayılan uzunluk 128 bayttır.
+Çeviri işleminde kullanılan arabelleğe boyutu. Varsayılan uzunluk 128 bayttır.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CW2AEX::CW2AEX](#cw2aex)|Oluşturucu.|
-|[CW2AEX:: ~ CW2AEX](#dtor)|Yok edicisi.|
+|[CW2AEX::~CW2AEX](#dtor)|Yıkıcı.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CW2AEX:: operator LPSTR](#operator_lpstr)|Dönüştürme işleci.|
+|[CW2AEX::operatör LPSTR](#operator_lpstr)|Dönüşüm işleci.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CW2AEX::m_psz](#m_psz)|Kaynak dizeyi depolayan veri üyesi.|
+|[CW2AEX::m_psz](#m_psz)|Kaynak dizesini depolayan veri üyesi.|
 |[CW2AEX::m_szBuffer](#m_szbuffer)|Dönüştürülmüş dizeyi depolamak için kullanılan statik arabellek.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ek işlevsellik gerekmediği takdirde kodunuzda CT2AEX, CW2TEX, CW2CTEX, CT2CAEX veya CW2A kullanın.
+İlave işlevsellik gerekmedikçe, kodunuzda CT2AEX, CW2TEX, CW2CTEX, CT2CAEX veya CW2A kullanın.
 
-Bu sınıf, dönüştürmenin sonucunu depolamak için kullanılan sabit boyutlu statik bir arabellek içerir. Sonuç statik arabelleğe sığmayacak kadar büyükse, sınıf, nesne kapsam dışına geçtiğinde bellek **malloc**kullanarak belleği ayırır. Bu, metin dönüştürme makrolarının önceki ATL sürümlerinde kullanılabilir olmasını sağlar, bu sınıfın Döngülerde kullanılması güvenlidir ve yığının taşmamasını sağlar.
+Bu sınıf, dönüştürme sonucunu depolamak için kullanılan sabit boyutlu statik arabellek içerir. Sonuç statik arabelleğe sığmayacak kadar büyükse, sınıf **malloc**kullanarak belleği ayırır ve nesne kapsam dışına çıktığında belleği serbest eder. Bu, ATL'nin önceki sürümlerinde bulunan metin dönüştürme makrolarının aksine, bu sınıfın döngülerde kullanımının güvenli olmasını ve yığını nakışlamamasını sağlar.
 
-Sınıf, yığın üzerinde bellek ayırmayı dener ve başarısız olursa, e_outofmemory bağımsız değişkeniyle çağrı `AtlThrow` yapılır.
+Sınıf yığınüzerinde bellek ayırmaya çalışır ve başarısız olursa, `AtlThrow` E_OUTOFMEMORY bir argüman ile çağırır.
 
-Varsayılan olarak, ATL dönüştürme sınıfları ve makroları dönüştürme için geçerli iş parçacığının ANSI kod sayfasını kullanır. Belirli bir dönüştürme için bu davranışı geçersiz kılmak istiyorsanız, sınıf için oluşturucunun ikinci parametresi olarak kod sayfasını belirtin.
+Varsayılan olarak, ATL dönüştürme sınıfları ve makrolar dönüşüm için geçerli iş parçacığının ANSI kod sayfasını kullanır. Belirli bir dönüştürme için bu davranışı geçersiz kılmak istiyorsanız, kod sayfasını sınıfın oluşturucusuna ikinci parametre olarak belirtin.
 
-Aşağıdaki makrolar bu sınıfa dayalıdır:
+Aşağıdaki makrolar bu sınıfa dayanır:
 
 - CT2AEX
 
@@ -78,21 +78,21 @@ Aşağıdaki makrolar bu sınıfa dayalıdır:
 
 - CT2CAEX
 
-Aşağıdaki typedef bu sınıfa dayalıdır:
+Aşağıdaki typedef bu sınıfa dayanır:
 
 - CW2A
 
-Bu metin dönüştürme makrolarıyla ilgili bir tartışma için bkz. [ATL ve MFC dize dönüştürme makroları](string-conversion-macros.md).
+Bu metin dönüştürme makrolarının tartışılması için [ATL ve MFC String Dönüşüm Makroları'na](string-conversion-macros.md)bakın.
 
 ## <a name="example"></a>Örnek
 
-Bu dize dönüştürme makrolarını kullanmayla ilgili bir örnek için bkz. [ATL ve MFC dize dönüştürme makroları](string-conversion-macros.md) .
+Bu dize dönüştürme makrolarını kullanma örneği için [ATL ve MFC String Dönüşüm Makrolarına](string-conversion-macros.md) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** AtlConv. h
+**Üstbilgi:** atlconv.h
 
-##  <a name="cw2aex"></a>CW2AEX::CW2AEX
+## <a name="cw2aexcw2aex"></a><a name="cw2aex"></a>CW2AEX::CW2AEX
 
 Oluşturucu.
 
@@ -103,19 +103,19 @@ CW2AEX(LPCWSTR psz) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*PSZ*<br/>
+*Psz*<br/>
 Dönüştürülecek metin dizesi.
 
 *nCodePage*<br/>
-Dönüştürme işlemini gerçekleştirmek için kullanılan kod sayfası. Daha fazla ayrıntı için bkz. [MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar) Windows SDK işlevi için kod sayfası parametre tartışması.
+Dönüştürme gerçekleştirmek için kullanılan kod sayfası. Daha fazla bilgi için Windows SDK fonksiyonu [MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar) için kod sayfası parametre tartışmasına bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Çeviri işleminde kullanılan arabelleği ayırır.
 
-##  <a name="dtor"></a>CW2AEX:: ~ CW2AEX
+## <a name="cw2aexcw2aex"></a><a name="dtor"></a>CW2AEX::~CW2AEX
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 ~CW2AEX() throw();
@@ -123,17 +123,17 @@ Yok edicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan arabelleği serbest bırakır.
+Ayrılan arabelleği serbest bırakın.
 
-##  <a name="m_psz"></a>CW2AEX::m_psz
+## <a name="cw2aexm_psz"></a><a name="m_psz"></a>CW2AEX::m_psz
 
-Kaynak dizeyi depolayan veri üyesi.
+Kaynak dizesini depolayan veri üyesi.
 
 ```
 LPSTR m_psz;
 ```
 
-##  <a name="m_szbuffer"></a>CW2AEX::m_szBuffer
+## <a name="cw2aexm_szbuffer"></a><a name="m_szbuffer"></a>CW2AEX::m_szBuffer
 
 Dönüştürülmüş dizeyi depolamak için kullanılan statik arabellek.
 
@@ -141,9 +141,9 @@ Dönüştürülmüş dizeyi depolamak için kullanılan statik arabellek.
 char m_szBuffer[t_nBufferLength];
 ```
 
-##  <a name="operator_lpstr"></a>CW2AEX:: operator LPSTR
+## <a name="cw2aexoperator-lpstr"></a><a name="operator_lpstr"></a>CW2AEX::operatör LPSTR
 
-Dönüştürme işleci.
+Dönüşüm işleci.
 
 ```
 operator LPSTR() const throw();
@@ -151,7 +151,7 @@ operator LPSTR() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Metin dizesini LPSTR türünde döndürür.
+Metin dizesini LPSTR türü olarak döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -160,4 +160,4 @@ Metin dizesini LPSTR türünde döndürür.
 [CA2WEX Sınıfı](../../atl/reference/ca2wex-class.md)<br/>
 [CW2CWEX Sınıfı](../../atl/reference/cw2cwex-class.md)<br/>
 [CW2WEX Sınıfı](../../atl/reference/cw2wex-class.md)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

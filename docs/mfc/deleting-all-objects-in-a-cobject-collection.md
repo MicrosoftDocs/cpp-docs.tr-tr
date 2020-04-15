@@ -10,73 +10,73 @@ helpviewer_keywords:
 - objects in CObject collections
 - collection classes [MFC], shared objects
 ms.assetid: 81d2c1d5-a0a5-46e1-8ab9-82b45cf7afd2
-ms.openlocfilehash: 95d4cec61b230df5a019655617a25b1dc309cde4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 303b8a566a730c5abd06d51fb7977174e19a6435
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153509"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81370531"
 ---
 # <a name="deleting-all-objects-in-a-cobject-collection"></a>CObject Koleksiyonundaki Tüm Nesneleri Silme
 
-Bu makalede (koleksiyon nesnesinin kendisini silmeden) koleksiyonundaki tüm nesneleri silme işlemini açıklar.
+Bu makalede, koleksiyondaki tüm nesnelerin nasıl silinir (koleksiyon nesnesinin kendisini silmeden) açıklar.
 
-Koleksiyonundaki tüm nesneleri silmek için `CObject`s (veya türetilen nesnelerin `CObject`), makalesinde açıklanan yineleme tekniklerden birini kullanın [bir koleksiyonun tüm üyelerine erişme](../mfc/accessing-all-members-of-a-collection.md) her bir nesnenin silmek için kapatın.
+`CObject`S (veya türetilen nesnelerin) koleksiyonundaki tüm nesneleri `CObject`silmek için, her nesneyi sırayla silmek için [koleksiyonun tüm üyelerine erişen](../mfc/accessing-all-members-of-a-collection.md) makalede açıklanan yineleme tekniklerinden birini kullanırsınız.
 
 > [!CAUTION]
->  Koleksiyonlarında nesneler paylaşılabilir. Diğer bir deyişle, koleksiyon nesnesine bir işaretçi tutar ancak programın diğer bölümlerini de aynı nesneye bir işaretçi olabilir. Nesnesini kullanarak tüm bölümleri tamamlanana kadar paylaşılan bir nesne silmemeyi dikkatli olmanız gerekir.
+> Koleksiyondaki nesneler paylaşılabilir. Diğer bir deyişle, koleksiyon nesneye bir işaretçi tutar, ancak programın diğer bölümleri de aynı nesneye işaretçiler olabilir. Tüm parçalar nesneyi kullananı tamamlayana kadar paylaşılan bir nesneyi silmemeye dikkat etmelisiniz.
 
-Bu makalede, nesneleri silme işlemini göstermektedir:
+Bu makalede, aşağıdaki nesneler nasıl silinir gösterir:
 
 - [Bir liste](#_core_to_delete_all_objects_in_a_list_of_pointers_to_cobject)
 
 - [Bir dizi](#_core_to_delete_all_elements_in_an_array)
 
-- [Bir eşleme](#_core_to_delete_all_elements_in_a_map)
+- [Bir harita](#_core_to_delete_all_elements_in_a_map)
 
-#### <a name="_core_to_delete_all_objects_in_a_list_of_pointers_to_cobject"></a>  CObject işaretçiler listesindeki tüm nesneleri silme
+#### <a name="to-delete-all-objects-in-a-list-of-pointers-to-cobject"></a><a name="_core_to_delete_all_objects_in_a_list_of_pointers_to_cobject"></a>CObject işaretçileri listesindeki tüm nesneleri silmek için
 
-1. Kullanım `GetHeadPosition` ve `GetNext` listede gezinmek için.
+1. Kullanın `GetHeadPosition` `GetNext` ve liste boyunca yineleyin.
 
-1. Kullanım **Sil** yinelemede karşılaştığından her nesneyi silmek için işleci.
+1. Yinelemede karşılaşılan her nesneyi silmek için **silme** işlecinin kullanın.
 
-1. Çağrı `RemoveAll` öğelerle ilişkili nesneler silindikten sonra listeden tüm öğeleri kaldırmak için işlevi.
+1. Bu `RemoveAll` öğelerle ilişkili nesneler silindikten sonra tüm öğeleri listeden kaldırmak için işlevi arayın.
 
-Aşağıdaki örnek bir listeden tüm nesneleri silme gösterir `CPerson` nesneleri. Listedeki her bir nesne işaretçisidir bir `CPerson` yığın üzerinde ayrılan nesne.
+Aşağıdaki örnekte, nesnelerin bir listesinden tüm `CPerson` nesnelerin nasıl silinir gösterilmektedir. Listedeki her nesne, yığında `CPerson` başlangıçta ayrılan bir nesneye işaretçidir.
 
 [!code-cpp[NVC_MFCCollections#17](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_1.cpp)]
 
-Son işlev çağrısı `RemoveAll`, listeden tüm öğeleri kaldırır listesi üye işlevi olmasıdır. Üye işlevi `RemoveAt` tek bir öğeyi kaldırır.
+Son işlev çağrısı, `RemoveAll`listeden tüm öğeleri kaldıran bir liste üye işlevidir. Üye işlev `RemoveAt` tek bir öğeyi kaldırır.
 
-Bir öğenin nesneyi silmek ve öğe kaldırıldığında arasındaki farka dikkat edin. Listeden bir öğe kaldırıldığında, yalnızca nesne listenin başvuruyu kaldırır. Nesne bellekte hala mevcut. Bir nesne sildiğinizde, mevcut olmaktan çıkar ve onun belleğini geri kazanılır. Bu nedenle, liste artık mevcut nesnelere erişmek denememesi hemen öğenin nesne silindikten sonra bir öğe kaldırmak önemlidir.
+Bir öğenin nesnesini silme ve öğenin kendisini kaldırma arasındaki farka dikkat edin. Bir öğeyi listeden kaldırmak yalnızca listenin nesneye başvurularını kaldırır. Nesne hala bellekte var. Bir nesneyi sildiğinizde, nesne yok olur ve belleği geri alınır. Bu nedenle, öğenin nesnesi silindikten hemen sonra bir öğeyi kaldırmak önemlidir, böylece liste artık var olmayan nesnelere erişmeye çalışmaz.
 
-#### <a name="_core_to_delete_all_elements_in_an_array"></a>  Bir dizideki tüm öğeler silinecek
+#### <a name="to-delete-all-elements-in-an-array"></a><a name="_core_to_delete_all_elements_in_an_array"></a>Bir dizideki tüm öğeleri silmek için
 
-1. Kullanım `GetSize` ve dizi aracılığıyla yineleme yapmak için tamsayı dizin değerleri.
+1. Dizi `GetSize` boyunca yinelemek için dizin değerlerini kullanın.
 
-1. Kullanım **Sil** işleci yinelemede karşılaştığından her öğe silinemedi.
+1. Yinelemede karşılaşılan her öğeyi silmek için **silme** işlecikullanın.
 
-1. Çağrı `RemoveAll` silindikten sonra diziden tüm öğeleri kaldırmak için işlevi.
+1. Tüm `RemoveAll` öğeleri silindikten sonra diziden kaldırmak için işlevi arayın.
 
-   Bir dizinin tüm öğeleri silmek için kod aşağıdaki gibidir:
+   Bir dizinin tüm öğelerini silme kodu aşağıdaki gibidir:
 
    [!code-cpp[NVC_MFCCollections#18](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_2.cpp)]
 
-Liste örneği yukarıdaki çağırabilirsiniz gibi `RemoveAll` bir dizideki tüm öğeleri kaldırmak için veya `RemoveAt` tek bir öğe kaldırmak için.
+Yukarıdaki liste örneğinde olduğu gibi, bir dizideki tüm `RemoveAt` öğeleri kaldırmak veya tek bir öğeyi kaldırmak için arayabilirsiniz. `RemoveAll`
 
-#### <a name="_core_to_delete_all_elements_in_a_map"></a> Bir eşlem içindeki tüm öğeleri silmek için
+#### <a name="to-delete-all-elements-in-a-map"></a><a name="_core_to_delete_all_elements_in_a_map"></a>Haritadaki tüm öğeleri silmek için
 
-1. Kullanım `GetStartPosition` ve `GetNextAssoc` dizi aracılığıyla yineleme yapmak için.
+1. `GetStartPosition` Dizide `GetNextAssoc` kullanmak ve yinelemek için.
 
-1. Kullanım **Sil** işleci yinelemede karşılaştığından anahtarı ve/veya her harita öğesinin değeri silinemedi.
+1. Yinelemede karşılaşılan her harita öğesi için anahtarı ve/veya değeri silmek için **silme** işleğini kullanın.
 
-1. Çağrı `RemoveAll` silindikten sonra tüm öğeleri eşlemden kaldırmak için işlevi.
+1. Tüm `RemoveAll` öğeleri silindikten sonra haritadan kaldırmak için işlevi arayın.
 
-   Tüm öğeleri silmek için kod bir `CMap` koleksiyon aşağıdaki gibidir. Haritadaki her öğe olan anahtar bir dize ve `CPerson` nesne (türetilen `CObject`) değeri.
+   Koleksiyonun tüm öğelerini `CMap` silme kodu aşağıdaki gibidir. Eşlemedeki her öğe, anahtar olarak `CPerson` bir dize `CObject`ye ve değer olarak bir nesneye (türetilmiş) sahiptir.
 
    [!code-cpp[NVC_MFCCollections#19](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_3.cpp)]
 
-Çağırabilirsiniz `RemoveAll` eşlemedeki tüm öğeleri kaldırmak için veya `RemoveKey` belirtilen anahtarı içeren tek bir öğe kaldırmak için.
+Bir haritadaki tüm öğeleri kaldırmak `RemoveAll` `RemoveKey` veya belirtilen anahtarla tek bir öğeyi kaldırmak için arayabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -19,16 +19,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::EventTargetArray::Length method
 - Microsoft::WRL::Details::EventTargetArray::~EventTargetArray, destructor
 ms.assetid: e3cadb7c-2160-4cbb-a2f8-c28733d1e96d
-ms.openlocfilehash: 1f3f8e299dba1f4b6ae5a5767f11989dc2fe8370
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9ea8800aa22a6b5cae0b3342cf337786fb53fc76
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398491"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371492"
 ---
 # <a name="eventtargetarray-class"></a>EventTargetArray Sınıfı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,27 +42,27 @@ class EventTargetArray :
 
 ## <a name="remarks"></a>Açıklamalar
 
-Olay işleyicileri dizisini temsil eder.
+Olay işleyicileri bir dizi temsil eder.
 
-İlişkili olay işleyicileri bir [EventSource](eventsource-class.md) nesnesi depolanır, korumalı bir `EventTargetArray` veri üyesi.
+[Bir EventSource](eventsource-class.md) nesnesi ile ilişkili olay işleyicileri `EventTargetArray` korumalı bir veri üyesinde depolanır.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Ad                                                           | Açıklama
+Adı                                                           | Açıklama
 -------------------------------------------------------------- | -----------------------------------------------------------
-[EventTargetArray::EventTargetArray](#eventtargetarray)        | Yeni bir örneğini başlatır `EventTargetArray` sınıfı.
-[EventTargetArray:: ~ EventTargetArray](#tilde-eventtargetarray) | Geçerli başlatılmasını geri alır `EventTargetArray` sınıfı.
+[EventTargetArray::EventTargetArray](#eventtargetarray)        | `EventTargetArray` sınıfının yeni bir örneğini başlatır.
+[EventTargetArray::~EventTargetArray](#tilde-eventtargetarray) | Geçerli `EventTargetArray` sınıfı deinitialize eder.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                                  | Açıklama
+Adı                                  | Açıklama
 ------------------------------------- | ---------------------------------------------------------------------------------------
-[EventTargetArray::AddTail](#addtail) | Belirtilen olay işleyicisi, olay işleyicileri iç dizi sonuna ekler.
-[EventTargetArray::Begin](#begin)     | Olay işleyicilerini iç dizideki ilk öğenin adresi alır.
-[EventTargetArray::End](#end)         | Son öğenin adresi olay işleyicileri içinde iç dizisini alır.
-[EventTargetArray::Length](#length)   | Olay işleyicilerini iç dizisinde geçerli öğe sayısını alır.
+[EventTargetArray::AddTail](#addtail) | Belirtilen olay işleyicisini olay işleyicilerinin iç dizisinin sonuna ekler.
+[EventTargetArray::Başla](#begin)     | Olay işleyicileri iç dizisinde ilk öğenin adresini alır.
+[EventTargetArray::Bitiş](#end)         | Olay işleyicileri iç dizisinde son öğenin adresini alır.
+[EventTargetArray::Uzunluk](#length)   | Olay işleyicilerinin iç dizisindeki geçerli öğe sayısını alır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -70,13 +70,13 @@ Ad                                  | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** event.h
+**Üstbilgi:** event.h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="tilde-eventtargetarray"></a>EventTargetArray:: ~ EventTargetArray
+## <a name="eventtargetarrayeventtargetarray"></a><a name="tilde-eventtargetarray"></a>EventTargetArray::~EventTargetArray
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 ~EventTargetArray();
@@ -84,11 +84,11 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli başlatılmasını geri alır `EventTargetArray` sınıfı.
+Geçerli `EventTargetArray` sınıfı deinitialize eder.
 
-## <a name="addtail"></a>EventTargetArray::AddTail
+## <a name="eventtargetarrayaddtail"></a><a name="addtail"></a>EventTargetArray::AddTail
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 void AddTail(
@@ -98,18 +98,18 @@ void AddTail(
 
 ### <a name="parameters"></a>Parametreler
 
-*Öğesi*<br/>
-Olay işleyicisi eklemek için işaretçi.
+*Öğe*<br/>
+Eklemek için olay işleyicisine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen olay işleyicisi, olay işleyicileri iç dizi sonuna ekler.
+Belirtilen olay işleyicisini olay işleyicilerinin iç dizisinin sonuna ekler.
 
-`AddTail()` yalnızca tarafından dahili olarak kullanılması amaçlanmıştır `EventSource` sınıfı.
+`AddTail()`yalnızca `EventSource` sınıf tarafından dahili olarak kullanılmak üzere tasarlanmıştır.
 
-## <a name="begin"></a>EventTargetArray::Begin
+## <a name="eventtargetarraybegin"></a><a name="begin"></a>EventTargetArray::Başla
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 ComPtr<IUnknown>* Begin();
@@ -117,15 +117,15 @@ ComPtr<IUnknown>* Begin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Olay işleyicileri iç dizideki ilk öğe adresi.
+Olay işleyicileri iç dizisinde ilk öğenin adresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olay işleyicilerini iç dizideki ilk öğenin adresi alır.
+Olay işleyicileri iç dizisinde ilk öğenin adresini alır.
 
-## <a name="end"></a>EventTargetArray::End
+## <a name="eventtargetarrayend"></a><a name="end"></a>EventTargetArray::Bitiş
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 ComPtr<IUnknown>* End();
@@ -133,15 +133,15 @@ ComPtr<IUnknown>* End();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Olay işleyicilerini iç dizi içindeki son öğeden adresi.
+Olay işleyicileri iç dizisinde son öğenin adresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Son öğenin adresi olay işleyicileri içinde iç dizisini alır.
+Olay işleyicileri iç dizisinde son öğenin adresini alır.
 
-## <a name="eventtargetarray"></a>EventTargetArray::EventTargetArray
+## <a name="eventtargetarrayeventtargetarray"></a><a name="eventtargetarray"></a>EventTargetArray::EventTargetArray
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 EventTargetArray(
@@ -152,30 +152,30 @@ EventTargetArray(
 
 ### <a name="parameters"></a>Parametreler
 
-*İK*<br/>
-Bu oluşturucu işlemlerinden sonra parametre *ik* dizinin ayırma başarılı veya başarısız olduğunu gösterir. Aşağıdaki liste için olası değerler gösterir *ik*.
+*Hr*<br/>
+Bu oluşturucu işlemden sonra, parametre *İk* dizi tahsisinin başarılı olup olmadığını veya başarısız olup olmadığını gösterir. Aşağıdaki liste *hr*için olası değerleri gösterir.
 
-+   S_OK<br/>
-    İşlem başarılı oldu.
+- S_OK<br/>
+  Operasyon başarılı oldu.
 
-+   E_OUTOFMEMORY<br/>
-    Dizi için bellek ayrılamıyor.
+- E_outofmemory<br/>
+  Bellek dizi için tahsis edileemedi.
 
-+   S_FALSE<br/>
-    Parametre *öğeleri* sıfırdan küçük veya ona eşit.
+- S_false<br/>
+  Parametre *öğeleri* sıfırdan küçük veya eşittir.
 
-*Öğeleri*<br/>
+*Bileşen*<br/>
 Ayrılacak dizi öğelerinin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir örneğini başlatır `EventTargetArray` sınıfı.
+`EventTargetArray` sınıfının yeni bir örneğini başlatır.
 
-`EventTargetArray` bir dizi olay işleyicileri tutmak için kullanılan bir `EventSource` nesne.
+`EventTargetArray`bir `EventSource` nesnede olay işleyicileri bir dizi tutmak için kullanılır.
 
-## <a name="length"></a>EventTargetArray::Length
+## <a name="eventtargetarraylength"></a><a name="length"></a>EventTargetArray::Uzunluk
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 size_t Length();
@@ -183,8 +183,8 @@ size_t Length();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Olay işleyicileri iç dizideki öğelerin sayısı.
+Olay işleyicilerinin iç dizisindeki öğelerin geçerli sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olay işleyicilerini iç dizisinde geçerli öğe sayısını alır.
+Olay işleyicilerinin iç dizisindeki geçerli öğe sayısını alır.

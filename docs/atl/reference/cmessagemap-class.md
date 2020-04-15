@@ -1,5 +1,5 @@
 ---
-title: CMessageMap sınıfı
+title: CMessageMap Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMessageMap
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - message maps, ATL
 - ATL, message handlers
 ms.assetid: 1f97bc16-a8a0-4cf0-b90f-1778813a5c8e
-ms.openlocfilehash: 617b7b4592c96625b44fbe5c2b93da971a423128
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a822f36d6b6fd49301d8240324e27f0ad9ce52e7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258539"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81326718"
 ---
-# <a name="cmessagemap-class"></a>CMessageMap sınıfı
+# <a name="cmessagemap-class"></a>CMessageMap Sınıfı
 
-Bu sınıf, başka bir nesneye erişimi olacak şekilde bir nesnenin ileti eşlemeleri sağlar.
+Bu sınıf, bir nesnenin ileti eşlemlerinin başka bir nesne tarafından erişmesine izin verir.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,29 +34,29 @@ class ATL_NO_VTABLE CMessageMap
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMessageMap::ProcessWindowMessage](#processwindowmessage)|Bir ileti eşlemede erişen `CMessageMap`-türetilmiş sınıf.|
+|[CMessageMap::ProcessWindowMessage](#processwindowmessage)|Türetilmiş sınıftaki `CMessageMap`bir ileti haritasına erişir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMessageMap` başka bir nesne tarafından erişilecek bir nesnenin ileti sağlayan soyut bir temel sınıf eşler olur. Kendi ileti eşlemeleri kullanıma sunmak bir nesne için sırayla sınıfıyla öğesinden türetilmelidir `CMessageMap`.
+`CMessageMap`bir nesnenin ileti haritalarının başka bir nesne tarafından erişmesine izin veren soyut bir taban sınıftır. Bir nesnenin ileti eşlemlerini ortaya çıkarabilmesi için `CMessageMap`sınıfının.'dan türemesi gerekir.
 
-ATL kullanan `CMessageMap` yer alan Destek windows ve dinamik ileti eşlemesi zincirleme. Örneğin, bir sınıf içeren bir [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) nesne öğesinden türetilmelidir `CMessageMap`. Aşağıdaki kod alınır [SUBEDIT](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit) örnek. Aracılığıyla [CComControl](../../atl/reference/ccomcontrol-class.md), `CAtlEdit` otomatik olarak sınıf türetilir `CMessageMap`.
+ATL, `CMessageMap` içerdiği pencereleri ve dinamik ileti eşlemi zincirlemesini desteklemek için kullanır. Örneğin, [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) nesnesi içeren herhangi `CMessageMap`bir sınıf. Aşağıdaki kod [SUBEDIT](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit) örneğinden alınır. [CComControl](../../atl/reference/ccomcontrol-class.md)aracılığıyla, `CAtlEdit` sınıf otomatik olarak. `CMessageMap`
 
 [!code-cpp[NVC_ATL_Windowing#90](../../atl/codesnippet/cpp/cmessagemap-class_1.h)]
 
-Çünkü kapsanan pencerenin `m_EditCtrl`, ileti eşlemesi kapsayan sınıfta kullanacağı `CAtlEdit` türetildiği `CMessageMap`.
+Çünkü bulunan pencere, `m_EditCtrl`içeren sınıfta bir ileti eşlemi kullanır, `CAtlEdit` `CMessageMap`türetilmiştir.
 
-İleti eşlemeleri hakkında daha fazla bilgi için bkz: [ileti eşlemeleri](../../atl/message-maps-atl.md) makaledeki "ATL pencere sınıflarına."
+İleti haritaları hakkında daha fazla bilgi için "ATL Pencere Sınıfları" makalesindeki [İleti Haritaları'na](../../atl/message-maps-atl.md) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin.h
 
-##  <a name="processwindowmessage"></a>  CMessageMap::ProcessWindowMessage
+## <a name="cmessagemapprocesswindowmessage"></a><a name="processwindowmessage"></a>CMessageMap::ProcessWindowMessage
 
-İleti eşlemesi tarafından tanımlanan erişen *dwMsgMapID* içinde bir `CMessageMap`-türetilmiş sınıf.
+türetilmiş bir sınıfta *dwMsgMapID* `CMessageMap`tarafından tanımlanan ileti haritasına erişir.
 
 ```
 virtual BOOL ProcessWindowMessage(
@@ -70,35 +70,35 @@ virtual BOOL ProcessWindowMessage(
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*<br/>
-[in] İletiyi alan pencereye tanıtıcısı.
+*Hwnd*<br/>
+[içinde] İletiyi alan pencerenin tutamacı.
 
 *uMsg*<br/>
-[in] Pencereye gönderilen ileti.
+[içinde] Pencereye gönderilen ileti.
 
-*wParam*<br/>
-[in] İletiye özgü ek bilgiler.
+*Wparam*<br/>
+[içinde] İletiye özgü ek bilgiler.
 
-*lParam*<br/>
-[in] İletiye özgü ek bilgiler.
+*Lparam*<br/>
+[içinde] İletiye özgü ek bilgiler.
 
 *lResult*<br/>
-[out] İleti işleme sonucu.
+[çıkış] İleti işleme sonucu.
 
 *dwMsgMapID*<br/>
-[in] İleti işleme ileti eşlemesi tanımlayıcısı. Varsayılan ileti eşlemesi ile bildirilmiş [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map), 0 ile tanımlanır. Bir diğer ileti eşlemesi ile bildirilmiş [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), tarafından tanımlanan `msgMapID`.
+[içinde] İletiyi işleyecek ileti haritasının tanımlayıcısı. [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)ile bildirilen varsayılan ileti eşlemi 0 ile tanımlanır. [ALT_MSG_MAP (msgMapID)](message-map-macros-atl.md#alt_msg_map)ile bildirilen alternatif bir ileti `msgMapID`haritası tanımlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti tam olarak işlenen TRUE; Aksi takdirde FALSE.
+İleti tam olarak işlenirse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Pencere yordamı tarafından adlandırılan bir [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) nesnesi veya bir nesne, dinamik olarak zincirleme için ileti eşlemesi.
+[CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) nesnesinin veya ileti eşlemi'ne dinamik olarak zincirleme bir nesnenin pencere yordamı tarafından çağrılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CDynamicChain Sınıfı](../../atl/reference/cdynamicchain-class.md)<br/>
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
+[Begın_msg_map](message-map-macros-atl.md#begin_msg_map)<br/>
 [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

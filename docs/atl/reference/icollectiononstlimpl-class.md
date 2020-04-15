@@ -1,5 +1,5 @@
 ---
-title: Icollectiononstlımpl sınıfı
+title: ICollectionOnSTLImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - ICollectionOnSTLImpl
@@ -11,14 +11,14 @@ f1_keywords:
 helpviewer_keywords:
 - ICollectionOnSTLImpl class
 ms.assetid: 683c88b0-0d97-4779-a762-e493334ba7f9
-ms.openlocfilehash: 6842f1c75ebbc9c3dfdd93f30d52fd2cb2936c03
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a8ccab08b89da8c1b8ef56c8932e27a6c74e62aa
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275793"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81329901"
 ---
-# <a name="icollectiononstlimpl-class"></a>Icollectiononstlımpl sınıfı
+# <a name="icollectiononstlimpl-class"></a>ICollectionOnSTLImpl Sınıfı
 
 Bu sınıf, bir koleksiyon sınıfı tarafından kullanılan yöntemleri sağlar.
 
@@ -32,54 +32,54 @@ class ICollectionOnSTLImpl : public T
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-COM koleksiyon arabirimi.
+Com toplama arabirimi.
 
 *CollType*<br/>
-Bir C++ Standart Kitaplığı kapsayıcı sınıfı.
+C++ Standart Kitaplık kapsayıcı sınıfı.
 
-*Itemtype*<br/>
-Kapsayıcı arabirimi tarafından sunulan öğe türü.
+*ItemType*<br/>
+Kapsayıcı arabirimi tarafından açığa çıkarılan öğe türü.
 
 *CopyItem*<br/>
-A [kopyalama İlkesi sınıfı](../../atl/atl-copy-policy-classes.md).
+Bir [kopya ilkesi sınıfı.](../../atl/atl-copy-policy-classes.md)
 
-*EnumType*<br/>
-A [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)-uyumlu Numaralandırıcı sınıfı.
+*Enumtype*<br/>
+[CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)uyumlu bir enumerator sınıfı.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[ICollectionOnSTLImpl::get__NewEnum](#newenum)|Koleksiyon için bir numaralandırıcı nesnesi döndürür.|
-|[ICollectionOnSTLImpl::getcount](#get_count)|Koleksiyondaki öğe sayısını döndürür.|
-|[ICollectionOnSTLImpl::get_Item](#get_item)|İstenen öğe koleksiyonundan döndürür.|
+|[ICollectionOnSTLImpl::get__NewEnum](#newenum)|Koleksiyon için bir sayısallaştırıcı nesne döndürür.|
+|[ICollectionOnSTLImpl::getcount](#get_count)|Koleksiyondaki öğe sayısını verir.|
+|[ICollectionOnSTLImpl::get_Item](#get_item)|Koleksiyondan istenen öğeyi döndürür.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[ICollectionOnSTLImpl::m_coll](#m_coll)|Koleksiyonu.|
+|[ICollectionOnSTLImpl::m_coll](#m_coll)|Koleksiyon.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf bir koleksiyon arabirimi için üç yöntem uygulamasını sağlar: [getcount](#get_count), [get_Item](#get_item), ve [get__NewEnum](#newenum).
+Bu sınıf bir koleksiyon arabiriminin üç yöntemi için uygulama sağlar: [getcount](#get_count), [get_Item](#get_item)ve [get__NewEnum.](#newenum)
 
-Bu sınıf kullanmak için:
+Bu sınıfı kullanmak için:
 
-- Uygulamak istediğiniz bir koleksiyonu arabirimi tanımlayın (veya ödünç alın).
+- Uygulamak istediğiniz bir koleksiyon arabirimini tanımlayın (veya ödünç alın).
 
-- Sınıfınıza özelleştirmesi türetilen `ICollectionOnSTLImpl` Bu koleksiyonu arabirimi esas alan.
+- Sınıfınızı bu koleksiyon arabirimine `ICollectionOnSTLImpl` dayalı bir uzmanlıktan türetin.
 
-- Türetilmiş sınıfınızın herhangi bir yöntem tarafından işlenmemiş koleksiyon arabiriminden uygulamak için kullanma `ICollectionOnSTLImpl`.
+- Türemiş sınıfınızı, '' tarafından işlenmemiş `ICollectionOnSTLImpl`koleksiyon arabiriminden herhangi bir yöntem uygulamak için kullanın.
 
 > [!NOTE]
->  Çift arabirim koleksiyon arabirimi ise, sınıfından türetilir [Idispatchımpl](../../atl/reference/idispatchimpl-class.md), geçen `ICollectionOnSTLImpl` uygulamasını sağlamak üzere ATL isterseniz ilk şablon parametresi olarak özelleştirmesi `IDispatch` yöntemleri.
+> Koleksiyon arabirimi çift arabirim ise, sınıfınızı [IDispatchImpl'den](../../atl/reference/idispatchimpl-class.md)türetin, atl'nin `ICollectionOnSTLImpl` `IDispatch` yöntemlerin uygulanmasını sağlamasını istiyorsanız ilk şablon parametresi olarak uzmanlık tan geçirin.
 
-- Öğe ekleme [m_coll](#m_coll) koleksiyonu doldurmak için üye.
+- Koleksiyonu doldurmak için [m_coll](#m_coll) üyeye öğeler ekleyin.
 
-Daha fazla bilgi ve örnekler için bkz. [ATL koleksiyonları ve numaralandırıcıları](../../atl/atl-collections-and-enumerators.md).
+Daha fazla bilgi ve örnekler için [ATL Koleksiyonları ve Sayısallaştırıcılar'a](../../atl/atl-collections-and-enumerators.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -91,9 +91,9 @@ Daha fazla bilgi ve örnekler için bkz. [ATL koleksiyonları ve numaralandırı
 
 **Başlık:** atlcom.h
 
-##  <a name="get_count"></a>  ICollectionOnSTLImpl::getcount
+## <a name="icollectiononstlimplgetcount"></a><a name="get_count"></a>ICollectionOnSTLImpl::getcount
 
-Bu yöntem, koleksiyondaki öğe sayısını döndürür.
+Bu yöntem, koleksiyondaki madde sayısını döndürür.
 
 ```
 STDMETHOD(getcount)(long* pcount);
@@ -102,13 +102,13 @@ STDMETHOD(getcount)(long* pcount);
 ### <a name="parameters"></a>Parametreler
 
 *pcount*<br/>
-[out] Koleksiyondaki öğe sayısı.
+[çıkış] Koleksiyondaki öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="get_item"></a>  ICollectionOnSTLImpl::get_Item
+## <a name="icollectiononstlimplget_item"></a><a name="get_item"></a>ICollectionOnSTLImpl::get_Item
 
 Bu yöntem, koleksiyondan belirtilen öğeyi döndürür.
 
@@ -118,23 +118,23 @@ STDMETHOD(get_Item)(long Index, ItemType* pvar);
 
 ### <a name="parameters"></a>Parametreler
 
-*Index*<br/>
-[in] Koleksiyondaki bir öğe 1 tabanlı dizini.
+*Dizin oluşturma*<br/>
+[içinde] Koleksiyondaki bir öğenin 1 tabanlı dizini.
 
 *pvar*<br/>
-[out] Öğesi için karşılık gelen *dizin*.
+[çıkış] *Dizin'e*karşılık gelen öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğe, belirtilen konumda verileri kopyalayarak elde edilen [m_coll](#m_coll) kopyalama yöntemini kullanarak [kopyalama İlkesi sınıfı](../../atl/atl-copy-policy-classes.md) bir şablon bağımsız değişken olarak geçirilen `ICollectionOnSTLImpl` özelleştirmesi.
+Madde, `ICollectionOnSTLImpl` uzmanlık alanında şablon bağımsız değişkeni olarak geçirilen [kopya ilkesi sınıfının](../../atl/atl-copy-policy-classes.md) kopyalama yöntemi kullanılarak [m_coll](#m_coll) belirtilen konumdaki veriler kopyalayarak elde edilir.
 
-##  <a name="newenum"></a>  ICollectionOnSTLImpl::get__NewEnum
+## <a name="icollectiononstlimplget__newenum"></a><a name="newenum"></a>ICollectionOnSTLImpl::get__NewEnum
 
-Koleksiyon için bir numaralandırıcı nesnesi döndürür.
+Koleksiyon için bir sayısallaştırıcı nesne döndürür.
 
 ```
 STDMETHOD(get__NewEnum)(IUnknown** ppUnk);
@@ -143,19 +143,19 @@ STDMETHOD(get__NewEnum)(IUnknown** ppUnk);
 ### <a name="parameters"></a>Parametreler
 
 *ppUnk*<br/>
-[out] **IUnknown** yeni oluşturulan Numaralandırıcı nesnesi işaretçisi.
+[çıkış] Yeni oluşturulan bir numaralandırma nesnesinin **Bilinmeyen** işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni oluşturulan Numaralandırıcı bir yineleyicinin özgün koleksiyonunda tutar `m_coll`, (bir kopya yapılmadı şekilde) ve bekleyen numaralandırıcılar varken, koleksiyon Canlı kalmasını sağlamak için koleksiyon nesnesinde bir COM başvurusu içerir.
+Yeni oluşturulan enumerator orijinal koleksiyonda bir yineleyici `m_coll`tutar, (bu yüzden hiçbir kopya yapılır) ve olağanüstü noumerators varken koleksiyonun canlı kalmasını sağlamak için koleksiyon nesnesi üzerinde bir COM referans tutar.
 
-##  <a name="m_coll"></a>  ICollectionOnSTLImpl::m_coll
+## <a name="icollectiononstlimplm_coll"></a><a name="m_coll"></a>ICollectionOnSTLImpl::m_coll
 
-Bu üye, koleksiyon tarafından temsil edilen öğeleri içerir.
+Bu üye, koleksiyon tarafından temsil edilen öğeleri tutar.
 
 ```
 CollType m_coll;
@@ -163,5 +163,5 @@ CollType m_coll;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATLCollections örnek](../../overview/visual-cpp-samples.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[ATLCollections Örnek](../../overview/visual-cpp-samples.md)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

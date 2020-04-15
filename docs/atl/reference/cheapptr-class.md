@@ -1,5 +1,5 @@
 ---
-title: CHeapPtr sınıfı
+title: CHeapPtr Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CHeapPtr
@@ -10,19 +10,19 @@ f1_keywords:
 helpviewer_keywords:
 - CHeapPtr class
 ms.assetid: e5c5bfd4-9bf1-4164-8a83-8155fe253454
-ms.openlocfilehash: 8cb35139e707d81a53edb762a2b7fc2ab41ff247
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a512aa974cb57072915f887f0c2a20ed1263ffa3
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258682"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81326912"
 ---
-# <a name="cheapptr-class"></a>CHeapPtr sınıfı
+# <a name="cheapptr-class"></a>CHeapPtr Sınıfı
 
-Yığın işaretçileri yönetmek için bir akıllı işaretçi sınıfının.
+Yığın işaretçileri yönetmek için akıllı bir işaretçi sınıfı.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,35 +34,35 @@ class CHeapPtr : public CHeapPtrBase<T, Allocator>
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Yığın üzerinde depolanan nesne türü.
+Yığında depolanacak nesne türü.
 
 *Ayırıcı*<br/>
-Bellek ayırma kullanmak için sınıf.
+Kullanılacak bellek ayırma sınıfı.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
 |[CHeapPtr::CHeapPtr](#cheapptr)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CHeapPtr::Allocate](#allocate)|Nesneleri depolamak için yığında bellek ayırmak için bu yöntemi çağırın.|
-|[CHeapPtr::Reallocate](#reallocate)|Yığın belleği yeniden tahsis etmek için bu yöntemi çağırın.|
+|[CHeapPtr::Ayırma](#allocate)|Nesneleri depolamak için yığın üzerinde bellek ayırmak için bu yöntemi arayın.|
+|[CHeapPtr::Yer tahsisi](#reallocate)|Yığındaki belleği yeniden tahsis etmek için bu yöntemi arayın.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CHeapPtr::operator =](#operator_eq)|Atama işleci.|
+|[CHeapPtr::operatör =](#operator_eq)|Atama işleci.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CHeapPtr` türetilen [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) ve varsayılan olarak CRT yordamlarını kullanır (içinde [CCRTAllocator](../../atl/reference/ccrtallocator-class.md)) ayırmak ve belleği boşaltmak için. Sınıf [CHeapPtrList](../../atl/reference/cheapptrlist-class.md) yığın işaretçileri listesini oluşturmak için kullanılabilir. Ayrıca bkz: [CComHeapPtr](../../atl/reference/ccomheapptr-class.md), COM bellek ayırma yordamlarını kullanır.
+`CHeapPtr`[CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) türetilmiştir ve varsayılan olarak crt yordamları kullanır [(CCRTAllocator)](../../atl/reference/ccrtallocator-class.md)ayırmak ve ücretsiz bellek. [CHeapPtrList](../../atl/reference/cheapptrlist-class.md) sınıfı yığın işaretçilerin listesini oluşturmak için kullanılabilir. [Ayrıca](../../atl/reference/ccomheapptr-class.md)bkz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -72,11 +72,11 @@ Bellek ayırma kullanmak için sınıf.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcore.h
+**Üstbilgi:** atlcore.h
 
-##  <a name="allocate"></a>  CHeapPtr::Allocate
+## <a name="cheapptrallocate"></a><a name="allocate"></a>CHeapPtr::Ayırma
 
-Nesneleri depolamak için yığında bellek ayırmak için bu yöntemi çağırın.
+Nesneleri depolamak için yığın üzerinde bellek ayırmak için bu yöntemi arayın.
 
 ```
 bool Allocate(size_t nElements = 1) throw();
@@ -85,21 +85,21 @@ bool Allocate(size_t nElements = 1) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nElements*<br/>
-Ayrılacak bellek miktarını hesaplamak için kullanılan öğelerin sayısı. Varsayılan değer 1’dir.
+Ayrılacak bellek miktarını hesaplamak için kullanılan öğe sayısı. Varsayılan değer 1’dir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan bellek başarılı olduysa true değerini döndürür, başarısız olduğunda false.
+Bellek başarıyla ayrıldıysa doğru döndürür, hata yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yığında depolamak için yeterli bellek ayırmak için kullanılan ayırıcı yordamları *nElement* oluşturucu içinde tanımlanan bir türden nesneleri.
+Ayırıcı yordamları, oluşturucuda tanımlanan bir türün *nElement* nesnelerini depolamak için yığında yeterli bellek ayırmak için kullanılır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#77](../../atl/codesnippet/cpp/cheapptr-class_1.cpp)]
 
-##  <a name="cheapptr"></a>  CHeapPtr::CHeapPtr
+## <a name="cheapptrcheapptr"></a><a name="cheapptr"></a>CHeapPtr::CHeapPtr
 
 Oluşturucu.
 
@@ -111,18 +111,18 @@ CHeapPtr(CHeapPtr<T, Allocator>& p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Varolan bir yığın işaretçisi veya `CHeapPtr`.
+*P*<br/>
+Varolan bir yığın `CHeapPtr`işaretçi veya .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yığın işaretçisi isteğe bağlı olarak var olan bir işaretçi kullanılarak oluşturulabilir veya `CHeapPtr` nesne. Bu durumda, yeni `CHeapPtr` nesne yeni işaretçi ve kaynaklarını yönetme sorumluluğunu varsayar.
+Yığın işaretçisi isteğe bağlı olarak varolan `CHeapPtr` bir işaretçi veya bir nesne kullanılarak oluşturulabilir. Bu nedenle, `CHeapPtr` yeni nesne yeni işaretçi ve kaynakları yönetmek için sorumluluk üstlenir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#78](../../atl/codesnippet/cpp/cheapptr-class_2.cpp)]
 
-##  <a name="operator_eq"></a>  CHeapPtr::operator =
+## <a name="cheapptroperator-"></a><a name="operator_eq"></a>CHeapPtr::operatör =
 
 Atama işleci.
 
@@ -133,20 +133,20 @@ CHeapPtr<T, Allocator>& operator=(
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
+*P*<br/>
 Varolan bir `CHeapPtr` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Güncelleştirilmiş bir başvuru döndürür `CHeapPtr`.
+Güncelleştirilmiş `CHeapPtr`bir başvuru verir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#80](../../atl/codesnippet/cpp/cheapptr-class_3.cpp)]
 
-##  <a name="reallocate"></a>  CHeapPtr::Reallocate
+## <a name="cheapptrreallocate"></a><a name="reallocate"></a>CHeapPtr::Yer tahsisi
 
-Yığın belleği yeniden tahsis etmek için bu yöntemi çağırın.
+Yığındaki belleği yeniden tahsis etmek için bu yöntemi arayın.
 
 ```
 bool Reallocate(size_t nElements) throw();
@@ -155,11 +155,11 @@ bool Reallocate(size_t nElements) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nElements*<br/>
-Ayrılacak bellek miktarını hesaplamak için kullanılan öğelerin yeni sayısı.
+Ayrılacak bellek miktarını hesaplamak için kullanılan yeni öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan bellek başarılı olduysa true değerini döndürür, başarısız olduğunda false.
+Bellek başarıyla ayrıldıysa doğru döndürür, hata yanlış.
 
 ### <a name="example"></a>Örnek
 
@@ -169,4 +169,4 @@ Ayrılan bellek başarılı olduysa true değerini döndürür, başarısız old
 
 [CHeapPtrBase Sınıfı](../../atl/reference/cheapptrbase-class.md)<br/>
 [CCRTAllocator Sınıfı](../../atl/reference/ccrtallocator-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

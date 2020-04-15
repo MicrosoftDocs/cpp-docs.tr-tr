@@ -1,5 +1,5 @@
 ---
-title: 'Özel durumlar: Özel durumlarda nesneleri serbest bırakma'
+title: 'Özel Durumlar: Özel Durumlarda Nesneleri Serbest Bırakma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - throwing exceptions [MFC], freeing objects in exceptions
@@ -11,58 +11,58 @@ helpviewer_keywords:
 - throwing exceptions [MFC], after destroying
 - exception handling [MFC], destroying objects
 ms.assetid: 3b14b4ee-e789-4ed2-b8e3-984950441d97
-ms.openlocfilehash: 23fe85018d1bc2c41371afec2ad6931755e4e682
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 49c7c6b0481f90baa23609c1bb1596deda49f7bd
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406073"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371995"
 ---
-# <a name="exceptions-freeing-objects-in-exceptions"></a>Özel durumlar: Özel durumlarda nesneleri serbest bırakma
+# <a name="exceptions-freeing-objects-in-exceptions"></a>Özel Durumlar: Özel Durumlarda Nesneleri Serbest Bırakma
 
-Bu makalede, gereksinim ve bir özel durum oluştuğunda nesneleri serbest bırakma yöntemi açıklanmaktadır. Konular şunlardır:
+Bu makalede, bir özel durum oluştuğunda nesneleri serbest etme gereksinimi ve yöntemi açıklanmaktadır. Konu başlıkları şunlardır:
 
-- [Yerel olarak özel durum işleme](#_core_handling_the_exception_locally)
+- [Özel durum yerel olarak işleme](#_core_handling_the_exception_locally)
 
-- [Nesnelerini yok etme sonra özel durumları atma](#_core_throwing_exceptions_after_destroying_objects)
+- [Nesneleri yok ettikten sonra özel durumlar atma](#_core_throwing_exceptions_after_destroying_objects)
 
-Framework tarafından veya uygulama kesme normal program akışınız tarafından oluşturulan bir özel durumlar. Bu nedenle, bir özel durum durumunda, düzgün bir şekilde bunları dispose, böylece nesneleri izlemenize çok önemlidir.
+Çerçeve veya uygulamanız tarafından atılan özel durumlar normal program akışını keser. Bu nedenle, bir özel durum atılırsa onları düzgün bir şekilde bertaraf böylece nesneleri yakından izlemek için çok önemlidir.
 
 Bunu yapmak için iki birincil yöntem vardır.
 
-- Yerel olarak kullanarak özel durumları işlemek **deneyin** ve **catch** anahtar sözcükler, ardından bir ifade ile tüm nesneler yok.
+- **Denemeler** ve anahtar kelimeleri **yakalamayı** kullanarak özel durumları yerel olarak ele alın ve ardından tüm nesneleri tek bir deyimle yok edin.
 
-- Herhangi bir nesneyi yok etmek **catch** önce daha fazla işleme için bloğun dışından özel durumu oluşturan blok.
+- Daha fazla kullanım için özel durumu bloğun dışına atmadan önce **catch** bloğundaki herhangi bir nesneyi yok edin.
 
-Bu iki yaklaşımı, sorunlu aşağıdaki örneğe çözümleri olarak aşağıda gösterilmiştir:
+Bu iki yaklaşım aşağıdaki sorunlu örneğe çözüm olarak aşağıda gösterilmiştir:
 
 [!code-cpp[NVC_MFCExceptions#14](../mfc/codesnippet/cpp/exceptions-freeing-objects-in-exceptions_1.cpp)]
 
-Yukarıda yazıldığı gibi `myPerson` tarafından bir özel durum oluşturulursa silinmeyecek `SomeFunc`. Yürütme normal işlev çıkışı ve nesneyi siler kodu atlayarak doğrudan sonraki dıştaki özel durum işleyicisine atlar. Nesne işaretçisi, işlev özel durum bırakır ve nesne tarafından kullanılan bellek, program çalışırken sürece hiçbir zaman kurtarılır kapsam dışına gider. Bu, bir bellek sızıntısı, Bellek Tanılama'yı kullanarak algılanır.
+Yukarıda yazıldığı `myPerson` gibi, bir özel durum tarafından `SomeFunc`atılırsa silinmez. Yürütme, normal işlev çıkışını ve nesneyi silen kodu atlayarak doğrudan bir sonraki dış özel durum işleyicisine atlar. Özel durum işlevden ayrıldığında nesnenin işaretçisi kapsam dışına çıkar ve program çalıştığı sürece nesnenin kapattığı bellek asla kurtarılamayamaz. Bu bir bellek sızıntısı; bellek tanılama kullanılarak tespit edilecektir.
 
-##  <a name="_core_handling_the_exception_locally"></a> Yerel olarak özel durum işleme
+## <a name="handling-the-exception-locally"></a><a name="_core_handling_the_exception_locally"></a>Özel Durum'u Yerel Olarak Işleme
 
-**Try/catch** paradigma bellek sızıntılarını önleme ve özel durumları oluştuğunda nesnelerinizi edilir sağlamaya yönelik bir savunma programlama yöntemi sağlar. Örneğin, bu makalenin önceki bölümlerinde gösterilen örnekte şu şekilde yazılması:
+**Try/catch** paradigması, bellek sızıntılarını önlemek ve özel durumlar oluştuğunda nesnelerinizin yok edilmesini sağlamak için bir savunma programlama yöntemi sağlar. Örneğin, bu makalede daha önce gösterilen örnek aşağıdaki gibi yeniden yazılabilir:
 
 [!code-cpp[NVC_MFCExceptions#15](../mfc/codesnippet/cpp/exceptions-freeing-objects-in-exceptions_2.cpp)]
 
-Bu yeni örnek özel durumu yakalar ve bunu yerel olarak işlemek için bir özel durum işleyicisi ayarlar. İşlev normal olarak çıkar ve nesnesini yok eder. Bu örnek önemli yönüyle istisna yakalamak için bir bağlam ile kurulur olan **try/catch** engeller. Bir yerel özel durum çerçeve işlev hiçbir zaman bir özel durum ve normalde çıkmak ve nesneyi yok etmek için bir fırsat yok anlarsınız.
+Bu yeni örnek, özel durumu yakalamak ve yerel olarak işlemek için bir özel durum işleyicisi ayarlar. Daha sonra işlevi normal olarak çıkar ve nesneyi yok eder. Bu örneğin önemli yönü, özel durum yakalamak için bir bağlam **try/catch** blokları ile kurulmuş olmasıdır. Yerel bir özel durum çerçevesi olmadan, işlev bir özel durum atıldığını asla bilemez ve normal bir şekilde çıkıp nesneyi yok etme şansına sahip olmaz.
 
-##  <a name="_core_throwing_exceptions_after_destroying_objects"></a> Nesnelerini yok etme sonra özel durumları atma
+## <a name="throwing-exceptions-after-destroying-objects"></a><a name="_core_throwing_exceptions_after_destroying_objects"></a>Nesneleri Yok Ettikten Sonra Özel Durumlar Atma
 
-Özel durumları işlemek için başka bir yolu, bunları sonraki dıştaki özel durum işleme bağlam açın geçirmektir. İçinde **catch** bloğu, yerel olarak ayrılan nesnelerin biraz temizlik yapmak ve sonra daha ayrıntılı işleme için özel durum.
+Özel durumları işlemenin başka bir yolu da bunları bir sonraki dış özel durum işleme bağlamına aktarmaktır. **Yakalama** bloğunuzda, yerel olarak tahsis edilen nesnelerinizin biraz temizlenmesini yapabilir ve daha fazla işlem için özel durumu atabilirsiniz.
 
-Oluşturma işlevi veya yığın nesnelerini ayırması gerekmeyebilir. İşlev her zaman yığın nesnesi normal durumda döndürmeden önce serbest bırakır, ardından işlevi de yığın nesnesi özel durum önce serbest. İşlev normalde nesne normal durumda döndürmeden önce serbest değil, diğer taraftan, daha sonra bir olay temelinde yığın nesnesi serbest olup olmadığını karar vermeniz gerekir.
+Atma işlevi yığın nesneleri dağıtmak için gerekebilir veya gerekmeyebilir. İşlev her zaman normal durumda dönmeden önce yığın nesnesi yer alıyorsa, o zaman işlev de özel durum atmadan önce yığın nesnesi üzerinde anlaşma gerekir. Diğer taraftan, işlev normal durumda dönmeden önce nesneyi normal olarak dağıtmıyorsa, yığın nesnesinin ayrılması gerekip gerekmediğine tek tek karar vermeniz gerekir.
 
-Aşağıdaki örnekte gösterildiği nasıl yerel olarak ayrılmış nesnelerin Temizlenen:
+Aşağıdaki örnek, yerel olarak ayrılan nesnelerin nasıl temizlenebileceğini gösterir:
 
 [!code-cpp[NVC_MFCExceptions#16](../mfc/codesnippet/cpp/exceptions-freeing-objects-in-exceptions_3.cpp)]
 
-Özel durum mekanizması, çerçeve nesneleri otomatik olarak kaldırır; Çerçeve nesnenin yok Edicisi olarak da adlandırılır.
+Özel durum mekanizması çerçeve nesnelerini otomatik olarak yeralır; çerçeve nesnesinin yıkıcısı da denir.
 
-Özel durumlar oluşturabilecek bir işlev çağırırsanız, kullanabileceğiniz **try/catch** bloğunun özel durumları yakalama ve oluşturduğunuz herhangi bir nesne yok etme olanağına sahip olduğundan emin olun. Özellikle, birçok MFC işlevi özel durumlar oluşturabilecek dikkat edin.
+Özel durumlar atabilen işlevleri çağırırsanız, özel durumları yakaladığından ve oluşturduğunuz nesneleri yok etme şansınız olduğundan emin olmak için **try/catch** bloklarını kullanabilirsiniz. Özellikle, birçok MFC işlevi özel durumlar atabilir unutmayın.
 
-Daha fazla bilgi için [özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md).
+Daha fazla bilgi için özel [durumlar: Özel Durumları Yakalama ve Silme](../mfc/exceptions-catching-and-deleting-exceptions.md)bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

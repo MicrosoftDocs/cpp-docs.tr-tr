@@ -1,5 +1,5 @@
 ---
-title: CInstantaneousTransition sınıfı
+title: CInstantaneousTransition Sınıf
 ms.date: 11/04/2016
 f1_keywords:
 - CInstantaneousTransition
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - CInstantaneousTransition [MFC], Create
 - CInstantaneousTransition [MFC], m_dblFinalValue
 ms.assetid: c3d5121f-2c6b-4221-9e57-10e082a31120
-ms.openlocfilehash: f3861bbbc0fc138dcb0f2a8b969ed9bde41335bd
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 15c471d64309cc1358c9c5b0b33577261dd877f6
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505931"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372433"
 ---
-# <a name="cinstantaneoustransition-class"></a>CInstantaneousTransition sınıfı
+# <a name="cinstantaneoustransition-class"></a>CInstantaneousTransition Sınıf
 
 Anlık bir geçişi kapsüller.
 
@@ -33,41 +33,41 @@ class CInstantaneousTransition : public CBaseTransition;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CInstantaneousTransition:: CInstantaneousTransition](#cinstantaneoustransition)|Bir geçiş nesnesi oluşturur ve son değerini başlatır.|
+|[CInstantaneousTransition::CInstantaneousTransition](#cinstantaneoustransition)|Bir geçiş nesnesi inşa eder ve son değerini başharfe alar.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CInstantaneousTransition:: Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. ( [CBaseTransition:: Create](../../mfc/reference/cbasetransition-class.md#create)geçersiz kılar.)|
+|[CInstantaneousTransition::Oluştur](#create)|Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. (CBaseTransition geçersiz [kılar::Oluştur](../../mfc/reference/cbasetransition-class.md#create).)|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CInstantaneousTransition:: m_dblFinalValue](#m_dblfinalvalue)|Geçişin sonundaki animasyon değişkeninin değeri.|
+|[CInstantaneousGeçiş::m_dblFinalValue](#m_dblfinalvalue)|Geçişin sonundaki animasyon değişkeninin değeri.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Anında geçiş sırasında animasyon değişkeninin değeri, geçerli değerinden belirtilen bir son değere anında değişir. Bu geçişin süresi her zaman sıfırdır. Tüm geçişler otomatik olarak temizlendiğinden, Yeni işleç kullanılarak ayrılmaları önerilir. Encapsulated IUIAnimationTransition COM nesnesi, NULL olana kadar CAnimationController:: AnimateGroup tarafından oluşturulur. Bu COM nesnesi oluşturulduktan sonra üye değişkenlerinin değiştirilmesinin etkisi olmaz.
+Anlık bir geçiş sırasında, animasyon değişkeninin değeri geçerli değerinden belirli bir son değere anında değişir. Bu geçişin süresi her zaman sıfırdır. Tüm geçişler otomatik olarak temizlenerek, operatör yeni kullanılarak ayrılması önerilir. Kapsüllü IUIAnimationTransition COM nesnesi CAnimationController tarafından oluşturulur::AnimateGroup, o zamana kadar NULL' s. Bu COM nesnesinin oluşturulduktan sonra üye değişkenleri değiştirmenin hiçbir etkisi yoktur.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
-[CInstantaneousTransition](../../mfc/reference/cinstantaneoustransition-class.md)
+[CInstantaneousGeçiş](../../mfc/reference/cinstantaneoustransition-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller. h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="cinstantaneoustransition"></a>CInstantaneousTransition:: CInstantaneousTransition
+## <a name="cinstantaneoustransitioncinstantaneoustransition"></a><a name="cinstantaneoustransition"></a>CInstantaneousTransition::CInstantaneousTransition
 
-Bir geçiş nesnesi oluşturur ve son değerini başlatır.
+Bir geçiş nesnesi inşa eder ve son değerini başharfe alar.
 
 ```
 CInstantaneousTransition(DOUBLE dblFinalValue);
@@ -75,12 +75,12 @@ CInstantaneousTransition(DOUBLE dblFinalValue);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dblfinaldeğeri*<br/>
+*dblFinalValue*<br/>
 Geçişin sonundaki animasyon değişkeninin değeri.
 
-##  <a name="create"></a>CInstantaneousTransition:: Create
+## <a name="cinstantaneoustransitioncreate"></a><a name="create"></a>CInstantaneousTransition::Oluştur
 
-Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
+Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
 
 ```
 virtual BOOL Create(
@@ -90,14 +90,14 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*pLibrary*<br/>
-Standart geçişlerin kitaplığını tanımlayan [ıuıanimationgeçişli Tionlibrary arabirimine](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)yönelik bir işaretçi.
+*pKütüphane*<br/>
+Standart geçişler kitaplığını tanımlayan [IUIAnimationTransitionLibrary arabirimine](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçiş başarıyla oluşturulursa doğru; Aksi halde yanlış.
+Geçiş başarıyla oluşturulursa DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="m_dblfinalvalue"></a>CInstantaneousTransition:: m_dblFinalValue
+## <a name="cinstantaneoustransitionm_dblfinalvalue"></a><a name="m_dblfinalvalue"></a>CInstantaneousGeçiş::m_dblFinalValue
 
 Geçişin sonundaki animasyon değişkeninin değeri.
 

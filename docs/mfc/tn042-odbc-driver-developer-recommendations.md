@@ -1,5 +1,5 @@
 ---
-title: 'TN042: ODBC sürücü Geliştirici önerileri'
+title: 'TN042: ODBC Sürücü Geliştirici Önerileri'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.odbc
@@ -8,113 +8,113 @@ helpviewer_keywords:
 - databases [MFC], ODBC
 - TN042
 ms.assetid: ecc6b5d9-f480-4582-9e22-8309fe561dad
-ms.openlocfilehash: 462f8229d995add79f48f34b7f81257710b4a8b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67f7a86a247b60be66dabb0a89f04d39ce76222b
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305417"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372133"
 ---
-# <a name="tn042-odbc-driver-developer-recommendations"></a>TN042: ODBC sürücü Geliştirici önerileri
+# <a name="tn042-odbc-driver-developer-recommendations"></a>TN042: ODBC Sürücü Geliştirici Önerileri
 
 > [!NOTE]
->  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
+> Aşağıdaki teknik not, çevrimiçi belgelere ilk olarak eklenmediğinden beri güncelleştirilemedi. Sonuç olarak, bazı yordamlar ve konular güncel veya yanlış olabilir. En son bilgiler için, çevrimiçi belge dizini ilgi alanı için arama nız önerilir.
 
-Bu Not, ODBC sürücüsü yazarların yönergeleri açıklar. Bu, genel gereksinimler ve varsayımlar MFC veritabanı sınıfları oluşturan ODBC işlevselliği ve çeşitli beklenen anlamsal Ayrıntılar açıklanmaktadır. Gereken üç desteklemek için sürücü işlevleri `CRecordset` açma modları (**forwardOnly**, **anlık görüntü** ve **dynaset**) açıklanmıştır.
+Bu not, ODBC sürücü yazarları için yönergeleri açıklar. MFC Veritabanı sınıflarının yaptığı ODBC işlevinin genel gereksinimlerini ve varsayımlarını ve beklenen çeşitli anlamsal ayrıntıları özetler. Üç `CRecordset` Açık modunu desteklemek için gerekli sürücü işlevi **(forwardOnly**, **anlık görüntü** ve **dynaset)** tanımlanır.
 
-## <a name="odbcs-cursor-library"></a>ODBC imleç kitaplığı
+## <a name="odbcs-cursor-library"></a>ODBC'nin İmleç Kütüphanesi
 
-MFC veritabanı sınıfları, çoğu düzey 1 ODBC sürücüleri tarafından sağlanan işlevselliği karşıladığından, çoğu durumda kullanıcıya işlevselliği sunar. Neyse ki, ODBC imleç kitaplığı, kendisine bir sürücü ve veritabanı sınıfları arasında katman ve bu ek işlevselliğinin otomatik olarak sağlar.
+MFC Veritabanı sınıfları, çoğu durumda çoğu düzey 1 ODBC sürücüsü tarafından sağlanan işlevselliği aşan işlevselliği kullanıcıya sunar. Neyse ki, ODBC'nin İmleç Kitaplığı veritabanı sınıfları ve sürücü arasında kendini katman ve otomatik olarak bu ek işlevselliğin çok sağlayacaktır.
 
-Örneğin, çoğu 1.0 sürücüleri geriye dönük kaydırma desteklemez. İmleç Kitaplığı, algılayabilir ve önbelleğe sürücüsünden satırları ve FETCH_PREV çağrılarında üzerinde istenen şekilde sunmak `SQLExtendedFetch`.
+Örneğin, çoğu 1.0 sürücüsü geriye kaydırmayı desteklemez. İmleç Kitaplığı bunu algılayabilir ve sürücüden satırları önbelleğe alabilir ve FETCH_PREV `SQLExtendedFetch`aramalarda istendiği gibi sunar.
 
-Başka bir önemli imleç kitaplığı bağımlılığı konumlandırılmış güncelleştirmeler örneğidir. Çoğu 1.0 sürücüleri konumlandırılmış güncelleştirmeler de yoktur ancak imleç kitaplığı, bir hedef satırı geçerli önbelleğe alınmış veri değerlerini, veya bir önbelleğe alınan zaman damgası değeri göre veri kaynağında tanımlamak ve update ifadeleriyle oluşturur.
+İmleç kitaplığı bağımlılığının bir diğer önemli örneği de konumlandırılmış güncelleştirmelerdir. Çoğu 1.0 sürücüsünün de konumlandırılmış güncelleştirmeleri yoktur, ancak imleç kitaplığı, geçerli önbelleğe alınmış veri değerlerini veya önbelleğe alınmış zaman damgası değerini temel alan veri kaynağında bir hedef satırı tanımlayan güncelleştirme deyimleri oluşturur.
 
-Sınıf kitaplığı hiçbir zaman birden çok satır kümelerini kullanır. Bu nedenle, birkaç `SQLSetPos` deyimleri 1 satır satır için her zaman uygulanır.
+Sınıf kitaplığı hiçbir zaman birden çok satır kümesini kullanmaz. Bu nedenle, `SQLSetPos` birkaç ifadeler her zaman satır kümesinin satır 1 uygulanır.
 
-## <a name="cdatabases"></a>CDatabases
+## <a name="cdatabases"></a>CVeritabanları
 
-Her `CDatabase` tek bir ayırır **HDBC**. (Varsa `CDatabase`'s `ExecuteSQL` işlevi kullanılan bir **HSTMT** geçici olarak ayrılır.) Bunu birden çok `CDatabase`'s, birden çok gerekli **HDBC**s başına **HENV** desteklenmesi gerekir.
+Her `CDatabase` biri tek bir **HDBC**ayırır. `CDatabase`('ın `ExecuteSQL` işlevi kullanılırsa, geçici olarak bir **HSTMT** ayrılır.) Bu nedenle, birden fazla `CDatabase`'s gerekiyorsa, **HENV** başına birden fazla **HDBC**s desteklenmelidir.
 
-Veritabanı sınıfları imleç kitaplığı gerektirir. Bu yansıtılan bir `SQLSetConnections` çağrı **SQL_ODBC_CURSORS**, **SQL_CUR_USE_ODBC**.
+Veritabanı sınıfları imleç kitaplığını gerektirir. Bu bir `SQLSetConnections` çağrı **SQL_ODBC_CURSORS**yansıtılır , **SQL_CUR_USE_ODBC**.
 
-`SQLDriverConnect`, **SQL_DRIVER_COMPLETE** tarafından kullanılan `CDatabase::Open` veri kaynağına bağlantı kurmak için.
+`SQLDriverConnect`, **SQL_DRIVER_COMPLETE** veri `CDatabase::Open` kaynağına bağlantı kurmak için kullanılır.
 
-Sürücü desteklemelidir `SQLGetInfo SQL_ODBC_API_CONFORMANCE`  >=  **SQL_OAC_LEVEL1**, `SQLGetInfo SQL_ODBC_SQL_CONFORMANCE`  >=  **SQL_OSC_MINIMUM**.
+Sürücü **SQL_OAC_LEVEL1** `SQLGetInfo SQL_ODBC_API_CONFORMANCE`  >= destek `SQLGetInfo SQL_ODBC_SQL_CONFORMANCE`  >= gerekir , **SQL_OSC_MINIMUM**.
 
-İçin desteklenen işlemler için sırayla `CDatabase` ve onun bağımlı kayıt kümelerini `SQLGetInfo SQL_CURSOR_COMMIT_BEHAVIOR` ve **SQL_CURSOR_ROLLBACK_BEHAVIOR** olmalıdır **SQL_CR_PRESERVE**. Aksi takdirde, işlem denetiminin gerçekleştirmeyi dener göz ardı edilir.
+Hareketlerin `CDatabase` ve bağımlı kayıt kümeleri için desteklenebilmesi için `SQLGetInfo SQL_CURSOR_COMMIT_BEHAVIOR` **ve SQL_CURSOR_ROLLBACK_BEHAVIOR** **SQL_CR_PRESERVE.** Aksi takdirde, işlem denetimi gerçekleştirme girişimleri yoksayılır.
 
-`SQLGetInfo SQL_DATA_SOURCE_READ_ONLY` desteklenmesi gerekir. "Y" döndürürse, veri kaynağı üzerinde hiçbir güncelleştirme işlemleri gerçekleştirilir.
+`SQLGetInfo SQL_DATA_SOURCE_READ_ONLY`desteklenmelidir. "Y" döndürürse, veri kaynağında güncelleştirme işlemi yapılmaz.
 
-Varsa `CDatabase` açıldığında salt okunur, okunur veri kaynağı ayarlama girişimi yalnızca oluşturulacak ile `SQLSetConnectOption SQL_ACCESS_MODE`, **SQL_MODE_READ_ONLY**.
+ReadOnly `CDatabase` açılırsa, yalnızca okunan veri kaynağını ayarlama girişimi `SQLSetConnectOption SQL_ACCESS_MODE`, **SQL_MODE_READ_ONLY**.
 
-Tanımlayıcıları Alıntısı gerektiriyorsa, bu bilgileri ile sürücüsünden döndürülmesi gereken bir `SQLGetInfo SQL_IDENTIFIER_QUOTE_CHAR` çağırın.
+Tanımlayıcılar teklif alınmasını gerektiriyorsa, bu bilgiler sürücüden bir `SQLGetInfo SQL_IDENTIFIER_QUOTE_CHAR` çağrıyla birlikte döndürülmelidir.
 
-Hata ayıklama amacıyla, `SQLGetInfo SQL_DBMS_VER` ve **SQL_DBMS_NAME** sürücüsünden alınır.
+Hata ayıklama amacıyla `SQLGetInfo SQL_DBMS_VER` ve **SQL_DBMS_NAME** sürücüden alınır.
 
-`SQLSetStmtOption SQL_QUERY_TIMEOUT` ve **SQL_ASYNC_ENABLE** üzerinde çağrılabilir bir `CDatabase`'s **HDBC**.
+`SQLSetStmtOption SQL_QUERY_TIMEOUT`ve **SQL_ASYNC_ENABLE** bir `CDatabase`'s **HDBC**çağrılabilir.
 
-`SQLError` tüm değişkenleri NULL ile çağrılabilir.
+`SQLError`null bağımsız değişkenleri veya tümü ile çağrılabilir.
 
-Elbette, `SQLAllocEnv`, `SQLAllocConnect`, `SQLDisconnect` ve `SQLFreeConnect` desteklenmesi gerekir.
+Tabii `SQLAllocEnv`ki, `SQLAllocConnect` `SQLDisconnect` , `SQLFreeConnect` , ve desteklenmelidir.
 
-## <a name="executesql"></a>ExecuteSQL
+## <a name="executesql"></a>Executesql
 
-Ayırma ve serbest bırakma geçici yanı sıra **HSTMT**, `ExecuteSQL` çağrıları `SQLExecDirect`, `SQLFetch`, `SQLNumResultCol` ve `SQLMoreResults`. `SQLCancel` üzerinde çağrılabilir **HSTMT**.
+Geçici bir **HSTMT**ayırma ve serbest `ExecuteSQL` ek `SQLExecDirect` `SQLFetch`olarak, aramalar , `SQLNumResultCol` , ve `SQLMoreResults`. `SQLCancel`**HSTMT'de**çağrılabilir.
 
-## <a name="getdatabasename"></a>GetDatabaseName
+## <a name="getdatabasename"></a>Veritabanı Adı Alma
 
-`SQLGetInfo SQL_DATABASE_NAME` olarak adlandırılır.
+`SQLGetInfo SQL_DATABASE_NAME`çağrılacaktır.
 
-## <a name="begintrans-committrans-rollback"></a>BeginTrans, CommitTrans, geri alma
+## <a name="begintrans-committrans-rollback"></a>BeginTrans, CommitTrans, Geri Alma
 
-`SQLSetConnectOption SQL_AUTOCOMMIT` ve `SQLTransact SQL_COMMIT`, **SQL_ROLLBACK** ve **SQL_AUTOCOMMIT** işlem talepleri yapılırsa çağrılır.
+`SQLSetConnectOption SQL_AUTOCOMMIT`ve `SQLTransact SQL_COMMIT`, **SQL_ROLLBACK** ve **SQL_AUTOCOMMIT** hareket istekleri yapılırsa çağrılacaktır.
 
 ## <a name="crecordsets"></a>CRecordsets
 
-`SQLAllocStmt`, `SQLPrepare`, `SQLExecute` (İçin `Open` ve `Requery`), `SQLExecDirect` (için güncelleştirme işlemleri) `SQLFreeStmt` desteklenmesi gerekir. `SQLNumResultCols` ve `SQLDescribeCol` çeşitli zamanlarda ayarlamak sonuçlarına çağırılacak olan.
+`SQLAllocStmt`, `SQLPrepare` `SQLExecute` (For `Open` `Requery`and `SQLExecDirect` ), (güncelleştirme `SQLFreeStmt` işlemleri için), desteklenmelidir. `SQLNumResultCols`ve `SQLDescribeCol` çeşitli zamanlarda belirlenen sonuçlar aranacaktır.
 
-`SQLSetParam` parametre verisi bağlama için yaygın olarak kullanılır ve **DATA_AT_EXEC** işlevselliği.
+`SQLSetParam`parametre verilerini bağlamak ve işlevselliği **DATA_AT_EXEC** için yaygın olarak kullanılır.
 
-`SQLBindCol` kaydetmek için yaygın olarak kullanılan sütun veri depolama konumları ODBC ile çıktı.
+`SQLBindCol`çıktı Sütun veri depolama konumlarını ODBC ile kaydetmek için yaygın olarak kullanılır.
 
-İki `SQLGetData` çağrıları almak için kullanılan **SQL_LONG_VARCHAR** ve **SQL_LONG_VARBINARY** veri. İlk çağrı çağırarak toplam uzunluğu sütun değerinin bulmayı dener `SQLGetData` cbMaxValue 0, ancak geçerli pcbValue. PcbValue tutuyorsa **SQL_NO_TOTAL**, bir özel durum oluşturulur. Aksi takdirde, bir **HGLOBAL** tahsis edilir ve başka bir `SQLGetData` tüm sonuç almak için yapılan çağrı.
+SQL_LONG_VARCHAR `SQLGetData` almak ve **SQL_LONG_VARCHAR** verileri **SQL_LONG_VARBINARY** için iki arama kullanılır. İlk arama, 0 cbMaxValue ile arayarak `SQLGetData` sütun değerinin toplam uzunluğunu bulmaya çalışır, ancak geçerli bir pcbValue ile. pcbValue **SQL_NO_TOTAL**tutarsa, bir özel durum atılır. Aksi takdirde, bir **HGLOBAL** ayrılır `SQLGetData` ve tüm sonucu almak için başka bir arama yapılır.
 
 ## <a name="updating"></a>Güncelleştirme
 
-Kötümser kilitleme istenip istenmediğini `SQLGetInfo SQL_LOCK_TYPES` sorgulanır. Varsa **SQL_LCK_EXCLUSIVE** olduğundan desteklenmiyor, bir özel durum oluşturulur.
+Kötümser kilitleme istenirse, `SQLGetInfo SQL_LOCK_TYPES` sorgulanır. **SQL_LCK_EXCLUSIVE** desteklenmezse, bir özel durum atılır.
 
-Güncelleştirmeye çalışırken bir `CRecordset` (**anlık görüntü** veya **dynaset**) ikinci bir neden olacak **HSTMT** ayrılacak. Desteklemeyen sürücüleri için ikinci **HSTMT**, imleç kitaplığı bu işlevselliği benzetimini yapacaksınız. Ne yazık ki bu bazen ilk geçerli sorgu zorlama gelebilir **HSTMT** ikinci işlenmeden önce tamamlanması için **HSTMT**kullanıcının isteği.
+Bir `CRecordset` **(anlık görüntü** veya **dynaset)** güncelleştirme girişimleri ikinci bir **HSTMT** tahsis edilmesine neden olur. İkinci **HSTMT'yi**desteklemeyen sürücüler için imleç kitaplığı bu işlevselliği simüle eder. Ne yazık ki, bu bazen ikinci **HSTMT**'in isteği işlemeden önce tamamlanması için ilk **HSTMT** geçerli sorgu zorlamak anlamına gelebilir.
 
-`SQLFreeStmt SQL_CLOSE` ve **SQL_RESET_PARAMS** ve `SQLGetCursorName` güncelleştirme işlemleri sırasında çağrılır.
+`SQLFreeStmt SQL_CLOSE`ve **SQL_RESET_PARAMS** SQL_RESET_PARAMS `SQLGetCursorName` ve güncelleştirme işlemleri sırasında çağrılacaktır.
 
-Varsa **CLongBinarys** içinde **outputColumns**, ODBC **DATA_AT_EXEC** işlevselliği desteklenmelidir. Bu döndüren içerir **SQL_NEED_DATA** gelen `SQLExecDirect`, `SQLParamData` ve `SQLPutData`.
+Çıktılarda **CLongBinarys** varsa **Sütunlar,** ODBC'nin **DATA_AT_EXEC** işlevselliği desteklenmelidir. Bu, **geri** dönen `SQLExecDirect` `SQLParamData` SQL_NEED_DATA `SQLPutData`ve .
 
-`SQLRowCount` Yalnızca 1 kaydı tarafından güncelleştirildiğini doğrulamak için yürütüldükten sonra çağrılır `SQLExecDirect`.
+`SQLRowCount`yalnızca 1 kaydın . `SQLExecDirect`
 
-## <a name="forwardonly-cursors"></a>ForwardOnly imleçler
+## <a name="forwardonly-cursors"></a>ForwardOnly Imleçler
 
-Yalnızca `SQLFetch` gereklidir `Move` operations. Unutmayın **forwardOnly** imleçler güncelleştirmeleri desteklemez.
+Yalnızca `SQLFetch` `Move` işlemler için gereklidir. **İleriyalnızca** imleçlerin güncelleştirmeleri desteklemediğini unutmayın.
 
-## <a name="snapshot-cursors"></a>Anlık görüntü imleçler
+## <a name="snapshot-cursors"></a>Anlık Görüntü İmleçleri
 
-Anlık görüntüsü işlevinin gerektirir `SQLExtendedFetch` destekler. Yukarıda belirtildiği gibi bir sürücü desteklemediği zaman ODBC imleç kitaplığı algılar `SQLExtendedFetch`ve gerekli destek sağlar.
+Anlık görüntü `SQLExtendedFetch` işlevi destek gerektirir. Yukarıda belirtildiği gibi, ODBC imleç kitaplığı, bir `SQLExtendedFetch`sürücünün desteklemediği ve gerekli desteği kendisinin sağladığı nı algılar.
 
-`SQLGetInfo`, **Çağırın** desteklemelidir **SQL_SO_STATIC**.
+`SQLGetInfo`, **SQL_SCROLL_OPTIONS** **SQL_SO_STATIC**desteklemelidir.
 
-## <a name="dynaset-cursors"></a>Dynaset imleçler
+## <a name="dynaset-cursors"></a>Dynaset İmlerler
 
-Bir dinamik açmak için gereken en düşük destek aşağıdadır:
+Aşağıda bir dinamit açmak için gereken minimum destek:
 
-`SQLGetInfo`, **SQL_ODBC_VER** döndürmelidir > "01".
+`SQLGetInfo`, **SQL_ODBC_VER** "01" > dönmelidir.
 
-`SQLGetInfo`, **Çağırın** desteklemelidir **SQL_SO_KEYSET_DRIVEN**.
+`SQLGetInfo`, **SQL_SCROLL_OPTIONS** **SQL_SO_KEYSET_DRIVEN**desteklemelidir.
 
-`SQLGetInfo`, **SQL_ROW_UPDATES** "Y" döndürmelidir.
+`SQLGetInfo`, **SQL_ROW_UPDATES** "Y"yi iade etmelidir.
 
-`SQLGetInfo`, **SQL_POSITIONED_UPDATES** desteklemelidir **SQL_PS_POSITIONED_DELETE** ve **SQL_PS_POSITIONED_UPDATE**.
+`SQLGetInfo`, **SQL_POSITIONED_UPDATES** **SQL_PS_POSITIONED_DELETE** ve **SQL_PS_POSITIONED_UPDATE**desteklemelidir.
 
-Kötümser kilitleme istenip istenmediğini Ayrıca, bir çağrı `SQLSetPos` IRow 1, FALSE fRefresh ve fLock **SQL_LCK_EXCLUSIVE** hale getirilir.
+Buna ek olarak, kötümser kilitleme istenirse, irow 1, fRefresh FALSE ve fLock `SQLSetPos` **SQL_LCK_EXCLUSIVE** ile bir çağrı yapılacaktır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: 'ActiveX denetim kapsayıcıları: Bir üye değişkenine ActiveX denetimi bağlama'
+title: 'ActiveX Denetim Kapsayıcıları: Bir Üye Değişkenine ActiveX Denetimi Bağlama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ActiveX control containers [MFC], accessing ActiveX controls
@@ -9,36 +9,36 @@ helpviewer_keywords:
 - member variables [MFC], ActiveX controls in project
 - ActiveX control containers [MFC], ActiveX controls as member variables
 ms.assetid: 7898a336-440d-4a60-be43-cb062b807aee
-ms.openlocfilehash: c6bc063875f2a31c582c9de32e24e7dfbc7826c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 620a9ec58b3a5a8fcdac63626b81fbc4620de399
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394916"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371613"
 ---
-# <a name="activex-control-containers-connecting-an-activex-control-to-a-member-variable"></a>ActiveX denetim kapsayıcıları: Bir üye değişkenine ActiveX denetimi bağlama
+# <a name="activex-control-containers-connecting-an-activex-control-to-a-member-variable"></a>ActiveX Denetim Kapsayıcıları: Bir Üye Değişkenine ActiveX Denetimi Bağlama
 
-ActiveX denetimi denetimi içeren bir iletişim kutusu sınıfı üyesi değişkeninin ile ilişkilendirmek için Denetim kapsayıcılı bir uygulama içinde ActiveX denetiminden erişmek için en kolay yolu var.
+ActiveX denetimine denetim kapsayıcısı uygulaması içinden erişmesinin en kolay yolu, ActiveX denetimini denetimiçeren iletişim sınıfının bir üye değişkeniyle ilişkilendirmektir.
 
 > [!NOTE]
->  Bu katıştırılmış bir denetimden kapsayıcı sınıfı içinde erişmenin tek yolu değildir, ancak bu makalenin amaçları için yeterli olur.
+> Bu, bir kapsayıcı sınıfı nın içinden katıştırılmış bir denetime erişmek için tek yol değildir, ancak bu makalenin amaçları için yeterlidir.
 
-### <a name="adding-a-member-variable-to-the-dialog-class"></a>İletişim kutusu sınıfı için bir üye değişkeni ekleme
+### <a name="adding-a-member-variable-to-the-dialog-class"></a>İletişim sınıfına üye değişken ekleme
 
-1. Sınıf Görünümü, ana iletişim kutusu sınıfı, kısayol menüsünü açmak için sağ tıklayın. Örneğin: `CContainerDlg`
+1. Sınıf Görünümü'nden, kısayol menüsünü açmak için ana iletişim sınıfına sağ tıklayın. Örneğin, `CContainerDlg`.
 
-1. Kısayol menüsünden tıklayın **Ekle** ardından **değişken Ekle**.
+1. Kısayol menüsünden **Ekle'yi** tıklatın ve ardından **Değişken Ekle'yi**tıklatın.
 
-1. Ekleme üye değişkeni Sihirbazı'nda tıklatın **denetim değişkeni**.
+1. Üye Değişken Ekle Sihirbazı'nda **Denetim değişkenini**tıklatın.
 
-1. İçinde **denetim kimliği** liste kutusunda, katıştırılmış ActiveX denetiminin denetim Kimliğini seçin. Örneğin: `IDC_CIRCCTRL1`
+1. Denetim **Kimliği** liste kutusunda, gömülü ActiveX denetiminin denetim kimliğini seçin. Örneğin, `IDC_CIRCCTRL1`.
 
-1. İçinde **değişken adı** kutusunda, bir ad girin.
+1. Değişken **Adı** kutusuna bir ad girin.
 
-   Örneğin, *m_circctl*.
+   Örneğin, *m_circctl.*
 
-1. Tıklayın **son** seçimlerinizi kabul etmek ve ekleme üye değişkeni sihirbazdan çıkmak için.
+1. Seçimlerinizi kabul etmek ve Üye Değişken Ekle Sihirbazı'ndan çıkmak için **Bitir'i** tıklatın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
+[ActiveX Kontrol Kapları](../mfc/activex-control-containers.md)

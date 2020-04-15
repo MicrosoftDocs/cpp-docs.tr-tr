@@ -1,5 +1,5 @@
 ---
-title: CD2DGeometry sınıfı
+title: CD2DGeometri Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CD2DGeometry
@@ -46,16 +46,16 @@ helpviewer_keywords:
 - CD2DGeometry [MFC], Widen
 - CD2DGeometry [MFC], m_pGeometry
 ms.assetid: 3f95054b-fdb8-4e87-87f2-9fc3df7279ec
-ms.openlocfilehash: 4549b2e7981d5f8493ddf9f24477e75a94ddde8b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2631005fcedfb8d5db69667e22c375f585b4f044
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405735"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369255"
 ---
-# <a name="cd2dgeometry-class"></a>CD2DGeometry sınıfı
+# <a name="cd2dgeometry-class"></a>CD2DGeometri Sınıfı
 
-ID2D1Geometry için sarmalayıcı.
+ID2D1Geometry için bir sarmalayıcı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,69 +67,69 @@ class CD2DGeometry : public CD2DResource;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DGeometry::CD2DGeometry](#cd2dgeometry)|CD2DGeometry bir nesne oluşturur.|
-|[CD2DGeometry:: ~ CD2DGeometry](#_dtorcd2dgeometry)|Yıkıcı. D2D geometri nesnesi yok ediliyorken çağırılır.|
+|[CD2DGeometri::CD2DGeometri](#cd2dgeometry)|BIR CD2DGeometri nesnesi oluşturuyor.|
+|[CD2DGeometri::~CD2DGeometri](#_dtorcd2dgeometry)|Yıkıcı. D2D geometri nesnesi yok edilirken çağrılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DGeometry::Attach](#attach)|Var olan kaynak arabirimi nesnesine ekler|
-|[CD2DGeometry::CombineWithGeometry](#combinewithgeometry)|Bu geometri belirtilen geometri ile birleştirir ve sonuç bir ID2D1SimplifiedGeometrySink depolar.|
-|[CD2DGeometry::CompareWithGeometry](#comparewithgeometry)|Bu geometry ve belirtilen geometri kesişimi açıklar. Karşılaştırma, belirtilen düzleştirme dayanıklılık kullanılarak gerçekleştirilir.|
-|[CD2DGeometry::ComputeArea](#computearea)|Sonra geometri bölümünü hesaplar tarafından belirtilen matris dönüştürülür ve belirtilen tolerans kullanarak düzleştirilmiş.|
-|[CD2DGeometry::ComputeLength](#computelength)|Her bir kesim gibi davranarak çizgiye unrolled geometri uzunluğunu hesaplar.|
-|[CD2DGeometry::ComputePointAtLength](#computepointatlength)|Sonra geometri boyunca belirtilen uzaklıkta noktası ve tanjantı vektör hesaplar tarafından belirtilen matris dönüştürülür ve belirtilen tolerans kullanarak düzleştirilmiş.|
-|[CD2DGeometry::Destroy](#destroy)|CD2DGeometry nesnesini yok eder. (Geçersiz kılmaları [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|
-|[CD2DGeometry::detach](#detach)|Kaynak arabirimi nesnesinden ayırır|
-|[CD2DGeometry::FillContainsPoint](#fillcontainspoint)|Geometri tarafından dolu alan belirtilen düzleştirme tolerans verilen belirtilen nokta içerip gösterir.|
-|[CD2DGeometry::get](#get)|Döndürür ID2D1Geometry arabirimi|
-|[CD2DGeometry::GetBounds](#getbounds)||
-|[CD2DGeometry::GetWidenedBounds](#getwidenedbounds)|Stil ve belirtilen darbe genişliği göre genişletilmiştir ve tarafından belirtilen matris dönüştürülmüş sonra geometri sınırları alır.|
-|[CD2DGeometry::IsValid](#isvalid)|Kaynak geçerlilik denetler (geçersiz kılmaları [CD2DResource::IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
-|[CD2DGeometry::Outline](#outline)|Ana hat geometrisi hesaplar ve sonucu bir ID2D1SimplifiedGeometrySink için yazar.|
-|[CD2DGeometry::Simplify](#simplify)|Yalnızca satırları ve (isteğe bağlı olarak) üçüncü derece Bezier eğrileri içerir ve sonuç için bir ID2D1SimplifiedGeometrySink yazan geometri basitleştirilmiş bir sürümünü oluşturur.|
-|[CD2DGeometry::StrokeContainsPoint](#strokecontainspoint)|Geometrisinin vuruş verilen belirtilen kontur kalınlığı, stil ve dönüştürme belirtilen nokta içerip içermediğini belirler.|
-|[CD2DGeometry::Tessellate](#tessellate)|Belirtilen matris kullanarak dönüştürüldükten sonra geometri kapsar ve belirtilen tolerans kullanarak düzleştirilmiş sargılı saat yönünde üçgenler kümesi oluşturur.|
-|[CD2DGeometry::Widen](#widen)|Geometri tarafından belirtilen vuruş widens ve sonra sonucu için bir ID2D1SimplifiedGeometrySink yazar tarafından belirtilen matris dönüştürülür ve belirtilen tolerans kullanarak düzleştirilmiş.|
+|[CD2DGeometri::Ekle](#attach)|Nesneye varolan kaynak arabirimi ataştırır|
+|[CD2DGeometry::Birleştirme Geometrisi](#combinewithgeometry)|Bu geometriyi belirtilen geometriyle birleştirir ve sonucu BIR ID2D1BasitleştirilmişGeometrySink'te depolar.|
+|[CD2DGeometry::Karşılaştırma Geometrisi](#comparewithgeometry)|Bu geometri ile belirtilen geometri arasındaki kesişimi açıklar. Karşılaştırma belirtilen düzleme toleransı kullanılarak gerçekleştirilir.|
+|[CD2DGeometri::ComputeArea](#computearea)|Geometrinin alanını, belirtilen matris tarafından dönüştürüldükten ve belirtilen tolerans kullanılarak düzleştirilmiş olarak hesaplar.|
+|[CD2DGeometri::ComputeLength](#computelength)|Geometrinin uzunluğunu, her bir parça bir satıra sarılmış gibi hesaplar.|
+|[CD2DGeometri::ComputePointAtLength](#computepointatlength)|Belirtilen matris tarafından dönüştürüldükten ve belirtilen tolerans kullanılarak düzleştirilmiş sonra geometri boyunca belirtilen mesafedeki nokta ve teğet vektörü hesaplar.|
+|[CD2DGeometri::Destroy](#destroy)|BIR CD2DGeometry nesnesini yok eder. (GEÇERSIZ Kılar [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|
+|[CD2DGeometri::Detach](#detach)|Kaynak arabirimini nesneden ayırıyor|
+|[CD2DGeometri::FillContainsPoint](#fillcontainspoint)|Geometri tarafından doldurulan alanın belirtilen düzleme toleransı göz önüne alındığında belirtilen noktayı içerip içermeyeceğini gösterir.|
+|[CD2DGeometry::Get](#get)|ID2D1Geometri arabirimi döndürür|
+|[CD2DGeometri::GetBounds](#getbounds)||
+|[CD2DGeometry::GetWidenedBounds](#getwidenedbounds)|Geometrinin sınırlarını, belirtilen kontur genişliği ve stili tarafından genişletildikten ve belirtilen matris tarafından dönüştürüldükten sonra alır.|
+|[CD2DGeometry::Geçersiz](#isvalid)|Kaynak geçerliliğini denetler [(CD2DResource geçersiz kılar::Geçerlidir](../../mfc/reference/cd2dresource-class.md#isvalid).)|
+|[CD2DGeometri::Anahat](#outline)|Geometrinin anahatlarını hesaplar ve sonucu bir ID2D1SimplifiedGeometrySink'e yazar.|
+|[CD2DGeometry::Basitleştir](#simplify)|Geometrinin yalnızca çizgileri ve (isteğe bağlı olarak) kübik Bezier eğrilerini içeren basitleştirilmiş bir sürümünü oluşturur ve sonucu bir ID2D1SimplifiedGeometrySink'e yazar.|
+|[CD2DGeometri::StrokeContainsPoint](#strokecontainspoint)|Geometrinin konturun belirtilen kontur kalınlığı, stili ve dönüşümü göz önüne alındığında belirtilen noktayı bulunup içermediğini belirler.|
+|[CD2DGeometri::Tessellate](#tessellate)|Belirtilen matris kullanılarak dönüştürüldükten ve belirtilen tolerans kullanılarak düzleştirilmiş sonra geometriyi kaplayan saat yönünde bir üçgen kümesi oluşturur.|
+|[CD2DGeometri::Genişlet](#widen)|Geometriyi belirtilen konturla genişletir ve belirtilen matris tarafından dönüştürüldükten ve belirtilen tolerans kullanılarak düzleştirildikten sonra sonucu BIR ID2D1BasitleştirilmişGeometrySink'e yazar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DGeometry::operator ID2D1Geometry *](#operator_id2d1geometry_star)|Döndürür ID2D1Geometry arabirimi|
+|[CD2DGeometri::operatör ID2D1Geometri*](#operator_id2d1geometry_star)|ID2D1Geometri arabirimi döndürür|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CD2DGeometry::m_pGeometry](#m_pgeometry)|Bir ID2D1Geometry işaretçisi.|
+|[CD2DGeometri::m_pGeometry](#m_pgeometry)|ID2D1Geometry için bir işaretçi.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CD2DResource](../../mfc/reference/cd2dresource-class.md)
+[CD2DKaynak](../../mfc/reference/cd2dresource-class.md)
 
 `CD2DGeometry`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget.h
 
-##  <a name="_dtorcd2dgeometry"></a>  CD2DGeometry:: ~ CD2DGeometry
+## <a name="cd2dgeometrycd2dgeometry"></a><a name="_dtorcd2dgeometry"></a>CD2DGeometri::~CD2DGeometri
 
-Yıkıcı. D2D geometri nesnesi yok ediliyorken çağırılır.
+Yıkıcı. D2D geometri nesnesi yok edilirken çağrılır.
 
 ```
 virtual ~CD2DGeometry();
 ```
 
-##  <a name="attach"></a>  CD2DGeometry::Attach
+## <a name="cd2dgeometryattach"></a><a name="attach"></a>CD2DGeometri::Ekle
 
-Var olan kaynak arabirimi nesnesine ekler
+Nesneye varolan kaynak arabirimi ataştırır
 
 ```
 void Attach(ID2D1Geometry* pResource);
@@ -137,12 +137,12 @@ void Attach(ID2D1Geometry* pResource);
 
 ### <a name="parameters"></a>Parametreler
 
-*pResource*<br/>
-Mevcut kaynak arabirimi. NULL olamaz
+*pKaynak*<br/>
+Varolan kaynak arabirimi. NULL olamaz
 
-##  <a name="cd2dgeometry"></a>  CD2DGeometry::CD2DGeometry
+## <a name="cd2dgeometrycd2dgeometry"></a><a name="cd2dgeometry"></a>CD2DGeometri::CD2DGeometri
 
-CD2DGeometry bir nesne oluşturur.
+BIR CD2DGeometri nesnesi oluşturuyor.
 
 ```
 CD2DGeometry(
@@ -153,14 +153,14 @@ CD2DGeometry(
 ### <a name="parameters"></a>Parametreler
 
 *pParentTarget*<br/>
-İşleme hedefi için bir işaretçi.
+İşleme hedefine işaretçi.
 
 *bAutoDestroy*<br/>
-Nesne sahibi tarafından (pParentTarget) edileceği gösterir.
+Nesnenin sahibi (pParentTarget) tarafından yok edileceğini gösterir.
 
-##  <a name="combinewithgeometry"></a>  CD2DGeometry::CombineWithGeometry
+## <a name="cd2dgeometrycombinewithgeometry"></a><a name="combinewithgeometry"></a>CD2DGeometry::Birleştirme Geometrisi
 
-Bu geometri belirtilen geometri ile birleştirir ve sonuç bir ID2D1SimplifiedGeometrySink depolar.
+Bu geometriyi belirtilen geometriyle birleştirir ve sonucu BIR ID2D1BasitleştirilmişGeometrySink'te depolar.
 
 ```
 BOOL CombineWithGeometry(
@@ -173,28 +173,28 @@ BOOL CombineWithGeometry(
 
 ### <a name="parameters"></a>Parametreler
 
-*inputGeometry*<br/>
-Bu örnekle birleştirmek için geometri.
+*inputGeometri*<br/>
+Bu örnekle birleştirecek geometri.
 
-*combineMode*<br/>
-Birleştirme işlemi gerçekleştirmek için türü.
+*Combinemode*<br/>
+Gerçekleştirmek için birleştirme işlemi türü.
 
 *inputGeometryTransform*<br/>
-Birleştirme öncesi inputGeometry uygulanacak dönüşüm.
+Birleştirmeden önce inputGeometry'a uygulanacak dönüştürme.
 
-*geometrySink*<br/>
+*geometriLavabo*<br/>
 Birleştirme işleminin sonucu.
 
-*flatteningTolerance*<br/>
-Uzaklık geometriler Çokgen yaklaşığını noktaları arasında en yüksek sınır. Küçük değerler, daha doğru sonuçlar ancak daha yavaş yürütme neden olur.
+*düzlemeToleransToleransı*<br/>
+Geometrilerin poligonal yaklaşıkdeğeri ndeki noktalar arasındaki mesafenin maksimum sınırları. Daha küçük değerler daha doğru sonuçlar üretir, ancak yürütmenin daha yavaş olmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="comparewithgeometry"></a>  CD2DGeometry::CompareWithGeometry
+## <a name="cd2dgeometrycomparewithgeometry"></a><a name="comparewithgeometry"></a>CD2DGeometry::Karşılaştırma Geometrisi
 
-Bu geometry ve belirtilen geometri kesişimi açıklar. Karşılaştırma, belirtilen düzleştirme dayanıklılık kullanılarak gerçekleştirilir.
+Bu geometri ile belirtilen geometri arasındaki kesişimi açıklar. Karşılaştırma belirtilen düzleme toleransı kullanılarak gerçekleştirilir.
 
 ```
 D2D1_GEOMETRY_RELATION CompareWithGeometry(
@@ -205,22 +205,22 @@ D2D1_GEOMETRY_RELATION CompareWithGeometry(
 
 ### <a name="parameters"></a>Parametreler
 
-*inputGeometry*<br/>
+*inputGeometri*<br/>
 Test etmek için geometri.
 
 *inputGeometryTransform*<br/>
-İnputGeometry için uygulanacak dönüşüm.
+inputGeometry'a uygulanacak dönüştürme.
 
-*flatteningTolerance*<br/>
-Uzaklık geometriler Çokgen yaklaşığını noktaları arasında en yüksek sınır. Küçük değerler, daha doğru sonuçlar ancak daha yavaş yürütme neden olur.
+*düzlemeToleransToleransı*<br/>
+Geometrilerin poligonal yaklaşıkdeğeri ndeki noktalar arasındaki mesafenin maksimum sınırları. Daha küçük değerler daha doğru sonuçlar üretir, ancak yürütmenin daha yavaş olmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="computearea"></a>  CD2DGeometry::ComputeArea
+## <a name="cd2dgeometrycomputearea"></a><a name="computearea"></a>CD2DGeometri::ComputeArea
 
-Sonra geometri bölümünü hesaplar tarafından belirtilen matris dönüştürülür ve belirtilen tolerans kullanarak düzleştirilmiş.
+Geometrinin alanını, belirtilen matris tarafından dönüştürüldükten ve belirtilen tolerans kullanılarak düzleştirilmiş olarak hesaplar.
 
 ```
 BOOL ComputeArea(
@@ -232,21 +232,21 @@ BOOL ComputeArea(
 ### <a name="parameters"></a>Parametreler
 
 *worldTransform*<br/>
-Kendi alanı bilgi işlem önce bu geometriye uygulanacak dönüşüm.
+Alanı hesaplamadan önce bu geometriye uygulanacak dönüşüm.
 
 *Alan*<br/>
-Bu yöntem döndürüldüğünde, dönüştürülen düzleştirilmiş bu geometri sürümü alanı için bir işaretçi içerir. Bu parametre için depolama ayırmanız gerekir.
+Bu yöntem döndüğünde, bu geometrinin dönüştürülmüş, düzleştirilmiş sürümünün alanına bir işaretçi içerir. Bu parametre için depolama alanı ayırmanız gerekir.
 
-*flatteningTolerance*<br/>
-Uzaklık geometri Çokgen yaklaşığını noktaları arasında en yüksek sınır. Küçük değerler, daha doğru sonuçlar ancak daha yavaş yürütme neden olur.
+*düzlemeToleransToleransı*<br/>
+Geometrinin poligonal yaklaşıkdeğerindeki noktalar arasındaki mesafenin maksimum sınırları. Daha küçük değerler daha doğru sonuçlar üretir, ancak yürütmenin daha yavaş olmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="computelength"></a>  CD2DGeometry::ComputeLength
+## <a name="cd2dgeometrycomputelength"></a><a name="computelength"></a>CD2DGeometri::ComputeLength
 
-Her bir kesim gibi davranarak çizgiye unrolled geometri uzunluğunu hesaplar.
+Geometrinin uzunluğunu, her bir parça bir satıra sarılmış gibi hesaplar.
 
 ```
 BOOL ComputeLength(
@@ -258,21 +258,21 @@ BOOL ComputeLength(
 ### <a name="parameters"></a>Parametreler
 
 *worldTransform*<br/>
-Geometriye uzunluğunu hesaplamak önce uygulanacak dönüşüm.
+Uzunlukhesaplamadan önce geometri uygulamak için dönüştürme.
 
-*Uzunluğu*<br/>
-Bu yöntem döndürüldüğünde, geometri uzunluğunu bir işaretçi içerir. Kapalı geometriler için örtük kapanış segment uzunluğu içerir. Bu parametre için depolama ayırmanız gerekir.
+*Uzun -luğu*<br/>
+Bu yöntem döndüğünde, geometrinin uzunluğuna işaretçi içerir. Kapalı geometriler için uzunluk örtülü bir kapanış kesimi içerir. Bu parametre için depolama alanı ayırmanız gerekir.
 
-*flatteningTolerance*<br/>
-Uzaklık geometri Çokgen yaklaşığını noktaları arasında en yüksek sınır. Küçük değerler, daha doğru sonuçlar ancak daha yavaş yürütme neden olur.
+*düzlemeToleransToleransı*<br/>
+Geometrinin poligonal yaklaşıkdeğerindeki noktalar arasındaki mesafenin maksimum sınırları. Daha küçük değerler daha doğru sonuçlar üretir, ancak yürütmenin daha yavaş olmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="computepointatlength"></a>  CD2DGeometry::ComputePointAtLength
+## <a name="cd2dgeometrycomputepointatlength"></a><a name="computepointatlength"></a>CD2DGeometri::ComputePointAtLength
 
-Sonra geometri boyunca belirtilen uzaklıkta noktası ve tanjantı vektör hesaplar tarafından belirtilen matris dönüştürülür ve belirtilen tolerans kullanarak düzleştirilmiş.
+Belirtilen matris tarafından dönüştürüldükten ve belirtilen tolerans kullanılarak düzleştirilmiş sonra geometri boyunca belirtilen mesafedeki nokta ve teğet vektörü hesaplar.
 
 ```
 BOOL ComputePointAtLength(
@@ -285,36 +285,36 @@ BOOL ComputePointAtLength(
 
 ### <a name="parameters"></a>Parametreler
 
-*Uzunluğu*<br/>
-Nokta ve bulmak için tanjant'in geometrisini boyunca uzaklığı. Bu uzaklığı daha az sonra 0 ise, bu yöntem, geometri ilk noktanın hesaplar. Bu uzaklık, geometri uzunluğundan büyükse, bu yöntem, geometri son noktanın hesaplar.
+*Uzun -luğu*<br/>
+Nokta ve teğet geometrisi boyunca mesafe bulmak. Bu uzaklık 0'dan azsa, bu yöntem geometrideki ilk noktayı hesaplar. Bu uzaklık geometrinin uzunluğundan büyükse, bu yöntem geometrideki son noktayı hesaplar.
 
 *worldTransform*<br/>
-Belirtilen nokta ve tanjantı hesaplama önce geometriye uygulanacak dönüşüm.
+Belirtilen nokta ve teğet hesaplamadan önce geometri uygulamak için dönüştürme.
 
-*Noktası*<br/>
-Geometri boyunca belirtilen uzaklık konumunda. Geometri boşsa, bu nokta NaN x ve y içeren değerleri.
+*Nokta*<br/>
+Geometri boyunca belirtilen mesafedeki konum. Geometri boşsa, bu nokta x ve y değerleri olarak NaN içerir.
 
-*unitTangentVector*<br/>
-Bu yöntem döndürüldüğünde, geometri boyunca belirtilen uzaklıkta Eğim vektör bir işaretçi içerir. Geometri boşsa, bu vektörü NaN x ve y içeren değerleri. Bu parametre için depolama ayırmanız gerekir.
+*unitTangentVektör*<br/>
+Bu yöntem döndüğünde, geometri boyunca belirtilen mesafede teğet vektöriçin bir işaretçi içerir. Geometri boşsa, bu vektör x ve y değerleri olarak NaN içerir. Bu parametre için depolama alanı ayırmanız gerekir.
 
-*flatteningTolerance*<br/>
-Uzaklık geometri Çokgen yaklaşığını noktaları arasında en yüksek sınır. Küçük değerler, daha doğru sonuçlar ancak daha yavaş yürütme neden olur.
+*düzlemeToleransToleransı*<br/>
+Geometrinin poligonal yaklaşıkdeğerindeki noktalar arasındaki mesafenin maksimum sınırları. Daha küçük değerler daha doğru sonuçlar üretir, ancak yürütmenin daha yavaş olmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="destroy"></a>  CD2DGeometry::Destroy
+## <a name="cd2dgeometrydestroy"></a><a name="destroy"></a>CD2DGeometri::Destroy
 
-CD2DGeometry nesnesini yok eder.
+BIR CD2DGeometry nesnesini yok eder.
 
 ```
 virtual void Destroy();
 ```
 
-##  <a name="detach"></a>  CD2DGeometry::detach
+## <a name="cd2dgeometrydetach"></a><a name="detach"></a>CD2DGeometri::Detach
 
-Kaynak arabirimi nesnesinden ayırır
+Kaynak arabirimini nesneden ayırıyor
 
 ```
 ID2D1Geometry* Detach();
@@ -322,11 +322,11 @@ ID2D1Geometry* Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılmış kaynak arabirim işaretçisi.
+Ayrılmış kaynak arabirimine işaretçi.
 
-##  <a name="fillcontainspoint"></a>  CD2DGeometry::FillContainsPoint
+## <a name="cd2dgeometryfillcontainspoint"></a><a name="fillcontainspoint"></a>CD2DGeometri::FillContainsPoint
 
-Geometri tarafından dolu alan belirtilen düzleştirme tolerans verilen belirtilen nokta içerip gösterir.
+Geometri tarafından doldurulan alanın belirtilen düzleme toleransı göz önüne alındığında belirtilen noktayı içerip içermeyeceğini gösterir.
 
 ```
 BOOL FillContainsPoint(
@@ -338,25 +338,25 @@ BOOL FillContainsPoint(
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*<br/>
-Test noktası.
+*Nokta*<br/>
+Test etmek için nokta.
 
 *worldTransform*<br/>
-Kapsama için test önce geometri uygulanacak dönüşüm.
+Çevreleme için test önce geometri uygulamak için dönüştürme.
 
-*içerir*<br/>
-Bu yöntem döndürüldüğünde, alan tarafından geometri doldurulmuş noktası içeriyorsa TRUE ise bir bool değeri içerir. Aksi takdirde FALSE. Bu parametre için depolama ayırmanız gerekir.
+*Içerir*<br/>
+Bu yöntem döndüğünde, geometri ile doldurulan alan nokta içeriyorsa TRUE olan bir bool değeri içerir; aksi takdirde, YANLIŞ. Bu parametre için depolama alanı ayırmanız gerekir.
 
-*flatteningTolerance*<br/>
-Sayısal doğrulukla yolu kesişimi ve kesin geometrik yol hesaplanır. Dolgu tarafından tolerans değerinden eksik noktaları hala içinde olarak kabul edilir. Küçük değerler, daha doğru sonuçlar ancak daha yavaş yürütme neden olur.
+*düzlemeToleransToleransı*<br/>
+Kesin geometrik yol ve yol kesişiminin hesaplandığı sayısal doğruluk. Toleranstan daha az dolgu eksik noktaları hala içinde kabul edilir. Daha küçük değerler daha doğru sonuçlar üretir, ancak yürütmenin daha yavaş olmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="get"></a>  CD2DGeometry::get
+## <a name="cd2dgeometryget"></a><a name="get"></a>CD2DGeometry::Get
 
-Döndürür ID2D1Geometry arabirimi
+ID2D1Geometri arabirimi döndürür
 
 ```
 ID2D1Geometry* Get();
@@ -364,9 +364,9 @@ ID2D1Geometry* Get();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ID2D1Geometry arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe çevrilmediyse ID2D1Geometri arabirimini işaretçi.
 
-##  <a name="getbounds"></a>  CD2DGeometry::GetBounds
+## <a name="cd2dgeometrygetbounds"></a><a name="getbounds"></a>CD2DGeometri::GetBounds
 
 ```
 BOOL GetBounds(
@@ -377,13 +377,13 @@ CD2DRectF& bounds) const;
 ### <a name="parameters"></a>Parametreler
 
 *worldTransform*<br/>
-*Sınırları*
+*Sınır -ları*
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-##  <a name="getwidenedbounds"></a>  CD2DGeometry::GetWidenedBounds
+## <a name="cd2dgeometrygetwidenedbounds"></a><a name="getwidenedbounds"></a>CD2DGeometry::GetWidenedBounds
 
-Stil ve belirtilen darbe genişliği göre genişletilmiştir ve tarafından belirtilen matris dönüştürülmüş sonra geometri sınırları alır.
+Geometrinin sınırlarını, belirtilen kontur genişliği ve stili tarafından genişletildikten ve belirtilen matris tarafından dönüştürüldükten sonra alır.
 
 ```
 BOOL GetWidenedBounds(
@@ -396,28 +396,28 @@ BOOL GetWidenedBounds(
 
 ### <a name="parameters"></a>Parametreler
 
-*strokeWidth*<br/>
-Tutarı anahattı konturlayarak geometri genişletebilirsiniz.
+*konturGenişliği*<br/>
+Anahatlarını okşayarak geometriyi genişletmek için hangi miktar.
 
 *strokeStyle*<br/>
-Geometri widens vuruş stili.
+Geometriyi genişleten konturun stili.
 
 *worldTransform*<br/>
-Geometriye geometri dönüştürüldükten sonra ve geometri konturlanan sonra uygulanacak dönüşüm.
+Geometri dönüştürüldükten ve geometri okşandıktan sonra geometriye uygulanacak dönüşüm.
 
-*Sınırları*<br/>
-Bu yöntem döndürüldüğünde, genişletti geometri sınırları içerir. Bu parametre için depolama ayırmanız gerekir.
+*Sınır -ları*<br/>
+Bu yöntem döndüğünde, genleştirilmiş geometrinin sınırlarını içerir. Bu parametre için depolama alanı ayırmanız gerekir.
 
-*flatteningTolerance*<br/>
-Uzaklık geometriler Çokgen yaklaşığını noktaları arasında en yüksek sınır. Küçük değerler, daha doğru sonuçlar ancak daha yavaş yürütme neden olur.
+*düzlemeToleransToleransı*<br/>
+Geometrilerin poligonal yaklaşıkdeğeri ndeki noktalar arasındaki mesafenin maksimum sınırları. Daha küçük değerler daha doğru sonuçlar üretir, ancak yürütmenin daha yavaş olmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="isvalid"></a>  CD2DGeometry::IsValid
+## <a name="cd2dgeometryisvalid"></a><a name="isvalid"></a>CD2DGeometry::Geçersiz
 
-Kaynak geçerlilik denetimleri
+Kaynak geçerliliğini denetler
 
 ```
 virtual BOOL IsValid() const;
@@ -425,19 +425,19 @@ virtual BOOL IsValid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaynak geçerli ise TRUE; Aksi durumda FALSE.
+Kaynak geçerliyse DOĞRU; aksi takdirde YANLIŞ.
 
-##  <a name="m_pgeometry"></a>  CD2DGeometry::m_pGeometry
+## <a name="cd2dgeometrym_pgeometry"></a><a name="m_pgeometry"></a>CD2DGeometri::m_pGeometry
 
-Bir ID2D1Geometry işaretçisi.
+ID2D1Geometry için bir işaretçi.
 
 ```
 ID2D1Geometry* m_pGeometry;
 ```
 
-##  <a name="operator_id2d1geometry_star"></a>  CD2DGeometry::operator ID2D1Geometry *
+## <a name="cd2dgeometryoperator-id2d1geometry"></a><a name="operator_id2d1geometry_star"></a>CD2DGeometri::operatör ID2D1Geometri*
 
-Döndürür ID2D1Geometry arabirimi
+ID2D1Geometri arabirimi döndürür
 
 ```
 operator ID2D1Geometry*();
@@ -445,11 +445,11 @@ operator ID2D1Geometry*();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ID2D1Geometry arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe çevrilmediyse ID2D1Geometri arabirimini işaretçi.
 
-##  <a name="outline"></a>  CD2DGeometry::Outline
+## <a name="cd2dgeometryoutline"></a><a name="outline"></a>CD2DGeometri::Anahat
 
-Ana hat geometrisi hesaplar ve sonucu bir ID2D1SimplifiedGeometrySink için yazar.
+Geometrinin anahatlarını hesaplar ve sonucu bir ID2D1SimplifiedGeometrySink'e yazar.
 
 ```
 BOOL Outline(
@@ -463,19 +463,19 @@ BOOL Outline(
 *worldTransform*<br/>
 Geometri anahattına uygulanacak dönüşüm.
 
-*geometrySink*<br/>
-İçin ana hat geometrisi dönüştürülmüş ID2D1SimplifiedGeometrySink eklenir.
+*geometriLavabo*<br/>
+Geometrinin anahat değiştirdiği ID2D1BasitleştirilmişGeometriSink.
 
-*flatteningTolerance*<br/>
-Uzaklık geometri Çokgen yaklaşığını noktaları arasında en yüksek sınır. Küçük değerler, daha doğru sonuçlar ancak daha yavaş yürütme neden olur.
+*düzlemeToleransToleransı*<br/>
+Geometrinin poligonal yaklaşıkdeğerindeki noktalar arasındaki mesafenin maksimum sınırları. Daha küçük değerler daha doğru sonuçlar üretir, ancak yürütmenin daha yavaş olmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="simplify"></a>  CD2DGeometry::Simplify
+## <a name="cd2dgeometrysimplify"></a><a name="simplify"></a>CD2DGeometry::Basitleştir
 
-Yalnızca satırları ve (isteğe bağlı olarak) üçüncü derece Bezier eğrileri içerir ve sonuç için bir ID2D1SimplifiedGeometrySink yazan geometri basitleştirilmiş bir sürümünü oluşturur.
+Geometrinin yalnızca çizgileri ve (isteğe bağlı olarak) kübik Bezier eğrilerini içeren basitleştirilmiş bir sürümünü oluşturur ve sonucu bir ID2D1SimplifiedGeometrySink'e yazar.
 
 ```
 BOOL Simplify(
@@ -487,25 +487,25 @@ BOOL Simplify(
 
 ### <a name="parameters"></a>Parametreler
 
-*simplificationOption*<br/>
-Basitleştirilmiş geometri eğrileri olup olmayacağını belirten bir değeri.
+*basitleştirmeSeçeneği*<br/>
+Basitleştirilmiş geometrinin eğriler içerip içermeyeceğini belirten bir değer.
 
 *worldTransform*<br/>
 Basitleştirilmiş geometriye uygulanacak dönüşüm.
 
-*geometrySink*<br/>
-ID2D1SimplifiedGeometrySink için Basitleştirilmiş geometri eklenir.
+*geometriLavabo*<br/>
+Basitleştirilmiş geometrinin eklendiği ID2D1Basitleştirilmiş GeometriSink.
 
-*flatteningTolerance*<br/>
-Uzaklık geometri Çokgen yaklaşığını noktaları arasında en yüksek sınır. Küçük değerler, daha doğru sonuçlar ancak daha yavaş yürütme neden olur.
+*düzlemeToleransToleransı*<br/>
+Geometrinin poligonal yaklaşıkdeğerindeki noktalar arasındaki mesafenin maksimum sınırları. Daha küçük değerler daha doğru sonuçlar üretir, ancak yürütmenin daha yavaş olmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="strokecontainspoint"></a>  CD2DGeometry::StrokeContainsPoint
+## <a name="cd2dgeometrystrokecontainspoint"></a><a name="strokecontainspoint"></a>CD2DGeometri::StrokeContainsPoint
 
-Geometrisinin vuruş verilen belirtilen kontur kalınlığı, stil ve dönüştürme belirtilen nokta içerip içermediğini belirler.
+Geometrinin konturun belirtilen kontur kalınlığı, stili ve dönüşümü göz önüne alındığında belirtilen noktayı bulunup içermediğini belirler.
 
 ```
 BOOL StrokeContainsPoint(
@@ -519,31 +519,31 @@ BOOL StrokeContainsPoint(
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*<br/>
-Kapsama için test noktası.
+*Nokta*<br/>
+Kapsama için test etmek için nokta.
 
-*strokeWidth*<br/>
-Uygulanacak kontur kalınlığı.
+*konturGenişliği*<br/>
+Kontur kalınlığı uygulanacak.
 
 *strokeStyle*<br/>
-Uygulanacak stroke'un stili.
+Uygulanacak kontur stili.
 
 *worldTransform*<br/>
 Konturlu geometriye uygulanacak dönüşüm.
 
-*içerir*<br/>
-Bu yöntem döndürüldüğünde, geometrisinin vuruş belirtilen nokta içermesi durumunda TRUE olarak ayarlayın. Bir Boole değeri içerir. Aksi takdirde FALSE. Bu parametre için depolama ayırmanız gerekir.
+*Içerir*<br/>
+Bu yöntem döndüğünde, geometrinin kontur belirtilen noktayı içeriyorsa TRUE için ayarlanmış bir boolean değeri içerir; aksi takdirde, YANLIŞ. Bu parametre için depolama alanı ayırmanız gerekir.
 
-*flatteningTolerance*<br/>
-Sayısal doğrulukla yolu kesişimi ve kesin geometrik yol hesaplanır. Tolerans değerinden tarafından vuruş eksik noktaları hala içinde olarak kabul edilir. Küçük değerler, daha doğru sonuçlar ancak daha yavaş yürütme neden olur.
+*düzlemeToleransToleransı*<br/>
+Kesin geometrik yol ve yol kesişiminin hesaplandığı sayısal doğruluk. Toleranstan daha az kontur eksik noktaları hala içinde kabul edilir. Daha küçük değerler daha doğru sonuçlar üretir, ancak yürütmenin daha yavaş olmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="tessellate"></a>  CD2DGeometry::Tessellate
+## <a name="cd2dgeometrytessellate"></a><a name="tessellate"></a>CD2DGeometri::Tessellate
 
-Belirtilen matris kullanarak dönüştürüldükten sonra geometri kapsar ve belirtilen tolerans kullanarak düzleştirilmiş sargılı saat yönünde üçgenler kümesi oluşturur.
+Belirtilen matris kullanılarak dönüştürüldükten ve belirtilen tolerans kullanılarak düzleştirilmiş sonra geometriyi kaplayan saat yönünde bir üçgen kümesi oluşturur.
 
 ```
 BOOL Tessellate(
@@ -555,21 +555,21 @@ BOOL Tessellate(
 ### <a name="parameters"></a>Parametreler
 
 *worldTransform*<br/>
-Bu geometrik veya NULL'e uygulanacak dönüşüm.
+Bu geometriye uygulanacak dönüştürme veya NULL.
 
-*tessellationSink*<br/>
-ID2D1TessellationSink olduğu grubun Mozaik eklenir.
+*tessellationLavabo*<br/>
+Tessellated eklenmiş olduğu ID2D1TessellationSink.
 
-*flatteningTolerance*<br/>
-Uzaklık geometri Çokgen yaklaşığını noktaları arasında en yüksek sınır. Küçük değerler, daha doğru sonuçlar ancak daha yavaş yürütme neden olur.
+*düzlemeToleransToleransı*<br/>
+Geometrinin poligonal yaklaşıkdeğerindeki noktalar arasındaki mesafenin maksimum sınırları. Daha küçük değerler daha doğru sonuçlar üretir, ancak yürütmenin daha yavaş olmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="widen"></a>  CD2DGeometry::Widen
+## <a name="cd2dgeometrywiden"></a><a name="widen"></a>CD2DGeometri::Genişlet
 
-Geometri tarafından belirtilen vuruş widens ve sonra sonucu için bir ID2D1SimplifiedGeometrySink yazar tarafından belirtilen matris dönüştürülür ve belirtilen tolerans kullanarak düzleştirilmiş.
+Geometriyi belirtilen konturla genişletir ve belirtilen matris tarafından dönüştürüldükten ve belirtilen tolerans kullanılarak düzleştirildikten sonra sonucu BIR ID2D1BasitleştirilmişGeometrySink'e yazar.
 
 ```
 BOOL Widen(
@@ -582,24 +582,24 @@ BOOL Widen(
 
 ### <a name="parameters"></a>Parametreler
 
-*strokeWidth*<br/>
-Geometri genişletmek üzere tutar.
+*konturGenişliği*<br/>
+Geometriyi genişletmek için hangi miktar.
 
 *strokeStyle*<br/>
-Geometri veya NULL uygulamak için vuruş stili.
+Geometriye uygulanacak kontur stili veya NULL.
 
 *worldTransform*<br/>
-Geometriye genişletme sonra uygulanacak dönüşüm.
+Genişlettikten sonra geometriye uygulanacak dönüştürme.
 
-*geometrySink*<br/>
-ID2D1SimplifiedGeometrySink için genişletmiştir geometri eklenir.
+*geometriLavabo*<br/>
+Genişleyen geometrinin eklendiği ID2D1Basitleştirilmiş GeometriSink.
 
-*flatteningTolerance*<br/>
-Uzaklık geometri Çokgen yaklaşığını noktaları arasında en yüksek sınır. Küçük değerler, daha doğru sonuçlar ancak daha yavaş yürütme neden olur.
+*düzlemeToleransToleransı*<br/>
+Geometrinin poligonal yaklaşıkdeğerindeki noktalar arasındaki mesafenin maksimum sınırları. Daha küçük değerler daha doğru sonuçlar üretir, ancak yürütmenin daha yavaş olmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

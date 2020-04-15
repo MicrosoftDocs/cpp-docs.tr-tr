@@ -1,5 +1,5 @@
 ---
-title: CBitmapRenderTarget sınıfı
+title: CBitmapRenderTarget Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CBitmapRenderTarget
@@ -18,16 +18,16 @@ helpviewer_keywords:
 - CBitmapRenderTarget [MFC], GetBitmapRenderTarget
 - CBitmapRenderTarget [MFC], m_pBitmapRenderTarget
 ms.assetid: c89a4437-812e-4943-acb2-b429a04cc4d2
-ms.openlocfilehash: 8c110ec8f7c232180bf054e8e4ba90a18f1902c1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6249c121f7bcca0675a8138baef0e2cdc9e632d8
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388443"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81352597"
 ---
-# <a name="cbitmaprendertarget-class"></a>CBitmapRenderTarget sınıfı
+# <a name="cbitmaprendertarget-class"></a>CBitmapRenderTarget Sınıfı
 
-ID2D1BitmapRenderTarget için sarmalayıcı.
+ID2D1BitmapRenderTarget için bir sarmalayıcı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,34 +39,34 @@ class CBitmapRenderTarget : public CRenderTarget;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CBitmapRenderTarget::CBitmapRenderTarget](#cbitmaprendertarget)|CBitmapRenderTarget bir nesne oluşturur.|
+|[CBitmapRenderTarget::CBitmapRenderTarget](#cbitmaprendertarget)|Bir CBitmapRenderTarget nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CBitmapRenderTarget::Attach](#attach)|Varolan ekler nesnesine hedef arabirimi oluşturma|
-|[CBitmapRenderTarget::Detach](#detach)|İşleme hedefi arabirimi nesnesinden ayırır|
-|[CBitmapRenderTarget::GetBitmap](#getbitmap)|Bu işleme hedefi için bit eşlem alır. Döndürülen bir bit eşlem operations çizmek için kullanılabilir.|
-|[CBitmapRenderTarget::GetBitmapRenderTarget](#getbitmaprendertarget)|Döndürür ID2D1BitmapRenderTarget arabirimi|
+|[CBitmapRenderTarget::Ekle](#attach)|Nesneye varolan render hedef arabirimi ataşır|
+|[CBitmapRenderHedef::Detach](#detach)|Ayırıcılar hedef arabirimi nesneden işleme|
+|[CBitmapRenderTarget::GetBitmap](#getbitmap)|Bu oluşturma hedefiiçin bit eşlemi alır. Döndürülen bit eşlemi çizim işlemleri için kullanılabilir.|
+|[CBitmapRenderTarget::GetBitmapRenderTarget](#getbitmaprendertarget)|ID2D1BitmapRenderTarget arabirimini döndürür|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CBitmapRenderTarget::operator ID2D1BitmapRenderTarget *](#operator_id2d1bitmaprendertarget_star)|Döndürür ID2D1BitmapRenderTarget arabirimi|
+|[CBitmapRenderTarget::operatör ID2D1BitmapRenderTarget*](#operator_id2d1bitmaprendertarget_star)|ID2D1BitmapRenderTarget arabirimini döndürür|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CBitmapRenderTarget::m_pBitmapRenderTarget](#m_pbitmaprendertarget)|ID2D1BitmapRenderTarget nesneye bir işaretçi.|
+|[CBitmapRenderHedef::m_pBitmapRenderTarget](#m_pbitmaprendertarget)|BIR ID2D1BitmapRenderTarget nesnesi için bir işaretçi.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CRenderTarget](../../mfc/reference/crendertarget-class.md)
 
@@ -74,11 +74,11 @@ class CBitmapRenderTarget : public CRenderTarget;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget.h
 
-##  <a name="attach"></a>  CBitmapRenderTarget::Attach
+## <a name="cbitmaprendertargetattach"></a><a name="attach"></a>CBitmapRenderTarget::Ekle
 
-Varolan ekler nesnesine hedef arabirimi oluşturma
+Nesneye varolan render hedef arabirimi ataşır
 
 ```
 void Attach(ID2D1BitmapRenderTarget* pTarget);
@@ -87,19 +87,19 @@ void Attach(ID2D1BitmapRenderTarget* pTarget);
 ### <a name="parameters"></a>Parametreler
 
 *pTarget*<br/>
-Mevcut işleme hedefi arabirimi. NULL olamaz
+Varolan render hedef arabirimi. NULL olamaz
 
-##  <a name="cbitmaprendertarget"></a>  CBitmapRenderTarget::CBitmapRenderTarget
+## <a name="cbitmaprendertargetcbitmaprendertarget"></a><a name="cbitmaprendertarget"></a>CBitmapRenderTarget::CBitmapRenderTarget
 
-CBitmapRenderTarget bir nesne oluşturur.
+Bir CBitmapRenderTarget nesnesi oluşturur.
 
 ```
 CBitmapRenderTarget();
 ```
 
-##  <a name="detach"></a>  CBitmapRenderTarget::Detach
+## <a name="cbitmaprendertargetdetach"></a><a name="detach"></a>CBitmapRenderHedef::Detach
 
-İşleme hedefi arabirimi nesnesinden ayırır
+Ayırıcılar hedef arabirimi nesneden işleme
 
 ```
 ID2D1BitmapRenderTarget* Detach();
@@ -107,11 +107,11 @@ ID2D1BitmapRenderTarget* Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi ayrılmış işleme hedefi arabirimi.
+Hedef arabirimini ayırılamak için işaretçi.
 
-##  <a name="getbitmap"></a>  CBitmapRenderTarget::GetBitmap
+## <a name="cbitmaprendertargetgetbitmap"></a><a name="getbitmap"></a>CBitmapRenderTarget::GetBitmap
 
-Bu işleme hedefi için bit eşlem alır. Döndürülen bir bit eşlem operations çizmek için kullanılabilir.
+Bu oluşturma hedefiiçin bit eşlemi alır. Döndürülen bit eşlemi çizim işlemleri için kullanılabilir.
 
 ```
 BOOL GetBitmap(CD2DBitmap& bitmap);
@@ -119,16 +119,16 @@ BOOL GetBitmap(CD2DBitmap& bitmap);
 
 ### <a name="parameters"></a>Parametreler
 
-*Bit eşlem*<br/>
-Bu yöntem döndürüldüğünde, bu işleme hedefi için geçerli bir bit eşlem içerir. Bu bit eşlem operations çizmek için kullanılabilir.
+*Bitmap*<br/>
+Bu yöntem döndüğünde, bu işleme hedefi için geçerli bit eşlemi içerir. Bu bit eşlemi çizim işlemleri için kullanılabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür.
+Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-##  <a name="getbitmaprendertarget"></a>  CBitmapRenderTarget::GetBitmapRenderTarget
+## <a name="cbitmaprendertargetgetbitmaprendertarget"></a><a name="getbitmaprendertarget"></a>CBitmapRenderTarget::GetBitmapRenderTarget
 
-Döndürür ID2D1BitmapRenderTarget arabirimi
+ID2D1BitmapRenderTarget arabirimini döndürür
 
 ```
 ID2D1BitmapRenderTarget* GetBitmapRenderTarget();
@@ -136,19 +136,19 @@ ID2D1BitmapRenderTarget* GetBitmapRenderTarget();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ID2D1BitmapRenderTarget arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe çevrilmediyse ID2D1BitmapRenderTarget arabirimine veya NULL'a işaretçi.
 
-##  <a name="m_pbitmaprendertarget"></a>  CBitmapRenderTarget::m_pBitmapRenderTarget
+## <a name="cbitmaprendertargetm_pbitmaprendertarget"></a><a name="m_pbitmaprendertarget"></a>CBitmapRenderHedef::m_pBitmapRenderTarget
 
-ID2D1BitmapRenderTarget nesneye bir işaretçi.
+BIR ID2D1BitmapRenderTarget nesnesi için bir işaretçi.
 
 ```
 ID2D1BitmapRenderTarget* m_pBitmapRenderTarget;
 ```
 
-##  <a name="operator_id2d1bitmaprendertarget_star"></a>  CBitmapRenderTarget::operator ID2D1BitmapRenderTarget *
+## <a name="cbitmaprendertargetoperator-id2d1bitmaprendertarget"></a><a name="operator_id2d1bitmaprendertarget_star"></a>CBitmapRenderTarget::operatör ID2D1BitmapRenderTarget*
 
-Döndürür ID2D1BitmapRenderTarget arabirimi
+ID2D1BitmapRenderTarget arabirimini döndürür
 
 ```
 operator ID2D1BitmapRenderTarget*();
@@ -156,7 +156,7 @@ operator ID2D1BitmapRenderTarget*();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ID2D1BitmapRenderTarget arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+Nesne henüz başharfe çevrilmediyse ID2D1BitmapRenderTarget arabirimine veya NULL'a işaretçi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

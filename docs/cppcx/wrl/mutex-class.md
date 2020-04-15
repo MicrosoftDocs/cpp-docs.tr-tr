@@ -13,16 +13,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Mutex::Mutex, constructor
 - Microsoft::WRL::Wrappers::Mutex::operator= operator
 ms.assetid: 682a0963-721c-46a2-8871-000e9997505b
-ms.openlocfilehash: 93de43ac7e5314501d0391e2cde862ba32be0b4b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36466bd00c5b100f20ee87173e68fdef4131ec23
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62379148"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371228"
 ---
 # <a name="mutex-class"></a>Mutex Sınıfı
 
-Paylaşılan bir kaynağa özel olarak denetleyen bir eşitleme nesnesi temsil eder.
+Yalnızca paylaşılan bir kaynağı denetleyen bir eşitleme nesnesi temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,29 +32,29 @@ class Mutex : public HandleT<HandleTraits::MutexTraits>;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Genel Typedefs
 
-Ad       | Açıklama
+Adı       | Açıklama
 ---------- | ------------------------------------------------------
-`SyncLock` | Zaman uyumlu kilitleri destekleyen bir sınıf için bir eşanlamlı.
+`SyncLock` | Senkron kilitleri destekleyen bir sınıfın eşanlamlısı.
 
-### <a name="public-constructor"></a>Genel oluşturucu
+### <a name="public-constructor"></a>Kamu Yapıcı
 
-Ad                   | Açıklama
+Adı                   | Açıklama
 ---------------------- | ------------------------------------------------
-[Mutex::mutex](#mutex) | Yeni bir örneğini başlatır `Mutex` sınıfı.
+[Mutex::Mutex](#mutex) | `Mutex` sınıfının yeni bir örneğini başlatır.
 
-### <a name="public-members"></a>Ortak üyeler
+### <a name="public-members"></a>Kamu Üyeleri
 
-Ad                 | Açıklama
+Adı                 | Açıklama
 -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------
-[Mutex::LOCK](#lock) | Geçerli nesne kadar bekler veya `Mutex` belirtilen tanıtıcısı, mutex veya belirtilen zaman aşımı aralığı geçtikten yayınlar ilişkili nesne.
+[Mutex::Kilit](#lock) | Geçerli nesnenin veya belirtilen `Mutex` tutamaçla ilişkili nesnenin mutex'i serbest bırakmasını veya belirtilen zaman aşımı aralığının geçmesini bekler.
 
-### <a name="public-operator"></a>Genel işleç
+### <a name="public-operator"></a>Kamu Operatörü
 
-Ad                                 | Açıklama
+Adı                                 | Açıklama
 ------------------------------------ | ---------------------------------------------------------------------------
-[Mutex::operator=](#operator-assign) | Atar (taşıma) belirtilen `Mutex` geçerli nesneye `Mutex` nesne.
+[Mutex::operator=](#operator-assign) | Belirtilen `Mutex` nesneyi geçerli `Mutex` nesneye atar (taşır).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -62,13 +62,13 @@ Ad                                 | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrappers.h
 
-**Namespace:** Microsoft::wrl:: Wrappers
+**Ad alanı:** Microsoft::WRL::Sarmalayıcılar
 
-## <a name="lock"></a>Mutex::LOCK
+## <a name="mutexlock"></a><a name="lock"></a>Mutex::Kilit
 
-Geçerli nesne kadar bekler veya `Mutex` belirtilen tanıtıcısı, mutex veya belirtilen zaman aşımı aralığı geçtikten yayınlar ilişkili nesne.
+Geçerli nesnenin veya belirtilen `Mutex` tutamaçla ilişkili nesnenin mutex'i serbest bırakmasını veya belirtilen zaman aşımı aralığının geçmesini bekler.
 
 ```cpp
 SyncLock Lock(
@@ -83,17 +83,17 @@ static SyncLock Lock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Milisaniye*<br/>
-Milisaniye cinsinden zaman aşımı aralığı. Varsayılan değer süresiz olarak bekler sonsuzdur.
+*milisaniye*<br/>
+Zaman aralığı, milisaniye cinsinden. Varsayılan değer, süresiz olarak bekleyen SONSUZ'dur.
 
-*h*<br/>
-Tanıtıcısını bir `Mutex` nesne.
+*H*<br/>
+Bir `Mutex` nesnenin tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="mutex"></a>Mutex::mutex
+## <a name="mutexmutex"></a><a name="mutex"></a>Mutex::Mutex
 
-Yeni bir örneğini başlatır `Mutex` sınıfı.
+`Mutex` sınıfının yeni bir örneğini başlatır.
 
 ```cpp
 explicit Mutex(
@@ -107,16 +107,16 @@ Mutex(
 
 ### <a name="parameters"></a>Parametreler
 
-*h*<br/>
-Tanıtıcı ya da bir tanıtıcı bir rvalue başvurusu için bir `Mutex` nesne.
+*H*<br/>
+Bir `Mutex` nesneye bir tanıtıcı veya bir tanıtıcıya rvalue-reference.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu başlatan bir `Mutex` nesnesinden belirtilen tanıtıcı. İkinci oluşturucu başlatan bir `Mutex` geçerli nesne belirtilen tanıtıcı, ve ardından mutex sahipliğini taşır `Mutex` nesne.
+İlk oluşturucu, belirtilen `Mutex` tutamacından bir nesneyi başharfe ait hale leştirir. İkinci oluşturucu bir `Mutex` nesneyi belirtilen tutamaçtan başharfe taşır ve sonra `Mutex` mutex'in sahipliğini geçerli nesneye taşır.
 
-## <a name="operator-assign"></a>Mutex::operator =
+## <a name="mutexoperator"></a><a name="operator-assign"></a>Mutex::operator=
 
-Atar (taşıma) belirtilen `Mutex` geçerli nesneye `Mutex` nesne.
+Belirtilen `Mutex` nesneyi geçerli `Mutex` nesneye atar (taşır).
 
 ```cpp
 Mutex& operator=(
@@ -126,13 +126,13 @@ Mutex& operator=(
 
 ### <a name="parameters"></a>Parametreler
 
-*h*<br/>
-Bir rvalue başvurusuna bir `Mutex` nesne.
+*H*<br/>
+Bir `Mutex` nesneye rvalue-reference.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir başvuru `Mutex` nesne.
+Geçerli `Mutex` nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için **taşıma semantiği** bölümünü [Rvalue başvuru Bildirimcisi: & &](../../cpp/rvalue-reference-declarator-amp-amp.md).
+Daha fazla bilgi [için, Rvalue Başvuru Bildirimcisi'nin ](../../cpp/rvalue-reference-declarator-amp-amp.md) **Anlamtaşı** bölümüne bakın: &&.

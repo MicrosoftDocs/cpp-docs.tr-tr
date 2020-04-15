@@ -1,110 +1,110 @@
 ---
-title: 'Windows Yuvaları: Bayt sıralama'
+title: 'Windows Yuvaları: Bayt Sıralama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - byte order issues in sockets programming
 - sockets [MFC], byte order issues
 - Windows Sockets [MFC], byte order issues
 ms.assetid: 8a787a65-f9f4-4002-a02f-ac25a5dace5d
-ms.openlocfilehash: ca572ad32a9a46756cacf0221d80b2953b710723
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 50548202483c4d9d4471ad2c600270c4df4503e7
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62217577"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371058"
 ---
-# <a name="windows-sockets-byte-ordering"></a>Windows Yuvaları: Bayt sıralama
+# <a name="windows-sockets-byte-ordering"></a>Windows Yuvaları: Bayt Sıralama
 
-Bu makale ve iki Yardımcısı makaleler Windows Sockets programlamada çeşitli sorunlar açıklanmaktadır. Bu makale, bayt sıralama kapsar. Diğer sorunlar makalelerde ele alınmıştır: [Windows Yuvaları: Engelleme](../mfc/windows-sockets-blocking.md) ve [Windows Yuvaları: Dizeleri dönüştürme](../mfc/windows-sockets-converting-strings.md).
+Bu makale ve iki yardımcı makale, Windows Soketleri programlamaçeşitli sorunları açıklar. Bu makalede bayt siparişi yer alıyor. Diğer konular makalelerde ele alınmıştır: [Windows Soketleri: Engelleme](../mfc/windows-sockets-blocking.md) ve [Windows Soketleri: Dizeleri dönüştürme.](../mfc/windows-sockets-converting-strings.md)
 
-Kullanıyorsanız veya sınıfından türetilir [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md), bu sorunları kendiniz yönetmeniz gerekecek. Kullanıyorsanız veya sınıfından türetilir [CSocket](../mfc/reference/csocket-class.md), MFC yönetir bunlar sizin için.
+[CAsyncSocket](../mfc/reference/casyncsocket-class.md)sınıfı kullanıyor veya bu türlerden türetilmiştir, bu sorunları kendiniz yönetmeniz gerekir. [CSocket](../mfc/reference/csocket-class.md)sınıfı kullanıyor veya bu sınıftan türetilmiştir, MFC bunları sizin için yönetir.
 
-## <a name="byte-ordering"></a>Bayt sıralama
+## <a name="byte-ordering"></a>Bayt Siparişi
 
-Farklı makine mimarileri bazen farklı bayt kullanarak verileri depolar. Örneğin, Intel tabanlı makineler Macintosh (Motorola) makineleri ters sırada verileri depolar. "Endian," adlı Intel bayt sırası Ayrıca ağ standart "big-Endian" sıranın tersidir. Aşağıdaki tabloda bu terimlerin açıklanmaktadır.
+Farklı makine mimarileri bazen farklı bayt siparişleri kullanarak veri depolar. Örneğin, Intel tabanlı makineler verileri Macintosh (Motorola) makinelerinin ters sırasına göre depolar. "Little-Endian" adı verilen Intel bayt sırası, ağ standardı "big-Endian" siparişinin de tersidir. Aşağıdaki tabloda bu terimler açıklanmaktadır.
 
-### <a name="big--and-little-endian-byte-ordering"></a>Büyük ve küçük-Endian bayt sıralama
+### <a name="big--and-little-endian-byte-ordering"></a>Büyük ve Little-Endian Bayt Sipariş
 
-|Bayt sıralama|Açıklama|
+|Bayt sıralama|Anlamı|
 |-------------------|-------------|
-|Büyük Endian|En önemli bir sözcük sol tarafta bayttır.|
-|Küçük Endian|En önemli bir sözcük sağ tarafta bayttır.|
+|Büyük Endian|En önemli bayt bir sözcüğün sol ucundadır.|
+|Küçük Endian|En önemli bayt bir sözcüğün sağ ucundadır.|
 
-Genellikle, ağ üzerinden gönderip veriler için bayt sırası dönüştürme hakkında endişelenmeniz gerekmez, ancak bazı durumlarda bayt dönüştürmeniz gerekir.
+Genellikle, ağ üzerinden gönderdiğiniz ve aldığınız veriler için bayt siparişi dönüştürme konusunda endişelenmenize gerek yoktur, ancak bayt siparişlerini dönüştürmeniz gereken durumlar vardır.
 
-## <a name="when-you-must-convert-byte-orders"></a>Bayt dönüştürürken gerekir
+## <a name="when-you-must-convert-byte-orders"></a>Bayt Siparişlerini Dönüştürmeniz Gerektiğinde
 
-Aşağıdaki durumlarda bayt siparişlerini dönüştürmek yapmanız gerekir:
+Aşağıdaki durumlarda bayt siparişlerini dönüştürmeniz gerekir:
 
-- Başka bir makineye gönderdiğiniz veri aksine bir ağ olarak yorumlanması gereken bilgileri geçiriliyor. Örneğin, geçebilir bağlantı noktaları ve adresleri, ağ anlamanız gerekir.
+- Başka bir makineye gönderdiğiniz verilerin aksine, ağ tarafından yorumlanması gereken bilgileri aktarıyorsun. Örneğin, ağın anlaması gereken bağlantı noktalarını ve adreslerini geçebilirsiniz.
 
-- Sunucu uygulaması ile iletişim kuran bir MFC uygulaması değil (ve kaynak kodu için erişiminiz yok). İki makine aynı bayt sıralama paylaşmıyorsa bu bayt sırası dönüştürmeleri için çağırır.
+- İletişim kurduğunuz sunucu uygulaması bir MFC uygulaması değildir (ve bunun için kaynak kodunuz yoktur). Bu, iki makine aynı bayt siparişini paylaşmazsa bayt sipariş ideşlerini çağırır.
 
-## <a name="when-you-do-not-have-to-convert-byte-orders"></a>Ne zaman Dönüştür bayt gerekmez
+## <a name="when-you-do-not-have-to-convert-byte-orders"></a>Byte Siparişlerini Dönüştürmek Zorunda Olmadığınız Zaman
 
-Aşağıdaki durumlarda bayt siparişlerini dönüştürme işi önleyebilirsiniz:
+Aşağıdaki durumlarda bayt siparişlerini dönüştürme işini önleyebilirsiniz:
 
-- Her iki ucunda makineler bayt takas değil kabul edebilir ve her iki makine aynı bayt sırası kullanın.
+- Her iki uçtaki makineler bayt ları değiştirmeme konusunda anlaşabiliyor ve her iki makine de aynı bayt siparişini kullanıyor.
 
-- Sunucu ile iletişim kuran bir MFC uygulamasıdır.
+- İletişim kurduğunuz sunucu bir MFC uygulamasıdır.
 
-- Bayt veya dönüştürmeniz gerekir olup olmadığını açıkça söyleyebilirsiniz şekilde sunucusu ile iletişim için kaynak kodu sahip.
+- İletişim kurduğunuz sunucu için kaynak kodunuz vardır, böylece bayt siparişlerini dönüştürmeniz gerekip gerekmediğini açıkça anlayabilirsiniz.
 
-- MFC sunucuya bağlantı noktası. Bunu yapmak oldukça kolaydır ve genellikle daha küçük, daha hızlı kod sonucudur.
+- Sunucuyu MFC'ye taşınabilirsiniz. Bunu yapmak oldukça kolaydır ve sonuç genellikle daha küçük, daha hızlı koddur.
 
-Çalışma [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md), kendiniz gerekli bayt sırası dönüştürmenin yönetmeniz gerekir. Windows Yuvaları "big-Endian" bayt sırası modeli standart hale getirir ve bu sırada ve diğerleri arasında dönüştürme için işlevler sağlar. [CArchive](../mfc/reference/carchive-class.md), ancak, kullanabileceğiniz [CSocket](../mfc/reference/csocket-class.md), ters ("Endian") siparişin kullanır ancak `CArchive` ayrıntılarının bayt sırası dönüştürme sizin için üstlenir. Bu standart uygulamalarınızda sıralama ya da Windows Sockets bayt sırası dönüştürme işlevleri kullanarak, kodunuzu daha taşınabilir hale getirebilir.
+[CAsyncSocket](../mfc/reference/casyncsocket-class.md)ile çalışarak, gerekli bayt sipariş dönüşümlerini kendiniz yönetmelisiniz. Windows Soketleri "big-Endian" bayt siparişi modelini standartlaştırır ve bu sipariş le diğerleri arasında dönüştürmek için işlevler sağlar. [CArchive](../mfc/reference/carchive-class.md), ancak, [CSocket](../mfc/reference/csocket-class.md)ile kullandığınız, tam tersi ("little-Endian") sipariş kullanır, ancak `CArchive` sizin için bayt sipariş dönüşümleri ayrıntıları ilgilenir. Uygulamalarınızda bu standart sıralamayı kullanarak veya Windows Sockets bayt siparişi dönüştürme işlevlerini kullanarak kodunuzu daha taşınabilir hale getirebilirsiniz.
 
-Her iki ucunda da iletişim yazarken MFC Yuvaları kullanma için ideal bir durumdur: MFC her iki uçta kullanma. Büyük olasılıkla ihtiyaç duyacağınız bayt-kendiniz arşiv nesnesine verileri geçirmeden önce değiştirme yönetmek iletişim gibi bir FTP sunucusuna MFC olmayan uygulamalar ile bir uygulama yazıyorsanız Windows Sockets dönüştürme rutinleri kullanarak**ntohs**, **ntohl**, **htons**, ve **htonl**. MFC olmayan uygulama ile iletişim kurulurken kullanılan bu işlevler bir örneği, bu makalenin sonraki bölümlerinde görünür.
+MFC soketlerini kullanmak için ideal durum, iletişimin her iki ucunu da yazarken: Her iki uçta da MFC kullanmak. FtP sunucusu gibi MFC olmayan uygulamalarla iletişim kuracak bir uygulama yazıyorsanız, windows sockets dönüşüm yordamlarını kullanarak arşiv nesnesine veri aktarmadan önce büyük olasılıkla bayt değiştirme işlemini yönetmeniz gerekir, windows soketleri dönüştürme yordamları **ntohs**, **ntohl**, **htons**, ve **htonl**. MFC olmayan bir uygulamayla iletişim kurmak için kullanılan bu işlevlerin bir örneği bu makalede daha sonra görünür.
 
 > [!NOTE]
->  Bir iletişim sonuna bir MFC uygulaması olmadığında, ayrıca türetilen C++ nesnelerinin akış kaçınmalısınız `CObject` , arşiv içine olduğundan alıcı işlemeye mümkün olmayacaktır. ' Ündeki nota bakın [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md).
+> İletişimin diğer ucu bir MFC uygulaması değilse, alıcı bunları işleyemediği `CObject` için arşivinize türetilen C++ nesnelerini akışından da kaçınmalısınız. Windows Soketleri'ndeki nota [bakın: Arşivli Soketleri Kullanma.](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-Bayt hakkında daha fazla bilgi için bkz: Windows SDK'da bulunan Windows yuva belirtimi.
+Bayt siparişleri hakkında daha fazla bilgi için Windows SDK'da bulunan Windows Soketleri belirtimine bakın.
 
-## <a name="a-byte-order-conversion-example"></a>Bayt sırası dönüştürme örneği
+## <a name="a-byte-order-conversion-example"></a>Bayt Sipariş Dönüştürme Örneği
 
-Aşağıdaki örnek, bir seri hale getirme işlevi için gösterir. bir `CSocket` bir arşiv kullanan nesne. Bayt sırası dönüştürme işlevleri Windows Sockets API'si kullanarak gösterilmektedir.
+Aşağıdaki örnek, arşiv kullanan bir `CSocket` nesne için bir serileştirme işlevini gösterir. Ayrıca, Windows Soketleri API'sında ki bayt siparişi dönüştürme işlevlerini de gösterir.
 
-Bu örnekte, kaynak kodu erişimi olan bir MFC olmayan sunucu uygulaması ile iletişim kuran istemci yazmakta olduğunuz bir senaryo gösterir. Bu senaryoda, MFC olmayan sunucunun standart ağ bayt sırası kullandığını varsaymalısınız. Buna karşılık, MFC istemci uygulamanızın kullandığı bir `CArchive` nesnesi ile bir `CSocket` nesnesi ve `CArchive` "little Endian" bayt sırası, standart ağ tersini kullanır.
+Bu örnek, kaynak koduna erişiminiz olmayan MFC olmayan bir sunucu uygulamasıyla iletişim kuran bir istemci yazdığınız bir senaryo sunar. Bu senaryoda, MFC olmayan sunucunun standart ağ bayt siparişini kullandığını varsaymanız gerekir. Buna karşılık, MFC istemci `CArchive` uygulamanız `CSocket` nesnesi `CArchive` olan bir nesne kullanır ve ağ standardının tam tersi olan "little-Endian" bayt sırasını kullanır.
 
-MFC olmayan sunucu ile iletişim kurmak planlama aşağıdakine benzer bir ileti paketi için yerleşik bir protokol sahip olduğunu varsayın:
+İletişim kurmayı planladığınız MFC olmayan sunucunun aşağıdaki gibi bir ileti paketi için oluşturulmuş bir protokolü olduğunu varsayalım:
 
 [!code-cpp[NVC_MFCSimpleSocket#5](../mfc/codesnippet/cpp/windows-sockets-byte-ordering_1.cpp)]
 
-MFC bağlamında, bu gibi ifade:
+MFC açısından, bu aşağıdaki gibi ifade edilecektir:
 
 [!code-cpp[NVC_MFCSimpleSocket#6](../mfc/codesnippet/cpp/windows-sockets-byte-ordering_2.cpp)]
 
-C++ ' ta bir **yapı** aslında bir sınıf olarak aynı işe yarar. `Message` Yapısına sahip olabilir, üye işlevleri gibi `Serialize` yukarıda bildirilen üye işlev. `Serialize` Üye işlevi şöyle görünebilir:
+C++'da **yapı** aslında sınıfla aynı şeydir. Yapı, `Message` yukarıda bildirilen üye işlev `Serialize` gibi üye işlevlere sahip olabilir. `Serialize` Üye işlev aşağıdaki gibi görünebilir:
 
 [!code-cpp[NVC_MFCSimpleSocket#7](../mfc/codesnippet/cpp/windows-sockets-byte-ordering_3.cpp)]
 
-Olduğundan Temizle uyuşmazlığı bayt MFC olmayan sunucu uygulamasının bir ucunda sıralama arasında veri bayt sırası dönüştürmeleri için bu örneği çağırır ve `CArchive` diğer ucundaki MFC istemci uygulamasında kullanılır. Örnek, çeşitli Windows Sockets sağlayan bayt sırası dönüştürme işlevleri gösterir. Aşağıdaki tabloda, bu işlevler açıklanmaktadır.
+Bu örnek, bir uçta MFC olmayan sunucu uygulamasının bayt siparişi ile diğer uçtaki MFC istemci uygulamanızda `CArchive` kullanılan bayt siparişi arasında açık bir uyumsuzluk olduğundan, verilerin bayt sıralı dönüşümlerini çağırır. Örnek, Windows Soketleri'nin sağladığı bayt siparişdönüştürme işlevlerinden birkaçını göstermektedir. Aşağıdaki tabloda bu işlevler açıklanmaktadır.
 
-### <a name="windows-sockets-byte-order-conversion-functions"></a>Windows Yuvaları: bayt sırası dönüştürme işlevleri
+### <a name="windows-sockets-byte-order-conversion-functions"></a>Windows Soketleri Bayt Sırası Dönüştürme Fonksiyonları
 
 |İşlev|Amaç|
 |--------------|-------------|
-|**ntohs**|16-bit miktarı konak bayt sırası (büyük-Endian Endian için) ağ bayt sırası Dönüştür.|
-|**ntohl**|Bir 32-bit miktarı konak bayt sırası (büyük-Endian Endian için) ağ bayt sırası Dönüştür.|
-|**Htons**|16-bit miktarı konak bayt sırası izlenecek ağ bayt sırası (Endian için büyük Endian) dönüştürün.|
-|**Htonl**|Bir 32-bit miktarı konak bayt sırası izlenecek ağ bayt sırası (Endian için büyük Endian) dönüştürün.|
+|**ntohs**|Ağ bayt siparişinden 16 bitlik bir miktarı bayt siparişini (big-Endian'dan little-Endian'a) barındırmak için dönüştürün.|
+|**ntohl**|32 bitlik bir miktarı ağ bayt siparişinden bayt siparişine (big-Endian to little-Endian) barındırmak için dönüştürün.|
+|**Htons**|16 bitlik bir miktarı ana bilgisayar bayt siparişinden ağ bayt siparişine (little-Endian to big-Endian) dönüştürün.|
+|**Htonl**|32 bitlik bir miktarı ana bilgisayar bayt siparişinden ağ bayt siparişine (little-Endian to big-Endian) dönüştürün.|
 
-Bu örnekte başka bir noktası iletişimi diğer ucundaki yuva uygulama bir MFC olmayan uygulama olduğunda, aşağıdaki gibi yapmaktan kaçının gerekir şöyledir:
+Bu örneğin bir diğer noktası, iletişimin diğer ucundaki soket uygulaması MFC olmayan bir uygulama olduğunda, aşağıdaki gibi bir şey yapmaktan kaçınmanız gerektiğidir:
 
 `ar << pMsg;`
 
-Burada `pMsg` sınıfından türetilen bir C++ nesne işaretçisidir `CObject`. Bir MFC uygulaması olsaydı olduğu gibi bu, ek MFC bilgi nesneleri ve sunucu ile ilişkilendirilen anlamayacaktır gönderir.
+sınıftan `pMsg` `CObject`türetilen bir C++ nesnesine işaretçi nerede. Bu, nesnelerle ilişkili ekstra MFC bilgileri gönderir ve sunucu, bir MFC uygulaması olsaydı olduğu gibi, bunu anlamaz.
 
-Daha fazla bilgi için bkz.:
+Daha fazla bilgi için bkz.
 
-- [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows Yuvaları: Arka plan](../mfc/windows-sockets-background.md)
+- [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)
 
-- [Windows Yuvaları: Stream yuva](../mfc/windows-sockets-stream-sockets.md)
+- [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

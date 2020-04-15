@@ -1,5 +1,5 @@
 ---
-title: CComPtrBase sınıfı
+title: CComPtrBase Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComPtrBase
@@ -17,16 +17,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComPtrBase class
 ms.assetid: 6dbe9543-dee8-4a97-b02f-dd3a25f4a1a0
-ms.openlocfilehash: 740920225fc513a869b4a92344f87004831e4768
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 7d450f7762b39d7fa8fae07230690eecb8edbb4d
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417882"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81327456"
 ---
-# <a name="ccomptrbase-class"></a>CComPtrBase sınıfı
+# <a name="ccomptrbase-class"></a>CComPtrBase Sınıfı
 
-Bu sınıf, COM tabanlı bellek yordamlarını kullanan akıllı işaretçi sınıfları için temel sağlar.
+Bu sınıf, COM tabanlı bellek yordamları kullanarak akıllı işaretçi sınıfları için bir temel sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,60 +37,60 @@ class CComPtrBase
 
 #### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Akıllı işaretçinin başvurduğu nesne türü.
+*T*<br/>
+Akıllı işaretçi tarafından başvurulacak nesne türü.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Genel Oluşturucular
+### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CComPtrBase:: ~ CComPtrBase](#dtor)|Yok edicisi.|
+|[CComPtrBase::~CComPtrBase](#dtor)|Yıkıcı.|
 
-### <a name="public-methods"></a>Genel Yöntemler
-
-|Adı|Açıklama|
-|----------|-----------------|
-|[CComPtrBase:: Advise](#advise)|`CComPtrBase`bağlantı noktası ve istemcinin havuzu arasında bir bağlantı oluşturmak için bu yöntemi çağırın.|
-|[CComPtrBase:: Attach](#attach)|Varolan bir işaretçinin sahipliğini almak için bu yöntemi çağırın.|
-|[CComPtrBase:: CoCreateInstance](#cocreateinstance)|Belirtilen sınıf KIMLIĞI veya program KIMLIĞIYLE ilişkili sınıfın bir nesnesini oluşturmak için bu yöntemi çağırın.|
-|[CComPtrBase:: CopyTo](#copyto)|`CComPtrBase` işaretçisini başka bir işaretçi değişkenine kopyalamak için bu yöntemi çağırın.|
-|[CComPtrBase::D etach](#detach)|Bir işaretçinin sahipliğini serbest bırakmak için bu yöntemi çağırın.|
-|[CComPtrBase:: ısequalobject](#isequalobject)|Belirtilen `IUnknown` `CComPtrBase` nesnesiyle ilişkili aynı nesneyi işaret edip ettiğini denetlemek için bu yöntemi çağırın.|
-|[CComPtrBase:: QueryInterface](#queryinterface)|Belirtilen arabirime bir işaretçi döndürmek için bu yöntemi çağırın.|
-|[CComPtrBase:: Release](#release)|Arabirimi yayınlamak için bu yöntemi çağırın.|
-|[CComPtrBase:: SetSite](#setsite)|`CComPtrBase` nesnesinin sitesini üst nesnenin `IUnknown` ayarlamak için bu yöntemi çağırın.|
-
-### <a name="public-operators"></a>Genel İşleçler
+### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CComPtrBase:: operator T *](#operator_t_star)|Atama işleci.|
-|[CComPtrBase:: işleci!](#operator_not)|NOT işleci.|
-|[CComPtrBase:: operator &](#operator_amp)|& İşleci.|
-|[CComPtrBase:: operator *](#operator_star)|\* işleci.|
-|[CComPtrBase:: operator <](#ccomptrbase__operator lt)|Küçüktür işleci.|
-|[CComPtrBase:: operator = =](#operator_eq_eq)|Eşitlik işleci.|
-|[CComPtrBase:: operator->](#operator_ptr)|Üye işaretçisi operatörü.|
+|[CComPtrBase::Tavsiye](#advise)|'Bağlantı noktası ve istemcinin `CComPtrBase`lavabosu arasında bir bağlantı oluşturmak için bu yöntemi arayın.|
+|[CComPtrBase::Ekle](#attach)|Varolan bir işaretçinin sahipliğini almak için bu yöntemi çağırın.|
+|[CComPtrBase::CoCreateInstance](#cocreateinstance)|Belirtilen sınıf kimliği veya Program Kimliği ile ilişkili sınıfın bir nesnesini oluşturmak için bu yöntemi çağırın.|
+|[CComPtrBase::CopyTo](#copyto)|İşaretçiyi başka `CComPtrBase` bir işaretçi değişkenine kopyalamak için bu yöntemi çağırın.|
+|[CComPtrBase::Detach](#detach)|Bir işaretçinin sahipliğini serbest bırakmak için bu yöntemi çağırın.|
+|[CComPtrBase::Eşit Nesne](#isequalobject)|Belirtilen `IUnknown` `CComPtrBase` noktalarınesneyle ilişkili aynı nesneye işaret edip etmeyin denetlemek için bu yöntemi çağırın.|
+|[CComPtrBase::QueryInterface](#queryinterface)|İşaretçiyi belirli bir arabirime döndürmek için bu yöntemi çağırın.|
+|[CComPtrBase::Yayın](#release)|Arabirimi serbest bırakmak için bu yöntemi arayın.|
+|[CComPtrBase::SetSite](#setsite)|`CComPtrBase` Nesnenin sitesini ana nesnenin nesnesine `IUnknown` ayarlamak için bu yöntemi çağırın.|
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Adı|Açıklama|
+|----------|-----------------|
+|[CComPtrBase::operatör T*](#operator_t_star)|Döküm operatörü.|
+|[CComPtrBase::operatör !](#operator_not)|NOT işleci.|
+|[CComPtrBase::operatör &](#operator_amp)|& operatörü.|
+|[CComPtrBase::operatör *](#operator_star)|\* işleci.|
+|[CComPtrBase::operatör <](#ccomptrbase__operator lt)|Operatörden daha az.|
+|[CComPtrBase::operatör ==](#operator_eq_eq)|Eşitlik operatörü.|
+|[CComPtrBase::operatör ->](#operator_ptr)|Üye işaretçisi işleci.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CComPtrBase::p](#p)|İşaretçi verisi üye değişkeni.|
+|[CComPtrBase::p](#p)|İşaretçi veri üye değişkeni.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, [CComQIPtr](../../atl/reference/ccomqiptr-class.md) ve [CCOMPTR](../../atl/reference/ccomptr-class.md)gibi com bellek yönetimi yordamlarını kullanan diğer akıllı işaretçiler için temel sağlar. Türetilmiş sınıflar kendi oluşturucularını ve işleçlerini ekler, ancak `CComPtrBase`tarafından sunulan yöntemleri kullanır.
+Bu sınıf, [CComQIPtr](../../atl/reference/ccomqiptr-class.md) ve [CComPtr](../../atl/reference/ccomptr-class.md)gibi COM bellek yönetimi yordamları kullanan diğer akıllı işaretçiler için temel sağlar. Türetilen sınıflar kendi oluşturucularını ve işleçlerini ekler, `CComPtrBase`ancak '.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcomclı. h
+**Üstbilgi:** atlcomcli.h
 
-##  <a name="advise"></a>CComPtrBase:: Advise
+## <a name="ccomptrbaseadvise"></a><a name="advise"></a>CComPtrBase::Tavsiye
 
-`CComPtrBase`bağlantı noktası ve istemcinin havuzu arasında bir bağlantı oluşturmak için bu yöntemi çağırın.
+'Bağlantı noktası ve istemcinin `CComPtrBase`lavabosu arasında bir bağlantı oluşturmak için bu yöntemi arayın.
 
 ```
 HRESULT Advise(
@@ -101,24 +101,24 @@ HRESULT Advise(
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnk dili*<br/>
-İstemcinin `IUnknown`bir işaretçisi.
+*Punk*<br/>
+İstemci için bir `IUnknown`işaretçi .
 
-*'si*<br/>
-Bağlantı noktasının GUID 'SI. Genellikle, bu bağlantı noktası tarafından yönetilen giden arabirimle aynıdır.
+*ııd*<br/>
+Bağlantı noktasının GUID'i. Genellikle, bu bağlantı noktası tarafından yönetilen giden arabirim aynıdır.
 
-*PDW*<br/>
-Bağlantıyı benzersiz bir şekilde tanımlayan tanımlama bilgisine yönelik bir işaretçi.
+*Pdw*<br/>
+Bağlantıyı benzersiz olarak tanımlayan çerez için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [AtlAdvise](connection-point-global-functions.md#atladvise) .
+Daha fazla bilgi için [AtlAdvise'a](connection-point-global-functions.md#atladvise) bakın.
 
-##  <a name="attach"></a>CComPtrBase:: Attach
+## <a name="ccomptrbaseattach"></a><a name="attach"></a>CComPtrBase::Ekle
 
 Varolan bir işaretçinin sahipliğini almak için bu yöntemi çağırın.
 
@@ -128,16 +128,16 @@ void Attach(T* p2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*P2*<br/>
-`CComPtrBase` nesne Bu işaretçinin sahipliğini alır.
+*p2*<br/>
+Nesne `CComPtrBase` bu işaretçinin sahipliğini alır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Attach` var olan [CComPtrBase::p](#p) üye değişkeninde [CComPtrBase:: Release](#release) öğesini çağırır ve sonra da `CComPtrBase::p`*P2* atar. Bir `CComPtrBase` nesnesi bir işaretçinin sahipliğini aldığında, nesnedeki başvuru sayısı 0 ' a gittiğinde işaretçiyi ve ayrılan tüm verileri silecek işaretçi üzerinde `Release` otomatik olarak çağırır.
+`Attach`[CComPtrBase çağırır::Mevcut](#release) [CComPtrBase::p](#p) üye değişkenini serbest bırakın `CComPtrBase::p`ve sonra *p2'yi* . Bir `CComPtrBase` nesne bir işaretçinin sahipliğini aldığında, nesneüzerindeki başvuru sayısı 0'a giderse işaretçiyi ve ayrılan verileri silecek olan işaretçiyi otomatik olarak çağırır. `Release`
 
-##  <a name="dtor"></a>CComPtrBase:: ~ CComPtrBase
+## <a name="ccomptrbaseccomptrbase"></a><a name="dtor"></a>CComPtrBase::~CComPtrBase
 
-Yok edicisi.
+Yıkıcı.
 
 ```
 ~CComPtrBase() throw();
@@ -145,11 +145,11 @@ Yok edicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CComPtrBase`tarafından işaret edilen arabirimi yayınlar.
+Tarafından işaret edilen `CComPtrBase`arabirimi serbest bırakır.
 
-##  <a name="cocreateinstance"></a>CComPtrBase:: CoCreateInstance
+## <a name="ccomptrbasecocreateinstance"></a><a name="cocreateinstance"></a>CComPtrBase::CoCreateInstance
 
-Belirtilen sınıf KIMLIĞI veya program KIMLIĞIYLE ilişkili sınıfın bir nesnesini oluşturmak için bu yöntemi çağırın.
+Belirtilen sınıf kimliği veya Program Kimliği ile ilişkili sınıfın bir nesnesini oluşturmak için bu yöntemi çağırın.
 
 ```
 HRESULT CoCreateInstance(
@@ -165,31 +165,31 @@ HRESULT CoCreateInstance(
 
 ### <a name="parameters"></a>Parametreler
 
-*Szprogıd*<br/>
-CLSID 'yi kurtarmak için kullanılan bir ProgID 'nin işaretçisi.
+*szProgID*<br/>
+CLSID'yi kurtarmak için kullanılan progID işaretçisi.
 
 *pUnkOuter*<br/>
-NULL ise, nesnenin bir toplama kapsamında oluşturulmadığını gösterir. NULL olmayan ise, toplama nesnesinin `IUnknown` arabirimine yönelik bir işaretçidir (denetim `IUnknown`).
+NULL ise, nesnenin bir agreganın parçası olarak oluşturulmadığını gösterir. NULL yoksa, toplam nesnenin `IUnknown` arabirimine (denetleme) işaretçidir. `IUnknown`
 
-*dwClsContext*<br/>
+*dwClsBağlam*<br/>
 Yeni oluşturulan nesneyi yöneten kodun çalışacağı bağlam.
 
-*rclsıd*<br/>
-Nesneyi oluşturmak için kullanılacak veriler ve kodla ilişkili CLSID.
+*rclsid*<br/>
+CLSID, nesneyi oluşturmak için kullanılacak veri ve kodla ilişkilidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı veya REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING veya E_NOINTERFACE hata durumunda döndürür. Bu hataların açıklaması için bkz. [CoCreateClassInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) and [Clsidfromprogıd](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromprogid) .
+Başarı veya REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING veya başarısızlık E_NOINTERFACE S_OK verir. Bu hataların açıklaması için [CoCreateClassInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) ve [CLSIDFromProgID'e](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromprogid) bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntemin ilk formu çağrılırsa, CLSID 'yi kurtarmak için [Clsidfromprogıd](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromprogid) kullanılır. Her iki form da [CoCreateClassInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)öğesini çağırır.
+Yöntemin ilk formu çağrılırsa, CLSID kurtarmak için [CLSIDFromProgID](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromprogid) kullanılır. Her iki form da [cocreateclassinstance'ı arayarak.](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
 
-Hata ayıklama yapılarında, [CComPtrBase::P](#p) null değerine eşit değilse bir onaylama hatası oluşur.
+Hata ayıklama oluştururda, [CComPtrBase::p](#p) NULL'a eşit değilse bir tasnif hatası oluşur.
 
-##  <a name="copyto"></a>CComPtrBase:: CopyTo
+## <a name="ccomptrbasecopyto"></a><a name="copyto"></a>CComPtrBase::CopyTo
 
-`CComPtrBase` işaretçisini başka bir işaretçi değişkenine kopyalamak için bu yöntemi çağırın.
+İşaretçiyi başka `CComPtrBase` bir işaretçi değişkenine kopyalamak için bu yöntemi çağırın.
 
 ```
 HRESULT CopyTo(T** ppT) throw();
@@ -197,20 +197,20 @@ HRESULT CopyTo(T** ppT) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*ppT*<br/>
-`CComPtrBase` işaretçisini alacak değişkenin adresi.
+*Ppt*<br/>
+İşaretçiyi alacak değişkenin `CComPtrBase` adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hata durumunda E_POINTER başarılı S_OK döndürür.
+Başarı S_OK, başarısızlık E_POINTER döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CComPtrBase` işaretçisini *PPT*'ye kopyalar. [CComPtrBase::p](#p) üye değişkeninde başvuru sayısı artırılır.
+İşaretçiyi `CComPtrBase` *ppT'ye kopyalar.* [CComPtrBase::p](#p) üye değişkenindeki başvuru sayısı artmıştır.
 
-*PPT* , null DEĞERINE eşitse HRESULT döndürülür. Hata ayıklama yapılarında, *PPT* null değerine eşitse bir onaylama hatası oluşur.
+*ppT* NULL'a eşitse bir hata HRESULT döndürülür. Hata ayıklama oluştururda, *ppT* NULL'a eşitse bir tasnif hatası oluşur.
 
-##  <a name="detach"></a>CComPtrBase::D etach
+## <a name="ccomptrbasedetach"></a><a name="detach"></a>CComPtrBase::Detach
 
 Bir işaretçinin sahipliğini serbest bırakmak için bu yöntemi çağırın.
 
@@ -224,11 +224,11 @@ T* Detach() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işaretçinin sahipliğini serbest bırakır, [CComPtrBase::p](#p) veri ÜYESI değişkenini null olarak ayarlar ve işaretçinin bir kopyasını döndürür.
+Bir işaretçinin sahipliğini serbest bırakır, [CComPtrBase::p](#p) veri üye değişkenini NULL olarak ayarlar ve işaretçinin bir kopyasını döndürür.
 
-##  <a name="isequalobject"></a>CComPtrBase:: ısequalobject
+## <a name="ccomptrbaseisequalobject"></a><a name="isequalobject"></a>CComPtrBase::Eşit Nesne
 
-Belirtilen `IUnknown` `CComPtrBase` nesnesiyle ilişkili aynı nesneyi işaret edip ettiğini denetlemek için bu yöntemi çağırın.
+Belirtilen `IUnknown` `CComPtrBase` noktalarınesneyle ilişkili aynı nesneye işaret edip etmeyin denetlemek için bu yöntemi çağırın.
 
 ```
 bool IsEqualObject(IUnknown* pOther) throw();
@@ -236,14 +236,14 @@ bool IsEqualObject(IUnknown* pOther) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pOther*<br/>
-Karşılaştırılacak `IUnknown *`.
+*pDiğer*<br/>
+Karşılaştırmak `IUnknown *` için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesneler aynıysa true, değilse false döndürür.
+Nesneler aynıysa doğru döndürür, aksi takdirde yanlış.
 
-##  <a name="operator_not"></a>CComPtrBase:: işleci!
+## <a name="ccomptrbaseoperator-"></a><a name="operator_not"></a>CComPtrBase::operatör !
 
 NOT işleci.
 
@@ -253,11 +253,11 @@ bool operator!() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CComHeapPtr` işaretçi NULL değerine eşitse true, değilse false döndürür.
+İşaretçi NULL'a eşitse `CComHeapPtr` doğru, aksi takdirde yanlış döndürür.
 
-##  <a name="operator_amp"></a>CComPtrBase:: operator &amp;
+## <a name="ccomptrbaseoperator-amp"></a><a name="operator_amp"></a>CComPtrBase::operatör&amp;
 
-& İşleci.
+& operatörü.
 
 ```
 T** operator&() throw();
@@ -265,9 +265,9 @@ T** operator&() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CComPtrBase` nesnesi tarafından işaret edilen nesnenin adresini döndürür.
+`CComPtrBase` Nesne tarafından işaret edilen nesnenin adresini döndürür.
 
-##  <a name="operator_star"></a>CComPtrBase:: operator \*
+## <a name="ccomptrbaseoperator-"></a><a name="operator_star"></a>CComPtrBase::operatör\*
 
 \* işleci.
 
@@ -277,13 +277,13 @@ T& operator*() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[CComPtrBase](#p)'in değerini döndürür::p; diğer bir deyişle, `CComPtrBase` nesnesi tarafından başvurulan nesneye yönelik bir işaretçidir.
+[CComPtrBase değerini verir::p;](#p) diğer bir de, `CComPtrBase` nesne tarafından başvurulan nesneye işaretçi.
 
-Hata ayıklama derlemelerse, [CComPtrBase::P](#p) null değerine eşit değilse bir onaylama hatası oluşur.
+Hata ayıklama oluşturursa, [CComPtrBase::p](#p) NULL'a eşit değilse bir tasnif hatası oluşur.
 
-##  <a name="operator_eq_eq"></a>CComPtrBase:: operator = =
+## <a name="ccomptrbaseoperator-"></a><a name="operator_eq_eq"></a>CComPtrBase::operatör ==
 
-Eşitlik işleci.
+Eşitlik operatörü.
 
 ```
 bool operator== (T* pT) const throw();
@@ -291,16 +291,16 @@ bool operator== (T* pT) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Yönergelerinin*<br/>
-Bir nesne işaretçisi.
+*Pt*<br/>
+Bir nesneye işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CComPtrBase` ve *PT* aynı nesneye işaret gösteriyorsa true, aksi takdirde false döndürür.
+Eğer `CComPtrBase` doğru döndürür ve *pT* aynı nesneye işaret ederse, aksi takdirde yanlış.
 
-##  <a name="operator_ptr"></a>CComPtrBase:: operator-&gt;
+## <a name="ccomptrbaseoperator--gt"></a><a name="operator_ptr"></a>CComPtrBase::operatör -&gt;
 
-Üye işaretçisi işleci.
+İşaretçiden üyeye işleç.
 
 ```
 _NoAddRefReleaseOnCComPtr<T>* operator->() const throw();
@@ -308,15 +308,15 @@ _NoAddRefReleaseOnCComPtr<T>* operator->() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[CComPtrBase::p](#p) Data üye değişkeninin değerini döndürür.
+[CComPtrBase::p](#p) veri üyesi değişkeninin değerini verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CComPtrBase` nesnesi tarafından işaret edilen bir sınıftaki yöntemi çağırmak için bu işleci kullanın. Hata ayıklama yapılarında, `CComPtrBase` veri üyesi NULL değerini gösteriyorsa bir onaylama hatası oluşur.
+`CComPtrBase` Nesne tarafından işaret edilen bir sınıftabir yöntem çağırmak için bu işleci kullanın. Hata ayıklama oluştururda, `CComPtrBase` veri üyesi NULL'u işaret ederse bir tasnif hatası oluşur.
 
-##  <a name="operator_lt"></a>CComPtrBase:: operator &lt;
+## <a name="ccomptrbaseoperator-lt"></a><a name="operator_lt"></a>CComPtrBase::operatör&lt;
 
-Küçüktür işleci.
+Operatörden daha az.
 
 ```
 bool operator<(T* pT) const throw();
@@ -324,16 +324,16 @@ bool operator<(T* pT) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Yönergelerinin*<br/>
-Bir nesne işaretçisi.
+*Pt*<br/>
+Bir nesneye işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli nesne tarafından yönetilen işaretçi karşılaştırılan işaretçisinden küçükse true döndürür.
+Geçerli nesne tarafından yönetilen işaretçi, karşılaştırıldığı işaretçiden daha azsa doğru döndürür.
 
-##  <a name="operator_t_star"></a>CComPtrBase:: operator T\*
+## <a name="ccomptrbaseoperator-t"></a><a name="operator_t_star"></a>CComPtrBase::operatör T\*
 
-Atama işleci.
+Döküm operatörü.
 
 ```
 operator T*() const throw();
@@ -343,9 +343,9 @@ operator T*() const throw();
 
 Sınıf şablonunda tanımlanan nesne veri türüne bir işaretçi döndürür.
 
-##  <a name="p"></a>CComPtrBase::p
+## <a name="ccomptrbasep"></a><a name="p"></a>CComPtrBase::p
 
-İşaretçi verisi üye değişkeni.
+İşaretçi veri üye değişkeni.
 
 ```
 T* p;
@@ -353,11 +353,11 @@ T* p;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye değişkeni işaretçi bilgisini tutar.
+Bu üye değişken işaretçi bilgilerini tutar.
 
-##  <a name="queryinterface"></a>CComPtrBase:: QueryInterface
+## <a name="ccomptrbasequeryinterface"></a><a name="queryinterface"></a>CComPtrBase::QueryInterface
 
-Belirtilen arabirime bir işaretçi döndürmek için bu yöntemi çağırın.
+İşaretçiyi belirli bir arabirime döndürmek için bu yöntemi çağırın.
 
 ```
 template <class Q> HRESULT QueryInterface(Q
@@ -366,25 +366,25 @@ template <class Q> HRESULT QueryInterface(Q
 
 ### <a name="parameters"></a>Parametreler
 
-*Ç*<br/>
-Arabirim işaretçisi gerekli olan nesne türü.
+*S*<br/>
+Arabirim işaretçisi gereken nesne türü.
 
-*Sy*<br/>
-İstenen arabirim işaretçisini alan çıkış değişkeninin adresi.
+*S*<br/>
+İstenen arabirim işaretçisini alan çıktı değişkeninin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı veya hatalı E_NOINTERFACE S_OK döndürür.
+Başarı S_OK veya başarısızlık E_NOINTERFACE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem [IUnknown:: QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q))' i çağırır.
+Bu [yöntemi IUnknown çağırır::QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)).
 
-Hata ayıklama yapılarında, *PP* null değerine eşit değilse bir onaylama hatası oluşur.
+Hata ayıklama oluşturur, *pp* NULL eşit değilse bir iddia hatası oluşur.
 
-##  <a name="release"></a>CComPtrBase:: Release
+## <a name="ccomptrbaserelease"></a><a name="release"></a>CComPtrBase::Yayın
 
-Arabirimi yayınlamak için bu yöntemi çağırın.
+Arabirimi serbest bırakmak için bu yöntemi arayın.
 
 ```
 void Release() throw();
@@ -392,11 +392,11 @@ void Release() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arabirim serbest bırakılır ve [CComPtrBase::P](#p) null olarak ayarlanır.
+Arabirim serbest bırakılır ve [CComPtrBase::p](#p) NULL olarak ayarlanır.
 
-##  <a name="setsite"></a>CComPtrBase:: SetSite
+## <a name="ccomptrbasesetsite"></a><a name="setsite"></a>CComPtrBase::SetSite
 
-`CComPtrBase` nesnesinin sitesini üst nesnenin `IUnknown` ayarlamak için bu yöntemi çağırın.
+`CComPtrBase` Nesnenin sitesini ana nesnenin nesnesine `IUnknown` ayarlamak için bu yöntemi çağırın.
 
 ```
 HRESULT SetSite(IUnknown* punkParent) throw();
@@ -404,17 +404,17 @@ HRESULT SetSite(IUnknown* punkParent) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*punkParent*<br/>
-Üst öğenin `IUnknown` arabirimine yönelik bir işaretçi.
+*punkEbeveyn*<br/>
+Üst arabirimine `IUnknown` bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
+Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem [AtlSetChildSite](composite-control-global-functions.md#atlsetchildsite)'ı çağırır.
+Bu [yöntema AtlSetChildSite](composite-control-global-functions.md#atlsetchildsite)diyor.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: CMFCToolBarComboBoxEdit sınıfı
+title: CMFCToolBarComboBoxEdit Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCToolBarComboBoxEdit
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCToolBarComboBoxEdit [MFC], CMFCToolBarComboBoxEdit
 ms.assetid: 4789c34a-ce58-48ba-a26f-38748b601352
-ms.openlocfilehash: 2a0ab1766f42d34c86339cffb86f876358c97a4a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: dfbf24f5833d143adc6d21b6cb54dd9ac81c2f0a
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504874"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372197"
 ---
-# <a name="cmfctoolbarcomboboxedit-class"></a>CMFCToolBarComboBoxEdit sınıfı
+# <a name="cmfctoolbarcomboboxedit-class"></a>CMFCToolBarComboBoxEdit Sınıfı
 
-Framework, `CMFCToolBarComboBoxEdit` düzenlenebilir Birleşik giriş kutusu denetimi gibi davranan bir araç çubuğu düğmesi oluşturmak için sınıfını kullanır.
+Çerçeve, kullanılabilir `CMFCToolBarComboBoxEdit` açılan kutu denetimi gibi görünen bir araç çubuğu düğmesi oluşturmak için sınıfı kullanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,40 +29,40 @@ class CMFCToolBarComboBoxEdit : public CEdit
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarComboBoxEdit:: CMFCToolBarComboBoxEdit](#cmfctoolbarcomboboxedit)|Bir `CMFCToolBarComboBoxEdit` nesnesi oluşturur.|
+|[CMFCToolBarComboBoxEdit::CMFCToolBarComboBoxEdit](#cmfctoolbarcomboboxedit)|Bir `CMFCToolBarComboBoxEdit` nesne inşa eder.|
 |`CMFCToolBarComboBoxEdit::~CMFCToolBarComboBoxEdit`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMFCToolBarComboBoxEdit::PreTranslateMessage`|[TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce pencere iletilerini çevirir. ( [CWnd::P reTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)geçersiz kılar.)|
+|`CMFCToolBarComboBoxEdit::PreTranslateMessage`|Pencere iletilerini [Çeviri İletisi](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine gönderilmeden önce çevirir. [(CWnd geçersiz kılar::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Düzenleme işlemlerini özelleştirmek için `CMFCToolBarComboBoxEdit` sınıftan bir sınıf türetirsiniz.
+Düzenlenen işlemleri özelleştirmek `CMFCToolBarComboBoxEdit` için sınıftan bir sınıf türetin.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
-[CEdit](../../mfc/reference/cedit-class.md)
+[Cedit](../../mfc/reference/cedit-class.md)
 
 [CMFCToolBarComboBoxEdit](../../mfc/reference/cmfctoolbarcomboboxedit-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxtoolbarcomboboxbutton. h
+**Başlık:** afxtoolbarcomboboxbutton.h
 
-##  <a name="cmfctoolbarcomboboxedit"></a>CMFCToolBarComboBoxEdit:: CMFCToolBarComboBoxEdit
+## <a name="cmfctoolbarcomboboxeditcmfctoolbarcomboboxedit"></a><a name="cmfctoolbarcomboboxedit"></a>CMFCToolBarComboBoxEdit::CMFCToolBarComboBoxEdit
 
-Bir `CMFCToolBarComboBoxEdit` nesnesi oluşturur.
+Bir `CMFCToolBarComboBoxEdit` nesne inşa eder.
 
 ```
 CMFCToolBarComboBoxEdit(CMFCToolBarComboBoxButton& combo);
@@ -70,12 +70,12 @@ CMFCToolBarComboBoxEdit(CMFCToolBarComboBoxButton& combo);
 
 ### <a name="parameters"></a>Parametreler
 
-*geçir*<br/>
-'ndaki Bir kombo kutusu denetimi içeren bir araç çubuğu düğmesi olan [CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) nesnesine başvuru.
+*birleşik*<br/>
+[içinde] Bir [cmfctoolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) nesne, bir açılan kutu denetimi içeren bir araç çubuğu düğmesi bir başvuru.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CMFCToolBarComboBoxEdit` sınıfının bir nesnesinin nasıl oluşturulduğunu gösterir. Bu kod parçacığı, [IE demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfın bir nesnesinin `CMFCToolBarComboBoxEdit` nasıl inşa edilebildiğini gösterir. Bu kod parçacığı [IE Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_IEDemo#5](../../mfc/reference/codesnippet/cpp/cmfctoolbarcomboboxedit-class_1.cpp)]
 

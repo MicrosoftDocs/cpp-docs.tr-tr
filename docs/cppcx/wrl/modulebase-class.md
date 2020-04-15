@@ -15,16 +15,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ModuleBase::ModuleBase, constructor
 - Microsoft::WRL::Details::ModuleBase::~ModuleBase, destructor
 ms.assetid: edce7591-6893-46f7-94a7-382827775548
-ms.openlocfilehash: 254796c03d25a77da22c48881c086a41ffbfeb82
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 13a8ceef3133e9946524e1fcd02e96535eccd7fc
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403223"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371268"
 ---
 # <a name="modulebase-class"></a>ModuleBase Sınıfı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,23 +34,23 @@ class ModuleBase;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Temel sınıfını temsil eden [Modülü](module-class.md) sınıfları.
+[Modül](module-class.md) sınıflarının taban sınıfını temsil eder.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Ad                                         | Açıklama
+Adı                                         | Açıklama
 -------------------------------------------- | ---------------------------------------------------------
-[ModuleBase::ModuleBase](#modulebase)        | Bir örneğini başlatır `Module` sınıfı.
-[ModuleBase:: ~ ModuleBase](#tilde-modulebase) | Geçerli örneğinin başlatmasını geri alır `Module` sınıfı.
+[ModuleBase::ModuleBase](#modulebase)        | `Module` sınıfının örneğini başlatır.
+[ModuleBase::~ModuleBase](#tilde-modulebase) | Sınıfın geçerli örneğini `Module` deinitialize eder.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                                                      | Açıklama
+Adı                                                      | Açıklama
 --------------------------------------------------------- | -------------------------------------------------------------------------
-[ModuleBase::DecrementObjectCount](#decrementobjectcount) | Uygulandığında, azaltır nesne sayısını modülü tarafından izlenir.
-[Modulebase::ıncrementobjectcount](#incrementobjectcount) | Uygulandığında, modül tarafından izlenen nesne sayısını artırır.
+[ModuleBase::DecrementObjectCount](#decrementobjectcount) | Uygulandığında, modül tarafından izlenen nesnelerin sayısını azat eder.
+[ModuleBase::ArtışNesne Sayısı](#incrementobjectcount) | Uygulandığında, modül tarafından izlenen nesnelerin sayısını n itimat eder.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -58,13 +58,13 @@ Ad                                                      | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üstbilgi:** implements.h
 
-**Namespace:** Microsoft::wrl:: details
+**Ad alanı:** Microsoft::WRL::D etails
 
-## <a name="tilde-modulebase"></a>ModuleBase:: ~ ModuleBase
+## <a name="modulebasemodulebase"></a><a name="tilde-modulebase"></a>ModuleBase::~ModuleBase
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 virtual ~ModuleBase();
@@ -72,11 +72,11 @@ virtual ~ModuleBase();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli örneğinin başlatmasını geri alır `ModuleBase` sınıfı.
+Sınıfın geçerli örneğini `ModuleBase` deinitialize eder.
 
-## <a name="decrementobjectcount"></a>ModuleBase::DecrementObjectCount
+## <a name="modulebasedecrementobjectcount"></a><a name="decrementobjectcount"></a>ModuleBase::DecrementObjectCount
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 virtual long DecrementObjectCount() = 0;
@@ -84,15 +84,15 @@ virtual long DecrementObjectCount() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Azaltma işleminden önce sayısı.
+Kararname işleminden önceki sayım.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulandığında, azaltır nesne sayısını modülü tarafından izlenir.
+Uygulandığında, modül tarafından izlenen nesnelerin sayısını azat eder.
 
-## <a name="incrementobjectcount"></a>Modulebase::ıncrementobjectcount
+## <a name="modulebaseincrementobjectcount"></a><a name="incrementobjectcount"></a>ModuleBase::ArtışNesne Sayısı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 virtual long IncrementObjectCount() = 0;
@@ -100,15 +100,15 @@ virtual long IncrementObjectCount() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önce Artım işlemi sayısı.
+Artış işleminden önceki sayım.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulandığında, modül tarafından izlenen nesne sayısını artırır.
+Uygulandığında, modül tarafından izlenen nesnelerin sayısını n itimat eder.
 
-## <a name="modulebase"></a>ModuleBase::ModuleBase
+## <a name="modulebasemodulebase"></a><a name="modulebase"></a>ModuleBase::ModuleBase
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
 
 ```cpp
 ModuleBase();
@@ -116,4 +116,4 @@ ModuleBase();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir örneğini başlatır `Module` sınıfı.
+`Module` sınıfının örneğini başlatır.

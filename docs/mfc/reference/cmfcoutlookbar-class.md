@@ -1,5 +1,5 @@
 ---
-title: CMFCOutlookBar sınıfı
+title: CMFCOutlookBar Sınıfı
 ms.date: 06/25/2018
 f1_keywords:
 - CMFCOutlookBar
@@ -38,16 +38,16 @@ helpviewer_keywords:
 - CMFCOutlookBar [MFC], SetButtonsFont
 - CMFCOutlookBar [MFC], SetMode2003
 ms.assetid: 2b335f71-ce99-4efd-b103-e65ba43ffc36
-ms.openlocfilehash: fc1281db0271393ec0538e26c2a2d2af09c99f7a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe328cb0d857ff9154624d218b1b56362890ce81
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374148"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369649"
 ---
-# <a name="cmfcoutlookbar-class"></a>CMFCOutlookBar sınıfı
+# <a name="cmfcoutlookbar-class"></a>CMFCOutlookBar Sınıfı
 
-Öğesinin görsel görünümüne sahip sekmeli bölme **Gezinti bölmesinde** Microsoft Outlook 2000 veya Outlook 2003'te. `CMFCOutlookBar` Nesne içeren bir [CMFCOutlookBarTabCtrl sınıfı](../../mfc/reference/cmfcoutlookbartabctrl-class.md) nesnesi ve bir dizi sekme. Sekmeleri olabilir [CMFCOutlookBarPane sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md) nesneleri veya `CWnd`-türetilmiş nesneler. Kullanıcıya Outlook Çubuğu bir dizi düğme ve görüntüleme alanı görünür. Kullanıcı bir düğmeyi tıkladığında karşılık gelen denetim veya düğme bölmesi görüntülenir.
+Microsoft Outlook 2000 veya Outlook 2003'teki **Gezinti Bölmesi'nin** görsel görünümünü içeren sekmeli bölme. Nesne `CMFCOutlookBar` bir [CMFCOutlookBarTabCtrl Sınıf](../../mfc/reference/cmfcoutlookbartabctrl-class.md) nesnesi ve bir dizi sekme içerir. Sekmeler [CMFCOutlookBarPane Sınıf](../../mfc/reference/cmfcoutlookbarpane-class.md) nesneleri veya `CWnd`türetilmiş nesneler olabilir. Kullanıcı için Outlook çubuğu bir dizi düğme ve görüntü alanı olarak görünür. Kullanıcı bir düğmeyi tıklattığında, karşılık gelen denetim veya düğme bölmesi görüntülenir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,43 +59,43 @@ class CMFCOutlookBar : public CBaseTabbedPane
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|`CMFCOutlookBar::CMFCOutlookBar`|Varsayılan Oluşturucu.|
+|`CMFCOutlookBar::CMFCOutlookBar`|Varsayılan oluşturucu.|
 |`CMFCOutlookBar::~CMFCOutlookBar`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CMFCOutlookBar::AllowDestroyEmptyTabbedPane](#allowdestroyemptytabbedpane)|Boş bir sekmeli bölme yok edilebilir olup olmadığını belirtir. (Geçersiz kılmaları [CBaseTabbedPane::AllowDestroyEmptyTabbedPane](../../mfc/reference/cbasetabbedpane-class.md#allowdestroyemptytabbedpane).)|
-|[CMFCOutlookBar::CanAcceptPane](#canacceptpane)|Outlook Çubuğu bölmesi için başka bir bölme yerleştirilmiş olup olmadığını belirler. (CDockablePane::CanAcceptPane geçersiz kılar.)|
-|[CMFCOutlookBar::CanSetCaptionTextToTabName](#cansetcaptiontexttotabname)|Sekmeli bölmesi için açıklama yazısını aynı metni etkin sekme görüntülenip görüntülenmeyeceğini belirler. (Geçersiz kılmaları [CBaseTabbedPane::CanSetCaptionTextToTabName](../../mfc/reference/cbasetabbedpane-class.md#cansetcaptiontexttotabname).)|
-|[CMFCOutlookBar::Create](#create)|Outlook Çubuğu denetimi oluşturur.|
-|[CMFCOutlookBar::CreateCustomPage](#createcustompage)|Özel bir Outlook Çubuğu sekme oluşturur.|
-|`CMFCOutlookBar::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|
-|[CMFCOutlookBar::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)|Bir kullanıcı bir Outlook Çubuğu dış ucunun denetim çubuğu yerleştirme olup olmadığını belirler.|
-|[CMFCOutlookBar::FloatTab](#floattab)|Bölmeyi şu anda çıkarılabilir bir sekmede yer alıyorsa ancak yalnızca bir bölme kaydırır. (Geçersiz kılmaları [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab).)|
-|[CMFCOutlookBar::GetButtonsFont](#getbuttonsfont)|Outlook çubuğu düğmelerini metnin yazı tipini döndürür.|
-|[CMFCOutlookBar::GetTabArea](#gettabarea)|Outlook Çubuğu için sekmesinde bölümlerden konumunu ve boyutunu döndürür. (Geçersiz kılmaları [CBaseTabbedPane::GetTabArea](../../mfc/reference/cbasetabbedpane-class.md#gettabarea).)|
-|`CMFCOutlookBar::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|
-|[CMFCOutlookBar::IsMode2003](#ismode2003)|Outlook Çubuğu davranışını (bkz. Notlar) Microsoft Office Outlook 2003 taklit olup olmadığını belirler.|
-|[CMFCOutlookBar::OnAfterAnimation](#onafteranimation)|Çağıran [CMFCOutlookBarTabCtrl::SetActiveTab](../../mfc/reference/cmfcoutlookbartabctrl-class.md#setactivetab) animasyon kullanarak etkin sekmede ayarlandıktan sonra.|
-|[CMFCOutlookBar::OnBeforeAnimation](#onbeforeanimation)|Çağıran [CMFCOutlookBarTabCtrl::SetActiveTab](../../mfc/reference/cmfcoutlookbartabctrl-class.md#setactivetab) önce bir sekme sayfası animasyon kullanarak etkin sekme ayarlanır.|
-|[CMFCOutlookBar::OnScroll](#onscroll)|Outlook çubuğu yukarı veya aşağı kaydırma, framework tarafından çağırılır.|
-|[CMFCOutlookBar::RemoveCustomPage](#removecustompage)|Özel bir Outlook Çubuğu sekme kaldırır.|
-|[CMFCOutlookBar::SetButtonsFont](#setbuttonsfont)|Outlook çubuğu düğmelerini metnin yazı tipini ayarlar.|
-|[CMFCOutlookBar::SetMode2003](#setmode2003)|Outlook Çubuğu davranışını (bkz. Notlar) Outlook 2003 taklit olup olmadığını belirtir.|
+|[CMFCOutlookBar::AllowDestroyEmptyTabbedPane](#allowdestroyemptytabbedpane)|Boş sekmeli bölmenin yok edilip edilmeyeceğini belirtir. (Geçersiz kılar [CBaseTabbedPane::AllowDestroyEmptyTabbedPane](../../mfc/reference/cbasetabbedpane-class.md#allowdestroyemptytabbedpane).)|
+|[CMFCOutlookBar::CanAcceptPane](#canacceptpane)|Başka bir bölmenin Outlook çubuğubölmesine sabitlenip yapıştırılamayacağını belirler. (CDockablePane geçersiz kılar::CanAcceptPane.)|
+|[CMFCOutlookBar::CanSetCaptionTexttotabname](#cansetcaptiontexttotabname)|Sekmeli bölmenin alt yazısının etkin sekmeyle aynı metni gösterip görüntülemediğini belirler. (Geçersiz kılar [CBaseTabbedPane::CanSetCaptionTextToTabName](../../mfc/reference/cbasetabbedpane-class.md#cansetcaptiontexttotabname).)|
+|[CMFCOutlookBar::Oluştur](#create)|Outlook çubuğu denetimini oluşturur.|
+|[CMFCOutlookBar::CreateCustomPage](#createcustompage)|Özel bir Outlook çubuğu sekmesi oluşturur.|
+|`CMFCOutlookBar::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için çerçeve tarafından kullanılır.|
+|[CMFCOutlookBar::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)|Kullanıcının Outlook çubuğunun dış kenarına bir denetim çubuğu nu sabitleyip yerleştirmeyebileceğini belirler.|
+|[CMFCOutlookBar::FloatTab](#floattab)|Bölmeyi yüzdürür, ancak bölme şu anda çıkarılabilir bir sekmede bulunursa. (Geçersiz Kılar [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab).)|
+|[CMFCOutlookBar::GetButtonsFont](#getbuttonsfont)|Outlook çubuğunun düğmelerinde metnin yazı tipini döndürür.|
+|[CMFCOutlookBar::GetTabArea](#gettabarea)|Outlook çubuğundaki sekme alanlarının boyutunu ve konumunu döndürür. (Geçersiz kılar [CBaseTabbedPane::GetTabArea](../../mfc/reference/cbasetabbedpane-class.md#gettabarea).)|
+|`CMFCOutlookBar::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
+|[CMFCOutlookBar::IsMode2003](#ismode2003)|Outlook çubuğunun davranışının Microsoft Office Outlook 2003'ün davranışını taklit edip etmediğini belirler (bkz. Açıklamalar).|
+|[CMFCOutlookBar::OnafterAnimation](#onafteranimation)|[CMFCOutlookBarTabCtrl tarafından çağrılan::Etkin](../../mfc/reference/cmfcoutlookbartabctrl-class.md#setactivetab) sekme animasyon kullanılarak ayarlandıktan sonra SetActiveTab.|
+|[CMFCOutlookBar::OnBeforeAnimasyon](#onbeforeanimation)|[CMFCOutlookBarTabCtrl tarafından çağrılan::SetActiveTab](../../mfc/reference/cmfcoutlookbartabctrl-class.md#setactivetab) önce bir sekme sayfası animasyon kullanarak etkin sekme olarak ayarlanır.|
+|[CMFCOutlookBar::OnScroll](#onscroll)|Outlook çubuğu yukarı veya aşağı kaydırılıyorsa çerçeve tarafından çağrılır.|
+|[CMFCOutlookBar::RemoveCustomPage](#removecustompage)|Özel Outlook çubuğu sekmesini kaldırır.|
+|[CMFCOutlookBar::SetButtonsFont](#setbuttonsfont)|Outlook çubuğunun düğmelerinde metnin yazı tipini ayarlar.|
+|[CMFCOutlookBar::SetMode2003](#setmode2003)|Outlook çubuğunun davranışının Outlook 2003'tekileri taklit edip etmediğini belirtir (Bkz. Açıklamalar).|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir Outlook Çubuğu bir örnek için bkz [OutlookDemo örnek: MFC OutlookDemo uygulama](../../overview/visual-cpp-samples.md).
+Outlook çubuğu örneği için [OutlookDemo Örneği' ne bakın: MFC OutlookDemo Uygulaması.](../../overview/visual-cpp-samples.md)
 
-## <a name="implementing-the-outlook-bar"></a>Outlook Çubuğu uygulama
+## <a name="implementing-the-outlook-bar"></a>Outlook Çubuğu'nu uygulama
 
-Kullanılacak `CMFCOutlookBar` denetim uygulamanızda, aşağıdaki adımları izleyin:
+Uygulamanızdaki `CMFCOutlookBar` denetimi kullanmak için aşağıdaki adımları izleyin:
 
-1. Ekleme bir `CMFCOutlookBar` ana çerçeve penceresi sınıfında nesnesine.
+1. Ana çerçeve `CMFCOutlookBar` penceresi sınıfına bir nesne gömün.
 
     ```cpp
     class CMainFrame : public CMDIFrameWnd
@@ -107,7 +107,7 @@ Kullanılacak `CMFCOutlookBar` denetim uygulamanızda, aşağıdaki adımları i
     };
     ```
 
-1. Ana çerçeve WM_CREATE iletiyi işlerken çağırmak [CMFCOutlookBar::Create](#create) Outlook Çubuğu sekme denetimi oluşturmak için yöntemi.
+1. Ana çerçevede WM_CREATE iletiyi işlerken [CMFCOutlookBar'ı arayın::Outlook](#create) çubuğu sekmesi denetimini oluşturmak için yöntem oluşturun.
 
     ```cpp
     m_wndOutlookBar.Create (_T("Shortcuts"),
@@ -117,13 +117,13 @@ Kullanılacak `CMFCOutlookBar` denetim uygulamanızda, aşağıdaki adımları i
         WS_CHILD | WS_VISIBLE | CBRS_LEFT);
     ```
 
-1. Bağlantılı bir işaretçi alma `CMFCOutlookBarTabCtrl` kullanarak [CBaseTabbedPane::GetUnderlyingWindow](../../mfc/reference/cbasetabbedpane-class.md#getunderlyingwindow).
+1. CBaseTabbedPane `CMFCOutlookBarTabCtrl` kullanarak altta yatan bir işaretçi [edinin::GetUnderlyingWindow](../../mfc/reference/cbasetabbedpane-class.md#getunderlyingwindow).
 
     ```cpp
     CMFCOutlookBarTabCtrl* pOutlookBar = (CMFCOutlookBarTabCtrl*) m_wndOutlookBar.GetUnderlyingWindow ();
     ```
 
-1. Oluşturma bir [CMFCOutlookBarPane sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md) düğmeleri içeren her sekme için nesne.
+1. Düğmeleri içeren her sekme için bir [CMFCOutlookBarPane Sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md) nesnesi oluşturun.
 
     ```cpp
     m_wndOutlookPane.Create(&m_wndOutlookBar,
@@ -144,50 +144,50 @@ Kullanılacak `CMFCOutlookBar` denetim uygulamanızda, aşağıdaki adımları i
         ID_FILE_OPEN);
     ```
 
-1. Çağrı [CMFCOutlookBarTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) her yeni bir sekme eklemek için. Ayarlama *bDetachable* parametresi bir sayfayı çıkarılabilir olmayan yapmak için false. Ya da kullanmak [CMFCOutlookBarTabCtrl::AddControl](../../mfc/reference/cmfcoutlookbartabctrl-class.md#addcontrol) çıkarılabilir sayfalar eklemek için.
+1. Her yeni sekmeyi eklemek için [CMFCOutlookBarTabCtrl::AddTab'ı](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) arayın. *bDetachable* Veya, çıkarılabilir sayfalar eklemek için [CMFCOutlookBarTabCtrl::AddControl'i](../../mfc/reference/cmfcoutlookbartabctrl-class.md#addcontrol) kullanın.
 
     ```cpp
     pOutlookBar->AddTab (&m_wndOutlookPane, "General", (UINT) -1, TRUE);
     ```
 
-1. Eklemek için bir `CWnd`-denetim türetilmiş (örneğin, [CMFCShellTreeCtrl sınıfı](../../mfc/reference/cmfcshelltreectrl-class.md)) bir sekme denetim ve çağrı oluşturma [CMFCOutlookBarTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) Outlook çubuğuna eklenecek.
+1. Sekme `CWnd`olarak türetilmiş bir denetim (örneğin [CMFCShellTreeCtrl Sınıfı)](../../mfc/reference/cmfcshelltreectrl-class.md)eklemek için denetimi oluşturun ve [CMFCOutlookBarTabCtrl'ı arayın::Outlook](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) çubuğuna eklemek için AddTab'ı ekleyin.
 
 > [!NOTE]
->  Her biri için benzersiz Denetim kimliklerinin kullanması gereken [CMFCOutlookBarPane sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md) nesnesi ve her `CWnd`-türetilmiş bir nesneye.
+> Her [CMFCOutlookBarPane Sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md) nesnesi ve türetilmiş `CWnd`her nesne için benzersiz denetim titreleri kullanmalısınız.
 
-Dinamik olarak ekleyin veya yeni sayfalar çalışma zamanında silmek için kullanın [CMFCOutlookBar::CreateCustomPage](#createcustompage) ve [CMFCOutlookBar::RemoveCustomPage](#removecustompage).
+Çalışma zamanında dinamik olarak yeni sayfalar eklemek veya silmek için [CMFCOutlookBar'ı kullanın::CreateCustomPage](#createcustompage) ve [CMFCOutlookBar::RemoveCustomPage](#removecustompage).
 
-## <a name="outlook-2003-mode"></a>Outlook 2003 modu
+## <a name="outlook-2003-mode"></a>Outlook 2003 Modu
 
-Outlook 2003 modunda sekme düğmelerinin Outlook Çubuğu bölmesinin en altında yerleştirilir. Düğmeleri görüntülemek için yeterli alan olmadığında bölmesinin alt kısmında bulunan bir araç çubuğu benzeri alanındaki simgeler olarak görüntülenir.
+Outlook 2003 modunda, sekme düğmeleri Outlook çubuğu bölmesinin alt kısmında konumlandırılır. Düğmeleri görüntülemek için yeterli alan olmadığında, bölmenin alt kısmında araç çubuğu nabenzer bir alanda simge olarak görüntülenirler.
 
-Kullanım [CMFCOutlookBar::SetMode2003](#setmode2003) Outlook 2003 modunu etkinleştirmek için. Kullanım [CMFCOutlookBarTabCtrl::SetToolbarImageList](../../mfc/reference/cmfcoutlookbartabctrl-class.md#settoolbarimagelist) Outlook çubuğu en altında görüntülenen simge bit eşlemi ayarlamak için. Bit eşlem simgeleri sekmesini dizine göre sıralanmış olmaları gerekmektedir.
+Outlook 2003 modunu etkinleştirmek için [CMFCOutlookBar::SetMode2003'u](#setmode2003) kullanın. Outlook çubuğunun alt kısmında görüntülenen simgeleri içeren bit eşlemeyi ayarlamak için [CMFCOutlookBarTabCtrl::SetToolbarImageList'i](../../mfc/reference/cmfcoutlookbartabctrl-class.md#settoolbarimagelist) kullanın. Bit eşlemindeki simgeler sekme dizini tarafından sıralanmalıdır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
-[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
 
-[CWnd](../../mfc/reference/cwnd-class.md)
+[Cwnd](../../mfc/reference/cwnd-class.md)
 
 [CBasePane](../../mfc/reference/cbasepane-class.md)
 
-[CPane](../../mfc/reference/cpane-class.md)
+[Cpane](../../mfc/reference/cpane-class.md)
 
-[CDockablePane](../../mfc/reference/cdockablepane-class.md)
+[Cdockablepane](../../mfc/reference/cdockablepane-class.md)
 
 [CBaseTabbedPane](../../mfc/reference/cbasetabbedpane-class.md)
 
-[CMFCOutlookBar](../../mfc/reference/cmfcoutlookbar-class.md)
+[Cmfcoutlookbar](../../mfc/reference/cmfcoutlookbar-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxoutlookbar.h
+**Üstbilgi:** afxoutlookbar.h
 
-##  <a name="allowdestroyemptytabbedpane"></a>  CMFCOutlookBar::AllowDestroyEmptyTabbedPane
+## <a name="cmfcoutlookbarallowdestroyemptytabbedpane"></a><a name="allowdestroyemptytabbedpane"></a>CMFCOutlookBar::AllowDestroyEmptyTabbedPane
 
-Boş bir sekmeli bölme yok edilebilir olup olmadığını belirtir.
+Boş sekmeli bölmenin yok edilip edilmeyeceğini belirtir.
 
 ```cpp
 virtual BOOL AllowDestroyEmptyTabbedPane() const;
@@ -195,15 +195,15 @@ virtual BOOL AllowDestroyEmptyTabbedPane() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Boş bir sekmeli bölme yok edilebilir TRUE; Aksi takdirde FALSE. Varsayılan uygulama her zaman TRUE değerini döndürür.
+Boş sekmeli bölme yok edilebiliyorsa DOĞRU; aksi takdirde, YANLIŞ. Varsayılan uygulama her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework boş bir sekmeli bölme yok, bunun yerine gizler.
+Boş sekmeli bölme yok edilemiyorsa, çerçeve bunun yerine gizler.
 
-##  <a name="canacceptpane"></a>  CMFCOutlookBar::CanAcceptPane
+## <a name="cmfcoutlookbarcanacceptpane"></a><a name="canacceptpane"></a>CMFCOutlookBar::CanAcceptPane
 
-Outlook Çubuğu bölmesi için başka bir bölme yerleştirilmiş olup olmadığını belirler.
+Başka bir bölmenin Outlook çubuğubölmesine sabitlenip yapıştırılamayacağını belirler.
 
 ```cpp
 virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
@@ -212,23 +212,23 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[in] Bu bölme için yerleştirilmiş başka bir bölme için bir işaretçi.
+[içinde] Bu bölmeye kenetlenen başka bir bölmeye işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başka bir bölme Outlook Çubuğu bölmesi için yerleştirilmiş olması gerekiyorsa TRUE; Aksi durumda FALSE.
+Başka bir bölme Outlook çubuğu bölmesine sabitlenebilirse DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu nedenle Outlook Çubuğu yerleştirme Outlook 2003 modundaysa desteklenmiyorsa, dönüş değeri FALSE olur.
+Outlook çubuğu Outlook 2003 modundaysa, yerleştirme desteklenmez, bu nedenle iade değeri FALSE'dur.
 
-Varsa *pBar* parametre NULL ise, bu yöntem FALSE döndürür.
+*pBar* parametresi NULL ise, bu yöntem FALSE döndürür.
 
-Aksi takdirde, bu yöntem temel yöntemi olarak davranır [CBasePane::CanAcceptPane](../../mfc/reference/cbasepane-class.md#canacceptpane)dışında bir Outlook Çubuğu yerleştirme etkin değilse, yine de başka bir Outlook çubuğu üzerine yerleştirilemediğinde etkinleştirebilirsiniz.
+Aksi takdirde, bu yöntem temel yöntem [CBasePane gibi olur::CanAcceptPane](../../mfc/reference/cbasepane-class.md#canacceptpane), docking etkin olmasa bile, bir Outlook çubuğu hala üzerinde docked başka bir Outlook çubuğu etkinleştirebilirsiniz dışında.
 
-##  <a name="cansetcaptiontexttotabname"></a>  CMFCOutlookBar::CanSetCaptionTextToTabName
+## <a name="cmfcoutlookbarcansetcaptiontexttotabname"></a><a name="cansetcaptiontexttotabname"></a>CMFCOutlookBar::CanSetCaptionTexttotabname
 
-Sekmeli bölmesi için açıklama yazısını aynı metni etkin sekme görüntülenip görüntülenmeyeceğini belirler.
+Sekmeli bölmenin alt yazısının etkin sekmeyle aynı metni gösterip görüntülemediğini belirler.
 
 ```cpp
 virtual BOOL CanSetCaptionTextToTabName() const;
@@ -236,17 +236,17 @@ virtual BOOL CanSetCaptionTextToTabName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Outlook çubuğu pencere başlığı etkin sekmede metni için otomatik olarak ayarlanmışsa TRUE; Aksi durumda FALSE.
+Outlook çubuğu pencere başlığı etkin sekmenin metnine otomatik olarak ayarlanırsa DOĞRU; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım [CBaseTabbedPane::EnableSetCaptionTextToTabName](../../mfc/reference/cbasetabbedpane-class.md#enablesetcaptiontexttotabname) etkinleştirme veya bu işlevi devre dışı.
+Bu işlevselliği etkinleştirmek veya devre dışı katmak için [CBaseTabbedPane::EnableSetCaptionTextToTabName'yi](../../mfc/reference/cbasetabbedpane-class.md#enablesetcaptiontexttotabname) kullanın.
 
-Outlook 2003 modunda, bu ayar her zaman etkindir.
+Outlook 2003 modunda, bu ayar her zaman etkinleştirilir.
 
-##  <a name="create"></a>  CMFCOutlookBar::Create
+## <a name="cmfcoutlookbarcreate"></a><a name="create"></a>CMFCOutlookBar::Oluştur
 
-Outlook Çubuğu denetimi oluşturur.
+Outlook çubuğu denetimini oluşturur.
 
 ```cpp
 virtual BOOL Create(
@@ -262,46 +262,46 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *lpszCaption*<br/>
-[in] Pencere resim yazısını belirtir.
+[içinde] Pencere başlığını belirtir.
 
 *pParentWnd*<br/>
-[in] Bir üst penceresine bir işaretçi belirtir. NULL olmamalıdır.
+[içinde] Bir üst pencereiçin işaretçi belirtir. NULL olmamalıdır.
 
 *Rect*<br/>
-[in] Outlook çubuğu boyutunu ve konumunu piksel cinsinden belirtir.
+[içinde] Outlook çubuğuboyutunu ve konumunu piksellerde belirtir.
 
-*nID*<br/>
-[in] Denetim kimliğini belirtir. Diğer denetimi uygulamada kullanılan kimlikleri farklı olmalıdır.
+*Nıd*<br/>
+[içinde] Denetim kimliğini belirtir. Uygulamada kullanılan diğer denetim lid'lerinden farklı olmalıdır.
 
-*dwStyle*<br/>
-[in] İstenen denetim çubuğu stilini belirtir. Olası değerler için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).
+*Dwstyle*<br/>
+[içinde] İstenilen kontrol çubuğu stilini belirtir. Olası değerler için [Bkz. Pencere Stilleri.](../../mfc/reference/styles-used-by-mfc.md#window-styles)
 
 *dwControlBarStyle*<br/>
-[in] Kitaplığı tarafından tanımlanan özel stilleri belirtir.
+[içinde] Özel kitaplık tanımlı stilleri belirtir.
 
-*pContext*<br/>
-[in] Bağlam oluşturur.
+*Pcontext*<br/>
+[içinde] Bağlam oluşturun.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.
+Yöntem başarılı olursa sıfırsız; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturmak bir `CMFCOutlookBar` iki adımda nesne. İlk oluşturucusunu çağırın ve ardından arama `Create`, outlook çubuğu denetimi oluşturur ve ona ekler `CMFCOutlookBar` nesne.
+Bir nesneyi `CMFCOutlookBar` iki adımda inşa ee. Önce oluşturucuyu çağırın, `Create`sonra outlook çubuğu denetimini oluşturan ve `CMFCOutlookBar` nesneye iliştiren , çağırın.
 
-Bkz: [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) tarafından belirtilen için kullanılabilir olan kitaplığı tarafından tanımlanan stiller listesi için *dwControlBarStyle*.
+Bkz. [CBasePane::DwControlBarStyle](../../mfc/reference/cbasepane-class.md#createex) tarafından belirtilecek kullanılabilir kitaplık tanımlı stillerin listesi için CreateEx. *dwControlBarStyle*
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `Create` yöntemi `CMFCOutlookBar` sınıfı. Bu kod parçacığı parçasıdır [Outlook çoklu görünümleri örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, sınıfın yönteminin `Create` nasıl `CMFCOutlookBar` kullanılacağını göstermektedir. Bu kod parçacığı Outlook Çok [Görünümler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_OutlookMultiViews#1](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_1.h)]
 [!code-cpp[NVC_MFC_OutlookMultiViews#2](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_2.cpp)]
 
-##  <a name="createcustompage"></a>  CMFCOutlookBar::CreateCustomPage
+## <a name="cmfcoutlookbarcreatecustompage"></a><a name="createcustompage"></a>CMFCOutlookBar::CreateCustomPage
 
-Özel bir Outlook Çubuğu sekme oluşturur.
+Özel bir Outlook çubuğu sekmesi oluşturur.
 
 ```cpp
 CMFCOutlookBarPane* CreateCustomPage(
@@ -314,30 +314,30 @@ CMFCOutlookBarPane* CreateCustomPage(
 ### <a name="parameters"></a>Parametreler
 
 *lpszPageName*<br/>
-[in] Sayfa etiketi.
+[içinde] Sayfa etiketi.
 
 *bActivatePage*<br/>
-[in] TRUE ise, sayfa oluşturulduktan sonra etkinleşir.
+[içinde] TRUE ise, sayfa oluşturma üzerine etkin hale gelir.
 
-*dwEnabledDocking*<br/>
-[in] Etkin yerleştirme kenarı sayfanın ayrıldığında belirten CBRS_ALIGN_ bayrakların birleşimi.
+*dwEnabledYerleştirme*<br/>
+[içinde] Sayfa ayrıldığında etkin kenetlenme taraflarını belirten CBRS_ALIGN_ bayraklarının birleşimi.
 
 *bEnableTextLabels*<br/>
-[in] TRUE ise, sayfada bulunan düğmelerinin metin etiketlerini etkinleştirilir.
+[içinde] TRUE ise, sayfada yer alan düğmeler için metin etiketleri etkinleştirilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan bir sayfa ya da oluşturma başarısız olursa NULL bir işaretçi.
+Yeni oluşturulan sayfaya işaretçi veya oluşturma başarısız olduysa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel Outlook Çubuğu sayfaları oluşturmak için kullanıcıları etkinleştirmek için bu yöntemi kullanın. Uygulama başına en fazla 100 sayfaları oluşturabilirsiniz. Sayfa denetimi kimlikleri 0xF000 ' başlatın. Özel Outlook Çubuğu sayfaların toplam sayısı 100 aşarsa oluşturma başarısız olur.
+Kullanıcıların özel Outlook çubuğu sayfaları oluşturmasını sağlamak için bu yöntemi kullanın. Uygulama başına en fazla 100 sayfa oluşturabilirsiniz. Sayfa denetimi tüna'ları 0xF000'den başlar. Özel Outlook çubuğu sayfalarının toplam sayısı 100'ü aşarsa oluşturma başarısız olur.
 
-Kullanım [CMFCOutlookBar::RemoveCustomPage](#removecustompage) özel sayfalar silinemedi.
+Özel sayfaları silmek için [CMFCOutlookBar::RemoveCustomPage'i](#removecustompage) kullanın.
 
-##  <a name="doesallowdyninsertbefore"></a>  CMFCOutlookBar::DoesAllowDynInsertBefore
+## <a name="cmfcoutlookbardoesallowdyninsertbefore"></a><a name="doesallowdyninsertbefore"></a>CMFCOutlookBar::DoesAllowDynInsertBefore
 
-Bir kullanıcı bir Outlook Çubuğu dış ucunun bölmesine sabitleyebilirsiniz olup olmadığını belirtir.
+Bir kullanıcının outlook çubuğunun dış kenarına bir bölme yiyep yapıştıramayacağını belirtir.
 
 ```
 DECLARE_MESSAGE_MAP virtual BOOL DoesAllowDynInsertBefore() const;
@@ -345,20 +345,20 @@ DECLARE_MESSAGE_MAP virtual BOOL DoesAllowDynInsertBefore() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan uygulama false değerini döndürür.
+Varsayılan uygulama FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework çağrıları `DoesAllowDynInsertBefore` dinamik bölmesinde sabitlemek için bir konum göründüğünde yöntemi. İşlev FALSE döndürürse, framework bölmesinde dış kenarları tüm dinamik bölmesinde yerleştirme izin vermez.
+Çerçeve, dinamik `DoesAllowDynInsertBefore` bir bölmeyi yapıştıracak bir konum aradığında yöntemi çağırır. İşlev FALSE döndürürse, çerçeve bölmenin dış kenarlarında herhangi bir dinamik bölmenin yerleştirmesine izin vermez.
 
-Genellikle, bir Outlook Çubuğu bir statik değişken olmayan denetimi olarak oluşturun. Bu işlev türetilen bir sınıfta geçersiz kılın ve bu davranışı değiştirmek için true değerini döndürür.
+Genellikle, sabit kayan olmayan denetim olarak bir Outlook çubuğu oluşturursunuz. Türetilmiş bir sınıfta bu işlevi geçersiz kılmak ve bu davranışı değiştirmek için TRUE döndürebilirsiniz.
 
 > [!NOTE]
->  Yerleştirme sırasında dinamik bölmeleri yerleştirilmiş statik bölmeleri durumunu denetlemek için dinamik bölmeleri statik bölmeleri sonra mümkün olduğunca dock.
+> Dinamik bölmeler kenetlenme yaparken sabitlenmiş statik bölmelerin durumunu denetlediğinden, mümkün olduğunca statik bölmelerden sonra dinamik bölmeleri yerleştirmeniz gerekir.
 
-##  <a name="floattab"></a>  CMFCOutlookBar::FloatTab
+## <a name="cmfcoutlookbarfloattab"></a><a name="floattab"></a>CMFCOutlookBar::FloatTab
 
-Bir bölme kayar.
+Bir bölmeyüzer.
 
 ```cpp
 virtual BOOL FloatTab(
@@ -371,28 +371,28 @@ virtual BOOL FloatTab(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[in] Kayan nokta bölmesi için bir işaretçi.
+[içinde] Kaydırmak için bölmeye bir işaretçi.
 
 *nTabID*<br/>
-[in] Kayan nokta için sekmesinde sıfır tabanlı dizini.
+[içinde] Float için sekme sıfır tabanlı dizin.
 
 *dockMethod*<br/>
-[in] Bölmesinde float yapmak için kullanılacak yöntemi belirtir.  Daha fazla bilgi için [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab).
+[içinde] Bölmeyi float yapmak için kullanılacak yöntemi belirtir.  Daha fazla bilgi için [Bkz. CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab).
 
 *bHide*<br/>
-[in] Kayan önce bölmesinde gizlemek için TRUE; Aksi takdirde FALSE. Bu yöntemin temel sınıftaki sürümün, bu parametre bir varsayılan değer yok.
+[içinde] Doğru yüzen önce bölmeyi gizlemek için; aksi takdirde, YANLIŞ. Bu yöntemin taban sınıf sürümünün aksine, bu parametrenin varsayılan bir değeri yoktur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölmesinde kaydırıldı TRUE; Aksi takdirde FALSE.
+Bölme yüzdürse DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem benzer [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab) dışında kayan nokta bir Outlook çubuğu denetimini son kalan sekmesinde etkinleştirmez.
+Bu yöntem [CBaseTabbedPane gibi::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab) dışında bir Outlook çubuğu denetiminde kalan son sekmeyi float için etkinleştirmez.
 
-##  <a name="getbuttonsfont"></a>  CMFCOutlookBar::GetButtonsFont
+## <a name="cmfcoutlookbargetbuttonsfont"></a><a name="getbuttonsfont"></a>CMFCOutlookBar::GetButtonsFont
 
-Metnin yazı tipini sayfada Outlook çubuğu düğme sekmeleri döndürür.
+Outlook çubuğunun sayfa düğmesi sekmelerinde metnin yazı tipini döndürür.
 
 ```cpp
 CFont* GetButtonsFont() const;
@@ -400,15 +400,15 @@ CFont* GetButtonsFont() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Metin Outlook sayfası düğmesi sekmeleri görüntülemek için kullanılan yazı nesnesine bir işaretçi.
+Outlook çubuğu sayfa düğme sekmelerinde metni görüntülemek için kullanılan yazı tipi nesnesine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Outlook sayfa düğmesi sekmelerinde metni görüntülemek için kullanılan yazı tipi almak için bu işlevi kullanın. Yazı tipi üzerinde çağırarak ayarlayabileceğiniz [CMFCOutlookBar::SetButtonsFont](#setbuttonsfont).
+Outlook sayfa düğmesi sekmelerinde metni görüntülemek için kullanılan yazı tipini almak için bu işlevi kullanın. CMFCOutlookBar'ı arayarak yazı tipini [ayarlayabilirsiniz::SetButtonsFont](#setbuttonsfont).
 
-##  <a name="gettabarea"></a>  CMFCOutlookBar::GetTabArea
+## <a name="cmfcoutlookbargettabarea"></a><a name="gettabarea"></a>CMFCOutlookBar::GetTabArea
 
-Boyutunu ve konumunu Outlook Çubuğu sekmesi alanlarının belirler.
+Outlook çubuğundaki sekme alanlarının boyutunu ve konumunu belirler.
 
 ```cpp
 virtual void GetTabArea(
@@ -419,22 +419,22 @@ virtual void GetTabArea(
 ### <a name="parameters"></a>Parametreler
 
 *rectTabAreaTop*<br/>
-[out] İşlevi döndüğünde, boyutunu ve konumunu (istemci koordinatlarında) üst sekme alanının içerir.
+[çıkış] İşlev döndüğünde üst sekme alanının boyutunu ve konumunu (istemci koordinatlarında) içerir.
 
 *rectTabAreaBottom*<br/>
-[out] İşlevi döndüğünde, boyutunu ve konumunu (istemci koordinatlarında) alt sekme alanının içerir.
+[çıkış] İşlev döndüğünde alt sekme alanının boyutunu ve konumunu (istemci koordinatlarında) içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve hedef bölmesine yerleştirme türünü belirlemek için bu yöntemi çağırır. Kullanıcı'nin hedef bölmesinin sekme alanı yerleştirilemediğinde bölmesi simge durumuna küçültülmüş framework belirlediğinde, ilk bölmesinde hedef bölmesinde yeni bir sekme eklemeyi dener. Aksi takdirde, uygun bir hedef bölmesinde tarafındaki ilk bölmesinde sabitlemek çalışır. Framework ek yerleştirilmiş bölmenin uyum sağlamak için bir kaydırıcı ile yeni bir kapsayıcı oluşturur.
+Çerçeve, hedef bölmeye yerleştirme türünü belirlemek için bu yöntemi çağırır. Çerçeve, kullanıcının hedef bölmenin sekme alanı üzerinde sabitlenecek bölmeyi sürüklediğini belirlediğinde, hedef bölmenin yeni bir sekmesi olarak ilk bölmeyi eklemeye çalışır. Aksi takdirde, ilk bölmeyi hedef bölmenin uygun bir tarafına yerleştirmeye çalışır. Çerçeve, ek kenetlenmiş bölmeyi yerleştirmek için kaydırıcılı yeni bir kapsayıcı oluşturur.
 
-Varsayılan uygulaması `GetTabArea` Outlook çubuğu olan statik; Outlook Çubuğu tüm istemci alanını döndürür, Outlook Çubuğu float olamaz. Aksi takdirde, sayfa düğmelerini Outlook çubuğu denetiminin altındaki ve üstündeki ele alan döndürür.
+Outlook çubuğu `GetTabArea` statikse Outlook çubuğunun tüm istemci alanını döndürür; diğer bir de, Outlook çubuğu yüzdüremiyorsa. Aksi takdirde, sayfa düğmelerinin Outlook çubuğu denetiminin üst ve alt kısmından ayırdığı alanı döndürür.
 
-Öğesinden türetilen sınıfta bu yöntemin `CMFCOutlookBar` bu davranışı değiştirmek için.
+Bu davranışı değiştirmek `CMFCOutlookBar` için türetilen sınıfta bu yöntemi geçersiz kılmak.
 
-##  <a name="ismode2003"></a>  CMFCOutlookBar::IsMode2003
+## <a name="cmfcoutlookbarismode2003"></a><a name="ismode2003"></a>CMFCOutlookBar::IsMode2003
 
-Outlook Çubuğu davranışını Microsoft Office Outlook 2003 taklit olup olmadığını belirtir.
+Outlook çubuğunun davranışının Microsoft Office Outlook 2003'ün davranışını taklit edip etmediğini belirtir.
 
 ```cpp
 BOOL IsMode2003() const;
@@ -442,15 +442,15 @@ BOOL IsMode2003() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Outlook Çubuğu Microsoft Office 2003 modunda çalışıyorsa sıfır olmayan; Aksi durumda 0.
+Outlook çubuğu Microsoft Office 2003 modunda çalışıyorsa sıfır aveya değildir; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanarak bu modu etkinleştirebilirsiniz [CMFCOutlookBar::SetMode2003](#setmode2003).
+[CmFCOutlookBar::SetMode2003'ün](#setmode2003)isini kullanarak bu modu etkinleştirebilirsiniz.
 
-##  <a name="onafteranimation"></a>  CMFCOutlookBar::OnAfterAnimation
+## <a name="cmfcoutlookbaronafteranimation"></a><a name="onafteranimation"></a>CMFCOutlookBar::OnafterAnimation
 
-Çağıran [CMFCOutlookBarTabCtrl::SetActiveTab](../../mfc/reference/cmfcoutlookbartabctrl-class.md#setactivetab) animasyon kullanarak etkin sekmede ayarlandıktan sonra.
+[CMFCOutlookBarTabCtrl tarafından çağrılan::Etkin](../../mfc/reference/cmfcoutlookbartabctrl-class.md#setactivetab) sekme animasyon kullanılarak ayarlandıktan sonra SetActiveTab.
 
 ```cpp
 virtual void OnAfterAnimation(int nPage);
@@ -459,15 +459,15 @@ virtual void OnAfterAnimation(int nPage);
 ### <a name="parameters"></a>Parametreler
 
 *nPage*<br/>
-[in] Etkin hale sekme sayfası sıfır tabanlı dizini.
+[içinde] Etkin hale getirilmiş sekme sayfasının sıfır tabanlı dizin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Etkin sekmede ayarlamanın görsel efekt animasyonu olup etkinleştirdiyseniz üzerinde bağlıdır. Daha fazla bilgi için [CMFCOutlookBarTabCtrl::EnableAnimation](../../mfc/reference/cmfcoutlookbartabctrl-class.md#enableanimation).
+Etkin sekmeyi ayarlamanın görsel etkisi animasyonu etkinleştirip etkinleştirmediğinize bağlıdır. Daha fazla bilgi için [cmfcOutlookBarTabCtrl::EnableAnimation'a](../../mfc/reference/cmfcoutlookbartabctrl-class.md#enableanimation)bakın.
 
-##  <a name="onbeforeanimation"></a>  CMFCOutlookBar::OnBeforeAnimation
+## <a name="cmfcoutlookbaronbeforeanimation"></a><a name="onbeforeanimation"></a>CMFCOutlookBar::OnBeforeAnimasyon
 
-Çağıran [CMFCOutlookBarTabCtrl::SetActiveTab](../../mfc/reference/cmfcoutlookbartabctrl-class.md#setactivetab) önce bir sekme sayfası animasyon kullanarak etkin sekme ayarlanır.
+[CMFCOutlookBarTabCtrl tarafından çağrılan::SetActiveTab](../../mfc/reference/cmfcoutlookbartabctrl-class.md#setactivetab) önce bir sekme sayfası animasyon kullanarak etkin sekme olarak ayarlanır.
 
 ```cpp
 virtual BOOL OnBeforeAnimation(int nPage);
@@ -476,17 +476,17 @@ virtual BOOL OnBeforeAnimation(int nPage);
 ### <a name="parameters"></a>Parametreler
 
 *nPage*<br/>
-[in] Yaklaşık etkin olarak ayarlanması için sekmesinde sayfasının sıfır tabanlı dizini.
+[içinde] Etkin olarak ayarlanacak sekme sayfasının sıfır tabanlı dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Animasyon yeni etkin sekmede ayarı kullanılması gerekiyorsa TRUE veya FALSE animasyon devre dışı bırakılmalıdır döndürür.
+Yeni etkin sekmeyi ayarlarken animasyon kullanılıyorsa TRUE'yu döndürür veya animasyon devre dışı bırakılırsa FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onscroll"></a>  CMFCOutlookBar::OnScroll
+## <a name="cmfcoutlookbaronscroll"></a><a name="onscroll"></a>CMFCOutlookBar::OnScroll
 
-Outlook çubuğu yukarı veya aşağı kaydırma, framework tarafından çağırılır.
+Outlook çubuğu yukarı veya aşağı kaydırılıyorsa çerçeve tarafından çağrılır.
 
 ```cpp
 virtual void OnScroll(BOOL bDown);
@@ -495,13 +495,13 @@ virtual void OnScroll(BOOL bDown);
 ### <a name="parameters"></a>Parametreler
 
 *bDown*<br/>
-[in] Outlook Çubuğu aşağı kaydırarak veya yukarı kaydırma, FALSE ise TRUE.
+[içinde] Outlook çubuğu aşağı kaydırıyorsa DOĞRU veya yukarı doğru kaydırıyorsa FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="removecustompage"></a>  CMFCOutlookBar::RemoveCustomPage
+## <a name="cmfcoutlookbarremovecustompage"></a><a name="removecustompage"></a>CMFCOutlookBar::RemoveCustomPage
 
-Özel bir Outlook Çubuğu sekme sayfası kaldırır.
+Özel Outlook çubuğu sekmesi sayfasını kaldırır.
 
 ```cpp
 BOOL RemoveCustomPage(
@@ -511,27 +511,27 @@ BOOL RemoveCustomPage(
 
 ### <a name="parameters"></a>Parametreler
 
-*Uıpage*<br/>
-[in] Sayfanın üst Outlook penceresindeki sıfır tabanlı dizini.
+*uiPage*<br/>
+[içinde] Üst Outlook penceresindesayfanın sıfır tabanlı dizin.
 
 *pTargetWnd*<br/>
-[in] Verildiğinde Outlook üst pencere.
+[içinde] Üst Outlook penceresini işareteder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özel sayfa başarıyla kaldırıldı olursa sıfır dışı; Aksi durumda 0.
+Özel sayfa başarıyla kaldırıldıysa sıfıra inme; aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel sayfalar silmek için bu işlevi çağırın. Sayfa kaldırıldığında denetim Kimliğini kullanılabilir kimlikleri havuzuna döndürülür.
+Özel sayfaları silmek için bu işlevi arayın. Sayfa kaldırıldığında denetim kimliği kullanılabilir kimlikhavuzuna döndürülür.
 
-Bir işaretçi sağlamalısınız [CMFCOutlookBarTabCtrl sınıfı](../../mfc/reference/cmfcoutlookbartabctrl-class.md) nesnesi şu anda kaldırılması için sayfayı bulunduğu. Kullanıcının çıkarılabilir sayfaları farklı Outlook çubuğu arasında taşıyabilirsiniz, ancak özel bir sayfa hakkında bilgiler için adlı Outlook Çubuğu nesnesini bulunduğu Not [CMFCOutlookBar::CreateCustomPage](#createcustompage).
+Kaldırılacak sayfanın şu anda bulunduğu [CMFCOutlookBTabCtrl Sınıf](../../mfc/reference/cmfcoutlookbartabctrl-class.md) nesnesine bir işaretçi sağlamanız gerekir. Bir kullanıcının farklı Outlook çubukları arasında ayrılabilir sayfaları taşıyabileceğini, ancak özel bir sayfayla ilgili bilgilerin CMFCOutlookBar adını vermiş olduğunuz Outlook çubuğu nesnesinde bulunduğunu [unutmayın::CreateCustomPage](#createcustompage).
 
-Kullanım [CBaseTabbedPane::GetUnderlyingWindow](../../mfc/reference/cbasetabbedpane-class.md#getunderlyingwindow) Outlook penceresine bir işaretçi elde edilir.
+Outlook penceresine bir işaretçi almak için [CBaseTabbedPane::GetUnderlyingWindow'u](../../mfc/reference/cbasetabbedpane-class.md#getunderlyingwindow) kullanın.
 
-##  <a name="setbuttonsfont"></a>  CMFCOutlookBar::SetButtonsFont
+## <a name="cmfcoutlookbarsetbuttonsfont"></a><a name="setbuttonsfont"></a>CMFCOutlookBar::SetButtonsFont
 
-Outlook çubuğu düğmelerini metnin yazı tipini ayarlar.
+Outlook çubuğunun düğmelerinde metnin yazı tipini ayarlar.
 
 ```cpp
 void SetButtonsFont(
@@ -542,18 +542,18 @@ void SetButtonsFont(
 ### <a name="parameters"></a>Parametreler
 
 *pFont*<br/>
-[in] Yeni yazı tipini belirtir.
+[içinde] Yeni yazı tipini belirtir.
 
 *bRedraw*<br/>
-[in] TRUE ise Outlook Çubuğu çizilir.
+[içinde] TRUE ise, Outlook çubuğu yeniden çizilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir outlook sekmesinde sayfa düğmelerini görüntülenen metnin yazı tipi ayarlamak için bu yöntemi kullanın.
+Outlook sekmesi sayfa düğmelerinde görüntülenen metin için yazı tipi ayarlamak için bu yöntemi kullanın.
 
-##  <a name="setmode2003"></a>  CMFCOutlookBar::SetMode2003
+## <a name="cmfcoutlookbarsetmode2003"></a><a name="setmode2003"></a>CMFCOutlookBar::SetMode2003
 
-Outlook Çubuğu davranışını Outlook 2003 taklit olup olmadığını belirtir.
+Outlook çubuğunun davranışının Outlook 2003'ün davranışını taklit edip etmediğini belirtir.
 
 ```cpp
 void SetMode2003(BOOL bMode2003=TRUE);
@@ -562,16 +562,16 @@ void SetMode2003(BOOL bMode2003=TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bMode2003*<br/>
-[in] TRUE ise, Office 2003 modu etkin.
+[içinde] TRUE ise, Office 2003 modu etkinleştirilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Office 2003 modunu devre dışı bırakmak veya etkinleştirmek için bu işlevi kullanın. Bu modda, Outlook Çubuğu bir ek araç çubuğu özelleştirme düğmesi vardır. Microsoft Office 2003'te Outlook Çubuğu davranışını Outlook Çubuğu davranışını uyar.
+Office 2003 modunu etkinleştirmek veya devre dışı kalmak için bu işlevi kullanın. Bu modda, Outlook çubuğunda özelleştirme düğmesi içeren ek bir araç çubuğu vardır. Outlook çubuğunun davranışı, Microsoft Office 2003'teki Outlook çubuğunun davranışına uygundur.
 
-Varsayılan olarak, bu modu devre dışıdır.
+Varsayılan olarak, bu mod devre dışı bırakılır.
 
 > [!NOTE]
->  Bu işlev, önce çağrılmalıdır [CMFCOutlookBar::Create](#create).
+> Bu işlev [CMFCOutlookBar](#create)önce çağrılmalıdır::Oluştur .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

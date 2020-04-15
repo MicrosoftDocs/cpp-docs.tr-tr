@@ -1,5 +1,5 @@
 ---
-title: CCRTHeap sınıfı
+title: CCRTHeap Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CCRTHeap
@@ -11,16 +11,16 @@ f1_keywords:
 helpviewer_keywords:
 - CCRTHeap class
 ms.assetid: 321bd6c5-1856-4ff7-8590-95044a1209f7
-ms.openlocfilehash: 3c5030b9cfbfd636a783d27bcc8f9469f8348acb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: caf5508079332689c2fff42f130951375dc35512
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62246068"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81327155"
 ---
-# <a name="ccrtheap-class"></a>CCRTHeap sınıfı
+# <a name="ccrtheap-class"></a>CCRTHeap Sınıfı
 
-Bu sınıfın uyguladığı [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md) CRT yığın işlevlerinin kullanarak.
+Bu sınıf CRT yığın işlevlerini kullanarak [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,20 +32,20 @@ class CCRTHeap : public IAtlMemMgr
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CCRTHeap::Allocate](#allocate)|Bir bellek bloğu ayırmak için bu yöntemi çağırın.|
-|[CCRTHeap::Free](#free)|Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest bırakmak için bu yöntemi çağırın.|
-|[CCRTHeap::GetSize](#getsize)|Bu bellek yöneticisi tarafından ayrılan bir bellek bloğu ayrılmış boyutunu almak için bu yöntemi çağırın.|
-|[CCRTHeap::Reallocate](#reallocate)|Bu bellek yöneticisi tarafından ayrılan bellek yeniden ayırmak üzere bu yöntemi çağırın.|
+|[CCRTHeap::Ayırma](#allocate)|Bellek bloğunu ayırmak için bu yöntemi çağırın.|
+|[CCRTHeap::Ücretsiz](#free)|Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest kaldırmak için bu yöntemi arayın.|
+|[CCRTHeap::GetSize](#getsize)|Bu bellek yöneticisi tarafından ayrılan bellek bloğu ayrılmış boyutunu almak için bu yöntemi arayın.|
+|[CCRTHeap::Yeniden tahsis](#reallocate)|Bu bellek yöneticisi tarafından ayrılan belleği yeniden tahsis etmek için bu yöntemi arayın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CCRTHeap` CRT kullanarak ayırma işlevleri, İşlevler dahil olmak üzere, yığın bellek uygulayan [malloc](../../c-runtime-library/reference/malloc.md), [ücretsiz](../../c-runtime-library/reference/free.md), [realloc](../../c-runtime-library/reference/realloc.md), ve [_msize](../../c-runtime-library/reference/msize.md).
+`CCRTHeap`[malloc,](../../c-runtime-library/reference/malloc.md) [ücretsiz,](../../c-runtime-library/reference/free.md) [realloc](../../c-runtime-library/reference/realloc.md)ve [_msize](../../c-runtime-library/reference/msize.md)dahil olmak üzere CRT yığın işlevlerini kullanarak bellek ayırma işlevleri uygular.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md).
+[IAtlMemmgr](../../atl/reference/iatlmemmgr-class.md)örneğine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -55,11 +55,11 @@ class CCRTHeap : public IAtlMemMgr
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlmem.h
+**Üstbilgi:** atlmem.h
 
-##  <a name="allocate"></a>  CCRTHeap::Allocate
+## <a name="ccrtheapallocate"></a><a name="allocate"></a>CCRTHeap::Ayırma
 
-Bir bellek bloğu ayırmak için bu yöntemi çağırın.
+Bellek bloğunu ayırmak için bu yöntemi çağırın.
 
 ```
 virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
@@ -67,22 +67,22 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBytes*<br/>
-İstenen bayt yeni bellek bloğu sayısı.
+*nBayt*<br/>
+Yeni bellek bloğunda istenen bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni ayrılan bellek bloğu başlangıcı için bir işaretçi döndürür.
+Yeni ayrılan bellek bloğunun başlangıcına bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı [CCRTHeap::Free](#free) veya [CCRTHeap::Reallocate](#reallocate) bu yöntem tarafından ayrılan bellek boşaltmak için.
+[CCRTHeap'ı arayın::Ücretsiz](#free) veya [CCRTHeap::Bu](#reallocate) yöntemle ayrılan belleği serbest etmek için yeniden bulunun.
 
-Kullanılarak uygulanan [malloc](../../c-runtime-library/reference/malloc.md).
+[Malloc](../../c-runtime-library/reference/malloc.md)kullanılarak uygulanır.
 
-##  <a name="free"></a>  CCRTHeap::Free
+## <a name="ccrtheapfree"></a><a name="free"></a>CCRTHeap::Ücretsiz
 
-Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest bırakmak için bu yöntemi çağırın.
+Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest kaldırmak için bu yöntemi arayın.
 
 ```
 virtual void Free(void* p) throw();
@@ -90,16 +90,16 @@ virtual void Free(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi. NULL, geçerli bir değer ve hiçbir şey yapmaz.
+*P*<br/>
+Bu bellek yöneticisi tarafından daha önce tahsis edilen belleğe işaretçi. NULL geçerli bir değerdir ve hiçbir şey yapmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanılarak uygulanan [ücretsiz](../../c-runtime-library/reference/free.md).
+[Ücretsiz](../../c-runtime-library/reference/free.md)kullanılarak uygulanır.
 
-##  <a name="getsize"></a>  CCRTHeap::GetSize
+## <a name="ccrtheapgetsize"></a><a name="getsize"></a>CCRTHeap::GetSize
 
-Bu bellek yöneticisi tarafından ayrılan bir bellek bloğu ayrılmış boyutunu almak için bu yöntemi çağırın.
+Bu bellek yöneticisi tarafından ayrılan bellek bloğu ayrılmış boyutunu almak için bu yöntemi arayın.
 
 ```
 virtual size_t GetSize(void* p) throw();
@@ -107,20 +107,20 @@ virtual size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
+*P*<br/>
+Bu bellek yöneticisi tarafından daha önce tahsis edilen belleğe işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan bellek blok boyutu bayt cinsinden döndürür.
+Baytlar halinde ayrılan bellek bloğunun boyutunu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanılarak uygulanan [_msize](../../c-runtime-library/reference/msize.md).
+[_msize](../../c-runtime-library/reference/msize.md)kullanılarak uygulanır.
 
-##  <a name="reallocate"></a>  CCRTHeap::Reallocate
+## <a name="ccrtheapreallocate"></a><a name="reallocate"></a>CCRTHeap::Yeniden tahsis
 
-Bu bellek yöneticisi tarafından ayrılan bellek yeniden ayırmak üzere bu yöntemi çağırın.
+Bu bellek yöneticisi tarafından ayrılan belleği yeniden tahsis etmek için bu yöntemi arayın.
 
 ```
 virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
@@ -128,23 +128,23 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
+*P*<br/>
+Bu bellek yöneticisi tarafından daha önce tahsis edilen belleğe işaretçi.
 
-*nBytes*<br/>
-İstenen bayt yeni bellek bloğu sayısı.
+*nBayt*<br/>
+Yeni bellek bloğunda istenen bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni ayrılan bellek bloğu başlangıcı için bir işaretçi döndürür.
+Yeni ayrılan bellek bloğunun başlangıcına bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı [CCRTHeap::Free](#free) bu yöntem tarafından ayrılan bellek boşaltmak için. Kullanılarak uygulanan [realloc](../../c-runtime-library/reference/realloc.md).
+[CCRTHeap'ı arayın::Bu](#free) yöntemle ayrılan belleği serbest çesitlemek için ücretsiz. [Realloc](../../c-runtime-library/reference/realloc.md)kullanılarak uygulanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
 [CComHeap Sınıfı](../../atl/reference/ccomheap-class.md)<br/>
 [CWin32Heap Sınıfı](../../atl/reference/cwin32heap-class.md)<br/>
 [CLocalHeap Sınıfı](../../atl/reference/clocalheap-class.md)<br/>

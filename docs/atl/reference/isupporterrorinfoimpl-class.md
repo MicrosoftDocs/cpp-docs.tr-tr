@@ -1,5 +1,5 @@
 ---
-title: Iupporterrorınfoımpl sınıfı
+title: ISupportErrorInfoImpl Sınıfı
 ms.date: 06/13/2019
 f1_keywords:
 - ISupportErrorInfoImpl
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - ISupportErrorInfoImpl class
 - error information, ATL
 ms.assetid: e33a4b11-a123-41cf-bcea-7b19743902af
-ms.openlocfilehash: d5e7f087f6646940777ae8b2d2a4ea888fdd3593
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 4c60b58ba697f00b146077a2cdecd727fe2cac02
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69495370"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81326375"
 ---
-# <a name="isupporterrorinfoimpl-class"></a>Iupporterrorınfoımpl sınıfı
+# <a name="isupporterrorinfoimpl-class"></a>ISupportErrorInfoImpl Sınıfı
 
-Bu sınıf, [ıupporterrorınfo arabiriminin](/windows/win32/api/oaidl/nn-oaidl-isupporterrorinfo) varsayılan bir uygulamasını sağlar ve yalnızca tek bir arabirim bir nesne üzerinde hata oluşturduğunda kullanılabilir.
+Bu [sınıf, iSupportErrorInfo Arabiriminin](/windows/win32/api/oaidl/nn-oaidl-isupporterrorinfo) varsayılan uygulamasını sağlar ve yalnızca tek bir arabirim bir nesne üzerinde hata oluşturduğunda kullanılabilir.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,22 +34,22 @@ class ATL_NO_VTABLE ISupportErrorInfoImpl
 
 ### <a name="parameters"></a>Parametreler
 
-*piıd*<br/>
-[IErrorInfo](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo)destekleyen BIR arabirimin IID 'sine yönelik bir işaretçi.
+*piid*<br/>
+[IErrorInfo](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo)destekleyen bir arabirimin IID için bir işaretçi.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Iupporterrorınfoımpl:: InterfaceSupportsErrorInfo](#interfacesupportserrorinfo)|Tarafından `riid` tanımlanan arabirimin [IErrorInfo](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo) arabirimini destekleyip desteklemediğini gösterir.|
+|[ISupportErrorInfoImpl::InterfaceSupportsErrorInfo](#interfacesupportserrorinfo)|Tanımlanan `riid` arabirimin [iErrorInfo](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo) arabirimini destekleyip desteklemediğini gösterir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[Iupporterrorınfo arabirimi](/windows/win32/api/oaidl/nn-oaidl-isupporterrorinfo) istemciye hata bilgilerini geri dönebilmesini sağlar. Kullanan nesneler uygulamalıdır `ISupportErrorInfo`. `IErrorInfo`
+[ISupportErrorInfo Arabirimi,](/windows/win32/api/oaidl/nn-oaidl-isupporterrorinfo) hata bilgilerinin istemciye döndürülmesini sağlar. Kullanan `IErrorInfo` nesneler uygulanmalıdır. `ISupportErrorInfo`
 
-Sınıfı `ISupportErrorInfoImpl` varsayılan bir `ISupportErrorInfo` uygulaması sağlar ve yalnızca tek bir arabirim bir nesne üzerinde hata oluşturduğunda kullanılabilir. Örneğin:
+Sınıf `ISupportErrorInfoImpl` varsayılan bir `ISupportErrorInfo` uygulama sağlar ve yalnızca tek bir arabirim bir nesne üzerinde hata lar oluşturduğunda kullanılabilir. Örneğin:
 
 [!code-cpp[NVC_ATL_COM#48](../../atl/codesnippet/cpp/isupporterrorinfoimpl-class_1.h)]
 
@@ -61,11 +61,11 @@ Sınıfı `ISupportErrorInfoImpl` varsayılan bir `ISupportErrorInfo` uygulamas�
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcom. h
+**Başlık:** atlcom.h
 
-##  <a name="interfacesupportserrorinfo"></a>Iupporterrorınfoımpl:: InterfaceSupportsErrorInfo
+## <a name="isupporterrorinfoimplinterfacesupportserrorinfo"></a><a name="interfacesupportserrorinfo"></a>ISupportErrorInfoImpl::InterfaceSupportsErrorInfo
 
-Tarafından `riid` tanımlanan arabirimin [IErrorInfo](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo) arabirimini destekleyip desteklemediğini gösterir.
+Tanımlanan `riid` arabirimin [iErrorInfo](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo) arabirimini destekleyip desteklemediğini gösterir.
 
 ```cpp
 STDMETHOD(InterfaceSupportsErrorInfo)(REFIID riid);
@@ -73,8 +73,8 @@ STDMETHOD(InterfaceSupportsErrorInfo)(REFIID riid);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK [ıupporterrorınfo:: InterfaceSupportsErrorInfo](/windows/win32/api/oaidl/nf-oaidl-isupporterrorinfo-interfacesupportserrorinfo) bölümüne bakın.
+Bkz. [ISupportErrorInfo::InterfaceSupportsErrorInfo](/windows/win32/api/oaidl/nf-oaidl-isupporterrorinfo-interfacesupportserrorinfo) Windows SDK içinde.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)

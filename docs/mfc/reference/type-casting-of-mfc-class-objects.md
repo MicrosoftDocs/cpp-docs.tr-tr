@@ -8,29 +8,29 @@ helpviewer_keywords:
 - casting types [MFC]
 - macros [MFC], casting pointers
 ms.assetid: e138465e-c35f-4e84-b788-bd200ccf2f0e
-ms.openlocfilehash: c7586f3c3f3aefd78fa868cc847df27e8aac58ab
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 953acc32c3510b31c265f2d64d0a013f6dee06cc
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611655"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372888"
 ---
 # <a name="type-casting-of-mfc-class-objects"></a>MFC Sınıf Nesnelerine İlişkin Tür Atama
 
-Tür atama makroları ile veya olmadan cast geçerli olup olmadığını denetleyerek belirli sınıfının bir nesneye işaret eden bir işaretçi verilen bir işaretçiye için bir yol sağlar.
+Tür döküm makroları, dökümün yasal olup olmadığını kontrol etmekle veya denetlemeden belirli bir işaretçiyi belirli bir sınıfın nesnesine işaret eden bir işaretçiye atmanın bir yolunu sağlar.
 
-Aşağıdaki tabloda, MFC tür atama makroları listeler.
+Aşağıdaki tabloda MFC tipi döküm makroları listelenir.
 
-### <a name="macros-that-cast-pointers-to-mfc-class-objects"></a>MFC sınıf nesnelerine işaretçiler atama makroları
+### <a name="macros-that-cast-pointers-to-mfc-class-objects"></a>İşaretçileri MFC Sınıf Nesnelerine Atan Makrolar
 
 |||
 |-|-|
-|[DYNAMIC_DOWNCAST](#dynamic_downcast)|Bir sınıf nesnesine bir işaretçi işaretçisi dönüştürme geçerli olup olmadığını denetlerken çevirir.|
-|[STATIC_DOWNCAST](#static_downcast)|Bir işaretçi bir nesne için bir sınıftan ilgili türünde bir işaretçiye çevirir. Nesne değilse, hata ayıklama yapısında, bir onay neden olan bir "tür" hedef türü.|
+|[DYNAMIC_DOWNCAST](#dynamic_downcast)|Dökümyasal olup olmadığını kontrol ederken bir sınıf nesnesi için bir işaretçi atar.|
+|[STATIC_DOWNCAST](#static_downcast)|Bir nesneye işaretçi atar, bir sınıftan ilgili türdeki bir işaretçiye. Hata ayıklama yapısında, nesne hedef türü "tür" değilse, bir Assert neden olur.|
 
-##  <a name="dynamic_downcast"></a>  DYNAMIC_DOWNCAST
+## <a name="dynamic_downcast"></a><a name="dynamic_downcast"></a>DYNAMIC_DOWNCAST
 
-Bir sınıf nesnesine bir işaretçi dönüştürme geçerli olup olmadığını denetlerken işaretçiye için kullanışlı bir yol sağlar.
+Döküm yasal olup olmadığını kontrol ederken bir işaretçi bir sınıf nesnesine bir işaretçi döküm kullanışlı bir yol sağlar.
 
 ```
 DYNAMIC_DOWNCAST(class, pointer)
@@ -38,21 +38,21 @@ DYNAMIC_DOWNCAST(class, pointer)
 
 ### <a name="parameters"></a>Parametreler
 
-*class*<br/>
+*sınıf*<br/>
 Bir sınıfın adı.
 
-*İşaretçi*<br/>
-Bir işaretçi işaretçisi türünde bir nesne başvurusuna *sınıfı*.
+*pointer*<br/>
+Bir işaretçi türü *sınıfının*bir nesneye işaretçi için döküm için .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Makro cast *işaretçi* parametresi bir nesnenin işaretçisi *sınıfı* parametrenin türü.
+Makro, *işaretçi* parametresini *sınıf* parametresinin türündeki bir nesneye işaretçiye atar.
 
-İşaretçi tarafından başvurulan nesne ise, bir "tür" tanımlanan sınıfı makro uygun işaretçiyi döndürür. Yasal bir yayın değil ise, makro NULL döndürür.
+İşaretçi tarafından başvurulan nesne tanımlanan sınıf "tür" ise, makro uygun işaretçidöndürür. Yasal bir döküm değilse, makro NULL döndürür.
 
-##  <a name="static_downcast"></a>  STATIC_DOWNCAST
+## <a name="static_downcast"></a><a name="static_downcast"></a>STATIC_DOWNCAST
 
-Yayınları *pobject* işaretçisi bir *$class_name* nesne.
+Bir *işaretçiye* *class_name* bir nesneye pobject atar.
 
 ```
 STATIC_DOWNCAST(class_name, pobject)
@@ -60,24 +60,24 @@ STATIC_DOWNCAST(class_name, pobject)
 
 ### <a name="parameters"></a>Parametreler
 
-*$class_name*<br/>
-Dönüştürme için sınıfı adı.
+*class_name*<br/>
+Atan sınıfın adı.
 
-*pobject*<br/>
-İşaretçiyi bir işaretçiye dönüştürülebilir bir *$class_name* nesne.
+*Pobject*<br/>
+Bir *class_name* nesneye işaretçiye atanacak işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*pobject* gerekir ya da NULL olamaz ya da doğrudan türetilmiş bir sınıfın veya dolaylı olarak gelen bir nesneye işaret *$class_name*. Tanımlanan _DEBUG önişlemci sembolü uygulamanızla yapılarında makrosu, İDDİA *pobject* NULL değil veya olmayan bir nesneye işaret ediyorsa bir "tür" Belirtilen sınıf *$class_name*parametre (bkz [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof)). İçinde olmayan **_DEBUG** yapılar, makrosu, herhangi bir tür denetlemesi olmadan cast gerçekleştirir.
+*pobject* ya NULL olmalı, ya da doğrudan veya dolaylı olarak, *class_name*türetilmiş bir sınıfın bir nesneye işaret . Tanımlanan _DEBUG önişlemci simgesiyle uygulamanızın yapılarında, *makro, pobject* NULL değilse veya *class_name* parametresinde belirtilen sınıfa "tür" olmayan bir nesneyi işaret ederse,(bkz. [CObject:IsKindOf).](../../mfc/reference/cobject-class.md#iskindof) **_DEBUG** olmayan yapılarda, makro herhangi bir tür denetimi olmadan döküm gerçekleştirir.
 
-Belirtilen sınıf *$class_name* parametresi türetilen gerekir `CObject` DECLARE_DYNAMIC ımplement_dynamıc, DECLARE_DYNCREATE ve IMPLEMENT_DYNCREATE, veya declare_serıal ve IMPLEMENT_ kullanmalıdır Seri makroları olarak makalesinde açıklanan [CObject sınıfı: CObject'ten sınıf türetme](../../mfc/deriving-a-class-from-cobject.md).
+*class_name* parametresinde belirtilen sınıf, `CObject` [CObject Class: CObject'ten Bir Sınıf Türeyen](../../mfc/deriving-a-class-from-cobject.md)DECLARE_DYNAMIC ve IMPLEMENT_DYNAMIC, DECLARE_DYNCREATE ve IMPLEMENT_DYNCREATE veya DECLARE_SERIAL ve IMPLEMENT_SERIAL makrolarından türetilmeli ve kullanılmalıdır.
 
-Örneğin, bir işaretçiye dönüştürme `CMyDoc`adlı `pMyDoc`, işaretçisi `CDocument` Bu ifade kullanarak:
+Örneğin, bu ifadeyi kullanmak `CMyDoc`için `pMyDoc`bir işaretçiye işaretçi atabilirsiniz: `CDocument`
 
 [!code-cpp[NVC_MFCDocView#197](../../mfc/codesnippet/cpp/type-casting-of-mfc-class-objects_1.cpp)]
 
-Varsa `pMyDoc` doğrudan veya dolaylı olarak türetilmiş bir nesneye işaret etmiyor `CDocument`, makro ASSERT.
+Doğrudan `pMyDoc` veya dolaylı olarak türetilen bir `CDocument`nesneye işaret etmiyorsa, makro Assert olacaktır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve Küreseller](../../mfc/reference/mfc-macros-and-globals.md)

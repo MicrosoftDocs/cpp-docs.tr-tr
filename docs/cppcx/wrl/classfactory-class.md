@@ -17,16 +17,16 @@ helpviewer_keywords:
 - Microsoft::WRL::ClassFactory::QueryInterface method
 - Microsoft::WRL::ClassFactory::Release method
 ms.assetid: f13e6bce-722b-4f18-b7cf-3ffa6345c1db
-ms.openlocfilehash: ccc1c43e8c68053a773883c25704cdea086bd0b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b738cc8f439e6653162ab99b0a26e87aa8fee36
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398740"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372673"
 ---
 # <a name="classfactory-class"></a>ClassFactory Sınıfı
 
-Temel işlevselliğini uygular `IClassFactory` arabirimi.
+`IClassFactory` Arabirimin temel işlevselliğini uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,19 +53,19 @@ class ClassFactory :
 ### <a name="parameters"></a>Parametreler
 
 *I0*<br/>
-Sıfırıncı arabirim.
+Sıfırın arabirimi.
 
 *I1*<br/>
-İlk arabirim.
+İlk arayüz.
 
 *I2*<br/>
-İkinci arabirim.
+İkinci arayüz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yazılımınız `ClassFactory` Fabrika kullanıcı tanımlı bir uygulama sağlamak için.
+Kullanıcı `ClassFactory` tanımlı bir fabrika uygulaması sağlamak için yararlanın.
 
-Aşağıdaki programlama deseni nasıl kullanılacağını gösteren [uygular](implements-structure.md) yapısı üzerinde bir sınıf üreteci üçten fazla arabirimleri belirtin.
+Aşağıdaki programlama deseni, bir sınıf fabrikasında üçten fazla arabirim belirtmek için [Uygulamalar](implements-structure.md) yapısının nasıl kullanılacağını gösterir.
 
 `struct MyFactory : ClassFactory<Implements<I1, I2, I3>, I4, I5>`
 
@@ -73,18 +73,18 @@ Aşağıdaki programlama deseni nasıl kullanılacağını gösteren [uygular](i
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Ad                                        | Açıklama
+Adı                                        | Açıklama
 ------------------------------------------- | -----------
 [ClassFactory::ClassFactory](#classfactory) |
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Ad                                            | Açıklama
+Adı                                            | Açıklama
 ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------
-[ClassFactory::AddRef](#addref)                 | Geçerli başvuru sayısını artırır `ClassFactory` nesne.
-[ClassFactory::LockServer](#lockserver)         | Artırır veya azaltır temel sayısını nesneleri geçerli tarafından izlenen `ClassFactory` nesne.
-[ClassFactory::QueryInterface](#queryinterface) | Parametresi tarafından belirtilen arabirim işaretçisi alır.
-[ClassFactory::Release](#release)               | Başvuru için geçerli sayısını azaltır `ClassFactory` nesne.
+[ClassFactory::Addref](#addref)                 | Geçerli `ClassFactory` nesne için başvuru sayısını artırımı.
+[ClassFactory::LockServer](#lockserver)         | Geçerli `ClassFactory` nesne tarafından izlenen temel nesnelerin sayısını artışlar veya bunlar ayarı.
+[ClassFactory::QueryInterface](#queryinterface) | Parametre ile belirtilen arabirime bir işaretçi alır.
+[ClassFactory::Sürüm](#release)               | Geçerli `ClassFactory` nesne için başvuru sayısını eriter.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -110,13 +110,13 @@ Ad                                            | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** module.h
+**Üstbilgi:** module.h
 
-**Namespace:** Microsoft::WRL
+**Ad alanı:** Microsoft::WRL
 
-## <a name="addref"></a>ClassFactory::AddRef
+## <a name="classfactoryaddref"></a><a name="addref"></a>ClassFactory::Addref
 
-Geçerli başvuru sayısını artırır `ClassFactory` nesne.
+Geçerli `ClassFactory` nesne için başvuru sayısını artırımı.
 
 ```cpp
 STDMETHOD_(
@@ -127,17 +127,17 @@ STDMETHOD_(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+S_OK başarılı olursa; aksi takdirde, başarısızlığı açıklayan bir HRESULT.
 
-## <a name="classfactory"></a>ClassFactory::ClassFactory
+## <a name="classfactoryclassfactory"></a><a name="classfactory"></a>ClassFactory::ClassFactory
 
 ```cpp
 WRL_NOTHROW ClassFactory();
 ```
 
-## <a name="lockserver"></a>ClassFactory::LockServer
+## <a name="classfactorylockserver"></a><a name="lockserver"></a>ClassFactory::LockServer
 
-Artırır veya azaltır temel sayısını nesneleri geçerli tarafından izlenen `ClassFactory` nesne.
+Geçerli `ClassFactory` nesne tarafından izlenen temel nesnelerin sayısını artışlar veya bunlar ayarı.
 
 ```cpp
 STDMETHOD(
@@ -147,20 +147,20 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*fLock*<br/>
-**doğru** izlenen nesne sayısını artırmak için. **false** izlenen nesnelerin sayısını azaltmak için.
+*Sürü*<br/>
+**true** izlenen nesnelerin sayısını n için doğru. izlenen nesnelerin sayısını vermek için **yanlış.**
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, E_FAIL.
+S_OK başarılı olursa; aksi takdirde, E_FAIL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`ClassFactory` temel alınan örneği nesneleri izler [Modülü](module-class.md) sınıfı.
+`ClassFactory`[Modül](module-class.md) sınıfının altında yatan bir örnekteki nesneleri izler.
 
-## <a name="queryinterface"></a>ClassFactory::QueryInterface
+## <a name="classfactoryqueryinterface"></a><a name="queryinterface"></a>ClassFactory::QueryInterface
 
-Parametresi tarafından belirtilen arabirim işaretçisi alır.
+Parametre ile belirtilen arabirime bir işaretçi alır.
 
 ```cpp
 STDMETHOD(
@@ -170,19 +170,19 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*<br/>
-Bir arabirim kimliği.
+*Riid*<br/>
+Arayüz kimliği.
 
-*ppvObject*<br/>
-Bu işlem tamamlandığında, parametre tarafından belirtilen arabirim işaretçisi *riid*.
+*ppvNesne*<br/>
+Bu işlem tamamlandığında, parametre *riid*tarafından belirtilen arabirimin bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+S_OK başarılı olursa; aksi takdirde, başarısızlığı açıklayan bir HRESULT.
 
-## <a name="release"></a>ClassFactory::Release
+## <a name="classfactoryrelease"></a><a name="release"></a>ClassFactory::Sürüm
 
-Başvuru için geçerli sayısını azaltır `ClassFactory` nesne.
+Geçerli `ClassFactory` nesne için başvuru sayısını eriter.
 
 ```cpp
 STDMETHOD_(
@@ -193,4 +193,4 @@ STDMETHOD_(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+S_OK başarılı olursa; aksi takdirde, başarısızlığı açıklayan bir HRESULT.

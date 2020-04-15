@@ -1,5 +1,5 @@
 ---
-title: CComHeap sınıfı
+title: CComHeap Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComHeap
@@ -11,19 +11,19 @@ f1_keywords:
 helpviewer_keywords:
 - CComHeap class
 ms.assetid: c74183ce-98ae-46fb-b186-93ea4cf0222b
-ms.openlocfilehash: 1ded73047b895a44a22bdd5730886f7fc088c77a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a38d1147e718870c03af84ec1487e226805b956e
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497344"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81327829"
 ---
-# <a name="ccomheap-class"></a>CComHeap sınıfı
+# <a name="ccomheap-class"></a>CComHeap Sınıfı
 
-Bu sınıf, COM bellek ayırma işlevlerini kullanarak [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) uygular.
+Bu sınıf COM bellek ayırma işlevlerini kullanarak [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) uygular.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,20 +35,20 @@ class CComHeap : public IAtlMemMgr
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CComHeap:: allocate](#allocate)|Bellek bloğunu ayırmak için bu yöntemi çağırın.|
-|[CComHeap:: ücretsiz](#free)|Bu bellek Yöneticisi tarafından ayrılan bir bellek bloğunu boşaltmak için bu yöntemi çağırın.|
-|[CComHeap:: GetSize](#getsize)|Bu bellek Yöneticisi tarafından ayrılan bir bellek bloğunun ayrılan boyutunu almak için bu yöntemi çağırın.|
-|[CComHeap:: yeniden tahsis](#reallocate)|Bu bellek Yöneticisi tarafından ayrılan belleği yeniden ayırmak için bu yöntemi çağırın.|
+|[CComHeap::Ayırma](#allocate)|Bellek bloğunu ayırmak için bu yöntemi çağırın.|
+|[CComHeap::Ücretsiz](#free)|Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest kaldırmak için bu yöntemi arayın.|
+|[CComHeap::GetSize](#getsize)|Bu bellek yöneticisi tarafından ayrılan bellek bloğu ayrılmış boyutunu almak için bu yöntemi arayın.|
+|[CComHeap::Yer tahsisi](#reallocate)|Bu bellek yöneticisi tarafından ayrılan belleği yeniden tahsis etmek için bu yöntemi arayın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComHeap`[CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc), [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree), [ımayırma:: GetSize](/windows/win32/api/objidlbase/nf-objidlbase-imalloc-getsize)ve [CoTaskMemRealloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc)dahil olmak üzere com ayırma işlevlerini kullanarak bellek ayırma işlevlerini uygular. Ayrılabilen maksimum bellek miktarı INT_MAX (2147483647) bayta eşittir.
+`CComHeap`[CoTaskMemAlloc,](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) [CoTaskMemFree,](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) [IMalloc::GetSize](/windows/win32/api/objidlbase/nf-objidlbase-imalloc-getsize)ve [CoTaskMemRealloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc)dahil olmak üzere COM ayırma işlevlerini kullanarak bellek ayırma işlevlerini uygular. Ayrılabilen maksimum bellek miktarı INT_MAX (2147483647) baytlara eşittir.
 
 ## <a name="example"></a>Örnek
 
-[IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)örneğine bakın.
+[IAtlMemmgr](../../atl/reference/iatlmemmgr-class.md)örneğine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -58,9 +58,9 @@ class CComHeap : public IAtlMemMgr
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi** ATLComMem.h
+**Üstbilgi:** ATLComMem.h
 
-##  <a name="allocate"></a>CComHeap:: allocate
+## <a name="ccomheapallocate"></a><a name="allocate"></a>CComHeap::Ayırma
 
 Bellek bloğunu ayırmak için bu yöntemi çağırın.
 
@@ -70,7 +70,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBytes*<br/>
+*nBayt*<br/>
 Yeni bellek bloğunda istenen bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -79,13 +79,13 @@ Yeni ayrılan bellek bloğunun başlangıcına bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem tarafından ayrılan belleği serbest bırakmak için [CComHeap:: Free](#free) veya [CComHeap::](#reallocate) ' i çağırın.
+[CComHeap'ı arayın::Ücretsiz](#free) veya [CComHeap::Bu](#reallocate) yöntemle ayrılan belleği serbest etmek için yeniden bulunun.
 
 [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc)kullanılarak uygulanır.
 
-##  <a name="free"></a>CComHeap:: ücretsiz
+## <a name="ccomheapfree"></a><a name="free"></a>CComHeap::Ücretsiz
 
-Bu bellek Yöneticisi tarafından ayrılan bir bellek bloğunu boşaltmak için bu yöntemi çağırın.
+Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest kaldırmak için bu yöntemi arayın.
 
 ```
 virtual void Free(void* p) throw();
@@ -93,16 +93,16 @@ virtual void Free(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Bu bellek Yöneticisi tarafından daha önce ayrılan bellek işaretçisi. NULL geçerli bir değerdir ve hiçbir şey yapmaz.
+*P*<br/>
+Bu bellek yöneticisi tarafından daha önce tahsis edilen belleğe işaretçi. NULL geçerli bir değerdir ve hiçbir şey yapmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
 [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree)kullanılarak uygulanır.
 
-##  <a name="getsize"></a>CComHeap:: GetSize
+## <a name="ccomheapgetsize"></a><a name="getsize"></a>CComHeap::GetSize
 
-Bu bellek Yöneticisi tarafından ayrılan bir bellek bloğunun ayrılan boyutunu almak için bu yöntemi çağırın.
+Bu bellek yöneticisi tarafından ayrılan bellek bloğu ayrılmış boyutunu almak için bu yöntemi arayın.
 
 ```
 virtual size_t GetSize(void* p) throw();
@@ -110,20 +110,20 @@ virtual size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Bu bellek Yöneticisi tarafından daha önce ayrılan bellek işaretçisi.
+*P*<br/>
+Bu bellek yöneticisi tarafından daha önce tahsis edilen belleğe işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan bellek bloğunun boyutunu bayt cinsinden döndürür.
+Baytlar halinde ayrılan bellek bloğunun boyutunu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Imayırma:: GetSize](/windows/win32/api/objidlbase/nf-objidlbase-imalloc-getsize)kullanılarak uygulanır.
+[IMalloc kullanılarak uygulanan::GetSize](/windows/win32/api/objidlbase/nf-objidlbase-imalloc-getsize).
 
-##  <a name="reallocate"></a>CComHeap:: yeniden tahsis
+## <a name="ccomheapreallocate"></a><a name="reallocate"></a>CComHeap::Yer tahsisi
 
-Bu bellek Yöneticisi tarafından ayrılan belleği yeniden ayırmak için bu yöntemi çağırın.
+Bu bellek yöneticisi tarafından ayrılan belleği yeniden tahsis etmek için bu yöntemi arayın.
 
 ```
 virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
@@ -131,10 +131,10 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
-Bu bellek Yöneticisi tarafından daha önce ayrılan bellek işaretçisi.
+*P*<br/>
+Bu bellek yöneticisi tarafından daha önce tahsis edilen belleğe işaretçi.
 
-*nBytes*<br/>
+*nBayt*<br/>
 Yeni bellek bloğunda istenen bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -143,14 +143,14 @@ Yeni ayrılan bellek bloğunun başlangıcına bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem tarafından ayrılan belleği serbest bırakmak için [CComHeap:: Free](#free) çağırın.
+[CComHeap'ı arayın::Bu](#free) yöntemle ayrılan belleği serbest serbest etmek için ücretsiz.
 
-[CoTaskMemRealloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc)kullanılarak uygulandı.
+[CoTaskMemRealloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc)kullanılarak uygulanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[DynamicConsumer örneği](../../overview/visual-cpp-samples.md)<br/>
-[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
+[DinamikTüketici Örneği](../../overview/visual-cpp-samples.md)<br/>
+[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
 [CWin32Heap Sınıfı](../../atl/reference/cwin32heap-class.md)<br/>
 [CLocalHeap Sınıfı](../../atl/reference/clocalheap-class.md)<br/>
 [CGlobalHeap Sınıfı](../../atl/reference/cglobalheap-class.md)<br/>

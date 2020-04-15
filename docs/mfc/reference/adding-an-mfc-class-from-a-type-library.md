@@ -6,35 +6,35 @@ helpviewer_keywords:
 - MFC, adding classes from type libraries
 - type libraries, adding MFC classes from
 ms.assetid: aba40476-3cfb-47af-990e-ae2e9e0d79cf
-ms.openlocfilehash: e8264de2c717c874da157cb29ad5e336e3ecbd0f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf9c763a215a4880d5b0ad206f6a347341fea9eb
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62296754"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81371717"
 ---
 # <a name="adding-an-mfc-class-from-a-type-library"></a>Tür Kitaplığından Bir MFC Sınıfı Ekleme
 
-Kullanılabilen tür kitaplığında bir arabirimden bir MFC sınıfı oluşturmak için bu sihirbazı kullanın. Bir MFC sınıfı için ekleyebileceğiniz bir [MFC uygulaması](../../mfc/reference/creating-an-mfc-application.md), bir [MFC DLL](../../mfc/reference/creating-an-mfc-dll-project.md), veya bir [MFC ActiveX denetimi](../../mfc/reference/creating-an-mfc-activex-control.md).
+Kullanılabilir tür kitaplığındaki arabirimden bir MFC sınıfı oluşturmak için bu sihirbazı kullanın. Bir [MFC uygulamasına,](../../mfc/reference/creating-an-mfc-application.md)Bir [MFC DLL'ye](../../mfc/reference/creating-an-mfc-dll-project.md)veya [MFC ActiveX denetimine](../../mfc/reference/creating-an-mfc-activex-control.md)Bir MFC sınıfı ekleyebilirsiniz.
 
 > [!NOTE]
->  Tür kitaplığından bir sınıf eklemek için etkin Otomasyonu ile MFC projenizi oluşturmak gerekmez.
+> Bir tür kitaplığından bir sınıf eklemek için Otomasyon etkinleştirilmiş olan MFC projenizi oluşturmanız gerekmez.
 
-Bir tür kitaplığı ikili yöntemlerin parametreleri ve dönüş türleri birlikte tanımlama, bir bileşen tarafından kullanıma sunulan arabirimler açıklamasını içerir. Tür kitaplığı içinde görünmesi için kaydedilmelidir **kullanılabilir tür kitaplıklarını** Typelib sihirbazından Sınıf Ekle listesinde. Bkz: "içinde dağıtılmış COM: Kitaplıkları ve dil tümleştirme daha fazla bilgi için MSDN Kitaplığı'nda tür".
+Tür kitaplığı, bir bileşen tarafından açığa çıkarılan arabirimlerin ikili açıklamasını içerir ve yöntemleri parametreleri ve dönüş türleri ile birlikte tanımlar. Typelib Sihirbazı'ndan Sınıf Ekle'deki **Kullanılabilir tür kitaplıkları** listesinde görünmesi için tür kitaplığınız kayıtlı olmalıdır. Daha fazla bilgi için MSDN kitaplığında "İç Dağıtılmış COM: Tür Kitaplıkları ve Dil Tümleştirmesi" başlıklı yazıya bakın.
 
-### <a name="to-add-an-mfc-class-from-a-type-library"></a>Tür kitaplığından bir MFC sınıfı ekleme
+### <a name="to-add-an-mfc-class-from-a-type-library"></a>Tür kitaplığından MFC sınıfı eklemek için
 
-1. Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), sınıfa eklemek istediğiniz proje adına sağ tıklayın.
+1. Çözüm **Gezgini** veya [Sınıf Görünümü'nde,](/visualstudio/ide/viewing-the-structure-of-code)sınıfı eklemek istediğiniz projenin adını sağ tıklatın.
 
-1. Kısayol menüsünden tıklayın **Ekle**ve ardından **sınıfı Ekle**.
+1. Kısayol menüsünden **Ekle'yi**tıklatın ve sonra **Sınıf Ekle'yi**tıklatın.
 
-1. İçinde [sınıfı Ekle](../../ide/add-class-dialog-box.md) Şablonlar bölmesinde, iletişim kutusu **typelib'den MFC sınıfı**ve ardından **açık** görüntülenecek [Typelib sihirbazından sınıf ekleme ](../../mfc/reference/add-class-from-typelib-wizard.md).
+1. Sınıf [Ekle](../../ide/add-class-dialog-box.md) iletişim kutusunda, Şablonlar bölmesinde **Typelib'den MFC Sınıfı'nı**tıklatın ve ardından [Typelib Sihirbazı'ndan Sınıf Ekle'yi](../../mfc/reference/add-class-from-typelib-wizard.md)görüntülemek için **Aç'ı** tıklatın.
 
-Sihirbazda bir tür kitaplığında birden fazla sınıf ekleyebilirsiniz. Benzer şekilde, tek bir sihirbaz oturumunda birden fazla tür kitaplığından sınıfları ekleyebilirsiniz.
+Sihirbazda, tür kitaplığına birden fazla sınıf ekleyebilirsiniz. Aynı şekilde, tek bir sihirbaz oturumunda birden fazla tür kitaplığı sınıfları ekleyebilirsiniz.
 
-MFC sınıfından türetilen bir sihirbaz [COleDispatchDriver](../../mfc/reference/coledispatchdriver-class.md), seçilen tür kitaplığından eklediğiniz her arabirim için. `COleDispatchDriver` OLE Otomasyonu nesnesi etkin tarafını uygular.
+Sihirbaz, seçili tür kitaplığından eklediğiniz her arabirim için [COleDispatchDriver'dan](../../mfc/reference/coledispatchdriver-class.md)türetilen bir MFC sınıfı oluşturur. `COleDispatchDriver`OLE otomasyonunun istemci tarafını uygular.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Otomasyon İstemcileri](../../mfc/automation-clients.md)<br/>
-[Otomasyon istemcileri: Tür kitaplıklarını kullanma](../../mfc/automation-clients-using-type-libraries.md)
+[Otomasyon Müşterileri](../../mfc/automation-clients.md)<br/>
+[Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma](../../mfc/automation-clients-using-type-libraries.md)

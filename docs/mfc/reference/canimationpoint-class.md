@@ -1,5 +1,5 @@
 ---
-title: CAnimationPoint sınıfı
+title: CAnimationPoint Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAnimationPoint
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - CAnimationPoint [MFC], m_xValue
 - CAnimationPoint [MFC], m_yValue
 ms.assetid: 5dc4d46f-e695-4681-b15c-544b78b3e317
-ms.openlocfilehash: 15f06d2fa3478570d2f784879a13e7b68515e746
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 19f02010b6b73573a4800152e40c592fd1736ad5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62218544"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81369727"
 ---
-# <a name="canimationpoint-class"></a>CAnimationPoint sınıfı
+# <a name="canimationpoint-class"></a>CAnimationPoint Sınıfı
 
-Koordinatlarının animasyonu oluşturulabilen bir nokta işlevselliğini uygular.
+Koordinatları animasyonlu olabilecek bir noktanın işlevselliğini uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,48 +47,48 @@ class CAnimationPoint : public CAnimationBaseObject;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationPoint::CAnimationPoint](#canimationpoint)|Fazla Yüklendi. CAnimationPoint bir nesne oluşturur.|
+|[CAnimationPoint::CAnimationPoint](#canimationpoint)|Fazla Yüklendi. CAnimationPoint nesnesi oluşturuyor.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationPoint::AddTransition](#addtransition)|X geçişlerini ekler ve Y koordinatları.|
-|[CAnimationPoint::GetDefaultValue](#getdefaultvalue)|Varsayılan değerleri döndürür X ve Y koordinatları.|
-|[CAnimationPoint::GetValue](#getvalue)|Geçerli bir değer döndürür.|
-|[CAnimationPoint::GetX](#getx)|X koordinatı CAnimationVariable için erişim sağlar.|
-|[CAnimationPoint::GetY](#gety)|Erişim için CAnimationVariable Y koordinatı sağlar.|
-|[CAnimationPoint::SetDefaultValue](#setdefaultvalue)|Varsayılan değerini ayarlar.|
+|[CAnimationPoint::AddTransition](#addtransition)|X ve Y koordinatları için geçişler ekler.|
+|[CAnimationPoint::GetDefaultValue](#getdefaultvalue)|X ve Y koordinatları için varsayılan değerleri döndürür.|
+|[CAnimationPoint::GetValue](#getvalue)|Geçerli değeri verir.|
+|[CAnimationPoint::GetX](#getx)|X koordinatı için CAnimationVariable'e erişim sağlar.|
+|[CAnimationPoint::Gety](#gety)|Y koordinatı için CAnimationVariable'e erişim sağlar.|
+|[CAnimationPoint::SetDefaultValue](#setdefaultvalue)|Varsayılan değeri ayarlar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationPoint::GetAnimationVariableList](#getanimationvariablelist)|Kapsüllenmiş animasyon değişkenleri bir listesine koyar. (Geçersiz kılmaları [CAnimationBaseObject::GetAnimationVariableList](../../mfc/reference/canimationbaseobject-class.md#getanimationvariablelist).)|
+|[CAnimationPoint::GetAnimationVariableList](#getanimationvariablelist)|Kapsüllenmiş animasyon değişkenlerini bir listeye koyar. [(CAnimationBaseObject geçersiz kılar::GetAnimationVariableList](../../mfc/reference/canimationbaseobject-class.md#getanimationvariablelist).)|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationPoint::operator CPoint](#operator_cpoint)|Bir CAnimationPoint için bir CPoint dönüştürür.|
-|[CAnimationPoint::operator =](#operator_eq)|CAnimationPoint için ptSrc atar.|
+|[CAnimationPoint::operatör CPoint](#operator_cpoint)|CAnimationPoint'i CPoint'e dönüştürür.|
+|[CAnimationPoint::operator=](#operator_eq)|CAnimationPoint'e ptSrc atar.|
 
-### <a name="protected-data-members"></a>Korumalı veri üyeleri
+### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[CAnimationPoint::m_xValue](#m_xvalue)|X temsil eden kapsüllenmiş animasyon değişkeni animasyon noktasının koordinat.|
-|[CAnimationPoint::m_yValue](#m_yvalue)|Animasyon noktası Y koordinatını temsil eden kapsüllenmiş animasyon değişkeni.|
+|[CAnimationPoint::m_xValue](#m_xvalue)|Animasyon noktasının X koordinatını temsil eden kapsüllü animasyon değişkeni.|
+|[CAnimationPoint::m_yValue](#m_yvalue)|Animasyon noktasının Y koordinatını temsil eden kapsüllü animasyon değişkeni.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-CAnimationPoint sınıfı iki CAnimationVariable nesneleri kapsüller ve uygulamalarda bir noktayı temsil edebilir. Örneğin, bu sınıf, bir ekranın (örneğin, metin dizesi, daire, noktası vb.) herhangi bir nesnenin konumuna animasyon uygulamak için kullanabilirsiniz. Bu sınıf kullanmak için yalnızca bu sınıfın bir nesnesi, animasyon denetleyicisini CAnimationController::AddAnimationObject kullanarak ekleyin ve uygulanacak AddTransition her geçiş için çağrı X ve/veya Y koordinatları.
+CAnimationPoint sınıfı iki CAnimationVariable nesnesini kapsüller ve uygulamalarda bir noktayı temsil edebilir. Örneğin, ekrandaki herhangi bir nesnenin konumunu (metin dizesi, daire, nokta vb. gibi) canlandırmak için bu sınıfı kullanabilirsiniz. Uygulamada bu sınıfı kullanmak için, bu sınıfın bir nesnesini anlık olarak eklemeniz, CAnimationController'ı kullanarak animasyon denetleyicisine ekleyin::AddAnimationObject ve X ve/veya Y koordinatlarına uygulanacak her geçiş için AddTransition'ı arayın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)
+[Cobject](../../mfc/reference/cobject-class.md)
 
 [CAnimationBaseObject](../../mfc/reference/canimationbaseobject-class.md)
 
@@ -96,11 +96,11 @@ CAnimationPoint sınıfı iki CAnimationVariable nesneleri kapsüller ve uygulam
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller.h
 
-##  <a name="addtransition"></a>  CAnimationPoint::AddTransition
+## <a name="canimationpointaddtransition"></a><a name="addtransition"></a>CAnimationPoint::AddTransition
 
-X geçişlerini ekler ve Y koordinatları.
+X ve Y koordinatları için geçişler ekler.
 
 ```
 void AddTransition(
@@ -111,18 +111,18 @@ void AddTransition(
 ### <a name="parameters"></a>Parametreler
 
 *pXTransition*<br/>
-Koordinatları X geçiş için bir işaretçi.
+X koordinatları için geçiş için bir işaretçi.
 
 *pYTransition*<br/>
-Bir işaretçi geçiş y koordinatı.
+Y koordinatı için geçiş için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen geçiş için X animasyon değişkenlere uygulanacak geçişleri iç listesini eklemek için bu işlevi çağırın ve Y koordinatları. Geçişleri eklediğinizde, bunlar değil hemen uygulanır ve bir iç listesinde depolanır. Geçiş (belirli bir değeri için bir görsel taslağı eklenebilir) uygulandığını CAnimationController::AnimateGroup çağırdığınızda. Bir geçişi bir koordinat uygulamak gerekmiyorsa NULL geçirebilirsiniz.
+X ve Y koordinatları için animasyon değişkenlerine uygulanacak iç geçişler listesine belirtilen geçişleri eklemek için bu işlevi arayın. Geçişler eklediğinizde, bunlar hemen uygulanmaz ve dahili bir listede depolanır. Geçişler CAnimationController::AnimateGroup'u aradiğinizde uygulanır (belirli bir değer için bir film şeridine eklenir). Koordinatlardan birine geçiş uygulamanız gerekmiyorsa, NULL'u geçebilirsiniz.
 
-##  <a name="canimationpoint"></a>  CAnimationPoint::CAnimationPoint
+## <a name="canimationpointcanimationpoint"></a><a name="canimationpoint"></a>CAnimationPoint::CAnimationPoint
 
-CAnimationPoint bir nesne oluşturur.
+CAnimationPoint nesnesi oluşturuyor.
 
 ```
 CAnimationPoint();
@@ -137,24 +137,24 @@ CAnimationPoint(
 ### <a name="parameters"></a>Parametreler
 
 *ptDefault*<br/>
-Varsayılan noktası koordinatları belirtir.
+Varsayılan nokta koordinatlarını belirtir.
 
 *nGroupID*<br/>
-Grup kimliğini belirtir.
+Grup Kimliğini belirtir.
 
 *nObjectID*<br/>
-Nesne kimliğini belirtir.
+Nesne Kimliğini belirtir.
 
 *dwUserData*<br/>
-Kullanıcı tanımlı veri belirtir.
+Kullanıcı tanımlı verileri belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-CAnimationPoint varsayılan özelliklere sahip bir nesne oluşturur: nokta koordinatları varsayılan, grup kimliği ve nesne kimliği 0 olarak ayarlanır.
+Varsayılan özelliklere sahip CAnimationPoint nesnesi yapıları: varsayılan nokta koordinatları, Grup Kimliği ve Object ID 0 olarak ayarlanır.
 
-##  <a name="getanimationvariablelist"></a>  CAnimationPoint::GetAnimationVariableList
+## <a name="canimationpointgetanimationvariablelist"></a><a name="getanimationvariablelist"></a>CAnimationPoint::GetAnimationVariableList
 
-Kapsüllenmiş animasyon değişkenleri bir listesine koyar.
+Kapsüllenmiş animasyon değişkenlerini bir listeye koyar.
 
 ```
 virtual void GetAnimationVariableList(CList<CAnimationVariable*, CAnimationVariable*>& lst);
@@ -162,12 +162,12 @@ virtual void GetAnimationVariableList(CList<CAnimationVariable*, CAnimationVaria
 
 ### <a name="parameters"></a>Parametreler
 
-*lst*<br/>
-İşlevi döndüğünde, X ve Y koordinatları temsil eden iki CAnimationVariable nesnelerine işaretçiler içerir.
+*Lst*<br/>
+İşlev döndüğünde, X ve Y koordinatlarını temsil eden iki CAnimationVariable nesnesine işaretçiler içerir.
 
-##  <a name="getdefaultvalue"></a>  CAnimationPoint::GetDefaultValue
+## <a name="canimationpointgetdefaultvalue"></a><a name="getdefaultvalue"></a>CAnimationPoint::GetDefaultValue
 
-Varsayılan değerleri döndürür X ve Y koordinatları.
+X ve Y koordinatları için varsayılan değerleri döndürür.
 
 ```
 CPoint GetDefaultValue();
@@ -175,15 +175,15 @@ CPoint GetDefaultValue();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir nokta içeren varsayılan değeri.
+Varsayılan değer içeren bir nokta.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucu veya SetDefaultValue tarafından önceden ayarlanmış varsayılan değerini almak için bu işlevi çağırın.
+Daha önce oluşturucu veya SetDefaultValue tarafından ayarlanmış varsayılan değeri almak için bu işlevi arayın.
 
-##  <a name="getvalue"></a>  CAnimationPoint::GetValue
+## <a name="canimationpointgetvalue"></a><a name="getvalue"></a>CAnimationPoint::GetValue
 
-Geçerli bir değer döndürür.
+Geçerli değeri verir.
 
 ```
 BOOL GetValue(CPoint& ptValue);
@@ -192,19 +192,19 @@ BOOL GetValue(CPoint& ptValue);
 ### <a name="parameters"></a>Parametreler
 
 *ptValue*<br/>
-Çıktı. Bu yöntem döndürüldüğünde, geçerli değeri içerir.
+Çıkış. Bu yöntem döndüğünde geçerli değeri içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli değer başarıyla alındığında TRUE, Aksi durumda FALSE.
+DOĞRU, geçerli değer başarıyla alındıysa; aksi takdirde YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Animasyon noktası geçerli değerini almak için bu işlevi çağırın. X için bu yöntem başarısız olursa veya temel alınan COM nesnelerini ve Y koordinatları başlatılmamış ptValue Oluşturucusu veya SetDefaultValue önceden ayarlanmış varsayılan değeri içerir.
+Animasyon noktasının geçerli değerini almak için bu işlevi çağırın. Bu yöntem başarısız olursa veya X ve Y koordinatları için com nesneleri temel e-baş harflerine sahip değilse, ptValue daha önce oluşturucu veya SetDefaultValue tarafından ayarlanmış varsayılan değer içerir.
 
-##  <a name="getx"></a>  CAnimationPoint::GetX
+## <a name="canimationpointgetx"></a><a name="getx"></a>CAnimationPoint::GetX
 
-X koordinatı CAnimationVariable için erişim sağlar.
+X koordinatı için CAnimationVariable'e erişim sağlar.
 
 ```
 CAnimationVariable& GetX();
@@ -212,15 +212,15 @@ CAnimationVariable& GetX();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kapsüllenmiş CAnimationVariable X temsil eden bir başvuru koordine edin.
+X koordinatı temsil eden kapsüllü CAnimationVariable için bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel alınan CAnimationVariable X temsil eden doğrudan erişim elde etmek için bu yöntem çağırabilirsiniz koordine edin.
+X koordinatLarını temsil eden temel CAnimationVariable'e doğrudan erişim elde etmek için bu yöntemi arayabilirsiniz.
 
-##  <a name="gety"></a>  CAnimationPoint::GetY
+## <a name="canimationpointgety"></a><a name="gety"></a>CAnimationPoint::Gety
 
-Erişim için CAnimationVariable Y koordinatı sağlar.
+Y koordinatı için CAnimationVariable'e erişim sağlar.
 
 ```
 CAnimationVariable& GetY();
@@ -228,31 +228,31 @@ CAnimationVariable& GetY();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kapsüllenmiş CAnimationVariable Y koordinatını temsil eden bir başvuru.
+Y koordinatLarını temsil eden kapsüllü CAnimationVariable'e bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel alınan CAnimationVariable Y koordinatını temsil eden doğrudan erişim elde etmek için bu yöntem çağırabilirsiniz.
+Y koordinatLarını temsil eden altta yatan CAnimationVariable'e doğrudan erişim elde etmek için bu yöntemi arayabilirsiniz.
 
-##  <a name="m_xvalue"></a>  CAnimationPoint::m_xValue
+## <a name="canimationpointm_xvalue"></a><a name="m_xvalue"></a>CAnimationPoint::m_xValue
 
-X temsil eden kapsüllenmiş animasyon değişkeni animasyon noktasının koordinat.
+Animasyon noktasının X koordinatını temsil eden kapsüllü animasyon değişkeni.
 
 ```
 CAnimationVariable m_xValue;
 ```
 
-##  <a name="m_yvalue"></a>  CAnimationPoint::m_yValue
+## <a name="canimationpointm_yvalue"></a><a name="m_yvalue"></a>CAnimationPoint::m_yValue
 
-Animasyon noktası Y koordinatını temsil eden kapsüllenmiş animasyon değişkeni.
+Animasyon noktasının Y koordinatını temsil eden kapsüllü animasyon değişkeni.
 
 ```
 CAnimationVariable m_yValue;
 ```
 
-##  <a name="operator_cpoint"></a>  CAnimationPoint::operator CPoint
+## <a name="canimationpointoperator-cpoint"></a><a name="operator_cpoint"></a>CAnimationPoint::operatör CPoint
 
-Bir CAnimationPoint için bir CPoint dönüştürür.
+CAnimationPoint'i CPoint'e dönüştürür.
 
 ```
 operator CPoint();
@@ -260,15 +260,15 @@ operator CPoint();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-CAnimationPoint CPoint olarak geçerli değeri.
+CAnimationPoint'in CPoint olarak geçerli değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, GetValue dahili olarak çağırır. GetValue herhangi bir nedenle başarısız olursa, döndürülen noktası X için varsayılan değerleri içeren ve Y koordinatları.
+Bu işlev dahili olarak GetValue çağırır. GetValue herhangi bir nedenle başarısız olursa, döndürülen nokta X ve Y koordinatları için varsayılan değerleri içerir.
 
-##  <a name="operator_eq"></a>  CAnimationPoint::operator =
+## <a name="canimationpointoperator"></a><a name="operator_eq"></a>CAnimationPoint::operator=
 
-CAnimationPoint için ptSrc atar.
+CAnimationPoint'e ptSrc atar.
 
 ```
 void operator=(const CPoint& ptSrc);
@@ -277,15 +277,15 @@ void operator=(const CPoint& ptSrc);
 ### <a name="parameters"></a>Parametreler
 
 *ptSrc*<br/>
-CPoint veya NOKTASINA ifade eder.
+CPoint veya POINT'e başvurur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-CAnimationPoint için ptSrc atar. Bu işleç, SetDefaultValue çağırdığı oluşturulduktan, X ve Y koordinatları için animasyon başlamadan önce temel alınan COM yeniden oluşturur nesneleri, yapmanız önerilir. Bu olayları (ValueChanged veya IntegerValueChanged) animasyon nesnesine abone, bu olayları yeniden etkinleştirmeniz gerekir.
+CAnimationPoint'e ptSrc atar. Animasyon başlamadan önce bunu yapmanız önerilir, çünkü bu işleç, x ve y koordinatları için temel COM nesnelerini yeniden oluşturan SetDefaultValue'ı çağırır. Bu animasyon nesnesini olaylara abone olduysanız (ValueChanged veya IntegerValueChanged), bu olayları yeniden etkinleştirmeniz gerekir.
 
-##  <a name="setdefaultvalue"></a>  CAnimationPoint::SetDefaultValue
+## <a name="canimationpointsetdefaultvalue"></a><a name="setdefaultvalue"></a>CAnimationPoint::SetDefaultValue
 
-Varsayılan değerini ayarlar.
+Varsayılan değeri ayarlar.
 
 ```
 void SetDefaultValue(const POINT& ptDefault);
@@ -294,11 +294,11 @@ void SetDefaultValue(const POINT& ptDefault);
 ### <a name="parameters"></a>Parametreler
 
 *ptDefault*<br/>
-Varsayılan noktası değeri belirtir.
+Varsayılan nokta değerini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Animasyon nesnesine bir varsayılan değer ayarlamak için bu işlevi kullanın. Bu yöntemleri atar varsayılan değerler animasyon noktasının X ve Y koordinatları. Ayrıca bunlar oluşturulmuşsa temel COM nesneleri yeniden oluşturur. Bu olayları (ValueChanged veya IntegerValueChanged) animasyon nesnesine abone, bu olayları yeniden etkinleştirmeniz gerekir.
+Animasyon nesnesine varsayılan değer ayarlamak için bu işlevi kullanın. Bu yöntem, varsayılan değerleri animasyon noktasının X ve Y koordinatlarına atar. Ayrıca, oluşturuldukları takdirde altta yatan COM nesnelerini yeniden oluşturur. Bu animasyon nesnesini olaylara abone olduysanız (ValueChanged veya IntegerValueChanged), bu olayları yeniden etkinleştirmeniz gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

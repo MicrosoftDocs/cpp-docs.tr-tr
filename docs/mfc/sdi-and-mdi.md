@@ -8,23 +8,23 @@ helpviewer_keywords:
 - single document interface (SDI) [MFC], applications
 - MDI [MFC], vs. SDI
 ms.assetid: bb7239d9-4759-4f63-bfff-44a04b48c067
-ms.openlocfilehash: 725249e5a71e8ee097c641e5972e3cc8bb0e3e33
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9730e7baf9589c4b05a60703c619aae2e941bdec
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62308543"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81372763"
 ---
 # <a name="sdi-and-mdi"></a>SDI ve MDI
 
-MFC tek Belgeli Arabirim (SDI) ve Çok Belgeli Arabirim (MDI) uygulamaları ile çalışmak kolaylaştırır.
+MFC, hem tek belgearabiri (SDI) hem de birden çok belgearabirimi (MDI) uygulamalarıyla çalışmayı kolaylaştırır.
 
-SDI uygulamaları yalnızca bir açık belge çerçeve penceresi bir kerede izin verin. MDI uygulamaları birden çok belge çerçeve pencereleri uygulama aynı örneğinde açık olmasını sağlar. Bir MDI uygulaması içeren her ayrı bir belge içinde birden çok hangi MDI çerçeve pencereleri kendilerini olan alt pencereleri açılabilen bir pencere içerir. Bazı uygulamalarda, alt öğe pencerelerini grafik windows ve elektronik windows gibi farklı türlerde olabilir. Bu durumda, MDI alt pencereleri farklı türlerde etkin menü çubuğunu değiştirebilirsiniz.
+SDİ uygulamaları aynı anda yalnızca bir açık belge çerçevesi penceresine izin verir. MDI uygulamaları, birden çok belge çerçeve penceresinin bir uygulamanın aynı örneğinde açılmasına izin verir. Bir MDI uygulaması, her biri ayrı bir belge içeren, çerçeve pencereleri kendileri olan birden çok MDI alt penceresinin açıldığı bir pencereye sahiptir. Bazı uygulamalarda, alt pencereler grafik pencereleri ve elektronik tablo pencereleri gibi farklı türde olabilir. Bu durumda, farklı türdeki MDI alt pencereleretkinleştirildiğinde menü çubuğu değişebilir.
 
 > [!NOTE]
->  İşletim sistemi "Belge merkezli" görünümü başlamıştır çünkü Windows 95 ve daha sonra yaygın olarak SDI uygulamalardır.
+> İşletim sistemi "belge merkezli" bir görünüm benimsemiştir, çünkü Windows 95 ve daha sonra altında, uygulamalar genellikle SDI vardır.
 
-Daha fazla bilgi için [belgeler, görünümler ve çerçeve](../mfc/documents-views-and-the-framework.md).
+Daha fazla bilgi için [Bkz. Belgeler, Görünümler ve Çerçeve.](../mfc/documents-views-and-the-framework.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

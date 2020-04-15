@@ -12,65 +12,65 @@ helpviewer_keywords:
 - preprocessor, directives
 - COM, type library header file
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
-ms.openlocfilehash: afd05e7380ec3838fe9763be23ccfae338adb4fb
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 9cdfef091b659151f427c381e386f0e83396e741
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220269"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81332063"
 ---
 # <a name="import-directive-c"></a>#import yönergesi (C++)
 
-**C++Belirli**
+**C++ Özel**
 
-Bir tür kitaplığından bilgi birleştirmek için kullanılır. Tür kitaplığının içeriği, genellikle COM arabirimlerini açıklayan C++ sınıflara dönüştürülür.
+Tür kitaplığından gelen bilgileri birleştirmek için kullanılır. Tür kitaplığın içeriği, çoğunlukla COM arabirimlerini açıklayan C++ sınıflarına dönüştürülür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#import** "*dosya adı*" \[ *öznitelikleri*] \
-> **#import** \< *Dosya*adıöznitelikleri> ]\[
+> **#import** "*dosya* \[adı " *öznitelikleri*]\
+> **#import** \< *dosya adı*> \[*öznitelikleri*]
 
 ### <a name="parameters"></a>Parametreler
 
-*kısaltın*\
-İçeri aktarılacak tür kitaplığını belirtir. *Dosya adı* aşağıdaki türlerinden biri olabilir:
+*Dosyaadı*\
+İçe aktarılabilmek için tür kitaplığını belirtir. *Dosya adı* aşağıdaki türlerden biri olabilir:
 
-- Bir. olb,. tlb veya. dll dosyası gibi bir tür kitaplığı içeren bir dosyanın adı. Anahtar sözcüğü `file:`, her dosya adının önüne alabilir.
+- .olb, .tlb veya .dll dosyası gibi tür kitaplığı içeren bir dosyanın adı. Anahtar kelime, `file:`, her dosya adından önce gelebilir.
 
-- Tür kitaplığındaki bir denetimin ProgID 'si. Anahtar sözcüğü `progid:`, her bir ProgID 'den önce olabilir. Örneğin:
+- Tür kitaplığında bir denetimin progid'i. Anahtar kelime, `progid:`, her progid önce olabilir. Örneğin:
 
     ```cpp
     #import "progid:my.prog.id.1.5"
     ```
 
-   ProgID 'ler hakkında daha fazla bilgi için bkz. [YERELLEŞTIRME kimliği ve sürüm numarasını belirtme](#_predir_the_23import_directive_specifyingthelocalizationidandversionnumber).
+   Progids hakkında daha fazla bilgi için [bkz.](#_predir_the_23import_directive_specifyingthelocalizationidandversionnumber)
 
-   64 bit işletim sisteminde 32 bitlik bir çapraz derleyici kullandığınızda, derleyici yalnızca 32-bit kayıt defteri kovanını okuyabilir. 64 bit tür kitaplığı derlemek ve kaydettirmek için yerel 64 bit derleyicisini kullanmak isteyebilirsiniz.
+   64 bit işletim sisteminde 32 bit çapraz derleyici kullandığınızda, derleyici yalnızca 32 bit kayıt defteri kovanı okuyabilir. 64 bit türünde bir kitaplık oluşturmak ve kaydetmek için yerel 64 bit derleyiciyi kullanmak isteyebilirsiniz.
 
-- Tür kitaplığının kitaplık KIMLIĞI. Anahtar sözcüğü `libid:`, her bir kitaplık kimliğinin önüne eklenebilir. Örneğin:
+- Tür kitaplığın kitaplık kimliği. Anahtar kelime, `libid:`, her kitaplık kimliği önce olabilir. Örneğin:
 
     ```cpp
     #import "libid:12341234-1234-1234-1234-123412341234" version("4.0") lcid("9")
     ```
 
-   Veya `version` `libid:` [belirtmezseniz,](#_predir_the_23import_directive_specifyingthelocalizationidandversionnumber) ' ye`progid:` uygulanan kurallar da ' a uygulanır. `lcid`
+   Belirtmezseniz `version` `lcid`veya , uygulanan [rules](#_predir_the_23import_directive_specifyingthelocalizationidandversionnumber) `progid:` kurallar `libid:`da uygulanır.
 
-- Yürütülebilir (. exe) dosya.
+- Çalıştırılabilir (.exe) dosyası.
 
-- Bir tür kitaplığı kaynağı (örn. ocx) içeren bir kitaplık (. dll) dosyası.
+- Tür kitaplığı kaynağı (.ocx gibi) içeren bir kitaplık (.dll) dosyası.
 
-- Bir tür kitaplığını tutan bileşik bir belge.
+- Tür kitaplığı tutan bileşik belge.
 
-- **LoadTypeLib** API 'si tarafından anlaşılabilecek diğer dosya biçimleri.
+- **LoadTypeLib** API tarafından anlaşılabilecek diğer dosya biçimleri.
 
-*özelliklerine*\
-Bir veya daha fazla [#import özniteliği](#_predir_the_23import_directive_import_attributes). Öznitelikleri boşluk veya virgül ile ayırın. Örneğin:
+*Öznitelik*\
+Bir veya daha fazla [#import öznitelikleri](#_predir_the_23import_directive_import_attributes). Bir boşluk veya virgül ile ayrı öznitelikleri. Örneğin:
 
 ```cpp
 #import "..\drawctl\drawctl.tlb" no_namespace, raw_interfaces_only
 ```
 
-\-veya
+\-veya-
 
 ```cpp
 #import "..\drawctl\drawctl.tlb" no_namespace raw_interfaces_only
@@ -78,92 +78,92 @@ Bir veya daha fazla [#import özniteliği](#_predir_the_23import_directive_impor
 
 ## <a name="remarks"></a>Açıklamalar
 
-### <a name="_predir_the_23import_directive_searchorderforfilename"></a>Dosya adı için arama sırası
+### <a name="search-order-for-filename"></a><a name="_predir_the_23import_directive_searchorderforfilename"></a>Dosya adı için arama sırası
 
-*dosya adı* , isteğe bağlı olarak bir dizin belirtimi tarafından yapılır. Dosya adı var olan bir dosyayı adı olmalıdır. İki sözdizimi formu arasındaki fark, yol tam olarak belirtilmediğinde Önişlemci 'nin tür kitaplığı dosyalarını arayacağı sıradır.
+*dosya adı* isteğe bağlı olarak bir dizin belirtimi tarafından önce gelir. Dosya adı varolan bir dosyayı adlandırmalıdır. İki sözdizimi biçimi arasındaki fark, yol tam olarak belirtilmediğinde önişlemcinin tür kitaplığı dosyalarını arama sırasıdır.
 
-|Söz dizimi biçimi|Eylem|
+|Sözdizimi formu|Eylem|
 |-----------------|------------|
-|Alıntılanmış form|Önişlemci 'yi, **#import** ifadesini içeren dosyanın dizinindeki önce tür kitaplığı dosyalarını, sonra da dosyanın hangi dosyalara (`#include`) sahip olduğunu arayacağını söyler. Ön işlemci daha sonra aşağıda gösterilen yollar üzerinde arama yapar.|
-|Açılı ayraç formu|Önişlemci 'yi aşağıdaki yollarla tür kitaplığı dosyalarını arayacak şekilde yönlendirir:<br /><br /> 1.  `PATH` Ortam değişkeni yol listesi<br />2.  `LIB` Ortam değişkeni yol listesi<br />3.  Derleyici, [no_registry](../preprocessor/no-registry.md) özniteliğine sahip başka bir tür kitaplığından başvurulan bir tür kitaplığı arıyor olması dışında [/ı](../build/reference/i-additional-include-directories.md) derleyici seçeneği tarafından belirtilen yol.|
+|Alıntı formu|Ön işlemciye, **önce #import** deyimini içeren dosyadizininde ve daha sonra bu dosyayı içeren`#include`dosyaların dizinlerinde tür kitaplığı dosyalarını aramasını bildirir. Önişlemci daha sonra aşağıda gösterilen yollar boyunca arama.|
+|Açı-braket formu|Ön işlemciye aşağıdaki yollar boyunca kitaplık dosyalarını arama talimatı verir:<br /><br /> 1. `PATH` Çevre değişken yol listesi<br />2. `LIB` Çevre değişken yol listesi<br />3. [/I](../build/reference/i-additional-include-directories.md) derleyici seçeneği tarafından belirtilen yol, bunun dışında derleyici [no_registry](../preprocessor/no-registry.md) özniteliği ile başka bir tür kitaplığı başvurulan bir tür kitaplığı arıyor.|
 
-### <a name="_predir_the_23import_directive_specifyingthelocalizationidandversionnumber"></a>Yerelleştirme KIMLIĞI ve sürüm numarasını belirtin
+### <a name="specify-the-localization-id-and-version-number"></a><a name="_predir_the_23import_directive_specifyingthelocalizationidandversionnumber"></a>Yerelleştirme kimliği ve sürüm numarasını belirtin
 
-Bir ProgID belirttiğinizde, ProgID 'nin yerelleştirme KIMLIĞINI ve sürüm numarasını da belirtebilirsiniz. Örneğin:
+Bir progid belirttiğiniz zaman, progid'in yerelleştirme kimliğini ve sürüm numarasını da belirtebilirsiniz. Örneğin:
 
 ```cpp
 #import "progid:my.prog.id" lcid("0") version("4.0)
 ```
 
-Bir yerelleştirme KIMLIĞI belirtmezseniz, aşağıdaki kurallara göre bir ProgID seçilir:
+Bir yerelleştirme kimliği belirtmezseniz, aşağıdaki kurallara göre bir progid seçilir:
 
-- Yalnızca bir yerelleştirme KIMLIĞI varsa, bunlardan biri kullanılır.
+- Yalnızca bir yerelleştirme kimliği varsa, bu kimlik kullanılır.
 
-- Birden fazla yerelleştirme KIMLIĞI varsa, sürüm numarası 0, 9 veya 409 olan ilki kullanılır.
+- Birden fazla yerelleştirme kimliği varsa, sürüm numarası 0, 9 veya 409 olan ilk kimlik kullanılır.
 
-- Birden fazla yerelleştirme KIMLIĞI varsa ve bunlardan hiçbiri 0, 9 veya 409 değilse, en son kullanılır.
+- Birden fazla yerelleştirme kimliği varsa ve bunların hiçbiri 0, 9 veya 409 değilse, sonuncusu kullanılır.
 
-- Sürüm numarası belirtmezseniz, en son sürüm kullanılır.
+- Bir sürüm numarası belirtmezseniz, en son sürüm kullanılır.
 
-###  <a name="_predir_the_23import_directive_header_files_created_by_import"></a>İçeri aktarma tarafından oluşturulan başlık dosyaları
+### <a name="header-files-created-by-import"></a><a name="_predir_the_23import_directive_header_files_created_by_import"></a>Alma tarafından oluşturulan üstbilgi dosyaları
 
-**#import** , C++ kaynak kodundaki tür kitaplığı içeriğini yeniden oluşturan iki üst bilgi dosyası oluşturur. Birincil üstbilgi dosyası, Microsoft Arabirim Tanımlama Dili (MıDL) derleyicisi tarafından üretilen, ancak derleyici tarafından oluşturulan ek kod ve verilerle benzerdir. [Birincil üstbilgi dosyası](#_predir_the_primary_type_library_header_file) tür kitaplığı ile aynı temel ada sahiptir ve bir. TLH uzantısı. İkincil üstbilgi dosyası, ile tür kitaplığı ile aynı temel ada sahiptir. TLI uzantısı. Derleyici tarafından üretilen üye işlevleri için uygulamaları içerir ve birincil üstbilgi dosyasında (`#include`) bulunur.
+**#import,** C++ kaynak kodundaki tür kitaplığı içeriğini yeniden oluşturan iki üstbilgi dosyası oluşturur. Birincil üstbilgi dosyası, Microsoft Arabirim Tanımı Dili (MIDL) derleyicisi tarafından üretilen, ancak ek derleyici tarafından oluşturulan kod ve verilerle birlikte oluşturulan dosyaya benzer. [Birincil üstbilgi dosyası,](#_predir_the_primary_type_library_header_file) tür kitaplığıyla aynı temel ada ve bir . TLH uzantısı. İkincil üstbilgi dosyası, tür kitaplığıyla aynı temel ada sahiptir ve . TLI uzantısı. Derleyici tarafından oluşturulan üye işlevler için uygulamaları içerir`#include`ve ( ) birincil üstbilgi dosyasına dahil edilir.
 
-Parametreleri kullanan `byref` bir dispınterface özelliği içeri aktarılmazsa, **#import** işlev için bir [__declspec (Property)](../cpp/property-cpp.md) bildirisi oluşturmaz.
+Parametreleri kullanan `byref` bir dispinterface özelliği alıyorsanız, **#import** işlev için bir [__declspec (özellik)](../cpp/property-cpp.md) deyimi oluşturmaz.
 
-Her iki üstbilgi dosyası da [/fo (ad nesne dosyası)](../build/reference/fo-object-file-name.md) seçeneği tarafından belirtilen çıkış dizinine yerleştirilir. Bunlar, birincil üst bilgi dosyası bir `#include` yönerge tarafından adlandırılmışsa, derleyici tarafından okunırlar ve derlenirler.
+Her iki üstbilgi dosyası [/Fo (ad nesnesi dosyası)](../build/reference/fo-object-file-name.md) seçeneği tarafından belirtilen çıktı dizinine yerleştirilir. Daha sonra derleyici tarafından birincil üstbilgi dosyası bir `#include` yönerge tarafından adlandırılmış gibi okunur ve derlenir.
 
-Aşağıdaki derleyici iyileştirmeleri **#import** yönergesiyle birlikte gelir:
+Aşağıdaki derleyici optimizasyonları **#import** yönergesi ile birlikte gelir:
 
-- Oluşturulan üstbilgi dosyası, tür kitaplığıyla aynı zaman damgasına verilir.
+- Üstbilgi dosyası, oluşturulduğunda, tür kitaplığı ile aynı zaman damgası verilir.
 
-- **#İmport** işlendiğinde, derleyici ilk olarak üstbilginin var olduğunu ve güncel olup olmadığını denetler. Yanıt Evet ise, yeniden oluşturulması gerekmez.
+- **#import** işlendiğinde, derleyici ilk olarak üstbilginin var olup olmadığını ve güncel olup olmadığını denetler. Evet ise, yeniden oluşturulması gerekmez.
 
-**#İmport** yönergesi, en az yeniden oluşturma ile katılıyorsa ön derlenmiş üstbilgi dosyasına yerleştirilebilir.  Daha fazla bilgi için bkz. [önceden derlenmiş üst bilgi dosyaları oluşturma](../build/creating-precompiled-header-files.md).
+**#import** yönergesi de en az yeniden oluşturma katılır ve önceden derlenmiş bir üstbilgi dosyasına yerleştirilebilir.  Daha fazla bilgi için [bkz.](../build/creating-precompiled-header-files.md)
 
-### <a name="_predir_the_primary_type_library_header_file"></a>Birincil tür kitaplığı üstbilgi dosyası
+### <a name="primary-type-library-header-file"></a><a name="_predir_the_primary_type_library_header_file"></a>Birincil tür kitaplığı üstbilgi dosyası
 
 Birincil tür kitaplığı üstbilgi dosyası yedi bölümden oluşur:
 
-- Başlık ortak: , `#include` Comdef için olan açıklamalardan oluşur. H (üst bilgide kullanılan bazı standart makroları tanımlar) ve diğer çeşitli kurulum bilgileri.
+- Başlık kazan: comdef `#include` için yorum, ifade oluşur. H (üstbilgide kullanılan bazı standart makroları tanımlar) ve diğer çeşitli kurulum bilgileri.
 
-- İleri başvuruları ve tür tanımları: `struct IMyInterface` , Ve tür tanımları gibi yapı bildirimlerinden oluşur.
+- İleri referanslar ve typedefs: gibi `struct IMyInterface` yapı bildirimleri ve typedefs oluşur.
 
-- Akıllı işaretçi bildirimleri: Şablon sınıfı `_com_ptr_t` , akıllı bir işaretçidir. Arabirim işaretçilerini kapsüller, ve `AddRef` `QueryInterface` işlevleri çağırma `Release`gereksinimini ortadan kaldırır. Ayrıca, `CoCreateInstance` yeni bir com nesnesi oluştururken çağrıyı gizler. Bu bölümde, `_COM_SMARTPTR_TYPEDEF` [_com_ptr_t](../cpp/com-ptr-t-class.md) şablon sınıfının şablon Uzmanlıkları olarak com arabirimlerinin tür tanımları 'ları oluşturmak için makro deyimleri kullanılmaktadır. Örneğin, arabirimi `IMyInterface`için,. TLH dosyası şunları içerir:
+- Akıllı işaretçi bildirimleri: `_com_ptr_t` Şablon sınıfı akıllı bir işaretçidir. Arabirim işaretçileri kapsüller ve arama `AddRef`ihtiyacını ortadan `Release`kaldırır `QueryInterface` , ve işlevleri. Ayrıca, yeni `CoCreateInstance` bir COM nesnesi oluştururken aramayı gizler. Bu bölüm, `_COM_SMARTPTR_TYPEDEF` [_com_ptr_t](../cpp/com-ptr-t-class.md) şablon sınıfının şablon uzmanlıkları olarak COM arabirimlerinin typedefs oluşturmak için makro deyimini kullanır. Örneğin, arayüz `IMyInterface`için , . TLH dosyası şunları içerecektir:
 
     ```TLH
     _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
     ```
 
-   derleyicinin hangi şekilde genişlendirilecektir:
+   derleyicinin genişleteceği:
 
     ```cpp
     typedef _com_ptr_t<_com_IIID<IMyInterface, __uuidof(IMyInterface)> > IMyInterfacePtr;
     ```
 
-   Daha `IMyInterfacePtr` sonra tür, ham arabirim işaretçisinin `IMyInterface*`yerine kullanılabilir. Sonuç olarak, çeşitli `IUnknown` üye işlevlerini çağırmanız gerekmez
+   Türü `IMyInterfacePtr` daha sonra ham arabirim işaretçisi `IMyInterface*`yerine kullanılabilir. Sonuç olarak, çeşitli `IUnknown` üye işlevleri çağırmaya gerek yoktur
 
-- TypeInfo bildirimleri: Öncelikle sınıf tanımlarından ve tarafından `ITypeLib:GetTypeInfo`döndürülen bireysel TypeInfo öğelerini açığa çıkaran diğer öğelerden oluşur. Bu bölümde, tür kitaplığındaki her bir TypeInfo, `TYPEKIND` bilgilere bağlı olan bir formdaki üstbilgiye yansıtılır.
+- Typeinfo bildirimleri: Öncelikle sınıf tanımları ve diğer öğeleri tarafından `ITypeLib:GetTypeInfo`döndürülen tek tek typeinfo öğeleri açığa oluşur. Bu bölümde, tür kitaplığından her yazı `TYPEKIND` bilgisi, bilgilere bağlı bir formda üstbilgiye yansıtılır.
 
-- İsteğe bağlı eski stil GUID tanımı: Adlandırılmış GUID sabitlerinin başlatmaları içerir. Bu adlar, ve `CLSID_CoClass` `IID_Interface`, MIDL derleyicisi tarafından üretilenlere benzer biçimde yapılır.
+- İsteğe bağlı eski stil GUID tanımı: Adlandırılmış GUID sabitlerinin başharflerini içerir. Bu adlar, `CLSID_CoClass` `IID_Interface`MIDL derleyicisi tarafından oluşturulanlara benzer bir forma sahiptir.
 
-- `#include`ikincil tür kitaplığı üst bilgisi için olan bildirim.
+- `#include`ikincil tür kitaplık üstbilgisi için deyim.
 
-- Altbilgi ortak: Şu anda `#pragma pack(pop)`içeriyor.
+- Alter kazan: Şu `#pragma pack(pop)`anda içerir .
 
-Başlık ortak ve altbilgi ortak bölümü dışındaki tüm bölümler, özgün IDL dosyasındaki `library` ifadesiyle belirtilen adına sahip bir ad alanı içine alınmıştır. Tür kitaplığı üstbilgisindeki adları, ad alanı adını kullanarak açık bir nitelik ile kullanabilirsiniz. Ya da aşağıdaki ifadeyi dahil edebilirsiniz:
+Başlık kazan ve alter kazan bölümü hariç tüm bölümler, orijinal IDL dosyasında `library` ifadede adı belirtilen bir ad alanına eklenir. Ad alanı adını kullanarak açık bir nitelik tarafından tür kitaplığı üstbilgisinden adları kullanabilirsiniz. Veya aşağıdaki ifadeyi ekleyebilirsiniz:
 
 ```cpp
 using namespace MyLib;
 ```
 
-kaynak kodundaki **#import** deyimden hemen sonra.
+kaynak kodundaki **#import** ifadesinden hemen sonra.
 
-Ad alanı, **#import** yönergesinin [no_namespace](no-namespace.md)) özniteliği kullanılarak gizlenebilir. Ancak, ad alanını gizleme ad çakışmalarına neden olabilir. Ad alanı [rename_namespace](rename-namespace.md) özniteliği tarafından da yeniden adlandırılabilir.
+Ad **alanı, #import** yönergesinin [no_namespace)](no-namespace.md)özniteliği kullanılarak bastırılabilir. Ancak, ad alanını bastırmak ad çakışmalarına neden olabilir. Ad [alanı, rename_namespace](rename-namespace.md) özniteliği yle de yeniden adlandırılabilir.
 
-Derleyici, şu anda işlediği tür kitaplığı için gereken herhangi bir tür kitaplığı bağımlılığının tam yolunu sağlar. Yol, açıklama biçiminde, tür kitaplığı üst bilgisine (. TLH) her işlenen tür kitaplığı için derleyicinin oluşturduğu.
+Derleyici, şu anda işlemekte olduğu tür kitaplığı tarafından gereken tür kitaplığı bağımlılığına tam yol sağlar. Yol, açıklama biçiminde, tür kitaplığı üstbilgisine yazılır (. TLH) derleyicinin her işlenmiş tür kitaplığı için oluşturduğu.
 
-Bir tür kitaplığı, diğer tür kitaplıklarında tanımlanan türlere başvurular içeriyorsa,. TLH dosyası, aşağıdaki sıralamanın açıklamalarını içerir:
+Tür kitaplığı, diğer tür kitaplıklarında tanımlanan türlere başvurular içeriyorsa, TLH dosyası aşağıdaki türde açıklamalar içerecektir:
 
 ```TLH
 //
@@ -173,22 +173,22 @@ Bir tür kitaplığı, diğer tür kitaplıklarında tanımlanan türlere başvu
 //
 ```
 
-**#İmport** açıklamasında gerçek dosya adı, çapraz başvurulan tür kitaplığının kayıt defterinde saklanan tam yoludur. Eksik tür tanımlarının neden olduğu hatalarla karşılaşırsanız, içindeki açıklamaları kontrol edin. İlk olarak hangi bağımlı tür kitaplıklarının içeri aktarılması gerektiğini görmek için TLH. Olası hatalar, derleme sırasında sözdizimi hatalarıyla (örneğin, C2143, C2146, C2321), C2501 (eksik decl-belirticileri) veya C2433 (veri bildiriminde ' inline ' izin verilmez). TLI dosyası.
+**#import** açıklamadaki gerçek dosya adı, kayıt defterinde depolanan çapraz başvurulu tür kitaplığın tam yoludur. Tür tanımlarının eksik olması nedeniyle hatalarla karşılaşırsanız, 'nin başındaki açıklamaları kontrol edin. TLH önce hangi bağımlı tür kitaplıkların alınması gerekebileceğini görmek için. Olası hatalar sözdizimi hatalarıdır (örneğin, C2143, C2146, C2321), C2501 (eksik decl-belirteçler) veya C2433 ('inline' veri bildiriminde izin verilmez) derlenirken . TLI dosyası.
 
-Bağımlılık hatalarını çözümlemek için, sistem üstbilgileri tarafından başka bir şekilde bağımlılık yorumlarının ne tür bir şekilde sağlanmadığını belirleyip, ardından bağımlı tür kitaplığının **#import** yönergesinden önce bir noktada **#import** yönergesi sağlayın.
+Bağımlılık hatalarını gidermek için, bağımlılık açıklamalarından hangilerinin sistem üstileri tarafından başka şekilde sağlanmadığını belirleyin ve bağımlı tür kitaplığı **#import** yönergesinden önce bir noktada **#import** bir yönerge sağlayın.
 
-### <a name="_predir_the_23import_directive_import_attributes"></a>#import öznitelikleri
+### <a name="import-attributes"></a><a name="_predir_the_23import_directive_import_attributes"></a>#import öznitelikleri
 
-**#import** , isteğe bağlı olarak bir veya daha fazla öznitelik içerebilir. Bu öznitelikler derleyiciye tür kitaplığı üstbilgilerinin içeriğini değiştirmesini söyler. Bir ters eğik **\\** çizgi () simgesi, tek bir **#import** ifadesine ek satırlar eklemek için kullanılabilir. Örneğin:
+**#import** isteğe bağlı olarak bir veya daha fazla öznitelik içerebilir. Bu öznitelikler derleyiciye tür kitaplığı üstbilgilerinin içeriğini değiştirmesini söyler. Bir ters**\\**eğik çizgi ( ) simgesi, tek bir **#import** deyimine ek satırlar eklemek için kullanılabilir. Örneğin:
 
 ```cpp
 #import "test.lib" no_namespace \
    rename("OldName", "NewName")
 ```
 
-Daha fazla bilgi için bkz. [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md).
+Daha fazla bilgi için [#import özniteliklerine](../preprocessor/hash-import-attributes-cpp.md)bakın.
 
-**SONA C++ özgü**
+**END C++ Özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
