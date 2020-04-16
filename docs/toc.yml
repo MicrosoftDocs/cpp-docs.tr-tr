@@ -6577,6 +6577,8 @@
                   href: c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md
                 - name: CRT başlatma
                   href: c-runtime-library/crt-initialization.md
+                - name: CRT'deki genel durum
+                  href: c-runtime-library/global-state.md
             - name: Kategoriye göre Evrensel C çalışma zamanı yordamları
               expanded: false
               items:
