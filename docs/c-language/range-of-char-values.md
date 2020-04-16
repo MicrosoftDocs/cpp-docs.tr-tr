@@ -2,21 +2,21 @@
 title: char Değerleri Aralığı
 ms.date: 11/04/2016
 ms.assetid: 15ae9781-ec21-4333-bba8-6d2383bbf7f1
-ms.openlocfilehash: c188856ab15c18ccd52aa89235d149366d0b316e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8cb2609aca910056b5243fddc868710581e576e7
+ms.sourcegitcommit: 9266fc76ac2e872e35a208b4249660dfdfc87cba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232184"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81480900"
 ---
 # <a name="range-of-char-values"></a>char Değerleri Aralığı
 
-**ANSI 3.2.1.1** "düz olmadığını" **char** aynı değer aralığında olan bir **signed char** veya `unsigned char`
+**ANSI 3.2.1.1** "Düz" **bir char** imzalı bir char veya **imzasız bir** **char** ile aynı değer aralığına sahip olup olmadığı
 
-Tüm karakter değerleri aralığından -128 ile 127 imzalı. Tüm işaretsiz karakter değerleri –0 ile 255 arasında değişir.
+İmzalanan tüm karakter değerleri -128 ile 127 arasında değişir. Tüm işaretsiz karakter değerleri –0 ile 255 arasında değişir.
 
-/J derleyici seçeneğini varsayılandan değiştirir **imzalı** için `unsigned`.
+Derleyici **seçeneği, imzalı char'dan** **imzasız char'a**varsayılan türünü değiştirir. **char** [`/J`](../build/reference/j-default-char-type-is-unsigned.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakterler](../c-language/characters.md)
+[Karakter](../c-language/characters.md)

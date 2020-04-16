@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - floating-point numbers, truncation
 ms.assetid: 051a6e22-c636-4af8-9ac4-40160f4affca
-ms.openlocfilehash: 2bc46577c5ab304346d88f8522e584d1e54ca265
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3aeb6ab1063d0782a6c5d297e387f3810c2e136a
+ms.sourcegitcommit: 9266fc76ac2e872e35a208b4249660dfdfc87cba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345181"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81480876"
 ---
 # <a name="truncation-of-floating-point-values"></a>Kayan Nokta Değerlerinin Kesilmesi
 
-**ANSI 3.2.1.4** kesilmesi veya bir kayan noktalı sayı daha dar bir kayan noktalı sayıya dönüştürülürken yuvarlama yönünü
+**ANSI 3.2.1.4** Kayan nokta numarası daha dar kayan nokta sayısına dönüştürüldüğünde kesilme veya yuvarlama yönü
 
-Kayan nokta yetersiz geldiğinde, kayan nokta değişkeninin değeri sıfıra yuvarlanır. Kayan noktanın yetersiz gelmesi, belirtilen iyileştirmelere bağlı olarak bir çalışma zamanı hatasına neden olabilir ve tahmin edilemeyen bir değer oluşturabilir.
+Bir alt akış oluştuğunda, kayan nokta değişkeninin değeri sıfıra yuvarlanır. Kayan noktanın yetersiz gelmesi, belirtilen iyileştirmelere bağlı olarak bir çalışma zamanı hatasına neden olabilir ve tahmin edilemeyen bir değer oluşturabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
