@@ -6,56 +6,56 @@ helpviewer_keywords:
 - operators [C++], conditional
 - expressions [C++], conditional
 ms.assetid: c4f1a5ca-0844-44a7-a384-eca584d4e3dd
-ms.openlocfilehash: 9dc93a47d36af92fe370e3f56f504682d49bd1dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a64317c75e48111148053cc7efb62fb5a6d79f7f
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62312550"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81749186"
 ---
 # <a name="conditional-expression-operator"></a>Koşullu İfade İşleci
 
-C sahip bir Üçlü işleç: koşullu ifade işleci (**?:**).
+C'nin bir üçüncül işleci vardır: koşullu ifade işleci (**? : ).**
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Koşullu ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Mantıksal OR ifadesi* **?**   *ifade* **:** *koşullu ifade*
+*koşullu ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-OR-ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-OR ifadesi*  **?**  *expression*  **:**  *koşullu ifade*
 
-*Mantıksal-veya-expression* integral, kayan veya işaretçi türünde olmalıdır. 0, denklik açısından değerlendirilir. Bir dizi noktası izleyen *mantıksal-veya-expression*. İşlenenlerin gibi çalışır:
+*Mantıksal-OR-ifadesi* integral, kayan veya işaretçi türüne sahip olmalıdır. Eşdeğerliği 0 olarak değerlendirilir. Bir sıra noktası *mantıksal-OR-ifade*izler. Operands gelirleri aşağıdaki gibi değerlendirilmesi:
 
-- Varsa *mantıksal-veya-expression* 0'a eşit değil *ifade* değerlendirilir. İfade değerlendirmesinin sonucu bildirimlere verilen *ifade*. (Yani *ifade* yalnızca değerlendirilir *mantıksal-veya-expression* geçerlidir.)
+- *Mantıksal-OR-ifade* 0'a eşit değilse, *ifade* değerlendirilir. İfadeyi değerlendirme sonucu nonterminal *ifadesi*ile verilir. (Bu, *ifadenin* yalnızca *mantıksal-OR-ifadesi* doğruysa değerlendirildiği anlamına gelir.)
 
-- Varsa *mantıksal-veya-expression* eşittir 0, *koşullu ifade* değerlendirilir. İfadenin sonucu değeri *koşullu ifade*. (Yani *koşullu ifade* yalnızca değerlendirilir *mantıksal-veya-expression* false'tur.)
+- *Mantıksal-OR-ifade* 0'a eşitse *koşullu ifade* değerlendirilir. İfadenin sonucu *koşullu ifadenin*değeridir. *(Bu, koşullu ifadenin* yalnızca *mantıksal-OR-ifadesi* yanlışsa değerlendirildiği anlamına gelir.)
 
-Ya da unutmayın *ifade* veya *koşullu ifade* değerlendirilir, ancak ikisi birden değil.
+*İfade* veya *koşullu ifadenin* değerlendirildiğini, ancak her ikisinin de değerlendirilmediğini unutmayın.
 
-Koşullu bir işlemin sonucunu türünü türüne bağlıdır *ifade* veya *koşullu ifade* işleneni aşağıdadır:
+Koşullu bir işlemin sonucunun türü, aşağıdaki gibi *ifade* veya *koşullu ifade* operand türüne bağlıdır:
 
-- Varsa *ifade* veya *koşullu ifade* integral sahip veya bu (türleri farklı) kayan türü işleç olağan aritmetik dönüştürmeler gerçekleştirir. Sonuç türü dönüştürme işleminden sonra işlenenler türüdür.
+- *İfade* veya *koşullu ifadenin* integral veya kayan türü varsa (türleri farklı olabilir), işleç olağan aritmetik dönüşümleri gerçekleştirir. Sonucun türü, dönüşümden sonraki operandların türüdür.
 
-- Her iki *ifade* ve *koşullu ifade* aynı yapı, birleşim veya işaretçi türü sonuç türü, aynı yapıya, birleşim veya işaretçi türüne sahip.
+- Hem *ifade* hem de *koşullu ifade* aynı yapıya, birliğe veya işaretçi türüne sahipse, sonuç türü aynı yapı, birleşim veya işaretçi türüdür.
 
-- Her iki işlenen türü varsa `void`, sonuç türünde `void`.
+- Her iki operands `void`türü varsa, `void`sonuç türü vardır.
 
-- İki işlenenden herhangi türde bir nesne işaretçisidir ve diğer işlenenin işaretçisidir `void`, işaretçiyi nesneye bir işaretçiye dönüştürülür `void` ve sonucu bir işaretçiye `void`.
+- Herhangi bir türdeki bir nesneye işaretçi veya diğer operand bir `void`işaretçi ise, nesnenin işaretçisi `void` bir işaretçiye `void`dönüştürülür ve sonuç bir işaretçiye .
 
-- Ya da *ifade* veya *koşullu ifade* bir işaretçi ise diğer işlenen değeri 0 ' sonuç türü olan bir sabit ifade ise işaretçi türü.
+- *İfade* veya *koşullu ifade* bir işaretçi yse ve diğer operand 0 değeri olan sabit bir ifadeyse, sonucun türü işaretçi türüdür.
 
-İşaretçileri tür Karşılaştırmada niteleyicileri yazın (**const** veya `volatile`) türünde hangi ukazatel ukazuje Önemsiz, ancak sonuç türü niteleyicileri her iki koşul bileşenlerini devralır.
+İşaretçiler için tür karşılaştırmasında, işaretçi noktalarının `volatile`önemsiz olduğu türdeki herhangi bir tür niteleyicisi **(const** veya ) önemsizdir, ancak sonuç türü, koşullu maddenin her iki bileşeninden de varsamaları devralır.
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekler, koşullu işleç kullanımlarını gösterir:
+Aşağıdaki örnekler koşullu işleç kullanımlarını gösterir:
 
 ```
 j = ( i < 0 ) ? ( -i ) : ( i );
 ```
 
-Bu örnekte mutlak değerini atar `i` için `j`. Varsa `i` 0'dan küçük `-i` atandığı `j`. Varsa `i` değerinden büyükse veya eşitse 0 `i` atandığı `j`.
+Bu örnek, `i` `j`'nin mutlak değerini . `i` 0'dan küçükse, `-i` `j`'ye atanır. 0'dan `i` büyük veya `i` eşitse, `j`.'a atanır.
 
-```
+```cpp
 void f1( void );
 void f2( void );
 int x;
@@ -66,7 +66,7 @@ int y;
 ( x == y ) ? ( f1() ) : ( f2() );
 ```
 
-Bu örnekte, iki işlev `f1` ve `f2`ve iki değişken `x` ve `y`, bildirilir. Programda daha sonra iki değişken aynı değeri, işlev varsa `f1` çağrılır. Aksi takdirde, `f2` çağrılır.
+Bu örnekte, iki `f1` `f2`işlev ve , `x` ve `y`iki değişken ve , bildirilir. Programın ilerleyen saatlerinde, iki değişken aynı değere sahipse, işlev `f1` çağrılır. Aksi `f2` takdirde, denir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CD2DRadialGradientBrush [MFC], m_pRadialGradientBrush
 - CD2DRadialGradientBrush [MFC], m_RadialGradientBrushProperties
 ms.assetid: 6c76d84a-d831-4ee2-96f1-82c1f5b0d6a9
-ms.openlocfilehash: aca9606271040e5c5c9aee81be0a08b64cf2bab7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 450314fdbf8441b0cc345430518d083573659add
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369138"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81750309"
 ---
 # <a name="cd2dradialgradientbrush-class"></a>CD2DRadialGradientBrush Sınıfı
 
@@ -123,7 +123,7 @@ virtual ~CD2DRadialGradientBrush();
 
 Nesneye varolan kaynak arabirimi ataştırır
 
-```
+```cpp
 void Attach(ID2D1RadialGradientBrush* pResource);
 ```
 
@@ -303,7 +303,7 @@ Nesne henüz başharfe çevrilmediyse ID2D1RadialGradientBrush arabirimini veya 
 
 Fırçanın koordinat alanında degrade elipsin merkezini belirtir
 
-```
+```cpp
 void SetCenter(CD2DPointF point);
 ```
 
@@ -316,7 +316,7 @@ Degrade elipsin merkezi, fırçanın koordinat alanında
 
 Degrade kaynağının elipsin merkezine göre mahsup unu belirtir
 
-```
+```cpp
 void SetGradientOriginOffset(CD2DPointF gradientOriginOffset);
 ```
 
@@ -329,7 +329,7 @@ Degrade elipsin merkezinden degrade kaynağının mahsup
 
 Fırçanın koordinat alanında degrade elipsin x yarıçapını belirtir
 
-```
+```cpp
 void SetRadiusX(FLOAT radiusX);
 ```
 
@@ -342,7 +342,7 @@ Degrade elipsin x yarıçapı. Bu değer fırçanın koordinat alanındadır
 
 Fırçanın koordinat alanında degrade elipsin y yarıçapını belirtir
 
-```
+```cpp
 void SetRadiusY(FLOAT radiusY);
 ```
 

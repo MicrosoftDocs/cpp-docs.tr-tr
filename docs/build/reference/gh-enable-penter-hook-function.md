@@ -9,16 +9,16 @@ helpviewer_keywords:
 - _penter function
 - -Gh compiler option [C++]
 ms.assetid: 1510a082-8a0e-486e-a309-6add814b494f
-ms.openlocfilehash: bf7734a7b81c9550c060d43c2eabf5cb05332407
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 87815b5f0e0450b84acbe3c35b7ef4f31216ec72
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292593"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81749299"
 ---
-# <a name="gh-enable-penter-hook-function"></a>/Gh (_penter Kanca İşlevini Etkinleştir)
+# <a name="gh-enable-_penter-hook-function"></a>/Gh (_penter Kanca İşlevini Etkinleştir)
 
-Bir çağrısına neden `_penter` her yöntem veya işlev başlangıcında işlevi.
+Her yöntemin `_penter` veya işlevin başında işleviçin bir çağrıya neden olur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,25 +28,25 @@ Bir çağrısına neden `_penter` her yöntem veya işlev başlangıcında işle
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_penter` İşlevi herhangi kitaplığının parçası değildir ve sizin için bir tanım sağlamak için en fazla `_penter`.
+İşlev `_penter` herhangi bir kitaplığın bir parçası değildir ve `_penter`bir tanım sağlamak size kalmış.
 
-Açıkça çağırmak planlamıyorsanız `_penter`, bir prototip sağlamanız gerekmez. İşlev aşağıdaki prototipe sahip, içeriği tüm kayıtları girişinde anında iletme gerekir ve Çıkışta değişmeden içerik pop gibi görünmelidir:
+Açıkça aramayı `_penter`planlamadığınız sürece, bir prototip sağlamanız gerekmez. İşlev aşağıdaki prototipe sahipmiş gibi görünmelidir ve girişteki tüm kayıtların içeriğini itmeli ve çıkışta değişmemiş içeriği patlatmalıdır:
 
-```
+```cpp
 void __declspec(naked) __cdecl _penter( void );
 ```
 
-Bu bildirim, 64-bit projeleri için kullanılabilir değil.
+Bu bildirim 64 bit projeler için kullanılamaz.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **komut satırı** özellik sayfası.
+1. Komut **Satırı** özelliği sayfasını tıklatın.
 
-1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+1. **Ek Seçenekler** kutusuna derleyici seçeneğini yazın.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -54,7 +54,7 @@ Bu bildirim, 64-bit projeleri için kullanılabilir değil.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod ile derlendiğinde **/Gh**, gösterir nasıl `_penter` iki kez; adlı işlev girildiğinde bir kez `main` ve işlev girildiğinde bir kez `x`.
+/Gh ile derlendiğinde **/Gh**aşağıdaki kod, `_penter` nasıl iki kez çağrıldığını gösterir; bir kez fonksiyon `main` girerken ve `x`bir kez fonksiyon girerken .
 
 ```cpp
 // Gh_compiler_option.cpp

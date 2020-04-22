@@ -25,12 +25,12 @@ helpviewer_keywords:
 - CIfmod intrinsic
 - _CIfmod intrinsic
 ms.assetid: 7c050653-7ec6-4810-b3a7-7a0057ea65ed
-ms.openlocfilehash: 8f1a78da3ed210ef37c3295adbd5d55f0215e7ff
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8dcae95fa260593adc434fcaba648972caccb692
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81349564"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81745366"
 ---
 # <a name="_cifmod"></a>_CIfmod
 
@@ -38,7 +38,7 @@ Yığındaki en üstteki iki değerin kayan nokta geri kalanını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 void __cdecl _CIfmod();
 ```
 

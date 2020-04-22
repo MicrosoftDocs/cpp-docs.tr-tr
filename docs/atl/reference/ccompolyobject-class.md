@@ -17,12 +17,12 @@ helpviewer_keywords:
 - aggregation [C++], ATL objects
 - CComPolyObject class
 ms.assetid: eaf67c18-e855-48ca-9b15-f1df3106121b
-ms.openlocfilehash: e30afef455db5f83afca8ff9e515f39f015c3b8a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c880d170a03196d0e15ea8741c786e560d90ddc4
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327568"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81747775"
 ---
 # <a name="ccompolyobject-class"></a>CComPolyObject Sınıfı
 
@@ -179,7 +179,7 @@ Standart bir HRESULT değeri.
 
 Nesne imha sırasında çağrılan bu yöntem, [m_contained](#m_contained) veri üyesini serbest kılmış.
 
-```
+```cpp
 void FinalRelease();
 ```
 

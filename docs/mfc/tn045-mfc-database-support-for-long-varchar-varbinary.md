@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Varbinary data type
 - Varchar data type
 ms.assetid: cf572c35-5275-45b5-83df-5f0e36114f40
-ms.openlocfilehash: f67d159fb600dcacd8eedd40e672edf18bddee9a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 55a68ba970d0a26163f426d51818c701c13ed051
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365504"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81750284"
 ---
 # <a name="tn045-mfcdatabase-support-for-long-varcharvarbinary"></a>TN045: Uzun Varchar/Varbinary için MFC/Veritabanı Desteği
 
@@ -45,7 +45,7 @@ Bu yaklaşımı anlamak kolaydır ve tanıdık sınıflarla çalışırsınız. 
 
 RFX, veri `CString` `CByteArray` sütunu için alınan değeri tutmak için ayrılan belleğin varsayılan boyutunu geçersiz kılmanıza olanak tanıyan ek bir bağımsız değişken için çalışır ve vardır. Aşağıdaki işlev bildirimlerinde nMaxLength bağımsız değişkenine dikkat edin:
 
-```
+```cpp
 void AFXAPI RFX_Text(CFieldExchange* pFX,
     const char *szName,
     CString& value,

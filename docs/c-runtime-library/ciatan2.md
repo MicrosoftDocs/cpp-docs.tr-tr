@@ -25,12 +25,12 @@ helpviewer_keywords:
 - _CIatan2 intrinsic
 - CIatan2 intrinsic
 ms.assetid: 31f8cc78-b79f-4576-b73b-8add18e08680
-ms.openlocfilehash: 2535cb5747b5eac9257594bd4c6d91e64ee7b3eb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 585608b4d3dce723c0ea3a82e1c52325a0f6b7e6
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81334395"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81745923"
 ---
 # <a name="_ciatan2"></a>_CIatan2
 
@@ -38,7 +38,7 @@ ms.locfileid: "81334395"
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 void __cdecl _CIatan2();
 ```
 

@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CMFCMenuBar [MFC], SetRecentlyUsedMenus
 - CMFCMenuBar [MFC], SetShowAllCommands
 ms.assetid: 8a3ce4c7-b012-4dc0-b4f8-53c10b4b86b8
-ms.openlocfilehash: 50dd488d1f59c99b8fee1eb96acf6d0041547df9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f25bff9564eb7a4290f958f0b7810cac8ef7e238
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369702"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81749623"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar Sınıfı
 
@@ -430,7 +430,7 @@ Menü denetiminin menü kaynağıyla aynı menü öğelerine sahip olmasını is
 
 Menü çubuğunun sağ tarafında bulunan **yardım** açılan kutusunu etkinleştirin.
 
-```
+```cpp
 void EnableHelpCombobox(
     UINT uiID,
     LPCTSTR lpszPrompt = NULL,
@@ -954,7 +954,7 @@ Kaydedilen bilgiler menü öğelerini, dock durumunu ve menü çubuğunun konumu
 
 Kaynak kimliğine dayalı bir [CMFCMenuBar](../../mfc/reference/cmfcmenubar-class.md) nesnesinin varsayılan menüsünü ayarlar.
 
-```
+```cpp
 void SetDefaultMenuResId(UINT uiResId);
 ```
 
@@ -971,7 +971,7 @@ Varsayılan menüyü geri almadan almak için [CMFCMenuBar::GetDefaultMenuResId]
 
 ## <a name="cmfcmenubarsetforcedownarrows"></a><a name="setforcedownarrows"></a>CMFCMenuBar::SetForceDownArrows
 
-```
+```cpp
 void SetForceDownArrows(BOOL bValue);
 ```
 
@@ -985,7 +985,7 @@ void SetForceDownArrows(BOOL bValue);
 
 Çerçeve, bir MDI ekran modunu değiştirdiğinde ve menü çubuğu güncelleştirildiğinde bu yöntemi çağırır.
 
-```
+```cpp
 void SetMaximizeMode(
     BOOL bMax,
     CWnd* pWnd = NULL,
@@ -1011,7 +1011,7 @@ Bir MDI alt penceresi en üst düzeye çıkarıldığında, MDI ana çerçeve pe
 
 Kullanıcı menü düğmeleri oluşturduğunda çerçevenin kullandığı çalışma zamanı sınıf bilgilerini ayarlar.
 
-```
+```cpp
 void SetMenuButtonRTC(CRuntimeClass* pMenuButtonRTC);
 ```
 

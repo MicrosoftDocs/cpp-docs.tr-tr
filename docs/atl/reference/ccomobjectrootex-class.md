@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - reference counting
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
-ms.openlocfilehash: e8db86f6214f95cd9bb08d3b5f6c6c1a38ca475c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 87e2d7dca81221f4fac2a5189ecb0effbdceddc2
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327601"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81747909"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx Sınıfı
 
@@ -155,7 +155,7 @@ Aşağıda, bir toplu oluşturmanın tipik bir yolu vereme şekli vereme şekli 
 
 Nesneniz için gerekli herhangi bir temizleme gerçekleştirmek için türetilmiş sınıfınızda bu yöntemi geçersiz kılabilirsiniz.
 
-```
+```cpp
 void FinalRelease();
 ```
 
@@ -235,7 +235,7 @@ Hem hata ayıklama hem de hata ayıklama oluştururda, bu işlev tanılama veya 
 
 İş parçacığı modeli çok iş parçacığı ise, bu yöntem iş parçacığı özel bir veri üyesi aracılığıyla elde edilen kritik bölüm nesnesinin sahipliğini alabilir kadar bekler Win32 API işlevi [EnterCriticalSection](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection)çağırır.
 
-```
+```cpp
 void Lock();
 ```
 
@@ -359,7 +359,7 @@ Hata ayıklama yapılarında her zaman 0 döndürür. Hata ayıklama oluştururd
 
 İş parçacığı modeli çok iş parçacığı ise, bu yöntem, özel bir veri üyesi aracılığıyla elde edilen kritik bölüm nesnesinin sahipliğini serbest bırakan Win32 API işlevini [LeaveCriticalSection](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection)olarak adlandırır.
 
-```
+```cpp
 void Unlock();
 ```
 

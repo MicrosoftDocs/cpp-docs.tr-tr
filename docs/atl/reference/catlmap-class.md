@@ -37,12 +37,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlMap class
 ms.assetid: 5e2fe028-8e6d-4686-93df-1433d2080ec3
-ms.openlocfilehash: 8a89ca7f7dedcd386abdd41e7487f1b838260c83
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8954eeae28f13fb50643646b41c032588ecc278f
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81321437"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81748659"
 ---
 # <a name="catlmap-class"></a>CAtlMap Sınıfı
 
@@ -159,7 +159,7 @@ Daha fazla bilgi için [ATL Koleksiyon Sınıfları'na](../../atl/atl-collection
 
 `CAtlMap` Nesne geçerli değilse, bir Assert neden bu yöntemi arayın.
 
-```
+```cpp
 void AssertValid() const;
 ```
 
@@ -249,7 +249,7 @@ Bu sınıf [CAtlMap::GetNext](#getnext) ve [CAtlMap::Haritalama](#lookup) yapıs
 
 Nesnenin `CAtlMap` otomatik rehashing devre dışı kalmak için bu yöntemi arayın.
 
-```
+```cpp
 void DisableAutoRehash() throw();
 ```
 
@@ -263,7 +263,7 @@ Otomatik yeniden hashing etkinleştirildiğinde (varsayılan olarak olduğu gibi
 
 Nesnenin `CAtlMap` otomatik olarak rehashing etkinleştirmek için bu yöntemi arayın.
 
-```
+```cpp
 void EnableAutoRehash() throw();
 ```
 
@@ -277,7 +277,7 @@ Otomatik yeniden hashing etkinleştirildiğinde (varsayılan olarak olduğu gibi
 
 Öğeyi haritada belirli bir konumda döndürmek için bu yöntemi çağırın.
 
-```
+```cpp
 void GetAt(
     POSITION pos,
     KOUTARGTYPE key,
@@ -294,7 +294,7 @@ Pozisyon sayacı, CAtlMap önceki bir çağrı ile [döndürülen::GetNextAssoc]
 *anahtar*<br/>
 Haritanın anahtarının türünü belirten şablon parametresi.
 
-*Değer*<br/>
+*value*<br/>
 Eşin değerinin türünü belirten şablon parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -376,7 +376,7 @@ Eşönünde depolanan bir sonraki anahtar/değer öğeleri çiftine bir işaret�
 
 Yinelenmenin bir sonraki öğesini alır.
 
-```
+```cpp
 void GetNextAssoc(
     POSITION& pos,
     KOUTARGTYPE key,
@@ -391,7 +391,7 @@ Pozisyon sayacı, CAtlMap önceki bir çağrı ile [döndürülen::GetNextAssoc]
 *anahtar*<br/>
 Haritanın anahtarının türünü belirten şablon parametresi.
 
-*Değer*<br/>
+*value*<br/>
 Eşin değerinin türünü belirten şablon parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -561,7 +561,7 @@ CPair* Lookup(KINARGTYPE key) throw();
 *anahtar*<br/>
 Aranacak öğeyi tanımlayan anahtarı belirtir.
 
-*Değer*<br/>
+*value*<br/>
 Aradeğerini alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -597,7 +597,7 @@ Anahtar zaten varsa, öğe değiştirilir. Anahtar yoksa, yeni bir öğe eklenir
 
 Nesneyi yeniden haşlamak `CAtlMap` için bu yöntemi çağırın.
 
-```
+```cpp
 void Rehash(UINT nBins = 0);
 ```
 
@@ -614,7 +614,7 @@ Karma tabloda kullanılacak yeni kutu sayısı. Bkz. [CAtlMap::CAtlMap](#catlmap
 
 `CAtlMap` Nesneden tüm öğeleri kaldırmak için bu yöntemi arayın.
 
-```
+```cpp
 void RemoveAll() throw();
 ```
 
@@ -626,7 +626,7 @@ void RemoveAll() throw();
 
 Nesnede verilen konumdaki öğeyi kaldırmak `CAtlMap` için bu yöntemi çağırın.
 
-```
+```cpp
 void RemoveAtPos(POSITION pos) throw();
 ```
 
@@ -675,7 +675,7 @@ POSITION SetAt(
 *anahtar*<br/>
 `CAtlMap` Nesneye eklenecek anahtar değer.
 
-*Değer*<br/>
+*value*<br/>
 `CAtlMap` Nesneye eklenecek değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -690,7 +690,7 @@ Nesnedeki anahtar/değer öğesi çiftinin `CAtlMap` konumunu döndürür.
 
 `CAtlMap` Nesnenin en uygun yükünü ayarlamak için bu yöntemi arayın.
 
-```
+```cpp
 void SetOptimalLoad(
     float fOptimalLoad,
     float fLoThreshold,
@@ -720,7 +720,7 @@ Bu `CAtlMap` yöntem, nesne için en uygun yük değerini yeniden tanımlar. Çe
 
 Nesnede belirli bir konumda depolanan değeri değiştirmek `CAtlMap` için bu yöntemi çağırın.
 
-```
+```cpp
 void SetValueAt(
     POSITION pos,
     VINARGTYPE value);
@@ -731,7 +731,7 @@ void SetValueAt(
 *Pos*<br/>
 Pozisyon sayacı, CAtlMap önceki bir çağrı ile [döndürülen::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
 
-*Değer*<br/>
+*value*<br/>
 `CAtlMap` Nesneye eklenecek değer.
 
 ### <a name="remarks"></a>Açıklamalar

@@ -188,12 +188,12 @@ helpviewer_keywords:
 - CMFCRibbonBar [MFC], ToggleMimimizeState
 - CMFCRibbonBar [MFC], TranslateChar
 ms.assetid: a65d06fa-1a28-4cc0-8971-bc9d7c9198fe
-ms.openlocfilehash: cf3cb7a6e4bc4bc6c79265eb5138aca9fb55ce21
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 51d7ad249d3f3a2556f461aea1a33dd7cbc787eb
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81361436"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81749755"
 ---
 # <a name="cmfcribbonbar-class"></a>CMFCRibbonBar Sınıfı
 
@@ -581,7 +581,7 @@ Hızlı erişim araç çubuğu şerit kategorisi yalnızca hızlı erişim araç
 
 Belirtilen şerit öğesini şerit çubuğunun sekme satırına ekler.
 
-```
+```cpp
 void AddToTabs(CMFCRibbonBaseElement* pElement);
 ```
 
@@ -679,7 +679,7 @@ Pencere oluşturulduysa DOĞRU; aksi takdirde YANLIŞ.
 
 Şerit çubuğundaki tüm anahtar ucu denetimlerini kapatır.
 
-```
+```cpp
 void DeactivateKeyboardFocus(BOOL bSetFocus = TRUE);
 ```
 
@@ -732,7 +732,7 @@ virtual void DWMCompositionChanged();
 
 Şerit çubuğunun anahtar ucu özelliğini etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableKeyTips(BOOL bEnable = TRUE);
 ```
 
@@ -749,7 +749,7 @@ Bu özelliği etkinleştirdiğinizde, kullanıcı ALT veya F10 düğmesine bast�
 
 **Yazdırma Önizleme** özelliğini etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnablePrintPreview(BOOL bEnable = TRUE);
 ```
 
@@ -768,7 +768,7 @@ Varsayılan olarak **Yazdırma Önizleme** özelliği etkinleştirilir.
 
 Şerit çubuğunda araç ipuçlarını ve isteğe bağlı araç ipucu açıklamalarını etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableToolTips(
     BOOL bEnable = TRUE,
     BOOL bEnableDescr = TRUE);
@@ -865,7 +865,7 @@ Yöntem başarılı olduysa şerit kategorisinin sıfır tabanlı dizin; aksi ta
 
 Şerit çubuğundaki ve üst penceredeki tüm öğelerin düzenini ayarlar ve tüm pencereyi yeniden çizer.
 
-```
+```cpp
 void ForceRecalcLayout();
 ```
 
@@ -1017,7 +1017,7 @@ virtual CMFCRibbonBaseElement* GetDroppedDown();
 
 Belirli bir komut kimliğine sahip tüm şerit öğeleri için bir dizi işaretçi alır.
 
-```
+```cpp
 void GetElementsByID(
     UINT uiCmdID,
     CArray<CMFCRibbonBaseElement*,CMFCRibbonBaseElement*>& arButtons);
@@ -1060,7 +1060,7 @@ Aşağıdaki tabloda, iade değeri için olası bayrak bileşimi listelenir:
 
 Şerit çubuğunda belirtilen şerit öğeleri koleksiyonu için komut tanımlarını alır.
 
-```
+```cpp
 void GetItemIDsList(CList<UINT, UINT>& lstItems,
     BOOL bHiddenOnly = FALSE) const;
 ```
@@ -1177,7 +1177,7 @@ Açılır menüsünü kaldıran hızlı erişim araç çubuğundaki şerit öğe
 
 Hızlı erişim araç çubuğundaki şerit öğeleri için komut iDiler listesini alır.
 
-```
+```cpp
 void GetQuickAccessCommands(CList<UINT,UINT>& lstCommands);
 ```
 
@@ -1286,7 +1286,7 @@ Bağlam kategorisi etkinse, etkin kategori kategori listesindeki ilk görünür 
 
 Şerit çubuğundaki tüm tuş uçlarını gizler.
 
-```
+```cpp
 void HideKeyTips();
 ```
 
@@ -1635,7 +1635,7 @@ Tuş vuruşu olayı işlenmişse DOĞRU; aksi takdirde YANLIŞ.
 
 Bir araç ucunu görünümden kaldırır.
 
-```
+```cpp
 void PopTooltip();
 ```
 
@@ -1676,7 +1676,7 @@ Düzen ayarı ndan sonra şerit çubuğunun ekranı güncelleştirilir.
 
 Şerit çubuğundan tüm şerit kategorilerini siler.
 
-```
+```cpp
 void RemoveAllCategories();
 ```
 
@@ -1688,7 +1688,7 @@ Bu yöntem, tüm şerit kategorilerini bellekten ve kategori listesinden siler.
 
 Sekme alanındaki tüm şerit öğelerini kaldırır.
 
-```
+```cpp
 void RemoveAllFromTabs();
 ```
 
@@ -1749,7 +1749,7 @@ Ana şerit kategorisi etkin kategori olamaz.
 
 Birden çok belgearabirimi (MDI) alt penceresine ait şerit çubuğundaki sistem düğmelerini belirtilen MDI alt penceresine bağlar.
 
-```
+```cpp
 void SetActiveMDIChild(CWnd* pWnd);
 ```
 
@@ -1764,7 +1764,7 @@ void SetActiveMDIChild(CWnd* pWnd);
 
 Şerit çubuğuna bir uygulama şeridi düğmesi atar.
 
-```
+```cpp
 void SetApplicationButton(
     CMFCRibbonApplicationButton* pButton,
     CSize sizeButton);
@@ -1822,7 +1822,7 @@ En az bir şerit öğesinin tuş uçları ayarlanmışsa DOĞRU; aksi takdirde Y
 
 Kullanıcı şerit çubuğunda bulunan tuş uçlarına bastığında klavye gezinme düzeyini ayarlar.
 
-```
+```cpp
 void SetKeyboardNavigationLevel(
     CObject* pLevel,
     BOOL bSetFocus = TRUE);
@@ -1844,7 +1844,7 @@ void SetKeyboardNavigationLevel(
 
 Birden çok belgeli arabirim (MDI) alt penceresinin pencere boyutu en üst düzey duruma girdiğinde veya ayrıldığında şerit çubuğunu ayarlar.
 
-```
+```cpp
 void SetMaximizeMode(
     BOOL bMax,
     CWnd* pWnd = NULL);
@@ -1866,7 +1866,7 @@ void SetMaximizeMode(
 
 Hızlı Erişim Araç Çubuğu'na bir veya daha fazla şerit öğesi ekler.
 
-```
+```cpp
 void SetQuickAccessCommands(
     const CList<UINT,UINT>& lstCommands,
     BOOL bRecalcLayout=TRUE);
@@ -1890,7 +1890,7 @@ Aşağıdaki örnek, yöntemin sınıfta `SetQuickAccessCommands` nasıl `CMFCRi
 
 Hızlı erişim araç çubuğunu varsayılan duruma ayarlar.
 
-```
+```cpp
 void SetQuickAccessDefaultState(const CMFCRibbonQuickAccessToolBarDefaultState& state);
 ```
 
@@ -1913,7 +1913,7 @@ Aşağıdaki örnek, yöntemin sınıfta `SetQuickAccessDefaultState` nasıl `CM
 
 Hızlı erişim araç çubuğunu şerit çubuğunun altına veya altına konumlandırın.
 
-```
+```cpp
 void SetQuickAccessToolbarOnTop(BOOL bOnTop);
 ```
 
@@ -1926,7 +1926,7 @@ void SetQuickAccessToolbarOnTop(BOOL bOnTop);
 
 Şerit çubuğu için alet ucu sabit genişliklerinin normal ve büyük boyutlarını ayarlar.
 
-```
+```cpp
 void SetTooltipFixedWidth(
     int nWidthRegular,
     int nWidthLargeImage);
@@ -1948,7 +1948,7 @@ Bir parametrenin 0'a ayarlanması, karşılık gelen genişliğin değişmesine 
 
 Belirtilen şerit kategorisini gösterir veya gizler.
 
-```
+```cpp
 void ShowCategory(
     int nIndex,
     BOOL bShow=TRUE);
@@ -1966,7 +1966,7 @@ void ShowCategory(
 
 Belirtilen kimliği olan bağlam kategorilerini gösterir veya gizler.
 
-```
+```cpp
 void ShowContextCategories(
     UINT uiContextID,
     BOOL bShow=TRUE);
@@ -1984,7 +1984,7 @@ void ShowContextCategories(
 
 Şerit çubuğundaki her şerit öğesinin anahtar uçlarını gösterir.
 
-```
+```cpp
 void ShowKeyTips();
 ```
 
@@ -1994,7 +1994,7 @@ void ShowKeyTips();
 
 En aza indirgenen ve en üst düzeye çıkarılan durumlar arasında şerit çubuğunu geçişe bağlar.
 
-```
+```cpp
 void ToggleMimimizeState();
 ```
 
@@ -2131,7 +2131,7 @@ Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 Şerit için Windows 7 görünümünü (küçük dikdörtgen uygulama düğmesi) etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void SetWindows7Look(
     BOOL bWindows7Look,
     BOOL bRecalc = TRUE);

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - cache, ATL cached tear-off objects
 - CComCachedTearOffObject class
 ms.assetid: ae19507d-a1de-4dbc-a988-da9f75a50c95
-ms.openlocfilehash: 43f914a52666788fc0bf394d9d14830b28f5adc7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 019b90c932de144d05fbf05f3ca339f4e5d6edd1
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81321036"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81748096"
 ---
 # <a name="ccomcachedtearoffobject-class"></a>CComCachedTearOffObject Sınıfı
 
@@ -146,7 +146,7 @@ Standart bir HRESULT değeri.
 
 Özgüre `m_contained::FinalRelease` `m_contained`çağırır `CComContainedObject` <  `contained` ,> nesnesi.
 
-```
+```cpp
 void FinalRelease();
 ```
 

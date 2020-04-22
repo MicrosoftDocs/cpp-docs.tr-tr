@@ -25,12 +25,12 @@ helpviewer_keywords:
 - CIatan intrinsic
 - _CIatan intrinsic
 ms.assetid: 3baa0429-fe46-4bab-8b00-868e2186dc8c
-ms.openlocfilehash: 7b3f70ebcf6debbf5fe881fc0c64b407b9bd4ef3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5a501d8cf6d2e1dba87239337049d7e5ee0b953d
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81334399"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81745833"
 ---
 # <a name="_ciatan"></a>_CIatan
 
@@ -38,7 +38,7 @@ Yığındaki en üst değerin arctant'ını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 void __cdecl _CIatan();
 ```
 

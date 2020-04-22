@@ -130,12 +130,12 @@ helpviewer_keywords:
 - CMFCRibbonCategory [MFC], SetName
 - CMFCRibbonCategory [MFC], SetTabColor
 ms.assetid: 99ba25b6-d060-4fdd-bfab-3c46c22981bb
-ms.openlocfilehash: a1653242675db0e235b58f2c4865bb838753c484
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9c72f70e373699addf952600a8d630bb320fa641
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375269"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81749545"
 ---
 # <a name="cmfcribboncategory-class"></a>CMFCRibbonKategori Sınıfı
 
@@ -260,7 +260,7 @@ Aşağıdaki diyagram, RibbonApp örnek uygulamasından Ana Sayfa kategorisinin 
 
 Özelleştirme iletişim kutusunda görüntülenen şerit öğeleri dizisine belirtilen şerit öğesini ekler.
 
-```
+```cpp
 void AddHidden(CMFCRibbonBaseElement* pElem);
 ```
 
@@ -475,7 +475,7 @@ Yöntem başarılı olduysa bir şerit öğesiiçin işaretçi; aksi takdirde NU
 
 Şerit kategorisindeki tüm şerit öğelerini alır.
 
-```
+```cpp
 void GetElements(
     CArray <CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
 ```
@@ -493,7 +493,7 @@ Hızlı erişim araç çubuğunda kullanılmak üzere tasarlanmış şerit öğe
 
 Belirtilen komut kimliğiyle ilişkili tüm şerit öğelerini alır.
 
-```
+```cpp
 void GetElementsByID(
     UINT uiCmdID,
     CArray <CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
@@ -597,7 +597,7 @@ Alınan boyut, genel görüntü ölçeği faktörlüğünü içerir.
 
 Şerit kategorisinde bulunan şerit öğeleriiçin komut işlelerini alır.
 
-```
+```cpp
 void GetItemIDsList(
     CList<UINT, UINT>& lstItems,
     BOOL bHiddenOnly = FALSE) const;
@@ -881,7 +881,7 @@ Büyük görüntüleri görüntüleyen şerit düğmelerinde piksel olarak metni
 
 Şerit kategorisine ait tüm görünür öğeleri alır.
 
-```
+```cpp
 void GetVisibleElements(
     CArray <CMFCRibbonBaseElement*,
     CMFCRibbonBaseElement*>& arElements);
@@ -1336,7 +1336,7 @@ virtual void ReposPanels(CDC* pDC);
 
 Şerit kategorisinin şerit panellerinin daraltma sırasını tanımlar.
 
-```
+```cpp
 void SetCollapseOrder(const CArray<int,int>& arCollapseOrder);
 ```
 
@@ -1363,7 +1363,7 @@ Aşağıdaki örnek, yöntemin sınıfta `SetCollapseOrder` nasıl `CMFCRibbonCa
 
 Kullanıcı tanımlı verileri şerit kategorisiyle ilişkilendirilecek şekilde ayarlar.
 
-```
+```cpp
 void SetData(DWORD_PTR dwData);
 ```
 
@@ -1376,7 +1376,7 @@ void SetData(DWORD_PTR dwData);
 
 Şerit kategorisine bir anahtar ucu atar.
 
-```
+```cpp
 void SetKeys(LPCTSTR lpszKeys);
 ```
 
@@ -1393,7 +1393,7 @@ Kullanıcı Alt tuşuna veya F10 tuşuna bastığında tuş uçları görüntül
 
 Şerit kategorisine bir ad ve anahtar ucu atar.
 
-```
+```cpp
 void SetName(LPCTSTR lpszName);
 ```
 
@@ -1410,7 +1410,7 @@ void SetName(LPCTSTR lpszName);
 
 Şerit kategorisinin rengini ayarlar.
 
-```
+```cpp
 void SetTabColor(AFX_RibbonCategoryColor color);
 ```
 

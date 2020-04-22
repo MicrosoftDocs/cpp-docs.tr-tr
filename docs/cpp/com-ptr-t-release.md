@@ -7,30 +7,30 @@ f1_keywords:
 helpviewer_keywords:
 - Release method [C++]
 ms.assetid: db448b34-0efa-4f02-b701-ad1ca3ae6ca5
-ms.openlocfilehash: f455e855e782a939e79898ee46e445f65d25d37a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 73de3c2d19063f0738b8b0a3c510ea520f58de0b
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170598"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81745062"
 ---
 # <a name="_com_ptr_trelease"></a>_com_ptr_t::Release
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Kapsüllenmiş arabirim işaretçisindeki `IUnknown` **serbest bırakma** işlevini çağırır.
+Kapsüllenmiş **Release** arabirim `IUnknown` işaretçisi üzerinde Sürüm üye işlevini çağırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 void Release( );
 ```
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arabirim işaretçisi NULL ise, kapsüllenmiş arabirim İşaretçisinde `IUnknown::Release` çağırır, `E_POINTER` hatasını ortaya koyar.
+Kapsüllenmiş arabirim işaretçisini `IUnknown::Release` çağırır `E_POINTER` ve bu arabirim işaretçisi NULL ise hata yükseltir.
 
-**SON Microsoft 'a özgü**
+**END Microsoft Özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

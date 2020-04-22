@@ -25,12 +25,12 @@ helpviewer_keywords:
 - _CIlog intrinsic
 - CIlog intrinsic
 ms.assetid: 23503854-ddaa-4fe0-a4a3-7fbb3a43bdec
-ms.openlocfilehash: 629a1aa5e6406be896ccac079d61bd39b2fbd7a5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0203c40395c99fc145e1c8125f5d40c0d43571fc
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81349587"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81745401"
 ---
 # <a name="_cilog"></a>_CIlog
 
@@ -38,7 +38,7 @@ Yığındaki en üst değerin doğal logaritmasını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 void __cdecl _CIlog();
 ```
 

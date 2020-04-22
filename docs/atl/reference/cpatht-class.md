@@ -49,12 +49,12 @@ f1_keywords:
 helpviewer_keywords:
 - CPathT class
 ms.assetid: eba4137d-1fd2-4b44-a2e1-0944db64df3c
-ms.openlocfilehash: 13f46f549c7dd99852be0f322aef560cb454ed2a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
-ms.translationtype: MT
+ms.openlocfilehash: c10b854ae5c2d7167a067675b1391be24b6a8122
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81331481"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81746586"
 ---
 # <a name="cpatht-class"></a>CPathT Sınıfı
 
@@ -166,7 +166,7 @@ Yol için kullanılacak ATL/MFC dize sınıfı [(Bkz. CStringT).](../../atl-mfc-
 
 Bir yol için doğru sözdizimini oluşturmak için dize sonuna ters eğik çizgi eklemek için bu yöntemi çağırın. Yol zaten bir geri dönüş varsa, hiçbir backslash eklenecektir.
 
-```
+```cpp
 void AddBackslash();
 ```
 
@@ -220,7 +220,7 @@ Daha fazla bilgi için [PathAppend'e](/windows/win32/api/shlwapi/nf-shlwapi-path
 
 Belirli bir sürücü numarasından kök yol oluşturmak için bu yöntemi çağırın.
 
-```
+```cpp
 void BuildRoot(int iDrive);
 ```
 
@@ -237,7 +237,7 @@ Daha fazla bilgi için [Bkz. PathBuildRoot.](/windows/win32/api/shlwapi/nf-shlwa
 
 Yolu kanonik forma dönüştürmek için bu yöntemi arayın.
 
-```
+```cpp
 void Canonicalize();
 ```
 
@@ -249,7 +249,7 @@ Daha fazla bilgi için Bkz. [PathCanonicalize](/windows/win32/api/shlwapi/nf-shl
 
 Dizin adını ve dosya yolu adını temsil eden bir dizeyi tek bir yola dönüştürmek için bu yöntemi çağırın.
 
-```
+```cpp
 void Combine(PCXSTR pszDir, PCXSTR  pszFile);
 ```
 
@@ -712,7 +712,7 @@ typedef StringType::PXSTR PXSTR;
 
 Herhangi bir boşluk içeriyorsa, yolu tırnak işaretlerine baramak için bu yöntemi arayın.
 
-```
+```cpp
 void QuoteSpaces();
 ```
 
@@ -758,7 +758,7 @@ Daha fazla bilgi için Bkz. [PathRelativePathTo](/windows/win32/api/shlwapi/nf-s
 
 Herhangi bir komut satırı bağımsız değişkenini yoldan kaldırmak için bu yöntemi çağırın.
 
-```
+```cpp
 void RemoveArgs();
 ```
 
@@ -770,7 +770,7 @@ Daha fazla bilgi için [PathRemoveArgs'a](/windows/win32/api/shlwapi/nf-shlwapi-
 
 Sondaki ters eğik çizgiyi yoldan kaldırmak için bu yöntemi arayın.
 
-```
+```cpp
 void RemoveBackslash();
 ```
 
@@ -782,7 +782,7 @@ Daha fazla bilgi için Bkz. [PathRemoveBackslash.](/windows/win32/api/shlwapi/nf
 
 Yoldaki tüm öncü ve sondaki boşlukları kaldırmak için bu yöntemi arayın.
 
-```
+```cpp
 void RemoveBlanks();
 ```
 
@@ -794,7 +794,7 @@ Daha fazla bilgi için Bkz. [PathRemoveBlanks.](/windows/win32/api/shlwapi/nf-sh
 
 Varsa, dosya uzantısını yoldan kaldırmak için bu yöntemi arayın.
 
-```
+```cpp
 void RemoveExtension();
 ```
 
@@ -859,7 +859,7 @@ Daha fazla bilgi için [Bkz. PathSkipRoot.](/windows/win32/api/shlwapi/nf-shlwap
 
 Tam nitelikli bir yolun ve dosya adının yol bölümünü kaldırmak için bu yöntemi arayın.
 
-```
+```cpp
 void StripPath();
 ```
 
@@ -887,7 +887,7 @@ Daha fazla bilgi için [PathStripToRoot'a](/windows/win32/api/shlwapi/nf-shlwapi
 
 Bir yolun başından ve sonundan tırnak işaretlerini kaldırmak için bu yöntemi çağırın.
 
-```
+```cpp
 void UnquoteSpaces();
 ```
 

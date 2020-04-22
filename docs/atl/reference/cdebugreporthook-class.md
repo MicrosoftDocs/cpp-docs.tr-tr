@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CDebugReportHook class
 ms.assetid: 798076c3-6e63-4286-83b8-aa1bbcd0c20c
-ms.openlocfilehash: 621d32a14618327873e6e0cce856c5792e1f8c46
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8380556bbe007326156bf0ec0eefc23052e8e056
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327105"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81747727"
 ---
 # <a name="cdebugreporthook-class"></a>CDebugReportHook Sınıfı
 
@@ -127,7 +127,7 @@ Bu işlevdeki kod, arama iş parçacığının temel güvenlik bağlamında yür
 
 Adlandırılmış pipe'ye hata ayıklama raporları göndermeyi durdurmak ve önceki rapor kancasını geri yüklemek için bu yöntemi arayın.
 
-```
+```cpp
 void RemoveHook() throw();
 ```
 
@@ -139,7 +139,7 @@ void RemoveHook() throw();
 
 Adlandırılmış boruya hata ayıklama raporları göndermeye başlamak için bu yöntemi arayın.
 
-```
+```cpp
 void SetHook() throw();
 ```
 
@@ -173,7 +173,7 @@ Başarı doğru döndürür, başarısızlık false.
 
 Bu sınıfın adlandırılmış borunun kullanılabilir olmasını bekleyeceği milisaniye cinsinden zamanı ayarlamak için bu yöntemi arayın.
 
-```
+```cpp
 void SetTimeout(DWORD dwTimeout);
 ```
 

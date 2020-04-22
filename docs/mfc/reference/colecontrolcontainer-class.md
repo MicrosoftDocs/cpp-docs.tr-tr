@@ -72,12 +72,12 @@ helpviewer_keywords:
 - COleControlContainer [MFC], m_pWnd
 - COleControlContainer [MFC], m_siteMap
 ms.assetid: f7ce9246-0fb7-4f07-a83a-6c2390d0fdf8
-ms.openlocfilehash: b1737b2ac114181a4245fff027b756ca30b64129
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 83171e012db7ef2cce459d35cfc689746afd062c
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366182"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81749017"
 ---
 # <a name="colecontrolcontainer-class"></a>COleControlContainer Sınıfı
 
@@ -359,7 +359,7 @@ Varsayılan boyutlu denetimler oluşturmak için ikinci aşırı yüklemeyi kull
 
 Bir OLE yazı tipi oluşturur.
 
-```
+```cpp
 void CreateOleFont(CFont* pFont);
 ```
 
@@ -389,7 +389,7 @@ Belirtilen öğenin özel sitesine bir işaretçi.
 
 Kapsayıcının bağlı denetim sitelerindeki olayları yoksayacağını veya kabul edip edmeyeceğini belirler.
 
-```
+```cpp
 void FreezeAllEvents(BOOL bFreeze);
 ```
 

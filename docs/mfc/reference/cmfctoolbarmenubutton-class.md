@@ -92,12 +92,12 @@ helpviewer_keywords:
 - CMFCToolBarMenuButton [MFC], DrawDocumentIcon
 - CMFCToolBarMenuButton [MFC], m_bAlwaysCallOwnerDraw
 ms.assetid: cfa50176-7e4b-4527-9904-86a1b48fc1bc
-ms.openlocfilehash: 418ef29657271010c3a12f0f15a12f45e5351aac
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0dffd273b51dd1c71328332f9f7e29e1ac5cd213
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376166"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81745153"
 ---
 # <a name="cmfctoolbarmenubutton-class"></a>CMFCToolBarMenuButton Sınıfı
 
@@ -328,7 +328,7 @@ Varsayılan uygulama yalnızca yeni `CMFCPopupMenu` bir nesne inşa eder ve dön
 
 Menü düğmesine bir belge simgesi çizer.
 
-```
+```cpp
 void DrawDocumentIcon(
     CDC* pDC,
     const CRect& rectImage,
@@ -352,7 +352,7 @@ Bu yöntem bir belge simgesi alır ve *rectImage*tarafından belirtilen alana or
 
 ## <a name="cmfctoolbarmenubuttonenablequickcustomize"></a><a name="enablequickcustomize"></a>CMFCToolBarMenuButton::EnableQuickCustomize
 
-```
+```cpp
 void EnableQuickCustomize();
 ```
 
@@ -428,7 +428,7 @@ Araç çubuğu menüsü düğmesi bir alt menü görüntüleyebilir. Alt menüde
 
 Düğme görüntüsü için sınırlayıcı dikdörtgeni alır.
 
-```
+```cpp
 void GetImageRect(CRect& rectImage);
 ```
 
@@ -794,7 +794,7 @@ Varsayılan olarak bu yöntem şerit öğesi için erişilebilirlik verilerini a
 
 Hem geçerli bir komut kimliği hem de bir alt menüye sahip olduğunda düğmenin menü düğmesi veya bölme düğmesi olarak çizilip çizilmediğini belirtir.
 
-```
+```cpp
 void SetMenuOnly(BOOL bMenuOnly);
 ```
 
@@ -811,7 +811,7 @@ Genellikle, bir araç çubuğu menü düğmesi hem alt menüsü ne de komut kiml
 
 Açılır menü pişme modunda olup olmadığını belirtir.
 
-```
+```cpp
 void SetMenuPaletteMode(
     BOOL bMenuPaletteMode=TRUE,
     int nPaletteRows=1);
@@ -831,7 +831,7 @@ Palet modunda, tüm menü öğeleri çok sütunlu bir palet olarak görüntülen
 
 ## <a name="cmfctoolbarmenubuttonsetmessagewnd"></a><a name="setmessagewnd"></a>CMFCToolBarMenuButton::SetMessageWnd
 
-```
+```cpp
 void SetMessageWnd(CWnd* pWndMessage);
 ```
 

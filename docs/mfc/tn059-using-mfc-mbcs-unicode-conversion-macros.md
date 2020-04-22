@@ -11,12 +11,12 @@ helpviewer_keywords:
 - macros [MFC], MBCS conversion macros
 - TN059
 ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
-ms.openlocfilehash: 0d63a87d0fddde30dd5cbb18207297a345d74b9c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 657381d8247aef14b2c725996dfeb11d0e0535fe
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366587"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81749436"
 ---
 # <a name="tn059-using-mfc-mbcsunicode-conversion-macros"></a>TN059: MFC MBCS/Unicode Dönüştürme Makrolarını Kullanma
 
@@ -114,7 +114,7 @@ Yine, TEXTMETRIC, DEVMODE, BSTR ve OLE ayrılmış dizeleri yapmak için benzer 
 
 Makroları sıkı bir döngü içinde kullanmayın. Örneğin, aşağıdaki tür kod yazmak istemiyorum:
 
-```
+```cpp
 void BadIterateCode(LPCTSTR lpsz)
 {
     USES_CONVERSION;
@@ -126,7 +126,7 @@ void BadIterateCode(LPCTSTR lpsz)
 
 Yukarıdaki kod, dize `lpsz` içeriğine bağlı olarak yığınüzerinde bellek megabayt ayırma neden olabilir! Ayrıca döngü her yineleme için dize dönüştürmek için zaman alır. Bunun yerine, bu tür sabit dönüşümleri döngüdışına taşıyın:
 
-```
+```cpp
 void MuchBetterIterateCode(LPCTSTR lpsz)
 {
     USES_CONVERSION;
@@ -140,7 +140,7 @@ void MuchBetterIterateCode(LPCTSTR lpsz)
 
 Dize sabit değilse, yöntem çağrısını bir işleve kapsülle. Bu, dönüşüm arabelleği her zaman serbest bırakılacak izin verir. Örneğin:
 
-```
+```cpp
 void CallSomeMethod(int ii, LPCTSTR lpsz)
 {
     USES_CONVERSION;

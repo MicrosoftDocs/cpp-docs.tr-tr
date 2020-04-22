@@ -31,12 +31,12 @@ helpviewer_keywords:
 - IPropertyPage ATL implementation
 - IPropertyPageImpl class
 ms.assetid: f9b7c8b1-7a04-4eab-aa63-63efddb740fa
-ms.openlocfilehash: ac8fcb3b8b2bd0f876cf28d58e195000112373f4
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 154bfb5beb258ff26649f44f0bd4c23fb8708977
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329584"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81745870"
 ---
 # <a name="ipropertypageimpl-class"></a>IPropertyPageImpl Sınıfı
 
@@ -295,7 +295,7 @@ Bkz. [IPropertyPage::Windows](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-mo
 
 *BDirty*değerine bağlı olarak özellik sayfasının durumunu değiştirilmiş veya değişmemiş olarak işaretleyin.
 
-```
+```cpp
 void SetDirty(BOOL bDirty);
 ```
 

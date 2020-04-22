@@ -25,12 +25,12 @@ helpviewer_keywords:
 - property pages, ATL
 - CSnapInPropertyPageImpl class
 ms.assetid: 75bdce5a-985e-4166-bd44-493132e023c4
-ms.openlocfilehash: ae64c212520510a443fbb2b8adc99243e8f8843a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3f09e8500eadd36eec53db95f10261834d672101
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330695"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81747585"
 ---
 # <a name="csnapinpropertypageimpl-class"></a>CSnapInPropertyPageImpl Sınıfı
 
@@ -95,7 +95,7 @@ CSnapInPropertyPageImpl : public CDialogImplBase
 
 Modal özellik sayfasının bir sayfasındaki verilerde kurtarılamaz bir değişiklik yapıldıktan sonra bu işlevi arayın.
 
-```
+```cpp
 void CancelToClose();
 ```
 
@@ -176,7 +176,7 @@ True döndürür `OnApply` varsayılan uygulaması.
 
 Kullanıcı özellik sayfası için **Yardım** düğmesini tıklattığında bu üye işlev çağrılır.
 
-```
+```cpp
 void OnHelp();
 ```
 
@@ -222,7 +222,7 @@ True döndürür `OnQueryCancel` varsayılan uygulaması.
 
 Kullanıcı **İptal** düğmesini tıklattığında bu üye işlev çağrılır.
 
-```
+```cpp
 void OnReset();
 ```
 
@@ -334,7 +334,7 @@ Bir sayfa sıfır olmayan bir değer döndürürse, özellik sayfası iletiyi so
 
 Özellik sayfasındaki ayarların uygun dış nesneye uygulanıp uygulanmayacağına bağlı olarak **Şimdi Uygula** düğmesini etkinleştirmek veya devre dışı etmek için bu üye işlevini arayın.
 
-```
+```cpp
 void SetModified(BOOL bChanged = TRUE);
 ```
 

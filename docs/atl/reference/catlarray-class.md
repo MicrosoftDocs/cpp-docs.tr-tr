@@ -25,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlArray class
 ms.assetid: 0b503aa8-2357-40af-a326-6654bf1da098
-ms.openlocfilehash: 85168af654d3d63e06559486b464938b7fd90ad3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 607af2adaa3ef28a768812f3c811eb2ed3169ad9
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81321568"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81748783"
 ---
 # <a name="catlarray-class"></a>CAtlArray Sınıfı
 
@@ -162,7 +162,7 @@ Hata ayıklama yapılarında, `CAtlArray` bağımsız değişken geçerli bir di
 
 Dizi nesnesinin geçerli olduğunu doğrulamak için bu yöntemi arayın.
 
-```
+```cpp
 void AssertValid() const;
 ```
 
@@ -206,7 +206,7 @@ Dizi nesnesi tarafından kullanılan tüm kaynakları boşaltıyor.
 
 Bir dizinin öğelerini diğerine kopyalamak için bu yöntemi arayın.
 
-```
+```cpp
 void Copy(const CAtlArray<E, ETraits>& aSrc);
 ```
 
@@ -234,7 +234,7 @@ Hata ayıklama yapılarında, varolan `CAtlArray` nesne geçerli değilse veya *
 
 Dizideki boş öğeleri kaldırmak için bu yöntemi arayın.
 
-```
+```cpp
 void FreeExtra() throw();
 ```
 
@@ -319,7 +319,7 @@ typedef ETraits::INARGTYPE INARGTYPE;
 
 Bir diziyi diğerine eklemek için bu yöntemi arayın.
 
-```
+```cpp
 void InsertArrayAt(size_t iStart, const CAtlArray<E, ETraits>* paNew);
 ```
 
@@ -348,7 +348,7 @@ Hata ayıklama oluştururda, `CAtlArray` nesne geçerli değilse veya *paNew* i�
 
 Dizi nesnesine yeni bir öğe (veya bir öğenin birden çok kopyası) eklemek için bu yöntemi çağırın.
 
-```
+```cpp
 void InsertAt(size_t iElement, INARGTYPE element, size_t nCount = 1);
 ```
 
@@ -429,7 +429,7 @@ typedef ETraits::OUTARGTYPE OUTARGTYPE;
 
 Tüm öğeleri dizi nesnesinden kaldırmak için bu yöntemi çağırın.
 
-```
+```cpp
 void RemoveAll() throw();
 ```
 
@@ -447,7 +447,7 @@ Bu yöntem, diziyi yeniden boyutlandırmak için [CAtlArray::SetCount](#setcount
 
 Diziden bir veya daha fazla öğeyi kaldırmak için bu yöntemi çağırın.
 
-```
+```cpp
 void RemoveAt(size_t iElement, size_t nCount = 1);
 ```
 
@@ -473,7 +473,7 @@ Hata ayıklama yapılarda, `CAtlArray` nesne geçerli değilse veya *iElement* v
 
 Dizi nesnesindeki bir öğenin değerini ayarlamak için bu yöntemi çağırın.
 
-```
+```cpp
 void SetAt(size_t iElement, INARGTYPE element);
 ```
 
@@ -527,7 +527,7 @@ Kullanmadan önce dizinin boyutunu ayarlamak için bu yöntemi kullanın. `SetCo
 
 Dizi nesnesindeki bir öğenin değerini ayarlamak ve diziyi gerektiği gibi genişletmek için bu yöntemi çağırın.
 
-```
+```cpp
 void SetAtGrow(size_t iElement, INARGTYPE element);
 ```
 

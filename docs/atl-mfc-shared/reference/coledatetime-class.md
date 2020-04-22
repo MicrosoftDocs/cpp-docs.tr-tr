@@ -34,12 +34,12 @@ helpviewer_keywords:
 - dates, handling in MFC
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-ms.openlocfilehash: 610cbec6cb65d4e9616c5e0e0d64e729f39febcc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8ba09430427b6ece8ae5956912cbcc40fb33fcf2
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81317754"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81747165"
 ---
 # <a name="coledatetime-class"></a>COleDateTime Sınıfı
 
@@ -1135,7 +1135,7 @@ Değerler için sınırlar hakkında `COleDateTime` daha fazla bilgi için [Tari
 
 Bu `COleDateTime` nesnenin durumunu ayarlar.
 
-```
+```cpp
 void SetStatus(DateTimeStatus status) throw();
 ```
 

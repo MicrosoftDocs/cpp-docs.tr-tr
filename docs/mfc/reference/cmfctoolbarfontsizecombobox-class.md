@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMFCToolBarFontSizeComboBox [MFC], RebuildFontSizes
 - CMFCToolBarFontSizeComboBox [MFC], SetTwipSize
 ms.assetid: 72e0c44c-6a0e-4194-a71f-ab64e3afb9b5
-ms.openlocfilehash: 09811b14ed805b1965015a32a25c0b67c947ff4e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6c90bb1ce464a90295e7edb933d87594444c3648
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81358302"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81745313"
 ---
 # <a name="cmfctoolbarfontsizecombobox-class"></a>CMFCToolBarFontSizeComboBox Sınıfı
 
@@ -99,7 +99,7 @@ int GetTwipSize() const;
 
 Bir yazı tipi boyutu açılan kutusunu, verilen yazı tipinin tüm geçerli boyutlarıyla doldurur.
 
-```
+```cpp
 void RebuildFontSizes(const CString& strFontName);
 ```
 
@@ -116,7 +116,7 @@ Bir yazı tipi açılan kutusunda seçim ve [CMFCToolBarFontComboBox Sınıfı](
 
 Belirtilen boyutu (twip cinsinden) noktalardaki en yakın boyuta yuvarlar ve ardından açılan kutuda seçili boyutu bu değere ayarlar.
 
-```
+```cpp
 void SetTwipSize(int nSize);
 ```
 

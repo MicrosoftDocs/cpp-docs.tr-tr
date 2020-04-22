@@ -1,6 +1,7 @@
 ---
-title: /Fo (Nesne Dosya Adı)
-ms.date: 11/04/2016
+title: /Fo (Nesne dosyası adı)
+description: Visual Studio'da Microsoft C++ /Fo (Nesne dosya adı) derleyicisi seçeneğine başvuru kılavuzu.
+ms.date: 04/20/2020
 f1_keywords:
 - /Fo
 - VC.Project.VCCLCompilerTool.ObjectFile
@@ -11,48 +12,52 @@ helpviewer_keywords:
 - /Fo compiler option [C++]
 - -Fo compiler option [C++]
 ms.assetid: 0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6
-ms.openlocfilehash: a8f2c1a196f18e6d310fd41d4dbed751440a4c20
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd22ba745128fe1df67853d98c1495491b9ca840
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293049"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81748966"
 ---
 # <a name="fo-object-file-name"></a>/Fo (Nesne Dosya Adı)
 
-Bir nesne (.obj) dosya adı veya varsayılan yerine kullanılacak dizini belirtir.
+Varsayılan yerine kullanılacak*`.obj`* bir nesne ( ) dosya adı veya dizin belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-/Fopathname
-```
+> **`/Fo`**_Yoladı_
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçeneği kullanmazsanız, nesne dosyası taban adı kaynak dosyasını ve .obj uzantısı kullanır. Herhangi bir ad ve istediğiniz uzantı kullanabilirsiniz, ancak önerilen kuralı kullanmaktır. obj.
+CL **`/Fo`** derleyici komutu tarafından oluşturulan tüm nesne dosyaları için bir çıktı dizini ayarlamak için derleyici seçeneğini kullanabilirsiniz. Veya, tek bir nesne dosyasını yeniden adlandırmak için kullanabilirsiniz.
+
+Varsayılan olarak, derleyici tarafından oluşturulan nesne dosyaları geçerli dizine yerleştirilir. Onlara kaynak dosyanın temel adı ve *`.obj`* uzantısı verilir.
+
+Nesne dosyasını **`/Fo`** yeniden adlandırma seçeneğini kullanmak için çıktı dosya adını *yol adı* bağımsız değişkeni olarak belirtin. Bir nesne dosyasını yeniden adlandırdığınızda, istediğiniz adı ve uzantıyı kullanabilirsiniz, ancak önerilen kural kuralı . *`.obj`* Derleyici, derlenecek birden fazla kaynak dosya belirttiğiniz **`/Fo`** zaman bir dosya adı belirtirseniz D8036 komut satırı hatası oluşturur.
+
+CL komutu tarafından oluşturulan tüm nesne dosyaları için bir çıktı dizini ayarlamak için **`/Fo`** seçeneği kullanmak için, *dizin yol adı* bağımsız değişkeni olarak belirtin. Dizin, *yol adı* bağımsız değişkeninde bir çizgi ile gösterilir. Belirtilen dizin mevcut olmalıdır; otomatik olarak oluşturulmaz.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki komut satırı, d sürücüsünde varolan bir dizinde * \\* *sample.obj* adlı bir nesne dosyası oluşturur.
+
+```cmd
+CL /Fo"D:\intermediate\" /EHsc /c sample.cpp
+```
+
+## <a name="set-the-option-in-visual-studio-or-programmatically"></a>Seçeneği Visual Studio'da veya programlı olarak ayarlama
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
 
-1. Tıklayın **C/C++** klasör.
+1. Yapılandırma **Özellikleri** > **C/C++** > **Çıktı Dosyaları** özelliği sayfasını seçin.
 
-1. Tıklayın **Çıkış dosyalarını** özellik sayfası.
-
-1. Değiştirme **nesne dosyası adını** özelliği.  Geliştirme ortamında, nesne dosyası uzantısına sahip olmalıdır. obj.
+1. Çıktı dizini ayarlamak için **Nesne Dosya Adı** özelliğini değiştirin. IDE'de, nesne dosyasının bir *`.obj`* uzantısı olmalıdır.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ObjectFile%2A>.
-
-## <a name="example"></a>Örnek
-
-Aşağıdaki komut satırını THIS.obj varolan bir dizin, \OBJECT, sürücüde b adlı bir nesne dosyası oluşturur
-
-```
-CL /FoB:\OBJECT\ THIS.C
-```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

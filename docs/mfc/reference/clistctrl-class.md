@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: 19939ce7dacc1b826e0a2f067c43fc65db328a54
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4b505912c69ffbb86ad3dae98f99531c477db693
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370161"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81749144"
 ---
 # <a name="clistctrl-class"></a>CListCtrl Sınıfı
 
@@ -584,7 +584,7 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 Madde metin düzenleme işlemini iptal eder.
 
-```
+```cpp
 void CancelEditLabel();
 ```
 
@@ -618,7 +618,7 @@ virtual BOOL Create(
 Liste denetiminin stilini belirtir. Liste denetim stillerinin herhangi bir birleşimini denetime uygulayın. Bu stillerin tam listesi için Windows SDK'daki [liste görünümü pencere stillerine](/windows/win32/Controls/list-view-window-styles) bakın. [SetExtendedStyle'ı](#setextendedstyle)kullanarak denetime özgü genişletilmiş stilleri ayarlayın.
 
 *Rect*<br/>
-Liste denetiminin boyutunu ve konumunu belirtir. Bir `CRect` nesne veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
+Liste denetiminin boyutunu ve konumunu belirtir. Bir `CRect` nesne veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
 
 *pParentWnd*<br/>
 Liste denetiminin üst penceresini belirtir, `CDialog`genellikle bir . NULL olmamalıdır.
@@ -666,7 +666,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Liste denetiminin stilini belirtir. Liste denetim stillerinin herhangi bir birleşimini denetime uygulayın. Bu stillerin tam listesi için Windows SDK'daki [Liste görünümü pencere stillerine](/windows/win32/Controls/list-view-window-styles) bakın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -700,7 +700,7 @@ CImageList* CreateDragImage(
 Sürükle resim listesi oluşturulacak öğenin dizin.
 
 *lpPoint*<br/>
-Görüntünün sol üst köşesindeki ilk konumu görüş koordinatlarında alan bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısının adresi.
+Görüntünün sol üst köşesindeki ilk konumu görüş koordinatlarında alan bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısının adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1413,7 +1413,7 @@ Aşağıdaki kod örneği `GetGroupInfoByIndex` yöntemi gösterir. Bu kod örne
 
 Bir grubun ölçümlerini alır.
 
-```
+```cpp
 void GetGroupMetrics(PLVGROUPMETRICS pGroupMetrics) const;
 ```
 
@@ -1442,7 +1442,7 @@ BOOL GetGroupRect(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*iGroupId*|[içinde] Bir grubu belirtir.|
-|*Lprect*|[içinde, dışarı] [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi. Bu yöntem başarılı olursa, yapı *iGroupId*tarafından belirtilen grubun dikdörtgen koordinatlarını alır.|
+|*Lprect*|[içinde, dışarı] [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi. Bu yöntem başarılı olursa, yapı *iGroupId*tarafından belirtilen grubun dikdörtgen koordinatlarını alır.|
 |*iCoords*|[içinde] Almak için dikdörtgen koordinatlarını belirtir. Bu değerlerden birini kullanın:<br /><br /> - LVGGR_GROUP - (Varsayılan) Tüm genişletilmiş grubun koordinatları.<br />- LVGGR_HEADER - Yalnızca üstbilginin (daraltılmış grup) koordinatları.<br />- LVGGR_SUBSETLINK - Yalnızca alt küme bağlantısının (işaretleme alt kümesi) koordinatları.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1451,7 +1451,7 @@ Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arayan, *pRect* parametresi tarafından işaret edilen [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısını ayırmakla yükümlüdür.
+Arayan, *pRect* parametresi tarafından işaret edilen [RECT](/windows/win32/api/windef/ns-windef-rect) yapısını ayırmakla yükümlüdür.
 
 Bu yöntem, Windows SDK'da açıklanan [LVM_GETGROUPRECT](/windows/win32/Controls/lvm-getgrouprect) iletisini gönderir.
 
@@ -1791,7 +1791,7 @@ BOOL GetItemIndexRect(
 |*pItemIndex*|[içinde] Alt öğenin ana öğesi için [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) yapısını işaretçi.<br /><br /> Arayan, [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) yapısının üyelerini ayırmak ve ayarlamaktan sorumludur. Bu parametre NULL olamaz.|
 |*ıcolumn*|[içinde] Denetimdeki bir sütunun sıfır tabanlı dizini.|
 |*rectType*|[içinde] Sınırlayıcı dikdörtgenin alındığı liste görünümü alt öğesinin bir bölümü. Aşağıdaki değerlerden birini belirtin:<br /><br /> LVIR_BOUNDS - Simge ve etiket de dahil olmak üzere tüm alt öğenin sınırlayıcı dikdörtgenini verir.<br /><br /> LVIR_ICON - Simgenin veya alt öğenin küçük simgesinin sınırlayıcı dikdörtgenini verir.<br /><br /> LVIR_LABEL - Alt öğe metninin sınırlayıcı dikdörtgenini verir.|
-|*pRect*|[çıkış] Alt öğenin sınırlayıcı dikdörtgeni hakkında bilgi alan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi.<br /><br /> Arayan, [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısını ayırmakla yükümlüdür. Bu parametre NULL olamaz.|
+|*pRect*|[çıkış] Alt öğenin sınırlayıcı dikdörtgeni hakkında bilgi alan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi.<br /><br /> Arayan, [RECT](/windows/win32/api/windef/ns-windef-rect) yapısını ayırmakla yükümlüdür. Bu parametre NULL olamaz.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1845,7 +1845,7 @@ BOOL GetItemPosition(
 Konumu alınacak öğenin dizin.
 
 *lpPoint*<br/>
-Görünüm koordinatlarında öğenin sol üst köşesindeki konumu alan bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısının adresi.
+Görünüm koordinatlarında öğenin sol üst köşesindeki konumu alan bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısının adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1884,7 +1884,7 @@ BOOL GetItemRect(
 Konumu alınacak öğenin dizin.
 
 *Lprect*<br/>
-Sınırlayıcı dikdörtgeni alan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısının adresi.
+Sınırlayıcı dikdörtgeni alan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısının adresi.
 
 *Ncode*<br/>
 Sınırlayan dikdörtgeni almak için liste görünümü öğesinin bir bölümü. Bu değerlerden biri olabilir:
@@ -2221,7 +2221,7 @@ BOOL GetOrigin(LPPOINT lpPoint) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpPoint*<br/>
-Görünüm kaynağını alan bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısının adresi.
+Görünüm kaynağını alan bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısının adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2532,7 +2532,7 @@ BOOL GetViewRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *Lprect*<br/>
-[RECT](/previous-versions/dd162897\(v=vs.85\)) yapısının adresi.
+[RECT](/windows/win32/api/windef/ns-windef-rect) yapısının adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2546,7 +2546,7 @@ Liste görünümü simge görünümünde veya küçük simge görünümünde olm
 
 Liste görünümü denetiminin geçerli çalışma alanlarını alır.
 
-```
+```cpp
 void GetWorkAreas(
     int nWorkAreas,
     LPRECT pRect) const;
@@ -2835,7 +2835,7 @@ int InsertMarkHitTest(
 ### <a name="parameters"></a>Parametreler
 
 *pPoint*<br/>
-Liste denetiminin istemci alanına göre isabet testi koordinatlarını içeren bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısına işaretçi.
+Liste denetiminin istemci alanına göre isabet testi koordinatlarını içeren bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısına işaretçi.
 
 *plvim*<br/>
 Nokta parametresi tarafından tanımlanan koordinatlara en yakın ekleme noktasını belirten bir [LVINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-lvinsertmark) yapısına işaretçi.
@@ -3008,7 +3008,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_MOVEGROUP](/windows/wi
 
 Belirtilen maddeyi belirtilen gruba taşır.
 
-```
+```cpp
 void MoveItemToGroup(
     int idItemFrom,
     int idGroupTo);
@@ -3059,7 +3059,7 @@ Liste görünümü penceresi WM_PAINT iletisi alana kadar belirtilen öğeler ge
 
 Liste görünümü denetiminden tüm grupları kaldırır.
 
-```
+```cpp
 void RemoveAllGroups();
 ```
 
@@ -3387,7 +3387,7 @@ Bu yöntem, Windows SDK'da açıklanan [LVM_SETGROUPINFO](/windows/win32/Control
 
 Liste görünümü denetiminin grup ölçümlerini ayarlar.
 
-```
+```cpp
 void SetGroupMetrics(PLVGROUPMETRICS pGroupMetrics);
 ```
 
@@ -3693,7 +3693,7 @@ Yapının `mask` `LVITEM` üyesi ve *nMask* parametresi hangi madde öznitelikle
 
 Çok sayıda öğe eklemek için liste görünümü denetimini hazırlar.
 
-```
+```cpp
 void SetItemCount(int nItems);
 ```
 
@@ -3855,7 +3855,7 @@ BOOL SetItemPosition(
 Konumu ayarlanacak maddenin dizin.
 
 *Pt*<br/>
-Öğenin sol üst köşesindeki görünüm koordinatlarında yeni konumu belirten bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısı.
+Öğenin sol üst köşesindeki görünüm koordinatlarında yeni konumu belirten bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4156,7 +4156,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_SETVIEW](/windows/win3
 
 Simgelerin liste görünümü denetiminde görüntülenebileceği alanı ayarlar.
 
-```
+```cpp
 void SetWorkAreas(
     int nWorkAreas,
     LPRECT lpRect);

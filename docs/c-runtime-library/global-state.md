@@ -3,12 +3,12 @@ title: CRT'de küresel durum
 ms.date: 04/02/2020
 helpviewer_keywords:
 - CRT global state
-ms.openlocfilehash: 487418da104b2edbc45b5d3a664e4385394ada31
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1b32e8d4f23d2361a52a9b81150ef7c5c7422761
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81379102"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81745350"
 ---
 # <a name="global-state-in-the-crt"></a>CRT'de küresel durum
 
@@ -20,8 +20,8 @@ UCRT'nin küresel durumu uygulamalar ve işletim sistemi arasında paylaşılmaz
 
 UCRT'de, küresel durumla etkileşimedebilen işlevler, önceden belirlenmiş `_o_`bir "ikiz" işlevine sahiptir. Örneğin:
 
-    `setlocale()` affects global state specific to the app.
-    `_o_setlocale()` affects global state shared by all OS components, but not apps.
+- `setlocale()`uygulamaya özgü genel durumu etkiler.
+- `_o_setlocale()`tüm işletim sistemi bileşenleri tarafından paylaşılan genel durumu etkiler, ancak uygulamaları etkilemez.
 
 Bu "ikiz" işlevler arasındaki tek fark, genel CRT durumunu okuduklarında/yazdıklarında, işletim egörere `_o_`özgü sürümlerin (diğer bir şekilde başlayan sürümler) uygulamanın küresel durum kopyası yerine küresel devletin işletim sistemi kopyasını kullanmasıdır.
 

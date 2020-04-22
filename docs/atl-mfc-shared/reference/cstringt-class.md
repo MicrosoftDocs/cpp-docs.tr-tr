@@ -80,12 +80,12 @@ helpviewer_keywords:
 - shared classes, CStringT
 - CStringT class
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
-ms.openlocfilehash: 90f63b474f509b4d1a15ad6fe11bda61c343f483
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8fcce4c426cd99785d34dc080f238cc78cdfee36
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81317597"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81746715"
 ---
 # <a name="cstringt-class"></a>CStringT Sınıfı
 
@@ -306,7 +306,7 @@ Aşağıdaki örnek, ..000.000.000.000.000.000. `CStringT::AllocSysString`
 
 Bu `CStringT` nesnedeki tüm karakterleri ANSI karakter kümesinden OEM karakter kümesine dönüştürür.
 
-```
+```cpp
 void AnsiToOem();
 ```
 
@@ -322,7 +322,7 @@ _UNICODE tanımlanırsa işlev kullanılamaz.
 
 Varolan `CStringT` bir nesneye biçimlendirilmiş verileri ekler.
 
-```
+```cpp
 void __cdecl AppendFormat(PCXSTR pszFormat, [, argument] ...);
 void __cdecl AppendFormat(UINT nFormatID, [, argument] ...);
 ```
@@ -696,7 +696,7 @@ Eşleştirme için karakterler içeren dize.
 
 Biçimlendirilmiş verileri, `CStringT` [sprintf_s'nin](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md) verileri C stili karakter dizisine biçimlendirmesi gibi yazar.
 
-```
+```cpp
 void __cdecl Format(UINT nFormatID, [, argument]...);
 void __cdecl Format(PCXSTR pszFormat,  [, argument] ...);
 ```
@@ -730,7 +730,7 @@ Daha fazla bilgi için [bkz: Biçim Belirtimi: printf ve wprintf Fonksiyonları.
 
 İleti dizelerini biçimlendirin.
 
-```
+```cpp
 void __cdecl FormatMessage(UINT nFormatID, [, argument]...);
 void __cdecl FormatMessage(PCXSTR pszFormat, [, argument]...);
 ```
@@ -763,7 +763,7 @@ Her kesici *uç, pszFormat* veya *nFormatID* parametresini izleyen karşılık g
 
 Değişken bağımsız değişken listesi kullanarak ileti dizelerini biçimlendirin.
 
-```
+```cpp
 void FormatMessageV(PCXSTR pszFormat, va_list* pArgList);
 ```
 
@@ -788,7 +788,7 @@ Daha fazla bilgi için Windows SDK'daki Windows [Biçimmesajı](/windows/win32/a
 
 Değişken bağımsız değişken listesi kullanarak ileti dizelerini biçimlendirin.
 
-```
+```cpp
 void FormatV(PCXSTR pszFormat, va_list args);
 ```
 
@@ -1012,7 +1012,7 @@ Belirtilen `CStringT` karakter aralığının bir kopyasını içeren bir nesne.
 
 Bu `CStringT` nesnedeki tüm karakterleri OEM karakter kümesinden ANSI karakter kümesine dönüştürür.
 
-```
+```cpp
 void OemToAnsi();
 ```
 

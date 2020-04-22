@@ -34,12 +34,12 @@ helpviewer_keywords:
 - LPRECT operator
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-ms.openlocfilehash: c59ed587e2c8e51f5c08a026a7ee0b9d0af25168
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b99eca7fe3a9c84f8b79ef3d694e27b6dd74dcd9
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81317712"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81747059"
 ---
 # <a name="crect-class"></a>CRect Sınıfı
 
@@ -242,7 +242,7 @@ void CMyDlg::OnPaint()
 
 Dikdörtgeni `lpSrcRect` `CRect`.
 
-```
+```cpp
 void CopyRect(LPCRECT lpSrcRect) throw();
 ```
 
@@ -366,7 +366,7 @@ ASSERT(rect5 == rect4);
 
 `DeflateRect`kenarlarını `CRect` merkezine doğru hareket ettirerek söner.
 
-```
+```cpp
 void DeflateRect(int x, int y) throw();
 void DeflateRect(SIZE size) throw();
 void DeflateRect(LPCRECT lpRect) throw();
@@ -492,7 +492,7 @@ ASSERT(nHt == 40);
 
 `InflateRect`kenarlarını `CRect` merkezinden uzaklaştırarak şişirilir.
 
-```
+```cpp
 void InflateRect(int x, int y) throw();
 void InflateRect(SIZE size) throw();
 void InflateRect(LPCRECT lpRect) throw();
@@ -647,7 +647,7 @@ ASSERT(!rectNotNull.IsRectNull());
 
 Dikdörtgeni *x*tarafından belirtilen mutlak x koordinatına taşımak için bu işlevi çağırın.
 
-```
+```cpp
 void MoveToX(int x) throw();
 ```
 
@@ -670,7 +670,7 @@ ASSERT(rect == CRect(10, 0, 110, 100));
 
 Dikdörtgeni belirtilen mutlak x- ve y koordinatlarına taşımak için bu işlevi çağırın.
 
-```
+```cpp
 void MoveToXY(int x, int y) throw();
 void MoveToXY(POINT point) throw();
 ```
@@ -699,7 +699,7 @@ ASSERT(rect == CRect(10, 10, 110, 110));
 
 Dikdörtgeni *y*tarafından belirtilen mutlak y-koordinatına taşımak için bu işlevi çağırın.
 
-```
+```cpp
 void MoveToY(int y) throw();
 ```
 
@@ -721,7 +721,7 @@ ASSERT(rect == CRect(0, 10, 100, 110));
 
 `CRect` Normalleştirir, böylece hem yükseklik hem de genişlik pozitiftir.
 
-```
+```cpp
 void NormalizeRect() throw();
 ```
 
@@ -746,7 +746,7 @@ ASSERT(rect1 == rect2);
 
 Belirtilen `CRect` uzaklıklara göre hareket eder.
 
-```
+```cpp
 void OffsetRect(int x, int y) throw();
 void OffsetRect(POINT point) throw();
 void OffsetRect(SIZE size) throw();
@@ -810,7 +810,7 @@ CRect örneğine [bakın:operatör LPCRECT](#operator_lpcrect).
 
 *SrcRect'i* `CRect`.
 
-```
+```cpp
 void operator=(const RECT& srcRect) throw();
 ```
 
@@ -913,7 +913,7 @@ ASSERT(rect3 != test);
 
 İlk iki aşırı `CRect` yük, belirtilen uzaklıklarla hareket eder.
 
-```
+```cpp
 void operator+=(POINT point) throw();
 void operator+=(SIZE size) throw();
 void operator+=(LPCRECT lpRect) throw();
@@ -951,7 +951,7 @@ ASSERT(rect1 == rect2);
 
 İlk iki aşırı `CRect` yük, belirtilen uzaklıklarla hareket eder.
 
-```
+```cpp
 void operator-=(POINT point) throw();
 void operator-=(SIZE size) throw();
 void operator-=(LPCRECT lpRect) throw();
@@ -989,7 +989,7 @@ ASSERT(rect1 == rectResult);
 
 Kesişim `CRect` `CRect` ve `rect`.
 
-```
+```cpp
 void operator&=(const RECT& rect) throw();
 ```
 
@@ -1013,7 +1013,7 @@ CRect örneğine [bakın:IntersectRect](#intersectrect).
 
 Birliğe eşit `CRect` ayarlar `CRect` `rect`ve .
 
-```
+```cpp
 void operator|=(const RECT& rect) throw();
 ```
 
@@ -1255,7 +1255,7 @@ ASSERT(rect.PtInRect(pt));
 
 Boyutlarını belirtilen `CRect` koordinatlara ayarlar.
 
-```
+```cpp
 void SetRect(int x1, int y1, int x2, int y2) throw();
 ```
 
@@ -1285,7 +1285,7 @@ ASSERT(rect == CRect(256, 256, 512, 512));
 
 Tüm `CRect` koordinatları sıfıra ayarlayarak null dikdörtgen yapar.
 
-```
+```cpp
 void SetRectEmpty() throw();
 ```
 

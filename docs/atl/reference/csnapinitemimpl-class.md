@@ -27,12 +27,12 @@ helpviewer_keywords:
 - CSnapInItemImpl class
 - snap-ins
 ms.assetid: 52caefbd-9eae-49b0-add2-d55524271aa7
-ms.openlocfilehash: 1e4f98dabd2d27b21dbe3e197f32e27ccca9d2d9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 04eeba0239789b9f3220b7bfece3eb41dc7f2826
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330729"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81746418"
 ---
 # <a name="csnapinitemimpl-class"></a>CSnapInItemImpl Sınıfı
 
@@ -382,7 +382,7 @@ QueryPagesFor(DATA_OBJECT_TYPES type);
 
 Bu işlevi, *pInsertionAllowed*tarafından belirlenen menü ekleme bayraklarını değiştirmek için çağırın, içeri gir nesnesi için.
 
-```
+```cpp
 void SetMenuInsertionFlags(
     bool bBeforeInsertion,
     long* pInsertionAllowed);
@@ -414,7 +414,7 @@ Başlangıçta temizlenmiş *olan pInsertionAllowed'de* bitleri ayarlamaya çal�
 
 Araç çubuğu oluşturulmadan önce, snap-in nesnesinin herhangi bir araç çubuğu düğmesi stillerini değiştirmek için bu işlevi arayın.
 
-```
+```cpp
 void SetToolbarButtonInfo(
     UINT id,
     BYTE* fsState,
@@ -458,7 +458,7 @@ void SetToolbarButtonInfo(
 
 Bir menü öğesini, içeri girme nesnesinin bağlam menüsüne eklenmeden önce değiştirmek için bu işlevi arayın.
 
-```
+```cpp
 void UpdateMenuState(
     UINT id,
     LPTSTR pBuf,

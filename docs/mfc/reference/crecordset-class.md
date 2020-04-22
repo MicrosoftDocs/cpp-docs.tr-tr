@@ -130,12 +130,12 @@ helpviewer_keywords:
 - CRecordset [MFC], m_strFilter
 - CRecordset [MFC], m_strSort
 ms.assetid: dd89a21d-ef39-4aab-891b-1e373d67c855
-ms.openlocfilehash: 264c9eda4860dfbe41d40c9b454ec40a1a274ba5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ab6cde9f478dc6f2e3cb0ba5bb338a3852f083fd
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368370"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81750510"
 ---
 # <a name="crecordset-class"></a>CRecordset Sınıfı
 
@@ -331,7 +331,7 @@ Yer imleri ve kayıt kümesi gezintisi hakkında daha fazla bilgi için [Records
 
 Veri kaynağının devam eden bir eşzamanlı işlemi veya ikinci bir iş parçacığından bir işlemi iptal etme isteği.
 
-```
+```cpp
 void Cancel();
 ```
 
@@ -343,7 +343,7 @@ MFC ODBC sınıfları artık eşzamanlı işleme kullanmaz; bir asychronous işl
 
 [Güncelleştirme](#update) çağrılmadan önce bir [Düzenleme](#edit) veya [AddNew](#addnew) işleminin neden olduğu bekleyen güncelleştirmeleri iptal eder.
 
-```
+```cpp
 void CancelUpdate();
 ```
 
@@ -643,7 +643,7 @@ Aşağıdaki kod, giriş `COutParamRecordset` parametresi ve çıktı parametres
 
 Geçerli kaydın yer işareti değerini alır.
 
-```
+```cpp
 void GetBookmark(CDBVariant& varBookmark);
 ```
 
@@ -711,7 +711,7 @@ Daha fazla bilgi [için, makaleye bakın Recordset: Tablo için Bir Sınıf Bild
 
 Geçerli kayıttaki alan verilerini alır.
 
-```
+```cpp
 void GetFieldValue(
     LPCTSTR lpszName,
     CDBVariant& varValue,
@@ -805,7 +805,7 @@ Kayıt kümeleri oluşturma hakkında daha fazla bilgi için [Recordset: Creatin
 
 Kayıt kümesindeki alanlar hakkında bilgi alır.
 
-```
+```cpp
 void GetODBCFieldInfo(
     LPCTSTR lpszName,
     CODBCFieldInfo& fieldinfo);
@@ -931,7 +931,7 @@ Daha fazla bilgi için Windows SDK'daki ODBC API işlevine `SQLExtendedFetch` ba
 
 Kayıt kümesindeki geçerli kaydın dizini ve son kaydın görülüp görülmediğini belirler.
 
-```
+```cpp
 void GetStatus(CRecordsetStatus& rStatus) const;
 ```
 
@@ -1337,7 +1337,7 @@ Kayıt kümesi gezintisi hakkında daha fazla bilgi için [Recordset: Scrolling 
 
 İlk satırdaki ilk kaydı geçerli kaydı yapar.
 
-```
+```cpp
 void MoveFirst();
 ```
 
@@ -1369,7 +1369,7 @@ Kayıt kümesi gezintisi hakkında daha fazla bilgi için [Recordset: Scrolling 
 
 Son tam satır daki ilk kaydı geçerli kaydı yapar.
 
-```
+```cpp
 void MoveLast();
 ```
 
@@ -1399,7 +1399,7 @@ Kayıt kümesi gezintisi hakkında daha fazla bilgi için [Recordset: Scrolling 
 
 Bir sonraki satırdaki ilk kaydı geçerli kaydı ayarlar.
 
-```
+```cpp
 void MoveNext();
 ```
 
@@ -1429,7 +1429,7 @@ Kayıt kümesi gezintisi hakkında daha fazla bilgi için [Recordset: Scrolling 
 
 Önceki satır kümesindeki ilk kaydı geçerli kaydı yapar.
 
-```
+```cpp
 void MovePrev();
 ```
 
@@ -1617,7 +1617,7 @@ Aşağıdaki kod örnekleri, çağrının `Open` farklı biçimlerini gösterir.
 
 Geçerli satır kümesindeki bir satırın verilerini ve durumunu güncelleştirir.
 
-```
+```cpp
 void RefreshRowset(
     WORD wRow,
     WORD wLockType = SQL_LOCK_NO_CHANGE);
@@ -1682,7 +1682,7 @@ Bu örnek, farklı bir sıralama sırası uygulamak için bir kayıt kümesini y
 
 Kayıt kümesini belirtilen kayıt numarasına karşılık gelen kayıt kümesine konumlandırın.
 
-```
+```cpp
 void SetAbsolutePosition(long nRows);
 ```
 
@@ -1711,7 +1711,7 @@ Kayıt kümesi gezintisi ve yer imleri hakkında daha fazla bilgi için [Records
 
 Kaydedilen kayıtları belirtilen yer işaretini içeren kayıt tasnmı.
 
-```
+```cpp
 void SetBookmark(const CDBVariant& varBookmark);
 ```
 
@@ -1738,7 +1738,7 @@ Yer imleri ve kayıt kümesi gezintisi hakkında daha fazla bilgi için [Records
 
 Kayıt kümesinin alan veri üyesini değiştirilmiş veya değişmemiş olarak işaretler.
 
-```
+```cpp
 void SetFieldDirty(void* pv, BOOL bDirty = TRUE);
 ```
 
@@ -1778,7 +1778,7 @@ Bu, tüm `param` alanları, alanlar ile `outputColumn` yapabildiğiniz gibi NULL
 
 Kayıt kümesinin alan veri üyesini Null (özellikle değeri olmayan) veya Null olmayan olarak işaretler.
 
-```
+```cpp
 void SetFieldNull(void* pv, BOOL bNull = TRUE);
 ```
 
@@ -1823,7 +1823,7 @@ Bu, tüm `param` alanları, alanlar ile `outputColumn` yapabildiğiniz gibi NULL
 
 Kilitleme modunu "iyimser" kilitleme (varsayılan) veya "kötümser" kilitleme olarak ayarlar. Güncelleştirmeler için kayıtların nasıl kilitlendirilebildiğini belirler.
 
-```
+```cpp
 void SetLockingMode(UINT nMode);
 ```
 
@@ -1844,7 +1844,7 @@ Kayıt kümesinin güncelleştirmeler için kullandığı iki kayıt kilitleme s
 
 Bir parametreyi Null (özellikle değeri olmayan) veya Null olmayan olarak işaretler.
 
-```
+```cpp
 void SetParamNull(
     int nIndex,
     BOOL bNull = TRUE);
@@ -1868,7 +1868,7 @@ TRUE (varsayılan değer) ise, parametre Null olarak işaretlenir. Aksi takdirde
 
 İmleci geçerli satır kümesi içinde bir satıra taşır.
 
-```
+```cpp
 void SetRowsetCursorPosition(WORD wRow, WORD wLockType = SQL_LOCK_NO_CHANGE);
 ```
 

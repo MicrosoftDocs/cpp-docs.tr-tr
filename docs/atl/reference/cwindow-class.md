@@ -153,12 +153,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWindow class
 ms.assetid: fefa00c8-f053-4bcf-87bc-dc84f5386683
-ms.openlocfilehash: 15460c1c7bb34edde04c2e740c19e488b6dfa83b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4d241107b36b92a53c8647e18f03432294ef0a86
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330316"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81746025"
 ---
 # <a name="cwindow-class"></a>CWindow Sınıfı
 
@@ -394,7 +394,7 @@ Bkz. Windows SDK'daki [ArrangeIconicWindows.](/windows/win32/api/winuser/nf-winu
 
 *hWndNew* tarafından tanımlanan pencereyi `CWindow` nesneye bağlar.
 
-```
+```cpp
 void Attach(HWND hWndNew) throw();
 ```
 
@@ -536,7 +536,7 @@ BOOL ClientToScreen(LPRECT lpRect) const throw();
 
 Windows SDK'da [ClientToScreen'e](/windows/win32/api/winuser/nf-winuser-clienttoscreen) bakın.
 
-Bu yöntemin ikinci sürümü, bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısının koordinatlarını dönüştürmenize olanak tanır.
+Bu yöntemin ikinci sürümü, bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısının koordinatlarını dönüştürmenize olanak tanır.
 
 ## <a name="cwindowcreate"></a><a name="create"></a>CWindow::Oluştur
 
@@ -771,7 +771,7 @@ Windows [SDK'da DlgDirSelectComboBoxEx'e](/windows/win32/api/winuser/nf-winuser-
 
 Pencerenin sürüklenen dosyaları kabul edip etmediğini kaydeder.
 
-```
+```cpp
 void DragAcceptFiles(BOOL bAccept = TRUE);
 ```
 
@@ -823,7 +823,7 @@ Bkz. Windows SDK'daki [Etkinleştirpenceresi.](/windows/win32/api/winuser/nf-win
 
 Resmin sonunu işaretler.
 
-```
+```cpp
 void EndPaint(LPPAINTSTRUCT lpPaint) throw();
 ```
 
@@ -1504,7 +1504,7 @@ Bkz. Windows SDK'daki [GetWindowLong.](/windows/win32/api/winuser/nf-winuser-get
 
 Klavye odağı iletişim kutusundaki denetime ayarlar.
 
-```
+```cpp
 void GotoDlgCtrl(HWND hWndCtrl) const throw();
 ```
 
@@ -1577,7 +1577,7 @@ Bkz. Windows SDK'da [Geçersiz Düzeltme.](/windows/win32/api/winuser/nf-winuser
 
 Belirtilen bölge içindeki istemci alanını geçersiz ksılar.
 
-```
+```cpp
 void InvalidateRgn(HRGN hRgn, BOOL bErase = TRUE) throw();
 ```
 
@@ -1789,7 +1789,7 @@ int MapWindowPoints(
 
 Windows SDK'daki [MapWindowPoints'e](/windows/win32/api/winuser/nf-winuser-mapwindowpoints) bakın.
 
-Bu yöntemin ikinci sürümü, bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısının koordinatlarını dönüştürmenize olanak tanır.
+Bu yöntemin ikinci sürümü, bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısının koordinatlarını dönüştürmenize olanak tanır.
 
 ## <a name="cwindowmessagebox"></a><a name="messagebox"></a>CWindow::MessageBox
 
@@ -1923,13 +1923,13 @@ BOOL MoveWindow(
 
 Üst düzey bir pencere nesnesi için x ve y parametreleri ekranın sol üst köşesine göredir. Alt pencere nesnesi için, üst pencereistemci alanının sol üst köşesine göredir.
 
-Bu yöntemin ikinci sürümü, pencerenin yeni konumunu, genişliğini ve yüksekliğini belirlemek için bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı kullanır.
+Bu yöntemin ikinci sürümü, pencerenin yeni konumunu, genişliğini ve yüksekliğini belirlemek için bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı kullanır.
 
 ## <a name="cwindownextdlgctrl"></a><a name="nextdlgctrl"></a>CWindow::NextDlgCtrl
 
 Klavye odağı iletişim kutusundaki bir sonraki denetime ayarlar.
 
-```
+```cpp
 void NextDlgCtrl() const throw();
 ```
 
@@ -1990,7 +1990,7 @@ Windows SDK'daki [Mesaj İleti'ye](/windows/win32/api/winuser/nf-winuser-postmes
 
 Klavye odağı iletişim kutusundaönceki denetime ayarlar.
 
-```
+```cpp
 void PrevDlgCtrl() const throw();
 ```
 
@@ -2002,7 +2002,7 @@ Windows SDK'daki [WM_NEXTDLGCTL](/windows/win32/dlgbox/wm-nextdlgctl) bakın.
 
 [Pencereye,](/windows/win32/gdi/wm-print) kendisini belirtilen aygıt bağlamında çizmesini istemek için WM_PRINT ileti gönderir.
 
-```
+```cpp
 void Print(HDC hDC, DWORD dwFlags) const throw();
 ```
 
@@ -2030,7 +2030,7 @@ void Print(HDC hDC, DWORD dwFlags) const throw();
 
 İstemci alanını belirtilen aygıt bağlamında çizmesini istemek için pencereye [WM_PRINTCLIENT](/windows/win32/gdi/wm-printclient) ileti gönderir.
 
-```
+```cpp
 void PrintClient(HDC hDC, DWORD dwFlags) const throw();
 ```
 
@@ -2134,7 +2134,7 @@ BOOL ScreenToClient(LPRECT lpRect) const throw();
 
 Windows SDK'da [ScreenToClient'a](/windows/win32/api/winuser/nf-winuser-screentoclient) bakın.
 
-Bu yöntemin ikinci sürümü, bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısının koordinatlarını dönüştürmenize olanak tanır.
+Bu yöntemin ikinci sürümü, bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısının koordinatlarını dönüştürmenize olanak tanır.
 
 ## <a name="cwindowscrollwindow"></a><a name="scrollwindow"></a>CWindow::Kaydırma Penceresi
 
@@ -2216,7 +2216,7 @@ Windows SDK'da [SendMessage'a](/windows/win32/api/winuser/nf-winuser-sendmessage
 
 Belirtilen iletiyi nesnenin tüm `CWindow` yakın çocuklarına gönderir.
 
-```
+```cpp
 void SendMessageToDescendants(
     UINT message,
     WPARAM wParam = 0,
@@ -2363,7 +2363,7 @@ Windows SDK'daki [SetFocus'a](/windows/win32/api/winuser/nf-winuser-setfocus) ba
 
 Pencereye [WM_SETFONT](/windows/win32/winmsg/wm-setfont) iletisi göndererek pencerenin geçerli yazı tipini değiştirir.
 
-```
+```cpp
 void SetFont(HFONT hFont, BOOL bRedraw = TRUE) throw();
 ```
 
@@ -2451,7 +2451,7 @@ Windows SDK'daki [SetParent'a](/windows/win32/api/winuser/nf-winuser-setparent) 
 
 Pencereye [WM_SETREDRAW](/windows/win32/gdi/wm-setredraw) ileti göndererek yeniden çizim bayrağını ayarlar veya temizler.
 
-```
+```cpp
 void SetRedraw(BOOL bRedraw = TRUE) throw();
 ```
 
@@ -2605,7 +2605,7 @@ BOOL SetWindowPos(
 
 Windows SDK'daki [SetWindowPos'a](/windows/win32/api/winuser/nf-winuser-setwindowpos) bakın.
 
-Bu yöntemin ikinci sürümü, pencerenin yeni konumunu, genişliğini ve yüksekliğini ayarlamak için bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı kullanır.
+Bu yöntemin ikinci sürümü, pencerenin yeni konumunu, genişliğini ve yüksekliğini ayarlamak için bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı kullanır.
 
 ## <a name="cwindowsetwindowrgn"></a><a name="setwindowrgn"></a>CWindow::SetWindowRgn
 

@@ -52,12 +52,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-ms.openlocfilehash: 9ae63946dfa6244e97c376f9eccd9bab93586990
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f7a2ee2f9d633c1ed743621eec5b2f7cc04c0e0b
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319033"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81748833"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken Sınıfı
 
@@ -144,7 +144,7 @@ Windows'daki erişim denetimi modeline giriş için Windows SDK'daki [Access Den
 
 Verilen erişim belirteç tutamacının sahipliğini almak için bu yöntemi arayın.
 
-```
+```cpp
 void Attach(HANDLE hToken) throw();
 ```
 

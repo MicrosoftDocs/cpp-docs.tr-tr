@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CAnimationGroup [MFC], m_nGroupID
 - CAnimationGroup [MFC], m_pParentController
 ms.assetid: 8bc18ceb-33a2-41d0-9731-71811adacab7
-ms.openlocfilehash: 28d305e2107f7b9a8fd2164eb0ec9678d62ef8fa
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 14ac32524436ff46449171ad90599e60f63dff2a
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369741"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81750158"
 ---
 # <a name="canimationgroup-class"></a>CAnimationGroup Sınıfı
 
@@ -135,7 +135,7 @@ Yıkıcı. Animasyon grubu yok edilirken çağrılır.
 
 Film şeridine anahtar kareler ekleyen bir yardımcı.
 
-```
+```cpp
 void AddKeyframes(IUIAnimationStoryboard* pStoryboard, BOOL bAddDeep);
 ```
 
@@ -151,7 +151,7 @@ Bu yöntemin diğer anahtar karelere bağlı olan film şeridi anahtar karelerin
 
 Film şeridine geçişler ekleyen bir yardımcı.
 
-```
+```cpp
 void AddTransitions(
     IUIAnimationStoryboard* pStoryboard,
     BOOL bDependOnKeyframes);
@@ -193,7 +193,7 @@ Bu yöntem bir iç film şeridi oluşturur, geçişler oluşturur ve uygular ve 
 
 Animasyon nesnelerine geçişler uygular.
 
-```
+```cpp
 void ApplyTransitions();
 ```
 
@@ -326,7 +326,7 @@ ATL::CComPtr<IUIAnimationStoryboard> m_pStoryboard;
 
 Animasyon grubuna ait tüm anahtar kareleri kaldırır ve isteğe bağlı olarak yok eder.
 
-```
+```cpp
 void RemoveKeyframes();
 ```
 
@@ -338,7 +338,7 @@ m_bAutodestroyKeyframes üye DOĞRUYSA, anahtar kareler kaldırılır ve yok edi
 
 Animasyon grubuna ait animasyon nesnelerinden geçişleri kaldırır.
 
-```
+```cpp
 void RemoveTransitions();
 ```
 
@@ -374,7 +374,7 @@ Belirtilen zamanda bir animasyon zamanlamak için bu işlevi çağırın. Önce 
 
 Gruba ait tüm animasyon nesnelerini otomatik olarak geçişleri yok eder.
 
-```
+```cpp
 void SetAutodestroyTransitions(BOOL bAutoDestroy = TRUE);
 ```
 

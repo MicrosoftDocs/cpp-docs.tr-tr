@@ -37,12 +37,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlList class
 ms.assetid: 09e98053-64b2-4efa-99ab-d0542caaf981
-ms.openlocfilehash: 91b1841423fe159bb5fdd0f06a112c601b1dbc83
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0e4ea8eef51431c100f5d3119d7f75e9673e276e
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318937"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81748742"
 ---
 # <a name="catllist-class"></a>CAtlList Sınıfı
 
@@ -153,7 +153,7 @@ Yeni eklenen öğenin konumunu döndürür.
 
 Varolan bir listeyi listenin başına eklemek için bu yöntemi arayın.
 
-```
+```cpp
 void AddHeadList(const CAtlList<E, ETraits>* plNew);
 ```
 
@@ -200,7 +200,7 @@ Yeni eklenen öğenin KONUMUNU döndürür.
 
 Varolan bir listeyi bu listenin kuyruğuna eklemek için bu yöntemi arayın.
 
-```
+```cpp
 void AddTailList(const CAtlList<E, ETraits>* plNew);
 ```
 
@@ -221,7 +221,7 @@ Eklenecek liste.
 
 Listenin geçerli olduğunu doğrulamak için bu yöntemi arayın.
 
-```
+```cpp
 void AssertValid() const;
 ```
 
@@ -599,7 +599,7 @@ Liste hiçbir nesne içeriyorsa, aksi takdirde yanlış gerçek döndürür.
 
 Belirtilen öğeyi listenin başına taşımak için bu yöntemi çağırın.
 
-```
+```cpp
 void MoveToHead(POSITION pos) throw();
 ```
 
@@ -620,7 +620,7 @@ Belirtilen öğe geçerli konumundan listenin başına taşınır. Hata ayıklam
 
 Belirtilen öğeyi listenin kuyruğuna taşımak için bu yöntemi arayın.
 
-```
+```cpp
 void MoveToTail(POSITION pos) throw();
 ```
 
@@ -641,7 +641,7 @@ Belirtilen öğe geçerli konumundan listenin kuyruğuna taşınır. Hata ayıkl
 
 Tüm öğeleri listeden kaldırmak için bu yöntemi arayın.
 
-```
+```cpp
 void RemoveAll() throw();
 ```
 
@@ -657,7 +657,7 @@ Bu yöntem, tüm öğeleri listeden kaldırır ve ayrılan belleği serbest sağ
 
 Tek bir öğeyi listeden kaldırmak için bu yöntemi çağırın.
 
-```
+```cpp
 void RemoveAt(POSITION pos) throw();
 ```
 
@@ -700,7 +700,7 @@ Kafa öğesi listeden silinir ve bellek serbest bırakılır. Öğenin bir kopya
 
 Bir değer döndürmeden listenin başındaki öğeyi kaldırmak için bu yöntemi arayın.
 
-```
+```cpp
 void RemoveHeadNoReturn() throw();
 ```
 
@@ -736,7 +736,7 @@ Kuyruk öğesi listeden silinir ve bellek serbest bırakılır. Öğenin bir kop
 
 Bir değer döndürmeden listenin kuyruğundaki öğeyi kaldırmak için bu yöntemi arayın.
 
-```
+```cpp
 void RemoveTailNoReturn() throw();
 ```
 
@@ -752,7 +752,7 @@ Kuyruk öğesi listeden silinir ve bellek serbest bırakılır. Hata ayıklama o
 
 Listede belirli bir konumda öğenin değerini ayarlamak için bu yöntemi arayın.
 
-```
+```cpp
 void SetAt(POSITION pos, INARGTYPE element);
 ```
 
@@ -776,7 +776,7 @@ Varolan değeri *öğeyle*değiştirir. Hata ayıklama oluştururda, *pos* NULL'
 
 Listedeki öğeleri değiştirmek için bu yöntemi arayın.
 
-```
+```cpp
 void SwapElements(POSITION pos1, POSITION pos2) throw();
 ```
 

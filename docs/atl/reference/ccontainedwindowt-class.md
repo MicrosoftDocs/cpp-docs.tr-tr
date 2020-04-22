@@ -22,12 +22,12 @@ helpviewer_keywords:
 - contained windows
 - CContainedWindowT class
 ms.assetid: cde0ca36-9347-4068-995a-d294dae57ca9
-ms.openlocfilehash: cde9c73a195303e57758cb4f27184b5136bdaf14
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7b89346bbc62cdda808b193a199fdf121f052ebb
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327211"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81747752"
 ---
 # <a name="ccontainedwindowt-class"></a>CContainedWindowT Sınıfı
 
@@ -214,7 +214,7 @@ HWND Create(
 [içinde] Üst veya sahip penceresine tanıtıcı.
 
 *Rect*<br/>
-[içinde] Pencerenin konumunu belirten bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı. İşaretçi `RECT` veya başvuru ile geçirilebilir.
+[içinde] Pencerenin konumunu belirten bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı. İşaretçi `RECT` veya başvuru ile geçirilebilir.
 
 *szWindowName*<br/>
 [içinde] Pencerenin adını belirtir. Varsayılan değer NULL'dur.
@@ -390,7 +390,7 @@ Alt sınıflı pencere artık [CContainedWindowT kullanır::WindowProc](#windowp
 
 İçerdiği pencerenin iletilerini işlemek için hangi ileti eşleminin kullanılacağını değiştirir.
 
-```
+```cpp
 void SwitchMessageMap(DWORD dwMsgMapID);
 ```
 

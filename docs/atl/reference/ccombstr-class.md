@@ -29,12 +29,12 @@ helpviewer_keywords:
 - CComBSTR class
 - CComBSTR
 ms.assetid: 8fea1879-a05e-47a5-a803-8dec60eaa534
-ms.openlocfilehash: adaad47c49a64c6654b70fa60ef5514e104c50a5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c1448a5638b263a87403edf0baca170f0f952e26
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81321047"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81748143"
 ---
 # <a name="ccombstr-class"></a>CComBSTR Sınıfı
 
@@ -242,7 +242,7 @@ S_OK veya herhangi bir standart HRESULT hata değeri.
 
 `CComBSTR` [m_str](#m_str) üyeyi *src'ye*ayarlayarak nesneye bir BSTR bağlar.
 
-```
+```cpp
 void Attach(BSTR src) throw();
 ```
 
@@ -424,7 +424,7 @@ BSTR Detach() throw();
 
 [m_str](#m_str) üyeyi serbest.
 
-```
+```cpp
 void Empty() throw();
 ```
 

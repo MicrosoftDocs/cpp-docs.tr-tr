@@ -27,12 +27,12 @@ f1_keywords:
 helpviewer_keywords:
 - CRBTree class
 ms.assetid: a1b1cb63-38e4-4fc2-bb28-f774d1721760
-ms.openlocfilehash: 56c9db9d1a7bcd7fe2a2647d8b1339d223c4b66b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 58c001ccef35d4265ef5b7fe200654781f130872
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81331249"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81746582"
 ---
 # <a name="crbtree-class"></a>CRBTree Sınıfı
 
@@ -188,7 +188,7 @@ Konum değeri.
 *anahtar*<br/>
 Anahtarı alan değişken.
 
-*Değer*<br/>
+*value*<br/>
 Değeri alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -276,7 +276,7 @@ Bir işaretçiyi ağaçtaki bir sonraki [CPair](#cpair_class) değerine döndür
 
 Haritada depolanan bir öğenin anahtarını ve değerini almak ve konumu bir sonraki öğeye ilerletmek için bu yöntemi arayın.
 
-```
+```cpp
 void GetNextAssoc(
     POSITION& pos,
     KOUTARGTYPE key,
@@ -291,7 +291,7 @@ void GetNextAssoc(
 *anahtar*<br/>
 Ağacın anahtarının türünü belirten şablon parametresi.
 
-*Değer*<br/>
+*value*<br/>
 Ağacın değerini belirten şablon parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -429,7 +429,7 @@ typedef KTraits::OUTARGTYPE KOUTARGTYPE;
 
 `CRBTree` Nesneden tüm öğeleri kaldırmak için bu yöntemi arayın.
 
-```
+```cpp
 void RemoveAll() throw();
 ```
 
@@ -441,7 +441,7 @@ void RemoveAll() throw();
 
 Nesnede verilen konumdaki öğeyi kaldırmak `CRBTree` için bu yöntemi çağırın.
 
-```
+```cpp
 void RemoveAt(POSITION pos) throw();
 ```
 
@@ -458,7 +458,7 @@ Belirtilen konumda depolanan anahtar/değer çiftini kaldırır. Öğeyi depolam
 
 Nesnede belirli bir konumda depolanan değeri değiştirmek `CRBTree` için bu yöntemi çağırın.
 
-```
+```cpp
 void SetValueAt(POSITION pos, VINARGTYPE value);
 ```
 
@@ -467,7 +467,7 @@ void SetValueAt(POSITION pos, VINARGTYPE value);
 *Pos*<br/>
 [CrBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter)gibi yöntemlere önceki bir çağrı ile döndürülen konum sayacı.
 
-*Değer*<br/>
+*value*<br/>
 `CRBTree` Nesneye eklenecek değer.
 
 ### <a name="remarks"></a>Açıklamalar

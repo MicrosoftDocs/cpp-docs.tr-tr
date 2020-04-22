@@ -114,12 +114,12 @@ helpviewer_keywords:
 - CRenderTarget [MFC], m_pRenderTarget
 - CRenderTarget [MFC], m_pTextFormatDefault
 ms.assetid: 30d1607d-68d3-4d14-ac36-fdbd0ef903a1
-ms.openlocfilehash: 1b165b485e067120477de560d2091c448e02fe44
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8c0a0d1f578b2f0d186ce0f4ea8c7da07e741b71
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368338"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81747198"
 ---
 # <a name="crendertarget-class"></a>CRenderTarget Sınıfı
 
@@ -236,7 +236,7 @@ virtual ~CRenderTarget();
 
 Nesneye varolan render hedef arabirimi ataşır
 
-```
+```cpp
 void Attach(ID2D1RenderTarget* pRenderTarget);
 ```
 
@@ -249,7 +249,7 @@ Varolan render hedef arabirimi. NULL olamaz
 
 Bu render hedefi üzerinde çizim başlatır.
 
-```
+```cpp
 void BeginDraw();
 ```
 
@@ -257,7 +257,7 @@ void BeginDraw();
 
 Çizim alanını belirtilen renge kadar temizler.
 
-```
+```cpp
 void Clear(D2D1_COLOR_F color);
 ```
 
@@ -362,7 +362,7 @@ Hedef arabirimini ayırılamak için işaretçi.
 
 Belirtilen IDWriteTextLayout nesnesi tarafından açıklanan biçimlendirilmiş metni çizer.
 
-```
+```cpp
 void DrawBitmap(
     CD2DBitmap* pBitmap,
     const CD2DRectF& rectDest,
@@ -392,7 +392,7 @@ Biteşin koordinat alanındaki aygıttan bağımsız piksellerde, çizilen bit e
 
 Belirtilen kontur stilini kullanarak belirtilen elipsin anahatlarını çizer.
 
-```
+```cpp
 void DrawEllipse(
     const CD2DEllipse& ellipse,
     CD2DBrush* pBrush,
@@ -418,7 +418,7 @@ Elipsin anahattına uygulanacak kontur stili veya katı bir kontur boyamak için
 
 Belirtilen kontur stilini kullanarak belirtilen geometrinin anahatlarını çizer.
 
-```
+```cpp
 void DrawGeometry(
     CD2DGeometry* pGeometry,
     CD2DBrush* pBrush,
@@ -444,7 +444,7 @@ Geometrinin anahattına uygulanacak kontur stili veya katı bir kontur boyamak i
 
 Belirtilen glifleri çizer.
 
-```
+```cpp
 void DrawGlyphRun(
     const CD2DPointF& ptBaseLineOrigin,
     const DWRITE_GLYPH_RUN& glyphRun,
@@ -470,7 +470,7 @@ Biçimlendirildiğinde metni ölçmek için glyph ölçümlerinin nasıl kullan�
 
 Belirtilen kontur stilini kullanarak belirtilen noktalar arasında bir çizgi çizer.
 
-```
+```cpp
 void DrawLine(
     const CD2DPointF& ptFrom,
     const CD2DPointF& ptTo,
@@ -500,7 +500,7 @@ Boya kontur stili veya null düz bir çizgi boyamak için.
 
 Belirtilen boyutlara ve kontur stiline sahip bir dikdörtgenin anahatlarını çizer.
 
-```
+```cpp
 void DrawRectangle(
     const CD2DRectF& rectangle,
     CD2DBrush* pBrush,
@@ -526,7 +526,7 @@ Boya için kontur tarzı, ya da NULL katı bir vuruş boyamak için.
 
 Belirtilen kontur stilini kullanarak belirtilen yuvarlatılmış dikdörtgenin anahatlarını çizer.
 
-```
+```cpp
 void DrawRoundedRectangle(
     const CD2DRoundedRect& rectRounded,
     CD2DBrush* pBrush,
@@ -552,7 +552,7 @@ Yuvarlatılmış dikdörtgenin konturunun stili veya katı bir kontur yapmak iç
 
 Bir IDWriteTextFormat nesnesi tarafından sağlanan biçim bilgilerini kullanarak belirtilen metni çizer.
 
-```
+```cpp
 void DrawText(
     const CString& strText,
     const CD2DRectF& rectangle,
@@ -586,7 +586,7 @@ Biçimlendirildiğinde metni ölçmek için glyph ölçümlerinin nasıl kullan�
 
 Belirtilen IDWriteTextLayout nesnesi tarafından açıklanan biçimlendirilmiş metni çizer.
 
-```
+```cpp
 void DrawTextLayout(
     const CD2DPointF& ptOrigin,
     CD2DTextLayout* textLayout,
@@ -624,7 +624,7 @@ Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata ko
 
 Belirtilen elipsin iç kısmını boyar.
 
-```
+```cpp
 void FillEllipse(
     const CD2DEllipse& ellipse,
     CD2DBrush* pBrush);
@@ -642,7 +642,7 @@ Fırça elipsiç boya için kullanılır.
 
 Belirtilen geometrinin iç kısmını boyar.
 
-```
+```cpp
 void FillGeometry(
     CD2DGeometry* pGeometry,
     CD2DBrush* pBrush,
@@ -664,7 +664,7 @@ Geometriye uygulanacak opaklık maskesi; Opaklık maskesi yok için NULL. Bir op
 
 Belirtilen kafesin iç kısmını boyar.
 
-```
+```cpp
 void FillMesh(
     CD2DMesh* pMesh,
     CD2DBrush* pBrush);
@@ -682,7 +682,7 @@ Fırça örgü boyamak için kullanılır.
 
 Belirtilen bit eşlemi tarafından açıklanan opaklık maskesini bir fırçaya uygular ve bu fırçayı render hedefinin bir bölgesini boyamak için kullanır.
 
-```
+```cpp
 void FillOpacityMask(
     CD2DBitmap* pOpacityMask,
     CD2DBrush* pBrush,
@@ -712,7 +712,7 @@ Aygıttan bağımsız piksellerde opaklık maskesi olarak kullanılacak bit eşl
 
 Belirtilen dikdörtgenin iç kısmını boyar.
 
-```
+```cpp
 void FillRectangle(
     const CD2DRectF& rectangle,
     CD2DBrush* pBrush);
@@ -730,7 +730,7 @@ Dikdörtgenin iç kısımlarını boyamak için kullanılan fırça.
 
 Belirtilen yuvarlak dikdörtgenin iç kısmını boyar.
 
-```
+```cpp
 void FillRoundedRectangle(
     const CD2DRoundedRect& rectRounded,
     CD2DBrush* pBrush);
@@ -748,7 +748,7 @@ Yuvarlak dikdörtgenin iç boya için kullanılan fırça.
 
 Bekleyen tüm çizim komutlarını yürütür.
 
-```
+```cpp
 void Flush(
     D2D1_TAG* tag1 = NULL,
     D2D1_TAG* tag2 = NULL);
@@ -850,7 +850,7 @@ Aygıttan bağımsız piksellerde render hedefinin geçerli boyutu
 
 Sonraki çizim işlemleri için etiketi alır.
 
-```
+```cpp
 void GetTags(
     D2D1_TAG* tag1 = NULL,
     D2D1_TAG* tag2 = NULL) const;
@@ -880,7 +880,7 @@ Metin ve glifler çizim işlemleri için geçerli antialiasing modu.
 
 Render hedefinin geçerli metin oluşturma seçeneklerini alır.
 
-```
+```cpp
 void GetTextRenderingParams(IDWriteRenderingParams** textRenderingParams);
 ```
 
@@ -893,7 +893,7 @@ Bu yöntem döndüğünde, textRenderingParams, işleyen hedefin geçerli metin 
 
 Render hedefinin geçerli dönüşümalır.
 
-```
+```cpp
 void GetTransform(D2D1_MATRIX_3X2_F* transform);
 ```
 
@@ -971,7 +971,7 @@ Nesne henüz başharfe çevrilmediyse ID2D1RenderTarget arabirimine veya NULL'a 
 
 Son eksen hizalı klibi işlenme hedefinden kaldırır. Bu yöntem çağrıldıktan sonra, klip artık sonraki çizim işlemlerine uygulanmaz.
 
-```
+```cpp
 void PopAxisAlignedClip();
 ```
 
@@ -979,7 +979,7 @@ void PopAxisAlignedClip();
 
 Çizim işlemlerini son PushLayer çağrısında belirtilen katmana yönlendirmeyi durdurur.
 
-```
+```cpp
 void PopLayer();
 ```
 
@@ -987,7 +987,7 @@ void PopLayer();
 
 Son eksen hizalı klibi işlenme hedefinden kaldırır. Bu yöntem çağrıldıktan sonra, klip artık sonraki çizim işlemlerine uygulanmaz.
 
-```
+```cpp
 void PushAxisAlignedClip(
     const CD2DRectF& rectClip,
     D2D1_ANTIALIAS_MODE mode = D2D1_ANTIALIAS_MODE_PER_PRIMITIVE);
@@ -1005,7 +1005,7 @@ Alt piksel sınırları olan küçük dikdörtgenlerin kenarlarını çizmek ve 
 
 Belirtilen katmanı render hedefine ekler, böylece PopLayer çağrılana kadar sonraki tüm çizim işlemlerini alır.
 
-```
+```cpp
 void PushLayer(
     const D2D1_LAYER_PARAMETERS& layerParameters,
     CD2DLayer& layer);
@@ -1023,7 +1023,7 @@ Sonraki çizim işlemlerini alan katman.
 
 Render hedefinin çizim durumunu belirtilen ID2D1DrawingStateBlock'unkine ayarlar.
 
-```
+```cpp
 void RestoreDrawingState(ID2D1DrawingStateBlock& drawingStateBlock);
 ```
 
@@ -1036,7 +1036,7 @@ Render hedefinin yeni çizim durumu.
 
 Geçerli çizim durumunu belirtilen ID2D1DrawingStateBlock'a kaydeder.
 
-```
+```cpp
 void SaveDrawingState(ID2D1DrawingStateBlock& drawingStateBlock) const;
 ```
 
@@ -1049,7 +1049,7 @@ Bu yöntem döndüğünde, render hedefinin geçerli çizim durumunu içerir. Bu
 
 Render hedefinin antialiasing modunu ayarlar. Antialiasing modu, metin ve glyph çizim işlemleri hariç sonraki tüm çizim işlemleri için geçerlidir.
 
-```
+```cpp
 void SetAntialiasMode(D2D1_ANTIALIAS_MODE antialiasMode);
 ```
 
@@ -1062,7 +1062,7 @@ Gelecekteki çizim işlemleri için antialiasing modu.
 
 Render hedefinin inç başına (DPI) noktalarını ayarlar.
 
-```
+```cpp
 void SetDpi(const CD2DSizeF& sizeDPI);
 ```
 
@@ -1075,7 +1075,7 @@ Render hedefinin yatay/dikeyDPI'sini belirten sıfırdan büyük veya eşit bir 
 
 Sonraki çizim işlemleri için bir etiket belirtir.
 
-```
+```cpp
 void SetTags(
     D2D1_TAG tag1,
     D2D1_TAG tag2);
@@ -1093,7 +1093,7 @@ Sonraki çizim işlemlerine uygulanacak bir etiket.
 
 Sonraki metin ve glyph çizim işlemleri için kullanılacak antialiasing modunu belirtir.
 
-```
+```cpp
 void SetTextAntialiasMode(D2D1_TEXT_ANTIALIAS_MODE textAntialiasMode);
 ```
 
@@ -1106,7 +1106,7 @@ Sonraki metin ve glyph çizim işlemleri için kullanılacak antialiasing modu.
 
 Sonraki tüm metin ve gph çizim işlemlerine uygulanacak metin işleme seçeneklerini belirtir.
 
-```
+```cpp
 void SetTextRenderingParams(IDWriteRenderingParams* textRenderingParams = NULL);
 ```
 
@@ -1119,7 +1119,7 @@ Sonraki tüm metin ve gph çizim işlemlerine uygulanacak metin oluşturma seçe
 
 Belirtilen dönüşümü, varolan dönüşümün yerine, render hedefine uygular. Sonraki tüm çizim işlemleri dönüştürülmüş alanda gerçekleşir.
 
-```
+```cpp
 void SetTransform(const D2D1_MATRIX_3X2_F* transform);
 void SetTransform(const D2D1_MATRIX_3X2_F& transform);
 ```

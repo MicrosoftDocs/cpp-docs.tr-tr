@@ -54,12 +54,12 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-ms.openlocfilehash: 5b5ef833a3755b07e42a60b24464b1f260062d16
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a6d20e1bf12f5fe7d1e9b41d88b088ca9fad35ed
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81317820"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81747171"
 ---
 # <a name="cimage-class"></a>CImage Sınıfı
 
@@ -258,7 +258,7 @@ Tüm kaynak bit haritasında kullanılacak bir alfa saydamlık değeri. Varsayı
 Kaynak ve hedef bit eşlemleri için alfa karıştırma işlevi, tüm kaynak bit haritasına uygulanacak küresel alfa değeri ve kaynak bit eşlemi için bilgileri biçimlendirme. Kaynak ve hedef karışım işlevleri şu anda AC_SRC_OVER ile sınırlıdır.
 
 *pointDest*<br/>
-Hedef dikdörtgenin sol üst köşesini mantıksal birimler halinde tanımlayan bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısına yapılan başvuru.
+Hedef dikdörtgenin sol üst köşesini mantıksal birimler halinde tanımlayan bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısına yapılan başvuru.
 
 *nDestGenişliği*<br/>
 Hedef dikdörtgenin mantıksal birimleriyle genişliği.
@@ -279,7 +279,7 @@ Kaynak dikdörtgenin mantıksal birimleriyle genişliği.
 Mantıksal birimlerde, kaynak dikdörtgenin yüksekliği.
 
 *rektDest*<br/>
-Hedefi tanımlayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+Hedefi tanımlayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *rectSrc*<br/>
 Kaynağı tanımlayan `RECT` bir yapıya başvuru.
@@ -298,7 +298,7 @@ Alfa karışımı bit eşlemleri piksel başına renk karıştırmayı destekler
 
 Bir nesneye *hBitmap* ataşıyor. `CImage`
 
-```
+```cpp
 void Attach(HBITMAP hBitmap, DIBOrientation eOrientation = DIBOR_DEFAULT) throw();
 ```
 
@@ -368,7 +368,7 @@ Hedef dikdörtgenin sol üst köşesinin mantıksal koordinatı.
 Yapılacak raster operasyonu. Raster-işlem kodları, hedefi oluşturmak için kaynağın, hedefin ve desenin (şu anda seçili fırça tarafından tanımlandığı şekilde) bitlerinin tam olarak nasıl birleştirilecek olduğunu tanımlar. Diğer raster işlem kodlarının ve açıklamalarının listesi için Windows SDK'daki [BitBlt'e](/windows/win32/api/wingdi/nf-wingdi-bitblt) bakın.
 
 *pointDest*<br/>
-Hedef dikdörtgenin sol üst köşesini gösteren bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısı.
+Hedef dikdörtgenin sol üst köşesini gösteren bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısı.
 
 *nDestGenişliği*<br/>
 Hedef dikdörtgenin mantıksal birimleriyle genişliği.
@@ -383,7 +383,7 @@ Kaynak dikdörtgenin sol üst köşesinin mantıksal x-koordinatı.
 Kaynak dikdörtgenin sol üst köşesinin mantıksal koordinatı.
 
 *rektDest*<br/>
-Hedef dikdörtgeni gösteren bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
+Hedef dikdörtgeni gösteren bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı.
 
 *noktaSrc*<br/>
 Kaynak `POINT` dikdörtgenin sol üst köşesini gösteren bir yapı.
@@ -480,7 +480,7 @@ Sıkıştırılmış aşağıdan yukarıya bit eşlemi için sıkıştırma tür
 - BI_BITFIELDS Biçim sıkıştırılmamıştır ve renk tablosu, her pikselin sırasıyla kırmızı, yeşil ve mavi bileşenlerini belirten üç DWORD renk maskesinden oluşur. Bu, 16 ve 32-bpp bit eşlemlerle kullanıldığında geçerlidir.
 
 *pdwBitfields*<br/>
-Yalnızca *eSıkıştırma* BI_BITFIELDS ayarlanmışsa kullanılır, aksi takdirde NULL olmalıdır. Her pikselin hangi bitlerinin rengin kırmızı, yeşil ve mavi bileşenleri için kullanıldığını belirten üç DWORD bit maskesi dizisine işaretçi. Bit alanlarının kısıtlamaları hakkında daha fazla bilgi için Windows SDK'daki [BITMAPINFOHEADER'a](/previous-versions//dd183376\(v=vs.85\)) bakın.
+Yalnızca *eSıkıştırma* BI_BITFIELDS ayarlanmışsa kullanılır, aksi takdirde NULL olmalıdır. Her pikselin hangi bitlerinin rengin kırmızı, yeşil ve mavi bileşenleri için kullanıldığını belirten üç DWORD bit maskesi dizisine işaretçi. Bit alanlarının kısıtlamaları hakkında daha fazla bilgi için Windows SDK'daki [BITMAPINFOHEADER'a](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) bakın.
 
 *Dwflags*<br/>
 Bitmap nesnesinin alfa kanalı olup olmadığını belirtir. Aşağıdaki değerlerin sıfır veya daha fazlasının bir leşimi olabilir:
@@ -507,7 +507,7 @@ m_myImage.CreateEx(100, 100, 16, BI_BITFIELDS, adwBitmasks, 0);
 
 Bit eşlemi `CImage` nesneden ayırır ve bit eşlemi yok eder.
 
-```
+```cpp
 void Destroy() throw();
 ```
 
@@ -595,13 +595,13 @@ Kaynak dikdörtgenin mantıksal birimleriyle genişliği.
 Mantıksal birimlerde, kaynak dikdörtgenin yüksekliği.
 
 *rektDest*<br/>
-Hedefi tanımlayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+Hedefi tanımlayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *rectSrc*<br/>
 Kaynağı tanımlayan `RECT` bir yapıya başvuru.
 
 *pointDest*<br/>
-Hedef dikdörtgenin sol üst köşesini mantıksal birimler halinde tanımlayan bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısına yapılan başvuru.
+Hedef dikdörtgenin sol üst köşesini mantıksal birimler halinde tanımlayan bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısına yapılan başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -617,7 +617,7 @@ Kaynak dikdörtgen `Draw` belirtmeyin sürümleri için, tüm kaynak görüntü 
 
 Bit haritasında belirli bir pikselin gerçek bit değerlerine işaretçi alır.
 
-```
+```cpp
 void* GetBits() throw();
 ```
 
@@ -648,13 +648,13 @@ Piksel başına bit sayısı.
 
 Bu değer, her pikseli tanımlayan bit sayısını ve bit eşlemindeki en büyük renk sayısını belirler.
 
-Piksel başına bitgenellikle 1, 4, 8, 16, 24 veya 32'dir. Bu `biBitCount` değer hakkında daha fazla bilgi için Windows SDK'daki [BITMAPINFOHEADER](/previous-versions//dd183376\(v=vs.85\)) üyesine bakın.
+Piksel başına bitgenellikle 1, 4, 8, 16, 24 veya 32'dir. Bu `biBitCount` değer hakkında daha fazla bilgi için Windows SDK'daki [BITMAPINFOHEADER](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) üyesine bakın.
 
 ## <a name="cimagegetcolortable"></a><a name="getcolortable"></a>CImage::GetColorTable
 
 DIB bölümünün paletindeki bir dizi girişten kırmızı, yeşil, mavi (RGB) renk değerlerini alır.
 
-```
+```cpp
 void GetColorTable(
     UINT iFirstColor,
     UINT nColors,
@@ -923,7 +923,7 @@ Pikselin kırmızı, yeşil, mavi (RGB) değeri. Piksel geçerli kırpma bölges
 
 Pikselin tam adresini alır.
 
-```
+```cpp
 void* GetPixelAddress(int x, int y) throw();
 ```
 
@@ -1076,7 +1076,7 @@ Geçerli görüntü türleri BMP, GIF, JPEG, PNG ve TIFF'dir.
 
 BITMAP kaynağından görüntü yükler.
 
-```
+```cpp
 void LoadFromResource(
     HINSTANCE hInstance,
     LPCTSTR pszResourceName) throw();
@@ -1259,10 +1259,10 @@ Tek renkli bit haritasının sol üst köşesinin x-koordinatı.
 Tek renkli bit haritasının sol üst köşesinin y-koordinatı.
 
 *rectSrc*<br/>
-Kaynak dikdörtgenin koordinatlarını belirten bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+Kaynak dikdörtgenin koordinatlarını belirten bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pointMask*<br/>
-Maske bit haritasının sol üst köşesini gösteren bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısı.
+Maske bit haritasının sol üst köşesini gösteren bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1278,7 +1278,7 @@ Bu yöntem Windows NT, sürüm 4.0 ve daha sonra yalnızca için geçerlidir. Da
 
 Aygıt bağlamını serbest bırakır.
 
-```
+```cpp
 void ReleaseDC() const throw();
 ```
 
@@ -1290,7 +1290,7 @@ Aynı anda aygıt bağlamına yalnızca bir bit eşlemesi seçilebildiği için,
 
 GDI+ tarafından kullanılan kaynakları salar.
 
-```
+```cpp
 void ReleaseGDIPlus() throw();
 ```
 
@@ -1346,7 +1346,7 @@ Belirtilen bir ad ve tür kullanarak görüntüyü kaydetmek için bu işlevi ar
 
 DIB bölümünün paletindeki bir dizi giriş için kırmızı, yeşil, mavi (RGB) renk değerlerini ayarlar.
 
-```
+```cpp
 void SetColorTable(
     UINT iFirstColor,
     UINT nColors,
@@ -1372,7 +1372,7 @@ Bu yöntem yalnızca DIB bölüm bit eşlemlerini destekler.
 
 Bit haritasında belirli bir konumda bir pikselin rengini ayarlar.
 
-```
+```cpp
 void SetPixel(int x, int y, COLORREF color) throw();
 ```
 
@@ -1395,7 +1395,7 @@ Piksel koordinatları seçili kırpma bölgesinin dışında ysa, bu yöntem ba�
 
 Piksel rengini renk paletinde *iIndex'te* bulunan renge ayarlar.
 
-```
+```cpp
 void SetPixelIndexed(int x, int y, int iIndex) throw();
 ```
 
@@ -1414,7 +1414,7 @@ Renk paletindeki bir rengin dizini.
 
 Pikseli *x* ve *y* tarafından belirtilen konumlardaki *renkleri kırmızı,* yeşil, mavi (RGB) görüntüde r , *g*ve *b*ile gösterilen renklere ayarlar.
 
-```
+```cpp
 void SetPixelRGB(
     int x,
     int y,
@@ -1519,7 +1519,7 @@ Hedef dikdörtgenin mantıksal birimleriyle yüksekliği.
 Yapılacak raster operasyonu. Raster-işlem kodları, hedefi oluşturmak için kaynağın, hedefin ve desenin (şu anda seçili fırça tarafından tanımlandığı şekilde) bitlerinin tam olarak nasıl birleştirilecek olduğunu tanımlar. Diğer raster işlem kodlarının ve açıklamalarının listesi için Windows SDK'daki [BitBlt'e](/windows/win32/api/wingdi/nf-wingdi-bitblt) bakın.
 
 *rektDest*<br/>
-Hedefi tanımlayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+Hedefi tanımlayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *xSrc*<br/>
 X-koordinat, mantıksal birimler, kaynak dikdörtgenin sol üst köşesinde.
@@ -1602,7 +1602,7 @@ Hedef dikdörtgenin mantıksal birimleriyle yüksekliği.
 Saydam olarak ele almak için kaynak bit haritasındaki renk. Varsayılan olarak, CLR_INVALID, şu anda görüntünün saydam renk olarak ayarlanmış renk kullanılması gerektiğini belirten.
 
 *rektDest*<br/>
-Hedefi tanımlayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+Hedefi tanımlayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *xSrc*<br/>
 X-koordinat, mantıksal birimler, kaynak dikdörtgenin sol üst köşesinde.

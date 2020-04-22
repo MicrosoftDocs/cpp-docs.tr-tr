@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CAnimationBaseObject [MFC], m_nObjectID
 - CAnimationBaseObject [MFC], m_pParentController
 ms.assetid: 76b25917-940e-4eba-940f-31d270702603
-ms.openlocfilehash: 9581ea142c6f87ae12665374a483abc00763ad97
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1874ddfdd26b8dd371e32f7e68ea8f668c47d8e1
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371116"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81750214"
 ---
 # <a name="canimationbaseobject-class"></a>CAnimationBaseObject Sınıfı
 
@@ -246,7 +246,7 @@ Türemiş bir animasyon nesnesinde kapsüllenmiş animasyon değişkenleri liste
 
 Animasyon nesnesi üst animasyon denetleyicisinden ayrılır.
 
-```
+```cpp
 void DetachFromController();
 ```
 
@@ -425,7 +425,7 @@ CAnimationController* m_pParentController;
 
 Geçişleri otomatik olarak yok etmek için bir bayrak ayarlar.
 
-```
+```cpp
 void SetAutodestroyTransitions(BOOL bValue);
 ```
 
@@ -442,7 +442,7 @@ Bu bayrağı yalnızca işleç yeni kullanarak geçiş nesnelerini ayırdıysan�
 
 Yeni tbm'ler ayarlar.
 
-```
+```cpp
 void SetID(
     UINT32 nObjectID,
     UINT32 nGroupID = 0);
@@ -476,7 +476,7 @@ Bu yardımcı, animasyon nesnesinde bulunan animasyon değişkenleri ile kapsay�
 
 Kullanıcı tanımlı verileri ayarlar.
 
-```
+```cpp
 void SetUserData (DWORD dwUserData);
 ```
 

@@ -1,85 +1,87 @@
 ---
 title: C++ konsol uygulama projesi derleyip çalıştırma
-description: Visual c++'ta bir Hello World konsol uygulaması derleyebilir ve
+description: Visual C++ konsol uygulamasında Hello World konsol uyrup çalıştırın
 ms.custom: mvc
-ms.date: 12/12/2017
+ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
-ms.openlocfilehash: 59813a553a9034503d8bf432400db31e6e3d9478
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1e92e598b370312730a7c4e208b935a264010bf
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314279"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81749247"
 ---
 # <a name="build-and-run-a-c-console-app-project"></a>C++ konsol uygulama projesi derleyip çalıştırma
 
-Bir C++ konsol uygulama projesi oluşturmuş ve kodunuzu girilen, yapı ve Visual Studio içinden çalıştırın ve sonra tek başına bir uygulama olarak komut satırından çalıştırabilirsiniz.
+Bir C++ konsol uygulaması projesi oluşturdunuz ve kodunuzu girdiniz. Şimdi visual studio içinde inşa edebilir ve çalıştırabilirsiniz. Ardından, komut satırından tek başına bir uygulama olarak çalıştırın.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Ön koşullar
 
-- Visual Studio ile masaüstü geliştirme, yüklü ve bilgisayarınızda çalışan C++ iş yükünde sahip. Henüz yüklü değilse, adımları [Visual Studio'da C++ yükleme desteği](vscpp-step-0-installation.md).
+- C++ iş yükü yüklü ve bilgisayarınızda çalışan Masaüstü geliştirme ile Visual Studio var. Henüz yüklenmediyse, [Visual Studio'da C++ yükle'deki](vscpp-step-0-installation.md)adımları izleyin.
 
-- Bir "Hello, World!" oluşturma Proje ve kaynak kodu girin. Bunu henüz yapmadıysanız adımları [C++ konsol uygulama projesi oluşturma](vscpp-step-1-create.md).
+- Bir "Merhaba, Dünya!" yaratın. ve kaynak kodunu girin. Bu adımı henüz yapmadıysanız, [C++ konsol uyrum uygulaması projesi oluştur'daki](vscpp-step-1-create.md)adımları izleyin.
 
-Visual Studio gibi görünüyorsa, oluşturmak ve uygulamanızı çalıştırmak hazır:
+Visual Studio bu şekilde görünüyorsa, uygulamanızı oluşturmaya ve çalıştırmaya hazırsınız:
 
-   ![Yeni Projeyi derlemek hazır](media/vscpp-ready-to-build.png "yeni projeyi derlemek hazır")
+   ![Yeni projeyi oluşturmaya hazır](media/vscpp-ready-to-build.png "Yeni projeyi oluşturmaya hazır")
 
-## <a name="build-and-run-your-code-in-visual-studio"></a>Derleme ve kodunuzu Visual Studio'da çalıştırma
+## <a name="build-and-run-your-code-in-visual-studio"></a>Visual Studio'da kodunuzu oluşturun ve çalıştırın
 
-1. Projenizi tercih **Çözümü Derle** gelen **derleme** menüsü. **Çıkış** penceresi yapı işleminin sonuçlarını gösterir.
+1. Projenizi oluşturmak için **Yapı** menüsünden **Çözüm Oluştur'u** seçin. **Çıktı** penceresi yapı işleminin sonuçlarını gösterir.
 
-   ![Proje derleme](media/vscpp-build-solution.gif "projeyi oluşturun")
+   ![Projeyi derleme](media/vscpp-build-solution.gif "Projeyi derleme")
 
-1. Menü çubuğunda kodu çalıştırmak için tercih **hata ayıklama**, **ayıklamadan Başlat**.
+1. Kodu çalıştırmak için menü çubuğunda **Hata**Ayıklama'yı seçin, **hata ayıklama dan başlat.**
 
-   ![Proje başlangıç](media/vscpp-start-without-debugging.gif "projeyi Başlat")
+   ![Projeyi başlatın](media/vscpp-start-without-debugging.gif "Projeyi başlatın")
 
-   Bir konsol penceresi açar ve ardından uygulamanızı çalıştırır. Visual Studio'da konsol uygulaması başlattığınızda, kodunuz çalışır ve ardından baskı siparişi "devam etmek için herhangi bir tuşa basın. biçimindeki telefon numarasıdır. ." Çıktıyı görmek için bir fırsat vermek için.
+   Bir konsol penceresi açılır ve ardından uygulamanızı çalıştırır. Visual Studio'da bir konsol uygulaması başlattığınızda, kodunuzu çalıştırır ve ardından "Devam etmek için herhangi bir tuşa basın. . ." çıktıyı görme şansı vermek için.
 
-Tebrikler! İlk oluşturduğunuz "Hello, world!" Visual Studio'da konsol uygulaması! Konsol penceresini kapatın ve Visual Studio'ya dönmek için bir tuşa basın.
+Tebrikler! İlk "Merhaba, dünya!" Visual Studio konsol uygulaması! Konsol penceresini kapatmak ve Visual Studio'ya dönmek için bir tuşa basın.
 
-[Bir sorunla karşılaşırsanız çalıştırdım.](#build-and-run-your-code-in-visual-studio-issues)
+[Bir sorunla karşılaştım.](#build-and-run-your-code-in-visual-studio-issues)
 
-## <a name="run-your-code-in-a-command-window"></a>Bir komut penceresinde kodunuzu çalıştırın
+## <a name="run-your-code-in-a-command-window"></a>Kodunuzu komut penceresinde çalıştırma
 
-Normalde, konsol uygulamaları Visual Studio'da değil, komut isteminde çalıştırın. Visual Studio tarafından uygulamanızı oluşturulduktan sonra herhangi bir komut penceresinden çalıştırabilirsiniz. İşte nasıl bulacağınızı ve yeni uygulamanızı bir komut istemi penceresinde çalıştırın.
+Normalde konsol uygulamalarını Visual Studio'da değil komut istemiyle çalıştırın. Uygulamanız Visual Studio tarafından üretilirse, uygulamayı herhangi bir komut penceresinden çalıştırabilirsiniz. Yeni uygulamanızı komut istemi penceresinde şu şekilde bulabilir ve çalıştırabilirsiniz.
 
-1. İçinde **Çözüm Gezgini**HelloWorld çözümü seçin ve bağlam menüsünü açmak için sağ tıklayın. Seçin **klasörü dosya Gezgini'nde Aç** açmak için bir **dosya Gezgini** HelloWorld Çözüm klasörü'ndeki penceresi.
+1. **Solution Explorer'da**HelloWorld çözümünü (HelloWorld projesi değil) seçin ve bağlam menüsünü açmak için sağ tıklayın. HelloWorld çözüm klasöründe dosya **gezgini** penceresini açmak için Dosya **Gezgini'nde Klasörü Aç'ı** seçin.
 
-1. İçinde **dosya Gezgini** penceresi, hata ayıklama klasörü açın. Bu, uygulamanızı ve HelloWorld.exe birkaç diğer hata ayıklama dosyalarını içerir. HelloWorld.exe seçin, bağlam menüsünü açmak için sağ tıklayın ve Shift tuşunu basılı tutun. Seçin **kopya yolu olarak** yolu uygulamanıza panoya kopyalamak için.
+1. Dosya **Gezgini** penceresinde Hata Ayıklama klasörünü açın. Bu klasör, uygulamanız, *HelloWorld.exe*ve diğer hata ayıklama dosyaları bir çift içerir. **Shift** tuşunu basılı tutun ve bağlam menüsünü açmak için *HelloWorld.exe'ye* sağ tıklayın. Uygulamanızın panosuna giden yolu kopyalamak için **yol olarak Kopyala'yı** seçin.
 
-1. Bir komut istemi penceresi açmak için açmak için Windows-R tuşuna basın **çalıştırma** iletişim. Girin *cmd.exe* içinde **açık** metin seçin **Tamam** bir komut istemi penceresi çalıştırılacak.
+1. Komut istemi penceresi açmak için **Çalıştır** iletişim kutusunu açmak için **Windows+R** tuşuna basın. **Açık** metin kutusuna *cmd.exe* girin, ardından komut istemi penceresini çalıştırmak için **Tamam'ı** seçin.
 
-1. Komut İstemi penceresinde, komut istemine yolu uygulamanıza yapıştırın için sağ tıklayın. Uygulamanızı çalıştırmak için Enter tuşuna basın.
+1. Komut istemi penceresinde, uygulamanızın yolunu komut istemine yapıştırmak için sağ tıklatın. Uygulamanızı çalıştırmak için Enter tuşuna basın.
 
-   ![Uygulamayı komut isteminde çalıştırmak](media/vscpp-run-in-cmd.gif "uygulamayı komut isteminde çalıştırın.")
+   ![Uygulamayı komut isteminde çalıştırın](media/vscpp-run-in-cmd.gif "Uygulamayı komut isteminde çalıştırın")
 
-Tebrikler, oluşturulan ve Visual Studio'da konsol uygulaması çalıştırın!
+Tebrikler, Visual Studio'da bir konsol uygulaması oluşturup çalıştırın!
 
-[Bir sorunla karşılaşırsanız çalıştırdım.](#run-your-code-in-a-command-window-issues)
+[Bir sorunla karşılaştım.](#run-your-code-in-a-command-window-issues)
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-Yerleşik ve bu basit uygulama çalıştırma sonra daha karmaşık projeler için hazır olursunuz. Bkz: [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md) Visual c++ in Visual Studio özelliklerini keşfedin izlenecek ayrıntılı için.
+Bu basit uygulamayı oluşturup çalıştırdıktan sonra daha karmaşık projelere hazırsınız. Daha fazla bilgi için [C++ Masaüstü Geliştirme için Visual Studio IDE'yi kullanma bölümüne](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)bakın. Visual Studio'da Microsoft C++ özelliklerini inceleyen daha ayrıntılı gözden geçirme ler vardır.
 
 ## <a name="troubleshooting-guide"></a>Sorun giderme kılavuzu
 
-Burada, ilk C++ projenizi oluşturduğunuzda çözümleri için yaygın olarak karşılaşılan sorunlarını gelir.
+İlk C++ projenizi oluştururken sık karşılaşılan sorunların çözümleri için buraya gelin.
 
-### <a name="build-and-run-your-code-in-visual-studio-issues"></a>Derleme ve kodunuzu Visual Studio sorunları çalıştırma
+### <a name="build-and-run-your-code-in-visual-studio-issues"></a>Visual Studio'da kodunuzu oluşturun ve çalıştırın: sorunlar
 
-Kırmızı dalgalı çizgiler, kaynak kod düzenleyicisinde herhangi bir şey altında görünürse, yapı hataları ve Uyarıları olabilir. Kodunuzun çalışması yazım ve noktalama işaretleri örnekte eşleşip eşleşmediğini denetleyin.
+Kaynak kod düzenleyicisinde herhangi bir şeyin altında kırmızı dalgalı hareketler görünüyorsa, yapıda hatalar veya uyarılar olabilir. Kodunuzu yazım, noktalama ve büyük harf örnekle eşleşip eşleşmediğini denetleyin.
 
 [Geri Git.](#build-and-run-your-code-in-visual-studio)
 
-### <a name="run-your-code-in-a-command-window-issues"></a>Kodunuzu bir komut penceresinde sorunları çalıştırın.
+### <a name="run-your-code-in-a-command-window-issues"></a>Kodunuzu komut penceresinde çalıştırın: sorunlar
 
-Uygulamanızı çalıştırmak için komut satırına çözüm hata ayıklama klasöre gidebilirsiniz. Uygulama yolu belirtmeden diğer dizinlerden uygulamanızı çalıştıramazsınız. Ancak, uygulamanız başka bir dizine kopyalayın ve oradan çalıştırın.
+Dosya Gezgini'nde gösterilen yol * \\HelloWorld\\HelloWorld'de*sona eriyorsa, HelloWorld *çözümü*yerine HelloWorld *projesini* açtınız. Uygulamanızı içermeyen bir Hata Ayıklama klasörü kafanızı karıştırır. Yoldaki ilk *HelloWorld* olan çözüm klasörüne ulaşmak için Dosya Gezgini'nde bir düzeye gidin. Bu klasör de bir Hata Ayıklama klasörü içerir ve uygulamanızı orada bulabilirsiniz.
 
-Görmüyorsanız **kopya yolu olarak** kısayol menüsünde menüsünü bırakma ve yeniden açın SHIFT tuşunu basılı tutarak. Bu işlem yalnızca kolaylık sağlamaya yöneliktir. Ayrıca, yol dosya Gezgini arama çubuğunda klasöre kopyalayın ve yapıştırın **çalıştırma** iletişim kutusunda ve ardından son yürütülebilir dosyanızın adını girin. Biraz daha fazla yazarak olduğu, ancak aynı sonucu verir.
+Ayrıca, uygulamanızı çalıştırmak için komut satırındaki çözüm Hata Ayıklama klasörüne de gidebilirsiniz. Uygulamanız, uygulamaya giden yolu belirtmeden diğer dizinlerden çalışmaz. Ancak, uygulamanızı başka bir dizine kopyalayabilir ve buradan çalıştırabilirsiniz. Ayrıca, PATH ortamı değişkeniniz tarafından belirtilen bir dizine kopyalayıp her yerden çalıştırmak da mümkündür.
+
+Kısayol menüsünde **Kopyala'yı yol olarak** görmüyorsanız, menüyü kapatın ve yeniden açarken **Shift** tuşunu basılı tutun. Bu komut sadece kolaylık sağlamak içindir. Ayrıca Dosya Gezgini arama çubuğundan klasöre giden yolu kopyalayabilir ve **Çalıştır** iletişim kutusuna yapıştırabilir ve sonunda yürütülebilir olanınızın adını girebilirsiniz. Sadece biraz daha fazla yazma, ama aynı sonucu vardır.
 
 [Geri Git.](#run-your-code-in-a-command-window)
 

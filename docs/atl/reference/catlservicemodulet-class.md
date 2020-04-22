@@ -35,12 +35,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlServiceModuleT class
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
-ms.openlocfilehash: 5d87eada997d0bbfe44cd07a819f6b012a7a3a20
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6d1985384c2d9a324abac548f27be6be5f0cacf5
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81321334"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81748597"
 ---
 # <a name="catlservicemodulet-class"></a>CAtlServiceModuleT Sınıfı
 
@@ -147,7 +147,7 @@ Veri üyelerini başolarak karşılar ve ilk hizmet durumunu ayarlar.
 
 Hizmet için işleyici yordamı.
 
-```
+```cpp
 void Handler(DWORD dwOpcode) throw();
 ```
 
@@ -230,7 +230,7 @@ Hizmet yüklüyse TRUE döndürür, aksi takdirde FALSE.
 
 Olay günlüğüne yazar.
 
-```
+```cpp
 void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
 ```
 
@@ -310,7 +310,7 @@ Hizmetin adını depolayan null-sonlandırılan dize.
 
 Hizmete devam etmek için bu yöntemi geçersiz kılın.
 
-```
+```cpp
 void OnContinue() throw();
 ```
 
@@ -318,7 +318,7 @@ void OnContinue() throw();
 
 Hizmeti sorgulamak için bu yöntemi geçersiz kılın.
 
-```
+```cpp
 void OnInterrogate() throw();
 ```
 
@@ -326,7 +326,7 @@ void OnInterrogate() throw();
 
 Hizmeti duraklatmak için bu yöntemi geçersiz kılın.
 
-```
+```cpp
 void OnPause() throw();
 ```
 
@@ -334,7 +334,7 @@ void OnPause() throw();
 
 Hizmeti kapatmak için bu yöntemi geçersiz kılın.
 
-```
+```cpp
 void OnShutdown() throw();
 ```
 
@@ -342,7 +342,7 @@ void OnShutdown() throw();
 
 Hizmeti durdurmak için bu yöntemi geçersiz kılın.
 
-```
+```cpp
 void OnStop() throw();
 ```
 
@@ -350,7 +350,7 @@ void OnStop() throw();
 
 Hizmete bilinmeyen istekleri işlemek için bu yöntemi geçersiz kılın.
 
-```
+```cpp
 void OnUnknownRequest(DWORD /* dwOpcode*/) throw();
 ```
 
@@ -446,7 +446,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 Bu yöntem Servis Denetim Yöneticisi tarafından çağrılır.
 
-```
+```cpp
 void ServiceMain(DWORD dwArgc, LPTSTR* lpszArgv) throw();
 ```
 
@@ -468,7 +468,7 @@ SCM aramalarından `ServiceMain`sonra, bir hizmetin SCM işleyicisi işlevi verm
 
 Bu yöntem hizmet durumunu güncelleştirir.
 
-```
+```cpp
 void SetServiceStatus(DWORD dwState) throw();
 ```
 

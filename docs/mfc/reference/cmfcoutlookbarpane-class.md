@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CMFCOutlookBarPane [MFC], EnableContextMenuItems
 - CMFCOutlookBarPane [MFC], RemoveAllButtons
 ms.assetid: 094e2ef3-a118-487e-a4cc-27626108fe08
-ms.openlocfilehash: 82d8f1da0640e5b487a06585c72279e7d7ffdf99
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 97c7edde26bdf13e899d823dcf88d143068d86a4
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369640"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81749612"
 ---
 # <a name="cmfcoutlookbarpane-class"></a>CMFCOutlookBarPane Sınıfı
 
@@ -232,7 +232,7 @@ virtual BOOL CanBeAttached() const;
 
 Outlook çubuğu bölmesindeki resimler tarafından kullanılan kaynakları boşaltıyor.
 
-```
+```cpp
 void ClearAll();
 ```
 
@@ -311,7 +311,7 @@ Varsayılan uygulama özelleştirme modunu denetler ( [CMFCToolBar::IsCustomizeM
 
 Outlook çubuğu bölmesindeki kaydırma oklarının düğmeler listesini sayfa sayfa mı yoksa düğmeyle mi ilerletmeyeceğini belirtir.
 
-```
+```cpp
 void EnablePageScrollMode(BOOL bPageScroll=TRUE);
 ```
 
@@ -395,7 +395,7 @@ Düğme başarıyla kaldırıldıysa TRUE; Belirtilen komut kimliği geçerli de
 
 Outlook çubuğunun arka plan rengini ayarlar.
 
-```
+```cpp
 void SetBackColor(COLORREF color);
 ```
 
@@ -412,7 +412,7 @@ Outlook çubuğunun geçerli arka plan rengini ayarlamak için bu işlevi arayı
 
 Arka plan görüntüsünü ayarlar.
 
-```
+```cpp
 void SetBackImage(UINT uiImageID);
 ```
 
@@ -429,7 +429,7 @@ Outlook çubuğunun arka plan görüntüsünü ayarlamak için bu yöntemi aray�
 
 Outlook çubuğu bölmesini özgün düğme kümesine sıfırlar.
 
-```
+```cpp
 void SetDefaultState();
 ```
 
@@ -441,7 +441,7 @@ Bu yöntem, Outlook çubuğu düğmelerini özgün kümeye geri yükler. Bu yön
 
 Outlook çubuğu bölmesindeki düğmelerin etrafında kullanılan dolgu pikselsayısını ayarlar.
 
-```
+```cpp
 void SetExtraSpace()
 ```
 
@@ -449,7 +449,7 @@ void SetExtraSpace()
 
 Outlook çubuğu bölmesinde normal ve vurgulanan metnin renklerini ayarlar.
 
-```
+```cpp
 void SetTextColor(
     COLORREF clrRegText,
     COLORREF clrSelText=0);
@@ -467,7 +467,7 @@ void SetTextColor(
 
 Outlook çubuğu bölmesi için saydam rengi ayarlar.
 
-```
+```cpp
 void SetTransparentColor(COLORREF color);
 ```
 

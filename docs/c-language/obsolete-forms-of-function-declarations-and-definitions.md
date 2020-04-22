@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - old style function declarations
 ms.assetid: 67c5038f-0529-4f29-9d0f-c27580977b50
-ms.openlocfilehash: ed6ee67194aa208f77a8d43dcc17ac43b0d74278
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f26e79a586ea451cc51b339b5be593c2359e1f1a
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232421"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81745880"
 ---
 # <a name="obsolete-forms-of-function-declarations-and-definitions"></a>İşlev Bildirimlerinin ve Tanımlarının Kullanılmayan Formları
 
@@ -30,7 +30,7 @@ Bir `int` ile aynı boyutta tamsayı veya işaretçi döndüren işlevlerin (bil
 
 ANSI C standardı ile uyum açısından, üç nokta kullanan eski stil işlev bildirimleri, /Za seçeneğiyle derlerken şimdi bir hata, /Ze ile derlerken ise düzey 4 uyarısı oluşturur. Örneğin:
 
-```
+```cpp
 void funct1( a, ... )  /* Generates a warning under /Ze or */
 int a;                 /* an error when compiling with /Za */
 {
@@ -39,7 +39,7 @@ int a;                 /* an error when compiling with /Za */
 
 Bu bildirimi bir prototip olarak yeniden yazmalısınız:
 
-```
+```cpp
 void funct1( int a, ... )
 {
 }
@@ -47,7 +47,7 @@ void funct1( int a, ... )
 
 Eski stil işlev bildirimleri ayrıca, aynı işlevi daha sonra üç nokta ile veya yükseltilen tür ile aynı olmayan bir türden parametre ile bildirdiğinizde veya tanımladığınızda da bir uyarı oluşturur.
 
-Sonraki bölümde [C işlev tanımları](../c-language/c-function-definitions.md), eski stil sözdizimi dahil olmak üzere, işlev tanımlarının sözdizimi gösterilmektedir. Eski stil sözdiziminde parametrelerin listesi için bildirimlere olan *tanımlayıcı listesi*.
+Sonraki bölüm, [C İşlev Tanımları](../c-language/c-function-definitions.md), eski stil sözdizimi de dahil olmak üzere işlev tanımları için sözdizimini gösterir. Eski stil sözdiziminde parametreler listesi için terminal dışı tanımlayıcı *listesidir.*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

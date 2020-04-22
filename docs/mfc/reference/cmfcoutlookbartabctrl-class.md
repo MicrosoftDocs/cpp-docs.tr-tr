@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CMFCOutlookBarTabCtrl [MFC], SetToolbarImageList
 - CMFCOutlookBarTabCtrl [MFC], SetVisiblePageButtons
 ms.assetid: b1f2b3f7-cc59-49a3-99d8-7ff9b37c044b
-ms.openlocfilehash: 309b74126f57e76aa6399f57382d88fee4400700
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9c5d7d5135c3b207bbf113970deb8cbeb186bcca
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369670"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81749572"
 ---
 # <a name="cmfcoutlookbartabctrl-class"></a>CMFCOutlookBarTabCtrl Sınıfı
 
@@ -135,7 +135,7 @@ Aşağıdaki örnek, bir `CMFCOutlookBarTabCtrl` nesnenin nasıl başharfe atın
 
 Outlook çubuğuna yeni bir sekme olarak Windows denetimi ekler.
 
-```
+```cpp
 void AddControl(
     CWnd* pWndCtrl,
     LPCTSTR lpszName,
@@ -277,7 +277,7 @@ Sekme sayfası düğmelerinde metin etiketlerinin yerinde düzenlemesini etkinle
 
 Kullanıcının Outlook çubuğu bölmesindeki düğmeler arasında gezinmesini sağlayan kaydırma tutamaçlarını etkinleştirmek için çerçeve tarafından çağrılır.
 
-```
+```cpp
 void EnableScrollButtons(
     BOOL bEnable = TRUE,
     BOOL bIsUp = TRUE,
@@ -416,7 +416,7 @@ Etkin sekmeyi ayarlamanın görsel etkisi animasyonu etkinleştirip etkinleştir
 
 Outlook sekmesi denetiminin kenarlık boyutunu ayarlar.
 
-```
+```cpp
 void SetBorderSize(int nBorderSize);
 ```
 
@@ -433,7 +433,7 @@ Yeni kenarlık boyutunu ayarlar ve görünüm penceresi düzenini yeniden hesapl
 
 Outlook çubuğunun sekme düğmelerinde metin etiketlerinin hizalanmasını ayarlar.
 
-```
+```cpp
 void SetPageButtonTextAlign(
     UINT uiAlign,
     BOOL bRedraw=TRUE);
@@ -495,7 +495,7 @@ Microsoft Office 2003 modunda değilse, bu yöntem çağrılmamalıdır. Daha fa
 
 ## <a name="cmfcoutlookbartabctrlsetvisiblepagebuttons"></a><a name="setvisiblepagebuttons"></a>CMFCOutlookBarTabCtrl::SetVisiblePageButtons
 
-```
+```cpp
 void SetVisiblePageButtons(int nVisiblePageButtons);
 ```
 

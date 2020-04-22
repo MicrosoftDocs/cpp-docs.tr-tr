@@ -103,12 +103,12 @@ helpviewer_keywords:
 - CAnimationController [MFC], m_pTransitionFactory
 - CAnimationController [MFC], m_pTransitionLibrary
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
-ms.openlocfilehash: 34a02567bfeb76666cc38ccf05dcc285a1f658f5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 489e931c4063e7bf06ace1cb130b9891253c94d4
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369763"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81750184"
 ---
 # <a name="canimationcontroller-class"></a>CAnimationController Sınıfı
 
@@ -299,7 +299,7 @@ CAnimationController(void);
 
 Animasyon zamanlandığında grubu temizlemek için çerçeve tarafından çağrılır.
 
-```
+```cpp
 void CleanUpGroup(UINT32 nGroupID);
 void CleanUpGroup(CAnimationGroup* pGroup);
 ```
@@ -1010,7 +1010,7 @@ CAnimationController::EnableStoryboardEventHandler kullanarak film şeridi olayl
 
 Tüm animasyon gruplarını animasyon denetleyicisinden kaldırır.
 
-```
+```cpp
 void RemoveAllAnimationGroups();
 ```
 
@@ -1022,7 +1022,7 @@ Tüm gruplar silinir, işaretçileri, uygulama düzeyinde depolanırsa geçersiz
 
 Animasyon denetleyicisinden belirtilen kimliği olan bir animasyon grubunu kaldırır.
 
-```
+```cpp
 void RemoveAnimationGroup(UINT32 nGroupID);
 ```
 
@@ -1039,7 +1039,7 @@ Bu yöntem, bir animasyon grubunu iç gruplar listesinden kaldırır ve siler, b
 
 Animasyon nesnesi animasyon denetleyicisinden kaldırın.
 
-```
+```cpp
 void RemoveAnimationObject(
     CAnimationBaseObject* pObject,
     BOOL bNoDelete = FALSE);
@@ -1061,7 +1061,7 @@ Animasyon nesnesi animasyon denetleyicisi ve animasyon grubundan bir animasyon n
 
 Belirtilen gruba ait animasyon nesnelerinden geçişleri kaldırır.
 
-```
+```cpp
 void RemoveTransitions(UINT32 nGroupID);
 ```
 
@@ -1104,7 +1104,7 @@ BScheduleNow parametresi false prior ScheduleGroup olarak ayarlanmış Olan Anim
 
 Animasyon denetleyicisi ve bir pencere arasında bir ilişki kurar.
 
-```
+```cpp
 void SetRelatedWnd(CWnd* pWnd);
 ```
 
