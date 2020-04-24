@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Guid Struct
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-ms.openlocfilehash: 3849074f93424912b1dc5b93883482a6cb55892a
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
-ms.translationtype: HT
+ms.openlocfilehash: 7c3b89ff238b1cb5ee9fbb71e83d20f571e656a3
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/22/2020
-ms.locfileid: "81750663"
+ms.locfileid: "82031543"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid değer sınıfı
 
@@ -38,7 +38,7 @@ public value struct Guid
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni `Platform::Guid`bir oluşturmak [için, Windows kullanın::Foundation::GuidHelper::CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid#Windows_Foundation_GuidHelper_CreateNewGuid) statik yöntemi.
+Yeni `Platform::Guid`bir oluşturmak [için, Windows kullanın::Foundation::GuidHelper::CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid) statik yöntemi.
 
 ### <a name="requirements"></a>Gereksinimler
 
