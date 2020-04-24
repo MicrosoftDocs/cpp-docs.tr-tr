@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CGlobalUtils [MFC], StringFromCy
 - CGlobalUtils [MFC], StringFromDecimal
 ms.assetid: 2c5bd1a6-f80c-4e79-a476-b4ceebabfb2f
-ms.openlocfilehash: 66c1663774076fcc4b62b766b1781efc8cc33c93
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dbac56ea7efca98218133b23657f8508ea6bac28
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373718"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752910"
 ---
 # <a name="cglobalutils-class"></a>CGlobalUtils Sınıfı
 
@@ -90,7 +90,7 @@ class CGlobalUtils
 
 ## <a name="cglobalutilsadjustrecttoworkarea"></a><a name="adjustrecttoworkarea"></a>CGlobalUtils::AdjustRectToWorkArea
 
-```
+```cpp
 void AdjustRectToworkArea(
     CRect& rect,
     CRect* pRectDelta = NULL);
@@ -105,7 +105,7 @@ void AdjustRectToworkArea(
 
 ## <a name="cglobalutilscalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a>CGlobalUtils::CalcExpectedDockedRect
 
-```
+```cpp
 void CalcExpectedDockedRect(
     CPaneContainerManager& barContainerManager,
     CWnd* pWndTodock,
@@ -233,7 +233,7 @@ BOOL DecimalFromString(
 
 ## <a name="cglobalutilsfliprect"></a><a name="fliprect"></a>CGlobalUtils::FlipRect
 
-```
+```cpp
 void FlipRect(
     CRect& rect,
     int nDegrees);
@@ -248,7 +248,7 @@ void FlipRect(
 
 ## <a name="cglobalutilsforceadjustlayout"></a><a name="forceadjustlayout"></a>CGlobalUtils::ForceAdjustLayout
 
-```
+```cpp
 void ForceAdjustLayout(
     CDockingManager* pDockManager,
     BOOL bForce = FALSE,
@@ -339,7 +339,7 @@ HICON GetWndIcon(CWnd* pWnd);
 
 ## <a name="cglobalutilssetnewparent"></a><a name="setnewparent"></a>CGlobalUtils::SetNewParent
 
-```
+```cpp
 void SetNewParent(
     CObList& lstControlBars,
     CWnd* pNewParent,

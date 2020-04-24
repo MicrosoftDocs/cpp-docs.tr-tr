@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: 830c6d068a5074d0918107ca601c51d198a8a912
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d25cad720a4e1abb9bca6b3ab22eea0261f24b48
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375709"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753434"
 ---
 # <a name="cdc-class"></a>CDC Sınıfı
 
@@ -1354,7 +1354,7 @@ Windows aygıt bağlamı.
 
 HiMETRIC boyutlarını OLE'ye vererek pikselleri HIMETRIC'e dönüştürdüğünüzde bu işlevi kullanın.
 
-```
+```cpp
 void DPtoHIMETRIC(LPSIZE lpSize) const;
 ```
 
@@ -1371,7 +1371,7 @@ Aygıt bağlamı nesnesinin eşleme modu MM_LOENGLISH, MM_HIENGLISH, MM_LOMETRIC
 
 Aygıt birimlerini mantıksal birimlere dönüştürür.
 
-```
+```cpp
 void DPtoLP(
     LPPOINT lpPoints,
     int nCount = 1) const;
@@ -1402,7 +1402,7 @@ Dizideki nokta sayısı.
 
 Üç boyutlu bir dikdörtgen çizmek için bu üye işlevi çağırın.
 
-```
+```cpp
 void Draw3dRect(
     LPCRECT lpRect,
     COLORREF clrTopLeft,
@@ -1452,7 +1452,7 @@ Dikdörtgen *clrTopLeft* tarafından belirtilen renk üst ve sol kenarları ile 
 
 Sürükle dikdörtgenini yeniden çizmek için bu üye işlevi tekrar tekrar çağırın.
 
-```
+```cpp
 void DrawDragRect(
     LPCRECT lpRect,
     SIZE size,
@@ -1548,7 +1548,7 @@ Bir uygulama `DrawEscape`aradığında, *nInputSize* ve *lpszInputData* tarafın
 
 Dikdörtgenin odak noktası olduğunu belirtmek için kullanılan stilde bir dikdörtgen çizer.
 
-```
+```cpp
 void DrawFocusRect(LPCRECT lpRect);
 ```
 
@@ -2345,7 +2345,7 @@ BOOL FillPath();
 
 Belirtilen fırçayı kullanarak belirli bir dikdörtgeni doldurmak için bu üye işlevi arayın.
 
-```
+```cpp
 void FillRect(
     LPCRECT lpRect,
     CBrush* pBrush);
@@ -2403,7 +2403,7 @@ Fırça, `CBrush` `CreateHatchBrush`üye işlevler `CreatePatternBrush` `CreateS
 
 Verilen dikdörtgeni belirtilen düz renkle doldurmak için bu üye işlevi arayın.
 
-```
+```cpp
 void FillSolidRect(
     LPCRECT lpRect,
     COLORREF clr);
@@ -2492,7 +2492,7 @@ Yalnızca raster ekran teknolojisini destekleyen bellek aygıtı bağlamları `F
 
 *lpRect*tarafından belirtilen dikdörtgenin etrafına kenarlık çizer.
 
-```
+```cpp
 void FrameRect(
     LPCRECT lpRect,
     CBrush* pBrush);
@@ -4123,7 +4123,7 @@ Geçirilen geri arama `GrayString` işlevi çağrı `__stdcall` kuralını kulla
 
 HIMETRIC boyutlarını OLE'den piksellere dönüştürdüğünüzde bu işlevi kullanın.
 
-```
+```cpp
 void HIMETRICtoDP(LPSIZE lpSize) const;
 ```
 
@@ -4140,7 +4140,7 @@ Aygıt bağlamı nesnesinin eşleme modu MM_LOENGLISH, MM_HIENGLISH, MM_LOMETRIC
 
 HIMETRIC birimlerini mantıksal birimlere dönüştürmek için bu işlevi arayın.
 
-```
+```cpp
 void HIMETRICtoLP(LPSIZE lpSize) const;
 ```
 
@@ -4206,7 +4206,7 @@ GDI, sonraki tüm çıktıları yeni sınıra sığacak şekilde klipler. Geniş
 
 Verilen dikdörtgenin içeriğini ters çevirer.
 
-```
+```cpp
 void InvertRect(LPCRECT lpRect);
 ```
 
@@ -4297,7 +4297,7 @@ Satırın bitiş noktasını belirtir. Bu parametre `POINT` için bir `CPoint` y
 
 Mantıksal birimleri aygıt birimlerine dönüştürür.
 
-```
+```cpp
 void LPtoDP(
     LPPOINT lpPoints,
     int nCount = 1) const;
@@ -4330,7 +4330,7 @@ Noktaların x ve y koordinatları -32.768 ile 32.767 aralığında 2 bayt imzal�
 
 Mantıksal birimleri HIMETRIC birimlerine dönüştürmek için bu işlevi arayın.
 
-```
+```cpp
 void LPtoHIMETRIC(LPSIZE lpSize) const;
 ```
 
@@ -7029,7 +7029,7 @@ Daha fazla bilgi için Windows SDK'daki [TransparentBlt'a](/windows/win32/api/wi
 
 İstemci alanındaki geçerli renkleri piksel piksel olarak sistem paleti ile eşleştirerek aygıt bağlamının istemci alanını güncelleştirir.
 
-```
+```cpp
 void UpdateColors();
 ```
 

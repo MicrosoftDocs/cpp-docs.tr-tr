@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CMFCAutoHideButton [MFC], ShowButton
 - CMFCAutoHideButton [MFC], UnSetAutoHideMode
 ms.assetid: c80e6b8b-25ca-4d12-9d27-457731028ab0
-ms.openlocfilehash: 84f17896cc3c4f5cd6099a9ccf7e4e000f43b1f1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3ea6ce13b8cca7e0130fe14459a832b476391b0c
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369916"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81751677"
 ---
 # <a name="cmfcautohidebutton-class"></a>CMFCAutoHideButton Sınıfı
 
@@ -122,7 +122,7 @@ Aşağıdaki örnek, bir `CMFCAutoHideButton` nesnenin nasıl oluşturup sınıf
 
 ## <a name="cmfcautohidebuttonbringtotop"></a><a name="bringtotop"></a>CMFCAutoHideButton::Bringtotop
 
-```
+```cpp
 void BringToTop();
 ```
 
@@ -379,7 +379,7 @@ Uygulamanızdaki otomatik gizleme düğmeleri için arka planı özelleştirmek 
 
 İlişkili [CDockablePane Sınıfını](../../mfc/reference/cdockablepane-class.md)gösterir veya gizler.
 
-```
+```cpp
 void ShowAttachedWindow(BOOL bShow);
 ```
 
@@ -403,7 +403,7 @@ virtual void ShowButton(BOOL bShow);
 
 ## <a name="cmfcautohidebuttonmove"></a><a name="move"></a>CMFCAutoHideButton::Hareket et
 
-```
+```cpp
 void Move(int nOffset);
 ```
 
@@ -415,7 +415,7 @@ void Move(int nOffset);
 
 ## <a name="cmfcautohidebuttonreplacepane"></a><a name="replacepane"></a>CMFCAutoHideButton::ReplacePane
 
-```
+```cpp
 void ReplacePane(CDockablePane* pNewBar);
 ```
 

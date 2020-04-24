@@ -104,12 +104,12 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], SynchronizeScrollBar
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
-ms.openlocfilehash: 7c5e2c0f3ad3b40c5dbff619c45ebcd9573892ca
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: da871679665376342a6d23369a1e34c9a7060ce7
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367360"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753458"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl Sınıfı
 
@@ -256,7 +256,7 @@ Aşağıdaki örnek, bir `CMFCTabCtrl` `CMFCTabCtrl` nesneyi yapılandırmak iç
 
 Geçerli sekme denetiminin belirtilen sekmesini görüntüler ve odağı bu sekmede ayarlar.
 
-```
+```cpp
 void ActivateMDITab(int nTab = -1);
 ```
 
@@ -283,7 +283,7 @@ Her zaman TRUE.
 
 Sekme denetiminin kullanıcı arabirimi öğesi değiştiğinde, çerçevenin tüm sekme denetim pencerelerinin istemci alanını yeniden boyutlandırmak için olup olmadığını belirtir.
 
-```
+```cpp
 void AutoSizeWindow(BOOL bAutoSize = TRUE);
 ```
 
@@ -381,7 +381,7 @@ Bir sekme etiketini değiştirdiğinizde bu yöntem çağrılır. Bu yöntem, be
 
 Etkin sekmede Bir Kapat düğmesini **(X)** gösterir veya gizler.
 
-```
+```cpp
 void EnableActiveTabCloseButton(BOOL bEnable=TRUE);
 ```
 
@@ -409,7 +409,7 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
 
 Pencere sekmelerini kaydırmak için iki düğme kullanan bir kullanıcı arabirimi ile sekmeli pencerelerden oluşan açılır menüyü görüntüleyen bir arabirim arasında geçiş yapın.
 
-```
+```cpp
 void EnableTabDocumentsMenu(BOOL bEnable=TRUE);
 ```
 
@@ -508,7 +508,7 @@ Sekme denetiminin gömülü kaydırma çubuğuna erişmek için bu yöntemi kull
 
 Sekme denetiminin üst veya alt kısmındaki sekme etiketi alanının sınırlayıcı dikdörtgenini alır.
 
-```
+```cpp
 void GetTabArea(
     CRect& rectTabAreaTop,
     CRect& rectTabAreaBottom) const;
@@ -571,7 +571,7 @@ virtual void GetTabsRect(CRect& rect) const;
 
 Geçerli sekme denetiminin istemci alanının sınırını alır.
 
-```
+```cpp
 void GetWndArea(CRect& rect) const;
 ```
 
@@ -586,7 +586,7 @@ void GetWndArea(CRect& rect) const;
 
 Varsa yatay kaydırma çubuğunu etkin pencereye gizler.
 
-```
+```cpp
 void HideActiveWindowHorzScrollBar();
 ```
 
@@ -598,7 +598,7 @@ Kullanıcı sekme denetim sayfaları arasında geçiş yaptığında sekme denet
 
 Çerçevenin etkin olmayan sekme denetim pencerelerini gösterip görüntülemediğini belirtir.
 
-```
+```cpp
 void HideInactiveWindow(BOOL bHide = TRUE);
 ```
 
@@ -613,7 +613,7 @@ void HideInactiveWindow(BOOL bHide = TRUE);
 
 Görünür sekme yoksa sekme alanının çizimini etkinleştirer veya devre dışı kılabilir.
 
-```
+```cpp
 void HideNoTabs(BOOL bHide=TRUE);
 ```
 
@@ -938,7 +938,7 @@ virtual void OnShowTabDocumentsMenu(CPoint point);
 
 Sekme denetiminin geçerli sekmesini, birden çok belge arabirimi sekmesi grubunda etkin sekme olarak ayarlar.
 
-```
+```cpp
 void SetActiveInMDITabGroup(BOOL bActive);
 ```
 
@@ -978,7 +978,7 @@ Yöntem `SetActiveTab` otomatik olarak [CMFCTabCtrl çağırır::HideActiveWindo
 
 Etkin sekmelerde kalın bir yazı tipinin kullanılmasını sağlar veya devre dışı kılabilir.
 
-```
+```cpp
 void SetActiveTabBoldFont(BOOL bIsBold=TRUE);
 ```
 
@@ -993,7 +993,7 @@ void SetActiveTabBoldFont(BOOL bIsBold=TRUE);
 
 Gömülü bir çubuğun etrafına bir kare dikdörtgençizilip çizilmediğini belirtir.
 
-```
+```cpp
 void SetDrawFrame(BOOL bDraw=TRUE);
 ```
 
@@ -1008,7 +1008,7 @@ void SetDrawFrame(BOOL bDraw=TRUE);
 
 Sekme alanının etrafına düz veya 3B çerçeve çizip çizmeyeceğimi belirtir.
 
-```
+```cpp
 void SetFlatFrame(
     BOOL bFlat=TRUE,
     BOOL bRepaint=TRUE);
@@ -1065,7 +1065,7 @@ Görüntülenecek görüntüdizini belirtmek için sekme denetimi tarafından de
 
 Geçerli sekme denetiminin nasıl yeniden boyutlandırılabildiğini ve denetimi nasıl yeniden görüntülenebildiğini belirtir.
 
-```
+```cpp
 void SetResizeMode(ResizeMode resizeMode);
 ```
 
@@ -1088,7 +1088,7 @@ void SetResizeMode(ResizeMode resizeMode);
 
 Sekmeli penceredeki maksimum sekme genişliğini belirtir.
 
-```
+```cpp
 void SetTabMaxWidth(int nTabMaxWidth);
 ```
 
@@ -1105,7 +1105,7 @@ Sekmeli penceredeki her sekmenin genişliğini sınırlamak için bu yöntemi ku
 
 Sekme denetimindeki geçerli yeniden boyutlandırma işlemini sonlandırır.
 
-```
+```cpp
 void StopResize(BOOL bCancel);
 ```
 

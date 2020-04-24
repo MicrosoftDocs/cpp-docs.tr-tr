@@ -118,12 +118,12 @@ helpviewer_keywords:
 - CWinAppEx [MFC], StoreWindowPlacement
 - CWinAppEx [MFC], m_bForceImageReset
 ms.assetid: a3d3e053-3e22-463f-9444-c73abb1bb9d7
-ms.openlocfilehash: 1e022f09986f5d49ab2bba44c62cb716ce939a0c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b630a588d6c7ec81a22a9665deb0fa7517f90dc8
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369610"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81750652"
 ---
 # <a name="cwinappex-class"></a>CWinAppEx Sınıfı
 
@@ -283,7 +283,7 @@ Sınıfın `CWinAppEx` başlatma yöntemleri vardır, uygulama bilgilerini kayı
 
 Uygulamanın ana çerçeve penceresinin başlangıç boyutunu ve konumunu kayıt defterinden yükleyip yüklemeyeceğini belirtir.
 
-```
+```cpp
 void EnableLoadWindowPlacement(BOOL bEnable = TRUE);
 ```
 

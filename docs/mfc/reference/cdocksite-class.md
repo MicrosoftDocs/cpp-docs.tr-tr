@@ -86,12 +86,12 @@ helpviewer_keywords:
 - CDockSite [MFC], ShowRow
 - CDockSite [MFC], SwapRows
 ms.assetid: 0fcfff79-5f50-4281-b2de-a55653bbea40
-ms.openlocfilehash: a95ee024d9df835102eeffc8443ae6225775aff7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 471d68ead1bc5a11ace29f572647c4a7f2406b4e
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375548"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753277"
 ---
 # <a name="cdocksite-class"></a>CDockSite Sınıfı
 
@@ -212,7 +212,7 @@ virtual void AdjustLayout();
 
 ## <a name="cdocksitealigndocksite"></a><a name="aligndocksite"></a>CDockSite::AlignDockSite
 
-```
+```cpp
 void AlignDockSite(
     const CRect& rectToAlignBy,
     CRect& rectResult,
@@ -681,7 +681,7 @@ virtual void RemovePane(
 
 ## <a name="cdocksiteremoverow"></a><a name="removerow"></a>CDockSite::RemoveRow
 
-```
+```cpp
 void RemoveRow(CDockingPanesRow* pRow);
 ```
 
@@ -723,7 +723,7 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 
 ## <a name="cdocksiteresizedocksite"></a><a name="resizedocksite"></a>CDockSite::ResizeDockSite
 
-```
+```cpp
 void ResizeDockSite(
     int nNewWidth,
     int nNewHeight);
@@ -794,7 +794,7 @@ Kenetlenmiş bölmeleri göstermek veya gizlemek için bu yöntemi arayın. Norm
 
 ## <a name="cdocksiteshowrow"></a><a name="showrow"></a>CDockSite::ShowRow
 
-```
+```cpp
 void ShowRow(
     CDockingPanesRow* pRow,
     BOOL bShow,
@@ -813,7 +813,7 @@ void ShowRow(
 
 ## <a name="cdocksiteswaprows"></a><a name="swaprows"></a>CDockSite::SwapRows
 
-```
+```cpp
 void SwapRows(
     CDockingPanesRow* pFirstRow,
     CDockingPanesRow* pSecondRow);

@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMFCBaseVisualManager [MFC], CleanUpThemes
 - CMFCBaseVisualManager [MFC], UpdateSystemColors
 ms.assetid: d56f3afc-cdea-4de1-825a-a08999c571e0
-ms.openlocfilehash: a3288949bd4867115c32d2cbffd09cf4f7c6b40b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ac64a3feac5d124c2bfa67fc857dad5045c2dd28
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367805"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754880"
 ---
 # <a name="cmfcbasevisualmanager-class"></a>CMFCBaseVisualManager Sınıfı
 
@@ -101,7 +101,7 @@ Tüm görsel yöneticiler için bir taban sınıf olduğundan, [cmfcvisualmanage
 
 'de `CloseThemeData` `UpdateSystemColors`elde edilen tüm tutamaçları n için çağrılar.
 
-```
+```cpp
 void CleanUpThemes();
 ```
 
@@ -400,7 +400,7 @@ virtual WinXpTheme GetStandardWindowsTheme();
 
 Pencereler, araç çubukları, düğmeler ve benzeri gibi çeşitli denetimler çizmek için tutamaçları elde etmek için çağrılar. `OpenThemeData`
 
-```
+```cpp
 void UpdateSystemColors();
 ```
 

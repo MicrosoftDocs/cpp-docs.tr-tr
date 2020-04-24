@@ -162,12 +162,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: 6fe7b133fa01285f85dc28dc8d8ca01e027f4a5c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2b6c11600010bc9f97ab8c3a531d33c92c94e442
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373300"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752117"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl Sınıfı
 
@@ -315,7 +315,7 @@ virtual BOOL Create(
 Ağaç görünümü denetiminin stilini belirtir. [CreateWindow'da](/windows/win32/api/winuser/nf-winuser-createwindoww)açıklanan pencere stillerini ve Windows SDK'da açıklandığı gibi [ağaç görünümü denetim stillerinin](/windows/win32/Controls/tree-view-control-window-styles) herhangi bir birleşimini uygulayın.
 
 *Rect*<br/>
-Ağaç görünümü denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
+Ağaç görünümü denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
 
 *pParentWnd*<br/>
 Ağaç görünümü denetiminin üst penceresini belirtir, `CDialog`genellikle bir . NULL olmamalıdır.
@@ -361,7 +361,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Ağaç görünümü denetiminin stilini belirtir. [CreateWindow'da](/windows/win32/api/winuser/nf-winuser-createwindoww)açıklanan pencere stillerini ve Windows SDK'da açıklandığı gibi [ağaç görünümü denetim stillerinin](/windows/win32/Controls/tree-view-control-window-styles) herhangi bir birleşimini uygulayın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -887,7 +887,7 @@ BOOL GetItemPartRect(
 |---------------|-----------------|
 |*hÖğe*|[içinde] Ağaç görünümü denetim öğesine işleyin.|
 |*nPart*|[içinde] Rol için tanımlayıcı. TVGIPR_BUTTON ayarlanmalıdır.|
-|*Lprect*|[çıkış] [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi. Bu yöntem başarılı olursa, yapı *hItem* ve *nPart*tarafından belirtilen parçanın dikdörtgen koordinatlarını alır.|
+|*Lprect*|[çıkış] [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi. Bu yöntem başarılı olursa, yapı *hItem* ve *nPart*tarafından belirtilen parçanın dikdörtgen koordinatlarını alır.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -928,7 +928,7 @@ BOOL GetItemRect(
 Ağaç görünümü denetim öğesinin tutamacı.
 
 *Lprect*<br/>
-Sınırlayıcı dikdörtgeni alan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi. Koordinatlar ağaç görünümü denetiminin sol üst köşesine göredir.
+Sınırlayıcı dikdörtgeni alan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi. Koordinatlar ağaç görünümü denetiminin sol üst köşesine göredir.
 
 *bTextOnly*<br/>
 Bu parametre sıfır değilse, sınırlayan dikdörtgen yalnızca öğenin metnini içerir. Aksi takdirde, öğenin ağaç görünümü denetiminde kapladığının tüm satırı içerir.
@@ -1833,7 +1833,7 @@ Varsa önceki resim listesine işaretçi; aksi takdirde NULL.
 
 Ağaç görünümü denetimi için girintingenişliği ayarlamak ve denetimi yeni genişliği yansıtacak şekilde yeniden çizmek için bu işlevi çağırın.
 
-```
+```cpp
 void SetIndent(UINT nIndent);
 ```
 
@@ -2269,7 +2269,7 @@ Araç ipuçlarını kullanmak için, nesneyi `CTreeCtrl` oluştururken TVS_NOTOO
 
 Geçerli ağaç görünümü denetiminde belirtilen öğenin bilgi ucunu görüntüler.
 
-```
+```cpp
 void ShowInfoTip(HTREEITEM hItem);
 ```
 

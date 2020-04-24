@@ -11,12 +11,12 @@ helpviewer_keywords:
 - MFC, exceptions
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-ms.openlocfilehash: d819c170f47ea259e776bce6db0a6971e3f54bec
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bdf9dee88c29621bdc77c83d2633d93b4b9d10a7
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365711"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81751605"
 ---
 # <a name="exception-processing"></a>Özel Durum İşleme
 
@@ -307,7 +307,7 @@ CFile örneğine [bakın:Abort](../../mfc/reference/cfile-class.md#abort).
 
 Arşiv özel durumu atar.
 
-```
+```cpp
 void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName);
 ```
 
@@ -327,7 +327,7 @@ void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName);
 
 Bir dosya özel durum atar.
 
-```
+```cpp
 void AfxThrowFileException(
     int cause,
     LONG lOsError = -1,
@@ -359,7 +359,7 @@ Geçersiz bir bağımsız değişken özel durumu atar.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 void AfxThrowInvalidArgException( );
 ```
 
@@ -375,7 +375,7 @@ Geçersiz bağımsız değişkenler kullanıldığında bu işlev çağrılır.
 
 Bir bellek özel durum atar.
 
-```
+```cpp
 void AfxThrowMemoryException();
 ```
 
@@ -391,7 +391,7 @@ Altta yatan sistem bellek ayırıcılarına **(malloc** ve [GlobalAlloc](/window
 
 Desteklenmeyen bir özellik isteğinin sonucu olan bir özel durum atar.
 
-```
+```cpp
 void AfxThrowNotSupportedException();
 ```
 
@@ -403,7 +403,7 @@ void AfxThrowNotSupportedException();
 
 Kaynak özel durumu atar.
 
-```
+```cpp
 void  AfxThrowResourceException();
 ```
 
@@ -419,7 +419,7 @@ Windows kaynağı yüklenemediğinde bu işlev normal olarak çağrılır.
 
 Son kullanıcı işlemini durdurmak için bir özel durum atar.
 
-```
+```cpp
 void AfxThrowUserException();
 ```
 
@@ -435,7 +435,7 @@ Bu işlev normalde kullanıcıya `AfxMessageBox` bir hata bildirdikten hemen son
 
 OLE otomasyon işlevi içinde bir özel durum atmak için bu işlevi kullanın.
 
-```
+```cpp
 void AFXAPI AfxThrowOleDispatchException(
     WORD wCode ,
     LPCSTR lpszDescription,
@@ -477,7 +477,7 @@ Bu işleve sağlanan bilgiler sürüş uygulaması (Microsoft Visual Basic veya 
 
 Türde `COleException` bir nesne oluşturur ve bir özel durum atar.
 
-```
+```cpp
 void AFXAPI AfxThrowOleException(SCODE sc);
 void AFXAPI AfxThrowOleException(HRESULT hr);
 ```
@@ -502,7 +502,7 @@ Bağımsız değişken olarak Bir HRESULT alan sürüm, bu sonuç kodunu ilgili 
 
 Kendi kodunuzdan [CDaoException](../../mfc/reference/cdaoexception-class.md) türünden bir özel durum atmak için bu işlevi arayın.
 
-```
+```cpp
 void AFXAPI AfxThrowDaoException(
     int nAfxDaoError = NO_AFX_DAO_ERROR,
     SCODE scode = S_OK);
@@ -530,7 +530,7 @@ MFC DAO sınıfları ile ilgili özel durumlar `CDaoException` hakkında bilgi i
 
 Kendi kodunuzdan tür bir `CDBException` özel durum atmak için bu işlevi arayın.
 
-```
+```cpp
 void AfxThrowDBException(
     RETCODE nRetCode,
     CDatabase* pdb,
@@ -562,7 +562,7 @@ ODBC tarafından tanımlanan RETCODE değerleri hakkında bilgi için Windows SD
 
 MFC tarafından sağlanan varsayılan sonlandırma işlevi.
 
-```
+```cpp
 void  AfxAbort();
 ```
 

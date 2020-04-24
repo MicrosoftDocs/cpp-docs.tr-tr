@@ -4,12 +4,12 @@ ms.date: 03/27/2019
 helpviewer_keywords:
 - module macros in MFC
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
-ms.openlocfilehash: 6945dcc02423516e8d1cee5d8c828c4ed5069bef
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 42a08ff2e806acae6713c9df3fe170f7e89f05af
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365699"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81751593"
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>DL'leri Yönetmek için Makrolar ve Fonksiyonlar
 
@@ -91,7 +91,7 @@ Dinamik olarak MFC'ye bağlı normal bir MFC DLL'den OLE desteği için, MFC OLE
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 void AFXAPI AfxOleInitModule( );
 ```
 
@@ -111,7 +111,7 @@ MFC Soketleri, Dinamik olarak MFC'ye bağlı normal bir MFC DLL desteği için, 
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 void AFXAPI AfxNetInitModule( );
 ```
 
@@ -244,7 +244,7 @@ MFC'nin WinSxS davranışını etkileyen modül başına durum bayrağını ayar
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 void AFXAPI AfxSetAmbientActCtx(BOOL bSet);
 ```
 
@@ -279,7 +279,7 @@ Her işlem DLL'den ayrıldıklarında (işlem çıktığında veya `AfxFreeLibra
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 void AFXAPI AfxTermExtensionModule(  AFX_EXTENSION_MODULE& state,  BOOL bAll  = FALSE );
 ```
 

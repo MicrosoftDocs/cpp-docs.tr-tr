@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CMFCEditBrowseCtrl [MFC], OnIllegalFileName
 - CMFCEditBrowseCtrl [MFC], SetBrowseButtonImage
 ms.assetid: 69cfd886-3d35-4bee-8901-7c88fcf9520f
-ms.openlocfilehash: 6c611297353f82e4ec90365cbe33db763d9c9838
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d542af4a87b6f0a33c0344d1d3da76980f8c1a91
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367531"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752373"
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl Sınıfı
 
@@ -133,7 +133,7 @@ Aşağıdaki örnek, sınıfta iki yöntemin `CMFCEditBrowseCtrl` nasıl `Enable
 
 Geçerli edit gözatma denetiminde gözatma düğmesini görüntüler veya görüntülemez.
 
-```
+```cpp
 void EnableBrowseButton(
     BOOL bEnable=TRUE,
     LPCTSTR szLabel=_T("..."));
@@ -157,7 +157,7 @@ Gözatma düğmesinde görüntülenen etiket. Varsayılan değer " **...**".
 
 Geçerli edit gözatma denetiminde gözatma düğmesini görüntüler ve denetimi *dosyaya göz atma* moduna sokar.
 
-```
+```cpp
 void EnableFileBrowseButton(
     LPCTSTR lpszDefExt=NULL,
     LPCTSTR lpszFilter=NULL,
@@ -185,7 +185,7 @@ Kullanılabilir bayrakların tam listesi için [OPENFILENAME yapısına](/window
 
 Geçerli edit gözatma denetiminde gözatma düğmesini görüntüler ve denetimi *klasöre göz atma* moduna sokar.
 
-```
+```cpp
 void EnableFolderBrowseButton();
 ```
 
@@ -288,7 +288,7 @@ Gözatma düğmesinin görünümünü özelleştirmek için türetilmiş bir sı
 
 Edit gözat denetiminin gözat düğmesine özel bir resim ayarlar.
 
-```
+```cpp
 void SetBrowseButtonImage(
     HICON hIcon,
     BOOL bAutoDestroy= TRUE);

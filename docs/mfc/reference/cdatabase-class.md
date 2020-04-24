@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CDatabase [MFC], SetQueryTimeout
 - CDatabase [MFC], m_hdbc
 ms.assetid: bd0de70a-e3c3-4441-bcaa-bbf434426ca8
-ms.openlocfilehash: 260a4a38fcee8994d804267709c11279266d393c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bc920307e09179dc214710a3b6b19ff27a82749d
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376475"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754634"
 ---
 # <a name="cdatabase-class"></a>CDatabase Sınıfı
 
@@ -186,7 +186,7 @@ Geçersiz kılmanızda, `SQLBindParameters` parametreleri bağlamak için çağr
 
 Veri kaynağının devam eden bir eşzamanlı işlemi veya ikinci bir iş parçacığından bir işlemi iptal etmesini istemek için bu üye işlevi arayın.
 
-```
+```cpp
 void Cancel();
 ```
 
@@ -294,7 +294,7 @@ Bir hareketi `CommitTrans` sona erdirmek için arayana kadar, işlemi iptal etme
 
 Doğrudan bir SQL komutu yürütmeniz gerektiğinde bu üye işlevi arayın.
 
-```
+```cpp
 void ExecuteSQL(LPCTSTR lpszSQL);
 ```
 
@@ -606,7 +606,7 @@ Geri alma dan sonra, geri alma önce geçerli olan kayıt geçerli kalır. Kayı
 
 Bir veri kaynağı bağlantısı `OpenEx` denemesi `Open` nden önce izin verilen varsayılan saniye sayısını geçersiz kılmak için aramadan önce veya bu üye işlevini arayın.
 
-```
+```cpp
 void SetLoginTimeout(DWORD dwSeconds);
 ```
 
@@ -625,7 +625,7 @@ Giriş zaman ları için varsayılan değer 15 saniyedir. Tüm veri kaynakları 
 
 Bağlı veri kaynağı zaman aşması üzerinde sonraki işlemlerden önce izin vermek için varsayılan saniye sayısını geçersiz kılmak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetQueryTimeout(DWORD dwSeconds);
 ```
 

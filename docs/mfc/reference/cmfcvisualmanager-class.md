@@ -344,12 +344,12 @@ helpviewer_keywords:
 - CMFCVisualManager [MFC], SetMenuShadowDepth
 - CMFCVisualManager [MFC], SetShadowHighlightedImage
 ms.assetid: beed80f7-36a2-4d64-9f09-e807cfefc3fe
-ms.openlocfilehash: 3ae37f1e7222b996e62490365869782bbf458ee9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: df232fb8ad66dd259a69c4add82f6bcc9b34eeaf
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319998"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752840"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager Sınıfı
 
@@ -661,7 +661,7 @@ static void __stdcall DestroyInstance(BOOL bAutoDestroyOnly = FALSE);
 
 ## <a name="cmfcvisualmanagerdodrawheadersortarrow"></a><a name="dodrawheadersortarrow"></a>CMFCVisualManager::DoDrawHeaderSortArrow
 
-```
+```cpp
 void DoDrawHeaderSortArrow(
     CDC* pDC,
     CRect rect,
@@ -765,7 +765,7 @@ virtual BOOL DrawTextOnGlass(
 
 ## <a name="cmfcvisualmanagerenabletoolbarbuttonfill"></a><a name="enabletoolbarbuttonfill"></a>CMFCVisualManager::EnableToolbarButtonFill
 
-```
+```cpp
 void EnableToolbarButtonFill(BOOL bEnable = TRUE);
 ```
 
@@ -5011,7 +5011,7 @@ Uygulamanızın kullandığı görsel yöneticiyi değiştirmek için bu yöntem
 
 Devre dışı bırakılmış araç çubuğu görüntüleri için kabartma lı modu etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void SetEmbossDisabledImage (BOOL bEmboss = TRUE);
 ```
 
@@ -5028,7 +5028,7 @@ Kabartma modunun etkin olup olmadığını belirlemek için [CMFCVisualManager::
 
 Menüveya araç çubuğundaki etkin olmayan görüntülerin Aydınlatma efektini etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void SetFadeInactiveImage(BOOL bFade = TRUE);
 ```
 
@@ -5045,7 +5045,7 @@ Bu özellik, etkin olmayan görüntülerin menüde veya araç çubuğunda soluk 
 
 Menü düğmelerinin düz görünüp görünmediğini gösteren bir bayrak ayarlar. Aksi takdirde, üç boyutlu görünürler.
 
-```
+```cpp
 void SetMenuFlatLook(BOOL bMenuFlatLook = TRUE);
 ```
 
@@ -5062,7 +5062,7 @@ Varsayılan olarak, bu özellik etkinleştirilir.
 
 Menü gölgesinin genişliğini ve yüksekliğini ayarlar.
 
-```
+```cpp
 void SetMenuShadowDepth(int nDepth);
 ```
 
@@ -5079,7 +5079,7 @@ Menü gölgesinin yüksekliği ve genişliği aynı olmalıdır. Varsayılan de�
 
 [CMFCVisualManager'ın](../../mfc/reference/cmfcvisualmanager-class.md) vurgulanan görüntüler için gölgeler gösterip görüntülemediğini belirten bir bayrak ayarlar.
 
-```
+```cpp
 void SetShadowHighlightedImage(BOOL bShadow = TRUE);
 ```
 

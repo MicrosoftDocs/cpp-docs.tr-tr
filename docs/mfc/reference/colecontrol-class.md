@@ -334,12 +334,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: 8e931b03dc09926d44fa5cb4125dd2ffa41c5813
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 54138955b0aa61a5e307c64825f3c74fa6f592b1
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366189"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753942"
 ---
 # <a name="colecontrol-class"></a>COleControl Sınıfı
 
@@ -781,7 +781,7 @@ Kapsayıcı kullanıcı modundaysa sıfırsız; aksi takdirde 0 (tasarım modund
 
 Bağlı özellik değerinin değiştiğini gösteren sinyaller.
 
-```
+```cpp
 void BoundPropertyChanged(DISPID dispid);
 ```
 
@@ -878,7 +878,7 @@ Bu işlev normalde doğrudan çağrılmaz. Bunun yerine OLE denetimi genellikle 
 
 Denetim tarafından desteklenen mnemonics kümesi değiştiğinde bu işlevi arayın.
 
-```
+```cpp
 void ControlInfoChanged();
 ```
 
@@ -926,7 +926,7 @@ Hataların nasıl görüntüleneceğini özelleştirmek için bu işlevi geçers
 
 Denetimde fare tıklama eylemini simüle eder.
 
-```
+```cpp
 void DoClick();
 ```
 
@@ -959,7 +959,7 @@ Denetim Sihirbazı OLE denetim projesini oluşturmak için kullanılmışsa, bu 
 
 Windows denetiminden alt sınıflanmış bir OLE denetimini yeniden çizer.
 
-```
+```cpp
 void DoSuperclassPaint(
     CDC* pDC,
     const CRect& rcBounds);
@@ -983,7 +983,7 @@ Bu işlev ve Windows denetimialt sınıflandırma hakkında daha fazla bilgi iç
 
 Denetimin görünümünün güncellenmesi gerektiğinde çerçeve tarafından çağrılır.
 
-```
+```cpp
 void DrawContent(
     CDC* pDC,
     CRect& rc);
@@ -1005,7 +1005,7 @@ Bu işlev doğrudan geçersiz `OnDraw` işlevi çağırır.
 
 Metadosya aygıt bağlamı kullanılırken çerçeve tarafından çağrılır.
 
-```
+```cpp
 void DrawMetafile(
     CDC* pDC,
     CRect& rc);
@@ -1023,7 +1023,7 @@ Dikdörtgen alan çizilecek.
 
 OLE denetimi için basit çerçeve özelliğini sağlar.
 
-```
+```cpp
 void EnableSimpleFrame();
 ```
 
@@ -1056,7 +1056,7 @@ Bu işlev normalde varsayılan uygulaması tarafından `COleControl::DoPropExcha
 
 Denetimin stok özelliklerinin durumunu seri hale sağlar veya başolarak karşılar.
 
-```
+```cpp
 void ExchangeStockProps(CPropExchange* pPX);
 ```
 
@@ -1105,7 +1105,7 @@ Kalıcılık ve sürüm hakkında daha fazla bilgi için [ActiveX Denetimleri: S
 
 Fare etkin bir denetim üzerinde tıklatıldığında çerçeve tarafından çağrılır.
 
-```
+```cpp
 void FireClick();
 ```
 
@@ -1119,7 +1119,7 @@ Bir Click olayının otomatik olarak ateşlemesi için, denetimin Olay haritası
 
 Fare etkin bir denetim üzerinde çift tıklatıldığında çerçeve tarafından çağrılır.
 
-```
+```cpp
 void FireDblClick();
 ```
 
@@ -1133,7 +1133,7 @@ Bir DblClick olayının otomatik olarak ateşlemesi için, denetimin Olay harita
 
 Stok Hatası olayını yangınlar.
 
-```
+```cpp
 void FireError(
     SCODE scode,
     LPCTSTR lpszDescription,
@@ -1165,7 +1165,7 @@ Bunu düzeltmek için, denetimin scode parametresini el ile değiştirin. ODL do
 
 Herhangi bir sayıda isteğe bağlı bağımsız değişkenle denetiminizden kullanıcı tanımlı bir olay çıkar.
 
-```
+```cpp
 void AFX_CDECL FireEvent(
     DISPID dispid,
     BYTE* pbParams,
@@ -1210,7 +1210,7 @@ Genellikle bu işlev doğrudan çağrılmamalıdır. Bunun yerine, denetiminizin
 
 Denetim UI etkin iken bir tuşa basıldığında çerçeve tarafından çağrılır.
 
-```
+```cpp
 void FireKeyDown(
     USHORT* pnChar,
     short nShiftState);
@@ -1240,7 +1240,7 @@ Bir KeyDown olayının otomatik olarak ateşlemesi için, denetimin Olay haritas
 
 Özel denetim kapsayıcı içinde UI Active iken bir tuşa basıldığında ve serbest bırakıldığında çerçeve tarafından çağrılır.
 
-```
+```cpp
 void FireKeyPress(USHORT* pnChar);
 ```
 
@@ -1261,7 +1261,7 @@ Bir KeyPress olayının otomatik olarak ateşlemesi için, denetimin Olay harita
 
 Özel denetim kapsayıcı içinde UI Active iken bir anahtar serbest bırakıldığında çerçeve tarafından çağrılır.
 
-```
+```cpp
 void FireKeyUp(
     USHORT* pnChar,
     short nShiftState);
@@ -1291,7 +1291,7 @@ Bir KeyUp olayının otomatik olarak ateşlemesi için, denetimin Olay haritası
 
 Fare düğmesine etkin bir özel denetim üzerine basıldığında çerçeve tarafından çağrılır.
 
-```
+```cpp
 void FireMouseDown(
     short nButton,
     short nShiftState,
@@ -1335,7 +1335,7 @@ Bir MouseDown olayının otomatik olarak ateşlemesi için, denetimin Olay harit
 
 İmleç etkin bir özel denetim üzerinde taşındığında çerçeve tarafından çağrılır.
 
-```
+```cpp
 void FireMouseMove(
     short nButton,
     short nShiftState,
@@ -1379,7 +1379,7 @@ Bir MouseMove olayının otomatik olarak ateşlemesi için, denetimin Olay harit
 
 Bir fare düğmesi etkin bir özel denetim üzerinden serbest bırakıldığında çerçeve tarafından çağrılır.
 
-```
+```cpp
 void FireMouseUp(
     short nButton,
     short nShiftState,
@@ -1423,7 +1423,7 @@ Bir MouseUp olayının otomatik olarak ateşlemesi için, denetimin Olay haritas
 
 Hazır denetim durumunun geçerli değeriyle bir olayı yangın.
 
-```
+```cpp
 void FireReadyStateChange();
 ```
 
@@ -1696,7 +1696,7 @@ OLE denetimleri ve diğer optimizasyonları hakkında `GetControlFlags` daha faz
 
 OLE denetim penceresinin boyutunu alır.
 
-```
+```cpp
 void GetControlSize(
     int* pcx,
     int* pcy);
@@ -1814,7 +1814,7 @@ Arayan kişi bittiğinde nesneyi serbest bırakması gerektiğini unutmayın. De
 
 Denetime ait herhangi `CFontHolder` bir nesne için metin ölçümlerini ölçer.
 
-```
+```cpp
 void GetFontTextMetrics(
     LPTEXTMETRIC lptm,
     CFontHolder& fontHolder);
@@ -1884,7 +1884,7 @@ Bu, menü öğesi vurgulanırken durum çubuğunda görüntülenmek üzere bir i
 
 Bir denetimin özellik değerine kullanıcı tarafından erişmesini engeller.
 
-```
+```cpp
 void GetNotSupported();
 ```
 
@@ -1941,7 +1941,7 @@ Dikdörtgen yalnızca denetim yerinde etkinse geçerlidir.
 
 [SelectStockFont](#selectstockfont) işlevi ile seçilebilen denetimin stok Font özelliği için metin ölçümlerini ölçer.
 
-```
+```cpp
 void GetStockTextMetrics(LPTEXTMETRIC lptm);
 ```
 
@@ -1997,7 +1997,7 @@ Normalde, bu denetim penceresi bir bırakma hedefi olarak kaydedilmesi gerekir. 
 
 Denetimin kullanacağı IID'lerin taban sınıfını bilgilendirir.
 
-```
+```cpp
 void InitializeIIDs(
     const IID* piidPrimary,
     const IID* piidEvents);
@@ -2043,7 +2043,7 @@ Denetim metin dizesi için bir başvuru.
 
 Denetimin hazır durumunu ayarlar.
 
-```
+```cpp
 void InternalSetReadyState(long lNewReadyState);
 ```
 
@@ -2068,7 +2068,7 @@ En basit kontrollerin LOADED ve INTERACTIVE arasında ayrım yapmanız gerekmez.
 
 Kontrolü kendini yeniden çizmeye zorlar.
 
-```
+```cpp
 void InvalidateControl(
     LPCRECT lpRect = NULL,
     BOOL bErase = TRUE);
@@ -2090,7 +2090,7 @@ Güncelleştirme bölgesi işlendiğinde güncelleştirme bölgesindeki arka pla
 
 Kapsayıcı penceresinin verilen bölge içindeki istemci alanını geçersiz kınır.
 
-```
+```cpp
 void InvalidateRgn(CRgn* pRgn, BOOL bErase = TRUE);
 ```
 
@@ -2202,7 +2202,7 @@ OLE denetimialt sınıfları bir Windows denetimi varsa, bu işlevi geçersiz k�
 
 Önceki verileri eşzamanlı olarak sıfırlar ve denetimin eşzamanlı özelliğinin yeni bir yüklemesini başlatır.
 
-```
+```cpp
 void Load(LPCTSTR strNewPath, CDataPathProperty& prop);
 ```
 
@@ -2811,7 +2811,7 @@ Bir nesnenin hangi biçiminin veya yönünün görüntüleneceğini açıklayan 
 - tüm saydam veya düzensiz parçaları kaplayan DVASPECT_TRANSPARENT Dikdörtgen.
 
 *pRect*<br/>
-Nesnenin çizilmesi gereken dikdörtgeni belirten [RECTL](/previous-versions/dd162907\(v=vs.85\)) yapısına işaret edin. Bu parametre nesnenin konumlandırılmasını ve gerilmesini denetler.
+Nesnenin çizilmesi gereken dikdörtgeni belirten [RECTL](/windows/win32/api/windef/ns-windef-rectl) yapısına işaret edin. Bu parametre nesnenin konumlandırılmasını ve gerilmesini denetler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3513,7 +3513,7 @@ Girişte *pPoint* üst kökenine göredir (kapsayıcının sol üst köşesi). �
 
 Kapsayıcıya modal iletişim kutusunun kapatıldığını haber vetir.
 
-```
+```cpp
 void PostModalDialog(HWND hWndParent = NULL);
 ```
 
@@ -3530,7 +3530,7 @@ Herhangi bir modal iletişim kutusunu görüntüledikten sonra bu işlevi arayı
 
 Kapsayıcıya modal iletişim kutusunun görüntülenmek üzere olduğunu haber vetir.
 
-```
+```cpp
 void PreModalDialog(HWND hWndParent = NULL);
 ```
 
@@ -3547,7 +3547,7 @@ Herhangi bir modal iletişim kutusunu görüntülemeden önce bu işlevi arayın
 
 Denetim penceresini yok eder ve yeniden oluşturur.
 
-```
+```cpp
 void RecreateControlWindow();
 ```
 
@@ -3559,7 +3559,7 @@ Pencerenin stil bitlerini değiştirmeniz gerekiyorsa, bu gerekli olabilir.
 
 OLE kontrolünün yeniden boyandırı.
 
-```
+```cpp
 void Refresh();
 ```
 
@@ -3630,7 +3630,7 @@ Denetim penceresinin üst öğesini sıfırlamak için bu işlevi arayın.
 
 Stok özelliklerinin `COleControl` durumunu varsayılan değerlerine başolarak verir.
 
-```
+```cpp
 void ResetStockProps();
 ```
 
@@ -3648,7 +3648,7 @@ Bir denetimin ikili başlatma performansını kullanarak `ResetStockProps` ve `R
 
 Sürüm numarasını belirtilen değere başlar.
 
-```
+```cpp
 void ResetVersion(DWORD dwVersionDefault);
 ```
 
@@ -3665,7 +3665,7 @@ Bir denetimin ikili başlatma performansını kullanarak `ResetVersion` ve `Rese
 
 Penceresiz bir OLE nesnesinin ekrandaki yerinde etkin görüntüsü içindeki bir alanı kaydırmasına izin verir.
 
-```
+```cpp
 void ScrollWindow(
     int xAmount,
     int yAmount,
@@ -3730,7 +3730,7 @@ Yazı tipinin seçileceği aygıt bağlamı.
 
 Denetime ayrılan görüntü alanının durumunu seri hale alır veya başolarak karşılar.
 
-```
+```cpp
 void SerializeExtent(CArchive& ar);
 ```
 
@@ -3751,7 +3751,7 @@ Bir denetimin ikili kalıcılık performansını kullanarak `SerializeExtent` `S
 
 `COleControl` Stok özelliklerinin durumunu seri hale getirtir veya başharfe atar: Görünüm, BackColor, BorderStyle, Caption, Enabled, Font, ForeColor ve Text.
 
-```
+```cpp
 void SerializeStockProps(CArchive& ar);
 ```
 
@@ -3800,7 +3800,7 @@ Bir denetimin ikili kalıcılık performansını kullanarak `SerializeVersion` `
 
 Denetiminizin hisse senedi Görünümü özellik değerini ayarlar.
 
-```
+```cpp
 void SetAppearance (short sAppearance);
 ```
 
@@ -3817,7 +3817,7 @@ Stok özellikleri hakkında daha fazla bilgi için [ActiveX Denetimleri: Özelli
 
 Denetiminizin stok BackColor özellik değerini ayarlar.
 
-```
+```cpp
 void SetBackColor(OLE_COLOR dwBackColor);
 ```
 
@@ -3834,7 +3834,7 @@ Bu özelliği ve diğer ilgili özellikleri kullanma hakkında daha fazla bilgi 
 
 Denetiminizin stok BorderStyle özellik değerini ayarlar.
 
-```
+```cpp
 void SetBorderStyle(short sBorderStyle);
 ```
 
@@ -3893,7 +3893,7 @@ Denetim pencereleri için tüm koordinatların denetimin sol üst köşesine gö
 
 Denetiminizin stok Etkin özellik değerini ayarlar.
 
-```
+```cpp
 void SetEnabled(BOOL bEnabled);
 ```
 
@@ -3928,7 +3928,7 @@ Denetim penceresiz değilse, bu işlev denetimin kendisinin giriş odağına sah
 
 Denetiminizin stok Font özelliğini ayarlar.
 
-```
+```cpp
 void SetFont(LPFONTDISP pFontDisp);
 ```
 
@@ -3941,7 +3941,7 @@ Font gönderme arabirimi için bir işaretçi.
 
 Kontrolünüzün stok ForeColor özellik değerini ayarlar.
 
-```
+```cpp
 void SetForeColor(OLE_COLOR dwForeColor);
 ```
 
@@ -3970,7 +3970,7 @@ Varsayılan uygulama iki biçim belirtir: CF_METAFILEPICT ve kalıcı özellik k
 
 Bir kapta ilk görüntülendiğinde OLE denetiminin boyutunu ayarlar.
 
-```
+```cpp
 void SetInitialSize(
     int cx,
     int cy);
@@ -3992,7 +3992,7 @@ Denetiminizin ilk boyutunu ayarlamak için oluşturucunuzda bu işlevi çağır�
 
 Denetimin değiştirilmiş durumunu değiştirir.
 
-```
+```cpp
 void SetModifiedFlag(BOOL bModified = TRUE);
 ```
 
@@ -4009,7 +4009,7 @@ Denetiminizin kalıcı durumunu etkileyecek bir değişiklik olduğunda bu işle
 
 Bir edit isteğinin başarısız olduğunu gösterir.
 
-```
+```cpp
 void SetNotPermitted();
 ```
 
@@ -4021,7 +4021,7 @@ Başarısız olduğunda `BoundPropertyRequestEdit` bu işlevi arayın. Bu işlev
 
 Bir denetimin özellik değerinde kullanıcı tarafından değiştirilmesini önler.
 
-```
+```cpp
 void SetNotSupported();
 ```
 
@@ -4054,7 +4054,7 @@ Denetim açıksa, yeniden boyutlandırılır; aksi takdirde kapsayıcının `OnP
 
 Denetiminizin hisse senedi Resim Yazısı veya Metin özelliğinin değerini ayarlar.
 
-```
+```cpp
 void SetText(LPCTSTR pszText);
 ```
 
@@ -4071,7 +4071,7 @@ Stok Başlığı ve Metin özelliklerinin her ikisinin de aynı değerde eşlend
 
 Denetiminizde bir hata nın meydana gelişini bildirir.
 
-```
+```cpp
 void ThrowError(
     SCODE sc,
     UINT nDescriptionID,
@@ -4105,7 +4105,7 @@ Bu işlev yalnızca bir OLE özelliği için Get veya Set işlevi veya bir OLE o
 
 HIMETRIC birimleri ile kabın yerel birimleri arasındaki koordinat değerlerini dönüştürür.
 
-```
+```cpp
 void TransformCoords(
     POINTL* lpptlHimetric,
     POINTF* lpptfContainer,

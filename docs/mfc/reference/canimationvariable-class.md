@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CAnimationVariable [MFC], m_pParentObject
 - CAnimationVariable [MFC], m_variable
 ms.assetid: 506e697e-31a8-4033-a27e-292f4d7b42d9
-ms.openlocfilehash: 51cc4732ee8ad5f954e5bd758484cec74cf00fe6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b53a1338566a329fbdf5b91c41d0411a529afe8d
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377047"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81755064"
 ---
 # <a name="canimationvariable-class"></a>CAnimationVariable Sınıfı
 
@@ -132,7 +132,7 @@ virtual ~CAnimationVariable();
 
 Bir geçiş ekler.
 
-```
+```cpp
 void AddTransition(CBaseTransition* pTransition);
 ```
 
@@ -149,7 +149,7 @@ Bu yöntem, animasyon değişkenine uygulanacak iç geçişler listesine bir ge�
 
 Dahili listeden film şeridine geçişler ekler.
 
-```
+```cpp
 void ApplyTransitions(
     CAnimationController* pController,
     IUIAnimationStoryboard* pStoryboard,
@@ -192,7 +192,7 @@ Animasyon değişken nesnesi oluşturuyor ve varsayılan değerini ayarlar. Vars
 
 Geçişleri temizler.
 
-```
+```cpp
 void ClearTransitions(BOOL bAutodestroy);
 ```
 
@@ -253,7 +253,7 @@ Bu yöntem, değişkenin iç geçişler listesine eklenen geçişler oluşturmas
 
 IntegerValueChanged olayını etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableIntegerValueChangedEvent (
     CAnimationController* pController,
     BOOL bEnable);
@@ -275,7 +275,7 @@ ValueChanged olayı etkinleştirildiğinde, çerçeve sanal yöntem cAnimationCo
 
 ValueChanged olayını etkinleştirer veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableValueChangedEvent (
     CAnimationController* pController,
     BOOL bEnable);
@@ -414,7 +414,7 @@ ATL::CComPtr<IUIAnimationVariable> m_variable;
 
 Varsayılan değeri ayarlar ve IUIAnimationVariable COM nesnesi salgılar.
 
-```
+```cpp
 void SetDefaultValue(DOUBLE dblDefaultValue);
 ```
 
@@ -431,7 +431,7 @@ Varsayılan değeri sıfırlamak için bu yöntemi kullanın. Bu yöntem iç IUI
 
 Animasyon değişkeni ile animasyon nesnesi arasındaki ilişkiyi ayarlar.
 
-```
+```cpp
 void SetParentAnimationObject(CAnimationBaseObject* pParentObject);
 ```
 

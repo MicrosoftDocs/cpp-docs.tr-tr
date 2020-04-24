@@ -15,16 +15,16 @@ f1_keywords:
 helpviewer_keywords:
 - Map Class (C++/Cx)
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-ms.openlocfilehash: 7f41a924811be95160b06a2097db6103cde8fc11
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ff27f6c543a2326dd4318f66aae51b89092b28e2
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81354442"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82032453"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections::Map Sınıfı
 
-Anahtar değeri çiftleri topluluğu olan bir *haritayı*temsil eder. Windows [uygular::Foundation::Collections::IObservableMap](/uwp/api/windows.foundation.collections.iobservablemap_k_v_) XAML [veri bağlama](/windows/uwp/data-binding/data-binding-in-depth)ile yardımcı olmak için .
+Anahtar değeri çiftleri topluluğu olan bir *haritayı*temsil eder. Windows [uygular::Foundation::Collections::IObservableMap](/uwp/api/windows.foundation.collections.iobservablemap-2) XAML [veri bağlama](/windows/uwp/data-binding/data-binding-in-depth)ile yardımcı olmak için .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,7 +63,7 @@ Haritadaki göreli sıralarını belirlemek için iki öğe değerini sıralama 
 
 - public enum sınıfı
 
-Harita temelde std için bir [sarmalayıcı::harita](../standard-library/map-class.md). [Windows::Foundation::Collections::IMap<Windows::Foundation::Collections::IKeyValuePair\<K,V>>](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) ve [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) türlerinin genel Windows Runtime arabirimleri arasında geçirilen bir C++ somut uygulamasıdır. Ortak iade değeri `Platform::Collections::Map` veya parametrebir tür kullanmaya çalışırsanız, derleyici hatası C3986 yükseltilir. Parametre nin türünü veya döndürme değerini Windows olarak değiştirerek hatayı [düzeltebilirsiniz::Temel::Koleksiyonlar::IMap\<K,V>. ](/uwp/api/Windows.Foundation.Collections.IMap_K_V_)
+Harita temelde std için bir [sarmalayıcı::harita](../standard-library/map-class.md). [Windows::Foundation::Collections::IMap<Windows::Foundation::Collections::IKeyValuePair\<K,V>>](/uwp/api/windows.foundation.collections.imap-2) ve [IObservableMap](/uwp/api/windows.foundation.collections.iobservablemap-2) türlerinin genel Windows Runtime arabirimleri arasında geçirilen bir C++ somut uygulamasıdır. Ortak iade değeri `Platform::Collections::Map` veya parametrebir tür kullanmaya çalışırsanız, derleyici hatası C3986 yükseltilir. Parametre nin türünü veya döndürme değerini Windows olarak değiştirerek hatayı [düzeltebilirsiniz::Temel::Koleksiyonlar::IMap\<K,V>. ](/uwp/api/windows.foundation.collections.imap-2)
 
 Daha fazla bilgi için [Koleksiyonlar'a](../cppcx/collections-c-cx.md)bakın.
 
@@ -136,7 +136,7 @@ First() tarafından döndürülen yineleyiciyi tutmanın kullanışlı bir yolu,
 
 ## <a name="mapgetview-method"></a><a name="getview"></a>Harita::GetView Yöntemi
 
-Geçerli Haritanın salt okunur görünümünü döndürür; yani, bir [Platform::Koleksiyonlar::MapView Sınıfı,](../cppcx/platform-collections-mapview-class.md)[Windows::Foundation::Collections::IMapView\<K,V>]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) arabirimini uygular.
+Geçerli Haritanın salt okunur görünümünü döndürür; yani, bir [Platform::Koleksiyonlar::MapView Sınıfı](../cppcx/platform-collections-mapview-class.md), [Windows uygular::Hazırlık::Koleksiyonlar::IMapView\<K,V>](/uwp/api/windows.foundation.collections.imapview-2) arayüzü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -182,7 +182,7 @@ virtual bool Insert(K key, V value);
 *anahtar*<br/>
 Anahtar değeri çiftinin anahtar kısmı. *Anahtar* türü *k*türüdür.
 
-*Değer*<br/>
+*value*<br/>
 Anahtar değeri çiftinin değer kısmı. *Değer* *türü, V*türüdür.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -258,7 +258,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
 
-[Bir MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler) olayı yükselten nesne ve meydana gelen değişiklik türü hakkında bilgi içerir. Ayrıca bakınız [IMapChangedEventArgs\<K>](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) ve [CollectionChange Numaralandırma](/uwp/api/windows.foundation.collections.collectionchange).
+[Bir MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler-2) olayı yükselten nesne ve meydana gelen değişiklik türü hakkında bilgi içerir. Ayrıca bakınız [IMapChangedEventArgs\<K>](/uwp/api/windows.foundation.collections.imapchangedeventargs-1) ve [CollectionChange Numaralandırma](/uwp/api/windows.foundation.collections.collectionchange).
 
 ## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri
 
@@ -281,7 +281,7 @@ Anahtar değeri çiftinin anahtar kısmı. *Anahtar* türü *k*türüdür.
 
 ## <a name="mapsize-method"></a><a name="size"></a>Harita::Boyut Yöntemi
 
-Windows sayısını [döndürür::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) öğelerini Haritada gösterir.
+Windows sayısını [döndürür::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) öğelerini Haritada gösterir.
 
 ### <a name="syntax"></a>Sözdizimi
 

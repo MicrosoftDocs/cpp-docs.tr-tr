@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CScrollView [MFC], SetScaleToFitSize
 - CScrollView [MFC], SetScrollSizes
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
-ms.openlocfilehash: c22f438623ca1d1c9022ea7c3efc50e0826ad302
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5d0eb163fae2aa5fc63470e1c499311ab1a402a6
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318495"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754413"
 ---
 # <a name="cscrollview-class"></a>CScrollView Sınıfı
 
@@ -124,7 +124,7 @@ Kullanma `CScrollView`hakkında daha fazla bilgi için Bkz. [Belge/Görünüm Mi
 
 Kaydırma görünümünün yatay ve dikey çubuklara sahip olup olmadığını belirlemek için bu üye işlevi arayın.
 
-```
+```cpp
 void CheckScrollBars(
     BOOL& bHasHorzBar,
     BOOL& bHasVertBar) const;
@@ -154,7 +154,7 @@ Kaydırma görünümü `SetScrollSizes` kullanılabilir `SetScaleToFitSize` hale
 
 Kaydırma `FillOutsideRect` alanının dışında görünen görünümün alanını doldurmak için arayın.
 
-```
+```cpp
 void FillOutsideRect(
     CDC* pDC,
     CBrush* pBrush);
@@ -198,7 +198,7 @@ Bu koordinat çifti, görünümün sol üst köşesinin kaydırıldığı belged
 
 `GetDeviceScrollSizes`geçerli eşleme modunu, toplam boyutu ve kaydırılabilir görünümün satır ve sayfa boyutlarını alır.
 
-```
+```cpp
 void GetDeviceScrollSizes(
     int& nMapMode,
     SIZE& sizeTotal,
@@ -258,7 +258,7 @@ Mantıksal birimlerde kaydırma görünümünün toplam boyutu. Yatay boyut, iad
 
 Görünümünüzün boyutunun çerçeve penceresinin boyutunu belirlemesine izin vermek için arayın. `ResizeParentToFit`
 
-```
+```cpp
 void ResizeParentToFit(BOOL bShrinkOnly = TRUE);
 ```
 
@@ -279,7 +279,7 @@ Bu yalnızca MDI alt çerçeve pencerelerinde görünümler için önerilir. `Re
 
 Görünümde belirli bir noktaya kaydırmak için arayın. `ScrollToPosition`
 
-```
+```cpp
 void ScrollToPosition(POINT pt);
 ```
 
@@ -296,7 +296,7 @@ Görünüm, bu nokta pencerenin sol üst köşesinde olacak şekilde kaydırıl�
 
 Görünüm `SetScaleToFitSize` portu boyutunu geçerli pencere boyutuna otomatik olarak ölçeklendirmek istediğinizde arayın.
 
-```
+```cpp
 void SetScaleToFitSize(SIZE sizeTotal);
 ```
 
@@ -321,7 +321,7 @@ Aramayı `SetScaleToFitSize` genellikle görünümün `OnInitialUpdate` üye iş
 
 Görünümün güncellenmek üzere olduğu zaman arayın. `SetScrollSizes`
 
-```
+```cpp
 void SetScrollSizes(
     int nMapMode,
     SIZE sizeTotal,

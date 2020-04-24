@@ -116,12 +116,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-ms.openlocfilehash: 57ea8f3a1dbbce4fcfa350bd99e4ee628e9675c8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e2e4306320c52b8276d915848dfa6e460982c92b
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375681"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753378"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog Sınıfı
 
@@ -348,7 +348,7 @@ Kendi denetim sitesi sınıfınızın bir örneğini döndürmek için bu üye i
 
 Bir üye değişkeni ile HTML sayfasındaki ActiveX denetiminin özellik değeri arasında veri alışverişi.
 
-```
+```cpp
 void DDX_DHtml_AxControl(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -387,7 +387,7 @@ ActiveX denetim özelliği ile değiştirilen değeri tutan tür VARIANT, [COleV
 
 Html sayfasındaki bir üye değişkeni ile onay kutusu arasında veri alışverişi.
 
-```
+```cpp
 void DDX_DHtml_CheckBox(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -402,7 +402,7 @@ void DDX_DHtml_CheckBox(
 *szId*<br/>
 HTML denetiminin kimlik parametresi için belirttiğiniz değer.
 
-*Değer*<br/>
+*value*<br/>
 Değiştirilen değer.
 
 ### <a name="example"></a>Örnek
@@ -413,7 +413,7 @@ Değiştirilen değer.
 
 Bir ÜYE değişkeni ile HTML sayfasındaki herhangi bir HTML öğesi arasında veri alışverişi.
 
-```
+```cpp
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -468,14 +468,14 @@ HTML denetiminin kimlik parametresi için belirttiğiniz değer.
 *Dıspıd*<br/>
 Veri alışverişi yapmak istediğiniz HTML öğesinin sevk kimliği.
 
-*Değer*<br/>
+*value*<br/>
 Değiştirilen değer.
 
 ## <a name="cdhtmldialogddx_dhtml_radio"></a><a name="ddx_dhtml_radio"></a>CDHtmlDialog::DDX_DHtml_Radio
 
 Html sayfasındaki bir üye değişkeni ile radyo düğmesi arasında veri alışverişi.
 
-```
+```cpp
 void DDX_DHtml_Radio(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -490,14 +490,14 @@ void DDX_DHtml_Radio(
 *szId*<br/>
 HTML denetiminin kimlik parametresi için belirttiğiniz değer.
 
-*Değer*<br/>
+*value*<br/>
 Değiştirilen değer.
 
 ## <a name="cdhtmldialogddx_dhtml_selectindex"></a><a name="ddx_dhtml_selectindex"></a>CDHtmlDialog::DDX_DHtml_SelectIndex
 
 HTML sayfasındaki liste kutusunun dizinini alır veya ayarlar.
 
-```
+```cpp
 void DDX_DHtml_SelectIndex(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -512,14 +512,14 @@ void DDX_DHtml_SelectIndex(
 *szId*<br/>
 HTML denetiminin `id` parametresi için belirttiğiniz değer.
 
-*Değer*<br/>
+*value*<br/>
 Değiştirilen değer.
 
 ## <a name="cdhtmldialogddx_dhtml_selectstring"></a><a name="ddx_dhtml_selectstring"></a>CDHtmlDialog::DDX_DHtml_SelectString
 
 Bir HTML sayfasındabir liste kutusu girişinin ekran metnini alır veya ayarlar (geçerli dizine göre).
 
-```
+```cpp
 void DDX_DHtml_SelectString(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -534,14 +534,14 @@ void DDX_DHtml_SelectString(
 *szId*<br/>
 HTML denetiminin kimlik parametresi için belirttiğiniz değer.
 
-*Değer*<br/>
+*value*<br/>
 Değiştirilen değer.
 
 ## <a name="cdhtmldialogddx_dhtml_selectvalue"></a><a name="ddx_dhtml_selectvalue"></a>CDHtmlDialog::DDX_DHtml_SelectValue
 
 Bir HTML sayfasındaki liste kutusu girişinin (geçerli dizine göre) değerini alır veya ayarlar.
 
-```
+```cpp
 void DDX_DHtml_SelectValue(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -556,7 +556,7 @@ void DDX_DHtml_SelectValue(
 *szId*<br/>
 HTML denetiminin kimlik parametresi için belirttiğiniz değer.
 
-*Değer*<br/>
+*value*<br/>
 Değiştirilen değer.
 
 ### <a name="example"></a>Örnek
@@ -567,7 +567,7 @@ Değiştirilen değer.
 
 Modsuz bir iletişim kutusunu `CDHtmlDialog` nesneden ayırır ve nesneyi yok eder.
 
-```
+```cpp
 void DestroyModeless();
 ```
 
@@ -684,7 +684,7 @@ Aşırı yükler en az verimli en üstten en alttabakada en verimliye doğru lis
 
 Geçerli belgeyle ilişkili Tek düzen Kaynak Bulucu'yu (URL) alır.
 
-```
+```cpp
 void GetCurrentUrl(CString& szUrl);
 ```
 
@@ -1066,7 +1066,7 @@ LPTSTR m_szHtmlResID;
 
 *LPSZURL*tarafından belirtilen URL tarafından tanımlanan kaynağa yönlendirilir.
 
-```
+```cpp
 void Navigate(
     LPCTSTR lpszURL,
     DWORD dwFlags = 0,
@@ -1242,7 +1242,7 @@ E_NOTIMPL döndürür.
 
 ActiveX denetiminin özelliğini yeni bir değere ayarlar.
 
-```
+```cpp
 void SetControlProperty(
     LPCTSTR szElementId,
     DISPID dispId,
@@ -1280,7 +1280,7 @@ Ayarlanan özelliğin adını içeren dize.
 
 BIR `innerHTML` HTML öğesinin özelliğini ayarlar.
 
-```
+```cpp
 void SetElementHtml(
     LPCTSTR szElementId,
     BSTR bstrText);
@@ -1305,7 +1305,7 @@ Bir `IUnknown` HTML öğesinin işaretçisi.
 
 BIR HTML öğesinin özelliğini ayarlar.
 
-```
+```cpp
 void SetElementProperty(
     LPCTSTR szElementId,
     DISPID dispId,
@@ -1327,7 +1327,7 @@ Ayarlanan özelliğin sevk kimliği.
 
 BIR `innerText` HTML öğesinin özelliğini ayarlar.
 
-```
+```cpp
 void SetElementText(
     LPCTSTR szElementId,
     BSTR bstrText);
@@ -1352,7 +1352,7 @@ Bir `IUnknown` HTML öğesinin işaretçisi.
 
 Ana bilgisayar `IDispatch` arabirimini ayarlar.
 
-```
+```cpp
 void SetExternalDispatch(IDispatch* pdispExternal);
 ```
 
@@ -1365,7 +1365,7 @@ Yeni `IDispatch` arayüz.
 
 Ana bilgisayar ui bayraklarını ayarlar.
 
-```
+```cpp
 void SetHostFlags(DWORD dwFlags);
 ```
 

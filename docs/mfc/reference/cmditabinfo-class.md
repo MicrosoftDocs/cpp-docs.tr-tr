@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMDITabInfo [MFC], m_style
 - CMDITabInfo [MFC], m_tabLocation
 ms.assetid: 988ae1b7-4f7f-4239-b88f-7e28b3291c5e
-ms.openlocfilehash: 0d230d2a3401ab556adc1183f4c4210ec6ff3c29
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 30bf7726b35d762be2bbbd119e0303894879cd3d
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370028"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752655"
 ---
 # <a name="cmditabinfo-class"></a>CMDITabInfo Sınıfı
 
@@ -238,7 +238,7 @@ Sekmelere aşağıdaki konum bayraklarından birini uygulayın:
 
 Bu nesneyi bir arşivden veya arşivden okur veya yazar.
 
-```
+```cpp
 void Serialize(CArchive& ar);
 ```
 

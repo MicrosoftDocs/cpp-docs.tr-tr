@@ -52,12 +52,12 @@ helpviewer_keywords:
 - COleDocument [MFC], OnUpdatePasteLinkMenu
 - COleDocument [MFC], OnUpdatePasteMenu
 ms.assetid: dc2ecb99-03e1-44c7-bb69-48056dd1b672
-ms.openlocfilehash: 51169de521997890190aab52e4afd02ed383af3b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1500035cb8be3036678090918154829aace48d2f
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375031"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753867"
 ---
 # <a name="coledocument-class"></a>COleDocument Sınıfı
 
@@ -195,7 +195,7 @@ COleDocument();
 
 Bileşik dosya biçimini kullanarak belgeyi depolamak istiyorsanız bu işlevi arayın.
 
-```
+```cpp
 void EnableCompoundFile(BOOL bEnable = TRUE);
 ```
 

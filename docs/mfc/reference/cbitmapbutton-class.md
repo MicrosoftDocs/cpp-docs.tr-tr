@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CBitmapButton [MFC], LoadBitmaps
 - CBitmapButton [MFC], SizeToContent
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc
-ms.openlocfilehash: c052f913f68d1890a470ed8a6aae2882ed181863
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: df21591dec1da5861125d7e9480fb9345aaad061
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352711"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752955"
 ---
 # <a name="cbitmapbutton-class"></a>CBitmapButton Sınıfı
 
@@ -214,7 +214,7 @@ Sıfırsız eğer başarılı; aksi takdirde 0.
 
 Bitmap düğmesini bit eşlemi boyutuna yeniden boyutlandırmak için bu işlevi arayın.
 
-```
+```cpp
 void SizeToContent();
 ```
 

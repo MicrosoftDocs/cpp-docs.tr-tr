@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CCmdTarget [MFC], OnFinalRelease
 - CCmdTarget [MFC], RestoreWaitCursor
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
-ms.openlocfilehash: 5ee4101302322a5212a80b32f095cdd13d9769e0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1ef7040f3be1e4c30a6dc19e6093727299c9f1c3
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352287"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752718"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget Sınıfı
 
@@ -121,7 +121,7 @@ Komut hedeflerine ve `OnCmdMsg` yönlendirmeye genel bir bakış [Command Routin
 
 Bir komutun yürütülmesi için fark edilir bir zaman aralığı almasını beklerken imleci kum saati olarak görüntülemek için bu işlevi arayın.
 
-```
+```cpp
 void BeginWaitCursor();
 ```
 
@@ -169,7 +169,7 @@ Fiili çağıran olayı (çift tıklatma gibi) açıklayan [MSG](/windows/win32/
 Nesneyi içeren belge penceresinin tutamacı.
 
 *Lprect*<br/>
-Bir nesnenin *hwndParent'de*sınırlayıcı dikdörtgenini tanımlayan koordinatları içeren [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi.
+Bir nesnenin *hwndParent'de*sınırlayıcı dikdörtgenini tanımlayan koordinatları içeren [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -183,7 +183,7 @@ Bu üye işlev temelde [IOleObject bir uygulamadır::DoVerb](/windows/win32/api/
 
 Bir nesne için OLE otomasyonunu etkinleştirmek için bu işlevi arayın.
 
-```
+```cpp
 void EnableAutomation();
 ```
 
@@ -195,7 +195,7 @@ Bu işlev genellikle nesnenizin oluşturucusundan çağrılır ve yalnızca sın
 
 Bağlantı noktaları üzerinden olay ateşlemesağlar.
 
-```
+```cpp
 void EnableConnections();
 ```
 
@@ -207,7 +207,7 @@ Bağlantı noktalarını etkinleştirmek için, türemiş sınıfınızın oluş
 
 Bir nesnenin tür kitaplığını etkinleştirir.
 
-```
+```cpp
 void EnableTypeLib();
 ```
 
@@ -219,7 +219,7 @@ Tür bilgileri sağlıyorsa, türetilmiş nesnenizin `CCmdTarget`oluşturucusund
 
 Kum saati imlecinden `BeginWaitCursor` önceki imleçiçin dönmek için üye işlevi aradıktan sonra bu işlevi arayın.
 
-```
+```cpp
 void EndWaitCursor();
 ```
 
@@ -284,7 +284,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
 ### <a name="parameters"></a>Parametreler
 
 *pIID*<br/>
-Arabirim kimliğine işaretçi [(GUID](/previous-versions/cc317743(v%3dmsdn.10)).
+Arabirim kimliğine işaretçi ([GUID](/windows/win32/api/guiddef/ns-guiddef-guid.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -350,7 +350,7 @@ HRESULT GetTypeInfoOfGuid(
 Yerel tanımlayıcı ( `LCID`).
 
 *Guıd*<br/>
-Tür [GUID](/previous-versions/cc317743(v%3dmsdn.10)) açıklamasının GUID'i.
+[GUID](/windows/win32/api/guiddef/ns-guiddef-guid of the type description.
 
 *ppTypeInfo*<br/>
 Arabirimi işaretçisi. `ITypeInfo`
@@ -514,7 +514,7 @@ Bu durum için özel işleme sağlamak için bu işlevi geçersiz kılın. Varsa
 
 Sistem imleci değiştikten sonra uygun kum saati imlecini geri yüklemek için bu işlevi arayın (örneğin, uzun bir işlemin ortasındayken bir ileti kutusu açılıp kapandıktan sonra).
 
-```
+```cpp
 void RestoreWaitCursor();
 ```
 

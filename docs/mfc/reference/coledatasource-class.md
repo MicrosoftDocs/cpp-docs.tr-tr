@@ -36,12 +36,12 @@ helpviewer_keywords:
 - COleDataSource [MFC], OnSetData
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-ms.openlocfilehash: fcf9505a7792aea6807e37f05cd1cb1aaad55830
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8746be43e3f2a31558904323392983b183d4f198
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366114"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753903"
 ---
 # <a name="coledatasource-class"></a>COleDataSource Sınıfı
 
@@ -104,7 +104,7 @@ Veri kaynakları ve veri aktarımı hakkında daha fazla bilgi için [Veri Nesne
 
 Veri aktarım işlemleri sırasında verilerin sunulduğu bir biçim belirtmek için bu işlevi arayın.
 
-```
+```cpp
 void CacheData(
     CLIPFORMAT cfFormat,
     LPSTGMEDIUM lpStgMedium,
@@ -140,7 +140,7 @@ Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win
 
 Veri aktarım işlemleri sırasında verilerin sunulduğu bir biçim belirtmek için bu işlevi arayın.
 
-```
+```cpp
 void CacheGlobalData(
     CLIPFORMAT cfFormat,
     HGLOBAL hGlobal,
@@ -180,7 +180,7 @@ COleDataSource();
 
 Veri aktarım işlemleri sırasında verilerin sunulduğu bir biçim belirtmek için bu işlevi arayın.
 
-```
+```cpp
 void DelayRenderData(
     CLIPFORMAT cfFormat,
     LPFORMATETC lpFormatEtc = NULL);
@@ -210,7 +210,7 @@ Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win
 
 Veri aktarım işlemleri sırasında verilerin sunulduğu bir biçim belirtmek için bu işlevi arayın.
 
-```
+```cpp
 void DelayRenderFileData(
     CLIPFORMAT cfFormat,
     LPFORMATETC lpFormatEtc = NULL);
@@ -240,7 +240,7 @@ Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win
 
 Veri kaynağının içeriğini değiştirmeyi desteklemek için bu işlevi arayın.
 
-```
+```cpp
 void DelaySetData(
     CLIPFORMAT cfFormat,
     LPFORMATETC lpFormatEtc = NULL);
@@ -316,7 +316,7 @@ Daha fazla bilgi için, makale [OLE sürükleyin ve bırakın](../../mfc/drag-an
 
 Veri nesnesini `COleDataSource` boşaltmak için bu işlevi çağırın.
 
-```
+```cpp
 void Empty();
 ```
 
@@ -482,7 +482,7 @@ Daha fazla bilgi için [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmediu
 
 Aşağıdaki işlevlerden birini `COleDataSource` aradıktan sonra nesnede bulunan verileri Panoya koyar: [CacheData](#cachedata), [CacheGlobalData,](#cacheglobaldata) [DelayRenderData](#delayrenderdata)veya [DelayRenderFileData](#delayrenderfiledata).
 
-```
+```cpp
 void SetClipboard();
 ```
 

@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CSplitterWnd [MFC], OnDrawSplitter
 - CSplitterWnd [MFC], OnInvertTracker
 ms.assetid: fd0de258-6dbe-4552-9e47-a39de0471d51
-ms.openlocfilehash: 8c8ce90f5e36d6cdc2592233588bc3bd7bf2c9d6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a872854af1695b8b2b347b21d73165d259b3a986
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371691"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753068"
 ---
 # <a name="csplitterwnd-class"></a>CSplitterWnd Sınıfı
 
@@ -619,7 +619,7 @@ Ayırıcıdaki geçerli sütun sayısını verir. Statik bir ayırıcı için bu
 
 Belirtilen sütundaki bilgileri verir.
 
-```
+```cpp
 void GetColumnInfo(
     int col,
     int& cxCur,
@@ -675,7 +675,7 @@ Ayırıcı penceresindegeçerli satır sayısını verir. Statik ayırıcı penc
 
 Belirtilen satırdaki bilgileri verir.
 
-```
+```cpp
 void GetRowInfo(
     int row,
     int& cyCur,
@@ -896,7 +896,7 @@ Satır ve sütun sağlayarak **veya** *pWnd*sağlayarak bölmeyi belirtin.
 
 Belirtilen sütun bilgilerini ayarlamak için arayın.
 
-```
+```cpp
 void SetColumnInfo(
     int col,
     int cxIdeal,
@@ -928,7 +928,7 @@ Bir sütun için yeni bir minimum genişlik ve ideal genişlik ayarlamak için b
 
 Belirtilen satır bilgilerini ayarlamak için arayın.
 
-```
+```cpp
 void SetRowInfo(
     int row,
     int cyIdeal,
@@ -956,7 +956,7 @@ Bir satır için yeni bir minimum yükseklik ve ideal yükseklik ayarlamak için
 
 Bölücü penceresinin paylaşılan kaydırma çubuğu desteği için yeni kaydırma stilini belirtir.
 
-```
+```cpp
 void SetScrollStyle(DWORD dwStyle);
 ```
 

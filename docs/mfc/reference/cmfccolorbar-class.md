@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CMFCColorBar [MFC], SetPropList
 - CMFCColorBar [MFC], ShowCommandMessageString
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
-ms.openlocfilehash: 7b63fb66b800bd758c7f4c89c553e857ad9bbfbc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 58fddeef9cb0afe930af84b05e6a87871f729da4
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367765"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752574"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar Sınıfı
 
@@ -380,7 +380,7 @@ Diğer düğme için standart etiket **Daha Fazla Renk...**.
 
 Renk çubuğu denetimindeki düğmeleri içerecek şekilde gereken dikey ve yatay kenar boşluklarını hesaplar ve bu düğmelerin konumunu ayarlar.
 
-```
+```cpp
 void ContextToSize(
     BOOL bSquareButtons = TRUE,
     BOOL bCenterButtons = TRUE);
@@ -504,7 +504,7 @@ Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 Otomatik düğmeyi gösterir veya gizler.
 
-```
+```cpp
 void EnableAutomaticButton(
     LPCTSTR lpszLabel,
     COLORREF colorAutomatic,
@@ -532,7 +532,7 @@ Otomatik düğme için standart etiket **Otomatiktir.**
 
 Kullanıcının daha fazla renk seçmesine olanak tanıyan bir iletişim kutusunun ekranını etkinleştirer veya devre dışı bırakırsa.
 
-```
+```cpp
 void EnableOtherButton(
     LPCTSTR lpszLabel,
     BOOL bAltColorDlg=TRUE,
@@ -802,7 +802,7 @@ Geçerli renk çubuğu denetiminin üst düğmesinin paletiyle değiştirilen pa
 
 Şu anda seçili rengi ayarlar.
 
-```
+```cpp
 void SetColor(COLORREF color);
 ```
 
@@ -837,7 +837,7 @@ Bu yöntem, uygulamanızdaki tüm `CMFCColorBar` nesnelerde belirtilen rengin ad
 
 Renk çubuğu denetimi için yeni bir komut kimliği ayarlar.
 
-```
+```cpp
 void SetCommandID(UINT nCommandID);
 ```
 
@@ -854,7 +854,7 @@ Renk çubuğu denetiminin komut kimliğini değiştirmek ve kimliğin değişti�
 
 Geçerli belgede kullanılan renklerin listesini ayarlar.
 
-```
+```cpp
 void SetDocumentColors(
     LPCTSTR lpszCaption,
     CList<COLORREF,COLORREF>& lstDocColors,
@@ -880,7 +880,7 @@ void SetDocumentColors(
 
 Sol veya sağ renk hücresi ile istemci alanının sınırı arasındaki boşluk olan yatay kenar boşluğunu ayarlar.
 
-```
+```cpp
 void SetHorzMargin(int nHorzMargin);
 ```
 
@@ -897,7 +897,7 @@ Varsayılan olarak, [CMFCColorBar::CMFCColorBar](#cmfccolorbar) oluşturucu yata
 
 Korumalı `m_pWndPropList` veri üyesini bir özellik ızgara denetimi için belirtilen işaretçiye ayarlar.
 
-```
+```cpp
 void SetPropList(CMFCPropertyGridCtrl* pWndList);
 ```
 
@@ -911,7 +911,7 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 
 Üst veya alt renk hücresi ile istemci alanı sınırı arasındaki boşluk olan dikey kenar boşluğunu ayarlar.
 
-```
+```cpp
 void SetVertMargin(int nVertMargin);
 ```
 

@@ -38,12 +38,12 @@ helpviewer_keywords:
 - COlePropertyPage [MFC], SetModifiedFlag
 - COlePropertyPage [MFC], SetPageName
 ms.assetid: e9972872-8e6b-4550-905e-d36a274d64dc
-ms.openlocfilehash: dbdc889e244b33365756bcbae5b37cf657a6d900
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 872ade08438e54098da730012f98cdd906483887
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374873"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753796"
 ---
 # <a name="colepropertypage-class"></a>COlePropertyPage Sınıfı
 
@@ -187,7 +187,7 @@ Denetimler ve kapsayıcılar, kullanıcıların denetim özelliklerine göz atab
 
 Hangi denetimlerin Uygula düğmesini etkinleştirmediğini belirler.
 
-```
+```cpp
 void IgnoreApply(UINT nID);
 ```
 
@@ -326,7 +326,7 @@ DOĞRU, belirtilen denetim ayarlanmışsa; aksi takdirde YANLIŞ.
 
 Özellik sayfasının iletişim kaynağını ayarlar.
 
-```
+```cpp
 void SetDialogResource(HGLOBAL hDialog);
 ```
 
@@ -339,7 +339,7 @@ void SetDialogResource(HGLOBAL hDialog);
 
 Araç ipucu bilgilerini, yardım dosya adını ve özellik sayfanızın yardım bağlamını belirtir.
 
-```
+```cpp
 void SetHelpInfo(
     LPCTSTR lpszDocString,
     LPCTSTR lpszHelpFile = NULL,
@@ -361,7 +361,7 @@ Durum çubuğunda veya başka bir konumda görüntülenmek için kısa yardım b
 
 Kullanıcının özellik sayfasını değiştirip değiştirmediğini gösterir.
 
-```
+```cpp
 void SetModifiedFlag(BOOL bModified = TRUE);
 ```
 
@@ -374,7 +374,7 @@ void SetModifiedFlag(BOOL bModified = TRUE);
 
 Özellik sayfasının adını ayarlar ve özellik çerçevesi genellikle sayfanın sekmesinde görüntülenir.
 
-```
+```cpp
 void SetPageName(LPCTSTR lpszPageName);
 ```
 

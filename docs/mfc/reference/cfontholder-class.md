@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CFontHolder [MFC], SetFont
 - CFontHolder [MFC], m_pFont
 ms.assetid: 728ab472-0c97-440d-889f-1324c6e1b6b8
-ms.openlocfilehash: 6a053f127123a9ca21853189b9458738b217ee2b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 36fbebc39101c5534bd52d4f79fee5286487a6e0
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373810"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754989"
 ---
 # <a name="cfontholder-class"></a>Cfontholder Sınıfı
 
@@ -170,7 +170,7 @@ Parametreleri olmayan sürüm, ekran için doğru boyutlandırılmış bir yazı
 
 Bir `CFontHolder` nesneyi başharfe alar.
 
-```
+```cpp
 void InitializeFont(
     const FONTDESC* pFontDesc = NULL,
     LPDISPATCH pFontDispAmbient = NULL);
@@ -204,7 +204,7 @@ LPFONT m_pFont;
 
 Nesne tarafından temsil edilen fiziksel yazı `CFontHolder` tipindeki bilgileri alır.
 
-```
+```cpp
 void QueryTextMetrics(LPTEXTMETRIC lptm);
 ```
 
@@ -217,7 +217,7 @@ Bilgileri alacak [textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) y
 
 Bu işlev, `CFontHolder` nesneyi `IFont` arabiriminden keser.
 
-```
+```cpp
 void ReleaseFont();
 ```
 
@@ -255,7 +255,7 @@ Değiştirilen yazı tipiiçin bir işaretçi.
 
 Varolan herhangi bir yazı `CFontHolder` tipini `IFont` serbest bırakır ve nesneyi bir arabirime bağlar.
 
-```
+```cpp
 void SetFont(LPFONT pNewFont);
 ```
 

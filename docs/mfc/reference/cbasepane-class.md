@@ -166,12 +166,12 @@ helpviewer_keywords:
 - CBasePane [MFC], UndockPane
 - CBasePane [MFC], DoPaint
 ms.assetid: 8163dd51-d7c7-4def-9c74-61f8ecdfad82
-ms.openlocfilehash: 56e4e30e23262da677c014a18e9fb8b175a6903d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 941f32dfadffd97210586edd7c2aa63c3c1708cd
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352931"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752984"
 ---
 # <a name="cbasepane-class"></a>CBasePane Sınıfı
 
@@ -377,7 +377,7 @@ virtual void AccNotifyObjectFocusEvent(int);
 
 Yerleştirme yöneticisine bir bölme ekler.
 
-```
+```cpp
 void AddPane(CBasePane* pBar);
 ```
 
@@ -774,7 +774,7 @@ PDockBar tarafından belirtilen başka bir bölmeye veya dock çubuğuna [(CDock
 
 Çalışma zamanı türü bilgilerini kullanarak bölmeyi sabitler.
 
-```
+```cpp
 void DockPaneUsingRTTI(BOOL bUseDockSite);
 ```
 
@@ -1740,7 +1740,7 @@ virtual void RecalcLayout();
 
 Bölmenin kaydını kaldırır ve yerleştirme yöneticisindeki listeden kaldırır.
 
-```
+```cpp
 void RemovePaneFromDockManager(
     CBasePane* pBar,
     BOOL bDestroy = TRUE,
@@ -1837,7 +1837,7 @@ virtual void SetControlBarStyle(DWORD dwNewStyle);
 
 Bölme için yerleştirme modunu ayarlar.
 
-```
+```cpp
 void SetDockingMode(AFX_DOCK_TYPE dockModeNew);
 ```
 

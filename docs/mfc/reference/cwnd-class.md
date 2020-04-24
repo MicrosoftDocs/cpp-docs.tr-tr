@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: 12ba4cc28d94cbc2961475944c62d2e942b20c05
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c2ea240ba736c95026b2b6d2af45296245881bab
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365940"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81751720"
 ---
 # <a name="cwnd-class"></a>CWnd Sınıfı
 
@@ -1576,7 +1576,7 @@ WM_PAINT bir `BeginPaint` iletiye yanıt dışında [WM_PAINT](#onpaint) üye i�
 
 Arama nesnesinin varsayılan basit ciltli özelliğini (düzenleme denetimi gibi), tür kitaplığında işaretli olarak Veri Kaynağı, Kullanıcı Adı, Parola ve VERI Kaynağı denetiminin SQL özellikleri tarafından tanımlanan temel imlece bağlar.
 
-```
+```cpp
 void BindDefaultProperty(
     DISPID dwDispID,
     VARTYPE vtProp,
@@ -1612,7 +1612,7 @@ Bu `CWnd` işlevde adını aldığınız nesne, veriye bağlı bir denetim olmal
 
 İmleç bağlı bir özelliği veri ye bağlı denetime (ızgara denetimi gibi) veri kaynağı denetimine bağlar ve bu ilişkiyi MFC bağlama yöneticisiyle kaydeder.
 
-```
+```cpp
 void BindProperty(
     DISPID dwDispId,
     CWnd* pWndDSC);
@@ -1640,7 +1640,7 @@ Bu `CWnd` işlevde adını aldığınız nesne, veriye bağlı bir denetim olmal
 
 Çakışan pencereler yığınının üstüne getirir. `CWnd`
 
-```
+```cpp
 void BringWindowToTop();
 ```
 
@@ -1708,7 +1708,7 @@ Bir tuşa basıldığında araç ipuçlarını iptal etmek ve durum çubuğu met
 
 Pencereyi üst öğesine göre ortalar.
 
-```
+```cpp
 void CenterWindow(CWnd* pAlternateOwner = NULL);
 ```
 
@@ -1746,7 +1746,7 @@ Sıfırsız eğer başarılı; aksi takdirde 0.
 
 Bir düğmeyi seçer (yanında onay işareti yerleştirir) veya temizler (onay işaretini kaldırır) veya üç durumlu düğmenin durumunu değiştirir.
 
-```
+```cpp
 void CheckDlgButton(
     int nIDButton,
     UINT nCheck);
@@ -1772,7 +1772,7 @@ Yapılacak eylemi belirtir. *nCheck* sıfır değilse, `CheckDlgButton` üye iş
 
 Bir grupta belirli bir radyo düğmesini seçer (onay işareti ekler) ve gruptaki diğer tüm radyo düğmelerini temizler (onay işaretini kaldırır).
 
-```
+```cpp
 void CheckRadioButton(
     int nIDFirstButton,
     int nIDLastButton,
@@ -1843,7 +1843,7 @@ Verilen noktayı birden fazla pencere içerebilir. Ancak, bu işlev, `CWnd`nokta
 
 Ekranda belirli bir noktanın veya dikdörtgenin istemci koordinatlarını ekran koordinatlarına dönüştürür.
 
-```
+```cpp
 void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) const;
 ```
 
@@ -1869,7 +1869,7 @@ Dönüştürülecek istemci koordinatlarını `CRect` içeren bir [RECT yapısı
 
 Pencereyi en aza indirir.
 
-```
+```cpp
 void CloseWindow();
 ```
 
@@ -1984,7 +1984,7 @@ Belirtilen nesne için Etkin Erişilebilirlik proxy'si oluşturur.
 
 Sistem bakımı için yeni bir şekil oluşturur ve caret sahipliğini talep eder.
 
-```
+```cpp
 void CreateCaret(CBitmap* pBitmap);
 ```
 
@@ -2207,7 +2207,7 @@ Alt pencereleriçin boyutlar, üst pencerenin istemci alanının sol üst köşe
 
 Sistem bakımı için gri bir dikdörtgen oluşturur ve caret'in sahipliğini talep eder.
 
-```
+```cpp
 void CreateGrayCaret(
     int nWidth,
     int nHeight);
@@ -2241,7 +2241,7 @@ Sistem bakımı paylaşılan bir kaynaktır. `CWnd`yalnızca giriş odağı oldu
 
 Sistem bakımı için sağlam bir dikdörtgen oluşturur ve caret'in sahipliğini talep eder.
 
-```
+```cpp
 void CreateSolidCaret(
     int nWidth,
     int nHeight);
@@ -2373,7 +2373,7 @@ Pencere herhangi bir pencerenin üst öğesiyse, üst pencere yok edildiğinde b
 
 `DestroyWindow` Üye işlev ayrıca CDialog tarafından oluşturulan modeless iletişim kutularını yok [eder::Oluştur](../../mfc/reference/cdialog-class.md#create).
 
-Yok `CWnd` edilen bir alt pencereyse ve [WS_EX_NOPARENTNOTIFY](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) stil kümesi yoksa, [WM_PARENTNOTIFY](/previous-versions/windows/desktop/inputmsg/wm-parentnotify) iletisi üst öğeye gönderilir.
+Yok `CWnd` edilen bir alt pencereyse ve [WS_EX_NOPARENTNOTIFY](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) stil kümesi yoksa, [WM_PARENTNOTIFY](/windows/win32/inputmsg/wm-parentnotify) iletisi üst öğeye gönderilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2626,7 +2626,7 @@ Geçersiz `DoDataExchange` kılınan üye işlev, kaynak dosyanızdaki makro dey
 
 Uygulamanızın CWinApp'ında bir `CWnd` işaretçi kullanarak bu üye işlevini pencerenin içinden [arayın::Pencerenin](../../mfc/reference/cwinapp-class.md#initinstance) Windows Dosya Yöneticisi'nden veya Dosya Gezgini'nden bırakılan dosyaları kabul ettiğini belirtmek için InitInstance işlevi.
 
-```
+```cpp
 void DragAcceptFiles(BOOL bAccept = TRUE);
 ```
 
@@ -2681,10 +2681,10 @@ BOOL DrawAnimatedRects(
 Animasyon türünü belirtir. IDANI_CAPTION belirtirseniz, pencere başlığı *lprcFrom* tarafından belirtilen konumdan *lprcTo*tarafından belirtilen konuma animasyon olacaktır. Efekt, bir pencereyi en aza indirmeye veya en üst düzeye çıkarmaya benzer.
 
 *lprcGönderen*<br/>
-Simgenin veya simgenin konumunu ve boyutunu belirten bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi.
+Simgenin veya simgenin konumunu ve boyutunu belirten bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi.
 
 *lprcTo*<br/>
-Geri yüklenen pencerenin konumunu ve boyutunu belirten bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısıişaretçisi
+Geri yüklenen pencerenin konumunu ve boyutunu belirten bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısıişaretçisi
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2728,7 +2728,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi [DrawCaption](/windows/win3
 
 Menü çubuğunu yeniden çizer.
 
-```
+```cpp
 void DrawMenuBar();
 ```
 
@@ -2744,7 +2744,7 @@ Windows pencereyi oluşturduktan sonra bir menü çubuğu değiştirilirse, değ
 
 Kullanıcı tanımlı Etkin Erişilebilirlik işlevlerini sağlar.
 
-```
+```cpp
 void EnableActiveAccessibility();
 ```
 
@@ -2756,7 +2756,7 @@ MFC'nin varsayılan Etkin Erişilebilirlik desteği, ActiveX denetimleri de dahi
 
 Dinamik düzen yöneticisini etkinleştirer veya devre dışı kılabilir. Dinamik düzen etkinleştirildiğinde, alt pencerelerin konumu ve boyutu, kullanıcı pencereyi yeniden boyutlandırdığında dinamik olarak ayarlanabilir.
 
-```
+```cpp
 void EnableDynamicLayout(BOOL bEnable = TRUE);
 ```
 
@@ -2773,7 +2773,7 @@ Dinamik düzeni etkinleştirmek istiyorsanız, bu yöntemi aramadan daha fazlas�
 
 D2D penceresi desteğini etkinleştirir veya devre dışı kılabilir. Ana pencere başharfe basılmadan önce bu yöntemi arayın.
 
-```
+```cpp
 void EnableD2DSupport(
     BOOL bEnable = TRUE,
     BOOL bUseDCRenderTarget = FALSE);
@@ -2827,7 +2827,7 @@ Oklar belirtildiği gibi etkin veya devre dışı bırakılırsa sıfır atamam.
 
 Bu pencerenin kaydırma çubuğunu etkinleştirer veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableScrollBarCtrl(
     int nBar,
     BOOL bEnable = TRUE);
@@ -2966,7 +2966,7 @@ virtual void EndModalState();
 
 Verilen pencerede boyama nın sonunu işaretler.
 
-```
+```cpp
 void EndPaint(LPPAINTSTRUCT lpPaint);
 ```
 
@@ -3014,7 +3014,7 @@ Bir iletişim kaynağı yürütülürse DOĞRU; aksi takdirde YANLIŞ.
 
 Araç ipucu iletilerini görüntülemek için çerçeve tarafından çağrılır.
 
-```
+```cpp
 void FilterToolTipMessage(MSG* pMsg);
 ```
 
@@ -3699,7 +3699,7 @@ Denetlenen radyo düğmesinin kimliği veya hiçbiri seçili değilse 0.
 
 İstemci alanının `CWnd` istemci koordinatlarını *lpRect*tarafından işaret edilen yapıya kopyalar.
 
-```
+```cpp
 void GetClientRect(LPRECT lpRect) const;
 ```
 
@@ -4460,7 +4460,7 @@ Buna karşılık, [GetParent](#getparent) işlevi, alt pencere olsun veya olmas�
 
 *DwDispID*tarafından belirtilen ActiveX denetim özelliğini almak için bu üye işlevini arayın.
 
-```
+```cpp
 void GetProperty(
     DISPID dwDispID,
     VARTYPE vtProp,
@@ -4685,7 +4685,7 @@ Geçerli konum, geçerli kaydırma aralığına bağlı olarak göreli bir değe
 
 Verilen kaydırma çubuğu için geçerli minimum ve maksimum kaydırma çubuğu konumlarını *lpMinPos* ve *lpMaxPos*tarafından belirtilen konumlara kopyalar.
 
-```
+```cpp
 void GetScrollRange(
     int nBar,
     LPINT lpMinPos,
@@ -5050,7 +5050,7 @@ Bu `flags` işlev tarafından alınan [WINDOWPLACEMENT](/windows/win32/api/winus
 
 `CWnd` *LpRect*tarafından işaret edilen yapıya nesnenin sınırlayıcı dikdörtgenin boyutlarını kopyalar.
 
-```
+```cpp
 void GetWindowRect(LPRECT lpRect) const;
 ```
 
@@ -5160,7 +5160,7 @@ Bu üye [işlev, WM_GETTEXTLENGTH](/windows/win32/winmsg/wm-gettextlength) ileti
 
 Ekranı ekrandan kaldırarak caret'i gizler.
 
-```
+```cpp
 void HideCaret();
 ```
 
@@ -5234,7 +5234,7 @@ Bkz. [CWinApp::HtmlDaha](../../mfc/reference/cwinapp-class.md#htmlhelp) fazla bi
 
 Bir pencere için dinamik düzeni başlatmayı çerçeve tarafından çağrıldı.
 
-```
+```cpp
 void InitDynamicLayout();
 ```
 
@@ -5246,7 +5246,7 @@ Bu yöntemi doğrudan aramayın.
 
 `CWnd`tüm istemci alanını geçersiz kinle
 
-```
+```cpp
 void Invalidate(BOOL bErase = TRUE);
 ```
 
@@ -5271,7 +5271,7 @@ Windows, güncelleştirme bölgesi boş olmadığında ve bu pencere için uygul
 
 Güncelleştirme bölgesine bu dikdörtgeni `CWnd` ekleyerek, verilen dikdörtgen içindeki istemci alanını geçersiz kılarak geçersiz kılındı.
 
-```
+```cpp
 void InvalidateRect(
     LPCRECT lpRect,
     BOOL bErase = TRUE);
@@ -5297,7 +5297,7 @@ Windows, güncelleştirme bölgesi boş olmadığında ve bu pencere için uygul
 
 Verilen bölge içindeki istemci alanını geçerli güncelleştirme bölgesine `CWnd`ekleyerek geçersiz kAkıyor
 
-```
+```cpp
 void InvalidateRgn(
     CRgn* pRgn,
     BOOL bErase = TRUE);
@@ -5325,7 +5325,7 @@ Verilen bölge daha önce bölge işlevlerinden biri tarafından oluşturulmuş 
 
 ActiveX Control yöntemini veya *dwDispID*tarafından belirtilen özelliği *wFlags*tarafından belirtilen bağlamda çağırmak için bu üye işlevini arayın.
 
-```
+```cpp
 void AFX_CDECL InvokeHelper(
     DISPID dwDispID,
     WORD wFlags,
@@ -5623,7 +5623,7 @@ Veri `m_hWnd` üyesi, HWND türünün ortak değişkenidir.
 
 (Haritalar) başka bir pencerenin koordinat alanı koordinat `CWnd` alanından noktaları n için dönüştürür.
 
-```
+```cpp
 void MapWindowPoints(
     CWnd* pwndTo,
     LPRECT lpRect) const;
@@ -5790,7 +5790,7 @@ Normal pencere stillerini kullanarak pencereleri değiştirmek için [Bkz.](#mod
 
 Konumunu ve boyutlarını değiştirir.
 
-```
+```cpp
 void MoveWindow(
     int x,
     int y,
@@ -5837,7 +5837,7 @@ Yeni boyutu ve konumu belirten [CRect](../../atl-mfc-shared/reference/crect-clas
 
 Sisteme önceden tanımlanmış bir olayın meydana geldiğini bildirir. Herhangi bir istemci uygulaması olay için bir kanca işlevi kaydettiyse, sistem istemcinin kanca işlevini çağırır.
 
-```
+```cpp
 void NotifyWinEvent(
     DWORD event,
     LONG idObjectType,
@@ -8579,7 +8579,7 @@ Bu yöntem, Windows SDK'da açıklanan [WM_DWMNCRENDERINGCHANGED](/windows/win32
 
 Çerçeve, imleç bir pencerenin istemci olmayan alanındayken, kullanıcı XBUTTON1 veya XBUTTON2'yi çift tıklattığında bu üye işlevi çağırır.
 
-```
+```cpp
 void OnNcXButtonDblClk(
     short nHitTest,
     UINT nButton,
@@ -10601,7 +10601,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 Belirtilen aygıt bağlamında geçerli pencereyi çizmek için bu üye işlevi çağırın, ki bu en sık yazıcı aygıtı bağlamında dır.
 
-```
+```cpp
 void Print(
     CDC* pDC,
     DWORD dwFlags) const;
@@ -10647,7 +10647,7 @@ Aygıt bağlamına işaretçi.
 
 Belirtilen aygıt bağlamında (genellikle yazıcı aygıtı bağlamı) herhangi bir pencere çizmek için bu üye işlevi arayın.
 
-```
+```cpp
 void PrintClient(
     CDC* pDC,
     DWORD dwFlags) const;
@@ -10852,7 +10852,7 @@ Uygulama, `ReleaseDC` [GetWindowDC](#getwindowdc) üye işlevine yapılan her ç
 
 Pencerenin istemci alanında denetim çubuklarını yeniden konumlandırmak ve yeniden boyutlandırmak için çağrıldı.
 
-```
+```cpp
 void RepositionBars(UINT nIDFirst,
     UINT nIDLast,
     UINT nIDLeftOver,
@@ -10926,7 +10926,7 @@ Varsayılan olarak, `ContinueModal` false `EndModalLoop` sonra denir döndürür
 
 Belirli bir noktanın veya dikdörtgenin ekran koordinatlarını istemci koordinatlarına dönüştürür.
 
-```
+```cpp
 void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) const;
 ```
 
@@ -10950,7 +10950,7 @@ Dönüştürülecek ekran koordinatlarını içeren bir [CRect](../../atl-mfc-sh
 
 Geçerli `CWnd` nesnenin istemci alanının içeriğini kaydırır.
 
-```
+```cpp
 void ScrollWindow(
     int xAmount,
     int yAmount,
@@ -11143,7 +11143,7 @@ Gönderilecek iletiyi belirtir.
 
 Belirtilen Windows iletisini tüm soyundan gelen pencerelere göndermek için bu üye işlevini arayın.
 
-```
+```cpp
 void SendMessageToDescendants(
     UINT message,
     WPARAM wParam = 0,
@@ -11313,7 +11313,7 @@ Pencere herhangi bir alt pencere, sadece bir iletişim kutusunda bir denetim ola
 
 Bir iletişim kutusundaki belirli bir denetimin metnini, belirtilen bir tamsayı değerinin dize gösterimine ayarlar.
 
-```
+```cpp
 void SetDlgItemInt(
     int nID,
     UINT nValue,
@@ -11343,7 +11343,7 @@ Sonda değerinin imzalanıp imzalanmadığını belirtir. Bu parametre TRUE ise,
 
 Bir pencereye veya iletişim kutusuna ait denetimin alt yazısını veya metnini ayarlar.
 
-```
+```cpp
 void SetDlgItemText(
     int nID,
     LPCTSTR lpszString);
@@ -11409,7 +11409,7 @@ Geçerli pencere etkin sayılsa da odak noktası yoksa (yani hiçbir pencerede o
 
 Belirtilen yazı tipini kullanmak için WM_SETFONT iletiyi pencereye gönderir.
 
-```
+```cpp
 void SetFont(
     CFont* pFont,
     BOOL bRedraw = TRUE);
@@ -11518,7 +11518,7 @@ Pencerenin menü değişikliğini yansıtmak için yeniden çizilmesine neden ol
 
 Geçerli pencerenin sahibini belirtilen pencere nesnesine ayarlar.
 
-```
+```cpp
 void SetOwner(CWnd* pOwnerWnd);
 ```
 
@@ -11560,7 +11560,7 @@ Alt pencere görünürse, Windows uygun yeniden çizim ve yeniden boyama gerçek
 
 *dwDispID*tarafından belirtilen OLE denetim özelliğini ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void AFX_CDECL SetProperty(
     DISPID dwDispID,
     VARTYPE vtProp, ...);
@@ -11588,7 +11588,7 @@ Bu üye işlevini OLE Denetim Kapları ile kullanma hakkında daha fazla bilgi i
 
 Uygulamaların yeniden `SetRedraw` çizilmesine izin vermek veya değişikliklerin yeniden çizilmesini önlemek için bir uygulama çağırır.
 
-```
+```cpp
 void SetRedraw(BOOL bRedraw = TRUE);
 ```
 
@@ -11684,7 +11684,7 @@ kaydırma çubuğu sonraki bir çağrı yla başka bir işleve yeniden çizildi�
 
 Verilen kaydırma çubuğu için minimum ve maksimum konum değerlerini ayarlar.
 
-```
+```cpp
 void SetScrollRange(
     int nBar,
     int nMinPos,
@@ -11755,7 +11755,7 @@ Bir aralık değeri belirtilir ve aralık her zaman geçse, sistem yükleme uygu
 
 *lpfnTimer* geri çağırma işlevi adlandırılmamalıdır, `TimerProc`ancak statik olarak bildirilmelidir ve aşağıdaki gibi tanımlanmalıdır.
 
-```
+```cpp
 void CALLBACK TimerProc(
     HWND hWnd,   // handle of CWnd that called SetTimer
     UINT nMsg,   // WM_TIMER
@@ -11949,7 +11949,7 @@ Başarılı bir çağrıdan `SetWindowRgn`sonra, işletim sistemi bölge tarafı
 
 Pencerenin başlığını belirtilen metne ayarlar.
 
-```
+```cpp
 void SetWindowText(LPCTSTR lpszString);
 ```
 
@@ -11972,7 +11972,7 @@ Bu işlev, bu pencereye [WM_SETTEXT](/windows/win32/winmsg/wm-settext) ileti gö
 
 Ekrandaki bakımı, bakıcının geçerli konumunda gösterir.
 
-```
+```cpp
 void ShowCaret();
 ```
 
@@ -11994,7 +11994,7 @@ Caret paylaşılan bir kaynaktır. Pencere, yalnızca giriş odağıolduğunda v
 
 Bu pencereye ait tüm açılır pencereleri gösterir veya gizler.
 
-```
+```cpp
 void ShowOwnedPopups(BOOL bShow = TRUE);
 ```
 
@@ -12011,7 +12011,7 @@ Açılır pencerelerin gösterileceğini veya gizleneceğini belirtir. Bu parame
 
 Kaydırma çubuğugösterir veya gizler.
 
-```
+```cpp
 void ShowScrollBar(
     UINT nBar,
     BOOL bShow = TRUE);
@@ -12146,7 +12146,7 @@ Bu üye işlev Windows denetimini bir `CWnd` nesneye bağlar `WndProc` `AfxWndPr
 
 Kilitli bir pencerenin kilidini açmak için `CWnd::LockWindowUpdate`bu üye işlevini arayın.
 
-```
+```cpp
 void UnlockWindowUpdate();
 ```
 
@@ -12195,7 +12195,7 @@ BOOL UpdateData(BOOL bSaveAndValidate = TRUE);
 
 [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) geri arama mekanizmasını kullanan bir iletişim kutusu veya penceredeki iletişim düğmelerinin ve diğer denetimlerin durumunu güncelleştirmek için bu üye işlevini arayın.
 
-```
+```cpp
 void UpdateDialogControls(
     CCmdTarget* pTarget,
     BOOL bDisableIfNoHndler);
@@ -12275,7 +12275,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi [UpdateLayeredWindow](/wind
 
 Güncelleştirme bölgesi boş [değilse, istemci](/windows/win32/gdi/wm-paint) alanını WM_PAINT ileti göndererek güncelleştirir.
 
-```
+```cpp
 void UpdateWindow();
 ```
 
@@ -12291,7 +12291,7 @@ void UpdateWindow();
 
 Dikdörtgeni pencerenin güncelleştirme bölgesinden kaldırarak verilen dikdörtgeniçindeki istemci alanını doğrular.
 
-```
+```cpp
 void ValidateRect(LPCRECT lpRect);
 ```
 
@@ -12310,7 +12310,7 @@ Windows, geçerli güncelleştirme bölgesi doğrulanına kadar WM_PAINT iletile
 
 Pencerenin geçerli güncelleştirme bölgesinden bölgeyi kaldırarak verilen bölgedeki istemci alanını doğrular.
 
-```
+```cpp
 void ValidateRgn(CRgn* pRgn);
 ```
 

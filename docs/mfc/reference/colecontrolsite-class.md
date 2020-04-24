@@ -106,12 +106,12 @@ helpviewer_keywords:
 - COleControlSite [MFC], m_pWndCtrl
 - COleControlSite [MFC], m_rect
 ms.assetid: 43970644-5eab-434a-8ba6-56d144ff1e3f
-ms.openlocfilehash: 6cf12d017db1a1558b0dd915d9f3ba85894bee19
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 90c41a1be1a66cdceebb3f045a98167e56b7cf4c
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366159"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753950"
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite Sınıfı
 
@@ -454,7 +454,7 @@ Pencere daha önce devre dışı bırakılmışsa sıfır olmayan, aksi takdirde
 
 Denetim sitesinin denetimden kaynaklanan olayları işleyip işlemeyeceğini veya yok sayılacağını belirtir.
 
-```
+```cpp
 void FreezeEvents(BOOL bFreeze);
 ```
 
@@ -474,7 +474,7 @@ Denetim sitesinin olayları kabul etmeyi durdurmak isteyip istemeyeceğini belir
 
 Denetimin klavye mnemonics ve klavye davranışı hakkında bilgi alır.
 
-```
+```cpp
 void GetControlInfo();
 ```
 
@@ -1017,7 +1017,7 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 Denetimi varsayılan düğme olarak ayarlar.
 
-```
+```cpp
 void SetDefaultButton(BOOL bDefault);
 ```
 

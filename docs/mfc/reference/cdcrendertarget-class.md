@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CDCRenderTarget [MFC], GetDCRenderTarget
 - CDCRenderTarget [MFC], m_pDCRenderTarget
 ms.assetid: aa8059c9-08e6-49e4-9b8c-00fa54077a61
-ms.openlocfilehash: 790ce0f32c2325fa0ea92ca0bda64ddaa4c86c45
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8c07962c017d160cb3ce5841a75f1ae8a8761641
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375702"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753387"
 ---
 # <a name="cdcrendertarget-class"></a>CDCRenderTarget Sınıfı
 
@@ -83,7 +83,7 @@ class CDCRenderTarget : public CRenderTarget;
 
 Nesneye varolan render hedef arabirimi ataşır
 
-```
+```cpp
 void Attach(ID2D1DCRenderTarget* pTarget);
 ```
 

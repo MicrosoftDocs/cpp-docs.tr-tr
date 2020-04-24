@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CD2DGeometrySink [MFC], SetSegmentFlags
 - CD2DGeometrySink [MFC], m_pSink
 ms.assetid: e5e07f41-0343-4ab1-9d6b-8c62ed33c04a
-ms.openlocfilehash: cb51c7b11f75debece61105bf20a201b6eab80a9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bb5d2b53fa5899ac84608dc4ace6a84a3e5a7575
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369233"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754770"
 ---
 # <a name="cd2dgeometrysink-class"></a>CD2DGeometrySink Sınıfı
 
@@ -115,7 +115,7 @@ virtual ~CD2DGeometrySink();
 
 Yol geometrisine tek bir yay ekler
 
-```
+```cpp
 void AddArc(const D2D1_ARC_SEGMENT& arc);
 ```
 
@@ -128,7 +128,7 @@ void AddArc(const D2D1_ARC_SEGMENT& arc);
 
 Geçerli nokta ile belirtilen bitiş noktası arasında bir kübik Bezier eğrisi oluşturur.
 
-```
+```cpp
 void AddBezier(const D2D1_BEZIER_SEGMENT& bezier);
 ```
 
@@ -141,7 +141,7 @@ Eklenecek Bezier eğrisinin denetim noktalarını ve bitiş noktasını açıkla
 
 Kübik Bezier eğrileri bir dizi oluşturur ve geometri lavabo bunları ekler.
 
-```
+```cpp
 void AddBeziers(
     const CArray<D2D1_BEZIER_SEGMENT,
     D2D1_BEZIER_SEGMENT>& beziers);
@@ -156,7 +156,7 @@ Oluşturmak için Bezier eğrileri açıklayan Bezier segmentleri bir dizi. Eğr
 
 Geçerli nokta ile belirtilen bitiş noktası arasında bir çizgi kesimi oluşturur ve geometri lavaboya ekler.
 
-```
+```cpp
 void AddLine(CD2DPointF point);
 ```
 
@@ -169,7 +169,7 @@ void AddLine(CD2DPointF point);
 
 Belirtilen noktaları kullanarak bir satır dizisi oluşturur ve bunları geometri lavaboya ekler.
 
-```
+```cpp
 void AddLines(
     const CArray<CD2DPointF,
     CD2DPointF>& points);
@@ -184,7 +184,7 @@ void AddLines(
 
 Geçerli nokta ile belirtilen bitiş noktası arasında kuadratik bir Bezier eğrisi oluşturur.
 
-```
+```cpp
 void AddQuadraticBezier(const D2D1_QUADRATIC_BEZIER_SEGMENT& bezier);
 ```
 
@@ -197,7 +197,7 @@ Eklemek için kuadratik Bezier eğrisinin kontrol noktası ve bitiş noktasını
 
 Tek bir çağrıda bir dizi olarak kuadratik Bezier segmentleri dizisi ekler.
 
-```
+```cpp
 void AddQuadraticBeziers(
     const CArray<D2D1_QUADRATIC_BEZIER_SEGMENT,
     D2D1_QUADRATIC_BEZIER_SEGMENT>& beziers);
@@ -212,7 +212,7 @@ Bir dizi kuadratik Bezier segmenti.
 
 Belirtilen noktada yeni bir rakam başlatır.
 
-```
+```cpp
 void BeginFigure(
     CD2DPointF startPoint,
     D2D1_FIGURE_BEGIN figureBegin);
@@ -255,7 +255,7 @@ Sıfırsız eğer başarılı; aksi takdirde YANLIŞ.
 
 Geçerli rakamı sona erdirer; isteğe bağlı olarak kapatır.
 
-```
+```cpp
 void EndFigure(D2D1_FIGURE_END figureEnd);
 ```
 
@@ -312,7 +312,7 @@ Nesne henüz başharfe çevrilmediyse ID2D1GeometrySink arabirimini işaretçi.
 
 Bu geometri lavabosu tarafından açıklanan geometri içinde hangi noktaların olduğunu ve hangi noktaların dışında olduğunu belirlemek için kullanılan yöntemi belirtir.
 
-```
+```cpp
 void SetFillMode(D2D1_FILL_MODE fillMode);
 ```
 
@@ -325,7 +325,7 @@ Belirli bir noktanın geometrinin bir parçası olup olmadığını belirlemek i
 
 Geometri lavabosu için eklenen yeni segmentlere uygulanacak kontur ve birleştirme seçeneklerini belirtir.
 
-```
+```cpp
 void SetSegmentFlags(D2D1_PATH_SEGMENT vertexFlags);
 ```
 

@@ -150,12 +150,12 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], OnSelectCombo
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
-ms.openlocfilehash: c52550c4b2ed09d97f44e7ed773f2568ec14893f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 844b206b2c34b82930116744bbbfd4d35ecacf15
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81361936"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754147"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl Sınıfı
 
@@ -380,7 +380,7 @@ Bu yöntem, tüm özellik ızgara denetimi nin ve resimler, yazı tipleri ve den
 
 ## <a name="cmfcpropertygridctrlalwaysshowusertooltip"></a><a name="alwaysshowusertooltip"></a>CMFCPropertyGridCtrl::AlwaysShowUserToolTip
 
-```
+```cpp
 void AlwaysShowUserToolTip(BOOL bShow = TRUE);
 ```
 
@@ -552,7 +552,7 @@ Yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 Özellik ızgara denetimindeki özellikler listesinin altında görüntülenen açıklama alanını etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableDescriptionArea(BOOL bEnable=TRUE);
 ```
 
@@ -569,7 +569,7 @@ Açıklama alanı özellik ızgara denetiminin alt kısmında görüntülenir. V
 
 Özellik ızgara denetiminin üst kısmındaki üstbilgi denetimini etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableHeaderCtrl(
     BOOL bEnable=TRUE,
     LPCTSTR lpszLeftColumn=_T("Property"),
@@ -610,7 +610,7 @@ Edit işlemi başarıyla sona ererse DOĞRU; Değiştirilen özellik verileri ge
 
 Özellik ızgara denetimini kaydırır ve belirtilen özellik görünür olana kadar özellik öğelerini genişletir.
 
-```
+```cpp
 void EnsureVisible(
     CMFCPropertyGridProperty* pProp,
     BOOL bExpandParents=FALSE);
@@ -630,7 +630,7 @@ void EnsureVisible(
 
 Tüm özellik ızgara kontrol düğümlerini genişletir veya daraltıyor.
 
-```
+```cpp
 void ExpandAll(BOOL bExpand=TRUE);
 ```
 
@@ -808,7 +808,7 @@ CMFCPropertyGridProperty* GetCurSel() const;
 
 Özellik ızgara denetim öğeleri için şu anda tanımlanan özel renkleri alır.
 
-```
+```cpp
 void GetCustomColors(
     COLORREF& clrBackground,
     COLORREF& clrText,
@@ -1225,7 +1225,7 @@ BOOL IsVSDotNetLook() const;
 
 Değiştirilen özelliklerin nasıl görüntülenebildiğini belirtir.
 
-```
+```cpp
 void MarkModifiedProperties(
     BOOL bMark=TRUE,
     BOOL bRedraw=TRUE);
@@ -1376,7 +1376,7 @@ Varsayılan olarak, bu yöntem [AFX_WM_PROPERTY_CHANGED](../../mfc/reference/afx
 
 Açılan kutu denetimi içeren bir özellik seçildiğinde çerçeve tarafından çağrılır.
 
-```
+```cpp
 void OnSelectCombo();
 ```
 
@@ -1386,7 +1386,7 @@ void OnSelectCombo();
 
 Tüm özellik nesnelerini bir özellik ızgara sıyrık denetiminden kaldırır.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -1396,7 +1396,7 @@ void RemoveAll();
 
 Tüm özelliklerin özgün değerlerini geri yükler.
 
-```
+```cpp
 void ResetOriginalValues(BOOL bRedraw=TRUE);
 ```
 
@@ -1411,7 +1411,7 @@ void ResetOriginalValues(BOOL bRedraw=TRUE);
 
 Alfabetik modu ayarlar veya sıfırlar.
 
-```
+```cpp
 void SetAlphabeticMode(BOOL bSet=TRUE);
 ```
 
@@ -1428,7 +1428,7 @@ void SetAlphabeticMode(BOOL bSet=TRUE);
 
 Boolean etiketlerinin metnini belirtir.
 
-```
+```cpp
 void SetBoolLabels(
     LPCTSTR lpszTrue,
     LPCTSTR lpszFalse);
@@ -1448,7 +1448,7 @@ void SetBoolLabels(
 
 Özellik ızgara denetiminde bir özellik seçer.
 
-```
+```cpp
 void SetCurSel(
     CMFCPropertyGridProperty* pProp,
     BOOL bRedraw=TRUE);
@@ -1470,7 +1470,7 @@ void SetCurSel(
 
 Özellik ızgara denetiminin çeşitli öğeleri için özel renkler belirtir.
 
-```
+```cpp
 void SetCustomColors(
     COLORREF clrBackground,
     COLORREF clrText,
@@ -1514,7 +1514,7 @@ Belirli bir özelliğin görünümünü özelleştirmek [için, CMFCPropertyGrid
 
 Geçerli özellik ızgara denetiminin açıklama bölümünde görüntülenecek satır sayısını belirtir.
 
-```
+```cpp
 void SetDescriptionRows(int nDescRows);
 ```
 
@@ -1527,7 +1527,7 @@ void SetDescriptionRows(int nDescRows);
 
 Geçerli özellik ızgara denetimindeki bir grup özellik için kategori adının tam genişliğini gösterip göstermeyeceğini belirtir.
 
-```
+```cpp
 void SetGroupNameFullWidth(
     BOOL bGroupNameFullWidth = TRUE,
     BOOL bRedraw = TRUE);
@@ -1551,7 +1551,7 @@ Terimler *grup adı* ve *kategori adı* bu yöntemde birbirinin yerine kullanıl
 
 Özellik değerleri listesinde delimiter olarak kullanılan bir karakter tanımlar.
 
-```
+```cpp
 void SetListDelimiter(TCHAR c);
 ```
 
@@ -1570,7 +1570,7 @@ Varsayılan olarak, [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygr
 
 Bir kullanıcı sütunları yeniden boyutlandırdığında, çerçevenin geçerli özellik ızgara denetiminin ad ve değer sütunlarını yeniden çizip yeniden çizmeyeceğini belirtir.
 
-```
+```cpp
 void SetShowDragContext(BOOL bShowDragContext = TRUE);
 ```
 
@@ -1587,7 +1587,7 @@ Kullanıcı, sütunlar arasındaki bölme çubuğunu sürükleyerek özellik ız
 
 Özellik ızgara denetiminin görünümünü Visual Studio .NET'te kullanılan stilolarak ayarlar.
 
-```
+```cpp
 void SetVSDotNetLook(BOOL bSet=TRUE);
 ```
 

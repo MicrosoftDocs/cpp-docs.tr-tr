@@ -311,12 +311,12 @@ helpviewer_keywords:
 - CMFCToolBar [MFC], m_bDontScaleImages
 - CMFCToolBar [MFC], m_dblLargeImageRatio
 ms.assetid: e7679c01-fb94-44c0-98c6-3af955292fb5
-ms.openlocfilehash: dc1a8b1fc852ff1071b20ced64fc8e0686725a83
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9a90327bde693b87a53838da35adde21ed48dfbb
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375068"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754038"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar Sınıfı
 
@@ -652,7 +652,7 @@ Türetilmiş sınıflarda kendi dinamik düzeninizi sağlamak için `CMFCToolbar
 
 Araç çubuğunun boyutunu yeniden hesaplar.
 
-```
+```cpp
 void AdjustSize();
 ```
 
@@ -920,7 +920,7 @@ Bir uygulama kapandığında çerçeve bu yöntemi çağırır.
 
 Kilitli araç çubuğu görüntüleri için ayrılan sistem kaynaklarını serbest sağlar.
 
-```
+```cpp
 void CleanUpLockedImages();
 ```
 
@@ -1139,7 +1139,7 @@ Araç çubuğundaki ayırıcıların görünümünü özelleştirmek için [CMFC
 
 Araç çubuğunda görünen Özelleştir düğmesini etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableCustomizeButton(
     BOOL bEnable,
     int iCustomizeCmd,
@@ -1199,7 +1199,7 @@ Bu yöntem, veri üyesini `CBasePane::m_dwControlBarStyle` AFX_CBRS_FLOAT ayarla
 
 Araç çubuğu düğmelerinde büyük simgeleri etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableLargeIcons(BOOL bEnable);
 ```
 
@@ -1229,7 +1229,7 @@ static void EnableQuickCustomization(BOOL bEnable=TRUE);
 
 Komut yansımasını etkinleştirer veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableReflections(BOOL bEnable = TRUE);
 ```
 
@@ -1248,7 +1248,7 @@ Komut yansıması hakkında daha fazla bilgi için Bkz. [TN062: Windows Denetiml
 
 Araç çubuğu düğmesi görüntülerinin altındaki metin etiketlerini etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableTextLabels(BOOL bEnable=TRUE);
 ```
 
@@ -1343,7 +1343,7 @@ Varsa araç çubuğu düğmesine işaretçi; veya böyle bir düğme yoksa NULL.
 
 Düğmenin komut kimliğini, stilini ve görüntü dizini belirli bir dizinde verir.
 
-```
+```cpp
 void GetButtonInfo(
     int nIndex,
     UINT& nID,
@@ -3211,7 +3211,7 @@ Bu yöntemi kullanan bir örnek için Explorer örneğine bakın.
 
 Araç çubuğu düğmesinin komut kimliğini, stilini ve resim kimliğini ayarlar.
 
-```
+```cpp
 void SetButtonInfo(
     int nIndex,
     UINT nID,
@@ -3374,7 +3374,7 @@ Bu yöntem, uygulamadaki her araç çubuğunun düzenini ayarlar ve yeniden çiz
 
 Araç çubuğundaki kullanılamayan düğmelerin solukolarak mı yoksa düğme de kullanılamayan görüntülerin kullanılıp kullanılmadığını belirtir.
 
-```
+```cpp
 void SetGrayDisabledButtons(BOOL bGrayDisabledButtons);
 ```
 
@@ -3391,7 +3391,7 @@ Varsayılan olarak, kullanılamayan düğmeler soluk.
 
 Araç çubuğunun yüksekliğini ayarlar.
 
-```
+```cpp
 void SetHeight(int cyHeight);
 ```
 
@@ -3434,7 +3434,7 @@ BOOL SetHot(CMFCToolBarButton* pMenuButton);
 
 Araç çubuğu düğmelerinin sıcak izlenip izlenmediğini belirtir.
 
-```
+```cpp
 void SetHotBorder(BOOL bShowHotBorder);
 ```
 
@@ -3468,7 +3468,7 @@ Sıcak izlenen araç çubuğu düğmeleri hakkında daha fazla bilgi için [CMFC
 
 ## <a name="cmfctoolbarsetignoresettext"></a><a name="setignoresettext"></a>CMFCToolBar::SetIgnoreSetText
 
-```
+```cpp
 void SetIgnoreSetText(BOOL bValue);
 ```
 
@@ -3503,7 +3503,7 @@ Varsayılan olarak, çerçeve normal simgeler görüntüler.
 
 Araç çubuğunda kilitli düğmelerin ve kilitli görüntülerin boyutlarını ayarlar.
 
-```
+```cpp
 void SetLockedSizes(
     SIZE sizeButton,
     SIZE sizeImage,
@@ -3529,7 +3529,7 @@ Kilitli görüntülerin boyutunu almak için [CMFCToolBar::GetLockedImageSize](#
 
 ## <a name="cmfctoolbarsetmaskmode"></a><a name="setmaskmode"></a>CMFCToolBar::SetMaskMode
 
-```
+```cpp
 void SetMaskMode(BOOL bMasked);
 ```
 
@@ -3588,7 +3588,7 @@ Bu yöntem, izin verilmeyen komutların önceki listesini temizler. Varsayılan 
 
 Araç çubuğunu ve kardeşini aynı satıra konumlandırın.
 
-```
+```cpp
 void SetOneRowWithSibling();
 ```
 
@@ -3602,7 +3602,7 @@ Kullanıcı **İki Satır'da Göster Düğmeleri'ni** tıklattığında ÇERÇEV
 
 ## <a name="cmfctoolbarsetorigbuttons"></a><a name="setorigbuttons"></a>CMFCToolBar::SetOrigButtons
 
-```
+```cpp
 void SetOrigButtons(const CObList& lstOrigButtons);
 ```
 
@@ -3616,7 +3616,7 @@ void SetOrigButtons(const CObList& lstOrigButtons);
 
 Kullanıcının araç çubuğunu kapatıp kapatamayacağını belirtir.
 
-```
+```cpp
 void SetPermament(BOOL bPermament=TRUE);
 ```
 
@@ -3635,7 +3635,7 @@ Varsayılan olarak, bir kullanıcı her araç çubuğunu kapatabilir.
 
 Üst çerçevenin veya sahibinin komutları araç çubuğuna gönderip göndermediğini belirtir.
 
-```
+```cpp
 void SetRouteCommandsViaFrame(BOOL bValue);
 ```
 
@@ -3671,7 +3671,7 @@ Varsayılan olarak, çerçeve araç ipuçlarını gösterir.
 
 Araç çubuğunun kardeşini belirtir.
 
-```
+```cpp
 void SetSiblingToolBar(CMFCToolBar* pBrotherToolbar);
 ```
 
@@ -3716,7 +3716,7 @@ Araç çubuğu düğmesi görüntülerinin boyutunu almak için [CMFCToolBar::Ge
 
 Araç çubuğundaki bir düğmenin özelliklerini belirtir.
 
-```
+```cpp
 void SetToolBarBtnText(
     UINT nBtnIndex,
     LPCTSTR szText=NULL,
@@ -3748,7 +3748,7 @@ Hata Ayıklama oluştururda, *nBtnIndex* geçerli bir araç çubuğu düğmesine
 
 Araç çubuğunu ve kardeşini ayrı satırlara konumlandırın.
 
-```
+```cpp
 void SetTwoRowsWithSibling();
 ```
 
@@ -3840,7 +3840,7 @@ Alt tuşu ile birlikte bir tuşa basıldığında çerçeve bu yöntemi çağır
 
 Belirtilen düğmenin durumunu güncelleştirir.
 
-```
+```cpp
 void UpdateButton(int nIndex);
 ```
 

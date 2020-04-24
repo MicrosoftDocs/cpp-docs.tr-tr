@@ -21,16 +21,16 @@ f1_keywords:
 helpviewer_keywords:
 - Vector Class (C++/Cx)
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
-ms.openlocfilehash: b2d08461b4ab57ed8479549c18c35c872d0eb9f1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 60c82a113bc19e9652af8c1ad531e1c479077f20
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81354379"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82032154"
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections::Vector Sınıfı
 
-Dizin tarafından tek tek erişilebilen sıralı bir nesne koleksiyonunu temsil eder. Windows [uygular::Foundation::Collections::IObservableVector](/uwp/api/Windows.Foundation.Collections.IObservableVector_T_) XAML [veri bağlama](/windows/uwp/data-binding/data-binding-in-depth)ile yardımcı olmak için .
+Dizin tarafından tek tek erişilebilen sıralı bir nesne koleksiyonunu temsil eder. Windows [uygular::Foundation::Collections::IObservableVector](/uwp/api/windows.foundation.collections.iobservablevector-1) XAML [veri bağlama](/windows/uwp/data-binding/data-binding-in-depth)ile yardımcı olmak için .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,9 +61,9 @@ Vektör nesnesinde bulunan öğelerin türü.
 
 1. public enum sınıfı
 
-**Vektör** [sınıfı, Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_) arabiriminin C++ somut uygulamasıdır.
+**Vektör** [sınıfı, Windows::Foundation::Collections::IVector](/uwp/api/windows.foundation.collections.ivector-1) arabiriminin C++ somut uygulamasıdır.
 
-Genel getiri değeri veya parametrede **vektör** türü kullanmaya çalışırsanız, derleyici hatası C3986 yükseltilir. Parametreyi veya döndürme değer türünü Windows olarak değiştirerek hatayı [düzeltebilirsiniz::Temel::Koleksiyonlar::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_). Daha fazla bilgi için [Bkz. Koleksiyonlar (C++/CX)](../cppcx/collections-c-cx.md).
+Genel getiri değeri veya parametrede **vektör** türü kullanmaya çalışırsanız, derleyici hatası C3986 yükseltilir. Parametreyi veya döndürme değer türünü Windows olarak değiştirerek hatayı [düzeltebilirsiniz::Temel::Koleksiyonlar::IVector](/uwp/api/windows.foundation.collections.ivector-1). Daha fazla bilgi için [Bkz. Koleksiyonlar (C++/CX)](../cppcx/collections-c-cx.md).
 
 ### <a name="members"></a>Üyeler
 
@@ -96,7 +96,7 @@ Genel getiri değeri veya parametrede **vektör** türü kullanmaya çalışırs
 |||
 |-|-|
 |Adı|Açıklama|
-|olay [Windows::Foundation::Koleksiyon::VectorChangedEventHandler\<T>^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler)|Vektör değiştiğinde oluşur.|
+|olay [Windows::Foundation::Koleksiyon::VectorChangedEventHandler\<T>^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1)|Vektör değiştiğinde oluşur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -226,7 +226,7 @@ virtual bool IndexOf(T value, unsigned int* index);
 
 ### <a name="parameters"></a>Parametreler
 
-*Değer*<br/>
+*value*<br/>
 Bulunması gereken öğe.
 
 *Dizin*<br/>
@@ -375,7 +375,7 @@ Geçerli Vektör'ü başlatmaya kullanılan nesneler koleksiyonundaki öğe say�
 *Boyutu*<br/>
 Vektördeki eleman sayısı.
 
-*Değer*<br/>
+*value*<br/>
 Geçerli Vektör'deki her öğeyi başlatmak için kullanılan bir değer.
 
 *v*<br/>

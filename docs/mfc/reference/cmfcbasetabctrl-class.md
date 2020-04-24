@@ -238,12 +238,12 @@ helpviewer_keywords:
 - CMFCBaseTabCtrl [MFC], m_bActivateTabOnRightClick
 - CMFCBaseTabCtrl [MFC], m_bAutoDestroyWindow
 ms.assetid: 7270c55f-6f6e-4dd2-b0d2-291afeac3882
-ms.openlocfilehash: db82a3c9019655fae850002d9e664e5de5407aa6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 92728a1725cc1ceb9569c3c7f44918e56cf2d947
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367825"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754904"
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl Sınıfı
 
@@ -425,7 +425,7 @@ Aşağıdaki ipuçları `CMFCBaseTabCtrl Class` ve ondan miras herhangi bir sın
 
 Korumalı `CMap m_mapAddedIcons` üyedeki simgeler listesine bir simge ekler.
 
-```
+```cpp
 void AddIcon(
     HICON hIcon,
     int iIcon);
@@ -494,7 +494,7 @@ virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 
 ## <a name="cmfcbasetabctrlautodestroywindow"></a><a name="autodestroywindow"></a>CMFCBaseTabCtrl::AutoDestroyWindow
 
-```
+```cpp
 void AutoDestroyWindow(BOOL bAutoDestroy = TRUE);
 ```
 
@@ -598,7 +598,7 @@ Sıfırsız eğer başarılı; aksi takdirde 0.
 
 ## <a name="cmfcbasetabctrlenableactivatelastactive"></a><a name="enableactivatelastactive"></a>CMFCBaseTabCtrl::EnableActivateLastActive
 
-```
+```cpp
 void EnableActivateLastActive(BOOL bLastActive = TRUE);
 ```
 
@@ -612,7 +612,7 @@ void EnableActivateLastActive(BOOL bLastActive = TRUE);
 
 Sekme çizerken çerçevenin otomatik arka plan renklerini kullanıp kullanmayacağını denetler.
 
-```
+```cpp
 void EnableAutoColor(BOOL bEnable = TRUE);
 ```
 
@@ -695,7 +695,7 @@ Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 Kullanıcının fareyi kullanarak sekme sırasını değiştirmesini sağlar.
 
-```
+```cpp
 void EnableTabSwap(BOOL bEnable);
 ```
 
@@ -733,7 +733,7 @@ Varsayılan olarak, bu yöntem `CMFCBaseTabCtrl Class`tarafından desteklenmez. 
 
 ## <a name="cmfcbasetabctrlenterdragmode"></a><a name="enterdragmode"></a>CMFCBaseTabCtrl::EnterDragMode
 
-```
+```cpp
 void EnterDragMode();
 ```
 
@@ -1409,7 +1409,7 @@ virtual void InsertTab(
 
 ## <a name="cmfcbasetabctrlinvalidatetab"></a><a name="invalidatetab"></a>CMFCBaseTabCtrl::Geçersiz Kılma
 
-```
+```cpp
 void InvalidateTab(int iTab);
 ```
 
@@ -1944,7 +1944,7 @@ virtual BOOL RenameTab();
 
 [CMFCBaseTabCtrl Sınıfı'nın](../../mfc/reference/cmfcbasetabctrl-class.md)bir örneği için görüntü listesini sıfırlar.
 
-```
+```cpp
 void ResetImageList();
 ```
 
@@ -2019,7 +2019,7 @@ Varsayılan olarak, çerçeve [GetSysColor](/windows/win32/api/winuser/nf-winuse
 
 Çerçevenin otomatik renk modunda kullandığı sekme denetiminin renklerini ayarlar.
 
-```
+```cpp
 void SetAutoColors(const CArray<COLORREF,COLORREF>& arColors);
 ```
 
@@ -2038,7 +2038,7 @@ Otomatik renk modunu etkinleştirmek için [CMFCBaseTabCtrl::EnableAutoColor](#e
 
 [CDockablePane Sınıfından](../../mfc/reference/cdockablepane-class.md)türetilmiş olmayan nesneler için kullanılan sarıcı sınıfını ayarlar.
 
-```
+```cpp
 void SetDockingBarWrapperRTC(CRuntimeClass* pRTC);
 ```
 
@@ -2055,7 +2055,7 @@ void SetDockingBarWrapperRTC(CRuntimeClass* pRTC);
 
 Sekme etiketlerinde önek karakterlerinin işlenmesini sağlar ve devre dışı katır.
 
-```
+```cpp
 void SetDrawNoPrefix(
     BOOL bNoPrefix,
     BOOL bRedraw = TRUE);

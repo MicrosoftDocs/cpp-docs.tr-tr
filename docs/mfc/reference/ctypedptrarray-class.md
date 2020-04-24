@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CTypedPtrArray [MFC], SetAt
 - CTypedPtrArray [MFC], SetAtGrow
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
-ms.openlocfilehash: a996bca471ce82a7c2adaaad67670ddef417eda1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 20cf147e955b6b19919f35750b0f46a8b5a67ad0
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373276"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752068"
 ---
 # <a name="ctypedptrarray-class"></a>CTypedPtrArray Sınıfı
 
@@ -144,7 +144,7 @@ Daha ayrıntılı açıklamalar için [CObArray::Append'e](../../mfc/reference/c
 
 Bu üye `BASE_CLASS`işlev **::Kopyala**.
 
-```
+```cpp
 void Copy(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 ```
 
@@ -215,7 +215,7 @@ Daha ayrıntılı açıklamalar için [Bkz. CObArray::GetAt](../../mfc/reference
 
 Bu üye `BASE_CLASS`işlev **::InsertAt**.
 
-```
+```cpp
 void InsertAt(
     INT_PTR nIndex,
     TYPE newElement,
@@ -280,7 +280,7 @@ Kitaplığın Hata Ayıklama sürümü, alt yazının (atama deyiminin solunda v
 
 Bu üye `BASE_CLASS`işlev **::SetAt.**
 
-```
+```cpp
 void SetAt(
     INT_PTR nIndex,
     TYPE ptr);
@@ -305,7 +305,7 @@ Daha ayrıntılı açıklamalar için [CObArray::SetAt'a](../../mfc/reference/co
 
 Bu üye `BASE_CLASS`işlev **::SetAtGrow**.
 
-```
+```cpp
 void SetAtGrow(
     INT_PTR nIndex,
     TYPE newElement);

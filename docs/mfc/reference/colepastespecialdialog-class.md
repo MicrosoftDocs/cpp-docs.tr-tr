@@ -28,12 +28,12 @@ helpviewer_keywords:
 - COlePasteSpecialDialog [MFC], GetSelectionType
 - COlePasteSpecialDialog [MFC], m_ps
 ms.assetid: 0e82ef9a-9bbe-457e-8240-42c86a0534f7
-ms.openlocfilehash: 5e67a81f48b8cdf0dae6dc90fc2ded8dc44a73ab
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 47fb421ef9dedcae7f92d33f55988dbbc2ea452d
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376984"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753821"
 ---
 # <a name="colepastespecialdialog-class"></a>COlePasteSpecialDialog Sınıfı
 
@@ -105,7 +105,7 @@ OLE'ye özgü iletişim kutuları yla ilgili daha fazla bilgi için, [OLE'deki �
 
 Uygulamanızın özel yapıştır işleminde destekleyebileceği biçimler listesine yeni biçimler eklemek için bu işlevi arayın.
 
-```
+```cpp
 void AddFormat(
     const FORMATETC& formatEtc,
     LPTSTR lpszFormat,
@@ -178,7 +178,7 @@ Yeni bağlantı girişiiçin bilgileri içeren bir [OLEUIPASTEFLAG](/windows/win
 
 Uygulamanızın yapıştırabileceği özel bir işlemde destekleyebileceği biçimler listesine aşağıdaki Pano biçimlerini eklemek için bu işlevi arayın:
 
-```
+```cpp
 void AddStandardFormats(BOOL bEnableLink = TRUE);
 ```
 

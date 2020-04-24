@@ -60,12 +60,12 @@ helpviewer_keywords:
 - COleSafeArray [MFC], UnaccessData
 - COleSafeArray [MFC], Unlock
 ms.assetid: f45a5224-5f48-40ec-9ddd-287ef9740150
-ms.openlocfilehash: a7be9910b573cb5bc430d6608e75ce6661b71bc2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 10e9975bac776429a38bfc707215a9465ce35c2e
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374871"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753764"
 ---
 # <a name="colesafearray-class"></a>COleSafeArray Sınıfı
 
@@ -144,7 +144,7 @@ class COleSafeArray : public tagVARIANT
 
 Dizi verilerine bir işaretçi alır.
 
-```
+```cpp
 void AccessData(void** ppvData);
 ```
 
@@ -165,7 +165,7 @@ Hata üzerine, işlev bir [CMemoryException](../../mfc/reference/cmemoryexceptio
 
 Belleği güvenli bir dizi için ayırır.
 
-```
+```cpp
 void AllocData();
 ```
 
@@ -177,7 +177,7 @@ Hata üzerine, işlev bir [CMemoryException](../../mfc/reference/cmemoryexceptio
 
 Belleği güvenli bir dizinin tanımlayıcısı için ayırır.
 
-```
+```cpp
 void AllocDescriptor(DWORD dwDims);
 ```
 
@@ -194,7 +194,7 @@ Hata üzerine, işlev bir [CMemoryException](../../mfc/reference/cmemoryexceptio
 
 Varolan `VARIANT` bir dizideki verilerin denetimini `COleSafeArray` nesneye verir.
 
-```
+```cpp
 void Attach(VARIANT& varSrc);
 ```
 
@@ -215,7 +215,7 @@ Kaynak `VARIANT`türü VT_EMPTY olarak ayarlanır. Bu işlev varsa geçerli dizi
 
 Güvenli diziyi temizler.
 
-```
+```cpp
 void Clear();
 ```
 
@@ -271,7 +271,7 @@ Hata üzerine, işlev bir [CMemoryException](../../mfc/reference/cmemoryexceptio
 
 Varolan güvenli dizinin bir kopyasını oluşturur.
 
-```
+```cpp
 void Copy(LPSAFEARRAY* ppsa);
 ```
 
@@ -288,7 +288,7 @@ Hata üzerine, işlev bir [CMemoryException](../../mfc/reference/cmemoryexceptio
 
 Dizi için verileri ayırır ve başharfe ayırır.
 
-```
+```cpp
 void Create(
     VARTYPE vtSrc,
     DWORD dwDims,
@@ -326,7 +326,7 @@ Bu işlev gerekirse geçerli dizi verilerini temizler. Hata üzerine, işlev bir
 
 Yeni bir tek boyutlu `COleSafeArray` nesne oluşturur.
 
-```
+```cpp
 void CreateOneDim(
     VARTYPE vtSrc,
     DWORD dwElements,
@@ -362,7 +362,7 @@ Hata üzerine, işlev bir [CMemoryException](../../mfc/reference/cmemoryexceptio
 
 Varolan bir dizi tanımlayıcısını ve dizideki tüm verileri yok eder.
 
-```
+```cpp
 void Destroy();
 ```
 
@@ -374,7 +374,7 @@ Nesneler dizide depolanırsa, her nesne serbest bırakılır. Hata üzerine, iş
 
 Güvenli bir dizideki tüm verileri yok eder.
 
-```
+```cpp
 void DestroyData();
 ```
 
@@ -386,7 +386,7 @@ Nesneler dizide depolanırsa, her nesne serbest bırakılır. Hata üzerine, iş
 
 Güvenli bir dizinin tanımlayıcısı yok eder.
 
-```
+```cpp
 void DestroyDescriptor();
 ```
 
@@ -420,7 +420,7 @@ Hata üzerine, işlev bir [COleException](../../mfc/reference/coleexception-clas
 
 Güvenli dizinin içeriğini bir `CByteArray`.
 
-```
+```cpp
 void GetByteArray(CByteArray& bytes);
 ```
 
@@ -449,7 +449,7 @@ Güvenli dizideki boyut sayısı.
 
 Güvenli dizinin tek bir öğesini alır.
 
-```
+```cpp
 void GetElement(
     long* rgIndices,
     void* pvData);
@@ -489,7 +489,7 @@ Güvenli bir dizinin öğelerinin baytboyutu.
 
 Nesnenin herhangi bir `COleSafeArray` boyutu için alt sınırı döndürür.
 
-```
+```cpp
 void GetLBound(
     DWORD dwDim,
     long* pLBound);
@@ -531,7 +531,7 @@ Tek boyutlu güvenli dizideki öğelerin sayısı.
 
 Güvenli bir dizinin herhangi bir boyutu için üst sınırı döndürür.
 
-```
+```cpp
 void GetUBound(
     DWORD dwDim,
     long* pUBound);
@@ -557,7 +557,7 @@ Hata üzerine, işlev bir [COleException](../../mfc/reference/coleexception-clas
 
 Bir dizinin kilit sayısını artımlar ve dizi tanımlayıcısındadizi verilerine bir işaretçi yer.
 
-```
+```cpp
 void Lock();
 ```
 
@@ -640,7 +640,7 @@ CDumpContext& AFXAPI operator<<(
 
 Dizin değerleri tarafından belirtilen öğeye bir işaretçi döndürür.
 
-```
+```cpp
 void PtrOfIndex(
     long* rgIndices,
     void** ppvData);
@@ -658,7 +658,7 @@ Döndükten sonra, *rgIndices*değerleri tarafından tanımlanan öğeyi işaret
 
 Diziye tek bir öğe atar.
 
-```
+```cpp
 void PutElement(
     long* rgIndices,
     void* pvData);
@@ -688,7 +688,7 @@ Hata üzerine, işlev bir [CMemoryException](../../mfc/reference/cmemoryexceptio
 
 Güvenli bir dizinin en az önemli (en sağ) bağlı olduğunu değiştirir.
 
-```
+```cpp
 void Redim(SAFEARRAYBOUND* psaboundNew);
 ```
 
@@ -705,7 +705,7 @@ Hata üzerine, işlev bir [COleException](../../mfc/reference/coleexception-clas
 
 Tek boyutlu `COleSafeArray` bir nesnedeki öğelerin sayısını değiştirir.
 
-```
+```cpp
 void ResizeOneDim(DWORD dwElements);
 ```
 
@@ -726,7 +726,7 @@ Hata üzerine, işlev bir [COleException](../../mfc/reference/coleexception-clas
 
 Bir dizinin kilit sayısını atar ve '' `AccessData`tarafından alınan işaretçiyi geçersiz kılmışolur.
 
-```
+```cpp
 void UnaccessData();
 ```
 
@@ -742,7 +742,7 @@ Hata üzerine, işlev bir [COleException](../../mfc/reference/coleexception-clas
 
 Bir dizinin kilit sayısını serbest bırakılabilmek veya yeniden boyutlandırılabilmek için atar.
 
-```
+```cpp
 void Unlock();
 ```
 

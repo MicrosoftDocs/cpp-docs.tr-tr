@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CFontDialog [MFC], IsUnderline
 - CFontDialog [MFC], m_cf
 ms.assetid: 6228d500-ed0f-4156-81e5-ab0d57d1dcf4
-ms.openlocfilehash: 6ece239496def9fd65a95a622ac3c475fe5becea
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6a8e24b68f377235c1f1e21fbcd5618aebbe299a
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373831"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81755017"
 ---
 # <a name="cfontdialog-class"></a>CFontDialog Sınıfı
 
@@ -196,7 +196,7 @@ IDOK ve IDCANCEL, kullanıcının Ok veya İptal düğmesini seçip seçmediğin
 
 Seçili yazı tipinin karakter biçimlendirmesini alır.
 
-```
+```cpp
 void GetCharFormat(CHARFORMAT& cf) const;
 ```
 
@@ -225,7 +225,7 @@ Seçili yazı tipinin rengi.
 
 Şu anda seçili yazı tipinin özelliklerini [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısının üyelerine atamak için bu işlevi arayın.
 
-```
+```cpp
 void GetCurrentFont(LPLOGFONT lplf);
 ```
 

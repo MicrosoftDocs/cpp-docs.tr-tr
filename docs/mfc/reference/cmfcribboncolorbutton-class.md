@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CMFCRibbonColorButton [MFC], SetPalette
 - CMFCRibbonColorButton [MFC], UpdateColor
 ms.assetid: 6b4b4ee3-8cc0-41b4-a4eb-93e8847008e1
-ms.openlocfilehash: 8cf92d8d4b1b113f751bee85ac2a7df6eb06afea
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 528b883d75889589c7021f462324dd9dcb71be25
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375249"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754849"
 ---
 # <a name="cmfcribboncolorbutton-class"></a>CMFCRibbonColorButton Sınıfı
 
@@ -116,7 +116,7 @@ Aşağıdaki örnek, sınıfta çeşitli yöntemlerin `CMFCRibbonColorButton` na
 
 Normal renk alanına bir renk grubu ekler.
 
-```
+```cpp
 void AddColorsGroup(
     LPCTSTR lpszName,
     const CList<COLORREF,COLORREF>& lstColors,
@@ -188,7 +188,7 @@ CMFCRibbonColorButton(
 
 **Otomatik** düğmenin etkin olup olmadığını belirtir.
 
-```
+```cpp
 void EnableAutomaticButton(
     LPCTSTR lpszLabel,
     COLORREF colorAutomatic,
@@ -222,7 +222,7 @@ void EnableAutomaticButton(
 
 **Diğer** düğmeyi etkinleştiri.
 
-```
+```cpp
 void EnableOtherButton(
     LPCTSTR lpszLabel,
     LPCTSTR lpszToolTip=NULL);
@@ -310,7 +310,7 @@ Açılır renk paletinde şu anda seçili öğenin rengi.
 
 Tüm renk gruplarını normal renk alanından kaldırır.
 
-```
+```cpp
 void RemoveAllColorGroups();
 ```
 
@@ -318,7 +318,7 @@ void RemoveAllColorGroups();
 
 Normal renk alanından bir renk seçer.
 
-```
+```cpp
 void SetColor(COLORREF color);
 ```
 
@@ -331,7 +331,7 @@ void SetColor(COLORREF color);
 
 Renk çubuğunda görünen tüm renk öğelerinin boyutunu ayarlar.
 
-```
+```cpp
 void SetColorBoxSize(CSize sizeBox);
 ```
 
@@ -366,7 +366,7 @@ Aradığı `CMFCColorBar::SetColorName`için, bu yöntem uygulamanızdaki tüm `
 
 Kullanıcının renk seçimi işlemi sırasında kullanıcıya sunulan renkler tablosunda görüntülenen sütun sayısını ayarlar.
 
-```
+```cpp
 void SetColumns(int nColumns);
 ```
 
@@ -381,7 +381,7 @@ void SetColumns(int nColumns);
 
 Belge renk alanında görüntülenecek RGB değerlerinin listesini belirtir.
 
-```
+```cpp
 void SetDocumentColors(
     LPCTSTR lpszLabel,
     CList<COLORREF,COLORREF>& lstColors);
@@ -399,7 +399,7 @@ void SetDocumentColors(
 
 Renk düğmesinin görüntülenebilen renk tablosunda görüntülenecek standart renkleri belirtir.
 
-```
+```cpp
 void SetPalette(CPalette* pPalette);
 ```
 
@@ -414,7 +414,7 @@ void SetPalette(CPalette* pPalette);
 
 Kullanıcı renk düğmesini tıklattığında görüntülenen renk tablosundan bir renk seçtiğinde çerçeve tarafından çağrılır.
 
-```
+```cpp
 void UpdateColor(COLORREF color);
 ```
 

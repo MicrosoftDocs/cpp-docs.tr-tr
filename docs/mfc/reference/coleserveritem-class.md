@@ -74,12 +74,12 @@ helpviewer_keywords:
 - COleServerItem [MFC], OnShow
 - COleServerItem [MFC], m_sizeExtent
 ms.assetid: 80256df6-3888-4256-944b-787d4b2e6b0d
-ms.openlocfilehash: 5373075cf6dfc54e6e2368e46f48f317fcec64d9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bdb91168a7c0ae718ca7d7514448b55965186aa8
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376111"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753747"
 ---
 # <a name="coleserveritem-class"></a>COleServerItem Sınıfı
 
@@ -175,7 +175,7 @@ Sunucular ve ilgili konular hakkında daha fazla bilgi için, makale [Sunucular�
 
 OLE öğesinin sunusunu ve dönüşüm biçimlerini belirtilen `COleDataSource` nesneye yerleştirmek için bu işlevi çağırın.
 
-```
+```cpp
 void AddOtherClipboardData(COleDataSource* pDataSource);
 ```
 
@@ -210,7 +210,7 @@ Bir bağlantı yayımlandığında nesnenin silinip silinemeyeceğini belirten b
 
 OLE öğesini Pano'ya kopyalamak için bu işlevi arayın.
 
-```
+```cpp
 void CopyToClipboard(BOOL bIncludeLink = FALSE);
 ```
 
@@ -275,7 +275,7 @@ Sürükleme gecikmesi bilgilerinin kayıt defterinde veya .' de nasıl depoland�
 
 [CopyToClipboard](#copytoclipboard) 'u aradıysanız, belirtilen [COleDataSource](../../mfc/reference/coledatasource-class.md) nesnesini Pano'ya kopyalanacak tüm verilerle doldurmak için bu işlevi arayın [(DoDragDrop'u](#dodragdrop)ararsanız aynı veriler de aktarılır).
 
-```
+```cpp
 void GetClipboardData(
     COleDataSource* pDataSource,
     BOOL bIncludeLink = FALSE,
@@ -339,7 +339,7 @@ Bu, bağımsız değişken olarak aktardığınız sunucu belgesine `COleServerI
 
 Bir OLE öğesi için CF_EMBEDSOURCE verilerini almak için bu işlevi arayın.
 
-```
+```cpp
 void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
 ```
 
@@ -401,7 +401,7 @@ Daha fazla bilgi için Windows SDK'daki [STGMEDIUM'a](/windows/win32/api/objidl/
 
 Bir OLE öğesinin CF_OBJECTDESCRIPTOR verilerini almak için bu işlevi arayın.
 
-```
+```cpp
 void GetObjectDescriptorData(
     LPPOINT lpOffset,
     LPSIZE lpSize,
@@ -475,7 +475,7 @@ CSize m_sizeExtent;
 
 Bağlı öğe değiştirildikten sonra bu işlevi arayın.
 
-```
+```cpp
 void NotifyChanged(DVASPECT nDrawAspect = DVASPECT_CONTENT);
 ```
 
@@ -982,7 +982,7 @@ Varsayılan uygulama, belgedeki `COleClientItem` tüm nesneler için [UpdateLink
 
 Adını ayarlamak için bağlantılı bir öğe oluştururken bu işlevi çağırın.
 
-```
+```cpp
 void SetItemName(LPCTSTR lpszItemName);
 ```
 

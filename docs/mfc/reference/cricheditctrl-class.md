@@ -152,12 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: 07c3c864e91d8aebc8d70f54fed4286a24986208
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1c601d036d05048bff9b60f837140e8f7a873964
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368281"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754436"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl Sınıfı
 
@@ -377,7 +377,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_CHARFROMPOS](/windows/win32/Controls
 
 Zengin düzen denetimindeki geçerli seçimi (varsa) siler (temizler).
 
-```
+```cpp
 void Clear();
 ```
 
@@ -397,7 +397,7 @@ Daha fazla bilgi için Windows SDK'daki [WM_CLEAR](/windows/win32/dataxchg/wm-cl
 
 Pano'ya zengin edit denetiminde geçerli seçimi (varsa) kopyalar.
 
-```
+```cpp
 void Copy();
 ```
 
@@ -489,7 +489,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Edit denetiminin stilini belirtir. [Windows](#create) SDK'da açıklanan **Açıklamalar** bölümünde listelenen pencere stillerinin bir birleşimini uygulayın ve [denetim stillerini edin.](/windows/win32/Controls/edit-control-styles)
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -525,7 +525,7 @@ Windows açısından zengin bir edit denetimi oluşturmak için [Oluştur'u](#cr
 
 Zengin düzen denetimindeki geçerli seçimi (varsa) silin (keser) ve silinen metni Pano'ya kopyalayın.
 
-```
+```cpp
 void Cut();
 ```
 
@@ -572,7 +572,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_DISPLAYBAND](/windows/win32/Controls
 
 Bu zengin edit denetiminin geri alamet bayrağını sıfırlar (temizleyin).
 
-```
+```cpp
 void EmptyUndoBuffer();
 ```
 
@@ -966,7 +966,7 @@ Bu üye işlev, işletim sisteminin yalnızca Asya dilindesürümlerinde kullan�
 
 Bu `CRichEditCtrl` nesne için biçimlendirme dikdörtgeni alır.
 
-```
+```cpp
 void GetRect(LPRECT lpRect) const;
 ```
 
@@ -1005,7 +1005,7 @@ Geri alınabilecek veya yeniden yapılabilecek eylem türleri yazma, silme, sür
 
 Bu `CRichEditCtrl` nesnedeki geçerli seçimin sınırlarını alır.
 
-```
+```cpp
 void GetSel(CHARRANGE& cr) const;
 
 void GetSel(
@@ -1256,7 +1256,7 @@ Bu üye işlev yalnızca işletim sisteminin Asya dilindesürümleri için kulla
 
 Seçimin görünürlüğünü değiştirir.
 
-```
+```cpp
 void HideSelection(
     BOOL bHide,
     BOOL bPerm);
@@ -1284,7 +1284,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_HIDESELECTION](/windows/win32/Contro
 
 Kullanıcının bir denetim denetimine girebileceği metnin uzunluğunu sınırlar.
 
-```
+```cpp
 void LimitText(long nChars = 0);
 ```
 
@@ -1391,7 +1391,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_LINELENGTH](/windows/win32/Controls/
 
 Çok satırlı bir düzen denetiminin metnini kaydırır.
 
-```
+```cpp
 void LineScroll(
     int nLines,
     int nChars = 0);
@@ -1421,7 +1421,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_LINESCROLL](/windows/win32/Controls/
 
 Panodaki `CRichEditCtrl` verileri ekleme noktasına, basamak konumuna ekler.
 
-```
+```cpp
 void Paste();
 ```
 
@@ -1439,7 +1439,7 @@ Daha fazla bilgi için Windows SDK'daki [WM_PASTE](/windows/win32/dataxchg/wm-pa
 
 Verileri belirli bir Pano biçiminde bu `CRichEditCtrl` nesneye yapıştırır.
 
-```
+```cpp
 void PasteSpecial(
     UINT nClipFormat,
     DWORD dvAspect = 0,
@@ -1508,7 +1508,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_REDO](/windows/win32/Controls/em-red
 
 Bu `CRichEditCtrl` nesnedeki geçerli seçimi belirtilen metinle değiştirir.
 
-```
+```cpp
 void ReplaceSel(
     LPCTSTR lpszNewText,
     BOOL bCanUndo = FALSE);
@@ -1540,7 +1540,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_REPLACESEL](/windows/win32/Controls/
 
 Bu `CRichEditCtrl` nesneyi EN_REQUESTRESIZE bildirim iletileri göndermeye zorlar.
 
-```
+```cpp
 void RequestResize();
 ```
 
@@ -1667,7 +1667,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_SETEVENTMASK](/windows/win32/Control
 
 Bir denetim için değiştirilmiş bayrağı ayarlar veya temizler.
 
-```
+```cpp
 void SetModify(BOOL bModified = TRUE);
 ```
 
@@ -1713,7 +1713,7 @@ Daha fazla bilgi için Windows [SDK'daki EM_SETOLECALLBACK](/windows/win32/Contr
 
 Bu `CRichEditCtrl` nesne için seçenekleri ayarlar.
 
-```
+```cpp
 void SetOptions(
     WORD wOp,
     DWORD dwFlags);
@@ -1848,7 +1848,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_SETREADONLY](/windows/win32/Controls
 
 Bu `CRichEditCtrl` nesne için biçimlendirme dikdörtgenini ayarlar.
 
-```
+```cpp
 void SetRect(LPCRECT lpRect);
 ```
 
@@ -1871,7 +1871,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_SETRECT](/windows/win32/Controls/em-
 
 Seçimi bu `CRichEditCtrl` nesne içinde ayarlar.
 
-```
+```cpp
 void SetSel(
     long nStartChar,
     long nEndChar);
@@ -2076,7 +2076,7 @@ Bu ileti yalnızca işletim sisteminin Asya dilindesürümlerinde kullanılabili
 
 Denetimin geçerli geri alma eylemine ek yazma eylemleri toplamasını durdurur.
 
-```
+```cpp
 void StopGroupTyping();
 ```
 

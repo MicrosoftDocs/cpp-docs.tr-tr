@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CMDIFrameWnd [MFC], MDISetMenu
 - CMDIFrameWnd [MFC], MDITile
 ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
-ms.openlocfilehash: a6e68f6368a7b45e0a566a7d2d12f23a9cd62b12
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d5c9bc12e6c3f0ab4742a940547087c9742caf73
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370055"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754551"
 ---
 # <a name="cmdiframewnd-class"></a>CMDIFrameWnd Sınıfı
 
@@ -242,7 +242,7 @@ Standart menü komut iI'lerini kullanmayan bir Pencere menüsü varsa bu üye i�
 
 Farklı bir MDI alt penceresi etkinleştirir.
 
-```
+```cpp
 void MDIActivate(CWnd* pWndActivate);
 ```
 
@@ -268,7 +268,7 @@ CMDIFrameWnd için örneğe [bakın:GetWindowMenuPopup](#getwindowmenupopup).
 
 Tüm MDI alt pencerelerini basamaklı bir biçimde düzenler.
 
-```
+```cpp
 void MDICascade();
 void MDICascade(int nType);
 ```
@@ -311,7 +311,7 @@ Etkin MDI alt penceresiiçin bir işaretçi.
 
 Simge durumuna küçültülmüş tüm belge alt pencerelerini düzenler.
 
-```
+```cpp
 void MDIIconArrange();
 ```
 
@@ -327,7 +327,7 @@ CMDIFrameWnd için örneğe [bakın::MDICascade](#mdicascade).
 
 Belirtilen MDI alt penceresini en üst düzeye çıkarır.
 
-```
+```cpp
 void MDIMaximize(CWnd* pWnd);
 ```
 
@@ -350,7 +350,7 @@ Alt pencere en üst düzeye çıktığında, Windows istemci alanı istemci penc
 
 Şu anda etkin olan alt pencerenin hemen arkasındaki alt pencereyi etkinleştirir ve şu anda etkin olan alt pencereyi diğer tüm alt pencerelerinin arkasına yerleştirir.
 
-```
+```cpp
 void MDINext();
 ```
 
@@ -366,7 +366,7 @@ void MDINext();
 
 Önceki alt pencereyi etkinleştirir ve şu anda etkin olan alt pencereyi hemen arkasına yerleştirir.
 
-```
+```cpp
 void MDIPrev();
 ```
 
@@ -378,7 +378,7 @@ void MDIPrev();
 
 MDI alt pencereyi en üst düzeye veya en aza indirilmiş boyuttan geri yükler.
 
-```
+```cpp
 void MDIRestore(CWnd* pWnd);
 ```
 
@@ -433,7 +433,7 @@ MDI alt pencerelerinizi yönetmek için çerçeveyi kullanıyorsanız bu üye i�
 
 Tüm alt pencereleri karo biçiminde düzenler.
 
-```
+```cpp
 void MDITile();
 void MDITile(int nType);
 ```

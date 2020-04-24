@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDateTimeCtrl [MFC], SetRange
 - CDateTimeCtrl [MFC], SetTime
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
-ms.openlocfilehash: d0433507c32c7359f8033836bf845defa8ad7f7a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 577dde7f4f4209f15590825fdb87fe23f788a1ce
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81321910"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754614"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl Sınıfı
 
@@ -120,7 +120,7 @@ CDateTimeCtrl();
 
 Geçerli tarih ve saat seçici denetimini kapatır.
 
-```
+```cpp
 void CloseMonthCal() const;
 ```
 
@@ -158,7 +158,7 @@ virtual BOOL Create(
 Tarih saati denetim stillerinin birleşimini belirtir. Tarih ve saat seçici stilleri hakkında daha fazla bilgi için Windows SDK'daki [Tarih ve Saat Seçici Denetim Stilleri'ne](/windows/win32/Controls/date-and-time-picker-control-styles) bakın.
 
 *Rect*<br/>
-Tarih ve saat seçici denetiminin konumu ve boyutu olan [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+Tarih ve saat seçici denetiminin konumu ve boyutu olan [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Tarih ve saat seçici denetiminin ana penceresi olan [CWnd](../../mfc/reference/cwnd-class.md) nesnesine işaretçi. NULL olmamalıdır.
@@ -474,7 +474,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [DTM_SETMC
 
 Tarih ve saat seçici denetiminin alt ay takvim denetiminin kullanacağı yazı tipini ayarlar.
 
-```
+```cpp
 void SetMonthCalFont(
     HFONT hFont,
     BOOL bRedraw = TRUE);

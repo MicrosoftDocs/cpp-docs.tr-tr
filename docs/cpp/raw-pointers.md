@@ -1,19 +1,26 @@
 ---
 title: Ham işaretçiler (C++)
 description: C++'da ham işaretçiler nasıl kullanılır?
-ms.date: 11/19/2019
+ms.date: 04/21/2020
 helpviewer_keywords:
 - pointers [C++]
-ms.openlocfilehash: 919447fcab123ce6b838391d3cc295fb8a8fe95e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+no-loc:
+- void
+- nullptr
+- const
+- char
+- new
+- delete
+ms.openlocfilehash: 8ba188154d7395ce7be3878fa9dbee2fde08a130
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374673"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82032102"
 ---
 # <a name="raw-pointers-c"></a>Ham işaretçiler (C++)
 
-İşaretçi, bellekte bir nesnenin adresini depolayan ve bu nesneye erişmek için kullanılan bir değişken türüdür. *Ham işaretçi,* kullanım ömrü akıllı işaretçi gibi kapsülleme nesnesi tarafından denetlenmeyen bir [işaretçidir.](smart-pointers-modern-cpp.md) Ham işaretçiye işaretçi olmayan başka bir değişkenin adresi atanabilir veya [nullptr](nullptr.md)değeri atanabilir. Değer atanmamış bir işaretçi rasgele veri içerir.
+*İşaretçi* bir değişken türüdür. Bellekte bir nesnenin adresini depolar ve bu nesneye erişmek için kullanılır. *Ham işaretçi,* kullanım ömrü akıllı işaretçi gibi kapsülleme nesnesi tarafından denetlenmeyen bir [işaretçidir.](smart-pointers-modern-cpp.md) Ham işaretçiye işaretçi olmayan başka bir değişkenin adresi atanabilir [nullptr](nullptr.md)veya 'nin değeri . Değer atanmamış bir işaretçi rasgele veri içerir.
 
 Bir işaretçi, işaret ettiği nesnenin değerini almak için de *başvurudan* ayrılabilir. *Üye erişim işleci,* bir nesnenin üyelerine erişim sağlar.
 
@@ -23,19 +30,17 @@ Bir işaretçi, işaret ettiği nesnenin değerini almak için de *başvurudan* 
     int i = 5;
     p = &i; // assign pointer to address of object
     int j = *p; // dereference p to retrieve the value at its address
-
 ```
 
-Bir işaretçi, yazılan bir nesneyi işaret edebilir veya **geçersiz kılınabilir.** Bir program [bellekteki yığına](https://wikipedia.org/wiki/Heap) yeni bir nesne ayırdığında, işaretçi biçiminde o nesnenin adresini alır. Bu tür *işaretçilere sahip olmak*denir; sahip olunan bir işaretçi (veya bir kopyası) artık gerekli olmadığında yığın ayrılan nesneyi açıkça silmek için kullanılmalıdır. Bellek lerin silinmemesi *bellek sızıntısına* neden oluyor ve bu bellek konumunu makinedeki başka bir program için kullanılamaz hale getirir. Daha fazla bilgi için [yeni ve silme işleçleri](new-and-delete-operators.md)görün.
+Bir işaretçi, yazılan bir nesneyi **void** veya . Bir program [bellekteki yığında](https://wikipedia.org/wiki/Heap) bir nesne ayırdığında, işaretçi biçiminde o nesnenin adresini alır. Bu tür işaretçiler, *işaretçilere sahip olmak*olarak adlandırılır. Sahip olunan bir işaretçi (veya bir kopyası), yığın ayrılan nesneyi artık gerekmediğinde açıkça serbest etmek için kullanılmalıdır. Bellek lerin serbest hale getirilmemesi bellek *sızıntısına*neden oluyor ve bu bellek konumunu makinedeki başka bir program için kullanılamaz hale getirir. Kullanılarak **new** ayrılan bellek (veya **delete** ** delete \[]** kullanılarak serbest bırakılmalıdır). Daha fazla bilgi için [ new bkz. delete ](new-and-delete-operators.md)
 
 ```cpp
-
     MyClass* mc = new MyClass(); // allocate object on the heap
     mc->print(); // access class member
     delete mc; // delete object (please don't forget!)
 ```
 
-Bir işaretçi **(const**olarak bildirilmemişse) bellekte yeni bir konuma işaret etmek için artımlı veya decremented olabilir. Bu *işaretçi aritmetik* denir ve c stili programlama da diziler veya diğer veri yapıları öğeleri üzerinde tekrarlamak için kullanılır. Bir **const** işaretçisi farklı bir bellek konumuna işaret etmek için yapılamaz ve bu anlamda bir [başvuruya](references-cpp.md)çok benzer. Daha fazla bilgi için [const ve uçucu işaretçilere](const-and-volatile-pointers.md)bakın.
+Bir işaretçi (olarak **const** bildirilmemişse) bellekteki başka bir konumu işaret etmek için artımlı veya decremented olabilir. Bu işlem *işaretçi aritmetik*denir. C stili programlamada diziler deki veya diğer veri yapılarındaki öğeler üzerinde yeniden doğrulamak için kullanılır. İşaretçi **const** farklı bir bellek konumuna işaret etmek için yapılamaz ve bu anlamda bir [başvuruya](references-cpp.md)benzer. Daha fazla bilgi için [ const bkz.](const-and-volatile-pointers.md)
 
 ```cpp
     // declare a C-style string. Compiler adds terminating '\0'.
@@ -49,13 +54,13 @@ Bir işaretçi **(const**olarak bildirilmemişse) bellekte yeni bir konuma işar
     // pconst2 = &c2; // Error! pconst2 is const.
 ```
 
-64 bit işletim sistemlerinde, bir işaretçinin boyutu 64 bitdir; bir sistemin işaretçi boyutu ne kadar adreslenebilir belleğe sahip olabileceğini belirler. Bir işaretçinin tüm kopyaları aynı bellek konumuna işaret eder. İşaretçiler (referanslarla birlikte) c++'da daha büyük nesneleri işlevlere ve işlevlerden geçirmek için yaygın olarak kullanılır, çünkü bir nesnenin 64 bit lik adresini kopyalamak tüm nesneyi kopyalamaktan çok daha verimlidir. Bir işlev tanımlarken, işlevin nesneyi değiştirmesini istemiyorsanız işaretçi parametrelerini **const** olarak belirtin. Genel olarak, **const** başvurular nesnenin değeri muhtemelen **nullptr**olabilir sürece işlevlere nesneleri geçmek için tercih edilen yoludur.
+64 bit işletim sistemlerinde, bir işaretçinin boyutu 64 bitdir. Bir sistemin işaretçi boyutu, ne kadar adreslenebilir belleğe sahip olabileceğini belirler. Bir işaretçinin tüm kopyaları aynı bellek konumuna işaret eder. İşaretçiler (referanslarla birlikte) C++'da daha büyük nesneleri işlevlere ve işlevlerden geçirmek için yaygın olarak kullanılır. Bunun nedeni, bir nesnenin adresini kopyalamak genellikle nesnenin tamamını kopyalamak yerine daha verimli olmasıdır. Bir işlev tanımlarken, nesneyi **const** değiştirmek için işlev niyetinde değilseniz işaretçi parametrelerini belirtin. Genel olarak, **const** başvuru, nesnenin değeri büyük olasılıkla olmadığı sürece nesneleri **nullptr** işlevlere geçirmek için tercih edilen yoldur.
 
 [İşlevlere işaretçiler](#pointers_to_functions) işlevlerin diğer işlevlere geçirilmesini sağlar ve C stili programlamada "geri arama" için kullanılır. Modern C++, bu amaçla [lambda ifadelerini](lambda-expressions-in-cpp.md) kullanır.
 
 ## <a name="initialization-and-member-access"></a>Başlatma ve üye erişimi
 
-Aşağıdaki örnek, ham işaretçiyi nasıl bildireceğiniz ve yığında ayrılmış bir nesneyle nasıl başlağlaştırılanın ve sonra nasıl kullanılacağını gösterir. Ayrıca ham işaretçiler ile ilgili tehlikelerin birkaçgösterir. (Unutmayın, bu C tarzı programlama değil, modern C++!)
+Aşağıdaki örnek, ham bir işaretçiyi nasıl bildirecek, baş harfe bildirecek ve kullanacağınızı gösterir. Yığına ayrılan bir **new** nesneyi işaret etmek için başharflere para **delete** yla başharfe getirilmiştir ve bunu açıkça . Örnek, ham işaretçilerle ilişkili tehlikelerden birkaçını da gösterir. (Unutmayın, bu örnek C tarzı programlama değil, modern C++!)
 
 ```cpp
 #include <iostream>
@@ -119,13 +124,13 @@ int main()
     pmc2->print(); // "Erika, 108"
 
     // Pass the pointer to a function.
-    func_A(mc);
+    func_A(pmc);
     pmc->print(); // "Erika, 3"
     pmc2->print(); // "Erika, 3"
 
     // Dereference the pointer and pass a copy
     // of the pointed-to object to a function
-    func_B(*mc);
+    func_B(*pmc);
     pmc->print(); // "Erika, 3" (original not modified by function)
 
     delete(pmc); // don't forget to give memory back to operating system!
@@ -166,9 +171,9 @@ int main()
 }
 ```
 
-Bazı aritmetik işlemler, yeni bir bellek konumuna işaret etmelerini sağlamak için const olmayan işaretçiler üzerinde gerçekleştirilebilir. Bir işaretçi, **++**, **+=** **-=** ve işleçler kullanılarak artımlı ve **--** kararnameye edilebilir. Bu teknik diziler halinde kullanılabilir ve özellikle yazılmamış veri arabelleklerinde yararlıdır. Bir **char** (1 bayt) boyutuna göre bir **boşluk\* ** artışlar. Bir yazılan işaretçi, işaret ettiği türün boyutuna göre artışlar.
+Bazı aritmetik işlemler,const işaretçilerde başka bir bellek konumuna işaret etmelerini sağlamak için kullanılabilir. İşaretçiler **++**, ve **+=** işleçler kullanılarak artımlı **-=** **--** ve kararnameler. Bu teknik diziler halinde kullanılabilir ve özellikle yazılmamış veri arabelleklerinde yararlıdır. A ** void ** (1 bayt) boyutuna **char** göre artımlı olur. Yazılan işaretçi, işaret ettiği türün boyutuna göre artış alar.
 
-Aşağıdaki örnek, işaretçi aritmetik Windows'da bir bitmap tek tek piksel erişmek için nasıl kullanılabileceğini gösterir. **Yeni** ve **silme**ve dereference işlecinin kullanımına dikkat edin.
+Aşağıdaki örnek, işaretçi aritmetik Windows'da bir bitmap tek tek piksel erişmek için nasıl kullanılabileceğini gösterir. Ve dereference **new** **delete** işlecinin kullanımına dikkat edin.
 
 ```cpp
 #include <Windows.h>
@@ -233,11 +238,11 @@ int main()
 }
 ```
 
-## <a name="void-pointers"></a>void* işaretçileri
+## <a name="opno-locvoid-pointers"></a>void* işaretçiler
 
-**Geçersiz kılınacak** bir işaretçi yalnızca ham bir bellek konumuna işaret eder. Bazen, örneğin C++ kodu ve C işlevleri arasında geçerken **geçersiz\* ** işaretçiler kullanmak gerekir.
+Yalnızca ham **void** bir bellek konumuna işaret etmek için bir işaretçi. Bazen işaretçileri kullanmak ** void ** gerekir, örneğin C++ kodu ile C işlevleri arasında geçiş yaparken.
 
-Bir yazılı işaretçi geçersiz bir işaretçiye atıldığında, bellek konumunun içeriği değiştirilmez, ancak tür bilgileri kaybolur, böylece artış veya decrement işlemleri gerçekleştiremezsiniz. Bir bellek konumu, örneğin, MyClass*'tan geçersiz kılmaya* ve tekrar MyClass*'a döküm lenebilir. Bu tür işlemler doğal olarak hataya açıktır ve hatalardan kaçınmak için büyük özen gerektirir. Modern C++ kesinlikle gerekli olmadıkça geçersiz işaretçilerin kullanılmasını engeller.
+Bir yazılı işaretçi bir void işaretçiye atıldığında, bellek konumunun içeriği değişmez. Ancak, tür bilgileri kaybolur, böylece artış veya decrement işlemleri yapamazsınız. Bir bellek konumu, örneğin, tekrar `MyClass*` `void*` dan ve `MyClass*`geri döküm olabilir. Bu tür işlemler doğal olarak hataya açıktır ve hatalardan kaçınmak için büyük özen gerektirir. Modern C++ işaretçilerin void hemen hemen her koşulda kullanılmasını engeller.
 
 ```cpp
 
@@ -293,7 +298,7 @@ int main()
 
 ## <a name="pointers-to-functions"></a><a name="pointers_to_functions"></a>İşlevlere işaretçiler
 
-C stili programlamada, işlev işaretçileri öncelikle işlevleri diğer işlevlere geçirmek için kullanılır. Bu senaryoda, arayan bir işlevin davranışını değiştirmeden özelleştirebilir. Modern C++'da [lambda ifadeleri](lambda-expressions-in-cpp.md) daha fazla tür güvenliği ve diğer avantajlarla aynı yeteneği sağlar.
+C stili programlamada, işlev işaretçileri öncelikle işlevleri diğer işlevlere geçirmek için kullanılır. Bu teknik, arayan bir işlevin davranışını değiştirmeden özelleştirmesine olanak tanır. Modern C++'da [lambda ifadeleri](lambda-expressions-in-cpp.md) daha fazla tür güvenliği ve diğer avantajlarla aynı yeteneği sağlar.
 
 İşlev işaretçisi bildirimi, işaretli işlevin sahip olması gereken imzayı belirtir:
 
@@ -311,7 +316,7 @@ void (*x)();
 int (*i)(int i, string s, double d);
 ```
 
-Aşağıdaki örnekte, `combine` parametre olarak a `std::string` kabul eden ve bir `std::string`. döndüren herhangi bir işlevi alan bir işlev gösterilmektedir. Geçirilen `combine` işleve bağlı olarak ya prepend veya bir dize ekleyecek.
+Aşağıdaki örnekte, `combine` parametre olarak a `std::string` kabul eden ve bir `std::string`. döndüren herhangi bir işlevi alan bir işlev gösterilmektedir. Geçirilen işleve bağlı `combine`olarak, bir dize hazırlar veya ekler.
 
 ```cpp
 #include <iostream>

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CAnimationSize [MFC], m_cxValue
 - CAnimationSize [MFC], m_cyValue
 ms.assetid: ea06d1b5-502c-44a3-82ca-8bd6ba6a9364
-ms.openlocfilehash: 80a90dfa37bc1d2c3c84e6451ae23af7ded767c2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1f4a5b8b52d8bd37d1ed83618e7451dd85f84c32
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369693"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81755122"
 ---
 # <a name="canimationsize-class"></a>CAnimationSize Sınıfı
 
@@ -102,7 +102,7 @@ CAnimationSize sınıfı iki CAnimationVariable nesnesini kapsüller ve uygulama
 
 Genişlik ve Yükseklik için geçişler ekler.
 
-```
+```cpp
 void AddTransition(
     CBaseTransition* pCXTransition,
     CBaseTransition* pCYTransition);
@@ -272,7 +272,7 @@ Bu işlev dahili olarak GetValue çağırır. GetValue herhangi bir nedenle baş
 
 CAnimationSize için szSrc atar.
 
-```
+```cpp
 void operator=(const CSize& szSrc);
 ```
 
@@ -289,7 +289,7 @@ CAnimationSize için szSrc atar. Animasyon başlamadan önce bunu yapmanız öne
 
 Varsayılan değeri ayarlar.
 
-```
+```cpp
 void SetDefaultValue(const CSize& szDefault);
 ```
 

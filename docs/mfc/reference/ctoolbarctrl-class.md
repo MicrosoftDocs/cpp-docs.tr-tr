@@ -182,12 +182,12 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-ms.openlocfilehash: c8968e7a516b7ed699517f6557f7ccd4bcb20505
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 50d3174d4569392be72efdad338eeaac3154ec56
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365087"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752216"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl Sınıfı
 
@@ -523,7 +523,7 @@ Bir 'de `CString` `CString` birden fazla null karakter olması mümkün olmadı�
 
 Tüm araç çubuğu denetimini yeniden boyutlandırIr.
 
-```
+```cpp
 void AutoSize();
 ```
 
@@ -627,7 +627,7 @@ virtual BOOL Create(
 Araç çubuğu denetiminin stilini belirtir. Araç çubukları her zaman WS_CHILD stiline sahip olmalıdır. Buna ek olarak, **Açıklamalar**altında açıklandığı gibi araç çubuğu stilleri ve pencere stilleri herhangi bir birleşimini belirtebilirsiniz.
 
 *Rect*<br/>
-İsteğe bağlı olarak araç çubuğu denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
+İsteğe bağlı olarak araç çubuğu denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
 
 *pParentWnd*<br/>
 Araç çubuğu denetiminin üst penceresini belirtir. NULL olmamalıdır.
@@ -681,7 +681,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Araç çubuğu denetiminin stilini belirtir. Araç çubukları her zaman WS_CHILD stiline sahip olmalıdır. Ayrıca, [Oluştur'un](#create) **Açıklamalar** bölümünde açıklandığı gibi araç çubuğu stilleri ve pencere stillerinin herhangi bir birleşimini belirtebilirsiniz.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -713,7 +713,7 @@ Araç çubuğunu kullanılabilir hale getirmek için [Oluştur'u](#create) arama
 
 Araç Çubuğunu Özelleştir iletişim kutusunu görüntüler.
 
-```
+```cpp
 void Customize();
 ```
 
@@ -1040,7 +1040,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TB_GETIMA
 
 Araç çubuğunun geçerli ekleme işaretini alır.
 
-```
+```cpp
 void GetInsertMark(TBINSERTMARK* ptbim) const;
 ```
 
@@ -1085,7 +1085,7 @@ BOOL GetItemRect(
 Bilgi almak için düğmenin sıfır tabanlı dizin.
 
 *Lprect*<br/>
-Bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısının veya sınırlayan dikdörtgenin koordinatlarını alan bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesinin adresi.
+Bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısının veya sınırlayan dikdörtgenin koordinatlarını alan bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesinin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1132,7 +1132,7 @@ Araç çubuğu düğmesinde görüntülenen maksimum metin satırı sayısı.
 
 `CToolBarCtrl` Nesnenin ölçümlerini alır.
 
-```
+```cpp
 void GetMetrics(LPTBMETRICS ptbm) const;
 ```
 
@@ -1202,7 +1202,7 @@ BOOL GetRect(
 Düğme tanımlayıcısı.
 
 *Lprect*<br/>
-Sınırlayıcı dikdörtgen bilgilerini almak için [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi.
+Sınırlayıcı dikdörtgen bilgilerini almak için [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1325,7 +1325,7 @@ int HitTest(LPPOINT ppt) const;
 ### <a name="parameters"></a>Parametreler
 
 *Ppt*<br/>
-Üyedeki isabet testinin x-koordinatını ve üyedeki isabet testinin y koordinatını içeren bir `y` POINT yapısına işaretçi. [POINT](/previous-versions/dd162805\(v=vs.85\)) `x` Koordinatlar araç çubuğunun istemci alanına göredir.
+Üyedeki isabet testinin x-koordinatını ve üyedeki isabet testinin y koordinatını içeren bir `y` POINT yapısına işaretçi. [POINT](/windows/win32/api/windef/ns-windef-point) `x` Koordinatlar araç çubuğunun istemci alanına göredir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1428,7 +1428,7 @@ BOOL InsertMarkHitTest(
 ### <a name="parameters"></a>Parametreler
 
 *Ppt*<br/>
-Araç çubuğunun istemci alanına göre isabet testi koordinatlarını içeren bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısına işaretçi.
+Araç çubuğunun istemci alanına göre isabet testi koordinatlarını içeren bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısına işaretçi.
 
 *ptbim*<br/>
 Ekleme işareti bilgilerini alan [bir TBINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-tbinsertmark) yapısına işaretçi.
@@ -1567,7 +1567,7 @@ Birden fazla düğme durumu almak istiyorsanız [GetState'i](#getstate) aramayı
 
 Bit eşlemlerini araç çubuğu denetiminin görüntü listesine yükler.
 
-```
+```cpp
 void LoadImages(
     int iBitmapID,
     HINSTANCE hinst);
@@ -1730,7 +1730,7 @@ Aşağıdaki kod örneği, standart araç çubuğunun bit eşleminin yerini fark
 
 Araç çubuğu denetiminin durumunu, parametrelertarafından belirtilen kayıt defterindeki konumdan geri yükler.
 
-```
+```cpp
 void RestoreState(
     HKEY hKeyRoot,
     LPCTSTR lpszSubKey,
@@ -1760,7 +1760,7 @@ Alınacak değerin adını içeren bir dize yi işaret eder. Bu ada sahip bir de
 
 Parametrelertarafından belirtilen kayıt defterindeki konumdaki araç çubuğu denetiminin durumunu kaydeder.
 
-```
+```cpp
 void SaveState(
     HKEY hKeyRoot,
     LPCTSTR lpszSubKey,
@@ -1883,7 +1883,7 @@ Düğme boyutu her zaman en az kaplar bit eşleme boyutu kadar büyük olmalıd�
 
 Yapının `TBBUTTON` boyutunu belirtir.
 
-```
+```cpp
 void SetButtonStructSize(int nSize);
 ```
 
@@ -1950,7 +1950,7 @@ Başarılı olursa sıfırsız döndürür; aksi takdirde sıfır.
 
 Geçerli araç çubuğu denetiminin renk düzenini ayarlar.
 
-```
+```cpp
 void SetColorScheme(const COLORSCHEME* lpColorScheme);
 ```
 
@@ -2128,7 +2128,7 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 Araç çubuğu için geçerli ekleme işaretini ayarlar.
 
-```
+```cpp
 void SetInsertMark(TBINSERTMARK* ptbim);
 ```
 
@@ -2183,7 +2183,7 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 `CToolBarCtrl` Nesnenin ölçümlerini ayarlar.
 
-```
+```cpp
 void SetMetrics(LPTBMETRICS ptbm);
 ```
 
@@ -2200,7 +2200,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi [TB_SETMETRICS](/windows/wi
 
 Araç çubuğu denetimi için sahip penceresini ayarlar.
 
-```
+```cpp
 void SetOwner(CWnd* pWnd);
 ```
 
@@ -2279,7 +2279,7 @@ Aşağıdaki kod örneği, basılı resim listesini varsayılan resim listesiyle
 
 Araç çubuğu denetiminden kendisini istenen satır sayısına yeniden boyutlandırmasını ister.
 
-```
+```cpp
 void SetRows(
     int nRows,
     BOOL bLarger,
@@ -2295,7 +2295,7 @@ void SetRows(
 Araç çubuğu istenen satır sayısına yeniden boyutlandırılamıyorsa, daha fazla satır mı yoksa daha az satır mı kullanılacağını söyler.
 
 *Lprect*<br/>
-Araç çubuğunun yeni sınırlayıcı dikdörtgenini alacak [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaret edin.
+Araç çubuğunun yeni sınırlayıcı dikdörtgenini alacak [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaret edin.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2341,7 +2341,7 @@ Düğme durumlarından birden fazlasını ayarlamak istiyorsanız, bu işlev öz
 
 Araç çubuğu denetimi için stilleri ayarlar.
 
-```
+```cpp
 void SetStyle(DWORD dwStyle);
 ```
 
@@ -2354,7 +2354,7 @@ Windows SDK'da açıklandığı gibi [araç çubuğu denetim stillerinin](/windo
 
 Bir araç ipucu denetimini araç çubuğu denetimiyle ilişkilendirir.
 
-```
+```cpp
 void SetToolTips(CToolTipCtrl* pTip);
 ```
 

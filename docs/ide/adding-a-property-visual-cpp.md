@@ -12,112 +12,112 @@ helpviewer_keywords:
 - stock properties, about stock properties
 - stock properties
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
-ms.openlocfilehash: 5c472b74fee690c0cf33f78eca9e2e8462930eb8
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 79b05fde362a44453aac45aa8dc269c9689ea8fc
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509522"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81751179"
 ---
 # <a name="add-a-property"></a>Özellik ekleme
 
-Projenizdeki bir arabirime bir yöntem eklemek için [Özellik Ekleme Sihirbazı](#names-add-property-wizard) ' nı kullanabilirsiniz.
+Projenizdeki arabirime yöntem eklemek için [özellik ekle sihirbazını](#names-add-property-wizard) kullanabilirsiniz.
 
-**Nesneniz için bir özellik eklemek için:**
+**Nesnenize özellik eklemek için:**
 
-1. [Sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), özelliği eklemek istediğiniz arabirimin adına sağ tıklayın.
+1. [Sınıf](/visualstudio/ide/viewing-the-structure-of-code)Görünümü'nde, özelliği eklemek istediğiniz arabirimin adını sağ tıklatın.
 
    > [!NOTE]
-   > Ayrıca, proje ilişkilendirilemediği takdirde, kitaplık düğümü içinde iç içe yerleştirilmiş olan görüntüleme arabirimlerine özellikler ekleyebilirsiniz.
+   > Ayrıca, proje atfedilmedikçe kitaplık düğümü içinde iç içe olan dispinterfaces'e özellikler de ekleyebilirsiniz.
 
-1. Kısayol menüsünde **Ekle**' yi ve ardından **Özellik Ekle**' yi seçin.
+1. Kısayol menüsünden Ekle'yi ve ardından **Özellik Ekle'yi**seçin. **Add**
 
-1. [Özellik Ekleme sihirbazında](#names-add-property-wizard), özelliği oluşturmak için bilgileri sağlayın.
+1. Özellik [ekle](#names-add-property-wizard)sihirbazında, özelliği oluşturmak için bilgileri sağlayın.
 
-1. Sihirbazın [IDL öznitelikleri](#idl-attributes-add-property-wizard) sayfasında özellik için herhangi bir arabirim tanım DILI (IDL) ayarı belirtin.
+1. Sihirbazın [IDL öznitelikleri](#idl-attributes-add-property-wizard) sayfasında özellik için herhangi bir arabirim tanımı dili (IDL) ayarlarını belirtin.
 
-1. Özelliği eklemek için **son** ' u seçin.
+1. Özelliği eklemek için **Bitiş'i** seçin.
 
-Özelliğinin `Get` ve`Put` yöntemleri, sınıf görünümü tanımlandığı arabirim altında iki simge olarak görüntülenir. . IDL dosyasında özellik bildirimini görüntülemek için her iki simgeye de çift tıklayabilirsiniz.
+`Get` Özelliğin `Put` ve yöntemleri, tanımlandığı arabirimin altında Sınıf Görünümü'nde iki simge olarak görüntülenir. .idl dosyasındaki özellik bildirimini görüntülemek için simgelerden birini çift tıklatabilirsiniz.
 
-- ATL arabirimleri `Get` için, ve `Put` işlevleri. cpp dosyasına eklenir ve bu işlevlere yapılan başvurular. h dosyasına eklenir.
+- ATL arabirimleri için `Get` `Put` .cpp dosyasına ve işlevler eklenir ve bu işlevlere yapılan başvurular .h dosyasına eklenir.
 
-- MFC dispınterfaces için, uygulama türü olarak **üye değişkeni** ' ni seçerseniz, bir yöntem ve bir değişken onu uygulayan sınıfa eklenir. Uygulama türü olarak **Get/Set yöntemlerini** seçerseniz, uygulayan sınıfa iki yöntem eklenir.
+- MFC dispinterfaces için, uygulama türü olarak **Üye değişken** seçerseniz, bir yöntem ve bir değişken uygulayan sınıfa eklenir. Uygulama türü olarak **Getir/Ayarla yöntemlerini** seçerseniz, bunu uygulayan sınıfa iki yöntem eklenir.
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-- [Adlar, Özellik Ekleme Sihirbazı](#names-add-property-wizard)
-- [IDL öznitelikleri, Özellik Ekleme Sihirbazı](#idl-attributes-add-property-wizard)
-- [Hisse senedi özellikleri](#stock-properties)
+- [Adlar, özellik sihirbazı ekle](#names-add-property-wizard)
+- [IDL öznitelikleri, özellik sihirbazı ekleyin](#idl-attributes-add-property-wizard)
+- [Stok özellikleri](#stock-properties)
 
-## <a name="names-add-property-wizard"></a>Adlar, Özellik Ekleme Sihirbazı
+## <a name="names-add-property-wizard"></a>Adlar, özellik sihirbazı ekle
 
-Bir arabirime özellik eklemek için bu sihirbazı kullanın.
+Arabirime özellik eklemek için bu sihirbazı kullanın.
 
 - **Özellik türü**
 
-  Eklemekte olduğunuz özelliğin türünü ayarlar. MFC dispınterfaces için kendi türünü sağlayın veya önceden tanımlanmış listeden seçin. Bir özelliğin hisse senedi uygulamasını sağlarsanız, **özellik türü** stok türüne ayarlanır ve değişiklik için kullanılamaz.
+  Eklediğiniz özelliğin türünü ayarlar. MFC dispinterfaces için, kendi türünü sağlayın veya önceden tanımlanmış listeden seçin. Bir mülkün stok uygulamasını sağlarsanız, **Özellik türü** stok türüne ayarlanır ve değişiklik için kullanılamaz.
 
 - **Özellik adı**
 
-  Özelliğin adını ayarlar. ActiveX denetimleriyle ilişkili MFC dispınterfaces için kendi adınızı sağlayabilir veya önceden tanımlanmış listeden bir stok özelliği adı seçebilirsiniz. Kendi özellik adınızı sağlarsanız, **hisse senedi** uygulama türü kullanılamaz. Listedeki özelliklerin açıklaması için [hisse senedi özelliklerine](#stock-properties) bakın.
+  Özelliğin adını ayarlar. ActiveX denetimleriyle ilişkili MFC dispinterfaces için, kendi adınızı verebilir veya önceden tanımlanmış listeden bir stok özelliği adı seçebilirsiniz. Kendi mülk adınızı sağlarsanız, **Stok** uygulama türü kullanılamaz. Listedeki özelliklerin açıklaması için [stok özelliklerine](#stock-properties) bakın.
 
-  |Arabirim türü|Açıklama|
+  |Arayüz türü|Açıklama|
   |--------------------|-----------------|
-  |ATL Dual Interface, özel arabirim ve yerel özel arabirim|Bir özellik adı belirtin.|
-  |MFC dispınterface, MFC ActiveX denetimi dispınterface|Bir özellik adı girin veya listeden bir stok özelliği seçin. Listeden bir özellik seçerseniz, **özellik türü** kutusunda uygun değer görüntülenir. Bu türü, **uygulama türü**altında seçiminize bağlı olarak değiştirebilirsiniz.|
+  |ATL çift arabirim, özel arayüz ve yerel özel arayüz|Bir özellik adı sağlayın.|
+  |MFC dispinterface, MFC ActiveX kontrol dispinterface|Bir mülk adı sağlayın veya listeden bir stok özelliği seçin. Listeden bir özellik seçerseniz, **Özellik türü** kutusunda uygun değer görüntülenir. **Uygulama türü**altında seçimbağlı olarak, bu türü değiştirebilirsiniz.|
 
 - **Dönüş türü**
 
-  Yalnızca ATL arabirimleri. Özellik için dönüş türünü ayarlar. Çift arabirimler `HRESULT` için her zaman dönüş türüdür ve bu kutu kullanılamaz. Özel arabirimler için listeden bir dönüş türü seçebilirsiniz. `HRESULT`Hala önerilir, çünkü hataları döndürmek için standart bir yol sağlar.
+  Yalnızca ATL arabirimleri. Özellik için iade türünü ayarlar. Çift arabirimler `HRESULT` için, her zaman dönüş türüdür ve bu kutu kullanılamaz. Özel arabirimler için, listeden bir iade türü seçebilirsiniz. `HRESULT`hataları döndürmek için standart bir yol sağladığından, yine de önerilir.
 
 - **Değişken adı**
 
-  Yalnızca MFC görüntüleme arabirimleri. Yalnızca **uygulama türü**altında **üye değişkeni** belirtirseniz kullanılabilir. Özelliğin ilişkilendirildiği üye değişkeninin adını ayarlar. Varsayılan olarak, değişken adı `m_` *PropertyName*olarak ayarlanır. Bu adı düzenleyebilirsiniz.
+  MFC yalnızca arabirimlerini salar. Yalnızca **Uygulama türü**altında **Üye değişkeni** belirtirseniz kullanılabilir. Özelliğin ilişkili olduğu üye değişkenin adını ayarlar. Varsayılan olarak, değişken adı `m_` *PropertyName*olarak ayarlanır. Bu adı edinebilirsiniz.
 
-- **Notification işlevi**
+- **Bildirim işlevi**
 
-  Yalnızca MFC görüntüleme arabirimleri. Yalnızca **uygulama türü**altında **üye değişkeni** belirtirseniz kullanılabilir. Özellik değişirse çağrılan bildirim işlevinin adını ayarlar. Varsayılan olarak, bildirim işlevinin adı `On` *PropertyName*`Changed`olarak ayarlanır. Bu adı düzenleyebilirsiniz.
+  MFC yalnızca arabirimlerini salar. Yalnızca **Uygulama türü**altında **Üye değişkeni** belirtirseniz kullanılabilir. Özellik değişirse, bildirim işlevinin adını ayarlar. Varsayılan olarak, bildirim işlevinin adı `On` *PropertyName*`Changed`olarak ayarlanır. Bu adı edinebilirsiniz.
 
 - **Get işlevi**
 
-  MFC görüntüleme arabirimleri için. Yalnızca **uygulama türü**altında **Get/Set yöntemlerini** belirtirseniz kullanılabilir. Özelliği almak için işlevin adını ayarlar. Varsayılan olarak, `Get` işlevin adı *PropertyName*olarak `Get`ayarlanır. Bu adı düzenleyebilirsiniz. Adı silerseniz, [GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported) işlevi arabirim gönderme eşlemesine eklenir. PropertyName işlevi, özelliğin okunabilir olduğunu belirtir. `Get`
+  MFC dispinterfaces için. Yalnızca **Uygulama türü**altında **Get/Set yöntemlerini** belirtirseniz kullanılabilir. Özelliği almak için işlevin adını ayarlar. Varsayılan olarak, `Get` işlevin adı `Get` *PropertyName*olarak ayarlanır. Bu adı edinebilirsiniz. Adı silerseniz, [GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported) işlevi arabirim gönderme haritasına eklenir. `Get` *PropertyName* işlevi özelliğin okunabilir olduğunu belirtir.
 
-- **Set işlevi**
+- **Fonksiyonu ayarlama**
 
-  Yalnızca MFC görüntüleme arabirimleri. Yalnızca **uygulama türü**altında **Get/Set yöntemlerini** belirtirseniz kullanılabilir. Özelliği ayarlamak için işlevin adını ayarlar. Varsayılan olarak, `Set` işlevin adı *PropertyName*olarak `Set`ayarlanır. Bu adı düzenleyebilirsiniz. Adı silerseniz, [SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported) işlevi arabirim gönderme eşlemesine eklenir. PropertyName işlevi, özelliğin yazılabilir olduğunu belirtir. `Set`
+  MFC yalnızca arabirimlerini salar. Yalnızca **Uygulama türü**altında **Get/Set yöntemlerini** belirtirseniz kullanılabilir. Özelliği ayarlamak için işlevin adını ayarlar. Varsayılan olarak, `Set` işlevin adı `Set` *PropertyName*olarak ayarlanır. Bu adı edinebilirsiniz. Adı silerseniz, [SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported) işlevi arabirim gönderme haritasına eklenir. `Set` *PropertyName* işlevi, özelliğin yazılabilir olduğunu belirtir.
 
 - **Uygulama türü**
 
-  Yalnızca MFC görüntüleme arabirimleri. Eklemekte olduğunuz özelliğin nasıl uygulanacağını belirtir.
+  MFC yalnızca arabirimlerini salar. Eklediğiniz özelliğin nasıl uygulanacağını belirtir.
 
   |Uygulama türü|Açıklama|
   |-------------------------|-----------------|
-  |**Stok**|**Özellik adı**'nda seçilen özellik için bir stok uygulamasını belirtir. Varsayılan. Daha fazla bilgi için bkz. [Stok özellikleri](#stock-properties).<br /><br /> **Stok**belirtirseniz, **özellik türü**, **parametre türü**ve **parametre adı** soluk kalır.|
-  |**Üye değişkeni**|Özelliğin üye değişkeni olarak eklendiğini belirtir. Üye değişkenleri olarak özel özellikler veya çoğu hisse senedi özelliği ekleyebilirsiniz. `Caption`, ,Ve`Text` özellikleri için **üye değişkeni** belirtemezsiniz. `hWnd`<br /><br /> **Değişken adı** ve **bildirim işlevi**altında varsayılan adlar sağlar. Bu adı düzenleyebilirsiniz.|
-  |**Get/set yöntemleri**|Özelliğin `Get` *PropertyName* ve`Set` *PropertyName* işlevleri olarak eklendiğini varsayılan olarak belirtir. Bu adlar, **get işlevi** ve **set işlevi**altında görünür.<br /><br /> GET işlevi için bir değer geçiren varsayılan **özellik türünü**değiştirebilirsiniz. `Get` Ve`Set` işlevleri için parametreler belirtebilirsiniz.|
+  |**Stok**|**Özellik adına**seçilen özellik için stok uygulamasını belirtir. Varsayılan. Daha fazla bilgi için [stok özelliklerine](#stock-properties)bakın.<br /><br /> **Stok**belirtirseniz, daha sonra **Özellik türü,** **Parametre türü**ve **Parametre adı** soluk.|
+  |**Üye değişkeni**|Özellik bir üye değişken olarak eklenir belirtir. Üye değişkenler olarak özel özellikler veya çoğu stok özelliği ekleyebilirsiniz. **Üye değişkenini** `Caption`, , `hWnd`ve `Text` özellikleri için belirtemezsiniz.<br /><br /> **Değişken adı** ve **Bildirim işlevi**altında varsayılan adlar sağlar. Bu adı edinebilirsiniz.|
+  |**Alma/Ayarlama yöntemleri**|Özellik, varsayılan olarak PropertyName `Get`ve `Set` *PropertyName* işlevleri olarak eklenir belirtir. *PropertyName* Bu adlar **Get işlevi** ve Set **işlevi**altında görünür.<br /><br /> Al işlevi için bir değer geçen varsayılan **Özellik türünü**değiştirebilirsiniz. Parametreleri `Get` ve `Set` işlevleri belirtebilirsiniz.|
 
 - **Get işlevi**
 
-  ATL arabirimleri için. Özelliği okunabilir olarak ayarlar; diğer bir deyişle, nesnesinden bu `Get` özelliği almak için yöntemini oluşturur. **Al**, **koy**veya her ikisini de seçin.
+  ATL arabirimleri için. Özelliği okunabilir olarak ayarlar; diğer bir şekilde, `Get` bu özelliği nesneden alma yöntemini oluşturur. **Get**, **Put**veya her ikisini seçin.
 
-- **Put işlevi**
+- **Put fonksiyonu**
 
-  Yalnızca ATL arabirimleri. Yazılabilir özelliği ayarlar; diğer bir deyişle, nesnesinin bu `Put` özelliğini ayarlama veya "yerleştirme" yöntemini oluşturur. **Al**, **koy**veya her ikisini de seçin. Bu seçeneği belirlerseniz, yöntemi uygulamak için aşağıdaki iki yöntemden birini kullanabilirsiniz:
+  Yalnızca ATL arabirimleri. Özelliği yazılabilir ayarlar; diğer bir şekilde, `Put` nesnenin bu özelliğini ayarlama veya "koyma" yöntemini oluşturur. **Get**, **Put**veya her ikisini seçin. Bu seçeneği seçerseniz, yöntemi uygulamanın iki yolunu seçebilirsiniz:
 
   |Seçenek|Açıklama|
   |------------|-----------------|
-  |**PropPut**|[Propput](../windows/propput.md) işlevi nesnenin bir kopyasını döndürür. Bu, özelliği yazılabilir yapmanın varsayılan ve en yaygın yoludur.|
-  |**PropPutRef**|[Propputref](../windows/propputref.md) işlevi nesnenin kopyasını döndürmek yerine nesnesine bir başvuru döndürür. Başlatma ek yüküne sahip olabilecek büyük yapılar veya diziler gibi nesneler için bu seçeneği kullanmayı düşünün.|
+  |**Propput**|[PropPut](../windows/propput.md) işlevi nesnenin bir kopyasını döndürür. Bu, özelliği yazılabilir hale getirmenin varsayılan ve en yaygın yoludur.|
+  |**Propputref**|[PropPutRef](../windows/propputref.md) işlevi, nesnenin kopyasını döndürmek yerine nesneye bir başvuru döndürür. Büyük structs veya diziler gibi, başbaşlatma yükü olabilir nesneler için bu seçeneği kullanmayı düşünün.|
 
 - **Parametre öznitelikleri**
 
-  Yalnızca ATL arabirimleri. **Parametre adı** tarafından belirtilen parametrenin,, her ikisinin `in`de `out`veya None olduğunu ayarlar.
+  Yalnızca ATL arabirimleri. **Parametre adı ile** belirtilen parametrenin `in`, her `out`ikisi veya hiçbiri olup olmadığını ayarlar.
 
   |Seçenek|Açıklama|
   |------------|-----------------|
-  |`in`|Parametrenin çağıran yordamdan çağrılan yordama geçtiğini gösterir.|
-  |`out`|İşaretçi parametresinin çağrılan yordamdan çağıran yordama (sunucudan istemciye) döndürüldüğünü gösterir.|
+  |`in`|Parametrenin arama yordamından çağrılan yordama geçirildiğini gösterir.|
+  |`out`|İşaretçi parametresinin çağrılan yordamdan çağrı prosedürüne (sunucudan istemciye) döndürüldünü gösterir.|
 
 - **Parametre türü**
 
@@ -125,15 +125,15 @@ Bir arabirime özellik eklemek için bu sihirbazı kullanın.
 
 - **Parametre adı**
 
-  Özelliğin parametreleri varsa, özelliği için eklemekte olduğunuz parametrenin adını ayarlar. **Ekle**' yi seçtiğinizde parametre adı **parametre listesinde**görünür.
+  Özellik parametreleri varsa, özellik için eklediğiniz bir parametrenin adını ayarlar. **Ekle'yi**seçtikten sonra parametre adı **Parametre listesinde**görünür.
 
 - **Parametre listesi**
 
-  Özelliğe eklenecek özniteliklerin listesini görüntüler. Listedeki her öğe parametre adı, parametre türü ve özniteliklerden oluşur. Listeyi güncelleştirmek için **Ekle** ve **Kaldır** ' i kullanın.
+  Özelliğe eklenecek özniteliklerlistesini görüntüler. Listedeki her öğe parametre adı, parametre türü ve özniteliklerden oluşur. Listeyi güncelleştirmek için **Ekle** ve **Kaldır'ı** kullanın.
 
-- **Add**
+- **Ekle**
 
-  Parametre **adı** ve parametre **türü** ' nde belirttiğiniz parametreyi **parametre listesine**ekler. Listeye bir parametre eklemek için **Ekle** ' yi seçin.
+  **Parametre adına** belirttiğiniz parametreyi ve **Parametre türünü** **Parametre listesine**ekler. Listeye parametre eklemek için **Ekle'yi** seçin.
 
 - **Kaldır**
 
@@ -141,23 +141,23 @@ Bir arabirime özellik eklemek için bu sihirbazı kullanın.
 
 - **Varsayılan özellik**
 
-  Yalnızca MFC görüntüleme arabirimi. Bu özelliği arabirim için varsayılan değer olarak ayarlar. Bir arabirim yalnızca bir varsayılan özelliğe sahip olabilir; Varsayılan özelliği belirttiğinizde, arabirime eklediğiniz diğer özellikler için bu kutu kullanılamaz.
+  Yalnızca MFC dispinterface. Bu özelliği arabirim için varsayılan olarak ayarlar. Bir arabirimin yalnızca bir varsayılan özelliği olabilir; varsayılan özelliği belirttikten sonra, arabirime eklediğiniz diğer özellikler için bu kutu kullanılamaz.
 
-## <a name="idl-attributes-add-property-wizard"></a>IDL öznitelikleri, Özellik Ekleme Sihirbazı
+## <a name="idl-attributes-add-property-wizard"></a>IDL öznitelikleri, özellik sihirbazı ekleyin
 
-Özellik için herhangi bir arabirim tanım dili (IDL) ayarı belirtmek üzere Özellik Ekleme Sihirbazı ' nın bu sayfasını kullanın.
+Özellik için herhangi bir arabirim tanımı dili (IDL) ayarlarını belirtmek için Özellik Ekle Sihirbazı'nın bu sayfasını kullanın.
 
 - `id`
 
-  Özelliği tanımlayan sayısal KIMLIĞI ayarlar. Bu seçenek özel arabirimlerin özellikleri için kullanılamaz. *MIDL başvurusunda* [kimliği](/windows/win32/Midl/id) görüntüleyin.
+  Özelliği tanımlayan sayısal kimliği ayarlar. Bu seçenek, özel arabirimlerin özellikleri için kullanılamaz. *MIDL Referans'taki* [id'ye](/windows/win32/Midl/id) bakın.
 
 - `helpcontext`
 
-  Kullanıcının Yardım dosyasında bu özellik hakkında bilgi görüntülemesine imkan tanıyan bir bağlam KIMLIĞI belirtir. *MIDL başvurusunda* [HelpContext](/windows/win32/Midl/helpcontext) bölümüne bakın.
+  Kullanıcının Yardım dosyasında bu özellik hakkındaki bilgileri görüntülemesini sağlayan bir bağlam kimliği belirtir. *MIDL Başvurusu'ndaki* [yardım bağlamına](/windows/win32/Midl/helpcontext) bakın.
 
 - `helpstring`
 
-  Uygulandığı öğeyi anlatmak için kullanılan bir karakter dizesini belirtir. Varsayılan olarak, `property`&nbsp;*özellikadı&nbsp; olarak ayarlanır*. *MIDL başvurusunda* [HelpString](/windows/win32/Midl/helpstring) ' i inceleyin.
+  Uygulandığı öğeyi açıklamak için kullanılan bir karakter dizesini belirtir. Varsayılan olarak, `property` &nbsp; *Özellik&nbsp;adına*ayarlanır. *MIDL Başvurusu'ndaki* [helpstring'e](/windows/win32/Midl/helpstring) bakın.
 
 ### <a name="other-options"></a>Diğer seçenekler
 
@@ -165,31 +165,31 @@ Tüm seçenekler tüm özellik türleri için kullanılamaz.
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|`bindable`|Özelliğin veri bağlamayı desteklediğini belirtir. Bkz. *MIDL başvurusunda* [bağlanabilir](/windows/win32/Midl/bindable) . Özelliğin hisse senedi uygulamasında bu seçenek varsayılan olarak ayarlanır ve değiştirilemez.|
-|`defaultbind`|Bu tek, bağlanabilir özelliğin nesneyi en iyi temsil ettiğini belirtir. *MIDL başvurusunda* [defaultbind](/windows/win32/Midl/defaultbind) bölümüne bakın.|
-|`displaybind`|Bu özelliğin kullanıcıya bağlanabilir olarak görüntülenmesi gerektiğini gösterir. *MIDL başvurusunda* [displaybind](/windows/win32/Midl/displaybind) bölümüne bakın.|
-|`immediatebind`|Veritabanına, veri bağlantılı nesnenin bu özelliğindeki tüm değişikliklerin hemen bildirileceğini belirtir. *MIDL başvurusunda* [immediatebind](/windows/win32/Midl/immediatebind) bakın.|
-|`defaultcollelem`|Özelliğin varsayılan koleksiyonun bir öğesi için bir erişimci işlevi olduğunu gösterir. *MIDL başvurusunda* [defaultcollelem](/windows/win32/Midl/defaultcollelem) öğesine bakın.|
-|`nonbrowsable`|Bir özellikler tarayıcısında görüntülenmemelidir bir arabirim veya dispınterface üyesini Etiketler. Bkz. *MIDL başvurusunda* [gözatılabilir](/windows/win32/Midl/nonbrowsable) .|
-|`requestedit`|Özelliğin `OnRequestEdit` bildirimi desteklediğini gösterir. *MIDL başvurusunda*bkz. [requestedıt](/windows/win32/Midl/requestedit) . Özelliğin hisse senedi uygulamasında bu seçenek varsayılan olarak ayarlanır ve değiştirilemez.|
-|`source`|Özelliğin bir üyesinin bir olay kaynağı olduğunu gösterir. *MIDL başvurusundaki* [kaynağı](/windows/win32/Midl/source) görüntüleyin.|
-|`hidden`|Özelliğin var olduğunu ancak kullanıcıya dayalı bir tarayıcıda gösterilmemesi gerektiğini gösterir. Bkz. *MIDL başvurusunda* [gizli](/windows/win32/Midl/hidden) .|
-|`restricted`|Özelliğin rastgele olarak çağrılamayacağını belirtir. Bkz. *MIDL başvurusunda* [Kısıtlanmış](/windows/win32/Midl/restricted) .|
-|`local`|MıDL derleyicisine, özelliğin uzak olmadığını belirtir. *MIDL başvurusunda* [Yerel](/windows/win32/Midl/local) bölümüne bakın.|
+|`bindable`|Özelliğin veri bağlamayı desteklediğini gösterir. *MIDL Başvurusu'nda* [bağlanabilir](/windows/win32/Midl/bindable) bkz. Özelliğin hisse senedi uygulaması için bu seçenek varsayılan olarak ayarlanır ve değiştirilemez.|
+|`defaultbind`|Bu tek, bağlanabilir özelliğin nesneyi en iyi temsil ettiğini gösterir. *MIDL Başvurusu'nda* [varsayılan binme'ye](/windows/win32/Midl/defaultbind) bakın.|
+|`displaybind`|Bu özelliğin kullanıcıya bağlanabilir olarak gösterilmesi gerektiğini gösterir. *MIDL Başvurusu'nda* [displaybind'e](/windows/win32/Midl/displaybind) bakın.|
+|`immediatebind`|Veriye bağlı bir nesnenin bu özelliğindeki tüm değişiklikler veritabanına hemen bildirilir. *MIDL Başvurusu'nda* [hemen bind](/windows/win32/Midl/immediatebind) bakın.|
+|`defaultcollelem`|Özelliğin varsayılan koleksiyonun bir öğesi için bir erişimci işlev olduğunu gösterir. *MIDL Başvurusu'nda* [defaultcollelem'e](/windows/win32/Midl/defaultcollelem) bakın.|
+|`nonbrowsable`|Özellikler tarayıcısında görüntülenmemesi gereken bir arabirim veya dispinterface üyesini etiketler. *MIDL Başvurusu'nda* [kaşsız](/windows/win32/Midl/nonbrowsable) görün.|
+|`requestedit`|Özelliğin `OnRequestEdit` bildirimi desteklediğini gösterir. *MIDL Başvurusu'nda* [istenene](/windows/win32/Midl/requestedit) bakın. Özelliğin hisse senedi uygulaması için bu seçenek varsayılan olarak ayarlanır ve değiştirilemez.|
+|`source`|Özelliğin bir üyesinin olayların kaynağı olduğunu gösterir. *MIDL Başvurusu'ndaki* [kaynağa](/windows/win32/Midl/source) bakın.|
+|`hidden`|Özelliğin var olduğunu, ancak kullanıcı yönelimli bir tarayıcıda görüntülenmemesi gerektiğini gösterir. *MIDL Başvurusu'nda* [gizli](/windows/win32/Midl/hidden) bkz.|
+|`restricted`|Özelliğin rasgele çağrılamayacağı belirtilir. *MIDL Başvurusu'nda* [sınırlı](/windows/win32/Midl/restricted) bkz.|
+|`local`|MIDL derleyicisine özelliğin uzak olmadığını belirtir. *MIDL Başvurusu'nda* [yerel](/windows/win32/Midl/local) bkz.|
 
-## <a name="stock-properties"></a>Hisse senedi özellikleri
+## <a name="stock-properties"></a>Stok özellikleri
 
-[Özellik Ekleme Sihirbazı](#idl-attributes-add-property-wizard)'Nı kullanarak mfc görüntüleme arabirimine bir özellik ekliyorsanız, sihirbazın [adlar](../ide/names-add-property-wizard.md) sayfasındaki **özellik adı** listesinden bir stok özelliği seçebilirsiniz. Bu özellikler aşağıdaki gibidir:
+[Özellik ekle sihirbazını](#idl-attributes-add-property-wizard)kullanarak Bir MFC dispinterface'e bir özellik ekliyorsanız, sihirbazın [Adlar](../ide/names-add-property-wizard.md) sayfasında **Kisa ad** listesinden bir stok özelliği seçebilirsiniz. Bu özellikler aşağıdaki gibidir:
 
 |Özellik adı|Açıklama|
 |-------------------|-----------------|
-|`Appearance`|Denetimin görünüşünü belirleyen bir değer döndürür veya ayarlar. Denetimin `Appearance` özelliği üç boyutlu görüntüleme efektlerini içerebilir veya atlayabilir. Bu özellik bir çevresel okuma/yazma özelliğidir.|
-|`BackColor`|Denetimin çevresel `BackColor` özelliğini bir palet (RGB) rengine veya önceden tanımlanmış bir sistem rengine döndürür ya da ayarlar. Varsayılan olarak, değeri denetimin kapsayıcısının ön plan rengine karşılık gelir. Bu özellik bir çevresel okuma/yazma özelliğidir.|
-|`BorderStyle`|Bir denetimin kenarlık stilini döndürür veya ayarlar. Bu özellik bir okuma/yazma özelliğidir.|
-|`Caption`|Denetimin `Caption` özelliğini döndürür veya ayarlar. Başlık pencerenin başlığı olur. `Caption`**üye değişkeni** uygulama türü yok.|
-|`Enabled`|Denetimin `Enabled` özelliğini döndürür veya ayarlar. Etkin bir denetim, Kullanıcı tarafından oluşturulan olaylara yanıt verebilir.|
-|`Font`|Denetimin çevresel yazı tipini döndürür veya ayarlar. Denetimin yazı tipi yoksa null.|
-|`ForeColor`|Denetimin çevresel `ForeColor` özelliğini döndürür veya ayarlar.|
-|`hWnd`|Denetimin `hWnd` özelliğini döndürür veya ayarlar. `hWnd`**üye değişkeni** uygulama türü yok.|
-|`ReadyState`|Denetimin `ReadyState` özelliğini döndürür veya ayarlar. Bir Denetim başlatılmamış, başlatılmış, yüklenmeye, etkileşimli veya tamamlanmış olabilir. Daha fazla bilgi için *Internet SDK 'Sında* [ReadyState](/previous-versions//aa768362\(v=vs.85\)) bölümüne bakın.|
-|`Text`|Denetimde bulunan metni döndürür veya ayarlar. `Text`**üye değişkeni** uygulama türü yok.|
+|`Appearance`|Denetimin görünümünü belirleyen bir değer verir veya ayarlar. Denetimin `Appearance` özelliği üç boyutlu ekran efektleri içerebilir veya atlayabilir. Bu özellik ortam okuma/yazma özelliğidir.|
+|`BackColor`|Denetimin ortam `BackColor` özelliğini palet (RGB) rengine veya önceden tanımlanmış bir sistem rengine döndürür veya ayarlar. Varsayılan olarak, değeri denetim kapsayıcısının ön plan rengine karşılık gelir. Bu özellik ortam okuma/yazma özelliğidir.|
+|`BorderStyle`|Denetim için kenarlık stilini döndürür veya ayarlar. Bu özellik bir okuma/yazma özelliğidir.|
+|`Caption`|Denetimin `Caption` özelliğini döndürür veya ayarlar. Başlık pencerenin başlığıdır. `Caption`Üye **değişken** uygulama türü yoktur.|
+|`Enabled`|Denetimin `Enabled` özelliğini döndürür veya ayarlar. Etkin leştirilmiş bir denetim, kullanıcı tarafından oluşturulan olaylara yanıt verebilir.|
+|`Font`|Denetimin ortam yazı tipini döndürür veya ayarlar. Denetimin yazı tipi yoksa null.|
+|`ForeColor`|Denetimin ortam `ForeColor` özelliğini döndürür veya ayarlar.|
+|`hWnd`|Denetimin `hWnd` özelliğini döndürür veya ayarlar. `hWnd`Üye **değişken** uygulama türü yoktur.|
+|`ReadyState`|Denetimin `ReadyState` özelliğini döndürür veya ayarlar. Denetim başharfe indirilmemiş, başharflere getirilmemiş, yüklenebilir, etkileşimli veya tamamlanabilir. Daha fazla bilgi için *Internet SDK'daki* [READYSTATE'e](/previous-versions/aa768362\(v=vs.85\)) bakın.|
+|`Text`|Denetimde bulunan metni döndürür veya ayarlar. `Text`Üye **değişken** uygulama türü yoktur.|

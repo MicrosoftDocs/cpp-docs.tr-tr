@@ -28,12 +28,12 @@ helpviewer_keywords:
 - COleMessageFilter [MFC], SetMessagePendingDelay
 - COleMessageFilter [MFC], SetRetryReply
 ms.assetid: b1fd1639-fac4-4fd0-bf17-15172deba13c
-ms.openlocfilehash: f6db5f012aedf08edd87980e304e181295bfb953
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8a6c160a76ae27059238c3e8e26b5bea87a87f7f
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374921"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753839"
 ---
 # <a name="colemessagefilter-class"></a>COleMessageFilter Sınıfı
 
@@ -120,7 +120,7 @@ COleMessageFilter();
 
 İleti bekleyen gecikme süresi dolduğunda görüntülenen meşgul iletişim kutusunu etkinleştirir ve devre dışı katanır (Bkz. OLE çağrısı sırasında [SetRetryReply).](#setretryreply)
 
-```
+```cpp
 void EnableBusyDialog(BOOL bEnableBusy = TRUE);
 ```
 
@@ -133,7 +133,7 @@ void EnableBusyDialog(BOOL bEnableBusy = TRUE);
 
 OLE çağrısı sırasında klavye veya fare iletisi beklemedeyse ve arama zaman dolduysa görüntülenen "yanıt vermiyor" iletişim kutusunu etkinleştirer ve devre dışı katanır.
 
-```
+```cpp
 void EnableNotRespondingDialog(BOOL bEnableNotResponding = TRUE);
 ```
 
@@ -203,7 +203,7 @@ Sıfırsız başarı; aksi takdirde 0.
 
 [Kaydolmak](#register)için yapılan bir çağrı yla gerçekleştirilen önceki bir kaydı iptal eder.
 
-```
+```cpp
 void Revoke();
 ```
 
@@ -217,7 +217,7 @@ Program sona ermeden önce bir ileti filtresi iptal edilmelidir.
 
 Bu işlev, uygulamanın "meşgul yanıtını" ayarlar.
 
-```
+```cpp
 void SetBusyReply(SERVERCALL nBusyReply);
 ```
 
@@ -244,7 +244,7 @@ Varsayılan olarak, meşgul yanıtı SERVERCALL_RETRYLATER. Bu yanıt, arama uyg
 
 Arama uygulamasının daha fazla eylem yapmadan önce çağrılan uygulamadan yanıt için ne kadar bekleyeceğini belirler.
 
-```
+```cpp
 void SetMessagePendingDelay(DWORD nTimeout = 5000);
 ```
 
@@ -261,7 +261,7 @@ Bu fonksiyon [SetRetryReply](#setretryreply)ile birlikte çalışır.
 
 Çağrılan bir uygulamadan yoğun yanıt aldığında arama uygulamasının eylemini belirler.
 
-```
+```cpp
 void SetRetryReply(DWORD nRetryReply = 0);
 ```
 

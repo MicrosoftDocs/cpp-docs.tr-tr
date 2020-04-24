@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CProgressCtrl [MFC], SetStep
 - CProgressCtrl [MFC], StepIt
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
-ms.openlocfilehash: c5eb6a93cd68c2dafb76af3b0e42da8b56566e25
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c9e94e334318b32efcf8c9de681a78349ab12151
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364017"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81751128"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl Sınıfı
 
@@ -149,7 +149,7 @@ virtual BOOL Create(
 - PBS_SMOOTH İlerleme çubuğu kontrolünde kademeli ve düzgün doldurma görüntüler. Bu bayrak olmadan, denetim bloklarla doldurulur.
 
 *Rect*<br/>
-İlerleme çubuğu denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir. Denetim bir alt pencere olması gerektiğinden, belirtilen koordinatlar *pParentWnd*istemci alanına görelidir.
+İlerleme çubuğu denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir. Denetim bir alt pencere olması gerektiğinden, belirtilen koordinatlar *pParentWnd*istemci alanına görelidir.
 
 *pParentWnd*<br/>
 İlerleme çubuğu denetiminin üst penceresini belirtir, `CDialog`genellikle bir . NULL olmamalıdır.
@@ -191,7 +191,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 İlerleme çubuğu denetiminin stilini belirtir. Windows SDK'da [CreateWindow'da](/windows/win32/api/winuser/nf-winuser-createwindoww) açıklanan pencere stillerinin herhangi bir birleşimini uygulayın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -263,7 +263,7 @@ int GetPos();
 
 İlerleme çubuğu denetiminin geçerli alt ve üst sınırlarını veya aralığını alır.
 
-```
+```cpp
 void GetRange(
     int& nLower,
     int& nUpper);
@@ -495,7 +495,7 @@ int SetPos(int nPos);
 
 İlerleme çubuğu denetiminin aralığının üst ve alt sınırlarını ayarlar ve çubuğu yeni aralıkları yansıtacak şekilde yeniden çizer.
 
-```
+```cpp
 void SetRange(
     short nLower,
     short nUpper);

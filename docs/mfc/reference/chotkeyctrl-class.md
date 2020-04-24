@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CHotKeyCtrl [MFC], SetHotKey
 - CHotKeyCtrl [MFC], SetRules
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
-ms.openlocfilehash: 758fb78fbd4e25a0e2fb8cea300c5371ece04fb4
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a79cc0ab2c01633f96430477aa536a60385461e9
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366881"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81750805"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl Sınıfı
 
@@ -151,7 +151,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Sıcak anahtar denetiminin stilini belirtir. Kontrol stillerinin herhangi bir birleşimini uygulayın. Daha fazla bilgi için Windows SDK'daki [Ortak Denetim Stilleri'ne](/windows/win32/Controls/common-control-styles) bakın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -254,7 +254,7 @@ Bu işlevin döndürdettiği anahtar adı klavye sürücüsünden gelir, böylec
 
 Klavye kısayolu sıcak tuş kontrolü için ayarlar.
 
-```
+```cpp
 void SetHotKey(
     WORD wVirtualKeyCode,
     WORD wModifiers);
@@ -285,7 +285,7 @@ Sanal tuş kodu ve değiştirici tuşları birlikte klavye kısayolu tanımlar.
 
 Geçersiz kombinasyonları ve sıcak anahtar denetimi için varsayılan değiştirici birleşimini tanımlamak için bu işlevi arayın.
 
-```
+```cpp
 void SetRules(
     WORD wInvalidComb,
     WORD wModifiers);

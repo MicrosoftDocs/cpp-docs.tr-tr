@@ -15,12 +15,12 @@ f1_keywords:
 - AFXLAYOUT/CMFCDynamicLayout::LoadResource
 - AFXLAYOUT/CMFCDynamicLayout::SetMinSize
 ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
-ms.openlocfilehash: b70deca78d079c6a95db225814fdc70528e48af9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 77dd3a84a0c76b92495bb062eeb83ff013933087
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367522"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752394"
 ---
 # <a name="cmfcdynamiclayout-class"></a>CMFCDynamicLayout Sınıfı
 
@@ -123,7 +123,7 @@ Barındırma penceresi yeniden boyutlandırılırken, çocuk denetiminin konumu 
 
 Dinamik düzen yöneticisi tarafından denetlenir pencereler listesine genellikle bir denetim olan bir alt pencere ekler.
 
-```
+```cpp
 void Adjust();
 ```
 
@@ -186,7 +186,7 @@ Barındırma penceresi yeniden boyutlandırılırken bir alt denetimin konumu ve
 
 Pencerenin geçerli istemci alanıiçin dikdörtgeni alır.
 
-```
+```cpp
 void GetHostWndRect(CRect& rect,);
 ```
 
@@ -383,7 +383,7 @@ Kullanıcı ana bilgisayar penceresini yeniden boyutlandırdığında alt deneti
 
 Düzenin ayarlanmadığı pencere boyutunu aşağıda ayarlar.
 
-```
+```cpp
 void SetMinSize(const CSize& size);
 ```
 

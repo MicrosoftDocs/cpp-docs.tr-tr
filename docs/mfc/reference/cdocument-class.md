@@ -120,12 +120,12 @@ helpviewer_keywords:
 - CDocument [MFC], m_clrRichPreviewTextColor
 - CDocument [MFC], m_lfRichPreviewFont
 ms.assetid: e5a2891d-e1e1-4599-8c7e-afa9b4945446
-ms.openlocfilehash: 2f8ba8d0b35bd72efa8f8d63dbefd689e645d768
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d356ba6b6134221c2fc9595fc6d78f91961c5b7f
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374044"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753251"
 ---
 # <a name="cdocument-class"></a>Kişniş Sınıfı
 
@@ -260,7 +260,7 @@ Daha fazla `CDocument`bilgi için , bkz [Serialization](../../mfc/serialization-
 
 Belgeye görünüm eklemek için bu işlevi arayın.
 
-```
+```cpp
 void AddView(CView* pView);
 ```
 
@@ -765,7 +765,7 @@ Küçük resmin çizilmesi gereken alanın sınırlayıcı bir dikdörtgenini be
 
 Yerleşik posta ana bilgisayarı (varsa) üzerinden belgeek olarak ileti gönderir.
 
-```
+```cpp
 void OnFileSendMail();
 ```
 
@@ -979,7 +979,7 @@ virtual void OnUnloadHandler();
 
 Posta desteği (MAPI) varsa ID_FILE_SEND_MAIL komutunu etkinleştirin.
 
-```
+```cpp
 void OnUpdateFileSendMail(CCmdUI* pCmdUI);
 ```
 
@@ -1082,7 +1082,7 @@ Kaldırılacak bir yığının PID'sini belirtir.
 
 Bir belgeden görünümü ayırmak için bu işlevi çağırın.
 
-```
+```cpp
 void RemoveView(CView* pView);
 ```
 
@@ -1224,7 +1224,7 @@ Bu işlevi çağırmak, belgeyi görüntüleyen tüm çerçeve pencerelerinin ba
 
 Belge değiştirildikten sonra bu işlevi çağırın.
 
-```
+```cpp
 void UpdateAllViews(
     CView* pSender,
     LPARAM lHint = 0L,

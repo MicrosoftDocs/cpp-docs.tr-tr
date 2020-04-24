@@ -192,12 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: 946de5768829330f84b826a1fc9b2f6278847357
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4bb1ade4182424cbdcbf0d7ba69af88bbb88abe6
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366828"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81750679"
 ---
 # <a name="cwinapp-class"></a>CWinApp Sınıfı
 
@@ -377,7 +377,7 @@ Veri `m_hPrevInstance` üyesi artık yok. Uygulamanın başka bir örneğinin ç
 
 Uygulamanın koruduğu kullanılabilir belge şablonları listesine belge şablonu eklemek için bu üye işlevi arayın.
 
-```
+```cpp
 void AddDocTemplate(CDocTemplate* pTemplate);
 ```
 
@@ -446,7 +446,7 @@ Davranışı özelleştirmek için, türetilmiş bir [CWinApp Sınıfında](../.
 
 Çıkmadan önce tüm açık belgeleri kapatmak için bu üye işlevini arayın.
 
-```
+```cpp
 void CloseAllDocuments(BOOL bEndSession);
 ```
 
@@ -618,7 +618,7 @@ D2D desteği etkinse TRUE döndürür, FALSE - aksi takdirde
 
 Uygulamanızın yardımı için HTMLHelp'i `CWinApp`kullanmak için bu üye işlevini türetilmiş sınıfınızın oluşturucusundan çağırın.
 
-```
+```cpp
 void EnableHtmlHelp();
 ```
 
@@ -628,7 +628,7 @@ void EnableHtmlHelp();
 
 Uygulamanızın kullanıcılarının Windows `InitInstance` Dosya Yöneticisi'nin içinden dosyaları çift tıklattıklarında veri dosyalarını açmalarını sağlamak için genellikle geçersiz kılmanızdan bu işlevi arayın.
 
-```
+```cpp
 void EnableShellOpen();
 ```
 
@@ -1016,7 +1016,7 @@ Bir `CAtlTransactionManager` nesneye işaretçi.
 
 Açık belgeleri kapatmadan önce bir uygulamayı gizlemek için bu üye işlevi arayın.
 
-```
+```cpp
 void HideApplication();
 ```
 
@@ -1266,7 +1266,7 @@ Başarılı olursa simgeye bir tanıtıcı; aksi takdirde NULL.
 
 En son kullanılan (MRU) dosyaların listesini ve son önizleme durumunu etkinleştirmek ve yüklemek için InitInstance üye işlevini [initInstance](#initinstance) üye işlevi içinden arayın.
 
-```
+```cpp
 void LoadStdProfileSettings(UINT nMaxMRU = _AFX_MRU_COUNT);
 ```
 
@@ -1757,7 +1757,7 @@ Bu ada sahip bir belge zaten açıksa, bu belgeyi içeren ilk çerçeve penceres
 
 Komut satırını ayrışdırmak ve parametreleri teker teker [CCommandLineInfo::ParseParam'e](../../mfc/reference/ccommandlineinfo-class.md#parseparam)göndermek için bu üye işlevini arayın.
 
-```
+```cpp
 void ParseCommandLine(CCommandLineInfo& rCmdInfo);
 ```
 
@@ -1920,7 +1920,7 @@ Varsayılan uygulama sadece TRUE döndürür. Özelleştirilmiş kayıt adımlar
 
 Uygulamanızın tüm belge türlerini Windows Dosya Yöneticisi'ne kaydetmek için bu üye işlevini arayın.
 
-```
+```cpp
 void RegisterShellFileTypes(BOOL bCompat = FALSE);
 ```
 
@@ -2108,7 +2108,7 @@ Bu üye işlevin varsayılan uygulaması, uygulama daki tüm değiştirilmiş be
 
 Belirli bir yazıcı seçmek ve daha önce Yazdır İletişim kutusunda seçilen yazıcıyı serbest bırakmak için bu üye işlevi arayın.
 
-```
+```cpp
 void SelectPrinter(
     HANDLE hDevNames,
     HANDLE hDevMode,
@@ -2134,7 +2134,7 @@ Hem *hDevMode* hem de *hDevNames* NULL ise, `SelectPrinter` geçerli varsayılan
 
 Uygulamanın yardım türünü ayarlar.
 
-```
+```cpp
 void SetHelpMode(AFX_HELP_TYPE eHelpType);
 ```
 
@@ -2153,7 +2153,7 @@ Uygulamanızın Yardım türünü HTMLHelp olarak ayarlamak için [EnableHTMLHel
 
 Uygulama ayarlarının INI dosyaları yerine kayıt defterinde depolanabılmasına neden olur.
 
-```
+```cpp
 void SetRegistryKey(LPCTSTR lpszRegistryKey);
 void SetRegistryKey(UINT nIDRegistryKey);
 ```
@@ -2240,7 +2240,7 @@ Sıfırsız başarı; aksi takdirde 0.
 
 Uygulamanızın tüm belge türlerinin Windows Dosya Yöneticisi'ne kaydını açmak için bu üye işlevini arayın.
 
-```
+```cpp
 void UnregisterShellFileTypes();
 ```
 
@@ -2380,7 +2380,7 @@ Başka bir örnek için, CWinApp örneğine [bakın::GetProfileInt](#getprofilei
 
 Uygulama için Uygulama Kullanıcı Modeli Kimliğini açıkça ayarlar. Bu yöntem, herhangi bir kullanıcı arabirimi kullanıcıya sunulmadan önce çağrılmalıdır (en iyi yer uygulama oluşturucusudur).
 
-```
+```cpp
 void SetAppID(LPCTSTR lpcszAppID);
 ```
 

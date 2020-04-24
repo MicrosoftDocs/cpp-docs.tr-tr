@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-ms.openlocfilehash: 8e1183464d3ecf9b12fabcc6fb4f1fd99b7b0083
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 635a8c95a3801c6e88feff1cefa3ed27727a8f88
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81353401"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82032193"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>UWP Uygulamaları için C++ Uygulamasında Zaman Uyumsuz İşlemler Oluşturma
 
@@ -54,13 +54,13 @@ Windows Runtime'ı kullanarak, çeşitli programlama dillerinin en iyi özellikl
 [Windows::Foundation::IAsyncAction](/uwp/api/windows.foundation.iasyncaction)<br/>
 Eşzamanlı bir eylemi temsil eder.
 
-[Windows::Foundation::IAsyncActionWithProgress\<TProgress>](/uwp/api/Windows.Foundation.IAsyncActionWithProgress_TProgress_)<br/>
+[Windows::Foundation::IAsyncActionWithProgress\<TProgress>](/uwp/api/windows.foundation.iasyncactionwithprogress-1)<br/>
 İlerlemeyi bildiren eşzamanlı bir eylemi temsil eder.
 
-[Windows::Foundation::IAsyncOperation\<TResult>](/uwp/api/windows.foundation.iasyncoperation_tresult_)<br/>
+[Windows::Foundation::IAsyncOperation\<TResult>](/uwp/api/windows.foundation.iasyncoperation-1)<br/>
 Bir sonucu döndüren eşzamanlı bir işlemi temsil eder.
 
-[Windows::Foundation::IAsyncOperationWithProgress\<TResult, TProgress>](/uwp/api/windows.foundation.iasyncoperationwithprogress_tresult_tprogress_)<br/>
+[Windows::Foundation::IAsyncOperationWithProgress\<TResult, TProgress>](/uwp/api/windows.foundation.iasyncoperationwithprogress-2)<br/>
 Bir sonucu döndüren ve ilerlemeyi bildiren eşzamanlı bir işlemi temsil eder.
 
 *Eylem* kavramı, eşzamanlı görevin bir değer oluşturmadığı anlamına gelir (döndüren `void`bir işlev düşünün). Bir *işlem* kavramı, eşzamanlı görevin bir değer ürettiği anlamına gelir. *İlerleme* kavramı, görevin ilerleme iletilerini arayana bildirebileceği anlamına gelir. JavaScript, .NET Framework ve Visual C++ her biri ABI sınırı boyunca kullanılmak üzere bu arabirimlerin örneklerini oluşturmak için kendi yolunu sağlar. Visual C++için PPL [eşzamanlılık sağlar::create_async](reference/concurrency-namespace-functions.md#create_async) işlevi. Bu işlev, bir görevin tamamlanmasını temsil eden bir Windows Runtime eşzamanlı eşzamanlı eylem veya işlem oluşturur. İşlev `create_async` bir iş işlevi (genellikle bir lambda ifadesi) `task` alır, dahili olarak bir nesne oluşturur ve bu görevi dört eşzamanlı Windows Runtime arabiriminden birinde sarar.
@@ -92,7 +92,7 @@ Aşağıdaki örnek, başka bir Windows `IAsyncAction` Runtime bileşeni tarafı
 
 ## <a name="example-creating-a-c-windows-runtime-component-and-consuming-it-from-c"></a><a name="example-component"></a>Örnek: C++ Windows Runtime Bileşeni Oluşturma ve C'den Tüketme\#
 
-Bilgi işlem yoğun işlemleri gerçekleştirmek için UI ve C++ Windows Runtime bileşenini tanımlamak için XAML ve C# kullanan bir uygulama düşünün. Bu örnekte, C++ bileşeni belirli bir aralıktaki sayıların asal olduğunu hesaplar. Dört Windows Runtime asynchronous görev arabirimleri arasındaki farklılıkları göstermek için, Boş Bir **Çözüm** oluşturarak ve adlandırma yaparak Visual Studio'da başlatın. `Primes` Sonra çözüme bir **Windows Runtime Bileşeni** `PrimesLibrary`projesi ekleyin ve adlandırma . Oluşturulan C++ üstbilgi dosyasına aşağıdaki kodu ekleyin (bu örnek Class1.h'yi Asal olarak yeniden adlandırır). Her `public` yöntem dört eşzamanlı arabirimden birini tanımlar. Bir değeri döndüren yöntemler [Windows::Foundation::Collections::IVector\<int>](/uwp/api/Windows.Foundation.Collections.IVector_T_) nesnesi. İlerlemeyi bildiren yöntemler, tamamlanan genel çalışma yüzdesini tanımlayan değerler üretir. `double`
+Bilgi işlem yoğun işlemleri gerçekleştirmek için UI ve C++ Windows Runtime bileşenini tanımlamak için XAML ve C# kullanan bir uygulama düşünün. Bu örnekte, C++ bileşeni belirli bir aralıktaki sayıların asal olduğunu hesaplar. Dört Windows Runtime asynchronous görev arabirimleri arasındaki farklılıkları göstermek için, Boş Bir **Çözüm** oluşturarak ve adlandırma yaparak Visual Studio'da başlatın. `Primes` Sonra çözüme bir **Windows Runtime Bileşeni** `PrimesLibrary`projesi ekleyin ve adlandırma . Oluşturulan C++ üstbilgi dosyasına aşağıdaki kodu ekleyin (bu örnek Class1.h'yi Asal olarak yeniden adlandırır). Her `public` yöntem dört eşzamanlı arabirimden birini tanımlar. Bir değeri döndüren yöntemler [Windows::Foundation::Collections::IVector\<int>](/uwp/api/windows.foundation.collections.ivector-1) nesnesi. İlerlemeyi bildiren yöntemler, tamamlanan genel çalışma yüzdesini tanımlayan değerler üretir. `double`
 
 [!code-cpp[concrt-windowsstore-primes#1](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_2.h)]
 

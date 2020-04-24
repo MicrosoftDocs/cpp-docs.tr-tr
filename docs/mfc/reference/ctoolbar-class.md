@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CToolBar [MFC], SetHeight
 - CToolBar [MFC], SetSizes
 ms.assetid: e868da26-5e07-4607-9651-e2f863ad9059
-ms.openlocfilehash: fdbf343c91725783afd79bbebd73f66fdb1d67e2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cbb2d1bb797737a14e9728d339305bf9c371b543
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364290"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752214"
 ---
 # <a name="ctoolbar-class"></a>Ctoolbar Sınıfı
 
@@ -292,7 +292,7 @@ Araç çubuğu penceresini oluşturmak için Üye [Oluştur](#create) işlevini 
 
 Bu üye işlev, nIndex tarafından belirtilen konumda araç çubuğu düğmesinin veya ayırıcının denetim kimliğini, stilini ve görüntü dizini *alır.*
 
-```
+```cpp
 void GetButtonInfo(
     int nIndex,
     UINT& nID,
@@ -522,7 +522,7 @@ Sıfırsız eğer başarılı; aksi takdirde 0.
 
 Düğmenin komut kimliğini, stilini ve resim numarasını ayarlamak için bu üye işlevini arayın.
 
-```
+```cpp
 void SetButtonInfo(
     int nIndex,
     UINT nID,
@@ -603,7 +603,7 @@ Bu işlev ayırıcılar için görüntü dizinleri atamaydığından, bit eşlem
 
 Bir düğme veya ayırıcının stilini ayarlamak veya düğmeleri gruplandırmak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetButtonStyle(
     int nIndex,
     UINT nStyle);
@@ -672,7 +672,7 @@ Sıfırsız eğer başarılı; aksi takdirde 0.
 
 Bu üye işlev, araç çubuğunun yüksekliğini *cyHeight'da*belirtilen pikselcinsinden değere ayarlar.
 
-```
+```cpp
 void SetHeight(int cyHeight);
 ```
 
@@ -691,7 +691,7 @@ Bu işlev çağrılmazsa, çerçeve araç çubuğu yüksekliğini belirlemek iç
 
 Araç çubuğunun düğmelerini *boyutolarak, boyut Düğme'de*belirtilen piksellere ayarlamak için bu üye işlevini arayın.
 
-```
+```cpp
 void SetSizes(
     SIZE sizeButton,
     SIZE sizeImage);

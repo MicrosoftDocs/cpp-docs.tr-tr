@@ -64,12 +64,12 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetItem
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-ms.openlocfilehash: 6b5088526ad2c1f94fdc95ec3b84ab7cf64b59e1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: de1705d47c5692d3563bc7d9cb2646531819197a
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366864"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81750926"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl Sınıfı
 
@@ -231,7 +231,7 @@ virtual BOOL Create(
 Üstbilgi denetiminin stilini belirtir. Üstbilgi denetim stillerinin açıklaması için Windows SDK'daki [Üstbilgi Denetim Stilleri'ne](/windows/win32/Controls/header-control-styles) bakın.
 
 *Rect*<br/>
-Üstbilgi denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
+Üstbilgi denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
 
 *pParentWnd*<br/>
 Üstbilgi denetiminin üstbilgi denetiminin üst `CDialog`penceresini belirtir, genellikle bir . NULL olmamalıdır.
@@ -301,7 +301,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Üstbilgi denetiminin stili. Üstbilgi denetim stillerinin açıklaması için Windows SDK'daki [Üstbilgi Denetim Stilleri'ne](/windows/win32/Controls/header-control-styles) bakın. Ek stillerin listesi için [oluştur'a](#create) bakın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -543,7 +543,7 @@ BOOL GetItemDropDownRect(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*iÖğe*|[içinde] Stili HDF_SPLITBUTTON bir üstbilgi öğesinin sıfır tabanlı dizin. Daha fazla bilgi `fmt` için [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) yapısının üyesine bakın.|
-|*Lprect*|[çıkış] Sınırlayıcı dikdörtgen bilgilerini almak için [BIR RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi.|
+|*Lprect*|[çıkış] Sınırlayıcı dikdörtgen bilgilerini almak için [BIR RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -581,7 +581,7 @@ BOOL GetItemRect(
 Üstbilgi denetim öğesinin sıfır tabanlı dizin.
 
 *Lprect*<br/>
-Sınırlayıcı dikdörtgen bilgilerini alan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısının adresine işaretçi.
+Sınırlayıcı dikdörtgen bilgilerini alan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısının adresine işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -633,7 +633,7 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Lprect*|[çıkış] Sınırlayıcı dikdörtgen bilgilerini alan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi.|
+|*Lprect*|[çıkış] Sınırlayıcı dikdörtgen bilgilerini alan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Microsoft::WRL::DeferrableEventArgs::GetDeferral method
 - Microsoft::WRL::DeferrableEventArgs::InvokeAllFinished method
 ms.assetid: ece89267-7b72-40e1-8185-550c865b070a
-ms.openlocfilehash: bae2472a75ab77f138fcee0951a6b869cc7c8e82
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 066918bf2c76b17f06871ee08be674be9b36c161
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372561"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82032466"
 ---
 # <a name="deferrableeventargs-class"></a>DeferrableEventArgs Sınıfı
 
@@ -41,10 +41,10 @@ Ertelenmiş bir olay için bağımsız değişkenleri bildiren arabirim türü.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Adı                                                         | Açıklama
------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------------------
-[ErtelenebilirEventArgs::GetDeferral](#getdeferral)             | Ertelenmiş bir olayı temsil eden [Erteleme](/uwp/api/windows.foundation.deferral) nesnesine bir başvuru alır.
-[ErtelenebilirEventArgs::InvokeAllFinished](#invokeallfinished) | Ertelenmiş bir olayı işlemek için tüm işlemlerin tamamladığını belirtmek için çağrıldı.
+| Adı | Açıklama |
+|--|--|
+| [ErtelenebilirEventArgs::GetDeferral](#getdeferral) | Ertelenmiş bir olayı temsil eden [Erteleme](/uwp/api/windows.foundation.deferral) nesnesine bir başvuru alır. |
+| [ErtelenebilirEventArgs::InvokeAllFinished](#invokeallfinished) | Ertelenmiş bir olayı işlemek için tüm işlemlerin tamamladığını belirtmek için çağrıldı. |
 
 ## <a name="remarks"></a>Açıklamalar
 

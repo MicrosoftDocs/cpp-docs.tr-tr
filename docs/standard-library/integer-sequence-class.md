@@ -14,16 +14,16 @@ helpviewer_keywords:
 - std::make_integer_sequence
 - std::index_sequence_for
 ms.assetid: 2cfdddee-819d-478e-bb78-c8a9c2696803
-ms.openlocfilehash: d0de2e56e1f6b8e68e5989f21ecd89b9646caa1b
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 3de64f7855b5158f1565580d305e2a6eeaf3e76f
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076467"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82031478"
 ---
 # <a name="integer_sequence-class"></a>integer_sequence Sınıfı
 
-Bir tamsayı dizisini temsil eder. , Std:: Tuple\<T gibi bağımsız değişken türlerde parametre paketlerini bırakmak ve genişletmek için kullanılabilir... bir işleve bağımsız değişken olarak geçirilen >.
+Bir karşıcı sırayı temsil eder. Bir işleve bağımsız değişken olarak geçirilen std::tuple\<T...> gibi variadik türlerdeki parametre paketlerini bulmak ve genişletmek için kullanılabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,29 +35,29 @@ struct integer_sequence
 ### <a name="parameters"></a>Parametreler
 
 *T*\
-Değerlerin türü; tamsayı türü olmalıdır: bool, Char, char16_t, char32_t, wchar_t veya imzalı ya da işaretsiz tamsayı türleri.
+Değerlerin türü; ayrılmaz bir tür olmalıdır: bool, char, char16_t, char32_t, wchar_t veya imzalı veya imzasız tamsayı türleri.
 
-*Işları*\
-T türünde bir değer dizisini temsil eden tür olmayan bir parametre paketi.
+*Vals*\
+İntegral türü T değerleri dizisini temsil eden tür olmayan bir parametre paketi.
 
 ## <a name="members"></a>Üyeler
 
 |||
 |-|-|
-|`static size_t size() noexcept`|Dizideki öğelerin sayısı.|
-|`typedef T value_type`|Dizideki her öğenin türü. Bir integral türü olmalıdır.|
+|`static size_t size() noexcept`|Dizideki öğe sayısı.|
+|`typedef T value_type`|Dizideki her öğenin türü. Ayrılmaz bir tür olmalı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir işleve doğrudan geçirilen bir parametre paketi özel bir kitaplık yardımcıları olmadan yüklenebilir. Bir parametre paketi bir işleve geçirilen bir türün parçası olduğunda ve öğelere erişmek için dizinlerle ihtiyacınız olduğunda, bu durumda paketten çıkarmanın en kolay yolu `integer_sequence` ve ilgili tür diğer adlarını `make_integer_sequence`, `index_sequence`, `make_index_sequence`ve `index_sequence_for`kullanmaktır.
+Doğrudan bir işleve geçirilen parametre paketi, özel kitaplık yardımcıları olmadan açılabilir. Bir parametre paketi bir işleve geçirilen bir türün parçasıysa ve öğelere erişmek için indekslere ihtiyacınız olduğunda, `integer_sequence` onu açmanın en `make_integer_sequence` `index_sequence`kolay `make_index_sequence`yolu `index_sequence_for`kullanmak ve ilgili tür adlarını kullanmaktır, , , ve .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [N3658](https://wg21.link/n3658)orijinal teklifini temel alır. Bir `std::array<T,N>``std::tuple` oluşturmak için bir `integer_sequence` kullanmayı ve demet üyelerine almak için bir `integer_sequence` kullanmayı gösterir.
+Aşağıdaki örnek, [n3658'in](https://wg21.link/n3658)özgün teklifine dayanmaktadır. Bir'den `std::array<T,N>`bir `std::tuple` `integer_sequence` in nasıl kullanılacağını ve bir'in `integer_sequence` tuple üyelerine ulaşmak için nasıl kullanılacağını gösterir.
 
-`a2t` işlevinde, `index_sequence` `size_t` integral türüne göre `integer_sequence` diğer adıdır. `make_index_sequence`, derleme zamanında, çağıran tarafından geçirilen dizi ile aynı sayıda öğe ile sıfır tabanlı bir `index_sequence` oluşturan bir diğer addır. `a2t`, `index_sequence` değerine göre `a2t_`, ifadenin `I`paketleri `a[I]...` ve sonra öğeleri bağımsız bağımsız değişkenler olarak tüketen `make_tuple` öğesine geçirilir. Örneğin, dizi üç öğe içeriyorsa, `make_tuple` make_tuple (bir [0], [1], [2]) olarak çağrılır. Dizi öğelerinin kendileri herhangi bir tür olabilir.
+İşlevde, `a2t` `index_sequence` integral türüne `integer_sequence` `size_t` dayalı bir diğer addır. `make_index_sequence`derleme zamanda, arayan tarafından geçirilen diziyle aynı `index_sequence` sayıda öğeiçeren sıfır tabanlı bir diğer addır. `a2t``index_sequence` değeri `a2t_` , ifadenin `a[I]...` paketaçtığı `I`yere geçirir ve sonra öğeler bunları `make_tuple` tek tek bağımsız değişkenolarak tüketen öğelerle beslenir. Örneğin, sıra üç öğe içeriyorsa, make_tuple(a[0], `make_tuple` a[1], a[2]) olarak adlandırılır. Dizi öğeleri kendilerini tabii ki herhangi bir tür olabilir.
 
-Apply işlevi bir [std:: Tuple](../standard-library/tuple-class.md)kabul eder ve `tuple_size` Helper sınıfını kullanarak bir `integer_sequence` oluşturur. [Tuple_size](../standard-library/tuple-size-class-tuple.md) başvuru türleriyle çalışmadığından [std::d ecay_t](../standard-library/decay-class.md) gerekli olduğunu unutmayın. `apply_` işlevi demet üyelerinin paketini kaldırır ve bunları bir işlev çağrısına ayrı bağımsız değişkenler olarak iletir. Bu örnekte, işlevi değerleri yazdıran basit bir lambda ifadesidir.
+Apply işlevi bir [std kabul eder::tuple](../standard-library/tuple-class.md), `tuple_size` ve yardımcı sınıf kullanarak bir `integer_sequence` üretir. tuple_size başvuru türleri ile [çalışmadığından](../standard-library/tuple-size-class-tuple.md) [std::decay_t](../standard-library/decay-class.md) gerekli olduğunu unutmayın. İşlev, `apply_` tuple üyelerini boşaltır ve bunları ayrı bağımsız değişkenler olarak işlev çağrısına ileder. Bu örnekte işlev, değerleri yazdıran basit bir lambda ifadesidir.
 
 ```cpp
 #include <stddef.h>
@@ -115,14 +115,14 @@ int main()
 }
 ```
 
-Bir parametre paketine `index_sequence` yapmak için, `index_sequence_for`\<T... seçeneğini kullanın. `make_index_sequence`\<sizeof için bir diğer ad >... (T) >
+Bir `index_sequence` parametre paketi için bir `index_sequence_for` \<yapmak için, t...> `make_index_sequence` \<kullanın boyutlar için bir takma ad ... (T)>
 
 ## <a name="requirements"></a>Gereksinimler
 
-Üst bilgi: \<type_traits\>
+Üstbilgi: \<type_traits\>
 
-Ad hızadı: std
+Namepace: std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üç Nokta ve Variadic Şablonları](../cpp/ellipses-and-variadic-templates.md)
+[Elipsler ve Variadik Şablonlar](../cpp/ellipses-and-variadic-templates.md)

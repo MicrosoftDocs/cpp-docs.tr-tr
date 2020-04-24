@@ -114,12 +114,12 @@ helpviewer_keywords:
 - CMFCRibbonPanel [MFC], SetKeys
 - CMFCRibbonPanel [MFC], ShowPopup
 ms.assetid: 51d70749-1140-4386-b103-f14082049ba6
-ms.openlocfilehash: fa07132ace37074effb02802353fc82d3e338be0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5d622b5c36729daca81a6093e9f21573ce86940e
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368891"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753552"
 ---
 # <a name="cmfcribbonpanel-class"></a>CMFCRibbonPanel Sınıfı
 
@@ -432,7 +432,7 @@ CMFCRibbonBaseElement* GetElement(int nIndex) const;
 
 Şerit panelinde bulunan tüm şerit öğelerini alır.
 
-```
+```cpp
 void GetElements(CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
 ```
 
@@ -447,7 +447,7 @@ void GetElements(CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arEleme
 
 Belirtilen diziye belirtilen komut kimliğine sahip şerit öğeleri ekler.
 
-```
+```cpp
 void GetElementsByID(
 UINT uiCmdID,
 CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& arElements);
@@ -502,7 +502,7 @@ Yöntem başarılı olduysa belirtilen şerit elemanının sıfır tabanlı dizi
 
 Şerit panelindeki tüm şerit öğeleriiçin komut işlikilerini alır.
 
-```
+```cpp
 void GetItemIDsList(CList<UINT, UINT>& lstItems) const;
 ```
 
@@ -891,7 +891,7 @@ BOOL bDelete = TRUE);
 
 Şerit panelindeki tüm şerit öğelerini siler.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -955,7 +955,7 @@ Konuma göre bir şerit öğesini değiştirmek için [CMFCRibbonPanel'i arayın
 
 Ekran dikdörtgeni içindeki şerit elemanlarının dikey konumlarının ortalanmasını sağlar veya devre dışı kılabilir.
 
-```
+```cpp
 void SetCenterColumnVert(BOOL bSet = TRUE);
 ```
 
@@ -970,7 +970,7 @@ void SetCenterColumnVert(BOOL bSet = TRUE);
 
 Kullanıcı tanımlı verileri şerit paneliyle ilişkilendirer.
 
-```
+```cpp
 void SetData(DWORD_PTR dwData);
 ```
 
@@ -1108,7 +1108,7 @@ pColorButton->EnableAutomaticButton(_T("Automatic"),
 
 Aynı sütundaki şerit öğelerinin genişliğinin ayarlanmasını sağlar veya devre dışı kılabilir.
 
-```
+```cpp
 void SetJustifyColumns(BOOL bSet = TRUE);
 ```
 
@@ -1125,7 +1125,7 @@ Bu özellik bir şerit panelinde etkinleştirildiğinde, aynı sütundaki şerit
 
 Şerit panelinin varsayılan düğmesi için tuş ucunu ayarlar.
 
-```
+```cpp
 void SetKeys(LPCTSTR lpszKeys);
 ```
 
@@ -1163,7 +1163,7 @@ Yöntem başarılı olduysa, şerit paneli için açılır menüye işaretçi; a
 
 Belirtilen Şerit öğesine odak ayarlar.
 
-```
+```cpp
 void SetFocused(CMFCRibbonBaseElement* pNewFocus);
 ```
 
@@ -1178,7 +1178,7 @@ Odak alan bir Şerit öğesi için bir işaretçi.
 
 Belirtilen Şerit öğesini görünür kılmak için galeriyi kaydırır.
 
-```
+```cpp
 void MakeGalleryItemVisible(CMFCRibbonBaseElement* pItem);
 ```
 
@@ -1207,7 +1207,7 @@ BOOL IsWindows7Look() const;
 
 Bir dizi görünür öğe alır.
 
-```
+```cpp
 void GetVisibleElements(
 CArray<CMFCRibbonBaseElement*,
 CMFCRibbonBaseElement*>& arElements);

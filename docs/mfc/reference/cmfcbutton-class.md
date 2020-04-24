@@ -80,12 +80,12 @@ helpviewer_keywords:
 - CMFCButton [MFC], m_nAlignStyle
 - CMFCButton [MFC], m_nFlatStyle
 ms.assetid: 4b32f57c-7a53-4734-afb9-d47e3359f62e
-ms.openlocfilehash: 5434801969a55387a5b5555c9a4ade22f1969e7d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e949feaaac3570e1518cfb488cc1c42a471a1c46
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367787"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754876"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton Sınıfı
 
@@ -215,7 +215,7 @@ virtual void CleanUp();
 
 Bir araç ucunun tam metnini büyük bir araç ucu penceresinde mi yoksa küçük bir araç ucu penceresinde metnin kesilmiş bir sürümünde mi gösterin;
 
-```
+```cpp
 void EnableFullTextTooltip(BOOL bOn=TRUE);
 ```
 
@@ -230,7 +230,7 @@ void EnableFullTextTooltip(BOOL bOn=TRUE);
 
 Düğme metin yazı tipinin uygulama menüsü yazı tipiyle aynı olup olmadığını belirtir.
 
-```
+```cpp
 void EnableMenuFont(
     BOOL bOn=TRUE,
     BOOL bRedraw=TRUE);
@@ -700,7 +700,7 @@ Yazı tipini almak için kendi kodunuzu kullanmak için bu yöntemi geçersiz k�
 
 Otomatik yineleme moduna bir düğme ayarlar.
 
-```
+```cpp
 void SetAutorepeatMode(int nTimeDelay=500);
 ```
 
@@ -717,7 +717,7 @@ Bu yöntem, düğme serbest bırakılana veya *nTimeDelay* parametresi sıfıra 
 
 Görüntüyü işaretli bir düğme için ayarlar.
 
-```
+```cpp
 void SetCheckedImage(
     HICON hIcon,
     BOOL bAutoDestroy=TRUE,
@@ -782,7 +782,7 @@ void SetCheckedImage(
 
 Düğme metninin arka plan rengini ayarlar.
 
-```
+```cpp
 void SetFaceColor(
     COLORREF crFace,
     BOOL bRedraw=TRUE);
@@ -804,7 +804,7 @@ Düğme arka planı (yüz) için yeni bir dolgu rengi tanımlamak için bu yönt
 
 Görüntüyü bir düğme için ayarlar.
 
-```
+```cpp
 void SetImage(
     HICON hIcon,
     BOOL bAutoDestroy=TRUE,
@@ -876,7 +876,7 @@ Aşağıdaki örnek, yöntemin sınıftaki çeşitli `SetImage` sürümlerinin `
 
 İmleç görüntüsünü ayarlar.
 
-```
+```cpp
 void SetMouseCursor(HCURSOR hcursor);
 ```
 
@@ -900,7 +900,7 @@ Aşağıdaki örnek, yöntemin sınıfta `SetMouseCursor` nasıl `CMFCButton` ku
 
 İmleci bir elin görüntüsüne ayarlar.
 
-```
+```cpp
 void SetMouseCursorHand();
 ```
 
@@ -912,7 +912,7 @@ Bir elin imleç görüntüsünü düğmeyle ilişkilendirmek için bu yöntemi k
 
 Düğme `CMenuImages` görüntüsünü ayarlamak için bir nesne kullanır.
 
-```
+```cpp
 void SetStdImage(
     CMenuImages::IMAGES_IDS id,
     CMenuImages::IMAGE_STATE state=CMenuImages::ImageBlack,
@@ -936,7 +936,7 @@ void SetStdImage(
 
 Seçili olmayan bir düğme için düğme metninin rengini ayarlar.
 
-```
+```cpp
 void SetTextColor(COLORREF clrText);
 ```
 
@@ -951,7 +951,7 @@ void SetTextColor(COLORREF clrText);
 
 Seçili bir düğme için düğme metninin rengini ayarlar.
 
-```
+```cpp
 void SetTextHotColor(COLORREF clrTextHot);
 ```
 
@@ -966,7 +966,7 @@ void SetTextHotColor(COLORREF clrTextHot);
 
 Bir araç ucunu bir düğmeyle ilişkilendirir.
 
-```
+```cpp
 void SetTooltip(LPCTSTR lpszToolTipText);
 ```
 

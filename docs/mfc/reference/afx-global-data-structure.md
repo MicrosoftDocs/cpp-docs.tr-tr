@@ -55,12 +55,12 @@ helpviewer_keywords:
 - AFX_GLOBAL_DATA structure [MFC]
 - AFX_GLOBAL_DATA constructor
 ms.assetid: c7abf2fb-ad5e-4336-a01d-260c29ed53a2
-ms.openlocfilehash: 60f7513075e8da7e17f2113c01b954af5a690aaf
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0361d535a31526c5f7b79fdd4eab046dad0435cc
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363678"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752878"
 ---
 # <a name="afx_global_data-structure"></a>AFX_GLOBAL_DATA Yapısı
 
@@ -170,7 +170,7 @@ TRUE alfa karıştırma nın desteklenir olduğunu gösterir; aksi takdirde, YAN
 
 Fırçalar, yazı tipleri ve DL'ler gibi çerçeve tarafından ayrılan kaynakları yayımlar.
 
-```
+```cpp
 void CleanUp();
 ```
 
@@ -288,7 +288,7 @@ Tema, bir uygulamanın görsel stilini tanımlar. *HTheme* parametresi NULL ise 
 
 Microsoft Etkin Erişilebilirlik desteğini etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ```
 
@@ -676,7 +676,7 @@ Oluşturucu `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` bu üyeyi 4 piksele kadar başhar
 
 Masaüstünün menü animasyonu ve görev çubuğu otomatik hide özelliklerinin geçerli durumunu algılar.
 
-```
+```cpp
 void OnSettingChange();
 ```
 
@@ -781,7 +781,7 @@ Bu yöntem yatay bir normal yazı tipi, altı çizili bir yazı tipi ve varsayı
 
 Çerçeve tarafından kullanılan mantıksal yazı tiplerini reintialize eder.
 
-```
+```cpp
 void UpdateFonts();
 ```
 
@@ -793,7 +793,7 @@ Mantıksal yazı tipleri hakkında daha `CFont::CreateFontIndirect`fazla bilgi i
 
 Çerçeve tarafından kullanılan renkleri, renk derinliğini, fırçaları, kalemleri ve görüntüleri başolarak karşılar.
 
-```
+```cpp
 void UpdateSysColors();
 ```
 
@@ -861,7 +861,7 @@ Otomatik gizleme çubuklarının konumlarını belirten kodlanmış bayraklara s
 
 Ve `GetITaskbarList` `GetITaskbarList3` yöntemler le elde edilen arabirimleri serbest bırakır.
 
-```
+```cpp
 void ReleaseTaskBarRefs();
 ```
 

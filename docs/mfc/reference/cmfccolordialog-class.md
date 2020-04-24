@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMFCColorDialog [MFC], SetPageOne
 - CMFCColorDialog [MFC], SetPageTwo
 ms.assetid: 235bbbbc-a3b1-46e0-801b-fb55093ec579
-ms.openlocfilehash: 987e4f1e5e89c3c56b58adaad76cfd23d5e26c52
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1d4bd31d5095f572ee80f0357a2d7526482f1caa
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367714"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752549"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog Sınıfı
 
@@ -174,7 +174,7 @@ Renk paleti, kullanıcının seçebileceği renkleri belirtir.
 
 Sistem paletinden bir palet türeter.
 
-```
+```cpp
 void RebuildPalette();
 ```
 
@@ -182,7 +182,7 @@ void RebuildPalette();
 
 İletişim kutusunun geçerli rengini ayarlar.
 
-```
+```cpp
 void SetCurrentColor(COLORREF rgb);
 ```
 
@@ -197,7 +197,7 @@ void SetCurrentColor(COLORREF rgb);
 
 Geçerli rengi, en çok benzeyen geçerli paletteki renge ayarlar.
 
-```
+```cpp
 void SetNewColor(COLORREF rgb);
 ```
 
@@ -212,7 +212,7 @@ void SetNewColor(COLORREF rgb);
 
 Renk iletişim kutusunun ilk özellik sayfasında seçili rengin kırmızı, yeşil ve mavi bileşenlerini açıkça belirtir.
 
-```
+```cpp
 void SetPageOne(
     BYTE R,
     BYTE G,
@@ -236,7 +236,7 @@ void SetPageOne(
 
 Bir renk iletişim kutusunun ikinci özellik sayfasında seçili rengin kırmızı, yeşil ve mavi bileşenlerini açıkça belirtir.
 
-```
+```cpp
 void SetPageTwo(
     BYTE R,
     BYTE G,

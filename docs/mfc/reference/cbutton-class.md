@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: 05ad60855cd03115cf88ab2b51e56e6a26822035
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 74b07dc8144e853714ea73c8235f1259538a0c12
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352439"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752759"
 ---
 # <a name="cbutton-class"></a>CButton Sınıfı
 
@@ -664,7 +664,7 @@ Bit map'i ile bitirdiğinizde serbest bırakmaksizin sorumlusunuz.
 
 Düğmenin stilini değiştirir.
 
-```
+```cpp
 void SetButtonStyle(
     UINT nStyle,
     BOOL bRedraw = TRUE);
@@ -690,7 +690,7 @@ Düğme `GetButtonStyle` stilini almak için üye işlevini kullanın. Tam düğ
 
 Radyo düğmesinin veya onay kutusunun onay durumunu ayarlar veya sıfırlar.
 
-```
+```cpp
 void SetCheck(int nCheck);
 ```
 
@@ -1074,7 +1074,7 @@ Aşağıdaki kod örneği, bölme düğmesinin açılır ok stilini ayarlar. BCS
 
 Düğme denetiminin vurgulanıp vurgulanmadığını ayarlar.
 
-```
+```cpp
 void SetState(BOOL bHighlight);
 ```
 

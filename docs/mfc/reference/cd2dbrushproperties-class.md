@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CD2DBrushProperties [MFC], CD2DBrushProperties
 - CD2DBrushProperties [MFC], CommonInit
 ms.assetid: c77d717f-0a16-4d74-b2ce-0ae1766ed6f9
-ms.openlocfilehash: bf6399d2a245addb7e2e65100d33643fcd54e893
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2db720fd09c62f8b86baecea9229d946f3892333
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369285"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754188"
 ---
 # <a name="cd2dbrushproperties-class"></a>CD2DBrushProperties Sınıfı
 
@@ -76,7 +76,7 @@ Fırçaya uygulanacak dönüşüm
 
 Nesneyi başharfe alar
 
-```
+```cpp
 void CommonInit();
 ```
 

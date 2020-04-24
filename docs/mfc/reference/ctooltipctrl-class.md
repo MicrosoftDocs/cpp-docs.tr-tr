@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-ms.openlocfilehash: fdf91549fd1b911de3af82bb940b92fe5e220b92
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 53a5a5b6871680f9758d140174dcceae6c53f568
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365098"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752190"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl Sınıfı
 
@@ -164,7 +164,7 @@ Kullanma `CToolTipCtrl`hakkında daha fazla bilgi [Using CToolTipCtrl](../../mfc
 
 Bir araç ipucu denetimini etkinleştirmek veya devre dışı bırakmak için bu işlevi arayın.
 
-```
+```cpp
 void Activate(BOOL bActivate);
 ```
 
@@ -210,7 +210,7 @@ Aracı içeren pencereyi işaretçi.
 Aracın metnini içeren dize kaynağının kimliği.
 
 *lpRectTool*<br/>
-Aracın sınırlayıcı dikdörtgeninin koordinatlarını içeren bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi. *Koordinatlar, pWnd*ile tanımlanan pencerenin istemci alanının sol üst köşesine göredir.
+Aracın sınırlayıcı dikdörtgeninin koordinatlarını içeren bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi. *Koordinatlar, pWnd*ile tanımlanan pencerenin istemci alanının sol üst köşesine göredir.
 
 *nIDTool*<br/>
 Aracın kimliği.
@@ -248,7 +248,7 @@ BOOL AdjustRect(
 ### <a name="parameters"></a>Parametreler
 
 *lprc*<br/>
-Bir araç ucu pencere dikdörtgeni veya metin ekran dikdörtgentutan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı için işaretçi.
+Bir araç ucu pencere dikdörtgeni veya metin ekran dikdörtgentutan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı için işaretçi.
 
 *bBüyük*<br/>
 TRUE ise, *lprc* bir metin ekran dikdörtgen belirtmek için kullanılır ve ilgili pencere dikdörtgenalır. FALSE ise, *lprc* bir pencere dikdörtgeni belirtmek için kullanılır ve ilgili metin ekran dikdörtgenalır.
@@ -352,7 +352,7 @@ Nesneyi `Create` yaptıktan sonra aramalısınız.
 
 *PWnd* ve *nIDTool* tarafından belirtilen aracı bir araç ucu denetimi tarafından desteklenen araçların koleksiyonundan kaldırır.
 
-```
+```cpp
 void DelTool(
     CWnd* pWnd,
     UINT_PTR nIDTool = 0);
@@ -446,14 +446,14 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_GETDE
 
 Araç ucu penceresi için ayarlanan üst, sol, alt ve sağ kenar boşluklarını alır.
 
-```
+```cpp
 void GetMargin(LPRECT lprc) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *lprc*<br/>
-Kenar boşluğu `RECT` bilgilerini alacak bir yapının adresi. [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısının üyeleri sınırlayıcı bir dikdörtgen tanımlamaz. Bu iletinin amacı için yapı üyeleri aşağıdaki gibi yorumlanır:
+Kenar boşluğu `RECT` bilgilerini alacak bir yapının adresi. [RECT](/windows/win32/api/windef/ns-windef-rect) yapısının üyeleri sınırlayıcı bir dikdörtgen tanımlamaz. Bu iletinin amacı için yapı üyeleri aşağıdaki gibi yorumlanır:
 
 |Üye|Gösterimi|
 |------------|--------------------|
@@ -486,7 +486,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_GETMA
 
 Bir araç ipucu denetiminin bir araç için koruduğu metni alır.
 
-```
+```cpp
 void GetText(
     CString& str,
     CWnd* pWnd,
@@ -544,7 +544,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/Cont
 
 Geçerli araç ipucu denetiminin başlığını alır.
 
-```
+```cpp
 void GetTitle(PTTGETTITLE pttgt) const;
 ```
 
@@ -656,7 +656,7 @@ typedef struct _TT_HITTESTINFO { // tthti
 
 Görüntülenen araç ipucu penceresini görünümden kaldırır.
 
-```
+```cpp
 void Pop();
 ```
 
@@ -668,7 +668,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/Cont
 
 Geçerli araç ipucu denetiminin son fare iletisinin koordinatlarında görüntülenmesine neden olur.
 
-```
+```cpp
 void Popup();
 ```
 
@@ -686,7 +686,7 @@ Aşağıdaki kod örneği bir araç ipucu penceresi görüntüler.
 
 Fare iletisini işleme için bir araç ipucu denetimine geçirir.
 
-```
+```cpp
 void RelayEvent(LPMSG lpMsg);
 ```
 
@@ -713,7 +713,7 @@ Bir araç ipucu denetimi yalnızca aşağıdaki iletileri `RelayEvent`işler:
 
 Bir araç ipucu denetimi için gecikme süresini ayarlar.
 
-```
+```cpp
 void SetDelayTime(UINT nDelay);
 
 void SetDelayTime(
@@ -740,7 +740,7 @@ Gecikme süresi, imlecin araç ipucu penceresi görünmeden önce bir araçta ka
 
 Araç ucu penceresi için üst, sol, alt ve sağ kenar boşluklarını ayarlar.
 
-```
+```cpp
 void SetMargin(LPRECT lprc);
 ```
 
@@ -778,7 +778,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_SETMA
 
 Arka plan rengini bir araç ipucu penceresinde ayarlar.
 
-```
+```cpp
 void SetTipBkColor(COLORREF clr);
 ```
 
@@ -795,7 +795,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/Cont
 
 Araç ipucu penceresinde metin rengini ayarlar.
 
-```
+```cpp
 void SetTipTextColor(COLORREF clr);
 ```
 
@@ -838,7 +838,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TTM_SETTI
 
 Bir araç ipucunun bir araç için koruduğu bilgileri ayarlar.
 
-```
+```cpp
 void SetToolInfo(LPTOOLINFO lpToolInfo);
 ```
 
@@ -851,7 +851,7 @@ Ayarlayabilmek için bilgileri belirten bir [TOOLINFO](/windows/win32/api/commct
 
 Bir araç için yeni bir sınırlayıcı dikdörtgen ayarlar.
 
-```
+```cpp
 void SetToolRect(
     CWnd* pWnd,
     UINT_PTR nIDTool,
@@ -867,7 +867,7 @@ Aracı içeren pencereyi işaretçi.
 Aracın kimliği.
 
 *Lprect*<br/>
-Yeni sınırlayıcı dikdörtgeni belirten bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısıişaretçisi.
+Yeni sınırlayıcı dikdörtgeni belirten bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısıişaretçisi.
 
 ## <a name="ctooltipctrlsetwindowtheme"></a><a name="setwindowtheme"></a>CToolTipCtrl::SetWindowTheme
 
@@ -894,7 +894,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi [TTM_SETWINDOWTHEME](/windo
 
 Geçerli aracı yeniden çizilmeye zorlar.
 
-```
+```cpp
 void Update();
 ```
 
@@ -902,7 +902,7 @@ void Update();
 
 Bu denetimaraçları için araç ipucu metnini güncelleştirir.
 
-```
+```cpp
 void UpdateTipText(
     LPCTSTR lpszText,
     CWnd* pWnd,

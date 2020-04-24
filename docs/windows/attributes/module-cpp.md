@@ -1,21 +1,21 @@
 ---
-title: Modül (C++ com özniteliği)
+title: modül (C++ COM Özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.module
 helpviewer_keywords:
 - module attributes
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
-ms.openlocfilehash: e93073a1728063038ddd4e28dbb313854ee3c8c5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9d4f9e23aaf182e28930ba3a4462b07533ba9015
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166698"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754383"
 ---
 # <a name="module-c"></a>modül (C++)
 
-. IDL dosyasında kitaplık bloğunu tanımlar.
+.idl dosyasındaki kitaplık bloğunu tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,95 +25,95 @@ ms.locfileid: "80166698"
 
 ### <a name="parameters"></a>Parametreler
 
-*type*<br/>
-Seçim Aşağıdakilerden biri olabilir:
+*Türü*<br/>
+(İsteğe bağlı) Aşağıdakilerden biri olabilir:
 
-- `dll`, sonuçta elde edilen DLL 'nin işlem içi COM sunucusu olarak çalışmasına izin veren işlevler ve sınıflar ekler. Varsayılan değer budur.
+- `dll`Ortaya çıkan DLL'nin işlem içi bir COM sunucusu olarak çalışmasına olanak tanıyan işlevler ve sınıflar ekler. Varsayılan değer budur.
 
-- `exe`, sonuçta elde edilen yürütülebilir dosyanın işlem dışı COM sunucusu olarak çalışmasına izin veren işlevler ve sınıflar ekler.
+- `exe`Ortaya çıkan yürütülebilir işlemin dışında bir COM sunucusu olarak çalışmasına izin veren işlevler ve sınıflar ekler.
 
-- `service`, sonuçta elde edilen yürütülebilir dosyanın bir NT hizmeti olarak çalışmasına izin veren işlevler ve sınıflar ekler.
+- `service`Ortaya çıkan yürütülebilir bir NT hizmeti olarak çalışmasına izin veren işlevler ve sınıflar ekler.
 
-- `unspecified`, Module özniteliğiyle ilgili ATL kodunun eklenmesine devre dışı bırakır: ATL modül sınıfı, genel örnek _AtlModule ve giriş noktası işlevleri ekleme. , Projedeki diğer öznitelikler nedeniyle ATL kodunun eklenmesine izin vermez.
+- `unspecified`Modül özniteliği ile ilgili ATL kodunun enjeksiyonunu devre dışı kılabilir: ATL Modülü sınıfının enjeksiyonu, küresel örnek _AtlModule ve giriş noktası fonksiyonları. Projedeki diğer öznitelikler nedeniyle ATL kodunun enjeksiyonu devre dışı etmez.
 
-*ada*<br/>
-Seçim Kitaplık bloğunun adı.
+*Adı*<br/>
+(İsteğe bağlı) Kütüphane bloğunun adı.
 
-*version*<br/>
-Seçim Kitaplık bloğuna atamak istediğiniz sürüm numarası. Varsayılan değer 1,0 ' dir.
+*Sürüm*<br/>
+(İsteğe bağlı) Kitaplık bloğuna atamak istediğiniz sürüm numarası. Varsayılan değer 1.0'dır.
 
 *uuid*<br/>
-Kitaplığın benzersiz KIMLIĞI. Bu parametreyi atlarsanız, kitaplık için otomatik olarak bir KIMLIK oluşturulur. **__Uuidof (** *LibraryName* **)** tanımlayıcısını kullanarak yapabileceğiniz kitaplık blobunun *UUID* 'sini almanız gerekebilir.
+Kütüphane için benzersiz kimlik. Bu parametreyi atlarsanız, kitaplık için otomatik olarak bir kimlik oluşturulur. Kitaplık bloğunuzun *uuid'ini* almanız gerekebilir, bunu tanımlayıcı __uuidof *(libraryname)* **)** kullanarak yapabilirsiniz. **__uuidof(**
 
 *lcid*<br/>
-Yerelleştirme parametresi. Daha fazla bilgi için bkz. [LCID](/windows/win32/Midl/lcid) .
+Yerelleştirme parametresi. Daha fazla bilgi için [lcid](/windows/win32/Midl/lcid) bakın.
 
-*control*<br/>
-Seçim Kitaplıktaki tüm ortak sınıfların denetimlerin olduğunu belirtir.
+*Denetim*<br/>
+(İsteğe bağlı) Kitaplıktaki tüm ortak sınıfların denetimler olduğunu belirtir.
 
 *helpstring*<br/>
 Tür kitaplığını belirtir.
 
 *helpstringdll*<br/>
-Seçim Belge dizesi aramasını gerçekleştirmek için kullanılacak. dll dosyasının adını ayarlar. Daha fazla bilgi için bkz. [helpstringdll](/windows/win32/Midl/helpstringdll) .
+(İsteğe bağlı) Belge dizesini aramak için kullanılacak .dll dosyasının adını ayarlar. Daha fazla bilgi için [helpstringdll'e](/windows/win32/Midl/helpstringdll) bakın.
 
 *helpfile*<br/>
-Seçim Tür kitaplığı için **Yardım** dosyasının adı.
+(İsteğe bağlı) Tür kitaplığı için **Yardım** dosyasının adı.
 
 *helpcontext*<br/>
-Seçim Bu tür kitaplığı için **Yardım kimliği** .
+(İsteğe bağlı) Bu tür kitaplığı için **Yardım Kimliği.**
 
 *helpstringcontext*<br/>
-Seçim Daha fazla bilgi için bkz. [helpstringcontext](helpstringcontext.md) .
+(İsteğe bağlı) Daha fazla bilgi için [yardım bağlamına](helpstringcontext.md) bakın.
 
-*hidden*<br/>
-Seçim Tüm kitaplığın görüntülenmesini önler. Bu kullanım, denetimlerle birlikte kullanılmak üzere tasarlanmıştır. Ana bilgisayarların, denetimi genişletilmiş özelliklerle sarmalayan yeni bir tür kitaplığı oluşturması gerekir. Daha fazla bilgi için bkz. [Hidden](/windows/win32/Midl/hidden) MIDL özniteliği.
+*Gizli*<br/>
+(İsteğe bağlı) Tüm kitaplığın görüntülenmesini engeller. Bu kullanım denetimlerle birlikte kullanılmak üzere tasarlanmıştır. Ana bilgisayarların denetimi genişletilmiş özelliklerle saran yeni bir tür kitaplığı oluşturması gerekir. Daha fazla bilgi için [gizli](/windows/win32/Midl/hidden) MIDL özniteliğine bakın.
 
-*restricted*<br/>
-Seçim Kitaplığın üyeleri rasgele çağrılamaz. Daha fazla bilgi için bkz. [kısıtlı](/windows/win32/Midl/restricted) MIDL özniteliği.
+*kısıtlı*<br/>
+(İsteğe bağlı) Kitaplığın üyeleri rasgele çağrılamıyor. Daha fazla bilgi için [kısıtlı](/windows/win32/Midl/restricted) MIDL özniteliğine bakın.
 
-*custom*<br/>
-Seçim Bir veya daha fazla öznitelik; Bu [özel](custom-cpp.md) özniteliğe benzerdir. *Özel* için ilk parametre, özniteliğin GUID 'sidir. Örneğin:
+*Özel*<br/>
+(İsteğe bağlı) Bir veya daha fazla öznitelik; bu [özel](custom-cpp.md) öznitelik benzer. Özeliçin ilk *custom* parametre öznitelik GUID'dir. Örneğin:
 
 ```
 [module(custom={guid,1}, custom={guid1,2})]
 ```
 
 *resource_name*<br/>
-DLL, çalıştırılabilir veya hizmetin uygulama KIMLIĞINI kaydetmek için kullanılan. rgs dosyasının dize kaynak KIMLIĞI. Modül hizmet türünde olduğunda, bu bağımsız değişken aynı zamanda hizmet adını içeren dizenin KIMLIĞINI elde etmek için de kullanılır.
+.rgs dosyasının dize kaynak kimliği, DLL, çalıştırılabilir veya hizmetin APP Kimliğini kaydetmek için kullanılır. Modül tür hizmeti olduğunda, bu bağımsız değişken, hizmet adını içeren dize kimliğini elde etmek için de kullanılır.
 
 > [!NOTE]
-> Hem. rgs dosyası hem de hizmet adını içeren dize aynı sayısal değeri içermelidir.
+> Hem .rgs dosyası hem de hizmet adını içeren dize aynı sayısal değeri içermelidir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Kısıtlanmış* parametresini [emitidl](emitidl.md)olarak belirtmediğiniz müddetçe, **Modül** kullanan C++ herhangi bir programda modül gereklidir.
+Eğer [emitidl](emitidl.md)için *sınırlı* parametre belirtmediğiniz sürece, **modül** C++ öznitelikleri kullanan herhangi bir programda gereklidir.
 
-**Modül** özniteliğine ek olarak, kaynak kodu de [dispınterface](dispinterface.md), [Dual](dual.md), [Object](object-cpp.md)veya [coclass](coclass.md)öğesini gerektiren bir özniteliği de kullanıyorsa, kitaplık bloğu oluşturulacaktır.
+**Modül** özniteliğine ek olarak, kaynak kodu [da dispinterface,](dispinterface.md) [dual](dual.md), [object](object-cpp.md)veya [coclass](coclass.md)ima eden bir öznitelik kullanırsa bir kitaplık bloğu oluşturulur.
 
-Bir. IDL dosyasında bir kitaplık bloğuna izin verilir. Kaynak kodundaki birden çok modül girişi, uygulanan en son parametre değerleriyle birleştirilir.
+Bir .idl dosyasında bir kitaplık bloğuna izin verilir. Kaynak kodundaki birden çok modül girişi birleştirilir ve en son parametre değerleri uygulanır.
 
-Bu öznitelik, ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davranışı değişir. Yukarıdaki davranışa ek olarak öznitelik, doğru türdeki (`_AtlModule`olarak adlandırılır) ve ek destek kodunun genel bir nesnesini de ekler. Özniteliği tek başına ise doğru modül türünden türetilmiş bir sınıf ekler. Özniteliği bir sınıfa uygulanırsa doğru modül türünün bir Taban sınıfını ekler. Doğru tür, *tür* parametresinin değeri tarafından belirlenir:
+Bu öznitelik ATL kullanan bir proje içinde kullanılırsa, öznitelik davranışı değişir. Yukarıdaki davranışa ek olarak, öznitelik de doğru tür `_AtlModule`ve ek destek kodu bir global nesne (çağrılır) ekler. Öznitelik tek başınaysa, doğru modül türünden türetilen bir sınıf ekler. Öznitelik bir sınıfa uygulanırsa, doğru modül türünden bir taban sınıf ekler. Doğru tür, *tür* parametresinin değerine göre belirlenir:
 
-- `type` = **DLL**
+- `type` = **Dll**
 
-   [Catldllmodület](../../atl/reference/catldllmodulet-class.md) , temel sınıf olarak ve bir com sunucusu için gereken standart dll giriş noktaları olarak kullanılır. Bu giriş noktaları [DllMain](/windows/win32/Dlls/dllmain), [DllRegisterServer](/windows/win32/api/olectl/nf-olectl-dllregisterserver), [DllUnregisterServer](/windows/win32/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow)ve [DllGetClassObject](/previous-versions//dd797891\(v=vs.85\)).
+   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) taban sınıf ve bir COM sunucusu için gerekli standart DLL giriş noktaları olarak kullanılır. Bu giriş noktaları [DllMain](/windows/win32/Dlls/dllmain), [DllRegisterServer](/windows/win32/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/win32/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow), ve [DllGetClassObject](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject)vardır.
 
-- `type` = **exe**
+- `type` = **Exe**
 
-   [Catlexemodület](../../atl/reference/catlexemodulet-class.md) , temel sınıf olarak ve standart çalıştırılabilir [giriş noktası olarak](/windows/win32/api/winbase/nf-winbase-winmain)kullanılır.
+   [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) taban sınıf ve standart çalıştırılabilir giriş noktası [WinMain](/windows/win32/api/winbase/nf-winbase-winmain)olarak kullanılır.
 
-- `type` = **hizmeti**
+- `type` = **Hizmet**
 
-   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) , temel sınıf olarak ve standart çalıştırılabilir [giriş noktası olarak](/windows/win32/api/winbase/nf-winbase-winmain)kullanılır.
+   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) taban sınıf ve standart çalıştırılabilir giriş noktası [WinMain](/windows/win32/api/winbase/nf-winbase-winmain)olarak kullanılır.
 
-- `type` = **belirtilmemiş**
+- `type` = **Belirtilme -miş**
 
-   Module özniteliğiyle ilgili ATL kodu ekleme işlemini devre dışı bırakır.
+   Modül özniteliği ile ilgili ATL kodunun enjeksiyonunu devre dışı kılabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, oluşturulan. IDL dosyasında bir kitaplık bloğunun nasıl oluşturulacağını gösterir.
+Aşağıdaki kod, oluşturulan .idl dosyasında kitaplık bloğunun nasıl oluşturuluğunu gösterir.
 
 ```cpp
 // cpp_attr_ref_module1.cpp
@@ -121,7 +121,7 @@ Aşağıdaki kod, oluşturulan. IDL dosyasında bir kitaplık bloğunun nasıl o
 [module(name="MyLibrary", version="1.2", helpfile="MyHelpFile")];
 ```
 
-Aşağıdaki kod, **modülü**kullanmanın sonucu olarak eklenen kodda görünecek bir işlev uygulamanızı sağlayabileceğinizi gösterir. Eklenen kodu görüntüleme hakkında daha fazla bilgi için bkz. [/FX](../../build/reference/fx-merge-injected-code.md) . **Modül** özniteliği tarafından eklenen işlevlerden birini geçersiz kılmak için, işlev uygulamanızı içerecek bir sınıf oluşturun ve **Modül** özniteliğinin bu sınıfa uygulanmasını sağlayın.
+Aşağıdaki kod, **modülü**kullanarak bir sonucu olarak enjekte edilen kodda görünecek bir işlevin kendi uygulamasını sağlayabileceğinizi gösterir. Enjekte edilen kodu görüntüleme hakkında daha fazla bilgi için [/Fx'e](../../build/reference/fx-merge-injected-code.md) bakın. **Modül** özniteliği tarafından eklenen işlevlerden birini geçersiz kılmak için, işlevin uygulanmasını içerecek bir sınıf yapın ve **modül** özniteliğinin o sınıfa uygulanmasını sağlayabilir.
 
 ```cpp
 // cpp_attr_ref_module2.cpp
@@ -148,20 +148,20 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
+### <a name="attribute-context"></a>Öznitelik Bağlamı
 
 |||
 |-|-|
-|**Uygulama hedefi**|Yerdeki|
+|**Için geçerlidir**|Her yer|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
 
-Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için Bkz. [Öznitelik Bağlamları.](cpp-attributes-com-net.md#contexts)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
@@ -170,4 +170,4 @@ Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#
 [helpcontext](helpcontext.md)<br/>
 [helpstring](helpstring.md)<br/>
 [helpfile](helpfile.md)<br/>
-[version](version-cpp.md)
+[Sürüm](version-cpp.md)

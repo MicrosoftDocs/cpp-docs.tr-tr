@@ -90,12 +90,12 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeMinReq
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
-ms.openlocfilehash: da9d588811361d3dfd72d44d5b9ced8460d23936
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8c24c638d7006be112a53ec1e4f622ad528e348c
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319750"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752822"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl Sınıfı
 
@@ -227,10 +227,10 @@ virtual BOOL Create(
 Ay takvimi denetimine uygulanan Windows stillerinin birleşimini belirtir. Stiller hakkında daha fazla bilgi için Windows SDK'daki [Aylık Takvim Denetim Stilleri'ne](/windows/win32/Controls/month-calendar-control-styles) bakın.
 
 *Rect*<br/>
-[RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına bir başvuru. Ay takvim denetiminin konumunu ve boyutunu içerir.
+[RECT](/windows/win32/api/windef/ns-windef-rect) yapısına bir başvuru. Ay takvim denetiminin konumunu ve boyutunu içerir.
 
 *Pt*<br/>
-Ay takvim denetiminin konumunu tanımlayan bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısına başvuru.
+Ay takvim denetiminin konumunu tanımlayan bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısına başvuru.
 
 *pParentWnd*<br/>
 Ay takvimi denetiminin ana penceresi olan [CWnd](../../mfc/reference/cwnd-class.md) nesnesine işaretçi. NULL olmamalıdır.
@@ -523,7 +523,7 @@ BOOL GetMinReqRect(RECT* pRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *pRect*<br/>
-Sınırlayıcı dikdörtgen bilgileri alacak bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısıiçin bir işaretçi. Bu parametre geçerli bir adres olmalıdır ve NULL olamaz.
+Sınırlayıcı dikdörtgen bilgileri alacak bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısıiçin bir işaretçi. Bu parametre geçerli bir adres olmalıdır ve NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -808,7 +808,7 @@ Bu yöntem, Windows SDK'da açıklanan [MCM_GETCURRENTVIEW](/windows/win32/Contr
 
 Geçerli ay takvim denetiminin kenarlığı genişliğini ayarlar.
 
-```
+```cpp
 void SetCalendarBorder(int cxyBorder);
 ```
 
@@ -840,7 +840,7 @@ Aşağıdaki kod örneği, ay takvimi denetiminin kenarlık genişliğini sekiz 
 
 Geçerli ay takvim denetiminin kenarlığı varsayılan genişliğini ayarlar.
 
-```
+```cpp
 void SetCalendarBorderDefault();
 ```
 
@@ -1219,7 +1219,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [MCM_SETSE
 
 Geçerli günün takvim denetimini ayarlar.
 
-```
+```cpp
 void SetToday(const COleDateTime& refDateTime);
 void SetToday(const CTime* pDateTime);
 void SetToday(const LPSYSTEMTIME pDateTime);
@@ -1290,11 +1290,11 @@ LPRECT SizeRectToMin(LPRECT lpRect);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Lprect*|[içinde] İstenilen sayıda takvim içeren bir dikdörtgen tanımlayan bir [DIKDÖRTGEN](/previous-versions/dd162897\(v=vs.85\)) yapısıişaretçisi.|
+|*Lprect*|[içinde] İstenilen sayıda takvim içeren bir dikdörtgen tanımlayan bir [DIKDÖRTGEN](/windows/win32/api/windef/ns-windef-rect) yapısıişaretçisi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Boyutu *lpRect* parametresi tarafından tanımlanan dikdörtgenden daha az veya eşit olan bir dikdörtgeni tanımlayan bir [DIKDÖRTGEN](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi.
+Boyutu *lpRect* parametresi tarafından tanımlanan dikdörtgenden daha az veya eşit olan bir dikdörtgeni tanımlayan bir [DIKDÖRTGEN](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 

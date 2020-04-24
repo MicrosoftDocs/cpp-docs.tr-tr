@@ -94,12 +94,12 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-ms.openlocfilehash: 3ca2fe4486ae0751f37d046ef28ed11e60e776ac
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 94769a6fb3c5fceefda96b54cebb35b0533a8afa
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373980"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753225"
 ---
 # <a name="cedit-class"></a>CEdit Sınıfı
 
@@ -299,7 +299,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_CHARFROMPOS](/windows/win32/Controls
 
 Düzenle denetimindeki geçerli seçimi (varsa) silmek (temizlemek) için bu işlevi arayın.
 
-```
+```cpp
 void Clear();
 ```
 
@@ -319,7 +319,7 @@ Daha fazla bilgi için Windows SDK'daki [WM_CLEAR](/windows/win32/dataxchg/wm-cl
 
 CF_TEXT formatında Pano'ya edit denetimindeki geçerli seçimi (varsa) çekinmeye çalışmak için bu işlevi arayın.
 
-```
+```cpp
 void Copy();
 ```
 
@@ -389,7 +389,7 @@ Aşağıdaki [pencere stillerini](styles-used-by-mfc.md#window-styles) bir denet
 
 Düzenle denetimindeki geçerli seçimi (varsa) silmek (kesmek) için bu işlevi arayın ve silinen metni CF_TEXT biçiminde Pano'ya kopyalayın.
 
-```
+```cpp
 void Cut();
 ```
 
@@ -409,7 +409,7 @@ Daha fazla bilgi için Windows SDK'daki [WM_CUT](/windows/win32/dataxchg/wm-cut)
 
 Bir denetim denetiminin geri alın bayrağını sıfırlamak (temizlemek) için bu işlevi çağırın.
 
-```
+```cpp
 void EmptyUndoBuffer();
 ```
 
@@ -720,7 +720,7 @@ Bu yöntem, Windows SDK'da açıklanan [EM_GETPASSWORDCHAR](/windows/win32/Contr
 
 Bir edit denetiminin biçimlendirme dikdörtgenini almak için bu işlevi arayın.
 
-```
+```cpp
 void GetRect(LPRECT lpRect) const;
 ```
 
@@ -793,7 +793,7 @@ Bu işlev, Windows SDK'da açıklanan [EM_HIDEBALLOONTIP](/windows/win32/Control
 
 Kullanıcının bir denetim denetimine girebileceği metnin uzunluğunu sınırlamak için bu işlevi arayın.
 
-```
+```cpp
 void LimitText(int nChars = 0);
 ```
 
@@ -910,7 +910,7 @@ Bu yöntem, Windows SDK'da açıklanan [EM_LINELENGTH](/windows/win32/Controls/e
 
 Çok satırlı bir düzen denetiminin metnini kaydırmak için bu işlevi arayın.
 
-```
+```cpp
 void LineScroll(
     int nLines,
     int nChars = 0);
@@ -942,7 +942,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_LINESCROLL](/windows/win32/Controls/
 
 Panodaki verileri ekleme noktasına eklemek için `CEdit` bu işlevi arayın.
 
-```
+```cpp
 void Paste();
 ```
 
@@ -990,7 +990,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_POSFROMCHAR](/windows/win32/Controls
 
 Bir düzenleme denetimindeki geçerli seçimi *lpszNewText*tarafından belirtilen metinle değiştirmek için bu işlevi arayın.
 
-```
+```cpp
 void ReplaceSel(LPCTSTR lpszNewText, BOOL bCanUndo = FALSE);
 ```
 
@@ -1056,7 +1056,7 @@ Aşağıdaki [örnek, CEdit::SetCueBanner](#setcuebanner) yöntemini gösterir.
 
 Tutamacı, çok satırlı düzenleme denetimi tarafından kullanılacak yerel belleğe ayarlamak için bu işlevi çağırın.
 
-```
+```cpp
 void SetHandle(HLOCAL hBuffer);
 ```
 
@@ -1090,7 +1090,7 @@ Daha fazla bilgi için Windows SDK'da [EM_SETHANDLE,](/windows/win32/Controls/em
 
 Geçerli denetim denetiminde görüntülenen bir metin aralığını vurgular.
 
-```
+```cpp
 void SetHighlight(
     int ichStart,
     int ichEnd);
@@ -1111,7 +1111,7 @@ Bu yöntem, Windows SDK'da açıklanan [EM_SETHILITE](/windows/win32/Controls/em
 
 Bu `CEdit` nesne için metin sınırını ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetLimitText(UINT nMax);
 ```
 
@@ -1138,7 +1138,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_SETLIMITTEXT](/windows/win32/Control
 
 Bu edit denetiminin sol ve sağ kenar boşluklarını ayarlamak için bu yöntemi çağırın.
 
-```
+```cpp
 void SetMargins(
     UINT nLeft,
     UINT nRight);
@@ -1167,7 +1167,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_SETMARGINS](/windows/win32/Controls/
 
 Bir denetim denetimi için değiştirilmiş bayrağı ayarlamak veya temizlemek için bu işlevi çağırın.
 
-```
+```cpp
 void SetModify(BOOL bModified = TRUE);
 ```
 
@@ -1190,7 +1190,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_SETMODIFY](/windows/win32/Controls/e
 
 Kullanıcı metin yazdığında bir denetim denetiminde görüntülenen bir parola karakterini ayarlamak veya kaldırmak için bu işlevi arayın.
 
-```
+```cpp
 void SetPasswordChar(TCHAR ch);
 ```
 
@@ -1246,7 +1246,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_SETREADONLY](/windows/win32/Controls
 
 Belirtilen koordinatları kullanarak bir dikdörtgenin boyutlarını ayarlamak için bu işlevi çağırın.
 
-```
+```cpp
 void SetRect(LPCRECT lpRect);
 ```
 
@@ -1275,7 +1275,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_SETRECT](/windows/win32/Controls/em-
 
 Çok satırlı bir düzen denetiminin biçimlendirme dikdörtgenini ayarlamak için bu işlevi çağırın.
 
-```
+```cpp
 void SetRectNP(LPCRECT lpRect);
 ```
 
@@ -1306,7 +1306,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_SETRECTNP](/windows/win32/Controls/e
 
 Bir denetimde bir karakter aralığı seçmek için bu işlevi arayın.
 
-```
+```cpp
 void SetSel(
     DWORD dwSelection,
     BOOL bNoScroll = FALSE);
@@ -1343,7 +1343,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_SETSEL](/windows/win32/Controls/em-s
 
 Sekme duraklarını çok satırlı bir düzen denetiminde ayarlamak için bu işlevi arayın.
 
-```
+```cpp
 void SetTabStops();
 BOOL SetTabStops(const int& cxEachStop);
 

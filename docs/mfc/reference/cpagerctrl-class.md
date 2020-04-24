@@ -48,12 +48,12 @@ helpviewer_keywords:
 - CPagerCtrl [MFC], SetChild
 - CPagerCtrl [MFC], SetScrollPos
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
-ms.openlocfilehash: b2c4f1ac99735953f4832226b840ced4ea4c509a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cd27a3acf26abe39831089546df317679f2ecab6
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376972"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753708"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl Sınıfı
 
@@ -149,7 +149,7 @@ virtual BOOL Create(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*Dwstyle*|[içinde] Denetime uygulanacak [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetim stillerinin](/windows/win32/Controls/pager-control-styles) bitwise kombinasyonu (VEYA).|
-|*Rect*|[içinde] İstemci koordinatlarında denetimin konumunu ve boyutunu içeren bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.|
+|*Rect*|[içinde] İstemci koordinatlarında denetimin konumunu ve boyutunu içeren bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.|
 |*pParentWnd*|[içinde] Denetimin ana penceresi olan [CWnd](../../mfc/reference/cwnd-class.md) nesnesine işaretçi. Bu parametre NULL olamaz.|
 |*Nıd*|[içinde] Kontrol kimliği.|
 
@@ -186,7 +186,7 @@ virtual BOOL CreateEx(
 |---------------|-----------------|
 |*dwExStyle*|[içinde] Denetime uygulanacak genişletilmiş stillerin bitwise kombinasyonu. Daha fazla bilgi için [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) işlevinin *dwExStyle* parametresini görün.|
 |*Dwstyle*|[içinde] Denetime uygulanacak [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetim stillerinin](/windows/win32/Controls/pager-control-styles) bitwise kombinasyonu (VEYA).|
-|*Rect*|[içinde] İstemci koordinatlarında denetimin konumunu ve boyutunu içeren bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.|
+|*Rect*|[içinde] İstemci koordinatlarında denetimin konumunu ve boyutunu içeren bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.|
 |*pParentWnd*|[içinde] Denetimin ana penceresi olan [CWnd](../../mfc/reference/cwnd-class.md) nesnesine işaretçi. Bu parametre NULL olamaz.|
 |*Nıd*|[içinde] Kontrol kimliği.|
 
@@ -202,7 +202,7 @@ Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 [İletileri](/windows/win32/inputdev/wm-mousemove) geçerli çağrı cihazı denetiminde bulunan pencereye WM_MOUSEMOVE iletmeyi etkinleştirer veya devre dışı kılabilir.
 
-```
+```cpp
 void ForwardMouse(BOOL bForward);
 ```
 
@@ -462,7 +462,7 @@ Bu yöntem, Windows SDK'da açıklanan [PGM_GETBUTTONSTATE](/windows/win32/Contr
 
 Geçerli çağrı cihazı denetiminin, içerdiği pencerenin boyutunu yeniden hesaplamasına neden olur.
 
-```
+```cpp
 void RecalcSize();
 ```
 
@@ -572,7 +572,7 @@ Aşağıdaki örnek bir çağrı cihazı denetimi oluşturur, ardından çağrı
 
 Geçerli çağrı cihazı denetimi için içerdiği pencereyi ayarlar.
 
-```
+```cpp
 void SetChild(HWND hwndChild);
 ```
 
@@ -598,7 +598,7 @@ Aşağıdaki örnek bir çağrı cihazı denetimi oluşturur, ardından çağrı
 
 Geçerli çağrı cihazı denetiminin kaydırma konumunu ayarlar.
 
-```
+```cpp
 void SetScrollPos(int iPos);
 ```
 

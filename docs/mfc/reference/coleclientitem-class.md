@@ -164,12 +164,12 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnScrollBy
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
-ms.openlocfilehash: c880b1fb724b533bb049666460948c6df661a03c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ce321c9709b752602a664142f283884f4d17b50b
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376277"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753964"
 ---
 # <a name="coleclientitem-class"></a>COleClientItem Sınıfı
 
@@ -310,7 +310,7 @@ Kapsayıcı arabirimini kullanma hakkında daha fazla bilgi [için, kapsayıcıl
 
 Bir özel durum atıldığında kendi işlemenizi yapabilmeniz için [DoVerb](#doverb) yerine belirtilen fiili yürütmek için bu işlevi çağırın.
 
-```
+```cpp
 void Activate(
     LONG nVerb,
     CView* pView,
@@ -380,7 +380,7 @@ Bu otomatik olarak [COleConvertDialog tarafından çağrılır::DoConvert](../..
 
 OLE öğesindeki verilere erişmek için bir [COleDataObject'i](../../mfc/reference/coledataobject-class.md) başlatmak için bu işlevi arayın.
 
-```
+```cpp
 void AttachDataObject(COleDataObject& rDataObject) const;
 ```
 
@@ -493,7 +493,7 @@ Daha fazla bilgi için Windows SDK'daki [OleGetClipboard](/windows/win32/api/ole
 
 Bir OLE öğesinin durumunu çalışan durumdan yüklenen duruma, yani bellekteki işleyicisiyle yüklenen ancak sunucu çalışmayan duruma değiştirmek için bu işlevi arayın.
 
-```
+```cpp
 void Close(OLECLOSE dwCloseOption = OLECLOSE_SAVEIFDIRTY);
 ```
 
@@ -578,7 +578,7 @@ Bu [coleConvertDialog](../../mfc/reference/coleconvertdialog-class.md)tarafında
 
 OLE öğesini Pano'ya kopyalamak için bu işlevi arayın.
 
-```
+```cpp
 void CopyToClipboard(BOOL bIncludeLink = FALSE);
 ```
 
@@ -936,7 +936,7 @@ Daha fazla bilgi için Windows SDK'daki [OleCreateStaticFromData](/windows/win32
 
 OLE öğesini devre dışı bırakmak ve ilişkili kaynakları serbest bırakmak için bu işlevi arayın.
 
-```
+```cpp
 void Deactivate();
 ```
 
@@ -952,7 +952,7 @@ Daha fazla bilgi için [Bkz. IOleInPlaceObject::Windows](/windows/win32/api/olei
 
 Kullanıcı yerinde etkinleştirilen bir öğeyi devre dışı bıraktığınızda bu işlevi çağırın.
 
-```
+```cpp
 void DeactivateUI();
 ```
 
@@ -968,7 +968,7 @@ Daha fazla bilgi için [Bkz. IOleInPlaceObject::Windows](/windows/win32/api/olei
 
 OLE öğesini kapsayıcı belgesinden silmek için bu işlevi arayın.
 
-```
+```cpp
 void Delete(BOOL bAutoDelete = TRUE);
 ```
 
@@ -1153,7 +1153,7 @@ Daha fazla bilgi için Bkz. [IViewObject2::GetExtent](/windows/win32/api/oleidl/
 
 Öğenin sınıf kimliğini *pClassID*tarafından işaret edilen belleğe döndürür.
 
-```
+```cpp
 void GetClassID(CLSID* pClassID) const;
 ```
 
@@ -1172,7 +1172,7 @@ Daha fazla bilgi için [Bkz. IPersist::Windows](/windows/win32/api/objidl/nf-obj
 
 [CopyToClipboard](#copytoclipboard) üye `COleDataSource` işlevine yapılan bir çağrı yla Panoya yerleştirilecek tüm verileri içeren bir nesneyi almak için bu işlevi arayın.
 
-```
+```cpp
 void GetClipboardData(
     COleDataSource* pDataSource,
     BOOL bIncludeLink = FALSE,
@@ -1400,7 +1400,7 @@ Aşağıdaki değerlerden birine sahip imzasız bir karşıcı:
 
 OLE öğesinin türünü açıklayan kullanıcı tarafından görülebilen dize ("Word belgesi" gibi) almak için bu işlevi arayın.
 
-```
+```cpp
 void GetUserType(
     USERCLASSTYPE nUserClassType,
     CString& rString);
@@ -1977,7 +1977,7 @@ Sıfırsız eğer başarılı; aksi takdirde 0.
 
 Bu öğeyle ilişkili uygulamayı çalıştırın.
 
-```
+```cpp
 void Run();
 ```
 
@@ -2016,7 +2016,7 @@ Bu işlev, kullanıcı tarafından istendiğinde ikonik ekran yönünü etkinle�
 
 OLE öğesi için ne kadar alan olduğunu belirtmek için bu işlevi arayın.
 
-```
+```cpp
 void SetExtent(
     const CSize& size,
     DVASPECT nDrawAspect = DVASPECT_CONTENT);
@@ -2040,7 +2040,7 @@ Daha fazla bilgi için [Bkz. IOleObject::Windows](/windows/win32/api/oleidl/nf-o
 
 Kapsayıcı uygulamanın adını ve katıştirılmış bir OLE öğesi için kapsayıcının adını belirtmek için bu işlevi arayın.
 
-```
+```cpp
 void SetHostNames(
     LPCTSTR lpszHost,
     LPCTSTR lpszHostObj);
@@ -2117,7 +2117,7 @@ Daha fazla bilgi için Bkz. Windows SDK'daki [IOleInPlaceObject::SetObjectRects.
 
 Belirtilen bağlantılı öğenin sunumu için bağlantı güncelleştirme seçeneğini ayarlamak için bu işlevi arayın.
 
-```
+```cpp
 void SetLinkUpdateOptions(OLEUPDATE dwUpdateOpt);
 ```
 

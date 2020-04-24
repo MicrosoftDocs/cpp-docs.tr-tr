@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CTabCtrl [MFC], SetPadding
 - CTabCtrl [MFC], SetToolTips
 ms.assetid: 42e4aff6-46ae-4b2c-beaa-d1dce8d82138
-ms.openlocfilehash: 7d4a478b560be686e4da6f6dea623d6058626562
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 42d4b24222b1760bc418e904881edb2bb0e5a1f4
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365961"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752314"
 ---
 # <a name="ctabctrl-class"></a>CTabCtrl Sınıfı
 
@@ -160,7 +160,7 @@ Kullanma `CTabCtrl`hakkında daha fazla bilgi [Using CTabCtrl](../../mfc/using-c
 
 Bir pencere dikdörtgeni verilen bir sekme denetiminin görüntü alanını hesaplar veya belirli bir görüntüleme alanına karşılık gelecek pencere dikdörtgenini hesaplar.
 
-```
+```cpp
 void AdjustRect(BOOL bLarger,   LPRECT lpRect);
 ```
 
@@ -170,7 +170,7 @@ void AdjustRect(BOOL bLarger,   LPRECT lpRect);
 Hangi işlemin gerçekleştiriltini gösterir. Bu parametre TRUE ise, *lpRect* bir ekran dikdörtgeni belirtir ve ilgili pencere dikdörtgenini alır. Bu parametre FALSE ise, *lpRect* bir pencere dikdörtgeni belirtir ve ilgili ekran dikdörtgenini alır.
 
 *Lprect*<br/>
-Verilen dikdörtgeni belirten ve hesaplanan dikdörtgeni alan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi.
+Verilen dikdörtgeni belirten ve hesaplanan dikdörtgeni alan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi.
 
 ### <a name="example"></a>Örnek
 
@@ -194,7 +194,7 @@ virtual BOOL Create(
 Sekme denetiminin stilini belirtir. Windows SDK'da açıklanan [sekme denetim stillerinin](/windows/win32/Controls/tab-control-styles)herhangi bir birleşimini uygulayın. Denetime de uygulayabileceğiniz pencere stilleri listesi için **Açıklamalar'a** bakın.
 
 *Rect*<br/>
-Sekme denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
+Sekme denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
 
 *pParentWnd*<br/>
 Sekme denetiminin üst penceresini belirtir, `CDialog`genellikle bir . NULL olmamalıdır.
@@ -250,7 +250,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Sekme denetiminin stilini belirtir. Windows SDK'da açıklanan [sekme denetim stillerinin](/windows/win32/Controls/tab-control-styles)herhangi bir birleşimini uygulayın. Denetime de uygulayabileceğiniz pencere stilleri listesi için [Oluştur'daki](#create) **Açıklamalar'a** bakın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -313,7 +313,7 @@ Sıfırsız eğer başarılı; aksi takdirde 0.
 
 Bir sekme denetimindeki öğeleri sıfırlar ve basıldığındakileri temizler.
 
-```
+```cpp
 void DeselectAll(BOOL fExcludeFocus);
 ```
 
@@ -485,7 +485,7 @@ BOOL GetItemRect(int nItem,   LPRECT lpRect) const;
 Sekme öğesinin sıfır tabanlı dizin.
 
 *Lprect*<br/>
-Sekmenin sınırlayıcı dikdörtgenini alan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi. Bu koordinatlar, viewport'un geçerli eşleme modunu kullanır.
+Sekmenin sınırlayıcı dikdörtgenini alan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi. Bu koordinatlar, viewport'un geçerli eşleme modunu kullanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -682,7 +682,7 @@ Başarılı olursa yeni sekmesıfır tabanlı dizin; aksi takdirde - 1.
 
 Belirtilen görüntüyü sekme denetiminin resim listesinden kaldırır.
 
-```
+```cpp
 void RemoveImage(int nImage);
 ```
 
@@ -699,7 +699,7 @@ Sekme denetimi, her sekenin görüntü dizini yle ilişkili kalması için günc
 
 Odak noktasını sekme denetiminde belirli bir sekmeye ayarlar.
 
-```
+```cpp
 void SetCurFocus(int nItem);
 ```
 
@@ -892,7 +892,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TCM_SETMI
 
 Sekme denetiminde her sekenin simgesinin ve etiketinin etrafındaki alan (dolgu) miktarını ayarlar.
 
-```
+```cpp
 void SetPadding(CSize size);
 ```
 
@@ -905,7 +905,7 @@ Sekme denetiminde her sekenin simgesinin ve etiketinin etrafındaki alan (dolgu)
 
 Bir sekme denetimine bir araç ipucu denetimi atar.
 
-```
+```cpp
 void SetToolTips(CToolTipCtrl* pWndTip);
 ```
 

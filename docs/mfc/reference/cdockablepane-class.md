@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CDockablePane [MFC], m_bHideInAutoHideMode
 - CDockablePane [MFC], m_nSlideSteps
 ms.assetid: e2495f4c-765f-48f9-a2e2-e45e47608d91
-ms.openlocfilehash: ae8dbed46dbcd7d2bd317c2113b2195d0531bce9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6dc87b36442691eafbfab87ac001df731f0d03b4
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375603"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753342"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane Sınıfı
 
@@ -881,7 +881,7 @@ Başlığın görünümünü özelleştirmek için türetilmiş bir sınıfta bu
 
 Bu bölme ve kapsayıcıdaki diğer bölmeler için otomatik hide modunu etkinleştirer veya devre dışı katır.
 
-```
+```cpp
 void EnableAutohideAll(BOOL bEnable = TRUE);
 ```
 
@@ -1438,7 +1438,7 @@ virtual void OnSlide(BOOL bSlideOut);
 
 Bir bölme çözüldüğünde çerçeve bu yöntemi çağırır.
 
-```
+```cpp
 void RemoveFromDefaultPaneDividier();
 ```
 
@@ -1476,7 +1476,7 @@ Değiştirme başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
 
 Bir bölme deserialized olduğunda, çerçeve varsayılan bölme bölücü geri yüklemek için bu yöntemi çağırır.
 
-```
+```cpp
 void RestoreDefaultPaneDivider();
 ```
 
@@ -1524,7 +1524,7 @@ Otomatik olarak modda otomatik olarak kullanılabilir bir bölmeyi değiştirmek
 
 Bölme için otomatik gizleme düğmesini ve otomatik gizleme araç çubuğunu ayarlar.
 
-```
+```cpp
 void SetAutoHideParents(
     CMFCAutoHideBar* pToolBar,
     CMFCAutoHideButton* pBtn);
@@ -1542,7 +1542,7 @@ void SetAutoHideParents(
 
 Bölmenin kapsayıcısında kapattığı alan yüzdesini ayarlar.
 
-```
+```cpp
 void SetLastPercentInPaneContainer(int n);
 ```
 
@@ -1559,7 +1559,7 @@ void SetLastPercentInPaneContainer(int n);
 
 Geri yüklenen varsayılan bölme bölücüyü ayarlar.
 
-```
+```cpp
 void SetRestoredDefaultPaneDivider(HWND hRestoredSlider);
 ```
 
@@ -1576,7 +1576,7 @@ Bir bölme deserialized olduğunda geri yüklenen varsayılan bölme bölücü e
 
 İki bölme birbirine yanaştığında oluşturulan sekmeli pencere için çalışma zamanı sınıf bilgilerini ayarlar.
 
-```
+```cpp
 void SetTabbedPaneRTC(CRuntimeClass* pRTC);
 ```
 

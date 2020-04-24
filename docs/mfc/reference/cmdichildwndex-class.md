@@ -112,12 +112,12 @@ helpviewer_keywords:
 - CMDIChildWndEx [MFC], UnregisterTaskbarTab
 - CMDIChildWndEx [MFC], UpdateTaskbarTabIcon
 ms.assetid: d39fec06-0bd6-4271-917d-35aae3b24d8e
-ms.openlocfilehash: 92f3b95de3780a1593183c09b935db78c61a3a5f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cdc82ef48bacfe4d5b8d90222e7055c5fbe8b4a1
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370065"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754562"
 ---
 # <a name="cmdichildwndex-class"></a>CMDIChildWndEx Sınıfı
 
@@ -249,7 +249,7 @@ Bölme, yerleştirme yöneticisine başarıyla kaydedilmişse DOĞRUDUR; aksi ta
 
 Sekmeli bölme ekler.
 
-```
+```cpp
 void AddTabbedPane(CDockablePane* pControlBar);
 ```
 
@@ -301,7 +301,7 @@ Türetilmiş bir sınıfta bu yöntemi geçersiz kılın ve pencere **Windows** 
 
 Bir bölmeyi sabitler.
 
-```
+```cpp
 void DockPane(
     CBasePane* pBar,
     UINT nDockBarID = 0,
@@ -728,7 +728,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 
 Yerleştirme yöneticisinden bir bölme kaldırır.
 
-```
+```cpp
 void RemovePaneFromDockManager(
     CBasePane* pControlBar,
     BOOL bDestroy,
@@ -756,7 +756,7 @@ void RemovePaneFromDockManager(
 
 ## <a name="cmdichildwndexsetrelatedtabgroup"></a><a name="setrelatedtabgroup"></a>CMDIChildWndEx::SetRelatedTabGroup
 
-```
+```cpp
 void SetRelatedTabGroup(CMFCTabCtrl* p);
 ```
 
@@ -768,7 +768,7 @@ void SetRelatedTabGroup(CMFCTabCtrl* p);
 
 ## <a name="cmdichildwndexshowpane"></a><a name="showpane"></a>CMDIChildWndEx::ShowPane
 
-```
+```cpp
 void ShowPane(
     CBasePane* pBar,
     BOOL bShow,
@@ -807,7 +807,7 @@ Windows 7 görev çubuğu sekmesinde görüntülenecek simgenin tutamacı.
 
 MDI alt çubuğunu Windows 7 görev çubuğu sekmelerinden kaldırır.
 
-```
+```cpp
 void UnregisterTaskbarTab(BOOL bCheckRegisteredMDIChildCount = TRUE);
 ```
 
@@ -841,7 +841,7 @@ Doğru eğer başarılı; aksi takdirde YANLIŞ.
 
 Windows 7 görev çubuğu sekmesinin özelliklerini ayarlar.
 
-```
+```cpp
 void SetTaskbarTabProperties(DWORD dwFlags);
 ```
 
@@ -856,7 +856,7 @@ STPFLAG değerlerinin bir leşimi. Daha fazla bilgi için [Bkz. ITaskbarList4::S
 
 Windows 7 görev çubuğu sekmelerinde belirtilen pencereden önce MDI alt ekledi.
 
-```
+```cpp
 void SetTaskbarTabOrder(CMDIChildWndEx* pWndBefore = NULL);
 ```
 
@@ -871,7 +871,7 @@ Küçük resmi sola eklenen MDI alt penceresine işaretçi. Bu pencere zaten ' `
 
 İlgili Windows 7 görev çubuğu sekmesini etkinleştirir.
 
-```
+```cpp
 void SetTaskbarTabActive();
 ```
 
@@ -1146,7 +1146,7 @@ Windows 7 `CMDITabProxyWnd` görev çubuğu sekmelerine kayıtlı bir nesneye i�
 
 Görev çubuğunda pencerenin küçük resmi olarak görüntülenmek üzere bir pencerenin istemci alanının bir bölümünün otomatik seçimini etkinleştirer veya devre dışı katanır.
 
-```
+```cpp
 void EnableTaskbarThumbnailClipRect(BOOL bEnable = TRUE);
 ```
 

@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-ms.openlocfilehash: 197dec23b4c715b0bca35976f9fa53a055cdd78f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 247072d815b660fcd2cc6c2a1291b618aa6ce2ab
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373900"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753144"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog Sınıfı
 
@@ -409,7 +409,7 @@ Menü adı.
 
 Kullanıcının öğeleri açması veya kaydedilebilecek yerler listesine bir klasör ekler.
 
-```
+```cpp
 void AddPlace(
     LPCWSTR lpszFolder,
     FDAP fdap = FDAP_TOP) throw();
@@ -506,13 +506,13 @@ Metin adı.
 
 `m_ofn` [CFileDialog'un](../../mfc/reference/cfiledialog-class.md) geçerli durumunu veri yapısında depolanan değerlere göre güncelleştirir.
 
-```
+```cpp
 void ApplyOFNToShellDialog();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows Vista'dan önceki Windows sürümlerinde, üye [OPENFILENAME](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) veri yapısı sürekli `CFileDialog`olarak . [m_ofn](#m_ofn) üye değişkenindeki herhangi bir değişiklik hemen iletişim kutusunun durumuna yansıtılır. Ayrıca, iletişim kutusunun durumuna yapılan değişiklikler hemen `m_ofn` üye değişkeni güncelleştirin.
+Windows Vista'dan önceki Windows sürümlerinde, üye [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) veri yapısı sürekli `CFileDialog`olarak . [m_ofn](#m_ofn) üye değişkenindeki herhangi bir değişiklik hemen iletişim kutusunun durumuna yansıtılır. Ayrıca, iletişim kutusunun durumuna yapılan değişiklikler hemen `m_ofn` üye değişkeni güncelleştirin.
 
 Windows Vista'da veya daha `m_ofn` sonra, üye değişkenve durum `CFileDialog` daki değerlerin eşitlenilmesi garanti edilmez. Bu işlev, `CFileDialog` `m_ofn` yapıya uyacak şekilde güncellenecek duruma zorlar. Windows CFileDialog sırasında otomatik olarak bu işlevi [çağırır::DoModal](#domodal).
 
@@ -1029,7 +1029,7 @@ Yineleme için kullanılabilecek bir POSITION değeri; Liste boşsa NULL.
 
 Belirtilen denetimi Explorer stiliaçık veya Ortak Olarak Kaydet iletişim kutusunda gizlemek için bu üye işlevi arayın.
 
-```
+```cpp
 void HideControl(int nID);
 ```
 
@@ -1465,7 +1465,7 @@ CdCONTROLSTATE numaralandırmasından, denetimin geçerli durumunu gösteren bir
 
 Explorer stilinde **Açık** la veya **Farklı Kaydet** iletişim kutusunda belirtilen denetimin metnini ayarlamak için bu yöntemi çağırın.
 
-```
+```cpp
 void SetControlText(
     int nID,
     LPCSTR lpsz);
@@ -1493,7 +1493,7 @@ Bu yöntemi kullanmak için, OFN_EXPLORER stili ile iletişim kutusu oluşturman
 
 Explorer stiliaçık veya ortak iletişim kutusunu kaydet için varsayılan dosya adı uzantısını ayarlamak için bu işlevi arayın.
 
-```
+```cpp
 void SetDefExt(LPCSTR lpsz);
 ```
 
@@ -1565,7 +1565,7 @@ Kullanıcının denetimde seçtiği öğenin kimliği.
 
 [CFileDialog](../../mfc/reference/cfiledialog-class.md) nesnesi için iletişim kutusu şablonu ayarlar.
 
-```
+```cpp
 void SetTemplate(
     UINT nWin3ID,
     UINT nWin4ID);
@@ -1620,13 +1620,13 @@ Grup adı.
 
 İç `m_ofn` nesnenin geçerli durumuna göre [CFileDialog'un](../../mfc/reference/cfiledialog-class.md) veri yapısını güncelleştirir.
 
-```
+```cpp
 void UpdateOFNFromShellDialog();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows Vista'dan önceki Windows sürümlerinde, üye [OPENFILENAME](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) veri yapısı sürekli `CFileDialog`olarak . [m_ofn](#m_ofn) üye değişkeninde yapılan değişiklikler iletişim kutusunun durumunu doğrudan etkiledi. Ayrıca, iletişim kutusunun durumuna yapılan değişiklikler hemen m_ofn üye değişkenini güncelledi.
+Windows Vista'dan önceki Windows sürümlerinde, üye [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) veri yapısı sürekli `CFileDialog`olarak . [m_ofn](#m_ofn) üye değişkeninde yapılan değişiklikler iletişim kutusunun durumunu doğrudan etkiledi. Ayrıca, iletişim kutusunun durumuna yapılan değişiklikler hemen m_ofn üye değişkenini güncelledi.
 
 Windows Vista veya sonraki `m_ofn` yerlerde, veri yapısı otomatik olarak güncelleştirilmeyecektir. `m_ofn` Üye değişkendeki verilerin doğruluğunu garanti etmek için, `UpdateOFNFromShellDialog` verilere erişmeden önce işlevi aramalısınız. Windows, IFileDialog'un işlenmesi sırasında bu işlevi otomatik olarak [çağırır::OnFileOK](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok).
 

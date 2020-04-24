@@ -1,25 +1,25 @@
 ---
-title: Veri arabelleklerine işaretçileri alma (C++/CX)
+title: Veri Arabelleklerine İşaretçileri Alma (C++/CX)
 ms.date: 11/19/2018
 ms.assetid: db4f9370-dd95-4896-b5b8-4b202284f579
-ms.openlocfilehash: 46a81fa9e3d278645b654dca3c652653f6c21037
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e60adc4163e96349f6f4bafa919944e5d8d5b51
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62162319"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82032375"
 ---
-# <a name="obtaining-pointers-to-data-buffers-ccx"></a>Veri arabelleklerine işaretçileri alma (C++/CX)
+# <a name="obtaining-pointers-to-data-buffers-ccx"></a>Veri Arabelleklerine İşaretçileri Alma (C++/CX)
 
-Windows çalışma zamanı [Windows::Storage::Streams::IBuffer](/uwp/api/windows.storage.streams.ibuffer) arabirimi veri arabelleklerinin erişmek için dilden bağımsız, akış tabanlı bir yol sağlar. C++'ta robuffer.h içinde tanımlanan bir Windows çalışma zamanı kitaplığı IBufferByteAccess arabirimini kullanarak bir ham işaretçi temel alınan bayt dizisine elde edebilirsiniz. Bu yaklaşım kullanarak verilerin gereksiz kopyalarını yapmadan bayt dizisi yerinde değiştirebilirsiniz.
+Windows Runtime'da [Windows:Storage::Streams::IBuffer](/uwp/api/windows.storage.streams.ibuffer) arabirimi, veri arabelleklerine erişmek için dilden bağımsız, akış tabanlı bir araç sağlar. C++'da, robuffer.h'de tanımlanan Windows Runtime Library IBufferByteAccess arabirimini kullanarak altta yatan bayt dizisini ham bir işaretçi elde edebilirsiniz. Bu yaklaşımı kullanarak, verilerin gereksiz kopyalarını yapmadan bayt dizisini yerinde değiştirebilirsiniz.
 
-Aşağıdaki diyagramda, kaynağı bir XAML görüntü öğesi gösterir bir [Windows::UI::Xaml::Media::Imaging WriteableBitmap](/uwp/api/Windows.UI.Xaml.Media.Imaging.WriteableBitmap). Herhangi bir dilde yazılmış bir istemci uygulaması için başvuru geçirebilirsiniz `WriteableBitmap` C++ için kod ve C++ başvurusu temel alınan arabelleğe almak için kullanabilirsiniz. C++ ile yazılmış bir evrensel Windows platformu uygulamasında paketleyerek bir Windows çalışma zamanı bileşeni olmadan aşağıdaki örnekte kaynak kodda doğrudan işlevi kullanabilirsiniz.
+Aşağıdaki diyagram, kaynağı Windows olan bir XAML görüntü öğesini [gösterir::UI::Xaml::Medya::Görüntüleme YazılabilirBitmap](/uwp/api/windows.ui.xaml.media.imaging.writeablebitmap). Herhangi bir dilde yazılmış bir istemci uygulaması C++ `WriteableBitmap` koduna bir başvuru geçirebilir ve ardından C++ temel arabellekte almak için başvuruyu kullanabilir. C++'da yazılmış evrensel bir Windows Platformu uygulamasında, aşağıdaki örnekteki işlevi doğrudan kaynak kodda, windows runtime bileşeninde paketlemeden kullanabilirsiniz.
 
-![C&#43; &#43; doğrudan piksel verilere erişen kodu](../cppcx/media/ibufferbyteaccessdiagram.png "C&#43; &#43; doğrudan piksel verilere erişen kodu")
+![Piksel verilerine doğrudan erişen C&#43;&#43; kodu](../cppcx/media/ibufferbyteaccessdiagram.png "Piksel verilerine doğrudan erişen C&#43;&#43; kodu")
 
-## <a name="getpointertopixeldata"></a>GetPointerToPixelData
+## <a name="getpointertopixeldata"></a>GetpointertopixelData
 
-Aşağıdaki yöntem kabul eden bir [Windows::Storage::Streams::IBuffer](/uwp/api/windows.storage.streams.ibuffer) ve temel alınan bayt dizisine bir ham işaretçiyi döndürür. İşlev çağrısı için geçirin bir [WriteableBitmap::PixelBuffer](/uwp/api/windows.ui.xaml.media.imaging.writeablebitmap.pixelbuffer) özelliği.
+Aşağıdaki yöntem bir [Windows kabul eder::Depolama::Akışlar::IAraffer](/uwp/api/windows.storage.streams.ibuffer) ve altta yatan bayt dizisine ham işaretçi döndürür. İşlevi çağırmak için [WriteableBitmap::PixelBuffer](/uwp/api/windows.ui.xaml.media.imaging.writeablebitmap.pixelbuffer) özelliğini geçirin.
 
 ```cpp
 #include <wrl.h>
@@ -51,15 +51,15 @@ byte* Class1::GetPointerToPixelData(IBuffer^ pixelBuffer, unsigned int *length)
 
 ## <a name="complete-example"></a>Tam Örnek
 
-Aşağıdaki adımlar gönderen bir C# Evrensel Windows platformu uygulaması oluşturma işlemini gösterir bir `WriteableBitmap` bir C++ Windows çalışma zamanı bileşeni DLL için. C++ kodu piksel arabelleği için bir işaretçi alır ve basit bir yerinde değişiklikle görüntüye gerçekleştirir. Alternatif olarak, Visual Basic veya JavaScript yerine C#, C++, istemci uygulama oluşturabilirsiniz. C++ kullanırsanız, DLL bileşeni gerekmez; Bu yöntemleri doğrudan MainPage sınıfının veya belirlediğiniz başka bir sınıfın yalnızca ekleyebilirsiniz.
+Aşağıdaki adımlar, C++ Windows Runtime bileşeni DLL'ye geçen `WriteableBitmap` bir C# Evrensel Windows Platformu uygulamasının nasıl oluşturulacağını gösterir. C++ kodu piksel arabelleği için bir işaretçi alır ve görüntü üzerinde basit bir yerinde değişiklik gerçekleştirir. Alternatif olarak, c# yerine Visual Basic, JavaScript veya C++ istemci uygulamasını oluşturabilirsiniz. C++'ı kullanıyorsanız, DLL bileşenine ihtiyacınız yoktur; bu yöntemleri doğrudan MainPage sınıfına veya tanımladığınız başka bir sınıfa ekleyebilirsiniz.
 
-#### <a name="create-the-client"></a>İstemcisi oluşturma
+#### <a name="create-the-client"></a>İstemci oluşturma
 
-1. Bir C# Evrensel Windows platformu uygulaması oluşturmak için boş uygulaması proje şablonunu kullanın.
+1. C# Evrensel Windows Platformu uygulaması oluşturmak için Boş uygulama proje şablonuna kullanın.
 
-1. MainPage.xaml içinde
+1. Ana Sayfa.xaml içinde
 
-   - Değiştirmek için bu XAML kullanmak `Grid` öğesi:
+   - Öğeyi değiştirmek için bu `Grid` XAML'yi kullanın:
 
         ```xml
         <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
@@ -70,9 +70,9 @@ Aşağıdaki adımlar gönderen bir C# Evrensel Windows platformu uygulaması ol
         </Grid>
         ```
 
-1. In MainPage.xaml.cs
+1. MainPage.xaml.cs yılında
 
-   1. Bu ad alanı bildirimi ekleyin:
+   1. Şu ad alanı bildirimleri ekleyin:
 
         ```csharp
         using Windows.Storage;
@@ -82,13 +82,13 @@ Aşağıdaki adımlar gönderen bir C# Evrensel Windows platformu uygulaması ol
         using Windows.Storage.Pickers;
         ```
 
-   1. Ekleme bir `WriteableBitmap` üye değişkeni `MainPage` sınıfı ve adlandırın `m_bm`.
+   1. Sınıfa `WriteableBitmap` bir üye değişken ekleyin ve adını. `m_bm` `MainPage`
 
         ```csharp
         private WriteableBitmap m_bm;
         ```
 
-   1. Değiştirmek için aşağıdaki kodu kullanın `OnNavigatedTo` metot taslağı. Uygulama başlatıldığında bu dosya Seçici açılır. (Dikkat `async` anahtar sözcüğü için işlev imzasına eklenir).
+   1. Yöntem saplaması yerine `OnNavigatedTo` aşağıdaki kodu kullanın. Bu, uygulama başlatıldığında dosya seçiciyi açar. (Anahtar kelimenin işlev imzasına `async` eklenmiştir) dikkat edin).
 
         ```csharp
         async protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -116,7 +116,7 @@ Aşağıdaki adımlar gönderen bir C# Evrensel Windows platformu uygulaması ol
         }
         ```
 
-   1. Düğmesine tıklayarak olay işleyicisi ekleyin. (Çünkü `ImageManipCPP` ad alanı başvurusu taşınmadığından oluşturuldu ancak düzenleyici penceresinde dalgalı çizgi olabilir.)
+   1. Düğme tıklaması için olay işleyicisini ekleyin. (Ad `ImageManipCPP` alanı başvurusu henüz oluşturulmadığından, düzenleyici penceresinde dalgalı bir alt çizgi olabilir.)
 
         ```csharp
         async private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -127,35 +127,35 @@ Aşağıdaki adımlar gönderen bir C# Evrensel Windows platformu uygulaması ol
         }
         ```
 
-#### <a name="create-the-c-component"></a>C++ bileşeni oluşturma
+#### <a name="create-the-c-component"></a>C++ bileşenini oluşturma
 
-1. Daha sonra mevcut çözüme yeni bir C++ Windows çalışma zamanı bileşeni ekleyin ve adlandırın `ImageManipCPP`. Bu projeye sağ tıklayarak ve C# projesinde buna bir başvuru ekleyin **Çözüm Gezgini** seçip **Ekle**, **başvuru**.
+1. Varolan çözüme yeni bir C++ Windows Runtime `ImageManipCPP`bileşeni ekleyin ve adlandırın. **Çözüm Gezgini'ndeki** projeye sağ tıklayarak ve **Ekle**, **Başvuru**' yu seçerek C# projesinde projeye bir referans ekleyin.
 
-1. İçinde Class1.h
+1. Sınıf1.h olarak
 
-   1. Bu ekleme `typedef` ikinci satırında, yalnızca sonra `#pragma once`:
+   1. Bunu `typedef` ikinci satıra ekleyin, `#pragma once`hemen sonra:
 
         ```cpp
         typedef uint8 byte;
         ```
 
-   1. Ekleme `WebHostHidden` öznitelik başına kısalarak `Class1` bildirimi.
+   1. `WebHostHidden` Özniteliği `Class1` bildirimin başlangıcının hemen üzerine ekleyin.
 
         ```cpp
         [Windows::Foundation::Metadata::WebHostHidden]
         ```
 
-   1. Bu genel yöntem imzası için ekleme `Class1`:
+   1. Bu ortak yöntem `Class1`imzasını ekleyin:
 
         ```cpp
         Windows::Foundation::IAsyncAction^ Negativize(Windows::UI::Xaml::Media::Imaging::WriteableBitmap^ bm);
         ```
 
-   1. İmzasının ekleme `GetPointerToPixelData` önceki kod parçacığında gösterilen yöntemi. Bu yöntem özel olduğundan emin olun.
+   1. Önceki kod snippet gösterilen `GetPointerToPixelData` yöntemden imza ekleyin. Bu yöntemin özel olduğundan emin olun.
 
-1. İçinde Class1.cpp
+1. Sınıf1.cpp olarak
 
-   1. Bu ekleme `#include` yönergeleri ve ad alanı bildirimi:
+   1. Bu `#include` yönergeleri ve ad alanı bildirimlerini ekleyin:
 
         ```cpp
         #include <ppltasks.h>
@@ -168,9 +168,9 @@ Aşağıdaki adımlar gönderen bir C# Evrensel Windows platformu uygulaması ol
         using namespace Microsoft::WRL;
         ```
 
-   1. Uygulamasını ekleme `GetPointerToPixelData` önceki kod parçacığında.
+   1. Önceki kod `GetPointerToPixelData` parçacığının uygulamasını ekleyin.
 
-   1. Uygulamasını ekleme `Negativize`. Bu yöntem, her pikselin RGB değeri değerini tersine çevirerek negatif bir film benzer bir efekti oluşturur. Biz, yöntemi zaman uyumsuz olun, çünkü daha büyük görüntülerinde tamamlanması algılanabilir bir süre alabilir.
+   1. Uygulamasını `Negativize`ekleyin. Bu yöntem, pikseldeki her RGB değerinin değerini tersine çevirerek film negatifine benzeyen bir efekt oluşturur. Yöntemi eşzamanlı yapıyoruz çünkü daha büyük görüntülerde tamamlanması algılanabilir bir miktar zaman alabilir.
 
         ```cpp
         IAsyncAction^ Class1::Negativize(WriteableBitmap^ bm)
@@ -200,6 +200,6 @@ Aşağıdaki adımlar gönderen bir C# Evrensel Windows platformu uygulaması ol
         ```
 
       > [!NOTE]
-      > İşlemi paralel hale getirmek için AMP veya paralel desenler kitaplığı kullanıyorsanız bu yöntem daha hızlı çalışabilir.
+      > İşlemi paralelleştirmek için AMP veya Paralel Desenler Kitaplığı kullanırsanız, bu yöntem daha hızlı çalışabilir.
 
-1. En az bir resim resimler klasörünüzde olması ve derlemek ve programı çalıştırmak için F5 tuşuna basarak emin olun.
+1. Resimler klasörünüzde en az bir resim olduğundan emin olun ve ardından programı derlemek ve çalıştırmak için F5 tuşuna basın.

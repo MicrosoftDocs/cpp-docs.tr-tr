@@ -166,12 +166,12 @@ helpviewer_keywords:
 - CDaoRecordset [MFC], m_strFilter
 - CDaoRecordset [MFC], m_strSort
 ms.assetid: 2322067f-1027-4662-a5d7-aa2fc7488630
-ms.openlocfilehash: 5b4b2919405696c748ce01217ac82afeac316de2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6a1475d1b0bc083cfd180ea5a211e752c973e2f8
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377159"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754674"
 ---
 # <a name="cdaorecordset-class"></a>CDaoRecordset Sınıfı
 
@@ -626,7 +626,7 @@ Veri kaynağı hareketleri destekliyorsa, `Edit` aramayı bir hareketin parças�
 
 Kayıt kümesinden belirli sayıda kaydı önbelleğe almak için bu üye işlevi arayın.
 
-```
+```cpp
 void FillCache(
     long* pSize = NULL,
     COleVariant* pBookmark = NULL);
@@ -1105,7 +1105,7 @@ Kayıt kümesindeki alan sayısı.
 
 Kayıt kümesindeki alanlar hakkında bilgi almak için bu üye işlevi arayın.
 
-```
+```cpp
 void GetFieldInfo(
     int nIndex,
     CDaoFieldInfo& fieldinfo,
@@ -1212,7 +1212,7 @@ Tablo türü kayıt kümesindeki dizin sayısı.
 
 Bir kayıt kümesinin altında yatan taban tabloda tanımlanan bir dizin hakkında çeşitli bilgiler elde etmek için bu üye işlevi arayın.
 
-```
+```cpp
 void GetIndexInfo(
     int nIndex,
     CDaoIndexInfo& indexinfo,
@@ -1802,7 +1802,7 @@ Bir kayıt kümesindeki ilk, son, sonraki veya önceki kaydı yapmak `MoveFirst`
 
 Kayıt kümesindeki ilk kaydı (varsa) geçerli kaydı yapmak için bu üye işlevini arayın.
 
-```
+```cpp
 void MoveFirst();
 ```
 
@@ -1832,7 +1832,7 @@ Kayıt kümesi nesnesindeki geçerli kaydın konumunu taşımak için belirli sa
 
 Kayıt kümesindeki son kaydı (varsa) geçerli kaydı yapmak için bu üye işlevini arayın.
 
-```
+```cpp
 void MoveLast();
 ```
 
@@ -1858,7 +1858,7 @@ Kayıt kümesi nesnesindeki geçerli kaydın konumunu taşımak için belirli sa
 
 Kayıt kümesindeki bir sonraki kaydı geçerli kayıt yapmak için bu üye işlevini arayın.
 
-```
+```cpp
 void MoveNext();
 ```
 
@@ -1884,7 +1884,7 @@ Kayıt kümesi nesnesindeki geçerli kaydın konumunu taşımak için belirli sa
 
 Kayıt kümesindeki önceki kaydı geçerli kayıt yapmak için bu üye işlevini arayın.
 
-```
+```cpp
 void MovePrev();
 ```
 
@@ -2129,7 +2129,7 @@ Ekli tablolar `Seek` dynaset türü veya anlık görüntü tipi kayıt kümeleri
 
 Kayıt kümesi nesnesinin geçerli kaydının göreli kayıt numarasını ayarlar.
 
-```
+```cpp
 void SetAbsolutePosition(long lPosition);
 ```
 
@@ -2158,7 +2158,7 @@ Geçerli kayıt silinirse, AbsolutePosition özellik değeri tanımlanmaz ve ba�
 
 Belirtilen yer imi içeren kayıt kümesini konumlandırmak için bu üye işlevini arayın.
 
-```
+```cpp
 void SetBookmark(COleVariant varBookmark);
 ```
 
@@ -2182,7 +2182,7 @@ UNICODE kayıt kümesi oluşturmuyorsanız, nesnenin `COleVariant` açıkça ANS
 
 Önbelleğe alınacak kayıt sayısını ayarlamak için bu üye işlevini arayın.
 
-```
+```cpp
 void SetCacheSize(long lSize);
 ```
 
@@ -2203,7 +2203,7 @@ Ekli tablo gibi herhangi bir ODBC veri kaynağının yerel önbelleği olabilir.
 
 Önbelleğe alınacak kayıt kümesindeki ilk kaydın yer işaretini belirtmek için bu üye işlevini arayın.
 
-```
+```cpp
 void SetCacheStart(COleVariant varBookmark);
 ```
 
@@ -2230,7 +2230,7 @@ UNICODE kayıt kümesi oluşturmuyorsanız, nesnenin `COleVariant` açıkça ANS
 
 Tablo türünde bir kayıt kümesiüzerinde dizin ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetCurrentIndex(LPCTSTR lpszIndex);
 ```
 
@@ -2253,7 +2253,7 @@ Tablo türü kayıt kümesinden döndürülen kayıtlar yalnızca temel tablo i�
 
 Kayıt kümesinin alan veri üyesini değiştirilmiş veya değişmemiş olarak işaretlemek için bu üye işlevini çağırın.
 
-```
+```cpp
 void SetFieldDirty(
     void* pv,
     BOOL bDirty = TRUE);
@@ -2296,7 +2296,7 @@ Bu, `outputColumn` tüm **param** alanlarını, alanlar ile yapabildiğiniz gibi
 
 Kayıt kümesinin alan veri üyesini Null (özellikle değeri olmayan) veya Null olmayan olarak işaretlemek için bu üye işlevini çağırın.
 
-```
+```cpp
 void SetFieldNull(
     void* pv,
     BOOL bNull = TRUE);
@@ -2379,7 +2379,7 @@ UNICODE kayıt kümesi oluşturmuyorsanız, parametre içermeyen bir `SetFieldVa
 
 Alanı Null değerine ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetFieldValueNull(int nIndex);
 void SetFieldValueNull(LPCTSTR lpszName);
 ```
@@ -2402,7 +2402,7 @@ C++ NULL, veritabanı terminolojisinde "değeri olmayan" anlamına gelen Null il
 
 Kayıt kümesi için kilitleme türünü ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetLockingMode(BOOL bPessimistic);
 ```
 
@@ -2458,7 +2458,7 @@ Parametre, kayıt kümesinin SQL dizesinin bir parçası olarak zaten kurulmuş 
 
 Parametreyi Null değerine ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetParamValueNull(int nIndex);
 void SetParamValueNull(LPCTSTR lpszName);
 ```
@@ -2479,7 +2479,7 @@ C++ NULL, veritabanı terminolojisinde "değeri olmayan" anlamına gelen Null il
 
 Kayıt kümesindeki kayıtların yüzdesini temel alan kayıt kümesi nesnesindeki geçerli kaydın yaklaşık konumunu değiştiren bir değer ayarlamak için bu üye işlevi çağırın.
 
-```
+```cpp
 void SetPercentPosition(float fPosition);
 ```
 

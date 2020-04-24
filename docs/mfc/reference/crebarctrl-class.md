@@ -98,12 +98,12 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-ms.openlocfilehash: 776892d71e2cb0f5d57512754cd7fa12730eb044
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 930322f1803eba7709505018c77ecea3f816dd15
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367440"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81750640"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl Sınıfı
 
@@ -223,7 +223,7 @@ Daha fazla bilgi için [CReBarCtrl'ı kullanma'ya](../../mfc/using-crebarctrl.md
 
 Windows SDK'da açıklandığı gibi Win32 iletisinin [RB_BEGINDRAG](/windows/win32/Controls/rb-begindrag)davranışını uygular.
 
-```
+```cpp
 void BeginDrag(
     UINT uBand,
     DWORD dwPos = (DWORD)-1);
@@ -255,7 +255,7 @@ virtual BOOL Create(
 Denetime uygulanan çubuk denetim stillerinin birleşimini belirtir. Desteklenen stillerin listesi için Windows SDK'daki [Rebar Denetim Stilleri'ne](/windows/win32/Controls/rebar-control-styles) bakın.
 
 *Rect*<br/>
-Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına yapılan başvuru, demir çubuğu denetiminin konumu ve boyutudur.
+Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına yapılan başvuru, demir çubuğu denetiminin konumu ve boyutudur.
 
 *pParentWnd*<br/>
 Çubuk denetiminin ana penceresi olan [CWnd](../../mfc/reference/cwnd-class.md) nesnesine işaretçi. NULL olmamalıdır.
@@ -303,7 +303,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Denetime uygulanan çubuk denetim stillerinin birleşimini belirtir. Desteklenen stillerin listesi için Windows SDK'daki [Rebar Denetim Stilleri'ne](/windows/win32/Controls/rebar-control-styles) bakın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -356,7 +356,7 @@ Bant başarıyla silinirse sıfırolmayan; aksi takdirde sıfır.
 
 Windows SDK'da açıklandığı gibi Win32 iletisinin [RB_DRAGMOVE](/windows/win32/Controls/rb-dragmove)davranışını uygular.
 
-```
+```cpp
 void DragMove(DWORD dwPos = (DWORD)-1);
 ```
 
@@ -369,7 +369,7 @@ Yeni fare koordinatlarını içeren bir DWORD değeri. Yatay koordinat LOWORD'da
 
 Windows SDK'da açıklandığı gibi Win32 iletisinin [RB_ENDDRAG](/windows/win32/Controls/rb-enddrag)davranışını uygular.
 
-```
+```cpp
 void EndDrag();
 ```
 
@@ -377,7 +377,7 @@ void EndDrag();
 
 Windows SDK'da açıklandığı gibi Win32 iletisinin [RB_GETBANDBORDERS](/windows/win32/Controls/rb-getbandborders)davranışını uygular.
 
-```
+```cpp
 void GetBandBorders(
     UINT uBand,
     LPRECT prc) const;
@@ -389,7 +389,7 @@ void GetBandBorders(
 Sınırların alınacağı bandın sıfır tabanlı dizin.
 
 *Çhc*<br/>
-Bant kenarlıkları alacak bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısıiçin bir işaretçi. Demir çubuğu denetimi RBS_BANDBORDERS stiline sahipse, bu yapının her üyesi, kenarlığı oluşturan bandın ilgili tarafındaki piksel sayısını alır. Demir çubuğu denetimiRBS_BANDBORDERS stiline sahip değilse, bu yapının yalnızca sol üyesi geçerli bilgiler alır. Demir çubuğu denetim stillerinin açıklaması için Windows SDK'daki [Rebar Denetim Stilleri'ne](/windows/win32/Controls/rebar-control-styles) bakın.
+Bant kenarlıkları alacak bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısıiçin bir işaretçi. Demir çubuğu denetimi RBS_BANDBORDERS stiline sahipse, bu yapının her üyesi, kenarlığı oluşturan bandın ilgili tarafındaki piksel sayısını alır. Demir çubuğu denetimiRBS_BANDBORDERS stiline sahip değilse, bu yapının yalnızca sol üyesi geçerli bilgiler alır. Demir çubuğu denetim stillerinin açıklaması için Windows SDK'daki [Rebar Denetim Stilleri'ne](/windows/win32/Controls/rebar-control-styles) bakın.
 
 ## <a name="crebarctrlgetbandcount"></a><a name="getbandcount"></a>CReBarCtrl::GetBandCount
 
@@ -429,7 +429,7 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 Grubun kenar boşluklarını alır.
 
-```
+```cpp
 void GetBandMargins(PMARGINS pMargins);
 ```
 
@@ -584,7 +584,7 @@ BOOL GetRect(
 Çubuk kontrolündeki bir bandın sıfır tabanlı indeksi.
 
 *Çhc*<br/>
-Rebar bandının sınırlarını alacak bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına işaretçi.
+Rebar bandının sınırlarını alacak bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -723,7 +723,7 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 Bir çubuğu kontrolündeki bir bandı en büyük boyutuna göre yeniden boyutlandırın.
 
-```
+```cpp
 void MaximizeBand(UINT uBand);
 ```
 
@@ -744,7 +744,7 @@ Windows SDK'da açıklandığı gibi, `fIdeal` Win32 iletisinin [RB_MAXIMIZEBAND
 
 Bir çubuk kontrolündeki bir bandı en küçük boyutuna göre yeniden boyutlandırın.
 
-```
+```cpp
 void MinimizeBand(UINT uBand);
 ```
 
@@ -787,7 +787,7 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 Windows SDK'da açıklandığı gibi Win32 iletisinin [RB_PUSHCHEVRON](/windows/win32/Controls/rb-pushchevron)davranışını uygular.
 
-```
+```cpp
 void PushChevron(
     UINT uBand,
     LPARAM lAppValue);
@@ -805,7 +805,7 @@ Chevron itilmesi gereken bandın sıfır tabanlı dizin.
 
 Bir çubuğu kontrol etme de bir bandı ideal boyutuna göre yeniden boyutlandırıyor.
 
-```
+```cpp
 void RestoreBand(UINT uBand);
 ```
 
@@ -931,7 +931,7 @@ Arka plan rengini ne zaman ayarlayıp varsayılan rengin nasıl ayarlanılacak h
 
 Demir çubuğu denetimindeki düğmelerin renk düzenini ayarlar.
 
-```
+```cpp
 void SetColorScheme(const COLORSCHEME* lpcs);
 ```
 
@@ -1056,7 +1056,7 @@ Bir çubuk denetiminde metin rengi esnekliğini desteklemek için sağlanır.
 
 Bir araç ipucu denetimini bir demir çubuğu denetimiyle ilişkilendirir.
 
-```
+```cpp
 void SetToolTips(CToolTipCtrl* pToolTip);
 ```
 

@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CControlBar [MFC], m_bAutoDelete
 - CControlBar [MFC], m_pInPlaceOwner
 ms.assetid: 4d668c55-9b42-4838-97ac-cf2b3000b82c
-ms.openlocfilehash: deb95d76e6d68ba5b9fad82bca1d88fd71c5a547
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c2f8ea48bf9a1f015928650085b07198b152771a
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369390"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754789"
 ---
 # <a name="ccontrolbar-class"></a>CControlBar Sınıfı
 
@@ -293,7 +293,7 @@ Kontrol çubuğu kavrayan görünümünü özelleştirmek için bu işlevi geçe
 
 Bir denetim çubuğunun kenetlenmesini sağlamak için bu işlevi arayın.
 
-```
+```cpp
 void EnableDocking(DWORD dwDockStyle);
 ```
 
@@ -450,7 +450,7 @@ Tek bir düğmeyi veya bölmeyi güncelleştirmek için, bir güncelleştirme i�
 
 Denetim çubuğu için istenen **CBRS_** stilleri ayarlamak için bu işlevi arayın.
 
-```
+```cpp
 void SetBarStyle(DWORD dwStyle);
 ```
 
@@ -493,7 +493,7 @@ Denetim çubuğu için istenen stiller. Aşağıdakilerden biri veya birkaçı o
 
 Denetim çubuğunun kenarlıklarının boyutunu ayarlamak için bu işlevi arayın.
 
-```
+```cpp
 void SetBorders(
     int cxLeft = 0,
     int cyTop = 0,
@@ -530,7 +530,7 @@ Aşağıdaki kod örneği, denetim çubuğunun üst ve alt kenarlıklarını 5 p
 
 Denetim çubuğunun yerine sahibini değiştirir.
 
-```
+```cpp
 void SetInPlaceOwner(CWnd* pWnd);
 ```
 

@@ -178,12 +178,12 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], UpdateCaption
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-ms.openlocfilehash: 6073feb5cad5bda5e20f3ff5c16e1ed6d380bca7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 25d4c46d61c3f1b25d18a61a50ae9c2e8bdd8411
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373758"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752917"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx Sınıfı
 
@@ -316,7 +316,7 @@ Aşağıdaki örnek, sınıftan bir sınıfın `CFrameWndEx` nasıl devralılabi
 
 OLE istemci öğesinin ve çerçevenin istemci alanının düzenini ayarlar.
 
-```
+```cpp
 void ActiveItemRecalcLayout();
 ```
 
@@ -380,7 +380,7 @@ virtual void DelayUpdateFrameMenu(HMENU hMenuAlt);
 
 Belirtilen bölmeyi çerçeve penceresine sabitler.
 
-```
+```cpp
 void DockPane(
     CBasePane* pBar,
     UINT nDockBarID=0,
@@ -498,7 +498,7 @@ Bir çubuk bölmesi belirtilen tarafa başarıyla sabitlenebilirse DOĞRU. YANLI
 
 Ana menüyü tam ekran modunda gösterir veya gizler.
 
-```
+```cpp
 void EnableFullScreenMainMenu(BOOL bEnableMenu);
 ```
 
@@ -511,7 +511,7 @@ void EnableFullScreenMainMenu(BOOL bEnableMenu);
 
 Çerçeve penceresi için tam ekran modunu etkinleştirir.
 
-```
+```cpp
 void EnableFullScreenMode(UINT uiFullScreenCmd);
 ```
 
@@ -532,7 +532,7 @@ Ana menüyü ekranda tutmak istiyorsanız [CFrameWndEx'i arayın::EnableFullScre
 
 Yerleştirme durumunun yüklenmesinin etkin veya devre dışı olduğunu.
 
-```
+```cpp
 void EnableLoadDockState(BOOL bEnable=TRUE);
 ```
 
@@ -545,7 +545,7 @@ void EnableLoadDockState(BOOL bEnable=TRUE);
 
 Bölme menüsünün otomatik olarak işlenmesini sağlar veya devre dışı kılabilir.
 
-```
+```cpp
 void EnablePaneMenu(
     BOOL bEnable,
     UINT uiCustomizeCmd,
@@ -1712,7 +1712,7 @@ afx_msg void OnSizing(
 
 Sistem renkleri değiştiğinde çerçeve tarafından çağrılır.
 
-```
+```cpp
 void OnSysColorChange();
 ```
 
@@ -1963,7 +1963,7 @@ Bu yöntem, çerçeve penceresinin boyutu değiştiğinde veya denetim çubuklar
 
 Bölmenin kaydını kaldırır ve yerleştirme yöneticisinden kaldırır.
 
-```
+```cpp
 void RemovePaneFromDockManager(
     CBasePane* pControlBar,
     BOOL bDestroy,
@@ -1999,7 +1999,7 @@ void RemovePaneFromDockManager(
 
 Takma düzenini kayıt defterinde depolanan yerleştirme durumuna geri yükler.
 
-```
+```cpp
 void SetDockState(const CDockState& state);
 ```
 
@@ -2012,7 +2012,7 @@ Kenetlenme durumu. Bu parametre yoksayıldı.
 
 Yazdırma önizleme çerçevesi penceresini ayarlar.
 
-```
+```cpp
 void SetPrintPreviewFrame(CFrameWnd* pWnd);
 ```
 
@@ -2027,7 +2027,7 @@ void SetPrintPreviewFrame(CFrameWnd* pWnd);
 
 Kullanıcı tanımlı komutları araç çubuğu menüsüne ekler.
 
-```
+```cpp
 void SetupToolbarMenu(
     CMenu& menu,
     const UINT uiViewUserToolbarCmdFirst,
@@ -2053,7 +2053,7 @@ void SetupToolbarMenu(
 
 Ana çerçeveyi tam ekran modu ile normal mod arasında değiştirir.
 
-```
+```cpp
 void ShowFullScreen();
 ```
 
@@ -2061,7 +2061,7 @@ void ShowFullScreen();
 
 Belirtilen bölmeyi gösterir veya gizler.
 
-```
+```cpp
 void ShowPane(
     CBasePane* pBar,
     BOOL bShow,
@@ -2087,7 +2087,7 @@ void ShowPane(
 
 Pencere çerçevesi alt yazısını güncelleştirmek için çerçeve tarafından çağrılır.
 
-```
+```cpp
 void UpdateCaption();
 ```
 

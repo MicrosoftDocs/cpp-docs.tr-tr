@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CStatusBarCtrl [MFC], SetText
 - CStatusBarCtrl [MFC], SetTipText
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
-ms.openlocfilehash: 7a594fdb2d3a35ce905b7790026f7418b7435f3a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 57d040a7efd87d384e0aaa6275593bc91f38cc86
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366025"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753041"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl Sınıfı
 
@@ -132,7 +132,7 @@ virtual BOOL Create(
 Durum çubuğu denetiminin stilini belirtir. Windows SDK'da [Ortak Denetim Stilleri'nde](/windows/win32/Controls/common-control-styles) listelenen durum çubuğu denetim stillerinin herhangi bir birleşimini uygulayın. Bu parametre WS_CHILD stili içermelidir. Ayrıca WS_VISIBLE tarzı içermelidir.
 
 *Rect*<br/>
-Durum çubuğu denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
+Durum çubuğu denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
 
 *pParentWnd*<br/>
 Durum çubuğu denetiminin üst penceresini belirtir, `CDialog`genellikle bir . NULL olmamalıdır.
@@ -178,7 +178,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Durum çubuğu denetiminin stilini belirtir. Windows SDK'da [Ortak Denetim Stilleri'nde](/windows/win32/Controls/common-control-styles) listelenen durum çubuğu denetim stillerinin herhangi bir birleşimini uygulayın. Bu parametre WS_CHILD stili içermelidir. Ayrıca WS_VISIBLE tarzı içermelidir.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -344,7 +344,7 @@ BOOL GetRect(
 Sınırlayıcı dikdörtgeni alınacak parçanın sıfır tabanlı dizin.
 
 *Lprect*<br/>
-Sınırlayıcı dikdörtgeni alan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısının adresi.
+Sınırlayıcı dikdörtgeni alan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısının adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -530,7 +530,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [SB_SETICO
 
 Durum çubuğu denetiminin çizim alanının minimum yüksekliğini ayarlar.
 
-```
+```cpp
 void SetMinHeight(int nMin);
 ```
 
@@ -632,7 +632,7 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
 
 Durum çubuğundaki bir bölme için araç ipucu metnini ayarlar.
 
-```
+```cpp
 void SetTipText(
     int nPane,
     LPCTSTR pszTipText);

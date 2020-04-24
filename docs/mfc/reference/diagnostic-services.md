@@ -18,12 +18,12 @@ helpviewer_keywords:
 - diagnostics [MFC], diagnostic services
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-ms.openlocfilehash: 8db12a73d64641a52fea3056de8ab3180c9239b2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f952044f4320aea1a757559b3c9c51e8ffb7c3a6
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365789"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81751647"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 
@@ -124,7 +124,7 @@ MFC uygulamanızın hata ayıklama sürümünün yürütülmesinde bir ara (ça�
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 void AfxDebugBreak( );
 ```
 
@@ -434,7 +434,7 @@ MFC'nin hata ayıklama sırasında nesnenin durumunu boşaltmak için kullandı�
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 void AfxDump(const CObject* pOb);
 ```
 
@@ -483,7 +483,7 @@ int  afxMemDF;
 
 Bu işlev, bir hata olup olmadığını görmek için geçirilen SCODE'u sınar.
 
-```
+```cpp
 void AFXAPI AfxCheckError(SCODE sc);
 throw CMemoryException*
 throw COleException*
@@ -547,7 +547,7 @@ Bu işlev yalnızca MFC'nin Hata Ayıklama sürümünde çalışır.
 
 Hata ayıklama sırasında bir nesnenin durumunu dökümü için hata ayıklama sırasında bu işlevi çağırın.
 
-```
+```cpp
 void AfxDump(const CObject* pOb);
 ```
 
@@ -570,7 +570,7 @@ Program kodunuz aramamalı, `AfxDump`bunun yerine `Dump` uygun nesnenin üye iş
 
 Bu genel işlev, geçerli yığının görüntüsünü oluşturmak için kullanılabilir.
 
-```
+```cpp
 void AFXAPI AfxDumpStack(DWORD dwTarget = AFX_STACK_DUMP_TARGET_DEFAULT);
 ```
 
@@ -858,7 +858,7 @@ AFXAPI arama kuralının, callee'nin parametreleri yığından kaldırması gere
 
 Uygulamanın bellek alanındaki tüm serileştirilebilir `CObject`türetilmiş sınıflar için belirtilen yineleme işlevini çağırır.
 
-```
+```cpp
 void
 AFXAPI AfxDoForAllClasses(
     void (* pfn)(const CRuntimeClass* pClass, void* pContext),
@@ -894,7 +894,7 @@ Serializable `CObject`-türetilmiş sınıflar DECLARE_SERIAL makro kullanılara
 
 `CObject` **Yeni**ile ayrılan tüm nesneler için belirtilen yineleme işlevini yürütür.
 
-```
+```cpp
 void AfxDoForAllObjects(
     void (* pfn)(CObject* pObject, void* pContext),
     void* pContext);

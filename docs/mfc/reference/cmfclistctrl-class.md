@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMFCListCtrl [MFC], SetSortColumn
 - CMFCListCtrl [MFC], Sort
 ms.assetid: 50d16aee-138c-4f34-8690-cb75d544ef2e
-ms.openlocfilehash: 63fbfd236ed98eee3b90f4a20b191817026903c7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 099ec086bd95a1180af4cf5a8f6a9fa7f1d099ea
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370767"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754237"
 ---
 # <a name="cmfclistctrl-class"></a>CMFCListCtrl Sınıfı
 
@@ -94,7 +94,7 @@ Aşağıdaki örnek, sınıfta çeşitli yöntemlerin `CMFCListCtrl` nasıl kull
 
 Sıralanmış sütunları farklı bir arka plan rengiyle işaretler.
 
-```
+```cpp
 void EnableMarkSortedColumn(
     BOOL bMark = TRUE,
     BOOL bRedraw = TRUE);
@@ -116,7 +116,7 @@ void EnableMarkSortedColumn(
 
 Liste denetimindeki veri satırlarını birden çok sütuna göre sıralamayı sağlar.
 
-```
+```cpp
 void EnableMultipleSort(BOOL bEnable = TRUE);
 ```
 
@@ -277,7 +277,7 @@ Varsayılan olarak, bu `GetTextColor` yöntem giriş parametreleri ne olursa ols
 
 Sıralanmış sütunlar listesinden bir sıralama sütunu kaldırır.
 
-```
+```cpp
 void RemoveSortColumn(int iColumn);
 ```
 
@@ -294,7 +294,7 @@ Bu yöntem üstbilgi denetiminden bir sıralama sütunu kaldırır. BU [CMFCHead
 
 Geçerli sıralanmış sütunu ve sıralama sırasını ayarlar.
 
-```
+```cpp
 void SetSortColumn(
     int iColumn,
     BOOL bAscending = TRUE,

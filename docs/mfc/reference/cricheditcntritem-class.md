@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CRichEditCntrItem [MFC], CRichEditCntrItem
 - CRichEditCntrItem [MFC], SyncToRichEditObject
 ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b
-ms.openlocfilehash: b8158105d09d5cfc7c25512567a98121b194a82a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7b566fe7f1c0667dbcdb4976f79cd2e1597f48f6
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368283"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752762"
 ---
 # <a name="cricheditcntritem-class"></a>CRichEditCntrItem Sınıfı
 
@@ -95,7 +95,7 @@ Daha fazla bilgi için Windows SDK'daki [REOBJECT](/windows/win32/api/richole/ns
 
 Bu işlevi cihaz yönü, [DVASPECT](/windows/win32/api/wtypes/ne-wtypes-dvaspect), bu `CRichEditCntrltem` *reo*tarafından belirtilen senkronize etmek için arayın.
 
-```
+```cpp
 void SyncToRichEditObject(REOBJECT& reo);
 ```
 

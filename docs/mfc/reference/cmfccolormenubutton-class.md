@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CMFCColorMenuButton [MFC], OnDraw
 - CMFCColorMenuButton [MFC], OnDrawOnCustomizeList
 ms.assetid: 42685704-e994-4f7b-9553-62283c27b754
-ms.openlocfilehash: 22208aec505033d372f5a80ba2a9641b1bd15874
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9c895573c626a890facfef689fce4b516aff5115
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367699"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752524"
 ---
 # <a name="cmfccolormenubutton-class"></a>CMFCColorMenuButton Sınıfı
 
@@ -193,7 +193,7 @@ Bu yöntem, kullanıcı bir renk menüsü düğmesine bastığında çerçeve ta
 
 Normal renk düğmelerinin üzerine konumlandırılmış bir "otomatik" düğmeyi etkinleştirer ve devre dışı kılabilir. (Standart sistem otomatik düğmesi **Otomatik**olarak etiketlenmiştir.)
 
-```
+```cpp
 void EnableAutomaticButton(
     LPCTSTR lpszLabel,
     COLORREF colorAutomatic,
@@ -219,7 +219,7 @@ Otomatik düğme geçerli varsayılan rengi uygular.
 
 Sistem renkleri yerine belgeye özgü renklerin görüntülenmesini sağlar.
 
-```
+```cpp
 void EnableDocumentColors(
     LPCTSTR lpszLabel,
     BOOL bEnable=TRUE);
@@ -241,7 +241,7 @@ Kullanıcı bir renk menüsü düğmesini tıklattığında geçerli belge renkl
 
 Normal renk düğmelerinin altına konumlandırılmış bir "diğer" düğmeyi etkinleştirer ve devre dışı kılabilir. (Standart sistem "diğer" düğmesi **Daha Fazla Renk**olarak etiketlenir.)
 
-```
+```cpp
 void EnableOtherButton(
     LPCTSTR lpszLabel,
     BOOL bAltColorDlg=TRUE,
@@ -265,7 +265,7 @@ void EnableOtherButton(
 
 Renk bölmesini yırtma olanağı sağlar.
 
-```
+```cpp
 void EnableTearOff(
     UINT uiID,
     int nVertDockColumns=-1,
@@ -533,7 +533,7 @@ static void SetColorName(
 
 Renk seçimi denetiminde [(CMFCColorBar](../../mfc/reference/cmfccolorbar-class.md) nesnesi) görüntülenecek sütun sayısını ayarlar.
 
-```
+```cpp
 void SetColumnsNumber(int nColumns);
 ```
 

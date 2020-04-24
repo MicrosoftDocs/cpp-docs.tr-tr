@@ -20,12 +20,12 @@ helpviewer_keywords:
 - COleVariant [MFC], GetByteArrayFromVariantArray
 - COleVariant [MFC], SetString
 ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
-ms.openlocfilehash: f907ed7c058f87cf03530411bc8fa4a3c108a4f0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7d8abea39a9baa3f447ca0d5f3ab1183367d531f
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374830"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753714"
 ---
 # <a name="colevariant-class"></a>COleVariant Sınıfı
 
@@ -93,7 +93,7 @@ Daha fazla bilgi için [VARYANT,](/windows/win32/api/oaidl/ns-oaidl-variant) [PA
 
 Verilen [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) nesnesini geçerli `COleVariant` nesneye eklemek için bu işlevi çağırın.
 
-```
+```cpp
 void Attach(VARIANT& varSrc);
 ```
 
@@ -212,7 +212,7 @@ SCODE hakkında daha fazla bilgi için Windows SDK'daki [COM Hata Kodlarının Y
 
 Bu `COleVariant` nesnedeki varyant değeri türünü dönüştürür.
 
-```
+```cpp
 void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
 ```
 
@@ -232,7 +232,7 @@ Daha fazla bilgi için, Windows SDK'daki [VARIANT,](/windows/win32/api/oaidl/ns-
 
 Temizler `VARIANT`.
 
-```
+```cpp
 void Clear();
 ```
 
@@ -263,7 +263,7 @@ Daha fazla bilgi için, Windows SDK'daki [VARIANT,](/windows/win32/api/oaidl/ns-
 
 Varolan bir varyant dizisinden bayt dizini alır
 
-```
+```cpp
 void GetByteArrayFromVariantArray(CByteArray& bytes);
 ```
 
@@ -381,7 +381,7 @@ Ekleme `COleVariant` (**\<**) işleci tanılama boşaltma ve arşive depolama de
 
 Dizeyi belirli bir türe ayarlar.
 
-```
+```cpp
 void SetString(LPCTSTR lpszSrc, VARTYPE vtSrc);
 ```
 

@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDialog [MFC], OnCancel
 - CDialog [MFC], OnOK
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
-ms.openlocfilehash: cad762f426012d9d1931b96d54d8a53c9bab465d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 36913cfdd8beda31136176c966890a90077c1b30
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375641"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753370"
 ---
 # <a name="cdialog-class"></a>CDialog Sınıfı
 
@@ -295,7 +295,7 @@ Kullanıcı iletişim kutusundaki Ok veya İptal gibi basma düğmelerinden biri
 
 Modal iletişim kutusunu sonlandırmak için bu üye işlevini arayın.
 
-```
+```cpp
 void EndDialog(int nResult);
 ```
 
@@ -338,7 +338,7 @@ Bu genellikle tamam düğmesidir.
 
 Odak noktasını iletişim kutusunda belirtilen denetime taşır.
 
-```
+```cpp
 void GotoDlgCtrl(CWnd* pWndCtrl);
 ```
 
@@ -398,7 +398,7 @@ ActiveX denetimleri içeren iletişim kutuları, Bir DLGINIT kaynağında sağla
 
 Dikdörtgenin iletişim kutusu birimlerini ekran birimlerine dönüştürmek için arayın.
 
-```
+```cpp
 void MapDialogRect(LPRECT lpRect) const;
 ```
 
@@ -419,7 +419,7 @@ Dönüştürülecek iletişim kutusu koordinatlarını içeren bir [RECT](/windo
 
 Odak noktasını iletişim kutusundaki bir sonraki denetime taşır.
 
-```
+```cpp
 void NextDlgCtrl() const;
 ```
 
@@ -522,7 +522,7 @@ Virtual void OnSetFont(CFont* pFont);
 
 Odak noktasını iletişim kutusundaki önceki denetime ayarlar.
 
-```
+```cpp
 void PrevDlgCtrl() const;
 ```
 
@@ -534,7 +534,7 @@ Odak iletişim kutusundaki ilk denetimdeyse, kutudaki son denetime geçer.
 
 İletişim kutusu için varsayılan düğme denetimini değiştirir.
 
-```
+```cpp
 void SetDefID(UINT nID);
 ```
 
@@ -547,7 +547,7 @@ Varsayılan olacak düğmeye basarak denetiminin kimliğini belirtir.
 
 İletişim kutusu için içeriğe duyarlı bir yardım kimliği ayarlar.
 
-```
+```cpp
 void SetHelpID(UINT nIDR);
 ```
 

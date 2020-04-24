@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CDaoTableDef [MFC], m_pDAOTableDef
 - CDaoTableDef [MFC], m_pDatabase
 ms.assetid: 7c5d2254-8475-43c4-8a6c-2d32ead194c9
-ms.openlocfilehash: 063d0b795c7e4f6af901f52563295883ef81de7d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: adc31ccbf2be34aa1df1fa56111d1990701a6329
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377131"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754693"
 ---
 # <a name="cdaotabledef-class"></a>CDaoTableDef Sınıfı
 
@@ -300,7 +300,7 @@ Tabledef adını verdikten sonra, veritabanının TableDefs koleksiyonunda table
 
 Tabloya alan eklemek için bu üye işlevi arayın.
 
-```
+```cpp
 void CreateField(
     LPCTSTR lpszName,
     short nType,
@@ -373,7 +373,7 @@ Kalan üyeler `CDaoFieldInfo` üye için uygun olarak **0,** FALSE veya boş bir
 
 Tabloya dizin eklemek için bu işlevi çağırın.
 
-```
+```cpp
 void CreateIndex(CDaoIndexInfo& indexinfo);
 ```
 
@@ -402,7 +402,7 @@ Kalan üyeler FALSE olarak ayarlanırsa yoksayılır. Buna ek `m_lDistinctCount`
 
 Bir alanı kaldırmak ve erişilemez hale getirmek için bu üye işlevi arayın.
 
-```
+```cpp
 void DeleteField(LPCTSTR lpszName);
 void DeleteField(int nIndex);
 ```
@@ -425,7 +425,7 @@ Bu üye işlevini, veritabanına ekedilmemiş veya [CanUpdate](#canupdate) sıf�
 
 Altta yatan tablodaki bir dizini silmek için bu üye işlevi arayın.
 
-```
+```cpp
 void DeleteIndex(LPCTSTR lpszName);
 void DeleteIndex(int nIndex);
 ```
@@ -557,7 +557,7 @@ Değeri 0 ise, koleksiyonda nesne yok.
 
 Tabloda tanımlanan bir alan hakkında çeşitli bilgiler elde etmek için bu üye işlevi arayın.
 
-```
+```cpp
 void GetFieldInfo(
     int nIndex,
     CDaoFieldInfo& fieldinfo,
@@ -619,7 +619,7 @@ Değeri 0 ise, koleksiyonda dizin yok.
 
 Tabloda tanımlanan bir dizin hakkında çeşitli bilgiler elde etmek için bu üye işlevi arayın.
 
-```
+```cpp
 void GetIndexInfo(
     int nIndex,
     CDaoIndexInfo& indexinfo,
@@ -796,7 +796,7 @@ Tablo adını belirten bir dize için işaretçi.
 
 Ekli bir tablonun bağlantı bilgilerini güncelleştirmek için bu üye işlevini arayın.
 
-```
+```cpp
 void RefreshLink();
 ```
 
@@ -812,7 +812,7 @@ Değiştirilen bağlantı bilgilerini etkili olmaya zorlamak için, bu tabloya d
 
 Nesnenin bir veya daha fazla `CDaoTableDef` özelliğini gösteren bir değer ayarlar.
 
-```
+```cpp
 void SetAttributes(long lAttributes);
 ```
 
@@ -842,7 +842,7 @@ Birden çok öznitelik ayarlarken, bitwise-OR işleci kullanarak uygun sabitleri
 
 Ekli `CDaoTableDef` bir tabloyu temsil eden bir nesne için dize nesnesi bir veya iki bölümden (veritabanı türü belirtimi ve veritabanına giden bir yol) oluşur.
 
-```
+```cpp
 void SetConnect(LPCTSTR lpszConnect);
 ```
 
@@ -894,7 +894,7 @@ Parola gerekliyse ancak sağlanmadıysa, ODBC sürücüsü bir tabloya ilk eriş
 
 Tablo için kullanıcı tanımlı bir ad ayarlamak için bu üye işlevini çağırın.
 
-```
+```cpp
 void SetName(LPCTSTR lpszName);
 ```
 
@@ -913,7 +913,7 @@ Ad bir harfle başlamalı ve en fazla 64 karakter içerebilir. Sayıları içere
 
 Ekteki tablonun adını veya nesnenin temel tablosunun `CDaoTableDef` adını belirtmek için bu üye işlevi arayın, çünkü verilerin özgün kaynağında var.
 
-```
+```cpp
 void SetSourceTableName(LPCTSTR lpszSrcTableName);
 ```
 
@@ -932,7 +932,7 @@ Daha sonra [RefreshLink'i](#refreshlink)aramanız gerekir. Bu özellik ayarı bi
 
 Bir tablo def için bir doğrulama kuralı ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetValidationRule(LPCTSTR lpszValidationRule);
 ```
 
@@ -957,7 +957,7 @@ Doğrulama yalnızca Microsoft Jet veritabanı altyapısını kullanan veritaban
 
 Microsoft Jet veritabanı altyapısı tarafından desteklenen temel taban `CDaoTableDef` tablosu olan bir nesne için doğrulama kuralının özel durum metnini ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetValidationText(LPCTSTR lpszValidationText);
 ```
 

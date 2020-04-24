@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CMFCTasksPane [MFC], Update
 - CMFCTasksPane [MFC], OnActivateTasksPanePage
 ms.assetid: b456328e-2525-4642-b78b-9edd1a1a7d3f
-ms.openlocfilehash: d5c412b55d9037215f77b165dacb7cfc1a16ef17
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: fbcdd6a99375272f440282e76290401ff658d52e
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375878"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753413"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane Sınıfı
 
@@ -591,7 +591,7 @@ CMFCTasksPane();
 
 ## <a name="cmfctaskspanecollapseallgroups"></a><a name="collapseallgroups"></a>CMFCTasksPane::CollapseAllGroups
 
-```
+```cpp
 void CollapseAllGroups(BOOL bCollapse = TRUE);
 
 void CollapseAllGroups(
@@ -675,7 +675,7 @@ Bu yöntemin oluşturduğu açılır menü, görev bölmesindeki sayfaların lis
 
 Görev grubu genişlediğinde veya çöktüğünde oluşan animasyonu etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableAnimation(BOOL bEnable = TRUE);
 ```
 
@@ -692,7 +692,7 @@ Varsayılan olarak, bir görev grubu genişletildiğinde veya daraltıldığınd
 
 Kullanıcının görev gruplarını daraltıp daraltamayacağını belirtir.
 
-```
+```cpp
 void EnableGroupCollapse(BOOL bEnable);
 ```
 
@@ -709,7 +709,7 @@ Daraltılmış bir görev grubu yalnızca grup başlığını görüntüler; gö
 
 **Sonraki** ve **Önceki** gezinti düğmelerinde açılır menüleri etkinleştirir.
 
-```
+```cpp
 void EnableHistoryMenuButtons(BOOL bEnable = TRUE);
 ```
 
@@ -728,7 +728,7 @@ Menüler, kullanıcının kullandığı görev sayfalarının geçmişini içeri
 
 Gezinme araç çubuğunu etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableNavigationToolbar(
     BOOL bEnable = TRUE,
     UINT uiToolbarBmpRes = 0,
@@ -760,7 +760,7 @@ Varsayılan olarak, çerçeve gezinti araç çubuğunu görüntülemez. Gezinti 
 
 ## <a name="cmfctaskspaneenableoffsetcustomcontrols"></a><a name="enableoffsetcustomcontrols"></a>CMFCTasksPane::EnableOffsetCustomControls
 
-```
+```cpp
 void EnableOffsetCustomControls(BOOL bEnable);
 ```
 
@@ -774,7 +774,7 @@ void EnableOffsetCustomControls(BOOL bEnable);
 
 Kaydırma çubuğu yerine kaydırma düğmelerini etkinleştirin.
 
-```
+```cpp
 void EnableScrollButtons(BOOL bEnable = TRUE);
 ```
 
@@ -791,7 +791,7 @@ Varsayılan olarak, çerçeve görev bölmesinde kaydırma düğmelerini görün
 
 Etiketlerdeki metin için sözcük kaydırmayı etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableWrapLabels(BOOL bEnable = TRUE);
 ```
 
@@ -808,7 +808,7 @@ Varsayılan olarak, çerçeve metni etiketlere sarmaz. Sözcük kaydırma etkinl
 
 Görevlerdeki metin için sözcük kaydırmayı etkinleştirir veya devre dışı bırakır.
 
-```
+```cpp
 void EnableWrapTasks(BOOL bEnable = TRUE);
 ```
 
@@ -937,7 +937,7 @@ Görev bölmesi ile istemci alanının kenarı arasındaki varsayılan boşluk 1
 
 ## <a name="cmfctaskspanegetnextpages"></a><a name="getnextpages"></a>CMFCTasksPane::GetNextPages
 
-```
+```cpp
 void GetNextPages(CStringList& lstNextPages) const;
 ```
 
@@ -983,7 +983,7 @@ Görev bölmesindeki sayfa sayısı.
 
 ## <a name="cmfctaskspanegetpreviouspages"></a><a name="getpreviouspages"></a>CMFCTasksPane::GetPreviousPages
 
-```
+```cpp
 void GetPreviousPages(CStringList& lstPrevPages) const;
 ```
 
@@ -1468,7 +1468,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ## <a name="cmfctaskspanerecalclayout"></a><a name="recalclayout"></a>CMFCTasksPane::RecalcLayout
 
-```
+```cpp
 void RecalcLayout(BOOL bRedraw = TRUE);
 ```
 
@@ -1482,7 +1482,7 @@ void RecalcLayout(BOOL bRedraw = TRUE);
 
 Belirtilen sayfadaki tüm grupları kaldırır.
 
-```
+```cpp
 void RemoveAllGroups(int nPageIdx = 0);
 ```
 
@@ -1499,7 +1499,7 @@ void RemoveAllGroups(int nPageIdx = 0);
 
 Varsayılan (ilk) sayfa dışında görev bölmesinden tüm sayfaları kaldırır.
 
-```
+```cpp
 void RemoveAllPages();
 ```
 
@@ -1507,7 +1507,7 @@ void RemoveAllPages();
 
 Belirtilen gruptan tüm görevleri kaldırır.
 
-```
+```cpp
 void RemoveAllTasks(int nGroup);
 ```
 
@@ -1520,7 +1520,7 @@ void RemoveAllTasks(int nGroup);
 
 Bir grubu kaldırır.
 
-```
+```cpp
 void RemoveGroup(int nGroup);
 ```
 
@@ -1539,7 +1539,7 @@ Bu yöntem tek bir grubu kaldırır. Tüm grupları kaldırmak için [CMFCTasksP
 
 Görev bölmesinden belirli bir sayfayı kaldırır.
 
-```
+```cpp
 void RemovePage(int nPageIdx);
 ```
 
@@ -1609,7 +1609,7 @@ virtual void Serialize(CArchive& ar);
 
 Görev bölmesinde belirtilen sayfayı etkin hale getirir.
 
-```
+```cpp
 void SetActivePage(int nPageIdx);
 ```
 
@@ -1626,7 +1626,7 @@ Bu yöntem, *nPageIdx* geçersiz sayılsa ortaya attırır.
 
 Görev bölmesinin resim yazısı adını ayarlar.
 
-```
+```cpp
 void SetCaption(LPCTSTR lpszName);
 ```
 
@@ -1643,7 +1643,7 @@ Görev bölmesi birden çok sayfası varsa, varsayılan sayfada bu işlevi kulla
 
 Grup yazısının yüksekliğini ayarlar.
 
-```
+```cpp
 void SetGroupCaptionHeight(int n = -1);
 ```
 
@@ -1662,7 +1662,7 @@ Görev bölmesi öğelerinin kenar boşluklarını özelleştirmek için bu yön
 
 Grup yazısının yatay mahsuplarını ayarlar.
 
-```
+```cpp
 void SetGroupCaptionHorzOffset(int n = -1);
 ```
 
@@ -1675,7 +1675,7 @@ void SetGroupCaptionHorzOffset(int n = -1);
 
 Grup yazısının dikey ofsetini ayarlar.
 
-```
+```cpp
 void SetGroupCaptionVertOffset(int n = -1);
 ```
 
@@ -1736,7 +1736,7 @@ Grup metin rengi başarıyla değiştirildiyse DOĞRU; aksi takdirde, YANLIŞ.
 
 Bir grup için dikey ofset ayarlar.
 
-```
+```cpp
 void SetGroupVertOffset(int n = -1);
 ```
 
@@ -1755,7 +1755,7 @@ Görev bölmesi öğelerinin kenar boşluklarını özelleştirmek için bu yön
 
 Yatay kenar boşluğunu ayarlar.
 
-```
+```cpp
 void SetHorzMargin(int n = -1);
 ```
 
@@ -1807,7 +1807,7 @@ Bu yöntem, bir resim listesini görev bölmesi denetimiyle ilişkilendirer. [CM
 
 Görev bölme sayfasının resim yazısı metnini ayarlar.
 
-```
+```cpp
 void SetPageCaption(
     int nPageIdx,
     LPCTSTR lpszName);
@@ -1855,7 +1855,7 @@ Görev adı başarıyla ayarlanmışsa DOĞRU; aksi takdirde, YANLIŞ.
 
 Görevler için yatay mahsup ayarlar.
 
-```
+```cpp
 void SetTasksHorzOffset(int n = -1);
 ```
 
@@ -1874,7 +1874,7 @@ Varsayılan yatay ofset 12 pikseldir.
 
 ## <a name="cmfctaskspanesettasksiconhorzoffset"></a><a name="settasksiconhorzoffset"></a>CMFCTasksPane::SetTasksIconHorzOffset
 
-```
+```cpp
 void SetTasksIconHorzOffset(int n = -1);
 ```
 
@@ -1886,7 +1886,7 @@ void SetTasksIconHorzOffset(int n = -1);
 
 ## <a name="cmfctaskspanesettasksiconvertoffset"></a><a name="settasksiconvertoffset"></a>CMFCTasksPane::SetTasksIconVertOffset
 
-```
+```cpp
 void SetTasksIconVertOffset(int n = -1);
 ```
 
@@ -1930,7 +1930,7 @@ Görevin metin rengi başarıyla ayarlanmışsa DOĞRU; aksi takdirde, YANLIŞ.
 
 Dikey kenar boşluğunu ayarlar.
 
-```
+```cpp
 void SetVertMargin(int n = -1);
 ```
 

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCToolBarsCustomizeDialog [MFC], OnInitDialog
 - CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy
 ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
-ms.openlocfilehash: d47ecf45a7bbfc563be0c05cd15ee84d430f502f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 29e2c3d0238ac5a084ea916d95ad953f8c4aedce
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377358"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753406"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog Sınıfı
 
@@ -120,7 +120,7 @@ Aşağıdaki örnek, sınıfta çeşitli yöntemlerin `CMFCToolBarsCustomizeDial
 
 **Komutlar** sayfasındaki komutlar listesine bir araç çubuğu düğmesi ekler.
 
-```
+```cpp
 void AddButton(
     UINT uiCategoryId,
     const CMFCToolBarButton& button,
@@ -187,7 +187,7 @@ Aramada `AddMenuCommands`, *bPopup* FALSE olduğunu. Sonuç olarak, bu yöntem k
 
 Belirtilen menüdeki tüm öğeleri temsil etmek için **Komutlar** sayfasındaki komutlar listesine öğeler ekler.
 
-```
+```cpp
 void AddMenuCommands(
     const CMenu* pMenu,
     BOOL bPopup,
@@ -351,7 +351,7 @@ Yöntemi `Create` yalnızca sınıfı tamamen başlatmadan sonra arayın.
 
 **Özelleştir** iletişim kutusunu kullanarak yeni araç çubukları oluşturmayı etkinleştirir veya devre dışı kaldırır.
 
-```
+```cpp
 void EnableUserDefinedToolbars(BOOL bEnable=TRUE);
 ```
 
@@ -391,7 +391,7 @@ Sınıf, `CMFCMousePropertyPage` çift tıklatma olay listesi kutusunu doldurmak
 
 Sağlanan `CComboBox` nesneyi **Özelleştir** iletişim kutusunda her komut kategorisinin adıyla doldurur.
 
-```
+```cpp
 void FillCategoriesComboBox(
     CComboBox& wndCategory,
     BOOL bAddEmpty = TRUE) const;
@@ -419,7 +419,7 @@ Ve `CMFCToolBarsKeyboardPropertyPage` `CMFCKeyMapDialog` sınıflar klavye eşle
 
 Sağlanan `CListBox` nesneyi **Özelleştir** iletişim kutusunda her komut kategorisinin adıyla doldurur.
 
-```
+```cpp
 void FillCategoriesListBox(
     CListBox& wndCategory,
     BOOL bAddEmpty = TRUE) const;
@@ -705,7 +705,7 @@ Kategori adı benzersiz olmalıdır.
 
 **Komutlar** sayfasındaki komutların liste kutusundaki araç çubuğu düğmesini değiştirir.
 
-```
+```cpp
 void ReplaceButton(
     UINT uiCmd,
     const CMFCToolBarButton& button);

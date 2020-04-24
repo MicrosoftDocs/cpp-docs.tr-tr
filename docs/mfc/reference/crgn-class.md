@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CRgn [MFC], RectInRegion
 - CRgn [MFC], SetRectRgn
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-ms.openlocfilehash: 72ab4027880285a3c4cd24d586e163e1e01b98f2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e84526eec8f4fd4b1935fa39bc7f4ed3c4d5dd71
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368302"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754481"
 ---
 # <a name="crgn-class"></a>CRgn Sınıfı
 
@@ -805,7 +805,7 @@ Belirtilen dikdörtgenin herhangi bir bölümü bölge sınırları içinde yat�
 
 Dikdörtgen bir bölge oluşturur.
 
-```
+```cpp
 void SetRectRgn(
     int x1,
     int y1,

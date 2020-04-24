@@ -1,35 +1,35 @@
 ---
-title: 'Nasıl yapılır: DDX / DDV veri ile Windows Forms bağlama yapın'
+title: 'Nasıl yapılır: Windows Formları ile DDX-DDV Veri Bağlama yapın'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC [C++], hosting a Windows Forms Control
 - Windows Forms [C++], MFC support
 ms.assetid: b2957370-cf1f-4779-94ac-228cd393686c
-ms.openlocfilehash: 558c763fd18cd1569ff23435bf6156b3117f117d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 31629a4db2559112ba49f5c069b08de7abdfc2db
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387324"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754353"
 ---
-# <a name="how-to-do-ddxddv-data-binding-with-windows-forms"></a>Nasıl yapılır: DDX/DDV veri ile Windows Forms bağlama yapın
+# <a name="how-to-do-ddxddv-data-binding-with-windows-forms"></a>Nasıl yapılır: Windows Forms ile DDX/DDV Veri Bağlaması Yapma
 
-[DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol) çağrıları [CWinFormsControl::CreateManagedControl](../mfc/reference/cwinformscontrol-class.md#createmanagedcontrol) kaynak denetimi kimlikle eşleşen bir denetim oluşturmak için Kullanırsanız `DDX_ManagedControl` için bir `CWinFormsControl` denetimi (Sihirbaz tarafından oluşturulan kodda) değil, çağırmalıdır `CreateManagedControl` açıkça için aynı denetimi.
+[DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol) [CWinFormsControl çağırır::CreateManagedControl](../mfc/reference/cwinformscontrol-class.md#createmanagedcontrol) kaynak denetim kimliği eşleşen bir denetim oluşturmak için. Denetim `DDX_ManagedControl` `CWinFormsControl` için kullanıyorsanız (sihirbaz tarafından oluşturulan kodda), `CreateManagedControl` aynı denetim için açıkça aramamalısınız.
 
-Çağrı `DDX_ManagedControl` içinde [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) kaynak kimliklerinden denetimler oluşturabilirsiniz. Veri değişimi için Windows Forms denetimleri ile DDX/DDV işlevler kullanın gerekmez. Bunun yerine, yönetilen denetimi özelliklerine erişmek için kodu koyabilirsiniz `DoDataExchange` aşağıdaki örnekte olduğu gibi iletişim kutusu (veya Görünüm) sınıfının yöntemi.
+Kaynak `DDX_ManagedControl` aramalarından denetimler oluşturmak için [CWnd::DoDataExchange'i](../mfc/reference/cwnd-class.md#dodataexchange) arayın. Veri alışverişi için Windows Forms denetimleri ile DDX/DDV işlevlerini kullanmanız gerekmez. Bunun yerine, aşağıdaki örnekte olduğu gibi, iletişim `DoDataExchange` (veya görünüm) sınıfının yönteminde yönetilen denetim özelliklerine erişmek için kod yerleştirebilirsiniz.
 
-Aşağıdaki örnek, bir .NET kullanıcı denetimi için bir yerel C++ dize bağlama gösterilmektedir.
+Aşağıdaki örnek, yerel bir C++ dizesini bir .NET kullanıcı denetimine nasıl bağlanıntığını gösterir.
 
 ## <a name="example"></a>Örnek
 
-DDX/DDV veri bağlaması MFC dizesi örneği verilmiştir `m_str` ile kullanıcı tanımlı `NameText` bir .NET kullanıcı denetimi özelliği.
+Aşağıda, bir MFC dizesinin `m_str` .NET kullanıcı denetiminin kullanıcı tanımlı `NameText` özelliğiyle DDX/DDV veri bağlamasının bir örneği verilmiştir.
 
-Denetim oluşturulur [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) çağrıları `CMyDlg::DoDataExchange` ilk kez, bu nedenle herhangi bir kod öğesine başvuran `m_UserControl` sonra gelmelidir `DDX_ManagedControl` çağırın.
+Denetim, [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) ilk `CMyDlg::DoDataExchange` kez aradığında oluşturulur, bu `m_UserControl` nedenle başvuruyapan `DDX_ManagedControl` herhangi bir kodun çağrıdan sonra gelmesi gerekir.
 
-Bu kod, oluşturduğunuz MFC01 uygulamada uygulayabileceğiniz [nasıl yapılır: Bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md).
+Bu kodu, nasıl oluşturulur: [Kullanıcı Denetimini ve Ana Bilgisayar'ı Bir İletişim Kutusunda Oluşturma'da](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md)oluşturduğunuz MFC01 uygulamasında uygulayabilirsiniz.
 
-Aşağıdaki kod CMFC01Dlg bildiriminde yerleştirin:
+CMFC01Dlg bildirimine aşağıdaki kodu koyun:
 
 ```
 class CMFC01Dlg : public CDialog
@@ -41,9 +41,9 @@ class CMFC01Dlg : public CDialog
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod CMFC01Dlg uygulamasında yerleştirin:
+CMFC01Dlg uygulamasında aşağıdaki kodu koyun:
 
-```
+```cpp
 void CMFC01Dlg::DoDataExchange(CDataExchange* pDX)
 {
    CDialog::DoDataExchange(pDX);
@@ -60,11 +60,11 @@ void CMFC01Dlg::DoDataExchange(CDataExchange* pDX)
 
 ## <a name="example"></a>Örnek
 
-Tamam düğmesi için tıklama işleyicisi yöntemi artık ekleyeceğiz. Tıklayın **kaynak görünümü** sekmesi. Kaynak Görünümü'nde çift tıklayarak `IDD_MFC01_DIALOG`. Kaynak Düzenleyicisi'nde iletişim kaynakları görünür. Ardından Tamam düğmesine çift tıklayın...
+Şimdi Tamam düğmesine bir tıklama için işleyici yöntemi ni ekleyeceğiz. Kaynak **Görünümü** sekmesini tıklatın. Kaynak Görünümü'nde çift `IDD_MFC01_DIALOG`tıklatın. İletişim kaynağı Kaynak Düzenleyicisi'nde görünür. Ardından Tamam düğmesine çift tıklayın...
 
-İşleyicisi aşağıdaki gibi tanımlayın.
+Işleyiciyi aşağıdaki gibi tanımlayın.
 
-```
+```cpp
 void CMFC01Dlg::OnBnClickedOk()
 {
    AfxMessageBox(CString(m_MyControl.GetControl()->textBox1->Text));
@@ -74,13 +74,13 @@ void CMFC01Dlg::OnBnClickedOk()
 
 ## <a name="example"></a>Örnek
 
-Ve BOOL CMFC01Dlg::OnInitDialog() uygulanması için aşağıdaki satırı ekleyin.
+Ve BOOL CMFC01Dlg uygulanmasına aşağıdaki satırı ekleyin::OnInitDialog().
 
 ```
 m_MyControl.GetControl()->textBox1->Text = "hello";
 ```
 
-Artık, derleme ve uygulamayı çalıştırın. Uygulama kapandığında herhangi bir metin metin kutusundaki bir açılır ileti kutusunda görüntülenir dikkat edin.
+Artık uygulamayı derleyebilir ve çalıştırabilirsiniz. Uygulama kapandığında metin kutusundaki herhangi bir metnin açılır ileti kutusunda görüntüleneceğine dikkat edin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

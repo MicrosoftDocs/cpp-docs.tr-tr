@@ -108,12 +108,12 @@ helpviewer_keywords:
 - CComboBox [MFC], SetTopIndex
 - CComboBox [MFC], ShowDropDown
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
-ms.openlocfilehash: df935bb924c7d8908b1166852dc553a73fc71ff3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dc803fb4ce137b256f4197afaec7bc3327e1e85a
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369505"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754834"
 ---
 # <a name="ccombobox-class"></a>CComboBox Sınıfı
 
@@ -308,7 +308,7 @@ CComboBox();
 
 Açılan kutunun düzenkontrolünde geçerli seçimi siler (temizler).
 
-```
+```cpp
 void Clear();
 ```
 
@@ -357,7 +357,7 @@ Varsayılan olarak, bu üye işlev hiçbir şey yapmaz. LBS_SORT stiline sahip b
 
 Varsa geçerli seçimi, açılan kutunun denetiminde CF_TEXT biçiminde Pano üzerine kopyalar.
 
-```
+```cpp
 void Copy();
 ```
 
@@ -427,7 +427,7 @@ Açılan kutu denetimine aşağıdaki [pencere stillerini](../../mfc/reference/s
 
 Açılan kutu düzenle denetiminde geçerli seçimi siler (keser) ve silinen metni CF_TEXT biçiminde Pano üzerine kopyalar.
 
-```
+```cpp
 void Cut();
 ```
 
@@ -708,7 +708,7 @@ Açılan kutunun liste kutusunda şu anda seçili öğenin sıfır tabanlı dizi
 
 Açılan `GetDroppedControlRect` açılan kutunun görünür (bırakılan)liste kutusunun ekran koordinatlarını almak için üye işlevi arayın.
 
-```
+```cpp
 void GetDroppedControlRect(LPRECT lprect) const;
 ```
 
@@ -850,7 +850,7 @@ Maddeyle ilişkili 32 bit değeri veya bir hata oluşursa CB_ERR.
 
 Belirtilen açılan kutu öğesi ile ilişkili uygulama tarafından sağlanan 32 bit değeri işaretçi **(geçersiz)** <strong>\*</strong>olarak alır.
 
-```
+```cpp
 void* GetItemDataPtr(int nIndex) const;
 ```
 
@@ -1125,7 +1125,7 @@ Bkz. [CWnd::Yapının](../../mfc/reference/cwnd-class.md#onmeasureitem) `MEASURE
 
 Panodaki verileri geçerli imleç konumundaki açılan kutunun edit denetimine ekler.
 
-```
+```cpp
 void Paste();
 ```
 
@@ -1141,7 +1141,7 @@ Veriler yalnızca Pano CF_TEXT biçiminde veri içeriyorsa eklenir.
 
 Liste kutusundaki tüm öğeleri kaldırır ve açılan kutunun denetimini denetler.
 
-```
+```cpp
 void ResetContent();
 ```
 
@@ -1337,7 +1337,7 @@ Genişletilmiş kullanıcı arabirimi aşağıdaki yollarla tanımlanabilir:
 
 Açılan kutunun liste kutusu bölümünün yatay olarak kaydırılabildiği genişliği piksel olarak ayarlar.
 
-```
+```cpp
 void SetHorizontalExtent(UINT nExtent);
 ```
 
@@ -1536,7 +1536,7 @@ Sistem, *nIndex* tarafından belirtilen öğe liste kutusunun en üstünde gör�
 
 [CBS_DROPDOWN](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) veya [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stiline sahip açılan kutunun liste kutusunu gösterir veya gizler.
 
-```
+```cpp
 void ShowDropDown(BOOL bShowIt = TRUE);
 ```
 

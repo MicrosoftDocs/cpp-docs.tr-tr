@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCCaptionButton [MFC], OnDraw
 - CMFCCaptionButton [MFC], SetMiniFrameButton
 ms.assetid: c5774b38-c0dd-414a-9ede-3b2f78f233ec
-ms.openlocfilehash: fb47e4373bf53e66dd4af17c89fe2f761858fbfd
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1b0a999f1fd1e3df1b0a971220454397cead02a9
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367747"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752603"
 ---
 # <a name="cmfccaptionbutton-class"></a>CMFCCaptionButton Sınıfı
 
@@ -226,7 +226,7 @@ Resim yazısı mini boyuta ayarlanmışsa DOĞRU; aksi takdirde YANLIŞ.
 
 Düğme çizim konumu ve pencere gösteri durumu ayarlar.
 
-```
+```cpp
 void Move(
     const CPoint& ptTo,
     BOOL bHide = FALSE);
@@ -278,7 +278,7 @@ virtual void OnDraw(
 
 Başlık çubuğunun mini boyutunu ayarlar.
 
-```
+```cpp
 void SetMiniFramebutton(BOOL bSet = TRUE);
 ```
 

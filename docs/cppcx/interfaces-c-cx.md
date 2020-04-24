@@ -2,12 +2,12 @@
 title: Arabirimler (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce
-ms.openlocfilehash: b904f041e34bcf5fda78fed11aaad4998ba5208a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 716bf86eddf621244415033dae1b9c93ad1baba5
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366033"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82032362"
 ---
 # <a name="interfaces-ccx"></a>Arabirimler (C++/CX)
 
@@ -63,7 +63,7 @@ Bir ref sınıfı birden çok arabirim uygularve bu arabirimler, adları ve imza
 
 ## <a name="generic-interfaces"></a>Genel arabirimler
 
-C++/CX'te `generic` anahtar kelime, Windows Runtime parametreli türünü temsil etmek için kullanılır. Parametreli bir tür meta verilere yayılır ve tür parametrelerini destekleyen herhangi bir dilde yazılmış kod tarafından tüketilebilir. Windows Runtime bazı genel arabirimleri tanımlar (örneğin, [Windows:Foundation::Collections::IVector\<T>](/uwp/api/Windows.Foundation.Collections.IVector_T_)— ancak C++/CX'te ortak kullanıcı tanımlı genel arabirimlerin oluşturulmasını desteklemez. Ancak, özel genel arabirimler oluşturabilirsiniz.
+C++/CX'te `generic` anahtar kelime, Windows Runtime parametreli türünü temsil etmek için kullanılır. Parametreli bir tür meta verilere yayılır ve tür parametrelerini destekleyen herhangi bir dilde yazılmış kod tarafından tüketilebilir. Windows Runtime bazı genel arabirimleri tanımlar (örneğin, [Windows:Foundation::Collections::IVector\<T>](/uwp/api/windows.foundation.collections.ivector-1)— ancak C++/CX'te ortak kullanıcı tanımlı genel arabirimlerin oluşturulmasını desteklemez. Ancak, özel genel arabirimler oluşturabilirsiniz.
 
 Genel bir arabirim yazarken Windows Runtime türleri şu şekilde kullanılabilir:
 

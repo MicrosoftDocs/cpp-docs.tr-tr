@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMenuTearOffManager [MFC], SetInUse
 - CMenuTearOffManager [MFC], SetupTearOffMenus
 ms.assetid: ab7ca272-ce42-4678-95f7-6ad75038f5a0
-ms.openlocfilehash: f41937179dc055213f3af093e107bcb08c8a8fcc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6aef644cb7364184df91a6e8caee18cac65af4cc
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369971"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81751801"
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager Sınıfı
 
@@ -86,7 +86,7 @@ Aşağıdaki örnek, yöntemi çağırarak bir `CMenuTearOffManager` nesnenin na
 
 ## <a name="cmenutearoffmanagerbuild"></a><a name="build"></a>CmenuTearOffManager::Yapı
 
-```
+```cpp
 void Build(
     UINT uiTearOffBarID,
     CString& strText);
@@ -182,7 +182,7 @@ UINT Parse(CString& str);
 
 ## <a name="cmenutearoffmanagerreset"></a><a name="reset"></a>CMenuTearOffManager::Sıfırlama
 
-```
+```cpp
 void Reset(HMENU hmenu);
 ```
 
@@ -194,7 +194,7 @@ void Reset(HMENU hmenu);
 
 ## <a name="cmenutearoffmanagersetinuse"></a><a name="setinuse"></a>CmenuTearOffManager::Setinuse
 
-```
+```cpp
 void SetInUse(
     UINT uiCmdId,
     BOOL bUse = TRUE);
@@ -210,7 +210,7 @@ void SetInUse(
 
 ## <a name="cmenutearoffmanagersetuptearoffmenus"></a><a name="setuptearoffmenus"></a>CMenuTearOffManager::SetupTearOffMenüler
 
-```
+```cpp
 void SetupTearOffMenus(HMENU hMenu);
 ```
 

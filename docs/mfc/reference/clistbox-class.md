@@ -103,12 +103,12 @@ helpviewer_keywords:
 - CListBox [MFC], SetTopIndex
 - CListBox [MFC], VKeyToItem
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
-ms.openlocfilehash: 5bc66ab2775ebb9023c65c9decae205604c978c6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 171038ebaaed815aa687c200fe3210bde8000be3
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372226"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753586"
 ---
 # <a name="clistbox-class"></a>CListBox Sınıfı
 
@@ -717,7 +717,7 @@ Maddeyle ilişkili değer veya bir hata oluşursa LB_ERR.
 
 Belirtilen liste kutusu öğesiile ilişkili uygulama tarafından sağlanan 32 bit değeri işaretçi **(geçersiz)** <strong>\*</strong>olarak alır.
 
-```
+```cpp
 void* GetItemDataPtr(int nIndex) const;
 ```
 
@@ -1087,7 +1087,7 @@ Bkz. [CWnd::Yapının](../../mfc/reference/cwnd-class.md#onmeasureitem) `MEASURE
 
 Liste kutusundaki tüm öğeleri kaldırır.
 
-```
+```cpp
 void ResetContent();
 ```
 
@@ -1169,7 +1169,7 @@ Bu üye işlevini yalnızca birden çok seçim listesi kutularıyla kullanın. B
 
 Uzun bir seçimbaşlatmak için çapayı çok seçimli liste kutusunda ayarlar.
 
-```
+```cpp
 void SetAnchorIndex(int nIndex);
 ```
 
@@ -1220,7 +1220,7 @@ LB_ERR bir hata oluşursa.
 
 Çok sütunlu bir liste kutusundaki tüm sütunların piksellerinde genişliği ayarlar [(LBS_MULTICOLUMN](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stiliyle oluşturulur).
 
-```
+```cpp
 void SetColumnWidth(int cxWidth);
 ```
 
@@ -1266,7 +1266,7 @@ Bir seçimi birden çok seçim listesi kutusunda ayarlamak veya kaldırmak için
 
 Bir liste kutusunun yatay olarak kaydırılabildiği genişliği piksel olarak ayarlar.
 
-```
+```cpp
 void SetHorizontalExtent(int cxExtent);
 ```
 
@@ -1434,7 +1434,7 @@ Tek seçim li liste kutusundan bir öğe seçmek için [CListBox:SetCurSel'i](#s
 
 Sekme durağı konumlarını liste kutusunda ayarlar.
 
-```
+```cpp
 void SetTabStops();
 BOOL SetTabStops(const int& cxEachStop);
 

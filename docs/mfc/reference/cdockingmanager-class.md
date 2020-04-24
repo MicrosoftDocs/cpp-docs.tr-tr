@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CDockingManager [MFC], m_nTimeOutBeforeDockingBarDock
 - CDockingManager [MFC], m_nTimeOutBeforeToolBarDock
 ms.assetid: 98e69c43-55d8-4f43-b861-4fda80ec1e32
-ms.openlocfilehash: 339e5d5e464aacb51d1c4ab8fe3c2957a3afbd4e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 76fd12b0817c99d0d08327f9d9156eadf3559dc5
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375579"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753330"
 ---
 # <a name="cdockingmanager-class"></a>CDockingManager Sınıfı
 
@@ -332,7 +332,7 @@ Dock bölmesi başarıyla oluşturulduysa DOĞRU; YANLIŞ aksi takdirde.
 
 Gizli MDI sekmeli çubuk bölmeleri listesine bir çubuk bölmesine tutamaç ekler.
 
-```
+```cpp
 void AddHiddenMDITabbedBar(CDockablePane* pBar);
 ```
 
@@ -455,7 +455,7 @@ Nesnenin hizalaması `CRect` ayarlanmışsa DOĞRU; YANLIŞ aksi takdirde.
 
 Bir yerleştirme bölmesini otomatik hide modunda yeniden boyutlandırır, böylece çerçevenin istemci alanının tam genişliğini veya yüksekliğini dock siteleri ile çevrili alır.
 
-```
+```cpp
 void AlignAutoHidePane(
     CPaneDivider* pDefaultSlider,
     BOOL bIsVisible = TRUE);
@@ -495,7 +495,7 @@ Otomatik gizleme araç çubuğu oluşturulmamadıysa NULL; aksi takdirde yeni ar
 
 Belirtilen hizalamayı en üste getiren sabitlenmiş çubukları getirir.
 
-```
+```cpp
 void BringBarsToTop(
     DWORD dwAlignment = 0,
     BOOL bExcludeDockedBars = TRUE);
@@ -513,7 +513,7 @@ void BringBarsToTop(
 
 Bir menüye yerleştirme bölmelerinin ve araç çubuklarının adlarını ekler.
 
-```
+```cpp
 void BuildPanesMenu(
     CMenu& menu,
     BOOL bToolbarsOnly);
@@ -531,7 +531,7 @@ void BuildPanesMenu(
 
 Kenetlenmiş bir pencerenin beklenen dikdörtgenini hesaplar.
 
-```
+```cpp
 void CalcExpectedDockedRect(
     CWnd* pWnd,
     CPoint ptMouse,
@@ -631,7 +631,7 @@ Yerleştirme durumu aşağıdaki değerlerden biri olabilir:
 
 Kayıt defterinden yerleştirme düzeninin yüklenmesine olanak tanır veya devre dışı kılır.
 
-```
+```cpp
 void DisableRestoreDockState(BOOL bDisable = TRUE);
 ```
 
@@ -648,7 +648,7 @@ Uygulama durumu yüklenirken yerleştirme bölmelerinin ve araç çubuklarının
 
 Bölmeyi başka bir bölmeye veya çerçeve penceresine sabitler.
 
-```
+```cpp
 void DockPane(
     CBasePane* pBar,
     UINT nDockBarID = 0,
@@ -753,7 +753,7 @@ Varsayılan olarak, bu menü görüntülenmez.
 
 Kullanıcı sağ fare düğmesini tıklattığında ve kitaplık WM_CONTEXTMENU iletisini işlediğinde, uygulama araç çubukları ve yerleştirme bölmelerinin listesini içeren özel bir bağlam menüsünü görüntülemek için kitaplüye bildirir.
 
-```
+```cpp
 void EnablePaneContextMenu(
     BOOL bEnable,
     UINT uiCustomizeCmd,
@@ -973,7 +973,7 @@ CRect GetOuterEdgeBounds() const;
 
 Yerleştirme yöneticisine ait bölmelerin listesini verir. Bu, tüm kayan bölmeleri içerir.
 
-```
+```cpp
 void GetPaneList(
     CObList& lstBars,
     BOOL bIncludeAutohide = FALSE,
@@ -1043,7 +1043,7 @@ Geçerli yerleştirme yöneticisi için akıllı yerleştirme parametrelerini i�
 
 Otomatik hide modunda olan bir bölmeyi gizler.
 
-```
+```cpp
 void HideAutoHidePanes(
     CDockablePane* pBarToExclude = NULL,
     BOOL bImmediately = FALSE);
@@ -1221,7 +1221,7 @@ Yerleştirme yöneticisi durumu başarıyla yüklenmişse DOĞRU; aksi takdirde 
 
 Verilen pencereyi kilitler.
 
-```
+```cpp
 void LockUpdate(BOOL bLock);
 ```
 
@@ -1311,7 +1311,7 @@ virtual void OnActivateFrame(BOOL bActivate);
 
 Etkin bir açılır menü bir WM_DESTROY iletisi işlediğinde çerçeve tarafından çağrılır.
 
-```
+```cpp
 void OnClosePopupMenu();
 ```
 
@@ -1340,7 +1340,7 @@ Yöntem başarılı olursa DOĞRU; aksi takdirde YANLIŞ.
 
 Bölmelerin bir listesini içeren bir menü oluşturduğunda çerçeve tarafından çağrılır.
 
-```
+```cpp
 void OnPaneContextMenu(CPoint point);
 ```
 
@@ -1448,7 +1448,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 
 Boş bölme kapsayıcılarını serbest bırakır.
 
-```
+```cpp
 void ReleaseEmptyPaneContainers();
 ```
 
@@ -1456,7 +1456,7 @@ void ReleaseEmptyPaneContainers();
 
 Belirtilen gizli çubuk bölmesini kaldırır.
 
-```
+```cpp
 void RemoveHiddenMDITabbedBar(CDockablePane* pBar);
 ```
 
@@ -1486,7 +1486,7 @@ Belirtilen çerçeve kaldırılırsa DOĞRU; YANLIŞ aksi takdirde.
 
 Bölmenin kaydını kaldırır ve yerleştirme yöneticisindeki listeden kaldırır.
 
-```
+```cpp
 void RemovePaneFromDockManager(
     CBasePane* pWnd,
     BOOL bDestroy,
@@ -1538,7 +1538,7 @@ Bölme başarıyla değiştirilirse DOĞRU; YANLIŞ aksi takdirde.
 
 Mini çerçeveler listesindeki çerçeveleri tatil eder.
 
-```
+```cpp
 void ResortMiniFramesForZOrder();
 ```
 
@@ -1598,7 +1598,7 @@ DOĞRU her zaman.
 
 Yerleştirme yöneticisini bir arşive yazar.
 
-```
+```cpp
 void Serialize(CArchive& ar);
 ```
 
@@ -1615,7 +1615,7 @@ Yerleştirme yöneticisinin bir arşive yazılması, yerleştirme denetim çubuk
 
 Denetim çubuklarının ve belirtilen bölmenin boyutunu, genişliğini ve yüksekliğini ayarlar.
 
-```
+```cpp
 void SetAutohideZOrder(CDockablePane* pAHDockingBar);
 ```
 
@@ -1666,7 +1666,7 @@ virtual void SetDockState();
 
 Yazdırma önizlemesinde görüntülenen çubukların yazdırma önizleme modunu ayarlar.
 
-```
+```cpp
 void SetPrintPreviewMode(
     BOOL bPreview,
     CPrintPreviewState* pState);
@@ -1703,7 +1703,7 @@ Akıllı yerleştirme işaretleri için varsayılan görünümü kullanmak için
 
 Mini çerçevelerin pencerelerini gösterir veya gizler.
 
-```
+```cpp
 void ShowDelayShowMiniFrames(BOOL bshow);
 ```
 
@@ -1733,7 +1733,7 @@ Her zaman FALSE.
 
 Akıllı yerleştirme yöneticisinin hizasına göre belirtilen pencerenin akıllı yerleştirmesini başlatır.
 
-```
+```cpp
 void StartSDocking(CWnd* pDockingWnd);
 ```
 
@@ -1746,7 +1746,7 @@ void StartSDocking(CWnd* pDockingWnd);
 
 Akıllı kenetlenmeyi durdurur.
 
-```
+```cpp
 void StopSDocking();
 ```
 

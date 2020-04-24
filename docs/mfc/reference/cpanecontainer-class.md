@@ -120,12 +120,12 @@ helpviewer_keywords:
 - CPaneContainer [MFC], StoreRecentDockSiteInfo
 - CPaneContainer [MFC], StretchPaneContainer
 ms.assetid: beb79e08-f611-4d66-ba04-053baa79bf86
-ms.openlocfilehash: 316a144cf043c9732b5f3ab943aa120100d9ee32
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 65a37230b4889b32c42d48525f10a3164da33b63
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364139"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753654"
 ---
 # <a name="cpanecontainer-class"></a>CPaneContainer Sınıfı
 
@@ -245,7 +245,7 @@ CDockablePane* AddPane(CDockablePane* pBar);
 
 ## <a name="cpanecontaineraddref"></a><a name="addref"></a>CPaneContainer::AddRef
 
-```
+```cpp
 void AddRef();
 ```
 
@@ -308,7 +308,7 @@ virtual CSize CalcAvailableSpace(
 
 ## <a name="cpanecontainercalculaterecentsize"></a><a name="calculaterecentsize"></a>CPaneContainer::Hesapson Size
 
-```
+```cpp
 void CalculateRecentSize();
 ```
 
@@ -316,7 +316,7 @@ void CalculateRecentSize();
 
 ## <a name="cpanecontainercheckpanedividervisibility"></a><a name="checkpanedividervisibility"></a>CPaneContainer::CheckPaneDividerGörünürlik
 
-```
+```cpp
 void CheckPaneDividerVisibility();
 ```
 
@@ -692,7 +692,7 @@ virtual void Move(CPoint ptNewLeftTop);
 
 ## <a name="cpanecontainerondeletehidepane"></a><a name="ondeletehidepane"></a>CPaneContainer::OnDeleteHidePane
 
-```
+```cpp
 void OnDeleteHidePane(
     CDockablePane* pBar,
     BOOL bHide);
@@ -749,7 +749,7 @@ DWORD Release();
 
 ## <a name="cpanecontainerreleaseemptypanecontainer"></a><a name="releaseemptypanecontainer"></a>CPaneContainer::ReleaseEmptyPaneContainer
 
-```
+```cpp
 void ReleaseEmptyPaneContainer();
 ```
 
@@ -757,7 +757,7 @@ void ReleaseEmptyPaneContainer();
 
 ## <a name="cpanecontainerremovenonvalidpanes"></a><a name="removenonvalidpanes"></a>CPaneContainer::RemoveNonValidPanes
 
-```
+```cpp
 void RemoveNonValidPanes();
 ```
 
@@ -834,7 +834,7 @@ virtual void ResizePartOfPaneContainer(
 
 ## <a name="cpanecontainerserialize"></a><a name="serialize"></a>CPaneContainer::Serialize
 
-```
+```cpp
 void Serialize(CArchive& ar);
 ```
 
@@ -846,7 +846,7 @@ void Serialize(CArchive& ar);
 
 ## <a name="cpanecontainersetpane"></a><a name="setpane"></a>CPaneContainer::SetPane
 
-```
+```cpp
 void SetPane(
     CDockablePane* pBar,
     BOOL bLeft);
@@ -861,7 +861,7 @@ void SetPane(
 
 ## <a name="cpanecontainersetpanecontainer"></a><a name="setpanecontainer"></a>CPaneContainer::SetPaneContainer
 
-```
+```cpp
 void SetPaneContainer(
     CPaneContainer* pContainer,
     BOOL bLeft);
@@ -876,7 +876,7 @@ void SetPaneContainer(
 
 ## <a name="cpanecontainersetpanedivider"></a><a name="setpanedivider"></a>CPaneContainer::SetPaneBölücü
 
-```
+```cpp
 void SetPaneDivider(CPaneDivider* pSlider);
 ```
 
@@ -888,7 +888,7 @@ void SetPaneDivider(CPaneDivider* pSlider);
 
 ## <a name="cpanecontainersetparentpanecontainer"></a><a name="setparentpanecontainer"></a>CPaneContainer::SetParentPaneContainer
 
-```
+```cpp
 void SetParentPaneContainer(CPaneContainer* p);
 ```
 
@@ -900,7 +900,7 @@ void SetParentPaneContainer(CPaneContainer* p);
 
 ## <a name="cpanecontainersetrecentpercent"></a><a name="setrecentpercent"></a>CPaneContainer::SetRecentPercent
 
-```
+```cpp
 void SetRecentPercent(int nRecentPercent);
 ```
 

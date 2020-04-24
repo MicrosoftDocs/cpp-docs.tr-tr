@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CSpinButtonCtrl [MFC], SetPos
 - CSpinButtonCtrl [MFC], SetRange
 ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734
-ms.openlocfilehash: 4230d43bad8bcc15bcb26aaf0357e70216909ba1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cedfe16a6870bc779121e8e864866cfcb711b148
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318122"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753115"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl Sınıfı
 
@@ -120,7 +120,7 @@ virtual BOOL Create(
 Döndürme düğmesi denetiminin stilini belirtir. Döndürme düğmesi kontrol stillerinin herhangi bir birleşimini kontrole uygulayın. Bu stiller, Windows SDK'daki [Yukarı-Aşağı Denetim Stilleri'nde](/windows/win32/Controls/up-down-control-styles) açıklanmıştır.
 
 *Rect*<br/>
-Spin düğmesi denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir
+Spin düğmesi denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir
 
 *pParentWnd*<br/>
 Döndürme düğmesi denetiminin ana penceresine işaretçi, genellikle bir `CDialog`. NULL olmamalıdır.
@@ -160,7 +160,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş windows
 Döndürme düğmesi denetiminin stilini belirtir. Döndürme düğmesi kontrol stillerinin herhangi bir birleşimini kontrole uygulayın. Bu stiller, Windows SDK'daki [Yukarı-Aşağı Denetim Stilleri'nde](/windows/win32/Controls/up-down-control-styles) açıklanmıştır.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -375,7 +375,7 @@ Kontrol için yeni bir pozisyon. Bu değer, denetim için üst ve alt sınırlar
 
 Spin düğmesi kontrolü için üst ve alt sınırları (aralık) ayarlar.
 
-```
+```cpp
 void SetRange(
     short nLower,
     short nUpper);

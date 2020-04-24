@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CEditView [MFC], OnTextNotFound
 - CEditView [MFC], dwStyleDefault
 ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
-ms.openlocfilehash: 8fbb2dc569e675ecff4ce04758a4eced40505bf6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 33b5975eea534eeaf308f73b5ca7fca2cd76787f
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373965"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753191"
 ---
 # <a name="ceditview-class"></a>CEditView Sınıfı
 
@@ -259,7 +259,7 @@ Geçerli yazıcı yazı tipini belirlemek için bu işlevi kullanın. İstenilen
 
 Seçili metni, seçimin `CString` sonuna kadar veya seçimdeki ilk satır başı karakterinden önceki karaktere kadar bir nesneye kopyalamak için arayın. `GetSelectedText`
 
-```
+```cpp
 void GetSelectedText(CString& strResult) const;
 ```
 
@@ -423,7 +423,7 @@ dikdörtgen `rect.bottom` nesnesinin *rectLayout* öğesi, dikdörtgenin boyutla
 
 Nesnedeki `SerializeRaw` `CArchive` metni `CEditView` bir metin dosyasına okuması veya yazması için arayın.
 
-```
+```cpp
 void SerializeRaw(CArchive& ar);
 ```
 
@@ -440,7 +440,7 @@ Serileştirilmiş `CArchive` metni depolayan nesneye başvuru.
 
 Yazıcı `SetPrinterFont` yazı tipini *pFont*tarafından belirtilen yazı tipine ayarlamak için arayın.
 
-```
+```cpp
 void SetPrinterFont(CFont* pFont);
 ```
 
@@ -457,7 +457,7 @@ Görünümünüzün her zaman yazdırma için belirli bir yazı `SetPrinterFont`
 
 Görüntüleme ve yazdırma için kullanılan sekme duraklarını ayarlamak için bu işlevi arayın.
 
-```
+```cpp
 void SetTabStops(int nTabStops);
 ```
 
@@ -482,7 +482,7 @@ Bu kod parçası, denetimin kullandığı yazı tipini dikkatle ölçerek sekme 
 
 Arabelleği açmak için bu üye işlevi arayın.
 
-```
+```cpp
 void UnlockBuffer() const;
 ```
 

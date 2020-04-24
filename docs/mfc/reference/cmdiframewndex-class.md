@@ -156,12 +156,12 @@ helpviewer_keywords:
 - CMDIFrameWndEx [MFC], m_bCanCovertControlBarToMDIChild
 - CMDIFrameWndEx [MFC], m_bDisableSetRedraw
 ms.assetid: dbcafcb3-9a7a-4f11-9dfe-ba57565c81d0
-ms.openlocfilehash: e5b571ee677dab447075abb632cc013c9cd58d44
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 22ea89231487f214b797938e2202c9eed01fcb6e
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370040"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754531"
 ---
 # <a name="cmdiframewndex-class"></a>CMDIFrameWndEx Sınıfı
 
@@ -296,7 +296,7 @@ Aşağıdaki örnekte bir sınıf `CMDIFrameWndEx`türetilmiştir. Bu kod snippe
 
 Etkin maddenin düzenini yeniden hesaplar.
 
-```
+```cpp
 void ActiveItemRecalcLayout();
 ```
 
@@ -481,7 +481,7 @@ Yeni pencereiçin bir işaretçi.
 
 Belirtilen bölmeyi çerçeve penceresine sabitler.
 
-```
+```cpp
 void DockPane(
     CBasePane* pBar,
     UINT nDockBarID=0,
@@ -603,7 +603,7 @@ Aşağıdaki örnek, yöntemin `EnableDocking` [VisualStudioDemo Örnek: MFC Vis
 
 Ana menüyü tam ekran modunda gösterir veya gizler.
 
-```
+```cpp
 void EnableFullScreenMainMenu(BOOL bEnableMenu);
 ```
 
@@ -618,7 +618,7 @@ void EnableFullScreenMainMenu(BOOL bEnableMenu);
 
 Çerçeve penceresi için tam ekran modunu etkinleştirir.
 
-```
+```cpp
 void EnableFullScreenMode(UINT uiFullScreenCmd);
 ```
 
@@ -635,7 +635,7 @@ Tam ekran modunda, tüm yerleştirme kontrol çubukları, araç çubukları ve m
 
 Yerleştirme durumunun yüklenmesinin etkin veya devre dışı olduğunu.
 
-```
+```cpp
 void EnableLoadDockState(BOOL bEnable = TRUE);
 ```
 
@@ -650,7 +650,7 @@ void EnableLoadDockState(BOOL bEnable = TRUE);
 
 Çerçeve penceresi için MDI sekmeli gruplar özelliğini etkinleştirer veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableMDITabbedGroups(
     BOOL bEnable,
     const CMDITabInfo& params);
@@ -694,7 +694,7 @@ Aşağıdaki örnek, `EnableMDITabbedGroups` [VisualStudioDemo Örnek: MFC Visua
 
 MDI çerçeve penceresi için MDI Sekmeleri özelliğini etkinleştirir veya devre dışı kılabilir. Etkinleştirildiğinde, çerçeve penceresi her MDI alt penceresi için bir sekme görüntüler.
 
-```
+```cpp
 void EnableMDITabs(
     BOOL bEnable=TRUE,
     BOOL bIcons=TRUE,
@@ -746,7 +746,7 @@ Aşağıdaki örnek, `EnableMDITabs` [MDITabsDemo Örnek: MFC Sekmeli MDI Uygula
 
 Kullanıcı geçerli sekmeyi kapattığında son etkin sekmenin açılıp açılmayacağını belirtir.
 
-```
+```cpp
 void EnableMDITabsLastActiveActivation(BOOL bLastActiveTab=TRUE);
 ```
 
@@ -771,7 +771,7 @@ Sekme etkinleştirme ikinci yolunu etkinleştirmek için kullanın. `EnableMDITa
 
 Uygulama bölmelerinin listesini görüntüleyen açılır bölme menüsünün otomatik oluşturulmasını ve yönetimini etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void EnablePaneMenu(
     BOOL bEnable,
     UINT uiCustomizeCmd,
@@ -815,7 +815,7 @@ Aşağıdaki örnek, `EnablePaneMenu` [VisualStudioDemo Örnek: MFC Visual Studi
 
 Komut kimliği [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) iletişim kutusu çağıran bir menü öğesi ekler.
 
-```
+```cpp
 void EnableWindowsDialog(
     UINT uiMenuId,
     LPCTSTR lpszMenuText,
@@ -1232,7 +1232,7 @@ Aşağıdaki örnek, `LoadMDIState` [VisualStudioDemo Örnek: MFC Visual Studio 
 
 Etkin sekmeyi şu anda etkin sekmeli pencereden sonraki veya önceki sekmeli gruba taşır.
 
-```
+```cpp
 void MDITabMoveToNextGroup(BOOL bNext=TRUE);
 ```
 
@@ -1245,7 +1245,7 @@ void MDITabMoveToNextGroup(BOOL bNext=TRUE);
 
 Tek bir penceresi olan yeni bir sekmeli grup oluşturur.
 
-```
+```cpp
 void MDITabNewGroup(BOOL bVert=TRUE);
 ```
 
@@ -1789,7 +1789,7 @@ Bu yöntem [CFrameWnd geçersiz kılar::RecalcLayout](../../mfc/reference/cframe
 
 Bölmenin kaydını kaldırır ve yerleştirme yöneticisinden kaldırır.
 
-```
+```cpp
 void RemovePaneFromDockManager(
     CBasePane* pControlBar,
     BOOL bDestroy,
@@ -1864,7 +1864,7 @@ Aşağıdaki örnek, `SaveMDIState` [VisualStudioDemo Örnek: MFC Visual Studio 
 
 Yazdırma önizleme çerçevesi penceresini ayarlar.
 
-```
+```cpp
 void SetPrintPreviewFrame(CFrameWnd* pWnd);
 ```
 
@@ -1879,7 +1879,7 @@ void SetPrintPreviewFrame(CFrameWnd* pWnd);
 
 Sahte öğeleri kullanıcı tanımlı öğelerle değiştirerek araç çubuğu nesnesi değiştirir.
 
-```
+```cpp
 void SetupToolbarMenu(
     CMenu& menu,
     const UINT uiViewUserToolbarCmdFirst,
@@ -1901,7 +1901,7 @@ void SetupToolbarMenu(
 
 Ana çerçeveyi normal moddan tam ekran moduna geçer.
 
-```
+```cpp
 void ShowFullScreen();
 ```
 
@@ -1911,7 +1911,7 @@ void ShowFullScreen();
 
 Belirtilen bölmeyi gösterir veya gizler.
 
-```
+```cpp
 void ShowPane(
     CBasePane* pBar,
     BOOL bShow,
@@ -1947,7 +1947,7 @@ Aşağıdaki örnek, `ShowPane` [VisualStudioDemo Örnek: MFC Visual Studio Appl
 
 [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) kutusu oluşturur ve açar.
 
-```
+```cpp
 void ShowWindowsDialog();
 ```
 
@@ -1988,7 +1988,7 @@ Aşağıdaki örnek, `TabbedDocumentToControlBar` [VisualStudioDemo Örnek: MFC 
 
 Pencere çerçevesi alt yazısını güncelleştirmek için çerçeve tarafından çağrılır.
 
-```
+```cpp
 void UpdateCaption();
 ```
 
@@ -1998,7 +1998,7 @@ void UpdateCaption();
 
 Her MDI sekmeli bölme için simgeyi ayarlar.
 
-```
+```cpp
 void UpdateMDITabbedBarsIcons();
 ```
 

@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - VectorView Class
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-ms.openlocfilehash: cecbd61ad8862d5046cab9e0b418d5c4d16829d4
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7f12c7b926cd8d3d8fc892cff6f2245e7c216219
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363800"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82032232"
 ---
 # <a name="platformcollectionsvectorview-class"></a>Platform::Collections::VectorView Sınıfı
 
@@ -40,7 +40,7 @@ Türü değerleri ile eşitliği test etmek için ikili `T`bir yüklem belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf `VectorView` [Windows:Foundation::Collections::IVectorView\<T>](/uwp/api/Windows.Foundation.Collections.IVectorView_T_) arabirimi ve Standart Şablon Kitaplığı yineleyicileri için destek uygular.
+Sınıf `VectorView` [Windows:Foundation::Collections::IVectorView\<T>](/uwp/api/windows.foundation.collections.ivectorview-1) arabirimi ve Standart Şablon Kitaplığı yineleyicileri için destek uygular.
 
 ### <a name="members"></a>Üyeler
 
@@ -154,7 +154,7 @@ virtual bool IndexOf(
 
 ### <a name="parameters"></a>Parametreler
 
-*Değer*<br/>
+*value*<br/>
 Bulunması gereken öğe.
 
 *Dizin*<br/>
@@ -253,7 +253,7 @@ Geçerli VectorView'i başlatmaya kullanılan nesneler koleksiyonundaki öğe sa
 *Boyutu*<br/>
 VectorView'daki öğelerin sayısı.
 
-*Değer*<br/>
+*value*<br/>
 Geçerli VectorView'deki her öğeyi başlatmak için kullanılan bir değer.
 
 *v*<br/>

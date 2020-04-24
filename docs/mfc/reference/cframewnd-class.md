@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CFrameWnd [MFC], m_bAutoMenuEnable
 - CFrameWnd [MFC], rectDefault
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
-ms.openlocfilehash: 0fd104e377300233ef1526f6c453346555dd27d3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3bb93420b39be5d6fb9a6691cec8300fdccb0e73
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373782"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754983"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd Sınıfı
 
@@ -384,7 +384,7 @@ Bir çerçeve içinde türetilmiş olmayan `CView`"görünümler" oluşturmak i�
 
 Denetim çubuğunun çerçeve penceresine sabitlenebedilmesine neden olur.
 
-```
+```cpp
 void DockControlBar(
     CControlBar* pBar,
     UINT nDockBarID = 0,
@@ -420,7 +420,7 @@ Denetim çubuğu, hem [CControlBar::EnableDocking](../../mfc/reference/ccontrolb
 
 Çerçeve penceresinde takılabilir denetim çubuklarını etkinleştirmek için bu işlevi çağırın.
 
-```
+```cpp
 void EnableDocking(DWORD dwDockStyle);
 ```
 
@@ -463,7 +463,7 @@ virtual void EndModalState();
 
 Bir denetim çubuğunun çerçeve penceresine sabitlenmemesi için bu işlevi çağırın.
 
-```
+```cpp
 void FloatControlBar(
     CControlBar* pBar,
     CPoint point,
@@ -570,7 +570,7 @@ Kimlikle ilişkili denetim çubuğuna işaretçi.
 
 Çerçeve penceresinin denetim çubukları hakkındaki durum bilgilerini bir `CDockState` nesnede depolamak için bu üye işlevi arayın.
 
-```
+```cpp
 void GetDockState(CDockState& state) const;
 ```
 
@@ -675,7 +675,7 @@ Pencere nesnesinin geçerli başlığını içeren bir [CString](../../atl-mfc-s
 
 Yeni `IntitialUpdateFrame` bir çerçeve oluşturduktan sonra `Create`arayın.
 
-```
+```cpp
 void InitialUpdateFrame(
     CDocument* pDoc,
     BOOL bMakeVisible);
@@ -748,7 +748,7 @@ Kaynaklardan yüklenen hızlandırıcı tabloları, uygulama sona erdiğinde oto
 
 Çerçeve penceresine ait her denetim çubuğunun ayarlarını geri yüklemek için bu işlevi arayın.
 
-```
+```cpp
 void LoadBarState(LPCTSTR lpszProfileName);
 ```
 
@@ -1014,7 +1014,7 @@ static AFX_DATA const CRect rectDefault;
 
 Çerçeve penceresine ait her denetim çubuğu yla ilgili bilgileri depolamak için bu işlevi arayın.
 
-```
+```cpp
 void SaveBarState(LPCTSTR lpszProfileName) const;
 ```
 
@@ -1031,7 +1031,7 @@ Bu bilgiler [LoadBarState](#loadbarstate)kullanarak başlatma dosyasından okuna
 
 Belirtilen görünümü Zengin Önizleme için etkin görünüm olarak belirtir.
 
-```
+```cpp
 void SetActivePreviewView(CView* pViewNew);
 ```
 
@@ -1046,7 +1046,7 @@ Etkinleştirilecek bir görünüm için bir işaretçi.
 
 Etkin görünümü ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetActiveView(
     CView* pViewNew,
     BOOL bNotify = TRUE);
@@ -1068,7 +1068,7 @@ Kullanıcı odağı çerçeve penceresi içindeki bir görünüme değiştirdiğ
 
 `CDockState` Bir nesnede depolanan durum bilgilerini çerçeve penceresinin denetim çubuklarına uygulamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetDockState(const CDockState& state);
 ```
 
@@ -1127,7 +1127,7 @@ Bu yöntem, Windows Vista ve daha sonra için yazılmış uygulamalarda menüler
 
 0 kimliği olan durum çubuğu bölmesine bir dize yerleştirmek için bu işlevi arayın.
 
-```
+```cpp
 void SetMessageText(LPCTSTR lpszText);
 void SetMessageText(UINT nID);
 ```
@@ -1148,7 +1148,7 @@ Bu genellikle durum çubuğunun en sol ve en uzun bölmesidir.
 
 Görev çubuğunda görüntülenen Windows 7 ilerleme çubuğunun geçerli konumunu ayarlar.
 
-```
+```cpp
 void SetProgressBarPosition(int nProgressPos);
 ```
 
@@ -1163,7 +1163,7 @@ Ayarlanacak konumu belirtir. Tarafından belirlenen aralıkta `SetProgressBarRan
 
 Görev çubuğunda görüntülenen Windows 7 ilerleme çubuğunun aralığını ayarlar.
 
-```
+```cpp
 void SetProgressBarRange(
     int nRangeMin,
     int nRangeMax);
@@ -1183,7 +1183,7 @@ Maksimal değer.
 
 Görev çubuğu düğmesinde görüntülenen ilerleme göstergesinin türünü ve durumunu ayarlar.
 
-```
+```cpp
 void SetProgressBarState(TBPFLAG tbpFlags);
 ```
 
@@ -1229,7 +1229,7 @@ Doğru eğer başarılı; İşletim sistemi sürümü Windows 7'den küçükse v
 
 Pencere nesnesinin başlığını ayarlar.
 
-```
+```cpp
 void SetTitle(LPCTSTR lpszTitle);
 ```
 
@@ -1242,7 +1242,7 @@ Pencere nesnesinin başlığını içeren bir karakter dizesine işaretçi.
 
 Denetim çubuğunu göstermek veya gizlemek için bu üye işlevini arayın.
 
-```
+```cpp
 void ShowControlBar(
     CControlBar* pBar,
     BOOL bShow,
@@ -1264,7 +1264,7 @@ TRUE ise, denetim çubuğunu göstermeyi geciktirin. FALSE ise, denetim çubuğu
 
 Nesnenin `CFrameWnd` torunları olan tüm pencereleri göstermek için bu üye işlevi arayın.
 
-```
+```cpp
 void ShowOwnedWindows(BOOL bShow);
 ```
 

@@ -62,12 +62,12 @@ helpviewer_keywords:
 - CDaoWorkspace [MFC], SetLoginTimeout
 - CDaoWorkspace [MFC], m_pDAOWorkspace
 ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
-ms.openlocfilehash: 52aaa4970ef483988194691eb6b870cbfe51f494
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c492c806d64b1cfe0e4f73b3bb880ec7bd0a7e80
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377111"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754667"
 ---
 # <a name="cdaoworkspace-class"></a>CDaoWorkspace Sınıf
 
@@ -213,7 +213,7 @@ Eklenen bir çalışma alanı, [siz Onun Yakın](#close) üye işlevini arayana 
 
 Bir işlem başlatmak için bu üye işlevi arayın.
 
-```
+```cpp
 void BeginTrans();
 ```
 
@@ -272,7 +272,7 @@ Açık bir çalışma alanı nesnesini kapatmak, temel DAO nesnesini serbest bı
 
 Bir işlem gerçekleştirmek için bu üye işlevini çağırın — çalışma alanındaki bir veya daha fazla veritabanına bir dizi düzenlemeye ve güncelleştirmeye kaydedin.
 
-```
+```cpp
 void CommitTrans();
 ```
 
@@ -437,7 +437,7 @@ short GetDatabaseCount();
 
 Çalışma alanında açık bir veritabanı hakkında çeşitli bilgiler elde etmek için bu üye işlevi arayın.
 
-```
+```cpp
 void GetDatabaseInfo(
     int nIndex,
     CDaoDatabaseInfo& dbinfo,
@@ -607,7 +607,7 @@ Bu sayım, koleksiyona eklenmiş açık çalışma alanlarını içermez. `GetWo
 
 Oturumda açık bir çalışma alanı hakkında çeşitli bilgiler elde etmek için bu üye işlevi arayın.
 
-```
+```cpp
 void GetWorkspaceInfo(
     int nIndex,
     CDaoWorkspaceInfo& wkspcinfo,
@@ -754,7 +754,7 @@ Veritabanlarını onarma hakkında daha fazla bilgi için DAO Help'deki "RepairD
 
 Geçerli hareketi sona erdirmek ve çalışma alanındaki tüm veritabanlarını işlem başlamadan önce durumlarına geri yüklemek için bu üye işlevi arayın.
 
-```
+```cpp
 void Rollback();
 ```
 
@@ -852,7 +852,7 @@ Veritabanı altyapısını kullanıcı tarafından sağlanan kayıt defteri ayar
 
 Çalışma alanı için DAO IsolateODBCTrans özelliğinin değerini ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetIsolateODBCTrans(BOOL bIsolateODBCTrans);
 ```
 

@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: 14f92e51ecf776aad5312335dade7dfcd154c3eb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9956537dbbbc34c69f6f6a6da8174ab594418386
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352045"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752667"
 ---
 # <a name="chtmlview-class"></a>CHtmlView Sınıfı
 
@@ -390,7 +390,7 @@ Pencere adını temsil eden null-sonlandırılan karakter dizesini gösterir.
 Pencere stili özniteliklerini belirtir. Varsayılan olarak, WS_VISIBLE ve WS_CHILD Windows stilleri ayarlanır.
 
 *Rect*<br/>
-Pencerenin boyutunu ve konumunu belirten bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru. *rectDefault* değeri, Windows'un yeni pencerenin boyutunu ve konumunu belirtmesine olanak tanır.
+Pencerenin boyutunu ve konumunu belirten bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru. *rectDefault* değeri, Windows'un yeni pencerenin boyutunu ve konumunu belirtmesine olanak tanır.
 
 *pParentWnd*<br/>
 Denetimin üst penceresine bir işaretçi.
@@ -469,7 +469,7 @@ Standart bir HRESULT değeri. Olası değerlerin tam listesi için Bkz. Windows 
 
 WebBrowser veya Internet Explorer'da bir komut yürütmek için bu üye işlevini arayın.
 
-```
+```cpp
 void ExecWB(
     OLECMDID cmdID,
     OLECMDEXECOPT cmdexecopt,
@@ -960,7 +960,7 @@ Pikselolarak pencerenin geçerli genişliği.
 
 Geçmiş listesinde geriye doğru bir öğe geziner.
 
-```
+```cpp
 void GoBack();
 ```
 
@@ -972,7 +972,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 Geçmiş listesinde bir öğeyi ileri doğru geziner.
 
-```
+```cpp
 void GoForward();
 ```
 
@@ -980,7 +980,7 @@ void GoForward();
 
 Denetim Masası'ndan erişilen Internet Explorer Internet Seçenekleri iletişim kutusunda veya Internet Özellikleri iletişim kutusunda belirtilen geçerli ana veya başlangıç sayfasına gidin.
 
-```
+```cpp
 void GoHome();
 ```
 
@@ -992,7 +992,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 Denetim Masası'ndan erişilen Internet Explorer Internet Seçenekleri iletişim kutusunda veya Internet Özellikleri iletişim kutusunda belirtildiği gibi geçerli arama sayfasına gidin.
 
-```
+```cpp
 void GoSearch();
 ```
 
@@ -1029,7 +1029,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 URL tarafından tanımlanan kaynağa gitmek için bu üye işlevini çağırın.
 
-```
+```cpp
 void Navigate(
     LPCTSTR URL,
     DWORD dwFlags = 0,
@@ -1067,7 +1067,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 URL tarafından tanımlanan kaynağa veya tam bir yol tarafından tanımlanan dosyaya gitmek için bu üye işlevini çağırın.
 
-```
+```cpp
 void Navigate2(
     LPITEMIDLIST pIDL,
     DWORD dwFlags = 0,
@@ -1825,7 +1825,7 @@ This allows the object control host window to behave the same way the Internet E
 
 Belirli bir nesneyle ilişkili özelliği ayarlamak için bu üye işlevi çağırın.
 
-```
+```cpp
 void PutProperty(
     LPCTSTR lpszProperty,
     const VARIANT& vtValue);
@@ -1935,7 +1935,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 Web tarayıcısının şu anda görüntülemekte olduğu URL'yi veya dosyayı yeniden yükler.
 
-```
+```cpp
 void Refresh();
 ```
 
@@ -1949,7 +1949,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 Internet Explorer'ın şu anda görüntülemekte olduğu dosyayı yeniden yükler.
 
-```
+```cpp
 void Refresh2(int nLevel);
 ```
 
@@ -1968,7 +1968,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 Internet Explorer nesnesinin adres çubuğunu göstermek veya gizlemek için bu üye işlevini arayın.
 
-```
+```cpp
 void SetAddressBar(BOOL bNewValue);
 ```
 
@@ -1985,7 +1985,7 @@ Internet Explorer için geçerlidir. Bu aramayı Bir WebBrowser denetimi yle kul
 
 Internet Explorer'ı tam ekran veya normal pencere moduna ayarlamak için bu üye işlevini arayın.
 
-```
+```cpp
 void SetFullScreen(BOOL bNewValue);
 ```
 
@@ -2004,7 +2004,7 @@ Internet Explorer için geçerlidir. Bu aramayı Bir WebBrowser denetimi yle kul
 
 Internet Explorer ana penceresinin yüksekliğini ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetHeight(long nNewValue);
 ```
 
@@ -2021,7 +2021,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 Internet Explorer ana penceresinin yatay konumunu ayarlar.
 
-```
+```cpp
 void SetLeft(long nNewValue);
 ```
 
@@ -2034,7 +2034,7 @@ Ana pencerenin sol kenarının ekran koordinatı.
 
 Internet Explorer menü çubuğunu göstermek veya gizlemek için bu üye işlevini arayın.
 
-```
+```cpp
 void SetMenuBar(BOOL bNewValue);
 ```
 
@@ -2051,7 +2051,7 @@ Internet Explorer için geçerlidir. Bu aramayı Bir WebBrowser denetimi yle kul
 
 WebBrowser denetiminin şu anda çevrimdışı modda çalışıp çalışmadığını belirten bir değer ayarlamak için bu üye işlevini arayın.
 
-```
+```cpp
 void SetOffline(BOOL bNewValue);
 ```
 
@@ -2070,7 +2070,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 WebBrowser denetiminin hedef ad çözümü için üst düzey bir tarayıcı olarak kayıtlı olup olmadığını belirten bir değer ayarlamak için bu üye işlevini arayın.
 
-```
+```cpp
 void SetRegisterAsBrowser(BOOL bNewValue);
 ```
 
@@ -2089,7 +2089,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 WebBrowser denetiminin gezinti için bir bırakma hedefi olarak kaydedilip kaydedilmediğine dair bir değer ayarlamak için bu üye işlevini arayın.
 
-```
+```cpp
 void SetRegisterAsDropTarget(BOOL bNewValue);
 ```
 
@@ -2106,7 +2106,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 Herhangi bir iletişim kutusunun gösterilip gösterilmeyeceğini belirten bir değer ayarlamak için bu üye işlevini arayın.
 
-```
+```cpp
 void SetSilent(BOOL bNewValue);
 ```
 
@@ -2123,7 +2123,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 Durum çubuğunu görüntülemek için bu üye işlevini arayın.
 
-```
+```cpp
 void SetStatusBar(BOOL bNewValue);
 ```
 
@@ -2140,7 +2140,7 @@ Internet Explorer için geçerlidir. Bu aramayı Bir WebBrowser denetimi yle kul
 
 WebBrowser denetiminin tiyatro modunda olup olmadığını belirten bir değer ayarlamak için bu üye işlevini arayın.
 
-```
+```cpp
 void SetTheaterMode(BOOL bNewValue);
 ```
 
@@ -2159,7 +2159,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 Internet Explorer araç çubuğunu göstermek veya gizlemek için bu üye işlevini arayın.
 
-```
+```cpp
 void SetToolBar(int nNewValue);
 ```
 
@@ -2176,7 +2176,7 @@ Internet Explorer için geçerlidir. Bu aramayı Bir WebBrowser denetimi yle kul
 
 WebBrowser denetiminin iç üst kenarı ile kapsayıcının üst kenarı arasındaki mesafeyi ayarlamak için bu üye işlevi arayın
 
-```
+```cpp
 void SetTop(long nNewValue);
 ```
 
@@ -2193,7 +2193,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 WebBrowser denetiminin görünürlük durumunu ayarlamak için bu üye işlevini arayın.
 
-```
+```cpp
 void SetVisible(BOOL bNewValue);
 ```
 
@@ -2210,7 +2210,7 @@ Internet Explorer ve WebBrowser için geçerlidir.
 
 Internet Explorer ana penceresinin genişliğini ayarlar.
 
-```
+```cpp
 void SetWidth(long nNewValue);
 ```
 
@@ -2223,7 +2223,7 @@ Internet Explorer ana penceresinin piksel genişliği.
 
 Bekleyen gezinti veya indirme işlemini iptal etmek ve arka plan sesleri ve animasyonlar gibi dinamik sayfa öğelerini durdurmak için bu üye işlevini arayın.
 
-```
+```cpp
 void Stop();
 ```
 

@@ -66,12 +66,12 @@ helpviewer_keywords:
 - CDaoQueryDef [MFC], m_pDAOQueryDef
 - CDaoQueryDef [MFC], m_pDatabase
 ms.assetid: 9676a4a3-c712-44d4-8c5d-d1cc78288d3a
-ms.openlocfilehash: 133746ff1e4a9453f9563347724a47855a8a3228
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ed298c40daa9485683d0b989e47b97fdce9f6562
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368945"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754706"
 ---
 # <a name="cdaoquerydef-class"></a>CDaoQueryDef Sınıfı
 
@@ -410,7 +410,7 @@ Sorguda tanımlanan alan sayısı.
 
 Querydef'te tanımlanan bir alan hakkında çeşitli bilgiler elde etmek için bu üye işlevini arayın.
 
-```
+```cpp
 void GetFieldInfo(
     int nIndex,
     CDaoFieldInfo& fieldinfo,
@@ -503,7 +503,7 @@ Sorguda tanımlanan parametrelerin sayısı.
 
 Querydef'te tanımlanan bir parametre hakkında bilgi almak için bu üye işlevini arayın.
 
-```
+```cpp
 void GetParameterInfo(
     int nIndex,
     CDaoParameterInfo& paraminfo,
@@ -714,7 +714,7 @@ Querydef açıldıktan sonra, [yürüt](#execute) üye işlevini arayabilir veya
 
 Querydef nesnesinin bağlantı dizesini ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetConnect(LPCTSTR lpszConnect);
 ```
 
@@ -738,7 +738,7 @@ Bağlantı dizesinin yapısı ve bağlantı dizebileşenleri örnekleri hakkınd
 
 Geçici olmayan bir querydef'in adını değiştirmek istiyorsanız bu üye işlevi arayın.
 
-```
+```cpp
 void SetName(LPCTSTR lpszName);
 ```
 
@@ -755,7 +755,7 @@ Querydef adları benzersiz, kullanıcı tanımlı adlardır. QueryDef `SetName` 
 
 Bir ODBC veri kaynağı na sorgulamadan önce zaman sınırını ayarlamak için bu üye işlevini çağırın.
 
-```
+```cpp
 void SetODBCTimeout(short nODBCTimeout);
 ```
 
@@ -805,7 +805,7 @@ Parametre zaten querydef's SQL dizesinin bir parçası olarak kurulmuş olmalıd
 
 Bu üye işlevini, harici bir veritabanına bir SQL geçiş sorgusu ayarlama işleminin bir parçası olarak çağırın.
 
-```
+```cpp
 void SetReturnsRecords(BOOL bReturnsRecords);
 ```
 
@@ -822,7 +822,7 @@ Böyle bir durumda, querydef'i oluşturmanız ve `CDaoQueryDef` diğer üye işl
 
 Querydef'in yürüttüğü SQL deyimini ayarlamak için bu üye işlevin çağrısını arayın.
 
-```
+```cpp
 void SetSQL(LPCTSTR lpszSQL);
 ```
 

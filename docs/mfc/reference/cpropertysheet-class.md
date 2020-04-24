@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CPropertySheet [MFC], SetWizardMode
 - CPropertySheet [MFC], m_psh
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
-ms.openlocfilehash: 167c99f734e4538ff2704e032a6ca98fb1d82004
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e8ab91b9a6fe76070d79ea2eee2e5765db2e99e3
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363944"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81750979"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet Sınıfı
 
@@ -165,7 +165,7 @@ Nesnelerin nasıl kullanılacağı `CPropertySheet` hakkında daha fazla bilgi [
 
 Verilen sayfayı özellik sayfasına en doğru sekmeyle ekler.
 
-```
+```cpp
 void AddPage(CPropertyPage* pPage);
 ```
 
@@ -194,7 +194,7 @@ Aramak `AddPage`için özellik sayfası penceresinin oluşturulmasına kadar bek
 
 Bir `CPropertySheet` nesne inşa eder.
 
-```
+```cpp
 void Construct(
     UINT nIDCaption,
     CWnd* pParentWnd = NULL,
@@ -422,7 +422,7 @@ CPropertySheet için örneğe [bakın:AddPage](#addpage).
 
 Bir özellik sayfasına sekme satırları nın yığılıp yığılmayacağını gösterir.
 
-```
+```cpp
 void EnableStackedTabs(BOOL bStacked);
 ```
 
@@ -445,7 +445,7 @@ Bir modal veya modeless özellik sayfası oluştururken aramanız `EnableStacked
 
 Özellik sayfasını sonlandırır.
 
-```
+```cpp
 void EndDialog(int nEndID);
 ```
 
@@ -600,14 +600,14 @@ Bu yapıyı, özellik sayfasının oluşturulduktan sonra ancak [DoModal](#domod
 
 Dikdörtgenin iletişim kutusu birimlerini ekran birimlerine dönüştürür.
 
-```
+```cpp
 void MapDialogRect(LPRECT lpRect) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *Lprect*<br/>
-Dönüştürülecek iletişim kutusu koordinatlarını içeren bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
+Dönüştürülecek iletişim kutusu koordinatlarını içeren bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -641,7 +641,7 @@ Bu üye işlev için ileti eşlemi girişine gerek yoktur.
 
 Bir özellik sayfasında belirtilen düğmenin seçimini simüle eder.
 
-```
+```cpp
 void PressButton(int nButton);
 ```
 
@@ -678,7 +678,7 @@ Windows SDK Pressbutton iletisi hakkında daha fazla bilgi için [PSM_PRESSBUTTO
 
 Bir sayfayı özellik sayfasından kaldırır ve ilişkili pencereyi yok eder.
 
-```
+```cpp
 void RemovePage(CPropertyPage* pPage);
 void RemovePage(int nPage);
 ```
@@ -728,7 +728,7 @@ CPropertySheet örneğine [bakın:GetActivePage](#getactivepage).
 
 Bitiş komutu düğmesindeki metni ayarlar.
 
-```
+```cpp
 void SetFinishText(LPCTSTR lpszText);
 ```
 
@@ -749,7 +749,7 @@ Bitiş `SetFinishText` komutu düğmesindeki metni görüntülemek için arayın
 
 Özellik sayfasının başlığını (çerçeve penceresinin başlık çubuğunda görüntülenen metin) belirtir.
 
-```
+```cpp
 void SetTitle(
     LPCTSTR lpszText,
     UINT nStyle = 0);
@@ -775,7 +775,7 @@ Varsayılan olarak, bir özellik sayfası özellik sayfası oluşturucudaki resi
 
 Sihirbaz özellik sayfasında Geri, İleri veya Bitiş düğmesini etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void SetWizardButtons(DWORD dwFlags);
 ```
 
@@ -812,7 +812,7 @@ Kullanıcı sihirbazı tamamladıktan sonra Bitiş düğmesindeki metni değişt
 
 Sihirbaz olarak bir özellik sayfası kurar.
 
-```
+```cpp
 void SetWizardMode();
 ```
 

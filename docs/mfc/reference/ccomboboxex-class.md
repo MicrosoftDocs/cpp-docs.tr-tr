@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CComboBoxEx [MFC], SetItem
 - CComboBoxEx [MFC], SetWindowTheme
 ms.assetid: 33ca960a-2409-478c-84a4-a2ee8ecfe8f7
-ms.openlocfilehash: 4151ea17fd3223c126715742c6149f2cf55bcbc7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a948d54be17103fa83848ff5f0e86dd2c522f0a3
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369466"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754817"
 ---
 # <a name="ccomboboxex-class"></a>CComboBoxEx Sınıfı
 
@@ -150,7 +150,7 @@ virtual BOOL Create(
 Açılan kutuya uygulanan açılan kutu stillerinin birleşimini belirtir. Stiller hakkında daha fazla bilgi için aşağıdaki **Açıklamalar'a** bakın.
 
 *Rect*<br/>
-Açılan kutunun konumu ve boyutu olan [bir CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına yapılan başvuru.
+Açılan kutunun konumu ve boyutu olan [bir CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına yapılan başvuru.
 
 *pParentWnd*<br/>
 Açılan kutunun ana penceresi olan [CWnd](../../mfc/reference/cwnd-class.md) nesnesine işaretçi (genellikle bir). `CDialog` NULL olmamalıdır.
@@ -210,7 +210,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Açılan kutu denetiminin stili. Stil listesi için [oluştur'a](#create) bakın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.

@@ -133,12 +133,12 @@ helpviewer_keywords:
 - CPane [MFC], m_bHandleMinSize
 - CPane [MFC], m_recentDockInfo
 ms.assetid: 5c651a64-3c79-4d94-9676-45f6402a6bc5
-ms.openlocfilehash: 7b2c5db976af832b1f1570dd431374c9e15520ad
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 95aec648009f6d037081c9b3f54d46e9865ca559
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364173"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753660"
 ---
 # <a name="cpane-class"></a>CPane Sınıfı
 
@@ -340,7 +340,7 @@ virtual CSize CalcAvailableSize(CRect rectRequired);
 
 Kenarlıklar ve kavrayıcılar da dahil olmak üzere bölmenin iç dikdörtgenini hesaplar.
 
-```
+```cpp
 void CalcInsideRect(
     CRect& rect,
     BOOL bHorz) const;
@@ -362,7 +362,7 @@ Bu yöntem, bir bölmenin düzenini yeniden hesaplaması gerektiğinde çerçeve
 
 En son kenetlenmiş dikdörtgeni hesaplar.
 
-```
+```cpp
 void CalcRecentDockedRect();
 ```
 
@@ -890,7 +890,7 @@ Bölme kenetlendiğinde veya kayan olduğunda bölme başlığı resim yazısı 
 
 Bölmenin *sanal dikdörtgenini* alır.
 
-```
+```cpp
 void GetVirtualRect(CRect& rectVirtual) const;
 ```
 
@@ -1381,7 +1381,7 @@ FALSE `CMFCAutoHideButton::m_bOverlappingTabs` ise veya bölme bir grupta bulunm
 
 Bölmenin kenarlık değerlerini ayarlar.
 
-```
+```cpp
 void SetBorders(
     int cxLeft = 0,
     int cyTop = 0,
@@ -1416,7 +1416,7 @@ Bölmenin kenarlıklarının boyutlarını ayarlamak için bu işlevi çağırı
 
 Bölme için *sıcak noktayı* ayarlar.
 
-```
+```cpp
 void SetClientHotSpot(const CPoint& ptNew);
 ```
 
@@ -1471,7 +1471,7 @@ Varsayılan olarak, tüm araç çubukları özel satır modu devre dışı bıra
 
 Bölme için izin verilen minimum boyutu ayarlar.
 
-```
+```cpp
 void SetMinSize(const CSize& size);
 ```
 
@@ -1486,7 +1486,7 @@ void SetMinSize(const CSize& size);
 
 Bölmenin *sanal dikdörtgenini* ayarlar.
 
-```
+```cpp
 void SetVirtualRect(
     const CRect& rect,
     BOOL bMapToParent = TRUE);
@@ -1510,7 +1510,7 @@ Bölmeleri programlı olarak hareket ettirmiyorsanız, sanal dikdörtgenlerle il
 
 Varsayılan mini çerçeve penceresi için çalışma zamanı sınıf bilgilerini ayarlar.
 
-```
+```cpp
 void SetMiniFrameRTC(CRuntimeClass* pClass);
 ```
 
@@ -1582,7 +1582,7 @@ Bir bölmeyi programlı bir şekilde çıkarmak için bu yöntemi kullanın.
 
 Sanal dikdörtgeni güncelleştirir.
 
-```
+```cpp
 void UpdateVirtualRect();
 void UpdateVirtualRect(CPoint ptOffset);
 void UpdateVirtualRect(CSize sizeNew);

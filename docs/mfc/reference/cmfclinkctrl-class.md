@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMFCLinkCtrl [MFC], SizeToContent
 - CMFCLinkCtrl [MFC], OnDrawFocusRect
 ms.assetid: 80f3874d-7cc8-410e-9ff1-62a225f5034b
-ms.openlocfilehash: 1ef4e390d88f81d738d2ee18be6ba02843633011
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 79edff8be6e2c37baa938fc5b624253932609e17
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374396"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754252"
 ---
 # <a name="cmfclinkctrl-class"></a>CMFCLinkCtrl Sınıfı
 
@@ -102,7 +102,7 @@ Düğmenin odak dikdörtgenini çizmek için kendi kodunuzu kullanmak istediğin
 
 Düğme metni olarak belirtilen bir URL'yi görüntüler.
 
-```
+```cpp
 void SetURL(LPCTSTR lpszURL);
 ```
 
@@ -117,7 +117,7 @@ void SetURL(LPCTSTR lpszURL);
 
 URL'nin örtük protokolünü (örneğin, "http:") ayarlar.
 
-```
+```cpp
 void SetURLPrefix(LPCTSTR lpszPrefix);
 ```
 

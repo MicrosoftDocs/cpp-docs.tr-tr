@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CInterpolatorBase [MFC], SetDuration
 - CInterpolatorBase [MFC], SetInitialValueAndVelocity
 ms.assetid: bbc3dce7-8398-47f9-b97e-e4fd2d737232
-ms.openlocfilehash: e5294aabc42301e2f874d5b8328d648f4deeb3c9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: efa08aa5dd556d7e136323c31451a9f33bd72ec6
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372363"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754952"
 ---
 # <a name="cinterpolatorbase-class"></a>CInterpolatorBase Sınıfı
 
@@ -162,7 +162,7 @@ IFACEMETHOD(GetFinalValue)(__out DOUBLE* value);
 
 ### <a name="parameters"></a>Parametreler
 
-*Değer*<br/>
+*value*<br/>
 Çıkış. Geçiş sonundaki değişkenin son değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -184,7 +184,7 @@ IFACEMETHOD(InterpolateValue)(
 *Uzaklık*<br/>
 Geçişin başlangıcından itibaren mahsup. Ofset her zaman sıfırdan büyük veya eşit ve geçiş süresinden daha azdır. Geçiş süresi sıfır ise bu yöntem çağrılmaz.
 
-*Değer*<br/>
+*value*<br/>
 Çıkış. İnterpolated değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -217,7 +217,7 @@ Yöntem başarılı olursa, S_OK döndürür. CCustomInterpolator ayarlanmazveya
 
 Olayları işleyen özel enterpolatör için bir işaretçi depolar.
 
-```
+```cpp
 void SetCustomInterpolator(CCustomInterpolator* pInterpolator);
 ```
 

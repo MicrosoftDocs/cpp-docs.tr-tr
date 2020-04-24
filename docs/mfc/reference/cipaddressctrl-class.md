@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CIPAddressCtrl [MFC], SetFieldFocus
 - CIPAddressCtrl [MFC], SetFieldRange
 ms.assetid: 9764d2f4-cb14-4ba8-b799-7f57a55a47c6
-ms.openlocfilehash: 28aa0e7137647bc49406dab1e82b9c2b05ca3538
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0613dea766b022acf140a82bb4b01784793c2589
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372350"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754970"
 ---
 # <a name="cipaddressctrl-class"></a>CIPAddressCtrl Sınıfı
 
@@ -96,7 +96,7 @@ CIPAddressCtrl();
 
 IP Adresi Denetimi'nin içeriğini temizler.
 
-```
+```cpp
 void ClearAddress();
 ```
 
@@ -122,7 +122,7 @@ virtual BOOL Create(
 IP Adresi denetiminin stili. Pencere stillerinin bir birleşimini uygulayın. Denetim bir alt pencere olması gerektiğinden, WS_CHILD stilieklemeniz gerekir. Windows stilleri listesi için Windows SDK'daki [CreateWindow'a](/windows/win32/api/winuser/nf-winuser-createwindoww) bakın.
 
 *Rect*<br/>
-IP Adresi Denetimi'nin boyutuna ve konumuna bir başvuru. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
+IP Adresi Denetimi'nin boyutuna ve konumuna bir başvuru. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
 
 *pParentWnd*<br/>
 IP Adresi Denetimi'nin üst penceresine işaretçi. NULL olmamalıdır.
@@ -166,7 +166,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 IP Adresi denetiminin stili. Pencere stillerinin bir birleşimini uygulayın. Denetim bir alt pencere olması gerektiğinden, WS_CHILD stilieklemeniz gerekir. Windows stilleri listesi için Windows SDK'daki [CreateWindow'a](/windows/win32/api/winuser/nf-winuser-createwindoww) bakın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -248,7 +248,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/Cont
 
 IP Adresi Denetimi'ndeki dört alanın adres değerlerini ayarlar.
 
-```
+```cpp
 void SetAddress(
     BYTE nField0,
     BYTE nField1,
@@ -290,7 +290,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [IPM_SETAD
 
 Klavye odağıIP Adres Denetimi'nde belirtilen alana ayarlar.
 
-```
+```cpp
 void SetFieldFocus(WORD nField);
 ```
 
@@ -307,7 +307,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/Cont
 
 IP Adresi Denetimi'nde belirtilen alandaki aralığı ayarlar.
 
-```
+```cpp
 void SetFieldRange(
     int nField,
     BYTE nLower,

@@ -56,12 +56,12 @@ helpviewer_keywords:
 - CFileFind [MFC], CloseContext
 - CFileFind [MFC], m_pTM
 ms.assetid: 9990068c-b023-4114-9580-a50182d15240
-ms.openlocfilehash: f01aa84593afed5a4f2f102da7d161ad42917080
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5bb53a6abf7040bd6ee9f5f2cf56b0feb4d62e66
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373884"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81755025"
 ---
 # <a name="cfilefind-class"></a>CFileFind Sınıfı
 
@@ -166,7 +166,7 @@ CAtlTransactionManager nesnesine işaretçi
 
 Aramayı sona erdirmek, bağlamı sıfırlamak ve tüm kaynakları serbest bırakmak için bu üye işlevini çağırın.
 
-```
+```cpp
 void Close();
 ```
 

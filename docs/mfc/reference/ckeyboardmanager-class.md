@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CKeyboardManager [MFC], TranslateCharToUpper
 - CKeyboardManager [MFC], UpdateAccelTable
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
-ms.openlocfilehash: 5d0f544943cc8584960bb2668ee7ce326547e2fa
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a8053ab33a2b49eb2c447cdaa1cb2b9e356bc696
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372322"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754919"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager Sınıfı
 
@@ -256,7 +256,7 @@ Varsayılan pencere belirtmezseniz, uygulamanızın ana çerçeve penceresi kull
 
 Kısayol anahtar tablolarını uygulama kaynağından yeniden yükler.
 
-```
+```cpp
 void ResetAll();
 ```
 

@@ -82,12 +82,12 @@ helpviewer_keywords:
 - COleServerDoc [MFC], OnSetItemRects
 - COleServerDoc [MFC], OnShowDocument
 ms.assetid: a9cdd96a-e0ac-43bb-9203-2c29237e965c
-ms.openlocfilehash: b535cc23901ba39e4beeb66d8ca6bb18d4abe2b8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8e75ec5c00c614a225a059a2b3cf97a7a307c61c
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376125"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753782"
 ---
 # <a name="coleserverdoc-class"></a>COleServerDoc Sınıfı
 
@@ -192,7 +192,7 @@ Sunucular hakkında daha fazla bilgi için, makale [Sunucuları bakınız: Bir S
 
 İlişkili DocObject belgesini etkinleştirir.
 
-```
+```cpp
 void ActivateDocObject();
 ```
 
@@ -359,7 +359,7 @@ Bu [COleServerDoc çağırır::OnGetEmbeddedItem](#ongetembeddeditem), hiçbir v
 
 Yerinde `GetItemClipRect` düzenlenen öğenin kırpma dikdörtgenkoordinatlarını almak için üye işlevi arayın.
 
-```
+```cpp
 void GetItemClipRect(LPRECT lpClipRect) const;
 ```
 
@@ -378,7 +378,7 @@ Koordinatlar, kapsayıcı uygulama penceresinin istemci alanına göre piksel ol
 
 Düzenlenen `GetItemPosition` öğenin koordinatlarını almak için üye işlevi arayın.
 
-```
+```cpp
 void GetItemPosition(LPRECT lpPosRect) const;
 ```
 
@@ -469,7 +469,7 @@ Nesne yerinde `COleServerDoc` etkinse sıfırsız; aksi takdirde 0.
 
 Belgeye bağlı tüm bağlantılı öğeleri belgenin değiştirdiğini bildirmek için bu işlevi arayın.
 
-```
+```cpp
 void NotifyChanged();
 ```
 
@@ -484,7 +484,7 @@ Genellikle, kullanıcı sunucu belgesinin boyutları gibi bazı genel öznitelik
 
 Kapsayıcıya belgenin kapatıldığını bildirmek için bu işlevi arayın.
 
-```
+```cpp
 void NotifyClosed();
 ```
 
@@ -496,7 +496,7 @@ Kullanıcı Dosya menüsünden Kapat komutunu seçtiğinde, `NotifyClosed` `COle
 
 Kullanıcı sunucu belgesini yeniden adlandırdıktan sonra bu işlevi arayın.
 
-```
+```cpp
 void NotifyRename(LPCTSTR lpszNewName);
 ```
 
@@ -513,7 +513,7 @@ Kullanıcı Dosya menüsünden Kaydet komutunu seçtiğinde, `NotifyRename` `COl
 
 Kullanıcı sunucu belgesini kurtardıktan sonra bu işlevi arayın.
 
-```
+```cpp
 void NotifySaved();
 ```
 
@@ -855,7 +855,7 @@ Varsayılan uygulama [COleServerDoc çağırır::NotifySaved](#notifysaved) ve [
 
 Kapsayıcı uygulamasının öğenin konumunu değiştirmesi için bu üye işlevi arayın.
 
-```
+```cpp
 void RequestPositionChange(LPCRECT lpPosRect);
 ```
 
@@ -872,7 +872,7 @@ Bu işlev genellikle yerinde etkin `UpdateAllItems`bir öğedeki veriler değiş
 
 Katıştılmış nesneyi kaydetmesini kapsayıcı uygulamasına söylemek için bu işlevi arayın.
 
-```
+```cpp
 void SaveEmbedding();
 ```
 
@@ -905,7 +905,7 @@ Pozitif değerler aşağı ve sağa kaydırma gösterir; negatif değerler yukar
 
 Belgeye bağlı tüm bağlantılı öğeleri belgenin değiştirdiğini bildirmek için bu işlevi arayın.
 
-```
+```cpp
 void UpdateAllItems(
     COleServerItem* pSender,
     LPARAM lHint = 0L,

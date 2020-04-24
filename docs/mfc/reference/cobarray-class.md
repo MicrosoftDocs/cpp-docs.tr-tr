@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 27894efd-2370-4776-9ed9-24a98492af17
-ms.openlocfilehash: 7b923fd9231d3652d8d2f1750a8024d15287811e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c19715f62704bfc97059421451929cbbec2506ce
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81360452"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754465"
 ---
 # <a name="cobarray-class"></a>CObArray Sınıfı
 
@@ -219,7 +219,7 @@ Tüm koleksiyon örneklerinde kullanılan `CAge` sınıfın listesi için [CObLi
 
 Aynı türdeki başka bir dizinin öğeleriyle verilen dizinin öğelerinin üzerine yazmak için bu üye işlevi arayın.
 
-```
+```cpp
 void Copy(const CObArray& src);
 ```
 
@@ -316,7 +316,7 @@ Aşağıdaki tabloda `CObArray::ElementAt`buna benzer diğer üye işlevler gös
 
 Dizi büyütülme sırasında ayrılan tüm ekstra belleği serbest eder.
 
-```
+```cpp
 void FreeExtra();
 ```
 
@@ -516,7 +516,7 @@ Tüm koleksiyon örneklerinde kullanılan `CAge` sınıfın listesi için [CObLi
 
 Belirli bir dizide bir öğe (veya başka bir dizideki tüm öğeler) ekler.
 
-```
+```cpp
 void InsertAt(
     INT_PTR nIndex,
     CObject* newElement,
@@ -626,7 +626,7 @@ Tüm koleksiyon örneklerinde kullanılan `CAge` sınıfın listesi için [CObLi
 
 Bu dizideki tüm işaretçileri kaldırır, ancak `CObject` nesneleri gerçekte silmez.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -657,7 +657,7 @@ Tüm koleksiyon örneklerinde kullanılan `CAge` sınıfın listesi için [CObLi
 
 Bir dizide belirli bir diziden başlayan bir veya daha fazla öğeyi kaldırır.
 
-```
+```cpp
 void RemoveAt(
     INT_PTR nIndex,
     INT_PTR nCount = 1);
@@ -707,7 +707,7 @@ RemoveAt example: A CObArray with 1 elements
 
 Dizi öğesini belirtilen dizide ayarlar.
 
-```
+```cpp
 void SetAt(
     INT_PTR nIndex,
     CObject* newElement);
@@ -756,7 +756,7 @@ SetAt example: A CObArray with 2 elements
 
 Dizi öğesini belirtilen dizide ayarlar.
 
-```
+```cpp
 void SetAtGrow(
     INT_PTR nIndex,
     CObject* newElement);
@@ -805,7 +805,7 @@ SetAtGrow example: A CObArray with 4 elements
 
 Boş veya varolan bir dizinin boyutunu kurar; gerekirse bellek ayırır.
 
-```
+```cpp
 void SetSize(
     INT_PTR nNewSize,
     INT_PTR nGrowBy = -1);

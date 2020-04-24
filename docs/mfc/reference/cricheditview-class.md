@@ -100,12 +100,12 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nBulletIndent
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
-ms.openlocfilehash: 2d832f3cc07d39ace9e679901c5344a376cea03c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b72daac576411b45908d1e91bd86bbd9aeacf738
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318631"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754460"
 ---
 # <a name="cricheditview-class"></a>CRichEditView Sınıfı
 
@@ -218,7 +218,7 @@ Bir MFC uygulamasında zengin bir edit görünümü kullanma örneği için [WOR
 
 Geçerli seçimi gizlememesi için verilen iletişim kutusunu taşımak için bu işlevi arayın.
 
-```
+```cpp
 void AdjustDialogPosition(CDialog* pDlg);
 ```
 
@@ -251,7 +251,7 @@ CRichEditView();
 
 *Dataobj'deki* OLE öğesini bu zengin edit belgesine/görünümüne yapıştırmak için bu işlevi arayın.
 
-```
+```cpp
 void DoPaste(
     COleDataObject& dataobj,
     CLIPFORMAT cf,
@@ -643,7 +643,7 @@ Düzenleme denetimindeki karakter veya bayt sayısı. *dwFlags'de*uyumsuz bayrak
 
 Belirtilen dosyayı [(CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) nesnesi olarak) zengin bir edit görünümüne eklemek için bu işlevi arayın.
 
-```
+```cpp
 void InsertFileAsObject(LPCTSTR lpszFileName);
 ```
 
@@ -745,7 +745,7 @@ Aşağıdaki değerlerden biri:
 
 Geçerli seçim için karakter biçimlendirme efektlerini geçiş için bu işlevi arayın.
 
-```
+```cpp
 void OnCharEffect(
     DWORD dwMask,
     DWORD dwEffect);
@@ -844,7 +844,7 @@ Daha fazla bilgi için Windows SDK'daki [IStorage'a](/windows/win32/api/objidl/n
 
 Seçili paragraflar için paragraf hizalamasını değiştirmek için bu işlevi çağırın.
 
-```
+```cpp
 void OnParaAlign(WORD wAlign);
 ```
 
@@ -975,7 +975,7 @@ Daha fazla bilgi için Windows SDK'daki [MessageBeep'e](/windows/win32/api/winus
 
 Çerçeve, karakter efekti komutları için komut UI'yi güncelleştirmek için bu işlevi çağırır.
 
-```
+```cpp
 void OnUpdateCharEffect(
     CCmdUI* pCmdUI,
     DWORD dwMask,
@@ -1007,7 +1007,7 @@ Maske *dwMask* hangi karakter biçimlendirme özniteliklerini denetlemek için b
 
 Çerçeve, paragraf efekti komutları için komut UI'yi güncelleştirmek için bu işlevi çağırır.
 
-```
+```cpp
 void OnUpdateParaAlign(
     CCmdUI* pCmdUI,
     WORD wAlign);
@@ -1153,7 +1153,7 @@ HRESULT ve `IDataObject`, Windows SDK'da sırasıyla [COM Hata Kodları](/window
 
 Bu `CRichEditView` nesnedeki yeni metin için karakter biçimlendirme özniteliklerini ayarlamak için bu işlevi çağırın.
 
-```
+```cpp
 void SetCharFormat(CHARFORMAT2 cf);
 ```
 
@@ -1176,7 +1176,7 @@ Daha fazla bilgi için Windows [SDK'daki EM_SETCHARFORMAT](/windows/win32/Contro
 
 Bu zengin edit görünümü için yazdırma kenar boşluklarını ayarlamak için bu işlevi arayın.
 
-```
+```cpp
 void SetMargins(const CRect& rectMargin);
 ```
 
@@ -1199,7 +1199,7 @@ Yazdırma için MM_TWIPS cinsinden ölçülen yeni kenar boşluğu değerleri.
 
 Bu zengin edit görünümünü yazdırmak için kağıt boyutunu ayarlamak için bu işlevi arayın.
 
-```
+```cpp
 void SetPaperSize(CSize sizePaper);
 ```
 
@@ -1247,7 +1247,7 @@ Daha fazla bilgi için Windows SDK'daki [EM_SETPARAFORMAT](/windows/win32/Contro
 
 [FindText'e](#findtext)yapılan başarısız bir çağrıdan sonra [CRichEditView](../../mfc/reference/cricheditview-class.md) denetiminin dahili arama durumunu sıfırlamak için bu işlevi arayın.
 
-```
+```cpp
 void TextNotFound(LPCTSTR lpszFind);
 ```
 

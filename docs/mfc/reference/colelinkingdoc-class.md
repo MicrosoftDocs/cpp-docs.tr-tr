@@ -16,12 +16,12 @@ helpviewer_keywords:
 - COleLinkingDoc [MFC], OnFindEmbeddedItem
 - COleLinkingDoc [MFC], OnGetLinkedItem
 ms.assetid: 9f547f35-2f95-427f-b9c0-85c31940198b
-ms.openlocfilehash: f9f184542aaceb206d3eae110d3a088d5fbc95cf
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1fad986b7e7304075cacb0b5ced9feeb8af4664f
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374949"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753844"
 ---
 # <a name="colelinkingdoc-class"></a>COleLinkingDoc Sınıfı
 
@@ -181,7 +181,7 @@ Eğer `COleTemplateServer` `Register` uygulamakullanıyorsanız, sizin için 's 
 
 OLE sistemi DLLs'e belgenin artık açık olmadığını bildirir.
 
-```
+```cpp
 void Revoke();
 ```
 

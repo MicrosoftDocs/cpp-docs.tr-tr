@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CStatusBar [MFC], SetPaneStyle
 - CStatusBar [MFC], SetPaneText
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
-ms.openlocfilehash: 0549ee10faa15b80b18a0bee2f115425002e1479
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 969edb3b1c87da851d83d390ab9d4e707bd2eb1e
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376255"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753049"
 ---
 # <a name="cstatusbar-class"></a>CStatusBar Sınıfı
 
@@ -271,7 +271,7 @@ Kimliği alınacak göstergenin dizini.
 
 *nIndex* tarafından belirtilen göstergenin koordinatlarını *lpRect*tarafından işaret edilen yapıya kopyalar.
 
-```
+```cpp
 void GetItemRect(
     int nIndex,
     LPRECT lpRect) const;
@@ -283,7 +283,7 @@ void GetItemRect(
 Dikdörtgen koordinatları alınacak göstergenin dizin.
 
 *Lprect*<br/>
-*NIndex*tarafından belirtilen göstergenin koordinatlarını alacak bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
+*NIndex*tarafından belirtilen göstergenin koordinatlarını alacak bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -293,7 +293,7 @@ Koordinatlar durum çubuğunun sol üst köşesine göre piksel olarak dır.
 
 *ND,* *nStyle*ve *cxWidth'i* *nIndex*tarafından belirtilen konumdaki gösterge bölmesinin kimliğine, stiline ve genişliğine ayarlar.
 
-```
+```cpp
 void GetPaneInfo(
     int nIndex,
     UINT& nID,
@@ -406,7 +406,7 @@ Sıfırsız eğer başarılı; aksi takdirde 0.
 
 Belirtilen gösterge bölmesini yeni bir kimlik, stil ve genişlik olarak ayarlar.
 
-```
+```cpp
 void SetPaneInfo(
     int nIndex,
     UINT nID,
@@ -446,7 +446,7 @@ Aşağıdaki gösterge stilleri desteklenir:
 
 Durum çubuğu bölmesinin stilini ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetPaneStyle(
     int nIndex,
     UINT nStyle);

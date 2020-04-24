@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CSliderCtrl [MFC], SetTipSide
 - CSliderCtrl [MFC], SetToolTips
 ms.assetid: dd12b084-4eda-4550-a810-8f3cfb06b871
-ms.openlocfilehash: 24e1cb18f979d1144f15cf6ffedc6cace5f5361e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2e3572b34f930bb6a7d99b437c01c8aaf970e6c3
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318222"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81751266"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl Sınıfı
 
@@ -169,7 +169,7 @@ Kullanma `CSliderCtrl`hakkında daha fazla bilgi [Using CSliderCtrl](../../mfc/u
 
 Kaydırıcı denetiminde geçerli seçimi temizler.
 
-```
+```cpp
 void ClearSel(BOOL bRedraw = FALSE);
 ```
 
@@ -182,7 +182,7 @@ Bayrağı yeniden çizin. Bu parametre TRUE ise, seçim temizlendikten sonra kay
 
 Kaydırıcı denetiminden geçerli onay işaretini kaldırır.
 
-```
+```cpp
 void ClearTics(BOOL bRedraw = FALSE);
 ```
 
@@ -209,7 +209,7 @@ virtual BOOL Create(
 Kaydırıcı denetiminin stilini belirtir. Windows SDK'da açıklanan [kaydırıcı denetim stillerinin](/windows/win32/Controls/trackbar-control-styles)herhangi bir birleşimini denetime uygulayın.
 
 *Rect*<br/>
-Kaydırıcı denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
+Kaydırıcı denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
 
 *pParentWnd*<br/>
 Kaydırıcı denetiminin üst penceresini belirtir, `CDialog`genellikle bir . NULL olmamalıdır.
@@ -251,7 +251,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Kaydırıcı denetiminin stilini belirtir. Windows SDK'da açıklanan [kaydırıcı denetim stillerinin](/windows/win32/Controls/trackbar-control-styles)herhangi bir birleşimini denetime uygulayın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
+*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencereye işaretçi.
@@ -304,7 +304,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [TBM_GETBU
 
 Kaydırıcı denetiminin kanalı için sınırlayan dikdörtgenin boyutunu ve konumunu alır.
 
-```
+```cpp
 void GetChannelRect(LPRECT lprc) const;
 ```
 
@@ -377,7 +377,7 @@ Geçerli konum.
 
 Kaydırıcı kontrolünde kaydırıcı için maksimum ve minimum konumları alır.
 
-```
+```cpp
 void GetRange(
     int& nMin,
     int& nMax) const;
@@ -423,7 +423,7 @@ Kontrol minimum pozisyondur.
 
 Kaydırıcı denetiminde geçerli seçimin başlangıç ve bitiş konumlarını alır.
 
-```
+```cpp
 void GetSelection(
     int& nMin,
     int& nMax) const;
@@ -457,7 +457,7 @@ Bu yöntem, Windows SDK'da açıklanan [TBM_GETTHUMBLENGTH](/windows/win32/Contr
 
 Kaydırıcı denetiminde kaydırıcı (başparmak) için sınırlayıcı dikdörtgenin boyutunu ve konumunu alır.
 
-```
+```cpp
 void GetThumbRect(LPRECT lprc) const;
 ```
 
@@ -608,7 +608,7 @@ Sayfa boyutu, kaydırıcının TB_PAGEUP ve TB_PAGEDOWN bildirimler için ne kad
 
 Kaydırıcının geçerli konumunu kaydırıcı denetiminde ayarlar.
 
-```
+```cpp
 void SetPos(int nPos);
 ```
 
@@ -621,7 +621,7 @@ Yeni kaydırıcı konumunu belirtir.
 
 Kaydırıcı kontrolünde kaydırıcı için aralığı (minimum ve maksimum konumlar) ayarlar.
 
-```
+```cpp
 void SetRange(
     int nMin,
     int nMax,
@@ -643,7 +643,7 @@ Yeniden çekme bayrağı. Bu parametre TRUE ise, aralık ayarlandıktan sonra ka
 
 Kaydırıcı denetiminde kaydırıcı için maksimum aralığı ayarlar.
 
-```
+```cpp
 void SetRangeMax(
     int nMax,
     BOOL bRedraw = FALSE);
@@ -661,7 +661,7 @@ Yeniden çekme bayrağı. Bu parametre TRUE ise, aralık ayarlandıktan sonra ka
 
 Kaydırıcı denetiminde kaydırıcı için minimum aralığı ayarlar.
 
-```
+```cpp
 void SetRangeMin(
     int nMin,
     BOOL bRedraw = FALSE);
@@ -679,7 +679,7 @@ Yeniden çekme bayrağı. Bu parametre TRUE ise, aralık ayarlandıktan sonra ka
 
 Kaydırıcı denetiminde geçerli seçim için başlangıç ve bitiş konumlarını ayarlar.
 
-```
+```cpp
 void SetSelection(
     int nMin,
     int nMax);
@@ -697,7 +697,7 @@ Kaydırıcı için bitiş pozisyonu.
 
 Geçerli izleme çubuğu denetiminde kaydırıcının uzunluğunu ayarlar.
 
-```
+```cpp
 void SetThumbLength(int nLength);
 ```
 
@@ -746,7 +746,7 @@ Onay işareti ayarlanmışsa sıfıra inme; aksi takdirde 0.
 
 Onay işaretlerinin kaydırıcıda görüntülenme sıklığını ayarlar.
 
-```
+```cpp
 void SetTicFreq(int nFreq);
 ```
 
@@ -786,7 +786,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin TBM_SETTIP
 
 Kaydırıcı denetimine bir araç ucu denetimi atar.
 
-```
+```cpp
 void SetToolTips(CToolTipCtrl* pWndTip);
 ```
 

@@ -49,12 +49,12 @@ f1_keywords:
 helpviewer_keywords:
 - CPathT class
 ms.assetid: eba4137d-1fd2-4b44-a2e1-0944db64df3c
-ms.openlocfilehash: c10b854ae5c2d7167a067675b1391be24b6a8122
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
-ms.translationtype: HT
+ms.openlocfilehash: 76273e7fbfa50e610b437e11859821374413d008
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/22/2020
-ms.locfileid: "81746586"
+ms.locfileid: "82032140"
 ---
 # <a name="cpatht-class"></a>CPathT Sınıfı
 
@@ -103,7 +103,7 @@ Yol için kullanılacak ATL/MFC dize sınıfı [(Bkz. CStringT).](../../atl-mfc-
 |[CPathT::Birleştir](#combine)|Dizin adını ve dosya yolu adını temsil eden bir dizeyi tek bir yola dönüştürmek için bu yöntemi çağırın.|
 |[CPathT::CommonPrefix](#commonprefix)|Belirtilen yolun geçerli yolla ortak bir önek paylaşıp paylaşmadığını belirlemek için bu yöntemi çağırın.|
 |[CPathT::CompactPath](#compactpath)|Yol bileşenlerini elipslerle değiştirerek, belirli bir piksel genişliğine sığacak bir dosya yolunu parçalamak için bu yöntemi çağırın.|
-|[CPathT::CompactPathEx](#compactpathex)|Yol bileşenlerini elipslerle değiştirerek, belirli sayıda karaktere sığacak bir dosya yolunu truncate etmek için bu yöntemi çağırın.|
+|[CPathT::CompactPathEx](#compactpathex)|Yol bileşenlerini elipsile değiştirerek, belirli sayıda karaktere sığacak bir dosya yolunu truncate etmek için bu yöntemi çağırın.|
 |[CPathT::FileExists](#fileexists)|Bu yol adındaki dosyanın var olup olmadığını denetlemek için bu yöntemi arayın.|
 |[CPathT::FindExtension](#findextension)|Dosya uzantısının yol içindeki konumunu bulmak için bu yöntemi arayın.|
 |[CPathT::FindFilename](#findfilename)|Dosya adının yol içindeki konumunu bulmak için bu yöntemi arayın.|
@@ -312,7 +312,7 @@ Daha fazla bilgi için [PathCompactPath'e](/windows/win32/api/shlwapi/nf-shlwapi
 
 ## <a name="cpathtcompactpathex"></a><a name="compactpathex"></a>CPathT::CompactPathEx
 
-Yol bileşenlerini elipslerle değiştirerek, belirli sayıda karaktere sığacak bir dosya yolunu truncate etmek için bu yöntemi çağırın.
+Yol bileşenlerini elipsile değiştirerek, belirli sayıda karaktere sığacak bir dosya yolunu truncate etmek için bu yöntemi çağırın.
 
 ```
 BOOL CompactPathEx(UINT nMaxChars, DWORD dwFlags = 0);

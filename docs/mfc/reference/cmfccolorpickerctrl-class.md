@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CMFCColorPickerCtrl [MFC], SetType
 - CMFCColorPickerCtrl [MFC], DrawCursor
 ms.assetid: b9bbd03c-beb0-4b55-9765-9985fd05e5dc
-ms.openlocfilehash: c3c11db448ab31324367b7f314cd6bfe44c2e96d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: fe35ee5d6fc6484788a2636151c386689f4bdd96
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367695"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752527"
 ---
 # <a name="cmfccolorpickerctrl-class"></a>CMFCColorPickerCtrl Sınıfı
 
@@ -184,7 +184,7 @@ Seçili rengin RGB değeri.
 
 Kullanıcının seçtiği rengin renk tonunu, parlaklığını ve doygunluk değerlerini alır.
 
-```
+```cpp
 void GetHLS(
     double* hue,
     double* luminance,
@@ -250,7 +250,7 @@ Seçili rengin doygunluk bileşeni.
 
 Geçerli rengi belirtilen RGB renk bileşenleri veya belirtilen hücre altıgeni tarafından tanımlanan renge ayarlar.
 
-```
+```cpp
 void SelectCellHexagon(
     BYTE R,
     BYTE G,
@@ -292,7 +292,7 @@ Bu yöntemin ikinci aşırı yükleme belirtilen imleç konumu tarafından işar
 
 Geçerli rengi belirtilen RGB renk değerine ayarlar.
 
-```
+```cpp
 void SetColor(COLORREF Color);
 ```
 
@@ -307,7 +307,7 @@ void SetColor(COLORREF Color);
 
 Geçerli rengi belirtilen HLS renk değerine ayarlar.
 
-```
+```cpp
 void SetHLS(
     double hue,
     double luminance,
@@ -335,7 +335,7 @@ void SetHLS(
 
 Seçili rengin tonunu değiştirir.
 
-```
+```cpp
 void SetHue(double Hue);
 ```
 
@@ -350,7 +350,7 @@ void SetHue(double Hue);
 
 Şu anda seçili rengin parlaklığını değiştirir.
 
-```
+```cpp
 void SetLuminance(double Luminance);
 ```
 
@@ -365,7 +365,7 @@ void SetLuminance(double Luminance);
 
 Renk seçici denetiminde parlaklık çubuğunun genişliğini ayarlar.
 
-```
+```cpp
 void SetLuminanceBarWidth(int w);
 ```
 
@@ -382,7 +382,7 @@ Renk seçici denetiminin **Özel** sekmesinde bulunan parlaklık çubuğunu yeni
 
 İlk seçili rengi ayarlar.
 
-```
+```cpp
 void SetOriginalColor(COLORREF ref);
 ```
 
@@ -399,7 +399,7 @@ Renk seçici denetimi başharfe geçtiğinde bu yöntemi çağırın.
 
 Geçerli renk paletini ayarlar.
 
-```
+```cpp
 void SetPalette(CPalette* pPalette);
 ```
 
@@ -416,7 +416,7 @@ Renk paleti, renk seçici denetiminde sunulan renk dizisini tanımlar.
 
 Seçili rengin doygunluğu değişir.
 
-```
+```cpp
 void SetSaturation(double Saturation);
 ```
 
@@ -431,7 +431,7 @@ void SetSaturation(double Saturation);
 
 Görüntülemek için renk seçici denetiminin türünü ayarlar.
 
-```
+```cpp
 void SetType(COLORTYPE colorType);
 ```
 

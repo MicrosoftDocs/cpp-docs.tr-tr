@@ -220,12 +220,12 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-ms.openlocfilehash: 95de66a66d9c1a6f3abf992c5a9cd64ee1fe91ef
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8cb5d69ea6052b500ab7e92d2520ee70de597a83
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352208"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752338"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase Sınıfı
 
@@ -2088,7 +2088,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [IDM FONTNAME Komut Kimliğini](/previous-versions/aa769880\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [WebBrowser](/previous-versions/aa769880\(v=vs.85\)) denetimine IDM_FONTNAME Komut Kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetfontsize"></a><a name="setfontsize"></a>CHtmlEditCtrlBase::SetFontSize
 
@@ -2109,7 +2109,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM FONTSIZE komut kimliğini](/previous-versions/aa769881\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769881\(v=vs.85\)) denetimine IDM_FONTSIZE komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetforecolor"></a><a name="setforecolor"></a>CHtmlEditCtrlBase::SetForeColor
 
@@ -2134,7 +2134,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM FORECOLOR komut kimliğini](/previous-versions/aa769882\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769882\(v=vs.85\)) denetimine IDM_FORECOLOR komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetie5pastemode"></a><a name="setie5pastemode"></a>CHtmlEditCtrlBase::SetIE5PasteMode
 
@@ -2155,7 +2155,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM IE50_PASTE_MODE komut kimliğini](/previous-versions/aa769923\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769923\(v=vs.85\)) denetimine IDM_IE50_PASTE_MODE komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetliveresize"></a><a name="setliveresize"></a>CHtmlEditCtrlBase::SetLiveResize
 
@@ -2176,7 +2176,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM LIVERESIZE komut kimliğini](/previous-versions/aa769928\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769928\(v=vs.85\)) denetimine IDM_LIVERESIZE komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetmultiselect"></a><a name="setmultiselect"></a>CHtmlEditCtrlBase::SetMultiSelect
 
@@ -2197,7 +2197,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM MULTIPLESELECTION komut kimliğini](/previous-versions/aa769929\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769929\(v=vs.85\)) denetimine IDM_MULTIPLESELECTION komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetoverridecursor"></a><a name="setoverridecursor"></a>CHtmlEditCtrlBase::SetOverrideCursor
 
@@ -2218,7 +2218,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM OVERRIDE_CURSOR komut kimliğini](/previous-versions/aa769932\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769932\(v=vs.85\)) denetimine IDM_OVERRIDE_CURSOR komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetoverwritemode"></a><a name="setoverwritemode"></a>CHtmlEditCtrlBase::SetOverwriteMode
 
@@ -2239,7 +2239,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM OVERWRITE komut kimliğini](/previous-versions/aa770016\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa770016\(v=vs.85\)) denetimine IDM_OVERWRITE komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetrespectvisindesign"></a><a name="setrespectvisindesign"></a>CHtmlEditCtrlBase::SetRespectVisInDesign
 
@@ -2260,7 +2260,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM RESPECTVISIBILITY_INDESIGN komut kimliğini](/previous-versions/aa770023\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa770023\(v=vs.85\)) denetimine IDM_RESPECTVISIBILITY_INDESIGN komut kimliğini gönderir.
 
 ## <a name="chtmleditctrlbasesetshowalignedsitetags"></a><a name="setshowalignedsitetags"></a>CHtmlEditCtrlBase::SetShowAlignedSiteTags
 
@@ -2281,7 +2281,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM SHOWALIGNEDSITETAGS komut kimliğini](/previous-versions/aa769947\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769947\(v=vs.85\)) denetimine IDM_SHOWALIGNEDSITETAGS komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetshowalltags"></a><a name="setshowalltags"></a>CHtmlEditCtrlBase::SetShowAllEtiketler
 
@@ -2302,7 +2302,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM SHOWALLTAGS komut kimliğini](/previous-versions/aa769948\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769948\(v=vs.85\)) denetimine IDM_SHOWALLTAGS komut kimliğini gönderir.
 
 ## <a name="chtmleditctrlbasesetshowareatags"></a><a name="setshowareatags"></a>CHtmlEditCtrlBase::SetShowAreaEtiketler
 
@@ -2323,7 +2323,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM SHOWAREATAGS komut kimliğini](/previous-versions/aa769949\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769949\(v=vs.85\)) denetimine IDM_SHOWAREATAGS komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetshowbrtags"></a><a name="setshowbrtags"></a>CHtmlEditCtrlBase::SetShowBREtiketler
 
@@ -2344,7 +2344,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM SHOWWBRTAGS komut kimliğini](/previous-versions/aa769956\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769956\(v=vs.85\)) denetimine IDM_SHOWWBRTAGS komut kimliğini gönderir.
 
 ## <a name="chtmleditctrlbasesetshowcommenttags"></a><a name="setshowcommenttags"></a>CHtmlEditCtrlBase::SetShowCommentEtiketler
 
@@ -2365,7 +2365,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM SHOWCOMMENTTAGS komut kimliğini](/previous-versions/aa769950\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769950\(v=vs.85\)) denetimine IDM_SHOWCOMMENTTAGS komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetshowmisctags"></a><a name="setshowmisctags"></a>CHtmlEditCtrlBase::SetShowMiscEtiketler
 
@@ -2386,7 +2386,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM SHOWMISCTAGS komut kimliğini](/previous-versions/aa769952\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769952\(v=vs.85\)) denetimine IDM_SHOWMISCTAGS komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetshowscripttags"></a><a name="setshowscripttags"></a>CHtmlEditCtrlBase::SetShowScriptEtiketler
 
@@ -2407,7 +2407,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM SHOWSCRIPTTAGS komut kimliğini](/previous-versions/aa769953\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa769953\(v=vs.85\)) denetimine IDM_SHOWSCRIPTTAGS komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetshowstyletags"></a><a name="setshowstyletags"></a>CHtmlEditCtrlBase::SetShowStyleEtiketler
 
@@ -2428,7 +2428,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM SHOWSTYLETAGS komut kimliğini](/previous-versions/aa769954\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769954\(v=vs.85\)) denetimine IDM_SHOWSTYLETAGS komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbasesetshowunknowntags"></a><a name="setshowunknowntags"></a>CHtmlEditCtrlBase::SetShowUnknownTags
 
@@ -2449,7 +2449,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM SHOWUNKNOWNTAGS komut kimliğini](/previous-versions/aa769955\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769955\(v=vs.85\)) denetimine IDM_SHOWUNKNOWNTAGS komut kimliğini gönderir.
 
 ## <a name="chtmleditctrlbasetextarea"></a><a name="textarea"></a>CHtmlEditCtrlBase::TextArea
 
@@ -2470,7 +2470,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM TEXTAREA komut kimliğini](/previous-versions/aa769986\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769986\(v=vs.85\)) denetimine IDM_TEXTAREA komut kimliğini gönderir.
 
 ## <a name="chtmleditctrlbasetextbox"></a><a name="textbox"></a>CHtmlEditCtrlBase::TextBox
 
@@ -2491,7 +2491,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM TEXTBOX komut kimliğini](/previous-versions/aa769980\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769980\(v=vs.85\)) denetimine IDM_TEXTBOX komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbaseunbookmark"></a><a name="unbookmark"></a>CHtmlEditCtrlBase::UnBookmark
 
@@ -2507,7 +2507,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM UNBOOKMARK komut kimliğini](/previous-versions/aa770034\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webbrowser](/previous-versions/aa770034\(v=vs.85\)) denetimine IDM_UNBOOKMARK komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbaseunderline"></a><a name="underline"></a>CHtmlEditCtrlBase::Altı çizili
 
@@ -2523,7 +2523,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM UNDERLINE komut kimliğini](/previous-versions/aa770035\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa770035\(v=vs.85\)) denetimine IDM_UNDERLINE komut kimliği gönderir.
 
 ## <a name="chtmleditctrlbaseunlink"></a><a name="unlink"></a>CHtmlEditCtrlBase::Bağlantıyı Açma
 
@@ -2539,7 +2539,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM UNLINK komut kimliğini](/previous-versions/aa770037\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa770037\(v=vs.85\)) denetimine IDM_UNLINK komut kimliğini gönderir.
 
 ## <a name="chtmleditctrlbaseunorderlist"></a><a name="unorderlist"></a>CHtmlEditCtrlBase::Sıradışı Liste
 
@@ -2560,7 +2560,7 @@ Başarı S_OK veya hatada Bir hata HRESULT verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu [yöntem, IDM UNORDERLIST komut kimliğini](/previous-versions/aa769987\(v=vs.85\)) WebBrowser denetimine gönderir.
+Bu yöntem, [webtarayıcı](/previous-versions/aa769987\(v=vs.85\)) denetimine IDM_UNORDERLIST komut kimliği gönderir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

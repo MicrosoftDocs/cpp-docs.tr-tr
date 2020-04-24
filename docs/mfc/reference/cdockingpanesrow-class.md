@@ -90,12 +90,12 @@ helpviewer_keywords:
 - CDockingPanesRow [MFC], ShowPane
 - CDockingPanesRow [MFC], UpdateVisibleState
 ms.assetid: e7a17832-0ebb-4bce-b799-cec9b60f76fe
-ms.openlocfilehash: 8d6a6c4bb9a80dc9170029fd127a052f1bfaddda
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d7535ae6c5246a372fd1a48573716bb166991d4e
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375572"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753319"
 ---
 # <a name="cdockingpanesrow-class"></a>CDockingPanesRow Sınıfı
 
@@ -293,7 +293,7 @@ virtual BOOL Create();
 
 ## <a name="cdockingpanesrowexpandstretchedpanes"></a><a name="expandstretchedpanes"></a>CDockingPanesRow::ExpandStretchedPanes
 
-```
+```cpp
 void ExpandStretchedPanes();
 ```
 
@@ -301,7 +301,7 @@ void ExpandStretchedPanes();
 
 ## <a name="cdockingpanesrowexpandstretchedpanesrect"></a><a name="expandstretchedpanesrect"></a>CDockingPanesRow::ExpandStretchedPanesRect
 
-```
+```cpp
 void ExpandStretchedPanesRect();
 ```
 
@@ -309,7 +309,7 @@ void ExpandStretchedPanesRect();
 
 ## <a name="cdockingpanesrowfixupvirtualrects"></a><a name="fixupvirtualrects"></a>CDockingPanesRow::FixupVirtualRects
 
-```
+```cpp
 void FixupVirtualRects(
     bool bMoveBackToVirtualRect,
     CPane* pBarToExclude = NULL);
@@ -351,7 +351,7 @@ virtual void GetAvailableSpace(CRect& rect);
 
 ## <a name="cdockingpanesrowgetclientrect"></a><a name="getclientrect"></a>CDockingPanesRow::GetClientRect
 
-```
+```cpp
 void GetClientRect(CRect& rect) const;
 ```
 
@@ -383,7 +383,7 @@ int GetExtraSpace() const;
 
 ## <a name="cdockingpanesrowgetgroupfrompane"></a><a name="getgroupfrompane"></a>CDockingPanesRow::GetGroupFromPane
 
-```
+```cpp
 void GetGroupFromPane(
     CPane* pBar,
     CObList& lst);
@@ -483,7 +483,7 @@ virtual int GetVisibleCount();
 
 ## <a name="cdockingpanesrowgetwindowrect"></a><a name="getwindowrect"></a>CDockingPanesRow::GetWindowRect
 
-```
+```cpp
 void GetWindowRect(CRect& rect) const;
 ```
 
@@ -561,7 +561,7 @@ virtual void Move(int nOffset);
 
 ## <a name="cdockingpanesrowmovepane"></a><a name="movepane"></a>CDockingPanesRow::MovePane
 
-```
+```cpp
 void MovePane(
     CPane* pControlBar,
     CPoint ptOffset,
@@ -619,7 +619,7 @@ virtual void OnResizePane(CBasePane* pControlBar);
 
 ## <a name="cdockingpanesrowredrawall"></a><a name="redrawall"></a>CDockingPanesRow::RedrawAll
 
-```
+```cpp
 void RedrawAll();
 ```
 
@@ -707,7 +707,7 @@ virtual int ResizeByPaneDivider(int /*ignored*/);
 
 ## <a name="cdockingpanesrowscreentoclient"></a><a name="screentoclient"></a>CDockingPanesRow::ScreenToClient
 
-```
+```cpp
 void ScreenToClient(CRect& rect) const;
 ```
 
@@ -719,7 +719,7 @@ void ScreenToClient(CRect& rect) const;
 
 ## <a name="cdockingpanesrowsetextra"></a><a name="setextra"></a>CDockingPanesRow::SetExtra
 
-```
+```cpp
 void SetExtra(
     int nExtraSpace,
     AFX_ROW_ALIGNMENT rowExtraAlign);

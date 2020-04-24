@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CCheckListBox [MFC], SetCheck
 - CCheckListBox [MFC], SetCheckStyle
 ms.assetid: 1dd78438-00e8-441c-b36f-9c4f9ac0d019
-ms.openlocfilehash: 8ca8d3b2cb4ce3c5b070d883e0a418ebec3665b1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dc0e80e80d61104a4d8cb5f1cfd4e26a64c42249
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352376"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752737"
 ---
 # <a name="cchecklistbox-class"></a>CCheckListBox Sınıfı
 
@@ -209,7 +209,7 @@ Denetim listesi kutusu öğelerinin tümü aynı yükseklikte değilse, onay `Cr
 
 Bir denetim listesi kutusu öğesini etkinleştirmek veya devre dışı kalmak için bu işlevi arayın.
 
-```
+```cpp
 void Enable(
     int nIndex,
     BOOL bEnabled = TRUE);
@@ -326,7 +326,7 @@ Varsayılan uygulama yalnızca varsayılan konumu ve onay kutusunun boyutunu dö
 
 Belirtilen onay kutusunun durumunu ayarlar.
 
-```
+```cpp
 void SetCheck(
     int nIndex,
     int nCheck);
@@ -354,7 +354,7 @@ Aşağıdaki tabloda *nCheck* parametresi için olası değerler listeleilmekted
 
 Onay listesi kutusundaki onay kutularının stilini ayarlamak için bu işlevi arayın.
 
-```
+```cpp
 void SetCheckStyle(UINT nStyle);
 ```
 

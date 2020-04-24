@@ -28,12 +28,12 @@ helpviewer_keywords:
 - COleDataObject [MFC], IsDataAvailable
 - COleDataObject [MFC], Release
 ms.assetid: d1cc84be-2e1c-4bb3-a8a0-565eb08aaa34
-ms.openlocfilehash: 5e1545a033ab482e838fbc944b0ca9b3e543d651
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8b9565382de8ae731c166f60a0d1994c1b948a7b
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366124"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753913"
 ---
 # <a name="coledataobject-class"></a>COleDataObject Sınıfı
 
@@ -92,7 +92,7 @@ Uygulamanızda veri nesnelerini kullanma hakkında daha fazla bilgi için [Veri 
 
 Nesneyi bir OLE veri nesnesiyle `COleDataObject` ilişkilendirmek için bu işlevi çağırın.
 
-```
+```cpp
 void Attach(
     LPDATAOBJECT lpDataObject,
     BOOL bAutoRelease = TRUE);
@@ -131,7 +131,7 @@ Sıfırsız eğer başarılı; aksi takdirde 0.
 
 Öğeden veri biçimleri listesi `GetNextFormat` almak için sonraki çağrılara hazırlanmak için bu işlevi arayın.
 
-```
+```cpp
 void BeginEnumFormats();
 ```
 
@@ -288,7 +288,7 @@ COleDataObject'e yapılan bir çağrıdan [sonra::BeginEnumFormats](#beginenumfo
 
 Belirli bir biçimin kullanılabilirliğini kontrol etmek için [COleDataObject'i arayın::IsDataAvailable](#isdataavailable).
 
-Daha fazla bilgi için [Bkz. IEnumXXXX::Windows](/previous-versions//ms695273\(v=vs.85\)) SDK'da sonraki.
+Daha fazla bilgi için [Bkz. IEnumXXXX::Windows](/previous-versions/ms695273\(v=vs.85\)) SDK'da sonraki.
 
 ## <a name="coledataobjectisdataavailable"></a><a name="isdataavailable"></a>COleDataObject::IsDataAvailable
 
@@ -328,7 +328,7 @@ Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win
 
 Daha önce `COleDataObject` nesneyle ilişkili olan [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) nesnesinin sahipliğini serbest bırakmak için bu işlevi çağırın.
 
-```
+```cpp
 void Release();
 ```
 

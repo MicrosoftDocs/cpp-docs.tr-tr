@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CMFCRibbonStatusBarPane [MFC], StopAnimation
 - CMFCRibbonStatusBarPane [MFC], OnFinishAnimation
 ms.assetid: 5d034c3c-ecca-4267-b88c-0f55a2884dd0
-ms.openlocfilehash: 554b9fe364c6a213e038416a605c17cdd4f8e7d9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bb4e09eabab17061812ed22b2739d06accd57fee
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368794"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753508"
 ---
 # <a name="cmfcribbonstatusbarpane-class"></a>CMFCRibbonStatusBarPane Sınıfı
 
@@ -259,7 +259,7 @@ virtual void OnFinishAnimation();
 
 Durum çubuğu bölmesinde kesilmeden görüntülenebilen en uzun metni tanımlayın.
 
-```
+```cpp
 void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
 ```
 
@@ -276,7 +276,7 @@ void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
 
 Durum çubuğuna animasyon için kullanılabilecek bir resim listesi eklenir.
 
-```
+```cpp
 void SetAnimationList(
     HBITMAP hBmpAnimationList,
     int cxAnimation=16,
@@ -310,7 +310,7 @@ Görüntü listesi durum çubuğu bölmesine başarıyla iliştirilirse DOĞRU; 
 
 Durum çubuğu bölmesinin etiketinin metin hizasını ayarlar.
 
-```
+```cpp
 void SetTextAlign(int nAlign);
 ```
 
@@ -333,7 +333,7 @@ void SetTextAlign(int nAlign);
 
 Bölmeye atadığınız animasyonu başlatır.
 
-```
+```cpp
 void StartAnimation(
     UINT nFrameDelay=500,
     UINT nDuration=-1);
@@ -355,7 +355,7 @@ void StartAnimation(
 
 Durum çubuğu bölmesine atadığınız animasyonu durdurur.
 
-```
+```cpp
 void StopAnimation();
 ```
 

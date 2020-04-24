@@ -5,12 +5,12 @@ helpviewer_keywords:
 - property page data transfer functions in MFC
 - property pages [MFC], global MFC functions
 ms.assetid: 734f88bc-c776-4136-9b0e-f45c761a45c1
-ms.openlocfilehash: 1064cd99d1820ae8865fa632c3097441172c78c4
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6456a192a502a0fcc032eaefc667c90ecec86d42
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372990"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81751144"
 ---
 # <a name="property-pages-mfc"></a>Özellik Sayfaları (MFC)
 
@@ -49,7 +49,7 @@ Aşağıda, OLE denetimi için özellik sayfalarını oluşturmak ve yönetmek i
 
 Bir tamsayı özelliğinin değerini `DoDataExchange` özellik sayfasındaki açılan kutudaki geçerli seçimin diziniyle eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
-```
+```cpp
 void AFXAPI DDP_CBIndex(
     CDataExchange* pDX,
     int id,
@@ -83,7 +83,7 @@ Bu işlev, ilgili `DDX_CBIndex` işlev çağrısından önce çağrılmalıdır.
 
 Bir dize özelliğinin değerini `DoDataExchange` özellik sayfasındaki açılan kutudaki geçerli seçimle eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
-```
+```cpp
 void AFXAPI DDP_CBString(
     CDataExchange* pDX,
     int id,
@@ -117,7 +117,7 @@ Bu işlev, ilgili `DDX_CBString` işlev çağrısından önce çağrılmalıdır
 
 Özellik sayfasındaki açılan kutudaki `DoDataExchange` geçerli seçimle tam olarak eşleşen bir dize özelliğinin değerini eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
-```
+```cpp
 void AFXAPI DDP_CBStringExact(
     CDataExchange* pDX,
     int id,
@@ -151,7 +151,7 @@ Bu işlev, ilgili `DDX_CBStringExact` işlev çağrısından önce çağrılmal�
 
 Özelliğin değerini ilişkili özellik `DoDataExchange` sayfası onay kutusu denetimiyle eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
-```
+```cpp
 void AFXAPI DDP_Check(
     CDataExchange* pDX,
     int id,
@@ -185,7 +185,7 @@ Bu işlev, ilgili `DDX_Check` işlev çağrısından önce çağrılmalıdır.
 
 Bir tamsayı özelliğinin değerini `DoDataExchange` özellik sayfasındaki bir liste kutusundageçerli seçimin diziniyle eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
-```
+```cpp
 void AFXAPI DDP_LBIndex(
     CDataExchange* pDX,
     int id,
@@ -219,7 +219,7 @@ Bu işlev, ilgili `DDX_LBIndex` işlev çağrısından önce çağrılmalıdır.
 
 Özellik sayfasındaki liste kutusunda `DoDataExchange` geçerli seçimle bir dize özelliğinin değerini eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
-```
+```cpp
 void AFXAPI DDP_LBString(
     CDataExchange* pDX,
     int id,
@@ -253,7 +253,7 @@ Bu işlev, ilgili `DDX_LBString` işlev çağrısından önce çağrılmalıdır
 
 Özellik sayfasındaki liste kutusunda `DoDataExchange` geçerli seçimle tam olarak eşleşen bir dize özelliğinin değerini eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
-```
+```cpp
 void AFXAPI DDP_LBStringExact(
     CDataExchange* pDX,
     int id,
@@ -287,7 +287,7 @@ Bu işlev, ilgili `DDX_LBStringExact` işlev çağrısından önce çağrılmal�
 
 Özellik değerleri kaydedilirken özellik `DoDataExchange` sayfasından denetiminize özellik değerlerinin transferini tamamlamak için özellik sayfanızın işlevinde bu işlevi arayın.
 
-```
+```cpp
 void AFXAPI DDP_PostProcessing(CDataExchange * pDX);
 ```
 
@@ -310,7 +310,7 @@ Tüm veri alışverişi işlevleri tamamlandıktan sonra bu işlev çağrılmal�
 
 İlgili özellik sayfası radyo `DoPropExchange` düğmesi denetimi ile özelliğin değerini senkronize etmek için denetiminizin işlevinde bu işlevi arayın.
 
-```
+```cpp
 void AFXAPI DDP_Radio(
     CDataExchange* pDX,
     int id,
@@ -344,7 +344,7 @@ Bu işlev, ilgili `DDX_Radio` işlev çağrısından önce çağrılmalıdır.
 
 Özelliğin değerini ilişkili özellik `DoDataExchange` sayfası denetimiyle eşitlemek için denetiminizin işlevinde bu işlevi çağırın.
 
-```
+```cpp
 void AFXAPI DDP_Text(
     CDataExchange* pDX,
     int id,

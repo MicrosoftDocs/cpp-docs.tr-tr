@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CArray [MFC], SetAtGrow
 - CArray [MFC], SetSize
 ms.assetid: fead8b00-4cfd-4625-ad0e-251df62ba92f
-ms.openlocfilehash: 2c520a732edf54ebb36c07728ceb19791b351143
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3355e72c58365e97f8f3f8ce09754285f671915a
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377020"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753970"
 ---
 # <a name="carray-class"></a>CArray Sınıfı
 
@@ -209,7 +209,7 @@ Dizi, aynı anda bir öğe büyür.
 
 Bir dizinin öğelerini diğerine kopyalamak için bu üye işlevi kullanın.
 
-```
+```cpp
 void Copy(const CArray& src);
 ```
 
@@ -258,7 +258,7 @@ Diziler için sol taraftaki atama işlecinin uygulanması için kullanılır.
 
 Dizi büyütülme sırasında ayrılan tüm ekstra belleği serbest eder.
 
-```
+```cpp
 void FreeExtra();
 ```
 
@@ -385,7 +385,7 @@ Durum `GetUpperBound( )` = -1 dizi hiçbir öğe içerdiğini gösterir.
 
 Bir dizideki `InsertAt` belirli bir diziye bir öğe (veya bir öğenin birden çok kopyası) ekler ilk sürümü.
 
-```
+```cpp
 void InsertAt(
     INT_PTR nIndex,
     ARG_TYPE newElement,
@@ -502,7 +502,7 @@ Bir öğenin kendi üyelerinden birine işaretçi içerdiği veya başka bir yap
 
 Bu dizideki tüm öğeleri kaldırır.
 
-```
+```cpp
 void RemoveAll();
 ```
 
@@ -518,7 +518,7 @@ Dizi zaten boşsa, işlev yine de çalışır.
 
 Bir dizide belirli bir diziden başlayan bir veya daha fazla öğeyi kaldırır.
 
-```
+```cpp
 void RemoveAt(
     INT_PTR nIndex,
     INT_PTR nCount = 1);
@@ -546,7 +546,7 @@ Kaldırma noktasının üzerindeki dizide bulunandan daha fazla öğeyi kaldırm
 
 Dizi öğesini belirtilen dizide ayarlar.
 
-```
+```cpp
 void SetAt(INT_PTR nIndex, ARG_TYPE newElement);
 ```
 
@@ -575,7 +575,7 @@ Dizin değerinizin dizide geçerli bir konumu temsil ettiğinden emin olmalısı
 
 Dizi öğesini belirtilen dizide ayarlar.
 
-```
+```cpp
 void SetAtGrow(INT_PTR nIndex, ARG_TYPE newElement);
 ```
 
@@ -602,7 +602,7 @@ Gerekirse dizi otomatik olarak büyür (diğer bir şekilde üst sınır yeni ö
 
 Boş veya varolan bir dizinin boyutunu kurar; gerekirse bellek ayırır.
 
-```
+```cpp
 void SetSize(
     INT_PTR nNewSize,
     INT_PTR nGrowBy = -1);

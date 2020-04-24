@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CMFCShellListCtrl [MFC], Refresh
 - CMFCShellListCtrl [MFC], SetItemTypes
 ms.assetid: ad472958-5586-4c50-aadf-1844c30bf6e7
-ms.openlocfilehash: d5c987e1d7dbe053a0cff093d1a9113f762cee26
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 445556535217b0887a02227a0773c287911922a2
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368788"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753480"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl Sınıfı
 
@@ -153,7 +153,7 @@ S_OK başarılı olursa; E_FAIL otherwise.
 
 Kısayol menüsünü etkinleştiri.
 
-```
+```cpp
 void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```
 
@@ -443,7 +443,7 @@ virtual HRESULT Refresh();
 
 [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesinde listelenen öğelerin türünü ayarlar.
 
-```
+```cpp
 void SetItemTypes(SHCONTF nTypes);
 ```
 

@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CImageList [MFC], Write
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
-ms.openlocfilehash: eff2d0c1de88ebd9d949ebe197563c87c17e5b05
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 17cd2a94cb397e59e4622aea8ed7bb6fbe1eee43
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372442"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752690"
 ---
 # <a name="cimagelist-class"></a>CImageList Sınıfı
 
@@ -691,13 +691,13 @@ Hedef aygıt bağlamına işaretçi. Bu [CDC](../../mfc/reference/cdc-class.md) 
 Çizilecek görüntünün sıfır tabanlı dizini.
 
 *Pt*<br/>
-Görüntünün çizileceği x- ve y koordinatlarını içeren bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısı.
+Görüntünün çizileceği x- ve y koordinatlarını içeren bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısı.
 
 *Sz*<br/>
 Çizilecek görüntünün boyutunu gösteren [bir BOYUT](/windows/win32/api/windef/ns-windef-size) yapısı.
 
 *ptOrigin*<br/>
-Çizim işleminin sol üst köşesini, görüntünün kendisine göre belirten x- ve y koordinatlarını içeren bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısı. X-koordinatının solunda ve y-koordinatının üzerinde olan görüntünün pikselleri çizilmez.
+Çizim işleminin sol üst köşesini, görüntünün kendisine göre belirten x- ve y koordinatlarını içeren bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısı. X-koordinatının solunda ve y-koordinatının üzerinde olan görüntünün pikselleri çizilmez.
 
 *fStyle*<br/>
 Çizim stilini ve isteğe bağlı olarak bindirme görüntüsünü belirten bayrak. Bindirme görüntüsü hakkında bilgi için Açıklamalar bölümüne bakın. MFC varsayılan uygulaması, ILD_NORMAL, görüntü listesiiçin arka plan rengini kullanarak görüntüyü çizer. Arka plan rengi CLR_NONE değeri ise, görüntü bir maske kullanılarak saydam olarak çizilir.
@@ -874,7 +874,7 @@ static CImageList* PASCAL GetDragImage(
 ### <a name="parameters"></a>Parametreler
 
 *lpPoint*<br/>
-Geçerli sürükleme konumunu alan bir [POINT](/previous-versions/dd162805\(v=vs.85\)) yapısının adresi.
+Geçerli sürükleme konumunu alan bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısının adresi.
 
 *lpPointHotSpot*<br/>
 Sürükleme konumuna göre sürükleme görüntüsünün mahsup unu alan bir `POINT` yapının adresi.

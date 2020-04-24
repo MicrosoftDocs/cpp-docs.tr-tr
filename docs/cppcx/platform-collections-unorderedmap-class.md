@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMap
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-ms.openlocfilehash: c6f702850f5bf84b8b1bc857c9d0a744728d0cbd
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 80b46cb95f2fdb83922ca22e8aa06a89aca4bfde
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81354416"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82031504"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap Sınıfı
 
@@ -52,7 +52,7 @@ Haritadaki göreli sıralarını belirlemek için iki öğe değerini sıralama 
 
 - public enum sınıfı
 
-**UnorderedMap** temelde std için bir [sarmalayıcı::Windows](../standard-library/unordered-map-class.md) Runtime türlerinin depolama destekleyen unordered_map. Windows'un somut bir [uygulamasıdır::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) ve [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) türleri genel Windows Runtime arabirimleri arasında geçirilir. Ortak iade değeri `Platform::Collections::UnorderedMap` veya parametrebir tür kullanmaya çalışırsanız, derleyici hatası C3986 yükseltilir. Parametrenin türünü veya döndürme değerini Windows'a değiştirerek hatayı [düzeltebilirsiniz::Temel::Koleksiyonlar::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_).
+**UnorderedMap** temelde std için bir [sarmalayıcı::Windows](../standard-library/unordered-map-class.md) Runtime türlerinin depolama destekleyen unordered_map. Windows'un somut bir [uygulamasıdır::Foundation::Collections::IMap](/uwp/api/windows.foundation.collections.imap-2) ve [IObservableMap](/uwp/api/windows.foundation.collections.iobservablemap-2) türleri genel Windows Runtime arabirimleri arasında geçirilir. Ortak iade değeri `Platform::Collections::UnorderedMap` veya parametrebir tür kullanmaya çalışırsanız, derleyici hatası C3986 yükseltilir. Parametrenin türünü veya döndürme değerini Windows'a değiştirerek hatayı [düzeltebilirsiniz::Temel::Koleksiyonlar::IMap](/uwp/api/windows.foundation.collections.imap-2).
 
 Daha fazla bilgi için [Koleksiyonlar'a](../cppcx/collections-c-cx.md)bakın.
 
@@ -106,7 +106,7 @@ virtual void Clear();
 
 ## <a name="unorderedmapfirst-method"></a><a name="first"></a>SırasızMap::İlk Yöntem
 
-İlk [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) öğesini sıralanmamış haritada belirten bir yineleyici döndürür.
+İlk [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) öğesini sıralanmamış haritada belirten bir yineleyici döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -126,7 +126,7 @@ First() tarafından döndürülen yineleyiciyi tutmanın kullanışlı bir yolu,
 
 ## <a name="unorderedmapgetview-method"></a><a name="getview"></a>SırasızMap::GetView Yöntemi
 
-Geçerli Sıradışı Haritanın salt okunur görünümünü döndürür; yani, bir Platform::Koleksiyonlar::[Windows:Foundation::Collections::IMapView::IMapView]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) arabirimini uygulayan [sırasızMapView Sınıfıdır.](../cppcx/platform-collections-unorderedmapview-class.md)
+Geçerli Sıradışı Haritanın salt okunur görünümünü döndürür; yani, bir [Platform::Koleksiyonlar::Windows'u uygulayan SıradışıMapView](../cppcx/platform-collections-unorderedmapview-class.md) [Sınıfı::Hazırlık::Koleksiyonlar::IMapView::IMapView](/uwp/api/windows.foundation.collections.imapview-2) arayüzü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -177,7 +177,7 @@ virtual bool Insert(
 *anahtar*<br/>
 Anahtar değeri çiftinin anahtar kısmı. *Anahtar* türü *k*türüdür.
 
-*Değer*<br/>
+*value*<br/>
 Anahtar değeri çiftinin değer kısmı. *Değer* *türü, V*türüdür.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -217,7 +217,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
 
-[Bir MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler) olayı yükselten nesne ve meydana gelen değişiklik türü hakkında bilgi içerir. Ayrıca bakınız [IMapChangedEventArgs\<K>](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) ve [CollectionChange Numaralandırma](/uwp/api/windows.foundation.collections.collectionchange).
+[Bir MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler-2) olayı yükselten nesne ve meydana gelen değişiklik türü hakkında bilgi içerir. Ayrıca bakınız [IMapChangedEventArgs\<K>](/uwp/api/windows.foundation.collections.imapchangedeventargs-1) ve [CollectionChange Numaralandırma](/uwp/api/windows.foundation.collections.collectionchange).
 
 ## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri
 
@@ -241,7 +241,7 @@ Anahtar değeri çiftinin anahtar kısmı. *Anahtar* türü *k*türüdür.
 
 ## <a name="unorderedmapsize-method"></a><a name="size"></a>SırasızMap::Boyut Yöntemi
 
-Sıradışı Haritadaki [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) öğelerini verir.
+Sıradışı Haritadaki [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) öğelerini verir.
 
 ### <a name="syntax"></a>Sözdizimi
 

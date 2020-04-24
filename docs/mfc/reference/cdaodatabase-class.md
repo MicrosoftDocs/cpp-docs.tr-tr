@@ -58,12 +58,12 @@ helpviewer_keywords:
 - CDaoDatabase [MFC], m_pDAODatabase
 - CDaoDatabase [MFC], m_pWorkspace
 ms.assetid: 8ff5b342-964d-449d-bef1-d0ff56aadf6d
-ms.openlocfilehash: debba137878da49921df83da7630003a7d62db2f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0fbc4ee3f2033f7507a1ed68493fa7e48bc62c51
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369013"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754745"
 ---
 # <a name="cdaodatabase-class"></a>CDaoDatabase Sınıfı
 
@@ -315,7 +315,7 @@ Bir veya daha fazla seçeneği gösteren bir sonsayı. Olası değerler şunlard
 
 Veritabanındaki birincil tablodaki bir veya daha fazla alan la yabancı bir tablodaki (veritabanındaki başka bir tablo) bir veya daha fazla alan arasında ilişki kurmak için bu üye işlevi arayın.
 
-```
+```cpp
 void CreateRelation(
     LPCTSTR lpszName,
     LPCTSTR lpszTable,
@@ -378,7 +378,7 @@ Bu eylem altta yatan bir DAO ilişki nesnesi oluşturur, ancak MFC'nin ilişki n
 
 Belirtilen querydef 'i ( kayıtlı sorgu) nesnenin `CDaoDatabase` QueryDefs koleksiyonundan silmek için bu üye işlevini arayın.
 
-```
+```cpp
 void DeleteQueryDef(LPCTSTR lpszName);
 ```
 
@@ -397,7 +397,7 @@ querydef nesneleri oluşturma hakkında bilgi için [cDaoQueryDef sınıfına](.
 
 Veritabanı nesnesinin İlişkiler koleksiyonundan varolan bir ilişkiyi silmek için bu üye işlevi arayın.
 
-```
+```cpp
 void DeleteRelation(LPCTSTR lpszName);
 ```
 
@@ -416,7 +416,7 @@ Daha sonra, ilişki artık yok.
 
 Belirtilen tabloyu ve tüm verilerini nesnenin `CDaoDatabase` TableDefs koleksiyonundan silmek için bu üye işlevi arayın.
 
-```
+```cpp
 void DeleteTableDef(LPCTSTR lpszName);
 ```
 
@@ -440,7 +440,7 @@ tabledef nesneleri oluşturma hakkında bilgi için [cDaoTableDef sınıfına](.
 
 Eylem sorgusu çalıştırmak veya veritabanında bir SQL deyimi yürütmek için bu üye işlevi arayın.
 
-```
+```cpp
 void Execute(
     LPCTSTR lpszSQL,
     int nOptions = dbFailOnError);
@@ -559,7 +559,7 @@ Veritabanında tanımlanan sorgu sayısı.
 
 Veritabanında tanımlanan bir sorgu hakkında çeşitli bilgiler elde etmek için bu üye işlevini arayın.
 
-```
+```cpp
 void GetQueryDefInfo(
     int nIndex,
     CDaoQueryDefInfo& querydefinfo,
@@ -657,7 +657,7 @@ Veritabanındaki tablolar arasında tanımlanan ilişki sayısı.
 
 Veritabanının İlişkiler koleksiyonunda belirtilen bir ilişki hakkında bilgi almak için bu üye işlevini arayın.
 
-```
+```cpp
 void GetRelationInfo(
     int nIndex,
     CDaoRelationInfo& relinfo,
@@ -716,7 +716,7 @@ Veritabanında tanımlanan tablo sayısı.
 
 Veritabanında tanımlanan bir tablo hakkında çeşitli bilgiler elde etmek için bu üye işlevi arayın.
 
-```
+```cpp
 void GetTableDefInfo(
     int nIndex,
     CDaoTableDefInfo& tabledefinfo,
@@ -873,7 +873,7 @@ Bağlantı dizesini birden çok oturum açma yetkilendirme düzeyi (her biri far
 
 Bağlı veritabanı zaman önce sonraki işlemlere izin vermek için varsayılan saniye sayısını geçersiz kılmak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetQueryTimeout(short nSeconds);
 ```
 

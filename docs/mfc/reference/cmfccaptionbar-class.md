@@ -66,12 +66,12 @@ helpviewer_keywords:
 - CMFCCaptionBar [MFC], m_clrBarBorder
 - CMFCCaptionBar [MFC], m_clrBarText
 ms.assetid: acb54d5f-14ff-4c96-aeb3-7717cf566d9a
-ms.openlocfilehash: 3a1e8890176fe686b54fe4756dfd578869cbcdfb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c42b1ccb51a3c290e0887717d900543b8d5b277a
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367788"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752621"
 ---
 # <a name="cmfccaptionbar-class"></a>CMFCCaptionBar Sınıfı
 
@@ -227,7 +227,7 @@ Geçersiz kılınmadığı sürece FALSE döndürür.
 
 Resim yazısı çubuğundaki düğmeyi etkinleştirer veya devre dışı kılabilir.
 
-```
+```cpp
 void EnableButton(BOOL bEnable=TRUE);
 ```
 
@@ -473,7 +473,7 @@ Resim yazısı çubuğunun `CMFCCaptionBar` metninin görünümünü özelleşti
 
 Bitmap görüntüsünü resim yazısı çubuğundan kaldırır.
 
-```
+```cpp
 void RemoveBitmap();
 ```
 
@@ -481,7 +481,7 @@ void RemoveBitmap();
 
 Başlığı çubuğundan düğmeyi kaldırır.
 
-```
+```cpp
 void RemoveButton();
 ```
 
@@ -493,7 +493,7 @@ Resim yazısı çubuğu öğelerinin düzeni otomatik olarak ayarlanır.
 
 Simgeyi resim yazısı çubuğundan kaldırır.
 
-```
+```cpp
 void RemoveIcon();
 ```
 
@@ -501,7 +501,7 @@ void RemoveIcon();
 
 Metin etiketini resim yazısı çubuğundan kaldırır.
 
-```
+```cpp
 void RemoveText();
 ```
 
@@ -509,7 +509,7 @@ void RemoveText();
 
 Resim yazısı çubuğuiçin bit eşlem görüntüsünü ayarlar.
 
-```
+```cpp
 void SetBitmap(
     HBITMAP hBitmap,
     COLORREF clrTransparent,
@@ -557,7 +557,7 @@ Bitmap *bmpAlignment* parametresi tarafından belirtildiği gibi hizalanır.  Bu
 
 Resim yazısı çubuğunun kenarlık boyutunu ayarlar.
 
-```
+```cpp
 void SetBorderSize(int nSize);
 ```
 
@@ -570,7 +570,7 @@ void SetBorderSize(int nSize);
 
 Resim yazısı çubuğu için düğmeyi ayarlar.
 
-```
+```cpp
 void SetButton(
     LPCTSTR lpszLabel,
     UINT uiCmdUI,
@@ -596,7 +596,7 @@ DOĞRU düğme bir açılan ok görüntülerse, FALSE aksi.
 
 Düğmeye basılı kalıp kalmayacağını belirtir.
 
-```
+```cpp
 void SetButtonPressed(BOOL bPresed=TRUE);
 ```
 
@@ -609,7 +609,7 @@ DOĞRU düğme basılı durumunu tutarsa, FALSE aksi.
 
 Düğme için araç ucunu ayarlar.
 
-```
+```cpp
 void SetButtonToolTip(
     LPCTSTR lpszToolTip,
     LPCTSTR lpszDescription=NULL);
@@ -627,7 +627,7 @@ void SetButtonToolTip(
 
 Resim yazısı çubuğunun kenarlık stilini ayarlar.
 
-```
+```cpp
 void SetFlatBorder(BOOL bFlat=TRUE);
 ```
 
@@ -640,7 +640,7 @@ void SetFlatBorder(BOOL bFlat=TRUE);
 
 Resim yazısı çubuğu simgesini ayarlar.
 
-```
+```cpp
 void SetIcon(
     HICON hIcon,
     BarElementAlignment iconAlignment=ALIGN_RIGHT);
@@ -672,7 +672,7 @@ Simge *ikonHizalama* parametresine göre hizalanır. Aşağıdaki `BarElementAli
 
 Resim yazısı çubuğundaki görüntünün araç ucunu ayarlar.
 
-```
+```cpp
 void SetImageToolTip(
     LPCTSTR lpszToolTip,
     LPCTSTR lpszDescription=NULL);
@@ -690,7 +690,7 @@ void SetImageToolTip(
 
 Resim yazısı çubuğu öğesinin kenarı ile resim yazısı çubuğu denetiminin kenarı arasındaki mesafeyi ayarlar.
 
-```
+```cpp
 void SetMargin(int nMargin);
 ```
 
@@ -703,7 +703,7 @@ void SetMargin(int nMargin);
 
 Resim yazısı çubuğu için metin etiketini ayarlar.
 
-```
+```cpp
 void SetText(
     const CString& strText,
     BarElementAlignment textAlignment=ALIGN_RIGHT);

@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CArchive [MFC], WriteString
 - CArchive [MFC], m_pDocument
 ms.assetid: 9e950d23-b874-456e-ae4b-fe00781a7699
-ms.openlocfilehash: 46d30e38674d10aecdfdbf7be91c48063ba9f493
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ef8b6ec9060e8c15dd45f8203dadd2a2aca9e168
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377059"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753108"
 ---
 # <a name="carchive-class"></a>CArchive Sınıfı
 
@@ -146,7 +146,7 @@ Hakkında daha `CArchive`fazla bilgi için, makaleler [Serialization](../../mfc/
 
 Bir özel durum atmadan arşivi kapatmak için bu işlevi arayın.
 
-```
+```cpp
 void Abort ();
 ```
 
@@ -208,7 +208,7 @@ Arşivi kapatana kadar dosyanın durumunu değiştirmek için işlemleri kullana
 
 Arabellekte kalan tüm verileri temizler, arşivi kapatır ve arşivi dosyadan keser.
 
-```
+```cpp
 void Close();
 ```
 
@@ -226,7 +226,7 @@ Arşivüzerinde başka işlem yapılamasına izin verilmemektedir. Bir arşivi k
 
 Arşiv arabelleğinde kalan tüm verileri dosyaya yazılmaya zorlar.
 
-```
+```cpp
 void Flush();
 ```
 
@@ -346,7 +346,7 @@ Bir `IsStoring` arşivin durumu sıfır değilse, `IsLoading` durumu 0'dır ve t
 
 Bu üye işlevi, dosyaya gerçekten serileştirilen, ancak alt nesnelerin başvurulması için kullanılabilen nesneleri haritaya yerleştirmek için çağırın.
 
-```
+```cpp
 void MapObject(const CObject* pOb);
 ```
 
@@ -676,7 +676,7 @@ Metin verilerini içeren `LPTSTR`arabelleğe bir işaretçi döndüren sürümde
 
 Taban sınıfın sürüm bilgilerini depolamak ve yüklemek istediğinizde bu üye işlevi arayın.
 
-```
+```cpp
 void SerializeClass(const CRuntimeClass* pClassRef);
 ```
 
@@ -703,7 +703,7 @@ Gibi `ReadClass` `SerializeClass` , arşivlenmiş sınıf bilgilerinin çalışm
 
 Arşivden çok sayıda `SetLoadParams` `CObject`türetilmiş nesneyi okuyacaksanız arayın.
 
-```
+```cpp
 void SetLoadParams(UINT nGrowBy = 1024);
 ```
 
@@ -726,7 +726,7 @@ Herhangi bir `SetLoadParams` nesne yüklendikten sonra veya MapObject veya [Read
 
 Arşiv nesnesinde depolanan nesne şemasını *nSchema'ya*ayarlamak için bu üye işlevi arayın.
 
-```
+```cpp
 void SetObjectSchema(UINT nSchema);
 ```
 
@@ -749,7 +749,7 @@ Gelişmiş `SetObjectSchema` sürüm için kullanın; örneğin, türemiş bir s
 
 Arşivde çok sayıda `SetStoreParams` `CObject`türetilmiş nesne depolarken kullanın.
 
-```
+```cpp
 void SetStoreParams(UINT nHashSize = 2053, UINT nBlockSize = 128);
 ```
 
@@ -775,7 +775,7 @@ Herhangi bir `SetStoreParams` nesne depolandıktan sonra veya [MapObject](#mapob
 
 Arşive belirli sayıda bayt yazar.
 
-```
+```cpp
 void Write(const void* lpBuf, INT nMax);
 ```
 
@@ -801,7 +801,7 @@ Nesnelerinizde bulunan `Write` sıradan yapıları `Serialize` yazmak için işl
 
 Türemiş sınıfın serileştirilmesi sırasında bir taban sınıfın sürümünü ve sınıf bilgilerini depolamak için kullanın. `WriteClass`
 
-```
+```cpp
 void WriteClass(const CRuntimeClass* pClassRef);
 ```
 
@@ -828,7 +828,7 @@ Sınıf başvurusu hem okuma `WriteClass`hem de yazma işlemlerini yürüten [Se
 
 Belirtilenleri `CObject` arşivde saklar.
 
-```
+```cpp
 void WriteObject(const CObject* pOb);
 ```
 
@@ -858,7 +858,7 @@ Sınıfın `CAge`tanımı için CObList örneğine [bakın:CObList.](../../mfc/r
 
 Arabellekten `CArchive` nesneyle ilişkili dosyaya veri yazmak için bu üye işlevi kullanın.
 
-```
+```cpp
 void WriteString(LPCTSTR lpsz);
 ```
 

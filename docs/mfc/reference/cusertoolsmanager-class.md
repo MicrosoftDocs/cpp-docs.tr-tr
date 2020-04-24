@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CUserToolsManager [MFC], SetDefExt
 - CUserToolsManager [MFC], SetFilter
 ms.assetid: bdfa37ae-efca-4616-abb5-9d0dcd2d335b
-ms.openlocfilehash: c1f14657350c08679868299ce4878cca2ae10eec
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1e9be5d7cb81f2769b98d9baeae786873f5fa73d
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373234"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81751988"
 ---
 # <a name="cusertoolsmanager-class"></a>CusertoolsManager Sınıfı
 
@@ -460,7 +460,7 @@ Genellikle, doğrudan bu yöntemi aramak gerekmez, [CWinAppEx::SaveState](../../
 
 **Dosya Aç** iletişim kutusunun [(CFileDialog Class)](../../mfc/reference/cfiledialog-class.md) **Özelleştir** iletişim kutusunun **Araçlar** sekmesindeki **Komut** alanında kullandığı varsayılan uzantıyı belirtir.
 
-```
+```cpp
 void SetDefExt(const CString& strDefExt);
 ```
 
@@ -477,7 +477,7 @@ Kullanıcı kullanıcı aracıyla ilişkilendirilecek bir uygulama seçtiğinde 
 
 **Dosya Aç** iletişim kutusunun [(CFileDialog Class)](../../mfc/reference/cfiledialog-class.md) **Özelleştir** iletişim kutusunun **Araçlar** sekmesindeki **Komut** alanında kullandığı dosya filtresini belirtir.
 
-```
+```cpp
 void SetFilter(const CString& strFilter);
 ```
 

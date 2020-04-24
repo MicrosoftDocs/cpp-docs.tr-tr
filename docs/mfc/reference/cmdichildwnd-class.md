@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMDIChildWnd [MFC], MDIRestore
 - CMDIChildWnd [MFC], SetHandles
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
-ms.openlocfilehash: 0fbcb47f3148b72a3155e7c17cc913d652c70c2e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a547a21b96d035f507e749aeb19f891175498d5d
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370078"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754569"
 ---
 # <a name="cmdichildwnd-class"></a>CMDIChildWnd Sınıfı
 
@@ -207,7 +207,7 @@ Döndürülen çerçeve iki ebeveyn `CMDIChildWnd` kaldırıldı ve `CMDIChildWn
 
 MDI çerçeve penceresinden bağımsız olarak bir MDI alt penceresi etkinleştirmek için bu üye işlevi arayın.
 
-```
+```cpp
 void MDIActivate();
 ```
 
@@ -223,7 +223,7 @@ void MDIActivate();
 
 Bir MDI alt penceresini yok etmek için bu üye işlevi arayın.
 
-```
+```cpp
 void MDIDestroy();
 ```
 
@@ -239,7 +239,7 @@ void MDIDestroy();
 
 Bir MDI alt penceresini en üst düzeye çıkarmak için bu üye işlevini arayın.
 
-```
+```cpp
 void MDIMaximize();
 ```
 
@@ -255,7 +255,7 @@ Alt pencere en üst düzeye çıktığında, Windows istemci alanı çerçeve pe
 
 MDI alt penceresini maksimize edilmiş veya en aza indirilmiş boyuttan geri yüklemek için bu üye işlevi arayın.
 
-```
+```cpp
 void MDIRestore();
 ```
 
@@ -267,7 +267,7 @@ void MDIRestore();
 
 Menü ve hızlandırıcı kaynakları için tutamaçları ayarlar.
 
-```
+```cpp
 void SetHandles(
     HMENU hMenu,
     HACCEL hAccel);

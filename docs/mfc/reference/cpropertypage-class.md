@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CPropertyPage [MFC], SetModified
 - CPropertyPage [MFC], m_psp
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
-ms.openlocfilehash: 816948ea17f674c3cd693331502df33cce62610c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f46566eb562f1515e98aedf938ca68b225ee1b67
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363994"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81751108"
 ---
 # <a name="cpropertypage-class"></a>CPropertyPage Sınıfı
 
@@ -119,7 +119,7 @@ Sihirbaz olarak bir özellik sayfası oluşturma hakkında daha fazla bilgi içi
 
 Modal özellik sayfasının bir sayfasındaki verilerde kurtarılamaz bir değişiklik yapıldıktan sonra bu işlevi arayın.
 
-```
+```cpp
 void CancelToClose();
 ```
 
@@ -137,7 +137,7 @@ Modeless özellik sayfasında varsayılan olarak İptal düğmesi `CancelToClose
 
 Bir `CPropertyPage` nesne oluşturmak için bu üye işlevi çağırın.
 
-```
+```cpp
 void Construct(
     UINT nIDTemplate,
     UINT nIDCaption = 0);
@@ -555,7 +555,7 @@ Bir sayfa sıfır olmayan bir değer döndürürse, özellik sayfası iletiyi so
 
 Özellik sayfasındaki ayarların uygun dış nesneye uygulanıp uygulanmayacağına bağlı olarak Şimdi Uygula düğmesini etkinleştirmek veya devre dışı etmek için bu üye işlevini arayın.
 
-```
+```cpp
 void SetModified(BOOL bChanged = TRUE);
 ```
 

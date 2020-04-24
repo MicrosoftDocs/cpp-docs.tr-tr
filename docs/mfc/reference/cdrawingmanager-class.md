@@ -56,12 +56,12 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SetPixel
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-ms.openlocfilehash: 59c34a69b96cc9986db99b5f34bc38cf76f4909a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 73c5775c2cb83dea79401615b31f2194094fac8e
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374025"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753231"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager Sınıfı
 
@@ -174,7 +174,7 @@ DIB bit eşlemi nasıl oluşturulacak hakkında daha fazla bilgi için [CreateDI
 
 Saydam veya yarı saydam piksellere sahip bit eşlemleri görüntüler.
 
-```
+```cpp
 void DrawAlpha(
     CDC* pDstDC,
     const CRect& rectDst,
@@ -204,7 +204,7 @@ Bu yöntem, iki bit eşlem için alfa karıştırma gerçekleştirir. Alfa karı
 
 Verilen dolgu ve kenarlık renkleri ile bir elips çizer.
 
-```
+```cpp
 void DrawEllipse(
     const CRect& rect,
     COLORREF clrFill,
@@ -276,7 +276,7 @@ Sıfırsız eğer başarılı; aksi takdirde 0.
 
 Bir çizgi çizer.
 
-```
+```cpp
 void DrawLine(
     int x1,
     int y1,
@@ -311,7 +311,7 @@ void DrawLineA(
 
 Verilen dolgu ve kenarlık renkleriyle bir dikdörtgen çizer.
 
-```
+```cpp
 void DrawRect(
     const CRect& rect,
     COLORREF clrFill,
@@ -397,7 +397,7 @@ Aşağıdaki örnek, sınıfın yönteminin `DrawShadow` nasıl `CDrawingManager
 
 Dikdörtgen bir alanı iki renk degradesiyle doldurur.
 
-```
+```cpp
 void Fill4ColorsGradient(
     CRect rect,
     COLORREF colorStart1,
@@ -441,7 +441,7 @@ Bu yöntem, *nYüzde* 0'dan az veya 100'den fazlaysa bir sedama hatası oluştur
 
 Dikdörtgen bir alanı belirtilen renk degradesiyle doldurur.
 
-```
+```cpp
 void FillGradient(
     CRect rect,
     COLORREF colorStart,
@@ -481,7 +481,7 @@ Aşağıdaki örnek, sınıfın yönteminin `FillGradient` nasıl `CDrawingManag
 
 Dikdörtgen bir alanı belirli bir renk degradesiyle doldurur.
 
-```
+```cpp
 void FillGradient2 (
     CRect rect,
     COLORREF colorStart,
@@ -737,7 +737,7 @@ HSV veya HSL rengini RGB gösterimine dönüştürmek için aşağıdaki yöntem
 
 Dikdörtgen bir alanı çevirir.
 
-```
+```cpp
 void MirrorRect(
     CRect rect,
     BOOL bHorz = TRUE);
@@ -1012,7 +1012,7 @@ Ağırlıklı oran aşağıdaki formülle hesaplanır: (color1 \* k1 \* + color2
 
 Verilen dikdörtgenin içindeki kaynak DC içeriğini 90 derece döndürür.
 
-```
+```cpp
 void DrawRotated(
     CRect rectDest,
     CDC& dcSrc,

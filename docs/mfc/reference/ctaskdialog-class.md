@@ -116,12 +116,12 @@ helpviewer_keywords:
 - CTaskDialog [MFC], ShowDialog
 - CTaskDialog [MFC], TaskDialogCallback
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
-ms.openlocfilehash: e9aeee31d2952d5362c983934ce85f0332f553fa
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 79f52d275d360cf8447b8977b8196ea5f95eacd8
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366643"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752292"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog Sınıfı
 
@@ -255,7 +255,7 @@ CTaskDialog Örneği
 
 Yeni bir komut düğmesi `CTaskDialog`denetimi ekler.
 
-```
+```cpp
 void AddCommandControl(
     int nCommandControlID,
     const CString& strCaption,
@@ -291,7 +291,7 @@ Kullanıcı bir komut düğmesi denetimi seçtiğinde `CTaskDialog` kapanır. Uy
 
 Bir radyo düğmesi `CTaskDialog`ekler.
 
-```
+```cpp
 void CTaskDialog::AddRadioButton(
     int nRadioButtonID,
     const CString& strCaption,
@@ -648,7 +648,7 @@ Uygulamanızı çalıştıran bilgisayarın `CTaskDialog` sınıfı destekleyip 
 
 Dize tablosundaki verileri kullanarak komut düğmesi denetimleri ekler.
 
-```
+```cpp
 void LoadCommandControls(
     int nIDCommandControlsFirst,
     int nIDCommandControlsLast);
@@ -676,7 +676,7 @@ Varsayılan olarak, yeni komut düğmesi denetimleri etkinleştirilir ve yüksek
 
 String tablosundaki verileri kullanarak radyo düğmesi denetimleri ekler.
 
-```
+```cpp
 void LoadRadioButtons(
     int nIDRadioButtonsFirst,
     int nIDRadioButtonsLast);
@@ -930,7 +930,7 @@ Varsayılan uygulama S_OK döndürür.
 
 Tüm komut düğmesi denetimlerini `CTaskDialog`.
 
-```
+```cpp
 void RemoveAllCommandControls();
 ```
 
@@ -942,7 +942,7 @@ void RemoveAllCommandControls();
 
 Tüm radyo düğmelerini `CTaskDialog`kaldırır.
 
-```
+```cpp
 void RemoveAllRadioButtons();
 ```
 
@@ -954,7 +954,7 @@ void RemoveAllRadioButtons();
 
 Bir komut düğmesi denetimini `CTaskDialog`güncelleştirir.
 
-```
+```cpp
 void SetCommandControlOptions(
     int nCommandControlID,
     BOOL bEnabled,
@@ -984,7 +984,7 @@ Komut düğmesi denetiminin etkin olup olmadığını veya `CTaskDialog` sınıf
 
 Etkinleştirilmesi ve UAC yüksekliği gerektirmesi için ortak düğmelerin bir alt kümesini güncelleştirir.
 
-```
+```cpp
 void SetCommonButtonOptions(
     int nDisabledButtonMask,
     int nElevationButtonMask = 0);
@@ -1014,7 +1014,7 @@ Bu yöntem, daha önce devre `CTaskDialog` dışı bırakılmış olsa bile, *nD
 
 `CTaskDialog`'ye ortak düğmeler ekler.
 
-```
+```cpp
 void SetCommonButtons(
     int nButtonMask,
     int nDisabledButtonMask = 0,
@@ -1050,7 +1050,7 @@ Varsayılan olarak, tüm ortak düğmeler etkindir ve yükseklik gerektirmez.
 
 İçeriği `CTaskDialog`güncelleştirir.
 
-```
+```cpp
 void SetContent(const CString& strContent);
 ```
 
@@ -1071,7 +1071,7 @@ void SetContent(const CString& strContent);
 
 Varsayılan komut düğmesi denetimini belirtir.
 
-```
+```cpp
 void SetDefaultCommandControl(int nCommandControlID);
 ```
 
@@ -1094,7 +1094,7 @@ Bu yöntem, *nCommandControlID*tarafından belirtilen komut düğmesi denetimini
 
 Varsayılan radyo düğmesini belirtir.
 
-```
+```cpp
 void SetDefaultRadioButton(int nRadioButtonID);
 ```
 
@@ -1117,7 +1117,7 @@ Bu *yöntem, nRadioButtonID*tarafından belirtilen radyo düğmesini bulamıyors
 
 Genişliği `CTaskDialog`ayarlar.
 
-```
+```cpp
 void SetDialogWidth(int nWidth = 0);
 ```
 
@@ -1140,7 +1140,7 @@ Parametre *nWidth* 0'dan büyük veya eşit olmalıdır. Aksi takdirde, bu yönt
 
 `CTaskDialog`Genişletme alanını güncelleştirir.
 
-```
+```cpp
 void SetExpansionArea(
     const CString& strExpandedInformation,
     const CString& strCollapsedLabel = _T(""),
@@ -1172,7 +1172,7 @@ void SetExpansionArea(
 
 Altbilgi simgesini `CTaskDialog`güncelleştirir.
 
-```
+```cpp
 void SetFooterIcon(HICON hFooterIcon);
 void SetFooterIcon(LPCWSTR lpszFooterIcon);
 ```
@@ -1201,7 +1201,7 @@ A `CTaskDialog` yalnızca bir `HICON` `LPCWSTR` altbilgi simgesi olarak kabul ed
 
 Altbilgideki metni `CTaskDialog`güncelleştirir.
 
-```
+```cpp
 void SetFooterText(const CString& strFooterText);
 ```
 
@@ -1222,7 +1222,7 @@ Altbilgi simgesi alt kısmında altbilgi metninin yanında `CTaskDialog`görün�
 
 Ana simgeyi `CTaskDialog`güncelleştirir.
 
-```
+```cpp
 void SetMainIcon(HICON hMainIcon);
 void SetMainIcon(LPCWSTR lpszMainIcon);
 ```
@@ -1249,7 +1249,7 @@ A `CTaskDialog` yalnızca bir `HICON` `LPCWSTR` veya ana simge olarak kabul edil
 
 Günceller ana talimat `CTaskDialog`.
 
-```
+```cpp
 void SetMainInstruction(const CString& strInstructions);
 ```
 
@@ -1270,7 +1270,7 @@ void SetMainInstruction(const CString& strInstructions);
 
 Için seçenekleri `CTaskDialog`yapılandırır.
 
-```
+```cpp
 void SetOptions(int nOptionFlag);
 ```
 
@@ -1312,7 +1312,7 @@ Aşağıdaki tablotüm geçerli seçenekleri listeler.
 
 Bir seçim çerçevesi çubuğunu `CTaskDialog` yapılandırır ve iletişim kutusuna ekler.
 
-```
+```cpp
 void SetProgressBarMarquee(
     BOOL bEnabled = TRUE,
     int nMarqueeSpeed = 0);
@@ -1342,7 +1342,7 @@ Bu yöntem, *nMarqueeSpeed* 0'dan küçükse [ENSURE](diagnostic-services.md#ens
 
 İlerleme çubuğunun konumunu ayarlar.
 
-```
+```cpp
 void SetProgressBarPosition(int nProgressPos);
 ```
 
@@ -1363,7 +1363,7 @@ Bu yöntem, *progressPos* ilerleme çubuğu aralığında değilse [ENSURE](diag
 
 İlerleme çubuğunun aralığını ayarlar.
 
-```
+```cpp
 void SetProgressBarRange(
     int nRangeMin,
     int nRangeMax);
@@ -1393,7 +1393,7 @@ bu *yöntem, nRangeMin* *nRangeMax'ten*az değilse [ENSURE](diagnostic-services.
 
 İlerleme çubuğunun durumunu ayarlar ve 'de `CTaskDialog`görüntüler.
 
-```
+```cpp
 void SetProgressBarState(int nState = PBST_NORMAL);
 ```
 
@@ -1424,7 +1424,7 @@ CTaskDialog ile ilerleme çubuğunun nerede durduğunu [ayarlayabilirsiniz::SetP
 
 Radyo düğmesini etkinleştirir veya devre dışı kılabilir.
 
-```
+```cpp
 void SetRadioButtonOptions(
     int nRadioButtonID,
     BOOL bEnabled);
@@ -1450,7 +1450,7 @@ Bu yöntem, *nRadioButtonID* bir radyo düğmesi için geçerli bir kimlik [değ
 
 Doğrulama onay kutusunun işaretli durumunu ayarlar.
 
-```
+```cpp
 void SetVerificationCheckbox(BOOL bChecked);
 ```
 
@@ -1467,7 +1467,7 @@ void SetVerificationCheckbox(BOOL bChecked);
 
 Doğrulama onay kutusunun sağında görüntülenen metni ayarlar.
 
-```
+```cpp
 void SetVerificationCheckboxText(CString& strVerificationText);
 ```
 
@@ -1488,7 +1488,7 @@ Sınıfın bu örneği zaten [ENSURE](diagnostic-services.md#ensure) görüntül
 
 Başlığı `CTaskDialog`ayarlar.
 
-```
+```cpp
 void SetWindowTitle(CString& strWindowTitle);
 ```
 

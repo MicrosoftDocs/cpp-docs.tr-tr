@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CBitmapRenderTarget [MFC], GetBitmapRenderTarget
 - CBitmapRenderTarget [MFC], m_pBitmapRenderTarget
 ms.assetid: c89a4437-812e-4943-acb2-b429a04cc4d2
-ms.openlocfilehash: 6249c121f7bcca0675a8138baef0e2cdc9e632d8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8ba8c8819b47185315d67d732fc90ab2ffc0ad0a
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352597"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752936"
 ---
 # <a name="cbitmaprendertarget-class"></a>CBitmapRenderTarget Sınıfı
 
@@ -80,7 +80,7 @@ class CBitmapRenderTarget : public CRenderTarget;
 
 Nesneye varolan render hedef arabirimi ataşır
 
-```
+```cpp
 void Attach(ID2D1BitmapRenderTarget* pTarget);
 ```
 

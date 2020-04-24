@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CMFCColorButton [MFC], UpdateColor
 - CMFCColorButton [MFC], m_bEnabledInCustomizeMode
 ms.assetid: 9fdf34ae-4cc5-4c5e-9d89-1c50e8a73699
-ms.openlocfilehash: 21d05fd8e805467f1a7a77d20c81d5ba0401455e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cf24c162d0eda272f73c69c434589ae6ef3332a4
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367727"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752554"
 ---
 # <a name="cmfccolorbutton-class"></a>CMFCColorButton Sınıfı
 
@@ -147,7 +147,7 @@ CMFCColorButton();
 
 Renk seçici denetiminin "otomatik" düğmesini etkinleştirin veya devre dışı düşürün ve otomatik (varsayılan) rengi ayarlayın.
 
-```
+```cpp
 void EnableAutomaticButton(
     LPCTSTR lpszLabel,
     COLORREF colorAutomatic,
@@ -171,7 +171,7 @@ void EnableAutomaticButton(
 
 Normal renk düğmelerinin altında görünen "diğer" düğmesini etkinleştirin veya devre dışı edin.
 
-```
+```cpp
 void EnableOtherButton(
     LPCTSTR lpszLabel,
     BOOL bAltColorDlg=TRUE,
@@ -335,7 +335,7 @@ virtual void OnShowColorPopup();
 
 Korumalı veri `m_pPalette` üyesini belirtilen palete veya varsayılan sistem paletine başolarak laştırır.
 
-```
+```cpp
 void RebuildPalette(CPalette* pPal);
 ```
 
@@ -349,7 +349,7 @@ void RebuildPalette(CPalette* pPal);
 
 Düğmenin rengini belirtir.
 
-```
+```cpp
 void SetColor(COLORREF color);
 ```
 
@@ -386,7 +386,7 @@ Renk adları listesi uygulama başına geneldir. Sonuç olarak, bu yöntem param
 
 Kullanıcının renk seçimi işlemi sırasında kullanıcıya sunulan renkler tablosunda görüntülenen sütun sayısını tanımlar.
 
-```
+```cpp
 void SetColumnsNumber(int nColumns);
 ```
 
@@ -403,7 +403,7 @@ Kullanıcı, önceden tanımlanmış renklerden oluşan bir tablo görüntüleye
 
 Bir renk kümesini ve kümenin adını belirtir. Renk kümesi [CMFCColorBar Sınıf](../../mfc/reference/cmfccolorbar-class.md) nesnesi kullanılarak görüntülenir.
 
-```
+```cpp
 void SetDocumentColors(
     LPCTSTR lpszLabel,
     CList<COLORREF,COLORREF>& lstColors);
@@ -425,7 +425,7 @@ Bir `CMFCColorButton` [nesne, CMFCColorBar Sınıfı](../../mfc/reference/cmfcco
 
 Açılır renk çubuğunda görüntülenecek standart renkleri belirtir.
 
-```
+```cpp
 void SetPalette(CPalette* pPalette);
 ```
 

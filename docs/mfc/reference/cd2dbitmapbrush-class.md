@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CD2DBitmapBrush [MFC], m_pBitmapBrush
 - CD2DBitmapBrush [MFC], m_pBitmapBrushProperties
 ms.assetid: 46ebbe34-66e0-44c8-af1d-d129e851de5e
-ms.openlocfilehash: e26202392bf4783598aec0dddfea514fce806a8c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8d0804c094204bc0e8ab420e20c8b6a6a35dc70a
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369307"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81754284"
 ---
 # <a name="cd2dbitmapbrush-class"></a>CD2DBitmapFırça Sınıfı
 
@@ -132,7 +132,7 @@ virtual ~CD2DBitmapBrush();
 
 Nesneye varolan kaynak arabirimi ataştırır
 
-```
+```cpp
 void Attach(ID2D1BitmapBrush* pResource);
 ```
 
@@ -200,7 +200,7 @@ Dosya nın adını içeren null-sonlandırılan dize işaretçi.
 
 Nesneyi başharfe alar
 
-```
+```cpp
 void CommonInit(D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties);
 ```
 
@@ -346,7 +346,7 @@ Nesne henüz başharfe çevrilmediyse ID2D1BitmapBrush arabirimine veya NULL'a i
 
 Bu fırçanın boyamak için kullandığı bit eşlemi kaynağını belirtir
 
-```
+```cpp
 void SetBitmap(CD2DBitmap* pBitmap);
 ```
 
@@ -359,7 +359,7 @@ Fırça tarafından kullanılan bitmap kaynağı
 
 Fırçanın bit haritasını geçen alanları yatay olarak nasıl kutuladığını belirtir
 
-```
+```cpp
 void SetExtendModeX(D2D1_EXTEND_MODE extendModeX);
 ```
 
@@ -372,7 +372,7 @@ Fırçanın bit haritasını geçen alanları yatay olarak nasıl kutuladığın
 
 Fırçanın bit eşleminin ötesine uzanan alanları dikey olarak nasıl kutuladığını belirtir
 
-```
+```cpp
 void SetExtendModeY(D2D1_EXTEND_MODE extendModeY);
 ```
 
@@ -385,7 +385,7 @@ Fırçanın bit haritasını geçen alanları dikey olarak nasıl kutuladığın
 
 Fırça bit eşlemi ölçeklendiğinde veya döndürüldüğünde kullanılan enterpolasyon modunu belirtir
 
-```
+```cpp
 void SetInterpolationMode(D2D1_BITMAP_INTERPOLATION_MODE interpolationMode);
 ```
 

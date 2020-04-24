@@ -8,12 +8,12 @@ helpviewer_keywords:
 - memory leaks [MFC], detecting
 - detecting memory leaks [MFC]
 ms.assetid: 229d9de7-a6f3-4cc6-805b-5a9d9b1bfe1d
-ms.openlocfilehash: 8f49a9faf70673c62167deeaa1bef33e4882378f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 94a2fb65a9a3030f9dc683d0eb30f476b9de1cad
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369994"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81752608"
 ---
 # <a name="cmemorystate-structure"></a>CMemoryState Yapısı
 
@@ -79,7 +79,7 @@ Nasıl kullanılacağı `CMemoryState` ve diğer tanılama hakkında daha fazla 
 
 Belleğin anlık görüntüsünü alır ve `CMemoryState` bu nesnede saklar.
 
-```
+```cpp
 void Checkpoint();
 ```
 
@@ -137,7 +137,7 @@ Bir `CMemoryState` denetim noktası tarafından tanımlanan yeni bellek durumu.
 
 Bu `CMemoryState` nesne için son [Checkpoint](#checkpoint) çağrısından `CObject` bu yana ayrılan (ve hala tahsis edilen) sınıftan türetilen bir türdeki tüm nesneler için `Dump` işlevi çağırır.
 
-```
+```cpp
 void DumpAllObjectsSince() const;
 ```
 
@@ -153,7 +153,7 @@ Başlatılmamış `DumpAllObjectsSince` `CMemoryState` bir nesneyle arama, belle
 
 Fark üye işlevi tarafından doldurulan `CMemoryState` bir nesneden kısa [Difference](#difference) bir bellek istatistikleri raporu yazdırır.
 
-```
+```cpp
 void DumpStatistics() const;
 ```
 

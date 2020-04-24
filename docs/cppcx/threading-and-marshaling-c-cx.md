@@ -1,5 +1,5 @@
 ---
-title: İş parçacığı oluşturma veC++hazırlama (/CX)
+title: İş Parçacığı Oluşturma ve Hazırlama (C++/CX)
 ms.date: 12/30/2016
 f1_keywords:
 - C4451
@@ -8,36 +8,36 @@ helpviewer_keywords:
 - agility, C++/CX
 - C++/CX, threading issues
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
-ms.openlocfilehash: 05601367b6907e34d9d67364d35988a37ceae40c
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 6b57366df5f466ffe49e4c0b46e05b1eed515535
+ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70741121"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82032492"
 ---
-# <a name="threading-and-marshaling-ccx"></a>İş parçacığı oluşturma veC++hazırlama (/CX)
+# <a name="threading-and-marshaling-ccx"></a>İş Parçacığı Oluşturma ve Hazırlama (C++/CX)
 
-Çoğu durumda, standart C++ nesneler gibi Windows çalışma zamanı sınıf örneklerine herhangi bir iş parçacığından erişilebilir. Bu tür sınıflar "çevik" olarak adlandırılır. Ancak, Windows ile birlikte gelen çok sayıda Windows Çalışma Zamanı sınıfı çevik değildir ve standart C++ nesnelerden com nesneleri gibi daha fazla tükemelidir. Çevik olmayan sınıfları kullanmak için bir COM uzmanı olmanız gerekmez, ancak sınıfın iş parçacığı modelini ve sıralama davranışını dikkate almanız gerekir. Bu makalede, çevik olmayan bir sınıfın örneğini kullanmanız gereken nadir senaryolar için arka plan ve kılavuz sağlanmaktadır.
+Durumların büyük çoğunluğunda, standart C++ nesneleri gibi Windows Runtime sınıflarının örneklerine herhangi bir iş parçacığından erişilebilir. Bu tür sınıflar "çevik" olarak adlandırılır. Ancak, Windows ile birlikte gönderi yapan az sayıdawindows Runtime sınıfı çevik değildir ve standart C++ nesnelerinden çok COM nesneleri gibi tüketilmelidir. Çevik olmayan sınıfları kullanmak için com uzmanı olmanız gerekmez, ancak sınıfın iş parçacığı modelini ve mareşaldavranışını göz önünde bulundurmanız gerekir. Bu makalede, çevik olmayan bir sınıf örneğini tüketmeniz gereken nadir senaryolar için arka plan ve kılavuz sağlar.
 
-## <a name="threading-model-and-marshaling-behavior"></a>İş parçacığı modeli ve sıralama davranışı
+## <a name="threading-model-and-marshaling-behavior"></a>İş parçacığı modeli ve mareşaldavranışı
 
-Bir Windows Çalışma Zamanı sınıfı, uygulanan iki öznitelik tarafından belirtildiği gibi çeşitli yollarla eşzamanlı iş parçacığı erişimini destekleyebilir:
+Windows Runtime sınıfı, uygulanan iki öznitelikte belirtildiği gibi, eşzamanlı iş parçacığı erişimini çeşitli şekillerde destekleyebilir:
 
-- `ThreadingModel`öznitelik, `ThreadingModel` numaralandırma tarafından tanımlanan bir değerden birine (STA, MTA veya her ikisi birden) sahip olabilir.
+- `ThreadingModel`öznitelik, numaralandırma tarafından `ThreadingModel` tanımlandığı gibi STA, MTA veya Her Ikisi gibi değerlerden birine sahip olabilir.
 
-- `MarshallingBehavior`öznitelik, `MarshallingType` sabit listesi tarafından tanımlanan çevik, yok veya standart değerlerinden birine sahip olabilir.
+- `MarshallingBehavior`öznitelik, numaralandırma tarafından `MarshallingType` tanımlanan Çevik, Yok veya Standart değerlerinden birine sahip olabilir.
 
-`ThreadingModel` Öznitelik, etkinleştirildiğinde sınıfın nereye yükleneceğini belirtir: yalnızca bir kullanıcı arabirimi iş parçacığı (STA) bağlamında, yalnızca bir arka plan iş parçacığı (MTA) bağlamında veya nesneyi oluşturan iş parçacığı bağlamında (her ikisi de). `MarshallingBehavior` Öznitelik değerleri nesnenin çeşitli iş parçacığı bağlamlarında nasıl davrandığını ifade eder; çoğu durumda, bu değerleri ayrıntılı olarak anlamanız gerekmez.  Windows API tarafından sunulan sınıfların yüzde 90 ' i ve `ThreadingModel` `MarshallingType`= çevik ' i vardır. Bu, düşük düzeyli iş parçacığı ayrıntılarını saydam ve verimli bir şekilde işleyebilecekleri anlamına gelir.   "Çevik" `ref new` bir sınıf oluşturmak için kullandığınızda, ana uygulama iş parçacığınızdan veya bir ya da daha fazla çalışan iş parçacığından bu yöntem üzerinde yöntemler çağırabilirsiniz.  Diğer bir deyişle, kodunuzun herhangi bir yerinden Windows veya üçüncü taraf tarafından sağlanmadığına bakılmaksızın çevik bir sınıf kullanabilirsiniz. Sınıfın iş parçacığı modeli veya sıralama davranışına endişelenmeniz gerekmez.
+Öznitelik, `ThreadingModel` etkinleştirildiğinde sınıfın nerede yüklendiğini belirtir: yalnızca bir kullanıcı arabirimi iş parçacığı (STA) bağlamında, yalnızca bir arka plan iş parçacığı (MTA) bağlamında veya nesneyi oluşturan iş parçacığı bağlamında (Her ikisi) belirtilir. Öznitelik değerleri, `MarshallingBehavior` nesnenin çeşitli iş parçacığı bağlamlarında nasıl nasıl hissettiğini ifade eder; çoğu durumda, bu değerleri ayrıntılı olarak anlamak zorunda değilsiniz.  Windows API tarafından sağlanan sınıfların yaklaşık yüzde 90'ı `MarshallingType`=Her ikisine ve =Çevik'e sahiptir. `ThreadingModel` Bu, düşük düzeyli iş parçacığı ayrıntılarını saydam ve verimli bir şekilde işleyebilirler anlamına gelir.   "Çevik" `ref new` bir sınıf oluşturmak için kullandığınızda, bu sınıfüzerindeki yöntemleri ana uygulama iş parçacığınızdan veya bir veya daha fazla alt iş parçacığından arayabilirsiniz.  Başka bir deyişle, kodunuzun herhangi bir yerinden, Windows veya üçüncü bir taraf tarafından sağlanan olsun, çevik bir sınıf kullanabilirsiniz. Sınıfın iş parçacığı modeli veya mareşaldavranışı ile ilgili olmak zorunda değilsiniz.
 
-## <a name="consuming-windows-runtime-components"></a>Windows Çalışma Zamanı bileşenleri kullanma
+## <a name="consuming-windows-runtime-components"></a>Windows Runtime bileşenlerini tüketme
 
-Bir Evrensel Windows Platformu uygulaması oluşturduğunuzda, hem çevik hem de çevik olmayan bileşenlerle etkileşim kurabilirsiniz. Çevik olmayan bileşenlerle etkileşim kurarken, aşağıdaki uyarıyla karşılaşabilirsiniz.
+Evrensel Bir Windows Platformu uygulaması oluşturduğunuzda, hem çevik hem de çevik olmayan bileşenlerle etkileşim kurabilirsiniz. Çevik olmayan bileşenlerle etkileşimkurduğunuzda, aşağıdaki uyarıyla karşılaşabilirsiniz.
 
-### <a name="compiler-warning-c4451-when-consuming-non-agile-classes"></a>Çevik olmayan sınıfları tükettiği zaman derleyici uyarısı C4451
+### <a name="compiler-warning-c4451-when-consuming-non-agile-classes"></a>Çevik olmayan sınıfları tüketirken Derleyici uyarısı C4451
 
-Çeşitli nedenlerle bazı sınıflar çevik olamaz. Hem bir kullanıcı arabirimi iş parçacığından hem de bir arka plan iş parçacığından çevik olmayan sınıfların örneklerine erişiyorsanız, çalışma zamanında doğru davranışı sağlamak için ek bir işlem yapın. Microsoft C++ derleyicisi, uygulamanızda genel kapsamda çevik olmayan bir çalışma zamanı sınıfı örneklediğinizde veya çevik olmayan bir türü bir başvuru sınıfında kendisini çevik olarak işaretlenen bir sınıf üyesi olarak bildirmenizin bir uyarı verir.
+Çeşitli nedenlerden dolayı, bazı sınıflar çevik olamaz. Hem kullanıcı arabirimi iş parçacığından hem de arka plan iş parçacığından çevik olmayan sınıförneklerine erişiyorsanız, çalışma zamanında doğru davranışı sağlamak için ekstra özen sağlayın. Microsoft C++ derleyicisi, uygulamanızda genel kapsamda çevik olmayan bir çalışma zamanı sınıfını anında anladığınızda veya kendisi çevik olarak işaretlenmiş bir ref sınıfında çevik olmayan bir türü sınıf üyesi olarak beyan ettiğinizde uyarılar yayınlar.
 
-Çevik olmayan sınıfların, en kolay `ThreadingModel`= ve `MarshallingType`= standart olan.  `Agile<T>` Yardımcı sınıfını kullanarak bu sınıfların çevik olmasını sağlayabilirsiniz.   Aşağıdaki örnek, türünde `Windows::Security::Credentials::UI::CredentialPickerOptions^`çevik olmayan bir nesnenin bir bildirimini ve sonuç olarak verilen derleyici uyarısını gösterir.
+Çevik olmayan sınıflar arasında, başa çıkmak en kolay olanlar `ThreadingModel`=Her `MarshallingType`ikisi ve =Standart vardır.  Bu sınıfları sadece `Agile<T>` yardımcı sınıfını kullanarak çevik yapabilirsiniz.   Aşağıdaki örnek, çevik olmayan bir tür `Windows::Security::Credentials::UI::CredentialPickerOptions^`nesnenin bildirimini ve sonuç olarak verilen derleyici uyarısını gösterir.
 
 ```
 
@@ -57,19 +57,19 @@ ref class MyOptions
     };
 ```
 
-Verilen uyarı aşağıda verilmiştir:
+İşte yayınlanan uyarı:
 
 > `Warning 1 warning C4451: 'Platform::Agile<T>::_object' : Usage of ref class 'Windows::Security::Credentials::UI::CredentialPickerOptions' inside this context can lead to invalid marshaling of object across contexts. Consider using 'Platform::Agile<Windows::Security::Credentials::UI::CredentialPickerOptions>' instead`
 
-Üye kapsamında veya genel kapsamda — "standart" sıralama davranışına sahip bir nesneye bir başvuru eklediğinizde, derleyici, türü içine `Platform::Agile<T>`kaydıraöneren bir uyarı verir: `Consider using 'Platform::Agile<Windows::Security::Credentials::UI::CredentialPickerOptions>' instead``Agile<T>`Kullanıyorsanız, başka bir çevik sınıf gibi sınıfını kullanabilirsiniz. Bu `Platform::Agile<T>` koşullarda kullanın:
+Üye kapsamıveya genel kapsamda bir başvuru eklediğinizde- "Standart" bir mareşaldavranışı olan bir nesneye, derleyici türü kaydırmanızı `Consider using 'Platform::Agile<Windows::Security::Credentials::UI::CredentialPickerOptions>' instead` tavsiye `Agile<T>`eden bir uyarı `Platform::Agile<T>`yayınlar: Eğer kullanırsanız, sınıfı diğer çevik sınıfgibi tüketebilirsiniz. Bu `Platform::Agile<T>` durumlarda kullanın:
 
-- Çevik olmayan değişken genel kapsamda bildirilmiştir.
+- Çevik olmayan değişken genel kapsamda bildirilir.
 
-- Çevik olmayan değişken sınıf kapsamında bildirilmiştir ve kodun kullanımı, işaretçiyi doğru sıralama olmadan farklı bir grupta kullanmak gibi bir şansınız olabilir.
+- Çevik olmayan değişken sınıf kapsamında bildirilir ve alıcı kodun işaretçiyi kaçırma olasılığı vardır, yani doğru bir şekilde işaretçi olmadan farklı bir dairede kullanabilirsiniz.
 
-Bu koşulların hiçbiri geçerli değilse, kapsayan sınıfı çevik olmayan olarak işaretleyebilirsiniz. Diğer bir deyişle, çevik olmayan nesneleri doğrudan çevik olmayan sınıflarda tutamaz ve çevik sınıflarda Platform:: çevik\<T > aracılığıyla çevik olmayan nesneleri tutabilmelisiniz.
+Bu koşullardan hiçbiri geçerli değilse, içeren sınıfı çevik olmayan olarak işaretleyebilirsiniz. Başka bir deyişle, çevik olmayan nesneleri yalnızca çevik olmayan sınıflarda doğrudan tutmalı ve Platform:Çevik\<T> aracılığıyla çevik olmayan nesneleri çevik sınıflarda tutmalısınız.
 
-Aşağıdaki örnek, uyarıyı güvenle yoksayabilmeniz `Agile<T>` için nasıl kullanılacağını gösterir.
+Aşağıdaki örnek, uyarıyı `Agile<T>` güvenle yoksayabilmeniz için nasıl kullanılacağını gösterir.
 
 ```
 
@@ -91,17 +91,17 @@ ref class MyOptions
     };
 ```
 
-`Agile` Başvuru sınıfında bir dönüş değeri veya parametresi olarak geçirilemediğine dikkat edin. Yöntemi `Agile<T>::Get()` , bir genel yöntem veya özellikte uygulama ikili arabirimi (ABI) üzerinden geçirebilmeniz için bir işleyici (^) döndürür.
+Ref `Agile` sınıfında iade değeri veya parametre olarak geçirilemeyeceğine dikkat edin. Yöntem, `Agile<T>::Get()` ortak bir yöntemde veya özellikte uygulama ikili arabirimi (ABI) üzerinden geçebileceğiniz bir işbaşı-nesne (^) döndürür.
 
-"None" öğesinin sıralama davranışına sahip bir proc Windows Çalışma Zamanı sınıfına bir başvuru oluşturduğunuzda, derleyici uyarı C4451 sorun ancak kullanmayı `Platform::Agile<T>`düşünmenizi önermez.  Derleyici bu uyarının ötesinde herhangi bir yardım sunmamaktadır, bu nedenle sınıfı doğru şekilde kullanmak ve kodunuzun yalnızca kullanıcı arabirimi iş parçacığından ve MTA bileşenlerinden yalnızca bir arka plan iş parçacığından STA bileşenlerini çağırması gerekir.
+"Yok" bir mareşal davranışı olan bir in-proc Windows Runtime sınıfına bir başvuru oluşturduğunuzda, derleyici C4451 uyarı sorunları ama kullanmayı `Platform::Agile<T>`düşünün önermez .  Derleyici bu uyarının ötesinde herhangi bir yardım sunamaz, bu nedenle sınıfı doğru kullanmak ve kodunuzun STA bileşenlerini yalnızca kullanıcı arabirimi iş parçacığından ve MTA bileşenlerini yalnızca bir arka plan iş parçacığından aramasını sağlamak sizin sorumluluğunuzdadır.
 
-## <a name="authoring-agile-windows-runtime-components"></a>Çevik Windows Çalışma Zamanı bileşenleri yazma
+## <a name="authoring-agile-windows-runtime-components"></a>Çevik Windows Runtime bileşenleriyazma
 
-/CX içinde C++bir başvuru sınıfı tanımladığınızda, varsayılan olarak çevik olur; yani, `ThreadingModel`= ve `MarshallingType`çevik olur.  Windows çalışma zamanı C++ şablon kitaplığını kullanıyorsanız, sınıfından türeterek `FtmBase` `FreeThreadedMarshaller`sınıfınızı çevik hale getirebilirsiniz.  `ThreadingModel`= Ya da `ThreadingModel`= MTA içeren bir sınıf yazardıysanız, sınıfın iş parçacığı açısından güvenli olduğundan emin olun.
+C++/CX'te bir ref sınıfı tanımladığınızda, varsayılan olarak çeviktir,yani `ThreadingModel`=Her `MarshallingType`ikisi ve =Çevik vardır.  Windows Runtime C++ Şablon Kitaplığı kullanıyorsanız, '' dan ' ' `FtmBase`ı kullanarak `FreeThreadedMarshaller`sınıfınızı çevik hale getirebilirsiniz.  =Her ikisi veya `ThreadingModel` `ThreadingModel`=MTA'sı olan bir sınıf yazarsanız, sınıfın iş parçacığı için güvenli olduğundan emin olun.
 
-Bir başvuru sınıfının iş parçacığı modelini ve sıralama davranışını değiştirebilirsiniz. Ancak, sınıfı çevik olmayan bir şekilde işleyen değişiklikler yaparsanız, bu değişikliklerle ilişkili etkileri anlamanız gerekir.
+İş parçacığı modelini ve bir ref sınıfının mareşaldavranışını değiştirebilirsiniz. Ancak, sınıfı çevik olmayan hale getiren değişiklikler yaparsanız, bu değişikliklerle ilişkili etkileri anlamanız gerekir.
 
-Aşağıdaki örnek, bir Windows çalışma zamanı sınıf kitaplığındaki `MarshalingBehavior` çalışma `ThreadingModel` zamanı sınıfına ve özniteliklerin nasıl uygulanacağını gösterir. Bir uygulama dll 'i kullandığında ve bir `ref new` `MySTAClass` sınıf nesnesini etkinleştirmek için anahtar sözcüğünü kullandığında, nesne tek iş parçacıklı bir grupta etkinleştirilir ve sıralama desteklenmez.
+Aşağıdaki örnek, Windows `MarshalingBehavior` Runtime sınıf kitaplığında nasıl uygulanacağı ve `ThreadingModel` çalışma zamanı sınıfına nasıl atfedilenleri gösterir. Bir uygulama DLL'yi kullandığında ve `ref new` bir `MySTAClass` sınıf nesnesini etkinleştirmek için anahtar sözcüğü kullandığında, nesne tek iş parçacığı bir dairede etkinleştirilir ve mareşalliği desteklemez.
 
 ```
 using namespace Windows::Foundation::Metadata;
@@ -114,15 +114,15 @@ public ref class MySTAClass
 };
 ```
 
-Korumasız bir sınıf, türetilmiş sınıfların bu öznitelikler için aynı değere sahip olduğunu doğrulayabilmesi için sıralama ve iş parçacığı oluşturma özniteliği ayarlarına sahip olmalıdır. Sınıfın ayarları açıkça ayarlanmamışsa, derleyici bir hata oluşturur ve derleme başarısız olur. Bir unduledclass sınıfından türetilmiş herhangi bir sınıf, bu durumların her birinde bir derleyici hatası oluşturur:
+Kapalı bir sınıfın, derleyicinin türemiş sınıfların bu öznitelikler için aynı değere sahip olduğunu doğrulayabilmesi için, bağlama ve iş parçacığı öznitelik ayarlarına sahip olması gerekir. Sınıf ayarları açıkça ayarlı değilse, derleyici bir hata oluşturur ve derlemek için başarısız olur. Mühürsüz bir sınıftan türetilen herhangi bir sınıf, bu durumlardan herhangi birinde derleyici hatası oluşturur:
 
-- `ThreadingModel` Ve`MarshallingBehavior` öznitelikleri türetilmiş sınıfta tanımlı değil.
+- Ve `ThreadingModel` `MarshallingBehavior` öznitelikleri türemiş sınıfta tanımlı değildir.
 
-- Türetilmiş sınıftaki `ThreadingModel` ve `MarshallingBehavior` özniteliklerinin değerleri, taban sınıfındakilerle eşleşmiyor.
+- Türemiş `ThreadingModel` sınıftaki özniteliklerin `MarshallingBehavior` değerleri taban sınıftakilerle eşleşmiyor.
 
-Üçüncü taraf Windows Çalışma Zamanı bileşeni için gereken iş parçacığı oluşturma ve sıralama bilgileri, bileşen için uygulama bildirimi kayıt bilgilerinde belirtilmiştir. Tüm Windows Çalışma Zamanı bileşenlerinizi çevik yapmanızı öneririz. Bu, istemci kodunun uygulamanızı uygulamadaki herhangi bir iş parçacığından çağırabilmesini sağlar ve bu çağrıların performansını artırır çünkü sıralama olmayan doğrudan çağrılar olur. Sınıfınızı bu şekilde yazarsa, istemci kodunun sınıfınızı tüketmek için kullanmak `Platform::Agile<T>` zorunda değildir.
+Üçüncü taraf bir Windows Runtime bileşeni tarafından gerekli olan iş parçacığı ve düzenleme bilgileri, bileşeniçin uygulama bildirimi kayıt bilgilerinde belirtilir. Tüm Windows Runtime bileşenlerinizi çevik yapmanızı öneririz. Bu, istemci kodunun bileşeninizi uygulamadaki herhangi bir iş parçacığından aramasını sağlar ve bu çağrıların performansını artırır, çünkü bunlar doğrudan aramalardır. Sınıfınızı bu şekilde yazarsanız, istemci kodu sınıfınızı `Platform::Agile<T>` tüketmek için kullanmak zorunda değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ThreadingModel](/uwp/api/Windows.Foundation.Metadata.ThreadingModel)<br/>
-[Sıralamada Allingbehavior](/uwp/api/windows.foundation.metadata.marshalingbehaviorattribute)
+[ThreadingModel](/uwp/api/windows.foundation.metadata.threadingmodel)<br/>
+[MarshallingDavranışı](/uwp/api/windows.foundation.metadata.marshalingbehaviorattribute)

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CObject [MFC], IsSerializable
 - CObject [MFC], Serialize
 ms.assetid: 95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a
-ms.openlocfilehash: cea4d09a1c1a4680b095a40fa0619287959ff4ce
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 66d76e0062d13b2bd5a16d9b07f99db9e989805a
+ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81360418"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81753983"
 ---
 # <a name="cobject-class"></a>CObject Sınıfı
 
@@ -275,7 +275,7 @@ Tüm `CAge` `CObject` örneklerde kullanılan sınıfın listesi için [CObList:
 
 Kitaplığın Sürüm sürümü için, işleç **silme** işleci tarafından ayrılan belleği **yeni**.
 
-```
+```cpp
 void PASCAL operator delete(void* p);
 
 void PASCAL operator delete(
@@ -312,7 +312,7 @@ Bkz. [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) örneklerd
 
 Kitaplığın Sürüm sürümü için, **new** `malloc`işleç yeni benzer bir şekilde en iyi bellek ayırma gerçekleştirir.
 
-```
+```cpp
 void* PASCAL operator new(size_t nSize);
 void* PASCAL operator new(size_t, void* p);
 
