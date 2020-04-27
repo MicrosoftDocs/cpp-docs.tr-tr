@@ -7,31 +7,31 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlFileMapping class
 ms.assetid: 899fc058-e05e-48b5-aca9-340403bb9e26
-ms.openlocfilehash: ca46ccdacf5ea24f1de26cdc75bf808c4ecfaa40
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7516349e4ec54d8cb90fa6ff23b0ded954aa043b
+ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318953"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82168130"
 ---
 # <a name="catlfilemapping-class"></a>CAtlFileMapping Sınıfı
 
-Bu sınıf, [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md)yöntemlerine bir döküm işleci ekleyerek, bellek eşlenen bir dosyayı temsil eder.
+Bu sınıf, [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md)yöntemlerine bir atama işleci ekleyerek, bellek eşlemeli bir dosyayı temsil eder.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template <typename T = char>
 class CAtlFileMapping : public CAtlFileMappingBase
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Döküm işleci için kullanılan veri türü.
+Atama işleci için kullanılan veri türü.
 
 ## <a name="members"></a>Üyeler
 
@@ -39,39 +39,39 @@ Döküm işleci için kullanılan veri türü.
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlFileMapping::operatör T*](#operator_t_star)|Nesnelerin örtülü `CAtlFileMapping` olarak ' `T*`a dönüştürülmesine izin verir.|
+|[CAtlFileMapping:: operator T *](#operator_t_star)|`CAtlFileMapping` Nesnelerin örtülü dönüştürmelerine izin verir `T*`.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, `CAtlFileMapping` nesnelerin örtülü olarak . `T*` Diğer üyeler taban sınıf, [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md)tarafından sağlanır.
+Bu sınıf, `CAtlFileMapping` nesnelerin örtük dönüştürülmesine izin vermek için tek bir cast işleci ekler `T*`. Diğer Üyeler, [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md)temel sınıfı tarafından sağlanır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Catlfilemappingbase](../../atl/reference/catlfilemappingbase-class.md)
+[CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md)
 
 `CAtlFileMapping`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlfile.h
+**Üstbilgi:** atlfile. h
 
-## <a name="catlfilemappingoperator-t"></a><a name="operator_t_star"></a>CAtlFileMapping::operatör T*
+## <a name="catlfilemappingoperator-t"></a><a name="operator_t_star"></a>CAtlFileMapping:: operator T *
 
-Nesnelerin örtülü `CAtlFileMapping` olarak ' `T*`a dönüştürülmesine izin verir.
+`CAtlFileMapping` Nesnelerin örtülü dönüştürmelerine izin verir `T*`.
 
-```
+```cpp
 operator T*() const throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bellek `T*` eşlenen dosyanın başlangıcına bir işaretçi döndürür.
+Bellek eşlemeli `T*` dosyanın başlangıcına bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CAtlFileMappingBase'i çağırır::GetData](../../atl/reference/catlfilemappingbase-class.md#getdata) ve döndürülen `T*` işaretçiyi, bu sınıfın şablon parametresi olarak kullanılan *T* türü olarak yeniden yorumlar.
+[CAtlFileMappingBase:: GetData](../../atl/reference/catlfilemappingbase-class.md#getdata) çağırır ve döndürülen işaretçiyi, bu sınıfın şablon parametresi `T*` olarak kullanılan tür *T* olarak yeniden yorumlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CAtlFileMappingBase Sınıfı](../../atl/reference/catlfilemappingbase-class.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

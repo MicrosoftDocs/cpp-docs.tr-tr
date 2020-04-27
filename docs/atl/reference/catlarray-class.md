@@ -25,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlArray class
 ms.assetid: 0b503aa8-2357-40af-a326-6654bf1da098
-ms.openlocfilehash: 607af2adaa3ef28a768812f3c811eb2ed3169ad9
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 5928a9bf8af12b2ce15a386871b845ef86cc7a2d
+ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81748783"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82168780"
 ---
 # <a name="catlarray-class"></a>CAtlArray Sınıfı
 
@@ -38,17 +38,17 @@ Bu sınıf bir dizi nesnesi uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<typename E, class ETraits = CElementTraits<E>>
 class CAtlArray
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*E*<br/>
+*A*<br/>
 Dizide depolanacak veri türü.
 
-*EÖzellikler*<br/>
+*Oy*<br/>
 Öğeleri kopyalamak veya taşımak için kullanılan kod.
 
 ## <a name="members"></a>Üyeler
@@ -57,30 +57,30 @@ Dizide depolanacak veri türü.
 
 |||
 |-|-|
-|[Ekle](#add)|Dizi nesnesine bir öğe eklemek için bu yöntemi çağırın.|
-|[Ekle](#append)|Bir dizinin içeriğini diğerinin sonuna eklemek için bu yöntemi arayın.|
-|[AssertValid](#assertvalid)|Dizi nesnesinin geçerli olduğunu doğrulamak için bu yöntemi arayın.|
-|[Catlarray](#catlarray)|Oluşturucu.|
-|[~CAtlArray](#dtor)|Yıkıcı.|
-|[Kopyala](#copy)|Bir dizinin öğelerini diğerine kopyalamak için bu yöntemi arayın.|
-|[Ücretsiz Ekstra](#freeextra)|Dizideki boş öğeleri kaldırmak için bu yöntemi arayın.|
-|[Getat](#getat)|Dizi nesnesinden tek bir öğe almak için bu yöntemi çağırın.|
-|[GetCount](#getcount)|Dizide depolanan öğe sayısını döndürmek için bu yöntemi arayın.|
+|[Ekle](#add)|Dizi nesnesine bir öğesi eklemek için bu yöntemi çağırın.|
+|[Ekle](#append)|Bir dizinin içeriğini diğerinin sonuna eklemek için bu yöntemi çağırın.|
+|[AssertValid](#assertvalid)|Dizi nesnesinin geçerli olduğunu doğrulamak için bu yöntemi çağırın.|
+|[CAtlArray](#catlarray)|Oluşturucu.|
+|[~ CAtlArray](#dtor)|Yok edicisi.|
+|[Kopyala](#copy)|Bir dizinin öğelerini diğerine kopyalamak için bu yöntemi çağırın.|
+|[FreeExtra](#freeextra)|Dizideki boş öğeleri kaldırmak için bu yöntemi çağırın.|
+|[GetAt](#getat)|Dizi nesnesinden tek bir öğe almak için bu yöntemi çağırın.|
+|[GetCount](#getcount)|Dizide depolanan öğelerin sayısını döndürmek için bu yöntemi çağırın.|
 |[GetData](#getdata)|Dizideki ilk öğeye bir işaretçi döndürmek için bu yöntemi çağırın.|
-|[InsertArrayAt](#insertarrayat)|Bir diziyi diğerine eklemek için bu yöntemi arayın.|
-|[ınsertat](#insertat)|Dizi nesnesine yeni bir öğe (veya bir öğenin birden çok kopyası) eklemek için bu yöntemi çağırın.|
-|[ısempty](#isempty)|Dizi boş olup olmadığını sınamak için bu yöntemi arayın.|
-|[RemoveAll](#removeall)|Tüm öğeleri dizi nesnesinden kaldırmak için bu yöntemi çağırın.|
+|[Insertarrayat](#insertarrayat)|Bir diziyi diğerine eklemek için bu yöntemi çağırın.|
+|[InsertAt](#insertat)|Dizi nesnesine yeni bir öğe (veya bir öğenin birden çok kopyasını) eklemek için bu yöntemi çağırın.|
+|[IsEmpty](#isempty)|Dizinin boş olup olmadığını test etmek için bu yöntemi çağırın.|
+|[RemoveAll](#removeall)|Dizi nesnesinden tüm öğeleri kaldırmak için bu yöntemi çağırın.|
 |[RemoveAt](#removeat)|Diziden bir veya daha fazla öğeyi kaldırmak için bu yöntemi çağırın.|
-|[Setat](#setat)|Dizi nesnesindeki bir öğenin değerini ayarlamak için bu yöntemi çağırın.|
-|[SetatGrow](#setatgrow)|Dizi nesnesindeki bir öğenin değerini ayarlamak ve diziyi gerektiği gibi genişletmek için bu yöntemi çağırın.|
+|[SetAt](#setat)|Dizi nesnesindeki bir öğenin değerini ayarlamak için bu yöntemi çağırın.|
+|[SetAtGrow](#setatgrow)|Dizi nesnesindeki bir öğenin değerini ayarlamak için bu yöntemi çağırın, diziyi gereken şekilde genişleterek.|
 |[SetCount](#setcount)|Dizi nesnesinin boyutunu ayarlamak için bu yöntemi çağırın.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[operatör &#91;&#93;](#operator_at)|Dizideki bir öğeye bir başvuru döndürmek için bu işleci çağırın.|
+|[işleç &#91;&#93;](#operator_at)|Dizideki bir öğeye başvuru döndürmek için bu işleci çağırın.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
@@ -91,30 +91,30 @@ Dizide depolanacak veri türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAtlArray`kullanıcı tanımlı türdeki bir dizi öğe oluşturmak ve yönetmek için yöntemler sağlar. Standart C dizilerine benzer `CAtlArray` olsa da, nesne dinamik olarak küçülebilir ve gerektiği gibi büyüyebilir. Dizi dizini her zaman 0 konumunda başlar ve üst sınır düzeltilebilir veya yeni öğeler eklendikçe genişlemesine izin verilir.
+`CAtlArray`Kullanıcı tanımlı türdeki öğelerin dizisini oluşturmak ve yönetmek için yöntemler sağlar. Standart C dizilerine benzer olsa da, `CAtlArray` nesne gerektiğinde dinamik olarak küçültülebilir ve büyüyebilir. Dizi dizini her zaman 0 konumunda başlar ve üst sınır düzeltilebilir veya yeni öğe eklendikçe genişlemesine izin verilebilir.
 
-Az sayıda öğeye sahip diziler için ATL sınıfı [CSimpleArray](../../atl/reference/csimplearray-class.md) kullanılabilir.
+Az sayıda öğe içeren diziler için, [CSimpleArray](../../atl/reference/csimplearray-class.md) ATL sınıfı kullanılabilir.
 
-`CAtlArray`MFC'nin `CArray` sınıfıyla yakından ilişkilidir ve serileştirme desteği olmasa da bir MFC projesinde çalışacaktır.
+`CAtlArray`MFC 'nin `CArray` sınıfıyla yakından ilgilidir ve serileştirme desteği olmadan bir MFC projesinde çalışır.
 
-Daha fazla bilgi için [ATL Koleksiyon Sınıfları'na](../../atl/atl-collection-classes.md)bakın.
+Daha fazla bilgi için bkz. [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcoll.h
+**Üstbilgi:** atlcoll. h
 
-## <a name="catlarrayadd"></a><a name="add"></a>CAtlArray::Ekle
+## <a name="catlarrayadd"></a><a name="add"></a>CAtlArray:: Add
 
-Dizi nesnesine bir öğe eklemek için bu yöntemi çağırın.
+Dizi nesnesine bir öğesi eklemek için bu yöntemi çağırın.
 
-```
+```cpp
 size_t Add(INARGTYPE element);
 size_t Add();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Öğe*<br/>
+*dosyalarında*<br/>
 Diziye eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -123,24 +123,24 @@ Eklenen öğenin dizinini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni öğe dizinin sonuna eklenir. Öğe sağlanmazsa, boş bir öğe eklenir; diğer bir deyişle, dizi gerçek bir öğe eklenmiştir gibi boyutu artar. İşlem başarısız olursa, [AtlThrow](debugging-and-error-reporting-global-functions.md#atlthrow) E_OUTOFMEMORY bağımsız değişkeni ile çağrılır.
+Yeni öğe dizinin sonuna eklenir. Hiçbir öğe sağlanmazsa, boş bir öğe eklenir; diğer bir deyişle, dizi gerçek bir öğe eklenmiş olsa da boyutu artar. İşlem başarısız olursa, [AtlThrow](debugging-and-error-reporting-global-functions.md#atlthrow) e_outofmemory bağımsız değişkeniyle çağırılır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#1](../../atl/codesnippet/cpp/catlarray-class_1.cpp)]
 
-## <a name="catlarrayappend"></a><a name="append"></a>CAtlArray::Ek
+## <a name="catlarrayappend"></a><a name="append"></a>CAtlArray:: Append
 
-Bir dizinin içeriğini diğerinin sonuna eklemek için bu yöntemi arayın.
+Bir dizinin içeriğini diğerinin sonuna eklemek için bu yöntemi çağırın.
 
-```
+```cpp
 size_t Append(const CAtlArray<E, ETraits>& aSrc);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *aSrc*<br/>
-Eklemek için dizi.
+Eklenecek dizi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -148,19 +148,19 @@ Eklemek için dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sağlanan dizideki öğeler varolan dizinin sonuna eklenir. Gerekirse, bellek yeni öğeleri karşılamak için tahsis edilecektir.
+Sağlanan dizideki öğeler var olan dizinin sonuna eklenir. Gerekirse, bellek yeni öğeleri kapsayacak şekilde ayrılacaktır.
 
-Diziler aynı türde olmalıdır ve bir diziyi kendisine iliştirmek mümkün değildir.
+Diziler aynı türde olmalıdır ve bir diziyi kendisine eklemek mümkün değildir.
 
-Hata ayıklama yapılarında, `CAtlArray` bağımsız değişken geçerli bir dizi değilse veya *aSrc* aynı nesneye başvuruyorsa bir ATLASSERT yükseltilir. Sürüm oluşturur, geçersiz bağımsız değişkenler öngörülemeyen davranışlara yol açabilir.
+Hata ayıklama yapılarında, `CAtlArray` bağımsız değişken geçerli bir dizi değilse veya *aSrc* aynı nesneye başvuruyorsa bir atlassert tetiklenir. Yayın yapılarında geçersiz bağımsız değişkenler öngörülemeyen davranışlara neden olabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#2](../../atl/codesnippet/cpp/catlarray-class_2.cpp)]
 
-## <a name="catlarrayassertvalid"></a><a name="assertvalid"></a>CAtlArray::AssertValid
+## <a name="catlarrayassertvalid"></a><a name="assertvalid"></a>CAtlArray:: AssertValid
 
-Dizi nesnesinin geçerli olduğunu doğrulamak için bu yöntemi arayın.
+Dizi nesnesinin geçerli olduğunu doğrulamak için bu yöntemi çağırın.
 
 ```cpp
 void AssertValid() const;
@@ -168,7 +168,7 @@ void AssertValid() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizi nesnesi geçerli değilse, ATLASSERT bir iddia atar. Bu yöntem yalnızca _DEBUG tanımlanırsa kullanılabilir.
+Dizi nesnesi geçerli değilse ATLASSERT bir onaylama işlemi oluşturur. Bu yöntem yalnızca _DEBUG tanımlanmışsa kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -178,33 +178,33 @@ Dizi nesnesi geçerli değilse, ATLASSERT bir iddia atar. Bu yöntem yalnızca _
 
 Oluşturucu.
 
-```
+```cpp
 CAtlArray() throw();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizi nesnesini başharfe alır.
+Dizi nesnesini başlatır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#4](../../atl/codesnippet/cpp/catlarray-class_4.cpp)]
 
-## <a name="catlarraycatlarray"></a><a name="dtor"></a>CAtlArray::~CAtlArray
+## <a name="catlarraycatlarray"></a><a name="dtor"></a>CAtlArray:: ~ CAtlArray
 
-Yıkıcı.
+Yok edicisi.
 
-```
+```cpp
 ~CAtlArray() throw();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizi nesnesi tarafından kullanılan tüm kaynakları boşaltıyor.
+Dizi nesnesi tarafından kullanılan kaynakları boşaltır.
 
-## <a name="catlarraycopy"></a><a name="copy"></a>CAtlArray::Kopyala
+## <a name="catlarraycopy"></a><a name="copy"></a>CAtlArray:: Copy
 
-Bir dizinin öğelerini diğerine kopyalamak için bu yöntemi arayın.
+Bir dizinin öğelerini diğerine kopyalamak için bu yöntemi çağırın.
 
 ```cpp
 void Copy(const CAtlArray<E, ETraits>& aSrc);
@@ -213,26 +213,26 @@ void Copy(const CAtlArray<E, ETraits>& aSrc);
 ### <a name="parameters"></a>Parametreler
 
 *aSrc*<br/>
-Bir diziye kopyalanması gereken öğelerin kaynağı.
+Bir diziye kopyalanacak öğelerin kaynağı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dizinin öğelerini başka bir dizinin öğeleriyle birlikte yazmak için bu yöntemi çağırın. Gerekirse, bellek yeni öğeleri karşılamak için tahsis edilecektir. Bir dizinin öğelerini kendisine kopyalamak mümkün değildir.
+Başka bir dizinin öğeleriyle bir dizinin öğelerinin üzerine yazmak için bu yöntemi çağırın. Gerekirse, bellek yeni öğeleri kapsayacak şekilde ayrılacaktır. Bir dizinin öğelerinin kendisine kopyalanması mümkün değildir.
 
-Dizinin varolan içeriği korunacaksa, [CAtlArray kullanın::Bunun](#append) yerine Ekedin.
+Dizinin varolan içeriği korunmak ise bunun yerine [CAtlArray:: Append](#append) kullanın.
 
-Hata ayıklama yapılarında, varolan `CAtlArray` nesne geçerli değilse veya *aSrc* aynı nesneye başvuruyorsa bir ATLASSERT yükseltilir. Sürüm oluşturur, geçersiz bağımsız değişkenler öngörülemeyen davranışlara yol açabilir.
+Hata ayıklama yapılarında, var olan `CAtlArray` nesne geçerli değilse veya *aSrc* aynı nesneye başvuruyorsa bir atlassert tetiklenir. Yayın yapılarında geçersiz bağımsız değişkenler öngörülemeyen davranışlara neden olabilir.
 
 > [!NOTE]
-> `CAtlArray::Copy`[CAutoPtr](../../atl/reference/cautoptr-class.md) sınıfı yla oluşturulan öğelerden oluşan dizileri desteklemez.
+> `CAtlArray::Copy`, [CAutoPtr](../../atl/reference/cautoptr-class.md) sınıfıyla oluşturulan öğelerden oluşan dizileri desteklemez.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#5](../../atl/codesnippet/cpp/catlarray-class_5.cpp)]
 
-## <a name="catlarrayfreeextra"></a><a name="freeextra"></a>CAtlArray::FreeExtra
+## <a name="catlarrayfreeextra"></a><a name="freeextra"></a>CAtlArray:: FreeExtra
 
-Dizideki boş öğeleri kaldırmak için bu yöntemi arayın.
+Dizideki boş öğeleri kaldırmak için bu yöntemi çağırın.
 
 ```cpp
 void FreeExtra() throw();
@@ -242,82 +242,82 @@ void FreeExtra() throw();
 
 Boş öğeler kaldırılır, ancak dizinin boyutu ve üst sınırı değişmeden kalır.
 
-Hata ayıklama yapılarında, CAtlArray nesnesi geçerli değilse veya dizi en büyük boyutunu aşarsa bir ATLASSERT yükseltilir.
+Hata ayıklama yapılarında, CAtlArray nesnesi geçerli değilse veya dizi en büyük boyutunu aşacaksa bir ATLASSERT tetiklenir.
 
-## <a name="catlarraygetat"></a><a name="getat"></a>CAtlArray::GetAt
+## <a name="catlarraygetat"></a><a name="getat"></a>CAtlArray:: GetAt
 
-Dizi nesnesinden tek bir öğe almak için bu yöntemi çağırın.
+Dizi nesnesinden tek bir öğeyi almak için bu yöntemi çağırın.
 
-```
+```cpp
 const E& GetAt(size_t iElement) const throw();
 E& GetAt(size_t iElement) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ıelement*<br/>
+*IElement*<br/>
 Döndürülecek dizi öğesinin dizin değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gerekli dizi öğesine bir başvuru verir.
+Gerekli dizi öğesine bir başvuru döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama yapılarında, *iElement* dizideki öğe sayısını aşarsa bir ATLASSERT yükseltilir. Sürüm oluşturur, geçersiz bir argüman öngörülemeyen davranışa neden olabilir.
+Hata ayıklama yapılarında, *IElement* dizideki öğe sayısını AŞARSA BIR ATLASSERT tetiklenir. Yayın yapıları içinde geçersiz bir bağımsız değişken öngörülemeyen davranışlara neden olabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#6](../../atl/codesnippet/cpp/catlarray-class_6.cpp)]
 
-## <a name="catlarraygetcount"></a><a name="getcount"></a>CAtlArray::GetCount
+## <a name="catlarraygetcount"></a><a name="getcount"></a>CAtlArray:: GetCount
 
-Dizide depolanan öğe sayısını döndürmek için bu yöntemi arayın.
+Dizide depolanan öğelerin sayısını döndürmek için bu yöntemi çağırın.
 
-```
+```cpp
 size_t GetCount() const throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizide depolanan öğe sayısını verir.
+Dizide depolanan öğe sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizideki ilk öğe 0 konumunda olduğundan, döndürülen `GetCount` değer her zaman en büyük dizinden 1 daha büyüktür.
+Dizideki ilk öğe 0 konumunda olduğunda, tarafından `GetCount` döndürülen değer en büyük dizinden her zaman 1 büyüktür.
 
 ### <a name="example"></a>Örnek
 
-[CAtlArray örneğine bakın:GetAt](#getat).
+[CAtlArray:: GetAt](#getat)için örneğe bakın.
 
-## <a name="catlarraygetdata"></a><a name="getdata"></a>CAtlArray::Veri Alın
+## <a name="catlarraygetdata"></a><a name="getdata"></a>CAtlArray:: GetData
 
 Dizideki ilk öğeye bir işaretçi döndürmek için bu yöntemi çağırın.
 
-```
+```cpp
 E* GetData() throw();
 const E* GetData() const throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizideki ilk öğeyi depolayan bellek konumuna bir işaretçi döndürür. Kullanılabilir öğe yoksa, NULL döndürülür.
+Dizideki ilk öğeyi depolayan bellek konumuna bir işaretçi döndürür. Hiçbir öğe yoksa, NULL döndürülür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#7](../../atl/codesnippet/cpp/catlarray-class_7.cpp)]
 
-## <a name="catlarrayinargtype"></a><a name="inargtype"></a>CAtlArray::INARGTYPE
+## <a name="catlarrayinargtype"></a><a name="inargtype"></a>CAtlArray:: ıNARGTYPE
 
 Diziye öğe eklemek için kullanılacak veri türü.
 
-```
+```cpp
 typedef ETraits::INARGTYPE INARGTYPE;
 ```
 
-## <a name="catlarrayinsertarrayat"></a><a name="insertarrayat"></a>CAtlArray::InsertArrayAt
+## <a name="catlarrayinsertarrayat"></a><a name="insertarrayat"></a>CAtlArray:: ınsertarrayat
 
-Bir diziyi diğerine eklemek için bu yöntemi arayın.
+Bir diziyi diğerine eklemek için bu yöntemi çağırın.
 
 ```cpp
 void InsertArrayAt(size_t iStart, const CAtlArray<E, ETraits>* paNew);
@@ -325,28 +325,28 @@ void InsertArrayAt(size_t iStart, const CAtlArray<E, ETraits>* paNew);
 
 ### <a name="parameters"></a>Parametreler
 
-*iBaşlat*<br/>
-Dizinin eklendiği dizin.
+*Isdan Başlat*<br/>
+Dizinin ekleneceği dizin.
 
-*paYeni*<br/>
+*Paneni*<br/>
 Eklenecek dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*paNew* dizisindeki öğeler *iStart*öğesinden başlayarak dizi nesnesine kopyalanır. Varolan dizi öğeleri, üzerine yazılmayı önlemek için taşınır.
+Dizideki öğeler, öğe *ıBaşlat*öğesinden *başlayarak dizi nesnesine* kopyalanır. Geçersiz kılınmamak için mevcut dizi öğeleri taşınır.
 
-Hata ayıklama oluştururda, `CAtlArray` nesne geçerli değilse veya *paNew* işaretçisi NULL veya geçersizse bir ATLASSERT yükseltilir.
+Hata ayıklama yapılarında, `CAtlArray` nesne geçerli değilse veya *PANENI* işaretçisi null ya da GEÇERSIZ Ise bir atlassert tetiklenir.
 
 > [!NOTE]
-> `CAtlArray::InsertArrayAt`[CAutoPtr](../../atl/reference/cautoptr-class.md) sınıfı yla oluşturulan öğelerden oluşan dizileri desteklemez.
+> `CAtlArray::InsertArrayAt`, [CAutoPtr](../../atl/reference/cautoptr-class.md) sınıfıyla oluşturulan öğelerden oluşan dizileri desteklemez.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#8](../../atl/codesnippet/cpp/catlarray-class_8.cpp)]
 
-## <a name="catlarrayinsertat"></a><a name="insertat"></a>CAtlArray::InsertAt
+## <a name="catlarrayinsertat"></a><a name="insertat"></a>CAtlArray:: InsertAt
 
-Dizi nesnesine yeni bir öğe (veya bir öğenin birden çok kopyası) eklemek için bu yöntemi çağırın.
+Dizi nesnesine yeni bir öğe (veya bir öğenin birden çok kopyasını) eklemek için bu yöntemi çağırın.
 
 ```cpp
 void InsertAt(size_t iElement, INARGTYPE element, size_t nCount = 1);
@@ -354,80 +354,80 @@ void InsertAt(size_t iElement, INARGTYPE element, size_t nCount = 1);
 
 ### <a name="parameters"></a>Parametreler
 
-*ıelement*<br/>
-Öğe nin veya öğelerin eklenecek olduğu dizin.
+*IElement*<br/>
+Öğe veya öğelerin ekleneceği dizin.
 
-*Öğe*<br/>
+*dosyalarında*<br/>
 Eklenecek öğe veya öğelerin değeri.
 
-*nSayısı*<br/>
+*nCount*<br/>
 Eklenecek öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*dizii iElement'ten*başlayarak diziye bir veya daha fazla öğe ekler. Varolan öğeler, üzerine yazılmaktan kaçınmak için taşınır.
+*IElement*dizininde başlayan diziye bir veya daha fazla öğe ekler. Varolan öğeler, üzerine yazılmaması için taşınır.
 
-Hata ayıklama yapılarda, `CAtlArray` nesne geçersizse, eklenecek öğe sayısı sıfırsa veya birleştirilmiş öğe sayısı dizinin içeremeyecek kadar büyükse, bir ATLASSERT yükseltilir. Perakende yapılarda, geçersiz parametrelerin geçirilmesi öngörülemeyen sonuçlara neden olabilir.
+Hata ayıklama yapılarında, `CAtlArray` nesne geçersiz ise, eklenecek öğe sayısı sıfırdır veya dizinin içermesi için öğe sayısı çok büyük olduğunda bir ATLASSERT tetiklenir. Perakende derlemelerde, geçersiz parametrelerin geçirilmesi öngörülemeyen sonuçlara neden olabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#9](../../atl/codesnippet/cpp/catlarray-class_9.cpp)]
 
-## <a name="catlarrayisempty"></a><a name="isempty"></a>CAtlArray::IsEmpty
+## <a name="catlarrayisempty"></a><a name="isempty"></a>CAtlArray:: IsEmpty
 
-Dizi boş olup olmadığını sınamak için bu yöntemi arayın.
+Dizinin boş olup olmadığını test etmek için bu yöntemi çağırın.
 
-```
+```cpp
 bool IsEmpty() const throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizi boşsa, aksi takdirde yanlış ise doğru döndürür.
+Dizi boşsa true, değilse false döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğe içermisse diziboş olduğu söylenir. Bu nedenle, dizi boş öğeler içerse bile, boş değildir.
+Dizi hiçbir öğe içermiyorsa, dizi boş olarak kabul edilir. Bu nedenle, dizi boş öğeler içeriyorsa bile boş değildir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#10](../../atl/codesnippet/cpp/catlarray-class_10.cpp)]
 
-## <a name="catlarrayoperator-"></a><a name="operator_at"></a>CAtlArray::operatör []
+## <a name="catlarrayoperator-"></a><a name="operator_at"></a>CAtlArray:: operator []
 
-Dizideki bir öğeye bir başvuru döndürmek için bu işleci çağırın.
+Dizideki bir öğeye başvuru döndürmek için bu işleci çağırın.
 
-```
+```cpp
 E& operator[](size_t ielement) throw();
 const E& operator[](size_t ielement) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ıelement*<br/>
+*IElement*<br/>
 Döndürülecek dizi öğesinin dizin değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gerekli dizi öğesine bir başvuru verir.
+Gerekli dizi öğesine bir başvuru döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-CAtlArray benzer bir işlev icra [eder::GetAt](#getat). MFC sınıfı [CArray](../../mfc/reference/carray-class.md)aksine, bu işleç [CAtlArray yerine kullanılamaz::SetAt](#setat).
+[CAtlArray:: GetAt](#getat)için benzer bir işlev gerçekleştirir. MFC sınıfından [CArray](../../mfc/reference/carray-class.md)'in aksine, bu işleç [CAtlArray:: SetAt](#setat)için bir alternatif olarak kullanılamaz.
 
-Hata ayıklama yapılarında, *iElement* dizideki toplam öğe sayısını aşarsa bir ATLASSERT yükseltilir. Perakende yapılarda, geçersiz bir parametre öngörülemeyen sonuçlara neden olabilir.
+Hata ayıklama yapılarında, *IElement* dizideki toplam öğe sayısını AŞARSA BIR ATLASSERT tetiklenir. Perakende derlemelerde, geçersiz bir parametre öngörülemeyen sonuçlara neden olabilir.
 
-## <a name="catlarrayoutargtype"></a><a name="outargtype"></a>CAtlArray::OUTARGTYPE
+## <a name="catlarrayoutargtype"></a><a name="outargtype"></a>CAtlArray:: OUTARGTYPE
 
 Diziden öğeleri almak için kullanılacak veri türü.
 
-```
+```cpp
 typedef ETraits::OUTARGTYPE OUTARGTYPE;
 ```
 
-## <a name="catlarrayremoveall"></a><a name="removeall"></a>CAtlArray::RemoveAll
+## <a name="catlarrayremoveall"></a><a name="removeall"></a>CAtlArray:: RemoveAll
 
-Tüm öğeleri dizi nesnesinden kaldırmak için bu yöntemi çağırın.
+Dizi nesnesinden tüm öğeleri kaldırmak için bu yöntemi çağırın.
 
 ```cpp
 void RemoveAll() throw();
@@ -437,13 +437,13 @@ void RemoveAll() throw();
 
 Tüm öğeleri dizi nesnesinden kaldırır.
 
-Bu yöntem, diziyi yeniden boyutlandırmak için [CAtlArray::SetCount](#setcount) çağırır ve daha sonra ayrılan tüm belleği serbest bırakalır.
+Bu yöntem, diziyi yeniden boyutlandırmak için [CAtlArray:: SetCount](#setcount) çağırır ve ardından ayrılan tüm belleği serbest bırakır.
 
 ### <a name="example"></a>Örnek
 
-[CAtlArray örneğine bakın::Boş.](#isempty)
+[CAtlArray:: IsEmpty](#isempty)için örneğe bakın.
 
-## <a name="catlarrayremoveat"></a><a name="removeat"></a>CAtlArray::RemoveAt
+## <a name="catlarrayremoveat"></a><a name="removeat"></a>CAtlArray:: RemoveAt
 
 Diziden bir veya daha fazla öğeyi kaldırmak için bu yöntemi çağırın.
 
@@ -453,23 +453,23 @@ void RemoveAt(size_t iElement, size_t nCount = 1);
 
 ### <a name="parameters"></a>Parametreler
 
-*ıelement*<br/>
+*IElement*<br/>
 Kaldırılacak ilk öğenin dizini.
 
-*nSayısı*<br/>
+*nCount*<br/>
 Kaldırılacak öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Diziden bir veya daha fazla öğe kaldırır. Kalan öğeler aşağı kaydırılır. Üst sınır karara bağlanır, ancak CAtlArray'e yapılan bir çağrı yapılana kadar bellek serbest [bırakılmaz::FreeExtra](#freeextra) yapılır.
+Diziden bir veya daha fazla öğeyi kaldırır. Kalan tüm öğeler aşağı kaydıralınır. Üst sınır azaltılır, ancak [CAtlArray:: FreeExtra](#freeextra) çağrısı yapılıncaya kadar bellek serbest bırakılmaz.
 
-Hata ayıklama yapılarda, `CAtlArray` nesne geçerli değilse veya *iElement* ve *nCount'nin* toplam toplamı dizideki toplam öğe sayısını aşıyorsa bir ATLASSERT yükseltilir. Perakende yapılarda, geçersiz parametreler öngörülemeyen sonuçlara neden olabilir.
+Hata ayıklama yapılarında, `CAtlArray` nesne geçerli değilse veya birleştirilmiş toplam *IElement* ve *nCount* öğesi DIZIDEKI toplam öğe sayısını aşarsa bir atlassert tetiklenir. Perakende derlemelerde, geçersiz parametreler öngörülemeyen sonuçlara neden olabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#11](../../atl/codesnippet/cpp/catlarray-class_11.cpp)]
 
-## <a name="catlarraysetat"></a><a name="setat"></a>CAtlArray::SetAt
+## <a name="catlarraysetat"></a><a name="setat"></a>CAtlArray:: SetAt
 
 Dizi nesnesindeki bir öğenin değerini ayarlamak için bu yöntemi çağırın.
 
@@ -479,25 +479,25 @@ void SetAt(size_t iElement, INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*ıelement*<br/>
-Ayarlanan dizi öğesini gösteren dizin.
+*IElement*<br/>
+Ayarlanacak dizi öğesine işaret eden dizin.
 
-*Öğe*<br/>
+*dosyalarında*<br/>
 Belirtilen öğenin yeni değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama yapılarında, *iElement* dizideki öğe sayısını aşarsa bir ATLASSERT yükseltilir. Perakende yapılarda, geçersiz bir parametre öngörülemeyen sonuçlara neden olabilir.
+Hata ayıklama yapılarında, *IElement* dizideki öğe sayısını AŞARSA BIR ATLASSERT tetiklenir. Perakende derlemelerde, geçersiz bir parametre öngörülemeyen sonuçlara neden olabilir.
 
 ### <a name="example"></a>Örnek
 
-[CAtlArray örneğine bakın:GetAt](#getat).
+[CAtlArray:: GetAt](#getat)için örneğe bakın.
 
-## <a name="catlarraysetcount"></a><a name="setcount"></a>CAtlArray::SetCount
+## <a name="catlarraysetcount"></a><a name="setcount"></a>CAtlArray:: SetCount
 
 Dizi nesnesinin boyutunu ayarlamak için bu yöntemi çağırın.
 
-```
+```cpp
 bool SetCount(size_t nNewSize, int nGrowBy = - 1);
 ```
 
@@ -507,25 +507,25 @@ bool SetCount(size_t nNewSize, int nGrowBy = - 1);
 Dizinin gerekli boyutu.
 
 *nGrowBy*<br/>
-Arabellek yapmak için ne kadar büyük belirlemek için kullanılan bir değer. -1 değeri, dahili olarak hesaplanan bir değerin kullanılmasına neden olur.
+Arabelleği ne kadar büyük hale getirmek için kullanılan bir değer. -1 değeri, dahili olarak hesaplanan değerin kullanılmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizi başarıyla yeniden boyutlandırılırsa doğru döndürür, aksi takdirde yanlış.
+Dizi başarıyla yeniden boyutlandırılırsa true, aksi takdirde false döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizi boyutu artırılabilir veya azaltılabilir. Artırılırsa, diziye fazladan boş öğeler eklenir. Azaltılırsa, en büyük endekslere sahip öğeler silinir ve bellek serbest bırakılır.
+Dizi, boyutta artırılabilir veya azaltılabilir. Daha fazla, daha fazla boş öğe diziye eklenir. Azaldıysanız, en büyük indisi olan öğeler silinir ve bellekten serbest bırakılır.
 
-Kullanmadan önce dizinin boyutunu ayarlamak için bu yöntemi kullanın. `SetCount` Kullanılmazsa, öğeleri ekleme işlemi -ve sonraki bellek ayırma sı gerçekleştirilir- performansı ve parça belleği azaltır.
+Kullanmadan önce dizinin boyutunu ayarlamak için bu yöntemi kullanın. `SetCount` Kullanılmazsa, öğe ekleme işlemi ve gerçekleştirilen sonraki bellek ayırma, performansı ve parça belleğini azaltır.
 
 ### <a name="example"></a>Örnek
 
-[CAtlArray örneğine bakın:GetData](#getdata).
+[CAtlArray:: GetData](#getdata)örneğine bakın.
 
-## <a name="catlarraysetatgrow"></a><a name="setatgrow"></a>CAtlArray::SetAtGrow
+## <a name="catlarraysetatgrow"></a><a name="setatgrow"></a>CAtlArray:: SetAtGrow
 
-Dizi nesnesindeki bir öğenin değerini ayarlamak ve diziyi gerektiği gibi genişletmek için bu yöntemi çağırın.
+Dizi nesnesindeki bir öğenin değerini ayarlamak için bu yöntemi çağırın, diziyi gereken şekilde genişleterek.
 
 ```cpp
 void SetAtGrow(size_t iElement, INARGTYPE element);
@@ -533,15 +533,15 @@ void SetAtGrow(size_t iElement, INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*ıelement*<br/>
-Ayarlanan dizi öğesini gösteren dizin.
+*IElement*<br/>
+Ayarlanacak dizi öğesine işaret eden dizin.
 
-*Öğe*<br/>
+*dosyalarında*<br/>
 Belirtilen öğenin yeni değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizin tarafından işaret edilen öğenin değerini değiştirir. *iElement* dizinin geçerli boyutundan büyükse, [catlArray::SetCount'a](#setcount)yapılan bir çağrı kullanılarak dizi otomatik olarak artırılır. Hata ayıklama yapılarında, `CAtlArray` nesne geçerli değilse bir ATLASSERT yükseltilir. Perakende yapılarda, geçersiz parametreler öngörülemeyen sonuçlara neden olabilir.
+Dizin tarafından işaret edilen öğenin değerini değiştirir. *IElement* dizinin geçerli boyutundan büyükse dizi [CAtlArray:: SetCount](#setcount)çağrısı kullanılarak otomatik olarak artırılır. Hata ayıklama yapılarında, `CAtlArray` nesne geçerli değilse bir ATLASSERT tetiklenir. Perakende derlemelerde, geçersiz parametreler öngörülemeyen sonuçlara neden olabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -549,9 +549,9 @@ Dizin tarafından işaret edilen öğenin değerini değiştirir. *iElement* diz
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MMXSwarm Numunesi](../../overview/visual-cpp-samples.md)<br/>
-[DinamikTüketici Örneği](../../overview/visual-cpp-samples.md)<br/>
-[GüncellemePV Örneği](../../overview/visual-cpp-samples.md)<br/>
-[Marquee Örnek](../../overview/visual-cpp-samples.md)<br/>
-[CArray Sınıfı](../../mfc/reference/carray-class.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Mmxsısınma örneği](../../overview/visual-cpp-samples.md)<br/>
+[DynamicConsumer örneği](../../overview/visual-cpp-samples.md)<br/>
+[UpdatePV örneği](../../overview/visual-cpp-samples.md)<br/>
+[Kayan yazı örneği](../../overview/visual-cpp-samples.md)<br/>
+[CArray sınıfı](../../mfc/reference/carray-class.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

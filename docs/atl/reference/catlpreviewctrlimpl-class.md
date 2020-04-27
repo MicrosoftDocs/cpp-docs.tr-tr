@@ -20,23 +20,23 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlPreviewCtrlImpl class
 ms.assetid: 39b3299e-07e4-4abc-9b6e-b54bfa3b0802
-ms.openlocfilehash: 1ccd01bc4d48dc088538f4799b595cce3fb910ba
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: fd94d0d6fe43d80b45def3f747c7b7d558de31d4
+ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81321364"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167883"
 ---
 # <a name="catlpreviewctrlimpl-class"></a>CAtlPreviewCtrlImpl Sınıfı
 
-Bu sınıf, Zengin Önizleme için Shell tarafından sağlanan ana bilgisayar penceresine yerleştirilen bir pencerenin ATL uygulamasıdır.
+Bu sınıf, kabuk tarafından zengin önizleme için sunulan bir konak penceresine yerleştirilmiş bir pencerenin ATL uygulamasıdır.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPreviewCtrl;
 ```
 
@@ -46,40 +46,40 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlPreviewCtrlImpl::~CAtlPreviewCtrlImpl](#dtor)|Bir önizleme denetim nesnesini yok eder.|
-|[CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl](#catlpreviewctrlimpl)|Bir önizleme denetim nesnesi oluşturuyor.|
+|[Catlönizleme Ctrlımpl:: ~ Catlönizleme Ctrlımpl](#dtor)|Bir önizleme denetim nesnesinin yapılarını kaldırır.|
+|[Catlönizleme Ctrlımpl:: Catlönizleme Ctrlımpl](#catlpreviewctrlimpl)|Bir önizleme denetim nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlPreviewCtrlImpl::Oluştur](#create)|Windows penceresini oluşturmak için Zengin Önizleme işleyicisi tarafından çağrılır.|
-|[CAtlPreviewCtrlImpl::Destroy](#destroy)|Bu denetimi yok etmesi gerektiğinde Zengin Önizleme işleyicisi tarafından çağrılır.|
-|[CAtlPreviewCtrlImpl::Odak](#focus)|Bu denetime giriş odağı ayarlar.|
-|[CAtlPreviewCtrlImpl::OnPaint](#onpaint)|WM_PAINT iletisini işler.|
-|[CAtlPreviewCtrlImpl::Yeniden çiz](#redraw)|Bu denetimi yeniden çizmeyi söyler.|
-|[CAtlPreviewCtrlImpl::SetHost](#sethost)|Bu denetim için yeni bir ebeveyn ayarlar.|
-|[CAtlPreviewCtrlImpl::SetPreviewVisuals](#setpreviewvisuals)|Zengin önizleme içeriğinin görsellerini ayarlaması gerektiğinde Zengin Önizleme işleyicisi tarafından çağrılır.|
-|[CAtlPreviewCtrlImpl::SetRect](#setrect)|Bu denetim için yeni bir sınırlayıcı dikdörtgen ayarlar.|
+|[Catlönizleme Ctrlımpl:: Create](#create)|Windows penceresini oluşturmak için zengin bir önizleme işleyicisi tarafından çağırılır.|
+|[Catlönizleme Ctrlımpl::D estroy](#destroy)|Bu denetimi yok etmeniz gerektiğinde zengin bir önizleme işleyicisi tarafından çağırılır.|
+|[Catlönizleme Ctrlımpl:: Focus](#focus)|Giriş odağını bu denetime ayarlar.|
+|[Catlönizleme Ctrlımpl:: OnPaint](#onpaint)|WM_PAINT iletisini işler.|
+|[Catlönizleme Ctrlımpl:: yeniden Çiz](#redraw)|Bu denetime yeniden çizim söyler.|
+|[Catlönizleme Ctrlımpl:: SetHost](#sethost)|Bu denetim için yeni bir üst ayarlar.|
+|[Catlönizleme Ctrlımpl:: Setönizleme görselleri](#setpreviewvisuals)|Zengin önizleme içeriği görselleri ayarlaması gerektiğinde zengin bir önizleme işleyicisi tarafından çağırılır.|
+|[Catlönizleme Ctrlımpl:: SetRect](#setrect)|Bu denetim için yeni bir sınırlayıcı dikdörtgen ayarlar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlPreviewCtrlImpl::DoPaint](#dopaint)|Önizlemeyi işlemek için çerçeve tarafından çağrılır.|
+|[Catlönizleme Ctrlımpl::D oPaint](#dopaint)|Önizlemeyi işlemek için Framework tarafından çağırılır.|
 
-### <a name="protected-constants"></a>Korumalı Sabitler
-
-|Adı|Açıklama|
-|----------|-----------------|
-|[CAtlPreviewCtrlImpl::m_plf](#m_plf)|Önizleme penceresinde metni görüntülemek için kullanılan yazı tipi.|
-
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-constants"></a>Korunan sabitler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlPreviewCtrlImpl::m_clrBack](#m_clrback)|Önizleme penceresinin arka plan rengi.|
-|[CAtlPreviewCtrlImpl::m_clrText](#m_clrtext)|Önizleme penceresinin metin rengi.|
+|[Catlönizleme Ctrlımpl:: m_plf](#m_plf)|Önizleme penceresinde metin görüntülemek için kullanılan yazı tipi.|
+
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
+
+|Adı|Açıklama|
+|----------|-----------------|
+|[Catlönizleme Ctrlımpl:: m_clrBack](#m_clrback)|Önizleme penceresinin arka plan rengi.|
+|[Catlönizleme Ctrlımpl:: m_clrText](#m_clrtext)|Önizleme penceresinin metin rengi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -93,7 +93,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 
 `ATL::CWindowImplBaseT<TBase,TWinTraits>`
 
-[ATL::CWindowImpl\<CAtlPreviewCtrlImpl>](../../atl/reference/cwindowimpl-class.md)
+[ATL:: CWindowImpl\<catlönizleme ctrlimpl>](../../atl/reference/cwindowimpl-class.md)
 
 `IPreviewCtrl`
 
@@ -101,121 +101,121 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlpreviewctrlimpl.h
+**Üstbilgi:** atlönizleme ctrlimpl. h
 
-## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="catlpreviewctrlimpl"></a>CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl
+## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="catlpreviewctrlimpl"></a>Catlönizleme Ctrlımpl:: Catlönizleme Ctrlımpl
 
-Bir önizleme denetim nesnesi oluşturuyor.
+Bir önizleme denetim nesnesi oluşturur.
 
-```
+```cpp
 CAtlPreviewCtrlImpl(void) : m_clrText(0),
    m_clrBack(RGB(255, 255, 255)), m_plf(NULL);
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="dtor"></a>CAtlPreviewCtrlImpl::~CAtlPreviewCtrlImpl
+## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="dtor"></a>Catlönizleme Ctrlımpl:: ~ Catlönizleme Ctrlımpl
 
-Bir önizleme denetim nesnesini yok eder.
+Bir önizleme denetim nesnesinin yapılarını kaldırır.
 
-```
+```cpp
 virtual ~CAtlPreviewCtrlImpl(void);
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimplcreate"></a><a name="create"></a>CAtlPreviewCtrlImpl::Oluştur
+## <a name="catlpreviewctrlimplcreate"></a><a name="create"></a>Catlönizleme Ctrlımpl:: Create
 
-Windows penceresini oluşturmak için Zengin Önizleme işleyicisi tarafından çağrılır.
+Windows penceresini oluşturmak için zengin bir önizleme işleyicisi tarafından çağırılır.
 
-```
+```cpp
 virtual BOOL Create(HWND hWndParent, const RECT* prc);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *hWndParent*<br/>
-Zengin Önizleme için Shell tarafından sağlanan ana bilgisayar penceresine bir tutamaç.
+Zengin Önizleme için kabuğun sağladığı konak penceresine yönelik bir tanıtıcı.
 
-*Çhc*<br/>
+*PRC*<br/>
 Pencerenin başlangıç boyutunu ve konumunu belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Doğru eğer başarılı; aksi takdirde YANLIŞ.
+Başarılı olursa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimpldestroy"></a><a name="destroy"></a>CAtlPreviewCtrlImpl::Destroy
+## <a name="catlpreviewctrlimpldestroy"></a><a name="destroy"></a>Catlönizleme Ctrlımpl::D estroy
 
-Bu denetimi yok etmesi gerektiğinde Zengin Önizleme işleyicisi tarafından çağrılır.
+Bu denetimi yok etmeniz gerektiğinde zengin bir önizleme işleyicisi tarafından çağırılır.
 
-```
+```cpp
 virtual void Destroy();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimpldopaint"></a><a name="dopaint"></a>CAtlPreviewCtrlImpl::DoPaint
+## <a name="catlpreviewctrlimpldopaint"></a><a name="dopaint"></a>Catlönizleme Ctrlımpl::D oPaint
 
-Önizlemeyi işlemek için çerçeve tarafından çağrılır.
+Önizlemeyi işlemek için Framework tarafından çağırılır.
 
-```
+```cpp
 virtual void DoPaint(HDC hdc);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Hdc*<br/>
-Boyama için aygıt bağlamına bir tutamaç.
+*HDC*<br/>
+Boyama için bir cihaz bağlamı tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimplfocus"></a><a name="focus"></a>CAtlPreviewCtrlImpl::Odak
+## <a name="catlpreviewctrlimplfocus"></a><a name="focus"></a>Catlönizleme Ctrlımpl:: Focus
 
-Bu denetime giriş odağı ayarlar.
+Giriş odağını bu denetime ayarlar.
 
-```
+```cpp
 virtual void Focus();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimplm_clrback"></a><a name="m_clrback"></a>CAtlPreviewCtrlImpl::m_clrBack
+## <a name="catlpreviewctrlimplm_clrback"></a><a name="m_clrback"></a>Catlönizleme Ctrlımpl:: m_clrBack
 
 Önizleme penceresinin arka plan rengi.
 
-```
+```cpp
 COLORREF m_clrBack;
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimplm_clrtext"></a><a name="m_clrtext"></a>CAtlPreviewCtrlImpl::m_clrText
+## <a name="catlpreviewctrlimplm_clrtext"></a><a name="m_clrtext"></a>Catlönizleme Ctrlımpl:: m_clrText
 
 Önizleme penceresinin metin rengi.
 
-```
+```cpp
 COLORREF m_clrText;
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimplm_plf"></a><a name="m_plf"></a>CAtlPreviewCtrlImpl::m_plf
+## <a name="catlpreviewctrlimplm_plf"></a><a name="m_plf"></a>Catlönizleme Ctrlımpl:: m_plf
 
-Önizleme penceresinde metni görüntülemek için kullanılan yazı tipi.
+Önizleme penceresinde metin görüntülemek için kullanılan yazı tipi.
 
-```
+```cpp
 const LOGFONTW* m_plf;
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimplonpaint"></a><a name="onpaint"></a>CAtlPreviewCtrlImpl::OnPaint
+## <a name="catlpreviewctrlimplonpaint"></a><a name="onpaint"></a>Catlönizleme Ctrlımpl:: OnPaint
 
 WM_PAINT iletisini işler.
 
-```
+```cpp
 LRESULT OnPaint(
     UINT nMsg,
     WPARAM wParam,
@@ -226,16 +226,16 @@ LRESULT OnPaint(
 ### <a name="parameters"></a>Parametreler
 
 *nMsg*<br/>
-WM_PAINT ayarlayın.
+WM_PAINT olarak ayarlayın.
 
-*Wparam*<br/>
+*wParam*<br/>
 Bu parametre kullanılmaz.
 
-*Lparam*<br/>
+*lParam*<br/>
 Bu parametre kullanılmaz.
 
-*bHandled*<br/>
-Bu işlev döndüğünde TRUE içerir.
+*Bişlenmiş*<br/>
+Bu işlev döndürüldüğünde, TRUE değerini içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -243,36 +243,36 @@ Her zaman 0 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimplredraw"></a><a name="redraw"></a>CAtlPreviewCtrlImpl::Yeniden çiz
+## <a name="catlpreviewctrlimplredraw"></a><a name="redraw"></a>Catlönizleme Ctrlımpl:: yeniden Çiz
 
-Bu denetimi yeniden çizmeyi söyler.
+Bu denetime yeniden çizim söyler.
 
-```
+```cpp
 virtual void Redraw();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimplsethost"></a><a name="sethost"></a>CAtlPreviewCtrlImpl::SetHost
+## <a name="catlpreviewctrlimplsethost"></a><a name="sethost"></a>Catlönizleme Ctrlımpl:: SetHost
 
-Bu denetim için yeni bir ebeveyn ayarlar.
+Bu denetim için yeni bir üst ayarlar.
 
-```
+```cpp
 virtual void SetHost(HWND hWndParent);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *hWndParent*<br/>
-Yeni üst pencerenin tutamacı.
+Yeni ana pencereye yönelik bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimplsetpreviewvisuals"></a><a name="setpreviewvisuals"></a>CAtlPreviewCtrlImpl::SetPreviewVisuals
+## <a name="catlpreviewctrlimplsetpreviewvisuals"></a><a name="setpreviewvisuals"></a>Catlönizleme Ctrlımpl:: Setönizleme görselleri
 
-Zengin önizleme içeriğinin görsellerini ayarlaması gerektiğinde Zengin Önizleme işleyicisi tarafından çağrılır.
+Zengin önizleme içeriği görselleri ayarlaması gerektiğinde zengin bir önizleme işleyicisi tarafından çağırılır.
 
-```
+```cpp
 virtual void SetPreviewVisuals(
     COLORREF clrBack,
     COLORREF clrText,
@@ -281,32 +281,32 @@ virtual void SetPreviewVisuals(
 
 ### <a name="parameters"></a>Parametreler
 
-*clrGeri*<br/>
+*clrBack*<br/>
 Önizleme penceresinin arka plan rengi.
 
-*clrMetin*<br/>
+*clrText*<br/>
 Önizleme penceresinin metin rengi.
 
-*plf*<br/>
-Önizleme penceresinde metni görüntülemek için kullanılan yazı tipi.
+*PLF*<br/>
+Önizleme penceresinde metin görüntülemek için kullanılan yazı tipi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="catlpreviewctrlimplsetrect"></a><a name="setrect"></a>CAtlPreviewCtrlImpl::SetRect
+## <a name="catlpreviewctrlimplsetrect"></a><a name="setrect"></a>Catlönizleme Ctrlımpl:: SetRect
 
 Bu denetim için yeni bir sınırlayıcı dikdörtgen ayarlar.
 
-```
+```cpp
 virtual void SetRect(const RECT* prc, BOOL bRedraw);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Çhc*<br/>
+*PRC*<br/>
 Önizleme denetiminin yeni boyutunu ve konumunu belirtir.
 
 *bRedraw*<br/>
-Denetimin yeniden çizilip çizilmeyeceğini belirtir.
+Denetimin yeniden çizilip çizmeyeceğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 

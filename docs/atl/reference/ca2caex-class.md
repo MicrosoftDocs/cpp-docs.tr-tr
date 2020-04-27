@@ -9,31 +9,31 @@ f1_keywords:
 helpviewer_keywords:
 - CA2CAEX class
 ms.assetid: 388e7c1d-a144-474c-a182-b15f69a74bd8
-ms.openlocfilehash: e6c727993b2907aaa551421a5d2d23e372b68917
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 505c1e369bc5949fea291a2172c16d5e52c75567
+ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319141"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82168520"
 ---
 # <a name="ca2caex-class"></a>CA2CAEX Sınıfı
 
-Bu sınıf dize dönüştürme makroları CA2CTEX ve CT2CAEX ve typedef CA2CA tarafından kullanılır.
+Bu sınıf, CA2CTEX ve CT2CAEX dize dönüştürme makroları ve typedef CA2CA tarafından kullanılır.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<int t_nBufferLength = 128>
 class CA2CAEX
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *t_nBufferLength*<br/>
-Çeviri işleminde kullanılan arabelleğe boyutu. Varsayılan uzunluk 128 bayttır.
+Çeviri işleminde kullanılan arabelleğin boyutu. Varsayılan uzunluk 128 bayttır.
 
 ## <a name="members"></a>Üyeler
 
@@ -42,92 +42,92 @@ class CA2CAEX
 |Adı|Açıklama|
 |----------|-----------------|
 |[CA2CAEX::CA2CAEX](#ca2caex)|Oluşturucu.|
-|[CA2CAEX::~CA2CAEX](#dtor)|Yıkıcı.|
+|[CA2CAEX:: ~ CA2CAEX](#dtor)|Yok edicisi.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CA2CAEX::operatör LPCSTR](#operator_lpcstr)|Dönüşüm işleci.|
+|[CA2CAEX:: operator LPCSTR](#operator_lpcstr)|Dönüştürme işleci.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CA2CAEX::m_psz](#m_psz)|Kaynak dizesini depolayan veri üyesi.|
+|[CA2CAEX:: m_psz](#m_psz)|Kaynak dizeyi depolayan veri üyesi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İlave işlevsellik gerekmedikçe, kendi kodunuzda CA2CTEX, CT2CAEX veya CA2CA kullanın.
+Ek işlevsellik gerekmediği takdirde, kendi kodunuzda CA2CTEX, CT2CAEX veya CA2CA kullanın.
 
-Bu sınıfın döngüler halinde kullanımı güvenlidir ve yığını taşmaz. Varsayılan olarak, ATL dönüştürme sınıfları ve makrolar dönüşüm için geçerli iş parçacığının ANSI kod sayfasını kullanır.
+Bu sınıfın Döngülerde kullanılması güvenlidir ve yığın taşmaz. Varsayılan olarak, ATL dönüştürme sınıfları ve makroları dönüştürme için geçerli iş parçacığının ANSI kod sayfasını kullanır.
 
-Aşağıdaki makrolar bu sınıfa dayanır:
+Aşağıdaki makrolar bu sınıfa dayalıdır:
 
 - CA2CTEX
 
 - CT2CAEX
 
-Aşağıdaki typedef bu sınıfa dayanır:
+Aşağıdaki typedef bu sınıfa dayalıdır:
 
 - CA2CA
 
-Bu metin dönüştürme makrolarının tartışılması için [ATL ve MFC String Dönüşüm Makroları'na](string-conversion-macros.md)bakın.
+Bu metin dönüştürme makrolarıyla ilgili bir tartışma için bkz. [ATL ve MFC dize dönüştürme makroları](string-conversion-macros.md).
 
 ## <a name="example"></a>Örnek
 
-Bu dize dönüştürme makrolarını kullanma örneği için [ATL ve MFC String Dönüşüm Makrolarına](string-conversion-macros.md) bakın.
+Bu dize dönüştürme makrolarını kullanmayla ilgili bir örnek için bkz. [ATL ve MFC dize dönüştürme makroları](string-conversion-macros.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlconv.h
+**Üstbilgi:** AtlConv. h
 
 ## <a name="ca2caexca2caex"></a><a name="ca2caex"></a>CA2CAEX::CA2CAEX
 
 Oluşturucu.
 
-```
+```cpp
 CA2CAEX(LPCSTR psz, UINT nCodePage) throw(...);
 CA2CAEX(LPCSTR psz) throw(...);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Psz*<br/>
+*PSZ*<br/>
 Dönüştürülecek metin dizesi.
 
 *nCodePage*<br/>
-Bu sınıfta kullanılmayan.
+Bu sınıfta kullanılmıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çeviri için gerekli arabelleği oluşturur.
+Çeviri için gereken arabelleği oluşturur.
 
-## <a name="ca2caexca2caex"></a><a name="dtor"></a>CA2CAEX::~CA2CAEX
+## <a name="ca2caexca2caex"></a><a name="dtor"></a>CA2CAEX:: ~ CA2CAEX
 
-Yıkıcı.
+Yok edicisi.
 
-```
+```cpp
 ~CA2CAEX() throw();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan arabelleği serbest bırakın.
+Ayrılan arabelleği serbest bırakır.
 
-## <a name="ca2caexm_psz"></a><a name="m_psz"></a>CA2CAEX::m_psz
+## <a name="ca2caexm_psz"></a><a name="m_psz"></a>CA2CAEX:: m_psz
 
-Kaynak dizesini depolayan veri üyesi.
+Kaynak dizeyi depolayan veri üyesi.
 
-```
+```cpp
 LPCSTR m_psz;
 ```
 
-## <a name="ca2caexoperator-lpcstr"></a><a name="operator_lpcstr"></a>CA2CAEX::operatör LPCSTR
+## <a name="ca2caexoperator-lpcstr"></a><a name="operator_lpcstr"></a>CA2CAEX:: operator LPCSTR
 
-Dönüşüm işleci.
+Dönüştürme işleci.
 
-```
+```cpp
 operator LPCSTR() const throw();
 ```
 
@@ -142,4 +142,4 @@ Metin dizesini LPCSTR türü olarak döndürür.
 [CW2AEX Sınıfı](../../atl/reference/cw2aex-class.md)<br/>
 [CW2CWEX Sınıfı](../../atl/reference/cw2cwex-class.md)<br/>
 [CW2WEX Sınıfı](../../atl/reference/cw2wex-class.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

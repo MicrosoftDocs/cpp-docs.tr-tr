@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - MessageHandler function
 ms.assetid: 8a0acf97-1b0d-4226-91b9-75446634a03c
-ms.openlocfilehash: aa044ef88ba3c872c2652cd774ac50024e52c68c
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 65a8ce08e4f8606f168b101aa4daba23ef541051
+ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492319"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82168676"
 ---
 # <a name="messagehandler"></a>MessageHandler
 
@@ -18,7 +18,7 @@ ms.locfileid: "69492319"
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 LRESULT MessageHandler(
     UINT uMsg,
     WPARAM wParam,
@@ -38,7 +38,7 @@ LRESULT MessageHandler(
 İletiye özgü ek bilgiler.
 
 *Bişlenmiş*<br/>
-Çağrılan ileti eşleme kümeleri çağrılmadan önce `MessageHandler` true olarak ayarlanır. İletiyi tam olarak işlemezse, iletinin daha fazla işleme ihtiyacı olduğunu göstermek için bişlenmiş olarak false olarak ayarlanmalıdır. `MessageHandler`
+Çağrılan ileti *eşleme kümeleri çağrılmadan* önce `MessageHandler` true olarak ayarlanır. `MessageHandler` İletiyi tam olarak işlemezse, iletinin daha fazla işleme ihtiyacı olduğunu göstermek Için *BIŞLENMIŞ* olarak false olarak ayarlanmalıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -50,6 +50,6 @@ Bu ileti işleyicisini bir ileti eşlemesinde kullanmanın bir örneği için bk
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pencere Uygulama](../atl/implementing-a-window.md)<br/>
+[Pencere uygulama](../atl/implementing-a-window.md)<br/>
 [İleti haritaları](../atl/message-maps-atl.md)<br/>
 [WM_NOTIFY](/windows/win32/controls/wm-notify)

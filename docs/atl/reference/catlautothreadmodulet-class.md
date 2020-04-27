@@ -8,39 +8,39 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlAutoThreadModuleT class
 ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
-ms.openlocfilehash: e7b7a327d7c47c4472b43ed58fbe9ad0556a7620
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7308e3a51c531fbe942e2df326c03273eeb326e2
+ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81321550"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82168730"
 ---
 # <a name="catlautothreadmodulet-class"></a>CAtlAutoThreadModuleT Sınıfı
 
-Bu sınıf, iş parçacığı havuzlu, apartman modeli COM sunucusu uygulamak için yöntemler sağlar.
+Bu sınıf, iş parçacığı havuza alınmış, Apartman modeli COM sunucusu uygulamak için yöntemler sağlar.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template <class T,
          class ThreadAllocator = CComSimpleThreadAllocator,
          DWORD dwWait = INFINITE>
 class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-COM sunucusunu uygulayacak sınıf.
+COM sunucusu uygulanacak sınıf.
 
-*ThreadAllocator*<br/>
-Sınıf yönetim iş parçacığı seçimi. Varsayılan değer [CComSimpleThreadAllocator'dur.](../../atl/reference/ccomsimplethreadallocator-class.md)
+*Threadayırıcı*<br/>
+İş parçacığı seçimini yöneten sınıf. Varsayılan değer [Ccomsimplethreadayırıcı](../../atl/reference/ccomsimplethreadallocator-class.md)' dır.
 
 *dwWait*<br/>
-Zaman aralığını milisaniye cinsinden belirtir. Varsayılan, yöntemin zaman aşımı aralığının hiçbir zaman gerçekleşmediği anlamına gelen SONSUZ'dur.
+Milisaniye cinsinden zaman aşımı aralığını belirtir. Varsayılan değer sonsuz ' dur, bu da yöntemin zaman aşımı aralığının hiçbir zaman sona ermediği anlamına gelir.
 
 ## <a name="members"></a>Üyeler
 
@@ -48,14 +48,14 @@ Zaman aralığını milisaniye cinsinden belirtir. Varsayılan, yöntemin zaman 
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlAutoThreadModuleT::GetDefaultThreads](#getdefaultthreads)|Bu statik işlev, işlemci sayısına bağlı olarak EXE modülü için maksimum iş parçacığı sayısını dinamik olarak hesaplar ve döndürür.|
+|[Catlautothreadmodület:: GetDefaultThreads](#getdefaultthreads)|Bu statik işlev, işlemci sayısına göre, EXE modülü için en fazla iş parçacığı sayısını dinamik olarak hesaplar ve döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) sınıfı, iş `CAtlAutoThreadModuleT` parçacığı havuzu, daire modeli COM sunucusu nu uygulamak için türetilmiştir. Bu eski sınıf [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)değiştirir.
+[CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) sınıfı, iş parçacığı `CAtlAutoThreadModuleT` havuza alınmış, Apartman modeli com sunucusu uygulamak için öğesinden türetilir. Eski sınıf [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)yerini almıştır.
 
 > [!NOTE]
-> DLL boşaltıldığında SONSUZ varsayılan *dwWait* değeri bir kilitlenme neden olacağından, bu sınıf bir DLL kullanılmamalıdır.
+> Bu sınıf DLL 'de kullanılmamalıdır, çünkü sonsuz varsayılan *dwWait* değeri dll kaldırıldığında kilitlenmeyle sonuçlanır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -65,13 +65,13 @@ Zaman aralığını milisaniye cinsinden belirtir. Varsayılan, yöntemin zaman 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-## <a name="catlautothreadmoduletgetdefaultthreads"></a><a name="getdefaultthreads"></a>CAtlAutoThreadModuleT::GetDefaultThreads
+## <a name="catlautothreadmoduletgetdefaultthreads"></a><a name="getdefaultthreads"></a>Catlautothreadmodület:: GetDefaultThreads
 
-Bu statik işlev, işlemci sayısına bağlı olarak EXE modülü için maksimum iş parçacığı sayısını dinamik olarak hesaplar ve döndürür.
+Bu statik işlev, işlemci sayısına göre, EXE modülü için en fazla iş parçacığı sayısını dinamik olarak hesaplar ve döndürür.
 
-```
+```cpp
 static int GetDefaultThreads();
 ```
 
@@ -86,6 +86,6 @@ EXE modülünde oluşturulacak iş parçacığı sayısı.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IAtlAutoThreadModule Sınıfı](../../atl/reference/iatlautothreadmodule-class.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [IAtlAutoThreadModule Sınıfı](../../atl/reference/iatlautothreadmodule-class.md)<br/>
-[Modül Sınıfları](../../atl/atl-module-classes.md)
+[Modül sınıfları](../../atl/atl-module-classes.md)

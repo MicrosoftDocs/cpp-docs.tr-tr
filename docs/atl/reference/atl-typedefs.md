@@ -23,131 +23,131 @@ helpviewer_keywords:
 - typedefs
 - ATL, typedefs
 ms.assetid: 7dd05baa-3efb-4e3b-af23-793c610f4560
-ms.openlocfilehash: 5548bee36ac52dbd6add31241714b0404289be45
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 26e4e80ed3110351130731e6030427d25fc4a0ea
+ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319189"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82168741"
 ---
 # <a name="atl-typedefs"></a>ATL Tür tanımları
 
-Etkin Şablon Kitaplığı aşağıdaki typedefs içerir.
+Etkin Şablon kitaplığı aşağıdaki tür tanımlarını içerir.
 
 |||
 |-|-|
-|[_ATL_BASE_MODULE](#_atl_base_module)|[_ATL_BASE_MODULE70](../../atl/reference/atl-base-module70-structure.md)dayalı bir typedef olarak tanımlanır.|
-|[_ATL_COM_MODULE](#_atl_com_module)|[_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md)dayalı bir typedef olarak tanımlanır.|
-|[_ATL_MODULE](#_atl_module)|[_ATL_MODULE70](../../atl/reference/atl-module70-structure.md)dayalı bir typedef olarak tanımlanır.|
-|[_ATL_WIN_MODULE](#_atl_win_module)|[_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md) dayalı typedef olarak tanımlanır|
-|[ATL_URL_PORT](#atl_url_port)|Bir bağlantı noktası numarası belirtmek için [CUrl](../../atl/reference/curl-class.md) tarafından kullanılan tür.|
-|[CcomDispatchDriver](#ccomdispatchdriver)|Bu sınıf, COM arabirim işaretçileri yönetir.|
-|[Ccomglobalsthreadmodel](#ccomglobalsthreadmodel)|Kullanılan iş parçacığı modeline bakılmaksızın uygun iş parçacığı modeli yöntemlerini çağırır.|
-|[Ccomobjectthreadmodel](#ccomobjectthreadmodel)|Kullanılan iş parçacığı modeline bakılmaksızın uygun iş parçacığı modeli yöntemlerini çağırır.|
-|[CContainedWindow](#ccontainedwindow)|Bu sınıf bir uzmanlık `CContainedWindowT`olduğunu .|
-|[CPath](#cpath)|[CPathT'nin](../../atl/reference/cpatht-class.md) uzmanlık `CString`alanı .|
-|[Cpatha](#cpatha)|[CPathT'nin](../../atl/reference/cpatht-class.md) uzmanlık `CStringA`alanı .|
-|[CPathW](#cpathw)|[CPathT'nin](../../atl/reference/cpatht-class.md) uzmanlık `CStringW`alanı .|
-|[CSimpleValArray](#csimplevalarray)|Basit türleri depolamak için bir dizitemsil eder.|
-|[Varsayılan ThreadTraits](#defaultthreadtraits)|Varsayılan iş parçacığı özellikleri sınıfı.|
-|[LPCURL](#lpcurl)|Sabit bir [CUrl](../../atl/reference/curl-class.md) nesnesine işaretçi.|
-|[LPURL](#lpurl)|[CUrl](../../atl/reference/curl-class.md) nesnesine işaretçi.|
+|[_ATL_BASE_MODULE](#_atl_base_module)|[_ATL_BASE_MODULE70](../../atl/reference/atl-base-module70-structure.md)temel alan bir typedef olarak tanımlanır.|
+|[_ATL_COM_MODULE](#_atl_com_module)|[_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md)temel alan bir typedef olarak tanımlanır.|
+|[_ATL_MODULE](#_atl_module)|[_ATL_MODULE70](../../atl/reference/atl-module70-structure.md)temel alan bir typedef olarak tanımlanır.|
+|[_ATL_WIN_MODULE](#_atl_win_module)|[_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md) tabanlı bir typedef olarak tanımlanır|
+|[ATL_URL_PORT](#atl_url_port)|Bir bağlantı noktası numarası belirtmek için [kıvrımlı](../../atl/reference/curl-class.md) tarafından kullanılan tür.|
+|[CComDispatchDriver](#ccomdispatchdriver)|Bu sınıf, COM arabirimi işaretçilerini yönetir.|
+|[CComGlobalsThreadModel](#ccomglobalsthreadmodel)|Kullanılan iş parçacığı modelinden bağımsız olarak uygun iş parçacığı modeli yöntemlerini çağırır.|
+|[CComObjectThreadModel](#ccomobjectthreadmodel)|Kullanılan iş parçacığı modelinden bağımsız olarak uygun iş parçacığı modeli yöntemlerini çağırır.|
+|[CContainedWindow](#ccontainedwindow)|Bu sınıf, öğesinin `CContainedWindowT`bir özelleştirmesi.|
+|[CPath](#cpath)|Kullanarak `CString` [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi.|
+|[CPathA](#cpatha)|Kullanarak `CStringA` [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi.|
+|[CPathW](#cpathw)|Kullanarak `CStringW` [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi.|
+|[CSimpleValArray](#csimplevalarray)|Basit türleri depolamak için bir diziyi temsil eder.|
+|[Defaultthreadnitelikler](#defaultthreadtraits)|Varsayılan iş parçacığı nitelikleri sınıfı.|
+|[LPKıVRıK](#lpcurl)|Sabit [kıvrımlı](../../atl/reference/curl-class.md) nesne işaretçisi.|
+|[LPURL](#lpurl)|Bir [kıvrımlı](../../atl/reference/curl-class.md) nesne işaretçisi.|
 
 ## <a name="_atl_base_module"></a><a name="_atl_base_module"></a>_ATL_BASE_MODULE
 
-_ATL_BASE_MODULE70 dayalı bir typedef olarak tanımlanır.
+_ATL_BASE_MODULE70 temel alan bir typedef olarak tanımlanır.
 
-```
+```cpp
 typedef ATL::_ATL_BASE_MODULE70 _ATL_BASE_MODULE;
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her ATL projesinde kullanılır. [_ATL_BASE_MODULE70](../../atl/reference/atl-base-module70-structure.md)dayanarak.
+Her ATL projesinde kullanılır. [_ATL_BASE_MODULE70](../../atl/reference/atl-base-module70-structure.md)temel alır.
 
-ATL 7.0 Modül Sınıflarının bir parçası olan sınıflar _ATL_BASE_MODULE yapısından kaynaklanır.  ATL Modül Sınıfları hakkında daha fazla bilgi için [COM Modül Sınıfları'na](../../atl/com-modules-classes.md)bakın.
+ATL 7,0 modül sınıflarının parçası olan sınıflar _ATL_BASE_MODULE yapısından türetilir.  ATL modül sınıfları hakkında daha fazla bilgi için bkz. [com modül sınıfları](../../atl/com-modules-classes.md).
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcore.h
+**Üstbilgi:** atlcore. h
 
 ## <a name="_atl_com_module"></a><a name="_atl_com_module"></a>_ATL_COM_MODULE
 
-_ATL_COM_MODULE70 dayalı bir typedef olarak tanımlanır.
+_ATL_COM_MODULE70 temel alan bir typedef olarak tanımlanır.
 
-```
+```cpp
 typedef ATL::_ATL_COM_MODULE70 _ATL_COM_MODULE;
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-COM özelliklerini kullanan ATL projeleri tarafından kullanılır. [_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md)dayanarak.
+COM özellikleri kullanan ATL projeleri tarafından kullanılır. [_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md)temel alır.
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
 ## <a name="_atl_module"></a><a name="_atl_module"></a>_ATL_MODULE
 
-_ATL_MODULE70 dayalı bir typedef olarak tanımlanır.
+_ATL_MODULE70 temel alan bir typedef olarak tanımlanır.
 
-```
+```cpp
 typedef ATL::_ATL_MODULE70 _ATL_MODULE;
 ```
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:**
+**Üst bilgi**
 
 ### <a name="remarks"></a>Açıklamalar
 
-[_ATL_MODULE70](../../atl/reference/atl-module70-structure.md)dayanarak.
+[_ATL_MODULE70](../../atl/reference/atl-module70-structure.md)temel alır.
 
 ## <a name="_atl_win_module"></a><a name="_atl_win_module"></a>_ATL_WIN_MODULE
 
-_ATL_WIN_MODULE70 dayalı bir typedef olarak tanımlanır.
+_ATL_WIN_MODULE70 temel alan bir typedef olarak tanımlanır.
 
-```
+```cpp
 typedef ATL::_ATL_WIN_MODULE70 _ATL_WIN_MODULE;
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Pencereleme özelliklerini kullanan tüm ATL projeleri tarafından kullanılır. [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md)dayanarak.
+Pencereleme özellikleri kullanan tüm ATL projeleri tarafından kullanılır. [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md)temel alır.
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
 ## <a name="atl_url_port"></a><a name="atl_url_port"></a>ATL_URL_PORT
 
-Bir bağlantı noktası numarası belirtmek için [CUrl](curl-class.md) tarafından kullanılan tür.
+Bir bağlantı noktası numarası belirtmek için [kıvrımlı](curl-class.md) tarafından kullanılan tür.
 
-```
+```cpp
 typedef WORD ATL_URL_PORT;
 ```
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlutil.h
+**Üstbilgi:** atlutil. h
 
-## <a name="ccomdispatchdriver"></a><a name="ccomdispatchdriver"></a>CcomDispatchDriver
+## <a name="ccomdispatchdriver"></a><a name="ccomdispatchdriver"></a>CComDispatchDriver
 
-Bu sınıf, COM arabirim işaretçileri yönetir.
+Bu sınıf, COM arabirimi işaretçilerini yönetir.
 
-```
+```cpp
 typedef CComQIPtr<IDispatch, &__uuidof(IDispatch)> CComDispatchDriver;
 ```
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-## <a name="ccomglobalsthreadmodel"></a><a name="ccomglobalsthreadmodel"></a>Ccomglobalsthreadmodel
+## <a name="ccomglobalsthreadmodel"></a><a name="ccomglobalsthreadmodel"></a>CComGlobalsThreadModel
 
-Kullanılan iş parçacığı modeline bakılmaksızın uygun iş parçacığı modeli yöntemlerini çağırır.
+Kullanılan iş parçacığı modelinden bağımsız olarak uygun iş parçacığı modeli yöntemlerini çağırır.
 
-```
+```cpp
 #if defined(_ATL_SINGLE_THREADED)
 typedef CComSingleThreadModel CComGlobalsThreadModel;
 #elif defined(_ATL_APARTMENT_THREADED)
@@ -161,33 +161,33 @@ typedef CComMultiThreadModel CComGlobalsThreadModel;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamanız tarafından kullanılan iş parçacığı modeline bağlı `CComGlobalsThreadModel` olarak, **typedef** adı [ya CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) veya [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)başvurur. Bu sınıflar, `typedef` kritik bir bölüm sınıfına başvurmak için ek adlar sağlar.
+Uygulamanız tarafından kullanılan iş parçacığı modeline bağlı olarak, **typedef** adı `CComGlobalsThreadModel` [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) veya [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)'e başvurur. Bu sınıflar, kritik `typedef` bölüm sınıfına başvurmak için ek adlar sağlar.
 
 > [!NOTE]
-> `CComGlobalsThreadModel`sınıf [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)başvuru yok.
+> `CComGlobalsThreadModel`[CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)sınıfına başvurmuyor.
 
-Kullanmak, `CComGlobalsThreadModel` belirli bir iş parçacığı modeli sınıfı belirtmekten sizi kurtarır. Kullanılan iş parçacığı modeli ne olursa olsun, uygun yöntemler çağrılacaktır.
+Kullanma `CComGlobalsThreadModel` , belirli bir iş parçacığı modeli sınıfı belirtmekten kurtarır. Kullanılan iş parçacığı modelinden bağımsız olarak, uygun yöntemler çağrılacaktır.
 
-Buna ek `CComGlobalsThreadModel`olarak, ATL **typedef** adı [CComObjectThreadModel](#ccomobjectthreadmodel)sağlar. Her biri `typedef` tarafından başvurulan sınıf, aşağıdaki tabloda gösterildiği gibi, kullanılan iş parçacığı modeline bağlıdır:
+Ayrıca `CComGlobalsThreadModel`, ATL, [CComObjectThreadModel](#ccomobjectthreadmodel) **typedef** adını sağlar. Tarafından başvurulan sınıf, aşağıdaki `typedef` tabloda gösterildiği gibi, kullanılan iş parçacığı modeline bağlıdır:
 
-| typedef|Tek iş parçacığı|Daire diş ipliği|Serbest iş parçacığı|
+| typedef|Tek iş parçacığı|Apartman iş parçacığı|Serbest iş parçacığı|
 |-------------|----------------------|-------------------------|--------------------|
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S= `CComSingleThreadModel`; M=`CComMultiThreadModel`
+S = `CComSingleThreadModel`; D =`CComMultiThreadModel`
 
-Tek `CComObjectThreadModel` bir nesne sınıfı içinde kullanın. Programınızda genel olarak kullanılabilen bir nesnede veya modül kaynaklarını birden çok iş parçacığı üzerinden korumak istediğinizde kullanın. `CComGlobalsThreadModel`
+Tek `CComObjectThreadModel` bir nesne sınıfı içinde kullanın. Programınız `CComGlobalsThreadModel` için genel olarak kullanılabilen bir nesne veya birden çok iş parçacığı arasında modül kaynaklarını korumak istediğinizde kullanın.
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-## <a name="ccomobjectthreadmodel"></a><a name="ccomobjectthreadmodel"></a>Ccomobjectthreadmodel
+## <a name="ccomobjectthreadmodel"></a><a name="ccomobjectthreadmodel"></a>CComObjectThreadModel
 
-Kullanılan iş parçacığı modeline bakılmaksızın uygun iş parçacığı modeli yöntemlerini çağırır.
+Kullanılan iş parçacığı modelinden bağımsız olarak uygun iş parçacığı modeli yöntemlerini çağırır.
 
-```
+```cpp
 #if defined(_ATL_SINGLE_THREADED)
 typedef CComSingleThreadModel CComObjectThreadModel;
 #elif defined(_ATL_APARTMENT_THREADED)
@@ -201,115 +201,115 @@ typedef CComMultiThreadModel CComObjectThreadModel;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamanız tarafından kullanılan iş parçacığı modeline `typedef` `CComObjectThreadModel` bağlı olarak, ad ya [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) veya [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)başvurur. Bu sınıflar, `typedef` kritik bir bölüm sınıfına başvurmak için ek adlar sağlar.
+Uygulamanız tarafından kullanılan iş parçacığı modeline bağlı `typedef` olarak ad `CComObjectThreadModel` , [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) veya [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)'e başvurur. Bu sınıflar, kritik `typedef` bölüm sınıfına başvurmak için ek adlar sağlar.
 
 > [!NOTE]
-> `CComObjectThreadModel`sınıf [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)başvuru yok.
+> `CComObjectThreadModel`[CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)sınıfına başvurmuyor.
 
-Kullanmak, `CComObjectThreadModel` belirli bir iş parçacığı modeli sınıfı belirtmekten sizi kurtarır. Kullanılan iş parçacığı modeli ne olursa olsun, uygun yöntemler çağrılacaktır.
+Kullanma `CComObjectThreadModel` , belirli bir iş parçacığı modeli sınıfı belirtmekten kurtarır. Kullanılan iş parçacığı modelinden bağımsız olarak, uygun yöntemler çağrılacaktır.
 
-Buna ek `CComObjectThreadModel`olarak, ATL **typedef** adı [CComGlobalsThreadModel](#ccomglobalsthreadmodel)sağlar. Her **typedef** tarafından başvurulan sınıf, aşağıdaki tabloda gösterildiği gibi, kullanılan iş parçacığı modeline bağlıdır:
+Ayrıca `CComObjectThreadModel`, ATL, [CComGlobalsThreadModel](#ccomglobalsthreadmodel) **typedef** adını sağlar. Her **typedef** tarafından başvurulan sınıf, aşağıdaki tabloda gösterildiği gibi, kullanılan iş parçacığı modeline bağlıdır:
 
-| typedef|Tek iş parçacığı|Daire diş ipliği|Serbest iş parçacığı|
+| typedef|Tek iş parçacığı|Apartman iş parçacığı|Serbest iş parçacığı|
 |-------------|----------------------|-------------------------|--------------------|
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S= `CComSingleThreadModel`; M=`CComMultiThreadModel`
+S = `CComSingleThreadModel`; D =`CComMultiThreadModel`
 
-Tek `CComObjectThreadModel` bir nesne sınıfı içinde kullanın. Programınız için genel olarak kullanılabilen bir nesnede veya modül kaynaklarını birden çok iş parçacığı üzerinden korumak istediğinizde kullanın. `CComGlobalsThreadModel`
+Tek `CComObjectThreadModel` bir nesne sınıfı içinde kullanın. Programınızın `CComGlobalsThreadModel` genel olarak kullanabildiği bir nesne veya birden çok iş parçacığı arasında modül kaynaklarını korumak istediğinizde kullanın.
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
 ## <a name="ccontainedwindow"></a><a name="ccontainedwindow"></a>CContainedWindow
 
-Bu sınıf bir uzmanlık `CContainedWindowT`olduğunu .
+Bu sınıf, öğesinin `CContainedWindowT`bir özelleştirmesi.
 
-```
+```cpp
 typedef CContainedWindowT<CWindow> CContainedWindow;
 ```
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlwin.h
+**Üstbilgi:** atlwin. h
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CContainedWindow`[CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md)bir uzmanlık olduğunu. Taban sınıfı veya özellikleri değiştirmek istiyorsanız, `CContainedWindowT` doğrudan kullanın.
+`CContainedWindow`, [CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md)'in bir özelleştirmesi. Temel sınıf veya nitelikleri değiştirmek istiyorsanız, doğrudan kullanın `CContainedWindowT` .
 
 ## <a name="cpath"></a><a name="cpath"></a>CPath
 
-[CPathT'nin](../../atl/reference/cpatht-class.md) uzmanlık `CString`alanı .
+Kullanarak `CString` [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi.
 
-```
+```cpp
 typedef CPathT<CString> CPath;
 ```
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlpath.h
+**Üstbilgi:** atlpath. h
 
-## <a name="cpatha"></a><a name="cpatha"></a>Cpatha
+## <a name="cpatha"></a><a name="cpatha"></a>CPathA
 
-[CPathT'nin](../../atl/reference/cpatht-class.md) uzmanlık `CStringA`alanı .
+Kullanarak `CStringA` [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi.
 
-```
+```cpp
 typedef CPathT<CStringA> CPathA;
 ```
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlpath.h
+**Üstbilgi:** atlpath. h
 
 ## <a name="cpathw"></a><a name="cpathw"></a>CPathW
 
-[CPathT'nin](../../atl/reference/cpatht-class.md) uzmanlık `CStringW`alanı .
+Kullanarak `CStringW` [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi.
 
-```
+```cpp
 typedef ATL::CPathT<CStringW> CPathW;
 ```
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlpath.h
+**Üstbilgi:** atlpath. h
 
 ## <a name="csimplevalarray"></a><a name="csimplevalarray"></a>CSimpleValArray
 
-Basit türleri depolamak için bir dizitemsil eder.
+Basit türleri depolamak için bir diziyi temsil eder.
 
-```
+```cpp
 #define CSimpleValArray CSimpleArray
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CSimpleValArray`basit veri türleri içeren diziler oluşturmak ve yönetmek için sağlanır. Bu [CSimpleArray](../../atl/reference/csimplearray-class.md)basit bir #define.
+`CSimpleValArray`basit veri türleri içeren diziler oluşturmak ve yönetmek için sağlanır. [CSimpleArray](../../atl/reference/csimplearray-class.md)basit bir #define.
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsimpcoll.h
+**Üstbilgi:** atlsimpcoll. h
 
-## <a name="lpcurl"></a><a name="lpcurl"></a>LPCURL
+## <a name="lpcurl"></a><a name="lpcurl"></a>LPKıVRıK
 
-Sabit bir [CUrl](../../atl/reference/curl-class.md) nesnesine işaretçi.
+Sabit [kıvrımlı](../../atl/reference/curl-class.md) nesne işaretçisi.
 
-```
+```cpp
 typedef const CUrl* LPCURL;
 ```
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlutil.h
+**Üstbilgi:** atlutil. h
 
-## <a name="defaultthreadtraits"></a><a name="defaultthreadtraits"></a>Varsayılan ThreadTraits
+## <a name="defaultthreadtraits"></a><a name="defaultthreadtraits"></a>Defaultthreadnitelikler
 
-Varsayılan iş parçacığı özellikleri sınıfı.
+Varsayılan iş parçacığı nitelikleri sınıfı.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 #if defined(_MT)
    typedef CRTThreadTraits DefaultThreadTraits;
 #else
@@ -319,28 +319,28 @@ Varsayılan iş parçacığı özellikleri sınıfı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Geçerli proje çok iş parçacığı CRT kullanıyorsa, DefaultThreadTraits CRTThreadTraits olarak tanımlanır. Aksi takdirde, Win32ThreadTraits kullanılır.
+Geçerli proje çok iş parçacıklı CRT kullanıyorsa, Defaultthreadnitelikler Crtthreadnitelikler olarak tanımlanır. Aksi halde, Win32ThreadTraits kullanılır.
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
 ## <a name="lpurl"></a><a name="lpurl"></a>LPURL
 
-[CUrl](../../atl/reference/curl-class.md) nesnesine işaretçi.
+Bir [kıvrımlı](../../atl/reference/curl-class.md) nesne işaretçisi.
 
-```
+```cpp
 typedef CUrl* LPURL;
 ```
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlutil.h
+**Üstbilgi:** atlutil. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)<br/>
 [İşlevler](../../atl/reference/atl-functions.md)<br/>
 [Global Değişkenler](../../atl/reference/atl-global-variables.md)<br/>
-[Sınıflar ve structs](../../atl/reference/atl-classes.md)<br/>
+[Sınıflar ve yapılar](../../atl/reference/atl-classes.md)<br/>
 [Makrolar](../../atl/reference/atl-macros.md)

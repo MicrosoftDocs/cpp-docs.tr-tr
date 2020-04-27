@@ -37,20 +37,20 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlMap class
 ms.assetid: 5e2fe028-8e6d-4686-93df-1433d2080ec3
-ms.openlocfilehash: 8954eeae28f13fb50643646b41c032588ecc278f
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: b79e6cbd796569e6ba11c96158099de6c30b310a
+ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81748659"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82168065"
 ---
 # <a name="catlmap-class"></a>CAtlMap Sınıfı
 
-Bu sınıf, bir harita nesnesi oluşturma ve yönetme yöntemleri sağlar.
+Bu sınıf bir harita nesnesi oluşturmak ve yönetmek için yöntemler sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template <typename K,
           typename V,
           class KTraits = CElementTraits<K>,
@@ -58,106 +58,106 @@ template <typename K,
 class CAtlMap
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Kahraman*<br/>
+*Ek*<br/>
 Anahtar öğe türü.
 
-*V*<br/>
+*Yönetim*<br/>
 Değer öğesi türü.
 
-*KTraits*<br/>
-Anahtar öğeleri kopyalamak veya taşımak için kullanılan kod. Daha fazla bilgi için [CElementTraits Sınıfına](../../atl/reference/celementtraits-class.md) bakın.
+*Knitelikler*<br/>
+Anahtar öğelerini kopyalamak veya taşımak için kullanılan kod. Daha fazla ayrıntı için bkz. [Celementnitelikler sınıfı](../../atl/reference/celementtraits-class.md) .
 
-*VTraits*<br/>
+*Sanal nitelikler*<br/>
 Değer öğelerini kopyalamak veya taşımak için kullanılan kod.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlMap::KINARGTYPE](#kinargtype)|Bir anahtar giriş bağımsız değişkeni olarak geçirildiğinde kullanılan tür|
-|[CAtlMap::KOUTARGTYPE](#koutargtype)|Bir anahtar çıktı bağımsız değişkeni olarak döndürüldüğünde kullanılan tür.|
-|[CAtlMap::VINARGTYPE](#vinargtype)|Bir değer girdi bağımsız değişkeni olarak geçildiğinde kullanılan tür.|
-|[CAtlMap::VOUTARGTYPE](#voutargtype)|Bir değer çıktı bağımsız değişkeni olarak geçirildiğinde kullanılan tür.|
+|[CAtlMap:: KINARGTYPE](#kinargtype)|Giriş bağımsız değişkeni olarak bir anahtar geçirildiğinde kullanılan tür|
+|[CAtlMap:: KOUTARGTYPE](#koutargtype)|Bir anahtar, çıkış bağımsız değişkeni olarak döndürüldüğünde kullanılan tür.|
+|[CAtlMap:: VINARGTYPE](#vinargtype)|Giriş bağımsız değişkeni olarak bir değer geçirildiğinde kullanılan tür.|
+|[CAtlMap:: VOUTARGTYPE](#voutargtype)|Bir değer çıkış bağımsız değişkeni olarak geçirildiğinde kullanılan tür.|
 
-### <a name="public-classes"></a>Genel Sınıflar
-
-|Adı|Açıklama|
-|----------|-----------------|
-|[CAtlMap::CPair Sınıf](#cpair_class)|Anahtar ve değer öğelerini içeren bir sınıf.|
-
-### <a name="cpair-data-members"></a>CPair Veri Üyeleri
+### <a name="public-classes"></a>Ortak sınıflar
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CPair::m_key](#m_key)|Anahtar öğeyi depolayan veri üyesi.|
-|[CPair::m_value](#m_value)|Değer öğesini depolayan veri üyesi.|
+|[CAtlMap:: CPair sınıfı](#cpair_class)|Anahtar ve değer öğelerini içeren bir sınıf.|
+
+### <a name="cpair-data-members"></a>CPair veri üyeleri
+
+|Adı|Açıklama|
+|----------|-----------------|
+|[CPair:: m_key](#m_key)|Anahtar öğesini depolayan veri üyesi.|
+|[CPair:: m_value](#m_value)|Değer öğesini depolayan veri üyesi.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlMap::CAtlMap](#catlmap)|Oluşturucu.|
-|[CAtlMap::~CAtlMap](#dtor)|Yıkıcı.|
+|[CAtlMap:: CAtlMap](#catlmap)|Oluşturucu.|
+|[CAtlMap:: ~ CAtlMap](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlMap::AssertValid](#assertvalid)|Geçerli `CAtlMap` değilse, bir Assert neden bu yöntemi arayın.|
-|[CAtlMap::DisableAutoRehash](#disableautorehash)|Nesnenin `CAtlMap` otomatik rehashing devre dışı kalmak için bu yöntemi arayın.|
-|[CAtlMap::EnableAutoRehash](#enableautorehash)|Nesnenin `CAtlMap` otomatik olarak rehashing etkinleştirmek için bu yöntemi arayın.|
-|[CAtlMap::GetAt](#getat)|Öğeyi haritada belirli bir konumda döndürmek için bu yöntemi çağırın.|
-|[CAtlMap::GetCount](#getcount)|Haritadaki öğe sayısını almak için bu yöntemi arayın.|
-|[CAtlMap::GetHashTableSize](#gethashtablesize)|Haritanın karma tablosundaki kutu sayısını belirlemek için bu yöntemi arayın.|
-|[CAtlMap::GetKeyAt](#getkeyat)|`CAtlMap` Nesnede verilen konumda depolanan anahtarı almak için bu yöntemi arayın.|
-|[CAtlMap::GetNext](#getnext)|Nesnede depolanan sonraki öğe çiftine işaretçi `CAtlMap` almak için bu yöntemi çağırın.|
-|[CAtlMap::GetNextAssoc](#getnextassoc)|Yinelenmenin bir sonraki öğesini alır.|
-|[CAtlMap::GetNextKey](#getnextkey)|`CAtlMap` Nesneden sonraki anahtarı almak için bu yöntemi arayın.|
-|[CAtlMap::GetNextValue](#getnextvalue)|`CAtlMap` Nesneden sonraki değeri almak için bu yöntemi arayın.|
-|[CAtlMap::GetStartPosition](#getstartposition)|Bir harita yinelemebaşlatmak için bu yöntemi arayın.|
-|[CAtlMap::GetValueAt](#getvalueat)|`CAtlMap` Nesnede belirli bir konumda depolanan değeri almak için bu yöntemi arayın.|
-|[CAtlMap::InitHashTable](#inithashtable)|Karma tabloyu başlatmak için bu yöntemi arayın.|
-|[CAtlMap::Boş](#isempty)|Boş bir harita nesnesini sınamak için bu yöntemi çağırın.|
-|[CAtlMap::Arama](#lookup)|`CAtlMap` Nesnedeki anahtarları veya değerleri aramak için bu yöntemi arayın.|
-|[CAtlMap::Rehash](#rehash)|Nesneyi yeniden haşlamak `CAtlMap` için bu yöntemi çağırın.|
-|[CAtlMap::RemoveAll](#removeall)|`CAtlMap` Nesneden tüm öğeleri kaldırmak için bu yöntemi arayın.|
-|[CAtlMap::RemoveAtPos](#removeatpos)|Nesnede verilen konumdaki öğeyi kaldırmak `CAtlMap` için bu yöntemi çağırın.|
-|[CAtlMap::RemoveKey](#removekey)|Anahtar verilen `CAtlMap` bir öğeyi nesneden kaldırmak için bu yöntemi çağırın.|
-|[CAtlMap::SetAt](#setat)|Eşmeye bir öğe çifti eklemek için bu yöntemi çağırın.|
-|[CAtlMap::SetOptimalLoad](#setoptimalload)|`CAtlMap` Nesnenin en uygun yükünü ayarlamak için bu yöntemi arayın.|
-|[CAtlMap::SetValueAt](#setvalueat)|Nesnede belirli bir konumda depolanan değeri değiştirmek `CAtlMap` için bu yöntemi çağırın.|
+|[CAtlMap:: AssertValid](#assertvalid)|Geçerli değilse, `CAtlMap` bir onay sağlamak için bu yöntemi çağırın.|
+|[CAtlMap::D Isableoto rehash](#disableautorehash)|`CAtlMap` Nesnenin otomatik yeniden karmasını devre dışı bırakmak için bu yöntemi çağırın.|
+|[CAtlMap:: Enableoto rehash](#enableautorehash)|`CAtlMap` Nesnenin otomatik yeniden karma özelliğini etkinleştirmek için bu yöntemi çağırın.|
+|[CAtlMap:: GetAt](#getat)|Öğeyi haritada belirtilen bir konumda döndürmek için bu yöntemi çağırın.|
+|[CAtlMap:: GetCount](#getcount)|Eşlemedeki öğelerin sayısını almak için bu yöntemi çağırın.|
+|[CAtlMap:: GetHashTableSize](#gethashtablesize)|Haritanın karma tablosundaki sepetler sayısını öğrenmek için bu yöntemi çağırın.|
+|[CAtlMap:: GetKeyAt](#getkeyat)|`CAtlMap` Nesnede verilen konumda depolanan anahtarı almak için bu yöntemi çağırın.|
+|[CAtlMap:: GetNext](#getnext)|`CAtlMap` Nesnede depolanan bir sonraki öğe çiftiyle bir işaretçi almak için bu yöntemi çağırın.|
+|[CAtlMap:: GetNextAssoc](#getnextassoc)|Yineleme için bir sonraki öğeyi alır.|
+|[CAtlMap:: GetNextKey](#getnextkey)|`CAtlMap` Nesnesinden sonraki anahtarı almak için bu yöntemi çağırın.|
+|[CAtlMap:: GetNextValue](#getnextvalue)|`CAtlMap` Nesnesinden bir sonraki değeri almak için bu yöntemi çağırın.|
+|[CAtlMap:: GetStartPosition](#getstartposition)|Harita yinelemesi başlatmak için bu yöntemi çağırın.|
+|[CAtlMap:: Getvaluyemek](#getvalueat)|`CAtlMap` Nesnede belirli bir konumda depolanan değeri almak için bu yöntemi çağırın.|
+|[CAtlMap:: InitHashTable](#inithashtable)|Karma tabloyu başlatmak için bu yöntemi çağırın.|
+|[CAtlMap:: IsEmpty](#isempty)|Boş bir harita nesnesi için test etmek üzere bu yöntemi çağırın.|
+|[CAtlMap:: Lookup](#lookup)|`CAtlMap` Nesne içindeki anahtarları veya değerleri aramak için bu yöntemi çağırın.|
+|[CAtlMap:: rehash](#rehash)|`CAtlMap` Nesneyi yeniden sağlaması için bu yöntemi çağırın.|
+|[CAtlMap:: RemoveAll](#removeall)|`CAtlMap` Nesnesinden tüm öğeleri kaldırmak için bu yöntemi çağırın.|
+|[CAtlMap:: RemoveAtPos](#removeatpos)|`CAtlMap` Nesnede verilen konumdaki öğeyi kaldırmak için bu yöntemi çağırın.|
+|[CAtlMap:: RemoveKey](#removekey)|Bu yöntemi, anahtar verildiğinde `CAtlMap` nesnesinden bir öğeyi kaldırmak için çağırın.|
+|[CAtlMap:: SetAt](#setat)|Haritaya bir öğe çifti eklemek için bu yöntemi çağırın.|
+|[CAtlMap:: SetOptimalLoad](#setoptimalload)|`CAtlMap` Nesnenin en iyi yükünü ayarlamak için bu yöntemi çağırın.|
+|[CAtlMap:: Setvaluyemek](#setvalueat)|`CAtlMap` Nesnedeki belirli bir konumda depolanan değeri değiştirmek için bu yöntemi çağırın.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAtlMap::operatör\[\]](catlmap-class.md#operator_at)|Yerine yeni bir öğe ekler `CAtlMap`veya ekler.|
+|[CAtlMap:: işleci\[\]](catlmap-class.md#operator_at)|Öğesine yeni bir öğesi koyar veya öğesine ekler `CAtlMap`.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAtlMap`sıralanmamış bir anahtar öğe dizisini ve ilişkili değerlerini yöneten, belirli bir türdeki eşleme dizisi için destek sağlar. Öğeler (anahtar ve değerden oluşan) bir karma algoritma kullanılarak depolanır ve büyük miktarda verinin verimli bir şekilde depolanmasına ve alınmasına olanak sağlar.
+`CAtlMap`verilen herhangi bir türde bir eşleme dizisi için destek sağlar ve sıralanmamış bir anahtar öğesi dizisi ve bunlarla ilişkili değerleri yönetebilir. Öğeler (bir anahtar ve bir değerden oluşan), karma algoritma kullanılarak depolanır, bu da büyük miktarda verinin etkin bir şekilde saklanmasını ve alınmasını sağlar.
 
-*KTraits* ve *VTraits* parametreleri öğeleri kopyalamak veya taşımak için gerekli herhangi bir ek kod içeren özellikler sınıflarıdır.
+*Knitelikler* ve *vnitelikler* parametreleri, öğeleri kopyalamak veya taşımak için gereken ek kodu içeren nitelikler sınıflarıdır.
 
-CRBMap `CAtlMap` sınıfı tarafından [CRBMap](../../atl/reference/crbmap-class.md) bir alternatif sunulmaktadır. `CRBMap`anahtar/değer çiftlerini de saklar, ancak farklı performans özellikleri sergiler. Bir öğeyi eklemek, bir anahtarı aramak veya bir `CRBMap` nesneden bir anahtarı silmek için alınan süre, *n* öğe sayısının olduğu sipariş *günlüğü(n)* şeklindedir. Çünkü, `CAtlMap`bu işlemlerin tümü genellikle sabit bir zaman alır, ancak en kötü durum senaryoları *n*. Bu nedenle, tipik `CAtlMap` bir durumda, daha hızlıdır.
+Bir alternatifi `CAtlMap` [CRBMap](../../atl/reference/crbmap-class.md) sınıfı tarafından sunulur. `CRBMap`Ayrıca anahtar/değer çiftlerini depolar, ancak farklı performans özellikleri sergiler. Bir öğeyi eklemek, anahtar aramak veya bir `CRBMap` nesneden bir anahtarı silmek için geçen süre *(n)*, burada *n* öğe sayısıdır. İçin `CAtlMap`, bu işlemlerin hepsi genellikle sabit bir zaman alır, ancak en kötü durum senaryoları *n*sırası olabilir. Bu nedenle, tipik bir durumda `CAtlMap` daha hızlıdır.
 
-Depolanan öğeler `CRBMap` `CAtlMap` arasında diğer fark ve zaman depolanan öğeler arasında belirgin hale gelir. Bir `CRBMap`, öğeleri sıralanmış bir sırada ziyaret edilir. Bir `CAtlMap`, öğeler sıralı değildir ve hiçbir sipariş çıkarılabilir.
+Ve `CRBMap` `CAtlMap` arasındaki diğer fark, saklı öğeler arasında yineleme yaparken görünür hale gelir. Bir `CRBMap`içinde, öğeleri sıralanmış bir sırada ziyaret edilir. Bir `CAtlMap`içinde, öğeler sıralı değildir ve hiçbir sıra çıkarılamayabilir.
 
-Az sayıda öğenin depolanmış olması gerektiğinde, bunun yerine [CSimpleMap](../../atl/reference/csimplemap-class.md) sınıfını kullanmayı düşünün.
+Az sayıda öğe depolanması gerektiğinde, bunun yerine [CSimpleMap](../../atl/reference/csimplemap-class.md) sınıfını kullanmayı göz önünde bulundurun.
 
-Daha fazla bilgi için [ATL Koleksiyon Sınıfları'na](../../atl/atl-collection-classes.md)bakın.
+Daha fazla bilgi için bkz. [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcoll.h
+**Üstbilgi:** atlcoll. h
 
-## <a name="catlmapassertvalid"></a><a name="assertvalid"></a>CAtlMap::AssertValid
+## <a name="catlmapassertvalid"></a><a name="assertvalid"></a>CAtlMap:: AssertValid
 
-`CAtlMap` Nesne geçerli değilse, bir Assert neden bu yöntemi arayın.
+`CAtlMap` Nesne geçerli değilse bir onay sağlamak için bu yöntemi çağırın.
 
 ```cpp
 void AssertValid() const;
@@ -165,17 +165,17 @@ void AssertValid() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama yapılarda, `CAtlMap` nesne geçerli değilse, bu yöntem bir Assert neden olur.
+Hata ayıklama yapılarında, `CAtlMap` nesne geçerli değilse bu yöntem bir onaylama yapılmasına neden olur.
 
 ### <a name="example"></a>Örnek
 
-[CAtlMap örneğine bakın:CAtlMap](#catlmap).
+[CAtlMap:: CAtlMap](#catlmap)örneğine bakın.
 
-## <a name="catlmapcatlmap"></a><a name="catlmap"></a>CAtlMap::CAtlMap
+## <a name="catlmapcatlmap"></a><a name="catlmap"></a>CAtlMap:: CAtlMap
 
 Oluşturucu.
 
-```
+```cpp
 CAtlMap(
     UINT nBins = 17,
     float fOptimalLoad = 0.75f,
@@ -186,68 +186,68 @@ CAtlMap(
 
 ### <a name="parameters"></a>Parametreler
 
-*nBins*<br/>
-Depolanan öğelere işaretçiler sağlayan kutu sayısı. Kutularla ilgili bir açıklama için bu konunun ilerleyen yerlerine bakın.
+*Nbıns*<br/>
+Saklı öğelere işaretçiler sağlayan bölme sayısı. Sepetler hakkında açıklama için bu konunun devamındaki açıklamaları bölümüne bakın.
 
-*fOptimalLoad*<br/>
-En uygun yük oranı.
+*Foptimize Malload*<br/>
+En iyi yükleme oranı.
 
 *fLoThreshold*<br/>
-Yük oranı için alt eşik.
+Yük oranının alt eşiği.
 
 *fHiThreshold*<br/>
-Yük oranı için üst eşik.
+Yük oranının üst eşiği.
 
 *nBlockSize*<br/>
 Blok boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CAtlMap`anahtar üzerinde karma algoritmakullanarak önce bir dizin oluşturarak depolanan tüm öğeleri başvurur. Bu dizin, depolanan öğelere işaretçi içeren bir "bin" başvurur. Depo gözü zaten kullanılıyorsa, sonraki öğelere erişmek için bağlantılı bir liste oluşturulur. Bir listeyi geçiş yapmak, doğru öğeye doğrudan erişmekten daha yavaştır ve bu nedenle harita yapısının depolama gereksinimlerini performansa göre dengelemesi gerekir. Varsayılan parametreler çoğu durumda iyi sonuçlar vermek için seçilmiştir.
+`CAtlMap`önce anahtar üzerinde bir karma algoritması kullanarak bir dizin oluşturarak, depolanan tüm öğelerine başvurur. Bu dizin, saklı öğelerin işaretçisini içeren bir "bin" öğesine başvurur. Bin zaten kullanımda ise, sonraki öğelere erişmek için bağlantılı liste oluşturulur. Bir listenin geçiş işlemi, doğru öğeye doğrudan erişmekten daha yavaştır ve bu nedenle eşleme yapısının, depolama gereksinimlerini performansa karşı dengelenmesi gerekir. Çoğu durumda iyi sonuçlar vermek için varsayılan parametreler seçilmiştir.
 
-Yük oranı, kutu sayısının harita nesnesinde depolanan öğe sayısına oranıdır. Harita yapısı yeniden hesaplandığında, gerekli sayaç sayısını hesaplamak için *fOptimalLoad* parametre değeri kullanılır. Bu değer [CAtlMap::SetOptimalLoad](#setoptimalload) yöntemi kullanılarak değiştirilebilir.
+Yük oranı, harita nesnesinde depolanan öğe sayısına bölme sayısının oranıdır. Eşleme yapısı yeniden hesaplandığında, gerekli olan sepetler sayısını hesaplamak için *Foptimize Malload* parametre değeri kullanılacaktır. Bu değer, [CAtlMap:: SetOptimalLoad](#setoptimalload) yöntemi kullanılarak değiştirilebilir.
 
-*fLoThreshold* parametresi, haritanın en uygun boyutunu `CAtlMap` yeniden hesaplamadan önce yük oranının ulaşabileceği daha düşük değerdir.
+*FLoThreshold* parametresi, eşlemenin en uygun boyutunu yeniden hesaplamadan önce `CAtlMap` yük oranının ulaşabilmesi için düşük değerdir.
 
-*fHiThreshold* parametresi, nesne haritanın en uygun `CAtlMap` boyutunu yeniden hesaplamadan önce yük oranının ulaşabileceği üst değerdir.
+*FHiThreshold* parametresi, `CAtlMap` nesne haritanın en iyi boyutunu yeniden hesaplamadan önce yük oranının ulaşabileceği üst değerdir.
 
-Bu yeniden hesaplama işlemi (rehashing olarak da bilinir) varsayılan olarak etkinleştirilir. Bu işlemi devre dışı kakmak istiyorsanız, belki de aynı anda çok fazla veri girerken, [CAtlMap::DisableAutoRehash](#disableautorehash) yöntemini arayın. CAtlMap ile yeniden [etkinleştirin::EnableAutoRehash](#enableautorehash) yöntemi.
+Bu yeniden hesaplama işlemi (yeniden karma olarak bilinir) varsayılan olarak etkindir. Tek seferde çok fazla veri girerken bu işlemi devre dışı bırakmak istiyorsanız, [CAtlMap::D Isableoto rehash](#disableautorehash) metodunu çağırın. [CAtlMap:: Enableoto rehash](#enableautorehash) yöntemiyle yeniden etkinleştirin.
 
-*nBlockSize* parametresi, yeni bir öğe gerektiğinde ayrılan bellek miktarının ölçüsüdür. Daha büyük blok boyutları, bellek ayırma yordamlarına yapılan çağrıları azaltır, ancak daha fazla kaynak kullanır.
+*NBlockSize* parametresi, yeni bir öğe gerektiğinde ayrılan bellek miktarının bir ölçüsüdür. Daha büyük blok boyutları, bellek ayırma yordamlarına yapılan çağrıları azaltır, ancak daha fazla kaynak kullanır.
 
-Herhangi bir veri depolanabilir önce, CAtlMap bir çağrı ile karma tablo başlatılması [gerekir::InitHashTable](#inithashtable).
+Herhangi bir veri depolanmadan önce, bir [CAtlMap:: InitHashTable](#inithashtable)çağrısıyla karma tablo başlatması gerekir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#72](../../atl/codesnippet/cpp/catlmap-class_1.cpp)]
 
-## <a name="catlmapcatlmap"></a><a name="dtor"></a>CAtlMap::~CAtlMap
+## <a name="catlmapcatlmap"></a><a name="dtor"></a>CAtlMap:: ~ CAtlMap
 
-Yıkıcı.
+Yok edicisi.
 
-```
+```cpp
 ~CAtlMap() throw();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan kaynakları serbest sağlar.
+Ayrılan kaynakları serbest bırakır.
 
-## <a name="catlmapcpair-class"></a><a name="cpair_class"></a>CAtlMap::CPair Sınıf
+## <a name="catlmapcpair-class"></a><a name="cpair_class"></a>CAtlMap:: CPair sınıfı
 
 Anahtar ve değer öğelerini içeren bir sınıf.
 
-```
+```cpp
 class CPair : public __POSITION
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıf [CAtlMap::GetNext](#getnext) ve [CAtlMap::Haritalama](#lookup) yapısında depolanan anahtar ve değer öğelerine erişmek için arama yöntemleri yle kullanılır.
+Bu sınıf, eşleme yapısında depolanan anahtar ve değer öğelerine erişmek için [CAtlMap:: GetNext](#getnext) ve [CAtlMap:: Lookup](#lookup) yöntemleri tarafından kullanılır.
 
-## <a name="catlmapdisableautorehash"></a><a name="disableautorehash"></a>CAtlMap::DisableAutoRehash
+## <a name="catlmapdisableautorehash"></a><a name="disableautorehash"></a>CAtlMap::D Isableoto rehash
 
-Nesnenin `CAtlMap` otomatik rehashing devre dışı kalmak için bu yöntemi arayın.
+`CAtlMap` Nesnenin otomatik yeniden karmasını devre dışı bırakmak için bu yöntemi çağırın.
 
 ```cpp
 void DisableAutoRehash() throw();
@@ -255,13 +255,13 @@ void DisableAutoRehash() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Otomatik yeniden hashing etkinleştirildiğinde (varsayılan olarak olduğu gibi), yük değeri (depo kutusu sayısının dizideki depolanan eleman sayısına oranı) haritanın oluşturulduğu anda belirtilen maksimum veya minimum değerleri aşarsa, karma tablodaki depo kutusu sayısı otomatik olarak yeniden hesaplanır.
+Otomatik yeniden karma etkinleştirildiğinde (varsayılan olarak), yük değeri (dizide depolanan öğe sayısı için depo sayısı oranı), eşlemenin oluşturulduğu sırada belirtilen en büyük veya en küçük değerleri aşarsa karma tablodaki depo gözü sayısı otomatik olarak yeniden hesaplanır.
 
-`DisableAutoRehash`eşmeye aynı anda çok sayıda öğe eklence en kullanışlıdır. Sınırlar her aşıldığında yeniden elemanlandırma işlemini tetiklemek yerine, çağırmak, `DisableAutoRehash`öğeleri eklemek ve son olarak [CAtlMap'i aramak daha verimlidir::EnableAutoRehash](#enableautorehash).
+`DisableAutoRehash`tek seferde haritaya çok sayıda öğe eklendiğinde çok yararlı olur. Sınırlar her aşıldığında yeniden karma işlemi tetiklemenin yerine, çağrı `DisableAutoRehash`yapmak, öğeleri eklemek ve son olarak [CAtlMap:: Enableoto yeniden karmasını](#enableautorehash)çağırmak daha etkilidir.
 
-## <a name="catlmapenableautorehash"></a><a name="enableautorehash"></a>CAtlMap::EnableAutoRehash
+## <a name="catlmapenableautorehash"></a><a name="enableautorehash"></a>CAtlMap:: Enableoto rehash
 
-Nesnenin `CAtlMap` otomatik olarak rehashing etkinleştirmek için bu yöntemi arayın.
+`CAtlMap` Nesnenin otomatik yeniden karma özelliğini etkinleştirmek için bu yöntemi çağırın.
 
 ```cpp
 void EnableAutoRehash() throw();
@@ -269,13 +269,13 @@ void EnableAutoRehash() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Otomatik yeniden hashing etkinleştirildiğinde (varsayılan olarak olduğu gibi), yük değeri (depo kutusu sayısının dizideki depolanan eleman sayısına oranı) haritanın oluşturulduğu anda belirtilen maksimum veya minimum değerleri aşarsa, karma tablodaki depo kutusu sayısı otomatik olarak yeniden hesaplanır.
+Otomatik yeniden karma etkinleştirildiğinde (varsayılan olarak), yük değeri (dizide depolanan öğe sayısı için depo sayısı oranı), eşleme oluşturulduğu sırada belirtilen en büyük veya en küçük değerleri aşarsa, karma tablodaki bölme sayısı otomatik olarak yeniden hesaplanır.
 
-`EnableAutoRefresh`en sık CAtlMap bir çağrı dan sonra [kullanılır::DisableAutoRehash](#disableautorehash).
+`EnableAutoRefresh`en yaygın olarak, bir [CAtlMap::D Isableoto rehash](#disableautorehash)çağrısından sonra kullanılır.
 
-## <a name="catlmapgetat"></a><a name="getat"></a>CAtlMap::GetAt
+## <a name="catlmapgetat"></a><a name="getat"></a>CAtlMap:: GetAt
 
-Öğeyi haritada belirli bir konumda döndürmek için bu yöntemi çağırın.
+Öğeyi haritada belirtilen bir konumda döndürmek için bu yöntemi çağırın.
 
 ```cpp
 void GetAt(
@@ -288,93 +288,93 @@ CPair* GetAt(POSITION& pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Pozisyon sayacı, CAtlMap önceki bir çağrı ile [döndürülen::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
+*'un*<br/>
+Konum sayacı, bir önceki [CAtlMap:: GetNextAssoc](#getnextassoc) veya [CAtlMap:: GetStartPosition](#getstartposition)çağrısı tarafından döndürüldü.
 
 *anahtar*<br/>
-Haritanın anahtarının türünü belirten şablon parametresi.
+Harita anahtarının türünü belirten şablon parametresi.
 
 *value*<br/>
-Eşin değerinin türünü belirten şablon parametresi.
+Harita değerinin türünü belirten şablon parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşönünde depolanan geçerli anahtar/değer öğeleri çiftine bir işaretçi döndürür.
+Haritada depolanan anahtar/değer öğelerinin geçerli çiftine yönelik bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama oluştururda, *pos* NULL'a eşitse bir tasnif hatası oluşur.
+Hata ayıklama yapılarında, *POS* null değerine eşitse bir onaylama hatası meydana gelir.
 
-## <a name="catlmapgetcount"></a><a name="getcount"></a>CAtlMap::GetCount
+## <a name="catlmapgetcount"></a><a name="getcount"></a>CAtlMap:: GetCount
 
-Haritadaki öğe sayısını almak için bu yöntemi arayın.
+Eşlemedeki öğelerin sayısını almak için bu yöntemi çağırın.
 
-```
+```cpp
 size_t GetCount() const throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Harita nesnesindeki öğe sayısını döndürür. Tek bir öğe anahtar/değer çiftidir.
+Map nesnesindeki öğe sayısını döndürür. Tek bir öğe, anahtar/değer çiftidir.
 
 ### <a name="example"></a>Örnek
 
-[CAtlMap örneğine bakın:CAtlMap](#catlmap).
+[CAtlMap:: CAtlMap](#catlmap)örneğine bakın.
 
-## <a name="catlmapgethashtablesize"></a><a name="gethashtablesize"></a>CAtlMap::GetHashTableSize
+## <a name="catlmapgethashtablesize"></a><a name="gethashtablesize"></a>CAtlMap:: GetHashTableSize
 
-Haritanın karma tablosundaki kutu sayısını belirlemek için bu yöntemi arayın.
+Haritanın karma tablosundaki sepetler sayısını öğrenmek için bu yöntemi çağırın.
 
-```
+```cpp
 UINT GetHashTableSize() const throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karma tablodaki kutu sayısını verir. Bkz. [CAtlMap::CAtlMap](#catlmap) bir açıklama için.
+Karma tablodaki bölme sayısını döndürür. Bir açıklama için bkz. [CAtlMap:: CAtlMap](#catlmap) .
 
-## <a name="catlmapgetkeyat"></a><a name="getkeyat"></a>CAtlMap::GetKeyAt
+## <a name="catlmapgetkeyat"></a><a name="getkeyat"></a>CAtlMap:: GetKeyAt
 
-`CAtlMap` Nesnede verilen konumda depolanan anahtarı almak için bu yöntemi arayın.
+`CAtlMap` Nesnede verilen konumda depolanan anahtarı almak için bu yöntemi çağırın.
 
-```
+```cpp
 const K& GetKeyAt(POSITION pos) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Pozisyon sayacı, CAtlMap önceki bir çağrı ile [döndürülen::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
+*'un*<br/>
+Konum sayacı, bir önceki [CAtlMap:: GetNextAssoc](#getnextassoc) veya [CAtlMap:: GetStartPosition](#getstartposition)çağrısı tarafından döndürüldü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesnede verilen konumda depolanan anahtara `CAtlMap` bir başvuru verir.
+`CAtlMap` Nesnede verilen konumda depolanan anahtara bir başvuru döndürür.
 
 ### <a name="example"></a>Örnek
 
-[CAtlMap örneğine bakın:CAtlMap](#catlmap).
+[CAtlMap:: CAtlMap](#catlmap)örneğine bakın.
 
-## <a name="catlmapgetnext"></a><a name="getnext"></a>CAtlMap::GetNext
+## <a name="catlmapgetnext"></a><a name="getnext"></a>CAtlMap:: GetNext
 
-Nesnede depolanan sonraki öğe çiftine işaretçi `CAtlMap` almak için bu yöntemi çağırın.
+`CAtlMap` Nesnede depolanan bir sonraki öğe çiftiyle bir işaretçi almak için bu yöntemi çağırın.
 
-```
+```cpp
 CPair* GetNext(POSITION& pos) throw();
 const CPair* GetNext(POSITION& pos) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Pozisyon sayacı, CAtlMap önceki bir çağrı ile [döndürülen::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
+*'un*<br/>
+Konum sayacı, bir önceki [CAtlMap:: GetNextAssoc](#getnextassoc) veya [CAtlMap:: GetStartPosition](#getstartposition)çağrısı tarafından döndürüldü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşönünde depolanan bir sonraki anahtar/değer öğeleri çiftine bir işaretçi döndürür. *Pos* konum sayacı her çağrıdan sonra güncelleştirilir. Alınan öğe haritadaki son öğeyse, *pos* NULL olarak ayarlanır.
+Haritada depolanan anahtar/değer öğelerinin bir sonraki çiftine yönelik bir işaretçi döndürür. *POS* konum sayacı her çağrıdan sonra güncelleştirilir. Alınan öğe haritada son ise, *POS* null olarak ayarlanır.
 
-## <a name="catlmapgetnextassoc"></a><a name="getnextassoc"></a>CAtlMap::GetNextAssoc
+## <a name="catlmapgetnextassoc"></a><a name="getnextassoc"></a>CAtlMap:: GetNextAssoc
 
-Yinelenmenin bir sonraki öğesini alır.
+Yineleme için bir sonraki öğeyi alır.
 
 ```cpp
 void GetNextAssoc(
@@ -385,112 +385,112 @@ void GetNextAssoc(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Pozisyon sayacı, CAtlMap önceki bir çağrı ile [döndürülen::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
+*'un*<br/>
+Konum sayacı, bir önceki [CAtlMap:: GetNextAssoc](#getnextassoc) veya [CAtlMap:: GetStartPosition](#getstartposition)çağrısı tarafından döndürüldü.
 
 *anahtar*<br/>
-Haritanın anahtarının türünü belirten şablon parametresi.
+Harita anahtarının türünü belirten şablon parametresi.
 
 *value*<br/>
-Eşin değerinin türünü belirten şablon parametresi.
+Harita değerinin türünü belirten şablon parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Pos* konum sayacı her çağrıdan sonra güncelleştirilir. Alınan öğe haritadaki son öğeyse, *pos* NULL olarak ayarlanır.
+*POS* konum sayacı her çağrıdan sonra güncelleştirilir. Alınan öğe haritada son ise, *POS* null olarak ayarlanır.
 
-## <a name="catlmapgetnextkey"></a><a name="getnextkey"></a>CAtlMap::GetNextKey
+## <a name="catlmapgetnextkey"></a><a name="getnextkey"></a>CAtlMap:: GetNextKey
 
-`CAtlMap` Nesneden sonraki anahtarı almak için bu yöntemi arayın.
+`CAtlMap` Nesnesinden sonraki anahtarı almak için bu yöntemi çağırın.
 
-```
+```cpp
 const K& GetNextKey(POSITION& pos) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Pozisyon sayacı, CAtlMap önceki bir çağrı ile [döndürülen::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
+*'un*<br/>
+Konum sayacı, bir önceki [CAtlMap:: GetNextAssoc](#getnextassoc) veya [CAtlMap:: GetStartPosition](#getstartposition)çağrısı tarafından döndürüldü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Haritadaki bir sonraki anahtara bir başvuru verir.
+Eşlemedeki bir sonraki anahtara bir başvuru döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Güncel konum sayacını, *pos'u*güncelleştirir. Haritada başka giriş yoksa, konum sayacı NULL olarak ayarlanır.
+Geçerli pozisyon sayacını güncelleştirir, *POS*. Haritada daha fazla giriş yoksa, konum sayacı NULL olarak ayarlanır.
 
-## <a name="catlmapgetnextvalue"></a><a name="getnextvalue"></a>CAtlMap::GetNextValue
+## <a name="catlmapgetnextvalue"></a><a name="getnextvalue"></a>CAtlMap:: GetNextValue
 
-`CAtlMap` Nesneden sonraki değeri almak için bu yöntemi arayın.
+`CAtlMap` Nesnesinden bir sonraki değeri almak için bu yöntemi çağırın.
 
-```
+```cpp
 V& GetNextValue(POSITION& pos) throw();
 const V& GetNextValue(POSITION& pos) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Pozisyon sayacı, CAtlMap önceki bir çağrı ile [döndürülen::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
+*'un*<br/>
+Konum sayacı, bir önceki [CAtlMap:: GetNextAssoc](#getnextassoc) veya [CAtlMap:: GetStartPosition](#getstartposition)çağrısı tarafından döndürüldü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Haritadaki bir sonraki değere başvuru verir.
+Eşlemedeki bir sonraki değere bir başvuru döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Güncel konum sayacını, *pos'u*güncelleştirir. Haritada başka giriş yoksa, konum sayacı NULL olarak ayarlanır.
+Geçerli pozisyon sayacını güncelleştirir, *POS*. Haritada daha fazla giriş yoksa, konum sayacı NULL olarak ayarlanır.
 
 ### <a name="example"></a>Örnek
 
-[CAtlMap örneğine bakın:CAtlMap](#catlmap).
+[CAtlMap:: CAtlMap](#catlmap)örneğine bakın.
 
-## <a name="catlmapgetstartposition"></a><a name="getstartposition"></a>CAtlMap::GetStartPosition
+## <a name="catlmapgetstartposition"></a><a name="getstartposition"></a>CAtlMap:: GetStartPosition
 
-Bir harita yinelemebaşlatmak için bu yöntemi arayın.
+Harita yinelemesi başlatmak için bu yöntemi çağırın.
 
-```
+```cpp
 POSITION GetStartPosition() const throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başlangıç konumunu döndürür veya harita boşsa NULL döndürülür.
+Başlangıç konumunu döndürür veya eşleme boşsa NULL değeri döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetNextAssoc` Yönteme geçirilebilen bir KONUM değeri döndürerek bir harita yinelemebaşlatmak için bu yöntemi arayın.
+`GetNextAssoc` Yönteme GEÇIRILEBILECEK bir konum değeri döndürerek eşleme yinelemesi başlatmak için bu yöntemi çağırın.
 
 > [!NOTE]
-> Yineleme sırası öngörülebilir değildir
+> Yineleme sırası öngörülebilir değil
 
 ### <a name="example"></a>Örnek
 
-[CAtlMap örneğine bakın:CAtlMap](#catlmap).
+[CAtlMap:: CAtlMap](#catlmap)örneğine bakın.
 
-## <a name="catlmapgetvalueat"></a><a name="getvalueat"></a>CAtlMap::GetValueAt
+## <a name="catlmapgetvalueat"></a><a name="getvalueat"></a>CAtlMap:: Getvaluyemek
 
-`CAtlMap` Nesnede belirli bir konumda depolanan değeri almak için bu yöntemi arayın.
+`CAtlMap` Nesnede belirli bir konumda depolanan değeri almak için bu yöntemi çağırın.
 
-```
+```cpp
 V& GetValueAt(POSITION pos) throw();
 const V& GetValueAt(POSITION pos) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Pozisyon sayacı, CAtlMap önceki bir çağrı ile [döndürülen::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
+*'un*<br/>
+Konum sayacı, bir önceki [CAtlMap:: GetNextAssoc](#getnextassoc) veya [CAtlMap:: GetStartPosition](#getstartposition)çağrısı tarafından döndürüldü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CAtlMap` Nesnede verilen konumda depolanan değere bir başvuru verir.
+`CAtlMap` Nesnede verilen konumda depolanan değere bir başvuru döndürür.
 
-## <a name="catlmapinithashtable"></a><a name="inithashtable"></a>CAtlMap::InitHashTable
+## <a name="catlmapinithashtable"></a><a name="inithashtable"></a>CAtlMap:: InitHashTable
 
-Karma tabloyu başlatmak için bu yöntemi arayın.
+Karma tabloyu başlatmak için bu yöntemi çağırın.
 
-```
+```cpp
 bool InitHashTable(
     UINT nBins,
     bool bAllocNow = true);
@@ -498,59 +498,59 @@ bool InitHashTable(
 
 ### <a name="parameters"></a>Parametreler
 
-*nBins*<br/>
-Karma tablo tarafından kullanılan kutu sayısı. Bkz. [CAtlMap::CAtlMap](#catlmap) bir açıklama için.
+*Nbıns*<br/>
+Karma tablo tarafından kullanılan bölme sayısı. Bir açıklama için bkz. [CAtlMap:: CAtlMap](#catlmap) .
 
 *bAllocNow*<br/>
-Belleğin ayrılması gereken bayrak göstergesi.
+Bellek ayrıldığınızda bayrak göstergesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı başlatmada TRUE'yı döndürür, hatada FALSE.
+Başarılı başlatma sırasında TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`InitHashTable`herhangi bir öğe karma tabloda depolanan önce çağrılmalıdır.  Bu yöntem açıkça çağrılmazsa, `CAtlMap` oluşturucu tarafından belirtilen depo sayısı kullanılarak ilk kez bir öğe eklenmede otomatik olarak çağrılacaktır.  Aksi takdirde, harita *nBins* parametresi tarafından belirtilen yeni depo kutusu sayısı kullanılarak başharfe çevrilir.
+`InitHashTable`Karma tabloda herhangi bir öğe depolanmadan önce çağrılmalıdır.  Bu yöntem açıkça çağrılmaması halinde, `CAtlMap` Oluşturucu tarafından belirtilen bin sayısı kullanılarak bir öğe ilk kez eklendiğinde otomatik olarak çağrılır.  Aksi takdirde, eşleme, *nBins* parametresi tarafından belirtilen yeni bin sayısı kullanılarak başlatılır.
 
-*bAllocNow* parametresi yanlışsa, karma tablonun gerektirdiği bellek ilk gerekli olana kadar ayrılmaz. Bu, haritanın kullanılıp kullanılacılacılamışolmasının belirsiz olduğuna gÜ
+*BAllocNow* parametresi false ise, karma tablo için gereken bellek, ilk gerekene kadar ayrılmaz. Bu, eşlemenin kullanılacaksa emin olursa yararlı olabilir.
 
 ### <a name="example"></a>Örnek
 
-[CAtlMap örneğine bakın:CAtlMap](#catlmap).
+[CAtlMap:: CAtlMap](#catlmap)örneğine bakın.
 
-## <a name="catlmapisempty"></a><a name="isempty"></a>CAtlMap::Boş
+## <a name="catlmapisempty"></a><a name="isempty"></a>CAtlMap:: IsEmpty
 
-Boş bir harita nesnesini sınamak için bu yöntemi çağırın.
+Boş bir harita nesnesi için test etmek üzere bu yöntemi çağırın.
 
-```
+```cpp
 bool IsEmpty() const throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Harita boşsa TRUE döndürür, aksi takdirde FALSE.
+Eşleme boşsa TRUE, değilse FALSE döndürür.
 
-## <a name="catlmapkinargtype"></a><a name="kinargtype"></a>CAtlMap::KINARGTYPE
+## <a name="catlmapkinargtype"></a><a name="kinargtype"></a>CAtlMap:: KINARGTYPE
 
-Bir anahtar giriş bağımsız değişkeni olarak geçirildiğinde kullanılan tür.
+Giriş bağımsız değişkeni olarak bir anahtar geçirildiğinde kullanılan tür.
 
-```
+```cpp
 typedef KTraits::INARGTYPE KINARGTYPE;
 ```
 
-## <a name="catlmapkoutargtype"></a><a name="koutargtype"></a>CAtlMap::KOUTARGTYPE
+## <a name="catlmapkoutargtype"></a><a name="koutargtype"></a>CAtlMap:: KOUTARGTYPE
 
-Bir anahtar çıktı bağımsız değişkeni olarak döndürüldüğünde kullanılan tür.
+Bir anahtar, çıkış bağımsız değişkeni olarak döndürüldüğünde kullanılan tür.
 
-```
+```cpp
 typedef KTraits::OUTARGTYPE KOUTARGTYPE;
 ```
 
-## <a name="catlmaplookup"></a><a name="lookup"></a>CAtlMap::Arama
+## <a name="catlmaplookup"></a><a name="lookup"></a>CAtlMap:: Lookup
 
-`CAtlMap` Nesnedeki anahtarları veya değerleri aramak için bu yöntemi arayın.
+`CAtlMap` Nesne içindeki anahtarları veya değerleri aramak için bu yöntemi çağırın.
 
-```
+```cpp
 bool Lookup(KINARGTYPE key, VOUTARGTYPE value) const;
 const CPair* Lookup(KINARGTYPE key) const throw();
 CPair* Lookup(KINARGTYPE key) throw();
@@ -562,40 +562,40 @@ CPair* Lookup(KINARGTYPE key) throw();
 Aranacak öğeyi tanımlayan anahtarı belirtir.
 
 *value*<br/>
-Aradeğerini alan değişken.
+Aranan değeri alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntemin ilk biçimi anahtar bulunursa doğru döndürür, aksi takdirde yanlış. İkinci ve üçüncü formlar CAtlMap için aramalar için bir konum olarak kullanılabilecek bir [CPair](#cpair_class) için bir işaretçi döndürür::GetNext ve benzeri. [CAtlMap::GetNext](#getnext)
+Metodun ilk formu, anahtar bulunursa true, değilse false döndürür. İkinci ve üçüncü formlar, bir [CPair](#cpair_class) Için, [CAtlMap:: GetNext](#getnext) öğesine yapılan çağrılar için bir konum olarak kullanılabilecek bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Lookup`verilen anahtar parametresi ile tam olarak eşleşen bir anahtar içeren eş öğeyi hızla bulmak için karma algoritması kullanır.
+`Lookup`verilen anahtar parametresiyle tam olarak eşleşen bir anahtar içeren Map öğesini hızlı bir şekilde bulmak için bir karma algoritması kullanır.
 
-## <a name="catlmapoperator-"></a><a name="operator_at"></a>CAtlMap::operatör\[\]
+## <a name="catlmapoperator-"></a><a name="operator_at"></a>CAtlMap:: işleci\[\]
 
-Yerine yeni bir öğe ekler `CAtlMap`veya ekler.
+Öğesine yeni bir öğesi koyar veya öğesine ekler `CAtlMap`.
 
-```
+```cpp
 V& operator[](kinargtype key) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Öğenin eklemek veya değiştirmek için anahtar.
+Eklenecek veya değiştirilecek öğenin anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Verilen anahtarla ilişkili değere bir başvuru verir.
+Verilen anahtarla ilişkili değere bir başvuru döndürür.
 
 ### <a name="example"></a>Örnek
 
-Anahtar zaten varsa, öğe değiştirilir. Anahtar yoksa, yeni bir öğe eklenir. [CAtlMap örneğine bakın:CAtlMap](#catlmap).
+Anahtar zaten varsa, öğe değiştirilmiştir. Anahtar yoksa, yeni bir öğe eklenir. [CAtlMap:: CAtlMap](#catlmap)örneğine bakın.
 
-## <a name="catlmaprehash"></a><a name="rehash"></a>CAtlMap::Rehash
+## <a name="catlmaprehash"></a><a name="rehash"></a>CAtlMap:: rehash
 
-Nesneyi yeniden haşlamak `CAtlMap` için bu yöntemi çağırın.
+`CAtlMap` Nesneyi yeniden sağlaması için bu yöntemi çağırın.
 
 ```cpp
 void Rehash(UINT nBins = 0);
@@ -603,16 +603,16 @@ void Rehash(UINT nBins = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*nBins*<br/>
-Karma tabloda kullanılacak yeni kutu sayısı. Bkz. [CAtlMap::CAtlMap](#catlmap) bir açıklama için.
+*Nbıns*<br/>
+Karma tablosunda kullanılacak yeni depo gözü sayısı. Bir açıklama için bkz. [CAtlMap:: CAtlMap](#catlmap) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-*nBins* 0 ise, `CAtlMap` haritadaki eleman sayısını ve en uygun yük ayarını temel alan makul bir sayı hesaplar. Normalde rehashing işlemi otomatiktir, ancak [CAtlMap::DisableAutoRehash](#disableautorehash) çağrıldıysa, bu yöntem gerekli yeniden boyutlandırma gerçekleştirecektir.
+*Nbıns* 0 ise, `CAtlMap` eşlemedeki öğelerin sayısına ve en iyi yükleme ayarına göre makul bir sayı hesaplar. Normal olarak yeniden karma işlemi otomatiktir, ancak [CAtlMap::D Isableotomatik rehash](#disableautorehash) çağrılırsa, bu yöntem gerekli yeniden boyutlandırmayı gerçekleştirir.
 
-## <a name="catlmapremoveall"></a><a name="removeall"></a>CAtlMap::RemoveAll
+## <a name="catlmapremoveall"></a><a name="removeall"></a>CAtlMap:: RemoveAll
 
-`CAtlMap` Nesneden tüm öğeleri kaldırmak için bu yöntemi arayın.
+`CAtlMap` Nesnesinden tüm öğeleri kaldırmak için bu yöntemi çağırın.
 
 ```cpp
 void RemoveAll() throw();
@@ -620,11 +620,11 @@ void RemoveAll() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğeleri depolamak `CAtlMap` için kullanılan belleği serbest, nesneyi temizler.
+`CAtlMap` Nesneleri depolamak için kullanılan belleği serbest bırakarak nesneyi temizler.
 
-## <a name="catlmapremoveatpos"></a><a name="removeatpos"></a>CAtlMap::RemoveAtPos
+## <a name="catlmapremoveatpos"></a><a name="removeatpos"></a>CAtlMap:: RemoveAtPos
 
-Nesnede verilen konumdaki öğeyi kaldırmak `CAtlMap` için bu yöntemi çağırın.
+`CAtlMap` Nesnede verilen konumdaki öğeyi kaldırmak için bu yöntemi çağırın.
 
 ```cpp
 void RemoveAtPos(POSITION pos) throw();
@@ -632,18 +632,18 @@ void RemoveAtPos(POSITION pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Pozisyon sayacı, CAtlMap önceki bir çağrı ile [döndürülen::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
+*'un*<br/>
+Konum sayacı, bir önceki [CAtlMap:: GetNextAssoc](#getnextassoc) veya [CAtlMap:: GetStartPosition](#getstartposition)çağrısı tarafından döndürüldü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen konumda depolanan anahtar/değer çiftini kaldırır. Öğeyi depolamak için kullanılan bellek serbest bırakılır. *POS* tarafından başvurulan KONUM geçersiz hale gelir ve haritadaki diğer öğelerin KONUMU geçerli kalırken, aynı sırayı korumak zorunda kalmazlar.
+Belirtilen konumda depolanan anahtar/değer çiftini kaldırır. Öğeyi depolamak için kullanılan bellek serbest bırakıldı. *POS* tarafından başvurulan konum geçersiz hale gelir ve haritadaki DIĞER öğelerin konumu geçerli kalır, ancak aynı sırada tutulması gerekmez.
 
-## <a name="catlmapremovekey"></a><a name="removekey"></a>CAtlMap::RemoveKey
+## <a name="catlmapremovekey"></a><a name="removekey"></a>CAtlMap:: RemoveKey
 
-Anahtar verilen `CAtlMap` bir öğeyi nesneden kaldırmak için bu yöntemi çağırın.
+Bu yöntemi, anahtar verildiğinde `CAtlMap` nesnesinden bir öğeyi kaldırmak için çağırın.
 
-```
+```cpp
 bool RemoveKey(KINARGTYPE key) throw();
 ```
 
@@ -654,17 +654,17 @@ Kaldırmak istediğiniz öğe çiftine karşılık gelen anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anahtar bulunur ve kaldırılırsa TRUE döndürür, hata false üzerinde FALSE.
+Anahtar bulunursa ve kaldırılırsa TRUE, hata durumunda FALSE döndürür.
 
 ### <a name="example"></a>Örnek
 
-[CAtlMap örneğine bakın:CAtlMap](#catlmap).
+[CAtlMap:: CAtlMap](#catlmap)örneğine bakın.
 
-## <a name="catlmapsetat"></a><a name="setat"></a>CAtlMap::SetAt
+## <a name="catlmapsetat"></a><a name="setat"></a>CAtlMap:: SetAt
 
-Eşmeye bir öğe çifti eklemek için bu yöntemi çağırın.
+Haritaya bir öğe çifti eklemek için bu yöntemi çağırın.
 
-```
+```cpp
 POSITION SetAt(
     KINARGTYPE key,
     VINARGTYPE value);
@@ -673,22 +673,22 @@ POSITION SetAt(
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-`CAtlMap` Nesneye eklenecek anahtar değer.
+`CAtlMap` Nesneye eklenecek anahtar değeri.
 
 *value*<br/>
 `CAtlMap` Nesneye eklenecek değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesnedeki anahtar/değer öğesi çiftinin `CAtlMap` konumunu döndürür.
+`CAtlMap` Nesnedeki anahtar/değer öğesi çiftinin konumunu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SetAt`eşleşen bir anahtar bulunursa varolan bir öğenin yerini alır. Anahtar bulunamazsa, yeni bir anahtar/değer çifti oluşturulur.
+`SetAt`eşleşen bir anahtar bulunursa varolan bir öğeyi değiştirir. Anahtar bulunamazsa yeni bir anahtar/değer çifti oluşturulur.
 
-## <a name="catlmapsetoptimalload"></a><a name="setoptimalload"></a>CAtlMap::SetOptimalLoad
+## <a name="catlmapsetoptimalload"></a><a name="setoptimalload"></a>CAtlMap:: SetOptimalLoad
 
-`CAtlMap` Nesnenin en uygun yükünü ayarlamak için bu yöntemi arayın.
+`CAtlMap` Nesnenin en iyi yükünü ayarlamak için bu yöntemi çağırın.
 
 ```cpp
 void SetOptimalLoad(
@@ -700,25 +700,25 @@ void SetOptimalLoad(
 
 ### <a name="parameters"></a>Parametreler
 
-*fOptimalLoad*<br/>
-En uygun yük oranı.
+*Foptimize Malload*<br/>
+En iyi yükleme oranı.
 
 *fLoThreshold*<br/>
-Yük oranı için alt eşik.
+Yük oranının alt eşiği.
 
 *fHiThreshold*<br/>
-Yük oranı için üst eşik.
+Yük oranının üst eşiği.
 
 *bRehashNow*<br/>
-Karma tablonun yeniden hesaplanıp hesaplanmaması gerektiğini belirten bayrak.
+Karma tablosunun yeniden hesaplanması gerekip gerekmediğini belirten bayrak.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu `CAtlMap` yöntem, nesne için en uygun yük değerini yeniden tanımlar. Çeşitli parametrelerin tartışılması için [CAtlMap::CAtlMap'e](#catlmap) bakın. *bRehashNow* doğruysa ve eleman sayısı minimum ve maksimum değerlerin dışındaysa, karma tablo yeniden hesaplanır.
+Bu yöntem, `CAtlMap` nesne için en iyi yükleme değerini tekrar tanımlar. Çeşitli parametrelerin tartışılması için bkz. [CAtlMap:: CAtlMap](#catlmap) . *BRehashNow* değeri true ise ve öğe sayısı minimum ve maksimum değerlerin dışındaysa, karma tablo yeniden hesaplanır.
 
-## <a name="catlmapsetvalueat"></a><a name="setvalueat"></a>CAtlMap::SetValueAt
+## <a name="catlmapsetvalueat"></a><a name="setvalueat"></a>CAtlMap:: Setvaluyemek
 
-Nesnede belirli bir konumda depolanan değeri değiştirmek `CAtlMap` için bu yöntemi çağırın.
+`CAtlMap` Nesnedeki belirli bir konumda depolanan değeri değiştirmek için bu yöntemi çağırın.
 
 ```cpp
 void SetValueAt(
@@ -728,60 +728,60 @@ void SetValueAt(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Pozisyon sayacı, CAtlMap önceki bir çağrı ile [döndürülen::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
+*'un*<br/>
+Konum sayacı, bir önceki [CAtlMap:: GetNextAssoc](#getnextassoc) veya [CAtlMap:: GetStartPosition](#getstartposition)çağrısı tarafından döndürüldü.
 
 *value*<br/>
 `CAtlMap` Nesneye eklenecek değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnede verilen konumda depolanan değer `CAtlMap` öğesini değiştirir.
+`CAtlMap` Nesnede verilen konumda depolanan değer öğesini değiştirir.
 
-## <a name="catlmapvinargtype"></a><a name="vinargtype"></a>CAtlMap::VINARGTYPE
+## <a name="catlmapvinargtype"></a><a name="vinargtype"></a>CAtlMap:: VINARGTYPE
 
-Bir değer girdi bağımsız değişkeni olarak geçildiğinde kullanılan tür.
+Giriş bağımsız değişkeni olarak bir değer geçirildiğinde kullanılan tür.
 
-```
+```cpp
 typedef VTraits::INARGTYPE VINARGTYPE;
 ```
 
-## <a name="catlmapvoutargtype"></a><a name="voutargtype"></a>CAtlMap::VOUTARGTYPE
+## <a name="catlmapvoutargtype"></a><a name="voutargtype"></a>CAtlMap:: VOUTARGTYPE
 
-Bir değer çıktı bağımsız değişkeni olarak geçirildiğinde kullanılan tür.
+Bir değer çıkış bağımsız değişkeni olarak geçirildiğinde kullanılan tür.
 
-```
+```cpp
 typedef VTraits::OUTARGTYPE VOUTARGTYPE;
 ```
 
-## <a name="catlmapcpairm_key"></a><a name="m_key"></a>CAtlMap::CPair::m_key
+## <a name="catlmapcpairm_key"></a><a name="m_key"></a>CAtlMap:: CPair:: m_key
 
-Anahtar öğeyi depolayan veri üyesi.
+Anahtar öğesini depolayan veri üyesi.
 
-```
+```cpp
 const K m_key;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Kahraman*<br/>
+*Ek*<br/>
 Anahtar öğe türü.
 
-## <a name="catlmapcpairm_value"></a><a name="m_value"></a>CAtlMap::CPair::m_value
+## <a name="catlmapcpairm_value"></a><a name="m_value"></a>CAtlMap:: CPair:: m_value
 
 Değer öğesini depolayan veri üyesi.
 
-```
+```cpp
 V  m_value;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*V*<br/>
+*Yönetim*<br/>
 Değer öğesi türü.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Marquee Örnek](../../overview/visual-cpp-samples.md)<br/>
-[GüncellemePV Örneği](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Kayan yazı örneği](../../overview/visual-cpp-samples.md)<br/>
+[UpdatePV örneği](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

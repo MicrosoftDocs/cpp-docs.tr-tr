@@ -1,5 +1,5 @@
 ---
-title: _Atl_func_ınfo yapısı
+title: _ATL_FUNC_INFO Yapısı
 ms.date: 11/04/2016
 f1_keywords:
 - _ATL_FUNC_INFO
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - _ATL_FUNC_INFO structure
 - ATL_FUNC_INFO structure
 ms.assetid: 441ebe2c-f971-47de-9f52-a258e8d6f88e
-ms.openlocfilehash: f6cf32bab86d741f3b0750c150c7bbc647b27ddc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b1c740cf1a1ed344dbceb028bd1f39a87fc09363
+ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62248699"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82168598"
 ---
-# <a name="atlfuncinfo-structure"></a>_Atl_func_ınfo yapısı
+# <a name="_atl_func_info-structure"></a>_ATL_FUNC_INFO Yapısı
 
-Bir yöntem veya özellik üzerinde bir dispinterface açıklamak için kullanılan tür bilgilerini içerir.
+Bir dispınterface üzerindeki bir yöntemi veya özelliği anlatmak için kullanılan tür bilgilerini içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 struct _ATL_FUNC_INFO {
     CALLCONV cc;
     VARTYPE vtReturn;
@@ -34,34 +34,34 @@ struct _ATL_FUNC_INFO {
 ## <a name="members"></a>Üyeler
 
 `cc`<br/>
-Çağırma kuralı. Bu yapı ile kullanırken [Idispeventsimpleımpl](../../atl/reference/idispeventsimpleimpl-class.md) sınıfı, bu üye CC_STDCALL olması gerekir. `CC_CDECL` Windows CE için desteklenen tek seçenek `CALLCONV` alanını `_ATL_FUNC_INFO` yapısı. Başka bir değer desteklenmiyor bu nedenle, davranışı tanımsız.
+Çağırma kuralı. Bu yapının [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) sınıfıyla birlikte kullanılması durumunda, bu üyenin CC_STDCALL olması gerekir. `CC_CDECL``_ATL_FUNC_INFO` yapının `CALLCONV` alanı için Windows CE desteklenen tek seçenektir. Başka herhangi bir değer desteklenmez, dolayısıyla davranışı tanımsız olur.
 
 `vtReturn`<br/>
-Değişken türü işlevin dönüş değeri.
+İşlev dönüş değerinin değişken türü.
 
 `nParams`<br/>
-İşlev parametreleri sayısı.
+İşlev parametrelerinin sayısı.
 
 `pVarTypes`<br/>
-Değişken işlevi parametre türleri dizisi.
+İşlev parametrelerinin değişken türlerinden oluşan bir dizi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dahili olarak, ATL tür kitaplığından alınan bilgileri tutmak için bu yapıyı kullanır. İle kullanılan bir olay işleyicisi için tür bilgilerini sağlarsanız, bu yapı doğrudan düzenlemezsiniz gerekebilir [Idispeventsimpleımpl](../../atl/reference/idispeventsimpleimpl-class.md) sınıfı ve [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info) makrosu.
+Dahili olarak, ATL bu yapıyı bir tür kitaplığından alınan bilgileri tutmak için kullanır. [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) sınıfı ve [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info) makrosu ile kullanılan bir olay işleyicisi için tür bilgisi sağlarsanız, bu yapıyı doğrudan değiştirmeniz gerekebilir.
 
 ## <a name="example"></a>Örnek
 
-IDL içinde tanımlanan bir görüntü arabirimi yöntemi verilen:
+IDL içinde tanımlanan bir dispınterface yöntemi verildi:
 
 [!code-cpp[NVC_ATL_Windowing#139](../../atl/codesnippet/cpp/atl-func-info-structure_1.idl)]
 
-tanımlayın bir `_ATL_FUNC_INFO` yapısı:
+bir `_ATL_FUNC_INFO` yapı tanımlayabilirsiniz:
 
 [!code-cpp[NVC_ATL_Windowing#140](../../atl/codesnippet/cpp/atl-func-info-structure_2.h)]
 
 ## <a name="requirements"></a>Gereksinimler
 
-Üstbilgi: atlcom.h
+Üstbilgi: atlcom. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - '& operator, address-of operator'
 - CAdapt class
 ms.assetid: 0bb695a5-72fe-43d1-8f39-7e4da6e34765
-ms.openlocfilehash: 23544bc103de0d7b76cd73d403626ba93af6e31a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1bae98663b8dc2b09efeff9139e8d028abcd862e
+ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81321635"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82168845"
 ---
 # <a name="cadapt-class"></a>CAdapt Sınıfı
 
@@ -25,12 +25,12 @@ Bu şablon, nesnenin adresi dışında bir öğe döndürmek üzere address-of i
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template <class T>
 class CAdapt
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *T*<br/>
 Uyarlanmış tür.
@@ -41,43 +41,43 @@ Uyarlanmış tür.
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAdapt::CAdapt](#cadapt)|Oluşturucu.|
+|[Cadavpt:: Cabapt](#cadapt)|Oluşturucu.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAdapt::operatör const T&](#operator_const_t_amp)|Const **const** başvurusu `m_T`verir.|
-|[CAdapt::operatör T&](#operator_t_amp)|Bir başvuru `m_T`verir.|
-|[CAdapt::operatör <](#operator_lt)|Uyarlanmış türdeki bir nesneyi `m_T`.|
-|[CAdapt::operator =](#operator_eq)|Uyarlanmış türden bir nesne `m_T`atar.|
-|[CAdapt::operatör ==](#operator_eq_eq)|Uyarlanmış türdeki bir nesneyi `m_T`.|
+|[CAdapt:: operator const T&](#operator_const_t_amp)|Öğesine `m_T`bir **const** başvurusu döndürür.|
+|[CAdapt:: operator T&](#operator_t_amp)|Öğesine `m_T`bir başvuru döndürür.|
+|[CAdapt:: operator <](#operator_lt)|Uyarılmış türdeki bir nesneyi ile `m_T`karşılaştırır.|
+|[CAdapt:: operator =](#operator_eq)|Uyartype nesnesinin bir nesnesini öğesine `m_T`atar.|
+|[CAdapt:: operator = =](#operator_eq_eq)|Uyarılmış türdeki bir nesneyi ile `m_T`karşılaştırır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Adı|Açıklama|
 |----------|-----------------|
-|[CAdapt::m_T](#m_t)|Uyarlanan veri.|
+|[Cadadpt:: m_T](#m_t)|Uyarlanan veri.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAdapt`nesnenin adresi dışında bir şey döndürmek için işlecinin adresini yeniden`operator &`tanımlayan sınıfları sarmak için kullanılan basit bir şablondur. Bu tür sınıflara örnek `CComBSTR`olarak `CComPtr`ATL'ler ve `CComQIPtr` sınıflar ve `_com_ptr_t`derleyici COM destek sınıfı verilebilir. Bu sınıflar, veri üyelerinden birinin adresini (örneğin `CComBSTR`bstr ve diğer sınıflarda bir arabirim işaretçisi) döndürmek için işlecinin adresini yeniden tanımlar.
+`CAdapt`, sınıfının adresini (`operator &`) yeniden tanımlayan sınıfları nesnenin adresi dışında bir şey döndürecek şekilde kaydırmak için kullanılan basit bir şablondur. Bu sınıfların örnekleri, ATL `CComBSTR`'in, `CComPtr`, ve `CComQIPtr` sınıflarının yanı sıra derleyicinin com destek sınıfını içerir. `_com_ptr_t` Bu sınıflar, veri üyelerinden birinin adresini (söz konusu durumda `CComBSTR`bir BSTR ve diğer sınıfların durumunda bir arabirim işaretçisi) döndürmek için tüm adres işlecini yeniden tanımlayarak.
 
-`CAdapt`'birincil rolü sınıf *T*tarafından tanımlanan işleci adresi gizlemek için, ama yine de uyarlanmış sınıfın özelliklerini korumaktır. `CAdapt`bir kamu üyesi tutarak bu rolü yerine getirir, [m_T,](#m_t) *T*türü, ve dönüşüm operatörleri, karşılaştırma operatörleri `CAdapt` tanımlayarak, karşılaştırma operatörleri, ve bir kopya oluşturucu onlar *t*tipi nesneleri gibi davranılması için uzmanlıklar izin vermek .
+`CAdapt`birincil rolü, sınıf *T*tarafından tanımlanan adres işlecinin gizlenme, ancak yine de, bu sınıfın özelliklerini korumalarıdır. `CAdapt`Bu rolü, bir genel üyeyi, *t*türü [m_T](#m_t)tutarak, dönüştürme işleçlerini, karşılaştırma işleçlerini ve bir kopya Oluşturucu tanımlayarak, *t*türünde nesneler gibi değerlendirilmelerini `CAdapt` sağlamak üzere tanımlayın.
 
-Bazı kapsayıcı `CAdapt` stili sınıfları işleç adresini kullanarak kendi içerdiği nesnelerin adreslerini elde etmek mümkün olmasını bekliyoruz bağdaştırıcı sınıfı yararlıdır. İşlecin adresinin yeniden tanımlanması, genellikle derleme hatalarına neden olacak ve bunun "çalışmasını" bekleyen sınıfların uyarlanmamış türünün kullanımını önleyecek şekilde bu gereksinimi bozabilir. `CAdapt`bu sorunları aşmak için bir yol sağlar.
+Bazı kapsayıcı stili `CAdapt` sınıflar, içerdiği nesnelerin adreslerini Address-of işlecini kullanarak elde edebileceğinden, bağdaştırıcı sınıfı faydalıdır. İşlecin adresinin yeniden tanımlanması, genellikle derleme hatalarına neden olacak ve bunun "çalışmasını" bekleyen sınıfların uyarlanmamış türünün kullanımını önleyecek şekilde bu gereksinimi bozabilir. `CAdapt`Bu sorunları çözmek için bir yol sağlar.
 
-Genellikle, kapsayıcı tarzı `CAdapt` bir sınıfta `CComBSTR`, `CComPtr` `CComQIPtr`, `_com_ptr_t` nesneleri depolamak istediğinizde kullanırsınız. Bu, C++11 Standardını desteklemeden önce C++ Standart Kitaplık kapsayıcıları için en yaygın olarak gerekliydi, ancak `operator&()`C++11 Standart Kitaplık kapsayıcıları aşırı yüklenmiş türlerle otomatik olarak çalışır. Standart Kitaplık bunu, nesnelerin gerçek adreslerini almak için [std::addressof](../../standard-library/memory-functions.md#addressof) kullanarak başarır.
+Genellikle, bir kapsayıcı stili `CAdapt` sınıfta, `CComBSTR` `CComPtr` `CComQIPtr`, veya `_com_ptr_t` nesnelerini depolamak istediğinizde kullanırsınız. Bu, c++ 11 standardı desteği olmadan önce C++ standart kitaplığı kapsayıcıları için en yaygın olarak gereklidir, ancak C++ 11 standart kitaplık kapsayıcıları, aşırı yüklenmiş `operator&()`türlerle otomatik olarak çalışır. Standart Kitaplık, nesnelerin doğru adreslerini almak için [std:: AddressOf](../../standard-library/memory-functions.md#addressof) kullanarak bu bunu dahili olarak alır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcomcli.h
+**Üstbilgi:** atlcomclı. h
 
-## <a name="cadaptcadapt"></a><a name="cadapt"></a>CAdapt::CAdapt
+## <a name="cadaptcadapt"></a><a name="cadapt"></a>Cadavpt:: Cabapt
 
-Oluşturucular, bağdaştırıcı nesnesinin varsayılan olarak oluşturulmasına, uyarlanan türden bir nesneden kopyalanmasını veya başka bir bağdaştırıcı nesnesinden kopyalanmasını sağlar.
+Oluşturucular, bir bağdaştırıcı nesnesinin varsayılan olarak oluşturulmasını, bir tür nesnesinden kopyalanmasını veya başka bir bağdaştırıcı nesnesinden kopyalanmasını sağlar.
 
-```
+```cpp
 CAdapt();
 CAdapt(const T& rSrc);
 CAdapt(const CAdapt& rSrCA);
@@ -88,52 +88,52 @@ CAdapt(CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 ### <a name="parameters"></a>Parametreler
 
 *rSrc*<br/>
-Yeni oluşturulan bağdaştırıcı nesneye kopyalanacak şekilde uyarlanan türden bir değişken.
+Yeni oluşturulan bağdaştırıcı nesnesine kopyalanmak üzere uyarlanmakta olan türde bir değişken.
 
 *rSrCA*<br/>
-İçerdiği verileri yeni oluşturulan bağdaştırıcı nesnesine kopyalanmış (veya taşınmış) bir bağdaştırıcı nesnesi.
+Veri içeren bir bağdaştırıcı nesnesi yeni oluşturulan bağdaştırıcı nesnesine kopyalanmalı (veya taşınacak).
 
-## <a name="cadaptm_t"></a><a name="m_t"></a>CAdapt::m_T
+## <a name="cadaptm_t"></a><a name="m_t"></a>Cadadpt:: m_T
 
-Uyarlanan verileri tutar.
+Uyarlanmakta olan verileri tutar.
 
-```
+```cpp
 T m_T;
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu **genel** veri üyesine doğrudan veya dolaylı olarak [operatör const T&](#operator_const_t_amp) ve operatör T [&](#operator_t_amp)ile ulaşılabilir.
+Bu **genel** veri üyesine doğrudan veya dolaylı olarak, [sabit t&](#operator_const_t_amp) ve [işleç T&](#operator_t_amp)ile erişilebilir.
 
-## <a name="cadaptoperator-const-tamp"></a><a name="operator_const_t_amp"></a>CAdapt::operatör const T&amp;
+## <a name="cadaptoperator-const-tamp"></a><a name="operator_const_t_amp"></a>CAdapt:: operator const T&amp;
 
-Bağdaştırıcı nesnesinin *T*türündeki bir nesnegibi davranılmasına izin veren [m_T](#m_t) üyeye **const** bir başvuru verir.
+[M_T](#m_t) üyesine bir **const** başvurusu döndürür ve bu, bağdaştırıcı nesnesinin *T*türünde bir nesne gibi işlenmesine izin verir.
 
-```
+```cpp
 operator const T&() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir **const** `m_T`referans .
+İçin **const** `m_T`bir const başvurusu.
 
-## <a name="cadaptoperator-tamp"></a><a name="operator_t_amp"></a>CAdapt::operatör T&amp;
+## <a name="cadaptoperator-tamp"></a><a name="operator_t_amp"></a>CAdapt:: operator T&amp;
 
-Bağdaştırıcı nesnesinin *T*türündeki bir nesne gibi davranılmasına izin veren [m_T](#m_t) üyeye bir başvuru verir.
+[M_T](#m_t) üyesine bir başvuru döndürür ve bu, bağdaştırıcı nesnesinin *T*türünde bir nesne gibi işlenmesine izin verir.
 
-```
+```cpp
 operator T&();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir referans `m_T`.
+Öğesine `m_T`bir başvuru.
 
-## <a name="cadaptoperator-lt"></a><a name="operator_lt"></a>CAdapt::operatör&lt;
+## <a name="cadaptoperator-lt"></a><a name="operator_lt"></a>CAdapt:: işleci&lt;
 
-Uyarlanmış türdeki bir nesneyi [m_T](#m_t)ile karşılaştırır.
+Uyarılmış türdeki bir nesneyi [m_T](#m_t)karşılaştırır.
 
-```
+```cpp
 bool operator<(const T& rSrc) const;
 ```
 
@@ -144,13 +144,13 @@ Karşılaştırılacak nesneye bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ve *rSrc* `m_T` arasında karşılaştırma sonucu .
+Ve `m_T` *RSRC*arasındaki Karşılaştırmanın sonucu.
 
-## <a name="cadaptoperator-"></a><a name="operator_eq"></a>CAdapt::operator =
+## <a name="cadaptoperator-"></a><a name="operator_eq"></a>CAdapt:: operator =
 
-Atama işleci, m_T veri [üyesine](#m_t) bağımsız değişken, *rSrc*atar ve geçerli bağdaştırıcı nesnesini döndürür.
+Atama işleci, *RSRC*bağımsız değişkenini veri üyesine [m_T](#m_t) atar ve geçerli bağdaştırıcı nesnesini döndürür.
 
-```
+```cpp
 CAdapt& operator= (const T& rSrc);
 CAdapt& operator= (T&& rSrCA); // (Visual Studio 2017)
 CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
@@ -159,7 +159,7 @@ CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 ### <a name="parameters"></a>Parametreler
 
 *rSrc*<br/>
-Kopyalanacak uyarlanmış türdeki bir nesneye başvuru.
+Kopyalanacak uyarlamatürünün nesnesine bir başvuru.
 
 *rSrCA*<br/>
 Taşınacak bir nesneye başvuru.
@@ -168,11 +168,11 @@ Taşınacak bir nesneye başvuru.
 
 Geçerli nesneye bir başvuru.
 
-## <a name="cadaptoperator-"></a><a name="operator_eq_eq"></a>CAdapt::operatör ==
+## <a name="cadaptoperator-"></a><a name="operator_eq_eq"></a>CAdapt:: operator = =
 
-Uyarlanmış türdeki bir nesneyi [m_T](#m_t)ile karşılaştırır.
+Uyarılmış türdeki bir nesneyi [m_T](#m_t)karşılaştırır.
 
-```
+```cpp
 bool operator== (const T& rSrc) const;
 ```
 
@@ -183,8 +183,8 @@ Karşılaştırılacak nesneye bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*m_T* ve *rSrc*arasındaki karşılaştırmasonucu .
+*M_T* ve *RSRC*arasındaki Karşılaştırmanın sonucu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)
