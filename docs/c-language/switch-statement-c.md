@@ -11,29 +11,35 @@ no-loc:
 - case
 - default
 - break
-ms.openlocfilehash: 12163e85110092e3e372fa496cf42efd7574ea8d
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 5858447602a28dcc5573aa3138e869d106b5aa23
+ms.sourcegitcommit: 2f9ff2041d70c406df76c5053151192aad3937ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167682"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82587368"
 ---
-# <a name="opno-locswitch-statement-c"></a>switchİfade (C)
+# <a name="switch-statement-c"></a>`switch`İfade (C)
 
-Ve **switch** **case** deyimleri, karmaşık koşullu ve dallanma işlemlerini denetlemeye yardımcı olur. İfade **switch** , denetimi kendi gövdesi içindeki bir ifadeye aktarır.
+Ve __`switch`__ __`case`__ deyimleri, karmaşık koşullu ve dallanma işlemlerini denetlemeye yardımcı olur. İfade __`switch`__ , denetimi kendi gövdesi içindeki bir ifadeye aktarır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*seçim-ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`switch (`***ifade* **`)`** *deyimi*
+> *`selection-statement`*:<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp; __`switch (`__&nbsp;*`expression`* &nbsp;__`)`__&nbsp;*`statement`*
 
-*etiketli ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`case`**  *Sabit ifade*  **`:`**  *deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`default :`**  *Ekstre*
+> *`labeled-statement`*:<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp; __`case`__&nbsp;*`constant-expression`*&nbsp;__`:`__&nbsp;*`statement`*<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp; __`default`__&nbsp;__`:`__&nbsp;*`statement`*
 
-Denetim, **case** *sabit ifadesi* ** switch (** *ifade* **)** değeriyle eşleşen ifadeye geçer. **switch** İfade herhangi bir sayıda **case** örnek içerebilir. Ancak, aynı case **switch** deyimdeki iki sabit değer aynı değere sahip olamaz. Ekstre gövdesinin yürütülmesi seçili deyimden başlar. Gövde sonuna kadar veya bir **break** deyimin denetimi gövdeden dışarı aktarana kadar devam eder.
+## <a name="remarks"></a>Açıklamalar
 
-**switch** Deyimin kullanımı genellikle şuna benzer bir şekilde görünür:
+Bir __`switch`__ ifade, denetimin değerine bağlı olarak deyimin *`labeled-statement`* gövdesinde bir öğesine aktarılmasına neden olur *`expression`*.
+
+*`expression`* Ve değerlerinin bir integral türü *`constant-expression`* olmalıdır. Derleme *`constant-expression`* zamanında benzersiz bir sabit integral değeri olmalıdır.
+
+Denetim **`case`** *`constant-expression`* değeri değeri ile eşleşen ifadeye geçer *`expression`*. __`switch`__ İfade herhangi bir sayıda __`case`__ örnek içerebilir. Ancak, aynı *`constant-expression`* __`switch`__ deyimdeki iki değer aynı değere sahip olamaz. __`switch`__ Ekstre gövdesinin yürütülmesi, eşleştirmeden *`labeled-statement`* veya sonra ilk deyimden başlar. Yürütme, gövdenin sonuna kadar veya bir __`break`__ ifade denetimi gövdeden dışarı aktarana kadar devam eder.
+
+__`switch`__ Deyimin kullanımı genellikle şuna benzer bir şekilde görünür:
 
 ```C
 switch ( expression )
@@ -50,18 +56,18 @@ switch ( expression )
 }
 ```
 
-Deyimdeki **switch** belirli bir **break** etiketli deyimin işlenmesini sonlandırmak için, ifadesini kullanabilirsiniz. **switch** Deyimin sonuna dallandırır. Olmadan **break**, program bir sonraki etiketli ifadeye devam eder ve deyim bir **break** veya sonuna ulaşılana kadar deyimlerini yürütmektedir. Bu devamlılık bazı durumlarda istenebilir.
+Deyimdeki __`switch`__ belirli bir __`break`__ etiketli deyimin işlenmesini sonlandırmak için, ifadesini kullanabilirsiniz. __`switch`__ Deyimin sonuna dallandırır. Olmadan __`break`__, program bir sonraki etiketli ifadeye devam eder ve deyim bir __`break`__ veya sonuna ulaşılana kadar deyimlerini yürütmektedir. Bu devamlılık bazı durumlarda istenebilir.
 
-**default** Deyim, ** switch (** *ifade* **)** değerine **case** eşit bir *sabit ifade* yoksa yürütülür. Hiçbir **default** deyim yoksa ve hiçbir **case** eşleşme bulunmazsa, **switch** gövdedeki deyimlerden hiçbiri yürütülmez. En fazla bir **default** ifade olabilir. **default** Deyimin sonunda olması gerekmez. **switch** Deyimin gövdesinde herhangi bir yerde görünebilir. **case** Or **default** etiketi yalnızca bir **switch** deyimin içinde yer alabilir.
+Değeri __`default`__ değerine eşit değilse, ifade __`case`__ *`constant-expression`* yürütülür *`expression`*. Hiçbir __`default`__ deyim yoksa ve hiçbir __`case`__ eşleşme bulunmazsa, __`switch`__ gövdedeki deyimlerden hiçbiri yürütülmez. En fazla bir __`default`__ ifade olabilir. __`default`__ Deyimin sonunda olması gerekmez. __`switch`__ Deyimin gövdesinde herhangi bir yerde görünebilir. __`case`__ Or __`default`__ etiketi yalnızca bir __`switch`__ deyimin içinde yer alabilir.
 
-**switch** *İfade* türü ve **case** *sabit ifadesinin* tamsayı olması gerekir. Her **case** *sabit ifadenin* değeri deyim gövdesi içinde benzersiz olmalıdır.
+Türü __`switch`__ *`expression`* __`case`__ ve *`constant-expression`* tamsayı olmalıdır. Her __`case`__ *`constant-expression`* birinin değeri, ifade gövdesi içinde benzersiz olmalıdır.
 
-Deyimin gövdesinin **default** ve etiketleri, **case** yalnızca yürütmenin deyimin gövdesinde başlayacağını belirleyen başlangıç testinde önemlidir. **switch** **switch** deyimler iç içe olabilir. Herhangi bir statik değişken, herhangi bir **switch** deyime yürütülmeden önce başlatılır.
+Deyimin gövdesinin __`default`__ ve etiketleri, __`case`__ yalnızca yürütmenin deyimin gövdesinde başlayacağını belirleyen başlangıç testinde önemlidir. __`switch`__ __`switch`__ deyimler iç içe olabilir. Herhangi bir statik değişken, herhangi bir __`switch`__ deyime yürütülmeden önce başlatılır.
 
 > [!NOTE]
-> Bildirimler, **switch** gövde oluşturan bileşik deyimin başlangıcında görünebilir, ancak bildirimlere dahil olan başlatmalar gerçekleştirilmez. **switch** İfade, denetimi, başlatma içeren satırları atlayarak gövde içindeki bir yürütülebilir ifadeye doğrudan aktarır.
+> Bildirimler, __`switch`__ gövde oluşturan bileşik deyimin başlangıcında görünebilir, ancak bildirimlere dahil olan başlatmalar gerçekleştirilmez. __`switch`__ İfade, denetimi, başlatma içeren satırları atlayarak gövde içindeki bir yürütülebilir ifadeye doğrudan aktarır.
 
-Aşağıdaki örneklerde, deyimleri **switch** gösterilmektedir:
+Aşağıdaki örneklerde, deyimleri __`switch`__ gösterilmektedir:
 
 ```C
 switch( c )
@@ -75,7 +81,7 @@ switch( c )
 }
 ```
 
-**switch** Aşağıdakilerden caseönce hiçbir **break** deyim göründüğünden, bu örnekteki gövdenin tüm üç `c` deyimi öğesine `'A'`eşitse yürütülür. Yürütme denetimi ilk ifadeye (`capital_a++;`) aktarılır ve gövdenin geri kalanı boyunca devam eder. `c` `'a'`Eşitse `letter_a` ve `total` arttırılır. Yalnızca `total` eşit `c` `'A'` olmadığında artırılır `'a'`.
+__`switch`__ Aşağıdakilerden __`case`__ önce hiçbir __`break`__ deyim göründüğünden, bu örnekteki gövdenin tüm üç `c` deyimi öğesine `'A'`eşitse yürütülür. Yürütme denetimi ilk ifadeye (`capital_a++;`) aktarılır ve gövdenin geri kalanı boyunca devam eder. `c` `'a'`Eşitse `letter_a` ve `total` arttırılır. Yalnızca `total` eşit `c` `'A'` olmadığında artırılır `'a'`.
 
 ```C
 switch( i )
@@ -92,9 +98,9 @@ switch( i )
 }
 ```
 
-Bu örnekte, bir ifade **break** **switch** gövdenin her bir ifadesine uyar. **break** İfade, bir deyimden sonra deyimin gövdesinden çıkış zorlar. `i` -1 ' e eşitse, yalnızca `n` artırılır. **break** Aşağıdaki deyim `n++;` , yürütme denetiminin geri kalan deyimleri atlayarak deyim gövdesinin dışına geçmesini sağlar. `i` Benzer şekilde, 0 ' a eşitse, yalnızca `z` artırılır; `i` 1 ' e eşitse, yalnızca `p` artırılır. Denetim bileşik **break** deyimin sonundaki gövdeden geçerken son ifade kesinlikle gerekli değildir. Tutarlılık için eklenmiştir.
+Bu örnekte, bir ifade __`break`__ __`switch`__ gövdenin her bir ifadesine uyar. __`break`__ İfade, bir deyimden sonra deyimin gövdesinden çıkış zorlar. `i` -1 ' e eşitse, yalnızca `n` artırılır. __`break`__ Aşağıdaki deyim `n++;` , yürütme denetiminin geri kalan deyimleri atlayarak deyim gövdesinin dışına geçmesini sağlar. `i` Benzer şekilde, 0 ' a eşitse, yalnızca `z` artırılır; `i` 1 ' e eşitse, yalnızca `p` artırılır. Denetim bileşik __`break`__ deyimin sonundaki gövdeden geçerken son ifade kesinlikle gerekli değildir. Tutarlılık için eklenmiştir.
 
-Aşağıdaki örnekte gösterildiği gibi tek bir **case** ifade birden çok etiket taşıyabilir:
+Aşağıdaki örnekte gösterildiği gibi tek bir __`case`__ ifade birden çok etiket taşıyabilir:
 
 ```C
 switch( c )
@@ -112,7 +118,7 @@ Bu örnekte, *sabit ifade* ve `'a'` `'f'`arasında herhangi bir harfe eşitse, `
 
 ### <a name="microsoft-specific"></a>Microsoft'a özgü
 
-Microsoft C, bir case **switch** deyimdeki değer sayısını sınırlamaz. Numara yalnızca kullanılabilir bellekle sınırlıdır. ANSI C, bir case **switch** bildirimde en az 257 etikete izin verilmesini gerektirir.
+Microsoft C, bir __`case`__ __`switch`__ deyimdeki değer sayısını sınırlamaz. Numara yalnızca kullanılabilir bellekle sınırlıdır. ANSI C, bir __`case`__ __`switch`__ bildirimde en az 257 etikete izin verilmesini gerektirir.
 
 Microsoft default C Için, Microsoft uzantılarının etkin olması. Bu uzantıları devre dışı bırakmak için [/za](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneğini kullanın.
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -TSAWARE linker option
 - TSAWARE linker option
 ms.assetid: fe1c1846-de5b-4839-b562-93fbfe36cd29
-ms.openlocfilehash: 981158125cf978c2f685501117f95553df9c3c89
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 0b3fa8bcfd973949e73fdf701db2adb6c58be687
+ms.sourcegitcommit: 2f9ff2041d70c406df76c5053151192aad3937ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498195"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82587387"
 ---
 # <a name="tsaware-create-terminal-server-aware-application"></a>/TSAWARE (Terminal Sunucusu Algılayan Uygulama Oluştur)
 
@@ -36,13 +36,13 @@ Bir uygulama Terminal Server 'ı kullanıyorsa, bu, ıNı dosyalarını kullanma
 
 /T saware seçeneği, Windows ve konsol uygulamaları için varsayılan olarak etkindir. Bilgi için bkz. [/Subsystem](subsystem-specify-subsystem.md) ve [/Version](version-version-information.md) .
 
-/TSAWARE, sürücüler, VxDs veya dll 'Ler için geçerli değildir.
+/TSAWARE, sürücüler veya dll 'Ler için geçerli değildir.
 
 Bir uygulama/T saware ile bağlanmışsa, DUMPBIN [/Headers](headers.md) bu etkiye ilişkin bilgileri görüntüler.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
 1. **Bağlayıcı** klasörüne tıklayın.
 
