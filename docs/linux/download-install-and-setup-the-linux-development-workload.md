@@ -1,91 +1,91 @@
 ---
-title: Visual Studio'da C++ Linux iş yükünü yükleyin
-description: Visual Studio'da C++ için Linux iş yükünü niçin indirecek, yükleyip kuracağız.
-ms.date: 06/11/2019
+title: Visual Studio 'da C++ Linux iş yükünü yükler
+description: Visual Studio 'da C++ için Linux iş yükünü indirme, yükleme ve ayarlama.
+ms.date: 05/03/2020
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: 8e10521ab35f3d85ced8bffd771b4e101d4d4fe6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bc75610aaefe2a3bdd919cbc4dd81413202794c6
+ms.sourcegitcommit: 8a01ae145bc65f5bc90d6e47b4a1bdf47b073ee7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364337"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "82765753"
 ---
-# <a name="download-install-and-set-up-the-linux-workload"></a>Linux iş yükünü indirin, kurun ve ayarlayın
+# <a name="download-install-and-set-up-the-linux-workload"></a>Linux iş yükünü indirme, yükleme ve ayarlama
 
 ::: moniker range="vs-2015"
 
-Linux projeleri Visual Studio 2017 ve sonrası desteklenir.
+Linux projeleri Visual Studio 2017 ve üzeri sürümlerde desteklenir. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
-Uzak bir Linux sistemi, sanal makine veya [Linux için Windows Alt Sistemi](/windows/wsl/about)üzerinde yürüten C++ projeleri oluşturmak, bunları gerçekleştirmek ve hata ayıklamak için Windows'daki Visual Studio IDE'yi kullanabilirsiniz.
+Windows üzerinde Visual Studio IDE 'yi kullanarak, uzak bir Linux sisteminde, sanal makinede veya [Linux Için Windows alt sisteminde](/windows/wsl/about)yürütülen C++ projeleri oluşturabilir, düzenleyebilir ve hata ayıklaması yapabilirsiniz.
 
-Bir Visual Studio projesine dönüştürmek zorunda kalmadan CMake kullanan varolan kod tabanı üzerinde çalışabilirsiniz. Kod tabanınız çapraz platformsa, Visual Studio içinden hem Windows'u hem de Linux'u hedefleyebilirsiniz. Örneğin, Visual Studio'yu kullanarak Windows'da kodunuzu dikileyebilir, oluşturabilir ve hata ayıklayabilir, ardından Linux'un Linux ortamında oluşturması ve hata ayıklama sını sağlamak için projeyi hızla yeniden hedefleyebilirsiniz. Linux başlık dosyaları otomatik olarak yerel makinenize kopyalanır ve Visual Studio bunları tam IntelliSense desteği sağlamak için kullanır (Bildirim Tamamlama, Tanıma Git vb.).
+Visual Studio projesine dönüştürmek zorunda kalmadan CMake kullanan mevcut kod tabanınız üzerinde çalışabilirsiniz. Kod tabanınız platformlar arası ise, Visual Studio içinden hem Windows hem de Linux 'u hedefleyebilirsiniz. Örneğin, Visual Studio kullanarak Windows 'da kodunuzu düzenleyebilir, oluşturabilir ve hatalarını ayıklayabilirsiniz. Ardından bir Linux ortamında derlemek ve hata ayıklamak üzere Linux için projeyi hızlıca yeniden hedefleyin. Linux üst bilgi dosyaları yerel makinenize otomatik olarak kopyalanır. Visual Studio, tam IntelliSense desteği sağlamak için bunları kullanır (deyimin tamamlanması, tanıma git vb.).
 
-Bu senaryolardan herhangi biri için C++ iş **yüküne sahip Linux geliştirme** gereklidir.
+Bu senaryolardan herhangi biri için, C++ iş yüküyle **Linux geliştirme** gereklidir.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
-## <a name="visual-studio-setup"></a>Visual Studio kurulumu
+## <a name="visual-studio-setup"></a>Visual Studio Kurulumu
 
-1. Windows arama kutusuna "Visual Studio Installer" yazın:
+1. Windows Arama kutusuna "Visual Studio Yükleyicisi" yazın:
 
    ![Windows arama kutusu](media/visual-studio-installer-search.png)
 
-1. **Apps** sonuçlarının altındaki yükleyiciyi arayın ve çift tıklatın. Yükleyici **açıldığında, Değiştir'i**seçin ve ardından **İş Yükleri** **sekmesine** tıklayın. **Linux development with C++**
+1. **Uygulama** sonuçları altında yükleyiciyi bulun ve çift tıklatın. Yükleyici açıldığında, **Değiştir**' i seçin ve sonra **iş yükleri** sekmesine tıklayın. **diğer araç kümelerine** gidin ve C++ iş yüküyle **Linux geliştirmeyi** seçin.
 
-   ![Linux Geliştirme iş yükü için Visual C++](media/linuxworkload.png)
+   ![Linux'ta Geliştirme için Visual C++ iş yükü](media/linuxworkload.png)
 
-1. IoT veya gömülü platformları hedefliyorsanız, sağdaki **Yükleme ayrıntıları** bölmesine gidin. **C++ ile Linux geliştirme**altında, **İsteğe Bağlı Bileşenleri**genişletin ve ihtiyacınız olan bileşenleri seçin. Linux için CMake desteği varsayılan olarak seçilir.
+1. IoT veya katıştırılmış platformları hedefliyorsanız, sağdaki **Yükleme ayrıntıları** bölmesine gidin. **C++ Ile Linux geliştirme**altında, **isteğe bağlı bileşenler**' i genişletin ve ihtiyacınız olan bileşenleri seçin. Linux için CMake desteği varsayılan olarak seçilidir.
 
-1. Yüklemeye devam etmek için **Değiştir'i** tıklatın.
+1. Yüklemeye devam etmek için **Değiştir** 'e tıklayın.
 
 ## <a name="options-for-creating-a-linux-environment"></a>Linux ortamı oluşturma seçenekleri
 
-Zaten bir Linux makineniz yoksa, Azure'da bir Linux Sanal Makinesi oluşturabilirsiniz. Daha fazla bilgi için [Bkz. Quickstart: Azure portalında bir Linux sanal makinesi oluşturun.](/azure/virtual-machines/linux/quick-create-portal)
+Henüz bir Linux makineniz yoksa Azure 'da bir Linux sanal makinesi oluşturabilirsiniz. Daha fazla bilgi için bkz. [hızlı başlangıç: Azure Portal Linux sanal makinesi oluşturma](/azure/virtual-machines/linux/quick-create-portal).
 
-Windows 10'da, en sevdiğiniz Linux dağıtımını Linux için Windows Alt Sistemi'ne (WSL) yükleyebilir ve hedefleyebilirsiniz. Daha fazla bilgi için, [Windows 10 için Linux Yükleme Kılavuzu için Windows Alt Sistemi'ne](/windows/wsl/install-win10)bakın. Windows Mağazası'na erişemiyorsanız, [WSL dağıtım paketlerini el ile indirebilirsiniz.](/windows/wsl/install-manual) WSL kullanışlı bir konsol ortamıdır, ancak grafik uygulamalar için önerilmez.
+Windows 10 ' da, Linux (WSL) için Windows alt sistemine sahip en sevdiğiniz Linux 'u yükleyebilir ve hedefleyebilirsiniz. Daha fazla bilgi için bkz. [Windows 10 Için Linux Için Windows alt sistemi yükleme kılavuzu](/windows/wsl/install-win10). Windows Mağazası 'na erişemiyorsanız, [WSL 'nin geçmiş paketlerini el ile indirebilirsiniz](/windows/wsl/install-manual). WSL, uygun bir konsol ortamıdır, ancak grafik uygulamalar için önerilmez.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Visual Studio'daki Linux projeleri, uzak Linux sisteminize veya WSL'nize aşağıdaki bağımlılıkların yüklenmesini gerektirir:
+Visual Studio 'da Linux projeleri, uzak Linux sisteminize veya WSL 'ye aşağıdaki bağımlılıkların yüklenmesini gerektirir:
 
-- **Bir derleyici** - Visual Studio 2019 GCC ve [Clang](/cpp/build/clang-support-cmake?view=vs-2019)için out-of-the-box desteği vardır.
-- **gdb** - Visual Studio otomatik olarak Linux sisteminde gdb başlattı ve Linux üzerinde tam sadakat hata ayıklama deneyimi sağlamak için Visual Studio hata ayıklama ön ucunu kullanır.
-- **rsync** ve **zip** - rsync ve zip dahil Visual Studio IntelliSense tarafından kullanılmak üzere Windows dosya sistemine Linux sisteminden başlık dosyaları ayıklamak için izin verir.
-- **yapmak**
-- **openssh-server** (yalnızca uzak Linux sistemleri) - Visual Studio güvenli bir SSH bağlantısı üzerinden uzak Linux sistemlerine bağlanır.
-- **CMake** (Yalnızca CMake projeleri) - [Microsoft'un statik olarak bağlı CMake ikililerini Linux için](https://github.com/microsoft/CMake/releases)yükleyebilirsiniz.
-- **ninja-build** (Yalnızca CMake projeleri)- [Ninja](https://ninja-build.org/) Visual Studio 2019 sürüm 16.6 veya daha sonra Linux ve WSL yapılandırmaları için varsayılan jeneratördür.
+- **Derleyici** -Visual Studio 2019, GCC ve [Clang](/cpp/build/clang-support-cmake?view=vs-2019)için tam desteğe sahiptir.
+- **gdb** -Visual Studio, Linux sisteminde otomatik olarak gdb 'yi başlatır ve Linux üzerinde tam uygunlukta hata ayıklama deneyimi sağlamak Için Visual Studio hata ayıklayıcının ön sonunu kullanır.
+- **rsync** ve **ZIP** -rsync ve zip dahil, Visual Studio 'nun IntelliSense tarafından kullanılmak üzere Linux sisteminizden Windows dosya sistemine üst bilgi dosyalarını ayıklamasına olanak tanır.
+- **yapabilir**
+- **OpenSSH-Server** (yalnızca uzak Linux sistemleri)-Visual Studio, GÜVENLI bir SSH bağlantısı üzerinden uzak Linux sistemlerine bağlanır.
+- **CMake** (yalnızca CMake projeleri)- [Linux için Microsoft 'un statik bağlantılı CMake İkililerini](https://github.com/microsoft/CMake/releases)yükleyebilirsiniz.
+- **dokja-Build** (yalnızca CMake projeleri)- [Dokja](https://ninja-build.org/) , Visual Studio 2019 sürüm 16,6 veya sonraki sürümlerinde Linux ve WSL yapılandırmalarına yönelik varsayılan oluşturucu olur.
 
-Aşağıdaki komutlar clang yerine g++ kullandığınızı varsayar.
+Aşağıdaki komutlar Clang yerine g + + kullandığınızı varsayar.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Visual Studio'daki Linux projeleri, uzak Linux sisteminize veya WSL'nize aşağıdaki bağımlılıkların yüklenmesini gerektirir:
+Visual Studio 'da Linux projeleri, uzak Linux sisteminize veya WSL 'ye aşağıdaki bağımlılıkların yüklenmesini gerektirir:
 
-- **gcc** - Visual Studio 2017, GCC için hazır destek tespin.
-- **gdb** - Visual Studio otomatik olarak Linux sisteminde gdb başlattı ve Linux üzerinde tam sadakat hata ayıklama deneyimi sağlamak için Visual Studio hata ayıklama ön ucunu kullanır.
-- **rsync** ve **zip** - rsync ve zip dahil Visual Studio IntelliSense için kullanmak için Windows dosya sistemine Linux sisteminden başlık dosyaları ayıklamak için izin verir.
-- **yapmak**
-- **openssh-server** - Visual Studio güvenli bir SSH bağlantısı üzerinden uzak Linux sistemlerine bağlanır.
-- **CMake** (Yalnızca CMake projeleri) - [Microsoft'un statik olarak bağlı CMake ikililerini Linux için](https://github.com/microsoft/CMake/releases)yükleyebilirsiniz.
+- **GCC** -Visual Studio 2017, gcc için tam desteğe sahiptir.
+- **gdb** -Visual Studio, Linux sisteminde otomatik olarak gdb 'yi başlatır ve Linux üzerinde tam uygunlukta hata ayıklama deneyimi sağlamak Için Visual Studio hata ayıklayıcının ön sonunu kullanır.
+- **rsync** ve **ZIP** -rsync ve zip dahil, Visual Studio 'Nun IntelliSense için kullanılacak Windows dosya sistemine Linux sisteminizden başlık dosyalarını ayıklamasına olanak tanır.
+- **yapabilir**
+- **OpenSSH-Server** -Visual Studio, GÜVENLI bir SSH bağlantısı üzerinden uzak Linux sistemlerine bağlanır.
+- **CMake** (yalnızca CMake projeleri)- [Linux için Microsoft 'un statik bağlantılı CMake İkililerini](https://github.com/microsoft/CMake/releases)yükleyebilirsiniz.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-## <a name="linux-setup-ubuntu-on-wsl"></a>Linux kurulumu: Ubuntu WSL üzerinde
+## <a name="linux-setup-ubuntu-on-wsl"></a>Linux Kurulumu: WSL üzerinde Ubuntu
 
-WSL'yi hedefliyorsanız, oluşturmak ve hata ayıklamak için uzak bağlantı eklemenize veya SSH'yi yapılandırmaya gerek yoktur. **zip** ve **rsync** Intellisense desteği için Visual Studio ile Linux başlıkları otomatik senkronizasyon için gereklidir. Gerekli uygulamalar zaten yoksa, bunları aşağıdaki gibi yükleyebilirsiniz. **ninja-build** sadece CMake projeleri için gereklidir.
+WSL 'yi hedeflemek istediğinizde, uzak bir bağlantı eklemeniz veya SSH 'yi derlemek ve hata ayıklaması için yapılandırmanız gerekmez. IntelliSense desteği için Visual Studio ile Linux üstbilgilerinin otomatik eşitlenmesi için **zip** ve **rsync** gereklidir. **dokja-derleme** yalnızca CMake projeleri için gereklidir. Gerekli uygulamalar henüz yoksa, bu komutu kullanarak yükleyebilirsiniz:
 
 ```bash
 sudo apt-get install g++ gdb make ninja-build rsync zip
@@ -95,75 +95,69 @@ sudo apt-get install g++ gdb make ninja-build rsync zip
 
 ::: moniker range=">=vs-2017"
 
-## <a name="ubuntu-on-remote-linux-systems"></a>Uzak Linux sistemleri üzerinde Ubuntu
+## <a name="ubuntu-on-remote-linux-systems"></a>Uzak Linux sistemlerinde Ubuntu
 
-Hedef Linux sistemi **openssh-server,** **g++**, **gdb**, **ninja-build** (CMake projeleri sadece) olmalı ve yüklü **yapmak** ve ssh daemon çalışıyor olmalıdır. **zip** ve **rsync** Intellisense desteği için yerel makine ile uzak başlıkları otomatik senkronize için gereklidir. Bu uygulamalar zaten mevcut değilse, bunları aşağıdaki gibi yükleyebilirsiniz:
+Hedef Linux sisteminin **OpenSSH-Server**, **g + +**, **gdb** **ve yüklü olması** gerekir. **dokja-** yalnızca CMake projeleri için derleme gerekir. **SSH** arka plan programı çalışıyor olmalıdır. IntelliSense desteği için yerel makineli uzak üst bilgilerin otomatik eşitlenmesi için **zip** ve **rsync** gereklidir. Bu uygulamalar henüz yoksa, bunları aşağıdaki şekilde yükleyebilirsiniz:
 
-1. Linux bilgisayarınızdaki bir kabuk isteminde çalıştırın:
+1. Linux bilgisayarınızda bir kabuk isteminde şunu çalıştırın:
 
    ```bash
    sudo apt-get install openssh-server g++ gdb make ninja-build rsync zip
    ```
 
-   Sudo komutu nedeniyle kök parolanız istenebilir.  Eğer öyleyse, girin ve devam edin. Tamamlandıktan sonra, gerekli hizmetler ve araçlar yüklenir.
+   Sudo komutunu çalıştırmak için kök parolanız istenebilir. Bu durumda, girin ve devam edin. Tamamlandıktan sonra gerekli hizmetler ve araçlar yüklenir.
 
-1. Ssh hizmetinin Linux bilgisayarınızda çalıştırılarak çalıştırdığından emin olun:
+1. Çalıştıran SSH hizmetinin Linux bilgisayarınızda çalıştığından emin olun:
 
    ```bash
    sudo service ssh start
    ```
 
-   Bu hizmet başlar ve bağlantıları kabul etmeye hazır, arka planda çalışır.
+   Bu komut, hizmeti başlatır ve bağlantıları kabul etmeye yönelik olarak arka planda çalıştırır.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-## <a name="fedora-on-wsl"></a>Fedora WSL üzerinde
+## <a name="fedora-on-wsl"></a>WSL üzerinde Fedora
 
-Fedora **dnf** paket yükleyici kullanır. **g++** indirmek için , **gdb**, **yapmak**, **rsync**, **ninja-build**, ve **zip**, çalıştır:
+Fedora **DNF** paket yükleyicisini kullanır. **G + +**, **gdb**, **Make**, **rsync**, **dokja-Build**ve **zip**indirmek için şunu çalıştırın:
 
    ```bash
    sudo dnf install gcc-g++ gdb rsync ninja-build make zip
    ```
 
-**zip** ve **rsync** Intellisense desteği için Visual Studio ile Linux başlıkları otomatik senkronizasyon için gereklidir. **ninja-build** sadece CMake projeleri için gereklidir.
+IntelliSense desteği için Visual Studio ile Linux üstbilgilerinin otomatik eşitlenmesi için **zip** ve **rsync** gereklidir. **dokja-derleme** yalnızca CMake projeleri için gereklidir.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
-## <a name="fedora-on-remote-linux-systems"></a>Uzak Linux sistemlerinde Fedora
+## <a name="fedora-on-remote-linux-systems"></a>Uzak Linux sistemlerinde Fedora 'lar
 
-Fedora'yı çalıştıran hedef makine **dnf** paket yükleyicisini kullanır. **Openssh-server**indirmek için , **g++**, **gdb**, **yapmak**, **ninja-build**, **rsync**, ve **zip**, ve ssh daemon yeniden, bu talimatları izleyin. **ninja-build** sadece CMake projeleri için gereklidir.
+Fedora çalıştıran hedef makine **DNF** paket yükleyicisini kullanır. **OpenSSH-Server**, **g + +**, **gdb**, **Make**, **dokja-Build**, **rsync**ve **zip**indirmek ve ssh daemon 'u yeniden başlatmak için aşağıdaki yönergeleri izleyin. **dokja-derleme** yalnızca CMake projeleri için gereklidir.
 
-1. Linux bilgisayarınızdaki bir kabuk isteminde çalıştırın:
+1. Linux bilgisayarınızda bir kabuk isteminde şunu çalıştırın:
 
    ```bash
    sudo dnf install openssh-server gcc-g++ gdb ninja-build make rsync zip
    ```
 
-   Sudo komutu nedeniyle kök parolanız istenebilir.  Eğer öyleyse, girin ve devam edin. Tamamlandıktan sonra, gerekli hizmetler ve araçlar yüklenir.
+   Sudo komutunu çalıştırmak için kök parolanız istenebilir. Bu durumda, girin ve devam edin. Tamamlandıktan sonra gerekli hizmetler ve araçlar yüklenir.
 
-1. Ssh hizmetinin Linux bilgisayarınızda çalıştırılarak çalıştırdığından emin olun:
+1. Çalıştıran SSH hizmetinin Linux bilgisayarınızda çalıştığından emin olun:
 
    ```bash
    sudo systemctl start sshd
    ```
 
-   Bu hizmet başlar ve bağlantıları kabul etmeye hazır, arka planda çalışır.
-
-::: moniker-end
-
-::: moniker range="vs-2015"
-
-Linux C++ geliştirme desteği Visual Studio 2017 ve sonraki sürümlerinde kullanılabilir.
-
-::: moniker-end
+   Bu komut, hizmeti başlatır ve bağlantıları kabul etmeye yönelik olarak arka planda çalıştırır.
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
 Artık bir Linux projesi oluşturmaya veya açmaya ve hedef sistemde çalışacak şekilde yapılandırmaya hazırsınız. Daha fazla bilgi için bkz.
 
-- [Yeni bir Linux projesi oluşturun](create-a-new-linux-project.md)
+- [Yeni bir Linux projesi oluştur](create-a-new-linux-project.md)
 - [Linux CMake projesi yapılandırma](cmake-linux-project.md)
+
+::: moniker-end
