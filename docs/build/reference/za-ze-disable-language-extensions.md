@@ -18,44 +18,44 @@ helpviewer_keywords:
 - Disable Language Extensions compiler option
 - Ze compiler option [C++]
 ms.assetid: 65e49258-7161-4289-a176-7c5c0656b1a2
-ms.openlocfilehash: 1db1dbdba4829ccf939cdc4f07ccfefe2474a35d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a2584591f6ca22d6767a5c447ffb72bea0a78ea
+ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315891"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82825881"
 ---
 # <a name="za-ze-disable-language-extensions"></a>/Za, /Ze (Dil Uzantılarını Devre Dışı Bırak)
 
-**/Za** derleyici seçeneği devre dışı bırakır ve C için ANSI C89/ISO C90 ile uyumlu değil Microsoft uzantıları için hataları yayar. Kullanım dışı **/Ze** derleyici seçeneği Microsoft uzantıları sağlar. Microsoft uzantıları varsayılan olarak etkindir.
+**/Za** derleyici SEÇENEĞI, ANSI c89/ISO C90 ile uyumlu olmayan C 'ye Microsoft uzantılarına yönelik hataları devre dışı bırakır ve yayar. Kullanım dışı **/ze** derleyici seçeneği Microsoft uzantılarını sunar. Microsoft uzantıları varsayılan olarak etkinleştirilmiştir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Za**<br/>
+> **/Za**\
 > **/Ze**
 
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Kullanımını **/Za** zaman kodu derlendiğinde gibi C++ önerilmez. **/Ze** davranışını varsayılan olarak açık olduğundan seçeneği kullanım dışı. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. [kullanım dışı ve kaldırılan derleyici seçenekleri](compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options).
+> Kod C++ olarak derlendiğinde **/za** kullanılması önerilmez. **/Ze** seçeneği, davranışı varsayılan olarak açık olduğundan kullanım dışıdır. Kullanım dışı bırakılan derleyici seçeneklerinin bir listesi için bkz. [kullanım dışı ve kaldırılmış derleyici seçenekleri](compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options).
 
-Microsoft C/C++ derleyicisi, C kodu, derleme iki yolla destekler:
+Microsoft C/C++ derleyicisi, C kodunun derlemesini iki şekilde destekler:
 
-- Bir kaynak dosyası varsa derleyici C derleme modu varsayılan olarak kullanır. bir *.c* uzantısı veya [/Tc](tc-tp-tc-tp-specify-source-file-type.md) veya [/TC](tc-tp-tc-tp-specify-source-file-type.md) seçeneği belirtildi. C derleyicisi C diline yönelik Microsoft uzantıları varsayılan olarak etkinleştirir, C89/C90 derleyicisidir. Belirli uzantılar hakkında daha fazla bilgi için bkz. [C ve C++ için Microsoft Extensions](microsoft-extensions-to-c-and-cpp.md). Hem C derleme ve **/Za** seçeneği belirtilirse, C Derleyici uyumlu kesinlikle C89/C90 standart. Microsoft genişletilmiş anahtar sözcükleri basit tanımlayıcıları olarak değerlendirir, diğer Microsoft uzantılarını devre dışı bırakır ve otomatik olarak tanımlar derleyici [ \_ \_STDC\_ \_ ](../../preprocessor/predefined-macros.md) önceden tanımlanmış Makro C programları için.
+- Derleyici, bir kaynak dosyada *. c* uzantısı olduğunda veya [/TC](tc-tp-tc-tp-specify-source-file-type.md) veya [/TC](tc-tp-tc-tp-specify-source-file-type.md) seçeneği belirtildiğinde varsayılan olarak C derleme modunu kullanır. C derleyicisi, varsayılan olarak C diline Microsoft uzantıları sağlayan bir c89/C90 derleyicisidir. Belirli uzantılar hakkında daha fazla bilgi için bkz. [C ve C++ Için Microsoft uzantıları](microsoft-extensions-to-c-and-cpp.md). Hem C derlemesi hem de **/za** seçeneği belirtildiğinde, c derleyicisi kesinlikle c89/C90 standardına uygundur. Derleyici, Microsoft genişletilmiş anahtar sözcüklerini basit tanımlayıcılar olarak değerlendirir, diğer Microsoft uzantılarını devre dışı bırakır ve C programları için önceden tanımlanmış [ \_ \_stdc\_ ](../../preprocessor/predefined-macros.md) makrosunu otomatik olarak tanımlar.
 
-- Derleyici C++ derleme modunda C kodu olarak derleyebilirsiniz. Bu, davranıştır olmayan kaynak dosyaları için varsayılan bir *.c* uzantısı ve ne zaman [/Tp](tc-tp-tc-tp-specify-source-file-type.md) veya [/TP](tc-tp-tc-tp-specify-source-file-type.md) seçeneği belirtildi. C++ derleme modunda, derleyici standart C++ dahil ISO C99 ve C11 standartları bölümlerine destekler. Neredeyse tüm C kodu aynı zamanda geçerli C++ kodudur. C anahtar sözcükleri ve kod yapıları az sayıda C++ kodu geçerli değil veya c++'ta farklı şekilde yorumlanır. Derleyici, bu gibi durumlarda standart C++ göre davranır. C++ derleme modunda **/Za** seçeneği beklenmeyen davranışlara neden olabilir ve önerilmez.
+- Derleyici, C++ derleme modunda C kodu derleyebilir. Bu davranış, *. c* uzantısına sahip olmayan ve [/TP](tc-tp-tc-tp-specify-source-file-type.md) veya [/TP](tc-tp-tc-tp-specify-source-file-type.md) seçeneği belirtildiğinde kaynak dosyaları için varsayılan seçenektir. C++ derleme modunda, derleyici ISO C99 ve C11 standartlarının C++ standardına dahil olan parçalarını destekler. Neredeyse tüm C kodları da geçerli bir C++ kodudur. Az sayıda C anahtar sözcüğü ve kod yapıları geçerli C++ kodu değildir veya C++ ' da farklı şekilde yorumlanır. Derleyici, bu durumlarda C++ standardına göre davranır. C++ derleme modunda, **/za** seçeneği beklenmeyen davranışlara neden olabilir ve önerilmez.
 
-Diğer derleyici seçenekleri, derleyici standartlara uyumluluk nasıl sağlar? etkileyebilir. Belirli standart C ve C++ davranışı ayarları belirtmek daha fazla yolu için bkz [/Zc](zc-conformance.md) derleyici seçeneği. Ek C++ Standart uyumluluk ayarları için bkz [/ permissive-](permissive-standards-conformance.md) ve [/Std](std-specify-language-standard-version.md) derleyici seçenekleri.
+Diğer derleyici seçenekleri derleyicinin standartlara uygunluğu nasıl güvence altına almasını etkileyebilir. Belirli standart C ve C++ davranış ayarlarını belirtme yolları için [/ZC](zc-conformance.md) derleyici seçeneğine bakın. Ek C++ standart uyumluluk ayarları için [/Permissive-](permissive-standards-conformance.md) ve [/STD](std-specify-language-standard-version.md) derleyici seçeneklerine bakın.
 
-Visual C++ ile uyumluluk sorunları hakkında daha fazla bilgi için bkz. [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Visual C++ uygunluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Gezinti bölmesinde **yapılandırma özellikleri** > **C/C++** > **dil**.
+1. Gezinti bölmesinde, **yapılandırma özellikleri** > **C/C++** > **dili**' ni seçin.
 
-1. Değiştirme **dil uzantılarını devre dışı** özelliği.
+1. **Dil uzantılarını devre dışı bırak** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -63,7 +63,7 @@ Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableLangua
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](compiler-options.md)<br/>
+[Derleyici seçenekleri](compiler-options.md)<br/>
 [/Zc (Uyumluluk)](zc-conformance.md)<br/>
 [/permissive- (Standartlara uyumluluk)](permissive-standards-conformance.md)<br/>
 [/std (Dil Standart Sürümünü Belirt)](std-specify-language-standard-version.md)<br/>

@@ -13,32 +13,32 @@ helpviewer_keywords:
 - shift operators [C++]
 - operators [C++], shift
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
-ms.openlocfilehash: fd048bedc45b14bdc7b83120ad039296b54aa850
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 2020c2dbbf8ff91ee692366f55c836be0b3dddb0
+ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222054"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82825921"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>Sol kaydırma ve sağ kaydırma işleçleri (&gt; &gt; ve &lt; &lt;)
 
-Bit düzeyinde kaydırma işleçleri olan sağa kaydırma işleci (**&gt;&gt;**), bitlerini shift_expression *shift-expression* sağa ve sola kaydırma işleci (**&lt; &lt;**), bitlerini shift_expression *shift-expression* sol. <sup>1</sup>
+Bit düzeyinde kaydırma işleçleri sağ**&gt;** SHIFT işleçtir (), bu, Shift-ifadesinin bitlerini sağa *shift-expression* ve sola kaydırma işleci (**&lt;**) ile sola kayar. *shift-expression* <sup>1</sup>
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *Shift-expression* `<<` *additive-expression*
-> *shift-expression* `>>` *additive-expression*
+> *Shift-Expression* `<<` *toplamalı ifadesi*\
+> *Shift-Expression* `>>` *toplamalı ifadesi*
 
 ## <a name="remarks"></a>Açıklamalar
 
 > [!IMPORTANT]
-> Windows üzerinde aşağıdaki açıklamalar ve örnekler x86 ve x64 mimarileri için geçerlidir. Sola kaydırma ve sağa kaydırma işleçleri uygulaması üzerinde Windows ARM cihazları için önemli ölçüde farklıdır. Daha fazla bilgi için "Kaydırma işleçleri" bölümüne bakın. [Hello ARM](https://blogs.msdn.com/b/vcblog/archive/2012/10/25/hello-arm-exploring-undefined-unspecified-and-implementation-defined-behavior-in-c.aspx) blog gönderisi.
+> Aşağıdaki açıklamalar ve örnekler, Windows için x86 ve x64 mimarileri için geçerlidir. Sol SHIFT ve sağ kaydırma işleçlerinin uygulanması, ARM cihazlarda Windows için önemli ölçüde farklıdır. Daha fazla bilgi için [Merhaba ARM](https://blogs.msdn.com/b/vcblog/archive/2012/10/25/hello-arm-exploring-undefined-unspecified-and-implementation-defined-behavior-in-c.aspx) blog gönderisinin "kaydırma işleçleri" bölümüne bakın.
 
 ## <a name="left-shifts"></a>Sola Kaydırmalar
 
-Sola kaydırma işleci neden olan bitler *shift-expression* sola tarafından belirtilen konum sayısına göre kaydırılmasına *additive-expression*. Kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. Sola kaydırma mantıksal bir kaydırmadır (imza biti dahil, sona kaydırılan bitler atılır). Bit düzeyinde kaydırma türleri hakkında daha fazla bilgi için bkz: [bit düzeyinde kaydırmalar](https://en.wikipedia.org/wiki/Bitwise_shift).
+Sol SHIFT işleci, *SHIFT ifadesindeki* bitlerin, *DITIVE ifadesi*tarafından belirtilen konum sayısına göre sola kaydırmasına neden olur. Kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. Sola kaydırma mantıksal bir kaydırmadır (imza biti dahil, sona kaydırılan bitler atılır). Bit düzeyinde vardiyaların türleri hakkında daha fazla bilgi için bkz. [bit düzeyinde vardiyalar](https://en.wikipedia.org/wiki/Bitwise_shift).
 
-Aşağıdaki örnek, işaretsiz sayıların kullanıldığı sola kaydırma işleçlerini gösterir. Bu örnek değeri bir bit kümesi olarak temsil eden bitlere ne olduğunu göstermektedir. Daha fazla bilgi için [bitset sınıfı](../standard-library/bitset-class.md).
+Aşağıdaki örnek, işaretsiz sayıların kullanıldığı sola kaydırma işleçlerini gösterir. Bu örnek değeri bir bit kümesi olarak temsil eden bitlere ne olduğunu göstermektedir. Daha fazla bilgi için bkz. [bitset Class](../standard-library/bitset-class.md).
 
 ```cpp
 #include <iostream>
@@ -61,7 +61,7 @@ int main() {
 }
 ```
 
-İşaretli bir sayıyı sola kaydırırsanız, imza biti etkilenir ve sonuç tanımsız olur. Aşağıdaki örnek, bir 1 bit imza konumuna sola kaydırılacak olduğunda ne olacağını gösterir.
+İşaretli bir sayıyı sola kaydırırsanız, imza biti etkilenir ve sonuç tanımsız olur. Aşağıdaki örnek, bir 1 bit, işaret biti konumuna sola kaydırdığınızda ne olacağını gösterir.
 
 ```cpp
 #include <iostream>
@@ -86,10 +86,10 @@ int main() {
 
 ## <a name="right-shifts"></a>Sağa Kaydırmalar
 
-Sağa kaydırma işleci bit deseninde neden *shift-expression* sağ tarafından belirtilen konum sayısına göre kaydırılmasına *additive-expression*. İşaretsiz sayılar için, kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. İşaretli sayılar için, imza biti boşaltılmış bit konumlarını doldurmak için kullanılır. Başka bir deyişle, sayı pozitif ise 0 kullanılır ve sayı negatif ise 1 kullanılır.
+Sağ SHIFT işleci, *SHIFT ifadesindeki* bit deseninin, *eklenebilir ifade*tarafından belirtilen konum sayısına göre sağa kaydırmasına neden olur. İşaretsiz sayılar için, kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. İşaretli sayılar için, imza biti boşaltılmış bit konumlarını doldurmak için kullanılır. Başka bir deyişle, sayı pozitif ise 0 kullanılır ve sayı negatif ise 1 kullanılır.
 
 > [!IMPORTANT]
-> İmzalı bir negatif sayının sağ kaydırmasının sonucu uygulama bağımlıdır. Ancak Microsoft C++ derleyicinin kullandığı imza biti boşaltılmış bit konumlarını doldurmak için diğer uygulamalar da bunu bir garanti yoktur.
+> İmzalı bir negatif sayının sağ kaydırmasının sonucu uygulama bağımlıdır. Microsoft C++ derleyicisi, karıştırılmış bit konumlarını doldurmaları için işaret bitini kullansa da, diğer uygulamaların da bunu yapacağının garantisi yoktur.
 
 Bu örnek, işaretsiz sayıların kullanıldığı sağa kaydırma işleçlerini gösterir:
 
@@ -174,9 +174,9 @@ int main() {
 
 ## <a name="shifts-and-promotions"></a>Kaydırmalar ve Yükseltmeler
 
-Bir kaydırma işlecinin her iki tarafındaki ifadelerin de tamsayı türünde olması gerekir. İntegral yükseltmeler açıklanan kurallara göre gerçekleştirilir [standart dönüştürmeler](standard-conversions.md). Sonucun türü yükseltilen tür ile aynıdır *shift-expression*.
+Bir kaydırma işlecinin her iki tarafındaki ifadelerin de tamsayı türünde olması gerekir. Integral yükseltmeler, [Standart dönüşümlerde](standard-conversions.md)açıklanan kurallara göre gerçekleştirilir. Sonucun türü, yükseltilen *kaydırma ifadesinin*türüyle aynı olur.
 
-Aşağıdaki örnekte, türünde bir değişken **char** için yükseltilmiş bir **int**.
+Aşağıdaki örnekte, **char** türünde bir değişken bir **int**'e yükseltilir.
 
 ```cpp
 #include <iostream>
@@ -197,7 +197,7 @@ int main() {
 
 ## <a name="additional-details"></a>Ek Ayrıntılar
 
-Bir kaydırma işleminin sonucu tanımsızdır *additive-expression* negatif veya *additive-expression* büyüktür veya eşittir bit sayısı kadar additive  *Shift-expression*. Hiçbir kaydırma işlemi gerçekleştirilmez *additive-expression* 0'dır.
+Ek *ifade* negatifse veya (yükseltilen) *SHIFT ifadesinde*bit sayısından büyük veya buna *eşitse, bir* vardiya işleminin sonucu tanımsız olur. *Toplamsal ifade* 0 ise hiçbir vardiya işlemi gerçekleştirilmez.
 
 ```cpp
 #include <iostream>
@@ -222,11 +222,11 @@ int main() {
 
 ## <a name="footnotes"></a>Dipnotlar
 
-<sup>1</sup> C ++ 11 ISO belirtimindeki (INCITS/ISO/IEC 14882-2011[2012]), bölüm 5.8.2 ve 5.8.3.kaydırma. kaydırma işleçlerinin açıklaması aşağıdadır
+<sup>1</sup> C++ 11 ISO belirtiminde (INCITS/ISO/IEC 14882-2011 [2012]), 5.8.2 ve 5.8.3 bölümlerine kaydırma işleçleri açıklaması aşağıda verilmiştir.
 
-Değerini `E1 << E2` olduğu `E1` sola kaydırılacak `E2` bit konumlarıdır; Boşaltılan bitler sıfır dolguludur. Varsa `E1` bir işaretsiz türe sahipse sonuç değeri **E1 × 2**<sup>**E2**</sup>, indirgenmiş değerden en fazla sonuç türü içinde gösterilebilir. Aksi takdirde `E1` işaretli bir türe ve negatif olmayan değer vardır ve **E1 × 2**<sup>**E2** </sup> sonuç türü, karşılık gelen işaretsiz türünde temsil edilebilir ise Sonuç türüne dönüştürülür, bu değer sonuç değeri olan; Aksi durumda davranış tanımsız olur.
+Değeri `E1 << E2` `E1` sola kaydırılan `E2` bit konumlarla; karıştırılmış bitler sıfır doldurulmuştur. İmzasız `E1` bir tür varsa, sonucun değeri **E1 × 2**<sup>**E2**</sup>, en az mod ise sonuç türündeki maksimum değer gösterilebilir tablosundan bir daha fazla. Aksi halde, `E1` imzalı bir tür ve negatif olmayan bir değer varsa ve **E1 × 2**<sup>**E2**</sup> , sonuç türünün karşılık gelen imzasız türünde gösterilebilir ise, bu değer sonuç türüne dönüştürülür, sonuçta elde edilen değerdir; Aksi takdirde, davranış tanımsızdır.
 
-Değerini `E1 >> E2` olduğu `E1` sağa kaydırılacak `E2` bit konumlarıdır. Varsa `E1` bir işaretsiz türe sahipse veya `E1` işaretli bir türe ve negatif olmayan değere sahip, sonucun değeri sayının tamsayı kısmını **E1/2**<sup>**E2** </sup>. Varsa `E1` işaretli bir türe ve negatif bir değere sahipse, sonuç değeri uygulama tanımlanır.
+Değeri `E1 >> E2` , `E1` sağa kaydırılan `E2` bit konumlara sahiptir. `E1` İmzasız bir tür varsa veya imzalı bir `E1` türe ve negatif olmayan bir değere sahipse, sonucun değeri **E1/2**<sup>**E2**</sup>bölümünün integral kısmıdır. İmzalı `E1` bir tür ve negatif bir değer varsa, elde edilen değer uygulama tanımlı olur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

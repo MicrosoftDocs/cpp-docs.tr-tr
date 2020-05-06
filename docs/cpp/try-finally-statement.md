@@ -20,39 +20,39 @@ helpviewer_keywords:
 - __leave keyword [C++], try-finally statement
 - structured exception handling [C++], try-finally
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
-ms.openlocfilehash: a463b807d39addfdaa64b829720266bf0502fa7e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 17f7fb415303ab74f588a2205bc9430127091e96
+ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188083"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82825902"
 ---
 # <a name="try-finally-statement"></a>try-finally Deyimi
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Aşağıdaki sözdizimi, **try-finally** ifadesini açıklar:
 
-> **\_\_dene**<br/>
-> {<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;//korunan kod<br/>
-> }<br/>
-> **\_\_son**<br/>
-> {<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;//sonlandırma kodu<br/>
+> **\_\_almaya**<br/>
+> {\
+> &nbsp;&nbsp;&nbsp;&nbsp;korunan kod \
+> }\
+> **\_\_son olarak**\
+> {\
+> &nbsp;&nbsp;&nbsp;&nbsp;sonlandırma kodu \
 > }
 
 ## <a name="grammar"></a>Dilbilgisi
 
 *try-finally-deyimin*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **\_\_** *bileşik-deyimin*\_\_**son** *Birleşik-deyiminizi* deneyin
+&nbsp;&nbsp;&nbsp;&nbsp;bileşik- *deyimin* *compound-statement* ** \_ \_** son Birleşik ifadesini deneyin ** \_ \_**
 
-**Try-finally** , bir kod bloğunun yürütülmesi kesintiye uğradığında, hedef uygulamaların C++ Temizleme kodunu yürütmeyi garanti etmesini sağlayan C ve dillerin Microsoft uzantısıdır. Temizleme, bellek ayırmayı, dosyaları kapatmayı ve dosya tutamaçlarını serbest bırakmayı, bu görevlerden oluşur. **Try-finally** ekstresi, özellikle de zamanından önce geri dönebileceği bir hata için bir denetim yapıldığı birkaç yere sahip yordamlar için yararlıdır.
+**Try-finally** , C ve C++ dillerinin bir kod bloğunun yürütülmesi kesintiye uğradığında temizleme kodunun yürütülmesini Garantilemesini sağlayan bir Microsoft uzantısıdır. Temizleme, bellek ayırmayı, dosyaları kapatmayı ve dosya tutamaçlarını serbest bırakmayı, bu görevlerden oluşur. **Try-finally** ekstresi, özellikle de zamanından önce geri dönebileceği bir hata için bir denetim yapıldığı birkaç yere sahip yordamlar için yararlıdır.
 
-İlgili bilgi ve kod örneği için bkz. [try-except deyimleri](../cpp/try-except-statement.md). Genel olarak yapılandırılmış özel durum işleme hakkında daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md). /CLI ile C++yönetilen uygulamalarda özel durumları işleme hakkında daha fazla bilgi için bkz. [/clr altında özel durum işleme](../extensions/exception-handling-cpp-component-extensions.md).
+İlgili bilgi ve kod örneği için bkz. [try-except deyimleri](../cpp/try-except-statement.md). Genel olarak yapılandırılmış özel durum işleme hakkında daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md). C++/CLı ile yönetilen uygulamalarda özel durumları işleme hakkında daha fazla bilgi için bkz. [/clr altında özel durum işleme](../extensions/exception-handling-cpp-component-extensions.md).
 
 > [!NOTE]
-> Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. Programlar C++ için, C++ özel durum işleme mekanizmasını ([try, catch ve throw](../cpp/try-throw-and-catch-statements-cpp.md) deyimlerini) kullanmanız önerilir.
+> Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. C++ programları için, C++ özel durum işleme mekanizmasını ([try, catch ve throw](../cpp/try-throw-and-catch-statements-cpp.md) deyimlerini) kullanmanız önerilir.
 
 **__Try** yan tümcesinden sonraki bileşik ifade, korunan bölümdür. **__Finally** yan tümcesinden sonraki bileşik ifade sonlandırma işleyicisidir. İşleyici, korunan bölüm bir özel durum (olağan dışı sonlandırma) veya standart Fall (normal sonlandırma) tarafından çıkış yapılıp olmamasından bağımsız olarak, korunan bölüme çıkıldığında yürütülen bir eylem kümesini belirtir.
 
@@ -72,9 +72,9 @@ Denetim, basit sıralı yürütme (karşı) ile bir **__try** ifadesine ulaşır
 Sonlandırma Işleyicisi yürütme sırası
 
 > [!NOTE]
-> Try-finally davranışı,, gibi **son**kullanılması desteklenen diğer dillerden farklıdır C#.  Tek bir **__try** , **__finally** ve **__except**olamaz, ancak ikisini birden içeremez.  Her ikisi birlikte kullanılacaksa, bir dış try-except ifadesinin INNER try-finally ifadesini içermesi gerekir.  Her bir bloğun ne zaman yürütüldüğünü belirten kurallar da farklıdır.
+> Try-finally davranışı, C# gibi **son olarak**kullanılması desteklenen diğer dillerden farklıdır.  Tek bir **__try** , **__finally** ve **__except**olamaz, ancak ikisini birden içeremez.  Her ikisi birlikte kullanılacaksa, bir dış try-except ifadesinin INNER try-finally ifadesini içermesi gerekir.  Her bir bloğun ne zaman yürütüldüğünü belirten kurallar da farklıdır.
 
-Önceki sürümlerle uyumluluk için **_try**, **_finally**ve **_leave** **__try**, **__finally**ve **__Leave** Için eş anlamlılardır. [/za \(dil uzantılarını devre dışı bırakma](../build/reference/za-ze-disable-language-extensions.md)
+Önceki sürümlerle uyumluluk için, **_try**, **_finally**ve **_leave** **__try**, **__finally**ve **__leave** için eş anlamlılardır, [/za \(Disable dil uzantıları devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtilmemiş
 
 ## <a name="the-__leave-keyword"></a>__leave Anahtar Sözcüğü
 
@@ -96,5 +96,5 @@ Bir işlem bir **try-finally** ifadesinin ortasında sonlandırılabilmesi için
 
 [Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)<br/>
 [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
 [Sonlandırma-Işleyici sözdizimi](/windows/win32/Debug/termination-handler-syntax)

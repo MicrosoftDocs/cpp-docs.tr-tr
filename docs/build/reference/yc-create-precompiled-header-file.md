@@ -15,62 +15,62 @@ helpviewer_keywords:
 - /Yc compiler option [C++]
 - Yc compiler option [C++]
 ms.assetid: 47c2e555-b4f5-46e6-906e-ab5cf21f0678
-ms.openlocfilehash: 0d902b9ebb35bc7f267cb67861b7be0763f378a6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 71a05df3adc74edfd814bb6dc15121e4a343dc4d
+ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316710"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82825762"
 ---
 # <a name="yc-create-precompiled-header-file"></a>/Yc (Önceden Derlenmiş Başlık Dosyası Oluştur)
 
-Derleme belli bir noktadaki durumunu gösteren önceden derlenmiş üst bilgi (.pch) dosyasını oluşturmak için derleyicinin sağlar.
+Derleyiciye belirli bir noktada derlemenin durumunu temsil eden önceden derlenmiş üst bilgi (. pch) dosyası oluşturmasını söyler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> __/Yc__<br/>
-> __/Yc__*dosya adı*
+> __/YC__\
+> __/Rivc__*dosya adı*
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Bağımsız Değişkenler
 
-*Dosya adı*<br/>
-Bir üstbilgi (.h) dosyası belirtir. Bu bağımsız değişken kullanıldığında, derleyici ve .h dosyası olan tüm kodu derler.
+*filename*<br/>
+Üst bilgi (. h) dosyasını belirtir. Bu bağımsız değişken kullanıldığında, derleyici. h dosyasını ve dahil olmak üzere tüm kodu derler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zaman **/Yc** belirtilen bağımsız değişken derleyici, temel kaynak dosyasının veya temel dosya noktasına kadar tüm kodu derler burada bir [hdrstop](../../preprocessor/hdrstop.md) yönergesi gerçekleşir. Farklı dosya adını kullanarak belirtmediğiniz sürece elde edilen .pch dosyası aynı temel ada, temel kaynak dosyası sahiptir. **hdrstop** pragma veya **/FP** seçeneği.
+**/Rivc** bir bağımsız değişken olmadan belirtildiğinde, derleyici tüm kodu temel kaynak dosyanın sonuna kadar veya bir [hdrstop](../../preprocessor/hdrstop.md) yönergesinin gerçekleştiği taban dosyasındaki noktaya derler. **Hdrstop** pragmasını veya **/FP** seçeneğini kullanarak farklı bir dosya adı belirtmediğiniz sürece, elde edilen. pch dosyası temel kaynak dosyanız ile aynı temel ada sahiptir.
 
-Önceden derlenmiş kod ile belirtilen dosyanın temel adı oluşturulan bir ada sahip bir dosyaya kaydedilir **/Yc** seçeneği ve .pch uzantısı. Ayrıca [FP (adı. PCH dosyası)](fp-name-dot-pch-file.md) seçeneği önceden derlenmiş üst bilgi dosyası için bir ad belirtin.
+Önceden derlenmiş kod, **/i** ve. pch uzantısıyla belirtilen dosyanın temel adından oluşturulmuş bir ada sahip bir dosyaya kaydedilir. [/FP (adı) da kullanabilirsiniz. PCH dosyası)](fp-name-dot-pch-file.md) seçeneği, ön derlenmiş üstbilgi dosyası için bir ad belirtmek üzere.
 
-Kullanırsanız __/Yc__*filename*, derleyici ve belirtilen dosya ile kullanmak için olan tüm kodu derler [/Yu (önceden derlenmiş üst bilgi dosyasını kullanma)](yu-use-precompiled-header-file.md) seçeneği.
+__/YC__*dosya adı*kullanırsanız, derleyici tüm kodu, [/yu (önceden derlenmiş üst bilgi dosyası kullan)](yu-use-precompiled-header-file.md) seçeneğiyle birlikte, sonraki kullanım için, belirtilen dosya dahil olmak üzere derler.
 
-Varsa seçenekleri __/Yc__*filename* ve __/Yu__*filename* aynı komut satırında oluşur ve her ikisi de başvuru veya yaptığından, aynı dosya adına __/Yc__*filename* önceliklidir. Bu özellik, derleme görevleri dosyalarını yazımını basitleştirir.
+__/Yıc__*filename* ve __/yu__*Dosya* adı seçenekleri aynı komut satırında gerçekleşse ve her iki başvuru ya da bir deyişle, aynı dosya adı __/rivc__*filename* öncelik kazanır. Bu özellik, makefiles 'ın yazılmasını basitleştirir.
 
-Önceden derlenmiş üst bilgiler hakkında daha fazla bilgi için bkz:
+Önceden derlenmiş üstbilgiler hakkında daha fazla bilgi için bkz.
 
-- [/Y (Önceden Derlenmiş Üst Bilgiler)](y-precompiled-headers.md)
+- [/Y (Önceden Derlenmiş Başlıklar)](y-precompiled-headers.md)
 
-- [Önceden Derlenmiş Üst Bilgi Dosyaları](../creating-precompiled-header-files.md)
+- [Ön derlenmiş üstbilgi dosyaları](../creating-precompiled-header-files.md)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. .Cpp dosyası seçin. .Cpp dosyası gerekir #include önceden derlenmiş üst bilgileri içerip .h dosyası. Projenin **/Yc** ayarı dosya düzeyinde geçersiz kılınabilir.
+1. Bir. cpp dosyası seçin. . Cpp dosyası, ön derlenmiş üstbilgi bilgilerini içeren. h dosyasını #include olmalıdır. Projenin **/Yıc** ayarı dosya düzeyinde geçersiz kılınabilir.
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Açık **yapılandırma özellikleri**, **C/C++**, **önceden derlenmiş üst bilgiler** özellik sayfası.
+1. **Yapılandırma özellikleri**, **C/C++**, **önceden derlenmiş üstbilgiler** özellik sayfasını açın.
 
-1. Değiştirme **önceden derlenmiş üst bilgi** özelliği.
+1. **Ön derlenmiş üstbilgi** özelliğini değiştirin.
 
-1. Dosya adı ayarlamak için değişiklik **önceden derlenmiş üst bilgi dosyası** özelliği.
+1. Dosya adını ayarlamak için **ön derlenmiş üstbilgi dosyası** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PrecompiledHeaderThrough%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UsePrecompiledHeader%2A>.
+- Bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PrecompiledHeaderThrough%2A> . <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UsePrecompiledHeader%2A>ve.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kodu göz önünde bulundurun:
+Aşağıdaki kodu inceleyin:
 
 ```cpp
 // prog.cpp
@@ -81,10 +81,10 @@ Aşağıdaki kodu göz önünde bulundurun:
 // ...
 ```
 
-Bu kod komutu ile derlenmiş zaman `CL /YcMYAPP.H PROG.CPP`, derleyicinin tüm AFXWIN.h, RESOURCE.h, ön işleme kaydeder ve önceden derlenmiş üst bilgi dosyasında MYAPP.h MYAPP.pch çağrılır.
+Bu kod komutla `CL /YcMYAPP.H PROG.CPP`derlendiğinde, DERLEYICI, MyApp. pch adlı önceden derlenmiş bir üstbilgi dosyasında Afxwin. h, Resource. h ve MyApp. h için tüm ön işleme kaydeder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
 [MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
-[Önceden Derlenmiş Üst Bilgi Dosyaları](../creating-precompiled-header-files.md)
+[Ön derlenmiş üstbilgi dosyaları](../creating-precompiled-header-files.md)
