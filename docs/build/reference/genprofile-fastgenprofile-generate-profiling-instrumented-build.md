@@ -1,5 +1,5 @@
 ---
-title: / GENPROFILE, fastgenprofıle (profil oluşturma üret)
+title: /GENPROFILE,/FASTGENPROFıLE (profil oluşturma belgelenmiş derleme oluştur)
 ms.date: 03/14/2018
 f1_keywords:
 - GENPROFILE
@@ -10,59 +10,59 @@ helpviewer_keywords:
 - GENPROFILE
 - FASTGENPROFILE
 ms.assetid: deff5ce7-46f5-448a-b9cd-a7a83a6864c6
-ms.openlocfilehash: cf6327b175344f1e2914792eb47a4838e544ea24
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 19ddf56d92cc2d8fbbfaf635c8e1602443e35b5b
+ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292217"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82825799"
 ---
-# <a name="genprofile-fastgenprofile-generate-profiling-instrumented-build"></a>/ GENPROFILE, fastgenprofıle (profil oluşturma üret)
+# <a name="genprofile-fastgenprofile-generate-profiling-instrumented-build"></a>/GENPROFILE,/FASTGENPROFıLE (profil oluşturma belgelenmiş derleme oluştur)
 
-Profil temelli iyileştirme (PGO) desteklemek için bağlayıcı tarafından bir .pgd dosyası oluşturulmasını belirtir. **/ GENPROFILE** ve **fastgenprofıle** farklı varsayılan parametreleri kullanın. Kullanım **/genprofıle** duyarlık hızı ve bellek kullanımı profil oluşturma sırasında yerine boyuta ayrıcalık. Kullanım **fastgenprofıle** duyarlılık üzerinde daha küçük bellek kullanımı ve hız yerine boyuta ayrıcalık.
+Profil temelli iyileştirme (PGO) desteği için bağlayıcı tarafından bir. pgd dosyasının üretilmesini belirtir. **/Genprofile** ve **/fastgenprofile** farklı varsayılan parametreler kullanır. Profil oluşturma sırasında hız ve bellek kullanımının doğruluğunu tercih etmek için **/Genprofile** kullanın. Daha küçük bellek kullanımını ve Duyarlığın hızını artırmak için **/Fastgenprofile** kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ GENPROFILE**[**:**{[**COUNTER32**|**COUNTER64**] | [ **EXACT**|**NOEXACT**] | **MEMMAX =**_#_|**MEMMIN =**_#_| [ **Yolu**|**NOPATH** ] | [ **TRACKEH** |**NOTRACKEH** ] | **PGD =**_filename_}]<br/>
-> **/ FASTGENPROFILE**[**:**{[**COUNTER32**|**COUNTER64**] | [ **EXACT**|**NOEXACT**] | **MEMMAX =**_#_|**MEMMIN =**_#_| [ **Yolu**|**NOPATH** ] | [ **TRACKEH** |**NOTRACKEH** ] | **PGD =**_filename_}]
+> **/Genprofile**[**:**{[**COUNTER32**|**COUNTER64**] | [ **tam kesin**|**] |** **MEMMAX =**_#_|**memmin =**_#_| [**yol**|**NOPATH** ] | [**TRACKEH** |**NOTRACKEH** ] | **PGD =**_filename_}] \
+> **/Fastgenprofile**[**:**{[**COUNTER32**|**COUNTER64**] | [ **tam kesin**|**] |** **MEMMAX =**_#_|**memmin =**_#_| [**yol**|**NOPATH** ] | [**TRACKEH** |**NOTRACKEH** ] | **PGD =**_filename_}]
 
-### <a name="arguments"></a>Arguments
+### <a name="arguments"></a>Bağımsız Değişkenler
 
-Aşağıdaki bağımsız değişken için belirtilebilir **/genprofıle** veya **fastgenprofıle**. Burada listelenen bağımsız değişkenleri bir çubukla ayrılan (**|**) karakter karşılıklı olarak birbirini dışlar. Virgül kullanın (**,**) seçenekleri ayırmak için karakter.
+Aşağıdaki bağımsız değişkenlerden biri **/Genprofile** veya **/fastgenprofile**olarak belirtilebilir. Burada bir kanal (**|**) karakteriyle ayrılmış olarak listelenen bağımsız değişkenler birbirini dışlıyor. Seçenekleri ayırmak için virgül (**,**) karakterini kullanın.
 
 **COUNTER32** &#124; **COUNTER64**<br/>
-Kullanma **COUNTER32** 32-bit araştırma sayaçları kullanımını belirlemek için ve **COUNTER64** 64-bit araştırma sayaçları belirtmek için. Belirttiğinizde **/genprofıle**, varsayılan **COUNTER64**. Belirttiğinizde **fastgenprofıle**, varsayılan **COUNTER32**.
+32 bitlik araştırma sayaçlarının kullanımını belirtmek için **COUNTER32** kullanın ve 64-bit araştırma sayaçlarını belirtmek için **COUNTER64** . **/Genprofile**belirttiğinizde varsayılan değer **COUNTER64**' dir. **/Fastgenprofile**belirttiğinizde varsayılan değer **COUNTER32**' dir.
 
-**EXACT** &#124; **NOEXACT**<br/>
-Kullanım **EXACT** araştırmaları için iş parçacığı açısından güvenli birbirine kenetlenmiş artışlarla belirtmek için. **NOEXACT** araştırmaları için korumasız artırma işlemleri belirtir. Varsayılan değer **NOEXACT**.
+**Tam** &#124; **NOTAM**<br/>
+Yoklamalar için iş parçacığı güvenli karşılıklı kilitli artışlarını belirtmek için **tam** kullanın. **NOTAM** , yoklamalar için korumasız artırma işlemleri belirtir. Varsayılan değer **NOTAM**' dır.
 
-**MEMMAX**=*değer*, **MEMMIN**=*değeri*<br/>
-Kullanım **MEMMAX** ve **MEMMIN** bellekte eğitim verileri maksimum ve minimum rezervasyon boyutunu belirtmek için. Bayt cinsinden ayrılacak bellek miktarını değerdir. Varsayılan olarak, bu değerleri, iç bir buluşsal yöntem tarafından belirlenir.
+**MEMMAX**=*değeri*, **memmin**=*değeri*<br/>
+Bellekte eğitim verileri için maksimum ve en düşük ayırma boyutunu belirtmek için **MEMMAX** ve **memmin** kullanın. Değer, ayrılan bellek miktarıdır (bayt cinsinden). Varsayılan olarak, bu değerler dahili bir buluşsal yöntem tarafından belirlenir.
 
-**PATH**  &#124; **NOPATH** <br/>
-Kullanım **yolu** PGO sayaçları her benzersiz yolu bir işlev için ayrı bir kümesini belirtmek için. Kullanım **NOPATH** sayaçları her işlev için yalnızca bir kümesini belirtmek için. Belirttiğinizde **/genprofıle**, varsayılan **yolu** . Belirttiğinizde **fastgenprofıle**, varsayılan **NOPATH** .
+**Yol** &#124; **NOPATH** <br/>
+Bir işleve yönelik her benzersiz yol için ayrı bir PGO sayaç kümesi belirtmek üzere **yolunu** kullanın. Her bir işlev için yalnızca bir sayaç kümesi belirtmek üzere **NOPATH** kullanın. **/Genprofile**belirttiğinizde, varsayılan **yoldur** . **/Fastgenprofile**belirttiğinizde, varsayılan olarak **NOPATH** olur.
 
-**TRACKEH** &AMP;#124; **NOTRACKEH** <br/>
-Eğitim sırasında özel durumlar oluşturulduğunda bir doğru sayısı korumak için ek sayaçları kullanılıp kullanılmayacağını belirtir. Kullanım **TRACKEH** ek sayaçları için bir tam sayı belirtmek için. Kullanma **NOTRACKEH** tek özel durum kullanmayan kod sayaçları belirtmek için işleme ya da özel durumlarını araştırma, eğitim senaryolarını karşılaşılmadı.  Belirttiğinizde **/genprofıle**, varsayılan **TRACKEH** . Belirttiğinizde **fastgenprofıle**, varsayılan **NOTRACKEH** .
+**Trackingkeh** &#124; **NOTRACKEH** <br/>
+Eğitim sırasında özel durumlar oluştuğunda doğru bir sayı tutmak için ek sayaçların kullanılıp kullanılmayacağını belirtir. Tam sayı için ek sayaçlar belirtmek üzere **TRACKEH** kullanın. Özel durum işleme kullanmayan veya eğitim senaryolarınızda özel durumlarla karşılaşmayan kod için tek sayaçlar belirtmek üzere **NOTRACKEH** kullanın.  **/Genprofile**belirttiğinizde, varsayılan olarak **TRACKEH** olur. **/Fastgenprofile**belirttiğinizde, varsayılan olarak **NOTRACKEH** olur.
 
 **PGD**=*dosya adı*<br/>
-.Pgd dosyası için bir temel dosya adı belirtir. Varsayılan olarak bağlayıcı bir .pgd uzantısı ile temel bir yürütülebilir görüntü dosya adı kullanır.
+. Pgd dosyası için bir taban dosya adı belirtir. Varsayılan olarak, bağlayıcı temel yürütülebilir görüntü dosyası adını. pgd uzantısıyla kullanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Genprofıle** ve **fastgenprofıle** profil temelli iyileştirme (PGO) için uygulama eğitim desteklemek için gereken profil oluşturma araçları dosyasını oluşturmak için bağlayıcı seçenekleri söyleyin. Bu seçenekler, Visual Studio 2015'te yenidir. Kullanım dışı olan bu seçenekleri tercih **/LTCG:PGINSTRUMENT**, **/PGD** ve **/POGOSAFEMODE** seçenekleri ve **PogoSafeMode**,  **Vcprofıle_alloc_scale** ve **vcprofıle_path** ortam değişkenleri. Uygulama eğitim tarafından oluşturulan profil bilgilerini gerçekleştirmek için giriş bütün program iyileştirmeleri derleme sırasında hedef olarak kullanılır. Derlemeler ve uygulama eğitim sırasında performansı için çeşitli profil oluşturma özellikleri denetlemek için ek seçenekler ayarlayabilirsiniz. Tarafından belirtilen varsayılan Seçenekler **/genprofıle** özellikle büyük, karmaşık çok iş parçacıklı uygulamalar için en doğru sonuçlar verir. **Fastgenprofıle** seçeneği, daha küçük bellek Ayak izi ve eğitim, doğruluktan sırasında daha hızlı performans için varsayılan değerleri farklı kullanır.
+**/Genprofile** ve **/fastgenprofile** seçenekleri bağlayıcıya, profil temelli iyileştirme (PGO) için uygulama eğitimini desteklemek üzere gereken profil oluşturma izleme dosyasını oluşturmasını söyler. Bu seçenekler, Visual Studio 2015 ' de yenidir. Bu seçenekleri kullanım dışı **/LTCG: PGıNSTRUMENT**, **/PGD** ve **/POGOSAFEMODE** options ve **POGOSAFEMODE**, **VCPROFILE_ALLOC_SCALE** ve **VCPROFILE_PATH** ortam değişkenlerine tercih edin. Uygulama eğitimi tarafından oluşturulan profil oluşturma bilgileri, derlemeler sırasında hedeflenen tam program iyileştirmeleri gerçekleştirmek için giriş olarak kullanılır. Uygulama eğitimi ve derlemeler sırasında performans için çeşitli profil oluşturma özelliklerini denetlemek üzere ek seçenekler ayarlayabilirsiniz. **/Genprofile** tarafından belirtilen varsayılan seçenekler, özellikle büyük ve karmaşık çok iş parçacıklı uygulamalar için en doğru sonuçları verir. **/Fastgenprofile** seçeneği, düşük bellek kaplama ve eğitim sırasında daha hızlı performans için farklı varsayılanlar kullanır, doğruluk masrafında.
 
-Profil oluşturma bilgileri yakalanmıyor kullanarak derledikten sonra izleme eklenmiş uygulama çalıştırdığınızda **/genprofıle** , **fastgenprofıle**. Bu bilgiler, belirttiğiniz zaman yakalanır [/USEPROFILE](useprofile.md) bağlayıcı seçeneği, profil oluşturma gerçekleştirmek için adım ve en iyi duruma getirilmiş yapı adımının yol göstermesi için kullanılır. Uygulamanızı geliştirmek nasıl daha fazla bilgi ve toplanan verileri hakkında ayrıntılı bilgi için bkz: [permutasyonları iyileştirmeleri](../profile-guided-optimizations.md).
+**/Fastgenprofile**' in **/GENPROFILE** kullanılarak oluşturulduktan sonra, bir profil oluşturma bilgileri, Araçlı uygulamayı çalıştırdığınızda yakalanır. Bu bilgiler, profil oluşturma adımını gerçekleştirmek için [/Useprofile](useprofile.md) bağlayıcı seçeneğini belirttiğinizde ve ardından iyileştirilmiş derleme adımına kılavuzluk etmek için kullanılırsa yakalanır. Uygulamanızı ve ayrıntıları toplanan verilerle eğitme hakkında daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md).
 
-De belirtmeniz gerekir **/LTCG** belirttiğinizde **/genprofıle** veya **fastgenprofıle**.
+**/Genprofile** veya **/Fastgenprofile**belirttiğinizde, **/LTCG** de belirtmeniz gerekir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfasını seçin.
 
-1. Girin **/genprofıle** veya **fastgenprofıle** seçenekleri ve bağımsız değişkenleriyle **ek seçenekler** kutusu. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
+1. **Ek seçenekler** kutusuna **/Genprofile** veya **/fastgenprofile** seçeneklerini ve bağımsız değişkenlerini girin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -72,4 +72,4 @@ De belirtmeniz gerekir **/LTCG** belirttiğinizde **/genprofıle** veya **fastge
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
 [MSVC Bağlayıcı Seçenekleri](linker-options.md)<br/>
-[/LTCG (Bağlama Zamanı Kodu Oluşturma)](ltcg-link-time-code-generation.md)<br/>
+[/LTCG (bağlama zamanı kodu oluşturma)](ltcg-link-time-code-generation.md)<br/>

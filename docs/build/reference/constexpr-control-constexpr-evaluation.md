@@ -1,5 +1,5 @@
 ---
-title: /constexpr (constexpr değerlendirmesini Denetle)
+title: /constexpr (Constexpr değerlendirmesini denetle)
 ms.date: 08/15/2017
 f1_keywords:
 - /constexpr
@@ -9,44 +9,44 @@ helpviewer_keywords:
 - -constexpr control constexpr evaluation [C++]
 - constexpr control constexpr evaluation [C++]
 ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
-ms.openlocfilehash: 178acc548fb9c89dcfde104d2a12d85637440e28
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d3f33a64dcebfc40778f81354cb5067a5239ace
+ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294258"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82825597"
 ---
-# <a name="constexpr-control-constexpr-evaluation"></a>/constexpr (constexpr değerlendirmesini Denetle)
+# <a name="constexpr-control-constexpr-evaluation"></a>/constexpr (Constexpr değerlendirmesini denetle)
 
-Kullanım **/constexpr** denetim parametreleri için derleyici seçenekleri **constexpr** derleme zamanında değerlendirme.
+Derleme zamanında **constexpr** değerlendirmesinin parametrelerini denetlemek için **/constexpr** derleyici seçeneklerini kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/constexpr:depth**<em>N</em>
->  **/constexpr:backtrace**<em>N</em>
->  **/constexpr:steps**<em>N</em>
+> **/constexpr: derinlik**<em>N</em>\
+> **/constexpr: backtrace**<em>N</em>\
+> **/constexpr: adım**<em>N</em>
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Bağımsız Değişkenler
 
-**Derinlik**<em>N</em> özyinelemeli derinliğini sınırlamak **constexpr** işlev çağrısı için *N* düzeyleri. Varsayılan değer 512'dır.
+**derinlik**<em>n</em> özyinelemeli **constexpr** işlevi çağırma derinliğini *N* düzeylere sınırlayın. Varsayılan değer 512 ' dir.
 
-**backtrace**<em>N</em> kadar Göster *N* **constexpr** değerlendirmeleri tanılama. Varsayılan değer 10'dur.
+**backtrace**<em>n</em> tanılamalarda en fazla *N* **constexpr** değerlendirmesi görüntüleyin. Varsayılan değer 10 ' dur.
 
-**adımları**<em>N</em> sonlandırma **constexpr** değerlendirmesinden sonra *N* adımları. Varsayılan değer 100. 000 ' dir.
+**adım**<em>n adımdan</em> sonra **constexpr** değerlendirmesini *N* sonlandırın. Varsayılan değer 100.000 ' dir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Constexpr** derleyici seçenekleri denetimi, derleme zamanı değerlendirmesi **constexpr** ifadeler. Derleyici, üzerinde çok fazla zaman harcama önlemek için değerlendirme adımlar, özyineleme düzeyi ve backtrace derinliği denetlenir **constexpr** değerlendirme. Daha fazla bilgi için **constexpr** dil öğesi için bkz: [constexpr (C++)](../../cpp/constexpr-cpp.md).
+**/Constexpr** derleyici seçenekleri, **constexpr** ifadelerinin derleme zamanı değerlendirmesini denetler. Derleyicinin **constexpr** değerlendirmesinde çok fazla zaman harcamasını engellemek için değerlendirme adımları, özyineleme düzeyleri ve geri izleme derinliği denetlenir. **Constexpr** dil öğesi hakkında daha fazla bilgi için bkz. [constexpr (C++)](../../cpp/constexpr-cpp.md).
 
-**/Constexpr** seçeneklerdir Visual Studio 2015'te sonraki sürümlerinde kullanılabilir.
+**/Constexpr** seçenekleri Visual Studio 2015 ' den başlayarak kullanılabilir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenizin açın **özellik sayfaları** iletişim kutusu.
+1. Projenizin **Özellik sayfaları** iletişim kutusunu açın.
 
-2. Altında **yapılandırma özellikleri**, genişletme **C/C++** klasörü seçin **komut satırı** özellik sayfası.
+2. **Yapılandırma özellikleri**altında **C/C++** klasörünü genişletin ve **komut satırı** özellik sayfasını seçin.
 
-3. Tüm girin **/constexpr** derleyici seçenekleri **ek seçenekler** kutusu. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.
+3. **Ek seçenekler** kutusuna herhangi bir **/constexpr** derleyici seçeneği girin. Değişikliklerinizi kaydetmek için **Tamam ' ı** veya **Uygula** ' yı seçin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

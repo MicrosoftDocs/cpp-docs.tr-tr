@@ -10,41 +10,42 @@ helpviewer_keywords:
 - /Fe compiler option [C++]
 - Fe compiler option [C++]
 ms.assetid: 49f594fd-5e94-45fe-a1bf-7c9f2abb6437
-ms.openlocfilehash: 5901ef1997cfea84c97b6d91b30335ff7dbc1d9f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0bd8f3a96555cc29d06f74fb44a73bbed32889b
+ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292621"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82825584"
 ---
 # <a name="fe-name-exe-file"></a>/Fe (EXE Dosyasını Adlandır)
 
-Bir ad ve .exe dosyası veya DLL derleyici tarafından oluşturulan bir dizini belirtir.
+Derleyici tarafından oluşturulan. exe dosyası veya DLL için bir ad ve dizin belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/FE**[_pathname_] **/Fe:** _yol adı_
+> **/Fe**[_yol adı_] \
+> **/Fe:** _yol adı_
 
-### <a name="arguments"></a>Arguments
+### <a name="arguments"></a>Bağımsız Değişkenler
 
-*yol adı*<br/>
-Göreli veya mutlak yolunu ve temel dosya adı veya göreli veya mutlak yol bir dizin ya da oluşturulan yürütülebilir dosya için kullanılacak temel dosya adı.
+*PathName*<br/>
+Göreli veya mutlak yol ve temel dosya adı ya da bir dizinin göreli ya da mutlak yolu ya da oluşturulan yürütülebilir dosya için kullanılacak taban dosya adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Fe** seçeneği, çıkış dizini, çıkış yürütülebilir adı veya her ikisi de oluşturulan yürütülebilir dosyanın belirtmenize olanak sağlar. Varsa *pathname* biten bir yol ayırıcı (**&#92;**), yalnızca çıkış dizini belirtmek için kabul edilir. Aksi halde, son bileşeni *pathname* çıkış dosyası taban adı ve geri kalanı kullanılan *pathname* çıktı dizini belirtir. Varsa *pathname* herhangi bir yol ayırıcıları yok. geçerli dizinde çıkış dosyası adını belirtmek için kabul edilir. *Pathname* çift tırnak içine alınmalıdır (**"**), boşluklar gibi kısa bir yol olamaz herhangi bir karakter içeriyorsa, karakter veya yol bileşenleri sekiz karakterden daha uzun uzun genişletilmiş.
+**/Fe** seçeneği, oluşturulan yürütülebilir dosya için çıkış dizinini, çıkış yürütülebilir adını veya her ikisini belirtmenizi sağlar. Yol *adı* bir yol ayırıcısıyla (**&#92;**) sonlanıyorsa, yalnızca çıkış dizinini belirtmek kabul edilir. Aksi takdirde, *yol adının* son bileşeni çıkış dosyası temel adı olarak kullanılır ve geri kalan *yol* , çıkış dizinini belirtir. Yol *adının* herhangi bir yol ayırıcısı yoksa, geçerli dizinde çıkış dosyası adının belirtilmesi varsayılır. Boşluk, genişletilmiş karakterler veya sekiz karakterden uzun yol bileşenleri gibi kısa bir yolda yer alan bir karakter içeriyorsa, *yol adı* çift tırnak (**"**) içine alınmalıdır.
 
-Zaman **/Fe** seçeneği belirtilmezse veya bir dosya açıldığında temel adı belirtilmedi *pathname*, derleyici çıktı dosyasının temel belirtilen ilk kaynak ya da nesne dosyası adını kullanarak varsayılan bir ad sağlar. komut satırını ve uzantısı .exe veya .dll üzerinde.
+**/Fe** seçeneği belirtilmediğinde veya *PathName*öğesinde bir dosya taban adı belirtilmediğinde, derleyici çıkış dosyasına komut satırında belirtilen ilk kaynak veya nesne dosyasının temel adını ve. exe veya. dll uzantısını kullanarak varsayılan bir ad verir.
 
-Belirtirseniz [/c (derleme olmadan bağlamayı)](c-compile-without-linking.md) seçeneği **/Fe** hiçbir etkisi olmaz.
+[/C (bağlama olmadan Derle)](c-compile-without-linking.md) seçeneğini belirtirseniz, **/Fe** hiçbir etkiye sahip değildir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Açık **yapılandırma özellikleri** > **bağlayıcı** > **genel** özellik sayfası.
+1. **Yapılandırma özellikleri** > **Bağlayıcısı** > **genel** özellik sayfasını açın.
 
-1. Değiştirme **çıkış dosyası** özelliği. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
+1. **Çıkış dosyası** özelliğini değiştirin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -52,7 +53,7 @@ Belirtirseniz [/c (derleme olmadan bağlamayı)](c-compile-without-linking.md) s
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki komut satırını derler ve geçerli dizindeki tüm C kaynak dosyalarının bağlar. Elde edilen çalıştırılabilir dosyayı PROCESS.exe adlı ve "C:\Users\User Name\repos\My Project\bin" dizininde oluşturulur.
+Aşağıdaki komut satırı, geçerli dizindeki tüm C kaynak dosyalarını derler ve bağlar. Elde edilen yürütülebilir dosya, PROCESS. exe olarak adlandırılır ve "C:\Users\User \ Kullanıcı adı" dizininde oluşturulur.
 
 ```
 CL /Fe"C:\Users\User Name\repos\My Project\bin\PROCESS" *.C
@@ -60,7 +61,7 @@ CL /Fe"C:\Users\User Name\repos\My Project\bin\PROCESS" *.C
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki komut satırı yürütülebilir bir dosyada oluşturur `C:\BIN` geçerli dizin ilk kaynak dosyası olarak aynı temel ada sahip:
+Aşağıdaki komut satırı, geçerli dizindeki ilk kaynak dosyayla `C:\BIN` aynı temel adı taşıyan bir yürütülebilir dosya oluşturur:
 
 ```
 CL /FeC:\BIN\ *.C
@@ -71,4 +72,4 @@ CL /FeC:\BIN\ *.C
 [Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
 [MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
 [MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
-[Yol Adını Belirtme](specifying-the-pathname.md)<br/>
+[Yol adını belirtme](specifying-the-pathname.md)<br/>
