@@ -29,7 +29,7 @@ ken into two or more pieces."
 
 Dize bitiştirme, bir satırdan daha uzun dizeler girmek için ters eğik çizginin ardından yeni satır karakteri kullandığınız her yerde kullanılabilir.
 
-Değişmez değer bir dize içinde yeni bir satırı zorlamak için yeni satır kaçış dizisini girin (**\n**) gibi kopuk satırı istediğiniz dizedeki bir noktada:
+Bir dize sabit değeri içinde yeni bir satırı zorlamak için, satırın üzerine kopmasını istediğiniz yere aşağıdaki gibi yeni bir satır kaçış sırası (**\n**) girin:
 
 ```
 "Enter a number between 1 and 100\nOr press Return"
@@ -42,13 +42,13 @@ printf_s ( "This is the first half of the string, "
            "this is the second half ") ;
 ```
 
-Dizenin her bölümü çift tırnak işareti içine alındığı sürece, bölümler bitiştirilir ve tek bir dize olarak çıkarılır. Bu birleştirme derleme tarafından belirtilen olay dizisine göre sistemdeki [çeviri aşamaları](../preprocessor/phases-of-translation.md).
+Dizenin her bölümü çift tırnak işareti içine alındığı sürece, bölümler bitiştirilir ve tek bir dize olarak çıkarılır. Bu birleştirme, [Çeviri aşamaları](../preprocessor/phases-of-translation.md)tarafından belirtilen derleme sırasında olay dizisine göre oluşur.
 
 ```
 "This is the first half of the string, this is the second half"
 ```
 
-Yalnızca beyaz boşluk ile ayrılan iki farklı dize sabit değeri olarak başlatılan bir dize işaretçisi, tek bir dize olarak depolanır (işaretçiler açıklanmıştır [işaretçi bildirimleri](../c-language/pointer-declarations.md)). Aşağıdaki örnekte olduğu gibi düzgün bir şekilde başvurulduğunda, sonuç önceki örnekle aynı olur:
+Yalnızca boşluk ile ayrılmış iki farklı dize değişmez değeri olarak başlatılan bir dize işaretçisi, tek bir dize olarak saklanır (işaretçiler [Işaretçi bildirimlerinde](../c-language/pointer-declarations.md)açıklanmaktadır). Aşağıdaki örnekte olduğu gibi düzgün bir şekilde başvurulduğunda, sonuç önceki örnekle aynı olur:
 
 ```
 char *string = "This is the first half of the string, "

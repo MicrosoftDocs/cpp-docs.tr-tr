@@ -16,66 +16,66 @@ ms.locfileid: "62232158"
 ---
 # <a name="pointer-declarations"></a>İşaretçi Bildirimleri
 
-A *işaretçi bildirimi* işaretçi değişkeninin adları ve değişkenin işaret ettiği nesnenin türünü belirtir. Bir işaretçi olarak bildirilen bir değişken, bir bellek adresi tutar.
+*İşaretçi bildirimi* bir işaretçi değişkenini adlandırır ve değişkenin işaret ettiği nesnenin türünü belirtir. İşaretçi olarak belirtilen bir değişken bir bellek adresini tutar.
 
 ## <a name="syntax"></a>Sözdizimi
 
 *bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İşaretçi*<sub>iyileştirilmiş</sub> *doğrudan bildirimcisi*
+&nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
 
 *doğrudan bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**(** *bildirimci* **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **[** *sabit-ifade*<sub>iyileştirilmiş</sub> **]**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre türü listesi* **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**
+&nbsp;&nbsp;&nbsp;&nbsp;*Direct-declarator* **[** *sabit ifade*<sub>katılımı</sub> **]**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Direct-declarator* **(** *parametre-tür-listesi* **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Direct-declarator* **(** *tanımlayıcı listesi*<sub>opt</sub> **)**
 
-*İşaretçi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong> *tür niteleyici listesi*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong> *tür niteleyici listesi*<sub>iyileştirilmiş</sub> *işaretçi*
+*işaretçi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong>*tür niteleyicisi-List*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong>*tür niteleyicisi-liste*<sub>opt</sub> *işaretçisi*
 
-*tür niteleyici listesi*:<br/>
+*tür niteleyicisi-Listele*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyici listesi* *tür niteleyicisi*
+&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi-liste* *tür niteleyicisi*
 
-*Tür tanımlayıcısı* verir olabilen herhangi temel nesnesi, yapı veya birleşim türü türü. İşaretçi değişkenler, İşlevler, diziler ve diğer işaretçilerin da işaret edebilir. (Bildirme ve daha karmaşık işaretçi türleri yorumlama hakkında daha fazla bilgi için bkz [daha karmaşık Bildirimcileri yorumlama](../c-language/interpreting-more-complex-declarators.md).)
+*Tür belirleyicisi* , nesne türünü verir; bu, herhangi bir temel, yapı veya birleşim türü olabilir. İşaretçi değişkenleri Ayrıca işlevler, diziler ve diğer işaretçileri işaret edebilir. (Daha karmaşık işaretçi türlerini bildirme ve yorumlama hakkında daha fazla bilgi için, [daha karmaşık Bildirimcilerin yorumlanması](../c-language/interpreting-more-complex-declarators.md)bölümüne bakın.)
 
-Yaparak *tür tanımlayıcısı* **void**, işaretçi başvurduğu türü belirtimi erteleyebilirsiniz. Böyle bir öğe olarak belirtilen bir "işaretçisine **void**" ve olarak yazılan `void *`. Bildirilen bir değişken için bir işaretçi olarak *void* herhangi bir türde bir nesneye işaret etmek için kullanılabilir. Ancak, işaret ettiği nesnenin veya işaretçinin üzerinde çoğu işlemi gerçekleştirmek için işaret ettiği tür açıkça her işlem için belirtilmelidir. (Türündeki değişkenler **char** <strong>\*</strong> ve türü **void** <strong>\*</strong> olmadan bir tür atama ile uyumlu olan Cast.) Bu tür dönüştürme bir tür ataması gerçekleştirilebilir (bkz [tür atama dönüştürmeleri](../c-language/type-cast-conversions.md) daha fazla bilgi için).
+*Tür belirleyicisi* **void**yaparak, işaretçinin başvurduğu türün belirtimini erteleyebilirsiniz. Böyle bir öğe " **void**işaretçisi" olarak adlandırılır ve olarak `void *`yazılır. *Void* işaretçisi olarak belirtilen bir değişken, herhangi bir türdeki bir nesneyi işaret etmek için kullanılabilir. Ancak, işaretçi üzerinde veya işaret ettiği nesne üzerinde birçok işlemi gerçekleştirmek için, işaret ettiği türün her işlem için açıkça belirtilmesi gerekir. ( **Char** <strong>\*</strong> türü ve **void** <strong>\*</strong> türü değişkenler, tür atama olmadan atama uyumludur.) Bu tür dönüştürme bir tür cast ile gerçekleştirilebilir (daha fazla bilgi için bkz. [tür dönüştürme dönüştürmeleri](../c-language/type-cast-conversions.md) .).
 
-*Tür niteleyici* olabilir **const** veya **geçici**, veya her ikisini de. Bunlar, sırasıyla, program tarafından işaretçisi değiştirilemez belirtin (**const**), veya işaretçi de avustralya'dan arama program kontrolü bazı işlem tarafından değiştirilebilecek (**geçici**). (Bkz [tür niteleyicileri](../c-language/type-qualifiers.md) hakkında daha fazla bilgi için **const** ve **geçici**.)
+*Tür niteleyicisi* **const** veya **volatile**ya da her ikisi olabilir. Bunlar sırasıyla, işaretçinin programın kendisi (**const**) tarafından değiştirilemeyeceğini veya işaretçinin, programın denetimi (**geçici**) dışında bazı işlemler tarafından meşru bir şekilde değiştirilmesini belirtir. ( **Const** ve **volatile**hakkında daha fazla bilgi Için bkz. [Tür niteleyicileri](../c-language/type-qualifiers.md) .)
 
-*Bildirimci* can ve değişken adları içeren bir tür değiştiricisi. Örneğin, varsa *bildirimci* bir dizisine bir işaretçi olarak değiştirilmişse bir dizi, işaretçi türü temsil eder.
+*Bildirimci* , değişkeni adlandırır ve bir tür değiştiricisi içerebilir. Örneğin, *bildirimci* bir diziyi temsil ediyorsa, işaretçinin türü dizi işaretçisi olacak şekilde değiştirilir.
 
-Yapı, birleşim veya numaralandırma türü tanımlamadan önce bir yapı, birleşim veya numaralandırma türü için bir işaretçi bildirebilirsiniz. İşaretçi, örnekte gösterildiği gibi yapı veya birleşim etiketini kullanarak bildirin. Derleyici yapı veya birleşim işaretçi değişkeninin için alan ayırmak için boyutu bilmeniz gerekmez çünkü bu tür bildirimleri izin verilir.
+Yapı, birleşim veya numaralandırma türünü tanımladıktan önce bir yapı, birleşim veya numaralandırma türüne yönelik bir işaretçi bildirebilirsiniz. Aşağıdaki örneklerde gösterildiği gibi, yapıyı veya UNION etiketini kullanarak işaretçiyi bildirirsiniz. Derleyicinin, işaretçi değişkeni için alan ayırmak üzere yapının veya birleşimin boyutunu bilmesi gerekmiyorsa bu tür bildirimlere izin verilir.
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekler, işaretçi bildirimleri gösterir.
+Aşağıdaki örneklerde işaretçi bildirimleri gösterilmektedir.
 
 ```
 char *message; /* Declares a pointer variable named message */
 ```
 
-*İleti* sahip bir değişken işaretçisi işaret **char** türü.
+*İleti* işaretçisi, **char** türünde bir değişkene işaret eder.
 
 ```
 int *pointers[10];  /* Declares an array of pointers */
 ```
 
-*İşaretçileri* sahip 10 öğe dizisi; her öğeye sahip bir değişken işaretçisi **int** türü.
+*İşaretçiler* dizisinde 10 öğe vardır; her öğe, **int** türünde bir değişkene yönelik bir işaretçidir.
 
 ```
 int (*pointer)[10]; /* Declares a pointer to an array of 10 elements */
 ```
 
-*İşaretçi* 10 öğe olan bir dizi değişkeni işaret eder. Bu dizinin her öğesinde **int** türü.
+*İşaretçi* değişkeni 10 öğe içeren bir diziye işaret eder. Bu dizideki her öğe için **int** türü vardır.
 
 ```
 int const *x;      /* Declares a pointer variable, x,
                       to a constant value */
 ```
 
-İşaretçi *x* farklı bir işaret edecek şekilde değiştirilebilir **int** değeri, ancak değeri için BT noktaları değiştirilemez.
+*X* işaretçisi, farklı bir **int** değerine işaret etmek üzere değiştirilebilir, ancak bu değer, işaret ettiği değer değiştirilemez.
 
 ```
 const int some_object = 5 ;
@@ -85,13 +85,13 @@ int volatile *const z = &some_object;
 int *const volatile w = &some_object;
 ```
 
-Değişken *y* bu bildirimlerinde için sabit bir işaretçi olarak bildirilen bir **int** değeri. İşaret için değer değiştirilebilir, ancak işaretçi her zaman aynı konuma işaret etmelidir: adresini *fixed_object*. Benzer şekilde, *z* sabit bir işaretçi olduğu halde işaret edecek şekilde de bildirilen bir **int** değeri program tarafından değiştirilemez. Ek tanımlayıcısı **geçici** rağmen belirten değeri **const int** işaret ettiği *z* değiştirilemez program tarafından yasal olabilir programın aynı anda çalışan bir işlem tarafından değiştirildi. Bildirimi *w* programı işaret değerini değiştiremez ve program işaretçi değiştiremezsiniz belirtir.
+Bu bildirimlerden *y* değişkeni, bir **int** değere sabit bir işaretçi olarak bildirilmiştir. İşaret ettiği değer değiştirilebilir, ancak işaretçinin kendisi her zaman aynı konuma işaret etmelidir: *fixed_object*adresi. Benzer şekilde, *z* sabit bir işaretçidir, ancak değeri program tarafından değiştirilemeyen bir **int** 'e işaret etmek üzere de tanımlanır. Ek tanımlayıcı **geçici** bir deyişle, *z* tarafından işaret edilen **const int** değeri program tarafından değiştirilemiyorsa, meşru bir şekilde programla aynı şekilde çalışan bir işlem tarafından değiştirilebilir. *W* bildirimi programın işaret ettiği değeri değiştiremez ve programın işaretçiyi değiştiremez.
 
 ```
 struct list *next, *previous; /* Uses the tag for list */
 ```
 
-Bu örnek iki işaretçi değişkeni bildirir *sonraki* ve *önceki*, yapı türüne işaret *listesi*. Bu bildirim tanımı önce görünebilir *listesi* yapı türü (sonraki örneğe bakın), sürece *listesi* bildirimiyle aynı görünürlük türü tanımına sahip.
+Bu örnek, yapı türü *listesini*işaret eden *Next* ve *Previous*olmak üzere iki işaretçi değişkeni bildirir. *Liste türü tanımı* bildirimle aynı görünürlüğe sahip olduğu sürece, bu bildirim *liste* yapı türü tanımından önce görünebilir (sonraki örneğe bakın).
 
 ```
 struct list
@@ -102,7 +102,7 @@ struct list
 } line;
 ```
 
-Değişken *satırı* adlı yapı türüne sahip *listesi*. *Listesi* yapı türüne sahip üç üye: ilk üye işaretçisi olan bir **char** değerdir, ikinci bir **int** değer ve üçüncü bir işaretçidir başka bir *listesi* yapısı.
+Değişken *çizgisi* , *list*adlı yapı türüne sahiptir. *Liste* yapısı türü üç üyeye sahiptir: ilk üye bir **char** değeri işaretçisidir, ikincisi bir **int** değeridir ve üçüncüsü ise başka bir *liste* yapısına yönelik bir işaretçidir.
 
 ```
 struct id
@@ -112,7 +112,7 @@ struct id
 } record;
 ```
 
-Değişken *kayıt* yapı türüne sahip *kimliği*. Unutmayın *sağlayıcı adı* adlı başka bir yapı türü için bir işaretçi olarak bildirilen *adı*. Bu bildirim önce görünebilir *adı* türü tanımlanmıştır.
+Değişken *kaydının* yapı türü *kimliği*vardır. *Pname* 'in *Name*adlı başka bir yapı türünün işaretçisi olarak bildirildiği unutulmamalıdır. Bu bildirim *ad* türü tanımlanmadan önce görünebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

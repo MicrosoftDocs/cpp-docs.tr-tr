@@ -14,22 +14,22 @@ ms.locfileid: "62158479"
 ---
 # <a name="side-effects"></a>Yan Etkiler
 
-Dil belirli bir değerlendirme sırasını garanti eder, ifadelerin değerlendirilme sırasını belirli bir uygulama tarafından dışında tanımlanmış (açıklandığı şekilde [öncelik ve sipariş, değerlendirme](../c-language/precedence-and-order-of-evaluation.md)). Örneğin, aşağıdaki işlev çağrılarında yan etkileri gerçekleşir:
+İfadelerin değerlendirmesi sırası belirli bir uygulama tarafından tanımlanır. Bu, dilin belirli bir değerlendirme sırasını garanti eder ( [Öncelik ve değerlendirme sırasıyla](../c-language/precedence-and-order-of-evaluation.md)özetlenmiştir). Örneğin, aşağıdaki işlev çağrılarında yan etkileri oluşur:
 
 ```
 add( i + 1, i = j + 2 );
 myproc( getc(), getc() );
 ```
 
-Bir işlev çağrısının bağımsız değişkenler herhangi bir sırayla değerlendirilir. İfade `i + 1` önce değerlendirilebilir `i = j + 2`, veya `i = j + 2` önce değerlendirilebilir `i + 1`. Her durumda sonuç farklıdır. Benzer şekilde, hangi karakter gerçekten geçirilen garanti mümkün değildir `myproc`. Tekli artırma ve azaltma beri işlemi atamaları içerir, bu işlemler, aşağıdaki örnekte gösterildiği gibi yan etkileri neden olabilir:
+Bir işlev çağrısının bağımsız değişkenleri herhangi bir sırada değerlendirilebilirler. İfade `i + 1` daha önce `i = j + 2`değerlendirilemeyebilir veya `i = j + 2` daha önce `i + 1`değerlendirilebilir. Sonuç her durumda farklı olur. Benzer şekilde, hangi karakterlerin öğesine gerçekten geçtiğini garanti etmek mümkün değildir `myproc`. Birli artış ve azaltma işlemleri atamalar içerdiğinden, bu gibi işlemler yan etkilere neden olabilir ve aşağıdaki örnekte gösterildiği gibi:
 
 ```
 x[i] = i++;
 ```
 
-Bu örnekte, değerini `x` diğer bir deyişle değiştirilmiş tahmin edilemez. Alt simge değerini yeni veya eski değeri olabilir `i`. Sonucu farklı derleyicilerini veya farklı iyileştirme düzeyleri altında değişebilir.
+Bu örnekte, değiştirilen değeri `x` tahmin edilemez. Alt simge değeri, yeni ya da eski değeri olabilir `i`. Sonuç, farklı derleyiciler veya farklı iyileştirme seviyeleri kapsamında değişebilir.
 
-C yan etkileri değerlendirme sırası tanımlamıyor yukarıda açıklanan iki değerlendirme yöntem doğru olduğundan ve ya da uygulanabilir. Kodunuzun taşınabilir ve açık olduğundan emin olmak için değerlendirme yan etkileri için belirli bir sıraya bağlıdır deyimleri kaçının.
+C, yan etkileri değerlendirme sırasını tanımlamadığından, yukarıda bahsedilen değerlendirme yöntemlerinin her ikisi de doğru ve uygulanabilir. Kodunuzun taşınabilir ve açık olduğundan emin olmak için, yan etkilere yönelik belirli bir değerlendirme sırasına bağlı olan deyimlerden kaçının.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

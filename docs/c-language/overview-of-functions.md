@@ -14,13 +14,13 @@ ms.locfileid: "62232292"
 ---
 # <a name="overview-of-functions"></a>İşlevlere Genel Bakış
 
-İşlevler bir tanım olmalıdır ve işlevi çağrılmadan önce bildirimi görünüyorsa bir tanımı bildirimi olarak hizmet verebilen olsa da bir bildirim olması gerekir. İşlev tanımı işlev gövdesini içerir — işlev çağrıldığında yürütülen kod.
+İşlevler bir tanıma sahip olmalıdır ve bildirimi olmalıdır, ancak bildirim işlev çağrılmadan önce görüntülenirse bir tanım bildirim olarak görev yapabilir. İşlev tanımı, işlev gövdesini içerir — işlev çağrıldığında yürütülen kod.
 
-Bir işlev bildirimi, adı, dönüş türü ve özniteliklerini programda başka yerde tanımlanmış bir işlev oluşturur. Bir işlev bildiriminin, işlev çağrısı gelmelidir. Çalışma zamanı işlevleri için bildirimleri içeren üst bilgi dosyaları, kodunuzun çalışma zamanı işlevi çağrısı önce dahil edilmemesinin nedeni budur. Bildirim türleri ve parametre sayısı hakkında bilgi varsa, bildirimi bir prototip olur. Bkz: [işlev prototipleri](../c-language/function-prototypes.md) daha fazla bilgi için.
+Bir işlev bildirimi, programda başka bir yerde tanımlanmış bir işlevin adını, dönüş türünü ve özniteliklerini belirler. İşlev bildirimi, işleve yapılan çağrıdan önce gelmelidir. Bu, çalışma zamanı işlevlerine yönelik bildirimleri içeren üst bilgi dosyalarının, bir çalışma zamanı işlevine çağrıdan önce kodunuza dahil edilmeleridir. Bildirimin tür ve parametre sayısı hakkında bilgi varsa, bildirim bir prototipi olur. Daha fazla bilgi için bkz. [Işlev prototipleri](../c-language/function-prototypes.md) .
 
-Derleyici, sonraki çağrılarda işlevin parametrelerle işlev bağımsız değişkenlerinin türlerine karşılaştırın ve bağımsız değişken türlerinin parametre gerektiğinde türlerine dönüştürmek için prototip kullanır.
+Derleyici, sonraki çağrılarındaki bağımsız değişkenlerin türlerini işlevin parametreleriyle ve bağımsız değişkenlerin türlerini gerektiğinde parametre türlerine dönüştürmek için prototipi kullanır.
 
-Bir işlev çağrısı yürütme denetimi için çağrılan işlev çağıran işlevden geçirir. Bağımsız değişken varsa, çağrılan işlev için değere göre geçirilir. Yürütülmesini bir `return` deyimi içinde çağrılan işlev çağıran işleve denetimi ve büyük olasılıkla bir değer döndürür.
+Bir işlev çağrısı, yürütme denetimini çağıran işlevden çağrılan işleve geçirir. Varsa bağımsız değişkenler değeri tarafından çağrılan işleve geçirilir. Çağrılan işlev içindeki `return` bir deyimin yürütülmesi denetim ve muhtemelen çağıran işleve bir değer döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

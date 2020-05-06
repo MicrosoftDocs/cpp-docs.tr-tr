@@ -15,11 +15,11 @@ ms.locfileid: "62233747"
 ---
 # <a name="external-linkage"></a>Dış Bağlantı
 
-Tanımlayıcının dosya kapsamı düzeyinde ilk bildirimi kullanmıyorsa **statik** depolama sınıfı tanımlayıcısı, nesne dış bağlantısı vardır.
+Bir tanımlayıcı için dosya kapsam düzeyindeki ilk bildirim **statik** depolama sınıfı belirticisini kullanmıyorsa, nesnenin dış bağlantısı vardır.
 
-Tanımlayıcının bir işlev bildirimi Hayır varsa *depolama sınıfı tanımlayıcısı*, tam olarak bunu ile bildirilmiş olup olmadıklarına kendi bağlantı belirlenir *depolama sınıfı tanımlayıcısı* `extern`. Bildirimi bir nesne için bir tanımlayıcının dosya kapsamı ve Hayır varsa *depolama sınıfı tanımlayıcısı*, kendi bağlantısı dış değerdir.
+Bir işlevin tanımlayıcısının bildiriminde hiçbir *depolama sınıfı Belirleyicisi*yoksa, bağlantısı tam olarak *depolama sınıfı belirticisiyle* `extern`bildirildiği gibi belirlenir. Bir nesne için tanımlayıcı bildiriminde dosya kapsamı varsa ve *depolama sınıfı Belirleyicisi*yoksa, bağlantısı harici olur.
 
-Aynı işlevin bir tanımlayıcının dış bağlantısı adıyla belirtir veya başka bir bildirimin aynı ada sahip dış bağlantısı için veri nesnesi gibi yapar. İki bildirimi, aynı çeviri birimi içinde veya farklı bir çeviri birimi olabilir. Nesne veya işlev, nesne veya işlev de genel yaşam süresi varsa, tüm program tarafından paylaşılır.
+Dış bağlantıya sahip bir tanımlayıcının adı aynı işlevi veya veri nesnesini, dış bağlantısıyla aynı ada sahip başka bir bildirime sahip olacak şekilde atar. İki bildirim aynı çeviri biriminde veya farklı çeviri birimlerinde olabilir. Nesne veya işlevin genel ömrü de varsa, nesne veya işlev tüm program tarafından paylaşılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -16,11 +16,11 @@ ms.locfileid: "62232823"
 ---
 # <a name="naked-functions"></a>Naked İşlevleri
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 `naked` depolama sınıfı özniteliği, C diline yönelik Microsoft'a özgü bir uzantıdır. `naked` depolama sınıfı özniteliğiyle bildirilen işlevler için derleyici giriş ve sonuç kodu olmadan kod oluşturur. Satır içi derleyici kodunu kullanarak kendi giriş/sonuç kodu dizilerinizi yazmak için bu özelliği kullanabilirsiniz. Çıplak işlevler, özellikle sanal cihaz sürücülerinin yazılmasında yararlıdır.
 
-Çünkü `naked` özniteliği yalnızca bir işlev tanımı için geçerlidir ve bir tür değiştiricisi değil, naked işlevlerini kullanmak açıklanan genişletilmiş öznitelik söz dizimi [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
+`naked` Özniteliği yalnızca bir işlevin tanımına uygun olduğundan ve bir tür değiştiricisi olmadığından, çıplak Işlevler [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md)bölümünde açıklanan genişletilmiş öznitelik sözdizimini kullanır.
 
 Aşağıdaki örnekte, `naked` özniteliğine sahip bir işlev tanımlanmaktadır:
 
@@ -56,7 +56,7 @@ __declspec( naked ) int func();   /* Error--naked attribute not */
                      /* permitted on function declarations.    */   \
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -11,11 +11,11 @@ ms.locfileid: "62232962"
 ---
 # <a name="including-quoted-filenames"></a>Tırnak İşaretli Dosya Adlarını Dahil Etme
 
-**ANSI 3.8.2** dahil edilebilecek kaynak dosyalarını tırnak işaretli ad desteği
+**ANSI 3.8.2 &** Dahil edilebilecek kaynak dosyalar için tırnak içine alınmış adlara yönelik destek
 
 Dahil edilecek dosya için, çift tırnak (" ") işareti içine alarak belirsiz olmayan, tam bir yol belirtimi belirtirseniz, önişlemci yalnızca bu yol belirtimini arar ve standart dizinleri yoksayar.
 
-Olarak belirtilen dosyaları eklemek için [#include](../preprocessor/hash-include-directive-c-cpp.md) "path-spec", dizin arama ana dosyanın dizinlerle başlar ve daha üst dosyaların dizinleriyle devam eder. Bu nedenle arama, işlenmekte olan kaynak dosyayı içeren dizine göre başlar. Dosya adı köşeli ayraçlar içine alınan iki üst dosya yok ve dosyayı bulunamadı, arama gibi devam eder.
+[#İnclude](../preprocessor/hash-include-directive-c-cpp.md) "path-spec" olarak belirtilen içerme dosyaları için Dizin arama, üst dosyanın dizinleriyle başlar ve ardından herhangi bir alt üst dosyanın dizinlerine ilerler. Bu nedenle arama, işlenmekte olan kaynak dosyayı içeren dizine göre başlar. Herhangi bir üst öğe dosyası yoksa ve dosya bulunmazsa, dosya adı açılı ayraçlar içine alınmış gibi devam eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

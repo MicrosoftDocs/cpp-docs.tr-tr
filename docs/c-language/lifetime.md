@@ -26,21 +26,21 @@ ms.locfileid: "62232782"
 ---
 # <a name="lifetime"></a>Ömür
 
-"Ömür" olan bir programın yürütülmesi sırasında bir süre içinde bir değişken veya işlev yok. Depolama süresi tanımlayıcısının ömrü belirler.
+"Ömür", bir değişken veya işlevin bulunduğu bir programın yürütülmesi sırasında nokta. Tanımlayıcının depolama süresi ömrünü belirler.
 
-Bildirilmiş bir tanımlayıcı ile *depolama sınıfı tanımlayıcısı* **statik** statik depolama süresine sahip. Tanımlayıcılar ("Genel" da denir) statik depolama süresine sahip, bir program süresince depolama ve tanımlı bir değer sahip. Depolama ayrılır ve tanımlayıcının depolanan değeri yalnızca bir kez, program başlatma önce başlatılır. Bildirilmiş bir tanımlayıcı ile dış veya iç bağlantı ayrıca statik depolama süresine sahip (bkz [bağlantı](../c-language/linkage.md)).
+*Depolama sınıfı Belirleyicisi* **statik** ile belirtilen tanımlayıcı statik depolama süresine sahip. Statik depolama süresine sahip tanımlayıcılar ("Global" olarak da bilinir), bir programın süresi boyunca depolama ve tanımlı bir değere sahiptir. Depolama ayrılmıştır ve tanımlayıcı depolanan değeri, program başlatılmadan önce yalnızca bir kez başlatılır. Dış veya iç bağlantı ile tanımlanan bir tanımlayıcının aynı zamanda statik depolama süresi (bkz. [bağlantı](../c-language/linkage.md)) vardır.
 
-Olmadan bildirilmiş bir tanımlayıcı **statik** depolama sınıfı belirticisi, bir işlev içinde bildirilirse otomatik depolama süresine sahip. Otomatik depolama süresine sahip bir tanımlayıcı depolama ve yalnızca burada tanımlayıcı tanımlandı veya bildirildi bloğu içinde tanımlı bir değer ("Yerel tanımlayıcı") sahiptir. Otomatik bir tanımlayıcı, program o blok girer her zaman yeni depolama ayrılır ve depolamasını (ve değerinin) kaybeder blok çıktığında program. Bağlantısı olmayan adlar bir işlev içinde bildirilen tanımlayıcılar, ayrıca otomatik depolama süresine sahip.
+**Statik** depolama sınıfı Belirleyicisi olmadan belirtilen tanımlayıcı, bir işlev içinde bildirilirse otomatik depolama süresine sahip olur. Otomatik depolama süresine sahip bir tanımlayıcı ("yerel tanımlayıcı") depolama alanına sahiptir ve yalnızca tanımlayıcının tanımlandığı veya bildirildiği blok içinde tanımlı bir değer vardır. Bir otomatik tanımlayıcı, program bu bloğa her girdiğinde yeni depolama alanı tahsis edilir ve program bloğundan çıktığında depolama alanını (ve değerini) kaybeder. Bağlantısı olmayan bir işlevde belirtilen tanımlayıcıların otomatik depolama süresi de vardır.
 
-Aşağıdaki kurallar, bir tanımlayıcı genel (statik) veya yerel (otomatik) ömrü olup olmadığını belirleyin:
+Aşağıdaki kurallar, bir tanımlayıcının genel (statik) veya yerel (otomatik) yaşam süresine sahip olup olmadığını belirtir:
 
-- Tüm İşlevler statik ömre sahiptir. Bu nedenle bunlar, her zaman program yürütme sırasında mevcut. Tanımlayıcılar dış düzeyinde bildirilen (diğer bir deyişle, dışındaki tüm işlev tanımlarının aynı düzeyde programı engeller) her zaman genel (statik) ömre sahip.
+- Tüm işlevlerin statik ömrü vardır. Bu nedenle, program yürütme sırasında her zaman vardır. Dış düzeyde (diğer bir deyişle, programdaki tüm blokların dışında, işlev tanımlarının tümünde) belirtilen tanımlayıcılar her zaman genel (statik) ömürleri vardır.
 
-- Yerel bir değişken bir başlatıcı varsa, her zaman oluşturulduğu değişkeni başlatılır (olarak bildirilmedikleri sürece **statik**). İşlev parametreleri de yerel kullanım ömrüne sahip. Dahil ederek bir blok içerisindeki tanımlayıcının genel ömrünü belirtebilirsiniz **statik** kendi bildiriminde depolama sınıfı tanımlayıcısı. Bir kez bildirilen **statik**, değişken blok bir girdi değerinden sonraki korur.
+- Yerel bir değişkende bir başlatıcı varsa, değişken her oluşturulduğunda başlatılır ( **statik**olarak bildirilmemiş olmadığı sürece). İşlev parametrelerinin yerel ömrü de vardır. Bir blok içindeki tanımlayıcı için genel ömür değerini, bildiriminde **statik** depolama sınıfı Belirleyicisi ekleyerek belirtebilirsiniz. **Statik**olarak bildirildiğinde, değişken değerini bir bloğun bir girdisinden sonrakine tutar.
 
-Bir tanımlayıcı ile küresel bir ömrü kaynak programın yürütülmesini mevcut olsa da (örneğin, harici olarak bildirilmiş bir değişken veya ile bildirilen yerel değişken **statik** anahtar sözcüğü), tüm görünür olmayabilir program bölümleri. Bkz: [kapsam ve görünürlük](../c-language/scope-and-visibility.md) görmek ve görünürlüğü hakkında bilgi için [depolama sınıfları](../c-language/c-storage-classes.md) bir irdelemesi *depolama sınıfı tanımlayıcısı* bildirimlere.
+Genel yaşam süresine sahip bir tanımlayıcı, kaynak programın yürütülmesi boyunca (örneğin, dışarıdan tanımlanmış bir değişken veya **static** anahtar sözcüğüyle belirtilen bir yerel değişken) mevcut olsa da programın tüm bölümlerinde görünmeyebilir. Görünürlük hakkında daha fazla bilgi için [kapsam ve görünürlük](../c-language/scope-and-visibility.md) bölümüne bakın ve depolama *sınıfı-tanımlayıcı* olmayan Terminal tartışması için [depolama sınıflarını](../c-language/c-storage-classes.md) görüntüleyin.
 
-Bellek ayrılan (dinamik) gibi özel kitaplık yordamları kullanarak oluşturduysanız, gerektiğinde `malloc`. Dinamik bellek ayırma kitaplık yordamları kullandığından, bu dilinin bir parçası olarak kabul edilmez. Bkz: [malloc](../c-runtime-library/reference/malloc.md) işlevi *çalışma zamanı kitaplığı başvurusu*.
+Bellek gerektiği gibi (dinamik), gibi özel kitaplık yordamları kullanılarak oluşturulduysa, bu şekilde tahsis edilebilir `malloc`. Dinamik bellek ayırma kitaplık yordamlarını kullandığından, dilin bir parçası olarak kabul edilmez. *Çalışma zamanı kitaplık başvurusunda* [malloc](../c-runtime-library/reference/malloc.md) işlevine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -14,7 +14,7 @@ ms.locfileid: "62232847"
 ---
 # <a name="linkage"></a>Bağlantı
 
-Tanımlayıcı adları farklı kapsamlardaki farklı tanımlayıcılara başvurabilir. Farklı kapsamlarda veya aynı kapsamda birden çok kez bildirilen bir tanımlayıcı "bağlantı" olarak adlandırılan bir işlem ile aynı tanımlayıcıya veya işleve başvurabilir. Bağlantı bir tanımlayıcının başvurulabildiği ("görünürlüğünü") programın bölümlerini belirler. Üç tür bağlantı vardır: [iç](../c-language/internal-linkage.md), [dış](../c-language/external-linkage.md), ve [bağlantısı olmayan adlar](../c-language/no-linkage.md).
+Tanımlayıcı adları farklı kapsamlardaki farklı tanımlayıcılara başvurabilir. Farklı kapsamlarda veya aynı kapsamda birden çok kez bildirilen bir tanımlayıcı "bağlantı" olarak adlandırılan bir işlem ile aynı tanımlayıcıya veya işleve başvurabilir. Bağlantı bir tanımlayıcının başvurulabildiği ("görünürlüğünü") programın bölümlerini belirler. Üç tür bağlantı vardır: [iç](../c-language/internal-linkage.md), [dış](../c-language/external-linkage.md)ve [bağlantı yok](../c-language/no-linkage.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -20,4 +20,4 @@ Atama ile ilgili ifadelerin, birli artışın, birli azalışın veya bir işlev
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşlenenler ve İfadeler](../c-language/operands-and-expressions.md)
+[İşlenenler ve Ifadeler](../c-language/operands-and-expressions.md)

@@ -13,9 +13,9 @@ ms.locfileid: "62158540"
 ---
 # <a name="signal-function-c"></a>signal İşlevi (C)
 
-**ANSI 4.7.1.1** sinyalleri için kümesini **sinyal** işlevi
+**ANSI 4.7.1.1** **Sinyal** işlevi için sinyaller kümesi
 
-Geçirilen ilk bağımsız değişken **sinyal** açıklanan sembolik sabit değerler olmalıdır *çalışma zamanı kitaplığı başvurusu* için **sinyal** işlevi. Bilgileri *çalışma zamanı kitaplığı başvurusu* ayrıca her bir sinyali işletim modu desteği listelenmektedir. Sabitler, ayrıca sinyali içinde tanımlanır. H
+**Sinyale** geçirilen ilk bağımsız değişken, **sinyal** Işlevinin *çalışma zamanı kitaplığı başvurusunda* açıklanan sembolik sabitlerden biri olmalıdır. *Çalışma zamanı kitaplık başvurusundaki* bilgiler aynı zamanda her sinyal için işletim modu desteğini de listeler. Sabitler Ayrıca SINYAL içinde tanımlanır. Olsun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

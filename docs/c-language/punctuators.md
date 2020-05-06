@@ -13,8 +13,8 @@ ms.locfileid: "62232227"
 ---
 # <a name="punctuators"></a>Noktalama İşaretleri
 
-*Noktalama işaretçisi*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**\[ ] ( ) { } \* , : = ; . #**
+*noktalama*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**\[] ( ) { } \* , : = ; . #**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

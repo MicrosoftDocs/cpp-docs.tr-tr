@@ -16,11 +16,11 @@ ms.locfileid: "62188767"
 ---
 # <a name="improving-compiler-throughput"></a>Derleyici Üretimini Geliştirme
 
-Daha hızlı derleme için önceden derlenmiş üst bilgi dosyalarını kullanın. ATL, MFC ve Windows SDK'sı üst bilgi dosyaları kullanıyorsanız, bu önemlidir.
+Projenizi daha hızlı derlemek için önceden derlenmiş üstbilgi dosyalarını kullanın. ATL, MFC veya Windows SDK üst bilgi dosyalarını kullanıyorsanız bu önemlidir.
 
-Bkz: [/Yc](reference/yc-create-precompiled-header-file.md) ve [/Yu](reference/yu-use-precompiled-header-file.md).
+Bkz. [/Rivc](reference/yc-create-precompiled-header-file.md) ve [/yu](reference/yu-use-precompiled-header-file.md).
 
-Önceden derlenmiş üst bilgiler hakkında daha fazla bilgi için bkz. [önceden derlenmiş üst bilgi dosyaları](creating-precompiled-header-files.md).
+Önceden derlenmiş üstbilgiler hakkında daha fazla bilgi için bkz. [önceden derlenmiş üst bilgi dosyaları](creating-precompiled-header-files.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

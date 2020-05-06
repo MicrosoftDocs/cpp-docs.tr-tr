@@ -1,5 +1,5 @@
 ---
-title: Dllimport / dllexport için kurallar ve sınırlamalar
+title: dllimport/dllexport için Kurallar ve Sınırlamalar
 ms.date: 11/04/2016
 helpviewer_keywords:
 - dllexport attribute [C++], limitations and rules
@@ -15,11 +15,11 @@ ms.locfileid: "62158433"
 ---
 # <a name="rules-and-limitations-for-dllimportdllexport"></a>dllimport/dllexport için Kurallar ve Sınırlamalar
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-- Bir işlev olmadan bildirirseniz **dllimport** veya `dllexport` özniteliği, işlev olarak kabul edilmez DLL arabiriminin bir parçası. Bu nedenle, işlev tanımı bu modüldeki veya başka bir modül aynı programın içinde mevcut olması gerekir. DLL arabirimi işlevi parçası haline getirmek için bir modül olarak işlev tanımı bildirmek `dllexport`. Aksi takdirde istemci oluşturulduğunda bir bağlayıcı hatası meydana gelir.
+- Bir işlevi **dllimport** veya `dllexport` Attribute olmadan bildirirseniz, işlev dll arabiriminin bir parçası olarak kabul edilmez. Bu nedenle, işlevin tanımı bu modülde veya aynı programın başka bir modülünde mevcut olmalıdır. İşlevi DLL arabiriminin bir parçası yapmak için, diğer modüldeki işlevin tanımını olarak `dllexport`bildirmeniz gerekir. Aksi halde, istemci oluşturulduğunda bir bağlayıcı hatası oluşturulur.
 
-- Programınızı tek bir modülde varsa **dllimport** ve `dllexport` aynı işlev bildirimlerini `dllexport` özniteliği önceliklidir **dllimport** özniteliği. Ancak, bir derleyici uyarısı oluşturulur. Örneğin:
+- Programınızdaki tek bir modül aynı işlev için **dllimport** ve `dllexport` bildirimler içeriyorsa, `dllexport` öznitelik **dllimport** özniteliğiyle önceliklidir. Ancak, bir derleyici uyarısı oluşturulur. Örneğin:
 
     ```
     #define DllImport   __declspec( dllimport )
@@ -31,7 +31,7 @@ ms.locfileid: "62158433"
 
     ```
 
-- Statik veri işaretçisi ile bildirilen bir veri nesnesi adresi ile başlatılamıyor **dllimport** özniteliği. Örneğin, aşağıdaki kod hatalar oluşturur:
+- **Dllimport** özniteliğiyle belirtilen bir veri nesnesinin adresiyle bir statik veri işaretçisi başlatamıyor. Örneğin, aşağıdaki kod hatalar oluşturur:
 
     ```
     #define DllImport   __declspec( dllimport )
@@ -50,7 +50,7 @@ ms.locfileid: "62158433"
 
     ```
 
-- İle bildirilen bir statik işlev işaretçisi bir işlevin adresini ile başlatma **dllimport** işaretçiyi DLL alma dönüştürücü (Denetim işleve aktaran bir kod saplama) adresine yerine adresini ayarlar işlev. Bu atama bir hata iletisi oluşturmaz:
+- Bir statik işlev işaretçisini **dllimport** ile belirtilen adresle birlikte başlatmak, işlevin adresı yerine DLL içeri aktarma dönüştürücüsü (denetimi işleve aktaran bir kod Saplaması) için işaretçiyi ayarlar. Bu atama bir hata iletisi oluşturmaz:
 
     ```
     #define DllImport   __declspec( dllimport )
@@ -69,7 +69,7 @@ ms.locfileid: "62158433"
 
     ```
 
-- Bir program içerdiğinden `dllexport` özniteliği bildiriminde bir nesnenin o nesne tanımı sağlamalısınız, adresi ile bir genel veya yerel statik işlev işaretçisi başlatabilirsiniz bir `dllexport` işlevi. Benzer şekilde, bir genel veya yerel statik veri işaretçisine adresiyle başlatabilirsiniz bir `dllexport` veri nesnesi. Örneğin:
+- Bir nesnenin bildiriminde `dllexport` özniteliği içeren bir program, bu nesnenin tanımını sağlaması gerektiğinden, bir `dllexport` işlev adresiyle genel veya yerel bir statik işlev işaretçisi başlatabilirsiniz. Benzer şekilde, bir `dllexport` veri nesnesinin adresiyle genel veya yerel bir statik veri işaretçisi başlatabilirsiniz. Örneğin:
 
     ```
     #define DllImport   __declspec( dllimport )
@@ -94,7 +94,7 @@ ms.locfileid: "62158433"
 
     ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -16,9 +16,9 @@ ms.locfileid: "62232142"
 ---
 # <a name="recursive-functions"></a>Özyinelemeli İşlevler
 
-C programındaki herhangi bir işlev özyinelemeli olarak çağrılabilir; diğer bir deyişle, kendisini çağırabilir. Özyinelemeli çağrıların sayısı, yığının boyutuyla sınırlıdır. Bkz: [/STACK (yığın ayırmaları)](../build/reference/stack-stack-allocations.md) (/ yığın) bağlayıcı seçeneği bağlayıcı hakkında bilgi için yığın boyutunu Ayarla seçenekleri. İşlevin çağrıldığı her zaman yeni bir depolama birimi ve parametreler için ayrılan **otomatik** ve **kaydetme** değişkenleri böylece değerlerini önceki, tamamlanmamış çağrılarındaki değerlerin üzerine. Parametrelere, yalnızca oluşturuldukları işlevin örneği doğrudan erişebilir. Önceki parametrelere, işlevin sonraki örnekleri tarafından doğrudan erişilemez.
+C programındaki herhangi bir işlev özyinelemeli olarak çağrılabilir; diğer bir deyişle, kendisini çağırabilir. Özyinelemeli çağrıların sayısı, yığının boyutuyla sınırlıdır. Yığın boyutunu ayarlama bağlayıcı seçenekleri hakkında bilgi için bkz. [/Stack (yığın ayırmaları)](../build/reference/stack-stack-allocations.md) (/Stack) bağlayıcı seçeneği. İşlev her çağrıldığında, parametrelere ve **Otomatik** ve **kayıt** değişkenlerine yönelik olarak, önceki ve tamamlanmamış çağrıların değerlerinin üzerine yazılmaması için yeni depolama alanı ayrılır. Parametrelere, yalnızca oluşturuldukları işlevin örneği doğrudan erişebilir. Önceki parametrelere, işlevin sonraki örnekleri tarafından doğrudan erişilemez.
 
-Not ile bildirilen değişkenlerin **statik** depolama, her Özyinelemeli çağrı ile yeni depolama alanı gerektirmez. Depolama alanları, programın ömrü boyunca kullanılır. Böyle bir değişkene yapılan her başvuru aynı depolama alanına erişir.
+**Statik** depolama ile belirtilen değişkenlerin her özyinelemeli çağrıda yeni depolama alanı gerektirmediğinden emin olduğunu unutmayın. Depolama alanları, programın ömrü boyunca kullanılır. Böyle bir değişkene yapılan her başvuru aynı depolama alanına erişir.
 
 ## <a name="example"></a>Örnek
 

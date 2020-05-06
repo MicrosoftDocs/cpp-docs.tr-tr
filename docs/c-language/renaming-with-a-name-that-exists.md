@@ -11,9 +11,9 @@ ms.locfileid: "62232050"
 ---
 # <a name="renaming-with-a-name-that-exists"></a>Varolan Adla Yeniden Adlandırma
 
-**ANSI 4.9.4.2** Yeni adla bir dosya için bir çağrı önce varsa etkisi **Yeniden Adlandır** işlevi
+**ANSI 4.9.4.2** **Yeniden adlandırma** işlevine yapılan çağrıdan önce yeni ada sahip bir dosya varsa, bu efekt
 
-Varolan bir adı kullanarak bir dosyayı yeniden adlandırmak çalışırsanız **Yeniden Adlandır** işlevi başarısız olur ve bir hata kodu döndürür.
+Var olan bir adı kullanarak bir dosyayı yeniden adlandırmaya çalışırsanız, **yeniden adlandırma** işlevi başarısız olur ve bir hata kodu döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

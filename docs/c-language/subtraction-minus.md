@@ -14,12 +14,12 @@ ms.locfileid: "62157766"
 ---
 # <a name="subtraction--"></a>Çıkarma (-)
 
-Çıkarma işleci (**-**) ikinci işlenen ilk çıkarır. Her iki işlenen de tamsayı veya kayan türler olabilir veya tek bir işlenen bir işaretçi ve diğer bir tamsayı olabilir.
+Çıkarma işleci (**-**) birinciden ikinci işleneni çıkartır. Her iki işlenen de İntegral veya kayan türler olabilir ya da bir işlenen bir işaretçi ve diğeri tamsayı olabilir.
 
-İki işaretçileri çıkartılır, fark imzalı bir tamsayı değer türünde bir değer boyutu tarafından fark bölerek dönüştürülür, işaretçiler adresi. İntegral değerinin boyutu türü tarafından tanımlanan **ptrdiff_t** STDDEF içinde standart içerme dosyası. H Sonuç, bellek konumları arasında iki adres türü sayısını temsil eder. Sonuç yalnızca içinde açıklandığı gibi aynı iki öğe için anlamlı olması garanti [işaretçi aritmetiği](../c-language/pointer-arithmetic.md).
+İki işaretçi çıkarıldığında, fark, işaret adresinin bir değer boyutuna göre farkı ayırarak imzalı bir integral değerine dönüştürülür. İntegral değerin boyutu, standart içerme dosyası STDDEF içindeki **ptrdiff_t** türü tarafından tanımlanır. Olsun. Sonuç, iki adres arasındaki bu türdeki bellek konumlarının sayısını temsil eder. Sonuç, [Işaretçi aritmetik](../c-language/pointer-arithmetic.md)bölümünde anlatıldığı gibi, yalnızca aynı dizinin iki öğesi için anlamlı olması garanti edilir.
 
-Bir işaretçi değeri bir tamsayı değeri çıkarılır, tamsayı değeri çıkarma işleci dönüştürür (*miyim*) boyutunu ele alan bir işaretçi değeri tarafından çarpmadan tarafından. Dönüştürme işleminden sonra temsil eder bir tamsayı değeri *miyim* her konum işaretçi türü tarafından belirtilen uzunluğa sahip olduğu, bellek konumları. Dönüştürülmüş tamsayı değeri çıkarılan işaretçi değer, bellek adresi sonucudur *miyim* özgün adresini önce konumları. Yeni İşaretçi, orijinal işaretçi değeri tarafından ele alınan değerini işaret eder.
+Bir tamsayı değeri bir işaretçi değerinden çıkarıldığında, çıkarma işleci değeri, işaretçinin adresleyen değerin boyutuyla çarparak tamsayı değerini (*i*) dönüştürür. Dönüştürmeden sonra, tamsayı değeri *i* bellek konumlarını temsil eder; burada her konum işaretçi türü tarafından belirtilen uzunluğa sahiptir. Dönüştürülen tamsayı değeri işaretçi değerinden çıkarıldığında, sonuç, özgün adresten önceki *Konumlarım* olan bellek adresidir. Yeni işaretçi, orijinal işaretçi değeri tarafından belirtilen türde bir değere işaret eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Ek İşleçleri](../c-language/c-additive-operators.md)
+[C eklenebilir Işleçler](../c-language/c-additive-operators.md)

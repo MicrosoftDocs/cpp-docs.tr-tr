@@ -16,7 +16,7 @@ ms.locfileid: "62232858"
 ---
 # <a name="integer-types"></a>Tam Sayı Türleri
 
-Her bir tamsayı sabit değeri ve ifade edilir biçimini temel alan bir tür verilir. Herhangi bir tamsayı sabiti türü zorlayabilirsiniz **uzun** harf ekleyerek **l** veya **L** türü olmasını zorlar; sabiti sonuna `unsigned` ekleyerek **u** veya **U** değer. Küçük harf **l** basamağı 1'ile karıştırılır olabilir ve kaçınılmalıdır. Bazı formları **uzun** tamsayı sabitleri izleyin:
+Her tamsayı sabitine, değerine ve ifade edildiği yönteme göre bir tür verilir. Bir tamsayı sabitine, sabitin sonuna **l** veya **l** harfini ekleyerek **Long** yazmak için zorlayabilirsiniz; değere **u** veya **u** değerini ekleyerek onu `unsigned` tür olmasını zorlayabilirsiniz. Küçük harf **l** , 1 basamağına karışmış olabilir ve kaçınılmalıdır. Bazı **uzun** tamsayı sabitleri şu şekilde izleyebilirsiniz:
 
 ```
 /* Long decimal constants */
@@ -36,17 +36,17 @@ Her bir tamsayı sabit değeri ve ifade edilir biçimini temel alan bir tür ver
 778866LU
 ```
 
-Bir sabite atama türü sabiti temsil eden değerine bağlıdır. Bir sabitin değeri kendi türünün temsil edilebilir değerler aralığında olmalıdır. Hangi dönüştürme sabit bir ifadede kullanıldığında ya da zaman gerçekleştirilen bir sabitin türü belirler eksi işareti (**-**) uygulanır. Bu liste, tamsayı sabitleri için dönüştürme kuralları özetlenmektedir.
+Bir sabite atadığınız tür, sabit değerin temsil ettiği değere göre değişir. Bir sabitin değeri, türü için gösterilebilir tablo değerleri aralığında olmalıdır. Bir sabitin türü, sabit bir ifadede kullanıldığında ya da eksi işareti (**-**) uygulandığında hangi dönüştürmelerin gerçekleştirileceğini belirler. Bu liste, tamsayı sabitleri için dönüştürme kurallarını özetler.
 
-- Ondalık sabit bir soneki olmadan türü geçerli `int`, **long int**, veya **imzasız long int**. Bu üç tür sabitin değeri gösterilebilir ilk sabiti için atanan türüdür.
+- Soneki olmayan bir Decimal sabiti türü `int`, **long int**veya **unsigned long int**'tir. Sabit değerinin gösterilebileceği bu üç türün ilki, sabite atanan türdür.
 
-- Sekizlik ve onaltılık sabitler sonekleri olmadan atanan türü `int`, `unsigned int`, **long int**, veya **imzasız long int** sabiti boyutuna bağlı olarak.
+- Sabit değer olmadan sekizlik ve onaltılı sabitlere atanan tür, `int` `unsigned int`, **long int**veya sabitin boyutuna bağlı olarak **işaretsiz long int** 'tir.
 
-- Sabitler ile atanan türü bir **u** veya **U** sonek **işaretsiz int** veya **imzasız long int** boyutlarına bağlı olarak.
+- Bir **u** veya **u** sonekine sahip sabitlere atanan tür, bunlara göre **işaretsiz int** veya **işaretsiz long int** 'tir.
 
-- Sabitler ile atanan türü bir **l** veya **L** sonek **long int** veya **imzasız long int** boyutlarına bağlı olarak.
+- Bir **l** veya **l** sonekine sahip sabitlere atanan tür, büyüklüğüne bağlı olarak **long int** veya **unsigned long int** 'tir.
 
-- Sabitler ile atanan türü bir **u** veya **U** ve **l** veya **L** sonek **imzasız long int**.
+- Bir **u** veya **u** ve **l** ya da **l** sonekine sahip sabitlere atanan tür **işaretsiz long int**'tir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

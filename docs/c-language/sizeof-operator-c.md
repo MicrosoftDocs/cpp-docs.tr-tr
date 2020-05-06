@@ -15,7 +15,7 @@ ms.locfileid: "62158131"
 ---
 # <a name="sizeof-operator-c"></a>sizeof İşleci (C)
 
-`sizeof` işleci, işlenen türünde bir nesneyi depolamak için gereken depolama miktarını bayt cinsinden verir. Bu işleç, programlarınızda makine bağımlı veri boyutları belirtmekten kaçının olanak tanır.
+`sizeof` işleci, işlenen türünde bir nesneyi depolamak için gereken depolama miktarını bayt cinsinden verir. Bu işleç, programlarınızda makineye bağımlı veri boyutları belirtmekten kaçınmanızı sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,7 +26,7 @@ sizeof ( type-name )
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlenen, ya da bir tanımlayıcıdır bir *tekli ifade*, ya da bir tür atama ifadesidir (parantez içine alınmış diğer bir deyişle, bir tür belirleyici). *Tekli ifade* bir bit alanı nesnesini, tamamlanmamış bir türü veya bir işlev göstergesini gösteremez. Sonuç, işaretsiz bir tamsayı sabitidir. Standart üstbilgi STDDEF. Bu türü olarak H tanımlar **size_t**.
+İşlenen, *birli ifade*veya tür atama ifadesi (yani parantez içine alınmış bir tür Belirleyicisi) olan bir tanıtıcıdır. *Birli ifade* , bir bit alanı nesnesini, tamamlanmamış bir türü veya bir işlev göstergesini temsil edemez. Sonuç, işaretsiz bir tamsayı sabitidir. Standart üst bilgi STDDEF. H bu türü **size_t**olarak tanımlar.
 
 `sizeof` işlecini bir dizi tanımlayıcısına uyguladığınızda, sonuç dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutu değil, tüm dizinin boyutudur.
 
@@ -49,9 +49,9 @@ static char *strings[] = {
 const int string_no = ( sizeof strings ) / ( sizeof strings[0] );
 ```
 
-Bu örnekte `strings`, bir `char` işaretçileri dizisidir. İşaretçilerin sayısı dizideki öğelerin sayısıdır, ancak belirtilmemiştir. Dizideki öğelerin sayısını hesaplamak üzere `sizeof` işlecini kullanarak işaretçilerin sayısını belirlemek kolaydır. **Const** tamsayı değeri `string_no` bu sayı ile başlatılır. Çünkü bu bir **const** değeri `string_no` değiştirilemez.
+Bu örnekte `strings`, bir `char` işaretçileri dizisidir. İşaretçilerin sayısı dizideki öğelerin sayısıdır, ancak belirtilmemiştir. Dizideki öğelerin sayısını hesaplamak üzere `sizeof` işlecini kullanarak işaretçilerin sayısını belirlemek kolaydır. **Const** tamsayı değeri `string_no` bu sayı olarak başlatılır. Bu bir **const** değeri `string_no` olduğundan değiştirilemez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C İşleçleri](c-operators.md)<br/>
+[C Işleçleri](c-operators.md)<br/>
 [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

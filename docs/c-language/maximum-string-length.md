@@ -16,15 +16,15 @@ ms.locfileid: "62232884"
 ---
 # <a name="maximum-string-length"></a>Maksimum Dize Uzunluğu
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-ANSI uyumluluğu birleştirme sonra bir dize sabit değerinde en fazla 509 karakterleri kabul etmek için bir derleyici gerektirir. Microsoft C'de izin verilen uzunluk dize sabitinin yaklaşık 2.048 bayttır. Ancak, dize sabit değeri çift tırnak işareti içine alınmış bölümlerinin oluşuyorsa, önişlemci bölümleri tek bir dize olarak sıralar ve birleştirilmiş her satır için fazladan bir bayt toplam bayt sayısı ekler.
+ANSI uyumluluğu, bir derleyicinin birleştirme sonrasında bir dize sabit değerinde en fazla 509 karakter kabul etmesini gerektirir. Microsoft C 'de izin verilen bir dize sabit değerinin en fazla uzunluğu yaklaşık 2.048 bayttır. Ancak, dize sabiti çift tırnak işareti içine alınmış bölümlerden oluşuyorsa, ön işlemci parçaları tek bir dizeye ekler ve birleştirilmiş her satır için toplam bayt sayısına ek bir bayt ekler.
 
-Örneğin, bir dize olan 40 satır satır (2.000 karakter) başına 50 karakterden oluşur ve 7 karakter içeren bir satır ve her satır çift tırnak işaretleri arasına varsayalım. Bu kadar 2.007 bayt artı tek baytlık 2,008 bayt toplam sondaki null karakter ekler. Birleştirme üzerinde bir ek karakter her ilk 40 satırlar eklenir. Bu, 2.048 bayt toplam hale getirir. Not, ancak devamlılıklar satır olması durumunda (\\) kullanılan yerine çift tırnak işareti, önişlemcinin her satır için bir ek karakter eklemez.
+Örneğin, bir dize, her satır için 50 karakter (2.000 karakter) ve bir satır 7 karakter içeren 40 satırdan oluşur ve her satır çift tırnak işareti içine alınmalıdır. Bu, toplam 2.008 bayt için en fazla 2.007 bayt ve Sonlandırıcı null karakteri için bir bayt ekler. Birleştirme sırasında, ilk 40 satırın her biri için ek bir karakter eklenir. Bu, toplam 2.048 baytlık bir işlem yapar. Ancak, çift tırnak işareti yerine satır devamlılıkları\\() kullanılırsa, Önişlemci her satır için ek bir karakter eklemez.
 
-Sınırlandırılmış bir kişi 2048 bayttan daha uzun olamaz, ancak bir dize sabit değeri kabaca 65535 bayt dizeleri birleştirerek oluşturulabilir.
+Tek tırnaklı bir dize 2048 bayttan daha uzun olamaz, bu da kabaca 65535 baytlık bir dize sabit değeri birleştirerek dizeler oluşturulabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

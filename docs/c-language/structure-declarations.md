@@ -17,51 +17,51 @@ ms.locfileid: "62157813"
 ---
 # <a name="structure-declarations"></a>Yapı Bildirimleri
 
-Bir "yapı bildirimi" bir tür adları ve bir dizi farklı türlere sahip olabilen ("üye" ya da yapının "alanları" olarak adlandırılır) değişken değerleri belirtir. Bir "etiket" adlı isteğe bağlı bir tanımlayıcı, yapı türü adını verir ve sonraki başvurularda yapı türü için kullanılabilir. Bu yapı türünde bir değişken türü tarafından tanımlanan tüm dizisi içerir. Yapıları C, diğer dillerdeki "kayıt" olarak bilinen türleri benzerdir.
+"Yapı bildirimi", bir türü adlandırır ve farklı türlere sahip bir değişken değerleri ("Üyeler" veya yapının "alanları" olarak adlandırılır) belirtir. "Tag" adlı bir isteğe bağlı tanımlayıcı, yapı türünün adını verir ve yapı türüne sonraki başvurularda kullanılabilir. Bu yapı türünün bir değişkeni, bu tür tarafından tanımlanan tüm diziyi tutar. C 'deki yapılar, diğer dillerdeki "kayıtlar" olarak bilinen türlere benzerdir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*struct veya union tanımlayıcısı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*yapı veya birleşim* *tanımlayıcı*<sub>iyileştirilmiş</sub> **{** *yapı bildirim listesi* **}**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*yapı veya birleşim* *tanımlayıcısı*
+*struct veya-Union-belirleyicisi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*struct veya-Union* *tanımlayıcısı*<sub>opt</sub> **{** *struct-declaration-List* **}**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*struct veya-Union* *tanımlayıcısı*
 
-*yapı veya birleşim*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Yapı**<br/>
+*struct veya-Union*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**sýný**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**birleşim**
 
-*Yapı bildirim listesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Yapı bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Yapı bildirim listesi* *yapı bildirimi*
+*struct-declaration-List*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*struct-bildirimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*struct-declaration-List* *struct-bildirimi*
 
-*Yapı bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*specifier-qualifier-list* *struct-declarator-list* **;**
+*struct-bildirimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*belirtici niteleyicisi-List* *struct-declarator-list* **;**
 
-*Belirleyicisi niteleyici listesinin*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirticisi* *tanımlayıcısı niteleyici listesi*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *tanımlayıcısı niteleyici listesi*<sub>iyileştirilmiş</sub>
+*belirtici niteleyicisi-liste*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *belirleyicisi-niteleyici-List*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *belirleyicisi-niteleyici-List*<sub>opt</sub>
 
-*Yapı-declarator-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Yapı-declarator* *yapı bildirimci listesi* **,** *yapı bildirimcisi*
+*struct-declarator-list*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*struct-declarator* *yapısı-bildirimci-List* **,** *struct-declarator*
 
-*Yapı-declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirticisi* *bildirimci*<sub>iyileştirilmiş</sub> **:** *sabit-ifade*
+*struct-declarator*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimci*<sub>opt</sub> **:** *sabit ifadesi*
 
-Bir yapı türü bildirimini alan bir yapı için kenara ayarlı değil. Yapı değişkenleri, sonraki Bildirimlerde için yalnızca bir şablon var.
+Yapı türünün bildirimi, bir yapı için boşluk yapmaz. Yalnızca yapı değişkenlerinin daha sonraki bildirimlerine yönelik bir şablondur.
 
-Önceden tanımlı bir *tanımlayıcı* (etiketi), başka yerde tanımlanmış bir yapı türü başvurmak için kullanılabilir. Bu durumda, *yapı bildirim listesi* tanımı görünür olduğu sürece yinelenemez. Yapı türü tanımlanmadan önce işaretçileri yapıların ve yapı türleri için tür tanımları, bildirimleri yapısı etiketini kullanabilirsiniz. Ancak, yapı tanımı alanların boyutunu gerçek kullanımı önce karşılaştı gerekir. Bu, tür ve tür etiketi eksik bir tanımıdır. Bu tanımı tamamlanması bir tür tanımı, daha sonra aynı kapsam içinde yer almalıdır.
+Daha önce tanımlanmış bir *tanımlayıcı* (etiket), başka bir yerde tanımlanmış bir yapı türüne başvurmak için kullanılabilir. Bu durumda, tanım görünür olduğu sürece *struct-declaration-List* yinelenemez. Yapı türleri için yapılara işaretçilerin bildirimleri ve yapı türleri için tür tanımları bildirimleri yapı türü tanımlanmadan önce yapı etiketini kullanabilir. Ancak, alanların boyutunun gerçek kullanılmadan önce yapı tanımına de karşılaşmalıdır. Bu, Type ve Type etiketinin tamamlanmamış bir tanımıdır. Bu tanımın tamamlanması için, bir tür tanımının daha sonra aynı kapsamda görünmesi gerekir.
 
-*Yapı bildirim listesi* yapı üyelerinin adları ve türlerini belirtir. A *yapı bildirim listesi* bağımsız değişken içeren bir veya daha fazla değişken veya bit alanı bildirimleri.
+*Struct-declaration-List* , yapı üyelerinin türlerini ve adlarını belirtir. *Struct-declaration-List* bağımsız değişkeni bir veya daha fazla değişken veya bit alanı bildirimi içerir.
 
-Bildirilen her bir değişken *yapı bildirim listesi* yapı türünün bir üyesi olarak tanımlanır. Değişken bildirimlerinde *yapı bildirim listesi* bildirimleri depolama sınıfı tanımlayıcıları veya başlatıcılar bulunamaz dışında bu bölümde ele alınan diğer değişken bildirimleri aynı biçime sahip. Yapı üyeleri türü dışındaki herhangi bir değişken türü olabilir `void`, tamamlanmamış bir türü veya bir işlev türü.
+*Yapı-bildirim-listesinde* belirtilen her değişken yapı türünün bir üyesi olarak tanımlanır. *Yapı-bildirim-listesi* içindeki değişken bildirimleri, bu bölümde ele alınan diğer değişken bildirimleriyle aynı biçimde, bildirimlerin depolama sınıfı tanımlayıcıları veya başlatıcıları içeremeyeceği durumlar dışında aynı biçimdedir. Yapı üyeleri tür `void`, tamamlanmamış tür veya işlev türü dışında herhangi bir değişken türüne sahip olabilir.
 
-Bir üye türünü göründüğü yapısı bildirilemez. Ancak, bir üye yapı türüne sahip bir etiket sürece göründüğü yapı türü işaretçisi olarak bildirilebilir. Bu, bağlı yapıların listesini oluşturmanıza olanak sağlar.
+Üye, göründüğü yapının türüne sahip olacak şekilde bildirilemez. Ancak, bir üye yapı türünün bir etiketi olduğu sürece göründüğü yapı türüne yönelik bir işaretçi olarak bildirilebilecek. Bu, bağlı yapıların listesini oluşturmanızı sağlar.
 
-Yapılar, diğer tanımlayıcıları aynı kapsam izleyin. Yapı tanımlayıcıları, diğer yapı, birleşim ve numaralandırma etiketleri aynı görünürlüğü farklı olmalıdır.
+Yapılar diğer tanımlayıcılarla aynı kapsamı izler. Yapı tanımlayıcıları, aynı görünürlüğe sahip diğer yapı, birleşim ve numaralandırma etiketlerinden farklı olmalıdır.
 
-Her *yapı bildirimi* içinde bir *yapı bildirim listesi* liste içinde benzersiz olmalıdır. Ancak, tanımlayıcı adları bir *yapı bildirim listesi* sıradan değişken adları veya diğer yapı bildirimi listelerinde tanımlayıcıları benzersiz olması gerekmez.
+*Struct-declaration-List* içindeki her *struct-declaration* liste içinde benzersiz olmalıdır. Ancak, *Yapı-bildirim listesindeki* tanımlayıcı adların, sıradan değişken adlarından veya diğer yapı bildirimi listelerindeki tanımlayıcılardan farklı olması gerekmez.
 
-Bunlar dosya kapsamı düzeyinde bildirilen gibi sorgulamanıza iç içe geçmiş yapılar da erişilebilir. Örneğin, bu bildirim verilen:
+İç içe yapılara Ayrıca dosya kapsamı düzeyinde bildirildiği halde erişilebilir. Örneğin, bu bildirim verildiğinde:
 
 ```C
 struct a
@@ -74,7 +74,7 @@ struct a
 } var1;
 ```
 
-Bu bildirimler, her ikisi de yasal şunlardır:
+Bu bildirimlerin ikisi de geçerlidir:
 
 ```C
 struct a var3;
@@ -83,7 +83,7 @@ struct b var4;
 
 ## <a name="examples"></a>Örnekler
 
-Bu örneklerde, yapı bildirimleri gösterilmektedir:
+Bu örnekler Yapı bildirimlerini gösterir:
 
 ```C
 struct employee   /* Defines a structure variable named temp */
@@ -94,13 +94,13 @@ struct employee   /* Defines a structure variable named temp */
 } temp;
 ```
 
-`employee` Yapısının üç üye: `name`, `id`, ve `class`. `name` 20 öğeli bir dizi üyesidir ve `id` ve `class` ile basit üyeleridir `int` ve **uzun** sırasıyla yazın. Tanımlayıcı `employee` yapısı tanımlayıcısıdır.
+`employee` Yapı üç üyeye sahiptir: `name`, `id`ve `class`. `name` Üye, 20 öğeli `id` bir dizidir `class` ve sırasıyla ve `int` **uzun** olan basit üyeleridir. Tanımlayıcı `employee` , yapı tanımlayıcısıdır.
 
 ```C
 struct employee student, faculty, staff;
 ```
 
-Bu örnek, üç yapı değişkenleri tanımlar: `student`, `faculty`, ve `staff`. Her yapı, üç üye aynı listesine sahiptir. Yapı türü için bildirilen üyeler `employee`, önceki örnekte tanımlı.
+Bu örnek üç yapı değişkenini tanımlar: `student`, `faculty`, ve `staff`. Her yapının aynı üç üye listesi vardır. Üyeler, önceki örnekte tanımlanan yapı türüne `employee`sahip olacak şekilde bildirilmiştir.
 
 ```C
 struct           /* Defines an anonymous struct and a */
@@ -109,7 +109,7 @@ struct           /* Defines an anonymous struct and a */
 } complex;
 ```
 
-`complex` Yapıya sahip iki üyeleriyle **float** türü `x` ve `y`. Yapı türü etiketi yok ve bu nedenle adlandırılmamış ya da anonim.
+`complex` Yapı, **float** türü `x` ve `y`olan iki üyeye sahiptir. Yapı türünün etiketi yok ve bu nedenle adlandırılmamış veya anonim.
 
 ```C
 struct sample   /* Defines a structure named x */
@@ -120,9 +120,9 @@ struct sample   /* Defines a structure named x */
 } x;
 ```
 
-Yapı ilk iki üyesi olan bir `char` değişkeni ve işaretçi bir **float** değeri. Üçüncü üye `next`, tanımlanan yapı türü işaretçisi olarak bildirilebilir (`sample`).
+Yapının ilk iki üyesi bir `char` değişken ve bir **float** değeri işaretçisidir. Üçüncü üye `next`, tanımlanmakta olan yapı türüne yönelik bir işaretçi olarak bildirilmiştir (`sample`).
 
-Anonim yapılar, adlı etiket gerekmediğinde yararlı olabilir. Bir bildirim yapısı hepsinin tanımladığında durum budur. Örneğin:
+Anonim yapılar, adlı etiket gerekli olmadığında yararlı olabilir. Bu durum, bir bildirimin tüm yapı örneklerini tanımladığı durumdur. Örneğin:
 
 ```C
 struct
@@ -132,7 +132,7 @@ struct
 } mystruct;
 ```
 
-Katıştırılmış yapılar, genellikle anonim olacaktır.
+Gömülü yapılar genellikle anonimdir.
 
 ```C
 struct somestruct
@@ -145,15 +145,15 @@ struct somestruct
 } w;
 ```
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Derleyicinin, boyutsuz veya sıfır boyutlu dizi bir yapının son üye olarak sağlar. Bu, sabit bir dizinin boyutu çeşitli durumlarda kullanıldığında farklıysa yararlı olabilir. Böyle bir yapının bildirimi şöyle görünür:
+Derleyici, bir yapının son üyesi olarak boyutlandırılabilen veya sıfır boyutlu bir diziye izin verir. Bu, bir sabit dizinin boyutu farklı durumlarda kullanıldığında yararlı olabilir. Böyle bir yapının bildirimi şöyle görünür:
 
-**Yapı** *tanımlayıcı* **{** *bildirimleri kümesi* *türü* <em>dizi adı</em> **\[]; };**
+**struct** *tanımlayıcı* **{** *of-of-bildirimlerin* *türü* <em>dizi-adı</em>**\[];};**
 
-Boyutsuz diziler yalnızca bir yapının son üyesi olarak görünür. Daha fazla üye kapsayan tüm yapıları, bildirilen sürece boyutsuz bir dizi bildirimleri içeren yapıları diğer yapıları yuvalanabilir. Bu tür bir yapı dizileri izin verilmez. `sizeof` Türün kendisine veya bu türden bir değişkene uygulandığında işleç, dizinin boyutu 0 varsayar.
+Boyutlandırılabilen diziler yalnızca bir yapının son üyesi olarak görünebilir. Boyutlandırılmış dizi bildirimleri içeren yapılar, herhangi bir kapsayan yapıda hiçbir başka üye bildirildiği sürece diğer yapılar içinde iç içe olabilir. Bu tür yapıların dizilerine izin verilmez. `sizeof` İşleci, bu türün bir değişkenine veya türüne uygulandığında, dizinin boyutu için 0 varsayar.
 
-Başka bir yapı veya birleşim üyesi olduklarında, yapı bildirimleri bir bildirimcide de belirtilebilir. Alan adları, kapsayan yapısına yükseltilir. Örneğin, bir adsız yapı şöyle görünür:
+Yapı bildirimleri, başka bir yapının veya birleşimin üyesi olduklarında bir bildirimci olmadan da belirlenebilir. Alan adları kapsayan yapıya yükseltilir. Örneğin, isimsiz bir yapı şöyle görünür:
 
 ```C
 struct s
@@ -171,9 +171,9 @@ struct s
 p_s->b = 100;  /* A reference to a field in the s structure */
 ```
 
-Bkz: [yapı ve birleşim üyeleri](../c-language/structure-and-union-members.md) yapısı başvuruları hakkında daha fazla bilgi için.
+Yapı başvuruları hakkında bilgi için bkz. [Yapı ve birleşim üyeleri](../c-language/structure-and-union-members.md) .
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

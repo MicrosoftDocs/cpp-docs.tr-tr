@@ -11,7 +11,7 @@ ms.locfileid: "62158440"
 ---
 # <a name="sign-of-bit-fields"></a>Bit Alanları İşareti
 
-**ANSI 3.5.2.1** "düz olmadığını" `int` alan olarak kabul edildiği bir **signed int** bit alanı veya bir unsigned int bit alanı
+**ANSI 3.5.2.1 &** "Düz" `int` alanın **imzalı bir int** bit alanı veya işaretsiz bir int bit alanı olarak değerlendirilip değerlendirilmeyeceği
 
 Bit alanları işaretli veya işaretsiz olabilir. Düz bit alanları işaretli olarak kabul edilir.
 

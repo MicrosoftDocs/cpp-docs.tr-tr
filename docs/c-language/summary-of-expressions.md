@@ -11,103 +11,103 @@ ms.locfileid: "62157824"
 ---
 # <a name="summary-of-expressions"></a>İfadelerin Özeti
 
-*Birincil ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Sabit*<br/>
+*birincil ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sabit*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*dize sabit değeri*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **(** *ifade* **)**
+&nbsp;&nbsp;&nbsp;&nbsp;**(**  *ifade*  **)**
 
 *ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*expression*  **,**  *assignment-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade*  **,**  *atama ifadesi*
 
-*Sabit ifade*:<br/>
+*sabit ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Koşullu ifade*
 
-*Koşullu ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-expression* **?**  *ifade* **:** *koşullu ifade*
+*koşullu ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal OR ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*MANTıKSAL or ifadesi*  **?**  *ifade*  **:**  *koşullu ifade*
 
 *atama ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Koşullu ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*unary-expression* *assignment-operator* *assignment-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*birli ifade* *atama-işleç* *atama-ifade*
 
 *sonek ifadesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Birincil ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **[** *ifade* **]**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **(** *bağımsız değişken ifade listesi*<sub>iyileştirilmiş</sub> **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **.**  *tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **->** *tanımlayıcısı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*birincil ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek-ifade*  **[**  *ifade*  **]**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek-ifade*  **(**  *bağımsız değişken-ifade-List*<sub>opt</sub> **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **.**  *Tanımlayıcısını*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek-ifade*  **->**  *tanımlayıcısı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **++**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **--**
 
-*bağımsız değişken ifade listesi*:<br/>
+*bağımsız değişken-liste*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*argument-expression-list*  **,**  *assignment-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*bağımsız değişken-ifade listesi*  **,**  *atama ifadesi*
 
-*Tekli ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **++**  *Tekli ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **--**  *Tekli ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*birli-işleç*<br/>
+*birli ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**++**  *Birli ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**--**  *Birli ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Birli işleci*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Cast ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sizeof** *tekli ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sizeof (** *tür adı* **)**
+&nbsp;&nbsp;&nbsp;&nbsp;**sizeof**  *birli ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**sizeof (**  *tür adı*  **)**
 
-*birli işleç*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **&** **&#42;** **+** **-** **~** **!**
+*birli-işleç*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**&****&#42;** **+**&#42;**-** **!** ! **~**
 
 *Cast ifadesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Tekli ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **(** *tür adı* **)** *atama ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*Birli ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**(**  *tür adı*  **)**  *Cast ifadesi*
 
-*ifade çarpma*:<br/>
+*çarpma ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Cast ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade çarpma* **&#42;** *atama ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade çarpma* **/** *atama ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade çarpma* **%** *atama ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*çarpma* ifadesi **&#42;** *Cast ifadesi*    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*çoğulereptıcı-ifade*  **/**  *atama ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*çoğulereptıcı-ifade*  **%**  *atama ifadesi*
 
-*additive-expression*:<br/>
+*Toplamsal ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*çarpma ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression* **+** *çarpma ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression* **-** *çarpma ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*Adli ifade*  **+**  *çoğulereptive-ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Adli ifade*  **-**  *çoğulereptive-ifadesi*
 
-*Shift-expression*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression* **\<\<** *additive-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression* **>>** *additive-expression*
+*SHIFT ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Toplamsal ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Shift-Expression***\<***toplamalı ifadesi*    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Shift-Expression*  **>>**  *toplamalı ifadesi*
 
-*İlişkisel ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **\<** *shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **>** *shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **\<=** *shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **>=** *shift-expression*
+*ilişkisel ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*SHIFT ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ilişkisel-ifade*  **\<**  *kaydırma ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ilişkisel-ifade*  **>**  *kaydırma ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ilişkisel-ifade***\<***kaydırma ifadesi*    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ilişkisel-ifade*  **>=**  *kaydırma ifadesi*
 
-*Eşitlik ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifade* **==** *ilişkisel ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifade* **! =** *ilişkisel ifade*
+*eşitlik ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ilişkisel ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*eşitlik-ifade*  **==**  *ilişkisel ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*eşitlik-ifade*  **! =**  *ilişkisel-ifade*
 
-*VE ifadeli*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*VE ifade* **&** *eşitlik ifadesi*
+*Ve-ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*eşitlik ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*AND ifadesi*  **&**  *eşitlik-ifadesi*
 
 *dışlamalı OR ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*AND ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*dışlamalı OR ifadesi* **^** *ve ifade*
+&nbsp;&nbsp;&nbsp;&nbsp;*dışlamalı OR-ifadesi*  **^**  *ve-ifadesi*
 
-*OR ifadesi kapsamlı*:<br/>
+*KAPSAMLı or-ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*dışlamalı OR ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*OR ifadesi kapsamlı* **&#124;** *dışlamalı OR ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*KAPSAMLı or ifadesi* **&#124;** *dışlamalı OR* ifadesi    
 
-*mantıksal-ve-expression*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*OR ifadesi dahil*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-ve-expression* **&&** *OR ifadesi dahil*
+*MANTıKSAL and-ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*kapsamlı OR ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal and ifadesi*  **&&**  *içinde or ifadesi*
 
-*mantıksal-veya-expression*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-ve-ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*logical-OR-expression*  **&#124;&#124;**  *logical-AND-expression*
+*MANTıKSAL or ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal AND ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;mantıksal *or* -ifadesi **&#124;&#124;** *mantıksal and ifadesi*    
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
