@@ -13,9 +13,9 @@ ms.locfileid: "62290826"
 ---
 # <a name="using-wmain"></a>wmain Kullanma
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Unicode programlama modelinde, bir geniş karakter sürümünü tanımlayabilirsiniz **ana** işlevi. Kullanım **wmain** yerine **ana** Unicode programlama modeli için uyar taşınabilir kod yazmak istiyorsanız.
+Unicode programlama modelinde, **ana** işlevin geniş karakterli bir sürümünü tanımlayabilirsiniz. Unicode programlama modeline bağlı taşınabilir kod yazmak istiyorsanız **Main** yerine **wmain** kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,15 +25,15 @@ wmain( int argc, wchar_t *argv[ ], wchar_t *envp[ ] )
 
 ## <a name="remarks"></a>Açıklamalar
 
-Biçimsel parametre bildirirsiniz **wmain** için benzer bir biçimde kullanarak **ana**. Ardından, geniş karakter bağımsız değişkenlerini ve isteğe bağlı olarak bir geniş karakter ortamında işaretçi programa geçirebilirsiniz. `argv` Ve `envp` parametreleri **wmain** türü `wchar_t*`. Örneğin:
+**Ana**için benzer bir biçim kullanarak, biçimsel parametreleri **wmain** 'e bildirebilirsiniz. Daha sonra geniş karakterli bağımsız değişkenleri ve isteğe bağlı olarak programa geniş karakterli bir ortam işaretçisini geçirebilirsiniz. `argv` **Wmain** için ve `wchar_t*` `envp` parametreleri türündedir. Örneğin:
 
-Programınızı kullanıyorsa bir **ana** işlevi çok baytlı karakterli ortam program başlangıcında çalışma zamanı kitaplığı tarafından oluşturulur. Ortamın geniş karakterli kopyası yalnızca gerektiğinde oluşturulur (örneğin, bir çağrı tarafından `_wgetenv` veya `_wputenv` işlevler). Bir MBCS ortamı zaten varsa, `_wputenv` veya `_wgetenv` için yapılan ilk çağrıda karşılık gelen bir geniş karakterli dize ortamı oluşturulur ve ardından `_wenviron` genel değişkeninin geniş karakterli bir sürümü olan `_environ` genel değişkeni tarafından gösterilir. Bu noktada, ortamın iki kopyası (MBCS ve Unicode) aynı anda var olur ve program ömrü boyunca işletim sistemi tarafından korunur.
+Programınız bir **ana** işlev kullanıyorsa, çok baytlı karakter ortamı program başlangıcında çalışma zamanı kitaplığı tarafından oluşturulur. Ortamın geniş karakterli bir kopyası yalnızca gerektiğinde oluşturulur (örneğin, `_wgetenv` veya `_wputenv` işlevlerine yapılan bir çağrı ile). Bir MBCS ortamı zaten varsa, `_wputenv` veya `_wgetenv` için yapılan ilk çağrıda karşılık gelen bir geniş karakterli dize ortamı oluşturulur ve ardından `_wenviron` genel değişkeninin geniş karakterli bir sürümü olan `_environ` genel değişkeni tarafından gösterilir. Bu noktada, ortamın iki kopyası (MBCS ve Unicode) aynı anda var olur ve program ömrü boyunca işletim sistemi tarafından korunur.
 
-Benzer şekilde, programınız kullanıyorsa bir **wmain** işlevi, bir geniş karakter ortamında program başlangıcında oluşturulur ve tarafından işaret edilen `_wenviron` genel değişkeni. İlk çağrıda bir MBCS (ASCII) ortamı oluşturulur `_putenv` veya `getenv`ve tarafından işaret edilen `_environ` genel değişkeni.
+Benzer şekilde, programınız bir **wmain** işlevi kullanıyorsa, program başlangıcında geniş karakterli bir ortam oluşturulur ve `_wenviron` genel değişken tarafından işaret edilir. Bir MBCS (ASCII) ortamı, veya `_putenv` `getenv`için yapılan ilk çağrıda oluşturulur ve `_environ` genel değişken tarafından işaret edilir.
 
-MBCS ortamı hakkında daha fazla bilgi için bkz. [uluslararası duruma getirme](../c-runtime-library/internationalization.md) içinde *çalışma zamanı kitaplığı başvurusu.*
+MBCS ortamı hakkında daha fazla bilgi için bkz *. çalışma zamanı kitaplık başvurusunda* [Uluslararası duruma getirme](../c-runtime-library/internationalization.md) .
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

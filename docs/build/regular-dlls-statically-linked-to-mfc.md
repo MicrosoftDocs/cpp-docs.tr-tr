@@ -1,5 +1,5 @@
 ---
-title: Statik olarak MFC'ye bağlı normal MFC DLL'leri
+title: MFC 'ye statik olarak bağlı normal MFC DLL 'Leri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - regular MFC DLLs [C++]
@@ -16,69 +16,69 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62314786"
 ---
-# <a name="regular-mfc-dlls-statically-linked-to-mfc"></a>Statik olarak MFC'ye bağlı normal MFC DLL'leri
+# <a name="regular-mfc-dlls-statically-linked-to-mfc"></a>MFC 'ye statik olarak bağlı normal MFC DLL 'Leri
 
-MFC DLL statik olarak MFC'ye bağlı normal MFC dahili olarak kullandığı bir DLL'dir ve DLL'de dışa aktarılan işlevleri MFC veya MFC olmayan yürütülebilir dosyaları tarafından çağrılabilir. Adı açıklandığı gibi bu tür bir DLL, MFC statik bağlantı kitaplığı sürümü kullanılarak oluşturulur. İşlevleri, genellikle bir Normal MFC DLL standart C arabirimini kullanarak dışarı aktarılır. Örnek Normal MFC DLL'SİNİN yazma, derleme ve ilişkin bir örnek için bkz. [ile ilgili](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/DllScreenCap).
+MFC 'ye statik olarak bağlanan normal bir MFC DLL, MFC 'yi dahili olarak kullanan bir DLL 'dir ve DLL 'deki verilen işlevler MFC ya da MFC olmayan yürütülebilir dosyalar tarafından çağrılabilir. Adın açıkladığı gibi, bu tür DLL MFC 'nin statik bağlantı kitaplığı sürümü kullanılarak oluşturulmuştur. İşlevler genellikle standart C arabirimi kullanılarak normal MFC DLL 'sinden içe aktarılabilir. Normal MFC DLL yazma, oluşturma ve kullanma hakkında bir örnek için bkz. örnek [DLLScreenCap](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/DllScreenCap).
 
-USRDLL terimi artık Visual C++ belgelerinde kullanılan unutmayın. Statik olarak MFC'ye bağlı normal MFC DLL'SİNİN önceki USRDLL ile aynı özelliklere sahiptir.
+USRDLL teriminin Visual C++ belgelerde artık kullanılmadığını unutmayın. MFC 'ye statik olarak bağlanan normal bir MFC DLL 'SI, eski USRDLL ile aynı özelliklere sahiptir.
 
-MFC'ye statik olarak bağlı normal MFC DLL'SİNİN, aşağıdaki özelliklere sahiptir:
+Statik olarak MFC 'ye bağlı normal MFC DLL 'SI aşağıdaki özelliklere sahiptir:
 
-- İstemci yürütülebilir, DLL'lerin (C, C++, Pascal, Visual Basic ve benzeri); kullanımını destekleyen herhangi bir dilde yazılabilir bir MFC uygulaması yok.
+- İstemci yürütülebilir dosyası, dll 'lerin kullanımını destekleyen herhangi bir dilde yazılabilir (C, C++, Pascal, Visual Basic vb.); MFC uygulaması olması gerekmez.
 
-- DLL uygulamaları tarafından kullanılan MFC statik bağlantı kitaplıklarında bağlayabilirsiniz. Artık statik bağlantı kitaplıklarında DLL'ler için ayrı bir sürümü yoktur.
+- DLL, uygulamalar tarafından kullanılan aynı MFC statik bağlantı kitaplıklarına bağlanabilir. Artık dll 'Ler için statik bağlantı kitaplıklarının ayrı bir sürümü yoktur.
 
-- MFC 4.0 sürümünden önce statik olarak MFC'ye bağlı normal MFC DLL'leri işlevi aynı türde USRDLL sağlanır. İtibarıyla Visual C++ sürüm 4.0 USRDLL terimi artık kullanılmıyor.
+- MFC 4,0 sürümünden önce, USRDLL 'ler MFC 'ye statik olarak bağlanan normal MFC DLL 'Leri ile aynı tür işlevselliği sağladı. Visual C++ sürüm 4,0 itibariyle, USRDLL terimi artık kullanılmıyor.
 
-MFC'ye statik olarak bağlı normal MFC DLL'SİNİN, aşağıdaki gereksinimleri vardır:
+Statik olarak MFC 'ye bağlı normal MFC DLL 'SI aşağıdaki gereksinimlere sahiptir:
 
-- Bu tür bir DLL türetilen bir sınıf örneği oluşturmanız gerekir `CWinApp`.
+- Bu tür DLL, öğesinden `CWinApp`türetilmiş bir sınıf örneği oluşturmalıdır.
 
-- Bu tür bir DLL kullanan `DllMain` MFC tarafından sağlanan. Tüm özel DLL başlatma kodunda yerleştirin `InitInstance` üye işlevine ve sonlandırma kodu `ExitInstance` normal bir MFC uygulaması olduğu gibi.
+- Bu tür DLL MFC tarafından `DllMain` sunulan öğesini kullanır. DLL 'e özgü tüm başlatma kodlarını `InitInstance` üye işlevine ve sonlandırma kodunu normal bir MFC uygulamasında `ExitInstance` olduğu gibi yerleştirin.
 
-- Terim USRDLL kullanılmıyor olsa da hala tanımlamalısınız "**_USRDLL**" derleyici komut satırında. Bu tanım, hangi bildirimlerin çekilmesini MFC üst bilgi dosyaları belirler.
+- USRDLL terimi kullanılmıyor olsa da, derleyici komut satırında yine "**_USRDLL**" tanımlamanız gerekir. Bu tanım, MFC başlık dosyalarından hangi bildirimlerin çekilacağını belirler.
 
-Normal MFC DLL'leri olmalıdır bir `CWinApp`-türetilmiş sınıf ve o uygulama sınıfın tek bir nesne gibi bir MFC uygulaması. Ancak, `CWinApp` DLL'nin nesne gibi bir ana ileti pompası yok `CWinApp` uygulamanın nesne.
+MFC uygulaması gibi normal MFC dll `CWinApp`'lerinin türetilmiş bir sınıfı ve bu uygulama sınıfının tek bir nesnesi olmalıdır. Ancak, bir `CWinApp` uygulamanın `CWinApp` nesnesi gibi, dll nesnesinin bir ana ileti göndericisi yoktur.
 
-Unutmayın `CWinApp::Run` mekanizması uygulamanın ana ileti göndericisi çünkü bir DLL için uygulanmaz. DLL kalıcı olmayan iletişim kutuları açılır ya da kendi ana penceresi varsa, uygulamanın ana ileti pompası sırayla çağırır DLL tarafından dışarı aktarılan bir yordam çağırmalıdır `CWinApp::PreTranslateMessage` DLL'nin uygulama nesnesinin üye işlevi.
+Uygulamanın ana ileti `CWinApp::Run` göndericisinin sahibi olduğu için MEKANIZMANıN dll 'ye uygulanmadığını unutmayın. DLL engelleyici olmayan iletişim kutusu açarsa veya kendi ana çerçeve penceresine sahipse, uygulamanın ana ileti göndericisi dll tarafından, DLL 'nin uygulama nesnesinin `CWinApp::PreTranslateMessage` üye işlevini çağıran bir yordamı çağırmalıdır.
 
-İle ilgili örnek bu işlev örneği için bkz.
+Bu işleve bir örnek için bkz. DLLScreenCap Sample.
 
-Simgeler, genellikle bir Normal MFC DLL standart C arabirimini kullanarak dışarı aktarılır. Normal MFC DLL'den dışarı aktarılan bir işlevin bildirimi aşağıdaki gibi görünür:
+Semboller genellikle standart C arabirimi kullanılarak normal MFC DLL 'sinden içe aktarılabilir. Normal MFC DLL 'den dışarıya aktarılmış bir işlevin bildirimi şuna benzer:
 
 ```
 extern "C" __declspec(dllexport) MyExportedFunction( );
 ```
 
-Normal MFC DLL'SİNİN içindeki tüm bellek ayırmaları DLL kalmalı; DLL geçirin veya çağıran yürütülebilir dosyadan aşağıdakilerden herhangi birini alıyorsunuz gerekir:
+Normal bir MFC DLL içindeki tüm bellek ayırmaları DLL içinde kalacak; DLL 'nin, çağrıyı yapan bir yürütülebilir dosyadan geçmemelidir veya buradan alması gerekir:
 
-- MFC nesne işaretçileri
+- MFC nesnelerine işaretçiler
 
-- MFC tarafından ayrılan bellek işaretçisi
+- MFC tarafından ayrılan bellek işaretçileri
 
-Yukarıdakilerden herhangi biri yapın veya çağıran yürütülebilir dosyayı ve DLL arasında MFC'den türetilmiş nesneler geçirmek ihtiyaç duyduğunuz ise bir MFC uzantılı DLL oluşturmanız gerekir.
+Yukarıdakilerden herhangi birini yapmanız gerekiyorsa veya çağıran çalıştırılabilirle DLL arasında MFC 'den türetilmiş nesneler geçirmeniz gerekiyorsa, bir MFC uzantısı DLL oluşturmanız gerekir.
 
-Verilerin bir kopyasını yaparsanız işaretçileri ayrılan bellek için C çalışma zamanı kitaplıkları tarafından bir uygulama ve DLL arasında geçirmek güvenlidir. Değil silmeli veya bu işaretçileri yeniden boyutlandırmak veya bellek kopyalayarak olmadan kullanın.
+Yalnızca verilerin bir kopyasını yaparsanız, bir uygulama ve DLL arasında C çalışma zamanı kitaplıkları tarafından ayrılan belleğe işaretçiler geçirmek güvenlidir. Bu işaretçileri silmeyin veya yeniden boyutlandırmamalıdır ya da belleğin bir kopyasını oluşturmadan kullanmanız gerekir.
 
-MFC'ye statik olarak bağlanan bir DLL de dinamik olarak paylaşılan MFC DLL'lerine bağlanamıyor. Dinamik olarak MFC'ye statik olarak bağlanan bir DLL bir uygulama gibi başka bir DLL bağlıdır; uygulamalar için diğer DLL gibi bağlayın.
+MFC 'ye statik olarak bağlı bir DLL Ayrıca paylaşılan MFC DLL 'Lerine dinamik olarak bağlanamaz. MFC 'ye statik olarak bağlı bir DLL, diğer tüm DLL gibi bir uygulamaya dinamik olarak bağlanır; uygulamalar, diğer herhangi bir DLL gibi buna bağlanır.
 
-Standart MFC statik bağlantı kitaplıklarında açıklanan kurallara göre adlandırılır [MFC DLL'leri için adlandırma kuralları](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions). Ancak, MFC sürüm 3.0 ve üstü ile artık bağlayıcıya bağlı olarak istediğiniz MFC kitaplık sürümünü el ile belirtmek gereklidir. Bunun yerine, MFC başlık dosyaları otomatik olarak gibi MFC Kitaplığı içinde göre önişlemci bağlamak için doğru sürümünü tanımlayan belirlemek  **\_hata ayıklama** veya **_UNICODE**. MFC üstbilgi dosyalarındaki MFC Kitaplığı belirli bir sürümüne bağlamak için DEFAULTLIB ekleyin.
+Standart MFC statik bağlantı kitaplıkları, [MFC DLL 'leri Için adlandırma kuralları](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)bölümünde açıklanan kurala göre adlandırılır. Ancak, MFC sürüm 3,0 ve üzeri ile, bağlantılı olmasını istediğiniz MFC kitaplığının sürümünü bağlayıcıya el ile belirtmek artık gerekli değildir. Bunun yerine, MFC başlık dosyaları, ** \_hata ayıklama** veya **_UNICODE**gibi Önişlemci tanımlarını temel alarak bağlamak üzere MFC kitaplığının doğru sürümünü otomatik olarak belirler. MFC üst bilgi dosyaları, MFC kitaplığının belirli bir sürümünde bağlantı için bağlayıcı arabirimini veren/DEFAULTLIB yönergeleri ekler.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Normal MFC DLL'leri Başlat](run-time-library-behavior.md#initializing-regular-dlls)
+- [Normal MFC DLL 'Leri başlatma](run-time-library-behavior.md#initializing-regular-dlls)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
+- [DLL 'nin bir parçası olarak MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
 
-- [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [Normal MFC DLL 'Lerinde Database, OLE ve Sockets MFC uzantı dll 'Lerini kullanma](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
 - [MFC DLL oluşturma](../mfc/reference/mfc-dll-wizard.md)
 
-- [Dinamik Olarak MFC'ye Bağlı Normal MFC DLL'leri](regular-dlls-dynamically-linked-to-mfc.md)
+- [MFC 'ye dinamik olarak bağlı normal MFC DLL 'Leri](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC uzantısı DLL’leri](extension-dlls-overview.md)
+- [MFC uzantı dll 'Leri](extension-dlls-overview.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

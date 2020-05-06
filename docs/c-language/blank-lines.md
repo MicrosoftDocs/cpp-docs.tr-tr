@@ -11,7 +11,7 @@ ms.locfileid: "62325942"
 ---
 # <a name="blank-lines"></a>Boş Satırlar
 
-**ANSI 4.9.2** bir yeni satır karakteri hemen önce metin akışına yazılan boşluk karakterleri yazılıp yazılmadığı içinde
+**ANSI 4.9.2** Metinde bir satır karakteri görüntülenmeden hemen önce metin akışına yazılan boşluk karakterlerinin olup olmadığı
 
 Boşluk karakterler korunur.
 

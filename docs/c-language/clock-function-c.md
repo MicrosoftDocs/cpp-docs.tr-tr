@@ -13,9 +13,9 @@ ms.locfileid: "62312589"
 ---
 # <a name="clock-function-c"></a>clock İşlevi (C)
 
-**ANSI 4.12.2.1** dönemi `clock` işlevi
+**ANSI 4.12.2.1** `clock` İşlev için dönem
 
-`clock` işlevinin dönemi, C programı yürütmeye başladığında başlar (0 değeri ile). 1'de ölçülen süreleri döndürür /**CLOCKS_PER_SEC** (hangi eşittir 1/1000 Microsoft C için).
+`clock` işlevinin dönemi, C programı yürütmeye başladığında başlar (0 değeri ile). 1/**CLOCKS_PER_SEC** (Microsoft C için 1/1000 'e eşit) olarak ölçülen saatleri döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

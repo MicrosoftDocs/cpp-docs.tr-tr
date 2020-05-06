@@ -16,10 +16,10 @@ ms.locfileid: "62325916"
 ---
 # <a name="blocks"></a>Bloklar
 
-Bildirimler, tanımlar ve deyimler küme ayracı alınmış bir dizi (**{}**) bir "yapı taşıdır." olarak adlandırılır C. bloklarında iki tür vardır. Bir deyimi bir veya daha fazla bilgilerinin oluşan "bileşik deyim," (bkz [bileşik deyim](../c-language/compound-statement-c.md)), bir blok türü. Yanı sıra işlev "header" (işlev adı, dönüş türünü ve biçimsel Parametreler) ilişkili diğer "işlev tanımında" bileşik deyim (işlevinin gövdesi) oluşur. Bir blok içinde diğer bloklardan "iç içe olamaz." kabul edilir
+Küme ayraçları (**{}**) içinde yer alan bir bildirim, tanım ve deyim dizisine "Block" adı verilir. C 'de iki tür blok vardır. "Bileşik deyim", bir veya daha fazla deyimden oluşan deyim (bkz. [bileşik deyim](../c-language/compound-statement-c.md)), tek bir blok türüdür. Diğeri, "işlev tanımı" bir bileşik deyimin (işlevin gövdesi) ve işlevin ilişkili "üst bilgisi" (işlev adı, dönüş türü ve biçimsel parametreler) oluşur. Diğer blokların içindeki bir blok "iç içe" olarak kabul edilir.
 
-Tüm bileşik deyimler küme ayracı alınmış olsa da her şey küme ayracı alınmış bir bileşik deyim oluşturan unutmayın. Dizi, yapı ya da numaralandırma öğelerin belirtimleri kaşlı ayraçlar içinde görünebilmelerine rağmen Örneğin, bileşik deyimler değiller.
+Tüm bileşik deyimler küme ayraçları içine alınsa da, küme ayraçları içine alınmış her şey bileşik bir deyim oluşturduğunu unutmayın. Örneğin, dizi, yapı veya numaralandırma öğelerinin belirtimleri küme ayraçları içinde görünebilse de, bunlar bileşik deyimler değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Dosyalar ve Kaynak Programlar](../c-language/source-files-and-source-programs.md)
+[Kaynak dosyalar ve kaynak programlar](../c-language/source-files-and-source-programs.md)

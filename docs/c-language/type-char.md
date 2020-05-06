@@ -15,14 +15,14 @@ ms.locfileid: "62345051"
 ---
 # <a name="type-char"></a>Tür char
 
-`char` Türü temsil edilebilir karakter kümesinin üyesi tamsayı değerini depolamak için kullanılır. Belirtilen karakterin ASCII kodu, tamsayı değeridir.
+`char` Türü, gösterilebilir tablo karakter kümesinin bir üyesinin tamsayı değerini depolamak için kullanılır. Bu tamsayı değeri, belirtilen karaktere karşılık gelen ASCII kodudur.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Karakter türü değerlerinin `unsigned char` bir aralığı 0-0xFF onaltılık sahip. A **signed char** 0x80-0x7F aralığındadır. Bu aralıklar sırasıyla 0 ile 255 ondalık ve ondalık + 127 -128 çevir. /J derleyici seçeneğini varsayılandan değiştirir **imzalı** için `unsigned`.
+Türün `unsigned char` karakter değerleri, 0 ile 0xFF onaltılık arasında bir aralığa sahiptir. **İşaretli bir Char** , 0x80 ile 0x7F aralığındadır. Bu aralıklar, sırasıyla 0-255 ondalık ve-128 ile + 127 ondalık 'e çevirir. /J derleyici seçeneği, varsayılan olarak **signed** olarak `unsigned`değişir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Temel Türleri Depolama](../c-language/storage-of-basic-types.md)
+[Temel türlerin depolanması](../c-language/storage-of-basic-types.md)

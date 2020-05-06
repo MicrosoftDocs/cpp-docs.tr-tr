@@ -13,21 +13,21 @@ ms.locfileid: "62273371"
 ---
 # <a name="manifest-generation-in-visual-studio"></a>Visual Studio'da Bildirim Oluşturma
 
-Belirli bir proje için bir bildirim dosyası üretimi projede denetlenebilir **özellik sayfaları** iletişim. Üzerinde **yapılandırma özellikleri** sekmesinde **bağlayıcı**, ardından **bildirim dosyası**, ardından **oluşturma bildirimi**. Varsayılan olarak, bir bildirim dosyası oluşturmak için yeni projeler, proje özellikleri ayarlanır. Ancak kullanarak bir proje için bildirim oluşturulmasını devre dışı bırakmak mümkündür **oluşturma bildirimi** projenin özelliği. Bu özelliği ayarlandığında **Evet**, bu proje için bildirim oluşturulur. Aksi takdirde bağlayıcı bağımlılıkları uygulama kodu çözülürken derleme bilgilerini yoksayar ve bildirim üretmez.
+Belirli bir proje için bildirim dosyası oluşturma proje **Özellik sayfaları** iletişim kutusunda denetlenebilir. **Yapılandırma özellikleri** sekmesinde **bağlayıcı**, ardından **bildirim dosyası**ve **bildirim oluştur**' a tıklayın. Varsayılan olarak, yeni projelerin proje özellikleri bir bildirim dosyası oluşturmak üzere ayarlanır. Ancak, projenin bildirim **Oluştur** özelliğini kullanarak bir proje için bildirimin oluşturulmasını devre dışı bırakmak mümkündür. Bu özellik **Evet**olarak ayarlandığında, bu proje için bildirim oluşturulur. Aksi takdirde bağlayıcı, uygulama kodunun bağımlılıklarını çözümlerken derleme bilgilerini yoksayar ve bildirimi oluşturmaz.
 
-Visual Studio'da derleme sistemi son ikili uygulama dosyasında katıştırılmış veya bir dış dosya oluşturulan bildirim sağlar. Bu davranış tarafından denetlenir **ekleme bildirimi** seçeneğini **proje özellikleri** iletişim. Bu özelliği ayarlamak için açık **bildirim aracında** düğümünü seçip **giriş ve çıkış**. Bildirim gömülü değilse, bir dış dosya oluşturulan ve son ikili ile aynı dizinde kaydedildi. Visual Studio, bildirim katıştırılır, aşağıdaki işlemi kullanarak son bildirimleri gömer:
+Visual Studio 'daki derleme sistemi, bildirimin son ikili uygulama dosyasına gömülmesini veya harici bir dosya olarak oluşturulmasını sağlar. Bu davranış, **Proje özellikleri** Iletişim kutusunda **ekleme bildirimi** seçeneği tarafından denetlenir. Bu özelliği ayarlamak için, **bildirim aracı** düğümünü açın **ve giriş ve çıkış**' ı seçin. Bildirim katıştırılmadıysanız, dış dosya olarak oluşturulur ve son ikiliden aynı dizine kaydedilir. Bildirim katıştırılmışsa, Visual Studio aşağıdaki işlemi kullanarak son bildirimleri katıştırır:
 
-1. Kaynak kodu için nesne dosyaları derlendikten sonra bağlayıcı bağımlı derleme bilgilerini toplar. Bağlayıcı, son ikili bağlarken, daha sonra son bildirim oluşturmak için kullanılan bir ara bildirimi oluşturur.
+1. Kaynak kodu nesne dosyalarına derlendikten sonra bağlayıcı, bağımlı derleme bilgilerini toplar. Son ikili bağlama sırasında bağlayıcı, daha sonra son bildirimi oluşturmak için kullanılan bir ara bildirim oluşturur.
 
-1. Bildirim ve bağlama Ara tamamladıktan sonra bildirim aracı son bildirim birleştirme ve dış dosya kaydetmek için yürütülür.
+1. Ara bildirim ve bağlama işlemi tamamlandıktan sonra, bildirim aracı son bildirimi birleştirmek ve bir dış dosya olarak kaydetmek için yürütülür.
 
-1. Proje yapı sistemi sonra bildirim aracı tarafından oluşturulan bildirim zaten ikili dosyada gömülü bildirimle daha farklı bilgi içerip içermediğini algılar.
+1. Proje derleme sistemi daha sonra, bildirim aracı tarafından oluşturulan bildirimin ikili dosyada zaten eklenmiş olan bildirimden farklı bilgiler içerip içermediğini algılar.
 
-1. İkili dosyada gömülü bildirimle bildirim aracı tarafından oluşturulan bildirimden farklı veya ikili dosyada gömülü bir bildirim içermiyor, Visual Studio bağlayıcı bir kez daha dış bildirim dosyası içinde bir ikili dosya olarak eklemek için hizmetinizde bir Kaynak.
+1. İkiliye gömülü bildirim, bildirim aracı tarafından oluşturulan bildirimden farklıysa veya ikili bir katıştırılmış bildirim içermiyorsa, Visual Studio, dış bildirim dosyasını ikili dosyanın içine kaynak olarak eklemek için bir kez daha zaman bağlayıcı çağırır.
 
-1. İkili dosyada gömülü bildirimle bildirim aracı tarafından oluşturulan bildirim ile aynı olduğunda, derleme yapı adımlarda devam eder.
+1. İkiliye gömülü olan bildirim, bildirim aracı tarafından oluşturulan bildirimle aynıysa, derleme sonraki derleme adımlarına devam edecektir.
 
-Metin kaynak olarak son ikili içinde bildirim katıştırılır ve son ikili açarak Visual Studio'da bir dosya olarak görüntülenebilir. Bildirim doğru kitaplıklara işaret ettiğinden emin olmak için açıklanan adımları izleyin. [Visual C++ uygulaması bağımlılıklarını anlama](../windows/understanding-the-dependencies-of-a-visual-cpp-application.md) veya açıklanan önerileri uygulayın [sorungiderme](troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md) bölümü.
+Bildirim, son ikilinin içine metin kaynağı olarak katıştırılır ve Visual Studio 'da dosya olarak son ikiliyi açılarak görüntülenebilir. Bildirimin doğru kitaplıklara işaret ettiğini sağlamak için, [bir Visual C++ uygulamasının bağımlılıklarını anlama](../windows/understanding-the-dependencies-of-a-visual-cpp-application.md) bölümünde açıklanan adımları Izleyin veya [sorun giderme](troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md) bölümünde açıklanan önerileri izleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

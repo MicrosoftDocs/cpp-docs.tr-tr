@@ -21,11 +21,11 @@ ms.locfileid: "62290696"
 ---
 # <a name="customizing-c-command-line-processing"></a>C Komut Satırı İşlemini Özelleştirme
 
-Programınızı komut satırı bağımsız değişkenlerini almaz, komut satırı işlemeyi gerçekleştiren yordamı kullanımını gizleme tarafından az miktarda alan kaydedebilirsiniz. Bu yordamı çağrılır **_setargv** (veya **_wsetargv** geniş karakter ortamında) anlatılan şekilde [joker karakter bağımsız değişkenlerini genişletme](../c-language/expanding-wildcard-arguments.md). Kullanımını engellemek için dosya içeren bir şey yapan bir yordam tanımlamak **ana** işlev ve adlandırın **_setargv** (veya **_wsetargv** geniş karakter ortam). Çağrı **_setargv** veya **_wsetargv** ardından tanımınızı tarafından sağlanıyorsa **_setargv** veya **_wsetargv** , ve kitaplık sürümü yüklü değil.
+Programınız komut satırı bağımsız değişkenleri içermiyorsa, komut satırı işlemeyi gerçekleştiren kitaplık yordamının kullanımını kaldırarak az miktarda alan kaydedebilirsiniz. Bu yordam, [joker karakter bağımsız değişkenlerini genişletme](../c-language/expanding-wildcard-arguments.md)bölümünde açıklandığı gibi **_setargv** (veya geniş karakterli ortamda **_wsetargv** ) olarak adlandırılır. Kullanımını bastırmak için, **ana** işlevi içeren dosyada hiçbir şey yapmaz ve **_setargv** (veya geniş karakter ortamında **_wsetargv** ) adını belirleyin. **_Setargv** veya **_wsetargv** çağrısı daha sonra **_setargv** veya **_wsetargv** tanımınız tarafından karşılanır ve kitaplık sürümü yüklenmez.
 
-Benzer şekilde, hiçbir zaman ortam tablosuna aracılığıyla erişiyorsanız `envp` bağımsız değişken yerine kullanılacak boş kendi yordamınızı sağlayabilir **_setenvp** (veya **_wsetenvp**), ortam işleme yordamı.
+Benzer şekilde, ortam tablosuna hiçbir daha `envp` bağımsız değişken aracılığıyla erişemiyorsanız, ortam işleme yordamının **_setenvp** (veya **_wsetenvp**) yerine kendi boş bir yordamını sağlayabilirsiniz.
 
-Programınız için çağrılar yaparsa **_spawn** veya **_exec** C Çalışma Zamanı Kitaplığı'ndaki yordamlara ailesi, size değil bastırmak ortam işleme yordamı geçirmek için bu yordamı kullanıldığından bir Yeni işlem ortamı spawning işlemi.
+Programınız, C çalışma zamanı kitaplığındaki **_spawn** veya **_exec** aile ailesine çağrılar yapıyorsa, bu yordam, bir ortamı oluşturma işleminden yeni işleme geçirmek için kullanıldığından, ortam işleme yordamını gizmemelisiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

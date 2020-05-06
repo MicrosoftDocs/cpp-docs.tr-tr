@@ -18,7 +18,7 @@ ms.locfileid: "62325669"
 ---
 # <a name="c-identifiers"></a>C Tanımlayıcıları
 
-"Tanımlayıcı" veya "simge" sağladığınız değişkenleri, türleri, işlevleri ve etiketleri programınızdaki adlarıdır. Yazım denetimi ve her anahtar sözcük çalışmasından tanımlayıcı adları farklı olmalıdır. Anahtar sözcükleri (C ya da Microsoft), tanımlayıcı olarak kullanamayacağınız; Bunlar, özel kullanım için ayrılmıştır. Bir tanımlayıcı, bir değişken, tür veya işlev bildiriminde belirterek oluşturun. Bu örnekte, `result` bir tam sayı değişkeni için bir tanımlayıcı ve `main` ve `printf` işlevleri için tanımlayıcı adları.
+"Tanımlayıcılar" veya "semboller", programınızdaki değişkenler, türler, işlevler ve Etiketler için sağladığınız adlardır. Tanımlayıcı adları, herhangi bir anahtar kelimelerden farklı yazımla ve büyük/küçük harflere Tanımlayıcılar olarak anahtar sözcükler (C veya Microsoft) kullanamazsınız; özel kullanım için ayrılmıştır. Bir tanımlayıcıyı, bir değişken, tür veya işlev bildiriminde belirterek oluşturabilirsiniz. Bu örnekte, `result` bir tamsayı değişkeni `main` için bir tanımlayıcıdır ve işlevleri için tanımlayıcı `printf` isimleridir.
 
 ```
 #include <stdio.h>
@@ -32,33 +32,33 @@ int main()
 }
 ```
 
-Bildirilen sonra sonraki program deyimlerinde tanımlayıcı ilişkili değerine başvurmak için kullanabilirsiniz.
+Bildirdikten sonra, sonraki program deyimleriyle ilgili tanımlayıcıyı kullanarak ilişkili değere başvurabilirsiniz.
 
-Özel bir tür tanımlayıcı bir deyimi etiket adında, kullanılabilir `goto` deyimleri. (Bildirimleri açıklanmıştır [bildirimler ve türler](../c-language/declarations-and-types.md) deyim etiketleri açıklanmıştır [goto ve etiketli deyimleri](../c-language/goto-and-labeled-statements-c.md).)
+Deyim etiketi olarak adlandırılan özel bir tür tanımlayıcı, `goto` ifadelerde kullanılabilir. (Bildirimler Bildirimler bölümünde açıklanmış [ve türler](../c-language/declarations-and-types.md) deyim etiketleri [goto ve etiketli deyimlerde](../c-language/goto-and-labeled-statements-c.md)açıklanmıştır.)
 
 ## <a name="syntax"></a>Sözdizimi
 
 *tanımlayıcı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*rakam*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *rakam*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *basamak*
+&nbsp;&nbsp;&nbsp;&nbsp;*rakam olmayan*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *basamak olmayan*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *sayısı*
 
-*rakam*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**_ b c d e f g h miyim j k l mn o p q r s t u v z y x w**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**BİR B C D E F G H MİYİM J K L MN O P Q R S T U V W X, Y, Z**
+*basamak olmayan*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**_ a b c d e f g h i j k l r s u p**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**A B C D E F G H I J K L R S U P Q S T**
 
-*basamak*: biri<br/>
+*basamak*: aşağıdakilerden biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
 
-Bir tanımlayıcı adının ilk karakter bir `nondigit` (diğer bir deyişle, ilk karakteri bir alt çizgi veya bir büyük harf veya küçük harf olması gerekir). Dış bir tanımlayıcının adı altı önemli karakterler ve 31 adları (bir işlevde) iç tanımlayıcılar için ANSI sağlar. Dış tanımlayıcıları (olanları genel kapsamda bildirilen veya depolama sınıfı ile bildirilen `extern`) bu tanımlayıcıları linkers gibi diğer yazılımlar tarafından işlenmek üzere olduğundan ek adlandırma sınırlamalara tabi olabilir.
+Bir tanımlayıcı adının ilk karakteri bir `nondigit` olmalıdır (yani, ilk karakter bir alt çizgi veya büyük harf veya küçük harf olmalıdır). ANSI, dış tanımlayıcı adının ve 31 ' in iç (bir işlev içinde) tanımlayıcılarında altı önemli karaktere izin verir. Dış tanımlayıcılar (genel kapsamda belirtilen veya depolama sınıfıyla `extern`tanımlanmış olanlar), bu tanımlayıcıların Linler gibi başka yazılımlar tarafından işlenmesi gerektiğinden ek adlandırma kısıtlamalarına tabi olabilir.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Dış tanımlayıcı adları önemli 6 karakter ve 31 adları (bir işlevde) iç tanımlayıcılar için ANSI izin verir, ancak Microsoft C derleyicisi bir iç veya dış tanımlayıcı adı 247 karakter sağlar. ANSI uyumluluğu ile ilgili değilse, bu varsayılan /H kullanarak küçük veya büyük bir sayı olarak değiştirebilirsiniz (Dış adların uzunluğunu kısıtla) seçeneği.
+ANSI, dış tanımlayıcı adlarında 6 önemli karakter ve iç (bir işlev içinde) tanımlayıcıları için 31 kullanılmasına izin veriyorsa, Microsoft C derleyicisi iç veya dış tanımlayıcı adında 247 karakter sağlar. ANSI uyumluluğuyla İlgilenmeyeceğiniz takdirde,/H (dış adların uzunluğunu kısıtla) seçeneğini kullanarak bu varsayılan ayarı daha küçük veya daha büyük bir sayı olarak değiştirebilirsiniz.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
-C derleyicisi karakter farklı olacak şekilde büyük ve küçük harfler göz önünde bulundurur. "Küçük harf duyarlılığını," olarak adlandırılan bu özellik aynı benzersiz tanımlayıcıları oluşturmanıza olanak sağlar ancak farklı durumlarda, bir veya daha fazla harf için yazım denetimi. Örneğin, her biri aşağıdaki tanımlayıcıların benzersiz şöyledir:
+C derleyicisi, büyük ve küçük harfleri birbirinden farklı karakterler olacak şekilde değerlendirir. "Büyük/küçük harf duyarlılığı" olarak adlandırılan bu özellik, bir veya daha fazla harf için aynı yazım, ancak farklı servis taleplerine sahip farklı tanımlayıcılar oluşturmanıza olanak sağlar. Örneğin, aşağıdaki tanımlayıcıların her biri benzersizdir:
 
 ```
 add
@@ -67,13 +67,13 @@ Add
 aDD
 ```
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-İki alt çizgi veya alt çizginin tarafından bir büyük harf ile başlayan tanımlayıcı adları seçmeyin. ANSI C standardı, derleyici kullanımı için ayrılmış olması için bu bileşimler ile başlayan tanımlayıcı adları sağlar. Dosya düzeyinde kapsamlı tanımlayıcıları da alt çizgi ve bir küçük harf ile ilk iki harf adlandırılmalıdır değil. Ayrıca, bu karakterlerle başlayan tanımlayıcı adları ayrılmıştır. Kural gereği, Microsoft makro adları ve Microsoft'a özgü anahtar adları için çift alt çizgi başlamak için bir alt çizgi ve bir büyük harf kullanır. Adlandırma çakışmaları önlemek için bir veya iki alt çizgi ile başlamayan tanımlayıcı adları veya alt çizginin bir büyük harf ile başlayan bir ada her zaman seçin.
+İki alt çizgi ile başlayan veya ardından büyük harfle izlenen tanımlayıcıların adlarını seçmeyin. ANSI C standardı, bu karakter birleşimleriyle başlayan tanımlayıcı adlarının derleyici kullanımı için ayrılması için izin verir. Dosya düzeyi kapsama sahip tanımlayıcılar, ilk iki harf olarak bir alt çizgi ve küçük harf olarak adlandırılmalıdır. Bu karakterlerle başlayan tanımlayıcı adları da ayrılır. Kurala göre, Microsoft, makro adlarına başlamak için bir alt çizgi ve büyük harf, Microsoft 'a özgü anahtar sözcük adları için de çift alt çizgi kullanır. Herhangi bir adlandırma çakışmasını önlemek için, her zaman bir veya iki alt çizgiyle başlamayan tanımlayıcı adlarını veya alt çizgi ile başlayıp büyük harfle başlayan adları seçin.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
-ANSI ya da Microsoft adlandırma kısıtlamaları için uygun geçerli tanımlayıcıları örnekleri şunlardır:
+Aşağıda, ANSI veya Microsoft adlandırma kısıtlamalarına uyan geçerli tanımlayıcıların örnekleri verilmiştir:
 
 ```
 j
@@ -84,17 +84,17 @@ skip12
 LastNum
 ```
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Kaynak dosyalarında tanımlayıcıları varsayılan olarak büyük küçük harfe duyarlı olsa da, nesne dosyalarında sembol değildir. Microsoft C, bir derleme biriminde içindeki tanımlayıcıları büyük küçük harfe duyarlı olarak değerlendirir.
+Kaynak dosyalardaki tanımlayıcılar varsayılan olarak büyük/küçük harfe duyarlı olsa da, nesne dosyalarındaki semboller değildir. Microsoft C, derleme birimi içindeki tanımlayıcıları büyük/küçük harfe duyarlı olarak değerlendirir.
 
-Microsoft bağlayıcı büyük/küçük harfe duyarlıdır. Tüm tanımlayıcılar çalışması göre tutarlı bir şekilde belirtmeniz gerekir.
+Microsoft Bağlayıcısı büyük/küçük harfe duyarlıdır. Tüm tanımlayıcıları büyük/küçük harfe göre tutarlı bir şekilde belirtmeniz gerekir.
 
-"Kaynak karakter kümesi" kaynak dosyalarında görünebilen geçerli karakterler kümesidir. Microsoft C için standart ASCII karakter kümesi kaynak kümesidir. ASCII karakterleri kaçış dizileri kullanılan kaynak karakter kümesi ve yürütme karakter kümesi içerir. Bkz: [karakter sabitleri](../c-language/c-character-constants.md) yürütme karakter hakkında bilgi için ayarlayın.
+"Kaynak karakter kümesi", kaynak dosyalarda görünebilen yasal karakter kümesidir. Microsoft C için, kaynak kümesi standart ASCII karakter kümesidir. Kaynak karakter kümesi ve yürütme karakter kümesi, kaçış dizileri olarak kullanılan ASCII karakterlerini içerir. Yürütme karakter kümesi hakkında bilgi için bkz. [karakter sabitleri](../c-language/c-character-constants.md) .
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
-Bir tanımlayıcının "bölgesi, programın adı verilir ve"başka bir kapsamda aynı ada için aynı tanımlayıcıyı belirtir olup olmadığını belirleyen bağlantı,"kapsamı," vardır. Bu konularda açıklandığı [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md).
+Bir tanımlayıcı, bilinen programın bölgesi olan "kapsam" ve başka bir kapsamdaki aynı adın aynı tanımlayıcıya başvuruda bulunup olmadığını belirleyen "bağlantı" anlamına gelir. Bu konular [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)konularında açıklanmaktadır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

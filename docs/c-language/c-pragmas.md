@@ -13,22 +13,22 @@ ms.locfileid: "62326202"
 ---
 # <a name="c-pragmas"></a>C Pragmaları
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-A *pragma* derleyiciye derleme zamanında belirli bir eylem gerçekleştirin. Pragmalar derleyiciden derleyiciye farklılık gösterir. Örneğin, kullanabileceğiniz **en iyi duruma getirme** pragması, programınızda gerçekleştirilecek iyileştirmeleri ayarlamak için. Microsoft C pragmaları şunlardır:
+Bir *pragma* derleyiciye derleme zamanında belirli bir eylem gerçekleştirmesini söyler. Pragmalar derleyiciden derleyiciye farklılık gösterir. Örneğin, programınızda gerçekleştirilecek iyileştirmeleri ayarlamak için **optimize** pragma ' ı kullanabilirsiniz. Microsoft C pragmaları şunlardır:
 
 |||||
 |-|-|-|-|
 |**alloc_text**|**data_seg**|**inline_recursion**|**setlocale**|
-|**auto_inline**|**İşlevi**|**intrinsic**|**warning**|
-|**check_stack**|**hdrstop**|**message**||
-|**code_seg**|**include_alias**|**optimize**||
-|**Açıklama**|**inline_depth**|**pack**||
+|**auto_inline**|**çalışmayacaktır**|** içi**|**warning**|
+|**check_stack**|**hdrstop**|**İleti**||
+|**code_seg**|**include_alias**|**getirileceğini**||
+|**açıklamanın**|**inline_depth**|**paketi**||
 
-Bkz: [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md) Microsoft C derleyicisi pragmaları açıklaması.
+Microsoft C derleyici pragmaları açıklaması için bkz. [pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md) .
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Dosyalar ve Kaynak Programlar](../c-language/source-files-and-source-programs.md)
+[Kaynak dosyalar ve kaynak programlar](../c-language/source-files-and-source-programs.md)

@@ -13,9 +13,9 @@ ms.locfileid: "62344986"
 ---
 # <a name="time-zone"></a>Saat Dilimi
 
-**ANSI 4.12.1** ve yerel saat dilimi gün ışığından yararlanma
+**ANSI 4.12.1** Yerel Saat dilimi ve yaz saati kaydetme saati
 
-Yerel saat dilimini Pasifik Standart Saati ' dir. Microsoft C, gün ışığından yararlanma destekler.
+Yerel Saat dilimi Pasifik Standart Saati ' dir. Microsoft C, gün ışığından yararlanma süresini destekler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

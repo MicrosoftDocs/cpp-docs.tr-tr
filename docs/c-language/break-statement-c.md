@@ -19,8 +19,8 @@ ms.locfileid: "62313369"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*atlama-deyimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**BREAK;**
+*sıçrama-deyim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**sonundan**
 
 `break` deyimi, bir `switch` deyimi içinde belirli bir durumun işlenmesini sonlandırmak için sıkça kullanılır. Yinelemeli bir kapsayan veya `switch` deyimi olmaması bir hata oluşturur.
 

@@ -14,11 +14,11 @@ ms.locfileid: "62325253"
 ---
 # <a name="register-storage-class-specifier"></a>register Depolama Sınıfı Tanımlayıcısı
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Microsoft C/C++ derleyici, kayıt değişkenleri için kullanıcı isteklerini dikkate almaz. Bununla birlikte, taşınabilirlik için diğer tüm semantikler ilişkili **kaydetme** anahtar sözcüğü derleyici tarafından kabul edilir. Örneğin, birli adres işleci uygulanamıyor (**&**) için bir kayıt nesnesine ya da can **kaydetme** anahtar sözcüğü diziler üzerinde kullanılamaz.
+Microsoft C/C++ derleyici, kayıt değişkenleri için kullanıcı isteklerini dikkate almaz. Ancak, **Kaydet** anahtar sözcüğüyle ilişkili diğer tüm semantikler derleyici tarafından kabul edilir. Örneğin, birli adres işlecini (**&**) bir Register nesnesine uygulayamaz ve **register** anahtar sözcüğü diziler üzerinde kullanılamaz.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

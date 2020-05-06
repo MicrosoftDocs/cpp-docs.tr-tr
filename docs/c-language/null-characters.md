@@ -13,7 +13,7 @@ ms.locfileid: "62325461"
 ---
 # <a name="null-characters"></a>Boş Karakterler
 
-**ANSI 4.9.2** bir ikili akış için yazılan veriye aktarılabilen boş karakter sayısı
+**ANSI 4.9.2** İkili akışa yazılan verilerin eklenebileceği null karakter sayısı
 
 Herhangi bir sayıdaki boş karakter ikili akışa eklenebilir.
 

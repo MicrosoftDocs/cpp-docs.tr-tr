@@ -11,7 +11,7 @@ ms.locfileid: "62326059"
 ---
 # <a name="c-declarations-and-definitions"></a>C Tanımları ve Bildirimleri
 
-Bir "bildirim" belirli bir değişken, işlev veya tür ve öznitelikleri arasında bir ilişki kurar. [Bildirimlere genel bakış](../c-language/overview-of-declarations.md) yönelik ANSI sözdizimini sağlar `declaration` bildirimlere. Bir bildirim, bir tanımlayıcıya nereden ve ne zaman erişilebileceğini de belirtir (bir tanımlayıcının "bağlantısı"). Bkz: [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md) bağlantı hakkında bilgi için.
+Bir "bildirim" belirli bir değişken, işlev veya tür ve öznitelikleri arasında bir ilişki kurar. [Bildirimlere genel bakış](../c-language/overview-of-declarations.md) , Terminal `declaration` dışı için ANSI söz dizimini verir. Bir bildirim, bir tanımlayıcıya nereden ve ne zaman erişilebileceğini de belirtir (bir tanımlayıcının "bağlantısı"). Bağlantı hakkında bilgi için bkz. [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md) .
 
 Bir değişkenin "tanımı" bildirimle aynı ilişkileri kurar, ancak depolamanın değişken için ayrılmasına da neden olur.
 
@@ -30,4 +30,4 @@ int count( double f ) {}
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Dosyalar ve Kaynak Programlar](../c-language/source-files-and-source-programs.md)
+[Kaynak dosyalar ve kaynak programlar](../c-language/source-files-and-source-programs.md)

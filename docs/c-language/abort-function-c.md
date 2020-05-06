@@ -13,9 +13,9 @@ ms.locfileid: "62313460"
 ---
 # <a name="abort-function-c"></a>abort İşlevi (C)
 
-**ANSI 4.10.4.1** davranışını **iptal** açık ve geçici dosyalar ile ilgili işlevi
+**ANSI 4.10.4.1** Açık ve geçici dosyalarla ilgili olarak **Abort** işlevinin davranışı
 
-**İptal** işlevi açık veya geçici dosyaları kapatmaz. Akış arabelleklerini temizlemez. Daha fazla bilgi için [iptal](../c-runtime-library/reference/abort.md).
+**Abort** işlevi açık veya geçici olan dosyaları kapatmaz. Akış arabelleklerini temizlemez. Daha fazla bilgi için bkz. [iptal](../c-runtime-library/reference/abort.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

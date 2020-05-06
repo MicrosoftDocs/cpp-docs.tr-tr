@@ -29,7 +29,7 @@ C birli artı, aritmetik olumsuzlama, tamamlayan ve mantıksal olumsuzlama işle
 |**+**|Bir ifadenin başında parantez içinde gelen birli artı işleci, parantez içindeki işlemlerin gruplandırmasını zorlar. Birden fazla ilişkilendirilebilir veya değiştirebilir ikili işleç içeren ifadelerle kullanılır. İşlenen, aritmetik türde olmalıdır. Sonuç, işlenenin değeridir. Bir integral işlenen, integral yükseltme uygulanır. Sonucun türü yükseltilen işlenenin türüdür.|
 |**-**|Aritmetik olumsuzlama işlevi, işleneninin negatifini (ikinin tamamlayıcısı) üretir. İşlenen, bir tamsayı veya kayan değer olmalıdır. Bu işleç, her zamanki aritmetik dönüştürmeleri gerçekleştirir.|
 |`~`|Bitwise-complement (veya bitwise-NOT) işleci, işlenenin bit seviyesinde tamamlayıcısını üretir. İşlenen, tamsayı türünde olmalıdır. Bu işleç, her zamanki aritmetik dönüşümleri gerçekleştirir; sonuç, dönüştürme işleminden sonra işlenenin türündendir.|
-|**\!**|logical-negation (logical-NOT) işleci, işleneni doğru ise (sıfır dışında bir değer) 0 değerini üretir, işleneni yanlış ise (0) 1 değerini üretir. Sonuç `int` türündendir. İşlenen; bir tamsayı, kayan değer veya işaretçi değer olmalıdır.|
+|**!**|logical-negation (logical-NOT) işleci, işleneni doğru ise (sıfır dışında bir değer) 0 değerini üretir, işleneni yanlış ise (0) 1 değerini üretir. Sonuç `int` türündendir. İşlenen; bir tamsayı, kayan değer veya işaretçi değer olmalıdır.|
 
 İşaretçilerde birli aritmetik işlemler geçersizdir.
 
@@ -42,7 +42,7 @@ short x = 987;
     x = -x;
 ```
 
-Yeni değer, yukarıdaki örnekte `x` 987 veya-987 negatif olduğunu.
+Yukarıdaki örnekte, yeni değeri 987 veya-987 `x` ' nin negatiftir.
 
 ```
 unsigned short y = 0xAAAA;

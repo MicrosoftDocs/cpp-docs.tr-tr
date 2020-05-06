@@ -13,10 +13,10 @@ ms.locfileid: "62313668"
 ---
 # <a name="addition-"></a>Toplama (+)
 
-Toplama işleci (**+**) iki işlenenleri eklenecek neden olur. Her iki işlenen de tamsayı veya kayan türler olabilir veya tek bir işlenen bir işaretçi ve diğer bir tamsayı olabilir.
+Toplama işleci (**+**) iki işleneninin eklenmesine neden olur. Her iki işlenen de İntegral veya kayan türler olabilir ya da bir işlenen bir işaretçi ve diğeri tamsayı olabilir.
 
-Bir tamsayı işaretçisi, tamsayı değeri eklendiğinde (*miyim*) boyutunu ele alan bir işaretçi değeri tarafından çarpılarak dönüştürülür. Dönüştürme işleminden sonra temsil eder bir tamsayı değeri *miyim* her konum işaretçi türü tarafından belirtilen uzunluğa sahip olduğu, bellek konumları. Dönüştürülmüş tamsayı değerini işaretçi değerine eklendiğinde adresini temsil eden yeni bir işaretçi değeri sonucudur *miyim* özgün adresinden konumları. Yeni İşaretçi değeri özgün işaretçi değeri olarak aynı türde bir değer adresleri ve bu nedenle aynı dizi dizini oluşturma (bkz [One-Dimensional diziler](../c-language/one-dimensional-arrays.md) ve [çok boyutlu diziler](../c-language/multidimensional-arrays-c.md)). Dizinin dışına toplam işaretçi işaret ediyorsa dışında yüksek sonundan ilk konumda sonuç tanımsızdır. Daha fazla bilgi için [işaretçi aritmetiği](../c-language/pointer-arithmetic.md).
+Bir işaretçiye tamsayı eklendiğinde, tamsayı değeri (*i*), işaretçinin adresleyen değerin boyutuyla çarpılarak dönüştürülür. Dönüştürmeden sonra, tamsayı değeri *i* bellek konumlarını temsil eder; burada her konum işaretçi türü tarafından belirtilen uzunluğa sahiptir. Dönüştürülen tamsayı değeri işaretçi değerine eklendiğinde sonuç, *özgün adresten gelen konumların bulunduğu* adresi temsil eden yeni bir işaretçi değeridir. Yeni işaretçi değeri, özgün işaretçi değeri ile aynı türdeki bir değere yöneliktir ve bu nedenle dizi dizinlemesi ile aynıdır (bkz. [tek boyutlu diziler](../c-language/one-dimensional-arrays.md) ve [çok boyutlu diziler](../c-language/multidimensional-arrays-c.md)). Toplam işaretçisi, üst uçta sonraki ilk konum dışında, dizinin dışına işaret ediyorsa, sonuç tanımsızdır. Daha fazla bilgi için bkz. [Işaretçi aritmetiği](../c-language/pointer-arithmetic.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Ek İşleçleri](../c-language/c-additive-operators.md)
+[C eklenebilir Işleçler](../c-language/c-additive-operators.md)

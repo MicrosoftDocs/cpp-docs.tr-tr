@@ -11,9 +11,9 @@ ms.locfileid: "62312680"
 ---
 # <a name="character-constants-and-conditional-inclusion"></a>Karakter Sabitleri ve Koşullu Dahil Etme
 
-**ANSI 3.8.1** koşullu içermeyi denetleyen sabit bir ifade bir tek karakter sabitinin değerinin yürütme karakter kümesindeki aynı karakter sabitinin değeri olup olmadığını eşleşir. Böyle bir karakter sabitinin negatif değere sahip olup olamayacağı
+**ANSI 3.8.1** Koşullu eklemeyi denetleyen sabit bir ifadede tek karakterlik bir karakter sabiti değerinin, yürütme karakter kümesi içindeki aynı karakter sabiti değeriyle eşleşip eşleşmediğini belirtir. Böyle bir karakter sabitinin negatif değere sahip olup olamayacağı
 
-Önişlemci deyimlerinde kullanılan karakter kümesi yürütme karakter kümesi ile aynıdır. Önişlemci negatif karakter değerlerini tanır.
+Önişlemci deyimlerde kullanılan karakter kümesi yürütme karakter kümesiyle aynıdır. Önişlemci negatif karakter değerlerini tanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

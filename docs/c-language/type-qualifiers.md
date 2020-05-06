@@ -19,9 +19,9 @@ ms.locfileid: "62344804"
 ---
 # <a name="type-qualifiers"></a>Tür Niteleyicileri
 
-Tür niteleyicileri iki özelliklerden biri için bir tanımlayıcı sağlar. **Const** tür niteleyicisi değiştirilemez olarak bir nesne bildirir. `volatile` Tür niteleyicisi değeri de avustralya'dan arama değiştirilebilir kontrolü programın göründüğü, eşzamanlı olarak çalışan bir iş parçacığı gibi bir şey tarafından bir öğe bildirir.
+Tür niteleyicileri bir tanımlayıcıya iki özelliklerden birini verir. **Const** tür niteleyicisi, bir nesneyi değiştirilemeyecek şekilde bildirir. Tür `volatile` niteleyicisi, değeri, benzer bir şekilde yürütülen iş parçacığı gibi, göründüğü programın denetimi dışında bir şey tarafından meşru bir şekilde değiştirilebilen bir öğe bildirir.
 
-İki tür niteleyicileri, **const** ve `volatile`, bir bildirim içinde yalnızca bir kez görünebilir. Tür niteleyicileri, herhangi bir tür tanımlayıcısı ile görünebilir; Ancak, bunlar birden çok öğe bildirimindeki ilk virgülden sonra yer alamaz. Örneğin, aşağıdaki bildirimleri yasal şunlardır:
+İki tür niteleyicisi, **const** ve `volatile`, bir bildirimde yalnızca bir kez bulunabilir. Tür niteleyicileri herhangi bir tür belirticisiyle görünebilir; Ancak, birden çok öğe bildiriminde ilk virgülden sonra yer alamaz. Örneğin, aşağıdaki bildirimler geçerlidir:
 
 ```
 typedef volatile int VI;
@@ -35,13 +35,13 @@ typedef int *i, volatile *vi;
 float f, const cf;
 ```
 
-Tür niteleyicileri, yalnızca tanımlayıcıları ifadelerinde l-değerler olarak erişirken ilgilidir. Bkz: [L-değeri ve r değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md) l-değeri ve ifadeleri hakkında daha fazla bilgi için.
+Tür niteleyicileri yalnızca tanımlayıcılardaki l-Values olarak erişim için geçerlidir. L-Values ve ifadeler hakkında bilgi için bkz. [l-Value ve R-Value ifadeleri](../c-language/l-value-and-r-value-expressions.md) .
 
 ## <a name="syntax"></a>Sözdizimi
 
 *tür niteleyicisi*: **constvolatile**
 
-Aşağıdaki yasal **const** ve `volatile` bildirimleri:
+Aşağıdakiler geçerli **const** ve `volatile` bildirimlerdir:
 
 ```
 int const *p_ci;       /* Pointer to constant int */
@@ -51,18 +51,18 @@ int (*const cp_i);     /* Constant pointer to int */
 int volatile vint;     /* Volatile integer        */
 ```
 
-Bir dizi türü belirtimi tür niteleyicileri içeriyorsa, öğenin nitelenmiş, dizi türü değil. İşlev türü belirtimi niteleyicileri içeriyorsa, tanımsız bir davranıştır. Ne `volatile` ya da **const** değerleri aralığı veya aritmetik nesnesinin özelliklerini etkiler.
+Bir dizi türünün belirtimi tür niteleyicileri içeriyorsa, öğesi dizi türü değil, nitelenir. İşlev türü belirtimi niteleyiciler içeriyorsa, davranış tanımsızdır. Ne `volatile` ya da **const** , nesnenin değer aralığını veya aritmetik özelliklerini etkiler.
 
-Bu listeyi nasıl kullanılacağını açıklar **const** ve `volatile`.
+Bu liste **const** ve ' `volatile`nin nasıl kullanılacağını açıklar.
 
-- **Const** anahtar sözcüğü, herhangi bir temel ya da toplama türü veya herhangi bir türde bir nesneye bir işaretçi değiştirmek için kullanılabilir veya bir `typedef`. Bir öğe ile yalnızca bildirilmişse **const** tür niteleyicisi türü olmasını alınır **const int**. A **const** değişken başlatılabilir veya bir depolama salt okunur bölgede yerleştirilebilir. **Const** anahtar sözcüğü, işaretçileri bildirmek için kullanışlıdır **const** bu işlev işaretçi herhangi bir şekilde değiştirmemeniz gerekir çünkü.
+- **Const** anahtar sözcüğü herhangi bir temel veya toplama türünü ya da herhangi bir türdeki bir nesneyi veya bir `typedef`işaretçiyi değiştirmek için kullanılabilir. Bir öğe yalnızca **const** türü niteleyicisi ile bildirilirse, türü **const int**olarak alınır. **Const** değişkeni, depolama alanının salt tanımlı bir bölgesine başlatılabilir veya yerleştirilebilir. **Const** anahtar sözcüğü, işlevin işaretçiyi herhangi bir şekilde değiştirmesinin gerekli olmasından dolayı **const** öğesine işaretçiler bildirmek için yararlıdır.
 
-- Derleyici, programda herhangi bir noktada varsayar bir `volatile` değişkenin değerini değiştirir veya kullanan bilinmeyen bir işlem tarafından erişilebilir. Bu nedenle, komutunda belirtilen iyileştirmelere bakılmaksızın satır, her atama için kod veya, başvuru bir `volatile` değişkeni hiçbir etkiye sahip olma görünse bile oluşturulmalıdır.
+- Derleyici, programda herhangi bir noktada bir `volatile` değişkene, değerini kullanan veya değiştiren bilinmeyen bir işlem tarafından erişilebileceği varsayılır. Bu nedenle, komut satırında belirtilen iyileştirmelere bakılmaksızın, bir `volatile` değişkene yapılan her atamaya veya başvuruya yönelik kodun hiçbir etkisi olmasa bile oluşturulması gerekir.
 
-   Varsa `volatile` tek başına, kullanılan `int` varsayılır. `volatile` Tür tanımlayıcısı, güvenilir özel bellek konumlarına erişim sağlamak için kullanılabilir. Kullanım `volatile` g/ç Denetimi erişilen veya sinyal işleyiciler tarafından değiştirilmiş olabilir veri nesneleri ile eşzamanlı olarak yürütülen programlara veya bellek eşlemeli gibi özel bir donanım kaydeder. Bir değişken olarak bildirebilirsiniz `volatile` olacak şekilde tek bir başvuru veya yaşam çevirebilirsiniz için `volatile`.
+   `volatile` Tek başına `int` kullanılırsa varsayılır. `volatile` Tür belirleyicisi özel bellek konumlarına güvenilir erişim sağlamak için kullanılabilir. Aynı `volatile` anda programları veya bellek eşlemeli g/ç denetim kayıtları gibi özel donanımları kullanarak, sinyal işleyicileri tarafından erişilebilen veya değiştirilen veri nesneleriyle birlikte kullanın. Bir değişkeni `volatile` ömrü boyunca bildirebilir veya tek bir başvuruyu olacak `volatile`şekilde dönüştürebilirsiniz.
 
-- Bir öğe olmalı **const** ve `volatile`, bu durumda öğe kendi program tarafından yasal olarak değiştirilemedi, ancak bazı zaman uyumsuz bir işlem tarafından değiştirilmiş.
+- Bir öğe hem **const** hem de olabilir `volatile`, bu durumda öğe kendi programı tarafından meşru bir şekilde değiştirilemez ancak bazı zaman uyumsuz işlemler tarafından değiştirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Türler](../c-language/declarations-and-types.md)
+[Bildirimler ve türler](../c-language/declarations-and-types.md)

@@ -17,7 +17,7 @@ ms.locfileid: "62273423"
 ---
 # <a name="importing-using-def-files"></a>DEF Dosyalarını Kullanarak İçeri Aktarma
 
-Kullanmayı tercih ederseniz **__declspec(dllimport)** .def dosyası ile birlikte kodlama yanlış bir soruna neden olasılığını azaltmak için veri SABİTİ yerine kullanılacak .def dosyasını değiştirmeniz gerekir:
+**__Declspec (dllimport)** bir. def dosyası ile birlikte kullanmayı tercih ederseniz, yanlış kodlamanın soruna neden olma olasılığını azaltmak için. def dosyasını sabıt yerine verileri kullanacak şekilde değiştirmelisiniz:
 
 ```
 // project.def
@@ -26,30 +26,30 @@ EXPORTS
    ulDataInDll   DATA
 ```
 
-Aşağıdaki tabloda neden olduğunu göstermektedir.
+Aşağıdaki tabloda neden gösterilmektedir.
 
-|Anahtar sözcüğü|İçeri aktarma kitaplığı'nda yayar|Dışarı aktarma|
+|Sözcükle|İçeri aktarma kitaplığı 'nda yayar|Aktarımları|
 |-------------|---------------------------------|-------------|
 |`CONSTANT`|`_imp_ulDataInDll`, `_ulDataInDll`|`_ulDataInDll`|
 |`DATA`|`_imp_ulDataInDll`|`_ulDataInDll`|
 
-Kullanarak **__declspec(dllimport)** ve sabit listelerini her ikisi de `imp` sürümü ve DLL .lib düzenlenmemiş adını açık bağlama izin verecek şekilde oluşturulan kitaplık içeri aktarın. Kullanarak **__declspec(dllimport)** ve veri listeleri yalnızca `imp` adının sürümü.
+**__Declspec (dllimport)** ve sabit kullanmak, açık bağlamaya `imp` izin vermek IÇIN oluşturulan. lib DLL içeri aktarma kitaplığındaki hem sürümü hem de oluşturulmamış adı listeler. **__Declspec (dllimport)** ve verilerin kullanılması yalnızca adının `imp` sürümünü listeler.
 
-SABİTİ kullanıyorsanız, aşağıdaki kod yapılarından birini kullanılabilir erişimi `ulDataInDll`:
+SABIT kullanırsanız, şu kod yapılarından herhangi biri erişmek `ulDataInDll`için kullanılabilir:
 
 ```
 __declspec(dllimport) ULONG ulDataInDll; /*prototype*/
 if (ulDataInDll == 0L)   /*sample code fragment*/
 ```
 
-\-veya -
+\-veya
 
 ```
 ULONG *ulDataInDll;      /*prototype*/
 if (*ulDataInDll == 0L)  /*sample code fragment*/
 ```
 
-Ancak, .def dosyasında veri kullanırsanız, yalnızca aşağıdaki tanımıyla derlenmiş kod değişkenine erişebileceği `ulDataInDll`:
+Ancak,. def dosyanızda VERI kullanıyorsanız, yalnızca şu tanıma derlenmiş kod değişkene `ulDataInDll`erişebilir:
 
 ```
 __declspec(dllimport) ULONG ulDataInDll;
@@ -57,9 +57,9 @@ __declspec(dllimport) ULONG ulDataInDll;
 if (ulDataInDll == 0L)   /*sample code fragment*/
 ```
 
-SABİTİ kullanarak olduğundan daha sakıncalıdır ek yöneltme düzeyi kullanılacak unutursanız, potansiyel olarak içeri aktarma adres tablosunun işaretçi değişkenine erişebilir — değişkenin kendisine değil. İçeri aktarma adres tablosunda derleyici ve bağlayıcı tarafından salt okunur yapıldığı için bu tür sorunlar genellikle bir erişim ihlali olarak bildirilebilir.
+Daha fazla risklidir çünkü ekstra yöneltme düzeyini kullanmayı unutursanız, değişkenin kendisi değil, içeri aktarma adres tablosunun işaretçisine erişebilirsiniz. Bu tür bir sorun, genellikle içeri aktarma adresi tablosu derleyici ve bağlayıcı tarafından salt okunurdur.
 
-Bu durumda hesap için .def dosyasında SABİTİ görürse geçerli MSVC bağlayıcı bir uyarı verir. Burada üstbilgi dosyasının değil listesinde bazı nesne dosyası derlemeniz olamaz, SABİTİ kullanmak için yalnızca gerçek neden olduğu **__declspec(dllimport)** prototipinde.
+Geçerli MSVC bağlayıcı, bu durum için. def dosyasında sabıt değer görürse bir uyarı verir. SABIT kullanılması gereken tek gerçek neden, üstbilgi dosyasının prototip üzerinde **__declspec (dllimport)** listelamadığı bazı nesne dosyalarını yeniden derleyememenizdir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

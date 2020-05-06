@@ -46,12 +46,12 @@ char s[]  = {'a', 'b', 'c', '\0'},
 
 Dizi belirtilen dizi boyutundan kısaysa, dizinin kalan öğeleri 0'a başlatılır.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Microsoft C'de, dize sabit değerlerinin uzunluğu en fazla 2048 bayt olabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Başlatma](../c-language/initialization.md)
+[Başlatılmasında](../c-language/initialization.md)

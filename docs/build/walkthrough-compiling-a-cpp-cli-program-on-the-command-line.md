@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Derleme bir C++komut satırında /CLI programı'
+title: 'İzlenecek Yol: Komut Satırında C++/CLI Programını Derleme'
 ms.date: 04/23/2019
 ms.assetid: cef41c88-faf9-439d-8423-25aa3f5674dd
 ms.openlocfilehash: 8a5c5659367350a80725b365ef9c431bbec209d1
@@ -9,33 +9,33 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/29/2019
 ms.locfileid: "64877450"
 ---
-# <a name="walkthrough-compiling-a-ccli-program-on-the-command-line"></a>İzlenecek yol: Derleme bir C++komut satırında /CLI programı
+# <a name="walkthrough-compiling-a-ccli-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında C++/CLI Programını Derleme
 
-.NET Framework ortak dil çalışma zamanı (CLR) hedefleyen ve Visual C++ programları oluşturma ve bunları komut satırında oluşturun. Görsel C++ destekler C++/ek türleri ve işleçler .NET programlama modeli hedeflemek için olan dil, programlama CLI. Hakkında genel bilgiler C++/CLI dil bakın [.NET programlama C++/CLI (görsel C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
+Ortak dil çalışma zamanını (CLR) hedefleyen Visual C++ programlar oluşturabilir ve .NET Framework kullanabilir ve bunları komut satırında oluşturabilirsiniz. Visual C++, .NET programlama modelini hedeflemek için ek tür ve işleçlere sahip C++/CLı programlama dilini destekler. C++/CLı dili hakkında genel bilgi için bkz. [c++/CLI ile .NET programlama (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 
-Bu kılavuzda, temel C + oluşturmak için bir metin düzenleyicisi kullanın +/ CLI programını ve sonra komut satırında derleyin. (Kendi kullanabilirsiniz C++/CLI programını gösterilen bir yazmak yerine veya kullanabileceğiniz bir C++/CLI kod örneğini başka bir Yardım makalesi. Bu teknik oluşturmak ve UI öğesi içermeyen olan küçük modülleri test etmek için kullanışlıdır.)
+Bu kılavuzda, temel bir C++/CLı programı oluşturmak ve ardından komut satırında derlemek için bir metin düzenleyicisi kullanın. (Gösterilen birini yazmak yerine kendi C++/CLı programınızı kullanabilir ya da başka bir yardım makalesindeki C++/CLı kod örneğini kullanabilirsiniz. Bu teknik, Kullanıcı arabirimi öğeleri olmayan küçük modüller oluşturmak ve test etmek için kullanışlıdır.)
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Ön koşullar
 
-C++ dilinin temellerini anlamanız.
+C++ dilinin temellerini anlamış olursunuz.
 
-## <a name="compiling-a-ccli-program"></a>Derleme bir C++/CLI programı
+## <a name="compiling-a-ccli-program"></a>C++/CLı programını derleme
 
-Aşağıdaki adımlar nasıl yapılandırılabileceğini göstermektedir bir C++.NET Framework sınıfları kullanan /CLI konsol uygulaması.
+Aşağıdaki adımlarda .NET Framework sınıfları kullanan bir C++/CLı konsol uygulamasının nasıl derlenmesi gösterilmektedir.
 
-Derleme için etkinleştirmek için C++/CLI, kullanmalıdır [/CLR](reference/clr-common-language-runtime-compilation.md) derleyici seçeneği. MSVC derleyicisi, MSIL kodu içeren bir .exe dosyası oluşturur — veya karma MSIL ve yerel kod — ve gerekli .NET Framework kitaplıkları bağlanır.
+C++/CLı için derlemeyi etkinleştirmek üzere [/clr](reference/clr-common-language-runtime-compilation.md) derleyici seçeneğini kullanmanız gerekir. MSVC derleyicisi, MSIL kodu içeren bir. exe dosyası ya da karma MSIL ve yerel kod ve gerekli .NET Framework kitaplıklarına bağlantılar oluşturur.
 
-### <a name="to-compile-a-ccli-application-on-the-command-line"></a>Derlemek için bir C++komut satırında /CLI uygulama
+### <a name="to-compile-a-ccli-application-on-the-command-line"></a>Komut satırında C++/CLı uygulaması derlemek için
 
-1. Açık bir **Geliştirici komut istemi** penceresi. Ayrıntılı yönergeler için bkz: [bir geliştirici komut istemi penceresi açmak için](building-on-the-command-line.md#developer_command_prompt).
+1. **Geliştirici komut istemi** penceresini açın. Belirli yönergeler için bkz. [bir geliştirici komut istemi penceresi açmak için](building-on-the-command-line.md#developer_command_prompt).
 
-   Yönetici kimlik bilgileri başarıyla bilgisayarın işletim sistemi ve yapılandırmasına bağlı olarak Kodu derlemek için gerekebilir. Komut İstemi penceresini yönetici olarak çalıştırmak için komut istemi için kısayol menüsünü açın ve ardından sağ **daha fazla** > **yönetici olarak çalıştır**.
+   Bilgisayarın işletim sistemine ve yapılandırmasına bağlı olarak, kodu başarıyla derlemek için yönetici kimlik bilgileri gerekebilir. Komut istemi penceresini yönetici olarak çalıştırmak için sağ tıklayarak komut istemi için kısayol menüsünü açın ve **daha** > sonra**yönetici olarak çalıştır**' ı seçin.
 
-1. Komut isteminde girin `notepad basicclr.cpp`.
+1. Komut isteminde, girin `notepad basicclr.cpp`.
 
-   Seçin **Evet** istenirse bir dosya oluşturmak için.
+   Bir dosya oluşturmanız istendiğinde **Evet** ' i seçin.
 
-1. Not Defteri'nde şu satırı girin:
+1. Not defteri 'nde şu satırları girin:
 
    ```cpp
    int main()
@@ -44,13 +44,13 @@ Derleme için etkinleştirmek için C++/CLI, kullanmalıdır [/CLR](reference/cl
    }
    ```
 
-1. Menü çubuğunda, **dosya** > **Kaydet**.
+1. Menü çubuğunda **Dosya** > **Kaydet**' i seçin.
 
-   .NET Framework sınıfı kullanan bir Visual C++ kaynak dosyasını, oluşturduğunuz (<xref:System.Console>) içinde <xref:System> ad alanı.
+   <xref:System> Ad alanında .NET Framework Class (<xref:System.Console>) kullanan bir Visual C++ kaynak dosyası oluşturdunuz.
 
-1. Komut isteminde girin `cl /clr basicclr.cpp`. Cl.exe derleyicisi, kaynak kodu MSIL içeren ve ardından bağlayıcı basicclr.exe adlı yürütülebilir bir program oluşturmak için çalışan bir .obj dosyasına derler.
+1. Komut isteminde, girin `cl /clr basicclr.cpp`. CL. exe derleyicisi, kaynak kodu MSIL içeren bir. obj dosyasına derler ve sonra, basicclr. exe adlı bir yürütülebilir program oluşturmak için bağlayıcıyı çalıştırır.
 
-1. Komut isteminde basicclr.exe programı çalıştırmak için girin `basicclr`.
+1. Basicclr. exe programını çalıştırmak için komut isteminde yazın `basicclr`.
 
    Program bu metni görüntüler ve çıkar:
 
@@ -60,6 +60,6 @@ Derleme için etkinleştirmek için C++/CLI, kullanmalıdır [/CLR](reference/cl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
+[C++ dil başvurusu](../cpp/cpp-language-reference.md)<br/>
 [Projeler ve derleme sistemleri](projects-and-build-systems-cpp.md)<br/>
 [MSVC Derleyicisi Seçenekleri](reference/compiler-options.md)

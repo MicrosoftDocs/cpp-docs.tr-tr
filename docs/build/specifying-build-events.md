@@ -22,38 +22,38 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62315241"
 ---
-# <a name="specifying-build-events"></a>Derleme olayları belirtme
+# <a name="specifying-build-events"></a>Derleme olaylarını belirtme
 
-Derleme olayları oluşturma, bağlama işlemini önce başlamadan önce veya derleme tamamlandıktan sonra çalışan komutlar belirtmek için kullanabilirsiniz.
+Derleme başlamadan önce, bağlantı işleminden önce veya oluşturma bittikten sonra çalışan komutları belirtmek için derleme olaylarını kullanabilirsiniz.
 
-Derleme olayları, yalnızca derlemenin yapı işleminde bu noktaları başarıyla ulaşırsa yürütülür. Yapı, bir hata oluşursa *derleme sonrası* olay gerçekleştirilmez; hata bağlama aşamasından önce tipleri oluşursa *bağlama öncesi* ya da *derleme sonrası* olay gerçekleşir. Ayrıca, bağlanması gereken dosya yok *bağlama öncesi* olay oluşmaz. *Bağlama öncesi* olay değil de bir bağlantı adım içermeyen projelerinde kullanılabilir.
+Derleme olayları yalnızca derleme yapı sürecinde bu noktalara başarıyla ulaşırsa yürütülür. Derlemede bir hata oluşursa, *Derleme sonrası* olay oluşmaz; hata, bağlama aşamasından önce oluşursa, *ön bağlantı* veya *Derleme sonrası* olay oluşur. Ayrıca, herhangi bir dosyanın bağlanması gerekmiyorsa, *bağlama öncesi* olay gerçekleşmez. Bağlama *öncesi* olay, bağlantı adımı içermeyen projelerde de kullanılamaz.
 
-Hiçbir dosya oluşturulacak gerekiyorsa, hiçbir derleme olayları oluşur.
+Oluşturulacak dosyanın oluşturulması gerekmiyorsa, hiçbir derleme olayı gerçekleşmez.
 
-Derleme olayları hakkında genel bilgi için bkz. [anlama özel derleme adımlarını ve derleme olaylarını](understanding-custom-build-steps-and-build-events.md).
+Derleme olayları hakkında genel bilgi için bkz. [özel yapı adımlarını anlama ve olayları oluşturma](understanding-custom-build-steps-and-build-events.md).
 
 ### <a name="to-specify-a-build-event"></a>Derleme olayı belirtmek için
 
-1. İçinde **Çözüm Gezgini**, derleme olayı belirtmek istediğiniz projeyi seçin.
+1. **Çözüm Gezgini**, yapı olayını belirtmek istediğiniz projeyi seçin.
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](working-with-project-properties.md).
 
-1. İçinde **Build Events** klasöründe bir derleme olay özellik sayfasını seçin.
+1. **Derleme olayları** klasöründe, bir derleme olayı Özellik sayfası seçin.
 
-1. Derleme olayla ilişkili özellikleri belirtin:
+1. Derleme olayı ile ilişkili özellikleri belirtin:
 
-   - İçinde **komut satırı**, komut isteminde belirtme gibi bir komutu belirtin. Geçerli komut veya toplu iş dosyasını belirtin ve tüm gerekli giriş veya çıkış dosyalarını. Belirtin **çağrı** toplu tüm komutlar yürütülür garanti etmek için önce bir toplu iş dosyası adını komutu.
+   - Komut **satırında**, komut isteminde şunu belirtmiş gibi bir komut belirtin. Geçerli bir komut veya toplu iş dosyası ve gerekli giriş veya çıkış dosyalarını belirtin. Sonraki tüm komutların yürütüldüğünü garantilemek için bir toplu iş dosyasının adından önce Batch komutunu **çağır** komutunu belirtin.
 
-      Birden çok giriş ve çıkış dosyalarının bildirmelerine MSBuild makroları ile belirtilebilir. Dosyalarının konumu veya dosya kümelerini adlarını belirtme hakkında daha fazla bilgi için bkz: [derleme komutları ve özellikler için ortak makroları](reference/common-macros-for-build-commands-and-properties.md).
+      Birden çok giriş ve çıkış dosyası, MSBuild makroları ile sembosel olarak belirtilebilir. Dosyaların konumunu veya dosya kümelerinin adlarını belirtme hakkında bilgi için bkz. [derleme komutları ve özellikleri Için ortak makrolar](reference/common-macros-for-build-commands-and-properties.md).
 
-      Her bir ortam değişkenini Değiştir belirtirseniz, '%' karakter MSBuild tarafından ayrılmış olduğundan **%** kaçış karakteriyle **% 25** onaltılı çıkış dizisi. Örneğin, **% WINDIR %** ile **25WINDIR % 25**. MSBuild değiştirir her **% 25** ile sıralı **%** ortam değişkenini erişmeden önce karakter.
+      '% ' Karakteri MSBuild tarafından ayrıldığından, bir ortam değişkeni belirtirseniz her **%** kaçış karakterini **%25** onaltılık kaçış dizisi ile değiştirin. Örneğin, **% windir%** öğesini **% 25windir %25**ile değiştirin. MSBuild, ortam değişkenine erişmeden önce her **%25** sırayı **%** karakteriyle değiştirir.
 
-   - İçinde **açıklama**, bu olay için bir açıklama yazın. Açıklama yazdırıldığında **çıkış** bu olay meydana geldiğinde penceresi.
+   - **Açıklama**' da bu olay için bir açıklama yazın. Bu olay gerçekleştiğinde Açıklama **Çıkış** penceresine yazdırılır.
 
-   - İçinde **yapıdan hariç**, belirtin **Evet** çalıştırmak için olay istemiyorsanız.
+   - **Derlemeden hariç tutulmazsa**, olayın çalıştırılmasını istemiyorsanız **Evet** ' i belirtin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](understanding-custom-build-steps-and-build-events.md)<br>
-[Derleme komutları ve özellikleri için genel makrolar](reference/common-macros-for-build-commands-and-properties.md)<br>
+[Derleme komutları ve özellikleri için ortak makrolar](reference/common-macros-for-build-commands-and-properties.md)<br>
 [Derleme Özelleştirmeleri Sorunlarını Giderme](troubleshooting-build-customizations.md)

@@ -15,34 +15,34 @@ ms.locfileid: "62325747"
 ---
 # <a name="c-constant-expressions"></a>C Sabit İfadeleri
 
-Sabit bir ifade, derleme zamanında çalışma zamanı, değil olarak değerlendirilir ve bir sabit kullanılabilir herhangi bir yerde kullanılabilir. Sabit ifade türü temsil edilebilir değerler aralığında olan bir sabit değerlendirilmelidir. İşlenen bir sabit ifade can'ın olması tamsayı sabitlerini, karakter sabitlerini, kayan nokta sabitleri, numaralandırma sabitlerini, atamalar yazın **sizeof** ifadeler ve diğer sabit ifadeler.
+Sabit bir ifade derleme zamanında değerlendirilir, çalışma süresi değildir ve bir sabit 'in kullanılabileceği herhangi bir yerde kullanılabilir. Sabit ifade, bu tür için gösterilebilir tablo değerleri aralığında olan bir sabit olarak değerlendirilmelidir. Sabit bir ifadenin işlenenleri tamsayı sabitler, karakter sabitleri, kayan nokta sabitleri, sabit listesi sabitleri, tür atamaları, **sizeof** ifadeleri ve diğer sabit ifadeler olabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Sabit ifade*:<br/>
+*sabit ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Koşullu ifade*
 
-*Koşullu ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-expression* **?** *ifade* **:** *koşullu ifade*
+*koşullu ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal OR ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*MANTıKSAL or ifadesi* **?** *ifade* **:** *koşullu ifade*
 
 *ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*expression* **,** *assignment-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade* **,** *atama ifadesi*
 
 *atama ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Koşullu ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*unary-expression* *assignment-operator* *assignment-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*birli ifade* *atama-işleç* *atama-ifade*
 
-*atama işleci*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**=** **&#42;=** **/=** **%=** **+=** **-=** **\<\<=** **>>=** **&=** **^=** **&#124;=**
+*atama-işleç*: aşağıdakilerden biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**=****&#42;** **/=** **%=** = **+=** **-=** **&#124;** = ** \< \< ** **>>=** **&=** **^=**
 
-Terminal dışı yapı bildirimci, numaralandırıcı, doğrudan bildirimci, doğrudan soyut bildirimci ve etiketli deyim içeren *sabit-ifade* bildirimlere.
+Struct Bildiricisi, Numaralandırıcı, doğrudan bildirimci, doğrudan soyut bildirimci ve etiketli deyim için terminalnonterminalleri, *sabit ifade* olmayan bir terminali içerir.
 
-İntegral sabit ifadesi bir bit alanı üyesi bir yapının, bir numaralandırma sabit değeri, bir dizinin boyutunu ya da değerini boyutunu belirtmek için kullanılması gereken bir **çalışması** sabit.
+Bir integral sabit ifadesi, bir yapının bit alanı üyesinin boyutunu, bir numaralandırma sabitinin değerini, bir dizinin boyutunu veya bir **Case** sabitinin değerini belirtmek için kullanılmalıdır.
 
-Ön İşlemci yönergelerinde kullanılan sabit ifadeler ek kısıtlamalar geçerlidir. "Kısıtlı sabit ifadeler." sonuç olarak, bilinen Kısıtlı bir sabit ifade içeremez **sizeof** ifadeleri, numaralandırma sabitlerini, tüm tür veya değişken türü sabitleri atamaların yazın. Ancak, özel sabit ifade içerebileceği **tanımlanan (** _tanımlayıcı_ **)**.
+Önişlemci yönergelerinde kullanılan sabit ifadeler, ek kısıtlamalara tabidir. Sonuç olarak, bunlar "kısıtlı sabit ifadeler" olarak bilinir. Kısıtlı bir sabit ifade, **sizeof** ifadeleri, Numaralandırma sabitleri, herhangi bir türe veya kayan tür sabitlerine tür atamaları içeremez. Ancak, tanımlı özel sabit ifade **(** _tanımlayıcı_ **)** içerebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İşlenenler ve İfadeler](../c-language/operands-and-expressions.md)
+- [İşlenenler ve Ifadeler](../c-language/operands-and-expressions.md)

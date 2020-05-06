@@ -17,21 +17,21 @@ ms.locfileid: "65221364"
 ---
 # <a name="mfc-extension-dlls-overview"></a>MFC uzantı DLL'leri: Genel Bakış
 
-Bir MFC uzantılı DLL genellikle varolan Microsoft Foundation Class Kitaplığı sınıflarından türetilen yeniden kullanılabilir sınıfları uygulayan bir DLL'dir. MFC uzantı DLL'leri MFC (diğer adıyla MFC paylaşılan sürüm) dinamik bağlantı kitaplığı sürümü kullanılarak oluşturuldu. Bir MFC uzantılı DLL, MFC paylaşılan sürümü ile oluşturulmuş yalnızca MFC yürütülebilir dosyaları (uygulama veya Normal MFC DLL'leri) kullanabilirsiniz. Bir MFC uzantılı DLL ile yeni özel sınıflar türetebilir ve ardından MFC genişletilmiş bu sürümü DLL'nizi çağıran uygulamalara sunar.
+MFC uzantı DLL 'si, genellikle varolan Microsoft Foundation Class Kitaplığı sınıflarından türetilen yeniden kullanılabilir sınıfları uygulayan bir DLL 'dir. MFC uzantı dll 'Leri MFC 'nin dinamik bağlantı kitaplığı sürümü (MFC 'nin paylaşılan sürümü olarak da bilinir) kullanılarak oluşturulmuştur. MFC 'nin paylaşılan sürümüyle oluşturulmuş yalnızca MFC yürütülebilir dosyaları (uygulamalar veya normal MFC DLL 'Leri) MFC uzantısı DLL kullanabilir. MFC uzantısı DLL 'SI ile MFC 'den yeni özel sınıflar türetebilir ve ardından bu genişletilmiş sürümü MFC 'nin DLL 'nizi çağıran uygulamalara sunabilirsiniz.
 
-Uzantı DLL'leri, uygulama ve DLL arasında MFC'den türetilmiş nesneler geçirmek için de kullanılabilir. Geçirilen nesneyle ilişkili üye işlevleri, nesne oluşturulduğu modülünde mevcut. Bu işlevler düzgün bir şekilde paylaşılan MFC DLL sürümünü kullanırken dışarı aktarıldığı için MFC serbestçe geçirebilir veya uygulama ile MFC uzantısı DLL'leri arasında MFC'den türetilmiş nesne işaretçileri.
+Uzantı dll 'Leri, uygulama ve DLL arasında MFC 'den türetilmiş nesneleri geçirmek için de kullanılabilir. Geçirilen nesneyle ilişkili üye işlevleri, nesnenin oluşturulduğu modülde bulunur. Bu işlevler, MFC 'nin paylaşılan DLL sürümü kullanılırken düzgün bir şekilde aktarıldığından, bir uygulama ile yüklenen MFC uzantı dll 'Leri arasında MFC veya MFC 'den türetilmiş nesne işaretçilerini serbestçe geçirebilirsiniz.
 
-MFC örnek bir MFC uzantılı DLL temel gereksinimlerini karşılayan bir DLL örneği için bkz. [DLLHUSK](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/dllhusk). Özellikle, Testdll1.cpp ve Testdll2.cpp dosyalarına bakın.
+MFC uzantısı DLL 'inin temel gereksinimlerini karşılayan bir DLL örneği için, bkz. MFC örnek [DLLHUSK](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/dllhusk). Özellikle, TESTDLL1. cpp ve TESTDLL2. cpp dosyalarına bakın.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Bir MFC uzantılı DLL başlatma](run-time-library-behavior.md#initializing-extension-dlls)
+- [MFC uzantı DLL 'sini başlatma](run-time-library-behavior.md#initializing-extension-dlls)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [MFC uzantısı DLL’leri](extension-dlls.md)
+- [MFC uzantı dll 'Leri](extension-dlls.md)
 
-- [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [Normal MFC DLL 'Lerinde Database, OLE ve Sockets MFC uzantı dll 'Lerini kullanma](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
 - [MFC Dışı DLL'ler: Genel Bakış](non-mfc-dlls-overview.md)
 

@@ -15,22 +15,22 @@ ms.locfileid: "62325500"
 ---
 # <a name="prefix-increment-and-decrement-operators"></a>Önek Arttırma ve Azaltma İşleçleri
 
-Birli işleçler (`++` ve **--**) artırma veya azaltma işleçleri önce işlenen göründüğünde azaltma işleçleri veya "ön eki" artış olarak adlandırılır. Sonek artırma ve azaltma önek artırma ve azaltma daha yüksek önceliğe sahiptir. İşlenen, integral, kayan veya işaretçi türünde olmalıdır ve değiştirilebilir bir l-değeri bir ifade olması gerekir (bir ifade olmadan **const** özniteliği). Sonuç bir l-değerdir.
+Birli İşleçler (`++` ve **--**), artırma veya azaltma işleçleri işlenenden önce görüntülendiğinde "önek" artışı veya azaltma işleçleri olarak adlandırılır. Sonek artışı ve azaltma, ön ek artışı ve azalma kıyasla daha yüksek önceliğe sahiptir. İşlenen integral, kayan veya işaretçi türüne sahip olmalı ve değiştirilebilir bir l-Value ifadesi ( **const** özniteliği olmayan bir ifade) olmalıdır. Sonuç bir l değeridir.
 
-İşleci, işleneni önce görünür işlenen artırılması veya azaltılması ve kendi yeni değer ifadesi sonucu.
+İşleç işlenenden önce göründüğünde, işlenen artırılır veya azaltılır ve yeni değeri ifadenin sonucudur.
 
-Tamsayı veya kayan türünde bir işlenen, tamsayı değeri 1 artırılması veya azaltılması. Sonuç türü, işlenenin türü ile aynıdır. İşaretçi türünde bir işlenen sıra nesnesi tarafından artırılması veya azaltılması boyutudur. Artan bir işaretçi sonraki nesneye işaret eder; indirildiği işaretçi önceki nesneye işaret eder.
+İntegral veya kayan türün işleneni, 1 tamsayı değeri tarafından artırılır veya azaltılır. Sonucun türü, işlenen türüyle aynıdır. İşaretçi türündeki bir işlenen, adreslenen nesnenin boyutuyla artırılır veya azaltılır. Artan bir işaretçi sonraki nesneye işaret eder; azaltma işaretçisi önceki nesneye işaret eder.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, birli önek azaltma işleci gösterilmektedir:
+Bu örnek, birli ön ek azaltma işlecini gösterir:
 
 ```
 if( line[--i] != '\n' )
     return;
 ```
 
-Bu örnekte, değişken `i` için bir alt simge olarak kullanılmadan önce azaltılır `line`.
+Bu örnekte, bir alt simge `i` olarak kullanılmadan önce değişken azaltılır `line`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -19,18 +19,18 @@ ms.locfileid: "62326670"
 ---
 # <a name="c-language-reference"></a>C Dili Başvurusu
 
-*C dil başvurusu* C programlama dilini Microsoft C. içinde uygulandığı şekilde açıklar. Kitaptaki kuruluş, ANSI C standardı için Microsoft uzantıları ek malzemeler ile birlikte ANSI (bazen C89 adlandırılır) c standart dayanır.
+*C dil başvurusu* , Microsoft c 'de uygulandığı şekilde c programlama dilini açıklar. Kitabýn organizasyonu, ANSI c standardı için Microsoft uzantılarında ek malzemeyle ANSI C standardını (bazen c89 olarak adlandırılır) temel alır.
 
 - [C Dili Başvurularının Organizasyonu](../c-language/organization-of-the-c-language-reference.md)
 
-C++ ve önişlemci hakkında referans materyalleri için bkz:
+C++ ve Önişlemci hakkında ek başvuru malzemeleri için bkz.:
 
-- [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)
+- [C++ dil başvurusu](../cpp/cpp-language-reference.md)
 
-- [Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)
+- [Önişlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)
 
-Derleyici ve bağlayıcı Seçenekleri bölümünde belgelenmiştir [C/C++ oluşturma başvurusu](../build/reference/c-cpp-building-reference.md).
+Derleyici ve bağlayıcı seçenekleri [C/C++ derleme başvurusunda](../build/reference/c-cpp-building-reference.md)belgelenmiştir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)
+[C++ dil başvurusu](../cpp/cpp-language-reference.md)

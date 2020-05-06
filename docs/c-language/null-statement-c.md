@@ -24,7 +24,7 @@ Bir "boş deyimi", yalnızca noktalı virgül içeren bir deyimdir; bir deyimin 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Gibi deyimler **yapmak**, **için**, **varsa**, ve `while` deyim gövdesi olarak yürütülebilir bir deyimin görünmesini gerektirir. Boş deyim, substantive deyim gövdesini gerekmeyen durumlarda sözdizimi koşullarını karşılar.
+**Do**, **for** **,,** ve `while` gibi deyimler, bir çalıştırılabilir deyimin deyim gövdesi olarak görünmesini gerektirir. Boş deyim, substantive deyim gövdesini gerekmeyen durumlarda sözdizimi koşullarını karşılar.
 
 Diğer C deyimlerinde olduğu gibi, boş bir deyimden önce etiket ekleyebilirsiniz. Deyim olmayan bir öğeyi (örneğin, bileşik bir deyimin kapanış ayracı) etiketlemek için, boş bir deyimi etiketleyebilir ve aynı etkiyi görmek için onu hemen öğeden önce ekleyebilirsiniz.
 
@@ -35,7 +35,7 @@ for ( i = 0; i < 10; line[i++] = 0 )
      ;
 ```
 
-Bu örnekte, döngü ifadesi **için** deyimi `line[i++] = 0` ilk 10 öğelerini başlatır `line` 0. Deyim gövdesi boş bir deyimdir çünkü başka bir deyim gerekli değildir.
+Bu örnekte, **for** deyiminin `line[i++] = 0` döngü ifadesi ilk 10 öğesini öğesinin `line` 0 olarak başlatır. Deyim gövdesi boş bir deyimdir çünkü başka bir deyim gerekli değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

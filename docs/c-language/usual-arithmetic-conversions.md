@@ -18,29 +18,29 @@ ms.locfileid: "62344843"
 ---
 # <a name="usual-arithmetic-conversions"></a>Olağan Aritmetik Dönüştürmeler
 
-Çoğu C işleçleri, bir ifadenin işlenenleri için ortak tür getirin veya makine işlemlerde tamsayı boyuta kısa değerler genişletmek için tür dönüştürmeleri gerçekleştirir. C işleçleri tarafından gerçekleştirilen dönüştürmeler belirli işleci ve işlenenleri ve işlenen türü bağlıdır. Ancak, işleçlerinin çoğu, integral ve kayan türler işlenenlerde benzer dönüşümleri gerçekleştirir. Bu dönüştürmeleri "aritmetik dönüştürmeler" denir. Uyumlu bir türe dönüştürme bir işlenen değerinin değerine değişikliğe neden olmaz.
+Çoğu C işleci, bir ifadenin işlenenlerini ortak bir türe getirmek veya kısa değerleri makine işlemlerinde kullanılan tamsayı boyutuna genişletmek için tür dönüştürmeleri gerçekleştirir. C işleçleri tarafından gerçekleştirilen dönüşümler, belirli işlece ve işlenenin veya işlenenleri türüne bağlıdır. Ancak, birçok işleç integral ve kayan türlerin işlenenleri üzerinde benzer dönüşümler gerçekleştirir. Bu dönüşümler "aritmetik dönüştürmeler" olarak bilinir. Bir işlenen değerinin uyumlu bir türe dönüştürülmesi, değerinde değişikliğe neden olmaz.
 
-Aşağıda özetlenen aritmetik dönüştürmeler "olağan aritmetik dönüştürmeler." olarak adlandırılır Bu adımlar, aritmetik türde beklediğiniz ikili işleçler için uygulanır. Amacı, aynı zamanda sonuç türü olan genel bir türü sonucu veren sağlamaktır. Hangi dönüştürmeler gerçekten gerçekleşmesi belirlemek için derleyici aşağıdaki algoritmadan ifadesinde ikili işlemler uygulanır. Aşağıdaki adımlar bir öncelik sırası değildir.
+Aşağıda özetlenen aritmetik dönüştürmeler "Olağan aritmetik dönüştürmeler" olarak adlandırılır. Bu adımlar yalnızca aritmetik tür bekleyen ikili işleçler için geçerlidir. Amaç, aynı zamanda sonucun türü olan ortak bir tür getirsağlamaktır. Hangi dönüşümlerin gerçekten gerçekleşmekte olduğunu anlamak için, derleyici ifadedeki ikili işlemlere aşağıdaki algoritmayı uygular. Aşağıdaki adımlar öncelik sıralaması değildir.
 
-1. İki işlenenden türü ise `long double`, diğer işlenen türüne dönüştürülür `long double`.
+1. Her iki işlenen de tür `long double`ise, diğer işlenen türüne `long double`dönüştürülür.
 
-1. Yukarıdaki koşul karşılanmamıştır ve işlenenlerden türünde **çift**, diğer işlenen türüne dönüştürülür **çift**.
+1. Yukarıdaki koşul karşılanmazsa ve her iki işlenen de **Double**türünde ise, diğer işlenen **Double**türüne dönüştürülür.
 
-1. Yukarıdaki koşullar karşılanmadı ve iki işlenenden türünde **float**, diğer işlenen türüne dönüştürülür **float**.
+1. Yukarıdaki iki koşul karşılanmazsa ve her iki işlenen de **float**türünde ise, diğer işlenen **float**türüne dönüştürülür.
 
-1. Yukarıdaki üç koşul karşılanmazsa (işlenenlerden hiçbiri olan kayan türlerden) tamsayı dönüştürmeleri işlenenler üzerinde aşağıdaki gibi gerçekleştirilir:
+1. Yukarıdaki üç koşul karşılanmazsa (işlenenlerin hiçbiri kayan türlerdeyse), tam sayı dönüştürmeleri işlenenler üzerinde aşağıdaki gibi gerçekleştirilir:
 
-   - İki işlenenden türü ise `unsigned long`, diğer işlenen türüne dönüştürülür `unsigned long`.
+   - Her iki işlenen de tür `unsigned long`ise, diğer işlenen türüne `unsigned long`dönüştürülür.
 
-   - Yukarıdaki koşul karşılanmamıştır ve işlenenlerden türünde **uzun** ve diğer tür `unsigned int`, her iki işlenen de türüne dönüştürülür `unsigned long`.
+   - Yukarıdaki koşul karşılanmazsa ve her iki işlenen de **Long** ve türün `unsigned int`diğer türü ise, her iki işlenen de türüne `unsigned long`dönüştürülür.
 
-   - Yukarıdaki koşullar karşılanmadı ve iki işlenenden türünde **uzun**, diğer işlenen türüne dönüştürülür **uzun**.
+   - Yukarıdaki iki koşul karşılanmazsa ve her iki işlenen de **Long**türünde ise, diğer işlenen de **Long**türüne dönüştürülür.
 
-   - Yukarıdaki üç koşulları karşılanmadı ve iki işlenenden türünde `unsigned int`, diğer işlenen türüne dönüştürülür `unsigned int`.
+   - Yukarıdaki üç koşul karşılanmazsa ve her iki işlenen de tür `unsigned int`ise, diğer işlenen türüne `unsigned int`dönüştürülür.
 
-   - Yukarıdaki koşulların hiçbiri karşılanırsa, her iki işlenen de türüne dönüştürülür `int`.
+   - Yukarıdaki koşulların hiçbiri karşılanmazsa her iki işlenen de türüne `int`dönüştürülür.
 
-Aşağıdaki kod bu dönüştürme kuralları gösterilmektedir:
+Aşağıdaki kod bu dönüştürme kurallarını göstermektedir:
 
 ```
 float   fVal;
@@ -60,4 +60,4 @@ dVal = ulVal + fVal; /* ulVal converted to float
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C İşleçleri](../c-language/c-operators.md)
+[C Işleçleri](../c-language/c-operators.md)
