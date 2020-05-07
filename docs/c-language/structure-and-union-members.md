@@ -11,29 +11,29 @@ helpviewer_keywords:
 - operators [C], member selection
 - structure member selection
 ms.assetid: bb1fe304-af49-4f98-808d-afdc99b3e319
-ms.openlocfilehash: db47362096506cf1c00f1ac566565b894253d798
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b22f5a29a4dc088ea4f3db863d635badee048d2c
+ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157857"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82825697"
 ---
 # <a name="structure-and-union-members"></a>Yapı ve Birleşim Üyeleri
 
-"Üye seçimi ifadesi", yapılar ve birleşimler üyelerine ifade eder. Böyle bir ifade, seçilen üyenin türü ve değeri vardır.
+"Üye seçim ifadesi", yapıların ve birleşimlerin üyelerine başvurur. Böyle bir ifade, seçilen üyenin değerine ve türüne sahiptir.
 
-> *sonek ifadesi* **.** *tanımlayıcı*
-> *sonek ifadesi* **->** *tanımlayıcısı*
+> *sonek ifadesi* **.** *Tanımlayıcısını*\
+> *sonek-ifade* **->** *tanımlayıcısı*
 
-Bu liste, iki tür üye seçimi ifadeleri açıklar:
+Bu liste, üye seçim ifadelerinin iki biçimini açıklar:
 
-1. İlk biçiminde *sonek ifadesi* değerini temsil eder **yapı** veya **birleşim** türü ve *tanımlayıcı* üye adları Belirtilen yapı veya birleşim. İşlem, değeri *tanımlayıcı* ve bir l-değeri ise *sonek ifadesi* bir l değeridir. Bkz: [L-değeri ve r değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md) daha fazla bilgi için.
+1. İlk formda, *sonek ifadesi* bir **struct** veya **Union** türü değerini temsil eder ve *tanımlayıcı* adları belirtilen yapının veya birleşimin bir üyesi. İşlemin değeri, *tanımlayıcıdır* ve *sonek ifadesi* bir l-değeri ise bir l değeri olur. Daha fazla bilgi için bkz. [L-Value ve R-Value ifadeleri](../c-language/l-value-and-r-value-expressions.md) .
 
-1. İkinci biçiminde *sonek ifadesi* bir yapı veya birleşim, bir işaretçiyi temsil eder ve *tanımlayıcı* belirtilen yapı veya birleşim üyesi adları. Değer budur *tanımlayıcı* ve bir l değeridir.
+1. İkinci formda, *sonek ifadesi* bir yapıya veya birleşime yönelik bir işaretçi temsil eder ve *tanımlayıcı* adları belirtilen yapının veya birleşimin bir üyesi olarak belirtilir. Değer, *tanımlayıcıdır* ve bir l değeridir.
 
-Üye seçim ifadeleri iki formunu benzer etkileri olabilir.
+Üye seçim ifadelerinin iki formu benzer etkilere sahiptir.
 
-Aslında, üye seçme işleci içeren bir ifade (**->**) dönem kullanan bir ifade toplu sürümüdür (**.**) bir süre önce ifade oluşuyorsa Yöneltme işleci (<strong>\*</strong>) bir işaretçi değerine uygulanır. Bu nedenle,
+Aslında, üye seçim işlecini (**->**) içeren bir ifade, dönemden önceki ifade, bir işaretçi değerine uygulanan yöneltme işlecinden (<strong>\*</strong>) oluşuyorsa, nokta (**.**) ile bir ifadenin Özet sürümüdür. Bu nedenle,
 
 ```cpp
 expression->identifier
@@ -45,11 +45,11 @@ eşdeğerdir
 (*expression).identifier
 ```
 
-zaman *ifade* bir işaretçi değeridir.
+*ifade* bir işaretçi değeri olduğunda.
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekler, bu yapı bildirimine bakın. Yöneltme işleci hakkında bilgi için (<strong>\*</strong>) Bu örneklerde kullanılan bkz [yöneltme ve adres işleçleri](../c-language/indirection-and-address-of-operators.md).
+Aşağıdaki örnekler bu yapı bildirimine başvurur. Bu örneklerde kullanılan yöneltme işleci (<strong>\*</strong>) hakkında daha fazla bilgi için bkz. [yöneltme ve adres işleçleri](../c-language/indirection-and-address-of-operators.md).
 
 ```
 struct pair
@@ -60,25 +60,25 @@ struct pair
 } item, list[10];
 ```
 
-Bir üye seçme ifadesi `item` yapısı şu şekilde görünür:
+`item` Yapı için üye seçimi ifadesi şuna benzer:
 
 ```
 item.sp = &item;
 ```
 
-Adresini yukarıdaki örnekte `item` yapısı atanır `sp` yapı üyesi. Diğer bir deyişle `item` kendisi bir işaretçi içerir.
+Yukarıdaki örnekte, `item` yapının adresi yapının `sp` üyesine atanır. Bu, `item` kendisi için bir işaretçi içeren anlamına gelir.
 
 ```
 (item.sp)->a = 24;
 ```
 
-Bu örnekte, işaretçi ifadesi `item.sp` üye seçme işleci ile kullanılan (**->**) üyesi için bir değer atamak için `a`.
+Bu örnekte, işaretçi ifadesi `item.sp` üyeye bir değer atamak için üye seçim işleci (**->**) ile birlikte kullanılır. `a`
 
 ```
 list[8].b = 12;
 ```
 
-Bu deyim yapıları dizisinden bir tek bir yapı üyesini seçin gösterilmektedir.
+Bu ifade, bir yapı dizisinden tek bir yapı üyesini nasıl seçinin gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

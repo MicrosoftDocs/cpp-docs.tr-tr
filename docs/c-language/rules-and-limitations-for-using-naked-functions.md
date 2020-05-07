@@ -13,7 +13,7 @@ ms.locfileid: "62158504"
 ---
 # <a name="rules-and-limitations-for-using-naked-functions"></a>Naked İşlevlerini Kullanmak için Kurallar ve Sınırlamalar
 
-Naked işlevlerini kullanmak için kurallar ve sınırlamalar hakkında daha fazla bilgi için C++ dil başvurusu karşılık gelen bölümüne bakın: [Naked işlevleri için kurallar ve sınırlamalar](../cpp/rules-and-limitations-for-naked-functions.md).
+Çıplak işlevlerin kullanılmasıyla ilgili kurallar ve sınırlamalar hakkında bilgi için, C++ dil başvurusunda ilgili konuya bakın: [çıplak Işlevlerin kuralları ve sınırlamaları](../cpp/rules-and-limitations-for-naked-functions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

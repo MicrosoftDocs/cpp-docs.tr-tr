@@ -13,9 +13,9 @@ ms.locfileid: "62234092"
 ---
 # <a name="domain-errors"></a>Etki Alanı Hataları
 
-**ANSI 4.5.1** etki alanı hatalarında matematik işlevleri tarafından döndürülen değerler
+**ANSI 4.5.1** Etki alanı hatalarında matematik işlevleri tarafından döndürülen değerler
 
-ERRNO. H dosyası, etki alanı hata sabitini tanımlar `EDOM` 33 olarak.  Dönüş değeri hakkında bilgi için hataya neden olan belirli işlev için Yardım konusuna bakın.
+ERRNO. H dosyası, etki alanı hatası sabitini `EDOM` 33 olarak tanımlar.  Döndürülen değer hakkında daha fazla bilgi için hataya neden olan belirli bir işlev için yardım konusuna bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -13,9 +13,9 @@ ms.locfileid: "62234411"
 ---
 # <a name="demotion-of-integers"></a>Tam Sayıların İndirgenmesi
 
-**ANSI 3.2.1.2** değer gösterilemiyorsa bir işaretsiz tamsayı eşit uzunluktaki bir işaretli tamsayıya dönüştürme sonucunu veya bir tamsayı daha kısa işaretli tamsayıya dönüştürülmesinin sonucu
+**ANSI 3.2.1.2** Bir tamsayıyı daha kısa işaretli bir tamsayıya dönüştürmenin sonucu veya işaretsiz bir tamsayıyı, değer temsil edilene eşit uzunlukta işaretli bir tamsayıya dönüştürme sonucu
 
-Olduğunda bir **uzun** tamsayı türünden **kısa**, veya bir **kısa** türüne dönüştürülür bir `char`, az öneme sahip baytlar korunur.
+**Uzun** bir tamsayı bir **Short**değerine ayarlandığında veya bir **Short** öğesine ayarlandığında `char`, en az önemli baytlar korunur.
 
 Örneğin, bu satır
 
@@ -31,7 +31,7 @@ char y = (char)0x1234;
 
 0x34 değerini `y`'ye atar.
 
-İşaretli değişkenler işaretsiz değişkenlere ve işaretsiz değişkenler işaretli değişkenlere dönüştürüldüğünde, bit düzenleri aynı kalır. Örneğin, -2 atama (0xFE) işaretsiz bir değere 254 (aynı zamanda 0xFE) verir.
+İşaretli değişkenler işaretsiz değişkenlere ve işaretsiz değişkenler işaretli değişkenlere dönüştürüldüğünde, bit düzenleri aynı kalır. Örneğin,-2 (0xFE) işaretsiz bir değere 254 (Ayrıca 0xFE) verir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -17,11 +17,11 @@ ms.locfileid: "69500278"
 ---
 # <a name="thread-local-storage"></a>İş Parçacığında Yerel Depolama
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 İş parçacığı yerel depolaması (TLS), belirli bir çok iş parçacıklı işlemdeki her bir iş parçacığının iş parçacığına özgü veriler için depolama alanı ayırdığı mekanizmadır. Standart çok iş parçacıklı programlarda veriler belirli bir işlemin tüm iş parçacıkları arasında paylaşılırken, iş parçacığı yerel depolaması, her iş parçacığı verisi için ayrıma yapan mekanizmadır. İş parçacıklarının tüm konuları için bkz. Windows SDK [süreçler ve Iş parçacıkları](/windows/win32/ProcThread/processes-and-threads) .
 
-Microsoft C dili, iş parçacığı yerel değişkeni bildirmek için __declspec anahtar sözcüğüyle birlikte kullanılan, genişletilmiş depolama sınıfı özniteliğini içerir. Örneğin, aşağıdaki kod bir tamsayı iş parçacığı yerel değişkeni bildirir ve bunu bir değer ile başlatır:
+Microsoft C dili, iş parçacığı yerel değişkeni bildirmek için __declspec anahtar sözcüğüyle birlikte kullanılan genişletilmiş depolama sınıfı özniteliğini içerir. Örneğin, aşağıdaki kod bir tamsayı iş parçacığı yerel değişkeni bildirir ve bunu bir değer ile başlatır:
 
 ```
 __declspec( thread ) int tls_i = 1;
@@ -86,7 +86,7 @@ Statik olarak bağlantılı iş parçacığı yerel değişkenleri bildirirken b
 
    Başlatılmakta olan değişkeni içeren bir sizeof ifadesinin kendine başvuru oluşturduğunu ve izin verildiğini unutmayın.
 
-- **Declspec (thread) \_kullanımı, DLL içeri aktarımlarının gecikme yüklemesini etkileyebilir. \_** [](../build/reference/linker-support-for-delay-loaded-dlls.md)
+- **Declspec (thread) \_kullanımı, DLL içeri aktarımlarının gecikme yüklemesini etkileyebilir. \_** [delay loading](../build/reference/linker-support-for-delay-loaded-dlls.md)
 
 İş parçacığı özniteliğini kullanma hakkında daha fazla bilgi için bkz. [Çoklu Iş parçacığı konuları](../parallel/multithreading-support-for-older-code-visual-cpp.md).
 

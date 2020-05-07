@@ -11,7 +11,7 @@ ms.locfileid: "64343034"
 ---
 # <a name="terminating-newline-characters"></a>Satırbaşı Karakterlerini Sonlandırma
 
-**ANSI 4.9.2** metin akışına son satırının bir sonlandırıcı yeni satır karakteri gerektirip
+**ANSI 4.9.2** Metin akışının son satırının Sonlandırıcı bir yeni satır karakteri gerektirip gerektirmediğini belirtir
 
 Akış işlevleri yeni bir satırı veya dosya sonunu bir satır sonlandırıcı karakter olarak kabul eder.
 

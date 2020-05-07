@@ -39,17 +39,17 @@ ms.locfileid: "68375830"
 ---
 # <a name="escape-sequences"></a>Çıkış Sıraları
 
-Bir ters eğik çizgi ( **\\** ) ve ardından bir harf ile veya bir basamak birleşimiyle oluşan karakter bileşimleri "kaçış dizileri" olarak adlandırılır. Yeni satır karakterini, tek tırnak işaretini veya bir karakter sabitindeki diğer belirli karakterleri göstermek için kaçış dizileri kullanmanız gerekir. Kaçış dizisi, tek bir karakter olarak kabul edilir ve bu nedenle karakter sabiti olarak geçerlidir.
+Bir ters eğik çizgi (**\\**) ve ardından bir harf ile veya bir basamak birleşimiyle oluşan karakter bileşimleri "kaçış dizileri" olarak adlandırılır. Yeni satır karakterini, tek tırnak işaretini veya bir karakter sabitindeki diğer belirli karakterleri göstermek için kaçış dizileri kullanmanız gerekir. Kaçış dizisi, tek bir karakter olarak kabul edilir ve bu nedenle karakter sabiti olarak geçerlidir.
 
-Kaçış dizileri, genellikle terminallerde ve yazıcılarda satır başları ve sekme hareketleri gibi eylemleri belirtmek için kullanılır. Bunlar, genellikle çift tırnak işareti ( **"** ) gibi özel anlamlara sahip yazdırılmayan karakterlerin ve karakterlerin sabit gösterimlerini sağlamak için de kullanılır. Aşağıdaki tabloda, ANSI kaçış dizileri ve neyi gösterdikleri listelenmektedir.
+Kaçış dizileri, genellikle terminallerde ve yazıcılarda satır başları ve sekme hareketleri gibi eylemleri belirtmek için kullanılır. Bunlar, genellikle çift tırnak işareti (**"**) gibi özel anlamlara sahip yazdırılmayan karakterlerin ve karakterlerin sabit gösterimlerini sağlamak için de kullanılır. Aşağıdaki tabloda, ANSI kaçış dizileri ve neyi gösterdikleri listelenmektedir.
 
-Önünde ters eğik çizgi ( **\\?** ) olan soru işaretinin, karakter sırasının bir trigraf olarak yanlış yorumlanacağı durumlarda sabit bir soru işareti belirttiğinden emin olun. Daha fazla bilgi için bkz. [Trigraf](../c-language/trigraphs.md) .
+Önünde ters eğik çizgi (**\\?**) olan soru işaretinin, karakter sırasının bir trigraf olarak yanlış yorumlanacağı durumlarda sabit bir soru işareti belirttiğinden emin olun. Daha fazla bilgi için bkz. [Trigraf](../c-language/trigraphs.md) .
 
 ### <a name="escape-sequences"></a>Çıkış Sıraları
 
 |Çıkış Sırası|Temsil eder|
 |---------------------|----------------|
-|**\a**|Bell (uyarı)|
+|**\**|Bell (uyarı)|
 |**\b**|Geri Al tuşu|
 |**\f**|Form akışı|
 |**\n**|Yeni satır|
@@ -58,21 +58,21 @@ Kaçış dizileri, genellikle terminallerde ve yazıcılarda satır başları ve
 |**\v**|Dikey sekme|
 |**\\'**|Tek tırnak işareti|
 |**\\"**|Çift tırnak işareti|
-|**\\\\**|Ters eğik çizgi|
+|**\\\\**|Sola|
 |**\\?**|Sabit soru işareti|
-|**\\** *ooo*|Sekizlik gösterimde ASCII karakteri|
-|**\x** *SS*|Onaltılık gösterimde ASCII karakteri|
-|**\x** *sshh*|Bu kaçış dizisi geniş karakter sabitinde veya Unicode dize sabit değerinde kullanılıyorsa onaltılık gösterimde Unicode karakter.<br /><br /> Örneğin, `WCHAR f = L'\x4e00'` veya `WCHAR b[] = L"The Chinese character for one is \x4e00"`.|
+|**\\***ooo*|Sekizlik gösterimde ASCII karakteri|
+|**\x** *HH*|Onaltılık gösterimde ASCII karakteri|
+|**\x** *sshh*|Bu kaçış dizisi geniş karakter sabitinde veya Unicode dize sabit değerinde kullanılıyorsa onaltılık gösterimde Unicode karakter.<br /><br /> Örneğin `WCHAR f = L'\x4e00'` veya `WCHAR b[] = L"The Chinese character for one is \x4e00"` olabilir.|
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Tabloda görünmeyen bir karakterden önce ters eğik çizgi geliyorsa, derleyici tanımlanmamış karakteri, karakterin kendisi gibi işler. Örneğin, `\c` `c`olarak değerlendirilir.
+Tabloda görünmeyen bir karakterden önce ters eğik çizgi geliyorsa, derleyici tanımlanmamış karakteri, karakterin kendisi gibi işler. Örneğin, `\c` olarak değerlendirilir `c`.
 
 **SON Microsoft 'a özgü**
 
-Kaçış dizileri, görüntü bağdaştırıcısına grafik olmayan denetim karakterleri göndermenizi sağlar. Örneğin, ESC karakteri ( **\ 033**), genellikle bir Terminal veya yazıcı için bir denetim komutunun ilk karakteri olarak kullanılır. Bazı kaçış dizileri cihaza özgüdür. Örneğin, dikey sekme ve form besleme kaçış dizileri ( **\v** ve **\f**) ekran çıkışını etkilemez, ancak uygun yazıcı işlemlerini gerçekleştirir.
+Kaçış dizileri, görüntü bağdaştırıcısına grafik olmayan denetim karakterleri göndermenizi sağlar. Örneğin, ESC karakteri (**\ 033**), genellikle bir Terminal veya yazıcı için bir denetim komutunun ilk karakteri olarak kullanılır. Bazı kaçış dizileri cihaza özgüdür. Örneğin, dikey sekme ve form besleme kaçış dizileri (**\v** ve **\f**) ekran çıkışını etkilemez, ancak uygun yazıcı işlemlerini gerçekleştirir.
 
-Ayrıca, bir devam karakteri olarak ters **\\** eğik çizgi () kullanabilirsiniz. Ters eğik çizginin hemen arkasından bir yeni satır karakteri (RETURN anahtarına basmaya eşdeğerdir) geliyorsa, derleyici ters eğik çizgiyi ve yeni satır karakterini yoksayar ve sonraki satırı önceki satırın bir parçası olarak değerlendirir. Bu, özellikle tek satırdan uzun olan önişlemci tanımları için kullanışlıdır. Örneğin:
+Ayrıca, bir devam karakteri olarak ters**\\**eğik çizgi () kullanabilirsiniz. Ters eğik çizginin hemen arkasından bir yeni satır karakteri (RETURN anahtarına basmaya eşdeğerdir) geliyorsa, derleyici ters eğik çizgiyi ve yeni satır karakterini yoksayar ve sonraki satırı önceki satırın bir parçası olarak değerlendirir. Bu, özellikle tek satırdan uzun olan önişlemci tanımları için kullanışlıdır. Örneğin:
 
 ```
 #define assert(exp) \

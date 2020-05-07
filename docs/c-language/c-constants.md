@@ -14,20 +14,20 @@ ms.locfileid: "62326098"
 ---
 # <a name="c-constants"></a>C Sabitleri
 
-Bir "sabit" sayı, karakter ya da bir programda bir değer olarak kullanılan karakter dizesi değeri. Kayan nokta temsil etmek için sabitler, tamsayı, sabit listesi veya değiştirilemez karakter değerlerini kullanın.
+Bir "sabit" bir programda değer olarak kullanılabilecek bir sayı, karakter veya karakter dizesidir. Değiştirilebilen kayan nokta, tamsayı, sabit listesi veya karakter değerlerini göstermek için sabitleri kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
 `constant`:<br/>
-*Kayan noktaya sabiti*
+*kayan nokta-sabit*
 
 *tamsayı sabiti*
 
-*Numaralandırma sabiti*
+*sabit listesi-sabit*
 
 *karakter sabiti*
 
-Sabitler, değeri ve türü sağlayarak belirlenir. [Kayan nokta](../c-language/c-floating-point-constants.md), [tamsayı](../c-language/c-integer-constants.md), ve [karakter sabitleri](../c-language/c-character-constants.md) sonraki üç bölümde ele alınmıştır. Numaralandırma sabitlerini açıklanmıştır [numaralandırma bildirimleri](../c-language/c-enumeration-declarations.md).
+Sabitler, bir değer ve bir tür bulundurarak belirlenir. [Kayan nokta](../c-language/c-floating-point-constants.md), [tamsayı](../c-language/c-integer-constants.md)ve [karakter sabitleri](../c-language/c-character-constants.md) sonraki üç bölümde ele alınmıştır. Numaralandırma sabitleri, [numaralandırma bildirimlerinde](../c-language/c-enumeration-declarations.md)açıklanmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

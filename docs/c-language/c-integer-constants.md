@@ -13,66 +13,66 @@ ms.locfileid: "67400519"
 ---
 # <a name="c-integer-constants"></a>C Tamsayı Sabitleri
 
-Bir *tamsayı sabiti* (10 tabanında) ondalık, sekizlik (Temel 8) ya da temsil eder bir tamsayı değeri onaltılık (16 tabanında) sayıdır. Tamsayı sabitleri değiştirilemez tamsayı değerlerini temsil edecek şekilde kullanın.
+*Tamsayı sabiti* , bir integral değeri temsil eden ondalık (10 tabanında), sekizlik (taban 8) veya onaltılı (taban 16) sayıdır. Değiştirilemeyen tamsayı değerlerini göstermek için tamsayı sabitleri kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
 *tamsayı sabiti*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ondalık sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sekizlik sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;*Decimal-sabit* *tamsayı-son ek*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sekizlik sabit* *tamsayı-son ek*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*onaltılı sabit* *tamsayı-son ek*<sub>opt</sub>
 
-*ondalık sabit*:<br/>
+*Decimal sabit*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sıfır olmayan basamak*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ondalık sabit* *basamak*
+&nbsp;&nbsp;&nbsp;&nbsp;*Decimal-sabit* *basamak*
 
 *sekizlik sabit*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sekizlik sabit* *sekizlik basamak*
 
-*onaltılık sabit*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık önek* *onaltılık basamak*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabit* *onaltılık basamak*
+*onaltılı sabit*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*on altılı ön ek* *onaltılı basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*onaltılı sabit* *onaltılı basamak*
 
-*onaltılık önek*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0x**  **0X**
+*on altılı önek*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0x**  **0x**
 
-*sıfır olmayan basamak*: biri<br/>
+*sıfır olmayan rakam*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**1 2 3 4 5 6 7 8 9**
 
 *sekizlik basamak*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**
 
-*onaltılık basamak*: biri<br/>
+*on altılık*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**b c d e f**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**B C D E F**
+&nbsp;&nbsp;&nbsp;&nbsp;**a b c d e f**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**A B C D E F**
 
-*integer-suffix*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*işaretsiz sonek* *uzun soneki*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*işaretsiz sonek* *uzun uzun soneki*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*işaretsiz sonek* *64 bit tamsayı soneki*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*uzun soneki* *işaretsiz sonek*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*uzun uzun soneki* *işaretsiz sonek*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*64 bit tamsayı soneki*
+*tamsayı-sonek*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*imzasız son sonek* *uzun son ek*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*imzasız son sonek* *uzun uzun-sonek*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*imzasız son ek* *64-bit tamsayı-sonek*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*uzun son sonek* *imzasız-son ek*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*uzun uzun son ek* *işaretsiz-sonek*<sub>kabul etme</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*64-bit-tamsayı-sonek*
 
-*işaretsiz sonek*: biri<br/>
+*imzasız-sonek*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**u U**
 
-*uzun soneki*: biri<br/>
+*uzun sonek*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**l L**
 
-*uzun uzun soneki*: biri<br/>
+*uzun uzun son ek*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**ll LL**
 
-*64 bit tamsayı soneki*: biri<br/>
+*64-bit-tamsayı-sonek*: aşağıdakilerden biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**i64 I64**
 
-**I64** ve **I64** birimlerdir Microsoft'a özgü.
+**İ64** ve **I64** sonekleri, Microsoft 'a özgüdür.
 
-Bunlar bir eksi işareti tarafından öncelenen sürece tamsayı sabitleri pozitif ( **-** ). Eksi işareti birli aritmetik olumsuzlama işleci yorumlanır. (Bkz [birli aritmetik işleçler](../c-language/unary-arithmetic-operators.md) bu işleci hakkında bilgi için.)
+Tamsayı sabitleri önünde eksi işareti (**-**) belirtilmedikçe pozitif bir tamsayıdır. Eksi işareti birli aritmetik olumsuzlama işleci olarak yorumlanır. (Bu işleç hakkında bilgi için bkz. [birli aritmetik işleçler](../c-language/unary-arithmetic-operators.md) .)
 
-Bir tam sayı sabiti ile başlıyorsa **0 x** veya **0 X**, onaltılık. Basamağı ile başlıyorsa **0**, sekizlik. Aksi takdirde, ondalık olduğu varsayılır.
+Tamsayı sabiti **0x** veya **0x**ile başlıyorsa, onaltılı olur. **0**basamağına başlıyorsa, sekizlik olur. Aksi takdirde, ondalık olarak kabul edilir.
 
 Aşağıdaki tamsayı sabitleri eşdeğerdir:
 
@@ -82,7 +82,7 @@ Aşağıdaki tamsayı sabitleri eşdeğerdir:
 034    /* = Octal representation for decimal 28 */
 ```
 
-Hiçbir boşluk karakterlerinin bir tamsayı sabiti rakamı ayırabilirsiniz. Bu örnekler, bazı geçerli bir ondalık, sekizlik ve onaltılık sabitler gösterir.
+Boşluk karakteri, bir tamsayı sabitinin rakamlarını ayırabilirler. Bu örneklerde bazı geçerli ondalık, sekizli ve onaltılık sabitler gösterilmektedir.
 
 ```C
     /* Decimal Constants */

@@ -13,20 +13,20 @@ ms.locfileid: "67400459"
 ---
 # <a name="c-primary-expressions"></a>C Birincil İfadeler
 
-İfadelerde işlenenlerin "birincil expressions." olarak adlandırılır
+Deyimlerdeki işlenenler "birincil ifadeler" olarak adlandırılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Birincil ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Sabit*<br/>
+*birincil ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sabit*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*dize sabit değeri*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **(** *ifade* **)**
+&nbsp;&nbsp;&nbsp;&nbsp;**(** *ifade* **)**
 
 *ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*expression* **,** *assignment-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade* **,** *atama ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşlenenler ve İfadeler](../c-language/operands-and-expressions.md)
+[İşlenenler ve Ifadeler](../c-language/operands-and-expressions.md)

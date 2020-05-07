@@ -14,14 +14,14 @@ ms.locfileid: "62233715"
 ---
 # <a name="expression-statement-c"></a>İfade Deyimi (C)
 
-Bir ifade deyimi yürütüldüğünde, ifade içinde açıklanan kurallara göre değerlendirilir [ifadeler ve atamalar](../c-language/expressions-and-assignments.md).
+Bir ifade deyimi yürütüldüğünde, ifade [ifadelerde ve atamalarda](../c-language/expressions-and-assignments.md)özetlenen kurallara göre değerlendirilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*ifade deyimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade*<sub>iyileştirilmiş</sub> **;**
+*ifade ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade*<sub>katılımı</sub> **;**
 
-İfade değerlendirmesinden gelen tüm yan etkiler, sonraki deyim yürütülmeden önce tamamlanır. Boş ifade deyimine null deyim denir. Bkz: [Null deyim](../c-language/null-statement-c.md) daha fazla bilgi için.
+İfade değerlendirmesinden gelen tüm yan etkiler, sonraki deyim yürütülmeden önce tamamlanır. Boş ifade deyimine null deyim denir. Daha fazla bilgi için bkz. [null bildirisi](../c-language/null-statement-c.md) .
 
 Bu örnekler, ifade deyimlerini gösterir.
 

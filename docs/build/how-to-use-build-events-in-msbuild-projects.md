@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: MSBuild projelerinde derleme olaylarını kullanma'
+title: 'Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - 'msbuild (c++), howto: use build events in projects'
@@ -11,13 +11,13 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 08/27/2019
 ms.locfileid: "70060061"
 ---
-# <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl yapılır: MSBuild projelerinde derleme olaylarını kullanma
+# <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma
 
 Yapı olayı, MSBuild 'in derleme işlemindeki belirli bir aşamada gerçekleştirdiği bir komuttur. Oluşturma *öncesi* olay, derleme başlamadan önce oluşur; bağlama *öncesi* olay, bağlantı adımı başlamadan önce oluşur; ve derleme *sonrası* olay, derleme başarıyla bittikten sonra oluşur. Derleme olayı yalnızca ilişkili derleme adımı gerçekleşirse oluşur. Örneğin, bağlantı adımı çalıştırılmayan bağlantı öncesi olay oluşmaz.
 
-Üç derleme olayının her biri, bir öğe tanımı grubunda yürütülen bir komut öğesi (`<Command>`) ve **MSBuild** derleme olayını gerçekleştirdiğinde görüntülenen bir ileti öğesi (`<Message>`) tarafından temsil edilir. Her öğe isteğe bağlıdır ve aynı öğeyi birden çok kez belirtirseniz, son oluşum öncelik kazanır.
+Üç derleme olayının her biri, bir öğe tanımı grubunda yürütülen bir komut öğesi (`<Command>`) ve`<Message>` **MSBuild** derleme olayını gerçekleştirdiğinde görüntülenen bir ileti öğesi () tarafından temsil edilir. Her öğe isteğe bağlıdır ve aynı öğeyi birden çok kez belirtirseniz, son oluşum öncelik kazanır.
 
-Derleme olayının yürütülüp yürütülmediğini göstermek için bir özellik`<`grubunda isteğe bağlı bir Use- *Build* öğesi (*derleme-olay*`UseInBuild>`) belirtilebilir. Bir *Use-Build* öğesinin içerik değeri **true** ya da **false**şeklindedir. Varsayılan olarak, karşılık gelen *derleme kullanımı* öğesi olarak `false`ayarlanmadığı takdirde bir yapı olayı yürütülür.
+Derleme olayının yürütülüp yürütülmediğini göstermek için bir özellik grubunda isteğe bağlı bir *Use-Build* öğesi (`<`*derleme-olay*`UseInBuild>`) belirtilebilir. Bir *Use-Build* öğesinin içerik değeri **true** ya da **false**şeklindedir. Varsayılan olarak, karşılık gelen *derleme kullanımı* öğesi olarak `false`ayarlanmadığı takdirde bir yapı olayı yürütülür.
 
 Aşağıdaki tabloda her derleme olay XML öğesi listelenmektedir:
 
@@ -37,7 +37,7 @@ Aşağıdaki tabloda her *derleme kullanımı* öğesi listelenmektedir:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, izlenecek yol içinde [oluşturulan MyProject. vcxproj dosyasının proje öğesinin içine eklenebilir: Bir C++ proje](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)oluşturmak için MSBuild 'i kullanma. *Oluşturma öncesi* bir olay Main. cpp kopyasını oluşturur; *bağlama öncesi* bir olay Main. obj; kopyasını oluşturur. *Derleme sonrası* bir olay MyProject. exe ' nin bir kopyasını oluşturur. Proje sürüm yapılandırması kullanılarak derlenip, derleme olayları yürütülür. Proje bir hata ayıklama yapılandırması kullanılarak derlenise, derleme olayları yürütülmez.
+Aşağıdaki örnek, [Izlenecek yol: C++ projesi oluşturmak Için MSBuild kullanılarak](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)oluşturulan MyProject. vcxproj dosyasının proje öğesinin içine eklenebilir. *Oluşturma öncesi* bir olay Main. cpp kopyasını oluşturur; *bağlama öncesi* bir olay Main. obj; kopyasını oluşturur. *Derleme sonrası* bir olay MyProject. exe ' nin bir kopyasını oluşturur. Proje sürüm yapılandırması kullanılarak derlenip, derleme olayları yürütülür. Proje bir hata ayıklama yapılandırması kullanılarak derlenise, derleme olayları yürütülmez.
 
 ``` xml
 <ItemDefinitionGroup>
@@ -71,4 +71,4 @@ Aşağıdaki örnek, izlenecek yol içinde [oluşturulan MyProject. vcxproj dosy
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Komut satırında MSBuild-C++](msbuild-visual-cpp.md)<br/>
-[İzlenecek yol: C++ Projesi Oluşturmak için MSBuild Kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)
+[İzlenecek yol: C++ projesi oluşturmak için MSBuild kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)

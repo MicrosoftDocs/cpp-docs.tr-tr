@@ -18,13 +18,13 @@ ms.locfileid: "62234253"
 ---
 # <a name="dll-import-and-export-functions"></a>DLL İçeri ve Dışarı Aktarma İşlevleri
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Bu konuyla ilgili en eksiksiz ve güncel bilgiler bulunabilir [dllexport, dllimport](../cpp/dllexport-dllimport.md).
+Bu konuyla ilgili en kapsamlı ve güncel bilgiler [dllexport, dllimport](../cpp/dllexport-dllimport.md)içinde bulunabilir.
 
-**Dllimport** ve `dllexport` depolama sınıfı değiştiricileri C diline yönelik Microsoft'a özgü genişletmelerdir olan. Bu değiştiriciler, DLL arabirimini istemciye (yürütülebilir dosya veya başka bir DLL) açık olarak tanımlar. İşlevlerin `dllexport` olarak bildirilmesi, modül tanım (.DEF) dosyasına yönelik gereksinimi ortadan kaldırır. Ayrıca **dllimport** ve `dllexport` değiştiricilerini veri ve nesneleri.
+**DllImport** ve `dllexport` depolama sınıfı değiştiricileri, C diline yönelik Microsoft 'a özgü uzantılardır. Bu değiştiriciler, DLL arabirimini istemciye (yürütülebilir dosya veya başka bir DLL) açık olarak tanımlar. İşlevlerin `dllexport` olarak bildirilmesi, modül tanım (.DEF) dosyasına yönelik gereksinimi ortadan kaldırır. Ayrıca, veri ve nesneler **dllimport** ile dllimport `dllexport` ve değiştiricilerini de kullanabilirsiniz.
 
-**Dllimport** ve `dllexport` genişletilmiş öznitelik sözdizimi anahtar sözcüğü ile depolama sınıfı değiştiricilere kullanılan `__declspec`, bu örnekte gösterildiği gibi:
+Aşağıdaki **dllimport** örnekte gösterildiği `dllexport` gibi, DllImport ve depolama sınıfı değiştiricileri genişletilmiş öznitelik sözdizimi anahtar sözcüğüyle `__declspec`kullanılmalıdır:
 
 ```
 #define DllImport   __declspec( dllimport )
@@ -36,9 +36,9 @@ DllExport int j;
 DllExport int n;
 ```
 
-Genişletilmiş depolama sınıfı değiştiricilere ilişkin sözdizimi hakkında ayrıntılı bilgi için bkz: [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
+Genişletilmiş depolama sınıfı değiştiricilerin sözdizimi hakkında belirli bilgiler için bkz. [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -18,4 +18,4 @@ Boşluk, sekme, satır besleme (yeni satır), satır başı, form akışı ve di
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Belirteçleri](../c-language/c-tokens.md)
+[C belirteçleri](../c-language/c-tokens.md)

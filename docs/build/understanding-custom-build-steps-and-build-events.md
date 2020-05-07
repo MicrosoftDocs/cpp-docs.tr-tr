@@ -20,15 +20,15 @@ ms.locfileid: "70177319"
 ---
 # <a name="understanding-custom-build-steps-and-build-events"></a>Özel Derleme Adımlarını ve Derleme Olaylarını Anlama
 
-Görsel C++ geliştirme ortamının içinden, yapı işlemini özelleştirmenin üç temel yolu vardır:
+Visual C++ geliştirme ortamının içinden, yapı işlemini özelleştirmenin üç temel yolu vardır:
 
 - **Özel derleme adımları**
 
-   Özel derleme adımı bir projeyle ilişkili derleme kuralıdır. Özel bir yapı adımı yürütmek için bir komut satırı, herhangi bir ek giriş veya çıkış dosyası ve görüntülenecek bir ileti belirtebilir. Daha fazla bilgi için [nasıl yapılır: MSBuild projelerine](how-to-add-a-custom-build-step-to-msbuild-projects.md)özel derleme adımı ekleyin.
+   Özel derleme adımı bir projeyle ilişkili derleme kuralıdır. Özel bir yapı adımı yürütmek için bir komut satırı, herhangi bir ek giriş veya çıkış dosyası ve görüntülenecek bir ileti belirtebilir. Daha fazla bilgi için bkz. [nasıl yapılır: MSBuild projelerine özel derleme adımı ekleme](how-to-add-a-custom-build-step-to-msbuild-projects.md).
 
 - **Özel derleme araçları**
 
-   Özel derleme aracı bir veya daha fazla dosya ile ilişkili bir yapı kuralıdır. Özel derleme adımı, giriş dosyalarını bir veya daha fazla çıktı dosyası ile sonuçlanan özel bir derleme aracına geçirebilir. Örneğin, bir MFC uygulamasındaki Yardım dosyaları özel bir yapı aracıyla oluşturulmuştur. Daha fazla bilgi için [nasıl yapılır: MSBuild projelerine](how-to-add-custom-build-tools-to-msbuild-projects.md) özel derleme araçları ekleyin ve [özel derleme araçları belirtin](specifying-custom-build-tools.md).
+   Özel derleme aracı bir veya daha fazla dosya ile ilişkili bir yapı kuralıdır. Özel derleme adımı, giriş dosyalarını bir veya daha fazla çıktı dosyası ile sonuçlanan özel bir derleme aracına geçirebilir. Örneğin, bir MFC uygulamasındaki Yardım dosyaları özel bir yapı aracıyla oluşturulmuştur. Daha fazla bilgi için bkz. [nasıl yapılır: MSBuild projelerine özel derleme araçları ekleme](how-to-add-custom-build-tools-to-msbuild-projects.md) ve [özel derleme araçları belirtme](specifying-custom-build-tools.md).
 
 - **Derleme olayları**
 
@@ -62,7 +62,7 @@ Bir çözümdeki her proje için, derleme olayları ve özel derleme adımları 
 
 11. Oluşturma sonrası olay
 
-Ve diğer tüm derleme işlemlerinden sonra sırayla çalışır.`post-build event` `custom build step on the project`
+`custom build step on the project` Ve diğer tüm `post-build event` derleme işlemlerinden sonra sırayla çalışır.
 
 ## <a name="in-this-section"></a>Bu bölümde
 
@@ -74,4 +74,4 @@ Ve diğer tüm derleme işlemlerinden sonra sırayla çalışır.`post-build eve
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio Projeleri - C++](creating-and-managing-visual-cpp-projects.md)<br>
-[Derleme komutları ve özellikleri için genel makrolar](reference/common-macros-for-build-commands-and-properties.md)
+[Derleme komutları ve özellikleri için ortak makrolar](reference/common-macros-for-build-commands-and-properties.md)

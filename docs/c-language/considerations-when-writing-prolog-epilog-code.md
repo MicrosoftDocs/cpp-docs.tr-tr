@@ -18,9 +18,9 @@ ms.locfileid: "81334589"
 
 **Microsoft'a Özgü**
 
-Kendi prolog ve epilog kod dizileri yazmadan önce, yığın çerçeve nasıl ortaya konulmuştur anlamak önemlidir. Önceden tanımlanmış **__LOCAL_SIZE** sabitin nasıl kullanılacağını bilmek de yararlıdır.
+Kendi giriş ve bitiş kodu dizilerini yazmadan önce, yığın çerçevesinin nasıl düzenlendiğini anlamak önemlidir. Ayrıca, **__LOCAL_SIZE** önceden tanımlanmış sabiti nasıl kullanacağınızı öğrenmek de yararlı olur.
 
-## <a name="cstack-frame-layout"></a><a name="_clang_c_stack_frame_layout"></a>CStack Çerçeve Düzeni
+## <a name="cstack-frame-layout"></a><a name="_clang_c_stack_frame_layout"></a>CStack çerçeve düzeni
 
 Bu örnekte, 32 bit işlevinde görünebilecek standart giriş kodu gösterilmektedir:
 
@@ -42,18 +42,18 @@ ret                          ; Return from function
 
 Yığın her zaman aşağı doğru (yüksek bellek adreslerinden düşük olanlara) büyür. Taban işaretçisi (`ebp`) `ebp`'nin gönderilen değerine işaret eder. Yerel değişkenler alanı `ebp-2`'de başlar. Yerel değişkenlere erişmek için uygun değeri `ebp`'den çıkararak `ebp`'den bir uzaklık hesaplayın.
 
-## <a name="the-__local_size-constant"></a><a name="_clang_the___local_size_constant"></a>__LOCAL_SIZE Sabiti
+## <a name="the-__local_size-constant"></a><a name="_clang_the___local_size_constant"></a>__LOCAL_SIZE sabiti
 
-Derleyici, işlev prolog kodunun satır İçi assembler bloğunda kullanılmak üzere sabit, **__LOCAL_SIZE**sağlar. Bu sabit, özel giriş kodundaki yığın çerçevesinde yerel değişkenler için yer ayırmak üzere kullanılır.
+Derleyici, işlev giriş kodunun satır içi assembler bloğunda kullanılmak üzere bir sabit, **__LOCAL_SIZE**sağlar. Bu sabit, özel giriş kodundaki yığın çerçevesinde yerel değişkenler için yer ayırmak üzere kullanılır.
 
-Derleyici **__LOCAL_SIZE**değerini belirler. Değer, tüm kullanıcı tanımlı yerel değişkenlerin ve derleyici tarafından oluşturulan geçici değişkenlerin toplam bayt sayısıdır. **__LOCAL_SIZE** sadece ani bir operand olarak kullanılabilir; bir ifadede kullanılamaz. Bu sabitin değerini değiştirmemeli veya yeniden tanımlamamalısınız. Örneğin:
+Derleyici **__LOCAL_SIZE**değerini belirler. Değer, tüm kullanıcı tanımlı yerel değişkenlerin ve derleyici tarafından oluşturulan geçici değişkenlerin toplam bayt sayısıdır. **__LOCAL_SIZE** , yalnızca bir anında işlenen olarak kullanılabilir; bir ifadede kullanılamaz. Bu sabitin değerini değiştirmemeli veya yeniden tanımlamamalısınız. Örneğin:
 
 ```
 mov      eax, __LOCAL_SIZE           ;Immediate operand--Okay
 mov      eax, [ebp - __LOCAL_SIZE]   ;Error
 ```
 
-Özel prolog ve epilog dizileri içeren çıplak bir işlevaşağıdaki örnek prolog dizisinde **__LOCAL_SIZE** kullanır:
+Özel giriş ve bitiş dizileri içeren bir çıplak işlevin aşağıdaki örneği giriş dizisinde **__LOCAL_SIZE** kullanır:
 
 ```
 __declspec ( naked ) func()
@@ -79,7 +79,7 @@ __declspec ( naked ) func()
 }
 ```
 
-**END Microsoft Özel**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -15,9 +15,9 @@ ms.locfileid: "69493339"
 
 Yalıtılmış bir uygulama yalnızca yan yana derlemelere bağlıdır ve bir bildirim kullanarak bağımlılıklarına bağlar. Uygulamanızın Windows 'da düzgün çalışması için tamamen yalıtılmış olması gerekmez; Bununla birlikte, uygulamanızı tamamen yalıtılmış hale getirerek, daha sonra uygulamanıza hizmet etmeniz gerekiyorsa zamandan tasarruf edebilirsiniz. Uygulamanızı tamamen yalıtılmış hale getirme avantajları hakkında daha fazla bilgi için bkz. [Yalıtılmış uygulamalar](/windows/win32/SbsCs/isolated-applications).
 
-Visual Studio kullanarak yerel C/C++ uygulamanızı yapılandırdığınızda, Visual Studio proje sistemi varsayılan olarak Visual Studio kitaplıklarında uygulamanızın bağımlılıklarını açıklayan bir bildirim dosyası oluşturur. Bunlar, uygulamanızın sahip olduğu tek bağımlılıklardır, Visual Studio ile yeniden oluşturulduktan hemen sonra yalıtılmış bir uygulama haline gelir. Uygulamanız çalışma zamanında başka kitaplıklar kullanıyorsa, bu kitaplıkları [C/C++ yan yana derlemeler oluşturma](building-c-cpp-side-by-side-assemblies.md)bölümünde açıklanan adımları izleyerek yan yana derlemeler olarak yeniden oluşturmanız gerekebilir.
+Visual Studio kullanarak yerel C/C++ uygulamanızı yapılandırdığınızda, varsayılan olarak Visual Studio proje sistemi, uygulamanızın Visual Studio kitaplıklarında bağımlılıklarını açıklayan bir bildirim dosyası oluşturur. Bunlar, uygulamanızın sahip olduğu tek bağımlılıklardır, Visual Studio ile yeniden oluşturulduktan hemen sonra yalıtılmış bir uygulama haline gelir. Uygulamanız çalışma zamanında başka kitaplıklar kullanıyorsa, bu kitaplıkları [C/C++ yan yana derlemeler oluşturma](building-c-cpp-side-by-side-assemblies.md)bölümünde açıklanan adımları izleyerek yan yana derlemeler olarak yeniden oluşturmanız gerekebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları](concepts-of-isolated-applications-and-side-by-side-assemblies.md)<br/>
+[Yalıtılmış uygulamalar ve yan yana derlemeler için kavramlar](concepts-of-isolated-applications-and-side-by-side-assemblies.md)<br/>
 [C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

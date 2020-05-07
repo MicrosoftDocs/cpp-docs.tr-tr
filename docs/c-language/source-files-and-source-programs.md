@@ -21,23 +21,23 @@ Kaynak programı bir veya daha fazla "kaynak dosyaya" veya "çeviri birimine" ay
 ## <a name="syntax"></a>Sözdizimi
 
 *çeviri birimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*dış beyan* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*çeviri birimi* *dış beyan*
+&nbsp;&nbsp;&nbsp;&nbsp;*Dış bildirim* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*çeviri birimi* *dış bildirimi*
 
-*dış beyan*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*fonksiyon tanımı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Bildirim*
+*Dış bildirim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*işlev tanımı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bağımsız*
 
-[Bildirimlere Genel Bakış,](../c-language/overview-of-declarations.md) nonterminal `declaration` için sözdizimini verir ve *Önİşlemci Başvurusu* [çeviri biriminin](../preprocessor/phases-of-translation.md) nasıl işlenirolduğunu açıklar.
+[Bildirimlere genel bakış](../c-language/overview-of-declarations.md) , Terminal `declaration` dışı için söz dizimini verir ve *Önişlemci Başvurusu* , [çeviri biriminin](../preprocessor/phases-of-translation.md) nasıl işlendiğini açıklar.
 
 > [!NOTE]
-> ANSI sözdizimi sözleşmelerinin açıklaması için [C Dili Sözdizimi Özeti'ne](../c-language/c-language-syntax-summary.md)giriş bölümüne bakın.
+> ANSI sözdizimi kurallarının açıklaması için [C dili sözdizimi özetine](../c-language/c-language-syntax-summary.md)giriş bölümüne bakın.
 
 Çeviri biriminin bileşenleri, işlev tanımları ve tanımlayıcı bildirimleri içeren dış bildirimlerdir. Bu bildirimler ve tanımlar, kaynak dosyalarında, üstbilgi dosyalarında, kitaplıklarda ve programın ihtiyacı olan diğer dosyalarda olabilir. Bir program oluşturmak için her çeviri birimini derlemeniz ve ortaya çıkan nesne dosyalarını bağlamanız gerekir.
 
-C "kaynak programı" yönergeler, pragmalar, bildirimler, tanımlar, deyim blokları ve işlevlerden oluşan bir koleksiyondur. Microsoft C programının geçerli bileşenleri olabilmeleri için her birinin, programda herhangi bir sırada görünebilmelerine rağmen (bu kılavuz boyunca açıklanan kurallara tabi olarak) bu kılavuzda açıklanan sözdizimine sahip olması gerekir. Ancak, bu bileşenlerin programdaki konumu, değişkenlerin ve işlevlerin programda nasıl kullanılabileceğini etkiler. (Daha fazla bilgi için [Bkz. Yaşam Süresi, Kapsam, Görünürlük ve Bağlantı.)](../c-language/lifetime-scope-visibility-and-linkage.md)
+C "kaynak programı" yönergeler, pragmalar, bildirimler, tanımlar, deyim blokları ve işlevlerden oluşan bir koleksiyondur. Microsoft C programının geçerli bileşenleri olabilmeleri için her birinin, programda herhangi bir sırada görünebilmelerine rağmen (bu kılavuz boyunca açıklanan kurallara tabi olarak) bu kılavuzda açıklanan sözdizimine sahip olması gerekir. Ancak, bu bileşenlerin programdaki konumu, değişkenlerin ve işlevlerin programda nasıl kullanılabileceğini etkiler. (Daha fazla bilgi için bkz. [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md) .)
 
-Kaynak dosyalarının yürütülebilir deyimleri içermesine gerek yoktur. Örneğin, değişkenlerin tanımlarını bir kaynak dosyasına yerleştirmeyi ve ardından bu değişkenlere yapılan başvuruları bunları kullanan başka kaynak dosyalarında bildirmeyi yararlı bulabilirsiniz. Bu teknik, gerektiğinde tanımların bulunmasını ve güncelleştirilmesini kolaylaştırır. Aynı nedenle sabitler ve makrolar, çoğu zaman gerektiğinde kaynak dosyalarında başvurulabilen "içerme dosyaları" veya "üstbilgi dosyaları" adlı ayrı dosyalar halinde düzenlenebilir. [Makrolar](../preprocessor/macros-c-cpp.md) hakkında bilgi ve dosyaları [eklemek](../preprocessor/hash-include-directive-c-cpp.md)için *Önİşlemci Başvurusu'na* bakın.
+Kaynak dosyalarının yürütülebilir deyimleri içermesine gerek yoktur. Örneğin, değişkenlerin tanımlarını bir kaynak dosyasına yerleştirmeyi ve ardından bu değişkenlere yapılan başvuruları bunları kullanan başka kaynak dosyalarında bildirmeyi yararlı bulabilirsiniz. Bu teknik, gerektiğinde tanımların bulunmasını ve güncelleştirilmesini kolaylaştırır. Aynı nedenle sabitler ve makrolar, çoğu zaman gerektiğinde kaynak dosyalarında başvurulabilen "içerme dosyaları" veya "üstbilgi dosyaları" adlı ayrı dosyalar halinde düzenlenebilir. [Makrolar](../preprocessor/macros-c-cpp.md) ve [içerme dosyaları](../preprocessor/hash-include-directive-c-cpp.md)hakkında bilgi Için bkz. *Önişlemci Başvurusu* .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -14,7 +14,7 @@ ms.locfileid: "62325929"
 ---
 # <a name="internal-linkage"></a>İç Bağlantı
 
-Bir nesne veya işlevi için bir dosya kapsam tanımlayıcısının bildirimi içeriyorsa *depolama sınıfı tanımlayıcısı* **statik**, tanımlayıcının iç bağlantısı vardır. Aksi takdirde, tanımlayıcının dış bağlantısı vardır. Bkz: [depolama sınıfları](../c-language/c-storage-classes.md) bir irdelemesi *depolama sınıfı tanımlayıcısı* bildirimlere.
+Bir nesne veya işlev için bir dosya kapsamı tanımlayıcısının bildirimi, *depolama sınıfı Belirleyicisi* **statik**' i içeriyorsa, tanımlayıcının iç bağlantısı vardır. Aksi takdirde, tanımlayıcının dış bağlantısı vardır. *Depolama sınıfı-tanımlayıcı* olmayan terminalin bir tartışması için bkz. [Depolama sınıfları](../c-language/c-storage-classes.md) .
 
 Bir çeviri birimi içinde iç bağlantı içeren bir tanımlayıcının her örneği aynı tanımlayıcı veya işlevi gösterir. Dahili olarak bağlantılı tanımlayıcılar bir çeviri birimi için benzersizdir.
 

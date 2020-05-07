@@ -16,19 +16,19 @@ ms.locfileid: "62233823"
 ---
 # <a name="expanding-wildcard-arguments"></a>Joker Karakter Bağımsız Değişkenlerini Genişletme
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-C programını çalıştırdığınızda, iki joker karakter kullanabilirsiniz — soru işareti (?) ve yıldız işareti (*); dosya adı ve yol bağımsız değişkenlerini komut satırında belirtmek için.
+C programını çalıştırdığınızda, komut satırında dosya adı ve yol bağımsız değişkenlerini belirtmek için iki joker karakter (soru işareti (?) ve yıldız işareti (*)) kullanabilirsiniz.
 
-Varsayılan olarak, joker karakterler komut satırı bağımsız değişkenlerinde genişletilmiş değil. Normal bir bağımsız değişken vektör değiştirebilirsiniz `argv` yükleme yordamı bir sürümle joker karakterler setargv.obj ya da wsetargv.obj dosyasıyla bağlayarak genişletin. Programınızı kullanıyorsa bir `main` setargv.obj bağlantıyla işlevi. Programınızı kullanıyorsa bir `wmain` wsetargv.obj bağlantıyla işlevi. Bunların her ikisi de eşdeğer davranışa sahip.
+Varsayılan olarak, komut satırı bağımsız değişkenlerinde joker karakterler genişletilmez. Normal bağımsız değişken vektör `argv` yükleme yordamını, Setargv. obj veya Wsetargv. obj dosyasıyla bağlantı kurarak joker karakterleri genişletmenizi sağlayan bir sürümle değiştirebilirsiniz. Programınız bir `main` işlev kullanıyorsa, Setargv. obj ile bağlayın. Programınız bir `wmain` işlev kullanıyorsa, Wsetargv. obj ile bağlayın. Bunların her ikisi de eşdeğer davranışa sahiptir.
 
-Setargv.obj veya wsetargv.obj bağlamak için kullanın **/link** seçeneği. Örneğin:
+Setargv. obj veya Wsetargv. obj ile bağlantı için, **/Link** seçeneğini kullanın. Örneğin:
 
-**cl example.c/Link setargv.obj**
+**CL example. c/link Setargv. obj**
 
-Joker karakter, işletim sistemi komutları aynı şekilde genişletilir. (Joker karakter olarak alışkın değilseniz, işletim sistemi Kullanım Kılavuzu'na bakın.)
+Joker karakterler, işletim sistemi komutlarıyla aynı şekilde genişletilir. (Joker karakterler hakkında bilginiz yoksa, işletim sistemi Kullanıcı Kılavuzumuza bakın.)
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

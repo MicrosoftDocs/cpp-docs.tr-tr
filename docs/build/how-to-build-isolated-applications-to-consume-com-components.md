@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: COM bileşenlerini tüketmek için yalıtılmış uygulamalar oluşturun'
+title: 'Nasıl Yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - isolated applications [C++]
@@ -11,7 +11,7 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 08/15/2019
 ms.locfileid: "69493243"
 ---
-# <a name="how-to-build-isolated-applications-to-consume-com-components"></a>Nasıl yapılır: COM bileşenlerini tüketmek için yalıtılmış uygulamalar oluşturun
+# <a name="how-to-build-isolated-applications-to-consume-com-components"></a>Nasıl Yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme
 
 Yalıtılmış uygulamalar, programa yerleşik bildirimleri olan uygulamalardır. COM bileşenlerini kullanmak için yalıtılmış uygulamalar oluşturabilirsiniz.
 
@@ -23,7 +23,7 @@ Yalıtılmış uygulamalar, programa yerleşik bildirimleri olan uygulamalardır
 
 1. **YALıTıLMıŞ com** özellik sayfasını seçin ve ardından **Bileşen dosya adı** özelliğini YALıTıLMıŞ uygulamanın kullanmasını istediğiniz com bileşeni adına ayarlayın.
 
-1.           **Tamam**'ı tıklatın.
+1. **Tamam**'a tıklayın.
 
 ### <a name="to-build-manifests-into-isolated-applications"></a>Yalıtılmış uygulamalarda bildirim oluşturmak için
 
@@ -33,9 +33,9 @@ Yalıtılmış uygulamalar, programa yerleşik bildirimleri olan uygulamalardır
 
 1. **Giriş ve çıkış** özellik sayfasını seçin ve ardından **ekleme bildirimi** özelliğini **Evet**olarak ayarlayın.
 
-1.           **Tamam**'ı tıklatın.
+1. **Tamam**'a tıklayın.
 
-1. Çözümü oluşturun.
+1. Çözümü derleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

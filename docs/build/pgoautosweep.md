@@ -14,7 +14,7 @@ ms.locfileid: "67552239"
 ---
 # <a name="pgoautosweep"></a>PgoAutoSweep
 
-`PgoAutoSweep` Geçerli profil sayaç bilgileri, bir dosyaya kaydeder ve sonra sayaçları sıfırlar. Profil temelli iyileştirme çalışan programa gelen tüm profil verilerini yazmak eğitim sırasında işlevini bir `.pgc` iyileştirme yapı daha sonra kullanmak için dosya.
+`PgoAutoSweep`geçerli profil sayacı bilgilerini bir dosyaya kaydeder ve sonra sayaçları sıfırlar. Çalışan programdan daha sonra en iyi duruma getirme derlemesinde kullanmak üzere tüm profil verilerini bir `.pgc` dosyaya yazmak için profil temelli iyileştirme eğitimi sırasında işlevini kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,32 +25,32 @@ void PgoAutoSweep(const wchar_t* name); // UNICODE
 
 ### <a name="parameters"></a>Parametreler
 
-*name*<br/>
-Kaydedilen için bir tanımlayıcı dizesi `.pgc` dosya.
+*ada*<br/>
+Kaydedilen `.pgc` dosya için tanımlayıcı dize.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çağırabilirsiniz `PgoAutoSweep` kaydetmek ve uygulama yürütme sırasında herhangi bir noktada profil verilerini sıfırlamak için uygulamanızdan. İzleme eklenmiş bir yapıda `PgoAutoSweep` profili sayaçları sıfırlar geçerli profil oluşturma verilerini yakalar ve bir dosyaya kaydeder. Arama eşdeğerdir [pgosweep](pgosweep.md) yürütülebilir dosyanın belirli bir noktada komutu. En iyi duruma getirilmiş bir yapıda `PgoAutoSweep` bir İşlemsiz olduğu.
+Uygulama yürütme sırasında `PgoAutoSweep` herhangi bir noktada profil verilerini kaydetmek ve sıfırlamak için uygulamanızdan çağrı yapabilirsiniz. Belgelenmiş bir derlemede, `PgoAutoSweep` geçerli profil oluşturma verilerini yakalar, bir dosyaya kaydeder ve profil sayaçlarını sıfırlar. Bu, çalıştırılabilirinizdeki belirli bir noktada [pgosüpürme](pgosweep.md) komutunu çağırmanın eşdeğeridir. İyileştirilmiş bir derlemede, `PgoAutoSweep` işlem yapılmaz.
 
-Profil sayaç verileri, adlı bir dosyaya yerleştirilir *base_name*-*adı*! *değer*.pgc, burada *base_name* yürütülebilir dosyanın temel adı *adı* parametresi için geçirilen `PgoAutoSweep`, ve *değer* Dosya adı çakışmalarını önlemek için genellikle bir düz olarak artan numarası, benzersiz bir değer var.
+Kaydedilen profil sayaç verileri *base_name*-*adı*adlı bir dosyaya yerleştirildi! *Value*. pgc, *base_name* çalıştırılabilir dosyanın temel adı, *adı* geçirilen `PgoAutoSweep`parametredir ve *değer* , dosya adı çakışmalarını engellemek için genellikle tek bir artan sayı olan benzersiz bir değerdir.
 
-`.pgc` Oluşturulan dosyalar `PgoAutoSweep` içine birleştirilmelidir bir `.pgd` en iyi duruma getirilmiş bir yürütülebilir dosyayı oluşturmak için kullanılacak dosya. Kullanabileceğiniz [pgomgr](pgomgr.md) birleştirme işlemini gerçekleştirmek için komutu.
+Tarafından `.pgc` `PgoAutoSweep` oluşturulan dosyalar, iyileştirilmiş bir yürütülebilir dosya oluşturmak `.pgd` için kullanılacak bir dosyada birleştirilmelidir. Birleştirme işlemini gerçekleştirmek için [Pgomgr](pgomgr.md) komutunu kullanabilirsiniz.
 
-Birleştirilmiş adını geçirebilirsiniz `.pgd` bağlayıcı kullanarak iyileştirme derleme sırasında dosyasına **PGD =** _filename_ bağımsız değişkeni [/USEPROFILE](reference/useprofile.md) bağlayıcı kullanarak kullanım dışı veya seçenek **/PGD** bağlayıcı seçeneği. Birleştirirseniz, `.pgc` adlı bir dosya dosyalarına *base_name*.pgd, değil dosya komut satırında belirtmeniz gerekir çünkü bağlayıcı varsayılan olarak bu dosyanın adını alır.
+En iyi duruma getirme derlemesi sırasında, ' `.pgd` ' **bir dosya adı**_bağımsız değişkeni_ olan [/Useprofile](reference/useprofile.md) bağlayıcı seçeneğine veya kullanım dışı **/PGD** bağlayıcı seçeneğini kullanarak, birleştirilmiş dosyanın adını bağlayıcıya geçirebilirsiniz. `.pgc` Dosyaları *base_name*. pgd adlı bir dosyada birleştirirseniz, bağlayıcı varsayılan olarak bu dosya adını sağladığından komut satırında dosya adını belirtmeniz gerekmez.
 
-`PgoAutoSweep` İşlevi, iş parçacığı güvenliği ayarı belirtilen işaretlenmiş yapımda oluşturulduğunda tutar. Varsayılan ayarı kullanın veya belirtirseniz **NOEXACT** bağımsız değişkeni [/genprofıle veya fastgenprofıle](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md) bağlayıcı seçeneği çağrılar `PgoAutoSweep` iş parçacığı açısından güvenli değildir. **EXACT** bağımsız değişkeni oluşturur, bir iş parçacığı açısından güvenli ve daha doğru ancak daha yavaş, izleme eklenmiş çalıştırılabilir.
+`PgoAutoSweep` İşlevi, belgelenmiş derleme oluşturulduğunda belirtilen iş parçacığı güvenliği ayarını korur. Varsayılan ayarı kullanır veya [/Genprofile veya/FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md) bağlayıcı seçeneği için **bir bağımsız değişkeni** belirtirseniz, çağrıları `PgoAutoSweep` iş parçacığı açısından güvenli değildir. **Tam** bağımsız değişken bir iş parçacığı güvenli ve daha doğru, ancak daha yavaş, belgelenmiş yürütülebilir dosya oluşturur.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`PgoAutoSweep`|\<pgobootrun.h>|
+|`PgoAutoSweep`|\<pgobootrun. h>|
 
-Yürütülebilir dosyayı bağlı kitaplıkları pgobootrun.lib dosya içermesi gerekir. Bu dosyayı Visual Studio yüklemenizin desteklenen her mimari için VC kitaplıkları dizininde yer alır.
+Yürütülebilir dosya, bağlantılı kitaplıklarda pgobootrun. lib dosyasını içermelidir. Bu dosya, desteklenen her mimari için VC kitaplıkları dizininde bulunan Visual Studio yüklemenize dahildir.
 
 ## <a name="example"></a>Örnek
 
-Kullanan aşağıdaki örnekte `PgoAutoSweep` iki oluşturmak için `.pgc` dosyaları yürütme sırasında farklı noktalarda. İlk kadar çalışma zamanı davranışını tanımlayan veriler içeren `count` 3'e eşittir ve ikinci hemen önce uygulama sonlandırma kadar bu noktadan sonra toplanan verileri içerir.
+Aşağıdaki örnek, yürütme `PgoAutoSweep` sırasında farklı noktalarda `.pgc` iki dosya oluşturmak için kullanır. İlki, 3 ' e eşit olana kadar `count` çalışma zamanı davranışını açıklayan verileri içerir ve ikincisi, uygulama sonlandırmasına kadar bu noktadan sonra toplanan verileri içerir.
 
 ```cpp
 // pgoautosweep.cpp
@@ -97,15 +97,15 @@ int main()
 }
 ```
 
-Bir geliştirici Komut İstemi'nde, şu komutu kullanarak bir nesne dosyası için kodu derleyin:
+Bir geliştirici komut isteminde, aşağıdaki komutu kullanarak kodu bir nesne dosyasına derleyin:
 
 `cl /c /GL /W4 /EHsc /O2 pgoautosweep.cpp`
 
-Ardından bu komutu kullanarak eğitim için izleme eklenmiş bir derleme oluşturur:
+Ardından şu komutu kullanarak eğitim için bir belgelenmiş derleme oluşturun:
 
 `link /LTCG /genprofile pgobootrun.lib pgoautosweep.obj`
 
-Eğitim verileri yakalamak için izleme eklenmiş çalıştırılabilir çalıştırın. Yapılan çağrılar tarafından veri çıkışı `PgoAutoSweep` pgoautosweep func1 adlı dosyalarında kaydedildi! 1.pgc ve pgoautosweep func2! 1.pgc. Çalışırken programın çıkışı şu şekilde görünmelidir:
+Eğitim verilerini yakalamak için belgelenmiş çalıştırılabiliri çalıştırın. Çağrıları tarafından yapılan `PgoAutoSweep` veri çıktısı pgootomatik tarama-func1! 1. pgc ve pgootomatik tarama-Func2! 1. pgc adlı dosyalara kaydedilir. Programın çıktısı, çalıştığı şekilde şöyle görünmelidir:
 
 ```Output
 hello from func1 9
@@ -120,7 +120,7 @@ hello from func2 1
 hello from func2 0
 ```
 
-Çalıştırarak profili eğitim veritabanına kaydedilmiş verilerle birleştirmek **pgomgr** komutu:
+**Pgomgr** komutunu çalıştırarak kaydedilen verileri bir profil eğitimi veritabanına birleştirin:
 
 `pgoautosweep-func1!1.pgc pgoautosweep-func2!1.pgc`
 
@@ -136,7 +136,7 @@ Merging pgoautosweep-func2!1.pgc
 pgoautosweep-func2!1.pgc: Used  3.8% (22424 / 589824) of total space reserved.  0.0% of the counts were dropped due to overflow.
 ```
 
-Artık iyileştirilmiş bir derleme oluşturmak için bu eğitim verilerini kullanabilirsiniz. En iyi duruma getirilmiş çalıştırılabilir dosyayı oluşturmak için bu komutu kullanın:
+Artık bu eğitim verilerini, iyileştirilmiş bir yapı oluşturmak için kullanabilirsiniz. En iyileştirilmiş yürütülebilir dosyayı oluşturmak için bu komutu kullanın:
 
 `link /LTCG /useprofile pgobootrun.lib pgoautosweep.obj`
 

@@ -13,9 +13,9 @@ ms.locfileid: "62233689"
 ---
 # <a name="file-position-in-append-mode"></a>Ekleme Modunda Dosya Konumu
 
-**ANSI 4.9.3** olup bir ekleme modunda akış dosya konumu göstergesi başlangıçta dosyanın başında veya sonunda konumlandırılmış
+**ANSI 4.9.3 &** Ekleme modu akışının dosya konumu göstergesinin başlangıçta dosyanın başlangıcında veya sonunda konumlandırılıp yerleştirilmediğini belirtir
 
-Bir dosya açıldığında modunda dosya konumu göstergesi başlangıçta dosyasının sonuna işaret ekleyin.
+Bir dosya ekleme modunda açıldığında, dosya konumu göstergesi başlangıçta dosyanın sonuna işaret eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -19,15 +19,15 @@ ms.locfileid: "80078545"
 ---
 # <a name="how-to-create-a-c-project-from-existing-code"></a>Nasıl Yapılır: Varolan Koddan C++ Projesi Oluşturma
 
-Visual Studio 'da, varolan kod dosyalarından **Yeni proje oluştur** sihirbazını kullanarak C++ varolan kod dosyalarının bir projeye bağlantı noktası oluşturabilirsiniz. Bu sihirbaz, kaynak dosyalarını ve derleme yapılandırmasını yönetmek için MSBuild sistemini kullanan bir proje çözümü oluşturur. Karmaşık klasör hiyerarşileri olmayan görece basit projelerle en iyi şekilde işe yarar. Sihirbaz, Visual Studio 'nun daha eski Express sürümlerinde kullanılamaz.
+Visual Studio 'da, varolan kod dosyalarından **Yeni proje oluştur** sihirbazını kullanarak varolan kod dosyalarının bir C++ projesine bağlantı noktası oluşturabilirsiniz. Bu sihirbaz, kaynak dosyalarını ve derleme yapılandırmasını yönetmek için MSBuild sistemini kullanan bir proje çözümü oluşturur. Karmaşık klasör hiyerarşileri olmayan görece basit projelerle en iyi şekilde işe yarar. Sihirbaz, Visual Studio 'nun daha eski Express sürümlerinde kullanılamaz.
 
-Varolan kod dosyalarının bir C++ projeye AKTARıLMALARıNı, IDE içinde yerleşik olarak bulunan yerel MSBuild Proje Yönetimi özelliklerinin kullanılmasını sunar. Var olan derleme sisteminizi (NMAKE makefiles, CMake veya alternatifler gibi) kullanmayı tercih ediyorsanız, bunun yerine açık klasörü veya CMake seçeneklerini kullanabilirsiniz. Daha fazla bilgi için bkz. Visual Studio 'da [için C++ klasör projelerini açma](open-folder-projects-cpp.md) veya [CMake projeleri](cmake-projects-in-visual-studio.md). Her iki seçenek de [IntelliSense](/visualstudio/ide/using-intellisense) ve [Proje özellikleri](working-with-project-properties.md)gibi IDE özelliklerini kullanmanıza olanak sağlar.
+Varolan kod dosyalarının bir C++ projesine taşıma, IDE içinde yerleşik olarak bulunan yerel MSBuild Proje Yönetimi özelliklerinin kullanılmasını sunar. Var olan derleme sisteminizi (NMAKE makefiles, CMake veya alternatifler gibi) kullanmayı tercih ediyorsanız, bunun yerine açık klasörü veya CMake seçeneklerini kullanabilirsiniz. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ veya CMake projeleri](cmake-projects-in-visual-studio.md) [için açık klasör projeleri](open-folder-projects-cpp.md) . Her iki seçenek de [IntelliSense](/visualstudio/ide/using-intellisense) ve [Proje özellikleri](working-with-project-properties.md)gibi IDE özelliklerini kullanmanıza olanak sağlar.
 
 ### <a name="to-create-a-c-project-from-existing-code"></a>Varolan koddan bir C++ projesi oluşturmak için
 
-1. **Dosya** menüsünde, **varolan koddan** **Yeni** > proje ' yi seçin.
+1. **Dosya** menüsünde,**Varolan koddan** **Yeni** > proje ' yi seçin.
 
-1. Proje konumunuzu, kaynak dosyalarınızın dizinini ve sihirbazın yeni projeye aktardığı dosya türlerini belirtin. Devam etmek için **İleri ' yi** seçin.
+1. Proje konumunuzu, kaynak dosyalarınızın dizinini ve sihirbazın yeni projeye aktardığı dosya türlerini belirtin. Devam etmek için **İleri**’yi seçin.
 
     | Ayar | Açıklama |
     | --- | --- |
@@ -38,11 +38,11 @@ Varolan kod dosyalarının bir C++ projeye AKTARıLMALARıNı, IDE içinde yerle
 
     ![Proje konumu](media/location.png)
 
-1. Yeni proje için yapı ortamı gibi kullanılacak proje ayarlarını ve oluşturulacak belirli bir yeni proje türüyle eşleşecek derleme ayarlarını belirtin. Devam etmek için **İleri ' yi** seçin.
+1. Yeni proje için yapı ortamı gibi kullanılacak proje ayarlarını ve oluşturulacak belirli bir yeni proje türüyle eşleşecek derleme ayarlarını belirtin. Devam etmek için **İleri**’yi seçin.
 
     | Ayar | Açıklama |
     | --- | --- |
-    | **Visual Studio kullanma** | Yeni projeyi oluşturmak için Visual Studio 'ya dahil edilen derleme araçlarının kullanılacağını belirtir. Bu seçenek varsayılan olarak seçilidir.<br/><br/>Sihirbazın oluşturduğu proje türünü belirtmek için **proje türünü** seçin. **Windows uygulama projesi**, **konsol uygulama projesi**, **dınamık olarak bağlı kitaplık (dll) PROJESI**veya **statik kitaplık (LIB) projesi**seçin.<br/><br/>Yeni projeye ATL desteği eklemek için **atl desteği ekle** ' ye bakın.<br/><br/>Yeni projeye MFC desteği eklemek için **MFC desteği ekleyin** ' i işaretleyin.<br/><br/>Projeye CLR programlama desteği eklemek için **ortak dil çalışma zamanı desteği ekleyin** ' i işaretleyin. Sözdizimi için C++ yönetilen uzantılar ile uyumluluk için ortak dil çalışma zamanı **(eski sözdizimi)** , Visual Studio 2005 ' den önceki CLR programlama sözdizimi gibi uyumluluk türü Için **ortak dil çalışma zamanı desteğini** seçin. |
+    | **Visual Studio kullanma** | Yeni projeyi oluşturmak için Visual Studio 'ya dahil edilen derleme araçlarının kullanılacağını belirtir. Bu seçenek varsayılan olarak seçilidir.<br/><br/>Sihirbazın oluşturduğu proje türünü belirtmek için **proje türünü** seçin. **Windows uygulama projesi**, **konsol uygulama projesi**, **dınamık olarak bağlı kitaplık (dll) PROJESI**veya **statik kitaplık (LIB) projesi**seçin.<br/><br/>Yeni projeye ATL desteği eklemek için **atl desteği ekle** ' ye bakın.<br/><br/>Yeni projeye MFC desteği eklemek için **MFC desteği ekleyin** ' i işaretleyin.<br/><br/>Projeye CLR programlama desteği eklemek için **ortak dil çalışma zamanı desteği ekleyin** ' i işaretleyin. C++ için Yönetilen Uzantılar sözdizimiyle uyumluluk için **ortak dil çalışma zamanı (eski sözdizimi)** , Visual Studio 2005 ' den önceki CLR programlama sözdizimi gibi uyumluluk türü Için **ortak dil çalışma zamanı desteğini** seçin. |
     | **Dış yapı sistemi kullan** | Yeni projeyi oluşturmak için Visual Studio 'ya dahil olmayan yapı araçlarının kullanılacağını belirtir. Bu seçenek belirlendiğinde, **hata ayıklama yapılandırma ayarlarını belirtin** ve **Yayın yapılandırma ayarlarını belirtin** sayfasında derleme komut satırları ' nı belirtebilirsiniz. |
 
     ![Proje ayarları](media/settings.png)
@@ -50,7 +50,7 @@ Varolan kod dosyalarının bir C++ projeye AKTARıLMALARıNı, IDE içinde yerle
     > [!NOTE]
     > **Dış yapı sistemi kullan** seçeneği IŞARETLENDIĞINDE, IDE projeyi oluşturmaz, bu nedenle/D,/I,/FI,/AI veya/Fu seçenekleri derleme için gerekli değildir. Ancak, IntelliSense 'in düzgün çalışması için bu seçeneklerin doğru şekilde ayarlanması gerekir.
 
-1. Kullanılacak hata ayıklama yapılandırma ayarlarını belirtin. Devam etmek için **İleri ' yi** seçin.
+1. Kullanılacak hata ayıklama yapılandırma ayarlarını belirtin. Devam etmek için **İleri**’yi seçin.
 
     | Ayar | Açıklama |
     | --- | --- |
