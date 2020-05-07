@@ -27,7 +27,7 @@ DllImport void func();
 
 İşlev bildirimlerinde **__declspec (dllimport)** kullanmak isteğe bağlıdır, ancak bu anahtar sözcüğü kullanırsanız derleyici daha verimli kod üretir. Ancak, DLL 'nin ortak veri sembolleri ve nesnelerine erişmek için içeri aktarma yürütülebilir dosyası için **__declspec (dllimport)** kullanmanız gerekir. DLL 'nizin kullanıcılarının hala bir içeri aktarma kitaplığıyla bağlanması gerektiğini unutmayın.
 
-Aynı üstbilgi dosyasını hem DLL hem de istemci uygulaması için kullanabilirsiniz. Bunu yapmak için, DLL oluşturmayı veya istemci uygulamasını oluşturmayı belirten özel bir ön işlemci sembolünü kullanın. Örnek:
+Aynı üstbilgi dosyasını hem DLL hem de istemci uygulaması için kullanabilirsiniz. Bunu yapmak için, DLL oluşturmayı veya istemci uygulamasını oluşturmayı belirten özel bir ön işlemci sembolünü kullanın. Örneğin:
 
 ```
 #ifdef _EXPORTING

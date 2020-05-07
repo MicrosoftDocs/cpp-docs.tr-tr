@@ -14,7 +14,7 @@ ms.locfileid: "62234526"
 ---
 # <a name="default-signals"></a>Varsayılan Sinyaller
 
-**ANSI 4.7.1.1** durumunda denk `signal(sig, SIG_DFL)` gerçekleştirilen sinyal engelleme sinyal tutucusu çağrısından önce yürütülmez ise
+**ANSI 4.7.1.1** Öğesinin `signal(sig, SIG_DFL)` eşdeğeri bir sinyal işleyicisi çağrısından önce yürütülemiyorsa, sinyalin engellenmesi
 
 Bir program çalışmaya başladığında, sinyaller varsayılan durumlarına ayarlanır.
 

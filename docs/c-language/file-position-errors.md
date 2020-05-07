@@ -13,9 +13,9 @@ ms.locfileid: "62233663"
 ---
 # <a name="file-position-errors"></a>Dosya Konumu Hataları
 
-**ANSI 4.9.9.1, 4.9.9.4** değerine makro `errno` tarafından ayarlanır `fgetpos` veya `ftell` hatasında işlevi
+**ANSI 4.9.9.1, 4.9.9.4** Hata durumunda makronun `errno` `fgetpos` veya `ftell` işlevin ayarlandığı değer
 
-Zaman `fgetpos` veya `ftell` başarısız olursa `errno` Bildirim sabiti için ayarlanmış `EINVAL` konumu geçersiz olduğunda veya `EBADF` hatalı dosya numarası ise. Sabitler ERRNO içinde tanımlanır. H
+Ya `fgetpos` `ftell` da başarısız olduğunda `errno` , konum geçersizse veya `EINVAL` `EBADF` dosya numarası bozuksa bildirim sabiti olarak ayarlanır. Sabitler ERRNO içinde tanımlanmıştır. Olsun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -33,7 +33,7 @@ printf_s( "%hd\n", j );   // Prints -3
 
 İntegral ve kayan nokta türlerinin boyutları hakkında bilgi için bkz. [temel türlerin depolanması](../c-language/storage-of-basic-types.md) .
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Microsoft derleyicisinde, **imzasız** (veya **işaretsiz int**) ve **işaretsiz Long** farklıdır ancak eşdeğer türlerdir. **İşaretsiz bir int** değerin dönüştürülmesi, **işaretsiz bir Long**değeri dönüştürülürken aynı şekilde devam eder.
 
@@ -43,45 +43,45 @@ Aşağıdaki tabloda, imzasız integral türlerinden dönüşümler özetlenmekt
 
 ## <a name="table-of-conversions-from-unsigned-integral-types"></a>İşaretsiz integral türlerindeki dönüştürmelerin tablosu
 
-|Başlangıç|Bitiş|Yöntem|
+|Başlangıç|Alıcı|Yöntem|
 |----------|--------|------------|
-|**işaretsiz karakter**|**char**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
-|**işaretsiz karakter**|**short**|Sıfır-uzat|
-|**işaretsiz karakter**|**long**|Sıfır-uzat|
-|**işaretsiz karakter**|**uzun uzun**|Sıfır-uzat|
-|**işaretsiz karakter**|**işaretsiz kısa**|Sıfır-uzat|
-|**işaretsiz karakter**|**imzasız Long**|Sıfır-uzat|
-|**işaretsiz karakter**|**imzasız uzun uzun**|Sıfır-uzat|
-|**işaretsiz karakter**|**float**|**Long**'a Dönüştür; **uzun** **kaya** Dönüştür|
-|**işaretsiz karakter**|**double**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
-|**işaretsiz karakter**|**uzun çift**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
-|**işaretsiz kısa**|**char**|Düşük sıra baytını koru|
-|**işaretsiz kısa**|**short**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
-|**işaretsiz kısa**|**long**|Sıfır-uzat|
-|**işaretsiz kısa**|**uzun uzun**|Sıfır-uzat|
-|**işaretsiz kısa**|**işaretsiz karakter**|Düşük sıra baytını koru|
-|**işaretsiz kısa**|**imzasız Long**|Sıfır-uzat|
-|**işaretsiz kısa**|**imzasız uzun uzun**|Sıfır-uzat|
-|**işaretsiz kısa**|**float**|**Long**'a Dönüştür; **uzun** **kaya** Dönüştür|
-|**işaretsiz kısa**|**double**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
-|**işaretsiz kısa**|**uzun çift**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
-|**imzasız Long**|**char**|Düşük sıra baytını koru|
-|**imzasız Long**|**short**|Düşük sıralı kelimeyi koru|
-|**imzasız Long**|**long**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
-|**imzasız Long**|**uzun uzun**|Sıfır-uzat|
-|**imzasız Long**|**işaretsiz karakter**|Düşük sıra baytını koru|
-|**imzasız Long**|**işaretsiz kısa**|Düşük sıralı kelimeyi koru|
-|**imzasız Long**|**imzasız uzun uzun**|Sıfır-uzat|
-|**imzasız Long**|**float**|**Long**'a Dönüştür; **uzun** **kaya** Dönüştür|
-|**imzasız Long**|**double**|Doğrudan **Double** 'a Dönüştür|
-|**imzasız Long**|**uzun çift**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
+|**unsigned char**|**char**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
+|**unsigned char**|**short**|Sıfır-uzat|
+|**unsigned char**|**long**|Sıfır-uzat|
+|**unsigned char**|**long long**|Sıfır-uzat|
+|**unsigned char**|**imzasız short**|Sıfır-uzat|
+|**unsigned char**|**imzasız long**|Sıfır-uzat|
+|**unsigned char**|**imzasız uzun uzun**|Sıfır-uzat|
+|**unsigned char**|**float**|**Long**'a Dönüştür; **uzun** **kaya** Dönüştür|
+|**unsigned char**|**double**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
+|**unsigned char**|**uzun çift**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
+|**imzasız short**|**char**|Düşük sıra baytını koru|
+|**imzasız short**|**short**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
+|**imzasız short**|**long**|Sıfır-uzat|
+|**imzasız short**|**long long**|Sıfır-uzat|
+|**imzasız short**|**unsigned char**|Düşük sıra baytını koru|
+|**imzasız short**|**imzasız long**|Sıfır-uzat|
+|**imzasız short**|**imzasız uzun uzun**|Sıfır-uzat|
+|**imzasız short**|**float**|**Long**'a Dönüştür; **uzun** **kaya** Dönüştür|
+|**imzasız short**|**double**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
+|**imzasız short**|**uzun çift**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
+|**imzasız long**|**char**|Düşük sıra baytını koru|
+|**imzasız long**|**short**|Düşük sıralı kelimeyi koru|
+|**imzasız long**|**long**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
+|**imzasız long**|**long long**|Sıfır-uzat|
+|**imzasız long**|**unsigned char**|Düşük sıra baytını koru|
+|**imzasız long**|**imzasız short**|Düşük sıralı kelimeyi koru|
+|**imzasız long**|**imzasız uzun uzun**|Sıfır-uzat|
+|**imzasız long**|**float**|**Long**'a Dönüştür; **uzun** **kaya** Dönüştür|
+|**imzasız long**|**double**|Doğrudan **Double** 'a Dönüştür|
+|**imzasız long**|**uzun çift**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
 |**imzasız uzun uzun**|**char**|Düşük sıra baytını koru|
 |**imzasız uzun uzun**|**short**|Düşük sıralı kelimeyi koru|
 |**imzasız uzun uzun**|**long**|Düşük sıralı DWORD 'yi koru|
-|**imzasız uzun uzun**|**uzun uzun**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
-|**imzasız uzun uzun**|**işaretsiz karakter**|Düşük sıra baytını koru|
-|**imzasız uzun uzun**|**işaretsiz kısa**|Düşük sıralı kelimeyi koru|
-|**imzasız uzun uzun**|**imzasız Long**|Düşük sıralı DWORD 'yi koru|
+|**imzasız uzun uzun**|**long long**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
+|**imzasız uzun uzun**|**unsigned char**|Düşük sıra baytını koru|
+|**imzasız uzun uzun**|**imzasız short**|Düşük sıralı kelimeyi koru|
+|**imzasız uzun uzun**|**imzasız long**|Düşük sıralı DWORD 'yi koru|
 |**imzasız uzun uzun**|**float**|**Long**'a Dönüştür; **uzun** **kaya** Dönüştür|
 |**imzasız uzun uzun**|**double**|Doğrudan **Double** 'a Dönüştür|
 |**imzasız uzun uzun**|**uzun çift**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|

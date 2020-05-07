@@ -13,36 +13,36 @@ ms.locfileid: "62233650"
 ---
 # <a name="for-statement-c"></a>for Deyimi (C)
 
-**İçin** deyimi bir deyim yineleyin veya bileşik deyim, belirtilen sayıda olanak sağlar. Gövdesi bir **için** deyimi, isteğe bağlı bir koşul false olana kadar sıfır veya daha fazla kez yürütülür. İsteğe bağlı ifade içinde kullanabilirsiniz **için** başlatıp sırasında değerlerini değiştirmek için deyimi **için** deyimin yürütme.
+**For** deyimleri, bir ifadeyi veya bileşik ifadeyi belirtilen sayıda tekrarlamanızı sağlar. Bir **for** ifadesinin gövdesi, isteğe bağlı bir koşul false olana kadar sıfır veya daha fazla kez yürütülür. For **ifadesinin yürütmesi** sırasında değerleri başlatmak ve değiştirmek için **for** deyimi içinde isteğe bağlı ifadeleri kullanabilirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Yineleme deyiminin*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**için** **(** *init-expression*<sub>iyileştirilmiş</sub> **;** *; cond-expression*<sub>iyileştirilmiş</sub> **;** *döngü ifadesi*<sub>iyileştirilmiş</sub> **)** *deyimi*
+*yineleme-ekstresi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**for** **(** *init-Expression*<sub>opt</sub> **;** *cond-expression*<sub>opt</sub> **;** *loop-expression*<sub>opt</sub> **)** *deyimi*
 
-Yürütülmesini bir **için** deyimi aşağıdaki gibi ilerler:
+**For** ifadesinin yürütülmesi aşağıdaki gibi devam eder:
 
-1. *İnit-expression*, varsa, değerlendirilir. Bu döngü için başlatma belirtir. Tür bir kısıtlama yoktur *init-expression*.
+1. Varsa, *Init-ifadesi*değerlendirilir. Bu, döngü için başlatmayı belirtir. *İnit ifadesinin*türü üzerinde hiçbir kısıtlama yoktur.
 
-1. *; Cond-expression*, varsa, değerlendirilir. Bu ifade aritmetik veya işaretçi türünde olmalıdır. Her yinelemeden önce değerlendirilir. Üç sonuçları desteklenir:
+1. Varsa, *cond-ifadesi*değerlendirilir. Bu ifade aritmetik veya işaretçi türünde olmalıdır. Her yinelemeden önce değerlendirilir. Üç sonuç mümkündür:
 
-   - Varsa *; cond-expression* olduğu **true** (sıfırdan farklı) *deyimi* yürütülür; ardından *döngü ifadesi*, varsa, değerlendirme. *Döngü ifadesi* her yinelemeden sonra değerlendirilir. Türü konusunda bir kısıtlama yoktur. Yan etkileri sırayla yürütülür. İşlem daha sonra yeniden değerlendirmesi ile başlar *; cond-expression*.
+   - *Cond-expression* **true** ise (sıfır dışında), *deyim* yürütülür; ardından, varsa *döngü ifadesi*değerlendirilir. *Döngü ifadesi* Her yinelemeden sonra değerlendirilir. Türü üzerinde hiçbir kısıtlama yoktur. Yan etkiler sırayla yürütülür. Daha sonra işlem, *cond-expression*değerlendirmesiyle yeniden başlar.
 
-   - Varsa *; cond-expression* atlanırsa, *; cond-expression* true ve yürütme devam eder, tam olarak önceki paragrafta açıklandığı gibi değerlendirilir. A **için** deyimi olmadan bir *; cond-expression* bağımsız değişkeni yalnızca sonlandıran bir **sonu** veya **dönüş** deyimi deyimi içinde gövdesi yürütülür veya ne zaman bir **goto** (dışında etiketli deyime **için** deyim gövdesi) yürütülür.
+   - *Cond-expression* atlanırsa, *cond ifadesi* true olarak kabul edilir ve yürütme, önceki paragrafta açıklandığı gibi tam olarak devam eder. *Cond-expression* bağımsız değişkeni olmayan bir **for** deyimi yalnızca deyim gövdesinin içindeki bir **Break** veya **Return** deyimi yürütüldüğünde veya bir **goto** ( **for** deyiminin ifadesi dışında bir etiketli ifadeye) yürütüldüğünde sona erer.
 
-   - Varsa *; cond-expression* olduğu **false** (0) yürütülmesini **için** deyimi sonlanır ve denetim geçer programdaki sonraki deyime.
+   - *Cond-expression* **false** (0) ise, **for** deyiminin yürütülmesi sonlanır ve denetim, programdaki sonraki deyime geçer.
 
-A **için** deyimi de sonlandırılır bir **sonu**, **goto**, veya **dönüş** deyimi deyim gövdesi içinde yürütülür. A **devam** deyiminde bir **için** döngüye neden *döngü ifadesi* değerlendirilecek. Olduğunda bir **kesme** içinde deyimi yürütüldüğünde bir **için** döngü *döngü ifadesi* değerlendirilen yürütülen ya da. Bu bildirimi
+**For** ifadesiyle bir **Break**, **goto**ya da **Return** deyimleri yürütüldüğünde de sonlanır. **For** döngüsünde **Continue** deyimi *döngü ifadesinin* değerlendirilmesine neden olur. **For** döngüsü içinde bir **Break** deyimi yürütüldüğünde, *Loop ifadesi* değerlendirilmez veya yürütülmez. Bu ifade
 
 ```C
 for( ; ; )
 ```
 
-yalnızca ile çıkılması, sonsuz bir döngü oluşturmak için her zamanki yolu bir **sonu**, **goto**, veya **dönüş** deyimi.
+yalnızca bir **Break**, **goto**veya **Return** ifadesiyle çıkılan sonsuz bir döngü oluşturmak için normal yoludur.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte **için** deyimi:
+Bu örnekte **for** ifadesinin gösterilmektedir:
 
 ```C
 // c_for.c
@@ -71,7 +71,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 Number of spaces: 4

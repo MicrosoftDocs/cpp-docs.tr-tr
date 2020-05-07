@@ -1,5 +1,5 @@
 ---
-title: Temel türlerin depolanması
+title: Temel türleri depolama
 ms.date: 10/02/2019
 helpviewer_keywords:
 - specifiers [C++], type
@@ -28,7 +28,7 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71998767"
 ---
-# <a name="storage-of-basic-types"></a>Temel türlerin depolanması
+# <a name="storage-of-basic-types"></a>Temel türleri depolama
 
 Aşağıdaki tabloda, her temel türle ilişkili depolama özetlenmektedir.
 

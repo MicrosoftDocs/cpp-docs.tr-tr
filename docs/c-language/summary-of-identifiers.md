@@ -12,15 +12,15 @@ ms.locfileid: "62157727"
 # <a name="summary-of-identifiers"></a>Tanımlayıcıların Özeti
 
 *tanımlayıcı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*rakam*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *rakam*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *basamak*
+&nbsp;&nbsp;&nbsp;&nbsp;*rakam olmayan*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *basamak olmayan*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *sayısı*
 
-*rakam*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**_ b c d e f g h miyim j k l mn o p q r s t u v z y x w**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**BİR B C D E F G H MİYİM J K L MN O P Q R S T U V W X, Y, Z**
+*basamak olmayan*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**_ a b c d e f g h i j k l r s u p**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**A B C D E F G H I J K L R S U P Q S T**
 
-*basamak*: biri<br/>
+*basamak*: aşağıdakilerden biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
 
 ## <a name="see-also"></a>Ayrıca bkz.

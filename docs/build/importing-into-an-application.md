@@ -15,19 +15,19 @@ ms.locfileid: "62188892"
 ---
 # <a name="importing-into-an-application"></a>Bir Uygulamaya Aktarma
 
-İki yöntemi kullanarak bir uygulamaya işlevleri içeri aktarabilirsiniz:
+İki yöntemi kullanarak işlevleri bir uygulamaya aktarabilirsiniz:
 
-- Anahtar kelimeler kullanmanız **__declspec(dllimport)** ana uygulamadaki bir işlev tanımı
+- Ana uygulamadaki bir işlev tanımında **__declspec (dllimport)** anahtar sözcüklerini kullanın
 
-- Modül tanım (.def) dosyası ile birlikte kullanmak **__declspec(dllimport)**
+- **__Declspec (dllimport)** ile birlikte bir modül tanımı (. def) dosyası kullanın
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [__Declspec(dllimport) kullanarak bir uygulamaya'na aktarma](importing-into-an-application-using-declspec-dllimport.md)
+- [__Declspec (dllimport) kullanarak bir uygulamaya aktarma](importing-into-an-application-using-declspec-dllimport.md)
 
-- [__Declspec(dllimport) kullanarak işlev çağrılarını içeri aktarma](importing-function-calls-using-declspec-dllimport.md)
+- [__Declspec (dllimport) kullanarak Işlev çağrılarını içeri aktarma](importing-function-calls-using-declspec-dllimport.md)
 
-- [__Declspec(dllimport) kullanarak veriyi içeri aktarma](importing-data-using-declspec-dllimport.md)
+- [__Declspec kullanarak verileri içeri aktarma (dllimport)](importing-data-using-declspec-dllimport.md)
 
 - [DEF dosyalarını kullanarak içeri aktarma](importing-using-def-files.md)
 

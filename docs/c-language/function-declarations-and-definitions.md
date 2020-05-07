@@ -24,8 +24,8 @@ ms.locfileid: "62233118"
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev tanımının içinde veya dışında hem işlev hem de değişken bildirimleri görünebilir. Bir işlev tanımı içerisindeki herhangi bir bildirimin "iç" veya "yerel" düzeyde göründüğü bildirilir. Tüm işlev tanımlarının dışında yer alan bir bildirimin, "dış", "genel" veya "dosya kapsamı" düzeyinde olduğu bildirilir. Bildirimler gibi değişken tanımlar, iç düzeyde (işlev tanımı içerisinde) veya dış düzeyde (tüm işlev tanımlarının dışında) görünebilir. İşlev tanımları her zaman dış düzeyde ortaya çıkar. İşlev tanımları açıklanmıştır daha ayrıntılı olarak [işlev tanımları](../c-language/c-function-definitions.md). İşlev prototipleri kapsamdaki [işlev prototipleri](../c-language/function-prototypes.md).
+İşlev tanımının içinde veya dışında hem işlev hem de değişken bildirimleri görünebilir. Bir işlev tanımı içerisindeki herhangi bir bildirimin "iç" veya "yerel" düzeyde göründüğü bildirilir. Tüm işlev tanımlarının dışında yer alan bir bildirimin, "dış", "genel" veya "dosya kapsamı" düzeyinde olduğu bildirilir. Bildirimler gibi değişken tanımlar, iç düzeyde (işlev tanımı içerisinde) veya dış düzeyde (tüm işlev tanımlarının dışında) görünebilir. İşlev tanımları her zaman dış düzeyde ortaya çıkar. İşlev tanımları, [Işlev tanımlarında](../c-language/c-function-definitions.md)daha fazla ele alınmıştır. İşlev prototipleri, [Işlev Prototiplerde](../c-language/function-prototypes.md)ele alınmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Dosyalar ve Kaynak Programlar](../c-language/source-files-and-source-programs.md)
+[Kaynak dosyalar ve kaynak programlar](../c-language/source-files-and-source-programs.md)

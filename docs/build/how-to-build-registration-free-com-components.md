@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Kayıt gerektirmeyen COM bileşenlerini derleme'
+title: 'Nasıl Yapılır: Kayıt Gerektirmeyen COM Bileşenlerini Derleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - COM components, registration-free
@@ -11,22 +11,22 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62188944"
 ---
-# <a name="how-to-build-registration-free-com-components"></a>Nasıl yapılır: Kayıt gerektirmeyen COM bileşenlerini derleme
+# <a name="how-to-build-registration-free-com-components"></a>Nasıl Yapılır: Kayıt Gerektirmeyen COM Bileşenlerini Derleme
 
-Kayıt gerektirmeyen COM bileşenlerini DLL'lere oluşturulan bildirimleri sahip bir COM bileşenlerdir.
+Kayıtsız COM bileşenleri, dll 'Lerde yerleşik bildirimleri olan COM bileşenleridir.
 
-### <a name="to-build-manifests-into-com-components"></a>COM bileşenlerine bildirimleri oluşturmak için
+### <a name="to-build-manifests-into-com-components"></a>COM bileşenlerine bildirim oluşturmak için
 
-1. COM bileşeni için proje özelliği sayfalarından açın.
+1. COM bileşeni için proje özellik sayfaları ' nı açın.
 
-1. Genişletin **yapılandırma özellikleri** düğümünü ve ardından **bildirim aracında** düğümü.
+1. **Yapılandırma özellikleri** düğümünü genişletin ve ardından **bildirim aracı** düğümünü genişletin.
 
-1. Seçin **giriş ve çıkış** özellik sayfası ve ardından **ekleme bildirimi** özelliği eşit **Evet**.
+1. **Giriş ve çıkış** özellik sayfasını seçin ve ardından **ekleme bildirimi** özelliğini **Evet**olarak ayarlayın.
 
-1. **Tamam**'ı tıklatın.
+1. **Tamam**'a tıklayın.
 
-1. Çözümü oluşturun.
+1. Çözümü derleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Nasıl yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme](how-to-build-isolated-applications-to-consume-com-components.md)
+[Nasıl Yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme](how-to-build-isolated-applications-to-consume-com-components.md)

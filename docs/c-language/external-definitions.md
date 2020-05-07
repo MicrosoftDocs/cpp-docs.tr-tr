@@ -14,16 +14,16 @@ ms.locfileid: "62233682"
 ---
 # <a name="external-definitions"></a>Dış Tanımlar
 
-*Çeviri birimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Dış bildirimi* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Çeviri birimi* *dış bildirimi*
+*çeviri birimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Dış bildirim* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*çeviri birimi* *dış bildirimi*
 
-*Dış bildirimi*: /\* yalnızca dış (dosyası) kapsamında izin \*/<br/>
+*Dış bildirim*:/\* yalnızca dış (dosya) kapsamında izin verilir\*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işlev tanımı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi*
+&nbsp;&nbsp;&nbsp;&nbsp;*bağımsız*
 
-*işlev tanımı*: /\* burada Bildiricisi olan işlev bildirimcisinden \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> *bildirimci* *bildirim listesi*<sub>iyileştirilmiş</sub>  *Bileşik deyim*
+*işlev tanımı*:/\* bildirimci şu işlev bildirimci\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-tanımlayıcılar*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *Bileþik-deyimin*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

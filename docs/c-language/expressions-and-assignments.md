@@ -20,15 +20,15 @@ ms.locfileid: "62233728"
 ---
 # <a name="expressions-and-assignments"></a>İfadeler ve Atamalar
 
-Bu bölümde, ifadeler oluşturmak için ve C dilinde bir değer atamak için nasıl açıklar. Sabitler, tanımlayıcılar, dizeler ve işlev çağrıları ifadelerinde yönlendirildiği tüm işlenenler var. C dili tüm olağan dil işleçleri sahiptir. Bu bölüm C ya da Microsoft C. benzersiz işleçleri yanı sıra bu işleçleri kapsar. Konular şunları içerir:
+Bu bölümde, ifadelerin nasıl ayarlanacağı ve C dilinde değer atama açıklanmaktadır. Sabitler, tanımlayıcılar, dizeler ve işlev çağrıları, ifadelerde işlenen tüm işlenenlerdir. C dilinin tüm normal dil işleçleri vardır. Bu bölümde, C veya Microsoft C için benzersiz olan operatörler ve bu işleçler ele alınmaktadır. Ele alınan konular şunları içerir:
 
-- [L-değeri ve r ifadeleri](../c-language/l-value-and-r-value-expressions.md)
+- [L-değeri ve r-değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md)
 
-- [Sabit ifadeleri](../c-language/c-constant-expressions.md)
+- [Sabit ifadeler](../c-language/c-constant-expressions.md)
 
 - [Yan etkiler](../c-language/side-effects.md)
 
-- [Sıralama noktaları](../c-language/c-sequence-points.md)
+- [Sıra noktaları](../c-language/c-sequence-points.md)
 
 - [İşleçler](../c-language/c-operators.md)
 
@@ -36,8 +36,8 @@ Bu bölümde, ifadeler oluşturmak için ve C dilinde bir değer atamak için na
 
 - [Tür dönüştürmeleri](../c-language/type-conversions-c.md)
 
-- [Tür atamaları](../c-language/type-cast-conversions.md)
+- [Tür yayınları](../c-language/type-cast-conversions.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Dil Başvurusu](../c-language/c-language-reference.md)
+[C dil başvurusu](../c-language/c-language-reference.md)

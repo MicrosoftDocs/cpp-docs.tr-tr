@@ -20,19 +20,19 @@ ms.locfileid: "62233066"
 ---
 # <a name="if-statement-c"></a>if Deyimi (C)
 
-**Varsa** deyimi, koşullu dallanmayı denetler. Gövdesi bir **varsa** deyimi ifade değeri sıfır ise yürütülür. Sözdizimi **varsa** deyiminin iki biçimini şunlardır.
+**IF** deyimleri koşullu dallanmayı denetler. İfadenin değeri sıfır değilse bir **IF** ifadesinin gövdesi yürütülür. **IF** ifadesinin sözdizimi iki form içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Seçimi deyimi*: **varsa (** *ifade* **)** *deyimi*
+*Selection-deyimi*: **if (**  *ifade*  **)**  *deyimi*
 
-**varsa (** *ifade* **)** *deyimi* **başka** *deyimi*
+**IF (**  *Expression*  **)**  *deyimi*  **Else**  *deyimi*
 
-Her iki formu içinde **varsa** deyimi, bir yapı dışında herhangi bir değere sahip olabilir, ifadeler değerlendirilir, tüm yan etkileri de dahil olmak üzere.
+Her iki **if** ifadesinin formlarında, bir yapı dışında herhangi bir değere sahip olabilen ifadeler, tüm yan etkiler dahil değerlendirilir.
 
-Söz dizimi ilk biçiminde değilse *ifade* true (sıfırdan farklı), *deyimi* yürütülür. Varsa *ifade* false ise *deyimi* göz ardı edilir. İkinci sözdizimi formunda, kullanan **başka**, ikinci *deyimi* yürütülür *ifade* false'tur. Her iki biçimi sonra geçişlerinin denetim **varsa** deyimi programdaki sonraki deyime deyimlerden biri içermiyorsa bir **kesme**, **devam**, veya `goto`.
+Sözdiziminin ilk biçiminde, *ifade* true (sıfır dışında) ise *deyim* yürütülür. *İfade* yanlışsa, *deyim* yok sayılır. İkinci sözdizimi biçiminde, **başka**bir deyişle, *ifade* yanlışsa ikinci *deyim* yürütülür. Her iki form ile, deyimlerden biri bir **kesme**, **devam**veya ya `goto`da içermiyorsa, denetim daha sonra, **IF** deyiminden, programdaki bir sonraki ifadeye geçer.
 
-Aşağıdaki örnekler **varsa** deyimi:
+**IF** ifadesinin örnekleri aşağıda verilmiştir:
 
 ```
 if ( i > 0 )
@@ -44,9 +44,9 @@ else
 }
 ```
 
-Bu örnekte, deyim `y = x/i;` yürütülür `i` 0'dan büyük. Varsa `i` 0, küçük veya ona eşit `i` atandığı `x` ve `f( x )` atandığı `y`. Oluşturan deyim unutmayın **varsa** yan tümcesi, noktalı virgül ile sona erer.
+Bu örnekte, ifadenin `y = x/i;` 0 ' dan büyük olması `i` durumunda yürütülür. `i` 0 ' dan küçük veya buna eşitse `i` , öğesine `x` atanır ve `f( x )` öğesine `y`atanır. **IF** yan tümcesini oluşturan deyimin noktalı virgülle bitdiğine unutmayın.
 
-İç içe olduğunda **varsa** deyimleri ve **başka** yan tümcesi, amacı açıklamak bileşik açıklamaalarını deyimleri ve yan tümcelerini gruplandırmak için ayraç kullanın. Hiç küme ayraçları mevcut olması durumunda, derleyici belirsizlikleri her ilişkilendirerek çözümler **başka** en yakın olan **varsa** , eksik bir **başka**.
+Deyimler ve **Else** yan **tümceleri iç içe aktardığınızda, deyimleri ve** yan tümceleri, amacınızı açıklığa kavuşturacak bileşik deyimlerde gruplamak için küme ayraçları kullanın. Hiçbir küme ayracı yoksa, derleyici, **başka**bir şey olmaması **durumunda** her **şeyi** En iyiyle ilişkilendirerek belirsizlikleri öğesini çözer.
 
 ```
 if ( i > 0 )           /* Without braces */
@@ -56,7 +56,7 @@ if ( i > 0 )           /* Without braces */
         x = i;
 ```
 
-**Başka** yan tümcesi iç ile ilişkili **varsa** Bu örnekte bildirimi. Varsa `i` küçük veya buna eşit olduğu için hiçbir değer 0'a atanır `x`.
+**Else** yan tümcesi, bu örnekteki iç **if** ifadesiyle ilişkilendirilir. `i` 0 ' dan küçükse veya eşitse, hiçbir değer atanmaz `x`.
 
 ```
 if ( i > 0 )
@@ -68,7 +68,7 @@ else
     x = i;
 ```
 
-İç çevreleyen parantezler **varsa** Bu örnekte deyimi yap **başka** dış yan tümcesi parçası **varsa** deyimi. Varsa `i` 0, küçük veya ona eşit `i` atandığı `x`.
+Bu örnekteki iç **if** ifadesini çevreleyen küme ayraçları, dıştaki **if** ifadesinin **Else** yan tümcesini bir parçasını yapar. `i` 0 ' dan küçük veya buna eşitse, `i` öğesine `x`atanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

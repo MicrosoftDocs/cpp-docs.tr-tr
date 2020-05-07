@@ -25,7 +25,7 @@ Bu davranış, aşağıdakilerden birinin sonucudur:
 
 Bu davranışı çözümlemek için, çoğu programcı değerin gerekenden daha büyük veya daha az olduğundan emin olun ya da duyarlık sağlayacak Ikili kodlanmış bir ondalık (BCD) kitaplığı alır ve kullanır.
 
-Kayan nokta değerlerinin ikili temsili, kayan nokta hesaplamalarının duyarlığını ve doğruluğunu etkiler. Microsoft Visual C++ , [IEEE kayan nokta biçimini](ieee-floating-point-representation.md)kullanır.
+Kayan nokta değerlerinin ikili temsili, kayan nokta hesaplamalarının duyarlığını ve doğruluğunu etkiler. Microsoft Visual C++, [IEEE kayan nokta biçimini](ieee-floating-point-representation.md)kullanır.
 
 ## <a name="example"></a>Örnek
 

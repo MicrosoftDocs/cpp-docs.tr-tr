@@ -17,7 +17,7 @@ ms.locfileid: "62233840"
 ---
 # <a name="extern-storage-class-specifier"></a>extern Depolama Sınıfı Tanımlayıcısı
 
-Bildirilen bir değişken **extern** depolama sınıfı tanımlayıcısı başka bir kaynak dosyasında tanımlanmış aynı ada sahip bir değişken için bir başvurudur. Dış düzey değişken tanımını görünür yapmak için kullanılır. Olarak bildirilen bir değişken **extern** hiçbir kendisi için ayrılan depolama; yalnızca bir ad değildir.
+**Extern** depolama sınıfı belirticisiyle belirtilen değişken, başka bir kaynak dosyada tanımlanmış aynı ada sahip bir değişkene başvurudur. Dış düzey değişken tanımını görünür hale getirmek için kullanılır. **Extern** olarak belirtilen bir değişkenin kendisi için ayrılmış depolama alanı yoktur; yalnızca bir addır.
 
 ## <a name="example"></a>Örnek
 
@@ -59,9 +59,9 @@ void func(void)
 }
 ```
 
-Bu örnekte, değişken `i` Source1.c içinde bir başlangıç değeri 1 ile tanımlanır. Bir **extern** Source2.c bildiriminde olan 'i' görünür bu dosyada yapar.
+Bu örnekte, değişken `i` , 1 başlangıç değeri ile Source1. c içinde tanımlanmıştır. SOURCE2. c içindeki bir **extern** bildirimi, bu dosyada ' ı ' görünür hale getirir.
 
-İçinde `func` işlevi, genel değişkenin adresi `i` başlatmak için kullanılan **statik** işaretçi değişkeninin `external_i`. Genel değişken olduğu için bu çalışır **statik** ömrü, yani program yürütme sırasında adresi değişmez. Ardından, bir değişken `i` kapsamında tanımlanan `func` başlangıç değeri 16 ile yerel bir değişken olarak. Bu tanım dış düzeyi değerini etkilemez `i`, yerel değişken için adı kullanılarak gizli. Genel değerini `i` artık yalnızca işaretçi erişilebilir `external_i`.
+`func` İşlevinde, genel değişkenin `i` adresi **statik** işaretçi değişkenini `external_i`başlatmak için kullanılır. Bu, genel değişken **statik** yaşam süresine sahip olduğundan ve bu nedenle adresinin programın yürütülmesi sırasında değişmediği anlamına gelir. Sonra, bir değişken `i` ilk değeri 16 olan yerel bir `func` değişken olarak kapsamı içinde tanımlanır. Bu tanım, yerel değişken için adının kullanımıyla gizlenen dış düzeyin `i`değerini etkilemez. Genel `i` değerine artık yalnızca işaretçi `external_i`aracılığıyla erişilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

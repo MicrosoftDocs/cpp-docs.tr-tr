@@ -18,27 +18,27 @@ ms.locfileid: "62157889"
 ---
 # <a name="storage-class-specifiers-with-function-declarations"></a>İşlev Bildirimli Depolama Sınıfı Tanımlayıcıları
 
-Kullanabilirsiniz **statik** veya `extern` işlev bildirimleri depolama sınıfı belirticisini. İşlevlerin her zaman genel kullanım ömürleri vardır.
+İşlev bildirimlerinde **statik** veya `extern` depolama sınıfı belirticisini kullanabilirsiniz. İşlevlerin her zaman genel kullanım ömürleri vardır.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 İç düzeydeki işlev bildirimleri, dış düzeydeki işlev bildirimleri ile aynı anlama sahiptir. Bu, yerel kapsamda bildirilmiş olsa bile bir işlevin, çeviri biriminin geri kalanında, bildirim noktasında görülebilir olması anlamına gelir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 İşlevler için görünürlük kuralları, aşağıdaki belirtildiği gibi değişkenlerle ilgili kurallara göre biraz farklıdır:
 
-- Olarak bildirilen bir işlev **statik** içinde tanımlanmış olduğu yalnızca kaynak dosyasında görülebilir. Aynı kaynak dosyasındaki işlevler çağırabilir **statik** işlevi, ancak diğer kaynak dosyalarındaki işlevleri erişemez, doğrudan adını kullanarak. Başka bir bildirebilirsiniz **statik** işlevi çakışma olmadan farklı kaynak dosyada aynı ada sahip.
+- **Statik** olarak belirtilen bir işlev, yalnızca tanımlandığı kaynak dosya içinde görünür. Aynı kaynak dosyasındaki işlevler **statik** işlevi çağırabilir, ancak diğer kaynak dosyalardaki işlevler doğrudan adına göre erişemez. Çakışma olmadan farklı bir kaynak dosyasında aynı ada sahip başka bir **statik** işlev bildirebilirsiniz.
 
-- Olarak bildirilen işlevlerin `extern` programdaki tüm kaynak dosyaları boyunca görünürdür (böyle bir işlevi olarak yeniden bildirmek sürece **statik**). Herhangi bir işlev `extern` işlevini çağırabilir.
+- Olarak `extern` belirtilen işlevler, programdaki tüm kaynak dosyaları boyunca görünür (daha sonra bu tür bir işlevi **statik**olarak yeniden bildirmediğiniz sürece). Herhangi bir işlev `extern` işlevini çağırabilir.
 
 - Depolama sınıfı belirticisini atlayan işlev bildirimleri varsayılan olarak `extern`'dir.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Microsoft şemadaki sağlayan bir `extern` tanımlayıcı olarak **statik**.
+Microsoft bir `extern` tanımlayıcının **statik**olarak yeniden tanımlanması sağlar.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

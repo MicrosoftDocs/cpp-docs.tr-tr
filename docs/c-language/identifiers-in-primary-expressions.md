@@ -13,12 +13,12 @@ ms.locfileid: "62233092"
 ---
 # <a name="identifiers-in-primary-expressions"></a>Birincil İfadelerdeki Tanımlayıcılar
 
-Tanımlayıcılar tam sayı, sahip **float**, `enum`, `struct`, **birleşim**, işaretçi, dizi veya işlev türü. Birincil bir ifade (Bu durumda bu, bir l değeri'dir) bir nesne belirleme veya bir işlev (Bu durumda bu, bir işlev göstergesini'dir) olarak bildirilmiş sağlanan bir tanımlayıcıdır. Bkz: [L-değeri ve r değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md) bir l-değeri tanımı.
+Tanımlayıcılar integral, **float**, `enum`, `struct`, **Union**, dizi, işaretçi veya işlev türüne sahip olabilir. Bir tanımlayıcı, bir nesne (Bu durumda bir l değeri olduğu gibi) veya bir işlev olarak (Bu durumda bir işlev göstergesi olduğu gibi) tanımlayarak bildirildiği belirtilen birincil ifadedir. L-değeri tanımı için bkz. l-Value [ve R-Value ifadeleri](../c-language/l-value-and-r-value-expressions.md) .
 
-Bir dizi tanımlayıcısına bir atama işleminin sol işleneni biçiminin olamaz ve bu nedenle değiştirilebilir bir l-değeri değil, bir dizi tanımlayıcısı tarafından temsil edilen işaretçi değeri bir değişken değil.
+Bir dizi tanımlayıcısı tarafından temsil edilen işaretçi değeri bir değişken değildir, bu nedenle bir dizi tanımlayıcısı atama işleminin sol işlenenini oluşturamaz ve bu nedenle değiştirilebilir bir l değeri değildir.
 
-Bir işlev olarak bildirilen bir tanımlayıcı işlevi adresi değeri olduğu bir işaretçiyi temsil eder. Belirtilen türde bir değer döndüren bir işlev işaretçisi ele alır. Bu nedenle, işlev tanımlayıcıları l-değerler atama işlemlerinde olamaz. Daha fazla bilgi için [tanımlayıcıları](../c-language/c-identifiers.md).
+İşlev olarak tanımlanan bir tanımlayıcı, değeri işlevin adresi olan bir işaretçiyi temsil eder. İşaretçi, belirtilen türde bir değer döndüren bir işleve yöneliktir. Bu nedenle, işlev tanımlayıcıları Ayrıca atama işlemlerinde l-Values olamaz. Daha fazla bilgi edinmek için bkz. [Tanımlayıcılar](../c-language/c-identifiers.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Birincil İfadeler](../c-language/c-primary-expressions.md)
+[C birincil Ifadeler](../c-language/c-primary-expressions.md)

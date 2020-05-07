@@ -17,13 +17,13 @@ ms.locfileid: "62232279"
 ---
 # <a name="punctuation-and-special-characters"></a>Noktalama İşaretleri ve Özel Karakterler
 
-Noktalama işaretleri ve özel karakterler C karakter kümesindeki derleyici veya derlenmiş programın gerçekleştirdiği görevleri tanımlama program metni düzenleme gelen çeşitli kullanımlar sahip. Gerçekleştirilecek bir işlemi belirtmeyin. Ayrıca bazı noktalama simgeleri işleçler şunlardır: (bkz [işleçleri](../c-language/c-operators.md)). Derleyici bağlamından bunların kullanılması belirler.
+C karakter kümesindeki noktalama ve özel karakterlerin çeşitli kullanımları vardır ve program metnini, derleyicinin veya derlenen programın gerçekleştirdiği görevleri tanımlamaya göre tanımlar. Gerçekleştirilecek bir işlem belirtmez. Bazı noktalama sembolleri de işleçlerdir (bkz. [işleçler](../c-language/c-operators.md)). Derleyici bağlamdan kullanımlarını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
 `punctuator`: biri **() [] {} \* ,: =;   ... #**
 
-Bu karakterler c dilinde özel anlamları vardır. Bu kitap kullanımları açıklanmaktadır. Diyez işareti (**#**) yalnızca oluşabilir [ön işleme yönergeleri](../preprocessor/preprocessor-directives.md).
+Bu karakterlerin C 'de özel anlamları vardır. Kullanımları bu kitap boyunca açıklanmıştır. Sterlin işareti (**#**) yalnızca [ön işleme yönergelerinde](../preprocessor/preprocessor-directives.md)bulunabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

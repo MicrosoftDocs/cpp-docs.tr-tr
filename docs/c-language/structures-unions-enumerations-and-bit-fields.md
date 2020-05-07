@@ -19,7 +19,7 @@ ms.locfileid: "62157779"
 
 - [Bit Alanları Deposu](../c-language/storage-of-bit-fields.md)
 
-- [Enum türü](../c-language/enum-type.md)
+- [Sabit listesi türü](../c-language/enum-type.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

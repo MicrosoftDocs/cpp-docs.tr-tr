@@ -22,18 +22,18 @@ ms.locfileid: "74857092"
 ## <a name="syntax"></a>Sözdizimi
 
 *bildirim*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-tanımlayıcılar* *özniteliği-seq*<sub>opt</sub> *init-declarator-list*<sub>opt</sub> **;**
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-tanımlayıcılar* *özniteliği-seq*<sub>opt</sub> *init-declarator-list*<sub>opt</sub> **;**
 
-/\* *özniteliği-seq*<sub>opt</sub> , Microsoft 'a özgü \*/
+/\**öznitelik-Seq*<sub>opt</sub> , Microsoft 'a özgü\*/
 
 *bildirim-tanımlayıcılar*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı Belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub>
 
 *init-declarator-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list* **,** *init-declarator*
+&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list*  **,**  *init-declarator*
 
 *init-declarator*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirimci*<br/>
@@ -42,9 +42,9 @@ ms.locfileid: "74857092"
 *bildirimci*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
 
-*Direct-bildirimci*:/\* bir işlev bildirimci \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre türü listesi* **)**   / \* yeni stil bildirimci \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**  / \* Kullanımdan kalktı stili bildirimci \*/
+*Direct-bildirimci*:/\* bir işlev bildirimci\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci***(***parametre türü-liste***)**   / \* yeni stil bildirimci      \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci***(***tanımlayıcı listesi*<sub>opt</sub> **)**  / \* eski stil bildirimci    \*/
 
 Prototip, kapatma parantezinden hemen sonra bir noktalı virgülle sonlandırıldığından ve bu nedenle gövde olmadığından, işlev tanımıyla aynı biçimde olur. Her iki durumda da, dönüş türü işlev tanımında belirtilen dönüş türüyle kabul etmelidir.
 

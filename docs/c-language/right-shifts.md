@@ -11,13 +11,13 @@ ms.locfileid: "62158366"
 ---
 # <a name="right-shifts"></a>Sağa Kaydırmalar
 
-Bir sağa kaydırma, negatif değer sonucu imzalı tamsayı türü
+Negatif değer işaretli integral türünün sağ kaydırmasının sonucu
 
-Negatif bir değer sağa kaydırma yarım mutlak yuvarlanan değer verir. Örneğin, imzalı `short` -253 (onaltılık 0xFF03, ikili 11111111 00000011) değerini doğru bir bit üretir (onaltılık 0xFF81, ikili 11111111 10000001)-127 kaydırılacağı uzaklık. Pozitif 253 doğru üretir +126 kaydırılacağı uzaklık.
+Negatif bir değerin sağına doğru bir şekilde kaydırtılmak mutlak değerin yarısını altına yuvarlanır. Örneğin,-253 işaretli `short` bir değer (onaltılı 0xFF03, ikili 11111111 00000011) bir bit üretir-127 (onaltılı 0xFF81, ikili 11111111 10000001). Pozitif bir 253 kaydırılan sağ + 126 üretir.
 
-Sağa kaydırmalar işaretli integral türlerindeki, imza biti korur. İmzalı bir tamsayı sağa kaydırır en anlamlı biti ayarlanmış olarak kalır. Örneğin, 0xF0000000 işaretli ise `int`, sağa kaydırma 0xF8000000 üretir. Negatif kaydırma `int` sağ 32 kez 0xFFFFFFFF üretir.
+Sağ vardiyalar işaretli integral türlerinin işaret bitini korur. İşaretli bir tamsayı sağa kaydırdığınızda, en önemli bit ayarlanmış olarak kalır. Örneğin, 0xF0000000 imzalanmış `int`ise, sağ SHIFT, 0xF8000000 üretir. Negatif `int` bir 32 kez doğru bir şekilde kaydırma, 0xFFFFFFFF üretir.
 
-En anlamlı bit işaretsiz tamsayı sağ geçtiğinde temizlenir. Örneğin, 0xF000 imzalı değilse, sonuç 0x7800 olur. Kaydırma bir `unsigned` ya da pozitif `int` sağ 32 kez 0x00000000 üretir.
+İşaretsiz bir tamsayı sağa kaydırdığınızda en önemli bit temizlenir. Örneğin, 0xF000 imzasız ise, sonuç 0x7800 olur. Bir veya `unsigned` pozitif `int` 32 kez doğru bir şekilde kaydırma, 0x00000000 üretir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -15,7 +15,7 @@ ms.locfileid: "62232525"
 ---
 # <a name="program-structure"></a>Program Yapısı
 
-Bu bölüm C programları ve program yürütme genel bir bakış sağlar. Hüküm ve C programları ve bileşenleri anlamak için bu önemli özellikler de kullanıma sunulmuştur. Ele alınan konular şunlardır:
+Bu bölüm, C programlarına ve program yürütmeye genel bir bakış sunar. C programlarını ve bileşenlerini anlamak için önemli hüküm ve özellikler de kullanıma sunulmuştur. Ele alınan konular şunları içerir:
 
 - [Kaynak dosyalar ve kaynak programlar](../c-language/source-files-and-source-programs.md)
 
@@ -27,8 +27,8 @@ Bu bölüm C programları ve program yürütme genel bir bakış sağlar. Hükü
 
 - [Ad alanları](../c-language/name-spaces.md)
 
-Bu bölümde, genel bir bakış olduğundan, yalnızca tanıtım malzemeleri konular içerir. Daha ayrıntılı açıklamalar açıklamasındaki bilgilerine bakın.
+Bu bölüm bir genel bakış olduğundan, ele alınan konular yalnızca giriş malzemesi içerir. Daha ayrıntılı açıklamalar için çapraz başvuru bilgilerine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Dil Başvurusu](../c-language/c-language-reference.md)
+[C dil başvurusu](../c-language/c-language-reference.md)

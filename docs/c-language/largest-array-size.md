@@ -11,9 +11,9 @@ ms.locfileid: "62232754"
 ---
 # <a name="largest-array-size"></a>En Büyük Dizi Boyutu
 
-**ANSI 3.3.3.4, 4.1.1** en büyük dizi boyutu barındırmak için gereken tamsayı türü — diğer bir deyişle, boyutu **size_t**
+**ANSI 3.3.3.4, 4.1.1** Bir dizinin en büyük boyutunu tutmak için gereken tamsayı türü — diğer bir deyişle, **size_t** boyutu
 
-`size_t` typedef, 32 bit x86 platformunda bir `unsigned int`'tir. 64-bit platformlarda `size_t` TypeDef bir `unsigned __int64`.
+`size_t` typedef, 32 bit x86 platformunda bir `unsigned int`'tir. 64 bitlik platformlarda `size_t` typedef bir `unsigned __int64`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

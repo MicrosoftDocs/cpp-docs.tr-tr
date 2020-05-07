@@ -28,17 +28,17 @@ C aşağıdaki depolama sınıfı belirticilerini sağlar:
 
 *depolama sınıfı Belirleyicisi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Otomatik**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Kaydet**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**statik**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**extern**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**typedef**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **__declspec (** *Genişletilmiş-decl-değiştirici-seq* **)**  /\* Microsoft 'a özgü \*/
+&nbsp;&nbsp;&nbsp;&nbsp;**kaydolunamadı**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**se**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Dış**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**genişletiyor**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *Genişletilmiş-decl-değiştirici-seq* **)**  / \* Microsoft 'a özgü\*/
 
-`__declspec`haricinde, bir bildirimde *bildirim belirticisi* içinde yalnızca bir *depolama sınıfı Belirleyicisi* kullanabilirsiniz. Depolama sınıfı belirtimi yapılbelirtilmemişse, blok içindeki bildirimler otomatik nesneler oluşturur.
+Haricinde `__declspec`, bildiriminde *bildirim belirticisi* içinde yalnızca bir *depolama sınıfı Belirleyicisi* kullanabilirsiniz. Depolama sınıfı belirtimi yapılbelirtilmemişse, blok içindeki bildirimler otomatik nesneler oluşturur.
 
-**Auto** veya **yazmaç** belirticisi ile belirtilen öğelerin yerel yaşam süreleri vardır. **Statik** veya `extern` belirticisiyle belirtilen öğelerin küresel yaşam süreleri vardır.
+**Auto** veya **yazmaç** belirticisi ile belirtilen öğelerin yerel yaşam süreleri vardır. **Statik** veya `extern` belirticiyle belirtilen öğelerin küresel yaşam süreleri vardır.
 
-`typedef` ve `__declspec` diğer dört *depolama sınıfı Belirleyicisi* terminallerinden farklı olduğundan, bunlar ayrı olarak ele alınmıştır. `typedef`hakkındaki özel bilgiler için bkz. [typedef bildirimleri](../c-language/typedef-declarations.md). `__declspec`hakkında belirli bilgiler için bkz. [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
+Ve `typedef` `__declspec` diğer dört *depolama sınıfı Belirleyicisi* terminalinden farklı anlam içerdiğinden, bunlar ayrı olarak ele alınmıştır. Hakkında `typedef`belirli bilgiler için bkz. [typedef bildirimleri](../c-language/typedef-declarations.md). Hakkında `__declspec`belirli bilgiler için bkz. [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
 
 Değişken ve işlev bildirimlerinin kaynak dosyalar içinde yerleştirilmesi, depolama sınıfını ve görünürlüğünü de etkiler. Tüm işlev tanımlarının dışındaki bildirimler "dış düzeyde" gözükme söylenir. İşlev tanımlarının içindeki bildirimler "iç düzeyde" görünür.
 
@@ -52,4 +52,4 @@ Her depolama sınıfı tanımlayıcısının tam anlamı iki etkene bağlıdır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Türler](../c-language/declarations-and-types.md)
+[Bildirimler ve türler](../c-language/declarations-and-types.md)

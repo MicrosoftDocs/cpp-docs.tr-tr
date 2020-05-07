@@ -11,7 +11,7 @@ ms.locfileid: "62157896"
 ---
 # <a name="storage-of-bit-fields"></a>Bit Alanları Deposu
 
-**ANSI 3.5.2.1** bir tamsayı içindeki bit alanlarının sırası
+**ANSI 3.5.2.1 &** Bir int içindeki bit alanlarının ayrılma sırası
 
 Bit alanları, bir tamsayı içinde en az önemli olan bitten en önemli bite doğru ayrılır. Aşağıdaki kodda
 

@@ -35,7 +35,7 @@ printf_s( "%hu\n", u );  // Prints 65533
 
 Aşağıdaki tabloda, imzalanmış integral türlerinden dönüşümler özetlenmektedir. Bu, **char** türünün varsayılan olarak imzalandığını varsayar. **Karakter** türü için varsayılan ayarı işaretsiz olarak değiştirmek için bir derleme zamanı seçeneği kullanırsanız, **imzasız karakter** türü için [imzasız integral türler tablosundan dönüştürmelerde](../c-language/conversions-from-unsigned-integral-types.md) verilen dönüştürmeler, bu tablodaki dönüştürmeler yerine geçerlidir.
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Microsoft derleyicisi, **int** ve **Long** birbirinden farklıdır ancak eşdeğer türlerdir. Bir **int** değerin dönüştürülmesi, **uzun**dönüştürme ile aynı şekilde devam eder.
 
@@ -43,48 +43,48 @@ Microsoft derleyicisi, **int** ve **Long** birbirinden farklıdır ancak eşdeğ
 
 ## <a name="table-of-conversions-from-signed-integral-types"></a>İşaretli integral türlerinden dönüştürme tablosu
 
-|Başlangıç|Bitiş|Yöntem|
+|Başlangıç|Alıcı|Yöntem|
 |----------|--------|------------|
 |**karakter**<sup>1</sup>|**short**|Oturum uzat|
 |**char**|**long**|Oturum uzat|
-|**char**|**uzun uzun**|Oturum uzat|
-|**char**|**işaretsiz karakter**|Stili koru; yüksek sıralı bit, işaret biti olarak işlevi kaybeder|
-|**char**|**işaretsiz kısa**|İmza- **kısa**olarak genişletilir; **Short** 'ı **işaretsiz Short** 'a Dönüştür|
-|**char**|**imzasız Long**|İmza- **uzun**olarak genişletilir; **uzun** ve **işaretsiz uzunlukta** Dönüştür|
+|**char**|**long long**|Oturum uzat|
+|**char**|**unsigned char**|Stili koru; yüksek sıralı bit, işaret biti olarak işlevi kaybeder|
+|**char**|**imzasız short**|İmza- **kısa**olarak genişletilir; **Short** 'ı **işaretsiz Short** 'a Dönüştür|
+|**char**|**imzasız long**|İmza- **uzun**olarak genişletilir; **uzun** ve **işaretsiz uzunlukta** Dönüştür|
 |**char**|**imzasız uzun uzun**|İmza- **uzun uzun**, uzatma **uzun** uzun veya **işaretsiz** Long Long 'ı Dönüştür|
 |**char**|**float**|İmza- **uzun**olarak genişletilir; **uzun** **kaya** Dönüştür|
 |**char**|**double**|İmza- **uzun**olarak genişletilir; **uzun** - **çift** Dönüştür|
 |**char**|**uzun çift**|İmza- **uzun**olarak genişletilir; **uzun** - **çift** Dönüştür|
 |**short**|**char**|Düşük sıra baytını koru|
 |**short**|**long**|Oturum uzat|
-|**short**|**uzun uzun**|Oturum uzat|
-|**short**|**işaretsiz karakter**|Düşük sıra baytını koru|
-|**short**|**işaretsiz kısa**|Bit modelini koru; yüksek sıralı bit, işaret biti olarak işlevi kaybeder|
-|**short**|**imzasız Long**|İmza- **uzun**olarak genişletilir; **uzun** ve **işaretsiz uzunlukta** Dönüştür|
+|**short**|**long long**|Oturum uzat|
+|**short**|**unsigned char**|Düşük sıra baytını koru|
+|**short**|**imzasız short**|Bit modelini koru; yüksek sıralı bit, işaret biti olarak işlevi kaybeder|
+|**short**|**imzasız long**|İmza- **uzun**olarak genişletilir; **uzun** ve **işaretsiz uzunlukta** Dönüştür|
 |**short**|**imzasız uzun uzun**|İmza- **uzun uzun**, uzatma **uzun** uzun veya **işaretsiz** Long Long 'ı Dönüştür|
 |**short**|**float**|İmza- **uzun**olarak genişletilir; **uzun** **kaya** Dönüştür|
 |**short**|**double**|İmza- **uzun**olarak genişletilir; **uzun** - **çift** Dönüştür|
 |**short**|**uzun çift**|İmza- **uzun**olarak genişletilir; **uzun** - **çift** Dönüştür|
 |**long**|**char**|Düşük sıra baytını koru|
 |**long**|**short**|Düşük sıralı kelimeyi koru|
-|**long**|**uzun uzun**|Oturum uzat|
-|**long**|**işaretsiz karakter**|Düşük sıra baytını koru|
-|**long**|**işaretsiz kısa**|Düşük sıralı kelimeyi koru|
-|**long**|**imzasız Long**|Bit modelini koru; yüksek sıralı bit, işaret biti olarak işlevi kaybeder|
+|**long**|**long long**|Oturum uzat|
+|**long**|**unsigned char**|Düşük sıra baytını koru|
+|**long**|**imzasız short**|Düşük sıralı kelimeyi koru|
+|**long**|**imzasız long**|Bit modelini koru; yüksek sıralı bit, işaret biti olarak işlevi kaybeder|
 |**long**|**imzasız uzun uzun**|İmza- **uzun uzun**, uzatma **uzun** uzun veya **işaretsiz** Long Long 'ı Dönüştür|
 |**long**|**float**|**Float**olarak temsil eder. Long tam olarak temsil edileyemeyeceği **sürece** bazı duyarlık kaybolur.|
 |**long**|**double**|**Double**olarak temsil eder. **Long** yalnızca **Double**olarak gösterilemez, bazı duyarlık kaybolur.|
 |**long**|**uzun çift**|**Double**olarak temsil eder. **Long** yalnızca **Double**olarak gösterilemez, bazı duyarlık kaybolur.|
-|**uzun uzun**|**char**|Düşük sıra baytını koru|
-|**uzun uzun**|**short**|Düşük sıralı kelimeyi koru|
-|**uzun uzun**|**long**|Düşük sıralı DWORD 'yi koru|
-|**uzun uzun**|**işaretsiz karakter**|Düşük sıra baytını koru|
-|**uzun uzun**|**işaretsiz kısa**|Düşük sıralı kelimeyi koru|
-|**uzun uzun**|**imzasız Long**|Düşük sıralı DWORD 'yi koru|
-|**uzun uzun**|**imzasız uzun uzun**|Bit modelini koru; yüksek sıralı bit, işaret biti olarak işlevi kaybeder|
-|**uzun uzun**|**float**|**Float**olarak temsil eder. **Uzun süre** tam olarak gösterilemeyen, bazı duyarlık kaybolur.|
-|**uzun uzun**|**double**|**Double**olarak temsil eder. **Uzun süre** tam olarak bir **Double**olarak gösterilemez, bazı duyarlık kaybolur.|
-|**uzun uzun**|**uzun çift**|**Double**olarak temsil eder. **Uzun süre** tam olarak bir **Double**olarak gösterilemez, bazı duyarlık kaybolur.|
+|**long long**|**char**|Düşük sıra baytını koru|
+|**long long**|**short**|Düşük sıralı kelimeyi koru|
+|**long long**|**long**|Düşük sıralı DWORD 'yi koru|
+|**long long**|**unsigned char**|Düşük sıra baytını koru|
+|**long long**|**imzasız short**|Düşük sıralı kelimeyi koru|
+|**long long**|**imzasız long**|Düşük sıralı DWORD 'yi koru|
+|**long long**|**imzasız uzun uzun**|Bit modelini koru; yüksek sıralı bit, işaret biti olarak işlevi kaybeder|
+|**long long**|**float**|**Float**olarak temsil eder. **Uzun süre** tam olarak gösterilemeyen, bazı duyarlık kaybolur.|
+|**long long**|**double**|**Double**olarak temsil eder. **Uzun süre** tam olarak bir **Double**olarak gösterilemez, bazı duyarlık kaybolur.|
+|**long long**|**uzun çift**|**Double**olarak temsil eder. **Uzun süre** tam olarak bir **Double**olarak gösterilemez, bazı duyarlık kaybolur.|
 
 <sup>1</sup> tüm **char** girdileri, **char** türünün varsayılan olarak imzalandığını varsayar.
 

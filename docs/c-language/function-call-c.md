@@ -15,20 +15,20 @@ ms.locfileid: "62233304"
 ---
 # <a name="function-call-c"></a>İşlev Çağrısı (C)
 
-A *işlev çağrısı* , çağrılan işlevin adını veya bir işlev işaretçisi ve isteğe bağlı olarak işleve geçirilen bağımsız değişken değerini içeren bir ifadedir.
+*İşlev çağrısı* , çağrılan işlevin adını veya bir işlev işaretçisinin değerini içeren bir ifadedir ve isteğe bağlı olarak, işleve geçirilen bağımsız değişkenleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
 *sonek ifadesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **(** *bağımsız değişken ifade listesi*<sub>iyileştirilmiş</sub> **)**
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek-ifade*  **(**  *bağımsız değişken-ifade-List*<sub>opt</sub> **)**
 
-*bağımsız değişken ifade listesi*:<br/>
+*bağımsız değişken-liste*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*argument-expression-list* **,** *assignment-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*bağımsız değişken-ifade listesi* **,** *atama ifadesi*
 
-*Sonek ifadesi* bir işlev adresini (örneğin, bir işlev Belirleyicisi veya işlev işaretçisinin değeri) değerlendirmelidir ve *bağımsız değişken ifade listesi* (ayrılmış ifadeler listesi virgülle) değerleri ("değişkenler") işleve geçirilir. *Bağımsız değişken ifade listesi* bağımsız değişkeni boş olabilir.
+*Sonek ifadesi* bir işlev adresi (örneğin, bir işlev tanımlayıcısı veya bir işlev işaretçisinin değeri) olarak değerlendirilmelidir ve *bağımsız değişken-ifade listesi* , değerleri ("arguments") işlevine geçirilir (virgülle ayrılmış). *Bağımsız değişken-ifade listesi* bağımsız değişkeni boş olabilir.
 
-Bir işlev çağrısı ifadesi, işlevin dönüş değerinin değerine ve türüne sahiptir. Bir işlev dizi türünde bir nesne döndüremez. İşlevin dönüş türü `void` ise (yani işlev hiçbir zaman bir değer döndürmeyecek şekilde bildirilmişse), işlev çağrısı ifadesinde de `void` türü vardır. (Bkz [işlev çağrıları](../c-language/function-calls.md) daha fazla bilgi için.)
+Bir işlev çağrısı ifadesi, işlevin dönüş değerinin değerine ve türüne sahiptir. Bir işlev dizi türünde bir nesne döndüremez. İşlevin dönüş türü `void` ise (yani işlev hiçbir zaman bir değer döndürmeyecek şekilde bildirilmişse), işlev çağrısı ifadesinde de `void` türü vardır. (Daha fazla bilgi için bkz. [Işlev çağrıları](../c-language/function-calls.md) .)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -24,7 +24,7 @@ ms.locfileid: "76821557"
 
 Bir DLL 'ye açıkça bağlanan süreçler, DLL modülüne artık gerek kalmadığında [FreeLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) işlevini çağırır. Bu işlev, modülün başvuru sayısını azaltır. Ve başvuru sayısı sıfırsa, işlemin adres alanından eşlenmemiş olur.
 
-Bir MFC uygulamasında, bir MFC uzantı DLL 'sini kaldırmak için `FreeLibrary` yerine [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary) kullanın. `AfxFreeLibrary` için arabirim (işlev prototipi) `FreeLibrary`ile aynıdır.
+Bir MFC uygulamasında, bir MFC uzantı DLL 'sini kaldırmak `FreeLibrary` Için yerine [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary) ' i kullanın. İçin `AfxFreeLibrary` Arabirim (işlev prototipi) ile `FreeLibrary`aynıdır.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
@@ -40,6 +40,6 @@ Bir MFC uygulamasında, bir MFC uzantı DLL 'sini kaldırmak için `FreeLibrary`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio 'DaC++ C/dll oluşturma](dlls-in-visual-cpp.md)\
+[Visual Studio 'da C/C++ dll 'Leri oluşturma](dlls-in-visual-cpp.md)\
 [FreeLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary)\
 [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary)

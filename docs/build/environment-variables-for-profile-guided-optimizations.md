@@ -13,62 +13,62 @@ ms.locfileid: "62195279"
 ---
 # <a name="environment-variables-for-profile-guided-optimizations"></a>Profil Temelli İyileştirmeler için Ortam Değişkenleri
 
-Test senaryoları ile oluşturulan bir görüntüye etkileyen üç ortam değişkenleri vardır **/LTCG:PGI** profil temelli iyileştirmeler için:
+**/LTCG: PGI** ile oluşturulan bir görüntüde test senaryolarını, profil temelli iyileştirmeler için etkileyen üç ortam değişkeni vardır:
 
-- **PogoSafeMode** uygulama profil oluşturma için hızlı mod veya güvenli mod kullanılıp kullanılmayacağını belirtir.
+- **PogoSafeMode** uygulama profili oluşturma için hızlı mod veya güvenli mod kullanılıp kullanılmayacağını belirtir.
 
-- **Vcprofıle_alloc_scale** ek bellek Profil Oluşturucu tarafından kullanılmak üzere ekler.
+- **VCPROFILE_ALLOC_SCALE** profil oluşturucu tarafından kullanılmak üzere ek bellek ekler.
 
-- **Vcprofıle_path** .pgc dosyaları için kullanılan klasör belirtmenize olanak tanır.
+- **VCPROFILE_PATH** . pgc dosyaları için kullanılan klasörü belirtmenize olanak tanır.
 
-**PogoSafeMode ve vcprofıle_alloc_scale ortam değişkenleri, Visual Studio 2015'ten başlayarak kullanım dışı bırakılmıştır.** Bağlayıcı seçenekleri [/genprofıle veya fastgenprofıle](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md) ve [/USEPROFILE](reference/useprofile.md) bu ortam değişkenleri olarak aynı bağlayıcı davranışı belirtin.
+**PogoSafeMode ve VCPROFILE_ALLOC_SCALE ortam değişkenleri, Visual Studio 2015 ' den itibaren kullanımdan kaldırılmıştır.** [/Genprofile veya/FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md) ve [/useprofile](reference/useprofile.md) bağlayıcı seçenekleri, bu ortam değişkenleriyle aynı bağlayıcı davranışını belirtir.
 
 ## <a name="pogosafemode"></a>PogoSafeMode
 
-Bu ortam değişkeni kullanım dışı bırakılmıştır. Kullanım **EXACT** veya **NOEXACT** bağımsız değişkenleri **/genprofıle** veya **fastgenprofıle** bu davranışını denetlemek için.
+Bu ortam değişkeni kullanım dışıdır. Bu davranışı denetlemek için **/Genprofile** veya **/fastgenprofile** **tam** veya **tam** bağımsız değişkenlerini kullanın.
 
-Temizleyin veya ayarlayın **PogoSafeMode** x86 üzerinde uygulama profilini oluşturmak için hızlı mod veya güvenli mod kullanılıp kullanılmayacağını belirtmek için ortam değişkeni sistemler.
+X86 sistemlerinde uygulama profili oluşturma için hızlı mod veya güvenli mod kullanıp kullanmayacağınızı belirtmek için **PogoSafeMode** ortam değişkenini temizleyin veya ayarlayın.
 
-Profil temelli iyileştirme (PGO) profil oluşturma aşamasında olası iki modu vardır: *hızlı mod* ve *güvenli mod*. Hızlı modda profil oluşturulduğunda, kullandığı **dahil edilen** veri sayısını artırmak için yönergeler. **Dahil edilen** yönergesi daha hızlıdır ancak iş parçacığı açısından güvenli değildir. Güvenli modda profil oluşturulduğunda, kullandığı **kilit dahil edilen** veri sayısını artırmak için yönergeler. **Kilit dahil edilen** yönergesi ile aynı işlevlere sahip **dahil edilen** yönerge sahiptir ve iş parçacığı açısından güvenlidir, ancak daha yavaştır **dahil edilen** yönergesi.
+Profil temelli iyileştirme (PGO), profil oluşturma aşamasında iki olası moda sahiptir: *hızlı mod* ve *Güvenli mod*. Profil oluşturma hızlı moddayken, veri sayaçlarını artırmak için **Inc** yönergesini kullanır. **Inc** yönergesi daha hızlıdır, ancak iş parçacığı açısından güvenli değildir. Profil oluşturma güvenli moddayken, veri sayaçlarını artırmak için **Lock Inc** yönergesini kullanır. **Lock Inc** yönergesi, **Inc** yönergesiyle aynı işlevselliğe sahiptir ve iş parçacığı açısından güvenlidir, ancak bu, **Inc** yönergesinden daha yavaştır.
 
-Varsayılan olarak, PGO profil oluşturma Hızlı modda çalışır. **PogoSafeMode** olduğundan yalnızca güvenli mod kullanmak isterseniz gereklidir.
+Varsayılan olarak, PGO profil oluşturma hızlı modda çalışır. **PogoSafeMode** yalnızca güvenli mod kullanmak istiyorsanız gereklidir.
 
-PGO profil oluşturmayı güvenli modda çalıştırmak için ya da ortam değişkenini kullanmalısınız **PogoSafeMode** veya bağlayıcı anahtarını **/PogoSafeMode**sistem bağlı olarak. X x64 profil oluşturma işlemi yapıyorsanız bilgisayarı bağlayıcı anahtarını kullanmanız gerekir. X x86 profil oluşturma işlemi yapıyorsanız bilgisayar, bağlayıcı kullanabilir geçin veya ayarlayın **PogoSafeMode** ortam değişkeni en iyi duruma getirme işlemine başlamadan önce herhangi bir değer.
+PGO profil oluşturmayı güvenli modda çalıştırmak için, sisteme bağlı olarak **PogoSafeMode** ortam değişkenini ya da **/PogoSafeMode**bağlayıcı anahtarını kullanmanız gerekir. Bir x64 bilgisayarda profil oluşturma işlemi yapıyorsanız bağlayıcı anahtarını kullanmanız gerekir. Bir x86 bilgisayarda profil oluşturma işlemi yapıyorsanız, en iyi duruma getirme işlemine başlamadan önce bağlayıcı anahtarını kullanabilir veya **PogoSafeMode** ortam değişkenini herhangi bir değere ayarlayabilirsiniz.
 
-### <a name="pogosafemode-syntax"></a>PogoSafeMode söz dizimi
+### <a name="pogosafemode-syntax"></a>PogoSafeMode sözdizimi
 
-> **PogoSafeMode ayarlamak**[**=**_değer_]
+> **set PogoSafeMode**[**=**_değer_]
 
-Ayarlama **PogoSafeMode** için güvenli modunu etkinleştirmek için herhangi bir değer. Bir önceki değeri temizlemek ve hızlı mod yeniden etkinleştirmek için bir değer olmadan ayarlayın.
+Güvenli modu etkinleştirmek için **PogoSafeMode** değerini herhangi bir değere ayarlayın. Önceki bir değeri temizlemek ve hızlı modu yeniden etkinleştirmek için değer olmadan ayarlayın.
 
-## <a name="vcprofileallocscale"></a>VCPROFILE_ALLOC_SCALE
+## <a name="vcprofile_alloc_scale"></a>VCPROFILE_ALLOC_SCALE
 
-Bu ortam değişkeni kullanım dışı bırakılmıştır. Kullanım **MEMMIN** ve **MEMMAX** bağımsız değişkenleri **/genprofıle** veya **fastgenprofıle** bu davranışını denetlemek için.
+Bu ortam değişkeni kullanım dışıdır. Bu davranışı denetlemek için **/Genprofile** veya **/Fastgenprofile** Için **memmin** ve **MEMMAX** bağımsız değişkenlerini kullanın.
 
-Değiştirme **vcprofıle_alloc_scale** ayrılan bellek miktarını değiştirmek için ortam değişkeni profil verilerini tutacak. Nadir durumlarda olmayacaktır desteklemek için yeterli kullanılabilir bellek test senaryoları çalışırken profili verilerini toplama. Bu gibi durumlarda ayarlayarak bellek miktarını artırabilir **vcprofıle_alloc_scale**. Yetersiz bellek olduğunu gösteren bir test çalıştırması sırasında bir hata iletisi alırsanız, büyük bir değer atayın **vcprofıle_alloc_scale**kadar çalıştırmalar yok bellek yetersiz hatalarla tamamlandı.
+**VCPROFILE_ALLOC_SCALE** ortam değişkenini, profil verilerini tutmak için ayrılan bellek miktarını değiştirmek üzere değiştirin. Nadir durumlarda, test senaryolarını çalıştırırken profil verileri toplamayı desteklemek için yeterli kullanılabilir bellek olmayacaktır. Bu durumlarda, **VCPROFILE_ALLOC_SCALE**ayarlayarak bellek miktarını artırabilirsiniz. Yetersiz belleğinizin olduğunu belirten bir test çalıştırması sırasında bir hata iletisi alırsanız, test çalıştırmaları, yetersiz bellek hataları olmadan tamamlanana kadar daha büyük bir değer atayın **VCPROFILE_ALLOC_SCALE**.
 
-### <a name="vcprofileallocscale-syntax"></a>Vcprofıle_alloc_scale söz dizimi
+### <a name="vcprofile_alloc_scale-syntax"></a>VCPROFILE_ALLOC_SCALE sözdizimi
 
-> **vcprofıle_alloc_scale ayarlamak**[__=__*scale_value*]
+> **set VCPROFILE_ALLOC_SCALE**[__=__*scale_value*]
 
-*Scale_value* parametresi, bir Ölçeklendirme çarpanı test senaryoları çalıştırmak için istediğiniz bellek miktarı.  Varsayılan değer 1'dir. Örneğin, bu komut satırı ölçek faktörü 2'ye ayarlanır:
+*Scale_value* parametresi, test senaryolarını çalıştırmak istediğiniz bellek miktarı için bir ölçeklendirme etkendir.  Varsayılan değer 1'dir. Örneğin, bu komut satırı ölçek faktörünü 2 olarak ayarlar:
 
 `set VCPROFILE_ALLOC_SCALE=2`
 
-## <a name="vcprofilepath"></a>VCPROFILE_PATH
+## <a name="vcprofile_path"></a>VCPROFILE_PATH
 
-Kullanım **vcprofıle_path** ortam değişkenini .pgc dosyaları oluşturmak için dizini belirtin. Varsayılan olarak, profili oluşturulan ikili dosya ile aynı dizinde .pgc dosyası oluşturulur. Ancak, ikili burada oluşturulmuş başka bir makine profili senaryoları çalıştırdığınızda durumda olabileceğinden ikili mutlak yolu, mevcut değilse, ayarlayabilirsiniz **vcprofıle_path** hedef makinede var olan bir yolu.
+. Pgc dosyalarını oluşturmak için dizini belirtmek üzere **VCPROFILE_PATH** ortam değişkenini kullanın. Varsayılan olarak,. pgc dosyaları profili oluşturulan ikilide aynı dizinde oluşturulur. Ancak, ikili dosyanın mutlak yolu yoksa, ikili dosyanın oluşturulduğu farklı bir makinede profil senaryolarını çalıştırdığınızda olduğu gibi, **VCPROFILE_PATH** hedef makinede bulunan bir yola ayarlayabilirsiniz.
 
-### <a name="vcprofilepath-syntax"></a>Vcprofıle_path söz dizimi
+### <a name="vcprofile_path-syntax"></a>VCPROFILE_PATH sözdizimi
 
-> **vcprofıle_path ayarlamak**[**=**_yolu_]
+> **set VCPROFILE_PATH**[**=**_yol_]
 
-Ayarlama *yolu* parametresi .pgc dosyaları eklemek dizin yolu. Örneğin, bu komut satırı klasör C:\profile için ayarlar:
+*Path* parametresini,. pgc dosyalarının ekleneceği dizin yoluna ayarlayın. Örneğin, bu komut satırı klasörünü C:\profile olarak ayarlar:
 
 `set VCPROFILE_PATH=c:\profile`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Profil Temelli İyileştirmeler](profile-guided-optimizations.md)<br/>
-[/ GENPROFILE ve fastgenprofıle](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
+[/GENPROFILE ve/FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
 [/USEPROFILE](reference/useprofile.md)<br/>

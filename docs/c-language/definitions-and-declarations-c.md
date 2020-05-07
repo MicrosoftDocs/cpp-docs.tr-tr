@@ -13,9 +13,9 @@ ms.locfileid: "62234364"
 ---
 # <a name="definitions-and-declarations-c"></a>Bildirimler ve Tanımlar (C)
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-DLL arabirimi, sistemdeki bazı programlar tarafından dışa aktarılacak bilinen tüm öğelere (İşlevler ve veriler) gösterir. olarak bildirilen diğer bir deyişle, tüm öğeleri **dllimport** veya `dllexport`. DLL arabirimine dahil olan tüm bildirimler belirtmeli **dllimport** veya `dllexport` özniteliği. Ancak, tanım yalnızca belirtebilirsiniz `dllexport` özniteliği. Örneğin, aşağıdaki işlev tanımı bir derleyici hatası oluşturur:
+DLL arabirimi, sistemdeki bazı programlar tarafından verilmesi bilinen tüm öğeler (işlevler ve veriler) anlamına gelir; diğer bir deyişle, **dllimport** veya `dllexport`olarak belirtilen tüm öğeler. DLL arabirimine dahil edilen tüm bildirimlerin **dllimport** veya `dllexport` Attribute belirtmesi gerekir. Ancak, tanım yalnızca `dllexport` özniteliğini belirtebilir. Örneğin, aşağıdaki işlev tanımı bir derleyici hatası oluşturur:
 
 ```
 #define DllImport   __declspec( dllimport )
@@ -46,7 +46,7 @@ Bununla birlikte, doğru sözdizimi şöyledir:
 DllExport int i = 10;      /* Okay: this is an export definition. */
 ```
 
-Kullanımını `dllexport` bir tanımı gelir ancak **dllimport** bir bildirimi gösterir. Bir bildirimi zorlamak için `extern` ile `dllexport` anahtar sözcüğünü kullanmanız gerekir; aksi takdirde, bir tanım gösterilir.
+Kullanımı bir tanım `dllexport` anlamına gelir, **dllimport** bir bildirimi gösterir. Bir bildirimi zorlamak için `extern` ile `dllexport` anahtar sözcüğünü kullanmanız gerekir; aksi takdirde, bir tanım gösterilir.
 
 ```
 #define DllImport   __declspec( dllimport )
@@ -56,7 +56,7 @@ extern DllImport int k;   /* These are correct and imply */
 Dllimport int j;          /* a declaration. */
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

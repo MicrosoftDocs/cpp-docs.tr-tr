@@ -16,9 +16,9 @@ ms.locfileid: "74857157"
 ---
 # <a name="c-extended-storage-class-attributes"></a>C Genişletilmiş Depolama Sınıfı Öznitelikler
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Bu konuyla ilgili daha güncel bilgiler, [__declspec (C++ başvuru)](../cpp/declspec.md)altında bulunabilir.
+Bu konuyla ilgili daha güncel bilgiler, [__declspec (C++ Başvurusu)](../cpp/declspec.md)altında bulunabilir.
 
 Genişletilmiş öznitelik sözdizimi, C diline yönelik Microsoft'a özel uzantıları basitleştirir ve standartlaştırır. Genişletilmiş öznitelik sözdizimini kullanın depolama sınıfı öznitelikler, iş parçacığı, çıplak, dllimport ve dllexport'u içerir.
 
@@ -27,14 +27,14 @@ Depolama sınıfı bilgilerini belirtmeye yönelik genişletilmiş öznitelik s�
 ## <a name="syntax"></a>Sözdizimi
 
 *depolama sınıfı Belirleyicisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **__declspec (** *Genişletilmiş-decl-değiştirici-seq* **)**  /\* Microsoft 'a özgü \*/
+&nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *Genişletilmiş-decl-değiştirici-seq* **)**  / \* Microsoft 'a özgü\*/
 
-*Genişletilmiş-decl-Modifier-Seq*:&nbsp;&nbsp;&nbsp;&nbsp;/\* Microsoft 'a özgü \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-Modifier*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-değiştirici-seq* *Extended-decl-değiştiricisi*
+*Extended-decl-değiştirici-seq*:&nbsp; &nbsp; &nbsp; &nbsp; / \* Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Extended-decl-değiştirici*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Extended-decl-değiştirici-seq* *Extended-decl-değiştiricisi*
 
-*Extended-decl-değiştirici*:&nbsp;&nbsp;&nbsp;&nbsp;/\* Microsoft 'a özgü \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**iş parçacığı**<br/>
+*Extended-decl-değiştirici*:&nbsp; &nbsp; &nbsp; &nbsp; / \* Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**zincirinin**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Naked**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**dllimport**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**dllexport**
@@ -47,4 +47,4 @@ Boşluk, bildirim değiştiricilerini ayırır. *Genişletilmiş-decl-değiştir
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Türler](../c-language/declarations-and-types.md)
+[Bildirimler ve türler](../c-language/declarations-and-types.md)

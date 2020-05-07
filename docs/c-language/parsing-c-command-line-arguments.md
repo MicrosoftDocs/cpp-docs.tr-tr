@@ -17,23 +17,23 @@ ms.locfileid: "75299097"
 ---
 # <a name="parsing-c-command-line-arguments"></a>C Komut Satırı Bağımsız Değişkenlerini Ayrıştırma
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Microsoft C başlangıç kodu, işletim sistemi komut satırında verilen bağımsız değişkenleri yorumlarken aşağıdaki kuralları kullanır:
 
 - Bağımsız değişkenler boşluk veya sekme olan boşluk ile sınırlandırılmıştır.
 
-- Çift tırnak işareti içine alınmış bir dize, içinde yer alan boşluk ne olursa olsun tek bir bağımsız değişken olarak yorumlanır. Tırnak içine alınmış bir dize bir bağımsız değişkene gömülebilir. Giriş işaretinin ( **^** ) bir kaçış karakteri veya sınırlayıcı olarak tanınmadığını unutmayın.
+- Çift tırnak işareti içine alınmış bir dize, içinde yer alan boşluk ne olursa olsun tek bir bağımsız değişken olarak yorumlanır. Tırnak içine alınmış bir dize bir bağımsız değişkene gömülebilir. Şapka işareti (**^**) bir kaçış karakteri veya sınırlayıcı olarak tanınmadığını unutmayın.
 
-- Önünde ters eğik çizgi, **\\"** olan çift tırnak işareti, değişmez değer çift tırnak işareti ( **"** ) olarak yorumlanır.
+- Önünde ters eğik çizgi **"** ** \\**olan bir çift tırnak işareti ("), sabit değer çift tırnak işareti (") olarak yorumlanır.
 
 - Ters eğik çizgiler, bir çift tırnak işaretinden hemen önce gelmedikleri takdirde tam olarak yorumlanır.
 
-- Çift sayıda ters eğik çizgiden sonra çift tırnak işareti varsa, bir ters eğik çizgi ( **\\** ) her ters eğik çizgi ( **\\\\** ) için `argv` dizisine yerleştirilir ve çift tırnak işareti ( **"** ) bir dize sınırlayıcısı olarak yorumlanır.
+- Çift sayıda ters eğik çizgiden sonra çift tırnak işareti varsa, bir ters eğik**\\**çizgi () her çift eğik çizgi ( `argv` **\\**) için diziye yerleştirilir ve çift tırnak işareti (**"**) dize sınırlayıcısı olarak yorumlanır.
 
-- Tek bir ters eğik çizgiden sonra çift tırnak işareti varsa, bir ters eğik çizgi ( **\\** ) her ters eğik çizgi ( **\\\\** ) için `argv` dizisine yerleştirilir ve çift tırnak işareti kalan ters eğik çizgi tarafından bir kaçış sırası olarak yorumlanır ve bu değer bir çift tırnak işaretine ( **"** ) `argv`yerleştirilir.
+- Tek bir ters eğik çizgiden sonra çift tırnak işareti varsa, her ters**\\**eğik çizgi ( `argv` **\\**) için diziye bir ters eğik çizgi () konur ve çift tırnak işareti kalan ters eğik çizgi tarafından bir kaçış sırası olarak yorumlanır ve bir sabit değer çift tırnak işareti (**"**) konur. `argv`
 
-Bu liste, komut satırı bağımsız değişkenlerinin birkaç örneği için `argv` geçirilen yorumlanan sonucu göstererek yukarıdaki kuralları gösterir. İkinci, üçüncü ve dördüncü sütunlarda listelenen çıktı, bağımsız değişkenleri. Listeyi izleyen C programı.
+Bu liste, komut satırı bağımsız değişkenlerinin çeşitli örnekleri `argv` için geçirilen yorumlanan sonucu göstererek yukarıdaki kuralları gösterir. İkinci, üçüncü ve dördüncü sütunlarda listelenen çıktı, bağımsız değişkenleri. Listeyi izleyen C programı.
 
 |Komut satırı girişi|argv [1]|argv [2]|argv [3]|
 |-------------------------|---------------|---------------|---------------|

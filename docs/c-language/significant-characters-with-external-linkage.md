@@ -11,7 +11,7 @@ ms.locfileid: "62158314"
 ---
 # <a name="significant-characters-with-external-linkage"></a>Dış Bağlantılı Önemli Karakterler
 
-**ANSI 3.1.2** dış bağlantılı önemli karakterler sayısı
+**ANSI 3.1.2** Dış bağlantısı olan önemli karakterlerin sayısı
 
 Microsoft C ile derlenmiş programlarda `extern` bildirilen tanımlayıcılar 247 karakter için önemlidir. Bu varsayılanı, /H (dış adlarının uzunluğunu sınırlayın) seçeneğini kullanarak daha küçük bir sayı olarak değiştirebilirsiniz.
 

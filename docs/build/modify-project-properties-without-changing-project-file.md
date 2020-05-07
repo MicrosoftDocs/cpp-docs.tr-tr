@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl kullanılır: Proje dosyasını değiştirmeden C++ proje özelliklerini ve hedeflerini değiştirme'
+title: 'Nasıl yapılır: proje dosyasını değiştirmeden C++ proje özelliklerini ve hedeflerini değiştirme'
 ms.date: 11/28/2018
 helpviewer_keywords:
 - project properties [C++], modifying outside project file
@@ -10,33 +10,33 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "81328455"
 ---
-# <a name="how-to-modify-c-project-properties-and-targets-without-changing-the-project-file"></a>Nasıl kullanılır: Proje dosyasını değiştirmeden C++ proje özelliklerini ve hedeflerini değiştirme
+# <a name="how-to-modify-c-project-properties-and-targets-without-changing-the-project-file"></a>Nasıl yapılır: proje dosyasını değiştirmeden C++ proje özelliklerini ve hedeflerini değiştirme
 
-Proje dosyasını değiştirmeden MSBuild komut isteminden proje özelliklerini ve hedeflerini geçersiz kılabilirsiniz. Bu, bazı özellikleri geçici veya ara sıra uygulamak istediğinizde yararlıdır. Bu MSBuild bazı bilgi varsayar. Daha fazla bilgi için [MSBUild'e](https://docs.microsoft.com/visualstudio/msbuild/msbuild)bakın.
+Proje dosyasını değiştirmeden MSBuild komut isteminden proje özelliklerini ve hedeflerini geçersiz kılabilirsiniz. Bu, bazı özellikleri geçici olarak veya bazen uygulamak istediğinizde yararlıdır. MSBuild hakkında bazı bilgiler olduğunu varsayar. Daha fazla bilgi için bkz. [MSBUild](https://docs.microsoft.com/visualstudio/msbuild/msbuild).
 
 > [!IMPORTANT]
-> .props veya .targets dosyasını oluşturmak için Visual Studio'daki XML Düzenleyicisini veya herhangi bir metin düzenleyicisini kullanabilirsiniz. Özellikleri proje dosyasına eklediği için bu senaryoda **Özellik Yöneticisi'ni** kullanmayın.
+> . Props veya. targets dosyasını oluşturmak için Visual Studio 'daki XML düzenleyicisini veya herhangi bir metin düzenleyicisini kullanabilirsiniz. Bu senaryoda **Özellik Yöneticisi** kullanmayın çünkü özellikleri proje dosyasına ekler.
 
 *Proje özelliklerini geçersiz kılmak için:*
 
-1. Geçersiz kılmak istediğiniz özellikleri belirten bir .props dosyası oluşturun.
+1. Geçersiz kılmak istediğiniz özellikleri belirten bir. props dosyası oluşturun.
 
-1. Komut isteminden: ForceImportBeforeCppTargets="C:\sources\my_props.props" kümesi
+1. Komut isteminden: ForceImportBeforeCppTargets = "C:\sources\ my_props. props" olarak ayarlayın
 
 *Proje hedeflerini geçersiz kılmak için:*
 
-1. Bir .targets dosyası nın uygulanmasıveya belirli bir hedefle birlikte oluşturulması
+1. Uygulamasıyla veya belirli bir hedefle bir. targets dosyası oluşturma
 
-2. Komut istemigönderen: set ForceImportAfterCppTargets ="C:\sources\my_target.targets"
+2. Komut isteminden: Forceımportaftercpptargets = "C:\sources\ my_target. targets" olarak ayarlayın
 
-/p: seçeneğini kullanarak msbuild komut satırında her iki seçeneği de ayarlayabilirsiniz:
+Ayrıca,/p: seçeneğini kullanarak MSBuild komut satırında her iki seçeneği de ayarlayabilirsiniz:
 
 ```cmd
 > msbuild myproject.sln /p:ForceImportBeforeCppTargets="C:\sources\my_props.props"
 > msbuild myproject.sln /p:ForceImportAfterCppTargets="C:\sources\my_target.targets"
 ```
 
-Bu şekilde özellikleri ve hedefleri geçersiz kılmak, çözümdeki tüm .vcxproj dosyalarına aşağıdaki içeri aktarımları eklemeye eşdeğerdir:
+Özellikleri ve hedefleri bu şekilde geçersiz kılmak, Çözümdeki tüm. vcxproj dosyalarına aşağıdaki içeri aktarmaları ekleme ile eşdeğerdir:
 
 ```cmd
 <Import Project=="C:\sources\my_props.props" />

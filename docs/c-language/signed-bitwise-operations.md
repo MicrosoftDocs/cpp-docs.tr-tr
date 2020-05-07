@@ -14,9 +14,9 @@ ms.locfileid: "62158325"
 ---
 # <a name="signed-bitwise-operations"></a>İmzalı Bit Düzeyinde İşlemler
 
-**ANSI 3.3** işaretli tamsayılarda bit düzeyinde sonuçları
+**Ansı 3,3** İşaretli tamsayılar üzerinde bit düzeyinde işlemlerin sonuçları
 
-İşaretli tamsayılarda bit düzeyinde işlemler, işaretsiz tamsayılarda bit düzeyinde işlemlerle aynı şekilde çalışır. Örneğin, `-16 & 99` ikili olarak ifade edilebilir
+İşaretli tamsayılarda bit düzeyinde işlemler, işaretsiz tamsayılarda bit düzeyinde işlemlerle aynı şekilde çalışır. Örneğin, `-16 & 99` ikili dosyada şu şekilde ifade edilebilir
 
 ```
   11111111 11110000

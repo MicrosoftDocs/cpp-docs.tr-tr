@@ -1,5 +1,5 @@
 ---
-title: 'Bildiriciler: Maksimum sayı'
+title: 'Bildiriciler: En Fazla number'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - declarators, maximum number of
@@ -11,11 +11,11 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62234529"
 ---
-# <a name="declarators-maximum-number"></a>Bildiriciler: Maksimum sayı
+# <a name="declarators-maximum-number"></a>Bildiriciler: En Fazla number
 
-**ANSI 3.5.4** bir aritmetik, yapı veya birleşim türü değiştirebilirsiniz Bildirimciler sayısı
+**ANSI 3.5.4** Aritmetik, yapı veya birleşim türünü değiştirebilen en fazla bildirimci sayısı
 
-Microsoft C, bildirimcileri sayısını sınırlamaz. Sayı yalnızca kullanılabilir bellekle sınırlıdır.
+Microsoft C, bildirimcilerin sayısını sınırlamaz. Numara yalnızca kullanılabilir bellekle sınırlıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

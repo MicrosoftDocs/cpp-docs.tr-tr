@@ -11,18 +11,18 @@ ms.locfileid: "62157701"
 ---
 # <a name="summary-of-keywords"></a>Anahtar Sözcüklerin Özeti
 
-*anahtar sözcüğü* : biri
+*anahtar sözcük* : biri
 
 |||||
 |-|-|-|-|
-|**auto**|**double**|**int**|**struct**|
-|**break**|**else**|**long**|**switch**|
-|**case**|**enum**|**Kaydolun**|**tür tanımı**|
+|**Otomatik**|**double**|**int**|**sýný**|
+|**break**|**else**|**long**|**değiştirebilirsiniz**|
+|**harflerini**|**yardımının**|**kaydolunamadı**|** typedef**|
 |**char**|**extern**|**return**|**birleşim**|
-|**const**|**float**|**short**|**İşaretsiz**|
-|**continue**|**for**|**İmzalı**|**void**|
-|**default**|**goto**|**sizeof**|**volatile**|
-|**do**|**Eğer**|**static**|**while**|
+|**const**|**float**|**short**|**işaretlenmemiş**|
+|**continue**|**for**|**imzalı**|**void**|
+|**varsayılanını**|**goto**|**sizeof**|**volatile**|
+|**do**|**if**|**static**|**while**|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

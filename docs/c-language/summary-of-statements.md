@@ -12,55 +12,55 @@ ms.locfileid: "74857001"
 # <a name="summary-of-statements"></a>Deyimler Özeti
 
 *ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*etiketli ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Etiketli ifade*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bileşik ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade* ifadesi<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*seçim-ekstresi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*seçim-ifade*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*yineleme-ekstresi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sıçrama-deyim*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*try-except-deyimin* /\* Microsoft 'a özgü \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*try-finally-deyimin* /\* Microsoft 'a özgü \*/
+&nbsp;&nbsp;&nbsp;&nbsp;*try-except-ekstre*  / \* Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*try-finally-deyimin*  / \* Microsoft 'a özgü\*/
 
 *sıçrama-deyim*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**goto** *tanımlayıcı* **;**<br/>
-&nbsp;&nbsp;&nbsp;**devam** &nbsp;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kesme;**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**goto***tanıtıcıya*git **;**    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**devam**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**sonundan**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Return** *ifadesi*<sub>opt</sub> **;**
 
 *bileşik ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **{** *declaration-List*<sub>opt</sub> *bildirimini-List*<sub>opt</sub> **}**
+&nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-List*<sub>opt</sub> *bildirimini-List*<sub>opt</sub> **}**
 
 *bildirim-liste*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-List* *bildirimi*
+&nbsp;&nbsp;&nbsp;&nbsp;*bağımsız*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-liste* *bildirimi*
 
 *Ekstre-liste*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*açıklaması*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade-List* *deyimidir*
+&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre-List* *ekstresi*
 
 *ifade ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*ifade*<sub>katılımı</sub> **;**
 
 *yineleme-ekstresi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sırada (**  *ifade*  **)**  *deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**yapmak** *deyimi* **sırada (** *ifade* **);**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**için (** *ifade*<sub>iyileştirilmiş</sub> **;** *ifade*<sub>iyileştirilmiş</sub> **;** *ifade*<sub>iyileştirilmiş</sub> **)** *deyimi*
+&nbsp;&nbsp;&nbsp;&nbsp;**while (**  *ifade*  **)**  *deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Do**  *deyimi*  **while (**  *ifade*  **);**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**for (**  *Expression*<sub>opt</sub> **;** *Expression*<sub>opt</sub> **;** *Expression*<sub>opt</sub> **)** *deyimi*
 
 *seçim-ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**varsa (** *ifade* **)** *deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**varsa (** *ifade* **)** *deyimi* **başka** *deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**geçiş (** *ifade* **)** *deyimi*
+&nbsp;&nbsp;&nbsp;&nbsp;**if (**  *ifade*  **)**  *deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**IF (**  *Expression*  **)**  *deyimi*  **Else**  *deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Switch (**  *ifade*  **)**  *deyimi*
 
 *etiketli ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* **:** *deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Servis talebi** *sabit-ifade* **:** *deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:** *deyimi*
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*  **:**  *ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Case**  *sabiti-ifade*  **:**  *deyim*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:**  *ifade*
 
-*try-except-deyimin*:/\* Microsoft 'a özgü \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **__try** *compound-statement* **__except (** *ifade* **)** *bileşik deyim*
+*try-except-deyimin*:/\* Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__try**  *bileşik deyim* **__except (**  *ifade*  **)**  *bileşik deyim*
 
-*try-finally-deyimin*:/\* Microsoft 'a özgü \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **__try** *compound-statement* **__finally** *bileşik deyim*
+*try-finally-deyimin*:/\* Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__try**  *bileşik deyimli* **__finally**  *bileşik ifade*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -13,7 +13,7 @@ ms.locfileid: "62232460"
 ---
 # <a name="null-macro"></a>NULL Makro
 
-**ANSI 4.1.5** olduğu ' % s'makro NULL'un genişlediği boş işaretçi sabiti
+**ANSI 4.1.5** Makronun NULL olarak genişleyen null işaretçi sabiti
 
 Birkaç içeren dosya, `((void *)0)` olarak NULL makroyu tanımlar.
 

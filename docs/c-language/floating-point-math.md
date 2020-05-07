@@ -11,7 +11,7 @@ ms.locfileid: "62233702"
 ---
 # <a name="floating-point-math"></a>Kayan Nokta Matematiği
 
-- [Değerler](../c-language/values.md)
+- [Deðerler](../c-language/values.md)
 
 - [Kayan Nokta Değerlerine Tam Sayılar Atama](../c-language/casting-integers-to-floating-point-values.md)
 

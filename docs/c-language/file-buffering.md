@@ -15,7 +15,7 @@ ms.locfileid: "62233797"
 ---
 # <a name="file-buffering"></a>Dosyayı Ara Belleğe Alma
 
-**ANSI 4.9.3** dosya arabelleğe alma özellikleri
+**ANSI 4.9.3 &** Dosya arabelleğe alma özellikleri
 
 Standart I/O işlevleri aracılığıyla erişilen disk dosyaları tamamıyla arabelleğe alınır. Varsayılan olarak, arabellek 512 bayt tutar.
 

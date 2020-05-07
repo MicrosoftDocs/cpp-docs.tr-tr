@@ -21,74 +21,74 @@ ms.locfileid: "62232949"
 ---
 # <a name="initializing-scalar-types"></a>Ölçekli Türleri Başlatma
 
-Ne zaman başlatılırken skaler türleri, değerini *atama ifadesi* değişkenine atanır. Atama için dönüştürme kuralları geçerlidir. (Bkz [tür dönüştürmeleri](../c-language/type-conversions-c.md) dönüştürme kuralları hakkında daha fazla bilgi için.)
+Skaler türleri başlatırken, *atama ifadesinin* değeri değişkenine atanır. Atama için dönüştürme kuralları geçerlidir. (Bkz. dönüştürme kuralları hakkında bilgi için [tür dönüştürmeleri](../c-language/type-conversions-c.md) .)
 
 ## <a name="syntax"></a>Sözdizimi
 
-*bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *init-declarator-list*<sub>iyileştirilmiş</sub> **;**
+*bildirim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-belirteçleri* *init-declarator-list*<sub>opt</sub> **;**
 
-*bildirim tanımlayıcıları*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı tanımlayıcısı* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirticisi* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub>
+*bildirim-tanımlayıcılar*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı Belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub>
 
 *init-declarator-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list* **,** *init-declarator*
 
 *init-declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci* **=** *Başlatıcı*  / \* skaler başlatma \*/
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;skaler başlatma için *bildirimci* **=** *başlatıcısı*  / \*\*/
 
 *Başlatıcı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*
 
-Aşağıdaki kurallara uyan koşuluyla herhangi bir türde değişken başlatabilirsiniz:
+Aşağıdaki kurallara uyacak şekilde herhangi bir türdeki değişkenleri başlatabilirsiniz:
 
-- Dosya kapsamı düzeyinde bildirilen değişkenleri başlatılabilir. Bir değişken dış düzeyde açıkça başlatmazsanız, varsayılan olarak 0 olarak başlatılır.
+- Dosya kapsamı düzeyinde belirtilen değişkenler başlatılabilir. Dış düzeyde açıkça bir değişken başlatıdıysanız varsayılan olarak 0 olarak başlatılır.
 
-- Sabit bir ifade ile bildirilen herhangi bir genel değişken başlatmak için kullanılan **statik** *depolama sınıfı tanımlayıcısı*. Değişkenler olacak şekilde **statik** program yürütme başladığında başlatılır. Siz açıkça genel başlatmazsanız **statik** değişken, 0 için varsayılan olarak başlatılır ve işaretçi türüne sahip her üye bir null işaretçi atanır.
+- Sabit bir ifade, **statik** *depolama sınıfı Belirleyicisi*ile belirtilen genel bir değişkeni başlatmak için kullanılabilir. **Statik** olarak belirtilen değişkenler program yürütmesi başladığında başlatılır. Genel **statik** bir değişkeni açıkça başlatmadıysanız, varsayılan olarak 0 olarak başlatılır ve işaretçi türü olan her üyeye null işaretçi atanır.
 
-- Değişkenleri **otomatik** veya **kaydetme** depolama sınıfı tanımlayıcısı, her zaman yürütme denetim bloğuna geçer başlatılır, bildirildikleri. Bir bildirimi başlatıcısından atlarsanız bir **otomatik** veya **kaydetme** değişken, değişkenin başlangıç değeri tanımsızdır. Otomatik ve YAZMAÇ değerlerini, başlatıcı bir sabit; olmaya kısıtlı değil Bu önceden tanımlanmış değerler, hatta işlev çağrıları içeren herhangi bir ifade olabilir.
+- **Otomatik** veya **yazmaç** depolama sınıfı belirticisiyle belirtilen değişkenler, her yürütme denetimi bildirildiği bloğa her geçtiğinde başlatılır. Bir **Otomatik** veya **yazmaç** değişkeni bildiriminden bir başlatıcı atlarsanız, değişkenin başlangıçtaki değeri tanımsızdır. Otomatik ve kayıt değerleri için, başlatıcı bir sabit olacak şekilde kısıtlanmaz; Bu, daha önce tanımlanmış değerleri, hatta işlev çağrılarını içeren herhangi bir ifade olabilir.
 
-- Dış değişken bildirimleri ve tüm ilk değerleri **statik** değişkenleri, harici veya dahili, sabit ifadeler olmalıdır. (Daha fazla bilgi için [sabit ifadeler](../c-language/c-constant-expressions.md).) Herhangi bir harici olarak bildirilen veya statik değişken adresini sabit olduğundan, bu bir dahili olarak bildirilen başlatmak için kullanılabilir **statik** işaretçi değişkeninin. Ancak, adresini bir **otomatik** değişkeni bloğun her yürütme için farklı olabileceği için statik bir başlatıcı olarak kullanılamaz. Sabit veya değişken değerleri başlatmak için kullanabileceğiniz **otomatik** ve **kaydetme** değişkenleri.
+- Dış değişken bildirimlerinin ve dış ya da iç, sabit ifadeler olması gereken tüm **statik** değişkenlerin başlangıç değerleri. (Daha fazla bilgi için bkz. [sabit ifadeler](../c-language/c-constant-expressions.md).) Herhangi bir harici olarak tanımlanmış veya statik değişkenin adresi sabit olduğundan, dahili olarak tanımlanmış bir **statik** işaretçi değişkenini başlatmak için kullanılabilir. Ancak, bir **Otomatik** değişkenin adresi bir statik başlatıcı olarak kullanılamaz, çünkü her bloğun yürütülmesi için farklı olabilir. **Otomatik** ve **kayıt** değişkenlerini başlatmak için sabit ya da değişken değerlerini kullanabilirsiniz.
 
-- Bir tanımlayıcının bildirimi blok kapsamına sahiptir ve tanımlayıcının dış bağlantısı vardır, bildirimi bir başlatma sahip olamaz.
+- Bir tanımlayıcının bildiriminde blok kapsamı varsa ve tanımlayıcının dış bağlantısı varsa, bildirimin bir başlatması olamaz.
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekler, başlatmalar gösterir:
+Aşağıdaki örneklerde başlatmalar gösterilmektedir:
 
 ```C
 int x = 10;
 ```
 
-Tamsayı değişkeni `x` sabit ifade başlatılır `10`.
+Tamsayı değişkeni `x` sabit ifade `10`olarak başlatılır.
 
 ```C
 register int *px = 0;
 ```
 
-İşaretçi `px` "null" bir işaretçi üretme 0 olarak başlatılır.
+İşaretçi `px` 0 olarak başlatılır ve bir "null" işaretçisi üretir.
 
 ```C
 const int c = (3 * 1024);
 ```
 
-Bu örnekte sabit bir ifade `(3 * 1024)` başlatmak için `c` nedeniyle değiştirilemeyen sabit bir değer **const** anahtar sözcüğü.
+Bu örnek, **const** anahtar sözcüğü `(3 * 1024)` nedeniyle değiştirilemeyen `c` sabit bir değere başlatmak için sabit bir ifade kullanır.
 
 ```C
 int *b = &x;
 ```
 
-Bu bildirimi işaretçi başlatır `b` başka bir değişken, adresini `x`.
+Bu ifade, `b` `x`işaretçiyi başka bir değişkenin adresiyle başlatır.
 
 ```C
 int *const a = &z;
 ```
 
-İşaretçi `a` adlı değişkenin adresini ile başlatılmış `z`. Ancak, beri belirtilen olacak şekilde bir **const**, değişken `a` yalnızca, hiçbir zaman değişiklik başlatılabilir. Her zaman aynı konuma işaret eder.
+İşaretçi `a` adlı `z`bir değişkenin adresiyle başlatılır. Ancak, bir **const**olarak belirtildiğinden, değişken `a` yalnızca başlatılabilir, hiçbir şekilde değiştirilmez. Her zaman aynı konuma işaret eder.
 
 ```C
 int GLOBAL ;
@@ -102,8 +102,8 @@ int function( void )
 }
 ```
 
-Genel değişken `GLOBAL` genel ömrü sahiptir dış düzeyinde bildirilir. Yerel değişken `LOCAL` sahip **otomatik** depolama sınıfı ve yalnızca bu bildirilen işlev yürütülürken bir adresine sahiptir. Bu nedenle, başlatılmaya çalışılırken **statik** işaretçi değişkeninin `lp` adresiyle `LOCAL` izin verilmez. **Statik** işaretçi değişkeninin `gp` adresine başlatılabilir `GLOBAL` bu adrese her zaman aynı olduğu için. Benzer şekilde, `*rp` çünkü başlatılabilir `rp` yerel bir değişkendir ve nonconstant başlatıcısına sahip olabilir. Blok, her girildiğinde `LOCAL` sonra atanan yeni bir adresi olan `rp`.
+Genel değişken `GLOBAL` , dış düzeyde bildirildiği için genel ömür süresi vardır. Yerel değişken `LOCAL` **Otomatik** depolama sınıfına sahiptir ve yalnızca bildirildiği işlevin yürütülmesi sırasında bir adrese sahiptir. Bu nedenle, adresi `LOCAL` ile **statik** işaretçi değişkeni `lp` başlatılmaya çalışılması buna izin verilmez. **Statik** işaretçi değişkeni `gp` , adresi her zaman aynı olduğu için adresine `GLOBAL` başlatılabilir. Benzer şekilde `*rp` , yerel bir değişken `rp` olduğu ve sabit olmayan bir başlatıcıya sahip olduğu için başlatılabilir. Bloğun her girildiği her seferinde yeni bir `LOCAL` adrese sahiptir ve bu, öğesine `rp`atanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Başlatma](../c-language/initialization.md)
+[Başlatılmasında](../c-language/initialization.md)

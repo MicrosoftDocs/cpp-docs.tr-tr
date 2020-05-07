@@ -11,9 +11,9 @@ ms.locfileid: "62232063"
 ---
 # <a name="reading-pointer-values"></a>Kayan Nokta Değerlerini Okuma
 
-**ANSI 4.9.6.2** girişi **%p** dönüştürme `fscanf` işlevi
+**ANSI 4.9.6.2 &** İşlevde% p dönüştürmesi için giriş **%p** `fscanf`
 
-Zaman **%p** biçiminde karakter belirtildiğinde, `fscanf` işlevi onaltılık ASCII değerlerini işaretçileri doğru adrese dönüştürür.
+**% P** Biçim karakteri belirtildiğinde, `fscanf` işlev, onaltılı ASCII değerlerinden işaretçileri doğru adrese dönüştürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -13,15 +13,15 @@ ms.locfileid: "62157870"
 ---
 # <a name="storage-of-string-literals"></a>Dize Değişmez Değerlerini Depolama
 
-Bir sabit dize karakterlerini sırada bitişik bellek konumlarında depolanır. Bir kaçış dizisi (gibi **\\ \\** veya  **\\"**) dize sabit değeri içinde tek bir karakter olarak sayılır. Bir null karakteri (tarafından temsil edilen **\0** kaçış dizisi) otomatik olarak eklenir ve sonuna her dize sabit değeri olarak işaretler. (Bu sistemdeki [çeviri aşaması](../preprocessor/phases-of-translation.md) 7.) Derleyici iki özdeş dizeleri iki farklı adreslerde depolayabilir değil olduğunu unutmayın. [/GF](../build/reference/gf-eliminate-duplicate-strings.md) derleyicinin yürütülebilir dosyaya aynı dizelerin tek bir kopyasını zorlar.
+Sabit bir dizenin karakterleri, ardışık bellek konumlarında sırayla saklanır. Bir dize sabit değeri içindeki bir ** \\ ** kaçış dizisi (veya ** \\"**) tek bir karakter olarak sayılır. Null bir karakter ( **\ 0** kaçış sırası tarafından temsil edilir) otomatik olarak öğesine eklenir ve her bir dize değişmez değerinin sonuna işaret eder. (Bu, [çeviri aşamasında](../preprocessor/phases-of-translation.md) 7 sırasında oluşur.) Derleyicinin iki farklı adrese sahip iki özdeş dizeyi depolayamadığını unutmayın. [/GF](../build/reference/gf-eliminate-duplicate-strings.md) , derleyicinin aynı dizelerin tek bir kopyasını yürütülebilir dosyaya yerleştirmesini zorlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Dizeleri statik depolama süresine sahip. Bkz: [depolama sınıfları](../c-language/c-storage-classes.md) depolama süresi hakkında bilgi için.
+Dizelerde statik depolama süresi var. Depolama süresi hakkında bilgi için bkz. [Depolama sınıfları](../c-language/c-storage-classes.md) .
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

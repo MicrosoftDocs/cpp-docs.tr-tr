@@ -14,9 +14,9 @@ ms.locfileid: "62234484"
 ---
 # <a name="default-date-and-time"></a>Varsayılan Tarih ve Saat
 
-**ANSI 3.8.8** tanımlarını `__DATE__` ve `__TIME__` , sırasıyla, tarih ve saat çevirisi kullanılabilir değil
+**ANSI 3.8.8** ,, Sırasıyla `__DATE__` , `__TIME__` çeviri tarihi ve saati için tanımlar
 
-İşletim sistemi, tarih ve saat çevirisi sağlamaz, varsayılan değerleri `__DATE__` ve `__TIME__` olan `May 03 1957` ve `17:00:00`.
+İşletim sistemi, çeviri tarihini ve saatini sağlamıyorsa `__DATE__` , ve için varsayılan değerleri ve `__TIME__` `May 03 1957` `17:00:00`' dir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

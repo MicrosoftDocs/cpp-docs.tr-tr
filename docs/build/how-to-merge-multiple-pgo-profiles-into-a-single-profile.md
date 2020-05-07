@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Birden çok PGO profilini tek profilde birleştirme'
+title: 'Nasıl Yapılır: Birden Çok PGO Profilini Tek Profilde Birleştirme'
 ms.date: 03/14/2018
 helpviewer_keywords:
 - merging profiles
@@ -12,30 +12,30 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62188879"
 ---
-# <a name="how-to-merge-multiple-pgo-profiles-into-a-single-profile"></a>Nasıl yapılır: Birden çok PGO profilini tek profilde birleştirme
+# <a name="how-to-merge-multiple-pgo-profiles-into-a-single-profile"></a>Nasıl Yapılır: Birden Çok PGO Profilini Tek Profilde Birleştirme
 
-Profil temelli iyileştirme (PGO), profil oluşturulan bir senaryoya göre en iyi duruma getirilmiş ikili dosyaları oluşturmak için harika bir araçtır. Ancak, birkaç önemli, henüz farklı senaryolar olan bir uygulama varsa ne olur? PGO kullanabileceğiniz tek bir profil birkaç farklı senaryolarından nasıl oluşturulur? Visual Studio'da PGO Manager [pgomgr.exe](pgomgr.md), bu işi sizin için yapar.
+Profil temelli iyileştirme (PGO), profili oluşturulmuş bir senaryoya bağlı olarak iyileştirilmiş ikililer oluşturmaya yönelik harika bir araçtır. Ancak birkaç önemli, ancak farklı senaryolar içeren bir uygulamanız varsa ne olacak? PGO 'nun birkaç farklı senaryodan kullanabileceği tek bir profil nasıl oluşturulur? Visual Studio 'da PGO Yöneticisi olan [pgomgr. exe](pgomgr.md), bu işi sizin için yapar.
 
-Profilleri birleştirme için sözdizimi aşağıdaki gibidir:
+Profillerin birleştirilmesi için sözdizimi şöyledir:
 
 `pgomgr /merge[:num] [.pgc_files] .pgd_files`
 
-Burada `num` bu birleştirme tarafından eklenen .pgc dosyaları için kullanılacak isteğe bağlı bir ağırlık. Ağırlıklar, diğerlerinden daha önemli olan bazı senaryoları başladıysanız veya birden çok kez çalıştırılacak olan senaryoları başladıysanız yaygın olarak kullanılır.
+Burada `num` , bu birleştirme tarafından eklenen. pgc dosyaları için kullanılacak isteğe bağlı bir ağırlık vardır. Ağırlıklarla daha önemli olan bazı senaryolar varsa veya birden çok kez çalıştırılacak senaryolar varsa, ağırlıklar yaygın olarak kullanılır.
 
 > [!NOTE]
-> PGO Yöneticisi eski profil verileri ile çalışmaz. .Pgc dosyası bir .pgd dosyası birleştirilecek .pgc dosyası .pgd dosyası oluşturulan aynı bağlantı çağrısı tarafından oluşturulan bir yürütülebilir dosya tarafından oluşturulmuş olması gerekir.
+> PGO Yöneticisi eski profil verileriyle çalışmaz. . Pgc dosyasını bir. pgd dosyasına birleştirmek için. pgc dosyası. pgd dosyasını oluşturan aynı bağlantı çağrısı tarafından oluşturulan bir yürütülebilir dosya tarafından oluşturulmalıdır.
 
 ## <a name="examples"></a>Örnekler
 
-Bu örnekte, PGO Manager pgcFile.pgc pgdFile.pgd için altı kat ekler:
+Bu örnekte, PGO Yöneticisi pgcFile. pgc öğesini pgdFile. pgd altı kez ekler:
 
 `pgomgr /merge:6 pgcFile.pgc pgdFile.pgd`
 
-Bu örnekte, PGO Manager pgcFile1.pgc ve pgcFile2.pgc pgdFile.pgd, iki kez için her .pgc dosyası ekler:
+Bu örnekte, PGO Yöneticisi, her. pgc dosyası için iki kez pgcFile1. pgc ve pgcFile2. pgc öğesini pgdFile. pgd öğesine ekler:
 
 `pgomgr /merge:2 pgcFile1.pgc pgcFile2.pgc pgdFile.pgd`
 
-PGO Manager herhangi .pgc dosyası bağımsız değişkenler çalıştırırsanız, ardından bir ünlem işareti (!) ve ardından bir veya daha fazla rastgele karakterler .pgd dosyası olarak aynı temel ada sahip tüm .pgc dosyaları için yerel dizini arar. Örneğin, yerel dizin dosyaları test.pgd, test!1.pgc test2.pgc ve test!hello.pgc varsa ve şu komutu ardından yerel dizinden çalıştırın **pgomgr** test!1.pgc ve test!hello.pgc test.pgd birleştirir.
+PGO Yöneticisi herhangi bir. PGC dosya bağımsız değişkeni olmadan çalışıyorsa,. pgd dosyası ile aynı temel ada sahip tüm. pgc dosyaları için yerel dizinde, ardından bir ünlem işareti (!) ve ardından bir veya daha fazla rastgele karakter arar. Örneğin, yerel dizinde test. pgd, test! 1. pgc, Test2. pgc ve test! Merhaba. pgc dosyaları varsa ve aşağıdaki komut yerel dizinden çalıştırılmışsa, **Pgomgr** testi! 1. pgc ve test! Merhaba. pgc öğesini test. pgd içine birleştirir.
 
 `pgomgr /merge test.pgd`
 

@@ -11,9 +11,9 @@ ms.locfileid: "62233105"
 ---
 # <a name="including-bracketed-filenames"></a>Köşeli Parantez İçindeki Dosya Adlarını Dahil Etme
 
-**ANSI 3.8.2** dahil edilebilecek kaynak dosyalarını bulma yöntemi
+**ANSI 3.8.2 &** Includable kaynak dosyaları bulma yöntemi
 
-Köşeli ayraçlar içine alınan dosya belirtimleri için, önişlemci ana dosyaların dizinlerinde arama yapmaz. "Üst" dosya içeren dosyadır [#include](../preprocessor/hash-include-directive-c-cpp.md) da yönergesi. Bunun yerine, derleyici komut satırında /I öğesinden sonra belirtilen dizinlerde dosyayı arayarak başlar. /I seçeneği mevcut değil veya başarısız olursa önişlemci açılı ayraç içindeki içerik dosyalarını bulmak için Include ortam değişkeni kullanır. INCLUDE ortam değişkeni, noktalı virgülle ayırarak birden fazla yol içerebilir (**;**). /I seçeneği veya INCLUDE ortam değişkeni içinde bir parçası olarak birden fazla dizin görünüyorsa önişlemci bunları göründükleri sırayla arar.
+Köşeli ayraçlar içine alınan dosya belirtimleri için, önişlemci ana dosyaların dizinlerinde arama yapmaz. Bir "üst" dosya, içinde [#include](../preprocessor/hash-include-directive-c-cpp.md) yönergesi olan dosyadır. Bunun yerine, derleyici komut satırında /I öğesinden sonra belirtilen dizinlerde dosyayı arayarak başlar. /I seçeneği yoksa veya başarısız olursa, ön işlemci, köşeli parantez içinde herhangi bir içerme dosyasını bulmak için ıNCLUDE ortam değişkenini kullanır. INCLUDE ortam değişkeni, noktalı virgülle (**;**) ayrılmış birden çok yol içerebilir. /I seçeneğinin bir parçası olarak birden fazla dizin görünürse veya ıNCLUDE ortam değişkeni içinde, Önişlemci bunları göründükleri sırada arar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

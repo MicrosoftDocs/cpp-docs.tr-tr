@@ -14,21 +14,21 @@ ms.locfileid: "62232253"
 ---
 # <a name="postfix-operators"></a>Sonek İşleçleri
 
-Sonek işleçleri ifade değerlendirmesinde (tightest bağlama) en yüksek önceliğe sahip.
+Sonek işleçleri, ifade değerlendirmesinde en yüksek önceliğe (daha sıkı test bağlaması) sahiptir.
 
 ## <a name="syntax"></a>Sözdizimi
 
 *sonek ifadesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Birincil ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **[** *ifade* **]**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **(** *bağımsız değişken ifade listesi*<sub>iyileştirilmiş</sub> **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **.**   *tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **->** *tanımlayıcısı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*birincil ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek-ifade*  **[**  *ifade*  **]**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek-ifade*  **(**  *bağımsız değişken-ifade-List*<sub>opt</sub> **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **.**  *Tanımlayıcısını*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek-ifade*  **->**  *tanımlayıcısı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **++**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **--**
 
-Bu öncelik düzeyi işleci bir dizi indisi, işlev çağrıları, yapı ve birleşim üyeleri ve sonek artırma ve azaltma işleçleri.
+Bu öncelik düzeyindeki işleçler dizi alt simgeler, işlev çağrıları, yapı ve birleşim üyeleri ve Sonek artışı ve azaltma işleçleri olur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C İşleçleri](../c-language/c-operators.md)
+[C Işleçleri](../c-language/c-operators.md)

@@ -13,20 +13,20 @@ ms.locfileid: "62158391"
 ---
 # <a name="return-statement-c"></a>return Deyimi (C)
 
-`return` Deyimi bir işlevin yürütülmesini sonlandırır ve denetim çağırma işlevine döndürür. Çağıran işlevin çağrının hemen ardından bir noktada yürütmeyi devam ettirir. A `return` ifadesi bir değer de çağırma işlevine dönebilirsiniz. Bkz: [dönüş türü](../c-language/return-type.md) daha fazla bilgi için.
+`return` İfade bir işlevin yürütülmesini sonlandırır ve çağırma işlevine denetim döndürür. Yürütme, çağrının hemen ardından gelen noktada çağırma işlevinde sürdürülür. Bir `return` ifade, çağırma işlevine de bir değer döndürebilir. Daha fazla bilgi için bkz. [dönüş türü](../c-language/return-type.md) .
 
 ## <a name="syntax"></a>Sözdizimi
 
-*atlama-deyimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**dönüş** *ifade*<sub>iyileştirilmiş</sub> **;**
+*sıçrama-deyim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Return** *ifadesi*<sub>opt</sub> **;**
 
-Değerini *ifade*, varsa, çağırma işlevine döndürülür. Varsa *ifade* olan atlanırsa, işlev dönüş değeri tanımsızdır. İfade varsa, değerlendirilir ve ardından işlev tarafından döndürülen tür dönüştürülür. İşlev dönüş türüyle bildirilmişlerse `void`, `return` içeren bir ifade deyimi, bir uyarı oluşturur ve ifade değerlendirilmez.
+Varsa *ifadesinin*değeri çağırma işlevine döndürülür. *İfade* atlanırsa, işlevin dönüş değeri tanımsızdır. Varsa ifadesi değerlendirilir ve ardından işlev tarafından döndürülen türe dönüştürülür. İşlev dönüş türü `void`ile bildirilirse, ifade içeren bir `return` deyim uyarı oluşturur ve ifade değerlendirilmez.
 
-Hayır ise `return` çağrılan işlevin son deyim yürütüldükten sonra deyimi görünen işlev tanımında denetimi otomatik olarak çağırma işlevine döndürür. Bu durumda, çağrılan işlev dönüş değeri tanımsızdır. Dönüş değeri gerekli değilse, için işlevi bildirin `void` dönüş türü; Aksi takdirde, varsayılan dönüş türü `int`.
+Bir işlev `return` tanımında hiçbir ifade görünürse, çağrılan işlevin son ifadesi yürütüldükten sonra Denetim otomatik olarak çağırma işlevine döner. Bu durumda, çağrılan işlevin dönüş değeri tanımsızdır. Dönüş değeri gerekmiyorsa, işlevi dönüş türüne sahip `void` olacak şekilde bildirin; Aksi takdirde, varsayılan dönüş türü olur `int`.
 
-Birçok Programcı parantez içine almak için kullanın. *ifade* bağımsız değişkeni `return` deyimi. Ancak, C parantezler gerektirmez.
+Birçok programcı, `return` deyiminin *ifade* bağımsız değişkenini içine almak için ayraçları kullanır. Ancak C, parantezler gerektirmez.
 
-Bu örnek gösterir `return` deyimi:
+Bu örnek, `return` ifadesini gösterir:
 
 ```C
 #include <limits.h>
@@ -59,9 +59,9 @@ void draw( int i, long long ll )
 }
 ```
 
-Bu örnekte, `main` işlevi iki işlev çağrısı: `sq` ve `draw`. `sq` İşlevi değerini döndürür `x * x` için `main`, dönüş değeri atanır burada `y`. Dönüş ifade parantezler `sq` ifadesinin bir parçası değerlendirilir ve dönüş deyimi tarafından gerekli değildir. Dönüş türüne dönüştürmeden önce dönüş ifadesi değerlendirilir beri `sq` beklenmeyen sonuçlara neden bir olası tamsayı taşma önlemek için dönüş türü ile bir atama ifadesi türü zorlar. `draw` İşlevi olarak bildirilen bir `void` işlevi. Kendi parametre değerlerini yazdırır ve ardından boş dönüş deyimi işlev sona erer ve bir değer döndürmez. Dönüş değeri atama denemesi `draw` verilmesi bir tanılama iletisi neden olur. `main` İşlevi ardından değerini döndürür `x` işletim sistemi.
+Bu örnekte, `main` işlevi iki işlevi çağırır: `sq` ve. `draw` `sq` İşlevi, dönüş değerinin atandığı `x * x` öğesine `main`değerini döndürür `y`. İçindeki `sq` dönüş ifadesinin etrafındaki parantezler, ifadenin bir parçası olarak değerlendirilir ve return deyimi için gerekli değildir. Dönüş ifadesi, dönüş türüne dönüştürülmeden önce değerlendirildiğinden, `sq` olası bir tamsayı taşmasını engellemek için ifade türünü bir tür olarak dönüş türü olarak zorlar, bu da beklenmedik sonuçlara yol açabilir. `draw` İşlev bir `void` işlev olarak bildirilmiştir. Parametrelerinin değerlerini yazdırır ve sonra boş return ifadesinin işlevi sonlanır ve bir değer döndürmez. Dönüş değerini `draw` atama girişimi bir tanılama iletisinin verilmemesine neden olur. `main` İşlev daha sonra değerini `x` işletim sistemine döndürür.
 
-Örnek çıktısı şuna benzer:
+Örneğin çıktısı şuna benzer:
 
 ```Output
 i = 2147483647, ll = 4611686014132420609

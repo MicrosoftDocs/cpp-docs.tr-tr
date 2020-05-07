@@ -19,7 +19,7 @@ ms.locfileid: "75299110"
 ---
 # <a name="one-dimensional-arrays"></a>Bir Boyutlu Diziler
 
-Köşeli ayraçlar ( **[]** ) içindeki bir sonek ifadesi, bir dizi nesnesinin bir öğesinin alt simge olarak düzenlenmiş bir gösterimidir. Bir alt simge ifadesi, şöyle ifade edildiğinde *sonek ifadesinin* ötesinde *ifade* konumları olan adresteki değeri temsil eder
+Köşeli ayraçlar (**[]**) içindeki bir sonek ifadesi, bir dizi nesnesinin bir öğesinin alt simge olarak düzenlenmiş bir gösterimidir. Bir alt simge ifadesi, şöyle ifade edildiğinde *sonek ifadesinin* ötesinde *ifade* konumları olan adresteki değeri temsil eder
 
 ```
 postfix-expression [ expression ]
@@ -36,9 +36,9 @@ int main() {
 }
 ```
 
-Alt simge ifadeleri genellikle dizi öğelerine başvurmak için kullanılır, ancak herhangi bir işaretçiye bir alt simge uygulayabilirsiniz. Değerlerin sırası ne olursa olsun, *ifade* köşeli ayraç ( **[]** ) içine alınmalıdır.
+Alt simge ifadeleri genellikle dizi öğelerine başvurmak için kullanılır, ancak herhangi bir işaretçiye bir alt simge uygulayabilirsiniz. Değerlerin sırası ne olursa olsun, *ifade* köşeli ayraç (**[]**) içine alınmalıdır.
 
-Alt simge ifadesi, tam sayı değeri işaretçi değerine eklenerek değerlendirilir ve ardından yöneltme işleci (<strong>\*</strong>) sonuca uygulanıyor. (Yöneltme işlecinin bir tartışması için bkz. [yöneltme ve adres işleçleri](../c-language/indirection-and-address-of-operators.md) .) Aslında, tek boyutlu bir dizi için aşağıdaki dört ifade eşdeğerdir, `a` bir işaretçi ve `b` bir tamsayı olduğunu varsayar:
+Alt simge ifadesi, tam sayı değeri işaretçi değerine eklenerek değerlendirilir ve ardından yöneltme işleci (<strong>\*</strong>) uygulamaya eklenir. (Yöneltme işlecinin bir tartışması için bkz. [yöneltme ve adres işleçleri](../c-language/indirection-and-address-of-operators.md) .) Aslında, tek boyutlu bir dizi için aşağıdaki dört ifade eşdeğerdir, yani `a` bir işaretçi ve `b` bir tamsayıdır.
 
 ```
 a[b]
@@ -49,16 +49,16 @@ b[a]
 
 Toplama işleci (eklenen [Işleçlere](../c-language/c-additive-operators.md)göre) için dönüştürme kurallarına göre, integral değeri, işaretçi tarafından ele alınan türün uzunluğuna göre çarpılarak bir adres denkleine dönüştürülür.
 
-Örneğin, tanımlayıcı `line` bir `int` değerleri dizisine başvurduğunu varsayalım. Aşağıdaki yordam, `line[ i ]`alt simge ifadesini değerlendirmek için kullanılır:
+Örneğin, tanımlayıcının `line` bir `int` değerler dizisine başvurduğunu varsayın. Aşağıdaki yordam, alt simge ifadesini `line[ i ]`değerlendirmek için kullanılır:
 
-1. `i` tamsayı değeri, bir `int` öğesinin uzunluğu olarak tanımlanan bayt sayısıyla çarpılır. `i` dönüştürülen değeri, `i` `int` konumlarını temsil eder.
+1. Tamsayı değeri `i` , bir `int` öğenin uzunluğu olarak tanımlanan bayt sayısıyla çarpılır. Dönüştürülmüş değeri konumları `i` temsil eder `i` `int` .
 
-1. Bu dönüştürülmüş değer, `line``int` konumlar `i` bir adres sağlamak için özgün işaretçi değerine (`line`) eklenir.
+1. `line`Bu dönüştürülen değer, konumundan `i` `int` `line`konum konumu olan bir adres sağlamak için özgün işaretçi değerine () eklenir.
 
 1. Yöneltme işleci yeni adrese uygulanır. Sonuç, bu konumdaki dizi öğesinin değeridir (ıntuicanlı, `line [ i ]`).
 
-Alt simge ifadesi `line[0]`, `line` tarafından temsil edilen adresten gelen konum 0 olduğundan, satırın ilk öğesinin değerini temsil eder. Benzer şekilde, `line[5]` gibi bir ifade, satırdaki beş konum veya dizinin altıncı öğesi olan öğe sapmasını ifade eder.
+Alt simge ifadesi `line[0]` , tarafından `line` temsil edilen adresten alınan konum 0 olduğundan, satırın ilk öğesinin değerini temsil eder. Benzer şekilde, gibi bir ifade `line[5]` , öğesi, satırdaki beş konum veya dizideki altıncı öğe olan öğe anlamına gelir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Alt Simge İşleci:](../cpp/subscript-operator.md)
+[Alt simge Işleci:](../cpp/subscript-operator.md)

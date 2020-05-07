@@ -14,7 +14,7 @@ ms.locfileid: "62233143"
 ---
 # <a name="functions-c"></a>İşlevler (C)
 
-İşlev C'deki temel modüler birimdir Bir işlev genellikle belirli bir görevi gerçekleştirmek için tasarlanmıştır ve adı genellikle bu görevi yansıtır. Bir işlev bildirimleri ve ifadeleri içerir. Bu bölümde, bildirmek, tanımlamak ve C işlevlerini açıklar. Ele alınan diğer konular şunlardır:
+İşlevi, C içindeki temel modüler birimdir. Bir işlev genellikle belirli bir görevi gerçekleştirmek için tasarlanmıştır ve adı genellikle bu görevi yansıtır. Bir işlev bildirimler ve deyimler içerir. Bu bölüm, C işlevlerinin nasıl bildirilmesini, tanımlanacağını ve çağrılacağını açıklar. Ele alınan diğer konular şunlardır:
 
 - [İşlevlere genel bakış](../c-language/overview-of-functions.md)
 
@@ -24,7 +24,7 @@ ms.locfileid: "62233143"
 
 - [Satır içi işlevler](../c-language/inline-functions.md)
 
-- [DLL dışa ve içe aktarma işlevleri](../c-language/dll-import-and-export-functions.md)
+- [DLL dışarı ve içeri aktarma işlevleri](../c-language/dll-import-and-export-functions.md)
 
 - [Naked işlevleri](../c-language/naked-functions.md)
 
@@ -38,4 +38,4 @@ ms.locfileid: "62233143"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Dil Başvurusu](../c-language/c-language-reference.md)
+[C dil başvurusu](../c-language/c-language-reference.md)

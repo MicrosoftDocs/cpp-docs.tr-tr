@@ -25,42 +25,42 @@ ms.locfileid: "62157961"
 ---
 # <a name="storage-class-specifiers-for-external-level-declarations"></a>Dış Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları
 
-Dış değişkenleri dosya kapsamında değişkenlerdir. Herhangi bir işlevin dışında tanımlanmış ve birçok işlev için potansiyel olarak kullanılabilir. İşlevler yalnızca dış düzeyinde tanımlanabilir ve bu nedenle, iç içe olamaz. Varsayılan olarak, dış değişkenlerin ve işlevlerin aynı ada sahip oldukları "dış bağlantısı." anlamına gelir aynı nesneye başvuru kastetmektedir (Kullanabilirsiniz **statik** bunu geçersiz kılmak için anahtar sözcüğü. Daha fazla ayrıntı için bu bölümün sonraki kısımlarında bilgilere bakın **statik**.)
+Dış değişkenler dosya kapsamındaki değişkenlerdir. Bunlar herhangi bir işlev dışında tanımlanır ve büyük olasılıkla birçok işlev için kullanılabilir. İşlevler yalnızca dış düzeyde tanımlanabilir ve bu nedenle iç içe geçirilemez. Varsayılan olarak, dış değişkenlere ve aynı ada sahip işlevlere yapılan tüm başvurular aynı nesneye başvurudur ve bu, "dış bağlantı" anlamına gelir. (Bunu geçersiz kılmak için **static** anahtar sözcüğünü kullanabilirsiniz. **Statik**hakkında daha fazla bilgi için bu bölümün ilerleyen kısımlarında yer alan bilgilere bakın.)
 
-Değişken bildirimlerini dış düzeyde ("bildirimleri tanımlama") değişkenlerin ya da tanımlardır veya başka bir yerde ("bildirimlere başvurma") tanımlanan değişkenleri başvuruları.
+Dış düzeydeki değişken bildirimleri değişkenlerin tanımlardır ("bildirimleri tanımlama") ya da başka bir yerde tanımlanan değişkenlere ("başvuru bildirimleri") başvurur.
 
-Ayrıca bir değişken (örtük veya açık) başlatan bir dış değişken bildirimi bir tanımlama bildirimi değişkeninin ' dir. Dış düzeyde bir tanımı çeşitli biçimlerde olabilir:
+Değişkeni de Başlatan bir dış değişken bildirimi (örtük veya açık), değişkenin tanımlama bildirimidir. Dış düzeydeki bir tanım, birkaç form alabilir:
 
-- İle bildirdiğiniz bir değişken **statik** depolama sınıfı tanımlayıcısı. Açıkça başlatabilirsiniz **statik** açıklandığı değişken bir sabit ifadeyle [başlatma](../c-language/initialization.md). Başlatıcı atlarsanız, değişken varsayılan olarak 0 olarak başlatılır. Örneğin, bu iki deyimden hem dikkate alınan değişkenin tanımlardır `k`.
+- **Statik** depolama sınıfı Belirleyicisi ile bildirdiğiniz bir değişken. [Başlatma](../c-language/initialization.md)bölümünde anlatıldığı gibi **statik** değişkeni sabit bir ifadeyle açıkça başlatabilirsiniz. Başlatıcıyı atlarsanız, değişken varsayılan olarak 0 olarak başlatılır. Örneğin, bu iki deyimin her ikisi de değişkenin `k`tanımları olarak kabul edilir.
 
     ```
     static int k = 16;
     static int k;
     ```
 
-- Dış düzeyde açıkça başlatmak bir değişken. Örneğin, `int j = 3;` bir değişken tanımı `j`.
+- Dış düzeyde açıkça başlattığınız bir değişken. Örneğin, `int j = 3;` değişkeninin `j`bir tanımıdır.
 
-Değişken bildirimlerinde dış düzeyde (diğer bir deyişle, tüm işlevler dışında), kullanabileceğiniz **statik** veya `extern` depolama sınıfı tanımlayıcısı veya depolama sınıfı tanımlayıcısı tamamen çıkarın. Kullanamazsınız **otomatik** ve **kaydetme** *depolama sınıfı tanımlayıcısı* terminaller dış düzeyde.
+Dış düzeydeki (diğer bir deyişle, tüm işlevlerin dışında) değişken bildirimlerinde, **statik** veya `extern` depolama sınıfı belirticisini kullanabilir ya da depolama sınıfı belirticisini tamamen atlayabilirsiniz. **Auto** ve **register** *Storage-Class-belirleyicisi* terminallerini dış düzeyde kullanamazsınız.
 
-Bir değişken dış düzeydeki tanımlandığında, çeviri biriminin geri kalan aşamalarında görünür. Değişken aynı kaynak dosyada, bildiriminden önce görünür değil. Başvuruda bulunan bir bildirimi görünür, aşağıda açıklandığı gibi kolaylaştırır sürece Ayrıca, bu program başka kaynak dosyalarında görünür değildir.
+Dış düzeyde bir değişken tanımlandıktan sonra, çeviri biriminin geri kalanı boyunca görünür olur. Değişken, aynı kaynak dosyasındaki bildiriminden önce görünür değil. Ayrıca, başvuruda bulunan bir bildirim, aşağıda açıklandığı gibi görünür hale belirtilmedikçe, programın diğer kaynak dosyalarında görünmez.
 
-İlgili kuralları **statik** içerir:
+**Statik** ile ilgili kurallar şunlardır:
 
-- Değişkenler tüm blokların dışında **statik** anahtar sözcüğü her zaman değerlerine program boyunca Beklet. Belirli bir çeviri, erişimi kısıtlamak için kullanmalısınız **statik** anahtar sözcüğü. Bu "İç bağlantısı." verir Bir programın tamamındaki genel hale getirmek için açık depolama sınıfı atlayın veya anahtar sözcüğünü kullanın `extern` (sonraki listesinde yer alan kurallara bakın). Bu "dış bağlantısı." verir İç ve dış bağlantı açıklanır ayrıca [bağlantı](../c-language/linkage.md).
+- **Static** anahtar sözcüğü olmadan tüm blokların dışında belirtilen değişkenler, her zaman değerlerini program boyunca tutar. Belirli bir çeviri birimine erişimleri kısıtlamak için **static** anahtar sözcüğünü kullanmanız gerekir. Bu, "iç bağlantı" sağlar. Bir programın tamamına Global hale getirmek için açık depolama sınıfını atlayın veya anahtar sözcüğünü `extern` kullanın (sonraki listede bulunan kurallara bakın). Bu, "dış bağlantı" sağlar. İç ve dış bağlantı Ayrıca [bağlantı](../c-language/linkage.md)bölümünde ele alınmıştır.
 
-- Dış düzey yalnızca bir kez bir programın, bir değişken tanımlayabilirsiniz. Aynı ada sahip başka bir değişken tanımlayabilirsiniz ve **statik** farklı bir çeviri birimindeki depolama sınıfı tanımlayıcısı. Her **statik** tanımı yalnızca kendi çeviri biriminde görünür yok çakışması ortaya çıkar. Bu, tek bir çeviri biriminin işlevleri arasında paylaşılan, ancak diğer çeviri birimleri için görünür değil olmalıdır bir tanımlayıcı adları gizlemek için kullanışlı bir yol sağlar.
+- Dış düzeyde bir değişkeni bir program içinde yalnızca bir kez tanımlayabilirsiniz. Farklı bir çeviri biriminde aynı ada ve **statik** depolama sınıfı belirticisine sahip başka bir değişken tanımlayabilirsiniz. Her **statik** tanım yalnızca kendi çeviri birimi içinde görünür olduğundan, çakışma oluşmaz. Bu, tek bir çeviri biriminin işlevleri arasında paylaşılması gereken ancak diğer çeviri birimlerine görünmeyen tanımlayıcı adlarını gizlemek için kullanışlı bir yol sağlar.
 
-- **Statik** depolama sınıfı tanımlayıcısı, işleve de uygulayabilirsiniz. Bir işlev bildirirseniz **statik**, adı bu bildirilen dosya dışında görünmez durumdadır.
+- **Statik** depolama sınıfı belirticisi işlevlerine de uygulanabilir. **Statik**bir işlev bildirirseniz, adının bildirildiği dosyanın dışında görünmez olur.
 
-Kullanmakla ilgili kuralları `extern` şunlardır:
+Kullanım `extern` kuralları şunlardır:
 
-- `extern` Depolama sınıfı tanımlayıcısı başka yerde tanımlanmış bir değişkene bir referans bildirir. Kullanabileceğiniz bir `extern` bildirimi bir tanım başka bir kaynak dosyasında görünür hale getirmek ya da aynı kaynak dosyada bir değişken tanımı önce görünür hale getirmek için. Dış düzeyde değişkeni başvuru bildirdikten sonra çeviri biriminin bildirilmiş başvuru oluştuğu geri kalanı görünür bir değişkendir.
+- Depolama `extern` sınıfı Belirleyicisi, başka bir yerde tanımlı bir değişkene başvuru bildirir. Bir `extern` bildirimi başka bir kaynak dosyasında görünür hale getirmek veya bir değişkeni aynı kaynak dosyasında tanımından önce görünür hale getirmek için kullanabilirsiniz. Dış düzeyde değişkene bir başvuru bildirdikten sonra değişken, belirtilen başvurunun gerçekleştiği çeviri biriminin geri kalanı boyunca görünür olur.
 
-- İçin bir `extern` geçerli olması için başvuru, değişkenin başvurduğu bir kez ve yalnızca bir kez dış düzeyde tanımlanmış olması gerekir. Bu tanımı (olmadan `extern` depolama sınıfı) programı olun çeviri birimleri birinde olabilir.
+- `extern` Başvurunun geçerli olması için, başvurduğu değişkenin bir kez ve yalnızca bir kez tanımlanması gerekir ve dış düzeyde. Bu tanım ( `extern` depolama sınıfı olmadan) programı oluşturan herhangi bir çeviri biriminde olabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, dış bildirimler gösterilmektedir:
+Aşağıdaki örnekte dış bildirimler gösterilmektedir:
 
 ```
 /******************************************************************
@@ -101,19 +101,19 @@ void other( void )
 }
 ```
 
-Bu örnekte iki kaynak dosyalarını içeren üç dış bildirimlerini toplam `i`. Bir bildirimi yalnızca bir "tanımlama bildirimi." Bu bildirimi
+Bu örnekteki iki kaynak dosyasında toplam üç dış bildirim bulunur `i`. Yalnızca bir bildirim "tanımlama bildirimi" dir. Bu bildirim,
 
 ```
 int i = 3;
 ```
 
-Genel değişken tanımlar `i` ve başlangıç değeri 3 ile başlatır. "Başvuru" bildirimi `i` dosyası birinci kaynak kullanmanın üst `extern` genel değişkeni dosyasında tanımlama bildiriminden önce görünür hale getirir. Başvuruda bulunan beyanı `i` ikinci kaynak dosyası da değişkeni görünür, kaynak dosyada yapar. Bir değişken tanımlayan bir örneğin bir çeviri birimindeki sağlanmazsa, derleyici, olduğunu varsayar bir
+genel değişkeni `i` tanımlar ve ilk değeri 3 ile başlatır. Kullanılarak `extern` ilk kaynak dosyanın en üstünde `i` "başvuru" bildirimi, genel değişkeni dosyadaki tanımlama bildiriminden önce görünür hale getirir. İkinci kaynak dosyada başvuru `i` bildirimi aynı zamanda değişkeni bu kaynak dosyasında görünür hale getirir. Çeviri biriminde bir değişken için tanımlama örneği sağlanmazsa, derleyici bir
 
 ```
 extern int x;
 ```
 
-bildirim ve bir tanımlama başvuru başvurma
+Bildirime başvurma ve başvuru tanımlama
 
 ```
 int x = 0;
@@ -121,9 +121,9 @@ int x = 0;
 
 programın başka bir çeviri biriminde görünür.
 
-Üç işlev `main`, `next`, ve `other`, aynı görevi gerçekleştirmenin: Bunlar artırmak `i` ve yazdırabilirsiniz. 4, 5 ve 6 değerlerini yazdırılır.
+, `main`, Ve `next` `other`olmak üzere üç işlevi de aynı görevi gerçekleştirir: bunları artırıp `i` yazdırırlar. 4, 5 ve 6 değerleri yazdırılır.
 
-Değişken `i` değil olsaydı başlatılır, 0'a otomatik olarak ayarlanacak. Bu durumda, değerler 1, 2 ve 3 yazdırılmış. Bkz: [başlatma](../c-language/initialization.md) değişken başlatma hakkında bilgi için.
+Değişken `i` başlatılmamış ise, otomatik olarak 0 olarak ayarlanmıştır. Bu durumda, 1, 2 ve 3 değerleri yazdırılmıştır. Değişken başlatma hakkında bilgi için bkz. [başlatma](../c-language/initialization.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

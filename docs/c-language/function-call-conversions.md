@@ -17,9 +17,9 @@ ms.locfileid: "62233231"
 
 Bir işlev çağrısındaki bağımsız değişkenlerde gerçekleştirilen dönüştürme işleminin türü, çağrılan işlev için bildirilen bağımsız değişken türlerine sahip bir işlev prototipinin (ileri dönük bildirim) olup olmamasına bağlıdır.
 
-Bir işlev prototipi varsa ve bildirilen bağımsız değişken türlerini içeriyorsa, derleyici tür denetimi gerçekleştirir (bkz [işlevleri](../c-language/functions-c.md)).
+Bir işlev prototipi varsa ve belirtilen bağımsız değişken türlerini içeriyorsa, derleyici tür denetimini gerçekleştirir (bkz. [işlevler](../c-language/functions-c.md)).
 
-İşlev prototipi yoksa, işlev çağrısındaki bağımsız değişkenlerde yalnızca olağan aritmetik dönüştürmeler gerçekleştirilir. Bu dönüştürmeler, çağrıdaki her bağımsız değişkende bağımsız olarak gerçekleştirilir. Diğer bir deyişle bir **float** değerinin bir **çift**; `char` veya **kısa** değerinin bir `int`; ve bir `unsigned char` veya **işaretsiz** dönüştürülür bir `unsigned int`.
+İşlev prototipi yoksa, işlev çağrısındaki bağımsız değişkenlerde yalnızca olağan aritmetik dönüştürmeler gerçekleştirilir. Bu dönüştürmeler, çağrıdaki her bağımsız değişkende bağımsız olarak gerçekleştirilir. Bu, bir **float** değerinin **Double**değerine dönüştürüldüğü anlamına gelir; a `char` veya **Short** değeri öğesine dönüştürülür `int`; ve `unsigned char` ya da **işaretsiz bir Short** öğesine dönüştürülür `unsigned int`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

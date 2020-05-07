@@ -13,7 +13,7 @@ ms.locfileid: "62234351"
 ---
 # <a name="deleting-open-files"></a>Açık Dosyaları Silme
 
-**ANSI 4.9.4.1** açık bir dosyada kaldırma işlevinin etkisi
+**ANSI 4.9.4.1** Açık bir dosyadaki Remove işlevinin etkisi
 
 Kaldırma işlevi bir dosyayı siler. Dosya açıksa, bu işlev başarısız olur ve -1 değerini döndürür.
 

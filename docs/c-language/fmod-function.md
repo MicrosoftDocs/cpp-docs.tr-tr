@@ -13,9 +13,9 @@ ms.locfileid: "62233577"
 ---
 # <a name="fmod-function"></a>fmod İşlevi
 
-**ANSI 4.5.6.4** bir etki alanı hatası oluşur veya sıfır döndürülen `fmod` sahip ikinci bir bağımsız değişkeni sıfır işlevi
+**ANSI 4.5.6.4** `fmod` İşlevin ikinci bir bağımsız değişkeni olduğunda bir etki alanı hatası oluşup oluşmadığını veya sıfır döndürülüp döndürülmeyeceğini belirtir
 
-Zaman `fmod` işleve sahip bir ikinci bağımsız değişkeni sıfır, sıfır döndürür.
+`fmod` İşlevin ikinci bir bağımsız değişkeni olduğunda işlev sıfır döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

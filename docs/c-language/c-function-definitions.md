@@ -26,60 +26,60 @@ ms.locfileid: "74857144"
 ## <a name="syntax"></a>Sözdizimi
 
 *çeviri birimi*:<br/>
-&nbsp;&nbsp;&nbsp;*dış bildirimi* &nbsp; <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*çeviri-birim* *dış bildirimi*
+&nbsp;&nbsp;&nbsp;&nbsp;*Dış bildirim* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*çeviri birimi* *dış bildirimi*
 
-*Dış bildirim*:/\* yalnızca dış (dosya) kapsam \*izin verildi /<br/>
+*Dış bildirim*:/\* yalnızca dış (dosya) kapsamında izin verilir\*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işlev tanımı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi*
+&nbsp;&nbsp;&nbsp;&nbsp;*bağımsız*
 
 *işlev tanımı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-belirticileri*<sub>opt</sub> *özniteliği-seq*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *Bileþik-deyimin*
+&nbsp;&nbsp;&nbsp;&nbsp;*Bildirim-belirticileri*<sub>opt</sub> *özniteliği-seq*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *bileşik-deyimin*
 
-/\* *özniteliği-seq* , Microsoft 'a özgü \*/
+/\**öznitelik-Seq* , Microsoft 'a özgüdür\*/
 
 Prototip parametreleri şunlardır:
 
 *bildirim-tanımlayıcılar*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı Belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub>
 
 *bildirim-liste*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-List* *bildirimi*
+&nbsp;&nbsp;&nbsp;&nbsp;*bağımsız*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-liste* *bildirimi*
 
 *bildirimci*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
 
-*Direct-bildirimci*:/\* bir işlev bildirimci \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre türü listesi* **)**  / \* yeni stil bildirimci \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**  / \* Kullanımdan kalktı stili bildirimci \*/
+*Direct-bildirimci*:/\* bir işlev bildirimci\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci***(***parametre türü-liste***)**  / \* yeni stil bildirimci      \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci***(***tanımlayıcı listesi*<sub>opt</sub> **)**  / \* eski stil bildirimci    \*/
 
 Bir tanımdaki parametre listesi bu söz dizimini kullanır:
 
-*parametre-tür-listesi*:/\* parametre listesi \*/<br/>
+*parametre-tür-listesi*:/\* parametre listesi\*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*parametre-listesi* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre-listesi* **,...**
+&nbsp;&nbsp;&nbsp;&nbsp;*parametre-liste* **,...**
 
 *parametre-liste*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*parametre bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* **,** *parametre bildirimi*
+&nbsp;&nbsp;&nbsp;&nbsp;*parametre-listesi* **,**  *parametre bildirimi*
 
 *parametre bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-tanımlayıcılar* *bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-tanımlayıcılar* *abstract-declarator*<sub>opt</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *bildirimci*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-tanımlayıcılar* *abstract-bildirimci*<sub>opt</sub>
 
 Eski stil işlev tanımındaki parametre listesi bu söz dizimini kullanır:
 
-*tanımlayıcı listesi*:/\* eski stil işlev tanımlarında ve bildirimlerde kullanılan \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı listesi* **,** *tanımlayıcısı*
+*tanımlayıcı-liste*: eski\* stil işlev tanımlarında ve bildirimlerinde kullanılır\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı listesi* **,**  *tanımlayıcı*
 
 İşlev gövdesi için sözdizimi şöyledir:
 
 *bileşik ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **{** *declaration-List*<sub>opt</sub> *bildirimini-List*<sub>opt</sub> **}**
+&nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-List*<sub>opt</sub> *bildirimini-List*<sub>opt</sub> **}**
 
 Bir işlev bildirimini değiştirebilen tek depolama sınıfı belirticileri **extern** ve **statiktir**. **Extern** Belirleyicisi, işleve diğer dosyalardan başvurulduğunu belirtir; diğer bir deyişle, işlev adı bağlayıcıya aktarılmalıdır. **Statik** belirtici, işleve diğer dosyalardan başvurulmadığını belirtir; diğer bir deyişle, ad bağlayıcı tarafından aktarılmaz. Bir işlev tanımında hiçbir depolama sınıfı görünürse, **extern** varsayılır. Herhangi bir durumda, işlev her zaman tanım noktasından dosyanın sonuna kadar görünür olur.
 

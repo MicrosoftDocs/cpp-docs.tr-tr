@@ -53,7 +53,7 @@ Yereller için varsayılan düzen hizalaması:
 
 | Bayt cinsinden boyut | Bayt cinsinden hizalama |
 | - | - |
-| 1\. | 1\. |
+| 1 | 1 |
 | 2 | 2 |
 | 3, 4 | 4 |
 | > 4 | 8 |
@@ -62,16 +62,16 @@ Genel ve statikler için varsayılan düzen hizalaması:
 
 | Bayt cinsinden boyut | Bayt cinsinden hizalama |
 | - | - |
-| 1\. | 1\. |
+| 1 | 1 |
 | 2 - 7 | 4 |
 | 8 - 63 | 8 |
-| > = 64 | 16 |
+| >= 64 | 16 |
 
 ## <a name="integer-registers"></a>Tamsayı Yazmaçları
 
 AArch64 mimarisi 32 tamsayı yazmaçlarını destekler:
 
-| Kaydet | Katılımcıdan? | Rol |
+| Kaydettir | Katılımcıdan? | Rol |
 | - | - | - |
 | x0 | Katılımcıdan | Parametre/karalama kayıt 1, sonuç kaydı |
 | x1-x7 | Katılımcıdan | Parametre/karalama kaydı 2-8 |
@@ -94,7 +94,7 @@ AArch32 aksine, program sayacı (PC) ve yığın işaretçisi (SP), dizinli Yazm
 
 AArch64 mimarisi, aşağıda özetlenen 32 kayan nokta/SıMD kayıtlarını da destekler:
 
-| Kaydet | Katılımcıdan? | Rol |
+| Kaydettir | Katılımcıdan? | Rol |
 | - | - | - |
 | v0 | Katılımcıdan | Parametre/karalama kayıt 1, sonuç kaydı |
 | V1-v7 | Katılımcıdan | Parametre/karalama Yazmaçları 2-8 |
@@ -108,7 +108,7 @@ Kayan nokta denetim kaydı (fpcr), içindeki çeşitli bit alanları üzerinde b
 | Bits | Anlamı | Katılımcıdan? | Rol |
 | - | - | - | - |
 | 26 | AHP | Geçici olmayan | Alternatif yarı duyarlık denetimi. |
-| 25 | DN | Geçici olmayan | Varsayılan NaN modu denetimi. |
+| 25 | DEĞERI | Geçici olmayan | Varsayılan NaN modu denetimi. |
 | 24 | FZ | Geçici olmayan | Sıfır moddan sıfıra denetim. |
 | 23-22 | RMode | Geçici olmayan | Yuvarlama modu denetimi. |
 | 15, 12-8 | IDE/ıXE/etc | Geçici olmayan | Özel durum yakalama bitlerini etkinleştir, her zaman 0 olmalıdır. |
@@ -117,9 +117,9 @@ Kayan nokta denetim kaydı (fpcr), içindeki çeşitli bit alanları üzerinde b
 
 AArch32 gibi, AArch64 belirtimi, sistem tarafından denetlenen üç "iş parçacığı KIMLIĞI" kaydı sağlar:
 
-| Kaydet | Rol |
+| Kaydettir | Rol |
 | - | - |
-| TPIDR_EL0 | Ayrılamadı. |
+| TPIDR_EL0 | Ayrılmış. |
 | TPIDRRO_EL0 | Geçerli işlemcinin CPU numarasını içerir. |
 | TPIDR_EL1 | Geçerli işlemci için KPCR yapısına işaret eder. |
 
@@ -145,7 +145,7 @@ Bu aşama, bağımsız değişkenlerin işlenmesi başlamadan önce tam olarak b
 
 Listedeki her bağımsız değişken için, aşağıdaki listeden ilk eşleştirme kuralı uygulanır. Hiçbir kural eşleşmez, bağımsız değişken değiştirilmemiş olarak kullanılır.
 
-1. Bağımsız değişken türü, boyutu hem çağıran hem de aranan tarafından statik olarak belirlenemediği bir bileşik tür ise, bağımsız değişken belleğe kopyalanır ve bağımsız değişken kopyaya bir işaretçi ile değiştirilmiştir. (C/C++ içinde böyle bir tür yoktur, ancak bunlar diğer dillerde veya dil uzantılarında bulunur).
+1. Bağımsız değişken türü, boyutu hem çağıran hem de aranan tarafından statik olarak belirlenemediği bir bileşik tür ise, bağımsız değişken belleğe kopyalanır ve bağımsız değişken kopyaya bir işaretçi ile değiştirilmiştir. (C/C++ içinde böyle bir tür yoktur, ancak diğer dillerde veya dil uzantılarında mevcuttur).
 
 1. Bağımsız değişken türü bir HFA veya bir HVA ise, bağımsız değişken değiştirilmemiş olarak kullanılır.
 
@@ -157,7 +157,7 @@ Listedeki her bağımsız değişken için, aşağıdaki listeden ilk eşleştir
 
 Listedeki her bağımsız değişken için, bağımsız değişken ayrılana kadar aşağıdaki kurallar sırayla uygulanır. Bir kaydına bir bağımsız değişken atandığında, kayıttaki kullanılmayan bitlerin değeri belirtilmemiş olur. Bir bağımsız değişken bir yığın yuvasına atanırsa, kullanılmamış doldurma baytlarının değeri belirtilmemiş olur.
 
-1. Bağımsız değişken bir yarı, tek, çift veya dört duyarlıklı kayan nokta veya kısa vektör türüdür ve NSRN 8 ' den küçükse, bağımsız değişken, YAZMAÇ v\[NSRN] en az önemli bitlerini tahsis edilir. NSRN, bir artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken bir yarı, tek, çift veya dört duyarlıklı kayan noktalı veya kısa bir vektör türüdür ve NSRN 8 ' den küçükse, bağımsız değişken en az önemli bit kayıt v\[nsrn] ' a ayrılır. NSRN, bir artırılır. Bağımsız değişken artık ayrıldı.
 
 1. Bağımsız değişken bir HFA veya bir HVA ise ve yeterli ayrılmamış SıMD ve kayan nokta Yazmaçları varsa (NSRN + üye sayısı ≤ 8), bağımsız değişken, HFA veya HVA üyesi başına tek bir kayıt olmak üzere SıMD ve kayan nokta Yazmaçları için ayrılır. NSRN, kullanılan kayıt sayısı kadar artırılır. Bağımsız değişken artık ayrıldı.
 
@@ -169,13 +169,13 @@ Listedeki her bağımsız değişken için, bağımsız değişken ayrılana kad
 
 1. Bağımsız değişken bir HFA, bir HVA, bir yarı, tek, çift veya dört duyarlıklı kayan noktalı veya kısa vektör türünde ise, bağımsız değişken ayarlanmış NSAA 'da belleğe kopyalanır. NSAA, bağımsız değişkenin boyutuyla artırılır. Bağımsız değişken artık ayrıldı.
 
-1. Bağımsız değişken bir Integral veya Işaretçi türü ise, bağımsız değişkenin boyutu 8 bayttan küçük veya buna eşit ve NGRN 8 ' den küçükse, bağımsız değişken x\[NGRN] içindeki en az önemli olan bit sayısına kopyalanır. NGRN, bir artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken bir Integral veya Işaretçi türü ise, bağımsız değişkenin boyutu 8 bayttan küçük veya buna eşit ve NGRN 8 ' den küçükse, bağımsız değişken x\[ngrn] içindeki en az önemli bit olarak kopyalanır. NGRN, bir artırılır. Bağımsız değişken artık ayrıldı.
 
 1. Bağımsız değişkenin 16 hizalaması varsa, NGRN bir sonraki çift sayıya yuvarlanır.
 
-1. Bağımsız değişken bir Integral türüdür, bağımsız değişkenin boyutu 16 ' dır ve NGRN 7 ' den küçükse, bağımsız değişken x\[NGRN] ve x\[NGRN + 1] ' e kopyalanır. x\[NGRN], bağımsız değişkenin bellek gösteriminin daha düşük olan bir çift kelimesine sahip olacaktır. NGRN iki ile artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken bir Integral türüdür, bağımsız değişkenin boyutu 16 ' dır ve NGRN 7 ' den küçükse, bağımsız değişken x\[ngrn] ve x\[ngrn + 1] ' e kopyalanır. x\[ngrn], bağımsız değişkenin bellek gösteriminin daha düşük olan bir çift sözcüğünü içermelidir. NGRN iki ile artırılır. Bağımsız değişken artık ayrıldı.
 
-1. Bağımsız değişken bir bileşik türdür ve bağımsız değişkenin çift sözcüklerdeki boyutu 8 eksi NGRN 'den fazla değilse, bağımsız değişken x\[NGRN] ile başlayarak ardışık genel amaçlı kayıtlara kopyalanır. Bağımsız değişken, bellekten ardışık kayıtları yükleyen uygun bir LDR yönergeleri dizisiyle birlikte çift sözcüklü hizalanmış bir adresten kayıtlara yüklenmiş gibi geçirilir. Yazmaçların kullanılmayan bölümlerinin içerikleri bu standart tarafından belirlenmeyen bir tür. NGRN, kullanılan kayıt sayısına göre artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken bir bileşik tür ise ve bağımsız değişkenin çift sözcüklerdeki boyutu 8 eksi NGRN 'den fazla değilse, bağımsız değişken x\[ngrn] ile başlayarak ardışık genel amaçlı kayıtlara kopyalanır. Bağımsız değişken, bellekten ardışık kayıtları yükleyen uygun bir LDR yönergeleri dizisiyle birlikte çift sözcüklü hizalanmış bir adresten kayıtlara yüklenmiş gibi geçirilir. Yazmaçların kullanılmayan bölümlerinin içerikleri bu standart tarafından belirlenmeyen bir tür. NGRN, kullanılan kayıt sayısına göre artırılır. Bağımsız değişken artık ayrıldı.
 
 1. NGRN, 8 olarak ayarlanır.
 
@@ -221,11 +221,11 @@ Diğer tüm türler bu kuralı kullanır:
 
 - Çağıran, sonucu tutmak için yeterli boyutta ve hizalamadaki bir bellek bloğu ayıracaktır. Bellek bloğunun adresi, x0 içindeki işleve ek bir bağımsız değişken olarak geçirilir veya x0 içinde $this geçirilirse x1. Çağrılan, alt yordamın yürütülmesi sırasında herhangi bir noktada sonuç bellek bloğunu değiştirebilir. Çağrılan, x0 içindeki bellek bloğunun adresini döndürür.
 
-## <a name="stack"></a>Toplu İş
+## <a name="stack"></a>Yığın
 
 ARM tarafından ABı 'in sonunda, yığın her zaman 16 baytlık hizalı olmalıdır. AArch64, SP 16 bayt hizalı olduğunda ve SP göreli yük veya mağaza yapıldığında yığın hizalama hataları üreten bir donanım özelliği içerir. Windows, bu özellik her zaman etkin olarak çalışır.
 
-En fazla 4k veya daha fazla yığın ayıran işlevler, son sayfadan önceki her sayfanın sırayla dokunulmamasını sağlamalıdır. Bu eylem, hiçbir kodun Windows 'un yığını genişletmek için kullandığı koruma sayfalarını "artık üzerinde" olmamasını sağlar. Genellikle, X15 içinde 16 ile bölünen toplam yığın ayırmayı geçiren özel bir çağrı kuralına sahip `__chkstk` Yardımcısı tarafından yapılır.
+En fazla 4k veya daha fazla yığın ayıran işlevler, son sayfadan önceki her sayfanın sırayla dokunulmamasını sağlamalıdır. Bu eylem, hiçbir kodun Windows 'un yığını genişletmek için kullandığı koruma sayfalarını "artık üzerinde" olmamasını sağlar. Genellikle dokunma, X15 içinde 16 ile `__chkstk` bölünen toplam yığın ayırmayı geçiren özel bir çağırma kuralına sahip olan yardımcı tarafından yapılır.
 
 ## <a name="red-zone"></a>Kırmızı bölge
 
@@ -245,13 +245,13 @@ Windows içindeki kod, hızlı yığın yürümesini etkinleştirmek için çer�
 
 ARM EABI, geriye doğru izleme kodları kullanan bir özel durum izleme modeli de belirtir. Ancak, sunulan belirtim Windows 'da geri sarma için yetersiz, bu da BILGISAYARıN bir işlev prolog veya epıg 'nin ortasında olduğu durumları ele almalıdır.
 
-Dinamik olarak oluşturulan kod, `RtlAddFunctionTable` ve ilişkili işlevler aracılığıyla dinamik işlev tabloları ile açıklanmalıdır, böylece oluşturulan kodun özel durum işleme katılmasını sağlayabilirsiniz.
+Dinamik olarak oluşturulan kod, ve ilişkili işlevler aracılığıyla `RtlAddFunctionTable` dinamik işlev tabloları ile açıklanmalıdır, böylece oluşturulan kodun özel durum işleme katılmasını sağlayabilirsiniz.
 
 ## <a name="cycle-counter"></a>Bisiklet sayacı
 
-Tüm ARMv8 CPU 'Ları, Windows 'un Kullanıcı modu da dahil olmak üzere herhangi bir özel durum düzeyinde okunabilir olması için Windows 'un yapılandırdığı 64 bitlik bir kayıt olan bir bisiklet sayacı kaydını desteklemesi için gereklidir. Derleme kodundaki MSR Opcode veya C/C++ code içinde `_ReadStatusReg` iç kullanılarak özel PMCCNTR_EL0 kaydı aracılığıyla erişilebilir.
+Tüm ARMv8 CPU 'Ları, Windows 'un Kullanıcı modu da dahil olmak üzere herhangi bir özel durum düzeyinde okunabilir olması için Windows 'un yapılandırdığı 64 bitlik bir kayıt olan bir bisiklet sayacı kaydını desteklemesi için gereklidir. Derleme kodundaki MSR Opcode veya C/C++ kodunda `_ReadStatusReg` iç öğe kullanılarak özel PMCCNTR_EL0 kaydı aracılığıyla erişilebilir.
 
-Buradaki Cycle sayacı, bir duvar saati değil, doğru bir geçiş sayacıdır. Sayım sıklığı işlemci sıklığıyla farklılık gösterecektir. Zaman aralığı sayacının sıklığını bilmeniz gerektiğini düşünüyorsanız, zaman aralığı sayacını kullanmamanız gerekir. Bunun yerine, `QueryPerformanceCounter`kullanmanız gereken duvar saati zamanını ölçmek istiyorsunuz.
+Buradaki Cycle sayacı, bir duvar saati değil, doğru bir geçiş sayacıdır. Sayım sıklığı işlemci sıklığıyla farklılık gösterecektir. Zaman aralığı sayacının sıklığını bilmeniz gerektiğini düşünüyorsanız, zaman aralığı sayacını kullanmamanız gerekir. Bunun yerine, kullanmanız `QueryPerformanceCounter`gereken duvar saati saatini ölçmek istiyorsunuz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

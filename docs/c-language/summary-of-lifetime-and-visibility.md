@@ -20,12 +20,12 @@ Aşağıdaki tabloda çoğu tanımlayıcı için ömür ve görünürlük özell
 
 |Öznitelikler:<br /><br /> Düzey|Öğe|Depolama sınıfı<br /><br /> Belirleyici|Sonuç:<br /><br /> Ömür|Görünürlük|
 |---------------------------|----------|----------------------------------|--------------------------|----------------|
-|Dosya kapsamı|Değişken tanımı|**static**|Global|Kaynak dosyanın gerçekleştiği geri kalanı|
-||Değişken bildirimi|**extern**|Global|Kaynak dosyanın gerçekleştiği geri kalanı|
-||İşlev prototipi veya tanımı|**static**|Global|Tek kaynak dosyası|
-||İşlev prototipi|**extern**|Global|Kaynak dosyanın kalanı|
-|Blok kapsamı|Değişken bildirimi|**extern**|Global|Blok|
-||Değişken tanımı|**static**|Global|Blok|
+|Dosya kapsamı|Değişken tanımı|**static**|Genel|Kaynak dosyanın gerçekleştiği geri kalanı|
+||Değişken bildirimi|**extern**|Genel|Kaynak dosyanın gerçekleştiği geri kalanı|
+||İşlev prototipi veya tanımı|**static**|Genel|Tek kaynak dosyası|
+||İşlev prototipi|**extern**|Genel|Kaynak dosyanın kalanı|
+|Blok kapsamı|Değişken bildirimi|**extern**|Genel|Blok|
+||Değişken tanımı|**static**|Genel|Blok|
 ||Değişken tanımı|**Otomatik** veya **kaydolun**|Yerel|Blok|
 
 ## <a name="example"></a>Örnek

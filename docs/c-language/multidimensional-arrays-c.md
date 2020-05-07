@@ -21,7 +21,7 @@ Bir alt simge ifadesinde de aşağıdaki gibi birden fazla alt simge olabilir:
 expression1 [ expression2 ] [ expression3 ] ...
 ```
 
-Alt simge ifadeleri soldan sağa ilişkilendirilir. En soldaki indis ifadesi, *İfade1* **[** *İfade2* **]** , önce değerlendirilir. *İfade1* ve *Deyim2* ekleme işleminden elde edilen adres bir işaretçi ifadesi; ardından, yeni bir işaretçi ifadesi oluşturmak için bu işaretçi ifadesine *expression3* eklenir ve son alt simge ifadesi eklenene kadar bu şekilde devam eder. Son simge değeri bir<strong>\*</strong>dizi türüne (aşağıdaki örneklere bakın) bağlanmamışsa, yöneltme işleci () son alt indislenmiş ifadeden sonra uygulanır.
+Alt simge ifadeleri soldan sağa ilişkilendirilir. En soldaki indis ifadesi, *İfade1* **[** *İfade2* **]**, önce değerlendirilir. *İfade1* ve *Deyim2* ekleme işleminden elde edilen adres bir işaretçi ifadesi; ardından, yeni bir işaretçi ifadesi oluşturmak için bu işaretçi ifadesine *expression3* eklenir ve son alt simge ifadesi eklenene kadar bu şekilde devam eder. Son simge değeri bir<strong>\*</strong>dizi türüne (aşağıdaki örneklere bakın) bağlanmamışsa, yöneltme işleci () son alt indislenmiş ifadeden sonra uygulanır.
 
 Birden çok alt simgeye sahip ifadeler, "çok boyutlu dizilerin" öğelerine başvurur. Çok boyutlu bir dizi, öğeleri dizi olan bir dizidir. Örneğin, üç boyutlu bir dizinin ilk öğesi iki boyutlu bir dizidir.
 
@@ -70,4 +70,4 @@ Benzer şekilde, ikinci `prop[2]` deyimindeki `ipp = prop[2];` ifadesinin sonucu
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Alt Simge İşleci:](../cpp/subscript-operator.md)
+[Alt simge Işleci:](../cpp/subscript-operator.md)

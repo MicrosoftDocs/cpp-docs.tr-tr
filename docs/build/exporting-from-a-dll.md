@@ -19,35 +19,35 @@ ms.locfileid: "62196748"
 ---
 # <a name="exporting-from-a-dll"></a>DLL'den Dışarı Aktarma
 
-Bir DLL dosyası önemli bir fark dışında bir .exe dosyası çok benzer bir düzeni vardır — bir dışarı aktarma tablosu bir DLL dosyası içerir. Dışarı aktarma tablosu diğer yürütülebilir dosyalar için DLL dışarı aktarmaları her işlevin adını içerir. Bu işlevler, DLL içine için giriş noktalarıdır; işlevleri dışarı aktarma tablosuna yalnızca diğer yürütülebilir dosyaları tarafından erişilebilir. DLL'ye DLL'deki diğer işlevleri özeldir. Kullanarak DLL'den dışarı aktarma tablosu görüntülenebilir [DUMPBIN ](reference/dumpbin-reference.md) /EXPORTS seçeneğiyle aracı.
+Bir DLL dosyası bir. exe dosyasına benzer bir şekilde, önemli bir farklılık içeren bir düzen içerir. bir DLL dosyası dışarı aktarmalar tablosu içerir. Dışarı aktarmalar tablosu, DLL 'nin diğer yürütülebilir dosyalara aktardığı her işlevin adını içerir. Bu işlevler DLL 'deki giriş noktalarıdır; diğer yürütülebilir dosyalar yalnızca dışarı aktarmalar tablosundaki işlevlere erişebilir. DLL 'deki diğer işlevler DLL 'ye özeldir. DLL 'nin dışarı aktarmalar tablosu, [dumpbin](reference/dumpbin-reference.md) Aracı kullanılarak/dışarı aktarmalar seçeneğiyle görüntülenebilir.
 
-İki yöntemi kullanarak DLL'den işlevleri dışarı aktarabilirsiniz:
+İki yöntemi kullanarak bir DLL 'den işlevleri dışa aktarabilirsiniz:
 
-- Modül tanım (.def) dosyası oluşturun ve DLL'yi oluştururken .def dosyasını kullanın. İsterseniz, bu yaklaşımı kullanın [tarafından ad yerine sıraya işlevlerini kullanarak DLL'den dışa aktarma](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
+- DLL oluştururken bir modül tanımı (. def) dosyası oluşturun ve. def dosyasını kullanın. [DLL 'inizdeki işlevleri ad yerine sıraya göre dışarı aktarmak](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md)istiyorsanız bu yaklaşımı kullanın.
 
-- Anahtar sözcüğünü kullanın **__declspec(dllexport)** işlevin tanımı.
+- İşlevin tanımında **__declspec (dllexport)** anahtar sözcüğünü kullanın.
 
-İki yöntemden biriyle işlevleri dışa aktarırken kullandığınızdan emin olun [__stdcall](../cpp/stdcall.md) çağırma kuralı.
+İki yöntemden birini kullanarak işlevleri dışarı aktarırken [__stdcall](../cpp/stdcall.md) çağırma kuralını kullandığınızdan emin olun.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [.Def dosyalarını kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-def-files.md)
+- [. Def dosyalarını kullanarak DLL 'den dışarı aktarma](exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
+- [__Declspec (dllexport) kullanarak DLL 'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS kullanarak dışarı ve içeri aktarma](exporting-and-importing-using-afx-ext-class.md)
 
-- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C Dili Çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C veya C++ Dili Çalıştırılabilirlerinde kullanmak için C işlevlerini dışarı aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [İşlevler tarafından ad yerine sıraya DLL'den dışarı aktarma](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md)
+- [DLL 'den işlevleri ad yerine sıraya göre dışarı aktarma](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md)
 
-- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
+- [Hangi dışarı aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
 - [Bir yürütülebilir dosyayı DLL’ye bağlama](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 
-- [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
+- [DLL 'yi başlatma](run-time-library-behavior.md#initializing-a-dll)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 

@@ -16,17 +16,17 @@ ms.locfileid: "62234424"
 ---
 # <a name="defining-inline-c-functions-with-dllexport-and-dllimport"></a>dllexport ve dllimport ile Satır İçin C İşlevlerini Tanımlama
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 `dllexport` özniteliğiyle bir işlevi satır içi olarak tanımlayabilirsiniz. Bu durumda, programdaki herhangi bir modülün işleve başvurup başvurmadığına bakılmaksızın işlevin her zaman örneği oluşturulur ve işlev dışarı aktarılır. İşlevin, başka bir program tarafından içeri aktarıldığı varsayılır.
 
-Bildirilen bir işlevi de satır içi olarak tanımlayabilirsiniz **dllimport** özniteliği. Bu durumda, işlev Genişletilebilir (/Ob (satır içi) derleyici seçeneği belirtimi tabidir) ancak hiçbir zaman örneği. Özellikle, satır içi içeri aktarılan bir işlevin adresi alınırsa, DLL'de yer alan işlevin adresi döndürülür. Bu davranış, satır içi olmayan içeri aktarılmış bir işlevin adresini almakla aynıdır.
+Ayrıca, **dllimport** özniteliğiyle belirtilen bir işlevi satır içi olarak tanımlayabilirsiniz. Bu durumda, işlev genişletilebilir (/OB (satır içi) derleyici seçenek belirtimine tabidir), ancak hiçbir şekilde örneklenemez. Özellikle, satır içi içeri aktarılan bir işlevin adresi alınırsa, DLL'de yer alan işlevin adresi döndürülür. Bu davranış, satır içi olmayan içeri aktarılmış bir işlevin adresini almakla aynıdır.
 
-Tek bir programda (yani, DLL arabirimi olmayan yürütülebilir dosyası) gibi statik yerel veriler ve dizeler satır içi işlevler, DLL ve istemci arasında aynı kimlikleri korur.
+Satır içi işlevlerde statik yerel veriler ve dizeler, tek bir programda (yani, DLL arabirimi olmayan yürütülebilir bir dosya) olduğu gibi, DLL ve istemci arasındaki kimlikleri de korur.
 
 İçeri aktarılan satır içi işlevleri sağlarken dikkatli olun. Örneğin, DLL'yi güncelleştirirseniz, istemcinin değiştirilmiş DLL sürümünü kullanacağını varsaymayın. DLL'nin doğru sürümünü yüklediğinizden emin olmak için DLL'nin istemcisini de yeniden oluşturun.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -16,29 +16,29 @@ ms.locfileid: "62233754"
 ---
 # <a name="expressions-in-parentheses"></a>Parantezlerdeki İfadeler
 
-Herhangi bir işlenen türü veya kapalı ifadenin değerini değiştirmeden parantez içine. Örneğin, ifade:
+Parantez içinde herhangi bir işleneni, içine alınmış ifadenin türünü veya değerini değiştirmeden ekleyebilirsiniz. Örneğin, ifadesinde:
 
 ```
 ( 10 + 5 ) / 5
 ```
 
-çevresindeki parantezler `10 + 5` değerini anlamına `10 + 5` ilk olarak değerlendirilir ve bu duruma bölme sol işleneni (**/**) işleci. Sonucu `( 10 + 5 ) / 5` 3'tür. Parantez olmadan `10 + 5 / 5` 11'e değerlendirecek.
+etrafındaki `10 + 5` parantezler, ilk olarak değerlendirilen ve bölüm `10 + 5` (**/**) işlecinin sol işleneni haline geldiği anlamına gelir. Sonucu 3 ' `( 10 + 5 ) / 5` dir. Parantez olmadan, `10 + 5 / 5` 11 olarak değerlendirilir.
 
-Parantez işlenen bir ifadede gruplandırılır şeklini etkileyen olsa da, belirli bir tüm durumlarda Değerlendirme sırasını garanti edemez. Örneğin, hangi değeri parantez ya da aşağıdaki ifade, soldan sağa gruplandırma garanti eder `i` alt ifadeler birini olacaktır:
+Parantez, işlenenleri bir ifadede gruplandırılma şeklini etkilese de, her durumda belirli bir değerlendirme sırası garantisi vermez. Örneğin, aşağıdaki ifadenin parantezleri veya soldan sağa gruplandırması, değerinin `i` alt ifadelerden birinde ne olacağını garanti eder:
 
 ```
 ( i++ +1 ) * ( 2 + i )
 ```
 
-Derleyici, herhangi bir sırada çarpma iki tarafının değerlendirmek ücretsizdir. Başlangıç değeri oluşan `i` sıfır, ifadenin bu iki deyimden birini hesaplanamıyor:
+Derleyici, her türlü sırada çarpma 'nın iki tarafını değerlendirmek için ücretsizdir. İlk değeri `i` sıfırsa, tüm ifade bu iki deyimden biri olarak değerlendirilebiliyor:
 
 ```
 ( 0 + 1 + 1 ) * ( 2 + 1 )
 ( 0 + 1 + 1 ) * ( 2 + 0 )
 ```
 
-Özel durum yan etkilerden kaynaklanan açıklanmıştır [yan etkileri](../c-language/side-effects.md).
+Yan etkilerden kaynaklanan özel durumlar [yan etkilere](../c-language/side-effects.md)göre ele alınmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Birincil İfadeler](../c-language/c-primary-expressions.md)
+[C birincil Ifadeler](../c-language/c-primary-expressions.md)

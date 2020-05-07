@@ -11,11 +11,11 @@ ms.locfileid: "62158217"
 ---
 # <a name="specifying-calling-conventions"></a>Çağırma Kurallarını Belirtme
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Çağırma kuralları hakkında daha fazla bilgi için bkz: [çağırma kuralları konuları](../cpp/calling-conventions.md).
+Çağırma kuralları hakkında daha fazla bilgi için bkz. [çağırma kuralları konuları](../cpp/calling-conventions.md).
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

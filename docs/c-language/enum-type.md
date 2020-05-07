@@ -11,7 +11,7 @@ ms.locfileid: "62234107"
 ---
 # <a name="enum-type"></a>enum Türü
 
-**ANSI 3.5.2.2** bir numaralandırma türünün değerlerini temsil etmek üzere seçilen tamsayı türü
+**ANSI 3.5.2.2** Sabit listesi türünün değerlerini temsil etmek için seçilen tamsayı türü
 
 `enum` olarak bildirilen bir değişken bir `int`'dir.
 
