@@ -1,5 +1,5 @@
 ---
-title: Normal MFC DLL'lerinde veritabanı, OLE ve yuva MFC uzantısı DLL'leri kullanma
+title: Normal MFC DLL 'Lerinde Database, OLE ve Sockets MFC uzantı dll 'Lerini kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - DLLs [C++], initializing
@@ -13,53 +13,53 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62314695"
 ---
-# <a name="using-database-ole-and-sockets-mfc-extension-dlls-in-regular-mfc-dlls"></a>Normal MFC DLL'lerinde veritabanı, OLE ve yuva MFC uzantısı DLL'leri kullanma
+# <a name="using-database-ole-and-sockets-mfc-extension-dlls-in-regular-mfc-dlls"></a>Normal MFC DLL 'Lerinde Database, OLE ve Sockets MFC uzantı dll 'Lerini kullanma
 
-MFC uzantısı DLL içine bağlı değilse, bir MFC uzantılı DLL dosyasından Normal MFC DLL'SİNİN kullanırken **CDynLinkLibrary** nesne zinciri Normal MFC DLL'SİNİN, bir veya daha fazla ilgili sorunlarını bir dizi çalışabilir. MFC veritabanı, OLE ve yuva hata ayıklama sürümleri desteklediğinden DLL'leri MFC uzantısı DLL'leri olarak uygulanır, açıkça herhangi birini kendi MFC uzantısı DLL'leri kullanmadığınız olsa bile bu MFC kullanıyorsanız benzer sorunlara özelliklerini görebilirsiniz. Bazı Belirtiler şunlardır:
+Normal bir MFC DLL 'den MFC uzantı DLL 'si kullanılırken, MFC uzantı DLL 'SI normal MFC DLL 'nin **CDynLinkLibrary** nesne zincirine bağlanmadıysanız bir veya daha fazla ilgili sorun kümesiyle karşılaşabilirsiniz. MFC veritabanı, OLE ve yuva desteği dll 'lerinin hata ayıklama sürümleri MFC uzantı dll 'leri olarak uygulandığından, kendi MFC uzantı dll 'lerinizi açıkça kullanmadığınız halde bu MFC özelliklerini kullanıyorsanız benzer sorunlar görebilirsiniz. Bazı belirtiler şunlardır:
 
-- Ne zaman sınıf türünde bir nesnenin serisini kaldırma girişimi izin ver tanımlanan MFC uzantısı DLL, ileti "Uyarı: Arşivden CYourClass yüklenemiyor. Sınıf tanımlı değil." İzleme hata ayıklama penceresine ve nesneyi serileştirmek için başarısız görünür.
+- MFC uzantı DLL 'sinde tanımlı bir sınıf türünün bir nesnesinin serisini kaldırmaya çalışırken, "Uyarı: CYourClass from Arşiv ' e yüklenemez. Sınıf tanımlı değil. " Izleme hata ayıklama penceresinde görünür ve nesne seri hale getirilemez.
 
-- Hatalı sınıfı gösteren bir özel durum.
+- Hatalı sınıfı gösteren bir özel durum ortaya çıkabilir.
 
-- MFC uzantısı DLL depolanan kaynakları başarısız olduğundan `AfxFindResourceHandle` döndürür **NULL** veya yanlış kaynak işleyicisi.
+- MFC uzantı DLL 'sinde depolanan kaynaklar, **null** veya yanlış kaynak `AfxFindResourceHandle` tanıtıcısı döndürdüğünden yüklenemedi.
 
-- `DllGetClassObject`, `DllCanUnloadNow`ve `UpdateRegistry`, `Revoke`, `RevokeAll`, ve `RegisterAll` üye işlevleri `COleObjectFactory` MFC uzantısı DLL içinde tanımlanan bir sınıf üreteci bulmada başarısız olur.
+- `DllGetClassObject`, `DllCanUnloadNow`, ve, `UpdateRegistry`, `Revoke`ve `RevokeAll`' nin `RegisterAll` `COleObjectFactory` ,,, ve üye işlevleri, MFC uzantı dll 'de tanımlanan bir sınıf fabrikasını bulamıyor.
 
-- `AfxDoForAllClasses` MFC uzantısı DLL içindeki tüm sınıflar için geçerli değildir.
+- `AfxDoForAllClasses`MFC uzantı DLL dosyasındaki herhangi bir sınıf için çalışmaz.
 
-- Standart MFC veritabanı, yuva veya OLE kaynakları yüklenemedi. Örneğin, **AfxLoadString**(**AFX_IDP_SQL_CONNECT_FAIL**) Normal MFC DLL'SİNİN MFC veritabanı sınıfları düzgün bir şekilde kullanırken boş bir dize döndürür.
+- Standart MFC veritabanı, yuvalar veya OLE kaynakları yüklemede başarısız olur. Örneğin, **AfxLoadString**(**AFX_IDP_SQL_CONNECT_FAIL**), normal MFC DLL MFC veritabanı sınıflarını doğru şekilde kullanırken bile boş bir dize döndürür.
 
-Bu soruna çözüm oluşturmak ve bir MFC uzantısı oluşturur DLL başlatma işlevinde vermek için olan bir **CDynLinkLibrary** nesne. Tam olarak MFC uzantısı DLL kullanan normal her MFC DLL sonra bu başlatma işlevi çağırın.
+Bu sorunlara yönelik çözüm, bir **CDynLinkLibrary** NESNESI oluşturan MFC uzantı dll 'sinde bir başlatma işlevi oluşturmaktır ve dışarı aktarmasıdır. Bu başlatma işlevini MFC uzantısı DLL kullanan her normal MFC DLL 'den tam olarak bir kez çağırın.
 
-## <a name="mfc-ole-mfc-database-or-dao-or-mfc-sockets-support"></a>MFC OLE, MFC veritabanı (veya DAO), veya MFC yuva desteği
+## <a name="mfc-ole-mfc-database-or-dao-or-mfc-sockets-support"></a>MFC OLE, MFC veritabanı (veya DAO) veya MFC Yuvaları desteği
 
-Bir MFC OLE, MFC veritabanı (veya DAO) kullanarak ya da MFC yuva Normal MFC DLL içinde sırasıyla desteği, MFC hata ayıklama MFC uzantısı DLL'leri MFCOxxD.dll MFCDxxD.dll ve (xx sürüm numarasıdır) MFCNxxD.dll otomatik olarak bağlanır. Önceden tanımlanmış başlatma işlevinin her kullanmakta olduğunuz bu DLL'ler için çağırmanız gerekir.
+MFC OLE, MFC veritabanı (veya DAO) veya normal MFC DLL 'inizdeki MFC Yuvaları desteğini kullanıyorsanız, MFC hata ayıklama MFC uzantı dll 'Leri MFCOxxD. dll, MFCDxxD. dll ve MFCNxxD. dll (xx sürüm numarasıdır) otomatik olarak bağlanır. Kullanmakta olduğunuz bu DLL 'lerin her biri için önceden tanımlanmış bir başlatma işlevi çağırmanız gerekir.
 
-Veritabanı desteği için bir çağrı ekleyin `AfxDbInitModule` Normal MFC DLL için `CWinApp::InitInstance` işlevi. Bu çağrı herhangi bir temel sınıf çağrısından önce oluşur veya MFCDxxD.dll erişir kod eklenen tüm emin olun. Bu işlev, parametre almayan ve void döndürür.
+Veritabanı desteği için, normal MFC DLL 'inizin `AfxDbInitModule` `CWinApp::InitInstance` işlevine bir çağrı ekleyin. Bu çağrının herhangi bir temel sınıf çağrısından veya MFCDxxD. dll ' ye erişen eklenen bir koddan önce gerçekleştiğine emin olun. Bu işlev hiçbir parametre alır ve void döndürür.
 
-OLE desteği için bir çağrı ekleyin `AfxOleInitModule` Normal MFC DLL için `CWinApp::InitInstance`. Unutmayın **COleControlModule InitInstance** işlev çağrılarında `AfxOleInitModule` zaten, bunu bir OLE denetim oluşturma ve kullanıyorsanız `COleControlModule`, bu çağrıyı eklememelisiniz `AfxOleInitModule`.
+OLE desteği için normal MFC DLL 'lerinizin `AfxOleInitModule` öğesine bir çağrı ekleyin `CWinApp::InitInstance`. **Cotacontrolmodule InitInstance** işlevinin zaten çağırdığına `AfxOleInitModule` ve bir OLE denetimi oluşturuyorsanız ve kullanıyorsanız `COleControlModule`, bu çağrıyı öğesine `AfxOleInitModule`eklememelisiniz.
 
-Yuva desteği için bir çağrı ekleyin `AfxNetInitModule` Normal MFC DLL için `CWinApp::InitInstance`.
+Yuva desteği için normal MFC DLL 'lerinizin `AfxNetInitModule` öğesine bir çağrı ekleyin `CWinApp::InitInstance`.
 
-MFC DLL yayın oluşturur ve uygulamaları Yuvalar, veritabanı için ayrı DLL'leri kullanmayın veya OLE desteği unutmayın. Ancak, yayın modunda bu başlatma işlevleri çağırmak güvenlidir.
+MFC DLL 'Lerinin ve uygulamalarının yayın derlemelerinin veritabanı, yuvalar veya OLE desteği için ayrı dll 'Ler kullanmadığını unutmayın. Ancak, bu başlatma işlevlerini yayın modunda çağırmak güvenlidir.
 
-## <a name="cdynlinklibrary-objects"></a>CDynLinkLibrary Nesneleri
+## <a name="cdynlinklibrary-objects"></a>CDynLinkLibrary nesneleri
 
-MFC her konunun başında belirtildiği işlemleri sırasında istenen değer veya nesne için arama yapmak gerekir. Örneğin, seri durumundan çıkarma sırasında MFC uygun kendi çalışma zamanı sınıf ile arşiv nesneleri eşleştirmek için tüm kullanılabilir çalışma zamanı sınıflar arama yapmanız gerekir.
+Bu konunun başlangıcında bahsedilen her bir işlem sırasında, MFC 'nin istenen bir değeri veya nesneyi araması gerekir. Örneğin, seri durumdan çıkarma sırasında, arşivdeki nesneleri uygun çalışma zamanı sınıfıyla eşleştirmek için MFC 'nin şu anda kullanılabilir olan tüm çalışma zamanı sınıflarını aramasını gerekir.
 
-Bu arama bir parçası olarak MFC kullanımda tüm MFC uzantısı DLL'leri zinciri walking tarafından arar **CDynLinkLibrary** nesneleri. **CDynLinkLibrary** nesneler bir zincirine yapım sırasında otomatik olarak ekler ve her MFC uzantısı DLL başlatma sırasında sırayla oluşturulur. Ayrıca, her bir modüle (uygulama veya Normal MFC DLL'SİNİN) kendi zincirine sahip **CDynLinkLibrary** nesneleri.
+Bu aramaların bir parçası olarak MFC, bir **CDynLinkLibrary** nesneleri zinciri yürüyerek kullanılan tüm MFC uzantı dll 'lerini tarar. **CDynLinkLibrary** nesneleri, oluşturma sırasında bir zincire otomatik olarak eklenir ve başlatma sırasında SıRAYLA her MFC uzantı dll tarafından oluşturulur. Ayrıca, her modülün (uygulama veya normal MFC DLL) kendi **CDynLinkLibrary** nesneleri zinciri vardır.
 
-Bir MFC uzantılı DLL içine kablolu için bir **CDynLinkLibrary** zinciri gerekir oluşturma bir **CDynLinkLibrary** MFC uzantısı DLL kullanan her bir modüle bağlamında nesne. Bu nedenle, bir MFC uzantılı DLL normal MFC DLL'leri kullanılacak hedefleyecekse, onu oluşturan dışarı aktarılan başlatma işlev sağlamalısınız bir **CDynLinkLibrary** nesne. MFC uzantısı kullanan her Normal MFC DLL'SİNİN DLL dışarı aktarılan başlatma işlevi çağırmanız gerekir.
+Bir MFC uzantısı DLL 'sinin bir **CDynLinkLibrary** zincirine kablolu olması için MFC uzantı dll 'sini kullanan her modülün bağlamında bir **CDynLinkLibrary** nesnesi oluşturması gerekir. Bu nedenle, bir MFC uzantı DLL 'SI normal MFC DLL 'lerden kullanılacaksa, bir **CDynLinkLibrary** nesnesi oluşturan bir içe aktarılmış başlatma işlevi sağlamalıdır. MFC uzantısı DLL kullanan her normal MFC DLL 'nin, aktarılmış başlatma işlevini çağırması gerekir.
 
-Bir MFC uzantılı DLL yalnızca bir MFC uygulaması (.exe) ve hiçbir zaman Normal MFC DLL'SİNİN kullanılacak sonra oluşturmak için yeterli **CDynLinkLibrary** MFC uzantı DLL nesnesinde `DllMain`. MFC DLL Sihirbazı MFC uzantısı DLL kodun ne yaptığını budur. Bir MFC uzantılı DLL örtülü olarak yüklenirken `DllMain` yükler ve uygulama başlamadan önce yürütülür. Tüm **CDynLinkLibrary** oluşturma kablolu bir varsayılan zincirine MFC DLL için bir MFC uygulaması ayırır.
+MFC uzantı DLL 'SI yalnızca bir MFC uygulamasından (. exe) kullanılacaksa ve hiçbir şekilde normal MFC DLL 'den kullanılacaksa, bu durumda, MFC uzantı DLL 'sinde **CDynLinkLibrary** nesnesini oluşturmak yeterlidir `DllMain`. MFC DLL Sihirbazı MFC uzantı DLL kodunun yaptığı şeydir. MFC uzantı DLL 'sini örtülü olarak yüklerken uygulama `DllMain` başlamadan önce yükler ve yürütülür. Herhangi bir **CDynLinkLibrary** oluşturma, MFC DLL bir MFC uygulaması için ayrılmış bir varsayılan zincire bağlanır.
 
-Birden çok sağlamak için kötü bir fikir olduğunu unutmayın **CDynLinkLibrary** nesnenin bir MFC uzantısı DLL, herhangi bir zincirde MFC uzantısı DLL özellikle dinamik olarak bellekten olacaksa. Başlatma işlevinin herhangi bir modülden birden çok kez çağırmanız gerekmez.
+Özellikle MFC uzantı DLL 'sinin bellekten dinamik olarak kaldırılacaksa, tek bir zincirde bir MFC uzantı DLL 'sinden birden fazla **CDynLinkLibrary** nesnesine sahip olması kötü bir fikir olduğunu unutmayın. Başlatma işlevini herhangi bir modülden birden çok kez çağırmayın.
 
 ## <a name="sample-code"></a>Örnek Kod
 
-Bu örnek kod, Normal MFC DLL, MFC uzantısı DLL örtük olarak bağlama varsayar. Bu, Normal MFC DLL'yi oluştururken MFC uzantısı DLL içeri aktarma kitaplığına (.lib) bağlantı kurularak gerçekleştirilir.
+Bu örnek kod, normal MFC DLL 'inin MFC uzantı DLL 'sine örtük olarak bağlandığını varsayar. Bu, normal MFC DLL 'SI oluşturulurken MFC uzantı DLL 'inin içeri aktarma kitaplığına (. lib) bağlanılarak gerçekleştirilir.
 
-Aşağıdaki satırları MFC uzantısı DLL kaynakta olmalıdır:
+Aşağıdaki satırlar, MFC uzantı DLL 'sinin kaynağında olmalıdır:
 
 ```
 // YourExtDLL.cpp:
@@ -92,7 +92,7 @@ extern "C" void WINAPI InitYourExtDLL()
 }
 ```
 
-Dışarı aktardığınızdan emin olun **InitYourExtDLL** işlevi. Bu yapılabilir kullanarak **__declspec(dllexport)** ya da gösterildiği gibi DLL'nin .def dosyasında:
+**InitYourExtDLL** işlevini dışarı aktardığınızdan emin olun. Bu, **__declspec (dllexport)** veya dll 'nin. def dosyasında şu şekilde yapılabilir:
 
 ```
 // YourExtDLL.Def:
@@ -103,7 +103,7 @@ EXPORTS
     InitYourExtDLL
 ```
 
-Bir çağrı ekleyin `InitInstance` üyesi `CWinApp`-türetilmiş MFC uzantısı DLL kullanarak her bir Normal MFC DLL'SİNİN nesnesinde:
+MFC uzantı DLL 'ini kullanarak `InitInstance` her normal MFC `CWinApp`dll 'de türetilen nesnenin üyesine bir çağrı ekleyin:
 
 ```
 // YourRegularDLL.cpp:
@@ -132,22 +132,22 @@ BOOL CYourRegularDLL::InitInstance()
 
 ### <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Bir MFC uzantılı DLL başlatma](run-time-library-behavior.md#initializing-extension-dlls)
+- [MFC uzantı DLL 'sini başlatma](run-time-library-behavior.md#initializing-extension-dlls)
 
-- [Normal MFC DLL'leri Başlat](run-time-library-behavior.md#initializing-regular-dlls)
+- [Normal MFC DLL 'Leri başlatma](run-time-library-behavior.md#initializing-regular-dlls)
 
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [MFC uzantısı DLL’leri](extension-dlls.md)
+- [MFC uzantı dll 'Leri](extension-dlls.md)
 
-- [Statik Olarak MFC'ye Bağlı Normal MFC DLL'leri](regular-dlls-statically-linked-to-mfc.md)
+- [MFC 'ye statik olarak bağlı normal MFC DLL 'Leri](regular-dlls-statically-linked-to-mfc.md)
 
-- [Dinamik Olarak MFC'ye Bağlı Normal MFC DLL'leri](regular-dlls-dynamically-linked-to-mfc.md)
+- [MFC 'ye dinamik olarak bağlı normal MFC DLL 'Leri](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
+- [DLL 'nin bir parçası olarak MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
 
-- [MFC'nin DLL sürümü](../mfc/tn033-dll-version-of-mfc.md)
+- [MFC 'nin DLL sürümü](../mfc/tn033-dll-version-of-mfc.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC uzantısı DLL’leri](extension-dlls.md)
+[MFC uzantı dll 'Leri](extension-dlls.md)

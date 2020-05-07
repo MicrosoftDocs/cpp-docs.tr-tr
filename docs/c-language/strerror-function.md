@@ -13,7 +13,7 @@ ms.locfileid: "62157844"
 ---
 # <a name="strerror-function"></a>strerror İşlevi
 
-**ANSI 4.11.6.2** içeriğini bir hata iletisi tarafından döndürülen dizeler `strerror` işlevi
+**ANSI 4.11.6.2** `strerror` İşlev tarafından döndürülen hata iletisi dizelerinin içeriği
 
 `strerror` işlevi bu iletileri oluşturur:
 

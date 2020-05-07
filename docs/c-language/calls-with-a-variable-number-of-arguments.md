@@ -20,7 +20,7 @@ ms.locfileid: "82032115"
 ---
 # <a name="calls-with-a-variable-number-of-arguments"></a>Değişken Sayıda Bağımsız Değişkenli Çağrılar
 
-Kısmi bir parametre listesi elips gösterimi tarafından sonlandırılabilir, bir virgül üç dönem takip **(, ...**), daha fazla bağımsız değişken işlevi geçti olabileceğini belirtmek için, ancak onlar hakkında daha fazla bilgi verilir. Tür denetleme bu tür bağımsız değişkenler üzerinde gerçekleştirilmez. Üç nokta gösteriminden önce en az bir parametre gelmeli ve üç nokta gösterimi parametre listesindeki son belirteç olmalıdır. Üç nokta gösterimi olmadan, bir işlevin davranışı (parametre listesinde bildirilenlere ek olarak başka parametreler de alırsa) tanımlanmış olmaz.
+Kısmi bir parametre listesi, üç nokta (,...) ve ardından üç nokta (**,...**) ile sona erer, ancak bu işleve daha fazla bağımsız değişken verildiğini belirten bir virgül, ancak bunlarla ilgili daha fazla bilgi verilmeyebilir. Tür denetleme bu tür bağımsız değişkenler üzerinde gerçekleştirilmez. Üç nokta gösteriminden önce en az bir parametre gelmeli ve üç nokta gösterimi parametre listesindeki son belirteç olmalıdır. Üç nokta gösterimi olmadan, bir işlevin davranışı (parametre listesinde bildirilenlere ek olarak başka parametreler de alırsa) tanımlanmış olmaz.
 
 Çeşitli sayıda bağımsız değişken içeren bir işlevi çağırmak için yapmanız gereken sadece istenen sayıda bağımsız değişkeni işlev çağrısında belirtmektir. C çalışma zamanı kitaplığından `printf` işlevi buna bir örnektir. İşlev çağrısı, parametre listesinde veya bağımsız değişken türleri listesinde bildirilen her tür adı için bir bağımsız değişken eklemelidir.
 

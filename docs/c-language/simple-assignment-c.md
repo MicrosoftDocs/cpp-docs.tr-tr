@@ -18,7 +18,7 @@ ms.locfileid: "62158288"
 ---
 # <a name="simple-assignment-c"></a>Basit Atama (C)
 
-Basit atama işleci, sağ işlenen, sol işleneniyle atar. Sağ işlenen değer atama ifadesi türüne dönüştürülür ve sol işlenen tarafından belirtilen nesnede depolanan nesneyle değiştirir. Uygulama ataması için dönüştürme kuralları (bkz [atama dönüştürmeleri](../c-language/assignment-conversions.md)).
+Basit atama işleci, sağ işlenenini sol işlenene atar. Sağ işlenenin değeri atama ifadesinin türüne dönüştürülür ve sol işlenen tarafından belirtilen nesnede depolanan değeri değiştirir. Atama için dönüştürme kuralları uygulanır (bkz. [atama dönüştürmeleri](../c-language/assignment-conversions.md)).
 
 ```
 double x;
@@ -27,7 +27,7 @@ int y;
 x = y;
 ```
 
-Bu örnekte, değerini `y` türüne dönüştürülür **çift** ve atanan `x`.
+Bu örnekte, değeri `y` **Double** türüne dönüştürülür ve öğesine `x`atanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

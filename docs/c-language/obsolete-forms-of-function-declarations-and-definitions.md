@@ -47,7 +47,7 @@ void funct1( int a, ... )
 
 Eski stil işlev bildirimleri ayrıca, aynı işlevi daha sonra üç nokta ile veya yükseltilen tür ile aynı olmayan bir türden parametre ile bildirdiğinizde veya tanımladığınızda da bir uyarı oluşturur.
 
-Sonraki bölüm, [C İşlev Tanımları](../c-language/c-function-definitions.md), eski stil sözdizimi de dahil olmak üzere işlev tanımları için sözdizimini gösterir. Eski stil sözdiziminde parametreler listesi için terminal dışı tanımlayıcı *listesidir.*
+Sonraki bölüm olan [C Işlevi tanımları](../c-language/c-function-definitions.md), eski stil sözdizimi dahil olmak üzere işlev tanımlarının sözdizimini gösterir. Eski stil sözdiziminde parametre listesi için Terminal olmayan bir *kimlik listesi*.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

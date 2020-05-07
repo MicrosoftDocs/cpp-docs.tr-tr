@@ -15,11 +15,11 @@ ms.locfileid: "62157948"
 ---
 # <a name="static-storage-class-specifier"></a>static Depolama Sınıfı Tanımlayıcısı
 
-İç düzeydeki ile bildirilen bir değişken **statik** depolama sınıfı tanımlayıcısı genel bir ömre sahiptir, ancak yalnızca blok içinde görülebilir içinde bildirildiği. Kullanarak sabit dizeleri için **statik** sık sık çağrılan işlevlerin başlatmada ek yükü azaltır çünkü yararlıdır.
+**Statik** depolama sınıfı belirticisine sahip iç düzeyde tanımlanmış bir değişken, genel bir yaşam süresine sahiptir ancak yalnızca bildirildiği blok içinde görünür. Sabit dizeler için, genellikle çağrılan işlevlerde sık başlatma yükünü konuma almayı azaltır için **statik** kullanmak faydalıdır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Açıkça başlatılamadı, bir **statik** değişken, 0 için varsayılan olarak başlatılır. Bir işlev içinde **statik** ayrılacak depolama neden olur ve bir tanımı görev yapar. İç statik değişkenler yalnızca tek bir işleve görünür özel, kalıcı depolama sağlar.
+**Statik** bir değişkeni açıkça atamadıysanız varsayılan olarak 0 olarak başlatılır. Bir işlevin içinde, **statik** depolamanın ayrılmasına ve bir tanım olarak hizmet vermesine neden olur. İç statik değişkenler, özel ve kalıcı depolamayı yalnızca tek bir işleve görünür hale sunar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

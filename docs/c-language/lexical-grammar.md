@@ -15,13 +15,13 @@ ms.locfileid: "62325513"
 
 - [Belirteçler](../c-language/summary-of-tokens.md)
 
-- [Anahtar Sözcükler](../c-language/summary-of-keywords.md)
+- [Anahtar sözcükler](../c-language/summary-of-keywords.md)
 
 - [Tanımlayıcılar](../c-language/summary-of-identifiers.md)
 
 - [Sabitler](../c-language/summary-of-constants.md)
 
-- [Dize değişmez değerleri](../c-language/summary-of-string-literals.md)
+- [Dize sabit değerleri](../c-language/summary-of-string-literals.md)
 
 - [İşleçler](../c-language/operators-c.md)
 

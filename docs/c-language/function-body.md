@@ -21,12 +21,12 @@ ms.locfileid: "74857105"
 ## <a name="syntax"></a>Sözdizimi
 
 *işlev tanımı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-belirticileri*<sub>opt</sub> *özniteliği-seq*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *Bileþik-deyimin*
+&nbsp;&nbsp;&nbsp;&nbsp;*Bildirim-belirticileri*<sub>opt</sub> *özniteliği-seq*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *bileşik-deyimin*
 
-/\* *özniteliği-seq* , Microsoft 'a özgü \*/
+/\**öznitelik-Seq* , Microsoft 'a özgüdür\*/
 
-*bileşik ifade*:/\* işlev gövdesini \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **{** *declaration-List*<sub>opt</sub> *bildirimini-List*<sub>opt</sub> **}**
+*bileşik-ifade*:/\* işlev gövdesi\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-List*<sub>opt</sub> *bildirimini-List*<sub>opt</sub> **}**
 
 *Yerel değişkenler*olarak bilinen bir işlev gövdesinde belirtilen değişkenlerin, aksi belirtilmedikçe **Otomatik** depolama sınıfı vardır. İşlev çağrıldığında Yerel değişkenler için depolama oluşturulur ve yerel başlatma işlemleri gerçekleştirilir. Yürütme denetimi *bileşik deyimdeki* ilk ifadeye geçer ve bir **dönüş** ifadesiyle veya işlev gövdesinin sonuna ulaşana kadar devam eder. Sonra Denetim, işlevin çağrıldığı noktaya döner.
 

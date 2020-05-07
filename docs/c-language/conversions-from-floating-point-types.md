@@ -18,7 +18,7 @@ Diğer kayan nokta türüne dönüştürülen bir kayan nokta değeri, orijinal 
 
 Tamsayı türüne dönüştürülen bir kayan nokta değeri ilk olarak kesirli değer atılarak kesilir. Bu kesilen değer sonuç türünde gösterilebilir ise, sonuç bu değer olmalıdır. Gösterilemeyen bir tablo olmadığında sonuç değeri tanımsızdır.
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Microsoft derleyicileri, **kayan** değerler için ıeee-754 binary32 temsili ve **uzun çift** ve **çift**için binary64 gösterimi kullanır. **Long Double** ve **Double** aynı gösterimi kullandığından, aynı aralığa ve duyarlığa sahiptir.
 
@@ -40,17 +40,17 @@ Aşağıdaki tabloda, kayan türlerden dönüşümler özetlenmektedir.
 
 ## <a name="table-of-conversions-from-floating-point-types"></a>Kayan nokta türlerinden dönüştürme tablosu
 
-|Başlangıç|Bitiş|Yöntem|
+|Başlangıç|Alıcı|Yöntem|
 |----------|--------|------------|
 |**float**|**char**|**Long**'a Dönüştür; **Long** **karakter** olarak Dönüştür|
 |**float**|**short**|**Long**'a Dönüştür; **Long** 'ı **Short** 'a Dönüştür|
 |**float**|**int**|Ondalık noktada kesin. Sonuç **int**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
 |**float**|**long**|Ondalık noktada kesin. Sonuç **uzun**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
-|**float**|**uzun uzun**|Ondalık noktada kesin. Sonuç **uzun**bir süre gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
-|**float**|**işaretsiz karakter**|**Long**'a Dönüştür; **Long** **karakteri işaretsiz karakter** olarak Dönüştür|
-|**float**|**işaretsiz kısa**|**Long**'a Dönüştür; **uzun** **işaretsiz kısa** Dönüştür|
+|**float**|**long long**|Ondalık noktada kesin. Sonuç **uzun**bir süre gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
+|**float**|**unsigned char**|**Long**'a Dönüştür; **Long** **karakteri işaretsiz karakter** olarak Dönüştür|
+|**float**|**imzasız short**|**Long**'a Dönüştür; **uzun** **işaretsiz kısa** Dönüştür|
 |**float**|**işaretlenmemiş**|Ondalık noktada kesin. Sonuç **işaretsiz**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
-|**float**|**imzasız Long**|Ondalık noktada kesin. Sonuç **işaretsiz Long**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
+|**float**|**imzasız long**|Ondalık noktada kesin. Sonuç **işaretsiz Long**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
 |**float**|**imzasız uzun uzun**|Ondalık noktada kesin. Sonuç, **imzasız uzun Long**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
 |**float**|**double**|**Double**olarak temsil eder.|
 |**float**|**uzun çift**|**Uzun çift**olarak temsil eder.|
@@ -58,10 +58,10 @@ Aşağıdaki tabloda, kayan türlerden dönüşümler özetlenmektedir.
 |**double**|**short**|**Float**öğesine Dönüştür; **float** öğesini **Short** 'a Dönüştür|
 |**double**|**int**|Ondalık noktada kesin. Sonuç **int**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
 |**double**|**long**|Ondalık noktada kesin. Sonuç **uzun**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
-|**double**|**işaretsiz karakter**|**Long**'a Dönüştür; **Long** **karakteri işaretsiz karakter** olarak Dönüştür|
-|**double**|**işaretsiz kısa**|**Long**'a Dönüştür; **uzun** **işaretsiz kısa** Dönüştür|
+|**double**|**unsigned char**|**Long**'a Dönüştür; **Long** **karakteri işaretsiz karakter** olarak Dönüştür|
+|**double**|**imzasız short**|**Long**'a Dönüştür; **uzun** **işaretsiz kısa** Dönüştür|
 |**double**|**işaretlenmemiş**|Ondalık noktada kesin. Sonuç **işaretsiz**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
-|**double**|**imzasız Long**|Ondalık noktada kesin. Sonuç **işaretsiz Long**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
+|**double**|**imzasız long**|Ondalık noktada kesin. Sonuç **işaretsiz Long**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
 |**double**|**imzasız uzun uzun**|Ondalık noktada kesin. Sonuç, **imzasız uzun Long**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
 |**double**|**float**|**Float**olarak temsil eder. **Double** değeri tam olarak **float**olarak temsil edileyemediğinde duyarlık kaybı oluşur. Değer **float**olarak gösterilemeyecek kadar büyükse, sonuç tanımsızdır.|
 |**double**|**uzun çift**|**Long Double** değeri **Double**olarak değerlendirilir.|

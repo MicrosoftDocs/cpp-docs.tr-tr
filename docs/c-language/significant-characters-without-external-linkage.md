@@ -11,7 +11,7 @@ ms.locfileid: "62158299"
 ---
 # <a name="significant-characters-without-external-linkage"></a>Dış Bağlantısız Önemli Karakterler
 
-**ANSI 3.1.2** dış bağlantı olmadan önemli karakterlerin sayısı
+**ANSI 3.1.2** Dış bağlantı olmayan önemli karakterlerin sayısı
 
 Tanımlayıcılar 247 karakter kadar önemlidir. Derleyici, bir tanımlayıcıda kullanabileceğiniz karakterlerin sayısını kısıtlamaz; yalnızca sınırı aşan karakterleri yoksayar.
 

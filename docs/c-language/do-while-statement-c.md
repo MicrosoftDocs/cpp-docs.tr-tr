@@ -19,7 +19,7 @@ ms.locfileid: "79438595"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*yineleme deyimi*: &nbsp;&nbsp;&nbsp;&nbsp;**Do***deyimi***while (** *ifade* **);**
+*yineleme-deyimi*: &nbsp; &nbsp; &nbsp; &nbsp; **Do***deyimi***while (***ifade***);**        
 
 *Do-while* deyimi içindeki *ifade* , döngünün gövdesi yürütüldükten sonra değerlendirilir. Bu nedenle, döngünün gövdesi her zaman en az bir kez yürütülür.
 
@@ -41,8 +41,8 @@ do
 } while ( x > 0 );
 ```
 
-Bu *do-while* deyiminde, `x`başlangıç değerinden bağımsız olarak `y = f( x );` ve `x--;` iki deyim yürütülür. `x > 0` değerlendirilir. `x` 0 ' dan büyükse, ifade gövdesi tekrar yürütülür ve `x > 0` yeniden değerlendirilirse. İfadenin gövdesi, `x` 0 ' dan büyük kaldığı sürece tekrar tekrar yürütülür. *Do-while* ifadesinin yürütülmesi `x` 0 veya negatif olduğunda sonlanır. Döngünün gövdesi en az bir kez yürütülür.
+Bu *do-while* deyiminde, başlangıç değerinden bağımsız olarak `y = f( x );` iki `x--;` deyim ve yürütülür `x`. Sonra `x > 0` değerlendirilir. `x` 0 ' dan büyükse, ifade gövdesi yeniden yürütülür ve `x > 0` yeniden değerlendirilirse. Deyimin gövdesi, 0 ' dan büyük `x` kaldığı sürece tekrar tekrar yürütülür. *Do-while* ifadesinin yürütülmesi 0 veya negatif olduğunda `x` sonlanır. Döngünün gövdesi en az bir kez yürütülür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[do-while Deyimi (C++)](../cpp/do-while-statement-cpp.md)
+[do-while ekstresi (C++)](../cpp/do-while-statement-cpp.md)

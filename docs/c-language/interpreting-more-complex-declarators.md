@@ -14,19 +14,19 @@ ms.locfileid: "62232871"
 ---
 # <a name="interpreting-more-complex-declarators"></a>Daha Karmaşık Bildirimcileri Yorumlama
 
-Bildirimci herhangi bir "karmaşık bildirimci.", belirli bir yorumu belirtmek için ayraç içine alın Karmaşık bildirimci, birden fazla dizi, işaretçisi veya işlev değiştiricisi göre koşullu bir tanımlayıcıdır. Dizi, işaretçi ve işlev değiştiricisinden çeşitli birleşimlerini için tek bir tanımlayıcı uygulayabilirsiniz. Genellikle `typedef` bildirimleri basitleştirmek için kullanılabilir. Bkz: [Typedef bildirimleri](../c-language/typedef-declarations.md).
+"Karmaşık Bildirimcinin" belirli bir yorumunu belirtmek için herhangi bir bildirimcisini parantez içine alabilirsiniz. Karmaşık bildirimci, birden fazla dizi, işaretçi veya işlev değiştiricisi tarafından nitelenmiş bir tanıtıcıdır. Array, pointer ve Function değiştiricilerin çeşitli birleşimlerini tek bir tanımlayıcıya uygulayabilirsiniz. Genel `typedef` olarak, bildirimleri basitleştirmek için kullanılabilir. Bkz. [typedef bildirimleri](../c-language/typedef-declarations.md).
 
-Karmaşık bildirimcileri yorumlama köşeli ayraçlar ve parantez (diğer bir deyişle, değiştiriciler tanımlayıcıyı sağındaki) yıldız işareti (diğer bir deyişle, değiştiriciler tanımlayıcıyı solundaki) göre önceliklidir. Köşeli parantez aynı önceliğe sahip ve soldan sağa ilişkilendirilir. Bildirimci tam olarak yorumlanan sonra tür belirticisi son adım olarak uygulanır. Parantezler kullanarak varsayılan ilişkilendirme sırası geçersiz kılmak ve belirli bir yorumu zorla. Hiçbir zaman parantezler, ancak bir tanımlayıcı adı kendisi tarafından geçici olarak kullanın. Bir parametre listesi olarak yanlış.
+Karmaşık bildirimcilerin, köşeli ayraçlar ve parantezleri (yani, tanımlayıcının sağına yönelik değiştiriciler) yorumlama sırasında, yıldız (tanımlayıcı solunda değiştiriciler) arasında önceliklidir. Köşeli ayraçlar ve parantezler aynı önceliğe sahiptir ve soldan sağa ilişkilendirin. Bildirimci tamamen yorumladıktan sonra, tür belirleyicisi son adım olarak uygulanır. Parantez kullanarak varsayılan ilişkilendirme sırasını geçersiz kılabilir ve belirli bir yorumu zorlayabilirsiniz. Bununla birlikte, bir tanımlayıcı adı etrafında, hiçbir şekilde parantez kullanmayın. Bu, parametre listesi olarak yanlış yorumlanabilir.
 
-Bunları "içinden," dört aşağıdaki adımları kullanarak okunacak karmaşık bildirimcileri yorumlama için basit bir yol verilmiştir:
+Karmaşık bildirimcilerin yorumlanması için basit bir yol, aşağıdaki dört adımı kullanarak "içten" içinden okunmalıdır:
 
-1. Tanımlayıcı ile başlayın ve doğrudan için sağ köşeli ayraç veya parantezler (varsa) bakın.
+1. Tanımlayıcıyla başlayın ve köşeli ayraçlar veya parantezler (varsa) için doğrudan sağa bakın.
 
-1. Bu parantezler veya parantez yorumlama ardından için yıldız işareti sola bakın.
+1. Bu köşeli ayraçları veya ayraçları yorumlayın ve sonra yıldız işaretleri için sola bakın.
 
-1. Herhangi bir aşamasında sağ ayraç karşılaşırsanız, geri dönün ve kuralları 1 ve 2 parantez içindeki her şey için geçerlidir.
+1. Herhangi bir aşamada sağ parantez ile karşılaşırsanız, geri dönün ve parantez içindeki her şeye 1. ve 2. kuralları uygulayın.
 
-1. Tür belirticisi uygulayın.
+1. Tür belirticisini uygulayın.
 
     ```
     char *( *(*var)() )[10];
@@ -34,49 +34,49 @@ Bunları "içinden," dört aşağıdaki adımları kullanarak okunacak karmaşı
      7   6  4 2 1   3    5
     ```
 
-Bu örnekte, adımları sırayla numaralandırılır ve şu şekilde yorumlanabilir:
+Bu örnekte, adımlar sırayla numaralandırılır ve şu şekilde yorumlanabilir:
 
-1. Tanımlayıcı `var` olarak bildirilir
+1. Tanımlayıcı `var` şöyle bildirilmiştir
 
-1. Bir işaretçi
+1. bir işaretçisi
 
 1. döndüren bir işlev
 
-1. Bir işaretçi
+1. bir işaretçisi
 
-1. bir dizi olan 10 öğeleri
+1. 10 öğeden oluşan bir dizi
 
 1. işaretçiler
 
-1. `char` değerler.
+1. `char`deðerler.
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekler, karmaşık diğer bildirimleri göstermek ve parantez anlamı bildiriminin nasıl etkileyebileceğini gösterir.
+Aşağıdaki örneklerde diğer karmaşık bildirimler gösterilmektedir ve parantezlerin bir bildirimin anlamını nasıl etkileyebileceği gösterilmektedir.
 
 ```
 int *var[5]; /* Array of pointers to int values */
 ```
 
-Dizi değiştiricisi işaretçi değiştirici, daha yüksek önceliğe serileştirilmesini `var` bir dizi olmasını bildirilir. İşaretçi değiştirici, dizi öğelerinin türü için geçerlidir; Bu nedenle, dizi öğelerinin işaretçileri olan `int` değerleri.
+Dizi değiştiricisinin işaretçi değiştiricisinden daha yüksek önceliği vardır, bu `var` nedenle dizi olarak bildirilmiştir. İşaretçi değiştiricisi dizi öğelerinin türü için geçerlidir; Bu nedenle, dizi öğeleri `int` değer işaretçileridir.
 
 ```
 int (*var)[5]; /* Pointer to array of int values */
 ```
 
-Bu bildirimi için `var`, parantezler, dizi değiştiricisi, işaretçi değiştirici daha yüksek önceliğe verin ve `var` beş bir dizi işaretçi olarak bildirilmiştir `int` değerleri.
+Bu bildirimde `var`, parantez işaretçi değiştiricisini dizi değiştiricisinden daha yüksek öncelik olarak verir ve `var` beş `int` değerden oluşan bir dizi işaretçisi olarak bildirilmiştir.
 
 ```
 long *var( long, long ); /* Function returning pointer to long */
 ```
 
-İşlev değiştiricisinden de işaretçi değiştiriciler, daha yüksek önceliğe bu nedenle bu bildirimin `var` bildirir `var` olması için bir işaretçi döndüren bir işlevin bir **uzun** değeri. İki yararlanmak için bildirilen işlev **uzun** bağımsız değişkenler olarak değerleri.
+İşlev değiştiriciler aynı zamanda işaretçi değiştiricilerine kıyasla daha yüksek önceliğe sahiptir, bu `var` nedenle `var` , için bu bildirimin **uzun** bir değere işaretçi döndüren bir işlev olduğunu bildirir. İşlevi bağımsız değişken olarak iki **uzun** değer alacak şekilde bildirilmiştir.
 
 ```
 long (*var)( long, long ); /* Pointer to function returning long */
 ```
 
-Bu örnek Öncekine benzer. Parantez işlev değiştirici işaretçi değiştirici daha yüksek önceliğe verin ve `var` döndüren bir işlev işaretçisi olarak bildirilen bir **uzun** değeri. Yeniden işlevi iki alır **uzun** bağımsız değişkenler.
+Bu örnek, öncekiyle benzerdir. Parantezler, işaretçi değiştiriciye işlev değiştiricisinden daha yüksek öncelik verir ve `var` **uzun** bir değer döndüren bir işlevin işaretçisi olarak bildirilmiştir. Yine, işlev iki **uzun** bağımsız değişken alır.
 
 ```
 struct both       /* Array of pointers to functions */
@@ -86,28 +86,28 @@ struct both       /* Array of pointers to functions */
 } ( *var[5] )( struct both, struct both );
 ```
 
-Bir dizinin öğeleri işlevler olamaz, ancak bu bildirim, bunun yerine bir dizi işlev işaretçileri bildirmek gösterilmektedir. Bu örnekte, `var` yapıları iki üyeli döndüren işlevleri için beş işaretçiler dizisi olarak bildirilir. İşlevlere bağımsız değişkenler aynı yapı türünde iki yapıları olması bildirilir `both`. Çevresindeki parantezler unutmayın `*var[5]` gereklidir. Bunlar olmadan bildirimi işlevlerinin bir diziyi bildirmek için geçersiz bir girişimde bulunuldu aşağıda gösterildiği gibi şu şekildedir:
+Bir dizinin öğeleri işlev olamaz, ancak bu bildirimde bunun yerine işlevlere bir dizi işaretçi bildirimi yapılacağı gösterilmektedir. Bu örnekte, `var` iki üyeli yapılar döndüren işlevlere beş işaretçinin bir dizisi olacak şekilde bildirilmiştir. İşlevlerin bağımsız değişkenleri aynı yapı türüne sahip iki yapı olacak şekilde bildirilmiştir `both`. Çevreleyen `*var[5]` parantezler gerekli olduğunu unutmayın. Bu olmadan, bildirim, aşağıda gösterildiği gibi bir dizi işlev için geçersiz bir girişimdir:
 
 ```
 /* ILLEGAL */
 struct both *var[5](struct both, struct both);
 ```
 
-Aşağıdaki deyim, bir işaretçiler dizisi bildirir.
+Aşağıdaki ifade bir işaretçiler dizisi bildirir.
 
 ```
 unsigned int *(* const *name[5][10] ) ( void );
 ```
 
-`name` Sahip çok boyutlu bir dizi düzenlenmiş 50 öğeleri dizisi. Bir sabit bir işaretçi işaretçileri öğeleridir. Bu sabit bir işaretçi parametresi yok ve bir işaretsiz türe işaretçi döndüren bir işleve işaret eder.
+`name` Dizide çok boyutlu bir dizide düzenlenmiş 50 öğe vardır. Öğeler, sabit olan bir işaretçiye yönelik işaretçilerdir. Bu sabit işaretçi, parametresi olmayan ve işaretsiz bir türe işaretçi döndüren bir işleve işaret eder.
 
-Bu örnekte üç dizi için işaretçi döndüren bir işlevdir **çift** değerleri.
+Bu sonraki örnek, üç **Double** değerin dizisine bir işaretçi döndüren bir işlevdir.
 
 ```
 double ( *var( double (*)[3] ) )[3];
 ```
 
-Bu bildirim bir dizisine bir işaretçi bir işlev döndürür, bu yana işlevleri döndüren dizileri geçersizdir. Burada `var` üç dizi için işaretçi döndüren bir işlev için bildirilen **çift** değerleri. İşlev `var` bir bağımsız değişken alır. Bağımsız değişkeni dönüş değeri gibi bir dizi üç işaretçisidir **çift** değerleri. Bağımsız değişken türü bir karmaşık tarafından verilen *soyut bildirimci*. Bağımsız değişken türü yıldız işareti parantez gereklidir; bunlar olmadan bir dizi üç bağımsız değişken türü olacaktır **çift** değerleri. Bir tartışma ve soyut Bildirimciler örnekleri için bkz: [soyut Bildirimciler](../c-language/c-abstract-declarators.md).
+Bu bildirimde, diziler döndüren işlevler geçersiz olduğundan, bir işlev bir diziye yönelik bir işaretçi döndürür. Burada `var` , üç **Double** değerin dizisine bir işaretçi döndüren bir işlev olarak bildirilmiştir. İşlev `var` bir bağımsız değişken alır. Dönüş değeri gibi bağımsız değişken, üç **Double** değer dizisinin bir işaretçisidir. Bağımsız değişken türü karmaşık bir *soyut bildirimci*tarafından verilir. Bağımsız değişken türündeki yıldız işareti etrafındaki parantezler gereklidir; Bunlar olmadan bağımsız değişken türü, **iki** değere üç işaretçilerin bir dizisi olur. Özet bildirimcilerin bir tartışması ve örnekleri için bkz. [soyut Bildirimciler](../c-language/c-abstract-declarators.md).
 
 ```
 union sign         /* Array of arrays of pointers */
@@ -117,15 +117,15 @@ union sign         /* Array of arrays of pointers */
 } **var[5][5];
 ```
 
-Yukarıdaki örnekte gösterildiği gibi bir işaretçi başka bir işaretçiye işaret edebilir ve dizileri öğe olarak bir dizi içerebilir. Burada `var` beş öğe dizisidir. Her iki üyeli birleşimler işaretçileri işaretçilere beş öğe dizisi öğedir.
+Yukarıdaki örnekte gösterildiği gibi, bir işaretçi başka bir işaretçiye işaret edebilir ve bir dizi öğe olarak diziler içerebilir. İşte `var` beş öğeden oluşan dizi. Her öğe, iki üyeli birleşimler için işaretçilerin işaretçilerinden oluşan beş öğeli bir dizidir.
 
 ```
 union sign *(*var[5])[5]; /* Array of pointers to arrays
                              of pointers to unions        */
 ```
 
-Bu örnekte, parantezler yerleşimini bildirim anlamını nasıl değiştiğini gösterir. Bu örnekte, `var` birleşimler işaretçiler beş öğe diziler işaretçilere beş öğe dizisidir. Nasıl kullanılacağına ilişkin örnekler için `typedef` karmaşık bildirimlerinden kaçınmak için bkz: [Typedef bildirimleri](../c-language/typedef-declarations.md).
+Bu örnekte, ayracın yerleşiminin bildirimin anlamı nasıl değiştiği gösterilmektedir. Bu örnekte, `var` birleşimlere işaretçilerin beş öğeli dizileri için işaretçilerin beş öğeli bir dizisidir. Karmaşık bildirimlerin olmaması için kullanmanın `typedef` örnekleri için bkz. [typedef bildirimleri](../c-language/typedef-declarations.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Türler](../c-language/declarations-and-types.md)
+[Bildirimler ve türler](../c-language/declarations-and-types.md)

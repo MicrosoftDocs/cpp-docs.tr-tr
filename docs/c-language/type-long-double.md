@@ -14,8 +14,8 @@ ms.locfileid: "62344817"
 ---
 # <a name="type-long-double"></a>long double Türü
 
-`long double` Türüdür aynı [çift](../c-language/type-double.md) türü.
+`long double` Tür, [Double](../c-language/type-double.md) türüyle aynıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Temel Türleri Depolama](../c-language/storage-of-basic-types.md)
+[Temel türlerin depolanması](../c-language/storage-of-basic-types.md)

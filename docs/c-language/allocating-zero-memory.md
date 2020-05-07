@@ -14,7 +14,7 @@ ms.locfileid: "62313499"
 ---
 # <a name="allocating-zero-memory"></a>Sıfır Bellek Ayırma
 
-**ANSI 4.10.3** davranışını `calloc`, `malloc`, veya `realloc` istenen boyut sıfırsa işlevi
+**ANSI 4.10.3** İstenen boyut sıfırsa `calloc`, `malloc`, veya `realloc` işlevinin davranışı
 
 `calloc`, `malloc` ve `realloc` işlevleri, bir bağımsız değişken olarak sıfırı kabul eder. Gerçek bellek tahsis edilmez, ancak geçerli bir işaretçi döndürülür ve bellek bloğu daha sonra realloc tarafından değiştirilebilir.
 

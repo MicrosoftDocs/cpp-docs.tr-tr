@@ -31,9 +31,9 @@ Yalnızca kaynak DLL 'SI oluşturmak için yeni bir Windows DLL (MFC olmayan) pr
 
 1. DLL 'nin kaynaklarını içeren yeni bir kaynak betiği oluşturun (örneğin, bir dize veya bir menü). `.rc` dosyasını kaydedin.
 
-1. **Proje** menüsünde, **Varolan öğe Ekle**' yi seçin ve ardından yeni `.rc` dosyasını projeye ekleyin.
+1. **Proje** menüsünde, **Varolan öğe Ekle**' yi seçin ve ardından yeni `.rc` dosyayı projeye ekleyin.
 
-1. [/NOENTRY](reference/noentry-no-entry-point.md) bağlayıcı seçeneğini belirtin. `/NOENTRY`, bağlayıcının `_main` bir başvuruyu DLL 'ye bağlamasını önler; Bu seçenek yalnızca kaynak DLL oluşturmak için gereklidir.
+1. [/NOENTRY](reference/noentry-no-entry-point.md) bağlayıcı seçeneğini belirtin. `/NOENTRY`bağlayıcının DLL 'ye başvuru `_main` bağlamasını önler; Bu seçenek yalnızca kaynak DLL oluşturmak için gereklidir.
 
 1. DLL 'yi oluşturun.
 
@@ -46,9 +46,9 @@ Yalnızca kaynak DLL 'SI oluşturmak için yeni bir Windows DLL (MFC olmayan) pr
 
 1. DLL 'nin kaynaklarını içeren yeni bir kaynak betiği oluşturun (örneğin, bir dize veya bir menü). `.rc` dosyasını kaydedin.
 
-1. **Proje** menüsünde, **Varolan öğe Ekle**' yi seçin ve ardından yeni `.rc` dosyasını projeye ekleyin.
+1. **Proje** menüsünde, **Varolan öğe Ekle**' yi seçin ve ardından yeni `.rc` dosyayı projeye ekleyin.
 
-1. [/NOENTRY](reference/noentry-no-entry-point.md) bağlayıcı seçeneğini belirtin. `/NOENTRY`, bağlayıcının `_main` bir başvuruyu DLL 'ye bağlamasını önler; Bu seçenek yalnızca kaynak DLL oluşturmak için gereklidir.
+1. [/NOENTRY](reference/noentry-no-entry-point.md) bağlayıcı seçeneğini belirtin. `/NOENTRY`bağlayıcının DLL 'ye başvuru `_main` bağlamasını önler; Bu seçenek yalnızca kaynak DLL oluşturmak için gereklidir.
 
 1. DLL 'yi oluşturun.
 
@@ -56,7 +56,7 @@ Yalnızca kaynak DLL 'SI oluşturmak için yeni bir Windows DLL (MFC olmayan) pr
 
 ## <a name="use-a-resource-only-dll"></a>Yalnızca kaynak DLL kullanma
 
-Yalnızca Resource DLL kullanan uygulama [LoadLibraryEx](loadlibrary-and-afxloadlibrary.md) ÖĞESINI veya dll 'e açık bir şekilde bağlanmak için ilgili işlevi çağırmalıdır. Kaynaklara erişmek için, her türlü kaynak üzerinde çalışan genel işlevleri `FindResource` ve `LoadResource`çağırın. Veya, kaynağa özgü aşağıdaki işlevlerden birini çağırın:
+Yalnızca Resource DLL kullanan uygulama [LoadLibraryEx](loadlibrary-and-afxloadlibrary.md) ÖĞESINI veya dll 'e açık bir şekilde bağlanmak için ilgili işlevi çağırmalıdır. Kaynaklara erişmek için, genel işlevleri `FindResource` çağırın ve `LoadResource`her türlü kaynak üzerinde çalışır. Veya, kaynağa özgü aşağıdaki işlevlerden birini çağırın:
 
 - `FormatMessage`
 
@@ -72,9 +72,9 @@ Yalnızca Resource DLL kullanan uygulama [LoadLibraryEx](loadlibrary-and-afxload
 
 - `LoadString`
 
-Uygulama, kaynakları kullanmayı bitirdiğinde `FreeLibrary` çağırmalıdır.
+Uygulama, kaynakları kullanmayı `FreeLibrary` bitirdiğinde çağırmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak dosyalarla çalışma](../windows/working-with-resource-files.md)\
-[Visual Studio 'daC++ C/dll oluşturma](dlls-in-visual-cpp.md)
+[Visual Studio 'da C/C++ dll 'Leri oluşturma](dlls-in-visual-cpp.md)

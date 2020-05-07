@@ -16,9 +16,9 @@ ms.locfileid: "62195240"
 ---
 # <a name="exporting-c-functions-for-use-in-c-language-executables"></a>C Dili Yürütülebilir Öğelerinde Kullanmak için C++ İşlevlerini Dışarı Aktarma
 
-C++ programında yazılan C dili modülünden erişmek istiyorsanız, bu işlevler C++ bağlantısı yerine C bağlaması olan bildirmelidir DLL'de işlevleri varsa. Aksi belirtilmediği sürece, C++ Derleyici C++ tür kullanımı uyumlu (ad düzenlemesi olarak da bilinir) adlandırma ve çağırma kuralları, C'den çağırmak zor olabilecek C++ kullanır.
+C dili modülünden erişmek istediğiniz C++ dilinde yazılmış bir DLL 'de işlevleriniz varsa, bu işlevleri C++ bağlantısı yerine C bağlantısıyla bildirmelisiniz. Aksi belirtilmediği sürece, C++ derleyicisi C++ türü güvenli adlandırma (ad dekorasyonu olarak da bilinir) ve C++ çağırma kurallarını kullanır ve bu da C 'den çağrı yapmak zor olabilir.
 
-C bağlaması belirtmek için belirtin `extern "C"` , işlev bildirimleri için. Örneğin:
+C bağlantısı belirtmek için, işlev `extern "C"` bildirimleriniz için belirtin. Örneğin:
 
 ```
 extern "C" __declspec( dllexport ) int MyFunc(long parm1);
@@ -26,19 +26,19 @@ extern "C" __declspec( dllexport ) int MyFunc(long parm1);
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [.Def dosyalarını kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-def-files.md)
+- [. Def dosyalarını kullanarak DLL 'den dışarı aktarma](exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
+- [__Declspec (dllexport) kullanarak DLL 'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS kullanarak dışarı ve içeri aktarma](exporting-and-importing-using-afx-ext-class.md)
 
-- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C veya C++ Dili Çalıştırılabilirlerinde kullanmak için C işlevlerini dışarı aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
+- [Hangi dışarı aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
 - [__declspec(dllimport) kullanarak bir uygulamaya aktarma](importing-into-an-application-using-declspec-dllimport.md)
 
-- [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
+- [DLL 'yi başlatma](run-time-library-behavior.md#initializing-a-dll)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 

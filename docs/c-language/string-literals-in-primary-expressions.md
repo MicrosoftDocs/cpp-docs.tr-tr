@@ -13,8 +13,8 @@ ms.locfileid: "62157831"
 ---
 # <a name="string-literals-in-primary-expressions"></a>Birincil İfadelerdeki Dize Değişmez Değerleri
 
-Bir "dize sabit değeri" bir karakter, geniş karakter veya çift tırnak içine alınmış bitişik karakter dizisidir. Dize sabit değerleri veya öğeleri, değişken olmadıkları için atama işleminde bir sol işlenen olamaz. Dize sabit değerinin türü, `char` dizisidir (veya geniş dize sabit değerleri için `wchar_t` dizisidir). İfadelerdeki diziler işaretçilere dönüştürülür. Bkz: [dize değişmez değerleri](../c-language/c-string-literals.md) dizeleri hakkında daha fazla bilgi için.
+Bir "dize sabit değeri" bir karakter, geniş karakter veya çift tırnak içine alınmış bitişik karakter dizisidir. Dize sabit değerleri veya öğeleri, değişken olmadıkları için atama işleminde bir sol işlenen olamaz. Dize sabit değerinin türü, `char` dizisidir (veya geniş dize sabit değerleri için `wchar_t` dizisidir). İfadelerdeki diziler işaretçilere dönüştürülür. Dizeler hakkında daha fazla bilgi için bkz. [dize sabit değerleri](../c-language/c-string-literals.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Birincil İfadeler](../c-language/c-primary-expressions.md)
+[C birincil Ifadeler](../c-language/c-primary-expressions.md)

@@ -13,13 +13,13 @@ ms.locfileid: "62345129"
 ---
 # <a name="system-function"></a>system İşlevi
 
-**ANSI 4.10.4.5** içeriği ve dize tarafından yürütülme modu **sistem** işlevi
+**ANSI 4.10.4.5** Dizenin **sistem** işlevi tarafından yürütülme içeriği ve modu
 
-**Sistem** işlevi yürütür bir iç işletim sistem komutunu ya da bir. EXE, .COM (. Windows NT CMD) veya. BAT dosyasını bir C programının içinden değil, komut satırından.
+**Sistem** işlevi bir iç işletim sistemi komutunu veya bir öğesini yürütür. EXE,. COM (. Windows NT 'de CMD) veya. BAT dosyası, komut satırından değil, bir C programından içinden.
 
 Sistem işlevi komut yorumlayıcıyı bulur; bu yorumlayıcı, genellikle Windows NT işletim sisteminde CMD.EXE veya Windows'da COMMAND.COM'dur. Daha sonra sistem işlevi, bağımsız değişken dizesini komut yorumlayıcıya geçirir.
 
-Daha fazla bilgi için [sistemi, _wsystem](../c-runtime-library/reference/system-wsystem.md).
+Daha fazla bilgi için bkz. [sistem, _wsystem](../c-runtime-library/reference/system-wsystem.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

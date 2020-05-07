@@ -11,7 +11,7 @@ ms.locfileid: "64343145"
 ---
 # <a name="reading-ranges"></a>Okuma Aralıkları
 
-**ANSI 4.9.6.2** ilk bir tire (-) karakteri ya da son karakter % için scanlist içindeki yorumunu [dönüştürme `fscanf` işlevi
+**ANSI 4.9.6.2 &** % [ `fscanf` İşlevinde dönüştürme için scanlist içindeki ilk veya son karakteri olmayan bir tire (-) karakterinin yorumu
 
 Aşağıdaki satır
 
@@ -19,7 +19,7 @@ Aşağıdaki satır
 fscanf( fileptr, "%[A-Z]", strptr);
 ```
 
-herhangi bir sayıda aralığına A-Z dizesi hangi karakter okur `strptr` noktaları.
+A-Z aralığındaki herhangi bir sayıda karakteri, işaret eden `strptr` dizeye okur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

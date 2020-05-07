@@ -19,7 +19,7 @@ ms.locfileid: "62232903"
 ---
 # <a name="incomplete-types"></a>Eksik Türler
 
-Bir *eksik tür* , bir tanımlayıcıyı açıklayan, ancak tanımlayıcının boyutunu belirlemek için gereken bilgileri eksik bir türdür. Tamamlanmamış bir türü olabilir:
+*Tamamlanmamış tür* , tanımlayıcıyı tanımlayan, ancak tanımlayıcının boyutunu belirlemekte gerekli bilgiler bulunmayan bir türdür. Tamamlanmamış bir tür şu olabilir:
 
 - Üyelerini belirtmediğiniz bir yapı türü.
 
@@ -27,7 +27,7 @@ Bir *eksik tür* , bir tanımlayıcıyı açıklayan, ancak tanımlayıcının b
 
 - Boyutlarını belirtmediğiniz bir dizi türü.
 
-**Void** türü, tamamlanamayan bir eksik tür. Eksik bir türü tamamlamak için eksik bilgileri belirtin. Aşağıdaki örnekler, eksik türlerin nasıl oluşturulduğunu ve tamamlandığını gösterir.
+**Void** türü, tamamlanamayacak tamamlanmamış bir tür. Eksik bir türü tamamlamak için eksik bilgileri belirtin. Aşağıdaki örnekler, eksik türlerin nasıl oluşturulduğunu ve tamamlandığını gösterir.
 
 - Eksik bir yapı türü oluşturmak için üyelerini belirtmeden bir yapı türü bildirin. Bu örnekte, `ps` işaretçisi `student` adlı eksik bir yapı türüne işaret eder.
 
@@ -58,4 +58,4 @@ Bir *eksik tür* , bir tanımlayıcıyı açıklayan, ancak tanımlayıcının b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Türler](../c-language/declarations-and-types.md)
+[Bildirimler ve türler](../c-language/declarations-and-types.md)

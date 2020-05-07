@@ -16,31 +16,31 @@ ms.locfileid: "62325526"
 ---
 # <a name="l-value-and-r-value-expressions"></a>L-Değeri ve R-Değeri İfadeleri
 
-Bellek konumlarına başvurmak ifadeleri "l-value" ifadeleri çağrılır. Bir l değeri eşittir işaretinin sol tarafında görünebilir olduğunu belirtmek, "sol" bir değer veya bir depolama bölgenin "Konum Belirleyicisi" değerini temsil eder (**=**). L-değerler genellikle tanıtıcılardır.
+Bellek konumlarına başvuran ifadeler "l-value" ifadeleri olarak adlandırılır. Bir l-değeri, bir depolama bölgesinin "Konumlandırıcı" değerini veya "left" değerini temsil eder. Bu, eşittir işaretinin solunda (**=**) görünebilirler. L-Values genellikle tanımlayıcılardır.
 
-İfadeleri değiştirilebilir konumlara başvuran "değiştirilebilir ı-değerleri." olarak adlandırılır Bir dizi türü, tamamlanmamış bir türü veya bir tür ile değiştirilebilir bir l-değeri olamaz **const** özniteliği. Yapılar ve birleşimler değiştirilebilir bir l-değeri olması için bunların herhangi bir üye olmamalıdır **const** özniteliği. O konumda depolanan değeri olsa da değişkenin değeri olarak bir depolama konumu tanımlayıcı adını gösterir.
+Değiştirilebilir konumlara başvuran ifadelere "değiştirilebilir l-Values" adı verilir. Değiştirilebilir bir l-değeri bir dizi türü, tamamlanmamış bir tür ya da **const** özniteliği olan bir tür olamaz. Yapılar ve birleşimler için, **sabit** özniteliğine sahip hiçbir üye içermemelidir. Tanımlayıcının adı bir depolama konumunu belirtir, ancak değişkenin değeri o konumda depolanan değerdir.
 
-Bir tanımlayıcı, bir bellek konumuna başvuruyorsa ve aritmetik, yapı, birleşim veya işaretçi türü ise, değiştirilebilir bir l-değeri olan. Örneğin, varsa `ptr` bir depolama bölgesi için bir işaretçi ise `*ptr` değiştirilebilir bir l-depolama bölgesine belirten değeri olan `ptr` noktaları.
+Bir tanımlayıcı, bir bellek konumuna başvuruyorsa ve türü aritmetik, yapı, birleşim veya işaretçi ise değiştirilebilir bir l değeridir. Örneğin, `ptr` bir depolama bölgesinin işaretçisiyse, `*ptr` depolama bölgesini `ptr` işaret eden noktaya atayan değiştirilebilir bir l değeri.
 
-Aşağıdaki C deyimleri l-değeri ifadeleri olabilir:
+Aşağıdaki C ifadelerinin herhangi biri l-Value ifadesi olabilir:
 
-- Bir tamsayı, kayan, işaretçi, yapı veya birleşim türü tanımlayıcısı
+- İntegral, kayan, işaretçi, yapı veya birleşim türü tanımlayıcısı
 
-- Bir alt simge (**[]**) için bir dizi değerlendirmez ifadesi
+- Bir dizi olarak değerlendirilmeyecek bir alt simge (**[]**) ifadesi
 
-- Üye seçimi ifade (**->** veya **.**)
+- Üye seçim ifadesi (**->** veya **.**)
 
-- Birli yöneltme (<strong>\*</strong>) için bir dizi başvurmuyor ifadesi
+- Bir diziye başvurmayan birli<strong>\*</strong>-yöneltme () ifadesi
 
-- Parantez içinde bir l-değeri ifadesi
+- Parantez içinde bir l-değer ifadesi
 
-- A **const** nesne (değiştirilemez l-değeri)
+- Bir **const** nesnesi (değiştirilemeyen bir l değeri)
 
-"R" terimi, bazen bir ifadenin değerini tanımlamak ve bir l-değerden ayırmak için kullanılır. Tüm l-değerler r değerlerdir ancak tüm r değerleri l-değerler.
+"R-value" terimi bazen bir ifadenin değerini tanımlamak ve onu bir l değerinden ayırmak için kullanılır. Tüm l değerleri r-Values, ancak tüm r değerleri l-Values değildir.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Microsoft C yayınları l-değerler kullanılacak l-değerler nesnenin boyutunu atama uzatılmış değil sürece veren ANSI C standardının bir uzantısı içerir. (Bkz [tür atama dönüştürmeleri](../c-language/type-cast-conversions.md) daha fazla bilgi için.) Bu özellik aşağıdaki örnekte gösterilmiştir:
+Microsoft C, ANSI C standardına, nesne boyutunun dönüştürme yoluyla UZAMAYAN sürece l-Values olarak kullanılmasına izin veren bir uzantısı içerir. (Daha fazla bilgi için bkz. [tür dönüştürme dönüştürmeleri](../c-language/type-cast-conversions.md) .) Aşağıdaki örnek bu özelliği göstermektedir:
 
 ```
 char *p ;
@@ -51,10 +51,10 @@ long l;
 (long) i = l ;          /* Illegal cast */
 ```
 
-Microsoft C için varsayılan Microsoft genişletmelerinin etkinleştirilmiş olduğu. Bu uzantıları devre dışı bırakmak için /Za derleyici seçeneğini kullanın.
+Microsoft C için varsayılan değer, Microsoft uzantılarının etkinleştirilme içindir. Bu uzantıları devre dışı bırakmak için/Za derleyici seçeneğini kullanın.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşlenenler ve İfadeler](../c-language/operands-and-expressions.md)
+[İşlenenler ve Ifadeler](../c-language/operands-and-expressions.md)

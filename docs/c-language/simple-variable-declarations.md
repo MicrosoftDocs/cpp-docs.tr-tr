@@ -14,42 +14,42 @@ ms.locfileid: "62158242"
 ---
 # <a name="simple-variable-declarations"></a>Basit Değişken Bildirimler
 
-Doğrudan bir bildirimcide en basit biçimi basit bir değişkenin bildirimi, değişkenin adını ve türünü belirtir. Ayrıca, değişken depolama sınıfı ve veri türünü belirtir.
+Basit bir değişkenin bildirimi, bir doğrudan bildirimci için en basit form, değişkenin adını ve türünü belirtir. Ayrıca, değişkenin depolama sınıfını ve veri türünü de belirtir.
 
-Depolama sınıfları veya türleri (veya her ikisi) değişken bildirimlerinde gerekir. Türsüz değişkenleri (gibi `var;`) uyarı oluşturur.
+Değişken bildirimlerinde Depolama sınıfları veya türleri (veya her ikisi de) gereklidir. Türsüz değişkenler (gibi `var;`) uyarı oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
 *bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İşaretçi*<sub>iyileştirilmiş</sub> *doğrudan bildirimcisi*
+&nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
 
 *doğrudan bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*
+&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*
 
 *tanımlayıcı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*rakam*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *rakam*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *basamak*
+&nbsp;&nbsp;&nbsp;&nbsp;*rakam olmayan*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *basamak olmayan*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *sayısı*
 
-Tarafından temsil edilen türleri yanı sıra, aritmetik, yapı, birleşim, numaralandırmalar ve void türleri için `typedef` adları, basit Bildirimciler tür belirticisi yazma tüm bilgileri sağlayan bu yana bir bildiriminde kullanılabilir. Daha karmaşık bildirimcileri işaretçisi, dizi ve işlev türleri gerektirir.
+Aritmetik, yapı, birleşim, numaralandırmalar ve void türler için ve adlara göre `typedef` temsil edilen türler için, tür belirleyicisi tüm yazma bilgilerini sağladığı için bir bildirimde basit Bildirimciler kullanılabilir. İşaretçi, dizi ve işlev türleri daha karmaşık Bildirimciler gerektirir.
 
-Virgülle ayırarak tanımlayıcıları listesini kullanabilirsiniz (**,**) çeşitli değişkenler aynı bildirimde belirtmek için. Bildiriminde tanımlanan tüm değişkenler aynı temel türüne sahip. Örneğin:
+Aynı bildirimde birkaç değişken belirtmek için virgülle (**,**) ayrılan tanımlayıcıların bir listesini kullanabilirsiniz. Bildirimde tanımlanan tüm değişkenler aynı temel türe sahip. Örneğin:
 
 ```C
 int x, y;        /* Declares two simple variables of type int */
 int const z = 1; /* Declares a constant value of type int */
 ```
 
-Değişkenleri `x` ve `y` herhangi bir değer tarafından tanımlanan kümeye de barındırabilir `int` türü için belirli bir uygulama. Basit Nesne `z` değeri 1 başlatılır ve değiştirilemez.
+Değişkenler `x` ve `y` belirli bir uygulama için `int` türü tarafından tanımlanan küme içinde herhangi bir değeri tutabilir. Basit nesne `z` 1 değerine başlatılır ve değiştirilebilir değildir.
 
-Varsa bildirimi `z` başlatılmamış bir statik değişken için olan ya da dosya kapsamında başlangıç değeri 0 olarak alırsınız ve bu değer değiştirilemeyen olacaktır.
+Bildirimi `z` başlatılmamış bir statik değişken için ise veya dosya kapsamımda olsaydı, 0 başlangıç değerini alır ve bu değer değiştirilemez.
 
 ```C
 unsigned long reply, flag; /* Declares two variables
                               named reply and flag     */
 ```
 
-Bu örnekte, her iki değişken `reply` ve `flag`, sahip `unsigned long` yazın ve işaretsiz tamsayı değerleri tutun.
+Bu örnekte, `reply` ve `flag`öğelerinin her ikisi de `unsigned long` türünde ve işaretsiz tam sayı değerlerini tutar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Yazmaçlar: Yazmaçların kullanılabilirliği'
+title: 'Yazmaçlar: Yazmaçların Kullanılabilirliği'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - registers
@@ -11,11 +11,11 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62232512"
 ---
-# <a name="registers-availability-of-registers"></a>Yazmaçlar: Yazmaçların kullanılabilirliği
+# <a name="registers-availability-of-registers"></a>Yazmaçlar: Yazmaçların Kullanılabilirliği
 
-**ANSI 3.5.1** istediğiniz nesneleri gerçekten yerleştirilebileceğini kayıtlara register depolama sınıfı tanımlayıcısı kullanarak kapsamı
+**ANSI 3.5.1** Kayıt depolama sınıfı belirticisinin kullanımıyla, kayıtların gerçekten kayıtlara yerleştirilebileceği kapsam
 
-Derleyici yazmaç değişkenlerine yönelik kullanıcı isteklerini dikkate almaz. Bunun yerine, seçimleri iyileştirirken kendi sağlar.
+Derleyici, YAZMAÇ değişkenleri için Kullanıcı isteklerini dikkate almaz. Bunun yerine, iyileştirirken bir seçenek sunar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

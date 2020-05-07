@@ -11,7 +11,7 @@ ms.locfileid: "62312693"
 ---
 # <a name="character-sequences"></a>Karakter Sıraları
 
-**ANSI 3.8.2** kaynak dosyası karakter dizilerinin eşleme
+**ANSI 3.8.2 &** Kaynak dosya karakter sıralarının eşlemesi
 
 Önişlemci deyimleri, kaçış dizilerinin desteklenmemesi dışında kaynak dosyası deyimleriyle aynı karakter kümesini kullanır.
 

@@ -11,7 +11,7 @@ ms.locfileid: "64343440"
 ---
 # <a name="messages-generated-by-the-perror-function"></a>perror İşlevinin Ürettiği İletiler
 
-**ANSI 4.9.10.4** tarafından oluşturulan iletileri `perror` işlevi
+**ANSI 4.9.10.4** `perror` İşlev tarafından oluşturulan iletiler
 
 `perror` işlevi bu iletileri oluşturur:
 

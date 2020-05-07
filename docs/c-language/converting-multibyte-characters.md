@@ -13,10 +13,10 @@ ms.locfileid: "62312414"
 ---
 # <a name="converting-multibyte-characters"></a>Birden Çok Baytlı Karakterleri Dönüştürme
 
-**ANSI 3.1.3.4** çok baytlı karakterleri ilgili geniş karakterlere (kodlara) bir geniş karakter sabiti için dönüştürmek için kullanılan geçerli yerel ayarı
+**ANSI 3.1.3.4 &** Çok baytlı karakterleri, geniş karakter sabiti için karşılık gelen geniş karakterlere (kodlar) dönüştürmek için kullanılan geçerli yerel ayar
 
-Geçerli yerel ayar varsayılan olarak "C" yerel ayarıdır. İle değiştirilebilir [#pragma setlocale](../preprocessor/setlocale.md).
+Geçerli yerel ayar varsayılan olarak "C" yerel ayarıdır. [#Pragma setlocale](../preprocessor/setlocale.md)ile değiştirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakterler](../c-language/characters.md)
+[Karakterle](../c-language/characters.md)

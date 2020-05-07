@@ -17,17 +17,17 @@ ms.locfileid: "62195292"
 ---
 # <a name="fixing-release-build-problems"></a>Yayın Derlemesi Sorunlarını Giderme
 
-Yayın derlemesi için hata ayıklama derlemeden değiştirdikten sonra kodunuzu derleme hataları oluşturur, denetlemeniz gereken bazı alanlar vardır.
+Kodunuz hata ayıklama derlemesinden sürüm derlemesine geçiş sonrasında derleme hataları oluşturursa, denetlemeniz gereken bazı bölümler vardır.
 
-Hata ayıklama derlemesi sırasında almadı bir en iyi duruma getirilmiş (sürüm) derleme sırasında derleyici uyarıları alabilirsiniz.
+Bir hata ayıklama derlemesi sırasında almadığınızda, iyileştirilmiş (yayın) bir derleme sırasında derleyici uyarıları alabilirsiniz.
 
-- [ASSERT deyimleri inceleyin](using-verify-instead-of-assert.md)
+- [ONAYLAMA deyimlerini inceleyin](using-verify-instead-of-assert.md)
 
-- [Bellek üzerine yazmalar için onay hata ayıklama derlemesini kullanma](using-the-debug-build-to-check-for-memory-overwrite.md)
+- [Bellek üzerine yazma işlemlerini denetlemek Için hata ayıklama derlemesini kullanın](using-the-debug-build-to-check-for-memory-overwrite.md)
 
-- [Yayın derleme için hata ayıklama bilgisi oluşturmayı Aç](how-to-debug-a-release-build.md)
+- [Yayın derlemesi için hata ayıklama bilgileri oluşturmayı aç](how-to-debug-a-release-build.md)
 
-- [Belleğin üzerine yazma denetimi](checking-for-memory-overwrites.md)
+- [Bellek üzerine yazmayı denetle](checking-for-memory-overwrites.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

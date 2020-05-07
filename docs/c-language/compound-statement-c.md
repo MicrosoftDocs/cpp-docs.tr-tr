@@ -14,30 +14,30 @@ ms.locfileid: "62312576"
 ---
 # <a name="compound-statement-c"></a>Bileşik Deyim (C)
 
-Bileşik deyim (Ayrıca adlı bir "yapı taşıdır") genellikle başka bir deyim gövdesi olarak aşağıdaki gibi görünür **varsa** deyimi. [Bildirimler ve türler](../c-language/declarations-and-types.md) bileşik bir deyimin kafası görünebilir bildirimleri anlamını ve formu tanımlar.
+Bileşik bir ifade ("Block" olarak da bilinir) genellikle başka bir deyimin gövdesi olarak görünür (örneğin, **IF** ifadesi). [Bildirimler ve türler](../c-language/declarations-and-types.md) , bileşik bir deyimin başlangıcında görünebilen bildirimlerin formunu ve anlamını açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Bileşik deyim*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{** *bildirim listesi*<sub>iyileştirilmiş</sub> *deyim listesindeki*<sub>iyileştirilmiş</sub> **}**
+*bileşik ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-List*<sub>opt</sub> *bildirimini-List*<sub>opt</sub> **}**
 
-*bildirim listesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim listesi* *bildirimi*
+*bildirim-liste*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bağımsız*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-liste* *bildirimi*
 
-*ifade listesinin*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade listesinin* *deyimi*
+*Ekstre-liste*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre-List* *ekstresi*
 
-Bildirimleri varsa, bunlar önce herhangi bir deyim gelmelidir. Bileşik deyim başında bildirilen her bir tanımlayıcının kapsamını, bildirim noktasından bloğun sonuna kadar genişletir. Tanımlayıcısının bildirimi iç bloğu içinde olmadığı sürece blok içinde görülebilir.
+Bildirimler varsa, bunların herhangi bir deyimden önce gelmesi gerekir. Bir bileşik deyimin başlangıcında belirtilen her tanımlayıcı kapsam, kendi bildirim noktasından bloğunun sonuna kadar uzanır. Bir iç blokta aynı tanımlayıcıya ait bir bildirim mevcut değilse, blok genelinde görünür.
 
-Bileşik deyim tanımlayıcıları varsayılmıştır **otomatik** açıkça aksi ile bildirilen sürece **kaydetme**, **statik**, veya `extern`, İşlevler, hariç yalnızca olabilen `extern`. Devre dışı bırakabilirsiniz `extern` işlev bildirimleri ve işlev Belirleyicisi hala olacaktır `extern`.
+Bir bileşik deyimdeki tanımlayıcılar, daha önce yalnızca bir olabilen `extern` **yazmaç**, **static**veya `extern`, Except işlevleri ile açıkça belirtilmediği sürece **Otomatik** olarak adlandırılır. İşlev bildirimlerinde `extern` belirticisi devre dışı bırakabilirsiniz ve işlev yine de olur `extern`.
 
-Depolama ayrılmamış bir değişken, başlatma izin verilmez ve depolama sınıfı ile bileşik deyim içinde bildirilen işlev `extern`. Bildirimi bir dış değişkenine başvuruyor veya işlev başka bir yerde tanımlanmış.
+Depolama sınıfı `extern`ile Birleşik bir ifadede bir değişken veya işlev bildirilirse, depolama ayrılmamış ve başlatmaya izin verilmez. Bildirim, başka bir yerde tanımlanmış bir dış değişken veya işleve başvurur.
 
-İle bir blok içinde tanımlanan değişkenleri **otomatik** veya **kaydetme** anahtar sözcüğü yeniden ve gerekirse başlatıldı, her zaman bileşik deyim girilir. Bileşik deyim çıkıldı sonra bu değişkenleri tanımlı değil. Bir blok içinde bildirilen bir değişken sahipse **statik** öznitelik, değişken, programın yürütülmesi başlar ve değerini program boyunca tutar başlatılır. Bkz: [depolama sınıfları](../c-language/c-storage-classes.md) hakkında bilgi için **statik**.
+**Auto** veya **register** anahtar sözcüğüyle bir blokta belirtilen değişkenler yeniden ayrılır ve gerekirse bileşik deyimin her girildiği her seferinde başlatılır. Bu değişkenler bileşik deyimden çıkıldıktan sonra tanımlanmamıştır. Bir blok içinde bildirildiği bir değişkenin **static** özniteliği varsa, program yürütme başladığında değişken başlatılır ve değeri program boyunca tutar. **Statik**hakkında bilgi için bkz. [Depolama sınıfları](../c-language/c-storage-classes.md) .
 
-Bu örnekte, bir bileşik deyimi gösterilmektedir:
+Bu örnekte bileşik bir ifade gösterilmektedir:
 
 ```
 if ( i > 0 )
@@ -48,7 +48,7 @@ if ( i > 0 )
 }
 ```
 
-Bu örnekte, `i` 0'dan büyük olan tüm ifadeleri bileşik deyim içinde sırayla yürütülür.
+Bu örnekte, `i` 0 ' dan büyükse, bileşik deyimin içindeki tüm deyimler sırasıyla yürütülür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -11,7 +11,7 @@ ms.locfileid: "62232767"
 ---
 # <a name="interactive-devices"></a>Etkileşimli Cihazlar
 
-**ANSI 2.1.2.3** ne etkileşimli bir cihaz oluşturur
+**ANSI 2.1.2.3** Etkileşimli bir cihazı oluşturan
 
 Microsoft C, klavye ve ekranı etkileşimli cihazlar olarak tanımlar.
 

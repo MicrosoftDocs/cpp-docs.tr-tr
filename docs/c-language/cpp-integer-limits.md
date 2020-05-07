@@ -15,15 +15,15 @@ ms.locfileid: "72778371"
 ---
 # <a name="c-and-c-integer-limits"></a>C ve C++ tamsayı sınırları
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Ve C++ ' deki tamsayı türleri için sınırlar aşağıdaki tabloda listelenmiştir. Bu sınırlar, `<limits.h>` C standart üstbilgi dosyasında tanımlanmıştır. C++ Standart kitaplık üst bilgisi `<limits>`, `<limits.h>` içeren `<climits>` içerir.
+C ve C++ içindeki tamsayı türleri için sınırlar aşağıdaki tabloda listelenmiştir. Bu sınırlar, C standart üstbilgi dosyasında `<limits.h>`tanımlanmıştır. C++ standart kitaplığı üst bilgisi `<limits>` `<climits>`içerir `<limits.h>`.
 
 Microsoft C Ayrıca, 8-, 16-, 32 veya 64-bit tam sayı türleri olan boyutlu tamsayı değişkenlerinin bildirimine izin verir. C 'de boyutlandırılmış tamsayılar hakkında daha fazla bilgi için bkz. [boyutlandırılmış tamsayı türleri](../c-language/c-sized-integer-types.md).
 
 ## <a name="limits-on-integer-constants"></a>Tamsayı sabitleri için sınırlar
 
-|**Sabit**|Açıklama|Değer|
+|**Sabit**|Anlamı|Değer|
 |------------------|-------------|-----------|
 |**CHAR_BIT**|En küçük değişkende bit alanı olmayan bit sayısı.|8|
 |**SCHAR_MIN**|**İşaretli char**türünde bir değişken için minimum değer.|-128|
@@ -42,7 +42,7 @@ Microsoft C Ayrıca, 8-, 16-, 32 veya 64-bit tam sayı türleri olan boyutlu tam
 |**LONG_MAX**|**Long**türünde bir değişken için maksimum değer.|2147483647|
 |**ULONG_MAX**|**İşaretsiz Long**türünde bir değişken için maksimum değer.|4294967295 (0xffffffff)|
 |**LLONG_MIN**|**Long Long**türünde bir değişken için minimum değer.|-9.223.372.036.854.775.807-1|
-|**LLONG_MAX**|**Long Long**türündeki bir değişken için maksimum değer.|9\.223.372.036.854.775.807|
+|**LLONG_MAX**|**Long Long**türündeki bir değişken için maksimum değer.|9.223.372.036.854.775.807|
 |**ULLONG_MAX**|**İşaretsiz Long**Long türündeki bir değişken için maksimum değer.|18446744073709551615 (0xffffffffffffffff)|
 
 Bir değer en büyük tamsayı gösterimini aşarsa, Microsoft derleyicisi bir hata oluşturur.

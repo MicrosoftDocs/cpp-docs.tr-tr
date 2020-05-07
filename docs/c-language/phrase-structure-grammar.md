@@ -16,7 +16,7 @@ ms.locfileid: "62232382"
 
 - [İfadeler](../c-language/summary-of-expressions.md)
 
-- [Bildirimleri](../c-language/summary-of-declarations.md)
+- [Name](../c-language/summary-of-declarations.md)
 
 - [Deyimler](../c-language/summary-of-statements.md)
 

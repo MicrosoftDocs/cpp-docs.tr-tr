@@ -33,11 +33,11 @@ C deyimleri belirteçler, ifadeler ve diğer deyimlerden oluşur. Başka bir dey
 
 [sıçrama-deyim](../c-language/break-statement-c.md)
 
-[try-except-deyimin](../c-language/try-except-statement-c.md) /* Microsoft 'a özgü \*/
+[try-except-deyimin](../c-language/try-except-statement-c.md) /* Microsoft 'a özgü\*/
 
-[try-finally-deyimin](../c-language/try-finally-statement-c.md) /\* Microsoft 'a özgü \*/
+[try-finally-deyimin](../c-language/try-finally-statement-c.md)  / \* Microsoft 'a özgü\*/
 
-Deyim gövdesi çoğu zaman bir "bileşik deyim" olur. Bileşik deyim, anahtar sözcükleri içerebilen diğer deyimlerden oluşur. Bileşik ifade, küme ayraçları ( **{}** ) ile sınırlandırılmıştır. Diğer tüm C deyimleri noktalı virgül ( **;** ) ile biter. Noktalı virgül, bir deyim sonlandırıcısıdır.
+Deyim gövdesi çoğu zaman bir "bileşik deyim" olur. Bileşik deyim, anahtar sözcükleri içerebilen diğer deyimlerden oluşur. Bileşik ifade, küme ayraçları (**{}**) ile sınırlandırılmıştır. Diğer tüm C deyimleri noktalı virgül (**;**) ile biter. Noktalı virgül, bir deyim sonlandırıcısıdır.
 
 İfade deyimi, [ifadelerde ve atamalarında](../c-language/expressions-and-assignments.md)tanıtılan aritmetik veya mantıksal işleçleri Içerebilen bir C ifadesi içerir. null deyimi, boş bir deyimdir.
 
