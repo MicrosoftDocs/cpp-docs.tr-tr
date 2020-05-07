@@ -26,9 +26,9 @@ ms.locfileid: "62345322"
 
 C kaynak programlarının kaynak karakter kümesi 7 bit ASCII karakter kümesi içinde yer alır, ancak ISO 646-1983 Sabit Kod Kümesi'nin bir üst kümesidir. Trigraf dizileri, C programlarının yalnızca ISO (Uluslararası Standartlar Enstitüsü) Sabit Kod Kümesi kullanarak yazılmasına izin verir. Trigraflar, derleyicinin karşılık gelen noktalama karakterleriyle değiştirdiği üç karakterli dizilerdir (birbirini izleyen iki soru işareti ile yazılır). Trigrafları, C kaynak dosyalarında bazı noktalama karakterleri için uygun grafik sunumlar içermeyen bir karakter kümesiyle kullanabilirsiniz.
 
-Trigrafları, c ++ 17 dilinden kaldırır. Uygulamaları uygulama tanımlı eşlemeden fiziksel kaynak dosyaya bir parçası olarak trigrafları desteklemeye devam edebilir *temel kaynak karakter kümesi*, ancak bunu yapmak için uygulamaları standart teşvik eder. C ++ 14, olduğu gibi c trigrafları desteklenir
+C++ 17, dilin üç aylık grafiğini kaldırır. Uygulamalar, fiziksel kaynak dosyasından *temel kaynak karakter kümesine*uygulama tanımlı eşlemenin bir parçası olarak üç aylık grafikleri desteklemeye devam edebilir, ancak standart uygulamaları bunu yapamıyor gibi teşvik eder. C++ 14 aracılığıyla trigraf C 'de olduğu gibi desteklenir.
 
-Visual C++ trigraf değiştirme desteklemeye devam eder, ancak varsayılan olarak devre dışıdır. Trigraf değiştirme etkinleştirme hakkında daha fazla bilgi için bkz: [/ZC: trigraphs (Trigrafları değiştirme)](../build/reference/zc-trigraphs-trigraphs-substitution.md).
+Visual C++ Üçlü grafik değişimini desteklemeye devam eder, ancak varsayılan olarak devre dışıdır. Üçlü grafik değişimini etkinleştirme hakkında daha fazla bilgi için bkz. [/Zc: trigraf (Trigraf değiştirme)](../build/reference/zc-trigraphs-trigraphs-substitution.md).
 
 Aşağıdaki tablo, dokuz trigraf dizisini göstermektedir. Noktalama karakterlerinin kaynak dosyasında ilk sütunda görünen tüm örneklerinin yerine karşılık gelen karakterler ikinci sütuna konur.
 
@@ -43,18 +43,18 @@ Aşağıdaki tablo, dokuz trigraf dizisini göstermektedir. Noktalama karakterle
 | ??' | ^ |
 | ??\< | { |
 | ??! | &#124; |
-| ??> | } |
+| ?? > | } |
 | ??- | ~ |
 
-Bir trigraf her zaman tek kaynaklı karakter olarak işlem görür. İlk çevirisi yapılmaz [çeviri aşaması](../preprocessor/phases-of-translation.md)tanıma çıkış karakterlerinin tanınmasından önce dize değişmez değerleri ve karakter sabitlerinde. Yalnızca yukarıdaki tabloda gösterilen dokuz trigraf tanınır. Diğer tüm karakter dizileri çevrilmeden bırakılır.
+Bir trigraf her zaman tek kaynaklı karakter olarak işlem görür. Trigraf çevirisi ilk [çeviri aşamasında](../preprocessor/phases-of-translation.md), dize sabit değerlerinde ve karakter sabitlerinde kaçış karakterlerinin tanınmadan önce gerçekleşir. Yalnızca yukarıdaki tabloda gösterilen dokuz trigraf tanınır. Diğer tüm karakter dizileri çevrilmeden bırakılır.
 
-Karakter kaçış dizisi  **\\?**, trigraf benzeri karakter dizilerinin yanlış yorumlanmasını önler. (Kaçış dizileri hakkında daha fazla bilgi için bkz: [kaçış dizileri](../c-language/escape-sequences.md).) Örneğin, `What??!` dizesini bu `printf` ifadesiyle yazdırmaya çalışırsanız
+Karakter kaçış sırası, ** \\?**, trigraf benzeri karakter sıralarının yanlış yorumlamasını önler. (Kaçış dizileri hakkında daha fazla bilgi için bkz. [kaçış dizileri](../c-language/escape-sequences.md).) Örneğin, dizeyi `What??!` this `printf` ifadesiyle yazdırmaya çalışırsanız
 
 ```C
 printf( "What??!\n" );
 ```
 
-Yazdırılan dize `What|` çünkü `??!` ile değiştirilir bir trigraf sırası `|` karakter. Diziyi düzgün şekilde yazdırmak için ifadeyi aşağıdaki gibi yazın:
+yazdırılan `What|` `??!` dize, `|` karakteri ile değiştirilmiş bir trigraf sırasıdır. Diziyi düzgün şekilde yazdırmak için ifadeyi aşağıdaki gibi yazın:
 
 ```C
 printf( "What?\?!\n" );

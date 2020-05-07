@@ -15,64 +15,64 @@ ms.locfileid: "62313551"
 ---
 # <a name="array-declarations"></a>Dizi Bildirimleri
 
-Bir "dizi bildirimi" dizi adları ve, öğelerinin türünü belirtir. Dizideki öğelerin sayısını da tanımlayabilirsiniz. Dizi türüne sahip bir değişken, dizi öğelerinin türü işaretçisi olarak kabul edilir.
+"Dizi bildirimi" diziyi adlandırır ve öğelerinin türünü belirtir. Ayrıca dizideki öğe sayısını da tanımlayabilir. Dizi türündeki bir değişken, dizi öğelerinin türüne yönelik bir işaretçi olarak değerlendirilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *init-declarator-list*<sub>iyileştirilmiş</sub> **;**
+*bildirim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-belirteçleri* *init-declarator-list*<sub>opt</sub> **;**
 
 *init-declarator-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list* **,** *init-declarator*
+&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list*  **,**  *init-declarator*
 
 *init-declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci* **=** *Başlatıcı*
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci* **=** *başlatıcısı*
 
 *bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İşaretçi*<sub>iyileştirilmiş</sub> *doğrudan bildirimcisi*
+&nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
 
-*doğrudan bildirimci*: /\* işlev bildirimcisi \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **[** *sabit-ifade*<sub>iyileştirilmiş</sub> **]** 
+*Direct-bildirimci*:/\* bir işlev bildirimci\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Direct-declarator*  **[**  *sabit ifade*<sub>katılımı</sub> **]**
 
-Çünkü *sabit-ifade* söz dizimine sahip iki forms isteğe bağlıdır:
+*Sabit ifade* isteğe bağlı olduğundan, sözdiziminin iki biçimi vardır:
 
-- İlk form, bir dizi değişkenini tanımlar. *Sabit-ifade* köşeli ayraçlar içindeki bağımsız değişken dizideki öğelerin sayısını belirtir. *Sabit-ifade*, varsa, integral türü ve sıfırdan büyük bir değer olmalıdır. Her öğe tarafından verilen türünde *tür tanımlayıcısı*, dışında herhangi bir tür olabilen `void`. Bir dizi öğesine bir işlev türü olamaz.
+- İlk form bir dizi değişkenini tanımlar. Köşeli ayraçlar içindeki *sabit ifade* bağımsız değişkeni dizideki öğelerin sayısını belirtir. Varsa, *sabit ifadesi*integral türüne ve sıfırdan büyük bir değere sahip olmalıdır. Her öğe tür *belirleyicisi*tarafından verilen türe sahiptir; bu, dışında `void`herhangi bir tür olabilir. Dizi öğesi bir işlev türü olamaz.
 
-- İkinci form, başka yerde tanımlanmış bir değişken bildirir. Bunu atlar *sabit-ifade* köşeli ayraçlar, ancak ayraçlar bağımsız değişken. Yalnızca, daha önce bir parametre olarak bildirilen dizi başlatıldı veya başka bir diziye bir başvuru açıkça tanımlanmış olarak bildirilmiş varsa bu formu kullanabilir programı.
+- İkinci form, başka bir yerde tanımlanmış bir değişken bildirir. Köşeli ayraçlar değil parantez içinde *sabit ifade* bağımsız değişkenini atlar. Bu formu yalnızca, diziyi önceden oluşturduysanız veya bir parametre olarak bildirildiği ya da programın başka bir yerde açıkça tanımlanmış bir diziye başvuru olarak bildirildiği durumlarda kullanabilirsiniz.
 
-Her iki formlarında *doğrudan bildirimci* can ve değişken adları değişkenin türünü değiştirin. Köşeli ayraçlar (**[]**) aşağıdaki *doğrudan bildirimci* bildirimci bir dizi türü için değiştirin.
+Her iki formda da, *doğrudan bildirimci* değişkeni adlandırır ve değişkenin türünü değiştirebilir. *Doğrudan bildirimci* izleyen köşeli ayraçlar (**[]**), bildirimcisini bir dizi türü olarak değiştirir.
 
-Tür niteleyicileri dizi türünde bir nesnenin bildiriminde görünebilir ancak niteleyicileri dizi yerine öğelerine uygulanır.
+Tür niteleyicileri dizi türünde bir nesnenin bildiriminde görünebilir, ancak niteleyiciler dizi kendisi yerine öğeler için geçerlidir.
 
-Bu formda parantezli sabit ifadeler listesini içeren bir dizi bildiricisi izleyerek ("çok boyutlu" bir dizi) oluşan bir dizi bildirebilirsiniz:
+Dizi bildirimcisini, bu formdaki parantez içine alınmış sabit ifadelerin bir listesiyle izleyerek, dizi dizilerini ("çok boyutlu" dizi) bildirebilirsiniz:
 
-> *tür belirticisi* *bildirimci* **[** *sabit-ifade* **]** **[** *sabit-ifade* **]** ...
+> *tür belirleyicisi* *bildirimci* **[** *sabit-ifade* **]** **[** *sabit-ifade* **]** ...
 
-Her *sabit-ifade* köşeli ayraç içinde belirli bir boyut içindeki öğelerin sayısını tanımlar: iki boyutlu diziler sahip iki ayraçlı ifadeler, üç boyutlu diziler üç sahip ve benzeri. Bir parametre olarak bildirilen dizi başlatılır veya başka bir diziye bir başvuru açıkça tanımlanmış olarak bildirilen ilk sabit ifade atlayabilirsiniz programı.
+Köşeli ayraçlar içindeki her bir *sabit ifade* , belirli bir boyuttaki öğelerin sayısını tanımlar: iki boyutlu diziler iki köşeli ayraçlı ifadeye sahiptir, üç boyutlu diziler üç ve bu şekilde devam eder. Diziyi oluşturduysanız, parametreyi bir parametre olarak bildirdiyseniz veya onu programın başka bir yerinde açıkça tanımlanmış bir diziye başvuru olarak bildirilirse, ilk sabit ifadeyi atlayabilirsiniz.
 
-İşaretçileri dizilerini çeşitli nesneleri karmaşık Bildirimciler kullanarak açıklandığı tanımlayabileceğiniz [daha karmaşık Bildirimcileri yorumlama](../c-language/interpreting-more-complex-declarators.md).
+[Daha karmaşık bildirimcilerin yorumlanması](../c-language/interpreting-more-complex-declarators.md)bölümünde açıklandığı gibi karmaşık Bildirimciler kullanarak çeşitli nesne türlerine işaretçiler dizisi tanımlayabilirsiniz.
 
-Diziler satıra göre depolanır. Örneğin, aşağıdaki dizi üç sütun olan iki satır oluşur:
+Diziler satıra göre saklanır. Örneğin, aşağıdaki dizi her biri üç sütunlu iki satırdan oluşur:
 
 ```C
 char A[2][3];
 ```
 
-Üç sütunu ilk satırın ikinci satırın üç sütunu tarafından izlenen ilk olarak depolanır. Başka bir deyişle, son alt simge en hızlı bir şekilde değişir.
+İlk satırın üç sütunu, ilk olarak ikinci satırın üç sütununun ardından depolanır. Yani, son alt simge en hızlı şekilde değişir.
 
-Bir dizinin tek bir öğesine başvurmak için bir alt simge ifadesi açıklandığı kullanın [sonek işleçleri](../c-language/postfix-operators.md).
+Bir dizinin tek bir öğesine başvurmak için, [sonek işleçleri](../c-language/postfix-operators.md)bölümünde açıklandığı gibi bir alt simge ifadesi kullanın.
 
 ## <a name="examples"></a>Örnekler
 
-Bu örneklerde, dizi bildirimleri gösterilmektedir:
+Bu örneklerde dizi bildirimleri gösterilmektedir:
 
 ```C
 float matrix[10][15];
 ```
 
-Adlı iki boyutlu dizi `matrix` her sahip 150 öğelere sahip **float** türü.
+Adlı `matrix` iki boyutlu dizide, her birinin **float** türüne sahip 150 öğesi vardır.
 
 ```C
 struct {
@@ -80,19 +80,19 @@ struct {
 } complex[100];
 ```
 
-Bu bir dizi yapılarının bildirimidir. Bu dizi 100 öğeleri; yine de sahip istiyor musunuz? Her iki üyeleri içeren bir yapıya öğesidir.
+Bu bir yapı dizisinin bir bildirimidir. Bu dizide 100 öğe vardır; her öğe iki üye içeren bir yapıdır.
 
 ```C
 extern char *name[];
 ```
 
-Bu ifade, türü ve bir işaretçiler dizisi adını bildirir `char`. Gerçek tanımı `name` başka bir yerde gerçekleşir.
+Bu ifade, işaretçilerin bir dizisinin türünü ve adını bildirir `char`. Gerçek tanımı başka bir `name` yerde gerçekleşir.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Bir dizinin en büyük boyutunu barındırmak için gereken tamsayı türü boyutudur **size_t**. STDDEF üstbilgi dosyasında tanımlanır. H **size_t** olduğu bir `unsigned int` 0x00000000 için 0x7CFFFFFF aralıkla.
+Bir dizinin en büyük boyutunu tutmak için gereken tamsayı türü **size_t**boyutudur. STDDEF başlık dosyasında tanımlanmıştır. H, **size_t** 0x00000000 `unsigned int` Ile 0x7CFFFFFF arasındadır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

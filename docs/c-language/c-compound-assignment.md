@@ -15,17 +15,17 @@ ms.locfileid: "62327905"
 ---
 # <a name="c-compound-assignment"></a>C Bileşik Atama
 
-Bileşik atama işleçleri, başka bir ikili işlecin basit atama işleciyle birleştirin. Bileşik atama işleçleri ek işleci tarafından belirtilen işlemi gerçekleştirmeyi ve ardından sol işleneni sonucu atayın. Örneğin, bir bileşik atama ifadesi gibi
+Bileşik atama işleçleri basit atama işlecini başka bir ikili işleçle birleştirir. Bileşik atama işleçleri ek işleç tarafından belirtilen işlemi gerçekleştirir, ardından sonucu sol işlenene atar. Örneğin, gibi bir bileşik atama ifadesi
 
-> *İfade1* **+=** *expression2*
+> *İfade1* **+=** *İfade2*
 
-olarak anlaşılabilir
+şöyle anlaşılabilirler
 
-> *İfade1* **=** *İfade1* **+** *expression2*
+> *İfade1* **=** *expression1* İfade1 **+** *İfade2*
 
-Bileşik atama ifadesi değerlendirilir ancak bileşik atama ifadesi genişletilmiş bir sürümü için eşdeğer olmadığından *İfade1* genişletilmiş sürümü değerlendirir sırasında bir kez  *expression1* iki kez: toplama işlemi ve atama işlemi.
+Ancak, bileşik atama ifadesi *İfade1* ' i yalnızca bir kez değerlendirirken, genişletilmiş sürüm *İfade1* ' i iki kez değerlendirirken, bileşik atama ifadesi genişletilmiş sürüme eşit değildir.
 
-Bileşik atama işlecinin işlenenleri tamsayı veya kayan türde olmalıdır. Her bileşik atama işleci, karşılık gelen ikili işleç gerçekleştirir ve tür işlenenlerini uygun şekilde kısıtlayan dönüştürmeleri gerçekleştirir. Toplama Ataması (`+=`) ve çıkarma Ataması (**-=**) işleçleri çalışması sağ işleneni integral türünde olmalıdır, işaretçi türünde bir sol işleneni de sahip olabilir. Bileşik atama işleminin sonucu, sol işlenen türü ve değeri vardır.
+Birleşik atama işlecinin işlenenleri integral veya kayan türde olmalıdır. Her bileşik atama işleci, karşılık gelen ikili işlecin gerçekleştirdiği dönüştürmeleri gerçekleştirir ve işlenenlerinin türlerini uygun şekilde kısıtlar. Ekleme-atama (`+=`) ve çıkarma atama (**-=**) işleçleri Ayrıca işaretçi türünün bir sol işlenenine sahip olabilir, bu durumda sağ işlenen integral türünde olmalıdır. Birleşik atama işleminin sonucu, sol işlenenin değerine ve türüne sahiptir.
 
 ```C
 #define MASK 0xff00
@@ -33,7 +33,7 @@ Bileşik atama işlecinin işlenenleri tamsayı veya kayan türde olmalıdır. H
 n &= MASK;
 ```
 
-Bu örnekte, üzerinde bir bit düzeyinde kapsamlı-ve işlem gerçekleştirilir `n` ve `MASK`, ve sonucu atandığı `n`. Bildirim sabiti `MASK` ile tanımlanmış bir [#define](../preprocessor/hash-define-directive-c-cpp.md) önişlemci yönergesi.
+Bu örnekte, ve `n` `MASK`ÜZERINDE bit düzeyinde kapsamlı ve bir işlem gerçekleştirilir ve sonuç öğesine `n`atanır. Bildirim sabiti `MASK` , bir [#define](../preprocessor/hash-define-directive-c-cpp.md) Önişlemci yönergesi ile tanımlanmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

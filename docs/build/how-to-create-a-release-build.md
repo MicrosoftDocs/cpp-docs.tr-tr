@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Yayın derlemesi oluşturma'
+title: 'Nasıl yapılır: Yayın Derlemesi Oluşturma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Win32, release build
@@ -12,13 +12,13 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62273527"
 ---
-# <a name="how-to-create-a-release-build"></a>Nasıl yapılır: Yayın derlemesi oluşturma
+# <a name="how-to-create-a-release-build"></a>Nasıl yapılır: Yayın Derlemesi Oluşturma
 
-### <a name="to-generate-a-release-build-of-your-program"></a>Programınızın bir yayın derlemesi oluşturmak için
+### <a name="to-generate-a-release-build-of-your-program"></a>Programınızın yayın yapısını oluşturmak için
 
-1. Seçin **yayın** gelen **çözüm yapılandırması** açık aşağı açılan listesinde, **standart** araç çubuğu.
+1. **Standart** araç çubuğunda bulunan **çözüm yapılandırması** açılır listesinden **yayın** ' ı seçin.
 
-1. Üzerinde **derleme** menüsünde tıklatın **yapı**.
+1. **Oluştur** menüsünde, **Oluştur**' a tıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

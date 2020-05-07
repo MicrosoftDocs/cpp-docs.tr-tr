@@ -13,7 +13,7 @@ ms.locfileid: "62314604"
 ---
 # <a name="using-function-name-without--produces-no-code"></a>() Olmadan İşlev Adının Kullanılması Kod Üretmez
 
-Programınızda bildirilen bir işlev adı parantez olmadan kullanıldığında, derleyici kod üretmez. Bu, derleyici bir işlevi adresi hesapladığından olup olmadığını işlevi parametre almayan bağımsız olarak gerçekleşir; Bununla birlikte, işlev çağrısı işleci (")" mevcut olmadığı için hiçbir çağrı yapılır. Bu sonuç aşağıdakine benzer olacaktır:
+Programınızda bildirildiği bir işlev adı parantez olmadan kullanıldığında, derleyici kod oluşturmaz. Bu, derleyicinin işlev adresini hesaplamasından bağımsız olarak işlevin parametre alıp almadığına bakılmaksızın oluşur; Ancak, "()" işlev çağrısı işleci mevcut olmadığından, hiçbir çağrı yapılmaz. Bu sonuç aşağıdakine benzer:
 
 ```
 // compile with /Wall to generate a warning
@@ -21,9 +21,9 @@ int a;
 a;      // no code generated here either
 ```
 
-Visual C++'da, hatta uyarı düzeyi 4 kullanarak tanılama hiçbir çıktı oluşturur. Herhangi bir uyarı verilir; kod oluşturulur.
+Visual C++, uyarı düzeyi 4 ' ün kullanılması hiçbir Tanılama çıkışı oluşturmaz. Hiçbir uyarı verilmedi; kod üretilmedi.
 
-Aşağıdaki örnek kodu (bir uyarı ile) derler ve bağlantıları doğru bir şekilde hatasız ancak reference için kod üretmez `funcn( )`. Bunun düzgün çalışması için işlev çağrısı işleci (")" ekleyin.
+Aşağıdaki örnek kod, hata olmadan (bir uyarı ile) ve bağlantılarla doğru şekilde derlenir, ancak başvuru içinde kod üretmez `funcn( )`. Bunun düzgün çalışması için "()" işlev çağrısı işlecini ekleyin.
 
 ```
 #include <stdio.h>

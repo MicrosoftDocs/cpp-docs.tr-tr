@@ -16,20 +16,20 @@ ms.locfileid: "62312569"
 ---
 # <a name="continue-statement-c"></a>continue Deyimi (C)
 
-`continue` Deyimi, denetimi en yakın kapsayan bir sonraki yinelemesine geçirir `do`, `for`, veya `while` göründüğü, kalan tüm deyimlerinde atlama deyimi `do`, `for`, veya `while` deyim gövdesi.
+`continue` Deyimi `do`, denetimi,, veya `for` `while` `do` `for` `while` deyim gövdesinde kalan tüm deyimleri atlayarak en yakın kapsayan, ya da içinde göründüğü deyimin bir sonraki yinelemesine geçirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*atlama-deyimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**devam edin.**
+*sıçrama-deyim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**devam**
 
-Sonraki yinelemesine bir `do`, `for`, veya `while` deyimi aşağıdaki gibi belirlenir:
+`do`, `for`, Veya `while` ifadesinin sonraki yinelemesi aşağıdaki şekilde belirlenir:
 
-- İçinde bir `do` veya `while` deyimi, sonraki yineleme başlatır ifade reevaluating tarafından `do` veya `while` deyimi.
+- Bir veya `do` `while` deyimi içinde, bir sonraki yineleme, `do` veya `while` deyiminin ifadesini yeniden değerlendirerek başlar.
 
-- A `continue` deyiminde bir `for` deyimi, döngü ifadesi neden `for` değerlendirilecek ifade. Ardından derleyici koşullu ifade reevaluates ve sonuç bağlı olarak ya da sona erer veya deyim gövdesi yinelenir. Bkz: [deyimi için](../c-language/for-statement-c.md) hakkında daha fazla bilgi için `for` deyimi ve kendi Terminal dışı.
+- Bir `continue` `for` deyimindeki deyim, `for` deyiminin döngü ifadesinin değerlendirilmesine neden olur. Sonra derleyici koşullu ifadeyi yeniden değerlendirir ve sonuca bağlı olarak deyim gövdesini sonlandırır ya da yineler. Açıklaması ve terminalleri hakkında daha fazla bilgi için bkz. [for bildirisi.](../c-language/for-statement-c.md) `for`
 
-Bu bir örnektir `continue` deyimi:
+Bu bir `continue` deyimin örneğidir:
 
 ```
 while ( i-- > 0 )
@@ -41,8 +41,8 @@ while ( i-- > 0 )
 }
 ```
 
-Bu örnekte, deyim gövdesi yürütülür ancak `i` 0'dan büyük. İlk `f(i)` atandığı `x`; daha sonra eğer `x` 1'e eşit olduğunu `continue` deyimi yürütülür. Gövde deyimlerin geri kalanını yok sayılır ve döngünün test değerlendirmesi ile döngüsü üstünde yürütmeyi devam ettirir.
+Bu örnekte, deyimin gövdesi 0 ' dan büyük iken `i` yürütülür. İlk `f(i)` olarak öğesine `x`atandı; `x` daha sonra, 1 ' e eşitse, `continue` ifade yürütülür. Gövdedeki deyimlerin geri kalanı yok sayılır ve yürütme döngünün en üstünde döngünün test değerlendirmesi ile devam eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[continue Deyimi](../cpp/continue-statement-cpp.md)
+[Continue bildirisi](../cpp/continue-statement-cpp.md)

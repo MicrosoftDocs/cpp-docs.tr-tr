@@ -11,10 +11,10 @@ ms.locfileid: "64343064"
 ---
 # <a name="unrepresented-character-constants"></a>Temsil Edilmeyen Karakter Sabitleri
 
-**ANSI 3.1.3.4** temel yürütme karakter kümesi veya Genişletilmiş karakter temsil edilmeyen bir karakter veya kaçış dizisi içeren tamsayı karakter sabitinin değeri ayarlamak için bir geniş karakter sabiti
+**ANSI 3.1.3.4 &** Bir karakter veya kaçış sırası içeren bir tamsayı karakter sabitinin değeri, temel yürütme karakter kümesi veya geniş karakter sabiti için genişletilmiş karakter kümesi olarak temsil edilmez
 
 Tüm karakter sabitleri veya kaçış dizileri genişletilmiş karakter kümesinde temsil edilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakterler](../c-language/characters.md)
+[Karakterle](../c-language/characters.md)

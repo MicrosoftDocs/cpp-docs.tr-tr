@@ -11,11 +11,11 @@ ms.locfileid: "62290904"
 ---
 # <a name="uppercase-and-lowercase"></a>Büyük Harf ve Küçük Harf
 
-**ANSI 3.1.2** büyük/küçük farklılıklar önemli olup
+**ANSI 3.1.2** Büyük/küçük harf ayrımlarının önemli olup olmadığı
 
-Microsoft C, bir derleme biriminde içindeki tanımlayıcıları büyük küçük harfe duyarlı olarak değerlendirir.
+Microsoft C, derleme birimi içindeki tanımlayıcıları büyük/küçük harfe duyarlı olarak değerlendirir.
 
-Microsoft bağlayıcı büyük/küçük harfe duyarlıdır. Tüm tanımlayıcılar çalışması göre tutarlı bir şekilde belirtmeniz gerekir.
+Microsoft Bağlayıcısı büyük/küçük harfe duyarlıdır. Tüm tanımlayıcıları büyük/küçük harfe göre tutarlı bir şekilde belirtmeniz gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

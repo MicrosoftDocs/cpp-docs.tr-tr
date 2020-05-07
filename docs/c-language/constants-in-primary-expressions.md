@@ -13,8 +13,8 @@ ms.locfileid: "62312518"
 ---
 # <a name="constants-in-primary-expressions"></a>Birincil İfadelerdeki Sabitler (C++)
 
-Sabit bir işlenen, temsil ettiği sabit değerin değerine ve türüne sahiptir. Karakter sabiti `int` türündedir. Bir tamsayı sabiti `int`, **uzun**, `unsigned int`, veya `unsigned long` türü, tamsayının boyutuna bağlı olarak ve değeri belirtilen şekilde. Bkz: [sabitleri](../c-language/c-constants.md) daha fazla bilgi için.
+Sabit bir işlenen, temsil ettiği sabit değerin değerine ve türüne sahiptir. Karakter sabiti `int` türündedir. `int`Tamsayı sabiti, tamsayının boyutuna ve `unsigned int`değerin belirtilme biçimine bağlı olarak, **Long**, veya `unsigned long` türündedir. Daha fazla bilgi için [sabitleri](../c-language/c-constants.md) görüntüleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Birincil İfadeler](../c-language/c-primary-expressions.md)
+[C birincil Ifadeler](../c-language/c-primary-expressions.md)

@@ -23,34 +23,34 @@ ms.locfileid: "62295681"
 ---
 # <a name="mutual-imports"></a>Karşılıklı İçeri Aktarmalar
 
-Imports karşılıklı (veya döngüsel) olduğunda veya başka bir yürütülebilir dosyasına verme zorluklar sunar. Örneğin, iki DLL sembolleri, birbiriyle karşılıklı özyinelemeli işlevler için benzer içeri aktarın.
+İçeri aktarmalar karşılıklı (veya dairesel) olduğunda, başka bir yürütülebilir dosyaya dışarı veya içeri aktarmak karmaşıklıkları gösterir. Örneğin, iki DLL, birbirini karşılıklı özyinelemeli işlevlere benzer şekilde, sembolleri birbirinden içe aktarır.
 
-Yürütülebilir dosyalar (DLL'ler genellikle) birbirini alma ne diğer ilk oluşturmaya gerek kalmadan oluşturulabilir, bir sorundur. Her yapı işlemi giriş olarak bir yapı işlemi tarafından oluşturulan içeri aktarma kitaplığı gerektirir.
+Birlikte kullanılamayan yürütülebilir dosyaları (genellikle dll 'Ler) ile ilgili sorun, hiçbir bir kez oluşturmadan derlenmez. Her yapı işlemi, diğer yapı işlemi tarafından oluşturulan bir içeri aktarma kitaplığı olan giriş olarak gerektirir.
 
-Çözüm, yürütülebilir dosyası oluşturmaya gerek kalmadan bir içeri aktarma kitaplığı oluşturur/DEF seçeneği ile LIB yardımcı programını kullanmaktır. Bu yardımcı programını kullanarak, ihtiyacınız olan tüm içeri aktarma kitaplıkları oluşturabilirsiniz ne olursa olsun kaç DLL'leri dahilse veya nasıl karmaşık bağımlılıklar.
+Çözüm, yürütülebilir dosya oluşturmadan bir içeri aktarma kitaplığı üreten/DEF seçeneğiyle LIB yardımcı programını kullanmaktır. Bu yardımcı programı kullanarak, ihtiyacınız olan tüm içeri aktarma kitaplıklarını, kaç dll 'nin dahil olduğunu veya bağımlılıkların ne kadar karmaşık olduğunu bağımsız olarak oluşturabilirsiniz.
 
-Karşılıklı içeri aktarmalar işleme için genel bir çözüm şöyledir:
+Karşılıklı içeri aktarmaları işlemek için genel çözüm şunlardır:
 
-1. Sırayla her DLL alın. (Bazı siparişler daha iyi olsa herhangi bir sırada, başarılıdır.) Tüm gerekli içeri aktarma kitaplıkları var ve yürütülebilir dosyayı (DLL) oluşturmak için bağlantı çalıştırın. Bu, bir içeri aktarma kitaplığı oluşturur. Aksi takdirde içeri aktarma kitaplığı üretmek için LIB çalıştırın.
+1. Her DLL 'yi sırayla alın. (Herhangi bir sıralama uygulanabilir olsa da, bazı siparişler daha uygun olur.) Gerekli tüm içeri aktarma kitaplıkları varsa ve geçerli ise, çalıştırılabilir dosyayı (DLL) derlemek için bağlantıyı çalıştırın. Bu bir içeri aktarma kitaplığı oluşturur. Aksi takdirde, bir içeri aktarma kitaplığı oluşturmak için LIB ' i çalıştırın.
 
-   LIB / DEF seçeneği ile çalışan bir ek dosyası üretir bir. EXP uzantısı. . EXP dosya daha sonra yürütülebilir dosyasını oluşturmak için kullanılmalıdır.
+   LıB komutunu/DEF seçeneğiyle çalıştırmak, ile ek bir dosya oluşturur. EXP uzantısı. İçin. Daha sonra yürütülebilir dosyayı derlemek için EXP dosyasının kullanılması gerekir.
 
-1. Tüm içeri aktarma kitaplıkları oluşturmak için bağlantı veya LIB kullandıktan sonra geri dönüp önceki adımda oluşturulan değil tüm yürütülebilir dosyaları oluşturmak için bağlantı çalıştırın. Karşılık gelen .exp dosyası LINK satırında belirtilmelidir unutmayın.
+1. Tüm içeri aktarma kitaplıklarını derlemek için bağlantı veya LıB kullandıktan sonra, önceki adımda oluşturulmamış yürütülebilir dosyaları derlemek için geri dönün ve bağlantıyı çalıştırın. BAĞLANTı satırında karşılık gelen. exp dosyasının belirtilmesi gerektiğini unutmayın.
 
-   Daha önce içeri aktarma kitaplığı DLL1 için LIB yardımcı programını çalıştırırsanız, LIB DLL1.exp dosyasını üretilen. DLL1.exp bağlantı giriş olarak DLL1.dlll oluştururken kullanmanız gerekir.
+   DLL1 için bir içeri aktarma kitaplığı oluşturmak üzere daha önce LıB yardımcı programını çalıştırırsanız LIB, DLL1. exp dosyasını da üreten. DLL1. dlll derlerken bağlantı kurmak için DLL1. exp 'yi giriş olarak kullanmanız gerekir.
 
-Aşağıdaki çizimde, iki karşılıklı içe aktarma DLL'leri, DLL1 ve DLL2 için bir çözüm gösterilmektedir. Adım 1/DEF seçeneği kümesinde DLL1 ile LIB, çalıştırmaktır. 1. adım DLL1.lib, bir içeri aktarma kitaplığını ve DLL1.exp'yi üretir. 2. adımda içeri aktarma kitaplığını sırayla DLL2'ın sembolleri için bir içeri aktarma kitaplığını oluşturan DLL2 oluşturmak için kullanılır. 3. adım, giriş olarak DLL1.exp'yi ve DLL2.lib'ı kullanarak, DLL1 oluşturur. LIB DLL2'ın içeri aktarma kitaplığı oluşturmak için kullanılamaz olduğundan DLL2 .exp dosyasının gerekli olmadığını unutmayın.
+Aşağıdaki çizimde, iki karşılıklı içeri aktarma dll, DLL1 ve DLL2 için bir çözüm gösterilmektedir. 1. adım, DLL1 üzerinde/DEF seçenek kümesiyle LIB komutunu kullanmaktır. 1. adım DLL1. lib, bir içeri aktarma kitaplığı ve DLL1. exp üretir. 2. adımda içeri aktarma kitaplığı, DLL2's sembolleri için içeri aktarma kitaplığı üreten DLL2 oluşturmak için kullanılır. 3. adım, DLL1. exp ve DLL2. lib kullanarak girdi olarak DLL1 oluşturur. LıB, DLL2's içeri aktarma kitaplığı derlemek için kullanılmadığından, DLL2 için bir. exp dosyası gerekli değildir.
 
-![Karşılıklı içeri aktarmalar iki DLL bağlamak için kullanarak](media/vc37yj1.gif "iki DLL bağlamak için karşılıklı içeri aktarmalar'ı kullanma")<br/>
-Karşılıklı içeri aktarmalar ile iki DLL'leri bağlama
+(media/vc37yj1.gif "İki DLL 'yi bağlamak için karşılıklı içeri aktarmaları kullanarak") ![iki DLL 'yi bağlamak için karşılıklı içeri aktarmalar kullanma]<br/>
+Iki dll 'yi karşılıklı Içeri aktarmalar ile bağlama
 
-## <a name="limitations-of-afxext"></a>_AFXEXT Sınırlamaları
+## <a name="limitations-of-_afxext"></a>_AFXEXT sınırlamaları
 
-Kullanabileceğiniz `_AFXEXT` MFC uzantısı DLL'leri çözümsüz MFC uzantısı DLL'leri olmayan sürece önişlemci simgesi. MFC uzantı DLL'leri çağrı yapma veya kendi MFC uzantısı DLL'leri sonra MFC sınıflarından türetilen, sınıflar türetilen varsa belirsizlik önlemek için kendi önişlemci sembolü kullanmanız gerekir.
+MFC uzantı dll 'lerinizin ön işlemci sembolünü, `_AFXEXT` bırden çok MFC uzantı dll katmanınız olmadığı sürece kullanabilirsiniz. Kendi MFC uzantı dll 'larınızda bulunan ve daha sonra MFC sınıflarından türeten sınıfları çağıran MFC uzantı dll 'Leri varsa, karışıklığı önlemek için kendi önişlemci sembolünü kullanmanız gerekir.
 
-Sorunu söz konusu Win32, tüm veriler olarak açıkça belirtmesi gerekir **__declspec(dllexport)** bir DLL'den dışarı aktarılmasına izin olup olmadığını ve **__declspec(dllimport)** DLL'den içeri aktarılacak ise. Tanımladığınızda `_AFXEXT`, MFC üstbilgi emin **AFX_EXT_CLASS** doğru şekilde tanımlanır.
+Bu sorun, Win32 'de, bir DLL 'den içeri aktarıldıysa **__declspec (dllexport)** olarak açıkça bir veri bildirmeniz ve bir dll 'den içeri aktarılacaksa **__declspec (dllimport)** olması gerekir. Tanımladığınızda `_AFXEXT`, MFC başlıkları **AFX_EXT_CLASS** doğru tanımlandığından emin olur.
 
-Olduğunda, birden fazla katman, bir simge gibi **AFX_EXT_CLASS** bir MFC uzantılı DLL yeni sınıfları dışarı aktarma yanı sıra, çünkü diğer sınıfları, başka bir MFC uzantı DLL'SİNDEN içeri aktarma yeterli değildir. Bu sorunu çözmek için DLL kullanan ve DLL kendisi oluşturduğunuzu gösteren özel bir önişlemci sembolü kullanın. Örneğin, iki MFC uzantısı DLL'leri ve A.dll B.dll düşünün. Her bazı sınıflar A.h ve B.h'taki sırasıyla verin. B.dll a.DLL'den sınıfları kullanır. Üst bilgi dosyaları, şunun gibi görünür:
+Birden çok katmanınız olduğunda, bir MFC uzantı DLL 'SI yeni sınıfları dışarı aktarabileceğinden ve başka bir MFC uzantısı DLL 'sinden başka sınıfları içeri aktarabileceğinden, **AFX_EXT_CLASS** gibi bir sembol yeterli değildir. Bu sorunu çözmek için dll 'yi kullanarak DLL 'nin kendisini oluşturduğunuzu belirten özel bir ön işlemci sembolünü kullanın. Örneğin, bir. dll ve B. dll olmak üzere iki MFC uzantı dll 'si düşünün. Her biri, sırasıyla bir. h ve B. h içindeki bazı sınıfları dışa aktarır. B. dll, bir. dll dosyasından sınıfları kullanır. Üst bilgi dosyaları şuna benzer:
 
 ```
 /* A.H */
@@ -75,13 +75,13 @@ class CLASS_DECL_B CExampleB : public CExampleA
 ...
 ```
 
-A.dll oluşturulduğunda ile oluşturulmuştur `/D A_IMPL` ve B.dll oluşturulduğunda ile oluşturulmuştur `/D B_IMPL`. Her DLL için ayrı bir sembol kullanarak `CExampleB` aktarılır ve `CExampleA` b.dll oluşturulduğunda aktarılır. `CExampleA` a.dll oluşturulurken dışarı ve B.dll (veya başka bir istemci) kullanıldığında içeri aktarılır.
+Bir. dll oluşturulduğunda, ile `/D A_IMPL` oluşturulur ve B. dll oluşturulduğunda, ile `/D B_IMPL`oluşturulur. Her DLL için ayrı semboller kullanarak, `CExampleB` B. dll oluşturulurken `CExampleA` içeri aktarılır ve içeri aktarılır. `CExampleA`, bir. dll oluşturulduğunda ve B. dll (veya başka bir istemci) tarafından kullanıldığında içeri aktarılır.
 
-Bu tür katmanlama yerleşik kullanılırken gerçekleştirilemez **AFX_EXT_CLASS** ve `_AFXEXT` önişlemci sembolleri. Yukarıda açıklanan tekniği MFC'nin, etkin teknolojileri, veritabanı ve ağ MFC uzantısı DLL'leri oluştururken kullandığı bir şekilde benzemeyen bu sorunu çözer.
+Yerleşik **AFX_EXT_CLASS** ve `_AFXEXT` önişlemci sembolleri kullanılırken bu tür katmanlama yapılamaz. Yukarıda açıklanan teknik, MFC 'nin kendi etkin teknolojilerini, veritabanını ve ağ MFC uzantı dll 'Lerini oluştururken kullandığı mekanizmanın aksine bir şekilde bu sorunu çözer.
 
-## <a name="not-exporting-the-entire-class"></a>Sınıfın tamamı dışa aktarma değil
+## <a name="not-exporting-the-entire-class"></a>Sınıfın tamamı dışarı aktarılmıyor
 
-Bir sınıfın tamamı dışa aktarma değil, MFC makroları tarafından oluşturulan gerekli veri öğelerinin doğru bir şekilde dışarı aktarıldığından emin olmanız gerekir. Bu tanımlayarak yapılabilir `AFX_DATA` belirli sınıfınızın makro. Bu sınıfın tamamı dışa aktarma değil istediğiniz zaman yapılmalıdır.
+Bir sınıfın tamamını dışa aktardığınızda, MFC makroları tarafından oluşturulan gerekli veri öğelerinin doğru şekilde dışarı aktarıldığından emin olmanız gerekir. Bu, belirli sınıfınızın makrosunu yeniden `AFX_DATA` tanımlayarak yapılabilir. Bu, tüm sınıfı dışarı aktardığınız zaman yapılmalıdır.
 
 Örneğin:
 
@@ -109,23 +109,23 @@ class CExampleA : public CObject
 
 ### <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [DLL'den dışarı aktarma](exporting-from-a-dll.md)
+- [DLL 'den dışarı aktarma](exporting-from-a-dll.md)
 
-- [Kullanarak bir DLL dışarı aktarın. DEF dosyaları](exporting-from-a-dll-using-def-files.md)
+- [Kullanarak DLL 'den dışarı aktarın. DEF dosyaları](exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
+- [__Declspec (dllexport) kullanarak DLL 'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS kullanarak dışarı ve içeri aktarma](exporting-and-importing-using-afx-ext-class.md)
 
-- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C Dili Çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
+- [Hangi dışarı aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
 - [__declspec(dllimport) kullanarak bir uygulamaya aktarma](importing-into-an-application-using-declspec-dllimport.md)
 
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [/ DEF seçeneği ve LIB yardımcı programı](reference/lib-reference.md)
+- [LIB yardımcı programı ve/DEF seçeneği](reference/lib-reference.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

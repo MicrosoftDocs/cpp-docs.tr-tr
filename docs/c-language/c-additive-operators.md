@@ -17,21 +17,21 @@ ms.locfileid: "62326917"
 ---
 # <a name="c-additive-operators"></a>C Ek İşleçleri
 
-Ek işleçlerini eklenmesini gerçekleştirme (**+**) ve çıkarma (**-**).
+Toplama işleçleri toplama (**+**) ve çıkarma (**-**) gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*additive-expression*:<br/>
+*Toplamsal ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*çarpma ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression* **+** *çarpma ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression* **-** *çarpma ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*adli ifade* **+** *çoğulereptive-ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*adli ifade* **-** *çoğulereptive-ifadesi*
 
 > [!NOTE]
-> Ancak söz diziminin *additive-expression* içerir *ifade çarpma*, bu ifadeleri kullanarak çarpma gerekli olduğunu göstermez. Aşağıdaki sözdizimine bakın [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md), için *ifade çarpma*, *atama ifadesini*, ve *tekli ifade*.
+> *Adli ifadesi* için sözdizimi, *çoğulereptive ifadesi*içeriyor olsa da, bu ifadeler çarpma kullanan ifadelerin gerekli olduğunu göstermez. *Çarpma*ifadesi, *atama ifadesi*ve *birli Ifade*için [C dili sözdizimi özetinde](../c-language/c-language-syntax-summary.md)söz dizimine bakın.
 
-İşlenen, tamsayı veya kayan değer olabilir. Bazı ek işlemler her işlecinin tartışma altında belirtildiği gibi işaretçi değerleri üzerinde de gerçekleştirilebilir.
+İşlenenler tamsayı veya kayan değerler olabilir. Bazı toplama işlemleri, her bir işlecin tartışması altında gösterildiği gibi işaretçi değerlerinde de gerçekleştirilebilir.
 
-Ek işleçlerini olağan aritmetik dönüştürmeler integral ve kayan işlenenler üzerinde gerçekleştirin. Sonuç türü dönüştürme işleminden sonra işlenenler türüdür. Toplama işleçleri tarafından gerçekleştirilen dönüştürmeler taşma veya yetersiz kalma koşulları sağlamaz olduğundan, dönüştürme işleminden sonra bir toplama işleminin sonucu işlenenler türünü temsil edilemiyorsa bilgiler kaybolabilir.
+Toplama işleçleri, integral ve kayan işlenenler üzerinde Olağan aritmetik dönüştürmeleri gerçekleştirir. Sonucun türü, dönüştürmeden sonra işlenen türüdür. Eklenebilir işleçler tarafından gerçekleştirilen dönüşümler taşma veya yetersiz koşullar için sağlamadığından, bir ekleme işleminin sonucu, dönüştürmeden sonra işlenen türünde temsil edilemiyorsa, bilgiler kaybolabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

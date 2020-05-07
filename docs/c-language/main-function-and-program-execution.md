@@ -28,15 +28,15 @@ main( int argc, char *argv[ ], char *envp[ ] )
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kaynak programının içerisindeki işlevler, bir veya daha fazla belirli görevi gerçekleştirir. **Main** işlevi ilgili görevlerini gerçekleştirmek için bu işlevleri çağırabilir. **Main** başka bir işlevi çağırdığında yürütme denetimini işleve geçirir, böylece yürütme işlevdeki ilk deyimden başlar. Bir işlev, `return` bir ifade yürütüldüğünde veya işlevin sonuna ulaşıldığında denetimi **Main** öğesine döndürür.
+Kaynak programının içerisindeki işlevler, bir veya daha fazla belirli görevi gerçekleştirir. **Main** işlevi ilgili görevlerini gerçekleştirmek için bu işlevleri çağırabilir. **Main** başka bir işlevi çağırdığında yürütme denetimini işleve geçirir, böylece yürütme işlevdeki ilk deyimden başlar. Bir işlev, bir `return` ifade yürütüldüğünde veya işlevin sonuna ulaşıldığında denetimi **Main** öğesine döndürür.
 
 Parametrelere sahip olmak için **Main**dahil herhangi bir işlevi bildirebilirsiniz. "Parametre" veya "biçimsel parametre" terimi, işleve geçirilen bir değeri alan tanımlayıcı anlamına gelir. Bağımsız değişkenleri parametrelere geçirme hakkında bilgi için bkz. [Parametreler](../c-language/parameters.md) . Bir işlev diğerini çağırdığında, çağrılan işlev çağıran işlevden parametrelerine yönelik değerleri alır. Bu değerlere "bağımsız değişkenler" adı verilir. Aşağıdaki biçimi kullanarak komut satırından bağımsız değişkenleri alabilmesi için, biçimsel parametreleri **Main** 'e bildirebilirsiniz:
 
-**Ana** işleve bilgi geçirmek istediğinizde, parametreler geleneksel olarak `argc` ve `argv`olarak adlandırılır, ancak C derleyicisi bu adları gerektirmez. `argc` ve `argv` türleri, C dili tarafından tanımlanır. Geleneksel olarak, üçüncü bir parametre **Main**'e geçirilirse, bu parametre `envp`olarak adlandırılır. Bu bölümdeki diğer örnekler, komut satırı bağımsız değişkenlerine erişmek için bu üç parametrenin nasıl kullanılacağını göstermektedir. Aşağıdaki bölümlerde bu parametreler açıklanmaktadır.
+**Ana** işleve bilgi geçirmek istediğinizde, parametreler genellikle ve `argc` `argv`olarak adlandırılır, ancak C derleyicisi bu adları gerektirmez. `argc` ve `argv` türleri, C dili tarafından tanımlanır. Geleneksel olarak, üçüncü bir parametre **Main**'e geçirilirse, bu parametre adlandırılır `envp`. Bu bölümdeki diğer örnekler, komut satırı bağımsız değişkenlerine erişmek için bu üç parametrenin nasıl kullanılacağını göstermektedir. Aşağıdaki bölümlerde bu parametreler açıklanmaktadır.
 
 **Ana**öğesinin geniş karakterli sürümünün açıklaması için bkz. [wmain kullanma](../c-language/using-wmain.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ana işlev ve komut satırı bağımsız değişkenleri (C++)](../cpp/main-function-command-line-args.md)\
-[C Komut Satırı Bağımsız Değişkenlerini Ayrıştırma](../c-language/parsing-c-command-line-arguments.md)
+[Main işlevi ve komut satırı bağımsız değişkenleri (C++)](../cpp/main-function-command-line-args.md)\
+[C komut satırı bağımsız değişkenlerini ayrıştırma](../c-language/parsing-c-command-line-arguments.md)

@@ -11,10 +11,10 @@ ms.locfileid: "62326046"
 ---
 # <a name="bits-per-character"></a>Karakter Başına Bit
 
-**ANSI 2.2.4.2.1** bir karakterdeki bit sayısı
+**ANSI 2.2.4.2.1** Bir karakter içindeki bit sayısı
 
-Bir karakterdeki bit sayısı Bildirim sabiti tarafından temsil edilen **char_bıt**. SINIRLAR. H dosyası tanımlar **char_bıt** 8 olarak.
+Bir karakter içindeki bit sayısı **CHAR_BIT**bildirim sabiti tarafından temsil edilir. SıNıRLAR. H dosyası **CHAR_BIT** 8 olarak tanımlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakterler](../c-language/characters.md)
+[Karakterle](../c-language/characters.md)

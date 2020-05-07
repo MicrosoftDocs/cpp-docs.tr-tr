@@ -15,7 +15,7 @@ ms.locfileid: "62325552"
 ---
 # <a name="inline-functions"></a>Satır İçi İşlevler
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 `__inline` anahtar sözcüğü, derleyiciye işlev tanımı içindeki kodu bir işlev çağrısının her örneğiyle değiştirmesini söyler. Ancak, değiştirme yalnızca derleyicinin denetiminde gerçekleştirilir. Örneğin, derleyici bir işlevi adresi alınmışsa veya satır içine alınmak için çok büyükse satır içine almaz.
 
@@ -23,7 +23,7 @@ Bir işlevin satır içine alınabilecek bir aday olarak değerlendirilebilmesi 
 
 Bir satır içi işlevi belirtmek için bu biçimi kullanın:
 
-> **__inline** *türü*<sub>iyileştirilmiş</sub> *işlev tanımı*
+> **__inline** *türü*<sub>opt</sub> *işlev tanımı*
 
 Satır içi işlevlerin kullanımı, aşağıdaki nedenlerden dolayı daha hızlı bir şekilde kod oluşturur ve bazen eşdeğer işlev çağrısının oluşturacağından daha küçük kod oluşturabilir:
 
@@ -33,10 +33,10 @@ Satır içi işlevlerin kullanımı, aşağıdaki nedenlerden dolayı daha hızl
 
 - Derleyici yordamlar arası iyileştirme gerçekleştirmediği için satır içinde oluşturulan işlevlere normal işlevlerde kullanılamayan kod iyileştirmeleri uygulanır.
 
-`__inline` kullanan işlevler satır içi derleyici koduyla karıştırılmamalıdır. Bkz: [satır içi Assembler](../c-language/inline-assembler-c.md) daha fazla bilgi için.
+`__inline` kullanan işlevler satır içi derleyici koduyla karıştırılmamalıdır. Daha fazla bilgi için bkz. [satır Içi assembler](../c-language/inline-assembler-c.md) .
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[inline, __inline, \__forceinline](../cpp/inline-functions-cpp.md)
+[satır içi, __inline \_, _forceinline](../cpp/inline-functions-cpp.md)

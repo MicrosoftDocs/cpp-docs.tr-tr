@@ -11,9 +11,9 @@ ms.locfileid: "62313473"
 ---
 # <a name="auto-storage-class-specifier"></a>auto Depolama Sınıfı Tanımlayıcısı
 
-**Otomatik** depolama sınıfı belirticisi, yerel kullanım ömrüne sahip bir değişken otomatik bir değişken bildirir. Bir **otomatik** değişkendir yalnızca blok içinde görülebilir içinde bildirildiği. Bildirimleri **otomatik** değişkenleri anlatıldığı gibi başlatıcılar içerebilir [başlatma](../c-language/initialization.md). Değişkenler **otomatik** depolama sınıfı otomatik olarak başlatılmadığından, bunları bildirdiğinizde veya içindeki blok içindeki deyimlerde başlangıç değerleri atamanız olduğunda, ya da açıkça bunları başlatmak. Başlatılmamış değerleri **otomatik** değişkenlerdir tanımlanmamış. (Bir yerel değişken **otomatik** veya **kaydetme** depolama sınıfı, her zaman bir başlatıcı verilirse kapsamda açıldığında başlatılır.)
+**Auto** depolama sınıfı tanımlayıcısı, yerel yaşam süresine sahip bir değişken otomatik değişken bildirir. **Otomatik** değişken yalnızca bildirildiği blokta görünür. **Otomatik** değişkenlerin bildirimleri, [başlatma](../c-language/initialization.md)bölümünde anlatıldığı gibi başlatıcıları içerebilir. **Otomatik** depolama sınıfına sahip değişkenler otomatik olarak başlatılmadığından, bunları bildirdiğinizde açıkça başlatmalısınız ya da bunları blok içindeki deyimlerde ilk değerlerini atamanız gerekir. Başlatılmamış **Otomatik** değişkenlerin değerleri tanımsız. (Bir başlatıcı verilirse **Otomatik** veya **yazmaç** depolama sınıfının yerel bir değişkeni her seferinde başlatıldığında başlatılır.)
 
-Bir iç **statik** değişken (statik değişkeni yerel veya blok kapsamı) herhangi bir dış adresi ile başlatılabilir veya **statik** öğesi, ancak başka bir **otomatik**  , çünkü madde adresini bir **otomatik** öğesi bir sabit değil.
+Bir iç **statik** değişken (yerel veya blok kapsamına sahip bir statik değişken), bir **Otomatik** öğenin adresi sabit olmadığından herhangi bir dış veya **statik** öğe adresiyle başlatılabilir, ancak başka bir **Otomatik** öğenin adresi ile kullanılamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

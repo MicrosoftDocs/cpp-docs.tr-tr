@@ -1,5 +1,5 @@
 ---
-title: Dinamik olarak MFC'ye bağlı normal MFC DLL'leri
+title: MFC 'ye dinamik olarak bağlı normal MFC DLL 'Leri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - regular MFC DLLs [C++], dynamically linked to MFC
@@ -15,85 +15,85 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62315007"
 ---
-# <a name="regular-mfc-dlls-dynamically-linked-to-mfc"></a>Dinamik olarak MFC'ye bağlı normal MFC DLL'leri
+# <a name="regular-mfc-dlls-dynamically-linked-to-mfc"></a>MFC 'ye dinamik olarak bağlı normal MFC DLL 'Leri
 
-MFC DLL dinamik olarak MFC'ye bağlı normal MFC dahili olarak kullandığı bir DLL'dir ve DLL'de dışa aktarılan işlevleri MFC veya MFC olmayan yürütülebilir dosyaları tarafından çağrılabilir. Adı açıklandığı gibi bu tür bir DLL, MFC (diğer adıyla MFC paylaşılan sürüm) dinamik bağlantı kitaplığı sürümü kullanılarak oluşturulur. İşlevleri, genellikle bir Normal MFC DLL standart C arabirimini kullanarak dışarı aktarılır.
+MFC 'ye dinamik olarak bağlı normal MFC DLL, MFC 'yi dahili olarak kullanan bir DLL 'dir ve DLL 'deki verilen işlevler MFC ya da MFC olmayan yürütülebilir dosyalar tarafından çağrılabilir. Adın açıkladığı gibi, bu tür DLL MFC 'nin dinamik bağlantı kitaplığı sürümü (MFC 'nin paylaşılan sürümü olarak da bilinir) kullanılarak oluşturulmuştur. İşlevler genellikle standart C arabirimi kullanılarak normal MFC DLL 'sinden içe aktarılabilir.
 
-Eklemelisiniz `AFX_MANAGE_STATE` MFC DLL için geçerli modül durumunu ayarlamak için dinamik olarak bağlanan normal MFC DLL'leri dışarı aktarılan işlevlerin başında makrosu. Bu, aşağıdaki kod satırını DLL'den dışarı aktarılan işlevlerin başına ekleyerek gerçekleştirilir:
+Geçerli modül durumunu DLL `AFX_MANAGE_STATE` için bir tane olarak ayarlamak üzere MFC 'ye dinamik olarak bağlanan normal MFC DLL 'lerinde tüm aktarılmış işlevlerin başlangıcında makroyu eklemeniz gerekir. Bu, DLL 'den aktarılmış işlevlerin başlangıcına aşağıdaki kod satırı eklenerek yapılır:
 
 ```
 AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 ```
 
-Dinamik olarak MFC'ye bağlı normal MFC DLL, aşağıdaki özelliklere sahiptir:
+MFC 'ye dinamik olarak bağlı normal MFC DLL 'SI aşağıdaki özelliklere sahiptir:
 
-- Yeni bir Visual C++ 4.0 tarafından sunulan DLL türüdür budur.
+- Bu, Visual C++ 4,0 tarafından sunulan yeni bir DLL türüdür.
 
-- İstemci yürütülebilir, DLL'lerin (C, C++, Pascal, Visual Basic ve benzeri); kullanımını destekleyen herhangi bir dilde yazılabilir bir MFC uygulaması yok.
+- İstemci yürütülebilir dosyası, dll 'lerin kullanımını destekleyen herhangi bir dilde yazılabilir (C, C++, Pascal, Visual Basic vb.); MFC uygulaması olması gerekmez.
 
-- Statik olarak bağlı normal MFC DLL'SİNİN, bu tür bir DLL, MFC DLL (paylaşılan MFC DLL olarak da bilinir) için dinamik olarak bağlıdır.
+- Statik olarak bağlanan normal MFC DLL 'inin aksine bu tür DLL, MFC DLL 'ye (paylaşılan MFC DLL olarak da bilinir) dinamik olarak bağlanır.
 
-- Bu tür bir DLL bağlı MFC içeri aktarma kitaplığını MFC uzantısı dll veya MFC DLL kullanan uygulamalar için kullanılan hizmet örneğiyle aynı şöyledir: MFCxx(D).lib.
+- Bu tür DLL 'ye bağlı MFC içeri aktarma kitaplığı, MFC uzantı dll 'Leri veya MFC DLL 'SI (MFCxx (D). lib kullanan uygulamalar için kullanılan bir kitaplıktır.
 
-Dinamik olarak MFC'ye bağlı normal MFC DLL, aşağıdaki gereksinimlere sahiptir:
+MFC 'ye dinamik olarak bağlı normal MFC DLL 'SI aşağıdaki gereksinimlere sahiptir:
 
-- Bu DLL'ler ile derlenmiş **_AFXDLL** tanımlanmış olduğu gibi MFC DLL için dinamik olarak bağlı yürütülebilir dosyadır. Ancak **_USRDLL** Ayrıca, statik olarak MFC'ye bağlı normal MFC DLL'SİNİN gibi tanımlanır.
+- Bu dll 'Ler, MFC DLL 'sine dinamik olarak bağlanmış bir yürütülebilir gibi **_AFXDLL** tanımlanmış ile derlenir. Ancak, MFC 'ye statik olarak bağlanan normal bir MFC DLL gibi **_USRDLL** de tanımlanmıştır.
 
-- Bu tür bir DLL oluşturmalıdır bir `CWinApp`-türetilmiş sınıf.
+- Bu tür DLL, bir `CWinApp`türetilmiş sınıf örneği oluşturmalıdır.
 
-- Bu tür bir DLL kullanan `DllMain` MFC tarafından sağlanan. Tüm özel DLL başlatma kodunda yerleştirin `InitInstance` üye işlevine ve sonlandırma kodu `ExitInstance` normal bir MFC uygulaması olduğu gibi.
+- Bu tür DLL MFC tarafından `DllMain` sunulan öğesini kullanır. DLL 'e özgü tüm başlatma kodlarını `InitInstance` üye işlevine ve sonlandırma kodunu normal bir MFC uygulamasında `ExitInstance` olduğu gibi yerleştirin.
 
-Bu tür bir DLL, MFC dinamik bağlantı kitaplığı sürümünü kullandığından, bir DLL için açıkça geçerli Modül durumu ayarlamanız gerekir. Bunu yapmak için [AFX_MANAGE_STATE](../mfc/reference/extension-dll-macros.md#afx_manage_state) her işlevin başında makrosu DLL'den dışarı.
+Bu tür bir DLL MFC 'nin dinamik bağlantı kitaplığı sürümünü kullandığından, geçerli modül durumunu DLL için bir tane olarak ayarlamanız gerekir. Bunu yapmak için, DLL 'den aktarılmış her işlevin başlangıcında [AFX_MANAGE_STATE](../mfc/reference/extension-dll-macros.md#afx_manage_state) makrosunu kullanın.
 
-Normal MFC DLL'leri olmalıdır bir `CWinApp`-türetilmiş sınıf ve o uygulama sınıfın tek bir nesne gibi bir MFC uygulaması. Ancak, `CWinApp` DLL'nin nesne gibi bir ana ileti pompası yok `CWinApp` uygulamanın nesne.
+MFC uygulaması gibi normal MFC dll `CWinApp`'lerinin türetilmiş bir sınıfı ve bu uygulama sınıfının tek bir nesnesi olmalıdır. Ancak, bir `CWinApp` uygulamanın `CWinApp` nesnesi gibi, dll nesnesinin bir ana ileti göndericisi yoktur.
 
-Unutmayın `CWinApp::Run` mekanizması uygulamanın ana ileti göndericisi çünkü bir DLL için uygulanmaz. DLL'niz kalıcı olmayan iletişim veya kendi ana penceresi, uygulamanızın ana ileti pompası çağıran bir DLL dışarı yordam çağırmalıdır `CWinApp::PreTranslateMessage`.
+Uygulamanın ana ileti `CWinApp::Run` göndericisinin sahibi olduğu için MEKANIZMANıN dll 'ye uygulanmadığını unutmayın. DLL 'niz modsuz iletişim kutusu alıyorsa veya kendi ana çerçeve penceresine sahipse, uygulamanızın ana ileti göndericisi, çağıran `CWinApp::PreTranslateMessage`bir dll 'den aktarılmış yordam çağırmalıdır.
 
-Tüm DLL'ye özgü başlatmada yerleştirin `CWinApp::InitInstance` normal bir MFC uygulaması olduğu gibi üye işlevi. `CWinApp::ExitInstance` Üye işlevini, `CWinApp` sağlanan MFC'den türetilmiş sınıf olarak adlandırılan `DllMain` DLL kaldırılmadan önce işlev.
+DLL 'e özgü tüm başlatma işlevlerini normal MFC `CWinApp::InitInstance` uygulamasındaki gibi üye işlevine yerleştirin. `CWinApp` Türetilmiş `CWinApp::ExitInstance` SıNıFıNıZıN üye işlevi, DLL kaldırılmadan önce MFC tarafından verilen `DllMain` işlevden çağrılır.
 
-Uygulamanız ile paylaşılan dll MFCx0.dll ve Msvcr*0.dll (veya benzer dosyaları) dağıtmanız gerekir.
+MFCx0. dll ve MSVCR * 0. dll (veya benzer dosyalar) paylaşılan DLL 'Lerini uygulamanızla dağıtmanız gerekir.
 
-Dinamik olarak MFC'ye bağlı bir DLL de statik olarak MFC'ye bağlanamıyor. Uygulamaları bağlantı Normal MFC DLL'leri MFC'ye dinamik olarak, diğer DLL gibi bağlı.
+MFC 'ye dinamik olarak bağlı bir DLL de MFC 'ye statik olarak bağlanamaz. Uygulamalar, diğer tüm DLL gibi MFC 'ye dinamik olarak bağlı normal MFC DLL 'Lerine bağlanır.
 
-Simgeler, genellikle bir Normal MFC DLL standart C arabirimini kullanarak dışarı aktarılır. Normal MFC DLL'den dışarı aktarılan bir işlevin bildirimi şuna benzer:
+Semboller genellikle standart C arabirimi kullanılarak normal MFC DLL 'sinden içe aktarılabilir. Normal MFC DLL 'den dışarıya aktarılmış bir işlevin bildirimi şuna benzer:
 
 ```
 extern "C" __declspec(dllexport) MyExportedFunction( );
 ```
 
-Normal MFC DLL'SİNİN içindeki tüm bellek ayırmaları DLL kalmalı; DLL geçirin veya çağıran yürütülebilir dosyadan aşağıdakilerden herhangi birini alıyorsunuz gerekir:
+Normal bir MFC DLL içindeki tüm bellek ayırmaları DLL içinde kalacak; DLL 'nin, çağrıyı yapan bir yürütülebilir dosyadan geçmemelidir veya buradan alması gerekir:
 
-- MFC nesne işaretçileri
+- MFC nesnelerine işaretçiler
 
-- MFC tarafından ayrılan bellek işaretçisi
+- MFC tarafından ayrılan bellek işaretçileri
 
-Yukarıdakilerden herhangi biri yapmanız gerekiyorsa veya çağıran yürütülebilir dosyayı ve DLL arasında MFC'den türetilmiş nesneler geçirmek istiyorsanız, bir MFC uzantılı DLL oluşturmanız gerekir.
+Yukarıdakilerden birini yapmanız gerekiyorsa veya çağıran çalıştırılabilir ile DLL arasında MFC 'den türetilmiş nesneler geçirmeniz gerekiyorsa, bir MFC uzantı DLL oluşturmanız gerekir.
 
-Verilerin bir kopyasını yaparsanız işaretçileri ayrılan bellek için C çalışma zamanı kitaplıkları tarafından bir uygulama ve DLL arasında geçirmek güvenlidir. Değil silmeli veya bu işaretçileri yeniden boyutlandırmak veya bellek kopyalayarak olmadan kullanın.
+Yalnızca verilerin bir kopyasını yaparsanız, bir uygulama ve DLL arasında C çalışma zamanı kitaplıkları tarafından ayrılan belleğe işaretçiler geçirmek güvenlidir. Bu işaretçileri silmeyin veya yeniden boyutlandırmamalıdır ya da belleğin bir kopyasını oluşturmadan kullanmanız gerekir.
 
-MFC'ye bağlanan normal bir MFC DLL dinamik olarak oluşturma, makro kullanmanız gereken [AFX_MANAGE_STATE](../mfc/reference/extension-dll-macros.md#afx_manage_state) MFC modül durumu doğru bir şekilde geçin. Bu, aşağıdaki kod satırını DLL'den dışarı aktarılan işlevlerin başına ekleyerek gerçekleştirilir:
+MFC 'ye dinamik olarak bağlanan normal bir MFC DLL 'SI oluştururken, MFC modül durumunu doğru bir şekilde değiştirmek için makro [AFX_MANAGE_STATE](../mfc/reference/extension-dll-macros.md#afx_manage_state) kullanmanız gerekir. Bu, DLL 'den aktarılmış işlevlerin başlangıcına aşağıdaki kod satırı eklenerek yapılır:
 
 ```
 AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 ```
 
-**AFX_MANAGE_STATE** statik olarak MFC'ye bağlanan normal MFC DLL'leri veya MFC uzantısı DLL'leri makrosu kullanılmamalıdır. Daha fazla bilgi için [MFC modüllerinin Durum verilerini yönetme](../mfc/managing-the-state-data-of-mfc-modules.md).
+**AFX_MANAGE_STATE** MAKROSU, MFC 'ye statik olarak veya MFC uzantı dll 'lerine statik olarak bağlanan normal MFC DLL 'lerinde kullanılmamalıdır. Daha fazla bilgi için bkz. [MFC modüllerinin durum verilerini yönetme](../mfc/managing-the-state-data-of-mfc-modules.md).
 
-Örnek Normal MFC DLL'SİNİN yazma, derleme ve ilişkin bir örnek için bkz. [ile ilgili](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/DllScreenCap). Dinamik olarak MFC'ye bağlanan normal MFC DLL'leri hakkında daha fazla bilgi için soyut örneği için "Dönüştürme ile ilgili için dinamik olarak bağlantı ile MFC DLL" başlıklı bölüme bakın.
+Normal MFC DLL yazma, oluşturma ve kullanma hakkında bir örnek için bkz. örnek [DLLScreenCap](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/DllScreenCap). MFC 'ye dinamik olarak bağlanan normal MFC DLL 'Leri hakkında daha fazla bilgi için, örneğin özet içindeki "DLLScreenCap 'i MFC DLL ile dinamik olarak bağlama" başlıklı bölüme bakın.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Normal MFC DLL'leri Başlat](run-time-library-behavior.md#initializing-regular-dlls)
+- [Normal MFC DLL 'Leri başlatma](run-time-library-behavior.md#initializing-regular-dlls)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [MFC'ye dinamik olarak bağlı normal MFC DLL'SİNİN modül durumları](module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)
+- [MFC 'ye dinamik olarak bağlı normal bir MFC DLL 'nin modül durumları](module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)
 
 - [MFC modüllerinin durum verisini yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)
 
-- [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [Normal MFC DLL 'Lerinde Database, OLE ve Sockets MFC uzantı dll 'Lerini kullanma](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
-- [Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
+- [DLL 'nin bir parçası olarak MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

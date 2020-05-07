@@ -15,43 +15,43 @@ ms.locfileid: "62346112"
 ---
 # <a name="typedef-declarations"></a>Typedef Bildirimleri
 
-Bir typedef bildiriminde bir typedef ile depolama sınıfı olarak bildirimidir. Yeni bir tür bildirimci olur. Typedef bildirimleri, zaten C tarafından tanımlanan türlerin veya, bildirilen türleri için daha kısa ya da daha anlamlı adları oluşturmak için kullanabilirsiniz. TypeDef adları değişebilir uygulama ayrıntılarını kapsüllemek olanak sağlar.
+Typedef bildirimi, depolama sınıfı olarak typedef içeren bir bildirimidir. Bildirimci yeni bir tür haline gelir. Zaten C veya bildirdiğiniz türler için tanımlanmış olan türler için daha kısa veya daha anlamlı adlar oluşturmak üzere typedef bildirimlerini kullanabilirsiniz. Typedef adları, değişebilir uygulama ayrıntılarını kapsüllemek için izin verir.
 
-Bir typedef bildiriminde bir değişken olarak aynı şekilde yorumlanır veya işlev bildirimi ancak bildirim tarafından belirtilen tür varsayılarak yerine tanımlayıcı, türe ilişkin bir eşanlam haline gelir.
+Bir typedef bildirimi, bir değişken veya işlev bildirimiyle aynı şekilde yorumlanır, ancak bildirim tarafından belirtilen türün olması yerine tanımlayıcı tür için bir eş anlamlı olur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları init-declarator-list*<sub>iyileştirilmiş</sub> **;**
+*bildirim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-belirteçleri init-declarator-list*<sub>opt</sub> **;**
 
-*bildirim tanımlayıcıları*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı tanımlayıcısı bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür tanımlayıcısı bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyici bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub>
+*bildirim-tanımlayıcılar*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı belirleyicisi bildirimi-tanımlayıcılar*<sub>kabul</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi bildirimi-tanımlayıcılar*<sub>kabul</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi bildirimi-tanımlayıcılar*<sub>kabul</sub>
 
-*depolama sınıfı tanımlayıcısı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**tür tanımı**
+*depolama sınıfı Belirleyicisi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**genişletiyor**
 
-*tür belirticisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Geçersiz kılma**<br/>
+*tür belirleyicisi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Kağıt**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Char**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kısa**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**int**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**uzun**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kayan nokta**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**çift**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**İmzalı**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**İşaretsiz**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct veya union tanımlayıcısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sabit listesi belirticisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*TypeDef adı*
+&nbsp;&nbsp;&nbsp;&nbsp;**kısadır**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**'tir**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**kalacağını**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**float**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Çift**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**imza**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**işaretlenmemiş**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*struct veya-Union-Belirleyicisi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Sabit Listesi belirticisi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*TypeDef-adı*
 
-*TypeDef adı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*
+*typedef-adı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*
 
-Bir typedef bildiriminde türleri oluşturmaz unutmayın. Varolan türleri için eş anlamlı sözcükler ya da başka şekillerde belirtilebilir türleri için adlar oluşturur. Typedef adı bir tür tanımlayıcısı kullanıldığında, belirli tür tanımlayıcıları, ancak diğer ile birleştirilebilir. Kabul edilebilir değiştiriciler dahil **const** ve `volatile`.
+Bir typedef bildiriminin tür oluşturmadığını unutmayın. Mevcut türler için eş anlamlıları veya diğer yollarla belirtilenebilir türlerin adlarını oluşturur. Bir typedef adı bir tür belirleyici olarak kullanıldığında, bazı tür belirticileriyle birleştirilebilir, ancak diğerleri değildir. Kabul edilebilir değiştiriciler **const** ve `volatile`içerir.
 
-TypeDef adları sıradan tanımlayıcıları ile ad alanı paylaşabilir (bkz [ad alanları](../c-language/name-spaces.md) daha fazla bilgi için). Bu nedenle, bir program typedef adı ve yerel kapsamı tanımlayıcısı tarafından aynı ada sahip olabilir. Örneğin:
+Typedef adları, ad alanını sıradan tanımlayıcılarla paylaşır (daha fazla bilgi için bkz. [ad alanları](../c-language/name-spaces.md) ). Bu nedenle, bir program bir typedef adına ve aynı ada sahip bir yerel kapsam tanımlayıcısına sahip olabilir. Örneğin:
 
 ```C
 typedef char FlagType;
@@ -66,34 +66,34 @@ int myproc( int )
 }
 ```
 
-Bir yerel kapsamı tanımlayıcısı için bir typedef ile aynı adla bildirirken veya bir yapı veya birleşim iç kapsamda veya aynı kapsamda üyesi bildirdiğinizde, tür tanımlayıcısı belirtilmelidir. Bu örnekte, bu kısıtlama gösterilmektedir:
+Bir typedef ile aynı ad ile bir yerel kapsam tanımlayıcısı bildirirken veya aynı kapsamda veya bir iç kapsamda bir yapının veya birleşimin üyesini bildirirken tür belirleyicisi belirtilmelidir. Bu örnekte bu kısıtlama gösterilmektedir:
 
 ```C
 typedef char FlagType;
 const FlagType x;
 ```
 
-Yeniden `FlagType` bir tanımlayıcı, bir yapı üyesinin veya birleşim üyesi, tür için ad sağlanmalıdır:
+Bir tanımlayıcı, `FlagType` yapı üyesi veya birleşim üyesi için adı yeniden kullanmak için, tür sağlanmalıdır:
 
 ```C
 const int FlagType;  /* Type specifier required */
 ```
 
-Söyleyin için yeterli değil
+Söylemek yeterli değildir
 
 ```C
 const FlagType;      /* Incomplete specification */
 ```
 
-çünkü `FlagType` türü değil bildiriliyor tanımlayıcının bir parçası olarak alınır. Bu bildirim gibi bildirimi geçersiz olacak şekilde alınır
+Çünkü, `FlagType` yeniden bildirilebilecek bir tanımlayıcı değil türün bir parçası olmak için alınır. Bu bildirim, şunun gibi geçersiz bir bildirim olacak şekilde alınır
 
 ```C
 int;  /* Illegal declaration */
 ```
 
-Typedef, işaretçi, işlevi ve dizi türleri dahil olan her türlü bildirebilirsiniz. Yapı veya birleşim türü tanımlamadan önce bildirimiyle aynı görünürlük tanımını sahip olduğu sürece bir yapı veya birleşim türü işaretçisi için bir typedef adı bildirebilirsiniz.
+İşaretçi, işlev ve dizi türleri dahil olmak üzere typedef ile herhangi bir tür bildirebilirsiniz. Tanımın bildirimle aynı görünürlüğe sahip olduğu sürece yapıyı veya birleşim türünü tanımladıktan önce bir yapı veya birleşim türü işaretçisi için bir typedef adı bildirebilirsiniz.
 
-TypeDef adları, kodun okunabilirliğini geliştirmek için kullanılabilir. Aşağıdaki bildirimleri üç `signal` ilk olmadan yapma tam olarak aynı türü belirtin herhangi bir typedef adları kullanın.
+Typedef adları, kod okunabilirliğini geliştirmek için kullanılabilir. Aşağıdaki bildirimlerden üçü, ilki, `signal` herhangi bir typedef adının kullanılmadan önce tam olarak aynı türü belirtir.
 
 ```C
 typedef void fv( int ), (*pfv)( int );  /* typedef declarations */
@@ -105,13 +105,13 @@ pfv signal( int, pfv );    /* Uses typedef type */
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekler typedef bildirimleri gösterir:
+Aşağıdaki örneklerde typedef bildirimleri gösterilmektedir:
 
 ```C
 typedef int WHOLE; /* Declares WHOLE to be a synonym for int */
 ```
 
-Unutmayın `WHOLE` artık bir Değişken bildiriminde gibi kullanılabilir `WHOLE i;` veya `const WHOLE i;`. Ancak, bildirimi `long WHOLE i;` geçersiz olacaktır.
+`WHOLE` Artık `WHOLE i;` veya `const WHOLE i;`gibi bir değişken bildiriminde kullanılabileceğini unutmayın. Ancak bildirim `long WHOLE i;` geçersiz olabilir.
 
 ```C
 typedef struct club
@@ -121,26 +121,26 @@ typedef struct club
 } GROUP;
 ```
 
-Bu ifade `GROUP` olarak üç üyesi olan bir yapı türü. Bir yapı etiketi beri `club`, ayrıca belirtilirse, typedef adı (`GROUP`) veya yapı etiketi bildirimlerinde de kullanılabilir. Struct anahtar sözcüğü etiketiyle kullanmalıdır ve struct anahtar sözcüğü typedef adı ile kullanamazsınız.
+Bu ifade, `GROUP` üç üye içeren bir yapı türü olarak bildirir. Bir yapı etiketi `club`de belirtildiğinden, ya typedef Name (`GROUP`) ya da Structure etiketi bildirimlerinde kullanılabilir. Struct anahtar sözcüğünü etiketiyle birlikte kullanmanız gerekir ve struct anahtar sözcüğünü typedef adıyla birlikte kullanamazsınız.
 
 ```C
 typedef GROUP *PG; /* Uses the previous typedef name
                       to declare a pointer            */
 ```
 
-Türü `PG` işaretçisi olarak bildirilen `GROUP` sırayla bir yapı türü tanımlanmış bir tür.
+Türü `PG` , `GROUP` türü bir işaretçi olarak tanımlanır ve bu, sırasıyla bir yapı türü olarak tanımlanmıştır.
 
 ```C
 typedef void DRAWF( int, int );
 ```
 
-Bu örnek türü sağlar `DRAWF` için hiçbir değer döndürerek ve iki tamsayı bağımsız değişken alan bir işlev. Bu, örneğin, anlamına bildirimi
+Bu örnek, değer döndürülmeden ve iki int bağımsız değişken alan bir işlev için tür `DRAWF` sağlar. Bu, örneğin, bildirimin
 
 ```C
 DRAWF box;
 ```
 
-bildirime eşdeğerdir
+Bildirime eşdeğerdir
 
 ```C
 void box( int, int );
@@ -148,4 +148,4 @@ void box( int, int );
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Türler](../c-language/declarations-and-types.md)
+[Bildirimler ve türler](../c-language/declarations-and-types.md)

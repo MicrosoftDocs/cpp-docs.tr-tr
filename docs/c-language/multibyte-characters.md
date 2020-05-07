@@ -11,10 +11,10 @@ ms.locfileid: "62325474"
 ---
 # <a name="multibyte-characters"></a>Birden Çok Baytlı Karakterler
 
-**ANSI 2.2.1.2** birden çok baytlı karakterler için kaydırma durumları
+**ANSI 2.2.1.2** Çok baytlı karakterler için kaydırma durumları
 
-Çok baytlı karakterler, temel karakter kümesinde temsil edilmeyen yabancı dil karakterlerini temsil etmek için Microsoft C de dahil olmak üzere bazı uygulamalar tarafından kullanılır. Ancak, Microsoft C herhangi bir duruma bağlı kodlamayı desteklemez. Bu nedenle, hiçbir kaydırma durumu yoktur. Bkz: [çok baytlı ve geniş karakterler](../c-language/multibyte-and-wide-characters.md) daha fazla bilgi için.
+Çok baytlı karakterler, temel karakter kümesinde temsil edilmeyen yabancı dil karakterlerini temsil etmek için Microsoft C de dahil olmak üzere bazı uygulamalar tarafından kullanılır. Ancak, Microsoft C herhangi bir duruma bağlı kodlamayı desteklemez. Bu nedenle, hiçbir kaydırma durumu yoktur. Daha fazla bilgi için bkz. çok [baytlı ve geniş karakterler](../c-language/multibyte-and-wide-characters.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakterler](../c-language/characters.md)
+[Karakterle](../c-language/characters.md)

@@ -23,8 +23,8 @@ ms.locfileid: "64343234"
 
 - Yan etkiler oluşturur
 
-C içindeki işlenenler şunları içerir; sabitler, tanımlayıcılar, dizeler, işlev çağrıları, alt simge ifadeler, üye seçimi ifadeleri ve işlenenleri işleçlerle birleştirerek veya işlenenleri parantez içine alarak yapılan karmaşık ifadeler. Bu işlenenlerin sözdizimi verilen [birincil ifadeler](../c-language/c-primary-expressions.md).
+C içindeki işlenenler şunları içerir; sabitler, tanımlayıcılar, dizeler, işlev çağrıları, alt simge ifadeler, üye seçimi ifadeleri ve işlenenleri işleçlerle birleştirerek veya işlenenleri parantez içine alarak yapılan karmaşık ifadeler. Bu işlenenler için sözdizimi, [birincil ifadelerde](../c-language/c-primary-expressions.md)verilmiştir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İfadeler ve Atamalar](../c-language/expressions-and-assignments.md)
+[İfadeler ve atamalar](../c-language/expressions-and-assignments.md)

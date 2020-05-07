@@ -14,24 +14,24 @@ ms.locfileid: "62312751"
 ---
 # <a name="c-unary-operators"></a>C Birli İşleçler
 
-Birli işleçler, önce kendi işleneni görünür ve sağdan sola ilişkilendirin.
+Birli İşleçler işlenenlerinden önce görünür ve sağdan sola ilişkilendirirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Tekli ifade*: *sonek ifadesi*
+*birli-ifade*: *sonek-ifade*
 
-**++**  *Tekli ifade*
+**++**  *Birli ifade*
 
-`--`  *Tekli ifade*
+`--`  *Birli ifade*
 
-*birli işleci atama ifadesi*
+*birli işleç atama ifadesi*
 
-**sizeof** *tekli ifade* 
+**sizeof**  *birli ifadesi*
 
-**sizeof (** *tür adı* **)** 
+**sizeof (**  *tür adı*  **)**
 
-*birli işleç*: biri  **&  \* + -** `~` **!**
+*birli-işleç*: bir ** &  \* +-** `~` **!**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C İşleçleri](../c-language/c-operators.md)
+[C Işleçleri](../c-language/c-operators.md)

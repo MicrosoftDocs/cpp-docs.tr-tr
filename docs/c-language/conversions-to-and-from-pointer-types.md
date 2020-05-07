@@ -32,9 +32,9 @@ Bunun tersi olarak, aşağıdaki kurallara göre bir integral türü işaretçi 
 
 - İntegral türü işaretçi türüyle aynı boyuttaysa, dönüştürme işlemi integral değerinin bir işaretçi (işaretsiz tamsayı) olarak değerlendirilmesine neden olur.
 
-- İntegral türünün boyutu işaretçi türünün boyutundan farklıysa, integral türü önce işaretçinin boyutuna tablolarındaki dönüştürme yolları kullanılarak dönüştürülür [işaretli Integral türlerinden dönüştürme](../c-language/conversions-from-signed-integral-types.md) ve [ İşaretsiz Integral türlerinden dönüştürme](../c-language/conversions-from-unsigned-integral-types.md). Daha sonra bir işaretçi değeri olarak kabul edilir.
+- İntegral türünün boyutu işaretçi türünün boyutundan farklıysa, integral türü önce, [Işaretli Integral türlerinden](../c-language/conversions-from-signed-integral-types.md) ve [Işaretsiz integral türlerden dönüşümden](../c-language/conversions-from-unsigned-integral-types.md)gelen tablolarda verilen dönüştürme yolları kullanılarak işaretçinin boyutuna dönüştürülür. Daha sonra bir işaretçi değeri olarak kabul edilir.
 
-Değer 0 veya türüne yapılan böyle bir ifade integral sabit ifadesi **void** <strong>\*</strong> bir tür ataması, veya bir türden işaretçiyle karşılaştırma dönüştürülebilir. Bu, aynı türden başka bir null işaretçisine eşit olan bir null işaretçisi oluşturur, ancak bu null işaretçisi bir işlevin veya nesnenin herhangi bir işaretçisine eşit değildir. 0 sabiti dışındaki tamsayılar işaretçi türüne dönüştürülebilir, ancak sonuç taşınabilir değildir.
+0 değerine sahip bir tamsayı sabiti ifadesi veya **void** <strong>\*</strong> türüne bir ifade dönüştürme türü tür atama, atamaya göre veya herhangi bir tür işaretçisine karşılaştırmaya göre dönüştürülebilir. Bu, aynı türden başka bir null işaretçisine eşit olan bir null işaretçisi oluşturur, ancak bu null işaretçisi bir işlevin veya nesnenin herhangi bir işaretçisine eşit değildir. 0 sabiti dışındaki tamsayılar işaretçi türüne dönüştürülebilir, ancak sonuç taşınabilir değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

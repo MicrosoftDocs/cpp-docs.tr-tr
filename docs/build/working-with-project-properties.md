@@ -1,6 +1,6 @@
 ---
 title: Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama
-description: Derleyici ve bağlayıcı seçeneklerini ve diğer derleme C++ ayarlarını değiştirmek Için VISUAL Studio IDE 'yi kullanın.
+description: C++ derleyicisini ve bağlayıcı seçeneklerini ve diğer yapı ayarlarını değiştirmek için Visual Studio IDE 'yi kullanın.
 ms.date: 07/17/2019
 helpviewer_keywords:
 - project properties [C++], modifying
@@ -17,13 +17,13 @@ ms.locfileid: "80078231"
 ---
 # <a name="set-compiler-and-build-properties"></a>Derleyici ve derleme özelliklerini ayarlama
 
-IDE 'de, bir proje oluşturmak için gereken tüm bilgiler *Özellikler*olarak gösterilir. Bu bilgiler, uygulama adı, uzantı (DLL, LIB, EXE), derleyici seçenekleri, bağlayıcı seçenekleri, hata ayıklayıcı ayarları, özel derleme adımları ve diğer birçok şeyi içerir. Genellikle, bu özellikleri görüntülemek ve değiştirmek için *özellik sayfalarını* kullanırsınız. Özellik sayfalarına erişmek için, ana menüden **proje** >  **_ProjectName_ özellikler** ' i seçin veya **Çözüm Gezgini** proje düğümüne sağ tıklayıp **Özellikler**' i seçin.
+IDE 'de, bir proje oluşturmak için gereken tüm bilgiler *Özellikler*olarak gösterilir. Bu bilgiler, uygulama adı, uzantı (DLL, LIB, EXE), derleyici seçenekleri, bağlayıcı seçenekleri, hata ayıklayıcı ayarları, özel derleme adımları ve diğer birçok şeyi içerir. Genellikle, bu özellikleri görüntülemek ve değiştirmek için *özellik sayfalarını* kullanırsınız. Özellik sayfalarına erişmek için, ana menüden **Proje** > **_ProjectName_ Özellikler** ' i seçin veya **Çözüm Gezgini** ' de proje düğümüne sağ tıklayıp **Özellikler**' i seçin.
 
 ## <a name="default-properties"></a>Varsayılan Özellikler
 
 Bir proje oluşturduğunuzda, sistem çeşitli özellikler için değerler atar. Varsayılanlar proje türüne ve uygulama sihirbazında belirlediğiniz seçeneklere bağlı olarak farklılık gösterir. Örneğin, bir ATL projesinde MıDL dosyaları ile ilgili özellikler vardır, ancak bunlar temel konsol uygulamasında yok. Varsayılan Özellikler, özellik sayfalarındaki genel bölmesinde gösterilir:
 
-![Visual C&#43; &#43; Proje Varsayılanları](media/visual-c---project-defaults.png "Görsel C++ Proje Varsayılanları")
+![Visual C&#43;&#43; projesi Varsayılanları](media/visual-c---project-defaults.png "Proje varsayılanlarını Visual C++")
 
 ## <a name="applying-properties-to-build-configurations-and-target-platforms"></a>Derleme yapılandırmalarına ve hedef platformlara Özellikler uygulanıyor
 
@@ -31,28 +31,28 @@ Uygulama adı gibi bazı özellikler, hedef platformdan bağımsız olarak tüm 
 
 Özellik sayfaları, her zaman görebileceğiniz ve gerekirse, bir özellik değerinin hangi yapılandırma ve platform için uygulanacağını görmek üzere tasarlanmıştır. Aşağıdaki çizimde, en üstteki liste kutularındaki yapılandırma ve platform bilgilerine sahip Özellik sayfaları gösterilmektedir. **Optimizasyon** özelliği burada ayarlandığında, yalnızca kırmızı oklarla gösterildiği gibi etkin yapılandırma olarak gerçekleşen Win32 Derlemeleriyle hata ayıklama için geçerli olur.
 
-![Etkin yapılandırmayı&#43; &#43; gösteren Visual C Özellik sayfaları](media/visual-c---property-pages-showing-active-configuration.png "Etkin C++ yapılandırmayı gösteren görsel Özellik sayfaları")
+![Etkin yapılandırmayı gösteren Visual C&#43;&#43; Özellik sayfaları](media/visual-c---property-pages-showing-active-configuration.png "Etkin yapılandırmayı gösteren Visual C++ Özellik sayfaları")
 
 Aşağıdaki çizimde aynı proje özelliği sayfası görülmektedir, ancak yapılandırma yayın olarak değiştirilmiştir. Optimizasyon özelliğinin farklı değerini aklınızda edin. Ayrıca etkin yapılandırmanın hata ayıklama olduğunu unutmayın. Burada herhangi bir yapılandırmanın özelliklerini ayarlayabilirsiniz; etkin bir tane olması gerekmez.
 
-![Yayın yapılandırmasını&#43; &#43; gösteren Visual C Özellik sayfaları](media/visual-c---property-pages-showing-release-config.png "Yayın C++ yapılandırmasını gösteren görsel Özellik sayfaları")
+![Yayın yapılandırmasını gösteren Visual C&#43;&#43; Özellik sayfaları](media/visual-c---property-pages-showing-release-config.png "Yayın yapılandırmasını gösteren özellik sayfaları Visual C++")
 
 ## <a name="target-platforms"></a>Hedef platformlar
 
-*Hedef platform* , yürütülebilir dosyanın çalışacağı cihaz ve/veya işletim sisteminin türünü ifade eder. Birden fazla platform için bir proje oluşturabilirsiniz. Projeler için C++ kullanılabilir hedef platformlar proje türüne bağlıdır; Bunlar, Win32, x64, ARM, Android ve iOS 'a dahil değildir ancak bunlarla sınırlı değildir.     **Configuration Manager** görebileceğiniz **x86** hedef platformu, yerel C++ projelerde **Win32** ile aynıdır. Win32, 32 bit Windows ve **x64** için 64 bit Windows anlamına gelir. Bu iki platform hakkında daha fazla bilgi için bkz. [32 bitlik uygulamalar çalıştırma](/windows/win32/WinProg64/running-32-bit-applications).
+*Hedef platform* , yürütülebilir dosyanın çalışacağı cihaz ve/veya işletim sisteminin türünü ifade eder. Birden fazla platform için bir proje oluşturabilirsiniz. C++ projeleri için kullanılabilir hedef platformlar proje türüne bağlıdır; Bunlar, Win32, x64, ARM, Android ve iOS 'a dahil değildir ancak bunlarla sınırlı değildir.     **Configuration Manager** görebileceğiniz **x86** hedef platformu, yerel C++ projelerinde **Win32** ile aynıdır. Win32, 32 bit Windows ve **x64** için 64 bit Windows anlamına gelir. Bu iki platform hakkında daha fazla bilgi için bkz. [32 bitlik uygulamalar çalıştırma](/windows/win32/WinProg64/running-32-bit-applications).
 
-**Configuration Manager** GÖREBILECEĞINIZ C++ **tüm CPU** hedefi platformu, yerel projeler üzerinde hiçbir etkiye sahip değildir; /CLI ve diğer .NET C++proje türleri için geçerlidir. Daha fazla bilgi için bkz. [/Clrimagetype (clr görüntü türünü belirt)](reference/clrimagetype-specify-type-of-clr-image.md).
+**Configuration Manager** görebileceğiniz **herhangi bir CPU** hedefi platformun değeri, yerel C++ projeleri üzerinde hiçbir etkiye sahip değildir; C++/CLı ve diğer .NET proje türleri için geçerlidir. Daha fazla bilgi için bkz. [/Clrimagetype (clr görüntü türünü belirt)](reference/clrimagetype-specify-type-of-clr-image.md).
 
 Hata ayıklama derlemesinin özelliklerini ayarlama hakkında daha fazla bilgi için bkz.:
 
 - [C++ hata ayıklama yapılandırması proje ayarları](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)
-- [Hata Ayıklayıcısı Ayarları ve Hazırlığı](/visualstudio/debugger/debugger-settings-and-preparation)
-- [Hata Ayıklama Hazırlığı: C++ görsel proje türleri](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
+- [Hata ayıklayıcı ayarları ve hazırlığı](/visualstudio/debugger/debugger-settings-and-preparation)
+- [Hata Ayıklama Hazırlığı: Visual C++ proje türleri](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
 - [Visual Studio hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtme](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)
 
-## <a name="c-compiler-and-linker-options"></a>C++derleyici ve bağlayıcı seçenekleri
+## <a name="c-compiler-and-linker-options"></a>C++ derleyicisi ve bağlayıcı seçenekleri
 
-C++derleyici ve bağlayıcı seçenekleri sol bölmedeki **yapılandırma özellikleri**altında **CC++ /** ve **bağlayıcı** düğümleri altında bulunur. Bu, doğrudan derleyiciye geçirilecek komut satırı seçeneklerine çeviri yapar. Belirli bir seçeneğe ilişkin belgeleri okumak için orta bölmedeki seçeneğini belirleyin ve **F1**tuşuna basın. Ya da [MSVC derleyici seçenekleri](reference/compiler-options.md) ve [MSVC bağlayıcı seçenekleri](reference/linker-options.md)'ndeki tüm seçenekler için belgelere gözatabilmeniz gerekir.
+C++ derleyicisi ve bağlayıcı seçenekleri, **yapılandırma özellikleri**altında sol bölmedeki **C/C++** ve **bağlayıcı** düğümleri altında bulunur. Bu, doğrudan derleyiciye geçirilecek komut satırı seçeneklerine çeviri yapar. Belirli bir seçeneğe ilişkin belgeleri okumak için orta bölmedeki seçeneğini belirleyin ve **F1**tuşuna basın. Ya da [MSVC derleyici seçenekleri](reference/compiler-options.md) ve [MSVC bağlayıcı seçenekleri](reference/linker-options.md)'ndeki tüm seçenekler için belgelere gözatabilmeniz gerekir.
 
 **Özellik sayfaları** iletişim kutusu yalnızca geçerli projeyle ilgili olan özellik sayfalarını gösterir. Örneğin, projede bir .idl dosyası yoksa, MIDL özellik sayfası görüntülenmez. Her özellik sayfalarında ayarı hakkında daha fazla bilgi için bkz. [Özellik sayfaları (C++)](reference/property-pages-visual-cpp.md).
 
@@ -60,7 +60,7 @@ C++derleyici ve bağlayıcı seçenekleri sol bölmedeki **yapılandırma özell
 
 MSBuild, belirli dize değerleri için "Makrolar" adlı derleme zamanı sabitlerinin kullanımını, dizinler ve yollar içerir. Bunlar özellik sayfalarında gösterilir. burada, [özellik düzenleyicisini](#property_editor)kullanarak bunları bulabilirsiniz ve değiştirebilirsiniz.
 
-Aşağıdaki çizimde, bir Visual Studio C++ projesi için özellik sayfaları gösterilmektedir. Sol bölmede, **VC + + dizinleri** *kuralı* seçilidir ve sağ bölmede bu kuralla ilişkili özellikler listelenir. `$(...)` değerler *makrolar*olarak adlandırılır. *Makro* , Visual Studio veya MSBuild sistemi tarafından tanımlanan bir değere veya Kullanıcı tanımlı bir değere başvurabilen bir derleme zamanı sabiti. Dizin yolları gibi sabit kodlu değerler yerine makroları kullanarak, Özellikler ayarlarını makineler arasında ve Visual Studio sürümleri arasında daha kolay bir şekilde paylaşabilir ve proje ayarlarınızın [özellik Devralmada](project-property-inheritance.md)doğru bir şekilde katılmasını sağlayabilirsiniz.
+Aşağıdaki çizimde, bir Visual Studio C++ projesinin Özellik sayfaları gösterilmektedir. Sol bölmede, **VC + + dizinleri** *kuralı* seçilidir ve sağ bölmede bu kuralla ilişkili özellikler listelenir. `$(...)` Değerler *makrolar*olarak adlandırılır. *Makro* , Visual Studio veya MSBuild sistemi tarafından tanımlanan bir değere veya Kullanıcı tanımlı bir değere başvurabilen bir derleme zamanı sabiti. Dizin yolları gibi sabit kodlu değerler yerine makroları kullanarak, Özellikler ayarlarını makineler arasında ve Visual Studio sürümleri arasında daha kolay bir şekilde paylaşabilir ve proje ayarlarınızın [özellik Devralmada](project-property-inheritance.md)doğru bir şekilde katılmasını sağlayabilirsiniz.
 
 ![Proje özellik sayfaları](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 
@@ -69,20 +69,20 @@ Tüm kullanılabilir makroların değerlerini görüntülemek için özellik dü
 ### <a name="predefined-macros"></a>Önceden tanımlanmış makrolar
 
 *genel makrolar*<br/>
-Bir proje yapılandırmasındaki tüm öğelere uygulanır. `$(name)`sözdizimine sahiptir. Genel bir makroya bir örnek, Visual Studio yüklemenizin kök dizinini depolayan `$(VCInstallDir)`. Genel makro, MSBuild 'teki bir `PropertyGroup` karşılık gelir.
+Bir proje yapılandırmasındaki tüm öğelere uygulanır. Sözdizimi `$(name)`vardır. Visual Studio yüklemenizin kök dizinini depolayan genel `$(VCInstallDir)`bir makroya bir örnektir. Genel makro, MSBuild içindeki bir `PropertyGroup` öğesine karşılık gelir.
 
 *öğe makroları*<br/>
-`%(name)`sözdizimine sahiptir. Bir dosya için bir öğe makrosu yalnızca o dosya için geçerlidir — Örneğin, yalnızca belirli bir dosya için geçerli olan içerme dizinlerini belirtmek için `%(AdditionalIncludeDirectories)` kullanabilirsiniz. Bu tür bir öğe makrosu MSBuild 'teki bir `ItemGroup` meta veriye karşılık gelir. Bir proje yapılandırması bağlamında kullanıldığında, öğe makrosu belirli bir türdeki tüm dosyalar için geçerli olur. Örneğin, C/C++ **Önişlemci tanımları** yapılandırma özelliği, projedeki tüm. cpp dosyaları için geçerli olan bir `%(PreprocessorDefinitions)` öğe makrosunu alabilir. Bu tür bir öğe makrosu MSBuild 'teki bir `ItemDefinitionGroup` meta veriye karşılık gelir. Daha fazla bilgi için bkz. [öğe tanımları](/visualstudio/msbuild/item-definitions).
+Sözdizimi `%(name)`vardır. Bir dosya için, bir öğe makrosu yalnızca o dosya için geçerlidir — Örneğin, yalnızca belirli bir dosya `%(AdditionalIncludeDirectories)` için geçerli olan içerme dizinlerini belirtmek için öğesini kullanabilirsiniz. Bu tür bir öğe makrosu MSBuild içindeki bir `ItemGroup` meta veriye karşılık gelir. Bir proje yapılandırması bağlamında kullanıldığında, öğe makrosu belirli bir türdeki tüm dosyalar için geçerli olur. Örneğin, C/C++ **Önişlemci tanımları** yapılandırma özelliği, projedeki tüm. cpp `%(PreprocessorDefinitions)` dosyaları için geçerli olan bir öğe makrosunu alabilir. Bu tür bir öğe makrosu MSBuild içindeki bir `ItemDefinitionGroup` meta veriye karşılık gelir. Daha fazla bilgi için bkz. [öğe tanımları](/visualstudio/msbuild/item-definitions).
 
 ### <a name="user-defined-macros"></a>Kullanıcı tanımlı makrolar
 
-Proje yapılarında değişken olarak kullanmak için *Kullanıcı tanımlı makrolar* oluşturabilirsiniz. Örneğin, bir özel yapı adımına veya özel yapı aracına değer sağlayan kullanıcı tanımlı bir makro oluşturabilirsiniz. Kullanıcı tanımlı makro bir ad/değer çiftidir. Bir proje dosyasında, değere erişmek için **$ (** <em>ad</em> **)** gösterimini kullanın.
+Proje yapılarında değişken olarak kullanmak için *Kullanıcı tanımlı makrolar* oluşturabilirsiniz. Örneğin, bir özel yapı adımına veya özel yapı aracına değer sağlayan kullanıcı tanımlı bir makro oluşturabilirsiniz. Kullanıcı tanımlı makro bir ad/değer çiftidir. Bir proje dosyasında, değere erişmek için **$ (**<em>ad</em>**)** gösterimini kullanın.
 
 Kullanıcı tanımlı makrolar bir özellik sayfasında depolanır. Projeniz zaten bir özellik sayfası içermiyorsa, [Visual Studio proje ayarlarını paylaşma veya yeniden kullanma](create-reusable-property-configurations.md)bölümündeki adımları izleyerek bir tane oluşturabilirsiniz.
 
 #### <a name="to-create-a-user-defined-macro"></a>Kullanıcı tanımlı makro oluşturmak için
 
-1. **Özellik Yöneticisi** penceresini açın. (Menü çubuğunda, **görüntüle** > **Özellik Yöneticisi** veya > **diğer Windows** > **Özellik Yöneticisi** **görüntüle** ' yi seçin.) Bir özellik sayfası için kısayol menüsünü açın (adı. User ile biter) ve ardından **Özellikler**' i seçin. Bu özellik sayfası için **Özellik sayfaları** iletişim kutusu açılır.
+1. **Özellik Yöneticisi** penceresini açın. (Menü çubuğunda**Özellik Yöneticisi** **görüntüle** > ' yi seçin veya**diğer Windows** > **Özellik Yöneticisi** **görüntüleyin** > .) Bir özellik sayfası için kısayol menüsünü açın (adı. User ile biter) ve ardından **Özellikler**' i seçin. Bu özellik sayfası için **Özellik sayfaları** iletişim kutusu açılır.
 
 1. İletişim kutusunun sol bölmesinde **Kullanıcı makroları**' nı seçin. Sağ bölmede, **makro Ekle** düğmesini seçerek **Kullanıcı makrosu Ekle** iletişim kutusunu açın.
 
@@ -90,7 +90,7 @@ Kullanıcı tanımlı makrolar bir özellik sayfasında depolanır. Projeniz zat
 
 ## <a name=""></a><a name="property_editor">Özellik Düzenleyicisi</a>
 
-Belirli dize özelliklerini değiştirmek ve makroları değer olarak seçmek için Özellik Düzenleyicisi'ni kullanabilirsiniz. Özellik Düzenleyicisi'ne erişmek için, özellik sayfasında bir özellik seçin ve sonra sağdaki aşağı ok düğmesini seçin. Aşağı açılan listede **\<düzenleme >** varsa, bu özellik Için özellik düzenleyicisini göstermek üzere bu seçeneği belirleyebilirsiniz.
+Belirli dize özelliklerini değiştirmek ve makroları değer olarak seçmek için Özellik Düzenleyicisi'ni kullanabilirsiniz. Özellik Düzenleyicisi'ne erişmek için, özellik sayfasında bir özellik seçin ve sonra sağdaki aşağı ok düğmesini seçin. Açılan listede ** \<Düzenle>** varsa, bu özellik için özellik düzenleyicisini göstermek üzere bu seçeneği belirleyebilirsiniz.
 
 ![Özellik&#95;Düzenleyicisi&#95;açılan kutusu](media/property_editor_dropdown.png "Property_Editor_Dropdown")
 
@@ -100,11 +100,11 @@ Belirli dize özelliklerini değiştirmek ve makroları değer olarak seçmek i�
 
 ## <a name="add-an-include-directory-to-the-set-of-default-directories"></a>Varsayılan dizinler kümesine bir içerme dizini ekleyin
 
-Bir projeye ekleme dizini eklediğinizde, tüm varsayılan dizinleri geçersiz kılmamak önemlidir. Dizin eklemenin doğru yolu, örneğin "C:\MyNewIncludeDir\", sonra **$ (IncludePath)** makrosunu özellik değerine ekleyen yeni yolu eklemektir.
+Bir projeye ekleme dizini eklediğinizde, tüm varsayılan dizinleri geçersiz kılmamak önemlidir. Dizin eklemenin doğru yolu, örneğin "C:\MyNewIncludeDir\"" gibi yeni yolu eklemek ve ardından **$ (IncludePath)** makrosunu özellik değerine eklemek içindir.
 
 ## <a name="quickly-browse-and-search-all-properties"></a>Tüm özelliklere hızla gözatıp arama
 
-**Tüm seçenekler** Özellik sayfası ( **Özellik sayfaları** iletişim kutusundaki **yapılandırma &#124; özellikleri CC++ /** düğüm altında), geçerli bağlamda kullanılabilen özelliklere gözatmanız ve bunları aramanız için hızlı bir yol sağlar. Özel bir arama kutusu ve sonuçlara filtre uygulamanıza yardımcı olacak basit bir sözdizimi vardır:
+**Tüm seçenekler** Özellik sayfası ( **Özellik sayfaları** iletişim kutusunda **yapılandırma özellikleri &#124; C/C++** düğümü altında), geçerli bağlamda kullanılabilen özelliklere gözatmanız ve bunları aramanız için hızlı bir yol sağlar. Özel bir arama kutusu ve sonuçlara filtre uygulamanıza yardımcı olacak basit bir sözdizimi vardır:
 
 Önek yok:<br/>
 Yalnızca özellik adlarında arayın (büyük/küçük harf duyarsız alt dize).

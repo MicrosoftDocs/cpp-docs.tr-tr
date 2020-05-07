@@ -1,5 +1,5 @@
 ---
-title: C++Yayın yapıları-Visual Studio
+title: C++ yayın yapıları-Visual Studio
 ms.date: 12/10/2018
 helpviewer_keywords:
 - debugging [C++], release builds
@@ -22,11 +22,11 @@ Yayın derlemesi iyileştirmeleri kullanır. Bir yayın derlemesi oluşturmak i�
 [Yayın Derlemesi Oluşturmadaki Genel Sorunlar](common-problems-when-creating-a-release-build.md)<br/>
 [Yayın Derlemesi Sorunlarını Giderme](fixing-release-build-problems.md)<br/>
 [ASSERT Yerine VERIFY Kullanma](using-verify-instead-of-assert.md)<br/>
-[Belleğin Üzerine Yazma Denetimi için Hata Ayıklama Derlemesini Kullanma](using-the-debug-build-to-check-for-memory-overwrite.md)<br/>
+[Bellek üzerine yazmayı denetlemek için hata ayıklama derlemesini kullanma](using-the-debug-build-to-check-for-memory-overwrite.md)<br/>
 [Nasıl yapılır: Yayın Derlemesinde Hata Ayıklama](how-to-debug-a-release-build.md)<br/>
 [Bellek Üzerine Yazmalarını Denetleme](checking-for-memory-overwrites.md)<br/>
 [Kodunuzu İyileştirme](optimizing-your-code.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Başvurusu](reference/c-cpp-building-reference.md)
+[C/C++ Oluşturma Başvurusu](reference/c-cpp-building-reference.md)

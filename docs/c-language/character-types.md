@@ -14,9 +14,9 @@ ms.locfileid: "62312641"
 ---
 # <a name="character-types"></a>Karakter Türleri
 
-Harfinin öncesinde olmayan bir tamsayı karakter sabitinin **L** türünde `int`. Tek bir karakter içeren tamsayı karakter sabitinin değeri bir tamsayı olarak yorumlanır karakterin sayısal değerdir. Örneğin, karakterin sayısal değerini `a` 97 ondalık ve 61 onaltılık.
+Önünde **L** harfinin türünde olan bir tamsayı karakter sabiti türü `int`. Tek bir karakter içeren bir tamsayı karakter sabiti değeri, tamsayı olarak yorumlanan karakterin sayısal değeridir. Örneğin, karakterin `a` sayısal değeri 97 ' dir ve onaltılı olarak 61 ' dir.
 
-Sözdizimi, "geniş karakter sabiti" harfi ile önek olarak kullanılan bir karakter sabiti olduğunu **L**. Türü bir geniş karakter sabitinin `wchar_t`, STDDEF içinde tanımlanan bir tamsayı türü. H üst bilgi dosyası. Örneğin:
+Sözdizimi, "geniş karakter sabiti", **L**harfinin önekli bir karakter sabiti. Geniş karakterli bir sabit türünde `wchar_t`, STDDEF içinde tanımlanan bir tamsayı türü vardır. H üstbilgi dosyası. Örneğin:
 
 ```
 char    schar =  'x';   /* A character constant          */
@@ -24,7 +24,7 @@ wchar_t wchar = L'x';   /* A wide-character constant for
                             the same character           */
 ```
 
-Geniş karakter sabitleri, 16 bit genişliğinde olan ve genişletilmiş yürütme karakter kümesi üyeleri belirtin. Karakter türüne göre gösterilemeyecek kadar çok büyük harfler express izin `char`. Bkz: [çok baytlı ve geniş karakterler](../c-language/multibyte-and-wide-characters.md) geniş karakterler hakkında daha fazla bilgi.
+Geniş karakter sabitleri 16 bit geniştir ve genişletilmiş yürütme karakter kümesinin üyelerini belirtir. Bunlar, tür `char`tarafından gösterilemeyecek kadar büyük olan harflerden oluşan karakterleri ifade etmeniz için izin verir. Geniş karakterler hakkında daha fazla bilgi için bkz. [çok baytlı ve geniş karakterler](../c-language/multibyte-and-wide-characters.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

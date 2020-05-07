@@ -11,16 +11,16 @@ ms.locfileid: "64343118"
 ---
 # <a name="range-of-integer-values"></a>Tamsayı Değerleri Aralığı
 
-**ANSI 3.1.2.5** gösterimler ve tamsayı çeşitli türlerde değer kümeleri
+**ANSI 3.1.2.5** Çeşitli tamsayı türlerinin temsilleri ve değerleri kümesi
 
-32 bit (dört bayt) tamsayıları içerir. İşaretli tam sayılar ikiye tamamlayıcı biçimde temsil edilir. En anlamlı bit işareti tutar: Negatif için 1, 0 pozitif ve sıfır. Değerleri aşağıda listelenmiştir:
+Tamsayılar 32 bit (dört bayt) içerir. İşaretli tam sayılar ikiye tamamlayıcı biçimde temsil edilir. En anlamlı bit işareti tutar: negatif için 1, pozitif ve sıfır için 0. Değerler aşağıda listelenmiştir:
 
 |Tür|Minimum ve maksimum|
 |----------|-------------------------|
-|**İmzasız short**|0-65535|
+|**imzasız short**|0-65535|
 |`signed short`|-32768-32767|
 |`unsigned long`|0-4294967295|
-|**signed long**|-2147483648 ile 2147483647 arasında|
+|**imzalanan uzun**|-2147483648-2147483647|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

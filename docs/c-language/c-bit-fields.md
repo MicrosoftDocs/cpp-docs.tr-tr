@@ -14,26 +14,26 @@ ms.locfileid: "62326501"
 ---
 # <a name="c-bit-fields"></a>C Bit Alanları
 
-Bir yapı veya birleşim üyeleri için Bildirimciler ek olarak, bir yapı bildirimci de BITS "bit alanı." adlı, belirtilen sayıda olabilir Uzunluğu alan adı bildirimcisi gelen iki nokta ile alınır. Bir bit alanı integral türü yorumlanır.
+Bir yapı veya birleşim üyeleri için bildirimcilerin yanı sıra, bir yapı bildirimci, "bit alanı" olarak adlandırılan belirtilen sayıda bit de olabilir. Uzunluğu, alan adı için bildirimciden bir iki nokta üst üste kadar ayarlanır. Bit alanı integral türü olarak yorumlanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Yapı-declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirticisi* *bildirimci*<sub>iyileştirilmiş</sub> **:** *sabit-ifade*
+*struct-declarator*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimci*<sub>opt</sub> **:** *sabit ifadesi*
 
-*Sabit-ifade* bit alanının genişliğini belirtir. *Tür tanımlayıcısı* için `declarator` olmalıdır `unsigned int`, **signed int**, veya `int`ve *sabit-ifade* bir negatif olmamalıdır tamsayı değeri. Değer sıfır ise bildirimi olmayan `declarator`. Diziler bit alanları bit alanlarının ve bit alanları döndüren işlev işaretçileri izin verilmez. İsteğe bağlı `declarator` bit alanı adları. Bit alanları yalnızca bir yapının bir parçası olarak bildirilebilir. Address-of işlecini (**&**) bit alanı bileşenleri için uygulanamaz.
+*Sabit ifade* , alanın genişliğini bit cinsinden belirtir. `declarator` İçin `unsigned int` *tür belirleyicisi* , **işaretli bir int**veya ya `int`da ve *sabit ifadesinin* negatif olmayan bir tamsayı değeri olması gerekir. Değer sıfırsa, bildirimin No `declarator`değeri vardır. Bit alanı dizileri, bit alanları işaretçileri ve bit alanları döndüren işlevlere izin verilmez. İsteğe bağlı `declarator` , bit alanını adlandırır. Bit alanları, yalnızca bir yapının parçası olarak bildirilemez. Address-of işleci (**&**), bit alanı bileşenlerine uygulanamaz.
 
-Adsız bit alanları başvurulamaz ve çalışma zamanında içeriklerini tahmin edilemez. Bunlar "kukla" alanları olarak hizalama amaçları için kullanılabilir. 0 içinde aşağıdaki üyesi için depolama garanti gibi genişliğini belirtilen adlandırılmamış bir bit alanı *yapı bildirim listesi* başlangıcı bir `int` sınır.
+Adlandırılmamış bit alanlarına başvurulamaz ve çalışma zamanında içerikleri tahmin edilemez. Hizalama amacıyla "sözde" alanları olarak kullanılabilirler. Genişliği 0 olarak belirtilen adlandırılmamış bir bit alanı, *Yapı-bildirim-listesinde* kendisini izleyen üyenin depolamanın bir `int` sınır üzerinde başlayacağını garanti eder.
 
-Bit alanları da içeren bit deseni için yeterince uzun olması gerekir. Örneğin, bu iki ifade geçerli değil:
+Bit alanları da bit deseninin içermesi için yeterince uzun olmalıdır. Örneğin, bu iki deyim geçerli değildir:
 
 ```
 short a:17;        /* Illegal! */
 int long y:33;     /* Illegal! */
 ```
 
-Bu örnek iki boyutlu bir dizi adlandırılmış yapıları tanımlar `screen`.
+Bu örnek adında `screen`iki boyutlu yapıların bir dizisini tanımlar.
 
 ```
 struct
@@ -45,13 +45,13 @@ struct
 } screen[25][80];
 ```
 
-Dizi 2.000 öğeleri içerir. Dört bit alanı üyelerini içeren tek bir yapı her öğesidir: `icon`, `color`, `underline`, ve `blink`. Her yapı boyutu iki bayttır.
+Dizi 2.000 öğe içeriyor. Her öğe, dört bitlik alan üyesini içeren tek bir yapıdır `icon`:, `color`, `underline`ve. `blink` Her yapının boyutu iki bayttır.
 
-Bit alanları, tamsayı türü ile aynı semantiğe sahip. Başka bir deyişle, bit alanı kaç BITS ne olursa olsun aynı temel türünde bir değişken kullanılacak bir bit alanı ifadeleri tam olarak aynı şekilde kullanılır.
+Bit alanları tamsayı türüyle aynı semantiğe sahip. Bu bir bit alanın, bit alanında kaç bitin olduğunu fark etmeksizin, aynı temel türdeki bir değişkenle tam olarak aynı şekilde kullanıldığı anlamına gelir.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Bit alanları olarak tanımlanan `int` işaretli olarak kabul edilir. ANSI C standardı için bir Microsoft uzantısı sağlar `char` ve **uzun** türleri (her ikisi de **imzalı** ve `unsigned`) bit alanları için. Bit alanları temel türüyle adlandırılmamış **uzun**, **kısa**, veya `char` (**imzalı** veya `unsigned`) bir sınır hizalamayı temel türü için uygun zorlayın.
+Olarak `int` tanımlanan bit alanları, imzalanmış olarak kabul edilir. ANSI C standardı için Microsoft uzantısı, bit alanları `char` için ve **uzun** türlere (hem **imzalı** hem `unsigned`de) izin verir. Temel türü **Long**, **Short**veya `char` (**imzalı** ya da `unsigned`) olan adlandırılmamış bit alanları, temel türe uygun bir sınıra göre hizalanmaya zorlar.
 
 Bit alanları, bir tamsayı içinde en az önemli olan bitten en önemli bite doğru ayrılır. Aşağıdaki kodda
 
@@ -78,10 +78,10 @@ bitler aşağıdaki gibi düzenlenir:
 cccccccb bbbbaaaa
 ```
 
-İşlemci 8086 ailesi düşük baytını yüksek bayttan, tamsayı önce tamsayı değerleri depoladığından `0x01F2` yukarıdaki fiziksel bellekte depolanır `0xF2` ardından `0x01`.
+8086 işlemci ailesi, yüksek bayttan önce `0x01F2` `0xF2` gelen tamsayı değerlerinin düşük baytını depoladığından, yukarıdaki tamsayı, tarafından `0x01`izlenen fiziksel bellekte depolanır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yapı Bildirimleri](../c-language/structure-declarations.md)
+[Yapı bildirimleri](../c-language/structure-declarations.md)

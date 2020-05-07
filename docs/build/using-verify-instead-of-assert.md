@@ -38,13 +38,13 @@ strcpy_s( buf, sizeOfBuffer, "Hello, World" );
 free( buf );
 ```
 
-Bu kod, bir MFC uygulamasının hata ayıklama sürümünde kusursuz bir şekilde çalışır. `calloc( )` çağrısı başarısız olursa, dosya ve satır numarası içeren bir tanılama iletisi görüntülenir. Ancak, bir MFC uygulamasının perakende derlemesinde:
+Bu kod, bir MFC uygulamasının hata ayıklama sürümünde kusursuz bir şekilde çalışır. Çağrısı `calloc( )` başarısız olursa, dosya ve satır numarasını içeren bir tanılama iletisi görüntülenir. Ancak, bir MFC uygulamasının perakende derlemesinde:
 
-- `calloc( )` çağrısı hiçbir şekilde gerçekleşmez, `buf` başlatılmamış olarak bırakılır veya
+- çağrısı hiçbir şekilde `calloc( )` gerçekleşmez, Başlatılmamış olarak `buf` bırakılır veya
 
-- `strcpy_s( )` "`Hello, World`" öğesini rastgele bir bellek parçasına kopyalar, büyük olasılıkla uygulamanın kilitlenmesi veya sistemin yanıt vermemesine neden olabilir veya
+- `strcpy_s( )`"`Hello, World`" öğesini rastgele bir bellek parçasına kopyalar, büyük olasılıkla uygulamayı kilitlenen veya sistemin yanıt vermemesine neden oluyor veya
 
-- `free()` hiç ayrılmamış belleği serbest bırakma girişiminde bulunur.
+- `free()`hiç ayrılmamış belleği serbest bırakma girişimleri.
 
 ONAYı doğru bir şekilde kullanmak için, kod örneği aşağıdaki şekilde değiştirilmelidir:
 

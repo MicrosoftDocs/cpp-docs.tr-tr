@@ -1,5 +1,5 @@
 ---
-title: Hangi dışarı aktarma metodunun kullanılacağını belirleme
+title: Hangi Dışarı Aktarma Yönteminin Kullanılacağını Belirleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - __declspec(dllexport) keyword [C++]
@@ -14,43 +14,43 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62273743"
 ---
-# <a name="determine-which-exporting-method-to-use"></a>Hangi dışarı aktarma metodunun kullanılacağını belirleme
+# <a name="determine-which-exporting-method-to-use"></a>Hangi Dışarı Aktarma Yönteminin Kullanılacağını Belirleme
 
-İki yöntemden biriyle işlevleri dışa aktarabilirsiniz — bir .def dosyası veya `__declspec(dllexport)` anahtar sözcüğü. Hangi DLL dosyanız için daha iyi bir yoludur karar vermenize yardımcı olmak için aşağıdaki soruları göz önünde bulundurun:
+İşlevleri bir. def dosyası ya da `__declspec(dllexport)` anahtar sözcüğü olmak üzere iki şekilde dışarı aktarabilirsiniz. DLL 'niz için ne kadar iyi bir yönteme karar vermenize yardımcı olması için aşağıdaki soruları göz önünde bulundurun:
 
-- Daha sonra daha fazla işlevleri dışarı aktarmak planlıyor musunuz?
+- Daha sonra daha fazla işlev dışarı aktarmayı planlıyor musunuz?
 
-- Yeniden oluşturabilirsiniz veya yeniden oluşturulamıyor uygulamalar tarafından kullanıldığı uygulamalar tarafından kullanılan, DLL — Örneğin, üçüncü taraflarca oluşturulan uygulamaları?
+- DLL 'niz yalnızca yeniden derleyebilirsiniz veya yeniden derlenemez uygulamalar tarafından kullanılıyor — Örneğin, üçüncü taraflar tarafından oluşturulan uygulamalar.
 
-## <a name="pros-and-cons-of-using-def-files"></a>Artıları ve eksileri .def dosyaları kullanma
+## <a name="pros-and-cons-of-using-def-files"></a>. Def dosyalarını kullanmanın uzmanları ve dezavantajları
 
-Dışa aktarma işlevlerini dışa aktarma sıra sayıları üzerinde denetim bir .def dosyası sağlar. DLL dosyanız için dışa aktarılan bir işlevin eklediğinizde, verilen herhangi bir işlevi daha yüksek sıralı bir değerden atayabilirsiniz. Bunu yaptığınızda, örtük bağlama kullanan uygulamaları içeren yeni bir işlev içeri aktarma kitaplığı ile yeniden Bağla gerekmez. Birçok uygulama tarafından kullanılacak bir DLL tasarlıyorsanız, yeni işlevler eklemek ve ayrıca, zaten kullanmakta uygulamaları ile düzgün çalışmak devam etmesini sağlamak için çok kullanışlı bir yoldur. Örneğin, MFC DLL .def dosyalarını kullanarak oluşturulur.
+Bir. def dosyasındaki işlevleri dışarı aktarmak, dışa aktarma sıra sayıları üzerinde denetim sağlar. DLL 'nize bir içe aktarılmış işlev eklediğinizde, bu değeri diğer tüm içe aktarılmış fonksiyondan daha yüksek bir sıra değeri atayabilirsiniz. Bunu yaptığınızda, örtük bağlama kullanan uygulamaların, yeni işlevi içeren içeri aktarma kitaplığıyla yeniden bağlanması gerekmez. Yeni işlevler ekleyebildiğiniz ve aynı zamanda kendisine ait olan uygulamalarla düzgün şekilde çalışmaya devam ettiğinden emin olduğunuzdan, çok sayıda uygulama tarafından kullanılmak üzere bir DLL tasarlıyorsanız bu çok kullanışlı olur. Örneğin, MFC DLL 'Leri. def dosyaları kullanılarak oluşturulur.
 
-Bir .def dosyası kullanarak başka bir avantajı, kullanabileceğiniz olduğu `NONAME` bir işlevi dışa aktarmak için özniteliği. Bu, yalnızca DLL dışarı aktarma tablosundaki koyar. Dışarı aktarılan işlevleri, çok sayıda sahip kullanarak DLL'ler için `NONAME` özniteliği, DLL dosyasının boyutunu azaltabilirsiniz. Bir modül tanımlama deyimini yazma hakkında daha fazla bilgi için bkz: [modül tanımlama deyimleri kuralları](reference/rules-for-module-definition-statements.md). Sıralı dışarı aktarma hakkında daha fazla bilgi için bkz: [DLL'den işlevleri yerine ada göre bir DLL](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
+Bir. def dosyası kullanmanın başka bir avantajı da `NONAME` , bir işlevi dışarı aktarmak için özniteliğini kullanmanıza olanak sağlar. Bu, yalnızca DLL 'deki dışarı aktarmalar tablosuna sıra koyar. Çok sayıda aktarılmış işlevi olan DLL 'Ler için, `NONAME` ÖZNITELIĞINI kullanarak dll dosyasının boyutu azalabilir. Modül tanımı deyimi yazma hakkında daha fazla bilgi için bkz. [modül tanımlama deyimleri kuralları](reference/rules-for-module-definition-statements.md). Sıralı dışarı aktarma hakkında daha fazla bilgi için bkz. [DLL 'Den Işlevleri ad yerine sıraya göre dışarı aktarma](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
 
-Bir .def dosyası kullanılarak dezavantajı C++ dosyasındaki işlevleri dışa aktarıyorsanız, düzenlenmiş adları .def koymak ya da sahip dosya yapmış ad düzenleme istemiyorsanız extern "C" kullanarak dışarı aktarılan işlevleri tanımlayın, mi MSVC derleyici tarafından.
+Bir. def dosyası kullanmanın dezavantajı, bir C++ dosyasındaki işlevleri dışarı aktarıyorsanız, düzenlenmiş adları. def dosyasına yerleştirmeniz veya MSVC derleyicisi tarafından gerçekleştirilen ad dekorasyonu kaçınmak için extern "C" kullanarak dışarı aktarılan işlevleri tanımlamanız gerekir.
 
-Düzenlenmiş adları .def dosyasına yerleştirirseniz, bunları kullanarak alabilirsiniz [DUMPBIN](reference/dumpbin-reference.md) aracını veya bağlayıcı [/MAP](reference/map-generate-mapfile.md) seçeneği. Derleyici tarafından üretilen düzenlenmiş adların derleyiciye özel; düzenlenmiş adları .def dosyasına derleyici tarafından üretilen koyarsanız, bu nedenle, DLL için bağlantı veren uygulamalar da böylece uygulamadaki düzenlenmiş adlar dışarı aktarılan eşleşen derleyici aynı sürümünü kullanarak oluşturulması gereken i adları n DLL'nin .def dosyası.
+Düzenlenmiş adları. def dosyasına yerleştirirseniz, bunları [dumpbin](reference/dumpbin-reference.md) aracını kullanarak veya bağlayıcı [/map](reference/map-generate-mapfile.md) seçeneğini kullanarak elde edebilirsiniz. Derleyici tarafından üretilen düzenlenmiş adlar derleyiciye özeldir; Bu nedenle, derleyici tarafından üretilen düzenlenmiş adları. def dosyasına yerleştirirseniz, çağıran uygulamadaki düzenlenmiş adların DLL 'nin. def dosyasındaki adı eşleşen adlarla eşleşmesi için DLL 'ye bağlanan uygulamalar aynı derleyici sürümü kullanılarak da oluşturulmalıdır.
 
-## <a name="pros-and-cons-of-using-declspecdllexport"></a>Artıları ve eksileri __declspec(dllexport) kullanarak
+## <a name="pros-and-cons-of-using-__declspecdllexport"></a>__Declspec (dllexport) kullanmanın uzmanları ve dezavantajları
 
-Kullanarak `__declspec(dllexport)` koruma .def dosyası ve düzenlenmiş adlar dışarı aktarılan işlevlerin edinme hakkında endişelenmeye gerek olmadığı için uygundur. Ancak, bu şekilde, verme kullanışlılığını yeniden derlemek hazır olduğunuz bağlı uygulamaların sayısı sınırlıdır. DLL yeni dışarı aktarma ile yeniden oluşturursanız, ayrıca uygulamaları için C++ işlevlerini dışa aktarılan düzenlenmiş adlar yeniden oluşturmak için farklı bir derleyici sürümü kullanırsanız değişebileceğinden yeniden gerekir.
+, `__declspec(dllexport)` . Def dosyasını sürdürme ve dışarıya aktarılmış işlevlerin düzenlenmiş adlarını alma hakkında endişelenmeniz olmadığından, kullanımı uygundur. Ancak, bu şekilde dışa aktarma işleminin yararlılığı, yeniden oluşturmak istediğiniz bağlantılı uygulama sayısıyla sınırlıdır. DLL 'yi yeni dışarı aktarımlarla yeniden oluşturursanız, dışarı aktarılan C++ işlevlerine yönelik düzenlenmiş adlar, derlemeyi yeniden oluşturmak için farklı bir derleyici sürümü kullanıyorsanız, uygulamaları yeniden oluşturmanız da gerekir.
 
 ### <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Kullanarak bir DLL dışarı aktarın. DEF dosyaları](exporting-from-a-dll-using-def-files.md)
+- [Kullanarak DLL 'den dışarı aktarın. DEF dosyaları](exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
+- [__Declspec (dllexport) kullanarak DLL 'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS kullanarak dışarı ve içeri aktarma](exporting-and-importing-using-afx-ext-class.md)
 
-- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C Dili Çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C veya C++ Dili Çalıştırılabilirlerinde kullanmak için C işlevlerini dışarı aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
 - [__declspec(dllimport) kullanarak bir uygulamaya aktarma](importing-into-an-application-using-declspec-dllimport.md)
 
-- [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
+- [DLL 'yi başlatma](run-time-library-behavior.md#initializing-a-dll)
 
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 

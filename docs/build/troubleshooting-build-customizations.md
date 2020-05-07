@@ -19,21 +19,21 @@ ms.locfileid: "62315254"
 ---
 # <a name="troubleshooting-build-customizations"></a>Derleme Özelleştirmeleri Sorunlarını Giderme
 
-Özel derleme adımları veya olayları beklediğiniz gibi davrandığını değil, yanlış neler olduğunu anlamak yapabileceğiniz birkaç şey vardır.
+Özel derleme adımlarınız veya olaylarınız beklediğiniz gibi davranmıyorsa, neyin yanlış gittiğini anlamak için yapabileceğiniz birkaç şey vardır.
 
-- Özel derleme adımlarınızı oluşturmak dosyalarını çıktı bildirdiğiniz dosyaları eşleştiğinden emin olun.
+- Özel derleme adımlarınızın üretmesindeki dosyaların, çıkış olarak bildirdiğiniz dosyalarla eşleştiğinden emin olun.
 
-- Özel derleme adımlarınızı girişleri herhangi bir dosya oluşturmak veya diğer bağımlılıkları derleme adımları (özel veya diğer) dosyaları projenize eklendiğinden emin olun. Ve özel derleme sonra adım bu dosyaları kullanmak araçları yürütmek emin olun.
+- Özel derleme adımlarınız, diğer derleme adımlarının girdileri veya bağımlılıkları olan herhangi bir dosya (özel veya başka türlü) üretemiyor, bu dosyaların projenize eklendiğinden emin olun. Ve bu dosyaları kullanan araçların özel derleme adımından sonra yürütülmesine dikkat edin.
 
-- Özel derleme adımı gerçekten yaptığı görüntüleme, ekleme `@echo on` ilk komut olarak. Derleme adımlarını ve derleme olaylarını bir geçici .bat dosyasına yerleştirilebilir ve proje derlenirken çalıştırın. Bu nedenle, derleme etkinliğiniz denetlenirken hata oluştu ekleyebilir veya adım komutları oluşturun.
+- Özel derleme adımlarınızın gerçekten ne yaptığını göstermek için ilk komut olarak `@echo on` ekleyin. Derleme olayları ve derleme adımları geçici bir. bat dosyasına konur ve proje oluşturulduğunda çalıştırılır. Bu nedenle, derleme olaylarınıza veya yapı adım komutlarına hata denetimi ekleyebilirsiniz.
 
-- Gerçekte ne yürütülen görmek için Ara dosyaları dizinindeki yapılandırma günlüğünü inceleyin. Yapı günlüğüne adını ve yolunu tarafından temsil edilen **MSBuild** makrosu ifade **$(ıntdir)\\$(MSBuildProjectName) .log**.
+- Aslında yürütüldüğünü görmek için ara dosyalar dizinindeki Derleme günlüğünü inceleyin. Yapı günlüğünün yolu ve adı, **$ (IntDir\\) $ (MSBuildProjectName). log** **MSBuild** makro ifadesi tarafından temsil edilir.
 
-- Derleme günlüğünde bilgi varsayılan miktarından daha toplamak için proje ayarlarınızı değiştirin. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**. İçinde **seçenekleri** iletişim kutusu, tıklayın **projeler ve çözümler** düğümünü ve ardından **derleme ve çalıştırma** düğümü. Ardından **MSBuild projesi derleme günlük dosyası ayrıntısı** kutusunun **ayrıntılı**.
+- Proje ayarlarınızı, yapı günlüğündeki varsayılan bilgi miktarından daha fazlasını toplayacak şekilde değiştirin. **Tools** (Araçlar) menüsünde **Options**’a (Seçenekler) tıklayın. **Seçenekler** iletişim kutusunda, **Projeler ve çözümler** düğümüne tıklayın ve ardından **Oluştur ve Çalıştır** düğümüne tıklayın. Ardından, **MSBuild proje derleme günlük dosyası ayrıntı düzeyi** kutusunda, **ayrıntılı**' e tıklayın.
 
-- Kullanmakta olduğunuz adı veya dizin makroları değerlerin herhangi dosya doğrulayın. Ayrı ayrı makroları echo veya ekleyebileceğiniz `copy %0 command.bat` , özel derleme adımı başlangıcına kadar hangi kopyalar command.bat özel derleme adımının komutları içeren tüm makro genişletilmiş.
+- Kullandığınız herhangi bir dosya adının veya dizin makrolarının değerlerini doğrulayın. Makroları ayrı ayrı yankı edebilir veya özel derleme adımınızın `copy %0 command.bat` başlangıcına ekleyebilirsiniz. Bu, özel derleme adımınızın komutlarını, tüm makrolar genişletilmiş olacak şekilde Command. bat ' a kopyalayacaktır.
 
-- Özel derleme adımlarını çalıştırmayı ve derleme olayları ayrı ayrı davranışlarını denetlemek için.
+- Davranışlarını denetlemek için özel yapı adımlarını çalıştırın ve olayları ayrı ayrı oluşturun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

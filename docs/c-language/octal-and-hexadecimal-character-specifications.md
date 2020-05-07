@@ -14,17 +14,17 @@ ms.locfileid: "64343376"
 ---
 # <a name="octal-and-hexadecimal-character-specifications"></a>Sekizlik ve Onaltılık Karakter Belirtimleri
 
-Sıra **\\** <em>ooo</em> karakter kümesi üç basamaklı sekizli karakter kodu olarak ASCII herhangi bir karakteri belirtebileceğiniz anlamına gelir. Sekizli tamsayının sayısal değeri, istediğiniz karakter veya geniş karakter değerini belirtir.
+**\\** <em>Ooo</em> sırası, ASCII karakter kümesinde üç basamaklı sekizli karakter kodu olarak herhangi bir karakter belirtebileceğiniz anlamına gelir. Sekizli tamsayının sayısal değeri, istediğiniz karakter veya geniş karakter değerini belirtir.
 
-Benzer şekilde, sıra **\x**<em>hhh</em> onaltılı karakter kodu olarak herhangi bir ASCII karakterini belirlemenize izin verir. Örneğin, ASCII geri karakterini normal C çıkış dizisi olarak verebilirsiniz (**\b**), veya olarak kod **\010** (sekizlik) veya **\x008** (onaltılık).
+Benzer şekilde, **\x**<em>SSS</em> dizisi, herhangi bir ASCII karakterini onaltılık karakter kodu olarak belirtmenizi sağlar. Örneğin, ASCII geri al karakterini normal C kaçış sırası (**\b**) olarak verebilir veya bunu **\ 010** (sekizlik) veya **\x008** (onaltılı) olarak kodlayın.
 
-Sekizli bir çıkış dizisinde yalnızca 0 ile 7 arasındaki sayıları kullanabilirsiniz. Sekizli çıkış dizileri, asla üç basamaktan uzun olamaz ve sekizlik bir rakam olmayan ilk karakterle sonlandırılır. Üç sayının tümünü kullanmanız gerekmese de, en az birini kullanmanız gerekir. Örneğin, sekizli gösterimidir **\10** ASCII geri karakteri için ve **\101** olarak bir ASCII harfi için grafik.
+Sekizli bir çıkış dizisinde yalnızca 0 ile 7 arasındaki sayıları kullanabilirsiniz. Sekizli çıkış dizileri, asla üç basamaktan uzun olamaz ve sekizlik bir rakam olmayan ilk karakterle sonlandırılır. Üç sayının tümünü kullanmanız gerekmese de, en az birini kullanmanız gerekir. Örneğin, bir ASCII grafiğinde verilen şekilde, sekizli gösterimi ASCII geri tuşu için **\ 10** ve A harfi için **\ 101** olur.
 
-Benzer şekilde, onaltılı çıkış dizisi için en az bir sayı kullanmanız gerekir, ancak ikinci ve üçüncü sayıyı atlayabilirsiniz. Bu nedenle, geri karakteri için onaltılık kaçış sırası olarak belirtebilirsiniz **\x8**, **\x08**, veya **\x008**.
+Benzer şekilde, onaltılı çıkış dizisi için en az bir sayı kullanmanız gerekir, ancak ikinci ve üçüncü sayıyı atlayabilirsiniz. Bu nedenle, geri al karakteri için, **\x8**, **\x08**veya **\x008**gibi onaltılı kaçış sırasını belirtebilirsiniz.
 
-Sekizli veya onaltılı çıkış dizisi değer türünün temsil edilebilir değerler aralığında olmalıdır **imzasız char** bir karakter sabiti ve türü için `wchar_t` bir geniş karakter sabiti için. Bkz: [çok baytlı ve geniş karakterler](../c-language/multibyte-and-wide-characters.md) geniş karakter sabitleri hakkında bilgi için.
+Sekizli veya onaltılı kaçış sırasının değeri, bir karakter sabiti için **işaretsiz** karakter türü ve geniş karakterli bir sabit için tür `wchar_t` olmak üzere gösterilemeyen tablo değerleri aralığında olmalıdır. Geniş karakter sabitleri hakkında bilgi için bkz. [çok baytlı ve geniş karakterler](../c-language/multibyte-and-wide-characters.md) .
 
-Sekizli çıkış sabitlerinden farklı olarak, bir çıkış dizisinde bulunabilecek onaltılı basamaklar sınırsızdır. Onaltılı bir çıkış dizisi, onaltılı olmayan ilk karakterde sonlandırılır. Onaltılık basamak arasındaki harfleri içerdiğinden **bir** aracılığıyla **f**, kaçış sırasının istenen basamakta emin olmak için dikkatli olunmalıdır. Karışıklığı önlemek için, bir makro tanımına sekizli veya onaltılı karakter tanımları koyabilirsiniz:
+Sekizli çıkış sabitlerinden farklı olarak, bir çıkış dizisinde bulunabilecek onaltılı basamaklar sınırsızdır. Onaltılı bir çıkış dizisi, onaltılı olmayan ilk karakterde sonlandırılır. Onaltılık basamaklar **a** - **f**arasındaki harfleri içerdiğinden, kaçış sırasının amaçlanan rakamla sonlandırdığından emin olmak için dikkatli olmanız gerekir. Karışıklığı önlemek için, bir makro tanımına sekizli veya onaltılı karakter tanımları koyabilirsiniz:
 
 ```
 #define Bell '\x07'

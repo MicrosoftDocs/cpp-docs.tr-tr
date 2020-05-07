@@ -11,11 +11,11 @@ ms.locfileid: "62326137"
 ---
 # <a name="improper-access-to-a-union"></a>Birleşime Düzgün Olmayan Erişim
 
-**ANSI 3.3.2.3** birleşim nesnenin bir üyesi farklı bir tür üyesi kullanılarak erişilen
+**ANSI 3.3.2.3** Bir UNION nesnesinin üyesine, farklı türde bir üye kullanılarak erişilir
 
-İki tür UNION bildirilmiş ve bir değeri depolanan ancak birleşim bir türü ile erişilen, sonuçları güvenilir değil.
+İki tür birleşimi bildirilirse ve bir değer depolanıyorsa, ancak birleşime diğer türle erişildiğinde sonuçlar güvenilir değildir.
 
-Örneğin, bir birleşimini **float** ve `int` bildirilir. A **float** değeri depolanır, ancak bu programı daha sonra değeri olarak erişen bir `int`. Böyle bir durumda iç depolama alanında değer bağlıdır **float** değerleri. Tamsayı değeri güvenilir olmaz.
+Örneğin, **float** birleşimi ve `int` olarak bildirilmiştir. Bir **float** değeri depolanır, ancak program daha sonra değerine bir `int`olarak erişir. Böyle bir durumda, değer **float** değerlerinin iç depolamasına bağlıdır. Tamsayı değeri güvenilir değil.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

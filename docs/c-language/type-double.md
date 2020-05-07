@@ -16,14 +16,14 @@ ms.locfileid: "62290739"
 ---
 # <a name="type-double"></a>Tür double
 
-Double türündeki çift duyarlıklı değerler 8 bayta sahiptir. Biçim, 11 bit fazladan 1023 üssü, 52 bit mantisi ve 1 bit üst sırası olması dışında kayan biçime benzerdir. Bu biçim bir dizi yaklaşık 1.7E sunar-308 ila 1.7E + 308 double türü için.
+Double türündeki çift duyarlıklı değerler 8 bayta sahiptir. Biçim, 11 bit fazladan 1023 üssü, 52 bit mantisi ve 1 bit üst sırası olması dışında kayan biçime benzerdir. Bu biçim Double türü için yaklaşık 1.7 E-308 ile 1.7 E + 308 arasında bir Aralık sağlar.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Double türü 64 bit içerir: işaret için 1 üs için 11 ve Mantis için 52. Kendi +/-1.7E308 en az 15 duyarlılık basamağıyla ile rozsah.
+Double türü 64 bit içerir: işaret için 1, üs için 11 ve mantis için 52. Aralığı en az 15 basamak duyarlık olan +/-1.7E308.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Temel Türleri Depolama](../c-language/storage-of-basic-types.md)
+[Temel türlerin depolanması](../c-language/storage-of-basic-types.md)

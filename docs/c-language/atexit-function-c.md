@@ -13,7 +13,7 @@ ms.locfileid: "62327918"
 ---
 # <a name="atexit-function-c"></a>atexit İşlevi (C)
 
-**ANSI 4.10.4.3** tarafından döndürülen durum `atexit` bağımsız değişkenin değeri sıfır, exıt_success veya exıt_faılure dışında ise işlevi
+**ANSI 4.10.4.3** Bağımsız değişkenin değeri sıfırdan, `atexit` EXIT_SUCCESS veya EXIT_FAILURE dışında bir işlev tarafından döndürülen durum
 
 `atexit` işlevi başarılı olursa sıfır değerini veya başarısız olursa sıfır olmayan bir değeri döndürür.
 

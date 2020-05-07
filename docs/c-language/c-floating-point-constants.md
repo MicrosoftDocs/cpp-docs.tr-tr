@@ -18,35 +18,35 @@ ms.locfileid: "62325687"
 ---
 # <a name="c-floating-point-constants"></a>C Kayan Nokta Sabitleri
 
-"Kayan noktalı sabit" temsil eden imzalı bir gerçek sayı bir ondalık sayıdır. Bir tamsayı kısmı, kesirli bölümü ve bir üs imzalı bir gerçek sayı gösterimini içerir. Kayan nokta sabitleri değiştirilemez kayan nokta değerlerini temsil edecek şekilde kullanın.
+"Kayan nokta sabiti", işaretli bir gerçek sayıyı temsil eden ondalık bir sayıdır. İşaretli gerçek bir sayının temsili bir tamsayı bölümü, kesirli bölüm ve üs içerir. Değiştirilemeyen kayan nokta değerlerini göstermek için kayan nokta sabitleri kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Kayan noktaya sabiti*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Sabit kesirli* *üs bölümü*<sub>iyileştirilmiş</sub> *kayan soneki*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi* *üs bölümü* *kayan soneki*<sub>iyileştirilmiş</sub>
+*kayan nokta-sabit*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*kesirli sabit* *üs-bölüm*<sub>opt</sub> *kayan-sonek*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak sırası* *üs-bölüm* *kayan-sonek*<sub>opt</sub>
 
-*Sabit kesirli*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi*<sub>iyileştirilmiş</sub> **.** *basamak dizisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi*  **.**
+*kesirli sabit*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak sırası*<sub>katılımı</sub> **.** *basamak sırası*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak sırası*  **.**
 
-*Üs bölümü*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**e** *oturum*<sub>iyileştirilmiş</sub> *basamak dizisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**e** *oturum*<sub>iyileştirilmiş</sub> *basamak dizisi*
+*üs-bölüm*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**e** *imza*<sub>opt</sub> *basamak sırası*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**E** *imza*<sub>opt</sub> *basamak sırası*
 
-*oturum*: biri<br/>
+*imzala*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**+ -**
 
-*basamak dizisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi* *basamak*
+*basamak sırası*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Gurmukhi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak sırası* *sayısı*
 
-*Kayan soneki*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**f m F M**
+*kayan sonek*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**f l F L**
 
-Rakamları ondalık (değer tamsayı kısmını) önce veya basamak (kesirli kısmı) ondalık ayırıcıdan sonra ancak ikisi atlayabilirsiniz. Bir üssü içeriyorsa ondalık bırakabilirsiniz. Hiçbir boşluk karakterleri rakam veya karakter sabitinin ayırabilirsiniz.
+Ondalık noktadan önceki rakamları (değerin tamsayı kısmı) veya ondalık ayırıcıdan sonraki rakamları (kesirli bölüm) atlayabilirsiniz, ancak ikisini birden kullanamazsınız. Ondalık noktasını yalnızca bir üs dahil etmeniz durumunda bırakabilirsiniz. Boşluk karakterleri, sabitin rakamlarını veya karakterlerini ayırabilirler.
 
-Aşağıdaki örnekler, kayan nokta sabitleri ve ifadeler bazı forms gösterir:
+Aşağıdaki örneklerde bazı kayan nokta sabitleri ve ifadeleri gösterilmektedir:
 
 ```C
 15.75
@@ -56,18 +56,18 @@ Aşağıdaki örnekler, kayan nokta sabitleri ve ifadeler bazı forms gösterir:
 25E-4     /* =  0.0025 */
 ```
 
-Bunlar bir eksi işareti tarafından öncelenen sürece kayan nokta sabitleri pozitif (**-**). Bu durumda, eksi işareti birli aritmetik olumsuzlama işleci olarak kabul edilir. Kayan nokta sabitleri `float`, `double`, veya `long double`.
+Kayan nokta sabitleri önünde eksi işareti (**-**) belirtilmedikçe pozitif. Bu durumda, eksi işareti birli aritmetik olumsuzlama işleci olarak değerlendirilir. Kayan nokta sabitleri, `float` `double`veya `long double`türündedir.
 
-Bir kayan noktalı sabit olmayan bir **f**, **F**, **l**, veya **L** soneki türüne sahip `double`. Varsa harfi **f** veya **F** soneki sabiti türüne sahip olan `float`. Harfinin olup olmadığını **l** veya **L**, türüne sahip `long double`. Örneğin:
+**F**, **f**, **l**veya **l** soneki olmayan bir kayan nokta sabiti türü `double`vardır. **F** veya **f** harfi sonek ise, sabit tür `float`olur. **L** veya **l**harfi tarafından düzeltildiğinde, türü `long double`vardır. Örneğin:
 
 ```C
 10.0L  /* Has type long double  */
 10.0F  /* Has type float        */
 ```
 
-Microsoft C derleyicisi dahili olarak temsil eden Not `long double` türle aynı `double`. Bkz: [temel türlerin depolanması](../c-language/storage-of-basic-types.md) türü hakkında bilgi için `double`, `float`, ve `long double`.
+Microsoft C derleyicisi 'nin, türü `long double` `double`ile aynı şekilde temsil ettiğini unutmayın. , `float`Ve `long double`türü `double`hakkında bilgi için bkz. [temel türlerin depolanması](../c-language/storage-of-basic-types.md) .
 
-Aşağıdaki örneklerde gösterildiği gibi kayan noktalı sabit tamsayı kısmını atlayabilirsiniz. Aşağıdakiler dahil olmak üzere birçok şekilde.75 sayısı belirtilebilir:
+Aşağıdaki örneklerde gösterildiği gibi kayan nokta sabitinin tamsayı bölümünü atlayabilirsiniz. Number. 75, aşağıdakiler dahil olmak üzere birçok şekilde ifade edilebilir:
 
 ```C
 .0075e2

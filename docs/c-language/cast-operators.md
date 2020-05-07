@@ -20,11 +20,11 @@ Bir tür ataması, belirli bir durumda bir nesne türünün açık dönüştürm
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Cast ifadesi*: *tekli ifade*
+*Cast ifadesi*: *birli ifade*
 
-**(** *tür adı* **)** *atama ifadesi*
+**(**  *tür adı*  **)**  *Cast ifadesi*
 
-Derleyici işler *atama ifadesini* türü olarak *tür adı* bir tür ataması yapıldıktan sonra. Atamalar, herhangi bir skaler türdeki nesneleri başka bir skaler türe veya skaler türden dönüştürmek için kullanılabilir. Açık tür atamaları, içinde açıklanan, örtük dönüştürmelerin etkilerini belirleyen aynı kuralları tarafından sınırlandırılmıştır [atama dönüştürmeleri](../c-language/assignment-conversions.md). Gerçek boyutlar veya belirli türlerin gösterimi, atamalara ilişkin ek kısıtlamalara neden olabilir. Bkz: [temel türlerin depolanması](../c-language/storage-of-basic-types.md) integral türlerin gerçek boyutları hakkında bilgi için. Tür atamaları hakkında daha fazla bilgi için bkz. [tür atama dönüştürmeleri](../c-language/type-cast-conversions.md).
+Derleyici, tür atama yapıldıktan sonra tür *türü adı* olarak *atama ifadesi* olarak davranır. Atamalar, herhangi bir skaler türdeki nesneleri başka bir skaler türe veya skaler türden dönüştürmek için kullanılabilir. Açık tür atamaları, [atama dönüştürmelerinde](../c-language/assignment-conversions.md)ele alınan örtük dönüştürmelerin etkilerini tespit eden kurallarla kısıtlanır. Gerçek boyutlar veya belirli türlerin gösterimi, atamalara ilişkin ek kısıtlamalara neden olabilir. İntegral türlerinin gerçek boyutları hakkında bilgi için bkz. [temel türlerin depolanması](../c-language/storage-of-basic-types.md) . Tür yayınları hakkında daha fazla bilgi için bkz. [tür-atama dönüştürmeleri](../c-language/type-cast-conversions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

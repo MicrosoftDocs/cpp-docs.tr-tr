@@ -15,7 +15,7 @@ ms.locfileid: "62325581"
 ---
 # <a name="c-postfix-increment-and-decrement-operators"></a>C Sonek Arttırma ve Azaltma İşleçleri
 
-Sonek işleneni artırın ve azaltma işleçleri, değiştirilebilir bir l-değerler skaler türlerdir.
+Sonek artırma ve azaltma işleçlerinin işlenenleri, değiştirilebilir l-değerleri olan skaler türlerdir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,14 +23,14 @@ Sonek işleneni artırın ve azaltma işleçleri, değiştirilebilir bir l-değe
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **++**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **--**
 
-Sonuç sonek artırma veya azaltma işlemi işlenenin değeridir. Sonuç alındıktan sonra işlenenin artırılması (veya azaltılması). Aşağıdaki kod sonek artırma işlecini gösterir.
+Sonek artışı veya azaltma işleminin sonucu işlenenin değeridir. Sonuç alındıktan sonra, işlenenin değeri artırılır (veya azaltılır). Aşağıdaki kod, sonek artışı işlecini gösterir.
 
 ```
 if( var++ > 0 )
     *p++ = *q++;
 ```
 
-Bu örnekte, değişken `var` 0 olarak karşılaştırıldığında sonra artar. Varsa `var` pozitif artan önce sonraki deyimi yürütülür. İlk olarak, nesnenin değeri tarafından işaret edilen `q` tarafından işaret edilen nesnenin atandığı `p`. Ardından, `q` ve `p` artırılır.
+Bu örnekte, değişken `var` 0 ile karşılaştırılır, sonra artırılır. `var` Arttırılmadan önce pozitifse, sonraki ifade yürütülür. İlk olarak, tarafından `q` işaret edilen nesnenin değeri tarafından `p`işaret edilen nesneye atanır. Ardından, `q` ve `p` artırılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

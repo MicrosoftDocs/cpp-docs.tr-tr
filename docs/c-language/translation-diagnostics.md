@@ -11,13 +11,13 @@ ms.locfileid: "62344973"
 ---
 # <a name="translation-diagnostics"></a>Çeviri: Tanılamalar
 
-**ANSI 2.1.1.3** bir tanılama nasıl tanımlanır
+**ANSI 2.1.1.3** Bir tanılama nasıl tanımlanır
 
 Microsoft C şu şekilde hata iletileri oluşturur:
 
-> *filename* **(** *satır numarası* **):** *tanılama* **C**  <em>sayı</em> *iletisi*
+> *dosya adı* **(** *satır numarası* **):** *Tanılama* **C**<em>numarası</em> *iletisi*
 
-Burada *filename* içinde hata ile karşılaşıldı; kaynak dosyasının adıdır *satır numarası* derleyici; hata algılandı satır numarası *tanılama* "error" ya da "uyarı"; *numarası* benzersiz bir dört basamaklı sayıdır (önünde bir **C**sözdiziminde belirtildiği gibi) hata veya uyarı; tanımlar *ileti* açıklayıcı bir iletidir.
+Burada *dosya adı* , hatanın karşılaştığı kaynak dosyanın adıdır; *satır numarası* , derleyicinin hatayı algıladığı satır numarasıdır; *tanı* "hata" ya da "uyarı"; *sayı* , hata veya uyarıyı tanımlayan benzersiz dört basamaklı bir sayıdır (söz dizimi içinde belirtilen bir **C**tarafından). *ileti* açıklayıcı bir iletidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

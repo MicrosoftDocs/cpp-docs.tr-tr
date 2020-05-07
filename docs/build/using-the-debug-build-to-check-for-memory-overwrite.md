@@ -13,21 +13,21 @@ ms.locfileid: "62314292"
 ---
 # <a name="using-the-debug-build-to-check-for-memory-overwrite"></a>Belleğin Üzerine Yazma Denetimi için Hata Ayıklama Derlemesini Kullanma
 
-Belleğin üzerine yazma için kontrol etmek için hata ayıklama derlemesini kullanmak için önce projenizin hata ayıklama için yeniden oluşturmanız gerekir. Ardından, çok uygulamanızın başlangıcına geçin `InitInstance` işlev ve aşağıdaki satırı ekleyin:
+Bellek üzerine yazmayı denetlemek üzere hata ayıklama derlemesini kullanmak için, önce projenizi hata ayıklama için yeniden oluşturmanız gerekir. Ardından, uygulamanızın `InitInstance` işlevinin en başına bölümüne gidin ve aşağıdaki satırı ekleyin:
 
 ```
 afxMemDF |= checkAlwaysMemDF;
 ```
 
-Hata ayıklama bellek ayırıcısı guard bayt tüm bellek ayırmaları geçici bir çözüm getirir. Ancak, bunlar bayt koruyucu (hangi belleğin üzerine yazma gösterir) değiştirildikten olup olmadığını denetlemeden herhangi iyi desteklemez. Aksi takdirde, bu yalnızca, bir belleğin üzerine yazma ile almasını aslında izin verebilir bir arabellek sağlar.
+Hata ayıklama belleği ayırıcısı, tüm bellek ayırmalarının her türlü koruma baytlarını koyar. Ancak, bu koruma baytları değiştirilip değiştirilmediğini (bir belleğin üzerine yazma olduğunu gösterir) kontrol etmediğiniz takdirde hiçbir şey yapmayın. Aksi takdirde, bunun aslında bir bellek üzerine yazma ile uzaklaşabilme olanağı sağlayan bir arabellek sağlar.
 
-Etkinleştirerek `checkAlwaysMemDF`, çağrı yapmak için MFC zorlayacak `AfxCheckMemory` her işlev çağrısı **yeni** veya **Sil** yapılır. Belleğin üzerine yazma algılandı, aşağıdakine benzer bir izleme iletisi oluşturur:
+`checkAlwaysMemDF`Öğesini etkinleştirerek, her **Yeni** veya **silme** çağrısı yapıldığında MFC 'yi `AfxCheckMemory` işleve bir çağrı yapmaya zorlarsınız. Bellek üzerine yazma algılanırsa, aşağıdakine benzer bir Izleme iletisi oluşturacaktır:
 
 ```
 Damage Occurred! Block=0x5533
 ```
 
-Şu iletilerden birini görürseniz, hasarı nerede oluştuğunu belirlemek için kodunuzda adım adım ilerleyin gerekir. Belleğin üzerine yazma oluştuğu daha kesin bir şekilde yalıtmak için yapılan açık çağrıları yapabilir `AfxCheckMemory` kendiniz. Örneğin:
+Bu iletilerden birini görürseniz, hasarın nerede oluştuğunu öğrenmek için kodunuzda ileretmeniz gerekir. Bellek üzerine yazma gerçekleştiği yerde daha kesin bir şekilde yalıtmak için `AfxCheckMemory` kendinize açık çağrılar yapabilirsiniz. Örneğin:
 
 ```
 ASSERT(AfxCheckMemory());
@@ -35,9 +35,9 @@ ASSERT(AfxCheckMemory());
     ASSERT(AfxCheckMemory());
 ```
 
-İlk ASSERT başarılı olur ve ikincisi başarısız olursa, belleğin üzerine yazma, iki çağrı arasında işlevde oluşan gerektiğini anlamına gelir.
+İlk onaylama başarılı olursa ikinci bir tane başarısız olursa, iki çağrı arasındaki işlevde bellek üzerine yazma oluşması gerektiği anlamına gelir.
 
-Uygulamanızı doğasına bağlı olarak, size, gelebilir `afxMemDF` programınızı bile test etmek için çok yavaş çalışmasına neden olur. `afxMemDF` Değişkeni neden `AfxCheckMemory` silin ve yeni yapılan her çağrı için çağrılabilir. Kendi çağrısına bu durumda, dağılım `AfxCheckMemory`böylece üzerine yukarıda da gösterildiği gibi () ve bellek ayırmak için deneyin.
+Uygulamanızın yapısına bağlı olarak, programınızın hatta test için çok yavaş çalışmasına `afxMemDF` neden olduğunu fark edebilirsiniz. Değişken `afxMemDF` , New `AfxCheckMemory` ve delete için her çağrı için çağrılmasına neden olur. Bu durumda, yukarıda gösterildiği gibi kendi çağrılarınızı () `AfxCheckMemory`için bir dağılım yapmanız ve bellek üzerine yazmayı bu şekilde yalıtmak için denemeniz gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -16,34 +16,34 @@ ms.locfileid: "62326033"
 ---
 # <a name="bitwise-shift-operators"></a>Bit Düzeyinde Kaydırma İşleçleri
 
-Kaydırma işleçleri ilk işlenen sola kaydırma (**&lt;&lt;**) sağa (**>>**) ikinci işlenenin konum sayısına göre belirtir.
+SHIFT işleçleri ilk işlenenlerini Left (**&lt;**) veya Right (**>>**) ikinci işlenenin belirttiği konum sayısına göre kayar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Shift-expression*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression* **&lt; &lt;** *additive-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression* **>>** *additive-expression*
+*SHIFT ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Toplamsal ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Shift-Expression* ** &lt; ** *toplamalı ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Shift-Expression* **>>** *toplamalı ifadesi*
 
-Her iki işlenen de integral değerleri olmalıdır. Bu işleçlerden her zamanki aritmetik dönüşümleri gerçekleştirir; Sonuç türü dönüştürme işleminden sonra sol işlenenin türüdür.
+Her iki işlenen de tamsayı değer olmalıdır. Bu işleçler, her zamanki aritmetik dönüştürmeleri gerçekleştirir; sonucun türü, dönüştürmeden sonra sol işlenenin türüdür.
 
-Leftward kaydırmalar için boşaltılmış doğru bitleri 0 olarak ayarlanır. Rightward kaydırmalar için sol boşaltılmış bitler birinci işlenenin türüne dönüştürme işleminden sonra doldurulur. Tür ise `unsigned`, bunlar 0 olarak ayarlayın. Aksi takdirde, imza biti bir kopyasını ile doldurulur. Deyim taşma olmadan sola kaydırma işleçleri
+Soltward vardiyaları için, karıştırılmış sağ bitler 0 olarak ayarlanır. Sağ taraftaki vardiyalar için, karıştırılmış sol bitler, dönüştürmeden sonra ilk işlenenin türüne göre doldurulur. Tür ise `unsigned`0 olarak ayarlanır. Aksi takdirde, bu, işaret bitinin kopyaları ile doldurulur. Taşma olmadan sola kaydırma işleçleri için, ekstresi
 
 ```C
 expr1 << expr2
 ```
 
-çarpma 2 eşdeğerdir<sup>Deyim2</sup>. Sağa kaydırma işleçleri
+2<sup>expr2</sup>ile çarparak eşdeğerdir. Sağ kaydırma işleçleri için
 
 ```C
 expr1 >> expr2
 ```
 
-Bölüm 2 eşdeğerdir<sup>Deyim2</sup> varsa `expr1` imzalanmamış veya negatif olmayan bir değere sahip.
+, imzasız veya negatif olmayan bir değere sahip 2 expr2 bölme ile eşdeğerdir.<sup>expr2</sup> `expr1`
 
-İkinci işleneni negatifse veya sağ işlenen büyüktür veya eşittir yükseltilen sol işlenenin bit genişliğini ise bir kaydırma işleminin sonucu tanımsızdır.
+İkinci işlenen negatif ise veya sağ işlenen, yükseltilen sol işlenenin bit cinsinden genişliğinden büyük veya buna eşitse, bir vardiya işleminin sonucu tanımsızdır.
 
-Dönüştürmeler taşma için kaydırma işleçleri sağlamaz veya dönüştürme işleminden sonra bir kaydırma işleminin sonucu birinci işlenenin türünde temsil edilemiyorsa underflow koşullar, bilgileri kaybolabilir.
+SHIFT işleçleri tarafından gerçekleştirilen dönüşümler taşma veya yetersiz koşullar için sağlamıyor olduğundan, bir vardiya işleminin sonucu, dönüştürmeden sonra ilk işlenen türünde temsil edilemiyorsa, bilgiler kaybolabilir.
 
 ```C
 unsigned int x, y, z;
@@ -54,11 +54,11 @@ y = 0x5500;
 z = ( x << 8 ) + ( y >> 8 );
 ```
 
-Bu örnekte, `x` sekiz konumları sola kaydırılacak ve `y` ötelenen sağ sekiz konumları olduğu. 0xAA55 vermek ve atanan ötelenen değerleri eklenir `z`.
+Bu örnekte, `x` sol sekiz konum sola kaydırdığı ve `y` sağ sekiz konumda kaydırılan. Kaydırılan değerler eklenir, 0xAA55 verir ve öğesine `z`atanır.
 
-Negatif bir değer sağa kaydırarak aşağı yuvarlanmasını özgün yarım değeri verir. Örneğin,-253 (ikili 11111111 00000011) doğru bir bit üretir (ikili 11111111 10000001)-127 kaydırılacağı uzaklık. Bir pozitif 253 kaydırmalar sağ +126 üretmek için.
+Negatif bir değeri sağa kaydırma, orijinal değerin yarısını yuvarlayarak aşağı yuvarlanır. Örneğin,-253 (ikili 11111111 00000011) sağa bir bit üretir-127 (ikili 11111111 10000001). Pozitif 253, + 126 üretmek için sağa kayar.
 
-Sağa kaydırmalar imza biti korur. İmzalı bir tamsayı sağa kaydırır en anlamlı biti ayarlanmış olarak kalır. En anlamlı bit işaretsiz tamsayı sağ geçtiğinde temizlenir.
+Sağ vardiyalar, işaret bitini korur. İşaretli bir tamsayı sağa kaydırdığınızda, en önemli bit ayarlanmış olarak kalır. İşaretsiz bir tamsayı sağa kaydırdığınızda en önemli bit temizlenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

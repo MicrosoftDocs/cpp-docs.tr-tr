@@ -12,15 +12,15 @@ ms.locfileid: "62346606"
 # <a name="summary-of-string-literals"></a>Dizi Değişmez Değerleri Özeti
 
 *dize sabit değeri*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**"** *s karakter dizisi*<sub>iyileştirilmiş</sub> **"**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**L"** *s karakter dizisi*<sub>iyileştirilmiş</sub> **"**
+&nbsp;&nbsp;&nbsp;&nbsp;**"** *s-char-Sequence*<sub>opt</sub> **"**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**L "** *s-char-Sequence*<sub>opt</sub> **"**
 
-*s karakter dizisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*s char*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*s karakter dizisi* *s char*
+*s-char-Sequence*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*s-char*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*s-Char-dizi* *s-char*
 
-*s char*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;herhangi bir üyesi kaynak karakter kümesi çift tırnak işareti dışında ("), ters eğik çizgi (\\), veya yeni satır karakteri kaçış sırası
+*s-char*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Çift tırnak işareti ("), ters eğik çizgi (\\) veya yeni satır karakteri kaçış dizisi dışında kaynak karakter kümesinin herhangi bir üyesi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

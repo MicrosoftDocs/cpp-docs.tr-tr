@@ -19,27 +19,27 @@ ms.locfileid: "65221202"
 ---
 # <a name="calling-dll-functions-from-visual-basic-applications"></a>Visual Basic Uygulamasından DLL İşlevi Çağırma
 
-Visual Basic uygulamaları (veya Pascal ya da Fortran gibi diğer dillerdeki) C/C++ DLL'deki işlevleri çağırmak, İşlevler derleyici tarafından yapılan herhangi bir ad düzenleme olmadan doğru çağrı kuralı kullanarak dışarı aktarılmalıdır
+C/C++ DLL içindeki işlevleri çağırmak için Visual Basic uygulamalar (veya Pascal veya Fortran gibi diğer dillerdeki uygulamalar) için, işlevler, derleyici tarafından gerçekleştirilen herhangi bir ad düzenlemesi olmadan doğru çağırma kuralı kullanılarak aktarılmalıdır
 
-`__stdcall` işlev için doğru çağrı kuralını oluşturur (çağrılan işlev yığını temizler ve parametreler sağdan sola geçirilir) ancak işlev adını farklı şekilde düzenler. Bu nedenle **__declspec(dllexport)** kullanılan üzerinde dışa aktarılan bir işlevin bir DLL içinde düzenlenmiş adı dışarı aktarılır.
+`__stdcall`işlev için doğru çağrı kuralını oluşturur (çağrılan işlev yığını temizler ve parametreler sağdan sola geçirilir), ancak işlev adını farklı şekilde süslerler. Bu nedenle, **__declspec (dllexport)** bir dll içindeki dışarıya aktarılmış bir işlevde kullanıldığında, düzenlenmiş ad verilir.
 
-`__stdcall` Ad düzenlemesi simge adının alt çizgi ekler ( **\_** ) ve simgesiyle ekler bir at işareti (**\@**) karakter sayısına göre ve ardından (gerekli yığın boşluğu) bağımsız değişken listesindeki bayt sayısı. Sonuç olarak, şu şekilde bildirildiğinde işlev:
+`__stdcall` Ad dekorasyonu, simge adını bir alt çizgi ( **\_** ) ile, sonra da bağımsız değişken listesindeki bayt sayısı (gerekli yığın alanı) ile birlikte bir at işareti (**\@**) karakteriyle ekler. Sonuç olarak, şu şekilde bildirildiğinde işlevi:
 
 ```C
 int __stdcall func (int a, double b)
 ```
 
-şöyle tasarlanmıştır `_func@12` çıktı.
+çıktıda olduğu gibi `_func@12` düzenlenmiş.
 
-C çağırma kuralı (`__cdecl`) adı olarak düzenler `_func`.
+C çağırma kuralı (`__cdecl`), adı olarak `_func`tasarlaştırır.
 
-Düzenlenmiş adı almak için kullanın [/MAP](reference/map-generate-mapfile.md). Kullanım **__declspec(dllexport)** şunları yapar:
+Düzenlenmiş adı almak için [/Map](reference/map-generate-mapfile.md)kullanın. **__Declspec (dllexport)** kullanımı şunları yapar:
 
-- İşlev C çağırma kuralı ile dışarı aktarılıyorsa (`__cdecl`), başındaki altçizgiyi kaldırır ( **\_** ) adı ne zaman aktarılır.
+- İşlev C çağırma kuralına (`__cdecl`) aktarılıyorsa, ad verildiğinde önde gelen alt çizgi ( **\_** ) şeritleri olur.
 
-- Dışarı aktarılan işlev C çağırma kuralı kullanmıyorsa (örneğin, `__stdcall`), bunu düzenlenmiş adı dışarı aktarır.
+- Dışarı aktarılan işlev C çağırma kuralını kullanmıyorsa (örneğin, `__stdcall`), düzenlenmiş adı dışarı aktarır.
 
-Yığın temizlemenin oluştuğu geçersiz kılmanın bir yolu olmadığından, kullanmalısınız `__stdcall`. Adlarla bilgilerini kaldırmak için `__stdcall`, .def dosyasının EXPORTS bölümünde diğer adlar kullanarak belirtmelisiniz. Bu, aşağıdaki işlev bildirimi için şu şekilde gösterilir:
+Yığın Temizleme işleminin gerçekleştiği yeri geçersiz kılmanın bir yolu olmadığından, kullanmanız `__stdcall`gerekir. Adları ile `__stdcall`süslemek için. def dosyasının dışarı aktarmalar bölümünde diğer adları kullanarak bunları belirtmeniz gerekir. Bu, aşağıdaki işlev bildirimi için aşağıdaki şekilde gösterilmiştir:
 
 ```C
 int  __stdcall MyFunc (int a, double b);
@@ -54,22 +54,22 @@ EXPORTS
    INITCODE=_InitCode@0
 ```
 
-Visual Basic'te yazılan programlar tarafından çağrılacak dll dosyaları için bu konuda gösterilen diğer ad tekniği .def dosyasında gereklidir. Diğer Visual Basic programında yapıldıysa, .def dosyasında diğer adlandırma kullanımı gerekli değildir. Visual Basic programında, yapılabilir bir diğer ad yan tümcesi ekleyerek [Declare](/dotnet/visual-basic/language-reference/statements/declare-statement) deyimi.
+Visual Basic yazılan programlar tarafından çağrılacak DLL 'Ler için, bu konuda gösterilen diğer ad tekniği. def dosyasında gereklidir. Diğer ad Visual Basic programında yapıldıysa,. def dosyasında diğer ad kullanımı gerekli değildir. [Declare](/dotnet/visual-basic/language-reference/statements/declare-statement) bildirimine bir Alias yan tümcesi eklenerek, Visual Basic programında yapılabilir.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
 - [DLL'den Dışarı Aktarma](exporting-from-a-dll.md)
 
-- [Kullanarak bir DLL'nin dışa aktarma. DEF dosyaları](exporting-from-a-dll-using-def-files.md)
+- [Kullanarak DLL 'den dışarı aktarma. DEF dosyaları](exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
+- [__Declspec (dllexport) kullanarak DLL 'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışarı aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C Dili Çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
+- [Hangi dışarı aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
 - [Düzenlenmiş adlar](reference/decorated-names.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)
+[Visual Studio 'da C/C++ dll 'Leri oluşturma](dlls-in-visual-cpp.md)

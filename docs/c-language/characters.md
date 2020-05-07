@@ -17,7 +17,7 @@ ms.locfileid: "62312609"
 
 - [Karakter Başına Bit](../c-language/bits-per-character.md)
 
-- [Karakter Kümeleri](../c-language/character-sets1.md)
+- [Karakter kümeleri](../c-language/character-sets1.md)
 
 - [Temsil Edilmeyen Karakter Sabitleri](../c-language/unrepresented-character-constants.md)
 

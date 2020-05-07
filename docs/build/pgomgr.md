@@ -14,51 +14,51 @@ ms.locfileid: "62295259"
 ---
 # <a name="pgomgr"></a>pgomgr
 
-Profil verileri, bir veya daha fazla .pgc dosyaları için .pgd dosyası ekler.
+Profil verilerini bir veya daha fazla. pgc dosyasından. pgd dosyasına ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **pgomgr** [*seçenekleri*] *pgcfiles* *pgdfile*
+> **Pgomgr** [*Seçenekler*] *pgcfiles* *pgdfile*
 
 ### <a name="parameters"></a>Parametreler
 
 *Seçenekler*<br/>
-Aşağıdaki seçenekler için belirtilebilir **pgomgr**:
+**Pgomgr**için aşağıdaki seçenekler belirlenebilir:
 
-- **/ help** veya **/?** Kullanılabilir görüntüler **pgomgr** seçenekleri.
+- **/help** veya **/?** Kullanılabilir **Pgomgr** seçeneklerini görüntüler.
 
-- **/ clear** tüm profil bilgilerinin temizlenmesi için .pgd dosyasını neden olur. Bir .pgc belirtemezsiniz dosyası **/clear** belirtilir.
+- **/clear** . Pgd dosyasının tüm profil bilgileri temizlenmesine neden olur. **/Clear** belirtildiğinde bir. pgc dosyası belirtemezsiniz.
 
-- **/ detail** akış grafiği kapsamı bilgileri dahil olmak üzere ayrıntılı istatistiklerini görüntüler.
+- **/detail** Akış grafiği kapsam bilgileri de dahil olmak üzere ayrıntılı istatistikleri görüntüler.
 
-- **/ summary** görüntüler işlev başına istatistikleri.
+- **/Summary** İşlev başına istatistikleri görüntüler.
 
-- **/ benzersiz** ile kullanıldığında **/summary**, donatılmış işlev adlarını görüntülemek için neden olur. Varsayılan, **/ benzersiz** kullanılmaz, görüntülenecek ve işlev adları için.
+- **/Unique** **/Summary**ile kullanıldığında, düzenlenmiş işlev adlarının görüntülenmesine neden olur. Varsayılan, **/Unique** kullanılmazsa, açıklanmayan işlev adlarının gösterilmesi içindir.
 
-- **/ merge**\[**:**<em>n</em>] .pgc dosya veya dosyalar için .pgd dosyası eklenecek veri neden olur. İsteğe bağlı parametre *n*, belirttiğiniz veri eklenmelidir sağlar *n* kez. Örneğin, bir senaryo müşteriler tarafından ne sıklıkta yapıldığını yansıtacak şekilde sık yapılan altı kat olacaktır, bir test çalıştırmasında bir kez yapın ve altı kat ile .pgd dosyası eklemek **pgomgr /merge:6**.
+- **/Merge**\[**:**<em>n</em>]. pgc dosyasındaki veya dosyalardaki verilerin. pgd dosyasına eklenmesine neden olur. İsteğe bağlı *n*parametresi, verilerin *n* kez ekleneceğini belirtmenize olanak tanır. Örneğin, bir senaryo, müşteriler tarafından ne sıklıkla yapıldığını yansıtmak için genellikle altı kez yapılacağından, Test çalıştırmasında bir kez bunu yapabilir ve bunu **Pgomgr/merge: 6**ile altı kez. pgd dosyasına ekleyebilirsiniz.
 
 *pgcfiles*<br/>
-.Pgd dosyası birleştirmek istediğiniz profil verisini bir veya daha fazla .pgc dosyaları. Tek .pgc dosyası veya birden çok .pgc dosyaları belirtebilirsiniz. Herhangi bir .pgc dosyası belirtmezseniz **pgomgr** olan dosya adlarını .pgd dosyası ile aynı olan tüm .pgc dosyaları birleştirir.
+Profil verilerini. pgd dosyasında birleştirmek istediğiniz bir veya daha fazla. pgc dosyası. Tek bir. pgc dosyası veya birden çok. pgc dosyası belirtebilirsiniz. Herhangi bir. pgc dosyası belirtmezseniz, **Pgomgr** , dosya adları. pgd dosyasıyla aynı olan tüm. pgc dosyalarını birleştirir.
 
 *pgdfile*<br/>
-.Pgd dosyası içine .pgc dosyası veya dosya verilerini birleştirme.
+. Pgc dosyası veya dosyalarından verileri birleştirdiğiniz. pgd dosyası.
 
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Bu araç yalnızca Visual Studio Geliştirici komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.
+> Bu aracı yalnızca bir Visual Studio Geliştirici komut isteminden başlatabilirsiniz. Bunu bir sistem komut isteminden veya dosya Gezgini 'nden başlatamazsınız.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek komut myapp.pgd dosya, profil verilerini siler:
+Bu örnek komut, profil verilerinin MyApp. pgd dosyasını temizler:
 
 `pgomgr /clear myapp.pgd`
 
-Bu örnek komut profil verileri myapp1.pgc içinde üç kez için .pgd dosyası ekler:
+Bu örnek komut, Myapp1. pgc içindeki profil verilerini. pgd dosyasına üç kez ekler:
 
 `pgomgr /merge:3 myapp1.pgc myapp.pgd`
 
-Bu örnekte, myapp # .pgc dosyalarından tüm profil verilerini myapp.pgd dosyasına eklenir.
+Bu örnekte, tüm MyApp #. pgc dosyalarındaki profil verileri MyApp. pgd dosyasına eklenir.
 
 `pgomgr -merge myapp1.pgd`
 

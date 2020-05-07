@@ -13,7 +13,7 @@ ms.locfileid: "64343486"
 
 Bir C programının nasıl çalıştığını anlamak için, değişkenlerin ve işlevlerin programda nasıl kullanılabileceğini belirleyen kuralları anlamanız gerekir. Birkaç kavram bu kuralları anlamak için önemlidir:
 
-- [Ömür](../c-language/lifetime.md)
+- [Süre](../c-language/lifetime.md)
 
 - [Kapsam ve görünürlük](../c-language/scope-and-visibility.md)
 

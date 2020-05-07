@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: MSBuild projelerine özel derleme araçları ekleme'
+title: 'Nasıl Yapılır: MSBuild Projelerine Özel Derleme Araçları Ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - 'msbuild (c++), howto: add custom build tools'
@@ -11,19 +11,19 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65220710"
 ---
-# <a name="how-to-add-custom-build-tools-to-msbuild-projects"></a>Nasıl yapılır: MSBuild projelerine özel derleme araçları ekleme
+# <a name="how-to-add-custom-build-tools-to-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerine Özel Derleme Araçları Ekleme
 
-Özel derleme aracı belirli bir dosya ile ilişkili kullanıcı tanımlı, komut satırı bir araçtır.
+Özel bir yapı aracı, belirli bir dosyayla ilişkili kullanıcı tanımlı, komut satırı aracıdır.
 
-Belirli bir dosyayı yürütmek için proje dosyasını (.vcxproj) komut satırı, herhangi bir ek giriş veya çıkış dosyalarını ve görüntülenecek bir ileti belirtin. Varsa **MSBuild** belirleyen çıktı dosyalarınızı onaylamaz, giriş dosyalarınızın güncel değil, bir ileti görüntüler ve komut satırı aracı yürütür.
+Belirli bir dosya için, proje dosyasında (. vcxproj) yürütülecek komut satırını, ek girdi veya çıktı dosyalarını ve görüntülenecek bir iletiyi belirtin. **MSBuild** , çıkış dosyalarınızın giriş dosyalarınıza göre güncel olmadığını belirlerse, iletiyi görüntüler ve komut satırı aracını yürütür.
 
-Ne zaman özel derleme aracı yürütür belirtmek için aşağıdakilerden birini veya her ikisini de kullanın `CustomBuildBeforeTargets` ve `CustomBuildAfterTargets` proje dosyasındaki XML öğeleri. Örneğin, Özel Yapı aracınızı MIDL derleyicisi sonra ve C/C++ Derleyici önce çalıştırmanızı belirtebilirsiniz. Belirtin `CustomBuildBeforeTargets` belirli bir hedefe çalışmadan önce; aracı yürütülecek öğesi `CustomBuildAfterTargets` sonra belirli bir hedefe; aracı çalıştırmak için veya birden çok iki hedefi yürütülmesi arasında aracı çalıştırmak için her iki öğe. Hiçbiri ögesi belirliyse, önce kendi varsayılan konumda, özel derleme aracı yürütür **MIDL** hedef.
+Özel yapı aracının ne zaman yürüttüğünü belirtmek için, proje dosyasındaki `CustomBuildBeforeTargets` ve `CustomBuildAfterTargets` XML öğelerinden birini veya her ikisini kullanın. Örneğin, özel yapı araclarınızın MıDL derleyicisinden sonra ve C/C++ derleyicisinden önce çalışacağını belirtebilirsiniz. Belirli bir `CustomBuildBeforeTargets` hedefin çalıştırılmadan önce aracın yürütüleceği öğeyi belirtin; belirli `CustomBuildAfterTargets` bir hedeften sonra aracın yürütüleceği öğe; ya da iki hedefin yürütülmesi arasında aracı çalıştırmak için her iki öğe. Öğesi belirtilmemişse, özel yapı aracınız, **MIDL** hedefinden önce olan varsayılan konumunda yürütülür.
 
-Özel derleme adımlarını ve özel derleme araçları içinde belirtilen bilgileri paylaşmak `CustomBuildBeforeTargets` ve `CustomBuildAfterTargets` XML öğeleri. Bu hedefleri, proje dosyanızda bir kez belirtin.
+Özel derleme adımları ve özel derleme araçları, `CustomBuildBeforeTargets` ve `CustomBuildAfterTargets` XML öğelerinde belirtilen bilgileri paylaşır. Bu hedefleri proje dosyanızda bir kez belirtin.
 
-### <a name="to-add-a-custom-build-tool"></a>Özel derleme aracı eklemek için
+### <a name="to-add-a-custom-build-tool"></a>Özel bir yapı aracı eklemek için
 
-1. Bir öğe grubunu proje dosyasına ekleyin ve her giriş dosyası için bir öğe ekleyin. Komutu, ek girişler, çıkışlar ve bir ileti öğesi olarak meta veriler, aşağıda gösterildiği gibi belirtin. Bu örnek, bir "faq.txt" dosyası proje ile aynı dizinde bulunduğunu varsayar.
+1. Proje dosyasına bir öğe grubu ekleyin ve her giriş dosyası için bir öğe ekleyin. Burada gösterildiği gibi, komutu, ek girişleri, çıkışları ve öğe meta verileri olarak bir ileti belirtin. Bu örnek, bir "SSS. txt" dosyasının projenizle aynı dizinde olduğunu varsayar.
 
     ```
     <ItemGroup>
@@ -35,9 +35,9 @@ Ne zaman özel derleme aracı yürütür belirtmek için aşağıdakilerden biri
     </ItemGroup>
     ```
 
-### <a name="to-define-where-in-the-build-the-custom-build-tools-will-execute"></a>Derleme özel derleme araçları burada yürütecek tanımlamak için
+### <a name="to-define-where-in-the-build-the-custom-build-tools-will-execute"></a>Derlemede özel derleme araçlarının nerede yürütüleceğini tanımlamak için
 
-1. Aşağıdaki özellik grubu proje dosyasına ekleyin. Hedefleri en az birini belirtmeniz gerekir, ancak yalnızca derleme adımınız, önce (veya sonrasında) yürütme etmeyle ilgileniyorsanız diğer atlayabilirsiniz belirli bir hedef. Bu örnekte, derleme sonra ancak bağlama önce özel adımı gerçekleştirir.
+1. Aşağıdaki özellik grubunu proje dosyasına ekleyin. Hedeflerden en az birini belirtmeniz gerekir, ancak yalnızca derleme adımlarınızın belirli bir hedefin önüne (veya bundan sonra) olmasını istiyorsanız diğerini atlayabilirsiniz. Bu örnek, yapılandırmadan sonra, ancak bağlamadan önce özel adımı gerçekleştirir.
 
     ```
     <PropertyGroup>
@@ -48,6 +48,6 @@ Ne zaman özel derleme aracı yürütür belirtmek için aşağıdakilerden biri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek yol: C++ Projesi Oluşturmak için MSBuild Kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
-[Nasıl yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma](how-to-use-build-events-in-msbuild-projects.md)<br/>
-[Nasıl yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme](how-to-add-a-custom-build-step-to-msbuild-projects.md)
+[İzlenecek yol: C++ projesi oluşturmak için MSBuild kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
+[Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma](how-to-use-build-events-in-msbuild-projects.md)<br/>
+[Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme](how-to-add-a-custom-build-step-to-msbuild-projects.md)

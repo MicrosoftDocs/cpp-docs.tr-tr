@@ -17,14 +17,14 @@ ms.locfileid: "65221004"
 ---
 # <a name="active-technology-and-dlls"></a>Etkin Teknoloji ve DLL'ler
 
-Etkin teknoloji nesne sunucularının DLL içinde tamamen uygulanması sağlar. Sunucu bu tür bir işlem sunucusu olarak adlandırılır. Esas olarak etkin teknoloji kapsayıcının ana ileti döngüsü içinde bağlama bir sunucu için bir yol sağlamaz çünkü MFC tamamen işlem içi sunucular görsel düzenleme, tüm özellikler için desteklemez. MFC kısayol tuşları ve boşta kalma süresi işleme işlemek için kapsayıcı uygulamasının ileti döngüsü erişim gerektirir.
+Etkin teknoloji, nesne sunucularının DLL içinde tamamen uygulanmasına izin verir. Bu tür bir sunucu, işlem içi sunucu olarak adlandırılır. MFC, genellikle etkin teknoloji bir sunucunun kapsayıcının ana ileti döngüsüne yapıştırılmasına izin vermediğinden, Visual Editing 'in tüm özellikleri için işlem içi sunucuları tam olarak desteklemez. MFC, Hızlandırıcı anahtarlarını ve boşta kalma süresi işlemeyi işlemek için kapsayıcı uygulamanın ileti döngüsüne erişim gerektirir.
 
-Otomasyon sunucusu yazıyorsanız ve kullanıcı arabirimi olmadan sunucunuz varsa, bir işlem sunucusu sunucunuzun olun ve tamamen bir DLL içine koyabilirsiniz.
+Bir Otomasyon sunucusu yazıyorsanız ve sunucunuzun bir kullanıcı arabirimi yoksa, sunucunuzu işlem içi sunucu yapabilir ve tamamen bir DLL 'ye yerleştirebilirsiniz.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [Otomasyon Sunucuları](../mfc/automation-servers.md)
+- [Otomasyon sunucuları](../mfc/automation-servers.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)
+[Visual Studio 'da C/C++ dll 'Leri oluşturma](dlls-in-visual-cpp.md)

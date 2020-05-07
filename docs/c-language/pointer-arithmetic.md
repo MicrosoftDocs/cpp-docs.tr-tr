@@ -14,12 +14,12 @@ ms.locfileid: "64343134"
 ---
 # <a name="pointer-arithmetic"></a>İşaretçi Aritmetiği
 
-Bir işaretçi ve tamsayı içeren eklenebilir işlemler, yalnızca işaretçi işlenen bir dizi üyesini giderir ve bir uzaklık aynı dizi sınırları içindeki tamsayı değerini üretir anlamlı sonuçlar verir. Tamsayı değeri adresi uzaklık dönüştürüldüğünde, derleyici bellek konumları aynı boyutta yalnızca özgün adresini ve adresini artı uzaklık arasında kalan varsayar.
+Bir işaretçi ve bir tamsayı içeren eklenebilir işlemler, yalnızca işaretçi işleneni bir dizi üyesini adresleyen ve tamsayı değeri aynı dizinin sınırları içinde bir konum üretirse anlamlı sonuçlar verir. Tamsayı değeri bir adres denkleine dönüştürüldüğünde, derleyici, özgün adres ve adres ile arasındaki fark ile aynı boyuttaki yalnızca bellek konumlarının bulunduğunu varsayar.
 
-Bu varsayımı dizi üyeleri için geçerlidir. Tanımı gereği, dizi bir dizi değer aynı türde olması; öğeleri bitişik bellek konumlarda yer alır. Ancak, dizi öğelerinin dışında tüm türler için depolama tanımlayıcıları aynı türde tarafından doldurulacak garanti edilmez. Diğer bir deyişle, boşluklar bile konumları aynı tür bellek konumları arasında görünür. Bu nedenle, tüm değerleri ancak dizi öğelerine adreslerinden çıkararak veya ekleyerek, sonuçlar tanımsızdır.
+Bu varsayım dizi üyeleri için geçerlidir. Tanım olarak, bir dizi aynı türdeki bir değer dizisidir; öğeleri bitişik bellek konumlarında bulunur. Ancak, dizi öğeleri hariç her türlü tür için depolama, aynı tanımlayıcı türüyle doldurulacak garanti edilmez. Diğer bir deyişle, aynı türdeki konumlar dahil olmak üzere bellek konumları arasında boşluklar görünebilir. Bu nedenle, herhangi bir değerin adreslerine ekleme veya bunlardan çıkarma sonuçları, ancak dizi öğeleri tanımsızdır.
 
-Benzer şekilde, iki işaretçi değerleri çıkartılır, dönüştürme yalnızca boşluk yok'ile aynı türde değerler tarafından işlenen verilen adresleri arasında kalan varsayar.
+Benzer şekilde, iki işaretçi değeri çıkarıldığında, dönüştürme yalnızca aynı türdeki değerlerin boşluk olmadan, işlenen tarafından verilen adresler arasında olduğunu varsayar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Ek İşleçleri](../c-language/c-additive-operators.md)
+[C eklenebilir Işleçler](../c-language/c-additive-operators.md)

@@ -19,24 +19,24 @@ ms.locfileid: "62325773"
 ---
 # <a name="name-spaces"></a>Ad Alanları
 
-"Ad alanları" derleyici ayarlar farklı türlerde öğeler için kullanılan tanımlayıcıları ayırt etmek için. Her ad alanı içinde adları çakışmayı önlemek için benzersiz olmalıdır, ancak aynı ada birden fazla ad alanı içinde görünebilir. Öğeleri farklı bir ad boşluk olması koşuluyla bu iki veya daha fazla farklı öğeler için aynı tanımlayıcıyı kullanabileceğiniz anlamına gelir. Derleyici program tanımlayıcıda söz dizimi bağlamında dayalı başvuruları çözebilirsiniz.
+Derleyici, farklı türlerde öğeler için kullanılan tanımlayıcılar arasında ayrım yapmak için "ad alanları" ayarlar. Her ad alanı içindeki adların, çakışmayı önlemek için benzersiz olması gerekir, ancak aynı ada sahip birden fazla ad alanında görünebilirler. Bu, öğelerin farklı ad alanlarında olması şartıyla, iki veya daha fazla farklı öğe için aynı tanımlayıcıyı kullanabileceğiniz anlamına gelir. Derleyici, programdaki tanımlayıcının sözdizimsel bağlamına göre başvuruları çözümleyebilir.
 
 > [!NOTE]
-> Bir ad alanı C++ "ad" özelliği ile sınırlı C kavramı karıştırmayın. Bkz: [ad alanları](../cpp/namespaces-cpp.md) daha fazla bilgi için C++ dil başvurusu.
+> Ad alanının sınırlı C kavramının C++ "namespace" özelliği ile karıştırmayın. Daha fazla bilgi için bkz. C++ dil başvurusunda [ad alanları](../cpp/namespaces-cpp.md) .
 
-Bu liste C'de kullanılan ad alanları açıklar.
+Bu liste, C 'de kullanılan ad alanlarını açıklar.
 
-Deyim etiketleri adlandırılmış deyim etiketleri deyimleri bir parçasıdır. Deyim etiketleri tanımları her zaman bir iki nokta üst üste ancak parçası değildir tarafından izlenen **çalışması** etiketler. Hemen izleyin anahtar sözcüğü her zaman deyim etiketleri kullanımları **goto**. Deyim etiketleri diğer adlarını veya diğer işlevlerinde etiket adları benzersiz olması gerekmez.
+Deyim etiketleri adlandırılmış deyim bir parçasıdır. İfade etiketlerinin tanımları her zaman iki nokta üst üste gelir, ancak **büyük/küçük harf** etiketlerinin bir parçası değildir. İfade etiketlerinin kullanımları her zaman hemen **Git**anahtar sözcüğünü izler. İfade etiketlerinin diğer adlardan veya diğer işlevlerdeki etiket adlarından farklı olması gerekmez.
 
-Yapı, birleşim ve numaralandırma etiketleri bu etiketleri yapı, birleşim ve numaralandırma tür tanımlayıcıları parçasıdır ve, varsa, ayrılmış sözcükler her zaman hemen izleyin **yapı**, **birleşim**, veya **enum**. Etiket adları tüm diğer yapısı, sabit listesi ya da aynı görünürlük birleşim etiketlerle farklı olmalıdır.
+Yapı, birleşim ve Numaralandırma etiketleri bu Etiketler yapı, birleşim ve numaralandırma türü Belirticilerinin bir parçasıdır ve varsa, her zaman ayrılmış sözcükler **struct**, **Union**veya **enum**' ı hemen izleyin. Etiket adları, aynı görünürlüğe sahip diğer tüm yapı, sabit listesi veya birleşim etiketlerinden farklı olmalıdır.
 
-Üyeleri yapıları veya birleşimler üye adları, her yapı ve birleşim türü ile ilişkili ad alanları ayrılır. Diğer bir deyişle, aynı tanımlayıcıyı aynı anda yapıları veya birleşimler sayısında herhangi bir bileşen adı olabilir. Bileşen adlarına tanımlarını, yapı veya birleşim türü belirticisi içinde her zaman oluşur. Bileşen adlarına her zaman kullanımları üye seçim işleçleri hemen izleyin (**->** ve **.**). Bir üyenin adını yapı veya birleşim içinde benzersiz olmalıdır, ancak farklı yapılar ve birleşimler, üye adlarını da dahil olmak üzere, programdaki diğer adları ya da yapının adını benzersiz olması gerekmez.
+Yapılar veya birleşimler üye adları üyeleri her bir yapıyla ve birleşim türüyle ilişkili ad alanlarında ayrılır. Diğer bir deyişle, aynı tanımlayıcı aynı zamanda herhangi bir sayıda yapıya veya birleşimde bir bileşen adı olabilir. Bileşen adları tanımları, her zaman yapı veya birleşim türü belirticileri içinde gerçekleşir. Bileşen adlarının kullanımları her zaman üye seçim işleçlerini (**->** ve **.**) izler. Üyenin adı yapı veya birleşim içinde benzersiz olmalıdır, ancak farklı yapıların ve birleşimlerin üyelerinin adları veya yapının kendisi de dahil olmak üzere programdaki diğer adlardan farklı olması gerekmez.
 
-Sıradan tanımlayıcıları, diğer tüm adların değişkenler, İşlevler (biçimsel parametreler ve yerel değişkenler dahil) ve numaralandırma sabitlerini içeren bir ad alanı ayrılır. Tanımlayıcı adları içinde blok tanımlayabilirsiniz böylece görünürlük, iç içe.
+Normal tanımlayıcılar, diğer tüm adlar değişkenleri, işlevleri (resmi parametreler ve yerel değişkenler dahil) ve numaralandırma sabitlerini içeren bir ad alanına girer. Tanımlayıcı adlarında iç içe görünürlük vardır, bu sayede bunları bloklar içinde yeniden tanımlayabilirsiniz.
 
-TypeDef adları Typedef adları aynı kapsamda tanımlayıcı olarak kullanılamaz.
+Typedef adları typedef adları aynı kapsamda tanımlayıcı olarak kullanılamaz.
 
-Örneğin, yapı etiketleri, Yapı üyeleri ve değişken adları üç farklı bir ad alanı olduğundan, üç öğeye adlı `student` Bu örnekte çakışmasını. Her bir öğenin bağlam her geçtiği doğru yorumlanması izin `student` programı. (Yapıları hakkında daha fazla bilgi için bkz: [yapı bildirimleri](../c-language/structure-declarations.md).)
+Örneğin, yapı etiketleri, yapı üyeleri ve değişken adları üç farklı ad alanı içinde olduğundan, bu örnekteki adlı `student` üç öğe çakışmaz. Her öğenin bağlamı, programdaki her oluşumun `student` doğru yorumlanmasını sağlar. (Yapılar hakkında bilgi için bkz. [Yapı bildirimleri](../c-language/structure-declarations.md).)
 
 ```C
 struct student {
@@ -46,7 +46,7 @@ struct student {
    } student;
 ```
 
-Zaman `student` sonra görünen **yapı** anahtar sözcüğü, derleyiciye tanır, yapısı etiket olarak. Zaman `student` üye seçme işlecinden sonra görünür (**->** veya **.**), yapı üyesine adıdır. Diğer bağlamlarda `student` yapısı değişkenine başvuruyor. Anlamı gizler beri ancak etiket ad alanı aşırı önerilmez.
+Struct `student` anahtar sözcüğünden sonra **struct** göründüğünde, derleyici onu bir yapı etiketi olarak tanır. Bir `student` üye seçim işlecinden (**->** veya **.**) sonra göründüğünde, ad yapı üyesine başvurur. Diğer bağlamlarda, `student` yapı değişkenine başvurur. Ancak, etiket adı alanını aşırı yüklemek, anlamı olumsuz bir şekilde gösterdiğinden bu yana önerilmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

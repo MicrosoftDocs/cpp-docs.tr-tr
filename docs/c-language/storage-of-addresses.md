@@ -14,14 +14,14 @@ ms.locfileid: "62336198"
 ---
 # <a name="storage-of-addresses"></a>Adres Deposu
 
-Adres ve adresin anlamı için gereken depolama alanı miktarı, derleyicinin uygulamasına bağlıdır. Farklı türlerden işaretçilerin aynı uzunluğa sahip olacağı garanti edilmez. Bu nedenle, **sizeof (char \*)** eşit değil **sizeof (int \*)**.
+Adres ve adresin anlamı için gereken depolama alanı miktarı, derleyicinin uygulamasına bağlıdır. Farklı türlerden işaretçilerin aynı uzunluğa sahip olacağı garanti edilmez. Bu nedenle, **sizeof ( \*Char)** , **sizeof ( \*int)** öğesine eşit değildir.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Microsoft C derleyicisi için **sizeof (char \*)** eşittir **sizeof (int \*)**.
+Microsoft C derleyicisi için **sizeof (Char \*)** , **sizeof ( \*int)** öğesine eşittir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşaretçi Bildirimleri](../c-language/pointer-declarations.md)
+[İşaretçi bildirimleri](../c-language/pointer-declarations.md)

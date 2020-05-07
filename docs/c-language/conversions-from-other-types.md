@@ -14,17 +14,17 @@ ms.locfileid: "62312472"
 ---
 # <a name="conversions-from-other-types"></a>Diğer türlerden dönüştürmeler
 
-Bu yana bir **enum** değeri bir **int** tanımı gereği, dönüştürme ve ondan değeri bir **enum** değere eşit olanlar için aynı olan **int** türü. Microsoft C derleyicisi için bir tamsayı ile aynı olan bir **uzun**.
+Bir **sabit listesi** değeri tanımına göre **bir int** değeri olduğundan, **enum** değerine ve bu değerden gelen dönüştürmeler, **int** türüyle aynı olanlardır. Microsoft C derleyicisi için, bir tamsayı **Long**ile aynıdır.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Yapı veya birleşim türleri arasında dönüştürme yapılmasına izin verilmez.
 
-Herhangi bir değer türüne dönüştürülebilir **void**, ancak böyle bir dönüştürme sonucu olarak atılan, bir ifade deyimi olduğu gibi bir ifade değeri olduğu bir bağlamda kullanılabilir.
+Herhangi bir değer **void**türüne dönüştürülebilir, ancak böyle bir dönüştürmenin sonucu yalnızca bir ifade değerinin atıldığı bağlamda (örneğin, ifade deyiminde) kullanılabilir.
 
-**Void** türü tanımı tarafından herhangi bir değer vardır. Bu nedenle, başka bir türe dönüştürülemez ve diğer türleri dönüştürülemez **void** atama. Ancak, açıkça bir değer türüne çevirebilirsiniz **void**bölümünde açıklandığı gibi [tür atama dönüştürmeleri](../c-language/type-cast-conversions.md).
+**Void** türü tanımına göre değer içermez. Bu nedenle, başka bir türe dönüştürülemez ve diğer türler atamaya göre **void** olarak dönüştürülemez. Ancak, [tür atama dönüştürmelerinde](../c-language/type-cast-conversions.md)anlatıldığı gibi, bir değeri açıkça **void**türüne çevirebilirsiniz.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

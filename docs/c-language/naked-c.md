@@ -16,13 +16,13 @@ ms.locfileid: "62325786"
 ---
 # <a name="naked-c"></a>Naked (C)
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Çıplak depolama sınıfı özniteliği, C diline yönelik Microsoft'a özgü bir uzantıdır. Derleyici, çıplak depolama sınıfı özniteliği ile bildirilen işlevler için giriş ve sonuç kodu olmadan kod oluşturur. Çıplak işlevler, satır içi derleyici kodu kullanarak kendi giriş/sonuç kodu dizilerinizi yazmanız gerektiğinde yararlıdır. Çıplak işlevler, sanal cihaz sürücüleri yazmak için yararlıdır.
 
-Çıplak özniteliği kullanma hakkında ayrıntılı bilgi için bkz: [Naked işlevleri](../c-language/naked-functions.md).
+Naked özniteliğini kullanma hakkında ayrıntılı bilgi için bkz. [Naked Functions](../c-language/naked-functions.md).
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

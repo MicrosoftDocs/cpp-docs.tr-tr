@@ -14,11 +14,11 @@ ms.locfileid: "79417196"
 ---
 # <a name="x64-software-conventions"></a>x64 yazılım kuralları
 
-Bu bölümde, x86 C++ mimarisine 64 bit uzantılı x64 için çağrı kuralı yöntemi açıklanmaktadır.
+Bu bölümde, x86 mimarisinin 64 bitlik uzantısı olan x64 için C++ çağırma kuralı yöntemi açıklanmaktadır.
 
 ## <a name="overview-of-x64-calling-conventions"></a>X64 çağırma kurallarına genel bakış
 
-X86 ve x64 arasındaki iki önemli fark, genel kullanıma yönelik olarak 64-bit adresleme özelliğidir ve düz bir 16 64 bit kayıt kümesidir. Genişletilmiş yazmaç kümesi verildiğinde, x64 [__fastcall](../cpp/fastcall.md) çağırma KURALıNı ve RISC tabanlı özel durum işleme modelini kullanır. `__fastcall` kuralı, ilk dört bağımsız değişken için Yazmaçları ve ek bağımsız değişkenler geçirmek için yığın çerçevesini kullanır. Kullanım kaydetme, yığın parametreleri, dönüş değerleri ve yığın geri sarma dahil olmak üzere x64 çağırma kuralına ilişkin ayrıntılar için bkz. [x64 çağırma kuralı](x64-calling-convention.md).
+X86 ve x64 arasındaki iki önemli fark, genel kullanıma yönelik olarak 64-bit adresleme özelliğidir ve düz bir 16 64 bit kayıt kümesidir. Genişletilmiş yazmaç kümesi verildiğinde, x64 [__fastcall](../cpp/fastcall.md) çağırma KURALıNı ve RISC tabanlı özel durum işleme modelini kullanır. `__fastcall` Kural, ilk dört bağımsız değişken için Yazmaçları ve ek bağımsız değişkenler geçirmek için yığın çerçevesini kullanır. Kullanım kaydetme, yığın parametreleri, dönüş değerleri ve yığın geri sarma dahil olmak üzere x64 çağırma kuralına ilişkin ayrıntılar için bkz. [x64 çağırma kuralı](x64-calling-convention.md).
 
 ## <a name="enable-optimization-for-x64"></a>X64 için iyileştirmeyi etkinleştir
 
@@ -47,13 +47,13 @@ Herhangi bir hizalama ile verilere erişmek mümkün olsa da, performans kaybın
 |||||
 |-|-|-|-|
 |Skaler tür|C veri türü|Depolama boyutu (bayt)|Önerilen hizalama|
-|**INT8**|**char**|1\.|Bayt|
-|**UINT8**|**işaretsiz karakter**|1\.|Bayt|
+|**INT8**|**char**|1|Bayt|
+|**UINT8**|**unsigned char**|1|Bayt|
 |**INT16**|**short**|2|Word|
-|**INT16**|**işaretsiz kısa**|2|Word|
+|**INT16**|**imzasız short**|2|Word|
 |**INT32**|**int**, **Long**|4|Doubleword|
 |**INT32**|**işaretsiz int, imzasız Long**|4|Doubleword|
-|**TUTULAMAZ**|**__int64**|8|Dört kelime|
+|**INT64**|**__int64**|8|Dört kelime|
 |**INT64**|**imzasız __int64**|8|Dört kelime|
 |**FP32 (tek duyarlık)**|**float**|4|Doubleword|
 |**FP64 (çift duyarlık)**|**double**|8|Dört kelime|
@@ -73,7 +73,7 @@ Diziler, yapılar ve birleşimler gibi diğer türler, tutarlı toplam ve birle�
 
    Sıralı bir veri nesneleri grubunu içerir. Bir dizinin öğelerinden farklı olarak, bir yapı içindeki veri nesneleri farklı veri türlerine ve boyutlara sahip olabilir. Bir yapıdaki her veri nesnesine *üye*denir.
 
-- UNION
+- Birleşim
 
    Adlandırılmış üye kümesinden birini tutan nesne. Adlandırılmış küme üyeleri herhangi bir türde olabilir. Bir bileşim için ayrılan depolama alanı, bu birleşimin en büyük üyesi için gereken depolamaya ve hizalama için gereken herhangi bir doldurmaya eşittir.
 
@@ -83,12 +83,12 @@ Aşağıdaki tabloda, birleşimlerin ve yapıların skaler üyeleri için öneri
 |-|-|-|
 |Skaler tür|C veri türü|Gerekli hizalama|
 |**INT8**|**char**|Bayt|
-|**UINT8**|**işaretsiz karakter**|Bayt|
+|**UINT8**|**unsigned char**|Bayt|
 |**INT16**|**short**|Word|
-|**INT16**|**işaretsiz kısa**|Word|
+|**INT16**|**imzasız short**|Word|
 |**INT32**|**int**, **Long**|Doubleword|
 |**INT32**|**işaretsiz int, imzasız Long**|Doubleword|
-|**TUTULAMAZ**|**__int64**|Dört kelime|
+|**INT64**|**__int64**|Dört kelime|
 |**INT64**|**imzasız __int64**|Dört kelime|
 |**FP32 (tek duyarlık)**|**float**|Doubleword|
 |**FP64 (çift duyarlık)**|**double**|Dört kelime|
@@ -181,7 +181,7 @@ Hizalanmamış verilerle çalışmanın iki etkileri vardır.
 
 - Hizalanmamış konumlar, birbirine kilitli işlemlerde kullanılamaz.
 
-Daha sıkı hizalama gerekiyorsa, değişken bildirimlerinizde `__declspec(align(N))` kullanın. Bu, derleyicinin bir yığını belirtimlerinizi karşılayacak şekilde dinamik olarak hizalanmasına neden olur. Ancak, yığın çalışma zamanında dinamik olarak ayarlanarak uygulamanızın daha yavaş yürütülmesine neden olabilir.
+Daha sıkı hizalama gerekiyorsa, değişken bildirimlerinde kullanın `__declspec(align(N))` . Bu, derleyicinin bir yığını belirtimlerinizi karşılayacak şekilde dinamik olarak hizalanmasına neden olur. Ancak, yığın çalışma zamanında dinamik olarak ayarlanarak uygulamanızın daha yavaş yürütülmesine neden olabilir.
 
 ## <a name="register-usage"></a>Kullanımı Kaydet
 
@@ -193,7 +193,7 @@ Aşağıdaki tabloda, her kaydın işlev çağrıları genelinde nasıl kullanı
 
 ||||
 |-|-|-|
-|Yazmaç|Durum|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|Kaydettir|Durum|Kullanım|
 |RAX|Katılımcıdan|Dönüş değeri kaydı|
 |RCX|Katılımcıdan|İlk tamsayı bağımsız değişkeni|
 |RDX|Katılımcıdan|İkinci tamsayı bağımsız değişkeni|
@@ -206,12 +206,12 @@ Aşağıdaki tabloda, her kaydın işlev çağrıları genelinde nasıl kullanı
 |RBX|X|Çağrılan tarafından korunması gerekir|
 |RBP|X|, Bir çerçeve işaretçisi olarak kullanılabilir; çağrılan tarafından korunması gerekir|
 |RSP|X|Yığın işaretçisi|
-|XMM0, YMM0 ILA|Katılımcıdan|İlk FP bağımsız değişkeni; `__vectorcall` kullanıldığında birinci vektör türü bağımsız değişkeni|
-|XMM1, YMM1|Katılımcıdan|İkinci FP bağımsız değişkeni; `__vectorcall` kullanıldığında ikinci vektör türü bağımsız değişken|
-|XMM2, YMM2|Katılımcıdan|Üçüncü FP bağımsız değişkeni; `__vectorcall` kullanıldığında üçüncü vektör türü bağımsız değişken|
-|XMM3, YMM3|Katılımcıdan|Dördüncü FP bağımsız değişkeni; `__vectorcall` kullanıldığında dördüncü vektör türü bağımsız değişkeni|
-|XMM4, YMM4|Katılımcıdan|Çağıranın gerektirdiği şekilde korunması gerekir; `__vectorcall` kullanıldığında beşinci vektör türü bağımsız değişkeni|
-|XMM5, YMM5 ARASıNDA|Katılımcıdan|Çağıranın gerektirdiği şekilde korunması gerekir; `__vectorcall` kullanıldığında altıncı vektör türü bağımsız değişkeni|
+|XMM0, YMM0 ILA|Katılımcıdan|İlk FP bağımsız değişkeni; İlk vektör türü bağımsız değişken `__vectorcall` kullanıldığında|
+|XMM1, YMM1|Katılımcıdan|İkinci FP bağımsız değişkeni; kullanıldığında ikinci vektör türü bağımsız değişken `__vectorcall`|
+|XMM2, YMM2|Katılımcıdan|Üçüncü FP bağımsız değişkeni; kullanıldığında üçüncü vektör türü bağımsız değişkeni `__vectorcall`|
+|XMM3, YMM3|Katılımcıdan|Dördüncü FP bağımsız değişkeni; kullanıldığında dördüncü vektör türü bağımsız değişkeni `__vectorcall`|
+|XMM4, YMM4|Katılımcıdan|Çağıranın gerektirdiği şekilde korunması gerekir; kullanıldığında beşinci vektör türü bağımsız değişkeni `__vectorcall`|
+|XMM5, YMM5 ARASıNDA|Katılımcıdan|Çağıranın gerektirdiği şekilde korunması gerekir; kullanıldığı zaman `__vectorcall` altıncı vektör türü bağımsız değişkeni|
 |XMM6:XMM15, YMM6:YMM15|Kalıcı olmayan (XMM), geçici (en büyük yarı yarım yarısı)|Aranan tarafından korunması gerekir. -MM kayıtları, çağıran tarafından gerektiği şekilde korunmalıdır.|
 
 İşlev çıkışta ve C çalışma zamanı kitaplığı çağrılarına ve Windows Sistem çağrılarına işlev girdisinde, CPU bayrakları kaydındaki yön bayrağının temizlenmesi beklenir.
@@ -222,7 +222,7 @@ X64 üzerindeki yığın ayırma, hizalama, işlev türleri ve yığın çerçev
 
 ## <a name="prolog-and-epilog"></a>Giriş ve bitiş
 
-Yığın alanı ayıran, diğer işlevleri çağıran, kalıcı kayıtları kaydeden veya özel durum işlemenin kullanıldığı her işlev, adres sınırlarını ilgili işlev tablosu girdisiyle ilişkili geriye doğru izleme verilerinde açıklanan bir giriş olmalıdır ve Her bir işleve çıkış. X64 üzerindeki gerekli giriş ve bitiş kodu hakkında daha fazla bilgi için bkz. [x64 giriş ve bitiş](prolog-and-epilog.md).
+Yığın alanı ayıran, diğer işlevleri çağıran, kalıcı kayıtları kaydeden veya özel durum işlemenin kullanıldığı her işlev, adres limitlerinin ilgili işlev tablosu girdisiyle ilişkili geriye doğru izleme verilerinde açıklanan bir giriş ve her çıkışta bir işleve çıkış olması gerekir. X64 üzerindeki gerekli giriş ve bitiş kodu hakkında daha fazla bilgi için bkz. [x64 giriş ve bitiş](prolog-and-epilog.md).
 
 ## <a name="x64-exception-handling"></a>x64 özel durum işleme
 
@@ -230,7 +230,7 @@ X64 üzerinde yapılandırılmış özel durum işleme ve C++ özel durum işlem
 
 ## <a name="intrinsics-and-inline-assembly"></a>İç bilgiler ve satır içi derleme
 
-X64 derleyicisi kısıtlamalarından biri, satır içi assembler desteğine sahip değildir. Bu, C dilinde yazılamayacağını veya C++ derleyici tarafından desteklenen iç işlevler olarak veya alt yordamlar olarak yazılması gereken işlevleri gösterir. Bazı işlevler, diğerleri olmasa da performansa duyarlıdır. Performansa duyarlı işlevler, iç işlevler olarak uygulanmalıdır.
+X64 derleyicisi kısıtlamalarından biri, satır içi assembler desteğine sahip değildir. Bu, C veya C++ dilinde yazılamayacağını gösteren işlevlerin alt yordamlar olarak yazılması ya da derleyici tarafından desteklenen iç işlevler olması anlamına gelir. Bazı işlevler, diğerleri olmasa da performansa duyarlıdır. Performansa duyarlı işlevler, iç işlevler olarak uygulanmalıdır.
 
 Derleyici tarafından desteklenen iç bilgiler, [derleyici iç](../intrinsics/compiler-intrinsics.md)bilgileri içinde açıklanmıştır.
 

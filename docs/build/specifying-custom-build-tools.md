@@ -24,61 +24,61 @@ ms.locfileid: "62314760"
 ---
 # <a name="specify-custom-build-tools"></a>Özel derleme araçlarını belirtme
 
-A *özel derleme aracı* yapı sistemini belirli giriş dosyası oluşturmak için ihtiyaç duyduğu bilgileri sağlar. Özel derleme aracı çalıştırmak için bir komutu, giriş dosyaları listesini, komutu tarafından oluşturulan çıkış dosyaları listesini ve aracının isteğe bağlı bir açıklama belirtir.
+*Özel bir yapı aracı* , derleme sistemine belirli giriş dosyaları oluşturmak için gereken bilgileri sağlar. Özel bir yapı aracı çalıştırılacak komutu, giriş dosyalarının listesini, komut tarafından oluşturulan çıkış dosyalarının bir listesini ve aracın isteğe bağlı bir açıklamasını belirtir.
 
-Özel derleme araçları ve özel yapı adımları hakkında genel bilgi için bkz. [anlama özel derleme adımlarını ve derleme olayları](understanding-custom-build-steps-and-build-events.md).
+Özel derleme araçları ve özel derleme adımları hakkında genel bilgi için bkz. [özel derleme adımlarını anlama ve olayları oluşturma](understanding-custom-build-steps-and-build-events.md).
 
-### <a name="to-specify-a-custom-build-tool"></a>Özel derleme aracı belirtmek için
+### <a name="to-specify-a-custom-build-tool"></a>Özel bir yapı aracı belirtmek için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** etkinleştirmek için **yapılandırma** kutusu. İçinde **yapılandırma** kutusunda, özel derleme aracı belirtmek istediğiniz yapılandırmayı seçin.
+1. **Yapılandırma kutusunu etkinleştirmek** Için **yapılandırma özellikleri** ' ni seçin. **Yapılandırma** kutusunda, özel yapı aracı belirtmek istediğiniz yapılandırmayı seçin.
 
-1. İçinde **Çözüm Gezgini**, özel derleme aracı için giriş dosyası seçin.
+1. **Çözüm Gezgini**, özel derleme aracı için giriş dosyasını seçin.
 
-   Varsa **özel derleme aracı** görünmez, seçtiğiniz dosyanın dosya uzantısı varsayılan aracı ile ilişkilidir. Örneğin, varsayılan .c ve .cpp dosyaları için derleyici aracıdır. İçinde bir varsayılan aracı ayarını geçersiz kılmak için **yapılandırma özellikleri** düğümü, **genel** klasörü içinde **öğesi türü** özelliği seçin **özel derleme Aracı**. Seçin **Uygula** ve **özel derleme aracı** düğümünde görüntülenir.
+   **Özel derleme aracı** klasörü görünmezse, seçtiğiniz dosyanın dosya uzantısı bir varsayılan araçla ilişkilendirilir. Örneğin,. c ve. cpp dosyaları için varsayılan araç derleyicisidir. Varsayılan bir araç ayarını geçersiz kılmak için, **yapılandırma özellikleri** düğümünde, **genel** klasöründe, **öğe türü** özelliğinde **özel derleme aracı**' nı seçin. **Uygula** ' yı seçin ve **özel derleme aracı** düğümü görüntülenir.
 
-1. İçinde **özel derleme aracı** düğümü, **genel** klasöründe özel ile ilişkili özellikleri derleme aracı belirtin:
+1. **Özel derleme aracı** düğümünde, **genel** klasöründe, özel derleme aracı ile ilişkili özellikleri belirtin:
 
-   - İçinde **ek bağımlılıklar**, ek dosyaları için özel derleme aracı tanımlanan bir ötesinde belirtin (özel derleme aracı ile ilişkili dosya örtük olarak aracı için girdi olarak kabul edilir). Ek giriş dosyalarını sahip bir özel derleme aracı için bir gereksinim değildir. Birden fazla ek giriş varsa, bunları noktalı virgülle ayırın.
+   - **Ek bağımlılıklar**' da, özel yapı aracı tanımlanmakta olan her türlü ek dosyayı belirtin (özel derleme aracı ile ilişkili dosya, açıkça araca bir girdi olarak kabul edilir). Ek giriş dosyalarının olması özel bir derleme aracı için gerekli değildir. Birden fazla ek giriş varsa, bunları noktalı virgülle ayırın.
 
-      Varsa bir **ek bağımlılıklar** dosyanın tarihtir giriş dosyasından daha sonra özel derleme aracı çalıştırın. Tüm, **ek bağımlılıklar** dosyalarıdır giriş dosyasından daha eski ve giriş dosyası şundan **çıkışları** özellik dosyası, ardından özel derleme aracı çalışmıyor.
+      Ek bir **Bağımlılıklar** dosyasının tarihi giriş dosyasından daha sonra ise, özel derleme aracı çalıştırılır. **Ek bağımlılıklar** dosyalarının tümü giriş dosyasından eskiyse ve giriş dosyası **çıktılar** Özellik dosyasından eskiyse, özel derleme aracı çalıştırılmaz.
 
-      Örneğin, MyInput.x girdi olarak alır ve MyInput.cpp ve MyInput.x MyHeader.h bir üstbilgi dosyası içeren bir özel derleme aracı olduğunu varsayalım. Derleme Sistemi MyInput.x veya MyHeader.h güncel olmadığında MyInput.cpp derler ve MyInput.x için Giriş bir bağımlılık olarak MyHeader.h belirtebilirsiniz.
+      Örneğin, giriş olarak MyInput. x içeren ve MyInput. x adlı bir özel derleme aracınız olduğunu varsayalım ve MyInput. x, MyHeader. h üstbilgi dosyasını içerir. MyHeader. h ' yi MyInput. x için giriş bağımlılığı olarak belirtebilirsiniz ve derleme sistemi MyInput. x veya MyHeader. h ile ilgili güncel olmadığında MyInput. cpp öğesini oluşturur.
 
-      Giriş bağımlılıkları, ayrıca, özel derleme araçları ihtiyacınız sırayla çalıştırmak emin olabilirsiniz. Önceki örnekte MyHeader.h aslında özel derleme aracı çıktısını olduğunu varsayın. MyHeader.h MyInput.x bir bağımlılığı olduğundan, derleme sistemi ilk Myheader.h MyInput.x özel derleme Aracı'nı çalıştırmadan önce oluşturacaksınız.
+      Giriş bağımlılıkları, özel derleme araçlarınızın ihtiyacınız olan sırada çalışmasını da sağlayabilir. Yukarıdaki örnekte, MyHeader. h ' nin aslında özel bir yapı aracının çıktısı olduğunu varsayalım. MyHeader. h, MyInput. x bağımlılığı olduğundan, derleme sistemi önce MyInput. x üzerinde özel derleme aracını çalıştırmadan önce MyHeader. h öğesini derler.
 
-   - İçinde **komut satırı**, komut isteminde belirtme gibi bir komutu belirtin. Geçerli komut veya toplu iş dosyasını belirtin ve tüm gerekli giriş veya çıkış dosyalarını. Belirtin **çağrı** toplu tüm komutlar yürütülür garanti etmek için önce bir toplu iş dosyası adını komutu.
+   - Komut **satırında**, komut isteminde şunu belirtmiş gibi bir komut belirtin. Geçerli bir komut veya toplu iş dosyası ve gerekli giriş veya çıkış dosyalarını belirtin. Sonraki tüm komutların yürütüldüğünü garantilemek için bir toplu iş dosyasının adından önce Batch komutunu **çağır** komutunu belirtin.
 
-      Birden çok giriş ve çıkış dosyalarının bildirmelerine MSBuild makroları ile belirtilebilir. Dosyalarının konumu veya dosya kümelerini adlarını belirtme hakkında daha fazla bilgi için bkz: [derleme komutları ve özellikler için ortak makroları](reference/common-macros-for-build-commands-and-properties.md).
+      Birden çok giriş ve çıkış dosyası, MSBuild makroları ile sembosel olarak belirtilebilir. Dosyaların konumunu veya dosya kümelerinin adlarını belirtme hakkında bilgi için bkz. [derleme komutları ve özellikleri Için ortak makrolar](reference/common-macros-for-build-commands-and-properties.md).
 
-      Her bir ortam değişkenini Değiştir belirtirseniz, '%' karakter MSBuild tarafından ayrılmış olduğundan **%** kaçış karakteriyle **% 25** onaltılı çıkış dizisi. Örneğin, **% WINDIR %** ile **25WINDIR % 25**. MSBuild değiştirir her **% 25** ile sıralı **%** ortam değişkenini erişmeden önce karakter.
+      '% ' Karakteri MSBuild tarafından ayrıldığından, bir ortam değişkeni belirtirseniz her **%** kaçış karakterini **%25** onaltılık kaçış dizisi ile değiştirin. Örneğin, **% windir%** öğesini **% 25windir %25**ile değiştirin. MSBuild, ortam değişkenine erişmeden önce her **%25** sırayı **%** karakteriyle değiştirir.
 
-   - İçinde **açıklama**, bu özel derleme aracı hakkında açıklayıcı bir ileti girin. İleti yazdırıldığında **çıkış** derleme sistemi, bu aracı işlediğinde penceresi.
+   - **Açıklama**' da, bu özel derleme aracı hakkında açıklayıcı bir ileti girin. İleti, derleme sistemi bu aracı işlediğinde **Çıkış** penceresine yazdırılır.
 
-   - İçinde **çıkışları**, çıktı dosyası adını belirtin. Bu gerekli bir giriştir; Özel derleme aracı bu özellik için bir değer olmadan çalışmaz. Özel derleme aracı birden çok çıkış varsa, dosya adları noktalı virgül ile ayırın.
+   - **Çıktılar**' de çıkış dosyasının adını belirtin. Bu gerekli bir giriştir; Bu özellik için bir değer olmadan, özel derleme aracı çalıştırılmaz. Özel bir derleme aracında birden fazla çıkış varsa, dosya adlarını noktalı virgülle ayırın.
 
-      İçinde belirtilen gibi çıkış dosyasının adı aynı olmalıdır **komut satırı** özelliği. Proje derleme sistemi dosyasını arayın ve kendi tarihini denetleyin. Çıkış dosyası giriş dosyasından daha eski ise veya çıktı dosyası bulunamazsa, özel derleme aracı çalıştırılır. Tüm, **ek bağımlılıklar** dosyalarıdır giriş dosyasından daha eski ve giriş dosyası içinde belirtilen dosya daha eski **çıkışları** özelliği özel derleme aracı değil çalıştırın.
+      Çıkış dosyasının adı, **komut satırı** özelliğinde belirtilen şekilde aynı olmalıdır. Proje derleme sistemi, dosyayı arar ve tarihini kontrol eder. Çıkış dosyası giriş dosyasından eskiyse veya çıkış dosyası bulunamazsa, özel derleme aracı çalıştırılır. **Ek bağımlılıklar** dosyalarının tümü giriş dosyasından eskiyse ve giriş dosyası **çıktılar** özelliğinde belirtilen dosyadan eskiyse, özel derleme aracı çalıştırılmaz.
 
-Özel derleme aracı tarafından oluşturulan bir çıktı dosyası üzerinde çalışılacak yapı sistemini istiyorsanız, bunu el ile projeye eklemeniz gerekir. Özel derleme aracı, derleme sırasında dosyasını güncelleştirir.
+Yapı sisteminin özel yapı aracı tarafından oluşturulan bir çıkış dosyasında çalışmasını istiyorsanız, onu projeye el ile eklemeniz gerekir. Özel derleme aracı derleme sırasında dosyayı güncelleştirir.
 
 ## <a name="example"></a>Örnek
 
-Projenizdeki parser.l adlı bir dosya eklemek istediğinizi varsayalım. Bir sözcük temelli çözümleyici sahip **lexer.exe**, üzerinde yürütülebilir dosya yolu. Aynı temel ada (parser.c) sahip bir .c dosyası üretmek için parser.l işlemek için kullanmak istediğiniz.
+Projenize Parser. l adlı bir dosya eklemek istediğinizi varsayın. Yürütülebilir bir çözümleyiciniz, **sözcük temelli çözümleyici. exe**' dir ve yürütülebilir bir yoldur. Aynı temel ada (Parser. c) sahip bir. c dosyası üretmek için Parser. l öğesini işlemek üzere kullanmak istiyorsunuz.
 
-İlk olarak, parser.l ve parser.c projeye ekleyin. Dosyaları henüz mevcut değilse, dosyalar bir başvuru ekleyin. Özel derleme aracı için parser.l oluşturun ve aşağıdaki **komutları** özelliği:
+İlk olarak, projeye Parser. l ve Parser. c ' yi ekleyin. Dosyalar henüz yoksa dosyalara bir başvuru ekleyin. Parser. l için özel bir derleme aracı oluşturun ve **Commands** özelliğine şunu girin:
 
-> **sözcük temelli çözümleyici %(FullPath). \%.C (Filename)**
+> **% sözcük temelli çözümleyici (FullPath). \%(Dosya adı). c**
 
-Bu komut, sözcük temelli çözümleyici parser.l üzerinde çalışır ve proje dizininin parser.c çıkarır.
+Bu komut, Parser. l üzerinde sözlü çözümleyici 'yi çalıştırır ve Parser. c çıktılarını proje dizinine çıkarır.
 
-İçinde **çıkışları** özelliği, aşağıdakileri girin:
+**Çıktılar** özelliğinde, aşağıdakileri girin:
 
-> **. \%.C (Filename)**
+> **. \%(Dosya adı). c**
 
-Projeyi derlerken, derleme sistemi parser.l parser.c ve zaman damgaları karşılaştırır. Parser.l ise daha yeni veya parser.c yoksa, derleme sistemi değerini çalışan **komut satırı** parser.c güncel duruma getirmek için özellik. Parser.c da projeye eklendikten sonra derleme sistemi, ardından parser.c derler.
+Projeyi derlediğinizde, derleme sistemi parser. l ve Parser. c zaman damgalarını karşılaştırır. Parser. l daha yeni bir özelliktir veya Parser. c yoksa, derleme sistemi, Parser. c ' yi güncel hale getirmek için **komut satırı** özelliğinin değerini çalıştırır. Parser. c aynı zamanda projeye eklendiğinden, derleme sistemi parser. c ' yi derler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleme komutları ve özellikleri için genel makrolar](reference/common-macros-for-build-commands-and-properties.md)<br>
+[Derleme komutları ve özellikleri için ortak makrolar](reference/common-macros-for-build-commands-and-properties.md)<br>
 [Derleme Özelleştirmeleri Sorunlarını Giderme](troubleshooting-build-customizations.md)

@@ -16,19 +16,19 @@ ms.locfileid: "62327437"
 ---
 # <a name="based-pointers-c"></a>Tabanlı İşaretçiler (C)
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 [__based (C++ Başvurusu)](../cpp/based-pointers-cpp.md)
 
-Microsoft 32-bit ve 64-bit C Derleyicileri için temel alınan bir işaretçinin bir 32 bit veya 64-bit uzaklığı bir 32 bit veya 64-bit işaretçi temeline ' dir. Tabanlı adresleme nesnelerin ayrıldığı bölümleri üzerinde denetim denemek, böylece yürütülebilir dosyanın boyutunu küçültme ve yürütme hızını artırmak için kullanışlıdır. Genel olarak, temel alınan bir işaretçinin belirtmek için formun olduğu
+Microsoft 32-bit ve 64-bit C derleyicileri için, temel alınan bir işaretçi, 32-bit veya 64-bit işaretçi tabanından bir 32-bit veya 64-bit denkleştirilir. Tabanlı adresleme, nesnelerin ayrıldığı bölümler üzerinde denetim için yararlıdır, böylece yürütülebilir dosyanın boyutunu azaltır ve yürütme hızını artırır. Genel olarak, bir tabanlı işaretçinin belirtilmesine yönelik form
 
-> *tür* **__based (** *temel* **)** *bildirimcisi*
+> *tür* **__based (** *taban* **)** *bildirimci*
 
-Tabanlı adresleme "işaretçi göre" değişken temel olarak belirtimi bir işaretçi sağlar. Temel, daha sonra temel işaretçisinin başında başlayarak bellek bölümüne bir uzaklık işaretçisidir. İşaretçi adreslerine göre işaretçiler, yalnızca kuralar `__based` 32-bit ve 64 bit derlemelerde geçerli anahtar sözcüğü. Bu tür derlemelerde 32 bit veya 64 bit yapı yer değiştirmelerini bırak bir 32 bit veya 64-bit tabanından değildirler.
+"İşaretçi tabanlı" temel adresleme, taban olarak bir işaretçi belirtimini mümkün bir şekilde sunar. Temel işaretçi, temel aldığı işaretçinin başlangıcında başlayan bellek bölümünün bir uzaklığında oluşur. İşaretçi adreslerini temel alan işaretçiler, 32-bit ve 64 `__based` bit derlemelerde geçerli olan anahtar sözcüğünün tek biçimidir. Bu tür derlemelerde, 32 bit veya 64 bit, 32-bit veya 64-bit tabanlardır.
 
 İşaretçilere göre işaretçilerin bir kullanımı da, işaretçiler içeren kalıcı tanımlayıcılara yöneliktir. İşaretçiye göre işaretçilerden oluşan bağlantılı bir liste diske kaydedilebilir ve daha sonra işaretçiler geçerli kalacak şekilde bellekte başka bir yere yeniden yüklenebilir.
 
-Aşağıdaki örnek, bir işaretçi bir işaretçiye göre gösterir.
+Aşağıdaki örnek, bir işaretçiye dayalı bir işaretçi gösterir.
 
 ```C
 void *vpBuffer;
@@ -42,7 +42,7 @@ struct llist_t
 
 `vpBuffer` işaretçisine, programda daha sonra ayrılan belleğin adresi atanır. Bağlantılı liste, `vpBuffer` değerine göre yeniden konumlandırılır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

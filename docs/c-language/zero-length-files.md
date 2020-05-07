@@ -14,9 +14,9 @@ ms.locfileid: "62290657"
 ---
 # <a name="zero-length-files"></a>Sıfır Uzunluklu Dosyalar
 
-**ANSI 4.9.3** gerçekten sıfır uzunluğunda bir dosya var olup var
+**ANSI 4.9.3 &** Sıfır uzunlukta bir dosyanın var olup olmadığı
 
-Sıfır uzunluğunda dosyalarına izin verilir.
+Sıfır uzunluğuna sahip dosyalara izin verilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

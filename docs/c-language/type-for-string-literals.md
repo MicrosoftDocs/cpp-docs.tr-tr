@@ -14,7 +14,7 @@ ms.locfileid: "62344856"
 ---
 # <a name="type-for-string-literals"></a>Dize Sabit Değerleri Türü
 
-Dize değişmez değerleri dizi türünde olması `char` (diğer bir deyişle, **char []**). (Geniş karakter dizeleri olan dizi türünde `wchar_t` (diğer bir deyişle, **wchar_t []**).) Bu bir dize türünde öğelere sahip bir dizi olduğu anlamına gelir `char`. Dizideki öğelerin sayısını yanı sıra sondaki boş karakter için bir dize içinde eşit sayıda karakteri.
+Dize sabit değerleri türü Array türündedir `char` (yani, **Char []**). (Geniş karakter dizeleri tür dizisine sahiptir `wchar_t` (yani, **wchar_t []**).) Bu, bir dizenin türünde `char`öğeler içeren bir dizi olduğu anlamına gelir. Dizideki öğe sayısı, dizedeki karakter sayısına ve Sonlandırıcı null karakteri için bir sayıya eşittir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

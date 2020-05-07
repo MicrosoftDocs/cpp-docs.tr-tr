@@ -16,24 +16,24 @@ ms.locfileid: "62344740"
 ---
 # <a name="while-statement-c"></a>while Deyimi (C)
 
-`while` İfadesi belirtilen bir ifade false olana kadar bir deyimi yineleyin olanak tanır.
+Deyimi `while` , belirtilen bir ifade false olana kadar bir deyimi tekrarlamanızı sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Yineleme deyiminin*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sırada (**  *ifade*  **)**  *deyimi*
+*yineleme-ekstresi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**while (**  *ifade*  **)**  *deyimi*
 
-*İfade* aritmetik veya işaretçi türünde olmalıdır. Yürütme aşağıdaki gibi çalışır:
+*İfade* aritmetik veya işaretçi türünde olmalıdır. Yürütme aşağıdaki gibi devam eder:
 
 1. *İfade* değerlendirilir.
 
-1. Varsa *ifade* başlangıçta yanlış gövdesinin `while` deyimi asla yürütülmez ve denetim geçer `while` programdaki sonraki deyime deyimi.
+1. *İfade* başlangıçta false ise, `while` deyiminin gövdesi hiçbir şekilde yürütülmez ve `while` deyimden programdaki sonraki deyime geçer.
 
-   Varsa *ifade* true (sıfırdan farklı), deyim gövdesi yürütülür ve adım 1'den itibaren işlem tekrarlanır.
+   *İfade* true (sıfır dışında) ise, deyiminin gövdesi yürütülür ve işlem 1. adımdan itibaren yinelenir.
 
-`while` Deyimi de sonlandırılabilir bir **sonu**, `goto`, veya `return` içindeki deyim gövdesi yürütülür. Kullanım **devam** çıkmadan bir yinelemeyi sonlandırmak için deyimi `while` döngü. **Devam** deyimi, denetimi bir sonraki yinelemesine geçirir `while` deyimi.
+`while` İfade, bir **kesme**, `goto`veya `return` bildiri gövdesinde yürütüldüğünde da sonlandırılabilir. Döngüyü beklemeden bir yinelemeyi sonlandırmak için Continue ifadesini kullanın. **continue** `while` **Continue** deyimleri, denetimi `while` deyimin bir sonraki yinelemesine geçirir.
 
-Bu bir örnektir `while` deyimi:
+Bu bir `while` deyimin örneğidir:
 
 ```C
 while ( i >= 0 )
@@ -43,8 +43,8 @@ while ( i >= 0 )
 }
 ```
 
-Bu örnek, karakteri kopyalar `string2` için `string1`. Varsa `i` değerinden büyükse veya eşitse 0 `string2[i]` atandığı `string1[i]` ve `i` azaltılır. Zaman `i` ulaştığında veya yürütülmesini 0 düştüğünde `while` deyimini sonlandırır.
+Bu örnek, ' den `string2` ' `string1`e karakter kopyalar. `i` 0 ' dan büyük veya buna eşitse, `string2[i]` öğesine `string1[i]` atanır ve `i` azaltılır. 0 `i` ' ın altına ulaştığında veya bu değerin altına düştüğünde `while` , deyimin yürütülmesi sonlanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[while Deyimi (C++)](../cpp/while-statement-cpp.md)
+[while deyimleri (C++)](../cpp/while-statement-cpp.md)

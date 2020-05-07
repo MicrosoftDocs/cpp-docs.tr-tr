@@ -13,9 +13,9 @@ ms.locfileid: "62313304"
 ---
 # <a name="c-sized-integer-types"></a>C Boyutlu Tamsayı Türleri
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Microsoft C, boyutlandırılmış tamsayı türleri için destek sağlar. __İnt kullanarak 8, 16, 32 veya 64-bit tamsayı değişkenleri bildirebilirsiniz*n* tür tanımlayıcısı, burada *n* tamsayı değişkeninin bit olarak boyutudur. Değerini *n* 8, 16, 32 veya 64 olabilir. Aşağıdaki örnekte, boyutlandırılmış tamsayıların dört türünün her biri için bir değişken bildirilmektedir:
+Microsoft C, boyutlandırılmış tamsayı türleri için destek sağlar. __İnt*n* tür tanımlayıcısını kullanarak 8, 16-, 32-veya 64-bit tamsayı değişkenleri bildirebilirsiniz; burada *n* , tamsayı değişkeninin bit cinsinden boyutudur. *N* değeri 8, 16, 32 veya 64 olabilir. Aşağıdaki örnekte, boyutlandırılmış tamsayıların dört türünün her biri için bir değişken bildirilmektedir:
 
 ```
 __int8 nSmall;      // Declares 8-bit integer
@@ -24,10 +24,10 @@ __int32 nLarge;     // Declares 32-bit integer
 __int64 nHuge;      // Declares 64-bit integer
 ```
 
-Boyutlandırılmış tamsayıların ilk üç türü, aynı boyuta sahip ANSI türleri için eş anlamlıdır ve birden fazla platformda aynı şekilde davranan taşınabilir kod yazmak için yararlıdır. __İnt8 veri türünün char türü ile eş anlamlı olduğuna dikkat edin \__int16 türünün short, ve \__int32 Tamsayı türünde ile eşanlamlı \__İnt64 türünde hiçbir eşdeğer ANSI karşılığı.
+Boyutlandırılmış tamsayıların ilk üç türü, aynı boyuta sahip ANSI türleri için eş anlamlıdır ve birden fazla platformda aynı şekilde davranan taşınabilir kod yazmak için yararlıdır. __İnt8 veri türünün char türü ile eşanlamlı olduğunu, \__int16 tür Short ile eşanlamlı olduğunu ve \__int32 ise int türünde eş anlamlı olduğunu unutmayın. \__İnt64 türünün EŞDEĞERI bir ANSI karşılığı yok.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Temel Türleri Depolama](../c-language/storage-of-basic-types.md)
+[Temel türlerin depolanması](../c-language/storage-of-basic-types.md)

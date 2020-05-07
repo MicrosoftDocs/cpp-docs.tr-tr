@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Özel araçlarla proje özelliklerini tümleştirme'
+title: 'Nasıl Yapılır: Özel Araçlarla Proje Özelliklerini Tümleştirme'
 ms.date: 05/16/2019
 helpviewer_keywords:
 - 'msbuild (c++), howto: integrate custom tools'
@@ -11,30 +11,30 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 05/17/2019
 ms.locfileid: "65837026"
 ---
-# <a name="how-to-integrate-custom-tools-into-the-project-properties"></a>Nasıl yapılır: Özel araçlarla proje özelliklerini tümleştirme
+# <a name="how-to-integrate-custom-tools-into-the-project-properties"></a>Nasıl Yapılır: Özel Araçlarla Proje Özelliklerini Tümleştirme
 
-Visual Studio için özel araç seçenekleri ekleyebilirsiniz **özellik sayfaları** arka plandaki XML şema dosyası oluşturarak penceresi.
+Temel alınan bir XML şema dosyası oluşturarak Visual Studio **Özellik sayfaları** penceresine özel araç seçenekleri ekleyebilirsiniz.
 
-**Yapılandırma özellikleri** bölümünü **özellik sayfaları** pencere görüntüler olarak bilinen bir ayar grupları *kuralları*. Her kural için bir aracı veya bir Grup ayarlarını içerir. Örneğin, **bağlayıcı** kural bağlayıcı aracı ayarlarını içerir. Bir kural ayarlarında içine alt *kategorileri*.
+**Özellik sayfaları** penceresinin **yapılandırma özellikleri** bölümü, *kural*olarak bilinen ayar gruplarını görüntüler. Her kural bir araç veya bir özellik grubu için ayarları içerir. Örneğin, **bağlayıcı** kuralı bağlayıcı aracının ayarlarını içerir. Kuraldaki ayarlar alt *kategorilere*ayrılabilir.
 
-Bu belgede, özel aracınızı özellikleri içerir ve böylece Visual Studio başladığında özellikleri yüklü bir kümesi dizindeki bir dosya oluşturmak açıklanmaktadır. Dosya değiştirme hakkında daha fazla bilgi için bkz: [Platform Extensibilty Kısım 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/) Visual Studio Proje Ekibi blogunda.
+Bu belgede, Visual Studio başlatıldığında özelliklerin yüklenebilmesi için özel araclarınızın özelliklerini içeren bir küme dizininde bir dosyanın nasıl oluşturulacağı açıklanmaktadır. Dosyanın nasıl değiştirileceği hakkında bilgi için bkz. Visual Studio proje ekibi blogu üzerinde [Platform Extensibilty Part 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/) .
 
-### <a name="to-add-or-change-project-properties"></a>Proje özellik eklemek veya değiştirmek için
+### <a name="to-add-or-change-project-properties"></a>Proje özellikleri eklemek veya değiştirmek için
 
-1. XML Düzenleyicisi'nde bir XML dosyası oluşturun.
+1. XML düzenleyicisinde bir XML dosyası oluşturun.
 
-1. Visual Studio'da dosyayı kaydedin `VCTargets\1033` klasör. Yüklü Visual Studio'nun her sürümü ve her dil için farklı bir yol gerekir. Örneğin, Visual Studio 2019 Community sürümü İngilizce için varsayılan klasör yolu olan `C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\VC\VCTargets`. Dil ve Visual Studio sürüm yolunu ayarlayın. Her kuralda **özellik sayfaları** penceresi bu klasördeki bir XML dosyası ile temsil edilir. Dosyayı klasörde benzersiz şekilde adlandırılmıştır emin olun.
+1. Dosyayı Visual Studio `VCTargets\1033` klasörüne kaydedin. Visual Studio 'nun yüklü her sürümü ve her dil için farklı bir yolunuz olacak. Örneğin, Ingilizce 'deki Visual Studio 2019 Community Edition için varsayılan klasör yolu `C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\VC\VCTargets`. Diliniz ve Visual Studio sürümünüz için yolu ayarlayın. **Özellik sayfaları** penceresindeki her kural, bu KLASÖRDEKI bir XML dosyası tarafından temsil edilir. Dosyanın klasörde benzersiz olarak adlandırıldığından emin olun.
 
-1. İçeriğini kopyalayın `%ProgramFiles%\Microsoft Visual Studio\2019\<VS Edition>\Common7\IDE\VC\VCTargets\<LCID>\cl.xml` (veya yolunuzu ne olursa olsun), değişiklikleri kaydetmeden kapatın ve ardından içeriği yeni XML dosyanıza yapıştırın. Herhangi bir XML şema dosyası kullanabilirsiniz - tek bir şablonla başlamak için kullanılabilecek budur.
+1. İçeriğini `%ProgramFiles%\Microsoft Visual Studio\2019\<VS Edition>\Common7\IDE\VC\VCTargets\<LCID>\cl.xml` (veya yolunuz ne olursa olsun) kopyalayın, değişiklikleri kaydetmeden kapatın ve sonra IÇERIĞI yeni XML dosyanıza yapıştırın. Herhangi bir XML şema dosyası kullanabilirsiniz; Bu yalnızca bir şablonla başlamanız için kullanılabilir.
 
-1. Yeni XML dosyasında içerik gereksinimlerinize göre değiştirin. Değiştirdiğinizden emin olun **kural adı** ve **Rule.DisplayName** dosyanın üst.
+1. Yeni XML dosyasında, içeriği gereksinimlerinize göre değiştirin. Dosyanın en üstündeki **kural adı** ve **kural. DisplayName** ' i değiştirdiğinizden emin olun.
 
 1. Değişiklikleri kaydedin ve dosyayı kapatın.
 
-1. XML dosyaları `%ProgramFiles%\Microsoft Visual Studio\2019\<VS Edition>\Common7\IDE\VC\VCTargets\<LCID>` (veya kaydettiğiniz her yerde) Visual Studio başladığında yüklenir. Bu nedenle, yeni dosya test etmek için Visual Studio'yu yeniden başlatın.
+1. Visual Studio başlatıldığında `%ProgramFiles%\Microsoft Visual Studio\2019\<VS Edition>\Common7\IDE\VC\VCTargets\<LCID>` (veya kaydettiğiniz her yerde) XML dosyaları yüklenir. Bu nedenle, yeni dosyayı test etmek için Visual Studio 'Yu yeniden başlatın.
 
-1. İçinde **Çözüm Gezgini**, bir projeye sağ tıklayın ve ardından **özellikleri**. İçinde **özellik sayfaları** pencerede sol bölmede, kural adıyla yeni bir düğüm olduğunu doğrulayın.
+1. **Çözüm Gezgini**, bir projeye sağ tıklayın ve ardından **Özellikler**' e tıklayın. **Özellik sayfaları** penceresindeki sol bölmede kuralınız adına sahip yeni bir düğüm olduğunu doğrulayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSBuild komut satırında - C++](msbuild-visual-cpp.md)
+[Komut satırında MSBuild-C++](msbuild-visual-cpp.md)

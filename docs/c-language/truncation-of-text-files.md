@@ -14,7 +14,7 @@ ms.locfileid: "62344934"
 ---
 # <a name="truncation-of-text-files"></a>Metin Dosyalarının Kesilmesi
 
-**ANSI 4.9.3** metin akışına yazmanın ilişkili dosyanın bu noktanın ötesinde mi neden oluyor
+**ANSI 4.9.3 &** Metin akışında bir yazma, ilişkili dosyanın bu noktanın ötesinde kesilip kesilmeyeceğini belirtir
 
 Bir metin akışına yazma, dosyayı bu noktanın ötesinde kesmez.
 

@@ -13,9 +13,9 @@ ms.locfileid: "64343074"
 ---
 # <a name="pointer-subtraction"></a>İşaretçi Çıkarması
 
-**ANSI 3.3.6, 4.1.1** aynı dizi öğelerin iki işaretçisi arasındaki farkı barındırmak için gereken tamsayı türü **ptrdiff_t**
+**ANSI 3.3.6, 4.1.1** Aynı dizinin öğelerinin iki işaretçisi arasındaki farkı tutmak için gereken tamsayı türü **ptrdiff_t**
 
-`ptrdiff_t` typedef, 32 bit x86 platformunda bir `int`'tir. 64-bit platformlarda `ptrdiff_t` TypeDef bir `__int64`.
+`ptrdiff_t` typedef, 32 bit x86 platformunda bir `int`'tir. 64 bitlik platformlarda `ptrdiff_t` typedef bir `__int64`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

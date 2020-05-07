@@ -21,15 +21,15 @@ Bir yürütülebiliri iyileştirerek, Hızlı yürütme hızı ve küçük kod b
 
 ## <a name="language-features"></a>Dil özellikleri
 
-Aşağıdaki konularda C/C++ dilindeki en iyi duruma getirme özellikleri açıklanır.
+Aşağıdaki konularda, C/C++ dilinde en iyi duruma getirme özellikleri açıklanır.
 
-[Iyileştirme pragmaları ve anahtar sözcükler](optimization-pragmas-and-keywords.md) \
+[Optimizasyon pragmaları ve anahtar sözcükleri](optimization-pragmas-and-keywords.md) \
 Kodunuzun performansını artırmak için kodunuzda kullanabileceğiniz anahtar sözcüklerin ve pragmaların bir listesi.
 
 [Kategoriye göre listelenen derleyici seçenekleri](reference/compiler-options-listed-by-category.md) \
 Özellikle yürütme hızını veya kod boyutunu etkileyen **/o** derleyici seçeneklerinin bir listesi.
 
-[Rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md) \
+[Rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md) \
 Rvalue başvuruları, *taşıma semantiğinin*uygulanmasını destekler. Taşıma semantiği şablon kitaplıklarını uygulamak için kullanılırsa, bu şablonları kullanan uygulamaların performansı önemli ölçüde iyileştirebilirler.
 
 ### <a name="the-optimize-pragma"></a>Optimize pragma
@@ -52,10 +52,10 @@ Paradoxically, bir programı hız için iyileştirmek kodun daha yavaş çalış
 
 Aşağıdaki konular iyi programlama uygulamalarını tartışır.
 
-[Zaman açısından kritik kod \ geliştirmeye yönelik ipuçları](tips-for-improving-time-critical-code.md)
+[Zaman açısından kritik kodu Iyileştirmeye yönelik ipuçları](tips-for-improving-time-critical-code.md) \
 Daha iyi kodlama teknikleri daha iyi performans sağlayabilir. Bu konuda, kodunuzun zaman kritik bölümlerinin önemli olduğundan emin olmanıza yardımcı olabilecek kodlama teknikleri önerilir.
 
-[Iyileştirme En Iyi uygulamaları](optimization-best-practices.md) \
+[En Iyi duruma getirme uygulamaları](optimization-best-practices.md) \
 Uygulamanızın en iyi şekilde iyileştirilmesi hakkında genel yönergeler sağlar.
 
 ## <a name="debugging-optimized-code"></a>İyileştirilmiş kodda hata ayıklama
@@ -72,7 +72,7 @@ Aşağıdaki konularda, sürüm Derlemeleriyle ilgili hata ayıklama hakkında b
 
 Aşağıdaki konularda, kodunuzun oluşturulması, yüklenmesi ve yürütülmesi nasıl iyileştirileceği hakkında bilgi sağlanmaktadır.
 
-- [Derleyici Üretimini Geliştirme](improving-compiler-throughput.md)
+- [Derleyici verimini geliştirme](improving-compiler-throughput.md)
 
 - [() Olmadan İşlev Adının Kullanılması Kod Üretmez](using-function-name-without-parens-produces-no-code.md)
 
@@ -84,20 +84,20 @@ Aşağıdaki konularda, kodunuzun oluşturulması, yüklenmesi ve yürütülmesi
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-[Iyileştirme pragmaları ve anahtar sözcükler](optimization-pragmas-and-keywords.md) \
-[Derleyici aktarım hızını iyileştirme](improving-compiler-throughput.md) \
+[Optimizasyon pragmaları ve anahtar sözcükleri](optimization-pragmas-and-keywords.md) \
+[Derleyici verimini geliştirme](improving-compiler-throughput.md) \
 [Kayan noktalı sayıların neden duyarlık Kaybedemeyebilir](why-floating-point-numbers-may-lose-precision.md) \
 [IEEE kayan nokta temsili](ieee-floating-point-representation.md) \
-[Zaman açısından kritik kod \ geliştirmeye yönelik ipuçları](tips-for-improving-time-critical-code.md)
+[Zaman açısından kritik kodu Iyileştirmeye yönelik ipuçları](tips-for-improving-time-critical-code.md) \
 [() Olmadan Işlev adının kullanılması kod üretmez](using-function-name-without-parens-produces-no-code.md) \
-[Iyileştirme En Iyi uygulamaları](optimization-best-practices.md) \
-[Profil temelli iyileştirmeler](profile-guided-optimizations.md) \
-[Profil temelli iyileştirmeler Için ortam değişkenleri](environment-variables-for-profile-guided-optimizations.md) \
+[En Iyi duruma getirme uygulamaları](optimization-best-practices.md) \
+[Profil temelli Iyileştirmeler](profile-guided-optimizations.md) \
+[Profil temelli Iyileştirmeler için ortam değişkenleri](environment-variables-for-profile-guided-optimizations.md) \
 [Pgooto süpürme](pgoautosweep.md) \
-[Pgomgr](pgomgr.md) \
-[pgosüpürme](pgosweep.md) \
+[pgomgr](pgomgr.md) \
+[pgosweep](pgosweep.md) \
 [Nasıl Yapılır: Birden Çok PGO Profilini Tek Profilde Birleştirme](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Başvurusu](reference/c-cpp-building-reference.md)
+[C/C++ Oluşturma Başvurusu](reference/c-cpp-building-reference.md)

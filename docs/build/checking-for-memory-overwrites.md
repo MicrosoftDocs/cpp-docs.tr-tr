@@ -13,20 +13,20 @@ ms.locfileid: "64342250"
 ---
 # <a name="checking-for-memory-overwrites"></a>Bellek Üzerine Yazmalarını Denetleme
 
-Yığın işleme işlevi çağrısında bir erişim ihlali alırsanız, programınızı yığın bozdu mümkündür. Bu durumun yaygın bir belirtisi olabilir:
+Yığın işleme işlevine yapılan bir çağrıda erişim ihlali alırsanız, programınız yığını bozmuş olabilir. Bu durumun yaygın bir belirtisi şöyle olacaktır:
 
 ```
 Access Violation in _searchseg
 ```
 
-[_Heapchk](../c-runtime-library/reference/heapchk.md) işlev, hem hata ayıklama ve yayın derlemeleri (yalnızca Windows NT) çalışma zamanı kitaplığı yığının bütünlüğünü doğrulamak için. Kullanabileceğiniz `_heapchk` kadar aynı şekilde `AfxCheckMemory` işlevi bir yığın üzerine yaz, örneğin yalıtmak için:
+[_Heapchk](../c-runtime-library/reference/heapchk.md) işlevi, çalışma zamanı kitaplığı yığınının bütünlüğünü doğrulamak için hem hata ayıklama hem de sürüm yapılarında (yalnızca Windows NT) kullanılabilir. Yığın üzerine yazmayı `_heapchk` yalıtmak için `AfxCheckMemory` işleviyle aynı şekilde kullanabilirsiniz, örneğin:
 
 ```
 if(_heapchk()!=_HEAPOK)
    DebugBreak();
 ```
 
-Şimdiye kadar bu işlev başarısız olursa, yalıtmak hangi noktada yığın bozulmuş gerekir.
+Bu işlev başarısız olursa, yığının bozuk olduğu noktayı yalıtmanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
