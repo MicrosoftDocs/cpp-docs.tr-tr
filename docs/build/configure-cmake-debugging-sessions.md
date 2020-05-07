@@ -1,6 +1,6 @@
 ---
-title: Visual Studio'da CMake hata ayıklama oturumlarını yapılandırın
-description: CMake hata ayıklama ayarlarını yapılandırmak için Visual Studio'nun nasıl kullanılacağını açıklar.
+title: Visual Studio 'da CMake hata ayıklama oturumlarını yapılandırma
+description: CMake hata ayıklayıcı ayarlarını yapılandırmak için Visual Studio 'Nun nasıl kullanılacağını açıklar.
 ms.date: 04/02/2020
 helpviewer_keywords:
 - CMake debugging
@@ -15,43 +15,43 @@ ms.locfileid: "81328835"
 
 ::: moniker range="vs-2015"
 
-Yerel CMake desteği Visual Studio 2017 ve sonraki yıllarda mevcuttur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+Yerel CMake desteği Visual Studio 2017 ve üzeri sürümlerde kullanılabilir. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
-Tüm çalıştırılabilir CMake **hedefleri, Genel** araç çubuğundaki **Başlangıç Öğesi** açılır açılır yerinde gösterilir. Hata ayıklama oturumunu başlatmak ve hata ayıklama başlatın.
+Tüm yürütülebilir CMake hedefleri, **genel** araç çubuğundaki **Başlangıç öğesi** açılır listesinde gösterilir. Bir hata ayıklama oturumu başlatmak ve hata ayıklayıcıyı başlatmak için bir tane seçin.
 
-![CMake başlangıç öğesi açılır](media/cmake-startup-item-dropdown.png "CMake başlangıç öğesi açılır")
+![CMake başlangıç öğesi açılan kutusu](media/cmake-startup-item-dropdown.png "CMake başlangıç öğesi açılan kutusu")
 
-Çözüm Gezgini'nden bir hata ayıklama oturumu da başlatabilirsiniz. İlk olarak, **Çözüm Gezgini** penceresinde **CMake Targets View'a** geçin.
+Ayrıca, Çözüm Gezgini bir hata ayıklama oturumu başlatabilirsiniz. İlk olarak, **Çözüm Gezgini** penceresinde **CMake hedeflerini göster görünümü** ' ne geçin.
 
-![CMake hedefleri görünüm düğmesi](media/cmake-targets-view.png  "CMake Hedefleri Görünüm menü öğesi")
+![CMake hedefleri görünümü düğmesi](media/cmake-targets-view.png  "CMake hedefleri görünümü menü öğesi")
 
-Ardından, çalıştırılabilir bir sağ tıklatın ve **Hata Ayıklama**seçin. Bu komut, etkin yapılandırmanıza göre seçili hedefin hata ayıklamaya otomatik olarak başlar.
+Ardından, bir yürütülebilir dosyaya sağ tıklayın ve **Hata Ayıkla**' yı seçin. Bu komut, etkin yapılandırmanıza bağlı olarak seçili hedefte hata ayıklamaya otomatik olarak başlar.
 
-## <a name="customize-debugger-settings"></a>Hata ayıklama ayarlarını özelleştirme
+## <a name="customize-debugger-settings"></a>Hata ayıklayıcı ayarlarını özelleştirme
 
-Projenizdeki herhangi bir çalıştırılabilir CMake hedefi için hata ayıklama ayarlarını özelleştirebilirsiniz. Proje kökünüzdeki bir *`.vs`* klasörde bulunan *launch.vs.json*adlı bir yapılandırma dosyasında bulunurlar. Başlatma yapılandırma dosyası, hata ayıklama kurulum ayrıntılarınızı yapılandırıp kaydedebilirsiniz, çünkü çoğu hata ayıklama senaryosunda yararlıdır. Bu dosyanın üç giriş noktası vardır:
+Projenizdeki herhangi bir çalıştırılabilir CMake hedefi için hata ayıklayıcı ayarlarını özelleştirebilirsiniz. Bunlar, proje kökündeki bir *`.vs`* klasörde bulunan *Launch. vs. JSON*adlı bir yapılandırma dosyasında bulunur. Hata ayıklama kurulum ayrıntılarınızı yapılandırıp kaydedebildiğinden, bir başlatma yapılandırma dosyası çoğu hata ayıklama senaryosunda yararlıdır. Bu dosyaya üç giriş noktası vardır:
 
-- **Hata Ayıklama Menüsü:** Etkin hata ayıklama hedefinize özgü hata ayıklama yapılandırmasını özelleştirmek için ana menüden **${activeDebugTarget} için Hata** Ayıklama > ve Başlatma Ayarları'nı seçin. Seçili bir hata ayıklama hedefiniz yoksa, bu seçenek gri renktedir.
+- **Hata ayıklama menüsü:** Etkin hata ayıklama hedefine özgü hata ayıklama yapılandırmasını özelleştirmek için ana menüden hata **ayıkla > hata ayıklama ve başlatma ayarları '** nı seçin. Seçili bir hata ayıklama hedefi yoksa, bu seçenek gri renkte olur.
 
-![Hata ayıklama menü giriş noktası](media/cmake-debug-menu.png "Hata ayıklama menü giriş noktası")
+![Hata ayıklama menüsü giriş noktası](media/cmake-debug-menu.png "Hata ayıklama menüsü giriş noktası")
 
-- **Hedef Görünümü:** Çözüm Gezgini'nde **Hedef Görünümü'ne** gidin. Ardından, hata ayıklama hedefine sağ tıklayın ve seçili hedefe özgü hata ayıklama yapılandırmasını özelleştirmek için **Hata Ayıklama Yapılandırması Ekle'yi** seçin.
+- **Hedef görünümü:** Çözüm Gezgini 'de **hedefler görünümüne** gidin. Ardından, bir hata ayıklama hedefine sağ tıklayıp, seçilen hedefe özgü hata ayıklama yapılandırmasını özelleştirmek için **hata ayıklama yapılandırması Ekle** ' yi seçin.
 
-![Hedefler bakış giriş noktası](media/cmake-targets-add-debug-configuration.png "Hedefler bakış giriş noktası")
+![Hedef görünümü giriş noktası](media/cmake-targets-add-debug-configuration.png "Hedef görünümü giriş noktası")
 
-- **Kök CMakeLists.txt:** Bir kök *CMakeLists.txt'ye* sağ tıklayın ve Hata **Ayıklama** iletişim kutusunu seç'i açmak için **Hata Ayıklama Yapılandırması Ekle'yi** seçin. İletişim *kutusu, her* tür hata ayıklama yapılandırması eklemenize olanak sağlar, ancak `projectTarget` özellik üzerinden çağırmak için CMake hedefini el ile belirtmeniz gerekir.
+- **Kök CMakeLists. txt:** Bir kök *Cmakelists. txt* dosyasına sağ tıklayıp **hata ayıklama yapılandırması Ekle** ' yi seçerek **hata ayıklayıcı Seç** iletişim kutusunu açın. İletişim kutusu *herhangi bir* tür hata ayıklama yapılandırması eklemenize olanak tanır, ancak `projectTarget` özelliği aracılığıyla çağırmak için CMake hedefini el ile belirtmeniz gerekir.
 
-![Hata ayıklama iletişim kutusu seçin](media/cmake-select-a-debugger.png "Hata ayıklama iletişim kutusu seçin")
+![Bir hata ayıklayıcı iletişim kutusu seçin](media/cmake-select-a-debugger.png "Bir hata ayıklayıcı iletişim kutusu seçin")
 
-Herhangi bir sayıda CMake hedefi için hata ayıklama yapılandırmaları oluşturmak için *launch.vs.json* dosyasını düzenleyebilirsiniz. Dosyayı kaydettiğinizde, Visual Studio **Başlangıç Öğesi** açılır açılır dosyasındaki her yeni yapılandırma için bir giriş oluşturur.
+Herhangi bir sayıda CMake hedefi için hata ayıklama yapılandırması oluşturmak üzere *Launch. vs. JSON* dosyasını düzenleyebilirsiniz. Dosyayı kaydettiğinizde, Visual Studio **Başlangıç öğesi** açılan menüsünde her yeni yapılandırma için bir giriş oluşturur.
 
-## <a name="reference-keys-in-cmakesettingsjson"></a>CMakeSettings.json'daki başvuru tuşları
+## <a name="reference-keys-in-cmakesettingsjson"></a>CMakeSettings. JSON içindeki başvuru anahtarları
 
-*CMakeSettings.json* dosyasındaki herhangi bir `cmake.` anahtara başvurmak için *launch.vs.json'da*bu anahtara hazırlayın. Aşağıdaki örnek, şu anda seçili yapılandırma için *CMakeSettings.json* dosyasındaki `remoteCopySources` anahtarın değerini çeken basit bir *launch.vs.json* dosyasını gösterir:
+*Cmakesettings. JSON* dosyasındaki herhangi bir anahtara başvurmak için, bunu `cmake.` *Launch. vs. JSON*' da sonuna ekleyin. Aşağıdaki örnek, şu anda seçili olan yapılandırma için *Cmakesettings. JSON* dosyasındaki `remoteCopySources` anahtarın değerini gösteren basit bir *Launch. vs. JSON* dosyasını gösterir:
 
 ```json
 {
@@ -69,15 +69,15 @@ Herhangi bir sayıda CMake hedefi için hata ayıklama yapılandırmaları oluş
 }
 ```
 
-*CMakeSettings.json'da* tanımlanan ortam `${env.VARIABLE_NAME}` **değişkenleri** sözdizimi kullanılarak launch.vs.json'da da kullanılabilir. Visual Studio 2019 sürüm 16.4 ve sonraki sürümlerinde hata ayıklama hedefleri *CMakeSettings.json'da*belirttiğiniz ortam kullanılarak otomatik olarak başlatılır. Bir ortam değişkenini **null**olarak ayarlayarak ayarlayabilirsiniz.
+*Cmakesettings. JSON* dosyasında tanımlanan `${env.VARIABLE_NAME}` **ortam değişkenleri** , sözdizimi kullanılarak Launch. vs. JSON içinde de kullanılabilir. Visual Studio 2019 sürüm 16,4 ve sonrasında, hata ayıklama hedefleri *Cmakesettings. JSON*içinde belirttiğiniz ortam kullanılarak otomatik olarak başlatılır. Bir ortam değişkenini **null**olarak ayarlayarak ayarı yapabilirsiniz.
 
-## <a name="launchvsjson-reference"></a>Launch.vs.json referans
+## <a name="launchvsjson-reference"></a>Launch. vs. JSON başvurusu
 
-Tüm hata ayıklama senaryolarınızı destekleyen birçok *launch.vs.json* özelliği vardır. Aşağıdaki özellikler, hem uzak hem de yerel tüm hata ayıklama yapılandırmaları için ortaktur:
+Tüm hata ayıklama senaryolarınızı desteklemek için birçok *Launch. vs. JSON* özelliği vardır. Aşağıdaki özellikler, uzak ve yerel tüm hata ayıklama yapılandırmalarında ortaktır:
 
-- `projectTarget`: Projeyi kurarken çağırmak için CMake hedefini belirtir. Visual **Studio, Hata Ayıklama Menüsünden** veya **Hedef Görünümü'nden** *launch.vs.json* girerseniz bu özelliği otomatik olarak otomatik olarak doldurur. Bu değer, **Başlangıç Öğesi** açılır listesinde listelenen varolan bir hata ayıklama hedefinin adı ile eşleşmelidir.
+- `projectTarget`: Proje oluşturulurken çağrılacak CMake hedefini belirtir. Visual Studio, **hata ayıklama menüsü** veya **hedefler görünümünden** *Launch. vs. JSON* girerseniz, bu özelliği oto doldurur. Bu değer, **Başlangıç öğesi** açılan listesinde listelenen mevcut bir hata ayıklama hedefinin adıyla eşleşmelidir.
 
-- `env`: Sözdizimini kullanarak eklenecek ek ortam değişkenleri:
+- `env`: Sözdizimi kullanılarak eklenecek ek ortam değişkenleri:
 
   ```json
   "env": {
@@ -86,74 +86,74 @@ Tüm hata ayıklama senaryolarınızı destekleyen birçok *launch.vs.json* öze
       }
   ```
 
-- `args`: Komut satırı bağımsız değişkenleri hata ayıklamak için programa geçti.
+- `args`: Hata ayıklamak için programa geçirilen komut satırı bağımsız değişkenleri.
 
-## <a name="launchvsjson-reference-for-remote-projects-and-wsl"></a>Uzak projeler ve WSL için Launch.vs.json referans
+## <a name="launchvsjson-reference-for-remote-projects-and-wsl"></a>Uzak projeler ve WSL için Launch. vs. JSON başvurusu
 
-Visual Studio 2019 sürüm 16.6'da, uzak `type: cppgdb` sistemlerde ve WSL'de hata ayıklamayı kolaylaştırmak için yeni bir hata ayıklama yapılandırması ekledik. Eski hata ayıklama `type: cppdbg` yapılandırmaları hala desteklenir.
+Visual Studio 2019 sürüm 16,6 ' de, uzak sistemlerde ve WSL 'de `type: cppgdb` hata ayıklamayı basitleştirmek için yeni bir hata ayıklama yapılandırması ekledik. Eski hata ayıklama yapılandırmalarının `type: cppdbg` desteklenmeye devam ediyor.
 
 ### <a name="configuration-type-cppgdb"></a>Yapılandırma türü`cppgdb`
 
-- `name`: **Başlangıç Öğesi** açılır düşüşündeki yapılandırmayı tanımlamak için uygun bir ad.
-- `project`: Proje dosyasına göreli yolu belirtir. Normalde, bir CMake projesini hata ayıklarken bu yolu değiştirmeniz gerekmez.
-- `projectTarget`: Projeyi kurarken çağırmak için CMake hedefini belirtir. Visual **Studio, Hata Ayıklama Menüsünden** veya **Hedef Görünümü'nden** *launch.vs.json* girerseniz bu özelliği otomatik olarak otomatik olarak doldurur. Bu hedef değer, **Başlangıç Öğesi** açılır listesinde listelenen varolan bir hata ayıklama hedefinin adı ile eşleşmelidir.
-- `debuggerConfiguration`: Kullanılacak hata ayıklama varsayılan değerleri kümesini gösterir. Visual Studio 2019 sürüm 16.6'da `gdb`tek geçerli seçenek . Önceki sürümler `gdbserver`de destekler.
-- `args`: Komut satırı bağımsız değişkenleri, başlangıç tarihinde debugged olan programa geçti.
-- `env`: Programa aktarılan ek ortam değişkenleri debugged ediliyor. Örneğin, `{"DISPLAY": "0.0"}`.
-- `processID`: Linux işlem kimliği eklemek için. Yalnızca uzak bir işleme bağlanırken kullanılır. Daha fazla bilgi için [GDB kullanarak işlemlere iliştirilen Sorun Giderme'ye](https://github.com/Microsoft/MIEngine/wiki/Troubleshoot-attaching-to-processes-using-GDB)bakın.
+- `name`: **Başlangıç öğesi** açılan menüsünde yapılandırmayı tanımlayacak kolay bir ad.
+- `project`: Proje dosyasının göreli yolunu belirtir. Normal olarak, CMake projesinde hata ayıklarken bu yolu değiştirmeniz gerekmez.
+- `projectTarget`: Proje oluşturulurken çağrılacak CMake hedefini belirtir. Visual Studio, **hata ayıklama menüsü** veya **hedefler görünümünden** *Launch. vs. JSON* girerseniz, bu özelliği oto doldurur. Bu hedef değer, **Başlangıç öğesi** açılan listesinde listelenen mevcut bir hata ayıklama hedefinin adıyla eşleşmelidir.
+- `debuggerConfiguration`: Hangi hata ayıklama varsayılan değerlerini kullanacağını gösterir. Visual Studio 2019 sürüm 16,6 ' de geçerli tek seçenek `gdb`. Önceki sürümler de desteklenir `gdbserver`.
+- `args`: Başlatma sırasında hata ayıklanan programa geçirilen komut satırı bağımsız değişkenleri.
+- `env`: Hata ayıklamakta olan programa başka ortam değişkenleri geçirildi. Örneğin, `{"DISPLAY": "0.0"}`.
+- `processID`: Eklenecek Linux işlem KIMLIĞI. Yalnızca uzak bir işleme eklenirken kullanılır. Daha fazla bilgi için bkz. [GDB kullanarak işlemlere ekleme sorunlarını giderme](https://github.com/Microsoft/MIEngine/wiki/Troubleshoot-attaching-to-processes-using-GDB).
 
 #### <a name="additional-options-for-the-gdb-configuration"></a>`gdb` Yapılandırma için ek seçenekler
 
-- `program`: Varsayılan `"${debugInfo.fullTargetPath}"`değer. Hata ayıklama uygulamasına Unix yolu. Yalnızca yapı veya dağıtım konumunda yürütülebilir hedeften farklıysa gereklidir.
-- `remoteMachineName`: Varsayılan `"${debugInfo.remoteMachineName}"`değer. Hata ayıklamak için programı barındıran uzak sistemin adı. Yalnızca yapı sisteminden farklıysa gereklidir. [Bağlantı Yöneticisi'nde](../linux/connect-to-your-remote-linux-computer.md)varolan bir giriş olmalıdır. Varolan tüm uzak bağlantıların listesini görüntülemek için **Ctrl+Space** tuşuna basın.
-- `cwd`: Varsayılan `"${debugInfo.defaultWorkingDirectory}"`değer. Çalıştırılabildiği uzak sistemdeki `program` dizine Unix yolu. Dizinin var olması gerekir.
-- `gdbpath`: Varsayılan `/usr/bin/gdb`değer. Hata ayıklamak için `gdb` kullanılan tam Unix yolu. Yalnızca `gdb`özel bir sürümünü kullanıyorsanız gereklidir.
-- `preDebugCommand`: Bir Linux komutu hemen `gdb`önce çağıran çalıştırmak için . `gdb`komut tamamlanana kadar başlamaz. Yürütmeden önce bir komut dosyası çalıştırmak `gdb`için seçeneği kullanabilirsiniz.
+- `program`: Varsayılan olarak `"${debugInfo.fullTargetPath}"`olur. Hata ayıklaması yapılacak uygulamanın UNIX yolu. Yalnızca derleme veya dağıtım konumundaki hedef yürütülebilir dosyadan farklıysa gereklidir.
+- `remoteMachineName`: Varsayılan olarak `"${debugInfo.remoteMachineName}"`olur. Hata ayıklama için programı barındıran uzak sistemin adı. Yalnızca yapı sisteminden farklıysa gereklidir. [Bağlantı yöneticisinde](../linux/connect-to-your-remote-linux-computer.md)mevcut bir giriş olmalıdır. Var olan tüm uzak bağlantıların listesini görüntülemek için **CTRL + boşluk** tuşlarına basın.
+- `cwd`: Varsayılan olarak `"${debugInfo.defaultWorkingDirectory}"`olur. Çalıştıran uzak sistemdeki `program` dizinin UNIX yolu. Dizinin var olması gerekir.
+- `gdbpath`: Varsayılan olarak `/usr/bin/gdb`olur. Hata ayıklama için `gdb` kullanılan tam UNIX yolu. Yalnızca özel bir sürümü kullanılıyorsa gereklidir `gdb`.
+- `preDebugCommand`: Çağırma `gdb`sonrasında hemen çalıştırılacak bir Linux komutu. `gdb`Komut tamamlanana kadar başlatılmaz. Yürütmeden önce bir betiği çalıştırmak için seçeneğini kullanabilirsiniz `gdb`.
 
 #### <a name="deployment-options"></a>Dağıtım seçenekleri
 
-Yapı makinenizi (CMakeSettings.json'da tanımlanan) uzaktan hata ayıklama makinenizden ayırmak için aşağıdaki seçenekleri kullanın.
+Derleme makinenizi (CMakeSettings. json dosyasında tanımlanır) uzaktan hata ayıklama makinenizden ayırmak için aşağıdaki seçenekleri kullanın.
 
-- `remoteMachineName`: Uzaktan hata ayıklama makinesi. Yalnızca yapı makinesinden farklıysa gereklidir. [Bağlantı Yöneticisi'nde](../linux/connect-to-your-remote-linux-computer.md)varolan bir giriş olmalıdır. Varolan tüm uzak bağlantıların listesini görüntülemek için **Ctrl+Space** tuşuna basın.
-- `disableDeploy`: Varsayılan `false`değer. Yapı/hata ayıklama ayırmanın devre dışı bırakıldığını gösterir. Ne `false`zaman , bu seçenek yapı ve hata ayıklama iki ayrı makinelerde oluşmasını sağlar.
-- `deployDirectory`: Tam Unix yolu üzerinde `remoteMachineName` dizin üzerinde yürütülebilir kopyalanır alır.
-- `deploy`: Bir dizi gelişmiş dağıtım ayarı. Bu ayarları yalnızca dağıtım işlemi üzerinde daha ayrıntılı denetim istediğinizde yapılandırmanız gerekir. Varsayılan olarak, yalnızca işlemin hata ayıklama için gerekli dosyaları uzak hata ayıklama makinesine dağıtıldı.
-  - `sourceMachine`: Dosya nın veya dizinin kopyalandığı makine. Bağlantı Yöneticisi'nde depolanan tüm uzak bağlantıların listesini görüntülemek için **Ctrl+Space** tuşuna basın. YEREL olarak WSL'de bina yaparken, bu seçenek yoksayılır.
-  - `targetMachine`: Dosya nın veya dizinin kopyalandığı makine. Bağlantı Yöneticisi'nde depolanan tüm uzak bağlantıların listesini görüntülemek için **Ctrl+Space** tuşuna basın.
-  - `sourcePath`: Dosya veya dizin `sourceMachine`konumu.
-  - `targetPath`: Dosya veya dizin `targetMachine`konumu.
-  - `deploymentType`: Dağıtım türünün açıklaması. `LocalRemote`ve `RemoteRemote` desteklenir. `LocalRemote``remoteMachineName` *başlat.vs.json'da*belirtilen uzak sisteme yerel dosya sisteminden kopyalama anlamına gelir. `RemoteRemote`*CMakeSettings.json'da* belirtilen uzaktan yapı sisteminden *launch.vs.json'da*belirtilen farklı uzak sisteme kopyalama anlamına gelir.
+- `remoteMachineName`: Uzaktan hata ayıklama makinesi. Yalnızca derleme makinesinden farklıysa gereklidir. [Bağlantı yöneticisinde](../linux/connect-to-your-remote-linux-computer.md)mevcut bir giriş olmalıdır. Var olan tüm uzak bağlantıların listesini görüntülemek için **CTRL + boşluk** tuşlarına basın.
+- `disableDeploy`: Varsayılan olarak `false`olur. Derleme/hata ayıklama ayrımı devre dışı olup olmadığını gösterir. Ne `false`zaman, bu seçenek derleme ve hata ayıklamanın iki ayrı makinede oluşmasına izin verir.
+- `deployDirectory`: Yürütülebilir dosyanın kopyalandığı dizinin `remoteMachineName` tam UNIX yolu.
+- `deploy`: Gelişmiş dağıtım ayarlarından oluşan bir dizi. Bu ayarları yalnızca dağıtım işlemi üzerinde daha ayrıntılı denetim sağlamak istediğinizde yapılandırmanız gerekir. Varsayılan olarak, yalnızca hata ayıklama işlemi için gereken dosyalar uzaktan hata ayıklama makinesine dağıtılır.
+  - `sourceMachine`: Dosya veya dizinin kopyalandığı makine. Bağlantı Yöneticisi 'nde depolanan tüm uzak bağlantıların listesini görüntülemek için **Ctrl + Space** tuşlarına basın. WSL üzerinde yerel olarak oluşturulurken Bu seçenek yoksayılır.
+  - `targetMachine`: Dosya veya dizinin kopyalandığı makine. Bağlantı Yöneticisi 'nde depolanan tüm uzak bağlantıların listesini görüntülemek için **Ctrl + Space** tuşlarına basın.
+  - `sourcePath`: Üzerindeki `sourceMachine`dosya veya dizin konumu.
+  - `targetPath`: Üzerindeki `targetMachine`dosya veya dizin konumu.
+  - `deploymentType`: Dağıtım türünün açıklaması. `LocalRemote`ve `RemoteRemote` desteklenir. `LocalRemote`, yerel dosya sisteminden, `remoteMachineName` *Launch. vs. JSON*içinde tarafından belirtilen uzak sisteme kopyalama anlamına gelir. `RemoteRemote`, *Cmakesettings. JSON* dosyasında belirtilen uzak derleme sisteminden *Launch. vs. JSON*içinde belirtilen farklı bir uzak sisteme kopyalama anlamına gelir.
   - `executable`: Dağıtılan dosyanın yürütülebilir olup olmadığını gösterir.
 
 ### <a name="execute-custom-gdb-commands"></a>Özel `gdb` komutları yürütme
 
-Visual Studio, altta `gdb` yatan hata ayıklama yla doğrudan etkileşimde kalmak için özel komutların yürütülmesini destekler. Daha fazla bilgi için [ `gdb` bkz.](https://github.com/microsoft/MIEngine/wiki/Executing-custom-gdb-lldb-commands)
+Visual Studio temel alınan hata `gdb` ayıklayıcıyla doğrudan etkileşimde bulunmak için özel komutların yürütülmesini destekler. Daha fazla bilgi için bkz. [özel `gdb` Lldb komutlarını yürütme](https://github.com/microsoft/MIEngine/wiki/Executing-custom-gdb-lldb-commands).
 
 ### <a name="enable-logging"></a>Günlü kaydını etkinleştir
 
-Hangi komutların gönderildiğini, hangi çıktının `gdb` `gdb` döndüğünü ve her komutun ne kadar sürdüğünü görmek için MIEngine günlüğe kaydetmeyi etkinleştirin. [Daha fazlasını öğrenin](https://github.com/microsoft/MIEngine/wiki/Logging)
+Hangi komutların gönderileceğini `gdb`, hangi çıktının `gdb` geri döndüğünü ve her komutun ne kadar sürdüğünü görmek için mıengine günlüğünü etkinleştirin. [Daha fazlasını öğrenin](https://github.com/microsoft/MIEngine/wiki/Logging)
 
 ### <a name="configuration-type-cppdbg"></a>Yapılandırma türü`cppdbg`
 
-Aşağıdaki seçenekler, `cppdbg` yapılandırma türünü kullanarak uzak bir sistemde veya WSL'de hata ayıklama yaparken kullanılabilir. Visual Studio 2019 sürüm 16.6 veya `cppgdb` sonraki sürümde yapılandırma türü önerilir.
+`cppdbg` Yapılandırma türü kullanılarak, uzak bir sistemde veya WSL 'de hata ayıklanırken aşağıdaki seçenekler kullanılabilir. Visual Studio 2019 sürüm 16,6 veya sonraki sürümlerde yapılandırma türü `cppgdb` önerilir.
 
-- `name`: **Başlangıç Öğesi** açılır düşüşündeki yapılandırmayı tanımlamak için uygun bir ad.
+- `name`: **Başlangıç öğesi** açılan menüsünde yapılandırmayı tanımlayacak kolay bir ad.
 
-- `project`: Proje dosyasına göreli yolu belirtir. Normalde, bir CMake projesini hata ayıklarken bu değeri değiştirmeniz gerekmez.
+- `project`: Proje dosyasının göreli yolunu belirtir. Normal olarak, CMake projesinde hata ayıklarken bu değeri değiştirmeniz gerekmez.
 
-- `projectTarget`: Projeyi kurarken çağırmak için CMake hedefini belirtir. Visual **Studio, Hata Ayıklama Menüsünden** veya **Hedef Görünümü'nden** *launch.vs.json* girerseniz bu özelliği otomatik olarak otomatik olarak doldurur. Bu değer, **Başlangıç Öğesi** açılır listesinde listelenen varolan bir hata ayıklama hedefinin adı ile eşleşmelidir.
+- `projectTarget`: Proje oluşturulurken çağrılacak CMake hedefini belirtir. Visual Studio, **hata ayıklama menüsü** veya **hedefler görünümünden** *Launch. vs. JSON* girerseniz, bu özelliği oto doldurur. Bu değer, **Başlangıç öğesi** açılan listesinde listelenen mevcut bir hata ayıklama hedefinin adıyla eşleşmelidir.
 
-- `args`: Komut satırı bağımsız değişkenleri, başlangıç tarihinde debugged olan programa geçti.
+- `args`: Başlatma sırasında hata ayıklanan programa geçirilen komut satırı bağımsız değişkenleri.
 
-- `processID`: Linux işlem kimliği eklemek için. Yalnızca uzak bir işleme bağlanırken kullanılır. Daha fazla bilgi için [GDB kullanarak işlemlere iliştirilen Sorun Giderme'ye](https://github.com/Microsoft/MIEngine/wiki/Troubleshoot-attaching-to-processes-using-GDB)bakın.
+- `processID`: Eklenecek Linux işlem KIMLIĞI. Yalnızca uzak bir işleme eklenirken kullanılır. Daha fazla bilgi için bkz. [GDB kullanarak işlemlere ekleme sorunlarını giderme](https://github.com/Microsoft/MIEngine/wiki/Troubleshoot-attaching-to-processes-using-GDB).
 
-- `program`: Varsayılan `"${debugInfo.fullTargetPath}"`değer. Hata ayıklama uygulamasına Unix yolu. Yalnızca yapı veya dağıtım konumunda yürütülebilir hedeften farklıysa gereklidir.
+- `program`: Varsayılan olarak `"${debugInfo.fullTargetPath}"`olur. Hata ayıklaması yapılacak uygulamanın UNIX yolu. Yalnızca derleme veya dağıtım konumundaki hedef yürütülebilir dosyadan farklıysa gereklidir.
 
-- `remoteMachineName`: Varsayılan `"${debugInfo.remoteMachineName}"`değer. Hata ayıklamak için programı barındıran uzak sistemin adı. Yalnızca yapı sisteminden farklıysa gereklidir. [Bağlantı Yöneticisi'nde](../linux/connect-to-your-remote-linux-computer.md)varolan bir giriş olmalıdır. Varolan tüm uzak bağlantıların listesini görüntülemek için **Ctrl+Space** tuşuna basın.
+- `remoteMachineName`: Varsayılan olarak `"${debugInfo.remoteMachineName}"`olur. Hata ayıklama için programı barındıran uzak sistemin adı. Yalnızca yapı sisteminden farklıysa gereklidir. [Bağlantı yöneticisinde](../linux/connect-to-your-remote-linux-computer.md)mevcut bir giriş olmalıdır. Var olan tüm uzak bağlantıların listesini görüntülemek için **CTRL + boşluk** tuşlarına basın.
 
-- `cwd`: Varsayılan `"${debugInfo.defaultWorkingDirectory}"`değer. Çalıştırılanın uzak `program` sistemde dizine tam Unix yolu. Dizinin var olması gerekir.
+- `cwd`: Varsayılan olarak `"${debugInfo.defaultWorkingDirectory}"`olur. Çalıştıran uzak sistemdeki `program` dizinin tam UNIX yolu. Dizinin var olması gerekir.
 
-- `environment`: Programa aktarılan ek ortam değişkenleri debugged ediliyor. Örneğin,
+- `environment`: Hata ayıklamakta olan programa başka ortam değişkenleri geçirildi. Örneğin,
 
   ```json
     "environment": [
@@ -168,9 +168,9 @@ Aşağıdaki seçenekler, `cppdbg` yapılandırma türünü kullanarak uzak bir 
       ]
   ```
 
-- `pipeArgs`: Bağlantıyı yapılandırmak için boru programına geçirilen bir dizi komut satırı bağımsız değişkeni. Boru programı Visual Studio ve `gdb`. CMake projelerini hata ayıklarken bu dizinin çoğunun **özelleştirilmesi gerekmez.** Bunun `${debuggerCommand}`istisnası, uzak `gdb` sistemde başlatılan durumdur. Şu şekilde değiştirilebilir:
+- `pipeArgs`: Bağlantıyı yapılandırmak için kanal programına geçirilen komut satırı bağımsız değişkenlerinin dizisi. Kanal programı, Visual Studio ve `gdb`arasında standart giriş/çıkış geçişi için kullanılır. CMake projelerinde hata ayıklanırken bu dizinin çoğu **özelleştirilmek zorunda değildir** . Özel durum, uzak `${debuggerCommand}`sistemde başlatılan `gdb` ' dır. Bu, şu şekilde değiştirilebilir:
 
-  - Linux sisteminizde ortam değişkeni DISPLAY değerini dışa aktarın. Aşağıdaki örnekte, bu `:1`değer .
+  - Linux sisteminizde ortam değişkeni görüntüleme değerini dışarı aktarın. Aşağıdaki örnekte bu değer `:1`.
 
     ```json
     "pipeArgs": [
@@ -184,7 +184,7 @@ Aşağıdaki seçenekler, `cppdbg` yapılandırma türünü kullanarak uzak bir 
       ],
     ```
 
-  - Yürütmeden önce bir `gdb`komut dosyası çalıştırın. Yürütme izinlerinin komut dosyanızda ayarlandığından emin olun.
+  - Yürütmeden önce bir komut dosyası çalıştırın `gdb`. Betikte yürütme izinlerinin ayarlandığından emin olun.
 
     ```json
     "pipeArgs": [
@@ -198,21 +198,21 @@ Aşağıdaki seçenekler, `cppdbg` yapılandırma türünü kullanarak uzak bir 
       ],
     ```
 
-- `stopOnEntry`: İşlem başlatılır başlatılır başlatmaz kırılıp kırılmayacağını belirten bir boolean. Varsayılan değer false.
+- `stopOnEntry`: İşlem başlatıldıktan hemen sonra kesmenin yapılıp yapılmayacağını belirten bir Boole değeri. Varsayılan değer false.
 
-- `visualizerFile`: Bu işlemi hata ayıklarken kullanılacak [bir .natvis dosyası.](/visualstudio/debugger/create-custom-views-of-native-objects) Bu seçenek, güzel `gdb` yazdırma ile uyumsuzdur. Bu `showDisplayString` özelliği ayarladığınızda da ayarlayın.
+- `visualizerFile`: Bu işlemde hata ayıklanırken kullanılacak bir [. natvis dosyası](/visualstudio/debugger/create-custom-views-of-native-objects) . Bu seçenek, düzgün yazdırma `gdb` ile uyumlu değildir. Bu özelliği `showDisplayString` ayarladığınızda de ayarlanır.
 
-- `showDisplayString`: A belirtildiğinde ekran dizesini `visualizerFile` etkinleştiren bir boolean. Bu seçeneği `true` hata ayıklama sırasında daha yavaş performansa neden olacak şekilde ayarlamak.
+- `showDisplayString`: Bir `visualizerFile` , belirtildiğinde, görüntüleme dizesini sağlayan bir Boole değeri. Bu seçeneğin ayarlanması hata `true` ayıklama sırasında daha yavaş performansa neden olabilir.
 
-- `setupCommands`: Bir `gdb` veya daha fazla komut(lar) yürütmek için, altta yatan hata ayıklayıcı kurmak için.
+- `setupCommands`: Temel alınan hata `gdb` ayıklayıcıyı ayarlamak için yürütülecek bir veya daha fazla komut (ler).
 
-- `miDebuggerPath`: Tam yol `gdb`. Belirtilmemiş olduğunda, Visual Studio hata ayıklama için önce PATH'i arar.
+- `miDebuggerPath`: Tam yolu `gdb`. Belirtilmediğinde, Visual Studio hata ayıklayıcı için önce yolu arar.
 
-- Son olarak, yapılandırma türü için `cppgdb` tanımlanan dağıtım seçeneklerinin `cppdbg` tümü yapılandırma türüne göre de kullanılabilir.
+- Son olarak, yapılandırma türü için `cppgdb` tanımlanan tüm dağıtım seçenekleri `cppdbg` yapılandırma türü tarafından da kullanılabilir.
 
-### <a name="debug-using-gdbserver"></a>Hata ayıklama kullanarak`gdbserver`
+### <a name="debug-using-gdbserver"></a>Kullanarak hata ayıkla`gdbserver`
 
-Yapılandırmayı `cppdbg` hata ayıklamak için `gdbserver`yapılandırabilirsiniz. Daha fazla ayrıntı ve Microsoft C++ Team Blog yazısı [ile `gdbserver`Linux CMake Projeleri Debugging ](https://devblogs.microsoft.com/cppblog/debugging-linux-cmake-projects-with-gdbserver/)bir örnek başlatma yapılandırma bulabilirsiniz.
+`cppdbg` Yapılandırmayı kullanarak `gdbserver`hata ayıklama için yapılandırabilirsiniz. Microsoft C++ Team blog postasında [hata ayıklama Linux CMake projelerinde `gdbserver` ](https://devblogs.microsoft.com/cppblog/debugging-linux-cmake-projects-with-gdbserver/)daha fazla ayrıntı ve örnek başlatma yapılandırması bulabilirsiniz.
 
 ::: moniker-end
 
@@ -220,12 +220,12 @@ Yapılandırmayı `cppdbg` hata ayıklamak için `gdbserver`yapılandırabilirsi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da CMake projeleri](cmake-projects-in-visual-studio.md)\
-[Linux CMake projesini yapılandırma](../linux/cmake-linux-project.md)\
-[Uzak Linux bilgisayarınıza bağlanın](../linux/connect-to-your-remote-linux-computer.md)\
-[CMake yapı ayarlarını özelleştirin](customize-cmake-settings.md)\
+[Visual Studio 'da CMake projeleri](cmake-projects-in-visual-studio.md)\
+[Linux CMake projesi yapılandırma](../linux/cmake-linux-project.md)\
+[Uzak Linux bilgisayarınıza bağlanma](../linux/connect-to-your-remote-linux-computer.md)\
+[CMake derleme ayarlarını özelleştirme](customize-cmake-settings.md)\
 [CMake hata ayıklama oturumlarını yapılandırma](configure-cmake-debugging-sessions.md)\
-[Linux projenizi dağıtma, çalıştırma ve hata ayıklama](../linux/deploy-run-and-debug-your-linux-project.md)\
+[Linux projenizi dağıtın, çalıştırın ve hatalarını ayıklayın](../linux/deploy-run-and-debug-your-linux-project.md)\
 [CMake önceden tanımlanmış yapılandırma başvurusu](cmake-predefined-configuration-reference.md)
 
 ::: moniker-end

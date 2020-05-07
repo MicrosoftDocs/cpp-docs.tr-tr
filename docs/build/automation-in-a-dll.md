@@ -14,22 +14,22 @@ ms.locfileid: "65220924"
 ---
 # <a name="automation-in-a-dll"></a>DLL'de Otomasyon
 
-MFC DLL Sihirbazı'nda Otomasyon seçeneğinin seçtiğinizde, sihirbaz, aşağıdaki sağlar:
+MFC DLL sihirbazında Otomasyon seçeneğini belirlediğinizde, sihirbaz size şunları sağlar:
 
-- Bir başlatıcı nesne Açıklama Dili (. ODL) dosyası
+- Bir başlangıç nesnesi Açıklama Dili (. ODL) dosyası
 
-- Bir Afxole.h STDAFX.h dosyası içindeki INCLUDE yönergesi
+- Afxole. h için STDADFX. h dosyasındaki bir içerme yönergesi
 
-- Uygulanışı `DllGetClassObject` çağıran işlevi **AfxDllGetClassObject** işlevi
+- `DllGetClassObject` **AfxDllGetClassObject** işlevini çağıran işlevin uygulanması
 
-- Uygulanışı `DllCanUnloadNow` çağıran işlevi **AfxDllCanUnloadNow** işlevi
+- , `DllCanUnloadNow` **AfxDllCanUnloadNow** işlevini çağıran işlevin uygulanması
 
-- Uygulanışı `DllRegisterServer` çağıran işlevi [COleObjectFactory::UpdateRegistryAll](../mfc/reference/coleobjectfactory-class.md#updateregistryall) işlevi
+- `DllRegisterServer` [Copaobjectfactory:: öğenize kaydedilecektir](../mfc/reference/coleobjectfactory-class.md#updateregistryall) işlevini çağıran işlevin uygulanması
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [Otomasyon Sunucuları](../mfc/automation-servers.md)
+- [Otomasyon sunucuları](../mfc/automation-servers.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)
+[Visual Studio 'da C/C++ dll 'Leri oluşturma](dlls-in-visual-cpp.md)

@@ -12,37 +12,37 @@ ms.locfileid: "62345142"
 # <a name="summary-of-tokens"></a>Belirteçlerin Özeti
 
 *belirteç*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Anahtar sözcüğü*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Sabit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sözcükle*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sabit*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*dize sabit değeri*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İşleci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Noktalama işaretçisi*
+&nbsp;&nbsp;&nbsp;&nbsp;*işlecinde*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*noktalama işareti*
 
-*ön işleme belirteci*:<br/>
+*ön işleme-belirteç*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*üst bilgi adı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*PP numarası*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*karakter sabiti*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*dize sabit değeri*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*işleç noktalama işaretçisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Yukarıdakilerden biri olamaz her boşluk olmayan karakter
+&nbsp;&nbsp;&nbsp;&nbsp;*işleç noktalama*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Yukarıdakilerden biri olamaz, boşluk olmayan her karakter
 
 *üst bilgi adı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**\<**  *PATH-spec*  **>**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**"***yol belirtimi***"**
+&nbsp;&nbsp;&nbsp;&nbsp;**\<**  *yol-spec*  **>**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**"**  *Path spec*  **"**
 
-*PATH-spec*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Geçerli dosya yolu
+*yol-spec*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Yasal dosya yolu
 
-*sayı PP*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**.** *basamak*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sayı PP* *basamak* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sayı PP* *rakam*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sayı PP***e***oturum*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sayı PP***E***oturum*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sayı PP* **.**
+*PP numarası*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Gurmukhi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**.** *Gurmukhi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*PP sayı* *basamağı* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*PP sayısı-* *basamak olmayan*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*PP numara*  **e**  *işareti*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*PP numara*  **E**  *işareti*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*PP numarası*  **.**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

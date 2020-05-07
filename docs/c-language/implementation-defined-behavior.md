@@ -16,13 +16,13 @@ ms.locfileid: "81334552"
 ---
 # <a name="implementation-defined-behavior"></a>Uygulama Tanımlı Davranış
 
-ANSI X3.159-1989, *Amerikan Ulusal Standart Bilgi Sistemleri* - *Programlama Dili* - *C*, bir bölüm "Taşınabilirlik Sorunları denir içerir." ANSI bölümü, AnSI'nin her bir uygulamaya açık bıraktığı C dilinin alanlarını listeler. Bu bölümde, Microsoft C'nin C dilinin uygulama tanımlı bu alanlarını nasıl işlediği açıklanmaktadır.
+ANSI x 3.159-1989, *American National Standard for Information Systems* - *programlama Language* - *C*, "taşınabilirlik sorunları" adlı bir bölüm içerir. ANSI bölümünde, ANSI 'nin belirli bir uygulamaya açık bıraktığı, C dilinin bölgeleri listelenir. Bu bölümde, Microsoft C 'nin C dilinin uygulama tanımlı bu alanlarının nasıl işlediği açıklanmaktadır.
 
-Bu bölüm, ANSI bölümüyle aynı sırayı izler. Kapsanan her öğe, uygulama tanımlı davranışı açıklayan ANSI'ye yapılan başvuruları içerir.
+Bu bölüm, ANSI bölümüyle aynı sırayı izler. Kapsamındaki her öğe, uygulama tanımlı davranışı açıklayan ANSI 'ye başvurular içerir.
 
 > [!NOTE]
-> Bu bölümde yalnızca C derleyicisinin ABD İngilizce sürümü açıklanmaktadır. Microsoft C'nin diğer diller için uygulamaları biraz farklılık gösterebilir.
+> Bu bölümde yalnızca C derleyicisinin ABD Ingilizcesi dil sürümü açıklanmaktadır. Diğer diller için Microsoft C uygulamaları biraz farklı olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Dil Referansı](../c-language/c-language-reference.md)
+[C dil başvurusu](../c-language/c-language-reference.md)

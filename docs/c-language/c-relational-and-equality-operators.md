@@ -17,55 +17,55 @@ ms.locfileid: "67400524"
 ---
 # <a name="c-relational-and-equality-operators"></a>C İlişkisel ve Eşitlik İşleçleri
 
-İkili ilişkisel ve eşitlik işleçleri, belirtilen ilişki geçerliliğini sınamak için ikinci işlenen ilk işlenenin karşılaştırın. Test edilen ilişki true ve 0 ise false ise ilişkisel bir ifadenin sonucu 1'dir. Sonuç türü olan `int`.
+İkili ilişkisel ve eşitlik işleçleri, belirtilen ilişkinin geçerliliğini test etmek için ilk işlenenlerini ikinci işlenenden karşılaştırın. Bir ilişkisel ifadenin sonucu, sınanan ilişki true ise 1, yanlışsa 0 olur. Sonucun türü `int`.
 
-**Söz dizimi**
+**Sözdizimi**
 
-*İlişkisel ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **&lt;** *shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **>** *shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **&lt; =** *shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **>=** *shift-expression*
+*ilişkisel ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*SHIFT ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ilişkisel-ifade* **&lt;** *kaydırma ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ilişkisel-ifade* **>** *kaydırma ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ilişkisel-ifade* ** &lt; ** *kaydırma ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ilişkisel-ifade* **>=** *kaydırma ifadesi*
 
-*Eşitlik ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifade* **==** *ilişkisel ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifade* **! =** *ilişkisel ifade*
+*eşitlik ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ilişkisel ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*eşitlik-ifade* **==** *ilişkisel ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*eşitlik-ifade* **! =** *ilişkisel-ifade*
 
-İlişkisel ve eşitlik işleçleri aşağıdaki ilişkileri test:
+İlişkisel ve eşitlik işleçleri aşağıdaki ilişkileri test edin:
 
-|İşleç|Test ilişkisi|
+|İşleç|İlişki test edildi|
 |--------------|-------------------------|
-|**&lt;**|İkinci işlenenin değerinden ilk işlenenin|
-|**>**|Birinci işlenenin ikinci işlenenin büyük|
-|**&lt;=**|İlk işlenenin daha az veya eşit ikinci işlenen|
-|**>=**|Birinci işlenenin ikinci işlenen ya da daha büyük|
-|**==**|Birinci işlenenin ikinci işlenenin değerine eşit|
-|**\!=**|Birinci işlenenin ikinci işlenenin değerine eşit değil|
+|**&lt;**|Birinci işlenen ikinci işlenenin küçüktür|
+|**>**|İkinci işleneni aşan ilk işlenen|
+|**&lt;=**|İlk işlenen ikinci işlenenden küçük veya eşit|
+|**>=**|İlk işlenen ikinci işlenenden büyük veya eşit|
+|**==**|İlk işlenen ikinci işlenenin değerine eşit|
+|**!=**|Birinci işlenen ikinci işlenene eşit değil|
 
-Yukarıdaki listede ilk dört işleçleri eşitlik işleçleri daha yüksek bir önceliğe sahip (`==` ve `!=`). Tabloda öncelik bilgi [önceliği ve ilişkilendirilebilirliği, C işleçleri](../c-language/precedence-and-order-of-evaluation.md).
+Yukarıdaki listede ilk dört işlecin eşitlik işleçlerinden (`==` ve `!=`) daha yüksek önceliği vardır. [C işleçleri için tablo önceliği ve Ilişkilendirilebilirliği](../c-language/precedence-and-order-of-evaluation.md)içindeki öncelik bilgilerine bakın.
 
-İşlenen, integral, kayan veya işaretçi türü olabilir. İşlenen türleri farklı olabilir. İlişkisel işleçler olağan aritmetik dönüştürmeler integral ve kayan türü işlenen üzerinde gerçekleştirin. Ayrıca, aşağıdaki birleşimler işlenen türleri ile ilişkisel ve eşitlik işleçleri kullanabilirsiniz:
+İşlenenler integral, kayan veya işaretçi türüne sahip olabilir. İşlenen türleri farklı olabilir. İlişkisel işleçler, integral ve kayan tür işlenenlerinde her zamanki aritmetik dönüştürmeleri gerçekleştirir. Buna ek olarak, ilişkisel ve eşitlik işleçleri ile aşağıdaki işlenen türleri birleşimlerini kullanabilirsiniz:
 
-- Her iki işleneni de her ilişkisel veya eşitlik işleci aynı türü işaretçileri olabilir. Eşitlik (`==`) ve eşitsizlik (`!=`) işleçleri, Karşılaştırmanın sonucu gösterir iki işaretçi aynı bellek konumunda adresi olup olmadığını. Bir ilişkisel işleçleri ( **\<** , **>** , **\<** =, ve **>** =), Karşılaştırmanın sonucu işaret edilen nesne iki bellek adresleri göreli konumunu belirtir. İlişkisel işleçler yalnızca uzaklıkları karşılaştırın.
+- Herhangi bir ilişkisel ya da eşitlik işlecinin her iki işleneni de aynı türde işaretçiler olabilir. Eşitlik (`==`) ve eşitsizlik (`!=`) işleçleri için, karşılaştırma sonucu iki işaretçinin aynı bellek konumuna erişip erişemeyeceğini belirtir. Diğer ilişkisel işleçler**\<**(, **>**, **\<**= ve **>**=) için, karşılaştırma sonucu, işaret edilen nesnelerin iki bellek adreslerinin göreli konumunu gösterir. İlişkisel işleçler yalnızca uzaklıkları Karşılaştır.
 
-   İşaretçi karşılaştırması, yalnızca aynı nesneye bölümleri için tanımlanır. Bir dizi üyeleri için işaretçiler başvuruda bulunursanız, karşılık gelen alt simgeleri, karşılaştırma karşılaştırma eşdeğerdir. İlk dizi öğesinin adresidir "değerinden" son öğenin adresi. Söz konusu olduğunda, daha sonra bildirilen Yapı üyeleri için işaretçiler "büyüktür" yapısı içinde bildirilen üye işaretçileri yapılardır. Aynı union üyelerinin işaretçileri eşit olur.
+   İşaretçi karşılaştırması yalnızca aynı nesnenin bölümleri için tanımlanır. İşaretçiler bir dizinin üyelerine başvurursanız, karşılaştırma karşılık gelen alt simgelerin karşılaştırmasına eşdeğerdir. İlk dizi öğesinin adresi, son öğenin adresinden "küçüktür" dır. Yapılar söz konusu olduğunda, daha sonra bildirildiği yapı üyelerine yönelik işaretçiler, yapıda daha önce belirtilen üyelerin "büyüktür" işaretçileridir. Aynı birleşimin üyelerine yönelik işaretçiler eşittir.
 
-- Bir işaretçi değeri sabit değerin 0 eşitlik için karşılaştırılabilir (`==`) ve eşitsizlik (`!=`). 0 değeri ile bir işaretçi, "null" bir işaretçi olarak adlandırılır; diğer bir deyişle, geçerli bir bellek konumuna işaret etmiyor.
+- Bir işaretçi değeri, eşitlik (`==`) veya eşitsizlik (`!=`) için 0 sabit değeriyle karşılaştırılabilir. 0 değerine sahip bir işaretçiye "null" işaretçisi denir; Yani, geçerli bir bellek konumunu işaret etmez.
 
-- Eşitlik işleçleri operatörler aynı kuralları izleyin, ancak ek olasılıklar izin ver: bir işaretçi değeri 0 olan sabit bir tam sayı ifade veya işaretçi karşılaştırılabilir `void`. İki işaretçileri hem null işaretçiyse, bunlar eşit olarak karşılaştırılır. Eşitlik işleçleri segment hem uzaklık karşılaştırın.
+- Eşitlik işleçleri, ilişkisel işleçlerle aynı kurallara uyar, ancak ek olasılıklara izin verir: bir işaretçi 0 değeri olan bir sabit integral ifadesiyle veya bir işaretçiyle karşılaştırılabilir `void`. İki işaretçinin ikisi de null işaretçilerdir, eşit olarak karşılaştırırlar. Eşitlik işleçleri hem segmenti hem de sapmayı karşılaştırır.
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örneklerde ilişkisel göstermek ve eşitlik işleçleri.
+Aşağıdaki örneklerde ilişkisel ve eşitlik işleçleri gösterilmektedir.
 
 ```C
 int x = 0, y = 0;
 if ( x < y )
 ```
 
-Çünkü `x` ve `y` olan eşittir ifadesi bu örnekte 0 değeri verir.
+Ve `x` `y` eşit olduğu için, bu örnekteki ifade 0 değerini verir.
 
 ```C
 char array[10];
@@ -75,7 +75,7 @@ for ( p = array; p < &array[10]; p++ )
     *p = '\0';
 ```
 
-Bu örnekte parça her öğeye ayarlar `array` boş karakter sabiti için.
+Bu örnekteki parça her öğesini `array` bir null karakter sabitine ayarlar.
 
 ```C
 enum color { red, white, green } col;
@@ -88,9 +88,9 @@ enum color { red, white, green } col;
    .
 ```
 
-Bu deyimler adlı bir numaralandırma değişken bildirimini `col` etiketiyle `color`. Herhangi bir zamanda bir numaralandırma kümenin öğelerini temsil eden bir tamsayı değeri 0, 1 veya 2, değişken içerebilir `color`: kırmızı, beyaz veya yeşil, sırasıyla. Varsa `col` 0 içeren zaman **varsa** deyimi yürütüldüğünde, bağlı herhangi bir deyim **varsa** yürütülecek.
+Bu deyimler etiketiyle `col` `color`adlı bir numaralandırma değişkeni bildirir. Herhangi bir zamanda, değişkeni, numaralandırma kümesinin `color`öğelerinden birini temsil eden 0, 1 veya 2 tamsayı değerini içerebilir: sırasıyla kırmızı, beyaz veya yeşil renk. If `col` deyimi yürütüldüğünde 0 içeriyorsa **if** **, öğesine** bağlı olarak herhangi bir deyim yürütülür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İlişkisel işleçler: \<, >, \<= ve > =](../cpp/relational-operators-equal-and-equal.md)<br/>
+[İlişkisel Işleçler: \<, >, \<= ve >=](../cpp/relational-operators-equal-and-equal.md)<br/>
 [Eşitlik İşleçleri: == ve !=](../cpp/equality-operators-equal-equal-and-exclpt-equal.md)

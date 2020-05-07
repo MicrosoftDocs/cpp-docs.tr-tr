@@ -16,16 +16,16 @@ ms.locfileid: "81328583"
 ---
 # <a name="exporting-functions-from-a-dll-by-ordinal-rather-than-by-name"></a>DLL'den İşlevleri Ad Yerine Sıraya Göre Dışarı Aktarma
 
-DLL'nizden işlevleri dışa aktarmanın en basit yolu, işlevleri ada göre dışa aktarmaktır. Örneğin, **__declspec(dllexport)** kullandığınızda ne olur. Ancak işlevleri ordinal ile dışa aktarabilirsiniz. Bu teknikle, **__declspec (dllexport)** yerine bir .def dosyası kullanmanız gerekir. Bir işlevin ordinal değerini belirtmek için,.def dosyasındaki işlev adına onun ordinal'ını ekle. Ordinals belirtme hakkında bilgi için [bkz.](exporting-from-a-dll-using-def-files.md)
+DLL 'nizden işlevleri dışarı aktarmanın en kolay yolu, adları ada göre dışarı aktarmanız. Bu, örneğin **__declspec (dllexport)** kullandığınızda meydana gelir. Ancak, işlevleri sıraya göre dışarı aktarabilirsiniz. Bu teknikle, **__declspec (dllexport)** yerine bir. def dosyası kullanmanız gerekir. Bir işlevin sıra değerini belirtmek için,. def dosyasındaki işlev adına sıra sayısını ekleyin. Sıra sayılarını belirtme hakkında bilgi için bkz [.. def dosyaları kullanarak dll 'Den dışarı aktarma](exporting-from-a-dll-using-def-files.md).
 
 > [!TIP]
-> DLL dosya boyutunu optimize etmek istiyorsanız, dışa aktarılan her işlevde **NONAME** özniteliğini kullanın. **NONAME** özniteliği ile, ordinals işlev adları yerine DLL dışa aktarma tablosunda depolanır. Birçok işlev dışa aktarıyorsanız, bu önemli bir tasarruf olabilir.
+> DLL 'nizin dosya boyutunu iyileştirmek istiyorsanız, her bir içe aktarılmış işlevde **noname** özniteliğini kullanın. **Noname** özniteliğiyle, sıra sayıları işlev adları yerine dll 'nin dışarı aktarma tablosunda depolanır. Birçok işlevi dışarı aktarıyorsanız bu çok önemli bir tasarruf olabilir.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Bir .def dosyası kullanın, böylece ordinal ile dışa aktarabiliyorum](exporting-from-a-dll-using-def-files.md)
+- [Ordinal 'e göre dışarı aktarmak için. def dosyası kullanın](exporting-from-a-dll-using-def-files.md)
 
-- [__declspec(dllexport) kullanın](exporting-from-a-dll-using-declspec-dllexport.md)
+- [__Declspec (dllexport) kullan](exporting-from-a-dll-using-declspec-dllexport.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

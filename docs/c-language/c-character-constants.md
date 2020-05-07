@@ -16,41 +16,41 @@ ms.locfileid: "62326306"
 ---
 # <a name="c-character-constants"></a>C Karakter Sabitleri
 
-"Karakter sabiti" tek bir karakter gösterilebilir karakter tek tırnak içinde kümesindeki kapsayan tarafından oluşturulur (**' '**). Karakter sabitleri karakterleri temsil etmek için kullanılan [yürütme karakter kümesi](../c-language/execution-character-set.md).
+Tek tırnak işaretleri (**' '**) içinde, gösterilemeyen bir karakter kümesinden tek bir karakter çevrelediği bir "karakter sabiti" oluşturulur. Karakter sabitleri, [yürütme karakter kümesindeki](../c-language/execution-character-set.md)karakterleri temsil etmek için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*karakter sabiti*: **'** *c karakter dizisi* **'**
+*karakter sabiti*: **'** *c-char-Sequence* **'**
 
-**L'** *c karakter dizisi* **'**
+**L '** *c-char-Sequence* **'**
 
-*c karakter dizisi*: *c char*
+*c-char-Sequence*: *c-char*
 
-*c karakter dizisi c-char*
+*c-char-Sequence c-char*
 
-*c karakter*: Herhangi bir üyesi kaynak karakter kümesi dışında tek tırnak işareti (**'**), ters eğik çizgi (**\\**), veya yeni satır karakteri
+*c-char*: tek tırnak işareti (**'**), ters eğik çizgi (**\\**) veya yeni satır karakteri dışında kaynak karakter kümesinin herhangi bir üyesi
 
 *kaçış sırası*
 
-*kaçış sırası*: *basit kaçış sırası*
+*kaçış dizisi*: *basit kaçış dizisi*
 
-*kaçış sırası sekizlik*
+*sekizlik-kaçış sırası*
 
-*onaltılık kaçış sırası*
+*onaltılı kaçış sırası*
 
-*Basit çıkış dizisi*: biri **\a \b \f \n \r \t \v**
+*basit kaçış dizisi*: bir **\a \b \f \n \r \t \v**
 
 **\\' \\" \\\ \\?**
 
-*kaçış sırası sekizlik*: **\\** *sekizlik basamak*
+*sekizlik-kaçış sırası*: **\\** *sekizlik basamak*  
 
-**\\**  *sekizlik basamak sekizlik basamak*
+**\\**  *sekizlik basamaklı sekizlik basamak*
 
-**\\**  *sekizlik basamak sekizlik basamak sekizlik basamak*
+**\\**  *sekizlik basamaklı sekizlik basamaklı sekizlik basamak*
 
-*onaltılık kaçış sırası*: **\x** *onaltılık basamak*
+*onaltılı kaçış dizisi*: **\x**  *onaltılı basamak*
 
-*onaltı basamaklı onaltılık kaçış sırası*
+*onaltılı kaçış dizisi onaltılı basamak*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

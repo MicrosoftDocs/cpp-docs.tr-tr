@@ -22,24 +22,24 @@ Bu bölümde, değişkenlerin, işlevlerin ve türlerin bildirimi ve başlatılm
 
 - [Depolama sınıfları](../c-language/c-storage-classes.md)
 
-- [Tür tanımlayıcıları](../c-language/c-type-specifiers.md)
+- [Tür belirticileri](../c-language/c-type-specifiers.md)
 
 - [Tür niteleyicileri](../c-language/type-qualifiers.md)
 
-- [Bildirimler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md)
+- [Bildirimciler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md)
 
-- [Daha karmaşık bildirimcileri yorumlama](../c-language/interpreting-more-complex-declarators.md)
+- [Daha karmaşık bildirimcilerin yorumlanması](../c-language/interpreting-more-complex-declarators.md)
 
-- [Başlatma](../c-language/initialization.md)
+- [Başlatılmasında](../c-language/initialization.md)
 
 - [Temel türleri depolama](../c-language/storage-of-basic-types.md)
 
-- [Eksik türler](../c-language/incomplete-types.md)
+- [Tamamlanmamış türler](../c-language/incomplete-types.md)
 
-- [TypeDef bildirimleri](../c-language/typedef-declarations.md)
+- [Typedef bildirimleri](../c-language/typedef-declarations.md)
 
-- [Genişletilmiş depolama sınıfı öznitelikler](../c-language/c-extended-storage-class-attributes.md)
+- [Genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Dil Başvurusu](../c-language/c-language-reference.md)
+[C dil başvurusu](../c-language/c-language-reference.md)

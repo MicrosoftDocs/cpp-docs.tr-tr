@@ -18,37 +18,37 @@ ms.locfileid: "81349610"
 
 **Microsoft'a Özgü**
 
-İfade, `try-finally` bir kod bloğunun yürütülmesi kesintiye uğradığında uygulamaların temizleme kodunun yürütülmesini garanti etmesini sağlayan C dilinin Microsoft uzantısıdır. Temizleme, bellek ayırma, dosyaları kapatma ve dosya tutamaçları serbest bırakma gibi görevlerden oluşur. İfade, `try-finally` özellikle rutinden erken dönüşe neden olabilecek bir hata için çek yapıldığı birkaç yeri olan yordamlar için yararlıdır.
+Bu `try-finally` ifade, bir kod bloğunun yürütülmesi kesintiye uğradığında uygulamaların Temizleme kodunu yürütmeyi garanti etmesini sağlayan C diline yönelik bir Microsoft uzantısıdır. Temizleme, bellek ayırmayı, dosyaları kapatmayı ve dosya tutamaçlarını serbest bırakmayı, bu görevlerden oluşur. Bu `try-finally` ifade özellikle, bir hatanın, zamanından önce geri dönememesine neden olabilecek birkaç yere sahip yordamlar için yararlıdır.
 
-*try-finally-statement*: **__try**  *bileşik deyimi*
+*try-finally-deyimin*: **__try**  *bileşik ifade*
 
-**__finally**  *bileşik deyimi*
+**__finally**  *bileşik ifade*
 
-Maddeden `__try` sonraki bileşik ifade korunan bölümdür. Yan tümceden `__finally` sonraki bileşik deyimi sonlandırma işleyicisidir. İşleyici, korunan bölüm çıkarKen, korunan bölümün bir özel durum (anormal sonlandırma) veya standart düşüş (normal sonlandırma) tarafından çıkarılıp çıkarılmadığını çalıştıran bir dizi eylem belirtir.
+`__try` Yan tümcesinden sonraki bileşik ifade, korunan bölümdür. `__finally` Yan tümcesinden sonraki bileşik ifade sonlandırma işleyicisidir. İşleyici, korunan bölüm çıkıldığında, korunan bölümün bir özel durum (olağan dışı sonlandırma) veya standart Fall (normal sonlandırma) tarafından çıkış yapıldığında yürütülen bir eylem kümesini belirtir.
 
-Denetim basit `__try` sıralı yürütme (üzerinden düşmek) tarafından bir ifadeulaşır. `__try` Denetim deyimi girdiğinde, ilişkili işleyicisi etkin olur. Yürütme aşağıdaki gibi devam eder:
+Denetim, basit `__try` sıralı yürütme (geçiş) ile bir ifadeye ulaşır. Denetim `__try` ifadeye girdiğinde, ilişkili işleyicisi etkin hale gelir. Yürütme aşağıdaki gibi devam eder:
 
 1. Korunan bölüm yürütülür.
 
 1. Sonlandırma işleyicisi çağrılır.
 
-1. Sonlandırma işleyicisi tamamlandığında, yürütme `__finally` deyimden sonra devam eder. Korunan bölümün nasıl sona ererdiklerinden bağımsız `goto` olarak (örneğin, korunan gövdeden `return` çıkan bir ifade yoluyla veya bir deyim le), denetim akışı korunan bölümden çıkmadan önce sonlandırma işleyicisi yürütülür.
+1. Sonlandırma işleyicisi tamamlandığında, yürütme `__finally` deyimden sonra devam eder. Korunan bölümün bitiş şeklinden bağımsız olarak (örneğin, korumalı `goto` gövdeden veya bir `return` deyimden bir deyimle), sonlandırma işleyicisi denetim akışı korunan bölümden ayrılmadan önce yürütülür.
 
-`__leave` Anahtar kelime bir `try-finally` deyim bloğu içinde geçerlidir. Etkisi `try-finally` bloğun `__leave` sonuna atlamaktır. Sonlandırma işleyicisi hemen yürütülür. Bir `goto` deyim aynı sonucu gerçekleştirmek için kullanılabilir, ancak bir `goto` deyim yığın gevşeme neden olur. Yığın `__leave` gevşeme içermediğinden deyim daha verimlidir.
+`__leave` Anahtar sözcüğü bir `try-finally` ekstre bloğunda geçerlidir. Öğesinin `__leave` etkisi, `try-finally` bloğun sonuna atlamanız. Sonlandırma işleyicisi hemen yürütülür. Aynı sonucu `goto` elde etmek için bir ifade kullanılabilse de, bir `goto` ifade yığın geri sarma oluşmasına neden olur. İfade `__leave` , yığın geri sarma içermediğinden daha etkilidir.
 
-Bir deyim `try-finally` veya `return` `longjmp` çalışma zamanı işlevi kullanarak bir deyim den çıkma anormal sonlandırma olarak kabul edilir. Bir `__try` açıklamaya atlamak yasadışı, ama birinden atlamak yasal. Kalkış `__finally` noktası ile hedef arasında etkin olan tüm ifadeler çalıştırılmalıdır. Buna "yerel gevşeme" denir.
+Bir `try-finally` `return` deyimin veya `longjmp` çalışma zamanı işlevinin kullanıldığı bir deyimden çıkmak olağan dışı sonlandırma olarak değerlendirilir. Bir `__try` ifadeye geçmek geçersizdir, ancak bunlardan biri atlanmak için geçerli değildir. Ayrılma `__finally` noktası ve hedefin hedefi arasında etkin olan tüm deyimler çalıştırılmalıdır. Buna "yerel geriye doğru izleme" adı verilir.
 
-Bir `try-finally` bildirim icra edilirken bir işlem öldürülürse sonlandırma işleyicisi çağrılmaz.
-
-> [!NOTE]
-> Yapılandırılmış özel durum işleme C ve C++ kaynak dosyalarıyla çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme mekanizması, her türlü özel durumları işleyebilir, çok daha esnektir.
+Bir işlem, bir `try-finally` deyimin yürütüldüğü sırada sonlandırılabilmesi durumunda sonlandırma işleyicisi çağrılmaz.
 
 > [!NOTE]
-> C++ programları için yapılandırılmış özel durum işleme yerine C++ özel durum işleme kullanılmalıdır. Daha fazla bilgi için *C++ Dil Başvurusu'nda* [Özel Durum Kullanımı'na](../cpp/exception-handling-in-visual-cpp.md) bakın.
+> Yapılandırılmış özel durum işleme C ve C++ kaynak dosyalarıyla birlikte çalışmaktadır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme mekanizması, herhangi bir türdeki özel durumları işleyebilmek için çok daha esnektir.
 
-İfadenin nasıl çalıştığını görmek için [deneme dışı deyiminin](../c-language/try-except-statement-c.md) örneğine bakın. `try-finally`
+> [!NOTE]
+> C++ programları için, yapılandırılmış özel durum işleme yerine C++ özel durum işleme kullanılmalıdır. Daha fazla bilgi için bkz. *C++ dil başvurusunda* [özel durum işleme](../cpp/exception-handling-in-visual-cpp.md) .
 
-**END Microsoft Özel**
+`try-finally` Deyimin nasıl çalıştığını görmek için [try-except ifadesinin](../c-language/try-except-statement-c.md) örneğine bakın.
+
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

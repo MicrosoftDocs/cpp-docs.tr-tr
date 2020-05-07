@@ -65,8 +65,8 @@ Dışarı aktarma sırasını yalnızca, bağlandığınız DLL bir modül tanı
 
 - [FreeLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary)
 
-- [DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma](exporting-from-a-dll-using-def-files.md)
+- [DEF dosyaları kullanarak DLL 'den dışarı aktarma](exporting-from-a-dll-using-def-files.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio 'daC++ C/dll oluşturma](dlls-in-visual-cpp.md)
+[Visual Studio 'da C/C++ dll 'Leri oluşturma](dlls-in-visual-cpp.md)

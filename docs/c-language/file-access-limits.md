@@ -11,7 +11,7 @@ ms.locfileid: "62233768"
 ---
 # <a name="file-access-limits"></a>Dosya Erişim Sınırları
 
-**ANSI 4.9.3** olup aynı dosyanın birden çok kez açılabilir
+**ANSI 4.9.3 &** Aynı dosyanın birden çok kez açılamayacağını belirtir
 
 Zaten açık olan bir dosyayı açmaya izin verilmez.
 

@@ -16,8 +16,8 @@ ms.locfileid: "81335076"
 Kaynak karakter kümesi, kaynak dosyalarında görünebilen geçerli karakterler kümesidir. Microsoft C için kaynak karakter kümesi, standart ASCII karakter kümesidir.
 
 > [!NOTE]
-> **Uyarı** Klavye ve konsol sürücüleri karakter kümesini yeniden eşlenebildiği için, uluslararası dağıtım ayarı için tasarlanmış programların Ülke/Bölge kodunu denetlemesi gerekir.
+> **Uyarı** Klavye ve konsol sürücüleri karakter kümesini yeniden eşleyebilir, ancak uluslararası dağıtım için tasarlanan programlar ülke/bölge kodunu denetlemelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter](../c-language/characters.md)
+[Karakterle](../c-language/characters.md)

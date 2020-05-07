@@ -21,9 +21,9 @@ ms.locfileid: "62232793"
 
 - [Kayan Nokta Değerlerinin Yetersiz Kalması](../c-language/underflow-of-floating-point-values.md)
 
-- [Fmod işlevi](../c-language/fmod-function.md)
+- [Fmod Işlevi](../c-language/fmod-function.md)
 
-- [Signal işlevi](../c-language/signal-function-c.md)
+- [Signal Işlevi](../c-language/signal-function-c.md)
 
 - [Varsayılan Sinyaller](../c-language/default-signals.md)
 
@@ -59,19 +59,19 @@ ms.locfileid: "62232793"
 
 - [Sıfır Bellek Ayırma](../c-language/allocating-zero-memory.md)
 
-- [Abort işlevi](../c-language/abort-function-c.md)
+- [Abort Işlevi](../c-language/abort-function-c.md)
 
-- [Atexit işlevi](../c-language/atexit-function-c.md)
+- [Atexit Işlevi](../c-language/atexit-function-c.md)
 
 - [Ortam Adları](../c-language/environment-names.md)
 
-- [System işlevi](../c-language/system-function.md)
+- [Sistem Işlevi](../c-language/system-function.md)
 
-- [Strerror işlevi](../c-language/strerror-function.md)
+- [Strerror Işlevi](../c-language/strerror-function.md)
 
 - [Saat dilimi](../c-language/time-zone.md)
 
-- [Clock işlevi](../c-language/clock-function-c.md)
+- [Clock Işlevi](../c-language/clock-function-c.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

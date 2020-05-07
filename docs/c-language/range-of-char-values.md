@@ -11,12 +11,12 @@ ms.locfileid: "81480900"
 ---
 # <a name="range-of-char-values"></a>char Değerleri Aralığı
 
-**ANSI 3.2.1.1** "Düz" **bir char** imzalı bir char veya **imzasız bir** **char** ile aynı değer aralığına sahip olup olmadığı
+**ANSI 3.2.1.1** "Düz" **char** 'ın **işaretli bir Char** veya **işaretsiz char** ile aynı değer aralığına sahip olup olmadığı
 
-İmzalanan tüm karakter değerleri -128 ile 127 arasında değişir. Tüm işaretsiz karakter değerleri –0 ile 255 arasında değişir.
+Tüm imzalı karakter değerleri-128 ile 127 arasında değişir. Tüm işaretsiz karakter değerleri –0 ile 255 arasında değişir.
 
-Derleyici **seçeneği, imzalı char'dan** **imzasız char'a**varsayılan türünü değiştirir. **char** [`/J`](../build/reference/j-default-char-type-is-unsigned.md)
+[`/J`](../build/reference/j-default-char-type-is-unsigned.md) Derleyici seçeneği, **imzalanmış karakter** olan **char** için varsayılan türü **işaretsiz char**olarak değiştirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter](../c-language/characters.md)
+[Karakterle](../c-language/characters.md)

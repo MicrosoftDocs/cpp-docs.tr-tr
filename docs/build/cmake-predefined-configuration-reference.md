@@ -11,32 +11,32 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "81322990"
 ---
-# <a name="cmake-predefined-build-configurations"></a>CMake önceden tanımlanmış yapı yapılandırmaları
+# <a name="cmake-predefined-build-configurations"></a>CMake önceden tanımlanmış derleme yapılandırması
 
 ::: moniker range="vs-2015"
 
-CMake projeleri Visual Studio 2017 ve sonrası desteklenir.
+CMake projeleri Visual Studio 2017 ve üzeri sürümlerde desteklenir.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
-Bir CMake projesinde, yapı yapılandırmaları bir CMakeSettings.json dosyasında depolanır. Ana araç çubuğundaki yapı yapılandırma açılır tarihinden **Yapılandırmaları Yönet'i** seçtiğinizde, Visual Studio'da bulunan varsayılan CMake yapılandırmalarını gösteren bir iletişim kutusu görüntülenir:
+CMake projesinde, derleme konfigürasyonları bir CMakeSettings. json dosyasında depolanır. Ana araç çubuğunda derleme yapılandırması açılır listesinden **yapılandırmaları Yönet** ' i seçtiğinizde, Visual Studio 'da kullanılabilen varsayılan CMake yapılandırmalarını gösteren bir iletişim kutusu görünür:
 
-- x86 Hata Ayıklama
-- x86 Yayın
-- x64 Hata Ayıklama
-- x64 Yayın
-- Linux-Hata Ayıklama
-- Linux-Sürüm
-- IoT Hata Ayıklama
-- IoT Yayın
-- MinGW Hata Ayıklama
-- MinGW Yayın
+- x86 hata ayıklama
+- x86 sürümü
+- x64 hata ayıklama
+- x64 sürümü
+- Linux-Hata Ayıkla
+- Linux-yayın
+- IoT hata ayıklaması
+- IoT yayını
+- MinGW hata ayıklama
+- MinGW sürümü
 
-Bir yapılandırma seçtiğinizde, projenin kök klasöründeki *CMakeSettings.json* dosyasına eklenir. Daha sonra projenizi oluşturmak için kullanabilirsiniz. Yapılandırma özellikleri hakkında daha fazla bilgi için [CMakeSettings başvurusuna](cmakesettings-reference.md)bakın.
+Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki *Cmakesettings. JSON* dosyasına eklenir. Daha sonra projenizi oluşturmak için bunu kullanabilirsiniz. Yapılandırma özellikleri hakkında daha fazla bilgi için bkz. [Cmakesettings Reference](cmakesettings-reference.md).
 
-## <a name="linux-predefined-build-configurations"></a>Linux önceden tanımlanmış yapı yapılandırmaları:
+## <a name="linux-predefined-build-configurations"></a>Linux önceden tanımlanmış derleme yapılandırması:
 
 ```json
 {
@@ -109,9 +109,9 @@ You can use these optional settings for more control:
 }
 ```
 
-Bu seçenekler, komutları bina dan önce ve sonra ve CMake oluşturmadan önce uzaktan sistemde çalıştırmanızı sağlar. Değerler uzak sistemde geçerli olan herhangi bir komut olabilir. Çıkış Visual Studio'ya geri iletilir.
+Bu seçenekler, oluşturmadan önce ve sonra ve CMake oluşturmadan önce uzak sistemdeki komutları çalıştırmanıza olanak sağlar. Değerler, uzak sistemde geçerli olan herhangi bir komut olabilir. Çıktı, Visual Studio 'ya geri gönderilir.
 
-## <a name="iot-predefined-build-configurations"></a>IoT önceden tanımlanmış yapı yapılandırmaları
+## <a name="iot-predefined-build-configurations"></a>IoT önceden tanımlanmış derleme yapılandırması
 
 ```json
 {
@@ -204,7 +204,7 @@ Bu seçenekler, komutları bina dan önce ve sonra ve CMake oluşturmadan önce 
     }
 ```
 
-## <a name="mingw-predefined-build-configurations"></a>MinGW önceden tanımlanmış yapı yapılandırmaları
+## <a name="mingw-predefined-build-configurations"></a>MinGW önceden tanımlanmış derleme yapılandırması
 
 ```json
 {
@@ -280,7 +280,7 @@ Bu seçenekler, komutları bina dan önce ve sonra ve CMake oluşturmadan önce 
     }
 ```
 
-## <a name="x86-64-predefined-build-configurations"></a>x86-64 önceden tanımlanmış yapı yapılandırmaları
+## <a name="x86-64-predefined-build-configurations"></a>x86-64 önceden tanımlanmış derleme yapılandırması
 
 ```json
     {
@@ -356,31 +356,31 @@ Bu seçenekler, komutları bina dan önce ve sonra ve CMake oluşturmadan önce 
 
 ::: moniker range="vs-2019"
 
-Bir CMake projesinde, yapı yapılandırmaları bir CMakeSettings.json dosyasında depolanır. Ana araç çubuğundaki yapı yapılandırma açılır tarihinden **Yapılandırmaları Yönet'i** seçtiğinizde, Visual Studio'da bulunan varsayılan CMake yapılandırmalarını gösteren bir iletişim kutusu görüntülenir:
+CMake projesinde, derleme konfigürasyonları bir CMakeSettings. json dosyasında depolanır. Ana araç çubuğunda derleme yapılandırması açılır listesinden **yapılandırmaları Yönet** ' i seçtiğinizde, Visual Studio 'da kullanılabilen varsayılan CMake yapılandırmalarını gösteren bir iletişim kutusu görünür:
 
-- x86 Hata Ayıklama
-- x86 Clang Hata Ayıklama
-- x86 Yayın
-- x86 Clang Yayın
-- x64 Hata Ayıklama
-- x64 Clang Hata Ayıklama
-- x64 Yayın
-- x64 Clang Yayın
-- Linux-Hata Ayıklama
-- Linux-Sürüm
-- Linux-Clang-Hata Ayıklama
-- Linux-Clang-Yayın
-- Varolan Önbellek (uzak)
-- Varolan Önbellek
-- MinGW Hata Ayıklama
-- MinGW Yayın
-- WSL Hata Ayıklama
-- WSL Sürümü
-- WSL Clang Hata Ayıklama
-- WSL Clang Yayın
+- x86 hata ayıklama
+- x86 Clang hata ayıklaması
+- x86 sürümü
+- x86 Clang sürümü
+- x64 hata ayıklama
+- x64 Clang hata ayıklaması
+- x64 sürümü
+- x64 Clang sürümü
+- Linux-Hata Ayıkla
+- Linux-yayın
+- Linux-Clang-hata ayıklama
+- Linux-Clang-yayın
+- Mevcut önbellek (uzak)
+- Mevcut önbellek
+- MinGW hata ayıklama
+- MinGW sürümü
+- WSL hata ayıklama
+- WSL sürümü
+- WSL Clang hata ayıklaması
+- WSL Clang sürümü
 - Clang
 
-Bir yapılandırma seçtiğinizde, projenin kök klasöründeki CMakeSettings.json dosyasına eklenir. Daha sonra projenizi oluşturmak için kullanabilirsiniz.
+Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki CMakeSettings. JSON dosyasına eklenir. Daha sonra projenizi oluşturmak için bunu kullanabilirsiniz.
 
 ```json
 {
@@ -698,7 +698,7 @@ Bir yapılandırma seçtiğinizde, projenin kök klasöründeki CMakeSettings.js
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da CMake Projeleri](cmake-projects-in-visual-studio.md)<br/>
+[Visual Studio 'da CMake projeleri](cmake-projects-in-visual-studio.md)<br/>
 [Linux CMake projesi yapılandırma](../linux/cmake-linux-project.md)<br/>
 [Uzak Linux bilgisayarınıza bağlanma](../linux/connect-to-your-remote-linux-computer.md)<br/>
 [CMake hata ayıklama oturumlarını yapılandırma](configure-cmake-debugging-sessions.md)<br/>

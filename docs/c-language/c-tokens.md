@@ -18,22 +18,22 @@ C kaynak programında, derleyici tarafından tanınan temel öğe "belirteçtir"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*belirteç*: *anahtar kelime*
+*belirteç*: *anahtar sözcük*
 
-*Tanımlayıcı*
+*Tanımlayıcısını*
 
-*Sabit*
+*sabit*
 
-*string-literal*
+*dize sabit değeri*
 
-*operator*
+*işlecinde*
 
-*noktalama*
+*noktalama işareti*
 
 > [!NOTE]
-> ANSI sözdizimi sözleşmelerinin açıklaması için [C Dili Sözdizimi Özeti'ne](../c-language/c-language-syntax-summary.md) giriş bölümüne bakın.
+> ANSI sözdizimi kurallarının açıklaması için [C dili sözdizimi özetine](../c-language/c-language-syntax-summary.md) giriş bölümüne bakın.
 
-Bu bölümde açıklanan anahtar sözcükler, tanımlayıcılar, sabitler, dize sabit değerleri ve işleçler belirteçlerin örnekleridir. Parantez (**[ ]**), parantez (**{ }**), parantez ( **( ) )** ) ) ve virgül ( , ) gibi noktalama karakterleri de belirteçlerdir.**,**
+Bu bölümde açıklanan anahtar sözcükler, tanımlayıcılar, sabitler, dize sabit değerleri ve işleçler belirteçlerin örnekleridir. Köşeli ayraç (**[]**), küme ayracı (**{}**), parantez ( **()** ) ve virgül (**,**) gibi noktalama karakterleri de belirteçlerdir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

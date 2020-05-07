@@ -1,5 +1,5 @@
 ---
-title: MFC'ye dinamik olarak bağlı normal MFC DLL'SİNİN modül durumları
+title: MFC 'ye dinamik olarak bağlı normal bir MFC DLL 'nin modül durumları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - regular MFC DLLs [C++], dynamically linked to MFC
@@ -15,19 +15,19 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65220587"
 ---
-# <a name="module-states-of-a-regular-mfc-dll-dynamically-linked-to-mfc"></a>MFC'ye dinamik olarak bağlı normal MFC DLL'SİNİN modül durumları
+# <a name="module-states-of-a-regular-mfc-dll-dynamically-linked-to-mfc"></a>MFC 'ye dinamik olarak bağlı normal bir MFC DLL 'nin modül durumları
 
-Oldukça karmaşık bazı yapılandırmalar dinamik olarak Normal MFC DLL, MFC DLL için bağlama yeteneği sağlar. Örneğin, Normal MFC DLL'SİNİN ve onu kullanan yürütülebilir dosya hem de dinamik olarak MFC DLL ve herhangi bir MFC uzantısı DLL'leri bağlayabilirsiniz.
+Normal bir MFC DLL 'yi MFC DLL 'ye dinamik olarak bağlama yeteneği, çok karmaşık olan bazı yapılandırmalara izin verir. Örneğin, normal bir MFC DLL ve bunu kullanan yürütülebilir dosya MFC DLL 'sine ve herhangi bir MFC uzantı dll 'Lerine dinamik olarak bağlanabilir.
 
-Bu yapılandırma geçerli bir işaretçi gibi MFC genel verileriyle ilgili bir sorun paylaşılmamasını `CWinApp` nesne ve tanıtıcı eşlemeleri.
+Bu yapılandırma, geçerli `CWinApp` nesneye yönelik işaretçi ve tanıtıcı HARITALARı gibi MFC genel verileriyle ilgili bir sorun doğurur.
 
-MFC sürüm 4.0 önce bu genel veri MFC DLL kendisini belgeler ve modülleri tarafından işlemde paylaşıldı. Bir Win32 DLL kullanan her işlem kendi DLL'nin verilerin kopyasını aldığından, bu düzen, işlem içi verileri izlemek için kolay bir yol sağlanır. Ayrıca, AFXDLL model olacağını yalnızca bir varsayılan olduğundan `CWinApp` nesne ve yalnızca bir dizi tanıtıcı eşlemeleri işleminde, bu öğeler, MFC DLL kendisini izlenebilir.
+MFC sürüm 4,0 ' den önce, bu genel veriler MFC DLL 'sinde yer alan ve işlemdeki tüm modüller tarafından paylaşılmıştı. Win32 DLL kullanan her işlem DLL verilerinin kendi kopyasını aldığından, bu düzen işlem başına verileri izlemenin kolay bir yolunu sağladı. Ayrıca, AFXDLL modeli işlemde yalnızca bir `CWinApp` nesne ve yalnızca bir dizi tanıtıcı eşlemesi olduğunu kabul ettiğinden, bu öğeler MFC DLL 'sinde izlenebilir.
 
-Ancak Normal MFC DLL'SİNİN MFC DLL için dinamik bağlama özelliği sayesinde, artık iki veya daha fazla olması mümkündür `CWinApp` nesneleri bir işlemde — ve ayrıca iki veya daha fazla tanıtıcı eşlemeleri kümesi. Nasıl MFC kullanması gerektiğini, hangilerinin izler mi?
+Ancak normal bir MFC DLL 'yi MFC DLL 'ye dinamik olarak bağlayabilme özelliği sayesinde, artık bir işlemde iki veya daha fazla `CWinApp` nesne ve ayrıca iki veya daha fazla tanıtıcı eşlemi kümesi olabilir. MFC hangi hangilerinin kullanılması gerektiğini nasıl izler?
 
-Çözüm, bu genel durum bilgilerini kendine ait kopyasını her Modülü (uygulama veya Normal MFC DLL'SİNİN) vermektir. Bu nedenle, bir çağrı **AfxGetApp** içinde Normal MFC DLL için bir işaretçi döndürür. `CWinApp` DLL'deki, bir yürütülebilir dosya değil. Bu modül başına kopya MFC genel veri Modül durumu olarak bilinir ve açıklanan [MFC Teknik Notu 58](../mfc/tn058-mfc-module-state-implementation.md).
+Çözüm, her modülün (uygulama veya normal MFC DLL) Bu genel durum bilgilerinin kendi kopyasını vermektir. Bu nedenle, normal MFC DLL içindeki **AfxGetApp** öğesine yapılan bir çağrı, çalıştırılabilir dosyada DEĞIL `CWinApp` , dll 'deki nesnesine bir işaretçi döndürür. MFC genel verilerinin modül başına bu kopyası, modül durumu olarak bilinir ve [MFC teknik not58](../mfc/tn058-mfc-module-state-implementation.md)' te açıklanmaktadır.
 
-Normal MFC DLL içinde uygulanan herhangi bir ileti işleyicileri endişelenmenize gerek kalmayacak şekilde MFC ortak pencere yordamını otomatik olarak doğru modülü durumuna geçer. Ancak, yürütülebilir dosyanın Normal MFC DLL'yi çağırdığında, açıkça geçerli modül durumunu bir DLL için ayarlamanız gerekir. Bunu yapmak için **AFX_MANAGE_STATE** her işlevde makrosu DLL'den dışarı. Bu, aşağıdaki kod satırını DLL'den dışarı aktarılan işlevlerin başına ekleyerek gerçekleştirilir:
+MFC ortak pencere yordamı otomatik olarak doğru modül durumuna geçer, bu nedenle normal MFC DLL 'niz üzerinde uygulanan herhangi bir ileti işleyicilerinde endişelenmeniz gerekmez. Ancak, çalıştırılabiliriniz normal MFC DLL 'sine çağırdığında, geçerli modül durumunu DLL için bir tane olarak ayarlamanız gerekir. Bunu yapmak için, DLL 'den aktarılmış her işlevde **AFX_MANAGE_STATE** makrosunu kullanın. Bu, DLL 'den aktarılmış işlevlerin başlangıcına aşağıdaki kod satırı eklenerek yapılır:
 
 ```
 AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
@@ -39,8 +39,8 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 
 - [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC uzantısı DLL’leri](extension-dlls-overview.md)
+- [MFC uzantı dll 'Leri](extension-dlls-overview.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)
+[Visual Studio 'da C/C++ dll 'Leri oluşturma](dlls-in-visual-cpp.md)

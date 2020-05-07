@@ -14,7 +14,7 @@ ms.locfileid: "62345168"
 ---
 # <a name="storage-class-specifiers-for-internal-level-declarations"></a>İç Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları
 
-Dört kullanabilirsiniz *depolama sınıfı tanımlayıcısı* terminaller iç düzeydeki değişken bildirimleri. Ne zaman atlarsanız *depolama sınıfı tanımlayıcısı* böyle bir bildirimden varsayılan depolama sınıfıdır **otomatik**. Bu nedenle, anahtar sözcüğü **otomatik** C programında nadiren görülür.
+İç düzeyde değişken bildirimleri için dört *depolama sınıfı Belirleyicisi* terminalden birini kullanabilirsiniz. Bu tür bir bildirimden *depolama sınıfı belirticisini* atlarsanız, varsayılan depolama sınıfı **Otomatik**olur. Bu nedenle, **Otomatik** anahtar sözcük bir C programında nadiren görülür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

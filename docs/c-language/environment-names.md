@@ -11,21 +11,21 @@ ms.locfileid: "62234133"
 ---
 # <a name="environment-names"></a>Ortam Adları
 
-**ANSI 4.10.4.4** ortam adları ve tarafından kullanılan ortam listesi değiştirilmesi için yöntem kümesi [getenv](../c-runtime-library/reference/getenv-wgetenv.md) işlevi
+**ANSI 4.10.4.4** Bir ortam adı kümesi ve [getenv](../c-runtime-library/reference/getenv-wgetenv.md) işlevi tarafından kullanılan ortam listesini değiştirme yöntemi
 
-Ortam adları kümesini sınırsızdır.
+Ortam adı kümesi sınırsızdır.
 
-Bir C programının içinden gelen ortam değişkenlerini değiştirmek için çağrı [_putenv](../c-runtime-library/reference/putenv-wputenv.md) işlevi. Windows komut satırında ortam değişkenlerini değiştirmek için SET komutunu kullanma (LIB gibi ayarlama D:\ = KİTAPLIKLAR).
+Bir C programının içinden ortam değişkenlerini değiştirmek için [_putenv](../c-runtime-library/reference/putenv-wputenv.md) işlevini çağırın. Windows 'daki komut satırından ortam değişkenlerini değiştirmek için SET komutunu kullanın (örneğin, LıB = D:\ olarak AYARLAYıN) LIBS).
 
-Yalnızca işletim sistemi komut kabuğu, konak kopyasını (cmd çalıştırıldığı sürece bir C programının kümeden ortam değişkenleri var EXE veya Command.COM'DUR). Örneğin, satır
+C programı içinden ayarlanan ortam değişkenleri, yalnızca işletim sistemi komut kabuğu 'nun ana bilgisayar kopyası çalıştırıldığı sürece bulunur (CMD. EXE veya COMMAND.COM). Örneğin, satır
 
 ```
 system( SET LIB = D:\LIBS );
 ```
 
-bir komut kabuğunu (cmd kopyasını çalıştırmanız EXE) LIB ortam değişkenini ayarlamak ve çıkma cmd ikincil kopyası C programına döndürür EXE. Bu kopyasını CMD'yi çıkılıyor EXE geçici ortam değişkeni LIB'e kaldırır.
+komut kabuğu 'nun bir kopyasını çalıştırır (CMD. EXE), LIB ortam değişkenini ayarlayın ve C programına geri dönüp CMD 'nin ikincil kopyasından çıkılıyor. EXE. CMD 'nin bu kopyasından çıkılıyor. EXE, LIB geçici ortam değişkenini kaldırır.
 
-Benzer şekilde, tarafından yapılan değişiklikleri `_putenv` yalnızca program sonlanana kadar son işlev.
+Benzer şekilde, `_putenv` işlev tarafından yalnızca program sonlanana kadar yapılan değişiklikler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

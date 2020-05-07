@@ -11,13 +11,13 @@ ms.locfileid: "81480862"
 ---
 # <a name="values"></a>Değerler
 
-**ANSI 3.1.2.5** Kayan nokta numaralarının çeşitli türlerinin gösterimleri ve değerleri kümeleri
+**ANSI 3.1.2.5** Çeşitli kayan nokta sayısı türlerinin temsilleri ve kümeleri
 
-**Şamandıra** türü 32 bit içerir: 1 işaret için, 8 üs için ve 23 mantis için. Aralığı +/- 3.4E38 ve en az 7 basamaklı hassasiyet.
+**Float** türü 32 bitleri içerir: işaret için 1, üs için 8 ve Mantis için 23. Aralığı en az 7 basamaklı duyarlığa sahip +/-3.4 E38.
 
-**Çift** tip 64 bit içerir: 1 işaret için, 11 üs için ve 52 mantis için. Aralığı +/- 1.7E308 ve en az 15 basamaklı hassasiyet.
+**Double** türü 64 bit: işaret için 1, üs için 11 ve mantis için 52 içerir. Aralığı en az 15 basamak duyarlıkla +/-1.7 E308.
 
-**Uzun çift** türü farklıdır, ancak Microsoft C derleyicisinde çift tiple aynı gösterime sahiptir. **double**
+**Long Double** türü farklıdır, ancak Microsoft C derleyicisinde **Double** türüyle aynı gösterimle sahiptir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

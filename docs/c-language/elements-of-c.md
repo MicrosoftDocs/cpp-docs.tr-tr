@@ -24,7 +24,7 @@ Aşağıdaki konular açıklanmaktadır:
 
 - [Açıklamalar](../c-language/c-comments.md)
 
-- [Anahtar Sözcükler](../c-language/c-keywords.md)
+- [Anahtar sözcükler](../c-language/c-keywords.md)
 
 - [Tanımlayıcılar](../c-language/c-identifiers.md)
 
@@ -34,10 +34,10 @@ Aşağıdaki konular açıklanmaktadır:
 
 - [Noktalama işaretleri ve özel karakterler](../c-language/punctuation-and-special-characters.md)
 
-Bu bölümde ayrıca [Trigraf](../c-language/trigraphs.md)için başvuru tabloları, [kayan nokta sabitleri](../c-language/limits-on-floating-point-constants.md), [C ve C++ tamsayı limitleri](../c-language/cpp-integer-limits.md)ve [kaçış dizileri](../c-language/escape-sequences.md)için sınırlamalar de bulunur.
+Bu bölümde ayrıca [Trigraf](../c-language/trigraphs.md)için başvuru tabloları, [kayan nokta sabitleri](../c-language/limits-on-floating-point-constants.md), [C ve C++ tamsayı sınırları](../c-language/cpp-integer-limits.md)ve [kaçış dizileri](../c-language/escape-sequences.md)için de yer verilmiştir.
 
 İşleçler, değerlerin nasıl yönetileceğini belirten simgelerdir (hem tek karakterler hem de karakter birleşimleri). Her simge, belirteç adı verilen tek bir birim olarak yorumlanır. Daha fazla bilgi için bkz. [işleçler](../c-language/c-operators.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Dil Başvurusu](../c-language/c-language-reference.md)
+[C dil başvurusu](../c-language/c-language-reference.md)

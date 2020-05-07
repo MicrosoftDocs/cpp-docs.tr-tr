@@ -13,9 +13,9 @@ ms.locfileid: "81480876"
 ---
 # <a name="truncation-of-floating-point-values"></a>Kayan Nokta Değerlerinin Kesilmesi
 
-**ANSI 3.2.1.4** Kayan nokta numarası daha dar kayan nokta sayısına dönüştürüldüğünde kesilme veya yuvarlama yönü
+**ANSI 3.2.1.4** Kayan noktalı sayı, daha dar bir kayan noktalı sayıya dönüştürüldüğünde kesilmesi veya yuvarlamanın yönü
 
-Bir alt akış oluştuğunda, kayan nokta değişkeninin değeri sıfıra yuvarlanır. Kayan noktanın yetersiz gelmesi, belirtilen iyileştirmelere bağlı olarak bir çalışma zamanı hatasına neden olabilir ve tahmin edilemeyen bir değer oluşturabilir.
+Bir yetersiz nokta oluştuğunda, kayan nokta değişkeninin değeri sıfıra yuvarlanır. Kayan noktanın yetersiz gelmesi, belirtilen iyileştirmelere bağlı olarak bir çalışma zamanı hatasına neden olabilir ve tahmin edilemeyen bir değer oluşturabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

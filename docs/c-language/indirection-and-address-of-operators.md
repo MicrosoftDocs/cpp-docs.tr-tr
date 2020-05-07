@@ -24,27 +24,27 @@ ms.locfileid: "64343891"
 ---
 # <a name="indirection-and-address-of-operators"></a>İşleçlerin Yöneltmesi ve Adresi
 
-Birli yöneltme işleci (__&#42;__) bir değere işaretçi aracılığıyla dolaylı olarak erişir. İşlenen bir işaretçi türü olmalıdır. İşlemin sonucu, işlenen tarafından ele alınan değerdir; yani işlenenin işaret ettiği adresteki değerdir. Sonucun türü, işlenenin ele aldığı türdür.
+Birli yöneltme işleci (__&#42;__) bir işaretçi aracılığıyla bir değere dolaylı olarak erişir. İşlenen bir işaretçi türü olmalıdır. İşlemin sonucu, işlenen tarafından ele alınan değerdir; yani işlenenin işaret ettiği adresteki değerdir. Sonucun türü, işlenenin ele aldığı türdür.
 
-Yöneltme işlecinin sonucu *türü* işlenenin türü ise *işaretçi türüne*. İşlenen bir işleve işaret ediyorsa, sonuç bir işlev göstergesidir. Bir nesneye işaret ediyorsa sonuç nesneyi gösteren bir lvalue olur.
+Terim türü *işaretçi*türünde ise, yöneltme işlecinin sonucu *tür* olur. İşlenen bir işleve işaret ediyorsa, sonuç bir işlev göstergesidir. Bir nesneye işaret ediyorsa, sonuç nesneyi atayan bir lvalue olur.
 
-İşaretçi değeri geçersizse, yöneltme işlecinin sonucu tanımsızdır. Bir işaretçi değerini geçersiz kılan en yaygın koşulların bazılarını şunlardır:
+İşaretçi değeri geçerli değilse, yöneltme işlecinin sonucu tanımsız olur. Bunlar, bir işaretçi değerini geçersiz kılan en yaygın koşulların bazılarıdır:
 
 - İşaretçi, bir null işaretçidir.
 
-- İşaretçi başvurusu zamanında bir nesnenin adresini (örneğin, bir nesne kapsam dışına gitti veya, serbest bırakılmış) yaşam süresi dolduktan sonra belirtir.
+- İşaretçi, geçerlilik süresinin sonundan sonra bir nesnenin adresini belirtir (örneğin, kapsam dışı olan veya serbest bırakılmış olan bir nesne gibi), başvuru sırasında.
 
 - İşaretçi, işaret edilen nesnenin türü için uygun olmayan bir şekilde hizalanmış bir adresi belirtir.
 
 - İşaretçi, yürütülen program tarafından kullanılmayan bir adresi belirtir.
 
-Birli adres işleci (**&**), işlenenin adresini verir. İşlenen, bildirilmemiş bir nesneyi gösteren bir ya da bir lvalue olmalıdır __kaydetme__ ve bir bit alanına ya da bir tekli sonucunu __&#42;__ işleci veya bir dizi başvurma (__&#91; &#93;__) işleci veya bir işlev göstergesi. Sonuç türünde *işaretçi türüne* türünde bir işlenen için *türü*.
+Birli adres işleci (**&**), işleneninin adresini verir. İşlenen, __kayıt__ bildirilmemiş ve bir bit alanı olmayan bir nesne ya da bir birli __&#42;__ işlecinin veya dizi başvuru (__&#91;&#93;__) işlecinin veya bir işlev göstergesinin sonucu olan bir lvalue olmalıdır. Sonuç *tür türü işleneni*için *tür işaretçisinin* türü.
 
-İşlenen bir tekli sonucunu ise __&#42;__ işleci, hiçbiri işleci değerlendirilir ve her ikisi de atlanmış gibi sonucudur. Sonuç bir lvalue değildir ve işleçler kısıtlamalar hala geçerlidir. İşlenen sonucunu ise bir __&#91; &#93;__ işleci, hiçbiri __&__ ya da birli işleç __&#42;__ tarafındankapsanan __&#91; &#93;__ işleci değerlendirilir. Sonuç kaldırma aynı etkiye sahip __&__ işleci ve değiştirme __&#91; &#93;__ işleci bir __+__ işleci. Aksi halde, sonuç nesne veya işlev işlenen tarafından belirlenen şekilde bir işaretçisidir.
+İşlenen, birli __&#42;__ işlecinin sonucudur, hiçbir işleç değerlendirilir ve sonuç her ikisi de atlanmış gibi olur. Sonuç bir lvalue değil ve işleçlere ilişkin kısıtlamalar hala geçerlidir. İşlenen bir __&#91;&#93;__ işlecinin sonucu ise, __&__ __&#91;&#93;__ işleci tarafından kapsanan işleç veya birli __&#42;__ değerlendirilir. Sonuç, __&__ işleci kaldırma ve __&#91;&#93;__ işlecini bir __+__ işleçle değiştirme ile aynı etkiye sahiptir. Aksi takdirde sonuç, işlenen tarafından atanan nesne veya işleve yönelik bir işaretçidir.
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekler, yaygın Bu bildirimler kullanılmaktadır:
+Aşağıdaki örnekler şu ortak bildirimleri kullanır:
 
 ```C
 int *pa, x;
@@ -52,25 +52,25 @@ int a[20];
 double d;
 ```
 
-Bu deyim adres işlecini kullanır (**&**) dizisinin altıncı öğesinin adresini almak için `a`. Sonuç işaretçi değişkeninde depolanır `pa`:
+Bu ifade, dizinin**&** `a`altıncı öğesinin adresini almak için Address-of işlecini () kullanır. Sonuç, işaretçi değişkeninde `pa`saklanır:
 
 ```C
 pa = &a[5];
 ```
 
-Yöneltme işleci (__&#42;__) erişmek için bu örnekte kullanılan `int` değeri depolanan adresteki `pa`. Değer tamsayı değişkenine atanır `x`:
+Bu örnekte, içinde__ __ `int` `pa`depolanan adresteki değere erişmek için yöneltme işleci (&#42;) kullanılır. Değer, tamsayı değişkenine `x`atanır:
 
 ```C
 x = *pa;
 ```
 
-Bu örnek, gösterir yöneltme işleci adresine sonucu `x` aynı `x`:
+Bu örnek, yöneltme işlecinin adresini `x` uygulamanın sonucunun ile `x`aynı olduğunu gösterir:
 
 ```C
 assert( x == *&x );
 ```
 
-Bu örnek için bir işleve işaretçi bildirme eşdeğer yöntemler gösterilmektedir:
+Bu örnek, bir işleve işaretçi bildirmesinin eşdeğer yollarını gösterir:
 
 ```C
 int roundup( void );     /* Function declaration */
@@ -84,5 +84,5 @@ assert( pround == proundup );
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yöneltme işleci:&#42;](../cpp/indirection-operator-star.md)<br/>
+[Yöneltme Işleci: &#42;](../cpp/indirection-operator-star.md)<br/>
 [Address-of İşleci: &](../cpp/address-of-operator-amp.md)

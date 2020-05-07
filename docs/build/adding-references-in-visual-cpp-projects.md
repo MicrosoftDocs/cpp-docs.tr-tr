@@ -1,5 +1,5 @@
 ---
-title: C++ Projelerdeki kitaplıkları ve bileşenleri kullanma
+title: C++ projelerinde kitaplıkları ve bileşenleri kullanma
 ms.date: 12/10/2018
 f1_keywords:
 - VC.Project.References
@@ -16,17 +16,17 @@ ms.locfileid: "80169961"
 ---
 # <a name="consuming-libraries-and-components"></a>Kitaplıkları ve bileşenleri kullanma
 
-Genellikle bir C++ projenin, statik kitaplık (. lib dosyaları), DLL, Windows çalışma zamanı BILEŞENI, com bileşeni veya .NET derlemesi gibi bir ikili dosyadaki işlevleri çağırması veya verilere erişmesi gerekir. Bu gibi durumlarda, projenin derleme zamanında bu ikiliyi bulabileceği şekilde yapılandırmasını sağlayabilirsiniz. Belirli adımlar projenizin türüne, ikili türüne ve ikilinin projenizle aynı çözümde oluşturulup oluşturulmadığına bağlıdır.
+Genellikle, bir C++ projesinin statik kitaplık (. lib dosyaları), DLL, Windows Çalışma Zamanı bileşeni, COM bileşeni veya .NET derlemesi gibi bir ikili dosyadaki işlevleri çağırması veya verilere erişmesi gerekir. Bu gibi durumlarda, projenin derleme zamanında bu ikiliyi bulabileceği şekilde yapılandırmasını sağlayabilirsiniz. Belirli adımlar projenizin türüne, ikili türüne ve ikilinin projenizle aynı çözümde oluşturulup oluşturulmadığına bağlıdır.
 
 ## <a name="consuming-libraries-downloaded-via-vcpkg"></a>Vcpkg aracılığıyla indirilen kitaplıkları kullanma
 
-**Vcpkg** paket yöneticisini kullanarak indirdiğiniz bir kitaplığı kullanmak için aşağıdaki yönergeleri yoksayabilirsiniz. Daha fazla bilgi için bkz. [vcpkg: Windows, Linux ve MacOS için C++ Paket Yöneticisi](vcpkg.md#integrate-with-visual-studio-windows) .
+**Vcpkg** paket yöneticisini kullanarak indirdiğiniz bir kitaplığı kullanmak için aşağıdaki yönergeleri yoksayabilirsiniz. Daha fazla bilgi için bkz. [vcpkg: Windows, Linux ve MacOS Için C++ Paket Yöneticisi](vcpkg.md#integrate-with-visual-studio-windows) .
 
 ## <a name="consuming-static-libraries"></a>Statik kitaplıkları kullanma
 
 Statik kitaplık projeniz aynı çözümde oluşturulmakta ise:
 
-1. #<a name="include-the-header-files-for-the-static-library-using-quotation-marks-in-a-typical-solution-the-path-will-start-with-library-project-name-intellisense-will-help-you-find-it"></a>tırnak işaretleri kullanarak statik kitaplık için üst bilgi dosyalarını ekleyin. Tipik bir çözümde yol `../<library project name>`başlar. IntelliSense onu bulmanıza yardımcı olur.
+1. #<a name="include-the-header-files-for-the-static-library-using-quotation-marks-in-a-typical-solution-the-path-will-start-with-library-project-name-intellisense-will-help-you-find-it"></a>tırnak işaretleri kullanarak statik kitaplık için üst bilgi dosyalarını ekleyin. Tipik bir çözümde yol ile `../<library project name>`başlar. IntelliSense onu bulmanıza yardımcı olur.
 2. Statik kitaplık projesine bir başvuru ekleyin. **Çözüm Gezgini** içindeki uygulama projesi düğümünün altında **Başvurular** ' a sağ tıklayın ve **Başvuru Ekle**' yi seçin.
 
 Statik kitaplık çözümün bir parçası değilse:
@@ -46,11 +46,11 @@ DLL, uygulama çözümünün bir parçası değilse, DLL dosyası, içe aktarıl
 
 ## <a name="com-objects"></a>COM nesneleri
 
-Yerel C++ UYGULAMANıZıN bir com nesnesini kullanması gerekiyorsa ve bu nesne *kayıtlıysa*, tek yapmanız gereken, CoCreateInstance ÇAĞRıSı yapın ve nesnenin CLSID 'sini geçirin. Sistem bunu Windows kayıt defterinde bulur ve yükler. Bir C++/CLI PROJESI bir com nesnesini aynı şekilde kullanabilir ya da başvuru **Ekle > com** listesinden buna bir başvuru ekleyerek ve [çalışma zamanında çağrılabilir sarmalayıcı](/dotnet/framework/interop/runtime-callable-wrapper)aracılığıyla tüketerek.
+Yerel C++ uygulamanızın bir COM nesnesini kullanması gerekiyorsa ve bu nesne *kayıtlıysa*, tüm yapmanız gereken, CoCreateInstance çağrısı yapın ve nesnenin CLSID 'sini geçirin. Sistem bunu Windows kayıt defterinde bulur ve yükler. Bir C++/CLı projesi bir COM nesnesini aynı şekilde kullanabilir ya da başvuru **ekle > com** listesinden buna bir başvuru ekleyerek ve [çalışma zamanında çağrılabilir sarmalayıcı](/dotnet/framework/interop/runtime-callable-wrapper)aracılığıyla tüketiyor olabilir.
 
 ## <a name="net-assemblies-and-windows-runtime-components"></a>.NET derlemeleri ve Windows Çalışma Zamanı bileşenleri
 
-UWP veya C++/CLI projelerinde, derleme veya bileşene bir *başvuru* ekleyerek .NET derlemelerini veya Windows çalışma zamanı bileşenlerini kullanırsınız. UWP veya **References** C++/CLI projesindeki başvurular düğümü altında, yaygın olarak kullanılan bileşenlere başvurular görürsünüz. **Başvuru yöneticisini** açmak ve sistem tarafından bilinen ek bileşenlere gözatmak için **Çözüm Gezgini** ' deki **Başvurular** düğümüne sağ tıklayın. Özel bir bileşenin bulunduğu herhangi bir klasöre gitmek için, **Gözden** geçirme düğmesine tıklayın. .NET derlemeleri ve Windows Çalışma Zamanı bileşenleri yerleşik tür bilgilerini içerdiğinden, kendi yöntemlerini ve sınıflarını sağ tıklayıp, **nesne tarayıcısı görüntüle '** yi seçerek görüntüleyebilirsiniz.
+UWP veya C++/CLı projelerinde, derleme veya bileşene bir *başvuru* ekleyerek .NET derlemelerini veya Windows çalışma zamanı bileşenlerini kullanırsınız. UWP veya C++/CLı projesindeki **Başvurular** düğümü altında, yaygın olarak kullanılan bileşenlere başvurular görürsünüz. **Başvuru yöneticisini** açmak ve sistem tarafından bilinen ek bileşenlere gözatmak için **Çözüm Gezgini** ' deki **Başvurular** düğümüne sağ tıklayın. Özel bir bileşenin bulunduğu herhangi bir klasöre gitmek için, **Gözden** geçirme düğmesine tıklayın. .NET derlemeleri ve Windows Çalışma Zamanı bileşenleri yerleşik tür bilgilerini içerdiğinden, kendi yöntemlerini ve sınıflarını sağ tıklayıp, **nesne tarayıcısı görüntüle '** yi seçerek görüntüleyebilirsiniz.
 
 ## <a name="reference-properties"></a>Başvuru özellikleri
 
@@ -80,9 +80,9 @@ ActiveX başvuru özellikleri yalnızca COM bileşenlerine yönelik başvurular 
 
    Başvurulan COM kitaplığından ya da ActiveX denetiminden birlikte çalışma derlemesini derlemek için kullanılan aracı görüntüler.
 
-### <a name="assembly-reference-properties-ccli"></a>Bütünleştirilmiş kod başvuru özellikleriC++(/CLI)
+### <a name="assembly-reference-properties-ccli"></a>Bütünleştirilmiş kod başvuru özellikleri (C++/CLı)
 
-Derleme başvurusu özellikleri yalnızca C++/clı projelerinde .NET Framework bütünleştirilmiş kodlara yapılan başvurular için kullanılabilir. Bu özellikler yalnızca **Başvurular** bölmesinde bir .NET Framework derlemesi seçildiğinde görüntülenir. Özellikler değiştirilemez.
+Bütünleştirilmiş kod başvuru özellikleri yalnızca C++/CLı projelerinde .NET Framework derlemelerine yapılan başvurular için kullanılabilir. Bu özellikler yalnızca **Başvurular** bölmesinde bir .NET Framework derlemesi seçildiğinde görüntülenir. Özellikler değiştirilemez.
 
 - **Göreli yol**
 
@@ -96,7 +96,7 @@ Aşağıdaki özellikler çeşitli türlerde başvurularda kullanılabilir. Bunl
 
    Başvurulan derlemenin derleme sırasında hedef konuma otomatik olarak kopyalanıp kopyalanmayacağını belirtir.
 
-- **Yerel uydu derlemelerini (C++/CLI) Kopyala**
+- **Yerel uydu derlemelerini kopyalama (C++/CLı)**
 
    Başvurulan derlemenin uydu derlemelerinin derleme sırasında hedef konuma otomatik olarak kopyalanıp kopyalanmayacağını belirtir. Yalnızca yereli **Kopyala** **doğru**ise kullanılır.
 
@@ -128,7 +128,7 @@ Aşağıdaki özellikler COM ve .NET derleme başvurularında bulunur ve değiş
 
    Başvurulan derleme için derleme adını görüntüler.
 
-- **Ayarı**
+- **Culture (Kültür)**
 
    Seçili başvurunun kültürünü görüntüler.
 
@@ -136,7 +136,7 @@ Aşağıdaki özellikler COM ve .NET derleme başvurularında bulunur ve değiş
 
    Seçili başvurunun açıklamasını görüntüler.
 
-- **Tam yol**
+- **Tam Yol**
 
    Başvurulan derlemenin dizin yolunu görüntüler.
 
@@ -144,11 +144,11 @@ Aşağıdaki özellikler COM ve .NET derleme başvurularında bulunur ve değiş
 
    .NET Frameworkassemblies için tam yolu görüntüler. COM bileşenleri için GUID 'yi görüntüler.
 
-- **Etiket**
+- **Etiketle**
 
    Başvurunun etiketini görüntüler.
 
-- **Ad**
+- **Adı**
 
    Başvurunun adını görüntüler.
 
@@ -158,7 +158,7 @@ Aşağıdaki özellikler COM ve .NET derleme başvurularında bulunur ve değiş
 
 - **Tanımlayıcı ad**
 
-   başvurulan derlemenin tanımlayıcı adı varsa `true`. Tanımlayıcı adlı bütünleştirilmiş kod benzersiz bir şekilde sürümü oluşturulmuş.
+   `true`başvurulan derlemenin tanımlayıcı bir adı varsa. Tanımlayıcı adlı bütünleştirilmiş kod benzersiz bir şekilde sürümü oluşturulmuş.
 
 - **Sürüm**
 
@@ -166,5 +166,5 @@ Aşağıdaki özellikler COM ve .NET derleme başvurularında bulunur ve değiş
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++Proje özellik sayfası başvurusu](reference/property-pages-visual-cpp.md)<br>
+[C++ proje özellik sayfası başvurusu](reference/property-pages-visual-cpp.md)<br>
 [Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama](working-with-project-properties.md)

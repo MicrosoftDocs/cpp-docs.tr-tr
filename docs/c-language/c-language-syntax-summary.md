@@ -23,4 +23,4 @@ Bu bölüm C dili ve Microsoft'a özgü C dili özelliklerinin tam açıklaması
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Dil Referansı](../c-language/c-language-reference.md)
+[C dil başvurusu](../c-language/c-language-reference.md)

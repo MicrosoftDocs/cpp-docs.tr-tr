@@ -1,17 +1,23 @@
-# <a name="visual-studio-2017-documentation-for-visual-c"></a>Visual C++ için Visual Studio 2017 belgeleri
+---
+ms.openlocfilehash: 69468f9ebbfaed62fd2148a634d16057519323f5
+ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "82850333"
+---
+# <a name="visual-studio-documentation-for-microsoft-c"></a>Microsoft C++ için Visual Studio belgeleri
 
-Hoş Geldiniz! Bu depo, iş ilerleme-Visual C++ teknik belgeler için kaynak dosyaları içerir. Konular yayımlanan [Visual C++ belge sitesine](https://docs.microsoft.com/cpp).
+Hoş geldiniz! Bu depo, süren iş Microsoft C++ (MSVC veya Visual C++) Teknik belgelerinin kaynak dosyalarını içerir. Makaleler [Visual Studio belge sitesinde C++](https://docs.microsoft.com/cpp)' da yayımlanır.
 
-Bu depo, 23 Haziran 2017'de MicrosoftDocs/cpp-docs-pr Microsoft/vcppdocs taşındı.
+Visual Basic ve Visual C# belgeleri [https://github.com/dotnet/core-docs](https://github.com/dotnet/core-docs)' de ayrı bir depoda bulunur ve Visual Studio belgeleri konumunda [https://github.com/Microsoft/visualstudio-docs](https://github.com/Microsoft/visualstudio-docs)bulunan depoda bulunur.
 
-Visual Basic ve Visual belgelerini C# ayrı bir deponun bulunur [ http://github.com/dotnet/core-docs ](http://github.com/dotnet/core-docs), ve Visual Studio 2017 belgeleri konumundaki deposunda bulunan [ http://github.com/Microsoft/visualstudio-docs ](http://github.com/Microsoft/visualstudio-docs).
+## <a name="contributing-to-the-documentation"></a>Belgelere katkıda bulunma
 
-## <a name="contributing-to-the-documentation"></a>Bir belgeye katkıda
+MSVC docs 'ı geliştirmemize yardımcı olmak için katkılarınız için hoş geldiniz. Docs.microsoft.com 'e katkıda bulunmak için kapsamlı bir kılavuz için [Microsoft docs katkıda bulunan kılavuzuna genel bakış](https://docs.microsoft.com/contribute)bölümüne bakın. MSVC belgelerine nasıl katkı yapılacağı hakkında ayrıntılı bilgi için bkz. [katkıda bulunan Kılavuzu](CONTRIBUTING.md).
 
-Biz, Visual C++ belgeleri geliştirmemize yardımcı olmak üzere Katkılarınızı Hoş Geldiniz. Docs.microsoft.com'a katkıda bulunan için kapsamlı kılavuzu için lütfen bkz [Microsoft Docs katkıda bulunan Kılavuzu Genel Bakış](https://docs.microsoft.com/contribute). Visual C++ belgelerinin katkısı yapma hakkında ayrıntılı bilgi için lütfen bkz [katkıda Kılavuzu](CONTRIBUTING.md).
+MSVC 'in birçok özellik alanı, C++ standart kitaplığı 'ndaki makaleler `standard-library` Için, Visual Studio etkileşimli geliştirme ORTAMıNDA (IDE) c++ özel `ide` makaleler için, vb. gibi, bu depodaki kendi klasörlerine sahiptir. Her `/media` klasörün alt klasörü, makalelerin resim dosyalarını içerir. [Katkıda bulunan kılavuzda](CONTRIBUTING.md) daha fazla bilgi bulunur.
 
-Bu depoda kendi klasörlerine Visual C++, çeşitli özellik alanları gibi sahip `standard-library` konularıyla ilgili, C++ Standart Kitaplığı için `ide` C++ özel konular Visual Studio etkileşimli bir geliştirme ortamı (IDE) ve benzeri için. `/media` Her klasöründeki alt konuları resim dosyalarını içerir. [Katkıda Kılavuzu](CONTRIBUTING.md) daha fazla bilgi bulunur.
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Açık Kaynak Kullanım Kuralları
 
-## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft açık kaynak kullanım kuralları
-
-Bu proje başlamıştır [Microsoft açık kaynak kullanım şartları](https://opensource.microsoft.com/codeofconduct/). Daha fazla bilgi için [Kullanım Kuralları SSS](https://opensource.microsoft.com/codeofconduct/faq/) sayfasına bakın. Başka sorularınız ya da yorumlarınız varsa bunları [opencode@microsoft.com](mailto:opencode@microsoft.com) adresine gönderebilirsiniz.
+Bu proje [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/) (Microsoft Açık Kaynak Kullanım Kuralları) belgesinde listelenen kurallara uygundur. Daha fazla bilgi için bkz. [kullanım KURALLARı SSS](https://opensource.microsoft.com/codeofconduct/faq/) veya ek soru [opencode@microsoft.com](mailto:opencode@microsoft.com) veya açıklamalarla iletişim kurma.

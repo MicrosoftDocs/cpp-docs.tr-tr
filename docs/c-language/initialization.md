@@ -16,10 +16,10 @@ ms.locfileid: "62232912"
 ---
 # <a name="initialization"></a>Başlatma
 
-"Başlatıcı" bir değer ya da bildirilen değişkenin atanacak değerleri dizisi ' dir. Bildirimci Değişken bildiriminde bir başlatıcı uygulayarak bir başlangıç değeri için bir değişken ayarlayabilirsiniz. Değeri veya değerleri başlatıcının değişkenine atanır.
+"Başlatıcı", bildirildiği değişkene atanacak bir değer veya değerler dizisidir. Değişken bildiriminde bildirimci için bir başlatıcı uygulayarak bir değişkeni başlangıç değerine ayarlayabilirsiniz. Başlatıcının değeri veya değerleri değişkenine atanır.
 
-Aşağıdaki bölümlerde, değişkenlerini başlatmak üzere nasıl [skaler](../c-language/initializing-scalar-types.md), [toplama](../c-language/initializing-aggregate-types.md), ve [dize](../c-language/initializing-strings.md) türleri. "Skaler türleri" tüm aritmetik türüne ek olarak işaretçiler içerir. "Toplama türleri", diziler, yapılar ve birleşimler içerir.
+Aşağıdaki bölümlerde, [skaler](../c-language/initializing-scalar-types.md), [toplama](../c-language/initializing-aggregate-types.md)ve [dize](../c-language/initializing-strings.md) türleri değişkenlerinin nasıl başlatıldığı açıklanır. "Skaler türler" tüm aritmetik türleri ve işaretçiler içerir. "Toplam türler" diziler, yapılar ve birleşimler içerir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Türler](../c-language/declarations-and-types.md)
+[Bildirimler ve türler](../c-language/declarations-and-types.md)

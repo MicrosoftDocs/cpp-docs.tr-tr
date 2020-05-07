@@ -11,9 +11,9 @@ ms.locfileid: "64343104"
 ---
 # <a name="remainders"></a>Kalanlar
 
-**ANSI 3.3.5** kalan tamsayı bölme üzerinde oturum açma
+**ANSI 3.3.5** Kalan tamsayı bölümünün işareti
 
-Kalan oturum bölünen işareti ile aynıdır. Örneğin,
+Kalanın işareti, bölünme işaretiyle aynıdır. Örneğin,
 
 ```
 50 / -6 == -8

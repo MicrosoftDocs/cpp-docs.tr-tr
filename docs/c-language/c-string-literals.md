@@ -15,33 +15,33 @@ ms.locfileid: "67400580"
 ---
 # <a name="c-string-literals"></a>C Dize Değişmez Değerleri
 
-Bir "dize sabit değeri" kaynak karakter çift tırnak işaretleri içindeki karakter dizisidir ( **""** ). Dize değişmez değerleri kullanılan bir dizi temsil etmek için bu karakterleri, birlikte ele alındığında, null ile sonlandırılmış bir dize oluşturur. Her zaman geniş dize değişmez değerleri harfiyle koymalısınız **L**.
+"Dize sabit değeri", kaynak karakter kümesindeki, çift tırnak işaretleri (**""**) içine alınmış bir karakter dizisidir. Dize sabit değerleri, birlikte alınan bir karakter dizisini göstermek için kullanılır, null ile sonlandırılmış bir dize oluşturur. Geniş dize sabit değerlerini her zaman **L**harfiyle önekle sağlamalısınız.
 
 ## <a name="syntax"></a>Sözdizimi
 
 *dize sabit değeri*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **"** *s karakter dizisi*<sub>iyileştirilmiş</sub> **"**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**L"** *s karakter dizisi*<sub>iyileştirilmiş</sub> **"**
+&nbsp;&nbsp;&nbsp;&nbsp;**"** *s-char-Sequence*<sub>opt</sub> **"**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**L "** *s-char-Sequence*<sub>opt</sub> **"**
 
-*s karakter dizisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*s char*
+*s-char-Sequence*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*s-char*
 
-&nbsp;&nbsp;&nbsp;&nbsp;*s karakter dizisi* *s char*
+&nbsp;&nbsp;&nbsp;&nbsp;*s-Char-dizi* *s-char*
 
-*s char*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;herhangi bir üyesi kaynak karakter kümesi çift tırnak işareti dışında ("), ters eğik çizgi (\\), veya yeni satır karakteri
+*s-char*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Çift tırnak işareti ("), ters eğik çizgi (\\) veya yeni satır karakteri dışında kaynak karakter kümesinin herhangi bir üyesi
 
 &nbsp;&nbsp;&nbsp;&nbsp;*kaçış sırası*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki örnek, basit bir dize sabit değeri verilmiştir:
+Aşağıdaki örnekte basit bir dize sabit değeri verilmiştir:
 
 ```C
 char *amessage = "This is a string literal.";
 ```
 
-Tüm çıkış kodları listelenir [kaçış dizileri](../c-language/escape-sequences.md) tablo dize değişmez değerleri geçerlidir. Bir dize sabit değerinde çift tırnak işareti temsil etmek için kaçış sırasını kullanın  **\\"** . Tek tırnak işareti ( **'** ) çıkış sırası olmadan temsil edilebilir. Ters eğik çizgi ( **\\** ) ikinci bir ters eğik çizgiyle gelmelidir ( **\\\\** ) bir dize içinde olduğunda görünür. Ters eğik çizgi bir satırın sonunda göründüğünde, her zaman bir satır devamlılığı karakteri yorumlanır.
+[Kaçış dizileri](../c-language/escape-sequences.md) tablosunda listelenen tüm kaçış kodları dize sabit değerlerinde geçerlidir. Bir dize sabit değerinde çift tırnak işareti göstermek için, kaçış sırasını ** \\kullanın "**. Tek tırnak işareti (**'**), kaçış sırası olmadan gösterilebilir. Ters eğik çizgi**\\**(), bir dize içinde göründüğünde ikinci bir**\\**ters eğik çizgi () ile birlikte gelmelidir. Bir çizginin sonunda ters eğik çizgi göründüğünde, her zaman bir satır devamlılık karakteri olarak yorumlanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

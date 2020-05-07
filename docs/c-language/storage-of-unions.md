@@ -15,7 +15,7 @@ ms.locfileid: "62157935"
 ---
 # <a name="storage-of-unions"></a>Birleşimler Deposu
 
-Birleşim değişkenini ile ilişkili depolama, en büyük birleşim üyesi için gerekli olan depolamadır. Daha küçük bir üye depolandığında, birleşim değişkenini kullanılmayan bellek alanı içerebilir. Tüm üyeleri aynı bellek alanı depolanır ve aynı adresinde başlatın. Depolanan değeri farklı bir üye için bir değer atanır her seferinde üzerine yazılır. Örneğin:
+Birleşim değişkeniyle ilişkili depolama alanı, birleşimin en büyük üyesi için gereken depolama alanı. Daha küçük bir üye depolandığında, UNION değişkeni kullanılmamış bellek alanı içerebilir. Tüm üyeler aynı bellek alanında depolanır ve aynı adresle başlatılır. Her bir değer farklı bir üyeye atandığında depolanan değerin üzerine yazılır. Örneğin:
 
 ```
 union         /* Defines a union named x */
@@ -25,7 +25,7 @@ union         /* Defines a union named x */
 } x;
 ```
 
-Üyeleri `x` işaretçisi, bildirim sırasına göre birleşim olan bir `char` değeri bir `char` değer ve bir dizi **float** değerleri. Depolama için ayrılan `x` 20 öğe dizisi için gerekli depolama `f`, bu yana `f` birleşim en uzun bir üyesidir. Hiçbir etiket birleşimi ile ilişkili olduğundan, adlandırılmamış ya da "anonim" türü
+`x` Birleşimin üyeleri, bildirimleri sırasıyla, bir `char` değer işaretçisi, bir `char` değer ve bir **float** değerleri dizisi olarak bulunur. İçin `x` ayrılan depolama alanı, birleşimin en uzun üyesi `f` `f` olduğundan, 20 öğeli dizi için gereken depolama alanı. Birleşim ile ilişkili etiket olmadığından, türü adlandırılmamış veya "anonim" olur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

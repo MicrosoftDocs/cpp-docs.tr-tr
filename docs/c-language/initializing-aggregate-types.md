@@ -22,12 +22,12 @@ ms.locfileid: "62326085"
 ## <a name="syntax"></a>Sözdizimi
 
 *Başlatıcı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;toplu başlatma için **{** *Başlatıcı-listesi* **}** /*    \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **{**  *Başlatıcı-listesi*  **,}**
+&nbsp;&nbsp;&nbsp;&nbsp;toplu başlatma için **{***Başlatıcı-listesi***}** /*    \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**{**  *Başlatıcı-listesi*  **,}**
 
 *Başlatıcı-Liste*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*izer*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Başlatıcı listesi* **,** *Başlatıcı*
+&nbsp;&nbsp;&nbsp;&nbsp;*Başlatıcı-Liste*  **,**  *Başlatıcı*
 
 *Başlatıcı listesi* , virgülle ayrılmış başlatıcıların bir listesidir. Listedeki her başlatıcı sabit bir ifade ya da Başlatıcı listesidir. Bu nedenle, başlatıcı listeleri iç içe olabilir. Bu form, bu bölümdeki örneklerde gösterildiği gibi, bir toplama türünün toplam üyelerini başlatmak için yararlıdır. Ancak, bir otomatik tanımlayıcının başlatıcısı tek bir ifadesiyse, sabit bir ifade olması gerekmez; yalnızca tanımlayıcıya atama için uygun türe sahip olması gerekir.
 
@@ -35,7 +35,7 @@ Her başlatıcı listesi için, sabit ifadelerin değerleri, toplama değişkeni
 
 *Başlatıcı listesi* , bir toplama türünden daha az değere sahipse, kalan Üyeler veya toplama türünün öğeleri 0 olarak başlatılır. Açıkça başlatılmamış bir otomatik tanımlayıcının ilk değeri tanımsız. *Başlatıcı listesi* , bir toplama türünden daha fazla değere sahipse bir hata oluşur. Bu kurallar, her gömülü Başlatıcı listesi için ve toplama için de geçerlidir.
 
-Bir yapının Başlatıcısı aynı türdeki bir ifadedir veya küme ayraçları ( **{}** ) içine alınmış Üyeler için bir başlatıcı listesi olur. Adlandırılmamış bit alanı üyeleri başlatılmaz.
+Bir yapının Başlatıcısı aynı türdeki bir ifadedir veya küme ayraçları (**{}**) içine alınmış Üyeler için bir başlatıcı listesi olur. Adlandırılmamış bit alanı üyeleri başlatılmaz.
 
 Bir UNION başlatıldığında, *Başlatıcı listesi* tek bir sabit ifade olmalıdır. Sabit ifadenin değeri, birleşimin ilk üyesine atanır.
 
@@ -49,9 +49,9 @@ int x[ ] = { 0, 1, 2 }
 
 Ancak boyutu belirtir ve yanlış sayıda başlatıcıya sahipseniz, derleyici bir hata oluşturur.
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Bir dizi için en büyük boyut **size_t**tarafından tanımlanır. STDDEF başlık dosyasında tanımlanmıştır. H, **size_t** `unsigned int` , 0x00000000 ile 0x7CFFFFFF arasındadır.
+Bir dizi için en büyük boyut, **size_t**tarafından tanımlanır. STDDEF başlık dosyasında tanımlanmıştır. H, **size_t** 0x00000000 `unsigned int` Ile 0x7CFFFFFF arasındadır.
 
 **SON Microsoft 'a özgü**
 
@@ -103,7 +103,7 @@ Bu örnekte, `nlist` 2-3 yapıların dizi olarak bildirildiği, her yapının ü
 
 1. İkinci sol ayraç, öğesinin `nlist[0]` ilk toplama üyesini (yani, ' deki `nlist[0][0]`yapıyı) başlatmanın başladığını gösterir.
 
-1. İlk sağ küme ayracı yapının `nlist[0][0]`başlatılmasını sonlandırır; sonraki sol ayraç, öğesinin `nlist[0][1]`başlatılmasına başlar.
+1. İlk sağ ayraç yapının `nlist[0][0]`başlatılmasını sonlandırır; sonraki sol ayraç başlatması başlatılır `nlist[0][1]`.
 
 1. İşlem satırın sonuna kadar devam eder; burada sağ sağ ayraç, ' ın `nlist[0]`başlatılma işlemini sonlandırır.
 
@@ -117,7 +117,7 @@ triplet nlist[2][3] =  /* THIS CAUSES AN ERROR */
 };
 ```
 
-Bu yapıta, 1. satırdaki ilk sol ayraç, üç yapının dizisi olan `nlist[0]`' nin başlatılmasına başlar. 1, 2 ve 3 değerleri, ilk yapının üç üyesine atanır. Sonraki sağ küme ayracı ile karşılaşıldığında (3. değerden sonra), başlatma `nlist[0]` tamamlanmıştır ve üç yapıda dizideki kalan iki yapı otomatik olarak 0 olarak başlatılır. Benzer şekilde `{ 4,5,6 }` , ikinci `nlist`satırındaki ilk yapıyı başlatır. Öğesinin `nlist[1]` kalan iki yapısı 0 olarak ayarlanır. Derleyici bir sonraki Başlatıcı listesi ( `{ 7,8,9 }` ) ile karşılaştığında başlatmaya `nlist[2]`çalışır. Bu `nlist` yana yalnızca iki satır içerdiğinden, bu deneme hataya neden olur.
+Bu yapıta, 1. satırdaki ilk sol ayraç, üç yapının dizisi olan `nlist[0]`' nin başlatılmasına başlar. 1, 2 ve 3 değerleri, ilk yapının üç üyesine atanır. Sonraki sağ küme ayracı ile karşılaşıldığında (3. değerden sonra), başlatma `nlist[0]` tamamlanmıştır ve üç yapıda dizideki kalan iki yapı otomatik olarak 0 olarak başlatılır. Benzer şekilde `{ 4,5,6 }` , ikinci satırındaki ilk yapıyı başlatır `nlist`. Öğesinin `nlist[1]` kalan iki yapısı 0 olarak ayarlanır. Derleyici bir sonraki Başlatıcı listesi ( `{ 7,8,9 }` ) ile karşılaştığında başlatmaya `nlist[2]`çalışır. Bu `nlist` yana yalnızca iki satır içerdiğinden, bu deneme hataya neden olur.
 
 Bu sonraki örnekte, öğesinin `int` `x` üç üyesi sırasıyla 1, 2 ve 3 olarak başlatılır.
 
@@ -134,7 +134,7 @@ struct list
       };
 ```
 
-Yukarıdaki yapıda, öğesinin `m` ilk satırındaki üç öğe 4,0 olarak başlatılır; kalan satırının `m` öğeleri varsayılan olarak 0,0 olarak başlatılır. `list`
+Yukarıdaki `list` yapıda, öğesinin `m` ilk satırındaki üç öğe 4,0 olarak başlatılır; kalan satırının `m` öğeleri varsayılan olarak 0,0 olarak başlatılır.
 
 ```C
 union
@@ -152,4 +152,4 @@ Bu örnekteki UNION `y`değişkeni başlatılır. Birleşimin ilk öğesi bir di
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Başlatma](../c-language/initialization.md)
+[Başlatılmasında](../c-language/initialization.md)

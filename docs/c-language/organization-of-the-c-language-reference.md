@@ -15,9 +15,9 @@ ms.locfileid: "64343191"
 
 - [Program Yapısı](../c-language/program-structure.md)
 
-- [Bildirimler ve Türler](../c-language/declarations-and-types.md)
+- [Bildirimler ve türler](../c-language/declarations-and-types.md)
 
-- [İfadeler ve Atamalar](../c-language/expressions-and-assignments.md)
+- [İfadeler ve atamalar](../c-language/expressions-and-assignments.md)
 
 - [Deyimler](../c-language/statements-c.md)
 
@@ -29,4 +29,4 @@ ms.locfileid: "64343191"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Dil Başvurusu](../c-language/c-language-reference.md)
+[C dil başvurusu](../c-language/c-language-reference.md)

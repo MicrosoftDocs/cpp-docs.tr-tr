@@ -21,15 +21,15 @@ Kaynak karakter kümesi ve yürütme karakter kümesi, aşağıdaki tabloda list
 |---------------------|---------------|-----------------|
 |&#92;a|Uyarı/zil|7|
 |&#92;b|Geri Al tuşu|8|
-|&#92;vadeli|Form akışı|12|
-|&#92;No|Metninde|10|
-|&#92;sağ|Satır başı|13|
-|&#92;şı|Yatay sekme|9|
+|&#92;f|Form akışı|12|
+|&#92;n|Metninde|10|
+|&#92;r|Satır başı|13|
+|&#92;t|Yatay sekme|9|
 |&#92;v|Dikey sekme|11|
 |&#92;"|Çift tırnak|34|
 |&#92;'|Tek tırnak|39|
-|&#92;&#92;|Ters eğik çizgi|92|
+|&#92;&#92;|Sola|92|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakterler](../c-language/characters.md)<br/>
+[Karakterle](../c-language/characters.md)<br/>

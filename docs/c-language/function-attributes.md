@@ -16,11 +16,11 @@ ms.locfileid: "62233590"
 ---
 # <a name="function-attributes"></a>İşlev Öznitelikleri
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-İsteğe bağlı *öznitelik-seq* bildirimlere bir çağırma kuralı işlev başına temelinde seçmenize olanak sağlar. İşlev olarak da belirtebilirsiniz `__fastcall` veya `__inline`.
+İsteğe bağlı *öznitelik-Seq* & gt, işlev başına temelinde bir çağırma kuralı seçmenizi sağlar. Ayrıca, işlevleri veya `__fastcall` `__inline`olarak da belirtebilirsiniz.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

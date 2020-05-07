@@ -13,29 +13,29 @@ ms.locfileid: "62313343"
 ---
 # <a name="c-sequence-points"></a>C Sıralama Noktaları
 
-Arasında ardışık "dizi noktaları bir nesnenin değerini değiştirilebilir yalnızca bir kez bir ifade tarafından". C dili, aşağıdaki dizi noktalarını tanımlar:
+Ardışık "dizi noktaları" bir nesnenin değeri, bir ifade tarafından yalnızca bir kez değiştirilebilir. C dili aşağıdaki sıra noktalarını tanımlar:
 
-- Sol işlenen mantıksal- ve işleci (**&&**). Sol işleneni, mantıksal-işleci tamamen değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlayın. Sol işlenen yanlış (0) olarak değerlendirilirse diğer işlenen değerlendirilmez.
+- Mantıksal AND işlecinin sol işleneni (**&&**). Mantıksal AND işlecinin sol işleneni tamamen değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlanır. Sol işlenen yanlış (0) olarak değerlendirilirse, diğer işlenen değerlendirilmez.
 
-- Mantıksal OR işlecinin işleneni, sol (`||`). Mantıksal OR işlecinin sol işleneni tamamen değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlayın. Sol işlenen true (sıfırdan farklı) olarak değerlendirilirse diğer işlenen değerlendirilmez.
+- Mantıksal OR işlecinin sol işleneni (`||`). Mantıksal OR işlecinin sol işleneni tamamen değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlanır. Sol işlenen true (sıfır dışında) olarak değerlendirilirse, diğer işlenen değerlendirilmez.
 
-- Virgül işlecinin sol işleneni. Virgül işlecinin sol işleneni tamamen değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlayın. Virgül işlecinin her iki işleneni de her zaman değerlendirilir. Bir işlev çağrısındaki virgül işlecinin bir değerlendirme sırasını garanti etmez unutmayın.
+- Virgül işlecinin sol işleneni. Virgül işlecinin sol işleneni tamamen değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlanır. Virgül işlecinin her iki işleneni de her zaman değerlendirilir. Bir işlev çağrısındaki virgül işlecinin değerlendirme sırasını garanti vermediğini unutmayın.
 
-- İşlev çağrısı işleci. Bir işlev için tüm bağımsız değişkenler değerlendirilir ve işleve giriş önce tüm yan etkiler tamamlayın. Hiçbir bağımsız değişkenler arasından Değerlendirme sırasını belirtilir.
+- İşlev çağrısı işleci. İşleve yapılan tüm bağımsız değişkenler değerlendirilir ve işleve girişte önce tüm yan etkiler tamamlanır. Bağımsız değişkenler arasında değerlendirme sırası belirtilmedi.
 
-- Koşullu işlecin ilk işleneni. Koşullu işlecin ilk işleneni tamamen değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlayın.
+- Koşullu işlecin ilk işleneni. Koşullu işlecin ilk işleneni tamamen değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlanır.
 
-- (Diğer bir deyişle, bir bildirim deyiminde başlatmanın sonu gibi başka bir ifade parçası olmayan bir ifade) bir tam başlatma ifadesinin sonu.
+- Tam başlatma ifadesinin sonu (diğer bir deyişle, bir bildirim deyiminde başlatmanın sonu gibi başka bir ifadenin parçası olmayan bir ifadedir).
 
-- Bir ifade deyimindeki ifade. İfade deyimleri, noktalı virgül tarafından izlenen isteğe bağlı bir ifade oluşur (**;**). İfade, yan etkileri için değerlendirilir ve bu değerlendirme izleyen bir dizi noktası yoktur.
+- Bir ifade deyimindeki ifade. Expression deyimleri, bir isteğe bağlı ifadeden sonra noktalı virgül (**;**) içerir. İfade, yan etkileri için değerlendirilir ve bu değerlendirmeyi izleyen bir sıra noktası vardır.
 
-- Seçim denetim ifadesi (**varsa** veya `switch`) deyimi. İfade tamamen değerlendirilir ve seçime bağlı kod yürütülmeden önce tüm yan etkiler tamamlayın.
+- Seçim (**if** veya `switch`) deyimi içindeki denetim ifadesi. İfade tamamen değerlendirilir ve seçime bağlı kod yürütülmeden önce tüm yan etkiler tamamlanır.
 
-- Denetim ifadesi, bir `while` veya **yapmak** deyimi. İfade tamamen değerlendirilir ve sonraki yinelemesinde yer alan herhangi bir deyim önce tüm yan etkiler tamamlamak `while` veya **yapmak** döngü yürütülür.
+- `while` Or **Do** deyiminin denetim ifadesi. İfade tamamen değerlendirilir ve `while` ya da **Do** döngüsünün bir sonraki yinelemesinde herhangi bir deyim yürütülmeden önce tüm yan etkiler tamamlanır.
 
-- Her üç ifadesinden bir **için** deyimi. İfade tamamen değerlendirilir ve sonraki yinelemesinde yer alan herhangi bir deyim önce tüm yan etkiler tamamlamak **için** döngü yürütülür.
+- **For** ifadesinin üç ifadesinin her biri. İfadeler tamamen değerlendirilir ve **for** döngüsünün bir sonraki yinelemesinde hiçbir deyim yürütülmeden önce tüm yan etkiler tamamlanır.
 
-- İfade bir `return` deyimi. İfade tamamen değerlendirilir ve denetim çağırma işlevine döndürmeden önce tüm yan etkiler tamamlayın.
+- `return` Deyimdeki ifade. İfade tamamen değerlendirilir ve denetim, çağırma işlevine dönüşmeden önce tüm yan etkiler tamamlanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

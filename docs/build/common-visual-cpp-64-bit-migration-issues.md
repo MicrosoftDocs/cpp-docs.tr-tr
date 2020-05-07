@@ -20,11 +20,11 @@ ms.locfileid: "69493321"
 ---
 # <a name="common-visual-c-64-bit-migration-issues"></a>Genel Visual C++ 64 Bit Geçiş Sorunları
 
-64 bitlik bir Windows işletim C++ sisteminde çalıştırılacak uygulamalar oluşturmak için Microsoft DERLEYICISINI (MSVC) kullandığınızda, aşağıdaki sorunlardan haberdar olmanız gerekir:
+64 bitlik bir Windows işletim sisteminde çalıştırılacak uygulamalar oluşturmak için Microsoft C++ derleyicisini (MSVC) kullandığınızda, aşağıdaki sorunlardan haberdar olmanız gerekir:
 
-- `int` ,64bitWindowsişletim`long` sistemlerinde 32 bitlik değerlerdir. 64 bitlik platformlar için derlemeyi planladığınız programlar için, 32 bit değişkenlere işaretçiler atamamaya dikkat etmeniz gerekir. İşaretçiler 64 bit platformlarda 64 bittir ve bunu bir 32-bit değişkenine atarsanız işaretçi değerini kesecektir.
+- `int` , 64 bit Windows işletim sistemlerinde 32 bitlik `long` değerlerdir. 64 bitlik platformlar için derlemeyi planladığınız programlar için, 32 bit değişkenlere işaretçiler atamamaya dikkat etmeniz gerekir. İşaretçiler 64 bit platformlarda 64 bittir ve bunu bir 32-bit değişkenine atarsanız işaretçi değerini kesecektir.
 
-- `size_t`, `time_t` ve`ptrdiff_t` 64 bit Windows işletim sistemlerinde 64 bitlik değerlerdir.
+- `size_t`, `time_t`ve `ptrdiff_t` 64 bit Windows işletim sistemlerinde 64 bitlik değerlerdir.
 
 - `time_t`, Visual Studio 2005 ve önceki sürümlerde 32 bit Windows işletim sistemlerinde 32 bitlik bir değerdir. `time_t`artık varsayılan olarak 64 bitlik bir tamsayıdır. Daha fazla bilgi için bkz. [süre yönetimi](../c-runtime-library/time-management.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "69493321"
 
 - % P (işaretçinin onaltılık biçimi), 64 bitlik bir Windows işletim sisteminde beklendiği gibi çalışacaktır.
 
-Daha fazla bilgi için bkz.:
+Daha fazla bilgi için bkz.
 
 - [MSVC Derleyicisi Seçenekleri](reference/compiler-options.md)
 
@@ -46,5 +46,5 @@ Daha fazla bilgi için bkz.:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Projeleri C++ 64-bit, x64 hedefleri için yapılandırma](configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[64 bit, x64 hedefleri için C++ projelerini yapılandırma](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [Visual C++ Taşıma ve Yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)

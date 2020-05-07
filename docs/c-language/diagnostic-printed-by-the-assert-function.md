@@ -11,13 +11,13 @@ ms.locfileid: "62234230"
 ---
 # <a name="diagnostic-printed-by-the-assert-function"></a>assert İşlevinin Yazdırdığı Tanılama
 
-**ANSI 4.2** tarafından yazdırılan tanı ve sonlandırma davranışını **assert** işlevi
+**Ansı 4,2** Tarafından yazdırılan tanı ve **onaylama** işlevinin sonlandırma davranışı
 
-**Assert** işlevi bir tanılama iletisi ve aramalar yazdırır **iptal** ifade yanlışsa yordamı (0). Tanılama iletisi şu formdadır:
+**Onaylama** işlevi bir tanılama iletisi yazdırır ve ifade false (0) ise **Abort** yordamını çağırır. Tanılama iletisi şu formdadır:
 
-> **Onaylama işlemi başarısız**: <em>ifade</em>**, dosya** <em>filename</em>**, satır** *linenumber*
+> **Onaylama başarısız oldu**: <em>ifade</em>**, dosya** <em>dosya adı</em>**, satır** *linumarası*
 
-Burada *filename* kaynak dosyasının adıdır ve *linenumber* kaynak dosyada başarısız onaylama satır sayısıdır. Hiçbir işlem yapılmadı, *ifade* true (sıfırdan farklı).
+Burada *Dosya* adı kaynak dosyanın adıdır ve *linumarası* , kaynak dosyada başarısız olan onaylama hattının satır numarasıdır. *İfade* true ise (sıfır dışında) hiçbir eylem yapılmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

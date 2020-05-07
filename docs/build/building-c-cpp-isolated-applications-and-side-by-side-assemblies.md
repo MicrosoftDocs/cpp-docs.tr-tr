@@ -18,17 +18,17 @@ ms.locfileid: "80169883"
 ---
 # <a name="building-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma
 
-Visual Studio, [yalıtılmış uygulamaların](/windows/win32/SbsCs/isolated-applications) ve [yan yana derlemelerin](/windows/win32/SbsCs/about-side-by-side-assemblies-)fikrini temel alarak Windows istemci uygulamalarına yönelik bir dağıtım modelini destekler. Varsayılan olarak, Visual Studio tüm yerel C/C++ uygulamalarını görsel C++ kitaplıklara bağımlılıklarını anlatmak için [bildirimleri](/windows/win32/sbscs/manifests) kullanan yalıtılmış uygulamalar olarak oluşturur.
+Visual Studio, [yalıtılmış uygulamaların](/windows/win32/SbsCs/isolated-applications) ve [yan yana derlemelerin](/windows/win32/SbsCs/about-side-by-side-assemblies-)fikrini temel alarak Windows istemci uygulamalarına yönelik bir dağıtım modelini destekler. Varsayılan olarak, Visual Studio tüm yerel C/C++ uygulamalarını, Visual C++ kitaplıklarında bağımlılıklarını betimleyen [bildirimleri](/windows/win32/sbscs/manifests) kullanan yalıtılmış uygulamalar olarak oluşturur.
 
-Yalıtılmış uygulamalar olarakC++ C/programları oluşturmak bir dizi avantaj sunar. Örneğin, yalıtılmış bir uygulama, diğer C/C++ uygulamalar görsel C++ kitaplıkları yüklerken veya kaldırırken etkilenmemiştir. Yalıtılmış C++ uygulamalar tarafından kullanılan görsel kitaplıklar, uygulamanın yerel klasöründe veya yerel bütünleştirilmiş kod önbelleğine (WinSxS) yüklenmeye devam edebilir. Ancak, zaten dağıtılan uygulamalar C++ için görsel kitaplıkların bakımı bir [Yayımcı yapılandırma dosyası](/windows/win32/SbsCs/publisher-configuration)kullanılarak basitleştirilir. Yalıtılmış uygulama dağıtım modeli, belirli bir bilgisayarda çalışan C/C++ uygulamaların Visual C++ kitaplıklarının en son sürümünü kullandığından emin olmaya devam ederken, hala sistem yöneticileri ve uygulama yazarlarının, uygulamaların bağımlı dll 'lerine yönelik açık sürüm bağlamasını denetlemesine olanak tanımayı kolaylaştırır.
+Yalıtılmış uygulamalar olarak C/C++ programlarının oluşturulması bir dizi avantaj sunar. Örneğin, başka C/C++ uygulamaları Visual C++ kitaplıklarını yüklerken veya kaldırırken yalıtılmış bir uygulama etkilenmez. Yalıtılmış uygulamalar tarafından kullanılan Visual C++ kitaplıkları, uygulamanın yerel klasöründe ya da yerel derleme önbelleğine (WinSxS) yüklenmeye devam edebilir. Ancak, zaten dağıtılan uygulamalar için Visual C++ kitaplıklarının bakımı, bir [Yayımcı yapılandırma dosyası](/windows/win32/SbsCs/publisher-configuration)kullanılarak basitleştirilerek basitleştirilebilir. Yalıtılmış uygulama dağıtım modeli, belirli bir bilgisayarda çalışan C/C++ uygulamalarının Visual C++ kitaplıklarının en son sürümünü kullandığından emin olmayı kolaylaştırır, ancak hala sistem yöneticileri ve uygulama yazarlarının, uygulamaların bağımlı dll 'lerine yönelik açık sürüm bağlamasını denetlemesine olanak sağlar.
 
-Bu bölümde, C/C++ uygulamanızı yalıtılmış bir uygulama olarak nasıl oluşturabileceğiniz ve bir bildirim kullanarak görsel C++ kitaplıklara bağlandığı nasıl emin olduğunuz açıklanmaktadır. Bu bölümdeki bilgiler birincil olarak yerel veya yönetilmeyen C++ uygulamalar için geçerlidir. Visual Studio ile oluşturulan yerel C++ uygulamaları dağıtma hakkında bilgi için bkz. [ C++ görsel dosyaları yeniden dağıtma](../windows/redistributing-visual-cpp-files.md).
+Bu bölümde, C/C++ uygulamanızı yalıtılmış bir uygulama olarak nasıl oluşturabileceğiniz ve bir bildirim kullanarak Visual C++ kitaplıklarına bağlandığından emin olabilirsiniz. Bu bölümdeki bilgiler birincil olarak yerel veya yönetilmeyen C++ uygulamaları için geçerlidir. Visual Studio ile oluşturulan yerel C++ uygulamalarının dağıtımı hakkında bilgi için bkz. [Visual C++ dosyalarını yeniden dağıtma](../windows/redistributing-visual-cpp-files.md).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları](concepts-of-isolated-applications-and-side-by-side-assemblies.md)
+[Yalıtılmış uygulamalar ve yan yana derlemeler için kavramlar](concepts-of-isolated-applications-and-side-by-side-assemblies.md)
 
-[C/C++ Yalıtılmış Uygulamaları Derleme](building-c-cpp-isolated-applications.md)
+[C/C++ yalıtılmış uygulamaları oluşturma](building-c-cpp-isolated-applications.md)
 
 [C/C++ Yan Yana Derlemeleri Oluşturma](building-c-cpp-side-by-side-assemblies.md)
 

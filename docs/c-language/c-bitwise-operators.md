@@ -21,15 +21,15 @@ ms.locfileid: "80168779"
 ---
 # <a name="c-bitwise-operators"></a>C Bit Düzeyinde İşleçler
 
-Bit düzeyinde işleçler bit düzeyinde AND ( **&** ), bit düzeyinde dışlamalı veya ( **^** ) ve bit düzeyinde kapsamlı veya ( **&#124;** ) işlemleri gerçekleştirir.
+Bit düzeyinde işleçler bit düzeyinde AND (**&**), bit düzeyinde dışlamalı veya (**^**) ve bit düzeyinde kapsamlı veya (**&#124;**) işlemleri gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Ve-ifadesi*: &nbsp;&nbsp;*eşitlik Ifadesi* &nbsp;&nbsp;*ve-Expression* **&** *eşitlik* ifadesi
+*Ve-ifadesi*: &nbsp; &nbsp; *eşitlik-ifade* &nbsp; &nbsp; *ve-ifade* **&** *eşitlik-ifade*
 
-*DıŞLAMALı or ifadesi*: &nbsp;&nbsp;*ve-Expression* &nbsp;&nbsp;*dışlamalı* -ifadesi **^** *ve-* ifadesi
+*dışlamalı OR ifadesi*: &nbsp; &nbsp; *and ifadesi* &nbsp; &nbsp; *dışlamalı-OR-* **^** ifadesi *ve-* ifadesi
 
-*kapsamlı or ifadesi*: &nbsp;&nbsp;*dışlamalı* ya da-Expression &nbsp;&nbsp;*kapsamlı or* &#124; ifadesi *dışlamalı-OR-ifadesi*
+*kapsamlı or*-ifadesi: &nbsp; &nbsp; *dışlamalı* &nbsp; &nbsp;veya ifade &#124; *dışlamalı* *-or-* ifadesi
 
 Bit düzeyinde işleçlerin işlenenleri integral türlerine sahip olmalıdır, ancak türleri farklı olabilir. Bu işleçler, her zamanki aritmetik dönüştürmeleri gerçekleştirir; sonucun türü, dönüştürmeden sonra işlenen türüdür.
 
@@ -53,7 +53,7 @@ short n;
 n = i & j;
 ```
 
-Bu ilk örnekte `n` atanan sonuç, `i` (0xAB00 onaltılık) ile aynıdır.
+Bu ilk örnekte atanan `n` sonuç, (0xab00 onaltılık) `i` ile aynıdır.
 
 ```C
 n = i | j;
@@ -63,7 +63,7 @@ n = i ^ j;
 
 Bit düzeyinde kapsamlı veya ikinci örnekte, 0xABCD (onaltılı) değeri, bit düzeyinde dışlamalı veya üçüncü örnekte 0xCD (onaltılı) üretilirken oluşur.
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 İşaretli tamsayılar üzerinde bit düzeyinde işlemin sonuçları, ANSI C standardına göre uygulama tarafından tanımlanır. Microsoft C derleyicisi için, işaretli tamsayıların bit düzeyinde işlemleri işaretsiz tamsayılar üzerinde bit tabanlı işlemlerle aynı şekilde çalışır. Örneğin, `-16 & 99` ikili dosyada şu şekilde ifade edilebilir
 
@@ -81,5 +81,5 @@ Bit düzeyinde ve 96 Decimal 'in sonucu.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Bit Düzeyinde AND İşleci: &](../cpp/bitwise-and-operator-amp.md)<br/>
-[Bit Düzeyinde Özel OR İşleci: ^](../cpp/bitwise-exclusive-or-operator-hat.md)<br/>
-[Bit düzeyinde kapsamlı OR Işleci:&#124;](../cpp/bitwise-inclusive-or-operator-pipe.md)
+[Bit düzeyinde dışlamalı OR Işleci: ^](../cpp/bitwise-exclusive-or-operator-hat.md)<br/>
+[Bit düzeyinde kapsamlı OR Işleci: &#124;](../cpp/bitwise-inclusive-or-operator-pipe.md)

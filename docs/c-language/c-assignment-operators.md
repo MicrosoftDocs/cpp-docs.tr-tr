@@ -44,15 +44,15 @@ Bir atama işlemi, sağ işleneninin değerini sol işlenen tarafından adlandı
 ## <a name="syntax"></a>Sözdizimi
 
 *atama ifadesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*koşullu ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Koşullu ifade*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*birli ifade* *atama-işleç* *atama-ifade*
 
 *atama-işleç*: aşağıdakilerden biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **=** **\*=** **/=** **%=** **+=** **-=** **\<\<=** **>>=** **&=** **^=|=** **|=**
+&nbsp;&nbsp;&nbsp;&nbsp;**=** **\*=** **/=** **%=** **+=** **-=** **\<\<=** **>>=** **&=** **^=** **|=**
 
 C'deki atama işleçleri, tek bir işlemde değerleri hem dönüştürebilir hem de atayabilir. C, aşağıdaki atama işleçlerini sağlar:
 
-|Operator|Gerçekleştirilen İşlem|
+|İşleç|Gerçekleştirilen İşlem|
 |--------------|-------------------------|
 |**=**|Basit atama|
 |**&#42;=**|Çarpma ataması|
@@ -70,4 +70,4 @@ Atama sırasında, sağdaki değerin türü soldaki değerin türüne dönüşt�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Atama İşleçleri](../cpp/assignment-operators.md)
+- [Atama Işleçleri](../cpp/assignment-operators.md)

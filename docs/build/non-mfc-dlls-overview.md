@@ -20,7 +20,7 @@ MFC olmayan dll 'Ler hakkında daha fazla bilgi için Windows SDK [dinamik bağl
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [İzlenecek yol: Dinamik bağlantı kitaplığı oluşturma ve kullanma](walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)
+- [İzlenecek yol: dinamik bağlantı kitaplığı oluşturma ve kullanma](walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)
 
 - [DLL 'den dışarı aktarma](exporting-from-a-dll.md)
 
@@ -30,11 +30,11 @@ MFC olmayan dll 'Ler hakkında daha fazla bilgi için Windows SDK [dinamik bağl
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [MFC 'ye statik olarak bağlı normal MFC DLL 'Leri](regular-dlls-statically-linked-to-mfc.md)
+- [Statik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-statically-linked-to-mfc.md)
 
-- [MFC 'ye dinamik olarak bağlı normal MFC DLL 'Leri](regular-dlls-dynamically-linked-to-mfc.md)
+- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC uzantısı DLL’leri: Genel Bakış](extension-dlls-overview.md)
+- [MFC uzantı DLL'leri: Genel Bakış](extension-dlls-overview.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

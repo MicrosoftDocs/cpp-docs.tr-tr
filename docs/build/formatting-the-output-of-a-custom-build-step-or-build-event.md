@@ -30,13 +30,13 @@ ms.locfileid: "80169831"
 
 Çıkışın biçimi şu olmalıdır:
 
-> {<em>filename</em> **(** <em>satır #</em> \[ **,** <em>sütun #</em>] **)** &#124; *ToolName*} **:** <em>herhangi bir metin</em> \[] **{hata** &#124; **uyarısı**} <em>Code + Number</em> **:** <em>yerelleştirilebilir dize</em> \[ <em>herhangi bir metin</em> ]
+> {<em>filename</em>**(**<em>satır #</em> \[ **,** <em>sütun #</em>]**)** &#124; *ToolName*} **:** \[ <em>herhangi bir metin</em> ] {**hata** &#124; **uyarısı**} <em>Code + Number</em>**:**<em>yerelleştirilebilir dize</em> \[ <em>herhangi bir metin</em> ]
 
 Konumlar:
 
 - {*a* &#124; *b*}, *a* ya da *b*seçimdedir.
 
-- \[<em>item</em>] isteğe bağlı bir dize veya parametredir.
+- \[<em>öğe</em>] isteğe bağlı bir dize veya parametredir.
 
 - **Kalın** , bir sabit değeri temsil eder.
 

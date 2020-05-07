@@ -15,11 +15,11 @@ ms.locfileid: "62234159"
 ---
 # <a name="dll-import-and-export"></a>DLL İçeri ve Dışarı Aktarma
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Dllimport ve dllexport depolama sınıfı değiştiricileri, C diline ilişkin Microsoft'a özgü uzantılardır. Bu değiştiriciler DLL'nin arabirimini istemcisine (çalıştırılabilir dosya veya başka bir DLL) tanımlar. Bu değiştiricileri kullanma hakkında ayrıntılı bilgi için bkz: [dllexport, dllimport](../cpp/dllexport-dllimport.md).
+Dllimport ve dllexport depolama sınıfı değiştiricileri, C diline ilişkin Microsoft'a özgü uzantılardır. Bu değiştiriciler DLL'nin arabirimini istemcisine (çalıştırılabilir dosya veya başka bir DLL) tanımlar. Bu değiştiricilerin kullanılmasıyla ilgili belirli bilgiler için, bkz. [dllexport, dllimport](../cpp/dllexport-dllimport.md).
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

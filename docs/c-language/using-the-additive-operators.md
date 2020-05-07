@@ -29,14 +29,14 @@ px = &x[4 + i];
 px = &x[4] + i;
 ```
 
-Değerini `i` uzunluğu ile çarpılan bir **float** ve eklenen `&x[4]`. Sonuçta elde edilen işaretçi değeri, `x[8]` adresidir.
+Değeri `i` bir **float** uzunluğu ile çarpılır ve öğesine `&x[4]`eklenir. Sonuçta elde edilen işaretçi değeri, `x[8]` adresidir.
 
 ```
 j = &x[i] - &x[i-2];
 ```
 
-Bu örnekte, üçüncü `x` öğesinin (`x[i-2]` tarafından verilmiştir) adresi, beşinci `x` öğesinin (`x[i]` tarafından verilmiştir) adresinden çıkarılır. Fark uzunluğuna bölünür bir **float**; tamsayı değeri 2 sonucudur.
+Bu örnekte, üçüncü `x` öğesinin (`x[i-2]` tarafından verilmiştir) adresi, beşinci `x` öğesinin (`x[i]` tarafından verilmiştir) adresinden çıkarılır. Fark bir **float**uzunluğuna bölünür; Sonuç 2 tamsayı değeridir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Ek İşleçleri](../c-language/c-additive-operators.md)
+[C eklenebilir Işleçler](../c-language/c-additive-operators.md)

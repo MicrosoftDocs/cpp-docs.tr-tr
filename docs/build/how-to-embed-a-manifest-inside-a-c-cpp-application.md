@@ -15,13 +15,13 @@ ms.locfileid: "81322995"
 ---
 # <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>Nasıl Yapılır: C/C++ Uygulamasına Bildirim Katıştırma
 
-Bu, çoğu senaryoda doğru çalışma zamanı davranışını garanti ettiği için, uygulamanızın veya kitaplığınizin bildirimini son ikilinin içine gömmenizi tavsiye ettik. Varsayılan olarak, Visual Studio bir proje oluştururken bildirimi katıştırmaya çalışır. Daha fazla bilgi için [Visual Studio'da Manifesto Oluşturma'ya](manifest-generation-in-visual-studio.md)bakın. Ancak, nmake kullanarak uygulamanızı oluşturursanız, makefilebazı değişiklikler yapmak zorunda. Bu bölümde, son ikilinin içine otomatik olarak manifesto katıştıracak şekilde makefilesin nasıl değiştirilebildiğini gösterir.
+Çoğu senaryoda doğru çalışma zamanı davranışını garanti ettiğinden, uygulamanızın veya kitaplığınızın bildirimini son ikilinin içine katıştırmanız önerilir. Varsayılan olarak, Visual Studio bir proje oluşturduğunda bildirimi katıştırmaya çalışır. Daha fazla bilgi için bkz. [Visual Studio 'Da bildirim oluşturma](manifest-generation-in-visual-studio.md). Ancak, NMAKE kullanarak uygulamanızı derleyebilirsiniz, derleme görevleri dosyası üzerinde bazı değişiklikler yapmanız gerekir. Bu bölümde, bildirimi son ikilinin içinde otomatik olarak katıştıran derleme görevleri dosyalarını 'ın nasıl değiştirileceği gösterilmektedir.
 
 ## <a name="two-approaches"></a>İki yaklaşım
 
-Bildirimi bir uygulamanın veya kitaplığın içine gömmenin iki yolu vardır.
+Bildirimi bir uygulama veya kitaplık içine gömmenin iki yolu vardır.
 
-- Artımlı bir yapı yapmıyorsanız, aşağıdaki komut satırına benzer bir komut satırı kullanarak bildirimi doğrudan oluşturma sonrası adım olarak katıştırabilirsiniz:
+- Artımlı bir yapı gerçekleştirmeseniz, derleme sonrası bir adım olarak aşağıdakine benzer bir komut satırı kullanarak bildirimi doğrudan katıştırabilirsiniz:
 
    ```cmd
    mt.exe -manifest MyApp.exe.manifest -outputresource:MyApp.exe;1
@@ -33,21 +33,21 @@ Bildirimi bir uygulamanın veya kitaplığın içine gömmenin iki yolu vardır.
    mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2
    ```
 
-   EXE için 1 ve DLL için 2 kullanın.
+   Bir EXE için 1, DLL için 2 kullanın.
 
-- Artımlı bir yapı yapıyorsanız, aşağıdaki adımları kullanın:
+- Artımlı derleme yapıyorsanız aşağıdaki adımları kullanın:
 
-  - MyApp.exe.manifest dosyasını oluşturmak için ikili bağlantı kurun.
+  - MyApp. exe. manifest dosyasını oluşturmak için ikiliyi bağlayın.
 
-  - Bildirimi kaynak dosyasına dönüştürün.
+  - Bildirimi bir kaynak dosyasına dönüştürün.
 
-  - Bildirim kaynağını ikiliye yerleştirmek için yeniden bağlantı (artımlı olarak).
+  - Bildirim kaynağını ikiliye eklemek için yeniden bağlayın (artımlı).
 
-Aşağıdaki örnekler, her iki tekniği de dahil etmek için makefilesin nasıl değiştirilebildiğini gösterir.
+Aşağıdaki örneklerde, her iki tekniği de içerecek şekilde derleme görevleri dosyalarını nasıl değiştirileceği gösterilmektedir.
 
-## <a name="makefiles-before"></a>Makefiles (Önce)
+## <a name="makefiles-before"></a>Makefiles (önceki)
 
-MyApp.exe, basit bir uygulama için nmake komut düşünün bir dosyadan oluşturulmuş:
+Tek bir dosyadan oluşturulan basit bir uygulama olan MyApp. exe için nmake betiğini göz önünde bulundurun:
 
 ```
 # build MyApp.exe
@@ -67,9 +67,9 @@ clean :
     del MyApp.obj MyApp.exe
 ```
 
-Bu komut dosyası Visual Studio ile değişmeden çalıştırılırsa, Başarıyla MyApp.exe oluşturur. Ayrıca, işletim sistemi tarafından çalışma zamanında bağımlı derlemeleri yüklemek için kullanılmak üzere harici manifesto dosyası MyApp.exe.manifest'i de oluşturur.
+Bu betik, Visual Studio ile değişmeden çalışıyorsa, MyApp. exe ' yi başarıyla oluşturur. Ayrıca, çalışma zamanında bağımlı derlemeleri yüklemek için işletim sistemi tarafından kullanılmak üzere MyApp. exe. manifest dış bildirim dosyasını da oluşturur.
 
-MyLibrary.dll için nmake komut dosyası çok benzer görünüyor:
+MyLibrary. dll için nmake betiği çok benzer şekilde görünür:
 
 ```
 # build MyLibrary.dll
@@ -92,9 +92,9 @@ clean :
     del MyLibrary.obj MyLibrary.dll
 ```
 
-## <a name="makefiles-after"></a>Makefiles (Sonra)
+## <a name="makefiles-after"></a>Makefiles (sonra)
 
-Gömülü bildirimlerle oluşturmak için orijinal makefiles'de dört küçük değişiklik yapmak zorundasınız. MyApp.exe makefile için:
+Katıştırılmış bildirimlerle derlemek için özgün makefiles üzerinde dört küçük değişiklik yapmanız gerekir. MyApp. exe makefile için:
 
 ```
 # build MyApp.exe
@@ -124,7 +124,7 @@ clean :
 #^^^^^^^^^^^^^^^^^^^^^^^^^ Change #4. (Add full path if necessary.)
 ```
 
-MyLibrary.dll makefile için:
+MyLibrary. dll derleme görevleri dosyası için:
 
 ```
 # build MyLibrary.dll
@@ -157,9 +157,9 @@ clean :
 #^^^^^^^^^^^^^^^^^^^^^^^^^ Change #4. (Add full path if necessary.)
 ```
 
-Makefiles şimdi gerçek iş yapmak iki dosya içerir, makefile.inc ve makefile.targ.inc.
+Derleme görevleri dosyalarını artık gerçek işi yapan derleme görevleri dosyası. inc ve makefile. Targ. inc olan iki dosya içerir.
 
-makefile.inc oluşturun ve içine aşağıdaki kopyalayın:
+Makefile. inc oluşturun ve aşağıdakileri içine kopyalayın:
 
 ```
 # makefile.inc -- Include this file into existing makefile at the very top.
@@ -230,7 +230,7 @@ _VC_MANIFEST_CLEAN=
 ####################################################
 ```
 
-Şimdi **makefile.targ.inc** oluşturun ve içine aşağıdaki kopyalayın:
+Şimdi **derleme görevleri dosyası. Targ. inc** oluşturun ve aşağıdakileri içine kopyalayın:
 
 ```
 # makefile.targ.inc - include this at the very bottom of the existing makefile

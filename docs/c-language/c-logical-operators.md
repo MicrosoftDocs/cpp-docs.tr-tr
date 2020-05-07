@@ -20,34 +20,34 @@ ms.locfileid: "62326592"
 ---
 # <a name="c-logical-operators"></a>C mantıksal işleçleri
 
-Mantıksal işleçler mantıksal gerçekleştirmek- ve (**&&**) ve mantıksal OR (**||**) işlemleri.
+Mantıksal işleçler mantıksal-ve (**&&**) ve mantıksal OR (**||**) işlemleri gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*mantıksal-ve-expression*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*OR ifadesi dahil*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-ve-expression***&&***OR ifadesi dahil*
+*MANTıKSAL and-ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*kapsamlı OR ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal and ifadesi*  **&&**  *içinde or ifadesi*
 
-*mantıksal-veya-expression*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-ve-ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*logical-OR-expression*  **&#124;&#124;**  *logical-AND-expression*
+*MANTıKSAL or ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal AND ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;mantıksal *or* -ifadesi **&#124;&#124;** *mantıksal and ifadesi*    
 
 ## <a name="remarks"></a>Açıklamalar
 
-Mantıksal işleçler olağan aritmetik dönüştürmeler yapmayın. Bunun yerine, her işlenen, denklik 0 bakımından değerlendirin. Mantıksal bir işlemin sonucunu, 0 veya 1 ' dir. Sonucunun türü **int**.
+Mantıksal işleçler, olağan aritmetik dönüştürmeleri gerçekleştirmez. Bunun yerine, her işleneni denklik değerini 0 olarak değerlendirirler. Mantıksal işlemin sonucu 0 veya 1 ' dir. Sonucun türü **int**'tir.
 
 C mantıksal işleçleri aşağıda açıklanmıştır:
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|**&&**|Mantıksal- ve işleci, her iki işlenen de sıfır olmayan değerler varsa 1 değerini üretir. İki işlenenden 0'a eşit ise, sonuç 0'dır. Varsa bir mantıksal ilk işleneni- ve 0'a eşit işlemi, ikinci işlenenin değerlendirilmez.|
-|**&#124;&#124;**|Mantıksal OR işlecine işlenenleri bir düzeyinde kapsamalı OR işlemi gerçekleştirir. Her iki işlenen de 0 değerlere sahip sonucu 0'dır. İki işlenenden sıfır olmayan bir değere sahipse, sonuç 1'dir. Mantıksal OR işleminin ilk işlenen sıfır dışında bir değeri varsa, ikinci işlenenin değerlendirilmez.|
+|**&&**|Her iki işlenen de sıfır dışında değerler içeriyorsa, mantıksal AND işleci 1 değerini üretir. Her iki işlenen de 0 ' a eşitse, sonuç 0 ' dır. Mantıksal ve işlemin ilk işleneni 0 ' a eşitse, ikinci işlenen değerlendirilmez.|
+|**&#124;&#124;**|Mantıksal OR işleci, işlenenleri üzerinde bir kapsamlı veya işlem gerçekleştirir. Her iki işlenen de 0 değeri varsa sonuç 0 ' dır. İki işlenenin sıfır dışında bir değeri varsa sonuç 1 olur. Bir mantıksal veya işlemin ilk işleneninin sıfır dışında bir değeri varsa, ikinci işlenen değerlendirilmez.|
 
-İşlenen mantıksal- ve ve mantıksal OR ifadeleri soldan sağa doğru değerlendirilir. Birinci işlenenin değerini işleminin sonucu belirlemek yeterli ise, ikinci işlenenin değerlendirilmez. Buna "kısa devre değerlendirmesi." adı verilir Sonra ilk işleneni bir dizi noktası yoktur. Bkz: [dizi noktaları](../c-language/c-sequence-points.md) daha fazla bilgi için.
+Mantıksal AND ve mantıksal OR ifadelerinin işlenenleri soldan sağa değerlendirilir. Eğer ilk işlenenin değeri işlemin sonucunu belirleyebilmek için yeterliyse ikinci işlenen değerlendirilmez. Bu, "kısa devre değerlendirmesi" olarak adlandırılır. İlk işlenenden sonra bir sıra noktası var. Daha fazla bilgi için bkz. [dizi noktaları](../c-language/c-sequence-points.md) .
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekler, mantıksal işleçlerini gösterir:
+Aşağıdaki örneklerde mantıksal işleçler gösterilmektedir:
 
 ```C
 int w, x, y, z;
@@ -56,15 +56,15 @@ if ( x < y && y < z )
     printf( "x is less than z\n" );
 ```
 
-Bu örnekte, **printf** çağrıldığında, iletiyi yazdırmak için `x` olduğu küçüktür `y` ve `y` olduğu küçüktür `z`. Varsa `x` büyüktür `y`, ikinci işlenenin (`y < z`) değerlendirilmez ve herhangi bir şey yazdırılmaz. Bu ikinci işlenenin başka bir nedenle yararlandı yan etkileri olduğu durumlarda sorunlara neden olabileceğini unutmayın.
+Bu örnekte, **printf** işlevi bir iletiyi `x` yazdırmak için `y` çağrılır ve küçüktür ise küçüktür ve `y` küçüktür olur. `z` `x` Değerinden `y`büyükse, ikinci işlenen (`y < z`) değerlendirilmez ve hiçbir şey yazdırılmaz. Bu, ikinci işlenenin başka bir nedenden dolayı güvenmekte olan yan etkileri olduğu durumlarda sorun oluşmasına neden olabileceğini unutmayın.
 
 ```C
 printf( "%d" , (x == w || x == y || x == z) );
 ```
 
-Bu örnekte, `x` ya da eşittir `w`, `y`, veya `z`, ikinci bağımsız değişkeni **printf** işlevi doğru olarak değerlendirilir ve 1 değeri yazdırılır. Aksi takdirde yanlış değerini ve 0 değeri yazdırılır. Bir koşulun true olarak değerlendirilen hemen sonra değerlendirme olmaktan çıkar.
+Bu örnekte `x` ,, ya `w` `y` `z`da öğesine eşitse, **printf** işlevinin ikinci bağımsız değişkeni true olarak değerlendirilir ve 1 değeri yazdırılır. Aksi takdirde, false olarak değerlendirilir ve 0 değeri yazdırılır. Koşullardan biri doğru olarak değerlendirildiğinde değerlendirme sona erer.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Mantıksal AND İşleci: &&](../cpp/logical-and-operator-amp-amp.md)
-- [Mantıksal OR işleci:&#124;&#124;](../cpp/logical-or-operator-pipe-pipe.md)
+- [Mantıksal OR Işleci:  &#124;&#124;](../cpp/logical-or-operator-pipe-pipe.md)

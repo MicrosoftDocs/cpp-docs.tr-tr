@@ -42,11 +42,11 @@ Yürütülebilir dosya, aynı DLL 'ye bağlanmak için bağlama yöntemini kulla
 
 Sistem dinamik bağlantılı başvurular içeren bir programı başlattığında, gerekli dll 'Leri bulmak için programın yürütülebilir dosyasındaki bilgileri kullanır. DLL 'yi bulamazsa, sistem işlemi sonlandırır ve hatayı raporlayan bir iletişim kutusu görüntüler. Aksi halde sistem, DLL modüllerini işlem adres alanıyla eşler.
 
-Dll 'Lerden herhangi birinde `DllMain`gibi başlatma ve sonlandırma kodu için bir giriş noktası işlevi varsa, işletim sistemi işlevini çağırır. Giriş noktası işlevine geçirilen parametrelerden biri, DLL 'nin işleme ilişdiğini belirten bir kodu belirtir. Giriş noktası işlevi TRUE döndürmezse, sistem işlemi sonlandırır ve hatayı raporlar.
+Dll 'Lerden herhangi biri gibi başlatma ve sonlandırma kodu için bir giriş noktası işlevi varsa `DllMain`, işletim sistemi işlevini çağırır. Giriş noktası işlevine geçirilen parametrelerden biri, DLL 'nin işleme ilişdiğini belirten bir kodu belirtir. Giriş noktası işlevi TRUE döndürmezse, sistem işlemi sonlandırır ve hatayı raporlar.
 
 Son olarak, sistem, DLL işlevleri için başlangıç adreslerini sağlamak üzere işlemin yürütülebilir kodunu değiştirir.
 
-Programın kodunun geri kalanı gibi yükleyici, işlem başladığında DLL kodunu işlemin adres alanına eşler. İşletim sistemi bu dosyayı yalnızca gerektiğinde belleğe yükler. Sonuç olarak, Windows 'un önceki sürümlerinde yüklemeyi denetlemek için. def dosyaları tarafından kullanılan `PRELOAD` ve `LOADONCALL` kodu özniteliklerinin artık anlamı yoktur.
+Programın kodunun geri kalanı gibi yükleyici, işlem başladığında DLL kodunu işlemin adres alanına eşler. İşletim sistemi bu dosyayı yalnızca gerektiğinde belleğe yükler. Sonuç olarak, Windows 'un `PRELOAD` önceki `LOADONCALL` sürümlerinde yüklemeyi denetlemek için. def dosyaları tarafından kullanılan ve kod özniteliklerinin artık anlamı yoktur.
 
 ### <a name="explicit-linking"></a>Açık bağlama
 
@@ -56,17 +56,17 @@ Programın kodunun geri kalanı gibi yükleyici, işlem başladığında DLL kod
 
 - İşlem başlangıcında DLL bulunamazsa, örtük bağlama kullanan bir işlem işletim sistemi tarafından sonlandırılır. Açık bağlama kullanan bir işlem bu durumda sonlandırılmaz ve hatadan kurtarmayı deneyebilir. Örneğin, işlem hatayı kullanıcıya bildirebilir ve kullanıcının DLL 'ye başka bir yol belirtmesini sağlayabilir.
 
-- Dolaylı bağlama kullanan bir işlem, bağlı olduğu dll 'Lerden herhangi biri başarısız olan bir `DllMain` işlevine sahip olursa da sonlandırılır. Açık bağlama kullanan bir işlem bu durumda sonlandırılmadı.
+- Dolaylı bağlama kullanan bir işlem, bağlı olduğu dll 'Lerden herhangi biri başarısız olan bir `DllMain` işleve sahip olursa da sonlandırılır. Açık bağlama kullanan bir işlem bu durumda sonlandırılmadı.
 
 - Windows, uygulama yüklendiğinde tüm dll 'Leri yüklediği için, birden çok dll 'ye örtülü olarak bağlanan bir uygulama başlatılabilir. Bir uygulama, başlangıç performansını artırmak için yalnızca yüklemeden hemen sonra gerekli olan DLL 'Ler için örtülü bağlamayı kullanabilir. Yalnızca gerektiğinde diğer dll 'Leri yüklemek için açık bağlamayı kullanabilir.
 
-- Açık bağlama, bir içeri aktarma kitaplığı kullanarak uygulamayı bağlama gereksinimini ortadan kaldırır. DLL 'deki değişiklikler dışa aktarma sıra sayıclarından oluşmasına neden olursa, bir işlevin adını kullanarak `GetProcAddress` ve bir sıra değeri değil, uygulamaların yeniden bağlanmak zorunda kalmaz. Örtük bağlama kullanan uygulamalar yine de değiştirilen içeri aktarma kitaplığına yeniden bağlanmalıdır.
+- Açık bağlama, bir içeri aktarma kitaplığı kullanarak uygulamayı bağlama gereksinimini ortadan kaldırır. DLL 'deki değişiklikler dışa aktarma sıra sayısının değişmesine neden olursa, uygulamaların bir sıra değeri değil, bir işlevin adını `GetProcAddress` kullanarak çağrı yaptığı durumlarda yeniden bağlanmak zorunda kalmaz. Örtük bağlama kullanan uygulamalar yine de değiştirilen içeri aktarma kitaplığına yeniden bağlanmalıdır.
 
 Aşağıda, Açık bağlama konusunda bilinmesi için iki tehlikeli yer verilmiştir:
 
-- DLL 'nin bir `DllMain` giriş noktası işlevi varsa, işletim sistemi, işlevi `LoadLibrary`çağıran iş parçacığının bağlamında çağırır. Daha önce, `FreeLibrary` işlevine karşılık gelen bir çağrısı olmayan `LoadLibrary` için önceki bir çağrı nedeniyle, DLL zaten işleme eklenmişse, giriş noktası işlevi çağrılmaz. DLL, bir işlemin her iş parçacığını başlatmak için bir `DllMain` işlevi kullanıyorsa açık bağlama sorunlara yol açabilir çünkü `LoadLibrary` (veya `AfxLoadLibrary`) çağrıldığında zaten var olan herhangi bir iş parçacığı başlatılmaz.
+- DLL 'de bir `DllMain` giriş noktası işlevi varsa, işletim sistemi işlevini çağıran iş parçacığı bağlamında çağırır `LoadLibrary`. Önceki bir çağrı, `LoadLibrary` `FreeLibrary` işleve karşılık gelen hiçbir ÇAĞRıSı olmadığı için, dll zaten işleme eklenmişse, giriş noktası işlevi çağrılmaz. DLL bir işlemin her iş parçacığını başlatmak için bir `DllMain` işlev kullanıyorsa açık bağlama soruna neden olabilir, çünkü `LoadLibrary` (veya `AfxLoadLibrary`) çağrıldığında zaten var olan herhangi bir iş parçacığı başlatılmaz.
 
-- Bir DLL, `__declspec(thread)`olarak statik kapsam verileri bildiriyorsa, açıkça bağlanmışsa koruma hatasına neden olabilir. DLL bir `LoadLibrary`çağrısıyla yüklendikten sonra, kod bu verilere başvurduğunda bir koruma hatasına neden olur. (Statik kapsam verileri hem genel hem de yerel statik öğeleri içerir.) Bu nedenle, bir DLL oluşturduğunuzda, iş parçacığı yerel depolama kullanmaktan kaçının. Bunu yapmak için, dll kullanıcılarınızı, DLL 'nizi dinamik olarak yükleme olasılığı hakkında bilgilendirin. Daha fazla bilgi için bkz. [dinamik bağlantı kitaplığında iş parçacığı yerel depolama alanı kullanma (Windows SDK)](/windows/win32/Dlls/using-thread-local-storage-in-a-dynamic-link-library).
+- Bir DLL, olarak `__declspec(thread)`statik uzantı verileri bildiriyorsa, açıkça bağlanmışsa koruma hatasına neden olabilir. DLL bir çağrısı tarafından yüklendikten sonra `LoadLibrary`, kod bu verilere başvurduğunda bir koruma hatasına neden olur. (Statik kapsam verileri hem genel hem de yerel statik öğeleri içerir.) Bu nedenle, bir DLL oluşturduğunuzda, iş parçacığı yerel depolama kullanmaktan kaçının. Bunu yapmak için, dll kullanıcılarınızı, DLL 'nizi dinamik olarak yükleme olasılığı hakkında bilgilendirin. Daha fazla bilgi için bkz. [dinamik bağlantı kitaplığında iş parçacığı yerel depolama alanı kullanma (Windows SDK)](/windows/win32/Dlls/using-thread-local-storage-in-a-dynamic-link-library).
 
 <a name="linking-implicitly"></a>
 
@@ -74,7 +74,7 @@ Aşağıda, Açık bağlama konusunda bilinmesi için iki tehlikeli yer verilmi�
 
 Bir DLL 'yi örtük bağlama ile kullanmak için, istemci yürütülebilir dosyalarının bu dosyaları DLL sağlayıcısından alması gerekir:
 
-- DLL 'de, yayımlanan verilerin, işlevlerin ve C++ sınıfların bildirimlerini içeren bir veya daha fazla üst bilgi dosyası (. h dosyası). DLL tarafından dışarıya alınan sınıfların, işlevlerin ve verilerin tümü başlık dosyasında `__declspec(dllimport)` işaretlenmelidir. Daha fazla bilgi için bkz. [dllexport, dllimport](../cpp/dllexport-dllimport.md).
+- DLL 'de, yayımlanan verilerin, işlevlerin ve C++ sınıflarının bildirimlerini içeren bir veya daha fazla üst bilgi dosyası (. h dosyası). DLL tarafından dışarıya alınan sınıfların, işlevlerin ve verilerin tümü üst bilgi dosyasında işaretlenmelidir `__declspec(dllimport)` . Daha fazla bilgi için bkz. [dllexport, dllimport](../cpp/dllexport-dllimport.md).
 
 - Yürütülebilire bağlanacak bir içeri aktarma kitaplığı. Bağlayıcı, DLL yapılandırıldığında içeri aktarma kitaplığını oluşturur. Daha fazla bilgi için bkz. [LIB Files as bağlayıcı girişi](reference/dot-lib-files-as-linker-input.md).
 
@@ -94,11 +94,11 @@ Bir DLL 'yi açık bağlama ile kullanmak için, uygulamaların çalışma zaman
 
 - DLL 'yi yüklemek ve bir modül tanıtıcısı almak için [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw) veya benzer bir işlev çağırın.
 
-- Uygulamanın çağırdığı her bir içe aktarılmış işleve bir işlev işaretçisi almak için [GetProcAddress](getprocaddress.md) çağrısı yapın. Uygulamalar, DLL işlevlerini bir işaretçi aracılığıyla çağırdığından, derleyici dış başvuru oluşturmaz, bu nedenle içeri aktarma kitaplığıyla bağlantı oluşturmanız gerekmez. Ancak, çağrmış olan işlevlerin çağrı imzasını tanımlayan bir `typedef` veya `using` deyiminiz olmalıdır.
+- Uygulamanın çağırdığı her bir içe aktarılmış işleve bir işlev işaretçisi almak için [GetProcAddress](getprocaddress.md) çağrısı yapın. Uygulamalar, DLL işlevlerini bir işaretçi aracılığıyla çağırdığından, derleyici dış başvuru oluşturmaz, bu nedenle içeri aktarma kitaplığıyla bağlantı oluşturmanız gerekmez. Ancak, çağrısı yaptığınız aktarılmış işlevlerin `typedef` çağrı `using` imzasını tanımlayan bir veya deyiminiz olmalıdır.
 
 - DLL ile işiniz bittiğinde [FreeLibrary](freelibrary-and-afxfreelibrary.md) ' i çağırın.
 
-Örneğin, bu örnek işlev, "MyDLL" adlı bir DLL yüklemek için `LoadLibrary` çağırır, "DLLFunc1" adlı bir işleve işaretçi almak için `GetProcAddress` çağırır, işlevi çağırır ve sonucu kaydeder ve sonra DLL 'yi kaldırmak için `FreeLibrary` çağırır.
+Örneğin, bu örnek işlev "MyDLL" adlı bir DLL yüklemek için çağırır `LoadLibrary` , "DLLFunc1 `GetProcAddress` " adlı bir işleve işaretçi almak için çağırır, işlevi çağırır ve sonucu kaydeder ve sonra dll 'yi kaldırmak için çağırır `FreeLibrary` .
 
 ```C
 #include "windows.h"
@@ -135,7 +135,7 @@ HRESULT LoadAndCallSomeFunction(DWORD dwParam1, UINT * puParam2)
 }
 ```
 
-Bu örneğin aksine, çoğu durumda, belirli bir DLL için uygulamanızda yalnızca bir kez `LoadLibrary` ve `FreeLibrary` çağırmanız gerekir. DLL 'de birden çok işlev çağıracaksanız veya DLL işlevlerini tekrar tekrar çağırdığınızda bu durum özellikle doğrudur.
+Bu örneğin aksine, çoğu durumda, belirli bir DLL `LoadLibrary` için `FreeLibrary` uygulamanızda yalnızca bir kez çağrı yapmanız gerekir. DLL 'de birden çok işlev çağıracaksanız veya DLL işlevlerini tekrar tekrar çağırdığınızda bu durum özellikle doğrudur.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
@@ -145,4 +145,4 @@ Bu örneğin aksine, çoğu durumda, belirli bir DLL için uygulamanızda yalnı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio 'daC++ C/dll oluşturma](dlls-in-visual-cpp.md)
+[Visual Studio 'da C/C++ dll 'Leri oluşturma](dlls-in-visual-cpp.md)

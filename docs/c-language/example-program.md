@@ -11,9 +11,9 @@ ms.locfileid: "62233948"
 ---
 # <a name="example-program"></a>Örnek Program
 
-Aşağıdaki C kaynak programında iki kaynak dosyalardan oluşur. Bu, bazı çeşitli bildirimlerinin ve tanımlarının bir C programında olası bir genel bakış sağlar. Bu kitap sonraki bölümlerde, bu bildirimler, tanımlar ve başlatmalar yazma ve C anahtar sözcükleri gibi kullanmayı açıklar **statik** ve `extern`. `printf` STDIO C üstbilgi dosyasında bildirilen işlev. H
+Aşağıdaki C kaynak programı iki kaynak dosyadan oluşur. C programında olası çeşitli bildirimlerin ve tanımlardan bazılarına genel bakış sunar. Bu kitapta daha sonraki bölümlerde, bu bildirimlerin, tanımların ve başlatmanın nasıl yazılacağı ve **statik** ve `extern`gibi C anahtar sözcüklerinin nasıl kullanılacağı açıklanır. `printf` IşLEVI, stdio C üstbilgi dosyası içinde bildirilmiştir. Olsun.
 
-`main` Ve `max` işlevlerini ayrı dosyalarında olmasını olduğu varsayılır ve programın yürütülmesi ile başlayan `main` işlevi. Hiçbir açık kullanıcı işlevleri önce yürütülür `main`.
+Ve işlevlerinin ayrı dosyalarda olduğu varsayılır ve programın yürütülmesi `main` işlevle başlar. `max` `main` Daha önce `main`hiçbir açık Kullanıcı işlevi yürütülmez.
 
 ```
 /*****************************************************************
@@ -65,14 +65,14 @@ int max( int a, int b )          // Note formal parameters are
 }
 ```
 
-FILE1'DE. C için prototip içeren `max` işlevi. Bu tür bir bildirim bazen kullanılmadan önce işlevin bildirildiği için "İleri dönük bildirimi" adı verilir. Tanımı `main` işlev çağrılarını içerir `max`.
+FILE1. C, `max` işlev için prototipi içerir. İşlev kullanılmadan önce bildirildiği için, bu tür bir bildirime bazen "ileri bildirim" denir. `main` İşlevin tanımı öğesine `max`çağrıları içerir.
 
-İle başlayan satırlar `#define` önişlemci yönergeleri. Bu yönergeler önişlemciye tanımlayıcıları değiştirin söyleyin `ONE`, `TWO`, ve `THREE` sayılarla `1`, `2`, ve `3`sırasıyla dosya1 boyunca. C. Ancak, yönergeleri dosya2 için geçerli değildir. Ayrı olarak derlenmiş ve ardından ile dosya1'e bağlı C. C. İle satır başına `#include` derleyiciye STDIO dosyasını dahil edin. İçin prototip içeren H `printf` işlevi. [Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md) açıklanmıştır *önişlemci başvurusu*.
+İle `#define` başlayan satırlar Önişlemci yönergelerinden. Bu `ONE`yönergeler, ön işlemcinin tanımlayıcıları `TWO` `THREE` `1` `2`,, ve sırasıyla, FILE1 tamamında, ve `3`değerleriyle değiştirmesini söyler. ,. Ancak, yönergeler DOSYA2 için de geçerlidir. C, ayrı olarak derlenen ve sonra FıLE1 ile bağlantılandırılır. ,. İle `#include` başlayan satır, derleyiciye stdio dosyasını dahil etmek üzere bildirir. `printf` İşlev için prototipi içeren H. [Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md) , *Önişlemci başvurusunda*açıklanmıştır.
 
-FILE1'DE. Genel değişkenler başlatmak için bildirimleri tanımlama C kullandığı `a` ve `b`. Yerel değişkenler `c` ve `d` bildirilir ancak başlatılmadı. Depolama alanı, tüm bu değişkenler için ayrılır. Statik ve dış değişkenler `u` ve `v`, otomatik olarak 0 olarak başlatılır. Bu nedenle yalnızca `a`, `b`, `u`, ve `v` bunlar, açıkça veya örtülü olarak başlatıldığından bildirildiğinde anlamlı değerleri içerir. DOSYA2. C işlev tanımı içeren `max`. Bu tanımı karşılayan çağrıları `max` fıle1'de. C.
+FILE1. C, genel değişkenleri `a` ve `b`öğesini başlatmak için bildirimleri tanımlamayı kullanır. Yerel değişkenler `c` ve `d` bildirilmemiş ancak başlatılmamış. Depolama alanı tüm bu değişkenler için ayrılır. Statik ve dış değişkenler, `u` ve `v`otomatik olarak 0 olarak başlatılır. Bu nedenle `a`, `b`yalnızca `u`,, `v` ve, açıkça veya örtük olarak başlatıldıklarından, her ne kadar anlamlı değerler içerir. Dosya2. C, için `max`işlev tanımı içerir. Bu tanım, FıLE1 içinde öğesine `max` yapılan çağrıları karşılar. ,.
 
-Ömür ve görünürlük tanımlayıcıların ele alınmıştır [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md). İşlevler hakkında daha fazla bilgi için bkz. [işlevleri](../c-language/functions-c.md).
+Tanımlayıcıların yaşam süresi ve görünürlüğü, [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)bölümünde ele alınmıştır. İşlevler hakkında daha fazla bilgi için bkz. [işlevler](../c-language/functions-c.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Dosyalar ve Kaynak Programlar](../c-language/source-files-and-source-programs.md)
+[Kaynak dosyalar ve kaynak programlar](../c-language/source-files-and-source-programs.md)

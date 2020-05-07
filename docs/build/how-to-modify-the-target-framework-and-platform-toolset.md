@@ -14,11 +14,11 @@ ms.locfileid: "73964899"
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>Nasıl Yapılır: Hedef Framework ve Platform Araç Kümesini Değiştirme
 
-Bir Visual Studio C++ proje dosyasını, C++ platform araç takımının farklı sürümlerini, Windows SDK ve .NET Framework (C++yalnızca/CLI projeleri) hedeflemek üzere düzenleyebilirsiniz. Varsayılan olarak, proje sistemi, projeyi oluşturmak için kullandığınız Visual Studio sürümüne karşılık gelen .NET Framework sürümünü ve araç kümesi sürümünü kullanır. Her derleme hedefi için aynı kod tabanını kullanabilmeniz için. vcxproj dosyasındaki tüm bu değerleri değiştirebilirsiniz.
+C++ platform araç takımının farklı sürümlerini, Windows SDK ve .NET Framework (yalnızca C++/CLı projeleri) hedeflemek için bir Visual Studio C++ proje dosyasını düzenleyebilirsiniz. Varsayılan olarak, proje sistemi, projeyi oluşturmak için kullandığınız Visual Studio sürümüne karşılık gelen .NET Framework sürümünü ve araç kümesi sürümünü kullanır. Her derleme hedefi için aynı kod tabanını kullanabilmeniz için. vcxproj dosyasındaki tüm bu değerleri değiştirebilirsiniz.
 
 ## <a name="platform-toolset"></a>Platform araç takımı
 
-Platform araç takımı, C/ C++ C++ standart kitaplıklarıyla birlikte derleyici (CL. exe) ve bağlayıcı (LINK. exe) ile oluşur. Visual Studio 2015 ' den itibaren, araç takımının ana sürümü 14 ' te kaldığı için, Visual Studio 2019 veya Visual Studio 2017 ile derlenen projelerin, Visual Studio 2015 ile derlenen projelerle ABı geriye dönük olarak uyumlu olduğu anlamına gelir. İkincil sürüm, Visual Studio 2015 ' den bu yana her sürüm için 1 ile güncelleştirilir:
+Platform araç takımı, C/C++ standart kitaplıklarıyla birlikte C++ derleyicisi (CL. exe) ve bağlayıcı (LINK. exe) ile oluşur. Visual Studio 2015 ' den itibaren, araç takımının ana sürümü 14 ' te kaldığı için, Visual Studio 2019 veya Visual Studio 2017 ile derlenen projelerin, Visual Studio 2015 ile derlenen projelerle ABı geriye dönük olarak uyumlu olduğu anlamına gelir. İkincil sürüm, Visual Studio 2015 ' den bu yana her sürüm için 1 ile güncelleştirilir:
 
 - Visual Studio 2015: v140
 - Visual Studio 2017: v141
@@ -26,24 +26,24 @@ Platform araç takımı, C/ C++ C++ standart kitaplıklarıyla birlikte derleyic
 
 Bu araç kümeleri .NET Framework 4,5 ve üstünü destekler.
 
-Visual Studio, projeler için C++ Çoklu hedefleme da destekler. Visual Studio IDE 'yi kullanarak Visual Studio 'nun eski sürümleriyle oluşturulmuş projeleri düzenleme ve derleme, araç takımının yeni bir sürümünü kullanmak için yükseltme yapmadan kullanabilirsiniz. Bilgisayarınızda eski araç kümelerinin yüklü olması gerekir. Daha fazla bilgi için bkz. [Visual Studio 'da yerel çoklu](../porting/use-native-multi-targeting.md)sürüm desteği kullanımı. Örneğin, Visual Studio 2015 ' de .NET Framework 2,0 ' i *hedefleyebilir* , ancak bunu destekleyen önceki bir araç takımını kullanmanız gerekir.
+Visual Studio, C++ projeleri için Çoklu hedefleme desteği de destekler. Visual Studio IDE 'yi kullanarak Visual Studio 'nun eski sürümleriyle oluşturulmuş projeleri düzenleme ve derleme, araç takımının yeni bir sürümünü kullanmak için yükseltme yapmadan kullanabilirsiniz. Bilgisayarınızda eski araç kümelerinin yüklü olması gerekir. Daha fazla bilgi için bkz. [Visual Studio 'da yerel çoklu](../porting/use-native-multi-targeting.md)sürüm desteği kullanımı. Örneğin, Visual Studio 2015 ' de .NET Framework 2,0 ' i *hedefleyebilir* , ancak bunu destekleyen önceki bir araç takımını kullanmanız gerekir.
 
-## <a name="target-framework-ccli-project-only"></a>Hedef çerçeve (C++yalnızca/CLI Projesi)
+## <a name="target-framework-ccli-project-only"></a>Hedef çerçeve (yalnızca C++/CLı Projesi)
 
 Hedef Framework 'Ü değiştirdiğinizde, platform araç takımını da bu çerçeveyi destekleyen bir sürüm olarak değiştirin. Örneğin, .NET Framework 4,5 ' i hedeflemek için, Visual Studio 2015 (v140), Visual Studio 2013 (v120) veya Visual Studio 2012 (v110) gibi uyumlu bir platform araç takımını kullanmanız gerekir. .NET Framework 2,0, 3,0, 3,5 ve 4 ve x86/x64 platformlarını hedeflemek için [Windows 7,1 SDK](https://www.microsoft.com/download/details.aspx?id=8279) platformu araç takımını kullanabilirsiniz.
 
-Özel bir platform araç takımı oluşturarak hedef platformu daha da genişletebilirsiniz. Daha fazla bilgi için C++ bkz [ C++ ](https://devblogs.microsoft.com/cppblog/c-native-multi-targeting/) . Visual blogda yerel çoklu sürüm desteği.
+Özel bir platform araç takımı oluşturarak hedef platformu daha da genişletebilirsiniz. Daha fazla bilgi için, Visual C++ blogda [C++ yerel çoklu sürüm hedeflemesi](https://devblogs.microsoft.com/cppblog/c-native-multi-targeting/) bölümüne bakın.
 
 ### <a name="to-change-the-target-framework"></a>Hedef Framework 'Ü değiştirmek için
 
 1. Visual Studio 'da **Çözüm Gezgini**' de projenizi seçin. Menü çubuğunda, **Proje** menüsünü açın ve **Projeyi Kaldır**' ı seçin. Bu, projeniz için proje (. vcxproj) dosyasını kaldırır.
 
    > [!NOTE]
-   >  Proje C++ dosyası Visual Studio 'da değiştirilirken bir proje yüklenemez. Ancak, proje Visual Studio 'ya yüklenirken proje dosyasını değiştirmek için Not Defteri gibi başka bir düzenleyiciyi de kullanabilirsiniz. Visual Studio, proje dosyasının değiştiğini algılar ve projeyi yeniden yüklemenizi ister.
+   >  Visual Studio 'da proje dosyası değiştirilirken bir C++ projesi yüklenemez. Ancak, proje Visual Studio 'ya yüklenirken proje dosyasını değiştirmek için Not Defteri gibi başka bir düzenleyiciyi de kullanabilirsiniz. Visual Studio, proje dosyasının değiştiğini algılar ve projeyi yeniden yüklemenizi ister.
 
 1. Menü çubuğunda **Dosya**, **Aç**, **Dosya**' yı seçin. **Dosya Aç** iletişim kutusunda proje klasörünüze gidin ve proje (. vcxproj) dosyasını açın.
 
-1. Proje dosyasında, hedef Framework sürümü için girişi bulun. Örneğin, projeniz 4,5 .NET Framework kullanmak üzere tasarlandıysa, `<Project>` öğesinin `<PropertyGroup Label="Globals">` öğesinde `<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>` bulun. `<TargetFrameworkVersion>` öğesi yoksa, projeniz .NET Framework kullanmaz ve değişiklik gerekli değildir.
+1. Proje dosyasında, hedef Framework sürümü için girişi bulun. Örneğin, projeniz 4,5 .NET Framework kullanmak üzere tasarlandıysa, `<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>` `<PropertyGroup Label="Globals">` `<Project>` öğesinin öğesinde bulun. `<TargetFrameworkVersion>` Öğe yoksa, projeniz .NET Framework kullanmaz ve değişiklik gerekli değildir.
 
 1. Değeri, v 3.5 veya v 4.6 gibi istediğiniz Framework sürümü ile değiştirin.
 

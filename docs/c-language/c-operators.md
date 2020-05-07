@@ -18,38 +18,38 @@ ms.locfileid: "62326384"
 ---
 # <a name="c-operators"></a>C İşleçleri
 
-C işleçleri bir alt kümesidir [C++ yerleşik işleçler](../cpp/cpp-built-in-operators-precedence-and-associativity.md).
+C işleçleri, [C++ yerleşik işleçlerinin](../cpp/cpp-built-in-operators-precedence-and-associativity.md)bir alt kümesidir.
 
-Üç tür işleç vardır. Tekli ifade birini işlenenin $a birli işleç oluşur veya **sizeof** anahtar sözcüğü bir ifade. İfade, değişkenin adı veya atama ifadesi olabilir. İfade atama ifadesiyse, parantez içine alınmalıdır. İkili ifade, ikili işleç tarafından birleştirilmiş iki işlenenden oluşur. Üçlü ifade, koşullu ifade işleci tarafından birleştirilmiş üç işlenenden oluşur.
+Üç tür işleç vardır. Birli ifade, bir işlenenden bir birli işleç önüne veya bir ifadenin ardından **sizeof** anahtar sözcüğünü içerir. İfade, değişkenin adı veya atama ifadesi olabilir. İfade atama ifadesiyse, parantez içine alınmalıdır. İkili ifade, ikili işleç tarafından birleştirilmiş iki işlenenden oluşur. Üçlü ifade, koşullu ifade işleci tarafından birleştirilmiş üç işlenenden oluşur.
 
 C, aşağıdaki tekli işleçler içerir:
 
-|Sembol|Ad|
+|Sembol|Name|
 |------------|----------|
 |**-** **~** **!**|Olumsuzlaştırma ve tamamlayıcı işleçleri|
-|**&#42;** **&**|Yöneltme ve adres işleçleri|
+|**&#42;****&**|Yöneltme ve adres işleçleri|
 |**sizeof**|Boyut işleci|
 |**+**|Tekli artı işleci|
 |**++** **--**|Tekli artırma ve azaltma işleçleri|
 
 Soldan sağa ilişkilendirilen ikili işleçler. C, aşağıdaki ikili işleçleri sağlar:
 
-|Sembol|Ad|
+|Sembol|Name|
 |------------|----------|
-|**&#42;** **/** **%**|Çarpma işleçleri|
+|**&#42;** **/****%**|Çarpma işleçleri|
 |**+** **-**|Toplama işleçleri|
 |**\<\<** **>>**|Kaydırma işleçleri|
-|**\<** **>** **\<=** **>=** **==** **!=**|İlişkisel işleçleri|
-|**&** **&#124;** **^**|Bit düzeyinde işleçler|
-|**&&** **&#124;&#124;**|Mantıksal işleçler|
+|**\<****>** **\<** **>=** **==** **!=**|İlişkisel işleçler|
+|**&****&#124;****^**|Bit düzeyinde işleçler|
+|**&&****&#124;&#124;**|Mantıksal işleçler|
 |**,**|Sıralı değerlendirme işleci|
 
-Temel işleç ( **: >** ), Microsoft 16 bit C derleyicisinin önceki sürümleri tarafından desteklenen, açıklanan [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md).
+Microsoft 16 bit C derleyicisi 'nin önceki sürümleri tarafından desteklenen temel işleç (**: >**), [C dili sözdizimi özetinde](../c-language/c-language-syntax-summary.md)açıklanmıştır.
 
 Koşullu ifade işleci, ikili ifadelere göre daha düşük önceliğe sahiptir ve sağla ilişkilendirilebilir olduğu için onlardan farklıdır.
 
-İşleçlere sahip ifadeler, tekli veya ikili atama işleçleri kullanan atama ifadeleri de içerir. Tekli atama işleçleri, artırma olan ( **++** ) ve azaltma ( **--** ) işleçleridir; ikili atama işleçleri basit atama işleci (olan **=** ) ve bileşik atama işleçleridir. Her bileşik atama işleci, başka bir ikili işlecin basit atama işleciyle birleşiminden oluşur.
+İşleçlere sahip ifadeler, tekli veya ikili atama işleçleri kullanan atama ifadeleri de içerir. Birli atama işleçleri, artırma (**++**) ve azaltma (**--**) işleçleridir; ikili atama işleçleri basit atama işleçtir (**=**) ve bileşik atama işleçleridir. Her bileşik atama işleci, başka bir ikili işlecin basit atama işleciyle birleşiminden oluşur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İfadeler ve Atamalar](../c-language/expressions-and-assignments.md)
+- [İfadeler ve atamalar](../c-language/expressions-and-assignments.md)

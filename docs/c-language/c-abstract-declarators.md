@@ -14,7 +14,7 @@ ms.locfileid: "81335062"
 ---
 # <a name="c-abstract-declarators"></a>C Soyut Bildirimciler
 
-Soyut bildirimci, tanımlayıcısı olmayan, bir veya daha fazla işaretçiden, diziden veya işlev değiştiricisinden oluşan bir bildirimcidir. İşaretçi değiştirici<strong>\*</strong>( ) her zaman bir bildirimde tanımlayıcıdan önce gelir; dizi (**[ ]**) ve fonksiyon ( **( )** ) tanımlayıcıyı izler. Bu bilgiyle; tanımlayıcının, soyut bildirimcinin neresinde görüneceğini belirleyebilir ve ona göre bildiriciyi yorumlayabilirsiniz. Bkz. Ek bilgi ve karmaşık bildirimcilerin örnekleri için [Daha Karmaşık Bildirimcileri Yorumlama.](../c-language/interpreting-more-complex-declarators.md) Bildirimciler basitleştirmek için genellikle `typedef` kullanılabilir. [Bkz. Typedef Bildirimleri](../c-language/typedef-declarations.md).
+Soyut bildirimci, tanımlayıcısı olmayan, bir veya daha fazla işaretçiden, diziden veya işlev değiştiricisinden oluşan bir bildirimcidir. İşaretçi değiştiricisi (<strong>\*</strong>), her zaman bir bildirimci içindeki tanımlayıcıdan önce gelir; dizi (**[]**) ve işlev ( **()** ) değiştiricileri tanımlayıcıyı izler. Bu bilgiyle; tanımlayıcının, soyut bildirimcinin neresinde görüneceğini belirleyebilir ve ona göre bildiriciyi yorumlayabilirsiniz. Ek bilgi ve karmaşık bildirimcilerin örnekleri için [daha karmaşık Bildirimcilerin yorumlanması](../c-language/interpreting-more-complex-declarators.md) bölümüne bakın. Bildirimciler basitleştirmek için genellikle `typedef` kullanılabilir. Bkz. [typedef bildirimleri](../c-language/typedef-declarations.md).
 
 Soyut bildirimciler karmaşık olabilir. Bir karmaşık soyut bildirimcideki parantezler belirli bir yorumu belirtir (bildirimler içindeki karmaşık bildirimciler için olduğu gibi).
 
@@ -43,7 +43,7 @@ int (*const []) ( unsigned int, ... )
 ```
 
 > [!NOTE]
-> Boş parantez kümesinden oluşan soyut bildirimciye belirsiz **( )** olduğu için izin verilmez. İma edilen tanımlayıcının parantez içinde mi (bu durumda, değiştirilmemiş bir türdür) yoksa parantezlerden önce mi (bu durumda, bir işlev türüdür) olduğunu belirlemek mümkün değildir.
+> Boş parantezlerin **()** kümesinden oluşan soyut bildirimci, belirsiz olduğu için kullanılamaz. İma edilen tanımlayıcının parantez içinde mi (bu durumda, değiştirilmemiş bir türdür) yoksa parantezlerden önce mi (bu durumda, bir işlev türüdür) olduğunu belirlemek mümkün değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

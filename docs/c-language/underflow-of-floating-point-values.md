@@ -11,7 +11,7 @@ ms.locfileid: "64344057"
 ---
 # <a name="underflow-of-floating-point-values"></a>Kayan Nokta Değerlerinin Yetersiz Kalması
 
-**ANSI 4.5.1** matematik işlevlerinin tamsayı ifadesini ayarlanmasına `errno` makro değerini `ERANGE` üzerinde yetersiz aralık hatalarında
+**ANSI 4.5.1** Matematik işlevlerinin tamsayı ifadesini `errno` , yetersiz Aralık hatalarında makro `ERANGE` değerine ayarlayıp ayarlayamayacağı
 
 Bir kayan nokta yetersizliği `errno` ifadesini `ERANGE` olarak ayarlamaz. Bir değer sıfıra yaklaştığında ve en sonunda yetersiz kaldığında, değer sıfır olarak ayarlanır.
 

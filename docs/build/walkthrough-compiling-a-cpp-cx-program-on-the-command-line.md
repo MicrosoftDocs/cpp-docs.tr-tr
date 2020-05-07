@@ -12,24 +12,24 @@ ms.locfileid: "80078202"
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında C++/CX Programı Derleme
 
 > [!NOTE]
-> Yeni UWP uygulamaları ve bileşenleri için, Windows çalışma zamanı API 'leri için standart bir c++ 17 dil projeksiyonu olan [ C++/wınrt](/windows/uwp/cpp-and-winrt-apis/)kullanmanızı öneririz. C++/Wınrt, sürüm 1803 ' den Windows 10 SDK ' da kullanılabilir. C++/Wınrt tamamen başlık dosyalarında uygulanır ve modern Windows API 'sine ilk sınıf erişim sağlayacak şekilde tasarlanmıştır.
+> Yeni UWP uygulamaları ve bileşenleri için, Windows Çalışma Zamanı API 'Leri için standart bir C++ 17 dil projeksiyonu olan [c++/Wınrt](/windows/uwp/cpp-and-winrt-apis/)kullanmanızı öneririz. C++/Wınrt, sürüm 1803 ' den Windows 10 SDK ' da kullanılabilir. C++/Wınrt tamamen başlık dosyalarında uygulanır ve modern Windows API 'sine ilk sınıf erişim sağlamak için tasarlanmıştır.
 
-Microsoft C++ DERLEYICISI (MSVC), Windows çalışma zamanı C++ programlama modelini hedeflemekC++için ek tür ve işleçlere sahip bileşen uzantıları 'nı (/CX) destekler. Evrensel Windows Platformu (UWP C++) ve Windows Masaüstü için uygulama oluşturmak üzere/CX kullanabilirsiniz. Daha fazla bilgi için bkz. [bir C++/CX turu](https://msdn.microsoft.com/magazine/dn166929.aspx) ve [çalışma zamanı platformları için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
+Microsoft C++ derleyicisi (MSVC), Windows Çalışma Zamanı programlama modelini hedeflemek için ek tür ve işleçlere sahip C++ Bileşen Uzantıları 'nı (C++/CX) destekler. C++/CX kullanarak Evrensel Windows Platformu (UWP) ve Windows Masaüstü için uygulamalar oluşturabilirsiniz. Daha fazla bilgi için bkz. [çalışma zamanı platformları Için](../extensions/component-extensions-for-runtime-platforms.md) [C++/CX](https://msdn.microsoft.com/magazine/dn166929.aspx) ve bileşen uzantıları turu.
 
-Bu kılavuzda, temel C++bir/CX programı oluşturmak ve ardından komut satırında derlemek için bir metin düzenleyicisi kullanın. (Gösterilen birini yazmak yerine kendi C++/CX programınızı kullanabilir ya da başka bir yardım makalesindeki bir C++/CX kod örneği kullanabilirsiniz. Bu teknik, Kullanıcı arabirimi öğeleri olmayan küçük modüller oluşturmak ve test etmek için kullanışlıdır.)
+Bu kılavuzda, temel bir C++/CX programı oluşturmak ve ardından komut satırında derlemek için bir metin düzenleyicisi kullanın. (Gösterilen birini yazmak yerine kendi C++/CX programınızı kullanabilir ya da başka bir yardım makalesindeki C++/CX kod örneğini kullanabilirsiniz. Bu teknik, Kullanıcı arabirimi öğeleri olmayan küçük modüller oluşturmak ve test etmek için kullanışlıdır.)
 
 > [!NOTE]
-> Ayrıca,/CX programlarını derlemek C++Için VISUAL Studio IDE 'yi de kullanabilirsiniz. IDE, komut satırında kullanılamayan tasarım, hata ayıklama, öykünme ve dağıtım desteği içerdiğinden, Evrensel Windows Platformu (UWP) uygulamaları oluşturmak için IDE 'yi kullanmanızı öneririz. Daha fazla bilgi için, bkz. [' de C++UWP uygulaması oluşturma ](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
+> C++/CX programlarını derlemek için Visual Studio IDE 'yi de kullanabilirsiniz. IDE, komut satırında kullanılamayan tasarım, hata ayıklama, öykünme ve dağıtım desteği içerdiğinden, Evrensel Windows Platformu (UWP) uygulamaları oluşturmak için IDE 'yi kullanmanızı öneririz. Daha fazla bilgi için bkz. [C++ ' da UWP uygulaması oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Ön koşullar
 
-C++ Dilin temellerini anlamış olursunuz.
+C++ dilinin temellerini anlamış olursunuz.
 
-## <a name="compiling-a-ccx-program"></a>Bir C++/CX programını derleme
+## <a name="compiling-a-ccx-program"></a>C++/CX programını derleme
 
-/CX için C++derlemeyi etkinleştirmek üzere [/ZW](reference/zw-windows-runtime-compilation.md) derleyici seçeneğini kullanmanız gerekir. MSVC derleyicisi, Windows Çalışma Zamanı ve gerekli kitaplıkların bağlantılarını hedefleyen bir. exe dosyası oluşturur.
+C++/CX için derlemeyi etkinleştirmek üzere [/ZW](reference/zw-windows-runtime-compilation.md) derleyici seçeneğini kullanmanız gerekir. MSVC derleyicisi, Windows Çalışma Zamanı ve gerekli kitaplıkların bağlantılarını hedefleyen bir. exe dosyası oluşturur.
 
-#### <a name="to-compile-a-ccx-application-on-the-command-line"></a>Komut satırında bir C++/CX uygulaması derlemek için
+#### <a name="to-compile-a-ccx-application-on-the-command-line"></a>Komut satırında C++/CX uygulaması derlemek için
 
 1. **Geliştirici komut istemi** penceresini açın. ( **Başlangıç** penceresinde, **uygulamalar**' ı açın. Visual Studio sürümünüz altında **Visual Studio Araçları** klasörünü açın ve **Geliştirici komut istemi** kısayolunu seçin.) Geliştirici Komut İstemi bir pencerenin nasıl açılacağı hakkında daha fazla bilgi için, bkz. [MSVC araç takımını komut satırından kullanma](building-on-the-command-line.md).
 
@@ -50,9 +50,9 @@ C++ Dilin temellerini anlamış olursunuz.
     }
     ```
 
-1. Menü çubuğunda **dosya** > **Kaydet**' i seçin.
+1. Menü çubuğunda **Dosya** > **Kaydet**' i seçin.
 
-   Windows Çalışma Zamanı [Platform ad](../cppcx/platform-namespace-c-cx.md) alanı C++ ad alanını kullanan bir kaynak dosya oluşturdunuz.
+   Windows Çalışma Zamanı [Platform ad](../cppcx/platform-namespace-c-cx.md) alanı ad alanını kullanan bir C++ kaynak dosyası oluşturdunuz.
 
 1. Komut isteminde **cl/EHsc/ZW basiccx. cpp/LINK/SUBSYSTEM: Console**yazın. CL. exe derleyicisi, kaynak kodu bir. obj dosyasına derler ve ardından, basiccx. exe adlı bir yürütülebilir program oluşturmak için bağlayıcıyı çalıştırır. ( [/EHsc](reference/eh-exception-handling-model.md) derleyici seçeneği C++ özel durum işleme modelini belirtir ve [/Link](reference/link-pass-options-to-linker.md) bayrağı bir konsol uygulaması belirtir.)
 
