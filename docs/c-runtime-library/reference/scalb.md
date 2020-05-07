@@ -17,7 +17,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -32,16 +32,16 @@ helpviewer_keywords:
 - _scalbf function
 - scalb function
 ms.assetid: 148cf5a8-b405-44bf-a1f0-7487adba2421
-ms.openlocfilehash: 6501fe53e67d0f277fa64c08e0edbff1d7eeb61a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: debb617afea26437df16150592e631461d82c6b8
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81332683"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82918232"
 ---
 # <a name="_scalb-_scalbf"></a>_scalb, _scalbf
 
-Bağımsız değişkeni 2'lik bir güçle ölçeklendirin.
+Bağımsız değişkeni 2 kuvvetle ölçeklendirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,31 +58,31 @@ float _scalbf(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Çift duyarlıklı, kayan nokta değeri.
 
-*Exp*<br/>
-Uzun bir sayı, üs.
+*exp*<br/>
+Uzun tamsayı üs.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa üstel bir değer verir. Taşmada *(x*işaretine bağlı olarak), **_scalb** +/- **HUGE_VAL**döndürür; **errno** değişkeni **ERANGE**olarak ayarlanır.
+Başarılı olursa üstel bir değer döndürür. Taşma durumunda ( *x*işaretine bağlı olarak) **_scalb** +/- **HUGE_VAL**döndürür. **errno** değişkeni **ERANGE**olarak ayarlanır.
 
-Bu ve diğer iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_scalb** fonksiyonu *x* \* 2<sup>*exp*</sup>değerini hesaplar.
+**_Scalb** işlevi *x* \* 2<sup>*Exp*</sup>değerini hesaplar.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_scalb**, **_scalbf**|\<float.h>|
+|**_scalb**, **_scalbf**|\<float. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -33,16 +33,16 @@ helpviewer_keywords:
 - get_dstbias function
 - _get_dstbias function
 ms.assetid: e751358c-1ecc-411b-ae2c-81b2ec54ea45
-ms.openlocfilehash: 969b6d2dfd83a1a136fdfb3d17f8f843337b792c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 845310928ec4707afe15bccc7ff5b979e7da69b6
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81345223"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919375"
 ---
 # <a name="_get_dstbias"></a>_get_dstbias
 
-Gün ışığından yararlanma saatini saniyeler içinde alır.
+Gün ışığından yararlanma saati sapmasını saniye cinsinden alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,30 +52,30 @@ error_t _get_dstbias( int* seconds );
 
 ### <a name="parameters"></a>Parametreler
 
-*Saniye*<br/>
-Gün ışığından yararlanma saati saniye içinde ofset.
+*saniyeden*<br/>
+Gün ışığından yararlanma zamanının saniye cinsinden değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir hata oluşursa başarılı veya **bir errno** değeri sıfır.
+Başarılıysa sıfır veya bir hata oluşursa **errno** değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_get_dstbias** işlevi gün ışığından yararlanma saatindesaniye sayısını tamsayı olarak alır. Gün ışığından yararlanma saati etkinse, varsayılan ofset 3600 saniyedir, bu da bir saat içinde saniye sayısıdır (ancak birkaç bölge iki saatlik bir mahsup gözlemlemektedir).
+**_Get_dstbias** işlevi, gün ışığından yararlanma saatine saniye sayısını tamsayı olarak alır. Gün ışığından yararlanma saati etkin ise, varsayılan değer 3600 saniyedir ve bu da bir saatteki saniye sayısıdır (birkaç bölge iki saatlik bir sapmayı gözlemlebilse de).
 
-*Saniye* **NULL**ise, geçersiz parametre işleyicisi [Parametre Doğrulama](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL için errno** ayarlar ve **EINVAL** döndürür. **EINVAL**
+*Saniyeler* **null**ise, [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı şekilde geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
 
-Makro **_dstbias** veya __dstbias amortismana __dstbias **işlevi**yerine bu işlevi kullanmanızı öneririz.
+Makro **_dstbias** veya kullanım dışı işlev **__dstbias**yerine bu işlevi kullanmanızı öneririz.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_dstbias**|\<time.h>|
+|**_get_dstbias**|\<Time. h>|
 
-Daha fazla bilgi için [Uyumluluk'a](../../c-runtime-library/compatibility.md)bakın.
+Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

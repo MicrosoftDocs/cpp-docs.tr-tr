@@ -12,7 +12,7 @@ api_location:
 - msvcr90.dll
 - msvcr100.dll
 - msvcr80.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -22,16 +22,16 @@ f1_keywords:
 helpviewer_keywords:
 - __pctype_func
 ms.assetid: d52b8add-d07d-4516-a22f-e836cde0c57f
-ms.openlocfilehash: 78562a29c89abe5b649444ae9223cf219488e009
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 67447823b0322e647784cdbe0f3f7228e1c5fb34
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81349204"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919239"
 ---
 # <a name="__pctype_func"></a>__pctype_func
 
-Bir karakter sınıflandırma bilgisi dizisi için bir işaretçi alır.
+Bir karakter sınıflandırma bilgileri dizisine bir işaretçi alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,19 +42,19 @@ const unsigned short *__pctype_func(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Karakter sınıflandırma bilgileri dizisi için bir işaretçi.
+Karakter sınıflandırma bilgileri dizisine yönelik bir işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karakter sınıflandırma tablosundaki bilgiler yalnızca dahili kullanım içindir ve türündeki `char`karakterleri sınıflandıran çeşitli işlevler tarafından kullanılır. Daha fazla bilgi `Remarks` için [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)bölümüne bakın.
+Karakter sınıflandırma tablosundaki bilgiler yalnızca dahili kullanım içindir ve türü `char`karakterleri sınıflandırmakta olan çeşitli işlevler tarafından kullanılır. Daha fazla bilgi için `Remarks` [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)bölümüne bakın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|__pctype_func|ctype.h|
+|__pctype_func|CType. h|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

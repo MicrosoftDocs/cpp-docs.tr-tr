@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -39,16 +39,16 @@ helpviewer_keywords:
 - _fputtc_nolock function
 - _fputwc_nolock function
 ms.assetid: c63eb3ad-58fa-46d0-9249-9c25f815eab9
-ms.openlocfilehash: f1ad79a1517783a48de887ccf2294d7a8018f70e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e25539bf6c6d590a787615e091ec68753cd1c93e
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81346250"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82920133"
 ---
 # <a name="_fputc_nolock-_fputwc_nolock"></a>_fputc_nolock, _fputwc_nolock
 
-İş parçacığı kilitlemeden bir akışa karakter yazar.
+İş parçacığını kilitlemeden akışa bir karakter yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,23 +65,23 @@ wint_t _fputwc_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*C*<br/>
+*,*<br/>
 Yazılacak karakter.
 
-*Akışı*<br/>
-**DOSYA** yapısına işaretçi.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri yazılan karakteri döndürür. Hata bilgileri için [bkz: fputc, fputwc](fputc-fputwc.md).
+Bu işlevlerin her biri yazılan karakteri döndürür. Hata bilgileri için bkz. [fputc, fputwc](fputc-fputwc.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_fputc_nolock** ve **_fputwc_nolock** **fputc** ve **fputwc**ile aynıdır , sırasıyla, diğer iş parçacıkları tarafından girişime karşı korumalı değildir dışında. Diğer iş parçacığı kilitleme yükü ne olursa olsun onlar daha hızlı olabilir. Bu işlevleri yalnızca tek iş parçacığı uygulamaları gibi iş parçacığı güvenli bağlamlarda veya arama kapsamının iş parçacığı yalıtımını zaten işlediği durumlarda kullanın.
+**_fputc_nolock** ve **_fputwc_nolock** , sırasıyla **fputc** ve **fputwc**ile aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmazlar. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
-Akış ANSI modunda açıldığında iki işlev aynı şekilde çalışır. **_fputc_nolock** şu anda bir UNICODE akışına çıkışı desteklemiyor.
+Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **_fputc_nolock** , şu anda UNICODE bir akışa çıktıyı desteklemez.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -93,10 +93,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fputc_nolock**|\<stdio.h>|
-|**_fputwc_nolock**|\<stdio.h> \<veya wchar.h>|
+|**_fputc_nolock**|\<stdio. h>|
+|**_fputwc_nolock**|\<stdio. h> veya \<wchar. h>|
 
-Konsol, Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Konsolla ilişkili standart akış kolları**stdin,** **stdout**ve **stderr,** C çalışma zamanı işlevleri UWP uygulamalarında kullanamadan önce yeniden yönlendirilmelidir. Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Bu konsol ile ilişkili standart akış tutamaçları (**stdin**, **stdout**ve **stderr**), C çalışma zamanı işlevlerinin bunları UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -125,6 +125,6 @@ This is a test of _fputc_nolock!!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>
 [putc, putwc](putc-putwc.md)<br/>

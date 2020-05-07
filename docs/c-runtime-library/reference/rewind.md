@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -29,16 +29,16 @@ helpviewer_keywords:
 - file pointers [C++], repositioning
 - file pointers [C++]
 ms.assetid: 1a460ce1-28d8-4b5e-83a6-633dca29c28a
-ms.openlocfilehash: 4b99dd1101727c3ba7d501dffc5abe22edf7f7ff
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 645b8bf105641b9f13a9f9fc0605e6b8526b4b56
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338099"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82917764"
 ---
 # <a name="rewind"></a>geri sar
 
-Dosya işaretçisini bir dosyanın başına yeniden konumlandırın.
+Dosya işaretçisini bir dosyanın başlangıcına konumlandırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,36 +50,36 @@ void rewind(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akışı*<br/>
-**DOSYA** yapısı için işaretçi.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Geri **sarma** *işlevi, akışla* ilişkili dosya işaretçisini dosyanın başına yeniden konumlandırDı. **Geri sarma** çağrısı,
+**Geri sarma** işlevi, *akış* ile ilişkili dosya işaretçisini dosyanın başlangıcına göre konumlandırır. **Geri sarma** çağrısı şuna benzer
 
-**(void) fseek(** _akarsu_**, 0L, SEEK_SET);**
+**(void) fseek (** _Stream_**, 0l, SEEK_SET);**
 
-Ancak, [fseek](fseek-fseeki64.md)aksine, **geri sarma** akışı için hata göstergeleri yanı sıra dosya sonu göstergesi temizler. Ayrıca, [fseek](fseek-fseeki64.md)aksine, **geri sarma** işaretçi başarıyla taşınmış olup olmadığını belirtmek için bir değer döndürmez.
+Ancak, [fseek](fseek-fseeki64.md)aksine **geri sarma** , akış için hata göstergelerini ve dosya sonu göstergesini temizler. Ayrıca, [fseek](fseek-fseeki64.md)'ın aksine, **geri sarma** , işaretçinin başarıyla taşındığını göstermek için bir değer döndürmez.
 
-Klavye arabelleği temizlemek için, varsayılan olarak klavye ile ilişkili akış **stdin**ile **geri sarma** kullanın.
+Klavye arabelleğini temizlemek için, varsayılan olarak klavye ile ilişkili akış **stdin**ile **geri sarma** kullanın.
 
-Akış bir **NULL** işaretçisiyse, Geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev döndürür ve **errno** **EINVAL**olarak ayarlanır.
+Stream **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-Bu ve diğer hata kodları hakkında bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
+Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**rewind**|\<stdio.h>|
+|**rewind**|\<stdio. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -123,4 +123,4 @@ The values read are: 1 and -37
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>

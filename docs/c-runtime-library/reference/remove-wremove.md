@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -36,12 +36,12 @@ helpviewer_keywords:
 - wremove function
 - remove function
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
-ms.openlocfilehash: 6a3d7ea81b2f6b1a7e87c706ca883394e02dff3a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bf3eedaa9c24e7385686e2343857e69171e43090
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338144"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82917836"
 ---
 # <a name="remove-_wremove"></a>kaldır, _wremove
 
@@ -60,24 +60,24 @@ int _wremove(
 
 ### <a name="parameters"></a>Parametreler
 
-*Yolu*<br/>
-Dosyanın yolu kaldırılacak.
+*Yolun*<br/>
+Kaldırılacak dosyanın yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosya başarıyla silinirse, bu işlevlerin her biri 0 döndürür. Aksi takdirde, -1 döndürür ve **eacces'e** **errno'yu** ayarlayıp, yolun salt okunur dosyayı belirttiğini, bir dizini belirlediğini veya dosyanın açık olduğunu veya dosya adının veya yolun bulunamadığını belirtmek için **ENOENT'e** ayarlar.
+Bu işlevlerin her biri, dosya başarıyla silinirse 0 döndürür. Aksi takdirde,-1 döndürür ve **errno** 'ya, yolun bir salt okunurdur dosyası belirtdüğünü, bir dizin olduğunu veya dosyanın açık olduğunu ya da dosya adının ya da Yolun bulunamadığını **göstermek üzere olduğunu** belirtir. **ENOENT**
 
-Bu ve diğer iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bakın.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kaldırma** *işlevi, yol* tarafından belirtilen dosyayı siler. **_wremove** **_remove**geniş karakterli bir versiyonudur; **_wremove** *yol* bağımsız değişkeni geniş karakterli bir dizedir. **_wremove** ve **_remove** aynı şekilde davranan. Bir dosyanın silinemeden önce tüm tutamaçlarının kapatılması gerekir.
+**Remove** işlevi, yol tarafından belirtilen dosyayı siler *.* **_wremove** , **_remove**geniş karakterli bir sürümüdür; _wremove *yol* bağımsız değişkeni **_wremove** , geniş karakterli bir dizedir. **_wremove** ve **_remove** aynı şekilde davranır. Bir dosya silinmeden önce tüm işleyicilerin kapatılması gerekir.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tremove**|**remove**|**remove**|**_wremove**|
 
@@ -85,14 +85,14 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**remove**|\<stdio.h> \<veya io.h>|
-|**_wremove**|\<stdio.h> \<veya wchar.h>|
+|**remove**|\<stdio. h> veya \<GÇ. h>|
+|**_wremove**|\<stdio. h> veya \<wchar. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -111,7 +111,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_removetxt"></a>Giriş: crt_remove.txt
+### <a name="input-crt_removetxt"></a>Giriş: crt_remove. txt
 
 ```Input
 This file will be deleted.
@@ -125,5 +125,5 @@ Deleted 'CRT_REMOVE.TXT'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya Işleme](../../c-runtime-library/file-handling.md)<br/>
+[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
 [_unlink, _wunlink](unlink-wunlink.md)<br/>

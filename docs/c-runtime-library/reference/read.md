@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -31,16 +31,16 @@ helpviewer_keywords:
 - reading data [C++]
 - files [C++], reading
 ms.assetid: 2ce9c433-57ad-47fe-9ac1-4a7d4c883d30
-ms.openlocfilehash: db3726b85bb4ba7c8e9a691bef3fb063ec5709c9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2f43fc54a0092afc6ab5855c160a7879747faef7
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338127"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919513"
 ---
 # <a name="_read"></a>_read
 
-Dosyadaki verileri okur.
+Bir dosyadan verileri okur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,44 +54,44 @@ int _read(
 
 ### <a name="parameters"></a>Parametreler
 
-*Fd*<br/>
-Açık dosyaya atıfta bulunan dosya tanımlayıcısı.
+*FD*<br/>
+Açık dosyaya başvuran dosya tanımlayıcısı.
 
-*Arabellek*<br/>
+*arabelleğin*<br/>
 Veriler için depolama konumu.
 
 *buffer_size*<br/>
-Okunacak maksimum bayt sayısı.
+Okunacak en fazla bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_read,** dosyada *buffer_size* bayttan az kalmışsa veya dosya metin modunda açılmışsa *buffer_size'den* az olabilecek okunan bayt sayısını döndürür. Metin modunda, her satır satır `\r\n` besleme çifti tek bir satır `\n`besleme karakteri ile değiştirilir. İade değerinde yalnızca tek satır besleme karakteri sayılır. Değiştirme dosya işaretçisini etkilemez.
+**_read** okunan bayt sayısını döndürür; bu, dosyada *Buffer_size* bayttan daha az veya dosya metin modunda açılırsa *Buffer_size* daha az olabilir. Metin modunda, her satır başı satır besleme çifti `\r\n` tek satırlık bir besleme karakteriyle `\n`değiştirilmiştir. Dönüş değerinde yalnızca tek satırlık akış karakteri sayılır. Değiştirme dosya işaretçisini etkilemez.
 
-İşlev dosyanın sonunda okumaya çalışırsa, 0 döndürür. *fD* geçerli değilse, dosya okumak için açık değilse veya dosya kilitliyse, geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, işlev -1 döndürür ve **EBADF** **için errno** ayarlar.
+İşlev dosyanın sonunda okumaya çalışırsa, 0 döndürür. *FD* geçerli değilse, dosya okuma için açık değildir veya dosya kilitliyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev-1 döndürür ve **errno** 'U **EBADF**olarak ayarlar.
 
-*Arabellek* **NULL**ise veya *buffer_size* > **INT_MAX,** geçersiz parametre işleyicisi çağrılır. Yürütmedevam etmesine izin verilirse, işlev -1 döndürür ve **errno** **EINVAL**olarak ayarlanır.
+*Buffer* **null**ise veya *Buffer_size* > **INT_MAX**, geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-Bu ve diğer iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_read** işlevi *fd*ile ilişkili dosyadan *arabellek* içine *buffer_size* bayt maksimum okur. Okuma işlemi, verilen dosyayla ilişkili dosya işaretçisinin geçerli konumunda başlar. Okuma işleminden sonra, dosya işaretçisi bir sonraki okunmamış karakteri işaret eder.
+**_Read** işlevi *FD*ile ilişkili dosyadan *arabelleğe* en fazla *Buffer_size* bayt okur. Okuma işlemi, belirtilen dosyayla ilişkili dosya işaretçisinin geçerli konumunda başlar. Okuma işleminden sonra, dosya işaretçisi sonraki okunmamış karakteri işaret eder.
 
-Dosya metin modunda açılmışsa, **_read** dosya sonu göstergesi olarak kabul edilen bir CTRL+Z karakteriyle karşılaştığında okuma sona erer. Dosya sonu göstergesini temizlemek için [_lseek](lseek-lseeki64.md) kullanın.
+Dosya metin modunda açılırsa, **_read** dosya sonu göstergesi olarak kabul EDILEN bir CTRL + Z karakteriyle karşılaştığında okuma işlemi sonlanır. Dosya sonu göstergesini temizlemek için [_lseek](lseek-lseeki64.md) kullanın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_read**|\<io.h>|
+|**_read**|\<GÇ. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -133,7 +133,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_readtxt"></a>Giriş: crt_read.txt
+### <a name="input-crt_readtxt"></a>Giriş: crt_read. txt
 
 ```Input
 Line one.
@@ -148,7 +148,7 @@ Read 19 bytes from file
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Düşük Seviyeli G/Ç](../../c-runtime-library/low-level-i-o.md)<br/>
+[Alt düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [fread](fread.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>

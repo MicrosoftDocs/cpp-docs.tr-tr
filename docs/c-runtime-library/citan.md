@@ -13,7 +13,7 @@ api_location:
 - msvcr90.dll
 - msvcr120.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -25,16 +25,16 @@ helpviewer_keywords:
 - CItan intrinsic
 - _CItan intrinsic
 ms.assetid: d1ea3113-50a2-45a6-b6bc-680fcdcc0928
-ms.openlocfilehash: 8c6cc0a51d6ef2132172164306b84f73799da729
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 65cce8b094a1508566e2de7162b9e8e76712742a
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81349360"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82918327"
 ---
 # <a name="_citan"></a>_CItan
 
-Kayan nokta yığınındaki en üst değerin teğetini hesaplar.
+Kayan nokta yığınındaki en üstteki değerin tanjantını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,11 +44,11 @@ void __cdecl _CItan();
 
 ## <a name="remarks"></a>Açıklamalar
 
-[Tan](../c-runtime-library/reference/tan-tanf-tanl.md) işlevinin bu sürümü derleyicinin anladığı özel bir çağrı kuralına sahiptir. İşlev yürütmeyi hızlandırıyor, çünkü kopyaların oluşturulmasını engeller ve kayıt tahsisine yardımcı olur.
+[Tan](../c-runtime-library/reference/tan-tanf-tanl.md) işlevinin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. İşlev, kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmaya engel olduğundan yürütmeyi hızlandırır.
 
-Elde edilen değer kayan nokta yığınının üstüne itilir.
+Elde edilen değer, kayan nokta yığınının en üstüne gönderilir.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

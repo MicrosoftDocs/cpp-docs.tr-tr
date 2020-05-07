@@ -13,7 +13,7 @@ api_location:
 - msvcr80.dll
 - msvcr110_clr0400.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -23,16 +23,16 @@ f1_keywords:
 helpviewer_keywords:
 - __p__commode
 ms.assetid: 4380acb8-e3e4-409c-a60f-6205ac5189ce
-ms.openlocfilehash: fa589c1972d27854e3f794d8283f49d9db5d053a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 057a0146aed87a50fc2e8c444b97a8b7b51eada1
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81349314"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919497"
 ---
 # <a name="__p__commode"></a>__p__commode
 
-Dosya G/Ç işlemleri için varsayılan `_commode` *dosya işleme modunu* belirten genel değişkene işaret eder.
+Dosya g/ `_commode` ç işlemleri için varsayılan *dosya kaydetme modunu* belirten genel değişkene işaret eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,18 +43,18 @@ int * __p__commode(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Genel değişkene `_commode` işaretçi.
+`_commode` Genel değişkene yönelik işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev `__p__commode` yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
+`__p__commode` İşlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
 
-Dosya işleme modu, kritik verilerin diske yazıldığında belirtilir. Daha fazla bilgi için [bkz.](../c-runtime-library/reference/fflush.md)
+Dosya tamamlama modu, kritik verilerin diske ne zaman yazıldığını belirtir. Daha fazla bilgi için bkz. [fflush](../c-runtime-library/reference/fflush.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|__p\__commode|dahili.h|
+|__p\__commode|iç. h|

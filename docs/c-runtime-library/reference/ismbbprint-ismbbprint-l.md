@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -34,16 +34,16 @@ helpviewer_keywords:
 - _ismbbprint function
 - _ismbbprint_l function
 ms.assetid: d08a061c-18a8-48f2-a75d-bff4870aec9d
-ms.openlocfilehash: 8da69247d090c2067b0efda3c47f92bbeb729e49
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 63aa7d9af3b756bc7807cae55fe969d492ec43cf
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81343531"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82918647"
 ---
 # <a name="_ismbbprint-_ismbbprint_l"></a>_ismbbprint, _ismbbprint_l
 
-Belirtilen çok baytlı karakterin yazdırma karakteri olup olmadığını belirler.
+Belirtilen çok baytlı karakterin bir yazdırma karakteri olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,34 +59,34 @@ int _ismbbprint_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*C*<br/>
-İnteger test edilecek.
+*,*<br/>
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbbprint** ifade varsa sıfır olmayan bir değer döndürür:
+**_ismbbprint** ifadesi sıfır dışında bir değer döndürür:
 
 `isprint(c) || _ismbbkprint(c)`
 
-*c*için sıfır değildir, yoksa 0'dır. **_ismbbprint,** yerel e-regörere bağlı herhangi bir davranış için geçerli yerel alanı kullanır. **_ismbbprint_l,** bunun yerine geçirilen yerel alanı kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+*c*için sıfır veya değilse 0 olur. **_ismbbprint** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_ismbbprint_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbbprint**|\<mbctype.h>|
-|**_ismbbprint_l**|\<mbctype.h>|
+|**_ismbbprint**|\<Mbctype. h>|
+|**_ismbbprint_l**|\<Mbctype. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Rutinleri](../../c-runtime-library/ismbb-routines.md)<br/>
+[_ismbb yordamlar](../../c-runtime-library/ismbb-routines.md)<br/>

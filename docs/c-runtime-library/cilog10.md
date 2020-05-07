@@ -13,7 +13,7 @@ api_location:
 - msvcrt.dll
 - msvcr110.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -25,16 +25,16 @@ helpviewer_keywords:
 - _CIlog10 intrinsic
 - CIlog10 intrinsic
 ms.assetid: 05d7fcaa-3cff-4cc5-8d44-015e7cacba24
-ms.openlocfilehash: 785b72cd26df85575f9689e5846cce48963084ce
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: ba5868892a352f071774a817e375c1f43505ed02
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745418"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82918016"
 ---
 # <a name="_cilog10"></a>_CIlog10
 
-Yığındaki `log10` en üst değerde bir işlem gerçekleştirir.
+Yığındaki en `log10` üstteki değerde bir işlem gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,11 +44,11 @@ void __cdecl _CIlog10();
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlevin `log10` bu sürümüderleyicinin anladığı özel bir çağrı kuralına sahiptir. İşlev yürütmeyi hızlandırıyor, çünkü kopyaların oluşturulmasını engeller ve kayıt tahsisine yardımcı olur.
+`log10` İşlevin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. İşlev, kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmaya engel olduğundan yürütmeyi hızlandırır.
 
-Elde edilen değer yığının üstüne itilir.
+Elde edilen değer yığının en üstüne gönderilir.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

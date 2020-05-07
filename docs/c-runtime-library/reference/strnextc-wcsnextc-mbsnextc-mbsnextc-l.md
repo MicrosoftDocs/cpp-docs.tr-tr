@@ -20,7 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -50,19 +50,19 @@ helpviewer_keywords:
 - mbsnextc_l function
 - wcsnextc function
 ms.assetid: e3086173-9eb5-4540-a23a-5d866bd05340
-ms.openlocfilehash: 69c9c3d89f2d74c133558eab99d6687fd0055ca2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4017dc4f72a0072df8d0969406169a26c1da43ac
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364495"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919272"
 ---
 # <a name="_strnextc-_wcsnextc-_mbsnextc-_mbsnextc_l"></a>_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
 
-Bir dizedeki bir sonraki karakteri bulur.
+Dizedeki bir sonraki karakteri bulur.
 
 > [!IMPORTANT]
-> **_mbsnextc** ve **_mbsnextc_l,** Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> **_mbsnextc** ve **_mbsnextc_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -84,25 +84,25 @@ unsigned int _mbsnextc_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*<br/>
+*üstbilgisine*<br/>
 Kaynak dize.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri *str*sonraki karakterin ayrılmaz değerini döndürür.
+Bu işlevlerin her biri *Str*içindeki bir sonraki karakterin tamsayı değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_mbsnextc** işlevi, dize işaretçisini ilerletmeden bir sonraki çok bayt *karakterinin tamsayı*değerini döndürür. **_mbsnextc,** şu anda kullanılmakta olan [çok bayt kod sayfasına](../../c-runtime-library/code-pages.md) göre çok bayt karakter dizilerini tanır.
+**_Mbsnextc** işlevi, dize işaretçisini ilerletmeksizin *Str*içindeki bir sonraki çok baytlı karakterin tamsayı değerini döndürür. **_mbsnextc** , kullanımda olan [çok baytlı kod sayfasına](../../c-runtime-library/code-pages.md) göre çok baytlı karakter dizilerini tanır.
 
-*str* **NULL**ise, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, **errno** **EINVAL** olarak ayarlanır ve işlev 0 döndürür.
+*Str* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev 0 döndürür.
 
-**Güvenlik Notu** Bu API, arabellek taşma sorununun getirdiği potansiyel bir tehdide neden olabilir. Arabellek taşma sorunları, sık karşılaşılan bir sistem saldırısı yöntemidir ve bu da haksız bir ayrıcalık yükselmesine neden olabilir. Daha fazla bilgi için [bkz.](/windows/win32/SecBP/avoiding-buffer-overruns)
+**Güvenlik notunun** Bu API, bir arabellek taşması sorunu ile ilgili olası bir tehdit doğurur. Arabellek taşması sorunları, sistem saldırılarına karşı sık kullanılan bir yöntemdir ve bu da garanti edilmemiş ayrıcalık yükselmesine neden olur. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -110,25 +110,25 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsnextc**|**_strnextc**|**_mbsnextc**|**_wcsnextc**|
 
-**_strnextc** ve **_wcsnextc** **_mbsnextc**tek bayt karakterli dize ve geniş karakterli dize sürümleridir. **_wcsnextc** *str*sonraki geniş karakterin tamsayı değerini döndürür; **_strnextc,** str'deki bir sonraki tek bayt karakterin tamsayı değerini *döndürür.* **_strnextc** ve **_wcsnextc** yalnızca bu eşleme için sağlanır ve başka türlü kullanılmamalıdır. Daha fazla bilgi için [genel metin eşlemelerini](../../c-runtime-library/using-generic-text-mappings.md) ve Genel [Metin Eşlemelerini](../../c-runtime-library/generic-text-mappings.md)Kullanma'ya bakın.
+**_strnextc** ve **_wcsnextc** , **_mbsnextc**tek baytlık karakter dizesidir ve geniş karakterli dize sürümleridir. **_wcsnextc** *Str*içindeki bir sonraki geniş karakterin tamsayı değerini döndürür. **_strnextc** *Str*içindeki bir sonraki tek baytlı karakterin tamsayı değerini döndürür. **_strnextc** ve **_wcsnextc** yalnızca bu eşleme için sağlanır ve aksi halde kullanılmamalıdır. Daha fazla bilgi için bkz. [Genel metin eşlemelerini](../../c-runtime-library/using-generic-text-mappings.md) ve [Genel metin eşlemelerini](../../c-runtime-library/generic-text-mappings.md)kullanma.
 
-**_mbsnextc_l,** bunun yerine geçirilen yerel parametreyi kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**_mbsnextc_l** , bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnextc**|\<mbstring.h>|
-|**_mbsnextc_l**|\<mbstring.h>|
-|**_strnextc**|\<tchar.h>|
-|**_wcsnextc**|\<tchar.h>|
+|**_mbsnextc**|\<mbstring. h>|
+|**_mbsnextc_l**|\<mbstring. h>|
+|**_strnextc**|\<Tchar. h>|
+|**_wcsnextc**|\<Tchar. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_strdec, _wcsdec, _mbsdec, _mbsdec_l](strdec-wcsdec-mbsdec-mbsdec-l.md)<br/>
 [_strinc, _wcsinc, _mbsinc, _mbsinc_l](strinc-wcsinc-mbsinc-mbsinc-l.md)<br/>

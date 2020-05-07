@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -34,16 +34,16 @@ helpviewer_keywords:
 - _ismbbtrail_l function
 - ismbbtrail function
 ms.assetid: dfdd0292-960b-4c1d-bf11-146e0fc80247
-ms.openlocfilehash: 5e8615adf5d17986c1a52658fe5d680cc326976a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 08229b4a35634193810f7c24a3f8749fba034872
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81343396"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82918685"
 ---
 # <a name="_ismbbtrail-_ismbbtrail_l"></a>_ismbbtrail, _ismbbtrail_l
 
-Baytın çok bayt karakterli bir bayt olup olmadığını belirler.
+Bir baytın çok baytlı bir karakterin sondaki baytı olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,34 +59,34 @@ int _ismbbtrail_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*C*<br/>
-Test edilecek bir sonda.
+*,*<br/>
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbbtrail,** tamsayı *c* çok bayt karakterin ikinci baytıysa sıfır olmayan bir değer verir. Örneğin, yalnızca kod sayfası 932'de geçerli aralıklar 0x40 - 0x7E ve 0x80 -0xFC'dir.
+**_ismbbtrail** *, tam sayı* karakter bir çok baytlı karakterin ikinci baytı ise sıfır dışında bir değer döndürür. Örneğin, yalnızca kod sayfası 932 ' de geçerli aralıklar 0x40 ile 0x7E ve 0x80 ile 0xFC arasındadır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_ismbbtrail,** yerele bağımlı davranış için geçerli yerel alanı kullanır. **_ismbbtrail_l,** bunun yerine geçen yerel alanı kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**_ismbbtrail** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_ismbbtrail_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_ismbbtrail**|\<mbctype.h> \<veya mbstring.h>|\<ctype.h>,* \<limits.h \<>, stdlib.h>|
-|**_ismbbtrail_l**|\<mbctype.h> \<veya mbstring.h>|\<ctype.h>,* \<limits.h \<>, stdlib.h>|
+|**_ismbbtrail**|\<Mbctype. h> veya \<mbstring. h>|\<CType. h>, * \<limit. h>, \<stdlib. h>|
+|**_ismbbtrail_l**|\<Mbctype. h> veya \<mbstring. h>|\<CType. h>, * \<limit. h>, \<stdlib. h>|
 
-\*Test koşulları için manifesto sabitleri için.
+\*Test koşullarına yönelik bildirim sabitleri için.
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Rutinleri](../../c-runtime-library/ismbb-routines.md)<br/>
+[_ismbb yordamlar](../../c-runtime-library/ismbb-routines.md)<br/>

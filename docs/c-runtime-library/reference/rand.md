@@ -17,7 +17,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 - ntoskrnl.exe
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -31,16 +31,16 @@ helpviewer_keywords:
 - rand function
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: 944c512d0102b459afc2924ef7515311e46cd43c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8f2a4d00310671e8ba80055e38e479e348562ac2
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338156"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919521"
 ---
 # <a name="rand"></a>rand
 
-Tanınmış ve tamamen tekrarlanabilir bir algoritma kullanarak pseudorandom bir sayı oluşturur. Bu işlevin daha programlı güvenli bir sürümü mevcuttur; [bkz. rand_s](rand-s.md). **Rand** tarafından oluşturulan sayılar şifreleme olarak güvenli değildir. Daha kriptografik olarak güvenli rasgele sayı üretimi için, [rand_s'ı](rand-s.md) veya [ \< ](../../standard-library/random.md)C++ Standart Kitaplığı'nda rasgele>olarak bildirilen işlevleri kullanın.
+İyi bilinen ve tamamen tekrarlanabilir bir algoritma kullanarak bir pseudportaıdom numarası üretir. Bu işlevin daha programlı olarak güvenli bir sürümü kullanılabilir; bkz. [rand_s](rand-s.md). **S_SAYI_ÜRET** tarafından oluşturulan sayılar şifreli olarak güvenli değildir. Daha fazla şifreli rastgele sayı oluşturma için [rand_s](rand-s.md) veya C++ standart kitaplığı 'nda belirtilen işlevleri [ \<rastgele>](../../standard-library/random.md)kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,23 +50,23 @@ int rand( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**rand** yukarıda açıklandığı gibi pseudorandom bir sayı döndürür. Hata iadesi yok.
+**S_SAYI_ÜRET** , yukarıda açıklandığı gibi pseudportaıdom numarasını döndürür. Hata döndürme yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Rand** işlevi 0 ile **RAND_MAX** aralığında bir psödorandom tamsayı döndürür (32767). Rand'i aramadan önce psödorastgele sayı **rand**üretecisini tohumlamak için [kum](srand.md) işlevini kullanın.
+**S_SAYI_ÜRET** işlevi, 0 ile **RAND_MAX** (32767) aralığında bir pseudportaıdom tamsayı döndürür. **S_SAYI_ÜRET**çağrılmadan önce pseudportadom-Number üreticisini temel almak için [srand](srand.md) işlevini kullanın.
 
-**Rand** işlevi iyi bilinen bir sıra oluşturur ve şifreleme işlevi olarak kullanmak için uygun değildir. Daha kriptografik olarak güvenli rasgele sayı üretimi için, [rand_s'ı](rand-s.md) veya [ \< ](../../standard-library/random.md)C++ Standart Kitaplığı'nda rasgele>olarak bildirilen işlevleri kullanın. **Rand'in** nesi olduğu ve rasgele \<> bu eksiklikleri nasıl giderdi hakkında bilgi için [rand Considered Harmful](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful)başlıklı bu videoya bakın.
+**S_SAYI_ÜRET** işlevi iyi bilinen bir dizi oluşturur ve şifreleme işlevi olarak kullanım için uygun değildir. Daha fazla şifreli rastgele sayı oluşturma için [rand_s](rand-s.md) veya C++ standart kitaplığı 'nda belirtilen işlevleri [ \<rastgele>](../../standard-library/random.md)kullanın. **S_SAYI_ÜRET** ile ilgili nelerin yanlış olduğu ve rastgele> bu \<eksiklikleri nasıl ele aldığı hakkında bilgi için bkz. [S_sayı_üret 'in zararlı olduğu kabul edilen](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful)bu video.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**Rand**|\<stdlib.h>|
+|**ran**|\<Stdlib. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

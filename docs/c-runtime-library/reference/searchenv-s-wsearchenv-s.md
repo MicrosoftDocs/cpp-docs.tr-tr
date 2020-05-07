@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-environment-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -42,19 +42,19 @@ helpviewer_keywords:
 - _searchenv_s function
 - environment paths
 ms.assetid: 47f9fc29-250e-4c09-b52e-9e9f0ef395ca
-ms.openlocfilehash: 3d526c546e1496b3b13b14a12c9025cbd0347cd2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5dd21013c8910ba07e2d23606af49bc80458dbc6
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81332394"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82918991"
 ---
 # <a name="_searchenv_s-_wsearchenv_s"></a>_searchenv_s, _wsearchenv_s
 
-Ortam yollarını kullanarak bir dosyayı arar. [CRT'deki](searchenv-wsearchenv.md) [Güvenlik Özellikleri'nde](../../c-runtime-library/security-features-in-the-crt.md)açıklandığı gibi, _searchenv _wsearchenv bu sürümlerinde güvenlik geliştirmeleri vardır.
+Ortam yollarını kullanarak bir dosya arar. Bu _searchenv sürümleri [, _WSEARCHENV](searchenv-wsearchenv.md) [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -88,46 +88,46 @@ errno_t _wsearchenv_s(
 ### <a name="parameters"></a>Parametreler
 
 *filename*<br/>
-Aranacak dosyanın adı.
+Arama yapılacak dosyanın adı.
 
-*Varname*<br/>
+*varname*<br/>
 Aranacak ortam.
 
-*Yoladı*<br/>
-Tüm yolu depolamak için arabellek.
+*PathName*<br/>
+Yolun tamamını depolayan arabellek.
 
 *numberOfElements*<br/>
-*Yol adı* arabelleği boyutu.
+*Yol adı* arabelleğinin boyutu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır; hata bir hata kodu.
+Başarılıysa sıfır; hatada hata kodu.
 
-*Dosya adı* boş bir dizeise, iade değeri **ENOENT'tir.**
+*Dosya adı* boş bir **dize ise,** dönüş değeri kaydedilir.
 
-### <a name="error-conditions"></a>Hata Koşulları
+### <a name="error-conditions"></a>Hata koşulları
 
-|*filename*|*Varname*|*Yoladı*|*numberOfElements*|Döndürülen değer|Yol *adının* içeriği|
+|*filename*|*varname*|*PathName*|*numberOfElements*|Döndürülen değer|*Yol adının* içeriği|
 |----------------|---------------|----------------|------------------------|------------------|----------------------------|
-|herhangi bir|herhangi bir|**Null**|herhangi bir|**Eınval**|yok|
-|**Null**|herhangi bir|herhangi bir|herhangi bir|**Eınval**|değiştirilmedi|
-|herhangi bir|herhangi bir|herhangi bir|<= 0|**Eınval**|değiştirilmedi|
+|kaydedilmemiş|kaydedilmemiş|**DEĞER**|kaydedilmemiş|**EıNVAL**|yok|
+|**DEĞER**|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
+|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|<= 0|**EıNVAL**|değiştirilmedi|
 
-Bu hata koşullarından herhangi biri oluşursa, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütme devam etmesine izin verilirse, bu işlevler EINVAL **için errno** ayarlayın ve **EINVAL** döndürün. **EINVAL**
+Bu hata koşullarından herhangi biri oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_searchenv_s** yordamolarak belirtilen etki alanında hedef dosya yı arar. *Varname* değişkeni, **PATH**, **LIB**ve **INCLUDE**gibi dizin yollarının listesini belirten herhangi bir ortam veya kullanıcı tanımlı değişken olabilir. **_searchenv_s** büyük/küçük harf duyarlı olduğundan, *varname* ortam değişkeninin durumuyla eşleşmelidir. *Varname,* işlemin ortamında tanımlanan bir ortam değişkeninin adı ile eşleşmiyorsa, işlev sıfır döndürür ve *yol adı* değişkeni değişmez.
+**_Searchenv_s** rutin, belirtilen etki alanındaki hedef dosyayı arar. *Varname* değişkeni, **Path**, **LIB**ve **Include**gibi dizin yollarının bir listesini belirten herhangi bir ortam veya Kullanıcı tanımlı değişken olabilir. **_Searchenv_s** , büyük/küçük harfe duyarlı olduğundan, *varname* ortam değişkeni durumuyla eşleşmelidir. *Varname* , işlemin ortamında tanımlanan bir ortam değişkeninin adı ile eşleşmiyorsa, işlev sıfır döndürür ve *yol adı* değişkeni değiştirilmez.
 
-Yordam, önce geçerli çalışma dizinindeki dosyayı arar. Dosyayı bulamazsa, çevre değişkeni tarafından belirtilen dizinler aracılığıyla sonraki bakar. Hedef dosya bu dizinlerden birindeyse, yeni oluşturulan yol *yol adına*kopyalanır. Dosya *adı* dosyası bulunamazsa, *yol adı* boş null-sonlandırılan dize içerir.
+Bu yordam, ilk olarak geçerli çalışma dizinindeki dosya için arama yapar. Dosyayı bulamazsa, ortam değişkeni tarafından belirtilen dizinlerde bir sonrakine bakar. Hedef dosya bu dizinlerden birinde ise, yeni oluşturulan yol, *yol adına*kopyalanır. Dosya *adı* dosyası bulunamazsa, *PathName* boş bir null ile sonlandırılmış dize içerir.
 
-*Yol adı* arabelleği, yapılandırılan yol adının tam uzunluğunu karşılamak için en az **_MAX_PATH** karakter uzunluğunda olmalıdır. Aksi takdirde, **_searchenv_s,** beklenmeyen davranışlara neden olan *yol adı* arabelleği aşabilir.
+*Yol* adı arabelleği, oluşturulan yol adının tam uzunluğuna uyum sağlamak için en az **_MAX_PATH** karakter uzunluğunda olmalıdır. Aksi takdirde, **_searchenv_s** *yol* arabelleğinin beklenmedik davranışa neden olduğu taşmayabilir.
 
-**_wsearchenv_s** **_searchenv_s**geniş karakterli bir versiyonudur; **_wsearchenv_s** bağımsız değişkenler geniş karakterli dizeleridir. **_wsearchenv_s** ve **_searchenv_s** aynı şekilde davranan.
+**_wsearchenv_s** , **_searchenv_s**geniş karakterli bir sürümüdür; **_wsearchenv_s** bağımsız değişkenler geniş karakterli dizelerdir. **_wsearchenv_s** ve **_searchenv_s** aynı şekilde davranır.
 
-C++'da, bu işlevleri kullanmak şablon aşırı yükleri ile basitleştirilir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkartabilir (boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir) ve eski, güvenli olmayan işlevleri yeni, güvenli karşılıklarıyla otomatik olarak değiştirebilirler. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
+C++ ' da, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -139,10 +139,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_searchenv_s**|\<stdlib.h>|
-|**_wsearchenv_s**|\<stdlib.h> \<veya wchar.h>|
+|**_searchenv_s**|\<Stdlib. h>|
+|**_wsearchenv_s**|\<Stdlib. h> veya \<wchar. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -182,7 +182,7 @@ C:\Program Files\Microsoft Visual Studio 2010\VC\BIN\CL.EXE
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dizin Kontrolü](../../c-runtime-library/directory-control.md)<br/>
+[Dizin denetimi](../../c-runtime-library/directory-control.md)<br/>
 [_searchenv, _wsearchenv](searchenv-wsearchenv.md)<br/>
 [getenv, _wgetenv](getenv-wgetenv.md)<br/>
 [_putenv, _wputenv](putenv-wputenv.md)<br/>

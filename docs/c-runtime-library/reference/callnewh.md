@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -26,16 +26,16 @@ f1_keywords:
 helpviewer_keywords:
 - _callnewh
 ms.assetid: 4dcb73e9-6384-4d12-a973-a8807d4de7a8
-ms.openlocfilehash: d93de7f963a370810ed3b30af04d6d602abf6313
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3990d4b15c25cfd6c753c2b1d44c112971ff59af
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81333660"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82918796"
 ---
 # <a name="_callnewh"></a>_callnewh
 
-Şu anda yüklenen *yeni işleyiciyi*çağırır.
+Şu anda yüklü olan *Yeni işleyiciyi*çağırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,31 +47,31 @@ int _callnewh(
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
-[Yeni işlecinin](../../cpp/new-operator-cpp.md) ayırmaya çalıştığı bellek miktarı.
+*boyutla*<br/>
+[Yeni işlecin](../../cpp/new-operator-cpp.md) ayırmaya çalıştığı bellek miktarı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|0|Hata: Yeni işleyici yüklenmedi veya yeni işleyici etkin değil.|
-|1|Başarı: Yeni işleyici yüklü ve etkin. Bellek ayırma yeniden denenebilir.|
+|0|Hata: hiçbir yeni işleyici yüklenmedi ya da etkin bir işleyici yok.|
+|1|Başarılı: yeni işleyici yüklendi ve etkin. Bellek ayırma yeniden denenebilir.|
 
 ## <a name="exceptions"></a>Özel durumlar
 
-Yeni *işleyici* bulunamazsa, bu işlev [bad_alloc](../../standard-library/bad-alloc-class.md) atar.
+Bu işlev, *yeni işleyici* bulunamıyorsa [bad_alloc](../../standard-library/bad-alloc-class.md) atar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-[Yeni işleç](../../cpp/new-operator-cpp.md) belleği başarıyla ayıramazsa *yeni işleyici* çağrılır. Yeni işleyici daha sonra sonraki ayırmaların başarılı olması için belleği serbest leştirmek gibi bazı uygun eylemi başlatabilir.
+Yeni [operatör](../../cpp/new-operator-cpp.md) belleği başarıyla ayıramazsa *yeni işleyici* çağrılır. Yeni işleyici daha sonra sonraki ayırmaların başarılı olması için belleği boşaltma gibi bazı uygun eylemleri başlatabilir.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|_callnewh|dahili.h|
+|_callnewh|iç. h|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

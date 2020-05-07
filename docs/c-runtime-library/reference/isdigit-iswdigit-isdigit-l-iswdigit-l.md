@@ -21,7 +21,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -45,16 +45,16 @@ helpviewer_keywords:
 - _ismbcdigit_l function
 - _isdigit_l function
 ms.assetid: 350b0093-843a-47b0-954e-c1776e8a3853
-ms.openlocfilehash: 139453b5f03af2b5ec02db715630adf1f6715716
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 70a370068ca05c430845a8eba83a73498384b067
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81343861"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82917594"
 ---
 # <a name="isdigit-iswdigit-_isdigit_l-_iswdigit_l"></a>isdigit, iswdigit, _isdigit_l, _iswdigit_l
 
-Bir tamsacın ondalık basamaklı bir karakteri temsil edip etmediğini belirler.
+Bir tamsayının ondalık basamak karakterini temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -77,44 +77,44 @@ int _iswdigit_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*C*<br/>
-Test etmek için sonda.
+*,*<br/>
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her *biri, c* ondalık basamaklı bir karakterin belirli bir temsiliyse sıfırsız döndürür. **c** ondalık basamak *c* ise sıfır olmayan bir değer döndürür (0 - 9). **iswdigit,** *ondalık* basamaklı bir karaktere karşılık gelen geniş bir karakterse sıfır olmayan bir değer döndürür. *C* test koşulunu karşılamazsa bu yordamların her biri 0 döndürür.
+Bu yordamların her biri, *c* , ondalık basamak karakterinin belirli bir gösterimiyse sıfır olmayan bir değer döndürür. *c* , ondalık basamak (0-9) ise, **IsDigit** sıfır dışında bir değer döndürür. *c* , ondalık basamaklı bir karaktere karşılık gelen geniş bir karakter ise, **ıswdigit** sıfır dışında bir değer döndürür. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
 
-**_l** sonek olan bu işlevlerin sürümleri, yerel e-çözüme bağlı davranışları için geçerli yerel alan yerine geçen yerel alanı kullanır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-*c* EOF değilse veya 0 ile 0xFF aralığında, dahil ise **isdigit** ve **_isdigit_l** davranışı tanımsızdır. Hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir iddiayı yükseltir.
+*C* 'nin EOF veya 0 ile 0xFF (dahil) aralığında olması halinde, **ısdigit** ve **_isdigit_l** davranışı tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istdigit**|**ısdigit**|[_ismbcdigit](ismbcalnum-functions.md)|**iswdigit**|
+|**_istdigit**|**isdigit**|[_ismbcdigit](ismbcalnum-functions.md)|**iswdigit**|
 |**_istdigit_l**|**_isdigit_l**|[_ismbcdigit_l](ismbcalnum-functions.md)|**_iswdigit_l**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ısdigit**|\<ctype.h>|
-|**iswdigit**|\<ctype.h> \<veya wchar.h>|
-|**_isdigit_l**|\<ctype.h>|
-|**_iswdigit_l**|\<ctype.h> \<veya wchar.h>|
+|**isdigit**|\<CType. h>|
+|**iswdigit**|\<CType. h> veya \<wchar. h>|
+|**_isdigit_l**|\<CType. h>|
+|**_iswdigit_l**|\<CType. h> veya \<wchar. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter Sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
-[olduğunu, isw Rutinleri](../../c-runtime-library/is-isw-routines.md)<br/>
+[Karakter sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[, isw yordamları](../../c-runtime-library/is-isw-routines.md)<br/>

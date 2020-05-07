@@ -26,7 +26,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -56,19 +56,19 @@ helpviewer_keywords:
 - ismbcalnum_l function
 - ismbcalpha_l function
 ms.assetid: 12d57925-aebe-46e0-80b0-82b84c4c31ec
-ms.openlocfilehash: 828c8b68855197f0c17202739f98a45e0abb929c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6e650c15ca2b7d3b448d5480a6b1f09769100171
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81343301"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82918551"
 ---
 # <a name="_ismbcalnum-_ismbcalnum_l-_ismbcalpha-_ismbcalpha_l-_ismbcdigit-_ismbcdigit_l"></a>_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
 
-Çok baytlı bir karakterin alfasayısal, alfa veya basamak karakteri olup olmadığını denetler.
+Çok baytlı bir karakterin alfasayısal, Alfa veya sayı karakteri olup olmadığını denetler.
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -104,43 +104,43 @@ int _ismbcdigit_l
 
 ### <a name="parameters"></a>Parametreler
 
-*C*<br/>
-Karakter test edilecek.
+*,*<br/>
+Sınanacak karakter.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Karakter test koşulunu karşılarsa, bu yordamların her biri sıfır olmayan bir değer döndürür. *C*<= 255 ve karşılık gelen **bir _ismbb** yordamı varsa (örneğin, **_ismbcalnum** **_ismbbalnum**karşılık geliyorsa), sonuç ilgili **_ismbb** yordamının geri dönüş değeridir.
+Bu yordamların her biri, karakter test koşulunu karşılıyorsa veya 0 değilse sıfır dışında bir değer döndürür. *C*<= 255 ise ve karşılık gelen bir **_ismbb** yordamı varsa (örneğin, **_ismbcalnum** **_ismbbalnum**karşılık gelir), sonuç karşılık gelen **_ismbb** yordamının dönüş değeridir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordamların her biri belirli bir durum için belirli bir çok bayt karakteri sınar.
+Bu yordamların her biri belirli bir koşul için belirli bir çok baytlı karakteri sınar.
 
-**Bu işlevlerin _l** sonekli sürümleri, yerel liğe bağımlı davranışları için geçerli yerel alan yerine geçirilen yerel liği kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-|Yordam|Test koşulu|Kod sayfası 932 örnek|
+|Yordam|Test koşulu|Kod sayfası 932 örneği|
 |-------------|--------------------|---------------------------|
-|**_ismbcalnum**, **_ismbcalnum_l**|Alfasayısal|*Eğer c* bir ASCII İngilizce mektubunun tek bayt gösterimiyse sıfırsız döndürür: **_ismbcdigit** ve **_ismbcalpha**için örneklere bakın.|
-|**_ismbcalpha**, **_ismbcalpha_l**|Alfabetik|*Eğer c* bir ASCII İngilizce harfinin tek bayt gösterimi ise sıfırsız döndürür: 0x41<=*c*<=0x61<=*c*<=0x7A; veya katakana harfi: 0xA6<=*c*<=0xDF.|
-|**_ismbcdigit**, **_ismbcdigit**|Basamak|*Eğer c* bir ASCII basamağı tek bayt gösterimi ise sıfırsız döndürür: 0x30<=*c*<=0x39.|
+|**_ismbcalnum**, **_ismbcalnum_l**|Alfasayısal|Yalnızca *c* , ASCII İngilizce harfinin tek baytlık bir gösterimiyse sıfır olmayan bir değer döndürür: **_ismbcdigit** ve **_ismbcalpha**örneklerine bakın.|
+|**_ismbcalpha**, **_ismbcalpha_l**|Alfabetik|Yalnızca *c* bir ASCII İngilizce harfinin tek baytlık bir gösterimiyse sıfır olmayan bir değer döndürür: 0x41<=*c*<= 0x5A veya 0x61<=*c*<= 0x7A; ya da bir Katakana harfi: 0xA6<=*c*<= 0xDF.|
+|**_ismbcdigit**, **_ismbcdigit**|Gurmukhi|Yalnızca *c* bir ASCII basamağının tek baytlık bir gösterimiyse sıfır olmayan bir değer döndürür: 0x30<=*c*<= 0x39.|
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbcalnum**, **_ismbcalnum_l**|\<mbstring.h>|
-|**_ismbcalpha**, **_ismbcalpha_l**|\<mbstring.h>|
-|**_ismbcdigit**, **_ismbcdigit_l**|\<mbstring.h>|
+|**_ismbcalnum**, **_ismbcalnum_l**|\<mbstring. h>|
+|**_ismbcalpha**, **_ismbcalpha_l**|\<mbstring. h>|
+|**_ismbcdigit**, **_ismbcdigit_l**|\<mbstring. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter Sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
-[_ismbc Rutinleri](../../c-runtime-library/ismbc-routines.md)<br/>
-[olduğunu, isw Rutinleri](../../c-runtime-library/is-isw-routines.md)<br/>
-[_ismbb Rutinleri](../../c-runtime-library/ismbb-routines.md)<br/>
+[Karakter sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
+[_ismbc yordamlar](../../c-runtime-library/ismbc-routines.md)<br/>
+[, isw yordamları](../../c-runtime-library/is-isw-routines.md)<br/>
+[_ismbb yordamlar](../../c-runtime-library/ismbb-routines.md)<br/>

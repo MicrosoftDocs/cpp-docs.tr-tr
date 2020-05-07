@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-locale-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -31,16 +31,16 @@ helpviewer_keywords:
 - locales, freeing
 - _free_locale function
 ms.assetid: 1f08d348-ab32-4028-a145-6cbd51b49af9
-ms.openlocfilehash: 568e44d731f384a0503420339d716fdfdc81e13a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8dbc424c00464966605cce5c44118b88eb5335d3
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81346051"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82920431"
 ---
 # <a name="_free_locale"></a>_free_locale
 
-Yerel bir nesneyi serbest kolaylaştırır.
+Bir yerel ayar nesnesini serbest bırakır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,24 +52,24 @@ void _free_locale(
 
 ### <a name="parameters"></a>Parametreler
 
-*Yerel ayar*<br/>
-Yerel nesneyi özgüre.
+*locale*<br/>
+Yerel ayar nesnesini ücretsiz olarak.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_free_locale** işlevi, bir çağrıdan elde edilen yerel nesneyi **_get_current_locale** veya **_create_locale**serbest leştirmek için kullanılır.
+**_Free_locale** işlevi, **_get_current_locale** veya **_create_locale**çağrısından alınan yerel ayar nesnesini serbest bırakmak için kullanılır.
 
-Bu işlevin önceki adı, **__free_locale** (iki satır altı çizilmiştir) amortismana uğramıştır.
+Bu işlevin önceki adı, **__free_locale** (iki önde gelen alt çizgi ile) kullanım dışıdır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |**Yordam**|Gerekli başlık|
 |---------------|---------------------|
-|**_free_locale**|\<locale.h>|
+|**_free_locale**|\<locale. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

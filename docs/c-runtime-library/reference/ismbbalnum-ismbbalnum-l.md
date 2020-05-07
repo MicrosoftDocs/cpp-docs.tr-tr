@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -34,16 +34,16 @@ helpviewer_keywords:
 - ismbbalnum_l function
 - _ismbbalnum function
 ms.assetid: 8025de50-a871-49fd-9ae6-f437b47aa987
-ms.openlocfilehash: 3a200415571498c25ce5aacc6271004125ef16d2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: abbc664170c274929875ef2e4b7af70bc5812a94
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81343690"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82917550"
 ---
 # <a name="_ismbbalnum-_ismbbalnum_l"></a>_ismbbalnum, _ismbbalnum_l
 
-Belirtilen çok bayt karakterinin alfa mı yoksa sayısal mı olduğunu belirler.
+Belirtilen çok baytlı karakterin Alfa veya sayısal olduğunu belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,40 +58,40 @@ int _ismbbalnum_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*C*<br/>
-İnteger test edilecek.
+*,*<br/>
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbbalnum,** ifade aşağıdakigibi ise sıfır olmayan bir değer döndürür:
+**_ismbbalnum** ifadesi sıfır dışında bir değer döndürür:
 
 `isalnum(c) || _ismbbkalnum(c)`
 
-*c*için sıfır değildir, yoksa 0'dır.
+*c*için sıfır veya değilse 0 olur.
 
-Bu işlevin **_l** sonekli sürümü, yerele bağımlı davranışı için geçerli yerel alan yerine geçirilen yerelliği kullanması dışında aynıdır.
+Bu işlevin **_l** sonekine sahip sürümü, yerel ayara bağlı davranışı için geçerli yerel ayar yerine geçirilen yerel ayarı kullanması dışında aynıdır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbbalnum**|\<mbctype.h>|
-|**_ismbbalnum_l**|\<mbctype.h>|
+|**_ismbbalnum**|\<Mbctype. h>|
+|**_ismbbalnum_l**|\<Mbctype. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Rutinleri](../../c-runtime-library/ismbb-routines.md)<br/>
+[_ismbb yordamlar](../../c-runtime-library/ismbb-routines.md)<br/>

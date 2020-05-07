@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -28,16 +28,16 @@ helpviewer_keywords:
 - streams, testing for errors
 - errors [C++], testing for stream
 ms.assetid: 528a34bc-f2aa-4c3f-b89a-5b148e6864f7
-ms.openlocfilehash: e424ffe3f113e50e318d9198bd5f06aaec96852a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8a5e0bfac2069ed016253de4276e772ea7912605
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81347301"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82920147"
 ---
 # <a name="ferror"></a>ferror
 
-Akışta bir hata için sınayır.
+Akıştaki bir hata için testler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,28 +49,28 @@ int ferror(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akışı*<br/>
-**DOSYA** yapısı için işaretçi.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Akışta*hata oluştuysa, **ferror** 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür. Akış **NULL**ise, **ferror** [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin verilirse, bu işlev **errno'u** **EINVAL'e** ayarlar ve 0 döndürür.
+*Akışta*bir hata oluştuysa, **ferror** 0 döndürür. Aksi takdirde, sıfır dışında bir değer döndürür. Stream **null**ise, **ferror** [parametresi, parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bakın.
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ferror** yordamı (hem işlev olarak hem de makro olarak uygulanan) *akışla*ilişkili dosyadaki okuma veya yazma hatası için sınar. Bir hata oluştuysa, akış kapatılıp yeniden sarana veya karşı **daha net** çağrılana kadar akış için hata göstergesi ayarlanır.
+**Ferror** yordamı (hem işlev hem de makro olarak uygulanan), *Stream*ile ilişkili dosyada okuma veya yazma hatası için test eder. Bir hata oluştuysa, akış için hata göstergesi, akış kapatılana veya yeniden kalana kadar ya da **clearerr** buna karşı çağrılana kadar ayarlanmış kalır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**ferror**|\<stdio.h>|
+|**ferror**|\<stdio. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -78,8 +78,8 @@ Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata İşleme](../../c-runtime-library/error-handling-crt.md)<br/>
-[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Hata Işleme](../../c-runtime-library/error-handling-crt.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [clearerr](clearerr.md)<br/>
 [_eof](eof.md)<br/>
 [feof](feof.md)<br/>

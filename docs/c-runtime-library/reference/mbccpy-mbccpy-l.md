@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -40,19 +40,19 @@ helpviewer_keywords:
 - _mbccpy function
 - mbccpy_l function
 ms.assetid: 13f4de6e-7792-41ac-b319-dd9b135433aa
-ms.openlocfilehash: 45f93e370e11cf38fc17da3557b21c636fcbc623
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a265a37ba4c16dd15e6b50035dcc65bc8afbe7c7
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81341260"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919576"
 ---
 # <a name="_mbccpy-_mbccpy_l"></a>_mbccpy, _mbccpy_l
 
-Çok baytlı bir karakteri bir dizeden diğerine kopyalar. Bu işlevlerin daha güvenli sürümleri mevcuttur; [_mbccpy_s, _mbccpy_s_l](mbccpy-s-mbccpy-s-l.md)bakın.
+Çok baytlı bir karakteri bir dizeden başka bir dizeye kopyalar. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_mbccpy_s, _mbccpy_s_l](mbccpy-s-mbccpy-s-l.md).
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,45 +70,45 @@ void _mbccpy_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dest*<br/>
-Hedefi kopyalayın.
+*HD*<br/>
+Hedefi Kopyala.
 
 *src*<br/>
-Kopyalanması gereken çok bayt karakter.
+Kopyalanacak çok baytlı karakter.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_mbccpy** işlevi *src* den *dest*bir multibayt karakter kopyalar.
+**_Mbccpy** işlevi bir çok baytlı karakteri *src* 'den *hedefe*kopyalar.
 
-Bu işlev parametrelerini doğrular. **_mbccpy** *dest* veya *src*için null işaretçisi geçirilirse, Geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütme devam etmesine izin verilirse, **errno** **EINVAL**olarak ayarlanır.
+Bu işlev, parametrelerini doğrular. **_Mbccpy** *hedef* veya *src*için null bir işaretçi geçirtiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL**olarak ayarlanır.
 
-**_mbccpy,** yerel e-eşe bağlı herhangi bir davranış için geçerli yerel alanı kullanır. **_mbccpy_l,** **_mbccpy_l'nin** herhangi bir yerele bağımlı davranış için geçirilen yerelliği kullanması dışında **_mbccpy** ile aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**_mbccpy** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_mbccpy_l** , **_mbccpy** bir yerel ayara bağımlı davranış için geçirilen yerel ayarı kullanması dışında, **_mbccpy_l** aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-**Güvenlik Notu** Null-terminatedli dize kullanın. Null-sonlandırılan dize hedef arabellek boyutunu aşmamalıdır. Daha fazla bilgi için [bkz.](/windows/win32/SecBP/avoiding-buffer-overruns) Arabellek taşma sorunları, sık karşılaşılan bir sistem saldırısı yöntemidir ve bu da haksız bir ayrıcalık yükselmesine neden olabilir.
+**Güvenlik notunun** Null ile sonlandırılmış bir dize kullanın. Null ile sonlandırılmış dize, hedef arabelleğin boyutunu aşmamalıdır. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns). Arabellek taşması sorunları, sistem saldırılarına karşı sık kullanılan bir yöntemdir ve bu da garanti edilmemiş ayrıcalık yükselmesine neden olur.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tccpy**|Makro veya satır çizgisi işlevine eşler|**_mbccpy**|Makro veya satır çizgisi işlevine eşler|
+|**_tccpy**|Makroya veya satır içi işleve eşlenir|**_mbccpy**|Makroya veya satır içi işleve eşlenir|
 |**_tccpy_l**|yok|**_mbccpy_l**|yok|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbccpy**|\<mbctype.h>|
-|**_mbccpy_l**|\<mbctype.h>|
+|**_mbccpy**|\<Mbctype. h>|
+|**_mbccpy_l**|\<Mbctype. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>

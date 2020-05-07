@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -30,16 +30,16 @@ helpviewer_keywords:
 - pgmptr global variable
 - _pgmptr global variable
 ms.assetid: 29f16a9f-a685-4721-add3-7fad4f67eece
-ms.openlocfilehash: efcac6a64c01bee38a3753bdec378dae625db35e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a4a9bddfa861727e174325dc639868e3529162cd
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81345018"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82918210"
 ---
 # <a name="_get_pgmptr"></a>_get_pgmptr
 
-**_pgmptr** global değişkenin geçerli değerini alır.
+**_Pgmptr** genel değişkeninin geçerli değerini alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,26 +51,26 @@ errno_t _get_pgmptr(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDeğer*<br/>
-**_pgmptr** değişkeninin geçerli değeriyle doldurulacak bir dize işaretçisi.
+*pValue*<br/>
+**_Pgmptr** değişkeninin geçerli değeriyle doldurulacak bir dizeye yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır döndürür; hata bir hata kodu. *pValue* **NULL**ise, geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL için errno** ayarlar ve **EINVAL** döndürür. **EINVAL**
+Başarılıysa sıfır döndürür; hatada hata kodu. *PValue* **null**ise, geçersiz parametre işleyicisi [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yalnızca _get_pgmptr'yi **arayın,** programınızda **main()** veya **WinMain()** gibi dar bir giriş noktası varsa. _pgmptr **_pgmptr** global değişken, işlemle ilişkili yürütülebilir giden tam yolu içerir. Daha fazla bilgi için [_pgmptr _wpgmptr.](../../c-runtime-library/pgmptr-wpgmptr.md)
+Yalnızca, programınızın **Main ()** veya **WinMain ()** gibi bir dar giriş noktası varsa **_get_pgmptr** çağırın. **_Pgmptr** genel değişkeni, işlemle ilişkili yürütülebilir dosyanın tam yolunu içerir. Daha fazla bilgi için bkz. [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_pgmptr**|\<stdlib.h>|
+|**_get_pgmptr**|\<Stdlib. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

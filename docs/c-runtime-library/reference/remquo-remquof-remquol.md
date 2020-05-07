@@ -20,7 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -34,16 +34,16 @@ helpviewer_keywords:
 - remquof function
 - remquo function
 ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
-ms.openlocfilehash: e6a6f211e83118379e0697464d21f5968ea68cee
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 774a35f257b02c67b22618224a60ed501476a6f4
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81332834"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82917827"
 ---
 # <a name="remquo-remquof-remquol"></a>remquo, remquof, remquol
 
-İki tamsayı değerinin geri kalanını hesaplar ve bir tamsayı değerini bir parametrede belirtilen bir konumda işaret ve yaklaşık büyüklük ile birlikte depolar.
+İki tamsayı değerinin kalanını hesaplar ve işaret ile bir tamsayı değeri ve bir parametrede belirtilen konumdaki alanın yaklaşık büyüklüğü ile birlikte depolar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,34 +60,34 @@ long double remquo( long double numer, long double denom, int* quo ); /* C++ onl
 
 ### <a name="parameters"></a>Parametreler
 
-*Numarası*<br/>
-Sayı.
+*numer*<br/>
+Pay.
 
-*payda*<br/>
+*denom*<br/>
 Payda.
 
-*Quo*<br/>
-Bir tamsede işaretçisi işareti ve yaklaşık büyüklüğü olan bir değeri saklamak için.
+*göster*<br/>
+İşaretine ve bölümün yaklaşık büyüklüğüne sahip bir değeri depolamak için bir tamsayıya yönelik bir işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**remquo** *x* / *y*kayan nokta geri kalanını döndürür. *y* değeri 0.0 ise, **remquo** sessiz bir NaN döndürür. **Printf** ailesi tarafından sessiz bir NaN temsili hakkında bilgi için [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)bakın.
+**remquo** , *x* / *y*'nin kayan nokta kalanını döndürür. *Y* değeri 0,0 ise, **remquo** bir sessiz NaN döndürür. **Printf** ailesi tarafından sessiz bir NaN 'ın temsili hakkında daha fazla bilgi için bkz. [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Remquo** işlevi *x* / *y* kayan noktası kalan *f* hesaplar gibi *x* = *i* \* *y* + *f*, nerede *i* bir tamsayı, *f* *x*ile aynı işareti vardır , ve *f* mutlak değeri *y*mutlak değeri daha azdır .
+**Remquo** işlevi *, x* / *y* \* *i* *y* *x* =  + *f*'nin kayan *nokta geri kalanını* hesaplar *, burada bir tamsayıdır,* *f* ise *x*ile aynı işarete sahiptir ve *f* 'nin mutlak değeri *y*'nin mutlak değerinden küçüktür.
 
-C++ aşırı yüklemeye izin verir, böylece **float** veya **uzun** **çift** değerleri alan ve döndüren aşırı **remquo'u** arayabilirsiniz. C programında, **remquo** her zaman iki **çift** bağımsız değişken alır ve bir **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerleri alıp döndüren **remquo** aşırı yüklerini çağırabilirsiniz. C programında, **remquo** her zaman iki **çift** bağımsız değişken alır ve bir **Double**döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli üstbilgi (C)|Gerekli üstbilgi (C++)|
+|İşlev|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |--------------|---------------------|-|
-|**remquo**, **remquof**, **remquol**|\<math.h>|\<cmath> \<veya math.h>|
+|**remquo**, **remquof**, **remquol**|\<Math. h>|\<cmath> veya \<Math. h>|
 
-Uyumluluk bilgileri için [bkz.](../../c-runtime-library/compatibility.md)
+Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
