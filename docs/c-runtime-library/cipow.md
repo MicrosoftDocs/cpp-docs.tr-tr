@@ -13,7 +13,7 @@ api_location:
 - msvcrt.dll
 - msvcr90.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -25,16 +25,16 @@ helpviewer_keywords:
 - CIpow intrinsic
 - _CIpow intrinsic
 ms.assetid: 477aaf0c-ac58-4252-89dd-9f3e35d47536
-ms.openlocfilehash: 953f18eb9ba6978c6e97a6b3d1d8fa7a165a27d0
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 80acead0f40896db6c27cca8440a3069a18c5332
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745532"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82917969"
 ---
 # <a name="_cipow"></a>_CIpow
 
-Yığındaki en üst değerleri temel alan *y* gücüne yükseltilen *x'i* hesaplar.
+*X* 'in, yığındaki en üstteki değerlere göre *y* kuvvetini hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,11 +44,11 @@ void __cdecl _CIpow();
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlevin `pow` bu sürümüderleyicinin anladığı özel bir çağrı kuralına sahiptir. Kopyaların oluşturulmasını önlediği ve kayıt tahsisine yardımcı olduğu için yürütmeyi hızlandırıyor.
+`pow` İşlevin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
 
-Elde edilen değer yığının üstüne itilir.
+Elde edilen değer yığının en üstüne gönderilir.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
