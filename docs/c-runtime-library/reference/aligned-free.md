@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -28,16 +28,16 @@ helpviewer_keywords:
 - _aligned_free function
 - aligned_free function
 ms.assetid: ed1ce952-cdfc-4682-85cc-f75d4101603d
-ms.openlocfilehash: a6e5f0dcd0bbea436ecdad7abb1fd6fc948f80dc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d296600da4db2b97479de95cfc1f8c41d0e50708
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81350709"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82915947"
 ---
 # <a name="_aligned_free"></a>_aligned_free
 
-[_aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md)ile ayrılan bellek bloğunu boşaltıyor.
+[_Aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md)ayrılmış bir bellek bloğunu serbest bırakır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,25 +50,25 @@ void _aligned_free (
 ### <a name="parameters"></a>Parametreler
 
 *memblock*<br/>
-Veya `_aligned_malloc` `_aligned_offset_malloc` işleve döndürülen bellek bloğuna işaretçi.
+`_aligned_malloc` Or `_aligned_offset_malloc` işlevine döndürülen bellek bloğunun işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_free** işaretlenir, `__declspec(noalias)`yani işlev in global değişkenleri değiştirmemesi garanti edilir. Daha fazla bilgi için [noalias'a](../../cpp/noalias.md)bakın.
+**_aligned_free** işaretlenir `__declspec(noalias)`, yani işlevin genel değişkenleri değiştirmeyeceği garanti edilir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md).
 
-Bu işlev, diğer _aligned CRT işlevlerinin aksine parametresini doğrulamaz. *Memblock* bir NULL işaretçisiyse, bu işlev yalnızca hiçbir eylem gerçekleştirmez. Değişmez `errno` ve geçersiz parametre işleyicisini çağırmaz. Bellek bloğunu ayırmak için daha önce _aligned işlevlerinin kullanılmaması nedeniyle işlevde bir hata oluşursa veya öngörülemeyen bir felaket nedeniyle belleğin yanlış hizalanması oluşursa, işlev [_RPT, _RPTF, _RPTW _RPTFW Makrolardan](rpt-rptf-rptw-rptfw-macros.md)bir hata ayıklama raporu oluşturur.
+Bu işlev, diğer _aligned CRT işlevlerinin aksine parametresini doğrulamaz. Eğer *MEMBLOCK* null bir işaretçisiyse, bu işlev yalnızca bir eylem gerçekleştirir. Değişiklik `errno` yapmaz ve geçersiz parametre işleyicisini çağırmaz. İşlevde bir hata oluşursa, daha önce bellek bloğunu ayırmak için _aligned işlevleri veya bazı öngörülemeyen Calamity nedeniyle bir hatalı hizalanmış bellek hatası oluşursa, işlev [_rpt, _rptf, _RPTW _rptfw makrolarını](rpt-rptf-rptw-rptfw-macros.md)kullanarak bir hata ayıklama raporu oluşturur.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_aligned_free**|\<malloc.h>|
+|**_aligned_free**|\<malloc. h>|
 
 ## <a name="example"></a>Örnek
 
-Daha fazla bilgi için [_aligned_malloc.](aligned-malloc.md)
+Daha fazla bilgi için bkz. [_aligned_malloc](aligned-malloc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

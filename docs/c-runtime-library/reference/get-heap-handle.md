@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -30,16 +30,16 @@ helpviewer_keywords:
 - _get_heap_handle function
 - get_heap_handle function
 ms.assetid: a4d05049-8528-494a-8281-a470d1e1115c
-ms.openlocfilehash: e2e48e4acc26c7b8317a2d358d1a426d012ec508
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 895814a1a44910ef65a826cba330a3edd70b85a9
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81345082"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82916305"
 ---
 # <a name="_get_heap_handle"></a>_get_heap_handle
 
-C çalışma zamanı sistemi tarafından kullanılan yığın tutamacını döndürür.
+C çalışma zamanı sistemi tarafından kullanılan yığının tanıtıcısını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,21 +49,21 @@ intptr_t _get_heap_handle( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Tutamacı C çalışma zamanı sistemi tarafından kullanılan Win32 yığınına döndürür.
+C çalışma zamanı sistemi tarafından kullanılan Win32 yığınının tanıtıcısını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-[HeapSetInformation'ı](/windows/win32/api/heapapi/nf-heapapi-heapsetinformation) aramak ve CRT yığınındaki Düşük Parçalanma Yığınını etkinleştirmek istiyorsanız bu işlevi kullanın.
+[HeapSetInformation](/windows/win32/api/heapapi/nf-heapapi-heapsetinformation) ÇAĞıRMAK ve CRT yığınında düşük parçalanma yığınını etkinleştirmek istiyorsanız bu işlevi kullanın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_heap_handle**|\<malloc.h>|
+|**_get_heap_handle**|\<malloc. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="sample"></a>Örnek
 

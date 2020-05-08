@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-process-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -27,19 +27,19 @@ helpviewer_keywords:
 - cwait function
 - _cwait function
 ms.assetid: d9b596b5-45f4-4e03-9896-3f383cb922b8
-ms.openlocfilehash: d54f62c8ce391b2c8ead92a0a73ac48e6f2b3cb3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9e2e23acb041004b9e96d1c6558ae195ed522155
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81348158"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82914792"
 ---
 # <a name="_cwait"></a>_cwait
 
-Başka bir işlem sona erene kadar bekler.
+Başka bir işlem sonlanana kadar bekler.
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,44 +54,44 @@ intptr_t _cwait(
 ### <a name="parameters"></a>Parametreler
 
 *termstat*<br/>
-Belirtilen işlemin sonuç kodunun depolandığı bir arabelleğe işaretçi veya **NULL**.
+Belirtilen işlemin sonuç kodunun depolanacağı veya **null**olacağı bir arabelleğin işaretçisi.
 
 *procHandle*<br/>
-Bekletmek için işlem için tutamaç (diğer bir süre **önce _cwait** dönebilen sonlandırmak zorunda olan işlem).
+Beklenecek işlemin tanıtıcısı (yani, **_cwait** önce sonlanacak işlem).
 
-*Eylem*<br/>
-NULL: Windows işletim sistemi uygulamaları tarafından göz ardı; diğer uygulamalar için: *procHandle*gerçekleştirmek için eylem kodu .
+*action*<br/>
+NULL: Windows işletim sistemi uygulamaları tarafından yoksayıldı; diğer uygulamalar için: *procHandle*üzerinde gerçekleştirilecek eylem kodu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen işlem başarıyla tamamlandığında, belirtilen işlemin tutamacını döndürür ve *termstat'ı* belirtilen işlem tarafından döndürülen sonuç koduna ayarlar. Aksi takdirde, -1 döndürür ve aşağıdaki gibi **errno** ayarlar.
+Belirtilen işlem başarıyla tamamlandığında, belirtilen işlemin tanıtıcısını döndürür ve *termstat* belirtilen işlem tarafından döndürülen sonuç koduna ayarlanır. Aksi takdirde,-1 döndürür ve **errno** değerini aşağıdaki şekilde ayarlar.
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|**ECHILD**|Belirtilen bir işlem yok, *procHandle* geçersiz veya [GetExitCodeProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) veya [WaitForSingleObject](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) API'ye yapılan çağrı başarısız oldu.|
-|**Eınval**|*eylem* geçersizdir.|
+|**ECHıLD**|Belirtilen işlem yok, *procHandle* geçersiz veya [GetExitCodeProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) veya [WaitForSingleObject](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) API çağrısı başarısız oldu.|
+|**EıNVAL**|*eylem* geçersiz.|
 
-Bu ve diğer iade kodları hakkında daha fazla bilgi için [errno, _doserrno, _sys_errlist ve _sys_nerr'a](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_cwait** işlevi *procHandle*tarafından sağlanan belirtilen işlemin işlem kimliğinin sonlandırılması için bekler. **_cwait** geçirilen *procHandle* değeri, belirtilen işlemi oluşturan [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) işlevine çağrı yla döndürülen değer olmalıdır. İşlem kimliği **_cwait** çağrılmadan önce sona ererse, **_cwait** hemen geri döner. **_cwait,** geçerli bir tutamacın *(procHandle)* bulunduğu bilinen diğer herhangi bir işlemi beklemek için herhangi bir işlem tarafından kullanılabilir.
+**_Cwait** Işlevi, *procHandle*tarafından sunulan belirtilen işlemin işlem kimliği sonlandırmasını bekler. **_Cwait** geçirilen *procHandle* değeri, belirtilen işlemi oluşturan [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) işlevine yapılan çağrı tarafından döndürülen değer olmalıdır. **_Cwait** çağrılmadan önce işlem kimliği sonlandığında **_cwait** hemen döndürülür. **_cwait** , geçerli bir tanıtıcı (*procHandle*) var olan herhangi bir bilinen işlemi beklemek için herhangi bir işlem tarafından kullanılabilir.
 
-*termstat,* belirtilen işlemin dönüş kodunun depolanacağı bir arabelleğe işaret ediyor. *Termstat* değeri, belirtilen işlemin Windows [ExitProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) API'sini arayarak normal olarak sonlandırılıp sonlandırılmadığını gösterir. **ExitProcess,** belirtilen işlem **çıkış** veya **_exit**çağırırsa dahili olarak çağrılır, ana dan döner veya **ana**işlemin sonuna ulaşır. **main** *Termstat'tan*aktarılan değer hakkında daha fazla bilgi için [GetExitCodeProcess'e](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess)bakın. **_cwait** *termstat*için **NULL** değeri kullanılarak çağrılırsa, belirtilen işlemin iade kodu depolanmaz.
+*termstat* , belirtilen işlemin dönüş kodunun depolanacağı bir arabelleğe işaret eder. *Termstat* değeri, belirtilen işlemin normal olarak Windows [ExitProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) API 'sini çağırarak sonlandırılıp sonlandırılmadığını gösterir. Belirtilen işlem **Çıkış** veya **_exit**çağırırsa, **Main**'ten geri dönerse veya **Main**'in sonuna ulaştığında **ExitProcess** dahili olarak çağrılır. *Termstat*üzerinden geri geçirilen değer hakkında daha fazla bilgi için bkz. [GetExitCodeProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess). **_Cwait** , *termstat*için **null** değer kullanılarak çağrılırsa, belirtilen işlemin dönüş kodu depolanmaz.
 
-Üst-alt ilişkileri bu ortamlarda *uygulanmadığından, eylem* parametresi Windows işletim sistemi tarafından yoksayılır.
+Bu ortamlarda üst-alt ilişkileri uygulanmadığından, *eylem* parametresi Windows işletim sistemi tarafından yok sayılır.
 
-*ProcHandle* -1 veya -2 (geçerli işlem veya iş parçacığı için kolları) olmadığı sürece, tutamaç kapatılır. Bu nedenle, bu durumda, döndürülen tutamacı kullanmayın.
+*ProcHandle* -1 veya-2 olmadığı sürece (geçerli işlem veya iş parçacığına yönelik Tanıtıcılarda), tanıtıcı kapatılacak. Bu nedenle, bu durumda döndürülen tanıtıcıyı kullanmayın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_cwait**|\<process.h>|\<errno.h>|
+|**_cwait**|\<Process. h>|\<errno. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

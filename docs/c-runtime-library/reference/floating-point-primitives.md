@@ -80,7 +80,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -157,18 +157,18 @@ helpviewer_keywords:
 - _dsin
 - _ldsin
 - _fdsin
-ms.openlocfilehash: d861fbf2b71d557354a60f65b8a76dc24ca1dd13
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c103d28dc111af4736bdc299b498b98eccb3af60
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81346704"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82916692"
 ---
 # <a name="floating-point-primitives"></a>Kayan nokta temel elemanları
 
-Bazı standart C çalışma zamanı kitaplığı (CRT) kayan nokta işlevlerini uygulamak için kullanılan Microsoft'a özgü ilkel işlevler. Burada eksiksiz olarak belgelenirler, ancak kullanım için önerilmezler. Bu işlevlerden bazıları kullanılmayan olarak belirtilir, çünkü hassaslık, özel durum işleme ve IEEE-754 davranışına uygunluk sorunları olduğu bilinmektedir. Bunlar yalnızca geriye dönük uyumluluk için kütüphanede bulunurlar. Doğru davranış, taşınabilirlik ve standartlara bağlılık için, bu işlevler yerine standart kayan nokta işlevlerini tercih edin.
+Bazı standart C çalışma zamanı kitaplığı (CRT) kayan nokta işlevlerini uygulamak için kullanılan, Microsoft 'a özgü temel işlevler. Bunlar, tamamlanma açısından burada açıklanırlar, ancak kullanım için önerilmez. Bu işlevlerden bazıları kullanılmıyor olarak belirtilmiştir, çünkü duyarlık, özel durum işleme ve IEEE-754 davranışına uygunluk sorunları yaşar. Yalnızca geri uyumluluk için kitaplıkta bulunur. Doğru davranış, taşınabilirlik ve standartlara uyma için, bu işlevler üzerinde standart kayan nokta işlevleri tercih edin.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="_dclass-_ldclass-_fdclass"></a>_dclass, _ldclass, _fdclass
 
@@ -182,22 +182,22 @@ short __cdecl _fdclass(float x);
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Kayan nokta işlev bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta ilkel crt makro [fpclassify](fpclassify.md) kayan nokta türleri için C sürümlerini uygular. *X* bağımsız değişkeninin sınıflandırılması math.h'de tanımlanan bu sabitlerden biri olarak döndürülür:
+Bu kayan nokta temel elemanlar, kayan nokta türleri için CRT makro [fpsınıflandırmasına](fpclassify.md) ait C sürümlerini uygular. *X* bağımsız değişkeninin sınıflandırması, Math. h içinde tanımlanan bu sabitlerden biri olarak döndürülür:
 
 |Değer|Açıklama|
 |-----------|-----------------|
-| **FP_NAN** | Sessiz, sinyalveya belirsiz NaN |
+| **FP_NAN** | Sessiz, sinyal veya belirsiz NaN |
 | **FP_INFINITE** | Pozitif veya negatif sonsuzluk |
-| **FP_NORMAL** | Pozitif veya negatif normalleştirilmiş sıfır olmayan değer |
-| **FP_SUBNORMAL** | Pozitif veya negatif normale göre (normalden arındırılmış) değer |
+| **FP_NORMAL** | Pozitif veya negatif normalleştirilmiş sıfır olmayan bir değer |
+| **FP_SUBNORMAL** | Pozitif veya negatif alt normal (denormallanmış) değer |
 | **FP_ZERO** | Pozitif veya negatif sıfır değeri |
 
-Ek ayrıntı için Microsoft'a özgü [_fpclass, _fpclassf](fpclass-fpclassf.md) işlevlerik kullanabilirsiniz. Taşınabilirlik için [fpclassify](fpclassify.md) makro veya işlevi kullanın.
+Daha fazla ayrıntı için, Microsoft 'a özgü [_fpclass, _fpclassf](fpclass-fpclassf.md) işlevlerini kullanabilirsiniz. Taşınabilirlik için [fpsınıflandır](fpclassify.md) makrosunu veya işlevini kullanın.
 
 ## <a name="_dsign-_ldsign-_fdsign"></a>_dsign, _ldsign, _fdsign
 
@@ -211,12 +211,12 @@ int __cdecl _fdsign(float x);
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Kayan nokta işlev bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta ilkel crt [signbit](signbit.md) makro veya işlevi uygular. İşaret biti *x*bağımsız değişkeninin öneminde (mantissa) ayarlanırsa sıfır olmayan bir değer ve işaret biti ayarlanmazsa 0 döndürerler.
+Bu kayan nokta temel elemanlar, CRT içindeki [signbit](signbit.md) makrosunu veya işlevini uygular. *X*bağımsız değişkeninin mantisinin (Mantis) öğesinde işaret biti ayarlandıysa sıfır olmayan bir değer döndürür ve işaret biti ayarlanmamışsa 0 olur.
 
 ## <a name="_dpcomp-_ldpcomp-_fdpcomp"></a>_dpcomp, _ldpcomp, _fdpcomp
 
@@ -235,15 +235,15 @@ Kayan nokta işlev bağımsız değişkenleri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta ilkel iki bağımsız değişken alır, *x* ve *y*, ve onların sıralama ilişkisini gösteren bir değer döndürün, bitwise veya bu sabitlerin olarak ifade, math.h tanımlanan:
+Bu kayan nokta temel elemanlar iki bağımsız değişken ( *x* ve *y*) alır ve, Math. h içinde tanımlanan bit düzeyinde veya Bu sabitler olarak ifade edilen sıralama ilişkilerini gösteren bir değer döndürür:
 
 | Değer | Açıklama |
 |------------|-----------------|
-| **_FP_LT** | *x* *y'den* az olarak kabul edilebilir |
-| **_FP_EQ** | *x* *y'ye* eşit olarak kabul edilebilir |
-| **_FP_GT** | *x* *y'den* büyük olarak kabul edilebilir |
+| **_FP_LT** | *x* , *y* 'den küçük kabul edilebilir |
+| **_FP_EQ** | *x* , *y* 'ye eşit kabul edilebilir |
+| **_FP_GT** | *x* , *y* 'den büyük olarak düşünülebilir |
 
-Bu ilkeller CRT'de [isgreater, isgreaterequal, islessequal, islessequal, islessgreater ve isisordered](floating-point-ordering.md) makrolar ve işlevleri uygular.
+Bu temel elemanlar, [ısbüyüktür, isgreaterequal, ıless, islessequal, ılessdaha büyük ve ısıralanmamış](floating-point-ordering.md) makrolar ve IŞLEVLERI de CRT içinde uygular.
 
 ## <a name="_dtest-_ldtest-_fdtest"></a>_dtest, _ldtest, _fdtest
 
@@ -258,21 +258,21 @@ short __cdecl _fdtest(float* px);
 ### <a name="parameters"></a>Parametreler
 
 *px*<br/>
-Kayan nokta bağımsız değişkenini işaretçi.
+Kayan nokta bağımsız değişkenine yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta ilkel crt işlevinin C++ sürümlerini kayan nokta türleri için [fpclassify](fpclassify.md) uygular. *X* bağımsız değişkeni değerlendirilir ve sınıflandırma math.h'de tanımlanan bu sabitlerden biri olarak döndürülür:
+Bu kayan nokta temel elemanlar, kayan nokta türleri için [fpsınıflandır](fpclassify.md) CRT işlevinin C++ sürümlerini uygular. *X* bağımsız değişkeni değerlendirilir ve sınıflandırma, Math. h içinde tanımlanan bu sabitlerden biri olarak döndürülür:
 
 |Değer|Açıklama|
 |-----------|-----------------|
-| **FP_NAN** | Sessiz, sinyalveya belirsiz NaN |
+| **FP_NAN** | Sessiz, sinyal veya belirsiz NaN |
 | **FP_INFINITE** | Pozitif veya negatif sonsuzluk |
-| **FP_NORMAL** | Pozitif veya negatif normalleştirilmiş sıfır olmayan değer |
-| **FP_SUBNORMAL** | Pozitif veya negatif normale göre (normalden arındırılmış) değer |
+| **FP_NORMAL** | Pozitif veya negatif normalleştirilmiş sıfır olmayan bir değer |
+| **FP_SUBNORMAL** | Pozitif veya negatif alt normal (denormallanmış) değer |
 | **FP_ZERO** | Pozitif veya negatif sıfır değeri |
 
-Ek ayrıntı için Microsoft'a özgü [_fpclass, _fpclassf](fpclass-fpclassf.md) işlevlerik kullanabilirsiniz. Taşınabilirlik için [fpclassify](fpclassify.md) işlevini kullanın.
+Daha fazla ayrıntı için, Microsoft 'a özgü [_fpclass, _fpclassf](fpclass-fpclassf.md) işlevlerini kullanabilirsiniz. Taşınabilirlik için [fpsınıflandır](fpclassify.md) işlevini kullanın.
 
 ## <a name="_d_int-_ld_int-_fd_int"></a>_d_int, _ld_int, _fd_int
 
@@ -287,14 +287,14 @@ short __cdecl _fd_int(float* px, short exp);
 ### <a name="parameters"></a>Parametreler
 
 *px*<br/>
-Kayan nokta bağımsız değişkenini işaretçi.
+Kayan nokta bağımsız değişkenine yönelik işaretçi.
 
-*Exp*<br/>
-Ayrılmaz bir tür olarak bir üs.
+*exp*<br/>
+İntegral türü olarak üs.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta ilkel bir kayan nokta değeri *px* ve üs değeri *için*bir işaretçi almak ve kayan nokta değerinin kesirli kısmını kaldırmak için verilen üs altında, mümkünse. Döndürülen değer, nan veya sonsuz ise px'teki giriş değeri ndeki **fpclassify'nin** ve aksi takdirde *px'teki* çıkış değerinin sonucudur. *px*
+Bu kayan nokta temelleri, bir kayan nokta değeri *px* ve üs değer *Exp*işaretçisi alır ve mümkünse kayan nokta değerinin kesirli kısmını belirtilen üs altında kaldırır. Döndürülen değer, bir NaN veya Infinity ise ve *piksel* olarak çıkış değeri değilse, *IPX* 'teki giriş değerindeki **fpsınıflandırın** sonucudur.
 
 ## <a name="_dscale-_ldscale-_fdscale"></a>_dscale, _ldscale, _fdscale
 
@@ -309,14 +309,14 @@ short __cdecl _fdscale(float* px, long exp);
 ### <a name="parameters"></a>Parametreler
 
 *px*<br/>
-Kayan nokta bağımsız değişkenini işaretçi.
+Kayan nokta bağımsız değişkenine yönelik işaretçi.
 
-*Exp*<br/>
-Ayrılmaz bir tür olarak bir üs.
+*exp*<br/>
+İntegral türü olarak üs.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta ilkel bir kayan nokta değeri *px* ve üs değeri *exp*bir işaretçi almak ve 2 exp *px* değeri ölçeklendirmek , mümkünse.<sup>*exp*</sup> Döndürülen değer, nan veya sonsuz ise px'teki giriş değeri ndeki **fpclassify'nin** ve aksi takdirde *px'teki* çıkış değerinin sonucudur. *px* Taşınabilirlik için [ldexp, ldexpf ve ldexpl](ldexp.md) işlevlerini tercih edin.
+Bu kayan nokta temelleri bir kayan nokta değeri *px* ve üs değer *Exp*için bir işaretçi alır ve mümkünse değeri 2<sup>*Exp*</sup> *olarak ölçeklendirir* . Döndürülen değer, bir NaN veya Infinity ise ve *piksel* olarak çıkış değeri değilse, *IPX* 'teki giriş değerindeki **fpsınıflandırın** sonucudur. Taşınabilirlik için [ldexp, ldexpf ve ldexpl](ldexp.md) işlevlerini tercih edin.
 
 ## <a name="_dunscale-_ldunscale-_fdunscale"></a>_dunscale, _ldunscale, _fdunscale
 
@@ -331,14 +331,14 @@ short __cdecl _fdunscale(short* pexp, float* px);
 ### <a name="parameters"></a>Parametreler
 
 *pexp*<br/>
-Integral türü olarak üs için bir işaretçi.
+İntegral türü olarak üs için bir işaretçi.
 
 *px*<br/>
-Kayan nokta bağımsız değişkenini işaretçi.
+Kayan nokta bağımsız değişkenine yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta ilkel *px* tarafından işaret yüzen nokta değeri bir anlamlı (mantissa) ve bir üs, mümkünse içine yıkmak. Önemi, mutlak değerin 0,5'ten büyük veya eşit ve 1,0'dan küçük olması gibi ölçeklendirilir. Üs, özgün kayan nokta değerinin ölçeklenen öneme 2<sup>*n*</sup>eşit olduğu *n*değeridir. Bu tamsayı üs *n* *pexp*tarafından işaret edilen yerde saklanır. Döndürülen değer, *px'teki* giriş değeri ne nn veya sonsuz ise ve çıktı değeri üzerinde **fpclassify** sonucudur. Taşınabilirlik için [frexp, frexpf, frexpl](frexp.md) fonksiyonlarını tercih edin.
+Bu kayan nokta temel elemanlar, mantisinin (Mantis) ve mümkünse üs bir değere *göre işaret* edilen kayan nokta değerini ayırır. Mantisinin, mutlak değer 0,5 ' e eşit veya daha büyük ve 1,0 ' den küçük olacak şekilde ölçeklendirilir. Üs değeri, özgün kayan nokta değerinin<sup>*ölçeği 2 '*</sup>nin ölçeklendirmantisinin süreleriyle eşit olduğu *n*değeridir. Bu tamsayı üssü *n* , *pexp*tarafından işaret edilen konumda depolanır. Döndürülen değer, bir NaN veya Infinity ise ve çıkış değerinde değilse, *IPX* 'teki giriş değerindeki **fpsınıflandırın** sonucudur. Taşınabilirlik için [frexp, frexpf, frexpl](frexp.md) işlevlerini tercih edin.
 
 ## <a name="_dexp-_ldexp-_fdexp"></a>_dexp, _ldexp, _fdexp
 
@@ -352,18 +352,18 @@ short __cdecl _fdexp(float* px, float y, long exp);
 
 ### <a name="parameters"></a>Parametreler
 
-*Y*<br/>
+*Iz*<br/>
 Kayan nokta işlev bağımsız değişkeni.
 
 *px*<br/>
-Kayan nokta bağımsız değişkenini işaretçi.
+Kayan nokta bağımsız değişkenine yönelik işaretçi.
 
-*Exp*<br/>
-Ayrılmaz bir tür olarak bir üs.
+*exp*<br/>
+İntegral türü olarak üs.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta ilkel *y* * 2<sup>*exp*</sup> *eşit px* tarafından işaret edilen yerde kayan nokta değeri inşa . Döndürülen değer, *nan* veya sonsuz ise y'deki giriş değeri ve *px'teki* çıkış değeri üzerinde **fpclassify** sonucudur. Taşınabilirlik için [ldexp, ldexpf ve ldexpl](ldexp.md) işlevlerini tercih edin.
+Bu kayan nokta temel elemanlar, *px* , *y* <sup>** 2 '*</sup>ye eşit olan konumda işaret eden bir kayan nokta değeri oluşturur. Döndürülen değer, bir NaN veya Infinity ise ve *piksel* olarak çıkış değerinde, *Aksi takdirde giriş* değerindeki **fpsınıflandırın** sonucudur. Taşınabilirlik için [ldexp, ldexpf ve ldexpl](ldexp.md) işlevlerini tercih edin.
 
 ## <a name="_dnorm-_fdnorm"></a>_dnorm, _fdnorm
 
@@ -376,12 +376,12 @@ short __cdecl _fdnorm(unsigned short* ps);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ps*<br/>
-**İmzalanmamış** **kısa**bir dizi olarak ifade edilen kayan nokta değerinin bitwise gösterimine işaretçi.
+*PS*<br/>
+**İşaretsiz** **kısa**bir dizi olarak ifade edilen kayan noktalı değerin bit düzeyinde gösterimine yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta ilkel bir underflowed kayan nokta değerinin kesirli kısmını normalleştirmek ve *karakteristik*ayarlamak , ya da önyargılı üs, maç. Değer, math.h'de beyan edilen **imzasız** **kısa** `_double_val` `_ldouble_val` `_float_val` bir diziye dönüştürülen kayan nokta türünün bit yönünden gösterimi olarak geçirilir. İade değeri, nan veya sonsuz ise giriş kayan nokta değeri ve aksi takdirde çıktı değeri üzerinde **fpclassify** sonucudur.
+Bu kayan nokta temel elemanlar, yetersiz bir kayan nokta değerinin kesirli kısmını normalleştirin ve *özellikleri*veya taraflı düzeyi eşleşecek şekilde ayarlar. Değer,, veya `_float_val` Math. h içinde belirtilen tür atlama UNION öğesinden bir **işaretsiz** **Short** `_double_val` `_ldouble_val`dizisine dönüştürülen kayan nokta türünün bit düzeyinde temsili olarak geçirilir. Dönüş değeri, bir NaN veya Infinity, aksi takdirde çıkış değerinde giriş kayan nokta değerindeki **fpsınıflandırın** sonucudur.
 
 ## <a name="_dpoly-_ldpoly-_fdpoly"></a>_dpoly, _ldpoly, _fdpoly
 
@@ -395,18 +395,18 @@ float __cdecl _fdpoly(float x, _float const* table, int n);
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Kayan nokta işlev bağımsız değişkeni.
 
-*Tablo*<br/>
-Bir polinom için sabit katsayılar tablosuna işaretçi.
+*tablosundan*<br/>
+Polinom için sabit katsayıların bir tablosuna yönelik işaretçi.
 
-*n*<br/>
-Polinomun sırasını değerlendirmek.
+*No*<br/>
+Değerlendirilecek polinom 'un sırası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta ilkelleri, katsayıları *tablodaki*karşılık gelen sabit değerlerle temsil edilen *n.* sıranın polinomundaki *x* değerlendirmesini döndürürler. Örneğin, *tablo*\[0] = 3.0, *tablo*\[1] = 4.0, *tablo*\[2] = 5.0 ve *n* = 2 ise, polinom 5.0x<sup>2</sup> + 4.0x + 3.0'ı temsil eder. Bu polinom 2.0 *x* için değerlendirilirse, sonuç 31.0'dır. Bu işlevler dahili olarak kullanılmaz.
+Bu kayan nokta temel elemanlar, *x* 'in, katlarının *tablo*içindeki karşılık gelen sabit değerlerle temsil edildiği sıra *n* olarak değerlendirilmesi. Örneğin, *tablo*\[0] = 3,0, *tablo*\[1] = 4,0, *tablo*\[2] = 5,0 ve *n* = 2 ise, polinom 5.0 x<sup>2</sup> + 4.0 x + 3,0 ' i temsil eder. Bu polinom, *x* /2,0 için değerlendirilirse, sonuç 31,0 ' dir. Bu işlevler dahili olarak kullanılmaz.
 
 ## <a name="_dlog-_dlog-_dlog"></a>_dlog, _dlog, _dlog
 
@@ -420,15 +420,15 @@ float __cdecl _fdlog(float x, int base_flag);
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Kayan nokta işlev bağımsız değişkeni.
 
 *base_flag*<br/>
-Kullanılacak tabanı kontrol eden bayrak, taban *e* için 0 ve temel 10 için sıfır olmayan.
+Tabanı desteklemeyen bayrak, taban *e* için 0 ve taban 10 için sıfır olmayan.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta ilkelx *doğal*günlük dönmek , ln (*x*) veya günlük<sub>*e*</sub>(*x*), *base_flag* 0 olduğunda. *base_flag* sıfır olmadığında *x'in*günlük tabanını 10 veya günlük<sub>10</sub>*(x)* döndürerler. Bu işlevler dahili olarak kullanılmaz. Taşınabilirlik için, [günlük, logf, logl, log10, log10f ve log10l](log-logf-log10-log10f.md)işlevlerini tercih edin.
+Bu kayan nokta temel elemanlar, *base_flag* 0 olduğunda *x*, LN (*x*) veya log<sub>*e*</sub>(*x*) doğal günlüğünü döndürür. Bu, *base_flag* sıfır olmayan bir *x*(x) günlük tabanını veya<sub>10</sub>' u (*x*) döndürür. Bu işlevler dahili olarak kullanılmaz. Taşınabilirlik için, [log, logf, logl, log10, log10f ve log10l](log-logf-log10-log10f.md)işlevlerini tercih edin.
 
 ## <a name="_dsin-_ldsin-_fdsin"></a>_dsin, _ldsin, _fdsin
 
@@ -442,21 +442,21 @@ float __cdecl _fdsin(float x, unsigned int quadrant);
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Kayan nokta işlev bağımsız değişkeni.
 
-*Çeyreği*<br/>
-0, 1, 2 veya 3 quadrant ofset `sin`üretmek için kullanmak , , `cos` `-sin`, ve `-cos` sonuçlar.
+*ğine*<br/>
+, `sin` `cos`,, Ve `-cos` sonuçlarını oluşturmak için kullanılan, çeyrek daire 0, 1, 2 veya 3. `-sin`
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta ilkel ler *x* x'in sinüs'ini *quadrant* modulo 4 ile dengeler. Etkili bir şekilde, x'in sinüs, kosinüs, -sinüs ve -kosinüslerini, *quadrant* modulo 4'ün sırasıyla 0, 1, 2 veya 3 olduğunda geri verirler. *x* Bu işlevler dahili olarak kullanılmaz. Taşınabilirlik için, [günah, günah, günah,](sin-sinf-sinl.md) [cos, cosf ve cosl](cos-cosf-cosl.md) fonksiyonları tercih edin.
+Bu kayan nokta temel elemanlar, *çeyrek* modül 4 ' ün *x* sapmasını sinüsünü döndürür. Etkin olarak, *çeyrek* modül 4, sırasıyla 0, 1, 2 veya 3 olduğunda *x* 'in sinüs, kosinüs,-sinüs ve-kosinüs değerini getirirler. Bu işlevler dahili olarak kullanılmaz. Taşınabilirlik için [Sin, sinf, sinl](sin-sinf-sinl.md), [cos, cosf ve COSL](cos-cosf-cosl.md) işlevlerini tercih edin.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Başlık: \<math.h>
+Üstbilgi: \<Math. h>
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

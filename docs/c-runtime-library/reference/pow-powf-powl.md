@@ -19,7 +19,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -39,16 +39,16 @@ helpviewer_keywords:
 - powf function
 - pow function
 ms.assetid: e75c33ed-2e59-48b1-be40-81da917324f1
-ms.openlocfilehash: b181959ac05814a673ab11f33e4cfc5a39e3869e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 38e79b547ad49c6f1c0f5a784d710838afdec388
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81333113"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82916792"
 ---
 # <a name="pow-powf-powl"></a>pow, powf, powl
 
-*Y'nin*gücüne yükseltilen *x'i* hesaplar.
+*X* ' i *y*'nin kuvvetine göre hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,41 +68,41 @@ long double pow( long double x, int y );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Temel.
 
-*Y*<br/>
-Üs.
+*Iz*<br/>
+S.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*x*<sup>*y*</sup>değerini verir. Taşma veya akış altında hiçbir hata iletisi yazdırılır.
+*X*<sup>*y*</sup>değerini döndürür. Taşma veya yetersiz kalması üzerine bir hata iletisi yazdırılmaz.
 
-|x ve y değerleri|Pow'un iade değeri|
+|X ve y değerleri|POW dönüş değeri|
 |-----------------------|-------------------------|
-|*x* != 0.0 ve *y* == 0.0|1|
-|*x* == 0.0 ve *y* == 0.0|1|
-|*x* == 0.0 ve *y* < 0|ınf|
+|*x* ! = 0,0 ve *y* = = 0,0|1|
+|*x* = = 0,0 ve *y* = = 0,0|1|
+|*x* = = 0,0 ve *y* < 0|'SI|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**pow,** 2<sup>64'ten</sup> büyük integral kayan nokta değerlerini tanımaz (örneğin, 1.0E100).
+**POW** , 2<sup>64</sup> 'den büyük tamsayı kayan nokta değerlerini tanımıyor (örneğin, 1.0 E100).
 
-**pow'** un Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulaması vardır. SSE2 uygulamasını kullanma yla ilgili bilgi ve kısıtlamalar için [_set_SSE2_enable](set-sse2-enable.md)bkz.
+**POW** , Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahiptir. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md).
 
-C++ aşırı yüklemeye izin verdiğinden, çeşitli aşırı **pow**yüklerinden herhangi birini arayabilirsiniz. C **programında, pow** her zaman iki **çift** değer alır ve **bir çift** değer döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **POW**'ın çeşitli aşırı yüklerini çağırabilirsiniz. C programında **POW** her zaman iki **çift** değer alır ve bir **Double** değeri döndürür.
 
-Aşırı `pow(int, int)` yükleme artık kullanılamıyor. Bu aşırı yükü kullanırsanız, derleyici [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md)yatabilir. Bu sorunu önlemek için, ilk parametreyi **çift**, **float**veya **uzun** **çift**döküm .
+`pow(int, int)` Aşırı yükleme artık kullanılamıyor. Bu aşırı yüklemeyi kullanırsanız, derleyici [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md)yayabilir. Bu sorundan kaçınmak için, ilk parametreyi **Double**, **float**veya **Long** **Double**olarak atayın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgi (C)|Gerekli üstbilgi (C++)|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-|-|-|
-|**pow**, **powf**, **yavru**|\<math.h>|\<math.h> \<veya cmath>|
+|**POW**, **powf**, **ptıl**|\<Math. h>|\<Math. h> veya \<cmath>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

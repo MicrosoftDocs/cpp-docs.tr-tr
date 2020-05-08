@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -31,16 +31,16 @@ helpviewer_keywords:
 - EM_AMBIGUOUS
 - _controlfp_s function
 ms.assetid: a51fc3f6-ab13-41f0-b227-6bf02d98e987
-ms.openlocfilehash: 4b36cc9f5ed83b68cb15c39be91165ed7aa86d7b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0e734a0286ac21ed0883cc10b0cd4ee5857ba448
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81348530"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82917261"
 ---
 # <a name="_controlfp_s"></a>_controlfp_s
 
-Kayan nokta kontrol sözcüğü alır ve ayarlar. [crt](../../c-runtime-library/security-features-in-the-crt.md)Güvenlik Özellikleri açıklandığı gibi [_control87, \__controlfp _control87_2](control87-controlfp-control87-2.md) bu sürümü güvenlik geliştirmeleri vardır.
+Kayan nokta denetim sözcüğünü alır ve ayarlar. [_Control87, _controlfp \__CONTROL87_2](control87-controlfp-control87-2.md) bu sürümünde [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,33 +54,33 @@ errno_t _controlfp_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*akımKontrol*<br/>
-Geçerli denetim sözcük bit değeri.
+*currentControl*<br/>
+Geçerli denetim-sözcük bit değeri.
 
 *newControl*<br/>
-Yeni denetim sözcük bit değerleri.
+Yeni denetim-sözcük bit değerleri.
 
 *maske*<br/>
-Yeni denetim sözcük bitlerinin ayarlaması için maske.
+Ayarlanacak yeni denetim-sözcük bitleri için maske.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır veya **hatalı** değer hata kodu.
+Başarılıysa sıfır veya **errno** değeri hata kodu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_controlfp_s** işlevi **_control87**bir platform bağımsız ve daha güvenli bir sürümüdür , *hangi currentControl* depolanan adrese kayan nokta kontrol sözcüğü alır ve *newControl*kullanarak ayarlar. Değerlerdeki bitler kayan nokta denetim durumunu gösterir. Kayan nokta denetim durumu, programın platforma bağlı olarak kayan nokta matematik paketindeki hassas, yuvarlama ve sonsuzluk modlarını değiştirmesini sağlar. Yüzen nokta özel durumlarını maskelemek veya maskelemek için **_controlfp_s** de kullanabilirsiniz.
+**_Controlfp_s** işlevi, kayan nokta denetim sözcüğünü *currentControl* içinde depolanan adrese alan ve *newControl*kullanarak ayarlayan **_control87**platformdan bağımsız ve daha güvenli bir sürümdür. Değerlerde bulunan bitler, kayan nokta denetim durumunu gösterir. Kayan nokta denetim durumu, programın platforma bağlı olarak kayan nokta matematik paketindeki duyarlık, yuvarlama ve sonsuzluk modlarını değiştirmesini sağlar. Kayan nokta özel durumlarını maskelemek veya maskesini kaldırmak için **_controlfp_s** de kullanabilirsiniz.
 
-*Maskenin* değeri 0'a eşitse, **_controlfp_s** kayan nokta denetim sözcüğüne alır ve alınan değeri *geçerliDenetim'de*depolar.
+*Maske* değeri 0 ' a eşitse, **_controlfp_s** kayan nokta denetim sözcüğünü alır ve alınan değeri *currentControl*içinde depolar.
 
-*Maske* sıfır değilse, denetim sözcüğü için yeni bir değer ayarlanır: *Maskede*ayarlanan herhangi bir bit için (yani 1'e eşittir), denetim sözcüğü güncelleştirmek için *yeni* deki karşılık gelen bit kullanılır. Başka bir deyişle, *fpcntrl* = ((*fpcntrl* & ~*maske*) &#124;*(newControl* & *mask*)) *fpcntrl* yüzen nokta kontrol kelime. Bu senaryoda, *geçerli Denetim,* değişiklik tamamlandıktan sonra değere ayarlanır; eski denetim sözcük bit değeri değildir.
+*Maske* sıfır değilse, denetim sözcüğü için yeni bir değer ayarlanır: *maskenin*içindeki ayarlanmış herhangi bir bit (yani 1 ' e eşit) için, denetim sözcüğünü güncelleştirmek için *Yeni* içindeki karşılık gelen bit kullanılır. Diğer bir deyişle, *fpcntrl* = ((*fpcntrl* & ~*Mask*) &#124; (*newControl* & *Mask*)); burada *fpcntrl* , kayan nokta denetim kelimedir. Bu senaryoda, *currentControl* değişiklik tamamlandıktan sonra değere ayarlanır; Bu, eski denetim sözcük bit değeri değildir.
 
 > [!NOTE]
-> Varsayılan olarak, çalışma zamanı kitaplıkları tüm kayan nokta özel durumlarını maskeler.
+> Varsayılan olarak, çalışma zamanı kitaplıkları tüm kayan nokta özel durumlarını maskelemez.
 
-**_controlfp_s,** Intel (x86), x64 ve ARM platformlarında **_control87** fonksiyonuile hemen hemen aynıdır. X86, x64 veya ARM platformlarını hedefliyorsanız, **_control87** veya **_controlfp_s**kullanabilirsiniz.
+**_controlfp_s** , Intel (x86), x64 ve ARM platformlarındaki **_control87** işleviyle neredeyse aynıdır. X86, x64 veya ARM platformlarını hedefliyorsanız **_control87** veya **_controlfp_s**kullanabilirsiniz.
 
-**_control87** ve **_controlfp_s** arasındaki fark, normal olmayan değerleri nasıl ele aldıklarıdır. Intel (x86), x64 ve ARM platformları için **_control87** DENORMAL OPERAND özel durum maskesini ayarlayabilir ve temizleyebilir. **_controlfp_s** DENORMAL OPERAND özel durum maskesini değiştirmez. Bu örnek farkı gösterir:
+**_Control87** ve **_controlfp_s** arasındaki fark, denormal değerlerini nasıl değerlendirdikleri değerlerdir. Intel (x86), x64 ve ARM platformları için **_control87** , denormal işleneni özel durum maskesini ayarlayabilir ve temizleyebilir. **_CONTROLFP_S** denormal işleneni özel durum maskesini değiştirmez. Bu örnek, farkı göstermektedir:
 
 ```C
 _control87( _EM_INVALID, _MCW_EM );
@@ -90,9 +90,9 @@ _controlfp_s( &current_word, _EM_INVALID, _MCW_EM );
 // DENORMAL exception mask remains unchanged.
 ```
 
-Maske sabiti *(maske)* ve yeni kontrol değerleri *(newControl)* için olası değerler aşağıdaki Hexadecimal Değerler tablosunda gösterilmiştir. Hexadecimal değerleri açıkça sağlamak yerine, bu işlevlere bağımsız değişken olarak aşağıda listelenen taşınabilir sabitleri **(_MCW_EM,** **_EM_INVALID,** vb.) kullanın.
+Maske sabiti (*maske*) ve yeni denetim değerleri (*newControl*) Için olası değerler aşağıdaki onaltılık değerler tablosunda gösterilmiştir. Onaltılık değerleri açıkça sağlamak yerine, aşağıda listelenen taşınabilir sabitleri (**_MCW_EM**, **_EM_INVALID**vb.) Bu işlevlere bağımsız değişkenler olarak kullanın.
 
-Intel (x86) türetilmiş platformlar donanımdaki DENORMAL giriş ve çıkış değerlerini destekler. X86 davranışı DENORMAL değerleri korumaktır. ARM platformu ve SSE2 desteğine sahip x64 platformları DENORMAL operands ve sonuçları yıkamak için, ya da sıfıra zorlanır sağlar. **_controlfp_s**, **_controlfp**ve **_control87** işlevleri bu davranışı değiştirmek için bir maske sağlar. Aşağıdaki örnek, bu maskenin kullanımını gösterir:
+Intel (x86)-türetilmiş platformlar, donanımda DENORMAL giriş ve çıkış değerlerini destekler. X86 davranışı DENORMAL değerlerini korumektir. ARM platformu ve SSE2 desteği olan x64 platformları, DENORMAL işlenenleri ve sonuçları temizlenmeden veya sıfıra zorlanacak şekilde etkinleştirir. **_Controlfp_s**, **_controlfp**ve **_control87** işlevleri, bu davranışı değiştirmek için bir maske sağlar. Aşağıdaki örnek, Bu maskenin kullanımını gösterir:
 
 ```C
 unsigned int current_word = 0;
@@ -104,35 +104,35 @@ _controlfp_s(&current_word, _DN_FLUSH, _MCW_DN);
 // and x64 processors with SSE2 support. Ignored on other x86 platforms.
 ```
 
-ARM **platformlarında, _controlfp_s** işlevi FPSCR kaydı için geçerlidir. X64 mimarilerde, yalnızca MXCSR kaydında depolanan SSE2 denetim sözcüğü etkilenir. Intel (x86) **platformlarında, _controlfp_s** varsa hem x87 hem de SSE2 için kontrol sözcüklerini etkiler. İki denetim sözcükünün birbiriyle tutarsız olması mümkündür (örneğin, [__control87_2](control87-controlfp-control87-2.md)için daha önceki bir çağrı nedeniyle); iki denetim sözcük arasında bir tutarsızlık varsa, **_controlfp_s** *geçerliDenetim'de* **EM_AMBIGUOUS** bayrağını ayarlar. Bu, döndürülen denetim sözcüğünün her iki kayan nokta denetim sözcüklerinin durumunu doğru bir şekilde temsil etmeyebileceğine dair bir uyarıdır.
+ARM platformlarında **_controlfp_s** işlevi FPSCR Register için geçerlidir. X64 mimarilerinde, yalnızca MXCSR kaydına depolanmış olan SSE2 denetim sözcüğü etkilenir. Intel (x86) platformlarında **_controlfp_s** , varsa, hem x87 hem de SSE2 için denetim sözcüklerini etkiler. İki denetim kelimeyle birbirleriyle tutarsız olması mümkündür (örneğin, önceki [__control87_2](control87-controlfp-control87-2.md)çağrısı nedeniyle); iki denetim sözcüğü arasında bir tutarsızlık varsa **_Controlfp_s** *currentcontrol*içindeki **EM_AMBIGUOUS** bayrağını ayarlar. Bu, döndürülen denetim sözcüğünün her iki kayan nokta denetim sözcüklerinin durumunu doğru şekilde temsil edemediğini belirten bir uyarıdır.
 
-ARM ve x64 mimarilerinde, sonsuzluk modunun veya kayan nokta hassasiyetinin değiştirilmesi desteklenmez. Hassas denetim maskesi x64 platformunda kullanılırsa, işlev bir iddia yı yükseltir ve geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır.
+ARM ve x64 mimarilerinde sonsuzluk modunu veya kayan nokta hassasiyetini değiştirme desteklenmez. Duyarlık denetim maskesi x64 platformunda kullanılıyorsa, işlev bir onaylama işlemi başlatır ve [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır.
 
-Maske doğru ayarlanmamışsa, bu işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre özel durumu oluşturur. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL** döndürür ve **EINVAL** **için errno** ayarlar.
+Maske doğru ayarlanmamışsa, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklanan şekilde geçersiz bir parametre özel durumu oluşturur. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
-Ortak dil çalışma süresi (CLR) yalnızca varsayılan kayan nokta hassasiyetini desteklediğinden derlemek için [/clr (Ortak Dil Çalışma Süresi Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) kullandığınızda bu işlev yoksayılır.
+Ortak dil çalışma zamanı (CLR) yalnızca varsayılan kayan nokta duyarlığını desteklediğinden, bu işlev derlemek için [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) kullandığınızda yok sayılır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="mask-constants-and-values"></a>Maske sabitleri ve değerleri
 
-**maske_MCW_EM** temizleme, donanım özel durum sağlar özel durum ayarlar; ayarı özel durumu gizler. Bir **_EM_UNDERFLOW** veya **_EM_OVERFLOW** oluşursa, bir sonraki kayan nokta yönergesi yürütülene kadar donanım özel durum atılmaz. **_EM_UNDERFLOW** veya **_EM_OVERFLOW**hemen sonra bir donanım özel durumu oluşturmak için FWAIT MASM talimatını arayın.
+**_MCW_EM** maskesi için, Temizleme, donanım özel durumuna izin veren özel durumu belirler; Bu ayar özel durumu gizler. Bir **_EM_UNDERFLOW** veya **_EM_OVERFLOW** oluşursa, bir sonraki kayan nokta yönergesi yürütülene kadar herhangi bir donanım özel durumu oluşturulmaz. **_EM_UNDERFLOW** veya **_EM_OVERFLOW**sonrasında hemen bir donanım özel durumu oluşturmak için FWAIT ması yönergesini çağırın.
 
-|Maskeleme|Hex değeri|Sabit|Hex değeri|
+|Maskeleme|Onaltılık değer|Sabit|Onaltılık değer|
 |----------|---------------|--------------|---------------|
-|**_MCW_DN** (Denormal kontrol)|0x03000000|**_DN_SAVE**<br /><br /> **_DN_FLUSH**|0x00000000<br /><br /> 0x01000000|
-|**_MCW_EM** (Kesme özel durum maskesi)|0x0008001F|**_EM_INVALID**<br /><br /> **_EM_DENORMAL**<br /><br /> **_EM_ZERODIVIDE**<br /><br /> **_EM_OVERFLOW**<br /><br /> **_EM_UNDERFLOW**<br /><br /> **_EM_INEXACT**|0x00000010<br /><br /> 0x00080000<br /><br /> 0x00000008<br /><br /> 0x00000004<br /><br /> 0x00000002<br /><br /> 0x00000001|
-|**_MCW_IC** (Sonsuzluk kontrolü)<br /><br /> (ARM veya x64 platformlarında desteklenmez.)|0x00040000|**_IC_AFFINE**<br /><br /> **_IC_PROJECTIVE**|0x00040000<br /><br /> 0x00000000|
-|**_MCW_RC** (Yuvarlama kontrolü)|0x00000300|**_RC_CHOP**<br /><br /> **_RC_UP**<br /><br /> **_RC_DOWN**<br /><br /> **_RC_NEAR**|0x00000300<br /><br /> 0x00000200<br /><br /> 0x00000100<br /><br /> 0x00000000|
-|**_MCW_PC** (Hassas kontrol)<br /><br /> (ARM veya x64 platformlarında desteklenmez.)|0x00030000|**_PC_24** (24 bit)<br /><br /> **_PC_53** (53 bit)<br /><br /> **_PC_64** (64 bit)|0x00020000<br /><br /> 0x00010000<br /><br /> 0x00000000|
+|**_MCW_DN** (denormal denetimi)|0x03000000|**_DN_SAVE**<br /><br /> **_DN_FLUSH**|0x00000000<br /><br /> 0x01000000|
+|**_MCW_EM** (kesme özel durum maskesi)|0x0008001F|**_EM_INVALID**<br /><br /> **_EM_DENORMAL**<br /><br /> **_EM_ZERODIVIDE**<br /><br /> **_EM_OVERFLOW**<br /><br /> **_EM_UNDERFLOW**<br /><br /> **_EM_INEXACT**|0x00000010<br /><br /> 0x00080000<br /><br /> 0x00000008<br /><br /> 0x00000004<br /><br /> 0x00000002<br /><br /> 0x00000001|
+|**_MCW_IC** (sonsuz denetim)<br /><br /> (ARM veya x64 platformlarında desteklenmez.)|0x00040000|**_IC_AFFINE**<br /><br /> **_IC_PROJECTIVE**|0x00040000<br /><br /> 0x00000000|
+|**_MCW_RC** (yuvarlama denetimi)|0x00000300|**_RC_CHOP**<br /><br /> **_RC_UP**<br /><br /> **_RC_DOWN**<br /><br /> **_RC_NEAR**|0x00000300<br /><br /> 0x00000200<br /><br /> 0x00000100<br /><br /> 0x00000000|
+|**_MCW_PC** (duyarlık denetimi)<br /><br /> (ARM veya x64 platformlarında desteklenmez.)|0x00030000|**_PC_24** (24 bit)<br /><br /> **_PC_53** (53 bit)<br /><br /> **_PC_64** (64 bit)|0x00020000<br /><br /> 0x00010000<br /><br /> 0x00000000|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_controlfp_s**|\<float.h>|
+|**_controlfp_s**|\<float. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

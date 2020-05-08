@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-locale-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -28,12 +28,12 @@ helpviewer_keywords:
 - localeconv function
 - locales, getting information on
 ms.assetid: 7ecdb1f2-88f5-4037-a0e7-c754ab003660
-ms.openlocfilehash: a617980d60b3a12c06b30aab6cd457792a1aa770
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c154af87f135f5bf119de26ea8cd0be545ed5382
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81342153"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82916404"
 ---
 # <a name="localeconv"></a>localeconv
 
@@ -47,92 +47,92 @@ struct lconv *localeconv( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**localeconv** bir işaretçiyi dolmuş bir nesne türü [yapı lconv'a](../../c-runtime-library/standard-types.md)döndürür. Nesnede bulunan değerler iş parçacığı yerel depolamadaki yerel ayarlardan kopyalanır ve sonraki **localeconv**çağrıları tarafından üzerine yazılabilir. Bu nesnedeki değerlerde yapılan değişiklikler yerel ayarlar değiştirmez. **LC_ALL,** **LC_MONETARY**veya **LC_NUMERIC** *kategori* değerleriyle [ayaryerele](setlocale-wsetlocale.md) çağrılar yapının içeriğini üzerine yazar.
+**localeconv** , [struct lconv](../../c-runtime-library/standard-types.md)türünde bir doldurulmuş nesneye bir işaretçi döndürür. Nesnesinde bulunan değerler, iş parçacığı yerel depolama alanındaki yerel ayarlar ayarlarından kopyalanır ve **localeconv**öğesine yapılan sonraki çağrılar tarafından geçersiz kılınabilir. Bu nesnedeki değerlerde yapılan değişiklikler yerel ayar ayarlarını değiştirmez. **LC_ALL**, **LC_MONETARY**veya **LC_NUMERIC** *Kategori* değerleri ile [setlocale](setlocale-wsetlocale.md) 'e çağrılar yapının içeriğinin üzerine yazar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Localeconv** işlevi, geçerli yerel alan için sayısal biçimlendirme hakkında ayrıntılı bilgi alır. Bu bilgiler **lconv**türünde bir yapıda depolanır. YERELE'de tanımlanan **lconv** yapısı. H, aşağıdaki üyeleri içerir:
+**Localeconv** işlevi, geçerli yerel ayar için sayısal biçimlendirme hakkında ayrıntılı bilgiler alır. Bu bilgiler **lconv**türünde bir yapıda saklanır. Yerel AYARDA tanımlanan **lconv** yapısı. H, aşağıdaki üyeleri içerir:
 
 |Alan|Anlamı|
 |-|-|
-decimal_point,<br/>_W_decimal_point|Parasal olmayan miktarlar için ondalık nokta karakterine işaretçi.
-thousands_sep,<br/>_W_thousands_sep|Parasal olmayan miktarlar için ondalık noktanın solundaki basamak gruplarını ayıran karakter işaretçisi.
-gruplandırma|Parasal olmayan miktarlarda her basamak grubunun boyutunu içeren **char**boyutunda bir tamsayı işaretçisi.
-int_curr_symbol,<br/>_W_int_curr_symbol|Geçerli yerel bölge için uluslararası para birimi simgesine işaretçi. İlk üç *karakter, ISO 4217 Para Birimi ve Fonların Temsili için Kodları'nda* tanımlandığı şekilde alfabetik uluslararası para birimi simgesini belirtir. Dördüncü karakter (null karakterden hemen önce) uluslararası para birimi sembolüni parasal miktardan ayırır.
-currency_symbol,<br/>_W_currency_symbol|Geçerli yerel bölge için yerel para birimi simgesini işaretçi.
-mon_decimal_point,<br/>_W_mon_decimal_point|Parasal miktarlar için ondalık nokta karakterine işaretçi.
-mon_thousands_sep,<br/>_W_mon_thousands_sep|Parasal miktarlarda ondalık basamakların solundaki basamak grupları için ayırıcıişaretçi.
-mon_grouping|Parasal miktarlarda her basamak grubunun boyutunu içeren **char**boyutunda bir tamsayı işaretçisi.
-positive_sign,<br/>_W_positive_sign|Negatif olmayan parasal miktarlar için işaret gösteren dize.
-negative_sign,<br/>_W_negative_sign|Negatif parasal miktarlar için işaret gösteren dize.
-int_frac_digits|Uluslararası biçimlendirilmiş parasal miktarlarda ondalık noktanın sağına basamak sayısı.
-frac_digits|Biçimlendirilmiş parasal miktarlarda ondalık noktanın sağına basamak sayısı.
-p_cs_precedes|Negatif biçimlendirilmiş parasal miktar için para birimi sembolü değerden önceyse 1 olarak ayarlayın. Değeri takip eden sembol varsa 0 olarak ayarlayın.
-p_sep_by_space|Para birimi sembolü negatif biçimlendirilmiş olmayan parasal miktar için değerden boşlukla ayrılırsa 1 olarak ayarlayın. Boşluk ayrımı yoksa 0 olarak ayarlayın.
-n_cs_precedes|Negatif biçimlendirilmiş parasal miktar için para birimi sembolü değerden önceyse 1 olarak ayarlayın. Sembol değer başarılı olursa 0 olarak ayarlayın.
-n_sep_by_space|Para birimi sembolü negatif biçimlendirilmiş parasal miktar için değerden boşlukla ayrılırsa 1 olarak ayarlayın. Boşluk ayrımı yoksa 0 olarak ayarlayın.
-p_sign_posn|Negatif olmayan biçimlendirilmiş parasal miktarlarda pozitif işaretin konumu.
-n_sign_posn|Negatif biçimlendirilmiş parasal miktarlarda pozitif işaretin konumu.
+decimal_point,<br/>_W_decimal_point|Parasal olmayan miktarlar için ondalık işaret karakteri işaretçisi.
+thousands_sep,<br/>_W_thousands_sep|Parasal olmayan miktarlar için basamak gruplarını ondalık noktanın soluna ayıran karakter işaretçisi.
+gruplandırma|Parasal olmayan miktarlar içindeki her bir basamak grubunun boyutunu içeren, **char**boyutlu bir tamsayı işaretçisi.
+int_curr_symbol,<br/>_W_int_curr_symbol|Geçerli yerel ayar için uluslararası para birimi simgesine yönelik işaretçi. İlk üç karakter, *para birimi ve fon standardı gösteriminin ıso 4217 kodlarında* tanımlanan alfabetik uluslararası para birimi sembolünü belirtir. Dördüncü karakter (hemen önceki null karakter), parasal miktardan uluslararası para birimi sembolünü ayırır.
+currency_symbol,<br/>_W_currency_symbol|Geçerli yerel ayar için yerel para birimi simgesine yönelik işaretçi.
+mon_decimal_point,<br/>_W_mon_decimal_point|Parasal miktarlar için ondalık noktalı karakter işaretçisi.
+mon_thousands_sep,<br/>_W_mon_thousands_sep|Para miktarlarındaki ondalık basamak sol tarafında bulunan basamak grupları için ayıraç işaretçisi.
+mon_grouping|Parasal miktarlar içindeki her basamak grubunun boyutunu içeren, **char**boyutlu bir tamsayı işaretçisi.
+positive_sign,<br/>_W_positive_sign|Negatif parasal miktarlar için işaret belirten dize.
+negative_sign,<br/>_W_negative_sign|Negatif parasal miktarlar için işaret belirten dize.
+int_frac_digits|Uluslararası şekilde biçimlendirilen parasal miktarlar içindeki ondalık noktanın sağına doğru basamak sayısı.
+frac_digits|Biçimlendirilen parasal miktarlar içindeki ondalık noktanın sağına doğru basamak sayısı.
+p_cs_precedes|Eksi biçimli parasal miktar için para birimi simgesi değerden önce geliyorsa 1 olarak ayarlayın. Sembol değeri aşağıdaki ise 0 olarak ayarlanır.
+p_sep_by_space|Para birimi simgesi negatif olarak biçimlendirilen parasal miktar için değerden boşlukla ayrılırsa, 1 olarak ayarlanır. Boşluk ayrımı yoksa 0 olarak ayarlayın.
+n_cs_precedes|Para birimi simgesi negatif biçimli parasal miktar değerinden önce geliyorsa 1 olarak ayarlayın. Sembol başarılı olursa 0 olarak ayarlayın.
+n_sep_by_space|Para birimi simgesi negatif biçimli parasal miktar için değerden boşlukla ayrılırsa, 1 olarak ayarlanır. Boşluk ayrımı yoksa 0 olarak ayarlayın.
+p_sign_posn|Eksi biçimli parasal miktarların pozitif işaretin konumu.
+n_sign_posn|Negatif biçimli parasal miktarların pozitif oturum açma konumu.
 
-Belirtildiği gibi dışında, **lconv** yapısının `char *` `wchar_t *` üyeleri ve sürümleri dizeleri işaretçilervardır. bunlardan herhangi biri **""** (veya **l""** **wchar_t** <strong>\*</strong>için) eşittir sıfır uzunlukta veya geçerli yerel olarak desteklenmeyen. **decimal_point** ve **_W_decimal_point** her zaman desteklenir ve sıfır olmayan uzunlukta olduğunu unutmayın.
+Belirtilmedikçe, `char *` ve `wchar_t *` sürümleri olan **lconv** yapısının üyeleri dizeler için işaretçilerdir. Bunlardan herhangi biri, **""** **wchar_t** <strong>\*</strong>için "" (ya da **L ""** ) değerine eşit veya geçerli yerel ayarda desteklenmiyor. **Decimal_point** ve **_W_decimal_point** her zaman desteklendiğini ve sıfır dışı uzunlukta olduğunu unutmayın.
 
-Yapının **char** üyeleri küçük negatif olmayan sayılardır, karakterler değil. **CHAR_MAX** eşit olan bunların hiçbiri geçerli yerel olarak desteklenmez.
+Yapının **char** üyeleri, karakterlerden değil, küçük negatif olmayan sayılardır. **CHAR_MAX** eşit olan bunlardan herhangi biri geçerli yerel ayarda desteklenmez.
 
 **Gruplandırma** ve **mon_grouping** değerleri aşağıdaki kurallara göre yorumlanır:
 
-- **CHAR_MAX** - Başka gruplandırma yapmayın.
+- **CHAR_MAX** -daha fazla gruplandırma gerçekleştirmeyin.
 
-- 0 - Kalan basamakların her biri için önceki öğeyi kullanın.
+- 0-kalan basamakların her biri için önceki öğeyi kullanın.
 
-- *n* - Geçerli grubu oluşturan basamak sayısı. Sonraki öğe, geçerli gruptan önce bir sonraki basamak grubunun boyutunu belirlemek için incelenir.
+- *n* -geçerli grubu oluşturan basamak sayısı. Sonraki öğe, geçerli gruptan önceki basamak grubunun boyutunu belirleyecek şekilde incelenir.
 
-**int_curr_symbol** değerleri aşağıdaki kurallara göre yorumlanır:
+**İnt_curr_symbol** değerleri aşağıdaki kurallara göre yorumlanır:
 
-- İlk üç karakter, *ISO 4217 Para Birimi ve Fonların Temsili kodları* standardında tanımlandığı şekilde alfabetik uluslararası para birimi simgesini belirtir.
+- İlk üç karakter, *para birimi ve fon standardı gösteriminin ıso 4217 kodlarında* tanımlanan alfabetik uluslararası para birimi sembolünü belirtir.
 
-- Dördüncü karakter (null karakterinhemen öncesinde) uluslararası para birimi simgesini parasal miktardan ayırır.
+- Dördüncü karakter (null karakterden hemen önce) Uluslararası para birimi sembolünü parasal miktardan ayırır.
 
-**p_cs_precedes** ve **n_cs_precedes** değerleri aşağıdaki kurallara göre yorumlanır **(n_cs_precedes** kuralı parantez içindedir):
+**P_cs_precedes** ve **n_cs_precedes** değerleri aşağıdaki kurallara göre yorumlanır ( **n_cs_precedes** kuralı parantez içinde olur):
 
-- 0 - Para birimi sembolü negatif olmayan (negatif) biçimlendirilmiş parasal değerin değerini izler.
+- 0-para birimi sembolü, negatif olmayan (negatif) biçimli parasal değer için değeri izler.
 
-- 1 - Para birimi sembolü negatif olmayan (negatif) biçimlendirilmiş parasal değeriçin değerden önce gelir.
+- 1-para birimi simgesi negatif olmayan (negatif) biçimli parasal değer için değerden önce gelir.
 
-**p_sep_by_space** ve **n_sep_by_space** değerleri aşağıdaki kurallara göre yorumlanır **(n_sep_by_space** kuralı parantez içindedir):
+**P_sep_by_space** ve **n_sep_by_space** değerleri aşağıdaki kurallara göre yorumlanır ( **n_sep_by_space** kuralı parantez içinde olur):
 
-- 0 - Para birimi sembolü, negatif olmayan (negatif) biçimlendirilmiş parasal değer için boşluktan değere ayrılır.
+- 0-para birimi simgesi, negatif olmayan (negatif) biçimli parasal değer için değerden alana göre ayrılır.
 
-- 1 - Negatif olmayan (negatif) biçimlendirilmiş parasal değer için para birimi sembolü ile değer arasında boşluk ayrımı yoktur.
+- 1-para birimi sembolü ve negatif olmayan (negatif) biçimli parasal değer için değer arasında boşluk ayrımı yoktur.
 
-**p_sign_posn** ve **n_sign_posn** değerleri aşağıdaki kurallara göre yorumlanır:
+**P_sign_posn** ve **n_sign_posn** değerleri aşağıdaki kurallara göre yorumlanır:
 
-- 0 - Parantez, miktar ve para birimi sembolüne çevreler.
+- 0-parantez surround miktarı ve para birimi simgesi.
 
-- 1 - İşaret dizesi miktar ve para birimi sembolünden önce gelir.
+- 1 işareti dize, miktar ve para birimi simgesinden önce gelir.
 
-- 2 - İşaret dizesi miktar ve para birimi sembolüizler.
+- 2-imza dizesi, miktar ve para birimi simgesi izler.
 
-- 3 - İşaret dizesi hemen para birimi sembolü önce gelir.
+- 3-işareti dize, hemen ardından para birimi simgesinden önce gelir.
 
-- 4 - İşaret dizesi hemen para birimi sembolü izler.
+- 4-imza dizesi hemen ardından para birimi simgesi izler.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**localeconv**|\<locale.h>|
+|**localeconv**|\<locale. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [setlocale](../../preprocessor/setlocale.md)<br/>
 [strcoll İşlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
 [strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>

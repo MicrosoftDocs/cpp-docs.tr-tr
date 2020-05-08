@@ -1,5 +1,5 @@
 ---
-title: Dahili CRT Globals ve Fonksiyonları
+title: İç CRT genel ve Işlevleri
 ms.date: 4/2/2020
 api_name:
 - __acrt_iob_func
@@ -394,14 +394,14 @@ api_location:
 - api-ms-win-crt-time-l1-1-0.dll
 - api-ms-win-crt-process-l1-1-0.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0.dll
+- api-ms-win-crt-private-l1-1-0.dll.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - api-ms-win-crt-conio-l1-1-0.dll
 - vcruntime140_app.dll
 - msvcp140_app.dll
 - ntdll.dll
 - ntoskrnl.exe
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -930,22 +930,22 @@ helpviewer_keywords:
 - _Xbad_alloc
 - _Xlength_error
 ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
-ms.openlocfilehash: 22c38c1ad2cd5dad0a0e58437b441faf4cdb6662
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: fe9b466ca839cb09011dc7cc38650b8b85037e86
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81351245"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82914169"
 ---
-# <a name="internal-crt-globals-and-functions"></a>Dahili CRT Globals ve Fonksiyonları
+# <a name="internal-crt-globals-and-functions"></a>İç CRT genel ve Işlevleri
 
-C çalışma zamanı (CRT) kitaplığı, yalnızca genel kitaplık arabirimini desteklemek için kullanılan işlevler ve genel değişkenler içerir. Bazıları uygulama ayrıntıları olarak kamu başlıkları maruz kalır. Bu işlevlere ve genel değişkenlere genel dışa aktarımlar aracılığıyla erişilebilir olsa da, kodunuz tarafından kullanılmak üzere tasarlanmamıştır. Bunun yerine genel kitaplık eşdeğerlerini kullanmak için bu işlevleri ve değişkenleri kullanan tüm kodları değiştirmenizi öneririz. Bu işlevler sürümden sürüme değişebilir. Onları tanımlamanıza yardımcı olmak için burada listelenmiştir. Bağlantılar ek belgeler olduğunda sağlanır, ancak genel olarak bu uygulama ayrıntıları belgelenmez.
+C çalışma zamanı (CRT) kitaplığı yalnızca ortak kitaplık arabirimini desteklemek için kullanılan işlevleri ve genel değişkenleri içerir. Bunlardan bazıları, uygulama ayrıntıları olarak genel üstbilgilere sunulur. Bu işlevlere ve genel değişkenlere genel dışarı aktarmalar aracılığıyla erişilebilse de, kodunuz tarafından kullanılmaya yönelik değildir. Bunun yerine ortak kitaplık eşdeğerlerini kullanmak için bu işlevleri ve değişkenleri kullanan tüm kodları değiştirmenizi öneririz. Bu işlevler sürümden sürümüne değişebilir. Bunları tanımlamanızı sağlamak için burada listelenirler. Ek belgeler varken bağlantılar sağlanır, ancak genel olarak bu uygulama ayrıntıları açıklanmamıştır.
 
-## <a name="internal-crt-globals-and-value-macros"></a>Dahili CRT Globals ve Değer Makroları
+## <a name="internal-crt-globals-and-value-macros"></a>İç CRT genel ve değer makroları
 
-Bu global değişkenler ve makro tanımları CRT'yi uygulamak için kullanılır.
+Bu genel değişkenler ve makro tanımları CRT uygulamak için kullanılır.
 
-|Adı|
+|Name|
 |----------|
 |__badioinfo|
 |[_acmdln](../c-runtime-library/acmdln-tcmdln-wcmdln.md)|
@@ -960,11 +960,11 @@ Bu global değişkenler ve makro tanımları CRT'yi uygulamak için kullanılır
 |[_wcmdln](../c-runtime-library/acmdln-tcmdln-wcmdln.md)|
 |__winitenv|
 
-## <a name="internal-crt-functions-and-function-macros"></a>Dahili CRT Fonksiyonları ve İşlev Makroları
+## <a name="internal-crt-functions-and-function-macros"></a>İç CRT Işlevleri ve Işlev makroları
 
-Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı uygulamak için kullanılır.
+Bu işlevler ve işlev makroları, CRT ve C++ standart kitaplığı uygulamak için kullanılır.
 
-|Adı|
+|Name|
 |----------|
 |__acrt_iob_func|
 |__AdjustPointer|

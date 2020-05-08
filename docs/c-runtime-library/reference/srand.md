@@ -17,7 +17,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 - ntoskrnl.exe
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -34,16 +34,16 @@ helpviewer_keywords:
 - pseudorandom numbers
 - starting points, setting random
 - starting points
-ms.openlocfilehash: a8d018d429b2a484f88b7c1e0679f1f799983910
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3f6f97ad9a3bd0d7e4e88ad1797d369f012bbe5e
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81355495"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82913602"
 ---
 # <a name="srand"></a>srand
 
-**Rand** fonksiyonu tarafından kullanılan psödorandom sayı üreteci için başlangıç tohum değerini ayarlar.
+**S_SAYI_ÜRET** işlevi tarafından kullanılan pseudportadom sayı oluşturucusunun başlangıç çekirdek değerini ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,28 +55,28 @@ void srand(
 
 ### <a name="parameters"></a>Parametreler
 
-*Tohum*<br/>
+*çekirdek*<br/>
 Sözde rastgele sayı üretimi için çekirdek
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kum** işlevi, geçerli iş parçacığında bir dizi psödorastgele tamsayı oluşturmak için başlangıç noktasını ayarlar. Aynı sonuç dizisini oluşturmak için jeneratörü yeniden başlatmayı sağlamak **için, kum** işlevini arayın ve aynı *tohum* bağımsız değişkenini yeniden kullanın. *Tohum* için başka bir değer pseudorandom dizisinde farklı bir başlangıç noktasına jeneratör ayarlar. **rand** oluşturulan pseudorandom numaraları alır. **Rand'ı** herhangi bir çağrıdan önce **aramak,** 1 olarak geçirilen *tohumlu* **kum** çağırma yla aynı sırayı oluşturur.
+**Srand** işlevi, geçerli iş parçacığında bir dizi pseudportadom tamsayısı oluşturmak için başlangıç noktasını ayarlar. Aynı sonuç dizisini oluşturmak üzere oluşturucuyu yeniden başlatmak için, **srand** işlevini çağırın ve aynı *çekirdek* bağımsız değişkenini tekrar kullanın. *Çekirdek* için diğer herhangi bir değer, oluşturucuyu pseudportaıdom dizisindeki farklı bir başlangıç noktasına ayarlar. **S_SAYI_ÜRET** , oluşturulan pseudportaıdom numaralarını alır. Hiçbir **srcall** 'tan önce **S_SAYI_ÜRET** çağrısı yapın ve *çekirdek* ile, 1 olarak **geçirilmiş ile aynı** diziyi oluşturur.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**srand**|\<stdlib.h>|
+|**srand**|\<Stdlib. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-[rand](rand.md)örneğine bakın.
+[S_SAYI_ÜRET](rand.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Rand](rand.md)<br/>
+[ran](rand.md)<br/>

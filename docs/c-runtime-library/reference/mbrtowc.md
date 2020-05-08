@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -26,16 +26,16 @@ f1_keywords:
 helpviewer_keywords:
 - mbrtowc function
 ms.assetid: a1e87fcc-6de0-4ca1-bf26-508d28490286
-ms.openlocfilehash: be46c3f3c728b70c7cbf060572acc24662637a81
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a77049edba9a98d9e3e4df93ee2ba007a3eb7381
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81340926"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919186"
 ---
 # <a name="mbrtowc"></a>mbrtowc
 
-Çok baytlı bir karakterin ortasında yeniden başlatma özelliğiyle geçerli yerel ayardaki çok bayt karakteri eşdeğer geniş karaktere dönüştürün.
+Geçerli yerel ayarda bulunan çok baytlı bir karakteri, çok baytlı bir karakterin ortasında yeniden başlatma özelliği ile eşdeğer geniş karaktere dönüştürün.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,47 +50,47 @@ size_t mbrtowc(
 
 ### <a name="parameters"></a>Parametreler
 
-*Wchar*<br/>
-Dönüştürülmüş geniş karakter dizesini almak için geniş bir karakterin adresi **(wchar_t**yazın). İade geniş karakter gerekiyorsa, bu değer null işaretçisi olabilir.
+*wchar*<br/>
+Dönüştürülmüş geniş karakter dizesini (tür **wchar_t**) almak için geniş bir karakterin adresi. Bu değer, return Wide character gerekmiyorsa null bir işaretçi olabilir.
 
 *mbchar*<br/>
-Bayt dizisinin adresi (çok bayt karakter).
+Bir bayt dizisinin adresi (çok baytlı bir karakter).
 
-*Sayısı*<br/>
-Kontrol etmek için bayt sayısı.
+*biriktirme*<br/>
+Denetlenecek bayt sayısı.
 
 *mbstate*<br/>
-Dönüştürme durumu nesnesi için işaretçi. Bu değer null işaretçisi ise, işlev statik bir iç dönüşüm durumu nesnesi kullanır. İç **mbstate_t** nesnesi iş parçacığı için güvenli olmadığından, her zaman kendi *mbstate* bağımsız değişkeninizi geçirmenizi öneririz.
+Dönüştürme durumu nesnesine yönelik işaretçi. Bu değer null işaretçisiyse, işlev statik bir iç dönüştürme durumu nesnesi kullanır. İç **mbstate_t** nesne iş parçacığı açısından güvenli olmadığından, her zaman kendi *mbstate* bağımsız değişkenini geçirmeniz önerilir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Aşağıdaki değerlerden biri:
 
-0 Sonraki *sayı* veya daha az bayt *wchar*depolanır null geniş karakteri temsil eden çok bayt karakteri tamamlamak , *wchar* bir null işaretçi değilse.
+0 sonraki *sayı* veya daha az bayt *, wchar* null bir işaretçi değilse *wchar*içinde saklanan null geniş karakteri temsil eden çok baytlı karakteri tamamlar.
 
-1 *saymak,* bir sonraki *sayı* veya daha az bayt geçerli bir çok bayt karakteri tamamlamak dahil. Döndürülen değer, çok bayt karakterini tamamlayan bayt sayısıdır. Geniş karakter eşdeğeri *wchar*depolanır , *wchar* null işaretçi değilse.
+1- *Count*, sonraki *sayı* dahil olmak üzere veya daha az bayt geçerli bir çok baytlı karakter tamamlanmıştır. Döndürülen değer, çok baytlı karakteri Tamamlanan bayt sayısıdır. *Wchar* null bir işaretçi değilse, geniş karakter eşdeğeri *wchar*'da depolanır.
 
-(size_t) (-1) Bir kodlama hatası oluştu. Sonraki *sayı* veya daha az bayt tam ve geçerli bir çok bayt karaktere katkıda bulunmaz. Bu durumda, **errno** EILSEQ olarak ayarlanır ve *mbstate* dönüşüm kaydırma durumu belirtilmemiştir.
+(size_t) (-1) Bir kodlama hatası oluştu. Sonraki *sayı* veya daha az bayt, bir bütün ve geçerli çok baytlı karaktere katkıda bulunmuyor. Bu durumda, **errno** EILSEQ olarak ayarlanır ve *mbstate* 'teki dönüştürme kaydırma durumu belirtilmemiş olur.
 
-(size_t) (-2) Sonraki *sayım* baytları eksik ama geçerli bir çok bayt karakterine katkıda bulunur ve tüm *sayım* baytları işlenir. *Wchar'da*hiçbir değer depolanır, ancak işlevi yeniden başlatmak için *mbstate* güncelleştirilir.
+(size_t) (-2) *Sıradaki bayt sayısı,* tamamlanmamış ancak büyük olasılıkla geçerli çok baytlı bir karaktere katkıda bulunur ve tüm *sayım* baytları işlenir. *Wchar*'da hiçbir değer depolanmaz, ancak işlevi yeniden başlatmak için *mbstate* güncellenir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Mbchar* null işaretçisi ise, işlev çağrıya eşdeğerdir:
+*Mbchar* null işaretçisiyse, işlev çağrıya eşdeğerdir:
 
 `mbrtowc(NULL, "", 1, &mbstate)`
 
-Bu durumda, *wchar* ve *sayısı* bağımsız değişkenlerinin değeri yoksayılır.
+Bu durumda, *wchar* ve *Count* bağımsız değişkenlerinin değeri yok sayılır.
 
-*Mbchar* null işaretçi değilse, işlev bir sonraki çok bayt karakterini tamamlamak için gerekli bayt sayısını belirlemek için *mbchar'dan* *bayt sayısını* inceler. Bir sonraki karakter geçerliyse, karşılık gelen çok bayt karakter null işaretçi değilse *wchar'da* depolanır. Karakter karşılık gelen geniş null karakter ise, *mbstate* ortaya çıkan durum ilk dönüşüm durumudur.
+*Mbchar* null bir işaretçi değilse, işlev, sonraki çok baytlı karakteri tamamlaması gereken bayt sayısını öğrenmek için *mbchar* 'dan *sayı* baytlarını inceler. Sonraki karakter geçerliyse, bir null işaretçi değilse, karşılık gelen çok baytlı karakter *wchar* 'da depolanır. Karakter, karşılık gelen geniş null karakter ise, *mbstate* sonuç durumu ilk dönüştürme durumudur.
 
-**Mbrtowc** fonksiyonu [mbtowc farklıdır, _mbtowc_l](mbtowc-mbtowc-l.md) yeniden başlatılabilirlik. Dönüştürme durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate'te* depolanır. Yeniden başlatılabilir ve yeniden başlatılamaz işlevlerin kullanımı karıştırılırken sonuçlar tanımsızdır.  Örneğin, **wcsrtombs**yerine daha sonra **wcsrtombs** için bir sonraki çağrı kullanılırsa bir uygulama **wcsrlen yerine wcsrlen** kullanmalıdır. **wcslen**
+**Mbrtowc** işlevi [mbtowc](mbtowc-mbtowc-l.md) 'den farklıdır, yeniden startability tarafından _mbtowc_l. Dönüştürme durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate* 'de depolanır. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımı karıştırılması halinde sonuçlar tanımsızdır.  Örneğin, bir uygulama, **wcstomb**yerine **wcsrkaldırıldı s** öğesine yapılan sonraki bir çağrı kullanılırsa **wcslen** yerine **wcsrlen** kullanmalıdır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="example"></a>Örnek
 
-Çok baytlı bir karakteri geniş karakter eşdeğerine dönüştürür.
+Çok baytlı bir karakteri, geniş karakter eşdeğerine dönüştürür.
 
 ```cpp
 // crt_mbrtowc.cpp
@@ -211,10 +211,10 @@ WC String: AaBbCcÜïα∩≡xXyYzZ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**mbrtowc**|\<wchar.h>|
+|**mbrtowc**|\<wchar. h>|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

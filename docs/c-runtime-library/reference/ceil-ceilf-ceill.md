@@ -19,7 +19,7 @@ api_location:
 - ucrtbase.dll
 - ntdll.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -34,16 +34,16 @@ helpviewer_keywords:
 - ceil function
 - ceilf function
 ms.assetid: f4e5acab-5c8f-4b10-9ae2-9561e6453718
-ms.openlocfilehash: 7567e5758e405235bca13bbae8a18c2d42ccbd3b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bca6053b9dc5ecaf83ab8d63566308e3b573614e
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81333551"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82917343"
 ---
 # <a name="ceil-ceilf-ceill"></a>ceil, ceilf, ceill
 
-Bir değerin tavanını hesaplar.
+Bir değerin tavan değerini hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,36 +67,36 @@ long double ceill(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Ceil** işlevleri, *x'ten*büyük veya eşit olan en küçük tamsayıyı temsil eden kayan nokta değerini döndürer. Hata iadesi yok.
+**CEIL** işlevleri, *x*değerinden büyük veya buna eşit en küçük tamsayıyı temsil eden bir kayan nokta değeri döndürür. Hata döndürme yok.
 
-|Girdi|SEH Özel Durumu|Matherr İstisnası|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|yok|**_DOMAIN**|
 
-**ceil,** Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahiptir. SSE2 uygulamasını kullanma yla ilgili bilgi ve kısıtlamalar için [_set_SSE2_enable](set-sse2-enable.md)bkz.
+**CEIL** 'de Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **uzun** **çift** türleri alan aşırı **ceil** yüklerini arayabilirsiniz. Bir C programında, **ceil** her zaman alır ve bir **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **kayan** veya **uzun** **çift** türleri alan **CEIL** 'nin aşırı yüklerini çağırabilirsiniz. C programında **CEIL** her zaman bir **Double**alır ve döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ceil**, **ceilf**, **ceill**|\<math.h>|
+|**ceil**, **ceilf**, **ceill**|\<Math. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-[Zemin](floor-floorf-floorl.md)için örneğe bakın.
+[Taban](floor-floorf-floorl.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

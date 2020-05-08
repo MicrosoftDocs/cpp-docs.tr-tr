@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -31,16 +31,16 @@ helpviewer_keywords:
 - files [C++], translation
 - setmode function
 ms.assetid: 996ff7cb-11d1-43f4-9810-f6097182642a
-ms.openlocfilehash: 36d2130d4039f1f87f7f54fc26ad02cb8d519b4a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1995d54e972f99543773fff374e56c0dd7cf4988
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81353830"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82915804"
 ---
 # <a name="_setmode"></a>_setmode
 
-Dosya çeviri modunu ayarlar.
+Dosya çevirisi modunu ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,43 +53,43 @@ int _setmode (
 
 ### <a name="parameters"></a>Parametreler
 
-*Fd*<br/>
+*FD*<br/>
 Dosya tanımlayıcısı.
 
-*Modu*<br/>
+*modundaysa*<br/>
 Yeni çeviri modu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Başarılı olursa, önceki çeviri modunu döndürür.
 
-Geçersiz parametreler bu işleve aktarılırsa, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütme devam etmesine izin verilirse, bu işlev -1 döndürür ve geçersiz bir dosya tanımlayıcısı veya Geçersiz *mod* bağımsız değişkenini gösteren **EBADF'a** **EINVAL** **errno** ayarlar.
+Bu işleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev-1 döndürür ve **errno** **, geçersiz**bir dosya tanımlayıcısı ya da geçersiz bir *mod* bağımsız değişkenini gösteren **EINVAL**.
 
-Bu ve diğer iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_setmode** işlevi *fd*tarafından verilen dosyanın çeviri modunu *moduna* ayarlar. *Kip* olarak **_O_TEXT** geçme metni ayarlar (yani, çevrilmiş) modu. Taşıma satır beslemesi (CR-LF) kombinasyonları girişte tek bir satır besleme karakterine dönüştürülür. Satır besleme karakterleri çıktıda CR-LF kombinasyonlarına çevrilir. Geçen **_O_BINARY** bu çevirilerin bastırıldığı ikili (çevrilmemiş) modu belirler.
+**_Setmode** işlevi, *FD*tarafından verilen dosyanın çeviri modunu *mod* olarak belirler. **_O_TEXT** as *modu* , metin (yani, çevrilmiş) modunu belirler. Satır başı satır besleme (CR-LF) birleşimleri, girişte tek satırlık bir akış karakteriyle çevrilir. Satır akış karakterleri, çıkışta CR-LF birleşimlerine çevrilir. **_O_BINARY** , bu çevirilerin gizlendiği ikili (çevrilmemiş) modu geçirme.
 
-Ayrıca, bu belgede daha sonra ikinci örnekte gösterildiği gibi Unicode modunu etkinleştirmek için **_O_U16TEXT,** **_O_U8TEXT**veya **_O_WTEXT** geçirebilirsiniz.
-
-> [!CAUTION]
-> Unicode modu geniş yazdırma işlevleri içindir (örneğin, `wprintf`) ve dar yazdırma işlevleri için desteklenmez. Unicode modu akışında dar bir yazdırma işlevinin kullanılması bir ileri sözletetikler.
-
-**_setmode** genellikle **stdin** ve **stdout**varsayılan çeviri modunu değiştirmek için kullanılır, ancak herhangi bir dosya üzerinde kullanabilirsiniz. Akış için dosya tanımlayıcısına **_setmode** uygularsanız, akışta herhangi bir giriş veya çıktı işlemi gerçekleştirmeden önce **_setmode** arayın.
+Ayrıca, bu belgenin devamındaki ikinci örnekte gösterildiği gibi, Unicode modunu etkinleştirmek için **_O_U16TEXT**, **_O_U8TEXT**veya **_O_WTEXT** geçirebilirsiniz.
 
 > [!CAUTION]
-> Bir dosya akışına veri yazarsanız, modu değiştirmek için **_setmode** kullanmadan önce [fflush](fflush.md) kullanarak kodu açıkça temizleyin. Kodu sifonu çekmezseniz, beklenmeyen davranışlar alabilirsiniz. Akışa veri yazmadıysanız, kodu temizlemeniz gerekmez.
+> Unicode modu geniş yazdırma işlevlerine yöneliktir (örneğin, `wprintf`) ve dar yazdırma işlevlerinde desteklenmez. Bir UNICODE modundaki bir dar Print işlevinin kullanımı bir onaylama tetikler.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+**_setmode** , genellikle **stdin** ve **stdout**varsayılan çeviri modunu değiştirmek için kullanılır, ancak bunu herhangi bir dosya üzerinde kullanabilirsiniz. Bir akışın dosya tanımlayıcısına **_setmode** uygularsanız, akışta herhangi bir giriş veya çıkış işlemini gerçekleştirmeden önce **_setmode** çağırın.
+
+> [!CAUTION]
+> Bir dosya akışına veri yazarsanız, modu değiştirmek için **_setmode** kullanmadan önce [fflush](fflush.md) kullanarak kodu açık olarak temizleyin. Kodu temizlemeyin, beklenmeyen davranışlarla karşılaşabilirsiniz. Akışa veri yazmadınız, kodu temizlemeyin.
+
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe Bağlı Üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**_setmode**|\<io.h>|\<fcntl.h>|
+|**_setmode**|\<GÇ. h>|\<fcntl. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -141,7 +141,7 @@ int main(void) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya Işleme](../../c-runtime-library/file-handling.md)<br/>
+[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>
