@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -28,19 +28,19 @@ helpviewer_keywords:
 - raise function
 - signals
 - programs [C++], sending signals to executing programs
-ms.openlocfilehash: b38a3430274b2324e345be30ce9e38f0c2749fa3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 81b92404603820948a384b6ad33421251a27c13c
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338259"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919558"
 ---
 # <a name="raise"></a>tetikle
 
-Yürütme programına bir sinyal gönderir.
+Yürütülen programa bir sinyal gönderir.
 
 > [!NOTE]
-> Test veya hata ayıklama senaryoları dışında bir Microsoft Mağazası uygulamasını kapatmak için bu yöntemi kullanmayın. Bir Mağaza uygulamasını kapatmanın programlı veya uI yollarına [Microsoft Mağazası ilkelerine](/legal/windows/agreements/store-policies)göre izin verilmez. Daha fazla bilgi için [UWP uygulama yaşam döngüsüne](/windows/uwp/launch-resume/app-lifecycle)bakın.
+> Test veya hata ayıklama senaryoları dışında Microsoft Store uygulamasını kapatmak için bu yöntemi kullanmayın. Bir mağaza uygulamasını kapatmak için programlı veya Kullanıcı arabirimi yollarına [Microsoft Store ilkelerine](/legal/windows/agreements/store-policies)göre izin verilmez. Daha fazla bilgi için bkz. [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,40 +52,40 @@ int raise(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sıg*<br/>
-Sinyal yükseltilecek.
+*za*<br/>
+Ortaya çıkan sinyal.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, 0 döndürür **yükseltin.** Aksi takdirde, sıfır olmayan bir değer döndürür.
+Başarılı olursa, **Raise** 0 döndürür. Aksi takdirde, sıfır dışında bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Yükseltme** işlevi *yürütme* programına sig gönderir. **Sinyalönceki** bir arama *sig*için bir sinyal işleme işlevi yüklü ise, **yükseltmek** bu işlevi yürütür. İşleyici işlevi yüklenmemişse, aşağıdaki gibi sinyal değeri *sig* ile ilişkili varsayılan eylem alınır.
+**Raise** işlevi, çalıştırılan programa *SIG* gönderir. Önceki bir **sinyal** çağrısı *SIG*için bir sinyal işleme işlevi yüklemiştir **, bu** işlevi yürütür. Hiçbir işleyici işlevi yüklenmemişse, *SIG* sinyal değeri ile ilişkili varsayılan eylem aşağıdaki şekilde alınır.
 
-|Sinyal|Anlamı|Varsayılan|
+|Sinyalinin|Anlamı|Varsayılan|
 |------------|-------------|-------------|
-|**SIGABRT**|Anormal sonlandırma|Çıkış kodu 3 ile arama programını sonlandırır|
-|**SIGFPE**|Kayan nokta hatası|Arama programını sonlandırır|
-|**SIGILL**|Yasadışı talimat|Arama programını sonlandırır|
-|**SIGINT**|CTRL+C kesme|Arama programını sonlandırır|
-|**SIGSEGV**|Yasadışı depolama erişimi|Arama programını sonlandırır|
-|**SIGTERM**|Programa gönderilen sonlandırma isteği|Sinyali yok sayar|
+|**SıGABRT**|Olağan dışı sonlandırma|Çağıran programı çıkış kodu 3 ile sonlandırır|
+|**SıGFPE**|Kayan nokta hatası|Çağıran programı sonlandırır|
+|**SıGıLL**|Geçersiz yönerge|Çağıran programı sonlandırır|
+|**SıGıNT**|CTRL + C kesme|Çağıran programı sonlandırır|
+|**SıGSEGV**|Geçersiz depolama erişimi|Çağıran programı sonlandırır|
+|**SıGTERM**|Programa sonlandırma isteği gönderildi|Sinyali yoksayar|
 
-Bağımsız değişken yukarıda belirtildiği gibi geçerli bir sinyal değilse, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. İşlenmezse, işlev **errno'yu** **EINVAL** olarak ayarlar ve sıfır olmayan bir değer döndürür.
+Bağımsız değişken yukarıda belirtilen geçerli bir sinyal değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. İşlenmezse, işlev **errno** 'ya **EINVAL** olarak ayarlar ve sıfır dışında bir değer döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**Yükseltmek**|\<signal.h>|
+|**yükseltmek**|\<sinyal. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[Iptal](abort.md)<br/>
+[durdurulmaya](abort.md)<br/>
 [sinyal](signal.md)<br/>

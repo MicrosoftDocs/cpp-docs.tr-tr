@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -26,16 +26,16 @@ f1_keywords:
 helpviewer_keywords:
 - mbrlen function
 ms.assetid: dde8dee9-e091-4c4c-81b3-639808885ae1
-ms.openlocfilehash: 7503de22a8310335ddd678335916d3e74dab6e70
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dd903aaf8b1c5772f2caaf58bda5d6c23bb59687
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81340986"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82920311"
 ---
 # <a name="mbrlen"></a>mbrlen
 
-Çok bayt karakterin ortasında yeniden başlatma özelliğiyle geçerli yerel eşteki çok bayt karakterini tamamlamak için gereken bayt sayısını belirleyin.
+Çok baytlı bir karakterin ortasında yeniden başlatma özelliği ile geçerli yerel ayarda çok baytlı bir karakteri tamamlamaya yönelik gereken bayt sayısını belirleme.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,14 +49,14 @@ size_t mbrlen(
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*<br/>
-Çok bayt karakter dizesini incelemek için bir sonraki bayt işaretleyin.
+*üstbilgisine*<br/>
+Çok baytlı bir karakter dizesinde incelemek için sonraki bayta yönelik işaretçi.
 
-*Sayısı*<br/>
-İncelenecek maksimum bayt sayısı.
+*biriktirme*<br/>
+İncelenecek en fazla bayt sayısı.
 
 *mbstate*<br/>
-*Str'in*baş baytının geçerli kayma durumuna işaretçi.
+*Str*ilk baytının geçerli kaydırma durumuna yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -64,38 +64,38 @@ Aşağıdaki değerlerden biri:
 
 |||
 |-|-|
-0|Sonraki *sayı* veya daha az bayt, geniş null karakterini temsil eden çok bayt karakterini tamamlar.
-1 *saymak*, dahil|Sonraki *sayı* veya daha az bayt geçerli bir çok bayt karakterini tamamlar. Döndürülen değer, çok bayt karakterini tamamlayan bayt sayısıdır.
-(size_t) (-2)|Sonraki *sayım* baytları eksik ama potansiyel olarak geçerli bir çok bayt karakterine katkıda bulunur ve tüm *sayım* baytları işlenir.
-(size_t) (-1)|Bir kodlama hatası oluştu. Sonraki *sayı* veya daha az bayt tam ve geçerli bir çok bayt karaktere katkıda bulunmaz. Bu durumda, **errno** EILSEQ olarak ayarlanır ve *mbstate* dönüşüm durumu belirtilmemiştir.
+0|Sonraki *sayı* veya daha az bayt, geniş boş karakteri temsil eden çok baytlı karakteri tamamlar.
+1- *Count*, dahil|Sonraki *sayı* veya daha az bayt geçerli bir çok baytlı karakteri tamamlar. Döndürülen değer, çok baytlı karakteri Tamamlanan bayt sayısıdır.
+(size_t) (-2)|*Sıradaki bayt sayısı,* tamamlanmamış ancak büyük olasılıkla geçerli çok baytlı bir karaktere katkıda bulunur ve tüm *sayım* baytları işlenir.
+(size_t) (-1)|Bir kodlama hatası oluştu. Sonraki *sayı* veya daha az bayt, bir bütün ve geçerli çok baytlı karaktere katkıda bulunmuyor. Bu durumda, **errno** EILSEQ olarak ayarlanır ve *mbstate* 'teki dönüştürme durumu belirtilmemiş olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbrlen** işlevi, herhangi bir kaydırma dizisi de dahil olmak üzere bir sonraki çok bayt karakterini tamamlamak için gereken bayt sayısını belirlemek için *str* tarafından işaret edilen bayt ile başlayan en çok *sayı* baytını inceler. Mbstate'in kullanıcı `mbrtowc(NULL, str, count, &mbstate)` *mbstate* tarafından sağlanan **bir mbstate_t** nesnesi veya kitaplık tarafından sağlanan statik bir iç nesne olduğu çağrıya eşdeğerdir.
+**Mbrlen** işlevi, tüm kaydırma dizileri dahil olmak üzere bir sonraki çok baytlı karakteri tamamlaması gereken bayt sayısını öğrenmek için *Str* tarafından işaret edilen bayt ile başlayan en fazla *sayıda* baytı inceler. *Mbstate* 'in Kullanıcı tarafından sağlanmış `mbrtowc(NULL, str, count, &mbstate)` **mbstate_t** nesne veya kitaplık tarafından sunulan statik bir dahili nesne olduğu çağrıya eşdeğerdir.
 
-**mbrlen** işlevi *mbstate* parametresinde tamamlanmamış bir çok bayt karakterin kaydırma durumunu kaydeder ve kullanır. Bu **mbrlen** gerekirse çok bayt karakterin ortasında yeniden başlatma yeteneği verir, en *sayı* bayt inceleyerek. *Mbstate* null işaretçisi ise, **mbrlen** kaydırma durumunu depolamak için bir iç, statik **mbstate_t** nesnesi kullanır. İç **mbstate_t** nesnesi iş parçacığı için güvenli olmadığından, her zaman kendi *mbstate* parametrenizi ayırmanızı ve geçirmenizi öneririz.
+**Mbrlen** işlevi, *mbstate* parametresinde tamamlanmamış bir çok baytlı karakterin vardiya durumunu kaydeder ve kullanır. Bu, daha çok baytlı bir karakterin ortasında yeniden başlatma yeteneğini, gerekirse en fazla *sayıda* baytı inceleyerek **mbrlen** özelliğini sağlar. *Mbstate* null işaretçisiyse **mbrlen** , SHIFT durumunu depolamak için bir iç, statik **mbstate_t** nesnesi kullanır. İç **mbstate_t** nesnesi iş parçacığı açısından güvenli olmadığından, her zaman kendi *mbstate* parametresini ayırmanız ve geçirmeniz önerilir.
 
-**Mbrlen** işlevi [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md) yeniden başlatılabilirliğinden farklıdır. Kaydırma durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate'te* depolanır. Yeniden başlatılabilir ve yeniden başlatılamaz işlevlerin kullanımı karıştırılırken sonuçlar tanımsızdır.  Örneğin, **wcsrtombs**yerine daha sonra **wcsrtombs** için bir sonraki çağrı kullanılırsa bir uygulama **wcsrlen yerine wcsrlen** kullanmalıdır. **wcslen**
+**Mbrlen** işlevi, yeniden başlangıçından [_mbclen, mblen _mblen_l](mbclen-mblen-mblen-l.md) farklıdır. Kaydırma durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate* içinde depolanır. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımı karıştırılması halinde sonuçlar tanımsızdır.  Örneğin, bir uygulama, **wcstomb**yerine **wcsrkaldırıldı s** öğesine yapılan sonraki bir çağrı kullanılırsa **wcslen** yerine **wcsrlen** kullanmalıdır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|geçerli değildir|geçerli değildir|**mbrlen**|geçerli değildir|
+|uygulanamaz|uygulanamaz|**mbrlen**|uygulanamaz|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**mbrlen**|\<wchar.h>|
+|**mbrlen**|\<wchar. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, çok bayt karakterlerin yorumlanmasının geçerli kod sayfasına nasıl bağlı olduğunu gösterir ve **mbrlen'in**devam etme yeteneğini gösterir.
+Bu örnek, çok baytlı karakterlerin nasıl yorumlandığının geçerli kod sayfasına nasıl bağlı olduğunu gösterir ve **mbrlen**'ın sürdürme özelliğini gösterir.
 
 ```C
 // crt_mbrlen.c
@@ -158,4 +158,4 @@ Character count: 25
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>

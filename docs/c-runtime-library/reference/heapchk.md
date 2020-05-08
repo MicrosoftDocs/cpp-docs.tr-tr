@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -31,16 +31,16 @@ helpviewer_keywords:
 - heaps, checking consistency
 - _heapchk function
 ms.assetid: 859619a5-1e35-4f02-9e09-11d9fa266ec0
-ms.openlocfilehash: 21c7f9e22728109676d3fc611405ccd43ac773f8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2ddbdaec5861d48cc23a7cbcd28332e8c06ebbfe
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81344055"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82916207"
 ---
 # <a name="_heapchk"></a>_heapchk
 
-Yığınüzerinde tutarlılık denetimleri çalıştırın.
+Yığın üzerinde tutarlılık denetimleri çalıştırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,31 +50,31 @@ int _heapchk( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_heapchk,** Malloc.h'de tanımlanan aşağıdaki tamsayı bildirim sabitlerinden birini döndürür.
+**_heapchk** , malloc. h içinde tanımlanan aşağıdaki tamsayı bildirimi sabitlerinden birini döndürür.
 
 |Döndürülen değer|Koşul|
 |-|-|
-| **_HEAPBADBEGIN** | İlk üstbilgi bilgileri bozuk veya bulunamıyor. |
-| **_HEAPBADNODE** | Kötü düğüm bulundu veya yığın zarar gördü. |
-| **_HEAPBADPTR** | İşaretçi yığına geçerli değildir. |
-| **_HEAPEMPTY** | Yığın başharfe bünyedi değil. |
+| **_HEAPBADBEGIN** | İlk üstbilgi bilgisi hatalı veya bulunamıyor. |
+| **_HEAPBADNODE** | Hatalı düğüm bulundu veya yığın hasarlı. |
+| **_HEAPBADPTR** | Yığında işaretçi geçerli değil. |
+| **_HEAPEMPTY** | Yığın başlatılmamış. |
 | **_HEAPOK** | Yığın tutarlı görünüyor. |
 
-Buna ek olarak, bir hata oluşursa, **_heapchk** **ENOSYS** **için errno** ayarlar.
+Buna ek olarak, bir hata oluşursa **_heapchk** **errno** , **ENOSYS**olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_heapchk** işlevi, yığının en az tutarlılığını denetleyerek yığınla ilgili sorunları ayıklamanıza yardımcı olur. İşletim sistemi **_heapchk**(örneğin, Windows 98) desteklemiyorsa, işlev **_HEAPOK** döndürür ve **errno'yu** **ENOSYS'e**ayarlar.
+**_Heapchk** işlevi, yığının en az tutarlılığını denetleyerek yığında ilgili sorunları ayıklamanıza yardımcı olur. İşletim sistemi **_heapchk**(örneğin, Windows 98) desteklemiyorsa, işlev **_HEAPOK** döndürür ve **errno** , **ENOSYS**olarak ayarlar.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_heapchk**|\<malloc.h>|\<errno.h>|
+|**_heapchk**|\<malloc. h>|\<errno. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

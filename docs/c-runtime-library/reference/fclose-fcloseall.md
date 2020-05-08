@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -31,16 +31,16 @@ helpviewer_keywords:
 - streams, closing
 - _fcloseall function
 ms.assetid: c3c6ea72-92c6-450a-a33e-3e568d2784a4
-ms.openlocfilehash: b2ee14c5fc8bb47cc2652443c0263bd14147c90d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3f8567f7bb01c519938f5a4e28bbb33bce09dffe
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81347486"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82920222"
 ---
 # <a name="fclose-_fcloseall"></a>fclose, _fcloseall
 
-Bir akışı kapatır **(fclose)** veya tüm açık akışları kapatır **(_fcloseall).**
+Bir akışı (**fclose**) kapatır veya tüm açık akışları (**_fcloseall**) kapatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,35 +53,35 @@ int _fcloseall( void );
 
 ### <a name="parameters"></a>Parametreler
 
-*Akışı*<br/>
-**DOSYA** yapısı için işaretçi.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-akış başarıyla kapatılırsa **fclose** 0 döndürür. **_fcloseall,** kapatılan toplam akış sayısını döndürür. Her iki işlev de hata göstermek için **EOF** döndürer.
+Akış başarıyla kapatılırsa, **fclose** 0 döndürür. **_fcloseall** kapatılan toplam akış sayısını döndürür. Her iki işlev de bir hatayı göstermek için **EOF** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fclose** işlevi *akışı*kapatır. *Akış* **NULL**ise, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütme devam etmesine izin verilirse, **fclose** Setleri **ErrNO** **EINVAL** ve **EOF**döndürür. Akış işaretçisinin *stream* bu işlevi çağırmadan önce her zaman denetlenebilen önerilir.
+**Fclose** işlevi *akışı*kapatır. *Stream* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **fclose** , **errno** , **EINVAL** olarak ayarlar ve **EOF**döndürür. Bu işlev çağrılmadan önce *akış* işaretçisinin her zaman denetlenmesi önerilir.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bakın.
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
-**_fcloseall** işlevi **stdin**, **stdout**, **stderr** (ve MS-DOS, **_stdaux** ve **_stdprn**hariç tüm açık akışları kapatır). Ayrıca **tmpfile**tarafından oluşturulan geçici dosyaları kapatır ve siler. Her iki işlevde de, akışla ilişkili tüm arabellekler kapanmadan önce temizlenir. Akış kapatıldığında sistem tarafından ayrılan arabellekler serbest bırakılır. Kullanıcı tarafından **setbuf** ve **setvbuf** ile atanan arabellekler otomatik olarak serbest bırakılmaz.
+**_Fcloseall** işlevi, **stdin**, **stdout**, **stderr** (ve, MS-DOS, **_stdaux** ve **_stdprn**) dışındaki tüm açık akışları kapatır. Ayrıca, **tmpfile**tarafından oluşturulan geçici dosyaları da kapatır ve siler. Her iki durumda da, akışla ilişkili tüm arabellekler kapatılmadan önce temizlenir. Sistem tarafından ayrılan arabellekler, Akış kapalıyken serbest bırakılır. Kullanıcı tarafından **setarabelleğe** ve **setvarabelleğe** atanan arabellekler otomatik olarak serbest bırakılır.
 
-**Not:** Bu işlevler bir akışı kapatmak için kullanıldığında, temel dosya tanımlayıcısı ve işletim sistemi dosya tutamacı (veya soket) ve akış kapatılır. Bu nedenle, dosya başlangıçta bir dosya tutamacı veya dosya tanımlayıcısı olarak açılmışsa ve **fclose**ile kapatılırsa, dosya tanımlayıcısını kapatmak için **_close** de aramayın; Dosya tutamacını kapatmak için Win32 işlevini **CloseHandle** olarak aramayın.
+**Note:** Bu işlevler bir akışı kapatmak için kullanıldığında, arka plandaki dosya tanımlayıcısının ve işletim sistemi dosya tutamacının (veya yuvasının) yanı sıra akışı da kapanır. Bu nedenle, dosya başlangıçta dosya tanıtıcısı veya dosya tanımlayıcısı olarak açılırsa ve **fclose**ile kapatılırsa, dosya tanımlayıcısını kapatmak için **_close** de çağırmayın; dosya tanıtıcısını kapatmak için **CloseHandle** Win32 işlevini çağırmayın.
 
-**fclose** ve **_fcloseall** diğer iş parçacıkları girişime karşı korumak için kod içerir. Bir **fclose**olmayan kilitleme sürümü için, **_fclose_nolock**bakın.
+**fclose** ve **_fcloseall** diğer iş parçacıklarından girişim karşı korumaya yönelik kodu içerir. Bir **fclose**'un kilitleme dışı sürümü için bkz. **_fclose_nolock**.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**Fclose**|\<stdio.h>|
-|**_fcloseall**|\<stdio.h>|
+|**fclose**|\<stdio. h>|
+|**_fcloseall**|\<stdio. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -89,7 +89,7 @@ Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_close](close.md)<br/>
 [_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
 [fflush](fflush.md)<br/>

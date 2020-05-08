@@ -20,7 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -42,16 +42,16 @@ helpviewer_keywords:
 - _istgraph function
 - _ismbcgraph_l function
 ms.assetid: 531a5f34-4302-4d0a-8a4f-b7ea150ad941
-ms.openlocfilehash: b10038a783f05512f12f25a231dd553a1863c143
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 29fd8a4d9fcaded1f7750eaf9ba9dfbf28760cf7
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81343820"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82909636"
 ---
 # <a name="isgraph-iswgraph-_isgraph_l-_iswgraph_l"></a>isgraph, iswgraph, _isgraph_l, _iswgraph_l
 
-Bir tamsacın grafik karakterini temsil edip etmediğini belirler.
+Bir tamsayının bir grafik karakterini temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,41 +74,41 @@ int _iswgraph_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*C*<br/>
-Test etmek için sonda.
+*,*<br/>
+Sınanacak tamsayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her *biri, c* bir boşluk dışında yazdırılabilir bir karakterin belirli bir temsiliyse sıfırsız döndürür. **isgraph,** *bir* boşluk tan başka yazdırılabilir bir karakterse sıfır olmayan bir değer döndürür. **iswgraph,** *geniş* karakter alanı dışında yazdırılabilir geniş bir karakter ise sıfır olmayan bir değer döndürür. *C* test koşulunu karşılamazsa bu yordamların her biri 0 döndürür.
+Bu yordamların her biri, *c* , boşluk dışında yazdırılabilir bir karakterin belirli bir gösterimiyse sıfır olmayan bir değer döndürür. *c* , boşluk dışında yazdırılabilir bir karakter ise, **ısgraph** sıfır dışında bir değer döndürür. *c* , geniş bir karakter alanından başka bir yazdırılabilir geniş karakter ise, **ıswgraph** sıfır dışında bir değer döndürür. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
 
-**_l** sonek olan bu işlevlerin sürümleri, yerel e-çözüme bağlı davranışları için geçerli yerel alan yerine geçen yerel alanı kullanır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-isgraph **isgraph** ve **_isgraph_l** *davranışı, c* EOF değilse veya 0 ile 0xFF aralığında, dahil ise tanımsızdır. Hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir iddiayı yükseltir.
+*C* , EOF veya 0 ile 0xFF (dahil) arasında değilse, **ısgraph** ve **_isgraph_l** davranışı tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istgraph**|**isgraph**|[_ismbcgraph](ismbcgraph-functions.md)|**iswgraph**|
+|**_istgraph**|**isgraph**|[_ismbcgraph](ismbcgraph-functions.md)|**iswgraf**|
 |**_istgraph_l**|**_isgraph_l**|[_ismbcgraph_l](ismbcgraph-functions.md)|**_iswgraph_l**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isgraph**|\<ctype.h>|
-|**iswgraph**|\<ctype.h> \<veya wchar.h>|
-|**_isgraph_l**|\<ctype.h>|
-|**_iswgraph_l**|\<ctype.h> \<veya wchar.h>|
+|**isgraph**|\<CType. h>|
+|**iswgraf**|\<CType. h> veya \<wchar. h>|
+|**_isgraph_l**|\<CType. h>|
+|**_iswgraph_l**|\<CType. h> veya \<wchar. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter Sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
-[olduğunu, isw Rutinleri](../../c-runtime-library/is-isw-routines.md)<br/>
+[Karakter sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[, isw yordamları](../../c-runtime-library/is-isw-routines.md)<br/>

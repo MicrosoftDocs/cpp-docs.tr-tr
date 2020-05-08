@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -28,16 +28,16 @@ helpviewer_keywords:
 - tmpfile_s function
 - temporary files, creating
 ms.assetid: 50879c69-215e-425a-a2a3-8b5467121eae
-ms.openlocfilehash: 8f9dd58abdf1d3225341e40661c14ae3a5013257
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 48c599887a8a903d52c7dcd46b98046119c9d3ad
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81362469"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919928"
 ---
 # <a name="tmpfile_s"></a>tmpfile_s
 
-Geçici bir dosya oluşturur. [CRT'deki Güvenlik Özellikleri'nde](../../c-runtime-library/security-features-in-the-crt.md)açıklandığı gibi güvenlik geliştirmeleri içeren [tmpfile'nin](tmpfile.md) bir sürümüdür.
+Geçici bir dosya oluşturur. Bu, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle bir [tmpfile](tmpfile.md) sürümüdür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,42 +50,42 @@ errno_t tmpfile_s(
 ### <a name="parameters"></a>Parametreler
 
 *pFilePtr*<br/>
-Oluşturulan işaretçinin adresini bir akışa depolamak için işaretçinin adresi.
+Oluşturulan işaretçinin adresini bir akışa depolayan işaretçinin adresi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa 0 döndürür, hata yla ilgili bir hata kodu.
+Başarılı olursa 0 döndürür. hata durumunda hata kodu.
 
-### <a name="error-conditions"></a>Hata Koşulları
+### <a name="error-conditions"></a>Hata koşulları
 
-|*pFilePtr*|**Dönüş Değeri**|**Contents of***pFilePtr* içeriği  |
+|*pFilePtr*|**Dönüş Değeri**|**Contents of***PFilePtr* içeriği  |
 |----------------|----------------------|---------------------------------|
-|**Null**|**Eınval**|değiştirilmedi|
+|**DEĞER**|**EıNVAL**|değiştirilmedi|
 
-Yukarıdaki parametre doğrulama hatası oluşursa, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, **errno** **EINVAL** olarak ayarlanır ve iade değeri **EINVAL**olduğunu.
+Yukarıdaki parametre doğrulama hatası oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve dönüş değeri **EINVAL**' dir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**tmpfile_s** işlevi geçici bir dosya oluşturur ve *pFilePtr* bağımsız değişkeninde bu akışa bir işaretçi koyar. Geçici dosya kök dizinde oluşturulur. Kök dışındaki bir dizinde geçici bir dosya oluşturmak [için, fopen](fopen-wfopen.md)ile birlikte [tmpnam_s](tmpnam-s-wtmpnam-s.md) veya [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) kullanın.
+**Tmpfile_s** işlevi geçici bir dosya oluşturur ve *pFilePtr* bağımsız değişkeninde bu akışa bir işaretçi koyar. Geçici dosya kök dizinde oluşturulur. Kök dışında bir dizinde geçici bir dosya oluşturmak için, [fopen](fopen-wfopen.md)ile birlikte [tmpnam_s](tmpnam-s-wtmpnam-s.md) veya [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) kullanın.
 
-Dosya açılamıyorsa, **tmpfile_s** *pFilePtr* parametresine **NULL** yazar. Bu geçici dosya, dosya kapatıldığında, program normal olarak sona erdiğinde veya geçerli çalışma dizininin değişmediğini varsayarak **_rmtmp** çağrıldığında otomatik olarak silinir. Geçici dosya **w+b** (ikili okuma/yazma) modunda açılır.
+Dosya açılamadığı **tmpfile_s** , *pFilePtr* parametresine **null** yazar. Dosya kapatıldığında, program normal olarak sonlandırıldığında veya **_rmtmp** çağrıldığında, geçerli çalışma dizininin değişmediği varsayılarak bu geçici dosya otomatik olarak silinir. Geçici dosya **w + b** (ikili okuma/yazma) modunda açılır.
 
-**TMP_MAX_S'den** fazla çabalarsanız hata oluşabilir (bkz. H) **tmpfile_s**ile aramalar .
+**TMP_MAX_S** daha fazlasını denerseniz hata oluşabilir (bkz. stdio. H) **tmpfile_s**çağırır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**tmpfile_s**|\<stdio.h>|
+|**tmpfile_s**|\<stdio. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
 > [!NOTE]
-> Bu örnek, Windows'da çalıştırmak için yönetim ayrıcalıkları gerektirebilir.
+> Bu örnek, Windows 'da çalıştırmak için yönetici ayrıcalıkları gerektirebilir.
 
 ```C
 // crt_tmpfile_s.c
@@ -126,6 +126,6 @@ Temporary file 3 was created
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_rmtmp](rmtmp.md)<br/>
 [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>

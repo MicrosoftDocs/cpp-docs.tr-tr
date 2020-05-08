@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -29,16 +29,16 @@ helpviewer_keywords:
 - fclose_nolock function
 - _fclose_nolock function
 ms.assetid: b4af4392-5fc8-49bb-9fe2-ca7293d3ce04
-ms.openlocfilehash: 5ec1db740ae27bca81237bda43d47d51576243f1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bc8d0b0bcb92bf45ff4d3f1a10a1442c8ee1d069
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81347470"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82920216"
 ---
 # <a name="_fclose_nolock"></a>_fclose_nolock
 
-İş parçacığı kilitlemeden akışı kapatır.
+İş parçacığı kilitleme olmadan bir akışı kapatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,30 +50,30 @@ int _fclose_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akışı*<br/>
-**DOSYA** yapısına işaretçi.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-akış başarıyla kapatılırsa **fclose** 0 döndürür. Bir hata belirtmek için **EOF'yi** döndürür.
+Akış başarıyla kapatılırsa, **fclose** 0 döndürür. Bir hatayı göstermek için **EOF** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler **fclose**olmayan bir kilitleme sürümüdür. Diğer iş parçacıkları tarafından girişime karşı korumalı olmaması dışında aynıdır. Diğer iş parçacığı kilitleme yükü ne bilgili değildir, çünkü daha hızlı olabilir. Bu işlevi yalnızca tek iş parçacığı uygulamaları gibi iş parçacığı güvenli bağlamlarda veya arama kapsamının iş parçacığı yalıtımını zaten işlediği durumlarda kullanın.
+Bu işlevler, **fclose**'un kilitleme dışı bir sürümüdür. Bu, diğer iş parçacıklarının girişim tarafından korunmamasının dışında aynıdır. Diğer iş parçacıklarını kilitleme yükünü karşılamadığından daha hızlı olabilir. Bu işlevi yalnızca tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fclose_nolock**|\<stdio.h>|
+|**_fclose_nolock**|\<stdio. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_close](close.md)<br/>
 [_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
 [fflush](fflush.md)<br/>

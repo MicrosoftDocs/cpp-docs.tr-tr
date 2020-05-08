@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -38,19 +38,19 @@ helpviewer_keywords:
 - _mbsnbcpy_s_l function
 - _tcsncpy_s function
 ms.assetid: dfff64ab-fe6f-49c4-99ba-75014e2b0cd6
-ms.openlocfilehash: d3c4a07ffb5ed4040a4bb99ee354e01f0d62f42a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 670055ca67e8196805851767596f56028350e32a
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81340676"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82911883"
 ---
 # <a name="_mbsnbcpy_s-_mbsnbcpy_s_l"></a>_mbsnbcpy_s, _mbsnbcpy_s_l
 
-Bir **dizen n** baytını hedef dizekopyalar. [crt](../../c-runtime-library/security-features-in-the-crt.md)Güvenlik Özellikleri açıklandığı [gibi, _mbsnbcpy _mbsnbcpy_l](mbsnbcpy-mbsnbcpy-l.md) bu sürümleri güvenlik geliştirmeleri var.
+Bir dizenin **n** baytını bir hedef dizeye kopyalar. Bu _mbsnbcpy sürümleri [, _MBSNBCPY_L](mbsnbcpy-mbsnbcpy-l.md) [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -86,38 +86,38 @@ errno_t _mbsnbcpy_s_l(
 ### <a name="parameters"></a>Parametreler
 
 *strDest*<br/>
-Karakter dizesi için hedef kopyalanacak.
+Kopyalanacak karakter dizesinin hedefi.
 
-*sizeBytes*<br/>
+*sizeInBytes*<br/>
 Hedef arabellek boyutu.
 
 *strSource*<br/>
 Kopyalanacak karakter dizesi.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Kopyalanacak bayt sayısı.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır; **EINVAL** kötü bir parametre geçtiyse.
+Başarılıysa sıfır; **EINVAL** hatalı bir parametre geçirilmemişse.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_mbsnbcpy_s** işlevi kopyaları *strSource* *strDest*bayt *saymak.* *Sayı* *strDest*boyutunu aşıyorsa, giriş dizelerinden biri null işaretçisi veya *sizeBytes* veya *count* 0 ise, işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md) açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmedevam etmesine izin verilirse, işlev **EINVAL**döndürür. Kaynak ve hedef dizeleri çakışıyorsa, **_mbsnbcpy_s** davranışı tanımsızdır.
+**_Mbsnbcpy_s** Işlevi, *strSource* 'dan *strDest*öğesine *sayı* baytlarını kopyalar. *Sayım* , *strDest*boyutunu aşarsa, giriş dizelerinden biri null Işaretçisiyse veya *sizeInBytes* ya da *Count* 0 ise, işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md) açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL**döndürür. Kaynak ve hedef dizeler çakışırsa **_mbsnbcpy_s** davranışı tanımsızdır.
 
-Çıktı değeri, yerel LC_CTYPE **kategori** ayarı ayarı etkilenir; daha fazla bilgi için [setlocale'ye](setlocale-wsetlocale.md) bakın. Bu işlevlerin **_l** soneki olmayan sürümleri, bu yerele bağımlı davranış için geçerli yerel durumu kullanır; **_l** soneki olan sürümler, bunun yerine geçirilen yerel parametreyi kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 > [!NOTE]
-> Bu işlevin güvenli olmayan sürümünün aksine, **_mbsnbcpy_s** herhangi bir null dolgu yapmaz ve her zaman null dize sona erdirir.
+> Bu işlevin güvenli olmayan sürümünden farklı olarak, **_mbsnbcpy_s** hiçbir null doldurma yapmaz ve her zaman null dizeyi sonlandırır.
 
-C++'da, bu işlevleri kullanmak şablon aşırı yükleri ile basitleştirilir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkartabilir (boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir) ve eski, güvenli olmayan işlevleri yeni, güvenli karşılıklarıyla otomatik olarak değiştirebilirler. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
+C++ ' da, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevlerin hata ayıklama kitaplığı sürümleri önce arabelleği 0xFE ile doldurur. Bu davranışı devre dışı kullanabilirsiniz, [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)kullanın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -130,10 +130,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbcpy_s**|\<mbstring.h>|
-|**_mbsnbcpy_s_l**|\<mbstring.h>|
+|**_mbsnbcpy_s**|\<mbstring. h>|
+|**_mbsnbcpy_s_l**|\<mbstring. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

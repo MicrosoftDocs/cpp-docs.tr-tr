@@ -17,7 +17,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -39,12 +39,12 @@ helpviewer_keywords:
 - istascii function
 - iswascii function
 ms.assetid: ba4325ad-7cb3-4fb9-b096-58906d67971a
-ms.openlocfilehash: aeb9c27fee4d179cc16caa50c6f0aae521402beb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3e04b85c9ce7519593802c21311315d534dce6a5
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81343920"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919787"
 ---
 # <a name="isascii-__isascii-iswascii"></a>isascii, __isascii, iswascii
 
@@ -65,38 +65,38 @@ int iswascii(
 
 ### <a name="parameters"></a>Parametreler
 
-*C*<br/>
-Test etmek için sonda.
+*,*<br/>
+Sınanacak tamsayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**C** bir ASCII karakterinin belirli bir temsili yse, bu yordamların her biri sıfırsız döndürür. **__isascii,** **ASCII** karakteri ise (0x00 - 0x7F aralığında) sıfır olmayan bir değer verir. **c** bir ASCII karakterinin geniş karakterli bir temsili ise **iswascii** sıfır olmayan bir değer döndürür. **C** test koşulunu karşılamazsa bu yordamların her biri 0 döndürür.
+**C** , ASCII karakterinin belirli bir gösterimiyse, bu yordamların her biri sıfır dışında bir değer döndürür. **c** bir ASCII karakteriyse (0x00-0x7F aralığında) **__isascii** sıfır dışında bir değer döndürür. **c** , ASCII karakterinin geniş karakterli bir gösterimiyse **ıswascıı** sıfır dışında bir değer döndürür. Bu yordamların her biri, **c** , test koşulunu karşılamadığı takdirde 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Önişlemci makro_CTYPE_DISABLE_MACROS tanımlanmadığı sürece **hem __isascii** hem de **iswascii** makro olarak uygulanır.
+Önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece hem **__isascii** hem de **ıswascıı** makrolar olarak uygulanır.
 
-Geriye dönük uyumluluk için **isascii,** yalnızca [&#95;&#95;STDC&#95;&#95;](../../preprocessor/predefined-macros.md) tanımlanmamışsa veya 0 olarak tanımlanmışsa makro olarak uygulanır; aksi takdirde tanımsız.
+Geriye dönük uyumluluk için, **ısascıı** yalnızca [&#95;&#95;stdc&#95;&#95;](../../preprocessor/predefined-macros.md) tanımlanmamışsa veya 0 olarak tanımlanmışsa bir makro olarak uygulanır; Aksi takdirde, tanımsız olur.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_istascii**|**__isascii**|**__isascii**|**iswascii**|
+|**_istascii**|**__isascii**|**__isascii**|**iswascıı**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isascii**, **__isascii**|C: \<ctype.h><br /><br /> C++: \<cctype \<> veya ctype.h>|
-|**iswascii**|C: \<wctype.h \<>, ctype.h \<> veya wchar.h><br /><br /> C++: \<cwctype \<>, cctype>, \<wctype.h>, \< \<ctype.h> veya wchar.h>|
+|**isascıı**, **__isascii**|C: \<CType. h><br /><br /> C++: \<cctype> veya \<ctype. h>|
+|**iswascıı**|C: \<wctype. h>, \<ctype. h> veya \<wchar. h><br /><br /> C++: \<cwctype>, \<cctype>, \<wctype. h>, \<CType. h> veya \<wchar. h>|
 
-**isascii**, **__isascii** ve **iswascii** işlevleri Microsoft'a özgüdür. Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+**Isascıı**, **__isascii** ve **ıwascıı** işlevleri, Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter Sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
-[olduğunu, isw Rutinleri](../../c-runtime-library/is-isw-routines.md)<br/>
+[Karakter sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[, isw yordamları](../../c-runtime-library/is-isw-routines.md)<br/>

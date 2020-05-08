@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -28,16 +28,16 @@ helpviewer_keywords:
 - string conversion, wide characters
 - wide characters, strings
 ms.assetid: a8d21fec-0d36-4085-9d81-9b1c61c7259d
-ms.openlocfilehash: af22a7d55c5f4958db6962e98f212fb5bb89e61e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cad31f28c5542a96eae9f144344882b71806052a
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328052"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82910626"
 ---
 # <a name="wcsrtombs"></a>wcsrtombs
 
-Geniş bir karakter dizesini çok bayt karakter dize gösterimine dönüştürün. Bu işlevin daha güvenli bir sürümü mevcuttur; [wcsrtombs_s](wcsrtombs-s.md)bakın.
+Geniş karakter dizesini çok baytlı karakter dizesi gösterimine Dönüştür. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz. [wcsrtombs_s](wcsrtombs-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,38 +60,38 @@ size_t wcsrtombs(
 ### <a name="parameters"></a>Parametreler
 
 *mbstr*<br/>
-Ortaya çıkan çok bayt karakter dizesinin adres konumu dönüştürülür.
+Elde edilen dönüştürülmüş çok baytlı karakter dizesinin adres konumu.
 
-*Wcstr*<br/>
-Dolaylı olarak dönüştürülecek geniş karakter dizesinin konumunu işaret.
+*wcstr*<br/>
+Dolaylı olarak dönüştürülecek geniş karakter dizesinin konumunu gösterir.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Dönüştürülecek karakter sayısı.
 
 *mbstate*<br/>
-**mbstate_t** dönüştürme durumu nesnesine işaretçi.
+**Mbstate_t** dönüştürme durumu nesnesine yönelik bir işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Null sonlandırıcı null bayt (varsa) dahil değil, başarıyla dönüştürülen bayt sayısını, aksi takdirde bir hata oluştuysa -1 verir.
+Başarıyla dönüştürülen bayt sayısını döndürür, null Sonlandırıcı null baytı (varsa) dahil edilmez, aksi takdirde bir hata oluştuysa-1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wcsrtombs** işlevi *mbstate'te*yer alan belirtilen dönüşüm durumundan başlayarak, *wcstr'de*işaret edilen dolaylı değerlerden *mbstr*adresine kadar geniş bir karakter dizisini dönüştürür. Dönüştürme kadar her karakter için devam edecektir: null sonlandırıcı geniş karakter karşılaştıktan sonra, karşılık gelen bir karakter karşılaşıldığında veya bir sonraki karakter *sayısı*içerdiği sınırı aşacak. **Wcsrtombs,** sayım gerçekleşmeden önce veya *sayıldığında* geniş karakterli null karakteriyle (L'\0') karşılaşırsa, 8-bit 0'a dönüştürür ve durur.
+**Wcsrişaretlenen s** işlevi, *mbstate*içinde bulunan belirtilen dönüştürme durumundan başlayarak, bir geniş karakter dizesini, *wcstr*içinde dolaylı olarak işaret edilen değerleri *mbstr*adresine dönüştürür. Karşılık gelen bir karakter ile karşılaşıldığında veya bir sonraki karakter, *say*'da bulunan sınırı aştığında, her karakter için dönüştürme işlemi devam edecek. **Wcsrkaldırıldı s** geniş karakterli null karakterle (L ' \ 0 ') karşılaşırsa veya *sayı* gerçekleştiğinde, bunu 8 bit 0 değerine dönüştürür ve duraklar.
 
-Böylece, *mbstr'deki* çok bayt karakter dizesi, ancak **wcsrtombs'un** dönüştürme sırasında geniş bir karakter null karakteriyle karşılaşması durumunda geçersiz kılınır. *Wcstr* ve *mbstr* çakışma ile işaret edilen diziler ise, **wcsrtombs** davranışı tanımsız. **wcsrtombs** geçerli yerel LC_TYPE kategorisinden etkilenir.
+Bu nedenle, *mbstr* konumundaki çok baytlı karakter dizesi, dönüştürme sırasında yalnızca **wcsrkaldırıldı s** bir geniş karakter null karakteriyle karşılaştığında null sonlandırılmış olur. *Wcstr* ve *mbstr* tarafından işaret edilen diziler çakıştığında, **wcsrkaldırıldı s** davranışı tanımsızdır. **wcsrkaldırıldı s** , geçerli yerel ayarın LC_TYPE kategorisinden etkilendi.
 
-**Wcsrtombs** işlevi [wcstombs farklıdır, _wcstombs_l](wcstombs-wcstombs-l.md) yeniden başlatılabilirlik. Dönüştürme durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate'te* depolanır. Yeniden başlatılabilir ve yeniden başlatılamaz işlevlerin kullanımı karıştırılırken sonuçlar tanımsızdır.  Örneğin, bir uygulama **wcsnlen** yerine **wcsrlen**kullanır , **wcsrtombs** yerine sonraki **wcstombs**bir çağrı kullanıldı.
+**Wcsr^ s** işlevi [, wcstombs öğesinden farklı, _wcstombs_l](wcstombs-wcstombs-l.md) yeniden başlangıçlarından farklıdır. Dönüştürme durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate* 'de depolanır. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımı karıştırılması halinde sonuçlar tanımsızdır.  Örneğin, bir uygulama **wcsnlen**yerine **wcsrlen** s çağrısı, **wcstomb**yerine daha sonra bir **wcsrkaldırıldı** for çağrısı kullanıldıysa,.
 
-*Mbstr* bağımsız değişkeni **NULL**ise, **wcsrtombs** hedef dize baytlar gerekli boyutu döndürür. *Mbstate* null ise, iç **mbstate_t** dönüştürme durumu kullanılır. Karakter dizisi *wchar* karşılık gelen bir çok bayt karakter gösterimi yoksa, bir -1 döndürülür ve **errno** **EILSEQ**olarak ayarlanır.
+*Mbstr* bağımsız değişkeni **null**ise, **wcsrkaldırıldı s** , hedef dizenin bayt cinsinden gereken boyutunu döndürür. *Mbstate* null ise, iç **mbstate_t** dönüştürme durumu kullanılır. *Wchar* karakter dizisinin karşılık gelen bir çok baytlı karakter temsili yoksa,-1 döndürülür ve **errno** , **eilseq**olarak ayarlanır.
 
-C++'da bu işlev, bu işlevin daha yeni ve güvenli karşılığını çağıran bir şablon aşırı yüklemesi vardır. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
+C++ ' da bu işlevin, bu işlevin daha yeni ve güvenli karşılığı sağlayan bir şablon aşırı yüklemesi vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="exceptions"></a>Özel durumlar
 
-**Wcsrtombs** işlevi, bu işlev yürütülerken ve *mbstate* null değilken, geçerli iş parçacığı nda **setlocale** çağıran hiçbir işlev sürece çok iş parçacığı güvenlidir.
+Geçerli iş parçacığındaki hiçbir işlev, bu işlev yürütülürken ve *mbstate* null **olmadığı sürece,** **wcsrkaldırıldı s** işlevi çoklu iş parçacığı güvenlidir.
 
 ## <a name="example"></a>Örnek
 
@@ -143,12 +143,12 @@ The string was successfuly converted.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**wcsrtombs**|\<wchar.h>|
+|**wcsrtombs**|\<wchar. h>|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [wcrtomb](wcrtomb.md)<br/>
 [wcrtomb_s](wcrtomb-s.md)<br/>
