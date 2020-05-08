@@ -19,7 +19,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -38,16 +38,16 @@ helpviewer_keywords:
 - _difftime64 function
 - difftime32 function
 ms.assetid: 4cc0ac2b-fc7b-42c0-8283-8c9d10c566d0
-ms.openlocfilehash: e2573f0bd5120796c0185c4dafe2699f8ceaae29
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e8d9ed3e33935c8e6c788380c02b9ae179dd06e8
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81348126"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82914787"
 ---
 # <a name="difftime-_difftime32-_difftime64"></a>difftime, _difftime32, _difftime64
 
-İki kere arasındaki farkı bulur.
+İki zaman arasındaki farkı bulur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,7 +59,7 @@ double _difftime64( __time64_t timeEnd, __time64_t timeStart );
 
 ### <a name="parameters"></a>Parametreler
 
-*zamanSonu*<br/>
+*timeEnd*<br/>
 Bitiş zamanı.
 
 *timeStart*<br/>
@@ -67,29 +67,29 @@ Başlangıç zamanı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**difftime,** *timeStart'tan* *timeEnd'e*geçen süreyi saniyeler içinde döndürür. Döndürülen değer çift duyarlıklı kayan nokta sayısıdır. İade değeri bir hata gösteren 0 olabilir.
+**difftime** , *TimeStart* 'dan *timeend*'e kadar geçen süreyi saniye cinsinden döndürür. Döndürülen değer çift duyarlıklı kayan noktalı bir sayıdır. Dönüş değeri 0 olabilir ve bir hata olduğunu gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Difftime** işlevi, verilen iki zaman değeri arasındaki farkı hesaplar *timeStart* ve *timeEnd*.
+**Difftime** Işlevi, *TimeStart* ve *timeend*olmak üzere iki sağlanan zaman değeri arasındaki farkı hesaplar.
 
-Sağlanan zaman değeri **time_t**aralığına sığmalıdır. **time_t** 64 bit lik bir değerdir. Böylece, aralık 23:59:59 18 Ocak 2038, UTC 23:59:59, 31 Aralık 3000 kadar uzatıldı. **time_t** alt aralığı hala gece yarısı, 1 Ocak 1970 olduğunu.
+Sağlanan zaman değeri **time_t**aralığı içinde olmalıdır. **time_t** , 64 bitlik bir değerdir. Bu nedenle, aralığın sonu 18 Ocak 2038, UTC 'den 23:59:59, 31 Aralık 3000 ' 23:59:59 ten uzatılmıştır. **Time_t** alt aralığı hala gece yarısı, 1 Ocak 1970 ' dir.
 
-**difftime,** **_USE_32BIT_TIME_T** tanımlanıp tanımlanmadığına bağlı olarak **_difftime32** veya **_difftime64** değerlendiren bir satır dışı işlevdir. _difftime32 ve _difftime64 doğrudan zaman türünün belirli bir boyutunun kullanımını zorlamak için kullanılabilir.
+**difftime** , **_USE_32BIT_TIME_T** tanımlanmış olup olmadığına bağlı olarak **_difftime32** veya **_difftime64** değerlendiren bir satır içi işlevdir. _difftime32 ve _difftime64, zaman türünün belirli bir boyutunun kullanımını zorlamak için doğrudan kullanılabilir.
 
-Bu işlevler parametrelerini doğrular. Parametrelerden biri sıfır veya negatif ise, Geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlevler 0 döndürün ve **EINVAL** **için errno** ayarlayın.
+Bu işlevler, parametrelerini doğrular. Parametrelerden biri sıfır veya negatif ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler 0 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**difftime**|\<time.h>|
-|**_difftime32**|\<time.h>|
-|**_difftime64**|\<time.h>|
+|**difftime**|\<Time. h>|
+|**_difftime32**|\<Time. h>|
+|**_difftime64**|\<Time. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

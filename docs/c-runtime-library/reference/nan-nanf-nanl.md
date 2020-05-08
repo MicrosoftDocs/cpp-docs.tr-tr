@@ -20,7 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -34,16 +34,16 @@ helpviewer_keywords:
 - nanf function
 - nanl function
 ms.assetid: 790e9158-80ab-43e0-8f5a-096198553fd9
-ms.openlocfilehash: d8f0db5020f274de27f7f1bbf3a76659eae568e4
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 77e933b971312097ec9eddd342b3b4dc2df34204
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338636"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82914580"
 ---
 # <a name="nan-nanf-nanl"></a>nan, nanf, nanl
 
-Sessiz bir NaN değeri verir.
+Sessiz bir NaN değeri döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,24 +55,24 @@ long double nanl( const char* input );
 
 ### <a name="parameters"></a>Parametreler
 
-*Giriş*<br/>
-Dize değeri.
+*girişinin*<br/>
+Bir dize değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Nan** işlevleri sessiz bir NaN değeri döndürdü.
+**Nan** işlevleri bir sessiz NaN değeri döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Nan** işlevleri sessiz (sinyal vermeyen) NaN'a karşılık gelen kayan nokta değeri döndürer. *Giriş* değeri yoksayılır. Bir NaN'nin çıktı için nasıl temsil edildiği hakkında bilgi için [printf, _printf_l, wprintf, _wprintf_l'](printf-printf-l-wprintf-wprintf-l.md)e bakın.
+**Nan** işlevleri, sessiz (sinyal olmayan) Nan öğesine karşılık gelen bir kayan nokta değeri döndürür. *Giriş* değeri yok sayılır. Bir NaN 'nin çıkış için nasıl temsil edildiği hakkında bilgi için bkz. [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**nan**, **nanf**, **nan**|\<math.h>|\<cmath> \<veya math.h>|
+|**Nan**, **nanf**, **Nanl**|\<Math. h>|\<cmath> veya \<Math. h>|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -25,7 +25,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -51,16 +51,16 @@ helpviewer_keywords:
 - characters, converting
 - toupper function
 ms.assetid: cdef1b0f-b19c-4d11-b7d2-cf6334c9b6cc
-ms.openlocfilehash: 85c218fdb3f5153e572e434bffbdb64510554d07
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 943b66bf03420dc707415fd5da0ddf8cc3107d85
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81362318"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82913876"
 ---
 # <a name="toupper-_toupper-towupper-_toupper_l-_towupper_l"></a>toupper, _toupper, towupper, _toupper_l, _towupper_l
 
-Karakteri büyük harfe dönüştürün.
+Karakteri büyük harfe Dönüştür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -86,59 +86,59 @@ int _towupper_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*C*<br/>
-Karakter dönüştürmek için.
+*,*<br/>
+Dönüştürülecek karakter.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her biri *mümkünse c'nin*bir kopyasını dönüştürür ve sonucu döndürür.
+Bu yordamların her biri, mümkünse *c*'nin bir kopyasını dönüştürür ve sonucu döndürür.
 
-*Eğer c,* **iswlower** sıfır olmayan geniş bir karakter ise ve [iswupper](isupper-isupper-l-iswupper-iswupper-l.md) sıfır olmayan karşılık gelen geniş bir karakter varsa, **çekme** karşılık gelen geniş karakter döndürür; aksi takdirde, **çekme c** *değişmeden* döner.
+*C* , **ıswlower** 'in sıfır dışında olduğu geniş bir karakter ise ve [ıswupper](isupper-isupper-l-iswupper-iswupper-l.md) 'in sıfır dışında olduğu bir geniş karakter varsa, **towupper** karşılık gelen geniş karakteri döndürür; Aksi takdirde, **towupper** *c* değerini değiştirmez.
 
-Bir hatayı belirtmek için ayrılmış bir iade değeri yoktur.
+Bir hatayı göstermek için ayrılmış dönüş değeri yok.
 
-**Toupper'ın** beklenen sonuçları verebilmesi [için, __isascii](isascii-isascii-iswascii.md) ve [daha düşük](islower-iswlower-islower-l-iswlower-l.md) olması için her ikisinin de sıfırsız dönmesi gerekir.
+**ToUpper** 'in beklenen sonuçlara izin vermesi için, [__isascii](isascii-isascii-iswascii.md) ve [ılower](islower-iswlower-islower-l-iswlower-l.md) öğelerinin her ikisi de sıfır dışında döndürülmelidir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordamların her biri, mümkünse ve uygunsa, belirli bir küçük harfi bir büyük harfe dönüştürür. **Çekme** servis talebinin dönüştürülmesi yerele özgüdür. Duruma göre yalnızca geçerli yerel eşle ilgili karakterler değiştirilir. **_l** sonek olmayan işlevler, şu anda ayarlanmış yerel ayaryı kullanır. Bu işlevlerin **_l** sonekli sürümleri yerel alanı bir parametre olarak alır ve şu anda ayarlanmış yerel ayar yerine bunu kullanır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+Bu yordamların her biri, mümkün olan ve uygunsa, belirli bir küçük harfi büyük harfe dönüştürür. **Kasasının** büyük/küçük harf dönüştürmesi yerel ayara özgüdür. Durum durumunda yalnızca geçerli yerel ayara uygun karakterler değişir. **_L** soneki olmayan işlevler şu anda ayarlanmış yerel ayarı kullanır. **_L** sonekine sahip bu işlevlerin sürümleri, yerel ayarı bir parametre olarak alır ve şu anda ayarlanmış yerel ayar yerine bunu kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-**Toupper'ın** beklenen sonuçları verebilmesi [için, __isascii](isascii-isascii-iswascii.md) ve [isupper'ın](isupper-isupper-l-iswupper-iswupper-l.md) her ikisinin de sıfırsız dönmesi gerekir.
+**ToUpper** 'in beklenen sonuçlara izin vermesi için, [__isascii](isascii-isascii-iswascii.md) ve [ıupper](isupper-isupper-l-iswupper-iswupper-l.md) 'nin ikisi de sıfır dışında döndürmelidir.
 
-[Veri Dönüştürme Yordamları](../../c-runtime-library/data-conversion.md)
+[Veri dönüştürme yordamları](../../c-runtime-library/data-conversion.md)
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_totupper**|**Toupper**|**_mbctoupper**|**çekme**|
+|**_totupper**|**ToUpper**|**_mbctoupper**|**kasaüstü**|
 |**_totupper_l**|**_toupper_l**|**_mbctoupper_l**|**_towupper_l**|
 
 > [!NOTE]
-> **_toupper_l** ve **_towupper_l** yerel bağımlılık yoktur ve doğrudan çağrılmamalıdır. **Onlar _totupper_l**tarafından iç kullanım için sağlanmaktadır.
+> **_toupper_l** ve **_towupper_l** yerel ayar bağımlılığını yoktur ve doğrudan çağrılması için tasarlanmamıştır. **_Totupper_l**tarafından iç kullanım için sağlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**Toupper**|\<ctype.h>|
-|**_toupper**|\<ctype.h>|
-|**çekme**|\<ctype.h> \<veya wchar.h>|
+|**ToUpper**|\<CType. h>|
+|**_toupper**|\<CType. h>|
+|**kasaüstü**|\<CType. h> veya \<wchar. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-[İşlevler'deki](../../c-runtime-library/to-functions.md)örneğe bakın.
+Bkz. [işlevleri](../../c-runtime-library/to-functions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[olduğunu, isw Rutinleri](../../c-runtime-library/is-isw-routines.md)<br/>
+[, isw yordamları](../../c-runtime-library/is-isw-routines.md)<br/>
 [to İşlevleri](../../c-runtime-library/to-functions.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
