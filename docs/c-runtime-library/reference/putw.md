@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -29,16 +29,16 @@ helpviewer_keywords:
 - streams, writing integers to
 - _putw function
 ms.assetid: 83d63644-249d-4a39-87e5-3b7aa313968d
-ms.openlocfilehash: 1dd506ed1b99867e3bc61324d9d02a542718770d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c54490a5625bfa2f9ffc95d616c2d73a7acf98e5
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338322"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82916080"
 ---
 # <a name="_putw"></a>_putw
 
-Bir akışa bir tamsayı yazar.
+Bir akışa tamsayı yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,35 +51,35 @@ int _putw(
 
 ### <a name="parameters"></a>Parametreler
 
-*binint*<br/>
-İkili sonda çıktı olmak.
+*binınt*<br/>
+Çıkış olacak ikili tamsayı.
 
-*Akışı*<br/>
-**DOSYA** yapısına işaretçi.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yazılan değeri verir. **EOF'nin** geri dönüş değeri bir hatayı gösterebilir. **EOF** aynı zamanda yasal bir tamsayı değeri olduğundan, bir hatayı doğrulamak için **ferror** kullanın. *Akış* null işaretçisi ise, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL** **için errno** ayarlar ve **EOF**döndürür.
+Yazılan değeri döndürür. **EOF** dönüş değeri bir hata gösterebilir. **EOF** aynı zamanda geçerli bir tamsayı değeri olduğundan, hatayı doğrulamak için **ferror** kullanın. *Stream* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EOF**döndürür.
 
-Bu ve diğer hata kodları hakkında bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
+Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_putw** *işlevi, akış* geçerli konumuna tür **int** ikili bir değer yazar. **_putw** akıştaki öğelerin hizalanmasını etkilemez ve özel bir hizalama kabul etmez. **_putw** öncelikle önceki kitaplıklarla uyumluluk içindir. **Bir** **int'in** boyutu ve bir **int** içindeki baytların sıralanması sistemler arasında farklılık gösterir, _putw ile taşınabilirlik sorunları oluşabilir.
+**_Putw** işlevi, akışın geçerli konumuna **int** türünde bir ikili değer yazar *.* **_putw** akıştaki öğelerin hizalamasını etkilemez veya özel bir hizalama kabul etmez. **_putw** öncelikle önceki kitaplıklarla uyumluluk içindir. Bir **int** 'in boyutu ve bir **int** içindeki bayt sıralaması sistemler arasında farklı olduğundan, taşınabilirlik sorunları **_putw** meydana gelebilir.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putw**|\<stdio.h>|
+|**_putw**|\<stdio. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -121,5 +121,5 @@ Wrote ten words
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_getw](getw.md)<br/>

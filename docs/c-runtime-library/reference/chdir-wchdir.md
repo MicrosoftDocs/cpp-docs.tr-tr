@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -38,12 +38,12 @@ helpviewer_keywords:
 - chdir function
 - directories [C++], changing
 ms.assetid: 85e9393b-62ac-45d5-ab2a-fa2217f6152e
-ms.openlocfilehash: a3f224e68e4b5a43274616892012ceba737d6d17
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a54b42ee92392971fdb6979ee2dc3a3b9c65f184
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81333383"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82917048"
 ---
 # <a name="_chdir-_wchdir"></a>_chdir, _wchdir
 
@@ -62,28 +62,28 @@ int _wchdir(
 
 ### <a name="parameters"></a>Parametreler
 
-*dirname*<br/>
+*DizinAdı*<br/>
 Yeni çalışma dizininin yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevler başarılı olursa 0 değeri döndürer. -1'in geri dönüş değeri başarısızlığı gösterir. Belirtilen yol bulunamadıysa, **errno** **ENOENT**olarak ayarlanır. *Dirname* **NULL**ise, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, **errno** **EINVAL** olarak ayarlanır ve işlev -1 döndürür.
+Bu işlevler, başarılı olursa 0 değerini döndürür. -1 dönüş değeri hata olduğunu gösterir. Belirtilen yol bulunamazsa, **errno** , **ENOENT**olarak ayarlanır. *DizinAdı* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev-1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-_chdir **_chdir** işlevi, geçerli çalışma dizini *dirname*ile belirtilen dizine değiştirir. *Dirname* parametresi varolan bir dizine başvurmalıdır. Bu işlev, herhangi bir sürücüde geçerli çalışma dizini değiştirebilirsiniz. *Dirname'de*yeni bir sürücü harfi belirtilirse, varsayılan sürücü harfi de değiştirilir. Örneğin, A varsayılan sürücü harfiyse ve \BIN geçerli çalışma diziniyse, aşağıdaki çağrı C sürücüsünün geçerli çalışma dizinini değiştirir ve C'yi yeni varsayılan sürücü olarak belirler:
+**_Chdir** işlevi geçerli çalışma dizinini *DizinAdı*tarafından belirtilen dizine değiştirir. *DizinAdı* parametresi var olan bir dizine başvurmalıdır. Bu işlev, herhangi bir sürücüdeki geçerli çalışma dizinini değiştirebilir. *DizinAdı*içinde yeni bir sürücü harfi belirtilmişse, varsayılan sürücü harfi de değiştirilir. Örneğin, bir, varsayılan sürücü harfi ve \BIN geçerli çalışma dizinidir, aşağıdaki çağrı C sürücüsü için geçerli çalışma dizinini değiştirir ve yeni varsayılan sürücü olarak C 'yi oluşturur:
 
 ```C
 _chdir("c:\temp");
 ```
 
-Yollarda isteğe bağlı ters eğik çizgi karakterini** (&#92;) **kullandığınızda, tek bir ters eğik çizgiyi** (&#92;) **temsil etmek için c dizesine (&#92;&#92;) iki ters eğik çizgi** (&#92;&#92;) **yerleştirmeniz gerekir.
+Yollarda isteğe bağlı ters eğik çizgi karakterini (**&#92;**) kullandığınızda, tek bir ters eğik çizgi (**&#92;**) göstermek için bir C dize sabit değerine iki ters eğik çizgi (**&#92;&#92;**) koymanız gerekir.
 
-**_wchdir** **_chdir**geniş karakterli bir versiyonudur; **_wchdir** *dirname* bağımsız değişkeni geniş karakterli bir dizedir. **_wchdir** ve **_chdir** aynı şekilde davranan.
+**_wchdir** , **_chdir**geniş karakterli bir sürümüdür; _wchdir *DizinAdı* bağımsız değişkeni **_wchdir** geniş karakterli bir dizedir. **_wchdir** ve **_chdir** aynı şekilde davranır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
-### <a name="generic-text-routine-mapping"></a>Genel Metin Rutin Eşleme:
+### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme:
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -91,12 +91,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_chdir**|\<direct.h>|\<errno.h>|
-|**_wchdir**|\<direct.h> \<veya wchar.h>|\<errno.h>|
+|**_chdir**|\<Direct. h>|\<errno. h>|
+|**_wchdir**|\<Direct. h> veya \<wchar. h>|\<errno. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -159,7 +159,7 @@ Directory of c:\windows
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dizin Kontrolü](../../c-runtime-library/directory-control.md)<br/>
+[Dizin denetimi](../../c-runtime-library/directory-control.md)<br/>
 [_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
 [_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>
 [system, _wsystem](system-wsystem.md)<br/>
