@@ -12,7 +12,7 @@ api_location:
 - msvcr110_clr0400.dll
 - msvcr110.dll
 - msvcr90.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -22,16 +22,16 @@ f1_keywords:
 helpviewer_keywords:
 - ___lc_collate_cp_func
 ms.assetid: 46ccc084-7ac9-4e5d-9138-e12cb5845615
-ms.openlocfilehash: 241292f22beea0cbf4e14d1b4480f6621ef6ccca
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7247827cb2bfe18c341ce60c2f3d8976f676b138
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81351128"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82914074"
 ---
 # <a name="___lc_collate_cp_func"></a>___lc_collate_cp_func
 
-Dahili CRT fonksiyonu. İş parçacığının geçerli harmanlama kodu sayfasını alır.
+İç CRT işlevi. İş parçacığının geçerli harmanlama kodu sayfasını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,11 +45,11 @@ UINT ___lc_codepage_func(void);
 
 ## <a name="remarks"></a>Açıklamalar
 
-`___lc_collate_cp_func`crt verileri için iş parçacığı yerel depolama geçerli harmanlama kodu sayfasını almak için diğer CRT işlevleri tarafından kullanılan bir iç CRT işlevidir. Bu [bilgiler, _get_current_locale](../c-runtime-library/reference/get-current-locale.md) işlevini kullanarak da kullanılabilir.
+`___lc_collate_cp_func`, diğer CRT işlevleri tarafından CRT verileri için iş parçacığı yerel depolama alanından geçerli harmanlama kodu sayfasını almak üzere kullanılan bir iç CRT işlevidir. Bu bilgiler [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) işlevi kullanılarak da kullanılabilir.
 
-Dahili CRT işlevleri uygulamaya özgüdir ve her sürümde değiştirilebilir. Kodunuzda kullanılmasını önermiyoruz.
+İç CRT işlevleri uygulamaya özgüdür ve her sürümde değiştirilebilir. Kodunuzda kullanımını önermiyoruz.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

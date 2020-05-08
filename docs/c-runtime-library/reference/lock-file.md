@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -29,16 +29,16 @@ helpviewer_keywords:
 - _lock_file function
 - lock_file function
 ms.assetid: 75c7e0e6-efff-4747-b6ed-9bcf2b0894c3
-ms.openlocfilehash: 9f7016f873dc9b159aab677615ff88a24628072c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e4f99203d5330a44b89239911e4a035a7958bf0b
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81342107"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82911537"
 ---
 # <a name="_lock_file"></a>_lock_file
 
-**DOSYA** nesnesine aynı anda erişen iş parçacıkları için tutarlılık sağlamak için bir **DOSYA** nesnesini kilitler.
+**Dosya** nesnesine eşzamanlı olarak erişen iş parçacıklarının tutarlılığını sağlamak Için bir **Dosya** nesnesini kilitler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,22 +48,22 @@ void _lock_file( FILE* file );
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya*<br/>
-Dosya tutamacı.
+*dosyasýný*<br/>
+Dosya tanıtıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_lock_file** işlevi *dosya*tarafından belirtilen **DOSYA** nesnesini kilitler. Altta yatan dosya **_lock_file**tarafından kilitli değil. Dosyadaki kilidi serbest bırakmak için [_unlock_file](unlock-file.md) kullanın. **_lock_file** ve **_unlock_file** çağrıları bir iş parçacığı ile eşleşmelidir.
+**_Lock_file** işlevi, *Dosya*tarafından belirtilen **Dosya** nesnesini kilitler. Temel alınan dosya **_lock_file**tarafından kilitlenmemiştir. Dosyadaki kilidi serbest bırakmak için [_unlock_file](unlock-file.md) kullanın. **_Lock_file** ve **_unlock_file** çağrılarının bir iş parçacığında eşleşmesi gerekir.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_lock_file**|\<stdio.h>|
+|**_lock_file**|\<stdio. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -142,7 +142,7 @@ eFciornsdt
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya Işleme](../../c-runtime-library/file-handling.md)<br/>
+[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>
 [_unlock_file](unlock-file.md)<br/>

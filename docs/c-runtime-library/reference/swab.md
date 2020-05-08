@@ -17,7 +17,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -31,16 +31,16 @@ helpviewer_keywords:
 - swab function
 - bytes, swapping
 ms.assetid: 017142f2-050c-4f6a-8b49-6b094f58ec94
-ms.openlocfilehash: f7fe23cd9c1b2eab52ebe50904d0bb18fe16cea6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7353081fab92fcc3324a214688be28a4f651b05f
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81362961"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82912421"
 ---
 # <a name="_swab"></a>_swab
 
-Bayt takas eder.
+Baytları değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,33 +55,33 @@ void _swab(
 ## <a name="parameters"></a>Parametreler
 
 *src*<br/>
-Kopyalanacak ve değiştirilecek veriler.
+Kopyalanacak ve takas edilecek veriler.
 
-*Dest*<br/>
-Değiştirilen veriler için depolama konumu.
+*HD*<br/>
+Takas edilen veriler için depolama konumu.
 
-*n*<br/>
-Kopyalanacak ve değiştirilecek bayt sayısı.
+*No*<br/>
+Kopyalanacak ve takas edilecek bayt sayısı.
 
 ## <a name="return-value"></a>Döndürülen değer
 
-**Bez** işlevi bir değer döndürmez. *Src* veya *dest* işaretçisi null veya *n* sıfırdan az ise **işlev,** **EINVAL** olarak ayarlar ve geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır.
+**Swab** işlevi bir değer döndürmüyor. *Src* veya *dest* işaretçisi null ya da *n* sıfırdan küçükse ve [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi, geçersiz parametre işleyicisi çağrıldığında, işlev **errno** 'ya **EINVAL** olarak ayarlar.
 
-Bu ve diğer iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bakın.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-*n* eşitse, **_swab** işlevi *src'den* *n* bayt kopyalar, bitişik baytların her çiftini değiştirir ve sonucu *destte*depolar. *N* tek ise, **_swab** kopyalar ve *src*ilk *n*-1 bayt takas ve son bayt kopyalanmaz. **_swab** işlevi genellikle farklı bir bayt siparişi kullanan bir makineye aktarım için ikili veri hazırlamak için kullanılır.
+*N* çift ise, **_swab** işlevi *src*'den *n* bayt kopyalar, her bir çift ardışık bayt çiftini değiştirir ve sonucu *hedef*olarak depolar. *N* tek ise, **_swab** *src*'nin ilk *n*-1 baytını kopyalar ve değiştirir ve son bayt kopyalanmaz. **_Swab** işlevi, genellikle ikili verileri farklı bir bayt sırası kullanan bir makineye aktarmak üzere hazırlamak için kullanılır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_swab**|C: \<stdlib.h> \<C++: cstdlib> veya \<stdlib.h>|
+|**_swab**|C: \<Stdlib. h> C++: \<cstdlib> veya \<Stdlib. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -112,4 +112,4 @@ After:  BADCFEHGJILKNMPORQTSVUXWZY
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Arabellek Manipülasyonu](../../c-runtime-library/buffer-manipulation.md)<br/>
+[Arabellek Işleme](../../c-runtime-library/buffer-manipulation.md)<br/>

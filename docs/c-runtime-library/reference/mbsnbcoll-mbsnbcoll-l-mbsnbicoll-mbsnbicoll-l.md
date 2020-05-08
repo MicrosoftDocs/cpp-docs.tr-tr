@@ -22,7 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -46,19 +46,19 @@ helpviewer_keywords:
 - _tcsncoll_l function
 - _tcsnicoll_l function
 ms.assetid: d139ed63-ccba-4458-baa2-61cbcef03e94
-ms.openlocfilehash: 0b02a34f9b721e4cfcf07ac3679d0dce166a4ff7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 491a652f19e9e1895aa62092c5c890923008f6e1
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81340737"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82911906"
 ---
 # <a name="_mbsnbcoll-_mbsnbcoll_l-_mbsnbicoll-_mbsnbicoll_l"></a>_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
 
-Çok bayt kod sayfası bilgilerini kullanarak iki çok bayt karakterli dizelerin *n* baytlarını karşılaştırır.
+Çok baytlı kod sayfası bilgilerini kullanarak iki çok baytlı karakter dizesinin *n* baytını karşılaştırır.
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -89,38 +89,38 @@ int _mbsnbicoll_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*string1*, *string2*<br/>
-Karşılaştırılacak dizeleri.
+*Dize1*, *dize2*<br/>
+Karşılaştırılacak dizeler.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Karşılaştırılacak bayt sayısı.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İade değeri *string1* ve *string2*alt dizeleri ilişkisini gösterir.
+Dönüş değeri, *Dize1* ve *dize2*alt dizelerinin ilişkisini gösterir.
 
 |Döndürülen değer|Açıklama|
 |------------------|-----------------|
-|< 0|*string1* *string2* substring daha az substring.|
-|0|*string1* substring *string2* substring ile aynıdır.|
-|> 0|*string1* alt *dizestring2* substring daha büyüktür.|
+|< 0|*Dize1* substring, *dize2* alt dizesi ile küçüktür.|
+|0|*Dize1* substring, *dize2* alt dizesi ile özdeş.|
+|> 0|*Dize1* substring, *dize2* alt dizinden büyük.|
 
-*String1* veya *string2* **NULL** ise veya *sayı* **INT_MAX**büyükse, Geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlevler **_NLSCMPERROR** döndürdü ve **EINVAL'e** **errno** ayarlayın. **_NLSCMPERROR**kullanmak için String.h veya Mbstring.h'yi ekleyin.
+*Dize1* veya *dize2* **null** veya *sayı* **INT_MAX**değerinden büyükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **_NLSCMPERROR** döndürür ve **errno** , **EINVAL**olarak ayarlanır. **_NLSCMPERROR**kullanmak için String. h veya mbstring. h ekleyin.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri, en fazla, *string1* ve string2'deki ilk *sayı* baytlarını harmlar ve *string1* ve *string2'nin* elde edilen alt dizeleri arasındaki ilişkiyi gösteren bir değer döndürür. *string2* *String1* veya *string2* alt dizesinde son bayt bir kurşun bayt ise, karşılaştırmadahil edilmez; bu işlevler yalnızca alt dizelerdeki tüm karakterleri karşılaştırır. **_mbsnbicoll** **_mbsnbcoll**bir büyük/küçük harf duyarsız sürümüdür. [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) ve [_mbsnbicmp](mbsnbicmp-mbsnbicmp-l.md)gibi, **_mbsnbcoll** ve **_mbsnbicoll** şu anda kullanılmakta olan çok bayt [kod sayfası](../../c-runtime-library/code-pages.md) tarafından belirtilen lexicographic sıraya göre iki çok bayt karakterli dizeleri harmanlayın.
+Bu işlevlerin her biri, en çok, *Dize1* *ve* *dize2* içindeki ilk *sayı* baytlarını harmanlar ve bir değer *döndürür.* *Dize1* veya *dize2* alt dizesi içindeki son bayt bir ön bayt ise, karşılaştırmaya dahil değildir; Bu işlevler yalnızca alt dizelerdeki tüm karakterleri karşılaştırır. **_mbsnbicoll** , **_mbsnbcoll**büyük/küçük harfe duyarsız bir sürümdür. [_Mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) ve [_mbsnbicmp](mbsnbicmp-mbsnbicmp-l.md)gibi, **_mbsnbcoll** ve **_mbsnbicoll** iki çok baytlı karakter dizesini, kullanımda olan çok baytlı [kod sayfası](../../c-runtime-library/code-pages.md) tarafından belirtilen naicographic sırasına göre Harmanla.
 
-Bazı kod sayfaları ve ilgili karakter kümeleri için karakter kümesindeki karakterlerin sırası lexicographic karakter sırasına göre farklılık gösterebilir. "C" tamburunda durum böyle değildir: ASCII karakter kümesindeki karakterlerin sırası, karakterlerin lexicographic sırası ile aynıdır. Ancak, bazı Avrupa kod sayfalarında, örneğin, 'a' (değer 0x61) karakteri karakter kümesindeki 'ä' (değer 0xE4) karakterinden önce gelir, ancak 'ä' karakteri 'a' lexicographically'den önce gelir. Böyle bir durumda dizelerin baytlara göre lexicographic karşılaştırmasını gerçekleştirmek **için, _mbsnbcmp**yerine **_mbsnbcoll** kullanın; yalnızca dize eşitliğini denetlemek için **_mbsnbcmp**kullanın.
+Bazı kod sayfaları ve karşılık gelen karakter kümeleri için, karakter kümesindeki karakterlerin sırası lexicographic karakter sıraından farklı bir şekilde değişebilir. "C" yerel ayarında bu durum böyle değildir: ASCII karakter kümesindeki karakterlerin sırası karakterlerin lexicographic sırasıyla aynıdır. Ancak, bazı Avrupa kod sayfalarında, örneğin, ' a ' karakteri (0x61) karakter kümesindeki ' ä ' (değer 0xE4) karakterinden önce gelir, ancak ' ä ' karakteri ' a ' lexıgrafik karakterinden önce gelir. Bu örnekte, dizelerin bayt olarak bir lexıgraphic karşılaştırması gerçekleştirmek için **_mbsnbcmp**yerine **_mbsnbcoll** kullanın; yalnızca dize eşitliği denetlemek için **_mbsnbcmp**kullanın.
 
-Çünkü **coll** fonksiyonları karşılaştırma için dizeleri lexicographically harmanlayın, **cmp** fonksiyonları sadece dize eşitliği için test ederken, **coll** fonksiyonları karşılık gelen **cmp** sürümleri çok daha yavaştır. Bu nedenle, **coll** işlevleri yalnızca geçerli kod sayfasındakarakter kümesi sırası ile lexicographic karakter sırası arasında bir fark olduğunda kullanılmalıdır ve bu fark karşılaştırma için ilgi çekicidir.
+**Coll** işlevleri karşılaştırmayı için lexıgrafik 'i karşılaştırmak üzere harmanlarken, **CMP** işlevleri yalnızca dize eşitlik için test ederken, **coll** işlevleri karşılık gelen **CMP** sürümlerinden çok daha yavaştır. Bu nedenle, **coll** işlevleri, yalnızca karakter kümesi sırası ve geçerli kod sayfasındaki lexıgraphic karakter sırası arasında bir fark olduğunda kullanılmalıdır ve bu fark karşılaştırma açısından ilgi açısından önemlidir.
 
-Çıktı değeri, yerel LC_CTYPE **kategori** ayarı ayarı etkilenir; daha fazla bilgi için [setlocale'ye](setlocale-wsetlocale.md) bakın. Bu işlevlerin **_l** soneki olmayan sürümleri, bu yerele bağımlı davranış için geçerli yerel durumu kullanır; **_l** soneki olan sürümler, bunun yerine geçirilen yerel parametreyi kullanmaları dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -135,12 +135,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbcoll**|\<mbstring.h>|
-|**_mbsnbcoll_l**|\<mbstring.h>|
-|**_mbsnbicoll**|\<mbstring.h>|
-|**_mbsnbicoll_l**|\<mbstring.h>|
+|**_mbsnbcoll**|\<mbstring. h>|
+|**_mbsnbcoll_l**|\<mbstring. h>|
+|**_mbsnbicoll**|\<mbstring. h>|
+|**_mbsnbicoll_l**|\<mbstring. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

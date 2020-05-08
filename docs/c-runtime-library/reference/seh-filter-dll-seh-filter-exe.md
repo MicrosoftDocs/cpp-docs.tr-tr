@@ -19,7 +19,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -37,16 +37,16 @@ helpviewer_keywords:
 - _seh_filter_dll function
 - _seh_filter_exe function
 ms.assetid: 747e5963-3a12-4bf5-b5c4-d4c1b6068e15
-ms.openlocfilehash: bf92ea52c2614eb133bcd1ec820a386d1f38e8f5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ddfab11b149fc6919fb0b8d461b914a0470d9dc9
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81337951"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82913195"
 ---
 # <a name="_seh_filter_dll-_seh_filter_exe"></a>_seh_filter_dll, _seh_filter_exe
 
-İstisnayı ve alınacak ilgili eylemi tanımlar.
+Özel durumu ve gerçekleştirilecek ilgili eylemi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,37 +64,37 @@ int __cdecl _seh_filter_exe(
 ### <a name="parameters"></a>Parametreler
 
 *_ExceptionNum*<br/>
-Özel durum tanımlayıcısı.
+Özel durum için tanımlayıcı.
 
 *_ExceptionPtr*<br/>
-Özel durum bilgileri için bir işaretçi.
+Özel durum bilgisine yönelik bir işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Özel durum işleme sonucuna bağlı olarak yapılacak eylemi gösteren bir sonsayı.
+Özel durum işlemenin sonucuna bağlı olarak gerçekleştirilecek eylemi belirten bir tamsayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yöntemler, [try-except Deyimi'nin](../../cpp/try-except-statement.md)özel durum filtresi ifadesi ile çağrılır. Yöntem, özel durumu tanımlamak ve burada gösterildiği gibi uygun eylemi belirlemek için sabit bir iç tabloya başvurur. Özel durum numaraları winnt.h'de tanımlanır ve sinyal numaraları signal.h'de tanımlanır.
+Bu yöntemler, [try-except deyiminin](../../cpp/try-except-statement.md)özel durum filtresi ifadesi tarafından çağırılır. Yöntemi, özel durumu tanımlamak ve burada gösterildiği gibi uygun eylemi belirlemek için sabit bir iç tablo sağlar. Özel durum numaraları, Winnt. h içinde tanımlanır ve sinyal numaraları, Signal. h içinde tanımlanır.
 
-|Özel Durum Numarası (imzasız uzun)|Sinyal Numarası|
+|Özel durum numarası (imzasız Long)|Sinyal numarası|
 |----------------------------------------|-------------------|
-|STATUS_ACCESS_VIOLATION|SIGSEGV|
-|STATUS_ILLEGAL_INSTRUCTION|SIGILL|
-|STATUS_PRIVILEGED_INSTRUCTION|SIGILL|
-|STATUS_FLOAT_DENORMAL_OPERAND|SIGFPE|
-|STATUS_FLOAT_DIVIDE_BY_ZERO|SIGFPE|
-|STATUS_FLOAT_INEXACT_RESULT|SIGFPE|
-|STATUS_FLOAT_INVALID_OPERATION|SIGFPE|
-|STATUS_FLOAT_OVERFLOW|SIGFPE|
-|STATUS_FLOAT_STACK_CHECK|SIGFPE|
-|STATUS_FLOAT_UNDERFLOW|SIGFPE|
+|STATUS_ACCESS_VIOLATION|SıGSEGV|
+|STATUS_ILLEGAL_INSTRUCTION|SıGıLL|
+|STATUS_PRIVILEGED_INSTRUCTION|SıGıLL|
+|STATUS_FLOAT_DENORMAL_OPERAND|SıGFPE|
+|STATUS_FLOAT_DIVIDE_BY_ZERO|SıGFPE|
+|STATUS_FLOAT_INEXACT_RESULT|SıGFPE|
+|STATUS_FLOAT_INVALID_OPERATION|SıGFPE|
+|STATUS_FLOAT_OVERFLOW|SıGFPE|
+|STATUS_FLOAT_STACK_CHECK|SıGFPE|
+|STATUS_FLOAT_UNDERFLOW|SıGFPE|
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** corecrt_startup.h
+**Üst bilgi:** corecrt_startup. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

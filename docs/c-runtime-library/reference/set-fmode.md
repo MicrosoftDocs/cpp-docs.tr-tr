@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -30,16 +30,16 @@ helpviewer_keywords:
 - file translation [C++], setting mode
 - set_fmode function
 ms.assetid: f80eb9c7-733b-4652-a9bc-6b3790a35f12
-ms.openlocfilehash: ba8a4b3867eb0a18d4a14cb2f5480bc5800303c8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6d72baeecefb117f0d7b8258728ec299a31f710a
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81337702"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82913037"
 ---
 # <a name="_set_fmode"></a>_set_fmode
 
-Dosya G/Ç işlemleri için varsayılan dosya çeviri modunu ayarlar.
+Dosya g/ç işlemleri için varsayılan dosya çevirisi modunu ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,28 +51,28 @@ errno_t _set_fmode(
 
 ### <a name="parameters"></a>Parametreler
 
-*Modu*<br/>
-İstenilen dosya çeviri modu: **_O_TEXT** veya **_O_BINARY.**
+*modundaysa*<br/>
+İstenen dosya çeviri modu: **_O_TEXT** veya **_O_BINARY**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır döndürür, hata yla ilgili bir hata kodu. *Mod* **_O_TEXT** veya **_O_BINARY** veya **_O_WTEXT**değilse, Geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL için errno** ayarlar ve **EINVAL** döndürür. **EINVAL**
+Başarılıysa sıfır, hata durumunda hata kodu döndürür. *Mod* **_O_TEXT** veya **_O_BINARY** veya **_O_WTEXT**değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev [_fmode](../../c-runtime-library/fmode.md) global değişkeni ayarlar. Bu değişken, dosya G/Ç işlemleri için varsayılan dosya çeviri modunu **_open** ve **_pipe**belirtir.
+İşlevi [_fmode](../../c-runtime-library/fmode.md) genel değişkenini ayarlar. Bu değişken, dosya g/ç işlemleri için varsayılan dosya çevirisi modunu **_open** ve **_pipe**belirtir.
 
-**_O_TEXT** ve **_O_BINARY** Fcntl.h'de tanımlanmıştır. **EINVAL** Errno.h tanımlanır.
+**_O_TEXT** ve **_O_BINARY** , fcntl. h içinde tanımlanır. **EINVAL** , errno. h içinde tanımlanır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_set_fmode**|\<stdlib.h>|\<fcntl.h>, \<errno.h>|
+|**_set_fmode**|\<Stdlib. h>|\<fcntl. h>, \<errno. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -142,4 +142,4 @@ A   B   C   D   E   F   G   H   I   J   K   L
 [_fmode](../../c-runtime-library/fmode.md)<br/>
 [_get_fmode](get-fmode.md)<br/>
 [_setmode](setmode.md)<br/>
-[Metin ve İkili Mod Dosya I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>
+[Metin ve Ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>

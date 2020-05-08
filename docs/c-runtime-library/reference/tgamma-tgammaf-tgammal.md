@@ -20,7 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -37,12 +37,12 @@ helpviewer_keywords:
 - tgammaf function
 - tgammal function
 ms.assetid: f1bd2681-8af2-48a9-919d-5358fd068acd
-ms.openlocfilehash: d7e27e8b818a16cb0c18f58e2f40c0090dd13ecf
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6f3eb1bd791e645407b09a99a8c8e96025ca47e3
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81362500"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82912238"
 ---
 # <a name="tgamma-tgammaf-tgammal"></a>tgamma, tgammaf, tgammal
 
@@ -74,44 +74,44 @@ long double tgammal(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-Gama bulmak için değer.
+*sayı*<br/>
+Gamasını bulmak için değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, *x*gama döndürür.
+Başarılı olursa *x*'in gamasını döndürür.
 
-*X'in* büyüklüğü veri türü için çok büyük veya çok küçükse bir aralık hatası oluşabilir. *X* <= 0 ise etki alanı hatası veya aralık hatası oluşabilir.
+*X* büyüklüğü çok büyükse veya veri türü için çok küçük olduğunda Aralık hatası oluşabilir. *X* <= 0 olduğunda bir etki alanı hatası veya Aralık hatası oluşabilir.
 
-|Sorun|Dönüş|
+|Sorun|Döndürülmesini|
 |-----------|------------|
-|x = ±0|±SONSUZLUK|
-|x = negatif toplam|NaN|
-|x = -SONSUZLUK|NaN|
-|x = +SONSUZLUK|+SONSUZLUK|
+|x = ± 0|± INFINITY|
+|x = negatif tamsayı|NaN|
+|x =-sonsuzluk|NaN|
+|x = + sonsuzluk|+ SONSUZLUK|
 |x = NaN|NaN|
 |etki alanı hatası|NaN|
-|kutup hatası|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
-|taşma aralığı hatası|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
-|akış aralığı hatası|yuvarlama sonra doğru değer.|
+|direk hatası|± HUGE_VAL, ± HUGE_VALF veya ± HUGE_VALL|
+|taşma aralığı hatası|± HUGE_VAL, ± HUGE_VALF veya ± HUGE_VALL|
+|yetersiz yer aralığı hatası|yuvarlama sonrasında doğru değer.|
 
-Hatalar [_matherr](matherr.md)belirtildiği gibi bildirilir.
+Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **uzun** **çift** türleri alan ve döndüren aşırı **tgamma** yüklerini arayabilirsiniz. Bir C programında, **tgamma** her zaman alır ve bir **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **tgama** aşırı yüklerini çağırabilirsiniz. C programında **tgama** her zaman bir **Double**alır ve döndürür.
 
-X doğal bir sayı ise, bu fonksiyon faktöriyel (x-1) döndürür.
+X doğal bir sayı ise, bu işlev (x-1) faktöriyelini döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**tgamma**, **tgammaf**, **tgammal**|\<math.h>|\<cmath>|
+|**tgama**, **tgamaf**, **tgammal**|\<Math. h>|\<cmath>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

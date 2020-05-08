@@ -10,7 +10,7 @@ api_name:
 - _o__register_onexit_function
 api_location:
 - api-ms-win-crt-runtime-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -27,16 +27,16 @@ helpviewer_keywords:
 - _initialize_onexit_table function
 - _register_onexit_function function
 ms.assetid: ad9e4149-d4ad-4fdf-aaaf-cf786fcb4473
-ms.openlocfilehash: a1e35d9e86a43e48849373a1cf1aa07febcd0e33
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 051961f049109b4fa6a2881e442e621036cb279c
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81351650"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82913831"
 ---
 # <a name="_execute_onexit_table-_initialize_onexit_table-_register_onexit_function"></a>_execute_onexit_table, _initialize_onexit_table, _register_onexit_function
 
-Çıkış saatinde çağrılacak yordamları yönetir.
+Çıkış zamanında çağrılacak yordamları yönetir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,35 +57,35 @@ int _execute_onexit_table(
 
 #### <a name="parameters"></a>Parametreler
 
-*Tablo*<br/>
-[içinde, dışarı] Çıkış işlev tablosuna işaretçi.
+*tablosundan*<br/>
+[in, out] OnExit işlevi tablosuna yönelik işaretçi.
 
-*Işlev*<br/>
-[içinde] Çıkış işlev tablosuna eklemek için bir işlev işaretçisi.
+*çalışmayacaktır*<br/>
+'ndaki OnExit işlev tablosuna eklenecek bir işlevin işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, 0 döndürür. Aksi takdirde, negatif bir değer döndürür.
+Başarılı olursa 0 döndürür. Aksi takdirde, negatif bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler C çalışma saatini desteklemek için kullanılan altyapı uygulama ayrıntılarıdır ve doğrudan kodunuzdan çağrılmamalıdır. C çalışma zamanı, aramalar tarafından kaydedilen işlevlerin dizisini `atexit`temsil `at_quick_exit`etmek `_onexit`için bir *çıkış işlev tablosu* kullanır . Onexit işlevi tablosu veri yapısı C çalışma zamanının opak bir uygulama ayrıntısI; veri üyelerinin sırası ve anlamı değişebilir. Bunlar dış kod tarafından denetlenmemelidir.
+Bu işlevler, C çalışma zamanını desteklemek için kullanılan altyapı uygulama ayrıntılardır ve doğrudan kodunuzdan çağrılmamalıdır. C çalışma zamanı,, ve `atexit` `at_quick_exit` `_onexit`çağrıları tarafından kaydedilen işlevlerin dizisini temsil eden bir *OnExit işlev tablosu* kullanır. OnExit işlev tablosu veri yapısı, C çalışma zamanının donuk bir uygulama ayrıntısıyla yapılır; veri üyelerinin sırası ve anlamı değişebilir. Bunlar harici kod tarafından denetlenmemelidir.
 
-İşlev, `_initialize_onexit_table` çıkış işlev tablosunu başlangıç değerine doğru başlataz.  Bu işlev, çıkış işlevi tablosu ya da `_register_onexit_function` `_execute_onexit_table`.
+`_initialize_onexit_table` İşlevi OnExit işlevi tablosunu ilk değerine başlatır.  OnExit işlev tablosu ya `_register_onexit_function` `_execute_onexit_table`da öğesine geçirilmeden önce bu işlevin çağrılması gerekir.
 
-İşlev, `_register_onexit_function` bir işlevi çıkış işlev tablosunun sonuna ekler.
+`_register_onexit_function` İşlevi OnExit işlevi tablosunun sonuna bir işlev ekler.
 
-İşlev, `_execute_onexit_table` onexit işlev tablosundaki tüm işlevleri yürütür, tabloyu temizler ve sonra döndürür. Bir çağrıdan `_execute_onexit_table`sonra , tablo geçerli olmayan bir durumda; yeniden kullanılmadan `_initialize_onexit_table` önce bir arama ile yeniden başlatılması gerekir.
+`_execute_onexit_table` İşlevi OnExit işlev tablosundaki tüm işlevleri yürütür, tabloyu temizler ve sonra döndürür. Bir çağrısından sonra `_execute_onexit_table`, tablo geçerli olmayan bir durumda; yeniden `_initialize_onexit_table` kullanılmadan önce bir çağrısıyla yeniden başlatılması gerekir.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`_initialize_onexit_table function`, `_register_onexit_function`, `_execute_onexit_table`|C, C++: \<process.h>|
+|`_initialize_onexit_table function`, `_register_onexit_function`, `_execute_onexit_table`|C, C++: \<Process. h>|
 
-, `_initialize_onexit_table` `_register_onexit_function`ve `_execute_onexit_table` işlevler Microsoft'a özgüdir. Uyumluluk bilgileri için [bkz.](../c-runtime-library/compatibility.md)
+`_initialize_onexit_table`, `_register_onexit_function`Ve `_execute_onexit_table` işlevleri Microsoft 'a özgüdür. Uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

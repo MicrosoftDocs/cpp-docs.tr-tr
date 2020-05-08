@@ -19,7 +19,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -39,16 +39,16 @@ helpviewer_keywords:
 - _timespec32_get function
 - _timespec64_get function
 ms.assetid: ed757258-b4f2-4c1d-a91b-22ea6ffce4ab
-ms.openlocfilehash: fc6d91b076f2dd2e25c55d9cf7062e81c3fab11a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ca514c60945f25c3d335e0b02110e50ed14f9269
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81362485"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82911811"
 ---
 # <a name="timespec_get-_timespec32_get-_timespec64_get"></a>timespec_get, _timespec32_get, _timespec64_get
 
-Belirtilen zaman tabanını temel alarak, ilk bağımsız değişkentarafından işaret edilen aralığı geçerli takvim saatine ayarlar.
+Belirtilen zaman tabanına göre, ilk bağımsız değişken tarafından işaret edilen aralığı geçerli takvim zamanına göre belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,34 +70,34 @@ int _timespec64_get(
 ### <a name="parameters"></a>Parametreler
 
 *time_spec*<br/>
-Çağın başlangıcından bu yana saniye ve nanosaniye cinsinden zamana ayarlanan bir yapıyı işaretle.
+Dönem başlangıcından bu yana saniye cinsinden süre ve nanosaniye olarak ayarlanan bir yapı işaretçisi.
 
 *base*<br/>
-Zaman tabanını belirten sıfır olmayan uygulamaya özgü bir değer.
+Zaman temelini belirten, sıfır olmayan uygulamaya özgü bir değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa *tabanın* değeri, aksi takdirde sıfır döndürür.
+Başarılı olursa *taban* değeri 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**timespec_get** *işlevleri, time_spec* bağımsız değişkenin işaret ettiği yapıdaki geçerli saati ayarlar. Bu yapının tüm **sürümleriiki** üye, tv_sec ve **tv_nsec**var. **tv_sec** değeri saniye tam sayısına ayarlanır ve *nanosaniye*integral **sayısına tv_nsec,** sistem saatinin çözünürlüğüne yuvarlanır, temel tarafından belirtilen çağın başlangıcından bu yana.
+**Timespec_get** işlevleri, *time_spec* bağımsız değişkeni tarafından işaret edilen yapıda geçerli zamanı ayarlar. Bu yapının tüm sürümlerinde, **tv_sec** ve **tv_nsec**iki üye vardır. **Tv_sec** değeri, *taban*olarak belirtilen dönem başlangıcından bu yana, sistem saatinin çözümüne yuvarlanarak, tüm saniye sayısına ve **tv_nsec** tam sayı olarak ayarlanır.
 
 **Microsoft'a Özgü**
 
-Bu işlevler yalnızca *temel* değer olarak **TIME_UTC** destekler. Bu, çağın başlangıcından bu yana saniye ve nanosaniye sayısı, Midnight, 1 Ocak 1970, Eşgüdümlü Evrensel Zaman (UTC) *time_spec* değerini ayarlar. Bir **yapı** **_timespec32,** **tv_sec** **__time32_t** bir değerdir. Bir **yapı** **_timespec64,** **tv_sec** **__time64_t** bir değerdir. Bir **yapı** **zaman spec,** **tv_sec** preprocessor makro _USE_32BIT_TIME_T tanımlı olup olmadığına bağlı olarak uzunluğu 32 bit veya 64 bit olan **time_t** türüdür. **timespec_get** işlevi, _USE_32BIT_TIME_T tanımlanırsa **_timespec32_get** çağıran bir satır dışı işlevdir; aksi takdirde **_timespec64_get**çağırır.
+Bu işlevler yalnızca *temel* değer olarak **TIME_UTC** destekler. Bu, *time_spec* değerini dönem başı, gece yarısı, 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) için saniye ve nanosaniye sayısına ayarlar. Bir **yapı** **_timespec32**, **tv_sec** bir **__time32_t** değeridir. Bir **yapı** **_timespec64**, **tv_sec** bir **__time64_t** değeridir. Bir **struct** **timespec**içinde **tv_sec** , önişlemci makrosu _USE_32BIT_TIME_T tanımlandığına bağlı olarak 32 bit veya 64 bit olan **time_t** türüdür. **Timespec_get** işlevi _USE_32BIT_TIME_T tanımlanmışsa **_timespec32_get** çağıran bir satır içi işlevdir; Aksi takdirde **_timespec64_get**çağırır.
 
-**Microsoft'a Özel Son**
+**Son Microsoft 'a özgü**
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**timespec_get**, **_timespec32_get**, **_timespec64_get**|C: \<time.h>, \<C++: \<ctime> veya time.h>|
+|**timespec_get**, **_timespec32_get**, **_timespec64_get**|C: \<Time. h>, C++: \<CTime> veya \<Time. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

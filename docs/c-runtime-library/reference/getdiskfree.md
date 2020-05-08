@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -31,19 +31,19 @@ helpviewer_keywords:
 - disk size
 - getdiskfree function
 ms.assetid: 47a3f6cf-4816-452a-8f3d-1c3ae02a0f2a
-ms.openlocfilehash: 095a272e1dd85c1b61e1970a1b881737acbb739d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f94e8ecd314ed55d8519363d80dda57f661f18e5
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81344315"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82913825"
 ---
 # <a name="_getdiskfree"></a>_getdiskfree
 
-**_diskfree_t** bir yapıyı doldurmak için disk sürücüsü hakkındaki bilgileri kullanır.
+Bir **_diskfree_t** yapısını doldurmak için disk sürücüsü hakkındaki bilgileri kullanır.
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,19 +56,19 @@ unsigned _getdiskfree(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sürücü*<br/>
-Bilgi istediğiniz disk sürücüsü.
+*sürücü*<br/>
+Bilgilerini istediğiniz disk sürücüsü.
 
-*Driveınfo*<br/>
-Sürücü hakkında bilgi ile doldurulacak **bir _diskfree_t** yapısı.
+*sürücü bilgisi*<br/>
+Sürücüyle ilgili bilgilerle doldurulacak **_diskfree_t** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, geri dönüş değeri sıfırdır. İşlev başarısız olursa, iade değeri hata kodudur. Değer **errno** işletim sistemi tarafından döndürülen herhangi bir hata için ayarlanır. **Errno**tarafından belirtilen hata koşulları hakkında daha fazla bilgi için [bkz.](../../c-runtime-library/errno-constants.md)
+İşlev başarılı olursa, dönüş değeri sıfırdır. İşlev başarısız olursa, dönüş değeri hata kodudur. **Errno** değeri, işletim sistemi tarafından döndürülen hatalar için ayarlanır. **Errno**tarafından belirtilen hata koşulları hakkında daha fazla bilgi için bkz. [errno sabitleri](../../c-runtime-library/errno-constants.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_diskfree_t** yapısı Direct.h olarak tanımlanır.
+**_Diskfree_t** yapısı doğrudan. h içinde tanımlanır.
 
 ```C
 struct _diskfree_t {
@@ -79,17 +79,17 @@ struct _diskfree_t {
 };
 ```
 
-Bu işlev parametrelerini doğrular. *Driveinfo* işaretçisi **NULL** ise veya *sürücü* geçersiz bir sürücü belirtirse, bu işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre işleyicisi çağırır. Yürütmedevam etmesine izin verilirse, işlev **EINVAL** döndürür ve **EINVAL** **için errno** ayarlar. Geçerli sürücüler 0 ile 26 arasında değişir. 0 *sürücü* değeri geçerli sürücüyü belirtir; bundan sonra, sayılar İngiliz alfabesi harfleri ile eşleninki 1 A, 3 sürücü C ve benzeri gösterir gösterir.
+Bu işlev, parametrelerini doğrular. *DriveInfo* işaretçisi **null** veya *sürücü* geçersiz bir sürücü belirtiyorsa, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL**olarak ayarlar. Geçerli Sürücüler 0 ile 26 arasındadır. 0 *sürücüsünün* değeri geçerli sürücüyü belirtir; Bundan sonra, sayılar Ingilizce alfabesinden eşlenir ve bu 1 sürücü A 'yı, 3 de C sürücüsünü gösterir ve bu şekilde devam eder.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getdiskfree**|\<direct.h>|
+|**_getdiskfree**|\<Direct. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -195,4 +195,4 @@ void utoiRightJustified(TCHAR* szLeft, TCHAR* szRight, unsigned uVal) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dizin Kontrolü](../../c-runtime-library/directory-control.md)<br/>
+[Dizin denetimi](../../c-runtime-library/directory-control.md)<br/>

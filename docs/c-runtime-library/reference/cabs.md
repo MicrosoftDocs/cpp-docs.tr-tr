@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -29,12 +29,12 @@ helpviewer_keywords:
 - _cabs function
 - calculating absolute values
 ms.assetid: fea292ee-1a39-4a0a-b416-4a189346ff26
-ms.openlocfilehash: e77e1811cb6f002c06e514b5f737b8a92ea84282
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6e769d2caf65ef3c084bcb6add701f78b03a1b17
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81333685"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82913350"
 ---
 # <a name="_cabs"></a>_cabs
 
@@ -50,26 +50,26 @@ double _cabs(
 
 ### <a name="parameters"></a>Parametreler
 
-*Z*<br/>
+*kadar*<br/>
 Karmaşık sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_cabs** başarılı olursa bağımsız değişkeninin mutlak değerini döndürür. Taşma, **_cabs** **HUGE_VAL** döndürür ve **ERANGE** **için errno** ayarlar. [hata işlemeyi _matherr](matherr.md)ile değiştirebilirsiniz.
+**_cabs** , başarılı olursa bağımsız değişkeninin mutlak değerini döndürür. Taşma üzerinde, **_cabs** **HUGE_VAL** döndürür ve **errno** , **ERANGE**olarak ayarlar. Hata işlemeyi [_matherr](matherr.md)ile değiştirebilirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_cabs** işlevi, [karmaşık](../../c-runtime-library/standard-types.md)bir sayının mutlak değerini hesaplar, bu da _complex. Yapı *z* gerçek bir bileşen *x* ve hayali bir bileşen *y*oluşur. **_cabs** için yapılan bir çağrı, ifadenin `sqrt( z.x * z.x + z.y * z.y )`değerine eşdeğer bir değer üretir.
+**_Cabs** işlevi, bir karmaşık sayının mutlak değerini hesaplar, bu, [_complex](../../c-runtime-library/standard-types.md)türünde bir yapı olmalıdır. *Z* yapısı gerçek bir bileşen *x* ve sanal bileşen *y*' den oluşur. **_Cabs** çağrısı, ifadeden `sqrt( z.x * z.x + z.y * z.y )`bu değere denk bir değer üretir.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_cabs**|\<math.h>|
+|**_cabs**|\<Math. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

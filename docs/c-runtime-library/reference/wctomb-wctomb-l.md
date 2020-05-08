@@ -19,7 +19,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 - ntoskrnl.exe
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -35,16 +35,16 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 4a543f0e-5516-4d81-8ff2-3c5206f02ed5
-ms.openlocfilehash: 162585ea866b4fb26cfaae3bc94345dadaba0baa
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0a95d61c50af5f49e69df8ae20efccfd3fb8ff5f
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367409"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82910423"
 ---
 # <a name="wctomb-_wctomb_l"></a>wctomb, _wctomb_l
 
-Geniş bir karakteri karşılık gelen çok bayt karaktere dönüştürün. Bu işlevlerin daha güvenli sürümleri mevcuttur; [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md)bakın.
+Geniş bir karakteri karşılık gelen çok baytlı karaktere dönüştürün. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,32 +65,32 @@ int _wctomb_l(
 *mbchar*<br/>
 Çok baytlı bir karakterin adresi.
 
-*Wchar*<br/>
+*wchar*<br/>
 Geniş bir karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Wctomb** geniş karakteri çok bayt karaktere dönüştürürse, geniş karakterdeki bayt sayısını **(MB_CUR_MAX'den**büyük olmayan) döndürür. *Wchar* geniş karakterli null karakter (L'\0') **ise, wctomb** 1 döndürür. Hedef işaretçi *mbchar* **NULL**ise, **wctomb** 0 döndürür. Geçerli yerel olarak dönüştürme mümkün değilse, **wctomb** -1 döndürür ve **errno** **EILSEQ**olarak ayarlanır.
+**Wctomb** geniş karakteri çok baytlı bir karaktere dönüştürdüğünde, geniş karakter içindeki bayt sayısını ( **MB_CUR_MAX**olmayan) döndürür. *Wchar* , geniş karakterli null karakterdir (L ' \ 0 '), **wctomb** 1 döndürür. Hedef işaretçi *mbchar* değeri **null**ise, **wctomb** 0 döndürür. Dönüştürme geçerli yerel ayarda mümkün değilse, **wctomb** -1 döndürür ve **errno** , **eilseq**olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wctomb** işlevi *wchar* bağımsız değişkenini ilgili çok bayt karaktere dönüştürür ve sonucu *mbchar'da*depolar. İşlevi herhangi bir programdaki herhangi bir noktadan arayabilirsiniz. **wctomb** herhangi bir yerele bağımlı davranış için geçerli yerel kullanır; **_wctomb_l** **wctomb** ile aynıdır, ancak bunun yerine geçirilen yerelliği kullanır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**Wctomb** işlevi, *wchar* bağımsız değişkenini karşılık gelen çok baytlı karaktere dönüştürür ve sonucu *mbchar*üzerinde depolar. İşlevi herhangi bir programda herhangi bir noktadan çağırabilirsiniz. **wctomb** , herhangi bir yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_wctomb_l** , bunun yerine geçirilen yerel ayarı kullanması dışında **wctomb** ile aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-**wctomb** parametrelerini doğrular. *Mbchar* **NULL**ise, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, **errno** **EINVAL** olarak ayarlanır ve işlev -1 döndürür.
+**wctomb** , parametrelerini doğrular. *Mbchar* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev-1 döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**Wctomb**|\<stdlib.h>|
+|**wctomb**|\<Stdlib. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bu program wctomb işlevinin davranışını göstermektedir.
+Bu program wctomb işlevinin davranışını gösterir.
 
 ```cpp
 // crt_wctomb.cpp
@@ -120,10 +120,10 @@ Convert a wide character:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
-[WideCharToMultiByte](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>
+[Widechartoçok baytlı](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>

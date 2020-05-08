@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ntoskrnl.exe
 - ucrtbase.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -28,16 +28,16 @@ helpviewer_keywords:
 - _purecall function
 - purecall function
 ms.assetid: 56135d9b-3403-4e22-822d-e714523801cc
-ms.openlocfilehash: f841bc70a4a5365bb9cc6086dd752bd2a1b583ed
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 19ad6c2f517d9ddf277a7bdda6e46c7940f0d3f1
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338482"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82913337"
 ---
 # <a name="_purecall"></a>_purecall
 
-Varsayılan saf sanal işlev çağrı hata işleyicisi. Derleyici, saf bir sanal üye işlev çağrıldığında bu işlevi çağırmak için kod oluşturur.
+Varsayılan saf sanal işlev çağırma hatası işleyicisi. Derleyici, bir saf sanal üye işlevi çağrıldığında bu işlevi çağırmak için kod üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,15 +47,15 @@ extern "C" int __cdecl _purecall();
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_purecall** işlevi, Microsoft C++ derleyicisinin Microsoft'a özgü bir uygulama ayrıntısıdır. Bu işlev, doğrudan kodunuz tarafından çağrılması amaçlanmamıştır ve ortak üstbilgi bildirimi yoktur. C Runtime Kitaplığı'nın genel dışa aktarDığı için burada belgelenmiştir.
+**_Purecall** işlevi, Microsoft C++ derleyicisinin Microsoft 'a özgü bir uygulama ayrıntısıyla belirlenir. Bu işlevin kodunuz tarafından doğrudan çağrılması amaçlanmamıştır ve genel üstbilgi bildirimi yoktur. C çalışma zamanı kitaplığının Genel dışarı aktardığı için burada belgelenmiştir.
 
-Hiçbir uygulama olduğundan saf sanal işleviçin bir çağrı bir hatadır. Derleyici, saf bir sanal işlev çağrıldığında **_purecall** hata işleyicisi işlevini çağırmak için kod oluşturur. Varsayılan olarak, **_purecall** programı sonlandırır. Sonlandırmadan önce, **_purecall** işlevi işlem için ayarlanmışsa **_purecall_handler** bir işlev çağırır. Hata ayıklama veya raporlama amacıyla bunları yakalamak için saf sanal işlev çağrıları için kendi hata işleyicisi işlevi yükleyebilirsiniz. Kendi hata işleyicinizi kullanmak **için, _purecall_handler** imzasına sahip bir işlev oluşturun ve ardından geçerli işleyici yapmak için [_set_purecall_handler](get-purecall-handler-set-purecall-handler.md) kullanın.
+Saf sanal işleve yapılan bir çağrı, bir uygulamaya sahip olmadığı için bir hatadır. Derleyici, bir saf sanal işlev çağrıldığında **_purecall** hata işleyicisi işlevini çağırmak için kod üretir. Varsayılan olarak, **_purecall** programı sonlandırır. Sonlandırmadan önce, **_purecall** işlevi işlem için ayarlandıysa bir **_purecall_handler** işlevi çağırır. Hata ayıklama veya raporlama amaçlarıyla yakalamak için, saf sanal işlev çağrıları için kendi hata işleyicisi işlevinizi yükleyebilirsiniz. Kendi hata işleyicinizi kullanmak için, **_purecall_handler** imzaya sahip bir işlev oluşturun ve sonra geçerli işleyici yapmak için [_set_purecall_handler](get-purecall-handler-set-purecall-handler.md) kullanın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**_purecall** işlevinin üstbilgi bildirimi yoktur. **_purecall_handler** typedef \<stdlib.h> tanımlanır.
+**_Purecall** işlevinin üst bilgi bildirimi yok. **_Purecall_handler** typedef, Stdlib. \<h> içinde tanımlanmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

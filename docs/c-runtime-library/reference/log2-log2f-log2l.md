@@ -20,22 +20,22 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
 - apiref
 ms.assetid: 94d11b38-70b7-4d3a-94ac-523153c92b2e
-ms.openlocfilehash: 29a1a9e2003091944a4587036c62a49d76333080
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 58da7790e6fbce915c16a02a1b0d972a6fe1049e
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81341716"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82911412"
 ---
 # <a name="log2-log2f-log2l"></a>log2, log2f, log2l
 
-Belirtilen değerin ikili (base-2) logaritmasını belirler.
+Belirtilen değerin ikili (taban 2) logaritmasını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,40 +63,40 @@ long double log2l(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-Taban-2 logaritmasını belirlemek için değer.
+*sayı*<br/>
+Taban-2 logaritmasını belirleme değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarı da, döner log2 *x*.
+Başarılı olduğunda, return log2 *x*döndürür.
 
 Aksi takdirde, aşağıdaki değerlerden birini döndürebilir:
 
-|Sorun|Dönüş|
+|Sorun|Döndürülmesini|
 |-----------|------------|
 |*x* < 0|NaN|
-|*x* = ±0|-SONSUZLUK|
-|*x* = 1|+0|
-|+SONSUZLUK|+SONSUZLUK|
+|*x* = ± 0|-SONSUZLUK|
+|*x* = 1|+ 0|
+|+ SONSUZLUK|+ SONSUZLUK|
 |NaN|NaN|
 |etki alanı hatası|NaN|
-|kutup hatası|-HUGE_VAL, -HUGE_VALF veya -HUGE_VALL|
+|direk hatası|-HUGE_VAL,-HUGE_VALF veya-HUGE_VALL|
 
-Hatalar [_matherr](matherr.md)belirtildiği gibi bildirilir.
+Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-X bir tamsayı ise, bu işlev aslında en önemli 1 bit *x'in*sıfır tabanlı indeksini döndürür.
+X bir tamsayıdır, bu işlev temelde *x*'in en önemli 1 bitin sıfır tabanlı dizinini döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**log2**, **log2f**, **log2l**|\<math.h>|\<cmath>|
+|**log2**, **log2f**, **log2l**|\<Math. h>|\<cmath>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

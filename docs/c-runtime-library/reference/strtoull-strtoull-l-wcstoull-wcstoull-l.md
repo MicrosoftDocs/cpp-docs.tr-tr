@@ -22,7 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -42,16 +42,16 @@ helpviewer_keywords:
 - _strtoull_l function
 - wcstoull function
 ms.assetid: 36dac1cc-e901-40a0-8802-63562d6d01df
-ms.openlocfilehash: 5a27218b9d83314f995df30fbe21d97031d371af
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 95b64b96de1919e430a8114678cbb3db2d513c78
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81354059"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82912434"
 ---
 # <a name="strtoull-_strtoull_l-wcstoull-_wcstoull_l"></a>strtoull, _strtoull_l, wcstoull, _wcstoull_l
 
-Dizeleri imzasız uzun bir uzun tümseci değerine dönüştürür.
+Dizeleri işaretsiz uzun tamsayı değerine dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,58 +83,58 @@ unsigned long long _wcstoull_l(
 ### <a name="parameters"></a>Parametreler
 
 *strSource*<br/>
-Dönüştürme için null-sonlandırılan dize.
+Dönüştürülecek null ile sonlandırılmış dize.
 
 *endptr*<br/>
-Tazyimi durduran karaktere işaretçi.
+Taramayı durduran karakter işaretçisi.
 
 *base*<br/>
-Kullanılacak sayı tabanı.
+Kullanılacak sayı temeli.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**strtoull** dönüştürülen değeri döndürür, varsa **veya** taşma ULLONG_MAX. **strtoull** dönüşüm yapılamazsa 0 döndürür. **wcstoull** benzer şekilde **strtoull**değerleri döndürür. Her iki işlev için de taşma veya taşma oluşursa **errno** **ERANGE** olarak ayarlanır.
+**strtoull** , varsa dönüştürülen değeri ya da taşma üzerinde **ULLONG_MAX** döndürür. Hiçbir dönüştürme gerçekleştirilemiyorsa **strtoull** 0 değerini döndürür. **wcstoull** , **strtoull**olarak değer döndürür. Her iki işlev için de **errno** , taşma veya yetersiz kalması durumunda **ERANGE** olarak ayarlanır.
 
-İade kodları hakkında daha fazla bilgi için [bkz: errno, _doserrno, _sys_errlist ve _sys_nerr.](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri giriş *dizestrofini* **imzasız** **uzun bir** **long** sonda değerine dönüştürür.
+Bu işlevlerin her biri, *strSource* giriş dizesini **işaretsiz** **uzun** **bir tamsayı değerine** dönüştürür.
 
-**strtoull** bir sayının bir parçası olarak tanıyamaz ilk karakter de dize *strSource* okuma durur. Bu sonlandırıcı null karakter olabilir veya *tabandan*daha büyük veya taban eşit ilk sayısal karakter olabilir. Yerel LC_NUMERIC **kategorisinin** ayarı *strSource'daki*radiks karakterinin tanınmasını belirler; daha fazla bilgi için [setlocale, _wsetlocale](setlocale-wsetlocale.md)bakın. **strtoull** ve **wcstoull** geçerli yerel kullanın; **_strtoull_l** ve **_wcstoull_l** bunun yerine geçirilen ancak başka türlü aynı olan yerel alanı kullanın. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**strtoull** , bir sayının parçası olarak tanıyamadığı Ilk karakterde *strSource* dize okumasını durduruyor. Bu, Sonlandırıcı null karakteri olabilir veya *tabandan*büyük veya buna eşit olan ilk sayısal karakter olabilir. Yerel ayarın **LC_NUMERIC** kategorisi, *strSource*'ta taban karakterinin tanınmasını belirler. daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md). **strtoull** ve **wcstoull** geçerli yerel ayarı kullanır; **_strtoull_l** ve **_wcstoull_l** , geçirilen yerel ayarı kullanır, ancak başka bir şekilde aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-*Endptr* **NULL**değilse, saramayı durduran karaktere işaretçi *endptr*tarafından işaret edilen konumda depolanır. Dönüşüm gerçekleştirilemezse (geçerli basamak bulunamadı veya geçersiz bir taban belirtilmişse), *strSource* değeri *endptr*tarafından işaret edilen konumda depolanır.
+*Endptr* **null**değilse, taramayı durduran karaktere yönelik bir işaretçi, *endptr*tarafından işaret edilen konumda depolanır. Hiçbir dönüştürme gerçekleştirilemiyorsa (geçerli basamak bulunamadı veya geçersiz bir taban belirtilmişse), *strSource* değeri *endptr*tarafından işaret edilen konumda depolanır.
 
-**wcstoull** **strtoull** geniş karakterli bir sürümüdür ve *strSource* bağımsız değişkeni geniş karakterli bir dizedir. Aksi takdirde, bu işlevler aynı şekilde çalışır.
+**wcstoull** , **strtoull** öğesinin geniş karakterli bir sürümüdür ve *strSource* bağımsız değişkeni geniş karakterli bir dizedir. Aksi takdirde, bu işlevler aynı şekilde davranır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcstoull**|**strtoull**|**strtoull**|**wcstoull**|
 |**_tcstoull_l**|**strtoull_l**|**_strtoull_l**|**_wcstoull_l**|
 
-**strtoull** *strSource* aşağıdaki formu bir dize işaret bekliyor:
+**strtoull** , *strSource* 'un aşağıdaki biçimdeki bir dizeyi işaret etmek istiyor:
 
-> [*beyazuzay*] [{**+** **-**&#124; }] [**0** [{ **x** &#124; **X** }]] [ *&#124; harflerin**basamakları* ]
+> [*boşluk*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **x** }]] [*basamaklar* &#124; *harfler*]
 
-Bir *boşluk,* yoksayılan boşluk ve sekme karakterlerinden oluşabilir. *basamaklar* bir veya daha fazla ondalık basamakvardır. *harfler* 'a' ile 'z' (veya 'A' ile 'Z' harfleri) harfleridir. Bu forma uymayan ilk karakter tazyimi durdurur. *Taban* 2 ile 36 arasındaysa, sayının temeli olarak kullanılır. *Taban* 0 ise, temeli belirlemek için *strSource* tarafından işaret edilen dizenin ilk karakterleri kullanılır. İlk karakter '0' ve ikinci karakter 'x' veya 'X' değilse, dize sekizli bir sonda olarak yorumlanır. İlk karakter '0' ve ikinci karakter 'x' veya 'X' ise, dize hexadecimal tamsayı olarak yorumlanır. İlk karakter '1' ile '9' arasındaysa, dize ondalık tamsayı olarak yorumlanır. 'a' ile 'z' (veya 'A' ile 'Z' arasında) harfleri 10 ile 35 arasında atanır; yalnızca atanan değerleri *tabandan* daha az olan harflere izin verilir. Taban aralığının dışındaki ilk karakter tazyimeyi durdurur. Örneğin, *taban* 0 ise ve taranan ilk karakter '0' ise, bir sekizli sonda varsayar ve '8' veya '9' karakteri taranması nı durdurur. **strtoull** bir artı**+** işareti sağlar (**-**) veya eksi işareti ( ) önek; önde gelen eksi işareti, geri dönüş değerinin inkar olduğunu gösterir.
+Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır. *rakamlar* bir veya daha fazla ondalık basamaklıdır. *harfler* , ' a '-' z ' (veya ' a '-' z ') harflerinden biridir. Bu forma uymayan ilk karakter taramayı durduruyor. *Taban* 2 ile 36 arasındaysa, sayının temeli olarak kullanılır. *Base* 0 Ise, *strSource* tarafından işaret edilen dizenin ilk karakterleri temeli belirlemede kullanılır. İlk karakter ' 0 ' ise ve ikinci karakter ' x ' veya ' X ' değilse, dize sekizlik bir tamsayı olarak yorumlanır. İlk karakter ' 0 ' ise ve ikinci karakter ' x ' veya ' X ' ise, dize onaltılık tamsayı olarak yorumlanır. İlk karakter ' 1 '-' 9 ' arasında ise, dize bir ondalık tamsayı olarak yorumlanır. ' A '-' z ' (veya ' A '-' Z ' arasındaki), 10 ile 35 arasında değerler atanır; yalnızca atanmış değerlerine *tabandan* küçük olan harflerine izin verilir. Taban aralığının dışındaki ilk karakter taramayı sonlandırır. Örneğin, *Base* 0 ise ve taranan ilk karakter ' 0 ' ise, sekizlik bir tamsayı varsayılır ve ' 8 ' veya ' 9 ' karakteri taramayı sonlandırır. **strtoull** bir artı işareti (**+**) ya da eksi işareti (**-**) ön ekine izin verir; Baştaki eksi işareti, dönüş değerinin nelenmiş olduğunu gösterir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strtoull**|\<stdlib.h>|
-|**wcstoull**|\<stdlib.h> \<veya wchar.h>|
-|**_strtoull_l**|\<stdlib.h>|
-|**_wcstoull_l**|\<stdlib.h> \<veya wchar.h>|
+|**strtoull**|\<Stdlib. h>|
+|**wcstoull**|\<Stdlib. h> veya \<wchar. h>|
+|**_strtoull_l**|\<Stdlib. h>|
+|**_wcstoull_l**|\<Stdlib. h> veya \<wchar. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -142,11 +142,11 @@ Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [localeconv](localeconv.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[Dizeden Sayısal Değer Fonksiyonlarına](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
+[Sayısal değer Işlevlerine dize](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
 [strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)<br/>
 [strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)<br/>
 [strtoul, _strtoul_l, wcstoul, _wcstoul_l](strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>

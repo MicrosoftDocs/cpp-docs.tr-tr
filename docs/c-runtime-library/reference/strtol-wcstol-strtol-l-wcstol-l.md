@@ -22,7 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -77,16 +77,16 @@ no-loc:
 - _atof_l
 - _wtof
 - _wtof_l
-ms.openlocfilehash: dbeaf04d34aa20e15de48e99082ed07edb6129ab
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cc54884cd32ffa9118abfb6d46d659125a44262c
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81320484"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82912649"
 ---
 # <a name="strtol-wcstol-_strtol_l-_wcstol_l"></a>strtol, wcstol, _strtol_l, _wcstol_l
 
-Dizeleri **uzun** bir tamsayı değerine dönüştürün.
+Dizeleri **uzun** tamsayı değerine dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -117,43 +117,43 @@ long _wcstol_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dize*\
-Dönüştürme için null-sonlandırılan dize.
+*dizisinde*\
+Dönüştürülecek null ile sonlandırılmış dize.
 
 *end_ptr*\
-Son yorumlanan karakterden sonra karakteri işaret etmek üzere ayarlanmış bir çıkış parametresi. Göz ardı edilirse, **NULL**.
+Bir çıktı parametresi, son yorumlanan karakterden sonraki karakteri işaret etmek üzere ayarlanır. **Null**ise yoksayıldı.
 
-*Temel*\
-Kullanılacak sayı tabanı.
+*temel*\
+Kullanılacak sayı temeli.
 
-*Yerel ayar*\
-Kullanılacak yerel yer.
+*ayarlar*\
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**strtol**, **wcstol**, **_strtol_l**, ve **_wcstol_l** *dize*temsil edilen değeri döndürün. Dönüşüm mümkün değilse 0 döndürerler. Temsil bir taşma neden olur, onlar **LONG_MAX** veya **LONG_MIN.**
+**strtol**, **wcstol**, **_strtol_l**ve **_wcstol_l** *dizedeki*temsil edilen değeri döndürür. Dönüştürme mümkün değilse 0 döndürür. Gösterim bir taşmaya neden olduğunda **LONG_MAX** veya **LONG_MIN**döndürür.
 
-taşma veya taşma oluşursa **errno** **ERANGE** olarak ayarlanır. *Dize* **NULL**ise **EINVAL** olarak ayarlanır. Veya, *taban* sıfır değilse ve 2'den azveya 36'dan büyükse. **ERANGE,** **EINVAL**ve diğer iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
+taşma veya yetersiz kalması durumunda **errno** , **ERANGE** olarak ayarlanır. *Dize* **null**ise **EINVAL** olarak ayarlanır. Ya da *taban* sıfır değilse veya 2 ' den küçükse ya da 36 ' den büyükse. **ERANGE**, **EINVAL**ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strtol**, **wcstol**, **_strtol_l**, ve **_wcstol_l** fonksiyonları **uzun**bir *dize* dönüştürmek . Bir sayının parçası olarak tanınmayan ilk karakterde *dize* okumayı durdururlar. Sonlandırıcı-null karakteri veya *tabandan*daha büyük veya tabandan eşit ilk alfanümerik karakter olabilir.
+**Strtol**, **wcstol**, **_strtol_l**ve **_wcstol_l** işlevleri *dizeyi* **Long**olarak dönüştürür. Bir sayının parçası olarak tanınmayan ilk karakterde *dize* okumayı durdurur. Bu, Sonlandırıcı null karakter veya temelden büyük veya buna eşit olan ilk alfasayısal karakter *olabilir.*
 
-**wcstol** ve **_wcstol_l** **strtol** ve **_strtol_l**geniş karaktersürümlerivardır. Onların *dize* bağımsız değişkeni geniş karakterli bir dizedir. Bu işlevler **strtol** ve **aksi _strtol_l** aynı şekilde çalışır. Yerel LC_NUMERIC **kategori** ayarı *dizedeki*radix karakterinin (kesirli işaretçi veya ondalık nokta) tanınmasını belirler. **Strtol** ve **wcstol** işlevleri geçerli yerel kullanın. **_strtol_l** ve **_wcstol_l** yerine geçirilen yerel kullanın. Daha fazla bilgi için [setlocale] ve [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**wcstol** ve **_wcstol_l** , **strtol** ve **_strtol_l**'ın geniş karakterli sürümleridir. *Dize* bağımsız değişkeni geniş karakterli bir dizedir. Bu işlevler, **strtol** ile aynı şekilde davranır ve **_strtol_l** Aksi halde. Yerel ayarın **LC_NUMERIC** kategori ayarı, *dizedeki*taban karakterinin (kesirli işaret veya ondalık noktanın) tanınmasını belirler. **Strtol** ve **wcstol** işlevleri geçerli yerel ayarı kullanır. **_strtol_l** ve **_wcstol_l** bunun yerine geçirilen yerel ayarı kullanır. Daha fazla bilgi için bkz. [setlocale] ve [yerel ayar](../../c-runtime-library/locale.md).
 
-*end_ptr* **NULL**olduğunda, yok sayılır. Aksi takdirde, saramayı durduran karaktere işaretçi *end_ptr*işaret ettiği konumda depolanır. Geçerli basamak bulunmazsa veya geçersiz bir temel belirtilmezse dönüştürme mümkün değildir. *Dize* değeri daha sonra *end_ptr*tarafından işaret edilen konumda depolanır.
+*End_ptr* **null**olduğunda, yok sayılır. Aksi takdirde, taramayı durduran karaktere yönelik bir işaretçi *end_ptr*tarafından işaret edilen konumda depolanır. Geçerli bir basamak bulunamazsa veya geçersiz bir taban belirtilmişse dönüştürme yapılamaz. Daha sonra *dizenin* değeri *end_ptr*tarafından işaret edilen konumda depolanır.
 
-**strtol** *dize* aşağıdaki formu bir dize işaret bekliyor:
+**strtol** , *dizeyi* aşağıdaki biçimdeki bir dizeye işaret etmek bekler:
 
-> [*beyazuzay*] [{**+** **-**&#124; }] [**0** [{ **x** &#124; **X** }]] [*alfanümerik*]
+> [*boşluk*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **x** }]] [*alfasayısal*]
 
-Kare parantezler`[ ]`( ) isteğe bağlı öğeleri çevreler. Kıvırcık ayraçlar ve`{ | }`dikey bir çubuk ( ) tek bir öğe için alternatifleri çevreler. *boşluk,* yoksayAn boşluk ve sekme karakterlerinden oluşabilir. *alfanümerik* ondalık basamaklar veya 'a' ile 'z' (veya 'A' ile 'Z' harfleri) harfleridir. Bu forma uymayan ilk karakter tazyimi durdurur. *Taban* 2 ile 36 arasındaysa, sayının temeli olarak kullanılır. *Taban* 0 ise, *dize* tarafından işaret edilen dize ilk karakterleri tabanı belirlemek için kullanılır. İlk karakter 0 ise ve ikinci karakter 'x' veya 'X' değilse, dize sekizli bir sonda olarak yorumlanır. İlk karakter '0' ve ikinci karakter 'x' veya 'X' ise, dize hexadecimal tamsayı olarak yorumlanır. İlk karakter '1' ile '9' arasındaysa, dize ondalık tamsayı olarak yorumlanır. 'a' ile 'z' (veya 'A' ile 'Z' arasında) harfleri 10 ile 35 arasında atanır. Tama yalnızca değerleri *tabandan*daha az olan harflere izin verir. Taban aralığının dışındaki ilk karakter tazyimeyi durdurur. Örneğin, *dize* "01" ile başlar varsayalım. *Taban* 0 ise, tarayıcı sekizli bir sayacı olduğunu varsayar. '8' veya '9' karakteri tçalışmayı durdurur.
+Köşeli parantezler (`[ ]`) surround isteğe bağlı öğeleri. Tek bir öğe için küme ayraçları ve`{ | }`dikey çubuk () surround alternatifleri. *boşluk,* yoksayılan boşluk ve sekme karakterlerinden oluşabilir. *alfasayısal* sayılar veya ' a '-' z ' (ya da ' a '-' z ') harfleri ondalık basamaklıdır. Bu forma uymayan ilk karakter taramayı durduruyor. *Taban* 2 ile 36 arasındaysa, sayının temeli olarak kullanılır. *Taban* 0 ise, *dizenin* gösterdiği dizenin başlangıç karakterleri, temeli belirlemede kullanılır. İlk karakter 0 ise ve ikinci karakter ' x ' veya ' X ' değilse, dize sekizlik bir tamsayı olarak yorumlanır. İlk karakter ' 0 ' ise ve ikinci karakter ' x ' veya ' X ' ise, dize onaltılık tamsayı olarak yorumlanır. İlk karakter ' 1 '-' 9 ' arasında ise, dize bir ondalık tamsayı olarak yorumlanır. ' A '-' z ' (veya ' A '-' Z ' arasındaki), 10 ile 35 arası değerlere atanır. Tarama yalnızca değerleri *tabandan*küçük olan harflere izin verir. Taban aralığının dışındaki ilk karakter taramayı sonlandırır. Örneğin, *dizenin* "01" ile başlayacağını varsayın. *Taban* 0 ise, tarayıcı sekizli tamsayı olduğunu varsayar. ' 8 ' veya ' 9 ' karakteri taramayı durduruyor.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcstol**|**strtol**|**strtol**|**wcstol**|
 |**_tcstol_l**|**_strtol_l**|**_strtol_l**|**_wcstol_l**|
@@ -162,24 +162,24 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strtol**|\<stdlib.h>|
-|**wcstol**|\<stdlib.h> \<veya wchar.h>|
-|**_strtol_l**|\<stdlib.h>|
-|**_wcstol_l**|\<stdlib.h> \<veya wchar.h>|
+|**strtol**|\<Stdlib. h>|
+|**wcstol**|\<Stdlib. h> veya \<wchar. h>|
+|**_strtol_l**|\<Stdlib. h>|
+|**_wcstol_l**|\<Stdlib. h> veya \<wchar. h>|
 
-**_strtol_l** Ve **_wcstol_l** işlevler Microsoft'a özgüdir, Standart C kitaplığınbir parçası değildir. Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../compatibility.md)
+**_strtol_l** Ve **_wcstol_l** işlevleri, standart C kitaplığının bir parçası değil, Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bkz. için [strtod](strtod-strtod-l-wcstod-wcstod-l.md)örneğe bakın.
+İçin [strtod](strtod-strtod-l-wcstod-wcstod-l.md)örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../data-conversion.md)\
-[Yerel ayar](../locale.md)\
+[Ayarlar](../locale.md)\
 [localeconv](localeconv.md)\
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)\
-[Dizeden sayısal değer fonksiyonlarına](../string-to-numeric-value-functions.md)\
+[Sayısal değer işlevlerine dize](../string-to-numeric-value-functions.md)\
 [strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)\
 [strtoll, _strtoll_l, wcstoll, _wcstoll_l](strtoll-strtoll-l-wcstoll-wcstoll-l.md)\
 [strtoul, _strtoul_l, wcstoul, _wcstoul_l](strtoul-strtoul-l-wcstoul-wcstoul-l.md)\
