@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -32,16 +32,16 @@ helpviewer_keywords:
 - frexp function
 - floating-point functions, mantissa and exponent
 ms.assetid: 9b020f2e-3967-45ec-a6a8-d467a071aa55
-ms.openlocfilehash: 79fe70341f0d6fef1dc7fe00f872456a11972876
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d539a9ebb4042b18e6ec1ef8ed204a61cc7bb8cc
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81345805"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82911614"
 ---
 # <a name="frexp-frexpf-frexpl"></a>frexp, frexpf, frexpl
 
-Bir yüzen nokta numarasının mantisve üs alır.
+Kayan noktalı sayının Mantis ve üstürünü alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,31 +70,31 @@ long double frexp(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Kayan nokta değeri.
 
 *expptr*<br/>
-Müteselsilen üsse depolanan işaretçi.
+Depolanan tamsayı üs işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**frexp** mantissa döndürür. *x* 0 ise, işlev hem mantishem de üs için 0 döndürür. *Expptr* **NULL**ise, geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin verilirse, bu işlev **errno'u** **EINVAL'e** ayarlar ve 0 döndürür.
+**frexp** , Mantis döndürür. *X* 0 ise, işlev hem Mantis hem de üs için 0 döndürür. *Expptr* **null**ise, geçersiz parametre işleyicisi [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Frexp** işlevi yüzen nokta değerini (*x*) bir mantissa (*m*) ve bir üs (*n)* olarak ayırır, m'nin *m* mutlak değeri 0,5'ten büyük veya 1,0'dan daha büyük veya eşittir ve *x* = *m* * 2<sup>*n*</sup>. İnteger üs *n,* *expptr*tarafından işaret edilen yerde depolanır.
+**Frexp** işlevi kayan nokta değerini (*x*) bir Mantis (*e*) ve üs (*n*) olarak ayırır; Örneğin, sıfırdan büyük değer *0,5, 1,0* ' den küçük ve *x* = *e* * 2<sup>*n*</sup>. Tamsayı üssü *n* , *expptr*tarafından işaret edilen konumda depolanır.
 
-C++ aşırı yüklemeye izin verir, böylece **frexp**aşırı yüklerini arayabilirsiniz. C programında, **frexp** her zaman bir **çift** ve bir **int** işaretçi alır ve bir **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **frexp**aşırı yüklerini çağırabilirsiniz. C programında, **frexp** her zaman **çift** ve bir **int** işaretçisi alır ve bir **Double**döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**frexp**, **frexpf**, **frexpl**|\<math.h>|
+|**frexp**, **frexpf**, **frexpl**|\<Math. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

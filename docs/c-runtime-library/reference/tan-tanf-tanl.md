@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -37,16 +37,16 @@ helpviewer_keywords:
 - tanf function
 - trigonometric functions
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
-ms.openlocfilehash: 73a519614f17b6a8f8b26b5eae2172c87ea7f817
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d35ed6ca8dd4c3ea7a149e0fb2085aa8a97b11b4
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81362638"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82912372"
 ---
 # <a name="tan-tanf-tanl"></a>tan, tanf, tanl
 
-Teğeti hesaplar.
+Tanjantı hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,31 +63,31 @@ long double tan( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-Radyanlarda açı.
+*sayı*<br/>
+Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Döndürülen değer
 
-**Tan** fonksiyonları *x*teğet döndürün. *X* 263'ten büyük veya eşitse veya -263'ten daha az veya eşitse, sonuçta bir önem kaybı oluşur.
+**Tan** işlevleri *x*tanjantını döndürür. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
 
-|Girdi|SEH Özel Durumu|**Matherr** Özel durum|
+|Giriş|SEH özel durumu|**Matherr** Duruma|
 |-----------|-------------------|-------------------------|
-|± QNAN,IND|yok|_DOMAIN|
+|± QNAN, IND|yok|_DOMAIN|
 |± INF|**Geçersiz**|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya uzun **long** **çift** değerleri alan ve **döndüren** aşırı tan yüklerini arayabilirsiniz. C **programında, tan** her zaman alır ve **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerlerini alan ve döndüren **tan** aşırı yüklerini çağırabilirsiniz. C programında, **tan** her zaman **Double**öğesini alır ve döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgi (C)|Gerekli üstbilgi (C++)|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
-|**tan**, **tanf**, **tanl**|\<math.h>|\<cmath> \<veya math.h>|
+|**tan**, **tanf**, **tanl**|\<Math. h>|\<cmath> veya \<Math. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

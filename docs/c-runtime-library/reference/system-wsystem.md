@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -35,19 +35,19 @@ helpviewer_keywords:
 - commands, executing
 - command interpreter
 ms.assetid: 7d3df2b6-f742-49ce-bf52-012b0aee3df5
-ms.openlocfilehash: 21ce04d30da80a40a1162dce06ff378150008766
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 09353c9cda2bc85d91f57806bc3497e49a19f803
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81362783"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82912388"
 ---
 # <a name="system-_wsystem"></a>system, _wsystem
 
-Bir komut uyguluyor.
+Bir komutu yürütür.
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,35 +62,35 @@ int _wsystem(
 
 ### <a name="parameters"></a>Parametreler
 
-*Komut*<br/>
+*komutundaki*<br/>
 Yürütülecek komut.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Komut* **NULL** ise ve komut yorumlayıcısı bulunursa, sıfır olmayan bir değer döndürür. Komut tercümanı bulunamazsa, 0 döndürür ve **ENOENT'e** **errno** ayarlar. *Komut* **NULL**değilse, **sistem** komut tercümanı tarafından döndürülen değeri döndürür. Yalnızca komut tercümanı 0 değerini döndürürse 0 değerini döndürür. - 1'in getiri değeri bir hatayı gösterir ve **errno** aşağıdaki değerlerden birine ayarlanır:
+*Komut* **null** ise ve komut yorumlayıcı bulunursa, sıfır dışında bir değer döndürür. Komut yorumlayıcı bulunamazsa, 0 döndürür ve **errno** değerini **ENOENT**olarak ayarlar. *Komut* **null**değilse, **sistem** komut yorumlayıcı tarafından döndürülen değeri döndürür. Yalnızca komut yorumlayıcı 0 değerini döndürürse 0 değerini döndürür. -1 ' in dönüş değeri bir hatayı gösterir ve **errno** aşağıdaki değerlerden birine ayarlanır:
 
 |||
 |-|-|
-| **E2BIG** | Bağımsız değişken listesi (sisteme bağımlı olan) çok büyük. |
-| **Enoent** | Komut tercümanı bulunamıyor. |
-| **ENOEXEC** | Biçim geçerli olmadığından komut tercüman dosyası yürütülemez. |
-| **ENOMEM** | Komutu yürütmek için yeterli bellek kullanılamaz; veya kullanılabilir bellek bozuldu; veya geçerli olmayan bir blok vardır, bu da aramayı yapan işlemin doğru şekilde ayrılmadığını gösterir. |
+| **E2BIG** | Bağımsız değişken listesi (sisteme bağımlı) çok büyük. |
+| **ENOENT** | Komut yorumlayıcı bulunamıyor. |
+| **ENOEXEC** | Biçim geçerli olmadığından, komut yorumlayıcı dosyası yürütülemiyor. |
+| **ENOMEM** | Komutu yürütmek için yeterli bellek yok; veya kullanılabilir bellek bozulmuş; ya da çağrıyı yapan işlemin doğru şekilde ayrılmadığını gösteren geçerli olmayan bir blok vardır. |
 
-Bu iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bakın.
+Bu dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sistem** işlevi *komutu,* dizeyi işletim sistemi komutu olarak çalıştıran komut yorumlayıcısına geçirir. **komut-tercüman** dosyası CMD.exe'yi bulmak için **COMSPEC** ve **PATH** ortam değişkenlerini kullanır. *Komut* **NULL**ise, işlev yalnızca komut yorumlayıcısının var olup olmadığını denetler.
+**Sistem** işlevi, dizeyi bir işletim sistemi komutu olarak *yürüten komut yorumlayıcıya geçirir.* **sistem** , cmd. exe komut yorumlayıcı dosyasını bulmak Için **ComSpec** ve **Path** ortam değişkenlerini kullanır. *Komut* **null**ise, işlev yalnızca komut yorumlayıcısının var olup olmadığını denetler.
 
-Fflush veya [_flushall](flushall.md)kullanarak veya **sistemi**aramadan önce herhangi bir akışı kapatarak açıkça [sifonu](fflush.md) çekmeniz gerekir.
+**System**çağrısından önce [fflush](fflush.md) veya [_flushall](flushall.md)kullanarak veya herhangi bir akışı kapatarak açıkça temizlenmesi gerekir.
 
-**_wsystem** **sistemin**geniş karakterli bir versiyonudur; **_wsystem** *komut* argümanı geniş karakterli bir dizedir. Bu işlevler aynı şekilde başka türlü çalışır.
+**_wsystem** , **sistemin**geniş karakterli bir sürümüdür; _wsystem *komut* bağımsız değişkeni **_wsystem** geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tsystem**|**sistem**|**sistem**|**_wsystem**|
 
@@ -98,14 +98,14 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**sistem**|\<process.h> \<veya stdlib.h>|
-|**_wsystem**|\<process.h> \<veya stdlib.h> veya \<wchar.h>|
+|**sistem**|\<Process. h> veya \<Stdlib. h>|
+|**_wsystem**|\<Process. h> veya \<Stdlib. h> ya \<da wchar. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, bir metin dosyası yazmak için **sistemi** kullanır.
+Bu örnek, bir metin dosyası yazmak için **sistemini** kullanır.
 
 ```C
 // crt_system.c
@@ -118,7 +118,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_systemtxt"></a>Giriş: crt_system.txt
+### <a name="input-crt_systemtxt"></a>Giriş: crt_system. txt
 
 ```Input
 Line one.
@@ -135,7 +135,7 @@ Line two.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_exec, _wexec Fonksiyonlar](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[_exec, _wexec Işlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_flushall](flushall.md)<br/>
 [_spawn, _wspawn İşlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>

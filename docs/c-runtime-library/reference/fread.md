@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -29,16 +29,16 @@ helpviewer_keywords:
 - data [C++], reading from input stream
 - streams [C++], reading data from
 ms.assetid: 9a3c1538-93dd-455e-ae48-77c1e23c53f0
-ms.openlocfilehash: 26ffd56072f1a5fddc3131a42cd47c145e437b60
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ec5af25070e253f6c04d1aab13404306251ed716
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81346061"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82912707"
 ---
 # <a name="fread"></a>fread
 
-Bir akıştan gelen verileri okur.
+Akıştan verileri okur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,41 +53,41 @@ size_t fread(
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
+*arabelleğin*<br/>
 Veriler için depolama konumu.
 
-*Boyutu*<br/>
-Baytlarda madde boyutu.
+*boyutla*<br/>
+Bayt cinsinden öğe boyutu.
 
-*Sayısı*<br/>
-Okunacak maksimum öğe sayısı.
+*biriktirme*<br/>
+Okunacak en fazla öğe sayısı.
 
-*Akışı*<br/>
-**DOSYA** yapısı için işaretçi.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fread,** bir hata oluşursa veya *sayıma*ulaşmadan önce dosyanın sonuyla *karşılaşılırsa,* gerçekte okunan tam öğe sayısını döndürür. Okuma hatasını dosya sonu durumundan ayırmak için **feof** veya **ferror** işlevini kullanın. *Boyut* veya *sayım* 0 ise, **fread** 0 döndürür ve arabellek içeriği değişmez. *Akış* veya *arabellek* null işaretçisi ise, **Fread** [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin verilirse, bu işlev **errno'u** **EINVAL'e** ayarlar ve 0 döndürür.
+**fread** , gerçekten okunan tam öğe sayısını döndürür. Bu, bir hata oluşursa veya dosyanın sonuna *sayıma*ulaşılmadan önce *Bu sayıdan daha* az olabilir. Bir okuma hatasını bir dosya sonu koşulunun ayırt etmek için **feof** veya **ferror** işlevini kullanın. *Boyut* veya *sayı* 0 ise, **fread** 0 döndürür ve arabellek içeriği değiştirilmez. *Stream* veya *buffer* null bir işaretçisiyse, **fread** [parametresi doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
 
-Bu hata kodları hakkında daha fazla bilgi için [ \_doserrno, errno, \_sys\_errlist ve \_sys\_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bakın.
+Bu hata kodları hakkında daha fazla bilgi için bkz [ \_.\_doserrno \_,\_errno, \_sys errlist ve sys NERR](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fread** işlevi, giriş *akışındaki* *boyut* baytöğelerini *saymak* için yukarı okur ve bunları *arabellekte*depolar. *Akışla* ilişkili dosya işaretçisi (varsa) gerçekten okunan bayt sayısıyla artar. Verilen akış [metin modunda](../../c-runtime-library/text-and-binary-mode-file-i-o.md)açılırsa, Windows tarzı yeni satırlar Unix tarzı yeni satırlara dönüştürülür. Diğer bir arada, satır satır besleme (CRLF) çiftleri tek satır besleme (LF) karakterleri ile değiştirilir. Değiştirmenin dosya işaretçisi veya iade değeri üzerinde hiçbir etkisi yoktur. Bir hata oluşursa dosya işaretçisi konumu belirsizdir. Kısmen okunan öğenin değeri belirlenemez.
+**Fread** işlevi, giriş *akışındaki* *Boyut* baytlarının öğelerini *saymak* ve *arabelleğe*kaydeder. *Stream* ile ilişkili dosya işaretçisi (varsa), gerçekten okunan bayt sayısıyla artırılır. Verilen akış [metin modunda](../../c-runtime-library/text-and-binary-mode-file-i-o.md)açılırsa, Windows stili newlines, UNIX stili newlines olarak dönüştürülür. Diğer bir deyişle, satır başı satır besleme (CRLF) çiftleri tek satırlık akış (LF) karakterleriyle değiştirilmiştir. Değiştirme işleminin dosya işaretçisi veya dönüş değeri üzerinde hiçbir etkisi yoktur. Bir hata oluşursa dosya işaretçisi konumu belirsiz olur. Kısmen okunan öğenin değeri belirlenemiyor.
 
-Metin modu akışında kullanıldığında, istenen veri miktarı (yani *boyut* \* *sayısı)* iç **DOSYA** \* arabelleği boyutundan büyük veya eşitse (varsayılan olarak bu 4096 bayttır, [setvbuf](../../c-runtime-library/reference/setvbuf.md)kullanılarak yapılandırılabilir), akış verileri doğrudan kullanıcı tarafından sağlanan arabelleğe kopyalanır ve bu arabellekte yeni satır dönüştürme yapılır. Dönüştürülen veriler arabelleğe kopyalanan akış verilerinden daha kısa olabileceğinden, *arabellek*\[*return_value* \* *boyutu*] **(return_value'nin fread'ten**gelen geri dönüş değeri olduğu) dosyadan dönüştürülmemiş veriler içerebilir. *return_value* Bu nedenle, arabellek amacı C stili dize olarak hareket etmek ise, *arabellek*\[*return_value* \* *boyutu*] karakter verilerini geçersiz sonlandırmanızı öneririz. Metin modu ve ikili modun etkileri hakkında ayrıntılı bilgi için [açık](fopen-wfopen.md) bakınız.
+Metin modundaki bir akışta kullanıldığında, istenen veri miktarı (yani *Boyut* \* *sayısı*) iç **Dosya** \* arabelleği boyutundan büyük veya buna eşitse (varsayılan olarak, bu 4096 bayttır, [setvbuffer](../../c-runtime-library/reference/setvbuf.md)kullanılarak yapılandırılabilir), akış verileri doğrudan Kullanıcı tarafından sağlanmış arabelleğe kopyalanır ve bu arabellekte yeni satır dönüştürme yapılır. Dönüştürülen veriler, arabelleğe kopyalanmış akış verilerinden daha kısa olabileceğinden, veri geçmiş *arabelleği*\[*RETURN_VALUE* \* *boyutu*] ( *RETURN_VALUE* , **fread**'ten döndürülen değer) dosyadan Dönüştürülmeyen verileri içerebilir. Bu nedenle, arabelleğin amacı C stili bir dize olarak davranıyorsa, *arabellek*\[*RETURN_VALUE* \* *boyutu*] noktasında null-sonlandırma karakter verisi kullanmanızı öneririz. Metin modunun ve ikili modun etkileri hakkında ayrıntılı bilgi için bkz. [fopen](fopen-wfopen.md) .
 
-Bu işlev diğer iş parçacıklarını kilitler. Kilitlenmeyen bir sürüme ihtiyacınız varsa, **_fread_nolock**kullanın.
+Bu işlev diğer iş parçacıklarını kilitler. Kilitleme dışı bir sürüme ihtiyacınız varsa **_fread_nolock**kullanın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fread**|\<stdio.h>|
+|**fread**|\<stdio. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -141,8 +141,8 @@ Contents of buffer = zyxwvutsrqponmlkjihgfedcb
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[Metin ve İkili Dosya I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>
-[Fopen](fopen-wfopen.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Metin ve Ikili dosya g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>
+[fopen](fopen-wfopen.md)<br/>
 [fwrite](fwrite.md)<br/>
 [_read](read.md)<br/>

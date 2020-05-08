@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -34,16 +34,16 @@ helpviewer_keywords:
 - dup2 function
 - _dup function
 ms.assetid: 4d07e92c-0d76-4832-a770-dfec0e7a0cfa
-ms.openlocfilehash: 239f857bb40c9609cb6f7ff373295a7a1f8523a9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6c635930fdbc8da550a2a32ea614e150fbeb08a8
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81348110"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82915211"
 ---
 # <a name="_dup-_dup2"></a>_dup, _dup2
 
-Açık bir dosya **(_dup)** için ikinci bir dosya tanımlayıcısı oluşturur veya dosya tanımlayıcıyı **(_dup2)** yeniden atar.
+Açık dosya (**_dup**) için ikinci bir dosya tanımlayıcısı oluşturur veya bir dosya tanımlayıcısını yeniden atar (**_dup2**).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,38 +54,38 @@ int _dup2( int fd1, int fd2 );
 
 ### <a name="parameters"></a>Parametreler
 
-*fd*, *fd1*<br/>
-Dosya tanımlayıcıları açık dosyaya atıfta bulunarak.
+*FD*, *FD1*<br/>
+Açık dosyaya başvuran dosya tanımlayıcıları.
 
 *fd2*<br/>
 Herhangi bir dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_dup** yeni bir dosya tanımlayıcısı döndürür. **_dup2** başarıyı belirtmek için 0 döndürür. Bir hata oluşursa, her işlev -1 döndürür ve dosya tanımlayıcısı geçersizse **EBADF'a** veya başka dosya tanımlayıcısı yoksa **EMFILE'ye** **errno** ayarlar. Geçersiz bir dosya tanımlayıcısı durumunda, işlev, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini de çağırır.
+**_dup** yeni bir dosya tanımlayıcısı döndürür. **_dup2** başarıyı göstermek için 0 döndürür. Bir hata oluşursa, her işlev-1 döndürür ve daha fazla dosya tanımlayıcısı yoksa, dosya tanımlayıcısı geçersizse veya **Emfile** için **errno** , **EBADF** olarak ayarlanır. Geçersiz bir dosya tanımlayıcısı söz konusu olduğunda, işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini de çağırır.
 
-Bu ve diğer iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_dup** ve **_dup2** işlevleri, ikinci bir dosya tanımlayıcısını şu anda açık olan bir dosyayla ilişkilendirer. Bu işlevler, **stdout**için farklı bir dosya ile önceden tanımlanmış bir dosya tanımlayıcısı, ilişkilendirmek için kullanılabilir. Dosya üzerindeki işlemler her iki dosya tanımlayıcısı kullanılarak gerçekleştirilebilir. Dosya için izin verilen erişim türü, yeni bir tanımlayıcının oluşturulmasından etkilenmez. **_dup,** verilen dosyaiçin kullanılabilir bir sonraki dosya tanımlayıcısını döndürür. **_dup2** *fd2'yi* *fd1*ile aynı dosyaya göndermeyapmaya zorlar. *FD2* arama sırasında açık bir dosyaile ilişkiliyse, bu dosya kapatılır.
+**_Dup** ve **_dup2** işlevleri, bir ikinci dosya tanımlayıcısını Şu anda açık olan bir dosya ile ilişkilendirir. Bu işlevler, **stdout**gibi önceden tanımlanmış bir dosya tanımlayıcısını farklı bir dosyayla ilişkilendirmek için kullanılabilir. Dosyadaki işlemler, herhangi bir dosya tanımlayıcısı kullanılarak gerçekleştirilebilir. Dosya için izin verilen erişim türü, yeni bir tanımlayıcının oluşturulmasından etkilenmez. **_dup** , belirtilen dosya için bir sonraki kullanılabilir dosya tanımlayıcısını döndürür. **_dup2** *fd2* , *FD1*ile aynı dosyaya başvurmaya zorlar. *Fd2* , çağrı sırasında açık bir dosya ile ilişkiliyse, bu dosya kapatılır.
 
-Hem **_dup** hem de **_dup2** dosya tanımlayıcılarını parametre olarak kabul eder. Bu işlevlerden`FILE *`herhangi birine bir akış ( ) geçmek için [_fileno](fileno.md)kullanın. **Fileno** yordamı, şu anda verilen akışla ilişkili dosya tanımlayıcısını döndürür. Aşağıdaki örnek, **stderr** 'in (Stdio.h'de tanımlandığı gibi) `FILE *` bir dosya tanımlayıcısıyla nasıl ilişkilendirilir:
+Hem **_dup** hem de **_dup2** dosya tanımlayıcılarını parametre olarak kabul eder. Bu işlevlerden birine bir Stream`FILE *`() geçirmek için [_fileno](fileno.md)kullanın. **Fileno** yordamı, belirtilen akış ile Şu anda ilişkili dosya tanımlayıcısını döndürür. Aşağıdaki örnek, **stderr** 'In (stdio. h 'de `FILE *` olarak tanımlanır) bir dosya tanımlayıcısıyla nasıl ilişkilendirileceğini gösterir:
 
 ```C
 int cstderr = _dup( _fileno( stderr ));
 ```
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_dup**|\<io.h>|
-|**_dup2**|\<io.h>|
+|**_dup**|\<GÇ. h>|
+|**_dup2**|\<GÇ. h>|
 
-Konsol, Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Konsol, **stdin,** **stdout**ve **stderr**ile ilişkili standart akış kolları, C çalışma zamanı işlevleri UWP uygulamalarında bunları kullanamadan önce yönlendirilmelidir. Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -150,7 +150,7 @@ This goes to file 'data'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Düşük Seviyeli G/Ç](../../c-runtime-library/low-level-i-o.md)<br/>
+[Alt düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
 [_close](close.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>

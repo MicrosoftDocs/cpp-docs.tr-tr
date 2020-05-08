@@ -34,7 +34,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -112,16 +112,16 @@ helpviewer_keywords:
 - wfindfirst64i32 function
 - _wfindfirst64 function
 ms.assetid: 9bb46d1a-b946-47de-845a-a0b109a33ead
-ms.openlocfilehash: d83cc0913584618897cbc4aec45cb137388674b7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 879a84b14f612992ae7ed3a96211637aaf5c4783
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81346821"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82911735"
 ---
 # <a name="_findfirst-_findfirst32-_findfirst32i64-_findfirst64-_findfirst64i32-_findfirsti64-_wfindfirst-_wfindfirst32-_wfindfirst32i64-_wfindfirst64-_wfindfirst64i32-_wfindfirsti64"></a>_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
 
-*Dosya özel* değişkeninde belirtilen dosyayla eşleşen bir dosya adının ilk örneği hakkında bilgi sağlayın.
+Dosya adının, *dosyabelirtimi* bağımsız değişkeninde belirtilen dosyayla eşleşen ilk örneği hakkında bilgi sağlayın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -178,55 +178,55 @@ intptr_t _wfindfirst64i32(
 
 ### <a name="parameters"></a>Parametreler
 
-*Filespec*<br/>
-Hedef dosya belirtimi (joker karakter içerebilir).
+*dosyabelirtimi*<br/>
+Hedef dosya belirtimi (joker karakterler içerebilir).
 
-*Fileınfo*<br/>
-Dosya bilgi arabelleği.
+*bilgis*<br/>
+Dosya bilgileri arabelleği.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı **_findfirst,** [_findnext](findnext-functions.md) veya [_findclose](findclose.md)sonraki bir çağrıda kullanılabilecek *dosya spec* belirtimi yle eşleşen dosya veya dosya grubunu tanımlayan benzersiz bir arama tanıtıcısı döndürür. Aksi takdirde, **_findfirst** -1 döndürür ve aşağıdaki değerlerden birine **errno** ayarlar.
+Başarılı olursa **_findfirst** , [_findnext](findnext-functions.md) veya [_findclose](findclose.md)için sonraki bir çağrıda kullanılabilen, *dosyabelirtimi* belirtimiyle eşleşen dosya veya dosya grubunu tanımlayan benzersiz bir arama tutamacı döndürür. Aksi takdirde, **_findfirst** -1 döndürür ve **errno** değerini aşağıdaki değerlerden birine ayarlar.
 
 | errno değeri | Koşul |
 |-|-|
-| **Eınval** | Geçersiz parametre: *filespec* veya *fileinfo* **NULL**oldu. Veya, işletim sistemi beklenmeyen bir hata döndürür. |
-| **Enoent** | Eşleştirilmeyen dosya belirtimi. |
+| **EıNVAL** | Geçersiz parametre: *dosyabelirtimi* veya *FILEINFO* **null**. Ya da, işletim sistemi beklenmeyen bir hata döndürdü. |
+| **ENOENT** | Eşleştirileceği dosya belirtimi. |
 | **ENOMEM** | Yetersiz bellek. |
-| **Eınval** | Geçersiz dosya adı belirtimi veya verilen dosya adı **MAX_PATH'den**büyüktü. |
+| **EıNVAL** | Geçersiz dosya adı belirtimi veya verilen dosya adı **MAX_PATH**daha büyük. |
 
-Bu ve diğer iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Geçersiz bir parametre geçirilirse, bu işlevler [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır.
+Geçersiz bir parametre geçirilirse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_findfirst** veya [_findnext](findnext-functions.md) işlevi (veya herhangi bir türevleri) ile bitirdikten sonra [_findclose](findclose.md) aramanız gerekir. Bu, uygulamanızda bu işlevler tarafından kullanılan kaynakları serbest sağlar.
+**_Findfirst** veya [_findnext](findnext-functions.md) işleviyle (veya herhangi bir çeşitle) işiniz bittiğinde [_findclose](findclose.md) çağırmanız gerekir. Bu, uygulamanızda bu işlevler tarafından kullanılan kaynakları serbest bırakır.
 
-**W** öneki ne sahip bu işlevlerin varyasyonları geniş karakterli sürümlerdir; aksi takdirde, bunlar karşılık gelen tek bayt işlevleri ile aynıdır.
+**W** ön ekine sahip bu işlevlerin çeşitlemeleri, geniş karakter sürümleridir; Aksi takdirde, bunlara karşılık gelen tek baytlı işlevlerle aynıdır.
 
-Bu işlevlerin varyasyonları 32-bit veya 64-bit zaman türlerini ve 32-bit veya 64-bit dosya boyutlarını destekler. İlk sayısal sonek (**32** veya **64**) zaman türünün boyutunu gösterir; ikinci sonek **i32** veya **i64'tür**ve dosya boyutunun 32 bit veya 64 bit tamsayı olarak temsil edilip edilmediğini gösterir. Hangi sürümlerin 32 bit ve 64 bit zaman türlerini ve dosya boyutlarını desteklediği hakkında bilgi için aşağıdaki tabloya bakın. **i32** veya **i64** soneki, zaman türünün boyutuyla aynıysa atlanır, bu nedenle **_findfirst64** da 64 bit dosya uzunluklarını destekler ve **_findfirst32** yalnızca 32 bit dosya uzunluklarını destekler.
+Bu işlevlerin çeşitlemeleri 32 bit veya 64 bit zaman türlerini ve 32-bit veya 64-bit dosya boyutlarını destekler. İlk sayısal sonek (**32** veya **64**), zaman türünün boyutunu belirtir; İkinci sonek **i32** veya **i64**' dir ve dosya boyutunun 32-bit veya 64 bit tam sayı olarak temsil edilip edilmeyeceğini gösterir. Hangi sürümlerin 32-bit ve 64 bit zaman türlerini ve dosya boyutlarını desteklediği hakkında bilgi için aşağıdaki tabloya bakın. **İ32** veya **i64** son eki, zaman türünün boyutuyla aynıysa atlanır, bu nedenle **_findfirst64** Ayrıca 64 bitlik dosya uzunluklarını destekler ve **_findfirst32** yalnızca 32 bit dosya uzunluklarını destekler.
 
-Bu *işlevler, fileinfo* parametresi için **_finddata_t** yapısının çeşitli biçimlerini kullanır. Yapı hakkında daha fazla bilgi için [Dosya Adı Arama Fonksiyonları'na](../../c-runtime-library/filename-search-functions.md)bakın.
+Bu işlevler, *FileInfo* parametresi için **_finddata_t** yapısının çeşitli biçimlerini kullanır. Yapı hakkında daha fazla bilgi için bkz. [dosya adı arama işlevleri](../../c-runtime-library/filename-search-functions.md).
 
-64 bit zaman türü kullanan varyasyonlar, dosya oluşturma tarihlerinin 23:59:59, 31 Aralık 3000, UTC'ye kadar ifade edilmesini sağlar. 32 bit saat türleri kullananlar tarihleri yalnızca 23:59:59'a kadar temsil ediyor 18 Ocak 2038, UTC. Midnight, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırıdır.
+64 bitlik bir zaman türü kullanan Çeşitlemeler, dosya oluşturma tarihlerinin 23:59:59, 31 Aralık 3000, UTC 'ye kadar ifade edilmesi için izin sağlar. 32 bitlik zaman türleri kullanan olanlar yalnızca 23:59:59 Ocak 2038 ve UTC tarihleri arasında tarihleri temsil eder. Gece yarısı, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırdır.
 
-Zaman boyutunu açıkça belirten sürümleri kullanmak için özel bir nedeniniz yoksa, **_findfirst** veya **_wfindfirst** kullanın veya 3 GB'tan büyük dosya boyutlarını desteklemeniz **gerekiyorsa, _findfirsti64** veya **_wfindfirsti64**kullanın. Tüm bu işlevler 64 bit zaman türünü kullanır. Önceki sürümlerde, bu işlevler 32 bitlik bir zaman türü kullanmİş. Bu, bir uygulama için bir kesme değişikliğiyse, eski davranışa geri dönmek için **_USE_32BIT_TIME_T** tanımlayabilirsiniz. **_USE_32BIT_TIME_T** tanımlanırsa, **_findfirst,** **_finfirsti64**ve bunların karşılık gelen Unicode sürümleri 32 bit lik bir süre kullanır.
+Zaman boyutunu açıkça belirten sürümleri kullanmak için belirli bir nedeniniz yoksa **_findfirst** veya **_wfindfirst** kullanın veya 3 GB 'tan büyük dosya boyutlarını desteklemeniz gerekiyorsa, **_findfirsti64** veya **_wfindfirsti64**kullanın. Tüm bu işlevler 64 bitlik saat türünü kullanır. Önceki sürümlerde, bu işlevler 32 bitlik bir zaman türü kullandı. Bu bir uygulama için önemli bir değişiklik ise eski davranışa dönmek için **_USE_32BIT_TIME_T** tanımlayabilirsiniz. **_USE_32BIT_TIME_T** tanımlanmışsa, **_findfirst**, **_Finfirsti64**ve bunlara karşılık gelen Unicode sürümleri 32 bitlik bir süre kullanır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
-### <a name="time-type-and-file-length-type-variations-of-_findfirst"></a>_findfirst Zaman Türü ve Dosya Uzunluğu Tür Varyasyonları
+### <a name="time-type-and-file-length-type-variations-of-_findfirst"></a>_Findfirst için zaman türü ve dosya uzunluğu türü çeşitleri
 
-|İşlevler|**tanımlanmış _USE_32BIT_TIME_T?**|Zaman türü|Dosya uzunluğu türü|
+|İşlevler|**_USE_32BIT_TIME_T** tanımlandı mı?|Zaman türü|Dosya uzunluğu türü|
 |---------------|----------------------------------|---------------|----------------------|
 |**_findfirst**, **_wfindfirst**|Tanımlı değil|64 bit|32 bit|
-|**_findfirst**, **_wfindfirst**|Tanımlanan|32 bit|32 bit|
-|**_findfirst32**, **_wfindfirst32**|Makro tanımından etkilenmez|32 bit|32 bit|
-|**_findfirst64**, **_wfindfirst64**|Makro tanımından etkilenmez|64 bit|64 bit|
+|**_findfirst**, **_wfindfirst**|Tanımlı|32 bit|32 bit|
+|**_findfirst32**, **_wfindfirst32**|Makro tanımından etkilenmedi|32 bit|32 bit|
+|**_findfirst64**, **_wfindfirst64**|Makro tanımından etkilenmedi|64 bit|64 bit|
 |**_findfirsti64**, **_wfindfirsti64**|Tanımlı değil|64 bit|64 bit|
-|**_findfirsti64**, **_wfindfirsti64**|Tanımlanan|32 bit|64 bit|
-|**_findfirst32i64**, **_wfindfirst32i64**|Makro tanımından etkilenmez|32 bit|64 bit|
-|**_findfirst64i32**, **_wfindfirst64i32**|Makro tanımından etkilenmez|64 bit|32 bit|
+|**_findfirsti64**, **_wfindfirsti64**|Tanımlı|32 bit|64 bit|
+|**_findfirst32i64**, **_wfindfirst32i64**|Makro tanımından etkilenmedi|32 bit|64 bit|
+|**_findfirst64i32**, **_wfindfirst64i32**|Makro tanımından etkilenmedi|64 bit|32 bit|
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -243,22 +243,22 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_findfirst**|\<io.h>|
-|**_findfirst32**|\<io.h>|
-|**_findfirst64**|\<io.h>|
-|**_findfirsti64**|\<io.h>|
-|**_findfirst32i64**|\<io.h>|
-|**_findfirst64i32**|\<io.h>|
-|**_wfindfirst**|\<io.h> \<veya wchar.h>|
-|**_wfindfirst32**|\<io.h> \<veya wchar.h>|
-|**_wfindfirst64**|\<io.h> \<veya wchar.h>|
-|**_wfindfirsti64**|\<io.h> \<veya wchar.h>|
-|**_wfindfirst32i64**|\<io.h> \<veya wchar.h>|
-|**_wfindfirst64i32**|\<io.h> \<veya wchar.h>|
+|**_findfirst**|\<GÇ. h>|
+|**_findfirst32**|\<GÇ. h>|
+|**_findfirst64**|\<GÇ. h>|
+|**_findfirsti64**|\<GÇ. h>|
+|**_findfirst32i64**|\<GÇ. h>|
+|**_findfirst64i32**|\<GÇ. h>|
+|**_wfindfirst**|\<GÇ. h> veya \<wchar. h>|
+|**_wfindfirst32**|\<GÇ. h> veya \<wchar. h>|
+|**_wfindfirst64**|\<GÇ. h> veya \<wchar. h>|
+|**_wfindfirsti64**|\<GÇ. h> veya \<wchar. h>|
+|**_wfindfirst32i64**|\<GÇ. h> veya \<wchar. h>|
+|**_wfindfirst64i32**|\<GÇ. h> veya \<wchar. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sistem Aramaları](../../c-runtime-library/system-calls.md)<br/>
-[Dosya Adı Arama Fonksiyonları](../../c-runtime-library/filename-search-functions.md)<br/>
+[Sistem çağrıları](../../c-runtime-library/system-calls.md)<br/>
+[Dosya adı arama Işlevleri](../../c-runtime-library/filename-search-functions.md)<br/>
