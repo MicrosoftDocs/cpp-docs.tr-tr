@@ -20,7 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -37,16 +37,16 @@ helpviewer_keywords:
 - exp2f function
 - exp2l function
 ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
-ms.openlocfilehash: a5df1a216b4565f013a4c42b4ef4369b5b7f9b04
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3a80efab34b45348ca00f09b2fd6e2ea5077fd86
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81347578"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82909645"
 ---
 # <a name="exp2-exp2f-exp2l"></a>exp2, exp2f, exp2l
 
-Belirtilen değere yükseltilen 2'yi hesaplar.
+2 ' nin belirtilen değere göre oluşturulan hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,37 +74,37 @@ long double exp2l(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Üs değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, *x'in*baz-2 üslerini, yani 2<sup>x'i döndürür.</sup> Aksi takdirde, aşağıdaki değerlerden birini döndürür:
+Başarılı olursa, *x*'nin taban 2 üssün, yani 2<sup>x</sup>döndürür. Aksi takdirde, aşağıdaki değerlerden birini döndürür:
 
-|Sorun|Dönüş|
+|Sorun|Döndürülmesini|
 |-----------|------------|
-|*x* = ±0|1|
-|*x* = -SONSUZLUK|+0|
-|*x* = +SONSUZLUK|+SONSUZLUK|
-|*x* = NaN|NaN|
-|Taşma aralığı hatası|+HUGE_VAL, +HUGE_VALF veya +HUGE_VALL|
-|Akış altı aralığı hatası|Doğru sonuç, yuvarlama sonra|
+|*x* = ± 0|1|
+|*x* =-sonsuzluk|+ 0|
+|*x* = + sonsuzluk|+ SONSUZLUK|
+|*x* = Nan|NaN|
+|Taşma aralığı hatası|+ HUGE_VAL, + HUGE_VALF veya + HUGE_VALL|
+|Yetersiz yer aralığı hatası|Yuvarlama sonrasında doğru sonuç|
 
-Hatalar [_matherr](matherr.md)belirtildiği gibi bildirilir.
+Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **uzun çift** türleri alan ve döndüren aşırı **exp2** yüklerini arayabilirsiniz. Bir C programında, **exp2** her zaman alır ve bir **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long Double** türlerini alıp döndüren **exp2** aşırı yüklerini çağırabilirsiniz. C programında, **exp2** her zaman bir **Double**alır ve döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**exp**, **expf**, **expl**|\<math.h>|\<cmath>|
+|**Exp**, **expf**, **expl**|\<Math. h>|\<cmath>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

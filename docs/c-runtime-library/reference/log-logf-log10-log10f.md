@@ -22,7 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -46,12 +46,12 @@ helpviewer_keywords:
 - logf function
 - logarithms
 ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
-ms.openlocfilehash: ab6f2654e9e647f140d5c579087b76001b317887
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0acfbefb1fb01215e543538b9fdb8d554b10f8c1
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81341869"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82911475"
 ---
 # <a name="log-logf-logl-log10-log10f-log10l"></a>log, logf, logl, log10, log10f, log10l
 
@@ -77,34 +77,34 @@ long double log10( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-Logaritma bulunan değer.
+*sayı*<br/>
+Logaritmanın bulunduğu değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Günlük** işlevleri başarılı olursa *x'in* doğal logaritmasını (baz *e)* döndürer. **Log10** işlevleri base-10 logaritma döndürün. *x* negatifse, bu işlevler varsayılan olarak belirsiz (IND) döndürer. *x* 0 ise, sonsuz (INF) döndürün.
+**Günlük** işlevleri, başarılı olursa *x* 'in doğal logaritmasını ( *e*tabanı) döndürür. **Log10** işlevleri, 10 tabanında logaritmasını döndürür. *X* negatifse, bu işlevler varsayılan olarak sonsuz (IND) döndürür. *X* 0 ise sonsuz (INF) döndürür.
 
-|Girdi|SEH Özel Durumu|Matherr İstisnası|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± QNAN, IND|yok|_DOMAIN|
-|± 0|SIFIR BÖL|_SING|
+|± 0|SıFıR bölme|_SING|
 |*x* < 0|Geçersiz|_DOMAIN|
 
-**log** ve **log10'** un Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulaması vardır. SSE2 uygulamasını kullanma yla ilgili bilgi ve kısıtlamalar için [_set_SSE2_enable](set-sse2-enable.md) bakın.
+**log** ve **log10** , Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahiptir. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verir, böylece **float** veya **uzun çift** değerleri alan ve döndüren **günlük** ve **log10** yüklerini arayabilirsiniz. Bir C programında, **günlük** ve **log10** her zaman almak ve bir **çift**dönmek .
+C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long Double** değerleri alıp döndüren **log** ve **log10** aşırı yüklerini çağırabilirsiniz. C programında, **log** ve **log10** her zaman bir **Double**alır ve döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**log**, **logf**, **logl**, **log10**, **log10f**, **log10l**|\<math.h>|
+|**log**, **logf**, **logl**, **log10**, **log10f**, **log10l**|\<Math. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -135,7 +135,7 @@ log( 9000.00 ) = 9.104980
 log10( 9000.00 ) = 3.954243
 ```
 
-Diğer bazlar için logaritma oluşturmak için matematiksel ilişkiyi kullanın: a == doğal günlük (a) / doğal günlük (b) günlük tabanı b.
+Diğer tabanlara yönelik logaritmalar oluşturmak için, bir = = doğal günlüğü (a)/doğal günlüğün (b) günlük tabanı b ' nı kullanın.
 
 ```cpp
 // logbase.cpp

@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -35,16 +35,16 @@ helpviewer_keywords:
 - tanhf function
 - trigonometric functions
 - hyperbolic functions
-ms.openlocfilehash: 626252285a11ae4cbcb8bd2e5658512b85bfd3d3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d368f9ca99753e0749fe3c77a512c0d0c8975161
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81362623"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82912293"
 ---
 # <a name="tanh-tanhf-tanhl"></a>tanh, tanhf, tanhl
 
-Hiperbolik teğeti hesaplar.
+Hiperbolik tanjantı hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,30 +61,30 @@ long double tanh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-Radyanlarda açı.
+*sayı*<br/>
+Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Döndürülen değer
 
-**Tanh** fonksiyonları *x*hiperbolik teğet dönmek . Hata iadesi yok.
+**Tanh** işlevleri *x*'in hiperbolik tanjantını döndürür. Hata döndürme yok.
 
-|Girdi|SEH Özel Durumu|**Matherr** Özel durum|
+|Giriş|SEH özel durumu|**Matherr** Duruma|
 |-----------|-------------------|-------------------------|
-|± QNAN,IND|yok|_DOMAIN|
+|± QNAN, IND|yok|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **uzun** **çift** değerleri alan ve döndüren aşırı **tanh** yüklerini arayabilirsiniz. Bir C programında, **tanh** her zaman alır ve **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerleri alıp döndüren **tanjanh** aşırı yüklerini çağırabilirsiniz. C programında, **tanh** her zaman **Double**alır ve döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgi (C)|Gerekli üstbilgi (C)|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C)|
 |-------------|---------------------|-|
-|**tanh**, **tanhf**, **tanhl**|\<math.h>|\<cmath> \<veya math.h>|
+|**tanh**, **tanhf**, **tanhl**|\<Math. h>|\<cmath> veya \<Math. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -39,16 +39,16 @@ helpviewer_keywords:
 - _tstrtime function
 - time, copying
 ms.assetid: 9e538161-cf49-44ec-bca5-c0ab0b9e4ca3
-ms.openlocfilehash: 827e5a579d801c12b932440fcbbaa18343ad7ece
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7d9752ff9eb1fd7a4fa08c2a6ab89fefe456dad1
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81316875"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82910916"
 ---
 # <a name="_strtime-_wstrtime"></a>_strtime, _wstrtime
 
-Zamanı arabelleğe kopyalayın. Bu işlevlerin daha güvenli sürümleri mevcuttur; [_strtime_s, _wstrtime_s](strtime-s-wstrtime-s.md)bakın.
+Süreyi bir arabelleğe kopyalayın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_strtime_s, _wstrtime_s](strtime-s-wstrtime-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,26 +71,26 @@ wchar_t *_wstrtime(
 
 ### <a name="parameters"></a>Parametreler
 
-*keztr*<br/>
-Zaman telli.
+*timestr*<br/>
+Zaman dizesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçiyi ortaya çıkan karakter dize *timestr'ına*döndürür.
+Sonuç karakter dizesi *timestr*için bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_strtime** işlevi, geçerli yerel saati *zamantr*tarafından işaret edilen arabelleğe kopyalar. Saat **hh:mm:ss olarak biçimlendirilir hh:mm:ss** **24** saatlik gösterimde saati temsil eden iki basamak, **mm** saati geçen dakikayı temsil eden iki basamak ve **ss** saniyeyi temsil eden iki basamaktır. Örneğin, **dize 18:23:44** 23 dakika ve 44 saniye 18:00 geçmiş temsil eder. Arabellek en az 9 bayt uzunluğunda olmalıdır.
+**_Strtime** işlevi, geçerli yerel saati *timestr*tarafından işaret edilen arabelleğe kopyalar. Süre SS **: DD: ss** olarak biçimlendirilir; burada **SS** , 24 saatlik gösterimde saati temsil eden iki haneye, **mm** , saati geçen dakikaları temsil eden iki haneye ve **nn** saniyeyi temsil eden iki haneye sahiptir. Örneğin, **18:23:44** dizesi 23 dakika ve 44 saniye içinde 6 P.M. temsil eder Arabellek en az 9 bayt uzunluğunda olmalıdır.
 
-**_wstrtime** **_strtime**geniş karakterli bir versiyonudur; _wstrtime bağımsız değişkeni **_wstrtime** ve geri dönüş değeri geniş karakterli dizeleridir. Bu işlevler aynı şekilde başka türlü çalışır. *Timestr* bir **NULL** işaretçisiyse veya *timestr* yanlış biçimlendirilmişse, geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Özel durum devam etmesine izin verilirse, *timestr* yanlış biçimlendirilmişse, bu **NULL** işlevler bir **NULL** döndürer ve **EINVAL'a** **ERANGE** *timestr* **errno** ayarlar. **errno**
+**_wstrtime** , **_strtime**geniş karakterli bir sürümüdür; **_wstrtime** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır. *Timestr* **null** işaretçisiyse veya *timestr* yanlış biçimlendirildiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Özel durumun devam etmesine izin *timestr* veriliyorsa, bu işlevler **null** döndürür ve *timestr* **null** ise, errno olarak **EINVAL** **olarak ayarlanır** . **errno** **ERANGE**
 
-C++'da, bu işlevlerin daha yeni ve güvenli karşıtlarını çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
+C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tstrtime**|**_strtime**|**_strtime**|**_wstrtime**|
 
@@ -98,10 +98,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strtime**|\<time.h>|
-|**_wstrtime**|\<time.h> \<veya wchar.h>|
+|**_strtime**|\<Time. h>|
+|**_wstrtime**|\<Time. h> veya \<wchar. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

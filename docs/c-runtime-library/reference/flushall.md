@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -29,16 +29,16 @@ helpviewer_keywords:
 - streams, flushing
 - _flushall function
 ms.assetid: 2cd73562-6d00-4ca2-b13c-80d0ae7870b5
-ms.openlocfilehash: 93181c0fe941a1c5e259e706771495666329bcb3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1a53eeedd5dfa0f9c01fa5883a9db33e26e3ea17
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81346616"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82911618"
 ---
 # <a name="_flushall"></a>_flushall
 
-Tüm akışları temizler; tüm arabellekleri temizler.
+Tüm akışları temizler; Tüm arabellekleri temizler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,27 +48,27 @@ int _flushall( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_flushall** açık akış (giriş ve çıkış) sayısını döndürür. Hata iadesi yok.
+**_flushall** , açık akışlar (giriş ve çıkış) sayısını döndürür. Hata döndürme yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, **_flushall** işlevi uygun dosyalara açık çıktı akışları ile ilişkili tüm arabelleklerin içeriğini yazar. Açık giriş akışlarıyla ilişkili tüm arabellekler geçerli içeriklerinden temizlenir. (Bu arabellekler normalde, verileri diske otomatik olarak yazmak için en uygun zamanı belirleyen işletim sistemi tarafından korunur: arabellek dolduğunda, bir akış kapatıldığında veya bir program akışları kapatmadan normal olarak sona erdiğinde.)
+Varsayılan olarak **_flushall** işlevi, açık çıkış akışlarıyla ilişkili tüm arabelleklerin içeriğini uygun dosyalara yazar. Açık giriş akışlarıyla ilişkili tüm arabellekler geçerli içeriklerinin işaretini temizlemez. (Bu arabellekler normalde işletim sistemi tarafından korunur. Bu, verilerin diske otomatik olarak yazılması için en iyi zamanı belirler: bir arabellek dolduğunda, bir akış kapatıldığında veya bir program normal olarak akışları kapatmadan sonlandırıldığında.)
 
-Bir okuma **_flushall**için bir çağrı izler, yeni veri arabellekleri içine giriş dosyalarından okunur. tüm akışlar **_flushall'a**yapılan çağrıdan sonra açık kalır.
+Bir okuma **_flushall**bir çağrıyı izliyorsa, yeni veriler giriş dosyalarından arabelleklere okundu. **_Flushall**çağrısından sonra tüm akışlar açık kalır.
 
-Çalışma zamanı kitaplığı'nın diske işleme özelliği, kritik verilerin işletim sistemi arabelleklerine değil, doğrudan diske yazılmasını sağlamanızı sağlar. Varolan bir programı yeniden yazmadan, programın nesne dosyalarını Commode.obj ile bağlayarak bu özelliği etkinleştirebilirsiniz. Ortaya çıkan yürütülebilir dosyada, tüm arabelleklerin içeriğini diske yazmak **_flushall** için yapılan çağrılar. Commode.obj sadece **_flushall** ve [fflush](fflush.md) etkilenir.
+Çalışma zamanı kitaplığının diske kaydet özelliği, kritik verilerin işletim sistemi arabellekleri yerine doğrudan diske yazılmasını sağlamanıza olanak tanır. Mevcut bir programı yeniden yazmadan, programın nesne dosyalarını Commode. obj ile bağlayarak bu özelliği etkinleştirebilirsiniz. Elde edilen yürütülebilir dosyada, tüm arabelleklerin içeriğini diske yazmak **_flushall** için çağırır. Yalnızca **_flushall** ve [fflush](fflush.md) , Commode. obj tarafından etkilendi.
 
-Commit-to-disk özelliğini denetleme hakkında bilgi için [Bkz. Stream G/Ç](../../c-runtime-library/stream-i-o.md), [fopen](fopen-wfopen.md)ve [_fdopen.](fdopen-wfdopen.md)
+Diske işleme özelliğini denetleme hakkında daha fazla bilgi için bkz. [akış g/ç](../../c-runtime-library/stream-i-o.md), [fopen](fopen-wfopen.md)ve [_fdopen](fdopen-wfdopen.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_flushall**|\<stdio.h>|
+|**_flushall**|\<stdio. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -94,7 +94,7 @@ There were 3 streams flushed
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_commit](commit.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [fflush](fflush.md)<br/>

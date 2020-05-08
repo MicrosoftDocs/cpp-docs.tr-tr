@@ -24,7 +24,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -57,12 +57,12 @@ helpviewer_keywords:
 - _fstati64 function
 - fstat32i64 function
 ms.assetid: 088f5e7a-9636-4cf7-ab8e-e28d2aa4280a
-ms.openlocfilehash: 02d297fec2ada545a8b693abacfecc7981149dae
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 81c272187c681010e7b8560d43f2fad87e1e0fdc
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81345666"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82910132"
 ---
 # <a name="_fstat-_fstat32-_fstat64-_fstati64-_fstat32i64-_fstat64i32"></a>_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
 
@@ -99,68 +99,68 @@ int _fstat64i32(
 
 ### <a name="parameters"></a>Parametreler
 
-*Fd*<br/>
+*FD*<br/>
 Açık dosyanın dosya tanımlayıcısı.
 
-*Arabellek*<br/>
-Sonuçları depolamak için yapıyı işaretçi.
+*arabelleğin*<br/>
+Sonuçları depolayacak yapıya yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosya durumu bilgileri elde edilirse 0 döndürür. -1'in geri dönüş değeri bir hatayı gösterir. Dosya tanımlayıcısı geçersizse veya *arabellek* **NULL**ise, Geçersiz parametre işleyicisi [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütme devam etmesine izin verilirse, **errno** **EBADF**ayarlanır , geçersiz bir dosya tanımlayıcı durumunda, ya da **EINVAL**için , *arabellek* **NULL**ise .
+Dosya durum bilgileri elde edilmişse 0 döndürür. -1 ' in dönüş değeri bir hatayı gösterir. Dosya tanımlayıcısı geçersizse veya *buffer* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** değeri **EBADF**olarak ayarlanır, geçersiz bir dosya tanımlayıcısı durumunda ya da *buffer* **null**ise **EINVAL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_fstat** işlevi *fd* ile ilişkili açık dosya hakkında bilgi alır ve *arabellek*tarafından işaret edilen yapıda depolar. SYS\Stat.h'de tanımlanan **_stat** yapısı aşağıdaki alanları içerir.
+**_Fstat** işlevi *FD* ile ilişkili açık dosya hakkındaki bilgileri alır ve *arabelleğe*göre işaret eden yapıda depolar. SYS\Stat.h içinde tanımlanan **_stat** yapısı aşağıdaki alanları içerir.
 
 |Alan|Anlamı|
 |-|-|
-| **st_atime** | Son dosya erişim zamanı. |
-| **st_ctime** | Dosyanın oluşturulmama zamanı. |
-| **st_dev** | Eğer bir cihaz, *fd*; aksi takdirde 0. |
-| **st_mode** | Dosya modu bilgileri için bit maskesi. *fd* bir aygıta başvuruyorsa **_S_IFCHR** biti ayarlanır. *fd* sıradan bir dosyaya başvuruyorsa **_S_IFREG** biti ayarlanır. Okuma/yazma bitleri dosyanın izin moduna göre ayarlanır. **_S_IFCHR** ve diğer sabitler SYS\Stat.h'de tanımlanır. |
-| **st_mtime** | Dosyanın son modifikasyonunun zamanı. |
+| **st_atime** | Son dosya erişiminin saati. |
+| **st_ctime** | Dosya oluşturma zamanı. |
+| **st_dev** | Bir cihaz ise, *FD*; Aksi takdirde 0. |
+| **st_mode** | Dosya modu bilgileri için bit maskesi. **_S_IFCHR** bit, *FD* bir cihaza başvuruyorsa ayarlanır. **_S_IFREG** bit, *FD* sıradan bir dosyaya başvuruyorsa ayarlanır. Okuma/yazma bitleri dosyanın izin moduna göre ayarlanır. **_S_IFCHR** ve diğer sabitler Sys\stat.exe içinde tanımlanmıştır. |
+| **st_mtime** | Dosyanın son değiştirilme zamanı. |
 | **st_nlink** | NTFS olmayan dosya sistemlerinde her zaman 1. |
-| **st_rdev** | Eğer bir cihaz, *fd*; aksi takdirde 0. |
-| **st_size** | Baytlar halindeki dosyanın boyutu. |
+| **st_rdev** | Bir cihaz ise, *FD*; Aksi takdirde 0. |
+| **st_size** | Dosyanın bayt cinsinden boyutu. |
 
-*FD* bir aygıta başvuruyorsa, **st_atime**, **st_ctime,** **st_mtime**ve **st_size** alanları anlamlı değildir.
+*FD* bir cihaza başvuruyorsa, **st_atime**, **st_ctime**, **st_mtime**ve **st_size** alanları anlamlı değildir.
 
-Stat.h, Types.h'de tanımlanan [_dev_t](../../c-runtime-library/standard-types.md) türünü kullandığından, Code'a Stat.h'den önce Types.h'yi eklemeniz gerekir.
+Stat. h, Types. h içinde tanımlanan [_dev_t](../../c-runtime-library/standard-types.md) türünü kullandığından, kodunuzda stat. h öncesinde Types. h dahil etmeniz gerekir.
 
-**__stat64** yapısını kullanan **_fstat64,** dosya oluşturma tarihlerinin 23:59:59, 31 Aralık 3000, UTC' ye kadar ifade edilmesine izin verir; diğer işlevler sadece 23:59:59 18 Ocak 2038, UTC tarihleri temsil ederken. Midnight, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırıdır.
+**__stat64** yapısını kullanan **_fstat64**, dosya oluşturma tarihlerinin 23:59:59, 31 Aralık 3000, UTC; tarihine kadar ifade etmesine olanak tanır. diğer işlevler yalnızca 18 Ocak 2038, UTC 'den 23:59:59 arası tarihleri temsil eder. Gece yarısı, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırdır.
 
-Bu işlevlerin varyasyonları 32 bit veya 64 bit zaman türlerini ve 32-bit veya 64 bit dosya uzunluklarını destekler. İlk sayısal sonek (**32** veya **64**) kullanılan zaman türünün boyutunu gösterir; ikinci sonek, dosya boyutunun 32 bit veya 64 bit tamsayı olarak temsil edilip edilmediğini belirten **i32** veya **i64'tür.**
+Bu işlevlerin çeşitlemeleri 32 bit veya 64 bit zaman türlerini ve 32-bit veya 64-bit dosya uzunluklarını destekler. İlk sayısal sonek (**32** veya **64**) kullanılan zaman türü boyutunu belirtir; İkinci sonek, dosya boyutunun 32-bit veya 64 bit tamsayı olarak temsil edilip edilmeyeceğini gösteren **i32** veya **i64**.
 
-**_fstat** **_fstat64i32**eşdeğerdir ve **_stat 64** bitlik bir süre **içerir.** **bu, _USE_32BIT_TIME_T** tanımlanmadıkça doğrudur ve bu durumda eski davranış geçerlidir; **_fstat** 32 bit lik bir süre kullanır ve **_stat 32** bitlik bir süre **içerir.** Aynı **_fstati64**için de geçerlidir.
+**_fstat** **_fstat64i32**eşdeğerdir ve **struct** **_stat** 64 bitlik bir süre içerir. **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe bu durum geçerlidir; bu durumda eski davranış geçerli olur; **_fstat** 32 bitlik bir zaman kullanır ve **Yapı** **_stat** 32 bit bir zaman içerir. Aynı, **_fstati64**için de geçerlidir.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
-### <a name="time-type-and-file-length-type-variations-of-_stat"></a>_stat Zaman Türü ve Dosya Uzunluğu Tür Varyasyonları
+### <a name="time-type-and-file-length-type-variations-of-_stat"></a>_Stat için zaman türü ve dosya uzunluğu türü çeşitleri
 
-|İşlevler|_USE_32BIT_TIME_T tanımlanmış?|Zaman türü|Dosya uzunluğu türü|
+|İşlevler|_USE_32BIT_TIME_T tanımlandı mı?|Zaman türü|Dosya uzunluğu türü|
 |---------------|------------------------------------|---------------|----------------------|
 |**_fstat**|Tanımlı değil|64 bit|32 bit|
-|**_fstat**|Tanımlanan|32 bit|32 bit|
-|**_fstat32**|Makro tanımından etkilenmez|32 bit|32 bit|
-|**_fstat64**|Makro tanımından etkilenmez|64 bit|64 bit|
+|**_fstat**|Tanımlı|32 bit|32 bit|
+|**_fstat32**|Makro tanımından etkilenmedi|32 bit|32 bit|
+|**_fstat64**|Makro tanımından etkilenmedi|64 bit|64 bit|
 |**_fstati64**|Tanımlı değil|64 bit|64 bit|
-|**_fstati64**|Tanımlanan|32 bit|64 bit|
-|**_fstat32i64**|Makro tanımından etkilenmez|32 bit|64 bit|
-|**_fstat64i32**|Makro tanımından etkilenmez|64 bit|32 bit|
+|**_fstati64**|Tanımlı|32 bit|64 bit|
+|**_fstat32i64**|Makro tanımından etkilenmedi|32 bit|64 bit|
+|**_fstat64i32**|Makro tanımından etkilenmedi|64 bit|32 bit|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fstat**|\<sys/stat.h> \<ve sys/types.h>|
-|**_fstat32**|\<sys/stat.h> \<ve sys/types.h>|
-|**_fstat64**|\<sys/stat.h> \<ve sys/types.h>|
-|**_fstati64**|\<sys/stat.h> \<ve sys/types.h>|
-|**_fstat32i64**|\<sys/stat.h> \<ve sys/types.h>|
-|**_fstat64i32**|\<sys/stat.h> \<ve sys/types.h>|
+|**_fstat**|\<sys/stat. h> ve \<sys/Types. h>|
+|**_fstat32**|\<sys/stat. h> ve \<sys/Types. h>|
+|**_fstat64**|\<sys/stat. h> ve \<sys/Types. h>|
+|**_fstati64**|\<sys/stat. h> ve \<sys/Types. h>|
+|**_fstat32i64**|\<sys/stat. h> ve \<sys/Types. h>|
+|**_fstat64i32**|\<sys/stat. h> ve \<sys/Types. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -229,8 +229,8 @@ Time modified : Wed May 07 15:25:11 2003
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya Işleme](../../c-runtime-library/file-handling.md)<br/>
+[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
 [_access, _waccess](access-waccess.md)<br/>
 [_chmod, _wchmod](chmod-wchmod.md)<br/>
 [_filelength, _filelengthi64](filelength-filelengthi64.md)<br/>
-[_stat, _wstat Fonksiyonlar](stat-functions.md)<br/>
+[_stat, _wstat Işlevleri](stat-functions.md)<br/>

@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -30,16 +30,16 @@ helpviewer_keywords:
 - _unlock_file function
 - unlocking files
 ms.assetid: cf380a51-6d3a-4f38-bd64-2d4fb57b4369
-ms.openlocfilehash: 46d07a8b3645ae0d68276d96271be0a246716f0b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ed79f66baebf71c89e537c8343779bef44ebfbb8
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81361216"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82909200"
 ---
 # <a name="_unlock_file"></a>_unlock_file
 
-Diğer işlemlerin dosyaya erişmesine izin vererek bir dosyanın kilidini açar.
+Bir dosyanın kilidini açarak diğer işlemlerin dosyaya erişmesine izin verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,26 +51,26 @@ void _unlock_file(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya*<br/>
-Dosya tutamacı.
+*dosyasýný*<br/>
+Dosya tanıtıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_unlock_file** *işlevi, dosya*tarafından belirtilen dosyanın kilidini açar. Bir dosyanın kilidini açmak, dosyaya diğer işlemlertarafından erişilmesine olanak tanır. **_lock_file** daha önce *dosya* işaretçisi üzerinde çağrıldısürece bu işlev çağrılmamalıdır. Kilitli olmayan bir dosyada **_unlock_file** aramak çıkmaza neden olabilir. Örneğin, [bkz. _lock_file.](lock-file.md)
+**_Unlock_file** işlevi *Dosya*tarafından belirtilen dosyanın kilidini açar. Bir dosyanın kilidini açmak, diğer işlemlere göre dosyaya erişim sağlar. Bu işlev, **_lock_file** daha önce *Dosya* İşaretçisinde çağrılmadığı müddetçe çağrılmamalıdır. Kilitli olmayan bir dosyada **_unlock_file** çağırmak kilitlenmeye neden olabilir. Bir örnek için bkz. [_lock_file](lock-file.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_unlock_file**|\<stdio.h>|
+|**_unlock_file**|\<stdio. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya Işleme](../../c-runtime-library/file-handling.md)<br/>
+[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>
 [_lock_file](lock-file.md)<br/>

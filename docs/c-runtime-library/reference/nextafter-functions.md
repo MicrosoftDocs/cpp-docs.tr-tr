@@ -29,7 +29,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -59,16 +59,16 @@ helpviewer_keywords:
 - nexttowardf function
 - nexttowardl function
 ms.assetid: 9785bfb9-de53-4bd0-9637-f05fa0c1f6ab
-ms.openlocfilehash: 7b1416147ed000dd3dd9a13bd52e41a474a8e9d5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b137fd131536da6b8630b9cadf69238ce48964bf
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338560"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82909333"
 ---
 # <a name="nextafter-nextafterf-nextafterl-_nextafter-_nextafterf-nexttoward-nexttowardf-nexttowardl"></a>nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
 
-Sonraki temsil edilebilir kayan nokta değerini döndürür.
+Sonraki gösterilemeyen kayan noktalı değeri döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -95,34 +95,34 @@ long double nexttoward( long double x, long double y ); /* C++ only, requires <c
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-Başlangıç için kayan nokta değeri.
+*sayı*<br/>
+Başlangıçtan başlamak için kayan nokta değeri.
 
-*Y*<br/>
-Doğru gitmek için kayan nokta değeri.
+*Iz*<br/>
+Doğru gidilecek kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-X'ten *sonra* dönüş türünün bir sonraki temsil edilebilir kayan nokta değerini *y*yönünde verir. *x* ve *y* eşitse, işlev *y*döndürür , dönüş türüne dönüştürülür, özel durum tetiklenmeden. *X* *y*'ye eşit değilse ve sonuç normal veya sıfır ise, **FE_UNDERFLOW** ve **FE_INEXACT** kayan nokta özel durum ları ayarlanır ve doğru sonuç döndürülür. *X* veya *y* NAN ise, dönüş değeri giriş NN'lerden biridir. *X* sonluysa ve sonuç sonsuzsa veya türde temsil edilemezse, doğru imzalanmış bir sonsuzluk veya NAN döndürülür, **FE_OVERFLOW** ve **FE_INEXACT** kayan nokta özel durum durumları ayarlanır ve **errno** **ERANGE**olarak ayarlanır.
+*Y*yönünde *x* öğesinden sonra dönüş türünün sonraki gösterilemeyen kayan nokta değerini döndürür. *X* ve *y* eşitse, işlev bir özel durum Tetiklenmeyen, dönüş türüne dönüştürülmüş *y*döndürür. *X* *y*'ye eşit değilse ve sonuç bir denormal veya sıfır ise, **FE_UNDERFLOW** ve **FE_INEXACT** kayan nokta özel durum durumları ayarlanır ve doğru sonuç döndürülür. *X* veya *y* bir NaN ise, dönüş değeri, giriş nans 'lardan biridir. *X* sınırlı ise ve sonuç türden sonsuz veya gösterilemeyen bir tablo değilse, doğru imzalı bir sonsuz veya NaN döndürülür, **FE_OVERFLOW** ve **FE_INEXACT** kayan nokta özel durum durumları ayarlanır ve **errno** , **ERANGE**olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sonraki** ve **sonraki işlev** aileleri *eşdeğerdir, y*parametre türü hariç. *x* ve *y* eşitse, döndürülen değer *y* dönüş türüne dönüştürülür.
+*Y*parametre türü dışında, **nextafter** ve **NexTTo** işlev aileleri eşdeğerdir. *X* ve *y* eşitse, döndürülen değer *y* , dönüş türüne dönüştürülür.
 
-C++ aşırı yüklemeye izin \<verdiği için, cmath> eklerseniz, **sonraki** **ve** sonraki gelen aşırı yükleri çağırabilirsiniz bu return **float** ve **uzun** **çift** türleri. C programında, **sonraki** ve **sonraki doğru her** zaman **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden \<, cmath> eklerseniz, bu Return **float** ve **Long** **Double** türlerine doğru **nextafter** ve **nextaşırı** yüklerini çağırabilirsiniz. C programında, **nextafter** ve **Next,** her zaman **Double**döndürür.
 
-**_nextafter** ve **_nextafterf** işlevleri Microsoft'a özgüdir. **_nextafterf** işlevi yalnızca x64 için derlenirken kullanılabilir.
+**_Nextafter** ve **_nextafterf** işlevleri Microsoft 'a özgüdür. **_Nextafterf** işlevi yalnızca x64 için derlerken kullanılabilir.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgi (C)|Gerekli üstbilgi (C++)|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------------|-------------------------------|
-|**nextafter**, **nextafterf**, **nextafterl**, **_nextafterf**, **nexttowardf**, **nexttowardf**, **nexttowardl**|\<math.h>|\<math.h> \<veya cmath>|
-|**_nextafter**|\<float.h>|\<float.h> \<veya cfloat>|
+|**nextafter**, **nextafterf**, **nextafterl**, **_nextafterf**, **nextnext**, **nexttowardf**, **nexttowardl**|\<Math. h>|\<Math. h> veya \<cmath>|
+|**_nextafter**|\<float. h>|\<float. h> veya \<cfloat>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

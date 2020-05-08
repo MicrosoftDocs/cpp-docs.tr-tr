@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -36,16 +36,16 @@ helpviewer_keywords:
 - _wasctime_s function
 - asctime_s function
 ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
-ms.openlocfilehash: 52391eb1237e4c1d7ef320dacd211b603a21ab8b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 282f4666734a4a8fd9c6825ee18265bd03fff65b
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81334221"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82909414"
 ---
 # <a name="asctime_s-_wasctime_s"></a>asctime_s, _wasctime_s
 
-**TM** zaman yapısını karakter dizesine dönüştürün. Bu işlevler, CRT'deki Güvenlik Özellikleri'nde açıklandığı gibi güvenlik geliştirmeleriyle [_wasctime asctime](asctime-wasctime.md) [sürümleridir.](../../c-runtime-library/security-features-in-the-crt.md)
+Bir **TM** zaman yapısını bir karakter dizesine Dönüştür. Bu işlevler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [_wasctime asctime](asctime-wasctime.md) sürümleridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,82 +74,82 @@ errno_t _wasctime_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
-Karakter dizesi sonucunu depolamak için arabellek için bir işaretçi. Bu *işlev, numberOfElements*tarafından belirtilen bir boyutu ile geçerli bir bellek konumu için bir işaretçi varsayar.
+*arabelleğin*<br/>
+Karakter dizesi sonucunu depolamak için arabelleğin bir işaretçisi. Bu işlev, *numberOfElements*tarafından belirtilen boyuttaki geçerli bir bellek konumuna yönelik bir işaretçi olduğunu varsayar.
 
 *numberOfElements*<br/>
-Sonucu depolamak için kullanılan arabelleğe boyutu.
+Sonucu depolamak için kullanılan arabelleğin boyutu.
 
-*tmKaynak*<br/>
-Saat/tarih yapısı. Bu işlev, geçerli bir **struct** **tm** nesnesi için bir işaretçi varsayar.
+*tmSource*<br/>
+Saat/tarih yapısı. Bu işlev, geçerli bir **struct** **TM** nesnesine yönelik bir işaretçi olduğunu varsayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır. Bir hata varsa, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin verilirse, iade değeri bir hata kodudur. Hata kodları ERRNO'da tanımlanır. H. Daha fazla bilgi için [errno Constants'](../../c-runtime-library/errno-constants.md)a bakın. Her hata koşulu için döndürülen gerçek hata kodları aşağıdaki tabloda gösterilmiştir.
+Başarılıysa sıfır. Bir hata oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, dönüş değeri bir hata kodudur. Hata kodları ERRNO içinde tanımlanmıştır. Olsun. Daha fazla bilgi için bkz. [errno sabitleri](../../c-runtime-library/errno-constants.md). Her bir hata koşulu için döndürülen gerçek hata kodları aşağıdaki tabloda gösterilmiştir.
 
-### <a name="error-conditions"></a>Hata Koşulları
+### <a name="error-conditions"></a>Hata koşulları
 
-|*Arabellek*|*numberOfElements*|*tmKaynak*|Dönüş|*Arabellekteki* değer|
+|*arabelleğin*|*numberOfElements*|*tmSource*|Döndürülmesini|*Arabellekteki* değer|
 |--------------|------------------------|----------|------------|-----------------------|
-|**Null**|Herhangi biri|Herhangi biri|**Eınval**|Değiştirilmedi|
-|**NULL** değil (geçerli belleğe işaret)|0|Herhangi biri|**Eınval**|Değiştirilmedi|
-|**NULL** değil|0< boyutu < 26|Herhangi biri|**Eınval**|Boş dize|
-|**NULL** değil|>= 26|**Null**|**Eınval**|Boş dize|
-|**NULL** değil|>= 26|Geçersiz zaman yapısı veya zamanın bileşenleri için aralık dışı değerler|**Eınval**|Boş dize|
+|**DEĞER**|Herhangi biri|Herhangi biri|**EıNVAL**|Değiştirilmedi|
+|**Null** değil (geçerli belleğe işaret eder)|0|Herhangi biri|**EıNVAL**|Değiştirilmedi|
+|**Null** değil|0< boyutu < 26|Herhangi biri|**EıNVAL**|Boş dize|
+|**Null** değil|>= 26|**DEĞER**|**EıNVAL**|Boş dize|
+|**Null** değil|>= 26|Zaman bileşenleri için geçersiz zaman yapısı veya Aralık değerleri|**EıNVAL**|Boş dize|
 
 > [!NOTE]
-> **wasctime_s** için hata koşulları, boyut sınırının sözcüklerle ölçülmesi dışında **asctime_s** benzer.
+> **Wasctime_s** için hata koşulları, boyut sınırının sözcüklerle ölçüldüğü özel durumla **asctime_s** benzerdir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Asctime** işlevi, yapı olarak depolanan bir zamanı karakter dizesine dönüştürür. *TmSource* değeri genellikle **gmtime** veya yerel **saat**için bir çağrı elde edilir. Her iki işlev de TIME'da tanımlandığı gibi bir **tm** yapısını doldurmak için kullanılabilir. H.
+**Asctime** işlevi bir yapı olarak depolanan bir saati bir karakter dizesine dönüştürür. *Tmsource* değeri genellikle **gmtime** veya **localtime**çağrısından alınır. Her iki işlev de bir **TM** yapısını, zaman içinde tanımlandığı şekilde doldurmanız için kullanılabilir. Olsun.
 
 |timeptr üyesi|Değer|
 |--------------------|-----------|
-|**tm_hour**|Gece yarısından itibaren saatler (0-23)|
-|**tm_isdst**|Yaz saati uygulaması geçerliyse pozitif; Yaz saati uygulaması geçerli değilse 0; gün ışığından yararlanma saatinin durumu bilinmiyorsa negatif. C çalışma zamanı kitaplığı, Gün Işığından Yararlanma Saati (DST) hesaplamasını uygulamak için ABD'nin kurallarını varsayar.|
+|**tm_hour**|Gece yarısından itibaren saat (0-23)|
+|**tm_isdst**|Günışığından yararlanma süresi etkinse pozitif; gün ışığından yararlanma saati etkin değilse 0; gün ışığından yararlanma zamanının durumu bilinmiyorsa negatif olur. C çalışma zamanı kitaplığı, gün ışığından yararlanma zamanının (DST) hesaplanmasını uygulamak için Birleşik Devletler ' kurallarını varsayar.|
 |**tm_mday**|Ayın günü (1-31)|
-|**tm_min**|Dakika sonra saat (0-59)|
+|**tm_min**|Saat sonra dakika (0-59)|
 |**tm_mon**|Ay (0-11; Ocak = 0)|
-|**tm_sec**|Saniye dakika sonra (0-59)|
+|**tm_sec**|Dakika sonra saniye (0-59)|
 |**tm_wday**|Haftanın günü (0-6; Pazar = 0)|
 |**tm_yday**|Yılın günü (0-365; 1 Ocak = 0)|
-|**tm_year**|Yıl (şu anki yıl eksi 1900)|
+|**tm_year**|Yıl (geçerli yıl eksi 1900)|
 
-Dönüştürülen karakter dizesi de yerel saat dilimi ayarlarına göre ayarlanır. Saat dilimi ortamını ve genel değişkenleri tanımlama hakkında bilgi almak için yerel saati ve [_tzset](tzset.md) işlevini yapılandırma hakkında bilgi için [saati, _time32, _time64,](time-time32-time64.md) [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)ve [localtime_s, _localtime32_s](localtime-s-localtime32-s-localtime64-s.md) _localtime64_s işlevlerigörün.
+Dönüştürülen karakter dizesi de yerel saat dilimi ayarlarına göre ayarlanır. Saat dilimi ortamı ve genel değişkenleri tanımlama hakkında bilgi için yerel saati ve [_ftime64](tzset.md) işlevini yapılandırma hakkında bilgi için [zaman, _time32, _time64](time-time32-time64.md), [_ftime, _ftime32, localtime_s](ftime-ftime32-ftime64.md)ve _localtime32_s [,](localtime-s-localtime32-s-localtime64-s.md) _localtime64_s, _tzset işlevlerine bakın.
 
-**asctime_s** tarafından üretilen dize sonucu tam olarak 26 karakter içerir ve formu `Wed Jan 02 02:03:55 1980\n\0`vardır. 24 saatlik bir saat kullanılır. Tüm alanların sabit bir genişliği vardır. Yeni satır karakteri ve null karakter dize son iki pozisyonları işgal. İkinci parametre olarak geçirilen değer en azından bu kadar büyük olmalıdır. Daha az ise, bir hata kodu, **EINVAL**, döndürülür.
+**Asctime_s** tarafından üretilen dize sonucu, tam 26 karakter içerir ve forma `Wed Jan 02 02:03:55 1980\n\0`sahiptir. 24 saatlik bir saat kullanılır. Tüm alanların sabit bir genişliği vardır. Yeni satır karakteri ve null karakter, dizenin son iki konumunu kaplar. İkinci parametre olarak geçirilen değer en az bu büyük olmalıdır. Daha az ise, **EINVAL**bir hata kodu döndürülür.
 
-**_wasctime_s** **asctime_s**geniş karakterli bir sürümüdür. **_wasctime_s** ve **asctime_s** aynı şekilde aynı şekilde davranan.
+**_wasctime_s** , **asctime_s**geniş karakterli bir sürümüdür. **_wasctime_s** ve **asctime_s** aynı şekilde davranır.
 
-Bu işlevlerin hata ayıklama kitaplığı sürümleri önce arabelleği 0xFE ile doldurur. Bu davranışı devre dışı kullanabilirsiniz, [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)kullanın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
-### <a name="generic-text-routine-mapping"></a>Genel Metin Rutin Eşleme
+### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tasctime_s**|**asctime_s**|**asctime_s**|**_wasctime_s**|
 
-C++'da, bu işlevleri kullanmak şablon aşırı yükleri ile basitleştirilir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkararak boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
+C++ ' da, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**asctime_s**|\<time.h>|
-|**_wasctime_s**|\<time.h> \<veya wchar.h>|
+|**asctime_s**|\<Time. h>|
+|**_wasctime_s**|\<Time. h> veya \<wchar. h>|
 
 ## <a name="security"></a>Güvenlik
 
-Arabellek işaretçisi **NULL** değilse ve işaretçi geçerli bir arabelleğe işaret etmiyorsa, işlev konumda ne varsa üzerine yazar. Bu da bir erişim ihlaline neden olabilir.
+Arabellek işaretçisi **null** değilse ve işaretçi geçerli bir arabelleği işaret etmez, işlev konumdaki her şeyi üzerine yazar. Bu da erişim ihlaline yol açabilir.
 
-Geçirilen boyut bağımsız değişkeni arabelleğenin gerçek boyutundan büyükse, [arabellek taşma](/windows/win32/SecBP/avoiding-buffer-overruns) oluşabilir.
+Geçirilen boyut bağımsız değişkeni arabelleğin gerçek boyutundan fazlaysa bir [arabellek taşması](/windows/win32/SecBP/avoiding-buffer-overruns) meydana gelebilir.
 
 ## <a name="example"></a>Örnek
 
-Bu program uzun tamsayı **aclock**sistem zaman yerleştirir , yapı **ya da yeni zaman** çevirir ve daha sonra çıkış için dize formuna dönüştürür, **asctime_s** işlevini kullanarak.
+Bu program, sistem saatini uzun tamsayı **ACLOCK**'a koyar, onu **Newtime** yapısına çevirir ve sonra **asctime_s** işlevini kullanarak çıktı için dize biçimine dönüştürür.
 
 ```C
 // crt_asctime_s.c

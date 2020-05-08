@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -34,16 +34,16 @@ helpviewer_keywords:
 - trigonometric functions
 - arcsine function
 ms.assetid: ca05f9ea-b711-49f6-9f32-2f4019abfd69
-ms.openlocfilehash: 424fee6995fae4a7f878054ede1bb85d33d1706d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cfee30270b8ed0daa5d600fec65659fbf07162fd
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81334123"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82909269"
 ---
 # <a name="asin-asinf-asinl"></a>asin, asinf, asinl
 
-Arcsine hesaplar.
+Arksinüsü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,16 +60,16 @@ long double asin( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-Arcsine hesaplanacak değer.
+*sayı*<br/>
+Arksinüsü hesaplanacak olan değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Asin** fonksiyonu x'in (ters sinüs fonksiyonu) *x* -π/2 ile π/2 radyanaralığında ki arcsine (ters sinüs fonksiyonu) döndürür.
+**Asin** işlevi,-π/2 ile π/2 radyan aralığında *x* 'in ark sinüsünü (ters sinüs işlevi) döndürür.
 
-Varsayılan olarak, *x* -1'den küçük veya 1'den büyükse, **asin** belirsiz bir şekilde döndürür.
+Varsayılan olarak, *x* -1 ' den küçük veya 1 ' den büyükse, **asin** sonsuz döndürür.
 
-|Girdi|SEH Özel Durumu|Matherr İstisnası|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± ∞|**Geçersiz**|**_DOMAIN**|
 |± **QNAN**, **IND**|yok|**_DOMAIN**|
@@ -77,19 +77,19 @@ Varsayılan olarak, *x* -1'den küçük veya 1'den büyükse, **asin** belirsiz 
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **uzun** **çift** değerleri ile aşırı **asin** yükleri arayabilirsiniz. Bir C programında, **asin** her zaman alır ve bir **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long** **Double** değerleri ile **asin** aşırı yüklerini çağırabilirsiniz. C programında, **asin** her zaman bir **Double**alır ve döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgi (C)|Gerekli üstbilgi (C++)|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
-|**asin**, **asinf**, **asinl**|\<math.h>|\<cmath> \<veya math.h>|
+|**asin**, **asinf**, **asinl**|\<Math. h>|\<cmath> veya \<Math. h>|
 
 ## <a name="example"></a>Örnek
 
-Daha fazla bilgi için, [acos, acosf, acosl](acos-acosf-acosl.md)bakın.
+Daha fazla bilgi için bkz. [acos, acosf, acosl](acos-acosf-acosl.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

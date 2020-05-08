@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -38,12 +38,12 @@ helpviewer_keywords:
 - files [C++], removing
 - _tunlink function
 ms.assetid: 5e4f5f1b-1e99-4391-9b18-9ac63c32fae8
-ms.openlocfilehash: ffc1a64c60d41246773d5e262523000355b0de3b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: af6fd6c7065529b43f5e275ce1d745d0031ddfb7
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81361273"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82909287"
 ---
 # <a name="_unlink-_wunlink"></a>_unlink, _wunlink
 
@@ -67,19 +67,19 @@ Kaldırılacak dosyanın adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri başarılı olursa 0 döndürür. Aksi takdirde, işlev -1 döndürür ve **EACCES**için **errno** ayarlar , hangi yol bir salt okunur dosya veya dizin belirtir anlamına gelir, ya da **ENOENT**, dosya veya yol bulunamadı anlamına gelir.
+Bu işlevlerin her biri, başarılıysa 0 döndürür. Aksi takdirde, işlev-1 döndürür ve **errno** değerini **EACCES**olarak ayarlar. Bu, yolun bir salt okunurdur dosya ya da dizin belirttiği **ya da bir**dosyanın veya yolun bulunamadığı anlamına gelir.
 
-Bunlar ve diğer iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bakın.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_unlink** işlevi *dosya adı*ile belirtilen dosyayı siler. **_wunlink** **_unlink**geniş karakterli bir versiyonudur; **_wunlink** için *dosya adı* bağımsız değişkeni geniş karakterli bir dizedir. Bu işlevler aynı şekilde başka türlü çalışır.
+**_Unlink** işlevi *filename*tarafından belirtilen dosyayı siler. **_wunlink** , **_unlink**geniş karakterli bir sürümüdür; _wunlink *dosya adı* bağımsız **_wunlink** değişkeni, geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tunlink**|**_unlink**|**_unlink**|**_wunlink**|
 
@@ -87,14 +87,14 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_unlink**|\<io.h> \<ve stdio.h>|
-|**_wunlink**|\<io.h> \<veya wchar.h>|
+|**_unlink**|\<GÇ. h> ve \<stdio. h>|
+|**_wunlink**|\<GÇ. h> veya \<wchar. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="code-example"></a>Kod Örneği
 
-Bu program CRT_UNLINK silmek için _unlink kullanır. Txt.
+Bu program CRT_UNLINK silmek için _unlink kullanır. TXT.
 
 ```C
 // crt_unlink.c
@@ -110,7 +110,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_unlinktxt"></a>Giriş: crt_unlink.txt
+### <a name="input-crt_unlinktxt"></a>Giriş: crt_unlink. txt
 
 ```Input
 This file will be deleted.
@@ -124,6 +124,6 @@ Deleted 'CRT_UNLINK.TXT'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya Işleme](../../c-runtime-library/file-handling.md)<br/>
+[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
 [_close](close.md)<br/>
 [remove, _wremove](remove-wremove.md)<br/>

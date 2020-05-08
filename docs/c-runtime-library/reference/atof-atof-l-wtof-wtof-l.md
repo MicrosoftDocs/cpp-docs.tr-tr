@@ -22,7 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -54,16 +54,16 @@ helpviewer_keywords:
 - _wtof function
 - string conversion, to floating point values
 ms.assetid: eb513241-c9a9-4f5c-b7e7-a49b14abfb75
-ms.openlocfilehash: 492719a0cc0f8ac079b257ec8d7aa1014c5b2a86
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5200b93a5745dfb8e9b31cd5663452b84cb3058a
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81348919"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82909110"
 ---
 # <a name="atof-_atof_l-_wtof-_wtof_l"></a>atof, _atof_l, _wtof, _wtof_l
 
-Bir dizeyi çifte dönüştürün.
+Dizeyi Double 'a Dönüştür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -86,53 +86,53 @@ double _wtof_l(
 
 ## <a name="parameters"></a>Parametreler
 
-*Str*<br/>
-Dize dönüştürülecek.
+*üstbilgisine*<br/>
+Dönüştürülecek dize.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlev, giriş karakterlerini bir sayı olarak yorumlayarak üretilen **çift** değeri döndürür. Giriş bu tür bir değere dönüştürülemiyorsa, iade değeri 0,0'dır.
+Her işlev, giriş karakterlerinin sayı olarak yorumlanarak oluşturulan **Double** değeri döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, dönüş değeri 0,0 ' dir.
 
-Tüm kapsama alanı dışı durumlarda, **errno** **ERANGE**olarak ayarlanır. Geçirilen parametre **NULL**ise, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlevler **EINVAL** **için errno** ayarlayın ve 0 döndürün.
+Tüm Aralık dışı durumlarda **errno** , **ERANGE**olarak ayarlanır. Geçirilen parametre **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler bir karakter dizesini çift duyarlıklı, kayan nokta değerine dönüştürür.
+Bu işlevler, bir karakter dizesini çift duyarlıklı, kayan noktalı bir değere dönüştürür.
 
-Giriş dizesi, belirtilen türün sayısal değeri olarak yorumlanabilecek bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterdeki giriş dizesini okumayı durdurur. Bu karakter, dizeyi sonlayan null karakter ('\0' veya L'\0') olabilir.
+Giriş dizesi, belirtilen türden sayısal bir değer olarak yorumlanabilen bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterde giriş dizesini okumayı durduruyor. Bu karakter, dizeyi sonlandıran null karakteri (' \ 0 ' veya L ' \ 0 ') olabilir.
 
-**Atof** ve **_wtof** str *argümanı* aşağıdaki formu vardır:
+**Atof** ve **_wtof** *Str* bağımsız değişkeni aşağıdaki biçimdedir:
 
-[*beyazuzay*] [*işaret*] [*rakamlar*] [__.__ *rakamlar*] [ {**e** &#124; **E** }[*işaret*]*rakamları*]
+[*boşluk*] [*imzala*] [*basamaklar*] [__.__ *basamaklar*] [{**e** &#124; **e** } [*oturum açma*]*basamakları*]
 
-Bir *boşluk,* yoksayılan boşluk veya sekme karakterlerinden oluşur; *işareti* artı (+) veya eksi (-); ve *basamaklar* bir veya daha fazla ondalık basamakvardır. Ondalık noktadan önce basamak görünmüyorsa, ondalık noktadan sonra en az bir basamak görünmesi gerekir. Ondalık basamakları, giriş harfi **(e**, veya **E)** ve isteğe bağlı olarak imzalanmış ondalık bir dosdoğrudan oluşan bir üs izlenebilir.
+*Boşluk* , yoksayılan boşluk veya sekme karakterlerinden oluşur; *imza* artı (+) veya eksi (-); ve *rakamlar* bir veya daha fazla ondalık basamaktır. Ondalık noktadan önce bir basamak görünmezse, ondalık ayırıcıdan sonra en az bir rakam görünmelidir. Ondalık basamakların ardından, bir giriş harfinden (**e**veya **e**) ve isteğe bağlı olarak imzalanmış ondalık tamsayıdan oluşan bir üs gelebilir.
 
-Bu işlevlerin UCRT sürümleri Fortran stili **(d** veya **D)** üs harflerinin dönüştürülmesini desteklemez. Bu standart dışı uzantı CRT'nin önceki sürümleri tarafından desteklenmiştir ve kodunuz için bir son değişiklik olabilir.
+Bu işlevlerin UCRT sürümleri, FORTRAN-Style (**d** veya **d**) üs harflerinin dönüştürülmesini desteklemez. Standart olmayan bu uzantı, CRT 'nin önceki sürümleri tarafından desteklenmiş ve kodunuz için bir ön değişiklik olabilir.
 
-Bu işlevlerin **_l** soneki olan sürümleri, geçerli yerel alan yerine geçirilen *yerel* parametreyi kullanmaları dışında aynıdır.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen *yerel ayar* parametresini kullanmaları dışında aynıdır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tstof**|**atof**|**atof**|**_wtof**|
 |**_ttof**|**atof**|**atof**|**_wtof**|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Rutin(ler)|Gerekli başlık|
+|Yordam (ler)|Gerekli başlık|
 |------------------|---------------------|
-|**atof**, **_atof_l**|C: \<math.h \<> veya stdlib.h \<> C++: \<cstdlib>, stdlib.h>, \<cmath> veya \<math.h>|
-|**_wtof**, **_wtof_l**|C: \<stdlib.h \<> veya wchar.h \<> C++: \<cstdlib>, stdlib.h> veya \<wchar.h>|
+|**atof**, **_atof_l**|C: \<Math. h> veya \<stdlib. h> C++: \<cstdlib>, \<Stdlib. h>, \<cmath> veya \<Math. h>|
+|**_wtof**, **_wtof_l**|C: \<Stdlib. h> veya \<wchar. h> C++: \<cstdlib>, \<Stdlib. h> veya \<wchar. h>|
 
 ## <a name="example"></a>Örnek
 
-Bu program, dize olarak depolanan **sayıların atof** ve **_atof_l** işlevlerini kullanarak sayısal değerlere nasıl dönüştürülebileceğini gösterir.
+Bu program, dizeler olarak depolanan sayıların, **atof** ve **_atof_l** işlevleri kullanılarak sayısal değerlere nasıl dönüştürülebileceğini gösterir.
 
 ```C
 // crt_atof.c
@@ -183,9 +183,9 @@ Function: _atof_l("  -2,309e-25", fr)) = -2.309000e-25
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

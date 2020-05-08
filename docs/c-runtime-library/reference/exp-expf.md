@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -35,16 +35,16 @@ helpviewer_keywords:
 - calculating exponentials
 - exp function
 ms.assetid: 7070016d-1143-407e-9e9a-6b059bb88867
-ms.openlocfilehash: cbf303b2b92afd83a1c3181dc98a1dbdcd639c1b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b6d4906212073ab8cb04a0ab77d1234d444a4c95
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81347593"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82909657"
 ---
 # <a name="exp-expf-expl"></a>exp, expf, expl
 
-Üstel olarak hesaplar.
+Üstel 'yi hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,35 +68,35 @@ long double expl(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-Doğal logaritma tabanını üslemek için kayan nokta *değeri.*
+*sayı*<br/>
+Doğal logaritma tabanında *e tarafından üsl* olacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Exp** işlevleri kayan nokta parametrenin üstel değerini döndürür, *x*, başarılı olursa. Yani, sonuç *e*<sup>*x*</sup>, *e* doğal logaritma tabanıdır. Taşmada, işlev INF (sonsuz) ve akış **altında, exp** 0 döndürür.
+**Exp** işlevleri, başarılı olursa *x*kayan nokta parametresinin üstel değerini döndürür. Diğer bir deyişle, sonuç *e*<sup>*x*</sup>olur. burada *e* , doğal logaritmanın temelini alır. Taşma durumunda işlev INF (Infinity) döndürür ve yetersiz kalması, **Exp** 0 döndürür.
 
-|Girdi|SEH Özel Durumu|Matherr İstisnası|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± Sessiz NaN, belirsiz|None|_DOMAIN|
-|± Sonsuzluk|Geçersiz|_DOMAIN|
-|x ≥ 7.097827e+002|TAM OLMAYAN+TAŞMA|Taşma|
-|X ≤ -7.083964e+002|TAM OLMAYAN+ALT Akış|ALT Akış|
+|± Quiet NaN, belirsiz|Yok|_DOMAIN|
+|± Infinity|Geçersiz|_DOMAIN|
+|x ≥ 7.097827 e + 002|INTAM + taşma|TAŞMA|
+|X ≤-7.083964 e + 002|TAM aşağı + yetersız|ÖĞE|
 
-**Exp** işlevi, Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahiptir. SSE2 uygulamasını kullanma yla ilgili bilgi ve kısıtlamalar için [_set_SSE2_enable](set-sse2-enable.md) bakın.
+**Exp** işlevinin, Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verir, böylece **float** veya **uzun çift** bağımsız değişken alan aşırı **exp** yüklerini arayabilirsiniz. Bir C programında, **exp** her zaman alır ve bir **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long Double** bağımsız değişkeni alan **Exp** aşırı yüklerini çağırabilirsiniz. C programında, **Exp** her zaman bir **Double**alır ve döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli C üstbilgi|Gerekli C++ üstbilgi|
+|İşlev|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
 |--------------|---------------------|---|
-|**exp**, **expf**, **expl**|\<math.h>|\<cmath> \<veya math.h>|
+|**Exp**, **expf**, **expl**|\<Math. h>|\<cmath> veya \<Math. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

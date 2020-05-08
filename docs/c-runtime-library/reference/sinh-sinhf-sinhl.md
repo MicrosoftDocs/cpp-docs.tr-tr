@@ -19,7 +19,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -37,16 +37,16 @@ helpviewer_keywords:
 - sinhf function
 - sinhl function
 - hyperbolic functions
-ms.openlocfilehash: 4a8ffd1dbce112272f04241a2502c5df63f163a1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 107636d1e732ab7b3ed3003691d3678acc012b7d
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318672"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82909905"
 ---
 # <a name="sinh-sinhf-sinhl"></a>sinh, sinhf, sinhl
 
-Hiperbolik sinüshesaplar.
+Hiperbolik sinüsü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,33 +63,33 @@ long double sinh(long double x);  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-Radyanlarda açı.
+*sayı*<br/>
+Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Sinüs** fonksiyonları *x*hiperbolik sinüs dönmek . Varsayılan olarak, sonuç çok büyükse, **sinh** **errno'yu** **ERANGE'ye** ayarlar ve ±**HUGE_VAL**döndürür.
+**Sinh** işlevleri *x*' in hiperbolik sinüsünü döndürür. Varsayılan olarak, sonuç çok büyükse, **errno** ' ı **ERANGE** **olarak ayarlar ve** ±**HUGE_VAL**döndürür.
 
-|Girdi|SEH Özel Durumu|Matherr İstisnası|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN,IND|None|_DOMAIN|
-|&#124;x&#124; ≥ 7.104760e+002|TAŞMA+TAM OLMAYAN|Taşma|
+|± QNAN, IND|Yok|_DOMAIN|
+|&#124;x&#124; ≥ 7.104760 e + 002|TAŞMA + tam değil|TAŞMA|
 
-İade kodları hakkında daha fazla bilgi için [bkz: errno, _doserrno, _sys_errlist ve _sys_nerr.](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **uzun** **çift** değerleri alan ve döndüren aşırı **günah** yüklerini arayabilirsiniz. Bir C programında, **sinh** her zaman alır ve **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **sinh** 'nin **float** veya **Long** **Double** değerleri alıp döndüren aşırı yüklerini çağırabilirsiniz. C programında **sinh** her zaman **Double**alır ve döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgi (C)|Gerekli üstbilgi (C++)|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-|-|-|
-|**sinh**, **sinhf**, **sinhl**|\<math.h>|\<cmath> \<veya math.h>|
+|**sinh**, **sinhf**, **sinhl**|\<Math. h>|\<cmath> veya \<Math. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

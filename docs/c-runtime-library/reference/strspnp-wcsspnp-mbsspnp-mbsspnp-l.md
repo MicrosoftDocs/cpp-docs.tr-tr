@@ -20,7 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -48,19 +48,19 @@ helpviewer_keywords:
 - _tcsspnp function
 - tcsspnp function
 ms.assetid: 1ce18100-2edd-4c3b-af8b-53f204d80233
-ms.openlocfilehash: c45fc42fb9edce1b82b0910f8aae81d4058d5974
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 16c56f95fc89c1bb7b34c82cdf19c406b61c5a7e
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81317020"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82911055"
 ---
 # <a name="_strspnp-_wcsspnp-_mbsspnp-_mbsspnp_l"></a>_strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
 
-Belirli bir dizedeki ilk karaktere işaretçi verir ve başka bir dizede yer vermez.
+Belirli bir dizedeki, belirli bir dizede olmayan ilk karaktere bir işaretçi döndürür.
 
 > [!IMPORTANT]
-> **_mbsspnp** ve **_mbsspnp_l,** Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> **_mbsspnp** ve **_mbsspnp_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -86,26 +86,26 @@ unsigned char *_mbsspnp_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*<br/>
-Aramak için null-terminated string.
+*üstbilgisine*<br/>
+Aranacak null ile sonlandırılmış dize.
 
-*Charset*<br/>
-Null-sonlandırılan karakter kümesi.
+*karakter*<br/>
+Null ile sonlandırılmış karakter kümesi.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_strspnp**, **_wcsspnp**ve **_mbsspnp** charset karakter kümesine ait olmayan *str* ilk karakter için bir işaretçi *döndürün.* Str *tamamen charset*karakterleri oluşursa bu işlevlerin her biri **NULL** döndürür. *str* Bu yordamların her biri için, bir hata belirtmek için hiçbir iade değeri ayrılmıştır.
+**_strspnp**, **_wcsspnp**ve **_mbsspnp** , str içindeki karakter kümesine ait olmayan *Str* içindeki ilk karaktere bir işaretçi *döndürür.* *Str* karakter kümesinden tamamen karakterler içeriyorsa, bu işlevlerin her biri **null** değerini *döndürür.* Bu yordamların her biri için, bir hatayı göstermek üzere hiçbir dönüş değeri ayrılmamıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_mbsspnp** işlevi *charset*karakter kümesine ait olmayan *str* ilk karakter multibayt karakter için bir işaretçi döndürür. **_mbsspnp,** şu anda kullanılmakta olan [çok bayt kod sayfasına](../../c-runtime-library/code-pages.md) göre çok bayt karakter dizilerini tanır. Arama, null karakterleri sonlandırmayı içermez.
+**_Mbsspnp** işlevi *, karakter kümesi*karakter kümesine ait olmayan *Str* içindeki ilk karakter olan çok baytlı karaktere bir işaretçi döndürür. **_mbsspnp** , kullanımda olan [çok baytlı kod sayfasına](../../c-runtime-library/code-pages.md) göre çok baytlı karakter dizilerini tanır. Arama, null karakter sonlandırılmasını içermez.
 
-*Str* veya *charset* null işaretçisi ise, bu işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmedevam etmesine izin verilirse, işlev **NULL** döndürür ve **EINVAL** **için errno** ayarlar.
+*Str* veya *charset* null bir işaretçisiyse, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -113,19 +113,19 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsspnp**|**_strspnp**|**_mbsspnp**|**_wcsspnp**|
 
-**_strspnp** ve **_wcsspnp** **_mbsspnp**tek bayt karakter li ve geniş karakterli versiyonlarıdır. **_strspnp** ve **_wcsspnp** **_mbsspnp** aynı şekilde davranan; bunlar sadece bu haritalama için sağlanır ve başka bir nedenle kullanılmamalıdır. Daha fazla bilgi için [genel metin eşlemelerini](../../c-runtime-library/using-generic-text-mappings.md) ve Genel [Metin Eşlemelerini](../../c-runtime-library/generic-text-mappings.md)Kullanma'ya bakın.
+**_strspnp** ve **_wcsspnp** , **_mbsspnp**tek baytlık karakter ve geniş karakterli bir sürümlerdir. **_strspnp** ve **_wcsspnp** , aksi halde **_mbsspnp** ile aynı şekilde davranır; Bunlar yalnızca bu eşleme için sağlanır ve başka bir nedenle kullanılmamalıdır. Daha fazla bilgi için bkz. [Genel metin eşlemelerini](../../c-runtime-library/using-generic-text-mappings.md) ve [Genel metin eşlemelerini](../../c-runtime-library/generic-text-mappings.md)kullanma.
 
-**_mbsspnp_l,** bunun yerine geçirilen yerel parametreyi kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**_mbsspnp_l** , bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsspnp**|\<mbstring.h>|
-|**_strspnp**|\<tchar.h>|
-|**_wcsspnp**|\<tchar.h>|
+|**_mbsspnp**|\<mbstring. h>|
+|**_strspnp**|\<Tchar. h>|
+|**_wcsspnp**|\<Tchar. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -152,7 +152,7 @@ abbage
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
 [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md)<br/>
