@@ -20,7 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -37,16 +37,16 @@ helpviewer_keywords:
 - nearbyintf function
 - nearbyintl function
 ms.assetid: dd39cb68-96b0-434b-820f-6ff2ea65584f
-ms.openlocfilehash: 92e3a744ef8069d45733c06b7a2681905c3eab55
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d9e7adb321d85c728c5185c1663fd7f945fc4a82
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338582"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82914574"
 ---
 # <a name="nearbyint-nearbyintf-nearbyintl"></a>nearbyint, nearbyintf, nearbyintl
 
-Belirtilen kayan nokta değerini bir tamsayıya yuvarlar ve bu değeri kayan nokta biçiminde döndürür.
+Belirtilen kayan nokta değerini bir tamsayıya yuvarlar ve bu değeri kayan noktalı bir biçimde döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,38 +63,38 @@ long double nearbyint( long double x ); //C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Yuvarlanacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, [fegetround](fegetround-fesetround2.md)tarafından bildirilen geçerli yuvarlama biçimini kullanarak, en yakın tümseci yuvarlatılmış *x*döndürür. Aksi takdirde, işlev aşağıdaki değerlerden birini döndürebilir:
+Başarılı olursa, [fegetround](fegetround-fesetround2.md)tarafından bildirilen geçerli yuvarlama biçimini kullanarak *x*döndürür ve en yakın tamsayıya yuvarlanır. Aksi takdirde, işlev aşağıdaki değerlerden birini döndürebilir:
 
-|Sorun|Dönüş|
+|Sorun|Döndürülmesini|
 |-----------|------------|
-|*x* = ±SONSUZLUK|±INFINITY, değiştirilmemiş|
-|*x* = ±0|±0, değiştirilmemiş|
-|*x* = NaN|NaN|
+|*x* = ± Infinity|± INFINITY, değiştirilmemiş|
+|*x* = ± 0|± 0, değiştirilmemiş|
+|*x* = Nan|NaN|
 
-Hatalar [_matherr](matherr.md)yoluyla bildirilmemiştir; özellikle, bu işlev herhangi **bir FE_INEXACT** özel durum bildirmez.
+Hatalar [_matherr](matherr.md)ile raporlanmaz; Özellikle, bu işlev **FE_INEXACT** özel durum bildirmiyor.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev ve [rint](rint-rintf-rintl.md) arasındaki birincil fark, bu işlevin tam olarak kayan nokta özel durum yükseltmemesidir.
+Bu işlev ve [rint](rint-rintf-rintl.md) arasındaki birincil fark, bu işlevin kayan nokta özel durumunu yükseltmediğinden emin değildir.
 
-Maksimum kayan nokta değerleri tam tamsayılar olduğundan, bu işlev asla tek başına taşmaz; bunun yerine, çıktı kullandığınız işlevin hangi sürümüne bağlı olarak iade değerini taşabilir.
+En büyük kayan nokta değerleri tam tamsayılar olduğundan, bu işlev kendi kendine hiçbir şekilde taşmayacaktır; Bunun yerine, çıktı, kullandığınız işlevin sürümüne bağlı olarak dönüş değerini taşrabilir.
 
-C++ aşırı yüklemeye izin verir, böylece **float** veya **uzun** **çift** parametreleri alıp geri döndüren aşırı yakın **tarak** ları arayabilirsiniz. C programında, **yakındaki her** zaman iki çift değer alır ve bir çift değer döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** **parametreleri alan ve döndüren bir daha** fazla. C **programında, her** zaman iki çift değer alır ve bir Double değeri döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**nearbyint**, **nearbyintf**, **nearbyintl**|\<math.h>|\<cmath> \<veya math.h>|
+|bir **tamsayı**, bir tam açıklama, bir **intf**, **yaklaştığında**|\<Math. h>|\<cmath> veya \<Math. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

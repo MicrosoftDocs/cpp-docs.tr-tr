@@ -19,7 +19,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -39,16 +39,16 @@ helpviewer_keywords:
 - exponent, floating-point numbers
 - floating-point functions, mantissa and exponent
 ms.assetid: aa7f5310-3879-4f63-ae74-86a39fbdedfa
-ms.openlocfilehash: 0432cfb66db5a90c933401549aba1b538fa66855
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 95eb1eb3ca18e0e7d3450951c930a07f954bc299
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81342238"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82916537"
 ---
 # <a name="ldexp-ldexpf-ldexpl"></a>ldexp, ldexpf, ldexpl
 
-Kayan nokta sayısını iki integral gücüyle çarpar.
+Bir kayan noktalı sayıyı iki tam sayı gücüyle çarpar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -77,31 +77,31 @@ long double ldexpl(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Kayan nokta değeri.
 
-*Exp*<br/>
-İnteger üs.
+*exp*<br/>
+Tamsayı üs.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Ldexp** fonksiyonları başarılı olursa *x* \* 2 exp değerini döndürer.<sup>*exp*</sup> Taşma ve *x*işaretine bağlı olarak, **ldexp** döner +/- **HUGE_VAL;** **errno** değeri **ERANGE**olarak ayarlanır.
+**Ldexp** işlevleri, başarılı olursa *x* \* 2<sup>*Exp*</sup> değerini döndürür. Taşma durumunda ve *x*işaretine bağlı olarak, **ldexp** , +/- **HUGE_VAL**; döndürür. **errno** değeri **ERANGE**olarak ayarlanır.
 
-**Errno** ve olası hata iade değerleri hakkında daha fazla bilgi için [bkz: errno, _doserrno, _sys_errlist ve _sys_nerr.](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+**Errno** ve olası hata dönüş değerleri hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **uzun** **çift** türleri alan aşırı **ldexp** yüklerini arayabilirsiniz. Bir C programında, **ldexp** her zaman bir **çift** ve bir **int** alır ve bir **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **ldexp** 'nin **float** veya **Long** **Double** türlerini içeren aşırı yüklerini çağırabilirsiniz. C programında, **ldexp** her zaman bir **Double** ve **int** alır ve bir **Double**döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**ldexp**, **ldexpf**, **ldexpl**|\<math.h>|\<cmath>|
+|**ldexp**, **ldexpf**, **ldexpl**|\<Math. h>|\<cmath>|
 
-Uyumluluk bilgileri için [bkz.](../../c-runtime-library/compatibility.md)
+Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -33,16 +33,16 @@ helpviewer_keywords:
 - coshl function
 - trigonometric functions
 - hyperbolic functions
-ms.openlocfilehash: d7d2050be406e7f2be66ca200d1e3cfd9c2960b0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e5e313f08fc7e6d00a1cffc9522d3c8a818cd152
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81348439"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82917225"
 ---
 # <a name="cosh-coshf-coshl"></a>cosh, coshf, coshl
 
-Hiperbolik kosinüshesaplar.
+Hiperbolik kosinüsü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,37 +59,37 @@ long double cosh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-Radyanlarda açı.
+*sayı*<br/>
+Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*X*hiperbolik kosinüs .
+*X*'in hiperbolik kosinüsü.
 
-Varsayılan olarak, sonuç bir **cosh**, **coshf**veya **coshl** arama çok büyükise, fonksiyon **HUGE_VAL** döndürür ve **ERANGE** **için errno** ayarlar.
+Varsayılan olarak, sonuç bir **cosh**, **coshf**veya **coshl** çağrısında çok büyükse, işlev **HUGE_VAL** döndürür ve **errno** ' ı **ERANGE**olarak ayarlar.
 
-|Girdi|SEH Özel Durumu|Matherr İstisnası|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|yok|**_DOMAIN**|
-|*x* ≥ 7.104760e+002|**TAM OLMAYAN**+**TAŞMA**|**Taşma**|
+|*x* ≥ 7.104760 e + 002|**tam**+**taşma**|**TAŞMA**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **uzun** **çift** değerleri alan ve döndüren aşırı **cosh** yüklerini arayabilirsiniz. Bir C programında, **cosh** her zaman alır ve bir **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerleri alıp döndüren **cosh** aşırı yüklerini çağırabilirsiniz. C programında, **cosh** her zaman bir **Double**alır ve döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgi (C)|Gerekli üstbilgi (C++)|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
-|**coşf**, **cosl**, **coshl**|\<math.h>|\<cmath> \<veya math.h>|
+|**coshf**, **COSL**, **coshl**|\<Math. h>|\<cmath> veya \<Math. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-[Sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)örneğine bakın .
+[Sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)içindeki örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

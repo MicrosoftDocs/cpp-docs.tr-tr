@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -39,12 +39,12 @@ helpviewer_keywords:
 - _wrmdir function
 - wrmdir function
 ms.assetid: 652c2a5a-b0ac-4493-864e-1edf484333c5
-ms.openlocfilehash: dc9406371da950eb76207d8ddb4a1be8c732098e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c0c5055a499614f364370b7aa90697898dc510ab
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338063"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82916925"
 ---
 # <a name="_rmdir-_wrmdir"></a>_rmdir, _wrmdir
 
@@ -63,28 +63,28 @@ int _wrmdir(
 
 ### <a name="parameters"></a>Parametreler
 
-*dirname*<br/>
-Dizin in kaldırılacak yolu.
+*DizinAdı*<br/>
+Kaldırılacak dizinin yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dizin başarıyla silinirse, bu işlevlerin her biri 0 döndürür. -1'in geri dönüş değeri bir hatayı gösterir ve **errno** aşağıdaki değerlerden birine ayarlanır:
+Bu işlevlerin her biri, dizin başarıyla silinirse 0 döndürür. -1 ' in dönüş değeri bir hatayı gösterir ve **errno** aşağıdaki değerlerden birine ayarlanır:
 
 |errno değeri|Koşul|
 |-|-|
-| **ENOTEMPTY** | Verilen yol bir dizin değildir, dizin boş değildir veya dizin geçerli çalışma dizini veya kök dizini dir. |
-| **Enoent** | Yol geçersiz. |
-| **EACCES** | Bir programın dizine açık bir tutamacı vardır. |
+| **ENOTEMPTY** | Verilen yol bir dizin değil, dizin boş değil veya dizin geçerli çalışma dizini ya da kök dizin. |
+| **ENOENT** | Yol geçersiz. |
+| **EACCES** | Bir programın dizine yönelik açık bir tutamacı vardır. |
 
-Bu ve diğer iade kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_rmdir** işlevi *dirname*ile belirtilen dizini siler. Dizin boş olmalıdır ve geçerli çalışma dizini veya kök dizini olmamalıdır.
+**_Rmdir** işlevi, *DizinAdı*tarafından belirtilen dizini siler. Dizinin boş olması ve geçerli çalışma dizini veya kök dizin olmaması gerekir.
 
-**_wrmdir** **_rmdir**geniş karakterli bir versiyonudur; **_wrmdir** *dirname* bağımsız değişkeni geniş karakterli bir dizedir. **_wrmdir** ve **_rmdir** aynı şekilde davranan.
+**_wrmdir** , **_rmdir**geniş karakterli bir sürümüdür; _wrmdir *DizinAdı* bağımsız değişkeni **_wrmdir** geniş karakterli bir dizedir. **_wrmdir** ve **_rmdir** aynı şekilde davranır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -96,21 +96,21 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_rmdir**|\<direct.h>|
-|**_wrmdir**|\<direct.h> \<veya wchar.h>|
+|**_rmdir**|\<Direct. h>|
+|**_wrmdir**|\<Direct. h> veya \<wchar. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
-[_mkdir](mkdir-wmkdir.md)için örneğe bakın.
+[_Mkdir](mkdir-wmkdir.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dizin Kontrolü](../../c-runtime-library/directory-control.md)<br/>
+[Dizin denetimi](../../c-runtime-library/directory-control.md)<br/>
 [_chdir, _wchdir](chdir-wchdir.md)<br/>
 [_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>

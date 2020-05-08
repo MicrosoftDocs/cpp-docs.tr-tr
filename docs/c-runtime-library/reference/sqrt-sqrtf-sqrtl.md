@@ -19,7 +19,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
 - ntoskrnl.exe
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -36,12 +36,12 @@ helpviewer_keywords:
 - calculating square roots
 - square roots, calculating
 ms.assetid: 2ba9467b-f172-41dc-8f10-b86f68fa813c
-ms.openlocfilehash: 364db84bc20f9f6cfafbdc53e1f2df6da70592df
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ee41d0747c31e5e8b89712a78eceda6a81d909a8
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81355578"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82913908"
 ---
 # <a name="sqrt-sqrtf-sqrtl"></a>sqrt, sqrtf, sqrtl
 
@@ -69,32 +69,32 @@ long double sqrtl(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Negatif olmayan kayan nokta değeri
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya uzun **long** **çift** türleri alan aşırı **sqrt** yüklerini arayabilirsiniz. Bir C programında, **sqrt** her zaman alır ve **çift**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **sqrt** 'nin **float** veya **Long** **Double** türlerini alan aşırı yüklerini çağırabilirsiniz. C programında **sqrt** her zaman **Double**değerini alır ve döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Sqrt** fonksiyonları *x'in*kare kökünü döndürer. Varsayılan olarak, *x* negatif ise, **sqrt** belirsiz bir NaN döndürür.
+**Sqrt** işlevleri *x*'in kare kökünü döndürür. Varsayılan olarak, *x* negatifse **sqrt** , sonsuz bir NaN döndürür.
 
-|Girdi|SEH Özel Durumu|**_matherr** Özel durum|
+|Giriş|SEH özel durumu|**_matherr** Duruma|
 |-----------|-------------------|--------------------------|
-|± QNAN,IND|yok|_DOMAIN|
+|± QNAN, IND|yok|_DOMAIN|
 |- ∞|yok|_DOMAIN|
 |x<0|yok|_DOMAIN|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**sqrt**, **sqrtf**, **sqrtl**|\<math.h>|\<cmath>|
+|**sqrt**, **sqrtf**, **sqrtl**|\<Math. h>|\<cmath>|
 
-Uyumluluk bilgileri için [bkz.](../../c-runtime-library/compatibility.md)
+Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

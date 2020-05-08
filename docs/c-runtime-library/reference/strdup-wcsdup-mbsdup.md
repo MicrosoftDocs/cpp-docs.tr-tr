@@ -20,7 +20,7 @@ api_location:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -48,19 +48,19 @@ helpviewer_keywords:
 - tcsdup function
 - _tcsdup function
 ms.assetid: 8604f8bb-95e9-45d3-93ef-20397ebf247a
-ms.openlocfilehash: 7ad28633844c49ce5b86c8f71f4502c62eba1216
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 42b4a890c1c7f350b83bb92a548d716ee6d9ebfc
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81359701"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82914467"
 ---
 # <a name="_strdup-_wcsdup-_mbsdup"></a>_strdup, _wcsdup, _mbsdup
 
-Dizeleri çoğaltıyor.
+Dizeleri çoğaltır.
 
 > [!IMPORTANT]
-> **_mbsdup** Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> **_mbsdup** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,39 +79,39 @@ unsigned char *_mbsdup(
 ### <a name="parameters"></a>Parametreler
 
 *strSource*<br/>
-Null-sonlandırılan kaynak dize.
+Null ile sonlandırılmış kaynak dizesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, depolama alanı tahsis edilemiyorsa, kopyalanan dize veya **NULL** için depolama konumuna bir işaretçi döndürür.
+Bu işlevlerin her biri, kopyalanmış dize için depolama konumuna bir işaretçi veya depolama alanı ayrılamadıysa **null** değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_strdup** *işlevi, strSource'un* bir kopyası için depolama alanı ayırmak için [malloc'u](malloc.md) çağırır ve daha sonra *strSource'u* ayrılan alana kopyalar.
+**_Strdup** işlevi, bir *strSource* kopyası için depolama alanı ayırmak üzere [malloc](malloc.md) çağırır ve ardından *strSource* 'u ayrılmış alana kopyalar.
 
-**_wcsdup** ve **_mbsdup** **_strdup**geniş karakterli ve çok bayt karakterli versiyonlarıdır. _wcsdup bağımsız **değişkenleri** ve geri dönüş değeri geniş karakterli dizeleridir; **_mbsdup** çok bayt karakterli dizeleri vardır. Bu üç işlev aynı şekilde çalışır.
+**_wcsdup** ve **_mbsdup** , **_strdup**geniş karakter ve çok baytlı karakter sürümleridir. **_Wcsdup** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsdup** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsdup**|**_strdup**|**_mbsdup**|**_wcsdup**|
 
-**strSource** kopyası için depolama alanı ayırmak için *strSource* **malloc** çağırır _strdup çünkü, **_strdup**için çağrı tarafından döndürülen işaretçi [üzerinde ücretsiz](free.md) rutin çağırarak bu belleği serbest bırakmak için her zaman iyi bir uygulamadır.
+**_Strdup** , *strSource*kopyası için depolama alanı ayırmak üzere **malloc** çağrısı yaptığından, **_strdup**çağrısı tarafından döndürülen işaretçinin [ücretsiz](free.md) yordamını çağırarak, her zaman bu belleği serbest bırakmak iyi bir uygulamadır.
 
-**_DEBUG** ve **_CRTDBG_MAP_ALLOC** tanımlanırsa, **_strdup** ve **_wcsdup,** hata ayıklama bellek ayırmalarına izin vermek için **_strdup_dbg** ve **_wcsdup_dbg** çağrılarıyla değiştirilir. Daha fazla bilgi için [_strdup_dbg _wcsdup_dbg.](strdup-dbg-wcsdup-dbg.md)
+**_DEBUG** ve **_CRTDBG_MAP_ALLOC** tanımlanmışsa **_strdup** ve **_wcsdup** , bellek ayırmalarının hata ayıklamasına izin vermek için **_strdup_dbg** ve **_wcsdup_dbg** çağrıları ile değiştirilmiştir. Daha fazla bilgi için bkz. [_strdup_dbg, _wcsdup_dbg](strdup-dbg-wcsdup-dbg.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strdup**|\<string.h>|
-|**_wcsdup**|\<string.h> \<veya wchar.h>|
-|**_mbsdup**|\<mbstring.h>|
+|**_strdup**|\<String. h>|
+|**_wcsdup**|\<String. h> veya \<wchar. h>|
+|**_mbsdup**|\<mbstring. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -27,16 +27,16 @@ helpviewer_keywords:
 - end of file, testing for
 - feof function
 ms.assetid: 09081eee-7c4b-4189-861f-2fad95d3ec6d
-ms.openlocfilehash: 9ee085624be3c5613ac4b5e87965d47324727778
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2b3a8d35491272409ecf911fe2f98ca60b2b2b38
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81347377"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82920163"
 ---
 # <a name="feof"></a>feof
 
-Bir akışta dosya sonu için testler.
+Akışta dosya sonu için testler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,30 +48,30 @@ int feof(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akışı*<br/>
-**DOSYA** yapısı için işaretçi.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir okuma işlemi dosyanın sonundan önce okumaya **çalıştıysa, feof** işlevi sıfır olmayan bir değer döndürür; aksi takdirde 0 döndürür. Akış işaretçisi **NULL**ise, işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmedevam etmesine izin verilirse, **errno** **EINVAL** olarak ayarlanır ve **feof** döner 0.
+Bir okuma işlemi dosyanın sonundan sonra okumayı denediğinde **feof** işlevi sıfır dışında bir değer döndürür; Aksi takdirde 0 döndürür. Akış işaretçisi **null**ise, Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve **feof** 0 döndürür.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bakın.
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Feof** yordamı (hem işlev olarak hem de makro olarak uygulanan) *akışın* sonunun geçirilip geçirilmediğini belirler. Dosyanın sonu geçirildiğinde, okuma işlemleri akış kapanana kadar veya [geri sarma](rewind.md), **fsetpos**, [fseek](fseek-fseeki64.md), veya **daha net** bir şekilde buna karşı çağrılana kadar dosya sonu göstergesi döndürün.
+Yordamın **Fede** (hem bir işlev olarak hem de bir makro olarak uygulanan) *akışın* sonunun geçtiğini belirler. Dosya sonu geçirildiğinde, akış kapatılıncaya kadar veya [geri sarma](rewind.md), **fsetpos**, [fseek](fseek-fseeki64.md)veya **clearerr** çağrılana kadar okuma işlemleri bir dosya sonu göstergesi döndürür.
 
-Örneğin, bir dosya 10 bayt içeriyorsa ve dosyadan 10 bayt okursanız, dosya işaretçisi dosyanın sonunda olmasına rağmen, sonuna kadar okumaya denemediğiniz için **feof** 0 döndürecektir. Sadece 11. **feof**
+Örneğin, bir dosya 10 bayt içeriyorsa ve dosyadan 10 bayt **okuduğunuzda, dosya** işaretçisi dosyanın sonunda olsa bile, son olarak okumayı Denememekle birlikte 0 döndürür. Yalnızca bir 11 baytını okumaya çalıştıktan **sonra, sıfır** dışında bir değer döndürerirsiniz.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**feof**|\<stdio.h>|
+|**feof**|\<stdio. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -113,7 +113,7 @@ int main( void )
 }
 ```
 
-## <a name="input-crt_feoftxt"></a>Giriş: crt_feof.txt
+## <a name="input-crt_feoftxt"></a>Giriş: crt_feof. txt
 
 ```Input
 Line one.
@@ -128,8 +128,8 @@ Number of bytes read = 19
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata İşleme](../../c-runtime-library/error-handling-crt.md)<br/>
-[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Hata Işleme](../../c-runtime-library/error-handling-crt.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [clearerr](clearerr.md)<br/>
 [_eof](eof.md)<br/>
 [ferror](ferror.md)<br/>

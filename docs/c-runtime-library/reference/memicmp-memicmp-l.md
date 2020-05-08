@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -33,16 +33,16 @@ helpviewer_keywords:
 - memicmp_l function
 - _memicmp_l function
 ms.assetid: 0a6eb945-4077-4f84-935d-1aaebe8db8cb
-ms.openlocfilehash: 5ad22f2107695b14d4a8361d4532d6e250b5af6f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 365b57dc300da5686895d66fa642e3870612c2ed
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81333233"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82915392"
 ---
 # <a name="_memicmp-_memicmp_l"></a>_memicmp, _memicmp_l
 
-İki arabellekteki karakterleri karşılaştırır (büyük/küçük harf duyarsız).
+Karakterleri iki arabelleki karşılaştırır (büyük/küçük harfe duyarsız).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,47 +62,47 @@ int _memicmp_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*arabellek1*<br/>
+*buffer1*<br/>
 İlk arabellek.
 
-*arabellek2*<br/>
-İkinci tampon.
+*buffer2*<br/>
+İkinci arabellek.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Karakter sayısı.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İade değeri arabellekler arasındaki ilişkiyi gösterir.
+Dönüş değeri, arabellekler arasındaki ilişkiyi gösterir.
 
-|Döndürülen değer|Buf1 ve buf2'nin ilk sayım baytlarının ilişkisi|
+|Döndürülen değer|Buf1 ve buf2 'in ilk sayım baytlarının ilişkisi|
 |------------------|--------------------------------------------------------|
-|< 0|*arabellek1* daha az *arabellek2*.|
-|0|*arabellek1* *arabellek2*ile aynıdır.|
-|> 0|*arabellek1* *tampon2*daha büyük .|
+|< 0|*buffer1* küçüktür *buffer2*.|
+|0|*buffer1* özdeş *buffer2*.|
+|> 0|*buffer1* *buffer2*'den büyük.|
 |**_NLSCMPERROR**|Bir hata oluşmuştur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_memicmp** işlevi, iki arabellek *arabelleği1* ve *arabellek2* bayt tarafından ilk *sayma* karakterleri karşılaştırır. Karşılaştırma büyük/küçük harf duyarlı değildir.
+**_Memicmp** işlevi, iki arabellek *buffer1* ve *buffer2* bayt bayt olarak ilk *sayı* karakterlerini karşılaştırır. Karşılaştırma büyük/küçük harfe duyarlı değildir.
 
-*Arabellek1* veya *arabellek2* null işaretçisi ise, bu işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre işleyicisi çağırır. Yürütmedevam etmesine izin verilirse, işlev **_NLSCMPERROR** döndürür ve **EINVAL** **için errno** ayarlar.
+Eğer *buffer1* veya *buffer2* , null işaretçisiyse, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa işlev **_NLSCMPERROR** döndürür ve **errno** ' ı **EINVAL**olarak ayarlar.
 
-**_memicmp,** yerele bağımlı davranış için geçerli yerel durumu kullanır; **_memicmp_l,** bunun yerine geçirilen yerel alanı kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**_memicmp** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_memicmp_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_memicmp**|\<memory.h> \<veya string.h>|
-|**_memicmp_l**|\<memory.h> \<veya string.h>|
+|**_memicmp**|\<Memory. h> veya \<String. h>|
+|**_memicmp_l**|\<Memory. h> veya \<String. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -141,7 +141,7 @@ First is equal to second.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Arabellek Manipülasyonu](../../c-runtime-library/buffer-manipulation.md)<br/>
+[Arabellek Işleme](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](memccpy.md)<br/>
 [memchr, wmemchr](memchr-wmemchr.md)<br/>
 [memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>

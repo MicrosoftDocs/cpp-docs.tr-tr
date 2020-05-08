@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -34,19 +34,19 @@ helpviewer_keywords:
 - mbbtype function
 - mbbtype_l function
 ms.assetid: b8e34b40-842a-4298-aa39-0bd2d8e51c2a
-ms.openlocfilehash: 7e2e818ed70ec393e4f81008f76ca9efe9cfa7e7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dca59f2d31cc5ad843a48e9825ef6a617d46ae4a
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81341405"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919594"
 ---
 # <a name="_mbbtype-_mbbtype_l"></a>_mbbtype, _mbbtype_l
 
 Önceki bayta göre bayt türünü döndürür.
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,47 +64,47 @@ int _mbbtype_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*C*<br/>
-Test etmek için karakter.
+*,*<br/>
+Sınanacak karakter.
 
-*Türü*<br/>
-Test etmek için bayt türü.
+*türüyle*<br/>
+Sınanacak bayt türü.
 
-*Yerel ayar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbbtype** dizedeki bayt türünü döndürür. Bu karar, denetim testi koşulunu sağlayan *tür*değerine göre belirtildiği gibi, içeriğe duyarlıdır. *türü* dize önceki bayt türüdür. Aşağıdaki tablodaki manifesto sabitleri Mbctype.h'de tanımlanmıştır.
+**_mbbtype** dizedeki Byte türünü döndürür. Bu karar, denetim testi koşulunu sağlayan *tür*değeri tarafından belirtilen bağlama duyarlıdır. *tür* , dizedeki önceki baytın türüdür. Aşağıdaki tablodaki bildirim sabitleri Mbctype. h içinde tanımlanmıştır.
 
-|*Türün* değeri|**_mbbtype** için testler|Döndürülen değer|*C*|
+|*Tür* değeri|için testleri **_mbbtype**|Döndürülen değer|*,*|
 |---------------------|--------------------------|------------------|---------|
-|1 hariç herhangi bir değer|Geçerli tek bayt veya kurşun bayt|**_MBC_SINGLE** (0)|Tek bayt (0x20 - 0x7E, 0xA1 - 0xDF)|
-|1 hariç herhangi bir değer|Geçerli tek bayt veya kurşun bayt|**_MBC_LEAD** (1)|Çok bayt karakterli kurşun bayt (0x81 - 0x9F, 0xE0 - 0xFC)|
-|1 hariç herhangi bir değer|Geçerli tek bayt veya kurşun bayt|**_MBC_ILLEGAL**<br /><br /> ( -1)|Geçersiz karakter (0x20 - 0x7E, 0xA1 - 0xDF, 0x81 - 0x9F, 0xE0 - 0xFC hariç herhangi bir değer|
-|1|Geçerli iz bayt|**_MBC_TRAIL** (2)|Çok bayt karakterli bayt (0x40 - 0x7E, 0x80 - 0xFC)|
-|1|Geçerli iz bayt|**_MBC_ILLEGAL**<br /><br /> ( -1)|Geçersiz karakter (0x20 - 0x7E, 0xA1 - 0xDF, 0x81 - 0x9F, 0xE0 - 0xFC hariç herhangi bir değer|
+|1 dışında herhangi bir değer|Geçerli tek bayt veya ön bayt|**_MBC_SINGLE** (0)|Tek bayt (0x20-0x7E, 0xA1-0xDF)|
+|1 dışında herhangi bir değer|Geçerli tek bayt veya ön bayt|**_MBC_LEAD** (1)|Çok baytlı karakterin ön baytı (0x81-0x9F, 0xE0-0xFC)|
+|1 dışında herhangi bir değer|Geçerli tek baytlı veya ön bayt|**_MBC_ILLEGAL**<br /><br /> (-1)|Geçersiz karakter (0x20-0x7E, 0xA1-0xDF, 0x81-0x9F, 0xE0-0xFC dışında herhangi bir değer|
+|1|Geçerli iz baytı|**_MBC_TRAIL** (2)|Çok baytlı karakterin sondaki baytı (0x40-0x7E, 0x80-0xFC)|
+|1|Geçerli iz baytı|**_MBC_ILLEGAL**<br /><br /> (-1)|Geçersiz karakter (0x20-0x7E, 0xA1-0xDF, 0x81-0x9F, 0xE0-0xFC dışında herhangi bir değer|
 
 ## <a name="remarks"></a>Açıklamalar
 
-_mbbtype **_mbbtype** işlevi, çok bayt karakterdeki bayt türünü belirler. *Tür* değeri 1 dışında herhangi bir değerse, **_mbbtype** _mbbtype geçerli bir bayt veya çok bayt karakterli bir bayt için test olun. *Tür* değeri 1 **ise,** _mbbtype çok bayt karakterli geçerli bir iz baytını sınayın.
+**_Mbbtype** işlevi, çok baytlı bir karakter içindeki bir baytın türünü belirler. *Tür* değeri 1 dışında bir değer ise, çok baytlı bir karakterin geçerli tek baytlık veya ön bayt için test **_mbbtype** . *Tür* değeri 1 ise, çok baytlı bir karakterin geçerli bir izleme baytı için test **_mbbtype** .
 
-Çıktı değeri, yerel LC_CTYPE **kategori** ayarı ayarı etkilenir; daha fazla bilgi için [setlocale, _wsetlocale](setlocale-wsetlocale.md) bakın. Bu işlevin **_mbbtype** sürümü, bu yerele bağımlı davranış için geçerli yerel durumu kullanır; **_mbbtype_l** sürümü, bunun yerine geçirilen yerel parametreyi kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . Bu işlevin **_mbbtype** sürümü, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_mbbtype_l** sürüm, bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Önceki **sürümlerde, _mbbtype** **chkctype**seçildi. Yeni kod için bunun yerine **_mbbtype** kullanın.
+Önceki sürümlerde **_mbbtype** **chkctype**olarak adlandırılmıştı. Yeni kod için, bunun yerine **_mbbtype** kullanın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_mbbtype**|\<mbstring.h>|\<mbctype.h>*|
-|**_mbbtype_l**|\<mbstring.h>|\<mbctype.h>*|
+|**_mbbtype**|\<mbstring. h>|\<Mbctype. h> *|
+|**_mbbtype_l**|\<mbstring. h>|\<Mbctype. h> *|
 
-\*İade değerleri olarak kullanılan bildirim sabitlerinin tanımları için.
+\*Dönüş değeri olarak kullanılan bildirim sabitlerinin tanımları için.
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -20,7 +20,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -46,19 +46,19 @@ helpviewer_keywords:
 - _tcsinc function
 - tcsinc function
 ms.assetid: 54685943-8e2c-45e9-a559-2d94930dc6b4
-ms.openlocfilehash: 0cfbe857ec8bbcdec887d4594cee0bf2b66de380
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a53102f991ec7467fd74e1997f8d5b7419b15aa1
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81362905"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919981"
 ---
 # <a name="_strinc-_wcsinc-_mbsinc-_mbsinc_l"></a>_strinc, _wcsinc, _mbsinc, _mbsinc_l
 
-Bir dize işaretçisini bir karaktere göre ilerletin.
+Bir dize işaretçisini bir karakter ile ilerletir.
 
 > [!IMPORTANT]
-> **_mbsinc** ve **_mbsinc_l,** Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> **_mbsinc** ve **_mbsinc_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -85,36 +85,36 @@ unsigned char *_mbsinc_l(
 *geçerli*<br/>
 Karakter işaretçisi.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her biri, *geçerliyi*hemen izleyen karaktere bir işaretçi döndürür.
+Bu yordamların her biri, hemen *geçerli*olan karaktere bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_mbsinc** işlevi, *akımı*hemen izleyen çok bayt karakterinin ilk baytına bir işaretçiyi döndürür. **_mbsinc,** şu anda kullanılmakta olan [çok bayt kod sayfasına](../../c-runtime-library/code-pages.md) göre çok bayt karakter dizilerini tanır; **_mbsinc_l,** bunun yerine geçirilen yerel parametreyi kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**_Mbsinc** işlevi, hemen *geçerli*olan çok baytlı karakterin ilk baytına bir işaretçi döndürür. **_mbsinc** , kullanımda olan [çok baytlı kod sayfasına](../../c-runtime-library/code-pages.md) göre çok baytlı karakter dizilerini tanır; **_mbsinc_l** , bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Tchar.h'de tanımlanan genel metin işlevi **_tcsinc,** **_MBCS** **tanımlanmışsa _mbsinc** veya **_UNICODE** tanımlanmış **sa_wcsinc** eşler. Aksi takdirde, **_strinc**için haritalar **_tcsinc.** **_strinc** ve **_wcsinc** **_mbsinc**tek bayt karakterli ve geniş karakterli versiyonlarıdır. **_strinc** ve **_wcsinc** yalnızca bu eşleme için sağlanır ve başka türlü kullanılmamalıdır. Daha fazla bilgi için [genel metin eşlemelerini](../../c-runtime-library/using-generic-text-mappings.md) ve Genel [Metin Eşlemelerini](../../c-runtime-library/generic-text-mappings.md)Kullanma'ya bakın.
+Tchar. h 'de tanımlanan **_tcsinc**genel metin işlevi, **_MBCS** tanımlanmışsa **_mbsinc** eşlenir veya **_UNICODE** tanımlanmışsa **_wcsinc** . Aksi takdirde, **_strinc**eşlenir **_tcsinc** . **_strinc** ve **_wcsinc** , **_mbsinc**tek baytlık karakter ve geniş karakterli bir sürümlerdir. **_strinc** ve **_wcsinc** yalnızca bu eşleme için sağlanır ve aksi halde kullanılmamalıdır. Daha fazla bilgi için bkz. [Genel metin eşlemelerini](../../c-runtime-library/using-generic-text-mappings.md) ve [Genel metin eşlemelerini](../../c-runtime-library/generic-text-mappings.md)kullanma.
 
-*Akım* **NULL**ise, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL** döndürür ve **EINVAL** **için errno** ayarlar.
+*Geçerli* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
 > [!IMPORTANT]
-> Bu işlevler arabellek taşma tehditlerine karşı savunmasız olabilir. Arabellek taşmaları, gereksiz bir ayrıcalık yükselmesine neden olabileceğinden sistem saldırıları için kullanılabilir. Daha fazla bilgi için [bkz.](/windows/win32/SecBP/avoiding-buffer-overruns)
+> Bu işlevler, arabellek taşma tehditlerine karşı savunmasız olabilir. Arabellek taşmaları, sistem saldırıları için kullanılabilir ve bu ayrıcalıklar ayrıcalık yükselmesine neden olabilir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsinc**|\<mbstring.h>|
-|**_mbsinc_l**|\<mbstring.h>|
-|**_strinc**|\<tchar.h>|
-|**_wcsinc**|\<tchar.h>|
+|**_mbsinc**|\<mbstring. h>|
+|**_mbsinc_l**|\<mbstring. h>|
+|**_strinc**|\<Tchar. h>|
+|**_wcsinc**|\<Tchar. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -4104,7 +4104,7 @@
                       href: cpp/types-of-expressions.md
                     - name: Birincil ifadeler
                       href: cpp/primary-expressions.md
-                    - name: Üç nokta ve variadic şablonları
+                    - name: Üç nokta ve değişen sayıda bağımsız değişken içeren şablonlar
                       href: cpp/ellipses-and-variadic-templates.md
                     - name: Sonek ifadeleri
                       href: cpp/postfix-expressions.md
@@ -4258,7 +4258,7 @@
                   href: cpp/classes-and-structs-cpp.md
                 - name: sınıf
                   href: cpp/class-cpp.md
-                - name: struct
+                - name: 'struct '
                   href: cpp/struct-cpp.md
                 - name: Sınıf üyelerine genel bakış
                   href: cpp/class-member-overview.md
@@ -6299,7 +6299,7 @@
                   href: windows/attributes/aggregates.md
                 - name: appobject
                   href: windows/attributes/appobject.md
-                - name: async_uuid
+                - name: 'async_uuid '
                   href: windows/attributes/async-uuid.md
                 - name: özniteliği
                   href: windows/attributes/attribute.md
@@ -6311,7 +6311,7 @@
                   href: windows/attributes/case-cpp.md
                 - name: coclass
                   href: windows/attributes/coclass.md
-                - name: com_interface_entry
+                - name: 'com_interface_entry '
                   href: windows/attributes/com-interface-entry-cpp.md
                 - name: denetimi
                   href: windows/attributes/control.md
