@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -39,19 +39,19 @@ helpviewer_keywords:
 - console, writing characters to
 - _putwch_nolock function
 ms.assetid: edbc811d-bac6-47fa-a872-fe4f3a1590b0
-ms.openlocfilehash: 16f01e626f72269286cda045615665152361a887
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: df32b156d8c57d51ee81c4b4893bf11887915672
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338444"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82916204"
 ---
 # <a name="_putch_nolock-_putwch_nolock"></a>_putch_nolock, _putwch_nolock
 
-İş parçacığı kilitlemeden konsola bir karakter yazar.
+İş parçacığını kilitlemeden konsola bir karakter yazar.
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,18 +66,18 @@ wchar_t c
 
 ### <a name="parameters"></a>Parametreler
 
-*C*<br/>
-Karakter çıktı olmak.
+*,*<br/>
+Çıkış olacak karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa *c* verir. **_putch_nolock** başarısız olursa, **EOF**döndürür; **_putwch_nolock** başarısız olursa, **WEOF**döndürür.
+Başarılıysa *c* döndürür. **_Putch_nolock** başarısız olursa, **EOF**döndürür; **_putwch_nolock** başarısız olursa, **weof**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_putch_nolock** ve **_putwch_nolock,** diğer iş parçacıkları tarafından parazite karşı korunmayanlar dışında, sırasıyla **_putch** ve **_putwch**ile aynıdır. Diğer iş parçacığı kilitleme yükü ne olursa olsun onlar daha hızlı olabilir. Bu işlevleri yalnızca tek iş parçacığı uygulamaları gibi iş parçacığı güvenli bağlamlarda veya arama kapsamının iş parçacığı yalıtımını zaten işlediği durumlarda kullanın.
+**_putch_nolock** ve **_putwch_nolock** , sırasıyla **_putch** ve **_putwch**aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmazlar. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -89,14 +89,14 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putch_nolock**|\<conio.h>|
-|**_putwch_nolock**|\<conio.h>|
+|**_putch_nolock**|\<conio. h>|
+|**_putwch_nolock**|\<conio. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

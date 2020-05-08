@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -40,19 +40,19 @@ helpviewer_keywords:
 - mbsnbicmp function
 - _wcsnicmp function
 ms.assetid: ddb44974-8b0c-42f0-90d0-56c9350bae0c
-ms.openlocfilehash: 80d2708396cdaeb86c25932c3d13129fb318719a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e84e6b367c428dc26a1864db80f6828f7ec9c176
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81340574"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82911829"
 ---
 # <a name="_mbsnbicmp-_mbsnbicmp_l"></a>_mbsnbicmp, _mbsnbicmp_l
 
-İki çok bayt karakterli dizeleri **n** bayt karşılaştırır ve büyük/küçük harf yok sayar.
+İki çok baytlı karakter dizesinin **n** baytını karşılaştırır ve büyük/küçük harf durumunu yoksayar.
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,37 +66,37 @@ int _mbsnbicmp(
 
 ### <a name="parameters"></a>Parametreler
 
-*string1*, *string2*<br/>
-Karşılaştırmak için null-sonlandırılan dizeleri.
+*Dize1*, *dize2*<br/>
+Karşılaştırılacak null ile sonlandırılmış dizeler.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Karşılaştırılacak bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İade değeri, alt dizeleri arasındaki ilişkiyi gösterir.
+Dönüş değeri, alt dizeler arasındaki ilişkiyi gösterir.
 
 |Döndürülen değer|Açıklama|
 |------------------|-----------------|
-|< 0|*string1* *string2* substring daha az substring.|
-|0|*string1* substring *string2* substring ile aynıdır.|
-|> 0|*string1* alt *dizestring2* substring daha büyüktür.|
+|< 0|*Dize1* substring, *dize2* alt dizesi ile küçüktür.|
+|0|*Dize1* substring, *dize2* alt dizesi ile özdeş.|
+|> 0|*Dize1* substring, *dize2* alt dizinden büyük.|
 
-Bir hata **da, string.h** ve Mbstring.h'de tanımlanan **_NLSCMPERROR**_mbsnbicmp döndürür.
+Bir hatada, **_Mbsnbicmp** String. h ve mbstring. h içinde tanımlanan **_NLSCMPERROR**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_mbsnbicmp** işlevi *string1* ve *string2'nin*en çok ilk *sayı* baytlarının bir ordinal karşılaştırmasını gerçekleştirir. Karşılaştırma, her bir karakteri küçük harfe dönüştürerek gerçekleştirilir; [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) **_mbsnbicmp**bir büyük/küçük harf duyarlı sürümüdür. *Sayım* karakterleri karşılaştırılmadan önce her iki dizede de sonlandırıcı null karaktere ulaşılırsa karşılaştırma sona erer. *Sayım* karakterleri karşılaştırılmadan önce her iki dizede sonlandırıcı null karaktere ulaşıldığında dizeleri eşitse, kısa dize daha azdır.
+**_Mbsnbicmp** işlevi, *Dize1* ve *dize2*' nin en fazla ilk *sayım* baytından sıralı bir karşılaştırma gerçekleştirir. Karşılaştırma, her karakteri küçük harfe dönüştürerek gerçekleştirilir; [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) , **_mbsnbicmp**, büyük/küçük harfe duyarlı bir sürümdür. *Sayma* karakterleri karşılaştırılmadan önce her iki dizede de bir Sonlandırıcı null karakterine ulaşıldığında karşılaştırma biter. *Sayı* karakterleri karşılaştırılmadan önce bir dizede bir Sonlandırıcı null karakterine ulaşıldığında dizeler eşitse, daha kısa dize daha küçüktür.
 
-**_mbsnbicmp** [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md)benzer , karakterler yerine bayt *saymak* için dizeleri karşılaştırır dışında.
+**_mbsnbicmp** [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md)benzerdir, ancak dizeleri karakter yerine bayt *sayısı* kadar karşılaştırır.
 
-ASCII tablosunda 'Z' ve 'a' arasında yer alan karakterleri içeren iki\\dize ('',,',',',',']', '^', '_', ve '\`') durumlarına bağlı olarak farklı karşılaştırılır. Örneğin, karşılaştırma küçük ("abcde" > "abcd^") ve diğer yol ("ABCDE" < "ABCD^") büyük ise iki dize "ABCDE" ve "ABCD^" bir şekilde karşılaştırın.
+ASCII tablosunda (' [', '\\', '] ', ' ^ ', ' _ ' ve '\`') ' Z ' ve ' a ' arasında karakter içeren iki dize, durumlarına bağlı olarak farklı şekilde karşılaştırın. Örneğin, "ABCDE" ve "ABCD ^" iki dizesi, karşılaştırma küçük harfli ("ABCDE" > "abcd ^") ve diğer yolla ("ABCDE" < "abcd ^") büyük harfli bir şekilde karşılaştırın.
 
-**_mbsnbicmp,** şu anda kullanılmakta olan [çok bayt kod sayfasına](../../c-runtime-library/code-pages.md) göre çok bayt karakter dizilerini tanır. Geçerli yerel ayardan etkilenmez.
+**_mbsnbicmp** , kullanımda olan [çok baytlı kod sayfasına](../../c-runtime-library/code-pages.md) göre çok baytlı karakter dizilerini tanır. Geçerli yerel ayar ayarından etkilenmez.
 
-*String1* veya *string2* null işaretçisi ise, **_mbsnbicmp** [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmedevam etmesine izin verilirse, işlev **_NLSCMPERROR** döndürür ve **EINVAL** **için errno** ayarlar.
+*Dize1* veya *dize2* , null Işaretçisiyse, **_mbsnbicmp** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa işlev **_NLSCMPERROR** döndürür ve **errno** ' ı **EINVAL**olarak ayarlar.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -109,13 +109,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbicmp**|\<mbstring.h>|
+|**_mbsnbicmp**|\<mbstring. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-[_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md)_mbsnbcmp_l örneğine bakın.
+[_Mbsnbcmp _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -28,12 +28,12 @@ helpviewer_keywords:
 - stream buffering
 - setvbuf function
 ms.assetid: 6aa5aa37-3408-4fa0-992f-87f9f9c4baea
-ms.openlocfilehash: 203265a8dd85854bcedd737359b856fdc4cce04d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 907d02e94c79acf09dfa99a8b42e9f448d32dcfa
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81316257"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82915761"
 ---
 # <a name="setvbuf"></a>setvbuf
 
@@ -52,51 +52,51 @@ int setvbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akışı*<br/>
-**DOSYA** yapısı için işaretçi.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
-*Arabellek*<br/>
-Kullanıcı tarafından tahsis edilen arabellek.
+*arabelleğin*<br/>
+Kullanıcı tarafından ayrılan arabellek.
 
-*Modu*<br/>
+*modundaysa*<br/>
 Arabelleğe alma modu.
 
-*Boyutu*<br/>
-Arabellek boyutu baytlar içinde. İzin verilebilen aralık: 2 <= *boyut* <= INT_MAX (2147483647). Dahili olarak, *boyut* için sağlanan değer 2'nin en yakın katlarına yuvarlanır.
+*boyutla*<br/>
+Bayt cinsinden arabellek boyutu. İzin verilen Aralık: 2 <= *size* <= INT_MAX (2147483647). Dahili olarak, *Boyut* için sağlanan değer, 2 ' nin en yakın katına yuvarlanır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa 0 döndürür.
+Başarılıysa 0 döndürür.
 
-*Akış* **NULL**ise veya *mod* veya *boyut* geçerli bir değişiklik içinde değilse, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, bu işlev -1 döndürür ve **EINVAL** **için errno** ayarlar.
+*Stream* **null**ise veya *mod* veya *Boyut* geçerli bir değişiklik içinde değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev-1 döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
-Bu ve diğer hata kodları hakkında bilgi için [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)bakın.
+Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Setvbuf** işlevi, programın *akış*için hem arabellek hem de arabellek boyutunu denetlemesini sağlar. *akış* açıldığından beri bir G/Ç işleminden geçmedi açık bir dosyaya başvurmalıdır. *Arabellek* tarafından işaret edilen **dizi, NULL**olmadığı sürece arabellek olarak kullanılır, bu durumda **setvbuf** uzunluk *boyutu* \* /2 2 bayt otomatik olarak tahsis edilen bir arabellek kullanır.
+**Setvbuffer** işlevi, programın *akış*için hem arabelleğe alma hem de arabellek boyutunu denetlemesine izin verir. *akış* , açılmasından bu yana bir g/ç işlemi olmayan açık bir dosyaya başvurmalıdır. *Arabelleğe* göre işaret eden dizi, **null**olmadığı sürece arabellek olarak kullanılır. Bu durumda, **setvbuffer** , uzunluk *boyutu*/2 \* 2 bayt olan otomatik olarak ayrılmış bir arabellek kullanır.
 
-Mod **_IOFBF,** **_IOLBF**veya **_IONBF**olmalıdır. *Mod* **_IOFBF** veya **_IOLBF**ise, *boyut* arabellek boyutu olarak kullanılır. *Mod* **_IONBF**ise, akış arabelleğe alınır ve *boyut* ve *arabellek* yoksayılır. *Mod* için değerler ve anlamları şunlardır:
+Mod **_IOFBF**, **_IOLBF**veya **_IONBF**olmalıdır. *Mod* **_IOFBF** veya **_IOLBF**ise, *Boyut* arabelleğin boyutu olarak kullanılır. *Mod* **_IONBF**, akış arabelleğe alınmamış ve *Boyut* ve *arabellek* yok sayılır. *Mod* ve anlamları değerleri şunlardır:
 
 |*mod* değeri|Anlamı|
 |-|-|
-| **_IOFBF** | Tam arabelleğe alma; yani *arabellek* arabellek olarak kullanılır ve *boyut* arabellek boyutu olarak kullanılır. *Arabellek* **NULL**ise, otomatik olarak tahsis edilen arabellek *boyutu* bayt uzun kullanılır. |
-| **_IOLBF** | Bazı sistemler için bu satır arabelleğe alma sağlar. Ancak, Win32 için, davranış **_IOFBF** ile aynıdır - Tam Arabelleğe alma. |
-| **_IONBF** | *Arabellek* veya *boyutu*ne olursa olsun, hiçbir arabellek kullanılır. |
+| **_IOFBF** | Tam arabelleğe alma; diğer bir deyişle *, arabellek* ve *Boyut* arabelleği boyutu olarak kullanılır. *Arabellek* **null**ise, otomatik olarak ayrılan arabellek *boyutu* baytları kullanılır. |
+| **_IOLBF** | Bazı sistemlerde bu, satır arabelleğe almayı sağlar. Ancak, Win32 için davranış **_IOFBF** tam arabelleğe alma ile aynıdır. |
+| **_IONBF** | *Arabellek veya* *boyuttan*bağımsız olarak hiçbir arabellek kullanılmaz. |
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**setvbuf**|\<stdio.h>|
+|**setvbuf**|\<stdio. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -137,7 +137,7 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [fflush](fflush.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>

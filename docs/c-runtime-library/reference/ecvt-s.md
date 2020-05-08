@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -30,16 +30,16 @@ helpviewer_keywords:
 - numbers, converting
 - converting double numbers
 ms.assetid: d52fb0a6-cb91-423f-80b3-952a8955d914
-ms.openlocfilehash: e33840e772de770e0f05ae45d2c2d4bec7e09939
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9ac623c6cb80c774184dcb005e6d1d631c498040
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81348055"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82915149"
 ---
 # <a name="_ecvt_s"></a>_ecvt_s
 
-**Çift** sayıyı dize dönüştürür. Bu, [CRT'deki Güvenlik Özellikleri'nde](../../c-runtime-library/security-features-in-the-crt.md)açıklandığı gibi güvenlik geliştirmelerine sahip [_ecvt](ecvt.md) bir sürümüdür.
+**Çift** sayıyı dizeye dönüştürür. Bu, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_ecvt](ecvt.md) bir sürümüdür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,65 +65,65 @@ errno_t _ecvt_s(
 ### <a name="parameters"></a>Parametreler
 
 *_Buffer*<br/>
-Sayışla doldu, dönüştürme sonucu, basamak lar dizesine işaretçiyle doldurulur.
+Basamak dizesinin işaretçisi, dönüştürmenin sonucu ile doldurulmuştur.
 
 *_SizeInBytes*<br/>
-Arabellek bayt boyutu.
+Arabelleğin bayt cinsinden boyutu.
 
-*_value*<br/>
-Dönüştürülecek numara.
+*_Value*<br/>
+Dönüştürülecek sayı.
 
-*_count*<br/>
+*_Count*<br/>
 Depolanan basamak sayısı.
 
 *_Dec*<br/>
-Depolanan ondalık nokta konumu.
+Saklı ondalık noktası konumu.
 
 *_Sign*<br/>
 Dönüştürülen sayının işareti.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır. İade değeri, bir hata varsa bir hata kodudur. Hata kodları Errno.h'de tanımlanır. Daha fazla bilgi için [bkz: errno, _doserrno, _sys_errlist ve _sys_nerr.](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+Başarılıysa sıfır. Hata varsa dönüş değeri bir hata kodudur. Hata kodları errno. h içinde tanımlanır. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Aşağıdaki tabloda listelenen geçersiz bir parametre durumunda, bu işlev [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmedevam etmesine izin verilirse, bu işlev **EINVAL için errno** ayarlar ve **EINVAL** döndürür. **EINVAL**
+Aşağıdaki tabloda listelendiği gibi geçersiz bir parametre söz konusu olduğunda, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
 
-### <a name="error-conditions"></a>Hata Koşulları
+### <a name="error-conditions"></a>Hata koşulları
 
-|*_Buffer*|*_SizeInBytes*|_value|_count|_Dec|_Sign|Döndürülen değer|*Arabellekteki* değer|
+|*_Buffer*|*_SizeInBytes*|_Value|_Count|_Dec|_Sign|Döndürülen değer|*Arabellekteki* değer|
 |---------------|--------------------|-------------|-------------|-----------|------------|------------------|-----------------------|
-|**Null**|herhangi bir|herhangi bir|herhangi bir|herhangi bir|herhangi bir|**Eınval**|Değiştirilmedi.|
-|**NULL** değil (geçerli belleğe işaret)|<=0|herhangi bir|herhangi bir|herhangi bir|herhangi bir|**Eınval**|Değiştirilmedi.|
-|herhangi bir|herhangi bir|herhangi bir|herhangi bir|**Null**|herhangi bir|**Eınval**|Değiştirilmedi.|
-|herhangi bir|herhangi bir|herhangi bir|herhangi bir|herhangi bir|**Null**|**Eınval**|Değiştirilmedi.|
+|**DEĞER**|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
+|**Null** değil (geçerli belleğe işaret eder)|<= 0|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
+|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**DEĞER**|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
+|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**DEĞER**|**EıNVAL**|Değiştirilmedi.|
 
 ## <a name="security-issues"></a>Güvenlik Sorunları
 
-**arabellek** geçerli belleğe işaret *etmiyorsa* ve **NULL**değilse _ecvt_s bir erişim ihlali oluşturabilir.
+*arabellek* geçerli belleğe işaret etmezse ve **null**değilse **_ecvt_s** bir erişim ihlali oluşturabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_ecvt_s** işlevi kayan nokta sayısını bir karakter dizesine dönüştürür. *_Value* parametresi dönüştürülecek kayan nokta sayısıdır. Bu *işlev, _Value* basamaklarını bir dize olarak *saymak* için depolar ve null karakterini ('\0') ekler. *_Value'daki* basamak sayısı *_Count*aşıyorsa, düşük sıralı basamak yuvarlanır. *Sayı* basamaklarından daha az sayı varsa, dize sıfırlarla tamamlanır.
+**_Ecvt_s** işlevi bir kayan nokta numarasını bir karakter dizesine dönüştürür. *_Value* parametresi dönüştürülecek kayan noktalı sayıdır. Bu işlev, *_Value* *sayı* rakamlarını bir dize olarak depolar ve null karakteri (' \ 0 ') ekler. *_Value* basamak sayısı *_Count*aşarsa, düşük sıra basamağı yuvarlanır. *Count* basamaktan daha azı varsa, dize sıfırlar ile doldurulur.
 
-Dizede yalnızca basamaklar depolanır. Ondalık noktanın konumu ve *_Value* işareti *_Dec* ve *çağrıdan* sonra _Sign elde edilebilir. *_Dec* parametresi, dize başına göre ondalık noktakonumunu veren bir tamsayı değerine işaret verir. 0 veya negatif tamsayı değeri, ondalık noktanın ilk basamaktan solunda olduğunu gösterir. *_Sign* parametresi dönüştürülen sayının işaretini gösteren bir tamsayıya işaret edin. Tamsayı değeri 0 ise, sayı pozitiftir. Aksi takdirde, sayı negatiftir.
+Yalnızca rakamlar dizede depolanır. Ondalık noktanın konumu ve *_Value* işareti, çağrıdan sonra *_Dec* ve *_Sign* elde edilebilir. *_Dec* parametresi, dizenin başlangıcına göre ondalık noktanın konumunu sağlayan bir tamsayı değerine işaret eder. 0 veya negatif bir tamsayı değeri, ondalık noktanın ilk basamağın solunda olduğunu gösterir. *_Sign* parametresi, dönüştürülmüş sayının işaretini gösteren bir tamsayıyı işaret eder. Tamsayı değeri 0 ise, sayı pozitif olur. Aksi takdirde, sayı negatif olur.
 
-Herhangi bir kayan nokta değeri için uzunluk **_CVTBUFSIZE** arabelleği yeterlidir.
+Bir arabellek uzunluğu **_CVTBUFSIZE** herhangi bir kayan nokta değeri için yeterlidir.
 
-**_ecvt_s** ve **_fcvt_s** arasındaki fark *_Count* parametrenin yorumlanmasındadır. **_ecvt_s** *_Count* çıkış dizesinde toplam basamak sayısı olarak yorumlarken, **_fcvt_s** *_Count* ondalık basamaktan sonraki basamak sayısı olarak yorumlar.
+**_Ecvt_s** ve **_fcvt_s** arasındaki fark *_Count* parametresinin yorumlamasıdır. **_ecvt_s** , çıkış dizesindeki basamakların toplam sayısı olarak *_Count* yorumlarken **_fcvt_s** *_Count* ondalık ayırıcıdan sonraki basamak sayısı olarak yorumlar.
 
-C++'da, bu işlevi kullanmak şablon aşırı yüklemi ile basitleştirilir; aşırı yükleme arabellek uzunluğunu otomatik olarak çıkararak boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../../c-runtime-library/secure-template-overloads.md)
+C++ ' da, bu işlevin kullanılması bir şablon aşırı yüklemesiyle basitleştirilmiştir; aşırı yükleme, arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevin hata ayıklama sürümü önce arabelleği 0xFE ile doldurur. Bu davranışı devre dışı kullanabilirsiniz, [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevin hata ayıklama sürümü ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)kullanın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli başlık|İsteğe bağlı üstbilgi|
+|İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
-|**_ecvt_s**|\<stdlib.h>|\<errno.h>|
+|**_ecvt_s**|\<Stdlib. h>|\<errno. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -159,7 +159,7 @@ Converted value: 12000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
 [_ecvt](ecvt.md)<br/>

@@ -15,7 +15,7 @@ api_location:
 - msvcrt.dll
 - msvcr100.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -34,22 +34,22 @@ helpviewer_keywords:
 - gets function
 - standard input, reading from
 ms.assetid: 1ec2dd4b-f801-48ea-97c2-892590f16024
-ms.openlocfilehash: a1fd3218f75079554d049d4ef4c3691a2fbdd542
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1c60cf14334a0dcc0492b23da10a36c3219bb699
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81349326"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919907"
 ---
 # <a name="gets-_getws"></a>gets, _getws
 
-`stdin` Akıştan bir satır alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md)bakın.
+`stdin` Akıştan bir satır alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).
 
 > [!IMPORTANT]
-> Bu işlevler geçersizdir. Visual Studio 2015'ten itibaren CRT'de kullanılamazlar. Bu işlevlerin güvenli sürümleri, gets_s ve _getws_s, hala kullanılabilir. Bu alternatif işlevler hakkında daha fazla bilgi için [gets_s, _getws_s.](../c-runtime-library/reference/gets-s-getws-s.md)
+> Bu işlevler artık kullanılmıyor. Visual Studio 2015 ' den başlayarak, bu dosyalar CRT içinde kullanılamaz. Bu işlevlerin güvenli sürümleri, gets_s ve _getws_s hala kullanılabilir. Bu alternatif işlevler hakkında daha fazla bilgi için bkz. [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,27 +72,27 @@ wchar_t *_getws(
 
 #### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
+*arabelleğin*<br/>
 Giriş dizesi için depolama konumu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa bağımsız değişkenini döndürür. **NULL** işaretçisi bir hata veya dosya sonu koşulunu gösterir. Hangisinin oluştuğunu belirlemek için [ferror](../c-runtime-library/reference/ferror.md) veya [feof](../c-runtime-library/reference/feof.md) kullanın. NULL `buffer` **NULL**ise, bu işlevler [Parametre Doğrulama](../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre işleyicisi çağırır. Yürütmedevam etmesine izin verilirse, **NULL** bu işlevler NULL `EINVAL`döndürdü ve errno'ya ayarlar.
+Başarılı olursa bağımsız değişkenini döndürür. **Null** işaretçisi bir hata veya dosya sonu koşulunu gösterir. Hangi birinin oluştuğunu öğrenmek için [ferror](../c-runtime-library/reference/ferror.md) veya [feof](../c-runtime-library/reference/feof.md) kullanın. NULL `buffer` ise **NULL**, bu işlevler [parametre doğrulama](../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **null** döndürür ve errno öğesini olarak `EINVAL`ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev, `gets` standart giriş akışından `stdin` bir satır `buffer`okur ve onu . Çizgi, ilk yeni satır karakteri ('\n') dahil olmak üzere tüm karakterlerden oluşur. `gets`sonra satırı döndürmeden önce yeni satır karakterini null karakteri ('\0') ile değiştirir. Buna karşılık, `fgets` işlev yeni çizgi karakterini korur. `_getws`geniş karakterli bir `gets`versiyonudur; bağımsız değişkeni ve döndürme değeri geniş karakterli dizeleridir.
+`gets` İşlevi standart giriş akışından `stdin` bir satırı okur ve içinde `buffer`depolar. Satır, ilk yeni satır karakteri (' \n ') dahil olmak üzere tüm karakterlerden oluşur. `gets`sonra satırı döndürmeden önce yeni satır karakterini null karakteri (' \ 0 ') ile değiştirir. Buna karşılık `fgets` işlev, yeni satır karakterini korur. `_getws`, öğesinin `gets`geniş karakterli bir sürümüdür; bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir.
 
 > [!IMPORTANT]
-> Gets tarafından okunan karakter sayısını sınırlamanın bir yolu olmadığından, güvenilmeyen giriş arabellek taşmaları kolayca neden olabilir. Bunun yerine `fgets` kullanın.
+> Tarafından okunan karakter sayısını sınırlamanın bir yolu olmadığından, güvenilmeyen giriş, arabellek taşmalarına kolayca neden olabilir. Bunun yerine `fgets` kullanın.
 
-C++'da, bu işlevlerin daha yeni ve güvenli karşıtlarını çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için Bkz. [Güvenli Şablon Overloads.](../c-runtime-library/secure-template-overloads.md)
+C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../c-runtime-library/secure-template-overloads.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_getts`|`gets`|`gets`|`_getws`|
 
@@ -100,10 +100,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`gets`|\<stdio.h>|
-|`_getws`|\<stdio.h> \<veya wchar.h>|
+|`gets`|\<stdio. h>|
+|`_getws`|\<stdio. h> veya \<wchar. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -123,7 +123,7 @@ int main( void )
 }
 ```
 
-20 karakterden uzun girişin satır arabelleği aşındıracağını ve neredeyse kesinlikle programın çökmesine neden olacağını unutmayın.
+20 karakterden uzun girişlerin satır arabelleğini taşıyacağını ve neredeyse tamamen programın kilitlenmesine neden olduğunu unutmayın.
 
 ```Output
 
@@ -132,7 +132,7 @@ Hello there!The line entered was: Hello there!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış I/O](../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../c-runtime-library/stream-i-o.md)<br/>
 [fgets, fgetws](../c-runtime-library/reference/fgets-fgetws.md)<br/>
 [fputs, fputws](../c-runtime-library/reference/fputs-fputws.md)<br/>
 [puts, _putws](../c-runtime-library/reference/puts-putws.md)

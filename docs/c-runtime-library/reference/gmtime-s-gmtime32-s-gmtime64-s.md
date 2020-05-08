@@ -19,7 +19,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -41,16 +41,16 @@ helpviewer_keywords:
 - _gmtime_s function
 - _gmtime32_s function
 ms.assetid: 261c7df0-2b0c-44ba-ba61-cb83efaec60f
-ms.openlocfilehash: e73d2d3cca852b657631361d8271bec7f9c86ac5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 152b0569d452fc48af7583b23c6a2449cb24d0d6
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81344090"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82916228"
 ---
 # <a name="gmtime_s-_gmtime32_s-_gmtime64_s"></a>gmtime_s, _gmtime32_s, _gmtime64_s
 
-Bir zaman değerini **tm** yapısına dönüştürür. Bunlar, [CRT'deki](gmtime-gmtime32-gmtime64.md) Güvenlik Özellikleri'nde açıklandığı gibi güvenlik geliştirmeleriyle _gmtime64 _gmtime32 [sürümleridir.](../../c-runtime-library/security-features-in-the-crt.md)
+Bir zaman değerini bir **TM** yapısına dönüştürür. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_gmtime64 _gmtime32](gmtime-gmtime32-gmtime64.md) sürümleridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,59 +72,59 @@ errno_t _gmtime64_s(
 ### <a name="parameters"></a>Parametreler
 
 *tmDest*<br/>
-[TM](../../c-runtime-library/standard-types.md) yapısına işaretçi. Döndürülen yapının alanları, yerel saat yerine UTC'de *zamanlayıcı* bağımsız değişkeninin değerlendirilen değerini tutar.
+[TM](../../c-runtime-library/standard-types.md) yapısına yönelik işaretçi. Döndürülen yapının alanları, *Zamanlayıcı* bağımsız değişkeninin değerlendirilen değerini yerel saat yerine UTC olarak tutar.
 
-*kaynakZaman*<br/>
-Zaman depolanan işaretçi. Zaman, gece yarısından (00:00:00), 1 Ocak 1970, eşgüdümlü evrensel saat (UTC) itibaren geçen saniyeolarak temsil edilir.
+*sourceTime*<br/>
+Saklı saate yönelik işaretçi. Süre gece yarısı (00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) itibariyle geçen saniye olarak gösterilir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır. İade değeri, bir hata varsa bir hata kodudur. Hata kodları Errno.h tanımlanır; bu hataların bir listesi için, [bkz.](../../c-runtime-library/errno-constants.md)
+Başarılıysa sıfır. Hata varsa dönüş değeri bir hata kodudur. Hata kodları errno. h; içinde tanımlanmıştır Bu hataların listelenmesi için bkz. [errno](../../c-runtime-library/errno-constants.md).
 
-### <a name="error-conditions"></a>Hata Koşulları
+### <a name="error-conditions"></a>Hata koşulları
 
-|*tmDest*|*kaynakZaman*|Dönüş|*tmDest* değeri|
+|*tmDest*|*sourceTime*|Döndürülmesini|*Tmdest* değeri|
 |-----------|------------|------------|--------------------|
-|**Null**|herhangi bir|**Eınval**|Değiştirilmedi.|
-|**NULL** değil (geçerli belleğe işaret)|**Null**|**Eınval**|Tüm alanlar -1 olarak ayarlanır.|
-|**NULL** değil|< 0|**Eınval**|Tüm alanlar -1 olarak ayarlanır.|
+|**DEĞER**|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
+|**Null** değil (geçerli belleğe işaret eder)|**DEĞER**|**EıNVAL**|Tüm alanlar-1 olarak ayarlanmıştır.|
+|**Null** değil|< 0|**EıNVAL**|Tüm alanlar-1 olarak ayarlanmıştır.|
 
-İlk iki hata koşulu söz konusu olduğunda, geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütme devam etmesine izin verilirse, bu işlevler EINVAL **için errno** ayarlayın ve **EINVAL** döndürün. **EINVAL**
+İlk iki hata koşulu durumunda, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_gmtime32_s** işlevi *kaynakZaman* değerini ayırır ve Time.h'de tanımlanan **tm**türünde bir yapıda saklar. Yapının adresi *tmDest'te*geçer. *SourceTime* değeri genellikle bir aramadan [zaman](time-time32-time64.md) işlevine elde edilir.
+**_Gmtime32_s** Işlevi *sourcetime* değerini ayırır ve, Time. h içinde tanımlanan **TM**türünde bir yapıda depolar. Yapının adresi, *Tmdest*' de geçirilir. *Sourcetime* değeri genellikle [Time](time-time32-time64.md) işlevine yapılan çağrıdan alınır.
 
 > [!NOTE]
-> Hedef ortam, gün ışığından yararlanma zamanının geçerli olup olmadığını belirlemeye çalışmalıdır. C çalışma zamanı kitaplığı, gün ışığından yararlanma saatinin hesaplanmasını uygulamak için ABD kurallarını varsayar.
+> Hedef ortam, gün ışığından yararlanma saatinin etkin olup olmadığını belirlemeyi denemelidir. C çalışma zamanı kitaplığı, gün ışığından yararlanma saatinin hesaplanmasını uygulamak için Birleşik Devletler kuralları varsayar.
 
-Yapı alanlarının her biri, aşağıdaki tabloda gösterildiği gibi, tür **int'dir.**
+Yapı alanlarının her biri, aşağıdaki tabloda gösterildiği gibi **int**türündedir.
 
 |Alan|Açıklama|
 |-|-|
-|**tm_sec**|Saniye dakika sonra (0 - 59).|
-|**tm_min**|Dakika sonra saat (0 - 59).|
-|**tm_hour**|Gece yarısından (0 - 23) itibaren saatler.|
-|**tm_mday**|Ayın günü (1 - 31).|
-|**tm_mon**|Ay (0 - 11; Ocak = 0).|
-|**tm_year**|Yıl (cari yıl eksi 1900).|
-|**tm_wday**|Haftanın günü (0 - 6; Pazar = 0).|
-|**tm_yday**|Yılın günü (0 - 365; 1 Ocak = 0).|
-|**tm_isdst**|her zaman 0 **gmtime_s**için .|
+|**tm_sec**|Dakika sonra saniye (0-59).|
+|**tm_min**|Saat sonra dakika (0-59).|
+|**tm_hour**|Gece yarısından itibaren saat (0-23).|
+|**tm_mday**|Ayın günü (1-31).|
+|**tm_mon**|Ay (0-11; Ocak = 0).|
+|**tm_year**|Yıl (geçerli yıl eksi 1900).|
+|**tm_wday**|Haftanın günü (0-6; Pazar = 0).|
+|**tm_yday**|Yılın günü (0-365; 1 Ocak = 0).|
+|**tm_isdst**|**Gmtime_s**için her zaman 0.|
 
-**_gmtime64_s,** **__time64_t** yapısını kullanan, tarihlerin 23:59:59, 31 Aralık 3000, UTC; **gmtime32_s** ise sadece 23:59:59 18 Ocak 2038, UTC tarihleri temsil ediyor. Midnight, 1 Ocak 1970, her iki işlev için de tarih aralığının alt sınırıdır.
+**__time64_t** yapısını kullanan **_gmtime64_s**, tarihlerin 23:59:59, 31 Aralık 3000, UTC; tarihine kadar ifade etmesine izin verir. **gmtime32_s** yalnızca tarihi 18 Ocak 2038, UTC 23:59:59 ile temsil eder. 1 Ocak 1970 gece yarısı, bu işlevlerin her ikisi için de tarih aralığının alt sınırıdır.
 
-**gmtime_s** **_gmtime64_s** değerlendiren bir satır dışı fonksiyondur ve **time_t** **__time64_t**eşdeğerdir. Derleyiciyi **time_t** eski 32 bit **time_t**olarak yorumlamaya zorlamanız gerekiyorsa, **_USE_32BIT_TIME_T**tanımlayabilirsiniz. Bunu yapmak **gmtime_s** **_gmtime32_s**için sıralı olmasını sağlayacaktır. Başvurunuz 18 Ocak 2038'den sonra başarısız olabileceğinden ve 64 bit platformlarda izin verilmediği için bu önerilmez.
+**gmtime_s** , **_gmtime64_s** değerlendirilen ve **time_t** **__time64_t**eşdeğer bir satır içi işlevdir. Derleyicinin **time_t** eski 32 bit **time_t**olarak yorumlamasını zorlamak istiyorsanız **_USE_32BIT_TIME_T**tanımlayabilirsiniz. Bunun yapılması, **gmtime_s** **_gmtime32_s**olarak sıralanmasına neden olur. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden ve 64-bit platformlarda izin verilmediği için bu önerilmez.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli C üstbilgi|Gerekli C++ üstbilgi|
+|Yordam|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
 |-------------|---------------------|-|
-|**gmtime_s**, **_gmtime32_s**, **_gmtime64_s**|\<time.h>|\<ctime> \<veya time.h>|
+|**gmtime_s**, **_gmtime32_s**, **_gmtime64_s**|\<Time. h>|\<CTime> veya \<saati. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -39,16 +39,16 @@ helpviewer_keywords:
 - path names
 - _tsplitpath function
 ms.assetid: 32bd76b5-1385-4ee8-a64c-abcb541cd2e4
-ms.openlocfilehash: 6798f93b2d1bc18a190b3b015bf8c882a3fa8a37
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1d24565a912d74060e60024dcfd90b8018cae32d
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81355607"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82920278"
 ---
 # <a name="_splitpath-_wsplitpath"></a>_splitpath, _wsplitpath
 
-Bir yol adını bileşenlere ayırın. Bu işlevlerin daha güvenli sürümleri mevcuttur, [_splitpath_s bakın, _wsplitpath_s.](splitpath-s-wsplitpath-s.md)
+Bir yol adını bileşenlere bölün. Bu işlevlerin daha güvenli sürümleri mevcuttur, bkz. [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,70 +71,70 @@ void _wsplitpath(
 
 ### <a name="parameters"></a>Parametreler
 
-*Yolu*<br/>
+*Yolun*<br/>
 Tam yol.
 
-*Sürücü*<br/>
-Sürücü harfi, ardından bir kolon (**:**). Sürücü harfine ihtiyacınız yoksa bu parametre için **NULL'u** geçebilirsiniz.
+*sürücü*<br/>
+Sürücü harfi, ardından iki nokta üst üste (**:**). Sürücü harfine ihtiyacınız yoksa, bu parametre için **null değeri** geçirebilirsiniz.
 
-*Dir*<br/>
-İzyolu yolu, çizgi izleme de dahil olmak üzere. İleri eğik **/** çizgiler ( **\\** ), ters eğik çizgi ( ), veya her ikisi de kullanılabilir. Dizin yoluna ihtiyacınız yoksa bu parametre için **NULL'u** geçebilirsiniz.
+*öğesini*<br/>
+Sondaki eğik çizgi dahil dizin yolu. Eğik çizgi ( **/** ), ters eğik **\\** çizgi () veya her ikisi de kullanılabilir. Dizin yoluna ihtiyacınız yoksa, bu parametre için **null değeri** geçirebilirsiniz.
 
-*Fname*<br/>
-Temel dosya adı (uzantısı yok). Dosya adı gerekmezseniz bu parametre için **NULL** geçirebilirsiniz.
+*fname*<br/>
+Taban dosya adı (uzantı yok). Dosya adına ihtiyacınız yoksa, bu parametre için **null değeri** geçirebilirsiniz.
 
-*Dahili*<br/>
-Dosya adı uzantısı, satır aralığı da dahil olmak üzere (**.**). Dosya adı uzantısına ihtiyacınız yoksa bu parametre için **NULL'u** geçebilirsiniz.
+*leri*<br/>
+Baştaki nokta (**.**) dahil dosya adı uzantısı. Dosya adı uzantısına ihtiyacınız yoksa, bu parametre için **null değeri** geçirebilirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_splitpath** işlevi bir yolu dört bileşenine ayırır. **_splitpath,** çok bayt karakterli dize bağımsız değişkenlerini uygun şekilde işleyerek, şu anda kullanılmakta olan çok bayt kod sayfasına göre çok bayt karakter dizilerini tanıyarak çalışır. **_wsplitpath** **_splitpath**geniş karakterli bir versiyonudur; **_wsplitpath** bağımsız değişkenleri geniş karakterli dizeleridir. Bu işlevler aynı şekilde başka türlü çalışır.
+**_Splitpath** işlevi bir yolu dört bileşene ayırır. **_splitpath** çok baytlı karakter dizesi bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini kullanımda olan çok baytlı kod sayfasına göre tanıyor. **_wsplitpath** , **_splitpath**geniş karakterli bir sürümüdür; **_wsplitpath** bağımsız değişkenler geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır.
 
-**Güvenlik Notu** Bu işlevler, arabellek taşma sorunu tarafından ortaya çıkarılan olası bir tehdit le karşı lanır. Arabellek taşma sorunları, sık karşılaşılan bir sistem saldırısı yöntemidir ve bu da haksız bir ayrıcalık yükselmesine neden olabilir. Daha fazla bilgi için [bkz.](/windows/win32/SecBP/avoiding-buffer-overruns) Bu işlevlerin daha güvenli sürümleri mevcuttur; [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md)bakın.
+**Güvenlik notunun** Bu işlevler, bir arabellek taşması sorunu ile ilgili olası bir tehdit doğurur. Arabellek taşması sorunları, sistem saldırılarına karşı sık kullanılan bir yöntemdir ve bu da garanti edilmemiş ayrıcalık yükselmesine neden olur. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns). Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tsplitpath**|**_splitpath**|**_splitpath**|**_wsplitpath**|
 
-Tam yolun her bileşeni ayrı bir arabellekte depolanır; _MAX_DRIVE **,** **_MAX_DIR,** **_MAX_FNAME**ve **_MAX_EXT** (STDLIB'de tanımlanan) manifesto sabitleri. H) her dosya bileşeni için maksimum boyutu belirtin. Karşılık gelen bildirim sabitlerinden daha büyük dosya bileşenleri yığın bozulmasına neden olur.
+Tam yolun her bileşeni ayrı bir arabellekte saklanır; bildirim sabitleri **_MAX_DRIVE**, **_MAX_DIR**, **_MAX_FNAME**ve **_MAX_EXT** (Stdlib içinde tanımlanmıştır). H) her bir dosya bileşeni için en büyük boyutu belirtin. Karşılık gelen bildirim sabitlerinden daha büyük olan dosya bileşenleri yığın bozulması oluşmasına neden olur.
 
-Olası arabellek taşmasını önlemek için her arabellek karşılık gelen bildirim sabiti kadar büyük olmalıdır.
+Olası arabellek taşmasını önlemek için her bir arabelleğin karşılık gelen bildirim sabiti kadar büyük olması gerekir.
 
-Aşağıdaki tabloda bildirim sabitlerinin değerleri listelenebönemlidir.
+Aşağıdaki tablo, bildirim sabitlerinin değerlerini listelemektedir.
 
-|Adı|Değer|
+|Name|Değer|
 |----------|-----------|
 |**_MAX_DRIVE**|3|
 |**_MAX_DIR**|256|
 |**_MAX_FNAME**|256|
 |**_MAX_EXT**|256|
 
-Tam yol bir bileşen (örneğin, bir dosya adı) içermiyorsa, **_splitpath** ilgili arabelleklere boş dizeleri atar.
+Tam yol bir bileşen (örneğin, bir dosya adı) içermiyorsa **_splitpath** , karşılık gelen arabelleklere boş dizeler atar.
 
-Gerek meyen *yol* dışındaki herhangi bir parametre için **_SPLITPATH** için **NULL'u** geçebilirsiniz.
+İhtiyacınız *olmayan bir* parametre Için **_splitpath** **null değeri** geçirebilirsiniz.
 
-*Yol* **NULL**ise, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmedevam etmesine izin verilirse, **errno** **EINVAL** olarak ayarlanır ve işlev **EINVAL**döndürür.
+*Yol* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **EINVAL**döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_splitpath**|\<stdlib.h>|
-|**_wsplitpath**|\<stdlib.h> \<veya wchar.h>|
+|**_splitpath**|\<Stdlib. h>|
+|**_wsplitpath**|\<Stdlib. h> veya \<wchar. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-[_makepath](makepath-wmakepath.md)için örneğe bakın.
+[_Makepath](makepath-wmakepath.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya Işleme](../../c-runtime-library/file-handling.md)<br/>
+[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
 [_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
 [_getmbcp](getmbcp.md)<br/>
 [_makepath, _wmakepath](makepath-wmakepath.md)<br/>

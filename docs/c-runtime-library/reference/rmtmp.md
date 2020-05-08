@@ -16,7 +16,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -31,12 +31,12 @@ helpviewer_keywords:
 - files [C++], removing
 - temporary files [C++], removing
 ms.assetid: 7419501e-2587-4f2a-b469-0dca07f84736
-ms.openlocfilehash: 1dc95d0f77528c26bad796ab6166998fca20a8ac
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ca5c693a1baed7e5f31219cdbee712b5c77f2a85
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338027"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82917645"
 ---
 # <a name="_rmtmp"></a>_rmtmp
 
@@ -51,25 +51,25 @@ int _rmtmp( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_rmtmp,** kapatılan ve silinen geçici dosya sayısını döndürür.
+**_rmtmp** kapatılan ve silinen geçici dosya sayısını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_rmtmp** işlevi geçerli dizindeki tüm geçici dosyaları temizler. İşlev yalnızca **tmpfile**tarafından oluşturulan dosyaları kaldırır; yalnızca geçici dosyaların oluşturulduğu dizinde kullanın.
+**_Rmtmp** işlevi, geçerli dizindeki tüm geçici dosyaları temizler. İşlevi yalnızca **tmpfile**tarafından oluşturulan dosyaları kaldırır; Bunu yalnızca geçici dosyaların oluşturulduğu dizinde kullanın.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_rmtmp**|\<stdio.h>|
+|**_rmtmp**|\<stdio. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -77,7 +77,7 @@ C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-fe
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_flushall](flushall.md)<br/>
 [tmpfile](tmpfile.md)<br/>
 [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>

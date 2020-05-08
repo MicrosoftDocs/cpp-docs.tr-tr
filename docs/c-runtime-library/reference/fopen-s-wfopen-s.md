@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -39,12 +39,12 @@ helpviewer_keywords:
 - files [C++], opening
 - Unicode [C++], files
 ms.assetid: c534857e-39ee-4a3f-bd26-dfe551ac96c3
-ms.openlocfilehash: f18b04cadfa80d7e0be193bbd552efe8486eeeda
-ms.sourcegitcommit: fcc3aeb271449f8be80348740cffef39ba543407
+ms.openlocfilehash: a06191791132784740fa85ca45e23e8aaa56279e
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82538598"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82914909"
 ---
 # <a name="fopen_s-_wfopen_s"></a>fopen_s, _wfopen_s
 
@@ -190,8 +190,8 @@ Unicode ve çok baytlı akışta metin ve ikili modlar kullanma hakkında daha f
 |**w +**|**_O_RDWR** (genellikle **_O_RDWR** &#124; **_O_CREAT** &#124; **_O_TRUNC**)|
 |**kenarı**|**_O_BINARY**|
 |**şı**|**_O_TEXT**|
-|**,**|Hiçbiri|
-|**No**|Hiçbiri|
+|**,**|Yok|
+|**No**|Yok|
 |**S**|**_O_SEQUENTIAL**|
 |**R**|**_O_RANDOM**|
 |**T**|**_O_SHORTLIVED**|

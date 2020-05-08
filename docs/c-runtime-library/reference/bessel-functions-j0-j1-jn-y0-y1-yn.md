@@ -1,5 +1,5 @@
 ---
-title: 'Bessel Fonksiyonları: _j0, _j1, _jn, _y0, _y1, _yn'
+title: 'Bessel Işlevleri: _j0, _j1, _jn, _y0, _y1, _yn'
 ms.date: 4/2/2020
 api_name:
 - _j0
@@ -26,7 +26,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -48,16 +48,16 @@ helpviewer_keywords:
 - _y1 function
 - _yn function
 ms.assetid: a21a8bf1-df9d-4ba0-a8c2-e7ef71921d96
-ms.openlocfilehash: cdf722c9c6f6055ac918d1bede59345a9ef8d90d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ef914d542d058898cf9b16478fd40ef4b0725674
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81348656"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82913470"
 ---
-# <a name="bessel-functions-_j0-_j1-_jn-_y0-_y1-_yn"></a>Bessel Fonksiyonları: _j0, _j1, _jn, _y0, _y1, _yn
+# <a name="bessel-functions-_j0-_j1-_jn-_y0-_y1-_yn"></a>Bessel Işlevleri: _j0, _j1, _jn, _y0, _y1, _yn
 
-0, 1 veya n siparişlerinin birinci veya ikinci türünün Bessel işlevini hesaplar. Bessel fonksiyonları genellikle elektromanyetik dalga teorisinin matematiğinde kullanılır.
+0, 1 veya n siparişlerinin birinci veya ikinci çeşidinin Bessel işlevini hesaplar. Bessel işlevleri genellikle elektromanyetik dalga teorisi 'nin matematiğini kullanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -86,41 +86,41 @@ double _yn(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
+*sayı*<br/>
 Kayan nokta değeri.
 
-*n*<br/>
-Bessel fonksiyonunun sonda sırası.
+*No*<br/>
+Bessel işlevinin tamsayı sırası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her biri *x'in*Bessel işlevini döndürür. *x* **_y0**negatif ise , **_y1**, veya **_yn** işlevleri, rutin **EDOM** **için errno** ayarlar , **stderr**bir **_DOMAIN** hata iletisi yazdırır , ve **_HUGE_VAL**döndürür. **_matherr**kullanarak hata işlemeyi değiştirebilirsiniz.
+Bu yordamların her biri *x*olarak bir Bessel işlevi döndürür. **_Y0**, **_y1**veya **_Yn** işlevlerde *x* negatifse, yordam **errno** ' ı **Edom**olarak ayarlar, **stderr**'e **_DOMAIN** bir hata iletisi yazdırır ve **_HUGE_VAL**döndürür. Hata işlemeyi **_matherr**kullanarak değiştirebilirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_j0**, **_j1**ve **_jn** yordamları ilk tür Bessel işlevleri döndürün: siparişler 0, 1 ve n, sırasıyla.
+**_J0**, **_j1**ve **_jn** yordamları ilk tür Bessel işlevlerini döndürür: sırasıyla 0, 1, ve n.
 
-|Girdi|SEH Özel Durumu|Matherr İstisnası|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|**Geçersiz**|**_DOMAIN**|
 
-**_y0**, **_y1**ve **_yn** yordamları ikinci tür Bessel işlevleri ni döndürer: sırasıyla 0, 1 ve n siparişleri.
+**_Y0**, **_y1**ve **_Yn** yordamları ikinci türde Bessel işlevlerini döndürür: sırasıyla 0, 1, ve n.
 
-|Girdi|SEH Özel Durumu|Matherr İstisnası|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|**Geçersiz**|**_DOMAIN**|
-|± 0|**SIFIR BÖL**|**_SING**|
+|± 0|**SıFıR bölme**|**_SING**|
 |&#124;x&#124; < 0,0|**Geçersiz**|**_DOMAIN**|
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_j0**, **_j1**, **_jn**, **_y0**, **_y1**, **_yn**|\<cmath> (C++), \<math.h> (C, C++)|
+|**_j0**, **_j1**, **_jn**, **_y0**, **_y1**, **_Yn**|\<cmath> (C++), \<Math. h> (C, C++)|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -20,7 +20,7 @@ api_location:
 - api-ms-win-crt-convert-l1-1-0.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - ntoskrnl.exe
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -32,12 +32,12 @@ helpviewer_keywords:
 - _mbtowc_l function
 - mbtowc_l function
 ms.assetid: dfd1c8a7-e73a-4307-9353-53b70b45d4d1
-ms.openlocfilehash: 99659def42cba4e832c26b1535706ea576931969
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 54e50da06fbe009184894edc60b6267e372aefc1
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81338790"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82915422"
 ---
 # <a name="mbtowc-_mbtowc_l"></a>mbtowc, _mbtowc_l
 
@@ -61,40 +61,40 @@ int _mbtowc_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Wchar*<br/>
-Geniş bir karakterin adresi **(wchar_t**yazın).
+*wchar*<br/>
+Geniş bir karakterin adresi (tür **wchar_t**).
 
 *mbchar*<br/>
-Bayt dizisinin adresi (çok bayt karakter).
+Bir bayt dizisinin adresi (çok baytlı bir karakter).
 
-*Sayısı*<br/>
-Kontrol etmek için bayt sayısı.
+*biriktirme*<br/>
+Denetlenecek bayt sayısı.
 
-*Yerel ayar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Mbchar** **NULL** değilse ve *mbchar* işaret nesnesi geçerli bir çok bayt karakter oluşturursa, **mbtowc** çok bayt karakterinin baytlarındaki uzunluğu döndürür. *Mbchar* **NULL** ise veya işaret ettiği nesne geniş karakterli null karakter (L'\0') ise, işlev 0 döndürür. *Mbchar'ın* işaret ettiği nesne, ilk *sayım* karakterleri içinde geçerli bir çok bayt karakteri oluşturmuyorsa, -1 döndürür.
+**Mbchar** **null** değilse ve *mbchar* 'ın geçerli bir çok baytlı karakter üzerinde işaret ettiği bir nesne ise **mbtowc** , çok baytlı karakterin bayt cinsinden uzunluğunu döndürür. *Mbchar* **null** ise veya işaret ettiği nesne geniş karakterli bir null karakterdir (L ' \ 0 '), işlev 0 döndürür. *Mbchar* 'ın işaret ettiği nesne ilk *sayı* karakterleri içinde geçerli bir çok baytlı karakter oluşturmuyor,-1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbtowc** işlevi *mbchar*tarafından işaret *edilen sayısı* veya daha az bayt dönüştürür , *mbchar* **NULL**değilse , karşılık gelen geniş bir karaktere. **mbtowc** *wchar* de ortaya çıkan geniş karakter depolar, *wchar* **NULL**değilse . **mbtowc** **MB_CUR_MAX** bayttan fazlasını incelemez. **mbtowc,** yerel e-bağımlı davranış için geçerli yerel durumu kullanır; **_mbtowc_l,** bunun yerine geçirilen yerel alanı kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**Mbtowc** işlevi, *mbchar* **null**değilse, karşılık gelen geniş bir karaktere *, mbchar* tarafından işaret edilen *sayıyı* veya daha az baytı dönüştürür. **mbtowc** , *wchar* **null**değilse, sonuçta elde edilen geniş karakteri *wchar* 'da depolar. **mbtowc** , **MB_CUR_MAX** bayttan fazlasını incelemez. **mbtowc** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_mbtowc_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**mbtowc**|\<stdlib.h>|
-|**_mbtowc_l**|\<stdlib.h>|
+|**mbtowc**|\<Stdlib. h>|
+|**_mbtowc_l**|\<Stdlib. h>|
 
-Ek uyumluluk bilgileri için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -154,9 +154,9 @@ Attempt to convert a NULL pointer to a wide character:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>

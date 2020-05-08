@@ -26,7 +26,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -59,16 +59,16 @@ helpviewer_keywords:
 - _atoflt function
 - _atodbl_l function
 ms.assetid: 2d2530f4-4bd4-42e3-8083-f2d2fbc8432a
-ms.openlocfilehash: 5f304fd163c2ba1c57a4daee8c2a3307d8ba870a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1106a3882fd9c6a6c2e9d434a6f49221ff6d99d0
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81348957"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82920041"
 ---
 # <a name="_atodbl-_atodbl_l-_atoldbl-_atoldbl_l-_atoflt-_atoflt_l"></a>_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 
-Bir dizeyi çift **(_atodbl),** uzun çift **(_atoldbl**) veya float **(_atoflt)** olarak dönüştürür.
+Bir dizeyi çift (**_atodbl**), uzun çift (**_atoldbl**) veya float (**_atoflt**) olarak dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,34 +83,34 @@ int _atoflt_l( _CRT_FLOAT * value, const char * str, locale_t locale );
 
 ### <a name="parameters"></a>Parametreler
 
-*Değer*<br/>
-Dize kayan nokta değerine dönüştürülerek üretilen çift, uzun çift veya float değeri. Bu değerler bir yapıya sarılır.
+*deeri*<br/>
+Dizeyi bir kayan nokta değerine dönüştürerek üretilen Double, Long Double veya float değeri. Bu değerler bir yapıya sarmalanır.
 
-*Str*<br/>
-Kayan nokta değerine dönüştürmek için ayrıştılacak dize.
+*üstbilgisine*<br/>
+Bir kayan noktalı değere dönüştürülecek şekilde Ayrıştırılacak dize.
 
-*Yerel ayar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa 0 döndürür. Olası hata kodları **_UNDERFLOW** veya **_OVERFLOW**, hangi \<başlık dosyası math.h> tanımlanır.
+Başarılıysa 0 döndürür. Olası hata kodları, Math. **_OVERFLOW**h> başlık dosyasında \<tanımlanan **_UNDERFLOW** veya _OVERFLOW.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler bir dizeyi kayan nokta değerine dönüştürür. Bu işlevler ile **atof of** işlevleri arasındaki fark, bu işlevlerin kayan nokta kodu oluşturmaması ve donanım özel durumlarına neden olmamasıdır. Bunun yerine, hata koşulları hata kodları olarak bildirilir.
+Bu işlevler bir dizeyi kayan noktalı değere dönüştürür. Bu işlevler ve **atof** işlevleri arasındaki fark, bu işlevlerin kayan nokta kodu oluşturmamasıdır ve donanım özel durumlarına neden olmaz. Bunun yerine, hata koşulları hata kodu olarak bildirilir.
 
-Bir dize kayan nokta değeri olarak geçerli bir yorumu yoksa, *değer* sıfıra ayarlanır ve döndürme değeri sıfırdır.
+Bir dizenin kayan nokta değeri olarak geçerli bir yorumu yoksa, *değer* sıfır olarak ayarlanır ve dönüş değeri sıfırdır.
 
-**_l** sonek olan bu işlevlerin sürümleri, geçerli iş parçacığı yerel liği yerine geçirilen *yerel* parametreyi kullanmaları dışında, sonek olmayan sürümlerle aynıdır.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen *yerel ayar* parametresini kullanmaları dışında, son eki olmayan sürümlerden aynıdır.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Rutin|Gerekli başlık|
+|Çalıştırmasını|Gerekli başlık|
 |--------------|---------------------|
-|**_atodbl**, **_atoldbl**, **_atoflt**<br /><br /> **_atodbl_l**, **_atoldbl_l**, **_atoflt_l**|\<stdlib.h>|
+|**_atodbl**, **_atoldbl**, **_atoflt**<br /><br /> **_atodbl_l**, **_atoldbl_l**, **_atoflt_l**|\<Stdlib. h>|
 
 ## <a name="example"></a>Örnek
 
@@ -170,7 +170,7 @@ Return value: 3
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>

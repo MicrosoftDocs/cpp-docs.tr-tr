@@ -22,7 +22,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -44,16 +44,16 @@ helpviewer_keywords:
 - trigonometric functions
 - atan2f function
 ms.assetid: 7a87a18e-c94d-4727-9cb1-1bb5c2725ae4
-ms.openlocfilehash: 3b8411f9839022477dff3100792e271e2f0b572b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 34c4b124840572628c3e7cb10382e05b236e6292
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81334114"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82920070"
 ---
 # <a name="atan-atanf-atanl-atan2-atan2f-atan2l"></a>atan, atanf, atanl, atan2, atan2f, atan2l
 
-**X** **(atan**, **atanf**, ve **atanl)** veya **y**/**x** **(atan2**, **atan2f**, ve **atan2l)** arctant'ını hesaplar.
+**X** (**atan**, **atanf**, ve **atanl**) veya **y**/**x** 'in arktanjantını (**atan2**, **atan2f**ve **atan2l**) hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -82,29 +82,29 @@ Herhangi bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**atan** *x'in* -π/2 aralığındaki arkantını π/2 radanlara döndürür. **atan2,** π radyanlara -π *aralığındaki y*/*x'in* arctant'ını döndürür. *x* 0 ise **atan** 0 döndürür. **Atan2'nin** her iki parametresi de 0 ise, işlev 0 döndürür. Tüm sonuçlar radyanlarda.
+**atan** ,-π/2 ile π/2 radyan aralığında *x* 'in ark tanjantını döndürür. **atan2** ,-π aralığında *y*/*x* 'in ark tanjantını döndürür. *X* 0 ise, **atan** 0 döndürür. Her iki **atan2** parametresi 0 ise, işlev 0 döndürür. Tüm sonuçlar radyan cinsinden olur.
 
-**atan2,** iade değerinin çeyreğini belirlemek için her iki parametrenin işaretlerini kullanır.
+**atan2** , dönüş değerinin çeyreğine ilişkin her iki parametrenin işaretlerini kullanır.
 
-|Girdi|SEH Özel Durumu|Matherr İstisnası|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|yok|**_DOMAIN**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Atan** işlevi *x'in*arctant (ters teğet fonksiyonu) değerini hesaplar. **atan2** *y*/*x'in* arctant'ını hesaplar *(x* 0'a eşitse, *atan2* pozitifse π/2 döndürür, *-π/2* y negatifse, *0* ise 0.) **atan2**
+**Atan** işlevi, *x*'in arktanjantını (ters tanjant işlevi) hesaplar. **atan2** *y*/*x* 'in ark tanjantını hesaplar ( *x* eşitse 0, **atan2** *, y pozitifse* ,-π/2 ise y negatifse 0 veya *y* 0 *ise 0* olur.)
 
-**atan,** Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulaması vardır. SSE2 uygulamasını kullanma yla ilgili bilgi ve kısıtlamalar için [_set_SSE2_enable](set-sse2-enable.md)bkz.
+**atan** 'de Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md).
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **uzun** **çift** bağımsız değişkenler alan aşırı **atan** ve **atan2** yükleri arayabilirsiniz. Bir C programında, **atan** ve **atan2** her zaman **çift** argümanlar almak ve bir **çift**dönmek .
+C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** bağımsız değişkenlerini alan **atan** ve **atan2** aşırı yüklerini çağırabilirsiniz. C programında, **atan** ve **atan2** her zaman **çift** bağımsız değişken alır ve bir **Double**döndürür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgi (C)|Gerekli üstbilgi (C++)|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
-|**atan**, **atan2**, **atanf**, **atan2f**, **atanl**, **atan2l**|\<math.h>|\<cmath> \<veya math.h>|
+|**atan**, **atan2**, **atanf**, **atan2f**, **atanl**, **atan2l**|\<Math. h>|\<cmath> veya \<Math. h>|
 
 ## <a name="example"></a>Örnek
 

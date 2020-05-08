@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -34,16 +34,16 @@ helpviewer_keywords:
 - ismbbpunct_l function
 - _ismbbpunct_l function
 ms.assetid: 1976c9d3-7d1a-415f-ac52-2715c7bb56eb
-ms.openlocfilehash: db0725215b6568300602c55ca253d959c27aedc1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bee75f971f6e185b4081ba123e6aef5e1865a14e
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81343458"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82918653"
 ---
 # <a name="_ismbbpunct-_ismbbpunct_l"></a>_ismbbpunct, _ismbbpunct_l
 
-Belirli bir karakterin noktalama karakteri olup olmadığını belirler.
+Belirli bir karakterin bir noktalama karakteri olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,30 +59,30 @@ int _ismbbpunct_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*C*<br/>
-İnteger test edilecek.
+*,*<br/>
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
-Kullanılacak yerel yer.
+*locale*<br/>
+Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbbpunct,** tamsayı *c* ASCII olmayan bir noktalama işareti simgesiyse sıfır olmayan bir değer verir. **_ismbbpunct,** yerel ayarlara bağlı karakter ayarları için geçerli yerel alanı kullanır. **_ismbbpunct_l,** geçirilen yerel alanı kullanması dışında aynıdır. Daha fazla bilgi için [Yerel'e](../../c-runtime-library/locale.md)bakın.
+**_ismbbpunct** tamsayı, ASCII olmayan bir noktalama simgese *, sıfır* dışında bir değer döndürür. **_ismbbpunct** , yerel ayara bağımlı karakter ayarları için geçerli yerel ayarı kullanır. **_ismbbpunct_l** , geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbbpunct**|\<mbctype.h>|
-|**_ismbbpunct_l**|\<mbctype.h>|
+|**_ismbbpunct**|\<Mbctype. h>|
+|**_ismbbpunct_l**|\<Mbctype. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Rutinleri](../../c-runtime-library/ismbb-routines.md)<br/>
+[_ismbb yordamlar](../../c-runtime-library/ismbb-routines.md)<br/>

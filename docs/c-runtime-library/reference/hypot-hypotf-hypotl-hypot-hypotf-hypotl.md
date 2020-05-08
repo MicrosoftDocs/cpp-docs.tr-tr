@@ -23,7 +23,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -44,16 +44,16 @@ helpviewer_keywords:
 - calculating hypotenuses
 - _hypot function
 ms.assetid: 6a13887f-bd53-43fc-9d77-5b42d6e49925
-ms.openlocfilehash: 85f975dace6aa0c79356f85a8ece53b82413a7c3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 16db920d6e7d3836eb4a395b2029e2f9329f2681
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81343951"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919840"
 ---
 # <a name="hypot-hypotf-hypotl-_hypot-_hypotf-_hypotl"></a>hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl
 
-Hipotenüs hesaplar.
+Hipotenüsü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -91,25 +91,25 @@ Kayan nokta değerleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **hipot** hipotenüs uzunluğunu döndürür; taşma, **hipot** INF (sonsuz) döndürür ve **errno** **değişkene ERANGE**ayarlanır. hata işleme yi değiştirmek için **_matherr** kullanabilirsiniz.
+Başarılı olursa **hypot** , hipotenüsü uzunluğunu döndürür; taşma durumunda **hypot** , INF (Infinity) döndürür ve **errno** değişkeni **ERANGE**olarak ayarlanır. Hata işlemeyi değiştirmek için **_matherr** kullanabilirsiniz.
 
-İade kodları hakkında daha fazla bilgi için [bkz: errno, _doserrno, _sys_errlist ve _sys_nerr.](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Hipot** fonksiyonları, iki tarafın *x* ve *y* uzunluğu (diğer bir deyişle, *x*<sup>2</sup> + *y*<sup>2</sup>kare kökü) verilen bir dik üçgenin hipotenüs uzunluğunu hesaplar.
+**Hypot** işlevleri, iki tarafının *x* ve *y* uzunluğu (diğer bir deyişle, *x*<sup>2</sup> + *y*<sup>2</sup>' nin kare kökünü) verildiğinde, sağ üçgenin hipotenüsü uzunluğunu hesaplar.
 
-Önde gelen alt çizilen işlevlerin sürümleri, önceki standartlarla uyumluluk için sağlanır. Davranışları, satır aralığı alt alt alt larına sahip olmayan sürümlerle aynıdır. Yeni kod için alt çizimeler olmadan sürümleri kullanmanızı öneririz.
+Önde gelen alt çizgileri olan işlevlerin sürümleri, önceki standartlarla uyumluluk için sağlanır. Davranışları, önde gelen alt çizgileri olmayan sürümlerle aynıdır. Yeni kod için önde gelen alt çizgiler olmadan sürümlerin kullanılması önerilir.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**hipot**, **hypotf**, **hypotl**, **_hypot**, **_hypotf**, **_hypotl**|\<math.h>|
+|**hypot**, **hypotf**, **hypotl**, **_hypot**, **_hypotf** **_hypotl**|\<Math. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

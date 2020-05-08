@@ -13,7 +13,7 @@ api_location:
 - msvcr110_clr0400.dll
 - msvcr100.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -23,16 +23,16 @@ f1_keywords:
 helpviewer_keywords:
 - __p__fmode
 ms.assetid: 1daa1394-81eb-43aa-a71b-4cc6acf3207b
-ms.openlocfilehash: aecba640099719f90db8bbd5dbe386ea99aae45d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dfd9962c49b03dbb30223d1d7403b791ed6dbec9
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81349241"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82919881"
 ---
 # <a name="__p__fmode"></a>__p__fmode
 
-Dosya G/Ç işlemleri için varsayılan `_fmode` *dosya çeviri modunu* belirten genel değişkene işaret eder.
+Dosya g/ `_fmode` ç işlemleri için varsayılan *Dosya çevirisi modunu* belirten genel değişkene işaret eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,18 +43,18 @@ int* __p__fmode(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Genel değişkene `_fmode` işaretçi.
+`_fmode` Genel değişkene yönelik işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev `__p__fmode` yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
+`__p__fmode` İşlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
 
-Dosya çeviri [modu,](../c-runtime-library/reference/open-wopen.md) `binary` _open `text` ve [_pipe](../c-runtime-library/reference/pipe.md) G/Ç işlemleri için çeviri veya Daha fazla bilgi için [_fmode.](../c-runtime-library/fmode.md)
+Dosya çevirisi modu, [_open](../c-runtime-library/reference/open-wopen.md) ve `text` g/ç işlemleri [_pipe](../c-runtime-library/reference/pipe.md) için ya da `binary` çevirisini belirtir. Daha fazla bilgi için bkz. [_fmode](../c-runtime-library/fmode.md).
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](global-state.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|__p\__fmode|stdlib.h|
+|__p\__fmode|Stdlib. h|

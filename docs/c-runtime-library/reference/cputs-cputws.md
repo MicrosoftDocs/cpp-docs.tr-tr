@@ -18,7 +18,7 @@ api_location:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
-- api-ms-win-crt-private-l1-1-0
+- api-ms-win-crt-private-l1-1-0.dll
 api_type:
 - DLLExport
 topic_type:
@@ -36,19 +36,19 @@ helpviewer_keywords:
 - console, sending strings to
 - cputws function
 ms.assetid: ec418484-0f8d-43ec-8d8b-198a556c659e
-ms.openlocfilehash: 3b8f49fc7fbe90d4069a5dfeef9bbba3a7f05335
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 469b39e4e08f13af8d8ac3e679ed55c7afb240d2
+ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81348378"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82917599"
 ---
 # <a name="_cputs-_cputws"></a>_cputs, _cputws
 
 Konsola bir dize koyar.
 
 > [!IMPORTANT]
-> Bu API, Windows Runtime'da çalışan uygulamalarda kullanılamaz. Daha fazla bilgi için Evrensel [Windows Platformu uygulamalarında desteklenmeyen CRT işlevlerine](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)bakın.
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,20 +63,20 @@ int _cputws(
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*<br/>
+*üstbilgisine*<br/>
 Çıkış dizesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **_cputs** 0 döndürür. İşlev başarısız olursa, sıfır olmayan bir değer döndürür.
+Başarılı olursa **_cputs** 0 döndürür. İşlev başarısız olursa, sıfır dışında bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_cputs** işlevi, doğrudan konsola *str* tarafından işaret edilen null-sonlandırılan dizeyi yazar. Bir satır döndürme satırı beslemesi (CR-LF) birleşimi dize otomatik olarak eklenmiyor.
+**_Cputs** işlevi, *Str* tarafından doğrudan konsola işaret edilen null ile sonlandırılmış dizeyi yazar. Satır başı satır besleme (CR-LF) birleşimi dizeye otomatik olarak eklenmez.
 
-Bu işlev parametresini doğrular. *str* **NULL**ise, Geçersiz parametre işleyicisi, [Parametre Doğrulama'da](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin verilirse, **errno** **EINVAL** olarak ayarlanır ve -1 döndürülür.
+Bu işlev, parametresini doğrular. *Str* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve-1 döndürülür.
 
-Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değiştirmek için [CRT'deki Genel duruma](../global-state.md)bakın.
+Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -86,16 +86,16 @@ Varsayılan olarak, bu işlevin genel durumu uygulamaya kapsamlıdır. Bunu değ
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_cputs**|\<conio.h>|\<errno.h>|
-|**_cputws**|\<conio.h>|\<errno.h>|
+|**_cputs**|\<conio. h>|\<errno. h>|
+|**_cputws**|\<conio. h>|\<errno. h>|
 
-Daha fazla uyumluluk bilgisi için Bkz. [Uyumluluk.](../../c-runtime-library/compatibility.md)
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-C çalışma [zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
