@@ -1,7 +1,7 @@
 ---
-title: switchdeyim (C++)
-description: Microsoft Visual Studio switch C++'daki Standart C++ deyimine başvuru.
-ms.date: 04/15/2020
+title: switchifade (C++)
+description: switchMicrosoft Visual Studio C++ ' daki standart C++ bildirimine başvuru.
+ms.date: 04/25/2020
 f1_keywords:
 - default_cpp
 - switch_cpp
@@ -16,43 +16,55 @@ no-loc:
 - default
 - break
 - while
+- opt
 ms.assetid: 6c3f3ed3-5593-463c-8f4b-b33742b455c6
-ms.openlocfilehash: 1f65d4699423d74be9c75a9be47e543a9a1256e2
-ms.sourcegitcommit: 9266fc76ac2e872e35a208b4249660dfdfc87cba
+ms.openlocfilehash: d43a7a64b5a74f00833093ae8999d73edd7f5753
+ms.sourcegitcommit: c4cf8976939dd0e13e25b82930221323ba6f15d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81480829"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83204158"
 ---
-# <a name="opno-locswitch-statement-c"></a>switchdeyim (C++)
+# <a name="switch-statement-c"></a>`switch`ifade (C++)
 
-İntegral ifadesinin değerine bağlı olarak, kodun birden çok bölümü arasında seçim yapılmasına izin verir.
+İntegral ifadesinin değerine bağlı olarak kodun birden çok bölümü arasında seçim yapılmasına izin verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **`switch (`**\[ *initialization* **`;`**] *ifadesi***`)`**\
-> **`{`**\
-> &nbsp;&nbsp;&nbsp;&nbsp;**`case`***sabit ifade* **`:`** *deyimi*\
-> &nbsp;&nbsp;&nbsp;&nbsp;\[**`default :`***deyim*] \
-> **`}`**
+> *`selection-statement`*:\
+> &nbsp;&nbsp;&nbsp;&nbsp;__`switch`__&nbsp;__`(`__&nbsp;*`init-statement`*<sub>opt</sub> <sup>C++ 17</sup>&nbsp;*`condition`*&nbsp;__`)`__&nbsp;*`statement`*
+
+> *`init-statement`*:\
+> &nbsp;&nbsp;&nbsp;&nbsp; *`expression-statement`*\
+> &nbsp;&nbsp;&nbsp;&nbsp; *`simple-declaration`*
+
+> *`condition`*:\
+> &nbsp;&nbsp;&nbsp;&nbsp; *`expression`*\
+> &nbsp;&nbsp;&nbsp;&nbsp; *`attribute-specifier-seq`*<sub>opt</sub>&nbsp;*`decl-specifier-seq`*&nbsp;*`declarator`*&nbsp;*`brace-or-equal-initializer`*
+
+> *`labeled-statement`*:\
+> &nbsp;&nbsp;&nbsp;&nbsp; __`case`__&nbsp;*`constant-expression`*&nbsp;__`:`__&nbsp;*`statement`*\
+> &nbsp;&nbsp;&nbsp;&nbsp; __`default`__&nbsp;__`:`__&nbsp;*`statement`*
 
 ## <a name="remarks"></a>Açıklamalar
 
-*İfadenin* ayrılmaz bir türü olmalı veya integral türüne kesin bir dönüştürme olan bir sınıf türü olmalıdır. İntegral [promosyonu Standart dönüşümlerde](standard-conversions.md)açıklandığı şekilde gerçekleşir.
+Bir __`switch`__ ifade, denetimin *`labeled-statement`* değerine bağlı olarak deyimin gövdesinde bir öğesine aktarılmasına neden olur *`condition`* .
 
-Ekstre gövdesi bir **case** dizi etiket **default** ve isteğe bağlı bir etiketten oluşur. **switch** Etiketleri izleyen ifadelere topluca *etiketli* ifadeler denir. Etiketli ifadeler sözdiziliş gereksinimleri değildir, **switch** ancak ifade onlar olmadan anlamsızdır. İfadelerde **case** iki sabit ifade aynı değerde değerlendirilemeyebilir. Etiket **default** yalnızca bir kez görünebilir. İfade **default** genellikle sonunda yerleştirilir, ancak **switch** ifadenin gövdesinde herhangi bir yerde görünebilir. A **case** **default** veya etiket yalnızca **switch** bir deyimin içinde görünebilir.
+, *`condition`* Bir integral türüne sahip olmalı veya tam sayı türüne belirsiz dönüştürmesi olan bir sınıf türü olmalıdır. Integral yükseltme, [Standart dönüşümlerde](standard-conversions.md)açıklandığı gibi gerçekleşir.
 
-Her *constant-expression* **case** etiketteki sabit ifade *ifade*türüne dönüştürülür. Sonra, eşitlik için *ifade* ile karşılaştırılır. Denetim, **case** *sabit ifade* *ifadesinin*değeriyle eşleşen ifadeye geçer. Ortaya çıkan davranış aşağıdaki tabloda gösterilir.
+__`switch`__ İfade gövdesi bir dizi __`case`__ etiket ve isteğe bağlı bir __`default`__ etiketten oluşur. *`labeled-statement`*, Bu etiketlerin ve izleyen deyimlerden biridir. Etiketli deyimler sözdizimsel gereksinimler değildir, ancak __`switch`__ deyim bu olmadan anlamsız değildir. *`constant-expression`* Deyimlerde iki değer __`case`__ aynı değere değerlendirilemiyor. __`default`__ Etiket yalnızca bir kez görünebilir. __`default`__ İfade genellikle sonuna yerleştirilir, ancak deyimin gövdesinde herhangi bir yerde görünebilirler __`switch`__ . __`case`__ Or __`default`__ etiketi yalnızca bir deyimin içinde yer alabilir __`switch`__ .
 
-### <a name="switch-statement-behavior"></a>İfade davranışını değiştir
+*`constant-expression`* Her etikette, __`case`__ ile aynı türde bir sabit değere dönüştürülür *`condition`* . Daha sonra eşitlik için ile karşılaştırılır *`condition`* . Denetim, __`case`__ *`constant-expression`* değeri ile eşleşen değerden sonra ilk ifadeye geçer *`condition`* . Ortaya çıkan davranış aşağıdaki tabloda gösterilmiştir.
+
+### <a name="switch-statement-behavior"></a>`switch`ifade davranışı
 
 | Koşul | Eylem |
 |--|--|
-| Dönüştürülen değer, yükseltilen denetlenen ifadeyle eşleşir. | Denetim, bu etiketi izleyen bildirime aktarılır. |
-| Sabitlerin hiçbiri **case** etiketlerdeki sabitlerle eşleşmez; bir **default** etiket mevcuttur. | Denetim etikete **default** aktarılır. |
-| Sabitlerin hiçbiri **case** etiketlerdeki sabitlerle eşleşmez; etiket **default** yok. | **switch** Denetim, açıklamadan sonra ifadeye aktarılır. |
+| Dönüştürülen değer yükseltilen denetim ifadesinin ile eşleşiyor. | Denetim, etiketini izleyen deyime aktarılır. |
+| Sabitlerden hiçbiri, etiketlerdeki sabitler ile eşleşmiyor __`case`__ ; bir __`default`__ etiket var. | Denetim __`default`__ etikete aktarılır. |
+| Sabitlerden hiçbiri, etiketlerdeki sabitler ile eşleşmiyor __`case`__ ; etiket yok __`default`__ . | Denetim, deyimden sonraki deyime aktarılır __`switch`__ . |
 
-Eşleşen bir ifade bulunursa, yürütme **case** **default** daha sonra veya etiketler üzerinden devam edebilir. İfade, [`break`](../cpp/break-statement-cpp.md) yürütmeyi durdurmak ve bildirimden **switch** sonra beyanı besmele aktarmak için kullanılır. Bir **break** açıklama olmadan, eşleşen **case** etiketten sonuna kadar **switch** her ifade **default**, , , yürütülür. Örneğin:
+Eşleşen bir ifade bulunursa, yürütme daha sonra veya etiketlere devam edebilir __`case`__ __`default`__ . [`break`](../cpp/break-statement-cpp.md)Deyimin ardından, yürütmeyi durdurmak ve denetimi deyimden sonra bildirime aktarmak için kullanılır __`switch`__ . Bir deyimleri olmadan, __`break`__ eşleşen __`case`__ etiketten, __`switch`__ ve dahil olmak üzere her bir ifade __`default`__ yürütülür. Örneğin:
 
 ```cpp
 // switch_statement1.cpp
@@ -83,9 +95,9 @@ int main() {
 }
 ```
 
-Yukarıdaki örnekte, `uppercase_A` bir büyük harf `c` `'A'`ise artımlı. İfade, **break** `uppercase_A++` ifade gövdesinin yürütülmesini sona erdirdikten sonra döngüye **while** geçer. **switch** İfade **break** olmadan, yürütme bir sonraki etiketli deyime "düşer" `lowercase_a` `other` böylece ve aynı zamanda artımlı olacaktır. Benzer bir amaç için **break** `case 'a'`ifade tarafından sunulmaktadır. Küçük `c` bir harf `'a'` `lowercase_a` ise, artımlı **break** ve deyimi **switch** deyimi gövdesi sona erer. Bir `c` `'a'` veya `'A'`değilse, **default** deyim yürütülür.
+Yukarıdaki örnekte, `uppercase_A` `c` büyük harfli ise artırılır `'A'` . __`break`__ After ifadesinin deyimin `uppercase_A++` ve denetimin yürütülmesi sona erer __`switch`__ __`while`__ . __`break`__ Bu ifade olmadan, yürütme bir sonraki etiketli ifadeye "geçer" `lowercase_a` ve `other` Ayrıca arttırılır. Benzer bir amaç, __`break`__ için ifadesiyle sunulur `case 'a'` . `c`Küçük harfli ise `'a'` , `lowercase_a` artırılır ve __`break`__ ifade, __`switch`__ ifade gövdesini sonlandırır. `c` `'a'` Veya değilse `'A'` , __`default`__ ifade yürütülür.
 
-**Visual Studio 2017 ve sonrası:** (/std:c++17 ile kullanılabilir ) Öznitelik [/std:c++17](../build/reference/std-specify-language-standard-version.md) `[[fallthrough]]` C++17 standardında belirtilir. Bir **switch** deyimde kullanabilirsiniz. Derleyiciye veya kodu okuyan herkese düşme davranışının kasıtlı olduğuna dair bir ipucu. Microsoft C++ derleyicisi şu anda fallthrough davranışı konusunda uyarmaz, bu nedenle bu öznitelik derleyici davranışı üzerinde hiçbir etkisi yoktur. Örnekte, öznitelik, sonlandırılmamış etiketli deyim içinde boş bir deyim uygulanır. Başka bir deyişle, yarı kolon gereklidir.
+**Visual Studio 2017 ve üzeri:** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)Ile kullanılabilir) `[[fallthrough]]` özniteliği c++ 17 standardında belirtilir. Bunu bir __`switch`__ bildirimde kullanabilirsiniz. Derleyici veya kodu okuyan herkese yönelik bir ipucu, bu yana gelen davranış bilerek yapılır. Microsoft C++ derleyicisi Şu anda fallthrough davranışında uyarı vermiyor, bu nedenle bu özniteliğin derleyici davranışı üzerinde hiçbir etkisi yoktur. Örnekte, öznitelik Sonlandırılmamış etiketli deyimin içindeki boş bir ifadeye uygulanır. Diğer bir deyişle, noktalı virgül gereklidir.
 
 ```cpp
 int main()
@@ -113,7 +125,7 @@ int main()
 }
 ```
 
-**Visual Studio 2017 sürüm 15.3 ve sonrası** [(/std:c++17](../build/reference/std-specify-language-standard-version.md)ile birlikte kullanılabilir). Bir switch deyimin *bir başlatma* yan tümcesi olabilir. Kapsamı switch deyimbloğuyla sınırlı olan bir değişkeni tanıtır ve başlatır:
+**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir). Bir __`switch`__ ifadede *`init-statement`* , noktalı virgülle biten bir yan tümcesi olabilir. Kapsamı deyimin bloğu ile sınırlı olan bir değişkeni tanıtır ve başlatır __`switch`__ :
 
 ```cpp
     switch (Gadget gadget(args); auto s = gadget.get_status())
@@ -126,7 +138,7 @@ int main()
     };
 ```
 
-Bir **switch** deyimin iç *bloğu, olası*tüm yürütme yolları tarafından atlanmadıkları sürece, başlangıç lı tanımlar içerebilir. Bu bildirimler kullanılarak tanıtılan adlar yerel kapsama sahiptir. Örneğin:
+Bir deyimin iç bloğu, __`switch`__ *erişilebilir*oldukları sürece başlatıcıları olan tanımlar içerebilir, diğer bir deyişle, tüm olası yürütme yolları tarafından atlanmaz. Bu bildirimler kullanılarak tanıtılan adların yerel kapsamı vardır. Örneğin:
 
 ```cpp
 // switch_statement2.cpp
@@ -161,15 +173,13 @@ int main(int argc, char *argv[])
 }
 ```
 
-İfade **switch** iç içe olabilir. İç içe **case** geçtiğinde, **default** etiketler onları **switch** içine alan en yakın ifadeyle ilişkilendirilir.
+Bir __`switch`__ ifade iç içe olabilir. İç içe geçmiş olduğunda __`case`__ veya __`default`__ etiketleri, __`switch`__ bunları kapsayan en yakın deyimle ilişkilendirir.
 
-### <a name="microsoft-specific-behavior"></a>Microsoft'a özgü davranış
+### <a name="microsoft-specific-behavior"></a>Microsoft 'a özgü davranış
 
-Microsoft C, bir **case** **switch** deyimdeki değer sayısını sınırlamaz. Sayı yalnızca kullanılabilir bellekle sınırlıdır. ANSI C, bir **case** **switch** bildirimde en az 257 etikete izin verilmesini gerektirir.
-
-Microsoft default C için Microsoft uzantıları etkin olmasıdır. Bu uzantıları devre dışı kullanabilirsiniz / [Za](../build/reference/za-ze-disable-language-extensions.md) derleyici sabunu kullanın.
+Microsoft C++, __`case`__ bir deyimindeki değer sayısını sınırlamaz __`switch`__ . Numara yalnızca kullanılabilir bellekle sınırlıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Seçim Deyimleri](../cpp/selection-statements-cpp.md)<br/>
+[Seçim deyimleri](../cpp/selection-statements-cpp.md)<br/>
 [Anahtar sözcükler](../cpp/keywords-cpp.md)
