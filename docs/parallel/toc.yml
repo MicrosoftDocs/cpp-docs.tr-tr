@@ -1,0 +1,658 @@
+- name: .NET içinde paralel programlama
+  href: ../parallel/parallel-programming-in-visual-cpp.md
+- name: Otomatik paralelleştirme ve otomatik vektörleştirme
+  href: ../parallel/auto-parallelization-and-auto-vectorization.md
+- name: C++ Accelerated Massive Parallelism (AMP)
+  expanded: false
+  items:
+    - name: C++ AMP (C++ Accelerated Massive Parallelism)
+      href: ../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md
+    - name: C++ AMP'ye genel bakış
+      href: ../parallel/amp/cpp-amp-overview.md
+    - name: Döşemeleri kullanma
+      href: ../parallel/amp/using-tiles.md
+    - name: UWP uygulamalarında C++ AMP kullanma
+      href: ../parallel/amp/using-cpp-amp-in-windows-store-apps.md
+    - name: 'İzlenecek yol: Matris çarpımı'
+      href: ../parallel/amp/walkthrough-matrix-multiplication.md
+    - name: 'İzlenecek yol: C++ AMP uygulamasında hata ayıklama'
+      href: ../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md
+    - name: 'Lambda''lar, işlev nesneleri ve kısıtlanmış işlevler kullanma'
+      href: ../parallel/amp/using-lambdas-function-objects-and-restricted-functions.md
+    - name: Grafikler (C++ AMP)
+      href: ../parallel/amp/graphics-cpp-amp.md
+    - name: Hızlandırıcı ve accelerator_view nesnelerini kullanma
+      href: ../parallel/amp/using-accelerator-and-accelerator-view-objects.md
+    - name: Başvuru (C++ AMP)
+      expanded: false
+      items:
+        - name: Başvuru (C++ AMP)
+          href: ../parallel/amp/reference/reference-cpp-amp.md
+        - name: Eşzamanlılık ad alanı (C++ AMP)
+          expanded: false
+          items:
+            - name: Eşzamanlılık ad alanı (C++ AMP)
+              href: ../parallel/amp/reference/concurrency-namespace-cpp-amp.md
+            - name: Eşzamanlılık ad alanı işlevleri (AMP)
+              href: ../parallel/amp/reference/concurrency-namespace-functions-amp.md
+            - name: Eşzamanlılık ad alanı sabit listeleri (AMP)
+              href: ../parallel/amp/reference/concurrency-namespace-enums-amp.md
+            - name: Eşzamanlılık ad alanı işleçleri (AMP)
+              href: ../parallel/amp/reference/concurrency-namespace-operators-amp.md
+            - name: Eşzamanlılık ad alanı sabitleri (AMP)
+              href: ../parallel/amp/reference/concurrency-namespace-constants-amp.md
+            - name: accelerator sınıfı
+              href: ../parallel/amp/reference/accelerator-class.md
+            - name: accelerator_view sınıfı
+              href: ../parallel/amp/reference/accelerator-view-class.md
+            - name: accelerator_view_removed sınıfı
+              href: ../parallel/amp/reference/accelerator-view-removed-class.md
+            - name: array sınıfı
+              href: ../parallel/amp/reference/array-class.md
+            - name: array_view sınıfı
+              href: ../parallel/amp/reference/array-view-class.md
+            - name: completion_future sınıfı
+              href: ../parallel/amp/reference/completion-future-class.md
+            - name: extent sınıfı (C++ AMP)
+              href: ../parallel/amp/reference/extent-class.md
+            - name: index sınıfı
+              href: ../parallel/amp/reference/index-class.md
+            - name: invalid_compute_domain sınıfı
+              href: ../parallel/amp/reference/invalid-compute-domain-class.md
+            - name: out_of_memory sınıfı
+              href: ../parallel/amp/reference/out-of-memory-class.md
+            - name: runtime_exception sınıfı
+              href: ../parallel/amp/reference/runtime-exception-class.md
+            - name: tile_barrier sınıfı
+              href: ../parallel/amp/reference/tile-barrier-class.md
+            - name: tiled_extent sınıfı
+              href: ../parallel/amp/reference/tiled-extent-class.md
+            - name: tiled_index sınıfı
+              href: ../parallel/amp/reference/tiled-index-class.md
+            - name: uninitialized_object sınıfı
+              href: ../parallel/amp/reference/uninitialized-object-class.md
+            - name: unsupported_feature sınıfı
+              href: ../parallel/amp/reference/unsupported-feature-class.md
+        - name: 'Concurrency::direct3d Ad Alanı'
+          expanded: false
+          items:
+            - name: 'Concurrency::direct3d Ad Alanı'
+              href: ../parallel/amp/reference/concurrency-direct3d-namespace.md
+            - name: 'Concurrency::direct3d ad alanı işlevleri (AMP)'
+              href: ../parallel/amp/reference/concurrency-direct3d-namespace-functions-amp.md
+            - name: adopt_d3d_access_lock_t Yapısı
+              href: ../parallel/amp/reference/adopt-d3d-access-lock-t-structure.md
+            - name: scoped_d3d_access_lock sınıfı
+              href: ../parallel/amp/reference/scoped-d3d-access-lock-class.md
+        - name: 'Concurrency::fast_math Ad Alanı'
+          expanded: false
+          items:
+            - name: 'Concurrency::fast_math Ad Alanı'
+              href: ../parallel/amp/reference/concurrency-fast-math-namespace.md
+            - name: 'Concurrency::fast_math ad alanı işlevleri'
+              href: ../parallel/amp/reference/concurrency-fast-math-namespace-functions.md
+        - name: 'Concurrency::graphics Ad Alanı'
+          expanded: false
+          items:
+            - name: 'Concurrency::graphics Ad Alanı'
+              href: ../parallel/amp/reference/concurrency-graphics-namespace.md
+            - name: 'Concurrency::graphics::direct3d ad alanı'
+              expanded: false
+              items:
+                - name: 'Concurrency::graphics::direct3d ad alanı'
+                  href: ../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md
+                - name: 'Concurrency::graphics::direct3d ad alanı işlevleri'
+                  href: ../parallel/amp/reference/concurrency-graphics-direct3d-namespace-functions.md
+            - name: 'Concurrency::graphics ad alanı işlevleri'
+              href: ../parallel/amp/reference/concurrency-graphics-namespace-functions.md
+            - name: 'Concurrency::graphics ad alanı sabit listeleri'
+              href: ../parallel/amp/reference/concurrency-graphics-namespace-enums.md
+            - name: double_2 sınıfı
+              href: ../parallel/amp/reference/double-2-class.md
+            - name: double_3 sınıfı
+              href: ../parallel/amp/reference/double-3-class.md
+            - name: double_4 sınıfı
+              href: ../parallel/amp/reference/double-4-class.md
+            - name: float_2 sınıfı
+              href: ../parallel/amp/reference/float-2-class.md
+            - name: float_3 sınıfı
+              href: ../parallel/amp/reference/float-3-class.md
+            - name: float_4 sınıfı
+              href: ../parallel/amp/reference/float-4-class.md
+            - name: int_2 sınıfı
+              href: ../parallel/amp/reference/int-2-class.md
+            - name: int_3 sınıfı
+              href: ../parallel/amp/reference/int-3-class.md
+            - name: int_4 sınıfı
+              href: ../parallel/amp/reference/int-4-class.md
+            - name: norm sınıfı
+              href: ../parallel/amp/reference/norm-class.md
+            - name: norm_2 sınıfı
+              href: ../parallel/amp/reference/norm-2-class.md
+            - name: norm_3 sınıfı
+              href: ../parallel/amp/reference/norm-3-class.md
+            - name: norm_4 sınıfı
+              href: ../parallel/amp/reference/norm-4-class.md
+            - name: sampler sınıfı
+              href: ../parallel/amp/reference/sampler-class.md
+            - name: short_vector Yapısı
+              href: ../parallel/amp/reference/short-vector-structure.md
+            - name: short_vector_traits Yapısı
+              href: ../parallel/amp/reference/short-vector-traits-structure.md
+            - name: texture sınıfı
+              href: ../parallel/amp/reference/texture-class.md
+            - name: texture_view sınıfı
+              href: ../parallel/amp/reference/texture-view-class.md
+            - name: writeonly_texture_view sınıfı
+              href: ../parallel/amp/reference/writeonly-texture-view-class.md
+            - name: uint_2 sınıfı
+              href: ../parallel/amp/reference/uint-2-class.md
+            - name: uint_3 sınıfı
+              href: ../parallel/amp/reference/uint-3-class.md
+            - name: uint_4 sınıfı
+              href: ../parallel/amp/reference/uint-4-class.md
+            - name: unorm sınıfı
+              href: ../parallel/amp/reference/unorm-class.md
+            - name: unorm_2 sınıfı
+              href: ../parallel/amp/reference/unorm-2-class.md
+            - name: unorm_3 sınıfı
+              href: ../parallel/amp/reference/unorm-3-class.md
+            - name: unorm_4 sınıfı
+              href: ../parallel/amp/reference/unorm-4-class.md
+        - name: 'Concurrency::precise_math ad alanı'
+          expanded: false
+          items:
+            - name: 'Concurrency::precise_math ad alanı'
+              href: ../parallel/amp/reference/concurrency-precise-math-namespace.md
+            - name: 'Concurrency::precise_math ad alanı işlevleri'
+              href: ../parallel/amp/reference/concurrency-precise-math-namespace-functions.md
+- name: Eşzamanlılık Çalışma Zamanı (ConCRT)
+  expanded: false
+  items:
+    - name: Eşzamanlılık Çalışma Zamanı
+      href: ../parallel/concrt/concurrency-runtime.md
+    - name: Eşzamanlılık Çalışma Zamanına Genel Bakış
+      href: ../parallel/concrt/overview-of-the-concurrency-runtime.md
+    - name: Eşzamanlılık Çalışma Zamanında özel durum işleme
+      href: ../parallel/concrt/exception-handling-in-the-concurrency-runtime.md
+    - name: Paralel tanılama araçları (Eşzamanlılık Çalışma Zamanı)
+      href: ../parallel/concrt/parallel-diagnostic-tools-concurrency-runtime.md
+    - name: UWP uygulamaları için C++ uygulamasında zaman uyumsuz işlemler oluşturma
+      href: ../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md
+    - name: Eşzamanlılık Çalışma Zamanını diğer eşzamanlılık modelleriyle karşılaştırma
+      expanded: false
+      items:
+        - name: Eşzamanlılık Çalışma Zamanını diğer eşzamanlılık modelleriyle karşılaştırma
+          href: ../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md
+        - name: OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş
+          expanded: false
+          items:
+            - name: OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş
+              href: ../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md
+            - name: 'Nasıl yapılır: Eşzamanlılık Çalışma Zamanı kullanmak üzere döngü için bir OpenMP paralelini dönüştürme'
+              href: ../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md
+            - name: 'Nasıl yapılır: Eşzamanlılık Çalışma Zamanı kullanmak için iptali kullanan bir OpenMP döngüsünü dönüştürme'
+              href: ../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md
+            - name: 'Nasıl yapılır: Eşzamanlılık Çalışma Zamanı kullanmak için özel durum işleme kullanan bir OpenMP döngüsünü dönüştürme'
+              href: ../parallel/concrt/convert-an-openmp-loop-that-uses-exception-handling.md
+            - name: 'Nasıl yapılır: Eşzamanlılık Çalışma Zamanı kullanmak için azaltma değişkeni kullanan bir OpenMP döngüsünü dönüştürme'
+              href: ../parallel/concrt/convert-an-openmp-loop-that-uses-a-reduction-variable.md
+    - name: Paralel Desen Kitaplığı (PPL)
+      expanded: false
+      items:
+        - name: Paralel Desen Kitaplığı (PPL)
+          href: ../parallel/concrt/parallel-patterns-library-ppl.md
+        - name: Görev parallelliği (Eşzamanlılık Çalışma Zamanı)
+          expanded: false
+          items:
+            - name: Görev parallelliği (Eşzamanlılık Çalışma Zamanı)
+              href: ../parallel/concrt/task-parallelism-concurrency-runtime.md
+            - name: 'Nasıl yapılır: Paralel sıralama yordamı yazmak için parallel_invoke kullanma'
+              href: ../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md
+            - name: 'Nasıl yapılır: Paralel işlemleri yürütmek için parallel_invoke kullanma'
+              href: ../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md
+            - name: 'Nasıl yapılır: Gecikmeden sonra tamamlanan bir görev oluşturma'
+              href: ../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md
+        - name: Paralel algoritmalar
+          expanded: false
+          items:
+            - name: Paralel algoritmalar
+              href: ../parallel/concrt/parallel-algorithms.md
+            - name: 'Nasıl yapılır: parallel_for döngüsü yazma'
+              href: ../parallel/concrt/how-to-write-a-parallel-for-loop.md
+            - name: 'Nasıl yapılır: parallel_for döngüsü yazma'
+              href: ../parallel/concrt/how-to-write-a-parallel-for-each-loop.md
+            - name: 'Nasıl yapılır: Eşleme gerçekleştirme ve işlemleri paralel olarak azaltma'
+              href: ../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md
+        - name: Paralel kapsayıcılar ve nesneler
+          expanded: false
+          items:
+            - name: Paralel kapsayıcılar ve nesneler
+              href: ../parallel/concrt/parallel-containers-and-objects.md
+            - name: 'Nasıl yapılır: Etkinliği artırmak için paralel kapsayıcılar kullanma'
+              href: ../parallel/concrt/how-to-use-parallel-containers-to-increase-efficiency.md
+            - name: 'Nasıl yapılır: Performansı geliştirmek için combinable kullanma'
+              href: ../parallel/concrt/how-to-use-combinable-to-improve-performance.md
+            - name: 'Nasıl yapılır: Kümeleri birleştirmek için combinable kullanma'
+              href: ../parallel/concrt/how-to-use-combinable-to-combine-sets.md
+        - name: PPL'de İptal
+          expanded: false
+          items:
+            - name: PPL'de İptal
+              href: ../parallel/concrt/cancellation-in-the-ppl.md
+            - name: 'Nasıl yapılır: Paralel döngüden kurtulmak için iptal kullanma'
+              href: ../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md
+            - name: 'Nasıl yapılır: Paralel döngüden kurtulmak için özel durum işlemeyi kullanma'
+              href: ../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md
+    - name: Zaman Uyumsuz Aracılar Kitaplığı
+      expanded: false
+      items:
+        - name: Zaman Uyumsuz Aracılar Kitaplığı
+          href: ../parallel/concrt/asynchronous-agents-library.md
+        - name: Zaman Uyumsuz aracılar
+          href: ../parallel/concrt/asynchronous-agents.md
+        - name: Zaman Uyumsuz ileti blokları
+          href: ../parallel/concrt/asynchronous-message-blocks.md
+        - name: İleti geçirme işlevleri
+          href: ../parallel/concrt/message-passing-functions.md
+        - name: 'Nasıl yapılır: Çeşitli üretici-tüketici desenlerini uygulama'
+          href: ../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md
+        - name: 'Nasıl yapılır: call ve transformer sınıflarına iş işlevleri sağlama'
+          href: ../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md
+        - name: 'Nasıl yapılır: Veri işlem hattında transformer kullanma'
+          href: ../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md
+        - name: 'Nasıl yapılır: Tamamlanan görevler arasında seçim yapma'
+          href: ../parallel/concrt/how-to-select-among-completed-tasks.md
+        - name: 'Nasıl yapılır: Düzenli aralıkla ileti gönderme'
+          href: ../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md
+        - name: 'Nasıl yapılır: İleti bloğu filtresini kullanma'
+          href: ../parallel/concrt/how-to-use-a-message-block-filter.md
+    - name: Eşitleme veri yapıları
+      expanded: false
+      items:
+        - name: Eşitleme veri yapıları
+          href: ../parallel/concrt/synchronization-data-structures.md
+        - name: Eşitleme veri yapılarını Windows API ile karşılaştırma
+          href: ../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md
+    - name: Görev zamanlayıcı (Eşzamanlılık Çalışma Zamanı)
+      expanded: false
+      items:
+        - name: Görev zamanlayıcı (Eşzamanlılık Çalışma Zamanı)
+          href: ../parallel/concrt/task-scheduler-concurrency-runtime.md
+        - name: Zamanlayıcı örnekleri
+          expanded: false
+          items:
+            - name: Zamanlayıcı örnekleri
+              href: ../parallel/concrt/scheduler-instances.md
+            - name: 'Nasıl yapılır: Zamanlayıcı örneğini yönetme'
+              href: ../parallel/concrt/how-to-manage-a-scheduler-instance.md
+        - name: Zamanlayıcı ilkeleri
+          expanded: false
+          items:
+            - name: Zamanlayıcı ilkeleri
+              href: ../parallel/concrt/scheduler-policies.md
+            - name: 'Nasıl yapılır: Belirli zamanlayıcı ilkeleri belirtme'
+              href: ../parallel/concrt/how-to-specify-specific-scheduler-policies.md
+            - name: 'Nasıl yapılır: Belirli zamanlayıcı ilkelerini kullanan aracılar oluşturma'
+              href: ../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md
+        - name: Zamanlama grupları
+          expanded: false
+          items:
+            - name: Zamanlama grupları
+              href: ../parallel/concrt/schedule-groups.md
+            - name: 'Nasıl yapılır: Yürütme sırasını etkilemek için zamanlama grupları kullanma'
+              href: ../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md
+        - name: Basit görevler
+          href: ../parallel/concrt/lightweight-tasks.md
+        - name: Bağlamlar
+          expanded: false
+          items:
+            - name: Bağlamlar
+              href: ../parallel/concrt/contexts.md
+            - name: 'Nasıl yapılır: Bağlam sınıfını işbirliğine dayalı semafor uygulamak için kullanma'
+              href: ../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md
+            - name: 'Nasıl yapılır: Gecikmeyi dengelemek için aşırı aboneliği kullanma'
+              href: ../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md
+        - name: Bellek yönetimi işlevleri
+          expanded: false
+          items:
+            - name: Bellek yönetimi işlevleri
+              href: ../parallel/concrt/memory-management-functions.md
+            - name: 'Nasıl yapılır: Bellek performansını artırmak için Alloc ve Free kullanma'
+              href: ../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md
+    - name: Eşzamanlılık Çalışma Zamanı izlenecek yollar
+      expanded: false
+      items:
+        - name: Eşzamanlılık Çalışma Zamanı izlenecek yollar
+          href: ../parallel/concrt/concurrency-runtime-walkthroughs.md
+        - name: 'İzlenecek yol: Görevleri ve xml http isteklerini kullanarak bağlanma'
+          href: ../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md
+        - name: 'İzlenecek yol: Aracı tabanlı uygulama oluşturma'
+          href: ../parallel/concrt/walkthrough-creating-an-agent-based-application.md
+        - name: 'İzlenecek yol: Veri akış aracısı oluşturma'
+          href: ../parallel/concrt/walkthrough-creating-a-dataflow-agent.md
+        - name: 'İzlenecek yol: Görüntü işleme ağı oluşturma'
+          href: ../parallel/concrt/walkthrough-creating-an-image-processing-network.md
+        - name: 'İzlenecek yol: Vadeli işlemleri uygulama'
+          href: ../parallel/concrt/walkthrough-implementing-futures.md
+        - name: 'İzlenecek yol: Kilitlenmeyi önlemek için birleştirme kullanma'
+          href: ../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md
+        - name: 'İzlenecek yol: Kullanıcı arabirimi iş parçacığından işi kaldırma'
+          href: ../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md
+        - name: 'İzlenecek yol: COM özellikli bir uygulamada Eşzamanlılık Çalışma Zamanını kullanma'
+          href: ../parallel/concrt/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application.md
+        - name: 'İzlenecek yol: Mevcut kodu hafif görevleri kullanmaya uyarlama'
+          href: ../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md
+        - name: 'İzlenecek yol: Özel ileti bloğu oluşturma'
+          href: ../parallel/concrt/walkthrough-creating-a-custom-message-block.md
+    - name: Eşzamanlılık Çalışma Zamanı en iyi yöntemleri
+      expanded: false
+      items:
+        - name: Eşzamanlılık Çalışma Zamanı en iyi yöntemleri
+          href: ../parallel/concrt/concurrency-runtime-best-practices.md
+        - name: Paralel Desen Kitaplığı'ndaki en iyi yöntemler
+          href: ../parallel/concrt/best-practices-in-the-parallel-patterns-library.md
+        - name: Zaman Uyumsuz Aracılar Kitaplığı'ndaki en iyi yöntemler
+          href: ../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md
+        - name: Eşzamanlılık Çalışma Zamanındaki genel en iyi yöntemler
+          href: ../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md
+    - name: Başvuru
+      expanded: false
+      items:
+        - name: Başvuru (Eşzamanlılık Çalışma Zamanı)
+          href: ../parallel/concrt/reference/reference-concurrency-runtime.md
+        - name: eşzamanlılık ad alanı
+          expanded: false
+          items:
+            - name: eşzamanlılık ad alanı
+              href: ../parallel/concrt/reference/concurrency-namespace.md
+            - name: eşzamanlılık ad alanı işlevleri
+              href: ../parallel/concrt/reference/concurrency-namespace-functions.md
+            - name: eşzamanlılık ad alanı İşleçleri
+              href: ../parallel/concrt/reference/concurrency-namespace-operators.md
+            - name: eşzamanlılık ad alanı sabitleri1
+              href: ../parallel/concrt/reference/concurrency-namespace-constants1.md
+            - name: eşzamanlılık ad alanı sabit listeleri
+              href: ../parallel/concrt/reference/concurrency-namespace-enums.md
+            - name: affinity_partitioner sınıfı
+              href: ../parallel/concrt/reference/affinity-partitioner-class.md
+            - name: agent sınıfı
+              href: ../parallel/concrt/reference/agent-class.md
+            - name: auto_partitioner sınıfı
+              href: ../parallel/concrt/reference/auto-partitioner-class.md
+            - name: bad_target sınıfı
+              href: ../parallel/concrt/reference/bad-target-class.md
+            - name: call sınıfı
+              href: ../parallel/concrt/reference/call-class.md
+            - name: cancellation_token sınıfı
+              href: ../parallel/concrt/reference/cancellation-token-class.md
+            - name: cancellation_token_registration sınıfı
+              href: ../parallel/concrt/reference/cancellation-token-registration-class.md
+            - name: cancellation_token_source sınıfı
+              href: ../parallel/concrt/reference/cancellation-token-source-class.md
+            - name: choice sınıfı
+              href: ../parallel/concrt/reference/choice-class.md
+            - name: combinable sınıfı
+              href: ../parallel/concrt/reference/combinable-class.md
+            - name: concurrent_priority_queue sınıfı
+              href: ../parallel/concrt/reference/concurrent-priority-queue-class.md
+            - name: concurrent_queue sınıfı
+              href: ../parallel/concrt/reference/concurrent-queue-class.md
+            - name: concurrent_unordered_map sınıfı
+              href: ../parallel/concrt/reference/concurrent-unordered-map-class.md
+            - name: concurrent_unordered_multimap sınıfı
+              href: ../parallel/concrt/reference/concurrent-unordered-multimap-class.md
+            - name: concurrent_unordered_multiset sınıfı
+              href: ../parallel/concrt/reference/concurrent-unordered-multiset-class.md
+            - name: concurrent_unordered_set class
+              href: ../parallel/concrt/reference/concurrent-unordered-set-class.md
+            - name: concurrent_vector sınıfı
+              href: ../parallel/concrt/reference/concurrent-vector-class.md
+            - name: Bağlam sınıfı
+              href: ../parallel/concrt/reference/context-class.md
+            - name: context_self_unblock sınıfı
+              href: ../parallel/concrt/reference/context-self-unblock-class.md
+            - name: context_unblock_unbalanced sınıfı
+              href: ../parallel/concrt/reference/context-unblock-unbalanced-class.md
+            - name: critical_section sınıfı
+              href: ../parallel/concrt/reference/critical-section-class.md
+            - name: CurrentScheduler sınıfı
+              href: ../parallel/concrt/reference/currentscheduler-class.md
+            - name: default_scheduler_exists sınıfı
+              href: ../parallel/concrt/reference/default-scheduler-exists-class.md
+            - name: DispatchState Yapısı
+              href: ../parallel/concrt/reference/dispatchstate-structure.md
+            - name: event sınıfı
+              href: ../parallel/concrt/reference/event-class.md
+            - name: IExecutionContext Yapısı
+              href: ../parallel/concrt/reference/iexecutioncontext-structure.md
+            - name: IExecutionResource Yapısı
+              href: ../parallel/concrt/reference/iexecutionresource-structure.md
+            - name: improper_lock sınıfı
+              href: ../parallel/concrt/reference/improper-lock-class.md
+            - name: improper_scheduler_attach sınıfı
+              href: ../parallel/concrt/reference/improper-scheduler-attach-class.md
+            - name: improper_scheduler_detach sınıfı
+              href: ../parallel/concrt/reference/improper-scheduler-detach-class.md
+            - name: improper_scheduler_reference sınıfı
+              href: ../parallel/concrt/reference/improper-scheduler-reference-class.md
+            - name: invalid_link_target sınıfı
+              href: ../parallel/concrt/reference/invalid-link-target-class.md
+            - name: invalid_multiple_scheduling sınıfı
+              href: ../parallel/concrt/reference/invalid-multiple-scheduling-class.md
+            - name: invalid_operation sınıfı
+              href: ../parallel/concrt/reference/invalid-operation-class.md
+            - name: invalid_oversubscribe_operation sınıfı
+              href: ../parallel/concrt/reference/invalid-oversubscribe-operation-class.md
+            - name: invalid_scheduler_policy_key sınıfı
+              href: ../parallel/concrt/reference/invalid-scheduler-policy-key-class.md
+            - name: invalid_scheduler_policy_thread_specification sınıfı
+              href: ../parallel/concrt/reference/invalid-scheduler-policy-thread-specification-class.md
+            - name: invalid_scheduler_policy_value sınıfı
+              href: ../parallel/concrt/reference/invalid-scheduler-policy-value-class.md
+            - name: IResourceManager Yapısı
+              href: ../parallel/concrt/reference/iresourcemanager-structure.md
+            - name: IScheduler Yapısı
+              href: ../parallel/concrt/reference/ischeduler-structure.md
+            - name: ISchedulerProxy Yapısı
+              href: ../parallel/concrt/reference/ischedulerproxy-structure.md
+            - name: ISource sınıfı
+              href: ../parallel/concrt/reference/isource-class.md
+            - name: ITarget sınıfı
+              href: ../parallel/concrt/reference/itarget-class.md
+            - name: IThreadProxy Yapısı
+              href: ../parallel/concrt/reference/ithreadproxy-structure.md
+            - name: ITopologyExecutionResource Yapısı
+              href: ../parallel/concrt/reference/itopologyexecutionresource-structure.md
+            - name: ITopologyNode Yapısı
+              href: ../parallel/concrt/reference/itopologynode-structure.md
+            - name: IUMSCompletionList Yapısı
+              href: ../parallel/concrt/reference/iumscompletionlist-structure.md
+            - name: IUMSScheduler Yapısı
+              href: ../parallel/concrt/reference/iumsscheduler-structure.md
+            - name: IUMSThreadProxy Yapısı
+              href: ../parallel/concrt/reference/iumsthreadproxy-structure.md
+            - name: IUMSUnblockNotification Yapısı
+              href: ../parallel/concrt/reference/iumsunblocknotification-structure.md
+            - name: IVirtualProcessorRoot Yapısı
+              href: ../parallel/concrt/reference/ivirtualprocessorroot-structure.md
+            - name: join sınıfı
+              href: ../parallel/concrt/reference/join-class.md
+            - name: location sınıfı
+              href: ../parallel/concrt/reference/location-class.md
+            - name: message sınıfı
+              href: ../parallel/concrt/reference/message-class.md
+            - name: message_not_found sınıfı
+              href: ../parallel/concrt/reference/message-not-found-class.md
+            - name: message_processor sınıfı
+              href: ../parallel/concrt/reference/message-processor-class.md
+            - name: missing_wait sınıfı
+              href: ../parallel/concrt/reference/missing-wait-class.md
+            - name: multi_link_registry sınıfı
+              href: ../parallel/concrt/reference/multi-link-registry-class.md
+            - name: multitype_join sınıfı
+              href: ../parallel/concrt/reference/multitype-join-class.md
+            - name: nested_scheduler_missing_detach sınıfı
+              href: ../parallel/concrt/reference/nested-scheduler-missing-detach-class.md
+            - name: network_link_registry sınıfı
+              href: ../parallel/concrt/reference/network-link-registry-class.md
+            - name: operation_timed_out sınıfı
+              href: ../parallel/concrt/reference/operation-timed-out-class.md
+            - name: ordered_message_processor sınıfı
+              href: ../parallel/concrt/reference/ordered-message-processor-class.md
+            - name: overwrite_buffer sınıfı
+              href: ../parallel/concrt/reference/overwrite-buffer-class.md
+            - name: progress_reporter sınıfı
+              href: ../parallel/concrt/reference/progress-reporter-class.md
+            - name: propagator_block sınıfı
+              href: ../parallel/concrt/reference/propagator-block-class.md
+            - name: reader_writer_lock sınıfı
+              href: ../parallel/concrt/reference/reader-writer-lock-class.md
+            - name: ScheduleGroup sınıfı
+              href: ../parallel/concrt/reference/schedulegroup-class.md
+            - name: Zamanlayıcı sınıfı
+              href: ../parallel/concrt/reference/scheduler-class.md
+            - name: scheduler_interface Yapısı
+              href: ../parallel/concrt/reference/scheduler-interface-structure.md
+            - name: scheduler_not_attached sınıfı
+              href: ../parallel/concrt/reference/scheduler-not-attached-class.md
+            - name: scheduler_ptr Yapısı (Eşzamanlılık Çalışma Zamanı)
+              href: ../parallel/concrt/reference/scheduler-ptr-structure-concurrency-runtime.md
+            - name: scheduler_resource_allocation_error sınıfı
+              href: ../parallel/concrt/reference/scheduler-resource-allocation-error-class.md
+            - name: scheduler_worker_creation_error sınıfı
+              href: ../parallel/concrt/reference/scheduler-worker-creation-error-class.md
+            - name: SchedulerPolicy sınıfı
+              href: ../parallel/concrt/reference/schedulerpolicy-class.md
+            - name: simple_partitioner sınıfı
+              href: ../parallel/concrt/reference/simple-partitioner-class.md
+            - name: single_assignment sınıfı
+              href: ../parallel/concrt/reference/single-assignment-class.md
+            - name: single_link_registry sınıfı
+              href: ../parallel/concrt/reference/single-link-registry-class.md
+            - name: source_block sınıfı
+              href: ../parallel/concrt/reference/source-block-class.md
+            - name: source_link_manager sınıfı
+              href: ../parallel/concrt/reference/source-link-manager-class.md
+            - name: static_partitioner sınıfı
+              href: ../parallel/concrt/reference/static-partitioner-class.md
+            - name: structured_task_group sınıfı
+              href: ../parallel/concrt/reference/structured-task-group-class.md
+            - name: target_block sınıfı
+              href: ../parallel/concrt/reference/target-block-class.md
+            - name: task sınıfı (Eşzamanlılık Çalışma Zamanı)
+              href: ../parallel/concrt/reference/task-class.md
+            - name: task_canceled sınıfı
+              href: ../parallel/concrt/reference/task-canceled-class.md
+            - name: task_completion_event sınıfı
+              href: ../parallel/concrt/reference/task-completion-event-class.md
+            - name: task_continuation_context sınıfı
+              href: ../parallel/concrt/reference/task-continuation-context-class.md
+            - name: task_group sınıfı
+              href: ../parallel/concrt/reference/task-group-class.md
+            - name: task_handle sınıfı
+              href: ../parallel/concrt/reference/task-handle-class.md
+            - name: task_options sınıfı (Eşzamanlılık Çalışma Zamanı)
+              href: ../parallel/concrt/reference/task-options-class-concurrency-runtime.md
+            - name: süreölçer sınıfı
+              href: ../parallel/concrt/reference/timer-class.md
+            - name: dönüştürücü sınıfı
+              href: ../parallel/concrt/reference/transformer-class.md
+            - name: unbounded_buffer sınıfı
+              href: ../parallel/concrt/reference/unbounded-buffer-class.md
+            - name: unsupported_os sınıfı
+              href: ../parallel/concrt/reference/unsupported-os-class.md
+        - name: std ad alanı
+          expanded: false
+          items:
+            - name: std ad alanı
+              href: ../parallel/concrt/reference/std-namespace.md
+            - name: make_exception_ptr işlevi
+              href: ../parallel/concrt/reference/make-exception-ptr-function.md
+        - name: stdx ad alanı
+          expanded: false
+          items:
+            - name: stdx ad alanı
+              href: ../parallel/concrt/reference/stdx-namespace.md
+            - name: declval işlevi
+              href: ../parallel/concrt/reference/declval-function.md
+- name: OpenMP
+  expanded: false
+  items:
+    - name: MSVC'de OpenMP
+      href: ../parallel/openmp/openmp-in-visual-cpp.md
+    - name: SIMD Uzantısı
+      href: ../parallel/openmp/openmp-simd.md
+    - name: OpenMP C ve C++ Uygulaması Program Arabirimi
+      expanded: false
+      items:
+        - name: OpenMP C ve C++ Uygulaması Program Arabirimi
+          href: ../parallel/openmp/openmp-c-and-cpp-application-program-interface.md
+        - name: Giriş
+          href: ../parallel/openmp/1-introduction.md
+        - name: Yönergeler
+          href: ../parallel/openmp/2-directives.md
+        - name: Çalışma zamanı kitaplık işlevleri
+          href: ../parallel/openmp/3-run-time-library-functions.md
+        - name: Ortam değişkenleri
+          href: ../parallel/openmp/4-environment-variables.md
+        - name: Ekler
+          items:
+            - name: Örnekler
+              href: ../parallel/openmp/a-examples.md
+            - name: Çalışma zamanı kitaplık işlevleri için saplamalar
+              href: ../parallel/openmp/b-stubs-for-run-time-library-functions.md
+            - name: OpenMP C ve C++ dil bilgisi
+              href: ../parallel/openmp/c-openmp-c-and-cpp-grammar.md
+            - name: schedule yan tümcesi
+              href: ../parallel/openmp/d-using-the-schedule-clause.md
+            - name: OpenMP C/C++’daki uygulama tanımlı davranışlar
+              href: ../parallel/openmp/e-implementation-defined-behaviors-in-openmp-c-cpp.md
+            - name: 2.0 sürümündeki yeni özellikler ve açıklamalar
+              href: ../parallel/openmp/f-new-features-and-clarifications-in-version-2-0.md
+    - name: OpenMP kitaplık başvurusu
+      expanded: false
+      items:
+        - name: OpenMP kitaplık başvurusu
+          href: ../parallel/openmp/reference/openmp-library-reference.md
+        - name: Yönergeler
+          href: ../parallel/openmp/reference/openmp-directives.md
+        - name: Tümceler
+          href: ../parallel/openmp/reference/openmp-clauses.md
+        - name: İşlevler
+          href: ../parallel/openmp/reference/openmp-functions.md
+        - name: Ortam değişkenleri
+          href: ../parallel/openmp/reference/openmp-environment-variables.md
+- name: Eski kod için çoklu iş parçacığı kullanma desteği (Visual C++)
+  expanded: false
+  items:
+    - name: Eski kod için çoklu iş parçacığı kullanma desteği (Visual C++)
+      href: ../parallel/multithreading-support-for-older-code-visual-cpp.md
+    - name: C ve Win32 ile Çoklu İş Parçacığı Kullanımı
+      expanded: false
+      items:
+        - name: C ve Win32 ile Çoklu İş Parçacığı Kullanımı
+          href: ../parallel/multithreading-with-c-and-win32.md
+        - name: Örnek çoklu iş parçacığı kullanan C programı
+          href: ../parallel/sample-multithread-c-program.md
+        - name: İş parçacığı yerel depolaması (TLS)
+          href: ../parallel/thread-local-storage-tls.md
+    - name: C++ ve MCF ile Çoklu İş Parçacığı Kullanımı
+      expanded: false
+      items:
+        - name: C++ ve MCF ile Çoklu İş Parçacığı Kullanımı
+          href: ../parallel/multithreading-with-cpp-and-mfc.md
+        - name: 'Çoklu iş parçacığı kullanımı: Kullanıcı arabirimi iş parçacıkları oluşturma'
+          href: ../parallel/multithreading-creating-user-interface-threads.md
+        - name: 'Çoklu iş parçacığı kullanımı: Arka plan iş parçacıkları oluşturma'
+          href: ../parallel/multithreading-creating-worker-threads.md
+        - name: 'Çoklu iş parçacığı kullanımı: Eşitleme sınıflarının kullanılma zamanı'
+          href: ../parallel/multithreading-when-to-use-the-synchronization-classes.md
+        - name: 'Çoklu iş parçacığı kullanımı: Eşitleme sınıflarını kullanma'
+          href: ../parallel/multithreading-how-to-use-the-synchronization-classes.md
+        - name: 'Çoklu iş parçacığı kullanımı: İş parçacıklarını sonlandırma'
+          href: ../parallel/multithreading-terminating-threads.md
+        - name: 'Çoklu iş parçacığı kullanımı: Programlama ipuçları'
+          href: ../parallel/multithreading-programming-tips.md
+    - name: Çoklu iş parçacığı kullanımı ve yerel ayarlar
+      href: ../parallel/multithreading-and-locales.md

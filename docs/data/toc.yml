@@ -1,0 +1,591 @@
+- name: Visual C++'da veri erişimi
+  href: ../data/data-access-in-cpp.md
+- name: Veri erişim programlama (MFC-ATL)
+  expanded: false
+  items:
+    - name: Veri erişim programlama (MFC-ATL)
+      href: ../data/data-access-programming-mfc-atl.md
+    - name: Veritabanı desteğini yükleme (MFC-ATL)
+      href: ../data/installing-database-support-mfc-atl.md
+    - name: ATL veritabanı sınıfları (OLE DB Şablonları)
+      href: ../data/atl-database-classes-ole-db-templates.md
+    - name: MFC veritabanı sınıfları
+      expanded: false
+      items:
+        - name: MFC veritabanı sınıfları
+          href: ../data/mfc-database-classes-odbc-and-dao.md
+        - name: 'MFC: Veritabanı sınıflarını belgeler ve görünümler ile kullanma'
+          href: ../data/mfc-using-database-classes-with-documents-and-views.md
+        - name: 'MFC: Veritabanı sınıflarını belgeler ve görünümler olmadan kullanma'
+          href: ../data/mfc-using-database-classes-without-documents-and-views.md
+    - name: Kayıt (MFC veri erişimi)
+      href: ../data/record-mfc-data-access.md
+    - name: Şema (MFC veri erişimi)
+      href: ../data/schema-mfc-data-access.md
+    - name: Katalog bilgileri (MFC veri erişimi)
+      href: ../data/catalog-information-mfc-data-access.md
+    - name: İşlemler (MFC veri erişimi)
+      href: ../data/transactions-mfc-data-access.md
+    - name: Kayıt görünümleri (MFC veri erişimi)
+      expanded: false
+      items:
+        - name: Kayıt görünümleri (MFC veri erişimi)
+          href: ../data/record-views-mfc-data-access.md
+        - name: Kayıt görünümü sınıflarının özellikleri (MFC veri erişimi)
+          href: ../data/features-of-record-view-classes-mfc-data-access.md
+        - name: Kayıt görünümleri için veri değişimi (MFC veri erişimi)
+          href: ../data/data-exchange-for-record-views-mfc-data-access.md
+        - name: Kayıt görünümü ile çalışırken sizin rolünüz (MFC veri erişimi)
+          href: ../data/your-role-in-working-with-a-record-view-mfc-data-access.md
+        - name: Kayıt görünümü tasarlama ve oluşturma (MFC veri erişimi)
+          href: ../data/designing-and-creating-a-record-view-mfc-data-access.md
+        - name: Kayıt görünümünde gezintiyi destekleme (MFC veri erişimi)
+          expanded: false
+          items:
+            - name: Kayıt görünümünde gezintiyi destekleme (MFC veri erişimi)
+              href: ../data/supporting-navigation-in-a-record-view-mfc-data-access.md
+            - name: Kayıt kaydırma için komut işleyicileri (MFC veri erişimi)
+              href: ../data/command-handlers-for-record-scrolling-mfc-data-access.md
+            - name: Kayıt görünümleri için kullanıcı arabirimini güncelleştirme (MFC veri erişimi)
+              href: ../data/user-interface-updating-for-record-views-mfc-data-access.md
+        - name: Kayıt görünümünü kullanma (MFC veri erişimi)
+          expanded: false
+          items:
+            - name: Kayıt görünümünü kullanma (MFC veri erişimi)
+              href: ../data/using-a-record-view-mfc-data-access.md
+            - name: Uygulama sihirbazının oluşturduğu kayıt görünümü kodu (MFC veri erişimi)
+              href: ../data/record-view-code-created-by-application-wizard-mfc-data-access.md
+            - name: Varsayılan kodda yapabileceğiniz değişiklikler (MFC veri erişimi)
+              href: ../data/changes-you-might-make-to-the-default-code-mfc-data-access.md
+        - name: İkinci kayıt kümesinden liste kutusunu doldurma (MFC veri erişimi)
+          href: ../data/filling-a-list-box-from-a-second-recordset-mfc-data-access.md
+- name: OLE DB programlama
+  expanded: false
+  items:
+    - name: OLE DB programlama
+      href: ../data/oledb/ole-db-programming.md
+    - name: OLE DB programlamaya genel bakış
+      expanded: false
+      items:
+        - name: OLE DB programlamaya genel bakış
+          href: ../data/oledb/ole-db-programming-overview.md
+        - name: OLE DB tüketicileri ve sağlayıcıları
+          href: ../data/oledb/ole-db-consumers-and-providers.md
+        - name: OLE DB nesne modeli
+          href: ../data/oledb/ole-db-object-model.md
+        - name: 'OLE DB şablonları, öznitelikler ve diğer uygulamalar'
+          href: ../data/oledb/ole-db-templates-attributes-and-other-implementations.md
+        - name: OLE DB mimari tasarım sorunları
+          href: ../data/oledb/ole-db-architectural-design-issues.md
+    - name: OLE DB tüketici şablonları (C++)
+      expanded: false
+      items:
+        - name: OLE DB tüketici şablonları (C++)
+          href: ../data/oledb/ole-db-consumer-templates-cpp.md
+        - name: Veri kaynakları ve oturumlar
+          href: ../data/oledb/data-sources-and-sessions.md
+        - name: Erişimciler ve satır kümeleri
+          href: ../data/oledb/accessors-and-rowsets.md
+        - name: Komutlar ve tablolar
+          href: ../data/oledb/commands-and-tables.md
+        - name: Kullanıcı kayıtları
+          href: ../data/oledb/user-records.md
+        - name: Şema satır kümeleri
+          href: ../data/oledb/schema-rowsets.md
+        - name: OLE DB tüketicisi oluşturma
+          expanded: false
+          items:
+            - name: OLE DB tüketicisi oluşturma
+              href: ../data/oledb/creating-an-ole-db-consumer.md
+            - name: Sihirbaz kullanarak bir OLE DB tüketicisi oluşturma
+              expanded: false
+              items:
+                - name: Sihirbaz kullanarak bir OLE DB tüketicisi oluşturma
+                  href: ../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md
+                - name: Basit tüketici oluşturma
+                  href: ../data/oledb/creating-a-simple-consumer.md
+                - name: Basit tüketici uygulama
+                  href: ../data/oledb/implementing-a-simple-consumer.md
+                - name: Tüketici sihirbazı tarafından oluşturulan sınıflar
+                  href: ../data/oledb/consumer-wizard-generated-classes.md
+                - name: Tüketici sihirbazı tarafından oluşturulan yöntemler
+                  href: ../data/oledb/consumer-wizard-generated-methods.md
+            - name: Sihirbaz kullanmadan bir tüketici oluşturma
+              href: ../data/oledb/creating-a-consumer-without-using-a-wizard.md
+        - name: OLE DB tüketici şablonlarıyla çalışma
+          expanded: false
+          items:
+            - name: OLE DB tüketici şablonlarıyla çalışma
+              href: ../data/oledb/working-with-ole-db-consumer-templates.md
+            - name: Veritabanı öznitelikleriyle veri erişimini basitleştirme
+              href: ../data/oledb/simplifying-data-access-with-database-attributes.md
+            - name: Sihirbazın ürettiği erişimcilerde alan durumu veri üyeleri
+              href: ../data/oledb/field-status-data-members-in-wizard-generated-accessors.md
+            - name: Basit bir satır kümesinde geçiş yapma
+              href: ../data/oledb/traversing-a-simple-rowset.md
+            - name: Parametreleştirilmiş sorgu verme
+              href: ../data/oledb/issuing-a-parameterized-query.md
+            - name: Veri getirme
+              href: ../data/oledb/fetching-data.md
+            - name: Satır kümelerini güncelleştirme
+              href: ../data/oledb/updating-rowsets.md
+            - name: Saklı yordamları kullanma
+              expanded: false
+              items:
+                - name: Saklı yordamları kullanma
+                  href: ../data/oledb/using-stored-procedures.md
+                - name: Saklı yordamları tanımlama
+                  href: ../data/oledb/defining-stored-procedures.md
+                - name: Çıktı parametreleri
+                  href: ../data/oledb/output-parameters.md
+                - name: Depolanmış bir yordamdan birden çok sonuç kümesi kullanma
+                  href: ../data/oledb/using-multiple-result-sets-from-one-stored-procedure.md
+            - name: Erişimcileri kullanma
+              expanded: false
+              items:
+                - name: Erişimcileri kullanma
+                  href: ../data/oledb/using-accessors.md
+                - name: Ne tür erişimci kullanacağınızı belirleme
+                  href: ../data/oledb/determining-which-type-of-accessor-to-use.md
+                - name: Satır kümesinde çoklu erişimci kullanma
+                  href: ../data/oledb/using-multiple-accessors-on-a-rowset.md
+                - name: Dinamik erişimcileri kullanma
+                  href: ../data/oledb/using-dynamic-accessors.md
+                - name: Dinamik erişimciyi geçersiz kılma
+                  href: ../data/oledb/overriding-a-dynamic-accessor.md
+                - name: El ile çalışan erişimcileri kullanma
+                  href: ../data/oledb/using-manual-accessors.md
+                - name: XML verilerine erişme
+                  href: ../data/oledb/accessing-xml-data.md
+            - name: Şema satır kümeleri ile meta verileri alma
+              href: ../data/oledb/obtaining-metadata-with-schema-rowsets.md
+            - name: OLE DB'de işlemleri destekleme
+              href: ../data/oledb/supporting-transactions-in-ole-db.md
+            - name: OLE DB kayıt görünümlerini kullanma
+              href: ../data/oledb/using-ole-db-record-views.md
+            - name: Varolan ADO kayıt kümesini kullanma
+              href: ../data/oledb/using-an-existing-ado-recordset.md
+            - name: Başka bir tablo satır için başvuru içerirken sütunu güncelleştirme
+              href: ../data/oledb/updating-a-column-when-another-table-contains-a-reference-to-the-row.md
+            - name: Yer işaretlerini kullanma
+              href: ../data/oledb/using-bookmarks.md
+            - name: BLOB Alma
+              href: ../data/oledb/retrieving-a-blob.md
+            - name: Bildirimleri alma
+              href: ../data/oledb/receiving-notifications.md
+    - name: OLE DB sağlayıcı şablonları (C++)
+      expanded: false
+      items:
+        - name: OLE DB sağlayıcı şablonları (C++)
+          href: ../data/oledb/ole-db-provider-templates-cpp.md
+        - name: OLE DB sağlayıcı şablonu mimarisi
+          expanded: false
+          items:
+            - name: OLE DB sağlayıcı şablonu mimarisi
+              href: ../data/oledb/ole-db-provider-template-architecture.md
+            - name: Veri kaynağı nesne arabirimleri
+              href: ../data/oledb/data-source-object-interfaces.md
+            - name: Oturum nesnesi arabirimleri
+              href: ../data/oledb/session-object-interfaces.md
+            - name: Satır kümesi nesnesi arabirimleri
+              href: ../data/oledb/rowset-object-interfaces.md
+            - name: Komut nesnesi arabirimleri
+              href: ../data/oledb/command-object-interfaces.md
+            - name: İşlem nesnesi arabirimleri
+              href: ../data/oledb/transaction-object-interfaces.md
+            - name: Özellik eşlemeleri
+              href: ../data/oledb/property-maps.md
+            - name: Kullanıcı kaydı
+              href: ../data/oledb/user-record.md
+        - name: OLE DB sağlayıcısı oluşturma
+          expanded: false
+          items:
+            - name: OLE DB sağlayıcısı oluşturma
+              href: ../data/oledb/creating-an-ole-db-provider.md
+            - name: Sağlayıcı için proje oluşturma
+              href: ../data/oledb/creating-a-project-for-the-provider.md
+            - name: Sağlayıcı oluşturma
+              href: ../data/oledb/creating-the-provider.md
+            - name: Sağlayıcı sihirbazı tarafından üretilen dosyalar
+              expanded: false
+              items:
+                - name: Sağlayıcı sihirbazı tarafından üretilen dosyalar
+                  href: ../data/oledb/provider-wizard-generated-files.md
+                - name: CCustomSource (CustomDS.H)
+                  href: ../data/oledb/cmyprovidersource-myproviderds-h.md
+                - name: CCustomSession (CustomSess.H)
+                  href: ../data/oledb/cmyprovidersession-myprovidersess-h.md
+                - name: CCustomCommand (CustomRS.H)
+                  href: ../data/oledb/cmyprovidercommand-myproviderrs-h.md
+                - name: CCustomRowset (CustomRS.H)
+                  href: ../data/oledb/cmyproviderrowset-myproviderrs-h.md
+                - name: CCustomWindowsFile
+                  href: ../data/oledb/cmyproviderwindowsfile.md
+            - name: Basit bir salt okunur sağlayıcı oluşturma
+              expanded: false
+              items:
+                - name: Basit bir salt okunur sağlayıcı oluşturma
+                  href: ../data/oledb/creating-a-simple-read-only-provider.md
+                - name: Basit salt okunur sağlayıcıyı uygulama
+                  href: ../data/oledb/implementing-the-simple-read-only-provider.md
+                - name: Dizeleri OLE DB sağlayıcısında depolama
+                  href: ../data/oledb/storing-strings-in-the-ole-db-provider.md
+                - name: Dizeleri OLE DB sağlayıcısına okuma
+                  href: ../data/oledb/reading-strings-into-the-ole-db-provider.md
+                - name: Basit salt okunur sağlayıcıyı geliştirme
+                  href: ../data/oledb/enhancing-the-simple-read-only-provider.md
+                - name: RCustomRowset devralmayı değiştirme
+                  href: ../data/oledb/modifying-the-inheritance-of-rmyproviderrowset.md
+                - name: Tüketiciye döndürülecek olan sütunları dinamik olarak belirleme
+                  href: ../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md
+                - name: Salt okunur sağlayıcıyı test etme
+                  href: ../data/oledb/testing-the-read-only-provider.md
+            - name: Güncelleştirilebilir sağlayıcı oluşturma
+              href: ../data/oledb/creating-an-updatable-provider.md
+        - name: OLE DB sağlayıcı şablonlarıyla çalışma
+          expanded: false
+          items:
+            - name: OLE DB sağlayıcı şablonlarıyla çalışma
+              href: ../data/oledb/working-with-ole-db-provider-templates.md
+            - name: Sağlayıcınıza arabirim ekleme
+              href: ../data/oledb/adding-an-interface-to-your-provider.md
+            - name: Sağlayıcınızdaki bir özelliğe başvurma
+              href: ../data/oledb/referencing-a-property-in-your-provider.md
+            - name: Sağlayıcınızdaki özellikleri ayarlama
+              href: ../data/oledb/setting-properties-in-your-provider.md
+            - name: Sağlayıcınızdaki sütunları dinamik olarak bağlama
+              href: ../data/oledb/dynamically-binding-columns-in-your-provider.md
+            - name: Sağlayıcınızda serbest iş parçacığı oluşturmayı destekleme
+              href: ../data/oledb/supporting-free-threading-in-your-provider.md
+            - name: Sağlayıcınızı test etme
+              href: ../data/oledb/testing-your-provider.md
+            - name: Sağlayıcınızda hata ayıklama
+              href: ../data/oledb/debugging-your-provider.md
+            - name: Sağlayıcı tarafından desteklenmeyen veriyi dönüştürme
+              href: ../data/oledb/converting-data-not-supported-by-the-provider.md
+        - name: Gelişmiş sağlayıcı teknikleri
+          expanded: false
+          items:
+            - name: Gelişmiş sağlayıcı teknikleri
+              href: ../data/oledb/advanced-provider-techniques.md
+            - name: Bildirimleri destekleme
+              href: ../data/oledb/supporting-notifications.md
+            - name: Şema satır kümelerini destekleme
+              href: ../data/oledb/supporting-schema-rowsets.md
+            - name: Yer işaretleri sağlayıcı desteği
+              href: ../data/oledb/provider-support-for-bookmarks.md
+            - name: OLE DB uygunluk testlerini geçme
+              href: ../data/oledb/passing-ole-db-conformance-tests.md
+            - name: OLE DB kaynak havuzu ve hizmetleri
+              expanded: false
+              items:
+                - name: OLE DB kaynak havuzu ve hizmetleri
+                  href: ../data/oledb/ole-db-resource-pooling-and-services.md
+                - name: OLE DB uygulamanızda kaynak havuzu
+                  href: ../data/oledb/resource-pooling-in-your-ole-db-application.md
+                - name: OLE DB hizmetlerini etkinleştirme ve devre dışı bırakma
+                  expanded: false
+                  items:
+                    - name: OLE DB hizmetlerini etkinleştirme ve devre dışı bırakma
+                      href: ../data/oledb/enabling-and-disabling-ole-db-services.md
+                    - name: Sağlayıcı için etkinleştirme ve devre dışı bırakma hizmetleri
+                      href: ../data/oledb/enabling-and-disabling-services-for-a-provider.md
+                    - name: Sağlayıcı hizmet varsayılanlarını geçersiz kılma
+                      href: ../data/oledb/overriding-provider-service-defaults.md
+- name: OLE DB şablonları
+  expanded: false
+  items:
+    - name: OLE DB şablonları genel bakış
+      href: ../data/oledb/ole-db-templates.md
+    - name: OLE DB tüketici şablonları başvurusu genel bakış
+      href: ../data/oledb/ole-db-consumer-templates-reference.md
+    - name: OLE DB tüketici şablonları başvurusu
+      expanded: false
+      items:
+        - name: CAccessor sınıfı
+          href: ../data/oledb/caccessor-class.md
+        - name: CAccessorBase sınıfı
+          href: ../data/oledb/caccessorbase-class.md
+        - name: CAccessorRowset sınıfı
+          href: ../data/oledb/caccessorrowset-class.md
+        - name: CArrayRowset sınıfı
+          href: ../data/oledb/carrayrowset-class.md
+        - name: CBookmark sınıfı
+          href: ../data/oledb/cbookmark-class.md
+        - name: CBulkRowset sınıfı
+          href: ../data/oledb/cbulkrowset-class.md
+        - name: CColumnAccessor sınıfı
+          href: ../data/oledb/ccolumnaccessor-class.md
+        - name: CCommand sınıfı
+          href: ../data/oledb/ccommand-class.md
+        - name: CDataConnection sınıfı
+          href: ../data/oledb/cdataconnection-class.md
+        - name: CDataSource sınıfı
+          href: ../data/oledb/cdatasource-class.md
+        - name: CDBErrorInfo sınıfı
+          href: ../data/oledb/cdberrorinfo-class.md
+        - name: CDBPropIDSet sınıfı
+          href: ../data/oledb/cdbpropidset-class.md
+        - name: CDBPropSet sınıfı
+          href: ../data/oledb/cdbpropset-class.md
+        - name: CDynamicAccessor sınıfı
+          href: ../data/oledb/cdynamicaccessor-class.md
+        - name: CDynamicParameterAccessor sınıfı
+          href: ../data/oledb/cdynamicparameteraccessor-class.md
+        - name: CDynamicStringAccessor sınıfı
+          href: ../data/oledb/cdynamicstringaccessor-class.md
+        - name: CDynamicStringAccessorA sınıfı
+          href: ../data/oledb/cdynamicstringaccessora-class.md
+        - name: CDynamicStringAccessorW sınıfı
+          href: ../data/oledb/cdynamicstringaccessorw-class.md
+        - name: CEnumerator sınıfı
+          href: ../data/oledb/cenumerator-class.md
+        - name: CEnumeratorAccessor sınıfı
+          href: ../data/oledb/cenumeratoraccessor-class.md
+        - name: CManualAccessor sınıfı
+          href: ../data/oledb/cmanualaccessor-class.md
+        - name: CMultipleResults sınıfı
+          href: ../data/oledb/cmultipleresults-class.md
+        - name: CNoAccessor sınıfı
+          href: ../data/oledb/cnoaccessor-class.md
+        - name: CNoMultipleResults sınıfı
+          href: ../data/oledb/cnomultipleresults-class.md
+        - name: CNoRowset sınıfı
+          href: ../data/oledb/cnorowset-class.md
+        - name: CRestrictions sınıfı
+          href: ../data/oledb/crestrictions-class.md
+        - name: CRowset sınıfı
+          href: ../data/oledb/crowset-class.md
+        - name: CSession sınıfı
+          href: ../data/oledb/csession-class.md
+        - name: CStreamRowset sınıfı
+          href: ../data/oledb/cstreamrowset-class.md
+        - name: CTable sınıfı
+          href: ../data/oledb/ctable-class.md
+        - name: CXMLAccessor sınıfı
+          href: ../data/oledb/cxmlaccessor-class.md
+        - name: IRowsetNotifyImpl sınıfı
+          href: ../data/oledb/irowsetnotifyimpl-class.md
+        - name: Şema satır kümesi sınıfları ve typedef sınıfları
+          href: ../data/oledb/schema-rowset-classes-and-typedef-classes.md
+        - name: OLE DB tüketici şablonları için makrolar ve genel işlevler
+          href: ../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md
+    - name: OLE DB sağlayıcı şablonları başvurusu genel bakış
+      href: ../data/oledb/ole-db-provider-templates-reference.md
+    - name: OLE DB sağlayıcı şablonları başvurusu
+      expanded: false
+      items:
+        - name: CRowsetImpl sınıfı
+          href: ../data/oledb/crowsetimpl-class.md
+        - name: CSimpleRow sınıfı
+          href: ../data/oledb/csimplerow-class.md
+        - name: CUtlProps sınıfı
+          href: ../data/oledb/cutlprops-class.md
+        - name: IAccessorImpl sınıfı
+          href: ../data/oledb/iaccessorimpl-class.md
+        - name: IColumnsInfoImpl sınıfı
+          href: ../data/oledb/icolumnsinfoimpl-class.md
+        - name: ICommandImpl sınıfı
+          href: ../data/oledb/icommandimpl-class.md
+        - name: ICommandPropertiesImpl sınıfı
+          href: ../data/oledb/icommandpropertiesimpl-class.md
+        - name: ICommandTextImpl sınıfı
+          href: ../data/oledb/icommandtextimpl-class.md
+        - name: IConvertTypeImpl sınıfı
+          href: ../data/oledb/iconverttypeimpl-class.md
+        - name: IDBCreateCommandImpl sınıfı
+          href: ../data/oledb/idbcreatecommandimpl-class.md
+        - name: IDBCreateSessionImpl sınıfı
+          href: ../data/oledb/idbcreatesessionimpl-class.md
+        - name: IDBInitializeImpl sınıfı
+          href: ../data/oledb/idbinitializeimpl-class.md
+        - name: IDBPropertiesImpl sınıfı
+          href: ../data/oledb/idbpropertiesimpl-class.md
+        - name: sIDBSchemaRowsetImpl sınıfı
+          href: ../data/oledb/idbschemarowsetimpl-class.md
+        - name: IErrorRecordsImpl sınıfı
+          href: ../data/oledb/ierrorrecordsimpl-class.md
+        - name: IGetDataSourceImpl sınıfı
+          href: ../data/oledb/igetdatasourceimpl-class.md
+        - name: IOpenRowsetImpl sınıfı
+          href: ../data/oledb/iopenrowsetimpl-class.md
+        - name: IRowsetChangeImpl sınıfı
+          href: ../data/oledb/irowsetchangeimpl-class.md
+        - name: IRowsetCreatorImpl sınıfı
+          href: ../data/oledb/irowsetcreatorimpl-class.md
+        - name: IRowsetIdentityImpl sınıfı
+          href: ../data/oledb/irowsetidentityimpl-class.md
+        - name: IRowsetImpl sınıfı
+          href: ../data/oledb/irowsetimpl-class.md
+        - name: IRowsetInfoImpl sınıfı
+          href: ../data/oledb/irowsetinfoimpl-class.md
+        - name: IRowsetLocateImpl sınıfı
+          href: ../data/oledb/irowsetlocateimpl-class.md
+        - name: IRowsetNotifyCP sınıfı
+          href: ../data/oledb/irowsetnotifycp-class.md
+        - name: IRowsetUpdateImpl sınıfı
+          href: ../data/oledb/irowsetupdateimpl-class.md
+        - name: ISessionPropertiesImpl sınıfı
+          href: ../data/oledb/isessionpropertiesimpl-class.md
+        - name: OLE DB sağlayıcı Şablonları için makrolar
+          href: ../data/oledb/macros-for-ole-db-provider-templates.md
+- name: Açık veritabanı bağlantısı (ODBC)
+  expanded: false
+  items:
+    - name: Açık veritabanı bağlantısı (ODBC)
+      href: ../data/odbc/open-database-connectivity-odbc.md
+    - name: ODBC yükleme ve başlangıç
+      href: ../data/odbc/installing-and-getting-started-with-odbc.md
+    - name: Bir ODBC veritabanı uygulaması tasarlama ve oluşturma
+      href: ../data/odbc/design-and-create-an-odbc-database-application.md
+    - name: ODBC ile veritabanı formları (kayıt görünümleri) kullanma
+      href: ../data/odbc/use-database-forms-record-views-with-odbc.md
+    - name: Diğer kullanıcılarla çalışmak için ODBC kullanma
+      href: ../data/odbc/use-odbc-to-work-with-other-users.md
+    - name: ODBC veritabanı bağlantılarıyla çalışma
+      href: ../data/odbc/work-with-odbc-database-connections.md
+    - name: ODBC ve sürücülerle çalışma
+      href: ../data/odbc/work-with-odbc-and-drivers.md
+    - name: ODBC imleç kitaplığını kullanma
+      href: ../data/odbc/use-the-odbc-cursor-library.md
+    - name: MFC ODBC kayıt kümelerini kullanma
+      href: ../data/odbc/use-mfc-odbc-recordsets.md
+    - name: ODBC temelleri
+      expanded: false
+      items:
+        - name: ODBC temelleri
+          href: ../data/odbc/odbc-basics.md
+        - name: ODBC ve veritabanı sınıfları
+          href: ../data/odbc/odbc-and-the-database-classes.md
+        - name: Dynaset'ler için ODBC sürücü gereksinimleri
+          href: ../data/odbc/odbc-driver-requirements-for-dynasets.md
+        - name: ODBC bileşenlerini müşterilerinize yeniden dağıtma
+          href: ../data/odbc/redistributing-odbc-components-to-your-customers.md
+        - name: 'ODBC: ODBC imleç kitaplığı'
+          href: ../data/odbc/odbc-the-odbc-cursor-library.md
+        - name: 'ODBC: ODBC veri kaynağını yapılandırma'
+          href: ../data/odbc/odbc-configuring-an-odbc-data-source.md
+        - name: 'ODBC: ODBC API işlevlerini doğrudan çağırma'
+          href: ../data/odbc/odbc-calling-odbc-api-functions-directly.md
+    - name: ODBC ve MFC
+      expanded: false
+      items:
+        - name: ODBC ve MFC
+          href: ../data/odbc/odbc-and-mfc.md
+        - name: Veri kaynağına bağlanma
+          href: ../data/odbc/connecting-to-a-data-source.md
+        - name: Kayıtları seçme ve düzenleme
+          href: ../data/odbc/selecting-and-manipulating-records.md
+        - name: Formdaki verileri görüntüleme ve düzenleme
+          href: ../data/odbc/displaying-and-manipulating-data-in-a-form.md
+        - name: Belgeler ve görünümler ile çalışma
+          href: ../data/odbc/working-with-documents-and-views.md
+        - name: ODBC'ye ve SQL'e Erişim
+          href: ../data/odbc/access-to-odbc-and-sql.md
+        - name: MFC ODBC sınıfları hakkında daha fazla okuma
+          href: ../data/odbc/further-reading-about-the-mfc-odbc-classes.md
+    - name: ODBC sınıfları ve iş parçacıkları
+      href: ../data/odbc/odbc-classes-and-threads.md
+    - name: ODBC yöneticisi
+      href: ../data/odbc/odbc-administrator.md
+    - name: ODBC sürücü listesi
+      href: ../data/odbc/odbc-driver-list.md
+    - name: Veri kaynağı (ODBC)
+      expanded: false
+      items:
+        - name: Veri kaynağı (ODBC)
+          href: ../data/odbc/data-source-odbc.md
+        - name: 'Veri kaynağı: bağlantıları yönetme (ODBC)'
+          href: ../data/odbc/data-source-managing-connections-odbc.md
+        - name: 'Veri kaynağı: Veri kaynağının şemasını belirleme (ODBC)'
+          href: ../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md
+        - name: 'Veri kaynağı: ODBC veri kaynağını program aracılığıyla yapılandırma'
+          href: ../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md
+        - name: 'Veri kaynağı: ODBC veri kaynağında program aracılığıyla tablo oluşturma'
+          href: ../data/odbc/data-source-programmatically-creating-a-table-in-an-odbc-data-source.md
+    - name: Dynaset
+      href: ../data/odbc/dynaset.md
+    - name: Anlık Görüntü
+      href: ../data/odbc/snapshot.md
+    - name: Kayıt alanı değişimi (RFX)
+      expanded: false
+      items:
+        - name: Kayıt alanı değişimi (RFX)
+          href: ../data/odbc/record-field-exchange-rfx.md
+        - name: 'Kayıt alanı değişimi: RFX kullanma'
+          href: ../data/odbc/record-field-exchange-using-rfx.md
+        - name: 'Kayıt alanı değişimi: Sihirbaz kodu ile çalışma'
+          href: ../data/odbc/record-field-exchange-working-with-the-wizard-code.md
+        - name: 'Kayıt alanı değişimi: RFX işlevlerini kullanma'
+          href: ../data/odbc/record-field-exchange-using-the-rfx-functions.md
+        - name: 'Kayıt alanı değişimi: RFX’in çalışma biçimi'
+          href: ../data/odbc/record-field-exchange-how-rfx-works.md
+    - name: Kayıt Kümesi (ODBC)
+      expanded: false
+      items:
+        - name: Kayıt Kümesi (ODBC)
+          href: ../data/odbc/recordset-odbc.md
+        - name: 'Kayıt kümesi: mimari (ODBC)'
+          href: ../data/odbc/recordset-architecture-odbc.md
+        - name: 'Kayıt kümesi: Tablo için sınıf bildirme (ODBC)'
+          href: ../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md
+        - name: 'Kayıt kümesi: Kayıt kümeleri oluşturma ve kapatma (ODBC)'
+          href: ../data/odbc/recordset-creating-and-closing-recordsets-odbc.md
+        - name: 'Kayıt kümesi: Kaydırma (ODBS)'
+          href: ../data/odbc/recordset-scrolling-odbc.md
+        - name: 'Kayıt kümesi: Yer işaretleri ve mutlak konumlar (ODBC)'
+          href: ../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md
+        - name: 'Kayıt kümesi: Kayıtları filtreleme (OBDC)'
+          href: ../data/odbc/recordset-filtering-records-odbc.md
+        - name: 'Kayıt kümesi: Kayıtları sıralama (OBDC)'
+          href: ../data/odbc/recordset-sorting-records-odbc.md
+        - name: 'Kayıt kümesi: Kayıt kümesini parametreleştirme (ODBC)'
+          href: ../data/odbc/recordset-parameterizing-a-recordset-odbc.md
+        - name: 'Kayıt kümesi: Kayıtları ekleme, güncelleştirme ve silme (ODBC)'
+          href: ../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md
+        - name: 'Kayıt kümesi: Kayıtları toplu ekleme (ODBC)'
+          href: ../data/odbc/recordset-adding-records-in-bulk-odbc.md
+        - name: 'Kayıt kümesi: Kayıtları kilitleme (OBDC)'
+          href: ../data/odbc/recordset-locking-records-odbc.md
+        - name: 'Kayıt kümesi: Birleşim gerçekleştirme (ODBC)'
+          href: ../data/odbc/recordset-performing-a-join-odbc.md
+        - name: 'Kayıt kümesi: Önceden tanımlanmış sorgu için sınıf bildirme (ODBC)'
+          href: ../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md
+        - name: 'Kayıt kümesi: Kayıt kümesini yeniden sorgulama (ODBC)'
+          href: ../data/odbc/recordset-requerying-a-recordset-odbc.md
+        - name: 'Kayıt kümesi: Veri sütunlarını dinamik olarak bağlama (ODBC)'
+          href: ../data/odbc/recordset-dynamically-binding-data-columns-odbc.md
+        - name: 'Kayıt kümesi: Kayıtları toplu getirme (ODBC)'
+          href: ../data/odbc/recordset-fetching-records-in-bulk-odbc.md
+        - name: 'Kayıt kümesi: Büyük veri öğeleri ile çalışma (ODBC)'
+          href: ../data/odbc/recordset-working-with-large-data-items-odbc.md
+        - name: 'Kayıt kümesi: SUM’ları ve diğer toplama sonuçlarını alma (ODBC)'
+          href: ../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md
+        - name: 'Kayıt kümesi: Kayıt kümelerinin kayıtları seçme biçimi (ODBC)'
+          href: ../data/odbc/recordset-how-recordsets-select-records-odbc.md
+        - name: 'Kayıt kümesi: Kayıt kümelerinin kayıtları güncelleştirme biçimi (ODBC)'
+          href: ../data/odbc/recordset-how-recordsets-update-records-odbc.md
+        - name: 'Kayıt kümesi: AddNew, Düzenleme ve Silmenin çalışma biçimi (ODBC)'
+          href: ../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md
+        - name: 'Kayıt kümesi: Güncelleştirmeler hakkında daha fazla bilgi (ODBC)'
+          href: ../data/odbc/recordset-more-about-updates-odbc.md
+    - name: ODBC'de SQL
+      expanded: false
+      items:
+        - name: ODBC'de SQL
+          href: ../data/odbc/sql.md
+        - name: 'SQL: Kayıt kümenizin SQL deyimini özelleştirme (ODBC)'
+          href: ../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md
+        - name: 'SQL: SQL ve C++ veri türleri (ODBC)'
+          href: ../data/odbc/sql-sql-and-cpp-data-types-odbc.md
+        - name: 'SQL: Doğrudan SQL çağrıları yapma (ODBC)'
+          href: ../data/odbc/sql-making-direct-sql-calls-odbc.md
+    - name: İşlem (ODBC)
+      expanded: false
+      items:
+        - name: İşlem (ODBC)
+          href: ../data/odbc/transaction-odbc.md
+        - name: 'İşlem: Kayıt kümesinde işlem gerçekleştirme (ODBC)'
+          href: ../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md
+        - name: 'İşlem: İşlemlerin güncelleştirmeleri etkileme biçimi (ODBC)'
+          href: ../data/odbc/transaction-how-transactions-affect-updates-odbc.md

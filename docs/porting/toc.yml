@@ -1,0 +1,54 @@
+- name: Microsoft C++ Taşıma ve Yükseltme Kılavuzu
+  href: ../porting/visual-cpp-porting-and-upgrading-guide.md
+- name: Önceki sürüme sahip projeleri yükseltme
+  items:
+    - name: Önceki sürüme sahip projeleri yükseltme
+      href: ../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md
+    - name: Olası yükseltme sorunlarına genel bakış
+      href: ../porting/overview-of-potential-upgrade-issues-visual-cpp.md
+    - name: Kodunuzu Evrensel CRT’ye yükseltme
+      href: ../porting/upgrade-your-code-to-the-universal-crt.md
+    - name: WINVER ve _WIN32_WINNT güncelleştirmesi
+      href: ../porting/modifying-winver-and-win32-winnt.md
+    - name: Kitaplık içeriklerindeki bağımlılıklarınızı düzeltme
+      href: ../porting/fix-your-dependencies-on-library-internals.md
+    - name: Kayan nokta geçiş sorunları
+      href: ../porting/floating-point-migration-issues.md
+    - name: Visual Studio’da eski projeleri oluşturmak için yerel çoklu sürüm paketi kullanma
+      href: ../porting/use-native-multi-targeting.md
+    - name: Visual Studio 2019’da kullanım dışı bırakılan C++ özellikleri
+      href: ../porting/features-deprecated-in-visual-studio.md
+    - name: VCBuild ile MSBuild
+      href: ../porting/build-system-changes.md
+    - name: Üçüncü taraf kitaplıklarını taşıma
+      href: ../porting/porting-third-party-libraries.md
+    - name: Veri uygulamalarını taşıma
+      href: ../data/data-access-programming-mfc-atl.md
+- name: C++ kodunu yükseltmeye yönelik IDE araçları
+  href: ../porting/ide-tools-for-upgrading-code.md
+- name: Visual C++ değişiklik geçmişi 2003 - 2015
+  href: ../porting/visual-cpp-change-history-2003-2015.md
+- name: Visual C++ 2003 ile 2015 Arasındaki Farklar
+  href: ../porting/visual-cpp-what-s-new-2003-through-2015.md
+- name: C++ ikili uyumluluğu 2015-2019
+  href: ../porting/binary-compat-2015-2017.md
+- name: 'Taşıma ve yükseltme: örnekler ve örnek olay incelemeleri'
+  items:
+    - name: Örnekler ve örnek olay incelemeleri
+      href: ../porting/porting-and-upgrading-examples-and-case-studies.md
+    - name: 'Taşıma rehberi: MFC Scribble'
+      href: ../porting/porting-guide-mfc-scribble.md
+    - name: 'Taşıma rehberi: COM Spy'
+      href: ../porting/porting-guide-com-spy.md
+    - name: 'Taşıma rehberi: Spy++'
+      href: ../porting/porting-guide-spy-increment.md
+- name: UNIX Kullanıcıları için Microsoft C++'a Giriş
+  href: ../porting/introduction-to-visual-cpp-for-unix-users.md
+- name: Windows’da Linux programları çalıştırma
+  href: ../porting/porting-from-unix-to-win32.md
+- name: Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
+  items:
+    - name: Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
+      href: ../porting/porting-to-the-universal-windows-platform-cpp.md
+    - name: 'Nasıl yapılır: Mevcut C++ kodunu Evrensel Windows Platformu uygulamasında kullanma'
+      href: ../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md

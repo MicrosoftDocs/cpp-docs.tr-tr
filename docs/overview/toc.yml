@@ -1,0 +1,128 @@
+- name: Visual Studio’da C++
+  expanded: false
+  items:
+    - name: Visual Studio’da C++
+      href: ../overview/visual-cpp-in-visual-studio.md
+    - name: Visual Studio’da C++ geliştirmeye genel bakış
+      href: ../overview/overview-of-cpp-development.md
+    - name: Visual Studio 2017’deki C++ yenilikleri
+      href: ../overview/what-s-new-for-visual-cpp-in-visual-studio.md
+    - name: Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
+      href: ../overview/cpp-conformance-improvements.md
+    - name: Microsoft C++ dil uyumluluğu
+      href: ../overview/visual-cpp-language-conformance.md
+    - name: Desteklenen hedef platformlar
+      href: ../overview/supported-platforms-visual-cpp.md
+    - name: Visual Studio Sürümlerinde C++ Araçları ve Özellikleri
+      href: ../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md
+    - name: Örnekler
+      href: ../overview/visual-cpp-samples.md
+    - name: Yardım ve topluluk
+      href: ../overview/visual-cpp-help-and-community.md
+    - name: Visual C++ araç takımıyla ilgili bir sorunu bildirme
+      href: ../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md
+- name: Visual Studio C++ Öğreticileri
+  expanded: false
+  items:
+    - name: Visual Studio’ya C++ desteği yükleme
+      href: ../build/vscpp-step-0-installation.md
+    - name: C++ konsol uygulama projesi oluşturma ve düzenleme
+      href: ../build/vscpp-step-1-create.md
+    - name: C++ konsol uygulama projesi derleyip çalıştırma
+      href: ../build/vscpp-step-2-build.md
+    - name: İkinci C++ uygulamanızı oluşturma
+      href: ../get-started/tutorial-console-cpp.md
+    - name: UWP uygulaması oluşturma
+      href: /windows/uwp/cpp-and-winrt-apis/get-started
+    - name: Windows Masaüstü uygulaması oluşturma
+      href: /windows/desktop/learnwin32/learn-to-program-for-windows
+    - name: DirectX oyunu oluşturma
+      href: /windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game
+- name: Projeler ve derleme sistemleri
+  href: ../build/projects-and-build-systems-cpp.md
+- name: Visual Studio'da C++ kodu okuma ve yazma
+  href: ../ide/read-and-understand-code-cpp.md
+- name: Windows masaüstü geliştirme
+  href: ../windows/overview-of-windows-programming-in-cpp.md
+- name: UWP geliştirme
+  href: ../cppcx/universal-windows-apps-cpp.md
+- name: Oyun geliştirme
+  href: ../overview/game-development-cpp.md
+- name: Linux geliştirme
+  href: ../linux/
+- name: Platformlar arası mobil geliştirme
+  href: ../cross-platform/
+- name: C++/CLI ile .NET geliştirme
+  href: ../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md
+- name: Bulut ve Web programlama
+  href: ../cloud/cloud-and-web-programming-in-visual-cpp.md
+- name: C++ kodunu taşıma ve yükseltme
+  href: ../porting/visual-cpp-porting-and-upgrading-guide.md
+- name: C++ için en iyi güvenlik uygulamaları
+  expanded: false
+  items:
+    - name: C++ için en iyi güvenlik uygulamaları
+      href: ../security/security-best-practices-for-cpp.md
+    - name: Kullanıcı grubu üyesi olarak çalıştırma
+      href: ../security/running-as-a-member-of-the-users-group.md
+    - name: Kullanıcı Hesabı Denetimi (UAC) uygulamanızı nasıl etkiler?
+      href: ../security/how-user-account-control-uac-affects-your-application.md
+    - name: Kurgusal yürütme yan kanalları için C++ geliştirici kılavuzu
+      href: ../security/developer-guidance-speculative-execution.md
+- name: Başvuru
+  expanded: false
+  items:
+    - name: C/C++ dili ve standart kitaplıkları
+      href: ../cpp/c-cpp-language-and-standard-libraries.md
+    - name: Dil başvurusu
+      expanded: false
+      items:
+        - name: Diller
+          href: ../overview/languages-cpp.md
+        - name: C dili başvurusu
+          href: ../c-language/c-language-reference.md
+        - name: C++ dili başvurusu
+          href: ../cpp/cpp-language-reference.md
+        - name: C/C++ ön işlemci başvurusu
+          href: ../preprocessor/c-cpp-preprocessor-reference.md
+        - name: Derleyici iç bilgileri ve derleme dili
+          href: ../intrinsics/compiler-intrinsics-and-assembly-language.md
+        - name: Derleyici iç bilgileri
+          href: ../intrinsics/compiler-intrinsics.md
+        - name: ARM Assembler başvurusu
+          href: ../assembler/arm/arm-assembler-reference.md
+        - name: MSVC'de satır içi derleme
+          href: ../assembler/inline/inline-assembler.md
+        - name: Microsoft Macro Assembler (MASM) başvurusu
+          href: ../assembler/masm/microsoft-macro-assembler-reference.md
+        - name: .NET ve UWP için bileşen uzantıları
+          href: ../extensions/component-extensions-for-runtime-platforms.md
+        - name: COM ve .NET için C++ öznitelikleri
+          href: ../windows/attributes/cpp-attributes-com-net.md
+    - name: Kitaplıklar başvurusu
+      expanded: false
+      items:
+        - name: Kitaplıklar
+          href: ../overview/libraries-cpp.md
+        - name: C çalışma zamanı kitaplığı (CRT) başvurusu
+          href: ../c-runtime-library/
+        - name: C++ Standart Kitaplığı başvurusu
+          href: ../standard-library/
+        - name: SafeInt kitaplığı
+          expanded: false
+          items:
+            - name: SafeInt kitaplığı
+              href: ../safeint/safeint-library.md
+            - name: SafeInt Sınıfı
+              href: ../safeint/safeint-class.md
+            - name: SafeInt İşlevleri
+              href: ../safeint/safeint-functions.md
+            - name: SafeIntException Sınıfı
+              href: ../safeint/safeintexception-class.md
+        - name: MFC/ATL
+          href: ../mfc/mfc-and-atl.md
+        - name: Paralel kitaplıklar
+          href: ../parallel/
+          items: null
+        - name: Veri erişimi kitaplıkları
+          href: ../data/

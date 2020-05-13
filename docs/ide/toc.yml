@@ -1,0 +1,73 @@
+- name: Visual Studio'da C++ kodu okuma ve yazma
+  expanded: true
+  items:
+    - name: C++ kodunu okuma ve anlama
+      href: ../ide/read-and-understand-code-cpp.md
+    - name: C++ kodu düzenleme ve yeniden düzenleme
+      href: ../ide/writing-and-refactoring-code-cpp.md
+    - name: C++ kodunda gezinme
+      href: ../ide/navigate-code-cpp.md
+    - name: C++ kodlama tercihlerinizi ayarlama
+      href: ../ide/how-to-set-preferences.md
+    - name: C++ için Live Share kullanarak işbirliği yapma
+      href: ../ide/live-share-cpp.md
+    - name: İmzayı değiştirme
+      href: ../ide/refactoring/change-signature.md
+    - name: Ham dize sabit değerine dönüştürme
+      href: ../ide/refactoring/convert-to-raw-string-literal.md
+    - name: Bildirim / tanım oluşturma
+      href: ../ide/refactoring/create-declaration-definition.md
+    - name: İşlevi ayıklama
+      href: ../ide/refactoring/extract-function.md
+    - name: Saf sanalları uygulama
+      href: ../ide/refactoring/implement-pure-virtuals.md
+    - name: Move işlevinin tanımı
+      href: ../ide/refactoring/move-definition-location.md
+    - name: Rename
+      href: ../ide/refactoring/rename.md
+- name: C++ masaüstü geliştirmesi için Visual Studio IDE kullanma
+  expanded: true
+  items:
+    - name: C++ masaüstü geliştirmesi için Visual Studio IDE kullanma
+      href: ../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md
+    - name: 'İzlenecek yol: Projelerle ve Çözümlerle Çalışma (C++)'
+      href: ../ide/walkthrough-working-with-projects-and-solutions-cpp.md
+    - name: 'İzlenecek yol: Projeyi Derleme (C++)'
+      href: ../ide/walkthrough-building-a-project-cpp.md
+    - name: 'İzlenecek yol: Projeyi Test Etme (C++)'
+      href: ../ide/walkthrough-testing-a-project-cpp.md
+    - name: 'İzlenecek yol: Projede Hata Ayıklama (C++)'
+      href: ../ide/walkthrough-debugging-a-project-cpp.md
+    - name: 'İzlenecek yol: Programınızı dağıtma (C++)'
+      href: ../ide/walkthrough-deploying-your-program-cpp.md
+- name: Kod Sihirbazlarıyla işlevsellik ekleme
+  expanded: true
+  items:
+    - name: Kod Sihirbazlarıyla işlevsellik ekleme
+      href: ../ide/adding-functionality-with-code-wizards-cpp.md
+    - name: Sınıf ekleme
+      href: ../ide/adding-a-class-visual-cpp.md
+    - name: ActiveX denetiminden sınıf ekleme
+      href: ../ide/adding-a-class-from-an-activex-control-visual-cpp.md
+    - name: Genel C++ sınıfı ekleme
+      href: ../ide/adding-a-generic-cpp-class.md
+    - name: Üye işlevi ekleme
+      href: ../ide/adding-a-member-function-visual-cpp.md
+    - name: Üye değişkeni ekleme
+      href: ../ide/adding-a-member-variable-visual-cpp.md
+    - name: Metot ekleme
+      href: ../ide/adding-a-method-visual-cpp.md
+    - name: Özellik ekleme
+      href: ../ide/adding-a-property-visual-cpp.md
+    - name: Olay ekleme
+      href: ../ide/adding-an-event-visual-cpp.md
+    - name: Olay işleyicisi ekleme
+      href: ../ide/adding-an-event-handler-visual-cpp.md
+    - name: COM arabirimi oluşturma
+      href: ../ide/creating-a-com-interface-visual-cpp.md
+    - name: Bağlantı noktası uygulama
+      href: ../ide/implementing-a-connection-point-visual-cpp.md
+    - name: Arabirim uygulama
+      href: ../ide/implementing-an-interface-visual-cpp.md
+    - name: Sanal işlevi geçersiz kılma
+      href: ../ide/overriding-a-virtual-function-visual-cpp.md

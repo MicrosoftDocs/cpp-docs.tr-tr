@@ -1,0 +1,125 @@
+- name: .NET ve UWP için Bileşen Uzantıları
+  href: ../extensions/component-extensions-for-runtime-platforms.md
+- name: İzleme başvurusu işleci
+  href: ../extensions/tracking-reference-operator-cpp-component-extensions.md
+- name: İşlenecek nesne işleci (^)
+  href: ../extensions/handle-to-object-operator-hat-cpp-component-extensions.md
+- name: abstract
+  href: ../extensions/abstract-cpp-component-extensions.md
+- name: Diziler
+  href: ../extensions/arrays-cpp-component-extensions.md
+- name: Kutulama
+  href: ../extensions/boxing-cpp-component-extensions.md
+- name: Sınıflar ve yapılar
+  href: ../extensions/classes-and-structs-cpp-component-extensions.md
+- name: 'Platform, varsayılan ve cli ad alanları'
+  href: ../extensions/platform-default-and-cli-namespaces-cpp-component-extensions.md
+- name: Tür özellikleri için derleyici desteği
+  href: ../extensions/compiler-support-for-type-traits-cpp-component-extensions.md
+- name: Bağlama duyarlı anahtar sözcükler
+  href: ../extensions/context-sensitive-keywords-cpp-component-extensions.md
+- name: temsilci
+  href: ../extensions/delegate-cpp-component-extensions.md
+- name: sabit listesi sınıfı
+  href: ../extensions/enum-class-cpp-component-extensions.md
+- name: event
+  href: ../extensions/event-cpp-component-extensions.md
+- name: Özel durum işleme
+  href: ../extensions/exception-handling-cpp-component-extensions.md
+- name: Açık geçersiz kılmalar
+  href: ../extensions/explicit-overrides-cpp-component-extensions.md
+- name: 'yeni başvuru, gcnew'
+  href: ../extensions/ref-new-gcnew-cpp-component-extensions.md
+- name: Genel Türler
+  expanded: false
+  items:
+    - name: Genel Türler
+      href: ../extensions/generics-cpp-component-extensions.md
+    - name: Visual C++'de genel türlere genel bakış
+      href: ../extensions/overview-of-generics-in-visual-cpp.md
+    - name: Genel işlevler
+      href: ../extensions/generic-functions-cpp-cli.md
+    - name: Genel sınıflar
+      href: ../extensions/generic-classes-cpp-cli.md
+    - name: Genel arabirimler
+      href: ../extensions/generic-interfaces-visual-cpp.md
+    - name: Genel temsilciler
+      href: ../extensions/generic-delegates-visual-cpp.md
+    - name: Genel tür parametrelerindeki kısıtlamalar
+      href: ../extensions/constraints-on-generic-type-parameters-cpp-cli.md
+    - name: Genel türleri kullanma
+      href: ../extensions/consuming-generics-cpp-cli.md
+    - name: Genel türler ve şablonlar
+      href: ../extensions/generics-and-templates-visual-cpp.md
+    - name: 'Nasıl yapılır: Genel türlerle performansı artırma'
+      href: ../extensions/how-to-improve-performance-with-generics-visual-cpp.md
+- name: arabirim sınıfı
+  href: ../extensions/interface-class-cpp-component-extensions.md
+- name: değişmez değer
+  href: ../extensions/literal-cpp-component-extensions.md
+- name: Windows çalışma zamanı ve yönetilen şablonlar
+  href: ../extensions/windows-runtime-and-managed-templates-cpp-component-extensions.md
+- name: yeni (vtable'de yeni yuva)
+  href: ../extensions/new-new-slot-in-vtable-cpp-component-extensions.md
+- name: nullptr
+  href: ../extensions/nullptr-cpp-component-extensions.md
+- name: Geçersiz kılma tanımlayıcıları
+  href: ../extensions/override-specifiers-cpp-component-extensions.md
+- name: override
+  href: ../extensions/override-cpp-component-extensions.md
+- name: kısmi
+  href: ../extensions/partial-cpp-component-extensions.md
+- name: özellik
+  href: ../extensions/property-cpp-component-extensions.md
+- name: safe_cast
+  href: ../extensions/safe-cast-cpp-component-extensions.md
+- name: Dize
+  href: ../extensions/string-cpp-component-extensions.md
+- name: sealed
+  href: ../extensions/sealed-cpp-component-extensions.md
+- name: typeid
+  href: ../extensions/typeid-cpp-component-extensions.md
+- name: Kullanıcı tanımlı öznitelikler
+  expanded: false
+  items:
+    - name: Kullanıcı tanımlı öznitelikler
+      href: ../extensions/user-defined-attributes-cpp-component-extensions.md
+    - name: Öznitelik parametre türleri
+      href: ../extensions/attribute-parameter-types-cpp-component-extensions.md
+    - name: Öznitelik hedefleri
+      href: ../extensions/attribute-targets-cpp-component-extensions.md
+- name: C++/CLI'ya özgü uzantılar
+  expanded: false
+  items:
+    - name: C++/CLI'ya özgü uzantılar
+      href: ../extensions/extensions-that-are-specific-to-cpp-cli.md
+    - name: __tanımlayıcı
+      href: ../extensions/identifier-cpp-cli.md
+    - name: '-clr ile C türü atamalar'
+      href: ../extensions/c-style-casts-with-clr-cpp-cli.md
+    - name: interior_ptr
+      expanded: false
+      items:
+        - name: interior_ptr
+          href: ../extensions/interior-ptr-cpp-cli.md
+        - name: 'Nasıl yapılır: İç işaretçiler ve yönetilen diziler bildirme ve kullanma'
+          href: ../extensions/how-to-declare-and-use-interior-pointers-and-managed-arrays-cpp-cli.md
+        - name: 'Nasıl yapılır: interior_ptr anahtar sözcüğü ile değer türleri bildirme'
+          href: ../extensions/how-to-declare-value-types-with-the-interior-ptr-keyword-cpp-cli.md
+        - name: 'Nasıl yapılır: İç işaretçiler ve yerel işaretçilerle işlevleri tekrar yükleme'
+          href: ../extensions/how-to-overload-functions-with-interior-pointers-and-native-pointers-cpp-cli.md
+        - name: 'Nasıl yapılır: const anahtar sözcüğü ile iç işaretçileri bildirme'
+          href: ../extensions/how-to-declare-interior-pointers-with-the-const-keyword-cpp-cli.md
+    - name: pin_ptr
+      expanded: false
+      items:
+        - name: pin_ptr
+          href: ../extensions/pin-ptr-cpp-cli.md
+        - name: 'Nasıl yapılır: İşaretçiler ve dizileri sabitleme'
+          href: ../extensions/how-to-pin-pointers-and-arrays.md
+        - name: 'Nasıl yapılır: Sabitleme işaretçileri ve değer türlerini bildirme'
+          href: ../extensions/how-to-declare-pinning-pointers-and-value-types.md
+    - name: Tür iletme
+      href: ../extensions/type-forwarding-cpp-cli.md
+    - name: Değişken bağımsız değişken listeleri (...)
+      href: ../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md

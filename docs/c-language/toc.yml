@@ -1,0 +1,742 @@
+- name: C dili başvurusu
+  href: ../c-language/c-language-reference.md
+- name: C dili başvurularının organizasyonu
+  expanded: false
+  items:
+    - name: C dili başvurularının organizasyonu
+      href: ../c-language/organization-of-the-c-language-reference.md
+    - name: Bu kılavuzun kapsamı
+      href: ../c-language/scope-of-this-manual.md
+    - name: ANSI uyumluluğu
+      href: ../c-language/ansi-conformance.md
+- name: C Öğeleri
+  expanded: false
+  items:
+    - name: C Öğeleri
+      href: ../c-language/elements-of-c.md
+    - name: C belirteçleri
+      expanded: false
+      items:
+        - name: C belirteçleri
+          href: ../c-language/c-tokens.md
+        - name: Boşluk karakterleri
+          href: ../c-language/white-space-characters.md
+        - name: C açıklamaları
+          href: ../c-language/c-comments.md
+        - name: Belirteçlerin değerlendirmesi
+          href: ../c-language/evaluation-of-tokens.md
+    - name: C anahtar sözcükleri
+      href: ../c-language/c-keywords.md
+    - name: C tanımlayıcıları
+      expanded: false
+      items:
+        - name: C tanımlayıcıları
+          href: ../c-language/c-identifiers.md
+        - name: Birden çok baytlı ve geniş karakterler
+          href: ../c-language/multibyte-and-wide-characters.md
+        - name: Trigraflar
+          href: ../c-language/trigraphs.md
+    - name: C sabitleri
+      expanded: false
+      items:
+        - name: C sabitleri
+          href: ../c-language/c-constants.md
+        - name: C kayan nokta sabitleri
+          expanded: false
+          items:
+            - name: C kayan nokta sabitleri
+              href: ../c-language/c-floating-point-constants.md
+            - name: Kayan nokta sabitleri sınırlamaları
+              href: ../c-language/limits-on-floating-point-constants.md
+        - name: C tamsayı sabitleri
+          expanded: false
+          items:
+            - name: C tamsayı sabitleri
+              href: ../c-language/c-integer-constants.md
+            - name: Tam sayı türleri
+              href: ../c-language/integer-types.md
+            - name: C ve C++ tamsayı sınırları
+              href: ../c-language/cpp-integer-limits.md
+        - name: C karakter sabitleri
+          expanded: false
+          items:
+            - name: C karakter sabitleri
+              href: ../c-language/c-character-constants.md
+            - name: Karakter türleri
+              href: ../c-language/character-types.md
+            - name: Yürütme karakter kümesi
+              href: ../c-language/execution-character-set.md
+            - name: Çıkış sıraları
+              href: ../c-language/escape-sequences.md
+            - name: Sekizlik ve onaltılık karakter belirtimleri
+              href: ../c-language/octal-and-hexadecimal-character-specifications.md
+    - name: C dize değişmez değerleri
+      expanded: false
+      items:
+        - name: C dize değişmez değerleri
+          href: ../c-language/c-string-literals.md
+        - name: Dize sabit değerleri türü
+          href: ../c-language/type-for-string-literals.md
+        - name: Dize değişmez değerlerini depolama
+          href: ../c-language/storage-of-string-literals.md
+        - name: Dize değişmez değeri birleştirmesi
+          href: ../c-language/string-literal-concatenation.md
+        - name: Maksimum dize uzunluğu
+          href: ../c-language/maximum-string-length.md
+    - name: Noktalama işaretleri ve özel karakterler
+      href: ../c-language/punctuation-and-special-characters.md
+- name: Program yapısı
+  expanded: false
+  items:
+    - name: Program yapısı
+      href: ../c-language/program-structure.md
+    - name: Kaynak dosyalar ve kaynak programlar
+      expanded: false
+      items:
+        - name: Kaynak dosyalar ve kaynak programlar
+          href: ../c-language/source-files-and-source-programs.md
+        - name: Ön işlemci yönergeleri
+          href: ../c-language/directives-to-the-preprocessor.md
+        - name: C pragmaları
+          href: ../c-language/c-pragmas.md
+        - name: C tanımları ve bildirimleri
+          href: ../c-language/c-declarations-and-definitions.md
+        - name: İşlev bildirimleri ve tanımlar
+          href: ../c-language/function-declarations-and-definitions.md
+        - name: Bloklar
+          href: ../c-language/blocks.md
+        - name: Örnek program
+          href: ../c-language/example-program.md
+    - name: main işlevi ve program yürütme
+      expanded: false
+      items:
+        - name: main işlevi ve program yürütme
+          href: ../c-language/main-function-and-program-execution.md
+        - name: wmain Kullanma
+          href: ../c-language/using-wmain.md
+        - name: Bağımsız değişken tanımı
+          href: ../c-language/argument-description.md
+        - name: Joker karakter bağımsız değişkenlerini genişletme
+          href: ../c-language/expanding-wildcard-arguments.md
+        - name: C komut satırı bağımsız değişkenlerini ayrıştırma
+          href: ../c-language/parsing-c-command-line-arguments.md
+        - name: C komut satırı işlemini özelleştirme
+          href: ../c-language/customizing-c-command-line-processing.md
+    - name: 'Ömür, kapsam, görünürlük ve bağlantı'
+      expanded: false
+      items:
+        - name: 'Ömür, kapsam, görünürlük ve bağlantı'
+          href: ../c-language/lifetime-scope-visibility-and-linkage.md
+        - name: Ömür
+          href: ../c-language/lifetime.md
+        - name: Kapsam ve görünürlük
+          href: ../c-language/scope-and-visibility.md
+        - name: Ömür ve görünürlük özeti
+          href: ../c-language/summary-of-lifetime-and-visibility.md
+        - name: Bağlantı
+          expanded: false
+          items:
+            - name: Bağlantı
+              href: ../c-language/linkage.md
+            - name: İç bağlantı
+              href: ../c-language/internal-linkage.md
+            - name: Dış bağlantı
+              href: ../c-language/external-linkage.md
+            - name: Bağlantı yok
+              href: ../c-language/no-linkage.md
+    - name: Ad alanları
+      href: ../c-language/name-spaces.md
+- name: Bildirimler ve türler
+  expanded: false
+  items:
+    - name: Bildirimler ve türler
+      href: ../c-language/declarations-and-types.md
+    - name: Bildirimlere genel bakış
+      href: ../c-language/overview-of-declarations.md
+    - name: C depolama sınıfları
+      expanded: false
+      items:
+        - name: C depolama sınıfları
+          href: ../c-language/c-storage-classes.md
+        - name: Dış düzey bildirimleri depolama sınıfı tanımlayıcıları
+          href: ../c-language/storage-class-specifiers-for-external-level-declarations.md
+        - name: İç düzey bildirimleri depolama sınıfı tanımlayıcıları
+          expanded: false
+          items:
+            - name: İç düzey bildirimleri depolama sınıfı tanımlayıcıları
+              href: ../c-language/storage-class-specifiers-for-internal-level-declarations.md
+            - name: auto depolama sınıfı tanımlayıcısı
+              href: ../c-language/auto-storage-class-specifier.md
+            - name: register depolama sınıfı tanımlayıcısı
+              href: ../c-language/register-storage-class-specifier.md
+            - name: static depolama sınıfı tanımlayıcısı
+              href: ../c-language/static-storage-class-specifier.md
+            - name: extern depolama sınıfı tanımlayıcısı
+              href: ../c-language/extern-storage-class-specifier.md
+        - name: İşlev bildirimli depolama sınıfı tanımlayıcıları
+          href: ../c-language/storage-class-specifiers-with-function-declarations.md
+    - name: C tür tanımlayıcıları
+      expanded: false
+      items:
+        - name: C tür tanımlayıcıları
+          href: ../c-language/c-type-specifiers.md
+        - name: Veri türü tanımlayıcıları ve eşdeğerleri
+          href: ../c-language/data-type-specifiers-and-equivalents.md
+    - name: Tür niteleyicileri
+      href: ../c-language/type-qualifiers.md
+    - name: Bildirimler ve değişken bildirimleri
+      expanded: false
+      items:
+        - name: Bildirimciler ve değişken bildirimleri
+          href: ../c-language/declarators-and-variable-declarations.md
+        - name: Basit değişken bildirimler
+          href: ../c-language/simple-variable-declarations.md
+        - name: C numaralandırma bildirimleri
+          href: ../c-language/c-enumeration-declarations.md
+        - name: Yapı bildirimleri
+          expanded: false
+          items:
+            - name: Yapı bildirimleri
+              href: ../c-language/structure-declarations.md
+            - name: C bit alanları
+              href: ../c-language/c-bit-fields.md
+            - name: Yapıların depolanması ve hizalanması
+              href: ../c-language/storage-and-alignment-of-structures.md
+        - name: Birleşim bildirimleri
+          expanded: false
+          items:
+            - name: Birleşim bildirimleri
+              href: ../c-language/union-declarations.md
+            - name: Birleşimler deposu
+              href: ../c-language/storage-of-unions.md
+        - name: Dizi bildirimleri
+          expanded: false
+          items:
+            - name: Dizi bildirimleri
+              href: ../c-language/array-declarations.md
+            - name: Dizileri depolama
+              href: ../c-language/storage-of-arrays.md
+        - name: İşaretçi bildirimleri
+          expanded: false
+          items:
+            - name: İşaretçi bildirimleri
+              href: ../c-language/pointer-declarations.md
+            - name: Adres deposu
+              href: ../c-language/storage-of-addresses.md
+        - name: Tabanlı işaretçiler (C)
+          href: ../c-language/based-pointers-c.md
+        - name: C soyut bildirimciler
+          href: ../c-language/c-abstract-declarators.md
+    - name: Daha karmaşık bildirimcileri yorumlama
+      href: ../c-language/interpreting-more-complex-declarators.md
+    - name: Başlatma
+      expanded: false
+      items:
+        - name: Başlatma
+          href: ../c-language/initialization.md
+        - name: Ölçekli türleri başlatma
+          href: ../c-language/initializing-scalar-types.md
+        - name: Toplama türlerini başlatma
+          href: ../c-language/initializing-aggregate-types.md
+        - name: Başlatma dizeleri
+          href: ../c-language/initializing-strings.md
+    - name: Temel türleri depolama
+      expanded: false
+      items:
+        - name: Temel türlerin depolanması
+          href: ../c-language/storage-of-basic-types.md
+        - name: Tür char
+          href: ../c-language/type-char.md
+        - name: Tür int
+          href: ../c-language/type-int.md
+        - name: C boyutlu tamsayı türleri
+          href: ../c-language/c-sized-integer-types.md
+        - name: Tür float
+          href: ../c-language/type-float.md
+        - name: Tür double
+          href: ../c-language/type-double.md
+        - name: long double Türü
+          href: ../c-language/type-long-double.md
+    - name: Eksik türler
+      href: ../c-language/incomplete-types.md
+    - name: Typedef bildirimleri
+      href: ../c-language/typedef-declarations.md
+    - name: C genişletilmiş depolama sınıfı öznitelikler
+      expanded: false
+      items:
+        - name: C genişletilmiş depolama sınıfı öznitelikler
+          href: ../c-language/c-extended-storage-class-attributes.md
+        - name: DLL içeri ve dışarı aktarma
+          href: ../c-language/dll-import-and-export.md
+        - name: Naked (C)
+          href: ../c-language/naked-c.md
+        - name: İş parçacığında yerel depolama
+          href: ../c-language/thread-local-storage.md
+- name: İfadeler ve atamalar
+  expanded: false
+  items:
+    - name: İfadeler ve atamalar
+      href: ../c-language/expressions-and-assignments.md
+    - name: İşlenenler ve ifadeler
+      expanded: false
+      items:
+        - name: İşlenenler ve ifadeler
+          href: ../c-language/operands-and-expressions.md
+        - name: C birincil ifadeler
+          expanded: false
+          items:
+            - name: C birincil ifadeler
+              href: ../c-language/c-primary-expressions.md
+            - name: Birincil ifadelerdeki tanımlayıcılar
+              href: ../c-language/identifiers-in-primary-expressions.md
+            - name: Birincil ifadelerdeki sabitler
+              href: ../c-language/constants-in-primary-expressions.md
+            - name: Birincil ifadelerdeki dize değişmez değerleri
+              href: ../c-language/string-literals-in-primary-expressions.md
+            - name: Parantezlerdeki ifadeler
+              href: ../c-language/expressions-in-parentheses.md
+        - name: L-değeri ve r-değeri ifadeleri
+          href: ../c-language/l-value-and-r-value-expressions.md
+        - name: C sabit ifadeleri
+          href: ../c-language/c-constant-expressions.md
+        - name: İfade değerlendirme (C)
+          expanded: false
+          items:
+            - name: İfade değerlendirme (C)
+              href: ../c-language/expression-evaluation-c.md
+            - name: Yan etkiler
+              href: ../c-language/side-effects.md
+            - name: C sıralama noktaları
+              href: ../c-language/c-sequence-points.md
+    - name: C işleçleri
+      expanded: false
+      items:
+        - name: C işleçleri
+          href: ../c-language/c-operators.md
+        - name: Öncelik ve değerlendirme sırası
+          href: ../c-language/precedence-and-order-of-evaluation.md
+        - name: Olağan aritmetik dönüştürmeler
+          href: ../c-language/usual-arithmetic-conversions.md
+        - name: Sonek işleçleri
+          expanded: false
+          items:
+            - name: Sonek işleçleri
+              href: ../c-language/postfix-operators.md
+            - name: Bir boyutlu diziler
+              href: ../c-language/one-dimensional-arrays.md
+            - name: Çok boyutlu diziler (C)
+              href: ../c-language/multidimensional-arrays-c.md
+            - name: İşlev çağrısı (C)
+              href: ../c-language/function-call-c.md
+            - name: Yapı ve birleşim üyeleri
+              href: ../c-language/structure-and-union-members.md
+            - name: C sonek arttırma ve azaltma işleçleri
+              href: ../c-language/c-postfix-increment-and-decrement-operators.md
+        - name: C birli işleçler
+          expanded: false
+          items:
+            - name: C birli işleçler
+              href: ../c-language/c-unary-operators.md
+            - name: Önek arttırma ve azaltma işleçleri
+              href: ../c-language/prefix-increment-and-decrement-operators.md
+            - name: Yöneltme ve adres işleçleri
+              href: ../c-language/indirection-and-address-of-operators.md
+            - name: Birli aritmetik işleçler
+              href: ../c-language/unary-arithmetic-operators.md
+            - name: sizeof işleci (C)
+              href: ../c-language/sizeof-operator-c.md
+        - name: Atama işleçleri
+          href: ../c-language/cast-operators.md
+        - name: C çarpma işleçleri
+          href: ../c-language/c-multiplicative-operators.md
+        - name: C ek işleçleri
+          expanded: false
+          items:
+            - name: C ek işleçleri
+              href: ../c-language/c-additive-operators.md
+            - name: Toplama (+)
+              href: ../c-language/addition-plus.md
+            - name: Çıkarma (-)
+              href: ../c-language/subtraction-minus.md
+            - name: Ek işleçlerini kullanma
+              href: ../c-language/using-the-additive-operators.md
+            - name: İşaretçi aritmetiği
+              href: ../c-language/pointer-arithmetic.md
+        - name: Bit düzeyinde kaydırma işleçleri
+          href: ../c-language/bitwise-shift-operators.md
+        - name: C ilişkisel ve eşitlik işleçleri
+          href: ../c-language/c-relational-and-equality-operators.md
+        - name: C bit düzeyinde işleçler
+          href: ../c-language/c-bitwise-operators.md
+        - name: C mantıksal işleçleri
+          href: ../c-language/c-logical-operators.md
+        - name: Koşullu ifade işleci
+          href: ../c-language/conditional-expression-operator.md
+        - name: C atama işleçleri
+          expanded: false
+          items:
+            - name: C atama işleçleri
+              href: ../c-language/c-assignment-operators.md
+            - name: Basit atama (C)
+              href: ../c-language/simple-assignment-c.md
+            - name: C bileşik atama
+              href: ../c-language/c-compound-assignment.md
+        - name: Sıralı değerlendirme işleci
+          href: ../c-language/sequential-evaluation-operator.md
+    - name: Tür dönüştürmeleri (C)
+      expanded: false
+      items:
+        - name: Tür dönüştürmeleri (C)
+          href: ../c-language/type-conversions-c.md
+        - name: Atama dönüştürmeleri
+          expanded: false
+          items:
+            - name: Atama dönüştürmeleri
+              href: ../c-language/assignment-conversions.md
+            - name: İmzalı tam sayı türlerinden dönüştürmeler
+              href: ../c-language/conversions-from-signed-integral-types.md
+            - name: İmzasız tam sayı türlerinden dönüştürmeler
+              href: ../c-language/conversions-from-unsigned-integral-types.md
+            - name: Kayan nokta türlerinden dönüşümler
+              href: ../c-language/conversions-from-floating-point-types.md
+            - name: İşaretçi türlerine ve türlerinden dönüşümler
+              href: ../c-language/conversions-to-and-from-pointer-types.md
+            - name: Diğer türlerden dönüştürmeler
+              href: ../c-language/conversions-from-other-types.md
+        - name: Tür atama dönüştürmeleri
+          href: ../c-language/type-cast-conversions.md
+        - name: İşlev çağrısı dönüşümleri
+          href: ../c-language/function-call-conversions.md
+- name: Deyimler (C)
+  expanded: false
+  items:
+    - name: Deyimler (C)
+      href: ../c-language/statements-c.md
+    - name: C deyimlerine genel bakış
+      href: ../c-language/overview-of-c-statements.md
+    - name: break deyimi (C)
+      href: ../c-language/break-statement-c.md
+    - name: Bileşik deyim (C)
+      href: ../c-language/compound-statement-c.md
+    - name: continue deyimi (C)
+      href: ../c-language/continue-statement-c.md
+    - name: do-while deyimi (C)
+      href: ../c-language/do-while-statement-c.md
+    - name: İfade deyimi (C)
+      href: ../c-language/expression-statement-c.md
+    - name: for deyimi (C)
+      href: ../c-language/for-statement-c.md
+    - name: goto ve etiketli deyimleri (C)
+      href: ../c-language/goto-and-labeled-statements-c.md
+    - name: if deyimi (C)
+      href: ../c-language/if-statement-c.md
+    - name: Boş deyim (C)
+      href: ../c-language/null-statement-c.md
+    - name: return deyimi (C)
+      href: ../c-language/return-statement-c.md
+    - name: switch deyimi (C)
+      href: ../c-language/switch-statement-c.md
+    - name: try-except deyimi (C)
+      href: ../c-language/try-except-statement-c.md
+    - name: try-finally deyimi (C)
+      href: ../c-language/try-finally-statement-c.md
+    - name: while deyimi (C)
+      href: ../c-language/while-statement-c.md
+- name: İşlevler (C)
+  expanded: false
+  items:
+    - name: İşlevler (C)
+      href: ../c-language/functions-c.md
+    - name: İşlevlere genel bakış
+      expanded: false
+      items:
+        - name: İşlevlere genel bakış
+          href: ../c-language/overview-of-functions.md
+        - name: İşlev bildirimlerinin ve tanımlarının kullanılmayan formları
+          href: ../c-language/obsolete-forms-of-function-declarations-and-definitions.md
+    - name: C işlev tanımları
+      expanded: false
+      items:
+        - name: C işlev tanımları
+          href: ../c-language/c-function-definitions.md
+        - name: İşlev öznitelikleri
+          expanded: false
+          items:
+            - name: İşlev öznitelikleri
+              href: ../c-language/function-attributes.md
+            - name: Çağırma kurallarını belirtme
+              href: ../c-language/specifying-calling-conventions.md
+            - name: Satır içi işlevler
+              href: ../c-language/inline-functions.md
+            - name: Satır içi derleyicisi (C)
+              href: ../c-language/inline-assembler-c.md
+        - name: DLL içeri ve dışarı aktarma işlevleri
+          expanded: false
+          items:
+            - name: DLL içeri ve dışarı aktarma işlevleri
+              href: ../c-language/dll-import-and-export-functions.md
+            - name: Bildirimler ve tanımlar (C)
+              href: ../c-language/definitions-and-declarations-c.md
+            - name: dllexport ve dllimport ile satır için C işlevlerini tanımlama
+              href: ../c-language/defining-inline-c-functions-with-dllexport-and-dllimport.md
+            - name: dllimport/dllexport için kurallar ve sınırlamalar
+              href: ../c-language/rules-and-limitations-for-dllimport-dllexport.md
+        - name: Naked işlevleri
+          expanded: false
+          items:
+            - name: Naked işlevleri
+              href: ../c-language/naked-functions.md
+            - name: Naked işlevlerini kullanmak için kurallar ve sınırlamalar
+              href: ../c-language/rules-and-limitations-for-using-naked-functions.md
+            - name: Giriş ve bitiş kodu yazarken dikkat edilmesi gerekenler
+              href: ../c-language/considerations-when-writing-prolog-epilog-code.md
+        - name: Depolama sınıfı
+          href: ../c-language/storage-class.md
+        - name: Dönüş türü
+          href: ../c-language/return-type.md
+        - name: Parametreler
+          href: ../c-language/parameters.md
+        - name: İşlev gövdesi
+          href: ../c-language/function-body.md
+    - name: İşlev prototipleri
+      href: ../c-language/function-prototypes.md
+    - name: İşlev çağrıları
+      expanded: false
+      items:
+        - name: İşlev çağrıları
+          href: ../c-language/function-calls.md
+        - name: Arguments
+          href: ../c-language/arguments.md
+        - name: Değişken sayıda bağımsız değişkenli çağrılar
+          href: ../c-language/calls-with-a-variable-number-of-arguments.md
+        - name: Özyinelemeli işlevler
+          href: ../c-language/recursive-functions.md
+- name: C dili sözdizimi özeti
+  expanded: false
+  items:
+    - name: C dili sözdizimi özeti
+      href: ../c-language/c-language-syntax-summary.md
+    - name: Tanımlar ve kurallar
+      href: ../c-language/definitions-and-conventions.md
+    - name: Sözcük dilbilgisi
+      expanded: false
+      items:
+        - name: Sözcük dilbilgisi
+          href: ../c-language/lexical-grammar.md
+        - name: Belirteçlerin özeti
+          href: ../c-language/summary-of-tokens.md
+        - name: Anahtar sözcüklerin özeti
+          href: ../c-language/summary-of-keywords.md
+        - name: Tanımlayıcıların özeti
+          href: ../c-language/summary-of-identifiers.md
+        - name: Sabitlerin özeti
+          href: ../c-language/summary-of-constants.md
+        - name: Dizi değişmez değerleri özeti
+          href: ../c-language/summary-of-string-literals.md
+        - name: İşleçler (C)
+          href: ../c-language/operators-c.md
+        - name: Noktalama İşaretleri
+          href: ../c-language/punctuators.md
+    - name: Tümcecik yapısı dil bilgisi
+      expanded: false
+      items:
+        - name: Tümcecik yapısı dil bilgisi
+          href: ../c-language/phrase-structure-grammar.md
+        - name: İfadelerin özeti
+          href: ../c-language/summary-of-expressions.md
+        - name: Bildirimlerin özeti
+          href: ../c-language/summary-of-declarations.md
+        - name: Deyimler özeti
+          href: ../c-language/summary-of-statements.md
+        - name: Dış tanımlar
+          href: ../c-language/external-definitions.md
+- name: Uygulama tanımlı davranış
+  expanded: false
+  items:
+    - name: Uygulama tanımlı davranış
+      href: ../c-language/implementation-defined-behavior.md
+    - name: 'Çeviri: Tanılamalar'
+      href: ../c-language/translation-diagnostics.md
+    - name: Ortam
+      expanded: false
+      items:
+        - name: Ortam
+          href: ../c-language/environment.md
+        - name: main Bağımsız Değişkenleri
+          href: ../c-language/arguments-to-main.md
+        - name: Etkileşimli cihazlar
+          href: ../c-language/interactive-devices.md
+    - name: Tanımlayıcıların davranışı
+      expanded: false
+      items:
+        - name: Tanımlayıcıların davranışı
+          href: ../c-language/behavior-of-identifiers.md
+        - name: Dış bağlantısız önemli karakterler
+          href: ../c-language/significant-characters-without-external-linkage.md
+        - name: Dış bağlantılı önemli karakterler
+          href: ../c-language/significant-characters-with-external-linkage.md
+        - name: Büyük harf ve küçük harf
+          href: ../c-language/uppercase-and-lowercase.md
+    - name: Karakterler
+      expanded: false
+      items:
+        - name: Karakterler
+          href: ../c-language/characters.md
+        - name: ASCII karakter kümesi
+          href: ../c-language/ascii-character-set.md
+        - name: Birden çok baytlı karakterler
+          href: ../c-language/multibyte-characters.md
+        - name: Karakter başına bit
+          href: ../c-language/bits-per-character.md
+        - name: Karakter kümesi1
+          href: ../c-language/character-sets1.md
+        - name: Temsil edilmeyen karakter sabitleri
+          href: ../c-language/unrepresented-character-constants.md
+        - name: Geniş karakterler
+          href: ../c-language/wide-characters.md
+        - name: Birden çok baytlı karakterleri dönüştürme
+          href: ../c-language/converting-multibyte-characters.md
+        - name: char değerleri aralığı
+          href: ../c-language/range-of-char-values.md
+    - name: Tam Sayılar
+      expanded: false
+      items:
+        - name: Tam Sayılar
+          href: ../c-language/integers.md
+        - name: Tamsayı değerleri aralığı
+          href: ../c-language/range-of-integer-values.md
+        - name: Tam sayıların indirgenmesi
+          href: ../c-language/demotion-of-integers.md
+        - name: İmzalı bit düzeyinde işlemler
+          href: ../c-language/signed-bitwise-operations.md
+        - name: Kalanlar
+          href: ../c-language/remainders.md
+        - name: Sağa kaydırmalar
+          href: ../c-language/right-shifts.md
+    - name: Kayan nokta matematiği
+      expanded: false
+      items:
+        - name: Kayan nokta matematiği
+          href: ../c-language/floating-point-math.md
+        - name: Değerler
+          href: ../c-language/values.md
+        - name: Kayan nokta değerlerine tam sayılar atama
+          href: ../c-language/casting-integers-to-floating-point-values.md
+        - name: Kayan nokta değerlerinin kesilmesi
+          href: ../c-language/truncation-of-floating-point-values.md
+    - name: Diziler ve işaretçiler
+      expanded: false
+      items:
+        - name: Diziler ve işaretçiler
+          href: ../c-language/arrays-and-pointers.md
+        - name: En büyük dizi boyutu
+          href: ../c-language/largest-array-size.md
+        - name: İşaretçi çıkarması
+          href: ../c-language/pointer-subtraction.md
+    - name: 'Yazmaçlar: Yazmaçların kullanılabilirliği'
+      href: ../c-language/registers-availability-of-registers.md
+    - name: 'Yapılar, birleşimler, numaralandırmalar ve bit alanları'
+      expanded: false
+      items:
+        - name: 'Yapılar, birleşimler, numaralandırmalar ve bit alanları'
+          href: ../c-language/structures-unions-enumerations-and-bit-fields.md
+        - name: Birleşime düzgün olmayan erişim
+          href: ../c-language/improper-access-to-a-union.md
+        - name: Yapı üyelerini doldurma hizalama
+          href: ../c-language/padding-and-alignment-of-structure-members.md
+        - name: Bit alanları işareti
+          href: ../c-language/sign-of-bit-fields.md
+        - name: Bit alanları deposu
+          href: ../c-language/storage-of-bit-fields.md
+        - name: enum türü
+          href: ../c-language/enum-type.md
+    - name: 'Niteleyiciler: Geçici nesnelere erişim'
+      href: ../c-language/qualifiers-access-to-volatile-objects.md
+    - name: 'Bildirimciler: Maksimum sayı'
+      href: ../c-language/declarators-maximum-number.md
+    - name: 'Deyimler: Switch deyimleri sınırları'
+      href: ../c-language/statements-limits-on-switch-statements.md
+    - name: Ön işleme yönergeleri
+      expanded: false
+      items:
+        - name: Ön işleme yönergeleri
+          href: ../c-language/preprocessing-directives.md
+        - name: Karakter sabitleri ve koşullu dahil etme
+          href: ../c-language/character-constants-and-conditional-inclusion.md
+        - name: Köşeli parantez içindeki dosya adlarını dahil etme
+          href: ../c-language/including-bracketed-filenames.md
+        - name: Tırnak işaretli dosya adlarını dahil etme
+          href: ../c-language/including-quoted-filenames.md
+        - name: Karakter sıraları
+          href: ../c-language/character-sequences.md
+        - name: Pragmalar
+          href: ../c-language/pragmas.md
+        - name: Varsayılan tarih ve saat
+          href: ../c-language/default-date-and-time.md
+    - name: Kitaplık işlevleri
+      expanded: false
+      items:
+        - name: Kitaplık işlevleri
+          href: ../c-language/library-functions.md
+        - name: NULL makro
+          href: ../c-language/null-macro.md
+        - name: assert işlevinin yazdırdığı tanılama
+          href: ../c-language/diagnostic-printed-by-the-assert-function.md
+        - name: Karakter test etme
+          href: ../c-language/character-testing.md
+        - name: Etki alanı hataları
+          href: ../c-language/domain-errors.md
+        - name: Kayan nokta değerlerinin yetersiz kalması
+          href: ../c-language/underflow-of-floating-point-values.md
+        - name: fmod işlevi
+          href: ../c-language/fmod-function.md
+        - name: signal işlevi (C)
+          href: ../c-language/signal-function-c.md
+        - name: Varsayılan sinyaller
+          href: ../c-language/default-signals.md
+        - name: Satırbaşı karakterlerini sonlandırma
+          href: ../c-language/terminating-newline-characters.md
+        - name: Boş satırlar
+          href: ../c-language/blank-lines.md
+        - name: Boş karakterler
+          href: ../c-language/null-characters.md
+        - name: Ekleme modunda dosya konumu
+          href: ../c-language/file-position-in-append-mode.md
+        - name: Metin dosyalarının kesilmesi
+          href: ../c-language/truncation-of-text-files.md
+        - name: Dosyayı ara belleğe alma
+          href: ../c-language/file-buffering.md
+        - name: Sıfır uzunluklu dosyalar
+          href: ../c-language/zero-length-files.md
+        - name: Dosya Adları
+          href: ../c-language/filenames.md
+        - name: Dosya erişim sınırları
+          href: ../c-language/file-access-limits.md
+        - name: Açık dosyaları silme
+          href: ../c-language/deleting-open-files.md
+        - name: Varolan adla yeniden adlandırma
+          href: ../c-language/renaming-with-a-name-that-exists.md
+        - name: Kayan nokta değerlerini okuma
+          href: ../c-language/reading-pointer-values.md
+        - name: Okuma aralıkları
+          href: ../c-language/reading-ranges.md
+        - name: Dosya konumu hataları
+          href: ../c-language/file-position-errors.md
+        - name: perror işlevinin ürettiği iletiler
+          href: ../c-language/messages-generated-by-the-perror-function.md
+        - name: Sıfır bellek ayırma
+          href: ../c-language/allocating-zero-memory.md
+        - name: abort işlevi (C)
+          href: ../c-language/abort-function-c.md
+        - name: atexit işlevi (C)
+          href: ../c-language/atexit-function-c.md
+        - name: Ortam adları
+          href: ../c-language/environment-names.md
+        - name: system işlevi
+          href: ../c-language/system-function.md
+        - name: strerror işlevi
+          href: ../c-language/strerror-function.md
+        - name: Saat dilimi
+          href: ../c-language/time-zone.md
+        - name: clock işlevi (C)
+          href: ../c-language/clock-function-c.md

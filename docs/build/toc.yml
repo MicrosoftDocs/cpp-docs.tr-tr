@@ -1,0 +1,1462 @@
+- name: Projeler ve derleme sistemleri
+  href: ../build/projects-and-build-systems-cpp.md
+- name: Visual Studio projeleri - C++
+  expanded: false
+  items:
+    - name: Visual Studio projeleri - C++
+      href: ../build/creating-and-managing-visual-cpp-projects.md
+    - name: Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama
+      expanded: false
+      items:
+        - name: Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama
+          href: ../build/working-with-project-properties.md
+        - name: Visual Studio projelerinin ayarlarını paylaşma veya yeniden kullanma
+          href: ../build/create-reusable-property-configurations.md
+        - name: Proje özelliği devralma
+          href: ../build/project-property-inheritance.md
+        - name: Proje dosyasını değiştirmeden özellikleri ve hedefleri değiştirme
+          href: ../build/modify-project-properties-without-changing-project-file.md
+    - name: Visual Studio projelerinde Clang/LLVM (MSBuild)
+      href: ../build/clang-support-msbuild.md
+    - name: Derleme zamanında kitaplıklara ve bileşenlere başvurma
+      href: ../build/adding-references-in-visual-cpp-projects.md
+    - name: Proje çıkış dosyalarını düzenleme
+      href: ../build/how-to-organize-project-output-files-for-builds.md
+    - name: Özel derleme adımları ve derleme olayları
+      expanded: false
+      items:
+        - name: Özel derleme adımları ve derleme olayları
+          href: ../build/understanding-custom-build-steps-and-build-events.md
+        - name: Özel derleme araçlarını belirtme
+          href: ../build/specifying-custom-build-tools.md
+        - name: Derleme olaylarını belirtme
+          href: ../build/specifying-build-events.md
+        - name: Derleme özelleştirmelerinin sorunlarını giderme
+          href: ../build/troubleshooting-build-customizations.md
+        - name: Özel derleme adımının veya derleme olayının çıkışını biçimlendirme
+          href: ../build/formatting-the-output-of-a-custom-build-step-or-build-event.md
+    - name: Mevcut koddan proje oluşturma
+      href: ../build/how-to-create-a-cpp-project-from-existing-code.md
+- name: C++ için Klasör projelerini açma
+  expanded: false
+  items:
+    - name: C++ için Klasör projelerini açma
+      href: ../build/open-folder-projects-cpp.md
+    - name: CppProperties.json şema başvurusu
+      href: ../build/cppproperties-schema-reference.md
+    - name: Tasks.vs.json şema başvurusu (C++)
+      href: ../build/tasks-vs-json-schema-reference-cpp.md
+    - name: Launch.vs.json şema başvurusu (C++)
+      href: ../build/launch-vs-schema-reference-cpp.md
+- name: CMake projeleri
+  expanded: false
+  items:
+    - name: CMake projeleri
+      href: ../build/cmake-projects-in-visual-studio.md
+    - name: 'Öğretici: Visual Studio’da platformlar arası C++ projeleri oluşturma'
+      href: ../build/get-started-linux-cmake.md
+    - name: CMake projelerinde Clang/LLVM
+      href: ../build/clang-support-cmake.md
+    - name: Linux CMake projesi yapılandırma
+      href: ../build/../linux/cmake-linux-project.md
+    - name: CMake derleme ayarlarını özelleştirme
+      href: ../build/customize-cmake-settings.md
+    - name: CMake hata ayıklama oturumlarını yapılandırma
+      href: ../build/configure-cmake-debugging-sessions.md
+    - name: CMakeSettings.json başvurusu
+      href: ../build/cmakesettings-reference.md
+    - name: CMake önceden tanımlanmış yapılandırma şeması başvurusu
+      href: ../build/cmake-predefined-configuration-reference.md
+- name: 'vcpkg: C++ için bir paket yöneticisi'
+  href: ../build/vcpkg.md
+- name: C++ Derleme İçgörüleri
+  href: ../build-insights/get-started-with-cpp-build-insights.md
+- name: Önceden derlenmiş üst bilgi dosyaları
+  href: ../build/creating-precompiled-header-files.md
+- name: C++ yayın derlemeleri
+  expanded: false
+  items:
+    - name: C++ yayın derlemeleri
+      href: ../build/release-builds.md
+    - name: 'Nasıl yapılır: Yayın derlemesi oluşturma'
+      href: ../build/how-to-create-a-release-build.md
+    - name: Yayın derlemesi oluşturmadaki genel sorunlar
+      href: ../build/common-problems-when-creating-a-release-build.md
+    - name: Yayın derlemesi sorunlarını giderme
+      expanded: false
+      items:
+        - name: Yayın derlemesi sorunlarını giderme
+          href: ../build/fixing-release-build-problems.md
+        - name: ASSERT Yerine VERIFY kullanma
+          href: ../build/using-verify-instead-of-assert.md
+        - name: Belleğin üzerine yazma denetimi için Hata Ayıklama derlemesini kullanma
+          href: ../build/using-the-debug-build-to-check-for-memory-overwrite.md
+        - name: 'Nasıl yapılır: Yayın derlemesinde hata ayıklama'
+          href: ../build/how-to-debug-a-release-build.md
+        - name: Bellek üzerine yazmalarını denetleme
+          href: ../build/checking-for-memory-overwrites.md
+    - name: Kodunuzu iyileştirme
+      expanded: false
+      items:
+        - name: Kodunuzu iyileştirme
+          href: ../build/optimizing-your-code.md
+        - name: Pragmaları ve anahtar sözcükleri iyileştirme
+          href: ../build/optimization-pragmas-and-keywords.md
+        - name: Derleyici üretimini geliştirme
+          href: ../build/improving-compiler-throughput.md
+        - name: Kayan noktalı sayıların neden duyarlık kaybedebileceği
+          href: ../build/why-floating-point-numbers-may-lose-precision.md
+        - name: IEEE kayan noktası temsili
+          href: ../build/ieee-floating-point-representation.md
+        - name: Zamana bağlı kodu geliştirme ipuçları
+          href: ../build/tips-for-improving-time-critical-code.md
+        - name: () olmadan işlev adının kullanılması kod üretmez
+          href: ../build/using-function-name-without-parens-produces-no-code.md
+        - name: En iyi uygulamaları iyileştirme
+          href: ../build/optimization-best-practices.md
+        - name: Profil temelli iyileştirmeler
+          expanded: false
+          items:
+            - name: Profil temelli iyileştirmeler
+              href: ../build/profile-guided-optimizations.md
+            - name: Profil temelli iyileştirmeler için ortam değişkenleri
+              href: ../build/environment-variables-for-profile-guided-optimizations.md
+            - name: PgoAutoSweep
+              href: ../build/pgoautosweep.md
+            - name: pgomgr
+              href: ../build/pgomgr.md
+            - name: pgosweep
+              href: ../build/pgosweep.md
+            - name: 'Nasıl yapılır: Birden çok PGO profilini tek profilde birleştirme'
+              href: ../build/how-to-merge-multiple-pgo-profiles-into-a-single-profile.md
+- name: Komut satırından MSVC araç takımını kullanma
+  expanded: false
+  items:
+    - name: Komut satırından MSVC araç takımını kullanma
+      href: ../build/building-on-the-command-line.md
+    - name: 'İzlenecek yol: Komut satırında yerel C++ programı derleme'
+      href: ../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md
+    - name: 'İzlenecek yol: Komut satırında C programı derleme'
+      href: ../build/walkthrough-compile-a-c-program-on-the-command-line.md
+    - name: 'İzlenecek yol: Komut satırında C++/CLI programı derleme'
+      href: ../build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md
+    - name: 'İzlenecek yol: Komut satırında C++/CX programı derleme'
+      href: ../build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md
+    - name: Komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama
+      href: ../build/setting-the-path-and-environment-variables-for-command-line-builds.md
+- name: Komut satırından MSBuild’i kullanma
+  expanded: false
+  items:
+    - name: Komut satırından MSBuild’i kullanma
+      href: ../build/msbuild-visual-cpp.md
+    - name: 'İzlenecek yol: C++ projesi oluşturmak için MSBuild kullanma'
+      href: ../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md
+    - name: 'Nasıl yapılır: MSBuild projelerinde derleme olaylarını kullanma'
+      href: ../build/how-to-use-build-events-in-msbuild-projects.md
+    - name: 'Nasıl yapılır: MSBuild projelerine özel derleme adımı ekleme'
+      href: ../build/how-to-add-a-custom-build-step-to-msbuild-projects.md
+    - name: 'Nasıl yapılır: MSBuild projelerine özel derleme araçları ekleme'
+      href: ../build/how-to-add-custom-build-tools-to-msbuild-projects.md
+    - name: 'Nasıl yapılır: Özel araçlarla proje özelliklerini tümleştirme'
+      href: ../build/how-to-integrate-custom-tools-into-the-project-properties.md
+    - name: 'Nasıl yapılır: Hedef çerçeve ve platform araç kümesini değiştirme'
+      href: ../build/how-to-modify-the-target-framework-and-platform-toolset.md
+- name: 'İzlenecek yol: Statik kitaplık oluşturma ve kullanma (C++)'
+  href: ../build/walkthrough-creating-and-using-a-static-library-cpp.md
+- name: Visual Studio'da C++ DLL’leri derleme
+  expanded: false
+  items:
+    - name: Visual Studio'da C++ DLL’leri derleme
+      href: ../build/dlls-in-visual-cpp.md
+    - name: 'İzlenecek yol: Dinamik bağlantı kitaplığı oluşturma ve kullanma (C++)'
+      href: ../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md
+    - name: DLL Türleri
+      expanded: false
+      items:
+        - name: DLL Türleri
+          href: ../build/kinds-of-dlls.md
+        - name: 'MFC Dışı DLL''ler: Genel Bakış'
+          href: ../build/non-mfc-dlls-overview.md
+        - name: Statik olarak MFC'ye bağlı normal MFC DLL'leri
+          href: ../build/regular-dlls-statically-linked-to-mfc.md
+        - name: Dinamik olarak MFC'ye bağlı normal MFC DLL'leri
+          href: ../build/regular-dlls-dynamically-linked-to-mfc.md
+        - name: 'MFC uzantısı DLL’leri: Genel Bakış'
+          href: ../build/extension-dlls-overview.md
+    - name: MFC DLL ile ilgili sık sorulan sorular
+      href: ../build/dll-frequently-asked-questions.md
+    - name: Bir yürütülebilir dosyayı DLL’ye bağlama
+      href: ../build/linking-an-executable-to-a-dll.md
+    - name: DLL’ler ve MSVC çalışma zamanı kitaplığı davranışı
+      href: ../build/run-time-library-behavior.md
+    - name: LoadLibrary ve AfxLoadLibrary
+      href: ../build/loadlibrary-and-afxloadlibrary.md
+    - name: GetProcAddress
+      href: ../build/getprocaddress.md
+    - name: FreeLibrary ve AfxFreeLibrary
+      href: ../build/freelibrary-and-afxfreelibrary.md
+    - name: MFC'ye dinamik olarak bağlı normal MFC DLL'sinin modül durumları
+      href: ../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md
+    - name: MFC uzantısı DLL’leri
+      expanded: false
+      items:
+        - name: MFC uzantısı DLL’leri
+          href: ../build/extension-dlls.md
+        - name: 'Normal MFC DLL''lerinde veritabanı, OLE ve yuva MFC uzantısı DLL''leri kullanma'
+          href: ../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md
+    - name: Yalnızca kaynak DLL oluşturma
+      href: ../build/creating-a-resource-only-dll.md
+    - name: 'MFC uygulamalarında yerelleştirilmiş kaynaklar: Uydu DLL''leri'
+      href: ../build/localized-resources-in-mfc-applications-satellite-dlls.md
+    - name: İçeri ve dışarı aktarma
+      expanded: false
+      items:
+        - name: İçeri ve dışarı aktarma
+          href: ../build/importing-and-exporting.md
+        - name: Bir uygulamaya aktarma
+          expanded: false
+          items:
+            - name: Bir uygulamaya aktarma
+              href: ../build/importing-into-an-application.md
+            - name: __declspec(dllimport) kullanarak bir uygulamaya aktarma
+              href: ../build/importing-into-an-application-using-declspec-dllimport.md
+            - name: __declspec(dllimport) kullanarak işlev çağrılarını içeri aktarma
+              href: ../build/importing-function-calls-using-declspec-dllimport.md
+            - name: __declspec(dllimport) kullanarak veriyi içeri aktarma
+              href: ../build/importing-data-using-declspec-dllimport.md
+            - name: DEF dosyalarını kullanarak içeri aktarma
+              href: ../build/importing-using-def-files.md
+        - name: DLL'den Dışarı Aktarma
+          expanded: false
+          items:
+            - name: DLL'den Dışarı Aktarma
+              href: ../build/exporting-from-a-dll.md
+            - name: DEF dosyaları kullanarak DLL'den dışarı aktarma
+              href: ../build/exporting-from-a-dll-using-def-files.md
+            - name: __declspec(dllexport) kullanarak DLL'den dışarı aktarma
+              href: ../build/exporting-from-a-dll-using-declspec-dllexport.md
+            - name: AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma
+              href: ../build/exporting-and-importing-using-afx-ext-class.md
+            - name: C dili yürütülebilir öğelerinde kullanmak için C++ işlevlerini dışarı aktarma
+              href: ../build/exporting-cpp-functions-for-use-in-c-language-executables.md
+            - name: C ya da C++ dili çalıştırılabilir öğelerinde kullanmak için C işlevlerini dışarı aktarma
+              href: ../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md
+            - name: Hangi dışarı aktarma yönteminin kullanılacağını belirleme
+              href: ../build/determining-which-exporting-method-to-use.md
+            - name: DLL'den işlevleri ad yerine sıraya göre dışarı aktarma
+              href: ../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md
+        - name: Karşılıklı içeri aktarmalar
+          href: ../build/mutual-imports.md
+        - name: Satır içi işlevleri içeri ve dışarı aktarma
+          href: ../build/importing-and-exporting-inline-functions.md
+    - name: Etkin teknoloji ve DLL'ler
+      href: ../build/active-technology-and-dlls.md
+    - name: DLL'de Otomasyon
+      href: ../build/automation-in-a-dll.md
+    - name: Visual Basic uygulamalarından DLL işlevi çağırma
+      href: ../build/calling-dll-functions-from-visual-basic-applications.md
+- name: C/C++ yalıtılmış uygulamaları ve yan yana derlemeleri oluşturma
+  expanded: false
+  items:
+    - name: C/C++ yalıtılmış uygulamaları ve yan yana derlemeleri oluşturma
+      href: ../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md
+    - name: Yalıtılmış uygulama ve yan yana derleme kavramları
+      href: ../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md
+    - name: C/C++ yalıtılmış uygulamaları derleme
+      href: ../build/building-c-cpp-isolated-applications.md
+    - name: C/C++ yan yana derlemeleri oluşturma
+      href: ../build/building-c-cpp-side-by-side-assemblies.md
+    - name: 'Nasıl yapılır: Kayıt gerektirmeyen COM bileşenlerini derleme'
+      href: ../build/how-to-build-registration-free-com-components.md
+    - name: 'Nasıl yapılır: COM bileşenlerini kullanacak yalıtılmış uygulamalar derleme'
+      href: ../build/how-to-build-isolated-applications-to-consume-com-components.md
+    - name: C/C++ programları bildirim üretimini anlama
+      expanded: false
+      items:
+        - name: C/C++ programları bildirim üretimini anlama
+          href: ../build/understanding-manifest-generation-for-c-cpp-programs.md
+        - name: Visual Studio'da bildirim oluşturma
+          href: ../build/manifest-generation-in-visual-studio.md
+        - name: Komut satırında bildirim üretme
+          href: ../build/manifest-generation-at-the-command-line.md
+        - name: 'Nasıl yapılır: C/C++ uygulamasına bildirim ekleme'
+          href: ../build/how-to-embed-a-manifest-inside-a-c-cpp-application.md
+    - name: C/C++ yalıtılmış uygulamalar ve yan yana derlemeler ile ilgili sorunları giderme
+      href: ../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md
+- name: 'MSVC’yi 64 bit, x64 hedefleri için yapılandırma'
+  expanded: false
+  items:
+    - name: 'MSVC’yi 64 bit, x64 hedefleri için yapılandırma'
+      href: ../build/configuring-programs-for-64-bit-visual-cpp.md
+    - name: 'Nasıl yapılır: C++ projelerini 64 bit, x64 platformlarını hedefleyecek şekilde yapılandırma'
+      href: ../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md
+    - name: 'Nasıl yapılır: Komut satırında 64 bit MSVC araç takımını etkinleştirme'
+      href: ../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md
+    - name: Genel MSVC 64 bit geçiş sorunları
+      href: ../build/common-visual-cpp-64-bit-migration-issues.md
+    - name: x64 yazılım kuralları
+      expanded: false
+      items:
+        - name: x64 yazılım kuralları
+          href: ../build/x64-software-conventions.md
+        - name: x64 çağırma kuralı
+          href: ../build/x64-calling-convention.md
+        - name: x64 yığın kullanımı
+          href: ../build/stack-usage.md
+        - name: x64 giriş ve bitiş bölümü
+          href: ../build/prolog-and-epilog.md
+        - name: x64 özel durum işleme
+          href: ../build/exception-handling-x64.md
+- name: C++ projelerini ARM işlemciler için yapılandırma
+  expanded: false
+  items:
+    - name: C++ projelerini ARM işlemciler için yapılandırma
+      href: ../build/configuring-programs-for-arm-processors-visual-cpp.md
+    - name: Genel MSVC ARM geçiş sorunları
+      href: ../build/common-visual-cpp-arm-migration-issues.md
+    - name: ARM ABI kurallarına genel bakış
+      href: ../build/overview-of-arm-abi-conventions.md
+    - name: ARM64 ABI kurallarına genel bakış
+      href: ../build/arm64-windows-abi-conventions.md
+    - name: ARM özel durum işleme
+      href: ../build/arm-exception-handling.md
+    - name: ARM64 özel durum işleme
+      href: ../build/arm64-exception-handling.md
+- name: Programları Windows XP için yapılandırma
+  href: ../build/configuring-programs-for-windows-xp.md
+- name: C/C++ için kod analizi
+  href: ../code-quality/
+- name: Derleyici ve derleme araçları başvurusu
+  expanded: false
+  items:
+    - name: C/C++ derleme başvurusu
+      href: ../build/reference/c-cpp-building-reference.md
+    - name: C++ projeleri için MSBuild başvurusu
+      expanded: false
+      items:
+        - name: C++ projeleri için MSBuild başvurusu
+          href: ../build/reference/msbuild-reference-cpp.md
+        - name: C++ projeleri için MSBuild iç işlevleri
+          href: ../build/reference/msbuild-visual-cpp-overview.md
+        - name: Derleme komutları ve özellikleri için genel makrolar
+          href: ../build/reference/common-macros-for-build-commands-and-properties.md
+        - name: C++ projelerinde kullanılan dosya türleri
+          expanded: false
+          items:
+            - name: C++ projelerinde kullanılan dosya türleri
+              href: ../build/reference/file-types-created-for-visual-cpp-projects.md
+            - name: Proje ve çözüm dosyaları
+              href: ../build/reference/project-and-solution-files.md
+            - name: C++ proje şablonları
+              href: ../build/reference/visual-cpp-project-types.md
+            - name: C++ yeni öğe şablonları
+              href: ../build/reference/using-visual-cpp-add-new-item-templates.md
+            - name: Kaynak dosyalar
+              href: ../build/reference/resource-files-cpp.md
+            - name: CLR projeleri için oluşturulan dosyalar
+              href: ../build/reference/files-created-for-clr-projects.md
+            - name: ATL programı veya denetim kaynağı ve başlık dosyaları
+              href: ../build/reference/atl-program-or-control-source-and-header-files.md
+            - name: MFC programı veya denetim kaynağı ve başlık dosyaları
+              href: ../build/reference/mfc-program-or-control-source-and-header-files.md
+            - name: HTML yardım dosyaları
+              href: ../build/reference/help-files-html-help.md
+            - name: Winhelp yardım dosyaları
+              href: ../build/reference/help-files-winhelp.md
+            - name: IntelliSense için ipucu dosyaları
+              href: ../build/reference/hint-files.md
+            - name: Özellik sayfası XML dosyaları
+              href: ../build/reference/property-page-xml-files.md
+            - name: .vcxproj ve .props dosya yapısı
+              href: ../build/reference/vcxproj-file-structure.md
+            - name: Örnek proje dosyası
+              href: ../build/reference/project-files.md
+            - name: .vcxproj.filters dosya yapısı
+              href: ../build/reference/vcxproj-filters-files.md
+        - name: C++ proje özelliği sayfaları
+          expanded: false
+          items:
+            - name: C++ proje özellikleri başvurusu
+              href: ../build/reference/property-pages-visual-cpp.md
+            - name: Genel özellik sayfası (proje)
+              href: ../build/reference/general-property-page-project.md
+            - name: Genel özellik sayfası
+              href: ../build/reference/general-property-page-file.md
+            - name: Gelişmiş özellik sayfası
+              href: ../build/reference/advanced-property-page.md
+            - name: Hata ayıklama özelliği sayfaları
+              href: ../build/reference/debugging-prop-pages.md
+            - name: VC++ Dizinleri özellik sayfası
+              href: ../build/reference/vcpp-directories-property-page.md
+            - name: C/C++ özellik sayfaları
+              href: ../build/reference/c-cpp-prop-page.md
+            - name: Bağlayıcı özellik sayfaları
+              href: ../build/reference/linker-property-pages.md
+            - name: Komut satırı özellik sayfaları
+              href: ../build/reference/command-line-property-pages.md
+            - name: NMake özellik sayfası
+              href: ../build/reference/nmake-property-page.md
+            - name: Bildirim Aracı özellik sayfaları
+              href: ../build/reference/manifest-tool-property-pages.md
+            - name: Kaynaklar özellik sayfaları
+              href: ../build/reference/resources-property-pages.md
+            - name: Yönetilen kaynaklar özellik sayfası
+              href: ../build/reference/managed-resources-property-page.md
+            - name: MIDL özellik sayfaları
+              href: ../build/reference/midl-property-pages.md
+            - name: Web Başvuruları özellik sayfası
+              href: ../build/reference/web-references-property-page.md
+            - name: XML Verileri Oluşturma Aracı özellik sayfası
+              href: ../build/reference/xml-data-generator-tool-property-page.md
+            - name: XML Belgesi Oluşturma Aracı özellik sayfaları
+              href: ../build/reference/xml-document-generator-tool-property-pages.md
+            - name: 'Özel derleme adımı özellik sayfası: Genel'
+              href: ../build/reference/custom-build-step-property-page-general.md
+            - name: HLSL özellik sayfaları
+              href: ../build/reference/hlsl-property-pages.md
+    - name: MSVC derleyicisi başvurusu
+      expanded: false
+      items:
+        - name: MSVC derleyicisi başvurusu
+          href: ../build/reference/compiling-a-c-cpp-program.md
+        - name: MSVC derleyicisi komut satırı söz dizimi
+          expanded: false
+          items:
+            - name: MSVC derleyicisi komut satırı söz dizimi
+              href: ../build/reference/compiler-command-line-syntax.md
+            - name: CL dosya adı söz dizimi
+              href: ../build/reference/cl-filename-syntax.md
+            - name: CL seçenekleri sırası
+              href: ../build/reference/order-of-cl-options.md
+            - name: cl.exe dönüş değeri
+              href: ../build/reference/return-value-of-cl-exe.md
+        - name: CL ortam değişkenleri
+          href: ../build/reference/cl-environment-variables.md
+        - name: CL komut dosyaları
+          href: ../build/reference/cl-command-files.md
+        - name: CL bağlayıcı çağırır
+          href: ../build/reference/cl-invokes-the-linker.md
+        - name: MSVC derleyicisi seçenekleri
+          expanded: false
+          items:
+            - name: MSVC derleyicisi seçenekleri
+              href: ../build/reference/compiler-options.md
+            - name: Kategorilere göre listelenen derleyici seçenekleri
+              href: ../build/reference/compiler-options-listed-by-category.md
+            - name: Alfabetik listelenmiş derleyici seçenekleri
+              expanded: false
+              items:
+                - name: Alfabetik listelenmiş derleyici seçenekleri
+                  href: ../build/reference/compiler-options-listed-alphabetically.md
+                - name: '@ (Derleyici yanıt dosyasını belirt)'
+                  href: ../build/reference/at-specify-a-compiler-response-file.md
+                - name: /AI (Meta veri dizinlerini belirt)
+                  href: ../build/reference/ai-specify-metadata-directories.md
+                - name: /analyze (Kod analizi)
+                  href: ../build/reference/analyze-code-analysis.md
+                - name: /arch (En düşük CPU mimarisi)
+                  expanded: false
+                  items:
+                    - name: /arch (En düşük CPU mimarisi)
+                      href: ../build/reference/arch-minimum-cpu-architecture.md
+                    - name: /arch (x86)
+                      href: ../build/reference/arch-x86.md
+                    - name: /arch (x64)
+                      href: ../build/reference/arch-x64.md
+                    - name: /arch (ARM)
+                      href: ../build/reference/arch-arm.md
+                - name: /await (Eş yordam desteğini etkinleştir)
+                  href: ../build/reference/await-enable-coroutine-support.md
+                - name: /bigobj (.Obj dosyasında bölüm sayısını artırma)
+                  href: ../build/reference/bigobj-increase-number-of-sections-in-dot-obj-file.md
+                - name: /C (Önişleme sırasında açıklamaları koru)
+                  href: ../build/reference/c-preserve-comments-during-preprocessing.md
+                - name: /c (Bağlamadan derle)
+                  href: ../build/reference/c-compile-without-linking.md
+                - name: /cgthreads (Kod oluşturma iş parçacıkları)
+                  href: ../build/reference/cgthreads-code-generation-threads.md
+                - name: /clr (Ortak dil çalışma zamanı derlemesi)
+                  expanded: false
+                  items:
+                    - name: /clr (Ortak dil çalışma zamanı derlemesi)
+                      href: ../build/reference/clr-common-language-runtime-compilation.md
+                    - name: /clr kısıtlamalar
+                      href: ../build/reference/clr-restrictions.md
+                - name: /constexpr (Constexpr değerlendirmesini denetle)
+                  href: ../build/reference/constexpr-control-constexpr-evaluation.md
+                - name: /D (Önişlemci tanımları)
+                  href: ../build/reference/d-preprocessor-definitions.md
+                - name: /diagnostics (Derleyici tanılama seçenekleri)
+                  href: ../build/reference/diagnostics-compiler-diagnostic-options.md
+                - name: /doc (İşlem belgeleri açıklamaları) (C/C++)
+                  href: ../build/reference/doc-process-documentation-comments-c-cpp.md
+                - name: /E (stdout'a Önişle)
+                  href: ../build/reference/e-preprocess-to-stdout.md
+                - name: /EH (Özel durum işleme modeli)
+                  href: ../build/reference/eh-exception-handling-model.md
+                - name: '/EP (#line yönergeleri olmadan stdout''ta önişle)'
+                  href: ../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md
+                - name: /errorReport (Dahili derleme hatalarını raporla)
+                  href: ../build/reference/errorreport-report-internal-compiler-errors.md
+                - name: /execution/charset (Yürütme karakter kümesini ayarla)
+                  href: ../build/reference/execution-charset-set-execution-character-set.md
+                - name: '/experimental:module'
+                  href: ../build/reference/experimental-module.md
+                - name: '/experimental:preprocessor'
+                  href: ../build/reference/experimental-preprocessor.md
+                - name: /F (Yığın boyutunu ayarla)
+                  href: ../build/reference/f-set-stack-size.md
+                - name: Çıktı dosyası (/F) seçenekleri
+                  expanded: false
+                  items:
+                    - name: Çıktı dosyası (/F) seçenekleri
+                      href: ../build/reference/output-file-f-options.md
+                    - name: '/FA, /Fa (Listeleme dosyası)'
+                      href: ../build/reference/fa-fa-listing-file.md
+                    - name: Yol adını belirtme
+                      href: ../build/reference/specifying-the-pathname.md
+                    - name: /FD (IDE en az yeniden derleme)
+                      href: ../build/reference/fd-ide-minimal-rebuild.md
+                    - name: /Fd (Program veritabanı dosya adı)
+                      href: ../build/reference/fd-program-database-file-name.md
+                    - name: /Fe (EXE dosyasını adlandır)
+                      href: ../build/reference/fe-name-exe-file.md
+                    - name: /Fi (Çıktı dosyası adını önişle)
+                      href: ../build/reference/fi-preprocess-output-file-name.md
+                    - name: /FI (Zorla dahil edilen dosyayı adlandır)
+                      href: ../build/reference/fi-name-forced-include-file.md
+                    - name: /Fm (Eşlem dosyasını adlandır)
+                      href: ../build/reference/fm-name-mapfile.md
+                    - name: /Fo (Nesne dosyası adı)
+                      href: ../build/reference/fo-object-file-name.md
+                    - name: /Fp (.Pch dosyası adlandır)
+                      href: ../build/reference/fp-name-dot-pch-file.md
+                    - name: '/FR, /Fr (.Sbr dosyası oluştur)'
+                      href: ../build/reference/fr-fr-create-dot-sbr-file.md
+                    - name: /FU (Zorlanan ad
+                      href: ../build/reference/fu-name-forced-hash-using-file.md
+                    - name: /Fx (Eklenen kodu birleştir)
+                      href: ../build/reference/fx-merge-injected-code.md
+                - name: /favor (Mimari özellikleri için iyileştirme)
+                  href: ../build/reference/favor-optimize-for-architecture-specifics.md
+                - name: /FC (Kaynak kodu dosyasının tanılamadaki tam yolu)
+                  href: ../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md
+                - name: /fp (Kayan nokta davranışını belirt)
+                  href: ../build/reference/fp-specify-floating-point-behavior.md
+                - name: /FS (Zaman uyumlu PDB yazmalarını zorla)
+                  href: ../build/reference/fs-force-synchronous-pdb-writes.md
+                - name: /GA (Windows uygulaması için iyileştir)
+                  href: ../build/reference/ga-optimize-for-windows-application.md
+                - name: '/Gd, /Gr, /Gv, /Gz (Çağırma kuralı)'
+                  href: ../build/reference/gd-gr-gv-gz-calling-convention.md
+                - name: /Ge (Yığın yoklamalarını etkinleştir)
+                  href: ../build/reference/ge-enable-stack-probes.md
+                - name: /GF (Yinelenen dizeleri ele)
+                  href: ../build/reference/gf-eliminate-duplicate-strings.md
+                - name: /GH (_pexit kanca işlevini etkinleştir)
+                  href: ../build/reference/gh-enable-pexit-hook-function.md
+                - name: /Gh (_penter kanca işlevini etkinleştir)
+                  href: ../build/reference/gh-enable-penter-hook-function.md
+                - name: /GL (Bütün program iyileştirmesi)
+                  href: ../build/reference/gl-whole-program-optimization.md
+                - name: /Gm (En az yeniden derlemeyi etkinleştir)
+                  href: ../build/reference/gm-enable-minimal-rebuild.md
+                - name: /GR (Çalışma Zamanı Türü Bilgileri Etkinleştir)
+                  href: ../build/reference/gr-enable-run-time-type-information.md
+                - name: /GS (Arabellek güvenlik denetimi)
+                  href: ../build/reference/gs-buffer-security-check.md
+                - name: /Gs (Denetim yığını denetim çağrıları)
+                  href: ../build/reference/gs-control-stack-checking-calls.md
+                - name: /guard (Denetim Akışı Korumasını Etkinleştirme)
+                  href: ../build/reference/guard-enable-control-flow-guard.md
+                - name: /GT (Fiber-güvenli iş parçacığı-yerel depolamayı destekle)
+                  href: ../build/reference/gt-support-fiber-safe-thread-local-storage.md
+                - name: /Gw (Genel verileri en iyileştir)
+                  href: ../build/reference/gw-optimize-global-data.md
+                - name: /GX (Özel durum işlemeyi etkinleştir)
+                  href: ../build/reference/gx-enable-exception-handling.md
+                - name: /Gy (İşlev düzeyi bağlamayı etkinleştir)
+                  href: ../build/reference/gy-enable-function-level-linking.md
+                - name: /GZ (Yığın çerçevesi çalışma zamanı hata denetimini etkinleştir)
+                  href: ../build/reference/gz-enable-stack-frame-run-time-error-checking.md
+                - name: /H (Dış adların uzunluğunu kısıtla)
+                  href: ../build/reference/h-restrict-length-of-external-names.md
+                - name: /HELP (Derleyici komut satırı yardımı)
+                  href: ../build/reference/help-compiler-command-line-help.md
+                - name: /homeparams (Kayıt parametrelerini yığına kopyala)
+                  href: ../build/reference/homeparams-copy-register-parameters-to-stack.md
+                - name: /hotpatch (Düzeltme eki eklenebilen görüntü oluşturma)
+                  href: ../build/reference/hotpatch-create-hotpatchable-image.md
+                - name: /I (Ek içeren dizinler)
+                  href: ../build/reference/i-additional-include-directories.md
+                - name: /J (Varsayılan karakter türü imzasız)
+                  href: ../build/reference/j-default-char-type-is-unsigned.md
+                - name: /JMC (Yalnızca Kendi Kodum’da hata ayıklama)
+                  href: ../build/reference/jmc.md
+                - name: /kernel (Çekirdek modu ikilisi oluştur)
+                  href: ../build/reference/kernel-create-kernel-mode-binary.md
+                - name: /link (Seçenekleri bağlayıcıya geçir)
+                  href: ../build/reference/link-pass-options-to-linker.md
+                - name: /LN (MSIL modülü oluştur)
+                  href: ../build/reference/ln-create-msil-module.md
+                - name: '/MD, /MT, /LD (Çalışma zamanı kitaplığını kullan)'
+                  href: ../build/reference/md-mt-ld-use-run-time-library.md
+                - name: /MP (Birden çok süreçle derleme)
+                  href: ../build/reference/mp-build-with-multiple-processes.md
+                - name: /nologo (Başlangıç başlığını gösterme) (C/C++)
+                  href: ../build/reference/nologo-suppress-startup-banner-c-cpp.md
+                - name: /O seçenekler (Kodu iyileştir)
+                  expanded: false
+                  items:
+                    - name: /O seçenekler (Kodu iyileştir)
+                      href: ../build/reference/o-options-optimize-code.md
+                    - name: '/O1, /O2 (Boyutu en aza indir, hızı en yükseğe çıkart)'
+                      href: ../build/reference/o1-o2-minimize-size-maximize-speed.md
+                    - name: /Ob (satır içi işlev genişletmesi)
+                      href: ../build/reference/ob-inline-function-expansion.md
+                    - name: /Od (Devre Dışı Bırak (Hata Ayıkla))
+                      href: ../build/reference/od-disable-debug.md
+                    - name: /Og (Global iyileştirmeler)
+                      href: ../build/reference/og-global-optimizations.md
+                    - name: /Oi (İç işlevler üret)
+                      href: ../build/reference/oi-generate-intrinsic-functions.md
+                    - name: '/Os, /Ot (Küçük koda ayrıcalık tanı, hızlı koda ayrıcalık tanı)'
+                      href: ../build/reference/os-ot-favor-small-code-favor-fast-code.md
+                    - name: /Ox (En fazla hız iyileştirmelerini etkinleştir)
+                      href: ../build/reference/ox-full-optimization.md
+                    - name: /Oy (Çerçeve İşaretçisini atlama)
+                      href: ../build/reference/oy-frame-pointer-omission.md
+                - name: /openmp (OpenMP 2.0 desteğini etkinleştir)
+                  href: ../build/reference/openmp-enable-openmp-2-0-support.md
+                - name: /P (Dosyaya önişle)
+                  href: ../build/reference/p-preprocess-to-a-file.md
+                - name: /permissive- (Standartlara uyumluluk)
+                  href: ../build/reference/permissive-standards-conformance.md
+                - name: /Q seçenekler (Düşük düzey işlemler)
+                  expanded: false
+                  items:
+                    - name: /Q seçenekler (Düşük düzey işlemler)
+                      href: ../build/reference/q-options-low-level-operations.md
+                    - name: /Qfast_transcendentals (Hızlı soyutları zorla)
+                      href: ../build/reference/qfast-transcendentals-force-fast-transcendentals.md
+                    - name: /QIfist (Suppress _ftol)
+                      href: ../build/reference/qifist-suppress-ftol.md
+                    - name: /Qimprecise_fwaits (Try blokları içindeki fwaits'i kaldır)
+                      href: ../build/reference/qimprecise-fwaits-remove-fwaits-inside-try-blocks.md
+                    - name: /QIntel-jcc-erratum
+                      href: ../build/reference/qintel-jcc-erratum.md
+                    - name: /Qpar (Otomatik paralel hale getirici)
+                      href: ../build/reference/qpar-auto-parallelizer.md
+                    - name: /Qpar-rapor (Otomatik paralel hale getirici raporlama düzeyi)
+                      href: ../build/reference/qpar-report-auto-parallelizer-reporting-level.md
+                    - name: /Qsafe_fp_loads
+                      href: ../build/reference/qsafe-fp-loads.md
+                    - name: /Qspectre
+                      href: ../build/reference/qspectre.md
+                    - name: /Qspectre-load
+                      href: ../build/reference/qspectre-load.md
+                    - name: /Qspectre-load-cf
+                      href: ../build/reference/qspectre-load-cf.md
+                    - name: /Qvec-report (Otomatik vektör hale getirici raporlama düzeyi)
+                      href: ../build/reference/qvec-report-auto-vectorizer-reporting-level.md
+                - name: /RTC (Çalışma zamanı hata denetimleri)
+                  href: ../build/reference/rtc-run-time-error-checks.md
+                - name: /sdl (Ek güvenlik denetimlerini etkinleştir)
+                  href: ../build/reference/sdl-enable-additional-security-checks.md
+                - name: /showIncludes (Liste dosyaları içerir)
+                  href: ../build/reference/showincludes-list-include-files.md
+                - name: /source-charset (Kaynak karakter kümesini ayarla)
+                  href: ../build/reference/source-charset-set-source-character-set.md
+                - name: /std (Dil standart sürümünü belirt)
+                  href: ../build/reference/std-specify-language-standard-version.md
+                - name: '/Tc, /Tp, /TC, /TP (Kaynak dosya türünü belirt)'
+                  href: ../build/reference/tc-tp-tc-tp-specify-source-file-type.md
+                - name: '/U, /u (Simge tanımlarını kaldır)'
+                  href: ../build/reference/u-u-undefine-symbols.md
+                - name: /utf-8 (Kaynak ve yürütülebilir karakter kümelerini UTF-8 olarak ayarla)
+                  href: ../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md
+                - name: /V (Sürüm numarası)
+                  href: ../build/reference/v-version-number.md
+                - name: /validate-charset (Uyumlu karakterler için doğrula)
+                  href: ../build/reference/validate-charset-validate-for-compatible-characters.md
+                - name: /vd (Yapı yer değiştirmelerini devre dışı bırak)
+                  href: ../build/reference/vd-disable-construction-displacements.md
+                - name: '/vmb, /vmg (Temsil yöntemi)'
+                  href: ../build/reference/vmb-vmg-representation-method.md
+                - name: '/vmm, /vms, /vmv (Genel amaçlı temsil)'
+                  href: ../build/reference/vmm-vms-vmv-general-purpose-representation.md
+                - name: /volatile (volatile anahtar sözcük yorumu)
+                  href: ../build/reference/volatile-volatile-keyword-interpretation.md
+                - name: '/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Uyarı düzeyi)'
+                  href: ../build/reference/compiler-option-warning-level.md
+                - name: /WL (Tek satır tanılamayı etkinleştir)
+                  href: ../build/reference/wl-enable-one-line-diagnostics.md
+                - name: /Wp64 (64 Bit taşınabilirlik sorunlarını algıla)
+                  href: ../build/reference/wp64-detect-64-bit-portability-issues.md
+                - name: /X (Standart yol eklemeyi yoksay)
+                  href: ../build/reference/x-ignore-standard-include-paths.md
+                - name: /Y (Önceden derlenmiş başlıklar)
+                  expanded: false
+                  items:
+                    - name: /Y (Önceden derlenmiş başlıklar)
+                      href: ../build/reference/y-precompiled-headers.md
+                    - name: /Y (Önceden derlenmiş başlık seçeneklerini yoksay)
+                      href: ../build/reference/y-ignore-precompiled-header-options.md
+                    - name: /Yc (Önceden derlenmiş başlık dosyası oluştur)
+                      href: ../build/reference/yc-create-precompiled-header-file.md
+                    - name: /Yd (Hata ayıklama bilgilerini nesne dosyasına yerleştir)
+                      href: ../build/reference/yd-place-debug-information-in-object-file.md
+                    - name: /Yl (Hata ayıklama kitaplığı için PCH başvurusu ekle)
+                      href: ../build/reference/yl-inject-pch-reference-for-debug-library.md
+                    - name: /Yu (Önceden derlenmiş başlık dosyasını kullanma)
+                      href: ../build/reference/yu-use-precompiled-header-file.md
+                - name: '/Z7, /Zi, /ZI (Hata ayıklama bilgileri biçimi)'
+                  href: ../build/reference/z7-zi-zi-debug-information-format.md
+                - name: '/Za, /Ze (Dil uzantılarını devre dışı bırak)'
+                  expanded: false
+                  items:
+                    - name: '/Za, /Ze (Dil uzantılarını devre dışı bırak)'
+                      href: ../build/reference/za-ze-disable-language-extensions.md
+                    - name: C ve C++ için Microsoft uzantıları
+                      href: ../build/reference/microsoft-extensions-to-c-and-cpp.md
+                - name: /Zc (Uyumluluk)
+                  expanded: false
+                  items:
+                    - name: /Zc (Uyumluluk)
+                      href: ../build/reference/zc-conformance.md
+                    - name: '/Zc:alignedNew (C++17 aşırı hizalanmış ayırma)'
+                      href: ../build/reference/zc-alignednew.md
+                    - name: '/Zc:auto (Değişken türünü türet)'
+                      href: ../build/reference/zc-auto-deduce-variable-type.md
+                    - name: '/Zc:__cplusplus (Güncelleştirilmiş __cplusplus makrosunu etkinleştirme)'
+                      href: ../build/reference/zc-cplusplus.md
+                    - name: '/Zc:externConstexpr (extern constexpr değişkenlerini etkinleştir)'
+                      href: ../build/reference/zc-externconstexpr.md
+                    - name: '/Zc:forScope (Döngü kapsamında uyumluluğu zorla)'
+                      href: ../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md
+                    - name: '/ZC:implicitNoexcept (Örtük özel durum tanımlayıcıları)'
+                      href: ../build/reference/zc-implicitnoexcept-implicit-exception-specifiers.md
+                    - name: '/Zc:inline (Başvurulmayan COMDAT''ı kaldırma)'
+                      href: ../build/reference/zc-inline-remove-unreferenced-comdat.md
+                    - name: '/Zc:noexceptTypes (C++17 noexcept kuralları)'
+                      href: ../build/reference/zc-noexcepttypes.md
+                    - name: '/Zc:referenceBinding (Başvuru bağlama kurallarını zorla)'
+                      href: ../build/reference/zc-referencebinding-enforce-reference-binding-rules.md
+                    - name: '/Zc:rvalueCast (Tür dönüştürme kurallarını zorlama)'
+                      href: ../build/reference/zc-rvaluecast-enforce-type-conversion-rules.md
+                    - name: '/Zc:sizedDealloc (Global boyutlu ayırmayı kaldırma işlevlerini etkinleştir)'
+                      href: ../build/reference/zc-sizeddealloc-enable-global-sized-dealloc-functions.md
+                    - name: '/Zc:strictStrings (Değişmez değer dize türü dönüşümünü devre dışı bırakma)'
+                      href: ../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md
+                    - name: '/Zc:ternary (Koşullu işleç kurallarını zorla)'
+                      href: ../build/reference/zc-ternary.md
+                    - name: '/Zc:threadSafeInit  (İş parçacığı güvenli yerel statik başlatma)'
+                      href: ../build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md
+                    - name: '/Zc:throwingNew (Yeni işlecinin oluşturacağını varsay)'
+                      href: ../build/reference/zc-throwingnew-assume-operator-new-throws.md
+                    - name: '/Zc:trigraphs (Trigrafları değiştirme)'
+                      href: ../build/reference/zc-trigraphs-trigraphs-substitution.md
+                    - name: '/Zc:twoPhase- (iki aşamalı ad aramayı devre dışı bırak)'
+                      href: ../build/reference/zc-twophase.md
+                    - name: '/Zc:wchar_t (wchar_t yerel tür)'
+                      href: ../build/reference/zc-wchar-t-wchar-t-is-native-type.md
+                - name: /ZF (Daha hızlı PDB oluşturma)
+                  href: ../build/reference/zf.md
+                - name: /Zg (İşlev prototipleri üret)
+                  href: ../build/reference/zg-generate-function-prototypes.md
+                - name: /ZH (Hata ayıklama bilgilerinde sağlama toplamı için karma algoritması)
+                  href: ../build/reference/zh.md
+                - name: /Zl (Varsayılan kitaplık adını atla)
+                  href: ../build/reference/zl-omit-default-library-name.md
+                - name: /Zm (Önceden derlenmiş üst bilgi bellek ayırma sınırını belirt)
+                  href: ../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md
+                - name: /Zo (En iyi duruma getirilmiş hata ayıklamayı iyileştirme)
+                  href: ../build/reference/zo-enhance-optimized-debugging.md
+                - name: /Zp (Yapı üyesi hizalama)
+                  href: ../build/reference/zp-struct-member-alignment.md
+                - name: /Zs (Yalnızca söz dizimi denetimi)
+                  href: ../build/reference/zs-syntax-check-only.md
+                - name: /ZW (Windows çalışma zamanı derlemesi)
+                  href: ../build/reference/zw-windows-runtime-compilation.md
+        - name: Derleyicide ve bağlayıcıda Unicode desteği
+          href: ../build/reference/unicode-support-in-the-compiler-and-linker.md
+    - name: MSVC bağlayıcı başvurusu
+      expanded: false
+      items:
+        - name: MSVC bağlayıcı başvurusu
+          href: ../build/reference/linking.md
+        - name: MSVC bağlayıcı seçenekleri
+          expanded: false
+          items:
+            - name: MSVC bağlayıcı seçenekleri
+              href: ../build/reference/linker-options.md
+            - name: Derleyici denetimindeki LINK seçenekleri
+              href: ../build/reference/compiler-controlled-link-options.md
+            - name: LINK giriş dosyaları
+              expanded: false
+              items:
+                - name: LINK giriş dosyaları
+                  href: ../build/reference/link-input-files.md
+                - name: Bağlayıcı girişi olarak .Obj dosyaları
+                  href: ../build/reference/dot-obj-files-as-linker-input.md
+                - name: Bağlayıcı girişi olarak .netmodule dosyaları
+                  expanded: false
+                  items:
+                    - name: Bağlayıcı girişi olarak .netmodule dosyaları
+                      href: ../build/reference/netmodule-files-as-linker-input.md
+                    - name: .netmodule giriş dosyaları biçimini seçme
+                      href: ../build/reference/choosing-the-format-of-netmodule-input-files.md
+                - name: Bağlayıcı girişi olarak .Lib dosyaları
+                  href: ../build/reference/dot-lib-files-as-linker-input.md
+                - name: Bağlayıcı girişi olarak .Exp dosyaları
+                  href: ../build/reference/dot-exp-files-as-linker-input.md
+                - name: Bağlayıcı girişi olarak .Def dosyaları
+                  href: ../build/reference/dot-def-files-as-linker-input.md
+                - name: Bağlayıcı girişi olarak .Pdb dosyaları
+                  href: ../build/reference/dot-pdb-files-as-linker-input.md
+                - name: Bağlayıcı girişi olarak .Res dosyaları
+                  href: ../build/reference/dot-res-files-as-linker-input.md
+                - name: Bağlayıcı girişi olarak .Exe dosyaları
+                  href: ../build/reference/dot-exe-files-as-linker-input.md
+                - name: Bağlayıcı girişi olarak .Txt dosyaları
+                  href: ../build/reference/dot-txt-files-as-linker-input.md
+                - name: Bağlayıcı girişi olarak .Ilk dosyaları
+                  href: ../build/reference/dot-ilk-files-as-linker-input.md
+            - name: LINK çıktısı
+              href: ../build/reference/link-output.md
+            - name: Ayrılmış sözcükler
+              href: ../build/reference/reserved-words.md
+            - name: '@ (bağlayıcı yanıt dosyasını belirt)'
+              href: ../build/reference/at-specify-a-linker-response-file.md
+            - name: /ALIGN (Bölüm hizalama)
+              href: ../build/reference/align-section-alignment.md
+            - name: /ALLOWBIND (DLL bağlamayı önle)
+              href: ../build/reference/allowbind-prevent-dll-binding.md
+            - name: /ALLOWISOLATION (Bildirim arama)
+              href: ../build/reference/allowisolation-manifest-lookup.md
+            - name: /APPCONTAINER (UWP/Microsoft Store uygulaması)
+              href: ../build/reference/appcontainer-windows-store-app.md
+            - name: /ASSEMBLYDEBUG (DebuggableAttribute Ekleme)
+              href: ../build/reference/assemblydebug-add-debuggableattribute.md
+            - name: /ASSEMBLYLINKRESOURCE (.NET Framework kaynağına bağlantı)
+              href: ../build/reference/assemblylinkresource-link-to-dotnet-framework-resource.md
+            - name: /ASSEMBLYMODULE (Derlemeye MSIL modülü ekle)
+              href: ../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md
+            - name: /ASSEMBLYRESOURCE (Yönetilen kaynağı ekle)
+              href: ../build/reference/assemblyresource-embed-a-managed-resource.md
+            - name: /BASE (Temel adres)
+              href: ../build/reference/base-base-address.md
+            - name: /CETCOMPAT (Denetim akışı zorlama teknolojisi ile uyumlu)
+              href: ../build/reference/cetcompat.md
+            - name: /CGTHREADS (Derleyici iş parçacıkları)
+              href: ../build/reference/cgthreads-compiler-threads.md
+            - name: /CLRIMAGETYPE (CLR görüntü türünü belirt)
+              href: ../build/reference/clrimagetype-specify-type-of-clr-image.md
+            - name: /CLRSUPPORTLASTERROR (PInvoke çağrıları için son hata kodunu koru)
+              href: ../build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md
+            - name: /CLRTHREADATTRIBUTE (CLR iş parçacığı özniteliğini ayarla)
+              href: ../build/reference/clrthreadattribute-set-clr-thread-attribute.md
+            - name: /CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute çıkar)
+              href: ../build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md
+            - name: /DEBUG (Hata ayıklama bilgileri üret)
+              href: ../build/reference/debug-generate-debug-info.md
+            - name: /DEBUGTYPE (Hata ayıklama bilgisi seçenekleri)
+              href: ../build/reference/debugtype-debug-info-options.md
+            - name: /DEF (Modül tanım dosyasını belirt)
+              href: ../build/reference/def-specify-module-definition-file.md
+            - name: /DEFAULTLIB (Varsayılan kitaplığı belirt)
+              href: ../build/reference/defaultlib-specify-default-library.md
+            - name: /DELAY (Gecikme yükü içe aktarma ayarları)
+              href: ../build/reference/delay-delay-load-import-settings.md
+            - name: /DELAYLOAD (Yükü içe aktarmayı geciktir)
+              href: ../build/reference/delayload-delay-load-import.md
+            - name: /DELAYSIGN (Derlemeyi kısmen imzala)
+              href: ../build/reference/delaysign-partially-sign-an-assembly.md
+            - name: /DEPENDENTLOADFLAG (Varsayılan bağımlı yük bayraklarını ayarla)
+              href: ../build/reference/dependentloadflag.md
+            - name: /DLL (DLL Derleme)
+              href: ../build/reference/dll-build-a-dll.md
+            - name: /DRIVER (Windows NT çekirdek modu sürücüsü)
+              href: ../build/reference/driver-windows-nt-kernel-mode-driver.md
+            - name: /DYNAMICBASE (Adres boşluğu düzeni rastgele seçimini kullan)
+              href: ../build/reference/dynamicbase-use-address-space-layout-randomization.md
+            - name: /ENTRY (Giriş noktası simgesi)
+              href: ../build/reference/entry-entry-point-symbol.md
+            - name: /ERRORREPORT (Dahili bağlayıcı hatalarını raporla)
+              href: ../build/reference/errorreport-report-internal-linker-errors.md
+            - name: /EXPORT (İşlevi dışarı aktarır)
+              href: ../build/reference/export-exports-a-function.md
+            - name: /FILEALIGN (Dosyalardaki bölümleri hizala)
+              href: ../build/reference/filealign.md
+            - name: /FIXED (Sabit temel adres)
+              href: ../build/reference/fixed-fixed-base-address.md
+            - name: /FORCE (Dosya çıktısını zorla)
+              href: ../build/reference/force-force-file-output.md
+            - name: /FUNCTIONPADMIN (Düzeltme eki eklenebilen görüntü oluştur)
+              href: ../build/reference/functionpadmin-create-hotpatchable-image.md
+            - name: '/GENPROFILE, /FASTGENPROFILE (Profil oluşturma izlenen derlemesi oluştur)'
+              href: ../build/reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md
+            - name: /GUARD (Koruyucu denetimlerini etkinleştir)
+              href: ../build/reference/guard-enable-guard-checks.md
+            - name: /HEAP (Öbek boyutunu ayarla)
+              href: ../build/reference/heap-set-heap-size.md
+            - name: /HIGHENTROPYVA (64 Bit ASLR destekle)
+              href: ../build/reference/highentropyva-support-64-bit-aslr.md
+            - name: /IDLOUT (MIDL çıktı dosyalarını adlandır)
+              href: ../build/reference/idlout-name-midl-output-files.md
+            - name: /IGNORE (Belirli uyarıları atla)
+              href: ../build/reference/ignore-ignore-specific-warnings.md
+            - name: /IGNOREIDL (Öznitelikleri MIDL'ye işleme)
+              href: ../build/reference/ignoreidl-don-t-process-attributes-into-midl.md
+            - name: /IMPLIB (İçeri aktarma kitaplığını adlandır)
+              href: ../build/reference/implib-name-import-library.md
+            - name: /INCLUDE (Simge başvurularını zorla)
+              href: ../build/reference/include-force-symbol-references.md
+            - name: /INCREMENTAL (Artımlı bağla)
+              href: ../build/reference/incremental-link-incrementally.md
+            - name: /INTEGRITYCHECK (İmza denetimi iste)
+              href: ../build/reference/integritycheck-require-signature-check.md
+            - name: /KEYCONTAINER (Derlemeyi imzalamak için anahtar kapsayıcısını belirt)
+              href: ../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md
+            - name: /KEYFILE (Derlemeyi imzalamak için anahtar veya anahtar çiftini belirt)
+              href: ../build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md
+            - name: /LARGEADDRESSAWARE (Büyük adresleri işle)
+              href: ../build/reference/largeaddressaware-handle-large-addresses.md
+            - name: /LIBPATH (Ek libpath)
+              href: ../build/reference/libpath-additional-libpath.md
+            - name: /LINKREPRO (Bağlantıyı yeniden oluşturmak için dizin adı)
+              href: ../build/reference/linkrepro.md
+            - name: /LINKREPROTARGET (Bağlantıyı yeniden oluşturmak için dosya adı)
+              href: ../build/reference/linkreprotarget.md
+            - name: /LTCG (Bağlama zamanı kodu üretme)
+              href: ../build/reference/ltcg-link-time-code-generation.md
+            - name: /MACHINE (Hedef platformu belirt)
+              href: ../build/reference/machine-specify-target-platform.md
+            - name: /MANIFEST (Yan yana derleme bildirimi oluştur)
+              href: ../build/reference/manifest-create-side-by-side-assembly-manifest.md
+            - name: /MANIFESTDEPENDENCY (Bildirim bağımlılıklarını belirt)
+              href: ../build/reference/manifestdependency-specify-manifest-dependencies.md
+            - name: /MANIFESTFILE (Bildirim dosyasını adlandır)
+              href: ../build/reference/manifestfile-name-manifest-file.md
+            - name: /MANIFESTINPUT (Bildirim girişini belirt)
+              href: ../build/reference/manifestinput-specify-manifest-input.md
+            - name: /MANIFESTUAC (Bildirimdeki UAC bilgilerini katıştırır)
+              href: ../build/reference/manifestuac-embeds-uac-information-in-manifest.md
+            - name: /MAP (Eşlem dosyası oluştur)
+              href: ../build/reference/map-generate-mapfile.md
+            - name: /MAPINFO (Bilgileri eşlem dosyasına dahil et)
+              href: ../build/reference/mapinfo-include-information-in-mapfile.md
+            - name: /MERGE (Bölümleri birleştir)
+              href: ../build/reference/merge-combine-sections.md
+            - name: /MIDL (MIDL komut satırı seçeneklerini belirt)
+              href: ../build/reference/midl-specify-midl-command-line-options.md
+            - name: /NATVIS (PDB’ye Natvis ekle)
+              href: ../build/reference/natvis-add-natvis-to-pdb.md
+            - name: /NOASSEMBLY (MSIL modülü oluştur)
+              href: ../build/reference/noassembly-create-a-msil-module.md
+            - name: /NODEFAULTLIB (Kitaplıkları yoksay)
+              href: ../build/reference/nodefaultlib-ignore-libraries.md
+            - name: /NOENTRY (Giriş noktası yok)
+              href: ../build/reference/noentry-no-entry-point.md
+            - name: /NOLOGO (Başlangıç başlığını gösterme) (Bağlayıcı)
+              href: ../build/reference/nologo-suppress-startup-banner-linker.md
+            - name: /NXCOMPAT (Veri Yürütme Önlemesi ile Uyumlu)
+              href: ../build/reference/nxcompat-compatible-with-data-execution-prevention.md
+            - name: /OPT (İyileştirmeler)
+              href: ../build/reference/opt-optimizations.md
+            - name: /ORDER (İşlevleri sırala)
+              href: ../build/reference/order-put-functions-in-order.md
+            - name: /OUT (Çıktı dosyası adı)
+              href: ../build/reference/out-output-file-name.md
+            - name: /PDB (Program veritabanını kullan)
+              href: ../build/reference/pdb-use-program-database.md
+            - name: /PDBALTPATH (Diğer PDB yolunu kullan)
+              href: ../build/reference/pdbaltpath-use-alternate-pdb-path.md
+            - name: /PDBSTRIPPED (Özel simgeleri çıkart)
+              href: ../build/reference/pdbstripped-strip-private-symbols.md
+            - name: /PGD (Profil temelli iyileştirmeler için veritabanını belirt)
+              href: ../build/reference/pgd-specify-database-for-profile-guided-optimizations.md
+            - name: /POGOSAFEMODE
+              href: ../build/reference/pogosafemode-linker-option.md
+            - name: /PROFILE (Performans araçları profil oluşturucusu)
+              href: ../build/reference/profile-performance-tools-profiler.md
+            - name: /RELEASE (Sağlama toplamını ayarla)
+              href: ../build/reference/release-set-the-checksum.md
+            - name: /SAFESEH (Görüntüde güvenli özel durum işleyicileri var)
+              href: ../build/reference/safeseh-image-has-safe-exception-handlers.md
+            - name: /SECTION (Bölüm özniteliklerini belirt)
+              href: ../build/reference/section-specify-section-attributes.md
+            - name: /SOURCELINK (Sourcelink dosyasını PDB’ye dahil et)
+              href: ../build/reference/sourcelink.md
+            - name: /STACK (Yığın ayırmaları)
+              href: ../build/reference/stack-stack-allocations.md
+            - name: /STUB (MS-DOS saplama dosyası adı)
+              href: ../build/reference/stub-ms-dos-stub-file-name.md
+            - name: /SUBSYSTEM (Alt sistemi belirt)
+              href: ../build/reference/subsystem-specify-subsystem.md
+            - name: /SWAPRUN (Bağlayıcı çıktısını takas dosyasına yükle)
+              href: ../build/reference/swaprun-load-linker-output-to-swap-file.md
+            - name: /TLBID (TypeLib için kaynak kimliğini belirt)
+              href: ../build/reference/tlbid-specify-resource-id-for-typelib.md
+            - name: /TLBOUT (.TLB dosyasını adlandır)
+              href: ../build/reference/tlbout-name-dot-tlb-file.md
+            - name: /TSAWARE (Terminal sunucusu algılayan uygulama oluştur)
+              href: ../build/reference/tsaware-create-terminal-server-aware-application.md
+            - name: /USEPROFILE
+              href: ../build/reference/useprofile.md
+            - name: /VERBOSE (İlerleme iletilerini yazdır)
+              href: ../build/reference/verbose-print-progress-messages.md
+            - name: /VERSION (Sürüm bilgileri)
+              href: ../build/reference/version-version-information.md
+            - name: /WHOLEARCHIVE (Tüm kitaplık nesnesi dosyalarını dahil et)
+              href: ../build/reference/wholearchive-include-all-library-object-files.md
+            - name: /WINMD (Windows meta verileri oluştur)
+              href: ../build/reference/winmd-generate-windows-metadata.md
+            - name: /WINMDFILE (winmd dosyası belirt)
+              href: ../build/reference/winmdfile-specify-winmd-file.md
+            - name: /WINMDKEYFILE (winmd anahtar dosyası belirt)
+              href: ../build/reference/winmdkeyfile-specify-winmd-key-file.md
+            - name: /WINMDKEYCONTAINER (Tanımlayıcı ad anahtar kapsayıcısı belirt)
+              href: ../build/reference/winmdkeycontainer-specify-key-container.md
+            - name: /WINMDDELAYSIGN (winmd dosyasını kısmen imzala)
+              href: ../build/reference/winmddelaysign-partially-sign-a-winmd.md
+            - name: /WX (Bağlayıcı uyarılarını hata olarak işle)
+              href: ../build/reference/wx-treat-linker-warnings-as-errors.md
+        - name: Düzenlenmiş adlar
+          href: ../build/reference/decorated-names.md
+        - name: Modül-tanımlama (.Def) dosyaları
+          expanded: false
+          items:
+            - name: Modül-tanımlama (.Def) dosyaları
+              href: ../build/reference/module-definition-dot-def-files.md
+            - name: Modül tanımlama deyimleri kuralları
+              expanded: false
+              items:
+                - name: Modül tanımlama deyimleri kuralları
+                  href: ../build/reference/rules-for-module-definition-statements.md
+                - name: EXPORTS
+                  href: ../build/reference/exports.md
+                - name: LIBRARY
+                  href: ../build/reference/library.md
+                - name: HEAPSIZE
+                  href: ../build/reference/heapsize.md
+                - name: NAME (C/C++)
+                  href: ../build/reference/name-c-cpp.md
+                - name: SECTIONS (C/C++)
+                  href: ../build/reference/sections-c-cpp.md
+                - name: STACKSIZE
+                  href: ../build/reference/stacksize.md
+                - name: STUB
+                  href: ../build/reference/stub.md
+                - name: VERSION (C/C++)
+                  href: ../build/reference/version-c-cpp.md
+        - name: Gecikmeli yüklenen DLL'ler için bağlayıcı desteği
+          expanded: false
+          items:
+            - name: Gecikmeli yüklenen DLL'ler için bağlayıcı desteği
+              href: ../build/reference/linker-support-for-delay-loaded-dlls.md
+            - name: Gecikme yükü DLL'lerini belirtme
+              href: ../build/reference/specifying-dlls-to-delay-load.md
+            - name: Gecikmeli yüklenen DLL'yi açıkça kaldırma
+              href: ../build/reference/explicitly-unloading-a-delay-loaded-dll.md
+            - name: İçeri aktarılanları bağlama
+              href: ../build/reference/binding-imports.md
+            - name: Gecikmeli yüklenen DLL için tüm içe aktarmaları yükleme
+              href: ../build/reference/loading-all-imports-for-a-delay-loaded-dll.md
+            - name: Hata işleme ve bildirme
+              expanded: false
+              items:
+                - name: Hata işleme ve bildirme
+                  href: ../build/reference/error-handling-and-notification.md
+                - name: Bildirim kancaları
+                  href: ../build/reference/notification-hooks.md
+                - name: Hata kancaları
+                  href: ../build/reference/failure-hooks.md
+                - name: DLL yükleme özel durum kodları (C/C++)
+                  href: ../build/reference/exceptions-c-cpp.md
+            - name: Gecikmeli yükleme içe aktarmalarını dökme
+              href: ../build/reference/dumping-delay-loaded-imports.md
+            - name: DLL'leri yüklemede gecikme kısıtlamaları
+              href: ../build/reference/constraints-of-delay-loading-dlls.md
+            - name: Yardımcı işlevini anlama
+              expanded: false
+              items:
+                - name: Yardımcı işlevini anlama
+                  href: ../build/reference/understanding-the-helper-function.md
+                - name: Visual C++ 6.0 sonrasındaki gecikmeli yükleme yardımcısı işlevi DLL değişiklikleri
+                  href: ../build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md
+                - name: 'Çağırma kuralları, parametreler ve dönüş türü'
+                  href: ../build/reference/calling-conventions-parameters-and-return-type.md
+                - name: Yapı ve sabit tanımları
+                  href: ../build/reference/structure-and-constant-definitions.md
+                - name: Gereken değerleri hesaplama
+                  href: ../build/reference/calculating-necessary-values.md
+                - name: Gecikmeli yüklenen DLL'yi kaldırma
+                  href: ../build/reference/unloading-a-delay-loaded-dll.md
+            - name: Kendi yardımcı işlevinizi geliştirme
+              href: ../build/reference/developing-your-own-helper-function.md
+    - name: Ek MSVC derleme araçları
+      expanded: false
+      items:
+        - name: Ek MSVC derleme araçları
+          href: ../build/reference/c-cpp-build-tools.md
+        - name: NMAKE başvurusu
+          expanded: false
+          items:
+            - name: NMAKE başvurusu
+              href: ../build/reference/nmake-reference.md
+            - name: Visual Studio'daki NMAKE projeleri
+              href: ../build/reference/creating-a-makefile-project.md
+            - name: NMAKE Çalıştırma
+              href: ../build/reference/running-nmake.md
+            - name: Derleme görevleri dosyası içeriği
+              expanded: false
+              items:
+                - name: Derleme görevleri dosyası içeriği
+                  href: ../build/reference/contents-of-a-makefile.md
+                - name: Joker Karakterler ve NMAKE
+                  href: ../build/reference/wildcards-and-nmake.md
+                - name: Derleme görevleri dosyasında uzun dosya adları
+                  href: ../build/reference/long-filenames-in-a-makefile.md
+                - name: Derleme görevleri dosyası açıklamaları
+                  href: ../build/reference/comments-in-a-makefile.md
+                - name: Derleme görevleri dosyasındaki özel karakterler
+                  href: ../build/reference/special-characters-in-a-makefile.md
+                - name: Örnek derleme görevleri dosyası
+                  href: ../build/reference/sample-makefile.md
+            - name: Açıklama blokları
+              href: ../build/reference/description-blocks.md
+            - name: Derleme görevleri dosyası komutları
+              expanded: false
+              items:
+                - name: Derleme görevleri dosyası komutları
+                  href: ../build/reference/commands-in-a-makefile.md
+                - name: Komut değiştiriciler
+                  href: ../build/reference/command-modifiers.md
+                - name: Dosya adı parçaları söz dizimi
+                  href: ../build/reference/filename-parts-syntax.md
+                - name: Derleme görevleri dosyasındaki satır içi dosyalar
+                  expanded: false
+                  items:
+                    - name: Derleme görevleri dosyasındaki satır içi dosyalar
+                      href: ../build/reference/inline-files-in-a-makefile.md
+                    - name: Satır içi dosya belirtme
+                      href: ../build/reference/specifying-an-inline-file.md
+                    - name: Satır içi dosya metni oluşturma
+                      href: ../build/reference/creating-inline-file-text.md
+                    - name: Satır içi dosyaları yeniden kullanma
+                      href: ../build/reference/reusing-inline-files.md
+                    - name: Birden çok satır içi dosya
+                      href: ../build/reference/multiple-inline-files.md
+            - name: Makrolar ve NMAKE
+              expanded: false
+              items:
+                - name: Makrolar ve NMAKE
+                  href: ../build/reference/macros-and-nmake.md
+                - name: NMAKE makrosu tanımlama
+                  expanded: false
+                  items:
+                    - name: NMAKE makrosu tanımlama
+                      href: ../build/reference/defining-an-nmake-macro.md
+                    - name: Makrolardaki özel karakterler
+                      href: ../build/reference/special-characters-in-macros.md
+                    - name: Boş ve tanımlanmamış makrolar
+                      href: ../build/reference/null-and-undefined-macros.md
+                    - name: Makroları nerede tanımlamalı
+                      href: ../build/reference/where-to-define-macros.md
+                    - name: Makro tanımlarında öncelik
+                      href: ../build/reference/precedence-in-macro-definitions.md
+                - name: NMAKE makrosu kullanma
+                  expanded: false
+                  items:
+                    - name: NMAKE makrosu kullanma
+                      href: ../build/reference/using-an-nmake-macro.md
+                    - name: Makro değiştirme
+                      href: ../build/reference/macro-substitution.md
+                - name: Özel NMAKE makroları
+                  expanded: false
+                  items:
+                    - name: Özel NMAKE makroları
+                      href: ../build/reference/special-nmake-macros.md
+                    - name: Dosya adı makroları
+                      href: ../build/reference/filename-macros.md
+                    - name: Özyineleme makroları
+                      href: ../build/reference/recursion-macros.md
+                    - name: Komut makroları ve seçenek makroları
+                      href: ../build/reference/command-macros-and-options-macros.md
+                    - name: Ortam değişkeni makroları
+                      href: ../build/reference/environment-variable-macros.md
+            - name: Çıkarsama kuralları
+              expanded: false
+              items:
+                - name: Çıkarsama kuralları
+                  href: ../build/reference/inference-rules.md
+                - name: Kural tanımlama
+                  expanded: false
+                  items:
+                    - name: Kural tanımlama
+                      href: ../build/reference/defining-a-rule.md
+                    - name: Yolları kurallarda ara
+                      href: ../build/reference/search-paths-in-rules.md
+                - name: Toplu iş modu kuralları
+                  href: ../build/reference/batch-mode-rules.md
+                - name: Önceden tanımlanmış kurallar
+                  href: ../build/reference/predefined-rules.md
+                - name: Çıkarsanan bağımlılıklar ve kurallar
+                  href: ../build/reference/inferred-dependents-and-rules.md
+                - name: Çıkarsama kurallarında öncelik
+                  href: ../build/reference/precedence-in-inference-rules.md
+            - name: Nokta yönergeleri
+              href: ../build/reference/dot-directives.md
+            - name: Derleme görevleri dosyası önişlemesi
+              expanded: false
+              items:
+                - name: Derleme görevleri dosyası önişlemesi
+                  href: ../build/reference/makefile-preprocessing.md
+                - name: Derleme görevleri dosyası önişleme yönergeleri
+                  href: ../build/reference/makefile-preprocessing-directives.md
+                - name: Derleme görevleri dosyası önişlemlerindeki ifadeler
+                  expanded: false
+                  items:
+                    - name: Derleme görevleri dosyası önişlemlerindeki ifadeler
+                      href: ../build/reference/expressions-in-makefile-preprocessing.md
+                    - name: Derleme görevleri dosyası önişleme işleçleri
+                      href: ../build/reference/makefile-preprocessing-operators.md
+                    - name: Programı önişlemde yürütme
+                      href: ../build/reference/executing-a-program-in-preprocessing.md
+        - name: LIB başvurusu
+          expanded: false
+          items:
+            - name: LIB başvurusu
+              href: ../build/reference/lib-reference.md
+            - name: LIB'e Genel Bakış
+              expanded: false
+              items:
+                - name: LIB'e Genel Bakış
+                  href: ../build/reference/overview-of-lib.md
+                - name: 'Nasıl yapılır: Visual Studio geliştirme ortamında LIB.EXE seçeneklerini ayarlama'
+                  href: ../build/reference/how-to-set-lib-exe-options-in-the-visual-studio-development-environment.md
+                - name: LIB giriş dosyaları
+                  href: ../build/reference/lib-input-files.md
+                - name: LIB çıkış dosyaları
+                  href: ../build/reference/lib-output-files.md
+                - name: Diğer LIB çıkışı
+                  href: ../build/reference/other-lib-output.md
+                - name: Kitaplık yapısı
+                  href: ../build/reference/structure-of-a-library.md
+            - name: LIB Çalıştırma
+              href: ../build/reference/running-lib.md
+            - name: Kitaplığı yönetme
+              href: ../build/reference/managing-a-library.md
+            - name: Kitaplık üyesini ayıklama
+              href: ../build/reference/extracting-a-library-member.md
+            - name: İçeri aktarma kitaplıkları ve dışarı aktarma dosyalarıyla çalışma
+              expanded: false
+              items:
+                - name: İçeri aktarma kitaplıkları ve dışarı aktarma dosyalarıyla çalışma
+                  href: ../build/reference/working-with-import-libraries-and-export-files.md
+                - name: İçeri aktarma kitaplığı ve dışarı aktarma dosyası derleme
+                  href: ../build/reference/building-an-import-library-and-export-file.md
+                - name: İçeri aktarma kitaplığını ve dışarı aktarma dosyasını kullanma
+                  href: ../build/reference/using-an-import-library-and-export-file.md
+        - name: EDITBIN başvurusu
+          expanded: false
+          items:
+            - name: EDITBIN başvurusu
+              href: ../build/reference/editbin-reference.md
+            - name: EDITBIN komut satırı
+              href: ../build/reference/editbin-command-line.md
+            - name: EDITBIN seçenekleri
+              expanded: false
+              items:
+                - name: EDITBIN seçenekleri
+                  href: ../build/reference/editbin-options.md
+                - name: /ALLOWISOLATION
+                  href: ../build/reference/allowisolation.md
+                - name: /ALLOWBIND
+                  href: ../build/reference/allowbind.md
+                - name: /APPCONTAINER
+                  href: ../build/reference/appcontainer.md
+                - name: /BIND
+                  href: ../build/reference/bind.md
+                - name: /DYNAMICBASE
+                  href: ../build/reference/dynamicbase.md
+                - name: /ERRORREPORT (editbin.exe)
+                  href: ../build/reference/errorreport-editbin-exe.md
+                - name: /HEAP
+                  href: ../build/reference/heap.md
+                - name: /HIGHENTROPYVA
+                  href: ../build/reference/highentropyva.md
+                - name: /INTEGRITYCHECK
+                  href: ../build/reference/integritycheck.md
+                - name: /LARGEADDRESSAWARE
+                  href: ../build/reference/largeaddressaware.md
+                - name: /NOLOGO (EDITBIN)
+                  href: ../build/reference/nologo-editbin.md
+                - name: /NXCOMPAT
+                  href: ../build/reference/nxcompat.md
+                - name: /REBASE
+                  href: ../build/reference/rebase.md
+                - name: /RELEASE
+                  href: ../build/reference/release.md
+                - name: /SECTION (EDITBIN)
+                  href: ../build/reference/section-editbin.md
+                - name: /STACK
+                  href: ../build/reference/stack.md
+                - name: /SUBSYSTEM
+                  href: ../build/reference/subsystem.md
+                - name: /SWAPRUN
+                  href: ../build/reference/swaprun.md
+                - name: /TSAWARE
+                  href: ../build/reference/tsaware.md
+                - name: /VERSION
+                  href: ../build/reference/version.md
+        - name: DUMPBIN başvurusu
+          expanded: false
+          items:
+            - name: DUMPBIN başvurusu
+              href: ../build/reference/dumpbin-reference.md
+            - name: DUMPBIN komut satırı
+              href: ../build/reference/dumpbin-command-line.md
+            - name: DUMPBIN seçenekleri
+              expanded: false
+              items:
+                - name: DUMPBIN seçenekleri
+                  href: ../build/reference/dumpbin-options.md
+                - name: /ALL
+                  href: ../build/reference/all.md
+                - name: /ARCHIVEMEMBERS
+                  href: ../build/reference/archivemembers.md
+                - name: /CLRHEADER
+                  href: ../build/reference/clrheader.md
+                - name: /DEPENDENTS
+                  href: ../build/reference/dependents.md
+                - name: /DIRECTIVES
+                  href: ../build/reference/directives.md
+                - name: /DISASM
+                  href: ../build/reference/disasm.md
+                - name: /ERRORREPORT (dumpbin.exe)
+                  href: ../build/reference/errorreport-dumpbin-exe.md
+                - name: /EXPORTS
+                  href: ../build/reference/dash-exports.md
+                - name: /FPO
+                  href: ../build/reference/fpo.md
+                - name: /HEADERS
+                  href: ../build/reference/headers.md
+                - name: /IMPORTS (DUMPBIN)
+                  href: ../build/reference/imports-dumpbin.md
+                - name: /LINENUMBERS
+                  href: ../build/reference/linenumbers.md
+                - name: /LINKERMEMBER
+                  href: ../build/reference/linkermember.md
+                - name: /LOADCONFIG
+                  href: ../build/reference/loadconfig.md
+                - name: /NOPDB
+                  href: ../build/reference/nopdb.md
+                - name: /OUT (DUMPBIN)
+                  href: ../build/reference/out-dumpbin.md
+                - name: /PDATA
+                  href: ../build/reference/pdata.md
+                - name: /PDBPATH
+                  href: ../build/reference/pdbpath.md
+                - name: /RANGE
+                  href: ../build/reference/range.md
+                - name: /RAWDATA
+                  href: ../build/reference/rawdata.md
+                - name: /RELOCATIONS
+                  href: ../build/reference/relocations.md
+                - name: /SECTION (DUMPBIN)
+                  href: ../build/reference/section-dumpbin.md
+                - name: /SUMMARY
+                  href: ../build/reference/summary.md
+                - name: /SYMBOLS
+                  href: ../build/reference/symbols.md
+                - name: /TLS
+                  href: ../build/reference/tls.md
+        - name: ERRLOOK başvurusu
+          expanded: false
+          items:
+            - name: ERRLOOK başvurusu
+              href: ../build/reference/errlook-reference.md
+            - name: Değer düzenleme denetimi
+              href: ../build/reference/value-edit-control.md
+            - name: Hata iletisi düzenleme denetimi
+              href: ../build/reference/error-message-edit-control.md
+            - name: Modüller düğmesi
+              href: ../build/reference/modules-button.md
+            - name: Ara düğmesi
+              href: ../build/reference/look-up-button.md
+        - name: XDCMake başvurusu
+          href: ../build/reference/xdcmake-reference.md
+        - name: BSCMAKE başvurusu
+          expanded: false
+          items:
+            - name: BSCMAKE başvurusu
+              href: ../build/reference/bscmake-reference.md
+            - name: 'Göz atma bilgileri dosyası derleme: Genel Bakış'
+              href: ../build/reference/building-browse-information-files-overview.md
+            - name: .Bsc dosyası derleme
+              expanded: false
+              items:
+                - name: .Bsc dosyası derleme
+                  href: ../build/reference/building-a-dot-bsc-file.md
+                - name: .Sbr dosyası oluşturma
+                  href: ../build/reference/creating-an-dot-sbr-file.md
+                - name: BSCMAKE .Bsc dosyasını nasıl derler?
+                  href: ../build/reference/how-bscmake-builds-a-dot-bsc-file.md
+            - name: BSCMAKE komut satırı
+              href: ../build/reference/bscmake-command-line.md
+            - name: BSCMAKE komut dosyası (Yanıt dosyası)
+              href: ../build/reference/bscmake-command-file-response-file.md
+            - name: BSCMAKE seçenekleri
+              href: ../build/reference/bscmake-options.md
+            - name: BSCMAKE çıkış kodları
+              href: ../build/reference/bscmake-exit-codes.md
+    - name: Derleyici ve derleme araçları hataları
+      href: ../error-messages/
+    - name: C++ için XML belgeleri
+      expanded: false
+      items:
+        - name: C++ için XML belgeleri
+          href: ../build/reference/xml-documentation-visual-cpp.md
+        - name: C++ belge açıklamaları için önerilen etiketler
+          expanded: false
+          items:
+            - name: C++ belge açıklamaları için önerilen etiketler
+              href: ../build/reference/recommended-tags-for-documentation-comments-visual-cpp.md
+            - name: <c>
+              href: ../build/reference/c-visual-cpp.md
+            - name: <code>
+              href: ../build/reference/code-visual-cpp.md
+            - name: <example>
+              href: ../build/reference/example-visual-cpp.md
+            - name: <exception>
+              href: ../build/reference/exception-visual-cpp.md
+            - name: <include>
+              href: ../build/reference/include-visual-cpp.md
+            - name: <list>
+              href: ../build/reference/list-visual-cpp.md
+            - name: <para>
+              href: ../build/reference/para-visual-cpp.md
+            - name: <param>
+              href: ../build/reference/param-visual-cpp.md
+            - name: <paramref>
+              href: ../build/reference/paramref-visual-cpp.md
+            - name: <permission>
+              href: ../build/reference/permission-visual-cpp.md
+            - name: <remarks>
+              href: ../build/reference/remarks-visual-cpp.md
+            - name: <returns>
+              href: ../build/reference/returns-visual-cpp.md
+            - name: <see>
+              href: ../build/reference/see-visual-cpp.md
+            - name: <seealso>
+              href: ../build/reference/seealso-visual-cpp.md
+            - name: <summary>
+              href: ../build/reference/summary-visual-cpp.md
+            - name: <value>
+              href: ../build/reference/value-visual-cpp.md
+        - name: .Xml dosyası işleme
+          href: ../build/reference/dot-xml-file-processing.md
+        - name: C++ belge etiketleri için sınırlayıcılar
+          href: ../build/reference/delimiters-for-visual-cpp-documentation-tags.md

@@ -1,0 +1,530 @@
+- name: UWP geliştirme
+  href: ../cppcx/universal-windows-apps-cpp.md
+- name: C++/CX dil başvurusu
+  expanded: false
+  items:
+    - name: C++/CX dil başvurusu
+      href: ../cppcx/visual-c-language-reference-c-cx.md
+    - name: Hızlı başvuru
+      href: ../cppcx/quick-reference-c-cx.md
+    - name: Tür sistemi
+      expanded: false
+      items:
+        - name: Tür sistemi
+          href: ../cppcx/type-system-c-cx.md
+        - name: Ad alanları ve tür görünürlüğü (C++/CX)
+          href: ../cppcx/namespaces-and-type-visibility-c-cx.md
+        - name: Temel türler
+          href: ../cppcx/fundamental-types-c-cx.md
+        - name: Dizeler
+          href: ../cppcx/strings-c-cx.md
+        - name: Dizi ve WriteOnlyArray
+          href: ../cppcx/array-and-writeonlyarray-c-cx.md
+        - name: Başvuru sınıfları ve yapıları
+          href: ../cppcx/ref-classes-and-structs-c-cx.md
+        - name: Değer sınıfları ve yapıları
+          href: ../cppcx/value-classes-and-structs-c-cx.md
+        - name: Kısmi sınıflar
+          href: ../cppcx/partial-classes-c-cx.md
+        - name: Özellikler
+          href: ../cppcx/properties-c-cx.md
+        - name: Koleksiyonlar
+          href: ../cppcx/collections-c-cx.md
+        - name: Şablon başvuru sınıfları
+          href: ../cppcx/template-ref-classes-c-cx.md
+        - name: Arabirimler
+          href: ../cppcx/interfaces-c-cx.md
+        - name: Numaralandırmalar
+          href: ../cppcx/enums-c-cx.md
+        - name: Temsilciler
+          href: ../cppcx/delegates-c-cx.md
+        - name: Özel Durumlar
+          href: ../cppcx/exceptions-c-cx.md
+        - name: Olaylar
+          href: ../cppcx/events-c-cx.md
+        - name: Atama
+          href: ../cppcx/casting-c-cx.md
+        - name: Kutulama
+          href: ../cppcx/boxing-c-cx.md
+        - name: Öznitelikler
+          href: ../cppcx/attributes-c-cx.md
+        - name: Türleri ve üyeleri geçersiz kılma
+          href: ../cppcx/deprecating-types-and-members-c-cx.md
+    - name: Uygulama ve kitaplık oluşturma
+      expanded: false
+      items:
+        - name: Uygulama ve kitaplık oluşturma
+          href: ../cppcx/building-apps-and-libraries-c-cx.md
+        - name: Derleyici ve Bağlayıcı seçenekleri
+          href: ../cppcx/compiler-and-linker-options-c-cx.md
+        - name: Statik kitaplıklar
+          href: ../cppcx/static-libraries-c-cx.md
+        - name: DLL'ler
+          href: ../cppcx/dlls-c-cx.md
+    - name: Diğer Dillerle Birlikte Çalışma
+      expanded: false
+      items:
+        - name: Diğer Dillerle Birlikte Çalışma
+          href: ../cppcx/interoperating-with-other-languages-c-cx.md
+        - name: JavaScript tümleştirme
+          href: ../cppcx/javascript-integration-c-cx.md
+        - name: CLR tümleştirme
+          href: ../cppcx/clr-integration-c-cx.md
+        - name: WRL tümleştirme
+          href: ../cppcx/wrl-integration-c-cx.md
+    - name: Veri arabelleklerine işaretçileri alma
+      href: ../cppcx/obtaining-pointers-to-data-buffers-c-cx.md
+    - name: İş parçacığı oluşturma ve hazırlama
+      href: ../cppcx/threading-and-marshaling-c-cx.md
+    - name: Zayıf başvurular ve döngüleri kesme
+      href: ../cppcx/weak-references-and-breaking-cycles-c-cx.md
+    - name: Ad alanları başvurusu
+      expanded: false
+      items:
+        - name: Ad alanları başvurusu
+          href: ../cppcx/namespaces-reference-c-cx.md
+        - name: varsayılan ad alanı
+          expanded: false
+          items:
+            - name: varsayılan ad alanı
+              href: ../cppcx/default-namespace.md
+            - name: 'default::(type_name)::Equals'
+              href: ../cppcx/default-type-name-equals-method.md
+            - name: 'default::(type_name)::GetHashCode'
+              href: ../cppcx/default-type-name-gethashcode-method.md
+            - name: 'default::(type_name)::GetType'
+              href: ../cppcx/default-type-name-gettype-method.md
+            - name: 'default::(type_name)::ToString'
+              href: ../cppcx/default-type-name-tostring-method.md
+        - name: Platform ad alanı
+          expanded: false
+          items:
+            - name: Platform ad alanı
+              href: ../cppcx/platform-namespace-c-cx.md
+            - name: 'Platform::AccessDeniedException sınıfı'
+              href: ../cppcx/platform-accessdeniedexception-class.md
+            - name: 'Platform::Agile sınıfı'
+              href: ../cppcx/platform-agile-class.md
+            - name: 'Platform::Array sınıfı'
+              href: ../cppcx/platform-array-class.md
+            - name: 'Platform::ArrayReference sınıfı'
+              href: ../cppcx/platform-arrayreference-class.md
+            - name: 'Platform::Boolean değer sınıfı'
+              href: ../cppcx/platform-boolean-value-class.md
+            - name: 'Platform::Box sınıfı'
+              href: ../cppcx/platform-box-class.md
+            - name: 'Platform::CallbackContext sabit listesi'
+              href: ../cppcx/platform-callbackcontext-enumeration.md
+            - name: 'Platform::ChangedStateException sınıfı'
+              href: ../cppcx/platform-changedstateexception-class.md
+            - name: 'Platform::ClassNotRegisteredException sınıfı'
+              href: ../cppcx/platform-classnotregisteredexception-class.md
+            - name: 'Platform::COMException sınıfı'
+              href: ../cppcx/platform-comexception-class.md
+            - name: 'Platform::Delegate sınıfı'
+              href: ../cppcx/platform-delegate-class.md
+            - name: 'Platform::DisconnectedException sınıfı'
+              href: ../cppcx/platform-disconnectedexception-class.md
+            - name: 'Platform::Enum sınıfı'
+              href: ../cppcx/platform-enum-class.md
+            - name: 'Platform::Exception sınıfı'
+              href: ../cppcx/platform-exception-class.md
+            - name: 'Platform::FailureException sınıfı'
+              href: ../cppcx/platform-failureexception-class.md
+            - name: 'Platform::Guid değer sınıfı'
+              href: ../cppcx/platform-guid-value-class.md
+            - name: 'Platform::IBox arabirimi'
+              href: ../cppcx/platform-ibox-interface.md
+            - name: 'Platform::IBoxArray arabirimi'
+              href: ../cppcx/platform-iboxarray-interface.md
+            - name: 'Platform::IDisposable arabirimi'
+              href: ../cppcx/platform-idisposable-interface.md
+            - name: 'Platform::IntPtr değer sınıfı'
+              href: ../cppcx/platform-intptr-value-class.md
+            - name: 'Platform::InvalidArgumentException sınıfı'
+              href: ../cppcx/platform-invalidargumentexception-class.md
+            - name: 'Platform::InvalidCastException sınıfı'
+              href: ../cppcx/platform-invalidcastexception-class.md
+            - name: 'Platform::IValueType arabirimi'
+              href: ../cppcx/platform-ivaluetype-interface.md
+            - name: 'Platform::MTAThreadAttribute sınıfı'
+              href: ../cppcx/platform-mtathreadattribute-class.md
+            - name: 'Platform::NotImplementedException sınıfı'
+              href: ../cppcx/platform-notimplementedexception-class.md
+            - name: 'Platform::NullReferenceException sınıfı'
+              href: ../cppcx/platform-nullreferenceexception-class.md
+            - name: 'Platform::Object sınıfı'
+              href: ../cppcx/platform-object-class.md
+            - name: 'Platform::ObjectDisposedException sınıfı'
+              href: ../cppcx/platform-objectdisposedexception-class.md
+            - name: 'Platform::OperationCanceledException sınıfı'
+              href: ../cppcx/platform-operationcanceledexception-class.md
+            - name: 'Platform::OutOfBoundsException sınıfı'
+              href: ../cppcx/platform-outofboundsexception-class.md
+            - name: 'Platform::OutOfMemoryException sınıfı'
+              href: ../cppcx/platform-outofmemoryexception-class.md
+            - name: 'Platform::ReCreateException'
+              href: ../cppcx/platform-recreateexception-method.md
+            - name: 'Platform::SizeT değer sınıfı'
+              href: ../cppcx/platform-sizet-value-class.md
+            - name: 'Platform::STAThreadAttribute sınıfı'
+              href: ../cppcx/platform-stathreadattribute-class.md
+            - name: 'Platform::String sınıfı'
+              href: ../cppcx/platform-string-class.md
+            - name: 'Platform::StringReference sınıfı'
+              href: ../cppcx/platform-stringreference-class.md
+            - name: 'Platform::Type sınıfı'
+              href: ../cppcx/platform-type-class.md
+            - name: 'Platform::Type^ işleci'
+              href: ../cppcx/operator-type-hat.md
+            - name: 'Platform::TypeCode sabit listesi'
+              href: ../cppcx/platform-typecode-enumeration.md
+            - name: 'Platform::UIntPtr değer sınıfı'
+              href: ../cppcx/platform-uintptr-value-class.md
+            - name: 'Platform::ValueType sınıfı'
+              href: ../cppcx/platform-valuetype-class.md
+            - name: 'Platform::WeakReference sınıfı'
+              href: ../cppcx/platform-weakreference-class.md
+            - name: 'Platform::WriteOnlyArray sınıfı'
+              href: ../cppcx/platform-writeonlyarray-class.md
+            - name: 'Platform::WrongThreadException sınıfı'
+              href: ../cppcx/platform-wrongthreadexception-class.md
+        - name: 'Platform::Collections ad alanı'
+          expanded: false
+          items:
+            - name: 'Platform::Collections ad alanı'
+              href: ../cppcx/platform-collections-namespace.md
+            - name: 'Platform::Collections::BackInsertIterator sınıfı'
+              href: ../cppcx/platform-collections-backinsertiterator-class.md
+            - name: 'Platform::Collections::InputIterator sınıfı'
+              href: ../cppcx/platform-collections-inputiterator-class.md
+            - name: 'Platform::Collections::Map sınıfı'
+              href: ../cppcx/platform-collections-map-class.md
+            - name: 'Platform::Collections::MapView sınıfı'
+              href: ../cppcx/platform-collections-mapview-class.md
+            - name: 'Platform::Collections::UnorderedMap sınıfı'
+              href: ../cppcx/platform-collections-unorderedmap-class.md
+            - name: 'Platform::Collections::UnorderedMapView sınıfı'
+              href: ../cppcx/platform-collections-unorderedmapview-class.md
+            - name: 'Platform::Collections::Vector sınıfı'
+              href: ../cppcx/platform-collections-vector-class.md
+            - name: 'Platform::Collections::VectorIterator sınıfı'
+              href: ../cppcx/platform-collections-vectoriterator-class.md
+            - name: 'Platform::Collections::VectorView sınıfı'
+              href: ../cppcx/platform-collections-vectorview-class.md
+            - name: 'Platform::Collections::VectorViewIterator sınıfı'
+              href: ../cppcx/platform-collections-vectorviewiterator-class.md
+        - name: 'Platform::Collections::Details ad alanı'
+          href: ../cppcx/platform-collections-details-namespace.md
+        - name: 'Platform::Details ad alanı'
+          expanded: false
+          items:
+            - name: 'Platform::Details ad alanı'
+              href: ../cppcx/platform-details-namespace.md
+            - name: 'Platform::Details::__GUID yapısı'
+              href: ../cppcx/platform-details-guid-struct.md
+            - name: 'Platform::Details::Console sınıfı'
+              href: ../cppcx/platform-details-console-class.md
+            - name: 'Platform::Details::Heap sınıfı'
+              href: ../cppcx/platform-details-heap-class.md
+            - name: 'Platform::Details::HeapAllocationTrackingLevel sabit listesi'
+              href: ../cppcx/platform-details-heapallocationtrackinglevel-enumeration.md
+            - name: 'Platform::Details::HeapEntryHandler temsilcisi'
+              href: ../cppcx/platform-details-heapentryhandler-delegate.md
+            - name: 'Platform::Details::IEquatable arabirimi'
+              href: ../cppcx/platform-details-iequatable-interface.md
+            - name: 'Platform::Details::IPrintable arabirimi'
+              href: ../cppcx/platform-details-iprintable-interface.md
+        - name: 'Platform::Metadata ad alanı'
+          expanded: false
+          items:
+            - name: 'Platform::Metadata ad alanı'
+              href: ../cppcx/platform-metadata-namespace.md
+            - name: 'Platform::Metadata::Attribute özniteliği'
+              href: ../cppcx/platform-metadata-attribute-attribute.md
+            - name: 'Platform::Metadata::DefaultMemberAttribute özniteliği'
+              href: ../cppcx/platform-metadata-defaultmemberattribute-attribute.md
+            - name: 'Platform::Metadata::FlagsAttribute özniteliği'
+              href: ../cppcx/platform-metadata-flagsattribute-attribute.md
+            - name: 'Platform::Metadata::RuntimeClassName'
+              href: ../cppcx/platform-metadata-runtimeclassname.md
+        - name: 'Platform::Runtime::CompilerServices ad alanı'
+          href: ../cppcx/platform-runtime-compilerservices-namespace.md
+        - name: 'Platform::Runtime::InteropServices ad alanı'
+          href: ../cppcx/platform-runtime-interopservices-namespace.md
+        - name: 'Windows::Foundation::Collections ad alanı'
+          expanded: false
+          items:
+            - name: 'Windows::Foundation::Collections ad alanı'
+              href: ../cppcx/windows-foundation-collections-namespace-c-cx.md
+            - name: back_inserter işlevi
+              href: ../cppcx/back-inserter-function.md
+            - name: begin işlevi
+              href: ../cppcx/begin-function.md
+            - name: end işlevi
+              href: ../cppcx/end-function.md
+            - name: to_vector işlevi
+              href: ../cppcx/to-vector-function.md
+        - name: 'Windows::UI::Xaml::Interop::TypeName işleci'
+          href: ../cppcx/operator-windows-ui-xaml-interop-typename.md
+    - name: Evrensel Windows Platformu uygulamalarında desteklenmeyen CRT işlevleri
+      href: ../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md
+- name: Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
+  expanded: false
+  items:
+    - name: Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
+      href: ../cppcx/wrl/windows-runtime-cpp-template-library-wrl.md
+    - name: 'Nasıl yapılır: WRL kullanarak Windows çalışma zamanı bileşenini etkinleştirme ve kullanma'
+      href: ../cppcx/wrl/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md
+    - name: 'Nasıl yapılır: WRL kullanarak zaman uyumsuz işlemleri tamamlama'
+      href: ../cppcx/wrl/how-to-complete-asynchronous-operations-using-wrl.md
+    - name: 'Nasıl yapılır: WRL kullanarak olayları işleme'
+      href: ../cppcx/wrl/how-to-handle-events-using-wrl.md
+    - name: 'İzlenecek yol: WRL ve Medya Altyapısı kullanarak UWP uygulaması oluşturma'
+      href: ../cppcx/wrl/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md
+    - name: 'Nasıl yapılır: WRL kullanarak klasik COM bileşeni oluşturma'
+      href: ../cppcx/wrl/how-to-create-a-classic-com-component-using-wrl.md
+    - name: 'Nasıl yapılır: Doğrudan WRL bileşenlerinin örneğini oluşturma'
+      href: ../cppcx/wrl/how-to-instantiate-wrl-components-directly.md
+    - name: 'Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma'
+      href: ../cppcx/wrl/use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md
+    - name: Kategoriye göre başlıca WRL API'leri
+      href: ../cppcx/wrl/key-wrl-apis-by-category.md
+    - name: WRL başvurusu
+      expanded: false
+      items:
+        - name: WRL başvurusu
+          href: ../cppcx/wrl/wrl-reference.md
+        - name: 'Microsoft::WRL ad alanı'
+          expanded: false
+          items:
+            - name: 'Microsoft::WRL ad alanı'
+              href: ../cppcx/wrl/microsoft-wrl-namespace.md
+            - name: ActivatableClass makroları
+              href: ../cppcx/wrl/activatableclass-macros.md
+            - name: ActivationFactory sınıfı
+              href: ../cppcx/wrl/activationfactory-class.md
+            - name: AgileActivationFactory sınıfı
+              href: ../cppcx/wrl/agileactivationfactory-class.md
+            - name: AgileEventSource sınıfı
+              href: ../cppcx/wrl/agileeventsource-class.md
+            - name: AsWeak işlevi
+              href: ../cppcx/wrl/asweak-function.md
+            - name: AsyncBase sınıfı
+              href: ../cppcx/wrl/asyncbase-class.md
+            - name: AsyncResultType sabit listesi
+              href: ../cppcx/wrl/asyncresulttype-enumeration.md
+            - name: Callback işlevi (WRL)
+              href: ../cppcx/wrl/callback-function-wrl.md
+            - name: CancelTransitionPolicy sabit listesi
+              href: ../cppcx/wrl/canceltransitionpolicy-enumeration.md
+            - name: ChainInterfaces yapısı
+              href: ../cppcx/wrl/chaininterfaces-structure.md
+            - name: ClassFactory sınıfı
+              href: ../cppcx/wrl/classfactory-class.md
+            - name: CloakedIid yapısı
+              href: ../cppcx/wrl/cloakediid-structure.md
+            - name: ComposableBase sınıfı
+              href: ../cppcx/wrl/composablebase-class.md
+            - name: ComPtr sınıfı
+              href: ../cppcx/wrl/comptr-class.md
+            - name: CreateActivationFactory işlevi
+              href: ../cppcx/wrl/createactivationfactory-function.md
+            - name: CreateClassFactory işlevi
+              href: ../cppcx/wrl/createclassfactory-function.md
+            - name: DeferrableEventArgs sınıfı
+              href: ../cppcx/wrl/deferrableeventargs-class.md
+            - name: EventSource sınıfı
+              href: ../cppcx/wrl/eventsource-class.md
+            - name: FactoryCacheFlags sabit listesi
+              href: ../cppcx/wrl/factorycacheflags-enumeration.md
+            - name: FtmBase sınıfı
+              href: ../cppcx/wrl/ftmbase-class.md
+            - name: GetModuleBase işlevi
+              href: ../cppcx/wrl/getmodulebase-function.md
+            - name: Implements yapısı
+              href: ../cppcx/wrl/implements-structure.md
+            - name: InspectableClass makrosu
+              href: ../cppcx/wrl/inspectableclass-macro.md
+            - name: InvokeModeOptions yapısı
+              href: ../cppcx/wrl/invokemodeoptions-structure.md
+            - name: Make işlevi
+              href: ../cppcx/wrl/make-function.md
+            - name: MixIn yapısı
+              href: ../cppcx/wrl/mixin-structure.md
+            - name: Modül sınıfı
+              expanded: false
+              items:
+                - name: Modül sınıfı
+                  href: ../cppcx/wrl/module-class.md
+                - name: 'Module::GenericReleaseNotifier sınıfı'
+                  href: ../cppcx/wrl/module-genericreleasenotifier-class.md
+                - name: 'Module::MethodReleaseNotifier sınıfı'
+                  href: ../cppcx/wrl/module-methodreleasenotifier-class.md
+                - name: 'Module::ReleaseNotifier sınıfı'
+                  href: ../cppcx/wrl/module-releasenotifier-class.md
+            - name: ModuleType sabit listesi
+              href: ../cppcx/wrl/moduletype-enumeration.md
+            - name: 'operator!== işleç (Microsoft::WRL)'
+              href: ../cppcx/wrl/operator-inequality-operator-microsoft-wrl.md
+            - name: 'operator== işleç (Microsoft::WRL)'
+              href: ../cppcx/wrl/operator-equality-operator-microsoft-wrl.md
+            - name: 'operator< işleç (Microsoft::WRL)'
+              href: ../cppcx/wrl/operator-less-than-operator-microsoft-wrl.md
+            - name: RuntimeClass sınıfı
+              href: ../cppcx/wrl/runtimeclass-class.md
+            - name: RuntimeClassFlags yapısı
+              href: ../cppcx/wrl/runtimeclassflags-structure.md
+            - name: RuntimeClassType sabit listesi
+              href: ../cppcx/wrl/runtimeclasstype-enumeration.md
+            - name: SimpleActivationFactory sınıfı
+              href: ../cppcx/wrl/simpleactivationfactory-class.md
+            - name: SimpleClassFactory sınıfı
+              href: ../cppcx/wrl/simpleclassfactory-class.md
+            - name: WeakRef sınıfı
+              href: ../cppcx/wrl/weakref-class.md
+        - name: 'Microsoft::WRL::Details ad alanı'
+          expanded: false
+          items:
+            - name: 'Microsoft::WRL::Details ad alanı'
+              href: ../cppcx/wrl/microsoft-wrl-details-namespace.md
+            - name: ActivationFactoryCallback işlevi
+              href: ../cppcx/wrl/activationfactorycallback-function.md
+            - name: ArgTraits yapısı
+              href: ../cppcx/wrl/argtraits-structure.md
+            - name: ArgTraitsHelper yapısı
+              href: ../cppcx/wrl/argtraitshelper-structure.md
+            - name: AsyncStatusInternal sabit listesi
+              href: ../cppcx/wrl/asyncstatusinternal-enumeration.md
+            - name: BoolStruct yapısı
+              href: ../cppcx/wrl/boolstruct-structure.md
+            - name: ComPtrRef sınıfı
+              href: ../cppcx/wrl/comptrref-class.md
+            - name: ComPtrRefBase sınıfı
+              href: ../cppcx/wrl/comptrrefbase-class.md
+            - name: CreatorMap yapısı
+              href: ../cppcx/wrl/creatormap-structure.md
+            - name: DerefHelper yapısı
+              href: ../cppcx/wrl/derefhelper-structure.md
+            - name: DontUseNewUseMake sınıfı
+              href: ../cppcx/wrl/dontusenewusemake-class.md
+            - name: EnableIf yapısı
+              href: ../cppcx/wrl/enableif-structure.md
+            - name: EventTargetArray sınıfı
+              href: ../cppcx/wrl/eventtargetarray-class.md
+            - name: FactoryCache yapısı
+              href: ../cppcx/wrl/factorycache-structure.md
+            - name: ImplementsBase yapısı
+              href: ../cppcx/wrl/implementsbase-structure.md
+            - name: ImplementsHelper yapısı
+              href: ../cppcx/wrl/implementshelper-structure.md
+            - name: InterfaceList yapısı
+              href: ../cppcx/wrl/interfacelist-structure.md
+            - name: InterfaceListHelper yapısı
+              href: ../cppcx/wrl/interfacelisthelper-structure.md
+            - name: InterfaceTraits yapısı
+              href: ../cppcx/wrl/interfacetraits-structure.md
+            - name: InvokeHelper yapısı
+              href: ../cppcx/wrl/invokehelper-structure.md
+            - name: IsBaseOfStrict yapısı
+              href: ../cppcx/wrl/isbaseofstrict-structure.md
+            - name: IsSame yapısı
+              href: ../cppcx/wrl/issame-structure.md
+            - name: MakeAllocator sınıfı
+              href: ../cppcx/wrl/makeallocator-class.md
+            - name: MakeAndInitialize işlevi
+              href: ../cppcx/wrl/makeandinitialize-function.md
+            - name: ModuleBase sınıfı
+              href: ../cppcx/wrl/modulebase-class.md
+            - name: Move işlevi
+              href: ../cppcx/wrl/move-function.md
+            - name: Nil yapısı
+              href: ../cppcx/wrl/nil-structure.md
+            - name: RaiseException işlevi
+              href: ../cppcx/wrl/raiseexception-function.md
+            - name: RemoveIUnknown sınıfı
+              href: ../cppcx/wrl/removeiunknown-class.md
+            - name: RemoveReference yapısı
+              href: ../cppcx/wrl/removereference-structure.md
+            - name: RuntimeClassBase yapısı
+              href: ../cppcx/wrl/runtimeclassbase-structure.md
+            - name: RuntimeClassBaseT yapısı
+              href: ../cppcx/wrl/runtimeclassbaset-structure.md
+            - name: Swap işlevi (WRL)
+              href: ../cppcx/wrl/swap-function-wrl.md
+            - name: TerminateMap işlevi
+              href: ../cppcx/wrl/terminatemap-function.md
+            - name: VerifyInheritanceHelper yapısı
+              href: ../cppcx/wrl/verifyinheritancehelper-structure.md
+            - name: VerifyInterfaceHelper yapısı
+              href: ../cppcx/wrl/verifyinterfacehelper-structure.md
+            - name: WeakReference sınıfı
+              href: ../cppcx/wrl/weakreference-class.md
+        - name: 'Microsoft::WRL::Wrappers ad alanı'
+          expanded: false
+          items:
+            - name: 'Microsoft::WRL::Wrappers ad alanı'
+              href: ../cppcx/wrl/microsoft-wrl-wrappers-namespace.md
+            - name: CriticalSection sınıfı
+              href: ../cppcx/wrl/criticalsection-class.md
+            - name: Event sınıfı (WRL)
+              href: ../cppcx/wrl/event-class-wrl.md
+            - name: HandleT sınıfı
+              href: ../cppcx/wrl/handlet-class.md
+            - name: HString sınıfı
+              href: ../cppcx/wrl/hstring-class.md
+            - name: HStringReference sınıfı
+              href: ../cppcx/wrl/hstringreference-class.md
+            - name: Mutex sınıfı
+              href: ../cppcx/wrl/mutex-class.md
+            - name: RoInitializeWrapper sınıfı
+              href: ../cppcx/wrl/roinitializewrapper-class.md
+            - name: Semafor sınıfı
+              href: ../cppcx/wrl/semaphore-class.md
+            - name: SRWLock sınıfı
+              href: ../cppcx/wrl/srwlock-class.md
+        - name: 'Microsoft::WRL::Wrappers::Details ad alanı'
+          expanded: false
+          items:
+            - name: 'Microsoft::WRL::Wrappers::Details ad alanı'
+              href: ../cppcx/wrl/microsoft-wrl-wrappers-details-namespace.md
+            - name: CompareStringOrdinal metodu
+              href: ../cppcx/wrl/comparestringordinal-method.md
+            - name: SyncLockT sınıfı
+              href: ../cppcx/wrl/synclockt-class.md
+            - name: SyncLockWithStatusT sınıfı
+              href: ../cppcx/wrl/synclockwithstatust-class.md
+        - name: 'Microsoft::WRL::Wrappers::HandleTraits ad alanı'
+          expanded: false
+          items:
+            - name: 'Microsoft::WRL::Wrappers::HandleTraits ad alanı'
+              href: ../cppcx/wrl/microsoft-wrl-wrappers-handletraits-namespace.md
+            - name: CriticalSectionTraits yapısı
+              href: ../cppcx/wrl/criticalsectiontraits-structure.md
+            - name: EventTraits yapısı
+              href: ../cppcx/wrl/eventtraits-structure.md
+            - name: FileHandleTraits yapısı
+              href: ../cppcx/wrl/filehandletraits-structure.md
+            - name: HANDLENullTraits yapısı
+              href: ../cppcx/wrl/handlenulltraits-structure.md
+            - name: HANDLETraits yapısı
+              href: ../cppcx/wrl/handletraits-structure.md
+            - name: MutexTraits yapısı
+              href: ../cppcx/wrl/mutextraits-structure.md
+            - name: SemaphoreTraits yapısı
+              href: ../cppcx/wrl/semaphoretraits-structure.md
+            - name: SRWLockExclusiveTraits yapısı
+              href: ../cppcx/wrl/srwlockexclusivetraits-structure.md
+            - name: SRWLockSharedTraits yapısı
+              href: ../cppcx/wrl/srwlocksharedtraits-structure.md
+        - name: 'Windows::Foundation ad alanı'
+          expanded: false
+          items:
+            - name: 'Windows::Foundation ad alanı'
+              href: ../cppcx/wrl/windows-foundation-namespace.md
+            - name: ActivateInstance işlevi
+              href: ../cppcx/wrl/activateinstance-function.md
+            - name: GetActivationFactory işlevi
+              href: ../cppcx/wrl/getactivationfactory-function.md
+        - name: IID_PPV_ARGS_Helper işlevi
+          href: ../cppcx/wrl/iid-ppv-args-helper-function.md

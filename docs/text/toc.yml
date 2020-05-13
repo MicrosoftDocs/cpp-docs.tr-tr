@@ -1,0 +1,61 @@
+- name: MSVC’de metin ve dizeler
+  href: ../text/text-and-strings-in-visual-cpp.md
+- name: Unicode ve MBCS
+  expanded: false
+  items:
+    - name: Unicode ve MBCS
+      href: ../text/unicode-and-mbcs.md
+    - name: Uluslararası etkinleştirme
+      href: ../text/international-enabling.md
+    - name: Uluslararası duruma getirme stratejileri
+      href: ../text/internationalization-strategies.md
+    - name: Yerel ayarlar ve kod sayfaları
+      href: ../text/locales-and-code-pages.md
+    - name: Karakter kümesi taşınabilirliğinin yararları
+      href: ../text/benefits-of-character-set-portability.md
+- name: Unicode desteği
+  expanded: false
+  items:
+    - name: Unicode desteği
+      href: ../text/support-for-unicode.md
+    - name: wmain kullanma desteği
+      href: ../text/support-for-using-wmain.md
+    - name: Unicode programlama özeti
+      href: ../text/unicode-programming-summary.md
+- name: Çok baytlı karakter kümesi desteği (MBCS'ler)
+  expanded: false
+  items:
+    - name: Çok baytlı karakter kümesi desteği (MBCS'ler)
+      href: ../text/support-for-multibyte-character-sets-mbcss.md
+    - name: Visual C++'ta MBCS desteği
+      href: ../text/mbcs-support-in-visual-cpp.md
+    - name: MBCS programlama ipuçları
+      expanded: false
+      items:
+        - name: MBCS programlama ipuçları
+          href: ../text/mbcs-programming-tips.md
+        - name: Genel MBCS programlama önerileri
+          href: ../text/general-mbcs-programming-advice.md
+        - name: İşaretçileri artırma ve azaltma
+          href: ../text/incrementing-and-decrementing-pointers.md
+        - name: Bayt endeksleri
+          href: ../text/byte-indices.md
+        - name: Dizedeki son karakter
+          href: ../text/last-character-in-a-string.md
+        - name: Karakter atama
+          href: ../text/character-assignment.md
+        - name: Karakter karşılaştırma
+          href: ../text/character-comparison.md
+        - name: Arabellek taşması
+          href: ../text/buffer-overflow.md
+- name: ANSI Desteği
+  href: ../text/support-for-ansi.md
+- name: tchar.h'de genel metin eşlemeleri
+  expanded: false
+  items:
+    - name: tchar.h'de genel metin eşlemeleri
+      href: ../text/generic-text-mappings-in-tchar-h.md
+    - name: _MBCS kodu ile TCHAR.H veri türlerini kullanma
+      href: ../text/using-tchar-h-data-types-with-mbcs-code.md
+- name: 'Nasıl yapılır: Çeşitli dize türleri arasında dönüştürme'
+  href: ../text/how-to-convert-between-various-string-types.md

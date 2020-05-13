@@ -1,0 +1,366 @@
+- name: C++/CLI ile .NET programlama
+  href: ../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md
+- name: 'İzlenecek yol: CLR’yi hedefleyen bir C++/CLI programı derleme'
+  href: ../dotnet/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md
+- name: C++/CLI görevleri
+  expanded: false
+  items:
+    - name: C++/CLI görevleri
+      href: ../dotnet/cpp-cli-tasks.md
+    - name: 'Nasıl yapılır: Boş CLR projeleri oluşturma'
+      href: ../dotnet/how-to-create-clr-empty-projects.md
+    - name: 'Nasıl yapılır: CLR konsol uygulamaları oluşturma'
+      href: ../dotnet/how-to-create-clr-console-applications-cpp-cli.md
+    - name: 'Nasıl yapılır: C++/CLI üzerinde izleme başvurularını kullanma'
+      href: ../dotnet/how-to-use-tracking-references-in-cpp-cli.md
+    - name: 'Nasıl yapılır: C++/CLI üzerinde dizileri kullanma'
+      href: ../dotnet/how-to-use-arrays-in-cpp-cli.md
+    - name: 'Nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma'
+      href: ../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md
+    - name: Referans türleri için C++ yığın anlamları
+      href: ../dotnet/cpp-stack-semantics-for-reference-types.md
+    - name: Kullanıcı tanımlı işleçler
+      href: ../dotnet/user-defined-operators-cpp-cli.md
+    - name: Kullanıcı tanımlı dönüştürmeler
+      href: ../dotnet/user-defined-conversions-cpp-cli.md
+    - name: initonly
+      href: ../dotnet/initonly-cpp-cli.md
+    - name: 'Nasıl yapılır: Temsilcileri tanımlama ve kullanma'
+      href: ../dotnet/how-to-define-and-use-delegates-cpp-cli.md
+    - name: 'Nasıl yapılır: C++/CLI üzerinde sabit listelerini tanımlama ve kullanma'
+      href: ../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md
+    - name: 'Nasıl yapılır: C++/CLI üzerinde olayları kullanma'
+      href: ../dotnet/how-to-use-events-in-cpp-cli.md
+    - name: 'Nasıl yapılır: Arabirim statik oluşturucusu tanımlama'
+      href: ../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md
+    - name: 'Nasıl yapılır: Yerel derlemelerde geçersiz kılma tanımlayıcılarını bildirme'
+      href: ../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md
+    - name: 'Nasıl yapılır: C++/CLI üzerinde özellikleri kullanma'
+      href: ../dotnet/how-to-use-properties-in-cpp-cli.md
+    - name: 'Nasıl yapılır: C++/CLI üzerinde safe_cast kullanma'
+      href: ../dotnet/how-to-use-safe-cast-in-cpp-cli.md
+    - name: Normal ifadeler
+      href: ../dotnet/regular-expressions-cpp-cli.md
+    - name: Dosya işleme ve G/Ç
+      href: ../dotnet/file-handling-and-i-o-cpp-cli.md
+    - name: Grafik işlemleri
+      href: ../dotnet/graphics-operations-cpp-cli.md
+    - name: Windows işlemleri
+      href: ../dotnet/windows-operations-cpp-cli.md
+    - name: ADO.NET kullanarak veri erişimi
+      href: ../dotnet/data-access-using-adonet-cpp-cli.md
+- name: Yerel ve.NET birlikte çalışabilirliği
+  expanded: false
+  items:
+    - name: Yerel ve.NET birlikte çalışabilirliği
+      href: ../dotnet/native-and-dotnet-interoperability.md
+    - name: Diğer .NET dilleri ile birlikte çalışabilirlik
+      href: ../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md
+    - name: Karışık (yerel ve yönetilen) derlemeler
+      expanded: false
+      items:
+        - name: Karışık (yerel ve yönetilen) derlemeler
+          href: ../dotnet/mixed-native-and-managed-assemblies.md
+        - name: 'Nasıl yapılır: -clr''ye geçiş'
+          href: ../dotnet/how-to-migrate-to-clr.md
+        - name: 'Nasıl yapılır: -clr Kullanarak MFC ve ATL kodu derleme'
+          href: ../dotnet/how-to-compile-mfc-and-atl-code-by-using-clr.md
+        - name: Karışık derlemeleri başlatma
+          href: ../dotnet/initialization-of-mixed-assemblies.md
+        - name: Karışık derlemeler için kitaplık desteği
+          href: ../dotnet/library-support-for-mixed-assemblies.md
+        - name: Birlikte çalışabilirlik için başarım düşünceleri (C++)
+          href: ../dotnet/performance-considerations-for-interop-cpp.md
+        - name: Uygulama etki alanları ve Visual C++
+          href: ../dotnet/application-domains-and-visual-cpp.md
+        - name: Çift dönüştürme (C++)
+          href: ../dotnet/double-thunking-cpp.md
+        - name: CLR kapatmasında /clr ile oluşturulan COM nesnelerini tüketirken özel durumları önleme
+          href: ../dotnet/avoiding-exceptions-on-clr-shutdown-when-consuming-com-objects-built-with-clr.md
+        - name: 'Nasıl yapılır: CRT kitaplık DLL''sinden bağımlılığı kaldırarak kısmen güvenilir uygulama oluşturma'
+          href: ../dotnet/create-a-partially-trusted-application.md
+    - name: MFC içinde Windows Formu kullanıcı denetimi kullanma
+      expanded: false
+      items:
+        - name: MFC içinde Windows Formu kullanıcı denetimi kullanma
+          href: ../dotnet/using-a-windows-form-user-control-in-mfc.md
+        - name: Windows Forms/MFC programlama farkları
+          href: ../dotnet/windows-forms-mfc-programming-differences.md
+        - name: MFC iletişim kutusunda Windows Form kullanıcı denetimi barındırma
+          expanded: false
+          items:
+            - name: MFC iletişim kutusunda Windows Form kullanıcı denetimi barındırma
+              href: ../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md
+            - name: 'Nasıl yapılır: İletişim kutusunda kullanıcı denetimi ve konak oluşturma'
+              href: ../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md
+            - name: 'Nasıl yapılır: Windows Forms ile DDX-DDV veri bağlaması yapma'
+              href: ../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md
+            - name: 'Nasıl yapılır: Yerel C++ sınıflarından havuz Windows Forms olayları'
+              href: ../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md
+        - name: MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma
+          expanded: false
+          items:
+            - name: MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma
+              href: ../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md
+            - name: 'Nasıl yapılır: Kullanıcı denetimi ve konak MDI görünümü oluşturma'
+              href: ../dotnet/how-to-create-the-user-control-and-host-mdi-view.md
+            - name: 'Nasıl yapılır: Windows Forms denetimine yönlendiren komut ekleme'
+              href: ../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md
+            - name: 'Nasıl yapılır: Windows Forms denetiminin çağrı özellikleri ve yöntemleri'
+              href: ../dotnet/how-to-call-properties-and-methods-of-the-windows-forms-control.md
+        - name: MFC iletişim kutusu olarak Windows Formu kullanıcı denetimi barındırma
+          href: ../dotnet/hosting-a-windows-form-user-control-as-an-mfc-dialog-box.md
+    - name: Yönetilen koddan yerel işlevleri çağırma
+      expanded: false
+      items:
+        - name: Yönetilen koddan yerel işlevleri çağırma
+          href: ../dotnet/calling-native-functions-from-managed-code.md
+        - name: C++'ta açık PInvoke kullanma (DllImport özniteliği)
+          expanded: false
+          items:
+            - name: C++'ta açık PInvoke kullanma (DllImport özniteliği)
+              href: ../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md
+            - name: 'Nasıl yapılır: PInvoke kullanarak yönetilen koddan yerel DLL''leri çağırma'
+              href: ../dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke.md
+            - name: 'Nasıl yapılır: PInvoke kullanarak dizeleri hazırlama'
+              href: ../dotnet/how-to-marshal-strings-using-pinvoke.md
+            - name: 'Nasıl yapılır: PInvoke kullanarak yapıları hazırlama'
+              href: ../dotnet/how-to-marshal-structures-using-pinvoke.md
+            - name: 'Nasıl yapılır: PInvoke kullanarak dizileri hazırlama'
+              href: ../dotnet/how-to-marshal-arrays-using-pinvoke.md
+            - name: 'Nasıl yapılır: PInvoke kullanarak işlev işaretçilerini hazırlama'
+              href: ../dotnet/how-to-marshal-function-pointers-using-pinvoke.md
+            - name: 'Nasıl yapılır: PInvoke kullanarak eklenmiş işaretçileri hazırlama'
+              href: ../dotnet/how-to-marshal-embedded-pointers-using-pinvoke.md
+        - name: C++ birlikte çalışabilirliği kullanma (örtük PInvoke)
+          expanded: false
+          items:
+            - name: C++ birlikte çalışabilirliği kullanma (örtük PInvoke)
+              href: ../dotnet/using-cpp-interop-implicit-pinvoke.md
+            - name: 'Nasıl yapılır: C++ birlikte çalışması kullanarak ANSI dizelerini hazırlama'
+              href: ../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md
+            - name: 'Nasıl yapılır: C++ birlikte çalışması kullanarak Unicode dizelerini hazırlama'
+              href: ../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md
+            - name: 'Nasıl yapılır: C++ birlikte çalışması kullanarak COM dizelerini hazırlama'
+              href: ../dotnet/how-to-marshal-com-strings-using-cpp-interop.md
+            - name: 'Nasıl yapılır: C++ birlikte çalışması kullanarak yapıları hazırlama'
+              href: ../dotnet/how-to-marshal-structures-using-cpp-interop.md
+            - name: 'Nasıl yapılır: C++ birlikte çalışması kullanarak dizileri hazırlama'
+              href: ../dotnet/how-to-marshal-arrays-using-cpp-interop.md
+            - name: 'Nasıl yapılır: C++ birlikte çalışmayı kullanarak geri çağrıları ve temsilcileri hazırlama'
+              href: ../dotnet/how-to-marshal-callbacks-and-delegates-by-using-cpp-interop.md
+            - name: 'Nasıl yapılır: C++ birlikte çalışması kullanarak eklenmiş işaretçileri hazırlama'
+              href: ../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md
+            - name: 'Nasıl yapılır: Hazırlama kitaplığını genişletme'
+              href: ../dotnet/how-to-extend-the-marshaling-library.md
+            - name: 'Nasıl yapılır: Bir System::String''deki karakterlere erişme'
+              href: ../dotnet/how-to-access-characters-in-a-system-string.md
+            - name: 'Nasıl yapılır: char * dizesini System::Byte dizisine dönüştürme'
+              href: ../dotnet/how-to-convert-char-star-string-to-system-byte-array.md
+            - name: 'Nasıl yapılır: System::String''i wchar_t* veya char* olarak dönüştürme'
+              href: ../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md
+            - name: 'Nasıl yapılır: System::String''i standart dizeye dönüştürme'
+              href: ../dotnet/how-to-convert-system-string-to-standard-string.md
+            - name: 'Nasıl yapılır: Standart dizeyi System::String olarak dönüştürme'
+              href: ../dotnet/how-to-convert-standard-string-to-system-string.md
+            - name: 'Nasıl yapılır: Bayt dizisine bir işaretçi alma'
+              href: ../dotnet/how-to-obtain-a-pointer-to-byte-array.md
+            - name: 'Nasıl yapılır: Yönetilmeyen kaynakları bayt dizisine yükleme'
+              href: ../dotnet/how-to-load-unmanaged-resources-into-a-byte-array.md
+            - name: 'Nasıl yapılır: Yerel işlevde başvuru sınıfını değiştirme'
+              href: ../dotnet/how-to-modify-reference-class-in-a-native-function.md
+            - name: 'Nasıl yapılır: Resmin yerel mi yoksa CLR mi olduğunu belirleme'
+              href: ../dotnet/how-to-determine-if-an-image-is-native-or-clr.md
+            - name: 'Nasıl yapılır: Yerel DLL''yi genel derleme önbelleğine ekleme'
+              href: ../dotnet/how-to-add-native-dll-to-global-assembly-cache.md
+            - name: 'Nasıl yapılır: Yerel tür içinde değer türüne başvuruyu tutma'
+              href: ../dotnet/how-to-hold-reference-to-value-type-in-native-type.md
+            - name: 'Nasıl yapılır: Yönetilmeyen bellekte nesne başvurusunu tutma'
+              href: ../dotnet/how-to-hold-object-reference-in-unmanaged-memory.md
+            - name: 'Nasıl yapılır: -clr derlemesini algılama'
+              href: ../dotnet/how-to-detect-clr-compilation.md
+            - name: 'Nasıl yapılır: System::Guid ve GUID arasında dönüştürme'
+              href: ../dotnet/how-to-convert-between-system-guid-and-guid.md
+            - name: 'Nasıl yapılır: Bir out parametresi belirtme'
+              href: ../dotnet/how-to-specify-an-out-parameter.md
+            - name: 'Nasıl yapılır: -clr derlemesinde yerel tür kullanma'
+              href: ../dotnet/how-to-use-a-native-type-in-a-clr-compilation.md
+            - name: 'Nasıl yapılır: Yerel türlerde işleyicileri bildirme'
+              href: ../dotnet/how-to-declare-handles-in-native-types.md
+            - name: 'Nasıl yapılır: C# tarafından kullanılması için yerel sınıfı sarmalama'
+              href: ../dotnet/how-to-wrap-native-class-for-use-by-csharp.md
+- name: Saf ve doğrulanabilen kod
+  expanded: false
+  items:
+    - name: Saf ve doğrulanabilen kod
+      href: ../dotnet/pure-and-verifiable-code-cpp-cli.md
+    - name: 'Nasıl yapılır: Doğrulanabilir C++ projeleri oluşturma'
+      href: ../dotnet/how-to-create-verifiable-cpp-projects-cpp-cli.md
+    - name: SQL Server ile doğrulanabilen bütünleştirilmiş kodlar kullanma
+      href: ../dotnet/using-verifiable-assemblies-with-sql-server-cpp-cli.md
+    - name: Projeleri karışık moddan saf ara dile dönüştürme
+      href: ../dotnet/converting-projects-from-mixed-mode-to-pure-intermediate-language.md
+- name: Serileştirme
+  href: ../dotnet/serialization-cpp-cli.md
+- name: Arkadaş derlemeler (C++)
+  href: ../dotnet/friend-assemblies-cpp.md
+- name: Yönetilen türler
+  href: ../dotnet/managed-types-cpp-cli.md
+- name: Yansıma
+  href: ../dotnet/reflection-cpp-cli.md
+- name: Tanımlayıcı ad bütünleştirilmiş kodları (derleme imzalama)
+  href: ../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md
+- name: Hata ayıklama sınıfı
+  href: ../dotnet/debug-class-cpp-cli.md
+- name: STL/CLR kitaplık başvurusu
+  expanded: false
+  items:
+    - name: STL/CLR kitaplık başvurusu
+      href: ../dotnet/stl-clr-library-reference.md
+    - name: cliext ad alanı
+      href: ../dotnet/cliext-namespace.md
+    - name: STL/CLR kapsayıcıları
+      href: ../dotnet/stl-clr-containers.md
+    - name: STL/CLR kapsayıcı öğeleri için gereksinimler
+      href: ../dotnet/requirements-for-stl-clr-container-elements.md
+    - name: 'Nasıl yapılır: .NET koleksiyonundan STL/CLR kapsayıcısına dönüştürme'
+      href: ../dotnet/how-to-convert-from-a-dotnet-collection-to-a-stl-clr-container.md
+    - name: 'Nasıl yapılır: STL/CLR kapsayıcısından .NET koleksiyonuna dönüştürme'
+      href: ../dotnet/how-to-convert-from-a-stl-clr-container-to-a-dotnet-collection.md
+    - name: 'Nasıl yapılır: Derlemeden STL/CLR kapsayıcısı sunma'
+      href: ../dotnet/how-to-expose-an-stl-clr-container-from-an-assembly.md
+    - name: 'for each, in'
+      href: ../dotnet/for-each-in.md
+    - name: bağdaştırıcı (STL/CLR)
+      href: ../dotnet/adapter-stl-clr.md
+    - name: algoritma (STL/CLR)
+      href: ../dotnet/algorithm-stl-clr.md
+    - name: sıradan ayır (STL/CLR)
+      href: ../dotnet/deque-stl-clr.md
+    - name: işlevsel (STL/CLR)
+      href: ../dotnet/functional-stl-clr.md
+    - name: hash_map (STL/CLR)
+      href: ../dotnet/hash-map-stl-clr.md
+    - name: hash_multimap (STL/CLR)
+      href: ../dotnet/hash-multimap-stl-clr.md
+    - name: hash_multiset (STL/CLR)
+      href: ../dotnet/hash-multiset-stl-clr.md
+    - name: hash_set (STL/CLR)
+      href: ../dotnet/hash-set-stl-clr.md
+    - name: liste (STL/CLR)
+      href: ../dotnet/list-stl-clr.md
+    - name: eşle (STL/CLR)
+      href: ../dotnet/map-stl-clr.md
+    - name: çoklu eşleme (STL/CLR)
+      href: ../dotnet/multimap-stl-clr.md
+    - name: çoklu set (STL/CLR)
+      href: ../dotnet/multiset-stl-clr.md
+    - name: sayısal (STL/CLR)
+      href: ../dotnet/numeric-stl-clr.md
+    - name: priority_queue (STL/CLR)
+      href: ../dotnet/priority-queue-stl-clr.md
+    - name: sıraya al (STL/CLR)
+      href: ../dotnet/queue-stl-clr.md
+    - name: set (STL/CLR)
+      href: ../dotnet/set-stl-clr.md
+    - name: yığın (STL/CLR)
+      href: ../dotnet/stack-stl-clr.md
+    - name: yardımcı program (STL/CLR)
+      href: ../dotnet/utility-stl-clr.md
+    - name: vektör (STL/CLR)
+      href: ../dotnet/vector-stl-clr.md
+- name: C++ destek kitaplığı
+  expanded: false
+  items:
+    - name: C++ destek kitaplığı
+      href: ../dotnet/cpp-support-library.md
+    - name: C++'da sıralamaya genel bakış
+      expanded: false
+      items:
+        - name: C++'da sıralamaya genel bakış
+          href: ../dotnet/overview-of-marshaling-in-cpp.md
+        - name: marshal_as
+          href: ../dotnet/marshal-as.md
+        - name: marshal_context sınıfı
+          href: ../dotnet/marshal-context-class.md
+    - name: msclr ad alanı
+      href: ../dotnet/msclr-namespace.md
+    - name: Kaynak yönetimi sınıfları
+      expanded: false
+      items:
+        - name: Kaynak yönetimi sınıfları
+          href: ../dotnet/resource-management-classes.md
+        - name: auto_gcroot
+          expanded: false
+          items:
+            - name: auto_gcroot
+              href: ../dotnet/auto-gcroot.md
+            - name: auto_gcroot sınıfı
+              href: ../dotnet/auto-gcroot-class.md
+            - name: swap işlevi (auto_gcroot)
+              href: ../dotnet/swap-function-auto-gcroot.md
+        - name: auto_handle
+          href: ../dotnet/auto-handle.md
+          items:
+            - name: auto_handle
+              href: ../dotnet/auto-handle.md
+            - name: auto_handle sınıfı
+              href: ../dotnet/auto-handle-class.md
+            - name: swap işlevi (auto_handle)
+              href: ../dotnet/swap-function-auto-handle.md
+    - name: Eşitleme (lock sınıfı)
+      expanded: false
+      items:
+        - name: Eşitleme (lock sınıfı)
+          href: ../dotnet/synchronization-lock-class.md
+        - name: lock
+          expanded: false
+          items:
+            - name: lock
+              href: ../dotnet/lock.md
+            - name: lock sınıfı
+              href: ../dotnet/lock-class.md
+            - name: lock_when Numaralandırması
+              href: ../dotnet/lock-when-enum.md
+    - name: Belirli bir uygulama etki alanında işlevleri çağırma
+      expanded: false
+      items:
+        - name: Belirli bir uygulama etki alanında işlevleri çağırma
+          href: ../dotnet/calling-functions-in-a-specific-application-domain.md
+        - name: call_in_appdomain İşlevi
+          href: ../dotnet/call-in-appdomain-function.md
+    - name: 'com::ptr'
+      expanded: false
+      items:
+        - name: 'com::ptr'
+          href: ../dotnet/com-ptr.md
+        - name: 'com::ptr sınıfı'
+          href: ../dotnet/com-ptr-class.md
+- name: C++/CLI Özel Durumları
+  expanded: false
+  items:
+    - name: C++/CLI Özel Durumları
+      href: ../dotnet/exceptions-in-cpp-cli.md
+    - name: Yönetilen özel durumları kullanmaya ilişkin temel kavramlar
+      href: ../dotnet/basic-concepts-in-using-managed-exceptions.md
+    - name: '-clr altında özel durum işleme farkları'
+      href: ../dotnet/differences-in-exception-handling-behavior-under-clr.md
+    - name: finally
+      href: ../dotnet/finally.md
+    - name: 'Nasıl yapılır: MSIL''den oluşan yerel kodda catch özel durumları'
+      href: ../dotnet/how-to-catch-exceptions-in-native-code-thrown-from-msil.md
+    - name: 'Nasıl yapılır: Genel bir özel durum işleyicisi tanımlama ve yükleme'
+      href: ../dotnet/how-to-define-and-install-a-global-exception-handler.md
+- name: Kutulama
+  expanded: false
+  items:
+    - name: Kutulama
+      href: ../dotnet/boxing-cpp-cli.md
+    - name: 'Nasıl yapılır: Açık şekilde istek paketleme'
+      href: ../dotnet/how-to-explicitly-request-boxing.md
+    - name: 'Nasıl yapılır: Değer türleri oluşturmak için gcnew kullanma ve örtük kutulamayı kullanma'
+      href: ../dotnet/how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing.md
+    - name: 'Nasıl yapılır: Kutudan çıkarma'
+      href: ../dotnet/how-to-unbox.md
+    - name: Standart dönüştürmeler ve örtük kutulama
+      href: ../dotnet/standard-conversions-and-implicit-boxing.md

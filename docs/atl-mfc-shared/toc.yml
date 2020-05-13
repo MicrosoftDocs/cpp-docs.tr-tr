@@ -1,0 +1,97 @@
+- name: ATL/MFC paylaşılan sınıfları
+  href: ../atl-mfc-shared/atl-mfc-shared-classes.md
+- name: ATL ve MFC kavramları
+  expanded: true
+  items:
+    - name: ATL ve MFC kavramları
+      href: ../atl-mfc-shared/atl-mfc-concepts.md
+    - name: Tarih ve Saat
+      expanded: false
+      items:
+        - name: Tarih ve Saat verileri
+          href: ../atl-mfc-shared/date-and-time.md
+        - name: TARİH türü
+          href: ../atl-mfc-shared/date-type.md
+    - name: Dizeler (ATL-MFC)
+      expanded: false
+      items:
+        - name: Dizeler (ATL-MFC)
+          href: ../atl-mfc-shared/strings-atl-mfc.md
+        - name: CStringT kullanma
+          expanded: false
+          items:
+            - name: CStringT kullanma
+              href: ../atl-mfc-shared/using-cstringt.md
+            - name: CStringT ile bellek yönetimi
+              expanded: false
+              items:
+                - name: CStringT ile bellek yönetimi
+                  href: ../atl-mfc-shared/memory-management-with-cstringt.md
+                - name: Özel dize yöneticisini uygulama (temel yöntem)
+                  href: ../atl-mfc-shared/implementation-of-a-custom-string-manager-basic-method.md
+                - name: Yığın çekişmesini engelleme
+                  href: ../atl-mfc-shared/avoidance-of-heap-contention.md
+                - name: Özel dize yöneticisini uygulama (gelişmiş yöntem)
+                  href: ../atl-mfc-shared/implementation-of-a-custom-string-manager-advanced-method.md
+                - name: 'CFixedStringT: Özel dize yöneticisi örneği'
+                  href: ../atl-mfc-shared/cfixedstringt-example-of-a-custom-string-manager.md
+            - name: CStringT kullanarak dize sınıflarını dışarı aktarma
+              href: ../atl-mfc-shared/exporting-string-classes-using-cstringt.md
+        - name: CString kullanma
+          expanded: false
+          items:
+            - name: CString kullanma
+              href: ../atl-mfc-shared/using-cstring.md
+            - name: Temel CString işlemleri
+              href: ../atl-mfc-shared/basic-cstring-operations.md
+            - name: Dize veri yönetimi
+              href: ../atl-mfc-shared/string-data-management.md
+            - name: CString semantiği
+              href: ../atl-mfc-shared/cstring-semantics.md
+            - name: C stili dizelerle ilgili CString işlemleri
+              href: ../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md
+            - name: BSTR için bellek ayırma ve serbest bırakma
+              href: ../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md
+            - name: CString özel durum temizleme
+              href: ../atl-mfc-shared/cstring-exception-cleanup.md
+            - name: CString bağımsız değişken geçirme
+              href: ../atl-mfc-shared/cstring-argument-passing.md
+            - name: Unicode ve çok baytlı karakter kümesi (MBCS) desteği
+              href: ../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md
+- name: Başvuru
+  expanded: false
+  items:
+    - name: CSize sınıfı
+      href: ../atl-mfc-shared/reference/csize-class.md
+    - name: CTimeSpan sınıfı
+      href: ../atl-mfc-shared/reference/ctimespan-class.md
+    - name: COleDateTime sınıfı
+      href: ../atl-mfc-shared/reference/coledatetime-class.md
+    - name: CRect sınıfı
+      href: ../atl-mfc-shared/reference/crect-class.md
+    - name: MFC ve ATL tarafından Paylaşılan Sınıflar
+      href: ../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md
+    - name: CPoint sınıfı
+      href: ../atl-mfc-shared/reference/cpoint-class.md
+    - name: CStringT sınıfı
+      href: ../atl-mfc-shared/reference/cstringt-class.md
+    - name: COleDateTimeSpan sınıfı
+      href: ../atl-mfc-shared/reference/coledatetimespan-class.md
+    - name: IAtlStringMgr sınıfı
+      href: ../atl-mfc-shared/reference/iatlstringmgr-class.md
+    - name: CFixedStringT sınıfı
+      href: ../atl-mfc-shared/reference/cfixedstringt-class.md
+    - name: CStrBufT sınıfı
+      href: ../atl-mfc-shared/reference/cstrbuft-class.md
+    - name: CFileTimeSpan sınıfı
+      href: ../atl-mfc-shared/reference/cfiletimespan-class.md
+    - name: CImage sınıfı
+      href: ../atl-mfc-shared/reference/cimage-class.md
+    - name: CStringData sınıfı
+      href: ../atl-mfc-shared/reference/cstringdata-class.md
+    - name: CFileTime sınıfı
+      href: ../atl-mfc-shared/reference/cfiletime-class.md
+    - name: CSimpleStringT sınıfı
+      href: ../atl-mfc-shared/reference/csimplestringt-class.md
+    - name: CTime sınıfı
+      href: ../atl-mfc-shared/reference/ctime-class.md
