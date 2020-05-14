@@ -22,8 +22,8 @@ ms.openlocfilehash: d43a7a64b5a74f00833093ae8999d73edd7f5753
 ms.sourcegitcommit: c4cf8976939dd0e13e25b82930221323ba6f15d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83204158"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83389707"
 ---
 # <a name="switch-statement-c"></a>`switch`ifade (C++)
 
@@ -181,5 +181,5 @@ Microsoft C++, __`case`__ bir deyimindeki değer sayısını sınırlamaz __`swi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Seçim deyimleri](../cpp/selection-statements-cpp.md)<br/>
+[Seçim Deyimleri](../cpp/selection-statements-cpp.md)<br/>
 [Anahtar sözcükler](../cpp/keywords-cpp.md)
