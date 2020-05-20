@@ -68,17 +68,17 @@ Projenize Parser. l adlı bir dosya eklemek istediğinizi varsayın. Yürütüle
 
 İlk olarak, projeye Parser. l ve Parser. c ' yi ekleyin. Dosyalar henüz yoksa dosyalara bir başvuru ekleyin. Parser. l için özel bir derleme aracı oluşturun ve **Commands** özelliğine şunu girin:
 
-> **% sözcük temelli çözümleyici (FullPath). \%(Dosya adı). c**
+> **% sözcük temelli çözümleyici (FullPath). \% (Dosya adı). c**
 
 Bu komut, Parser. l üzerinde sözlü çözümleyici 'yi çalıştırır ve Parser. c çıktılarını proje dizinine çıkarır.
 
 **Çıktılar** özelliğinde, aşağıdakileri girin:
 
-> **. \%(Dosya adı). c**
+> **.\% (Dosya adı). c**
 
 Projeyi derlediğinizde, derleme sistemi parser. l ve Parser. c zaman damgalarını karşılaştırır. Parser. l daha yeni bir özelliktir veya Parser. c yoksa, derleme sistemi, Parser. c ' yi güncel hale getirmek için **komut satırı** özelliğinin değerini çalıştırır. Parser. c aynı zamanda projeye eklendiğinden, derleme sistemi parser. c ' yi derler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleme komutları ve özellikleri için ortak makrolar](reference/common-macros-for-build-commands-and-properties.md)<br>
+[Derleme komutları ve özellikleri için genel makrolar](reference/common-macros-for-build-commands-and-properties.md)<br>
 [Derleme Özelleştirmeleri Sorunlarını Giderme](troubleshooting-build-customizations.md)

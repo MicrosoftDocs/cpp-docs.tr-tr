@@ -1,29 +1,29 @@
 ---
-title: C++'ya tekrar hoş geldiniz - Modern C++
-description: Modern C++'daki yeni programlama deyimlerini ve bunların mantığını açıklar.
-ms.date: 01/10/2020
+title: C++ ' a geri hoş geldiniz-modern C++
+description: Modern C++ ve bu kişilerin korsiyonda yeni programlama ıoms 'leri açıklar.
+ms.date: 05/17/2020
 ms.topic: conceptual
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-ms.openlocfilehash: 7d0fcb623162713b845107bbf00669af7ae5ca98
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 76ac17e71368cdeee669b98505778838ef0dfee7
+ms.sourcegitcommit: d4da3693f83a24f840e320e35c24a4a07cae68e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369501"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83550803"
 ---
-# <a name="welcome-back-to-c---modern-c"></a>C++'ya tekrar hoş geldiniz - Modern C++
+# <a name="welcome-back-to-c---modern-c"></a>C++ ' a geri hoş geldiniz-modern C++
 
-Kuruluşundan bu yana, C++ dünyada en yaygın olarak kullanılan programlama dillerinden biri haline gelmiştir. İyi yazılmış C++ programları hızlı ve verimlidir. Dil diğer dillere göre daha esnektir: En yüksek soyutlama düzeylerinde ve silikon seviyesinde çalışabilir. C++, son derece optimize edilmiş standart kitaplıklar sağlar. Hızı en üst düzeye çıkarmak ve bellek gereksinimlerini en aza indirmek için düşük seviyeli donanım özelliklerine erişim sağlar. C++'ı kullanarak çok çeşitli uygulamalar oluşturabilirsiniz. Oyunlar, cihaz sürücüleri ve yüksek performanslı bilimsel yazılımlar. Gömülü programlar. Windows istemci uygulamaları. Diğer programlama dilleri için kitaplıklar ve derleyiciler bile C++'da yazılır.
+Oluşturma sonrasında, C++ dünyanın en yaygın olarak kullanılan programlama dillerinden biri haline geldi. İyi yazılmış C++ programları hızlı ve verimlidir. Dil diğer dillerden daha esnektir: Bu, en yüksek soyutlama düzeylerinde ve Silicon 'in düzeyinde çalışabilir. C++, yüksek oranda iyileştirilmiş standart kitaplıklar sağlar. Düşük düzeyli donanım özelliklerine erişim sağlar ve hızı en üst düzeye çıkarabilir ve bellek gereksinimlerini en aza indirir. C++ kullanarak çok çeşitli uygulamalar oluşturabilirsiniz. Oyunlar, cihaz sürücüleri ve yüksek performanslı bilimsel yazılımlar. Katıştırılmış programlar. Windows istemci uygulamaları. Diğer programlama dillerinin kitaplıkları ve derleyicileri de C++ dilinde yazılmıştır.
 
-C++ için orijinal gereksinimlerden biri C diliyle geriye dönük uyumluluktu. Sonuç olarak, C++, ham işaretçiler, diziler, null-sonlandırılan karakter dizeleri ve diğer özelliklerle C stili programlamaya her zaman izin vermiştir. Bunlar büyük performans sağlayabilir, ancak aynı zamanda hata ve karmaşıklık yumurtlayabilir. C++'ın evrimi, C tarzı deyimlerin kullanılması ihtiyacını büyük ölçüde azaltan özellikleri vurgulamıştır. Eski C programlama tesisleri ihtiyacınız olduğunda vardır, ancak modern C++ kodu ile onlara daha az ve daha az ihtiyaç duymalısınız. Modern C++ kodu daha basit, daha güvenli, daha zarif ve her zamanki gibi hızlıdır.
+C++ için özgün gereksinimlerinden biri C diliyle geriye dönük uyumlulukta. Sonuç olarak, C++ her zaman ham işaretçiler, diziler, null ile sonlandırılmış karakter dizeleri ve diğer özelliklerle C stili programlamaya izin verilir. Harika performansı etkinleştirebilirler, ancak Ayrıca hata ve karmaşıklık oluşturabilir. C++ gelişiminde, C stili ıoms kullanma ihtiyacını büyük ölçüde azaltan vurgulanmış özellikler vardır. Eski C programlama olanakları bunlara ihtiyacınız olduğunda, ancak modern C++ kodu ile daha az ve daha az ihtiyacınız olması gerekir. Modern C++ kodu daha basit, daha güvenli, daha zarif ve yine de her zamankinden daha hızlı.
 
-Aşağıdaki bölümlerde modern C++'ın ana özelliklerihakkında genel bir bakış sağlay.) Aksi belirtilmedikçe, burada listelenen özellikler C++11 ve sonraki yerlerde kullanılabilir. Microsoft C++ derleyicisinde, [/std](../build/reference/std-specify-language-standard-version.md) derleyiciseçeneğini, projeniz için hangi standardın kullanılacağını belirtmek için ayarlayabilirsiniz.
+Aşağıdaki bölümlerde, modern C++ ' ın ana özelliklerine genel bir bakış sağlanmaktadır. Aksi belirtilmedikçe, burada listelenen özellikler C++ 11 ve üzeri sürümlerde kullanılabilir. Microsoft C++ derleyicisinde, [`/std`](../build/reference/std-specify-language-standard-version.md) projeniz için hangi standart sürümünün kullanılacağını belirtmek için derleyici seçeneğini ayarlayabilirsiniz.
 
 ## <a name="resources-and-smart-pointers"></a>Kaynaklar ve akıllı işaretçiler
 
-C tarzı programlama hataların önemli sınıflarından biri *bellek sızıntısı*. Sızıntılar genellikle **yeni**ile ayrılan bellek için **sil** arama hatası neden olur. Modern C++ *kaynak edinme* ilkesinin başlangıç (RAII) olduğunu vurgular. Fikir basit. Kaynaklar (yığın bellek, dosya tutamaçları, soketleri vb.) bir nesneye *ait* olmalıdır. Bu nesne, oluşturucuda yeni ayrılan kaynağı oluşturur veya alır ve onu yıkıcısında siler. RAII ilkesi, sahip olan nesne kapsam dışına çıktığında tüm kaynakların düzgün bir şekilde işletim sistemine döndürülmesini garanti eder.
+C stili programlamada önemli hata sınıflarından biri *bellek sızıntısı*. Sızıntı genellikle **`delete`** ile ayrılmış bellek için çağrı hatası nedeniyle oluşur **`new`** . Modern C++, *kaynak alımı başlatma* (çii) ilkesini vurgular. Fikir basittir. Kaynaklar (yığın belleği, dosya tanıtıcıları, yuvalar vb.) bir nesneye *ait* olmalıdır. Bu nesne, Oluşturucu içinde yeni ayrılmış kaynağı oluşturur veya alır ve yıkıcısında siler. Aii 'nin prensibi, sahip olduğu nesne kapsam dışına geçtiğinde tüm kaynakların işletim sistemine doğru bir şekilde döndürüldüğünden emin garanti eder.
 
-RAII ilkelerinin kolay benimsenmesini desteklemek için, C++ Standart Kitaplığı üç akıllı işaretçi türü sağlar: [std::unique_ptr](../standard-library/unique-ptr-class.md), [std::shared_ptr](../standard-library/shared-ptr-class.md), ve [std::weak_ptr](../standard-library/weak-ptr-class.md). Akıllı işaretçi, sahip olduğu belleğin tahsisini ve silinmesini işler. Aşağıdaki örnekte, bir dizi üyesi olan bir sınıf, çağrıdaki `make_unique()`yığına ayrılmıştır. **Yeni** ve **silme** çağrıları `unique_ptr` sınıf tarafından kapsüllenir. Bir `widget` nesne kapsam dışına çıktığında, unique_ptr yıkıcı çağrılacak ve dizi için ayrılan belleği serbest bırakacaktır.  
+AII ilkelerinin kolay benimsenmesini desteklemek için, C++ standart kitaplığı üç akıllı işaretçi türü sağlar: [`std::unique_ptr`](../standard-library/unique-ptr-class.md) , [`std::shared_ptr`](../standard-library/shared-ptr-class.md) ve [`std::weak_ptr`](../standard-library/weak-ptr-class.md) . Akıllı işaretçi, sahip olduğu belleği ayırmayı ve silmeyi işler. Aşağıdaki örnek, çağrısı içindeki yığında ayrılan bir dizi üyesine sahip bir sınıfı gösterir `make_unique()` . **`new`** Ve çağrıları **`delete`** sınıfı tarafından kapsüllenir `unique_ptr` . Bir `widget` nesne kapsam dışına geçtiğinde unique_ptr yıkıcısı çağrılır ve dizi için ayrılan belleği serbest bırakılır.  
 
 ```cpp
 #include <memory>
@@ -46,22 +46,22 @@ void functionUsingWidget() {
 
 ```
 
-Mümkün olduğunda, yığın bellek ayırırken akıllı bir işaretçi kullanın. Yeni ve silme işleçlerini açıkça kullanmanız gerekiyorsa, RAII ilkesine uyun. Daha fazla bilgi için [Object yaşam süresi ve kaynak yönetimi (RAII)](object-lifetime-and-resource-management-modern-cpp.md)konusuna bakın.
+Mümkün olduğunda, yığın belleği ayrılırken akıllı bir işaretçi kullanın. New ve DELETE işleçlerini açık bir şekilde kullanmanız gerekiyorsa, RAYıı 'nin ilkesini izleyin. Daha fazla bilgi için bkz. [nesne yaşam süresi ve kaynak yönetimi (ÇII)](object-lifetime-and-resource-management-modern-cpp.md).
 
-## <a name="stdstring-and-stdstring_view"></a>std::dize ve std::string_view
+## <a name="stdstring-and-stdstring_view"></a>`std::string` ve `std::string_view`
 
-C stili dizeleri hataların başka bir önemli kaynağıdır. [Std:string ve std::wstring](../standard-library/basic-string-class.md)kullanarak, C stili dizeleri ile ilişkili hemen hemen tüm hataları ortadan kaldırabilirsiniz. Ayrıca arama, ek, ön bekleme ve benzeri için üye işlevlerin yararına kazanırsınız. Her ikisi de hız için son derece optimize edin. Bir dizeyi yalnızca salt okunur erişim gerektiren bir işleve aktarırken, C++17'de daha fazla performans avantajı için [std::string_view](../standard-library/basic-string-view-class.md) kullanabilirsiniz.
+C stili dizeler, başka bir büyük hata kaynağıdır. [ `std::string` Ve `std::wstring` ](../standard-library/basic-string-class.md)kullanarak, C stili dizeleriyle ilişkili tüm hataları ortadan kaldırabilirsiniz. Ayrıca, arama, ekleme, ön bekleyen gibi üye işlevlerinin avantajına sahip olursunuz. Her ikisi de hız için en iyi duruma getirilmiştir. Bir dizeyi yalnızca salt okuma erişimi gerektiren bir işleve geçirirken, C++ 17 ' de [`std::string_view`](../standard-library/basic-string-view-class.md) daha fazla performans avantajı için kullanabilirsiniz.
 
-## <a name="stdvector-and-other-standard-library-containers"></a>std::vektör ve diğer Standart Kütüphane kapsayıcıları
+## <a name="stdvector-and-other-standard-library-containers"></a>`std::vector`ve diğer standart kitaplık kapsayıcıları
 
-Standart Kütüphane kapsayıcılarının tümü RAII ilkesine uyar. Öğelerin güvenli geçiş için yineleyiciler sağlar. Ve performans için son derece optimize edilmiş ve doğruluk açısından kapsamlı bir şekilde test edilmiştir. Bu kapsayıcıları kullanarak, özel veri yapılarında tanıtılan hata veya verimsizlikleri ortadan kaldırırsınız. Ham diziler yerine C++'da sıralı kapsayıcı olarak [vektörü](../standard-library/vector-class.md) kullanın.
+Standart Kitaplık kapsayıcıları tüm Rat ilkesini izler. Bunlar, öğelerin güvenli çapraz geçişi için yineleyiciler sağlar. Ayrıca, performans için yüksek oranda iyileştirilmiştir ve doğruluk açısından tamamen test edilmiştir. Bu kapsayıcıları kullanarak, özel veri yapılarında ortaya çıkabilecek hatalara veya verimsizlikleri potansiyelini ortadan kaldırabilirsiniz. Ham diziler yerine [`vector`](../standard-library/vector-class.md) C++ ' da sıralı kapsayıcı olarak kullanın.
 
 ```cpp
 vector<string> apples;
 apples.push_back("Granny Smith");
 ```
 
-Varsayılan bağdaştırıcı kapsayıcı olarak [haritayı](../standard-library/map-class.md) (değil) `unordered_map`kullanın. Dejenere ve [çok](../standard-library/multiset-class.md) durumlar için [set,](../standard-library/set-class.md) [çok eşlilik](../standard-library/multimap-class.md)ve çoklu set kullanın.
+[`map`](../standard-library/map-class.md) `unordered_map` Varsayılan ilişkilendirilebilir kapsayıcı olarak (değil) kullanın. [`set`](../standard-library/set-class.md), [`multimap`](../standard-library/multimap-class.md) ,, Ve [`multiset`](../standard-library/multiset-class.md) Çoklu durumlar için, ve kullanın.
 
 ```cpp
 map<string, string> apple_color;
@@ -69,31 +69,31 @@ map<string, string> apple_color;
 apple_color["Granny Smith"] = "Green";
 ```
 
-Performans optimizasyonu gerektiğinde şunları kullanmayı düşünün:
+Performans iyileştirmesi gerektiğinde şunu kullanmayı göz önünde bulundurun:
 
-- Katıştırma işleminde dizi [türü,](../standard-library/array-class-stl.md) örneğin bir sınıf üyesi olarak önemlidir.
+- [`array`](../standard-library/array-class-stl.md)Eklenirken tür, örneğin bir sınıf üyesi olarak önemlidir.
 
-- [unordered_map](../standard-library/unordered-map-class.md)gibi sırasız bağdaştırıcı kaplar. Bunlar daha düşük eleman başına ek yükü ve sabit zamanlı arama var, ancak doğru ve verimli kullanımı daha zor olabilir.
+- Gibi sırasız ilişkilendirilebilir kapsayıcılar [`unordered_map`](../standard-library/unordered-map-class.md) . Bunlar, öğe başına ek yüke ve sabit zamanlı aramaya sahiptir, ancak doğru ve verimli bir şekilde kullanılması daha zor olabilir.
 
-- Sıralanmış. `vector` Daha fazla bilgi için [Algoritmalar'a](../cpp/algorithms-modern-cpp.md)bakın.
+- Sıralanır `vector` . Daha fazla bilgi için bkz. [algoritmalar](../cpp/algorithms-modern-cpp.md).
 
-C tarzı diziler kullanmayın. Verilere doğrudan erişimi gereken eski API'ler için `f(vec.data(), vec.size());` bunun yerine erişim yöntemleri kullanın. Kapsayıcılar hakkında daha fazla bilgi için [C++ Standart Kitaplık Kapsayıcıları'na](../standard-library/stl-containers.md)bakın.
+C stili dizileri kullanmayın. Verilere doğrudan erişmesi gereken eski API 'Ler için, bunun yerine erişimci yöntemlerini kullanın `f(vec.data(), vec.size());` . Kapsayıcılar hakkında daha fazla bilgi için bkz. [C++ standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 
 ## <a name="standard-library-algorithms"></a>Standart Kitaplık algoritmaları
 
-Programınız için özel bir algoritma yazmanız gerektiğini varsaymadan önce, önce C++ Standart Kitaplığı [algoritmalarını](../standard-library/algorithm.md)gözden geçirin. Standart Kitaplık, arama, sıralama, filtreleme ve rasgeleleştirme gibi birçok yaygın işlem için sürekli büyüyen bir algoritma yelpazesi içerir. Matematik kütüphanesi geniştir. C++17'den başlayarak birçok algoritmanın paralel sürümleri sağlanır.
+Programınız için özel bir algoritma yazmanız gerektiğini varsaymadan önce, önce C++ Standart Kitaplığı [algoritmalarını](../standard-library/algorithm.md)gözden geçirin. Standart Kitaplık, arama, sıralama, filtreleme ve rastgele hale getirme gibi yaygın birçok işlem için sürekli büyüyen bir algoritma içerir. Matematik kitaplığı kapsamlıdır. C++ 17 ' den başlayarak birçok algoritmaların paralel sürümleri sağlanır.
 
 Aşağıda bazı önemli örnekler verilmiştir:
 
-- **for_each,** varsayılan geçiş algoritması (döngüler için aralık tabanlı ile birlikte).
+- `for_each`, varsayılan geçiş algoritması (Aralık tabanlı `for` döngülerle birlikte).
 
-- **dönüştürme**, konteyner elemanlarının yerinde olmayan modifikasyonu için
+- `transform`, kapsayıcı öğelerinin yerinde değişiklik için
 
-- **find_if,** varsayılan arama algoritması.
+- `find_if`, varsayılan arama algoritması.
 
-- **sıralama,** **lower_bound**ve diğer varsayılan sıralama ve arama algoritmaları.
+- `sort`, `lower_bound` , ve diğer varsayılan sıralama ve arama algoritmalarından.
 
-Bir karşılaştırıcı yazmak için, **<** sıkı kullanın ve zaman zaman *lambdas adlı* kullanın.
+Bir karşılaştırıcı yazmak için, katı kullanın **`<`** ve olanak varsa *adlandırılmış lambdaları* kullanın.
 
 ```cpp
 auto comp = [](const widget& w1, const widget& w2)
@@ -104,18 +104,18 @@ sort( v.begin(), v.end(), comp );
 auto i = lower_bound( v.begin(), v.end(), comp );
 ```
 
-## <a name="auto-instead-of-explicit-type-names"></a>açık tür adları yerine otomatik
+## <a name="auto-instead-of-explicit-type-names"></a>`auto`Açık tür adları yerine
 
-C++11 değişken, işlev ve şablon bildirimlerinde kullanılmak üzere [otomatik](auto-cpp.md) anahtar kelimeyi tanıttı. **otomatik,** derleyiciye nesnenin türünü anlamasını söyler, böylece açıkça yazmanız gerekmez. **otomatik** özellikle çıkarılan tür iç içe bir şablon olduğunda yararlıdır:
+C++ 11, [`auto`](auto-cpp.md) değişken, işlev ve şablon bildirimlerinde kullanım için anahtar sözcüğünü kullanıma sunmuştur. **`auto`** derleyiciye nesne türünü vermesini söyler, böylece açıkça yazmanız gerekmez. **`auto`**, çıkarılan tür iç içe geçmiş bir şablon olduğunda özellikle yararlıdır:
 
 ```cpp
 map<int,list<string>>::iterator i = m.begin(); // C-style
 auto i = m.begin(); // modern C++
 ```
 
-## <a name="range-based-for-loops"></a>Döngüler için aralık tabanlı
+## <a name="range-based-for-loops"></a>Aralık tabanlı `for` döngüler
 
-Diziler ve kapsayıcılar üzerinde C stili yineleme dizin oluşturma hatalarına eğilimlidir ve aynı zamanda türü sıkıcıdır. Bu hataları ortadan kaldırmak ve kodunuzu daha okunabilir hale getirmek için, hem Standart Kitaplık kapsayıcıları hem de ham dizileri içeren döngüler için aralık tabanlı kullanın. Daha fazla bilgi [için ifade için Aralık tabanlı'ya](../cpp/range-based-for-statement-cpp.md)bakın.
+Diziler ve kapsayıcılar üzerinde C stili yineleme, hataları dizinlemeye ve ayrıca yazmak için de sıkıcı olur. Bu hataları ortadan kaldırmak ve kodunuzu daha okunabilir hale getirmek için `for` standart kitaplık kapsayıcıları ve ham diziler ile Aralık tabanlı döngüler kullanın. Daha fazla bilgi için bkz. [Aralık tabanlı `for` ifade](../cpp/range-based-for-statement-cpp.md).
 
 ```cpp
 #include <iostream>
@@ -139,18 +139,18 @@ int main()
 }
 ```
 
-## <a name="constexpr-expressions-instead-of-macros"></a>makrolar yerine constexpr ifadeler
+## <a name="constexpr-expressions-instead-of-macros"></a>`constexpr`makrolar yerine ifadeler
 
-C ve C++'daki makrolar, derlemeden önce önişlemci tarafından işlenen belirteçlerdir. Makro belirteci her örneği, dosya derlenmeden önce tanımlı değeri veya ifadesi ile değiştirilir. Makrolar derleme zamanı sabit değerlerini tanımlamak için C stili programlamada yaygın olarak kullanılır. Ancak, makrolar hataya açık ve hata ayıklama zor. Modern C++'da derleme zamanı sabitleri için [constexpr](constexpr-cpp.md) değişkenlerini tercih edmelisiniz:
+C ve C++ ' daki makrolar, derlemeden önce Önişlemci tarafından işlenen belirteçlerdir. Bir makro belirtecinin her örneği, dosya derlenmesinden önce tanımlı değeri veya ifadesiyle değiştirilmiştir. Makrolar, derleme zamanı sabit değerlerini tanımlamak için genellikle C stili programlamada kullanılır. Ancak, makrolar hata verebilir ve hata ayıklaması zor bir hatadır. Modern C++ ' da, [`constexpr`](constexpr-cpp.md) derleme zamanı sabitleri için değişkenleri tercih etmelisiniz:
 
 ```cpp
 #define SIZE 10 // C-style
 constexpr int size = 10; // modern C++
 ```
 
-### <a name="uniform-initialization"></a>Tekdüze başlatma
+### <a name="uniform-initialization"></a>Tekdüzen başlatma
 
-Modern C++'da, herhangi bir tür için ayraç başlatma yı kullanabilirsiniz. Bu başlatma biçimi, dizileri, vektörleri veya diğer kapsayıcıları başlatmada özellikle kullanışlıdır. Aşağıdaki örnekte, `v2` üç örnekle başharfe `S`işlenir. `v3`parantez kullanılarak başharflere `S` alınan üç örnekle başharfe işlenir. Derleyici, bildirilen türe göre her öğenin türünü `v3`çıkartıyor.
+Modern C++ ' da, herhangi bir tür için küme ayracı başlatma kullanabilirsiniz. Bu başlatma biçimi, diziler, vektörler veya diğer kapsayıcıları başlatırken özellikle kullanışlıdır. Aşağıdaki örnekte, `v2` üç örneği ile başlatılır `S` . `v3`, `S` küme ayraçları kullanılarak başlatılan üç örneğiyle başlatılır. Derleyici, her öğenin türünü, belirtilen türüne göre alır `v3` .
 
 ```cpp
 #include <vector>
@@ -183,15 +183,15 @@ int main()
 }
 ```
 
-Daha fazla bilgi için [Bkz. Ayraç başlatma.](initializing-classes-and-structs-without-constructors-cpp.md)
+Daha fazla bilgi için bkz. [küme ayracı başlatma](initializing-classes-and-structs-without-constructors-cpp.md).
 
-## <a name="move-semantics"></a>Taşı semantik
+## <a name="move-semantics"></a>Taşıma semantiği
 
-Modern C++ gereksiz bellek kopyalarını ortadan kaldırmak mümkün hale *getirmek, taşıma semantik*sağlar. Dilin önceki sürümlerinde, kopyalar bazı durumlarda kaçınılmazdı. *Bir hareket* işlemi, bir kopyasını oluşturmadan kaynağın sahipliğini bir nesneden diğerine aktarın. Bir kaynağa sahip bir sınıf uygularken (yığın bellek, dosya işletmeleri vb. gibi), bir *hareket oluşturucu* tanımlayAbilir ve *atama işlecinin* taşınmasını sağlayabilirsiniz. Derleyici, kopyanın gerekli olmadığı durumlarda aşırı yük çözümü sırasında bu özel üyeleri seçer. Standart Kitaplık kapsayıcı türleri, tanımlanmışsa nesneler üzerinde taşı oluşturucuyu çağırır. Daha fazla bilgi için [bkz.](move-constructors-and-move-assignment-operators-cpp.md)
+Modern C++, gereksiz bellek kopyalarının ortadan kaldırılmasına olanak sağlayan *taşıma semantiğini*sağlar. Önceki dilin sürümlerinde, bazı durumlarda kopyalara kaçınılmaz. *Taşıma* işlemi, bir kaynağın sahipliğini bir kopya oluşturmadan bir nesneden bir sonrakine aktarır. Bazı sınıfların, yığın belleği, dosya tutamaçları ve benzeri kaynakları vardır. Kaynak sahibi bir sınıfı uyguladığınızda, onun için bir *Taşıma oluşturucusu* ve *taşıma atama işleci* tanımlayabilirsiniz. Derleyici, bir kopyanın gerekli olmadığı durumlarda aşırı yükleme çözümlemesi sırasında bu özel üyeleri seçer. Standart Kitaplık kapsayıcı türleri, varsa nesneler üzerinde taşıma oluşturucusunu çağırır. Daha fazla bilgi için bkz. [Taşıma Oluşturucuları ve taşıma atama işleçleri (C++)](move-constructors-and-move-assignment-operators-cpp.md).
 
 ## <a name="lambda-expressions"></a>Lambda ifadeleri
 
-C stili programlamada, bir *işlev bir işlev işaretçisi*kullanılarak başka bir işleve geçirilebilir. İşlev işaretçileri korumak ve anlamak için sakıncalıdır. Atıfta bulunulan işlev, çağrıldığı noktadan uzakta, kaynak kodun başka bir yerinde tanımlanabilir. Ayrıca, tip güvenli değiller. Modern C++, [()](function-call-operator-parens.md) işleci geçersiz kılan *işlev nesneleri,* sınıflar sağlar ve bu da işlev gibi çağrılmasını sağlar. İşlev nesneleri oluşturmak için en uygun yolu satır içinde [lambda ifadeler](../cpp/lambda-expressions-in-cpp.md)ile. Aşağıdaki örnek, işlev nesnesini geçirmek için lambda ifadesinin `for_each` nasıl kullanılacağını, işlevin vektördeki her öğeyi çağıracağını gösterir:
+C stili programlamada, bir işlev bir işlev *işaretçisi*kullanılarak başka bir işleve geçirilebilir. İşlev işaretçilerinin bakımı ve anlaşılması uygun değildir. Başvurduğu işlev, kaynak kodda başka bir yerde, çağrıldığı noktadan uzakta tanımlanmış olabilir. Ayrıca, tür kullanımı uyumlu değildir. Modern C++ *işlev nesneleri*, işlecini geçersiz kılan sınıflar, [`operator()`](function-call-operator-parens.md) bir işlev gibi çağrılmasına olanak sağlar. İşlev nesneleri oluşturmanın en kolay yolu, satır içi [lambda ifadeleridir](../cpp/lambda-expressions-in-cpp.md). Aşağıdaki örnek, bir işlev nesnesini geçirmek için bir lambda ifadesinin nasıl kullanılacağını gösterir, bu `for_each` işlevin Vektördeki her öğede çağıracağı:
 
 ```cpp
     std::vector<int> v {1,2,3,4,5};
@@ -200,23 +200,23 @@ C stili programlamada, bir *işlev bir işlev işaretçisi*kullanılarak başka 
     auto result = find_if(begin(v), end(v), [=](int i) { return i > x && i < y; });
 ```
 
-Lambda ifadesi `[=](int i) { return i > x && i < y; }` "tek bir tür `int` bağımsız değişkeni alan ve bağımsız değişkenin daha büyük `x` ve daha `y`az olup olmadığını gösteren bir boolean döndüren işlev" olarak okunabilir. Değişkenlerin `x` ve `y` çevredeki bağlamın lambda kullanılabileceğini unutmayın. Bu `[=]` değişkenlerin değere göre *yakalandığını* belirtir; başka bir deyişle, lambda ifadesi bu değerlerin kendi kopyaları vardır.
+Lambda ifadesi, `[=](int i) { return i > x && i < y; }` türünde tek bir bağımsız değişken alan `int` ve bağımsız değişkenin şundan büyük ve küçük olup olmadığını belirten bir Boolean döndüren "işlev olarak okunabilir `x` `y` ." `x` `y` Lambda içinde ve çevresindeki bağlamdaki değişkenlerin kullanılabileceğini fark edebilirsiniz. `[=]`Bu değişkenlerin değere göre *yakalandığını* belirtir; başka bir deyişle, lambda ifadesinin bu değerlerin kendi kopyaları vardır.
 
 ## <a name="exceptions"></a>Özel durumlar
 
-Modern C++, hata koşullarını bildirmenin ve işlemenin en iyi yolu olarak hata kodları yerine özel durumları vurgular. Daha fazla bilgi için, [özel durumlar ve hata işleme için Modern C++ en iyi uygulamaları](errors-and-exception-handling-modern-cpp.md)bakın.
+Modern C++, hata koşullarını raporlamak ve işlemek için en iyi yol olarak hata kodları yerine özel durumları vurgular. Daha fazla bilgi için bkz. [özel durumlar ve hata işleme Için modern C++ en iyi uygulamaları](errors-and-exception-handling-modern-cpp.md).
 
-## <a name="stdatomic"></a>std::atom
+## `std::atomic`
 
-İş parçacıkları arası iletişim mekanizmaları için C++ Standart Kitaplığı [std::atomik](../standard-library/atomic-structure.md) yapı ve ilgili türleri kullanın.
+C++ Standart Kitaplığı [`std::atomic`](../standard-library/atomic-structure.md) yapısını ve iş parçacıkları arası iletişim mekanizmaları için ilgili türleri kullanın.
 
-## <a name="stdvariant-c17"></a>std::varyant (C++17)
+## <a name="stdvariant-c17"></a>`std::variant`(C++ 17)
 
-Birliş genellikle C stili programlamada, farklı türdeki üyelerin aynı bellek konumunu işgal etmesini sağlayarak belleği korumak için kullanılır. Ancak, sendikalar tür güvenli değildir ve programlama hatalarına açıktır. C++17, [std:varyant](../standard-library/variant-class.md) sınıfını birliş için daha sağlam ve güvenli bir alternatif olarak sunar. [Std:visit](../standard-library/variant-functions.md#visit) işlevi, bir tür güvenli bir `variant` şekilde bir türün üyelerine erişmek için kullanılabilir.
+Birleşimler, farklı türlerin üyelerinin aynı bellek konumunu kaplamasına olanak tanıyarak belleği korumak için genellikle C stili programlamada kullanılır. Ancak, birleşimler tür açısından güvenli değildir ve programlama hatalarına açıktır. C++ 17, [`std::variant`](../standard-library/variant-class.md) sendikaya daha sağlam ve güvenli bir alternatif olarak sınıfı tanıtır. İşlevi bir tür [`std::visit`](../standard-library/variant-functions.md#visit) üyelerine `variant` tür açısından güvenli bir şekilde erişmek için kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Dil Referansı](../cpp/cpp-language-reference.md)\
-[Lambda İfadeler](../cpp/lambda-expressions-in-cpp.md)\
-[C++ Standart Kitaplık](../standard-library/cpp-standard-library-reference.md)\
-[Microsoft C++ dil uygunluk tablosu](../overview/visual-cpp-language-conformance.md)
+[C++ dil başvurusu](../cpp/cpp-language-reference.md)\
+[Lambda Ifadeleri](../cpp/lambda-expressions-in-cpp.md)\
+[C++ standart kitaplığı](../standard-library/cpp-standard-library-reference.md)\
+[Microsoft C++ dil uygunluğu tablosu](../overview/visual-cpp-language-conformance.md)

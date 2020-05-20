@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl yapılır: taşıma oluşturucuları ve taşıma atama işleçleri (C++) tanımlama'
+title: 'Nasıl yapılır: taşıma oluşturucularını ve taşıma atama işleçlerini tanımlama (C++)'
 ms.date: 03/05/2018
 helpviewer_keywords:
 - move constructor [C++]
 ms.assetid: e75efe0e-4b74-47a9-96ed-4e83cfc4378d
-ms.openlocfilehash: 81f717162e2c7bebc62a9deeb208700380f62cb8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2c8fed15787ec4b347694d8c4e40bf7912f3421d
+ms.sourcegitcommit: d4da3693f83a24f840e320e35c24a4a07cae68e2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179373"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83550777"
 ---
 # <a name="move-constructors-and-move-assignment-operators-c"></a>Taşıma Oluşturucuları ve Taşıma Atama İşleçleri (C++)
 
-Bu konu, bir C++ sınıf için bir *taşıma oluşturucusunun* ve taşıma atama işlecinin nasıl yazılacağını açıklar. Bir taşıma Oluşturucusu, bir rvalue nesnesine ait kaynakların kopyalamadan bir lvalue 'ye taşınmasını sağlar. Taşıma semantiği hakkında daha fazla bilgi için bkz. [rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+Bu konu, bir C++ sınıfı için bir *taşıma oluşturucusunun* ve taşıma atama işlecinin nasıl yazılacağını açıklar. Bir taşıma Oluşturucusu, bir rvalue nesnesine ait kaynakların kopyalamadan bir lvalue 'ye taşınmasını sağlar. Taşıma semantiği hakkında daha fazla bilgi için bkz. [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-Bu konu, bir bellek arabelleğini C++ yöneten aşağıdaki `MemoryBlock`sınıfı üzerinde oluşturulur.
+Bu konu, `MemoryBlock` bir bellek arabelleğini yöneten aşağıdaki C++ sınıfı üzerinde oluşturulur.
 
 ```cpp
 // MemoryBlock.h
@@ -95,7 +95,7 @@ private:
 
 Aşağıdaki yordamlarda, örnek C++ sınıfı için bir taşıma oluşturucusunun ve taşıma atama işlecinin nasıl yazılacağı açıklanır.
 
-### <a name="to-create-a-move-constructor-for-a-c-class"></a>Bir C++ sınıf için bir taşıma Oluşturucusu oluşturmak için
+### <a name="to-create-a-move-constructor-for-a-c-class"></a>C++ sınıfı için bir taşıma Oluşturucusu oluşturmak için
 
 1. Aşağıdaki örnekte gösterildiği gibi, sınıf türüne parametre olarak bir rvalue başvurusu alan boş bir Oluşturucu yöntemi tanımlayın:
 
@@ -121,7 +121,7 @@ Aşağıdaki yordamlarda, örnek C++ sınıfı için bir taşıma oluşturucusun
     other._length = 0;
     ```
 
-### <a name="to-create-a-move-assignment-operator-for-a-c-class"></a>Bir C++ sınıf için taşıma atama işleci oluşturmak için
+### <a name="to-create-a-move-assignment-operator-for-a-c-class"></a>C++ sınıfı için bir taşıma atama işleci oluşturmak için
 
 1. Sınıf türüne parametre olarak bir rvalue başvurusu alan ve aşağıdaki örnekte gösterildiği gibi sınıf türüne bir başvuru döndüren boş bir atama işleci tanımlayın:
 
@@ -141,7 +141,7 @@ Aşağıdaki yordamlarda, örnek C++ sınıfı için bir taşıma oluşturucusun
 
 1. Koşullu bildirimde, atanmakta olan nesneden tüm kaynakları (örneğin, bellek) boşaltın.
 
-   Aşağıdaki örnek, atanan nesnesinden `_data` üyesini serbest bırakır:
+   Aşağıdaki örnek, `_data` atanan nesneden üyeyi serbest bırakır:
 
     ```cpp
     // Free the existing resource.
@@ -170,11 +170,11 @@ Aşağıdaki yordamlarda, örnek C++ sınıfı için bir taşıma oluşturucusun
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `MemoryBlock` sınıfı için tüm taşıma oluşturucusunu ve taşıma atama işlecini gösterir:
+Aşağıdaki örnek, sınıfı için tüm taşıma oluşturucusunu ve taşıma atama işlecini gösterir `MemoryBlock` :
 
 ```cpp
 // Move constructor.
-MemoryBlock(MemoryBlock&& other)
+MemoryBlock(MemoryBlock&& other) noexcept
    : _data(nullptr)
    , _length(0)
 {
@@ -193,7 +193,7 @@ MemoryBlock(MemoryBlock&& other)
 }
 
 // Move assignment operator.
-MemoryBlock& operator=(MemoryBlock&& other)
+MemoryBlock& operator=(MemoryBlock&& other) noexcept
 {
    std::cout << "In operator=(MemoryBlock&&). length = "
              << other._length << "." << std::endl;
@@ -219,7 +219,7 @@ MemoryBlock& operator=(MemoryBlock&& other)
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, taşıma semantiğinin uygulamalarınızın performansını nasıl geliştirebileceğinizi gösterir. Örnek, bir vektör nesnesine iki öğe ekler ve sonra varolan iki öğe arasında yeni bir öğe ekler. `vector` sınıfı, vektör öğelerini kopyalamak yerine bir araya getirerek ekleme işlemini verimli bir şekilde gerçekleştirmek için taşıma semantiğini kullanır.
+Aşağıdaki örnek, taşıma semantiğinin uygulamalarınızın performansını nasıl geliştirebileceğinizi gösterir. Örnek, bir vektör nesnesine iki öğe ekler ve sonra varolan iki öğe arasında yeni bir öğe ekler. `vector`Sınıfı, vektör öğelerini kopyalamak yerine vektör öğelerinin taşıyarak ekleme işlemini verimli bir şekilde gerçekleştirmek için taşıma semantiğini kullanır.
 
 ```cpp
 // rvalue-references-move-semantics.cpp
@@ -248,15 +248,15 @@ In MemoryBlock(size_t). length = 25.
 In MemoryBlock(MemoryBlock&&). length = 25. Moving resource.
 In ~MemoryBlock(). length = 0.
 In MemoryBlock(size_t). length = 75.
+In MemoryBlock(MemoryBlock&&). length = 75. Moving resource.
 In MemoryBlock(MemoryBlock&&). length = 25. Moving resource.
 In ~MemoryBlock(). length = 0.
-In MemoryBlock(MemoryBlock&&). length = 75. Moving resource.
 In ~MemoryBlock(). length = 0.
 In MemoryBlock(size_t). length = 50.
 In MemoryBlock(MemoryBlock&&). length = 50. Moving resource.
-In MemoryBlock(MemoryBlock&&). length = 50. Moving resource.
-In operator=(MemoryBlock&&). length = 75.
-In operator=(MemoryBlock&&). length = 50.
+In MemoryBlock(MemoryBlock&&). length = 25. Moving resource.
+In MemoryBlock(MemoryBlock&&). length = 75. Moving resource.
+In ~MemoryBlock(). length = 0.
 In ~MemoryBlock(). length = 0.
 In ~MemoryBlock(). length = 0.
 In ~MemoryBlock(). length = 25. Deleting resource.
@@ -299,7 +299,7 @@ Sınıfınız için hem bir taşıma Oluşturucusu hem de bir taşıma ataması 
 
 ```cpp
 // Move constructor.
-MemoryBlock(MemoryBlock&& other)
+MemoryBlock(MemoryBlock&& other) noexcept
    : _data(nullptr)
    , _length(0)
 {
@@ -307,7 +307,7 @@ MemoryBlock(MemoryBlock&& other)
 }
 ```
 
-[Std:: Move](../standard-library/utility-functions.md#move) işlevi, *diğer* parametrenin rvalue özelliğini korur.
+[Std:: Move](../standard-library/utility-functions.md#move) işlevi, lvalue değerini `other` rvalue değerine dönüştürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

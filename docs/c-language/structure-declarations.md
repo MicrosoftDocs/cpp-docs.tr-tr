@@ -19,7 +19,7 @@ ms.locfileid: "62157813"
 
 "Yapı bildirimi", bir türü adlandırır ve farklı türlere sahip bir değişken değerleri ("Üyeler" veya yapının "alanları" olarak adlandırılır) belirtir. "Tag" adlı bir isteğe bağlı tanımlayıcı, yapı türünün adını verir ve yapı türüne sonraki başvurularda kullanılabilir. Bu yapı türünün bir değişkeni, bu tür tarafından tanımlanan tüm diziyi tutar. C 'deki yapılar, diğer dillerdeki "kayıtlar" olarak bilinen türlere benzerdir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 *struct veya-Union-belirleyicisi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*struct veya-Union* *tanımlayıcısı*<sub>opt</sub> **{** *struct-declaration-List* **}**<br/>
@@ -53,7 +53,7 @@ Daha önce tanımlanmış bir *tanımlayıcı* (etiket), başka bir yerde tanım
 
 *Struct-declaration-List* , yapı üyelerinin türlerini ve adlarını belirtir. *Struct-declaration-List* bağımsız değişkeni bir veya daha fazla değişken veya bit alanı bildirimi içerir.
 
-*Yapı-bildirim-listesinde* belirtilen her değişken yapı türünün bir üyesi olarak tanımlanır. *Yapı-bildirim-listesi* içindeki değişken bildirimleri, bu bölümde ele alınan diğer değişken bildirimleriyle aynı biçimde, bildirimlerin depolama sınıfı tanımlayıcıları veya başlatıcıları içeremeyeceği durumlar dışında aynı biçimdedir. Yapı üyeleri tür `void`, tamamlanmamış tür veya işlev türü dışında herhangi bir değişken türüne sahip olabilir.
+*Yapı-bildirim-listesinde* belirtilen her değişken yapı türünün bir üyesi olarak tanımlanır. *Yapı-bildirim-listesi* içindeki değişken bildirimleri, bu bölümde ele alınan diğer değişken bildirimleriyle aynı biçimde, bildirimlerin depolama sınıfı tanımlayıcıları veya başlatıcıları içeremeyeceği durumlar dışında aynı biçimdedir. Yapı üyeleri tür `void` , tamamlanmamış tür veya işlev türü dışında herhangi bir değişken türüne sahip olabilir.
 
 Üye, göründüğü yapının türüne sahip olacak şekilde bildirilemez. Ancak, bir üye yapı türünün bir etiketi olduğu sürece göründüğü yapı türüne yönelik bir işaretçi olarak bildirilebilecek. Bu, bağlı yapıların listesini oluşturmanızı sağlar.
 
@@ -94,13 +94,13 @@ struct employee   /* Defines a structure variable named temp */
 } temp;
 ```
 
-`employee` Yapı üç üyeye sahiptir: `name`, `id`ve `class`. `name` Üye, 20 öğeli `id` bir dizidir `class` ve sırasıyla ve `int` **uzun** olan basit üyeleridir. Tanımlayıcı `employee` , yapı tanımlayıcısıdır.
+`employee`Yapı üç üyeye sahiptir: `name` , `id` ve `class` . `name`Üye, 20 öğeli bir dizidir ve `id` `class` `int` sırasıyla ve **uzun** olan basit üyeleridir. Tanımlayıcı, `employee` Yapı tanımlayıcısıdır.
 
 ```C
 struct employee student, faculty, staff;
 ```
 
-Bu örnek üç yapı değişkenini tanımlar: `student`, `faculty`, ve `staff`. Her yapının aynı üç üye listesi vardır. Üyeler, önceki örnekte tanımlanan yapı türüne `employee`sahip olacak şekilde bildirilmiştir.
+Bu örnek üç yapı değişkenini tanımlar: `student` , `faculty` , ve `staff` . Her yapının aynı üç üye listesi vardır. Üyeler, önceki örnekte tanımlanan yapı türüne sahip olacak şekilde bildirilmiştir `employee` .
 
 ```C
 struct           /* Defines an anonymous struct and a */
@@ -109,7 +109,7 @@ struct           /* Defines an anonymous struct and a */
 } complex;
 ```
 
-`complex` Yapı, **float** türü `x` ve `y`olan iki üyeye sahiptir. Yapı türünün etiketi yok ve bu nedenle adlandırılmamış veya anonim.
+`complex`Yapı, **float** türü ve olan iki üyeye sahiptir `x` `y` . Yapı türünün etiketi yok ve bu nedenle adlandırılmamış veya anonim.
 
 ```C
 struct sample   /* Defines a structure named x */
@@ -120,9 +120,9 @@ struct sample   /* Defines a structure named x */
 } x;
 ```
 
-Yapının ilk iki üyesi bir `char` değişken ve bir **float** değeri işaretçisidir. Üçüncü üye `next`, tanımlanmakta olan yapı türüne yönelik bir işaretçi olarak bildirilmiştir (`sample`).
+Yapının ilk iki üyesi bir `char` değişken ve bir **float** değeri işaretçisidir. Üçüncü üye, `next` tanımlanmakta olan yapı türüne yönelik bir işaretçi olarak bildirilmiştir ( `sample` ).
 
-Anonim yapılar, adlı etiket gerekli olmadığında yararlı olabilir. Bu durum, bir bildirimin tüm yapı örneklerini tanımladığı durumdur. Örneğin:
+Anonim yapılar, adlı etiket gerekli olmadığında yararlı olabilir. Bu durum, bir bildirimin tüm yapı örneklerini tanımladığı durumdur. Örnek:
 
 ```C
 struct
@@ -149,9 +149,9 @@ struct somestruct
 
 Derleyici, bir yapının son üyesi olarak boyutlandırılabilen veya sıfır boyutlu bir diziye izin verir. Bu, bir sabit dizinin boyutu farklı durumlarda kullanıldığında yararlı olabilir. Böyle bir yapının bildirimi şöyle görünür:
 
-**struct** *tanımlayıcı* **{** *of-of-bildirimlerin* *türü* <em>dizi-adı</em>**\[];};**
+**struct** *tanımlayıcı* **{** *of-of-bildirimlerin* *türü* <em>dizi-adı</em>** \[ ];};**
 
-Boyutlandırılabilen diziler yalnızca bir yapının son üyesi olarak görünebilir. Boyutlandırılmış dizi bildirimleri içeren yapılar, herhangi bir kapsayan yapıda hiçbir başka üye bildirildiği sürece diğer yapılar içinde iç içe olabilir. Bu tür yapıların dizilerine izin verilmez. `sizeof` İşleci, bu türün bir değişkenine veya türüne uygulandığında, dizinin boyutu için 0 varsayar.
+Boyutlandırılabilen diziler yalnızca bir yapının son üyesi olarak görünebilir. Boyutlandırılmış dizi bildirimleri içeren yapılar, herhangi bir kapsayan yapıda hiçbir başka üye bildirildiği sürece diğer yapılar içinde iç içe olabilir. Bu tür yapıların dizilerine izin verilmez. `sizeof`İşleci, bu türün bir değişkenine veya türüne uygulandığında, dizinin boyutu için 0 varsayar.
 
 Yapı bildirimleri, başka bir yapının veya birleşimin üyesi olduklarında bir bildirimci olmadan da belirlenebilir. Alan adları kapsayan yapıya yükseltilir. Örneğin, isimsiz bir yapı şöyle görünür:
 
@@ -177,4 +177,4 @@ Yapı başvuruları hakkında bilgi için bkz. [Yapı ve birleşim üyeleri](../
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)
+[Bildirimciler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md)

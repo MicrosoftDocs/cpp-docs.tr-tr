@@ -24,7 +24,7 @@ Otomatik değişkenler veya yerel yaşam süreleri olan değişkenler, her yür�
 
 C aşağıdaki depolama sınıfı belirticilerini sağlar:
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 *depolama sınıfı Belirleyicisi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Otomatik**<br/>
@@ -34,11 +34,11 @@ C aşağıdaki depolama sınıfı belirticilerini sağlar:
 &nbsp;&nbsp;&nbsp;&nbsp;**genişletiyor**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *Genişletilmiş-decl-değiştirici-seq* **)**  / \* Microsoft 'a özgü\*/
 
-Haricinde `__declspec`, bildiriminde *bildirim belirticisi* içinde yalnızca bir *depolama sınıfı Belirleyicisi* kullanabilirsiniz. Depolama sınıfı belirtimi yapılbelirtilmemişse, blok içindeki bildirimler otomatik nesneler oluşturur.
+Haricinde `__declspec` , bildiriminde *bildirim belirticisi* içinde yalnızca bir *depolama sınıfı Belirleyicisi* kullanabilirsiniz. Depolama sınıfı belirtimi yapılbelirtilmemişse, blok içindeki bildirimler otomatik nesneler oluşturur.
 
-**Auto** veya **yazmaç** belirticisi ile belirtilen öğelerin yerel yaşam süreleri vardır. **Statik** veya `extern` belirticiyle belirtilen öğelerin küresel yaşam süreleri vardır.
+**Auto** veya **yazmaç** belirticisi ile belirtilen öğelerin yerel yaşam süreleri vardır. **Statik** veya belirticiyle belirtilen öğelerin `extern` küresel yaşam süreleri vardır.
 
-Ve `typedef` `__declspec` diğer dört *depolama sınıfı Belirleyicisi* terminalinden farklı anlam içerdiğinden, bunlar ayrı olarak ele alınmıştır. Hakkında `typedef`belirli bilgiler için bkz. [typedef bildirimleri](../c-language/typedef-declarations.md). Hakkında `__declspec`belirli bilgiler için bkz. [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
+`typedef`Ve `__declspec` diğer dört *depolama sınıfı Belirleyicisi* terminalinden farklı anlam içerdiğinden, bunlar ayrı olarak ele alınmıştır. Hakkında belirli bilgiler için `typedef` bkz. [typedef bildirimleri](../c-language/typedef-declarations.md). Hakkında belirli bilgiler için `__declspec` bkz. [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
 
 Değişken ve işlev bildirimlerinin kaynak dosyalar içinde yerleştirilmesi, depolama sınıfını ve görünürlüğünü de etkiler. Tüm işlev tanımlarının dışındaki bildirimler "dış düzeyde" gözükme söylenir. İşlev tanımlarının içindeki bildirimler "iç düzeyde" görünür.
 

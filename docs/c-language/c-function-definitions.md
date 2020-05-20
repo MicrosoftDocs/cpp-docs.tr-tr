@@ -23,13 +23,13 @@ ms.locfileid: "74857144"
 
 İşlev tanımı, işlevin adını, almayı beklediği parametrelerin türlerini ve sayısını ve dönüş türünü belirtir. Bir işlev tanımı Ayrıca yerel değişkenlerinin bildirimlerine sahip bir işlev gövdesini ve işlevin ne yaptığını belirleyecek deyimleri de içerir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 *çeviri birimi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Dış bildirim* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*çeviri birimi* *dış bildirimi*
 
-*Dış bildirim*:/\* yalnızca dış (dosya) kapsamında izin verilir\*/<br/>
+*Dış bildirim*:/ \* yalnızca dış (dosya) kapsamında izin verilir\*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işlev tanımı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bağımsız*
 
@@ -52,13 +52,13 @@ Prototip parametreleri şunlardır:
 *bildirimci*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
 
-*Direct-bildirimci*:/\* bir işlev bildirimci\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci***(***parametre türü-liste***)**  / \* yeni stil bildirimci      \*/<br/>
+*Direct-bildirimci*:/ \* bir işlev bildirimci\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci***(***parametre türü-liste***)**  / \* Yeni stil bildirimci      \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci***(***tanımlayıcı listesi*<sub>opt</sub> **)**  / \* eski stil bildirimci    \*/
 
 Bir tanımdaki parametre listesi bu söz dizimini kullanır:
 
-*parametre-tür-listesi*:/\* parametre listesi\*/<br/>
+*parametre-tür-listesi*:/ \* parametre listesi\*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*parametre-listesi* <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*parametre-liste* **,...**
 
@@ -72,7 +72,7 @@ Bir tanımdaki parametre listesi bu söz dizimini kullanır:
 
 Eski stil işlev tanımındaki parametre listesi bu söz dizimini kullanır:
 
-*tanımlayıcı-liste*: eski\* stil işlev tanımlarında ve bildirimlerinde kullanılır\*/<br/>
+*tanımlayıcı-liste*: \* eski stil işlev tanımlarında ve bildirimlerinde kullanılır\*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı listesi* **,**  *tanımlayıcı*
 

@@ -62,10 +62,10 @@ int main()  // main function defined at external level
 }
 ```
 
-### <a name="comments"></a>Açıklamalar
+### <a name="comments"></a>Yorumlar
 
 Bu örnekte, dört görünürlük düzeyi vardır: dış düzey ve üç blok düzeyi. Değerler her deyimin sonraki açıklamalarda gösterildiği gibi ekrana yazdırılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ömür, Kapsam, Görünürlük ve Bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)
+[Ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)

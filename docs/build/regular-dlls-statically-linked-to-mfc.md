@@ -32,15 +32,15 @@ Statik olarak MFC 'ye bağlı normal MFC DLL 'SI aşağıdaki özelliklere sahip
 
 Statik olarak MFC 'ye bağlı normal MFC DLL 'SI aşağıdaki gereksinimlere sahiptir:
 
-- Bu tür DLL, öğesinden `CWinApp`türetilmiş bir sınıf örneği oluşturmalıdır.
+- Bu tür DLL, öğesinden türetilmiş bir sınıf örneği oluşturmalıdır `CWinApp` .
 
-- Bu tür DLL MFC tarafından `DllMain` sunulan öğesini kullanır. DLL 'e özgü tüm başlatma kodlarını `InitInstance` üye işlevine ve sonlandırma kodunu normal bir MFC uygulamasında `ExitInstance` olduğu gibi yerleştirin.
+- Bu tür DLL `DllMain` MFC tarafından sunulan öğesini kullanır. DLL 'e özgü tüm başlatma kodlarını `InitInstance` üye işlevine ve sonlandırma kodunu `ExitInstance` normal bir MFC uygulamasında olduğu gibi yerleştirin.
 
 - USRDLL terimi kullanılmıyor olsa da, derleyici komut satırında yine "**_USRDLL**" tanımlamanız gerekir. Bu tanım, MFC başlık dosyalarından hangi bildirimlerin çekilacağını belirler.
 
-MFC uygulaması gibi normal MFC dll `CWinApp`'lerinin türetilmiş bir sınıfı ve bu uygulama sınıfının tek bir nesnesi olmalıdır. Ancak, bir `CWinApp` uygulamanın `CWinApp` nesnesi gibi, dll nesnesinin bir ana ileti göndericisi yoktur.
+MFC uygulaması gibi normal MFC DLL 'Lerinin `CWinApp` türetilmiş bir sınıfı ve bu uygulama sınıfının tek bir nesnesi olmalıdır. Ancak, `CWinApp` bir uygulamanın nesnesi gibi, dll nesnesinin bir ana ileti göndericisi yoktur `CWinApp` .
 
-Uygulamanın ana ileti `CWinApp::Run` göndericisinin sahibi olduğu için MEKANIZMANıN dll 'ye uygulanmadığını unutmayın. DLL engelleyici olmayan iletişim kutusu açarsa veya kendi ana çerçeve penceresine sahipse, uygulamanın ana ileti göndericisi dll tarafından, DLL 'nin uygulama nesnesinin `CWinApp::PreTranslateMessage` üye işlevini çağıran bir yordamı çağırmalıdır.
+`CWinApp::Run`Uygulamanın ana ileti göndericisinin sahibi olduğu için MEKANIZMANıN dll 'ye uygulanmadığını unutmayın. DLL engelleyici olmayan iletişim kutusu açarsa veya kendi ana çerçeve penceresine sahipse, uygulamanın ana ileti göndericisi dll tarafından, `CWinApp::PreTranslateMessage` DLL 'nin uygulama nesnesinin üye işlevini çağıran bir yordamı çağırmalıdır.
 
 Bu işleve bir örnek için bkz. DLLScreenCap Sample.
 
@@ -62,7 +62,7 @@ Yalnızca verilerin bir kopyasını yaparsanız, bir uygulama ve DLL arasında C
 
 MFC 'ye statik olarak bağlı bir DLL Ayrıca paylaşılan MFC DLL 'Lerine dinamik olarak bağlanamaz. MFC 'ye statik olarak bağlı bir DLL, diğer tüm DLL gibi bir uygulamaya dinamik olarak bağlanır; uygulamalar, diğer herhangi bir DLL gibi buna bağlanır.
 
-Standart MFC statik bağlantı kitaplıkları, [MFC DLL 'leri Için adlandırma kuralları](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)bölümünde açıklanan kurala göre adlandırılır. Ancak, MFC sürüm 3,0 ve üzeri ile, bağlantılı olmasını istediğiniz MFC kitaplığının sürümünü bağlayıcıya el ile belirtmek artık gerekli değildir. Bunun yerine, MFC başlık dosyaları, ** \_hata ayıklama** veya **_UNICODE**gibi Önişlemci tanımlarını temel alarak bağlamak üzere MFC kitaplığının doğru sürümünü otomatik olarak belirler. MFC üst bilgi dosyaları, MFC kitaplığının belirli bir sürümünde bağlantı için bağlayıcı arabirimini veren/DEFAULTLIB yönergeleri ekler.
+Standart MFC statik bağlantı kitaplıkları, [MFC DLL 'leri Için adlandırma kuralları](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)bölümünde açıklanan kurala göre adlandırılır. Ancak, MFC sürüm 3,0 ve üzeri ile, bağlantılı olmasını istediğiniz MFC kitaplığının sürümünü bağlayıcıya el ile belirtmek artık gerekli değildir. Bunun yerine, MFC başlık dosyaları, ** \_ hata ayıklama** veya **_UNICODE**gibi Önişlemci TANıMLARıNı temel alarak bağlamak üzere MFC kitaplığının doğru sürümünü otomatik olarak belirler. MFC üst bilgi dosyaları, MFC kitaplığının belirli bir sürümünde bağlantı için bağlayıcı arabirimini veren/DEFAULTLIB yönergeleri ekler.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
@@ -78,7 +78,7 @@ Standart MFC statik bağlantı kitaplıkları, [MFC DLL 'leri Için adlandırma 
 
 - [MFC 'ye dinamik olarak bağlı normal MFC DLL 'Leri](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC uzantı dll 'Leri](extension-dlls-overview.md)
+- [MFC uzantısı DLL’leri](extension-dlls-overview.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
