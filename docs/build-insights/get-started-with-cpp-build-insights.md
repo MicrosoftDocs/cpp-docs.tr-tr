@@ -1,49 +1,61 @@
 ---
 title: C++ Derleme İçgörüleri ile çalışmaya başlama
-description: C++ Build Insights'a üst düzey bir genel bakış.
+description: C++ derleme öngörülerine üst düzey bir genel bakış.
 ms.date: 11/03/2019
 helpviewer_keywords:
 - C++ Build Insights
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 3a75dfe3bf1263cce53d70b764607cad4eec86d5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 28d7e0758ea521af424129c546297fc97e3d6659
+ms.sourcegitcommit: 8c8ed02a6f3bcb5ee008e3fe30ba7595d7c4c922
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325724"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83759231"
 ---
 # <a name="get-started-with-c-build-insights"></a>C++ Derleme İçgörüleri ile çalışmaya başlama
 
 ::: moniker range="<=vs-2017"
 
-C++ Build Insights araçları Visual Studio 2019'da mevcuttur. Bu sürümün belgelerini görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ derleme öngörüleri araçları Visual Studio 2019 'de bulunabilir. Bu sürümün belgelerini görmek için bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range="vs-2019"
 
-C++ Build Insights, Microsoft Visual C++ (MSVC) araç zincirinde daha fazla görünürlük sağlayan bir araç koleksiyonudur. Araçlar, C++ yapılarınız hakkında veri toplar ve aşağıdakiler gibi sık sorulan soruları yanıtlamanıza yardımcı olacak bir biçimde sunar:
+C++ derleme öngörüleri, Microsoft Visual C++ (MSVC) araç zinciri üzerinde daha fazla görünürlük sağlayan bir araç koleksiyonudur. Araçlar, C++ derlemelerinizi hakkında veri toplar ve bunu, yaygın soruları cevaplamanıza yardımcı olabilecek bir biçimde sunar:
 
-- Yapılarımın yeterince paralelleştirilmiş mi?
-- Önceden derlenmiş üstbilgime (PCH) ne eklemeliyim?
-- Yapı hızlarımı artırmak için odaklanmam gereken belirli bir darboğaz var mı?
+- Derlemelerim yeterince paralelleştirildi mi?
+- Önceden derlenmiş üst bilgiye (PCH) dahil ediyorum?
+- Derleme hızlarımı artırmak için belirli bir darboğazın olması gerekir mi?
 
 Bu teknolojinin ana bileşenleri şunlardır:
 
-- *vcperf.exe*, yapılarınızın izlerini toplamak için kullanabileceğiniz bir komut satırı yardımcı programı,
-- WPA'daki yapı izlerini görüntülemenizi sağlayan bir Windows Performans Çözümleyicisi (WPA) uzantısı ve
-- C++ Build Insights SDK, C++ Build Insights verilerini tüketen kendi araçlarınızı oluşturmak için bir yazılım geliştirme kitidir.
+- derlemelerinizin izlemelerini toplamak için kullanabileceğiniz bir komut satırı yardımcı programı olan *vcperf. exe*,
+- WPA 'da derleme izlemelerini görüntülemenize olanak tanıyan bir Windows Performans Çözümleyicisi (WPA) uzantısı ve
+- C++ derleme öngörüleri verilerini kullanan kendi araçlarınızı oluşturmaya yönelik bir yazılım geliştirme seti olan C++ Build Insights SDK 'Sı.
 
-Bu bileşenlerle hızlı bir şekilde başlamak için aşağıdaki linklere tıklayın:
+## <a name="documentation-sections"></a>Belge bölümleri
 
-[Öğretici: vcperf ve Windows Performans Analizörü](tutorials/vcperf-and-wpa.md)\
-C++ projeleriniz için yapı izlerini nasıl topladığınızı ve bunları WPA'da nasıl görüntülenizi öğrenin.
+[Öğretici: vcperf ve Windows Performans Çözümleyicisi](tutorials/vcperf-and-wpa.md)\
+C++ projeleriniz için derleme izlemeleri toplamayı ve bunları WPA 'da görüntülemeyi öğrenin.
 
-[Öğretici: Windows Performans Temelleri](tutorials/wpa-basics.md)\
-Yapı izlerinizi analiz etmek için yararlı WPA ipuçlarını keşfedin.
+[Öğretici: Windows performansı temelleri](tutorials/wpa-basics.md)\
+Derleme izlemelerinizi çözümlemek için kullanışlı WPA ipuçlarını bulun.
 
-[C++ Build Insights SDK](reference/sdk/overview.md)\
-C++ Build Insights SDK'ya genel bakış.
+[C++ derleme öngörüleri SDK 'Sı](reference/sdk/overview.md)\
+C++ Build Insights SDK 'sına genel bakış.
+
+## <a name="articles"></a>Makaleler
+
+C++ derleme öngörüleri hakkında daha fazla bilgi için resmi C++ ekip blogundan bu makaleleri okuyun:
+
+[C++ derleme öngörülerini tanıtma](https://devblogs.microsoft.com/cppblog/introducing-c-build-insights/)
+
+[C++ Build Insights SDK 'Sı ile derlemelerinizi programlı bir şekilde çözümleyin](https://devblogs.microsoft.com/cppblog/analyze-your-builds-programmatically-with-the-c-build-insights-sdk/)
+
+[C++ derleme öngörüleri ile derleme darboğazlarını bulma](https://devblogs.microsoft.com/cppblog/finding-build-bottlenecks-with-cpp-build-insights/)
+
+[C++ derleme öngörülerine yönelik PCH önerilerine sahip daha hızlı yapılar](https://devblogs.microsoft.com/cppblog/faster-builds-with-pch-suggestions-from-c-build-insights/)
 
 ::: moniker-end

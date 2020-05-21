@@ -41,18 +41,18 @@ helpviewer_keywords:
 - printf function, using
 - formatted text [C++]
 ms.assetid: 77a854ae-5b48-4865-89f4-f2dc5cf80f52
-ms.openlocfilehash: 7992649a13c2e103077c6311e1987fad80a99837
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 3766ea24459423e730ab84ecae24d758d7f61e88
+ms.sourcegitcommit: 8c8ed02a6f3bcb5ee008e3fe30ba7595d7c4c922
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70950199"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83759244"
 ---
 # <a name="printf-_printf_l-wprintf-_wprintf_l"></a>printf, _printf_l, wprintf, _wprintf_l
 
 Biçimli çıktıyı standart çıkış akışına yazdırır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](printf-s-printf-s-l-wprintf-s-wprintf-s-l.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int printf(
@@ -77,7 +77,7 @@ int _wprintf_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi.
 
 *değişkendir*<br/>
@@ -102,7 +102,7 @@ Bir hata oluşursa yazdırılan karakter sayısını veya negatif bir değer dö
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_unicode tanımlı|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_unicode tanımlı|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tprintf**|**printf**|**printf**|**wprintf**|
 
@@ -119,7 +119,7 @@ Line one
         Line two
 ```
 
-[Biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) her zaman yüzde işaretiyle ( **%** ) başlar ve soldan sağa doğru okunurdur. **Printf** ilk biçim belirtimiyle karşılaştığında (varsa), *Biçim* sonrasında ilk bağımsız değişkenin değerini dönüştürür ve buna uygun şekilde çıkış yapar. İkinci biçim belirtimi ikinci bağımsız değişkenin dönüştürülmesine ve çıktısına ve bu şekilde devam etmesine neden olur. Biçim belirtimlerinden daha fazla bağımsız değişken varsa, ek bağımsız değişkenler yoksayılır. Tüm biçim belirtimleri için yeterli bağımsız değişken yoksa sonuçlar tanımsızdır.
+[Biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) her zaman yüzde işaretiyle () başlar **%** ve soldan sağa doğru okunurdur. **Printf** ilk biçim belirtimiyle karşılaştığında (varsa), *Biçim* sonrasında ilk bağımsız değişkenin değerini dönüştürür ve buna uygun şekilde çıkış yapar. İkinci biçim belirtimi ikinci bağımsız değişkenin dönüştürülmesine ve çıktısına ve bu şekilde devam etmesine neden olur. Biçim belirtimlerinden daha fazla bağımsız değişken varsa, ek bağımsız değişkenler yoksayılır. Tüm biçim belirtimleri için yeterli bağımsız değişken yoksa sonuçlar tanımsızdır.
 
 > [!IMPORTANT]
 > *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun.
@@ -135,8 +135,8 @@ Line one
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**printf**, **_printf_l**|\<stdio. h >|
-|**wprintf**, **_wprintf_l**|\<stdio. h > veya \<wchar. h >|
+|**printf**, **_printf_l**|\<stdio. h>|
+|**wprintf**, **_wprintf_l**|\<stdio. h> veya \< wchar. h>|
 
 Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -228,12 +228,13 @@ Address as:   0012FF3C
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Biçim belirtimi sözdizimi: printf ve wprintf Işlevleri](../format-specification-syntax-printf-and-wprintf-functions.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>
 [_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[vprintf Işlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
 [_set_output_format](../../c-runtime-library/set-output-format.md)<br/>
