@@ -1,124 +1,135 @@
 ---
-title: 'Öğretici: vcperf ve Windows Performans Analizörü'
-description: C++ yapı izlerini analiz etmek için vcperf ve WPA'nın nasıl kullanılacağı hakkında öğretici.
+title: 'Öğretici: vcperf ve Windows Performans Çözümleyicisi'
+description: Bkz. vcperf ve WPA 'Yı C++ derleme izlemelerinin çözümlenmesi için kullanma öğreticisi.
 ms.date: 11/03/2019
 helpviewer_keywords:
 - C++ Build Insights
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: c22f3dfddfd346d4f0eee898cb5164fd8923336e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 724df913400abb6d33c333f0a16c20fb982769bc
+ms.sourcegitcommit: 98139766b548c55181ff5ec5ad3bfd9db2bf5c89
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323419"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83865058"
 ---
-# <a name="tutorial-vcperf-and-windows-performance-analyzer"></a>Öğretici: vcperf ve Windows Performans Analizörü
+# <a name="tutorial-vcperf-and-windows-performance-analyzer"></a>Öğretici: vcperf ve Windows Performans Çözümleyicisi
 
 ::: moniker range="<=vs-2017"
 
-C++ Build Insights araçları Visual Studio 2019'da mevcuttur. Bu sürümün belgelerini görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ derleme öngörüleri araçları Visual Studio 2019 'de bulunabilir. Bu sürümün belgelerini görmek için bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range="vs-2019"
 
-Bu eğitimde, C++ yapınızın izini toplamak için *vcperf.exe'yi* nasıl kullanacağınızı öğreneceksiniz. Bu izlemeyi Windows Performans Çözümleyicisi'nde nasıl görüntülediğinizi de öğreneceksiniz.
+Bu öğreticide, *vcperf. exe* ' yi kullanarak C++ yapınızı izlemeyi nasıl toplayacağınızı öğreneceksiniz. Ayrıca, bu izlemeyi Windows Performans Çözümleyicisi 'nde görüntülemeyi de öğreneceksiniz.
 
-## <a name="step-1-install-and-configure-windows-performance-analyzer"></a>Adım 1: Windows Performans Çözümleyicisi'ni yükleme ve yapılandırma
+## <a name="step-1-install-and-configure-windows-performance-analyzer"></a>1. Adım: Windows Performans Çözümleyicisi 'ni yükleyip yapılandırma
 
-WPA, Windows Değerlendirme ve Dağıtım Kiti'nde (ADK) bulunan bir izleme görüntüleyicidir. Visual Studio yükleyicisiyle yükleyebileceğiniz bileşenlerin bir parçası olmayan ayrı bir yardımcı programdır.
+WPA, Windows değerlendirme ve dağıtım seti 'nde (ADK) bulunan bir izleme görüntüleyicisine sahiptir. Visual Studio yükleyicisi ile yükleyebileceğiniz bileşenlerin parçası olmayan ayrı bir yardımcı programdır.
 
-C++ Build Insights'ı destekleyen WPA sürümü şu anda yalnızca Windows ADK Insider Preview'da kullanılabilir. Bu önizlemeye erişmek için Windows [Insider programına](https://insider.windows.com)kaydolmalısınız. Windows ADK önizlemesini elde etmek için Windows 10 Insider Preview işletim sistemini yüklemeniz gerekmez. Microsoft hesabınızı yalnızca Windows Insider Programı'na kaydetmeniz gerekir.
+C++ derleme öngörülerini destekleyen bir WPA sürümü şu anda yalnızca Windows ADK Insider Preview 'da bulunabilir. Bu önizlemeye erişmek için [Windows Insider programına](https://insider.windows.com)kaydolmanız gerekir. Windows ADK önizlemesi 'ni edinmek için Windows 10 Insider Preview işletim sistemini yüklemeniz gerekmez. Yalnızca Microsoft hesabı Windows Insider programı ile kaydetmeniz gerekir.
 
-### <a name="to-download-and-install-wpa"></a>WPA'yı indirmek ve yüklemek için
+### <a name="to-download-and-install-wpa"></a>WPA 'Yı indirmek ve yüklemek için
 
-NOT: Windows Performans Çözümleyicisini yüklemek için Windows 8 veya üzeri gereklidir.
+NOTE: Windows Performans Çözümleyicisi 'ni yüklemek için Windows 8 veya üzeri gereklidir.
 
-1. Windows ADK Insider Preview [indirme sayfasına](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewADK)göz atın.
+1. Windows ADK [indirme sayfasına](https://docs.microsoft.com/windows-hardware/get-started/adk-install)gidin.
 
-1. Windows ADK Insider Önizlemesini indirin. Bu bir disk görüntüsü.
+1. Windows ADK 'nin en son sürümünü indirip yükleyin.
 
-1. Disk görüntüsünü açın ve *adksetup.exe* yükleyicisini çalıştırın.
+1. Yüklemek istediğiniz özellikler istendiğinde, **Windows performans araç seti**' ni seçin. İsterseniz diğer özellikleri seçebilirsiniz, ancak WPA 'Yı yüklemek gerekli değildir.
 
-1. Yüklemek istediğiniz özellikler için istendiğinde, Windows **Performance Toolkit'i**seçin. İsterseniz diğer özellikleri seçebilirsiniz, ancak WPA'yı yüklemeleri gerekmez.
+   ![Windows Performans Çözümleyicisi yükleyicisi 'nin Özellik seçimi ekranı](media/wpa-installation.png)
 
-   ![Windows Performans Çözümleyicisi yükleyicinin özellik seçim ekranı](media/wpa-installation.png)
+### <a name="to-configure-wpa"></a><a name="configuration-steps"></a>WPA 'Yı yapılandırmak için
 
-### <a name="to-configure-build-insights"></a><a name="configuration-steps"></a>Yapı Öngörüleri yapılandırmak için
+WPA 'da C++ derleme öngörülerini görüntüleme özel bir eklenti gerektirir. Yüklemek için aşağıdaki adımları izleyin:
 
-1. WPA'yı başlatın.
+1. Aşağıdaki bileşenlerden birini indirerek eklentiyi edinin. Her ikisini de almanız gerekmez. En uygun bulduğunuz birini seçin.
+    1. [Visual Studio 2019 sürüm 16,6 ve üzeri](https://visualstudio.microsoft.com/downloads/), ya da
+    1. [C++ derleme öngörüleri NuGet paketi](https://www.nuget.org/packages/Microsoft.Cpp.BuildInsights/).
 
-1. **Pencere** > **Seç Tabloları 'ni seçin (Deneme)**.
+1. `perf_msvcbuildinsights.dll`Dosyayı WPA yükleme dizininize kopyalayın.
+    1. Visual Studio 2019 sürüm 16,6 ve üzeri sürümlerde, bu dosya şurada bulunur: `C:\Program Files (x86)\Microsoft Visual Studio\2019\{Edition}\VC\Tools\MSVC\{Version}\bin\Host{Architecture}\{Architecture}` .
+    1. C++ derleme öngörüleri NuGet paketinde bu dosya şurada bulunur: `wpa\{Architecture}` .
+    1. Yukarıdaki yollarda, küme ayraçları ile çevrelenen değişkenleri aşağıdaki gibi değiştirin:
+        1. `{Edition}`Community, Professional veya Enterprise gibi Visual Studio 2019 sürümünüz.
+        1. `{Version}`MSVC sürümdür. Kullanılabilir en yüksek olanı seçin.
+        1. `{Architecture}`: `x64` Windows 'un 64 bit sürümüne sahip olup olmadığını seçin. Aksi takdirde, öğesini seçin `x86` .
+    1. WPA yükleme dizini genellikle: `C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit` .
 
-1. **Tanılama** bölümüne gidin.
+1. WPA yükleme dizininizde, `perfcore.ini` dosyasını açın ve için bir giriş ekleyin `perf_msvcbuildinsights.dll` .
 
-1. Tüm MSVC Build Insights görünümlerini seçin.
+## <a name="step-2-trace-your-build-with-vcperfexe"></a>2. Adım: vcperf. exe ile derlemenizi Izleme
 
-   ![Windows Performans Çözümleyicisi tablo seçim paneli](media/wpa-configuration.png)
+C++ derleme öngörüleri verilerini görüntülemek için, önce aşağıdaki adımları izleyerek bir izleme dosyasında toplayın:
 
-## <a name="step-2-trace-your-build-with-vcperfexe"></a>Adım 2: vcperf.exe ile yapınızı takip edin
+1. Yönetici modunda **VS 2019 için** bir **x64** veya x86 yerel araçları komut istemi açın. (Başlat menüsü öğesine sağ tıklayıp **daha fazla**  >  öğesini seçin **Yönetici olarak çalıştır**.)
+    1. Windows 'un 64 bit sürümüne sahipseniz **x64** seçeneğini belirleyin. Aksi takdirde, **x86**' yı seçin.
 
-C++ Build Insights verilerini görüntülemek için önce aşağıdaki adımları izleyerek bir izleme dosyasında toplayın:
+1. Komut istemi penceresinde şu komutu girin:
 
-1. Yönetici modunda Visual Studio 2019 için yerel araçlar veya çapraz araçlar geliştirici komut istemi açın. (Başlat menüsü öğesini sağ tıklatın ve yönetici olarak **Daha Fazla** > **Çalıştır'ı**seçin.)
+   **vcperf. exe/Start _oturumadı_**
 
-1. Komut istemi penceresinde, şu komutu girin:
+   *Oturumadı*için hatırlayacaksınız bir oturum adı seçin.
 
-   **vcperf.exe /başlangıç _SessionName_**
+1. Projenizi normalde yaptığınız şekilde derleyin. Derlemek için aynı komut istemi penceresini kullanmanız gerekmez.
 
-   *SessionName*için hatırlayacağınız bir oturum adı seçin.
+1. Komut istemi penceresinde şu komutu girin:
 
-1. Projenizi normalde yaptığınız gibi oluşturun. Oluşturmak için aynı komut istemi penceresini kullanmanız gerekmez.
+   **vcperf. exe/Stop _oturumadı_ _TraceFile. etl_**
 
-1. Komut istemi penceresinde, şu komutu girin:
+   Daha önce *oturumadı* için seçtiğiniz oturum adını kullanın. *TraceFile. etl* trace dosyası için uygun bir ad seçin.
 
-   **vcperf.exe /stop _SessionName_ _traceFile.etl_**
+Tipik bir *vcperf. exe* komut sırası, geliştirici komut istemi penceresinde şöyle görünür:
 
-   *SessionName* için daha önce seçtiğiniz oturum adını kullanın. *traceFile.etl* trace dosyası için uygun bir ad seçin.
+![Basit bir vcperf. exe kullanım senaryosu](media/vcperf-simple-usage.png)
 
-Tipik bir *vcperf.exe* komut dizisi geliştirici komut istemi penceresinde şu şekilde görünür:
+### <a name="important-notes-about-vcperfexe"></a>Vcperf. exe hakkında önemli notlar
 
-![Basit bir vcperf.exe kullanım senaryosu](media/vcperf-simple-usage.png)
+- Bir *vcperf. exe* izlemesini başlatmak veya durdurmak için yönetici ayrıcalıkları gerekir. **Yönetici olarak çalıştır**'ı kullanarak açtığınız bir geliştirici komut istemi penceresi kullanın.
 
-### <a name="important-notes-about-vcperfexe"></a>vcperf.exe hakkında önemli notlar
+- Bir makinede tek seferde yalnızca bir izleme oturumu çalıştırılabilir.
 
-- Yönetici ayrıcalıkları başlatmak veya bir *vcperf.exe* izleme durdurmak için gereklidir. **Çalıştır'ı yönetici olarak**kullanarak açtığınız geliştirici komut istemi pencereni kullanın.
+- İzlemeyi başlatmak için kullandığınız oturum adını unutduğunuzdan emin olun. Bir çalışan oturumu adını bilmeden durdurmak için sorunlu olabilir.
 
-- Bir makinede aynı anda yalnızca bir izleme oturumu çalışabilir.
+- Yalnızca *CL. exe* ve *LINK. exe*gibi komut satırı yardımcı programı *VCPERF. exe* bir MSVC yüklemesinde bulunur. Bu bileşeni edinmek için ek adım gerekmez.
 
-- İzlemenizi başlatmak için kullandığınız oturum adını hatırladığınızdan emin olun. Adını bilmeden çalışan bir oturumu durdurmak zahmetli olabilir.
+- *vcperf. exe* , sisteminizde çalışan tüm MSVC araçları hakkında bilgi toplar. Sonuç olarak, derlemenizi, izlemeyi toplamak için kullandığınız komut isteminden başlatmanız gerekmez. Projenizi farklı bir komut isteminden ya da Visual Studio 'da oluşturabilirsiniz.
 
-- Cl.exe ve *link.exe*gibi, komut satırı programı *vcperf.exe* bir MSVC yükleme dahildir. *cl.exe* Bu bileşeni elde etmek için ek adım gerekmez.
+### <a name="vcperfexe-is-open-source"></a>vcperf. exe açık kaynaklı
 
-- *vcperf.exe* sisteminizde çalışan tüm MSVC araçları hakkında bilgi toplar. Sonuç olarak, izlemeyi toplamak için kullandığınız komut isteminden yapınızı başlatmanız gerekmez. Projenizi farklı bir komut isteminden veya Visual Studio'dan oluşturabilirsiniz.
+Kendi *vcperf. exe*sürümünüzü derlemek ve çalıştırmak istiyorsanız, bunu [vcperf GitHub deposundan](https://github.com/microsoft/vcperf)klonlayın.
 
-## <a name="step-3-view-your-trace-in-windows-performance-analyzer"></a>Adım 3: Windows Performans Çözümleyicisi'nde izinizi görüntüleyin
+## <a name="step-3-view-your-trace-in-windows-performance-analyzer"></a>3. Adım: Windows Performans Çözümleyicisi 'nde izlemenizi görüntüleme
 
-WPA'yı başlatın ve az önce topladığınız izi açın. WPA bunu c++ Build Insights izleme olarak tanımalı ve soldaki Grafik Gezgini panelinde aşağıdaki görünümler görünmelidir:
+WPA 'Yı başlatın ve yeni topladığınız izlemeyi açın. WPA bunu bir C++ Build Insights izlemesi olarak tanıması gerekir ve sol taraftaki grafik Gezgini panelinde aşağıdaki görünümler görünmelidir:
 
-- Explorer oluştur
+- Yapı Gezgini
 - Dosyalar
-- İşlev
+- İşlevler
+- Şablon örneklemeleri
 
-Bu görünümleri göremiyorsanız, [Adım 1'de](#configuration-steps)açıklandığı gibi WPA'nın doğru şekilde yapılandırıldığından iki kez denetleyin. Görünümleri sağdaki boş Çözümleme penceresine sürükleyerek yapı verilerinizi görüntüleyebilirsiniz:
+Bu görünümleri göremiyorsanız, [1. adım](#configuration-steps)bölümünde açıklandığı gıbı, WPA 'nın doğru şekilde yapılandırıldığından emin olun. Aşağıdaki şekilde gösterildiği gibi, görünümleri sağ taraftaki boş analiz penceresine sürükleyerek yapı verilerinizi görüntüleyebilirsiniz:
 
-![Windows Performans Çözümleyicisinde C++ Yapı Öngörüleri izleme](media/wpa-viewing-trace.gif)
+![Windows Performans Çözümleyicisi 'nde C++ derleme öngörüleri izlemesini görüntüleme](media/wpa-viewing-trace.gif)
 
-Diğer görünümler Graph Explorer panelinde mevcuttur. İçerdikleri bilgilerle ilgilendiğinizde bunları Çözümleme penceresine sürükleyin. Yararlı bir CPU (Örneklenmiş) görünümü, yapı boyunca CPU kullanımını gösterir.
+Grafik Gezgini panelinde diğer görünümler de mevcuttur. İçerdikleri bilgilerle ilgileniyor olduğunuzda bunları analiz penceresine sürükleyin. Yararlı bir tane, derleme genelinde CPU kullanımını gösteren CPU (örneklenmiş) görünümüdür.
 
 ## <a name="more-information"></a>Daha fazla bilgi
 
 [Öğretici: Windows Performans Çözümleyicisi temelleri](wpa-basics.md)\
-Yapı izlemelerinizi çözümlemenize yardımcı olabilecek yaygın WPA işlemleri hakkında bilgi edinin.
+Derleme izlemelerinizi çözümlemenize yardımcı olabilecek genel WPA işlemleri hakkında bilgi edinin.
 
-[Referans: vcperf komutları](/cpp/build-insights/reference/vcperf-commands)\
-*Vcperf.exe* komut başvurusu tüm kullanılabilir komut seçeneklerini listeler.
+[Reference: vcperf komutları](/cpp/build-insights/reference/vcperf-commands)\
+*Vcperf. exe* komut başvurusu, kullanılabilir tüm komut seçeneklerini listeler.
 
-[Başvuru: Windows Performans Çözümleyicisi görünümleri](/cpp/build-insights/reference/wpa-views)\
-WPA'daki C++ Build Insights görünümleri hakkında ayrıntılar için bu makaleye bakın.
+[Başvuru: Windows Performans Çözümleyici görünümleri](/cpp/build-insights/reference/wpa-views)\
+WPA 'daki C++ derleme öngörüleri görünümleri hakkında daha fazla bilgi için bu makaleye bakın.
 
-[Windows Performans Analizörü](/windows-hardware/test/wpt/windows-performance-analyzer)\
-Resmi WPA dokümantasyon sitesi.
+[Windows Performans Çözümleyicisi](/windows-hardware/test/wpt/windows-performance-analyzer)\
+Resmi WPA belge sitesi.
 
 ::: moniker-end
