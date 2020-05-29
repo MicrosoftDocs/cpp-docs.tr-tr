@@ -6,7 +6,6 @@
     - name: ATL ve MFC kavramları
       href: ../atl-mfc-shared/atl-mfc-concepts.md
     - name: Tarih ve Saat
-      expanded: false
       items:
         - name: Tarih ve Saat verileri
           href: ../atl-mfc-shared/date-and-time.md
@@ -18,12 +17,10 @@
         - name: Dizeler (ATL-MFC)
           href: ../atl-mfc-shared/strings-atl-mfc.md
         - name: CStringT kullanma
-          expanded: false
           items:
             - name: CStringT kullanma
               href: ../atl-mfc-shared/using-cstringt.md
             - name: CStringT ile bellek yönetimi
-              expanded: false
               items:
                 - name: CStringT ile bellek yönetimi
                   href: ../atl-mfc-shared/memory-management-with-cstringt.md
@@ -38,7 +35,6 @@
             - name: CStringT kullanarak dize sınıflarını dışarı aktarma
               href: ../atl-mfc-shared/exporting-string-classes-using-cstringt.md
         - name: CString kullanma
-          expanded: false
           items:
             - name: CString kullanma
               href: ../atl-mfc-shared/using-cstring.md
@@ -59,8 +55,9 @@
             - name: Unicode ve çok baytlı karakter kümesi (MBCS) desteği
               href: ../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md
 - name: Başvuru
-  expanded: false
   items:
+    - name: MFC ve ATL tarafından Paylaşılan Sınıflar
+      href: ../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md
     - name: CSize sınıfı
       href: ../atl-mfc-shared/reference/csize-class.md
     - name: CTimeSpan sınıfı
@@ -69,16 +66,12 @@
       href: ../atl-mfc-shared/reference/coledatetime-class.md
     - name: CRect sınıfı
       href: ../atl-mfc-shared/reference/crect-class.md
-    - name: MFC ve ATL tarafından Paylaşılan Sınıflar
-      href: ../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md
     - name: CPoint sınıfı
       href: ../atl-mfc-shared/reference/cpoint-class.md
     - name: CStringT sınıfı
       href: ../atl-mfc-shared/reference/cstringt-class.md
     - name: COleDateTimeSpan sınıfı
       href: ../atl-mfc-shared/reference/coledatetimespan-class.md
-    - name: IAtlStringMgr sınıfı
-      href: ../atl-mfc-shared/reference/iatlstringmgr-class.md
     - name: CFixedStringT sınıfı
       href: ../atl-mfc-shared/reference/cfixedstringt-class.md
     - name: CStrBufT sınıfı
@@ -95,3 +88,5 @@
       href: ../atl-mfc-shared/reference/csimplestringt-class.md
     - name: CTime sınıfı
       href: ../atl-mfc-shared/reference/ctime-class.md
+    - name: IAtlStringMgr sınıfı
+      href: ../atl-mfc-shared/reference/iatlstringmgr-class.md
