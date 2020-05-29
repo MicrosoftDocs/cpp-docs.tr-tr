@@ -1,133 +1,133 @@
 ---
-title: 'İzim Süresi: Geleneksel bir Windows Masaüstü uygulaması oluşturma (C++)'
-description: Visual Studio, C++ve Win32 API'sini kullanarak en az, geleneksel Windows Masaüstü uygulaması nasıl oluşturulur?
+title: 'İzlenecek yol: geleneksel Windows masaüstü uygulaması oluşturma (C++)'
+description: Visual Studio, C++ ve Win32 API kullanarak en düşük, geleneksel Windows masaüstü uygulaması oluşturma
 ms.custom: get-started-article
-ms.date: 11/03/2019
+ms.date: 05/28/2020
 helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: da74778e79a08dd3ed2b5be0675981425264bdc0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ac141c6ce9e4cce37b72808de488df7f94d116f7
+ms.sourcegitcommit: 426e327c9f7c3a3b02300e3f924f9786d62958e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81351846"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84206212"
 ---
-# <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzim Süresi: Geleneksel bir Windows Masaüstü uygulaması oluşturma (C++)
+# <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: geleneksel Windows masaüstü uygulaması oluşturma (C++)
 
-Bu walkthrough Visual Studio'da geleneksel bir Windows masaüstü uygulamasının nasıl oluşturulacagIni gösterir. Oluşturacağınız örnek uygulama, "Merhaba, Windows masaüstünü" görüntülemek için Windows API'sını kullanır. bir pencerede. Bu izbeden geliştirdiğiniz kodu, diğer Windows masaüstü uygulamaları oluşturmak için desen olarak kullanabilirsiniz.
+Bu izlenecek yol, Visual Studio 'da geleneksel bir Windows masaüstü uygulaması oluşturmayı gösterir. Oluşturacağınız örnek uygulama, "Merhaba, Windows Desktop!" öğesini göstermek için Windows API 'sini kullanır. bir pencerede. Bu kılavuzda geliştirdiğiniz kodu, diğer Windows Masaüstü uygulamaları oluşturmak için bir model olarak kullanabilirsiniz.
 
-Windows API (Win32 API, Windows Desktop API ve Windows Classic API olarak da bilinir) Windows uygulamaları oluşturmak için C dili tabanlı bir çerçevedir. 1980'lerden beri varlığını olmuştur ve yıllardır Windows uygulamaları oluşturmak için kullanılmıştır. Windows API'nın üzerine daha gelişmiş ve programa daha kolay çerçeveler oluşturulmuştür. Örneğin, MFC, ATL, .NET çerçeveleri. C++/WinRT'de yazılmış UWP ve Store uygulamaları için en modern Windows Runtime kodu bile altındaki Windows API'sını kullanır. Windows API hakkında daha fazla bilgi için [Windows API Dizini'ne](/windows/win32/apiindex/windows-api-list)bakın. Windows uygulamaları oluşturmanın birçok yolu vardır, ancak yukarıdaki işlem ilkidir.
+Windows API (Win32 API, Windows Masaüstü API 'SI ve Windows Classic API olarak da bilinir), Windows uygulamaları oluşturmak için C dili tabanlı bir çerçevedir. 1980 ' den bu yana mevcut ve Decades için Windows uygulamaları oluşturmak üzere kullanılmıştır. Windows API 'nin üzerine daha gelişmiş ve daha kolay program çerçeveleri oluşturulmuştur. Örneğin, MFC, ATL, .NET Framework. UWP ve C++/Wınrt 'de yazılan uygulamalar için en modern Windows Çalışma Zamanı Kodu bile, altında Windows API kullanır. Windows API 'SI hakkında daha fazla bilgi için bkz. [WINDOWS API dizini](/windows/win32/apiindex/windows-api-list). Windows uygulamaları oluşturmanın birçok yolu vardır, ancak yukarıdaki işlem ilk ilkiydi.
 
 > [!IMPORTANT]
-> Kısalık adına, metinde bazı kod deyimleri atlanır. Bu [belgenin sonundaki kod](#build-the-code) oluşturma bölümü kodun tamamını gösterir.
+> Kısaltma açısından, bazı kod deyimleri metinde atlanır. Bu belgenin sonundaki [kod oluştur](#build-the-code) bölümünde kodun tamamı gösterilmektedir.
 
 ## <a name="prerequisites"></a>Ön koşullar
 
-- Microsoft Windows 7 veya sonraki sürümleri çalıştıran bir bilgisayar. En iyi geliştirme deneyimi için Windows 10'u öneririz.
+- Microsoft Windows 7 veya sonraki sürümlerini çalıştıran bir bilgisayar. En iyi geliştirme deneyimi için Windows 10 ' un kullanılması önerilir.
 
-- Visual Studio'nun bir kopyası. Visual Studio'u nasıl indirip yükleyin, [bkz.](/visualstudio/install/install-visual-studio) Yükleyiciyi çalıştırdığınızda, C++ iş yüküne **sahip Masaüstü geliştirmenin** denetlendiğinden emin olun. Visual Studio'yı yüklediğinizde bu iş yükünü yüklemediyseniz endişelenmeyin. Yükleyiciyi yeniden çalıştırıp şimdi yükleyebilirsiniz.
+- Visual Studio 'nun bir kopyası. Visual Studio 'Yu indirme ve yükleme hakkında daha fazla bilgi için bkz. [Visual Studio 'Yu yükleme](/visualstudio/install/install-visual-studio). Yükleyiciyi çalıştırdığınızda, C++ iş yüküyle **masaüstü geliştirme** 'nın işaretli olduğundan emin olun. Visual Studio 'Yu yüklerken bu iş yükünü yüklemediyseniz endişelenmeyin. Yükleyiciyi yeniden çalıştırabilir ve şimdi yükleyebilirsiniz.
 
    ![C++ ile masaüstü geliştirme](../build/media/desktop-development-with-cpp.png "C++ ile masaüstü geliştirme")
 
-- Visual Studio IDE kullanmanın temelleri hakkında bir anlayış. Windows masaüstü uygulamalarını daha önce kullandıysanız, büyük olasılıkla ayak uydurabilirsiniz. Giriş için [Visual Studio IDE özellik turuna](/visualstudio/ide/visual-studio-ide)bakın.
+- Visual Studio IDE kullanmanın temellerini anlama. Daha önce Windows Masaüstü uygulamaları kullandıysanız muhtemelen izleyebilirsiniz. Giriş için bkz. [Visual STUDIO IDE Özellik turu](/visualstudio/ide/visual-studio-ide).
 
-- C++ dilinin temellerinin yeterince anlaşılması. Merak etme, çok karmaşık bir şey yapmayız.
+- C++ dilinin takip etmek için temel sayısının yeterince anlaşılmasıdır. Endişelenmeyin, çok karmaşık bir şey yapmadık.
 
-## <a name="create-a-windows-desktop-project"></a>Windows masaüstü projesi oluşturma
+## <a name="create-a-windows-desktop-project"></a>Windows Masaüstü projesi oluşturma
 
-İlk Windows masaüstü projenizi oluşturmak için aşağıdaki adımları izleyin. Gittiğinizde, çalışan bir Windows masaüstü uygulamasının kodunu girersiniz. Visual Studio'nun tercih ettiğiniz sürümüiçin belgeleri görmek için **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+İlk Windows Masaüstü projenizi oluşturmak için bu adımları izleyin. Hareket halindeyken, çalışan bir Windows masaüstü uygulaması için kodu girersiniz. Visual Studio 'nun tercih ettiğiniz sürümüne ilişkin belgeleri görmek için, **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker range="vs-2019"
 
-### <a name="to-create-a-windows-desktop-project-in-visual-studio-2019"></a>Visual Studio 2019'da bir Windows masaüstü projesi oluşturmak için
+### <a name="to-create-a-windows-desktop-project-in-visual-studio-2019"></a>Visual Studio 2019 ' de bir Windows Masaüstü projesi oluşturmak için
 
-1. Ana menüden, **Yeni Proje Oluştur** iletişim kutusunu açmak için **Yeni** > **Proje** **Dosyası'nı** > seçin.
+1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden dosya yeni **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında, **Dil'i** **C++** olarak ayarlayın, **Platform'u** **Windows'a**ayarlayın ve **Project türünü** **Masaüstüne**ayarlayın.
+1. İletişim kutusunun üst kısmında, **dili** **C++** olarak ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **Masaüstü**olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **Windows Masaüstü Sihirbazı'nı** seçin ve **ardından İleri'yi**seçin. Bir sonraki sayfaya, örneğin *DesktopApp*gibi proje için bir ad girin.
+1. Filtre uygulanmış proje türleri listesinden **Windows Masaüstü Sihirbazı** ' nı seçin ve ardından **İleri**' yi seçin. Sonraki sayfada, proje için bir ad girin, örneğin, *Desktopapp*.
 
 1. Projeyi oluşturmak için **Oluştur** düğmesini seçin.
 
-1. **Windows Desktop Project** iletişim kutusu şimdi görüntülenir. **Uygulama türüaltında,** **Masaüstü uygulamasını (.exe)** seçin. **Ek seçenekler**altında, **Boş proje'yi**seçin. Projeyi oluşturmak için **Tamam'ı** seçin.
+1. **Windows Masaüstü projesi** iletişim kutusu artık görüntülenir. **Uygulama türü**altında **Masaüstü uygulaması (. exe)** seçeneğini belirleyin. **Ek seçenekler**altında **boş proje**' yi seçin. Projeyi oluşturmak için **Tamam ' ı** seçin.
 
-1. **Solution Explorer'da** **DesktopApp** projesine sağ tıklayın, **Ekle'yi**seçin ve ardından **Yeni Öğe'yi**seçin.
+1. **Çözüm Gezgini**, **Desktopapp** projesine sağ tıklayın, **Ekle**' yi ve ardından **Yeni öğe**' yi seçin.
 
-   ![DesktopApp Projesi'ne yeni öğe ekleme](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp Projesi'ne yeni öğe ekleme")
+   ![DesktopApp projesine yeni öğe Ekle](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp projesine yeni öğe Ekle")
 
-1. Yeni **Öğe Ekle** iletişim kutusunda **C++ Dosyası (.cpp)** seçeneğini belirleyin. **Ad** kutusuna, örneğin *HelloWindowsDesktop.cpp*gibi dosya için bir ad yazın. **Ekle'yi**seçin.
+1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin. **Ad** kutusuna dosya için bir ad yazın, örneğin, *hellowindowsdesktop. cpp*. **Ekle**' yi seçin.
 
-   ![DesktopApp Project'e .cpp dosyası ekle](../build/media/desktop-app-add-cpp-file-153.png "DesktopApp Project'e .cpp dosyası ekle")
+   ![. Cpp dosyasını DesktopApp projesine ekleyin](../build/media/desktop-app-add-cpp-file-153.png ". Cpp dosyasını DesktopApp projesine ekleyin")
 
-Projeniz şimdi oluşturuldu ve kaynak dosyanız düzenleyicide açıldı. Devam etmek [için, kodu oluşturmak](#create-the-code)için ileri atlayın.
+Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam etmek için, [kodu oluşturma](#create-the-code)bölümüne atlayın.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-### <a name="to-create-a-windows-desktop-project-in-visual-studio-2017"></a>Visual Studio 2017'de bir Windows masaüstü projesi oluşturmak için
+### <a name="to-create-a-windows-desktop-project-in-visual-studio-2017"></a>Visual Studio 2017 ' de bir Windows Masaüstü projesi oluşturmak için
 
-1. **Dosya** menüsünde **Yeni'yi** seçin ve ardından **Project'i**seçin.
+1. **Dosya** menüsünde **Yeni** ' yi ve ardından **Proje**' yi seçin.
 
-1. Yeni **Proje** iletişim kutusunda, sol bölmede, **Yüklü** > **Visual C++** genişletin, ardından **Windows Desktop'ı**seçin. Orta bölmede Windows **Masaüstü Sihirbazı'nı**seçin.
+1. **Yeni proje** iletişim kutusunda, sol bölmede, **yüklü**  >  **Visual C++**' i genişletin ve ardından **Windows Masaüstü**' nü seçin. Orta bölmede **Windows Masaüstü Sihirbazı**' nı seçin.
 
-   **Ad** kutusuna, örneğin *DesktopApp*gibi proje için bir ad yazın. **Tamam'ı**seçin.
+   **Ad** kutusuna proje için bir ad yazın, örneğin, *Desktopapp*. **Tamam ' ı**seçin.
 
    ![DesktopApp projesini adlandırın](../build/media/desktop-app-new-project-name-153.png "DesktopApp projesini adlandırın")
 
-1. Windows **Desktop Project** iletişim kutusunda, **Uygulama türü**altında Windows **uygulamasını (.exe)** seçin. **Ek seçenekler**altında, **Boş proje'yi**seçin. Önceden **Derlenmiş Üstbilginin** seçilmediğinden emin olun. Projeyi oluşturmak için **Tamam'ı** seçin.
+1. **Windows Masaüstü projesi** iletişim kutusunda, **uygulama türü**altında **Windows uygulaması (. exe)** öğesini seçin. **Ek seçenekler**altında **boş proje**' yi seçin. **Önceden derlenmiş üstbilginin** seçili olmadığından emin olun. Projeyi oluşturmak için **Tamam ' ı** seçin.
 
-1. **Solution Explorer'da** **DesktopApp** projesine sağ tıklayın, **Ekle'yi**seçin ve ardından **Yeni Öğe'yi**seçin.
+1. **Çözüm Gezgini**, **Desktopapp** projesine sağ tıklayın, **Ekle**' yi ve ardından **Yeni öğe**' yi seçin.
 
-   ![DesktopApp Projesi'ne yeni öğe ekleme](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp Projesi'ne yeni öğe ekleme")
+   ![DesktopApp projesine yeni öğe Ekle](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp projesine yeni öğe Ekle")
 
-1. Yeni **Öğe Ekle** iletişim kutusunda **C++ Dosyası (.cpp)** seçeneğini belirleyin. **Ad** kutusuna, örneğin *HelloWindowsDesktop.cpp*gibi dosya için bir ad yazın. **Ekle'yi**seçin.
+1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin. **Ad** kutusuna dosya için bir ad yazın, örneğin, *hellowindowsdesktop. cpp*. **Ekle**' yi seçin.
 
-   ![DesktopApp Project'e .cpp dosyası ekle](../build/media/desktop-app-add-cpp-file-153.png "DesktopApp Project'e .cpp dosyası ekle")
+   ![. Cpp dosyasını DesktopApp projesine ekleyin](../build/media/desktop-app-add-cpp-file-153.png ". Cpp dosyasını DesktopApp projesine ekleyin")
 
-Projeniz şimdi oluşturuldu ve kaynak dosyanız düzenleyicide açıldı. Devam etmek [için, kodu oluşturmak](#create-the-code)için ileri atlayın.
+Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam etmek için, [kodu oluşturma](#create-the-code)bölümüne atlayın.
 
 ::: moniker-end
 
 ::: moniker range="vs-2015"
 
-### <a name="to-create-a-windows-desktop-project-in-visual-studio-2015"></a>Visual Studio 2015'te bir Windows masaüstü projesi oluşturmak için
+### <a name="to-create-a-windows-desktop-project-in-visual-studio-2015"></a>Visual Studio 2015 ' de bir Windows Masaüstü projesi oluşturmak için
 
-1. **Dosya** menüsünde **Yeni'yi** seçin ve ardından **Project'i**seçin.
+1. **Dosya** menüsünde **Yeni** ' yi ve ardından **Proje**' yi seçin.
 
-1. Yeni **Proje** iletişim kutusunda, sol bölmede, **Yüklü** > **Şablonlar** > **Görsel C++** genişletmek ve sonra **Win32**seçin. Orta bölmede **Win32 Projesi'ni**seçin.
+1. **Yeni proje** iletişim kutusunda, sol bölmede, **yüklü**  >  **Şablonlar**  >  **Visual C++**' ı genişletin ve ardından **Win32**' yi seçin. Orta bölmede **Win32 projesi**' ni seçin.
 
-   **Ad** kutusuna, örneğin *DesktopApp*gibi proje için bir ad yazın. **Tamam'ı**seçin.
+   **Ad** kutusuna proje için bir ad yazın, örneğin, *Desktopapp*. **Tamam ' ı**seçin.
 
    ![DesktopApp projesini adlandırın](../build/media/desktop-app-new-project-name-150.png "DesktopApp projesini adlandırın")
 
-1. **Win32 Uygulama Sihirbazı'nın** **Genel Bakış** sayfasında **İleri'yi**seçin.
+1. **Win32 uygulama Sihirbazı**' nın **genel bakış** sayfasında **İleri**' yi seçin.
 
-   ![Win32 Uygulama Sihirbazına Genel Bakış'ta DesktopApp Oluşturun](../build/media/desktop-app-win32-wizard-overview-150.png "Win32 Uygulama Sihirbazına Genel Bakış'ta DesktopApp Oluşturun")
+   ![Win32 uygulama Sihirbazına Genel Bakış 'da DesktopApp oluşturma](../build/media/desktop-app-win32-wizard-overview-150.png "Win32 uygulama Sihirbazına Genel Bakış 'da DesktopApp oluşturma")
 
-1. Uygulama **Ayarları** sayfasında, **Uygulama türü** **altında, Windows uygulamasını**seçin. **Ek seçenekler**altında, **Önceden Derlenmiş üstbilginin**işaretlerini kaldırın, ardından **Boş projeyi**seçin. Projeyi oluşturmak için **Finish'i** seçin.
+1. **Uygulama ayarları** sayfasında, **uygulama türü**altında **Windows uygulaması**' nı seçin. **Ek seçenekler**altında, **önceden derlenmiş üstbilginin**Işaretini kaldırın, sonra **boş proje**' yi seçin. Projeyi oluşturmak için **son** ' a tıklayın.
 
-1. **Solution Explorer'da**DesktopApp projesine sağ tıklayın, **Ekle'yi**seçin ve ardından **Yeni Öğe'yi**seçin.
+1. **Çözüm Gezgini**, DesktopApp projesine sağ tıklayın, **Ekle**' yi ve ardından **Yeni öğe**' yi seçin.
 
-   ![DesktopApp Projesi'ne yeni öğe ekleme](../build/media/desktop-app-project-add-new-item-150.gif "DesktopApp Projesi'ne yeni öğe ekleme")
+   ![DesktopApp projesine yeni öğe Ekle](../build/media/desktop-app-project-add-new-item-150.gif "DesktopApp projesine yeni öğe Ekle")
 
-1. Yeni **Öğe Ekle** iletişim kutusunda **C++ Dosyası (.cpp)** seçeneğini belirleyin. **Ad** kutusuna, örneğin *HelloWindowsDesktop.cpp*gibi dosya için bir ad yazın. **Ekle'yi**seçin.
+1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin. **Ad** kutusuna dosya için bir ad yazın, örneğin, *hellowindowsdesktop. cpp*. **Ekle**' yi seçin.
 
-   ![DesktopApp Project'e .cpp dosyası ekle](../build/media/desktop-app-add-cpp-file-150.png "DesktopApp Project'e .cpp dosyası ekle")
+   ![. Cpp dosyasını DesktopApp projesine ekleyin](../build/media/desktop-app-add-cpp-file-150.png ". Cpp dosyasını DesktopApp projesine ekleyin")
 
-Projeniz şimdi oluşturuldu ve kaynak dosyanız düzenleyicide açıldı.
+Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır.
 
 ::: moniker-end
 
 ## <a name="create-the-code"></a>Kodu oluşturma
 
-Ardından, Visual Studio'da bir Windows masaüstü uygulamasının kodunu nasıl oluşturacağınız öğrenilir.
+Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluşturmayı öğreneceksiniz.
 
-### <a name="to-start-a-windows-desktop-application"></a>Windows masaüstü uygulamasını başlatmak için
+### <a name="to-start-a-windows-desktop-application"></a>Bir Windows masaüstü uygulamasını başlatmak için
 
-1. Her C uygulaması ve C++ uygulamasının başlangıç noktası olarak bir `main` işlevi olması `WinMain` gerektiği gibi, her Windows masaüstü uygulamasının da bir işlevi olmalıdır. `WinMain`aşağıdaki sözdizimine sahiptir.
+1. Her C uygulamasının ve C++ uygulamasının `main` Başlangıç noktası olarak bir işlevi olması gerektiği gibi, her Windows masaüstü uygulamasında bir işlev olması gerekir `WinMain` . `WinMain`aşağıdaki sözdizimine sahiptir.
 
    ```cpp
    int CALLBACK WinMain(
@@ -138,19 +138,19 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulamasının kodunu nasıl
    );
    ```
 
-   Bu işlevin parametreleri ve geri dönüş değeri hakkında bilgi için [WinMain giriş noktasına](/windows/win32/api/winbase/nf-winbase-winmain)bakın.
+   Bu işlevin parametreleri ve dönüş değeri hakkında daha fazla bilgi için bkz. [WinMain giriş noktası](/windows/win32/api/winbase/nf-winbase-winmain).
 
    > [!NOTE]
-   > Tüm bu ekstra kelimeler `CALLBACK` `HINSTANCE` `_In_`nedir? Geleneksel Windows API' stypedefs ve önişlemci makroları, çağrı kuralları, **__declspec** bildirimleri ve derleyici pragmas gibi tür ve platforma özgü kodun bazı ayrıntılarını özetlemek için kapsamlı olarak kullanır. Visual Studio'da, bu typedef'lerin ve makroların tanımladığını görmek için IntelliSense [Hızlı Bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliğini kullanabilirsiniz. Farenizi ilgi alanı sözcüğünün üzerine tökezleveya seçin ve tanımı nı içeren küçük bir açılır pencere için **Ctrl**+**K**, **Ctrl**+**I** tuşuna basın. Daha fazla bilgi için [IntelliSense'i kullanma bilgisine](/visualstudio/ide/using-intellisense)bakın. Parametreler ve iade türleri genellikle programlama hatalarını yakalamanıza yardımcı olmak için *SAL Ek Açıklamalarını* kullanır. Daha fazla bilgi için [C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma'ya](/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)bakın.
+   > Ya da veya gibi tüm ek sözcükler nelerdir `CALLBACK` `HINSTANCE` `_In_` ? Geleneksel Windows API 'si, tür ayrıntılarının ve platforma özgü kodun, çağırma kuralları, **__declspec** bildirimleri ve derleyici pragmaları gibi ayrıntıların bazılarını soyutlamak için kapsamlı olarak tür tanımları ve Önişlemci makrolarını kullanır. Visual Studio 'da, bu tür tanımları ve makroların neleri tanımlacağınızı görmek için IntelliSense [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliğini kullanabilirsiniz. Farenizi ilgilendiğiniz sözcüğün üzerine getirin veya seçin ve **Ctrl** + **K** **Ctrl** + tanımı içeren küçük bir açılır pencere için CTRL K, CTRL**i** tuşlarına basın. Daha fazla bilgi için bkz. [IntelliSense kullanma](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, programlama hatalarını yakalayabilmeniz için genellikle *sal ek açıklamalarını* kullanır. Daha fazla bilgi için bkz. [C/C++ kod hatalarını azaltmak IÇIN sal ek açıklamalarını kullanma](/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
 
-1. Windows masaüstü &lt;programları windows.h> gerektirir. &lt;tchar.h `TCHAR`>, projenizde UNICODE simgesi tanımlanmışsa, **sonuçta wchar_t** olarak çözen makroyu tanımlar, aksi takdirde **char**olarak çözülür.  HER ZAMAN UNICODE etkin bir şekilde inşa ederseniz, TCHAR'a ihtiyacınız yoktur ve **wchar_t** doğrudan kullanabilirsiniz.
+1. Windows masaüstü programları için &lt; Windows. h> gerekir. &lt;Tchar. h>, `TCHAR` UNICODE sembolü projenizde tanımlandıysa, aksi takdirde **char**olarak çözümlenirse, sonunda **wchar_t** için sonuç olarak çözümlenen makroyu tanımlar.  Her zaman UNICODE 'u etkin olarak oluşturursanız, TCHAR 'a ihtiyacınız yoktur ve yalnızca **wchar_t** doğrudan kullanabilirsiniz.
 
    ```cpp
    #include <windows.h>
    #include <tchar.h>
    ```
 
-1. `WinMain` İşlevle birlikte, her Windows masaüstü uygulamasının da bir pencere yordamı işlevi olmalıdır. Bu işlev genellikle `WndProc`adlandırılır, ancak istediğiniz adı alabilirsiniz. `WndProc`aşağıdaki sözdizimine sahiptir.
+1. İşlevin yanı sıra `WinMain` , her Windows masaüstü uygulaması da bir pencere yordamı işlevine sahip olmalıdır. Bu işlev genellikle adlandırılır `WndProc` , ancak istediğiniz gibi adlandırabilirsiniz. `WndProc`aşağıdaki sözdizimine sahiptir.
 
    ```cpp
    LRESULT CALLBACK WndProc(
@@ -161,13 +161,13 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulamasının kodunu nasıl
    );
    ```
 
-   Bu işlevde, *olaylar* oluştuğunda uygulamanın Windows'tan aldığı *iletileri* işlemek için kod yazarsınız. Örneğin, bir kullanıcı uygulamanızda tamam düğmesi seçerse, Windows size bir ileti gönderir `WndProc` ve işlevinizin içine uygun olan her işi yapan kod yazabilirsiniz. Buna bir olayı *ele alma* denir. Yalnızca uygulamanızla ilgili olayları ele alabilirsiniz.
+   Bu işlevde, *Olaylar* gerçekleştiğinde uygulamanın Windows 'dan aldığı *iletileri* işlemek için kod yazarsınız. Örneğin, bir Kullanıcı uygulamanızda bir Tamam düğmesi seçerse, Windows size bir ileti gönderir ve `WndProc` işlevinizin içinde herhangi bir işi uygun hale gelen kodu yazabilirsiniz. Bu, bir olayı *işleme* olarak adlandırılır. Yalnızca uygulamanız için uygun olan olayları işleyebilirsiniz.
 
-   Daha fazla bilgi için [Bkz. Pencere Yordamları.](/windows/win32/winmsg/window-procedures)
+   Daha fazla bilgi için bkz. [pencere yordamları](/windows/win32/winmsg/window-procedures).
 
 ### <a name="to-add-functionality-to-the-winmain-function"></a>WinMain işlevine işlevsellik eklemek için
 
-1. İşlevolarak, `WinMain` [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw)türünden bir yapıyı dolduruyorsunuz. Yapı, pencere hakkında bilgi içerir: uygulama simgesi, pencerenin arka plan rengi, başlık çubuğunda görüntülenecek ad, diğer şeylerin yanı sıra. Daha da önemlisi, pencere yordamınız için bir işlev işaretçisi içerir. Aşağıdaki örnek, tipik `WNDCLASSEX` bir yapıyı gösterir.
+1. `WinMain`İşlevinde, [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw)türünde bir yapıyı doldurursunuz. Yapı, pencere hakkında bilgiler içerir: uygulama simgesi, pencerenin arka plan rengi, başlık çubuğunda görüntülenecek ad, diğer şeyler. Önemlisi, pencere yordamınıza bir işlev işaretçisi içerir. Aşağıdaki örnekte tipik bir yapı gösterilmektedir `WNDCLASSEX` .
 
    ```cpp
    WNDCLASSEX wcex;
@@ -186,9 +186,9 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulamasının kodunu nasıl
    wcex.hIconSm        = LoadIcon(wcex.hInstance, IDI_APPLICATION);
    ```
 
-   Yukarıdaki yapının alanları hakkında bilgi için [WNDCLASSEX'e](/windows/win32/api/winuser/ns-winuser-wndclassexw)bakın.
+   Yukarıdaki yapının alanları hakkında daha fazla bilgi için bkz. [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw).
 
-1. Pencerenizi `WNDCLASSEX` ve pencerenize nasıl ileti göndereceğinizi bilmesi için Windows'a kaydolun. [RegisterClassEx](/windows/win32/api/winuser/nf-winuser-registerclassexw) işlevini kullanın ve pencere sınıfı yapısını bağımsız değişken olarak geçirin. `TCHAR` Yazıyı `_T` kullandığımız için makro kullanılır.
+1. `WNDCLASSEX`Pencerenizi ve ileti gönderme şeklini öğrenmek Için Windows 'a kaydolun. [RegisterClassEx](/windows/win32/api/winuser/nf-winuser-registerclassexw) işlevini kullanın ve pencere sınıfı yapısını bir bağımsız değişken olarak geçirin. `_T`Türü kullandığımız için makro kullanılır `TCHAR` .
 
    ```cpp
    if (!RegisterClassEx(&wcex))
@@ -202,7 +202,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulamasının kodunu nasıl
    }
    ```
 
-1. Şimdi bir pencere oluşturabilirsiniz. [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) işlevini kullanın.
+1. Artık bir pencere oluşturabilirsiniz. [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) işlevini kullanın.
 
    ```cpp
    static TCHAR szWindowClass[] = _T("DesktopApp");
@@ -240,9 +240,9 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulamasının kodunu nasıl
    }
    ```
 
-   Bu işlev, `HWND`bir pencereye tutamaç olan bir , döndürür. Tutamacı, Windows'un açık pencereleri izlemek için kullandığı işaretçiye benzer. Daha fazla bilgi için [Windows Veri Türleri'ne](/windows/win32/WinProg/windows-data-types)bakın.
+   Bu işlev, bir `HWND` pencerenin tanıtıcısı olan bir döndürür. Bir tanıtıcı, Windows 'un açık pencereleri izlemek için kullandığı bir işaretçiye benzer. Daha fazla bilgi için bkz. [Windows veri türleri](/windows/win32/WinProg/windows-data-types).
 
-1. Bu noktada, pencere oluşturuldu, ancak yine de görünür hale getirmek için Windows'a söylememiz gerekir. Bu kod bunu yapar:
+1. Bu noktada pencere oluşturulmuştur, ancak yine de Windows 'un görünür hale getirmek için söylememiz gerekir. Bu kod şu şekilde yapılır:
 
    ```cpp
    // The parameters to ShowWindow explained:
@@ -253,9 +253,9 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulamasının kodunu nasıl
    UpdateWindow(hWnd);
    ```
 
-   `WndProc` İşlevi henüz uygulamadığınız için görüntülenen pencerede fazla içerik yok. Başka bir deyişle, uygulama henüz Windows'un şu anda ona gönderdiği iletileri işleme değil.
+   İşlevi henüz uygulamamış olduğunuzdan, görüntülenmiş pencerenin içeriği çok fazla içeriğe sahip değil `WndProc` . Diğer bir deyişle, uygulama henüz Windows 'un buraya gönderdiği iletileri işlememiştir.
 
-1. İletileri işlemek için önce Windows'un gönderdiği iletileri dinlemek için bir ileti döngüsü ekleriz. Uygulama bir ileti aldığında, bu döngü onu `WndProc` işlenecek işlevinize gönderir. İleti döngüsü aşağıdaki kodu andırır.
+1. İletileri işlemek için ilk olarak Windows 'un gönderdiği iletileri dinlemek üzere bir ileti döngüsü ekleyeceğiz. Uygulama bir ileti aldığında, bu döngü onu `WndProc` işlenecek işlevinizde gönderir. İleti döngüsü aşağıdaki koda benzer.
 
    ```cpp
    MSG msg;
@@ -268,7 +268,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulamasının kodunu nasıl
    return (int) msg.wParam;
    ```
 
-   İleti döngüsündeki yapılar ve işlevler hakkında daha fazla bilgi için [MSG](/windows/win32/api/winuser/ns-winuser-msg), [GetMessage](/windows/win32/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage)ve [DispatchMessage'a](/windows/win32/api/winuser/nf-winuser-dispatchmessage)bakın.
+   İleti döngüsündeki yapılar ve işlevler hakkında daha fazla bilgi için bkz. [msg](/windows/win32/api/winuser/ns-winuser-msg), [GetMessage](/windows/win32/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage)ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage).
 
    Bu noktada, `WinMain` işlev aşağıdaki koda benzemelidir.
 
@@ -359,11 +359,11 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulamasının kodunu nasıl
 
 ### <a name="to-add-functionality-to-the-wndproc-function"></a>WndProc işlevine işlevsellik eklemek için
 
-1. İşlevin `WndProc` uygulamanın aldığı iletileri işlemesini etkinleştirmek için bir geçiş deyimi uygulayın.
+1. `WndProc`İşlevin, uygulamanın aldığı iletileri işlemesini sağlamak için bir switch ifadesini uygulayın.
 
-   İşletilen önemli bir ileti [WM_PAINT](/windows/win32/gdi/wm-paint) iletidir. Görüntülenen penceresinin `WM_PAINT` bir parçasının güncellenmesi gerektiğinde uygulama iletiyi alır. Olay, bir kullanıcı pencerenizin önündeki pencereyi hareket ettirdiğinde ve sonra yeniden uzaklaştırdığında oluşabilir. Başvurunuz bu olayların ne zaman meydana geldiğini bilmiyor. Yalnızca Windows bilir, bu nedenle uygulamanızı `WM_PAINT` bir mesajla birlikte not alabiliyor. Pencere ilk görüntülendiğinde, tümünün güncelleştirilmelidir.
+   İşlemek için önemli bir ileti [WM_PAINT](/windows/win32/gdi/wm-paint) iletisidir. Uygulama, `WM_PAINT` görüntülenmiş pencerenin bir kısmı güncelleştirilirken iletiyi alır. Olay, bir Kullanıcı pencerenize bir pencere taşıdığı zaman meydana gelebilir ve sonra yeniden gider. Uygulamanız bu olayların ne zaman gerçekleşeceğini bilmez. Yalnızca Windows biliyor, bu nedenle uygulamanıza bir `WM_PAINT` ileti bildirir. Pencere ilk görüntülendiğinde, tümünün güncellenmesi gerekir.
 
-   İletiyi `WM_PAINT` işlemek için önce [BeginPaint'i](/windows/win32/api/winuser/nf-winuser-beginpaint)arayın, ardından penceredeki metni, düğmeleri ve diğer denetimleri düzenlemek için tüm mantığı işleyin ve ardından [EndPaint'i](/windows/win32/api/winuser/nf-winuser-endpaint)arayın. Uygulama için, başlangıç çağrısı ile bitiş çağrısı arasındaki mantık "Merhaba, Windows masaüstü" dizesini görüntülemektir. Pencerede. Aşağıdaki kodda, String'i görüntülemek için [TextOut](/windows/win32/api/wingdi/nf-wingdi-textoutw) işlevinin kullanıldığına dikkat edin.
+   Bir iletiyi işlemek için `WM_PAINT` önce [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint)'i çağırın, ardından penceredeki metni, düğmeleri ve diğer denetimleri düzenlemek için tüm mantığı Işleyin ve ardından [EndPaint](/windows/win32/api/winuser/nf-winuser-endpaint)'i çağırın. Uygulama için, başlangıç çağrısıyla bitiş çağrısı arasındaki mantık "Merhaba, Windows Desktop!" dizesini görüntüler. penceresinde. Aşağıdaki kodda, [TextOut](/windows/win32/api/wingdi/nf-wingdi-textoutw) işlevi dizeyi göstermek için kullanılır.
 
    ```cpp
    PAINTSTRUCT ps;
@@ -388,9 +388,9 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulamasının kodunu nasıl
    }
    ```
 
-   `HDC`kodda, Windows'un uygulamanızın grafik alt sistemiyle iletişim kurmasını sağlamak için kullandığı bir veri yapısı olan aygıt bağlamına açılan bir tanıtıcı dır. Ve `BeginPaint` `EndPaint` işlevler, uygulamanızın iyi bir vatandaş gibi görünmesini sağlar ve cihaz bağlamını gerekenden daha uzun süre kullanmaz. Fonksiyonlar grafik alt sisteminin diğer uygulamalar tarafından kullanılabilmelerine yardımcı olur.
-
-1. Bir uygulama genellikle diğer birçok iletileri işler. Örneğin, bir pencere ilk oluşturulduğunda [WM_CREATE](/windows/win32/winmsg/wm-create) ve pencere kapatıldığında [WM_DESTROY.](/windows/win32/winmsg/wm-destroy) Aşağıdaki kod temel ama `WndProc` tam bir işlev gösterir.
+   `HDC`kodda, pencerenin istemci alanında çizmek için kullanılan bir cihaz bağlamı tanıtıcıdır. `BeginPaint`Ve işlevlerini kullanarak, `EndPaint` istemci alanında çizimi hazırlayın ve doldurun. `BeginPaint`istemci alanında çizim için kullanılan görüntüleme cihazı bağlamına yönelik bir tanıtıcı döndürür; `EndPaint`boyama isteğini sonlandırır ve cihaz bağlamını yayınlar.
+   
+1. Bir uygulama genellikle diğer birçok iletiyi işler. Örneğin, bir pencere ilk oluşturulduğunda [WM_CREATE](/windows/win32/winmsg/wm-create) ve pencere kapatıldığında [WM_DESTROY](/windows/win32/winmsg/wm-destroy) . Aşağıdaki kod, temel ancak tamamlanmış bir `WndProc` işlevi gösterir.
 
    ```cpp
    LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
@@ -428,11 +428,11 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulamasının kodunu nasıl
 
 ## <a name="build-the-code"></a>Kodu oluşturma
 
-Söz verdiğim gibi, burada çalışma uygulaması için tam kodu.
+Taahhüt edilen şekilde, çalışma uygulaması için kodun tamamı aşağıda verilmiştir.
 
 ### <a name="to-build-this-example"></a>Bu örneği oluşturmak için
 
-1. *MerhabaWindowsDesktop.cpp'de* girdiğiniz tüm kodları düzenleyicide silin. Bu örnek kodu kopyalayın ve sonra *HelloWindowsDesktop.cpp*içine yapıştırın:
+1. Düzenleyicideki *Merhaba Windowsdesktop. cpp* ' de girdiğiniz tüm kodları silin. Bu örnek kodu kopyalayın ve ardından *Merhaba Windowsdesktop. cpp*dosyasına yapıştırın:
 
    ```cpp
    // HelloWindowsDesktop.cpp
@@ -580,16 +580,16 @@ Söz verdiğim gibi, burada çalışma uygulaması için tam kodu.
    }
    ```
 
-1. **Yapı** menüsünde **Çözüm Oluştur'u**seçin. Derlemenin sonuçları Visual Studio'daki **Çıktı** penceresinde görünmelidir.
+1. **Build** menüsünde **Build Solution**öğesini seçin. Derlemenin sonuçları, Visual Studio 'daki **Çıkış** penceresinde görünmelidir.
 
-   ![DesktopApp Projesini Oluşturun](../build/media/desktop-app-project-build-150.gif "DesktopApp Projesini Oluşturun")
+   ![DesktopApp projesini oluşturma](../build/media/desktop-app-project-build-150.gif "DesktopApp projesini oluşturma")
 
-1. Uygulamayı çalıştırmak için **F5**tuşuna basın. "Merhaba, Windows masaüstü!" metnini içeren bir pencere ekranın sol üst köşesinde görünmelidir.
+1. Uygulamayı çalıştırmak için **F5**'e basın. "Merhaba, Windows Masaüstü!" metnini içeren pencere , ekranın sol üst köşesinde görünmelidir.
 
-   ![DesktopApp Projesini Yürütün](../build/media/desktop-app-project-run-157.PNG "DesktopApp Projesini Yürütün")
+   ![DesktopApp projesini çalıştırma](../build/media/desktop-app-project-run-157.PNG "DesktopApp projesini çalıştırma")
 
-Tebrikler! Bu gözden geçirmeyi tamamladınız ve geleneksel bir Windows masaüstü uygulaması oluşturabilirsiniz.
+Tebrikler! Bu yönergeyi tamamladınız ve geleneksel bir Windows masaüstü uygulaması oluşturdunuz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Windows Masaüstü Uygulamaları](../windows/windows-desktop-applications-cpp.md)
+[Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md)

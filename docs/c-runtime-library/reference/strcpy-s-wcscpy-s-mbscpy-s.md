@@ -1,6 +1,6 @@
 ---
 title: strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
-ms.date: 4/2/2020
+ms.date: 5/28/2020
 api_name:
 - wcscpy_s
 - _mbscpy_s
@@ -45,12 +45,12 @@ helpviewer_keywords:
 - tcscpy_s function
 - wcscpy_s function
 ms.assetid: 611326f3-7929-4a5d-a465-a4683af3b053
-ms.openlocfilehash: d2d13939f0edde278b96a9d82fcbe82b6abe5d0a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d8cfbc97f6c2a6d865a1436a276641a4d8f93713
+ms.sourcegitcommit: 426e327c9f7c3a3b02300e3f924f9786d62958e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911841"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84206199"
 ---
 # <a name="strcpy_s-wcscpy_s-_mbscpy_s-_mbscpy_s_l"></a>strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
 
@@ -59,7 +59,7 @@ Bir dizeyi kopyalar. [Strcpy, wcscpy _mbscpy](strcpy-wcscpy-mbscpy.md) bu SÜRÜ
 > [!IMPORTANT]
 > **_mbscpy_s** ve **_mbscpy_s_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 errno_t strcpy_s(
@@ -116,12 +116,12 @@ errno_t _mbscpy_s_l(
 Hedef dize arabelleğinin konumu.
 
 *dest_size*<br/>
-Daraltma ve çok baytlı işlevler için **karakter** birimlerindeki hedef dize arabelleğinin boyutu ve geniş işlevler için **wchar_t** birimleri. Bu değer sıfırdan büyük ve **RSIZE_MAX**daha büyük olmalıdır.
+Daraltma ve çok baytlı işlevler için **karakter** birimlerindeki hedef dize arabelleğinin boyutu ve geniş işlevler için **wchar_t** birimleri. Bu değer sıfırdan büyük ve **RSIZE_MAX**daha büyük olmalıdır. Bu boyut hesaplarının dizeyi izleyen Sonlandırıcı için olduğundan emin olun `NULL` .
 
 *src*<br/>
 Null ile sonlandırılmış kaynak dize arabelleği.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -132,9 +132,9 @@ Başarılıysa sıfır; Aksi takdirde bir hata.
 
 |*HD*|*dest_size*|*src*|Döndürülen değer|*Hedef* içeriği|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
-|kaydedilmemiş|kaydedilmemiş|**DEĞER**|**EıNVAL**|*dest*[0] 0 olarak ayarlandı|
-|kaydedilmemiş|0 veya çok küçük|kaydedilmemiş|**ERANGE**|*dest*[0] 0 olarak ayarlandı|
+|**DEĞER**|herhangi biri|herhangi biri|**EıNVAL**|değiştirilmedi|
+|herhangi biri|herhangi biri|**DEĞER**|**EıNVAL**|*dest*[0] 0 olarak ayarlandı|
+|herhangi biri|0 veya çok küçük|herhangi biri|**ERANGE**|*dest*[0] 0 olarak ayarlandı|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -162,9 +162,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strcpy_s**|\<String. h>|
-|**wcscpy_s**|\<String. h> veya \<wchar. h>|
-|**_mbscpy_s**|\<mbstring. h>|
+|**strcpy_s**|\<string.h>|
+|**wcscpy_s**|\<string.h> veya \<wchar.h>|
+|**_mbscpy_s**|\<mbstring.h>|
 
 Bu işlevler, Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
