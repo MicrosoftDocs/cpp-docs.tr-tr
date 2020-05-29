@@ -1,959 +1,907 @@
+- name: C++ dili belgeleri
+  href: ../cpp/index.yml
 - name: C++ dili başvurusu
-  href: ../cpp/cpp-language-reference.md
-- name: C++'a (Modern C++) tekrar hoş geldiniz
-  href: ../cpp/welcome-back-to-cpp-modern-cpp.md
-- name: Sözcük kuralları
-  expanded: false
+  expanded: true
   items:
+    - name: C++ dili başvurusu
+      href: ../cpp/cpp-language-reference.md
+    - name: C++'a (Modern C++) tekrar hoş geldiniz
+      href: ../cpp/welcome-back-to-cpp-modern-cpp.md
     - name: Sözcük kuralları
-      href: ../cpp/lexical-conventions.md
-    - name: Belirteçler ve karakter kümeleri
-      href: ../cpp/character-sets.md
-    - name: Açıklamalar
-      href: ../cpp/comments-cpp.md
-    - name: Tanımlayıcılar
-      href: ../cpp/identifiers-cpp.md
-    - name: Anahtar Sözcükler
-      href: ../cpp/keywords-cpp.md
-    - name: Noktalama İşaretleri
-      href: ../cpp/punctuators-cpp.md
-    - name: 'Sayısal, boole ve işaretçi değişmez değerleri'
-      href: ../cpp/numeric-boolean-and-pointer-literals-cpp.md
-    - name: Dize ve karakter değişmez değerleri
-      href: ../cpp/string-and-character-literals-cpp.md
-    - name: Kullanıcı tanımlı sabit değerler
-      href: ../cpp/user-defined-literals-cpp.md
-- name: Temel kavramlar
-  expanded: false
-  items:
+      items:
+        - name: Sözcük kuralları
+          href: ../cpp/lexical-conventions.md
+        - name: Belirteçler ve karakter kümeleri
+          href: ../cpp/character-sets.md
+        - name: Açıklamalar
+          href: ../cpp/comments-cpp.md
+        - name: Tanımlayıcılar
+          href: ../cpp/identifiers-cpp.md
+        - name: Anahtar Sözcükler
+          href: ../cpp/keywords-cpp.md
+        - name: Noktalama İşaretleri
+          href: ../cpp/punctuators-cpp.md
+        - name: 'Sayısal, boole ve işaretçi değişmez değerleri'
+          href: ../cpp/numeric-boolean-and-pointer-literals-cpp.md
+        - name: Dize ve karakter değişmez değerleri
+          href: ../cpp/string-and-character-literals-cpp.md
+        - name: Kullanıcı tanımlı sabit değerler
+          href: ../cpp/user-defined-literals-cpp.md
     - name: Temel kavramlar
-      href: ../cpp/basic-concepts-cpp.md
-    - name: C++ tür sistemi
-      href: ../cpp/cpp-type-system-modern-cpp.md
-    - name: Kapsam
-      href: ../cpp/scope-visual-cpp.md
-    - name: Üstbilgi dosyaları
-      href: ../cpp/header-files-cpp.md
-    - name: Çeviri birimleri ve bağlantı
-      href: ../cpp/program-and-linkage-cpp.md
-    - name: main işlevi ve komut satırı bağımsız değişkenleri
-      href: ../cpp/main-function-command-line-args.md
-    - name: Program sonlandırma
-      href: ../cpp/program-termination.md
-    - name: Lvalue ve rvalue’lar
-      href: ../cpp/lvalues-and-rvalues-visual-cpp.md
-    - name: Geçici nesneler
-      href: ../cpp/temporary-objects.md
-    - name: Hizalama
-      href: ../cpp/alignment-cpp-declarations.md
-    - name: 'Önemsiz, standart düzen ve POD türleri'
-      href: ../cpp/trivial-standard-layout-and-pod-types.md
-    - name: Değer türleri
-      href: ../cpp/value-types-modern-cpp.md
-    - name: Tür dönüştürmeleri ve tür güvenliği
-      href: ../cpp/type-conversions-and-type-safety-modern-cpp.md
-    - name: Standart dönüşümler
-      href: ../cpp/standard-conversions.md
-- name: Yerleşik türler
-  expanded: false
-  items:
+      items:
+        - name: Temel kavramlar
+          href: ../cpp/basic-concepts-cpp.md
+        - name: C++ tür sistemi
+          href: ../cpp/cpp-type-system-modern-cpp.md
+        - name: Kapsam
+          href: ../cpp/scope-visual-cpp.md
+        - name: Üstbilgi dosyaları
+          href: ../cpp/header-files-cpp.md
+        - name: Çeviri birimleri ve bağlantı
+          href: ../cpp/program-and-linkage-cpp.md
+        - name: main işlevi ve komut satırı bağımsız değişkenleri
+          href: ../cpp/main-function-command-line-args.md
+        - name: Program sonlandırma
+          href: ../cpp/program-termination.md
+        - name: Lvalue ve rvalue’lar
+          href: ../cpp/lvalues-and-rvalues-visual-cpp.md
+        - name: Geçici nesneler
+          href: ../cpp/temporary-objects.md
+        - name: Hizalama
+          href: ../cpp/alignment-cpp-declarations.md
+        - name: 'Önemsiz, standart düzen ve POD türleri'
+          href: ../cpp/trivial-standard-layout-and-pod-types.md
+        - name: Değer türleri
+          href: ../cpp/value-types-modern-cpp.md
+        - name: Tür dönüştürmeleri ve tür güvenliği
+          href: ../cpp/type-conversions-and-type-safety-modern-cpp.md
+        - name: Standart dönüşümler
+          href: ../cpp/standard-conversions.md
     - name: Yerleşik türler
-      href: ../cpp/fundamental-types-cpp.md
-    - name: Veri türü aralıkları
-      href: ../cpp/data-type-ranges.md
-    - name: nullptr
-      href: ../cpp/nullptr.md
-    - name: void
-      href: ../cpp/void-cpp.md
-    - name: bool
-      href: ../cpp/bool-cpp.md
-    - name: false
-      href: ../cpp/false-cpp.md
-    - name: true
-      href: ../cpp/true-cpp.md
-    - name: 'char, wchar_t, char16_t, char32_t'
-      href: ../cpp/char-wchar-t-char16-t-char32-t.md
-    - name: '__int8, __int16, __int32, __int64'
-      href: ../cpp/int8-int16-int32-int64.md
-    - name: __m64
-      href: ../cpp/m64.md
-    - name: __m128
-      href: ../cpp/m128.md
-    - name: __m128d
-      href: ../cpp/m128d.md
-    - name: __m128i
-      href: ../cpp/m128i.md
-    - name: '__ptr32, __ptr64'
-      href: ../cpp/ptr32-ptr64.md
-    - name: Sayısal sınırlar
-      expanded: false
       items:
+        - name: Yerleşik türler
+          href: ../cpp/fundamental-types-cpp.md
+        - name: Veri türü aralıkları
+          href: ../cpp/data-type-ranges.md
+        - name: nullptr
+          href: ../cpp/nullptr.md
+        - name: void
+          href: ../cpp/void-cpp.md
+        - name: bool
+          href: ../cpp/bool-cpp.md
+        - name: false
+          href: ../cpp/false-cpp.md
+        - name: true
+          href: ../cpp/true-cpp.md
+        - name: 'char, wchar_t, char16_t, char32_t'
+          href: ../cpp/char-wchar-t-char16-t-char32-t.md
+        - name: '__int8, __int16, __int32, __int64'
+          href: ../cpp/int8-int16-int32-int64.md
+        - name: __m64
+          href: ../cpp/m64.md
+        - name: __m128
+          href: ../cpp/m128.md
+        - name: __m128d
+          href: ../cpp/m128d.md
+        - name: __m128i
+          href: ../cpp/m128i.md
+        - name: '__ptr32, __ptr64'
+          href: ../cpp/ptr32-ptr64.md
         - name: Sayısal sınırlar
-          href: ../cpp/numerical-limits-cpp.md
-        - name: Tamsayı sınırları
-          href: ../cpp/integer-limits.md
-        - name: Kayan sınırları
-          href: ../cpp/floating-limits.md
-- name: Bildirimler ve tanımlar
-  expanded: false
-  items:
+          items:
+            - name: Sayısal sınırlar
+              href: ../cpp/numerical-limits-cpp.md
+            - name: Tamsayı sınırları
+              href: ../cpp/integer-limits.md
+            - name: Kayan sınırları
+              href: ../cpp/floating-limits.md
     - name: Bildirimler ve tanımlar
-      href: ../cpp/declarations-and-definitions-cpp.md
-    - name: Depolama sınıfları
-      href: ../cpp/storage-classes-cpp.md
-    - name: auto
-      href: ../cpp/auto-cpp.md
-    - name: const
-      href: ../cpp/const-cpp.md
-    - name: constexpr
-      href: ../cpp/constexpr-cpp.md
-    - name: extern
-      href: ../cpp/extern-cpp.md
-    - name: Başlatıcılar
-      href: ../cpp/initializers.md
-    - name: Diğer adlar ve tür tanımları
-      href: ../cpp/aliases-and-typedefs-cpp.md
-    - name: using bildirimi
-      href: ../cpp/using-declaration.md
-    - name: volatile
-      href: ../cpp/volatile-cpp.md
-    - name: decltype
-      href: ../cpp/decltype-cpp.md
-    - name: Öznitelikler
-      href: ../cpp/attributes.md
-- name: 'Yerleşik işleçler, öncelik ve ilişkisellik'
-  expanded: false
-  items:
+      items:
+        - name: Bildirimler ve tanımlar
+          href: ../cpp/declarations-and-definitions-cpp.md
+        - name: Depolama sınıfları
+          href: ../cpp/storage-classes-cpp.md
+        - name: auto
+          href: ../cpp/auto-cpp.md
+        - name: const
+          href: ../cpp/const-cpp.md
+        - name: constexpr
+          href: ../cpp/constexpr-cpp.md
+        - name: extern
+          href: ../cpp/extern-cpp.md
+        - name: Başlatıcılar
+          href: ../cpp/initializers.md
+        - name: Diğer adlar ve tür tanımları
+          href: ../cpp/aliases-and-typedefs-cpp.md
+        - name: using bildirimi
+          href: ../cpp/using-declaration.md
+        - name: volatile
+          href: ../cpp/volatile-cpp.md
+        - name: decltype
+          href: ../cpp/decltype-cpp.md
+        - name: Öznitelikler
+          href: ../cpp/attributes.md
     - name: 'Yerleşik işleçler, öncelik ve ilişkisellik'
-      href: ../cpp/cpp-built-in-operators-precedence-and-associativity.md
-    - name: __alignof işleci
-      href: ../cpp/alignof-operator.md
-    - name: __uuidof işleci
-      href: ../cpp/uuidof-operator.md
-    - name: 'Ek işleçler: + and -'
-      href: ../cpp/additive-operators-plus-and.md
-    - name: 'Address-of işleci: &'
-      href: ../cpp/address-of-operator-amp.md
-    - name: Atama işleçleri
-      href: ../cpp/assignment-operators.md
-    - name: 'Bit düzeyinde AND işleci: &'
-      href: ../cpp/bitwise-and-operator-amp.md
-    - name: 'Bit düzeyinde özel OR işleci: ^'
-      href: ../cpp/bitwise-exclusive-or-operator-hat.md
-    - name: 'Bit düzeyinde kapsamlı OR işleci: |'
-      href: ../cpp/bitwise-inclusive-or-operator-pipe.md
-    - name: 'Atama işleci: ()'
-      href: ../cpp/cast-operator-parens.md
-    - name: 'Virgül işleci: ,'
-      href: ../cpp/comma-operator.md
-    - name: 'Koşullu işleç: ? :'
-      href: ../cpp/conditional-operator-q.md
-    - name: delete işleci
-      href: ../cpp/delete-operator-cpp.md
-    - name: 'Eşitlik işleçleri: == ve !='
-      href: ../cpp/equality-operators-equal-equal-and-exclpt-equal.md
-    - name: 'Açık tür dönüştürme işleci: ()'
-      href: ../cpp/explicit-type-conversion-operator-parens.md
-    - name: 'İşlev çağırma işleci: ()'
-      href: ../cpp/function-call-operator-parens.md
-    - name: 'Yönlendirme işleci: *'
-      href: ../cpp/indirection-operator-star.md
-    - name: Sol kaydırma ve sağ kaydırma işleçleri (>> ve <<)
-      href: ../cpp/left-shift-and-right-shift-operators-input-and-output.md
-    - name: 'Mantıksal AND işleci: &&'
-      href: ../cpp/logical-and-operator-amp-amp.md
-    - name: 'Mantıksal değilleme işleci: !'
-      href: ../cpp/logical-negation-operator-exclpt.md
-    - name: 'Mantıksal OR işleci: ||'
-      href: ../cpp/logical-or-operator-pipe-pipe.md
-    - name: 'Üye erişimi işleçleri: . ve ->'
-      href: ../cpp/member-access-operators-dot-and.md
-    - name: Çarpan işleçleri ve modulus işleci
-      href: ../cpp/multiplicative-operators-and-the-modulus-operator.md
-    - name: new işleci
-      href: ../cpp/new-operator-cpp.md
-    - name: 'Bire tamamlama işleci: ~'
-      href: ../cpp/one-s-complement-operator-tilde.md
-    - name: 'İşaretçi-üye işleçleri: .* ve ->*'
-      href: ../cpp/pointer-to-member-operators-dot-star-and-star.md
-    - name: 'Sonek arttırma ve azaltma işleçleri: ++ ve --'
-      href: ../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md
-    - name: 'Önek arttırma ve azaltma işleçleri: ++ ve --'
-      href: ../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md
-    - name: 'İlişkisel işleçler: <, >, <= ve >='
-      href: ../cpp/relational-operators-equal-and-equal.md
-    - name: 'Kapsam çözümü işleci: ::'
-      href: ../cpp/scope-resolution-operator.md
-    - name: sizeof işleci
-      href: ../cpp/sizeof-operator.md
-    - name: 'Alt simge işleci:'
-      href: ../cpp/subscript-operator.md
-    - name: typeid işleci
-      href: ../cpp/typeid-operator.md
-    - name: 'Birli artı ve değilleme işleçleri: + ve -'
-      href: ../cpp/unary-plus-and-negation-operators-plus-and.md
-- name: İfadeler
-  expanded: false
-  items:
-    - name: İfadeler
-      href: ../cpp/expressions-cpp.md
-    - name: İfade türleri
-      expanded: false
       items:
-        - name: İfade türleri
-          href: ../cpp/types-of-expressions.md
-        - name: Birincil ifadeler
-          href: ../cpp/primary-expressions.md
-        - name: Üç nokta ve değişen sayıda bağımsız değişken içeren şablonlar
-          href: ../cpp/ellipses-and-variadic-templates.md
-        - name: Sonek ifadeleri
-          href: ../cpp/postfix-expressions.md
-        - name: Birli işleçli ifadeler
-          href: ../cpp/expressions-with-unary-operators.md
-        - name: İkili işleçli ifadeler
-          href: ../cpp/expressions-with-binary-operators.md
-        - name: Sabit ifadeler
-          href: ../cpp/cpp-constant-expressions.md
-    - name: İfade semantikleri
-      href: ../cpp/semantics-of-expressions.md
-    - name: Atama
-      expanded: false
-      items:
-        - name: Atama
-          href: ../cpp/casting.md
+        - name: 'Yerleşik işleçler, öncelik ve ilişkisellik'
+          href: ../cpp/cpp-built-in-operators-precedence-and-associativity.md
+        - name: __alignof işleci
+          href: ../cpp/alignof-operator.md
+        - name: __uuidof işleci
+          href: ../cpp/uuidof-operator.md
+        - name: 'Ek işleçler: + and -'
+          href: ../cpp/additive-operators-plus-and.md
+        - name: 'Address-of işleci: &'
+          href: ../cpp/address-of-operator-amp.md
         - name: Atama işleçleri
-          expanded: false
+          href: ../cpp/assignment-operators.md
+        - name: 'Bit düzeyinde AND işleci: &'
+          href: ../cpp/bitwise-and-operator-amp.md
+        - name: 'Bit düzeyinde özel OR işleci: ^'
+          href: ../cpp/bitwise-exclusive-or-operator-hat.md
+        - name: 'Bit düzeyinde kapsamlı OR işleci: |'
+          href: ../cpp/bitwise-inclusive-or-operator-pipe.md
+        - name: 'Atama işleci: ()'
+          href: ../cpp/cast-operator-parens.md
+        - name: 'Virgül işleci: ,'
+          href: ../cpp/comma-operator.md
+        - name: 'Koşullu işleç: ? :'
+          href: ../cpp/conditional-operator-q.md
+        - name: delete işleci
+          href: ../cpp/delete-operator-cpp.md
+        - name: 'Eşitlik işleçleri: == ve !='
+          href: ../cpp/equality-operators-equal-equal-and-exclpt-equal.md
+        - name: 'Açık tür dönüştürme işleci: ()'
+          href: ../cpp/explicit-type-conversion-operator-parens.md
+        - name: 'İşlev çağırma işleci: ()'
+          href: ../cpp/function-call-operator-parens.md
+        - name: 'Yönlendirme işleci: *'
+          href: ../cpp/indirection-operator-star.md
+        - name: Sol kaydırma ve sağ kaydırma işleçleri (>> ve <<)
+          href: ../cpp/left-shift-and-right-shift-operators-input-and-output.md
+        - name: 'Mantıksal AND işleci: &&'
+          href: ../cpp/logical-and-operator-amp-amp.md
+        - name: 'Mantıksal değilleme işleci: !'
+          href: ../cpp/logical-negation-operator-exclpt.md
+        - name: 'Mantıksal OR işleci: ||'
+          href: ../cpp/logical-or-operator-pipe-pipe.md
+        - name: 'Üye erişimi işleçleri: . ve ->'
+          href: ../cpp/member-access-operators-dot-and.md
+        - name: Çarpan işleçleri ve modulus işleci
+          href: ../cpp/multiplicative-operators-and-the-modulus-operator.md
+        - name: new işleci
+          href: ../cpp/new-operator-cpp.md
+        - name: 'Bire tamamlama işleci: ~'
+          href: ../cpp/one-s-complement-operator-tilde.md
+        - name: 'İşaretçi-üye işleçleri: .* ve ->*'
+          href: ../cpp/pointer-to-member-operators-dot-star-and-star.md
+        - name: 'Sonek arttırma ve azaltma işleçleri: ++ ve --'
+          href: ../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md
+        - name: 'Önek arttırma ve azaltma işleçleri: ++ ve --'
+          href: ../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md
+        - name: 'İlişkisel işleçler: <, >, <= ve >='
+          href: ../cpp/relational-operators-equal-and-equal.md
+        - name: 'Kapsam çözümü işleci: ::'
+          href: ../cpp/scope-resolution-operator.md
+        - name: sizeof işleci
+          href: ../cpp/sizeof-operator.md
+        - name: 'Alt simge işleci:'
+          href: ../cpp/subscript-operator.md
+        - name: typeid işleci
+          href: ../cpp/typeid-operator.md
+        - name: 'Birli artı ve değilleme işleçleri: + ve -'
+          href: ../cpp/unary-plus-and-negation-operators-plus-and.md
+    - name: İfadeler
+      items:
+        - name: İfadeler
+          href: ../cpp/expressions-cpp.md
+        - name: İfade türleri
           items:
+            - name: İfade türleri
+              href: ../cpp/types-of-expressions.md
+            - name: Birincil ifadeler
+              href: ../cpp/primary-expressions.md
+            - name: Üç nokta ve değişen sayıda bağımsız değişken içeren şablonlar
+              href: ../cpp/ellipses-and-variadic-templates.md
+            - name: Sonek ifadeleri
+              href: ../cpp/postfix-expressions.md
+            - name: Birli işleçli ifadeler
+              href: ../cpp/expressions-with-unary-operators.md
+            - name: İkili işleçli ifadeler
+              href: ../cpp/expressions-with-binary-operators.md
+            - name: Sabit ifadeler
+              href: ../cpp/cpp-constant-expressions.md
+        - name: İfade semantikleri
+          href: ../cpp/semantics-of-expressions.md
+        - name: Atama
+          items:
+            - name: Atama
+              href: ../cpp/casting.md
             - name: Atama işleçleri
-              href: ../cpp/casting-operators.md
-            - name: dynamic_cast işleci
-              href: ../cpp/dynamic-cast-operator.md
-            - name: bad_cast özel durumu
-              href: ../cpp/bad-cast-exception.md
-            - name: static_cast işleci
-              href: ../cpp/static-cast-operator.md
-            - name: const_cast işleci
-              href: ../cpp/const-cast-operator.md
-            - name: reinterpret_cast işleci
-              href: ../cpp/reinterpret-cast-operator.md
-        - name: Çalışma zamanı türü bilgileri
-          expanded: false
-          items:
+              items:
+                - name: Atama işleçleri
+                  href: ../cpp/casting-operators.md
+                - name: dynamic_cast işleci
+                  href: ../cpp/dynamic-cast-operator.md
+                - name: bad_cast özel durumu
+                  href: ../cpp/bad-cast-exception.md
+                - name: static_cast işleci
+                  href: ../cpp/static-cast-operator.md
+                - name: const_cast işleci
+                  href: ../cpp/const-cast-operator.md
+                - name: reinterpret_cast işleci
+                  href: ../cpp/reinterpret-cast-operator.md
             - name: Çalışma zamanı türü bilgileri
-              href: ../cpp/run-time-type-information.md
-            - name: bad_typeid özel durumu
-              href: ../cpp/bad-typeid-exception.md
-            - name: type_info sınıfı
-              href: ../cpp/type-info-class.md
-- name: Deyimler
-  expanded: false
-  items:
+              items:
+                - name: Çalışma zamanı türü bilgileri
+                  href: ../cpp/run-time-type-information.md
+                - name: bad_typeid özel durumu
+                  href: ../cpp/bad-typeid-exception.md
+                - name: type_info sınıfı
+                  href: ../cpp/type-info-class.md
     - name: Deyimler
-      href: ../cpp/statements-cpp.md
-    - name: C++ deyimlerine genel bakış
-      href: ../cpp/overview-of-cpp-statements.md
-    - name: Etiketli deyimler
-      href: ../cpp/labeled-statements.md
-    - name: İfade deyimi
-      expanded: false
       items:
+        - name: Deyimler
+          href: ../cpp/statements-cpp.md
+        - name: C++ deyimlerine genel bakış
+          href: ../cpp/overview-of-cpp-statements.md
+        - name: Etiketli deyimler
+          href: ../cpp/labeled-statements.md
         - name: İfade deyimi
-          href: ../cpp/expression-statement.md
-        - name: Boş deyim
-          href: ../cpp/null-statement.md
-    - name: Bileşik deyimler (Bloklar)
-      href: ../cpp/compound-statements-blocks.md
-    - name: Seçim deyimleri
-      expanded: false
-      items:
+          items:
+            - name: İfade deyimi
+              href: ../cpp/expression-statement.md
+            - name: Boş deyim
+              href: ../cpp/null-statement.md
+        - name: Bileşik deyimler (Bloklar)
+          href: ../cpp/compound-statements-blocks.md
         - name: Seçim deyimleri
-          href: ../cpp/selection-statements-cpp.md
-        - name: if-else deyimi
-          href: ../cpp/if-else-statement-cpp.md
-        - name: __if_exists deyimi
-          href: ../cpp/if-exists-statement.md
-        - name: __if_not_exists deyimi
-          href: ../cpp/if-not-exists-statement.md
-        - name: switch deyimi
-          href: ../cpp/switch-statement-cpp.md
-    - name: Yineleme deyimleri
-      expanded: false
-      items:
+          items:
+            - name: Seçim deyimleri
+              href: ../cpp/selection-statements-cpp.md
+            - name: if-else deyimi
+              href: ../cpp/if-else-statement-cpp.md
+            - name: __if_exists deyimi
+              href: ../cpp/if-exists-statement.md
+            - name: __if_not_exists deyimi
+              href: ../cpp/if-not-exists-statement.md
+            - name: switch deyimi
+              href: ../cpp/switch-statement-cpp.md
         - name: Yineleme deyimleri
-          href: ../cpp/iteration-statements-cpp.md
-        - name: while deyimi
-          href: ../cpp/while-statement-cpp.md
-        - name: do-while deyimi
-          href: ../cpp/do-while-statement-cpp.md
-        - name: for deyimi
-          href: ../cpp/for-statement-cpp.md
-        - name: Range-based for deyimi
-          href: ../cpp/range-based-for-statement-cpp.md
-    - name: Atlama deyimleri
-      expanded: false
-      items:
+          items:
+            - name: Yineleme deyimleri
+              href: ../cpp/iteration-statements-cpp.md
+            - name: while deyimi
+              href: ../cpp/while-statement-cpp.md
+            - name: do-while deyimi
+              href: ../cpp/do-while-statement-cpp.md
+            - name: for deyimi
+              href: ../cpp/for-statement-cpp.md
+            - name: Range-based for deyimi
+              href: ../cpp/range-based-for-statement-cpp.md
         - name: Atlama deyimleri
-          href: ../cpp/jump-statements-cpp.md
-        - name: break deyimi
-          href: ../cpp/break-statement-cpp.md
-        - name: Continue deyimi
-          href: ../cpp/continue-statement-cpp.md
-        - name: Return deyimi
-          href: ../cpp/return-statement-cpp.md
-        - name: GoTo deyimi
-          href: ../cpp/goto-statement-cpp.md
-        - name: Denetim taşıma
-          href: ../cpp/transfers-of-control.md
-- name: Ad Alanları
-  href: ../cpp/namespaces-cpp.md
-- name: Numaralandırmalar
-  href: ../cpp/enumerations-cpp.md
-- name: Birleşimler
-  href: ../cpp/unions.md
-- name: İşlevler
-  expanded: false
-  items:
+          items:
+            - name: Atlama deyimleri
+              href: ../cpp/jump-statements-cpp.md
+            - name: break deyimi
+              href: ../cpp/break-statement-cpp.md
+            - name: Continue deyimi
+              href: ../cpp/continue-statement-cpp.md
+            - name: Return deyimi
+              href: ../cpp/return-statement-cpp.md
+            - name: GoTo deyimi
+              href: ../cpp/goto-statement-cpp.md
+            - name: Denetim taşıma
+              href: ../cpp/transfers-of-control.md
+    - name: Ad Alanları
+      href: ../cpp/namespaces-cpp.md
+    - name: Numaralandırmalar
+      href: ../cpp/enumerations-cpp.md
+    - name: Birleşimler
+      href: ../cpp/unions.md
     - name: İşlevler
-      href: ../cpp/functions-cpp.md
-    - name: Değişken bağımsız değişken listeleriyle işlevler
-      href: ../cpp/functions-with-variable-argument-lists-cpp.md
-    - name: İşlev aşırı yüklemesi
-      href: ../cpp/function-overloading.md
-    - name: Açıkça varsayılan haline getirilen ve silinen işlevler
-      href: ../cpp/explicitly-defaulted-and-deleted-functions.md
-    - name: İşlevlerde bağımsız değişkene bağlı ad (Koenig) arama
-      href: ../cpp/argument-dependent-name-koenig-lookup-on-functions.md
-    - name: Varsayılan bağımsız değişkenler
-      href: ../cpp/default-arguments.md
-    - name: Satır içi işlevler
-      href: ../cpp/inline-functions-cpp.md
-- name: İşleç aşırı yüklemesi
-  expanded: false
-  items:
+      items:
+        - name: İşlevler
+          href: ../cpp/functions-cpp.md
+        - name: Değişken bağımsız değişken listeleriyle işlevler
+          href: ../cpp/functions-with-variable-argument-lists-cpp.md
+        - name: İşlev aşırı yüklemesi
+          href: ../cpp/function-overloading.md
+        - name: Açıkça varsayılan haline getirilen ve silinen işlevler
+          href: ../cpp/explicitly-defaulted-and-deleted-functions.md
+        - name: İşlevlerde bağımsız değişkene bağlı ad (Koenig) arama
+          href: ../cpp/argument-dependent-name-koenig-lookup-on-functions.md
+        - name: Varsayılan bağımsız değişkenler
+          href: ../cpp/default-arguments.md
+        - name: Satır içi işlevler
+          href: ../cpp/inline-functions-cpp.md
     - name: İşleç aşırı yüklemesi
-      href: ../cpp/operator-overloading.md
-    - name: İşleç aşırı yüklemesi genel kuralları
-      href: ../cpp/general-rules-for-operator-overloading.md
-    - name: Aşırı yükleme birli işleçleri
-      expanded: false
       items:
+        - name: İşleç aşırı yüklemesi
+          href: ../cpp/operator-overloading.md
+        - name: İşleç aşırı yüklemesi genel kuralları
+          href: ../cpp/general-rules-for-operator-overloading.md
         - name: Aşırı yükleme birli işleçleri
-          href: ../cpp/overloading-unary-operators.md
-        - name: Artırma ve azaltma işleci aşırı yüklemesi
-          href: ../cpp/increment-and-decrement-operator-overloading-cpp.md
-    - name: İkili işleçler
-      href: ../cpp/binary-operators.md
-    - name: Atama
-      href: ../cpp/assignment.md
-    - name: İşlev çağrısı
-      href: ../cpp/function-call-cpp.md
-    - name: Alt Simge Oluşturma
-      href: ../cpp/subscripting.md
-    - name: Üye erişimi
-      href: ../cpp/member-access.md
-- name: Sınıflar ve yapılar
-  expanded: false
-  items:
+          items:
+            - name: Aşırı yükleme birli işleçleri
+              href: ../cpp/overloading-unary-operators.md
+            - name: Artırma ve azaltma işleci aşırı yüklemesi
+              href: ../cpp/increment-and-decrement-operator-overloading-cpp.md
+        - name: İkili işleçler
+          href: ../cpp/binary-operators.md
+        - name: Atama
+          href: ../cpp/assignment.md
+        - name: İşlev çağrısı
+          href: ../cpp/function-call-cpp.md
+        - name: Alt Simge Oluşturma
+          href: ../cpp/subscripting.md
+        - name: Üye erişimi
+          href: ../cpp/member-access.md
     - name: Sınıflar ve yapılar
-      href: ../cpp/classes-and-structs-cpp.md
-    - name: sınıf
-      href: ../cpp/class-cpp.md
-    - name: struct
-      href: ../cpp/struct-cpp.md
-    - name: Sınıf üyelerine genel bakış
-      href: ../cpp/class-member-overview.md
-    - name: Üye erişim denetimi
-      expanded: false
       items:
+        - name: Sınıflar ve yapılar
+          href: ../cpp/classes-and-structs-cpp.md
+        - name: sınıf
+          href: ../cpp/class-cpp.md
+        - name: struct
+          href: ../cpp/struct-cpp.md
+        - name: Sınıf üyelerine genel bakış
+          href: ../cpp/class-member-overview.md
         - name: Üye erişim denetimi
-          href: ../cpp/member-access-control-cpp.md
-        - name: arkadaş
-          href: ../cpp/friend-cpp.md
-        - name: private
-          href: ../cpp/private-cpp.md
-        - name: protected
-          href: ../cpp/protected-cpp.md
-        - name: public
-          href: ../cpp/public-cpp.md
-    - name: Küme ayracı başlatma
-      href: ../cpp/initializing-classes-and-structs-without-constructors-cpp.md
-    - name: Nesne yaşam süresi ve kaynak yönetimi (RAII)
-      href: ../cpp/object-lifetime-and-resource-management-modern-cpp.md
-    - name: Derleme zamanı kapsüllemesi için Pimpl deyimi
-      href: ../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md
-    - name: ABI sınırlarında taşınabilirlik
-      href: ../cpp/portability-at-abi-boundaries-modern-cpp.md
-    - name: Oluşturucular
-      expanded: false
-      items:
+          items:
+            - name: Üye erişim denetimi
+              href: ../cpp/member-access-control-cpp.md
+            - name: arkadaş
+              href: ../cpp/friend-cpp.md
+            - name: private
+              href: ../cpp/private-cpp.md
+            - name: protected
+              href: ../cpp/protected-cpp.md
+            - name: public
+              href: ../cpp/public-cpp.md
+        - name: Küme ayracı başlatma
+          href: ../cpp/initializing-classes-and-structs-without-constructors-cpp.md
+        - name: Nesne yaşam süresi ve kaynak yönetimi (RAII)
+          href: ../cpp/object-lifetime-and-resource-management-modern-cpp.md
+        - name: Derleme zamanı kapsüllemesi için Pimpl deyimi
+          href: ../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md
+        - name: ABI sınırlarında taşınabilirlik
+          href: ../cpp/portability-at-abi-boundaries-modern-cpp.md
         - name: Oluşturucular
-          href: ../cpp/constructors-cpp.md
-        - name: Kopya oluşturucuları ve kopya atama işleçleri
-          href: ../cpp/copy-constructors-and-copy-assignment-operators-cpp.md
-        - name: Taşıma oluşturucuları ve taşıma atama işleçleri
-          href: ../cpp/move-constructors-and-move-assignment-operators-cpp.md
-        - name: Temsilci oluşturucuları
-          href: ../cpp/delegating-constructors.md
-    - name: Yıkıcılar
-      href: ../cpp/destructors-cpp.md
-    - name: Üye işlevlerine genel bakış
-      expanded: false
-      items:
+          items:
+            - name: Oluşturucular
+              href: ../cpp/constructors-cpp.md
+            - name: Kopya oluşturucuları ve kopya atama işleçleri
+              href: ../cpp/copy-constructors-and-copy-assignment-operators-cpp.md
+            - name: Taşıma oluşturucuları ve taşıma atama işleçleri
+              href: ../cpp/move-constructors-and-move-assignment-operators-cpp.md
+            - name: Temsilci oluşturucuları
+              href: ../cpp/delegating-constructors.md
+        - name: Yıkıcılar
+          href: ../cpp/destructors-cpp.md
         - name: Üye işlevlerine genel bakış
-          href: ../cpp/overview-of-member-functions.md
-        - name: virtual tanımlayıcısı
-          href: ../cpp/virtual-specifier.md
-        - name: override tanımlayıcısı
-          href: ../cpp/override-specifier.md
-        - name: final tanımlayıcısı
-          href: ../cpp/final-specifier.md
-    - name: Devralma
-      expanded: false
-      items:
+          items:
+            - name: Üye işlevlerine genel bakış
+              href: ../cpp/overview-of-member-functions.md
+            - name: virtual tanımlayıcısı
+              href: ../cpp/virtual-specifier.md
+            - name: override tanımlayıcısı
+              href: ../cpp/override-specifier.md
+            - name: final tanımlayıcısı
+              href: ../cpp/final-specifier.md
         - name: Devralma
-          href: ../cpp/inheritance-cpp.md
-        - name: Sanal işlevler
-          href: ../cpp/virtual-functions.md
-        - name: Tek devralma
-          href: ../cpp/single-inheritance.md
-        - name: Temel sınıflar
-          href: ../cpp/base-classes.md
-        - name: Birden çok taban sınıfı
-          href: ../cpp/multiple-base-classes.md
-        - name: Açık geçersiz kılmalar
-          href: ../cpp/explicit-overrides-cpp.md
-        - name: Soyut sınıflar
-          href: ../cpp/abstract-classes-cpp.md
-        - name: Kapsam kuralları özeti
-          href: ../cpp/summary-of-scope-rules.md
-        - name: Devralınan anahtar sözcükler
-          href: ../cpp/inheritance-keywords.md
-        - name: virtual
-          href: ../cpp/virtual-cpp.md
-        - name: __super
-          href: ../cpp/super.md
-        - name: __interface
-          href: ../cpp/interface.md
-    - name: Özel üye işlevleri
-      href: ../cpp/special-member-functions.md
-    - name: Statik üyeler
-      href: ../cpp/static-members-cpp.md
-    - name: Değer türleri olarak C++ sınıfları
-      href: ../cpp/value-types-modern-cpp.md
-    - name: Kullanıcı tanımlı tür dönüşümleri
-      href: ../cpp/user-defined-type-conversions-cpp.md
-    - name: Değişebilir veri üyeleri
-      href: ../cpp/mutable-data-members-cpp.md
-    - name: İç içe geçmiş sınıf bildirimleri
-      href: ../cpp/nested-class-declarations.md
-    - name: Anonim sınıf türleri
-      href: ../cpp/anonymous-class-types.md
-    - name: Üye işaretçileri
-      href: ../cpp/pointers-to-members.md
-    - name: this işaretçisi
-      href: ../cpp/this-pointer.md
-    - name: Bit alanları
-      href: ../cpp/cpp-bit-fields.md
-- name: C++'deki lambda ifadeleri
-  expanded: false
-  items:
+          items:
+            - name: Devralma
+              href: ../cpp/inheritance-cpp.md
+            - name: Sanal işlevler
+              href: ../cpp/virtual-functions.md
+            - name: Tek devralma
+              href: ../cpp/single-inheritance.md
+            - name: Temel sınıflar
+              href: ../cpp/base-classes.md
+            - name: Birden çok taban sınıfı
+              href: ../cpp/multiple-base-classes.md
+            - name: Açık geçersiz kılmalar
+              href: ../cpp/explicit-overrides-cpp.md
+            - name: Soyut sınıflar
+              href: ../cpp/abstract-classes-cpp.md
+            - name: Kapsam kuralları özeti
+              href: ../cpp/summary-of-scope-rules.md
+            - name: Devralınan anahtar sözcükler
+              href: ../cpp/inheritance-keywords.md
+            - name: virtual
+              href: ../cpp/virtual-cpp.md
+            - name: __super
+              href: ../cpp/super.md
+            - name: __interface
+              href: ../cpp/interface.md
+        - name: Özel üye işlevleri
+          href: ../cpp/special-member-functions.md
+        - name: Statik üyeler
+          href: ../cpp/static-members-cpp.md
+        - name: Değer türleri olarak C++ sınıfları
+          href: ../cpp/value-types-modern-cpp.md
+        - name: Kullanıcı tanımlı tür dönüşümleri
+          href: ../cpp/user-defined-type-conversions-cpp.md
+        - name: Değişebilir veri üyeleri
+          href: ../cpp/mutable-data-members-cpp.md
+        - name: İç içe geçmiş sınıf bildirimleri
+          href: ../cpp/nested-class-declarations.md
+        - name: Anonim sınıf türleri
+          href: ../cpp/anonymous-class-types.md
+        - name: Üye işaretçileri
+          href: ../cpp/pointers-to-members.md
+        - name: this işaretçisi
+          href: ../cpp/this-pointer.md
+        - name: Bit alanları
+          href: ../cpp/cpp-bit-fields.md
     - name: C++'deki lambda ifadeleri
-      href: ../cpp/lambda-expressions-in-cpp.md
-    - name: Lambda ifadesi sözdizimi
-      href: ../cpp/lambda-expression-syntax.md
-    - name: Lambda ifadeleri örnekleri
-      href: ../cpp/examples-of-lambda-expressions.md
-    - name: constexpr lambda ifadeleri
-      href: ../cpp/lambda-expressions-constexpr.md
-- name: Diziler
-  href: ../cpp/arrays-cpp.md
-- name: Referanslar
-  expanded: false
-  items:
+      items:
+        - name: C++'deki lambda ifadeleri
+          href: ../cpp/lambda-expressions-in-cpp.md
+        - name: Lambda ifadesi sözdizimi
+          href: ../cpp/lambda-expression-syntax.md
+        - name: Lambda ifadeleri örnekleri
+          href: ../cpp/examples-of-lambda-expressions.md
+        - name: constexpr lambda ifadeleri
+          href: ../cpp/lambda-expressions-constexpr.md
+    - name: Diziler
+      href: ../cpp/arrays-cpp.md
     - name: Referanslar
-      href: ../cpp/references-cpp.md
-    - name: 'Lvalue başvuru bildirimcisi: &'
-      href: ../cpp/lvalue-reference-declarator-amp.md
-    - name: 'Rvalue başvuru bildirimcisi: &&'
-      href: ../cpp/rvalue-reference-declarator-amp-amp.md
-    - name: Başvuru türü işlev bağımsız değişkenleri
-      href: ../cpp/reference-type-function-arguments.md
-    - name: Başvuru türü işlev dönüşleri
-      href: ../cpp/reference-type-function-returns.md
-    - name: İşaretçi başvuruları
-      href: ../cpp/references-to-pointers.md
-- name: İşaretçiler
-  expanded: false
-  items:
+      items:
+        - name: Referanslar
+          href: ../cpp/references-cpp.md
+        - name: 'Lvalue başvuru bildirimcisi: &'
+          href: ../cpp/lvalue-reference-declarator-amp.md
+        - name: 'Rvalue başvuru bildirimcisi: &&'
+          href: ../cpp/rvalue-reference-declarator-amp-amp.md
+        - name: Başvuru türü işlev bağımsız değişkenleri
+          href: ../cpp/reference-type-function-arguments.md
+        - name: Başvuru türü işlev dönüşleri
+          href: ../cpp/reference-type-function-returns.md
+        - name: İşaretçi başvuruları
+          href: ../cpp/references-to-pointers.md
     - name: İşaretçiler
-      href: ../cpp/pointers-cpp.md
-    - name: Ham işaretçiler
-      href: ../cpp/raw-pointers.md
-    - name: const ve volatile işaretçiler
-      href: ../cpp/const-and-volatile-pointers.md
-    - name: new ve delete işleçleri
-      href: ../cpp/new-and-delete-operators.md
-    - name: Akıllı işaretçiler
-      href: ../cpp/smart-pointers-modern-cpp.md
-    - name: 'Nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma'
-      href: ../cpp/how-to-create-and-use-unique-ptr-instances.md
-    - name: 'Nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma'
-      href: ../cpp/how-to-create-and-use-shared-ptr-instances.md
-    - name: 'Nasıl yapılır: weak_ptr örnekleri oluşturma ve kullanma'
-      href: ../cpp/how-to-create-and-use-weak-ptr-instances.md
-    - name: 'Nasıl yapılır: CComPtr ve CComQIPtr örnekleri oluşturma ve kullanma'
-      href: ../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md
-    - name: Derleme zamanı kapsüllemesi için Pimpl
-      href: ../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md
-- name: C++'ta özel durum işleme
-  expanded: false
-  items:
+      items:
+        - name: İşaretçiler
+          href: ../cpp/pointers-cpp.md
+        - name: Ham işaretçiler
+          href: ../cpp/raw-pointers.md
+        - name: const ve volatile işaretçiler
+          href: ../cpp/const-and-volatile-pointers.md
+        - name: new ve delete işleçleri
+          href: ../cpp/new-and-delete-operators.md
+        - name: Akıllı işaretçiler
+          href: ../cpp/smart-pointers-modern-cpp.md
+        - name: 'Nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma'
+          href: ../cpp/how-to-create-and-use-unique-ptr-instances.md
+        - name: 'Nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma'
+          href: ../cpp/how-to-create-and-use-shared-ptr-instances.md
+        - name: 'Nasıl yapılır: weak_ptr örnekleri oluşturma ve kullanma'
+          href: ../cpp/how-to-create-and-use-weak-ptr-instances.md
+        - name: 'Nasıl yapılır: CComPtr ve CComQIPtr örnekleri oluşturma ve kullanma'
+          href: ../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md
+        - name: Derleme zamanı kapsüllemesi için Pimpl
+          href: ../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md
     - name: C++'ta özel durum işleme
-      href: ../cpp/exception-handling-in-visual-cpp.md
-    - name: Modern C++ en iyi deneyimleri
-      href: ../cpp/errors-and-exception-handling-modern-cpp.md
-    - name: Özel durum güvenliğine yönelik tasarım
-      href: ../cpp/how-to-design-for-exception-safety.md
-    - name: Özel durumlu kod ile özel durumlu olmayan kod arasında arabirim oluşturma
-      href: ../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md
-    - name: 'try, throw ve catch deyimleri'
-      href: ../cpp/try-throw-and-catch-statements-cpp.md
-    - name: Yakala bloğu nasıl değerlendirilir
-      href: ../cpp/how-catch-blocks-are-evaluated-cpp.md
-    - name: Özel durumlar ve yığını geriye doğru izleme
-      href: ../cpp/exceptions-and-stack-unwinding-in-cpp.md
-    - name: Özel durum belirtimleri (throw)
-      href: ../cpp/exception-specifications-throw-cpp.md
-    - name: noexcept
-      href: ../cpp/noexcept-cpp.md
-    - name: İşlenilmeyen C++ özel durumları
-      href: ../cpp/unhandled-cpp-exceptions.md
-    - name: C (Yapılandırılmış) ile C++ özel durumlarını karıştırma
-      expanded: false
       items:
+        - name: C++'ta özel durum işleme
+          href: ../cpp/exception-handling-in-visual-cpp.md
+        - name: Modern C++ en iyi deneyimleri
+          href: ../cpp/errors-and-exception-handling-modern-cpp.md
+        - name: Özel durum güvenliğine yönelik tasarım
+          href: ../cpp/how-to-design-for-exception-safety.md
+        - name: Özel durumlu kod ile özel durumlu olmayan kod arasında arabirim oluşturma
+          href: ../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md
+        - name: 'try, throw ve catch deyimleri'
+          href: ../cpp/try-throw-and-catch-statements-cpp.md
+        - name: Yakala bloğu nasıl değerlendirilir
+          href: ../cpp/how-catch-blocks-are-evaluated-cpp.md
+        - name: Özel durumlar ve yığını geriye doğru izleme
+          href: ../cpp/exceptions-and-stack-unwinding-in-cpp.md
+        - name: Özel durum belirtimleri (throw)
+          href: ../cpp/exception-specifications-throw-cpp.md
+        - name: noexcept
+          href: ../cpp/noexcept-cpp.md
+        - name: İşlenilmeyen C++ özel durumları
+          href: ../cpp/unhandled-cpp-exceptions.md
         - name: C (Yapılandırılmış) ile C++ özel durumlarını karıştırma
-          href: ../cpp/mixing-c-structured-and-cpp-exceptions.md
-        - name: setjmp-longjmp kullanma
-          href: ../cpp/using-setjmp-longjmp.md
-        - name: C++ dilinde yapılandırılmış özel durumları işleme
-          href: ../cpp/exception-handling-differences.md
-    - name: Yapılandırılmış özel durum işleme (SEH) (C/C++)
-      expanded: false
-      items:
+          items:
+            - name: C (Yapılandırılmış) ile C++ özel durumlarını karıştırma
+              href: ../cpp/mixing-c-structured-and-cpp-exceptions.md
+            - name: setjmp-longjmp kullanma
+              href: ../cpp/using-setjmp-longjmp.md
+            - name: C++ dilinde yapılandırılmış özel durumları işleme
+              href: ../cpp/exception-handling-differences.md
         - name: Yapılandırılmış özel durum işleme (SEH) (C/C++)
-          href: ../cpp/structured-exception-handling-c-cpp.md
-        - name: Özel Durum işleyicisi yazma
-          expanded: false
           items:
+            - name: Yapılandırılmış özel durum işleme (SEH) (C/C++)
+              href: ../cpp/structured-exception-handling-c-cpp.md
             - name: Özel Durum işleyicisi yazma
-              href: ../cpp/writing-an-exception-handler.md
-            - name: try-except deyimi
-              href: ../cpp/try-except-statement.md
-            - name: Özel durum filtresi yazma
-              href: ../cpp/writing-an-exception-filter.md
-            - name: Yazılım özel durumlarını oluşturma
-              href: ../cpp/raising-software-exceptions.md
-            - name: Donanım özel durumları
-              href: ../cpp/hardware-exceptions.md
-            - name: Özel durum işleyicileri kısıtlamaları
-              href: ../cpp/restrictions-on-exception-handlers.md
-        - name: Sonlandırma işleyicisi yazma
-          expanded: false
-          items:
+              items:
+                - name: Özel Durum işleyicisi yazma
+                  href: ../cpp/writing-an-exception-handler.md
+                - name: try-except deyimi
+                  href: ../cpp/try-except-statement.md
+                - name: Özel durum filtresi yazma
+                  href: ../cpp/writing-an-exception-filter.md
+                - name: Yazılım özel durumlarını oluşturma
+                  href: ../cpp/raising-software-exceptions.md
+                - name: Donanım özel durumları
+                  href: ../cpp/hardware-exceptions.md
+                - name: Özel durum işleyicileri kısıtlamaları
+                  href: ../cpp/restrictions-on-exception-handlers.md
             - name: Sonlandırma işleyicisi yazma
-              href: ../cpp/writing-a-termination-handler.md
-            - name: try-finally deyimi
-              href: ../cpp/try-finally-statement.md
-            - name: Kaynakları temizleme
-              href: ../cpp/cleaning-up-resources.md
-            - name: 'Özel durum işleme zamanlaması: Özet'
-              href: ../cpp/timing-of-exception-handling-a-summary.md
-            - name: Sonlandırma işleyicileri kısıtlamaları
-              href: ../cpp/restrictions-on-termination-handlers.md
-    - name: Özel durumları iş parçacıkları arasında taşıma
-      href: ../cpp/transporting-exceptions-between-threads.md
-- name: Onaylama işlemi ve kullanıcı tarafından sağlanan iletiler
-  expanded: false
-  items:
+              items:
+                - name: Sonlandırma işleyicisi yazma
+                  href: ../cpp/writing-a-termination-handler.md
+                - name: try-finally deyimi
+                  href: ../cpp/try-finally-statement.md
+                - name: Kaynakları temizleme
+                  href: ../cpp/cleaning-up-resources.md
+                - name: 'Özel durum işleme zamanlaması: Özet'
+                  href: ../cpp/timing-of-exception-handling-a-summary.md
+                - name: Sonlandırma işleyicileri kısıtlamaları
+                  href: ../cpp/restrictions-on-termination-handlers.md
+        - name: Özel durumları iş parçacıkları arasında taşıma
+          href: ../cpp/transporting-exceptions-between-threads.md
     - name: Onaylama işlemi ve kullanıcı tarafından sağlanan iletiler
-      href: ../cpp/assertion-and-user-supplied-messages-cpp.md
-    - name: static_assert
-      href: ../cpp/static-assert.md
-- name: Modüller
-  expanded: false
-  items:
-    - name: C++ içindeki modüllere genel bakış
-      href: ../cpp/modules-cpp.md
-    - name: 'modül, içeri aktarma, dışarı aktarma'
-      href: ../cpp/import-export-module.md
-- name: Şablonlar
-  expanded: false
-  items:
+      items:
+        - name: Onaylama işlemi ve kullanıcı tarafından sağlanan iletiler
+          href: ../cpp/assertion-and-user-supplied-messages-cpp.md
+        - name: static_assert
+          href: ../cpp/static-assert.md
+    - name: Modüller
+      items:
+        - name: C++ içindeki modüllere genel bakış
+          href: ../cpp/modules-cpp.md
+        - name: 'modül, içeri aktarma, dışarı aktarma'
+          href: ../cpp/import-export-module.md
     - name: Şablonlar
-      href: ../cpp/templates-cpp.md
-    - name: typename
-      href: ../cpp/typename.md
-    - name: Sınıf şablonları
-      href: ../cpp/class-templates.md
-    - name: İşlev şablonları
-      expanded: false
       items:
+        - name: Şablonlar
+          href: ../cpp/templates-cpp.md
+        - name: typename
+          href: ../cpp/typename.md
+        - name: Sınıf şablonları
+          href: ../cpp/class-templates.md
         - name: İşlev şablonları
-          href: ../cpp/function-templates.md
-        - name: İşlev şablonu örneklemesi
-          href: ../cpp/function-template-instantiation.md
-        - name: Açık örnekleme
-          href: ../cpp/explicit-instantiation.md
-        - name: İşlev şablonlarının açık alt uzmanlaşması
-          href: ../cpp/explicit-specialization-of-function-templates.md
-        - name: İşlev şablonlarının kısmi sıralanması
-          href: ../cpp/partial-ordering-of-function-templates-cpp.md
-        - name: Üye işlev şablonları
-          href: ../cpp/member-function-templates.md
-    - name: Şablon uzmanlığı
-      href: ../cpp/template-specialization-cpp.md
-    - name: Şablonlar ve ad çözümü
-      expanded: false
-      items:
+          items:
+            - name: İşlev şablonları
+              href: ../cpp/function-templates.md
+            - name: İşlev şablonu örneklemesi
+              href: ../cpp/function-template-instantiation.md
+            - name: Açık örnekleme
+              href: ../cpp/explicit-instantiation.md
+            - name: İşlev şablonlarının açık alt uzmanlaşması
+              href: ../cpp/explicit-specialization-of-function-templates.md
+            - name: İşlev şablonlarının kısmi sıralanması
+              href: ../cpp/partial-ordering-of-function-templates-cpp.md
+            - name: Üye işlev şablonları
+              href: ../cpp/member-function-templates.md
+        - name: Şablon uzmanlığı
+          href: ../cpp/template-specialization-cpp.md
         - name: Şablonlar ve ad çözümü
-          href: ../cpp/templates-and-name-resolution.md
-        - name: Bağımlı türleri ad çözme
-          href: ../cpp/name-resolution-for-dependent-types.md
-        - name: Yerel bildirimli adlar için ad çözümü
-          href: ../cpp/name-resolution-for-locally-declared-names.md
-        - name: İşlev şablonu çağrılarının aşırı yük çözümü
-          href: ../cpp/overload-resolution-of-function-template-calls.md
-    - name: Kaynak kodu kuruluşu (C++ şablonları)
-      href: ../cpp/source-code-organization-cpp-templates.md
-- name: Olay işleme
-  expanded: false
-  items:
+          items:
+            - name: Şablonlar ve ad çözümü
+              href: ../cpp/templates-and-name-resolution.md
+            - name: Bağımlı türleri ad çözme
+              href: ../cpp/name-resolution-for-dependent-types.md
+            - name: Yerel bildirimli adlar için ad çözümü
+              href: ../cpp/name-resolution-for-locally-declared-names.md
+            - name: İşlev şablonu çağrılarının aşırı yük çözümü
+              href: ../cpp/overload-resolution-of-function-template-calls.md
+        - name: Kaynak kodu kuruluşu (C++ şablonları)
+          href: ../cpp/source-code-organization-cpp-templates.md
     - name: Olay işleme
-      href: ../cpp/event-handling.md
-    - name: __event
-      href: ../cpp/event.md
-    - name: __hook
-      href: ../cpp/hook.md
-    - name: __raise
-      href: ../cpp/raise.md
-    - name: __unhook
-      href: ../cpp/unhook.md
-    - name: Yerel C++'da olay işleme
-      href: ../cpp/event-handling-in-native-cpp.md
-    - name: COM'da olay işleme
-      href: ../cpp/event-handling-in-com.md
-- name: Microsoft'a özgü değiştiriciler
-  expanded: false
-  items:
+      items:
+        - name: Olay işleme
+          href: ../cpp/event-handling.md
+        - name: __event
+          href: ../cpp/event.md
+        - name: __hook
+          href: ../cpp/hook.md
+        - name: __raise
+          href: ../cpp/raise.md
+        - name: __unhook
+          href: ../cpp/unhook.md
+        - name: Yerel C++'da olay işleme
+          href: ../cpp/event-handling-in-native-cpp.md
+        - name: COM'da olay işleme
+          href: ../cpp/event-handling-in-com.md
     - name: Microsoft'a özgü değiştiriciler
-      href: ../cpp/microsoft-specific-modifiers.md
-    - name: Tabanlı adresleme
-      expanded: false
       items:
+        - name: Microsoft'a özgü değiştiriciler
+          href: ../cpp/microsoft-specific-modifiers.md
         - name: Tabanlı adresleme
-          href: ../cpp/based-addressing.md
-        - name: __based dilbilgisi
-          href: ../cpp/based-grammar.md
-        - name: Tabanlı işaretçiler
-          href: ../cpp/based-pointers-cpp.md
-    - name: Çağırma kuralları
-      expanded: false
-      items:
+          items:
+            - name: Tabanlı adresleme
+              href: ../cpp/based-addressing.md
+            - name: __based dilbilgisi
+              href: ../cpp/based-grammar.md
+            - name: Tabanlı işaretçiler
+              href: ../cpp/based-pointers-cpp.md
         - name: Çağırma kuralları
-          href: ../cpp/calling-conventions.md
-        - name: Bağımsız değişkeni geçirme ve adlandırma kuralları
-          expanded: false
           items:
+            - name: Çağırma kuralları
+              href: ../cpp/calling-conventions.md
             - name: Bağımsız değişkeni geçirme ve adlandırma kuralları
-              href: ../cpp/argument-passing-and-naming-conventions.md
-            - name: __cdecl
-              href: ../cpp/cdecl.md
-            - name: __clrcall
-              href: ../cpp/clrcall.md
-            - name: __stdcall
-              href: ../cpp/stdcall.md
-            - name: __fastcall
-              href: ../cpp/fastcall.md
-            - name: __thiscall
-              href: ../cpp/thiscall.md
-            - name: __vectorcall
-              href: ../cpp/vectorcall.md
-        - name: 'Çağırma örneği: İşlev prototipi ve çağrı'
-          expanded: false
-          items:
+              items:
+                - name: Bağımsız değişkeni geçirme ve adlandırma kuralları
+                  href: ../cpp/argument-passing-and-naming-conventions.md
+                - name: __cdecl
+                  href: ../cpp/cdecl.md
+                - name: __clrcall
+                  href: ../cpp/clrcall.md
+                - name: __stdcall
+                  href: ../cpp/stdcall.md
+                - name: __fastcall
+                  href: ../cpp/fastcall.md
+                - name: __thiscall
+                  href: ../cpp/thiscall.md
+                - name: __vectorcall
+                  href: ../cpp/vectorcall.md
             - name: 'Çağırma örneği: İşlev prototipi ve çağrı'
-              href: ../cpp/calling-example-function-prototype-and-call.md
-            - name: Çağırma örneği sonuçları
-              href: ../cpp/results-of-calling-example.md
-        - name: Çıplak işlev çağrıları
-          expanded: false
-          items:
+              items:
+                - name: 'Çağırma örneği: İşlev prototipi ve çağrı'
+                  href: ../cpp/calling-example-function-prototype-and-call.md
+                - name: Çağırma örneği sonuçları
+                  href: ../cpp/results-of-calling-example.md
             - name: Çıplak işlev çağrıları
-              href: ../cpp/naked-function-calls.md
-            - name: Naked işlevleri için kurallar ve sınırlamalar
-              href: ../cpp/rules-and-limitations-for-naked-functions.md
-            - name: Giriş ve bitiş kodu yazmada dikkat edilmesi gerekenler
-              href: ../cpp/considerations-for-writing-prolog-epilog-code.md
-        - name: Kayan nokta eşişlemcisi ve çağırma kuralları
-          href: ../cpp/floating-point-coprocessor-and-calling-conventions.md
-        - name: Kullanılmayan çağırma kuralları
-          href: ../cpp/obsolete-calling-conventions.md
-    - name: restrict (C++ AMP)
-      href: ../cpp/restrict-cpp-amp.md
-    - name: tile_static anahtar sözcüğü
-      href: ../cpp/tile-static-keyword.md
-    - name: __declspec
-      expanded: false
-      items:
+              items:
+                - name: Çıplak işlev çağrıları
+                  href: ../cpp/naked-function-calls.md
+                - name: Naked işlevleri için kurallar ve sınırlamalar
+                  href: ../cpp/rules-and-limitations-for-naked-functions.md
+                - name: Giriş ve bitiş kodu yazmada dikkat edilmesi gerekenler
+                  href: ../cpp/considerations-for-writing-prolog-epilog-code.md
+            - name: Kayan nokta eşişlemcisi ve çağırma kuralları
+              href: ../cpp/floating-point-coprocessor-and-calling-conventions.md
+            - name: Kullanılmayan çağırma kuralları
+              href: ../cpp/obsolete-calling-conventions.md
+        - name: restrict (C++ AMP)
+          href: ../cpp/restrict-cpp-amp.md
+        - name: tile_static anahtar sözcüğü
+          href: ../cpp/tile-static-keyword.md
         - name: __declspec
-          href: ../cpp/declspec.md
-        - name: align
-          href: ../cpp/align-cpp.md
-        - name: allocate
-          href: ../cpp/allocate.md
-        - name: allocator
-          href: ../cpp/allocator.md
-        - name: appdomain
-          href: ../cpp/appdomain.md
-        - name: code_seg (__declspec)
-          href: ../cpp/code-seg-declspec.md
-        - name: kullanım dışı
-          href: ../cpp/deprecated-cpp.md
-        - name: 'dllexport, dllimport'
-          expanded: false
           items:
+            - name: __declspec
+              href: ../cpp/declspec.md
+            - name: align
+              href: ../cpp/align-cpp.md
+            - name: allocate
+              href: ../cpp/allocate.md
+            - name: allocator
+              href: ../cpp/allocator.md
+            - name: appdomain
+              href: ../cpp/appdomain.md
+            - name: code_seg (__declspec)
+              href: ../cpp/code-seg-declspec.md
+            - name: kullanım dışı
+              href: ../cpp/deprecated-cpp.md
             - name: 'dllexport, dllimport'
-              href: ../cpp/dllexport-dllimport.md
-            - name: Tanımlar ve bildirimler
-              href: ../cpp/definitions-and-declarations-cpp.md
-            - name: dllexport ve dllimport ile satır için C++ işlevlerini tanımlama
-              href: ../cpp/defining-inline-cpp-functions-with-dllexport-and-dllimport.md
-            - name: Genel kurallar ve sınırlamalar
-              href: ../cpp/general-rules-and-limitations.md
-            - name: C++ sınıflarında dllimport ve dllexport kullanma
-              href: ../cpp/using-dllimport-and-dllexport-in-cpp-classes.md
-        - name: jitintrinsic
-          href: ../cpp/jitintrinsic.md
-        - name: naked
-          href: ../cpp/naked-cpp.md
-        - name: noalias
-          href: ../cpp/noalias.md
-        - name: noinline
-          href: ../cpp/noinline.md
-        - name: noreturn
-          href: ../cpp/noreturn.md
-        - name: nothrow
-          href: ../cpp/nothrow-cpp.md
-        - name: novtable
-          href: ../cpp/novtable.md
-        - name: process
-          href: ../cpp/process.md
-        - name: özellik
-          href: ../cpp/property-cpp.md
-        - name: restrict
-          href: ../cpp/restrict.md
-        - name: safebuffers
-          href: ../cpp/safebuffers.md
-        - name: selectany
-          href: ../cpp/selectany.md
-        - name: spectre
-          href: ../cpp/spectre.md
-        - name: thread
-          href: ../cpp/thread.md
-        - name: uuid
-          href: ../cpp/uuid-cpp.md
-    - name: __restrict
-      href: ../cpp/extension-restrict.md
-    - name: '__sptr, __uptr'
-      href: ../cpp/sptr-uptr.md
-    - name: __unaligned
-      href: ../cpp/unaligned.md
-    - name: __w64
-      href: ../cpp/w64.md
-    - name: __func__
-      href: ../cpp/func.md
-- name: Derleyici COM desteği
-  expanded: false
-  items:
+              items:
+                - name: 'dllexport, dllimport'
+                  href: ../cpp/dllexport-dllimport.md
+                - name: Tanımlar ve bildirimler
+                  href: ../cpp/definitions-and-declarations-cpp.md
+                - name: dllexport ve dllimport ile satır için C++ işlevlerini tanımlama
+                  href: ../cpp/defining-inline-cpp-functions-with-dllexport-and-dllimport.md
+                - name: Genel kurallar ve sınırlamalar
+                  href: ../cpp/general-rules-and-limitations.md
+                - name: C++ sınıflarında dllimport ve dllexport kullanma
+                  href: ../cpp/using-dllimport-and-dllexport-in-cpp-classes.md
+            - name: jitintrinsic
+              href: ../cpp/jitintrinsic.md
+            - name: naked
+              href: ../cpp/naked-cpp.md
+            - name: noalias
+              href: ../cpp/noalias.md
+            - name: noinline
+              href: ../cpp/noinline.md
+            - name: noreturn
+              href: ../cpp/noreturn.md
+            - name: nothrow
+              href: ../cpp/nothrow-cpp.md
+            - name: novtable
+              href: ../cpp/novtable.md
+            - name: process
+              href: ../cpp/process.md
+            - name: özellik
+              href: ../cpp/property-cpp.md
+            - name: restrict
+              href: ../cpp/restrict.md
+            - name: safebuffers
+              href: ../cpp/safebuffers.md
+            - name: selectany
+              href: ../cpp/selectany.md
+            - name: spectre
+              href: ../cpp/spectre.md
+            - name: thread
+              href: ../cpp/thread.md
+            - name: uuid
+              href: ../cpp/uuid-cpp.md
+        - name: __restrict
+          href: ../cpp/extension-restrict.md
+        - name: '__sptr, __uptr'
+          href: ../cpp/sptr-uptr.md
+        - name: __unaligned
+          href: ../cpp/unaligned.md
+        - name: __w64
+          href: ../cpp/w64.md
+        - name: __func__
+          href: ../cpp/func.md
     - name: Derleyici COM desteği
-      href: ../cpp/compiler-com-support.md
-    - name: Derleyici global COM işlevleri
-      expanded: false
       items:
+        - name: Derleyici COM desteği
+          href: ../cpp/compiler-com-support.md
         - name: Derleyici global COM işlevleri
-          href: ../cpp/compiler-com-global-functions.md
-        - name: _com_raise_error
-          href: ../cpp/com-raise-error.md
-        - name: ConvertStringToBSTR
-          href: ../cpp/convertstringtobstr.md
-        - name: ConvertBSTRToString
-          href: ../cpp/convertbstrtostring.md
-        - name: _set_com_error_handler
-          href: ../cpp/set-com-error-handler.md
-    - name: Derleyici COM desteği sınıfları
-      expanded: false
-      items:
+          items:
+            - name: Derleyici global COM işlevleri
+              href: ../cpp/compiler-com-global-functions.md
+            - name: _com_raise_error
+              href: ../cpp/com-raise-error.md
+            - name: ConvertStringToBSTR
+              href: ../cpp/convertstringtobstr.md
+            - name: ConvertBSTRToString
+              href: ../cpp/convertbstrtostring.md
+            - name: _set_com_error_handler
+              href: ../cpp/set-com-error-handler.md
         - name: Derleyici COM desteği sınıfları
-          href: ../cpp/compiler-com-support-classes.md
-        - name: _bstr_t sınıfı
-          expanded: false
           items:
+            - name: Derleyici COM desteği sınıfları
+              href: ../cpp/compiler-com-support-classes.md
             - name: _bstr_t sınıfı
-              href: ../cpp/bstr-t-class.md
-            - name: _bstr_t üye işlevleri
-              expanded: false
               items:
+                - name: _bstr_t sınıfı
+                  href: ../cpp/bstr-t-class.md
                 - name: _bstr_t üye işlevleri
-                  href: ../cpp/bstr-t-member-functions.md
-                - name: '_bstr_t::Assign'
-                  href: ../cpp/bstr-t-assign.md
-                - name: '_bstr_t::Attach'
-                  href: ../cpp/bstr-t-attach.md
-                - name: '_bstr_t::_bstr_t'
-                  href: ../cpp/bstr-t-bstr-t.md
-                - name: '_bstr_t::copy'
-                  href: ../cpp/bstr-t-copy.md
-                - name: '_bstr_t::Detach'
-                  href: ../cpp/bstr-t-detach.md
-                - name: '_bstr_t::GetAddress'
-                  href: ../cpp/bstr-t-getaddress.md
-                - name: '_bstr_t::GetBSTR'
-                  href: ../cpp/bstr-t-getbstr.md
-                - name: '_bstr_t::length'
-                  href: ../cpp/bstr-t-length.md
-            - name: _bstr_t işleçleri
-              expanded: false
-              items:
+                  items:
+                    - name: _bstr_t üye işlevleri
+                      href: ../cpp/bstr-t-member-functions.md
+                    - name: '_bstr_t::Assign'
+                      href: ../cpp/bstr-t-assign.md
+                    - name: '_bstr_t::Attach'
+                      href: ../cpp/bstr-t-attach.md
+                    - name: '_bstr_t::_bstr_t'
+                      href: ../cpp/bstr-t-bstr-t.md
+                    - name: '_bstr_t::copy'
+                      href: ../cpp/bstr-t-copy.md
+                    - name: '_bstr_t::Detach'
+                      href: ../cpp/bstr-t-detach.md
+                    - name: '_bstr_t::GetAddress'
+                      href: ../cpp/bstr-t-getaddress.md
+                    - name: '_bstr_t::GetBSTR'
+                      href: ../cpp/bstr-t-getbstr.md
+                    - name: '_bstr_t::length'
+                      href: ../cpp/bstr-t-length.md
                 - name: _bstr_t işleçleri
-                  href: ../cpp/bstr-t-operators.md
-                - name: '_bstr_t::operator ='
-                  href: ../cpp/bstr-t-operator-equal.md
-                - name: '_bstr_t::operator +=, +'
-                  href: ../cpp/bstr-t-operator-add-equal-plus.md
-                - name: '_bstr_t::operator !'
-                  href: ../cpp/bstr-t-operator-logical-not.md
-                - name: _bstr_t ilişkisel işleçleri
-                  href: ../cpp/bstr-t-relational-operators.md
-                - name: '_bstr_t::wchar_t *, _bstr_t::char*'
-                  href: ../cpp/bstr-t-wchar-t-star-bstr-t-char-star.md
-        - name: _com_error sınıfı
-          expanded: false
-          items:
+                  items:
+                    - name: _bstr_t işleçleri
+                      href: ../cpp/bstr-t-operators.md
+                    - name: '_bstr_t::operator ='
+                      href: ../cpp/bstr-t-operator-equal.md
+                    - name: '_bstr_t::operator +=, +'
+                      href: ../cpp/bstr-t-operator-add-equal-plus.md
+                    - name: '_bstr_t::operator !'
+                      href: ../cpp/bstr-t-operator-logical-not.md
+                    - name: _bstr_t ilişkisel işleçleri
+                      href: ../cpp/bstr-t-relational-operators.md
+                    - name: '_bstr_t::wchar_t *, _bstr_t::char*'
+                      href: ../cpp/bstr-t-wchar-t-star-bstr-t-char-star.md
             - name: _com_error sınıfı
-              href: ../cpp/com-error-class.md
-            - name: _com_error üye işlevleri
-              expanded: false
               items:
+                - name: _com_error sınıfı
+                  href: ../cpp/com-error-class.md
                 - name: _com_error üye işlevleri
-                  href: ../cpp/com-error-member-functions.md
-                - name: '_com_error::_com_error'
-                  href: ../cpp/com-error-com-error.md
-                - name: '_com_error::Description'
-                  href: ../cpp/com-error-description.md
-                - name: '_com_error::Error'
-                  href: ../cpp/com-error-error.md
-                - name: '_com_error::ErrorInfo'
-                  href: ../cpp/com-error-errorinfo.md
-                - name: '_com_error::ErrorMessage'
-                  href: ../cpp/com-error-errormessage.md
-                - name: '_com_error::GUID'
-                  href: ../cpp/com-error-guid.md
-                - name: '_com_error::HelpContext'
-                  href: ../cpp/com-error-helpcontext.md
-                - name: '_com_error::HelpFile'
-                  href: ../cpp/com-error-helpfile.md
-                - name: '_com_error::HRESULTToWCode'
-                  href: ../cpp/com-error-hresulttowcode.md
-                - name: '_com_error::Source'
-                  href: ../cpp/com-error-source.md
-                - name: '_com_error::WCode'
-                  href: ../cpp/com-error-wcode.md
-                - name: '_com_error::WCodeToHRESULT'
-                  href: ../cpp/com-error-wcodetohresult.md
-            - name: _com_error işleçleri
-              expanded: false
-              items:
+                  items:
+                    - name: _com_error üye işlevleri
+                      href: ../cpp/com-error-member-functions.md
+                    - name: '_com_error::_com_error'
+                      href: ../cpp/com-error-com-error.md
+                    - name: '_com_error::Description'
+                      href: ../cpp/com-error-description.md
+                    - name: '_com_error::Error'
+                      href: ../cpp/com-error-error.md
+                    - name: '_com_error::ErrorInfo'
+                      href: ../cpp/com-error-errorinfo.md
+                    - name: '_com_error::ErrorMessage'
+                      href: ../cpp/com-error-errormessage.md
+                    - name: '_com_error::GUID'
+                      href: ../cpp/com-error-guid.md
+                    - name: '_com_error::HelpContext'
+                      href: ../cpp/com-error-helpcontext.md
+                    - name: '_com_error::HelpFile'
+                      href: ../cpp/com-error-helpfile.md
+                    - name: '_com_error::HRESULTToWCode'
+                      href: ../cpp/com-error-hresulttowcode.md
+                    - name: '_com_error::Source'
+                      href: ../cpp/com-error-source.md
+                    - name: '_com_error::WCode'
+                      href: ../cpp/com-error-wcode.md
+                    - name: '_com_error::WCodeToHRESULT'
+                      href: ../cpp/com-error-wcodetohresult.md
                 - name: _com_error işleçleri
-                  href: ../cpp/com-error-operators.md
-                - name: '_com_error::operator ='
-                  href: ../cpp/com-error-operator-equal.md
-        - name: _com_ptr_t sınıfı
-          expanded: false
-          items:
+                  items:
+                    - name: _com_error işleçleri
+                      href: ../cpp/com-error-operators.md
+                    - name: '_com_error::operator ='
+                      href: ../cpp/com-error-operator-equal.md
             - name: _com_ptr_t sınıfı
-              href: ../cpp/com-ptr-t-class.md
-            - name: _com_ptr_t üye işlevleri
-              expanded: false
               items:
+                - name: _com_ptr_t sınıfı
+                  href: ../cpp/com-ptr-t-class.md
                 - name: _com_ptr_t üye işlevleri
-                  href: ../cpp/com-ptr-t-member-functions.md
-                - name: '_com_ptr_t::_com_ptr_t'
-                  href: ../cpp/com-ptr-t-com-ptr-t.md
-                - name: '_com_ptr_t::AddRef'
-                  href: ../cpp/com-ptr-t-addref.md
-                - name: '_com_ptr_t::Attach'
-                  href: ../cpp/com-ptr-t-attach.md
-                - name: '_com_ptr_t::CreateInstance'
-                  href: ../cpp/com-ptr-t-createinstance.md
-                - name: '_com_ptr_t::Detach'
-                  href: ../cpp/com-ptr-t-detach.md
-                - name: '_com_ptr_t::GetActiveObject'
-                  href: ../cpp/com-ptr-t-getactiveobject.md
-                - name: '_com_ptr_t::GetInterfacePtr'
-                  href: ../cpp/com-ptr-t-getinterfaceptr.md
-                - name: '_com_ptr_t::QueryInterface'
-                  href: ../cpp/com-ptr-t-queryinterface.md
-                - name: '_com_ptr_t::Release'
-                  href: ../cpp/com-ptr-t-release.md
-            - name: _com_ptr_t işleçleri
-              expanded: false
-              items:
+                  items:
+                    - name: _com_ptr_t üye işlevleri
+                      href: ../cpp/com-ptr-t-member-functions.md
+                    - name: '_com_ptr_t::_com_ptr_t'
+                      href: ../cpp/com-ptr-t-com-ptr-t.md
+                    - name: '_com_ptr_t::AddRef'
+                      href: ../cpp/com-ptr-t-addref.md
+                    - name: '_com_ptr_t::Attach'
+                      href: ../cpp/com-ptr-t-attach.md
+                    - name: '_com_ptr_t::CreateInstance'
+                      href: ../cpp/com-ptr-t-createinstance.md
+                    - name: '_com_ptr_t::Detach'
+                      href: ../cpp/com-ptr-t-detach.md
+                    - name: '_com_ptr_t::GetActiveObject'
+                      href: ../cpp/com-ptr-t-getactiveobject.md
+                    - name: '_com_ptr_t::GetInterfacePtr'
+                      href: ../cpp/com-ptr-t-getinterfaceptr.md
+                    - name: '_com_ptr_t::QueryInterface'
+                      href: ../cpp/com-ptr-t-queryinterface.md
+                    - name: '_com_ptr_t::Release'
+                      href: ../cpp/com-ptr-t-release.md
                 - name: _com_ptr_t işleçleri
-                  href: ../cpp/com-ptr-t-operators.md
-                - name: '_com_ptr_t::operator ='
-                  href: ../cpp/com-ptr-t-operator-equal.md
-                - name: _com_ptr_t ilişkisel işleçleri
-                  href: ../cpp/com-ptr-t-relational-operators.md
-                - name: _com_ptr_t ayıklayıcıları
-                  href: ../cpp/com-ptr-t-extractors.md
-            - name: İlişkisel işlev şablonları
-              href: ../cpp/relational-function-templates.md
-        - name: _variant_t sınıfı
-          expanded: false
-          items:
+                  items:
+                    - name: _com_ptr_t işleçleri
+                      href: ../cpp/com-ptr-t-operators.md
+                    - name: '_com_ptr_t::operator ='
+                      href: ../cpp/com-ptr-t-operator-equal.md
+                    - name: _com_ptr_t ilişkisel işleçleri
+                      href: ../cpp/com-ptr-t-relational-operators.md
+                    - name: _com_ptr_t ayıklayıcıları
+                      href: ../cpp/com-ptr-t-extractors.md
+                - name: İlişkisel işlev şablonları
+                  href: ../cpp/relational-function-templates.md
             - name: _variant_t sınıfı
-              href: ../cpp/variant-t-class.md
-            - name: _variant_t üye işlevleri
-              expanded: false
               items:
+                - name: _variant_t sınıfı
+                  href: ../cpp/variant-t-class.md
                 - name: _variant_t üye işlevleri
-                  href: ../cpp/variant-t-member-functions.md
-                - name: '_variant_t::_variant_t'
-                  href: ../cpp/variant-t-variant-t.md
-                - name: '_variant_t::Attach'
-                  href: ../cpp/variant-t-attach.md
-                - name: '_variant_t::Clear'
-                  href: ../cpp/variant-t-clear.md
-                - name: '_variant_t::ChangeType'
-                  href: ../cpp/variant-t-changetype.md
-                - name: '_variant_t::Detach'
-                  href: ../cpp/variant-t-detach.md
-                - name: '_variant_t::SetString'
-                  href: ../cpp/variant-t-setstring.md
-            - name: _variant_t işleçleri
-              expanded: false
-              items:
+                  items:
+                    - name: _variant_t üye işlevleri
+                      href: ../cpp/variant-t-member-functions.md
+                    - name: '_variant_t::_variant_t'
+                      href: ../cpp/variant-t-variant-t.md
+                    - name: '_variant_t::Attach'
+                      href: ../cpp/variant-t-attach.md
+                    - name: '_variant_t::Clear'
+                      href: ../cpp/variant-t-clear.md
+                    - name: '_variant_t::ChangeType'
+                      href: ../cpp/variant-t-changetype.md
+                    - name: '_variant_t::Detach'
+                      href: ../cpp/variant-t-detach.md
+                    - name: '_variant_t::SetString'
+                      href: ../cpp/variant-t-setstring.md
                 - name: _variant_t işleçleri
-                  href: ../cpp/variant-t-operators.md
-                - name: '_variant_t::operator ='
-                  href: ../cpp/variant-t-operator-equal.md
-                - name: _variant_t ilişkisel işleçleri
-                  href: ../cpp/variant-t-relational-operators.md
-                - name: _variant_t ayıklayıcıları
-                  href: ../cpp/variant-t-extractors.md
-- name: Microsoft uzantıları
-  href: ../cpp/microsoft-extensions.md
-- name: Standart dışı davranış
-  href: ../cpp/nonstandard-behavior.md
-- name: Derleyici sınırları
-  href: ../cpp/compiler-limits.md
+                  items:
+                    - name: _variant_t işleçleri
+                      href: ../cpp/variant-t-operators.md
+                    - name: '_variant_t::operator ='
+                      href: ../cpp/variant-t-operator-equal.md
+                    - name: _variant_t ilişkisel işleçleri
+                      href: ../cpp/variant-t-relational-operators.md
+                    - name: _variant_t ayıklayıcıları
+                      href: ../cpp/variant-t-extractors.md
+    - name: Microsoft uzantıları
+      href: ../cpp/microsoft-extensions.md
+    - name: Standart dışı davranış
+      href: ../cpp/nonstandard-behavior.md
+    - name: Derleyici sınırları
+      href: ../cpp/compiler-limits.md
+- name: C/C++ ön işlemci başvurusu
+  href: ../preprocessor/c-cpp-preprocessor-reference.md
+- name: C++ standart kitaplığı başvurusu
+  href: ../standard-library/cpp-standard-library-reference.md
