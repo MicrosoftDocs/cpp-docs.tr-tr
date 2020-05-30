@@ -3,7 +3,6 @@
 - name: 'İzlenecek yol: CLR’yi hedefleyen bir C++/CLI programı derleme'
   href: ../dotnet/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md
 - name: C++/CLI görevleri
-  expanded: false
   items:
     - name: C++/CLI görevleri
       href: ../dotnet/cpp-cli-tasks.md
@@ -50,14 +49,12 @@
     - name: ADO.NET kullanarak veri erişimi
       href: ../dotnet/data-access-using-adonet-cpp-cli.md
 - name: Yerel ve.NET birlikte çalışabilirliği
-  expanded: false
   items:
     - name: Yerel ve.NET birlikte çalışabilirliği
       href: ../dotnet/native-and-dotnet-interoperability.md
     - name: Diğer .NET dilleri ile birlikte çalışabilirlik
       href: ../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md
     - name: Karışık (yerel ve yönetilen) derlemeler
-      expanded: false
       items:
         - name: Karışık (yerel ve yönetilen) derlemeler
           href: ../dotnet/mixed-native-and-managed-assemblies.md
@@ -80,14 +77,12 @@
         - name: 'Nasıl yapılır: CRT kitaplık DLL''sinden bağımlılığı kaldırarak kısmen güvenilir uygulama oluşturma'
           href: ../dotnet/create-a-partially-trusted-application.md
     - name: MFC içinde Windows Formu kullanıcı denetimi kullanma
-      expanded: false
       items:
         - name: MFC içinde Windows Formu kullanıcı denetimi kullanma
           href: ../dotnet/using-a-windows-form-user-control-in-mfc.md
         - name: Windows Forms/MFC programlama farkları
           href: ../dotnet/windows-forms-mfc-programming-differences.md
         - name: MFC iletişim kutusunda Windows Form kullanıcı denetimi barındırma
-          expanded: false
           items:
             - name: MFC iletişim kutusunda Windows Form kullanıcı denetimi barındırma
               href: ../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md
@@ -98,7 +93,6 @@
             - name: 'Nasıl yapılır: Yerel C++ sınıflarından havuz Windows Forms olayları'
               href: ../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md
         - name: MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma
-          expanded: false
           items:
             - name: MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma
               href: ../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md
@@ -111,12 +105,10 @@
         - name: MFC iletişim kutusu olarak Windows Formu kullanıcı denetimi barındırma
           href: ../dotnet/hosting-a-windows-form-user-control-as-an-mfc-dialog-box.md
     - name: Yönetilen koddan yerel işlevleri çağırma
-      expanded: false
       items:
         - name: Yönetilen koddan yerel işlevleri çağırma
           href: ../dotnet/calling-native-functions-from-managed-code.md
         - name: C++'ta açık PInvoke kullanma (DllImport özniteliği)
-          expanded: false
           items:
             - name: C++'ta açık PInvoke kullanma (DllImport özniteliği)
               href: ../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md
@@ -133,7 +125,6 @@
             - name: 'Nasıl yapılır: PInvoke kullanarak eklenmiş işaretçileri hazırlama'
               href: ../dotnet/how-to-marshal-embedded-pointers-using-pinvoke.md
         - name: C++ birlikte çalışabilirliği kullanma (örtük PInvoke)
-          expanded: false
           items:
             - name: C++ birlikte çalışabilirliği kullanma (örtük PInvoke)
               href: ../dotnet/using-cpp-interop-implicit-pinvoke.md
@@ -190,7 +181,6 @@
             - name: 'Nasıl yapılır: C# tarafından kullanılması için yerel sınıfı sarmalama'
               href: ../dotnet/how-to-wrap-native-class-for-use-by-csharp.md
 - name: Saf ve doğrulanabilen kod
-  expanded: false
   items:
     - name: Saf ve doğrulanabilen kod
       href: ../dotnet/pure-and-verifiable-code-cpp-cli.md
@@ -213,7 +203,6 @@
 - name: Hata ayıklama sınıfı
   href: ../dotnet/debug-class-cpp-cli.md
 - name: STL/CLR kitaplık başvurusu
-  expanded: false
   items:
     - name: STL/CLR kitaplık başvurusu
       href: ../dotnet/stl-clr-library-reference.md
@@ -270,12 +259,10 @@
     - name: vektör (STL/CLR)
       href: ../dotnet/vector-stl-clr.md
 - name: C++ destek kitaplığı
-  expanded: false
   items:
     - name: C++ destek kitaplığı
       href: ../dotnet/cpp-support-library.md
     - name: C++'da sıralamaya genel bakış
-      expanded: false
       items:
         - name: C++'da sıralamaya genel bakış
           href: ../dotnet/overview-of-marshaling-in-cpp.md
@@ -286,12 +273,10 @@
     - name: msclr ad alanı
       href: ../dotnet/msclr-namespace.md
     - name: Kaynak yönetimi sınıfları
-      expanded: false
       items:
         - name: Kaynak yönetimi sınıfları
           href: ../dotnet/resource-management-classes.md
         - name: auto_gcroot
-          expanded: false
           items:
             - name: auto_gcroot
               href: ../dotnet/auto-gcroot.md
@@ -300,7 +285,6 @@
             - name: swap işlevi (auto_gcroot)
               href: ../dotnet/swap-function-auto-gcroot.md
         - name: auto_handle
-          href: ../dotnet/auto-handle.md
           items:
             - name: auto_handle
               href: ../dotnet/auto-handle.md
@@ -309,12 +293,10 @@
             - name: swap işlevi (auto_handle)
               href: ../dotnet/swap-function-auto-handle.md
     - name: Eşitleme (lock sınıfı)
-      expanded: false
       items:
         - name: Eşitleme (lock sınıfı)
           href: ../dotnet/synchronization-lock-class.md
         - name: lock
-          expanded: false
           items:
             - name: lock
               href: ../dotnet/lock.md
@@ -323,21 +305,18 @@
             - name: lock_when Numaralandırması
               href: ../dotnet/lock-when-enum.md
     - name: Belirli bir uygulama etki alanında işlevleri çağırma
-      expanded: false
       items:
         - name: Belirli bir uygulama etki alanında işlevleri çağırma
           href: ../dotnet/calling-functions-in-a-specific-application-domain.md
         - name: call_in_appdomain İşlevi
           href: ../dotnet/call-in-appdomain-function.md
     - name: 'com::ptr'
-      expanded: false
       items:
         - name: 'com::ptr'
           href: ../dotnet/com-ptr.md
         - name: 'com::ptr sınıfı'
           href: ../dotnet/com-ptr-class.md
 - name: C++/CLI Özel Durumları
-  expanded: false
   items:
     - name: C++/CLI Özel Durumları
       href: ../dotnet/exceptions-in-cpp-cli.md
@@ -352,7 +331,6 @@
     - name: 'Nasıl yapılır: Genel bir özel durum işleyicisi tanımlama ve yükleme'
       href: ../dotnet/how-to-define-and-install-a-global-exception-handler.md
 - name: Kutulama
-  expanded: false
   items:
     - name: Kutulama
       href: ../dotnet/boxing-cpp-cli.md
