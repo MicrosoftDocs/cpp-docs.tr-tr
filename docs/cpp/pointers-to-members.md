@@ -8,56 +8,56 @@ helpviewer_keywords:
 - members [C++], pointers to
 - pointers, declarations
 ms.assetid: f42ddb79-9721-4e39-95b1-c56b55591f68
-ms.openlocfilehash: adffacc3ddc08679d7db4e17e027d8a7dbe8a92b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 75bd29310d64b0309ac48be053aa43cc0084aa2d
+ms.sourcegitcommit: 1a8fac06478da8bee1f6d70e25afbad94144af1a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81320327"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "84226090"
 ---
 # <a name="pointers-to-members"></a>Üye İşaretçileri
 
-Üyelere işaretçilerin bildirimleri işaretçi bildirimleri özel durumlardır.  Aşağıdaki sırayı kullanarak bildirilir:
+Üye işaretçilerin bildirimleri, işaretçi bildirimlerinin özel çalışmalardır.  Bunlar aşağıdaki sıra kullanılarak bildirilenler:
 
-> *depolama sınıfı belirteçleri*<sub>tercih</sub> *cv-qualifiers*<sub>opt</sub> *tip-belirtici* *ms-değiştirici*<sub>opt</sub> nitelikli *isim* **`::*`** *cv-qualifiers*<sub>opt</sub> *tanımlayıcı* *pm-initializer*<sub>opt</sub>**`;`**
+> *depolama sınıfı belirticileri*<sub>opt</sub> *CV-niteleyiciler*<sub>opt</sub> *tür belirleyicisi* *MS-değiştirici*<sub>opt</sub> *nitelikli adı* **`::*`** *CV-niteleyicileri*<sub>opt</sub> *tanımlayıcı tanımlayıcı* - *Başlatıcı*<sub>opt</sub>**`;`**
 
-1. Bildirim belirtici:
+1. Bildirim belirleyicisi:
 
-   - İsteğe bağlı depolama sınıfı belirticisi.
+   - İsteğe bağlı bir depolama sınıfı Belirleyicisi.
 
-   - İsteğe bağlı **const** ve **uçucu** belirteciler.
+   - İsteğe bağlı **const** ve **volatile** belirticileri.
 
-   - Tür belirtici: bir türün adı. Bu işaret edilecek üyenin türü, sınıf değil.
+   - Tür belirleyicisi: bir türün adı. Bu, sınıfa değil, işaret edilecek üyenin türüdür.
 
 1. Bildirimci:
 
-   - İsteğe bağlı Microsoft'a özgü bir değiştirici. Daha fazla bilgi için [Microsoft'a Özel Değiştiriciler'e](../cpp/microsoft-specific-modifiers.md)bakın.
+   - İsteğe bağlı Microsoft 'a özgü değiştirici. Daha fazla bilgi için bkz. [Microsoft 'A özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md).
 
-   - Üyelerin yer aldığı sınıfın nitelikli adı işaret edilecek.
+   - İşaret edilecek üyeleri içeren sınıfın tam adı.
 
-   - Operatör. __`::`__
+   - __`::`__ İşleci.
 
-   - Operatör. __`*`__
+   - __`*`__ İşleci.
 
-   - İsteğe bağlı **const** ve **uçucu** belirteciler.
+   - İsteğe bağlı **const** ve **volatile** belirticileri.
 
-   - İşaretçiyi üyeye adlandıran tanımlayıcı.
+   - Tanıtıcı, üyeye olan işaretçiyi adlandırma.
 
-1. İsteğe bağlı bir işaretçi-üye baş harfi:
+1. İsteğe bağlı bir işaretçiden üyeye başlatıcısı:
 
-   - Operatör. **`=`**
+   - **`=`** İşleci.
 
-   - Operatör. **`&`**
+   - **`&`** İşleci.
 
-   - Sınıfın nitelikli adı.
+   - Sınıfın tam adı.
 
-   - Operatör. __`::`__
+   - __`::`__ İşleci.
 
-   - Uygun türdeki sınıfın statik olmayan bir üyesinin adı.
+   - Uygun tür sınıfının statik olmayan bir üyesinin adı.
 
-Her zaman olduğu gibi, birden çok bildirimci (ve ilişkili başlatılması) tek bir bildirimde izin verilir. Üye işaretçisi sınıfın statik bir üyesini, başvuru türünün **`void`** bir üyesini veya .
+Her zaman olduğu gibi, tek bir bildirimde birden çok bildirimciye (ve ilişkili başlatıcılara) izin verilir. Üye işaretçisi, sınıfın statik bir üyesini, başvuru türü üyesini veya bir üyeyi işaret edebilir **`void`** .
 
-Bir sınıfın bir üyesinin işaretçisi normal bir işaretçiden farklıdır: hem üyenin türü hem de üyenin ait olduğu sınıf için tür bilgileri vardır. Normal bir işaretçi, bellekte yalnızca tek bir nesnenin adresini tanımlar (adresine sahiptir). Bir sınıfın bir üyesiiçin bir işaretçi sınıfın herhangi bir örneğinde bu üyeyi tanımlar. Aşağıdaki örnek, `Window`bir sınıf ve üye verilere bazı işaretçiler bildirir.
+Bir sınıfın üyesi için bir işaretçi normal işaretçiden farklıdır: üyenin türü ve üyenin ait olduğu sınıf için tür bilgilerine sahiptir. Normal bir işaretçi yalnızca bellekte tek bir nesne (adresini içerir) tanımlar. Bir sınıfın bir işaretçisi, bu üyeyi sınıfın herhangi bir örneğinde tanımlar. Aşağıdaki örnek, bir sınıfı, `Window` ve bazı üye verilerine yönelik işaretçileri bildirir.
 
 ```cpp
 // pointers_to_members1.cpp
@@ -66,8 +66,8 @@ class Window
 public:
    Window();                               // Default constructor.
    Window( int x1, int y1,                 // Constructor specifying
-   int x2, int y2 );                       //  window size.
-bool SetCaption( const char *szTitle ); // Set window caption.
+   int x2, int y2 );                       // Window size.
+   bool SetCaption( const char *szTitle ); // Set window caption.
    const char *GetCaption();               // Get window caption.
    char *szWinCaption;                     // Window caption.
 };
@@ -79,33 +79,34 @@ int main()
 }
 ```
 
-Önceki örnekte, `pwCaption` türde `Window` `char*`herhangi bir sınıf üyesi için bir işaretçi. Türü `pwCaption` . `char * Window::*` Sonraki kod parçası işaretçileri `SetCaption` ve `GetCaption` üye işlevleri bildirir.
+Yukarıdaki örnekte, `pwCaption` türünde olan sınıfın herhangi bir üyesine yönelik bir işaretçidir `Window` `char*` . Türü `pwCaption` `char * Window::*` . Sonraki kod parçası, `SetCaption` ve üye işlevlerine işaretçiler bildirir `GetCaption` .
 
 ```cpp
-const char * (Window::*pfnwGC)() = &Window::GetCaption;
-bool (Window::*pfnwSC)( const char * ) = &Window::SetCaption;
+const char * (Window::* pfnwGC)() = &Window::GetCaption;
+bool (Window::* pfnwSC)( const char * ) = &Window::SetCaption;
 ```
 
-İşaretçiler `pfnwGC` ve `pfnwSC` işaret `GetCaption` `SetCaption` ve `Window` sınıfın, sırasıyla. Kod, üyeye `pwCaption`işaretçiyi kullanarak bilgileri doğrudan pencere başlığına kopyalar:
+İşaretçilerle `pfnwGC` `pfnwSC` `GetCaption` `SetCaption` , sırasıyla sınıfına ve üzerine gelin `Window` . Kod, üyeye yönelik işaretçiyi kullanarak bilgileri pencere açıklamalı yazısına doğrudan kopyalar `pwCaption` :
 
 ```cpp
-Window wMainWindow;
+Window  wMainWindow;
 Window *pwChildWindow = new Window;
 char   *szUntitled    = "Untitled -  ";
-int    cUntitledLen   = strlen( szUntitled );
+int     cUntitledLen  = strlen( szUntitled );
 
 strcpy_s( wMainWindow.*pwCaption, cUntitledLen, szUntitled );
-(wMainWindow.*pwCaption)[cUntitledLen - 1] = '1';     //same as
-//wMainWindow.SzWinCaption [cUntitledLen - 1] = '1';
+(wMainWindow.*pwCaption)[cUntitledLen - 1] = '1';     // same as
+// wMainWindow.SzWinCaption [cUntitledLen - 1] = '1';
 strcpy_s( pwChildWindow->*pwCaption, cUntitledLen, szUntitled );
-(pwChildWindow->*pwCaption)[cUntitledLen - 1] = '2'; //same as //pwChildWindow->szWinCaption[cUntitledLen - 1] = '2';
+(pwChildWindow->*pwCaption)[cUntitledLen - 1] = '2'; // same as
+// pwChildWindow->szWinCaption[cUntitledLen - 1] = '2';
 ```
 
-Operatörler **`.*`** (işaretçiden **`->*`** üyeye işleçler) arasındaki **`.*`** fark, **`->*`** işleç bir nesne veya nesne başvurusu verilen üyeleri seçerken, işleç bir işaretçi aracılığıyla üyeleri seçer. Bu işleçler hakkında daha fazla bilgi için, [Pointer-to-Member Operatörleri ile İfadeler](../cpp/pointer-to-member-operators-dot-star-and-star.md)bakın.
+**`.*`** Ve **`->*`** işleçleri (üye işaretçisi işleçleri) arasındaki fark, işlecin bir **`.*`** nesne veya nesne başvurusu verilen üyeleri seçtiği, **`->*`** işlecin bir işaretçi aracılığıyla Üyeler seçtiği. Bu işleçler hakkında daha fazla bilgi için bkz. [üye Işaretçisi işleçleri olan ifadeler](../cpp/pointer-to-member-operators-dot-star-and-star.md).
 
-İşaretçi-üye işleçlerinin sonucu üyenin türüdür. Bu durumda, `char *`bu.
+Üye işaretçiden üyeye işleçlerinin sonucu üyenin türüdür. Bu durumda, `char *` .
 
-Aşağıdaki kod parçası üye işlevleri `GetCaption` `SetCaption` çağırır ve üyelere işaretçileri kullanır:
+Aşağıdaki kod parçası, üye işlevlerini çağırır `GetCaption` ve `SetCaption` üyelere işaretçiler kullanarak:
 
 ```cpp
 // Allocate a buffer.
@@ -124,13 +125,13 @@ strcat_s( szCaptionBase, sizeOfBuffer, " [View 1]" );
 
 ## <a name="restrictions-on-pointers-to-members"></a>Üye İşaretçileri Kısıtlamaları
 
-Statik bir üyenin adresi, üyenin işaretçisi değildir. Statik üyenin tek örneğine işaretçidir. Belirli bir sınıfın tüm nesneleri için yalnızca bir statik üye örneği vardır. Bu, normal adres-of (**&**) ve dereference (<strong>\*</strong>) işleçlerini kullanabileceğiniz anlamına gelir.
+Statik üyenin adresi bir üyeye işaretçi değildir. Bu, statik üyenin bir örneğine düzenli bir işaretçidir. Belirli bir sınıfın tüm nesneleri için bir statik üyenin yalnızca bir örneği bulunur. Bu, normal adres ( **&** ) ve başvuru () işleçlerini kullanabileceğiniz anlamına gelir <strong>\*</strong> .
 
 ## <a name="pointers-to-members-and-virtual-functions"></a>Üye ve Sanal İşlev İşaretçileri
 
-Bir işaretçi-üye işlevi aracılığıyla sanal bir işlev çağırmak, işlev doğrudan çağrılmış gibi çalışır. Doğru işlev v tablosunda aranır ve çağrılır.
+Üye işaretçisi işlevi aracılığıyla sanal bir işlevi çağırmak, işlev doğrudan çağrılmış gibi çalışır. Doğru işlev v tablosunda aranır ve çağrılır.
 
-Sanal işlevlerin çalışması, her zaman olduğu gibi bir temel sınıf işaretçisiyle çağrılmalarına bağlıdır. (Sanal işlevler hakkında daha fazla bilgi için [bkz.](../cpp/virtual-functions.md)
+Sanal işlevlerin çalışması, her zaman olduğu gibi bir temel sınıf işaretçisiyle çağrılmalarına bağlıdır. (Sanal işlevler hakkında daha fazla bilgi için bkz. [sanal işlevler](../cpp/virtual-functions.md).)
 
 Aşağıdaki kodda, üye işaretçisi işleviyle sanal bir işlevin nasıl çağrılacağı gösterilmektedir:
 
@@ -142,24 +143,24 @@ using namespace std;
 
 class Base
 {
-    public:
+public:
     virtual void Print();
 };
-void (Base ::* bfnPrint)() = &Base :: Print;
-void Base :: Print()
+void (Base::* bfnPrint)() = &Base::Print;
+void Base::Print()
 {
-    cout << "Print function for class Base\n";
+    cout << "Print function for class Base" << endl;
 }
 
 class Derived : public Base
 {
-    public:
+public:
     void Print();  // Print is still a virtual function.
 };
 
-void Derived :: Print()
+void Derived::Print()
 {
-    cout << "Print function for class Derived\n";
+    cout << "Print function for class Derived" << endl;
 }
 
 int main()
@@ -173,6 +174,7 @@ int main()
     (bPtr->*bfnPrint)();
 }
 
-//Output: Print function for class Base
-Print function for class Derived
+// Output:
+// Print function for class Base
+// Print function for class Derived
 ```
