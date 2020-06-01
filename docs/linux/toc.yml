@@ -3,7 +3,6 @@
 - name: 'Linux Geliştirme iş yükünü indirme, yükleme ve ayarlama'
   href: ../linux/download-install-and-setup-the-linux-development-workload.md
 - name: Uzak Linux bilgisayarınıza bağlanma
-  expanded: true
   items:
     - name: Uzak Linux bilgisayarınıza bağlanma
       href: ../linux/connect-to-your-remote-linux-computer.md
@@ -11,40 +10,43 @@
       href: ../linux/set-up-fips-compliant-secure-remote-linux-development.md
     - name: ConnectionManager başvurusu
       href: ../linux/connectionmanager-reference.md
-- name: Yeni Linux projesi oluşturma
-  href: ../linux/create-a-new-linux-project.md
-- name: Linux projesi yapılandırma
-  href: ../linux/configure-a-linux-project.md
-- name: Linux CMake projesi oluşturma ve yapılandırma
-  href: ../linux/cmake-linux-project.md
+- name: Visual Studio'da MSBuild ile Linux projeleri derleme
+  items:
+    - name: Yeni Linux projesi oluşturma
+      href: ../linux/create-a-new-linux-project.md
+    - name: Linux projesi yapılandırma
+      href: ../linux/configure-a-linux-project.md
+    - name: 'Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama'
+      href: ../linux/deploy-run-and-debug-your-linux-project.md
+    - name: Linux Projesi Özellik Sayfa Başvurusu
+      items:
+        - name: Linux Projesi Özellik Sayfa Başvurusu
+          href: ../linux/prop-pages-linux.md
+        - name: Genel Özellikler (Linux)
+          href: ../linux/prop-pages/general-linux.md
+        - name: Hata Ayıklama Özellikleri (Linux)
+          href: ../linux/prop-pages/debugging-linux.md
+        - name: VC++ Dizinleri Özellikleri (Linux)
+          href: ../linux/prop-pages/directories-linux.md
+        - name: Kaynak Özelliklerini Kopyalama (Linux)
+          href: ../linux/prop-pages/copy-sources-project.md
+        - name: C/C++ Özellikleri (Linux)
+          href: ../linux/prop-pages/c-cpp-linux.md
+        - name: Bağlayıcı Özellikleri (Linux)
+          href: ../linux/prop-pages/linker-linux.md
+        - name: Derleme Olayı Oluşturma (Linux)
+          href: ../linux/prop-pages/build-events-linux.md
+        - name: Özel Derleme Adımı Özellikleri (Linux)
+          href: ../linux/prop-pages/custom-build-step-linux.md
+        - name: Derleme Görevleri Dosyası Özellikleri (Linux)
+          href: ../linux/prop-pages/makefile-linux.md
+        - name: Uzak Arşiv Özellikleri (Linux)
+          href: ../linux/prop-pages/remote-ar-linux.md
+- name: Visual Studio'da CMake ile Linux projeleri derleme
+  items:
+    - name: Linux CMake projesi oluşturma ve yapılandırma
+      href: ../linux/cmake-linux-project.md
+    - name: 'Öğretici: Visual Studio’da platformlar arası C++ projeleri oluşturma'
+      href: ../build/get-started-linux-cmake.md
 - name: Linux projelerini Adres Temizleyici kullanmak üzere yapılandırma
   href: ../linux/linux-asan-configuration.md
-- name: 'Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama'
-  href: ../linux/deploy-run-and-debug-your-linux-project.md
-- name: 'Öğretici: Visual Studio’da platformlar arası C++ projeleri oluşturma'
-  href: ../build/get-started-linux-cmake.md
-- name: Linux Projesi Özellik Sayfa Başvurusu
-  expanded: false
-  items:
-    - name: Linux Projesi Özellik Sayfa Başvurusu
-      href: ../linux/prop-pages-linux.md
-    - name: Genel Özellikler (Linux)
-      href: ../linux/prop-pages/general-linux.md
-    - name: Hata Ayıklama Özellikleri (Linux)
-      href: ../linux/prop-pages/debugging-linux.md
-    - name: VC++ Dizinleri Özellikleri (Linux)
-      href: ../linux/prop-pages/directories-linux.md
-    - name: Kaynak Özelliklerini Kopyalama (Linux)
-      href: ../linux/prop-pages/copy-sources-project.md
-    - name: C/C++ Özellikleri (Linux)
-      href: ../linux/prop-pages/c-cpp-linux.md
-    - name: Bağlayıcı Özellikleri (Linux)
-      href: ../linux/prop-pages/linker-linux.md
-    - name: Derleme Olayı Oluşturma (Linux)
-      href: ../linux/prop-pages/build-events-linux.md
-    - name: Özel Derleme Adımı Özellikleri (Linux)
-      href: ../linux/prop-pages/custom-build-step-linux.md
-    - name: Derleme Görevleri Dosyası Özellikleri (Linux)
-      href: ../linux/prop-pages/makefile-linux.md
-    - name: Uzak Arşiv Özellikleri (Linux)
-      href: ../linux/prop-pages/remote-ar-linux.md
