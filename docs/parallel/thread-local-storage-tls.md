@@ -9,20 +9,20 @@ helpviewer_keywords:
 - thread attribute
 - Thread Local Storage [C++]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-ms.openlocfilehash: 7e308f7ba23503879f8ebbcacde481cf72055229
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 888a33161cd33b20d5f40a07f9b54235f06b8bd8
+ms.sourcegitcommit: 57e26bdd7839fce3c4154a61e987d165f0ba6f5b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69510397"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84301972"
 ---
 # <a name="thread-local-storage-tls"></a>İş Parçacığı Yerel Depolaması (TLS)
 
-İş parçacığı yerel depolaması (TLS), belirli bir çok iş parçacıklı işlemdeki her iş parçacığının iş parçacığına özgü verilerin depolandığı konumları ayırabileceği yöntemdir. Dinamik olarak bağlı (çalışma zamanı) iş parçacığına özgü veriler TLS API 'SI ([TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc)) yoluyla desteklenir. Win32 ve Microsoft C++ derleyicisi artık mevcut API uygulamasına ek olarak, iş parçacığı başına verileri statik olarak (yükleme zamanı) destekler.
+İş parçacığı yerel depolaması (TLS), belirli bir çok iş parçacıklı işlemdeki her iş parçacığının iş parçacığına özgü verilerin depolandığı konumları ayırabileceği yöntemdir. Dinamik olarak bağlı (çalışma zamanı) iş parçacığına özgü veriler TLS API ([TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc)) yöntemi tarafından desteklenir. Win32 ve Microsoft C++ derleyicisi artık mevcut API uygulamasına ek olarak her iş parçacığı için statik olarak ilişkilendirilmiş (yük-zaman) verileri desteklemektedir.
 
-## <a name="_core_compiler_implementation_for_tls"></a>TLS için derleyici uygulama
+## <a name="compiler-implementation-for-tls"></a><a name="_core_compiler_implementation_for_tls"></a>TLS için derleyici uygulama
 
-**C++ 11:**  `thread_local` Depolama sınıfı Belirleyicisi, nesneler ve sınıf üyeleri için iş parçacığı yerel depolama belirtmek için önerilen yoldur. Daha fazla bilgi için bkz. [Depolama sınıflarıC++()](../cpp/storage-classes-cpp.md).
+**C++ 11:**  `thread_local`Depolama sınıfı Belirleyicisi, nesneler ve sınıf üyeleri için iş parçacığı yerel depolama belirtmek için önerilen yoldur. Daha fazla bilgi için bkz. [Depolama sınıfları (C++)](../cpp/storage-classes-cpp.md).
 
 Ayrıca, genişletilmiş depolama sınıfı değiştiricisi olarak Microsoft 'a özgü bir öznitelik, [iş parçacığı](../cpp/thread.md)de sağlar. Bir **iş parçacığı** değişkeni bildirmek için **__declspec** anahtar sözcüğünü kullanın. Örneğin, aşağıdaki kod bir tamsayı iş parçacığı yerel değişkeni bildirir ve bunu bir değer ile başlatır:
 
@@ -40,7 +40,7 @@ Statik olarak bağlantılı iş parçacığı yerel nesneleri ve değişkenleri 
     __declspec( thread )void func();     // This will generate an error.
     ```
 
-- **İş parçacığı** değiştiricisi yalnızca **statik** uzantılı veri öğelerinde belirtilebilir. Bu, genel veri nesneleri ( **statik** ve **extern**), yerel statik nesneler ve C++ sınıfların statik veri üyeleri içerir. Otomatik veri nesneleri **iş parçacığı** özniteliğiyle bildirilemez. Aşağıdaki kod derleyici hataları üretir:
+- **İş parçacığı** değiştiricisi yalnızca **statik** uzantılı veri öğelerinde belirtilebilir. Bu, genel veri nesneleri ( **statik** ve **extern**), yerel statik nesneler ve C++ sınıflarının statik veri üyelerini içerir. Otomatik veri nesneleri **iş parçacığı** özniteliğiyle bildirilemez. Aşağıdaki kod derleyici hataları üretir:
 
     ```C
     void func1()
@@ -68,7 +68,7 @@ Statik olarak bağlantılı iş parçacığı yerel nesneleri ve değişkenleri 
     char __declspec( thread ) *ch;        // Error
     ```
 
-- **İş parçacığı** özniteliğini kullanan C++ nesnelerin bildirimine izin verilmediğinden, aşağıdaki iki örnek anlamsal olarak eşdeğerdir:
+- **İş parçacığı** özniteliğini kullanan C++ nesnelerinin bildirimine izin verilmediğinden, aşağıdaki iki örnek anlamsal olarak eşdeğerdir:
 
     ```cpp
     __declspec( thread ) class B
@@ -90,9 +90,9 @@ Statik olarak bağlantılı iş parçacığı yerel nesneleri ve değişkenleri 
     int *p = &tls_i;       //This will generate an error in C.
     ```
 
-   Bu kısıtlama içinde C++uygulanmaz. Tüm C++ nesnelerin dinamik başlatılmasına izin verdiğinden, bir nesneyi bir iş parçacığı yerel değişkeninin adresini kullanan bir ifade kullanarak başlatabilirsiniz. İş parçacığı yerel nesnelerinin oluşturulması gibi yapılır. Örneğin, daha önce gösterilen kod, C++ kaynak dosya olarak derlendiğinde bir hata oluşturmaz. İş parçacığı yerel değişkeninin adresi yalnızca adresin alındığı iş parçacığı olduğu sürece geçerlidir.
+   Bu kısıtlama C++ ' da uygulanmaz. C++ tüm nesnelerin dinamik başlatılmasına izin verdiğinden, bir nesneyi bir iş parçacığı yerel değişkeninin adresini kullanan bir ifade kullanarak başlatabilirsiniz. İş parçacığı yerel nesnelerinin oluşturulması gibi yapılır. Örneğin, daha önce gösterilen kod, C++ kaynak dosyası olarak derlendiğinde bir hata oluşturmaz. İş parçacığı yerel değişkeninin adresi yalnızca adresin alındığı iş parçacığı olduğu sürece geçerlidir.
 
-- Standart C, yalnızca statik olmayan uzantı nesneleri için bir başvuruyu içeren bir ifade ile bir nesne veya değişkenin başlatılmasına izin verir. Genellikle C++ bir başvuruyu içeren bir ifadeyle nesnelerin bu tür dinamik başlatılmasına izin verse de, iş parçacığı yerel nesneleriyle bu tür bir başlatmaya izin verilmez. Örneğin:
+- Standart C, yalnızca statik olmayan uzantı nesneleri için bir başvuruyu içeren bir ifade ile bir nesne veya değişkenin başlatılmasına izin verir. C++ genellikle bir başvuruyu içeren bir ifadeyle nesnelerin bu tür dinamik başlatılmasına izin verse de, iş parçacığı yerel nesneleriyle bu tür bir başlatmaya izin verilmez. Örneğin:
 
     ```C
     __declspec( thread )int tls_i = tls_i;                // Error in C and C++
@@ -100,11 +100,11 @@ Statik olarak bağlantılı iş parçacığı yerel nesneleri ve değişkenleri 
     __declspec( thread )int tls_i = sizeof( tls_i )       // Legal in C and C++
     ```
 
-   Başlatılmakta olan nesneyi içeren bir `sizeof` ifade kendine bir başvuruyu temsil etmez ve hem C 'de hem de ' de etkinleştirilir. C++
+   `sizeof`Başlatılmakta olan nesneyi içeren bir ifade kendine bir başvuruyu temsil etmez ve hem C hem de C++ ' da etkindir.
 
-   C++iş parçacığı yerel depolama tesisinde gelecekte yapılacak geliştirmeler nedeniyle iş parçacığı verilerinin böyle dinamik başlatılmasına izin vermez.
+   İş parçacığı yerel depolama tesisinde gelecekte yapılacak geliştirmeler nedeniyle, C++ iş parçacığı verilerinin böyle dinamik başlatılmasına izin vermez.
 
-- Windows Vista 'dan `__declspec( thread )` önceki Windows işletim sistemlerinde bazı sınırlamalar vardır. DLL herhangi bir veri veya nesne `__declspec( thread )`bildirirse, dinamik olarak yüklenmişse koruma hatasına neden olabilir. DLL, [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw)ile yüklendikten sonra, kod `__declspec( thread )` verilere her başvurduğunda sistem hatasına neden olur. Bir iş parçacığının genel değişken alanı çalışma zamanında ayrıldığından, bu alanın boyutu uygulamanın gereksinimlerinin bir hesaplamasına ve statik olarak bağlanan tüm dll 'Lerin gereksinimlerine göre belirlenir. Kullandığınızda `LoadLibrary`, ile `__declspec( thread )`belirtilen iş parçacığı yerel değişkenlerine izin vermek için bu alanı genişletemezsiniz. DLL ile `LoadLibrary`yüklenmişse, TLS ayırmak Için [TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc)gibi TLS API 'lerini kullanın.
+- Windows Vista 'Dan önceki Windows işletim sistemlerinde `__declspec( thread )` bazı sınırlamalar vardır. DLL herhangi bir veri veya nesne bildirirse `__declspec( thread )` , dinamik olarak yüklenmişse koruma hatasına neden olabilir. DLL, [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw)ile yüklendikten sonra, kod verilere her başvurduğunda sistem hatasına neden olur `__declspec( thread )` . Bir iş parçacığının genel değişken alanı çalışma zamanında ayrıldığından, bu alanın boyutu uygulamanın gereksinimlerinin bir hesaplamasına ve statik olarak bağlanan tüm dll 'Lerin gereksinimlerine göre belirlenir. Kullandığınızda `LoadLibrary` , ile belirtilen iş parçacığı yerel değişkenlerine izin vermek için bu alanı genişletemezsiniz `__declspec( thread )` . DLL ile yüklenmişse, TLS ayırmak için [TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc)gibi TLS API 'lerini kullanın `LoadLibrary` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
