@@ -1,15 +1,15 @@
 ---
 title: Visual Studio Visual Studio projelerinde Clang/LLVM desteği
-ms.date: 08/30/2019
+ms.date: 06/02/2020
 ms.description: Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain.
 helpviewer_keywords:
 - Clang support for C++ MSBuild projects
-ms.openlocfilehash: 8d7d7fec979d3e7b8f665e56094ee1c309e3b686
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1a1dfef033bffd3d7f1d24233752d7beae11af8e
+ms.sourcegitcommit: d695bb727bd2b081af4d50127b0242a9a5bdce61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323116"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84332285"
 ---
 # <a name="clangllvm-support-in-visual-studio-projects"></a>Visual Studio projelerinde Clang/LLVM desteği
 
@@ -31,13 +31,13 @@ Visual Studio 'da en iyi IDE desteği için, Windows için en son Clang derleyic
 
 ## <a name="configure-a-windows-project-to-use-clang-tools"></a>Clang araçlarını kullanmak için bir Windows projesi yapılandırma
 
-Bir Visual Studio projesini Clang kullanacak şekilde yapılandırmak için, **Çözüm Gezgini** ' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. Genellikle, ilk olarak iletişim kutusunun en üstündeki **tüm yapılandırma** ' yı seçmeniz gerekir. Ardından, **genel** > **platform araç takımı**altında **LLVM (Clang-CL)** öğesini ve ardından **Tamam**' ı seçin.
+Bir Visual Studio projesini Clang kullanacak şekilde yapılandırmak için, **Çözüm Gezgini** ' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. Genellikle, ilk olarak iletişim kutusunun en üstündeki **tüm yapılandırma** ' yı seçmeniz gerekir. Ardından, **genel**  >  **platform araç takımı**altında **LLVM (Clang-CL)** öğesini ve ardından **Tamam**' ı seçin.
 
 ![Clang bileşeni yüklemesi](media/clang-msbuild-prop-page.png)
 
-Visual Studio ile paketlenmiş Clang araçlarını kullanıyorsanız ek bir adım gerekmez. Windows projeleri için, Visual Studio varsayılan olarak Clang [-CL](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) modunda Clang 'Yi ve standart kitaplığın Microsoft uygulamasını içeren bağlantıları çağırır. Varsayılan olarak, **Clang-CL. exe** ' de `C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\IDE\CommonExtensions\Microsoft\Llvm\bin`bulunur.
+Visual Studio ile paketlenmiş Clang araçlarını kullanıyorsanız ek bir adım gerekmez. Windows projeleri için, Visual Studio varsayılan olarak Clang [-CL](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) modunda Clang 'Yi ve standart kitaplığın Microsoft uygulamasını içeren bağlantıları çağırır. Varsayılan olarak, **Clang-CL. exe** , *% VCInstallDir% \\ Tools \\ LLVM \\ \\ bin* ve *% VCInstallDir% \\ Tools \\ LLVM \\ x64 \\ bin \\ *konumunda bulunur.
 
-Özel bir Clang yüklemesi kullanıyorsanız, ilk dizin olarak özel Clang yükleme kökünü ekleyerek `LLVMInstallDir` veya özelliğin değerini değiştirerek **Proje** > **özellikleri** > **VC + + dizinlerin** > **yapılandırma özellikleri** > **yürütülebilir dizinlerini** değiştirebilirsiniz. Daha fazla bilgi için bkz. [özel LLVM konumu ayarlama](#custom_llvm_location) .
+Özel bir Clang yüklemesi kullanıyorsanız, **Project**  >  **Properties**  >  ilk dizin olarak özel Clang yükleme kökünü ekleyerek veya özelliğin değerini değiştirerek Proje özellikleri**VC + + dizinlerin**  >  **yapılandırma özellikleri**  >  **yürütülebilir dizinlerini** değiştirebilirsiniz `LLVMInstallDir` . Daha fazla bilgi için bkz. [özel LLVM konumu ayarlama](#custom_llvm_location) .
 
 ## <a name="configure-a-linux-project-to-use-clang-tools"></a>Clang araçlarını kullanmak için bir Linux projesi yapılandırma
 
@@ -52,7 +52,7 @@ Bir Visual Studio Linux projesini Clang kullanacak şekilde yapılandırmak içi
 
 ![Clang bileşeni yüklemesi](media/clang-msbuild-prop-page.png)
 
-Linux 'ta, Visual Studio varsayılan olarak PATH Environment özelliğinde karşılaştığı ilk Clang konumunu kullanır. Özel `LLVMInstallDir` bir Clang yüklemesi kullanıyorsanız, özelliğin değerini değiştirmeniz veya **Proje** > **özellikleri** > **VC + + dizinleri** > **yapılandırma özellikleri** > **çalıştırılabilir dizinleri**altında bir yol yerine konacak olması gerekir. Daha fazla bilgi için bkz. [özel LLVM konumu ayarlama](#custom_llvm_location) .
+Linux 'ta, Visual Studio varsayılan olarak PATH Environment özelliğinde karşılaştığı ilk Clang konumunu kullanır. Özel bir Clang yüklemesi kullanıyorsanız, özelliğin değerini değiştirmeniz `LLVMInstallDir` veya **Proje**  >  **özellikleri**  >  **VC + + dizinleri**  >  **yapılandırma özellikleri**  >  **çalıştırılabilir dizinleri**altında bir yol yerine konacak olması gerekir. Daha fazla bilgi için bkz. [özel LLVM konumu ayarlama](#custom_llvm_location) .
 
 ## <a name="set-a-custom-llvm-location"></a><a name="custom_llvm_location"></a>Özel bir LLVM konumu ayarlama
 
@@ -68,7 +68,7 @@ Bir veya daha fazla proje için, bir *Dizin. Build. props* dosyası oluşturarak
 
 ## <a name="set-additional-properties-edit-build-and-debug"></a>Ek özellikler ayarlama, düzenleme, derleme ve hata ayıklama
 
-Bir Clang yapılandırması ayarladıktan sonra proje düğümünde tekrar sağ tıklayın ve **projeyi yeniden yükle**' yi seçin. Artık Clang araçlarını kullanarak projeyi derleyebilir ve hata ayıklayabilirsiniz. Visual Studio, Clang derleyicisini kullandığınızı algılar ve IntelliSense, vurgulama, gezinme ve diğer düzen özelliklerini sağlar. Hatalar ve uyarılar **Çıkış penceresi**görüntülenir. Clang yapılandırması için proje özellik sayfaları, MSVC için bunlara benzerdir, ancak Düzenle ve devam et gibi bazı derleyiciye bağımlı özellikler Clang yapılandırmaları için kullanılamaz. Özellik sayfalarında kullanılamayan bir Clang derleyicisini veya bağlayıcı seçeneğini ayarlamak için, **yapılandırma özellikleri** > **C/C++ (veya bağlayıcı)** > **komut satırı** > **ek seçenekleri**altındaki özellik sayfalarına el ile ekleyebilirsiniz.
+Bir Clang yapılandırması ayarladıktan sonra proje düğümünde tekrar sağ tıklayın ve **projeyi yeniden yükle**' yi seçin. Artık Clang araçlarını kullanarak projeyi derleyebilir ve hata ayıklayabilirsiniz. Visual Studio, Clang derleyicisini kullandığınızı algılar ve IntelliSense, vurgulama, gezinme ve diğer düzen özelliklerini sağlar. Hatalar ve uyarılar **Çıkış penceresi**görüntülenir. Clang yapılandırması için proje özellik sayfaları, MSVC için bunlara benzerdir, ancak Düzenle ve devam et gibi bazı derleyiciye bağımlı özellikler Clang yapılandırmaları için kullanılamaz. Özellik sayfalarında kullanılamayan bir Clang derleyicisini veya bağlayıcı seçeneğini ayarlamak için, **yapılandırma özellikleri**  >  **C/C++ (veya bağlayıcı)**  >  **komut satırı**  >  **ek seçenekleri**altındaki özellik sayfalarına el ile ekleyebilirsiniz.
 
 Hata ayıklama sırasında kesme noktaları, bellek ve veri görselleştirme ve diğer birçok hata ayıklama özelliği kullanabilirsiniz.  
 
