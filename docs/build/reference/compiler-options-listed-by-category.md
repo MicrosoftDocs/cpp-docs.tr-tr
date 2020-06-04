@@ -1,16 +1,16 @@
 ---
 title: Kategorilere Göre Listelenen Derleyici Seçenekleri
-description: Microsoft C/C++ derleyici komut satırı seçeneklerinin kategorisine göre başvuru listesi.
-ms.date: 02/09/2020
+description: Microsoft C/C++ derleyicisi komut satırı seçeneklerinin kategorisine göre başvuru listesi.
+ms.date: 06/03/2020
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: d29076e6eae4bcbd15a4bc50bb48477e3f93152d
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 0275e6e5459f01d6ab8428274cc5e2313ab3066d
+ms.sourcegitcommit: 7e011c68ca7547469544fac87001a33a37e1792e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417308"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84421344"
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere göre listelenen derleyici seçenekleri
 
@@ -41,37 +41,38 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/EH](eh-exception-handling-model.md)|Özel durum işleme modelini belirtir.|
 |[/FP](fp-specify-floating-point-behavior.md)|Kayan nokta davranışını belirtir.|
 |[/GA](ga-optimize-for-windows-application.md)|Windows uygulamaları için iyileştirir.|
-|[/GD](gd-gr-gv-gz-calling-convention.md)|`__cdecl` çağırma kuralını kullanır. (yalnızca x86)|
+|[/GD](gd-gr-gv-gz-calling-convention.md)|`__cdecl`Çağırma kuralını kullanır. (yalnızca x86)|
 |[/GE](ge-enable-stack-probes.md)|Kullanım dışı. Yığın araştırmalarını etkinleştirir.|
 |[/GF](gf-eliminate-duplicate-strings.md)|Dize havuzunu izin vermez.|
-|[/Gh](gh-enable-penter-hook-function.md)|Kanca işlevi `_penter`çağırır.|
-|[/GH](gh-enable-pexit-hook-function.md)|Kanca işlevi `_pexit`çağırır.|
+|[/Gh](gh-enable-penter-hook-function.md)|Kanca işlevini çağırır `_penter` .|
+|[/GH](gh-enable-pexit-hook-function.md)|Kanca işlevini çağırır `_pexit` .|
 |[/GL](gl-whole-program-optimization.md)|Tüm program iyileştirmesini mümkün hale getirme.|
 |[/GM](gm-enable-minimal-rebuild.md)|Kullanım dışı. En az yeniden derlemeyi mümkün.|
 |[/GR](gr-enable-run-time-type-information.md)|Çalışma zamanı tür bilgilerini (RTTı) etkinleştir.|
-|[/Gr](gd-gr-gv-gz-calling-convention.md)|`__fastcall` çağırma kuralını kullanır. (yalnızca x86)|
+|[/Gr](gd-gr-gv-gz-calling-convention.md)|`__fastcall`Çağırma kuralını kullanır. (yalnızca x86)|
 |[/GS](gs-buffer-security-check.md)|Arabellek güvenliğini denetler.|
 |[/GS](gs-control-stack-checking-calls.md)|Yığın araştırmalarını denetler.|
 |[/GT](gt-support-fiber-safe-thread-local-storage.md)|Statik iş parçacığı yerel depolama alanı kullanılarak ayrılan veriler için fiber güvenliği destekler.|
 |[/Guard: CF](guard-enable-control-flow-guard.md)|Denetim akışı koruyucusu güvenlik denetimleri ekler.|
-|[/GV](gd-gr-gv-gz-calling-convention.md)|`__vectorcall` çağırma kuralını kullanır. (yalnızca x86 ve x64)|
+|[/Guard: ehcont](guard-enable-eh-continuation-metadata.md)|EH devamlılık meta verilerini etkinleştirilir.|
+|[/GV](gd-gr-gv-gz-calling-convention.md)|`__vectorcall`Çağırma kuralını kullanır. (yalnızca x86 ve x64)|
 |[/GW](gw-optimize-global-data.md)|Tam program genel veri iyileştirmesini mümkün hale getirme.|
 |[/GX](gx-enable-exception-handling.md)|Kullanım dışı. Zaman uyumlu özel durum işlemeyi mümkün. Bunun yerine [/Eh](eh-exception-handling-model.md) kullanın.|
 |[/GY](gy-enable-function-level-linking.md)|İşlev düzeyinde bağlamayı mümkün.|
 |[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|Kullanım dışı. Hızlı denetimleri mümkün. ( [/RTC1](rtc-run-time-error-checks.md)ile aynı)|
-|[/Gz](gd-gr-gv-gz-calling-convention.md)|`__stdcall` çağırma kuralını kullanır. (yalnızca x86)|
+|[/Gz](gd-gr-gv-gz-calling-convention.md)|`__stdcall`Çağırma kuralını kullanır. (yalnızca x86)|
 |[/homeparams](homeparams-copy-register-parameters-to-stack.md)|, Yazmaçlarda geçirilen parametreleri işlev girişi üzerine yığındaki konumlarına yazılacak şekilde zorlar. Bu derleyici seçeneği yalnızca x64 derleyicileri için geçerlidir (yerel ve çapraz derleme).|
 |[/hotpatch](hotpatch-create-hotpatchable-image.md)|Düzeltme Eki eklenebilen bir görüntü oluşturur.|
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|Hızlı bir şekilde daha fazla işlem oluşturur.|
-|[/QIfist](qifist-suppress-ftol.md)|Kullanım dışı. Bir kayan nokta türünden integral türüne dönüştürme gerekli olduğunda, yardımcı işlevin çağrısını bastırır `_ftol`. (yalnızca x86)|
-|[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|`try` bloklarının içindeki `fwait` komutlarını kaldırır.|
-|[/Qıntel-JCC-errat](qintel-jcc-erratum.md)|Intel JCC ermıtum mikro kod güncelleştirmesinin performans etkisini azaltır.|
+|[/QIfist](qifist-suppress-ftol.md)|Kullanım dışı. `_ftol`Bir kayan nokta türünden integral türüne dönüştürme gerektiğinde yardımcı işlevin çağrısını bastırır. (yalnızca x86)|
+|[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|`fwait`Bloklar içindeki komutları kaldırır `try` .|
+|[/QIntel-jcc-erratum](qintel-jcc-erratum.md)|Intel JCC ermıtum mikro kod güncelleştirmesinin performans etkisini azaltır.|
 |[/Qpar](qpar-auto-parallelizer.md)|Döngülerin otomatik paralelleştirilmesini mümkün hale getirme.|
 |[/Qpar-report](qpar-report-auto-parallelizer-reporting-level.md)|Otomatik paralelleştirme için raporlama düzeylerini mümkün hale getirme.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Kayan nokta değerleri için tamsayı taşıma yönergelerini kullanır ve belirli kayan nokta yükleme iyileştirmelerini devre dışı bırakır.|
 |[/Qspectre](qspectre.md)|Spectre saldırılarına yönelik bir sınıf için CVE 2017-5753 için azaltıcı etkenleri etkinleştirin.|
-|[/Qspectre-Load](qspectre-load.md)|Her yük yönergesi için serileştirme yönergeleri oluşturun.|
-|[/Qspectre-Load-CF](qspectre-load-cf.md)|Belleği yükleyen her denetim akışı yönergesi için serileştirme yönergeleri oluşturun.|
+|[/Qspectre-load](qspectre-load.md)|Her yük yönergesi için serileştirme yönergeleri oluşturun.|
+|[/Qspectre-load-cf](qspectre-load-cf.md)|Belleği yükleyen her denetim akışı yönergesi için serileştirme yönergeleri oluşturun.|
 |[/Qvec-report](qvec-report-auto-vectorizer-reporting-level.md)|Otomatik vektörleştirme için raporlama düzeylerine izin vermez.|
 |[/RTC](rtc-run-time-error-checks.md)|Çalışma zamanı hata denetimini etkinleştirilir.|
 |[/volatile](volatile-volatile-keyword-interpretation.md)|Volatile anahtar sözcüğünün nasıl yorumlandığını seçer.|
@@ -80,7 +81,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 
 |Seçenek|Amaç|
 |------------|-------------|
-|[/doc](doc-process-documentation-comments-c-cpp.md)|Belge açıklamalarını bir XML dosyasına işler.|
+|[/Doc](doc-process-documentation-comments-c-cpp.md)|Belge açıklamalarını bir XML dosyasına işler.|
 |[/FA](fa-fa-listing-file.md)|Bir derleme listeleme dosyası yapılandırır.|
 |[/FA](fa-fa-listing-file.md)|Bir derleme listeleme dosyası oluşturur.|
 |[/FD](fd-program-database-file-name.md)|Program veritabanı dosyasını yeniden adlandırır.|
@@ -89,7 +90,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/FM](fm-name-mapfile.md)|Bir mapfile oluşturur.|
 |[/Fo](fo-object-file-name.md)|Bir nesne dosyası oluşturur.|
 |[/FP](fp-name-dot-pch-file.md)|Önceden derlenmiş üst bilgi dosyası adını belirtir.|
-|[/FR,/fr](fr-fr-create-dot-sbr-file.md)|Ad *`.sbr`* tarayıcı dosyaları oluşturdu.|
+|[/FR,/fr](fr-fr-create-dot-sbr-file.md)|Oluşturulan *`.sbr`* tarayıcı dosyalarını adlandırın.|
 
 ## <a name="preprocessor"></a>Ön işlemci
 
@@ -115,7 +116,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |------------|-------------|
 |[/constexpr](constexpr-control-constexpr-evaluation.md)|Derleme zamanında **constexpr** değerlendirmesini denetleyin.|
 |[/OpenMP](openmp-enable-openmp-2-0-support.md)|Kaynak kodda [#pragma omp](../../preprocessor/omp.md) 'yi sunar.|
-|[/vd](vd-disable-construction-displacements.md)|Gizli `vtordisp` sınıf üyelerini bastırır veya izin vermez.|
+|[/vd](vd-disable-construction-displacements.md)|Gizli sınıf üyelerini bastırır veya izin vermez `vtordisp` .|
 |[/VMB](vmb-vmg-representation-method.md)|Üye işaretçileri için en iyi temeli kullanır.|
 |[/VMG](vmb-vmg-representation-method.md)|Üye işaretçileri için tam olarak kullanım sağlar.|
 |[/VMM](vmm-vms-vmv-general-purpose-representation.md)|Birden çok devralma bildirir.|
@@ -129,7 +130,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/ZH](zh.md)|Hata ayıklama bilgilerinde sağlama toplamı için MD5, SHA-1 veya SHA-256 belirtir.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Düzenle ve devam et ile uyumlu bir program veritabanındaki hata ayıklama bilgilerini içerir. (yalnızca x86)|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Tüm hata ayıklama bilgileri üretir.|
-|[/Zl](zl-omit-default-library-name.md)|Varsayılan kitaplık adını *`.obj`* dosyasından kaldırır.|
+|[/Zl](zl-omit-default-library-name.md)|Varsayılan kitaplık adını *`.obj`* dosyadan kaldırır.|
 |[/ZP](zp-struct-member-alignment.md) *n*|Paketler yapısı üyeleri.|
 |[/ZS](zs-syntax-check-only.md)|Yalnızca söz dizimini denetler.|
 |[/ZW](zw-windows-runtime-compilation.md)|Windows Çalışma Zamanı çalıştırmak için bir çıkış dosyası üretir.|
@@ -141,7 +142,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/F](f-set-stack-size.md)|Yığın boyutunu ayarlar.|
 |[/LD](md-mt-ld-use-run-time-library.md)|Dinamik bağlantı kitaplığı oluşturur.|
 |[/LDd](md-mt-ld-use-run-time-library.md)|Bir hata ayıklama dinamik bağlantı kitaplığı oluşturur.|
-|[/link](link-pass-options-to-linker.md)|BAĞLAMA için belirtilen seçeneği geçirir.|
+|[/Link](link-pass-options-to-linker.md)|BAĞLAMA için belirtilen seçeneği geçirir.|
 |[/LN](ln-create-msil-module.md)|MSIL Modülü oluşturur.|
 |[/MD](md-mt-ld-use-run-time-library.md)|*Msvcrt. lib*kullanarak çok iş PARÇACıKLı bir dll oluşturmak için derler.|
 |[/MDd](md-mt-ld-use-run-time-library.md)|*Msvcrtd. lib*kullanarak bir hata ayıklama çok Iş parçacıklı DLL oluşturmak için derler.|
@@ -163,8 +164,8 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/FS](fs-force-synchronous-pdb-writes.md)|Mspdbsrv aracılığıyla serileştirilmesi için PDB dosyasına yazmaları zorlar *. EXE*.|
 |[/H](h-restrict-length-of-external-names.md)|Kullanım dışı. Dış (ortak) adların uzunluğunu kısıtlar.|
 |[/HELP](help-compiler-command-line-help.md)|Derleyici seçeneklerini listeler.|
-|[/J](j-default-char-type-is-unsigned.md)|Varsayılan `char` türünü değiştirir.|
-|[/JMC](jmc.md)|Yerel C++ yalnızca kendi kodum hata ayıklamayı destekler.|
+|[/J](j-default-char-type-is-unsigned.md)|Varsayılan türü değiştirir `char` .|
+|[/JMC](jmc.md)|Yerel C++ Yalnızca kendi kodum hata ayıklamayı destekler.|
 |[/Kernel](kernel-create-kernel-mode-binary.md)|Derleyici ve bağlayıcı, Windows çekirdeğinde yürütülebilecek bir ikili oluşturacak.|
 |[/MP](mp-build-with-multiple-processes.md)|Aynı anda birden fazla kaynak dosyası oluşturur.|
 |[/nologo](nologo-suppress-startup-banner-c-cpp.md)|Oturum açma başlığının görüntülenmesini önler.|
@@ -173,7 +174,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/TC](tc-tp-tc-tp-specify-source-file-type.md)|C kaynak dosyasını belirtir.|
 |[/TC](tc-tp-tc-tp-specify-source-file-type.md)|Tüm kaynak dosyalarının C olduğunu belirtir.|
 |[/TP](tc-tp-tc-tp-specify-source-file-type.md)|Bir C++ kaynak dosyasını belirtir.|
-|[/TP](tc-tp-tc-tp-specify-source-file-type.md)|Tüm kaynak dosyaları belirtir C++.|
+|[/TP](tc-tp-tc-tp-specify-source-file-type.md)|Tüm kaynak dosyaları C++ olduğunu belirtir.|
 |[Çıktıda](v-version-number.md)|Kullanım dışı. Sürüm dizesini ayarlar.|
 |[aralıkları](compiler-option-warning-level.md)|Tüm uyarıları devre dışı bırakır.|
 |[/W0,/W1,/W2,/W3,/W4](compiler-option-warning-level.md)|Çıkış uyarı düzeyini ayarlar.|
@@ -181,11 +182,11 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/Wall](compiler-option-warning-level.md)|Varsayılan olarak devre dışı bırakılan uyarılar da dahil olmak üzere tüm uyarıları sunar.|
 |[/WD](compiler-option-warning-level.md)|Belirtilen uyarıyı devre dışı bırakır.|
 |[/we](compiler-option-warning-level.md)|Belirtilen uyarıyı hata olarak değerlendirir.|
-|[/WL](wl-enable-one-line-diagnostics.md)|Komut satırından kaynak kodu derlenirken C++ hata ve uyarı iletileri için tek satırlık tanılamayı mümkün bir şekilde sunar.|
+|[/WL](wl-enable-one-line-diagnostics.md)|Komut satırından C++ kaynak kodunu derlerken hata ve uyarı iletileri için tek satırlık tanılamayı mümkün bir şekilde sunar.|
 |[/Wo](compiler-option-warning-level.md)|Belirtilen uyarıyı yalnızca bir kez görüntüler.|
 |[/WV](compiler-option-warning-level.md)|Derleyicinin sonraki sürümlerinde tanıtılan uyarıları devre dışı bırakır.|
 |[/WX](compiler-option-warning-level.md)|Uyarıları hata olarak değerlendirir.|
-|[/YC](yc-create-precompiled-header-file.md)|*`.PCH`* dosya oluşturun.|
+|[/YC](yc-create-precompiled-header-file.md)|*`.PCH`* Dosya oluşturun.|
 |[/Yd](yd-place-debug-information-in-object-file.md)|Kullanım dışı. Tüm nesne dosyalarındaki hata ayıklama bilgilerini tamamlar. Bunun yerine [/Zi](z7-zi-zi-debug-information-format.md) kullanın.|
 |[/Yl](yl-inject-pch-reference-for-debug-library.md)|Bir hata ayıklama kitaplığı oluştururken PCH başvurusunu çıkartır.|
 |[/Yu](yu-use-precompiled-header-file.md)|Derleme sırasında önceden derlenmiş bir üstbilgi dosyası kullanır.|
@@ -198,16 +199,16 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 |[/Validate-charset](validate-charset-validate-for-compatible-characters.md)|UTF-8 dosyalarını yalnızca uyumlu karakterler için doğrulayın.|
 |[/Diagnostics](diagnostics-compiler-diagnostic-options.md)|Tanılama iletilerinin biçimini denetler.|
 |[/Permissive-](permissive-standards-conformance.md)|Standart uyumluluk modunu ayarlayın.|
-|[/STD](std-specify-language-standard-version.md)|C++Standart sürüm uyumluluğu Seçicisi.|
+|[/STD](std-specify-language-standard-version.md)|C++ standart sürüm uyumluluk Seçicisi.|
 
 ## <a name="experimental-options"></a>Deneysel seçenekler
 
-Deneysel seçenekler yalnızca derleyicinin belirli sürümleri tarafından desteklenir. Ayrıca farklı derleyici sürümlerinde farklı davranabilir. Genellikle, deneysel seçeneklere yönelik belgeler yalnızca en iyi veya yalnızca [Microsoft C++ ekip bloguna](https://devblogs.microsoft.com/cppblog/)yöneliktir.
+Deneysel seçenekler yalnızca derleyicinin belirli sürümleri tarafından desteklenir. Ayrıca farklı derleyici sürümlerinde farklı davranabilir. Genellikle, deneysel seçeneklere yönelik belgeler yalnızca en iyi veya yalnızca [Microsoft C++ ekip blogu](https://devblogs.microsoft.com/cppblog/)' nda bulunur.
 
 |Seçenek|Amaç|
 |------------|-------------|
-|[/Deneysel: modül](experimental-module.md)|Deneysel modül desteğini izin vermez.|
-|[/Deneysel: Önişlemci](experimental-preprocessor.md)|Deneysel uyumsuz Önişlemci desteğini sunar.|
+|[/experimental:module](experimental-module.md)|Deneysel modül desteğini izin vermez.|
+|[/experimental:preprocessor](experimental-preprocessor.md)|Deneysel uyumsuz Önişlemci desteğini sunar.|
 
 ## <a name="deprecated-and-removed-compiler-options"></a>Kullanım dışı ve kaldırılmış derleyici seçenekleri
 
@@ -223,7 +224,7 @@ Deneysel seçenekler yalnızca derleyicinin belirli sürümleri tarafından dest
 |[/H](h-restrict-length-of-external-names.md)|Kullanım dışı. Dış (ortak) adların uzunluğunu kısıtlar.|
 |[/OG](og-global-optimizations.md)|Kullanım dışı. Genel iyileştirmeleri kullanır.|
 |[/QIfist](qifist-suppress-ftol.md)|Kullanım dışı. Bir kayan nokta türünden integral türüne nasıl dönüştüreceğiniz belirlemek için kullanılır.|
-|[Çıktıda](v-version-number.md)|Kullanım dışı. *`.obj`* dosya sürümü dizesini ayarlar.|
+|[Çıktıda](v-version-number.md)|Kullanım dışı. *`.obj`* Dosya sürümü dizesini ayarlar.|
 |[/Wp64](wp64-detect-64-bit-portability-issues.md)|Kullanımdan kalktı. 64-bit taşınabilirlik sorunlarını algılar.|
 |[/Yd](yd-place-debug-information-in-object-file.md)|Kullanım dışı. Tüm nesne dosyalarındaki hata ayıklama bilgilerini tamamlar. Bunun yerine [/Zi](z7-zi-zi-debug-information-format.md) kullanın.|
 |[/Zc: forScope-](zc-forscope-force-conformance-in-for-loop-scope.md)|Kullanım dışı. For döngüsü kapsamında uygunluğu devre dışı bırakır.|
@@ -234,4 +235,4 @@ Deneysel seçenekler yalnızca derleyicinin belirli sürümleri tarafından dest
 
 [C/C++ oluşturma başvurusu](c-cpp-building-reference.md)\
 [MSVC derleyici seçenekleri](compiler-options.md)\
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyicisi komut satırı söz dizimi](compiler-command-line-syntax.md)
