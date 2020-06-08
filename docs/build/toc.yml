@@ -567,8 +567,10 @@
                   href: ../build/reference/gs-buffer-security-check.md
                 - name: /Gs (Denetim yığını denetim çağrıları)
                   href: ../build/reference/gs-control-stack-checking-calls.md
-                - name: /guard (Denetim Akışı Korumasını Etkinleştirme)
+                - name: '/guard:cf (Denetim Akışı Korumasını Etkinleştir)'
                   href: ../build/reference/guard-enable-control-flow-guard.md
+                - name: '/guard:ehcont (EH Devamlılık Meta Verilerini Etkinleştir)'
+                  href: ../build/reference/guard-enable-eh-continuation-metadata.md
                 - name: /GT (Fiber-güvenli iş parçacığı-yerel depolamayı destekle)
                   href: ../build/reference/gt-support-fiber-safe-thread-local-storage.md
                 - name: /Gw (Genel verileri en iyileştir)
