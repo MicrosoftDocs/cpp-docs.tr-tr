@@ -1,11 +1,12 @@
 ---
 title: sqrt, sqrtf, sqrtl
-ms.date: 4/2/2020
+ms.date: 6/5/2020
 api_name:
 - sqrtl
 - sqrtf
 - sqrt
 - _o_sqrt
+- _o_sqrtf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -36,18 +37,18 @@ helpviewer_keywords:
 - calculating square roots
 - square roots, calculating
 ms.assetid: 2ba9467b-f172-41dc-8f10-b86f68fa813c
-ms.openlocfilehash: ee41d0747c31e5e8b89712a78eceda6a81d909a8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8983d0854b82d532aad57fa80b03bbe3313970f0
+ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913908"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84506890"
 ---
 # <a name="sqrt-sqrtf-sqrtl"></a>sqrt, sqrtf, sqrtl
 
 Kare kökünü hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double sqrt(
@@ -69,7 +70,7 @@ long double sqrtl(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Negatif olmayan kayan nokta değeri
 
 ## <a name="remarks"></a>Açıklamalar
@@ -92,7 +93,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**sqrt**, **sqrtf**, **sqrtl**|\<Math. h>|\<cmath>|
+|**sqrt**, **sqrtf**, **sqrtl**|\<math.h>|\<cmath>|
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -123,7 +124,7 @@ The square root of 45.35 is 6.73
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [exp, expf, expl](exp-expf.md)<br/>
 [log, logf, log10, log10f](log-logf-log10-log10f.md)<br/>
 [pow, powf, powl](pow-powf-powl.md)<br/>

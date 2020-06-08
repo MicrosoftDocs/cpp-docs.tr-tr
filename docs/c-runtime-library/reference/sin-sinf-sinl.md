@@ -1,11 +1,12 @@
 ---
 title: sin, sinf, sinl
-ms.date: 4/2/2020
+ms.date: 6/5/2020
 api_name:
 - sinl
 - sinf
 - sin
 - _o_sin
+- _o_sinf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -36,18 +37,18 @@ helpviewer_keywords:
 - trigonometric functions
 - sinf function
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
-ms.openlocfilehash: ecd6a03fb7a933391f50de9eb075d8247d60924f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8e50a40df126b400163c2dde8c950da03d286aef
+ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915765"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84507020"
 ---
 # <a name="sin-sinf-sinl"></a>sin, sinf, sinl
 
 Kayan nokta değerinin sinüsünü hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double sin(double x);
@@ -62,7 +63,7 @@ long double sin(long double x);  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Döndürülen değer
@@ -86,7 +87,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-|-|-|
-|**Sin**, **sinf**, **sinl**|\<Math. h>|\<cmath> veya \<Math. h>|
+|**Sin**, **sinf**, **sinl**|\<math.h>|\<cmath> veya \<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -120,7 +121,7 @@ cos( 1.570796 ) = 0.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [acos, acosf, acosl](acos-acosf-acosl.md)<br/>
 [asin, asinf, asinl](asin-asinf-asinl.md)<br/>
 [atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>

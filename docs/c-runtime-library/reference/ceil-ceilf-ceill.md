@@ -1,11 +1,12 @@
 ---
 title: ceil, ceilf, ceill
-ms.date: 4/2/2020
+ms.date: 6/5/2020
 api_name:
 - ceilf
 - ceil
 - ceill
 - _o_ceil
+- _o_ceilf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - ceil function
 - ceilf function
 ms.assetid: f4e5acab-5c8f-4b10-9ae2-9561e6453718
-ms.openlocfilehash: bca6053b9dc5ecaf83ab8d63566308e3b573614e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 284443f511217be7873a7d7b02562484b32cefca
+ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917343"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84507085"
 ---
 # <a name="ceil-ceilf-ceill"></a>ceil, ceilf, ceill
 
 Bir değerin tavan değerini hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double ceil(
@@ -67,7 +68,7 @@ long double ceill(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -90,7 +91,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ceil**, **ceilf**, **ceill**|\<Math. h>|
+|**ceil**, **ceilf**, **ceill**|\<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -100,7 +101,7 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [floor, floorf, floorl](floor-floorf-floorl.md)<br/>
 [fmod, fmodf](fmod-fmodf.md)<br/>
 [round, roundf, roundl](round-roundf-roundl.md)<br/>

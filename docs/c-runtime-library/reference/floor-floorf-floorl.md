@@ -1,11 +1,12 @@
 ---
 title: floor, floorf, floorl
-ms.date: 4/2/2020
+ms.date: 6/5/2020
 api_name:
 - floorf
 - floorl
 - floor
 - _o_floor
+- _o_floorf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - calculating floors of values
 - floorl function
 ms.assetid: e9955f70-d659-414f-8050-132e13c8ff36
-ms.openlocfilehash: 3455e9f1fb7f49e686b2d7ae315a413c829f87ea
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 24c6811a755ea242d424c5dd06cdf48c6e9c1b20
+ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911630"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84507007"
 ---
 # <a name="floor-floorf-floorl"></a>floor, floorf, floorl
 
 Bir değerin tabanını hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double floor(
@@ -67,7 +68,7 @@ long double floorl(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -90,7 +91,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**kat**, **floorf**, **floorl**|\<Math. h>|
+|**kat**, **floorf**, **floorl**|\<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -131,7 +132,7 @@ The ceil of -2.8 is -2.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
 [round, roundf, roundl](round-roundf-roundl.md)<br/>
 [fmod, fmodf](fmod-fmodf.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: /permissive- (Standartlara uyumluluk)
-description: Microsoft C++ /izin- (Standartlara uygunluk) derleyici seçeneğine işbaşvuru rehberi.
-ms.date: 04/14/2020
+description: Microsoft C++/Permissive-(standartlar uygunluğu) derleyici seçeneği için başvuru kılavuzu.
+ms.date: 06/04/2020
 f1_keywords:
 - /permissive
 - VC.Project.VCCLCompilerTool.ConformanceMode
@@ -11,53 +11,53 @@ helpviewer_keywords:
 - Standards conformance compiler options
 - permissive compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 695f84e64f07128ac7744dc99e736f2a71ab3e79
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3b5ddc4b4e9b70b2191a17d2201a441603182149
+ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81337409"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84507033"
 ---
 # <a name="permissive--standards-conformance"></a>/permissive- (Standartlara uyumluluk)
 
-Derleyiciye standartlara uygunluk modunu belirtin. Kodunuzdaki uyumluluk sorunlarını belirlemenize ve düzeltmenize yardımcı olmak ve kodu daha doğru ve daha taşınabilir hale getirmek için bu seçeneği kullanın.
+Derleyiciye standartlar uygunluk modunu belirtin. Kodunuzda uyumluluk sorunlarını belirleyip düzeltmenize yardımcı olması için bu seçeneği kullanın. böylece, hem daha doğru hem de daha fazla taşınabilir hale getirebilirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/izin verilen-**
+> **`/permissive-`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek Visual Studio 2017 ve sonraki yıllarda desteklenir.
+Bu seçenek, Visual Studio 2017 ve üzeri sürümlerde desteklenir.
 
-Standartlara uygun derleyici davranışını belirtmek için **/izin veren** derleyici seçeneğini kullanabilirsiniz. Bu seçenek izin verici davranışları devre dışı kayırır ve sıkı uyumluluk için [/Zc](zc-conformance.md) derleyici seçeneklerini ayarlar. IDE'de bu seçenek, IntelliSense altyapısının uyumsuz kodun altını çizmesini de sağlar.
+**`/permissive-`** Standartlara uygun derleyici davranışını belirtmek için derleyici seçeneğini kullanabilirsiniz. Bu seçenek, izin veren davranışları devre dışı bırakır ve [**`/Zc`**](zc-conformance.md) derleme seçeneklerini katı uyumluluk için ayarlar. IDE 'de, bu seçenek IntelliSense altyapısının duyarlı olmayan kodun altını çizerken de olmasını sağlar.
 
-Varsayılan olarak, **/izin-** seçeneği Visual Studio 2017 sürüm 15.5 ve sonraki sürümleri tarafından oluşturulan yeni projelerde ayarlanır. Önceki sürümlerde varsayılan olarak ayarlanmaz. Seçenek ayarlandığında, derleyici, c++11 öncesi koddaki bazı yaygın hatalar da dahil olmak üzere, standart olmayan dil yapıları kodunuzda algılandığında tanılama hataları veya uyarılar oluşturur.
+Varsayılan olarak, bu **`/permissive-`** seçenek Visual Studio 2017 sürüm 15,5 ve sonraki sürümleri tarafından oluşturulan yeni projelerde ayarlanır. Bu, önceki sürümlerde varsayılan olarak ayarlanmamış. Seçenek ayarlandığında, kodunuzda standart olmayan dil yapıları algılandığında derleyici tanılama hataları veya uyarılar üretir. Bu yapılar, pre-C + + 11 kodundaki bazı yaygın hataları içerir.
 
-**/izin-** seçeneği, Windows Fall Creators SDK'dan (10.0.16299.0) başlayan Yazılım Geliştirme Kiti (SDK) veya Windows Sürücü Kiti (WDK) gibi en son Windows Kit'lerinin hemen hemen tüm üstbilgi dosyalarıyla uyumludur. SDK'nın eski sürümleri, çeşitli kaynak kodu uygunluk nedenleriyle **/izin altında** derlenebilir. Derleyici ve SDK'lar farklı sürüm zaman çizelgelerinde iletir, bu nedenle kalan bazı sorunlar vardır. Belirli üstbilgi dosyası sorunları için aşağıdaki [Windows üstbilgi sorunlarına](#windows-header-issues) bakın.
+**`/permissive-`** Bu seçenek, Windows Fall CREATORS SDK (10.0.16299.0) ' den başlayarak, yazılım geliştirme seti (SDK) veya Windows Sürücü Seti (WDK) gibi en son Windows setlerinden tüm üstbilgi dosyalarının neredeyse tümüyle uyumludur. Diğer kaynak kodu uyumluluk nedenleriyle, SDK 'nın daha eski sürümleri tarafından derlenmesi başarısız olabilir **`/permissive-`** . Derleyici ve SDK 'lar farklı sürüm zaman çizelgeleriyle birlikte bulunduğundan bazı sorunlar daha vardır. Belirli üstbilgi dosyası sorunları için aşağıdaki [Windows üst bilgi sorunları](#windows-header-issues) bölümüne bakın.
 
-**/izin verme seçeneği** [/ Zc:referenceBinding](zc-referencebinding-enforce-reference-binding-rules.md), [/Zc:strictStrings](zc-strictstrings-disable-string-literal-type-conversion.md)ve [/Zc:rvalueCast](zc-rvaluecast-enforce-type-conversion-rules.md) seçeneklerini uygun davranışa ayarlar. Bu seçenekler varsayılan olarak uygun olmayan davranışlara bağlıdır. Bu davranışı geçersiz kılmak için komut satırına **/izin verdikten** sonra belirli **/Zc** seçeneklerini geçirebilirsiniz.
+**`/permissive-`** Seçeneği [**`/Zc:referenceBinding`**](zc-referencebinding-enforce-reference-binding-rules.md) ,, [**`/Zc:strictStrings`**](zc-strictstrings-disable-string-literal-type-conversion.md) ve [**`/Zc:rvalueCast`**](zc-rvaluecast-enforce-type-conversion-rules.md) seçeneklerini uyumlu davranış olarak ayarlar. Bu seçenekler varsayılan olarak duyarlı olmayan davranışa sahiptir. **`/Zc`** **`/permissive-`** Bu davranışı geçersiz kılmak için komut satırından sonra belirli seçenekleri geçirebilirsiniz.
 
-Visual Studio 2017 sürüm 15.3'te başlayan derleyici sürümlerinde **/izin li** seçenek [/Zc:tersiyer](zc-ternary.md) seçeneğini belirler. Derleyici ayrıca iki aşamalı ad araması için daha fazla gereksinimi de uygular. **/izin-** seçeneği ayarlandığında, derleyici işlevi ve sınıf şablontanımlarını ayrıştırır ve şablonlarda kullanılan bağımlı ve bağımlı olmayan adları tanımlar. Bu sürümde, yalnızca ad bağımlılık çözümlemesi gerçekleştirilir.
+Derleyicinin Visual Studio 2017 sürüm 15,3 ' den başlayarak sürümünde seçeneği, seçeneğini **`/permissive-`** Ayarlar [**`/Zc:ternary`**](zc-ternary.md) . Derleyici Ayrıca iki aşamalı ad araması için gereksinimlerin daha fazlasını uygular. **`/permissive-`** Seçenek ayarlandığında, derleyici işlev ve sınıf şablonu tanımlarını ayrıştırır ve şablonlarda kullanılan bağımlı ve bağımlı olmayan adları tanımlar. Bu sürümde, yalnızca ad bağımlılığı Analizi gerçekleştirilir.
 
-Standardın uygulamaya bıraktığı ortama özgü uzantılar ve dil alanları **/izin veren-**. Örneğin, Microsoft'a `__declspec`özgü , çağrı kuralı ve yapılandırılmış özel durum işleme anahtar kelimeleri ve derleyiciye özgü pragma yönergeleri veya öznitelikleri derleyici tarafından **/izin modunda** işaretlenmez.
+Standart uygulamaya kaydolan ortama özgü uzantılar ve dil alanı tarafından etkilenmemektedir **`/permissive-`** . Örneğin, Microsoft 'a özgü `__declspec` , çağırma kuralı ve yapılandırılmış özel durum işleme anahtar sözcükleri ve derleyiciye özgü pragma yönergeleri ya da öznitelikleri, derleyici tarafından mod 'da bayraklamaz **`/permissive-`** .
 
-**/izin verme** seçeneği, geçerli derleyici sürümündeki uygunluk desteğini hangi dil yapılarının uygun olmadığını belirlemek için kullanır. Seçenek, kodunuzun C++ standardının belirli bir sürümüne uygun olup olmadığını belirlemez. En son taslak standart için uygulanan tüm derleyici desteğini etkinleştirmek için [/std:latest](std-specify-language-standard-version.md) seçeneğini kullanın. Derleyici desteğini şu anda uygulanan C++17 standardıyla sınırlamak için [/std:c++17](std-specify-language-standard-version.md) seçeneğini kullanın. Derleyici desteğini C++14 standardıyla daha yakından eşleştirmesini kısıtlamak için varsayılan olan [/std:c++14](std-specify-language-standard-version.md) seçeneğini kullanın.
+**`/permissive-`** Seçeneği, hangi dil yapılarının uyumsuz olduğunu anlamak için geçerli derleyici sürümündeki uygunluk desteğini kullanır. Bu seçenek, kodunuzun C++ standardının belirli bir sürümüne uyup uymadığını belirleyemez. En son taslak standardı için uygulanan tüm derleyici desteğini etkinleştirmek için [**`/std:c++latest`**](std-specify-language-standard-version.md) seçeneğini kullanın. Derleyici desteğini Şu anda uygulanmış olan C++ 17 standardına göre kısıtlamak için [**`/std:c++17`**](std-specify-language-standard-version.md) seçeneğini kullanın. Derleyici desteğini C++ 14 standardına daha yakından eşleşecek şekilde kısıtlamak için, [**`/std:c++14`**](std-specify-language-standard-version.md) varsayılan olan seçeneğini kullanın.
 
-Visual Studio 2017'nin tüm sürümlerinde Tüm C++11, C++14 veya C++17 standartlarına uygun kodLAR MSVC derleyicisi tarafından desteklenmez. Visual Studio sürümüne bağlı olarak, **/izin verme** seçeneği iki aşamalı ad aramasının bazı yönleriyle ilgili sorunları algılayamaz, geçici olmayan bir const başvuruyu bağlamayabilir, kopya nın doğrudan init olarak ele alınarak, başlangıçta birden çok kullanıcı tarafından tanımlanmış dönüşüme veya mantıksal işleçler için alternatif belirteçlere ve diğer desteklenmeyen uygunluk alanlarına izin verebilir. Visual C++'daki uyumluluk sorunları hakkında daha fazla bilgi için standart [olmayan davranış](../../cpp/nonstandard-behavior.md)konusuna bakın. **/izin verici-**, Visual Studio'yu en son sürüme güncellemek için en iyi şekilde öğrenin.
+Tüm C++ 11, C++ 14 ve C++ 17 standartlarına uygun kod, Visual Studio 2017 ' nin tüm sürümlerinde MSVC derleyicisi tarafından desteklenmez. Visual Studio sürümüne bağlı olarak, bu **`/permissive-`** seçenek iki aşamalı ad aramasının bazı yönlerinde sorunları tespit edebilir, const olmayan bir başvuruyu geçici olarak bağlayarak, başlangıç olarak doğrudan başlatma olarak, başlatma sırasında birden fazla Kullanıcı tanımlı dönüştürmeye izin verir, veya mantıksal işleçler için alternatif belirteçler ve desteklenmeyen diğer uygunluk alanları. Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md). En iyi şekilde yararlanmak için **`/permissive-`** Visual Studio 'yu en son sürüme güncelleştirin.
 
-### <a name="how-to-fix-your-code"></a>Kodunuzu düzeltme
+### <a name="how-to-fix-your-code"></a>Kodunuzu çözme
 
-Aşağıda, **/izin verilen/** kullandığınızda uygun olmayan olarak algılanan bazı kod örnekleri ve sorunları gidermek için önerilen yollar verilmiştir.
+İşte **`/permissive-`** , sorunları çözmek için önerilen yollarla birlikte, kullanırken uyumsuz olarak algılanan kod örnekleri aşağıda verilmiştir.
 
-#### <a name="use-default-as-an-identifier-in-native-code"></a>Yerel kodda varsayılan identifier olarak kullanma
+#### <a name="use-default-as-an-identifier-in-native-code"></a>Yerel kodda tanımlayıcı olarak Varsayılanı kullan
 
 ```cpp
 void func(int default); // Error C2321: 'default' is a keyword, and
                         // cannot be used in this context
 ```
 
-#### <a name="look-up-members-in-dependent-base"></a>Bağımlı tabandaki üyeleri arama
+#### <a name="look-up-members-in-dependent-base"></a>Bağımlı tabandaki üyeleri ara
 
 ```cpp
 template <typename T>
@@ -85,7 +85,7 @@ void h() {
 }
 ```
 
-#### <a name="use-of-qualified-names-in-member-declarations"></a>Üye beyannamelerinde nitelikli adların kullanılması
+#### <a name="use-of-qualified-names-in-member-declarations"></a>Üye bildirimlerinde nitelenmiş adların kullanımı
 
 ```cpp
 struct A {
@@ -95,7 +95,7 @@ struct A {
 };
 ```
 
-#### <a name="initialize-multiple-union-members-in-a-member-initializer"></a>Üye başlatılmasında birden fazla sendika üyesini başlatma
+#### <a name="initialize-multiple-union-members-in-a-member-initializer"></a>Üye başlatıcısında birden çok birleşim üyesini başlatma
 
 ```cpp
 union U
@@ -138,7 +138,7 @@ void g() {
 }
 ```
 
-#### <a name="use-scoped-enums-in-array-bounds"></a>Dizi sınırlarında kapsamlı enums kullanma
+#### <a name="use-scoped-enums-in-array-bounds"></a>Dizi sınırlarda kapsamlı numaralandırmalar kullanma
 
 ```cpp
 enum class Color {
@@ -150,7 +150,7 @@ int data[Color::Blue]; // error C3411: 'Color' is not valid as the size
                        // Cast to type size_t or int to fix.
 ```
 
-#### <a name="use-for-each-in-native-code"></a>Yerel koddaki her biri için kullanın
+#### <a name="use-for-each-in-native-code"></a>Her bir yerel kod için kullanın
 
 ```cpp
 void func() {
@@ -165,7 +165,7 @@ void func() {
 }
 ```
 
-#### <a name="use-of-atl-attributes"></a>ATL Özniteliklerinin Kullanımı
+#### <a name="use-of-atl-attributes"></a>ATL özniteliklerinin kullanımı
 
 ```cpp
 // Example 1
@@ -236,19 +236,19 @@ class ATL_NO_VTABLE CFooImpl : public ICustom,
 
 #### <a name="ambiguous-conditional-operator-arguments"></a>Belirsiz koşullu işleç bağımsız değişkenleri
 
-Derleyicinin Visual Studio 2017 sürüm 15.3'ten önceki sürümlerinde, derleyici Standart tarafından belirsiz `?:` kabul edilen koşullu işleç (veya üçüncül işleci) bağımsız değişkenlerini kabul etti. **/izin modunda,** derleyici şimdi önceki sürümlerde tanılama olmadan derlenen durumlarda bir veya daha fazla tanılama sorunları.
+Derleyicinin Visual Studio 2017 sürüm 15,3 ' den önceki sürümlerinde, derleyici bağımsız değişkenleri `?:` Standart tarafından belirsiz olarak kabul edilen koşullu işlece (veya üçlü operatör) kabul etti. **`/permissive-`** Modda, derleyici artık önceki sürümlerde tanılama olmadan derlenen durumlarda bir veya daha fazla tanılamayı yayınlar.
 
-Bu değişiklikten kaynaklanabilir yaygın hatalar şunlardır:
+Bu değişikliğin neden olabileceği yaygın hatalar şunlardır:
 
-- hata C2593: 'operatör ?' belirsizdir
+- **`error C2593`**`: 'operator ?' is ambiguous`
 
-- hata C2679: ikili '?': hiçbir işleç hangi tip 'B' (ya da kabul edilebilir bir dönüşüm var) bir sağ operand alır bulunamadı
+- **`error C2679`**`: binary '?': no operator found which takes a right-hand operand of type 'B' (or there is no acceptable conversion)`
 
-- hata C2678: ikili '?': hiçbir işleç 'A' tipi bir sol operand alır bulunamadı (ya da kabul edilebilir bir dönüştürme yoktur)
+- **`error C2678`**`: binary '?': no operator found which takes a left-hand operand of type 'A' (or there is no acceptable conversion)`
 
-- hata C2446: ':': 'B'den 'A'ya dönüştürme yok
+- **`error C2446`**`: ':': no conversion from 'B' to 'A'`
 
-Bu soruna neden olabilecek tipik bir kod deseni, bazı C sınıfının hem başka bir T türünden açık olmayan bir oluşturucu hem de T türüne açık olmayan bir dönüştürme işleci sağlamasıdır. Bu durumda, hem ikinci bağımsız değişkenin üçüncü bağımsız değişken türüne dönüştürülmesi hem de üçüncü bağımsız değişkenin ikinci bağımsız değişken türüne dönüştürülmesi geçerli dönüşümlerdir. Her ikisi de geçerli olduğundan, standarda göre belirsiz.
+Bu soruna neden olabilecek tipik bir kod deseninin bir sınıf C, başka bir tür T 'den açık olmayan bir Oluşturucu ve tür T olarak açık olmayan bir dönüştürme işlecinden sunmaktır. Bu durumda, ikinci bağımsız değişkeni üçüncü bağımsız değişkenin türüne dönüştürme ve üçüncü bağımsız değişkeni ikinci bağımsız değişkenin türüne dönüştürme geçerli dönüştürmelerdir. Her ikisi de geçerli olduğundan, standart öğesine göre belirsizdir.
 
 ```cpp
 // Example 1: class that provides conversion to and initialization from some type T
@@ -268,7 +268,7 @@ auto y = cond ? 7 : int(a);
 auto z = cond ? A(7) : a;
 ```
 
-T, null-sonlandırılan dize türlerinden birini (örneğin, `const char *`, `const char16_t *`, vb. vb.) temsil ettiğinde ve `?:` gerçek bağımsız değişken karşılık gelen türün bir dize harfi olduğunda, bu yaygın desenin önemli bir istisnası vardır. C++17 anlambilimi C++14'ten değiştirmiştir. Sonuç olarak, örnek 2'deki kod **/std:c++14** altında kabul edilir ve **/permissive-** **/Std:c++17** altında reddedilir. **/Zc:ternary**
+T, null ile sonlandırılmış dize türlerinden birini temsil ettiğinde (örneğin,, vb `const char *` `const char16_t *` .) ve gerçek bağımsız değişkeni `?:` karşılık gelen türdeki bir dize sabit değeri olduğunda bu ortak düzende önemli bir özel durum vardır. C++ 17, C++ 14 ' ten semantiğini değiştirdi. Sonuç olarak, örnek 2 ' deki kod, **`/std:c++14`** veya kullanıldığında altında kabul edilir ve **`/std:c++17`** reddedilir **`/Zc:ternary`** **`/permissive-`** .
 
 ```cpp
 // Example 2: exception from the above
@@ -289,7 +289,7 @@ auto x = cond ? "A" : s;
 auto y = cond ? "A" : static_cast<const char*>(s);
 ```
 
-Hataları görebileceğiniz başka bir durum türünden `void`bir bağımsız değişkenile koşullu işleçler. Bu durum ASSERT benzeri makrolarda yaygın olabilir.
+Hataların bir bağımsız değişkeni olan koşullu işleçte hata görebileceğiniz başka bir durum **`void`** . Bu durum, onay benzeri makrolarla ortak olabilir.
 
 ```cpp
 // Example 3: void arguments
@@ -300,7 +300,7 @@ void myassert(const char* text, const char* file, int line);
 #define ASSERT_B(ex) (void)((ex) ? void() : myassert(#ex, __FILE__, __LINE__))
 ```
 
-Koşullu işleç sonuç türlerinin **/Zc:ternary** ve **/izin altında**değişebileceği şablon metaprogramming'de de hatalar görebilirsiniz. Bu sorunu çözmenin bir yolu [std kullanmaktır::remove_reference](../../standard-library/remove-reference-class.md) elde edilen türde.
+Ayrıca, koşullu işleç sonuç türlerinin ve altında değiştirebildiği şablon meta programlamada hatalar da görebilirsiniz **`/Zc:ternary`** **`/permissive-`** . Bu sorunu çözmek için bir yol, [`std::remove_reference`](../../standard-library/remove-reference-class.md) elde edilen tür üzerinde kullanmaktır.
 
 ```cpp
 // Example 4: different result types
@@ -312,9 +312,9 @@ decltype(auto) x = cond ? a : b; // char without, const char& with /Zc:ternary
 const char (&z)[2] = count > 3 ? "A" : "B"; // const char* without /Zc:ternary
 ```
 
-#### <a name="two-phase-name-look-up"></a>İki aşamalı ad araması
+#### <a name="two-phase-name-look-up"></a>İki aşamalı ad arama
 
-**/izin-** seçeneği ayarlandığında, derleyici işlevi ve sınıf şablon tanımlarını ayrıştırır ve şablonlarda kullanılan bağımlı ve bağımlı olmayan adları iki aşamalı ad araması için gerekli olduğu şekilde tanımlar. Visual Studio 2017 sürüm 15.3'te ad bağımlılığı çözümlemesi gerçekleştirilir. Özellikle, şablon tanımı bağlamında bildirilmeyen bağımlı olmayan adlar, ISO C++ standartlarının gerektirdiği tanılama iletisi oluşturmaz. Visual Studio 2017 sürüm 15.7'de, tanım bağlamında bağımsız lığa bağlı arama gerektiren bağımlı olmayan adların bağlanması da yapılır.
+**`/permissive-`** Seçenek ayarlandığında, derleyici, iki aşamalı ad araması için gereken şekilde şablonlarda kullanılan bağımlı ve bağımlı olmayan adları tanımlayarak işlev ve sınıf şablonu tanımlarını ayrıştırır. Visual Studio 2017 sürüm 15,3 ' de, ad bağımlılığı Analizi gerçekleştirilir. Özellikle, bir şablon tanımı bağlamında bildirilmeyen, bağımlı olmayan adlar, ISO C++ standartları için gereken bir tanılama iletisine neden olur. Visual Studio 2017 sürüm 15,7 ' de, tanım bağlamında bağımsız değişkene bağlı arama gerektiren bağımlı olmayan adların bağlanması da yapılır.
 
 ```cpp
 // dependent base
@@ -340,17 +340,17 @@ int main()
 }
 ```
 
-İki aşamalı arama için eski davranış istiyorsanız, ancak başka bir şekilde **/izin verilen davranış** istiyorsanız, **/Zc:twoPhase-** seçeneğini ekleyin.
+İki aşamalı arama için eski davranışı isterseniz, ancak davranışını istemiyorsanız, **`/permissive-`** **`/Zc:twoPhase-`** seçeneğini ekleyin.
 
-### <a name="windows-header-issues"></a>Windows üstbilgi sorunları
+### <a name="windows-header-issues"></a>Windows üst bilgisi sorunları
 
-**/izin-** seçeneği, Windows Fall Creators Update SDK (10.0.16299.0) veya Windows Driver Kit (WDK) sürüm 1709'dan önceki Windows Kitleri sürümleri için çok katıdır. Windows veya aygıt sürücü kodunuzda **/izin** vermek için Windows Kitlerinin en son sürümlerine güncelleştirmenizi öneririz.
+Bu **`/permissive-`** seçenek Windows Fall Creators Update SDK (10.0.16299.0) veya Windows Sürücü Seti (WDK) sürüm 1709 ' den önceki Windows setlerinin sürümleri için çok katı. Windows veya aygıt sürücü kodunuzda kullanmak üzere Windows setlerinin en son sürümlerine güncelleştirmenizi öneririz **`/permissive-`** .
 
-Windows Nisan 2018 Güncelleştirme SDK (10.0.17134.0), Windows Fall Creators Update SDK (10.0.16299.0) veya Windows Sürücü Kiti (WDK) 1709 bazı üstbilgi dosyaları, hala / izin kullanımı ile uyumsuz hale sorunları **var-**. Bu sorunları çözmek için, bu üstbilgilerin kullanımını yalnızca bunları gerektiren kaynak kodu dosyalarıyla sınırlamanızı ve bu belirli kaynak kodu dosyalarını derlediğinizde **/izin verme** seçeneğini kaldırmanızı öneririz.
+Windows Nisan 2018 güncelleştirme SDK 'sindeki belirli üst bilgi dosyaları (10.0.17134.0), Windows Fall Creators Update SDK (10.0.16299.0) veya Windows Sürücü Seti (WDK) 1709, ile uyumlu olmayan sorunları yaşamaya devam etmektedir **`/permissive-`** . Bu sorunları geçici olarak çözmek için, bu üstbilgilerin kullanımını yalnızca bunları gerektiren kaynak kodu dosyalarıyla kısıtlayıp **`/permissive-`** Bu özel kaynak kodu dosyalarını derlerken seçeneğini kaldıraöneririz.
 
-Windows Nisan 2018 Update SDK 'da (10.0.17134.0) yayımlanan bu WinRT WRL başlıkları **/izin verilen lerle**temiz değildir. Bu sorunları aşmak için, bu üstbilgilerle çalışırken **/Zc:twoPhase** ile **/izin verme-** veya **/izin verme-** kullanmayın:
+Windows Nisan 2018 güncelleştirme SDK 'sında (10.0.17134.0) yayınlanan bu WinRT WRL üstbilgileri ile temizmemektedir **`/permissive-`** . Bu sorunları geçici olarak çözmek için kullanmayın **`/permissive-`** veya **`/permissive-`** **`/Zc:twoPhase-`** Bu üst bilgilerle çalışırken ile kullanın:
 
-- Winrt/wrl/async.h'deki sorunlar
+- WinRT/WRL/Async. h içindeki sorunlar
 
    ```Output
    C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\winrt\wrl\async.h(483): error C3861: 'TraceDelegateAssigned': identifier not found
@@ -359,15 +359,15 @@ Windows Nisan 2018 Update SDK 'da (10.0.17134.0) yayımlanan bu WinRT WRL başl�
    C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\winrt\wrl\async.h(513): error C3861: 'TraceProgressNotificationComplete': identifier not found
    ```
 
-- Winrt/wrl/implements.h'deki sorun
+- WinRT/WRL/Implements. h 'de sorun
 
    ```Output
    C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt\wrl\implements.h(2086): error C2039: 'SetStrongReference': is not a member of 'Microsoft::WRL::Details::WeakReferenceImpl'
    ```
 
-Windows Nisan 2018 Update SDK 'da (10.0.17134.0) yayımlanan bu Kullanıcı Modu başlıkları **/izin li**temiz değildir. Bu sorunları aşmak için, bu üstbilgilerle çalışırken **/izin verme-** kullanmayın:
+Windows Nisan 2018 güncelleştirme SDK 'sında (10.0.17134.0) yayınlanan bu kullanıcı modu başlıkları ile temizmemektedir **`/permissive-`** . Bu sorunları geçici olarak çözmek için **`/permissive-`** Şu üst bilgilerle çalışırken kullanmayın:
 
-- Um/Tune.h'deki sorunlar
+- Um/ayar. h içindeki sorunlar
 
    ```Output
    C:\ProgramFiles(x86)\Windows Kits\10\include\10.0.17134.0\um\tune.h(139): error C3861: 'Release': identifier not found
@@ -376,13 +376,13 @@ Windows Nisan 2018 Update SDK 'da (10.0.17134.0) yayımlanan bu Kullanıcı Modu
    C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\tune.h(1240): note: 'Release': function declaration must be available as none of the arguments depend on a template parameter
    ```
 
-- Konu um/spddkhlp.h
+- Um/spddkhlp. h 'de sorun
 
    ```Output
    C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\spddkhlp.h(759): error C3861: 'pNode': identifier not found
    ```
 
-- Um/refptrco.h'deki sorunlar
+- Um/refptrco. h içindeki sorunlar
 
    ```Output
    C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\refptrco.h(179): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'
@@ -390,11 +390,11 @@ Windows Nisan 2018 Update SDK 'da (10.0.17134.0) yayımlanan bu Kullanıcı Modu
    C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\refptrco.h(395): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'
    ```
 
-Bu sorunlar, Windows Fall Creators Update SDK'daki Kullanıcı Modu üstbilgilerine özgüdir (10.0.16299.0):
+Bu sorunlar, Windows Fall Creators Update SDK 'daki (10.0.16299.0) Kullanıcı modu üst bilgilerine özgüdür:
 
-- um/Query.h'deki sorun
+- Um/sorgu. h 'de sorun
 
-   **/izin verici** derleyici anahtarını kullanırken, `tagRESTRICTION` yapı case (RTOr) üyesi 'veya' nedeniyle derlemez.
+   **`/permissive-`** Derleyici anahtarını kullanırken, `tagRESTRICTION` ' veya ' Case (rtor) üyesi nedeniyle yapı derlenmez.
 
    ```cpp
    struct tagRESTRICTION
@@ -416,21 +416,21 @@ Bu sorunlar, Windows Fall Creators Update SDK'daki Kullanıcı Modu üstbilgiler
    };
    ```
 
-   Bu sorunu gidermek için, **/izin verme** seçeneği olmadan Query.h içeren dosyaları derleyin.
+   Bu sorunu gidermek için, seçeneği olmadan Query. h içeren dosyaları derleyin **`/permissive-`** .
 
-- Um/cellularapi_oem.h'deki sorun
+- Um/cellularapi_oem. h 'de sorun
 
-   **/izin veren** derleyici anahtarını kullanırken, ileri `enum UICCDATASTOREACCESSMODE` deklarasyon bir uyarıya neden olur:
+   **`/permissive-`** Derleyici anahtarı kullanılırken, iletme bildirimi `enum UICCDATASTOREACCESSMODE` bir uyarıya neden olur:
 
    ```cpp
    typedef enum UICCDATASTOREACCESSMODE UICCDATASTOREACCESSMODE; // C4471
    ```
 
-   Kapsam dışı enumun ileri bildirimi bir Microsoft uzantısıdır. Bu sorunu gidermek için, **/izin verme** seçeneği olmadan cellularapi_oem.h içeren dosyaları derleyin veya C4471 uyarısını susturmak için [/wd](compiler-option-warning-level.md) seçeneğini kullanın.
+   Kapsamlı olmayan numaralandırmanın ileri bildirim bir Microsoft uzantısıdır. Bu sorunu gidermek için, seçeneği olmadan cellularapi_oem. h içeren dosyaları derleyin **`/permissive-`** veya [**`/wd`**](compiler-option-warning-level.md) C4471 uyarı seçeneğini kullanın.
 
-- Um/omscript.h'deki sorun
+- Um/omscript. h 'de sorun
 
-   C++03'te, bir dize harfinden BSTR'ye dönüştürme (typedef'ten 'wchar_t *'' olarak) amortismana küçümsenmesine izin verilir. C++11'de dönüştürmeye artık izin verilmez.
+   C++ 03 ' de, bir dize sabit değerinden BSTR 'ye (' wchar_t * ' için bir typedef) dönüştürme kullanım dışıdır ancak izin verilir. C++ 11 ' de dönüştürmeye artık izin verilmez.
 
    ```cpp
    virtual /* [id] */ HRESULT STDMETHODCALLTYPE setExpression(
@@ -439,25 +439,25 @@ Bu sorunlar, Windows Fall Creators Update SDK'daki Kullanıcı Modu üstbilgiler
        /* [in][defaultvalue] */ __RPC__in BSTR language = L"") = 0; // C2440
    ```
 
-   Bu sorunu gidermek için, **/izin verme** seçeneği olmadan omscript.h içeren dosyaları derleyin veya **yerine /Zc:strictStrings** kullanın.
+   Bu sorunu gidermek için, seçeneği olmadan omscript. h içeren dosyaları derleyin **`/permissive-`** veya **`/Zc:strictStrings-`** bunun yerine kullanın.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-Visual Studio 2017 sürüm 15.5 ve sonraki sürümlerinde şu yordamı kullanın:
+Visual Studio 2017 sürüm 15,5 ve sonraki sürümlerinde şu yordamı kullanın:
 
-1. Projenizin **Özellik Sayfaları** iletişim kutusunu açın.
+1. Projenizin **Özellik sayfaları** iletişim kutusunu açın.
 
-1. Yapılandırma **Özellikleri** > **C/C++** > **Dil** özelliği sayfasını seçin.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **dil** özellik sayfasını seçin.
 
-1. Uygunluk **modu** özellik değerini **Evet (/izin verme-) olarak değiştirin.** Değişikliklerinizi kaydetmek için **Tamam** veya **Uygula'yı** seçin.
+1. **Uyumluluk modu** özellik değerini **Evet (/Permissive-)** olarak değiştirin. Değişikliklerinizi kaydetmek için **Tamam ' ı** veya **Uygula** ' yı seçin.
 
-Visual Studio 2017 sürüm 15.5'ten önceki sürümlerde şu yordamı kullanın:
+Visual Studio 2017 sürüm 15,5 ' den önceki sürümlerde şu yordamı kullanın:
 
-1. Projenizin **Özellik Sayfaları** iletişim kutusunu açın.
+1. Projenizin **Özellik sayfaları** iletişim kutusunu açın.
 
-1. Yapılandırma **Özellikleri** > **C/C++** > **Komut Satırı** özelliği sayfasını seçin.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. **Ek Seçenekler** kutusuna **/izin verici-** derleyici seçeneğini girin. Değişikliklerinizi kaydetmek için **Tamam** veya **Uygula'yı** seçin.
+1. **Ek seçenekler** kutusuna **/Permissive-** derleyici seçeneğini girin. Değişikliklerinizi kaydetmek için **Tamam ' ı** veya **Uygula** ' yı seçin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -465,5 +465,5 @@ Visual Studio 2017 sürüm 15.5'ten önceki sürümlerde şu yordamı kullanın:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyici Seçenekleri](compiler-options.md)\
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)\
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

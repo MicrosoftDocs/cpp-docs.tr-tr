@@ -1,6 +1,6 @@
 ---
 title: log, logf, logl, log10, log10f, log10l
-ms.date: 4/2/2020
+ms.date: 6/5/2020
 api_name:
 - log10f
 - logf
@@ -10,6 +10,8 @@ api_name:
 - logl
 - _o_log
 - _o_log10
+- _o_log10f
+- _o_logf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -46,18 +48,18 @@ helpviewer_keywords:
 - logf function
 - logarithms
 ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
-ms.openlocfilehash: 0acfbefb1fb01215e543538b9fdb8d554b10f8c1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ce01a16e173ba3afb7ad8a0d55303559519fe19e
+ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911475"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84507046"
 ---
 # <a name="log-logf-logl-log10-log10f-log10l"></a>log, logf, logl, log10, log10f, log10l
 
 Logaritmaları hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double log( double x );
@@ -77,7 +79,7 @@ long double log10( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Logaritmanın bulunduğu değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -102,7 +104,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**log**, **logf**, **logl**, **log10**, **log10f**, **log10l**|\<Math. h>|
+|**log**, **logf**, **logl**, **log10**, **log10f**, **log10l**|\<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -163,7 +165,7 @@ Log base 2 of 65536.000000 is 16.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md) <br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md) <br/>
 [exp, expf, expl](exp-expf.md) <br/>
 [_matherr](matherr.md) <br/>
 [pow, powf, powl](pow-powf-powl.md) <br/>

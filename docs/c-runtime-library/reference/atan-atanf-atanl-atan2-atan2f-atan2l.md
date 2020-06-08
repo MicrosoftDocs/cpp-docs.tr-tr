@@ -1,6 +1,6 @@
 ---
 title: atan, atanf, atanl, atan2, atan2f, atan2l
-ms.date: 4/2/2020
+ms.date: 6/5/2020
 api_name:
 - atan2f
 - atan2l
@@ -10,6 +10,7 @@ api_name:
 - atanl
 - _o_atan
 - _o_atan2
+- _o_atan2f
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -44,18 +45,18 @@ helpviewer_keywords:
 - trigonometric functions
 - atan2f function
 ms.assetid: 7a87a18e-c94d-4727-9cb1-1bb5c2725ae4
-ms.openlocfilehash: 34c4b124840572628c3e7cb10382e05b236e6292
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 41007e08884da6ccac09c7dc98cef12381e4b45a
+ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920070"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84506786"
 ---
 # <a name="atan-atanf-atanl-atan2-atan2f-atan2l"></a>atan, atanf, atanl, atan2, atan2f, atan2l
 
-**X** (**atan**, **atanf**, ve **atanl**) veya **y**/**x** 'in arktanjantını (**atan2**, **atan2f**ve **atan2l**) hesaplar.
+**X** (**atan**, **atanf**, ve **atanl**) veya **y** / **x** 'in arktanjantını (**atan2**, **atan2f**ve **atan2l**) hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double atan( double x );
@@ -82,7 +83,7 @@ Herhangi bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**atan** ,-π/2 ile π/2 radyan aralığında *x* 'in ark tanjantını döndürür. **atan2** ,-π aralığında *y*/*x* 'in ark tanjantını döndürür. *X* 0 ise, **atan** 0 döndürür. Her iki **atan2** parametresi 0 ise, işlev 0 döndürür. Tüm sonuçlar radyan cinsinden olur.
+**atan** ,-π/2 ile π/2 radyan aralığında *x* 'in ark tanjantını döndürür. **atan2** *y* / ,-π aralığında y*x* 'in ark tanjantını döndürür. *X* 0 ise, **atan** 0 döndürür. Her iki **atan2** parametresi 0 ise, işlev 0 döndürür. Tüm sonuçlar radyan cinsinden olur.
 
 **atan2** , dönüş değerinin çeyreğine ilişkin her iki parametrenin işaretlerini kullanır.
 
@@ -92,7 +93,7 @@ Herhangi bir sayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Atan** işlevi, *x*'in arktanjantını (ters tanjant işlevi) hesaplar. **atan2** *y*/*x* 'in ark tanjantını hesaplar ( *x* eşitse 0, **atan2** *, y pozitifse* ,-π/2 ise y negatifse 0 veya *y* 0 *ise 0* olur.)
+**Atan** işlevi, *x*'in arktanjantını (ters tanjant işlevi) hesaplar. **atan2** *y*x 'in ark tanjantını hesaplar / *x* ( *x* eşitse 0, **atan2** *, y* pozitifse,-π/2 ise y negatifse 0 veya *y* 0 *y* ise 0 olur.)
 
 **atan** 'de Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md).
 
@@ -104,7 +105,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
-|**atan**, **atan2**, **atanf**, **atan2f**, **atanl**, **atan2l**|\<Math. h>|\<cmath> veya \<Math. h>|
+|**atan**, **atan2**, **atanf**, **atan2f**, **atanl**, **atan2l**|\<math.h>|\<cmath> veya \<math.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -139,7 +140,7 @@ Arctangent of 0.500000 / 5.000000: 0.099669
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [acos, acosf, acosl](acos-acosf-acosl.md)<br/>
 [asin, asinf, asinl](asin-asinf-asinl.md)<br/>
 [cos, cosf, cosl](cos-cosf-cosl.md)<br/>
