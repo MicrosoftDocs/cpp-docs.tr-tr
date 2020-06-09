@@ -21,12 +21,12 @@ helpviewer_keywords:
 - data resources [C++]
 - resources [C++], creating
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
-ms.openlocfilehash: 591a6714f1adabb30fda446cad0e79e2c28c30ad
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 955cce012ac30c3413d7d458e263643d0aefa711
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215247"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84615343"
 ---
 # <a name="binary-editor-c"></a>İkili Düzenleyici (C++)
 
@@ -35,11 +35,11 @@ ms.locfileid: "80215247"
 
 **Ikili düzenleyici** , herhangi bir kaynağı, ONALTıLı veya ASCII biçiminde ikili düzeyde düzenlemenizi sağlar. [Find komutunu](/visualstudio/ide/reference/find-command) , ASCII dizelerini veya onaltılı baytları aramak için de kullanabilirsiniz. **Ikili düzenleyiciyi** yalnızca, Visual Studio ortamı tarafından desteklenmeyen özel kaynaklarda veya kaynak türlerinde küçük değişiklikler yapmanız veya bunları görüntülemeniz gerektiğinde kullanın. **Ikili düzenleyici** Express sürümlerinde kullanılamaz.
 
-- **Ikili düzenleyiciyi** yeni bir dosyada açmak için, menü **dosyası** > **Yeni** > **dosyası**' na gidin, düzenlemek istediğiniz dosya türünü seçin, sonra **Aç** düğmesinin yanındaki açılan oku seçin ve > **ikili Düzenleyicisi** **ile aç** ' ı seçin.
+- **İkili düzenleyiciyi** yeni bir dosya üzerinde açmak için, menü **dosyası**  >  **Yeni**  >  **Dosya**' ya gidin, düzenlemek istediğiniz dosya türünü seçin, sonra **Aç** düğmesinin yanındaki açılan oku seçin ve **Open With**  >  **ikili düzenleyiciyle**aç ' ı seçin.
 
-- **Ikili düzenleyiciyi** mevcut bir dosyada açmak için, menü **dosyası** >  > **dosyayı** **Aç** ' a gidin, düzenlemek istediğiniz dosyayı seçin, sonra **Aç** düğmesinin yanındaki açılan oku seçin ve > **ikili Düzenleyicisi** **ile aç** ' ı seçin.
+- **İkili düzenleyiciyi** mevcut bir dosyada açmak için, menü **dosyası**  >  **Open**  >  **Dosya**aç ' a gidin, düzenlemek istediğiniz dosyayı seçin, sonra **Aç** düğmesinin yanındaki açılan oku seçin ve **Open With**  >  **ikili düzenleyiciyle**aç ' ı seçin.
 
-   ![İkili Düzenleyicisi](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
+   ![İkili Düzenleyici](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
    **Ikili düzenleyicide** gösterildiği bir iletişim kutusu için ikili veriler
 
 **Ikili düzenleyicide** yalnızca belirli ASCII değerleri temsil edilir (0x20 ile 0x7E). Genişletilmiş karakterler, **Ikili düzenleyicinin**sağ panel ASCII değeri bölümünde nokta olarak görüntülenir. Yazdırılabilir karakterler 32 ile 126 arasında ASCII değerlerdir.
@@ -69,7 +69,7 @@ ms.locfileid: "80215247"
 1. **Birlikte Aç** Iletişim kutusunda **ikili düzenleyici**' yi seçin.
 
 > [!NOTE]
-> Yönetilen projelerde kaynak dosyalarıyla çalışmak için [resim düzenleyicisini](../windows/image-editor-for-icons.md) ve **ikili düzenleyiciyi** kullanabilirsiniz. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.
+> Yönetilen projelerde kaynak dosyalarıyla çalışmak için [resim düzenleyicisini](image-editor-for-icons.md) ve **ikili düzenleyiciyi** kullanabilirsiniz. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.
 
 ### <a name="to-edit-a-resource"></a>Bir kaynağı düzenlemek için
 
@@ -90,7 +90,7 @@ Zaten başka bir düzenleyici penceresinde düzenlenmekte olan bir kaynakta **Ik
 
 ASCII dizeleri veya onaltılı baytlar için arama yapabilirsiniz. Örneğin, *Hello*'yu bulmak Için, *Hello* dize veya on altılı değeri olan *48 65 6c 6c 6F*için arama yapabilirsiniz.
 
-1. Menü **düzenle** > [bul](/visualstudio/ide/reference/find-command)' a gidin.
+1. Menü **Düzenle**  >  [bul](/visualstudio/ide/reference/find-command)' a gidin.
 
 1. **Aranan kutusunda,** açılan listeden önceki bir arama dizesini seçin veya bulmak istediğiniz verileri yazın.
 
@@ -100,13 +100,13 @@ ASCII dizeleri veya onaltılı baytlar için arama yapabilirsiniz. Örneğin, *H
 
 Kaynağı normal kaynak betiği (. RC) dosya söz dizimini kullanarak ayrı bir dosyaya yerleştirerek ve sonra **Çözüm Gezgini** ve **kaynak içermeler**' i seçerek bu dosyayı içeren yeni bir özel veya veri kaynağı oluşturabilirsiniz.
 
-1. Özel veya veri kaynağını içeren [bir. rc dosyası oluşturun](../windows/how-to-create-a-resource-script-file.md) .
+1. Özel veya veri kaynağını içeren [bir. rc dosyası oluşturun](how-to-create-a-resource-script-file.md) .
 
    Bir. rc dosyasında, null ile sonlandırılmış alıntılanmış dizeler veya ondalık, onaltılık veya sekizlik biçimde tamsayı olarak özel veri yazabilirsiniz.
 
 1. **Çözüm Gezgini**, projenizin. rc dosyasına sağ tıklayın ve **kaynak içermeler**' i seçin.
 
-1. **Derleme zamanı yönergeleri** kutusuna özel kaynağınızı içeren dosyanın adını veren bir `#include` ifadesini yazın, örneğin:
+1. **Derleme zamanı yönergeleri** kutusuna `#include` özel kaynağınızı içeren dosyanın adını veren bir ifade yazın, örneğin:
 
     ```cpp
     #include mydata.rc
@@ -123,8 +123,8 @@ Kaynağı normal kaynak betiği (. RC) dosya söz dizimini kullanarak ayrı bir 
 
 ## <a name="requirements"></a>Gereksinimler
 
-Hiçbiri
+Yok
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)
+[Kaynak düzenleyicileri](resource-editors.md)

@@ -1,5 +1,5 @@
 ---
-title: Belge / görünüm mimarisi
+title: Belge-görünüm mimarisi
 ms.date: 11/19/2018
 helpviewer_keywords:
 - CView class [MFC], view architecture
@@ -12,69 +12,69 @@ helpviewer_keywords:
 - documents [MFC], MFC document/view model
 - document objects [MFC], document/view architecture
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
-ms.openlocfilehash: d1b1f80f44fdc66a3174ea75c15e139f98a4520b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a74aeba651d385cf3a5386e94ec20e4e56b7cd57
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389685"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84624783"
 ---
 # <a name="documentview-architecture"></a>Belge/Görünüm Mimarisi
 
-Varsayılan olarak, bir belge ve görünüm sınıfı ile bir uygulama çatısı MFC Uygulama Sihirbazı oluşturur. MFC, bu iki sınıf veri yönetime ayırır. Belge verileri depolar ve verileri yazdırma yönetir ve verilerin birden çok görünüm güncelleştiriliyor koordinatları. Görünüm verileri görüntüler ve bunu, düzenleme ve seçim dahil olmak üzere kullanıcı etkileşimi yönetir.
+Varsayılan olarak, MFC Uygulama Sihirbazı bir belge sınıfı ve bir görünüm sınıfı ile bir uygulama iskelet 'i oluşturur. MFC veri yönetimini bu iki sınıfa ayırır. Belge verileri saklar ve verilerin yazdırılmasını yönetir ve verilerin birden çok görünümünü günceller. Görünüm, verileri görüntüler ve seçim ve düzenlemeyle birlikte kullanıcı etkileşimini yönetir.
 
-Bu modelde, bir MFC belge nesnesi okur ve verileri kalıcı depolamaya yazar. (Bir veritabanı gibi) bulunduğu her yerde belge verileri için bir arabirim de sağlayabilir. Ayrı view nesnesinin veri görüntüleme, kullanıcı seçimi için bir pencere içinde veri işleme ve veri düzenleme yönetir. Görünüm belgeden görünen verileri alır ve tüm veri değişiklikleri belgeye geri iletişim kurar.
+Bu modelde, bir MFC belge nesnesi kalıcı depolamaya verileri okur ve yazar. Belge, verilerin bulunduğu yerde (örneğin, bir veritabanında) bir arabirim de sağlayabilir. Ayrı bir görünüm nesnesi, bir penceredeki verilerin Kullanıcı seçimine ve düzenlenmesine kadar veri görüntülemesini yönetir. Görünüm, belgedeki görüntü verilerini alır ve veri değişikliklerinin bulunduğu belgeye geri iletişim kurar.
 
-Kolayca geçersiz kılabilir veya belge/görünüm ayrımı yoksay, ancak çoğu durumda bu modeli takip için ilgi çekici nedenler vardır. Aynı belgenin bir elektronik tablo hem de bir grafik görünümü gibi birden çok görünüm gerektiğinde en iyi biridir. Belge/görünüm modeli, ortak kod (örneğin, bir hesaplama altyapısını) tüm görünümleri belgede bulunabilir çalışırken verilerin her bir görünümünü temsil eden bir ayrı Görünüm nesnesi sağlar. Belge ayrıca veriler her değiştiğinde tüm görünümler güncelleştiriliyor, görev alır.
+Belge/görünüm ayırmayı kolayca geçersiz kılabilir veya yoksayabilirsiniz, ancak çoğu durumda bu modeli izlemek için çekici nedenler vardır. En iyisi, aynı belgenin hem elektronik tablo hem de grafik görünümü gibi birden çok görünümüne ihtiyaç duyduktan biridir. Belge/görünüm modeli, ayrı bir görünüm nesnesinin verilerin her görünümünü temsil etmesini sağlar, ancak tüm görünümlerde ortak kod (örneğin bir hesaplama motoru) belgede bulunabilir. Belge, veriler değiştiğinde tüm görünümleri güncelleştirme görevini de alır.
 
-MFC belge/görünüm mimarisi, birden çok görünüm, birden çok belge türü, bölümlendirici pencereler ve diğer değerli kullanıcı arabirimi özellikleri desteklemek kolaylaştırır.
+MFC belge/görünüm mimarisi, birden fazla görünümü, birden çok belge türünü, Splitter pencerelerini ve diğer değerli kullanıcı arabirimi özelliklerini desteklemeyi kolaylaştırır.
 
-Belge ve görünüm hem kullanıcı hem de size, programcı en çok görünen MFC çerçevesi bölümlerdir. Framework ile uygulama geliştirme, işinizi çoğunu, belge ve görünüm sınıfları yazıya gider. Bu makalede ailesi açıklanmaktadır:
+MFC çerçevesinin her ikisi de hem Kullanıcı hem de sizin için görünebilir olan parçalar belge ve görünümlerdir. Çerçeve ile uygulama geliştirme işlerinde çalışmanızın çoğu belge ve görünüm sınıflarını yazmaya devam ediyor. Bu makale ailesinde şunları anlatmaktadır:
 
-- Belgeleri ve görünümleri ve framework nasıl etkileştiğini amacı.
+- Belge ve görünümlerin ve çerçevede nasıl etkileşime gireceğini gösteren amaçlar.
 
-- Bunları uygulamak için neler gerekir.
+- Bunları uygulamak için yapmanız gerekenler.
 
-Belge/görünüm yaklaşımının temelindeki dört temel sınıfları şunlardır:
+Belge/görünüm 'in Kupa dört anahtar sınıfı vardır:
 
-[CDocument](../mfc/reference/cdocument-class.md) (veya [COleDocument](../mfc/reference/coledocument-class.md)) sınıfı, programınızın veri denetimi ya da depolamak için kullanılan nesneleri destekler ve Programcı tanımlı belge sınıfları için temel işlevleri sağlar. Bir belge, kullanıcı genellikle Dosya menüsünü Aç komutunu kullanarak açılır ve Kaydet komutu ile Dosya menüsünden kaydeden veri birimini temsil eder.
+[CDocument](reference/cdocument-class.md) (veya [cotadocument](reference/coledocument-class.md)) sınıfı, programınızın verilerini depolamak veya denetlemek için kullanılan nesneleri destekler ve programcı tanımlı belge sınıfları için temel işlevselliği sağlar. Belge, kullanıcının Dosya menüsündeki Aç komutuyla genellikle açtığı veri birimini temsil eder ve Dosya menüsünde Kaydet komutuyla kaydeder.
 
-[CView](../mfc/reference/cview-class.md) (veya birçok ondan türetilen sınıflardan biri) Programcı tanımlı görünüm sınıfları için temel işlevleri sağlar. Görünüm bir belgeye ekli ve belge ile kullanıcı arasında aracı görevi görür: görünüm ekranında belgenin bir görüntü oluşturur ve işlemleri belge bağlı olarak kullanıcı girişini yorumlama. Görünümü, görüntü yazdırmayı ve baskı önizlemeyi için da işler.
+[CView](reference/cview-class.md) (veya birden çok türetilmiş sınıflarından biri), programcı tanımlı görünüm sınıfları için temel işlevleri sağlar. Bir görünüm belgeye iliştirilir ve belge ve Kullanıcı arasında bir aracı görevi görür: görünüm, ekranda belgenin bir görüntüsünü oluşturur ve Kullanıcı girişini belge üzerinde işlemler olarak yorumlar. Görünüm, görüntüyü hem yazdırma hem de baskı önizleme için de işler.
 
-[CFrameWnd](../mfc/reference/cframewnd-class.md) (veya türevlerini biri) belge bir veya daha fazla görünümlerini etrafında çerçeve sağlayan nesneleri destekler.
+[CFrameWnd](reference/cframewnd-class.md) (veya varyasyonlarından biri), bir belgenin bir veya daha fazla görünümü etrafında çerçeve sağlayan nesneleri destekler.
 
-[CDocTemplate](../mfc/reference/cdoctemplate-class.md) (veya [CSingleDocTemplate](../mfc/reference/csingledoctemplate-class.md) veya [CMultiDocTemplate](../mfc/reference/cmultidoctemplate-class.md)) belirli bir türün bir veya daha fazla belge düzenler ve doğru oluşturma yöneten bir nesneyi destekler Belge, Görünüm ve çerçeve pencere nesneleri için bu türü.
+[CDocTemplate](reference/cdoctemplate-class.md) (veya [CSingleDocTemplate](reference/csingledoctemplate-class.md) veya [CMultiDocTemplate](reference/cmultidoctemplate-class.md)), belirli bir türün varolan bir veya daha fazla belgesini koordine eden bir nesneyi destekler ve bu tür için doğru belge, görünüm ve çerçeve pencere nesnelerini oluşturmayı yönetir.
 
-Aşağıdaki şekil, bir belge ve onun görünümü arasındaki ilişkiyi gösterir.
+Aşağıdaki şekilde, bir belge ve görünümü arasındaki ilişki gösterilmektedir.
 
-![Görünüm görüntülenen belgenin parçasıdır](../mfc/media/vc379n1.gif "görünümü görüntülenen belgenin parçasıdır") <br/>
-Belge ve Görünüm
+![Görünüm, görüntülenen belgenin parçasıdır](../mfc/media/vc379n1.gif "Görünüm, görüntülenen belgenin parçasıdır") <br/>
+Belge ve görünüm
 
-Belge/görünüm uygulaması Sınıf Kitaplığı'nda verilerin kendisini görünümünü ve veri kullanıcı işlemlerinde ayırır. Verilerde yapılan tüm değişiklikleri belge sınıfı yönetilir. Görünüm erişme ve verileri güncelleştirmek için bu arabirimi çağırır.
+Sınıf kitaplığındaki belge/görünüm uygulamasının verileri kendi görüntüsüne ve verilerdeki Kullanıcı işlemlerinden ayırır. Verilerde yapılan tüm değişiklikler belge sınıfı aracılığıyla yönetilir. Görünüm, verileri erişmek ve güncelleştirmek için bu arabirimi çağırır.
 
-Belgeler, kendi ilişkili görünümler ve görünümlerin çerçeve çerçeve pencereleri, bir belge şablonu tarafından oluşturulur. Belge şablonu oluşturma ve bir belge türü tüm belgeleri yönetme sorumludur.
+Belgeler, ilişkili görünümleri ve görünümleri çerçevesini görüntüleyen çerçeve pencereleri bir belge şablonu tarafından oluşturulur. Belge şablonu, bir belge türünün tüm belgelerini oluşturmaktan ve yönetmekten sorumludur.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Belge/görünüm mimarisinin bir özeti](../mfc/a-portrait-of-the-document-view-architecture.md)
+- [Belge/görünüm mimarisinin dikey](a-portrait-of-the-document-view-architecture.md)
 
-- [Belge/görünüm mimarisinin avantajları](../mfc/advantages-of-the-document-view-architecture.md)
+- [Belge/görünüm mimarisinin avantajları](advantages-of-the-document-view-architecture.md)
 
-- [Uygulama sihirbazından oluşturulan belge ve görünüm sınıfları](../mfc/document-and-view-classes-created-by-the-mfc-application-wizard.md)
+- [Uygulama Sihirbazı tarafından oluşturulan belge ve Görünüm sınıfları](document-and-view-classes-created-by-the-mfc-application-wizard.md)
 
-- [Belge/görünüm mimarisinin alternatifleri](../mfc/alternatives-to-the-document-view-architecture.md)
+- [Belge/görünüm mimarisi alternatifleri](alternatives-to-the-document-view-architecture.md)
 
-- [Tek Bir Belgeye Birden Çok Görünüm Ekleme](../mfc/adding-multiple-views-to-a-single-document.md)
+- [Tek bir belgeye birden çok görünüm ekleme](adding-multiple-views-to-a-single-document.md)
 
-- [Belgeleri Kullanma](../mfc/using-documents.md)
+- [Belgeleri kullanma](using-documents.md)
 
-- [Görünümleri Kullanma](../mfc/using-views.md)
+- [Görünümleri Kullanma](using-views.md)
 
-- [Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi](../mfc/multiple-document-types-views-and-frame-windows.md)
+- [Birden çok belge türü, görünüm ve çerçeve penceresi](multiple-document-types-views-and-frame-windows.md)
 
-- [Başlatma ve belgeleri ve görünümleri temizleme](../mfc/initializing-and-cleaning-up-documents-and-views.md)
+- [Belgeleri ve görünümleri başlatma ve temizleme](initializing-and-cleaning-up-documents-and-views.md)
 
-- [Kendi eklemeleri belge ve görünüm sınıfları başlatma](../mfc/creating-new-documents-windows-and-views.md)
+- [Belge & Görünüm sınıfları için kendi eklemelerinizi başlatın](creating-new-documents-windows-and-views.md)
 
 - [Belgeler ve görünümler ile veritabanı sınıflarını kullanma](../data/mfc-using-database-classes-with-documents-and-views.md)
 
@@ -84,9 +84,9 @@ Belgeler, kendi ilişkili görünümler ve görünümlerin çerçeve çerçeve p
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
-[Windows](../mfc/windows.md)<br/>
-[Çerçeve Pencereleri](../mfc/frame-windows.md)<br/>
-[Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
-[Belge/görünüm oluşturma](../mfc/document-view-creation.md)<br/>
-[Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
+[Kullanıcı arabirimi öğeleri](user-interface-elements-mfc.md)<br/>
+[Windows](windows.md)<br/>
+[Çerçeve pencereleri](frame-windows.md)<br/>
+[Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi](document-templates-and-the-document-view-creation-process.md)<br/>
+[Belge/görünüm oluşturma](document-view-creation.md)<br/>
+[Yeni belgeler, pencereler ve görünümler oluşturma](creating-new-documents-windows-and-views.md)

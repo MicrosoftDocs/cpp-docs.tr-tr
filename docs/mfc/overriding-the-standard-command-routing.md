@@ -7,23 +7,23 @@ helpviewer_keywords:
 - command handling [MFC], routing commands
 - overriding, standard command routing
 ms.assetid: 872b698a-7432-40c4-9008-68721e8effa5
-ms.openlocfilehash: 5383c1053894d44e23baf51b19ac3df4e60158e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 680b185f8d68a834862bc0fe14bf6e7984effd65
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410167"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84617731"
 ---
 # <a name="overriding-the-standard-command-routing"></a>Standart Komut Yönlendirmeyi Geçersiz Kılma
 
-Standart framework yönlendirme bazı değişim uygulamalıdır, nadir durumlarda, bu kılabilirsiniz. Geçersiz kılarak bir veya daha fazla sınıflarda yönlendirme değiştirmek için fikirdir `OnCmdMsg` bu sınıflarda. Bunu yapın:
+Nadir durumlarda, standart Framework yönlendirmenin bazı çeşitlerinizi uygulamanız gerektiğinde geçersiz kılabilirsiniz. Fikir, bu sınıfların üzerine yazarak bir veya daha fazla sınıftaki yönlendirmeyi değiştirmenizde yarar vardır `OnCmdMsg` . Bunu yapın:
 
-- Sınıfta, varsayılan olmayan bir nesneye geçirilecek sırasını ayırır.
+- Sınıf içinde, varsayılan olmayan bir nesneye geçirilecek sırayı keser.
 
-- Yeni bir varsayılan olmayan nesne ya da komut hedefleri komutları sırayla geçirebilirsiniz.
+- Yeni varsayılan olmayan nesnede veya komut hedeflerinde, komutları öğesine geçirebilir.
 
-Yönlendirme içine yeni bir nesne eklemek isterseniz, sınıfı komut hedef sınıf olmalıdır. Geçersiz kılma, sürümlerinde `OnCmdMsg`, geçersiz kılma sürümle çağırdığınızdan emin olun. Bkz: [OnCmdMsg](../mfc/reference/ccmdtarget-class.md#oncmdmsg) sınıfının üye işlevinde `CCmdTarget` içinde *MFC başvurusu* ve bu tür sınıflar sürümlerinde `CView` ve `CDocument` örnekler için sağlanan kaynak kodunda.
+Yönlendirmeye yeni bir nesne eklerseniz, sınıfının sınıfı bir komut hedef sınıfı olmalıdır. Geçersiz kılma sürümleriniz içinde `OnCmdMsg` , geçersiz kıldığınızı sürümü çağırdığınızdan emin olun. MFC başvurusu içindeki sınıfın [OnCmdMsg](reference/ccmdtarget-class.md#oncmdmsg) üye işlevine `CCmdTarget` ve bu *MFC Reference* sınıfların içindeki sürümlere `CView` ve `CDocument` örnekler için sağlanan kaynak koda bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
+[Çerçeve bir Işleyiciyi nasıl çağırır](how-the-framework-calls-a-handler.md)

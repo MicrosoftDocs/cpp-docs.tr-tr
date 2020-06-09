@@ -6,27 +6,27 @@ helpviewer_keywords:
 - application class [MFC]
 - CWinApp class [MFC], overridables
 ms.assetid: 07183d5e-734b-45d9-a8b6-9dde4adac0b4
-ms.openlocfilehash: 28ba243bd755e25db5f2cb03d08013f082fbc918
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 7ae72a52c37582f8398ebc03f404ff105fe14650
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447256"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84624007"
 ---
 # <a name="overridable-cwinapp-member-functions"></a>Geçersiz Kılınabilir CWinApp Üye İşlevleri
 
-[CWinApp](../mfc/reference/cwinapp-class.md) , birkaç geçersiz kılınabilir üye işlevi sağlar (`CWinApp`, bu üyeleri `CWinApp` türettiği, [CWinThread](../mfc/reference/cwinthread-class.md)sınıfından geçersiz kılar):
+[CWinApp](reference/cwinapp-class.md) , birden fazla geçersiz kılınabilir üye işlevi sağlar ( `CWinApp` Bu üyeleri türetilmiş sınıfından bu üyeleri geçersiz kılar [CWinThread](reference/cwinthread-class.md) `CWinApp` ):
 
-- [InitInstance](../mfc/initinstance-member-function.md)
+- [InitInstance](initinstance-member-function.md)
 
-- [Çalıştır](../mfc/run-member-function.md)
+- [Çalıştır](run-member-function.md)
 
-- [ExitInstance](../mfc/exitinstance-member-function.md)
+- [ExitInstance](exitinstance-member-function.md)
 
-- [OnIdle](../mfc/onidle-member-function.md)
+- [OnIdle](onidle-member-function.md)
 
-Geçersiz kılmanız gereken tek `CWinApp` üye işlevi `InitInstance`.
+`CWinApp`Geçersiz kılmanız gereken tek üye işlevi `InitInstance` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)
+[CWinApp: Uygulama Sınıfı](cwinapp-the-application-class.md)

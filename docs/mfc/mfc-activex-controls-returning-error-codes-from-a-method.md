@@ -10,28 +10,28 @@ helpviewer_keywords:
 - SCODE, MFC ActiveX controls
 - ThrowError method [MFC]
 ms.assetid: 771fb9c9-2413-4dcc-b386-7bc4c4adeafd
-ms.openlocfilehash: 5314545a3a903158362dbfa65c4a9a1b2143e86b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1f7564d750b476ac3f57656f3392e0801652e5d5
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364555"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84615510"
 ---
 # <a name="mfc-activex-controls-returning-error-codes-from-a-method"></a>MFC ActiveX Denetimleri: Bir Metottan Hata Kodları Döndürme
 
-Bu makalede, activex denetim yönteminden hata kodlarının nasıl döndürülecekleri açıklanmaktadır.
+Bu makalede, bir ActiveX denetim yönteminden hata kodlarının nasıl döndürülayarlanacağı açıklanır.
 
-Bir yöntem içinde bir hata oluştuğunu belirtmek için [COleControl::ThrowError](../mfc/reference/colecontrol-class.md#throwerror) üye işlevini kullanmanız gerekir ve bu işlev parametre olarak Bir SCODE (durum kodu) alır. Önceden tanımlanmış bir SCODE kullanabilir veya kendi kodunuzu tanımlayabilirsiniz.
+Bir yöntem içinde bir hata oluştuğunu göstermek için bir parametre olarak bir SCODE (durum kodu) alan [COleControl:: ThrowError](reference/colecontrol-class.md#throwerror) member işlevini kullanmanız gerekir. Önceden tanımlanmış bir SCODE kullanabilir veya kendi kendinize birini tanımlayabilirsiniz.
 
 > [!NOTE]
-> `ThrowError`yalnızca bir mülkün Get or Set işlevi veya otomasyon Yöntemi'nden bir hatayı döndürmek için kullanılır. Bunlar, yığında uygun özel durum işleyicisinin bulunacağı tek zamanlardır.
+> `ThrowError`, bir özelliğin get veya set işlevi ya da bir otomasyon yöntemi içinden bir hata döndürmesinin bir yolu olarak kullanılmak üzere tasarlanmıştır. Bunlar, uygun özel durum işleyicisinin yığında mevcut olacağı tek zamanlardır.
 
-Yardımcı işlevler [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported)ve [COleControl::SetNotAllowed](../mfc/reference/colecontrol-class.md#setnotpermitted)gibi en yaygın önceden tanımlanmış SCODEs için var .
+[Coelcontrol:: SetNotSupported](reference/colecontrol-class.md#setnotsupported), [Cohancontrol:: GetNotSupported](reference/colecontrol-class.md#getnotsupported)ve Cotacontrol:: [setnotizin verilen](reference/colecontrol-class.md#setnotpermitted)en yaygın önceden tanımlanmış SCODEs için yardımcı işlevler mevcuttur.
 
-Önceden tanımlanmış SCOD'ların listesi ve özel SCOD'ların tanımlanmasıyla ilgili talimatlar için [ActiveX Denetiminizde ActiveX Denetiminizdeki Hataları İşleme](../mfc/mfc-activex-controls-advanced-topics.md) bölümüne bakın: Gelişmiş Konular.
+Özel SCODEs tanımlanmasıyla ilgili önceden tanımlanmış SCODEs ve yönergelerin bir listesi için, ActiveX denetimlerinde [ActiveX denetiminizdeki hataları işleme](mfc-activex-controls-advanced-topics.md) bölümüne bakın: gelişmiş konular.
 
-Kodunuzu diğer alanlardaki özel durumları raporlama hakkında daha fazla bilgi için [Bkz.](../mfc/reference/colecontrol-class.md#fireerror) [Handling Errors in Your ActiveX Control](../mfc/mfc-activex-controls-advanced-topics.md)
+Kodunuzun diğer alanlarındaki özel durumları raporlama hakkında daha fazla bilgi için bkz. [COleControl:: FireError](reference/colecontrol-class.md#fireerror) ve ActiveX denetimlerinde [hataları işleme](mfc-activex-controls-advanced-topics.md) başlıklı Bölüm: gelişmiş konular.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)
+[MFC ActiveX denetimleri](mfc-activex-controls.md)

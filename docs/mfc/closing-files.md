@@ -5,23 +5,23 @@ helpviewer_keywords:
 - MFC, file operations
 - files [MFC], closing
 ms.assetid: 8415a3a8-3c75-45b0-ac2a-d5385f49bdb3
-ms.openlocfilehash: 69a0960c1edabab00cb71702acda526ee9ebd798
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 51e51c88260a51ec44f11ecb5c2a88e645194f4e
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326930"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84617229"
 ---
 # <a name="closing-files"></a>Dosyaları Kapatma
 
-Bir dosya ile işiniz bittiğinde her zaman olduğu gibi g/ç işlemlerinde kapatmalısınız.
+G/ç işlemlerinde her zamanki gibi, bir dosyayla bittikten sonra kapatmanız gerekir.
 
 #### <a name="to-close-a-file"></a>Bir dosyayı kapatmak için
 
-1. Kullanım **Kapat** üye işlevi. Bu işlev, dosya sistemi dosyayı kapatır ve gerekirse arabelleklerini boşaltır.
+1. **Close** üye işlevini kullanın. Bu işlev, gerekirse dosya sistemi dosyasını ve Temizleme arabelleklerini kapatır.
 
-Ayırdığınızda, [CFile](../mfc/reference/cfile-class.md) çerçevesinde nesne (gösterilen örnekte olduğu gibi [dosyaları açma](../mfc/opening-files.md)), otomatik olarak nesne olacak kapatılmasını ve ardından kapsam dışına çıktığında yok. Bu silme Not `CFile` nesnesi dosya sistemindeki fiziksel dosya silinmez.
+[CFile](reference/cfile-class.md) nesnesini çerçevede ayırdıysanız ( [dosyaları açma](opening-files.md)bölümünde gösterilen örnekte olduğu gibi), nesne otomatik olarak kapatılıp, kapsam dışına geçtiğinde yok edilir. `CFile`Nesne silmenin dosya sistemindeki fiziksel dosyayı silmediğini unutmayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosyalar](../mfc/files-in-mfc.md)
+[Dosyalar](files-in-mfc.md)

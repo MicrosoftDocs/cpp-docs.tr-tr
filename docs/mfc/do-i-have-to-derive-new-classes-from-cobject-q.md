@@ -5,19 +5,19 @@ helpviewer_keywords:
 - derived classes [MFC], from CObject
 - CObject class [MFC], when to use
 ms.assetid: 26021031-feaf-424c-80d1-9547c4409d6a
-ms.openlocfilehash: d38e589f371fc56f5566c56de7b19c366065a503
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 371ede0f0921182c066b4cb224e66b18eb6f1208
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446929"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84616733"
 ---
 # <a name="do-i-have-to-derive-new-classes-from-cobject"></a>CObject'ten Yeni Sınıflar Türetmem Gerekiyor mu?
 
 Hayır, hayır.
 
-Serileştirme veya dinamik uyumluluk gibi, sağladığı tesislere ihtiyacınız olduğunda [CObject](../mfc/reference/cobject-class.md) 'ten bir sınıf türetirsiniz. Birçok veri sınıfının dosyalara serileştirilmesi gerekir, bu nedenle çoğunlukla `CObject`türetmeniz iyi bir fikirdir. `CObject`türetilen bir sınıf örneği için bkz. [karalama örneği](../overview/visual-cpp-samples.md).
+Serileştirme veya dinamik uyumluluk gibi, sağladığı tesislere ihtiyacınız olduğunda [CObject](reference/cobject-class.md) 'ten bir sınıf türetirsiniz. Birçok veri sınıfının dosyalara serileştirilmesi gerekir, bu nedenle çoğu zaman bunları öğesinden türetmek iyi bir fikirdir `CObject` . Öğesinden türetilen bir sınıf örneği için `CObject` bkz. [karalama örneği](../overview/visual-cpp-samples.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CObject Sınıfı: Sık Sorulan Sorular](../mfc/cobject-class-frequently-asked-questions.md)
+[CObject Sınıfı: Sıkça Sorulan Sorular](cobject-class-frequently-asked-questions.md)

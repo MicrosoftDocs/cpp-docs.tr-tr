@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Kullanıcı arabirimi nesnelerini güncelleştirme'
+title: 'Nasıl yapılır: Kullanıcı Arabirimi Nesnelerini Güncelleştirme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - menus [MFC], updating as context changes
@@ -13,31 +13,31 @@ helpviewer_keywords:
 - commands [MFC], updating UI
 - enabling menus [MFC]
 ms.assetid: 82f09773-c978-427b-b321-05a6143b7369
-ms.openlocfilehash: 0dee9bb48c11cf061af60ebaf9a80c0123d339be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aec4067a7b5854ef872cfcef19a15db8438dd795
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160282"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626397"
 ---
-# <a name="how-to-update-user-interface-objects"></a>Nasıl yapılır: Kullanıcı arabirimi nesnelerini güncelleştirme
+# <a name="how-to-update-user-interface-objects"></a>Nasıl yapılır: Kullanıcı Arabirimi Nesnelerini Güncelleştirme
 
-Genellikle, menü öğeleri ve araç çubuğu düğmeleri birden fazla durum sahiptir. Örneğin, mevcut bağlamda kullanılamaz durumdaysa bir menü öğesi (gri) renkte gösterilir. Menü öğeleri de işaretli veya işaretsiz olabilir. Araç çubuğu düğmesi de mümkün değilse devre dışı bırakılabilir veya iade.
+Genellikle, menü öğeleri ve araç çubuğu düğmelerinin birden fazla durumu vardır. Örneğin, bir menü öğesi, var olan bağlamda kullanılamaz durumdaysa gri (soluk) olur. Menü öğeleri de denetlenebilir veya işaretlenmemiş olabilir. Bir araç çubuğu düğmesi kullanılamaz durumdaysa da devre dışı bırakılabilir veya denetlenebilirler.
 
-Kimin bir menü öğesi tarafından işlenen komut oluşturursa koşullar oluşursa mantıksal olarak, programı bu öğeler, say, bir belge durumunu güncelleştirir, menü öğesi güncelleştirme belgeniz mantıklıdır. Belge, büyük olasılıkla, güncelleştirme temel bilgileri içerir.
+Bu öğelerin durumunu program koşulları olarak değiştiren bir menü öğesi, bir belge tarafından işlenen bir komut oluşturursa, belgenin menü öğesini güncelleştirmesini sağlamak mantıklı olur. Belge muhtemelen güncelleştirmenin temel aldığı bilgileri içerir.
 
-Bir komutu birden çok kullanıcı arabirimi nesneleri (belki de bir menü öğesi ve araç çubuğu düğmesi) varsa, her ikisi de aynı işleyici işlevine yönlendirilir. Bu, tüm tek bir yerde eşdeğer kullanıcı arabirimi nesneleri için kullanıcı arabirimi güncelleştirme kodunuzu kapsüller.
+Bir komutta birden çok kullanıcı arabirimi nesnesi varsa (Belki de bir menü öğesi ve bir araç çubuğu düğmesi), her ikisi de aynı işleyici işlevine yönlendirilir. Bu, tüm eşdeğer kullanıcı arabirimi nesneleri için Kullanıcı arabirimi güncelleştirme kodunuzu tek bir yerde kapsüller.
 
-Framework, otomatik olarak kullanıcı arabirimi nesnelerini güncelleştirme için kullanışlı bir arabirim sağlar. Başka bir şekilde güncelleştirme yapmak seçebilirsiniz, ancak sağlanan arabirim verimli ve kullanımı kolay.
+Framework, Kullanıcı arabirimi nesnelerini otomatik olarak güncelleştirmek için uygun bir arabirim sağlar. Güncelleştirmeyi başka bir şekilde yapabilirsiniz, ancak sunulan arabirim verimli ve kullanımı kolay bir işlemdir.
 
-Aşağıdaki konular, güncelleştirme işleyicileri kullanımını açıklar:
+Aşağıdaki konularda güncelleştirme işleyicilerinin kullanımı açıklanmaktadır:
 
-- [Güncelleştirme işleyicilerini çağırma](../mfc/when-update-handlers-are-called.md)
+- [Güncelleştirme işleyicileri çağrıldığında](when-update-handlers-are-called.md)
 
-- [On_update_command_uı makrosu](../mfc/on-update-command-ui-macro.md)
+- [ON_UPDATE_COMMAND_UI makrosu](on-update-command-ui-macro.md)
 
-- [Ccmduı sınıfı](../mfc/the-ccmdui-class.md)
+- [CCmdUI sınıfı](the-ccmdui-class.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Menüler](../mfc/menus-mfc.md)
+[Menüler](menus-mfc.md)

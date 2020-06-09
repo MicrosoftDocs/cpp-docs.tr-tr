@@ -1,5 +1,5 @@
 ---
-title: 'ActiveX denetim kapsayıcıları: Denetim özelliklerini görüntüleme ve değiştirme'
+title: 'ActiveX Denetim Kapsayıcıları: Denetim Özelliklerini Görüntüleme ve Değiştirme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - properties [MFC], viewing and modifying
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - ActiveX controls [MFC], properties
 - controls [MFC], properties
 ms.assetid: 14ce5152-742b-4e0d-a9ab-c7b456e32918
-ms.openlocfilehash: 1d42820efd06c2ae52f5d1b22b0bdfb6335c4a89
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: b0ca43f59cf70dea1348f22a08cfb4e89b45c3dd
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907801"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84617368"
 ---
-# <a name="activex-control-containers-viewing-and-modifying-control-properties"></a>ActiveX denetim kapsayıcıları: Denetim özelliklerini görüntüleme ve değiştirme
+# <a name="activex-control-containers-viewing-and-modifying-control-properties"></a>ActiveX Denetim Kapsayıcıları: Denetim Özelliklerini Görüntüleme ve Değiştirme
 
-Bir projeye ActiveX denetimi eklediğinizde, ActiveX denetimi tarafından desteklenen özellikleri görüntülemek ve değiştirmek yararlıdır. Bu makalede, bunu yapmak için görsel C++ kaynak Düzenleyicisi 'nin nasıl kullanılacağı açıklanır.
+Bir projeye ActiveX denetimi eklediğinizde, ActiveX denetimi tarafından desteklenen özellikleri görüntülemek ve değiştirmek yararlıdır. Bu makalede, bunu yapmak için Visual C++ kaynak Düzenleyicisi 'nin nasıl kullanılacağı açıklanır.
 
 ActiveX Denetim kapsayıcısı uygulamanız katıştırılmış denetimler kullanıyorsa, kaynak düzenleyicide denetimin özelliklerini görüntüleyebilir ve değiştirebilirsiniz. Tasarım zamanı sırasında özellik değerlerini ayarlamak için kaynak düzenleyicisini de kullanabilirsiniz. Daha sonra kaynak Düzenleyicisi bu değerleri projenin kaynak dosyasına otomatik olarak kaydeder. Daha sonra denetimin herhangi bir örneği, bu değerler için özellikleri başlatılır.
 
-Bu yordam projenize bir denetim eklediğinizi varsayar. Daha fazla bilgi için [bkz. ActiveX denetim kapsayıcıları: Denetim kapsayıcısı uygulamasına](../mfc/inserting-a-control-into-a-control-container-application.md)denetim ekleme.
+Bu yordam projenize bir denetim eklediğinizi varsayar. Daha fazla bilgi için bkz. [ActiveX denetim kapsayıcıları: Denetim kapsayıcısı uygulamasına denetim ekleme](inserting-a-control-into-a-control-container-application.md).
 
 Denetimin özelliklerini görüntülemenin ilk adımı, bir denetimin örneğini projenin iletişim şablonuna eklemektir.
 
@@ -41,4 +41,4 @@ Yeni özellikleri hemen değiştirmek ve test etmek için **Özellikler** ileti�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
+[ActiveX denetim kapsayıcıları](activex-control-containers.md)

@@ -5,33 +5,33 @@ helpviewer_keywords:
 - File menu
 - database applications [MFC], File menu commands
 ms.assetid: 92dafb75-c1b3-4860-80a0-87a83bfc36f2
-ms.openlocfilehash: 6c9a195a81423417809b65b5edce32027071ad2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fbbb4382749278708e8e758f79a618d5cad0549e
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405787"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84615693"
 ---
 # <a name="file-menu-in-an-mfc-database-application"></a>MFC Veritabanı Uygulamasında Dosya Menüsü
 
-Bir MFC veritabanı uygulaması oluşturma ve Serileştirme kullanmayın, Dosya menüsünden nasıl, açık, yakın yorumlamak, kaydetme ve Farklı Kaydet komutlarının hiç stil kılavuzları için bu soruyu olsa da, bazı öneriler şunlardır:
+Bir MFC veritabanı uygulaması oluşturur ve serileştirme kullanmıyorsanız, bu soruya yönelik stil yönergeleri bulunmadığından Dosya menüsünde açık, kapalı, Kaydet ve farklı Kaydet komutlarını nasıl yorumlayacağınız aşağıda verilmiştir:
 
-- Dosya menüsünün açık komutu tamamen ortadan kaldırır.
+- Dosya menüsünün açık komutunu tamamen ortadan kaldırın.
 
-- Aç komutunu "Veritabanını Aç" olarak yorumlar ve kullanıcı uygulamanızı tanır veri kaynakları listesini gösterir.
+- Open komutunu "veritabanı aç" olarak yorumlayın ve kullanıcıya uygulamanızın tanıdığı veri kaynaklarının bir listesini gösterin.
 
-- Yorumlar, belki de "profili açın." Aç komutu Seri hale getirilmiş bir dosyası açarak ancak dosyayı HIS dahil olmak üzere, kullanıcının tercihlerini gibi "kullanıcı profilini" bilgileri içeren seri hale getirilmiş bir belge depolamak için kullanır veya (parola isteğe bağlı olarak dışlayan) kendi oturum açma kimliği ve veri kaynağı kendisine en açık tut kısa bir süre önce kullanmış.
+- Open komutunu, belki "profil aç" olarak yorumlayın. Seri hale getirilmiş bir dosyayı açmak için açık tutun, ancak oturum açma KIMLIĞI (isteğe bağlı olarak parolayı hariç) ve en son çalıştığı veri kaynağı dahil olmak üzere kullanıcının tercihleri gibi "Kullanıcı profili" bilgilerini içeren serileştirilmiş bir belgeyi depolamak için dosyayı kullanın.
 
-MFC Uygulama Sihirbazı, hiçbir belge ilgili dosya menü komutları ile bir uygulama oluşturulmasını destekler. Seçin **Ritabanı görünümü dosya desteği olmadan** seçeneğini **veritabanı desteği** sayfası.
+MFC Uygulama Sihirbazı, belgeyle ilgili dosya menüsü komutları olmadan bir uygulama oluşturmayı destekler. **Veritabanı desteği** sayfasında **dosya desteği olmadan veritabanı görünümü** seçeneğini belirleyin.
 
-Özel bir şekilde dosya menü komutu yorumlamak için bir veya daha fazla komut işleyicileri, çoğunlukla kılmalı, `CWinApp`-türetilmiş sınıf. Örneğin, tamamen kılarsanız `OnFileOpen` (uygulayan `ID_FILE_OPEN` komut) auto'yu "Veritabanını Aç:"
+Bir dosya menü komutunu özel bir şekilde yorumlamak için, çoğunlukla türetilmiş sınıfdaki bir veya daha fazla komut işleyicisini geçersiz kılmanız gerekir `CWinApp` . Örneğin, `OnFileOpen` `ID_FILE_OPEN` "veritabanını aç:" anlamına gelir ve bunu tamamen geçersiz kılarsınız (komutunu uygular)
 
-- Temel sınıf sürümü Remove() çağırmayın `OnFileOpen`, bu yana komutun varsayılan uygulama framework'ün tamamen değiştiriyor.
+- `OnFileOpen`Çerçevenin varsayılan uygulamasını tamamen değiştirdiğiniz için temel sınıf sürümünü çağırmayın.
 
-- İşleyici, bunun yerine veri kaynakları listeleyen bir iletişim kutusu görüntülemek için kullanın. Çağırarak bu tür bir iletişim kutusu görüntüleyebilir `CDatabase::OpenEx` veya `CDatabase::Open` parametresiyle **NULL**. Bu, kullanılabilir tüm veri kaynaklarına kullanıcının makinesine görüntüleyen bir ODBC iletişim kutusunu açar.
+- Veri kaynaklarını listeleme iletişim kutusunu göstermek için işleyicisini kullanın. NULL parametresini çağırarak veya girerek bu tür bir iletişim kutusunu görüntüleyebilirsiniz `CDatabase::OpenEx` `CDatabase::Open` . **NULL** Bu, kullanıcının makinesinde kullanılabilir tüm veri kaynaklarını görüntüleyen bir ODBC iletişim kutusu açar.
 
-- Veritabanı uygulamaları genellikle tüm belgeyi kaydetmeyin nedeni büyük olasılıkla kaydetme kaldırmak istediğiniz ve profil bilgilerini depolamak için seri hale getirilmiş bir belge kullanmadığınız sürece uygulamaları kaydedin. Aksi takdirde, örneğin, "işlem işleme." Kaydet komutunu uygulayabilir. Bkz: [Teknik Not 22](../mfc/tn022-standard-commands-implementation.md) bu komutları geçersiz kılma hakkında daha fazla bilgi.
+- Veritabanı uygulamaları genellikle belgenin tamamını kaydetmediği için, profil bilgilerini depolamak üzere seri hale getirilmiş bir belge kullanmadığınız sürece Kaydet ve farklı kaydet uygulamalarını da kaldırmak isteyeceksiniz. Aksi takdirde, Kaydet komutunu, örneğin "işleme işlemi" gibi uygulayabilirsiniz. Bu komutları geçersiz kılma hakkında daha fazla bilgi için bkz. [Teknik notun 22](tn022-standard-commands-implementation.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Serileştirme: Serileştirme Veritabanı giriş/çıkışı](../mfc/serialization-serialization-vs-database-input-output.md)
+[Seri Hale Getirme: Seri Hale Getirme ve Veritabanı Giriş/Çıkışı](serialization-serialization-vs-database-input-output.md)

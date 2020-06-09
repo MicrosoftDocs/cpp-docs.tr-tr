@@ -9,20 +9,20 @@ helpviewer_keywords:
 - blocks [MFC], memory allocation
 - resizable memory blocks [MFC]
 ms.assetid: f0efe6f4-a3ed-4541-9195-51ec1291967a
-ms.openlocfilehash: b048b60a5512ecc54750cb980ca67e2373e2c837
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 74ae94146b1ec711b586ea1fecbbc89a47b40b5e
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364782"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626273"
 ---
 # <a name="memory-management-resizable-memory-blocks"></a>Bellek Yönetimi: Yeniden Boyutlandırılabilir Bellek Blokları
 
-Yeni **new** ve **silme** işleçleri, [makaleBellek Yönetimi açıklanan: Örnekler,](../mfc/memory-management-examples.md)ayırma ve sabit boyutlu bellek blokları ve nesneleri ayırmak için iyidir. Bazen, uygulamanızın yeniden boyutlandırılabilir bellek blokları gerekebilir. Standart C çalışma zamanı kitaplık işlevleri [malloc](../c-runtime-library/reference/malloc.md), [realloc](../c-runtime-library/reference/realloc.md) [ve](../c-runtime-library/reference/free.md) ücretsiz yığın üzerinde yeniden boyutlandırılabilir bellek blokları yönetmek için kullanmanız gerekir.
+[Bellek yönetimi: örnekler](memory-management-examples.md)bölümünde açıklanan **New** ve **Delete** işleçleri, sabit boyutlu bellek blokları ve nesnelerinin ayrılmasına ve ayrılmasına yönelik bir seçimdir. Bazen, uygulamanız yeniden boyutlandırılabilir bellek bloklarına ihtiyaç duyar. Yığın üzerinde yeniden boyutlandırılabilir bellek bloklarını yönetmek için [malloc](../c-runtime-library/reference/malloc.md), [realloc](../c-runtime-library/reference/realloc.md)ve [Free](../c-runtime-library/reference/free.md) standart C çalışma zamanı kitaplığı işlevlerini kullanmanız gerekir.
 
 > [!IMPORTANT]
-> **Yeni** ve **sil işleçlerini** aynı bellek bloğundaki yeniden boyutlandırılabilir bellek ayırma işlevleriyle karıştırmak, MFC'nin Hata Ayıklama sürümünde bozuk belleğe neden olur. Yeni **ile**ayrılmış bir bellek bloğunda **realloc** kullanmamalısınız. Aynı şekilde, **yeni** işleç ile bir bellek bloğu ayırmak ve **ücretsiz**olarak silmek gerekir , ya da **malloc**ile ayrılmış bellek bloğu üzerinde **silme** işleci kullanın.
+> **Yeni** ve **silme** işleçlerini aynı bellek bloğunda yeniden boyutlandırılabilir bellek AYıRMA işlevleriyle karıştırmak, MFC 'nin hata ayıklama sürümünde bozulmuş bellek oluşmasına neden olur. **Yeni**ile ayrılmış bir bellek bloğunda **realloc** kullanmamalısınız. Benzer şekilde, **Yeni** işleçle bir bellek bloğu ayırmamalıdır ve **ücretsiz**olarak silmelisiniz ya da **malloc**ile ayrılmış bir bellek bloğunda **Delete** işlecini kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Yönetimi: Öbek Ayırma](../mfc/memory-management-heap-allocation.md)
+[Bellek Yönetimi: Öbek Ayırma](memory-management-heap-allocation.md)

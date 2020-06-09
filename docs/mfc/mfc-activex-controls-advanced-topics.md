@@ -12,107 +12,107 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], parameterized property
 - ThrowError method [MFC]
 ms.assetid: e9e34abb-8e2d-461e-bb9c-a1aec5dcecbd
-ms.openlocfilehash: c5e3be3915a0707f8df17d3c9ebe2eb0e4f623b2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 87cc0000f74935990cb5956e0fb3afd44e01532b
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364635"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84624189"
 ---
 # <a name="mfc-activex-controls-advanced-topics"></a>MFC ActiveX Denetimleri: Gelişmiş Konular
 
-Bu makalede ActiveX denetimleri geliştirme ile ilgili gelişmiş konular ele al.) Bunlar:
+Bu makalede, ActiveX denetimleri geliştirmeyle ilgili gelişmiş konular ele alınmaktadır. Bu güncelleştirmeler şunlardır:
 
-- [ActiveX Denetimlerinde Veritabanı Sınıflarını Kullanma](#_core_using_database_classes_in_activex_controls)
+- [ActiveX denetimlerinde veritabanı sınıflarını kullanma](#_core_using_database_classes_in_activex_controls)
 
-- [Parametrelendirilmiş Özellik Uygulama](#_core_implementing_a_parameterized_property)
+- [Parametreli özellik uygulama](#_core_implementing_a_parameterized_property)
 
-- [ActiveX Denetiminizdeki İşlem Hataları](#_core_handling_errors_in_your_activex_control)
+- [ActiveX Denetiinizdeki hataları işleme](#_core_handling_errors_in_your_activex_control)
 
-- [Denetimde Özel Anahtarları Kullanma](#_core_handling_special_keys_in_your_control)
+- [Denetimdeki özel anahtarları işleme](#_core_handling_special_keys_in_your_control)
 
-- [Çalışma Zamanında Görünmez Olan İletişim Denetimleri'ne Erişim](#_core_accessing_dialog_controls_that_are_invisible_at_run_time)
+- [Çalışma zamanında görünmeyen Iletişim kutusu denetimlerine erişme](#_core_accessing_dialog_controls_that_are_invisible_at_run_time)
 
 >[!IMPORTANT]
-> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
+> ActiveX, yeni geliştirme için kullanılması gereken eski bir teknolojidir. ActiveX 'in yerini alan modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimleri](activex-controls.md).
 
-## <a name="using-database-classes-in-activex-controls"></a><a name="_core_using_database_classes_in_activex_controls"></a>ActiveX Denetimlerinde Veritabanı Sınıflarını Kullanma
+## <a name="using-database-classes-in-activex-controls"></a><a name="_core_using_database_classes_in_activex_controls"></a>ActiveX denetimlerinde veritabanı sınıflarını kullanma
 
-ActiveX denetim sınıfları sınıf kitaplığı'nın bir parçası olduğundan, mfc veritabanı sınıflarını kullanan ActiveX denetimlerini geliştirmek için standart bir MFC uygulamasında veritabanı sınıflarını kullanmak için aynı yordamları ve kuralları uygulayabilirsiniz.
+ActiveX denetim sınıfları sınıf kitaplığının bir parçası olduğundan, MFC veritabanı sınıflarını kullanan ActiveX denetimleri geliştirmek için, veritabanı sınıflarını standart bir MFC uygulamasında kullanmaya yönelik aynı yordamları ve kuralları uygulayabilirsiniz.
 
-MFC veritabanı sınıflarının genel bir özeti için [MFC Veritabanı Sınıfları (DAO ve ODBC)](../data/mfc-database-classes-odbc-and-dao.md)bölümüne bakın. Makale, hem MFC ODBC sınıflarını hem de MFC DAO sınıflarını tanıtır ve sizi her iki si hakkında daha fazla ayrıntıya yönlendirir.
+MFC veritabanı sınıflarına genel bir bakış için bkz. [MFC veritabanı sınıfları (DAO ve ODBC)](../data/mfc-database-classes-odbc-and-dao.md). Bu makalede hem MFC ODBC sınıfları hem de MFC DAO sınıfları tanıtılmakta ve üzerinde daha fazla ayrıntı için sizi yönlendirmaktadır.
 
 > [!NOTE]
-> DAO, Office 2013 aracılığıyla desteklenir. DAO 3.6 son sürümüdür ve eski miş olarak kabul edilir. Visual C++ ortamı ve sihirbazlar DAO'yu desteklemez (her ne kadar DAO sınıfları dahil olsa da ve bunları kullanmaya devam edebilirsiniz). Microsoft, yeni projeler için [OLE DB Şablonları](../data/oledb/ole-db-programming.md) veya [ODBC ve MFC](../data/odbc/odbc-and-mfc.md) kullanmanızı önerir. DAO'yu yalnızca varolan uygulamaları korurken kullanmalısınız.
+> DAO, Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir. Visual C++ ortamı ve sihirbazları DAO 'YU desteklemez (DAO sınıfları dahil edilip kullanmaya devam edebilirsiniz). Microsoft, yeni projeler için [OLE DB şablonlarını](../data/oledb/ole-db-programming.md) veya [ODBC 'yi ve MFC 'yi](../data/odbc/odbc-and-mfc.md) kullanmanızı önerir. Yalnızca var olan uygulamaları korumak için DAO kullanmanız gerekir.
 
-## <a name="implementing-a-parameterized-property"></a><a name="_core_implementing_a_parameterized_property"></a>Parametrelendirilmiş Özellik Uygulama
+## <a name="implementing-a-parameterized-property"></a><a name="_core_implementing_a_parameterized_property"></a>Parametreli özellik uygulama
 
-Parametreli özellik (bazen özellik dizisi olarak da adlandırılır), denetimin tek bir özelliği olarak homojen bir değer koleksiyonunu ortaya çıkarmak için kullanılan bir yöntemdir. Örneğin, bir diziyi veya sözlüğü özellik olarak ortaya çıkarmak için parametreli bir özellik kullanabilirsiniz. Visual Basic'te, böyle bir özelliğe dizi gösterimi kullanılarak erişilir:
+Parametreli bir Özellik (bazen Özellik dizisi olarak adlandırılır), denetimin tek bir özelliği olarak bir homojen değer koleksiyonunu kullanıma sunma yöntemidir. Örneğin, bir dizi veya sözlüğü bir özellik olarak göstermek için parametreli bir özellik kullanabilirsiniz. Visual Basic, bu tür bir özelliğe dizi gösterimi kullanılarak erişilir:
 
-[!code-vb[NVC_MFC_AxVb#1](../mfc/codesnippet/visualbasic/mfc-activex-controls-advanced-topics_1.vb)]
+[!code-vb[NVC_MFC_AxVb#1](codesnippet/visualbasic/mfc-activex-controls-advanced-topics_1.vb)]
 
-Parametreli bir özellik uygulamak için Özellik Ekle Sihirbazı'nı kullanın. Özellik Ekle Sihirbazı, denetim kullanıcısının yukarıdaki gösterimi kullanarak veya standart moda kullanarak özelliğe erişmesine izin veren bir çift Get/Set işlevi ekleyerek özelliği uygular.
+Parametreli bir özellik uygulamak için Özellik Ekleme Sihirbazı 'nı kullanın. Özellik Ekleme Sihirbazı, denetim kullanıcısının yukarıdaki gösterimi veya standart biçimde özelliğe erişmesine izin veren bir dizi get/set işlevi ekleyerek özelliğini uygular.
 
-Yöntem ve özelliklere benzer şekilde, parametreli özelliklerin de izin verilen parametre sayısıiçin bir sınırı vardır. Parametreli özellikler söz konusu olduğunda, sınır 15 parametredir (özellik değerini depolamak için ayrılmış bir parametreile).
+Yöntemlere ve özelliklere benzer şekilde parametreli özellikler de izin verilen parametrelerin sayısıyla sınırlıdır. Parametreli özellikler söz konusu olduğunda, sınır 15 parametretir (özellik değerini depolamak için bir parametre ayrılmış olarak).
 
-Aşağıdaki yordam, iki boyutlu bir tamsayı dizisi olarak erişilebilen Dizi adlı parametreli bir özellik ekler.
+Aşağıdaki yordam, iki boyutlu tamsayılar dizisi olarak erişilebilen Array adlı parametreli bir özellik ekler.
 
-#### <a name="to-add-a-parameterized-property-using-the-add-property-wizard"></a>Özellik Ekle Sihirbazı'nı kullanarak parametreli bir özellik eklemek için
+#### <a name="to-add-a-parameterized-property-using-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı 'Nı kullanarak parametreli bir özellik eklemek için
 
 1. Denetiminizin projesini yükleyin.
 
-1. Sınıf Görünümü'nde, denetiminizin kitaplık düğümunu genişletin.
+1. Sınıf Görünümü, denetiminizin kitaplık düğümünü genişletin.
 
-1. Kısayol menüsünü açmak için denetiminiz için arabirim düğümüne (kitaplık düğümünün ikinci düğümü) sağ tıklayın.
+1. Kısayol menüsünü açmak için denetiminizin arabirim düğümüne (kitaplık düğümünün ikinci düğümü) sağ tıklayın.
 
-1. Kısayol menüsünden **Ekle'yi** tıklatın ve ardından **Özellik Ekle'yi**tıklatın.
+1. Kısayol menüsünde, **Ekle** ' ye ve ardından **Özellik Ekle**' ye tıklayın.
 
-1. Özellik **Adı** kutusuna, `Array`yazın.
+1. **Özellik adı** kutusuna yazın `Array` .
 
-1. Özellik **Türü** kutusunda, **kısa'yı**seçin.
+1. **Özellik türü** kutusunda, **kısa**' ı seçin.
 
-1. **Uygulama** Türü için **Yöntemleri Al/Ayarla'yı**tıklatın.
+1. **Uygulama** türü Için, **get/set yöntemleri**' ne tıklayın.
 
-1. **İşlev Al** ve **Ayarla** kutularında, İşlevleri Al ve Ayarla'nız için benzersiz adlar yazın veya varsayılan adları kabul edin.
+1. **Get işlevi** ve **işlevi ayarla** kutularında, Get ve set işlevleriniz için benzersiz adlar yazın veya varsayılan adları kabul edin.
 
-1. Parametre Adı ve **Parametre Türü** denetimlerini kullanarak *satır* *(kısa*yazı) adı verilen bir **parametre** ekleyin.
+1. **Parametre adı** ve **parametre türü** denetimlerini kullanarak *satır* (tür *Short*) adlı bir parametre ekleyin.
 
-1. *Sütun* adı verilen ikinci bir parametre ekleyin *(kısa*yazın).
+1. *Column* adlı ikinci bir parametre ekleyin ( *Short*yazın).
 
 1. **Son**'a tıklayın.
 
-### <a name="changes-made-by-the-add-property-wizard"></a>Özellik Ekle Sihirbazı tarafından yapılan değişiklikler
+### <a name="changes-made-by-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı tarafından yapılan değişiklikler
 
-Özel bir özellik eklediğinizde, Özellik Ekle Sihirbazı denetim sınıfı üstbilgide değişiklik yapar (. H) ve uygulama (. CPP) dosyaları.
+Özel bir özellik eklediğinizde Özellik Ekleme Sihirbazı denetim sınıfı üst bilgisinde değişiklik yapar (. H) ve uygulama (. CPP) dosyaları.
 
-Denetim sınıfına aşağıdaki satırlar eklenir. H dosyası:
+Aşağıdaki satırlar denetim sınıfına eklenir. H dosyası:
 
-[!code-cpp[NVC_MFC_AxUI#35](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_2.h)]
+[!code-cpp[NVC_MFC_AxUI#35](codesnippet/cpp/mfc-activex-controls-advanced-topics_2.h)]
 
-Bu kod, çağrılan `GetArray` ve `SetArray` kullanıcının özelliğe erişirken belirli bir satır ve sütun istemesine izin veren iki işlevi bildirir.
+Bu kod, adlı iki işlev bildirir `GetArray` ve `SetArray` kullanıcının özelliğe erişirken belirli bir satır ve sütun istemesine izin verir.
 
-Buna ek olarak, Özellik Ekle Sihirbazı denetim sınıfı uygulamasında bulunan denetim gönderme haritasına aşağıdaki satırları ekler (. CPP) dosyası:
+Ayrıca Özellik Ekleme Sihirbazı, denetim sınıfı uygulamasında bulunan denetim dağıtım eşlemesine aşağıdaki satırları ekler (. CPP) dosyası:
 
-[!code-cpp[NVC_MFC_AxUI#36](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_3.cpp)]
+[!code-cpp[NVC_MFC_AxUI#36](codesnippet/cpp/mfc-activex-controls-advanced-topics_3.cpp)]
 
-Son olarak, ve `GetArray` `SetArray` işlevlerin uygulamaları sonuna eklenir. CPP dosyası. Çoğu durumda, özelliğin değerini döndürmek için Get işlevini değiştirirsiniz. Set işlevi genellikle özellik değişmeden önce veya sonra yürütülmesi gereken kod içerir.
+Son olarak, `GetArray` ve `SetArray` işlevlerinin uygulamaları öğesinin sonuna eklenir. CPP dosyası. Çoğu durumda, özelliğin değerini döndürmek için Get işlevini değiştirirsiniz. Set işlevi genellikle, özellik değişikliklerinden önce veya sonra yürütülmesi gereken kodu içerir.
 
-Bu özelliğin yararlı oltaolması için, parametreli özellik için değerleri depolamak için **kısa**tür, denetim sınıfında iki boyutlu bir dizi üye değişkeni bildirebilirsiniz. Daha sonra, parametrelerde belirtildiği gibi uygun satır ve sütunda depolanan değeri döndürmek için Get işlevini değiştirebilir ve satır ve sütun parametreleri tarafından başvurulan değeri güncelleştirmek için Ayar işlevini değiştirebilirsiniz.
+Bu özelliğin yararlı olması için, parametreli özelliğin değerlerini depolamak üzere **Short**türünde denetim sınıfında iki boyutlu bir dizi üye değişkeni bildirebilirsiniz. Daha sonra, parametreler tarafından gösterildiği gibi, uygun satırda ve sütunda depolanan değeri döndürmek için Get işlevini değiştirebilirsiniz ve satır ve sütun parametreleri tarafından başvurulan değeri güncelleştirmek için set işlevini değiştirebilirsiniz.
 
-## <a name="handling-errors-in-your-activex-control"></a><a name="_core_handling_errors_in_your_activex_control"></a>ActiveX Denetiminizdeki İşlem Hataları
+## <a name="handling-errors-in-your-activex-control"></a><a name="_core_handling_errors_in_your_activex_control"></a>ActiveX Denetiinizdeki hataları işleme
 
-Denetimde hata koşulları oluşursa, hatayı denetim kapsayıcısına bildirmeniz gerekebilir. Hatanın oluştuğu duruma bağlı olarak hataları bildirmek için iki yöntem vardır. Hata bir özelliğin Get or Set işlevi nde veya Bir OLE Otomasyon yönteminin uygulanması nda oluşursa, denetim [COleControl::ThrowError,](../mfc/reference/colecontrol-class.md#throwerror)bir hata oluştuğunu kontrol eden kullanıcıya sinyal çağırmalıdır. Hata başka bir zamanda oluşursa, denetim [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror), bir stok Hata olay yangınları çağırmalısınız.
+Denetimde hata koşulları oluşursa, hatayı denetim kapsayıcısına rapor etmeniz gerekebilir. Hatanın gerçekleştiği duruma bağlı olarak, hataları raporlamak için iki yöntem vardır. Hata bir özelliğin get veya set işlevi içinde ya da bir OLE Automation yönteminin uygulanması içinde oluşursa, denetim kullanıcıya bir hata oluştuğunu işaret eden [Cotacontrol:: ThrowError](reference/colecontrol-class.md#throwerror)öğesini çağırmalıdır. Hata başka bir zamanda oluşursa, denetim, bir stok hata olayını harekete geçen [Colicontrol:: FireError](reference/colecontrol-class.md#fireerror)öğesini çağırmalıdır.
 
-Oluşan hata türünü belirtmek için, `ThrowError` denetimin bir hata kodunu `FireError`veya . Hata kodu, 32 bit değeri olan bir OLE durum kodudur. Mümkün olduğunda, OLECTL'de tanımlanan standart kod kümesinden bir hata kodu seçin. H üstbilgi dosyası. Aşağıdaki tabloda bu kodlar özetlenmiştir.
+Oluşan hata türünü belirtmek için, denetim veya ' a bir hata kodu iletmelidir `ThrowError` `FireError` . Hata kodu, 32 bitlik bir değere sahip bir OLE durum kodudur. Mümkün olduğunda, OLECTL 'de tanımlanan standart kod kümesinden bir hata kodu seçin. H üstbilgi dosyası. Aşağıdaki tabloda bu kodlar özetlenmektedir.
 
-### <a name="activex-control-error-codes"></a>ActiveX Kontrol Hata Kodları
+### <a name="activex-control-error-codes"></a>ActiveX denetimi hata kodları
 
 |Hata|Açıklama|
 |-----------|-----------------|
-|CTL_E_ILLEGALFUNCTIONCALL|Yasadışı işlev çağrısı|
+|CTL_E_ILLEGALFUNCTIONCALL|Geçersiz işlev çağrısı|
 |CTL_E_OVERFLOW|Taşma|
-|CTL_E_OUTOFMEMORY|Bellek dışında|
-|CTL_E_DIVISIONBYZERO|Sıfıra göre bölme|
+|CTL_E_OUTOFMEMORY|Bellek yetersiz|
+|CTL_E_DIVISIONBYZERO|Sıfıra bölme|
 |CTL_E_OUTOFSTRINGSPACE|Dizeler için ayrılan alan doldu|
 |CTL_E_OUTOFSTACKSPACE|Yığın için ayrılan alan doldu|
 |CTL_E_BADFILENAMEORNUMBER|Hatalı dosya adı veya numarası|
@@ -126,60 +126,60 @@ Oluşan hata türünü belirtmek için, `ThrowError` denetimin bir hata kodunu `
 |CTL_E_BADRECORDNUMBER|Hatalı kayıt numarası|
 |CTL_E_BADFILENAME|Hatalı dosya adı|
 |CTL_E_TOOMANYFILES|Çok fazla sayıda dosya|
-|CTL_E_DEVICEUNAVAILABLE|Aygıt kullanılamıyor|
+|CTL_E_DEVICEUNAVAILABLE|Cihaz kullanılamıyor|
 |CTL_E_PERMISSIONDENIED|İzin reddedildi|
-|CTL_E_DISKNOTREADY|Disk hazır değil|
+|CTL_E_DISKNOTREADY|Disk yok|
 |CTL_E_PATHFILEACCESSERROR|Yol/dosya erişim hatası|
 |CTL_E_PATHNOTFOUND|Yol bulunamadı|
-|CTL_E_INVALIDPATTERNSTRING|Geçersiz desen dizesi|
-|CTL_E_INVALIDUSEOFNULL|NULL'un geçersiz kullanımı|
+|CTL_E_INVALIDPATTERNSTRING|Geçersiz desenli dize|
+|CTL_E_INVALIDUSEOFNULL|Geçersiz NULL kullanımı|
 |CTL_E_INVALIDFILEFORMAT|Geçersiz dosya biçimi|
 |CTL_E_INVALIDPROPERTYVALUE|Geçersiz özellik değeri|
-|CTL_E_INVALIDPROPERTYARRAYINDEX|Geçersiz özellik dizi dizini|
-|CTL_E_SETNOTSUPPORTEDATRUNTIME|Çalışma zamanında desteklenmeyen küme|
-|CTL_E_SETNOTSUPPORTED|Desteklenmeyen leri ayarlayın (salt okunur özelliği)|
+|CTL_E_INVALIDPROPERTYARRAYINDEX|Geçersiz özellik dizisi dizini|
+|CTL_E_SETNOTSUPPORTEDATRUNTIME|Çalışma zamanında desteklenmeyen ayarla|
+|CTL_E_SETNOTSUPPORTED|Set desteklenmiyor (salt okunurdur özelliği)|
 |CTL_E_NEEDPROPERTYARRAYINDEX|Need özelliği dizi dizini|
-|CTL_E_SETNOTPERMITTED|İzin verilmeyecek şekilde ayarlayın|
-|CTL_E_GETNOTSUPPORTEDATRUNTIME|Çalışma zamanında desteklenmeyin|
-|CTL_E_GETNOTSUPPORTED|Desteklenmeyin (yalnızca yazma özelliği)|
+|CTL_E_SETNOTPERMITTED|İzin verilmiyor|
+|CTL_E_GETNOTSUPPORTEDATRUNTIME|Çalışma zamanında desteklenmez|
+|CTL_E_GETNOTSUPPORTED|Get desteklenmiyor (salt yazılır özellik)|
 |CTL_E_PROPERTYNOTFOUND|Özellik bulunamadı|
-|CTL_E_INVALIDCLIPBOARDFORMAT|Geçersiz pano biçimi|
+|CTL_E_INVALIDCLIPBOARDFORMAT|Geçersiz Pano biçimi|
 |CTL_E_INVALIDPICTURE|Geçersiz resim|
 |CTL_E_PRINTERERROR|Yazıcı hatası|
-|CTL_E_CANTSAVEFILETOTEMP|DOSYAYI TEMP'e kaydedemez|
+|CTL_E_CANTSAVEFILETOTEMP|Dosya TEMP 'e kaydedilemiyor|
 |CTL_E_SEARCHTEXTNOTFOUND|Arama metni bulunamadı|
-|CTL_E_REPLACEMENTSTOOLONG|Yedekler çok uzun|
+|CTL_E_REPLACEMENTSTOOLONG|Değişiklikler çok uzun|
 
-Gerekirse, standart kodlardan biri tarafından kapsanmayan bir durum için özel hata kodu tanımlamak için CUSTOM_CTL_SCODE makroyu kullanın. Bu makro için parametre 1000 ve 32767 arasında bir tamsayı, dahil olmalıdır. Örneğin:
+Gerekirse, standart kodlardan biri kapsamında olmayan bir koşul için özel bir hata kodu tanımlamak üzere CUSTOM_CTL_SCODE makrosunu kullanın. Bu makronun parametresi, dahil 1000 ile 32767 arasında bir tamsayı olmalıdır. Örnek:
 
-[!code-cpp[NVC_MFC_AxUI#37](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_4.cpp)]
+[!code-cpp[NVC_MFC_AxUI#37](codesnippet/cpp/mfc-activex-controls-advanced-topics_4.cpp)]
 
-Varolan bir VBX denetimini değiştirmek için activex denetimi oluşturuyorsanız, hata kodlarının uyumlu olduğundan emin olmak için ActiveX denetim hata kodlarınızı VBX denetiminin kullandığı sayısal değerlerle tanımlayın.
+Var olan bir VBX denetimini değiştirmek için ActiveX denetimi oluşturuyorsanız, hata kodlarının uyumlu olduğundan emin olmak için, VBX denetiminin kullandığı sayısal değerlerle birlikte ActiveX denetim hata kodlarınızı tanımlayın.
 
-## <a name="handling-special-keys-in-the-control"></a><a name="_core_handling_special_keys_in_your_control"></a>Denetimde Özel Anahtarları Kullanma
+## <a name="handling-special-keys-in-the-control"></a><a name="_core_handling_special_keys_in_your_control"></a>Denetimdeki özel anahtarları işleme
 
-Bazı durumlarda belirli tuş vuruşu kombinasyonlarını özel bir şekilde işlemek isteyebilirsiniz; örneğin, ENTER tuşuna çok satırlı metin kutusu denetimine basıldığında yeni bir satır ekleyin veya yön tuşu kimliğine basıldığında bir dizi denetim grubu arasında hareket edin.
+Bazı durumlarda belirli tuş bileşimlerini özel bir şekilde işlemek isteyebilirsiniz; Örneğin, ENTER tuşuna bir çok satırlı metin kutusu denetiminde basıldığında yeni bir satır ekleyin veya yönlü anahtar KIMLIĞI basıldığında bir düzenleme denetimleri grubu arasında geçiş yapın.
 
-ActiveX denetiminizin taban sınıfı `COleControl`ise, kapsayıcı bunları işlemeden önce iletileri işlemek için [CWnd::PreTranslateMessage'ı](../mfc/reference/cwnd-class.md#pretranslatemessage) geçersiz kılabilirsiniz. Bu tekniği kullanırken, **TRUE** `PreTranslateMessage`'' 'yi geçersiz kılmanızda iletiyi işlerseniz, her zaman TRUE döndürün.
+ActiveX denetiminizin temel sınıfı ise `COleControl` , kapsayıcıyı işleymadan önce iletileri işlemek Için [CWnd::P reTranslateMessage](reference/cwnd-class.md#pretranslatemessage) ' ı geçersiz kılabilirsiniz. Bu tekniği kullanırken, iletiyi geçersiz kılmanızda kullanırsanız her zaman **true** döndürün `PreTranslateMessage` .
 
-Aşağıdaki kod örneği, yön tuşlarıile ilgili iletileri işlemenin olası bir yolunu gösterir.
+Aşağıdaki kod örneği, yönlü anahtarlarla ilgili herhangi bir iletiyi işlemenin olası bir yolunu gösterir.
 
-[!code-cpp[NVC_MFC_AxUI#38](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_5.cpp)]
+[!code-cpp[NVC_MFC_AxUI#38](codesnippet/cpp/mfc-activex-controls-advanced-topics_5.cpp)]
 
-ActiveX denetimi için klavye arabirimlerinin işlenmesi hakkında daha fazla bilgi için ActiveX SDK belgelerine bakın.
+ActiveX denetimine yönelik klavye arabirimlerini işleme hakkında daha fazla bilgi için bkz. ActiveX SDK belgeleri.
 
-## <a name="accessing-dialog-controls-that-are-invisible-at-run-time"></a><a name="_core_accessing_dialog_controls_that_are_invisible_at_run_time"></a>Çalışma Zamanında Görünmez Olan İletişim Denetimleri'ne Erişim
+## <a name="accessing-dialog-controls-that-are-invisible-at-run-time"></a><a name="_core_accessing_dialog_controls_that_are_invisible_at_run_time"></a>Çalışma zamanında görünmeyen Iletişim kutusu denetimlerine erişme
 
-Kullanıcı arabirimi olmayan ve çalışma zamanında görünmez olan iletişim denetimleri oluşturabilirsiniz. Bir iletişim kutusuna görünmez bir çalışma zamanında ActiveX denetimi ekler ve denetime erişmek için [CWnd::GetDlgItem](../mfc/reference/cwnd-class.md#getdlgitem) kullanırsanız, denetim doğru çalışmaz. Bunun yerine, denetimi temsil eden bir nesne elde etmek için aşağıdaki tekniklerden birini kullanmanız gerekir:
+Kullanıcı arabirimine sahip olmayan ve çalışma zamanında görünmeyen iletişim kutusu denetimleri oluşturabilirsiniz. Bir iletişim kutusuna görünmeyen bir çalışma zamanı ActiveX denetimi ekler ve denetime erişmek için [CWnd:: Getdlyıtem öğesini](reference/cwnd-class.md#getdlgitem) kullanırsanız denetim düzgün çalışmaz. Bunun yerine, denetimi temsil eden bir nesne elde etmek için aşağıdaki tekniklerden birini kullanmanız gerekir:
 
-- Üye Değişken Ekle Sihirbazı'nı **kullanarak, Denetim** Değişkeni'ni seçin ve ardından denetimin kimliğini seçin. Bir üye değişken adı girin ve **denetimin**sarıcı sınıfını Denetim Türü olarak seçin.
+- Üye değişkeni Ekleme Sihirbazı ' nı kullanarak **denetim değişkeni** ' ni seçin ve ardından denetimin kimliğini seçin. Bir üye değişkeni adı girin ve denetim **türü**olarak denetimin sarmalayıcı sınıfını seçin.
 
      -veya-
 
-- Yerel bir değişkeni ve alt sınıfı iletişim öğesi olarak bildirin. Aşağıdakilere benzeyen ekle kodu`CMyCtrl` (sarmalayıcı sınıfıdır IDC_MYCTRL1 denetimin kimliğidir):
+- İletişim kutusu öğesi olarak yerel bir değişken ve alt sınıf bildirin. Aşağıdakine benzer bir kod ekleyin ( `CMyCtrl` sarmalayıcı sınıfı, IDC_MYCTRL1 DENETIMIN kimliğidir):
 
-   [!code-cpp[NVC_MFC_AxCont#19](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_6.cpp)]
+   [!code-cpp[NVC_MFC_AxCont#19](codesnippet/cpp/mfc-activex-controls-advanced-topics_6.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)
+[MFC ActiveX denetimleri](mfc-activex-controls.md)

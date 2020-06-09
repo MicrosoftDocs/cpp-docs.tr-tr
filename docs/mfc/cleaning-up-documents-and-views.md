@@ -6,22 +6,22 @@ helpviewer_keywords:
 - documents [MFC], cleaning up
 - documents [MFC], closing
 ms.assetid: 0c454db2-3644-434d-9e53-8108a7aedfe1
-ms.openlocfilehash: 06ff60a2cf6245f64e80d899c13a8444558fcf0b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8cb6e9337b69daf78286f57898c9badf513c7921
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374615"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626520"
 ---
 # <a name="cleaning-up-documents-and-views"></a>Belgeleri ve Görünümleri Temizleme
 
-Bir belge kapanDığında, çerçeve ilk olarak [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) üye işlevini çağırır. Belgenin çalışması sırasında yığına herhangi bir bellek ayırdıysanız, `DeleteContents` belgenin yerini tespit etmek için en iyi yerdir.
+Bir belge kapatılırken, Framework ilk olarak [DeleteContents](reference/cdocument-class.md#deletecontents) üye işlevini çağırır. Belgenin işleminin kursu sırasında yığında herhangi bir bellek ayırdıysanız, `DeleteContents` serbest bırakmak için en iyi yer vardır.
 
 > [!NOTE]
-> Belgeyi yok eden belge verilerini ele almamalısınız. Bir SDI uygulaması söz konusu olduğunda, belge nesnesi yeniden kullanılabilir.
+> Belgenin yıkıcısında belge verilerini serbest bırakma kullanmamalısınız. SDI uygulaması söz konusu olduğunda, belge nesnesi yeniden kullanılıyor olabilir.
 
-Yığına ayırdığınız herhangi bir belleği bulmak için bir görünümün yıkıcısını geçersiz kılabilirsiniz.
+Yığında ayrılan belleği serbest bırakmak için bir görünümün yıkıcısında geçersiz kılabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belge ve Görünümleri Başlatma ve Temizleme](../mfc/initializing-and-cleaning-up-documents-and-views.md)
+[Belgeleri ve görünümleri başlatma ve Temizleme](initializing-and-cleaning-up-documents-and-views.md)

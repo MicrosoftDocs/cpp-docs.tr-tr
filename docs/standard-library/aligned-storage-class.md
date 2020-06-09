@@ -7,18 +7,18 @@ helpviewer_keywords:
 - aligned_storage class
 - aligned_storage
 ms.assetid: f255e345-1f05-4d07-81e4-017f420839fb
-ms.openlocfilehash: 8a4e907faa6175b9e03f5367d09501aaea388bce
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 741106888cdab63a75e090e860269f125c35efa6
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456474"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84623838"
 ---
-# <a name="alignedstorage-class"></a>aligned_storage Sınıfı
+# <a name="aligned_storage-class"></a>aligned_storage Sınıfı
 
 Düzgün hizalanmış tür sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <std::size_t Len, std::size_t Align>
@@ -38,7 +38,7 @@ Hizalanacak nesne.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon üyesi typedef `type` , hizalama *hizalı* ve boyutu *len*bir pod türü için bir eş anlamlı. *Hizalama* , bazı tür `alignment_of<T>::value` `T`için veya varsayılan hizalamayla eşit olmalıdır.
+Şablon üyesi typedef, `type` Hizalama *hizalı* ve boyutu *len*bir pod türü için bir eş anlamlı. *Hizalama* `alignment_of<T>::value` , bazı tür için `T` veya varsayılan hizalamayla eşit olmalıdır.
 
 ## <a name="example"></a>Örnek
 
@@ -66,11 +66,11 @@ aligned to double == 8
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[alignment_of Sınıfı](../standard-library/alignment-of-class.md)
+[<type_traits>](type-traits.md)\
+[alignment_of sınıfı](alignment-of-class.md)

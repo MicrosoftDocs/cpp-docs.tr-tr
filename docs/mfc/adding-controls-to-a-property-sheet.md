@@ -5,21 +5,21 @@ helpviewer_keywords:
 - controls [MFC], adding to property sheets
 - property sheets, adding controls
 ms.assetid: 24ad4c0b-c1db-4850-b9f0-34aae8d74571
-ms.openlocfilehash: 07b384b2db36ae59d4de8b99d9c07396ce793979
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 527c0a5ef6e9dc4fcc9d7668c12e15ec956b0e70
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394799"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84616066"
 ---
 # <a name="adding-controls-to-a-property-sheet"></a>Özellik Sayfasına Denetim Ekleme
 
-Varsayılan olarak, bir özellik sayfası için özellik sayfaları, sekme dizini ve Tamam, iptal et ve Uygula düğmeleri pencere alanını ayırır. (İptal edin ve Uygula düğmeleri Tamam modelsiz bir özellik sayfası yok.) Özellik sayfası için başka denetimler ekleyebilirsiniz. Örneğin, bir önizleme penceresi geçerli ayarları aşağıdaki gibi harici bir nesneye uygulanan durumunda görünür kullanıcıya göstermek için özellik sayfası alan sağındaki ekleyebilirsiniz.
+Varsayılan olarak, özellik sayfası özellik sayfaları, sekme dizini ve Tamam, Iptal ve Uygula düğmeleri için pencere alanını ayırır. (Kalıcı olmayan özellik sayfasında Tamam, Iptal et ve Uygula düğmeleri yoktur.) Daha fazla denetimi özellik sayfasına ekleyebilirsiniz. Örneğin, bir dış nesneye uygulandığında geçerli ayarların nasıl görüneceğine ilişkin kullanıcıyı göstermek için özellik sayfası alanının sağına bir önizleme penceresi ekleyebilirsiniz.
 
-Özellik sayfası iletişim kutusunda denetimleri ekleyebileceğiniz `OnCreate` işleyici. Ek denetimleri genellikle destekleme özellik sayfası iletişim kutusunun boyutunu genişletme gerektirir. Temel sınıfı çağırmadan sonra **CPropertySheet::OnCreate**, çağrı [GetWindowRect](../mfc/reference/cwnd-class.md#getwindowrect) dikdörtgenin genişliğini ve yüksekliğini şu anda ayrılmış bir özellik sayfası pencerenin almak için genişletin boyutları ve çağrı [MoveWindow](../mfc/reference/cwnd-class.md#movewindow) özellik sayfası pencerenin boyutunu değiştirmek için.
+İşleyici içindeki Özellik sayfası iletişim kutusuna denetimler ekleyebilirsiniz `OnCreate` . Ek denetimleri konağa eklemek, genellikle özellik sayfası iletişim kutusunun boyutunu genişletmeyi gerektirir. **CPropertySheet:: OnCreate**temel sınıfını çağırdıktan sonra, geçerli olarak ayrılmış Özellik sayfası penceresinin genişliğini ve yüksekliğini almak Için [GetWindowRect](reference/cwnd-class.md#getwindowrect) çağırın, dikdörtgenin boyutlarını genişletin ve özellik sayfası penceresinin boyutunu değiştirmek için [MoveWindow](reference/cwnd-class.md#movewindow) öğesini çağırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özellik sayfaları](../mfc/property-sheets-mfc.md)<br/>
-[CPropertyPage Sınıfı](../mfc/reference/cpropertypage-class.md)<br/>
-[CPropertySheet Sınıfı](../mfc/reference/cpropertysheet-class.md)
+[Özellik sayfaları](property-sheets-mfc.md)<br/>
+[CPropertyPage Sınıfı](reference/cpropertypage-class.md)<br/>
+[CPropertySheet sınıfı](reference/cpropertysheet-class.md)

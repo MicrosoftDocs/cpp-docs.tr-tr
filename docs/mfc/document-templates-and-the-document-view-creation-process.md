@@ -1,5 +1,5 @@
 ---
-title: Belge şablonları ve belge-görünüm oluşturma işlemi
+title: Belge şablonları ve belge görünümü oluşturma Işlemi
 ms.date: 11/19/2018
 helpviewer_keywords:
 - icons, for multiple document templates
@@ -11,34 +11,34 @@ helpviewer_keywords:
 - CDocTemplate class [MFC]
 - templates [MFC], document templates
 ms.assetid: 311ce4cd-fbdf-4ea1-a51b-5bb043abbcee
-ms.openlocfilehash: 79d24ef4b6687bce61295a92cdb90f4ce4a0d619
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b96a11926927e89890ca268dcff7d347079b25fb
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389607"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84615770"
 ---
 # <a name="document-templates-and-the-documentview-creation-process"></a>Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi
 
-Karmaşık kendi ilişkili görünümler ve çerçeve penceresi ile belge oluşturma işlemini yönetmek için iki belge şablonu sınıfları framework kullanır: [CSingleDocTemplate](../mfc/reference/csingledoctemplate-class.md) SDI uygulamaları için ve [CMultiDocTemplate](../mfc/reference/cmultidoctemplate-class.md) MDI uygulamaları için. A `CSingleDocTemplate` oluşturabilir ve aynı anda tek bir belge depolayabilir. A `CMultiDocTemplate` bir türdeki çok sayıda açık belgelerin listesini tutar.
+İlişkili görünümleri ve çerçeve pencereleri ile belge oluşturma karmaşık sürecini yönetmek için Framework iki belge şablonu sınıfı kullanır: SDI uygulamaları için [CSingleDocTemplate](reference/csingledoctemplate-class.md) ve MDI uygulamaları Için [CMultiDocTemplate](reference/cmultidoctemplate-class.md) . Tek seferde bir `CSingleDocTemplate` türden bir belge oluşturup depolayabilirler. , `CMultiDocTemplate` Tek bir türdeki birçok açık belge listesini tutar.
 
-Bazı uygulamalar birden çok belge türlerini destekler. Örneğin, bir uygulama, metin ve grafikleri belgeler desteklemiyor olabilir. Kullanıcı Dosya menüsündeki yeni komutu seçtiğinde bu tür bir uygulamada, bir iletişim kutusu açmak için olası yeni belge türlerinin bir listesini gösterir. Her bir desteklenen belge türü için ayrı bir belge şablonu nesnesi uygulama kullanır. Aşağıdaki şekil iki belge türlerini destekleyen ve çeşitli açık belgeleri gösteren bir MDI Uygulaması yapılandırmasını gösterir.
+Bazı uygulamalar birden çok belge türünü destekler. Örneğin, bir uygulama metin belgelerini ve grafik belgelerini destekleyebilir. Böyle bir uygulamada, Kullanıcı Dosya menüsünde Yeni komutu seçtiğinde bir iletişim kutusu açmak için olası yeni belge türlerinin bir listesini gösterir. Desteklenen her belge türü için, uygulama ayrı bir belge şablonu nesnesi kullanır. Aşağıdaki şekilde, iki belge türünü destekleyen ve çeşitli açık belgeleri gösteren bir MDI uygulamasının yapılandırması gösterilmektedir.
 
-![İki belge türleri içeren MDI uygulaması](../mfc/media/vc387h1.gif "iki belge türleri içeren MDI uygulaması") <br/>
-İki belge türleri ile bir MDI uygulaması
+![İki belge türüne sahip MDI uygulaması](../mfc/media/vc387h1.gif "İki belge türüne sahip MDI uygulaması") <br/>
+Iki belge türüne sahip bir MDI uygulaması
 
-Belge şablonları oluşturulur ve uygulama nesnesi tarafından korunur. Anahtar görevlerinden birini ve uygulamanızın sırasında gerçekleştirilen `InitInstance` işlev, uygun türde bir veya daha fazla belge şablonları oluşturmak için. Bu özellik anlatıldığı [belge şablonu oluşturma](../mfc/document-template-creation.md). Uygulama nesnesi, şablon listesinde bulunan her bir belge şablonu için bir işaretçi depolar ve şablonların eklemek için bir arabirim sağlar.
+Belge şablonları, uygulama nesnesi tarafından oluşturulur ve sürdürülür. Uygulamanızın işlevi sırasında gerçekleştirilen anahtar görevlerden biri `InitInstance` , uygun türde bir veya daha fazla belge şablonu oluşturmak. Bu özellik [belge şablonu oluşturma](document-template-creation.md)bölümünde açıklanmaktadır. Uygulama nesnesi, Şablon listesindeki her belge şablonuna yönelik bir işaretçi depolar ve belge şablonları eklemek için bir arabirim sağlar.
 
-İki veya daha fazla belge türlerini desteklemeniz gerekiyorsa, ek bir çağrı eklemeniz gerekir [AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate) her belge türü için.
+İki veya daha fazla belge türünü desteklemeniz gerekiyorsa, her belge türü için [AddDocTemplate](reference/cwinapp-class.md#adddoctemplate) 'e ek bir çağrı eklemeniz gerekir.
 
-Bir simge kendi konumuna belge şablonları uygulama listesinde bağlı her bir belge şablonu için kaydedilir. Belge şablonları sırasını çağrılarıyla eklendiği sıraya göre belirlenir `AddDocTemplate`. MFC uygulamada ilk simge kaynağı uygulama simgesi, sonraki simge kaynağı ilk belge simgesini ve benzeri olduğunu varsayar.
+Her belge şablonu için, uygulamanın belge şablonları listesindeki konumuna bağlı olarak bir simge kaydedilir. Belge şablonlarının sırası, çağrıları ile eklendikleri sıraya göre belirlenir `AddDocTemplate` . MFC uygulamadaki ilk simge kaynağının uygulama simgesi olduğunu varsayar, sonraki simgenin kaynağı ilk belge simgedir ve bu şekilde devam eder.
 
-Örneğin, üç uygulama için üçüncü bir belge şablonu olur. Bu simge, uygulama 3 dizinindeki bir simge kaynağı ise belge şablonunu kullanılır. Aksi takdirde dizin 0 konumunda simgesi varsayılan olarak kullanılır.
+Örneğin, bir belge şablonu, uygulamanın üçüncü üç örneğidir. Uygulamada, Dizin 3 ' teki bir simge kaynağı varsa, bu simge belge şablonu için kullanılır. Aksi takdirde, 0 dizinindeki simge varsayılan olarak kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel MFC Konuları](../mfc/general-mfc-topics.md)<br/>
-[Belge Şablonu Oluşturma](../mfc/document-template-creation.md)<br/>
-[Belge/görünüm oluşturma](../mfc/document-view-creation.md)<br/>
-[FC Nesneleri Arasındaki İlişki](../mfc/relationships-among-mfc-objects.md)<br/>
-[Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
+[Genel MFC Konuları](general-mfc-topics.md)<br/>
+[Belge Şablonu Oluşturma](document-template-creation.md)<br/>
+[Belge/görünüm oluşturma](document-view-creation.md)<br/>
+[MFC Nesneleri Arasındaki İlişki](relationships-among-mfc-objects.md)<br/>
+[Yeni belgeler, pencereler ve görünümler oluşturma](creating-new-documents-windows-and-views.md)

@@ -7,33 +7,33 @@ helpviewer_keywords:
 - user interfaces, OLE
 - applications [OLE], user interface
 ms.assetid: 61cb5d3e-1108-4e9b-b301-a8d8fcc586cb
-ms.openlocfilehash: b37b1439462e36787baee6a77413de3d56f2cca5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ce35bad80a348bc89ce67065d26f9a82f2feba52
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403980"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84624215"
 ---
 # <a name="ole-mfc"></a>OLE (MFC)
 
-Programınızda OLE işlevselliği uygulama, kullanıcı arabirimi farklı şekillerde etkiler:
+Programınızda OLE işlevselliği uygulamak, Kullanıcı arabiriminizi çeşitli yollarla etkiler:
 
-- Görsel düzenleme (yerinde etkinleştirme) başka bir program kullanıcı arabirimini görüntüler, programınızın windows ve diğer program öğeleri ile program menüleri değiştirir.
+- Görsel düzen (yerinde etkinleştirme) programınızın penceresinde başka bir programın kullanıcı arabirimini görüntüler ve programınızın menülerini diğer programdaki öğelerle değiştirir.
 
-- Sürükle ve bırak, kullanıcıların nesneleri içinde ve windows arasında bile programlar arasında sürükleyin sağlar.
+- Sürükle ve bırak, kullanıcıların nesneleri içine ve Windows arasında ve hatta programlar arasında sürüklemenize olanak tanır.
 
-- İzleyicileri görsel düzenleme sırasında nesnelerin durumu için görsel ipuçlarını sağlama sürükleyin ve bırakın.
+- İzleyiciler görsel düzenlemeler sırasında nesnelerin durumuna görsel yardımlar sağlar ve sürükleyip bırakın.
 
-Daha fazla bilgi için bkz.:
+Daha fazla bilgi için bkz.
 
-- [OLE ve MFC](../mfc/ole-in-mfc.md)
+- [OLE ve MFC](ole-in-mfc.md)
 
-- [Görsel düzenleme (etkinleştirme)](../mfc/activation-cpp.md)
+- [Görsel düzen (etkinleştirme)](activation-cpp.md)
 
-- [Sürükleme ve Bırakma](../mfc/drag-and-drop-ole.md)
+- [Sürükleme ve Bırakma](drag-and-drop-ole.md)
 
-- [İzleyiciler](../mfc/trackers.md)
+- [İzleyicileri](trackers.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)
+[Kullanıcı arabirimi öğeleri](user-interface-elements-mfc.md)

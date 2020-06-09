@@ -6,24 +6,24 @@ helpviewer_keywords:
 - tool tips [MFC], tool tip controls
 - tool tips [MFC], creating
 ms.assetid: b015e9f4-ddfb-49a4-a5a6-fa2d45e4d328
-ms.openlocfilehash: 2ba935f52f24f62dded3b89df1563454cf7e0335
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 26f31705068df009e906d50451efa9ea6572d7e6
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383923"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625449"
 ---
 # <a name="methods-of-creating-tool-tips"></a>Araç İpuçları Oluşturma Yöntemleri
 
-MFC oluşturmak ve araç ipucunu denetimini yönetmek için üç sınıf sunar: [CWnd](../mfc/reference/cwnd-class.md), [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md), [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) ve [CMFCToolTipCtrl](../mfc/reference/cmfctooltipctrl-class.md). Windows ortak denetim API'si bu sınıflardaki araç ipucu üye işlevleri kaydır. Sınıf `CToolBarCtrl` ve sınıf `CToolTipCtrl` sınıfından türetilen `CWnd`.
+MFC araç ipucu denetimini oluşturmak ve yönetmek için üç sınıf sağlar: [CWnd](reference/cwnd-class.md), [CToolBarCtrl](reference/ctoolbarctrl-class.md), [CToolTipCtrl](reference/ctooltipctrl-class.md) ve [CMFCToolTipCtrl](reference/cmfctooltipctrl-class.md). Bu sınıflardaki araç ipucu üye işlevleri Windows ortak denetim API 'sini sarmalıdır. Sınıf `CToolBarCtrl` ve sınıf sınıfından `CToolTipCtrl` türetilir `CWnd` .
 
-`CWnd` oluşturmak ve araç ipuçları yönetmek için dört üye işlevleri sağlar: [EnableToolTips](../mfc/reference/cwnd-class.md#enabletooltips), [CancelToolTips](../mfc/reference/cwnd-class.md#canceltooltips), [FilterToolTipMessage](../mfc/reference/cwnd-class.md#filtertooltipmessage), ve [OnToolHitTest](../mfc/reference/cwnd-class.md#ontoolhittest). Bu tek tek üye işlevleri araç ipuçları nasıl uyguladıkları hakkında daha fazla bilgi için bkz.
+`CWnd`Araç ipuçlarını oluşturmak ve yönetmek için dört üye işlevi sağlar: [Enabletooltip](reference/cwnd-class.md#enabletooltips), [canceltooltip](reference/cwnd-class.md#canceltooltips), [FilterToolTipMessage](reference/cwnd-class.md#filtertooltipmessage)ve [OnToolHitTest](reference/cwnd-class.md#ontoolhittest). Araç ipuçlarını nasıl uygutıkları hakkında daha fazla bilgi için bu bireysel üye işlevlerine bakın.
 
-Bir araç kullanarak oluşturursanız `CToolBarCtrl`, aşağıdaki üye işlevleri kullanarak doğrudan bu araç için araç ipuçları uygulayabilirsiniz: [GetToolTips](../mfc/reference/ctoolbarctrl-class.md#gettooltips) ve [SetToolTips](../mfc/reference/ctoolbarctrl-class.md#settooltips). Bu tek tek üye işlevleri ve [araç ipucu bildirimlerini işleme](../mfc/handling-tool-tip-notifications.md) araç ipuçları nasıl uyguladıkları hakkında daha fazla bilgi.
+Kullanarak bir araç çubuğu oluşturursanız `CToolBarCtrl` , şu üye işlevlerini kullanarak doğrudan bu araç çubuğu için araç ipuçları uygulayabilirsiniz: [GetToolTip](reference/ctoolbarctrl-class.md#gettooltips) 'Ler ve [SetToolTip](reference/ctoolbarctrl-class.md#settooltips)'ler. Araç ipuçlarını nasıl uygulayacağıyla ilgili daha fazla bilgi için bu bireysel üye işlevleri ve [Işleme aracı Ipucu bildirimlerine](handling-tool-tip-notifications.md) bakın.
 
-`CToolTipCtrl` Sınıfı Windows ortak araç ipucu denetimi işlevlerini sağlar. Tek araç ipucunu denetimini birden fazla aracı için bilgi sağlayabilir. Bir pencerenin istemci alanı içindeki uygulama tarafından tanımlanan dikdörtgen alan bir alt pencere veya denetim gibi bir ya da pencere bir araçtır. [CMFCToolTipCtrl](../mfc/reference/cmfctooltipctrl-class.md) sınıf türetilir `CToolTipCtrl` ve ek görsel stilleri ve işlevleri sağlar.
+`CToolTipCtrl`Sınıfı, Windows ortak araç ipucu denetimi işlevlerini sağlar. Tek bir araç ipucu denetimi, birden fazla araç için bilgi sağlayabilir. Bir araç, alt pencere veya denetim gibi bir pencere ya da bir pencerenin istemci alanı içindeki uygulama tanımlı dikdörtgen bir alandır. [CMFCToolTipCtrl](reference/cmfctooltipctrl-class.md) sınıfı öğesinden türetilir `CToolTipCtrl` ve ek görsel stilleri ve işlevleri sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CToolTipCtrl Kullanma](../mfc/using-ctooltipctrl.md)<br/>
-[Denetimler](../mfc/controls-mfc.md)
+[CToolTipCtrl Kullanma](using-ctooltipctrl.md)<br/>
+[Denetimler](controls-mfc.md)

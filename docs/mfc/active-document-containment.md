@@ -8,35 +8,35 @@ helpviewer_keywords:
 - active document containers [MFC], about active document containers
 - MFC COM, active document containment
 ms.assetid: b8dfa74b-75ce-47df-b75e-fc87b7f7d687
-ms.openlocfilehash: dc13384454c4732d3efbf99def5d05dd4f2d44aa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c524d6890cd7b86bcae2c40d8c602e7b04e751b
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394974"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84623431"
 ---
 # <a name="active-document-containment"></a>Etkin Belge Kapsaması
 
-Etkin belge kapsaması oluşturmanızı ve her bir belge türü için birden çok uygulama çerçeveleri kullanın zorlamak yerine belgelerle çalışmak üzere tek bir çerçevesinde sağlayan bir teknolojidir. OLE yalnızca tek bir içeriğin etkin olabilir, bileşik bir belgeye katıştırılmış nesneleri ile çalışır, temel OLE teknolojisini farklıdır. Etkin belge kapsaması ile tek bir çerçeve bağlamında tüm belgeyi (ilişkili menüler, araç çubukları ve benzeri dahil olmak üzere diğer bir deyişle, tüm uygulamanın) etkinleştirin.
+Etkin belge kapsama, her belge türü için birden çok uygulama çerçevesi oluşturup kullanmanıza zorlamak yerine belgelerle çalışmak üzere tek bir çerçeve sağlayan bir teknolojidir. Bu, OLE içindeki temel OLE teknolojisinden farklıdır. Bu, tek bir içerik parçasının etkin olduğu bileşik bir belge içindeki katıştırılmış nesneler ile çalışmaktadır. Etkin belge kapsamadan, tek bir çerçeve bağlamında tüm belgeyi (diğer bir deyişle, ilişkili menüler, araç çubukları vb. dahil olmak üzere tüm bir uygulama) etkinleştirirsiniz.
 
-Etkin belge kapsama teknolojinin Office Binder uygulamak için Microsoft Office ilk olarak geliştirilmiştir. Ancak, teknolojinin Office Binder dışında etkin belge kapsayıcıları desteklemek için esnek ve belge sunucuları Office ve Office ile uyumlu uygulamaların dışında destekleyebilir.
+Etkin belge kapsama teknolojisi, başlangıçta Office Ciltçi uygulaması Microsoft Office için geliştirilmiştir. Ancak, teknoloji Office Ciltçi dışındaki etkin belge kapsayıcılarını desteklemeye yetecek kadar esnektir ve Office ve Office uyumlu uygulamalar dışındaki belge sunucularını destekleyebilir.
 
-Etkin belgeler barındıran uygulaması olarak adlandırılan bir [etkin belge kapsayıcı](../mfc/active-document-containers.md). Microsoft Office Binder ya da Microsoft Internet Explorer gibi kapsayıcılar örnekleridir.
+Etkin belgeleri barındıran uygulamaya [etkin bir belge kapsayıcısı](active-document-containers.md)denir. Bu kapsayıcıların örnekleri Microsoft Office Ciltçi veya Microsoft Internet Explorer.
 
-Etkin belge kapsaması OLE uzantıları kümesi belgeler gibi OLE bileşik belge teknolojinin uygulanır. Katıştırılmış içeriği tek bir parçasını yerine tüm belgeyi temsil etmek eklenebilir, yerinde bir nesne sağlayan ek arabirimleri uzantılarıdır. OLE belgeleri olarak, etkin belge kapsaması etkin belgeler ve kullanıcı arabirimi ve düzenleme özellikleri etkin belgeler için kendilerini sağlayan sunucular için görünen alanın sağlayan kapsayıcı kullanır.
+Etkin belge kapsama, OLE belgelerine bir uzantılar kümesi olarak uygulanır ve OLE belgelerinin bileşik belge teknolojisidir. Uzantılar, bir eklenebilir, yerinde nesnenin tek bir katıştırılmış içerik parçası yerine tüm belgeyi temsil etmesini sağlayan ek arayüzlerdir. OLE belgelerinde olduğu gibi, etkin belge kapsamı etkin belgeler için görüntüleme alanı ve etkin belgelerin kendileri için de Kullanıcı arabirimi ve işleme özellikleri sağlayan bir kapsayıcı kullanır.
 
-Bir [etkin belge sunucusu](../mfc/active-document-servers.md) burada nesne içinde etkinleştirilmesi izin uzantı arabirimlerini destekler her nesne bir veya daha fazla etkin belge sınıfları destekleyen bir uygulama (örneğin, Word, Excel veya PowerPoint) olan bir uygun kapsayıcı.
+[Etkin bir belge sunucusu](active-document-servers.md) , bir veya daha fazla etkin belge sınıfını destekleyen bir uygulama (Word, Excel veya PowerPoint gibi), her nesnenin kendisi nesnenin uygun bir kapsayıcıda etkinleştirilmesini sağlayan uzantı arabirimlerini desteklediği bir uygulamadır.
 
-Bir [etkin belgeyi](../mfc/active-documents.md) (Word veya Excel gibi bir etkin belgeyi sunucusundan sağlanır), başka bir etkin belge kapsayıcı içindeki bir nesne olarak katıştırılır temelde tam ölçekli, geleneksel belgedir. Katıştırılmış nesneler aksine etkin belgeler, sayfalar üzerinde tam denetime sahip ve tam arabirimi uygulama (ile tüm temel alınan komutlar ve araçlar), bunları düzenlemek için kullanıcı tarafından kullanılabilir.
+[Etkin bir belge](active-documents.md) (Word veya Excel gibi etkin bir belge sunucusundan sağlanır), aslında başka bir etkin belge kapsayıcısı içindeki bir nesne olarak katıştırılmış olan tam ölçekli, geleneksel bir belgedir. Katıştırılmış nesnelerden farklı olarak, etkin belgeler kendi sayfaları üzerinde tam denetime sahiptir ve uygulamanın tam arabirimine sahip olur (tüm alt komutları ve araçları ile birlikte) Kullanıcı tarafından düzenleme için kullanılabilir.
 
-Etkin belge standart bir OLE katıştırılmış nesne ayrım tarafından en iyi anlaşılmalıdır. OLE kural, bir nesnenin sahip olduğu belge sayfasında görüntülenen biridir ve belge bir OLE kapsayıcı tarafından yönetilir. Kapsayıcı belgenin geri kalanında katıştırılmış nesnenin verilerle depolar. Ancak, katıştırılmış nesneler üzerinde göründükleri sayfasını kontrol etmez, sınırlıdır.
+Etkin bir belge, standart OLE Embedded nesnesinden ayırt edici en iyi şekilde anlaşılır. OLE kuralına göre, gömülü bir nesne, kendisine ait olan belge sayfasında görüntülenen bir belgedir ve belge bir OLE kapsayıcısı tarafından yönetilir. Kapsayıcı, katıştırılmış nesnenin verilerini belgenin geri kalanı ile depolar. Ancak, katıştırılmış nesneler göründükleri sayfayı denetolmadıklarından sınırlı olur.
 
-Etkin belge kapsayıcı uygulaması, kullanıcılar, etkin belgeler (Office Binder bölümlerde olarak adlandırılır) oluşturabilir, sık kullandığınız uygulamalar (Bu uygulamalar etkin belgeyi etkin olması koşuluyla) kullanarak, kullanıcılar sonuç projesi olarak yönetebilir henüz bir Yazdırılan vb. benzersiz olarak adlandırılmış tek bir varlık kaydedildi. Aynı şekilde, bir kullanıcı bir Internet tarayıcısı, yerel dosya sistemleri yanı sıra tüm ağ ile tek bir konumdan depolama belgelere göz atabilmenizi bir tek belge depolama varlık olarak davranabilirsiniz.
+Etkin bir belge kapsayıcısı uygulamasının kullanıcıları, sık kullanılan uygulamalarını (Bu uygulamalar etkin belge etkindir) kullanarak, etkin belgeler (Office Ciltçi 'de bölümler olarak adlandırılır) oluşturabilir, ancak kullanıcılar, sonuçta elde edilen projeyi tek bir varlık olarak yönetebilir, bu da benzersiz şekilde adlandırılmış, kaydedilmiş, yazdırılabilir, vb. olabilir. Aynı şekilde, bir Internet tarayıcısının bir kullanıcısı, tüm ağı ve yerel dosya sistemlerini tek bir konumdan tek bir konumdan, bu depolama alanındaki belgelere gözatmanıza olanak tanıyan tek bir belge depolama varlığı olarak ele alabilir.
 
-## <a name="sample-programs"></a>Örnek program
+## <a name="sample-programs"></a>Örnek programlar
 
-- [MFCBIND](../overview/visual-cpp-samples.md) örnek etkin belge kapsayıcı uygulaması uygulanışı gösterilmektedir.
+- [Mfcbind](../overview/visual-cpp-samples.md) örneği etkin bir belge kapsayıcısı uygulamasının uygulamasını gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC COM](../mfc/mfc-com.md)
+[MFC COM](mfc-com.md)

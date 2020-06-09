@@ -20,73 +20,73 @@ helpviewer_keywords:
 - MFC COM, Automation
 - methods [MFC], Automation
 ms.assetid: 329117f0-c1aa-4680-a901-bfb71277dfba
-ms.openlocfilehash: e9320ccf7a21c6110c51366fa8af96596512a4a7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e5790be14f26f59c2b51b339c8bee7c5eca7d692
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370817"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84616522"
 ---
 # <a name="automation"></a>Otomasyon
 
-Otomasyon (eski adıyla OLE Automation), bir uygulamanın başka bir uygulamada uygulanan nesneleri işlemesini veya nesneleri manipüle edilebilmeleri için ortaya çıkarmasını mümkün kılar.
+Otomasyon (eski adıyla OLE Otomasyonu), bir uygulamanın başka bir uygulamada uygulanan nesneleri işlemesini veya işlenebilmeleri için nesneleri kullanıma sunmasını mümkün kılar.
 
-[Otomasyon sunucusu,](../mfc/automation-servers.md) işlevlerini COM arabirimleri aracılığıyla [otomasyon istemcileri](../mfc/automation-clients.md)adı verilen diğer uygulamalara maruz eden bir uygulamadır (bir COM sunucusu türüdür). Pozlama, Otomasyon istemcilerinin nesnelere doğrudan erişerek ve sağladıkları hizmetleri kullanarak belirli işlevleri otomatikleştirmesini sağlar.
+[Otomasyon sunucusu](automation-servers.md) , işlevselliğini [Otomasyon istemcileri](automation-clients.md)olarak adlandırılan diğer uygulamalara com arabirimleri aracılığıyla kullanıma sunan bir uygulamadır (com Server türüdür). Bu pozlama, Otomasyon istemcilerinin nesnelere doğrudan erişerek ve sağladıkları Hizmetleri kullanarak belirli işlevleri otomatikleştirmesini sağlar.
 
-Otomasyon sunucuları ve istemciler, her `IDispatch` zaman otomasyon türleri adı verilen belirli bir veri türü kümesinden türetilen ve iade edilen COM arabirimleri kullanır. Diğer uygulamalardan erişebileceğiniz yöntemler ve özellikler sağlayarak Otomasyon arabirimini ortaya çıkaran herhangi bir nesneyi otomatikleştirebilirsiniz. Otomasyon hem OLE hem de COM nesneleri için kullanılabilir. Otomatik nesne yerel veya uzak olabilir (ağ üzerinden erişilebilen başka bir makinede); bu nedenle otomasyonun iki kategorisi vardır:
+Otomasyon sunucuları ve istemcileri, her zaman türetilmiş `IDispatch` ve otomasyon türleri olarak adlandırılan belirli bir veri türleri kümesini alıp döndüren com arabirimlerini kullanır. Otomasyon arabirimini kullanıma sunan tüm nesneleri otomatikleştirerek diğer uygulamalardan erişebileceğiniz Yöntemler ve Özellikler sağlayabilirsiniz. Otomasyon hem OLE hem de COM nesneleri için kullanılabilir. Otomatik nesne yerel veya uzak olabilir (ağ üzerinden erişilebilen başka bir makineye); Bu nedenle, iki Otomasyon kategorisi vardır:
 
 - Otomasyon (yerel).
 
-- Uzaktan Otomasyon (bir ağ üzerinden, Distributed COM veya DCOM kullanarak).
+- Uzaktan Otomasyon (ağ üzerinden, dağıtılmış COM veya DCOM kullanarak).
 
-Uygulamalar diğer uygulamalar için yararlı işlevsellik sağladığında nesneleri açığa çıkarmak yararlıdır. Örneğin, ActiveX denetimi bir Otomasyon sunucusu türüdür; ActiveX denetimini barındıran uygulama, bu kontrolün otomasyon istemcisidir.
+Uygulamalar diğer uygulamalar için yararlı işlevler sağladığınızda nesneleri kullanıma sunma yararlı olur. Örneğin, bir ActiveX denetimi bir Otomasyon sunucusu türüdür; ActiveX denetimini barındıran uygulama, bu denetimin Otomasyon istemcsahiptir.
 
-Başka bir örnek olarak, bir sözcük işlemci yazım denetimi işlevini diğer programlara gösterebilir. Nesnelerin pozlama, satıcıların diğer uygulamaların hazır işlevselliğini kullanarak uygulamalarını geliştirmelerine olanak tanır. Bu şekilde Otomasyon, yeniden kullanılabilirlik ve kapsülleme gibi nesne yönelimli programlama ilkelerinden bazılarını uygulama düzeyinde uygular.
+Başka bir örnek olarak, bir sözcük işlemcisi, yazım denetimi işlevini diğer programlarla kullanıma sunabilir. Nesnelerin açığa çıkması, satıcıların diğer uygulamaların kullanıma hazırlamış işlevlerini kullanarak uygulamalarını geliştirmesine olanak sağlar. Bu şekilde, otomasyon, uygulama düzeyindeki yeniden kullanılabilirlik ve kapsülleme gibi nesne odaklı programlama prensiplerini uygular.
 
-Daha da önemlisi Otomasyon'un kullanıcılara ve çözüm sağlayıcılarına sağladığı destektir. Otomasyon, uygulama işlevselliğini ortak ve iyi tanımlanmış bir arayüz aracılığıyla ortaya çıkararak, uygulamaya özgü makro diller yerine Microsoft Visual Basic gibi tek bir genel programlama dilinde kapsamlı çözümler oluşturmayı mümkün kılar.
+Destek Otomasyonu, kullanıcılara ve çözüm sağlayıcılarına sağladığı daha önemli bir çözümdür. Otomasyon, yaygın, iyi tanımlanmış bir arabirim aracılığıyla uygulama işlevselliğini ortaya çıkararak, uygulamaya özgü çeşitli makro dilleri yerine Microsoft Visual Basic gibi tek bir genel programlama dilinde kapsamlı çözümler oluşturmayı mümkün kılar.
 
-Microsoft Excel ve Microsoft Visual C++ gibi birçok ticari uygulama, işlevselliklerinin çoğunu otomatikleştirmenize olanak sağlar. Örneğin, Visual C++'da, yapıları, kod düzenleme nin yönlerini veya hata ayıklama görevlerini otomatikleştirmek için VBScript makroları yazabilirsiniz.
+Microsoft Excel ve Microsoft Visual C++ gibi birçok ticari uygulama, işlevlerinin çoğunu otomatik hale getirmenizi sağlar. Örneğin, Visual C++ ' de, yapılandırmaları, kod düzenlemenin yönlerini veya hata ayıklama görevlerini otomatikleştirebilmek için VBScript makroları yazabilirsiniz.
 
-## <a name="passing-parameters-in-automation"></a><a name="_core_passing_parameters_in_automation"></a>Otomasyonda Geçiş Parametreleri
+## <a name="passing-parameters-in-automation"></a><a name="_core_passing_parameters_in_automation"></a>Otomasyon 'da parametreleri geçirme
 
-Otomasyon yöntemleri oluşturmada bir zorluk otomasyon sunucuları ve istemciler arasında veri aktarmak için tek tip bir "güvenli" mekanizma sağlamak için yardımcı olmaktır. Otomasyon, verileri aktarmak için **VARIANT** türünü kullanır. **VARIANT** türü etiketli bir birliktir. Değer için bir veri üyesi (bu anonim bir C++ birleşmesidir) ve birleşimde depolanan bilgi türünü belirten bir veri üyesi vardır. **VARIANT** türü bir dizi standart veri türünü destekler: 2- ve 4 bayt tamsayılar, 4- ve 8 bayt kayan nokta numaraları, dizeleri ve Boolean değerleri. Buna ek olarak, **HRESULT** (OLE hata kodları), **CURRENCY** (sabit nokta sayısal türü) ve **DATE** (mutlak tarih ve `IUnknown` `IDispatch` saat) türlerinin yanı sıra işaretçileri ve arabirimleri destekler.
+Otomasyon yöntemleri oluştururken bir zorluk, otomasyon sunucuları ve istemciler arasında veri geçirmek için Tekdüzen "güvenli" mekanizması sağlamaya yardımcı olur. Otomasyon, verileri geçirmek için **değişken** türünü kullanır. **Değişken** türü etiketli bir birleşimdir. Bu, değer için bir veri üyesine (Bu anonim bir C++ birleşimi) ve birleşimde depolanan bilgilerin türünü gösteren bir veri üyesine sahiptir. **Değişken** türü bir dizi standart veri türünü destekler: 2-ve 4 baytlık tamsayılar, 4 ve 8 baytlık kayan noktalı sayılar, dizeler ve Boole değerleri. Ayrıca, **HRESULT** (OLE hata kodları), **para birimi** (sabit noktalı sayısal tür) ve **Tarih** (mutlak tarih ve saat) türlerini ve bunlara yönelik işaretçileri `IUnknown` ve arabirimleri de destekler `IDispatch` .
 
-**VARIANT** türü [COleVariant](../mfc/reference/colevariant-class.md) sınıfında kapsüllenir. Destekleyici **PARA VE** **DATE** sınıfları COleCurrency ve [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) sınıflarında kapsüllenir. [COleCurrency](../mfc/reference/colecurrency-class.md)
+**Değişken** türü [cotavariant](reference/colevariant-class.md) sınıfında kapsüllenir. Destekleyici **para birimi** ve **Tarih** sınıfları [Copacurrency](reference/colecurrency-class.md) ve [cotadatetime](../atl-mfc-shared/reference/coledatetime-class.md) sınıflarında kapsüllenir.
 
-## <a name="automation-samples"></a>Otomasyon Örnekleri
+## <a name="automation-samples"></a>Otomasyon örnekleri
 
-- [OTOCLIK](../overview/visual-cpp-samples.md) Otomasyon tekniklerini öğrenmek ve Uzaktan Otomasyon u yürütmek için bir temel olarak bu çeteyi kullanım.
+- [AUTOCLIK](../overview/visual-cpp-samples.md) Bu örneği kullanarak Otomasyon tekniklerini öğrenin ve uzaktan Otomasyon öğrenmeye yönelik bir temel olarak.
 
-- [ACDUAL](../overview/visual-cpp-samples.md) Otomasyon sunucusu uygulamasına çift arabirim ekler.
+- [Acdual](../overview/visual-cpp-samples.md) Bir Otomasyon sunucu uygulamasına çift arabirimler ekler.
 
-- [CALCDRIV](../overview/visual-cpp-samples.md) MFCCALC sürüş otomasyon istemci uygulaması.
+- [Calcdriv](../overview/visual-cpp-samples.md) MFCCALC 'yi yönlendiren Otomasyon istemci uygulaması.
 
-- [INPROC](../overview/visual-cpp-samples.md) İşlem Içi Otomasyon sunucu uygulamasını gösterir.
+- [InProc](../overview/visual-cpp-samples.md) Işlem Içi bir Otomasyon sunucu uygulaması gösterir.
 
-- [IPDRIVE](../overview/visual-cpp-samples.md) INPROC'u yönlendiren otomasyon istemci uygulaması.
+- [Ipdrive](../overview/visual-cpp-samples.md) INPROC 'yi yönlendiren Otomasyon istemci uygulaması.
 
-- [MFCCALC](../overview/visual-cpp-samples.md) Bir Otomasyon istemci sİstemi uygulaması gösterir.
+- [MFCCALC](../overview/visual-cpp-samples.md) Bir Otomasyon istemci uygulamasını gösterir.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilmek istiyorum
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Otomasyon Müşterileri](../mfc/automation-clients.md)
+- [Otomasyon Istemcileri](automation-clients.md)
 
-- [Otomasyon Sunucuları](../mfc/automation-servers.md)
+- [Otomasyon sunucuları](automation-servers.md)
 
-- [OLE](../mfc/ole-in-mfc.md)
+- [OLE](ole-in-mfc.md)
 
-- [Aktif Teknoloji](../mfc/mfc-com.md)
+- [Etkin teknoloji](mfc-com.md)
 
-## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsun?
+## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Otomasyon sınıfı ekleme](../mfc/automation-servers.md)
+- [Otomasyon sınıfı ekleme](automation-servers.md)
 
-- [Tür kitaplıklarını kullanma](../mfc/automation-clients-using-type-libraries.md)
+- [Tür kitaplıklarını kullanma](automation-clients-using-type-libraries.md)
 
-- [Erişim otomasyon sunucuları](../mfc/automation-servers.md)
+- [Otomasyon sunucularına erişme](automation-servers.md)
 
-- [C++'da otomasyon istemcileri yazın](../mfc/automation-clients.md)
+- [C++ ' da Otomasyon istemcileri yazma](automation-clients.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC COM](../mfc/mfc-com.md)
+[MFC COM](mfc-com.md)

@@ -42,12 +42,12 @@ helpviewer_keywords:
 - RichEdit 1.0 control
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: ad14a0500336bc1ca61e00bcd6d9a6e1088afc81
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9c1596b66f4387ea1f7ce309a5012ecd0f63d5de
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167530"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84623456"
 ---
 # <a name="how-to-add-edit-or-delete-controls-c"></a>Nasıl yapılır: denetimleri ekleme, düzenleme veya silme (C++)
 
@@ -98,7 +98,7 @@ Iletişim kutusu **düzenleyicisini**kullanarak, iletişim kutularında denetiml
 
 ### <a name="to-add-a-custom-control"></a>Özel bir denetim eklemek için
 
-İletişim kutusuna özel denetimler ekleyebilirsiniz. **Araç kutusu** ' nda **özel denetim** simgesini seçin ve iletişim kutusuna sürükleyin. `Syslink` bir denetim eklemek için özel bir denetim ekleyin ve sonra denetimin **Class** özelliğini `Syslink`olarak değiştirin. Bu eylem, özelliklerin yenilenmesine ve `Syslink` denetim özelliklerini görüntülemesine neden olur. MFC sarmalayıcı sınıfı hakkında daha fazla bilgi için bkz. [CLinkCtrl](../mfc/reference/clinkctrl-class.md).
+İletişim kutusuna özel denetimler ekleyebilirsiniz. **Araç kutusu** ' nda **özel denetim** simgesini seçin ve iletişim kutusuna sürükleyin. Bir denetim eklemek için `Syslink` özel bir denetim ekleyin, sonra denetimin **Class** özelliğini olarak değiştirin `Syslink` . Bu eylem, özelliklerin yenilenmesini ve `Syslink` Denetim özelliklerini göstermesini sağlar. MFC sarmalayıcı sınıfı hakkında daha fazla bilgi için bkz. [CLinkCtrl](../mfc/reference/clinkctrl-class.md).
 
 ## <a name="edit-controls"></a>Denetimleri Düzenle
 
@@ -118,14 +118,14 @@ Iletişim kutusu **düzenleyicisini**kullanarak, iletişim kutularında denetiml
 
 1. Denetimin **Iletişim kutusu düzenleyicisine**odaklanıp bulunmadığından emin olun.
 
-1. Menü **düzenle** > **geri al**'a gidin. Odak denetimde yoksa, **geri al** komutu kullanılamaz olur.
+1. Menüyü **Düzenle**  >  **geri al**'a gidin. Odak denetimde yoksa, **geri al** komutu kullanılamaz olur.
 
 ### <a name="to-define-a-member-variable-for-a-non-button-dialog-box-control"></a>Bir (düğme dışı) iletişim kutusu denetimi için bir üye değişkeni tanımlamak için
 
 > [!NOTE]
 > Bu işlem yalnızca bir MFC projesi içindeki iletişim kutusu denetimleri için geçerlidir. ATL projeleri **Yeni Windows iletileri ve olay işleyicileri** iletişim kutusunu kullanmalıdır. Daha fazla bilgi için bkz. [Kullanıcı arabirimi nesneleriyle Ilişkili Ileti türleri](../mfc/reference/message-types-associated-with-user-interface-objects.md), [ileti Işleyicisini düzenlemeyle](../mfc/reference/editing-a-message-handler.md)ve [yansıtılan bir ileti için ileti işleyicisi tanımlama](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md).
 
-1. [Iletişim kutusu düzenleyicisinde](../windows/dialog-editor.md)bir denetim seçin.
+1. [Iletişim kutusu düzenleyicisinde](dialog-editor.md)bir denetim seçin.
 
 1. **CTRL** tuşuna basıldığında iletişim kutusu denetimine çift tıklayın.
 
@@ -142,13 +142,13 @@ Ayrıca, belirtilen bir sınıf için yeni üye değişkenleri eklemek ve önced
 
 ## <a name="delete-controls"></a>Denetimleri Sil
 
-İletişim kutusunda, denetimi seçin, ardından **Delete** tuşuna basın veya menü **Düzenle** > **Sil**' e gidin.
+İletişim kutusunda, denetimi seçin, ardından **Delete** tuşuna basın veya menü **Düzenle**  >  **Sil**' e gidin.
 
 ## <a name="other-issues"></a>Diğer Sorunlar
 
 ### <a name="troubleshooting"></a>Sorun giderme
 
-İletişim kutusuna ortak denetim veya zengin düzenleme denetimi ekledikten sonra, iletişim kutusunu test ettiğinizde görünmez. Ya da iletişim kutusu görünmez. Örneğin:
+İletişim kutusuna ortak denetim veya zengin düzenleme denetimi ekledikten sonra, iletişim kutusunu test ettiğinizde görünmez. Ya da iletişim kutusu görünmez. Örnek:
 
 1. Bir Windows uygulaması (konsol uygulaması değil) oluşturmak için uygulama ayarlarını değiştirerek bir Win32 projesi oluşturun.
 
@@ -172,11 +172,11 @@ Ayrıca, belirtilen bir sınıf için yeni üye değişkenleri eklemek ve önced
 |Döndürme denetimi|Sekme denetimi|Aylık takvim|
 |İlerleme denetimi|Animasyon denetimi|IP adresi denetimi|
 |Kısayol tuşu|Zengin düzenleme denetimi|Genişletilmiş Birleşik giriş kutusu|
-|Liste denetimi|Zengin düzenleme 2,0 denetimi|Özel denetim|
+|Liste denetimi|Zengin düzenleme 2,0 denetimi|Özel Denetim|
 
-İletişim kutusu üzerinde ortak denetimleri kullanmak için, iletişim kutusunu oluşturmadan önce [InitCommonControlsEx](/windows/win32/api/commctrl/nf-commctrl-initcommoncontrolsex) veya `AFXInitCommonControls` çağrısı yapmanız gerekir.
+İletişim kutusu üzerinde ortak denetimleri kullanmak için, [InitCommonControlsEx](/windows/win32/api/commctrl/nf-commctrl-initcommoncontrolsex) ' ı çağırmanız veya iletişim kutusunu oluşturmadan önce bunu yapmanız gerekir `AFXInitCommonControls` .
 
-RichEdit denetimlerini kullanmak için `LoadLibrary`çağırmanız gerekir. Daha fazla bilgi için bkz. Windows SDK [zengin düzenleme denetimleri](/windows/win32/Controls/about-rich-edit-controls) ve [zengin düzenleme denetimine genel bakış](../mfc/overview-of-the-rich-edit-control.md).
+RichEdit denetimlerini kullanmak için çağrısı yapmanız gerekir `LoadLibrary` . Daha fazla bilgi için bkz. Windows SDK [zengin düzenleme denetimleri](/windows/win32/Controls/about-rich-edit-controls) ve [zengin düzenleme denetimine genel bakış](../mfc/overview-of-the-rich-edit-control.md).
 
 > [!NOTE]
 > Bir RichEdit denetimini MFC ile birlikte kullanmak için, öncelikle [AfxInitRichEdit2](../mfc/reference/application-information-and-management.md#afxinitrichedit2) öğesini çağırıp RichEdit 2,0 DENETIMINI (RICHED20) yüklemeniz gerekir. DLL) veya eski RichEdit 1,0 denetimini (RICHED32) yüklemek için [AfxInitRichEdit](../mfc/reference/application-information-and-management.md#afxinitrichedit) 'i çağırın. DLL).
@@ -187,12 +187,12 @@ RichEdit denetimlerini kullanmak için `LoadLibrary`çağırmanız gerekir. Daha
 
 Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak sağlar. Daha fazla bilgi için bkz. [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md) ve [ActiveX denetim kapsayıcıları](../mfc/activex-control-containers.md).
 
-**ActiveX denetimi Ekle** iletişim kutusu, Iletişim kutusu [düzenleyicisini](../windows/dialog-editor.md)kullanırken iletişim kutusuna ActiveX denetimleri eklemenize olanak sağlar. Bu iletişim kutusu aşağıdaki özellikleri içerir:
+**ActiveX denetimi Ekle** iletişim kutusu, Iletişim kutusu [düzenleyicisini](dialog-editor.md)kullanırken iletişim kutusuna ActiveX denetimleri eklemenize olanak sağlar. Bu iletişim kutusu aşağıdaki özellikleri içerir:
 
 |Özellik|Açıklama|
 |---|---|
 |**ActiveX denetimi**|ActiveX denetimlerinin bir listesini görüntüler.<br/><br/>Bu iletişim kutusundan bir denetim eklemek sarmalayıcı sınıfı oluşturmaz. Sarmalayıcı sınıfa ihtiyacınız varsa, oluşturmak için [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code) kullanın, bkz. [sınıf ekleme](../ide/adding-a-class-visual-cpp.md).<br/><br/>ActiveX denetimi bu iletişim kutusunda görünmezse, denetimi satıcının yönergelerine göre yüklemeyi deneyin.|
-|**Path**|ActiveX denetiminin bulunduğu dosyayı görüntüler.|
+|**Yol**|ActiveX denetiminin bulunduğu dosyayı görüntüler.|
 
 > [!CAUTION]
 > Sisteminizdeki tüm ActiveX denetimlerini dağıtmak yasal olmayabilir. Denetimleri yükleyen yazılım için lisans sözleşmesine başvurun veya yazılım şirketiyle iletişim kurun.
@@ -216,7 +216,7 @@ Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak sağlar.
 
 Bağımsız satıcılar tarafından sağlanan ActiveX denetimleri kendi özellikleri ve özellikleriyle donatılmış olabilir. Bu özellikler **Özellikler** penceresinde görüntülenir. ActiveX denetiminin yazarları tarafından oluşturulan tüm özellik sayfaları, **Özellikler sayfaları** iletişim kutusunda görüntülenir. (Belirli bir ActiveX denetiminin **özellik sayfasını** görüntülemek için [Özellikler penceresi](/visualstudio/ide/reference/properties-window)) **özellik sayfası** düğmesini seçin.
 
-- Özellikleri görüntülemek için **ActiveX** denetimini seçin ve menü **görünümü** > **özellik sayfasına** gidin. Özellik sayfasında gerektiğinde değişiklik yapın.
+- Özellikleri görüntülemek için **ActiveX** denetimini seçin ve menü **görünümü**  >  **özellik sayfasına** gidin. Özellik sayfasında gerektiğinde değişiklik yapın.
 
    ActiveX denetiminin bir parçası olarak gelen özellik sayfalarına bağlı olarak, ActiveX denetiminin özellik sayfasında çeşitli sekmeler görüntülenir.
 

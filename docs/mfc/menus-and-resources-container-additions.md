@@ -16,74 +16,74 @@ helpviewer_keywords:
 - CONTAIN tutorial [MFC]
 - Links menu item [MFC]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
-ms.openlocfilehash: c8da58316f471f7b7d26e142cc1dd1ccaa6ad8b5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a082a75ef0292e190e597f29be0cdc0bd0b497ef
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364789"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626233"
 ---
 # <a name="menus-and-resources-container-additions"></a>Menüler ve Kaynaklar: Kapsayıcı Ekleme
 
-Bu makalede, görsel düzenleme kapsayıcı uygulamasında menülerde ve diğer kaynaklarda yapılması gereken değişiklikler açıklanmaktadır.
+Bu makalede, görsel olarak düzenlenen bir kapsayıcı uygulamasında menülerde ve diğer kaynaklarda yapılması gereken değişiklikler açıklanmaktadır.
 
-Kapsayıcı uygulamalarında iki tür değişiklik yapılması gerekir: OLE görsel düzenlemeyi desteklemek için varolan kaynaklarda yapılan değişiklikler ve yerinde etkinleştirme için kullanılan yeni kaynakların eklenmesi. Kapsayıcı uygulamanızı oluşturmak için uygulama sihirbazını kullanırsanız, bu adımlar sizin için yapılır, ancak bazı özelleştirme gerektirebilir.
+Kapsayıcı uygulamalarında iki tür değişiklik yapılması gerekir: OLE görsel düzenlemesini ve yerinde etkinleştirme için kullanılan yeni kaynakların eklenmesini desteklemek için mevcut kaynaklarda yapılan değişiklikler. Kapsayıcı uygulamanızı oluşturmak için uygulama Sihirbazı 'nı kullanırsanız, bu adımlar sizin için yapılır ancak bazı özelleştirmeler gerektirebilir.
 
-Uygulama sihirbazını kullanmazsanız, OCLIENT'a bakmak isteyebilirsiniz. RC, bu değişikliklerin nasıl uygulandığını görmek için OCLIENT örnek uygulaması için kaynak komut dosyası. MFC OLE örneği [OCLIENT'a](../overview/visual-cpp-samples.md)bakın.
+Uygulama Sihirbazı 'nı kullanmıyorsanız, OCLIENT 'a bakmak isteyebilirsiniz. RC, bu değişikliklerin nasıl uygulandığını görmek için OCLIENT örnek uygulamasına yönelik kaynak betiği. Bkz. MFC OLE örnek [Oclient](../overview/visual-cpp-samples.md).
 
-Bu makalede ele alınan konular şunlardır:
+Bu makalede ele alınan konular şunları içerir:
 
-- [Konteyner Menü Eklemeleri](#_core_container_menu_additions)
+- [Kapsayıcı menüsü eklemeleri](#_core_container_menu_additions)
 
-- [Hızlandırıcı Tablo Eklemeleri](#_core_container_application_accelerator_table_additions)
+- [Hızlandırıcı tablo eklemeleri](#_core_container_application_accelerator_table_additions)
 
-- [String Tablo Eklemeleri](#_core_string_table_additions_for_container_applications)
+- [Dize tablosu eklemeleri](#_core_string_table_additions_for_container_applications)
 
-## <a name="container-menu-additions"></a><a name="_core_container_menu_additions"></a>Konteyner Menü Eklemeleri
+## <a name="container-menu-additions"></a><a name="_core_container_menu_additions"></a>Kapsayıcı menüsü eklemeleri
 
-Edit menüsüne aşağıdaki öğeleri eklemeniz gerekir:
+Düzenleme menüsüne aşağıdaki öğeleri eklemeniz gerekir:
 
 |Öğe|Amaç|
 |----------|-------------|
-|**Yeni Nesne Ekle**|Belgeye bağlantılı veya katıştılı bir öğe eklemek için OLE Insert Object iletişim kutusunu açar.|
-|**Bağlantıyı Yapıştır**|Panodaki öğeye bağlantı yıtaşarak belgeye yapıştırır.|
-|**OLE Fiili**|Seçili öğenin birincil fiilini çağırır. Bu menü öğesinin metni, seçili öğenin birincil fiilini yansıtacak şekilde değişir.|
-|**Bağlantılar**|Varolan bağlantılı öğeleri değiştirmek için OLE Edit Bağlantıları iletişim kutusunu açar.|
+|**Yeni nesne Ekle**|Belgeye bağlantılı veya katıştırılmış bir öğe eklemek için OLE nesne Ekle iletişim kutusunu açar.|
+|**Bağlantıyı Yapıştır**|Panodaki öğenin bağlantısını belgeye yapıştırır.|
+|**OLE fiili**|Seçilen öğenin birincil fiilini çağırır. Bu menü öğesinin metni, seçilen öğenin birincil fiilini yansıtacak şekilde değişir.|
+|**Bağlantılar**|Varolan bağlantılı öğeleri değiştirmek için OLE düzenleme bağlantıları iletişim kutusunu açar.|
 
-Bu makalede listelenen değişikliklere ek olarak, kaynak dosyanız AFXOLECL içermelidir. Microsoft Hazırlık Sınıfı Kitaplığı uygulaması için gerekli olan RC. Yeni Nesne Ekle tek gerekli menü ektir. Diğer öğeler eklenebilir, ancak burada listelenenler en yaygın olanlardır.
+Bu makalede listelenen değişikliklere ek olarak, kaynak dosyanız AFXOLECL içermelidir. RC, Microsoft Foundation Class Kitaplığı uygulama için gereklidir. Yeni nesne Ekle, tek gerekli menü eklemedir. Diğer öğeler eklenebilir, ancak burada listelenenler en yaygın olanlardır.
 
-İçerdeki öğelerin yerinde etkinleştirmesini desteklemek istiyorsanız, kapsayıcı uygulamanız için yeni bir menü oluşturmanız gerekir. Bu menü, dosyalar açıkken kullanılan aynı Dosya menüsü ve Pencere açılır menülerinden oluşur, ancak aralarında iki ayırıcı bulunur. Bu ayırıcılar, sunucu (bileşen) öğesinin (uygulamanın) etkinleştirildiğinde menülerini nereye yerleştirmesi gerektiğini belirtmek için kullanılır. Bu menü birleştirme tekniği hakkında daha fazla bilgi için [Menüler ve Kaynaklar: Menü Birleştirme'ye](../mfc/menus-and-resources-menu-merging.md)bakın.
+Kapsanan öğelerin yerinde etkinleştirilmesini desteklemek istiyorsanız, kapsayıcı uygulamanız için yeni bir menü oluşturmalısınız. Bu menü, dosyalar açıkken aynı dosya menüsünden ve pencere açılır menülerinden oluşur, ancak aralarında iki ayırıcı yer alır. Bu ayırıcılar, sunucu (bileşen) öğesinin (uygulama) yerinde etkinleştirildiğinde menülerini Nereye yerleşeceğini belirtmek için kullanılır. Bu menü birleştirme tekniği hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: menü birleştirme](menus-and-resources-menu-merging.md).
 
-## <a name="container-application-accelerator-table-additions"></a><a name="_core_container_application_accelerator_table_additions"></a>Konteyner Uygulama Hızlandırıcı Tablo Eklemeleri
+## <a name="container-application-accelerator-table-additions"></a><a name="_core_container_application_accelerator_table_additions"></a>Kapsayıcı uygulama Hızlandırıcısı tablo eklemeleri
 
-Yerinde etkinleştirme destekliyorsanız, kapsayıcı uygulamasının hızlandırıcı tablosu kaynaklarında küçük değişiklikler yapılması gerekir. İlk değişiklik, kullanıcının yerinde düzenleme modunu iptal etmek için kaçış tuşuna (ESC) basmasına olanak tanır. Ana hızlandırıcı tablosuna aşağıdaki girişi ekleyin:
+Yerinde etkinleştirmeyi destekliyorsanız bir kapsayıcı uygulamasının Hızlandırıcı tablo kaynaklarında küçük değişiklikler yapmanız gerekir. İlk değişiklik, kullanıcının yerinde Düzenle modunu iptal etmek için kaçış tuşuna (ESC) basışını sağlar. Ana Hızlandırıcı tablosuna aşağıdaki girişi ekleyin:
 
-|Kimlik|Anahtar|Tür|
+|ID|Anahtar|Tür|
 |--------|---------|----------|
-|ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY**|
+|ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VıRTKEY**|
 
-İkinci değişiklik, yerinde etkinleştirme için oluşturulan yeni menü kaynağına karşılık gelen yeni bir hızlandırıcı tablosu oluşturmaktır. Bu tablo, yukarıdaki VK_ESCAPE girişine ek olarak Dosya ve Pencere menüleri için girişlere sahiptir. Aşağıdaki örnek, MFC örnek [CONTAINER'ta](../overview/visual-cpp-samples.md)yerinde etkinleştirme için oluşturulan hızlandırıcı tablosudur:
+İkinci değişiklik, yerinde etkinleştirme için oluşturulan yeni menü kaynağına karşılık gelen yeni bir Hızlandırıcı tablosu oluşturmaktır. Bu tabloda, yukarıdaki VK_ESCAPE girdinin yanı sıra dosya ve pencere menüleri için girişler bulunur. Aşağıdaki örnek, MFC örnek [kapsayıcısında](../overview/visual-cpp-samples.md)yerinde etkinleştirme için oluşturulan Hızlandırıcı tablosudur:
 
-|Kimlik|Anahtar|Tür|
+|ID|Anahtar|Tür|
 |--------|---------|----------|
-|ID_FILE_NEW|CTRL+N|**VIRTKEY**|
-|ID_FILE_OPEN|CTRL+O|**VIRTKEY**|
-|ID_FILE_SAVE|CTRL+S|**VIRTKEY**|
-|ID_FILE_PRINT|CTRL+P|**VIRTKEY**|
-|ID_NEXT_PANE|VK_F6|**VIRTKEY**|
-|ID_PREV_PANE|SHIFT+VK_F6|**VIRTKEY**|
-|ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY**|
+|ID_FILE_NEW|CTRL + N|**VıRTKEY**|
+|ID_FILE_OPEN|CTRL+O|**VıRTKEY**|
+|ID_FILE_SAVE|CTRL+S|**VıRTKEY**|
+|ID_FILE_PRINT|CTRL + P|**VıRTKEY**|
+|ID_NEXT_PANE|VK_F6|**VıRTKEY**|
+|ID_PREV_PANE|SHıFT + VK_F6|**VıRTKEY**|
+|ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VıRTKEY**|
 
-## <a name="string-table-additions-for-container-applications"></a><a name="_core_string_table_additions_for_container_applications"></a>Kapsayıcı Uygulamaları için String Tablo Eklemeleri
+## <a name="string-table-additions-for-container-applications"></a><a name="_core_string_table_additions_for_container_applications"></a>Kapsayıcı uygulamaları için dize tablosu eklemeleri
 
-Kapsayıcı uygulamaları için dize tablolarındaki değişikliklerin [çoğu, Kapsayıcı Menü Eklemeleri'nde](#_core_container_menu_additions)belirtilen ek menü öğelerine karşılık gelir. Her menü öğesi görüntülendiğinde durum çubuğunda görüntülenen metni verirler. Örnek olarak, uygulama sihirbazı oluşturur dize tablo girişleri şunlardır:
+Kapsayıcı uygulamalarına yönelik dize tablolarında yapılan değişikliklerin çoğu [kapsayıcı menüsü eklemeleri](#_core_container_menu_additions)bölümünde bahsedilen ek menü öğelerine karşılık gelir. Her menü öğesi görüntülenirken durum çubuğunda görünen metni sağlarlar. Örnek olarak, Uygulama Sihirbazının oluşturduğu dize tablosu girdileri aşağıda verilmiştir:
 
-|Kimlik|Dize|
+|ID|Dize|
 |--------|------------|
-|IDP_OLE_INIT_FAILED|OLE başlatma başarısız oldu. OLE kitaplıklarının doğru sürüm olduğundan emin olun.|
-|IDP_FAILED_TO_CREATE|Nesne oluşturmak için başarısız oldu. Nesnenin sistem kayıt defterine girilen emin olun.|
+|IDP_OLE_INIT_FAILED|OLE başlatması başarısız oldu. OLE kitaplıklarının doğru sürümde olduğundan emin olun.|
+|IDP_FAILED_TO_CREATE|Nesne oluşturulamadı. Nesnenin sistem kayıt defterine girildiğinden emin olun.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)<br/>
-[Menüler ve Kaynaklar: Sunucu Ekleme](../mfc/menus-and-resources-server-additions.md)
+[Menüler ve kaynaklar (OLE)](menus-and-resources-ole.md)<br/>
+[Menüler ve Kaynaklar: Sunucu Ekleme](menus-and-resources-server-additions.md)

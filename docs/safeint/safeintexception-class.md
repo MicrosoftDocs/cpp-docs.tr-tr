@@ -11,21 +11,21 @@ helpviewer_keywords:
 - SafeIntException class
 - SafeIntException, constructor
 ms.assetid: 88bef958-1f48-4d55-ad4f-d1f9581a293a
-ms.openlocfilehash: e118d7e3cce47ebb93cef16319a8fc45aab1118b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8149a5e1216e26fafc1e0cd4a489cdad0551607c
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81349953"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84615416"
 ---
 # <a name="safeintexception-class"></a>SafeIntException Sınıfı
 
-Sınıf, `SafeInt` `SafeIntException` matematiksel bir işlemin neden tamamlanamayacağını belirlemek için kullanır.
+`SafeInt`Sınıfı, `SafeIntException` bir matematik işleminin neden tamamlanamadığına ilişkin olarak ' i kullanır.
 
 > [!NOTE]
-> Bu kitaplığın en son sürümü [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt).
+> Bu kitaplığın en son sürümü konumunda bulunur [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt) .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 class SafeIntException;
@@ -35,13 +35,13 @@ class SafeIntException;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Adı                                                    | Açıklama
+Name                                                    | Açıklama
 ------------------------------------------------------- | ------------------------------------
 [SafeIntException::SafeIntException](#safeintexception) | Bir `SafeIntException` nesnesi oluşturur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-[SafeInt sınıfı](../safeint/safeint-class.md) `SafeIntException` sınıfı kullanan tek sınıftır.
+[SafeInt sınıfı](safeint-class.md) , sınıfını kullanan tek sınıftır `SafeIntException` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -49,11 +49,11 @@ Adı                                                    | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** safeint.h
+**Üstbilgi:** SafeInt. h
 
-**Ad alanı:** msl::yardımcı programlar
+**Ad alanı:** MSL:: Utilities
 
-## <a name="safeintexceptionsafeintexception"></a><a name="safeintexception"></a>SafeIntException::SafeIntException
+## <a name="safeintexceptionsafeintexception"></a><a name="safeintexception"></a>SafeIntException:: SafeIntException
 
 Bir `SafeIntException` nesnesi oluşturur.
 
@@ -67,12 +67,12 @@ SafeIntException(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kod*<br/>
-[içinde] Oluşan hatayı açıklayan numaralandırılmış bir veri değeri.
+*kodudur*<br/>
+'ndaki Oluşan hatayı açıklayan bir numaralandırılmış veri değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Kod* için olası değerler Safeint.h dosyasında tanımlanır. Kolaylık sağlamak için, olası değerler de burada listelenir.
+*Kod* için olası değerler SafeInt. h dosyasında tanımlanmıştır. Kolaylık sağlaması için, olası değerler de burada listelenmiştir.
 
 - `SafeIntNoError`
 - `SafeIntArithmeticOverflow`

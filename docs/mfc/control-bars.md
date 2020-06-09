@@ -14,58 +14,58 @@ helpviewer_keywords:
 - CToolBar class [MFC], control bars
 - CStatusBar class [MFC], control bars
 ms.assetid: 31831910-3d23-4d70-9e71-03cc02f01ec4
-ms.openlocfilehash: ceae20c89d9a6d3f4393f838b3594938107785f5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a2d3683b744493bb5566456b9e1358c1ddc418d4
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81353578"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84615971"
 ---
 # <a name="control-bars"></a>Denetim Çubukları
 
-"Denetim çubuğu" araç çubukları, durum çubukları ve iletişim çubukları için genel addır. MFC `CToolBar`sınıfları `CDialogBar` `COleResizeBar`, `CStatusBar` `CReBar` , , , ve sınıf [CControlBar](../mfc/reference/ccontrolbar-class.md)türetilmiştir , hangi ortak işlevselliği uygular.
+"Denetim çubuğu", araç çubuklarının, durum çubuklarının ve iletişim çubuklarının genel adıdır. MFC sınıfları,,, `CToolBar` `CStatusBar` `CDialogBar` `COleResizeBar` ve `CReBar` kendi ortak işlevlerini uygulayan [CControlBar](reference/ccontrolbar-class.md)sınıfından türet.
 
-Denetim çubukları, kullanıcıların seçenekleri seçebileceği, komutları yürütebileceği veya program bilgilerini alabilecekleri denetim satırlarını görüntüleyen pencerelerdir. Denetim çubukları türleri araç çubuklarını, iletişim çubuklarını ve durum çubuklarını içerir.
+Denetim çubukları, kullanıcıların seçenek belirleyip, komutları yürütebileceği veya program bilgilerini alabileceği denetim satırlarını görüntüleyen bir Windows. Denetim çubuğu türleri araç çubukları, İletişim çubukları ve durum çubuklarını içerir.
 
-- Araç çubukları, [ctoolbar](../mfc/reference/ctoolbar-class.md) sınıfında
+- Araç çubukları, [CToolBar](reference/ctoolbar-class.md) sınıfında
 
-- Durum çubukları, [CStatusBar](../mfc/reference/cstatusbar-class.md) sınıfında
+- Durum çubukları, [CStatusBar](reference/cstatusbar-class.md) sınıfı
 
-- [CDialogBar](../mfc/reference/cdialogbar-class.md) sınıfında iletişim çubukları
+- İletişim çubukları, [CDialogBar](reference/cdialogbar-class.md) sınıfı
 
-- Rebars, [crebar](../mfc/reference/crebar-class.md) sınıfında
+- Rebar, sınıf [ekibi](reference/crebar-class.md)
 
 > [!IMPORTANT]
-> MFC sürüm 4.0 itibariyle, araç çubukları, durum çubukları ve araç ipuçları, MFC'ye özgü önceki uygulama yerine *comctl32.dll'de* uygulanan sistem işlevselliği kullanılarak uygulanır. MFC sürüm 6.0, `CReBar`aynı zamanda comctl32.dll işlevselliğini sarar, eklendi.
+> MFC sürüm 4,0, araç çubukları, durum çubukları ve araç ipuçları, MFC 'ye özgü önceki uygulama yerine *Comctl32. dll* ' de uygulanan sistem işlevleri kullanılarak uygulanır. MFC sürüm 6,0 ' de, `CReBar` Comctl32. dll işlevini de sarmalanmış.
 
-Denetim çubuğu türlerine kısa girişler takip eder. Daha fazla bilgi için aşağıdaki bağlantılara bakın.
+Denetim çubuğu türlerine ilişkin kısa tanıtımları takip edin. Daha fazla bilgi için aşağıdaki bağlantılara bakın.
 
 ## <a name="control-bars"></a>Denetim Çubukları
 
-Denetim çubukları, hızlı, tek adımlı komut eylemleri sağlayarak programın kullanılabilirliğini büyük ölçüde artırır. Sınıf, `CControlBar` tüm araç çubuklarının, durum çubuklarının ve iletişim çubuklarının ortak işlevselliğini sağlar. `CControlBar`denetim çubuğunu ana çerçeve penceresinde konumlandırma işlevini sağlar. Denetim çubuğu genellikle bir üst çerçeve penceresinin alt penceresi olduğundan, çerçeve penceresinin istemci görünümüne veya MDI istemcisine "kardeş" olur. Denetim çubuğu nesnesi, kendisini konumlandırmak için üst penceresinin istemci dikdörtgeni hakkındaki bilgileri kullanır. Ardından, istemci görünümünün veya MDI istemci penceresinin istemci penceresinin geri kalanını doldurması için üst öğenin kalan istemci penceresi dikdörtgenini değiştirir.
+Denetim çubukları, hızlı, tek adımlı komut eylemleri sağlayarak programın kullanılabilirliğini büyük ölçüde geliştirir. Sınıfı, `CControlBar` tüm araç çubuklarının, durum çubuklarının ve iletişim çubuklarının ortak işlevlerini sağlar. `CControlBar`Denetim çubuğunu üst çerçeve penceresinde konumlandırma işlevlerini sağlar. Bir denetim çubuğu genellikle üst çerçeve penceresinin alt bir pencere olduğundan, çerçeve penceresinin istemci görünümü veya MDI istemcisine bir "eşdüzey" olur. Bir denetim çubuğu nesnesi kendi üst penceresinin istemci dikdörtgeniyle ilgili bilgileri kullanarak kendisini konumlandırır. Daha sonra, istemci görünümü veya MDI istemcisi penceresinin istemci penceresinin geri kalanını doldurması için üst öğenin kalan istemci pencere dikdörtgenini değiştirir.
 
 > [!NOTE]
-> Denetim çubuğundaki bir düğmede **KOMUT** veya **UPDATE_COMMAND_UI** işleyicisi yoksa, çerçeve düğmeyi otomatik olarak devre dışı kılabilir.
+> Denetim çubuğundaki bir düğmenin bir **komut** veya **UPDATE_COMMAND_UI** işleyicisi yoksa, çerçeve otomatik olarak düğmeyi devre dışı bırakır.
 
 ## <a name="toolbars"></a>Araç Çubukları
 
-Araç çubuğu, komutları gerçekleştiren bir sıra bitmapped düğmeleri görüntüleyen bir denetim çubuğudur. Araç çubuğu düğmesine basMak menü öğesi seçmeye eşdeğerdir; menü öğesi araç çubuğu düğmesiyle aynı kİmliğe sahipse, menü öğesine eşlenen aynı işleyiciyi çağırır. Düğmeler düğme, radyo düğmeleri veya onay kutuları gibi görünecek ve olacak şekilde yapılandırılabilir. Araç çubuğu genellikle çerçeve penceresinin üst tarafına hizalanır, ancak MFC araç çubuğu ana penceresinin herhangi bir tarafına "dock" yapabilir veya kendi mini çerçeve penceresinde yüzebilir. Bir araç çubuğu da "yüzebilir" ve boyutunu değiştirebilir ve bir fare ile sürükleyin. Kullanıcı fareyi araç çubuğunun düğmeleri üzerinde hareket ettikçe araç ipuçları da görüntülenebilir. Araç ipucu, düğmenin amacını kısaca açıklayan küçük bir açılır penceredir.
+Araç çubuğu, komutları yürüten biteşlenmiş düğmelerin bir satırını görüntüleyen bir denetim çubuğudur. Bir araç çubuğu düğmesine basmak, bir menü öğesi seçmeye eşdeğerdir; menü öğesi araç çubuğu düğmesi ile aynı KIMLIĞE sahipse, bir menü öğesiyle eşlenmiş aynı işleyiciyi çağırır. Düğmeler görüntülenecek ve pushbutton, radyo düğmeleri veya onay kutuları olarak davranacak şekilde yapılandırılabilir. Bir araç çubuğu genellikle bir çerçeve penceresinin üst kısmına hizalanır, ancak MFC araç çubuğu kendi üst penceresinin herhangi bir tarafına "yuvalanabilir" veya kendi mini çerçeve penceresinde float. Bir araç çubuğu ayrıca "float" olabilir ve boyutunu değiştirebilir ve fareyle sürükleyebilirsiniz. Bir araç çubuğu, Kullanıcı fareyi araç çubuğu düğmelerinin üzerine taşırken araç ipuçlarını da gösterebilir. Araç ipucu, düğmenin amacını kısaca açıklayan küçük bir açılan pencere penceresidir.
 
 > [!NOTE]
-> MFC sürüm 4.0 itibariyle, [cToolBar](../mfc/reference/ctoolbar-class.md) sınıfı Windows araç çubuğu ortak denetimini kullanır. A `CToolBar` bir [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)içerir. Ancak, eski araç çubukları hala desteklenir. Makaleye bakın [Araç Çubukları](../mfc/mfc-toolbar-implementation.md).
+> MFC sürüm 4,0 itibariyle, sınıf [CToolBar](reference/ctoolbar-class.md) , Windows araç çubuğu ortak denetimini kullanır. Bir `CToolBar` [CToolBarCtrl](reference/ctoolbarctrl-class.md)içerir. Ancak, daha eski araç çubukları hala desteklenmektedir. Bkz. Makale [araç çubukları](mfc-toolbar-implementation.md).
 
 ## <a name="status-bars"></a>Durum Çubukları
 
-Durum çubuğu, metin çıktısı bölmeleri veya "göstergeler" içeren bir denetim çubuğudur. Çıktı bölmeleri genellikle ileti satırları ve durum göstergeleri olarak kullanılır. İleti satırı örnekleri, MFC Uygulama Sihirbazı tarafından oluşturulan varsayılan durum çubuğunun en sol bölmesinde seçili menüyü veya araç çubuğu komutunu kısaca açıklayan komut yardım iletisi satırlarını içerir. Durum göstergesi örnekleri scroll LOCK, NUM LOCK ve diğer tuşları içerir. Durum çubukları genellikle çerçeve penceresinin altına hizalanır. Bkz. [cStatusBar](../mfc/reference/cstatusbar-class.md) ve sınıf [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md).
+Durum çubuğu, metin çıkış bölmelerini veya "göstergeleri" içeren bir denetim çubuğudur. Çıkış bölmeleri genellikle ileti satırları ve durum göstergeleri olarak kullanılır. İleti satırı örnekleri, MFC Uygulama Sihirbazı tarafından oluşturulan varsayılan durum çubuğunun en sol bölmesinde seçilen menü veya araç çubuğu komutunu kısaca açıklayan komut Yardım iletisi satırlarını içerir. Durum göstergesi örnekleri, SCROLL LOCK, NUM LOCK ve diğer anahtarları içerir. Durum çubukları genellikle bir çerçeve penceresinin altına hizalanır. Bkz. sınıf [CStatusBar](reference/cstatusbar-class.md) ve [CStatusBarCtrl](reference/cstatusbarctrl-class.md)sınıfı.
 
 ## <a name="dialog-bars"></a>İletişim Kutusu Çubukları
 
-İletişim çubuğu, modeless iletişim kutusu işlevselliği ile bir iletişim şablonu kaynağı dayalı bir denetim çubuğudur. İletişim çubukları Windows, özel veya ActiveX denetimleri içerebilir. Bir iletişim kutusunda olduğu gibi, kullanıcı denetimler arasında sekme olabilir. İletişim çubukları çerçeve penceresinin üst, alt, sol veya sağ tarafına hizalanabilir ve kendi çerçeve penceresinde de yüzdürülebilir. Bkz. sınıf [CDialogBar](../mfc/reference/cdialogbar-class.md).
+İletişim çubuğu, kalıcı olmayan iletişim kutusu işlevselliğiyle iletişim kutusu şablonu kaynağını temel alan bir denetim çubuğudur. İletişim çubukları Windows, özel veya ActiveX denetimleri içerebilir. İletişim kutusunda olduğu gibi, Kullanıcı denetimler arasında sekme oluşturabilir. İletişim çubukları, bir çerçeve penceresinin üst, alt, sol veya sağ tarafına hizalanabilir ve ayrıca kendi çerçeve penceresinde de kaydırılmış olabilir. Bkz. sınıf [CDialogBar](reference/cdialogbar-class.md).
 
-## <a name="rebars"></a>Geri çubuklar
+## <a name="rebars"></a>Yeniden çubukları
 
-[Demir çubuğu,](../mfc/using-crebarctrl.md) demir denetimleri için yerleştirme, düzen, durum ve kalıcılık bilgilerini sağlayan bir denetim çubuğudur. Bir demir çubuğu nesnesi, düzenleme kutuları, araç çubukları ve liste kutuları da dahil olmak üzere genellikle diğer denetimler, çeşitli alt pencereler içerebilir. Bir çubuk nesnesi alt pencerelerini belirli bir bit eşlemi üzerinde görüntüleyebilir. Kavrayıcı çubuğunu tıklatarak veya sürükleyerek otomatik olarak veya el ile yeniden boyutlandırılabilir. Bkz. sınıf [CReBar](../mfc/reference/crebar-class.md).
+[Rebar](using-crebarctrl.md) , Rebar denetimleri için yerleştirme, düzen, durum ve kalıcılık bilgileri sağlayan bir denetim çubuğudur. Bir Rebar nesnesi, düzenleme kutuları, araç çubukları ve liste kutuları dahil olmak üzere çeşitli alt Windows, genellikle diğer denetimleri içerebilir. Bir Rebar nesnesi, alt pencerelerini belirtilen bir bit eşlem üzerinde görüntüleyebilir. Bu, kavrayıcı çubuğunu tıklatarak veya sürükleyerek otomatik olarak veya el ile yeniden boyutlandırılabilir. Bkz. sınıf [ekibi çubuğu](reference/crebar-class.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı Arabirimi Elemanları](../mfc/user-interface-elements-mfc.md)
+[Kullanıcı arabirimi öğeleri](user-interface-elements-mfc.md)

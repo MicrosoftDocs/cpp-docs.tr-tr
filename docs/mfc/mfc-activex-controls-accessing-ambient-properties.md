@@ -1,60 +1,60 @@
 ---
-title: 'MFC ActiveX denetimleri: Ortam özelliklerine erişme'
+title: 'MFC ActiveX Denetimleri: Ortam Özelliklerine Erişme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], accessing ambient properties
 - properties [MFC], accessing ambient
 ms.assetid: fdc9db29-e6b0-45d2-a879-8bd60e2058a7
-ms.openlocfilehash: 585ec8720a654bbcb728330d70ddb914f2543e41
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e5c78c9943f8baeadcc1198ee8c96f2023ac0215
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62239745"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625442"
 ---
-# <a name="mfc-activex-controls-accessing-ambient-properties"></a>MFC ActiveX denetimleri: Ortam özelliklerine erişme
+# <a name="mfc-activex-controls-accessing-ambient-properties"></a>MFC ActiveX Denetimleri: Ortam Özelliklerine Erişme
 
-Bu makalede, bir ActiveX denetimini denetim kapsayıcısının ortam özelliklerine nasıl erişebilir açıklanmaktadır.
+Bu makalede, bir ActiveX denetiminin denetim kapsayıcısının çevresel özelliklerine nasıl erişebileceği açıklanır.
 
-Bir denetimi kapsayıcının ortam özellikleri erişerek kapsayıcısı hakkında bilgi edinebilirsiniz. Bu özellikler, kapsayıcının arka plan rengi, kapsayıcı şu anda kullanıcı modunda veya tasarımcı modunda olup gibi kapsayıcı ve işletimsel özelliklerine tarafından kullanılan geçerli yazı tipi gibi görsel özelliklerini ortaya çıkarır. Bir denetimin görünümünü ve davranışını gömülü belirli kapsayıcıya olarak uyarlamak için ortam özellikleri kullanabilirsiniz. Ancak, bir denetim hiçbir zaman kapsayıcısıyla herhangi belirli bir ortam özelliği desteklediğini varsaymanız gerekir. Aslında, bazı kapsayıcıları herhangi bir ortam özelliklerine hiç desteklemeyebilir. Bir çevresel özelliğe olmaması durumunda, bir denetim makul bir varsayılan değere varsaymanız gerekir.
+Bir Denetim kapsayıcının çevresel özelliklerine erişerek kapsayıcısı hakkında bilgi alabilir. Bu özellikler, kapsayıcının arka plan rengi, kapsayıcı tarafından kullanılan geçerli yazı tipi ve kapsayıcının Kullanıcı modu ya da tasarımcı modunda olup olmadığı gibi işletimsel özellikler gibi görsel özellikleri sunar. Bir denetim, görünüm ve davranışını gömülü olduğu belirli bir kapsayıcıya uyarlamak için çevresel özellikleri kullanabilir. Ancak, bir Denetim kapsayıcının belirli bir çevresel özelliği desteklediğini asla varsaymamalıdır. Aslında bazı kapsayıcılar hiçbir çevresel özelliği desteklemeyebilir. Çevresel Özellik yokluğunda denetim, makul bir varsayılan değeri varsaymalıdır.
 
-Bir çevresel özelliğe erişmek için çağrı yapmak [COleControl::GetAmbientProperty](../mfc/reference/colecontrol-class.md#getambientproperty). Bu işlev, ortam özelliği için gönderme kimliği (dosya OLECTL. ilk parametre olarak bekliyor. H gönderme kimlikleri için standart bir ortam özellikler kümesini tanımlar).
+Bir çevresel özelliğe erişmek için [Coelcontrol:: Getambentproperty](reference/colecontrol-class.md#getambientproperty)' a bir çağrı yapın. Bu işlev, ortam özelliğinin dağıtım KIMLIĞINI ilk parametre olarak bekler (OLECTL dosyası. H standart çevresel özellikler kümesi için dağıtım kimliklerini tanımlar).
 
-Parametreleri `GetAmbientProperty` işlevi olan dağıtım kimliği, beklenen özellik türü ve bellek işaretçisi gösteren bir değişken etiket değeri yere yönlendirileceksiniz. Bu işaretçinin başvurduğu veri türü, değişken etikete bağlı olarak değişir. İşlev döndürür **TRUE** kapsayıcı özelliğini destekliyorsa, aksi halde döndürür **FALSE**.
+`GetAmbientProperty`İşlevin parametreleri, DAĞıTıM kimliğidir, beklenen özellik türünü belirten bir varyant etiketi ve değerin döndürülmesi gereken bir bellek işaretçisi. Bu işaretçinin başvurduğu verilerin türü, varyant etiketine göre değişir. Kapsayıcı özelliği destekliyorsa, işlev **true** değerini döndürür, aksi takdirde **false**döndürür.
 
-Aşağıdaki kod örneğinde "Kullanıcı modu." adlı ortam özelliğin değerini alır. Özelliği varsayılan değerine kapsayıcı tarafından desteklenmiyor, **TRUE** varsayılır:
+Aşağıdaki kod örneği, "Kullanıcı adı" adlı çevresel özelliğin değerini edinir. Özelliği kapsayıcı tarafından desteklenmiyorsa, varsayılan **true** değeri varsayılır:
 
-[!code-cpp[NVC_MFC_AxUI#30](../mfc/codesnippet/cpp/mfc-activex-controls-accessing-ambient-properties_1.cpp)]
+[!code-cpp[NVC_MFC_AxUI#30](codesnippet/cpp/mfc-activex-controls-accessing-ambient-properties_1.cpp)]
 
-Size kolaylık sağlamak için `COleControl` birçok yaygın olarak kullanılan ortam özelliklerine erişme ve özelliklerini mevcut olmadığı durumlarda uygun varsayılanlara döndürmek için yardımcı işlevleri sağlar. Bu yardımcı işlevleri aşağıdaki gibidir:
+Kolaylık olması için, `COleControl` yaygın olarak kullanılan çevresel özelliklerden birçoğuna erişen ve özellikler kullanılabilir olmadığında uygun Varsayılanları döndüren yardımcı işlevler sağlar. Bu yardımcı işlevler aşağıdaki gibidir:
 
-- [COleControl::AmbientBackColor](../mfc/reference/colecontrol-class.md#ambientbackcolor)
+- [Coelcontrol:: AmbientBackColor](reference/colecontrol-class.md#ambientbackcolor)
 
-- [AmbientDisplayName](../mfc/reference/colecontrol-class.md#ambientdisplayname)
+- [AmbientDisplayName](reference/colecontrol-class.md#ambientdisplayname)
 
-- [AmbientFont](../mfc/reference/colecontrol-class.md#ambientfont)
+- [AmbientFont](reference/colecontrol-class.md#ambientfont)
 
     > [!NOTE]
-    >  Arayan çağırmalıdır `Release( )` üzerinde döndürülen yazı tipi.
+    >  Çağıran `Release( )` , döndürülen yazı tipiyle çağırmalıdır.
 
-- [AmbientForeColor](../mfc/reference/colecontrol-class.md#ambientforecolor)
+- [AmbientForeColor](reference/colecontrol-class.md#ambientforecolor)
 
-- [AmbientLocaleID](../mfc/reference/colecontrol-class.md#ambientlocaleid)
+- [AmbientLocaleID](reference/colecontrol-class.md#ambientlocaleid)
 
-- [AmbientScaleUnits](../mfc/reference/colecontrol-class.md#ambientscaleunits)
+- [AmbientScaleUnits](reference/colecontrol-class.md#ambientscaleunits)
 
-- [AmbientTextAlign](../mfc/reference/colecontrol-class.md#ambienttextalign)
+- [AmbientTextAlign](reference/colecontrol-class.md#ambienttextalign)
 
-- [AmbientUserMode](../mfc/reference/colecontrol-class.md#ambientusermode)
+- [AmbientUserMode](reference/colecontrol-class.md#ambientusermode)
 
-- [AmbientUIDead](../mfc/reference/colecontrol-class.md#ambientuidead)
+- [AmbientUIDead](reference/colecontrol-class.md#ambientuidead)
 
-- [AmbientShowHatching](../mfc/reference/colecontrol-class.md#ambientshowhatching)
+- [AmbientShowHatching](reference/colecontrol-class.md#ambientshowhatching)
 
-- [AmbientShowGrabHandles](../mfc/reference/colecontrol-class.md#ambientshowgrabhandles)
+- [AmbientShowGrabHandles](reference/colecontrol-class.md#ambientshowgrabhandles)
 
-(Bazı eylem kapsayıcının), bir ortam özelliğinin değeri değiştiğinde `OnAmbientPropertyChanged` denetimin üye işlevi çağrılır. Böyle bir bildirim işlemek için bu üye işlevini geçersiz kılar. Parametresi için `OnAmbientPropertyChanged` etkilenen ortam özelliğinin dağıtım kimliğidir. Bu dağıtım kimliği değerini gösteren bir veya daha fazla ortam özelliklerine değişti, DISPID_UNKNOWN olabilir ancak hangi özellikleri etkilenmiştir bilgileri kullanılamıyor.
+Bir ortam özelliğinin değeri değişirse (kapsayıcının bazı eylemleri aracılığıyla), `OnAmbientPropertyChanged` denetimin üye işlevi çağırılır. Bu tür bir bildirimi işlemek için bu üye işlevini geçersiz kılın. Parametresi, `OnAmbientPropertyChanged` etkilenen çevresel özelliğin DAĞıTıM kimliğidir. Bu dağıtım KIMLIĞININ değeri, bir veya daha fazla çevresel özelliklerin değiştiğini gösteren DISPID_UNKNOWN olabilir, ancak hangi özelliklerin etkilendiğine ilişkin bilgi kullanılamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
+[MFC ActiveX denetimleri](mfc-activex-controls.md)

@@ -8,27 +8,27 @@ helpviewer_keywords:
 - derived classes [MFC], functions often overridden
 - document classes [MFC], functions often overridden
 ms.assetid: e6a198e0-9799-43c0-83c5-04174d8b532c
-ms.openlocfilehash: 5998d5707eb741be0e8ac270f6ac5ce77a9ff8d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 399230446977636cc8769efe32b8f86fad466b83
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153274"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84616110"
 ---
 # <a name="deriving-a-document-class-from-cdocument"></a>CDocument'ten Belge Sınıfı Türetme
 
-Belgeler, içerir ve uygulamanızın verilerini yönetin. MFC Uygulama Sihirbazı tarafından sağlanan belge sınıfını kullanmak için aşağıdakileri yapmanız gerekir:
+Belgeler, uygulamanızın verilerini içerir ve yönetir. MFC Uygulama Sihirbazı tarafından sağlanan belge sınıfını kullanmak için aşağıdakileri yapmanız gerekir:
 
-- Öğesinden bir sınıf türetin `CDocument` her tür belgeyi için.
+- `CDocument`Her belge türü için bir sınıf türetirsiniz.
 
 - Her belgenin verilerini depolamak için üye değişkenleri ekleyin.
 
-- Geçersiz kılma `CDocument`'s `Serialize` belge sınıfınızdaki üye işlevi. `Serialize` Yazar ve belge verilerini ve diskten okur.
+- `CDocument` `Serialize` Belge sınıfınızın üye işlevini geçersiz kılın. `Serialize`belgenin verilerini diske ve diske yazar ve okur.
 
-## <a name="other-document-functions-often-overridden"></a>Sık sık geçersiz kılınan diğer belge işlevleri
+## <a name="other-document-functions-often-overridden"></a>Diğer belge Işlevleri genellikle geçersiz kılındı
 
-Diğer geçersiz kılmak isteyebilirsiniz `CDocument` üye işlevleri. Özellikle, genellikle geçersiz kılmak ihtiyacınız olacak [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) ve [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) belgenin veri üyeleri başlatılamadı ve [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) yok etmek için dinamik olarak ayrılan verileri. Geçersiz kılınabilir üyeleri hakkında daha fazla bilgi için bkz. [CDocument](../mfc/reference/cdocument-class.md) içinde *MFC başvurusu*.
+Diğer üye işlevlerini de geçersiz kılmak isteyebilirsiniz `CDocument` . Özellikle, dinamik olarak ayrılan verileri yok etmek için belgenin veri üyelerini ve [DeleteContents](reference/cdocument-class.md#deletecontents) 'i başlatmak üzere [OnNewDocument](reference/cdocument-class.md#onnewdocument) ve [OnOpenDocument](reference/cdocument-class.md#onopendocument) 'yi geçersiz kılmanız gerekir. Geçersiz kılınabilir Üyeler hakkında daha fazla bilgi için *MFC başvurusu*Içindeki sınıf [CDocument](reference/cdocument-class.md) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belgeleri Kullanma](../mfc/using-documents.md)
+[Belgeleri kullanma](using-documents.md)

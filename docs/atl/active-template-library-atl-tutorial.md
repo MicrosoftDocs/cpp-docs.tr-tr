@@ -1,6 +1,6 @@
 ---
 title: Etkin Şablon Kitaplığı (ATL) Eğitmen
-description: Microsoft kullanarak bir ActiveX denetimi oluşturma C++ ve Etkin Şablon Kütüphanesi.
+description: Microsoft C++ ve etkin şablon kitaplığı kullanarak bir ActiveX denetimi oluşturun.
 ms.custom: get-started-article
 ms.date: 05/03/2019
 helpviewer_keywords:
@@ -10,35 +10,35 @@ helpviewer_keywords:
 - tutorials [ATL]
 - ATL, tutorials
 ms.assetid: f921a121-09c8-4812-9317-e15b2f1471fa
-ms.openlocfilehash: ae336c0192214261d61792715353fc54b8b37fba
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: ea94cf061a3222ed03d1efcc3bb12d1ad027c26b
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221317"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84616676"
 ---
 # <a name="active-template-library-atl-tutorial"></a>Etkin Şablon Kitaplığı (ATL) Eğitmen
 
-ATL, verimli, esnek ve basit denetimler oluşturma işlemini basitleştirmek üzere tasarlanmıştır. Bu öğreticide, birçok ATL ve COM temelleri gösteren bir ActiveX denetimini oluşturulmasını adım yol gösterir.
+ATL, verimli, esnek ve hafif denetimler oluşturma işlemini basitleştirmek için tasarlanmıştır. Bu öğreticide, çok sayıda ATL ve COM temelleri gösteren bir ActiveX denetimi oluşturma konusunda size yol gösterir.
 
-Bu öğreticideki adımları uygulayarak bir daire ve dolu bir Çokgen çizen bir ATL projesine kontrolün nasıl eklendiği öğreneceksiniz. Ardından Çokgen olması ve denetimin güncelleştirme özelliği değiştiğinde için çizim kodu oluşturma kaç yüz belirtmek için bir özellik ekler. Denetimin ardından olaylara yanıt sağlamak için bazı VBScript kullanarak bir Web sayfasında görüntülenir.
+Bu öğreticiyi izleyerek, bir denetimin bir daire ve doldurulmuş Çokgen çizen bir ATL projesine nasıl ekleneceğini öğreneceksiniz. Ardından, çokgenin kaç kenar olacağını göstermek ve özellik değiştiğinde denetimi güncelleştirmek için çizim kodu oluşturmak üzere bir özellik ekleyeceksiniz. Daha sonra bu denetim, olaylara yanıt vermek için bazı VBScript kullanılarak bir Web sayfasında görüntülenir.
 
-Öğreticiyi yedi adımlarına ayrılmıştır. Sonraki adımları daha önce tamamlanan görevlere bağlı olarak sırayla her bir adım gerçekleştirmeniz gerekir. Başlamadan önce belirli bilgisayarınızdaki bir ActiveX bileşeni kaydetmek için gerekli ayrıcalıklara sahip olduğunuzu onaylamanız. Terminal Hizmetleri bağlantısı üzerinden Visual Studio .NET çalıştırıyorsanız, bu genellikle yalnızca bir konudur.
+Öğretici yedi adıma bölünmüştür. Sonraki adımlar daha önce tamamlanmış görevlere bağlı olduğundan, her adımı sırayla gerçekleştirmeniz gerekir. Başlamadan önce, belirli bir bilgisayarda bir ActiveX bileşenini kaydetmek için gerekli ayrıcalıklara sahip olduğunu onaylamanız gerekir. Bu, genellikle bir Terminal Hizmetleri bağlantısı üzerinden Visual Studio .NET çalıştırıyorsanız bir konudur.
 
-- [1. Adım: Projeyi oluşturma](../atl/creating-the-project-atl-tutorial-part-1.md)
+- [1. Adım: projeyi oluşturma](creating-the-project-atl-tutorial-part-1.md)
 
-- [2. Adım: Projenize bir denetim ekleme](../atl/adding-a-control-atl-tutorial-part-2.md)
+- [2. Adım: projenize denetim ekleme](adding-a-control-atl-tutorial-part-2.md)
 
-- [3. adım. Denetiminiz için bir özellik ekleme](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md)
+- [3. adım. Denetime özellik ekleme](adding-a-property-to-the-control-atl-tutorial-part-3.md)
 
-- [4. Adım: Denetiminizin çizim kodunu değiştirme](../atl/changing-the-drawing-code-atl-tutorial-part-4.md)
+- [4. Adım: denetiminizin çizim kodunu değiştirme](changing-the-drawing-code-atl-tutorial-part-4.md)
 
-- [5. Adım: Olay ekleme](../atl/adding-an-event-atl-tutorial-part-5.md)
+- [5. Adım: olay ekleme](adding-an-event-atl-tutorial-part-5.md)
 
-- [6. Adım: Özellik sayfası ekleme](../atl/adding-a-property-page-atl-tutorial-part-6.md)
+- [6. Adım: Özellik sayfası ekleme](adding-a-property-page-atl-tutorial-part-6.md)
 
-- [7. Adım: Denetimi Web sayfasına koyma](../atl/putting-the-control-on-a-web-page-atl-tutorial-part-7.md)
+- [7. Adım: denetiminizi bir Web sayfasına koyma](putting-the-control-on-a-web-page-atl-tutorial-part-7.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../atl/active-template-library-atl-concepts.md)
+[Kavramlar](active-template-library-atl-concepts.md)

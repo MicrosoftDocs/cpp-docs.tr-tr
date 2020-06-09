@@ -11,60 +11,60 @@ helpviewer_keywords:
 - painting classes [MFC]
 - output classes [MFC]
 ms.assetid: 35fd6435-a38e-42c6-a3fa-cd6f39370fc3
-ms.openlocfilehash: 1d76570e7bfd4ce587b3803235394ec5406d30b2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b15f5034604f9d6b67574288140b79b144692478
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410206"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84615356"
 ---
 # <a name="output-device-context-classes"></a>Çıktı (Cihaz Bağlamı) Sınıfları
 
-Bu sınıfların cihaz bağlamlarında kullanılabilir Windows farklı türde kapsüller.
+Bu sınıflar, Windows 'da bulunan farklı cihaz bağlamlarının türlerini kapsülleyebilirsiniz.
 
-Aşağıdaki sınıflar çoğu Windows cihaz bağlamı için bir tanıtıcı kapsüller. Bir cihaz bağlamı bir cihazın bir görüntü veya yazıcı gibi çizim öznitelikleri hakkında bilgi içeren bir Windows nesnesidir. Tüm çizim çağrıları, bir cihaz bağlamındaki nesne ile yapılır. Türetilen sınıflar ek `CDC` Windows Meta dosyası da dahil olmak üzere, özel bir cihaz bağlamı işlevselliğini kapsüller.
+Aşağıdaki sınıfların çoğu bir Windows cihaz bağlamına yönelik bir tanıtıcıyı kapsülleyin. Cihaz bağlamı, bir cihazın görüntü veya yazıcı gibi çizim öznitelikleri hakkında bilgi içeren bir Windows nesnesidir. Tüm çizim çağrıları bir cihaz bağlamı nesnesi aracılığıyla yapılır. `CDC`Windows meta dosyaları için destek de dahil olmak üzere, özel cihaz bağlamı işlevselliğini kapsülten türetilmiş ek sınıflar.
 
-[CDC](../mfc/reference/cdc-class.md)<br/>
-Cihaz bağlamları için temel sınıf. Tüm görüntü erişmek için doğrudan ve yazıcılar gibi nondisplay bağlamlarda erişmek için kullanılır.
+[CDC](reference/cdc-class.md)<br/>
+Cihaz bağlamları için temel sınıf. Tüm ekranda erişmek ve yazıcılar gibi görüntüleme bağlamlarına erişmek için doğrudan kullanılır.
 
-[CPaintDC](../mfc/reference/cpaintdc-class.md)<br/>
-Kullanılan bir görüntü bağlamı `OnPaint` windows üye işlevleri. Otomatik olarak çağıran `BeginPaint` yapı üzerinde ve `EndPaint` etme.
+[CPaintDC](reference/cpaintdc-class.md)<br/>
+`OnPaint`Windows 'un üye işlevlerinde kullanılan bir görüntüleme bağlamı. `BeginPaint`Oluşturma ve yok etme üzerinde otomatik olarak çağırır `EndPaint` .
 
-[CClientDC](../mfc/reference/cclientdc-class.md)<br/>
-Windows istemci alanları görüntüleme bağlamı. Örneğin, fare olaylara anında bir yanıt çizmek için kullanılır.
+[CClientDC](reference/cclientdc-class.md)<br/>
+Windows 'un istemci alanlarının görüntüleme bağlamı. Örneğin, fare olaylarına anında yanıt çekmek için kullanılır.
 
-[CWindowDC](../mfc/reference/cwindowdc-class.md)<br/>
-Hem istemci hem de istemci olmayan alanları dahil olmak üzere tüm windows görüntüleme bağlamı.
+[CWindowDC](reference/cwindowdc-class.md)<br/>
+Tüm Windows için, hem istemci hem de istemci olmayan alanların bulunduğu bir görüntüleme bağlamı.
 
-[CMetaFileDC](../mfc/reference/cmetafiledc-class.md)<br/>
-Windows Meta dosyası için bir cihaz bağlamı. Bir Windows Meta dosyası bir görüntü oluşturmak için yeniden grafik cihaz arabirimi (GDI) komutları dizisini içerir. Üye işlevleri için yapılan çağrıları bir `CMetaFileDC` meta dosyasının içine kaydedilir.
+[CMetaFileDC](reference/cmetafiledc-class.md)<br/>
+Windows meta dosyaları için bir cihaz bağlamı. Windows meta dosyası, bir görüntü oluşturmak için yeniden yürütülebilecek bir grafik cihaz arabirimi (GDI) komutları dizisi içerir. Öğesinin üye işlevlerine yapılan çağrılar `CMetaFileDC` bir meta dosyasına kaydedilir.
 
 ## <a name="related-classes"></a>İlgili sınıflar
 
 [CPoint](../atl-mfc-shared/reference/cpoint-class.md)<br/>
-Koordinat (x, y) çiftleri tutar.
+Koordinat (x, y) çiftlerini barındırır.
 
 [CSize](../atl-mfc-shared/reference/csize-class.md)<br/>
-Uzaklık, göreli konumlarını veya eşleştirilmiş değerleri tutar.
+Uzaklığı, göreli konumları veya eşleştirilmiş değerleri tutar.
 
 [CRect](../atl-mfc-shared/reference/crect-class.md)<br/>
-Dikdörtgen alanları koordinatlarını içerir.
+Dikdörtgen alanların koordinatlarını tutar.
 
-[CRgn](../mfc/reference/crgn-class.md)<br/>
-Elips, çokgen veya düzensiz bir alan bir pencere içinde düzenlemek için bir GDI bölgesi kapsüller. Kırpma üye işlevler sınıfında ile birlikte kullanılan `CDC`.
+[CRgn](reference/crgn-class.md)<br/>
+Bir pencere içindeki elips, çokgen veya düzensiz bir alanı değiştirmek için bir GDI bölgesini kapsüller. Sınıfında kırpma üye işlevleriyle birlikte kullanılır `CDC` .
 
-[CRectTracker](../mfc/reference/crecttracker-class.md)<br/>
-Görüntüler ve yeniden boyutlandırma ve dikdörtgen nesneleri taşımak için kullanıcı arabirimi işler.
+[CRectTracker](reference/crecttracker-class.md)<br/>
+Dikdörtgen nesneleri yeniden boyutlandırmak ve taşımak için Kullanıcı arabirimini görüntüler ve işler.
 
-[CColorDialog](../mfc/reference/ccolordialog-class.md)<br/>
-Bir renk seçmek için bir standart iletişim kutusu sağlar.
+[CColorDialog](reference/ccolordialog-class.md)<br/>
+Renk seçmek için standart bir iletişim kutusu sağlar.
 
-[CFontDialog](../mfc/reference/cfontdialog-class.md)<br/>
-Standart iletişim kutusu, yazı tipi seçmek için sağlar.
+[CFontDialog](reference/cfontdialog-class.md)<br/>
+Yazı tipi seçmek için standart bir iletişim kutusu sağlar.
 
-[CPrintDialog](../mfc/reference/cprintdialog-class.md)<br/>
-Dosya yazdırma için standart bir iletişim kutusu sağlar.
+[CPrintDialog](reference/cprintdialog-class.md)<br/>
+Dosya yazdırmak için standart bir iletişim kutusu sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](class-library-overview.md)

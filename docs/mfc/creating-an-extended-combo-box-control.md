@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CComboBoxEx class [MFC], creating extended combo box controls
 - extended combo boxes [MFC], creating
 ms.assetid: a964267e-97b6-4e77-9f89-55bb5c68913f
-ms.openlocfilehash: 87e2e1cd3c29ba838a17c24ece4a89adda21db0c
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: 554085304f5330ac9cd99a5b814af26ce3a9c7e6
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907733"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84616279"
 ---
 # <a name="creating-an-extended-combo-box-control"></a>Genişletilmiş Birleşik Giriş Kutusu Denetimi Oluşturma
 
@@ -23,19 +23,19 @@ Genişletilmiş Birleşik giriş kutusu denetimi nasıl oluşturulur, denetimi b
 
 1. Genişletilmiş Birleşik giriş kutusu denetiminin Özellikler iletişim kutusunu kullanarak gereken stilleri belirtin.
 
-1. Denetim özelliğiyle [CComboBoxEx](../mfc/reference/ccomboboxex-class.md) türünde bir üye değişkeni eklemek Için [üye değişkeni Ekleme Sihirbazı](../ide/adding-a-member-variable-visual-cpp.md) ' nı kullanın. Bu üyeyi, üye işlevlerini çağırmak `CComboBoxEx` için kullanabilirsiniz.
+1. Denetim özelliğiyle [CComboBoxEx](reference/ccomboboxex-class.md) türünde bir üye değişkeni eklemek Için [üye değişkeni Ekleme Sihirbazı](../ide/adding-a-member-variable-visual-cpp.md) ' nı kullanın. Bu üyeyi, üye işlevlerini çağırmak için kullanabilirsiniz `CComboBoxEx` .
 
-1. İşlemek için gereken Genişletilmiş Birleşik giriş kutusu denetim bildirim iletilerinin iletişim sınıfındaki işleyici işlevlerini eşlemek için [sınıf Sihirbazı](reference/mfc-class-wizard.md) ' nı kullanın (bkz. [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md)).
+1. İşlemek için gereken Genişletilmiş Birleşik giriş kutusu denetim bildirim iletilerinin iletişim sınıfındaki işleyici işlevlerini eşlemek için [sınıf Sihirbazı](reference/mfc-class-wizard.md) ' nı kullanın (bkz. [iletileri işlevlere eşleme](reference/mapping-messages-to-functions.md)).
 
-1. [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)' da `CComboBoxEx` nesne için ek stiller ayarlayın.
+1. [OnInitDialog](reference/cdialog-class.md#oninitdialog)' da nesne için ek stiller ayarlayın `CComboBoxEx` .
 
 ### <a name="to-use-ccomboboxex-in-a-nondialog-window"></a>İletişim kutusu olmayan bir pencerede CComboBoxEx kullanmak için
 
 1. Görünümü veya pencere sınıfında denetimi tanımlayın.
 
-1. Denetimin üye [Oluştur](../mfc/reference/ctabctrl-class.md#create) işlevini, muhtemelen üst pencerenin [OnCreate](../mfc/reference/cwnd-class.md#oncreate) işleyici işlevi kadar erken bir şekilde [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate)içinde çağırın. Denetimin stillerini ayarlayın.
+1. Denetimin üye [Oluştur](reference/ctabctrl-class.md#create) işlevini, muhtemelen üst pencerenin [OnCreate](reference/cwnd-class.md#oncreate) işleyici işlevi kadar erken bir şekilde [OnInitialUpdate](reference/cview-class.md#oninitialupdate)içinde çağırın. Denetimin stillerini ayarlayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CComboBoxEx Kullanma](../mfc/using-ccomboboxex.md)<br/>
-[Denetimler](../mfc/controls-mfc.md)
+[CComboBoxEx Kullanma](using-ccomboboxex.md)<br/>
+[Denetimler](controls-mfc.md)

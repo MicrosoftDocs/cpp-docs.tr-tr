@@ -10,60 +10,60 @@ helpviewer_keywords:
 - optimization [MFC], asynchronous downloading across Internet
 - Internet [MFC], asynchronous downloading
 ms.assetid: 418b0c64-0046-4dae-8118-c9c762b5822e
-ms.openlocfilehash: e7a7ea51bca134e965747db8aac7f8a62822c9eb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 74add1ad894f883c67eefab888898c0abf518b83
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165846"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625028"
 ---
 # <a name="asynchronous-monikers-on-the-internet"></a>Internet'teki Zaman Uyumsuz Adlar
 
-Internet uygulama tasarımı için yeni yaklaşımlar nedeniyle, yavaş ağ erişimi gerektirir. Uygulamalar, zaman uyumsuz olarak kullanıcı arabirimi bekletilen önlemek için ağ erişimi gerçekleştirmeniz gerekir. MFC sınıfı [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md) dosyaları indirme için zaman uyumsuz destek sağlar.
+Internet, yavaş ağ erişimi nedeniyle uygulama tasarımında yeni yaklaşımlar gerektirir. Uygulamalar, kullanıcı arabiriminden kaçınılması için ağ erişimi zaman uyumsuz olarak gerçekleştirmelidir. MFC sınıfı [CAsyncMonikerFile](reference/casyncmonikerfile-class.md) , dosyaları indirmek için zaman uyumsuz destek sağlar.
 
-Zaman uyumsuz adlar ile Internet üzerinden zaman uyumsuz olarak indirmek ve bit eşlemler gibi büyük nesneler ve VRML nesnelerin aşamalı işleme sağlamak için COM uygulamanızı genişletebilirsiniz. Zaman uyumsuz adlar kullanıcı arabiriminin yanıt engellemeden yüklenmek üzere Internet üzerindeki bir dosya ya da ActiveX denetimi özelliğini etkinleştirin.
+Zaman uyumsuz bilinen adlar sayesinde COM uygulamanızı Internet üzerinden zaman uyumsuz olarak indirmek ve bit eşlemler ve VRML nesneleri gibi büyük nesnelerin aşamalı işlemesini sağlamak için genişletebilirsiniz. Zaman uyumsuz bilinen adlar bir ActiveX denetim özelliğini veya Internet üzerindeki bir dosyayı, Kullanıcı arabiriminin yanıtını engellemeden indirilebilecek şekilde etkinleştirir.
 
-## <a name="advantages-of-asynchronous-monikers"></a>Zaman uyumsuz adlar avantajları
+## <a name="advantages-of-asynchronous-monikers"></a>Zaman uyumsuz bilinen adların avantajları
 
-Zaman uyumsuz adlar için kullanabilirsiniz:
+Zaman uyumsuz bilinen adları şu şekilde kullanabilirsiniz:
 
-- Kod ve dosyaları engellemeden indirin.
+- Kodu ve dosyaları engellenmeden indirin.
 
-- ActiveX denetimlerindeki özellikler engellemeden indirin.
+- ActiveX denetimlerinde özellikleri engellenmeksizin indirin.
 
-- İndirme ilerleme bildirimleri alırsınız.
+- Yüklemenin ilerlemesini alma bildirimleri alın.
 
-- İlerleme ve hazır durumu bilgilerini izleyin.
+- İlerleme durumunu ve hazırlık durumu bilgilerini izleyin.
 
-- İlerleme durumu hakkında kullanıcıya durum bilgileri sağlar.
+- Kullanıcıya ilerleme durumuyla ilgili durum bilgilerini sağlayın.
 
-- Karşıdan yükleme dilediğiniz zaman iptal izin verin.
+- Kullanıcının herhangi bir zamanda indirmeyi iptal edebilmesini sağlar.
 
-## <a name="mfc-classes-for-asynchronous-monikers"></a>MFC sınıfları için zaman uyumsuz adlar
+## <a name="mfc-classes-for-asynchronous-monikers"></a>Zaman uyumsuz adlar için MFC sınıfları
 
-[CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md) türetilir [CMonikerFile](../mfc/reference/cmonikerfile-class.md), hangi sırayla türetilmiş olan [COleStreamFile](../mfc/reference/colestreamfile-class.md). A `COleStreamFile` bir veri akışı; bir nesneyi temsil eder `CMonikerFile` nesnesini kullanan bir `IMoniker` verileri almak için ve bir `CAsyncMonikerFile` nesne mu bunu zaman uyumsuz olarak.
+[CAsyncMonikerFile](reference/casyncmonikerfile-class.md) , [CMonikerFile](reference/cmonikerfile-class.md)'den türetilir ve bu da [copastreamfile](reference/colestreamfile-class.md)öğesinden türetilir. Bir `COleStreamFile` nesne veri akışını temsil eder; bir `CMonikerFile` nesne, `IMoniker` verileri almak için bir kullanır ve bir `CAsyncMonikerFile` nesnesi bunu zaman uyumsuz olarak yapar.
 
-Zaman uyumsuz adlar, öncelikle Internet özellikli uygulamalar ve ActiveX denetimleri, dosya aktarımlarında duyarlı kullanıcı arabirimi sağlamak için kullanılır. Bu prime örneği kullanımıdır [CDataPathProperty](../mfc/reference/cdatapathproperty-class.md) ActiveX denetimleri için zaman uyumsuz özellikler sağlamak için.
+Zaman uyumsuz adlar öncelikle Internet etkin uygulamalar ve ActiveX denetimlerinde, dosya aktarımları sırasında yanıt veren bir kullanıcı arabirimi sağlamak için kullanılır. Bunun ana örneği, ActiveX denetimleri için zaman uyumsuz özellikler sağlamak üzere [CDataPathProperty](reference/cdatapathproperty-class.md) öğesinin kullanılması örneğidir.
 
-## <a name="mfc-classes-for-data-paths-in-activex-controls"></a>Veri yolları ActiveX denetimleri için MFC sınıfları
+## <a name="mfc-classes-for-data-paths-in-activex-controls"></a>ActiveX denetimlerinde veri yolları için MFC sınıfları
 
-MFC sınıfları `CDataPathProperty` ve [CCachedDataPathProperty](../mfc/reference/ccacheddatapathproperty-class.md) zaman uyumsuz olarak yüklenebilen ActiveX denetim özelliği uygular. Zaman uyumsuz özellikler, zaman uyumlu başlatma sonra yüklenir. Zaman uyumsuz ActiveX denetimleri, sürekli kullanılabilirlik yeni verilerin uzun özelliği değişimi sırasında belirtmek için bir geri çağırma.
+MFC sınıfları `CDataPathProperty` ve [CCachedDataPathProperty](reference/ccacheddatapathproperty-class.md) , zaman uyumsuz olarak yüklenebilecek ActiveX denetim özelliklerini uygular. Zaman uyumsuz özellikler, zaman uyumlu başlatma işleminden sonra yüklenir. Zaman uyumsuz ActiveX denetimleri, uzun bir özellik değişim işlemi sırasında yeni verilerin kullanılabilirliğini göstermek için sürekli olarak bir geri çağırma çağırır.
 
-`CDataPathProperty` türetilen `CAsyncMonikerFile`. `CCachedDataPathProperty` türetilen `CDataPathProperty`. Zaman uyumsuz özellikler, ActiveX denetimlerinde uygulamak için öğesinden bir sınıf türetin `CDataPathProperty` veya `CCachedDataPathProperty`ve geçersiz kılma [OnDataAvailable](../mfc/reference/casyncmonikerfile-class.md#ondataavailable) ve almak istediğiniz diğer bildirimleri.
+`CDataPathProperty`, öğesinden türetilir `CAsyncMonikerFile` . `CCachedDataPathProperty`, öğesinden türetilir `CDataPathProperty` . ActiveX denetimlerinize zaman uyumsuz özellikler uygulamak için, veya ' den bir sınıf türetirsiniz `CDataPathProperty` `CCachedDataPathProperty` ve [OnDataAvailable](reference/casyncmonikerfile-class.md#ondataavailable) almak istediğiniz diğer bildirimleri ve geçersiz kılın.
 
-#### <a name="to-download-a-file-using-asynchronous-monikers"></a>Zaman uyumsuz adlar kullanarak bir dosyayı indirmek için
+#### <a name="to-download-a-file-using-asynchronous-monikers"></a>Zaman uyumsuz bilinen adlar kullanarak bir dosyayı indirmek için
 
-1. Türetilen bir sınıf bildirme [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md).
+1. [CAsyncMonikerFile](reference/casyncmonikerfile-class.md)öğesinden türetilen bir sınıf bildirin.
 
-1. Geçersiz kılma [OnDataAvailable](../mfc/reference/casyncmonikerfile-class.md#ondataavailable) verileri görüntülemek için.
+1. Verileri göstermek için [OnDataAvailable](reference/casyncmonikerfile-class.md#ondataavailable) öğesini geçersiz kılın.
 
-1. Dahil olmak üzere diğer üye işlevlerini geçersiz kılma [OnProgress](../mfc/reference/casyncmonikerfile-class.md#onprogress), [OnStartBinding](../mfc/reference/casyncmonikerfile-class.md#onstartbinding), ve [OnStopBinding](../mfc/reference/casyncmonikerfile-class.md#onstopbinding).
+1. [OnProgress](reference/casyncmonikerfile-class.md#onprogress), [OnStartBinding](reference/casyncmonikerfile-class.md#onstartbinding)ve [OnStopBinding](reference/casyncmonikerfile-class.md#onstopbinding)dahil diğer üye işlevlerini geçersiz kılın.
 
-1. Bu sınıfın örneği bildirin ve URL'leri açmasına izin kullanın.
+1. Bu sınıfın bir örneğini bildirin ve URL 'Leri açmak için kullanın.
 
-Zaman uyumsuz olarak ActiveX denetiminde yükleme hakkında daha fazla bilgi için bkz: [Internet'te ActiveX denetimleri](../mfc/activex-controls-on-the-internet.md).
+ActiveX denetiminde zaman uyumsuz olarak indirme hakkında daha fazla bilgi için bkz. [Internet 'Teki ActiveX denetimleri](activex-controls-on-the-internet.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
-[MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
+[MFC Internet Programlama Görevleri](mfc-internet-programming-tasks.md)<br/>
+[MFC Internet Programlama Temelleri](mfc-internet-programming-basics.md)

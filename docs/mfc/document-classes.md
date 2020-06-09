@@ -6,49 +6,49 @@ f1_keywords:
 helpviewer_keywords:
 - document classes [MFC]
 ms.assetid: 4bf19b02-0a4f-4319-b68e-cddcba2705cb
-ms.openlocfilehash: a7034a99bfefe8f4c11cdf8f99dc4b0c31fac10a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 012d107d7bcc630c4bc02a9dc697172080787eac
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62219801"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84615799"
 ---
 # <a name="document-classes"></a>Belge Sınıfları
 
-Belge şablonu nesneleri tarafından oluşturulan belge sınıfı nesneleri uygulamanın verileri yönetin. Bir sınıf bu sınıflardan birine bir belgelerinizi derleyeceği.
+Belge şablonu nesneleri tarafından oluşturulan belge sınıfı nesneleri, uygulamanın verilerini yönetir. Bu sınıflardan birindeki belgeleriniz için bir sınıf türetirsiniz.
 
-Belge sınıfı nesneleri görünüm nesneleri ile etkileşim kurun. Nesneleri görüntüle penceresinin istemci alanını temsil eden, bir belgenin verilerini görüntülemek ve kullanıcıların onunla etkileşime girmesine izin. Belgeler ve görünümler tarafından bir belge şablonu nesnesi oluşturulur.
+Belge sınıfı nesneleri görünüm nesneleriyle etkileşime geçin. Nesneleri görüntüleme, bir pencerenin istemci alanını temsil eder, bir belgenin verilerini görüntüler ve kullanıcıların onunla etkileşime geçmesini sağlar. Belgeler ve görünümler bir belge şablonu nesnesi tarafından oluşturulur.
 
-[CDocument](../mfc/reference/cdocument-class.md)<br/>
-Uygulamaya özgü belgeleri için taban sınıf. Belge sınıfı veya sınıflarından türetilen `CDocument`.
+[CDocument](reference/cdocument-class.md)<br/>
+Uygulamaya özgü belgeler için temel sınıf. Belge sınıfınızı veya sınıflarınızı öğesinden türetirsiniz `CDocument` .
 
-[COleDocument](../mfc/reference/coledocument-class.md)<br/>
-Bileşik belge uygulaması, ek olarak temel kapsayıcı desteği kullanılır. Türetilen sınıflar için bir kapsayıcı olarak hizmet veren [Cdocıtem](../mfc/reference/cdocitem-class.md). Bu sınıfın temel sınıf olarak kullanılabilir kapsayıcı belgeleri ve temel sınıfı olan `COleServerDoc`.
+[Colet belgesi](reference/coledocument-class.md)<br/>
+Bileşik belge uygulamasının yanı sıra temel kapsayıcı desteği için de kullanılır. [CDocItem](reference/cdocitem-class.md)'dan türetilmiş sınıflar için bir kapsayıcı görevi görür. Bu sınıf, kapsayıcı belgeleri için temel sınıf olarak kullanılabilir ve için temel sınıftır `COleServerDoc` .
 
-[COleLinkingDoc](../mfc/reference/colelinkingdoc-class.md)<br/>
-Öğesinden türetilen bir sınıf `COleDocument` bağlamak için altyapı sağlar. Belge sınıfları için kapsayıcı uygulamalarınızı yerine bu sınıftan türetilmelidir `COleDocument` katıştırılmış nesnelere bağlantıları desteklemek istiyorsanız.
+[Cotalinkingdoc](reference/colelinkingdoc-class.md)<br/>
+Öğesinden türetilmiş bir sınıf `COleDocument` , bağlama için altyapıyı sağlar. Kapsayıcı uygulamalarınızın belge sınıflarını, ' ın `COleDocument` katıştırılmış nesne bağlantılarını desteklemesini istiyorsanız yerine bu sınıftan türetirsiniz.
 
-[CRichEditDoc](../mfc/reference/cricheditdoc-class.md)<br/>
-Zengin düzenleme denetimine OLE istemci öğeleri listesini tutar. İle kullanılan [CRichEditView](../mfc/reference/cricheditview-class.md) ve [Cricheditcntrıtem](../mfc/reference/cricheditcntritem-class.md).
+[CRichEditDoc](reference/cricheditdoc-class.md)<br/>
+Zengin düzenleme denetimindeki OLE istemci öğelerinin listesini tutar. [CRichEditView](reference/cricheditview-class.md) ve [Cricheditcntridıtem](reference/cricheditcntritem-class.md)ile kullanılır.
 
-[COleServerDoc](../mfc/reference/coleserverdoc-class.md)<br/>
-Sunucu uygulaması belge sınıfları için temel sınıf olarak kullanılır. `COleServerDoc` nesneleri sağlar sunucu desteği ile etkileşim aracılığıyla toplu [Coleserverıtem](../mfc/reference/coleserveritem-class.md) nesneleri. Görsel düzenleme özelliği, Sınıf Kitaplığı'nızın belge/görünüm mimarisi kullanılarak sağlanır.
+[Cotaserverdoc](reference/coleserverdoc-class.md)<br/>
+Sunucu-uygulama belge sınıfları için temel sınıf olarak kullanılır. `COleServerDoc`nesneler, [Copaserveritem](reference/coleserveritem-class.md) nesneleriyle etkileşimler aracılığıyla sunucu desteği toplu sağlar. Görsel düzen özelliği, sınıf kitaplığının belge/görünüm mimarisi kullanılarak sağlanır.
 
-[CHtmlEditDoc](../mfc/reference/chtmleditdoc-class.md)<br/>
-Sağladığı ile [CHtmlEditView](../mfc/reference/chtmleditview-class.md), MFC belge görüntüleme mimarisi bağlamında WebBrowser HTML düzenleme platformu işlevlerini.
+[CHtmlEditDoc](reference/chtmleditdoc-class.md)<br/>
+, [CHtmlEditView](reference/chtmleditview-class.md)Ile, MFC belge görünümü mimarisinin bağlamı IÇINDE WebBrowser HTML düzenlemesi platformunun işlevlerini sağlar.
 
 ## <a name="related-classes"></a>İlgili sınıflar
 
-Belge sınıfı nesneleri kalıcı olabilir — diğer bir deyişle, bunlar durumlarını bir depolama ortamına yazabilir ve geri okuyun. MFC sağlar `CArchive` kolaylaştırmak belgenin verilerini bir depolama ortamına aktarmak için sınıf.
+Belge sınıfı nesneleri kalıcı olabilir. başka bir deyişle, durumlarını bir depolama ortamına yazabilir ve geri okuyabilirler. MFC, `CArchive` belge verilerinin bir depolama ortamına aktarılmasını kolaylaştırmak için sınıfını sağlar.
 
-[CArchive](../mfc/reference/carchive-class.md)<br/>
-İle cooperates bir [CFile](../mfc/reference/cfile-class.md) kalıcı depolama için seri hale getirme nesnelerde uygulamak için nesne (bkz [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)).
+[CArchive](reference/carchive-class.md)<br/>
+Serileştirme yoluyla nesneler için kalıcı depolamayı uygulamak üzere bir [CFile](reference/cfile-class.md) nesnesiyle birlikte çalışır (bkz. [CObject:: Serialize](reference/cobject-class.md#serialize)).
 
-Belgeleri de OLE nesneleri içerebilir. `CDocItem` Sunucu ve istemci öğelerin temel sınıftır.
+Belgeler, OLE nesneleri de içerebilir. `CDocItem`, sunucunun ve istemci öğelerinin temel sınıfıdır.
 
-[Cdocıtem](../mfc/reference/cdocitem-class.md)<br/>
-Soyut taban sınıfı [Coleclientıtem](../mfc/reference/coleclientitem-class.md) ve [Coleserverıtem](../mfc/reference/coleserveritem-class.md). Sınıfından türetilen sınıfların nesnelerini `CDocItem` belge parçalarını temsil eder.
+[CDocItem](reference/cdocitem-class.md)<br/>
+[Colet Clienentidıtem](reference/coleclientitem-class.md) ve [Copaserverıtem](reference/coleserveritem-class.md)soyut temel sınıfı. Sınıfından türetilmiş sınıfların nesneleri `CDocItem` , belgelerin parçalarını temsil eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](class-library-overview.md)

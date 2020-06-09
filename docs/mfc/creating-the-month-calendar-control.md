@@ -6,12 +6,12 @@ helpviewer_keywords:
 - month calendar controls [MFC], creating
 - month calendar controls [MFC]
 ms.assetid: 185cc642-85e9-4365-8a4c-d90b75b010f7
-ms.openlocfilehash: 9e430a86c2ac08bde0f031a4c91b9ae5c6f570f3
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: 49d21bd4ce5aae23d5fc4c74567bc1c1d5a43570
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907499"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84616230"
 ---
 # <a name="creating-the-month-calendar-control"></a>Aylık Takvim Denetimi Oluşturma
 
@@ -23,19 +23,19 @@ Aylık Takvim denetimi, denetimi bir iletişim kutusunda kullanıp kullanmayaca�
 
 1. Aylık takvim denetiminin Özellikler iletişim kutusunu kullanarak gereken stilleri belirtin.
 
-1. Denetim özelliğiyle [CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md) türünde bir üye değişkeni eklemek Için [üye değişkeni Ekleme Sihirbazı 'nı](../ide/adding-a-member-variable-visual-cpp.md) kullanın. Bu üyeyi, üye işlevlerini çağırmak `CMonthCalCtrl` için kullanabilirsiniz.
+1. Denetim özelliğiyle [CMonthCalCtrl](reference/cmonthcalctrl-class.md) türünde bir üye değişkeni eklemek Için [üye değişkeni Ekleme Sihirbazı 'nı](../ide/adding-a-member-variable-visual-cpp.md) kullanın. Bu üyeyi, üye işlevlerini çağırmak için kullanabilirsiniz `CMonthCalCtrl` .
 
-1. İşlemek istediğiniz herhangi bir ay Takvim denetimi bildirim iletisi için İletişim sınıfındaki işleyici işlevlerini eşlemek için [sınıf sihirbazını](reference/mfc-class-wizard.md) kullanın (bkz. [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md)).
+1. İşlemek istediğiniz herhangi bir ay Takvim denetimi bildirim iletisi için İletişim sınıfındaki işleyici işlevlerini eşlemek için [sınıf sihirbazını](reference/mfc-class-wizard.md) kullanın (bkz. [iletileri işlevlere eşleme](reference/mapping-messages-to-functions.md)).
 
-1. [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)' da `CMonthCalCtrl` nesne için ek stiller ayarlayın.
+1. [OnInitDialog](reference/cdialog-class.md#oninitdialog)' da nesne için ek stiller ayarlayın `CMonthCalCtrl` .
 
 ### <a name="to-use-cmonthcalctrl-in-a-nondialog-window"></a>İletişim kutusu olmayan bir pencerede CMonthCalCtrl kullanma
 
 1. Görünümü veya pencere sınıfında denetimi tanımlayın.
 
-1. Denetimin üye [Oluştur](../mfc/reference/cmonthcalctrl-class.md#create) işlevini, büyük olasılıkla üst pencerenin [OnCreate](../mfc/reference/cwnd-class.md#oncreate) Handler işlevi (denetim Altsınıflama kullanıyorsanız) olarak [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate)içinde çağırın. Denetimin stillerini ayarlayın.
+1. Denetimin üye [Oluştur](reference/cmonthcalctrl-class.md#create) işlevini, büyük olasılıkla üst pencerenin [OnCreate](reference/cwnd-class.md#oncreate) Handler işlevi (denetim Altsınıflama kullanıyorsanız) olarak [OnInitialUpdate](reference/cview-class.md#oninitialupdate)içinde çağırın. Denetimin stillerini ayarlayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CMonthCalCtrl Kullanma](../mfc/using-cmonthcalctrl.md)<br/>
-[Denetimler](../mfc/controls-mfc.md)
+[CMonthCalCtrl Kullanma](using-cmonthcalctrl.md)<br/>
+[Denetimler](controls-mfc.md)

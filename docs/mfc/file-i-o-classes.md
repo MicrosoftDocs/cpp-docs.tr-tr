@@ -1,5 +1,5 @@
 ---
-title: Dosya g / Ç sınıfları
+title: Dosya g-ç sınıfları
 ms.date: 11/04/2016
 f1_keywords:
 - vc.classes.file
@@ -15,54 +15,54 @@ helpviewer_keywords:
 - stream classes [MFC]
 - memory file classes [MFC]
 ms.assetid: 92821c3f-d9e1-47f6-98c9-3b632d86e811
-ms.openlocfilehash: 914325ec56f0cae30c7293305496d65f358f2731
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2fcf4dfc1388df0df2bc25928ec8541486c6bb2d
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405813"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84615669"
 ---
 # <a name="file-io-classes"></a>Dosya G/Ç Sınıfları
 
-Bu sınıflar, geleneksel disk dosyaları, bellek içi dosyaları, etkin akışları ve Windows yuva için bir arabirim sağlar. Türetilen sınıfların tümü `CFile` ile kullanılan bir `CArchive` serileştirme gerçekleştirmek için nesne.
+Bu sınıflar, geleneksel disk dosyaları, bellek içi dosyalar, etkin akışlar ve Windows Yuvaları için bir arabirim sağlar. Öğesinden türetilen tüm sınıflar, `CFile` `CArchive` serileştirme gerçekleştirmek için bir nesneyle birlikte kullanılabilir.
 
-Aşağıdaki sınıflar, özellikle kullanıyorsanız `CArchive` ve `CFile`, kendi giriş/çıkış işleme yazma. Normalde bu sınıflarından gerekmez. Uygulama Çerçevesi, varsayılan uygulamalarını kullanırsanız **açık** ve **Kaydet** komutlarını **dosya** menü dosya g/ç işlemlerini ele alacak ( sınıfınıkullanarak`CArchive`) belgenizin geçersiz kılma sürece `Serialize` işlevi sağlamak için bir belge içeriğini nasıl serileştiren hakkında ayrıntıları. Dosya sınıfları ve seri hale getirme hakkında daha fazla bilgi için bkz [MFC'deki dosyalar](../mfc/files-in-mfc.md) ve makale [serileştirme](../mfc/serialization-in-mfc.md).
+Aşağıdaki sınıfları, özellikle `CArchive` ve `CFile` kendi giriş/çıkış işlelerinizi yazarsanız kullanın. Normalde bu sınıflardan türetmeniz gerekmez. Uygulama çerçevesini kullanıyorsanız, **Dosya** menüsündeki **Aç** ve **Kaydet** komutlarının varsayılan uygulamaları dosya g/ç 'yi (sınıfını kullanarak) işleyerek `CArchive` , belgenin `Serialize` işlevini bir belgenin nasıl seri hale getirip ilişkin ayrıntıları sağlamak üzere belgenizin işlevini geçersiz kılacaksınız. Dosya sınıfları ve serileştirme hakkında daha fazla bilgi için, [MFC 'deki](files-in-mfc.md) ve [serileştirme](serialization-in-mfc.md)makalesindeki makale dosyalarına bakın.
 
-[CFile](../mfc/reference/cfile-class.md)<br/>
-İkili disk dosyaları bir dosya arabirim sağlar.
+[CFile](reference/cfile-class.md)<br/>
+İkili disk dosyaları için bir dosya arabirimi sağlar.
 
-[CStdioFile](../mfc/reference/cstdiofile-class.md)<br/>
-Sağlar bir `CFile` metin modunda genellikle arabelleğe alınan akışa disk dosyalarına arabirimi.
+[CStdioFile](reference/cstdiofile-class.md)<br/>
+`CFile`Genellikle metin modunda, arabelleğe alınmış akış disk dosyaları için bir arabirim sağlar.
 
-[CMemFile](../mfc/reference/cmemfile-class.md)<br/>
-Sağlar bir `CFile` bellek içi dosyaları için arabirim.
+[CMemFile](reference/cmemfile-class.md)<br/>
+`CFile`Bellek içi dosyalar için bir arabirim sağlar.
 
-[CSharedFile](../mfc/reference/csharedfile-class.md)<br/>
-Sağlar bir `CFile` paylaşılan bellek içi dosyaları arabirimi.
+[CSharedFile](reference/csharedfile-class.md)<br/>
+`CFile`Paylaşılan bellek dosyaları için bir arabirim sağlar.
 
-[COleStreamFile](../mfc/reference/colestreamfile-class.md)<br/>
-COM kullanan `IStream` sağlamak için arabirimi `CFile` bileşik dosyalar için erişim.
+[Cotastreamfile](reference/colestreamfile-class.md)<br/>
+`IStream`Bileşik dosyalara erişim sağlamak IÇIN com arabirimini kullanır `CFile` .
 
-[CSocketFile](../mfc/reference/csocketfile-class.md)<br/>
-Sağlar bir `CFile` Windows yuva için arabirim.
+[CSocketFile](reference/csocketfile-class.md)<br/>
+Bir `CFile` Windows yuvasına arabirim sağlar.
 
 ## <a name="related-classes"></a>İlgili sınıflar
 
-[CArchive](../mfc/reference/carchive-class.md)<br/>
-İle cooperates bir `CFile` kalıcı depolama için seri hale getirme nesnelerde uygulamak için nesne (bkz [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)).
+[CArchive](reference/carchive-class.md)<br/>
+`CFile`Serileştirme yoluyla nesneler için kalıcı depolamayı uygulamak üzere bir nesneyle birlikte çalışır (bkz. [CObject:: serileştirme](reference/cobject-class.md#serialize)).
 
-[CArchiveException](../mfc/reference/carchiveexception-class.md)<br/>
-Arşiv özel durum.
+[CArchiveException](reference/carchiveexception-class.md)<br/>
+Bir arşiv özel durumu.
 
-[CFileException](../mfc/reference/cfileexception-class.md)<br/>
-Bir dosya odaklı özel durumu.
+[CFileException](reference/cfileexception-class.md)<br/>
+Dosya odaklı özel durum.
 
-[CFileDialog](../mfc/reference/cfiledialog-class.md)<br/>
-Standart iletişim kutusunu açmak veya dosyayı kaydetmek için sağlar.
+[CFileDialog](reference/cfiledialog-class.md)<br/>
+Dosya açmak veya kaydetmek için standart bir iletişim kutusu sağlar.
 
-[CRecentFileList](../mfc/reference/crecentfilelist-class.md)<br/>
-En son kullanılan (MRU) dosya listesi tutar.
+[CRecentFileList](reference/crecentfilelist-class.md)<br/>
+En son kullanılan (MRU) dosya listesini korur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](class-library-overview.md)

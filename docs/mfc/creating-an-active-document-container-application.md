@@ -8,59 +8,59 @@ helpviewer_keywords:
 - MFC COM, active document containment
 - applications [MFC], active document container
 ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
-ms.openlocfilehash: 965778fd5d17aa416b198c101edc3a445a39580b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 860a8531a96a0671c808dba13523b492026eafe0
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152949"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84616349"
 ---
 # <a name="creating-an-active-document-container-application"></a>Etkin Belge Kapsayıcı Uygulaması Oluşturma
 
-Etkin belge kapsayıcı uygulaması oluşturmanın en kolay ve en çok önerilen yolu MFC Uygulama Sihirbazı'nı kullanarak bir MFC EXE kapsayıcı uygulaması oluşturmak için ardından etkin belge kapsaması destekleyecek şekilde değiştirin.
+Etkin bir belge kapsayıcısı uygulaması oluşturmanın en basit ve en kolay yolu, MFC Uygulama Sihirbazı 'Nı kullanarak bir MFC EXE kapsayıcı uygulaması oluşturmaktır, ardından uygulamayı etkin belge kapsamayı destekleyecek şekilde değiştirmektir.
 
-#### <a name="to-create-an-active-document-container-application"></a>Etkin belge kapsayıcı uygulaması oluşturma
+#### <a name="to-create-an-active-document-container-application"></a>Etkin bir belge kapsayıcısı uygulaması oluşturmak için
 
-1. Gelen **dosya** menüsünde tıklatın **proje**gelen **yeni** alt.
+1. **Dosya** menüsünde, **Yeni** alt menüden **Proje**' ye tıklayın.
 
-1. Sol bölmeden tıklayın **Visual C++** proje türü.
+1. Sol bölmeden **Visual C++** proje türü ' ne tıklayın.
 
-1. Seçin **MFC uygulaması** sağ bölmesinde.
+1. Sağ bölmeden **MFC uygulaması** ' nı seçin.
 
-1. Projeyi adlandırın *MyProj*, tıklayın **Tamam**.
+1. Projeyi *myproj*olarak adlandırın, **Tamam**' a tıklayın.
 
-1. Seçin **bileşik belge desteği** sayfası.
+1. **Birleşik belge desteği** sayfasını seçin.
 
-1. Seçin **kapsayıcı** veya **kapsayıcı/tam sunucu** seçeneği.
+1. **Kapsayıcı** veya **kapsayıcı/tam sunucu** seçeneğini belirleyin.
 
-1. Seçin **etkin belge kapsayıcı** onay kutusu.
+1. **Etkin belge kapsayıcısı** onay kutusunu seçin.
 
 1. **Son**'a tıklayın.
 
-1. MFC Uygulama Sihirbazı uygulama ürettikten sonra Çözüm Gezgini'ni kullanarak aşağıdaki dosyaları açın:
+1. MFC Uygulama Sihirbazı uygulamayı oluşturmayı bitirdiğinde aşağıdaki dosyaları Çözüm Gezgini kullanarak açın:
 
-   - *MyProjview.cpp*
+   - *MyProjview. cpp*
 
-1. İçinde *MyProjview.cpp*, aşağıdaki değişiklikleri yapın:
+1. *MyProjview. cpp*içinde aşağıdaki değişiklikleri yapın:
 
-   - İçinde `CMyProjView::OnPreparePrinting`, işlev içeriğini aşağıdaki kodla değiştirin:
+   - İçinde `CMyProjView::OnPreparePrinting` , işlev içeriğini şu kodla değiştirin:
 
-     [!code-cpp[NVC_MFCDocView#56](../mfc/codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
+     [!code-cpp[NVC_MFCDocView#56](codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
 
-   `OnPreparePrinting` yazdırma desteği sağlar. Bu kodu değiştirir `DoPreparePrinting`, varsayılan yazdırma hazırlık olduğu.
+   `OnPreparePrinting`yazdırma desteği sağlar. Bu kod `DoPreparePrinting` , varsayılan yazdırma hazırlığı olan ' nin yerini alır.
 
-   Etkin belge kapsaması geliştirilmiş bir yazdırma düzeni sağlar:
+   Etkin belge kapsama, gelişmiş bir yazdırma düzeni sağlar:
 
-   - Etkin belgeyi ile ilk çağırabilirsiniz kendi `IPrint` arabirim ve, IOleCommandTarget komutunu söyleyin. Bu, kapsayıcı olan bir yazıcı üzerine kapsanan öğesinin görüntüsünü işlemek önceki OLE kapsayıcı farklıdır `CDC` nesne.
+   - İlk olarak etkin belgeyi `IPrint` arabiriminden çağırıp kendisini yazdırmasını söyleyebilirsiniz. Bu, kapsayıcının içerilen öğenin bir görüntüsünü yazıcı nesnesi üzerinde işlemesi gereken önceki OLE kapsamadan farklıdır `CDC` .
 
-   - Başarısız olursa, kendisi aracılığıyla yazdırmak için kapsanan öğe bildirmek, `IOleCommandTarget` arabirimi
+   - Bu başarısız olursa, içerilen öğenin kendi arabirimi aracılığıyla kendisini yazdırmasını söyleyin `IOleCommandTarget`
 
-   - Bu başarısız olursa, öğenin kendi işleme olun.
+   - Başarısız olursa, öğenin kendi işlemesini yapın.
 
-   Statik üye işlevleri `COleDocObjectItem::OnPrint` ve `COleDocObjectItem::OnPreparePrinting`, önceki kod içinde uygulandığı şekilde bu geliştirilmiş yazdırma düzeni tanıtıcı.
+   Statik üye işlevleri `COleDocObjectItem::OnPrint` ve `COleDocObjectItem::OnPreparePrinting` Önceki kodda uygulandığı gibi bu gelişmiş yazdırma düzenini işler.
 
-1. Herhangi bir uygulamasını ekleyin ve uygulamayı derleyin.
+1. Kendi uygulamasını ekleyin ve uygulamayı derleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Etkin Belge Kapsaması](../mfc/active-document-containment.md)
+[Etkin belge kapsama](active-document-containment.md)

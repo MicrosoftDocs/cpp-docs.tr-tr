@@ -7,34 +7,34 @@ helpviewer_keywords:
 - message maps [MFC], derived
 - derived message maps
 ms.assetid: 21829556-6e64-40c3-8279-fed85d99de77
-ms.openlocfilehash: fcdff67c57e932e414a2b61b28cd0498ab997c60
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0868b12720cfa338ab7275a358e065506adc11d1
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173588"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84615925"
 ---
 # <a name="derived-message-maps"></a>Türetilen İleti Eşlemeleri
 
-İşleme, bir sınıfın kendi ileti denetimi ileti sırasında harita ileti eşleme hikayeyi sonuna değil. Ne olur sınıfı `CMyView` (türetilen `CView`) sahip bir ileti için eşleşen giriş yok
+İleti işleme sırasında, bir sınıfın kendi ileti eşlemesini denetlemek ileti eşleme hikayesinin sonu değildir. Sınıfın `CMyView` (türetilmiş from `CView` ) bir ileti için eşleşen bir girişi yoksa ne olur
 
-Aklınızda `CView`, temel sınıfını `CMyView`, sırayla türetilmiş `CWnd`. Bu nedenle `CMyView` *olduğu* bir `CView` ve *olduğu* bir `CWnd`. Bu sınıfların her birinin kendi ileti eşlemesi var. "A hiyerarşisini görüntüle" Aşağıdaki sınıfların keep ancak hiyerarşi ilişkisi gösteren şekil aklınızda bir `CMyView` nesnedir tüm üç sınıf özelliklere sahip tek bir nesne.
+`CView`Öğesinin temel sınıfının `CMyView` sırasıyla türetildiğini aklınızda bulundurun `CWnd` . Bu `CMyView` *,* bir `CView` ve *is* ' dir `CWnd` . Bu sınıfların her biri kendi ileti eşlemesine sahiptir. Aşağıdaki şekil "bir görünüm hiyerarşisi" sınıfların hiyerarşik ilişkisini gösterir, ancak bir `CMyView` nesnenin üç sınıfın özelliklerine sahip tek bir nesne olduğunu aklınızda bulundurun.
 
-![Görünüm hiyerarşisini](../mfc/media/vc38621.gif "görünüm hiyerarşisi") <br/>
-Hiyerarşisini görüntüle
+![Bir görünümün hiyerarşisi](../mfc/media/vc38621.gif "Bir görünümün hiyerarşisi") <br/>
+Bir görünüm hiyerarşisi
 
-Böyle bir ileti sınıfı eşleştirilemiyor `CMyView`'s ileti eşlemesi, framework hemen kendi taban sınıfının ileti eşlemesi de arar. `BEGIN_MESSAGE_MAP` Makrosu ileti eşlemede başlangıcında, bağımsız değişkenler olarak iki sınıf adlarını belirtir:
+Bu nedenle, sınıfın ileti haritasında bir ileti eşleştirilemezse `CMyView` , çerçeve kendi temel sınıfının ileti haritasını da arar. `BEGIN_MESSAGE_MAP`İleti eşlemesinin başlangıcında makro, bağımsız değişkenleri olarak iki sınıf adı belirtir:
 
-[!code-cpp[NVC_MFCMessageHandling#2](../mfc/codesnippet/cpp/derived-message-maps_1.cpp)]
+[!code-cpp[NVC_MFCMessageHandling#2](codesnippet/cpp/derived-message-maps_1.cpp)]
 
-İlk bağımsız değişken ileti eşlemesi ait olduğu sınıfın adı. İkinci bağımsız değişkeni hemen temel sınıf ile bir bağlantı sağlar — `CView` burada — framework kendi ileti eşlemesi çok arama yapabilirsiniz.
+İlk bağımsız değişken, ileti eşlemesinin ait olduğu sınıfı adlandırır. İkinci bağımsız değişken, en hızlı temel sınıfla bir bağlantı sağlar — `CView` burada, çerçeve ileti eşlemesinde da arama yapabilir.
 
-Bir temel sınıfta sağlanan ileti işleyicileri, bu nedenle türetilmiş sınıf tarafından devralınır. Tüm işleyici üye işlevleri sanal yapmaya gerek kalmadan bu normal sanal üye işleve çok benzer.
+Bir temel sınıfta sunulan ileti işleyicileri, bu nedenle türetilmiş sınıf tarafından devralınır. Bu, tüm işleyici üye işlevlerini sanal hale getirmek gerekmeden normal sanal üye işlevlerine çok benzer.
 
-İletinin varsayılan işleme, işleyici yok herhangi bir temel sınıf ileti eşlemeleri bulunursa gerçekleştirilir. Bir komut iletisiyse framework sonraki komut hedefe yönlendirir. Standart bir Windows ileti ise, ileti için uygun bir varsayılan pencere yordamını geçirilir.
+Temel sınıf ileti eşlemlerinin hiçbirinde hiçbir işleyici bulunmazsa, varsayılan ileti işleme gerçekleştirilir. İleti bir komut ise, Framework onu bir sonraki komut hedefine yönlendirir. Standart bir Windows iletitiyse ileti, uygun varsayılan pencere yordamına geçirilir.
 
-İleti eşleme eşleşen hızlandırmak için aynı ileti yeniden alacağını olasılığı son eşleşmeleri ile framework önbelleğe alır. Bunun bir sonucu framework işlemleri iletileri oldukça etkili bir şekilde işlenmemiş ' dir. İleti eşlemeleri de alanı-sanal işlevler kullanan uygulamalar verimlidir.
+İleti eşleme eşleştirmesini hızlandırmak için çerçeve, en son eşleşmeleri aynı iletiyi yeniden alacak olasılığında önbelleğe alır. Bunun bir sonucu olarak, çerçeve işlenmemiş iletileri oldukça verimli bir şekilde işler. İleti haritaları Ayrıca sanal işlevleri kullanan uygulamalardan daha fazla alan sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'ün İleti Eşlemelerini Araması](../mfc/how-the-framework-searches-message-maps.md)
+[Çerçeve Ileti eşlemelerini nasıl arar](how-the-framework-searches-message-maps.md)

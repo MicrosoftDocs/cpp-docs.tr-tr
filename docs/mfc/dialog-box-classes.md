@@ -10,125 +10,125 @@ helpviewer_keywords:
 - common dialog classes [MFC]
 - tab dialog boxes
 ms.assetid: db75da23-4eff-4c6c-beae-79cf046fbce9
-ms.openlocfilehash: 5747e4450816b803f97ad5ff6338b9e01ad41bca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2399b27fc081dcc810277079729b0e62ef80d603
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394617"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84616946"
 ---
 # <a name="dialog-box-classes"></a>İletişim Kutusu Sınıfları
 
-Sınıf `CDialog` ve türetilmiş sınıflarının iletişim kutusu işlevselliğini kapsüller. Bir iletişim kutusu penceresinde, özel bir tür olduğundan `CDialog` türetilir `CWnd`. İletişim sınıflarından `CDialog` kullanın opening ya da dosya, yazdırma, yazı tipi veya renk seçme kaydetme gibi standart iletişim kutuları için genel iletişim kutusu sınıfları, arama ve değiştirme işlemi başlatılıyor veya çeşitli gerçekleştirme veya OLE ile ilgili işlemler.
+Sınıf `CDialog` ve türetilmiş sınıfları iletişim kutusu işlevselliğini Kapsüller. İletişim kutusu özel bir pencere türü olduğundan, `CDialog` öğesinden türetilir `CWnd` . İletişim kutusu sınıflarınızı bir `CDialog` dosya açma veya kaydetme, yazdırma, yazı tipi veya renk seçme, bir arama ve değiştirme işlemini başlatma veya OLE ile ilgili çeşitli işlemleri gerçekleştirme gibi standart iletişim kutuları için ortak iletişim kutusu sınıflarından birini kullanın veya kullanın.
 
-[CDialog](../mfc/reference/cdialog-class.md)<br/>
-Tüm iletişim kutularında, kalıcı ve kalıcı olmayan taban sınıf.
+[CDialog](reference/cdialog-class.md)<br/>
+Tüm iletişim kutuları için hem kalıcı hem de kalıcı olmayan temel sınıf.
 
-[CDataExchange](../mfc/reference/cdataexchange-class.md)<br/>
-İletişim kutusu veri değişimi ve doğrulaması bilgilerini sağlar.
+[CDataExchange](reference/cdataexchange-class.md)<br/>
+İletişim kutuları için veri değişimi ve doğrulama bilgilerini sağlar.
 
-## <a name="common-dialogs"></a>Ortak iletişim kutuları
+## <a name="common-dialogs"></a>Ortak Iletişim kutuları
 
-Bu iletişim kutusu sınıfları Windows ortak iletişim kutuları kapsüller. Bunlar, karmaşık iletişim kutularının kullanımı kolay uygulamalar sunar.
+Bu iletişim kutusu sınıfları Windows ortak iletişim kutularını kapsülle. Bunlar karmaşık iletişim kutularının kullanımı kolay uygulamalarını sağlar.
 
-[CCommonDialog](../mfc/reference/ccommondialog-class.md)<br/>
+[Ccommoniletişim kutusu](reference/ccommondialog-class.md)<br/>
 Tüm ortak iletişim kutuları için temel sınıf.
 
-[CFileDialog](../mfc/reference/cfiledialog-class.md)<br/>
-Standart iletişim kutusunu açmak veya dosyayı kaydetmek için sağlar.
+[CFileDialog](reference/cfiledialog-class.md)<br/>
+Dosya açmak veya kaydetmek için standart bir iletişim kutusu sağlar.
 
-[CColorDialog](../mfc/reference/ccolordialog-class.md)<br/>
-Bir renk seçmek için bir standart iletişim kutusu sağlar.
+[CColorDialog](reference/ccolordialog-class.md)<br/>
+Renk seçmek için standart bir iletişim kutusu sağlar.
 
-[CFontDialog](../mfc/reference/cfontdialog-class.md)<br/>
-Standart iletişim kutusu, yazı tipi seçmek için sağlar.
+[CFontDialog](reference/cfontdialog-class.md)<br/>
+Yazı tipi seçmek için standart bir iletişim kutusu sağlar.
 
-[CFindReplaceDialog](../mfc/reference/cfindreplacedialog-class.md)<br/>
-Arama ve değiştirme işlemi için bir standart iletişim kutusu sağlar.
+[CFindReplaceDialog](reference/cfindreplacedialog-class.md)<br/>
+Arama ve değiştirme işlemi için standart bir iletişim kutusu sağlar.
 
-[CPrintDialog](../mfc/reference/cprintdialog-class.md)<br/>
-Dosya yazdırma için standart bir iletişim kutusu sağlar.
+[CPrintDialog](reference/cprintdialog-class.md)<br/>
+Dosya yazdırmak için standart bir iletişim kutusu sağlar.
 
-[CPrintDialogEx](../mfc/reference/cprintdialogex-class.md)<br/>
-Bir Windows Print özellik sayfası sağlar.
+[CPrintDialogEx](reference/cprintdialogex-class.md)<br/>
+Bir Windows yazdırma özelliği sayfası sağlar.
 
-[CPageSetupDialog](../mfc/reference/cpagesetupdialog-class.md)<br/>
-Ayar ve yazdırma kenar boşluklarını değiştirmek için ek destek içeren Windows ortak Sayfa Yapısı iletişim kutusu tarafından sağlanan hizmetleri kapsüller.
+[CPageSetupDialog](reference/cpagesetupdialog-class.md)<br/>
+Windows ortak sayfa kurulumu iletişim kutusu tarafından sunulan hizmetleri, yazdırma kenar boşluklarını ayarlama ve değiştirme ile ilgili ek destek ile kapsüller.
 
-## <a name="ole-common-dialogs"></a>OLE ortak iletişim kutuları
+## <a name="ole-common-dialogs"></a>OLE ortak Iletişim kutuları
 
-OLE ortak iletişim kutuları çeşitli Windows için ekler. Bu sınıfların OLE ortak iletişim kutuları kapsüller.
+OLE, Windows 'a birkaç ortak iletişim kutusu ekler. Bu sınıflar OLE ortak iletişim kutularını kapsülleme.
 
-[COleDialog](../mfc/reference/coledialog-class.md)<br/>
-Tüm OLE iletişim kutuları için yaygın olarak görülen uygulamalar içeren için framework tarafından kullanılır. Kullanıcı arabirimi kategorideki tüm iletişim kutusu sınıfları bu temel sınıfından türetilir. `COleDialog` doğrudan kullanılamaz.
+[Colet Iletişim kutusu](reference/coledialog-class.md)<br/>
+Framework tarafından tüm OLE iletişim kutuları için ortak uygulamaları içerecek şekilde kullanılır. Kullanıcı arabirimi kategorisindeki tüm iletişim kutusu sınıfları bu temel sınıftan türetilir. `COleDialog`doğrudan kullanılamaz.
 
-[Coleınsertdialog](../mfc/reference/coleinsertdialog-class.md)<br/>
-Yeni OLE ekleme ya da bağlı öğeleri gömülü nesne Ekle iletişim kutusu, standart kullanıcı arabirimi görüntüler.
+[COleInsertDialog](reference/coleinsertdialog-class.md)<br/>
+Yeni OLE bağlantılı veya katıştırılmış öğeleri eklemek için standart Kullanıcı arabirimi olan nesne Ekle iletişim kutusunu görüntüler.
 
-[COlePasteSpecialDialog](../mfc/reference/colepastespecialdialog-class.md)<br/>
-Paste Special iletişim kutusu, Düzen Özel Yapıştır komut uygulamak için standart kullanıcı arabirimi görüntüler.
+[COlePasteSpecialDialog](reference/colepastespecialdialog-class.md)<br/>
+Özel Yapıştır iletişim kutusunu, düzenleme Özel Yapıştır komutunu uygulamak için standart Kullanıcı arabirimini görüntüler.
 
-[COleLinksDialog](../mfc/reference/colelinksdialog-class.md)<br/>
-Bağlantılı öğeler hakkındaki bilgileri değiştirmek için standart kullanıcı arabirimi Edit Links iletişim kutusu görüntüler.
+[Cotalinksdialog](reference/colelinksdialog-class.md)<br/>
+Bağlantılı öğelerle ilgili bilgileri değiştirmek için standart Kullanıcı arabirimi olan bağlantıları Düzenle iletişim kutusunu görüntüler.
 
-[COleChangeIconDialog](../mfc/reference/colechangeicondialog-class.md)<br/>
-Change Icon iletişim kutusu, katıştırılmış bir OLE ile ilişkili simgeyi değiştirme veya bağlantılı öğe için standart kullanıcı arabirimi görüntüler.
+[COleChangeIconDialog](reference/colechangeicondialog-class.md)<br/>
+OLE Embedded veya bağlantılı öğeyle ilişkili simgeyi değiştirmek için standart Kullanıcı arabirimi olan simge Değiştir iletişim kutusunu görüntüler.
 
-[COleConvertDialog](../mfc/reference/coleconvertdialog-class.md)<br/>
-Dönüştür iletişim kutusu, standart kullanıcı arabirimi OLE öğelerine bir türden diğerine dönüştürme için görüntüler.
+[Cotaconvertdialog](reference/coleconvertdialog-class.md)<br/>
+OLE öğelerini bir türden diğerine dönüştürmek için standart Kullanıcı arabirimi olan Dönüştür iletişim kutusunu görüntüler.
 
-[COlePropertiesDialog](../mfc/reference/colepropertiesdialog-class.md)<br/>
-Windows ortak OLE Özellikleri iletişim kutusunu kapsüller. Ortak OLE Özellikleri iletişim kutusu görüntülemek ve bir OLE belge öğesi Windows standartları ile tutarlı şekilde özelliklerini değiştirmek için kolay bir yol sağlar.
+[Cotapropertiesiletişim kutusu](reference/colepropertiesdialog-class.md)<br/>
+Windows ortak OLE özellikleri iletişim kutusunu kapsüller. Ortak OLE özellikleri iletişim kutuları, bir OLE belge öğesinin özelliklerini Windows standartlarıyla tutarlı bir şekilde görüntülemenin ve değiştiremenin kolay bir yolunu sunar.
 
-[COleUpdateDialog](../mfc/reference/coleupdatedialog-class.md)<br/>
-Güncelleştirme iletişim kutusunda, bir belgedeki tüm bağlantıların güncelleştirilmesi için standart kullanıcı arabirimi görüntüler. İletişim kutusu, güncelleştirme yordamı tamamlanana kadar ne kadar yakın olduğunu belirten bir İlerleme göstergesi içerir.
+[Cotaupdatedialog](reference/coleupdatedialog-class.md)<br/>
+Belgedeki tüm bağlantıları güncelleştirmek için standart Kullanıcı arabirimi olan Güncelleştir iletişim kutusunu görüntüler. İletişim kutusu, güncelleştirme yordamının tamamlanmasını nasıl kapatabelirten bir ilerleme göstergesi içerir.
 
-[COleChangeSourceDialog](../mfc/reference/colechangesourcedialog-class.md)<br/>
-Kaynağı Değiştir iletişim kutusu, bir bağlantının kaynak ve hedef değiştirmek için standart kullanıcı arabirimi görüntüler.
+[Colet Changesourcedialog](reference/colechangesourcedialog-class.md)<br/>
+Bir bağlantının hedefini veya kaynağını değiştirmek için standart Kullanıcı arabirimi olan kaynak Değiştir iletişim kutusunu görüntüler.
 
-[COleBusyDialog](../mfc/reference/colebusydialog-class.md)<br/>
-Sunucu meşgul ve sunucu yanıt iletişim kutularında, meşgul uygulamaların çağrıları işlemek için standart kullanıcı arabirimi görüntüler. Genellikle tarafından otomatik olarak görüntülenen [COleMessageFilter](../mfc/reference/colemessagefilter-class.md) uygulaması.
+[Cotabusi Iletişim kutusu](reference/colebusydialog-class.md)<br/>
+Meşgul uygulamalara yapılan çağrıları işlemeye yönelik standart Kullanıcı arabirimi olan sunucu meşgul ve sunucu yanıt vermiyor iletişim kutularını görüntüler. Genellikle [COleMessageFilter](reference/colemessagefilter-class.md) uygulamasıyla otomatik olarak gösterilir.
 
 ## <a name="property-sheet-classes"></a>Özellik sayfası sınıfları
 
-Özellik sayfaları, olarak da bilinen sekmeli iletişim kutularını kullanmak, uygulamalarınızı özellik sayfası sınıfları sağlar. Özellik sayfaları, çok sayıda tek bir iletişim kutusu denetimleri düzenlemek için etkili bir yoludur.
+Özellik sayfası sınıfları, uygulamalarınızın sekmeli iletişim kutuları olarak da bilinen özellik sayfalarını kullanmasına izin verir. Özellik sayfaları, tek bir iletişim kutusunda çok sayıda denetimi düzenlemenin etkili bir yoludur.
 
-[CPropertyPage](../mfc/reference/cpropertypage-class.md)<br/>
-Bir özellik sayfası içinde tek tek sayfaları sağlar. Öğesinden bir sınıf türetin `CPropertyPage` , özellik sayfasına eklenecek her sayfa için.
+[CPropertyPage](reference/cpropertypage-class.md)<br/>
+Bir özellik sayfası içinde ayrı sayfalar sağlar. `CPropertyPage`Özellik sayfanıza eklenecek her sayfa için bir sınıf türetirsiniz.
 
-[CPropertySheet](../mfc/reference/cpropertysheet-class.md)<br/>
-Birden çok özellik sayfaları için bir çerçeve sağlar. Özellik sayfası sınıfından türetilir `CPropertySheet` özelliği sayfalarınızı hızlı bir şekilde uygulamak için.
+[CPropertySheet](reference/cpropertysheet-class.md)<br/>
+Birden çok özellik sayfası için çerçeve sağlar. Özellik `CPropertySheet` sayfalarınızı hızlı bir şekilde uygulamak için özellik sayfası sınıfınızı öğesinden türetirsiniz.
 
-[COlePropertyPage](../mfc/reference/colepropertypage-class.md)<br/>
-İletişim kutusuna benzer bir grafik arabiriminde denetimi bir OLE özelliklerini görüntüler.
+[COlePropertyPage](reference/colepropertypage-class.md)<br/>
+Bir OLE denetiminin özelliklerini bir iletişim kutusuna benzer şekilde bir grafik arabirimde görüntüler.
 
-## <a name="html-based-dialog-classes"></a>HTML tabanlı iletişim kutusu sınıfları
+## <a name="html-based-dialog-classes"></a>HTML tabanlı Iletişim sınıfları
 
-[CDHtmlDialog](../mfc/reference/cdhtmldialog-class.md)<br/>
-Kullanıcı arabirimini kaynaklarla iletişim yerine HTML kullanan iletişim kutuları oluşturmak için kullanılır.
+[CDHtmlDialog](reference/cdhtmldialog-class.md)<br/>
+Kullanıcı arayüzünü iletişim kutusu kaynakları yerine HTML ile uygulayan iletişim kutuları oluşturmak için kullanılır.
 
-[CMultiPageDHtmlDialog](../mfc/reference/cmultipagedhtmldialog-class.md)<br/>
-Birden çok HTML sayfasını sıralı olarak görüntüler ve her sayfadaki olayları işler.
+[CMultiPageDHtmlDialog](reference/cmultipagedhtmldialog-class.md)<br/>
+Birden çok HTML sayfasını ardışık olarak görüntüler ve her sayfadaki olayları işler.
 
 ## <a name="related-classes"></a>İlgili sınıflar
 
-Bu sınıfların iletişim kutuları başına uzatılmasında değildir, ancak bunlar iletişim kutusu şablonları ve iletişim kutuları davranışını çoğunu sahip.
+Bu sınıflar, tek başına iletişim kutusu değildir, ancak iletişim kutusu şablonlarını kullanır ve iletişim kutularının davranışlarının büyük bir bölümünü kullanır.
 
-[CDialogBar](../mfc/reference/cdialogbar-class.md)<br/>
-Bir iletişim kutusu şablonu temel alan bir denetim çubuğu.
+[CDialogBar](reference/cdialogbar-class.md)<br/>
+İletişim kutusu şablonunu temel alan bir denetim çubuğu.
 
-[CFormView](../mfc/reference/cformview-class.md)<br/>
-Bir kaydırma görünümü, düzen bir iletişim kutusu şablonunda tanımlanır. Öğesinden bir sınıf türetin `CFormView` bir iletişim kutusu şablonu temel alan bir kullanıcı arabirimini uygulamak için.
+[CFormView](reference/cformview-class.md)<br/>
+Bir iletişim kutusu şablonunda düzeni tanımlanan bir kaydırma görünümü. Bir `CFormView` iletişim kutusu şablonunu temel alan bir kullanıcı arabirimi uygulamak için öğesinden bir sınıf türetebilirsiniz.
 
-[CDaoRecordView](../mfc/reference/cdaorecordview-class.md)<br/>
-Bir form sağlar doğrudan bir veri erişim nesnesi (DAO) kayıt nesnesine bağlıdır. Tüm form görünümleri gibi bir `CDaoRecordView` bir iletişim kutusu şablonu temel alan.
+[CDaoRecordView](reference/cdaorecordview-class.md)<br/>
+Doğrudan bir veri erişim nesnesi (DAO) kayıt kümesi nesnesine bağlı bir form görünümü sağlar. Tüm form görünümleri gibi, bir `CDaoRecordView` iletişim kutusu şablonunu temel alır.
 
-[CRecordView](../mfc/reference/crecordview-class.md)<br/>
-Bir form sağlar açık veritabanı bağlantısı (ODBC) kayıt nesneye doğrudan bağlı görünümü. Tüm form görünümleri gibi bir `CRecordView` bir iletişim kutusu şablonu temel alan.
+[CRecordView](reference/crecordview-class.md)<br/>
+Açık veritabanı bağlantısı (ODBC) kayıt kümesi nesnesine doğrudan bağlı bir form görünümü sağlar. Tüm form görünümleri gibi, bir `CRecordView` iletişim kutusu şablonunu temel alır.
 
-[CPrintInfo](../mfc/reference/cprintinfo-structure.md)<br/>
-Bir yazdırma ya da yazdırma önizleme işinin hakkında bilgi içeren bir yapıya. Yazdırma mimarisi tarafından kullanılan [CView](../mfc/reference/cview-class.md).
+[CPrintInfo](reference/cprintinfo-structure.md)<br/>
+Yazdırma veya baskı önizleme işi hakkında bilgi içeren bir yapı. [CView](reference/cview-class.md)'ın yazdırma mimarisi tarafından kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](class-library-overview.md)

@@ -10,35 +10,35 @@ helpviewer_keywords:
 - OLE [MFC], data objects
 - OLE [MFC], data sources
 ms.assetid: 8f68eed8-0ce8-4489-a4cc-f95554f89090
-ms.openlocfilehash: 485fa5c62aafa4c116a76547238325d2979bfdc4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dfe400dddfecce3e52337f7f449e975dff2ca83e
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62241218"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84616216"
 ---
 # <a name="data-objects-and-data-sources-ole"></a>Veri Nesneleri ve Veri Kaynakları (OLE)
 
-Veri aktarımı, Pano veya sürükle ve bırak kullanılarak gerçekleştirirken verileri kaynak ve hedef vardır. Kopyalamak için bir uygulama veri sağlar ve başka bir uygulamaya yapıştırma için bunu kabul eder. Aynı veri aktarımı başarılı olması için farklı işlemleri gerçekleştirmek her iki tarafındaki aktarım gerekir. Microsoft Foundation Class (MFC) kitaplığı, bu aktarımı her iki tarafındaki temsil eden iki sınıfları sağlar:
+Bir veri aktarımı gerçekleştirdiğinizde, pano veya sürükleyip bırakma aracılığıyla verilerin kaynağı ve hedefi vardır. Bir uygulama, verileri kopyalama için sağlar ve başka bir uygulama yapıştırmak için kabul eder. Aktarımın her tarafının, aktarımın başarılı olması için aynı verilerde farklı işlemler gerçekleştirmesi gerekir. Microsoft Foundation Class (MFC) kitaplığı, bu aktarmanın her tarafını temsil eden iki sınıf sağlar:
 
-- Veri kaynakları (tarafından uygulanan `COleDataSource` nesneleri) veri aktarımı kaynak tarafı temsil eder. Veriler panoya kopyalanmak üzere olduğunda veya bir Sürükle ve bırak işlemi için veri sağlanmadığında bunlar kaynak uygulama tarafından oluşturulur.
+- Veri kaynakları (nesneler tarafından uygulanan şekilde `COleDataSource` ) veri aktarımının kaynak tarafını temsil eder. Veriler panoya kopyalandıklarında ya da bir sürükle ve bırak işlemi için veriler sağlandığında kaynak uygulama tarafından oluşturulur.
 
-- Veri nesneleri (tarafından uygulanan `COleDataObject` nesneleri) veri aktarımı hedef tarafı temsil eder. Hedef uygulama içine veya panodan yapıştırma işlemi gerçekleştirmek için sorulduğunda bırakılan veri sahip olduğunda oluşturulur.
+- Veri nesneleri (nesneler tarafından uygulanan şekilde `COleDataObject` ) veri aktarımının hedef tarafını temsil eder. Bunlar, hedef uygulamada kendisine veri bırakıldığında veya Panodan bir yapıştırma işlemi gerçekleştirmesi istendiğinde oluşturulur.
 
-Aşağıdaki makaleler veri nesneleri ve veri kaynakları, uygulamalarınızda nasıl kullanılacağını açıklar. Bu bilgiler, hem de bağlı verileri kopyalama ve yapıştırma için çağrılabilir çünkü kapsayıcı hem de sunucu uygulamaları için geçerlidir.
+Aşağıdaki makalelerde, uygulamalarınızda veri nesnelerinin ve veri kaynaklarının nasıl kullanılacağı açıklanmaktadır. Bu bilgiler hem kapsayıcı hem de sunucu uygulamaları için geçerlidir, çünkü verileri kopyalamak ve yapıştırmak için her ikisi de çağrılabilir.
 
-- [Veri nesneleri ve veri kaynakları: Oluşturma ve yok etme](../mfc/data-objects-and-data-sources-creation-and-destruction.md)
+- [Veri Nesneleri ve Veri Kaynakları: Oluşturma ve Yok Etme](data-objects-and-data-sources-creation-and-destruction.md)
 
-- [Veri nesneleri ve veri kaynakları: Düzenleme](../mfc/data-objects-and-data-sources-manipulation.md)
+- [Veri Nesneleri ve Veri Kaynakları: Düzenleme](data-objects-and-data-sources-manipulation.md)
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Sürükleme ve Bırakma](../mfc/drag-and-drop-ole.md)
+[Sürükleme ve Bırakma](drag-and-drop-ole.md)
 
-[Pano](../mfc/clipboard.md)
+[Pano](clipboard.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE](../mfc/ole-in-mfc.md)<br/>
-[COleDataObject Sınıfı](../mfc/reference/coledataobject-class.md)<br/>
-[COleDataSource Sınıfı](../mfc/reference/coledatasource-class.md)
+[OLE](ole-in-mfc.md)<br/>
+[Cotadataobject sınıfı](reference/coledataobject-class.md)<br/>
+[Cotadatasource sınıfı](reference/coledatasource-class.md)

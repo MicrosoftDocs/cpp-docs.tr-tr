@@ -1,5 +1,5 @@
 ---
-title: ayırıcı &lt;void &gt; sınıfı
+title: ayırıcı &lt; void &gt; sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - memory/std::allocator<void>
@@ -7,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - allocator<void> class
 ms.assetid: abfb40f5-c600-46a6-b130-f42c6535b2bd
-ms.openlocfilehash: c8d787fe03dfe6f67fb8e228308ec74b6e7f620a
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: af29c70dca56b1e68eef3614357269c587a77ec9
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688523"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84623675"
 ---
-# <a name="allocatorltvoidgt-class"></a>ayırıcı &lt;void &gt; sınıfı
+# <a name="allocatorltvoidgt-class"></a>ayırıcı &lt; void &gt; sınıfı
 
 Bu bağlamda anlamlı olan türleri tanımlayarak **void**türüne sahip sınıf şablonu ayırıcı özelleştirmesi.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <>
@@ -41,12 +41,12 @@ class allocator<void> {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı, **void**türü için sınıf şablonu [ayırıcısını](../standard-library/allocator-class.md) açık bir şekilde özelleştirir. Oluşturucuları ve atama operatörü sınıf şablonuyla aynı şekilde davranır, ancak yalnızca aşağıdaki türleri tanımlar:
+Sınıfı, **void**türü için sınıf şablonu [ayırıcısını](allocator-class.md) açık bir şekilde özelleştirir. Oluşturucuları ve atama operatörü sınıf şablonuyla aynı şekilde davranır, ancak yalnızca aşağıdaki türleri tanımlar:
 
-- [const_pointer](../standard-library/allocator-class.md#const_pointer).
+- [const_pointer](allocator-class.md#const_pointer).
 
-- [işaretçi](../standard-library/allocator-class.md#pointer).
+- [işaretçi](allocator-class.md#pointer).
 
-- [value_type](../standard-library/allocator-class.md#value_type).
+- [value_type](allocator-class.md#value_type).
 
-- iç içe bir sınıf şablonunu yeniden [bağlayın](../standard-library/allocator-class.md#rebind).
+- iç içe bir sınıf şablonunu yeniden [bağlayın](allocator-class.md#rebind).
