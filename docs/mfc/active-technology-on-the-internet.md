@@ -4,38 +4,38 @@ ms.date: 09/12/2018
 helpviewer_keywords:
 - Internet applications [MFC], Active technology
 ms.assetid: 6f782aa1-5c2f-47a2-9e63-ddd0829d5a08
-ms.openlocfilehash: e9f09715f53247cc8a3abf0fbc63517e76d810c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2cd087c99c1ebdcaa8b4a44524e7691984877f20
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394929"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625149"
 ---
 # <a name="active-technology-on-the-internet"></a>Internet'te Etkin Teknoloji
 
-Etkin teknoloji heyecan verici, dinamik içerik ve genel Internet veya intranet bilinen bir şirket iç ağına uygulamalar oluşturmalarını sağlayan bir açık bir platformdur. Internet programlamayı için Microsoft tarafından sağlanan ana teknolojileri aşağıda açıklanmıştır.
+Etkin teknoloji, geliştiricilerin küresel Internet veya bir şirketin dahili ağı için intranet olarak bilinen heyecan verici, dinamik içerik ve uygulamalar oluşturmalarına olanak tanıyan açık bir platformdur. Internet programlama için Microsoft tarafından sunulan başlıca teknolojiler aşağıda açıklanmıştır.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX, yeni geliştirme için kullanılması gereken eski bir teknolojidir. ActiveX 'in yerini alan modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimleri](activex-controls.md).
 
 ## <a name="activex-controls"></a>ActiveX Denetimleri
 
-ActiveX denetimleri (eski adı OLE denetimleri) Web sayfaları veya bir ActiveX denetimi kapsayıcısı olan başka bir uygulama eklenebilecek nesneler. Düğmeler, yürütebilmektedir ve grafik denetimleri örneklerindendir. Daha fazla bilgi için [Internet'te ActiveX denetimleri](../mfc/activex-controls-on-the-internet.md).
+ActiveX denetimleri (eski adıyla OLE denetimleri) Web sayfalarına eklenebilen veya bir ActiveX Denetim kapsayıcısı olan başka herhangi bir uygulamanın bulunduğu nesnelerdir. Düğmeler, hisse senedi etiketleri ve grafik denetimleri örnekleri içerir. Daha fazla bilgi için bkz. [Internet 'Teki ActiveX denetimleri](activex-controls-on-the-internet.md).
 
-## <a name="internet-data-download-services"></a>Hizmetleri Internet veri indirin
+## <a name="internet-data-download-services"></a>Internet veri Indirme Hizmetleri
 
-Yaygın protokolleri kullanarak Internet üzerinden veri yüklenebilir: HTTP, FTP ve gopher. MFC WinINet sınıfları TCP/IP ve WinSock protokollerini özetleyen tarafından HTTP, FTP ve gopher protokollerini kullanarak veri aktarmak kolaylaştırır. MFC zaman uyumsuz ad sınıfları engellemeden dosyalarını indirin ve büyük nesneler zaman uyumsuz olarak işlemek için bir yol sağlar. Daha fazla bilgi için [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md).
+Genel protokoller kullanılarak veriler Internet üzerinden indirilebilir: HTTP, FTP ve gopher. MFC WinInet sınıfları, TCP/IP ve WinSock protokollerini soyut hale getirerek HTTP, FTP ve gopher protokollerini kullanarak veri aktarmayı kolaylaştırır. MFC zaman uyumsuz bilinen ad sınıfları, dosyaları engellenmeden indirmek ve büyük nesneleri zaman uyumsuz olarak işlemek için bir yol sağlar. Daha fazla bilgi için bkz. [Win32 Internet Uzantıları (Winınet)](win32-internet-extensions-wininet.md).
 
-## <a name="active-scripts"></a>Etkin komut dosyaları
+## <a name="active-scripts"></a>Etkin betikler
 
-VBScript ve diğer komut dosyası dilleri denetimleri bağlanmak ve etkileşimli işlevlerini Web sayfalarınıza ekleme. Komut dosyası işleme sunucudan istemciye taşır. Örneğin, form girişlerinin istemci üzerinde doğrulanır ve sonra sunucuya gönderilir.
+VBScript ve diğer betik dilleri, denetimleri bağlayıp Web sayfalarına etkileşimli işlevsellik ekler. Betik oluşturma işlemi sunucudan istemciye gider. Örneğin, form girdileri istemcisinde doğrulanabilir ve sonra sunucuya gönderilebilir.
 
 ## <a name="html-extensions"></a>HTML uzantıları
 
-Nesne etiketi gibi HTML uzantı denetimlerini ve komut dosyalarını desteklemek için eklendi.
+Nesne etiketi gibi HTML uzantıları, destek denetimlerine ve betik oluşturmaya eklenmiştir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
-[Internet'te ActiveX Denetimleri](../mfc/activex-controls-on-the-internet.md)<br/>
-[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)
+[MFC Internet Programlama Temelleri](mfc-internet-programming-basics.md)<br/>
+[Internet 'te ActiveX denetimleri](activex-controls-on-the-internet.md)<br/>
+[Win32 Internet Uzantıları (Winınet)](win32-internet-extensions-wininet.md)

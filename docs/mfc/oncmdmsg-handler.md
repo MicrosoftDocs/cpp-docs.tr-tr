@@ -10,21 +10,21 @@ helpviewer_keywords:
 - handlers, OnCmdMessage [MFC]
 - OnCmdMessage method [MFC]
 ms.assetid: 8df07024-506f-47e7-bba9-1c3bc5ad8ab6
-ms.openlocfilehash: 6ed2e4c09e2fe413d29ad9953dbb8a03c106e86c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5114fe53a5bac345eb6a55fb6c371f7bc1f698ef
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385303"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84624023"
 ---
 # <a name="oncmdmsg-handler"></a>OnCmdMsg İşleyicisi
 
-Komut yönlendirme gerçekleştirmek için her komut hedefi çağırır `OnCmdMsg` dizideki sonraki komut hedefinin bir üye işlevi. Komut hedefleyen kullanım `OnCmdMsg` komut başa çıkabilir olup olmadığını belirlemek için ve yönlendirmek için başka bir komut hedefinin bunlar yürütemiyorsa.
+Komutların yönlendirilmesini başarmak için, her komut hedefi `OnCmdMsg` dizideki bir sonraki komut hedefinin üye işlevini çağırır. Komut hedefleri, `OnCmdMsg` bir komutu işleyebilecekleri ve işleyememesi durumunda onu başka bir komut hedefine yönlendirip işleyemeyeceğini belirlemede kullanır.
 
-Her komut hedefi sınıfı geçersiz kılabilir `OnCmdMsg` üye işlevi. Geçersiz kılmalar, her sınıf rota komutları belirli bir sonraki hedefe olanak tanır. Çerçeve penceresi, örneğin, her zaman komutları, geçerli bir alt pencere ya da görünümü tabloda gösterildiği gibi yönlendirir [standart komut yönlendirme](../mfc/command-routing.md).
+Her komut hedefi sınıfı üye işlevini geçersiz kılabilir `OnCmdMsg` . Geçersiz kılmalar her bir sınıfın komut için belirli bir sonraki hedefe yol almasına izin verir. Örneğin, bir çerçeve penceresi, her zaman komutları geçerli alt penceresine veya görünümüne, tablo [standart komut rotasında](command-routing.md)gösterildiği gibi yönlendirir.
 
-Varsayılan `CCmdTarget` uygulaması `OnCmdMsg` aldığı her komut iletisi için bir işleyici işlevi aramak için komut hedef sınıfın ileti eşlemesi kullanır; aynı şekilde standart iletileri aranır. Bu bir eşleşme bulunursa, işleyici çağırır. İleti eşleme arama bölümünde açıklanmıştır [nasıl Framework arar ileti eşlemeleri](../mfc/how-the-framework-searches-message-maps.md).
+Varsayılan `CCmdTarget` uygulama, `OnCmdMsg` aldığı her komut iletisi için bir işleyici işlevi aramak üzere komut-hedef sınıfının ileti eşlemesini kullanır ve standart mesajların aranacağı şekilde. Bir eşleşme bulunursa işleyiciyi çağırır. İleti eşleme araması [, Framework 'Ün Ileti eşlemelerini arayacağı](how-the-framework-searches-message-maps.md)şekilde açıklanmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
+[Çerçeve bir Işleyiciyi nasıl çağırır](how-the-framework-calls-a-handler.md)

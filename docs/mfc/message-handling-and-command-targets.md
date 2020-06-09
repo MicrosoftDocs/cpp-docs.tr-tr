@@ -9,26 +9,26 @@ helpviewer_keywords:
 - IOleCommandTarget interface [MFC]
 - command routing [MFC], command targets
 ms.assetid: e45ce14c-e6b6-4262-8f3b-4e891e0ec2a3
-ms.openlocfilehash: 702cb96da13d6109c17a28e58c08a30af3f77fd4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cbcbce1e476fef0d076f9c25b46b3166c1eb5935
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383808"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84624346"
 ---
 # <a name="message-handling-and-command-targets"></a>İleti İşleme ve Komut Hedefleri
 
-Komut gönderme arabirimi `IOleCommandTarget` sorgulamak ve komutları yürütmek için basit ve Genişletilebilir bir mekanizma tanımlar. Bu mekanizma, Otomasyon'un basittir `IDispatch` tamamen komutları; standart bir dizi üzerinde kullandığından komutları, bağımsız değişkenleri nadiren sahiptir ve hiçbir tür bilgileri söz konusu (komut satırı bağımsız değişkenlerini için de tür güvenliği yayınladıklarını).
+Komut gönderme arabirimi `IOleCommandTarget` komutları sorgulamak ve yürütmek için basit ve genişletilebilir bir mekanizma tanımlar. Bu mekanizma, `IDispatch` tamamen standart bir komut kümesi kullandığından ve komutların nadiren bağımsız değişkenlere sahip olduğu ve hiçbir tür bilgisinin bulunmadığı Için Otomasyon 'dan daha basit bir yöntem değildir. (tür güvenliği, komut bağımsız değişkenleri için de bu şekilde azalmaktadır).
 
-Komut gönderme arabirimi tasarımında, her komut "kendisi ile tanımlanan bir komut grubuyla" ait bir **GUID**. Bu nedenle, herkesin yeni bir grup tanımlayın ve Microsoft ile koordine etmek için herhangi bir gereksinim veya diğer herhangi bir satıcı olmadan o grup içindeki tüm komutları tanımlayın. (Bu aslında aynı olduğu anlamına gelir tanımının bir **dispinterface** yanı sıra **DISPID değeri** automation'da. Var. çakışma Burada, bu komut yönlendirme mekanizması Otomasyon tanıtıcıları komut yönlendirme için yalnızca ve büyük bir ölçekte komut dosyası/programlama için olsa)
+Komut gönderme arabirimi tasarımında her komut, kendisi bir **GUID**ile tanımlanmış bir "komut grubuna" aittir. Bu nedenle, herkes yeni bir grup tanımlayabilir ve bu grup içindeki tüm komutları Microsoft veya başka bir satıcıyla koordine etmek zorunda kalmadan tanımlayabilir. (Bu temelde, Otomasyon 'daki bir **dispınterface** ve **DISPID** 'ler ile aynı tanım anlamına gelir. Burada çakışma vardır, ancak bu komut yönlendirme mekanizması yalnızca komut yönlendirmesi için olsa da, büyük ölçekte Otomasyon tutamaçları olarak betik/programlama için kullanılamaz.)
 
-`IOleCommandTarget` Aşağıdaki senaryolarda işler:
+`IOleCommandTarget`aşağıdaki senaryoları işler:
 
-- Bir nesne yerinde nesnenin araç çubukları genellikle görüntülenir ve nesnenin araç çubukları gibi kapsayıcı komutlardan bazıları için düğmeler olabilir yalnızca etkin olduğunda **yazdırma**, **Baskı Önizleme**,  **Kaydet**, **yeni**, **yakınlaştırma**ve diğerleri. (Kaldır nesneleri standartları önerilir yerinde etkinleştirme gibi düğmeleri araç çubuklarını, veya en az bunları devre dışı bırakın. Bu tasarım etkinleştirilmeli ve henüz doğru işleyicisine yönlendirilen için bu komutları sağlar.) Şu anda bu komutları kapsayıcıya gönderileceği nesne için bir mekanizma yoktur.
+- Bir nesne yerinde etkinleştirildiğinde, yalnızca nesnenin araç çubukları görüntülenir ve nesnenin araç çubuklarının **Yazdır**, **Baskı Önizleme**, **kaydetme**, **Yeni**, **Yakınlaştırma**ve diğerleri gibi bazı kapsayıcı komutlarına yönelik düğmeleri olabilir. (Yerinde etkinleştirme standartları, nesnelerin araç çubuklarından bu tür düğmeleri kaldırmasını veya en azından bunları devre dışı bırakmanızı öneririz. Bu tasarım, bu komutların etkinleştirilmesini ve henüz doğru işleyiciye yönlendirilmesini sağlar.) Şu anda nesnenin bu komutları kapsayıcıya göndermek için bir mekanizma yoktur.
 
-- Etkin belge (örneğin, Office Binder) bir etkin belge kapsayıcı katıştırıldığında, kapsayıcı komutları gibi göndermeniz gerekebilir **yazdırma**, **sayfa yapısı**, **özellikleri**ve diğer içerilen etkin belge için.
+- Etkin bir belge, etkin bir belge kapsayıcısına (Office Ciltçi gibi) katıştırıldığında, kapsayıcının **Yazıcı**, **sayfa kurulumu**, **Özellikler**gibi komutları ve kapsanan etkin belgeye gönderilmesi gerekebilir.
 
-Bu basit bir komut yönlendirme var olan Otomasyon standartları işlenmesi ve `IDispatch`. Ancak, ek yükü ile söz konusu `IDispatch` burada gerekli olandan daha şekilde `IOleCommandTarget` aynı uçları elde etmek için basit bir yol sağlar:
+Bu basit komut yönlendirmesi, mevcut Otomasyon standartları ve aracılığıyla işlenebilir `IDispatch` . Ancak, ile ilgili ek yük `IDispatch` burada gereklidir, bu nedenle `IOleCommandTarget` aynı uçları elde etmek için daha basit bir yol sağlar:
 
 ```
 interface IOleCommandTarget : IUnknown
@@ -47,8 +47,8 @@ interface IOleCommandTarget : IUnknown
     }
 ```
 
-`QueryStatus` Yöntemi burada komutları belirli bir kümesini, küme ile tanımlanmasını olup olmadığını test eder bir **GUID**, desteklenir. Bu çağrı bir dizi doldurur **OLECMD** (yapıları) değerlerle komutları yanı sıra bir komutu ve/veya durum bilgisi adını açıklayan metin döndüren desteklenen listesi. Arayan, bir komut çağrılacak istediğinde komutu geçirebilirsiniz (ve kümesi **GUID**) için `Exec` seçenekleri ve bağımsız değişkenleri yanı sıra bir dönüş değeri geri alamazsınız.
+`QueryStatus`Burada yöntemi, bir **GUID**ile tanımlanmakta olan küme için belirli bir komut kümesinin desteklenip desteklenmediğini sınar. Bu çağrı, desteklenen komutların yanı sıra bir komutun adını ve/veya durum bilgilerini açıklayan metni döndüren bir **OLECMD** değeri (yapılar) dizisini doldurur. Çağıran bir komutu çağırmak istediğinde, bir geri dönüş değeri elde etmek için komutu (ve **GUID 'yi**) `Exec` Seçenekler ve bağımsız değişkenlerle birlikte geçirebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Etkin Belge Kapsayıcıları](../mfc/active-document-containers.md)
+[Etkin Belge Kapsayıcıları](active-document-containers.md)

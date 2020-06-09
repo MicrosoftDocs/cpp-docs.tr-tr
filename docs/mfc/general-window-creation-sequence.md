@@ -7,36 +7,36 @@ helpviewer_keywords:
 - windows [MFC], creating
 - sequence [MFC]
 ms.assetid: 9cd8c7ea-5e24-429e-b6d9-d7b6041d8ba6
-ms.openlocfilehash: fb10ced78e230316a6e2982f24c1fb6e2e52ed8d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0b09543d659448454bbc7c2cca6abee5de3013e5
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364265"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84618750"
 ---
 # <a name="general-window-creation-sequence"></a>Genel Pencere Oluşturma Dizisi
 
-Alt pencere gibi kendi pencerenizi oluşturduğunuzda, çerçeve [Belge/Görünüm Oluşturma'da](../mfc/document-view-creation.md)açıklananla aynı işlemi kullanır.
+Kendi oluşturduğunuz bir pencere oluşturduğunuzda (örneğin, alt pencere), çerçeve [belge/görünüm oluşturma](document-view-creation.md)bölümünde açıklananla çok daha fazla işlem kullanır.
 
-MFC tarafından sağlanan tüm pencere sınıfları [iki aşamalı inşaat](../mfc/one-stage-and-two-stage-construction-of-objects.md)kullanır. Diğer bir deyişle, C++ **yeni** işlecinin çağrılması sırasında, oluşturucu bir C++ nesnesini ayırır ve aparat eder, ancak karşılık gelen bir Windows penceresi oluşturmaz. Bu daha sonra pencere nesnesinin Üye [Oluştur](../mfc/reference/cwnd-class.md#create) işlevini çağırarak yapılır.
+MFC tarafından sunulan tüm pencere sınıfları [iki aşamalı oluşturma](one-stage-and-two-stage-construction-of-objects.md)gerçekleştirerek. Yani, C++ **New** işlecinin bir çağrılması sırasında Oluşturucu bir c++ nesnesini ayırır ve başlatır, ancak buna karşılık gelen bir Windows penceresi oluşturmaz. Bu, daha sonra pencere nesnesinin üye [Oluştur](reference/cwnd-class.md#create) işlevi çağırarak yapılır.
 
-Üye `Create` işlev Windows penceresini yapar `HWND` ve c++ nesnesinin genel veri üyesi [m_hWnd](../mfc/reference/cwnd-class.md#m_hwnd)depolar. `Create`oluşturma parametreleri üzerinde tam esneklik sağlar. Aramadan `Create`önce, çerçeve için simge ve sınıf stilleri ayarlamak için global işlevi [AfxRegisterWndClass](../mfc/reference/application-information-and-management.md#afxregisterwndclass) ile bir pencere sınıfı kaydetmek isteyebilirsiniz.
+`Create`Üye Işlevi Windows penceresini yapar ve bunu `HWND` C++ nesnesinin ortak veri üyesi [m_hWnd](reference/cwnd-class.md#m_hwnd)depolar. `Create`oluşturma parametreleri üzerinde tüm esnekliği verir. `Create`' İ çağırmadan önce, çerçeveye ait simge ve sınıf stillerini ayarlamak Için [AfxRegisterWndClass](reference/application-information-and-management.md#afxregisterwndclass) genel işlevinde bir pencere sınıfını kaydetmek isteyebilirsiniz.
 
-Çerçeve pencereleri için [LoadFrame](../mfc/reference/cframewnd-class.md#loadframe) üye işlevini `Create`'' yerine kullanabilirsiniz. `LoadFrame`daha az parametre kullanarak Windows penceresini yapar. Çerçevenin resim yazısı, simge, hızlandırıcı tablosu ve menü dahil olmak üzere kaynaklardan birçok varsayılan değer alır.
+Çerçeve pencereleri için yerine [LoadFrame](reference/cframewnd-class.md#loadframe) üye işlevini kullanabilirsiniz `Create` . `LoadFrame`Windows penceresini daha az parametre kullanarak yapar. Bu, kaynakların başlık, simge, Hızlandırıcı tablosu ve menü dahil olmak üzere kaynaklardan birçok varsayılan değeri alır.
 
 > [!NOTE]
-> Simgenizin, hızlandırıcı tablonuzun ve menü kaynaklarınızın LoadFrame tarafından yüklenmesi için **IDR_MAINFRAME**gibi ortak bir kaynak kimliğine sahip olması gerekir.
+> Simgenin, Hızlandırıcı tablonuzun ve menü kaynaklarınızın, **IDR_MAINFRAME**gibi ortak BIR kaynak kimliğine sahip olması gerekir.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilmek istiyorum
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Pencere nesneleri](../mfc/window-objects.md)
+- [Pencere nesneleri](window-objects.md)
 
-- [Pencere "sınıflar" kaydetme](../mfc/registering-window-classes.md)
+- [Pencere "sınıfları" kaydediliyor](registering-window-classes.md)
 
-- [Pencere nesnelerini yok etme](../mfc/destroying-window-objects.md)
+- [Pencere nesnelerini yok etme](destroying-window-objects.md)
 
-- [Belge çerçevesi pencereleri oluşturma](../mfc/creating-document-frame-windows.md)
+- [Belge çerçeve pencereleri oluşturma](creating-document-frame-windows.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Windows Oluşturma](../mfc/creating-windows.md)
+[Windows oluşturma](creating-windows.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Özel durumlar: Özel durum içeriklerini İnceleme'
+title: 'Özel Durumlar: Özel Durum İçeriklerini İnceleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - exception handling [MFC], MFC
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - try-catch exception handling [MFC], exception contents
 - throwing exceptions [MFC], exception contents
 ms.assetid: dfda4782-b969-4f60-b867-cc204ea7f33a
-ms.openlocfilehash: f6f9bca6f6b7ca9d104cb492c760ab89f7163afd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8554dda2f465aa058cea3d257c22ec38bc6e2c18
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406008"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625897"
 ---
-# <a name="exceptions-examining-exception-contents"></a>Özel durumlar: Özel durum içeriklerini İnceleme
+# <a name="exceptions-examining-exception-contents"></a>Özel Durumlar: Özel Durum İçeriklerini İnceleme
 
-Ancak bir **catch** bloğun bağımsız değişkeni, neredeyse her veri türü olabilir, özel durum sınıfından türetilen türlerin MFC işlevleri throw `CException`. Bir MFC işlevi tarafından oluşturulan bir özel durum yakalamak için ardından yazdığınız bir **catch** , bağımsız değişken bir işaretçidir bloğu için bir `CException` nesnesi (veya bir nesne öğesinden türetilen `CException`, gibi `CMemoryException`). Özel durumun tam türüne bağlı olarak, özel durumun belirli nedeni hakkında bilgi toplamak için özel durum nesnesi veri üyeleri inceleyebilirsiniz.
+Bir **catch** bloğunun bağımsız değişkeni neredeyse herhangi bir veri türünde olabilir, ancak MFC işlevleri sınıfından türetilen türlerin özel durumlarını atar `CException` . Bir MFC işlevi tarafından oluşturulan bir özel durumu yakalamak için, bağımsız değişkeni bir nesne **catch** işaretçisi `CException` (veya gibi öğesinden türetilmiş bir nesne) olan bir catch bloğu yazarsınız `CException` `CMemoryException` . Özel durumun tam türüne bağlı olarak, özel durumun özel nedeni hakkında bilgi toplamak için özel durum nesnesinin veri üyelerini inceleyebilirsiniz.
 
-Örneğin, `CFileException` türünde `m_cause` dosya özel durumun nedenini belirten bir listeden seçimli türü içeren veri üyesi. Bazı olası örnekler dönüş değerleri `CFileException::fileNotFound` ve `CFileException::readOnly`.
+Örneğin, türü, `CFileException` `m_cause` dosya özel durumunun nedenini belirten bir numaralandırılmış tür içeren veri üyesine sahiptir. Olası dönüş değerlerine bazı örnekler `CFileException::fileNotFound` ve ' dir `CFileException::readOnly` .
 
-Aşağıdaki örnek, içeriğini incelemek gösterilmiştir bir `CFileException`. Diğer özel durum türlerine benzer şekilde incelenebilir.
+Aşağıdaki örnek, öğesinin içeriğini nasıl inceleneceğini gösterir `CFileException` . Diğer özel durum türleri benzer şekilde incelenebilir.
 
-[!code-cpp[NVC_MFCExceptions#13](../mfc/codesnippet/cpp/exceptions-examining-exception-contents_1.cpp)]
+[!code-cpp[NVC_MFCExceptions#13](codesnippet/cpp/exceptions-examining-exception-contents_1.cpp)]
 
-Daha fazla bilgi için [özel durumlar: Özel durumlarda nesneleri serbest bırakma](../mfc/exceptions-freeing-objects-in-exceptions.md) ve [özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md).
+Daha fazla bilgi için bkz. özel durumlar: özel durumlarda [nesneleri boşaltma](exceptions-freeing-objects-in-exceptions.md) ve özel durumlar [: özel durumları yakalama ve silme](exceptions-catching-and-deleting-exceptions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
+[Özel Durum İşleme](exception-handling-in-mfc.md)

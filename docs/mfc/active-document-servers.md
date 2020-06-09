@@ -6,29 +6,29 @@ helpviewer_keywords:
 - servers [MFC], active document
 - active document servers [MFC]
 ms.assetid: 131fec1e-02a0-4305-a7ab-903b911232a7
-ms.openlocfilehash: 7050b810bb5e1f0c240222cd9b8c4922ced4238a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 58f2a63a8c640e6ae31640af680894763603e1d0
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394981"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619149"
 ---
 # <a name="active-document-servers"></a>Etkin Belge Sunucuları
 
-Etkin belge sunucuları gibi diğer uygulama türleri Word, Excel veya PowerPoint konağı belgelerin etkin belgeler olarak bilinir. (Bu, yalnızca başka bir belge sayfasında görüntülenen) nesneleri OLE katıştırılmış etkin belgeler, tam arabirimi ve kendilerini oluşturan sunucu uygulamasının tam yerel işlevselliği sağlar. Kullanıcılar, belgeleri oluşturabilir (etkin belgeyi etkin olmaları durumunda), sık kullandığınız uygulamalar tam gücünden yararlanarak henüz kabul sonuç projesi tek bir varlık olarak.
+Word, Excel veya PowerPoint gibi etkin belge sunucuları, etkin belgeler olarak adlandırılan diğer uygulama türlerinin belgelerini barındırır. OLE Embedded nesnelerinin aksine (yalnızca başka bir belge sayfası içinde görüntülenen), etkin belgeler, tam arabirimi ve bunları oluşturan sunucu uygulamasının tüm yerel işlevlerini sağlar. Kullanıcılar, sık kullanılan uygulamalarının tam gücünden yararlanarak belge oluşturabilir (etkin belge etkinse), ancak sonuçta elde edilen projeyi tek bir varlık olarak işleyebilirler.
 
-Etkin belgeler ve her zaman yerinde etkin olan birden fazla sayfası olabilir. Etkin belgeler denetimi ile kendi menülerini birleştirme kullanıcı arabiriminin bir parçası **dosya** ve **yardımcı** kapsayıcının menülerini. Bunlar, kapsayıcının tüm düzenleme alanı kaplayan ve görünümleri ve (kenar boşlukları, altbilgiler ve benzeri) yazıcı sayfasının düzenini denetler.
+Etkin belgelerde birden fazla sayfa bulunabilir ve her zaman yerinde etkin bulunur. Etkin belgeler, kendi menülerini, kapsayıcının **Dosya** ve **Yardım** menüleriyle birleştirerek kullanıcı arabiriminin bir bölümünü denetler. Kapsayıcının düzenleme alanının tamamını kaplar ve görünümleri ve yazıcı sayfasının yerleşimini (kenar boşlukları, altbilgiler, vb.) denetler.
 
-MFC belge/görünüm arabirimleri, komut gönderme eşlemeleri, yazdırma, menü yönetim ve kayıt defteri yönetimini etkin belge sunucuları uygular. Belirli programlama gereklilikleri [etkin belgeler](../mfc/active-documents.md).
+MFC, belge/görünüm arabirimleri, komut gönderme haritaları, yazdırma, menü yönetimi ve kayıt defteri yönetimi ile etkin belge sunucuları uygular. Belirli programlama gereksinimleri, [etkin belgelerde](active-documents.md)ele alınmıştır.
 
-MFC destekleyen etkin belgeler ile [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md) sınıfından türetilen [CCmdTarget](../mfc/reference/ccmdtarget-class.md), ve [Cdocobjectserverıtem](../mfc/reference/cdocobjectserveritem-class.md), türetilmiş [ Coleserverıtem](../mfc/reference/coleserveritem-class.md). MFC ile etkin belge kapsayıcıları destekleyen [Coledocobjectıtem](../mfc/reference/coledocobjectitem-class.md) sınıfından türetilen [Coleclientıtem](../mfc/reference/coleclientitem-class.md).
+MFC [CDocObjectServer](reference/cdocobjectserver-class.md) sınıfı ile etkin belgeleri destekler, [CCmdTarget](reference/ccmdtarget-class.md)ve [CDocObjectServerItem](reference/cdocobjectserveritem-class.md)öğesinden türetilir, [coleserveröğesinden](reference/coleserveritem-class.md)türetilir. MFC Colet [Clienentidıtem](reference/coleclientitem-class.md)öğesinden türetilmiş [Copadocobjectıtem](reference/coledocobjectitem-class.md) sınıfıyla etkin belge kapsayıcılarını destekler.
 
-`CDocObjectServer` Etkin belge arabirimleri eşler, başlatır ve etkin bir belge etkinleştirir. MFC makroları etkin belgelerde komut yönlendirme işlemek için de sağlar. Etkin belgeler kullanmak için AfxDocOb.h StdAfx.h dosyanıza ekleyin.
+`CDocObjectServer`etkin belge arabirimlerini eşleştirir ve etkin bir belgeyi başlatır ve etkinleştirir. MFC Ayrıca, ETKIN belgelerde komut yönlendirmeyi işlemek için makrolar sağlar. Uygulamanızdaki etkin belgeleri kullanmak için Stffx. h dosyanıza AfxDocOb. h ekleyin.
 
-Normal bir MFC sunucusu kendi kancaları `COleServerItem`-türetilmiş sınıf. Seçerseniz MFC Uygulama Sihirbazı bu sınıf sizin için oluşturur **Mini sunucu** veya **tam sunucu** application sunucunuza bileşik belge desteği sağlamak için onay kutusunu işaretleyin. Ayrıca seçerseniz **etkin belge sunucusu** onay kutusu, MFC Uygulama Sihirbazı oluşturur türetilen bir sınıf `CDocObjectServerItem` yerine.
+Normal MFC sunucusu kendi kendine `COleServerItem` türetilmiş sınıfını takar. Uygulama sunucunuza Birleşik belge desteğini sağlamak için **mini sunucu** veya **tam sunucu** onay kutusunu seçerseniz, MFC Uygulama Sihirbazı sizin için bu sınıfı oluşturur. **Etkin belge sunucusu** onay kutusunu da SEÇERSENIZ, MFC Uygulama Sihirbazı bunun yerine öğesinden türetilmiş bir sınıf oluşturur `CDocObjectServerItem` .
 
-`COleDocObjectItem` Sınıfı bir OLE kapsayıcısı etkin belge kapsayıcı olmasını sağlar. MFC Uygulama Sihirbazı'nı seçerek bir etkin belge kapsayıcısı oluşturmak için kullanabileceğiniz **etkin belge kapsayıcı** MFC Uygulama Sihirbazı bileşik belge desteği sayfanın onay kutusunu işaretleyin. Daha fazla bilgi için [bir etkin belge kapsayıcı uygulaması oluşturma](../mfc/creating-an-active-document-container-application.md).
+`COleDocObjectItem`Sınıfı, OLE kapsayıcısının etkin bir belge kapsayıcısı olmasına olanak sağlar. MFC Uygulama Sihirbazı 'nın Birleşik belge desteği sayfasında **etkin belge kapsayıcısı** onay kutusunu seçerek etkin bir belge kapsayıcısı oluşturmak Için MFC Uygulama Sihirbazı ' nı kullanabilirsiniz. Daha fazla bilgi için bkz. [etkin bir belge kapsayıcı uygulaması oluşturma](creating-an-active-document-container-application.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Etkin Belge Kapsaması](../mfc/active-document-containment.md)
+[Etkin belge kapsama](active-document-containment.md)

@@ -9,43 +9,43 @@ helpviewer_keywords:
 - registering custom Clipboard data formats
 - custom Clipboard data formats
 ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
-ms.openlocfilehash: 6f4e159cc1b6918843d4a164dcca88500eb7b038
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 52089364a6be423c69a7031cd0d99e1924de1444
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374602"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626070"
 ---
 # <a name="clipboard-adding-other-formats"></a>Pano: Diğer Biçimleri Ekleme
 
-Bu konu, desteklenen biçimler listesini, özellikle OLE desteği için nasıl genişletiriz açıklar. Konu [Panosu: Verileri Kopyalama ve Yapıştırma,](../mfc/clipboard-copying-and-pasting-data.md) Panodan kopyalama ve yapıştırmayı desteklemek için gereken minimum uygulamayı açıklar. Tüm uyguladığınız buysa, Panoya yerleştirilen tek **biçimler CF_METAFILEPICT**, **CF_EMBEDSOURCE,** **CF_OBJECTDESCRIPTOR**, ve muhtemelen **CF_LINKSOURCE.** Çoğu uygulama, Pano'da bu üçünden daha fazla biçime ihtiyaç duyar.
+Bu konu, özellikle OLE desteği için desteklenen biçimlerin listesini genişletmeyi açıklamaktadır. [Pano: veri kopyalama ve yapıştırma](clipboard-copying-and-pasting-data.md) Pano 'dan kopyalamayı ve yapıştırmayı desteklemek için gereken en düşük uygulamayı tanımlar. Bu tümü uygularsanız, panoya yerleştirilmiş olan tek Biçim **CF_METAFILEPICT**, **cf_embedsource**, **CF_OBJECTDESCRIPTOR**ve muhtemelen **CF_LINKSOURCE**. Çoğu uygulama, panoda bu üçünden daha fazla biçime sahip olacaktır.
 
-## <a name="registering-custom-formats"></a><a name="_core_registering_custom_formats"></a>Özel Biçimleri Kaydetme
+## <a name="registering-custom-formats"></a><a name="_core_registering_custom_formats"></a>Özel biçimleri kaydetme
 
-Kendi özel biçimlerinizi oluşturmak için, herhangi bir özel Pano biçimini kaydederken kullanacağınız yordamı uygulayın: biçimin adını **RegisterClipboardFormat** işlevine geçirin ve biçim kimliği olarak iade değerini kullanın.
+Kendi özel biçimlerinizi oluşturmak için özel Pano biçimini kaydederken kullandığınız yordamın aynısını izleyin: biçimin adını **RegisterClipboardFormat** işlevine geçirin ve dönüş DEĞERINI biçim kimliği olarak kullanın.
 
-## <a name="placing-formats-on-the-clipboard"></a><a name="_core_placing_formats_on_the_clipboard"></a>Panoya Biçim Yerleştirme
+## <a name="placing-formats-on-the-clipboard"></a><a name="_core_placing_formats_on_the_clipboard"></a>Biçimleri Panoya yerleştirme
 
-Panoya yerleştirilenlere daha fazla biçim eklemek için, türetilen sınıftaki `OnGetClipboardData` işlevi `COleClientItem` geçersiz `COleServerItem` kılmanız gerekir veya (kopyalanacak verilerin yerel olup olmadığına bağlı olarak). Bu işlevde, aşağıdaki yordamı kullanmanız gerekir.
+Panoya yerleştirilenlere daha fazla biçim eklemek için, ya `OnGetClipboardData` da `COleClientItem` `COleServerItem` (kopyalanacak verilerin yerel olup olmadığına bağlı olarak) türetilmiş sınıftaki işlevi geçersiz kılmanız gerekir. Bu işlevde, aşağıdaki yordamı kullanmanız gerekir.
 
-#### <a name="to-place-formats-on-the-clipboard"></a>Biçimleri Panoya yerleştirmek için
+#### <a name="to-place-formats-on-the-clipboard"></a>Biçimleri panoya yerleştirmek için
 
 1. Bir `COleDataSource` nesne oluşturun.
 
-1. Bu veri kaynağını, yerel veri biçimlerinizi desteklenen biçimler listesine ekleyerek `COleDataSource::CacheGlobalData`ekleyen bir işleve geçirin.
+1. Bu veri kaynağını, ' i çağırarak, desteklenen biçimlerin listesine yerel veri biçimlerinizi ekleyen bir işleve geçirin `COleDataSource::CacheGlobalData` .
 
-1. Desteklemek istediğiniz her `COleDataSource::CacheGlobalData` standart biçimi arayarak standart biçimler ekleyin.
+1. Desteklemek istediğiniz her standart biçimi çağırarak standart biçimler ekleyin `COleDataSource::CacheGlobalData` .
 
-Bu teknik MFC OLE örnek programı [HIERSVR](../overview/visual-cpp-samples.md) `OnGetClipboardData` 'da kullanılır **(CServerItem** sınıfının üye işlevini inceleyin). HiERSVR başka standart biçimleri desteklemediği için bu örnekteki tek fark üçüncü adımın uygulanmamasıdır.
+Bu teknik MFC OLE örnek programı [Hiersvr](../overview/visual-cpp-samples.md) ' de kullanılır ( `OnGetClipboardData` **CServerItem** sınıfının üye işlevini inceleyin). Bu örnekteki tek fark, HIERSVR diğer standart biçimleri desteklediğinden, üçüncü adım uygulanmaz.
 
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilmek istiyorum
+### <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [OLE veri nesneleri ve veri kaynakları ve tek tip veri aktarımı](../mfc/data-objects-and-data-sources-ole.md)
+- [OLE veri nesneleri ve veri kaynakları ve Tekdüzen veri aktarımı](data-objects-and-data-sources-ole.md)
 
-- [OLE sürükle ve bırak](../mfc/drag-and-drop-ole.md)
+- [OLE sürükle ve bırak](drag-and-drop-ole.md)
 
-- [OLE](../mfc/ole-background.md)
+- [OLE](ole-background.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pano: OLE Pano Mekanizmasını Kullanma](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
+[Pano: OLE Pano Mekanizmasını Kullanma](clipboard-using-the-ole-clipboard-mechanism.md)

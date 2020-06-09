@@ -9,29 +9,29 @@ helpviewer_keywords:
 - MFC, frame windows
 - styles [MFC], windows
 ms.assetid: fc5058c1-eec8-48d8-9f76-3fc01cfa53f7
-ms.openlocfilehash: cade8e7e50779437feb73a94058dc62118c03c10
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3c22944537370a44aee1af1cf71281264ed4969b
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62219749"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626450"
 ---
 # <a name="frame-window-styles-c"></a>Çerçeve Pencere Stilleri (C++)
 
-Framework ile alma çerçeve pencereleri programlarının çoğu için uygundur, ancak gelişmiş işlevleri kullanarak daha fazla esneklik elde edebilirsiniz [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) ve MFC genel işlev [AfxRegisterWndClass ](../mfc/reference/application-information-and-management.md#afxregisterwndclass). `PreCreateWindow` bir üye işlevidir `CWnd`.
+Framework ile aldığınız çerçeve pencereleri çoğu program için uygundur, ancak gelişmiş işlevler [ön penceresi](reference/cwnd-class.md#precreatewindow) ve MFC genel Işlevi [AfxRegisterWndClass](reference/application-information-and-management.md#afxregisterwndclass)kullanarak ek esneklik elde edebilirsiniz. `PreCreateWindow`, öğesinin bir üye işlevidir `CWnd` .
 
-Uygularsanız, **WS_HSCROLL** ve **WS_VSCROLL** stilleri ana çerçeve penceresine, bunun yerine uygulanır **MDICLIENT** kullanıcıların kaydırabileceğişekildepenceresi**MDICLIENT** alan.
+Ana çerçeve penceresine **ws_hscroll** ve **ws_vscroll** stilleri uygularsanız, kullanıcıların **MDICLIENT** alanını kaydırabilmesi için bunların **MDICLIENT** penceresine uygulanması gerekir.
 
-Varsa pencerenin **fws_addtotıtle** stili biti ayarlanmış (Bu varsayılan olarak etkindir), görünüm çerçeve penceresi pencerenin başlık çubuğunda Görünüm'ün belge adına göre görüntülemek için hangi başlık söyler.
+Pencerenin **FWS_ADDTOTITLE** stil biti ayarlandıysa (varsayılan olarak), görünüm çerçeve penceresine, görünümün belge adına göre pencerenin başlık çubuğunda hangi başlığın gösterileceğini söyler.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [MDI alt pencereleri (MDICLIENT) yönetme](../mfc/managing-mdi-child-windows.md), içinde içeren MDI alt pencereleri bir MDI çerçeve penceresi
+- MDI alt Windows [(MDICLIENT)](managing-mdi-child-windows.md), MDI alt pencerelerini IÇEREN bir MDI çerçevesi Içindeki pencereyi yönetme
 
-- [MFC tarafından oluşturulan pencerenin stillerini değiştirme](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)
+- [MFC tarafından oluşturulan pencerenin stillerini değiştirme](changing-the-styles-of-a-window-created-by-mfc.md)
 
-- [Pencere stilleri](../mfc/reference/styles-used-by-mfc.md#window-styles)
+- [Pencere stilleri](reference/styles-used-by-mfc.md#window-styles)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çerçeve Pencereleri](../mfc/frame-windows.md)
+[Çerçeve pencereleri](frame-windows.md)

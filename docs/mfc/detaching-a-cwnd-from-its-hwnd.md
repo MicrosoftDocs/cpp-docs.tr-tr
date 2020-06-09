@@ -8,25 +8,25 @@ helpviewer_keywords:
 - detaching CWnds from HWNDs
 - Detach method (CWnd class)
 ms.assetid: 6efadf84-0517-4a3f-acfd-216e088f19c6
-ms.openlocfilehash: f7a6f97ba9f1dd3a928a5450c1a899ce09a4ac5f
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 2e0484698654cd14f22a92be76a80f71c0f9adf5
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446966"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84621851"
 ---
 # <a name="detaching-a-cwnd-from-its-hwnd"></a>Bir CWnd'i HWND'inden Ayırma
 
-Nesne`HWND` ilişkisini atlatmaya ihtiyacınız varsa, MFC, C++ pencere nesnesinin Windows penceresinden bağlantısını kesten başka bir `CWnd` üye Işlevi ( [Ayır](../mfc/reference/cwnd-class.md#detach)) sağlar. Bu, nesne yok edilirken yok edicinin Windows penceresini yok etmesini engeller.
+Nesne ilişkisini atlatmaya ihtiyacınız varsa `HWND` , MFC `CWnd` C++ pencere nesnesinin Windows penceresinden bağlantısını kesten başka bir üye işlevi sağlar. [Detach](reference/cwnd-class.md#detach) Bu, nesne yok edilirken yok edicinin Windows penceresini yok etmesini engeller.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Windows oluşturma](../mfc/creating-windows.md)
+- [Pencereler oluşturma](creating-windows.md)
 
-- [Pencere yok etme sırası](../mfc/window-destruction-sequence.md)
+- [Pencere yok etme sırası](window-destruction-sequence.md)
 
-- [Pencere belleğini ayırma ve ayırmayı kaldırma](../mfc/allocating-and-deallocating-window-memory.md)
+- [Pencere belleğini ayırma ve serbest bırakma](allocating-and-deallocating-window-memory.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pencere Nesneleri](../mfc/window-objects.md)
+[Pencere nesneleri](window-objects.md)

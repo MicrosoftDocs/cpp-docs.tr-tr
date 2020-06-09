@@ -14,53 +14,53 @@ helpviewer_keywords:
 - files [MFC], manipulating
 - binary access [MFC]
 ms.assetid: ae25e2c5-2859-4679-ab97-438824e93ce1
-ms.openlocfilehash: 3a99c4143bbd27ba765b0289b80be8870a940f63
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8b8859e188e42f4419ca7ee7f683cc31de0c75b3
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365308"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625873"
 ---
 # <a name="files-in-mfc"></a>MFC'deki Dosyalar
 
-Microsoft Foundation Class Library'de (MFC), [CFile](../mfc/reference/cfile-class.md) sınıfı normal dosya G/Ç işlemlerini işler. Bu makale ailesi, dosyaların nasıl açılacağını ve kapatılacağını ve bu dosyalara veri okuma ve yazmanın yanı sıra nasıl açılacağını açıklar. Ayrıca dosya durumu işlemleri tartışır. MFC'nin nesne tabanlı serileştirme özelliklerinin dosyalardaki verileri okuma ve yazmanın alternatif bir yolu olarak nasıl kullanılacağına ilişkin bir açıklama için [Serihale](../mfc/serialization-in-mfc.md)etme makalesine bakın.
+Microsoft Foundation Class Kitaplığı (MFC), sınıf [CFile](reference/cfile-class.md) normal dosya g/ç işlemlerini işler. Bu makale ailesinde, dosyaların nasıl açılacağı ve kapatılanları ve bu dosyalardaki verileri okuma ve yazma işlemleri açıklanmaktadır. Ayrıca dosya durumu işlemlerini de açıklar. MFC 'nin nesne tabanlı serileştirme özelliklerinin, dosyalardaki verileri okumaktan ve yazmanın alternatif bir yolu olarak nasıl kullanılacağına ilişkin bir açıklama için bkz. [serileştirme](serialization-in-mfc.md)makalesi.
 
 > [!NOTE]
-> MFC `CDocument` nesnelerini kullandığınızda, çerçeve sizin için serileştirme çalışmalarının çoğunu yapar. Özellikle, çerçeve oluşturur ve `CFile` nesne kullanır. Yalnızca sınıfın `Serialize` `CDocument`üye işlevini geçersiz kılmanıza kod yazmanız gerekir.
+> MFC `CDocument` nesnelerini kullandığınızda çerçeve, serileştirme işinin çoğunu sizin için işler. Özellikle, çerçeve nesnesini oluşturur ve kullanır `CFile` . Yalnızca sınıfının üye işlevinin geçersiz kılmada kod yazmanız yeterlidir `Serialize` `CDocument` .
 
-Sınıf, `CFile` genel amaçlı ikili dosya işlemleri için bir arabirim sağlar. Ve `CStdioFile` `CMemFile` sınıflar türetilen `CFile` `CSharedFile` ve sınıf `CMemFile` kaynağı daha özel dosya hizmetleri türetilmiştir.
+`CFile`Sınıfı, genel amaçlı ikili dosya işlemlerine yönelik bir arabirim sağlar. Ve sınıfından türetilmiş `CStdioFile` `CMemFile` sınıflar ve `CFile` `CSharedFile` `CMemFile` daha özelleştirilmiş dosya hizmetleri sağlayın.
 
-MFC dosya işleme alternatifleri hakkında daha fazla bilgi *için, Çalışma Zamanı Kitaplığı Başvurusu'nda* [Dosya İşleme'ye](../c-runtime-library/file-handling.md) bakın.
+MFC dosya işleme alternatifleri hakkında daha fazla bilgi için bkz. *çalışma zamanı kitaplık başvurusunda* [Dosya işleme](../c-runtime-library/file-handling.md) .
 
-Türetilen `CFile` sınıflar hakkında bilgi için [MFC hiyerarşi grafiğine](../mfc/hierarchy-chart.md)bakın.
+Türetilmiş sınıflar hakkında daha fazla bilgi için `CFile` bkz. [MFC hiyerarşi grafiği](hierarchy-chart.md).
 
-## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsun?
+## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-*CFile'ı Kullanma*
+*CFile kullan*
 
-- [CFile ile dosya açma](../mfc/opening-files.md)
+- [CFile ile dosya açma](opening-files.md)
 
-- [CFile ile dosya okuma ve yazma](../mfc/reading-and-writing-files.md)
+- [CFile ile dosya okuma ve yazma](reading-and-writing-files.md)
 
-- [CFile ile dosyayı kapatma](../mfc/closing-files.md)
+- [CFile ile bir dosyayı kapatma](closing-files.md)
 
-- [CFile ile dosya durumuna erişin](../mfc/accessing-file-status.md)
+- [CFile ile dosya durumuna erişme](accessing-file-status.md)
 
-*MFC Serileştirme (Nesne Kalıcılığı) kullanma*
+*MFC serileştirme kullanma (nesne kalıcılığı)*
 
-- [Serileştirilebilir bir sınıf oluşturma](../mfc/serialization-making-a-serializable-class.md)
+- [Serileştirilebilir sınıf oluşturma](serialization-making-a-serializable-class.md)
 
-- [CArchive nesnesi üzerinden nesneyi seri hale](../mfc/serialization-serializing-an-object.md)
+- [CArchive nesnesi aracılığıyla bir nesneyi seri hale getirme](serialization-serializing-an-object.md)
 
-- [CArchive nesnesi oluşturma](../mfc/two-ways-to-create-a-carchive-object.md)
+- [CArchive nesnesi oluşturma](two-ways-to-create-a-carchive-object.md)
 
-- [CArchive <\< ve >> işleçlerini kullanma](../mfc/using-the-carchive-output-and-input-operators.md)
+- [CArchive <\< and >> işleçlerini kullanma](using-the-carchive-output-and-input-operators.md)
 
-- [CObjects ve CObject türetilmiş nesneleri arşiv aracılığıyla depolama ve yükleme](../mfc/storing-and-loading-cobjects-via-an-archive.md)
+- [CObjects ve CObject ile türetilmiş nesneleri bir arşiv aracılığıyla depolayın ve yükleyin](storing-and-loading-cobjects-via-an-archive.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramlar](../mfc/mfc-concepts.md)<br/>
-[Genel MFC Konuları](../mfc/general-mfc-topics.md)<br/>
-[CArchive Sınıfı](../mfc/reference/carchive-class.md)<br/>
-[CObject Sınıfı](../mfc/reference/cobject-class.md)
+[Kavramlar](mfc-concepts.md)<br/>
+[Genel MFC Konuları](general-mfc-topics.md)<br/>
+[CArchive sınıfı](reference/carchive-class.md)<br/>
+[CObject sınıfı](reference/cobject-class.md)

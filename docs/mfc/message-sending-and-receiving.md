@@ -9,29 +9,29 @@ helpviewer_keywords:
 - MFC, messages
 - messages [MFC], sending
 ms.assetid: 9ce189cb-b259-4c3b-b6f2-9cfbed18b98b
-ms.openlocfilehash: bda261f4141a7ceb4e678535d9012650818fabce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4da2fce68c1b6fd3827bc8b5d2a40dea5e5f117c
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384055"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626170"
 ---
 # <a name="message-sending-and-receiving"></a>İleti Gönderme ve Alma
 
-İşlem ve framework nasıl yanıt vereceğini gönderen parçası göz önünde bulundurun.
+İşlemin gönderme bölümünü ve Framework 'ün nasıl yanıt verdiğini göz önünde bulundurun.
 
-İletilerin çoğu program ile kullanıcı etkileşimi sonucunda. Komutları kısayol tuş vuruşlarını veya fare tıklamaları menü öğeleri ya da araç çubuğu düğmeleri tarafından oluşturulur. Kullanıcı aynı zamanda Windows iletileri, örneğin, taşıma veya yeniden boyutlandırma bir pencere oluşturur. Windows alın veya odağı kaybeder ve benzeri gibi program başlatma veya sonlandırma gibi olaylar meydana geldiğinde, diğer Windows iletileri gönderilir. Denetim bildirimi iletileri fare tıklamalarına veya diğer kullanıcı etkileşim iletişim kutusunda bir düğme veya liste kutusu denetimi gibi bir denetim tarafından oluşturulur.
+Çoğu ileti, program ile Kullanıcı etkileşiminden kaynaklanır. Komutlar, fare tıklamaları menü öğeleri veya araç çubuğu düğmeleri veya Hızlandırıcı tuş vuruşları tarafından oluşturulur. Kullanıcı, örneğin, bir pencereyi taşıyarak veya yeniden boyutlandırarak Windows iletileri de oluşturur. Windows iletileri, program başlatma veya sonlandırma gibi olaylar gerçekleştiğinde, Windows odak alır veya kaybeder gibi diğer Windows iletileri gönderilir. Denetim-bildirim iletileri, fare tıklamaları veya bir iletişim kutusunda düğme ya da liste kutusu denetimi gibi bir denetimle ilgili diğer kullanıcı etkileşimleri tarafından oluşturulur.
 
-`Run` Sınıfının üye işlevinde `CWinApp` iletileri alır ve bunları uygun penceresine gönderir. Çoğu komut iletileri, uygulamanın ana çerçeve penceresine gönderilir. `WindowProc` İletileri sınıf kitaplığı Alınanlar tarafından önceden tanımlanmış ve bunları alınan ileti kategorisine bağlı olarak farklı şekilde yönlendirir.
+`Run`Sınıfının üye işlevi `CWinApp` iletileri alır ve uygun pencereye gönderir. Çoğu komut iletisi, uygulamanın ana çerçeve penceresine gönderilir. `WindowProc`Sınıf kitaplığı tarafından önceden tanımlanmış, alınan ileti kategorisine bağlı olarak iletileri alır ve farklı şekilde yönlendirir.
 
-Alma işleminin parçası göz önünde bulundurun.
+Şimdi işlemin alma bölümünü göz önünde bulundurun.
 
-İlk ileti alıcısı, pencere nesnesi olması gerekir. Windows iletileri, genellikle doğrudan bu pencere nesnesi tarafından işlenir. Komut iletileri, genellikle uygulamanın ana çerçeve penceresine kaynaklanan açıklanan hedef komut zinciri yönlendirilen [komut yönlendirme](../mfc/command-routing.md).
+Bir iletinin ilk alıcısı bir pencere nesnesi olmalıdır. Windows iletileri genellikle bu pencere nesnesi tarafından doğrudan işlenir. Genellikle uygulamanın ana çerçeve penceresinde bulunan komut iletileri, [komut yönlendirme](command-routing.md)bölümünde açıklanan komut hedefi zincirine yönlendirilir.
 
-İletileri veya komutları alabildiğini her nesne bir ileti veya kendi işleyicisi adı ile komutu bu çiftleri harita kendi ileti vardır.
+İletileri veya komutları alan her bir nesne, işleyicisi adı ile bir ileti veya komutu çift eden kendi ileti eşlemesine sahiptir.
 
-Komut-hedef nesne ileti veya komutunu aldığında, kendi ileti eşlemesi için bir eşleşme arar. İleti için bir işleyici bulursa, işleyici çağırır. İleti eşlemeleri nasıl aranır hakkında daha fazla bilgi için bkz. [nasıl Framework arar ileti eşlemeleri](../mfc/how-the-framework-searches-message-maps.md). Yeniden şekle başvuruda [Framework komutlarında](../mfc/user-interface-objects-and-command-ids.md).
+Bir komut hedefi nesnesi bir ileti veya komut aldığında, ileti eşlemesinde bir eşleşme arar. İleti için bir işleyici bulursa işleyiciyi çağırır. İleti eşlemelerinin nasıl arandığı hakkında daha fazla bilgi için bkz. [Framework 'Ün Ileti eşlemelerini arama şekli](how-the-framework-searches-message-maps.md). [Çerçevede şekil komutlarına](user-interface-objects-and-command-ids.md)tekrar başvurun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
+[Çerçeve bir Işleyiciyi nasıl çağırır](how-the-framework-calls-a-handler.md)

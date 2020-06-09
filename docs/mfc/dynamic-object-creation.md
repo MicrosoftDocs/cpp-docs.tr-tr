@@ -7,24 +7,24 @@ helpviewer_keywords:
 - objects [MFC], creating dynamically at run time
 - dynamic object creation [MFC]
 ms.assetid: 3e0f51cb-3e24-4231-817f-1c0ce9f2d5df
-ms.openlocfilehash: 40a17d3ed458d0634fd5bf27b54d0a36a65e35b9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 00e627e6d73e510ca694966291e2ef518fef18b5
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364801"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619543"
 ---
 # <a name="dynamic-object-creation"></a>Dinamik Nesne Oluşturma
 
-Bu makalede, çalışma zamanında dinamik olarak bir nesne oluşturmak için nasıl açıklanmaktadır. Yordam, Çalışma Zamanı [Sınıf Bilgilerine Erişim](../mfc/accessing-run-time-class-information.md)makalesinde anlatıldığı gibi çalışma zamanı sınıf bilgilerini kullanır.
+Bu makalede, çalışma zamanında dinamik olarak bir nesne oluşturma açıklanır. Yordam, çalışma zamanı sınıf [bilgilerine erişme](accessing-run-time-class-information.md)makalesinde açıklandığı gibi çalışma zamanı sınıf bilgilerini kullanır.
 
 #### <a name="dynamically-create-an-object-given-its-run-time-class"></a>Çalışma zamanı sınıfı verilen bir nesneyi dinamik olarak oluşturma
 
-1. Işlevini kullanarak dinamik olarak bir nesne `CreateObject` oluşturmak için `CRuntimeClass`aşağıdaki kodu kullanın. Hata da, `CreateObject` bir özel durum yükseltmek yerine **NULL** döndürür:
+1. İşlevini kullanarak bir nesneyi dinamik olarak oluşturmak için aşağıdaki kodu kullanın `CreateObject` `CRuntimeClass` . Hata durumunda, `CreateObject` bir özel durum tetikme yerine **null** döndürür:
 
-   [!code-cpp[NVC_MFCCObjectSample#6](../mfc/codesnippet/cpp/dynamic-object-creation_1.cpp)]
+   [!code-cpp[NVC_MFCCObjectSample#6](codesnippet/cpp/dynamic-object-creation_1.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Destroying Window Objects](tn017-destroying-window-objects.md)
-[CObject kullanarak](using-cobject.md) Pencere Nesneleri Yok
+[Pencere nesnelerini](tn017-destroying-window-objects.md) 
+ yok etme [CObject kullanma](using-cobject.md)

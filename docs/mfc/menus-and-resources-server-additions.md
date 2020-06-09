@@ -15,60 +15,60 @@ helpviewer_keywords:
 - server applications [MFC], OLE menus and resources
 - OLE initialization failure [MFC]
 ms.assetid: 56ce9e8d-8f41-4db8-8dee-e8b0702d057c
-ms.openlocfilehash: 8366cd8b0376766b7914c94a24cef6598761a805
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f67212dc7d4e2ab90421c7b2eee48acae4745940
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375985"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626179"
 ---
 # <a name="menus-and-resources-server-additions"></a>Menüler ve Kaynaklar: Sunucu Ekleme
 
-Bu makalede, görsel düzenleme sunucusu (bileşen) uygulamasında menülerde ve diğer kaynaklarda yapılması gereken değişiklikler açıklanmaktadır. Sunucu uygulaması, üç moddan birinde başlatılabildiği için menü yapısına ve diğer kaynaklara birçok ekleme gerektirir: tek başına, gömülü veya yerinde durun. [Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md) makalesinde açıklandığı gibi, en fazla dört menü kümesi vardır. Dördü de MDI tam sunucu uygulaması için kullanılırken, yalnızca üçü bir mini sunucu için kullanılır. Uygulama sihirbazı, istediğiniz sunucu türü için gerekli menü düzenini oluşturur. Bazı özelleştirme gerekli olabilir.
+Bu makalede, bir görsel görüntü sunucusu (bileşen) uygulamasındaki menülerde ve diğer kaynaklarda yapılması gereken değişiklikler açıklanmaktadır. Bir sunucu uygulaması, üç moddan birinde başlatılabildiğinden, menü yapısına ve diğer kaynaklara çok sayıda ekleme gerektirir: tek başına, katıştırılmış veya yerinde. [Menüler ve kaynaklar (OLE)](menus-and-resources-ole.md) makalesinde açıklandığı gibi, en fazla dört menü kümesi vardır. Tüm dört, bir MDI tam sunucu uygulaması için kullanılır, ancak bir minıver için yalnızca üç kullanılır. Uygulama Sihirbazı, istediğiniz sunucu türü için gereken menü yerleşimini oluşturacaktır. Bazı özelleştirmeler gerekli olabilir.
 
-Uygulama sihirbazını kullanmazsanız, HIERSVR'a bakmak isteyebilirsiniz. RC, MFC örnek uygulama [HIERSVR](../overview/visual-cpp-samples.md)için kaynak komut dosyası , bu değişikliklerin nasıl uygulandığını görmek için.
+Uygulama Sihirbazı 'nı kullanmıyorsanız, HIERSVR 'e bakmak isteyebilirsiniz. RC, bu değişikliklerin nasıl uygulandığını görmek için MFC örnek [uygulaması için](../overview/visual-cpp-samples.md)kaynak betiği.
 
-Bu makalede ele alınan konular şunlardır:
+Bu makalede ele alınan konular şunları içerir:
 
-- [Sunucu Menüsü Eklemeleri](#_core_server_menu_additions)
+- [Sunucu menüsü eklemeleri](#_core_server_menu_additions)
 
-- [Hızlandırıcı Tablo Eklemeleri](#_core_server_application_accelerator_table_additions)
+- [Hızlandırıcı tablo eklemeleri](#_core_server_application_accelerator_table_additions)
 
-- [String Tablo Eklemeleri](../mfc/menus-and-resources-container-additions.md)
+- [Dize tablosu eklemeleri](menus-and-resources-container-additions.md)
 
-- [Miniserver Eklemeler](#_core_mini.2d.server_additions)
+- [Minıver eklemeleri](#_core_mini.2d.server_additions)
 
-## <a name="server-menu-additions"></a><a name="_core_server_menu_additions"></a>Sunucu Menüsü Eklemeleri
+## <a name="server-menu-additions"></a><a name="_core_server_menu_additions"></a>Sunucu menüsü eklemeleri
 
-Sunucu (bileşen) uygulamaları, OLE görsel düzenlemeyi desteklemek için menü kaynaklarına eklenmelidir. Uygulama tek başına modda çalıştırıldığında kullanılan menülerin değiştirilmesi gerekmez, ancak uygulamayı oluşturmadan önce iki yeni menü kaynağı eklemeniz gerekir: biri yerinde etkinleştirme desteklemek ve diğeri sunucunun tamamen açık olmasını desteklemek için. Her iki menü kaynağı da tam ve mini sunucu uygulamaları tarafından kullanılır.
+Sunucu (bileşen) uygulamalarında OLE görsel düzenlemesini desteklemek için menü kaynakları eklenmiş olmalıdır. Uygulamanın tek başına modunda çalıştırıldığı zaman kullanılan menülerin değiştirilmesi gerekmez, ancak uygulamayı oluşturmadan önce iki yeni menü kaynağı eklemeniz gerekir: bunlardan biri yerinde etkinleştirmeyi desteklemek için ve diğeri tamamen açık olan sunucuyu destekler. Her iki menü kaynağı da tam ve minıver uygulamaları tarafından kullanılır.
 
-- Yerinde etkinleştirme desteklemek için, tek başına modda çalıştırıldığında kullanılan menü kaynağına çok benzeyen bir menü kaynağı oluşturmanız gerekir. Bu menüdeki fark, Dosya ve Pencere öğelerinin (ve verilerle değil, uygulamayla ilgili diğer menü öğelerinin) eksik olmasıdır. Kapsayıcı uygulaması bu menü öğelerini sağlayacaktır. Bu menü birleştirme tekniği hakkında daha fazla bilgi ve örnek için [Menüler ve Kaynaklar: Menü Birleştirme](../mfc/menus-and-resources-menu-merging.md)makalesine bakın.
+- Yerinde etkinleştirmeyi desteklemek için, tek başına modda çalıştırıldığında kullanılan menü kaynağına çok benzeyen bir menü kaynağı oluşturmanız gerekir. Bu menüdeki fark, dosya ve Pencere öğelerinin (ve veri değil uygulamayla ilgilenen diğer menü öğelerinin) eksik olması olur. Kapsayıcı uygulaması bu menü öğelerini sağlayacak. Hakkında daha fazla bilgi ve bu menü birleştirme tekniğinin bir örneği için, [menüler ve kaynaklar: menü birleştirme](menus-and-resources-menu-merging.md)makalesine bakın.
 
-- Tam açık etkinleştirme desteklemek için, tek başına modda çalıştırıldığında kullanılan menü kaynağıyla neredeyse aynı bir menü kaynağı oluşturmanız gerekir. Bu menü kaynağında yapılan tek değişiklik, bazı öğelerin sunucunun bileşik bir belgede katıştırılmış bir öğe üzerinde çalıştığı gerçeğini yansıtacak şekilde yeniden ifade edilmesidir.
+- Tam açık etkinleştirmeyi desteklemek için, tek başına modda çalıştırıldığında kullanılan menü kaynağıyla neredeyse özdeş bir menü kaynağı oluşturmanız gerekir. Bu menü kaynağına yapılan tek değişiklik, bazı öğelerin bir bileşik belgeye katıştırılmış bir öğe üzerinde çalışan bir olguyu yansıtacak şekilde yeniden gösterilmelerdir.
 
-Bu makalede listelenen değişikliklere ek olarak, kaynak dosyanızın AFXOLESV içermesi gerekir. Microsoft Hazırlık Sınıfı Kitaplığı uygulaması için gerekli olan RC. Bu dosya MFC\Include alt dizinindedir.
+Bu makalede listelenen değişikliklere ek olarak, kaynak dosyanızın AFXOLESV içermesi gerekir. RC, Microsoft Foundation Class Kitaplığı uygulama için gereklidir. Bu dosya Mfc\ınclude alt dizininde yer alır.
 
-## <a name="server-application-accelerator-table-additions"></a><a name="_core_server_application_accelerator_table_additions"></a>Sunucu Uygulama Hızlandırıcı Tablo Eklemeleri
+## <a name="server-application-accelerator-table-additions"></a><a name="_core_server_application_accelerator_table_additions"></a>Sunucu uygulama Hızlandırıcısı tablo eklemeleri
 
-Sunucu uygulamalarına iki yeni hızlandırıcı tablosu kaynağı eklenmelidir; bunlar daha önce açıklanan yeni menü kaynaklarına doğrudan karşılık gelir. Sunucu uygulaması yerinde etkinleştirildiğinde ilk hızlandırıcı tablosu kullanılır. Dosya ve Pencere menülerine bağlı olanlar hariç, görünümün hızlandırıcı tablosundaki tüm girişlerden oluşur.
+Sunucu uygulamalarına iki yeni Hızlandırıcı tablo kaynağı eklenmelidir; daha önce açıklanan yeni menü kaynaklarına doğrudan karşılık gelir. İlk Hızlandırıcı tablosu, sunucu uygulaması yerinde etkinleştirildiğinde kullanılır. Bu, dosya ve pencere menülerine bağlı olanlar hariç, görünümün Hızlandırıcı tablosundaki tüm girdilerden oluşur.
 
-İkinci tablo, görünümün hızlandırıcı tablosunun neredeyse tam bir kopyasıdır. [Server Menü Eklemeleri'nde](#_core_server_menu_additions)belirtilen tamamen açık menüde yapılan farklılıklara paralel değişiklikler.
+İkinci tablo, görünümün Hızlandırıcı tablosunun neredeyse tam bir kopyasıdır. [Sunucu menüsü eklemeleri](#_core_server_menu_additions)bölümünde bahsedilen tam açık menüde yapılan tüm farklılıklar, paralel değişiklikler.
 
-Bu hızlandırıcı tablosu değişikliklerine örnek olarak, IDR_HIERSVRTYPE_SRVR_IP ve IDR_HIERSVRTYPE_SRVR_EMB hızlandırıcı tablolarını HIERSVR'daki IDR_MAINFRAME karşılaştırın. RC dosyası MFC OLE örnek [HIERSVR](../overview/visual-cpp-samples.md)dahil. Dosya ve Pencere hızlandırıcıları yerinde tabloda eksik tir ve bunların tam kopyaları gömülü tablodadır.
+Bu Hızlandırıcı tablo değişikliklerinin bir örneği için IDR_HIERSVRTYPE_SRVR_IP ve IDR_HIERSVRTYPE_SRVR_EMB Hızlandırıcı tablolarını HIERSVR içindeki IDR_MAINFRAME karşılaştırın. RC dosyası MFC OLE örnek [Hiersvr](../overview/visual-cpp-samples.md)'a dahildir. Dosya ve pencere Hızlandırıcılar, yerinde tabloda yok ve bunların tam kopyaları katıştırılmış tabloda.
 
-## <a name="string-table-additions-for-server-applications"></a><a name="_core_string_table_additions_for_server_applications"></a>Sunucu Uygulamaları için String Tablo Eklemeleri
+## <a name="string-table-additions-for-server-applications"></a><a name="_core_string_table_additions_for_server_applications"></a>Sunucu uygulamaları için dize tablosu eklemeleri
 
-Bir sunucu uygulamasında yalnızca bir dize tablosu eklenmesi gereklidir — OLE başlatmanın başarısız olduğunu belirtmek için bir dize. Örnek olarak, uygulama sihirbazı oluşturur dize tablo girişi aşağıdaverilmiştir:
+Sunucu uygulamasında yalnızca bir dize tablosu eklemesi gerekir — OLE başlatmanın başarısız olduğunu belirten bir dize. Örnek olarak, Uygulama Sihirbazının oluşturduğu dize tablosu girdisi aşağıda verilmiştir:
 
-|Kimlik|Dize|
+|ID|Dize|
 |--------|------------|
-|IDP_OLE_INIT_FAILED|OLE başlatma başarısız oldu. OLE kitaplıklarının doğru sürüm olduğundan emin olun.|
+|IDP_OLE_INIT_FAILED|OLE başlatması başarısız oldu. OLE kitaplıklarının doğru sürümde olduğundan emin olun.|
 
-## <a name="miniserver-additions"></a><a name="_core_mini.2d.server_additions"></a>Miniserver Eklemeler
+## <a name="miniserver-additions"></a><a name="_core_mini.2d.server_additions"></a>Minıver eklemeleri
 
-Aynı eklemeler, tam sunucular için yukarıda listelenenler gibi mini sunucular için de geçerlidir. Bir mini sunucu tek başına modda çalıştırılamadığından, ana menüsü çok daha küçüktür. Uygulama sihirbazı tarafından oluşturulan ana menüde yalnızca Çıkış ve Hakkında öğelerini içeren bir Dosya menüsü vardır. Mini sunucular için gömülü ve yerinde menüler ve hızlandırıcılar tam sunucular için olanlarla aynıdır.
+Aynı eklemeler, daha önce tam sunucular için listelenenler gibi minıse 'ler için de geçerlidir. Bir minıver, tek başına modda çalıştırılabilmesi için ana menü çok daha küçüktür. Uygulama Sihirbazı tarafından oluşturulan ana menü yalnızca çıkış ve hakkında öğeleri içeren bir dosya menüsüne sahiptir. Daha önce gömülü ve yerinde menüler ve Hızlandırıcılar, tam sunucularla aynı olanlardır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)<br/>
-[Menüler ve Kaynaklar: Menü Birleştirme](../mfc/menus-and-resources-menu-merging.md)
+[Menüler ve kaynaklar (OLE)](menus-and-resources-ole.md)<br/>
+[Menüler ve Kaynaklar: Menü Birleştirme](menus-and-resources-menu-merging.md)

@@ -7,35 +7,35 @@ helpviewer_keywords:
 - events [MFC], event-driven programming
 - message-driven programming [MFC]
 ms.assetid: d799ed8c-6a9f-4f05-be5d-29cb5bc6d185
-ms.openlocfilehash: 4ddfd0a5ff506e17efeb63624b7cb8c6a8b1eda4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: db529e2a22b45de3c6f6a659874bbaa941187217
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383795"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84624298"
 ---
 # <a name="messages-and-commands-in-the-framework"></a>Framework'teki İletiler ve Komutlar
 
-Microsoft Windows "iletisi temelli." için yazılmış uygulamalar Fare tıklama, tuş vuruşlarınızı, pencere hareketleri ve benzeri gibi olaylara yanıt olarak, Windows için uygun pencere iletileri gönderir. Framework uygulamaları, Windows için başka bir uygulama gibi Windows iletileri işler. Ancak framework Ayrıca iletileri işlemeyi kolay, daha sürdürülebilir ve daha iyi kapsüllenmiş hale bazı iyileştirmeler sağlar.
+Microsoft Windows için yazılan uygulamalar "ileti temelli" dir. Fare tıklamaları, tuş vuruşları, pencere hareketleri vb. gibi olaylara yanıt olarak, Windows iletileri doğru pencereye gönderir. Framework uygulamaları Windows iletilerini Windows için diğer uygulamalar gibi işler. Ancak Framework, iletileri işlemeyi daha kolay, daha sürdürülebilir ve daha iyi Encapsulated hale getirmeye yönelik bazı geliştirmeler de sağlar.
 
-Aşağıdaki konular, iletiler ve komutlar tartışmak için makale ailesi geri kalanında kullanılan anahtar koşulları tanıtmaktadır:
+Aşağıdaki konularda, iletileri ve komutları tartışmak için makale ailesinin geri kalanında kullanılan önemli terimler açıklanmaktadır:
 
-- [İletiler](../mfc/messages.md)
+- [İletiler](messages.md)
 
-- [İleti işleyicileri](../mfc/message-handlers.md)
+- [İleti işleyicileri](message-handlers.md)
 
-- [İleti kategorileri](../mfc/message-categories.md)
+- [İleti kategorileri](message-categories.md)
 
-- [Windows iletilerini ve denetim bildirimi iletileri](../mfc/message-categories.md)
+- [Windows iletileri ve denetim bildirimi iletileri](message-categories.md)
 
-- [Komut iletileri](../mfc/message-categories.md)
+- [Komut iletileri](message-categories.md)
 
-- [İleti eşlemeleri](../mfc/mapping-messages.md)
+- [İleti eşlemeleri](mapping-messages.md)
 
-- [Kullanıcı arabirimi nesneleri ve komut kimlikleri](../mfc/user-interface-objects-and-command-ids.md)
+- [Kullanıcı arabirimi nesneleri ve komut kimlikleri](user-interface-objects-and-command-ids.md)
 
-- [Komut hedefleri](../mfc/command-targets.md)
+- [Komut hedefleri](command-targets.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)
+[İleti İşleme ve Eşleme](message-handling-and-mapping.md)

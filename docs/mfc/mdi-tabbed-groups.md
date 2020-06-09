@@ -5,64 +5,64 @@ helpviewer_keywords:
 - mdi [MFC], tabbed groups
 - tabbed grous [MFC]
 ms.assetid: 0a464f36-39b7-4e68-8b67-ec175de28377
-ms.openlocfilehash: 6b68d1bc06a6827ca94b05fa2760206f424d40fe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0c1bf925003d5081b2cdc837012a57585b1ace60
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310850"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84624359"
 ---
 # <a name="mdi-tabbed-groups"></a>MDI Sekmeli Grupları
 
-Birden çok belge arabirimi (MDI) uygulamaları, bir veya daha fazla sekmeli pencerelerin görüntülemek birden çok belge arabirimi (MDI) sekmeli grupları özelliği sağlar (ya da grupları olarak bilinen sekmeli pencerelerin *sekmeli grupları*) MDI istemci alanında. Sekmeli pencerelerin dikey veya yatay yönde hizalanabilir. Bir uygulamanın birden fazla MDI sekmeli Grup barındırıyorsa, Grup ayırıcılar tarafından ayrılır.
+Birden çok belge arabirimi (MDI) sekmeli gruplar özelliği, birden çok belge arabirimi (MDI) uygulamalarının MDI istemci alanında bir veya daha fazla sekmeli pencere (ya da sekmeli *Grup*olarak bilinen sekmeli pencere gruplarını) görüntülemesine olanak sağlar. Sekmeli pencereler dikey veya yatay olarak hizalanabilir. Bir uygulama birden fazla MDI sekmeli grubu barındırıyorsa, gruplar bölümlendiricileri ile ayrılır.
 
 ## <a name="features"></a>Özellikler
 
 MDI sekmeli gruplarının özellikleri şunlardır:
 
-- Bir uygulama sekmeli pencerelerin dinamik olarak oluşturabilir.
+- Bir uygulama, dinamik olarak sekmeli pencereler oluşturabilir.
 
-- Bir uygulama, yatay veya dikey olarak sekmeli pencerelerin hizalayabilirsiniz.
+- Bir uygulama sekmeli pencereleri yatay veya dikey olarak hizalayabilir.
 
-- Sekmeli windows gruplarının ayırıcılar tarafından ayrılır. Kullanıcı, ayırıcıyı kullanarak sekmeli grupları genişletebilir.
+- Sekmeli pencerelerin grupları, bölümlendiricileri ile ayrılır. Kullanıcı Bölümlendirici kullanarak sekmeli grupları yeniden boyutlandırabilir.
 
-- Kullanıcı, tek tek sekme grupları arasında sürükleyebilirsiniz.
+- Kullanıcı gruplar arasında tek tek sekmeler sürükleyebilirsiniz.
 
-- Kullanıcı, yeni gruplar oluşturabilmesi için ayrı ayrı sekmeler sürükleyebilirsiniz.
+- Kullanıcı yeni gruplar oluşturmak için sekmeleri tek tek sürükleyebilir.
 
-- Kullanıcının sekme taşıyabilir veya kısayol menüsünü kullanarak yeni gruplar oluşturabilir.
+- Kullanıcı, kısayol menüsünü kullanarak sekmeleri taşıyabilir veya yeni gruplar oluşturabilir.
 
-- Bir uygulamayı kaydedebilir ve sekmeli pencere düzenini yükleyin.
+- Uygulama, sekmeli pencerelerin yerleşimini kaydedebilir ve yükleyebilir.
 
-- Bir uygulamayı kaydedebilir ve MDI belge listesi yüklenemedi.
+- Bir uygulama MDI belgelerinin listesini kaydedebilir ve yükleyebilir.
 
-- Bir uygulamanın tek tek sekmeli gruplar erişebilir ve kendi parametrelerini değiştirin.
+- Bir uygulama, tek tek sekmeli gruplara erişebilir ve parametrelerini değiştirebilir.
 
-### <a name="using-mdi-tabbed-groups"></a>Kullanarak MDI sekmeli grupları
+### <a name="using-mdi-tabbed-groups"></a>MDI sekmeli gruplarını kullanma
 
-MDI sekmeli grupları ile yaygın olarak gerçekleştirilen görevler şunlardır:
+Aşağıda, MDI sekmeli gruplarıyla yaygın olarak gerçekleştirilen görevler verilmiştir:
 
-- MDI sekmeli grupları için bir ana çerçeve penceresi etkinleştirmek için çağrı [CMDIFrameWndEx::EnableMDITabbedGroups](../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups). Bu yöntem, ikinci parametresinin örneğidir `CMDITabInfo` sınıfı. Varsayılan parametreleri kullanan veya çağırmadan önce bunları değiştirmeniz `CMDIFrameWndEx::EnableMDITabbedGroups`.
+- Bir ana çerçeve penceresinde MDI sekmeli gruplarını etkinleştirmek için [Cmdiframewndex:: Enabhadıtabbedgroups](reference/cmdiframewndex-class.md#enablemditabbedgroups)komutunu çağırın. Bu yöntemin ikinci parametresi, sınıfının bir örneğidir `CMDITabInfo` . Varsayılan parametreleri kullanabilir veya çağırabilmeniz için bunları değiştirebilirsiniz `CMDIFrameWndEx::EnableMDITabbedGroups` .
 
-- Çalışma zamanında bir MDI sekmeli grubunun özelliklerini değiştirmek için oluşturma veya değiştirme bir `CMDITabInfo` nesne ve çağrı `CMDIFrameWndEx::EnableMDITabbedGroups` yeniden
+- Çalışma zamanında bir MDI sekmeli grubunun özelliklerini değiştirmek için bir nesne oluşturun veya değiştirin `CMDITabInfo` ve `CMDIFrameWndEx::EnableMDITabbedGroups` yeniden çağırın
 
-- MDI listesini almak için windows sekmeli, çağrı `CMDIFrameWndEx::GetMDITabGroups`.
+- MDI sekmeli pencerelerinin bir listesini almak için çağrısı yapın `CMDIFrameWndEx::GetMDITabGroups` .
 
-- Etkin bir sekmeli grubunun yanındaki yeni bir MDI sekmeli grup oluşturmak için arama `CMDIFrameWndEx::MDITabNewGroup`.
+- Etkin bir sekmeli grubun yanında yeni bir MDI sekmeli grubu oluşturmak için çağırın `CMDIFrameWndEx::MDITabNewGroup` .
 
-- Sekmeli Grup önceki veya sonraki pencerenin giriş odağı için çağrı `CMDIFrameWndEx::MDITabMoveToNextGroup`.
+- Giriş odağını sekmeli grubun önceki veya sonraki penceresine kaydırmak için çağrısı yapın `CMDIFrameWndEx::MDITabMoveToNextGroup` .
 
-- Bir pencere bir MDI üyesi olup olmadığını belirlemek için grubun çağrı sekmeli `CMDIFrameWndEx::IsMemberOfMDITabGroup`.
+- Bir pencerenin bir MDI sekmeli grup çağrısının üyesi olup olmadığını belirleme `CMDIFrameWndEx::IsMemberOfMDITabGroup` .
 
-- MDI sekmeleri veya MDI sekmeli grupları için bir ana çerçeve penceresi etkin olup olmadığını belirlemek için çağrı `CMDIFrameWndEx::AreMDITabs`. Yalnızca MDI sekmeli gruplarının etkin olup olmadığını belirlemek için çağrı `CMDIFrameWndEx::IsMDITabbedGroup`.
+- MDI sekmelerinin veya MDI sekmeli grupların ana çerçeve penceresinde etkinleştirilip etkinleştirilmeyeceğini anlamak için çağırın `CMDIFrameWndEx::AreMDITabs` . Yalnızca MDI sekmeli gruplarının etkinleştirilip etkinleştirilmeyeceğini anlamak için çağırın `CMDIFrameWndEx::IsMDITabbedGroup` .
 
-- Kullanıcı bir sekmeye tıkladığında veya başka bir MDI sekmeli Grup sürüklediğinde kısayol menüsünü görüntülemek için geçersiz kılma `CMDIFrameWndEx::OnShowMDITabContextMenu` içinde `CMDIFrameWndEx`-türetilmiş sınıf. Bu yöntemi uygulaması değil, uygulama kısayolunu görüntülenmez.
+- Kullanıcı bir sekmeye tıkladığında veya başka bir MDI sekmeli grubuna sürüklendiğinde kısayol menüsünü göstermek için, `CMDIFrameWndEx::OnShowMDITabContextMenu` `CMDIFrameWndEx` -türetilmiş sınıfta geçersiz kılın. Bu yöntemi gerçekleştirmeyin, uygulama kısayol menüsünü görüntülemez.
 
-- MDI sekmeli gruplarının düzenini uygulamayı kaydetmek için çağrı `CMDIFrameWndEx::SaveMDIState`. Grup profili önceden kaydedilmiş bir MDI yüklemek için sekmeli, çağrı `CMDIFrameWndEx::LoadMDIState`. Ayrıca yüklemek veya bir MDI uygulamasında açılmış belgelerin listesini kaydetmek için bu yöntemleri çağırabilirsiniz. Kaydetme ve yükleme MDI durumu hakkında daha fazla bilgi için bkz. [CMDIFrameWndEx::LoadMDIState](../mfc/reference/cmdiframewndex-class.md#loadmdistate).
+- Bir uygulamadaki MDI sekmeli gruplarının yerleşimini kaydetmek için çağırın `CMDIFrameWndEx::SaveMDIState` . Daha önce kaydedilmiş bir MDI sekmeli grup profilini yüklemek için çağrısı yapın `CMDIFrameWndEx::LoadMDIState` . Ayrıca, açık belgelerin listesini bir MDI uygulamasında yüklemek veya kaydetmek için bu yöntemleri çağırabilirsiniz. MDI durumunu kaydetme ve yükleme hakkında daha fazla bilgi için bkz. [Cmdiframewndex:: LoadMDIState](reference/cmdiframewndex-class.md#loadmdistate).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
-[CMDIFrameWndEx Sınıfı](../mfc/reference/cmdiframewndex-class.md)<br/>
-[CMDIChildWndEx Sınıfı](../mfc/reference/cmdichildwndex-class.md)<br/>
-[CMDITabInfo Sınıfı](../mfc/reference/cmditabinfo-class.md)
+[Kullanıcı arabirimi öğeleri](user-interface-elements-mfc.md)<br/>
+[CMDIFrameWndEx sınıfı](reference/cmdiframewndex-class.md)<br/>
+[Cmdictepdwndex sınıfı](reference/cmdichildwndex-class.md)<br/>
+[CMDITabInfo sınıfı](reference/cmditabinfo-class.md)

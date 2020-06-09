@@ -6,39 +6,39 @@ f1_keywords:
 helpviewer_keywords:
 - frame window classes [MFC], reference
 ms.assetid: 6342ec5f-f922-4da8-a78e-2f5f994c7142
-ms.openlocfilehash: 3e56bd0f449992118db75a44c39b6e0e15cb0d86
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c0a1e1e93433e0fbe07c11eb350216173e74d84
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392799"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625849"
 ---
 # <a name="frame-window-classes-windows"></a>Çerçeve Penceresi Sınıfları (Windows)
 
-Çerçeve pencereleri uygulama veya bir uygulamanın parçası çerçeve windows ' dir. Çerçeve pencereleri genellikle görünümleri, araç çubuklarını ve durum çubukları gibi diğer windows içerir. Durumunda, `CMDIFrameWnd`, bunlar içerebilir `CMDIChildWnd` dolaylı olarak nesneleri.
+Çerçeve pencereleri, bir uygulamanın veya bir uygulamanın bir bölümünün çerçevesini oluşturan Windows. Çerçeve pencereleri genellikle görünümler, araç çubukları ve durum çubukları gibi diğer pencereleri içerir. Bu durumda `CMDIFrameWnd` , `CMDIChildWnd` nesneleri dolaylı olarak içerebilir.
 
-[CFrameWnd](../mfc/reference/cframewnd-class.md)<br/>
-Bir SDI uygulamanın ana çerçeve penceresi için taban sınıf. Ayrıca temel sınıf için tüm diğer çerçeve penceresi sınıfları.
+[CFrameWnd](reference/cframewnd-class.md)<br/>
+SDI uygulamasının ana çerçeve penceresi için temel sınıf. Ayrıca tüm diğer çerçeve pencere sınıfları için temel sınıf.
 
-[CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md)<br/>
-Bir MDI uygulamanın ana çerçeve penceresi için taban sınıf.
+[CMDIFrameWnd](reference/cmdiframewnd-class.md)<br/>
+MDI uygulamasının ana çerçeve penceresi için temel sınıf.
 
-[Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md)<br/>
-Bir MDI uygulamanın belge çerçeve pencereleri için temel sınıf.
+[CMDIChildWnd](reference/cmdichildwnd-class.md)<br/>
+MDI uygulamasının belge çerçeve pencereleri için temel sınıf.
 
-[CMiniFrameWnd](../mfc/reference/cminiframewnd-class.md)<br/>
-Genelde kayan araç çubukları görülen yarım yükseklikte bir pencere.
+[CMiniFrameWnd](reference/cminiframewnd-class.md)<br/>
+Genellikle kayan araç çubuklarının etrafında görülen yarı yükseklikli bir çerçeve penceresi.
 
-[Coleıpframewnd](../mfc/reference/coleipframewnd-class.md)<br/>
-Sunucu belgesinin yerinde düzenlenirken çerçeve penceresi için bir görünüm sağlar.
+[COleIPFrameWnd](reference/coleipframewnd-class.md)<br/>
+Bir sunucu belgesi yerinde düzenlenirken bir görünüm için çerçeve penceresi sağlar.
 
-## <a name="related-class"></a>İlgili sınıfı
+## <a name="related-class"></a>İlgili sınıf
 
-Sınıf `CMenu` , uygulamanızın menüleri erişmek bir arabirim sağlar. Menüleri dinamik olarak çalışma zamanında düzenleme için kullanışlıdır. Örneğin, eklerken veya menü öğeleri bağlam göre siliniyor. Çerçeve pencereleri ile menüleri en sık kullanılan olsa da, bunlar da iletişim kutuları ve diğer nonchild windows ile kullanılabilir.
+Sınıfı `CMenu` , uygulamanızın menülerine erişmek için bir arabirim sağlar. Çalışma zamanında menüleri dinamik olarak değiştirmek için kullanışlıdır; Örneğin, bağlam uyarınca menü öğelerini ekleme veya silme. Menüler yalnızca çerçeve pencereleri ile kullanıldığından, iletişim kutuları ve alt öğe olmayan diğer pencereler ile de kullanılabilir.
 
-[CMenu](../mfc/reference/cmenu-class.md)<br/>
-Kapsülleyen bir `HMENU` uygulamanın menü çubuğu ve açılır menüler tanıtıcısı.
+[CMenu](reference/cmenu-class.md)<br/>
+`HMENU`Uygulamanın menü çubuğu ve açılır menüleri için bir tutamacı kapsüller.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](class-library-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;algoritması&gt; işlevleri'
+title: '&lt;algoritma &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - algorithm/std::adjacent_find
@@ -200,14 +200,14 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: b9f1e5c4c5600fa07d2f9c5222bf57fb43446955
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: c8c550be87eacf81fab994239e07ed2358fad39b
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076835"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84617657"
 ---
-# <a name="ltalgorithmgt-functions"></a>&lt;algoritması&gt; işlevleri
+# <a name="ltalgorithmgt-functions"></a>&lt;algoritma &gt; işlevleri
 
 ## <a name="adjacent_find"></a><a name="adjacent_find"></a>adjacent_find
 
@@ -241,27 +241,27 @@ ForwardIterator adjacent_find(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 
-*son*\
+*soyadına*\
 Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*Pred*\
+*pred*\
 Aranan aralıktaki bitişik öğelerin değerlerinin karşılanmasını sağlayan ikili koşul.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Her birine eşit (ilk sürümde) veya ikili koşulun (İkinci sürümde) tarafından verilen koşulu karşılayan, bu tür bir öğe çifti bulunduğu bir ileri Yineleyici. Aksi takdirde, *son* ' a işaret eden bir yineleyici döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`adjacent_find` algoritması, değiştirici olmayan bir dizi algoritmadır. Aranacak Aralık geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve son konuma artırılamadı tarafından ilk kez ulaşılabilir. Algoritmanın zaman karmaşıklığı, aralıkta bulunan öğelerin sayısında doğrusal bir sayıdır.
+`adjacent_find`Algoritma, değiştirici olmayan bir dizi algoritmadır. Aranacak Aralık geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve son konuma artırılamadı tarafından ilk kez ulaşılabilir. Algoritmanın zaman karmaşıklığı, aralıkta bulunan öğelerin sayısında doğrusal bir sayıdır.
 
-Öğeler arasındaki eşleşmeyi belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Öğeler arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
 ### <a name="example"></a>Örnek
 
@@ -348,25 +348,25 @@ bool all_of(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bir koşulun denetlenmesi için nereden başlayacağını gösteren bir giriş Yineleyici. Yineleyici, bir dizi öğenin başladığı yeri işaretler.
 
-*son*\
+*soyadına*\
 Bir koşulu denetlenecek öğe aralığının sonunu gösteren bir giriş Yineleyici.
 
-*Pred*\
+*pred*\
 İçin sınanacak koşul. Bu, denetlenen bir öğe tarafından karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesidir. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Belirtilen aralıktaki her öğede koşul algılanırsa veya Aralık boşsa **true** , değilse **false** değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yalnızca, Aralık `[0, last - first)``pred(*(first + N))` koşulun **true**olması halinde, her bir `N` için **true** değerini döndürür.
+Şablon **işlevi yalnızca,** Aralık içinde her biri için true değerini döndürür `N` `[0, last - first)` `pred(*(first + N))` . **true**
 
 ### <a name="example"></a>Örnek
 
@@ -424,25 +424,25 @@ bool any_of(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bir koşul için bir öğe aralığının nerede başlatılacağını gösteren bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Bir koşulu denetlenecek öğe aralığının sonunu gösteren bir giriş Yineleyici.
 
-*Pred*\
+*pred*\
 İçin sınanacak koşul. Bu, Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Koşul, sınanmakta olan öğe tarafından yerine getirilmesi gereken koşulu tanımlar. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Koşul, belirtilen aralıkta en az bir kez algılanırsa **true** , koşul hiç algılanmadıysa **false** döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yalnızca, aralıktaki bazı `N` için **true** değerini döndürür
+Şablon işlevi yalnızca, Aralık içinde bazıları için **true** değerini döndürür `N`
 
 `[0, last - first)`, koşul `pred(*(first + N))` true 'dur.
 
@@ -501,19 +501,19 @@ bool binary_search(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 
-*son*\
+*soyadına*\
 Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*değer*\
+*deeri*\
 Öğe değeri ile eşleşmesi gereken veya ikili koşul tarafından belirtilen öğe değeri ile koşulu karşılaması gereken değer.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 aralıkta belirtilen değere eşit veya eşdeğer bir öğe bulunursa **true** ; Aksi takdirde, **false**.
 
@@ -521,13 +521,13 @@ aralıkta belirtilen değere eşit veya eşdeğer bir öğe bulunursa **true** ;
 
 Başvurulan sıralanmış kaynak aralığı geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve sıra içinde, son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Sıralanmış aralığın her biri, birleştirilmiş aralıkları sıralamak için algoritma tarafından kullanılacak şekilde, `binary_search` algoritmasının uygulamasına bir önkoşul olarak düzenlenmelidir.
+Sıralanmış aralığın her biri, algoritma `binary_search` tarafından Birleşik aralıkları sıralamak için kullanılan aynı sıralamaya uygun olarak, algoritmanın uygulamasına bir ön koşul olarak düzenlenmelidir.
 
-Kaynak aralıkları `binary_search`tarafından değiştirilmez.
+Kaynak aralıkları tarafından değiştirilmez `binary_search` .
 
 İleriye doğru yineleyicilerin değer türlerinin sıralanabilmesi için kıyasla daha az karşılaştırılabilir olması gerekir. bu sayede, iki öğe verildiğinde, eşdeğer oldukları (Yani bunlardan daha küçük olmadığı anlamda) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, eşdeğer olmayan öğeler arasında bir sıralamaya neden olur
 
-Algoritmanın karmaşıklığı, rasgele erişim yineleyiciler ve doğrusal olarak, diğer bir deyişle, diğer bir deyişle, (`last` - `first`) ile orantılı bir şekilde Logaritmik değildir.
+Algoritmanın karmaşıklığı Rastgele erişimli yineleyiciler ve doğrusal olarak, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle, () ile orantılıdır `last`  -  `first` .
 
 ### <a name="example"></a>Örnek
 
@@ -640,21 +640,21 @@ constexpr const Type& clamp(
 
 ### <a name="parameters"></a>Parametreler
 
-*değer*\
+*deeri*\
 *Üst* ve *alt*ile karşılaştırılacak değer.
 
-*daha düşük*\
+*düşürül*\
 Değerlerin Clamp *değerine* alt sınırı.
 
-*büyük*\
+*üst*\
 Değerlerin Clamp *değerine* göre üst sınırı.
 
-*Pred*\
+*pred*\
 *Değeri* *alt* veya *üst*ile karşılaştırmak için kullanılan bir koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve ilki ikinciden küçükse **true** , aksi durumda **false**değerini döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-`value < lower`*daha düşük* bir başvuruyu veya bir *üst* If `upper < value`başvurusunu döndürür. Aksi takdirde, *değere*bir başvuru döndürür.
+*Alt* If için bir başvuru `value < lower` veya bir *üst* if başvurusu döndürür `upper < value` . Aksi takdirde, *değere*bir başvuru döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -681,29 +681,29 @@ ForwardIterator2 copy(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Kaynak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Kaynak aralıktaki son öğeden sonraki konumu ele alan bir giriş Yineleyici.
 
-*Destbeg*\
+*destBeg*\
 Hedef aralıktaki ilk öğenin konumunu ele alarak çıkış Yineleyici.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-Hedef aralıktaki son öğeden bir geçen konumu ele alan çıkış Yineleyici, diğer bir deyişle, yineleyici `result` + (*son* - *ilk*).
+Hedef aralıktaki son öğeden bir geçen konumu ele alan çıkış Yineleyici, yani Yineleyici adresler `result` + (*son*  -  *ilk*).
 
 ### <a name="remarks"></a>Açıklamalar
 
 Kaynak aralığının geçerli olması gerekir ve hedefte, kopyalanmakta olan tüm öğeleri tutmak için yeterli alan olmalıdır.
 
-Algoritma, kaynak öğeleri ilk öğesiyle başlayarak sırayla kopyalamadığından, hedef Aralık kaynak aralığı ile örtüşebilir ve kaynak aralığın *son* konumu hedef aralıkta yer alır. `copy`, kaynak ve hedef aralıklar arasında çakışma olmaması dışında, öğeleri sola doğru değil, sağa kaydırmak için kullanılabilir. Herhangi bir sayıda konum sağa kaydırmak için [copy_backward](../standard-library/algorithm-functions.md#copy_backward) algoritmasını kullanın.
+Algoritma, kaynak öğeleri ilk öğesiyle başlayarak sırayla kopyalamadığından, hedef Aralık kaynak aralığı ile örtüşebilir ve kaynak aralığın *son* konumu hedef aralıkta yer alır. `copy`Kaynak ve hedef aralıklar arasında çakışma yoksa sağ değil, öğeleri sola kaydırmak için kullanılabilir. Herhangi bir sayıda konum sağa kaydırmak için [copy_backward](algorithm-functions.md#copy_backward) algoritmasını kullanın.
 
-`copy` algoritması, yalnızca yineleyiciler tarafından işaret edilen değerleri değiştirir ve hedef aralıktaki öğelere yeni değerler atanıyor. Yeni öğe oluşturmak için kullanılamaz ve öğeleri boş bir kapsayıcıya doğrudan ekleyemez.
+`copy`Algoritma yalnızca yineleyiciler tarafından işaret edilen değerleri değiştirir ve hedef aralıktaki öğelere yeni değerler atanıyor. Yeni öğe oluşturmak için kullanılamaz ve öğeleri boş bir kapsayıcıya doğrudan ekleyemez.
 
 ### <a name="example"></a>Örnek
 
@@ -777,30 +777,30 @@ BidirectionalIterator2 copy_backward(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Kaynak aralıktaki ilk öğenin konumunu belirleyen çift yönlü yineleyici.
 
-*son*\
+*soyadına*\
 Kaynak aralıkta son öğeden bir önceki öğenin konumunu belirleyen çift yönlü yineleyici.
 
-*DestEnd*\
+*destEnd*\
 Hedef aralıkta son öğeden bir önceki öğenin konumunu belirleyen çift yönlü yineleyici.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-Hedef aralıktaki son öğeden bir geçen konumu ele alan çıkış Yineleyici, diğer bir deyişle, yineleyici *DestEnd* -( *önce* *son* - ).
+Hedef aralıktaki son öğeden bir geçen konumu ele alan çıkış Yineleyici, yani Yineleyici *DestEnd* -(*son*  -  *ilk*) adresini adresleyen.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Kaynak aralığının geçerli olması gerekir ve hedefte, kopyalanmakta olan tüm öğeleri tutmak için yeterli alan olmalıdır.
 
-`copy_backward` algoritması, `copy` algoritmasından daha sıkı gereksinimler getirir. Hem giriş hem de çıkış yineleyicileri çift yönlü olmalıdır.
+`copy_backward`Algoritma, algoritmadan daha sıkı gereksinimler getirir `copy` . Hem giriş hem de çıkış yineleyicileri çift yönlü olmalıdır.
 
-`copy_backward` ve [move_backward](../standard-library/algorithm-functions.md#move_backward) algoritmaları, çıkış aralığını hedef C++ aralığın sonuna işaret eden bir yineleyici Ile tanımlayarak tek standart kitaplık algoritmalardır.
+`copy_backward`Ve [move_backward](algorithm-functions.md#move_backward) algoritmaları, çıkış aralığını hedef aralığın sonuna işaret eden bir yineleyici Ile tanımlayarak tek C++ standart kitaplığı algoritmalardır.
 
-Algoritma, kaynak öğeleri son öğe ile başlayan sırayla kopyalamadığından, hedef Aralık kaynak aralığı ile örtüşebilir ve kaynak aralığın *ilk* konumu hedef aralıkta yer içermez. `copy_backward`, kaynak ve hedef aralıklar arasında çakışma olmaması dışında, öğeleri sağa kaydırmak için kullanılabilir. Herhangi bir sayıda konum sola kaydırmak için [kopyalama](../standard-library/algorithm-functions.md#copy) algoritmasını kullanın.
+Algoritma, kaynak öğeleri son öğe ile başlayan sırayla kopyalamadığından, hedef Aralık kaynak aralığı ile örtüşebilir ve kaynak aralığın *ilk* konumu hedef aralıkta yer içermez. `copy_backward`Kaynak ve hedef aralıklar arasında çakışma olmaması dışında, öğeleri sağa doğru kaydırmak için kullanılabilir. Herhangi bir sayıda konum sola kaydırmak için [kopyalama](algorithm-functions.md#copy) algoritmasını kullanın.
 
-`copy_backward` algoritması, yalnızca yineleyiciler tarafından işaret edilen değerleri değiştirir ve hedef aralıktaki öğelere yeni değerler atanıyor. Yeni öğe oluşturmak için kullanılamaz ve öğeleri boş bir kapsayıcıya doğrudan ekleyemez.
+`copy_backward`Algoritma yalnızca yineleyiciler tarafından işaret edilen değerleri değiştirir ve hedef aralıktaki öğelere yeni değerler atanıyor. Yeni öğe oluşturmak için kullanılamaz ve öğeleri boş bir kapsayıcıya doğrudan ekleyemez.
 
 ### <a name="example"></a>Örnek
 
@@ -883,22 +883,22 @@ ForwardIterator2 copy_if(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Koşulu denetlemek için bir aralığın başlangıcını gösteren bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Aralığın sonunu gösteren bir giriş yineleyicisi.
 
-*hedef*\
+*HD*\
 Kopyalanmış öğelerin hedefini gösteren çıkış yineleyicisi.
 
-*Pred*\
+*pred*\
 Aralıktaki her öğenin test edileceği koşul. Bu koşul, Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Koşulu yerine getiren her öğe için bir kez *hedefe* eşit olan bir çıkış yineleyicisi. Diğer bir deyişle, dönüş değeri eksi *hedef* , kopyalanmış öğelerin sayısına eşittir.
 
@@ -908,7 +908,7 @@ Koşulu yerine getiren her öğe için bir kez *hedefe* eşit olan bir çıkış
 
 `if (pred(*first + N)) * dest++ = *(first + N))`
 
-Aralık `[0, last - first)`her `N` için, en düşük değerle başlayan `N` değerlerinin tamamen artırılması için. *Hedef* ve *ilk* olarak depolama bölgelerini belirlerseniz, *hedef* `[ first, last )`Aralık içinde olmamalıdır.
+aralıkta her biri için bir kez `N` `[0, last - first)` , `N` En düşük değerle başlayan değerleri kesinlikle artırmak için. *Hedef* ve *ilk* olarak depolama bölgelerini belirlerseniz, *hedef* Aralık içinde olmamalıdır `[ first, last )` .
 
 ### <a name="example"></a>Örnek
 
@@ -986,25 +986,25 @@ ForwardIterator2 copy_n(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Öğelerin nereden kopyalanacağını gösteren bir giriş Yineleyici.
 
-*sayı*\
+*biriktirme*\
 Kopyalanacak öğe sayısını belirten imzalı veya işaretsiz bir tamsayı türü.
 
-*hedef*\
+*HD*\
 Öğelerin nereye kopyalanacağını gösteren bir çıkış yineleyicisi.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Öğelerin kopyalandığı çıkış yineleyiciyi döndürür. Bu, *hedef* parametrenin döndürülen değeriyle aynıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, Aralık `[0, count)`her bir `N` için `*(dest + N) = *(first + N))` değerlendirir ve en düşük değerle başlayarak `N` değerlerini kesin olarak artırır. Ardından `dest + N`döndürür. *Hedef* ve *ilk* olarak depolama bölgelerini belirlerseniz, *hedef* `[first, last)`Aralık içinde olmamalıdır.
+Şablon işlevi, `*(dest + N) = *(first + N))` Aralık içinde her biri için bir kez değerlendirilir `N` `[0, count)` ve `N` En düşük değer ile başlangıç değerlerini kesin olarak artırır. Ardından döndürür `dest + N` . *Hedef* ve *ilk* olarak depolama bölgelerini belirlerseniz, *hedef* Aralık içinde olmamalıdır `[first, last)` .
 
 ### <a name="example"></a>Örnek
 
@@ -1057,27 +1057,27 @@ count(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bir giriş yineleyicisi, geçilen aralıktaki ilk öğenin konumunu ele alıyor.
 
-*son*\
+*soyadına*\
 Bir giriş yineleyicisi, ele eklenecek aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*değer*\
+*deeri*\
 Sayılacak öğelerin değeri.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-Değer *değeri*olan [*First*, *Last*) aralığındaki öğelerin sayısını sayan `InputIterator` fark türü.
+`InputIterator`Değer *değeri*olan [*First*, *Last*) aralığındaki öğe sayısını sayan fark türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Bu algoritma, [count_if](../standard-library/algorithm-functions.md#count_if)şablon işlevi ile herhangi bir koşulu karşılayan öğeleri saymak için genelleştirilmiştir.
+Bu algoritma, [count_if](algorithm-functions.md#count_if)şablon işlevi ile herhangi bir koşulu karşılayan öğeleri saymak için genelleştirilmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -1138,25 +1138,25 @@ count_if(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Aranacak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Aranacak aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin sayılmaması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Koşul tarafından belirtilen koşulu karşılayan öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon işlevi, algoritma [sayısının](../standard-library/algorithm-functions.md#count)genelleştirilmesidir ve bu koşulun "şuna eşit belirli bir değere" koşulunu herhangi bir koşula göre değiştirir.
+Bu şablon işlevi, algoritma [sayısının](algorithm-functions.md#count)genelleştirilmesidir ve bu koşulun "şuna eşit belirli bir değere" koşulunu herhangi bir koşula göre değiştirir.
 
 ### <a name="example"></a>Örnek
 
@@ -1205,9 +1205,9 @@ The number of elements in v1 greater than 10 is: 2.
 
 Bir ikili koşula göre belirtilen anlamda, eşitlik veya denklik için öğe ile iki Aralık öğesini karşılaştırır.
 
-Farklı kapsayıcı türlerindeki öğeleri (örneğin `vector` ve `list`) veya farklı öğe türlerini karşılaştırırken veya kapsayıcıların alt aralıklarını karşılaştırmanız gerektiğinde `std::equal` kullanın. Aksi halde, aynı kapsayıcı türünde aynı türdeki öğeleri karşılaştırırken, her kapsayıcı için belirtilen üye olmayan `operator==` kullanın.
+`std::equal`Farklı kapsayıcı türlerindeki (örneğin `vector` ve `list` ) veya farklı öğe türlerini karşılaştırırken veya kapsayıcıların alt aralıklarını karşılaştırmanız gerektiğinde kullanın. Aksi halde, aynı kapsayıcı türünde aynı türdeki öğeleri karşılaştırırken, `operator==` her kapsayıcı için belirtilen üye olmayan öğeyi kullanın.
 
-İkinci Aralık için yalnızca tek bir yineleyici alan aşırı yüklemeler ikinci aralığın ilk aralıktan daha uzun olması fark etmez ve ikinci Aralık daha kısaysa tanımsız davranışlara neden olacak şekilde, C++ 14 kodunda çift aralıklı aşırı yüklemeleri kullanın. ilk aralıktan fazla.
+İkinci Aralık ilk aralıktan daha uzun olduğunda ve ikinci Aralık ilk aralıktan daha kısaysa tanımsız davranışa yol açacak şekilde, C++ 14 kodunda çift aralıklı aşırı yüklemeleri kullanın. Bu, ikinci Aralık ilk aralıktan daha uzunsa tanımsız davranışa neden olur.
 
 ```cpp
 template<class InputIterator1, class InputIterator2>
@@ -1273,7 +1273,7 @@ bool equal(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -1288,10 +1288,10 @@ Test edilecek ikinci aralıktaki ilk öğenin konumunu ele aldığı bir giriş 
 *last2*\
 Test edilecek ikinci aralıktaki son öğeden bir önceki öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*Pred*\
+*pred*\
 İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 yalnızca, veya öğesi öğesine göre karşılaştırıldığı zaman ikili koşulun altında aralıklar özdeş veya eşdeğer ise **true** . Aksi takdirde, **false**.
 
@@ -1301,7 +1301,7 @@ Aranacak Aralık geçerli olmalıdır; tüm yineleyiciler başvurulmalıdır ve 
 
 İki Aralık eşitse, algoritmanın zaman karmaşıklığı, aralıkta bulunan öğelerin sayısında doğrusal olur. Aksi takdirde, işlev hemen **false**döndürür.
 
-Ne `operator==` ne de Kullanıcı tanımlı koşul, işlenenleri arasında simetrik, yansımalı ve geçişli bir denklik ilişkisi uygulamak için gerekli değildir.
+`operator==`Ne ne de Kullanıcı tanımlı koşul, işlenenleri arasında simetrik, yansımalı ve geçişli bir denklik ilişkisi uygulamak için gerekli değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -1357,19 +1357,19 @@ pair<ForwardIterator, ForwardIterator> equal_range(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 
-*son*\
+*soyadına*\
 Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*değer*\
+*deeri*\
 Sıralı aralıktaki aranmakta olan değer.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Tüm öğelerin, kullanılan ikili koşul ( *Pred* veya varsayılan, küçüktür) tarafından tanımlanan anlamda *değere* eşit olduğu, bir alt Aralık belirten bir alt aralığı belirten bir çift yineleyiciler çifti.
 
@@ -1377,13 +1377,13 @@ Aralıktaki hiçbir öğe *değere*eşdeğer değilse, döndürülen çiftin iç
 
 ### <a name="remarks"></a>Açıklamalar
 
-Algoritmanın döndürdüğü çiftin ilk yineleyicisi [lower_bound](../standard-library/algorithm-functions.md#lower_bound)ve ikinci Yineleyici [upper_bound](../standard-library/algorithm-functions.md#upper_bound).
+Algoritmanın döndürdüğü çiftin ilk yineleyicisi [lower_bound](algorithm-functions.md#lower_bound)ve ikinci Yineleyici [upper_bound](algorithm-functions.md#upper_bound).
 
-Aralık `equal_range`için belirtilen koşula göre sıralanmalıdır. Örneğin, büyüktür koşulunu kullanacaksanız, Aralık azalan düzende sıralanmalıdır.
+Aralık, öğesine verilen koşula göre sıralanmalıdır `equal_range` . Örneğin, büyüktür koşulunu kullanacaksanız, Aralık azalan düzende sıralanmalıdır.
 
-`equal_range` tarafından döndürülen yineleyiciler çifti tarafından tanımlanan muhtemelen boş alt aralıktaki öğeler, kullanılan koşul tarafından tanımlanan anlamda *değere* eşdeğerdir.
+Tarafından döndürülen yineleyicilerin çifti tarafından tanımlanan muhtemelen boş alt aralıktaki öğeler, `equal_range` kullanılan koşul tarafından tanımlanan anlamda *değere* eşdeğerdir.
 
-Algoritmanın karmaşıklığı, rasgele erişim yineleyicileri için Logaritmik, aksi takdirde doğrusal, diğer bir deyişle, adım sayısı ile orantılı (*son* * - )* .
+Algoritmanın karmaşıklığı Rastgele erişimli yineleyiciler ve doğrusal olarak, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle*last*, diğer bir deyişle, diğer bir deyişle,  -  *first*
 
 ### <a name="example"></a>Örnek
 
@@ -1523,16 +1523,16 @@ void fill(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 İleri bir yineleyici, içine eklenecek aralıktaki ilk öğenin konumunu ele alıyor.
 
-*son*\
+*soyadına*\
 Bir ileriye doğru yineleyici, içine geçmek üzere aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*değer*\
+*deeri*\
 [*First*, *Last*) aralığındaki öğelere atanacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1601,19 +1601,19 @@ ForwardIterator fill_n(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Değer *değerine*atanacak aralıktaki ilk öğenin konumunu ele alarak çıkış Yineleyici.
 
-*sayı*\
+*biriktirme*\
 Değere atanacak öğe sayısını belirten imzalı veya işaretsiz bir tamsayı türü.
 
-*değer*\
+*deeri*\
 [*First*, *First + Count*) aralığındaki öğelere atanacak değer.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Eğer *Count* değeri sıfır >, aksi takdirde ilk öğe olan öğe için bir yineleyici.
 
@@ -1690,27 +1690,27 @@ ForwardIterator find(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Belirtilen değer için aranacak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Belirtilen değer için Aranmak üzere aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
-*değer*\
+*deeri*\
 Aranacak değer.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Aranmakta olan aralıktaki belirtilen değerin ilk oluşumunu ele aldığı bir giriş Yineleyici. Denk bir değere sahip hiçbir öğe bulunmazsa, *en son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-`find()`kullanarak bir kod örneği için bkz. [find_if](../standard-library/algorithm-functions.md#find_if).
+Kullanarak bir kod örneği için `find()` bkz. [find_if](algorithm-functions.md#find_if).
 
 ## <a name="find_end"></a><a name="find_end"></a>find_end
 
@@ -1767,16 +1767,16 @@ Arama için aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yine
 *last2*\
 Arama için aralıktaki son öğeden geçen bir konumu ele alarak ileri Yineleyici.
 
-*Pred*\
+*pred*\
 İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Belirtilen [first2, Last2) dizisiyle eşleşen [First1, last1) içindeki son alt dizinin ilk öğesinin konumunu ele alan bir ileriye doğru yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
 Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide, son konuma artırılamadı tarafından ilk kez ulaşılabilir.
 
@@ -1931,16 +1931,16 @@ Eşleştirilecek aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir
 *last2*\
 Bir ileri Yineleyici, eşleştirilecek aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*Pred*\
+*pred*\
 İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Bir ileri Yineleyici, belirtilen sırayla eşleşen veya bir ikili koşula göre belirtilen bir Sense ile eşdeğer olan ilk alt dizinin ilk öğesinin konumunu ele alıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
 Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide, son konuma artırılamadı tarafından ilk kez ulaşılabilir.
 
@@ -2063,22 +2063,22 @@ ForwardIterator find_if(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Aranacak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Aranacak aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
-*Pred*\
-Aranmakta olan öğenin yerine getirilmesi için koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi veya [lambda ifadesi](../cpp/lambda-expressions-in-cpp.md) . Birli koşul tek bir bağımsız değişken alır ve memnun olursa **true** , aksi takdirde **false** döndürür. *Pred* imzası etkin bir `bool pred(const T& arg);`olmalıdır; burada `T`, başvurunun `InputIterator` örtük olarak dönüştürülebileceği bir türdür. **Const** anahtar sözcüğü yalnızca işlev nesnesinin veya lambda bağımsız değişkeni değiştirmemelidir.
+*pred*\
+Aranmakta olan öğenin yerine getirilmesi için koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi veya [lambda ifadesi](../cpp/lambda-expressions-in-cpp.md) . Birli koşul tek bir bağımsız değişken alır ve memnun olursa **true** , aksi takdirde **false** döndürür. *Pred* imzası etkin bir şekilde olmalıdır `bool pred(const T& arg);` ; burada, başvuru `T` `InputIterator` yapıldığında örtük olarak dönüştürülebilen bir tür olur. **Const** anahtar sözcüğü yalnızca işlev nesnesinin veya lambda bağımsız değişkeni değiştirmemelidir.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Koşul tarafından belirtilen koşulu karşılayan aralıktaki ilk öğeyi ifade eden bir giriş Yineleyici (koşul, **true**sonucunu vermez). Koşulu karşılayan bir öğe bulunmazsa, *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon işlevi, "Şuna eşittir belirli bir değere" koşulunu değiştirme algoritması [bul](../standard-library/algorithm-functions.md#find)'un bir genelleştirmesidir. Mantıksal ters (koşulu karşılamayan ilk öğeyi bul) için bkz. [find_if_not](../standard-library/algorithm-functions.md#find_if_not).
+Bu şablon işlevi, "Şuna eşittir belirli bir değere" koşulunu değiştirme algoritması [bul](algorithm-functions.md#find)'un bir genelleştirmesidir. Mantıksal ters (koşulu karşılamayan ilk öğeyi bul) için bkz. [find_if_not](algorithm-functions.md#find_if_not).
 
 ### <a name="example"></a>Örnek
 
@@ -2185,24 +2185,24 @@ ForwardIterator find_if_not(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Aranacak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Aranacak aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
-*Pred*\
-Aranan öğenin karşılanmadığı koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi veya [lambda ifadesi](../cpp/lambda-expressions-in-cpp.md) . Birli koşul tek bir bağımsız değişken alır ve memnun olursa **true** , aksi takdirde **false** döndürür. *Pred* imzası etkin bir `bool pred(const T& arg);`olmalıdır; burada `T`, başvurunun `InputIterator` örtük olarak dönüştürülebileceği bir türdür. **Const** anahtar sözcüğü yalnızca işlev nesnesinin veya lambda bağımsız değişkeni değiştirmemelidir.
+*pred*\
+Aranan öğenin karşılanmadığı koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi veya [lambda ifadesi](../cpp/lambda-expressions-in-cpp.md) . Birli koşul tek bir bağımsız değişken alır ve memnun olursa **true** , aksi takdirde **false** döndürür. *Pred* imzası etkin bir şekilde olmalıdır `bool pred(const T& arg);` ; burada, başvuru `T` `InputIterator` yapıldığında örtük olarak dönüştürülebilen bir tür olur. **Const** anahtar sözcüğü yalnızca işlev nesnesinin veya lambda bağımsız değişkeni değiştirmemelidir.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Koşul tarafından belirtilen koşulu karşılamayan aralıktaki ilk öğeyi başvuran bir giriş Yineleyici (koşul **false**olarak sonuçlanır). Tüm öğeler koşulu karşılıyorsa (koşul her öğe için **true** sonucunu verir), *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon işlevi, "Şuna eşittir belirli bir değere" koşulunu değiştirme algoritması [bul](../standard-library/algorithm-functions.md#find)'un bir genelleştirmesidir. Mantıksal ters (koşulu karşılayan ilk öğeyi bul) için bkz. [find_if](../standard-library/algorithm-functions.md#find_if).
+Bu şablon işlevi, "Şuna eşittir belirli bir değere" koşulunu değiştirme algoritması [bul](algorithm-functions.md#find)'un bir genelleştirmesidir. Mantıksal ters (koşulu karşılayan ilk öğeyi bul) için bkz. [find_if](algorithm-functions.md#find_if).
 
-`find_if_not()`bir kod örneği için, bkz. [find_if](../standard-library/algorithm-functions.md#find_if).
+Bir kod örneği için `find_if_not()` , bkz. [find_if](algorithm-functions.md#find_if).
 
 ## <a name="for_each"></a><a name="for_each"></a>for_each
 
@@ -2225,16 +2225,16 @@ void for_each(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Üzerinde çalışılan aralıktaki ilk öğenin konumunu ele alan bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Üzerinde çalışılan aralıktaki son öğeden sonraki konumu ele alan bir giriş Yineleyici.
 
-*func*\
+*melerinin*\
 Aralıktaki her öğeye uygulanan Kullanıcı tanımlı işlev nesnesi.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 İşlev nesnesinin, aralıktaki tüm öğelere uygulandıktan sonra bir kopyası.
 
@@ -2244,7 +2244,7 @@ Algoritma `for_each` çok esnektir ve farklı, Kullanıcı tarafından belirtile
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve sıra içinde, son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Karmaşıklık, en çok (*en* - *ilk*) karşılaştırmalarda doğrusal bir şekilde yapılır.
+Karmaşıklık en çok (*son*  -  *ilk*) karşılaştırmalarda doğrusal olarak belirlenir.
 
 ### <a name="example"></a>Örnek
 
@@ -2396,13 +2396,13 @@ void generate(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Değerleri atanacak olan aralıktaki ilk öğenin konumunu ele veren ileriye doğru bir yineleyici.
 
-*son*\
+*soyadına*\
 Bir ileriye doğru yineleyici, değerleri atanacak olan aralıktaki son öğeden geçen öğeyi ele alıyor.
 
-*gen*\
+*alanına*\
 Aralıktaki öğelerin her birine atanacak değerleri oluşturmak için kullanılan bağımsız değişken olmadan çağrılan bir işlev nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2411,7 +2411,7 @@ Aralıktaki öğelerin her birine atanacak değerleri oluşturmak için kullanı
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve sıra içinde, son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Karmaşıklık, gerekli olan oluşturucuya (`last` - `first`) çağrı olarak doğrusal bir şekilde yapılır.
+Karmaşıklık, gerekli olan oluşturucuya tam olarak ( `last`  -  `first` ) çağrıları ile doğrusal bir şekilde yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2477,16 +2477,16 @@ ForwardIterator generate_n(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Değerleri atanacak aralıktaki ilk öğenin konumunu ele veren çıkış Yineleyici.
 
-*sayı*\
+*biriktirme*\
 Oluşturucu işlevi tarafından bir değere atanacak öğe sayısını belirten imzalı veya işaretsiz bir tamsayı türü.
 
-*gen*\
+*alanına*\
 Aralıktaki öğelerin her birine atanacak değerleri oluşturmak için kullanılan bağımsız değişken olmadan çağrılan bir işlev nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2495,7 +2495,7 @@ Aralıktaki öğelerin her birine atanacak değerleri oluşturmak için kullanı
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve sıra içinde, son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Karmaşıklık, gerekli olan oluşturucuya tam olarak `count` çağrılar doğrusal bir şekilde karmaşıktır.
+Karmaşıklık, gereken oluşturucunun tam olarak çağrılarında doğrusal bir `count` şekilde yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2582,7 +2582,7 @@ bool includes(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -2597,10 +2597,10 @@ Kullanılacak yürütme ilkesi.
 *last2*\
 İkinci art arda sıralanmış kaynak aralıklarının ikinci içindeki son öğeden geçen bir bir girdi yineleyicisi, ikincinin tüm öğelerinin birincinin içinde yer almayacağı için test edilir.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 ilk sıralanmış Aralık ikinci sıralı aralıktaki tüm öğeleri içeriyorsa **true** ; Aksi takdirde, **false**.
 
@@ -2612,11 +2612,11 @@ Başvurulan sıralanmış kaynak aralıkları geçerli olmalıdır; Tüm işaret
 
 Sıralanmış kaynak aralıklarının her biri, algoritma uygulaması için bir önkoşul olarak düzenlenmelidir, bu arada, Birleşik aralıkları sıralamak için algoritma tarafından kullanılacak şekilde aynı sıralamaya uygun olarak dahildir.
 
-Kaynak aralıkları algoritma `merge`tarafından değiştirilmez.
+Kaynak aralıkları algoritma tarafından değiştirilmez `merge` .
 
 Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için kıyasla daha az olması gerekir, böylece iki öğe söz konusu olduğunda, eşdeğer oldukları (Yani bunlardan daha küçük olmayan) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha kesin olarak, algoritma, belirtilen bir ikili koşulun altındaki ilk sıralanmış aralıktaki tüm öğelerin, ikinci sıralı aralıktaki olanlarla eşdeğer sıralamaya sahip olup olmadığını sınar.
 
-Algoritmanın karmaşıklığı, boş olmayan kaynak aralıkları için en çok `2 * ((last1 - first1) - (last2 - first2)) - 1` karşılaştırmayla doğrusal bir şekilde yapılır.
+Algoritmanın karmaşıklığı, `2 * ((last1 - first1) - (last2 - first2)) - 1` boş olmayan kaynak aralıkları için en çok karşılaştırmalar ile doğrusal bir şekilde yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2803,28 +2803,28 @@ void inplace_merge(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Art arda iki sıralı aralıktaki ilk öğenin konumunu birleştirerek ve tek bir aralığa göre sıralanacak çift yönlü bir yineleyici.
 
-*orta*\
+*Beceri*\
 Art arda iki sıralı aralığın ikinci, tek bir aralığa göre birleştirileceği ve sıralanan ilk öğenin konumunu ele aldığı çift yönlü bir yineleyici.
 
-*son*\
+*soyadına*\
 Art arda iki sıralı aralığın ikinci, tek bir aralığa göre birleştirilmesi ve sıralanabilmesi için geçen öğeden geçen öğeden geçen bir çift yönlü Yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Başvurulan sıralanmış ardışık aralıklar geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide, son konuma artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Sıralanmış birbirini izleyen aralıklar, her biri, birleştirilmiş aralıkları sıralamak için algoritma tarafından kullanılacak şekilde, `inplace_merge` algoritmasının uygulamasına bir önkoşul olarak düzenlenmelidir. Her aralıktaki öğelerin göreli sırası korunduğu için işlem kararlı değildir. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, öğe ilk Aralık Birleşik aralıktaki ikinciden önce gelir.
+Sıralanmış ardışık aralıklar, her biri algoritma `inplace_merge` tarafından, Birleşik aralıkları sıralamak için kullanılan aynı sıralamaya uygun olarak, algoritmanın uygulamasına bir önkoşul olarak düzenlenmelidir. Her aralıktaki öğelerin göreli sırası korunduğu için işlem kararlı değildir. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, öğe ilk Aralık Birleşik aralıktaki ikinciden önce gelir.
 
-Algoritma, belleğin geçici bir arabelleğe ayırdığı şekilde kullanılabilir belleğe göre değişir. Yeterli bellek varsa, en iyi durum `(last - first) - 1` karşılaştırmaları ile doğrusal olur; kullanılabilir yardımcı bellek yoksa, en kötü durum `N log(N)`, burada *N* = *son* * - .*
+Algoritma, belleğin geçici bir arabelleğe ayırdığı şekilde kullanılabilir belleğe göre değişir. Yeterli bellek varsa, en iyi durum karşılaştırmalar ile doğrusal olur `(last - first) - 1` ; yardımcı bellek kullanılabilir değilse, en kötü durum, `N log(N)` burada *N*  =  *son*  -  *birincsahiptir*.
 
 ### <a name="example"></a>Örnek
 
@@ -2969,25 +2969,25 @@ bool is_heap(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bir yığını denetlemek için aralığın başlangıcını belirten rastgele bir erişim Yineleyici.
 
-*son*\
+*soyadına*\
 Bir aralığın sonunu gösteren bir rastgele erişim Yineleyici.
 
-*Pred*\
+*pred*\
 Order öğelerini test etmek için bir koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Belirtilen aralıktaki öğeler bir yığın oluşturacaksa **true** , değilse **false** döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işlevi [is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)`(first , last) == last`döndürür.
+İlk şablon işlevi is_heap_until döndürür [is_heap_until](algorithm-functions.md#is_heap_until) `(first , last) == last` .
 
 İkinci şablon işlevi şunu döndürür
 
@@ -2995,7 +2995,7 @@ Belirtilen aralıktaki öğeler bir yığın oluşturacaksa **true** , değilse 
 
 ## <a name="is_heap_until"></a><a name="is_heap_until"></a>is_heap_until
 
-Yığın sıralama koşulunu karşılamayan [`first`, `last`) aralığındaki ilk öğede konumlandırılmış bir yineleyici *döndürür veya Aralık* bir yığın oluşturur.
+Yığın sıralama koşulunu karşılamayan [,) aralığındaki ilk öğede konumlandırılmış bir yineleyici döndürür `first` `last` veya Aralık bir yığın oluşturur. *end*
 
 ```cpp
 template<class RandomAccessIterator>
@@ -3025,27 +3025,27 @@ RandomAccessIterator is_heap_until(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bir yığını denetlemek için bir aralığın ilk öğesini belirten bir rastgele erişim Yineleyici.
 
-*son*\
+*soyadına*\
 Bir yığını denetlemek için aralığın sonunu belirten bir rastgele erişim Yineleyici.
 
-*Pred*\
-Yığın tanımlayan katı zayıf sıralama koşulunu belirten bir ikili koşul. *Pred* belirtilmediğinde varsayılan koşul `std::less<>`.
+*pred*\
+Yığın tanımlayan katı zayıf sıralama koşulunu belirten bir ikili koşul. Varsayılan koşul, `std::less<>` *Pred* belirtilmediğinde belirlenir.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Belirtilen Aralık bir yığın veya bir ya da daha az öğe içeriyorsa *son* döndürür. Aksi takdirde, yığın koşulunu karşılamayan bulunan ilk öğe için bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işlevi, `[first, next)` işlevin nesne `std::less<>`tarafından sıralanan bir yığın olduğu `[first, last)` `next` son yineleyiciyi döndürür. Uzaklık `last - first` 2 ' den küçükse, işlev *son*döndürür.
+İlk şablon işlevi, `next` içinde `[first, last)` `[first, next)` işlev nesnesi tarafından sıralanan yığın olan içindeki son yineleyiciyi döndürür `std::less<>` . Uzaklık `last - first` 2 ' den küçükse, işlev *son*döndürür.
 
-İkinci şablon işlevi, yığın sıralaması koşulu olarak `std::less<>` yerine *Pred* koşulunu kullanması dışında, ilki ile aynı şekilde davranır.
+İkinci şablon işlevi, yığın sıralama koşulu yerine *Pred* 'yi kullanması dışında, ilki ile aynı şekilde davranır `std::less<>` .
 
 ## <a name="is_partitioned"></a><a name="is_partitioned"></a>is_partitioned
 
@@ -3068,29 +3068,29 @@ bool is_partitioned(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bir aralığın bir koşulu denetlemeye başladığı yeri gösteren bir giriş yineleyicisi.
 
-*son*\
+*soyadına*\
 Bir aralığın sonunu gösteren bir giriş yineleyicisi.
 
-*Pred*\
+*pred*\
 Sınanacak koşul. Bu, aranmakta olan öğe tarafından yerine getirilmesi gereken koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Bir koşul için **doğru** test eden belirtilen aralıktaki tüm öğelerin, **yanlış**test eden herhangi bir öğeden önce geldiği ve aksi durumda **false**döndürdüğünden, **true** döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yalnızca `[first, last)` tüm öğeler *Pred*tarafından bölümlenmiş ise **true** değerini döndürür; diğer bir deyişle, `pred (X)` true olduğu `[first, last)` tüm öğeler, `pred (Y)` **false**olan tüm öğeler `Y` önünde `X`.
+Şablon işlevi yalnızca içindeki **true** tüm öğeler `[first, last)` *Pred*tarafından bölümlenmiş ise true değerini döndürür; diğer bir deyişle, ' deki tüm öğeler, `X` `[first, last)` `pred (X)` false olan tüm öğelerden önce oluşur `Y` `pred (Y)` . **false**
 
 ## <a name="is_permutation"></a><a name="is_permutation"></a>is_permutation
 
-Her iki Aralık de aynı öğeleri içeriyorsa, öğelerin aynı sırada olup olmadığına bakılmaksızın true döndürür. İkinci Aralık için yalnızca tek bir yineleyici alan aşırı yüklemeler ikinci aralığın ilk aralıktan daha uzun olması fark etmez ve ikinci Aralık daha kısaysa tanımsız davranışlara neden olacak şekilde, C++ 14 kodunda çift aralıklı aşırı yüklemeleri kullanın. ilk aralıktan fazla.
+Her iki Aralık de aynı öğeleri içeriyorsa, öğelerin aynı sırada olup olmadığına bakılmaksızın true döndürür. İkinci Aralık ilk aralıktan daha uzun olduğunda ve ikinci Aralık ilk aralıktan daha kısaysa tanımsız davranışa yol açacak şekilde, C++ 14 kodunda çift aralıklı aşırı yüklemeleri kullanın. Bu, ikinci Aralık ilk aralıktan daha uzunsa tanımsız davranışa neden olur.
 
 ```cpp
 template<class ForwardIterator1, class ForwardIterator2>
@@ -3137,24 +3137,24 @@ Karşılaştırma için kullanılan ikinci bir aralığın ilk öğesine başvur
 *last2*\
 Karşılaştırma için kullanılan ikinci bir aralığın son öğesinden bir geçen bir ileri Yineleyici.
 
-*Pred*\
+*pred*\
 Denklik için test eden ve **bool**döndüren bir koşul.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 aralıklar karşılaştırma koşuluna göre özdeş olacak şekilde yeniden düzenlenbiliyorsa, **true** . Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`is_permutation` en kötü büyük olasılıkla ikinci dereceden karmaşıklığa sahiptir.
+`is_permutation`en kötü durumda büyük olasılıkla karmaşıklığa sahiptir.
 
-İlk şablon işlevi, `[first1, last1)`tarafından belirtilen aralıkta olduğu gibi, *first2* adresinden başlayan aralıkta çok sayıda öğe olduğunu varsayar. İkinci aralıkta daha fazla öğe varsa, bunlar yok sayılır; daha az varsa, tanımsız bir davranış meydana gelir. Üçüncü şablon işlevi (C++ 14 ve üzeri) Bu varsayımını yapmaz. Her ikisi de **true** , her ikisi için de *first2* veya `[first2, last2)`' de başlayan Aralık Içinde olduğu gibi, x = = Y için aynı aralıkta bulunan çok sayıda öğe `[first1, last1)`. Burada, `operator==` işlenenleri arasında ikili bir karşılaştırma gerçekleştirmeniz gerekir.
+İlk şablon işlevi, tarafından belirlenen aralıkta olduğu gibi, *first2* adresinden başlayan aralıkta çok sayıda öğe olduğunu varsayar `[first1, last1)` . İkinci aralıkta daha fazla öğe varsa, bunlar yok sayılır; daha az varsa, tanımsız bir davranış meydana gelir. Üçüncü şablon işlevi (C++ 14 ve üzeri) Bu varsayımını yapmaz. Her ikisi de **true değeri** yalnızca, `[first1, last1)` x = = Y, *first2* veya ' den başlayarak Aralık içinde olduğu gibi, x = = Y için aynı aralıkta bulunan her bir x öğesi için de geçerlidir `[first2, last2)` . Burada, `operator==` işlenenleri arasında ikili bir karşılaştırma gerçekleştirmeniz gerekir.
 
-İkinci ve dördüncü şablon işlevleri de aynı şekilde davranır, ancak `operator==(X, Y)` `Pred(X, Y)`olarak onların yerini alır. Doğru şekilde davranması için koşul simetrik, yansımalı ve geçişli olmalıdır.
+İkinci ve dördüncü şablon işlevleri aynı şekilde davranır, ancak `operator==(X, Y)` ile değiştirilir `Pred(X, Y)` . Doğru şekilde davranması için koşul simetrik, yansımalı ve geçişli olmalıdır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek `is_permutation`nasıl kullanacağınızı gösterir:
+Aşağıdaki örnek nasıl kullanılacağını gösterir `is_permutation` :
 
 ```cpp
 #include <vector>
@@ -3240,27 +3240,27 @@ bool is_sorted(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Denetlenecek aralığın başlayacağı konumu gösteren bir ileri Yineleyici.
 
-*son*\
+*soyadına*\
 Bir aralığın sonunu gösteren bir ileri Yineleyici.
 
-*Pred*\
-İki öğe arasında bir sıra belirlenmesi için sınanacak koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **true** veya **false**değerini döndürür. Bu, `operator<`aynı görevi gerçekleştirir.
+*pred*\
+İki öğe arasında bir sıra belirlenmesi için sınanacak koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **true** veya **false**değerini döndürür. Bu, ile aynı görevi gerçekleştirir `operator<` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işlevi [is_sorted_until](#is_sorted_until)`( first, last ) == last`döndürür. `operator<` işlevi sırası karşılaştırmayı gerçekleştirir.
+İlk şablon işlevi is_sorted_until döndürür [is_sorted_until](#is_sorted_until) `( first, last ) == last` . `operator<`İşlev, sıra karşılaştırması gerçekleştirir.
 
-İkinci şablon işlevi `is_sorted_until( first, last , pred ) == last`döndürür. *Pred* koşul işlevi, sıra karşılaştırması gerçekleştirir.
+İkinci şablon işlevi döndürür `is_sorted_until( first, last , pred ) == last` . *Pred* koşul işlevi, sıra karşılaştırması gerçekleştirir.
 
 ## <a name="is_sorted_until"></a><a name="is_sorted_until"></a>is_sorted_until
 
-Belirtilen aralıktan sıralanmış sırada olan son öğeye ayarlanmış bir `ForwardIterator` döndürür.
+`ForwardIterator`Belirtilen aralıktan sıralanmış sırada olan son öğeye ayarlanmış bir döndürür.
 
 İkinci sürüm, belirtilen iki öğe sıralanmış sırada olduğunda **true değeri** döndüren bir karşılaştırma işlevi nesnesi sağlamanıza olanak sağlar ve aksi takdirde **yanlış** olur.
 
@@ -3292,27 +3292,27 @@ ForwardIterator is_sorted_until(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Denetlenecek aralığın nerede başlayacağını gösteren bir ileriye doğru yineleyici.
 
-*son*\
+*soyadına*\
 Bir aralığın sonunu gösteren bir ileri Yineleyici.
 
-*Pred*\
+*pred*\
 İki öğe arasında bir sıra belirlenmesi için sınanacak koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-Sıralanmış düzende son öğeye ayarlanmış bir `ForwardIterator` döndürür. Sıralanmış sıra *ilk*öğesinden başlar.
+`ForwardIterator`Sıralı düzende son öğeye bir küme döndürür. Sıralanmış sıra *ilk*öğesinden başlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işlevi, `[first, next)` `operator<`tarafından sıralanan sıralanmış bir sıra olması için `[first, last]` son Yineleyici `next` döndürür. `distance()` 2 ' den küçükse, işlev *son*döndürür.
+İlk şablon işlevi ' de son yineleyiciyi döndürür, `next` `[first, last]` Bu nedenle `[first, next)` tarafından sıralanan sıralanmış bir sıra `operator<` . `distance()`2 ' den küçükse, işlev *son*' u döndürür.
 
-İkinci şablon işlevi aynı şekilde davranır, ancak `operator<(X, Y)` `pred(X, Y)`ile yerini alır.
+İkinci şablon işlevi aynı şekilde davranır, ancak `operator<(X, Y)` ile değiştirilir `pred(X, Y)` .
 
 ## <a name="iter_swap"></a><a name="iter_swap"></a>iter_swap
 
@@ -3325,15 +3325,15 @@ void iter_swap( ForwardIterator1 left, ForwardIterator2 right );
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Değeri değiş tokuş edilecek olan ileri yineleyicilerinin biri.
 
-*sağ*\
+*Right*\
 Değeri değiş tokuş edilecek olan ileri yineleyiciler ikincisinin ikincisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`swap`, geriye doğru uyumluluk için C++ standart olarak bulunan **İter_swap**için tercih edilir. `Fit1` ve `Fit2` ileri yineleyiciler varsa `iter_swap( Fit1, Fit2 )`, `swap( *Fit1, *Fit2 )`eşdeğerdir.
+`swap`geriye dönük uyumluluk için C++ standardına dahil edilen **İter_swap**için tercih altında kullanılmalıdır. `Fit1`Ve `Fit2` daha sonra yineleyiciler varsa `iter_swap( Fit1, Fit2 )` , öğesine eşdeğerdir `swap( *Fit1, *Fit2 )` .
 
 Giriş iletme yineleyicilerinin değer türleri aynı değere sahip olmalıdır.
 
@@ -3510,7 +3510,7 @@ bool lexicographical_compare(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -3525,10 +3525,10 @@ Karşılaştırılacak ikinci aralıktaki ilk öğenin konumunu ele almak için 
 *last2*\
 Karşılaştırılan ikinci aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 ilk Aralık, ikinci aralıktan sözcüıgrafik küçükse **true** ; Aksi halde **yanlış**.
 
@@ -3658,19 +3658,19 @@ ForwardIterator lower_bound(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 
-*son*\
+*soyadına*\
 Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*değer*\
+*deeri*\
 Düzenli aralıktaki ilk konumu veya olası ilk konumu aranmakta olan değer.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Belirtilen değere eşit veya ondan daha büyük bir değere sahip sıralı bir aralıktaki ilk öğenin konumunu bir ileriye doğru yineleyici, burada denklik bir ikili koşula göre belirtilir.
 
@@ -3678,13 +3678,13 @@ Belirtilen değere eşit veya ondan daha büyük bir değere sahip sıralı bir 
 
 Başvurulan sıralanmış kaynak aralığı geçerli olmalıdır; tüm yineleyiciler, en başta artırılamadı 'e başvurulamamalıdır.
 
-Sıralanmış bir Aralık, `lower_bound` kullanmanın önkoşuludur ve sıralama ikili koşula göre belirtilen şekilde aynıdır.
+Sıralanmış bir Aralık, kullanmanın önkoşuludur `lower_bound` ve sıralama ikili koşula göre belirtilen şekilde aynıdır.
 
-Aralık, algoritma `lower_bound`tarafından değiştirilmez.
+Aralık, algoritma tarafından değiştirilmez `lower_bound` .
 
 İleriye doğru yineleyicilerin değer türlerinin sıralanabilmesi için kıyasla daha az karşılaştırılabilir olması gerekir. bu sayede, iki öğe verildiğinde, eşdeğer oldukları (Yani bunlardan daha küçük olmadığı anlamda) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, eşdeğer olmayan öğeler arasında bir sıralamaya neden olur
 
-Algoritmanın karmaşıklığı Rastgele erişimli yineleyiciler ve doğrusal olarak, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle, (`last - first`) ile orantılıdır.
+Algoritmanın karmaşıklığı Rastgele erişimli yineleyiciler ve doğrusal olarak, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle, () ile orantılıdır `last - first` .
 
 ### <a name="example"></a>Örnek
 
@@ -3795,13 +3795,13 @@ void make_heap(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Bir yığına dönüştürülecek aralıktaki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*son*\
+*soyadına*\
 Bir yığına dönüştürülecek aralıktaki son öğeden geçmiş bir konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -3812,9 +3812,9 @@ Heap 'ler iki özelliğe sahiptir:
 
 - Öğeler, logaritmik bir zamanda eklenebilir veya kaldırılabilir.
 
-Heap 'ler, öncelik kuyruklarını uygulamanın ideal bir yoludur ve C++ standart kitaplık kapsayıcı bağdaştırıcısı [priority_queue sınıfının](../standard-library/priority-queue-class.md)uygulamasında kullanılır.
+Heap 'ler, öncelik kuyruklarını uygulamanın ideal bir yoludur ve C++ standart kitaplık kapsayıcı bağdaştırıcısı [priority_queue sınıfının](priority-queue-class.md)uygulamasında kullanılır.
 
-Karmaşıklık, `3 * (last - first)` karşılaştırmaları gerektiren doğrusal bir değer.
+Karmaşıklık, karşılaştırmalar gerektiren doğrusal bir değer `3 * (last - first)` .
 
 ### <a name="example"></a>Örnek
 
@@ -3883,25 +3883,25 @@ constexpr Type& max(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Karşılaştırılan iki nesnenin ilki.
 
-*sağ*\
+*Right*\
 Karşılaştırılan iki nesnenin ikincisi.
 
-*Pred*\
+*pred*\
 İki nesneyi karşılaştırmak için kullanılan bir ikili koşul.
 
-*ınlist*\
+*liste tümce*\
 Karşılaştırılacak nesneleri içeren Başlatıcı listesi.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 İki nesnenin daha büyük olması, hiçbiri daha büyük değilse; Bu durumda, iki nesnenin ilki döndürülür. İnitializer_list söz konusu olduğunda, listedeki nesnelerin en büyük kısmını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`max` algoritması parametre olarak geçirilen nesnelere sahip olma olağandışı bir şekilde yapılır. Çoğu C++ standart kitaplık algoritmaları, konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen bir dizi öğe üzerinde çalışır. Bir dizi öğe üzerinde çalışan bir işleve ihtiyacınız varsa, bunun yerine [max_element](../standard-library/algorithm-functions.md#max_element) kullanın. Visual Studio 2017, initializer_list alan aşırı yüklemelerin üzerinde **constexpr** 'yi sunar.
+`max`Algoritma parametre olarak geçirilme sırasında olağandışı bir şekilde yapılır. Çoğu C++ Standart Kitaplığı algoritmaları, konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen bir dizi öğe üzerinde çalışır. Bir dizi öğe üzerinde çalışan bir işleve ihtiyacınız varsa, bunun yerine [max_element](algorithm-functions.md#max_element) kullanın. Visual Studio 2017, initializer_list alan aşırı yüklemelerin üzerinde **constexpr** 'yi sunar.
 
 ### <a name="example"></a>Örnek
 
@@ -4103,19 +4103,19 @@ ForwardIterator max_element(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 En büyük öğe için aranacak aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yineleyici.
 
-*son*\
+*soyadına*\
 En büyük öğe için Aranmak üzere aralıktaki son öğeden bir önceki konumu ele alarak ileriye doğru bir yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Aranan aralıktaki en büyük öğenin ilk oluşum konumunu ele alarak ileriye doğru bir yineleyici.
 
@@ -4123,7 +4123,7 @@ Aranan aralıktaki en büyük öğenin ilk oluşum konumunu ele alarak ileriye d
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, her bir sırada bir kez başvurulmalıdır ve en son konum, artırılamadı tarafından ilk kez erişilebilir.
 
-Karmaşıklık doğrusal: boş olmayan bir Aralık için `(last - first) - 1` karşılaştırmaları gereklidir.
+Karmaşıklık doğrusal: `(last - first) - 1` boş olmayan bir Aralık için karşılaştırmalar gereklidir.
 
 ### <a name="example"></a>Örnek
 
@@ -4269,7 +4269,7 @@ ForwardIterator merge(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -4284,13 +4284,13 @@ Art arda iki sıralı kaynak aralığının ikinci kısmında yer aldığı ve t
 *last2*\
 Art arda iki sıralı kaynak aralığının ikinci kısmında son öğeden geçen ve tek bir aralığa sıralanmış bir giriş Yineleyici.
 
-*sonuç*\
+*kaynaklanan*\
 İkinci kaynak aralıklarının tek bir sıralanmış aralıkta birleştirileceği hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış Yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , değilse **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Sıralanmış hedef aralıktaki son öğeden sonraki konumu ele alarak çıkış Yineleyici.
 
@@ -4300,15 +4300,15 @@ Başvurulan sıralanmış kaynak aralıkları geçerli olmalıdır; Tüm işaret
 
 Hedef Aralık, kaynak aralıklarından biriyle çakışmamalıdır ve hedef aralığı içerecek kadar büyük olmalıdır.
 
-Sıralanmış kaynak aralıklarının her biri, birleştirilmiş aralıkları sıralamak için algoritma tarafından kullanılacak şekilde, `merge` algoritmanın uygulamasına bir önkoşul olarak düzenlenmelidir.
+Sıralanmış kaynak aralıklarının her biri, algoritma `merge` tarafından Birleşik aralıkları sıralamak için kullanılan aynı sıralamaya uygun olarak, algoritmanın uygulamasına bir ön koşul olarak düzenlenmelidir.
 
-Her aralıktaki öğelerin göreli sırası hedef aralıkta korunduğu için işlem kararlı değildir. Kaynak aralıkları algoritma `merge`tarafından değiştirilmez.
+Her aralıktaki öğelerin göreli sırası hedef aralıkta korunduğu için işlem kararlı değildir. Kaynak aralıkları algoritma tarafından değiştirilmez `merge` .
 
 Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için kıyasla daha az olması gerekir, böylece iki öğe söz konusu olduğunda, eşdeğer oldukları (Yani bunlardan daha küçük olmayan) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, ilk aralıktaki öğeler, hedef aralıktaki ikinci kaynak aralığından öğeden önce gelmelidir.
 
-Algoritmanın karmaşıklığı en çok `(last1 - first1) - (last2 - first2) - 1` karşılaştırmayla doğrusal bir şekilde yapılır.
+Algoritmanın karmaşıklığı, en çok karşılaştırmalar ile doğrusal olarak belirlenir `(last1 - first1) - (last2 - first2) - 1` .
 
-[Liste sınıfı](../standard-library/list-class.md) , iki listenin öğelerini birleştirmek için "Merge" üye işlevini sağlar.
+[Liste sınıfı](list-class.md) , iki listenin öğelerini birleştirmek için "Merge" üye işlevini sağlar.
 
 ### <a name="example"></a>Örnek
 
@@ -4420,7 +4420,7 @@ int main() {
 }
 ```
 
-## <a name="min"></a><a name="min"></a>Min
+## <a name="min"></a><a name="min"></a> dk
 
 İki nesneyi karşılaştırır ve ikisinden küçük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.
 
@@ -4448,25 +4448,25 @@ constexpr Type min(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Karşılaştırılan iki nesnenin ilki.
 
-*sağ*\
+*Right*\
 Karşılaştırılan iki nesnenin ikincisi.
 
-*Pred*\
+*pred*\
 İki nesneyi karşılaştırmak için kullanılan bir ikili koşul.
 
-*ınlist*\
-Karşılaştırılacak üyeleri içeren `initializer_list`.
+*liste tümce*\
+`initializer_list`Karşılaştırılacak üyeleri içeren.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-İki nesnenin daha küçük olması, ikisi de değilse; Bu durumda, iki nesnenin ilki döndürülür. `initializer_list`söz konusu olduğunda, listedeki nesnelerin en az birini döndürür.
+İki nesnenin daha küçük olması, ikisi de değilse; Bu durumda, iki nesnenin ilki döndürülür. Bir durumunda `initializer_list` , listedeki nesnelerin en az birini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`min` algoritması parametre olarak geçirilen nesnelere sahip olma olağandışı bir şekilde yapılır. Çoğu C++ standart kitaplık algoritmaları, konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen bir dizi öğe üzerinde çalışır. Öğe aralığı kullanan bir işleve ihtiyacınız varsa [min_element](../standard-library/algorithm-functions.md#min_element)kullanın. [constexpr](../cpp/constexpr-cpp.md) , Visual Studio 2017 ' de `initializer_list` aşırı yüklemeler üzerinde etkinleştirildi.
+`min`Algoritma parametre olarak geçirilme sırasında olağandışı bir şekilde yapılır. Çoğu C++ Standart Kitaplığı algoritmaları, konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen bir dizi öğe üzerinde çalışır. Öğe aralığı kullanan bir işleve ihtiyacınız varsa [min_element](algorithm-functions.md#min_element)kullanın. [constexpr](../cpp/constexpr-cpp.md) `initializer_list` Visual Studio 2017 ' deki aşırı yüklemeler üzerinde constexpr etkinleştirildi.
 
 ### <a name="example"></a>Örnek
 
@@ -4667,19 +4667,19 @@ ForwardIterator min_element(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 En küçük öğe için aranacak aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yineleyici.
 
-*son*\
+*soyadına*\
 En küçük öğe için Aranmak üzere aralıktaki son öğeden bir önceki konumu ele alarak ileriye doğru bir yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , değilse **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Aranan aralıktaki en küçük öğenin ilk oluşum konumunu ele alarak ileriye doğru bir yineleyici.
 
@@ -4687,7 +4687,7 @@ Aranan aralıktaki en küçük öğenin ilk oluşum konumunu ele alarak ileriye 
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, her bir sırada bir kez başvurulmalıdır ve en son konum, artırılamadı tarafından ilk kez erişilebilir.
 
-Karmaşıklık doğrusal: boş olmayan bir Aralık için `(last - first) - 1` karşılaştırmaları gereklidir.
+Karmaşıklık doğrusal: `(last - first) - 1` boş olmayan bir Aralık için karşılaştırmalar gereklidir.
 
 ### <a name="example"></a>Örnek
 
@@ -4801,7 +4801,7 @@ binary predicate is: 0
 
 ## <a name="minmax_element"></a><a name="minmax_element"></a>minmax_element
 
-`min_element` tarafından gerçekleştirilen çalışmayı gerçekleştirir ve tek bir çağrıda `max_element`.
+`min_element`Ve `max_element` tek bir çağrıda gerçekleştirilen işleri gerçekleştirir.
 
 ```cpp
 template<class ForwardIterator>
@@ -4831,21 +4831,21 @@ pair<ForwardIterator, ForwardIterator> minmax_element(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bir aralığın başlangıcını gösteren bir ileri Yineleyici.
 
-*son*\
+*soyadına*\
 Bir aralığın sonunu gösteren bir ileri Yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilki ikinciden küçükse **true** , aksi takdirde **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-Döndürür
+Döndürülenler
 
 `pair<ForwardIterator, ForwardIterator>( min_element(first, last), max_element(first, last))`.
 
@@ -4855,9 +4855,9 @@ Döndürür
 
 `pair<ForwardIterator,ForwardIterator>(min_element(first,last), max_element(first,last))`.
 
-İkinci şablon işlevi aynı şekilde davranır, ancak `operator<(X, Y)` `pred(X, Y)`ile yerini alır.
+İkinci şablon işlevi aynı şekilde davranır, ancak `operator<(X, Y)` ile değiştirilir `pred(X, Y)` .
 
-Dizi boş değilse, işlev en çok `3 * (last - first - 1) / 2` karşılaştırmaları gerçekleştirir.
+Dizi boş değilse, işlev en çok `3 * (last - first - 1) / 2` karşılaştırmalarda gerçekleştirilir.
 
 ## <a name="minmax"></a><a name="minmax"></a>MinMax
 
@@ -4887,21 +4887,21 @@ constexpr pair<Type&, Type&> minmax(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Karşılaştırılan iki nesnenin ilki.
 
-*sağ*\
+*Right*\
 Karşılaştırılan iki nesnenin ikincisi.
 
-*Pred*\
+*pred*\
 İki nesneyi karşılaştırmak için kullanılan bir ikili koşul.
 
-*ınlist*\
-Karşılaştırılacak üyeleri içeren `initializer_list`.
+*liste tümce*\
+`initializer_list`Karşılaştırılacak üyeleri içeren.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eğer *Right* , *Left*değerinden küçükse ilk şablon işlevi `pair<const Type&, const Type&>( right, left )` döndürür. Aksi takdirde, `pair<const Type&, const Type&>( left, right )`döndürür.
+`pair<const Type&, const Type&>( right, left )`Eğer *Right* , *Left*değerinden küçükse ilk şablon işlevi döndürür. Aksi takdirde, döndürür `pair<const Type&, const Type&>( left, right )` .
 
 İkinci üye işlevi, ilk öğenin daha küçük olduğu bir çift döndürür ve ikinci değer *Pred*ile karşılaştırıldığında daha büyüktür.
 
@@ -4913,7 +4913,7 @@ Kalan şablon işlevleri, *sol* ve *sağ* parametrelerin *ınlist*ile yerini ala
 
 İki Aralık öğesini öğesiyle karşılaştırır ve bir farkın gerçekleştiği ilk konumu bulur.
 
-İkinci Aralık için yalnızca tek bir yineleyici alan aşırı yüklemeler ikinci aralığın ilk aralıktan daha uzun olması fark etmez ve ikinci Aralık daha kısaysa tanımsız davranışlara neden olacak şekilde, C++ 14 kodunda çift aralıklı aşırı yüklemeleri kullanın. ilk aralıktan fazla.
+İkinci Aralık ilk aralıktan daha uzun olduğunda ve ikinci Aralık ilk aralıktan daha kısaysa tanımsız davranışa yol açacak şekilde, C++ 14 kodunda çift aralıklı aşırı yüklemeleri kullanın. Bu, ikinci Aralık ilk aralıktan daha uzunsa tanımsız davranışa neden olur.
 
 ```cpp
 template<class InputIterator1, class InputIterator2>
@@ -4987,7 +4987,7 @@ mismatch(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -5002,12 +5002,12 @@ Test edilecek ikinci aralıktaki ilk öğenin konumunu ele aldığı bir giriş 
 *last2*\
 Test edilecek ikinci aralıktaki son öğeden bir önceki öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*Pred*\
+*pred*\
 Her aralıktaki geçerli öğeleri karşılaştıran ve eşdeğer olup olmadığını belirleyen Kullanıcı tanımlı koşul işlevi nesnesi. Memnun olmadığında **true** , **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-İki aralıktaki uyuşmazlığın konumlarını, ilk bileşen yineleyicisini ilk aralıktaki konuma ve ikinci bileşen yineleyicisini ikinci aralıktaki konuma adresleyen yineleyiciler çifti. Aralıklardaki öğeler arasında bir fark yoksa veya ikinci sürümdeki ikili koşulun iki aralıktaki tüm öğe çiftleri tarafından karşılanmasını içeriyorsa, ilk bileşen yineleyicisi ilk öğe için son öğeden önceki konuma işaret eder İkinci aralıkta test edilen son öğeden sonraki bir konumdan konumlandırmak için Aralık ve ikinci bileşen yineleyicisi.
+İki aralıktaki uyuşmazlığın konumlarını, ilk bileşen yineleyicisini ilk aralıktaki konuma ve ikinci bileşen yineleyicisini ikinci aralıktaki konuma adresleyen yineleyiciler çifti. Aralıklardaki öğeler arasında bir fark yoksa veya ikinci sürümdeki ikili koşulun iki aralıktan tüm öğe çiftleri karşılandığı durumlarda, ilk bileşen yineleyicisi ilk aralıktaki son öğeden bir önceki konuma işaret eder ve ikinci bileşen yineleyicisini ikinci aralıkta test edilen son öğeden önce konumlandırır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -5114,7 +5114,7 @@ C++14: vec_1 and list_1 are a mismatch: false
 Press a key
 ```
 
-## <a name="ltalggt-move"></a><a name="alg_move"></a>&lt;alg&gt; taşı
+## <a name="ltalggt-move"></a><a name="alg_move"></a>&lt;alg &gt; Taşı
 
 Belirtilen aralıkla ilişkili öğeleri taşı.
 
@@ -5135,21 +5135,21 @@ ForwardIterator2 move(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Taşınacak öğe aralığının nerede başlatılacağını gösteren bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Taşınacak öğe aralığının sonunu gösteren bir giriş Yineleyici.
 
-*hedef*\
+*HD*\
 Taşınan öğeleri içeren çıkış yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, Aralık `[0, last - first)`her bir `N` için `*(dest + N) = move(*(first + N))` değerlendirir ve en düşük değerle başlayarak `N` değerlerini kesin olarak artırır. Ardından `dest + N`döndürür. `dest` ve *ilk* olarak depolamanın bölgelerini belirlerseniz, *hedef* Aralık `[first, last)`olmamalıdır.
+Şablon işlevi, `*(dest + N) = move(*(first + N))` Aralık içinde her biri için bir kez değerlendirilir `N` `[0, last - first)` ve `N` En düşük değer ile başlangıç değerlerini kesin olarak artırır. Ardından döndürür `dest + N` . `dest`Ve *ilk* olarak depolama bölgelerini belirlerseniz, *hedef* Aralık içinde olmamalıdır `[first, last)` .
 
 ## <a name="move_backward"></a><a name="move_backward"></a>move_backward
 
@@ -5165,20 +5165,20 @@ BidirectionalIterator2 move_backward(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Öğelerin taşınacağı aralığın başlangıcını gösteren bir yineleyici.
 
-*son*\
+*soyadına*\
 Öğelerin taşınacağı aralığın sonunu gösteren bir yineleyici. Bu öğe taşınmadı.
 
-*DestEnd*\
+*destEnd*\
 Hedef aralıkta son öğeden bir önceki öğenin konumunu belirleyen çift yönlü yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, Aralık `[0, last - first)`her bir `N` için `*(destEnd - N - 1) = move(*(last - N - 1))` değerlendirir ve en düşük değerle başlayarak `N` değerlerini kesin olarak artırır. Ardından `destEnd - (last - first)`döndürür. *DestEnd* ve *ilk* olarak Storage bölgelerini belirlerseniz, *DestEnd* `[first, last)`Aralık içinde olmamalıdır.
+Şablon işlevi, `*(destEnd - N - 1) = move(*(last - N - 1))` Aralık içinde her biri için bir kez değerlendirilir `N` `[0, last - first)` ve `N` En düşük değer ile başlangıç değerlerini kesin olarak artırır. Ardından döndürür `destEnd - (last - first)` . *DestEnd* ve *ilk* olarak Storage bölgelerini belirlerseniz, *DestEnd* 'in aralıkta olmaması gerekir `[first, last)` .
 
-`move` ve `move_backward`, bir taşıma yineleyicisi ile `copy` ve `copy_backward` ile işlevsel olarak eşdeğerdir.
+`move`ve `move_backward` , `copy` `copy_backward` bir taşıma yineleyicisi ile, ve işlev ile eşdeğerdir.
 
 ## <a name="next_permutation"></a><a name="next_permutation"></a>next_permutation
 
@@ -5199,16 +5199,16 @@ bool next_permutation(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Aralıktaki ilk öğenin konumunu gösteren çift yönlü bir yineleyici.
 
-*son*\
+*soyadına*\
 Çift yönlü bir yineleyici, aralıktaki son öğeden geçmiş bir konuma işaret ediyor.
 
-*Pred*\
+*pred*\
 Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 lexıgrafiksel bir sonraki permütasyon varsa ve aralığın orijinal sıralamasını değiştirse **doğru** ; Aksi takdirde **yanlış**, bu durumda sıralama lexıgrafiksel en küçük permütasyon 'e dönüştürülür.
 
@@ -5218,7 +5218,7 @@ Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılam
 
 Varsayılan ikili koşul değerinden küçüktür ve sonraki permütasyonun iyi tanımlanmış olduğundan emin olmak için aralıktaki öğelerin karşılaştırıdan küçük olması gerekir.
 
-Karmaşıklık en çok `(last - first) / 2` takas ile doğrusal bir şekilde yapılır.
+Karmaşıklık, en fazla takas ile doğrusal bir şekilde belirlenir `(last - first) / 2` .
 
 ### <a name="example"></a>Örnek
 
@@ -5395,26 +5395,26 @@ void nth_element(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bölümlendirilmek üzere aralıktaki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*n* .\
+*dereceden*\
 Bölümün sınırında doğru sıralanabilmesi için öğenin konumunu ele alan Rastgele erişimli bir yineleyici.
 
-*son*\
+*soyadına*\
 Bölümlendirilmek üzere aralıktaki son öğeden geçmiş bir konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Pred*\
+*pred*\
 Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-`nth_element` algoritması, *n*. öğenin iki tarafındaki alt aralıklardaki öğelerin sıralanacağını garanti etmez. Bu sayede, seçilen bazı öğelerin altındaki aralıktaki öğeleri sıralayan `partial_sort`daha az garanti sağlar ve alt aralığın sıralaması gerekmediği zaman `partial_sort` daha hızlı bir alternatif olarak kullanılabilir.
+`nth_element`Algoritma, *n*. öğesinin iki tarafındaki alt aralıklardaki öğelerin sıralanacağını garanti etmez. Bu sayede `partial_sort` , seçilen bazı öğelerin altındaki aralıktaki öğeleri sipariş eden ve `partial_sort` alt aralığın sıralaması gerekmediği zaman daha hızlı bir alternatif olarak kullanılabilen daha az garanti verir.
 
 Öğeler eşdeğer, ancak eşit değildir, ancak ikisi de küçüktür.
 
@@ -5507,25 +5507,25 @@ bool none_of(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bir koşul için bir dizi öğeyi denetlemeye nereden başlayacağını belirten bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Bir öğe aralığının sonunu gösteren bir giriş Yineleyici.
 
-*Pred*\
+*pred*\
 Sınanacak koşul. Bu, koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Koşul, belirtilen aralıkta en az bir kez saptanmamışsa **true** , koşul algılanırsa **false** değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yalnızca, Aralık `[0, last - first)``N` koşul `pred(*(first + N))` her zaman **false**olduğunda **true** döndürür.
+Şablon işlevi yalnızca, **true** `N` Aralık içinde, `[0, last - first)` koşul `pred(*(first + N))` her zaman **false**olduğunda true döndürür.
 
 ## <a name="partial_sort"></a><a name="partial_sort"></a>partial_sort
 
@@ -5563,28 +5563,28 @@ void partial_sort(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Sıralanacak aralıktaki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*Sortend*\
+*sortEnd*\
 Sıralama yapılacak alt aralıktaki son öğeden bir önceki konumu ele alarak rastgele erişimli bir yineleyici.
 
-*son*\
+*soyadına*\
 Kısmen sıralanacak aralıktaki son öğeden geçmiş bir konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Pred*\
+*pred*\
 Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Öğeler eşdeğer, ancak eşit değildir, ancak ikisi de küçüktür. `sort` algoritması kararlı değildir ve denk öğelerin göreli sıralamasına karşı korunmayacağını garanti etmez. Algoritma `stable_sort` bu orijinal sıralamayı korur.
+Öğeler eşdeğer, ancak eşit değildir, ancak ikisi de küçüktür. `sort`Algoritma kararlı değildir ve denk öğelerin göreli sıralamasına karşı korunmayacağını garanti etmez. Algoritma `stable_sort` Bu orijinal sıralamayı korur.
 
-Ortalama Kısmi sıralama karmaşıklığı *O*((`last`- `first`) günlüğü (`sortEnd`- `first`)).
+Ortalama Kısmi sıralama karmaşıklığı *O*(( `last` -  `first` ) log ( `sortEnd` -  `first` )).
 
 ### <a name="example"></a>Örnek
 
@@ -5698,7 +5698,7 @@ RandomAccessIterator partial_sort_copy(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -5713,10 +5713,10 @@ Sıralanmış hedef aralıktaki ilk öğenin konumunu ele alarak rastgele erişi
 *last2*\
 Sıralanmış hedef aralıktaki son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Pred*\
+*pred*\
 Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Hedef aralıktaki öğeyi, kaynak aralıktan açılan son öğeden sonraki bir konuma adresleyen Rastgele erişimli bir yineleyici.
 
@@ -5823,19 +5823,19 @@ ForwardIterator partition(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bölümlendirilmek üzere aralıktaki ilk öğenin konumunu ele alarak çift yönlü bir yineleyici.
 
-*son*\
+*soyadına*\
 Bölümlendirilmek üzere aralıktaki son öğeden geçmiş bir konumu ele alarak çift yönlü bir yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğe sınıflandırılabildiğinde karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Koşul koşulunu yerine getirmek için aralıktaki ilk öğenin konumunu ele alarak çift yönlü bir yineleyici.
 
@@ -5843,9 +5843,9 @@ Koşul koşulunu yerine getirmek için aralıktaki ilk öğenin konumunu ele ala
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-*A* ve *b* öğeleri eşdeğerdir ancak eşit değildir, her ikisi de `pred( a, b )` false ise ve `pred( b, a )` false ise, burada *Pred* parametresi belirtilen koşul olur. `partition` algoritması kararlı değildir ve denk öğelerin göreli sıralamasına karşı korunmayacağını garanti etmez. Algoritma `stable_partition` bu orijinal sıralamayı korur.
+*A* ve *b* öğeleri eşdeğerdir, ancak her ikisi de false ise eşit değildir ve false ise, her ikisi de `pred( a, b )` `pred( b, a )` parametre belirtilen koşul olur. *pred* `partition`Algoritma kararlı değildir ve denk öğelerin göreli sıralamasına karşı korunmayacağını garanti etmez. Algoritma `stable_partition` Bu orijinal sıralamayı korur.
 
-Karmaşıklık doğrusal: *Pred* ve en çok `(last - first)/2` takas `(last - first)` uygulamalar vardır.
+Karmaşıklık doğrusal değildir: `(last - first)` *Pred* ve en çok takas eden uygulamalar vardır `(last - first)/2` .
 
 ### <a name="example"></a>Örnek
 
@@ -5913,13 +5913,13 @@ pair<ForwardIterator1, ForwardIterator2> partition_copy(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bir koşulu denetlemek için aralığın başlangıcını gösteren bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Bir aralığın sonunu gösteren bir giriş yineleyicisi.
 
 *dest1*\
@@ -5928,12 +5928,12 @@ Bir aralığın sonunu gösteren bir giriş yineleyicisi.
 *dest2*\
 *Pred*kullanılarak test edilen bir koşul için yanlış döndüren öğeleri kopyalamak için kullanılan bir çıkış yineleyicisi.
 
-*Pred*\
+*pred*\
 Sınanacak koşul. Bu, test edilecek koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, `pred(X)` true ise veya değilse `*dest2++` `*dest1++` `X` `[first,last)` her öğeyi kopyalar. `pair<OutputIterator1, OutputIterator2>(dest1, dest2)`döndürür.
+Şablon işlevi, `X` `[first,last)` true ise `*dest1++` `pred(X)` , veya değilse öğesine öğesine her öğeyi kopyalar `*dest2++` . Döndürür `pair<OutputIterator1, OutputIterator2>(dest1, dest2)` .
 
 ## <a name="partition_point"></a><a name="partition_point"></a>partition_point
 
@@ -5949,22 +5949,22 @@ ForwardIterator partition_point(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Bir koşulu denetlemek için aralığın başlangıcını belirten `ForwardIterator`.
+*adı*\
+Bir `ForwardIterator` koşulu denetlemek için aralığın başlangıcını belirten bir.
 
-*son*\
-Bir aralığın sonunu belirten `ForwardIterator`.
+*soyadına*\
+Bir `ForwardIterator` aralığın sonunu gösteren bir.
 
-*Pred*\
+*pred*\
 Sınanacak koşul. Bu, aranmakta olan öğe tarafından yerine getirilmesi gereken koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
-*Pred*tarafından test edilmiş koşulu yerine getirmeyen ilk öğeye başvuran bir `ForwardIterator` döndürür veya bir tane bulunamazsa *son* ' u döndürür.
+`ForwardIterator` *Pred*tarafından test edilmiş koşulu yerine getirmeyen ilk öğeye başvuran bir döndürür veya bir tane bulunamazsa *son* ' u döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, `pred(*it)` **false**olan `[first, last)` `it` ilk yineleyiciyi bulur. Sıra, *Pred*tarafından sıralanmalıdır.
+Şablon işlevi `it` ' de false ' olan ilk yineleyiciyi bulur `[first, last)` `pred(*it)` . **false** Sıra, *Pred*tarafından sıralanmalıdır.
 
 ## <a name="pop_heap"></a><a name="pop_heap"></a>pop_heap
 
@@ -5985,18 +5985,18 @@ void pop_heap(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Yığın içindeki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*son*\
+*soyadına*\
 Yığın içindeki son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`pop_heap` algoritması, bir aralığın bir sonraki-son konumundaki bir öğenin aralıktaki önceki öğelerden oluşan bir yığına eklendiği, yığına eklenmekte olan öğenin yığında bulunan öğelerden daha büyük olması durumunda, push_heap algoritması tarafından gerçekleştirilen işlemin tersidir (yığında daha fazla yer vardır.
+`pop_heap`Algoritma, Push_heap algoritması tarafından gerçekleştirilen işlemin tersidir. Bu, bir aralığın bir sonraki-son konumundaki bir öğenin, yığında eklenen öğe, yığında bulunan öğelerden daha büyük olması durumunda, yığındaki önceki öğelerden oluşan bir yığına eklendiği durumdur.
 
 Heap 'ler iki özelliğe sahiptir:
 
@@ -6004,13 +6004,13 @@ Heap 'ler iki özelliğe sahiptir:
 
 - Öğeler, logaritmik bir zamanda eklenebilir veya kaldırılabilir.
 
-Heap 'ler, öncelik kuyruklarını uygulamanın ideal bir yoludur ve C++ standart kitaplık kapsayıcı bağdaştırıcısı [priority_queue sınıfının](../standard-library/priority-queue-class.md)uygulamasında kullanılır.
+Heap 'ler, öncelik kuyruklarını uygulamanın ideal bir yoludur ve C++ standart kitaplık kapsayıcı bağdaştırıcısı [priority_queue sınıfının](priority-queue-class.md)uygulamasında kullanılır.
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
 Sonundaki yeni eklenen öğeyi hariç tutma bir yığın olmalıdır.
 
-Karmaşıklık, en çok `log (last - first)` karşılaştırmalar gerektiren logaritmik bir değer.
+Karmaşıklık, en çok karşılaştırmaların gerektirmesi için karmaşıktır `log (last - first)` .
 
 ### <a name="example"></a>Örnek
 
@@ -6094,16 +6094,16 @@ bool prev_permutation(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Aralıktaki ilk öğenin konumunu gösteren çift yönlü bir yineleyici.
 
-*son*\
+*soyadına*\
 Çift yönlü bir yineleyici, aralıktaki son öğeden geçmiş bir konuma işaret ediyor.
 
-*Pred*\
+*pred*\
 Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 lexıgrafik önceki permütasyon varsa ve aralığın orijinal sıralamasını değiştirse **doğru** ; Aksi takdirde **yanlış**, bu durumda sıralama lexıgrafiksel en büyük PERMÜTASYONA dönüştürülür.
 
@@ -6113,7 +6113,7 @@ Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılam
 
 Varsayılan ikili koşul değerinden küçüktür ve önceki permütasyon 'nin iyi tanımlanmış olduğundan emin olmak için aralıktaki öğelerin karşılaştırılabilir olması gerekir.
 
-Karmaşıklık, en fazla (`last` - `first`)/2 takas eden doğrusal bir değer.
+Karmaşıklık, en çok ( `last`  -  `first` )/2 takas ile doğrusal bir değer.
 
 ### <a name="example"></a>Örnek
 
@@ -6269,13 +6269,13 @@ void push_heap(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Yığın içindeki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*son*\
+*soyadına*\
 Bir yığına dönüştürülecek aralıktaki son öğeden geçmiş bir konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -6288,13 +6288,13 @@ Heap 'ler iki özelliğe sahiptir:
 
 - Öğeler, logaritmik bir zamanda eklenebilir veya kaldırılabilir.
 
-Heap 'ler, öncelik kuyruklarını uygulamanın ideal bir yoludur ve C++ standart kitaplık kapsayıcı bağdaştırıcısı [priority_queue sınıfının](../standard-library/priority-queue-class.md)uygulamasında kullanılır.
+Heap 'ler, öncelik kuyruklarını uygulamanın ideal bir yoludur ve C++ standart kitaplık kapsayıcı bağdaştırıcısı [priority_queue sınıfının](priority-queue-class.md)uygulamasında kullanılır.
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
 Sonundaki yeni eklenen öğeyi hariç tutma bir yığın olmalıdır.
 
-Karmaşıklık, en çok `log(last - first)` karşılaştırmalar gerektiren logaritmik bir değer.
+Karmaşıklık, en çok karşılaştırmaların gerektirmesi için karmaşıktır `log(last - first)` .
 
 ### <a name="example"></a>Örnek
 
@@ -6365,7 +6365,7 @@ int main() {
 
 ## <a name="random_shuffle"></a><a name="random_shuffle"></a>random_shuffle
 
-Std:: random_shuffle () işlevi kullanım dışıdır ve [std:: karıştır](../standard-library/algorithm-functions.md#shuffle)ile değiştirilmiştir. Bir kod örneği ve daha fazla bilgi için, bkz. [\<rastgele >](../standard-library/random.md) ve Stack Overflow [Şu neden std:: random_shuffle yöntemleri c++ 14 ' te kullanım dışı bırakılıyor?](https://go.microsoft.com/fwlink/p/?linkid=397954).
+Std:: random_shuffle () işlevi kullanım dışıdır ve [std:: karıştır](algorithm-functions.md#shuffle)ile değiştirilmiştir. Bir kod örneği ve daha fazla bilgi için, bkz [\<random>](random.md) . ve [neden std:: random_shuffle metotlarının c++ 14 ' te kullanım dışı olduğunu](https://go.microsoft.com/fwlink/p/?linkid=397954)Stack Overflow.
 
 ## <a name="remove"></a><a name="remove"></a>temizlenmesine
 
@@ -6388,19 +6388,19 @@ ForwardIterator remove(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Öğelerin kaldırıldığı aralıktaki ilk öğenin konumunu ele veren ileriye doğru bir yineleyici.
 
-*son*\
+*soyadına*\
 Öğelerin kaldırıldığı aralıktaki son öğeden bir önceki konumu ele veren ileriye doğru bir yineleyici.
 
-*değer*\
+*deeri*\
 Aralıktan kaldırılacak değer.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Değiştirilen aralığın yeni bitiş konumunu ele aldığı bir ileriye doğru yineleyici, bir tane, belirtilen değerin en son öğesi boş olan bir sonraki dizi öğesidir.
 
@@ -6410,11 +6410,11 @@ Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılam
 
 Kaldırılmayan öğelerin sırası kararlı kalır.
 
-Öğeler arasındaki eşitliği belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Öğeler arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklık doğrusal; eşitlik için karşılaştırmalar (`last` - `first`) vardır.
+Karmaşıklık doğrusal; `last`  -  `first` eşitlik için karşılaştırmalar () vardır.
 
-[Liste sınıfının](../standard-library/list-class.md) `remove`daha verimli bir üye işlev sürümü vardır ve bu da işaretçileri yeniden bağlar.
+[Liste sınıfının](list-class.md) daha verimli bir üye işlev sürümü vardır `remove` ve bu da işaretçileri yeniden bağlar.
 
 ### <a name="example"></a>Örnek
 
@@ -6486,22 +6486,22 @@ ForwardIterator2 remove_copy(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Öğelerin kaldırıldığı aralıktaki ilk öğenin konumunu ele veren bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Öğelerin kaldırıldığı aralıktaki son öğeden önceki konumu ele veren bir giriş Yineleyici.
 
-*sonuç*\
+*kaynaklanan*\
 Bir çıkış yineleyicisi, öğelerin kaldırıldığı hedef aralıktaki ilk öğenin konumunu ele alıyor.
 
-*değer*\
+*deeri*\
 Aralıktan kaldırılacak değer.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Hedef aralığın yeni bitiş konumunu ele alarak bir ileri Yineleyici, belirtilen değerin Remnant sırasının bir kopyasının son öğesinden geçmiş.
 
@@ -6513,9 +6513,9 @@ Hedef aralıkta, belirtilen değerin öğeleri kaldırıldıktan sonra kopyalana
 
 Kaldırılmayan öğelerin sırası kararlı kalır.
 
-Öğeler arasındaki eşitliği belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Öğeler arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklık doğrusal; eşitlik ve en çok (`last` - `first`) atamaları için (`last` - `first`) karşılaştırmalar vardır.
+Karmaşıklık doğrusal; `last`  -  `first` eşitlik ve en çok ( `last`  -  ) atamalar için () karşılaştırmalar vardır `first` .
 
 ### <a name="example"></a>Örnek
 
@@ -6584,22 +6584,22 @@ ForwardIterator2 remove_copy_if(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Öğelerin kaldırıldığı aralıktaki ilk öğenin konumunu ele veren bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Öğelerin kaldırıldığı aralıktaki son öğeden önceki konumu ele veren bir giriş Yineleyici.
 
-*sonuç*\
+*kaynaklanan*\
 Bir çıkış yineleyicisi, öğelerin kaldırıldığı hedef aralıktaki ilk öğenin konumunu ele alıyor.
 
-*Pred*\
+*pred*\
 Karşılanması gereken birli koşul, bir öğenin değerinin değiştirilmesini sağlar.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Hedef aralığın yeni bitiş konumunu ele eden bir ileriye doğru yineleyici, bir tane, koşulun yerine geçen öğelerin boş olan Remnant dizisinin son öğesi.
 
@@ -6611,11 +6611,11 @@ Hedef aralıkta, belirtilen değerin öğeleri kaldırıldıktan sonra kopyalana
 
 Kaldırılmayan öğelerin sırası kararlı kalır.
 
-Öğeler arasındaki eşitliği belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Öğeler arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklık doğrusal: eşitlik için (`last` - `first`) karşılaştırmalar ve en çok (`last` - `first`) atamaları vardır.
+Karmaşıklık doğrusal: `last`  -  `first` eşitlik ve en çok ( `last`  -  `first` ) atamalara yönelik karşılaştırmalar vardır.
 
-Bu işlevlerin nasıl davrandığına ilişkin bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Bu işlevlerin nasıl davrandığına ilişkin bilgi için bkz. [Checked Iterators](checked-iterators.md).
 
 ### <a name="example"></a>Örnek
 
@@ -6689,19 +6689,19 @@ ForwardIterator remove_if(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Öğelerin kaldırıldığı aralıktaki ilk öğenin konumunu işaret eden ileriye doğru bir yineleyici.
 
-*son*\
+*soyadına*\
 Bir ileri Yineleyici, öğelerin kaldırıldığı aralıktaki son öğeden bir önceki konumu işaret ediyor.
 
-*Pred*\
+*pred*\
 Karşılanması gereken birli koşul, bir öğenin değerinin değiştirilmesini sağlar.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Değiştirilen aralığın yeni bitiş konumunu ele aldığı bir ileriye doğru yineleyici, bir tane, belirtilen değerin en son öğesi boş olan bir sonraki dizi öğesidir.
 
@@ -6711,9 +6711,9 @@ Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılam
 
 Kaldırılmayan öğelerin sırası kararlı kalır.
 
-Öğeler arasındaki eşitliği belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Öğeler arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklık doğrusal: eşitlik için (`last` - `first`) karşılaştırmalar vardır.
+Karmaşıklık doğrusal: `last`  -  `first` eşitlik için () karşılaştırmalar vardır.
 
 Listenin, yeniden bağlantı işaretçilerini Kaldır ' ın daha verimli bir üye işlev sürümü vardır.
 
@@ -6792,19 +6792,19 @@ void replace(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Öğelerin değiştirildiği aralıktaki ilk öğenin konumunu işaret eden ileri Yineleyici.
 
-*son*\
+*soyadına*\
 İleri Yineleyici, öğelerin değiştirilmekte olduğu aralıktaki son öğeden geçmiş bir konuma işaret ediyor.
 
-*OLDVAL*\
+*oldVal*\
 Değiştirilmekte olan öğelerin eski değeri.
 
-*NewVal*\
+*newVal*\
 Eski değer ile öğelere atanmakta olan yeni değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -6813,9 +6813,9 @@ Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılam
 
 Değiştirilmeyen öğelerin sırası kararlı kalır.
 
-Öğeler arasındaki eşitliği belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Öğeler arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklık doğrusal; eşitlik için (`last` - `first`) karşılaştırmalar ve en fazla (`last` - `first`) yeni değer atamaları vardır.
+Karmaşıklık doğrusal; `last`  -  `first` eşitlik için karşılaştırmalar ve yeni değerlerin en çok ( `last`  -  `first` ) atamaları vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -6881,25 +6881,25 @@ ForwardIterator2 replace_copy(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Öğelerin değiştirildiği aralıktaki ilk öğenin konumunu gösteren bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Bir giriş yineleyicisi, öğelerin değiştirildiği aralıktaki son öğeden önceki konuma işaret ediyor.
 
-*sonuç*\
+*kaynaklanan*\
 Değiştirilen öğe sırasının kopyalandığı hedef aralıktaki ilk öğeyi gösteren bir çıkış yineleyicisi.
 
-*OLDVAL*\
+*oldVal*\
 Değiştirilmekte olan öğelerin eski değeri.
 
-*NewVal*\
+*newVal*\
 Eski değer ile öğelere atanmakta olan yeni değer.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Bir çıkış yineleyicisi, hedef aralıktaki son öğeden geçen bir konuma işaret eden, değiştirilen öğe dizisi öğesine kopyalanır.
 
@@ -6909,9 +6909,9 @@ Başvurulan kaynak ve hedef aralıkları çakışmamalı ve her ikisi de geçerl
 
 Değiştirilmeyen öğelerin sırası kararlı kalır.
 
-Öğeler arasındaki eşitliği belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Öğeler arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklık doğrusal: eşitlik için (`last` - `first`) karşılaştırmalar ve yeni değerlerin en çok (`last` - `first`) atamalarını vardır.
+Karmaşıklık doğrusal: `last`  -  `first` eşitlik için () ve yeni değerlerin en çok ( `last`  -  `first` ) atamalarına yönelik karşılaştırmalar vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -6996,25 +6996,25 @@ ForwardIterator2 replace_copy_if(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Öğelerin değiştirildiği aralıktaki ilk öğenin konumunu gösteren bir giriş Yineleyici.
 
-*son*\
+*soyadına*\
 Bir giriş yineleyicisi, öğelerin değiştirildiği aralıktaki son öğeden önceki konuma işaret ediyor.
 
-*sonuç*\
+*kaynaklanan*\
 Bir çıkış yineleyicisi, öğelerin kopyalandığı hedef aralıktaki ilk öğenin konumunu işaret eder.
 
-*Pred*\
+*pred*\
 Karşılanması gereken birli koşul, bir öğenin değerinin değiştirilmesini sağlar.
 
-*değer*\
+*deeri*\
 Eski değeri koşulu karşılayan öğelere atanmakta olan yeni değer.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Bir çıkış yineleyicisi, hedef aralıktaki son öğeden geçen bir konuma işaret eden, değiştirilen öğe dizisi öğesine kopyalanır.
 
@@ -7024,9 +7024,9 @@ Başvurulan kaynak ve hedef aralıkları çakışmamalı ve her ikisi de geçerl
 
 Değiştirilmeyen öğelerin sırası kararlı kalır.
 
-Öğeler arasındaki eşitliği belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Öğeler arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklık doğrusal; eşitlik için (`last` - `first`) karşılaştırmalar ve en fazla (`last` - `first`) yeni değer atamaları vardır.
+Karmaşıklık doğrusal; `last`  -  `first` eşitlik için karşılaştırmalar ve yeni değerlerin en çok ( `last`  -  `first` ) atamaları vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -7117,19 +7117,19 @@ void replace_if(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Öğelerin değiştirildiği aralıktaki ilk öğenin konumunu işaret eden ileri Yineleyici.
 
-*son*\
+*soyadına*\
 Öğelerin değiştirilmekte olduğu aralıktaki son öğeden önceki konuma işaret eden bir yineleyici.
 
-*Pred*\
+*pred*\
 Karşılanması gereken birli koşul, bir öğenin değerinin değiştirilmesini sağlar.
 
-*değer*\
+*deeri*\
 Eski değeri koşulu karşılayan öğelere atanmakta olan yeni değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -7138,11 +7138,11 @@ Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılam
 
 Değiştirilmeyen öğelerin sırası kararlı kalır.
 
-Algoritma `replace_if`, belirtilen sabit değere eşitlik yerine herhangi bir koşulun belirtilmesine izin veren `replace`algoritma genelleştirmesidir.
+Algoritma, `replace_if` `replace` belirli bir sabit değere eşitlik yerine her koşulun belirtilmesini sağlayan algoritmanın genelleştirmesidir.
 
-Öğeler arasındaki eşitliği belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Öğeler arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklık doğrusal: eşitlik için (`last` - `first`) karşılaştırmalar ve yeni değerlerin en çok (`last` - `first`) atamalarını vardır.
+Karmaşıklık doğrusal: `last`  -  `first` eşitlik için () ve yeni değerlerin en çok ( `last`  -  `first` ) atamalarına yönelik karşılaştırmalar vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -7209,13 +7209,13 @@ void reverse(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Öğelerin daha fazla kapalı olduğu aralıktaki ilk öğenin konumunu gösteren çift yönlü bir yineleyici.
 
-*son*\
+*soyadına*\
 Öğelerin, öğelerin en son kullanıldığı aralıktaki son öğeden geçmiş bir konuma işaret eden çift yönlü bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -7286,19 +7286,19 @@ ForwardIterator reverse_copy(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bir çift yönlü yineleyiciden, öğelerin bir aralıktaki ilk öğenin konumunu gösteren bir çift yönlü Yineleyici.
 
-*son*\
+*soyadına*\
 Çift yönlü bir yineleyici, öğelerin, öğelerin, içindeki son öğeden en sonda yer aldığı bir konuma işaret ediyor.
 
-*sonuç*\
+*kaynaklanan*\
 Bir çıkış yineleyicisi, öğelerin kopyalandığı hedef aralıktaki ilk öğenin konumunu işaret eder.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Bir çıkış yineleyicisi, hedef aralıktaki son öğeden geçen bir konuma işaret eden, değiştirilen öğe dizisi öğesine kopyalanır.
 
@@ -7368,23 +7368,23 @@ ForwardIterator rotate(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bir ileri Yineleyici, döndürülmek üzere aralıktaki ilk öğenin konumunu ele alıyor.
 
-*orta*\
+*Beceri*\
 Aralığı içindeki ilk öğenin, öğeleri aralığın ilk bölümünde olacak şekilde değiştirilecek olan aralığın ikinci parçasındaki konumunu tanımlayan bir ileriye doğru yineleyici.
 
-*son*\
+*soyadına*\
 Bir ileri Yineleyici, döndürülmek üzere aralıktaki son öğeden sonraki konumu ele alıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Karmaşıklık, en fazla (`last` - `first`) takas eden doğrusal bir değer.
+Karmaşıklık, en çok () değiştirmeleri ile doğrusal bir değer `last`  -  `first` .
 
 ### <a name="example"></a>Örnek
 
@@ -7484,22 +7484,22 @@ ForwardIterator2 rotate_copy(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bir ileri Yineleyici, döndürülmek üzere aralıktaki ilk öğenin konumunu ele alıyor.
 
-*orta*\
+*Beceri*\
 Aralığı içindeki ilk öğenin, öğeleri aralığın ilk bölümünde olacak şekilde değiştirilecek olan aralığın ikinci parçasındaki konumunu tanımlayan bir ileriye doğru yineleyici.
 
-*son*\
+*soyadına*\
 Bir ileri Yineleyici, döndürülmek üzere aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*sonuç*\
+*kaynaklanan*\
 Hedef aralıktaki ilk öğenin konumunu ele alarak çıkış Yineleyici.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Hedef aralıktaki son öğeden sonraki konumu ele alarak çıkış Yineleyici.
 
@@ -7507,7 +7507,7 @@ Hedef aralıktaki son öğeden sonraki konumu ele alarak çıkış Yineleyici.
 
 Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Karmaşıklık, en fazla (`last` - `first`) takas eden doğrusal bir değer.
+Karmaşıklık, en çok () değiştirmeleri ile doğrusal bir değer `last`  -  `first` .
 
 ### <a name="example"></a>Örnek
 
@@ -7627,7 +7627,7 @@ ForwardIterator search(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -7642,19 +7642,19 @@ Eşleştirilecek aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir
 *last2*\
 Bir ileri Yineleyici, eşleştirilecek aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*Pred*\
+*pred*\
 İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 *Arayıcının*\
 Aranacak kalıbı ve kullanılacak arama algoritmasını kapsülleyen Arayıcının. Aramacılar hakkında daha fazla bilgi için bkz. [default_searcher Class](default-searcher-class.md), [boyer_moore_horspool_searcher Class](boyer-moore-horspool-searcher-class.md)ve [boyer_moore_searcher sınıfı](boyer-moore-searcher-class.md).
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Bir ileri Yineleyici, belirtilen sırayla eşleşen veya bir ikili koşula göre belirtilen bir Sense ile eşdeğer olan ilk alt dizinin ilk öğesinin konumunu ele alıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
 Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçiler, her bir sırada bir kez başvurulmalıdır ve en son konum, artırılamadı tarafından ilk kez erişilebilir.
 
@@ -7799,7 +7799,7 @@ ForwardIterator search_n(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -7808,22 +7808,22 @@ Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 *last1*\
 Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*sayı*\
+*biriktirme*\
 Aranmakta olan alt dizinin boyutu.
 
-*değer*\
+*deeri*\
 Aranan dizideki öğelerin değeri.
 
-*Pred*\
+*pred*\
 İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Bir ileri Yineleyici, belirtilen sırayla eşleşen veya bir ikili koşula göre belirtilen bir Sense ile eşdeğer olan ilk alt dizinin ilk öğesinin konumunu ele alıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan `operator==`, işlenenleri arasında bir denklik ilişkisi getirmelidir.
+`operator==`Bir öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
@@ -7956,7 +7956,7 @@ ForwardIterator set_difference(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -7971,13 +7971,13 @@ Art arda iki sıralı kaynak aralığının ikinci kısmında birinci öğenin k
 *last2*\
 Art arda iki sıralı kaynak aralığının ikinci ve iki kaynak aralığının farkını temsil eden tek bir aralığa sıralanmış en son öğeden geçen bir giriş Yineleyici.
 
-*sonuç*\
+*kaynaklanan*\
 İki kaynak aralığının iki kaynak aralığının farkını temsil eden tek bir sıralanmış aralığa Birleşik olarak bulunacağı, hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış Yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 İki kaynak aralığının farkını temsil eden sıralanmış hedef aralıktaki son öğeden sonraki konumu ele alarak bir çıkış yineleyicisi.
 
@@ -7987,13 +7987,13 @@ Başvurulan sıralanmış kaynak aralıkları geçerli olmalıdır; Tüm işaret
 
 Hedef Aralık, kaynak aralıklarından biriyle çakışmamalıdır ve ilk kaynak aralığını içerecek kadar büyük olmalıdır.
 
-Sıralanmış kaynak aralıklarının her biri, birleştirilmiş aralıkları sıralamak için algoritma tarafından kullanılacak şekilde, `set_difference` algoritmanın uygulamasına bir önkoşul olarak düzenlenmelidir.
+Sıralanmış kaynak aralıklarının her biri, algoritma `set_difference` tarafından Birleşik aralıkları sıralamak için kullanılan aynı sıralamaya uygun olarak, algoritmanın uygulamasına bir ön koşul olarak düzenlenmelidir.
 
 Her aralıktaki öğelerin göreli sırası hedef aralıkta korunduğu için işlem kararlı değildir. Kaynak aralıkları, algoritma birleştirme tarafından değiştirilmez.
 
-Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için daha az karşılaştırılabilir olması gerekir. böylece, iki öğe verildiğinde, eşdeğer oldukları (Yani bunlardan daha küçük olmadığı anlamda) veya birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, ilk aralıktaki öğeler, hedef aralıktaki ikinci kaynak aralığından öğeden önce gelmelidir. Kaynak aralıkları, ikinciden daha fazla ilk kaynak aralığında daha fazla olması gibi bir öğenin yinelemelerini içeriyorsa, hedef Aralık ilk kaynak aralıktaki bu öğelerin tekrarlarının oluşum sayısını aşacak şekilde ikinci kaynak aralıktaki öğeler.
+Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için daha az karşılaştırılabilir olması gerekir. böylece, iki öğe verildiğinde, eşdeğer oldukları (Yani bunlardan daha küçük olmadığı anlamda) veya birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, ilk aralıktaki öğeler, hedef aralıktaki ikinci kaynak aralığından öğeden önce gelmelidir. Kaynak aralıkları, ikinciden daha fazla ilk kaynak aralığında daha fazla olması gibi bir öğenin yinelemelerini içeriyorsa, hedef Aralık, ilk kaynak aralıktaki bu öğelerin tekrarlarının ikinci kaynak aralıktaki bu öğelerin tekrarlamalarını aştığında kullanılacak sayıyı içerir.
 
-Algoritmanın karmaşıklığı, boş olmayan kaynak aralıkları için en çok `2 * ((last1 - first1) - (last2 - first2)) - 1` karşılaştırmayla doğrusal bir şekilde yapılır.
+Algoritmanın karmaşıklığı, `2 * ((last1 - first1) - (last2 - first2)) - 1` boş olmayan kaynak aralıkları için en çok karşılaştırmalar ile doğrusal bir şekilde yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -8158,7 +8158,7 @@ ForwardIterator set_intersection(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -8173,13 +8173,13 @@ Art arda iki sıralı kaynak aralığının ikinci kısmında birinci öğenin k
 *last2*\
 Art arda iki sıralı kaynak aralığının ikinci ve iki kaynak aralığının kesişimini temsil eden tek bir aralığa sıralanmış en son öğeden geçen bir giriş Yineleyici.
 
-*sonuç*\
+*kaynaklanan*\
 İki kaynak aralığının iki kaynak aralığının kesişimini temsil eden tek bir sıralanmış aralığa Birleşik olarak bulunacağı, hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış Yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 İki kaynak aralığının kesişimini temsil eden sıralanmış hedef aralıktaki son öğeden geçen bir çıkış yineleyicisi.
 
@@ -8195,7 +8195,7 @@ Her aralıktaki öğelerin göreli sırası hedef aralıkta korunduğu için iş
 
 Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için kıyasla daha az olması gerekir, böylece iki öğe söz konusu olduğunda, eşdeğer oldukları (Yani bunlardan daha küçük olmayan) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, ilk aralıktaki öğeler, hedef aralıktaki ikinci kaynak aralığından öğeden önce gelmelidir. Kaynak aralıkları bir öğenin yinelemelerini içeriyorsa, hedef Aralık her iki kaynak aralığında gerçekleşen bu öğelerin en fazla sayısını içerir.
 
-Algoritmanın karmaşıklığı, boş olmayan kaynak aralıkları için en çok `2 * ((last1 - first1) + (last2 - first2)) - 1` karşılaştırmayla doğrusal bir şekilde yapılır.
+Algoritmanın karmaşıklığı, `2 * ((last1 - first1) + (last2 - first2)) - 1` boş olmayan kaynak aralıkları için en çok karşılaştırmalar ile doğrusal bir şekilde yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -8356,7 +8356,7 @@ ForwardIterator set_symmetric_difference(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -8371,13 +8371,13 @@ Art arda iki sıralı kaynak aralığının ikinci kısmında birinci öğenin k
 *last2*\
 Art arda iki sıralı kaynak aralığının ikinci ve iki kaynak aralığının simetrik farkını temsil eden tek bir aralığa sıralanmış en son öğeden geçen bir giriş Yineleyici.
 
-*sonuç*\
+*kaynaklanan*\
 İki kaynak aralığının iki kaynak aralığının simetrik farkını temsil eden tek bir sıralanmış aralığa Birleşik olarak bulunacağı, hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış yineleyicisi.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 İki kaynak aralığının simetrik farkını temsil eden sıralanmış hedef aralıktaki son öğeden geçen bir çıkış yineleyicisi.
 
@@ -8387,13 +8387,13 @@ Başvurulan sıralanmış kaynak aralıkları geçerli olmalıdır; Tüm işaret
 
 Hedef Aralık, kaynak aralıklarından biriyle çakışmamalıdır ve hedef aralığı içerecek kadar büyük olmalıdır.
 
-Sıralanmış kaynak aralıklarının her biri, birleştirilmiş aralıkları sıralamak için algoritma tarafından kullanılacak şekilde, `merge*` algoritmanın uygulamasına bir önkoşul olarak düzenlenmelidir.
+Sıralanmış kaynak aralıklarının her biri, algoritma `merge*` tarafından Birleşik aralıkları sıralamak için kullanılan aynı sıralamaya uygun olarak, algoritmanın uygulamasına bir ön koşul olarak düzenlenmelidir.
 
 Her aralıktaki öğelerin göreli sırası hedef aralıkta korunduğu için işlem kararlı değildir. Kaynak aralıkları, algoritma birleştirme tarafından değiştirilmez.
 
-Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için kıyasla daha az olması gerekir, böylece iki öğe söz konusu olduğunda, eşdeğer oldukları (Yani bunlardan daha küçük olmayan) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, ilk aralıktaki öğeler, hedef aralıktaki ikinci kaynak aralığından öğeden önce gelmelidir. Kaynak aralıkları bir öğenin yinelemelerini içeriyorsa, hedef Aralık, kaynak aralıklarından birindeki bu öğelerin oluşumlarının ikinci kaynaktaki bu öğelerin oluşumlarını aştığında sayının mutlak değerini içerir aralığı.
+Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için kıyasla daha az olması gerekir, böylece iki öğe söz konusu olduğunda, eşdeğer oldukları (Yani bunlardan daha küçük olmayan) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, ilk aralıktaki öğeler, hedef aralıktaki ikinci kaynak aralığından öğeden önce gelmelidir. Kaynak aralıkları bir öğenin yinelemelerini içeriyorsa, hedef Aralık, kaynak aralıklarından birindeki bu öğelerin oluşumlarının ikinci kaynak aralıktaki bu öğelerin oluşumlarını aştığında sayının mutlak değerini içerir.
 
-Algoritmanın karmaşıklığı, boş olmayan kaynak aralıkları için en çok `2 * ((last1 - first1) - (last2 - first2)) - 1` karşılaştırmayla doğrusal bir şekilde yapılır.
+Algoritmanın karmaşıklığı, `2 * ((last1 - first1) - (last2 - first2)) - 1` boş olmayan kaynak aralıkları için en çok karşılaştırmalar ile doğrusal bir şekilde yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -8558,7 +8558,7 @@ ForwardIterator set_union(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -8573,13 +8573,13 @@ Art arda iki sıralı kaynak aralığının ikinci kısmında birinci öğenin k
 *last2*\
 Art arda iki sıralı kaynak aralığının ikincisine göre son öğeden geçen ve iki kaynak aralığının birleşimini temsil eden tek bir aralığa sıralanan bir giriş Yineleyici.
 
-*sonuç*\
+*kaynaklanan*\
 İki kaynak aralığının iki kaynak aralığın birleşimini temsil eden tek bir sıralanmış aralığa Birleşik olarak bulunacağı, hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış Yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 İki kaynak aralığının birleşimini temsil eden sıralanmış hedef aralıktaki son öğeden sonraki konumu ele alarak bir çıkış yineleyicisi.
 
@@ -8589,13 +8589,13 @@ Başvurulan sıralanmış kaynak aralıkları geçerli olmalıdır; Tüm işaret
 
 Hedef Aralık, kaynak aralıklarından biriyle çakışmamalıdır ve hedef aralığı içerecek kadar büyük olmalıdır.
 
-Sıralanmış kaynak aralıklarının her biri, birleştirilmiş aralıkları sıralamak için algoritma tarafından kullanılacak şekilde, `merge` algoritmanın uygulamasına bir önkoşul olarak düzenlenmelidir.
+Sıralanmış kaynak aralıklarının her biri, algoritma `merge` tarafından Birleşik aralıkları sıralamak için kullanılan aynı sıralamaya uygun olarak, algoritmanın uygulamasına bir ön koşul olarak düzenlenmelidir.
 
-Her aralıktaki öğelerin göreli sırası hedef aralıkta korunduğu için işlem kararlı değildir. Kaynak aralıkları algoritma `merge`tarafından değiştirilmez.
+Her aralıktaki öğelerin göreli sırası hedef aralıkta korunduğu için işlem kararlı değildir. Kaynak aralıkları algoritma tarafından değiştirilmez `merge` .
 
 Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için kıyasla daha az olması gerekir, böylece iki öğe söz konusu olduğunda, eşdeğer oldukları (Yani bunlardan daha küçük olmayan) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, ilk aralıktaki öğeler, hedef aralıktaki ikinci kaynak aralığından öğeden önce gelmelidir. Kaynak aralıkları bir öğenin yinelemelerini içeriyorsa, hedef Aralık her iki kaynak aralığında gerçekleşen bu öğelerin en fazla sayısını içerir.
 
-Algoritmanın karmaşıklığı en çok `2 * ((last1 - first1) - (last2 - first2)) - 1` karşılaştırmayla doğrusal bir şekilde yapılır.
+Algoritmanın karmaşıklığı, en çok karşılaştırmalar ile doğrusal olarak belirlenir `2 * ((last1 - first1) - (last2 - first2)) - 1` .
 
 ### <a name="example"></a>Örnek
 
@@ -8730,18 +8730,18 @@ void shuffle(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Bir yineleyici, dahil olmak üzere, karıştırılan aralıktaki ilk öğe. `RandomAccessIterator` ve `ValueSwappable`gereksinimleriyle Buluşmalıdır.
+*adı*\
+Bir yineleyici, dahil olmak üzere, karıştırılan aralıktaki ilk öğe. , Ve gereksinimlerinin karşılanması gerekir `RandomAccessIterator` `ValueSwappable` .
 
-*son*\
-Bir yineleyiciden, tek başına karıştırılmış ve dışlamalı son öğe. `RandomAccessIterator` ve `ValueSwappable`gereksinimleriyle Buluşmalıdır.
+*soyadına*\
+Bir yineleyiciden, tek başına karıştırılmış ve dışlamalı son öğe. , Ve gereksinimlerinin karşılanması gerekir `RandomAccessIterator` `ValueSwappable` .
 
-*gen*\
-`shuffle()` işlevin işlem için kullanacağı rastgele sayı Oluşturucu. `UniformRandomNumberGenerator`gereksinimlerine uymalıdır.
+*alanına*\
+`shuffle()`İşlevin işlem için kullanacağı rastgele sayı Oluşturucu. , Öğesinin gereksinimleriyle Buluşmalıdır `UniformRandomNumberGenerator` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi ve `shuffle()`kullanan bir kod örneği için bkz. [\<rastgele >](../standard-library/random.md).
+Daha fazla bilgi ve tarafından kullanılan bir kod örneği için `shuffle()` bkz [\<random>](random.md) ..
 
 ## <a name="sort"></a><a name="sort"></a>düzenine
 
@@ -8775,25 +8775,25 @@ void sort(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Sıralanacak aralıktaki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*son*\
+*soyadına*\
 Sıralanacak aralıktaki son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Pred*\
-Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Bu ikili koşul iki bağımsız değişken alır ve iki bağımsız değişken sıradaysa **true** , aksi takdirde **false** döndürür. Bu karşılaştırıcı işlevi, dizideki öğe çiftlerine katı bir zayıf sıralama getirmelidir. Daha fazla bilgi için bkz. [algoritmalar](../standard-library/algorithms.md).
+*pred*\
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Bu ikili koşul iki bağımsız değişken alır ve iki bağımsız değişken sıradaysa **true** , aksi takdirde **false** döndürür. Bu karşılaştırıcı işlevi, dizideki öğe çiftlerine katı bir zayıf sıralama getirmelidir. Daha fazla bilgi için bkz. [algoritmalar](algorithms.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Öğeler eşdeğer, ancak eşit değildir, ancak ikisi de küçüktür. `sort` algoritması kararlı değildir ve bu nedenle denk öğelerin göreli sıralamasına karşı korunabileceğini garanti etmez. Algoritma `stable_sort` bu orijinal sıralamayı korur.
+Öğeler eşdeğer, ancak eşit değildir, ancak ikisi de küçüktür. `sort`Algoritma kararlı değildir ve bu nedenle denk öğelerin göreli sıralamasına karşı korunmayacağını garanti etmez. Algoritma `stable_sort` Bu orijinal sıralamayı korur.
 
-Sıralama karmaşıklığının ortalaması `O( N log N )`, burada *N* = *son* * - .*
+Sıralama karmaşıklığına ilişkin ortalama, `O( N log N )` *N*  =  *en son*N  -  *birinciden*oluşur.
 
 ### <a name="example"></a>Örnek
 
@@ -8882,13 +8882,13 @@ void sort_heap(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Hedef yığında ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*son*\
+*soyadına*\
 Hedef yığında son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -8903,11 +8903,11 @@ Uygulama bu algoritmadan sonra, uygulandığı Aralık artık bir yığın deği
 
 Denk öğelerin göreli sırası korunmadığı için bu kararlı bir sıralama değildir.
 
-Heap 'ler, öncelik kuyruklarını uygulamanın ideal bir yoludur ve C++ standart kitaplık kapsayıcı bağdaştırıcısı [priority_queue sınıfının](../standard-library/priority-queue-class.md)uygulamasında kullanılır.
+Heap 'ler, öncelik kuyruklarını uygulamanın ideal bir yoludur ve C++ standart kitaplık kapsayıcı bağdaştırıcısı [priority_queue sınıfının](priority-queue-class.md)uygulamasında kullanılır.
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Karmaşıklık en çok `N log N`, burada *N* = *en son* * - .*
+Karmaşıklık en çok `N log N` , burada *N*  =  *son*  -  *ilk*.
 
 ### <a name="example"></a>Örnek
 
@@ -8984,19 +8984,19 @@ BidirectionalIterator stable_partition(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Bölümlendirilmek üzere aralıktaki ilk öğenin konumunu ele alarak çift yönlü bir yineleyici.
 
-*son*\
+*soyadına*\
 Bölümlendirilmek üzere aralıktaki son öğeden geçmiş bir konumu ele alarak çift yönlü bir yineleyici.
 
-*Pred*\
+*pred*\
 Bir öğe sınıflandırılabildiğinde karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Birli koşul tek bir bağımsız değişken alır ve memnun olursa **true** , aksi takdirde **false** döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Koşul koşulunu yerine getirmek için aralıktaki ilk öğenin konumunu ele alarak çift yönlü bir yineleyici.
 
@@ -9004,7 +9004,7 @@ Koşul koşulunu yerine getirmek için aralıktaki ilk öğenin konumunu ele ala
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-*A* ve *b* öğeleri eşdeğerdir ancak eşit değildir, her ikisi de `pred( a, b )` false ise ve `pred( b, a )` false ise, burada *Pred* parametresi belirtilen koşul olur. `stable_partition` algoritması kararlı ve denk öğelerin göreli sıralamasını koruyacaktır. Algoritma `partition` bu orijinal sıralamayı korumayabilir.
+*A* ve *b* öğeleri eşdeğerdir, ancak her ikisi de false ise eşit değildir ve false ise, her ikisi de `pred( a, b )` `pred( b, a )` parametre belirtilen koşul olur. *pred* `stable_partition`Algoritma kararlı olur ve denk öğelerin göreli sıralamasını korunacaktır. Algoritma `partition` Bu orijinal sıralamayı korumayabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -9085,25 +9085,25 @@ void stable_sort(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Sıralanacak aralıktaki ilk öğenin konumunu ele alarak çift yönlü bir yineleyici.
 
-*son*\
+*soyadına*\
 Sıralanacak aralıktaki son öğeden bir tane olan konumu ele alarak çift yönlü bir yineleyici.
 
-*Pred*\
+*pred*\
 Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Öğeler eşdeğer, ancak eşit değildir, ancak ikisi de küçüktür. `sort` algoritması kararlı ve denk öğelerin göreli sıralamasını koruyacaktır.
+Öğeler eşdeğer, ancak eşit değildir, ancak ikisi de küçüktür. `sort`Algoritma kararlı olur ve denk öğelerin göreli sıralamasını korunacaktır.
 
-`stable_sort` çalışma zamanı karmaşıklığı kullanılabilir bellek miktarına bağlıdır, ancak en iyi durum (yeterli bellek verilen) `O(N log N)` ve en kötü durum `O(N (log N)^2)`, burada *N* = *son* * - .* Genellikle `sort` algoritması `stable_sort`önemli ölçüde hızlıdır.
+Çalışma zamanı karmaşıklığı `stable_sort` kullanılabilir bellek miktarına bağlıdır, ancak en iyi durum (yeterli bellek verilir) `O(N log N)` ve en kötü durum `O(N (log N)^2)` , burada *N*  =  *son*  -  *ilk*. Genellikle, `sort` algoritma şundan önemli ölçüde daha hızlıdır `stable_sort` .
 
 ### <a name="example"></a>Örnek
 
@@ -9189,10 +9189,10 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 İlk geçersiz kılma için, içeriğini değiş tokuş eden ilk nesne. İkinci geçersiz kılma için, içeriklerinin değiş tokuş edilecek ilk nesne dizisi.
 
-*sağ*\
+*Right*\
 İlk geçersiz kılma için, içeriğini değiş tokuş eden ikinci nesne. İkinci geçersiz kılma için, içeriğini değiş tokuş edilecek ikinci nesne dizisi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -9276,7 +9276,7 @@ ForwardIterator2 swap_ranges(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -9288,7 +9288,7 @@ Kullanılacak yürütme ilkesi.
 *first2*\
 İleri Yineleyici, öğeleri değiş tokuş edilecek ikinci aralığın ilk konumunu işaret eder.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Bir ileri Yineleyici, öğeleri değiş tokuş edilecek ikinci aralığın son konumunu işaret ediyor.
 
@@ -9296,7 +9296,7 @@ Bir ileri Yineleyici, öğeleri değiş tokuş edilecek ikinci aralığın son k
 
 Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçiler, her bir sırada bir kez başvurulmalıdır ve en son konum, artırılamadı tarafından ilk kez erişilebilir. İkinci Aralık ilk Aralık kadar büyük olmalıdır.
 
-Karmaşıklık, *last1* - *first1* takas gerçekleştirilmiş ile doğrusal bir şekilde yapılır. Aynı türdeki kapsayıcılardan öğeler takas edilmekte ise, üye işlevi genellikle sabit karmaşıklığa sahip olduğundan, bu kapsayıcıdan `swap` üye işlevi kullanılmalıdır.
+Karmaşıklık, *last1*  -  *first1* takas gerçekleştirilen doğrusal bir şekilde karmaşıktır. Aynı türdeki kapsayıcılardan öğeler takas edilmekte ise, `swap` üye işlevi genellikle sabit karmaşıklığa sahip olduğundan, bu kapsayıcıdan üye işlevi kullanılmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -9399,7 +9399,7 @@ ForwardIterator transform(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
 *first1*\
@@ -9411,13 +9411,13 @@ Kullanılacak yürütme ilkesi.
 *first2*\
 Üzerinde çalıştırılacak ikinci kaynak aralıktaki ilk öğenin konumunu ele alan bir giriş Yineleyici.
 
-*sonuç*\
+*kaynaklanan*\
 Hedef aralıktaki ilk öğenin konumunu ele alarak çıkış Yineleyici.
 
-*func*\
-İlk kaynak aralıktaki her bir öğeye veya bir Kullanıcı tanımlı (UD) ikili işlev nesnesine, bir ileriye doğru şekilde uygulanmış olan algoritmanın ikinci sürümünde kullanılan, algoritmanın ilk sürümünde kullanılan Kullanıcı tanımlı birli işlev nesnesi , iki kaynak aralığına.
+*melerinin*\
+İlk kaynak aralıktaki her bir öğeye uygulanan ve bir Kullanıcı tanımlı (UD) ikili işlev nesnesi olan ve bir ileriye doğru sırada iki kaynak aralığa uygulanan, algoritmanın ikinci sürümünde kullanılan, algoritmanın ilk sürümünde kullanılan Kullanıcı tanımlı birli işlev nesnesi.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 İşlev nesnesi tarafından dönüştürülen çıkış öğelerini alan hedef aralıktaki son öğeden önceki konumu ele alan bir çıkış Yineleyici.
 
@@ -9425,9 +9425,9 @@ Hedef aralıktaki ilk öğenin konumunu ele alarak çıkış Yineleyici.
 
 Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide en son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır. Hedef Aralık, dönüştürülmüş kaynak aralığını içerecek kadar büyük olmalıdır.
 
-*Sonuç* , algoritmanın ilk sürümünde *first1* değerine eşitse, kaynak ve hedef aralıklar aynı olur ve sıra yerinde değiştirilir. Ancak *sonuç* [`first1` + 1, `last1`) aralığı içinde bir konumu ele vermeyebilir.
+*Sonuç* , algoritmanın ilk sürümünde *first1* değerine eşitse, kaynak ve hedef aralıklar aynı olur ve sıra yerinde değiştirilir. Ancak *sonuç* [ `first1` + 1,) aralığı içinde bir konumu ele vermeyebilir `last1` .
 
-Karmaşıklık, en fazla (`last1` - `first1`) karşılaştırmaları ile doğrusal bir şekilde yapılır.
+Karmaşıklık, en çok ( `last1`  -  `first1` ) karşılaştırmalarda doğrusal olarak belirlenir.
 
 ### <a name="example"></a>Örnek
 
@@ -9547,19 +9547,19 @@ ForwardIterator unique(
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Yinelenen kaldırma için Taranacak aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yineleyici.
 
-*son*\
+*soyadına*\
 Yinelenen kaldırma için taranacak olan aralıktaki son öğeden bir önceki konumu ele alarak ileriye doğru bir yineleyici.
 
-*Pred*\
+*pred*\
 İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Art arda yinelenen olmayan yineleme içermeyen değiştirilmiş sıranın yeni sonuna bir iletme yineleyicisi, son öğeden çıkarılan konumu ele alır.
 
@@ -9569,9 +9569,9 @@ Her iki algoritma formu, birbirini izleyen eşit öğelerin çiftinin ikinci yin
 
 Algoritma işlemi, silinmeyen öğelerin göreli sırası değiştirilmemesi için kararlı bir işlemdir.
 
-Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir. dizideki öğe sayısı, algoritma `unique` tarafından değiştirilmez ve değiştirilen sıranın sonundaki öğeler geçersiz şekilde kaldırılır ancak belirtilmez.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir. dizideki öğe sayısı, algoritma tarafından değiştirilmez `unique` ve değiştirilen sıranın sonundaki öğeler geçersiz olur ancak belirtilmez.
 
-Karmaşıklık, `(last - first) - 1` karşılaştırmaları gerektiren doğrusal bir değer.
+Karmaşıklık, karşılaştırmalar gerektiren doğrusal bir değer `(last - first) - 1` .
 
 Liste, daha iyi gerçekleştirebilen daha verimli bir "Unique" üye işlevi sağlar.
 
@@ -9700,22 +9700,22 @@ ForwardIterator2 unique_copy(ExecutionPolicy&& exec,
 
 ### <a name="parameters"></a>Parametreler
 
-*exec*\
+*Exec*\
 Kullanılacak yürütme ilkesi.
 
-*ilk*\
+*adı*\
 Kopyalanacak kaynak aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yineleyici.
 
-*son*\
+*soyadına*\
 Kaynak aralıktaki kopyalanacak son öğeden bir önceki konumu ele alarak ileriye doğru bir yineleyici.
 
-*sonuç*\
+*kaynaklanan*\
 Bir çıkış yineleyicisi, bir kopyayı ardışık yinelemeler kaldırılmış şekilde alan hedef aralıktaki ilk öğenin konumunu ele alıyor.
 
-*Pred*\
+*pred*\
 İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Arka arkaya yinelenen kopyaları kaldırılmış şekilde kopyayı alan hedef aralıktaki son öğeden bir önceki konumu ele alan çıkış Yineleyici.
 
@@ -9727,7 +9727,7 @@ Algoritma işlemi, silinmeyen öğelerin göreli sırası değiştirilmemesi iç
 
 Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçiler, bir dizi içinde ve en son konum ilk artırılamadı tarafından erişilebilir olmalıdır.
 
-Karmaşıklık doğrusal, (`last` - `first`) karşılaştırmaları gerektirir.
+Karmaşıklık, doğrusal, ( `last`  -  `first` ) karşılaştırmaları gerektirir.
 
 ### <a name="example"></a>Örnek
 
@@ -9822,19 +9822,19 @@ ForwardIterator upper_bound(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Aranacak aralıktaki ilk öğenin konumu.
 
-*son*\
+*soyadına*\
 Aranacak aralıktaki son öğeden geçen bir konum.
 
-*değer*\
+*deeri*\
 Sıralanmış aralıktaki, döndürülen Yineleyici tarafından belirtilen öğenin değeri ile aşılması gereken değer.
 
-*Pred*\
+*pred*\
 Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı karşılaştırma koşulu işlev nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Döndürülen değer
 
 Belirtilen değerden daha büyük bir değere sahip ilk öğenin konumuna ileriye doğru bir yineleyici.
 
@@ -9842,13 +9842,13 @@ Belirtilen değerden daha büyük bir değere sahip ilk öğenin konumuna ileriy
 
 Başvurulan sıralanmış kaynak aralığı geçerli olmalıdır; tüm yineleyiciler, en başta artırılamadı 'e başvurulamamalıdır.
 
-Sıralanmış bir Aralık, `upper_bound` kullanımının önkoşuludur ve sıralama ölçütünün karşılaştırma koşulunda belirtilen şekilde aynı olduğu yerdir.
+Sıralanmış bir Aralık, kullanımı `upper_bound` ve sıralama ölçütünün karşılaştırma koşulu tarafından belirtilen şekilde aynı olduğu bir önkoşuludur.
 
-Aralık `upper_bound`tarafından değiştirilmez.
+Aralık tarafından değiştirilmez `upper_bound` .
 
 İleriye doğru yineleyicilerin değer türlerinin sıralanabilmesi için kıyasla daha az karşılaştırılabilir olması gerekir. bu sayede, iki öğe verildiğinde, eşdeğer oldukları (Yani bunlardan daha küçük olmadığı anlamda) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, eşdeğer olmayan öğeler arasında bir sıralamaya neden olur
 
-Algoritmanın karmaşıklığı Rastgele erişimli yineleyiciler ve doğrusal olarak, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle, (`last - first`) ile orantılıdır.
+Algoritmanın karmaşıklığı Rastgele erişimli yineleyiciler ve doğrusal olarak, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle, () ile orantılıdır `last - first` .
 
 ### <a name="example"></a>Örnek
 

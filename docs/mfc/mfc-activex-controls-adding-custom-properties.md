@@ -5,96 +5,96 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], properties
 - properties [MFC], custom
 ms.assetid: 85af5167-74c7-427b-b8f3-e0d7b73942e5
-ms.openlocfilehash: 00f7a879582bca562ce626fe224206094fd19bc7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5014a32386a0a140f0fdc00b23a0ac24a54afcee
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364698"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626140"
 ---
 # <a name="mfc-activex-controls-adding-custom-properties"></a>MFC ActiveX Denetimleri: Özel Özellikler Ekleme
 
-Özel özellikler, özel özelliklerizaten `COleControl` sınıf tarafından uygulanmamış stok özellikleri farklıdır. Özel bir özellik, denetimi kullanan bir programcıya activex denetiminin belirli bir durumunu veya görünümünü ortaya çıkarmak için kullanılır.
+Özel özellikler, sınıf tarafından zaten uygulanmamış olan özel özellikler stok özelliklerinden farklıdır `COleControl` . Özel bir özellik, bir ActiveX denetiminin belirli bir durumunu veya görünümünü, bu denetimi kullanarak bir programcıya göstermek için kullanılır.
 
-Bu makalede, Özellik Ekle Sihirbazı'nı kullanarak ActiveX denetimine özel bir özellik nasıl ekleyeceğiniz açıklanır ve ortaya çıkan kod değişikliklerini açıklar. Konu başlıkları şunlardır:
+Bu makalede, Özellik Ekleme Sihirbazı kullanılarak ActiveX denetimine nasıl özel bir özellik ekleneceği ve sonuçta elde edilen kod değişiklikleri açıklanmaktadır. Konu başlıkları şunlardır:
 
-- [Özel bir özellik eklemek için Özellik Ekle Sihirbazı'nı kullanma](#_core_using_classwizard_to_add_a_custom_property)
+- [Özel özellik eklemek için Özellik Ekleme Sihirbazı 'Nı kullanma](#_core_using_classwizard_to_add_a_custom_property)
 
-- [Özel özellikler için Özellik Sihirbazı değişiklikleri ekleme](#_core_classwizard_changes_for_custom_properties)
+- [Özel özellikler için Özellik Ekleme Sihirbazı değişiklikleri](#_core_classwizard_changes_for_custom_properties)
 
-Özel özellikler dört çeşit uygulama da gelir: Üye Değişken, Bildirimli Üye Değişken, Alma/Ayarla Yöntemleri ve Parametreli.
+Özel özellikler, uygulama değişkeni, bildirim içeren üye değişkeni, get/set yöntemleri ve Parametreleştirme gibi dört tür uygulamaya gelir.
 
-- Üye Değişken Uygulaması
+- Üye değişkeni uygulama
 
-   Bu uygulama, denetim sınıfında bir üye değişken olarak özelliğin durumunu temsil eder. Özellik değerinin ne zaman değiştiğini bilmek önemli değilse Üye Değişken uygulamasını kullanın. Üç tür, bu uygulama özelliği için destek kodu en az miktarda oluşturur. Üye değişken uygulaması için sevk haritası giriş [makrosu DISP_PROPERTY.](../mfc/reference/dispatch-maps.md#disp_property)
+   Bu uygulama, özelliğin durumunu denetim sınıfındaki üye değişkeni olarak temsil eder. Özellik değerinin ne zaman değişeceğimizi bilmemiz için önemli olmadığında üye değişkeni uygulamasını kullanın. Bu uygulama, üç türden özellik için en az destek kodu oluşturur. Üye değişkeni uygulamasına ait dağıtım Haritası giriş makrosu [DISP_PROPERTY](reference/dispatch-maps.md#disp_property).
 
-- Bildirim Uygulaması ile Üye Değişkeni
+- Bildirim uygulamasıyla üye değişkeni
 
-   Bu uygulama, bir üye değişken ve Özellik Ekle Sihirbazı tarafından oluşturulan bir bildirim işlevi oluşur. Bildirim işlevi, özellik değeri değiştikten sonra çerçeve tarafından otomatik olarak çağrılır. Bir özellik değeri değiştikten sonra bildirimde bulunulması gerektiğinde Bildirim uygulaması ile Üye Değişkenini kullanın. Bir işlev çağrısı gerektirdiğinden, bu uygulama daha fazla zaman gerektirir. Bu uygulama için sevk haritası giriş [makrosu DISP_PROPERTY_NOTIFY.](../mfc/reference/dispatch-maps.md#disp_property_notify)
+   Bu uygulama bir üye değişkeni ve Özellik Ekleme Sihirbazı tarafından oluşturulan bir bildirim işlevinden oluşur. Bildirim işlevi, özellik değeri değiştirildikten sonra otomatik olarak Framework tarafından çağırılır. Bir özellik değeri değiştirildikten sonra bildirilmesi gerektiğinde bildirim uygulamasıyla üye değişkenini kullanın. Bu uygulama, bir işlev çağrısı gerektirdiğinden daha fazla zaman gerektirir. Bu uygulama için dağıtım Haritası giriş makrosu [DISP_PROPERTY_NOTIFY](reference/dispatch-maps.md#disp_property_notify).
 
-- Alma/Ayarlama Yöntemleri Uygulaması
+- Yöntem uygulamasını al/ayarla
 
-   Bu uygulama, denetim sınıfındaki bir çift üye işlevden oluşur. Yöntemleri Al/Ayarla uygulaması, denetimin kullanıcısı mülkün geçerli değerini ve denetimin kullanıcısı özelliğin değiştirilmesini istediğinde Set üye işlevini istediğinde üye al işlevini otomatik olarak çağırır. Çalışma süresi boyunca bir özelliğin değerini hesaplamanız, gerçek özelliği değiştirmeden önce denetim kullanıcısı tarafından geçirilen bir değeri doğrulamanız veya salt okunur veya yazma özelliği türünü uygulamanız gerektiğinde bu uygulamayı kullanın. Bu uygulama için sevk haritası giriş [makrosu DISP_PROPERTY_EX.](../mfc/reference/dispatch-maps.md#disp_property_ex) Aşağıdaki bölümde, [Özel Özellik Eklemek için Özellik Ekle Sihirbazı'nı kullanarak,](#_core_using_classwizard_to_add_a_custom_property)bu uygulamayı göstermek için CircleOffset özel özelliğini kullanır.
+   Bu uygulama, denetim sınıfındaki bir dizi üye işlevden oluşur. Get/set yöntemleri, denetimin kullanıcı özelliğin geçerli değerini istediğinde ve denetimin kullanıcısı özelliğin değiştirilmesini istediğinde üye işlevini ayarla işlevini otomatik olarak çağırır. Çalışma zamanı sırasında bir özelliğin değerini hesaplamanız gerektiğinde, gerçek özelliği değiştirmeden önce denetimin kullanıcısı tarafından geçirilen bir değeri doğrulamak veya bir salt yazılır özellik türü uygulamak için bu uygulamayı kullanın. Bu uygulama için dağıtım Haritası giriş makrosu [DISP_PROPERTY_EX](reference/dispatch-maps.md#disp_property_ex). Aşağıdaki bölümde, [özel bir özellik eklemek Için Özellik Ekleme Sihirbazı kullanılarak](#_core_using_classwizard_to_add_a_custom_property), bu uygulamayı göstermek Için circlesapmasını Custom özelliği kullanılır.
 
-- Parametreli Uygulama
+- Parametreli uygulama
 
-   Parametreli uygulama Özellik Ekle Sihirbazı tarafından desteklenir. Parametrelendirilmiş bir özellik (bazen özellik dizisi olarak da adlandırılır), denetiminizin tek bir özelliği aracılığıyla bir değer kümesine erişmek için kullanılabilir. Bu uygulama için sevk haritası giriş makrosu DISP_PROPERTY_PARAM. Bu tür uygulama hakkında daha fazla bilgi için ActiveX Denetimleri: Gelişmiş Konular makalesinde [Parametreli Bir Özellik Uygulama](../mfc/mfc-activex-controls-advanced-topics.md) konusuna bakın.
+   Parametreli uygulama Özellik Ekleme Sihirbazı tarafından desteklenir. Parametreli bir Özellik (bazen Özellik dizisi olarak adlandırılır), denetiminizin tek bir özelliği aracılığıyla bir dizi değere erişmek için kullanılabilir. Bu uygulama için dağıtım Haritası giriş makrosu DISP_PROPERTY_PARAM. Bu türü uygulama hakkında daha fazla bilgi için bkz. ActiveX denetimleri: gelişmiş konular makalesindeki [parametreli özellik uygulama](mfc-activex-controls-advanced-topics.md) .
 
-## <a name="using-the-add-property-wizard-to-add-a-custom-property"></a><a name="_core_using_classwizard_to_add_a_custom_property"></a>Özel Özellik Eklemek Için Özellik Ekle Sihirbazı'nı Kullanma
+## <a name="using-the-add-property-wizard-to-add-a-custom-property"></a><a name="_core_using_classwizard_to_add_a_custom_property"></a>Özel özellik eklemek için Özellik Ekleme Sihirbazı 'Nı kullanma
 
-Aşağıdaki yordam, Get/Set Metodları uygulamasını kullanan özel bir özellik olan CircleOffset'in eklenmesini gösterir. CircleOffset özel özelliği, denetimin kullanıcısının daireyi denetimin sınırlayıcı dikdörtgeninin ortasından dengelemesine olanak tanır. Get/Set Yöntemleri dışında bir uygulama ile özel özellikler ekleme yordamı çok benzer.
+Aşağıdaki yordamda, get/set yöntemleri uygulamasını kullanan bir özel özellik, Circlesapmayı ekleme gösterilmektedir. Circlesapmayı Custom özelliği, denetimin kullanıcı tarafından denetimin sınırlayıcı dikdörtgeninin merkezinden daireyi kaydırmasına olanak tanır. Get/set yöntemleri dışında bir uygulamayla özel özellikler ekleme yordamı çok benzerdir.
 
-Aynı yordam, istediğiniz diğer özel özellikleri eklemek için de kullanılabilir. Özel özellik adınızı CircleOffset özellik adı ve parametreleri ile değiştirin.
+Bu yordam, istediğiniz diğer özel özellikleri eklemek için de kullanılabilir. Circlesapmayı Özellik adı ve parametreleri için özel özellik adınızı değiştirin.
 
-#### <a name="to-add-the-circleoffset-custom-property-using-the-add-property-wizard"></a>Özellik Ekle Sihirbazı'nı kullanarak CircleOffset özel özelliğini eklemek için
+#### <a name="to-add-the-circleoffset-custom-property-using-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı 'nı kullanarak Circlesapmayı özel özelliğini eklemek için
 
 1. Denetiminizin projesini yükleyin.
 
-1. Sınıf Görünümü'nde, denetiminizin kitaplık düğümunu genişletin.
+1. Sınıf Görünümü, denetiminizin kitaplık düğümünü genişletin.
 
-1. Kısayol menüsünü açmak için denetiminiz için arabirim düğümüne (kitaplık düğümünün ikinci düğümü) sağ tıklayın.
+1. Kısayol menüsünü açmak için denetiminizin arabirim düğümüne (kitaplık düğümünün ikinci düğümü) sağ tıklayın.
 
-1. Kısayol menüsünden **Ekle'yi** tıklatın ve ardından **Özellik Ekle'yi**tıklatın.
+1. Kısayol menüsünde, **Ekle** ' ye ve ardından **Özellik Ekle**' ye tıklayın.
 
-   Bu Özellik [Ekle Sihirbazı'nı](../ide/names-add-property-wizard.md)açar.
+   Bu, [Özellik Ekleme Sihirbazı](../ide/names-add-property-wizard.md)' nı açar.
 
-1. Özellik **Adı** kutusuna *CircleOffset*yazın.
+1. **Özellik adı** kutusuna *circlekayması*yazın.
 
-1. **Uygulama Türü** **için, Yöntemleri Al/Ayarla'yı**tıklatın.
+1. **Uygulama türü**Için, **get/set yöntemleri**' ne tıklayın.
 
-1. Özellik **Türü** kutusunda, **kısa'yı**seçin.
+1. **Özellik türü** kutusunda, **kısa**' ı seçin.
 
-1. İşlevleri Al ve Ayarla'nız için benzersiz adlar yazın veya varsayılan adları kabul edin.
+1. Get ve set işlevleriniz için benzersiz adlar yazın veya varsayılan adları kabul edin.
 
 1. **Son**'a tıklayın.
 
-## <a name="add-property-wizard-changes-for-custom-properties"></a><a name="_core_classwizard_changes_for_custom_properties"></a>Özel Özellikler için Özellik Sihirbazı Değişiklikleri Ekleme
+## <a name="add-property-wizard-changes-for-custom-properties"></a><a name="_core_classwizard_changes_for_custom_properties"></a>Özel özellikler için Özellik Ekleme Sihirbazı değişiklikleri
 
-CircleOffset özel özelliğini eklediğinizde, Özellik Ekle Sihirbazı üstbilgide değişiklik yapar (. H) ve uygulama (. CPP) denetim sınıfının dosyaları.
+Circlesapmasını özel özelliğini eklediğinizde Özellik Ekleme Sihirbazı üst bilgide değişiklik yapar (. H) ve uygulama (. CPP) denetim sınıfının dosyaları.
 
-Aşağıdaki satırlar eklenir. H dosyası adlı `GetCircleOffset` iki `SetCircleOffset`işlevi bildirmek için ve:
+Aşağıdaki satırlar öğesine eklenir. H dosyası ve olarak adlandırılan iki işlevi `GetCircleOffset` bildirir `SetCircleOffset` :
 
-[!code-cpp[NVC_MFC_AxUI#25](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-properties_1.h)]
+[!code-cpp[NVC_MFC_AxUI#25](codesnippet/cpp/mfc-activex-controls-adding-custom-properties_1.h)]
 
-Aşağıdaki satır denetiminizin. IDL dosyası:
+Aşağıdaki satır, denetiminizin öğesine eklenir. IDL dosyası:
 
-[!code-cpp[NVC_MFC_AxUI#26](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-properties_2.idl)]
+[!code-cpp[NVC_MFC_AxUI#26](codesnippet/cpp/mfc-activex-controls-adding-custom-properties_2.idl)]
 
-Bu satır, CircleOffset özelliğine, metnin özellik ekle sihirbazı yöntemleri ve özellikleri listesindeyöntem konumundan alınan belirli bir kimlik numarası atar.
+Bu satır, Özellik Ekle sihirbazının Yöntemler ve Özellikler listesindeki konumundan alınan Circlesapmayı özelliğine belirli bir KIMLIK numarası atar.
 
-Buna ek olarak, aşağıdaki satır gönderme haritasına eklenir (. Kontrol sınıfının CPP dosyası) CircleOffset özelliğini denetimin iki işleyici işleviyle eşlemek için:
+Ayrıca, aşağıdaki satır dağıtım haritasına eklenir (içinde. Denetim sınıfının CPP dosyası), Circlesapmayı özelliğini denetimin iki işleyici işlevleriyle eşlemek için:
 
-[!code-cpp[NVC_MFC_AxUI#27](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-properties_3.cpp)]
+[!code-cpp[NVC_MFC_AxUI#27](codesnippet/cpp/mfc-activex-controls-adding-custom-properties_3.cpp)]
 
-Son olarak, ve `GetCircleOffset` `SetCircleOffset` işlevlerin uygulamaları denetimin sonuna eklenir. CPP dosyası. Çoğu durumda, özelliğin değerini döndürmek için Get işlevini değiştirirsiniz. Set işlevi genellikle özellik değişmeden önce veya sonra yürütülmesi gereken kod içerir.
+Son olarak, `GetCircleOffset` ve `SetCircleOffset` işlevlerinin uygulamaları denetimin sonuna eklenir. CPP dosyası. Çoğu durumda, özelliğin değerini döndürmek için Get işlevini değiştirirsiniz. Set işlevi, genellikle, özellik değişikliklerinden önce veya sonra yürütülmesi gereken kodu içerir.
 
-[!code-cpp[NVC_MFC_AxUI#28](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-properties_4.cpp)]
+[!code-cpp[NVC_MFC_AxUI#28](codesnippet/cpp/mfc-activex-controls-adding-custom-properties_4.cpp)]
 
-Özellik Ekle Sihirbazı'nın [SetModifiedFlag'a](../mfc/reference/colecontrol-class.md#setmodifiedflag), Set işlevinin gövdesine otomatik olarak bir çağrı ekleyeceğini unutmayın. Bu işlevi çağırmak denetimi değiştirilmiş olarak işaretler. Denetim değiştirildiyse, kapsayıcı kaydedildiğinde yeni durumu kaydedilir. Bu işlev, denetimin kalıcı durumunun bir parçası olarak kaydedilen bir özellik değeri değiştirdiğinde çağrılmalıdır.
+Özellik Ekle sihirbazının, set işlevinin gövdesine otomatik olarak [SetModifiedFlag](reference/colecontrol-class.md#setmodifiedflag)öğesine bir çağrı ekleyeceğini unutmayın. Bu işlevi çağırmak, denetimi değiştirilmiş olarak işaretler. Bir denetim değiştirilmişse, kapsayıcı kaydedildiğinde yeni durumu kaydedilir. Bu işlev, denetimin kalıcı durumunun bir parçası olarak kaydedildiği her bir özellik, değiştiğinde değeri olarak çağrılmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: Özellikler](../mfc/mfc-activex-controls-properties.md)<br/>
-[MFC ActiveX Denetimleri: Yöntemler](../mfc/mfc-activex-controls-methods.md)<br/>
-[COleControl Sınıfı](../mfc/reference/colecontrol-class.md)
+[MFC ActiveX denetimleri](mfc-activex-controls.md)<br/>
+[MFC ActiveX Denetimleri: Özellikler](mfc-activex-controls-properties.md)<br/>
+[MFC ActiveX Denetimleri: Yöntemler](mfc-activex-controls-methods.md)<br/>
+[Coelcontrol sınıfı](reference/colecontrol-class.md)

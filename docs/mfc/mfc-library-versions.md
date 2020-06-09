@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MFC libraries
 - MFC, library versions
 - libraries [MFC], versions
-ms.openlocfilehash: b8e32366d9ff43bd6e5770f64f0ba9d8bf6e56ab
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: bf10d8b56f82714fa708b5409923e765206eb16d
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420178"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626126"
 ---
 # <a name="mfc-library-versions"></a>MFC Kitaplık Sürümleri
 
@@ -77,9 +77,9 @@ MFC başlık dosyaları ayrıca MFC kitaplıkları, Win32 kitaplıkları, OLE ki
 
 MFC ANSI/MBCS kitaplık sürümleri, ASCII gibi tek baytlı karakter kümelerini ve Shift-JıS gibi çok baytlı karakter kümelerini destekler. MFC Unicode Kitaplığı sürümleri, UTF-16LE geniş karakter kodlu biçimde Unicode 'U destekler. UTF-8 kodlamalı Unicode desteği için MFC 'nin ANSI/MBCS kitaplık sürümlerini kullanın.
 
-Proje yapılandırmanızı IDE 'de tek baytlık, çok baytlı veya geniş karakter Unicode dize ve karakter desteğini kullanacak şekilde ayarlamak için, **Proje özellikleri** iletişim kutusunu kullanın. **Yapılandırma özellikleri** > **genel** sayfasında, **karakter kümesi** özelliğini tek baytlık bir karakter kümesi **kullanılacak şekilde ayarlanmamış şekilde ayarlayın** . Özelliği çok baytlı bir karakter kümesi kullanmak için **çok baytlı karakter kümesini** kullanacak şekilde veya Unicode **karakter kümesini** UTF-16 olarak kodlanmış Unicode kullanmak üzere kullanmak için ayarlayın.
+Proje yapılandırmanızı IDE 'de tek baytlık, çok baytlı veya geniş karakter Unicode dize ve karakter desteğini kullanacak şekilde ayarlamak için, **Proje özellikleri** iletişim kutusunu kullanın. **Yapılandırma özellikleri**  >  **genel** sayfasında, **karakter kümesi** özelliğini tek baytlık bir karakter kümesi kullanılacak **şekilde ayarlanmamış** şekilde ayarlayın. Özelliği çok baytlı bir karakter kümesi kullanmak için **çok baytlı karakter kümesini** kullanacak şekilde veya Unicode **karakter kümesini** UTF-16 olarak kodlanmış Unicode kullanmak üzere kullanmak için ayarlayın.
 
-MFC projeleri, UTF-16 geniş karakter Unicode desteğini göstermek için UNICODE \_ön işlemci sembolünü kullanır ve MBCS desteğini göstermek için MBCS \_. Bu seçenekler bir projede birbirini dışlıyor.
+MFC projeleri \_ , UTF-16 geniş karakterli Unicode desteğini ve MBCS \_ desteğini göstermek için MBCS 'yi Unicode ön işlemci simgesini kullanır. Bu seçenekler bir projede birbirini dışlıyor.
 
 ## <a name="mfc-static-library-naming-conventions"></a>MFC statik kitaplık adlandırma kuralları
 
@@ -97,14 +97,14 @@ italik küçük harfle gösterilen harflerin, anlamları aşağıdaki tabloda g�
 
 Aşağıdaki tabloda listelenen tüm kitaplıklar, desteklenen derleme mimarileri için \atlmfc\lib dizinine önceden oluşturulmuş olarak eklenmiştir.
 
-|Kitaplığı|Açıklama|
+|Kitaplık|Açıklama|
 |-------------|-----------------|
 |NAFXCW.LIB|MFC statik bağlantı kitaplığı, yayın sürümü|
 |NAFXCWD.LIB|MFC statik bağlantı kitaplığı, hata ayıklama sürümü|
-|UAFXCW.LIB|Unicode desteği olan MFC statik bağlantı kitaplığı, yayın sürümü|
-|UAFXCWD.LIB|Unicode desteği olan MFC statik bağlantı kitaplığı, hata ayıklama sürümü|
-|AFXNMCD.LIB|MFC iletişim kutusu denetimleri olmayan MFC statik bağlantı kitaplığı, yayın sürümü|
-|AFXNMCDD.LIB|MFC iletişim kutusu denetimleri olmayan MFC statik bağlantı kitaplığı, hata ayıklama sürümü|
+|UıAFXFA. LıB|Unicode desteği olan MFC statik bağlantı kitaplığı, yayın sürümü|
+|UıAFXCWD. LıB|Unicode desteği olan MFC statik bağlantı kitaplığı, hata ayıklama sürümü|
+|AFXNMCD. LıB|MFC iletişim kutusu denetimleri olmayan MFC statik bağlantı kitaplığı, yayın sürümü|
+|AFXNMCDD. LıB|MFC iletişim kutusu denetimleri olmayan MFC statik bağlantı kitaplığı, hata ayıklama sürümü|
 
 Statik kitaplıkların her biri için aynı temel adı ve bir. pdb uzantısına sahip hata ayıklayıcı dosyaları da mevcuttur.
 
@@ -129,16 +129,16 @@ Bu paylaşılan DLL 'Leri kullanan uygulamalar veya MFC uzantı dll 'Leri oluşt
 
 MFC 'nin paylaşılan DLL sürümüne dinamik olarak bağlanıyorsanız, bir uygulamadan veya bir MFC uzantısı DLL 'sinden olursa olsun, eşleşen MFC*sürümünü*dahil etmeniz gerekir. Ürününüzü dağıtırken DLL veya MFC*Sürüm*U. dll.
 
-Uygulamalarınızla dağıtılabilecek Visual C++ dll 'lerin bir listesi için, bkz. [Microsoft Visual Studio 2017 için dağıtılabilir kod ve Microsoft Visual Studio 2017 SDK (yardımcı programları ve BuildServer dosyalarını Içerir)](/visualstudio/productinfo/2017-redistribution-vs) veya [Visual Studio 2019 için dağıtılabilir kod](/visualstudio/releases/2019/redistribution).
+Uygulamalarınızla dağıtılabilecek Visual C++ dll 'Lerin bir listesi için, bkz. [Microsoft Visual Studio 2017 ve Microsoft Visual Studio 2017 SDK (yardımcı programları ve BuildServer dosyalarını içerir) Için dağıtılabilir kod](/visualstudio/productinfo/2017-redistribution-vs) veya [Visual Studio 2019 için dağıtılabilir kod](/visualstudio/releases/2019/redistribution).
 
 MFC 'de MBCS ve Unicode desteği hakkında daha fazla bilgi için bkz. [Unicode ve çok baytlı karakter kümesi (MBCS) desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md).
 
 ## <a name="dynamic-link-library-support"></a>Dinamik bağlantı kitaplık desteği
 
-MFC ve MFC olmayan çalıştırılabilirler tarafından kullanılabilecek DLL 'Ler oluşturmak için statik veya paylaşılan dinamik MFC kitaplıklarını kullanabilirsiniz. Bunlar, yalnızca MFC uygulamaları ve MFC DLL 'Leri tarafından kullanılabilen MFC uzantı dll 'Lerinden ayırt edilebilmesi için "normal dll 'ler" veya "normal MFC DLL 'Leri" olarak adlandırılır. MFC statik kitaplıkları kullanılarak oluşturulan bir DLL, bazı durumlarda daha eski başvurularda USRDLL olarak adlandırılır, çünkü MFC DLL projeleri **\_USRDLL**Önişlemci sembolünü tanımlar. MFC paylaşılan DLL 'Leri kullanan bir DLL, bazı durumlarda eski başvurularda AFXDLL olarak adlandırılır, çünkü **\_AFXDLL**ön işlemci sembolünü tanımlar.
+MFC ve MFC olmayan çalıştırılabilirler tarafından kullanılabilecek DLL 'Ler oluşturmak için statik veya paylaşılan dinamik MFC kitaplıklarını kullanabilirsiniz. Bunlar, yalnızca MFC uygulamaları ve MFC DLL 'Leri tarafından kullanılabilen MFC uzantı dll 'Lerinden ayırt edilebilmesi için "normal dll 'ler" veya "normal MFC DLL 'Leri" olarak adlandırılır. MFC statik kitaplıkları kullanılarak oluşturulan bir DLL, bazen eski başvurularda USRDLL olarak adlandırılır, çünkü MFC DLL projeleri ** \_ USRDLL**Önişlemci sembolünü tanımlar. MFC paylaşılan DLL 'Leri kullanan bir DLL, bazen eski başvurularda AFXDLL olarak adlandırılır, çünkü ** \_ AFXDLL**Önişlemci sembolünü tanımlar.
 
 MFC statik kitaplıklarına bağlanarak DLL projenizi oluşturduğunuzda, DLL 'niz MFC paylaşılan DLL 'Leri olmadan dağıtılabilir. DLL projeniz içeri aktarma kitaplıkları MFC*sürümüne*bağlanır. LIB veya MFC*Sürüm*U. lib, eşleşen MFC PAYLAŞıLAN DLL MFC*sürümünü*dağıtmanız gerekir. Dll veya MFC*Sürüm*U. dll ile birlikte dll 'niz. Daha fazla bilgi için bkz. [DLL 'ler](../build/dlls-in-visual-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel MFC Konuları](../mfc/general-mfc-topics.md)
+[Genel MFC Konuları](general-mfc-topics.md)

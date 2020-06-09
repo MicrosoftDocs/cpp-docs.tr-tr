@@ -8,19 +8,19 @@ helpviewer_keywords:
 - initializing objects [MFC], document objects
 - initializing views [MFC]
 ms.assetid: 33cb8643-8a16-478c-bc26-eccc734e3661
-ms.openlocfilehash: 0cf9faecbb7e0d74c2199a1a829aa68241e1c019
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0e970d6e8a166283f82575b309cf023f48899403
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62297118"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626349"
 ---
 # <a name="initializing-documents-and-views"></a>Belgeleri ve Görünümleri Başlatma
 
-Her iki yönde belge sınıfınıza desteklemelidir şekilde iki farklı yolla belge oluşturulur. İlk olarak, kullanıcı yeni, boş bir belge ile dosya yeni komutunun oluşturabilirsiniz. Bu durumda geçersiz kılma belgede başlatmak [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) sınıfının üye işlevinde [CDocument](../mfc/reference/cdocument-class.md). İkinci olarak, içerikleri bir dosyadan okunan yeni bir belge oluşturmak için kullanıcı Aç komutunu Dosya menüsünü kullanabilirsiniz. Bu durumda geçersiz kılma belgede başlatmak [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) sınıfının üye işlevinde `CDocument`. Her iki başlatmalar aynıysa iki geçersiz kılmaları, bir ortak üye işlevi çağırabilir veya `OnOpenDocument` çağırabilirsiniz `OnNewDocument` temiz bir belgeyi başlatın ve ardından açma işlemi tamamlamak için.
+Belgeler iki farklı şekilde oluşturulur, bu nedenle belge sınıfınız her iki şekilde de destek sağlamalıdır. İlk olarak, Kullanıcı File New komutuyla yeni, boş bir belge oluşturabilir. Bu durumda, [CDocument](reference/cdocument-class.md)sınıfının [OnNewDocument](reference/cdocument-class.md#onnewdocument) üye işlevinin geçersiz kılmada belgeyi başlatın. İkincisi, Kullanıcı, içeriği dosyadan okunan yeni bir belge oluşturmak için Dosya menüsündeki Aç komutunu kullanabilir. Bu durumda, sınıfının [OnOpenDocument](reference/cdocument-class.md#onopendocument) üye işlevini geçersiz kılmanızda belgeyi başlatın `CDocument` . Her iki başlatma da aynıysa, her iki geçersiz kılmalardan ortak bir üye işlevi çağırabilir veya `OnOpenDocument` `OnNewDocument` temiz bir belge başlatabilir ve sonra Aç işlemini tamamlayabilirler.
 
-Görünüm belgelerini oluşturulduktan sonra oluşturulur. Framework belge çerçeve penceresi ve görünüm oluşturma tamamlandıktan sonra bir görünüm başlatmak için en iyi saattir. Geçersiz kılarak görünümünüzü başlatabilirsiniz [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) üye işlevinin [CView](../mfc/reference/cview-class.md). Yeniden başlatın veya hiçbir şey ayarlamak istiyorsanız, belge değişiklikleri her zaman, geçersiz kılabilirsiniz [OnUpdate](../mfc/reference/cview-class.md#onupdate).
+Görünümler, belgeleri oluşturulduktan sonra oluşturulur. Bir görünümü başlatmanın en iyi zamanı Framework 'ün belge, çerçeve penceresi ve görünüm oluşturmayı tamamladıktan sonra olur. [CView](reference/cview-class.md)'ın [OnInitialUpdate](reference/cview-class.md#oninitialupdate) üye işlevini geçersiz kılarak görünümünüzü başlatabilirsiniz. Belge her değiştiğinde yeniden başlatmanız veya ayarlamanız gerekiyorsa [OnUpdate](reference/cview-class.md#onupdate)'i geçersiz kılabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belgeleri ve Görünümleri Başlatma ve Temizleme](../mfc/initializing-and-cleaning-up-documents-and-views.md)
+[Belgeleri ve görünümleri başlatma ve Temizleme](initializing-and-cleaning-up-documents-and-views.md)

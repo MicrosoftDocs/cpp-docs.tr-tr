@@ -9,57 +9,57 @@ helpviewer_keywords:
 - MAPI, MFC
 - OnFileSendMail method [MFC]
 ms.assetid: cafbecb1-0427-4077-b4b8-159bae5b49b8
-ms.openlocfilehash: 3024f744407cf33c8dfad8a6f7af736e0f8061ef
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7eff22b2a7b4c838f2967fb5217b9dec96903d0e
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81356995"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625562"
 ---
 # <a name="mapi-support-in-mfc"></a>MFC'de MAPI Desteği
 
-MFC, microsoft ileti uygulama programı arabiriminin (MAPI) sınıfındaki `CDocument`bir alt kümesi için destek sağlar. Özellikle, `CDocument` posta desteğinin son kullanıcının makinesinde bulunup bulunmadığını belirleyen ve varsa standart komut kimliği ID_FILE_SEND_MAIL olan bir Posta Gönder komutunu etkinleştiren üye işlevlere sahiptir. Bu komutun MFC işleyicisi işlevi, kullanıcının elektronik posta yoluyla belge göndermesine olanak tanır.
+MFC, sınıfında Microsoft mesajlaşma uygulaması program arabirimi 'nin (MAPI) bir alt kümesi için destek sağlar `CDocument` . Özellikle, `CDocument` son kullanıcının makinesinde posta desteğinin bulunup bulunmadığını tespit eden üye işlevleri vardır ve bu durumda standart komut kimliği ID_FILE_SEND_MAIL olan posta Gönder komutunu etkinleştirin. Bu komut için MFC işleyici işlevi kullanıcının elektronik posta aracılığıyla belge göndermesini sağlar.
 
 > [!TIP]
-> MFC mapi işlev kümesinin tamamını kapsüllemese de, Win32 API işlevlerini doğrudan MFC programlarından çağırabileceğiniz gibi MAPI işlevlerini doğrudan arayabilirsiniz.
+> MFC tüm MAPI işlev kümesini kapsüllemez olsa da, tıpkı doğrudan MFC programlarından Win32 API işlevleri çağırabilmeniz gibi doğrudan MAPI işlevlerini çağırabilirsiniz.
 
-Uygulamanızda Posta Gönder komutunu sağlamak çok kolaydır. MFC, bir belgeyi (yani türetilmiş nesneyi) `CDocument`ek olarak paketlemek ve posta olarak göndermek için uygulama sağlar. Bu ek, belgenin içeriğini posta iletisine kaydeden (seri hale getiren) dosya kaydet komutuna eşdeğerdir. Bu uygulama, kullanıcının makinesindeki posta istemcisine, kullanıcıya postaadresine adres verme ve posta iletisine konu ve ileti metni ekleme fırsatı vermesini çağırır. Kullanıcılar tanıdık posta uygulamalarının kullanıcı arabirimini görürler. Bu işlevsellik iki `CDocument` üye işlev `OnFileSendMail` `OnUpdateFileSendMail`tarafından sağlanır: ve .
+Uygulamanızda posta Gönder komutunun sağlanması çok kolaydır. MFC, bir belgeyi (yani, `CDocument` türetilmiş bir nesne) ek olarak paketleyip posta olarak gönderebilecek uygulamayı sağlar. Bu ek, belgenin içeriğini posta iletisine kaydeden (seri hale getirilen) bir dosya Kaydet komutuna eşdeğerdir. Bu uygulama, kullanıcıya e-posta adresine adres verme ve posta iletisine konu ve ileti metni ekleme fırsatını sağlamak için kullanıcının makinesinde posta istemcisini çağırır. Kullanıcılar kendi tanıdık posta uygulamalarının Kullanıcı arabirimini görür. Bu işlevsellik iki `CDocument` üye işlevi tarafından sağlanır: `OnFileSendMail` ve `OnUpdateFileSendMail` .
 
-MAPI eki göndermek için dosyayı okumak gerekir. Uygulama bir `OnFileSendMail` işlev çağrısı sırasında veri dosyasını açık tutarsa, dosyanın birden çok işleme dosyaya erişmesine izin veren bir paylaşım moduyla açılması gerekir.
+MAPI 'nin eki göndermek için dosyayı okuması gerekir. Uygulama, bir işlev çağrısı sırasında veri dosyasını açık olarak sakalıyorsa `OnFileSendMail` , dosyanın birden çok işlemin dosyaya erişmesine izin veren bir paylaşma modu ile açılması gerekir.
 
 > [!NOTE]
-> For sınıfının `OnFileSendMail` `COleDocument` geçersiz bir sürümü bileşik belgeleri doğru işler.
+> Sınıfının geçersiz kılma sürümü `OnFileSendMail` `COleDocument` bileşik belgeleri doğru şekilde işler.
 
-#### <a name="to-implement-a-send-mail-command-with-mfc"></a>MFC ile Posta Gönder komutu uygulamak için
+#### <a name="to-implement-a-send-mail-command-with-mfc"></a>MFC ile posta Gönder komutunu uygulamak için
 
-1. Komut kimliği ID_FILE_SEND_MAIL bir menü öğesi eklemek için Visual C++ menü düzenleyicisini kullanın.
+1. Komut KIMLIĞI ID_FILE_SEND_MAIL olan bir menü öğesi eklemek için Visual C++ menü düzenleyicisini kullanın.
 
-   Bu komut kimliği AFXRES çerçevesinde sağlanır. H. Komut herhangi bir menüye eklenebilir, ancak genellikle **Dosya** menüsüne eklenir.
+   Bu komut KIMLIĞI, AFXRES içindeki Framework tarafından sağlanır. Olsun. Komut herhangi bir menüye eklenebilir, ancak genellikle **Dosya** menüsüne eklenir.
 
-1. Belgenizin ileti eşlemiiçin aşağıdakileri el ile ekleyin:
+1. Aşağıdakileri belgenizin ileti eşlemesine el ile ekleyin:
 
-   [!code-cpp[NVC_MFCDocView#9](../mfc/codesnippet/cpp/mapi-support-in-mfc_1.cpp)]
+   [!code-cpp[NVC_MFCDocView#9](codesnippet/cpp/mapi-support-in-mfc_1.cpp)]
 
     > [!NOTE]
-    >  Bu ileti eşlemi, türemiş belge sınıfınızda olsa bile, her iki durumda da doğru taban sınıfalır `CDocument` veya `COleDocument` türetilen bir belge için çalışır.
+    >  Bu ileti eşlemesi ya da öğesinden türetilmiş bir belge için `CDocument` çalışır `COleDocument` ; ileti eşlemesi türetilmiş belge sınıfınız içinde olsa bile, her iki durumda da doğru temel sınıfı alır.
 
 1. Uygulamanızı oluşturun.
 
-Posta desteği varsa, MFC menü öğenizi `OnUpdateFileSendMail` etkinleştirir ve `OnFileSendMail`daha sonra komutu . Posta desteği kullanılamıyorsa, MFC menü öğenizi otomatik olarak kaldırır, böylece kullanıcı bunu görmez.
+Posta desteği varsa, MFC menü öğesini ile `OnUpdateFileSendMail` ve daha sonra komutunu ile işlem işlemlerine izin vermez `OnFileSendMail` . Posta desteği yoksa, MFC Kullanıcı onu görmemesi için menü öğesini otomatik olarak kaldırır.
 
 > [!TIP]
-> İleti eşlemi girişlerini daha önce açıklandığı gibi el ile eklemek yerine, iletileri işlevlerle eşlemek için [Sınıf Sihirbazı'nı](reference/mfc-class-wizard.md) kullanabilirsiniz. Daha fazla bilgi için Bkz. [İşlevlerle İlgili İletileri Eşleme.](../mfc/reference/mapping-messages-to-functions.md)
+> Daha önce açıklandığı gibi ileti eşleme girdilerini el ile eklemek yerine, iletileri işlevlere eşlemek için sınıf [sınıfı sihirbazını](reference/mfc-class-wizard.md) kullanabilirsiniz. Daha fazla bilgi için bkz. [Iletileri IŞLEVLERE eşleme](reference/mapping-messages-to-functions.md).
 
-İlgili bilgiler için [MAPI](../mfc/mapi.md) genel görünümüne bakın.
+İlgili bilgiler için bkz. [MAPI](mapi.md) genel bakış.
 
-MAPI'yi `CDocument` etkinleştiren üye işlevler hakkında daha fazla bilgi için bkz:
+`CDocument`MAPI 'yi etkinleştiren üye işlevleri hakkında daha fazla bilgi için bkz.:
 
-- [Kdocument::OnFileSendMail](../mfc/reference/cdocument-class.md#onfilesendmail)
+- [CDocument:: OnFileSendMail](reference/cdocument-class.md#onfilesendmail)
 
-- [Kdocument::OnUpdateFileSendMail](../mfc/reference/cdocument-class.md#onupdatefilesendmail)
+- [CDocument:: OnUpdateFileSendMail](reference/cdocument-class.md#onupdatefilesendmail)
 
-- [COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#onfilesendmail)
+- [Cotadocument:: OnFileSendMail](reference/coledocument-class.md#onfilesendmail)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MAPI](../mfc/mapi.md)
+[MAPI](mapi.md)

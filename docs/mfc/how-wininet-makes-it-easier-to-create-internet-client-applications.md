@@ -6,46 +6,46 @@ helpviewer_keywords:
 - WinInet classes [MFC], vs. WinSock
 - WinInet classes [MFC], Internet client applications
 ms.assetid: dc0f9f47-3184-4e7a-8074-2c63e0359885
-ms.openlocfilehash: 6da2ef1595e525bcfd407d67c806aa80cf90f1c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 54f63da7451dfef39a33e6b437be938cb1652326
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262716"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84624568"
 ---
 # <a name="how-wininet-makes-it-easier-to-create-internet-client-applications"></a>WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması
 
-Win32 Internet Uzantıları veya WinINet, gopher, FTP ve HTTP gibi common Internet protokolleri erişim sağlar. WinINet kullanarak Internet istemci uygulamaları için programlama, daha yüksek düzeyde WinSock, TCP/IP'yi veya belirli Internet protokolleri ayrıntılarını ile uğraşmak zorunda kalmadan yazabilirsiniz. WinINet tanıdık bir Win32 API arabirimi ile tüm üç protokolden işlevleri tutarlı özellik kümesi sunar. Bu tutarlılık, temel alınan protokoldeki (örneğin, FTP üzerinden HTTP) değişirse yapmanız gereken kod değişikliklerini en aza indirir.
+Win32 Internet uzantıları veya WinInet, Gopher, FTP ve HTTP gibi yaygın Internet protokollerine erişim sağlar. WININET kullanarak, WinSock, TCP/IP veya belirli Internet protokollerinin ayrıntıları ile uğraşmak zorunda kalmadan Internet istemci uygulamalarını daha yüksek bir programlama düzeyinde yazabilirsiniz. WinInet, bilinen bir Win32 API arabirimi ile her üç protokol için tutarlı bir işlev kümesi sağlar. Bu tutarlılık, temeldeki protokol değişirse (örneğin, FTP 'den HTTP 'ye) yapmanız gereken kod değişikliklerini en aza indirir.
 
-Visual C++ WinINet kullanabilmeniz için iki yol sunar. Win32 Internet işlevleri doğrudan çağırabilir miyim (daha fazla bilgi için Windows SDK'sı OLE belgelerinde bakın) veya WinINet aracılığıyla kullanabileceğiniz [MFC WinINet sınıfları](../mfc/mfc-classes-for-creating-internet-client-applications.md).
+Visual C++ WinInet kullanmanız için iki yol sağlar. Win32 Internet işlevlerini doğrudan çağırabilirsiniz (daha fazla bilgi için Windows SDK OLE belgelerine bakın) veya WinInet 'yi [MFC WinINet sınıfları](mfc-classes-for-creating-internet-client-applications.md)aracılığıyla kullanabilirsiniz.
 
-**WinINet için kullanabilirsiniz:**
+**WinInet ' i kullanarak şunları yapabilirsiniz:**
 
-- HTML sayfaları indirin.
+- HTML sayfalarını indirin.
 
-   HTML sayfaları, bir sunucudan istemci tarayıcısına aktarmak için kullanılan protokol HTTP'dir.
+   HTTP, bir sunucudan bir istemci tarayıcısına HTML sayfaları aktarmak için kullanılan bir protokoldür.
 
-- FTP istekleri karşıya yükleme dosyalarını indirmek veya dizin listesinde alma gönderirler.
+- Dosyaları karşıya yüklemek veya indirmek ya da dizin listelerini almak için FTP istekleri gönderin.
 
-   Tipik bir dosyayı indirmek için anonim bir oturum açma isteğidir.
+   Tipik bir istek, bir dosyayı indirmek için anonim bir oturum açma işlemi olur.
 
-- Gopher'ın menü sistemi, Internet üzerindeki kaynaklara erişmek için kullanır.
+- Internet 'teki kaynaklara erişmek için Gopher 'ın menü sistemini kullanın.
 
-   Menü öğelerini başka menüler, arama yapabilirsiniz dizini oluşturulmuş bir veritabanı, bir haber grubu veya bir dosya gibi çeşitli türleri olabilir.
+   Menü öğeleri, diğer menüler de dahil olmak üzere çeşitli türler, arama yaptığınız bir dizine alınmış veritabanı veya bir dosya grubu olabilir.
 
-Üç tüm protokoller için bir bağlantı, sunucuya isteklerde ve bağlantıyı kapatın.
+Üç protokolde bir bağlantı kurar, sunucuya istek yaparsınız ve bağlantıyı kapatırsınız.
 
-**MFC WinINet sınıfları için kolaylaştırır:**
+**MFC WinInet sınıfları şunları kolaylaştırır:**
 
-- Bilgi, HTTP, FTP ve gopher sunuculardan dosyaları sabit diskinizden okuma olarak kolayca okuyun.
+- Bir sabit sürücüdeki dosyaları okurken kolayca HTTP, FTP ve gopher sunucularından bilgi okuyun.
 
-- WinSock veya TCP/IP'yi için doğrudan programlamaya gerek kalmadan HTTP, FTP ve gopher protokolleri kullanır.
+- Doğrudan WinSock veya TCP/IP 'ye programlamayla programlama yapmadan HTTP, FTP ve gopher protokollerini kullanın.
 
-   Win32 Internet işlevleri kullanan geliştiriciler TCP/IP'yi ya da Windows Sockets ile bilgi sahibi olmanız gerekmez. WinSock ve TCP/IP protokolleri kullanarak doğrudan, yine de yuva düzeyinde bir programlama yapabilirsiniz ancak Internet üzerinden erişim HTTP, FTP ve gopher protokolleri MFC WinINet sınıfları kullanmak daha kolaydır. Birçok ortak işlemler için geliştiriciler özel Protokolü kullandıkları ayrıntılarını bilmeniz gerekmez.
+   Win32 Internet işlevlerini kullanan geliştiricilerin TCP/IP veya Windows Yuvaları hakkında bilgi sahibi olması gerekmez. Doğrudan WinSock ve TCP/IP protokollerini kullanarak yuva düzeyinde çalışmaya devam edebilirsiniz, ancak MFC WinInet sınıflarının Internet üzerinden HTTP, FTP ve gopher protokollerine erişmek için kullanılması da daha kolay olur. Birçok yaygın işlem için, geliştiricilerin kullandıkları belirli protokolün ayrıntılarını bilmeleri gerekmez.
 
-Bilgisayarınızın Internet üzerindeki diğer bilgisayarlara bir istemci olarak gerçekleştirilen birçok işlem uzun sürebilir. Hızı bu işlemlerin genellikle ağ bağlantınızın hızına göre sınırlıdır, ancak bunlar aynı zamanda diğer ağ trafiğini ve işlem karmaşıklığı tarafından etkilenebilir. Uzak bir FTP sunucusuna bağlanma, örneğin, bilgisayarınızı adresini bulmak için sunucu adını ilk bakış gerektirir. Uygulamanızı daha sonra bu adresteki sunucuya bağlanma dener. Bağlantı açıldıktan sonra bilgisayarınız ve uzak sunucu dosyaları almak için bağlantı gerçekten kullanmadan önce Dosya Aktarım Protokolü ile bir konuşma başlatır.
+Bilgisayarınız tarafından Internet 'teki diğer bilgisayarlara istemci olarak gerçekleştirilebilecek birçok işlem uzun sürebilir. Bu işlemlerin hızı genellikle ağ bağlantınızın hızına göre sınırlandırılır, ancak diğer ağ trafiğinden ve işlemin karmaşıklığı bundan de etkilenebilir. Örneğin, uzak bir FTP sunucusuna bağlanma, bilgisayarınızın adresini bulmak için bu sunucunun adını öncelikle bulmasını gerektirir. Uygulamanız daha sonra bu adresteki sunucuya bağlanmaya çalışır. Bağlantı açıldıktan sonra, dosyaları almak için bağlantıyı kullanabilmeniz için bilgisayarınız ve uzak sunucu, Dosya Aktarım Protokolü ile bir konuşma başlatır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[MFC'nin Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)
+[Win32 Internet Uzantıları (Winınet)](win32-internet-extensions-wininet.md)<br/>
+[MFC'nin Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](how-mfc-makes-it-easier-to-create-internet-client-applications.md)

@@ -5,78 +5,78 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], methods
 - PtInCircle custom method [MFC]
 ms.assetid: 8f8dc344-44a0-4021-8db5-4cdd3d700e18
-ms.openlocfilehash: 88d486248eab5d980463764db34bf40b05b830dc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e32a1c372d89fc4ade414b20a0f77fa162807250
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364709"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626155"
 ---
 # <a name="mfc-activex-controls-adding-custom-methods"></a>MFC ActiveX Denetimleri: Özel Yöntemler Ekleme
 
-Özel yöntemler, stok yöntemlerinden zaten uygulanmamış `COleControl`olması açısından farklıdır. Denetiminize eklediğiniz her özel yöntem için uygulama sağlamanız gerekir.
+Özel yöntemler, tarafından henüz uygulanmadığından stok yöntemlerinden farklıdır `COleControl` . Denetime eklediğiniz her özel yöntem için uygulama sağlamalısınız.
 
 >[!IMPORTANT]
-> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
+> ActiveX, yeni geliştirme için kullanılması gereken eski bir teknolojidir. ActiveX 'in yerini alan modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimleri](activex-controls.md).
 
-ActiveX denetim kullanıcısı, denetime özel eylemleri gerçekleştirmek için istediği zaman özel bir yöntem çağırabilir. Özel yöntemler için sevk haritası girişi DISP_FUNCTION formundandır.
+Bir ActiveX denetimi kullanıcısı, denetimine özgü eylemler gerçekleştirmek için herhangi bir zamanda özel bir yöntem çağırabilir. Özel yöntemler için dağıtım Haritası girişi DISP_FUNCTION formundadır.
 
-## <a name="adding-a-custom-method-with-the-add-method-wizard"></a><a name="_core_adding_a_custom_method_with_classwizard"></a>Ekle Yöntemi Sihirbazı ile Özel Yöntem Ekleme
+## <a name="adding-a-custom-method-with-the-add-method-wizard"></a><a name="_core_adding_a_custom_method_with_classwizard"></a>Yöntem Ekleme Sihirbazı Ile özel bir yöntem ekleme
 
-Aşağıdaki yordam, ActiveX denetiminin iskelet koduna özel yöntem PtInCircle'ın eklediğini gösterir. PtInCircle, denetime geçirilen koordinatların dairenin içinde mi yoksa dışında mı olduğunu belirler. Bu aynı yordam, diğer özel yöntemler eklemek için de kullanılabilir. Özel yöntem adınızı ve parametrelerini PtInCircle yöntem adı ve parametreleri ile değiştirin.
+Aşağıdaki yordamda, bir ActiveX denetiminin iskelet koduna özel bir PtInCircle yöntemi ekleme gösterilmektedir. PtInCircle, denetime geçirilen koordinatların dairenin içinde mi yoksa dışında mı olduğunu belirler. Aynı yordam, başka özel yöntemler eklemek için de kullanılabilir. PtInCircle yöntem adı ve parametreleri için özel yöntem adınızı ve parametrelerini değiştirin.
 
 > [!NOTE]
-> Bu örnek, `InCircle` olaylar makalesindeki işlevi kullanır. Bu işlev hakkında daha fazla bilgi için [MFC ActiveX Denetimleri makalesine bakın: ActiveX Denetimine Özel Olaylar Ekleme.](../mfc/mfc-activex-controls-adding-custom-events.md)
+> Bu örnek, `InCircle` Makale olaylarından işlevini kullanır. Bu işlev hakkında daha fazla bilgi için [MFC ActiveX denetimleri: ActiveX denetimine özel olaylar ekleme](mfc-activex-controls-adding-custom-events.md)makalesine bakın.
 
-#### <a name="to-add-the-ptincircle-custom-method-using-the-add-method-wizard"></a>Ekle Yöntemi Sihirbazı'nı kullanarak PtInCircle özel yöntemini eklemek için
+#### <a name="to-add-the-ptincircle-custom-method-using-the-add-method-wizard"></a>Yöntem Ekleme Sihirbazı 'Nı kullanarak PtInCircle özel yöntemini eklemek için
 
 1. Denetimin projesini yükleyin.
 
-1. Sınıf Görünümü'nde, denetiminizin kitaplık düğümunu genişletin.
+1. Sınıf Görünümü, denetiminizin kitaplık düğümünü genişletin.
 
-1. Kısayol menüsünü açmak için denetiminiz için arabirim düğümüne (kitaplık düğümünün ikinci düğümü) sağ tıklayın.
+1. Kısayol menüsünü açmak için denetiminizin arabirim düğümüne (kitaplık düğümünün ikinci düğümü) sağ tıklayın.
 
-1. Kısayol menüsünden **Ekle'yi** tıklatın ve ardından **Yöntem Ekle'yi**tıklatın.
+1. Kısayol menüsünde, **Ekle** ' ye ve ardından **Yöntem Ekle**' ye tıklayın.
 
-   Bu, Yöntem Ekle Sihirbazı'nı açar.
+   Bu, yöntem ekleme Sihirbazı ' nı açar.
 
-1. Yöntem **Adı** kutusuna *PtInCircle*yazın.
+1. **Yöntem adı** kutusuna *Ptincircle*yazın.
 
-1. İç **Ad** kutusunda, yöntemin iç işlevinin adını yazın veya varsayılan değeri kullanın (bu durumda, *PtInCircle).*
+1. **Iç ad** kutusunda, metodun iç işlevinin adını yazın veya varsayılan değeri kullanın (Bu durumda *Ptincircle*).
 
-1. İade **Türü** kutusunda, yöntemin dönüş türü için **VARIANT_BOOL** tıklatın.
+1. **Dönüş türü** kutusunda, yöntemin dönüş türü için **VARIANT_BOOL** ' ye tıklayın.
 
-1. **Parametre Türü** ve **Parametre Adı** denetimlerini *kullanarak, xCoord* (tip *OLE_XPOS_PIXELS)* adlı bir parametre ekleyin.
+1. **Parametre türü** ve **parametre adı** denetimlerini kullanarak *xcosip* adlı bir parametre ekleyin (tür *OLE_XPOS_PIXELS*).
 
-1. **Parametre Türü** ve **Parametre Adı** denetimlerini kullanarak, *yCoord* (tip *OLE_YPOS_PIXELS)* adlı bir parametre ekleyin.
+1. **Parametre türü** ve **parametre adı** denetimlerini kullanarak, *yıkozı* adlı bir parametre ekleyin (tür *OLE_YPOS_PIXELS*).
 
 1. **Son**'a tıklayın.
 
-## <a name="add-method-wizard-changes-for-custom-methods"></a><a name="_core_classwizard_changes_for_custom_methods"></a>Özel Yöntemler için Yöntem Sihirbazı Değişiklikleri Ekle
+## <a name="add-method-wizard-changes-for-custom-methods"></a><a name="_core_classwizard_changes_for_custom_methods"></a>Özel yöntemler için yöntem ekleme Sihirbazı değişiklikleri
 
-Özel bir yöntem eklediğinizde, Yöntem Ekle Sihirbazı denetim sınıfı üstbilgide (. H) ve uygulama (. CPP) dosyaları. Denetim sınıfı üstbilgisinde sevk haritası bildirimine aşağıdaki satır eklenir (. H) dosya:
+Özel bir yöntem eklediğinizde Yöntem Ekleme Sihirbazı denetim sınıfı üst bilgisinde bazı değişiklikler yapar (. H) ve uygulama (. CPP) dosyaları. Aşağıdaki satır, denetim sınıfı üstbilgisindeki (. H) dosyası:
 
-[!code-cpp[NVC_MFC_AxUI#18](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-methods_1.h)]
+[!code-cpp[NVC_MFC_AxUI#18](codesnippet/cpp/mfc-activex-controls-adding-custom-methods_1.h)]
 
-Bu kod, bir gönderme yöntemi `PtInCircle`işleyicisi adlı bildirir. Bu işlev dış ad `PtInCircle`kullanılarak kontrol kullanıcısı tarafından çağrılabilir.
+Bu kod, adlı bir dağıtım yöntemi işleyicisi bildirir `PtInCircle` . Bu işlev, dış adı kullanılarak denetim kullanıcısı tarafından çağrılabilir `PtInCircle` .
 
-Aşağıdaki satır denetimin. IDL dosyası:
+Aşağıdaki satır denetimin öğesine eklenir. IDL dosyası:
 
-[!code-cpp[NVC_MFC_AxUI#19](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-methods_2.idl)]
+[!code-cpp[NVC_MFC_AxUI#19](codesnippet/cpp/mfc-activex-controls-adding-custom-methods_2.idl)]
 
-Bu satır yönteme belirli bir kimlik numarası, yöntemin konumunu Yöntem Sihirbazı yöntemleri ve özellikleri listesinde atar. `PtInCircle` Özel yöntemi eklemek için Ekle Yöntemi Sihirbazı kullanıldığından, bunun girişi projenin . IDL dosyası.
+Bu satır `PtInCircle` yönteme belirli BIR kimlik numarası, yöntemin yöntem ekleme Sihirbazı yöntemleri ve Özellikler listesinde konumunu atar. Yöntem Ekleme Sihirbazı özel yöntemi eklemek için kullanıldığından, bu giriş, proje için otomatik olarak eklenir. IDL dosyası.
 
-Buna ek olarak, aşağıdaki satır, uygulamada bulunan (. CPP) denetim sınıfının dosyası, denetimin sevk haritasına eklenir:
+Ayrıca, uygulamada bulunan aşağıdaki satırı (. CPP) denetim sınıfının dosyası, denetimin dağıtım eşlemesine eklenir:
 
-[!code-cpp[NVC_MFC_AxUI#20](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-methods_3.cpp)]
+[!code-cpp[NVC_MFC_AxUI#20](codesnippet/cpp/mfc-activex-controls-adding-custom-methods_3.cpp)]
 
-DISP_FUNCTION makro, yöntemi `PtInCircle` denetimin işleyicisi `PtInCircle`işleviyle eşler, döndürme türünü **VARIANT_BOOL**olarak bildirir ve **VTS_XPOS_PIXELS** ve `PtInCircle` **VTS_YPOSPIXELS** iki parametresini ileder.
+DISP_FUNCTION makro, yöntemi `PtInCircle` denetimin işleyici işlevi ile eşleştirir, `PtInCircle` dönüş türünü **VARIANT_BOOL**olarak bildirir ve **VTS_XPOS_PIXELS** türünde iki parametre ve geçirilecek **VTS_YPOSPIXELS** bildirir `PtInCircle` .
 
-Son olarak, Yöntem Ekle Sihirbazı `CSampleCtrl::PtInCircle` denetimin uygulamasının altına saplama işlevini ekler (. CPP) dosyası. Daha `PtInCircle` önce belirtildiği gibi çalışması için aşağıdaki gibi değiştirilmesi gerekir:
+Son olarak, yöntem ekleme Sihirbazı, saplama işlevini `CSampleCtrl::PtInCircle` denetimin uygulamasının alt kısmına ekler (. CPP) dosyası. `PtInCircle`Daha önce belirtildiği gibi çalışması için, aşağıdaki şekilde değiştirilmelidir:
 
-[!code-cpp[NVC_MFC_AxUI#21](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-methods_4.cpp)]
+[!code-cpp[NVC_MFC_AxUI#21](codesnippet/cpp/mfc-activex-controls-adding-custom-methods_4.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)<br/>
-[Sınıf Görünümü ve Nesne Tarayıcı Simgeleri](/visualstudio/ide/class-view-and-object-browser-icons)
+[MFC ActiveX denetimleri](mfc-activex-controls.md)<br/>
+[Sınıf Görünümü ve Nesne Tarayıcısı simgeleri](/visualstudio/ide/class-view-and-object-browser-icons)

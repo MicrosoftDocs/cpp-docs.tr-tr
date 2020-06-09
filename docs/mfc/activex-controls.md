@@ -4,24 +4,24 @@ ms.date: 09/12/2018
 helpviewer_keywords:
 - ActiveX controls [MFC]
 ms.assetid: 52aaec4d-3889-402e-b57d-758078f8ac57
-ms.openlocfilehash: f361af8b9f6409d34e4dd70936c4e3aa28c2d0b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1ea8c94e9e435bb4c5480049c3fd64456be17c82
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394846"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619479"
 ---
 # <a name="activex-controls"></a>ActiveX Denetimleri
 
-Visual c++'ta ActiveX denetimlerinin MFC veya ATL kullanarak oluşturabilirsiniz.
+Visual C++, MFC veya ATL kullanarak ActiveX denetimleri oluşturabilirsiniz.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX denetimleri pek çok özelliğini, HTML5 ve JavaScript, modern tarayıcı uzantıları veya WebAssembly modüller gibi modern teknolojiler daha basit ve çok daha güvenli bir şekilde gerçekleştirilebilir. Daha fazla bilgi için [mola Geçmişten, bölüm 2: ActiveX, VBScript, altı güle güle belirten...](https://blogs.windows.com/msedgedev/2015/05/06/a-break-from-the-past-part-2-saying-goodbye-to-activex-vbscript-attachevent/) ve [yerel Mesajlaşma](/microsoft-edge/extensions/guides/native-messaging) ve [Microsoft Edge uzantıları](/microsoft-edge/extensions) ve [WebAssembly](https://webassembly.org/).
+> ActiveX, yeni geliştirme için kullanılması gereken eski bir teknolojidir. ActiveX denetimlerinin pek çok özelliği HTML5 ve JavaScript, modern tarayıcı uzantıları veya WebAssembly modülleri gibi modern teknolojilerle daha basit ve çok daha güvenli bir şekilde gerçekleştirilebilir. Daha fazla bilgi için bkz [. 2. Bölüm: ActiveX, VBScript, attachEvent...](https://blogs.windows.com/msedgedev/2015/05/06/a-break-from-the-past-part-2-saying-goodbye-to-activex-vbscript-attachevent/) ve [Yerel mesajlaşma](/microsoft-edge/extensions/guides/native-messaging) ve [Microsoft Edge uzantıları](/microsoft-edge/extensions) ve [webassembly](https://webassembly.org/).
 
-- [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
+- [MFC ActiveX denetimleri](mfc-activex-controls.md)
 
 - [ATL](../atl/active-template-library-atl-concepts.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)
+[Kullanıcı arabirimi öğeleri](user-interface-elements-mfc.md)

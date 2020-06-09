@@ -1,26 +1,26 @@
 ---
-title: 'Özel durumlar: Yapıcılardaki özel durumlar'
+title: 'Özel Durumlar: Yapıcılardaki Özel Durumlar'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - constructors [MFC], exceptions
 - throwing exceptions [MFC], in constructors
 - exceptions [MFC], in constructors
 ms.assetid: a78eae5a-5821-4b27-9478-1436320ed1e1
-ms.openlocfilehash: 0b11f5be18879d5ad4b9e204bb02e18b4617c6b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4089f4d44f03c7de3432f137b5d28f74189e1cb9
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405878"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84624612"
 ---
-# <a name="exceptions-exceptions-in-constructors"></a>Özel durumlar: Yapıcılardaki özel durumlar
+# <a name="exceptions-exceptions-in-constructors"></a>Özel Durumlar: Yapıcılardaki Özel Durumlar
 
-Bir oluşturucuda bir özel durum, hangi nesnelerin ve bellek ayırma özel durum atma önce açıklandığı gibi yaptığınız temiz [özel durumlar: Kendi İşlevlerinizden özel durumları atma](../mfc/exceptions-throwing-exceptions-from-your-own-functions.md).
+Bir oluşturucuda özel durum oluştururken özel [durumlar: kendi Işlevlerinizden özel durumlar](exceptions-throwing-exceptions-from-your-own-functions.md)oluşturma bölümünde açıklandığı gibi özel durumu oluşturmadan önce yaptığınız nesne ve bellek ayırmalarını temizleyin.
 
-Bir oluşturucuda bir özel durum, nesnenin kendisi için bellek Oluşturucu çağrılır zamanında zaten ayrıldı. Bu nedenle, derleyici otomatik olarak özel durum oluştuktan sonra nesnenin kapladığı bellek ayırması.
+Bir oluşturucuda özel durum oluştururken nesnenin kendisi için bellek, oluşturucunun çağrıldığı zamana göre zaten ayrılır. Bu nedenle, derleyici özel durum oluşturulduktan sonra nesnenin kapladığı belleği otomatik olarak serbest bırakılır.
 
-Daha fazla bilgi için [özel durumlar: Özel durumlarda nesneleri serbest bırakma](../mfc/exceptions-freeing-objects-in-exceptions.md).
+Daha fazla bilgi için bkz. [özel durumlar: nesneleri özel durumlarla boşaltma](exceptions-freeing-objects-in-exceptions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
+[Özel Durum İşleme](exception-handling-in-mfc.md)

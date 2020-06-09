@@ -10,39 +10,39 @@ helpviewer_keywords:
 - messages [MFC], Windows
 - message handling [MFC], message types
 ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
-ms.openlocfilehash: 686d5eef4aaa67785aa56133d820b637fbf4bb86
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3875a6931b4380f0531e4c1786de6dddfccb76ca
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364748"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625464"
 ---
 # <a name="message-categories"></a>İleti Kategorileri
 
-Üç ana kategori için ne tür iletiler yazarsınız:
+İşleyiciler için ne tür iletiler yazarsanız, üç ana kategori vardır:
 
 1. Windows iletileri
 
-   Bu, WM_COMMAND hariç, **öncelikle WM_** önekiyle başlayan iletileri içerir. Windows iletileri windows ve görünümler tarafından işlenir. Bu iletiler genellikle iletinin nasıl işleyeceğini belirlemede kullanılan parametrelere sahiptir.
+   Bu, öncelikle WM_COMMAND hariç **WM_** önekiyle başlayan iletileri içerir. Windows iletileri Windows ve görünümler tarafından işlenir. Bu iletilerde genellikle iletinin nasıl işleneceğini belirlemede kullanılan parametreler bulunur.
 
 1. Denetim bildirimleri
 
-   Buna denetimlerden ve diğer alt pencerelerden üst pencerelerine WM_COMMAND bildirim iletileri dahildir. Örneğin, bir edit denetimi, kullanıcı denetim denetiminde metni değiştirmiş olabilecek bir eylemde bulunduğunda, ana EN_CHANGE denetim bildirim kodunu içeren bir WM_COMMAND iletisi gönderir. İleti için pencerenin işleyicisi, bildirim iletisine denetimdeki metni almak gibi uygun bir şekilde yanıt verir.
+   Bu, denetimlerden ve diğer alt pencerelerin üst pencereleri arasında WM_COMMAND bildirim iletileri içerir. Örneğin, bir düzenleme denetimi, Kullanıcı düzenleme denetiminde metin değiştirmiş olabilecek bir eylem gerçekleştirmediğinde, EN_CHANGE denetim-bildirim kodu içeren üst öğe WM_COMMAND iletisini gönderir. Pencerenin ileti işleyicisi, bildirim iletisine, denetimdeki metni alma gibi bazı uygun bir şekilde yanıt verir.
 
-   Çerçeve, diğer **WM_** iletileri gibi denetim bildirim iletilerini yönlendirir. Ancak bunun bir istisnası, kullanıcı bunları tıklattığında düğmeler tarafından gönderilen BN_CLICKED denetim bildirim iletisidir. Bu ileti özel olarak bir komut iletisi olarak kabul edilir ve diğer komutlar gibi yönlendirilir.
+   Framework, denetim bildirimi iletilerini diğer **WM_** iletileri gibi yönlendirir. Ancak tek bir özel durum, Kullanıcı onlara tıkladığında düğme tarafından gönderilen BN_CLICKED denetim-bildirim iletisidir. Bu ileti, özel olarak komut iletisi olarak değerlendirilir ve diğer komutlar gibi yönlendirilir.
 
 1. Komut iletileri
 
-   Bu, kullanıcı arabirimi nesnelerinden WM_COMMAND bildirim iletilerini içerir: menüler, araç çubuğu düğmeleri ve hızlandırıcı tuşları. Çerçeve süreçleri komutları diğer iletilerden farklı olarak işler ve [Komut Hedefleri'nde](../mfc/command-targets.md)açıklandığı gibi daha fazla nesne türü tarafından işlenebilir.
+   Bu, Kullanıcı arabirimi nesnelerinden WM_COMMAND bildirim iletileri içerir: menüler, araç çubuğu düğmeleri ve hızlandırıcı tuşları. Çerçeve komutları diğer iletilerden farklı işler ve [komut hedefleri](command-targets.md)bölümünde açıklandığı gibi daha fazla nesne türü tarafından işlenebilirler.
 
-## <a name="windows-messages-and-control-notification-messages"></a><a name="_core_windows_messages_and_control.2d.notification_messages"></a>Windows İletileri ve Denetim-Bildirim İletileri
+## <a name="windows-messages-and-control-notification-messages"></a><a name="_core_windows_messages_and_control.2d.notification_messages"></a>Windows Iletileri ve denetim bildirimi Iletileri
 
-Kategori 1 ve 2 'deki iletiler — Windows iletileri ve denetim bildirimleri `CWnd`— windows tarafından işlenir: sınıftan türetilen sınıfların nesneleri. Bu, `CFrameWnd` `CMDIFrameWnd`, `CMDIChildWnd` `CView`, `CDialog`, , , ve bu temel sınıflardan türetilen kendi sınıflarınızı içerir. Bu tür nesneler, Windows `HWND`penceresine bir , tutamacı kapsüller.
+Kategoriler 1 ve 2 ' deki iletiler; Windows iletileri ve denetim bildirimleri — Windows tarafından işlenir: sınıfından türetilmiş sınıfların nesneleri `CWnd` . Bu `CFrameWnd` temel sınıflardan türetilmiş,,,, `CMDIFrameWnd` `CMDIChildWnd` `CView` `CDialog` ve kendi sınıflarınızı içerir. Bu tür nesneler `HWND` , bir Windows penceresine yönelik bir tutamacı kapsülleyin.
 
-## <a name="command-messages"></a><a name="_core_command_messages"></a>Komut Mesajları
+## <a name="command-messages"></a><a name="_core_command_messages"></a>Komut Iletileri
 
-Kategori 3'teki iletiler —komutlar- daha çeşitli nesneler tarafından işlenebilir: belgeler, belge şablonları ve windows ve görünümlere ek olarak uygulama nesnesinin kendisi. Bir komut belirli bir nesneyi doğrudan etkilediğinde, bu nesnenin komutu işlemesi mantıklıdır. Örneğin, Dosya menüsündeki Aç komutu mantıksal olarak uygulamayla ilişkilidir: uygulama komutu aldıktan sonra belirli bir belgeyi açar. Yani Açık komutunun işleyicisi uygulama sınıfının bir üye işlevidir. Komutlar ve nesnelere nasıl yönlendirildikleri hakkında daha fazla bilgi için, [Framework Calls a Handler'ı nasıl aradığını](../mfc/how-the-framework-calls-a-handler.md)görün.
+Kategori 3 (komutları) içindeki iletiler, Windows ve görünümlere ek olarak, birçok farklı nesne tarafından işlenebilir: belgeler, belge şablonları ve uygulama nesnesi. Bir komut belirli bir nesneyi doğrudan etkiliyorsa, bu nesnenin komutu işlemesi mantıklı olur. Örneğin, Dosya menüsündeki Aç komutu, uygulamayla mantıksal olarak ilişkilendirilir: uygulama, komutu aldıktan sonra belirtilen bir belgeyi açar. Bu nedenle, Open komutuna yönelik işleyici, uygulama sınıfının bir üye işlevidir. Komutlar ve nesnelere nasıl yönlendirildiği hakkında daha fazla bilgi için, bkz. [Framework nasıl bir Işleyiciyi çağırır](how-the-framework-calls-a-handler.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
+[Framework'teki İletiler ve Komutlar](messages-and-commands-in-the-framework.md)

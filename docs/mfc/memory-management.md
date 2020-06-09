@@ -8,12 +8,12 @@ helpviewer_keywords:
 - memory [MFC], managing
 - memory allocation [MFC], MFC
 ms.assetid: 934ac81b-d630-4232-88e5-ea74f7187987
-ms.openlocfilehash: 5d81bd0a8bdd24059951cba5c8b69751b3d1db86
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 464a31491f2c3017453bdd5bbdc8b059d348eb3c
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69508267"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626265"
 ---
 # <a name="memory-management"></a>Bellek Yönetimi
 
@@ -25,21 +25,21 @@ Windows için programlarda bellek yönetimiyle ilgili MFC olmayan bilgiler için
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Çerçeve ayırma](../mfc/memory-management-frame-allocation.md)
+- [Çerçeve ayırma](memory-management-frame-allocation.md)
 
-- [Yığın ayırma](../mfc/memory-management-heap-allocation.md)
+- [Yığın Ayırma](memory-management-heap-allocation.md)
 
-- [Bir dizi için bellek ayırma](../mfc/memory-management-examples.md)
+- [Bir dizi için bellek ayırma](memory-management-examples.md)
 
-- [Yığından bir dizi için bellek ayırmayı kaldırma](../mfc/memory-management-examples.md)
+- [Yığından bir dizi için bellek ayırmayı kaldırma](memory-management-examples.md)
 
-- [Veri yapısı için bellek ayırma](../mfc/memory-management-examples.md)
+- [Veri yapısı için bellek ayırma](memory-management-examples.md)
 
-- [Bir nesne için bellek ayırma](../mfc/memory-management-examples.md)
+- [Bir nesne için bellek ayırma](memory-management-examples.md)
 
-- [Yeniden boyutlandırılabilir bellek blokları](../mfc/memory-management-resizable-memory-blocks.md)
+- [Yeniden boyutlandırılabilir bellek blokları](memory-management-resizable-memory-blocks.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tiren](../mfc/mfc-concepts.md)<br/>
-[Genel MFC Konuları](../mfc/general-mfc-topics.md)
+[Kavramlar](mfc-concepts.md)<br/>
+[Genel MFC Konuları](general-mfc-topics.md)

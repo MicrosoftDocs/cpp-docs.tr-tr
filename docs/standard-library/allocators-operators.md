@@ -1,26 +1,26 @@
 ---
-title: '&lt;tahsisat&gt; operatörleri'
+title: '&lt;ayrıcılar &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - allocators/std::operator!=
 - allocators/std::operator==
 ms.assetid: b55d67cb-3c69-46bf-ad40-e845fb096c4e
-ms.openlocfilehash: 7bc37e98ed85582cac8fc7ae21e54a6d5da9e06f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a21708ca090b0db561391308f347d90b77c62645
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364957"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84623567"
 ---
-# <a name="ltallocatorsgt-operators"></a>&lt;tahsisat&gt; operatörleri
+# <a name="ltallocatorsgt-operators"></a>&lt;ayrıcılar &gt; işleçleri
 
-Bunlar &lt;ayırıcılarda tanımlanan genel şablon&gt;işleci işlevleridir. Sınıf üye işleç işlevleri için sınıf belgelerine bakın.
+Bunlar, ayrıcılar içinde tanımlanan genel şablon işleci işlevleridir &lt; &gt; . Sınıf üyesi işleç işlevleri için sınıf belgelerine bakın.
 
 |||
 |-|-|
-|[işleç!=](#op_neq)|[işleç==](#op_eq_eq)|
+|[işleç! =](#op_neq)|[işleç = =](#op_eq_eq)|
 
-## <a name="operator"></a><a name="op_neq"></a>işleç!=
+## <a name="operator"></a><a name="op_neq"></a>işleç! =
 
 Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitsizliği sınar.
 
@@ -35,18 +35,18 @@ bool operator!=(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Sol*|Eşitsizlik için test edilecek ayırıcı nesnelerden biri.|
-|*Doğru*|Eşitsizlik için test edilecek ayırıcı nesnelerden biri.|
+|*tarafta*|Eşitsizlik için test edilecek ayırıcı nesnelerinden biri.|
+|*Right*|Eşitsizlik için test edilecek ayırıcı nesnelerinden biri.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ayırıcı nesneler eşit değilse **doğru;** allocator nesneleri **eşitse false.**
+ayırıcı nesneleri eşitse **true** ; ayırıcı nesneleri eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işleci `!(left == right)`döndürür.
+Şablon işleci döndürülür `!(left == right)` .
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç==
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
 Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitliği sınar.
 
@@ -61,17 +61,17 @@ bool operator==(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Sol*|Eşitlik için test edilecek ayırıcı nesnelerden biri.|
-|*Doğru*|Eşitlik için test edilecek ayırıcı nesnelerden biri.|
+|*tarafta*|Eşitlik için test edilecek ayırıcı nesnelerinden biri.|
+|*Right*|Eşitlik için test edilecek ayırıcı nesnelerinden biri.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ayırıcı nesneler eşitse **doğrudur;** allocator nesneleri eşit değilse **false.**
+ayırıcı nesneleri eşitse **true** ; ayırıcı nesneleri eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon `left.equals(right)`işleci döndürür.
+Bu şablon işleci döndürür `left.equals(right)` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<tahsisat>](../standard-library/allocators-header.md)
+[\<allocators>](allocators-header.md)

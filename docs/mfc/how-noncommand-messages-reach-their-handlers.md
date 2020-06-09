@@ -7,19 +7,19 @@ helpviewer_keywords:
 - Windows messages [MFC], routing
 - message handling [MFC], noncommand messages
 ms.assetid: e7df8aef-9fae-41f4-9c11-881d8465f602
-ms.openlocfilehash: 4b9fb0a72b330380f0207db9968199a7e4c3d9b3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c7b2bf819c5305da4039fae172578298d3b4e609
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407945"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84618502"
 ---
 # <a name="how-noncommand-messages-reach-their-handlers"></a>Komut Dışı İletilerin İşleyicilerine Erişmesi
 
-Komutlarından farklı olarak standart Windows iletileri bir komuta zincirini hedefleri yönlendirilir değil, ancak genellikle, Windows iletinin gönderdiği pencere tarafından işlenir. Pencere, bir ana çerçeve penceresi, MDI alt penceresi, standart bir denetimde, bir iletişim kutusu, bir görünüm veya başka türde bir alt pencere olabilir.
+Komutların aksine, standart Windows iletileri bir komut hedefi zinciri aracılığıyla yönlendirilemez, ancak genellikle Windows 'un iletiyi gönderdiği pencere tarafından işlenir. Pencere, bir ana çerçeve penceresi, bir MDI alt penceresi, standart denetim, iletişim kutusu, görünüm veya başka bir alt pencere türü olabilir.
 
-Çalışma zamanında, her Windows penceresi bir pencere nesnesi için bağlı (doğrudan veya dolaylı olarak türetilmiş `CWnd`) kendi ilişkili ileti eşlemesi ve işleyici işlevlerine sahip. Çerçeve ileti eşlemesi kullanır; bir komut için — gelen iletileri için işleyiciler eşlemek için.
+Çalışma zamanında, her Windows penceresi, `CWnd` kendi ilişkili ileti eşlemesi ve işleyici işlevleri olan bir pencere nesnesine (doğrudan veya dolaylı olarak türetilmiş) eklenir. Çerçeve, gelen iletileri işleyicilere eşlemek için ileti haritasını (bir komut gibi) kullanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
+[Çerçeve bir Işleyiciyi nasıl çağırır](how-the-framework-calls-a-handler.md)

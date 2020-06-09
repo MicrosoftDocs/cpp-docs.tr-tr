@@ -7,18 +7,18 @@ helpviewer_keywords:
 - add_pointer class
 - add_pointer
 ms.assetid: d8095cb0-6578-4143-b78f-87f82485298c
-ms.openlocfilehash: 759867a542aa128755ba31e090984eb5b3fe6963
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 8adeffd0352d04fe844b286ea7456c66e907a0a7
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456552"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619258"
 ---
-# <a name="addpointer-class"></a>add_pointer Sınıfı
+# <a name="add_pointer-class"></a>add_pointer Sınıfı
 
 Belirtilen türden bir işaretçi türü sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T>
@@ -30,18 +30,18 @@ using add_pointer_t = typename add_pointer<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*Şı*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`remove_reference<T>::type*`  Typedef`type` öğesi, ile aynı türü adlandırır. Diğer ad `add_pointer_t` , **typedef** `type`üyesine erişmek için bir kısayoldur.
+TypeDef öğesi **typedef** `type` , ile aynı türü adlandırır `remove_reference<T>::type*` . Diğer ad, `add_pointer_t` **typedef** üyesine erişmek için bir kısayoldur `type` .
 
-Bir başvurudan `add_pointer` işaretçi yapmak için geçersiz olduğundan, türü bir işaretçi yapmadan önce belirtilen türden bir başvuruyu kaldırır. Sonuç olarak, türün bir başvuru olup olmadığı `add_pointer` konusunda endişe duymadan bir türü kullanabilirsiniz.
+Bir başvurudan işaretçi yapmak için geçersiz olduğundan, `add_pointer` türü bir işaretçi yapmadan önce belirtilen türden bir başvuruyu kaldırır. Sonuç olarak, türün `add_pointer` bir başvuru olup olmadığı konusunda endişe duymadan bir türü kullanabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir türün `add_pointer` bu türe yönelik işaretçiyle aynı olduğunu gösterir.
+Aşağıdaki örnek, `add_pointer` bir türün bu türe yönelik işaretçiyle aynı olduğunu gösterir.
 
 ```cpp
 #include <type_traits>
@@ -65,11 +65,11 @@ add_pointer_t<int> == int *
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[remove_pointer Sınıfı](../standard-library/remove-pointer-class.md)
+[<type_traits>](type-traits.md)\
+[remove_pointer sınıfı](remove-pointer-class.md)

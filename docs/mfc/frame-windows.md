@@ -15,74 +15,74 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - splitter windows [MFC], and frame windows
 ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
-ms.openlocfilehash: 939230753f25db38e6ba2f26340f40ddf74d23bf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 39c0b4b866fa123d8bcae639342c925570d96e1b
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62219835"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625816"
 ---
 # <a name="frame-windows"></a>Çerçeve Pencereleri
 
-Bir uygulama Windows altında çalışırken, kullanıcı çerçeve pencerelerinde görüntülenen belgeleri ile etkileşim kurar. Bir belge çerçevesi penceresinin iki önemli bileşeni vardır: çerçeve ve bu çerçeve içeriği. Bir belge çerçevesi penceresinin olabilir bir [tek Belgeli Arabirim](../mfc/sdi-and-mdi.md) (SDI) çerçeve penceresi veya [birden çok belge arabirimi](../mfc/sdi-and-mdi.md) (MDI) alt penceresi. Windows, birçok çerçeve penceresi ile kullanıcı etkileşimi yönetir: taşıma ve pencereyi yeniden boyutlandırma, kapatma ve en aza indirmek ve bunu en üst düzeye. İçeriği çerçevesindeki yönettiğiniz.
+Bir uygulama Windows altında çalıştığında, Kullanıcı çerçeve pencereleri içinde gösterilecek belgelerle etkileşime girer. Bir belge çerçevesi penceresinde iki ana bileşen vardır: çerçeve ve çerçevenin içeriği. Belge çerçevesi penceresi [tek bir belge arabirimi](sdi-and-mdi.md) (SDI) çerçeve penceresi veya [birden çok belge arabirimi](sdi-and-mdi.md) (MDI) alt penceresi olabilir. Windows, kullanıcının çerçeve penceresiyle olan etkileşimini çoğunu yönetir: pencereyi taşıma ve yeniden boyutlandırma, kapatma ve en aza indirme ve kaplama. Çerçevenin içindeki içerikleri yönetirsiniz.
 
-## <a name="frame-windows-and-views"></a>Çerçeve Windows ve görünümleri
+## <a name="frame-windows-and-views"></a>Çerçeve pencereleri ve görünümleri
 
-MFC çerçevesi çerçeve pencereleri görünümler içermesi için kullanır. İki bileşeni — çerçeve ve içeriği — temsil ve MFC'de iki farklı sınıflar tarafından yönetilir. Çerçeve çerçeve-pencere sınıfı yönetir ve bir görünüm sınıfı içeriği yönetir. Görünüm penceresine çerçeve penceresinin alt öğesidir. Çizim ve başka bir kullanıcı etkileşimi belgeyle görünümün istemci alanı, çerçeve penceresinin istemci alanına gerçekleşir. Çerçeve penceresi etrafında bir görünümü, tam bir başlık çubuğu ve standart penceresi denetimleriyle denetimi menüsü, en aza indirmek ve, pencerenin en üst düzeye çıkarmak için düğmeler gibi görünür bir çerçeve sağlar ve pencereyi yeniden boyutlandırmak için denetler. Tam olarak bir alt pencere tarafından kullanılıyor pencerenin istemci alanının "İçerik" oluşur; görünümü. Aşağıdaki şekilde bir çerçeve penceresi ve bir görünüm arasındaki ilişki gösterilmektedir.
+MFC çerçevesi, görünümler içermesi için çerçeve pencerelerini kullanır. İki bileşen (çerçeve ve içerik) MFC 'de iki farklı sınıf tarafından temsil edilir ve yönetilir. Çerçeve pencere sınıfı çerçeveyi yönetir ve bir görünüm sınıfı içeriği yönetir. Görünüm penceresi, çerçeve penceresinin bir alt öğesidir. Belge ile çizim ve diğer Kullanıcı etkileşimi, çerçeve penceresinin istemci alanına değil, görünümün istemci alanında yer alır. Çerçeve penceresi bir görünüm etrafında görünür bir çerçeve sağlar, bir resim yazısı çubuğu ve bir denetim menüsü gibi standart pencere denetimleri, pencereyi en aza indirmek ve en üst düzeye çıkarmak için düğmeler ve pencereyi yeniden boyutlandırma denetimleri sağlar. "İçerik", bir alt pencere tarafından tam olarak bulunan pencerenin istemci alanından oluşur — görünüm. Aşağıdaki şekilde bir çerçeve penceresi ve bir görünüm arasındaki ilişki gösterilmektedir.
 
-![Çerçeve penceresi görünümü](../mfc/media/vc37fx1.gif "çerçeve penceresi görünümü") <br/>
+![Çerçeve penceresi görünümü](../mfc/media/vc37fx1.gif "Çerçeve penceresi görünümü") <br/>
 Çerçeve penceresi ve görünümü
 
-## <a name="frame-windows-and-splitter-windows"></a>Çerçeve Windows ve Windows Bölümlendirici
+## <a name="frame-windows-and-splitter-windows"></a>Çerçeve pencereleri ve Splitter pencereleri
 
-Başka bir ortak kullanımı genellikle birden çok görünüm çerçeve çerçeve penceresi için düzenlemesidir bir [ayırıcı penceresi](../mfc/multiple-document-types-views-and-frame-windows.md). Ayırıcı penceresi içinde çerçeve penceresinin istemci alanına sırayla görünümleridir bölmeleri, adında birden çok alt öğe pencerelerini sahip bir ayırıcı penceresi tarafından kullanılıyor.
+Yaygın olarak kullanılan başka bir düzenleme ise çerçeve penceresinin, genellikle bir [Splitter penceresi](multiple-document-types-views-and-frame-windows.md)kullanarak birden çok görünümü çerçeveledir. Bölümlendirici penceresinde, çerçeve penceresinin istemci alanı bir ayırıcı pencere ile kullanılıyor. Bu, sırasıyla, görünümler olarak adlandırılan birden çok alt pencere içerir.
 
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+### <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-**Çerçeve penceresi genel konular**
+**Genel çerçeve penceresi konuları**
 
-- [Pencere nesneleri](../mfc/window-objects.md)
+- [Pencere nesneleri](window-objects.md)
 
-- [Çerçeve penceresi sınıfları](../mfc/frame-window-classes.md)
+- [Çerçeve penceresi sınıfları](frame-window-classes.md)
 
-- [Uygulama Sihirbazı tarafından oluşturulan çerçeve pencere sınıfları](../mfc/frame-window-classes-created-by-the-application-wizard.md)
+- [Uygulama Sihirbazı tarafından oluşturulan çerçeve pencere sınıfları](frame-window-classes-created-by-the-application-wizard.md)
 
-- [Çerçeve pencere stilleri](../mfc/frame-window-styles-cpp.md)
+- [Çerçeve pencere stilleri](frame-window-styles-cpp.md)
 
-- [Çerçeve pencerelerinin görevi](../mfc/what-frame-windows-do.md)
+- [Çerçeve pencerelerinin görevi](what-frame-windows-do.md)
 
-**Çerçeve Windows kullanma konuları**
+**Çerçeve pencerelerini kullanma konuları**
 
-- [Çerçeve pencerelerini kullanma](../mfc/using-frame-windows.md)
+- [Çerçeve pencerelerini kullanma](using-frame-windows.md)
 
-- [Belge çerçeve pencereleri oluşturma](../mfc/creating-document-frame-windows.md)
+- [Belge çerçeve pencereleri oluşturma](creating-document-frame-windows.md)
 
-- [Çerçeve pencerelerini yok etme](../mfc/destroying-frame-windows.md)
+- [Çerçeve pencerelerini yok etme](destroying-frame-windows.md)
 
-- [MDI alt öğe pencerelerini yönetme](../mfc/managing-mdi-child-windows.md)
+- [MDI alt pencerelerini yönetme](managing-mdi-child-windows.md)
 
-- [Geçerli görünümü yönetme](../mfc/managing-the-current-view.md) bir çerçeve penceresinde birden fazla görünümü içerir
+- Birden fazla görünüm içeren bir çerçeve penceresinde [geçerli görünümü yönetme](managing-the-current-view.md)
 
-- [Menüleri, Denetim çubuklarını ve Hızlandırıcıları (Çerçeve penceresinin alanı paylaşan diğer nesnelerin) yönetme](../mfc/managing-menus-control-bars-and-accelerators.md)
+- [Menüleri, denetim çubuklarını ve hızlandırıcıları yönetme (çerçeve penceresinin alanını paylaşan diğer nesneler)](managing-menus-control-bars-and-accelerators.md)
 
-**Özel bir çerçeve penceresi özellikleriyle ilgili konular**
+**Özel çerçeve penceresi özellikleri hakkında konular**
 
-- [Dosyaları sürükleme ve bırakma](../mfc/dragging-and-dropping-files-in-a-frame-window.md) dosya Gezgini ya da bir çerçeve penceresinin içine Dosya Yöneticisi
+- Dosyaları dosya Gezgini 'nden veya dosya yöneticisinden bir çerçeve penceresine [sürükleme ve bırakma](dragging-and-dropping-files-in-a-frame-window.md)
 
-- [Dinamik veri değişimine (DDE) yanıt verme](../mfc/responding-to-dynamic-data-exchange-dde.md)
+- [Dinamik veri değişimine yanıt verme (DDE)](responding-to-dynamic-data-exchange-dde.md)
 
-- [Yarı kalıcı durumlar: Windows içerebilir (diğer pencere işlemlerini)](../mfc/orchestrating-other-window-actions.md)
+- [Semimodal durumlar: bağlama duyarlı Windows Yardımı (diğer pencere eylemlerini yönetme)](orchestrating-other-window-actions.md)
 
-- [Yarı kalıcı durumlar: yazdırmayı ve Baskı Önizleme (diğer pencere işlemlerini)](../mfc/orchestrating-other-window-actions.md)
+- [Semimodal durumlar: yazdırma ve Baskı Önizleme (diğer pencere eylemlerini düzenleme)](orchestrating-other-window-actions.md)
 
-**Windows diğer türden konuları**
+**Diğer Windows türleriyle ilgili konular**
 
-- [Görünümleri Kullanma](../mfc/using-views.md)
+- [Görünümleri Kullanma](using-views.md)
 
-- [İletişim kutuları](../mfc/dialog-boxes.md)
+- [İletişim kutuları](dialog-boxes.md)
 
-- [Denetimler](../mfc/controls-mfc.md)
+- [Denetimler](controls-mfc.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Windows](../mfc/windows.md)
+[Windows](windows.md)

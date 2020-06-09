@@ -6,18 +6,18 @@ helpviewer_keywords:
 - merging Help menus [MFC]
 - Help [MFC], for active document containers
 ms.assetid: 9d615999-79ba-471a-9288-718f0c903d49
-ms.openlocfilehash: e1e8f9af696b6ea4cd485f4215e1c8425098e987
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1bd70af6f24ee6f9873b89b2060f4b2d90149c90
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396411"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84620128"
 ---
 # <a name="help-menu-merging"></a>Yardım Menüsü Birleştirme
 
-Bir nesne bir kapsayıcı içinde etkin olduğunda, menü OLE belgeleri Protokolü birleştirme nesne tam denetim verir **yardımcı** menüsü. Kullanıcı nesnesi devre dışı bırakır. sonuç olarak, kapsayıcının Yardım konuları kullanılamaz. Etkin belge kapsama mimarisi için yerinde menü kapsayıcı hem menüsünden paylaşmak için etkin olan etkin bir belge izin vermek için birleştirme kuralları genişletir. Yeni Paylaşılan menüsünün nasıl oluşturulur ve hangi bileşen menü hangi kısmının sahibi hakkında yalnızca ek kuralları kurallardır.
+Bir nesne bir kapsayıcı içinde etkin olduğunda, OLE belgelerinin menü birleştirme protokolü, **Yardım** menüsünün nesnenin tüm denetimini sağlar. Sonuç olarak, Kullanıcı nesneyi devre dışı bırakmadığı sürece kapsayıcının yardım konuları kullanılamaz. Etkin belge kapsama mimarisi, hem kapsayıcının hem de etkin bir belgenin menüyü paylaşmasına izin vermek için, yerinde menü birleştirme kurallarında genişletilir. Yeni kurallar, hangi bileşenin menünün parçasını ve paylaşılan menünün nasıl oluşturulduğunu gösteren ek kurallara sahiptir.
 
-Yeni kural, basit bir işlemdir. Etkin belge içinde **yardımcı** menü sahip iki üst düzey menü öğeleri şu şekilde düzenlenmiştir:
+Yeni kural basittir. Etkin belgelerde, **Yardım** menüsünde aşağıdaki gibi iki üst düzey menü öğesi düzenlenmiştir:
 
 `Help`
 
@@ -25,7 +25,7 @@ Yeni kural, basit bir işlemdir. Etkin belge içinde **yardımcı** menü sahip 
 
 `Object Help    >`
 
-Örneğin, bir sözcük bölümünde etkinken Office bağlayıcı sonra **yardımcı** menüsü gibi görüneceği:
+Örneğin, Office Ciltçi 'de bir Word bölümü etkin olduğunda, **Yardım** menüsü aşağıdaki gibi görünür:
 
 `Help`
 
@@ -33,22 +33,22 @@ Yeni kural, basit bir işlemdir. Etkin belge içinde **yardımcı** menü sahip 
 
 `Word Help   >`
 
-Her iki menü öğe altında ise kapsayıcıyı ve nesne için belirli herhangi bir ek menü öğelerini kullanıcı tarafından sağlanan basamaklı menüler şunlardır. Öğeleri burada görüntülenecek nesneleri ve kapsayıcı ile değişir dahil.
+Her iki menü öğesi de, kapsayıcıya özgü ek menü öğelerinin ve nesnenin kullanıcıya sağlandığı basamaklı menülerdir. Burada görüntülenen öğeler kapsayıcı ve nesneler dahil değişir.
 
-Bu birleştirilmiş oluşturulacağını **yardımcı** menüsü, etkin belge kapsama mimarisi normal OLE belgeleri yordamı değiştirir. OLE belgeleri göre birleştirilmiş menü çubuğunun altı menü, yani grubunuz olabilir **dosya**, **Düzenle**, **kapsayıcı**, **nesne**,  **Pencere**, **yardımcı**bu sırası. Her grupta sıfır veya daha fazla menüye olabilir. Grupları **dosya**, **kapsayıcı**, ve **penceresi** kapsayıcı ve gruplara ait **Düzenle**, **nesnesi,** ve **yardımcı** nesnesine ait. Nesne menü birleştirme yapmak istediği zaman, bir boş menü çubuğu oluşturur ve kapsayıcıya geçirir. Ardından kapsayıcıyı çağırarak kendi menülerini ekler `IOleInPlaceFrame::InsertMenus`. Nesne ayrıca altı uzun değerler dizisi bir yapısı geçirir (**OLEMENUGROUPWIDTHS**). Menüler ekledikten sonra kapsayıcı kaç menüler, grupları ve ardından döndürür her birinde eklenen işaretler. Ardından her bir kapsayıcı grubu dikkat menüleri sayısı için ödeme menülerini nesnesi ekler. Son olarak, nesnesi döndüren "menü tanımlayıcısı" donuk bir tanıtıcı OLE için birleştirilmiş bir menü çubuğu ve (her grubu menülerde sayısı içeren) bir dizi iletir. Daha sonra nesne, işleyici ve birleştirilmiş bir menü çubuğu kapsayıcıya üzerinden geçirir `IOleInPlaceFrame::SetMenu`. Şu anda kapsayıcı birleştirilmiş menü çubuğunu görüntüler ve böylece OLE uygun menü iletileri gönderme yapabilirsiniz tanıtıcı OLE için de geçirir.
+Bu birleştirilmiş **Yardım** menüsünü oluşturmak için, etkin belge kapsama mımarısı normal OLE belgeleri yordamını değiştirir. OLE belgelerine göre, birleştirilmiş menü çubuğunun altı menü grubu olabilir, bu da **Dosya**, **düzenleme**, **kapsayıcı**, **nesne**, **pencere**, **Yardım**ve bu sırada. Her grupta sıfır veya daha fazla menü olabilir. Gruplar **dosyası**, **kapsayıcı**ve **pencere** kapsayıcıya aittir ve gruplar **düzenleme**, **nesne** ve **Yardım** nesneye aittir. Nesne, bir menü birleştirme yapmak istediğinde boş bir menü çubuğu oluşturur ve kapsayıcıya geçirir. Ardından kapsayıcı, öğesini çağırarak menülerini ekler `IOleInPlaceFrame::InsertMenus` . Nesnesi Ayrıca altı uzun değerden oluşan bir dizi (**Olemenugroupgenişlikleri**) olan bir yapıyı geçirir. Menüler eklendikten sonra kapsayıcı, gruplarının her birinde kaç tane menü eklendiğini işaretler ve sonra döndürür. Ardından nesne menülerini ekler ve her kapsayıcı grubundaki menülerin sayısına dikkat edin. Son olarak, nesne birleştirilmiş menü çubuğunu ve diziyi (her bir gruptaki menülerin sayısını içeren) OLE 'ye geçirir ve bu da donuk bir "menü tanımlayıcısı" tutamacı döndürür. Daha sonra nesnesi bu tutamacı ve birleştirilmiş menü çubuğunu, ile kapsayıcısına geçirir `IOleInPlaceFrame::SetMenu` . Şu anda kapsayıcı, birleştirilmiş menü çubuğunu görüntüler ve ayrıca, OLE 'nin menü iletilerinin doğru bir şekilde dağıtımını yapabilmesi için tutamacı OLE 'e geçirir.
 
-Değiştirilen etkin belgeyi yordamda nesne ilk başlatmalıdır **OLEMENUGROUPWIDTHS** öğeleri kapsayıcıya iletmeden önce sıfır. Ardından kapsayıcı bir özel durum ile bir normal menü ekleme gerçekleştirir: Kapsayıcı eklemeleri bir **yardımcı** son öğe olarak menü ve 1 değeri son (altıncı) girişi depolar **OLEMENUGROUPWIDTHS** dizi (nesnenin Yardım grubuna ait olduğu diğer bir deyişle, genişlik, [5]). Bu **yardımcı** menüsünde tek bir alt öğenin sahip olur "**kapsayıcı Yardım** >" daha önce açıklandığı gibi basamaklı menüsü.
+Değiştirilen etkin belge yordamında, nesne, kapsayıcıyı kapsayıcıya geçirmeden önce **Olemenugroupgenişlikleri** öğelerini sıfıra başlatmalıdır. Ardından kapsayıcı, tek bir özel durum ile normal bir menü eklemesi gerçekleştirir: kapsayıcı, son öğe olarak bir **Yardım** menüsü ekler ve **Olemenugroupwidth** dizisinin (yani nesnenin yardım grubuna ait olan, Width [5]) son (altıncı) girişinde 1 değerini depolar. Bu **Yardım** menüsünde yalnızca bir alt menü olan "**kapsayıcı yardım** >" basamaklı menü, daha önce açıklandığı gibi bir öğe olacak.
 
-Nesne ardından eklemeden önce dışında normal menü ekleme kodu yürütür, **yardımcı** menüsünde, altıncı girişi denetler **OLEMENUGROUPWIDTHS** dizisi. Değer 1'dir ve son menünün adını ise **yardımcı** (veya uygun yerelleştirilmiş dizesi), ardından nesnesi ekler, **yardımcı** kapsayıcının alt menüsünde **yardımcı** menüsü.
+Nesne daha sonra normal menü ekleme kodunu yürütür, ancak **Yardım** menüsünü eklemeden önce, **Olemenugroupgenişlikleri** dizisinin altıncı girişini kontrol eder. Değer 1 ise ve son menünün adı **Yardım** (veya uygun yerelleştirilmiş dize) ise, nesne **Yardım menüsünü kapsayıcının** **Yardım** menüsünün alt menüsü olarak ekler.
 
-Nesne altıncı öğesinin ardından ayarlar **OLEMENUGROUPWIDTHS** sıfır ve beşinci öğeye bire artırır. Bu biliyor OLE sağlar **yardımcı** menü kapsayıcıya ait ve bu menü (ve alt menülerinden) karşılık gelen menü iletiler kapsayıcıya yönlendirileceğini. Kapsayıcının sorumluluk iletmek için ise **WM_INITMENUPOPUP**, **WM_SELECT**, **WM_COMMAND**, nesnenin ait diğer menü ilgili iletiler kısmını **yardımcı** menüsü. Bu kullanılarak başarılır **WM_INITMENU** kullanıcı nesnesinin içinde olup olmadığını gezinen kapsayıcıyı belirten bir bayrak temizlemek için **yardımcı** menüsü. Kapsayıcı ardından izleyen **WM_MENUSELECT** girişine veya herhangi bir öğeyi çıkın **yardımcı** Kapsayıcının kendisi eklemediğiniz menüsü. Girişte kapsayıcı "içindeki nesnenin Yardım menüsünden" bayrağını ayarlar ve tüm iletmek için bu bayrak durumunu kullanır, kullanıcı, bir nesne menüsüne çıkıldığında olan geldiğini **WM_MENUSELECT**, **WM_INITMENUPOPUP**ve  **WM_COMMAND** iletileri, nesne penceresi için en düşük. (Çıkış, kapsayıcı bayrağını temizler ve kendi aynı bu iletileri işler.) Kapsayıcı nesnenin döndürülen penceresi kullanmalısınız `IOleInPlaceActiveObejct::GetWindow` işlevi bu iletileri görmek için hedef olarak.
+Daha sonra nesnesi, **Olemenugroupgenişliklerinin** altıncı öğesini sıfır olarak ayarlar ve beşinci öğeyi bir artırır. Bu, OLE 'nin **Yardım** menüsünün kapsayıcıya ait olduğunu ve bu menüye (ve alt menülerinden) karşılık gelen menü mesajlarının kapsayıcıya yönlendirildiğini bilmesini sağlar. Daha sonra kapsayıcının, **Yardım** menüsünün nesnenin bölümüne ait olan **WM_INITMENUPOPUP**, **wm_select**, **WM_COMMAND**ve diğer menü ile ilgili iletileri iletme sorumluluğu vardır. Bu, kapsayıcının kullanıcının nesnenin **Yardım** menüsüne gezinip gezinmediğini söyleyen bir bayrak temizlemek için **WM_INITMENU** kullanılarak gerçekleştirilir. Daha sonra kapsayıcı, kapsayıcının kendisini eklememediği **Yardım** menüsündeki herhangi bir öğeden giriş veya çıkış **WM_MENUSELECT** izler. Girişte, kullanıcının bir nesne menüsüne gezindiği anlamına gelir; bu nedenle kapsayıcı "nesne yardım menüsü" bayrağını ayarlar ve en az bir **WM_MENUSELECT**, **WM_INITMENUPOPUP**ve **WM_COMMAND** iletilerini nesne penceresine iletmek için bu bayrağın durumunu kullanır. (Çıkışta kapsayıcı bayrağı temizler ve bu iletilerin kendisini işler.) Kapsayıcı, `IOleInPlaceActiveObejct::GetWindow` Bu iletilerin hedefi olarak nesnenin işlevinden döndürülen pencereyi kullanmalıdır.
 
-Nesne altıncı öğesinin sıfır algılar, **OLEMENUGROUPWIDTHS**, normal OLE belgeleri kurallara göre geçer. Bu yordamı katılmak kapsayıcıları kapsar **yardımcı** menü desteklemeyenler yanı sıra birleştirme.
+Nesne, **Olemenugroupgenişliklerinin**altıncı öğesinde sıfır algılarsa, normal OLE belgeleri kurallarına göre devam eder. Bu yordam, **Yardım** menüsü birleştirme ve bu olmayanları katılan kapsayıcıları kapsamaktadır.
 
-Nesne çağırdığında `IOleInPlaceFrame::SetMenu`olup birleştirilmiş menü çubuğundan kapsayıcı denetimleri görüntüleme önce **yardımcı** ne kapsayıcıya eklenen ek olarak bir ek alt menüsünde vardır. Bu nedenle, kapsayıcı ayrılırsa, **yardımcı** birleştirilmiş menü çubuğundaki menü. Varsa **yardımcı** ek bir alt menü yok, kapsayıcıyı kaldırır, **yardımcı** birleştirilmiş menü çubuğundan menüsü. Bu yordamı katılan nesneleri kapsayan **yardımcı** menü desteklemeyenler yanı sıra birleştirme.
+Nesne çağırdığında `IOleInPlaceFrame::SetMenu` , birleştirilmiş menü çubuğunu görüntülemeden önce kapsayıcı, **Yardım** menüsünün, kapsayıcının Eklenme yanına ek bir alt menüye sahip olup olmadığını denetler. Bu durumda, kapsayıcı **Yardım** menüsünü birleştirilmiş menü çubuğunda bırakır. **Yardım** menüsünde ek bir alt menü yoksa kapsayıcı, **Yardım** menüsünü birleştirilmiş menü çubuğundan kaldırır. Bu yordamda, **Yardım** menüsü birleştirme ve olmayan nesneler yer almaktadır.
 
-Son olarak, bu menü ayrıştırmak için zamanı geldiğinde, nesne eklenmiş kaldırır **yardımcı** diğer kaldırma yanı sıra menü menüleri eklenmiş. Kapsayıcının menülerini kaldırdığında, Kaldır, **yardımcı** eklenmiş bir menü yanı sıra menü.
+Son olarak, menüyü ne zaman çözeceği, nesne eklenen **Yardım** menüsünü kaldırarak diğer eklenen menüleri kaldırmaya da kaldırılır. Kapsayıcı menülerini kaldırdığında, eklediği diğer menülere ek olarak **Yardım** menüsünü de kaldırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Etkin Belge Kapsayıcıları](../mfc/active-document-containers.md)
+[Etkin Belge Kapsayıcıları](active-document-containers.md)

@@ -11,19 +11,19 @@ helpviewer_keywords:
 - mappings [MFC], messages
 - messages [MFC], mapping
 ms.assetid: 996f0652-0698-4b8c-b893-cdaa836d9d0f
-ms.openlocfilehash: 82c55c82d6b7a3faa65906345137885555a57d08
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 16d6d7725d82bed6c9bfc02e408b68dcf7ffe5e4
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279236"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625501"
 ---
 # <a name="mapping-messages"></a>Eşleme İletileri
 
-İletileri veya komutları alabilir her framework sınıfı olan kendi "ileti eşlemesi." Çerçeve, iletiler ve komutlar bunların işleyici işlevlerine nasıl bağlanacağını ileti eşlemelerini kullanır. Herhangi bir sınıfın türetilmiş sınıftan `CCmdTarget` ileti eşlemesi olabilir. Diğer makaleler ayrıntılı ileti eşlemeleri açıklar ve bunların nasıl kullanılacağını açıklar.
+İleti veya komut alabilen her çerçeve sınıfının kendi "ileti eşlemesi" vardır. Framework, iletileri ve komutları kendi işleyici işlevlerine bağlamak için ileti haritaları kullanır. Sınıfından türetilmiş tüm sınıflar `CCmdTarget` bir ileti eşlemesine sahip olabilir. Diğer makaleler, ileti haritalarını ayrıntılı olarak açıklar ve bunların nasıl kullanılacağını açıklar.
 
-Her ikisi de tanıtıcı eşlemeleri ileti adı "ileti eşlemesi," artma iletileri ve komutları — iletilerinin listelenen üç kategorinin tümü [ileti kategorileri](../mfc/message-categories.md).
+"İleti haritası" adının artma içinde, ileti haritaları her iki iletiyi de ve komutları ( [Ileti kategorilerinde](message-categories.md)listelenen üç ileti kategorisi) işler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
+[Framework'teki İletiler ve Komutlar](messages-and-commands-in-the-framework.md)

@@ -11,66 +11,66 @@ helpviewer_keywords:
 - synchronization classes [MFC], multithreading
 - application support classes [MFC]
 ms.assetid: 3c1d14fd-c35c-48f1-86ce-1e0f9a32c36d
-ms.openlocfilehash: 667725a60fb0c907a9c2d017674f9d097d1f4946
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e64cc50a121f457b7e32e0ed549db2fa9950843
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394682"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619445"
 ---
 # <a name="application-and-thread-support-classes"></a>Uygulama ve İş Parçacığı Destek Sınıfları
 
-Her uygulamanın bir ve yalnızca bir uygulama nesnesi vardır; Bu nesne, çalışan bir program içindeki diğer nesnelerin koordinatları ve türetilen `CWinApp`.
+Her uygulamanın bir ve yalnızca bir uygulama nesnesi vardır; Bu nesne çalışan programdaki diğer nesneleri koordine eder ve öğesinden türetilir `CWinApp` .
 
-Microsoft Foundation Class (MFC) kitaplığı yürütme uygulama içinde birden çok iş parçacığı destekler. Tüm uygulamaların, en az bir iş parçacığı olması gerekir; tarafından kullanılan iş parçacığı, `CWinApp` bu birincil iş parçacığı bir nesnedir.
+Microsoft Foundation Class (MFC) kitaplığı, bir uygulama içinde birden çok yürütme iş parçacığını destekler. Tüm uygulamaların en az bir iş parçacığı olmalıdır; nesneniz tarafından kullanılan iş parçacığı `CWinApp` Bu birincil iş parçacığıdır.
 
-`CWinThread` iş parçacığı özellikleri işletim sisteminin bir bölümünü kapsüller. Birden çok iş parçacığı daha kolay hale getirmek için MFC ayrıca Win32 eşitleme nesneleri için bir C++ arabirim sağlamak üzere nesne sınıfları eşitleme sağlar.
+`CWinThread`işletim sisteminin iş parçacığı oluşturma yeteneklerini bir bölümünü kapsüller. Birden çok iş parçacığını daha kolay hale getirmek için MFC, Win32 eşitleme nesnelerine bir C++ arabirimi sağlamak üzere eşitleme nesnesi sınıfları da sağlar.
 
-## <a name="application-and-thread-classes"></a>Uygulama ve iş parçacığı sınıfları
+## <a name="application-and-thread-classes"></a>Uygulama ve Iş parçacığı sınıfları
 
-[CWinApp](../mfc/reference/cwinapp-class.md)<br/>
-Başlatma, çalıştırmak ve uygulamayı sonlandırmak için kod kapsüller. Uygulama nesnenizin bu sınıftan türetilen.
+[CWinApp](reference/cwinapp-class.md)<br/>
+Uygulamayı başlatmak, çalıştırmak ve sonlandırmak için kodu kapsüller. Uygulama nesneniz bu sınıftan türetilecektir.
 
-[CWinThread](../mfc/reference/cwinthread-class.md)<br/>
-Tüm iş parçacıkları için temel sınıf. Doğrudan kullanın ya da devre dışı bir sınıftan türetilen `CWinThread` , iş parçacığı kullanıcı arabirimi işlevleri uyguluyorsa. `CWinApp` türetilen `CWinThread`.
+[CWinThread](reference/cwinthread-class.md)<br/>
+Tüm iş parçacıkları için temel sınıf. Doğrudan kullanın veya `CWinThread` İş parçacığınıza Kullanıcı arabirimi işlevleri gerçekleştirdiğinde öğesinden bir sınıf türetebilirsiniz. `CWinApp`, öğesinden türetilir `CWinThread` .
 
-## <a name="synchronization-object-classes"></a>Eşitleme nesne sınıfları
+## <a name="synchronization-object-classes"></a>Eşitleme nesnesi sınıfları
 
-[CSyncObject](../mfc/reference/csyncobject-class.md)<br/>
-Eşitleme nesne sınıflarını temel sınıfı.
+[CSyncObject](reference/csyncobject-class.md)<br/>
+Eşitleme nesnesi sınıflarının temel sınıfı.
 
-[CCriticalSection](../mfc/reference/ccriticalsection-class.md)<br/>
-Bir nesneye erişmek için tek bir işlem içinde yalnızca bir iş parçacığına izin veren bir eşitleme sınıfını.
+[Ckritiksection](reference/ccriticalsection-class.md)<br/>
+Tek bir işlem içinde yalnızca bir iş parçacığının bir nesneye erişmesine izin veren bir eşitleme sınıfı.
 
-[CSemaphore](../mfc/reference/csemaphore-class.md)<br/>
-Bir ve aynı anda erişen bir nesne için belirtilen en yüksek sayıda arasında izin veren bir eşitleme sınıfını.
+[Csemafor](reference/csemaphore-class.md)<br/>
+Bir nesne için bir ve belirtilen en fazla eşzamanlı erişim sayısı arasında izin veren bir eşitleme sınıfı.
 
-[CMutex](../mfc/reference/cmutex-class.md)<br/>
-Herhangi bir nesneye erişmek için işlem sayısı içinde yalnızca tek bir iş parçacığı izin veren bir eşitleme sınıfını.
+[CMutex](reference/cmutex-class.md)<br/>
+Bir nesneye erişmek için herhangi bir sayıda işlem içinde yalnızca bir iş parçacığına izin veren bir eşitleme sınıfı.
 
-[CEvent](../mfc/reference/cevent-class.md)<br/>
-Bir uygulama bir olay gerçekleştiğinde bildiren bir eşitleme sınıfını.
+[CEvent](reference/cevent-class.md)<br/>
+Bir olay oluştuğunda uygulamaya bildirimde bulunan bir eşitleme sınıfı.
 
-[CSingleLock](../mfc/reference/csinglelock-class.md)<br/>
-İş parçacığı açısından güvenli sınıfının üye fonksiyonları bir eşitleme nesnesi üzerinde kilitlemek için kullanılır.
+[CSingleLock](reference/csinglelock-class.md)<br/>
+Bir eşitleme nesnesinde kilitlemek için iş parçacığı güvenli sınıflarının üye işlevlerinde kullanılır.
 
-[CMultiLock](../mfc/reference/cmultilock-class.md)<br/>
-İş parçacığı açısından güvenli sınıfının üye fonksiyonları eşitleme nesneleri dizisini bir veya daha fazla eşitleme nesneleri kilitlemek için kullanılır.
+[CMultiLock](reference/cmultilock-class.md)<br/>
+Bir veya daha fazla eşitleme nesnesini bir dizi eşitleme nesnesinden kilitlemek için iş parçacığı güvenli sınıflarının üye işlevlerinde kullanılır.
 
 ## <a name="related-classes"></a>İlgili sınıflar
 
-[CCommandLineInfo](../mfc/reference/ccommandlineinfo-class.md)<br/>
-Komut satırı ile programınızın başlatıldığından ayrıştırır.
+[CCommandLineInfo](reference/ccommandlineinfo-class.md)<br/>
+Programınızın başlatıldığı komut satırını ayrıştırır.
 
-[CWaitCursor](../mfc/reference/cwaitcursor-class.md)<br/>
-Bekleme imlecini ekranın koyar. Uzun işlemler sırasında kullanılır.
+[CWaitCursor](reference/cwaitcursor-class.md)<br/>
+Ekranda bir bekleme imleci koyar. Uzun işlemler sırasında kullanılır.
 
-[CDockState](../mfc/reference/cdockstate-class.md)<br/>
-Kalıcı depolama, yerleştirme denetim çubukları için eyalet verilerini işler.
+[CDockState](reference/cdockstate-class.md)<br/>
+Denetim çubukları için yerleştirme durumu verilerinin kalıcı depolamayı işler.
 
-[CRecentFileList](../mfc/reference/crecentfilelist-class.md)<br/>
-En son kullanılan (MRU) dosya listesi tutar.
+[CRecentFileList](reference/crecentfilelist-class.md)<br/>
+En son kullanılan (MRU) dosya listesini korur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](class-library-overview.md)

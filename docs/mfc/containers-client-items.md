@@ -1,34 +1,34 @@
 ---
-title: 'Kapsayıcılar: İstemci öğeleri'
+title: 'Kapsayıcılar: İstemci Öğeleri'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE containers [MFC], client items
 - client items and OLE containers
 ms.assetid: 231528b5-0744-4f83-8897-083bf55ed087
-ms.openlocfilehash: 0c7f4a63cb9a31b52be2d3574ddad29313df6a4d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ad347c78fb6aa7af94b306a3edb538b9f740c305
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153365"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619013"
 ---
-# <a name="containers-client-items"></a>Kapsayıcılar: İstemci öğeleri
+# <a name="containers-client-items"></a>Kapsayıcılar: İstemci Öğeleri
 
-Bu makalede istemci öğeleri nelerdir anlatılmaktadır ve hangi sınıflar, uygulamanızın istemci öğelerinden türetilmelidir.
+Bu makalede, istemci öğelerinin ne olduğu ve uygulamanızın istemci öğelerini hangi sınıflardan türettikleri açıklanmaktadır.
 
-İstemci öğeleri olan veya bir OLE kapsayıcı uygulamasının belgenin başvurduğu bulunan başka bir uygulamaya ait veri öğelerdir. İstemci öğeleri verisini belgenin içinde yer alan bir parçasıdır; Bu verileri kapsayıcı belgenin başvurduğu başka bir konumda depolanan bağlanır.
+İstemci öğeleri, bir OLE kapsayıcı uygulamasının belgesi tarafından içerilen veya başvurulan başka bir uygulamaya ait olan veri öğeleridir. Verileri belgenin içinde bulunan istemci öğeleri gömülüdür; verileri kapsayıcı belge tarafından başvurulan başka bir konumda depolanan olanlar bağlantılıdır.
 
-Belge sınıfı bir OLE uygulama içindeki sınıftan türetilen [COleDocument](../mfc/reference/coledocument-class.md) yerine `CDocument`. `COleDocument` Sınıfının devraldığı `CDocument` tabanlı uygulamalar üzerinde hangi MFC belge/görünüm mimarisi kullanmak için gerekli tüm işlevleri. `COleDocument` Ayrıca bir belge koleksiyonu olarak değerlendirir bir arabirim tanımlar `CDocItem` nesneleri. Birkaç `COleDocument` üye işlevleri, ekleme, alma, o koleksiyonun öğeleri silme için sağlanır.
+Bir OLE uygulamasındaki belge sınıfı, yerine sınıf [ortak belgesinden](reference/coledocument-class.md) türetilir `CDocument` . `COleDocument`Sınıfı, `CDocument` MFC uygulamalarının temel aldığı belge/görünüm mimarisini kullanmak için gereken tüm işlevlerden devralır. `COleDocument`Ayrıca, bir belgeyi bir nesne koleksiyonu olarak ele alan bir arabirim tanımlar `CDocItem` . `COleDocument`Bu koleksiyonun öğelerinin eklenmesi, alınması ve silinmesi için çeşitli üye işlevleri sağlanır.
 
-Her kapsayıcı uygulaması en az bir sınıftan türetilmelidir `COleClientItem`. Bu sınıfın nesneleri, gömülü veya bağlantılı hale OLE belge öğeleri temsil eder. Belge silinmeden bu nesneler, içeren belge ömrünü için mevcut.
+Her kapsayıcı uygulaması, öğesinden en az bir sınıf türetmelidir `COleClientItem` . Bu sınıfın nesneleri, OLE belgesinde ekli veya bağlanmış öğeleri temsil eder. Bu nesneler, belgeden silinmedikleri takdirde, bunları içeren belgenin ömrü için mevcuttur.
 
-`CDocItem` temel sınıfı olan `COleClientItem` ve `COleServerItem`. Bu iki türetilen sınıfların nesnelerini sırasıyla OLE öğesini ve istemci ve sunucu uygulamaları arasındaki aracılar gibi davranır. Yeni bir OLE öğesi belge için eklenen MFC çerçevesi, istemci uygulamanızın yeni bir nesne ekler `COleClientItem`-türetilmiş sınıf için belgenin koleksiyonunu `CDocItem` nesneleri.
+`CDocItem`, ve için temel sınıftır `COleClientItem` `COleServerItem` . Bu iki nesneden türetilmiş sınıfların nesneleri, sırasıyla OLE öğesi ile istemci ve sunucu uygulamaları arasında aracılar olarak davranır. Belgeye her yeni OLE öğesi eklendiğinde, MFC çerçevesi, istemci uygulamanızın türetilmiş sınıfının yeni bir nesnesini `COleClientItem` belgenin nesne koleksiyonuna ekler `CDocItem` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kapsayıcılar](../mfc/containers.md)<br/>
-[Kapsayıcılar: Bileşik dosyalar](../mfc/containers-compound-files.md)<br/>
-[Kapsayıcılar: Kullanıcı arabirimi sorunları](../mfc/containers-user-interface-issues.md)<br/>
-[Kapsayıcılar: Gelişmiş Özellikler](../mfc/containers-advanced-features.md)<br/>
-[COleClientItem Sınıfı](../mfc/reference/coleclientitem-class.md)<br/>
-[COleServerItem Sınıfı](../mfc/reference/coleserveritem-class.md)
+[Kapsayıcılar](containers.md)<br/>
+[Kapsayıcılar: Bileşik Dosyalar](containers-compound-files.md)<br/>
+[Kapsayıcılar: Kullanıcı Arabirimi Sorunları](containers-user-interface-issues.md)<br/>
+[Kapsayıcılar: Gelişmiş Özellikler](containers-advanced-features.md)<br/>
+[Colet Clienentidıtem sınıfı](reference/coleclientitem-class.md)<br/>
+[Cotaserverıtem sınıfı](reference/coleserveritem-class.md)

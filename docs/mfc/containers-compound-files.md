@@ -14,77 +14,77 @@ helpviewer_keywords:
 - OLE containers [MFC], compound files
 - access modes for files [MFC]
 ms.assetid: 8b83cb3e-76c8-4bbe-ba16-737092b36f49
-ms.openlocfilehash: 98166a355fd267ecbec0a7f0cc1d18fd0b2e7cd0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 344c444602555e2b5c145e58d237586199b9e1ed
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81353583"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84624814"
 ---
 # <a name="containers-compound-files"></a>Kapsayıcılar: Bileşik Dosyalar
 
-Bu makalede, bileşik dosyaların bileşenleri ve uygulanması ve OLE uygulamalarınızda bileşik dosyaları kullanmanın avantajları ve dezavantajları açıklanmaktadır.
+Bu makalede, bileşik dosyaların bileşenleri ve uygulamaları ile OLE uygulamalarınızda bileşik dosyaları kullanmanın avantajları ve dezavantajları açıklanmaktadır.
 
-Bileşik dosyalar OLE'nin ayrılmaz bir parçasıdır. Veri aktarımına ve OLE belge depolamasını kolaylaştırmak için kullanılırlar. Bileşik dosyalar, Etkin yapılandırılmış depolama modelinin bir uygulamasıdır. Depolama, akış veya dosya nesnesine serileştirmeyi destekleyen tutarlı arabirimler vardır. Bileşik dosyalar Microsoft Hazırlık Sınıf Kitaplığı'nda `COleStreamFile` `COleDocument`sınıflar tarafından desteklenir ve .
+Birleşik dosyalar OLE 'nin ayrılmaz bir parçasıdır. Veri aktarımını ve OLE belge depolamayı kolaylaştırmak için kullanılırlar. Bileşik dosyalar, etkin yapılandırılmış depolama modelinin bir uygulamasıdır. Depolamaya, akışa veya dosya nesnesine Serileştirmeyi destekleyen tutarlı arabirimler vardır. Bileşik dosyalar, Microsoft Foundation Class Kitaplığı ve sınıfları tarafından desteklenir `COleStreamFile` `COleDocument` .
 
 > [!NOTE]
-> Bileşik dosya kullanmak, bilgilerin bir OLE belgesinden veya bileşik belgeden geldiği anlamına gelmez. Bileşik dosyalar, bileşik belgeleri, OLE belgelerini ve diğer verileri depolamanın yollarından yalnızca biridir.
+> Bileşik bir dosyanın kullanılması, bilgilerin bir OLE belgesinden veya bileşik bir belgeden geldiğini göstermez. Bileşik dosyalar, Birleşik belgeleri, OLE belgelerini ve diğer verileri depolamanın yalnızca biridir.
 
-## <a name="components-of-a-compound-file"></a><a name="_core_components_of_a_compound_file"></a>Bileşik Dosyanın Bileşenleri
+## <a name="components-of-a-compound-file"></a><a name="_core_components_of_a_compound_file"></a>Bileşik bir dosyanın bileşenleri
 
-Bileşik dosyaların OLE uygulaması üç nesne türü kullanır: akış nesneleri, depolama nesneleri ve `ILockBytes` nesneler. Bu nesneler, standart bir dosya sisteminin bileşenlerine aşağıdaki şekillerde benzer:
+Bileşik dosyaların OLE uygulamasında üç nesne türü kullanılmaktadır: Stream nesneleri, depolama nesneleri ve `ILockBytes` nesneler. Bu nesneler, standart dosya sisteminin bileşenlerine benzer ve aşağıdaki yollarla benzerdir:
 
-- Dosyaları gibi nesneleri akışı, herhangi bir türde veri depolamak.
+- Dosyalar gibi akış nesneleri, herhangi bir türdeki verileri depolar.
 
-- Dizinler gibi depolama nesneleri diğer depolama ve akış nesneleri içerebilir.
+- Dizinler gibi depolama nesneleri, diğer depolama ve akış nesneleri içerebilir.
 
-- `LockBytes`nesneler, depolama nesneleri ve fiziksel donanım arasındaki arabirimi temsil eder. Gerçek baytların, sabit disk veya genel `LockBytes` bellek alanı gibi nesnenin erişen depolama aygıtına nasıl yazıldığını belirlerler. Nesneler ve `LockBytes` `ILockBytes` arayüz hakkında daha fazla bilgi için *OLE Programcısının Başvurusu'na*bakın.
+- `LockBytes`nesneler, depolama nesneleri ile fiziksel donanım arasındaki arabirimi temsil eder. Gerçek baytların, `LockBytes` bir sabit sürücü veya küresel bellek alanı gibi, nesnenin eriştiği depolama cihazına nasıl yazıldığını belirlarlar. Nesneler ve arabirim hakkında daha fazla bilgi için `LockBytes` `ILockBytes` bkz. *OLE Programcı başvurusu*.
 
-## <a name="advantages-and-disadvantages-of-compound-files"></a><a name="_core_advantages_and_disadvantages_of_compound_files"></a>Bileşik Dosyaların Avantajları ve Dezavantajları
+## <a name="advantages-and-disadvantages-of-compound-files"></a><a name="_core_advantages_and_disadvantages_of_compound_files"></a>Bileşik dosyaların avantajları ve dezavantajları
 
-Bileşik dosyalar, daha önceki dosya depolama yöntemleriyle kullanılamayan avantajlar sağlar. Şunları içerir:
+Bileşik dosyalar, daha önceki dosya depolama yöntemleriyle sunulan avantajlar sağlar. Bunlara aşağıdakiler dahildir:
 
 - Artımlı dosya erişimi.
 
 - Dosya erişim modları.
 
-- Dosya yapısının standardizasyonu.
+- Dosya yapısını standartlaştırın.
 
-Disketlerde depolamayla ilgili büyük boyut ve performans sorunları olan bileşik dosyaların olası dezavantajları, uygulamanızda kullanıp kullanmamaya karar verirken göz önünde bulundurulmalıdır.
+Bileşik dosyaların olası dezavantajları — disketlerde depolama ile ilgili büyük boyut ve performans sorunları — bu uygulamaları uygulamanızda kullanıp kullanmayacağınızı saptarken göz önünde bulundurulmalıdır.
 
-### <a name="incremental-access-to-files"></a><a name="_core_incremental_access_to_files"></a>Dosyalara Artımlı Erişim
+### <a name="incremental-access-to-files"></a><a name="_core_incremental_access_to_files"></a>Dosyalara artımlı erişim
 
-Dosyalara artımlı erişim, bileşik dosyaları kullanmanın otomatik bir avantajıdır. Bileşik dosya "dosya içindeki dosya sistemi" olarak görüntülenebildiği için, akış veya depolama gibi tek tek nesne türlerine, dosyanın tamamını yüklemeye gerek kalmadan erişilebilir. Bu, bir uygulamanın kullanıcı tarafından düzenlemek için yeni nesnelere erişmesi gereken süreyi önemli ölçüde azaltabilir. Aynı konsepte dayanan artımlı güncelleme benzer avantajlar sunar. OLE, yalnızca tek bir nesnede yapılan değişiklikleri kaydetmek için tüm dosyayı kaydetmek yerine yalnızca kullanıcı tarafından düzenlenen akışı veya depolama nesnesini kaydeder.
+Dosyalara artımlı erişim, bileşik dosyaları kullanmanın otomatik avantajıdır. Bileşik bir dosya bir "dosya içinde dosya sistemi" olarak görüntülenebildiğinden, dosyanın tamamı yüklenmeye gerek kalmadan Stream veya Storage gibi tekil nesne türlerine erişilebilir. Bu, bir uygulamanın kullanıcı tarafından düzenlenmek üzere yeni nesnelere erişmesi için gereken süreyi önemli ölçüde azaltabilir. Aynı kavramı temel alan artımlı güncelleştirme, benzer avantajlar sunmaktadır. OLE, tek bir nesneye yapılan değişiklikleri kaydetmek için dosyanın tamamını kaydetmek yerine yalnızca Kullanıcı tarafından düzenlenen akışı veya depolama nesnesini kaydeder.
 
-### <a name="file-access-modes"></a><a name="_core_file_access_modes"></a>Dosya Erişim Modları
+### <a name="file-access-modes"></a><a name="_core_file_access_modes"></a>Dosya erişim modları
 
-Bileşik dosyadaki nesnelerdeki değişikliklerin diske ne zaman kaydedildiğini belirleyebilmek, bileşik dosyaları kullanmanın başka bir yararıdır. Dosyalara erişilen ve doğrudan olarak erişilen mod, değişikliklerin ne zaman kaydedildiğini belirler.
+Bileşik bir dosyadaki nesnelerde yapılan değişikliklerin diske ne zaman yürütüldüğü, bileşik dosyaları kullanmanın başka bir avantajı olduğunu tespit edebiliyor. Değişikliklerin ne zaman işleneceğini, işlenen ya da doğrudan olan dosyaların eriştiği moda belirler.
 
-- İşlenen mod, bileşik dosyadaki nesnelerde değişiklik yapmak için iki aşamalı bir işleme işlemi kullanır ve bu nedenle kullanıcı değişiklikleri kaydetmeyi veya geri almayı seçene kadar belgenin hem eski hem de yeni kopyalarını kullanılabilir tutar.
+- İşlem temelli mod, bileşik bir dosyadaki nesnelerde değişiklik yapmak için iki aşamalı bir işleme işlemi kullanır, böylece Kullanıcı değişiklikleri kaydetmeyi veya geri almayı seçinceye kadar belgenin hem eski hem de yeni kopyalarının kullanılabilmesini sağlar.
 
-- Doğrudan mod, daha sonra geri alma olanağı olmadan, yapılan değişiklikleri belgeye dahil eder.
+- Doğrudan mod, değişiklikleri, daha sonra geri alma özelliği olmadan, belgede yapılan değişikliklerle birleştirir.
 
-Erişim modları hakkında daha fazla bilgi için *OLE Programcısının Başvurusu'na*bakın.
+Erişim modları hakkında daha fazla bilgi için bkz. *OLE Programcı başvurusu*.
 
-### <a name="standardization"></a><a name="_core_standardization"></a>Standardizasyon
+### <a name="standardization"></a><a name="_core_standardization"></a>Sürecinden
 
-Bileşik dosyaların standartlaştırılmış yapısı, farklı OLE uygulamalarının, dosyayı oluşturan uygulama hakkında hiçbir bilgi sahibi olmadan OLE uygulamanız tarafından oluşturulan bileşik dosyalara göz atmasına olanak tanır.
+Bileşik dosyaların standartlaştırılmış yapısı, farklı OLE uygulamalarının, dosyayı gerçekten oluşturan uygulamayla ilgili hiçbir bilgi olmadan OLE uygulamanız tarafından oluşturulan bileşik dosyalara gözatmasına olanak tanır.
 
-### <a name="size-and-performance-considerations"></a><a name="_core_size_and_performance_considerations"></a>Boyut ve Performans Hususları
+### <a name="size-and-performance-considerations"></a><a name="_core_size_and_performance_considerations"></a>Boyut ve performans konuları
 
-Bileşik dosya depolama yapısının karmaşıklığı ve verileri artımlı olarak kaydetme özelliği nedeniyle, bu biçimi kullanan dosyalar, yapılandırılmamış veya "düz dosya" depolama alanını kullanarak diğer dosyalardan daha büyük olma eğilimindedir. Uygulamanız sık sık dosyaları yükler ve kaydederse, bileşik dosyaları kullanmak dosya boyutunun bileşik olmayan dosyalardan çok daha hızlı artmasına neden olabilir. Bileşik dosyalar büyük olabileceğinden, disketlerde depolanan ve yüklenen dosyaların erişim süresi de etkilenebilir ve bu da dosyalara daha yavaş erişim sağlar.
+Bileşik dosya depolama yapısının karmaşıklığı ve verileri artımlı olarak kaydetme yeteneği nedeniyle, bu biçimi kullanan dosyalar, yapılandırılmamış veya "düz dosya" depolama alanı kullanılarak diğer dosyalardan daha büyük olur. Uygulamanız sıklıkla dosya yüklerse ve kaydederse, bileşik dosyaları kullanmak dosya boyutunun, bileşik olmayan dosyalardan çok daha hızlı artmasına neden olabilir. Bileşik dosyalar büyük olabileceğinden, disketlerden depolanan ve bu disklere yüklenen dosyalar için erişim süresi de etkilenebilir, böylece dosyalara daha yavaş erişim elde edilir.
 
-Performansı etkileyen bir diğer sorun bileşik dosya parçalanmasıdır. Bileşik dosyanın boyutu, dosya tarafından kullanılan ilk ve son disk sektörleri arasındaki farka göre belirlenir. Parçalanmış bir dosya, veri içermeyen, ancak boyutu hesaplarken sayılan birçok boş alan alanı içerebilir. Bileşik dosyanın ömrü boyunca, bu alanlar depolama nesnelerinin eklenmesi veya silinmesi ile oluşturulur.
+Performansı etkileyen bir diğer sorun da bileşik dosya parçalanması ' dir. Bileşik bir dosyanın boyutu, dosya tarafından kullanılan ilk ve son disk kesimleri arasındaki farka göre belirlenir. Parçalanmış bir dosya, veri içermeyen çok sayıda boş alan içerebilir, ancak boyut hesaplanırken sayılır. Bileşik bir dosyanın ömrü boyunca, bu bölgeler depolama nesneleri ekleme veya silme işlemi tarafından oluşturulur.
 
-## <a name="using-compound-files-format-for-your-data"></a><a name="_core_using_compound_files_format_for_your_data"></a>Verileriniz için Bileşik Dosya Biçimini Kullanma
+## <a name="using-compound-files-format-for-your-data"></a><a name="_core_using_compound_files_format_for_your_data"></a>Verileriniz için bileşik dosya biçimi kullanma
 
-Türetilen bir belge sınıfı olan bir `COleDocument`uygulamayı başarıyla oluşturduktan sonra, ana belge oluşturucunun aramayaptığından `EnableCompoundFile`emin olun. Uygulama sihirbazı OLE kapsayıcı uygulamaları oluşturduğunda, bu çağrı sizin için eklenir.
+Öğesinden türetilmiş bir belge sınıfına sahip olan bir uygulamayı başarıyla oluşturduktan sonra `COleDocument` , ana belge oluşturucunun çağrı yapıldığından emin olun `EnableCompoundFile` . Uygulama Sihirbazı OLE kapsayıcı uygulamaları oluşturduğunda, bu çağrı sizin için eklenir.
 
-*OLE Programcı'nın Referans*, [IStream](/windows/win32/api/objidl/nn-objidl-istream)bakın , [IStorage](/windows/win32/api/objidl/nn-objidl-istorage), ve [ILockBytes](/windows/win32/api/objidl/nn-objidl-ilockbytes).
+*OLE programcı başvurusunda*, bkz. [IStream](/windows/win32/api/objidl/nn-objidl-istream), [Isstorage](/windows/win32/api/objidl/nn-objidl-istorage)ve [ılockbayt](/windows/win32/api/objidl/nn-objidl-ilockbytes).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kapsayıcılar](../mfc/containers.md)<br/>
-[Kapsayıcılar: Kullanıcı Arabirimi Sorunları](../mfc/containers-user-interface-issues.md)<br/>
-[COleStreamFile Sınıfı](../mfc/reference/colestreamfile-class.md)<br/>
-[COleDocument Sınıfı](../mfc/reference/coledocument-class.md)
+[Kapsayıcılar](containers.md)<br/>
+[Kapsayıcılar: Kullanıcı Arabirimi Sorunları](containers-user-interface-issues.md)<br/>
+[Cotastreamfile sınıfı](reference/colestreamfile-class.md)<br/>
+[COleDocument Sınıfı](reference/coledocument-class.md)

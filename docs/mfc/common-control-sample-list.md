@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - sample applications [MFC], common controls
 ms.assetid: 8ae39e2d-12a8-4b17-909d-5bf155749123
-ms.openlocfilehash: c4de0dcfdfe66ab645126d9b0960406a324772bf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ce7638404faa1421a5af7358972ce86463509459
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388740"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619298"
 ---
 # <a name="common-control-sample-list"></a>Ortak Denetim Örneği Listesi
 
-Ortak Denetimler gösteren aşağıdaki örnek programlardan bakın:
+Ortak denetimleri gösteren aşağıdaki örnek programlara bakın:
 
 - [CMNCTRL1](../overview/visual-cpp-samples.md)
 
@@ -23,4 +23,4 @@ Ortak Denetimler gösteren aşağıdaki örnek programlardan bakın:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Denetimler](../mfc/controls-mfc.md)
+[Denetimler](controls-mfc.md)
