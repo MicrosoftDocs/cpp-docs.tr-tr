@@ -8,32 +8,32 @@ helpviewer_keywords:
 - containers [MFC], OLE container applications
 - containers [MFC], container applications
 ms.assetid: b19d7c05-4d02-44bd-b76a-4a6c25994a62
-ms.openlocfilehash: 35416025339b8fc059ed44b2b3c55d9c38d18570
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a76bc9775e13350a031539c63476a4a8fae68ed0
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153014"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84620642"
 ---
 # <a name="containers"></a>Kapsayıcılar
 
-Bir kapsayıcı uygulaması kendi belgelerine gömülü veya bağlantılı öğeleri içeren bir uygulamadır. Yönetilen bir kapsayıcı uygulama tarafından belgeleri depolamak ve OLE bileşik belge bileşenlerinin yanı sıra uygulama tarafından oluşturulan verileri görüntülemek kurabilmesi gerekir. Kapsayıcılı bir uygulama kullanıcıların yeni öğeler eklemek veya mevcut öğeleri düzenlemek de izin vermeniz gerekir.
+Kapsayıcı uygulama, katıştırılmış veya bağlantılı öğeleri kendi belgelerine birleştiresağlayan bir uygulamadır. Bir kapsayıcı uygulaması tarafından yönetilen belgeler, OLE bileşik belge bileşenlerinin yanı sıra uygulamanın kendisi tarafından oluşturulan verileri depolayıp görüntüleyebilmelidir. Bir kapsayıcı uygulaması ayrıca kullanıcıların yeni öğe eklemesine veya varolan öğeleri düzenlemesine izin vermelidir.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Bir kapsayıcı uygulama](../mfc/containers-implementing-a-container.md)
+[Kapsayıcı uygulama](containers-implementing-a-container.md)
 
-[Kapsayıcı istemci öğeleri](../mfc/containers-client-items.md)
+[Kapsayıcı Istemci öğeleri](containers-client-items.md)
 
-[Bileşik dosyalarını kullan](../mfc/containers-compound-files.md)
+[Bileşik dosyaları kullanma](containers-compound-files.md)
 
-[Kapsayıcı kullanıcı arabirimi sorunları](../mfc/containers-user-interface-issues.md)
+[Kapsayıcı kullanıcı arabirimi sorunları](containers-user-interface-issues.md)
 
-[Kapsayıcıları'nın Gelişmiş özelliklerine](../mfc/containers-advanced-features.md)
+[Kapsayıcıların gelişmiş özellikleri](containers-advanced-features.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE](../mfc/ole-in-mfc.md)<br/>
-[Sunucular](../mfc/servers.md)<br/>
-[Etkinleştirme](../mfc/activation-cpp.md)<br/>
-[Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)
+[OLE](ole-in-mfc.md)<br/>
+[Sunucular](servers.md)<br/>
+[Etkinleştirme](activation-cpp.md)<br/>
+[Menüler ve kaynaklar (OLE)](menus-and-resources-ole.md)

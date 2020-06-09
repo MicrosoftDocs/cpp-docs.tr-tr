@@ -7,27 +7,27 @@ helpviewer_keywords:
 - CWnd objects [MFC]
 - CWnd objects [MFC], creating
 ms.assetid: f5ff91a6-4069-47d7-9177-1e6c80d3792c
-ms.openlocfilehash: 606593e3700f04972e031ef43eba0a7e8c134e79
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fbaad1b973ce944d94dd61bcd368f13e85d73261
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62241954"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626503"
 ---
 # <a name="creating-windows"></a>Pencereler Oluşturma
 
-Framework, bir çerçeve programında ihtiyacınız windows çoğunu otomatik olarak oluşturur. [Belge/görünüm oluşturma](../mfc/document-view-creation.md) framework belgeler ve görünümler ile ilişkili çerçeve pencereleri nasıl oluşturduğunu göstermektedir. Ancak, kendi windows oluşturabileceğiniz özel amacıyla — görünümleri çerçeve pencereleri veya kendi alt pencereleri de dahil olmak üzere — framework tarafından sağlanan windows yanı sıra.
+Framework, bir çerçeve programında ihtiyacınız olan pencerelerin çoğunu otomatik olarak oluşturur. [Belge/görünüm oluşturma](document-view-creation.md) , çerçevenin belgeler ve görünümler ile ilişkili çerçeve pencerelerini nasıl oluşturduğunu gösterir. Ancak özel amaçlar için, çerçeve tarafından sağlanan pencerelerin yanı sıra kendi Windows veya görünümlerinin kendi alt pencereleri de dahil olmak üzere kendi Windows uygulamanızı oluşturabilirsiniz.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Pencere "sınıflarını" kaydetme](../mfc/registering-window-classes.md) (aksine, C++ pencere nesneleri)
+- [Pencere "sınıfları" kaydediliyor](registering-window-classes.md) (C++ pencere nesnelerinin aksine)
 
-- [Genel pencere oluşturma dizisi](../mfc/general-window-creation-sequence.md)
+- [Genel pencere oluşturma sırası](general-window-creation-sequence.md)
 
-- [Pencere nesnelerini yok etme](../mfc/destroying-window-objects.md)
+- [Pencere nesnelerini yok etme](destroying-window-objects.md)
 
-- [Pencere nesneleriyle çalışma](../mfc/working-with-window-objects.md)
+- [Pencere nesneleriyle çalışma](working-with-window-objects.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pencere Nesneleri](../mfc/window-objects.md)
+[Pencere nesneleri](window-objects.md)

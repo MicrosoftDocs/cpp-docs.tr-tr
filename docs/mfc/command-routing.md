@@ -8,12 +8,12 @@ helpviewer_keywords:
 - handlers, command [MFC]
 - command routing
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
-ms.openlocfilehash: 8d1e1e59c56439c01655a1416df645ccc6922411
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: e47ffd38b342301da32abae9690738ef83c0426b
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907627"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84620687"
 ---
 # <a name="command-routing"></a>Komut Yönlendirme
 
@@ -31,18 +31,18 @@ Farklı komut hedefi sınıfları, kendi ileti haritalarını farklı zamanlarda
 
 Bu yönlendirme mekanizması, işleyicinizin bir komuta yanıt olarak ne kadar pahalı olduğuna kıyasla, yönlendirmenin maliyeti düşüktür. Framework 'ün yalnızca Kullanıcı bir kullanıcı arabirimi nesnesiyle etkileşime geçtiğinde komutlar ürettiğini göz önünde bulundurun.
 
-### <a name="_core_standard_command_route"></a>Standart komut yolu
+### <a name="standard-command-route"></a><a name="_core_standard_command_route"></a>Standart komut yolu
 
-|Bu türden bir nesne bir komut aldığında. biçimindeki telefon numarasıdır. biçimindeki telefon numarasıdır.|Kendisine ve diğer komut hedefi nesnelerine bu sırada komutu işleme şansı verir:|
+|Bu türden bir nesne bir komut aldığında. . .|Kendisine ve diğer komut hedefi nesnelerine bu sırada komutu işleme şansı verir:|
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-|MDI çerçevesi penceresi (`CMDIFrameWnd`)|1.  Bkz`CMDIChildWnd`<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|
-|Belge çerçevesi penceresi (`CFrameWnd`, `CMDIChildWnd`)|1.  Etkin görünüm<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|
-|Görüntüle|1.  Bu görünüm<br />2.  Görünüme eklenen belge|
-|Belge|1.  Bu belge<br />2.  Belgeye iliştirilmiş belge şablonu|
-|İletişim kutusu|1.  Bu iletişim kutusu<br />2.  İletişim kutusunun sahibi olan pencere<br />3.  Uygulama (`CWinApp` nesne)|
+|MDI çerçevesi penceresi ( `CMDIFrameWnd` )|1. etkin`CMDIChildWnd`<br />2. bu çerçeve penceresi<br />3. uygulama ( `CWinApp` nesne)|
+|Belge çerçevesi penceresi ( `CFrameWnd` , `CMDIChildWnd` )|1. etkin görünüm<br />2. bu çerçeve penceresi<br />3. uygulama ( `CWinApp` nesne)|
+|Görüntüle|1. Bu görünüm<br />2. görünüme Ekli belge|
+|Belge|1. Bu belge<br />2. belgeye ekli belge şablonu|
+|İletişim kutusu|1. bu iletişim kutusu<br />2. iletişim kutusunun sahibi olan pencere<br />3. uygulama ( `CWinApp` nesne)|
 
 Yukarıdaki tablonun ikinci sütununda numaralandırılmış girişlerin bir belge gibi diğer nesnelerden bahsetme yeri, ilk sütunda karşılık gelen öğeye bakın. Örneğin, görünümün bir komutu belgeye iletme ikinci sütununda okuduğunuzda, yönlendirmeyi daha fazla izlemek için ilk sütundaki "belge" girdisine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
+[Çerçeve bir Işleyiciyi nasıl çağırır](how-the-framework-calls-a-handler.md)

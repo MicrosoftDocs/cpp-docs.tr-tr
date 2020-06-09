@@ -6,25 +6,25 @@ helpviewer_keywords:
 - image lists [MFC], creating for CListCtrl
 - lists [MFC], image
 ms.assetid: c2768515-deba-49e8-a6f3-5be6482afb19
-ms.openlocfilehash: 440ab6fdfe7663557f6c6a6607e617c793d26674
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bbba01a6a8e08ea53e164656733aa06e03dd87a7
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371582"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625946"
 ---
 # <a name="creating-the-image-lists"></a>Görüntü Listelerini Oluşturma
 
-[CListView](../mfc/reference/clistview-class.md) veya [CListCtrl'i](../mfc/reference/clistctrl-class.md)kullanıp kullanmadığınız da resim listeleri oluşturmakla aynıdır.
+Görüntü listelerinin oluşturulması, [Clienstview](reference/clistview-class.md) veya [CListCtrl](reference/clistctrl-class.md)tuşlarını kullanmanıza bakılmaksızın aynıdır.
 
 > [!NOTE]
-> Yalnızca liste denetiminiz stili içeriyorsa resim listelerine `LVS_ICON` ihtiyacınız vardır.
+> Yalnızca liste denetiminiz stili içeriyorsa, görüntü listelerine ihtiyacınız vardır `LVS_ICON` .
 
-Bir `CImageList` veya daha fazla resim listesi oluşturmak için sınıfı kullanın (tam boyutlu simgeler, küçük simgeler ve durumlar için). [CImageList'e](../mfc/reference/cimagelist-class.md)bakın ve Windows SDK'daki [Liste Görünümü Resim Listeleri'ne](/windows/win32/Controls/using-list-view-controls) bakın.
+`CImageList`Bir veya daha fazla görüntü listesi oluşturmak için sınıfı kullanın (tam boyutlu simgeler, küçük simgeler ve durumlar için). Bkz. [CImageList](reference/cimagelist-class.md)ve Windows SDK [liste görünümü görüntü listeleri](/windows/win32/Controls/using-list-view-controls) .
 
-[CListCtrl'i arayın::Her](../mfc/reference/clistctrl-class.md#setimagelist) resim listesi için SetImageList; uygun `CImageList` nesneye bir işaretçi geçirin.
+Her görüntü listesi için [Clienstctrl:: SetImageList](reference/clistctrl-class.md#setimagelist) ' i çağırın; uygun nesneye bir işaretçi geçirin `CImageList` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CListCtrl Kullanma](../mfc/using-clistctrl.md)<br/>
-[Denetimler](../mfc/controls-mfc.md)
+[CListCtrl Kullanma](using-clistctrl.md)<br/>
+[Denetimler](controls-mfc.md)

@@ -8,18 +8,18 @@ helpviewer_keywords:
 - stdext::allocator_chunklist
 - stdext::allocators [C++], allocator_chunklist
 ms.assetid: ea72ed0a-dfdb-4c8b-8096-e4baf567b80f
-ms.openlocfilehash: 46ae9c613b66e00658f09ad10f33b721c6948ff7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: c2342d068293714871b3f79675dd0d0b9db83448
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456419"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84617538"
 ---
-# <a name="allocatorchunklist-class"></a>allocator_chunklist Sınıfı
+# <a name="allocator_chunklist-class"></a>allocator_chunklist Sınıfı
 
-[Cache_chunklist](../standard-library/cache-chunklist-class.md)türünde bir önbellek kullanarak nesneler için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlar.
+[Cache_chunklist](cache-chunklist-class.md)türünde bir önbellek kullanarak nesneler için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Type>
@@ -34,14 +34,14 @@ class allocator_chunklist;
 
 ## <a name="remarks"></a>Açıklamalar
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) makrosu, bu sınıfı aşağıdaki deyimdeki *Name* parametresi olarak geçirir:`ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`
+[ALLOCATOR_DECL](allocators-functions.md#allocator_decl) makro bu sınıfı aşağıdaki deyimdeki *Name* parametresi olarak geçirir:`ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<ayrıcılar >
+**Üst bilgi:**\<allocators>
 
 **Ad alanı:** stdext
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<ayrıcılar >](../standard-library/allocators-header.md)
+[\<allocators>](allocators-header.md)

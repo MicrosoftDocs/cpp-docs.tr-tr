@@ -6,12 +6,12 @@ helpviewer_keywords:
 - database classes [MFC]
 - file classes [MFC]
 ms.assetid: 580b169c-e26e-4395-b128-5408d08c98fe
-ms.openlocfilehash: 0996810a2af835c5c98a4f3311d2411466d43583
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 8874b9f99d3a5756b4ce66e2f5732f856bdd7078
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442394"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84622626"
 ---
 # <a name="file-and-database-classes"></a>Dosya ve Veritabanı Sınıfları
 
@@ -19,14 +19,14 @@ Bu sınıflar, bir veritabanına veya disk dosyasına bilgi depolamanıza olanak
 
 Aşağıdaki sınıf kategorileri veri kalıcılığını destekler.
 
-- [Dosya g/ç sınıfları](../mfc/file-i-o-classes.md)
+- [Dosya g/ç sınıfları](file-i-o-classes.md)
 
-- [OLE DB Sınıfları](../mfc/ole-db-classes.md)
+- [OLE DB sınıfları](ole-db-classes.md)
 
-- [DAO Sınıfları](../mfc/dao-classes.md)
+- [DAO Sınıfları](dao-classes.md)
 
-- [ODBC Sınıfları](../mfc/odbc-classes.md)
+- [ODBC Sınıfları](odbc-classes.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](class-library-overview.md)

@@ -6,41 +6,41 @@ helpviewer_keywords:
 - Windows common controls [MFC], about common controls
 - common controls [MFC], about common controls
 ms.assetid: a252acad-3cc0-440e-bbc6-43eaaf8cb7bb
-ms.openlocfilehash: 6a31c783e19603eadb90fd0e6be99ff55f4eaeb7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f5fcb15a0cb7e336f6c818eb39b271f5f6e74af5
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62352183"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84621348"
 ---
 # <a name="making-and-using-controls"></a>Denetimleri Yapma ve Kullanma
 
-Çoğu denetim iletişim kutuları için Visual c++'ta yaptığınız [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md). Ancak herhangi bir iletişim kutusu veya pencere denetimleri de oluşturabilirsiniz.
+Visual C++ [iletişim kutusu düzenleyicisinde](../windows/dialog-editor.md)birçok iletişim kutusu denetimi yaparsınız. Ancak, herhangi bir iletişim kutusu veya penceresinde denetimler de oluşturabilirsiniz.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Bir iletişim kutusunda ortak denetimleri kullanma](../mfc/using-common-controls-in-a-dialog-box.md)
+- [İletişim kutusunda ortak denetimleri kullanma](using-common-controls-in-a-dialog-box.md)
 
-- [Denetim eklemek için iletişim kutusu düzenleyicisini kullanma](../mfc/using-the-dialog-editor-to-add-controls.md)
+- [Denetim eklemek için iletişim kutusu düzenleyicisini kullanma](using-the-dialog-editor-to-add-controls.md)
 
-- [El ile denetim ekleme](../mfc/adding-controls-by-hand.md) (olmadan iletişim kutusu Düzenleyicisi)
+- [El ile denetim ekleme](adding-controls-by-hand.md) (iletişim kutusu Düzenleyicisi olmadan)
 
-- [Standart bir denetimden denetim türetme](../mfc/deriving-controls-from-a-standard-control.md)
+- [Standart denetimden denetim türetme](deriving-controls-from-a-standard-control.md)
 
-- [Bir ortak denetimi alt pencere olarak kullanma](../mfc/using-a-common-control-as-a-child-window.md)
+- [Bir ortak denetimi alt pencere olarak kullanma](using-a-common-control-as-a-child-window.md)
 
-- [Ortak denetimlerden bildirim alma](../mfc/receiving-notification-from-common-controls.md)
+- [Ortak denetimlerden bildirim alma](receiving-notification-from-common-controls.md)
 
-- [İletişim Kutusu Veri Değişimi ve Doğrulaması](../mfc/dialog-data-exchange-and-validation.md)
+- [İletişim Kutusu Veri Değişimi ve Doğrulaması](dialog-data-exchange-and-validation.md)
 
-- [Kod Sihirbazları Kullanarak Denetimlere Tür Kullanımı Uyumlu Erişim](../mfc/type-safe-access-to-controls-with-code-wizards.md)
+- [Kod sihirbazları Ile denetimlere tür kullanımı uyumlu erişim](type-safe-access-to-controls-with-code-wizards.md)
 
-- Tek denetimleri: bkz [denetimleri](../mfc/controls-mfc.md) bağlantıları tüm ortak denetimleri için
+- Bireysel denetimler: tüm ortak denetimlerin bağlantıları için bkz. [denetimler](controls-mfc.md)
 
-- [İletişim kutuları](../mfc/dialog-boxes.md)
+- [İletişim kutuları](dialog-boxes.md)
 
-- [İletişim kutusu çubukları](../mfc/dialog-bars.md)
+- [İletişim çubukları](dialog-bars.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Denetimler](../mfc/controls-mfc.md)
+[Denetimler](controls-mfc.md)

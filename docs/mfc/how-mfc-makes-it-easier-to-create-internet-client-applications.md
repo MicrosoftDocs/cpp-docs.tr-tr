@@ -6,32 +6,32 @@ helpviewer_keywords:
 - Internet applications [MFC], MFC
 - MFC, Internet applications
 ms.assetid: 94437b3f-f15c-437d-b5fd-264a2efec9ab
-ms.openlocfilehash: ffeed3a844fb86acf1bf8c5181c59529824c27f9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 71b72a3079cd0d0c87289c1813c09a24d9f75c89
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405761"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84618552"
 ---
 # <a name="how-mfc-makes-it-easier-to-create-internet-client-applications"></a>MFC'nin Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması
 
-Microsoft Foundation sınıfları MFC programcıları için tanıdık bir bağlam sağlar bir şekilde Win32 Internet uzantısı (WinINet) işlevleri kapsüller. MFC üç Internet dosya sınıfları sağlar ([Cınternetfile](../mfc/reference/cinternetfile-class.md), [CHttpFile](../mfc/reference/chttpfile-class.md), ve [CGopherFile](../mfc/reference/cgopherfile-class.md)) türetilen [CStdioFile](../mfc/reference/cstdiofile-class.md) sınıfı . Yalnızca bu alma ve Internet veri düzenleme kullanmış olan programcıları sınıflarının `CStdioFile` bu sınıfların ancak yerel dosyaları için yerel dosya ve Internet dosyaları tutarlı ve şeffaf bir biçimde işleyebilirsiniz.
+Microsoft Foundation Sınıfları, Win32 Internet Uzantısı (WinInet) işlevlerini MFC programcıları için tanıdık bir bağlam sağlayan bir şekilde kapsüller. MFC, [CStdioFile](reference/cstdiofile-class.md) sınıfından türetilmiş üç Internet dosya sınıfı ([CInternetFile](reference/cinternetfile-class.md), [CHttpFile](reference/chttpfile-class.md)ve [CGopherFile](reference/cgopherfile-class.md)) sağlar. Bu sınıfların değil, yerel dosyalar için kullanılan programcılar hakkında tanıdık Internet verilerini alma ve düzenleme `CStdioFile` , ancak bu sınıflarla, yerel dosyaları ve Internet dosyalarını tutarlı ve saydam bir şekilde idare edebilirsiniz.
 
-MFC WinINet sınıfları aynı işlevleri sağlar `CStdioFile` Internet üzerinden aktarılan veriler için. Bu sınıfların bir üst düzey uygulama programlama arabirimi, uygulamaların Internet uyumlu hale getirme için hızlı ve kolay bir yol sağlayan HTTP, FTP ve gopher Internet protokolleri soyut. Örneğin, bir FTP sunucusuna bağlanan yine de düşük bir düzeyde birkaç adım gerektirir, ancak bir MFC geliştirici olarak, yalnızca bir çağrı yapmak ihtiyacınız `CInternetSession::GetFTPConnection` bu bağlantıyı oluşturmak için.
+MFC WinInet sınıfları, `CStdioFile` Internet üzerinden aktarılan veriler için aynı işlevleri sağlar. Bu sınıflar, uygulamaların Internet 'e duyarlı hale getirilmesi için hızlı ve kolay bir yol sağlayarak HTTP, FTP ve gopher için Internet protokollerini üst düzey bir uygulama programlama arabirimine soyutlar. Örneğin, bir FTP sunucusuna bağlanmak yine de düşük düzeyde birkaç adım gerektirir, ancak MFC geliştiricisi olarak bu bağlantıyı oluşturmak için yalnızca bir çağrısı yapmanız gerekir `CInternetSession::GetFTPConnection` .
 
-Ayrıca, MFC WinINet sınıfları aşağıdaki avantajları sağlar:
+Ayrıca, MFC WinInet sınıfları aşağıdaki avantajları sağlar:
 
-- Arabelleğe alınan g/ç
+- Arabellekli g/ç
 
-- Verileriniz için tür açısından güvenli tanıtıcıları
+- Verileriniz için tür açısından güvenli tutamaçlar
 
-- Birçok işlev için varsayılan parametreleri
+- Birçok işlev için varsayılan parametreler
 
-- Özel durum için genel Internet hatalarını işleme
+- Yaygın Internet hataları için özel durum işleme
 
-- Otomatik temizleme açık tanıtıcıları ve bağlantılar
+- Açık tutamaçlar ve bağlantıları otomatik temizleme
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)
+[Win32 Internet Uzantıları (Winınet)](win32-internet-extensions-wininet.md)<br/>
+[Winınet 'in Internet Istemci uygulamaları oluşturmayı kolaylaştırması](how-wininet-makes-it-easier-to-create-internet-client-applications.md)

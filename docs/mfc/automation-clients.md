@@ -7,39 +7,39 @@ helpviewer_keywords:
 - type libraries, Automation clients
 - clients
 ms.assetid: 84e34a79-06f6-4752-a33b-ae0ede1d8ecf
-ms.openlocfilehash: 098c41ea981d9d0069130d5439632aa7b0d6cbbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c34f6fccd06635dfb686e6eb1f2cf895bb86989
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254368"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626077"
 ---
 # <a name="automation-clients"></a>Otomasyon İstemcileri
 
-Otomasyon, uygulamanız nesneleri başka bir uygulamaya uygulanan değiştirmek ya da bunlar işlenebilir nesneleri kullanıma sunmak için mümkün kılar. Bir otomasyon istemci, sunulan nesneleri başka bir uygulamaya ait işleyebileceğiniz bir uygulamadır. Nesneleri ortaya koyan uygulamayı Otomasyon sunucusu olarak adlandırılır. İstemci, sunucu uygulamasının nesneleri bu nesnelerin özellikleri ve işlevleri erişerek yönetir.
+Otomasyon, uygulamanızın başka bir uygulamada uygulanan nesneleri işlemesini veya işlenebilmeleri için nesneleri kullanıma sunmasını mümkün kılar. Otomasyon istemcisi, başka bir uygulamaya ait gösterilen nesneleri işleyebileceğiniz bir uygulamadır. Nesneleri kullanıma sunan uygulamaya Otomasyon sunucusu denir. İstemci, bu nesnelerin özelliklerine ve işlevlerine erişerek sunucu uygulamasının nesnelerini yönetir.
 
-### <a name="types-of-automation-clients"></a>Otomasyon istemcileri türleri
+### <a name="types-of-automation-clients"></a>Otomasyon Istemcilerinin türleri
 
-Otomasyon istemcileri iki tür vardır:
+İki tür Otomasyon istemcisi vardır:
 
-- İstemciler, dinamik olarak (çalışma zamanında) işlem sunucusunun ve özellikleri hakkında bilgi edinin.
+- Dinamik olarak (çalışma zamanında) istemci, sunucunun özellikleri ve işlemleri hakkında bilgi elde edin.
 
-- Özellik ve sunucu işlemlerini belirtir (derleme zamanında sağlanan) statik bilgilerini sahip istemcilerin.
+- Sunucusunun özelliklerini ve işlemlerini belirten statik bilgilere (derleme sırasında sağlanmış) sahip istemciler.
 
-İlk tür istemcileri OLE sistemin sorgulayarak sunucunun yöntemleri ve özellikleri hakkında bilgi edinme `IDispatch` mekanizması. Dinamik istemciler için yeterli olmakla `IDispatch` temelli gerekir bilinir, nesneleri derleme zamanı burada statik istemciler için kullanılacak zordur. Statik bağlı istemciler için Microsoft Foundation sınıfları sağlayan [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md) sınıfı.
+İlk türdeki istemciler, OLE sisteminin mekanizmasını sorgulayarak sunucunun yöntemleri ve özellikleri hakkında bilgi elde edin `IDispatch` . Dinamik istemciler için kullanılması yeterlidir, ancak, `IDispatch` yürütülen nesnelerin derleme zamanında bilinmesi gereken statik istemciler için kullanılması zordur. Statik bağlantılı istemciler için, Microsoft Foundation sınıfları [Cotadispatchdriver](reference/coledispatchdriver-class.md) sınıfını sağlar.
 
-Statik bağlı istemciler, istemci uygulaması ile statik olarak bağlanan bir proxy sınıfı kullanır. Bu sınıf, bir tür kullanımı uyumlu C++ kapsülleme sunucu uygulamasının özellikleri ve işlemleri sağlar.
+Statik bağlı istemciler, istemci uygulamasıyla statik olarak bağlanmış bir proxy sınıfı kullanır. Bu sınıf, sunucu uygulamasının özelliklerini ve işlemlerini bir tür açısından güvenli C++ kapsüllemesini sağlar.
 
-Sınıf `COleDispatchDriver` asıl otomasyon istemci tarafı desteği sağlar. Kullanarak **Yeni Öğe Ekle** iletişim kutusu, türetilen bir sınıf oluşturma `COleDispatchDriver`.
+Sınıfı, `COleDispatchDriver` otomasyonun istemci tarafı için sorumlu desteği sağlar. **Yeni öğe Ekle** iletişim kutusunu kullanarak öğesinden türetilmiş bir sınıf oluşturursunuz `COleDispatchDriver` .
 
-Ardından sunucu uygulamasının nesnesinin işlevlerini ve özelliklerini açıklayan tür kitaplığı dosyası belirtin. Öğe Ekle iletişim kutusunda bu dosyasını okur ve oluşturur `COleDispatchDriver`-türetilmiş bir tür kullanımı uyumlu şekilde sunucu uygulamasının nesnelerinin C++ erişmek için uygulamanızı çağırabilir üye işlevleri ile bir sınıf. Ek işlevler öğesinden devralınan `COleDispatchDriver` uygun Otomasyon sunucusu çağırma işlemini basitleştirir.
+Ardından, sunucu uygulamasının nesnesinin özelliklerini ve işlevlerini açıklayan tür kitaplığı dosyasını belirtirsiniz. Öğe Ekle iletişim kutusu bu dosyayı okur ve `COleDispatchDriver` uygulama işlevleri ile türetilmiş bir sınıf oluşturur ve uygulamanızın C++ içindeki nesne nesnelerine tür kullanımı açısından güvenli bir şekilde erişmesini çağırabilir. Kaynağından devralınan ek işlevler `COleDispatchDriver` , doğru Otomasyon sunucusunu çağırma sürecini basitleştirir.
 
-### <a name="handling-events-in-automation-clients"></a>Otomasyon istemcileri olayları işleme
+### <a name="handling-events-in-automation-clients"></a>Otomasyon Istemcilerinde olayları işleme
 
-Otomasyon istemcinizi olayları işlemek istiyorsanız, bir havuzu arabirimini eklemeniz gerekir. MFC ActiveX denetimleri için havuz arabirimler, ancak diğer COM sunucuları için desteklemiyor için sihirbaz desteği sağlar.
+Otomasyon istemcinizdeki olayları işlemek istiyorsanız, bir havuz arabirimi eklemeniz gerekir. MFC, ActiveX denetimlerine yönelik havuz arabirimlerini eklemek için sihirbaz desteği sağlar, ancak diğer COM sunucuları için desteklenmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Otomasyon istemcileri: Tür kitaplıklarını kullanma](../mfc/automation-clients-using-type-libraries.md)<br/>
-[Otomatikleştirme](../mfc/automation.md)<br/>
-[MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md)
+[Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma](automation-clients-using-type-libraries.md)<br/>
+[Otomasyon](automation.md)<br/>
+[MFC Uygulama Sihirbazı](reference/mfc-application-wizard.md)

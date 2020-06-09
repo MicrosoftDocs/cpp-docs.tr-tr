@@ -10,34 +10,34 @@ helpviewer_keywords:
 - functions [MFC], handler
 - messages [MFC], Windows
 ms.assetid: 19412a8b-2c38-4502-81da-13c823c7e36c
-ms.openlocfilehash: 9a136caf3a1d22151cb9cfd48e1cd3f999ab51ec
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 190acd619224bdf22a5c8d35f541fa48b6664fe1
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370495"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84625750"
 ---
 # <a name="handlers-for-standard-windows-messages"></a>Standart Windows İletileri İşleyicileri
 
-Standart Windows iletileri **(WM_)** için varsayılan işleyicileri sınıfta `CWnd`önceden tanımlanır. Sınıf kitaplığı, ileti adına bu işleyicilerin adlarını temel adatır. Örneğin, **WM_PAINT** iletisinin işleyicisi `CWnd` aşağıdaki şekilde bildirilir:
+Standart Windows iletileri (**WM_**) için varsayılan işleyiciler sınıfında önceden tanımlanmıştır `CWnd` . Sınıf kitaplığı bu işleyicilerin adlarını ileti adında temel alır. Örneğin, **WM_PAINT** iletinin işleyicisi `CWnd` şöyle olarak bildirilmiştir:
 
 `afx_msg void OnPaint();`
 
-**afx_msg** anahtar kelimesi, işleyicileri **virtual** diğer `CWnd` üye işlevlerden ayırarak C++ sanal anahtar kelimesinin etkisini önerir. Ancak, bu işlevlerin aslında sanal olmadığını unutmayın; bunun yerine ileti haritaları aracılığıyla uygulanır. İleti eşlemleri yalnızca standart önişlemci makrolarına bağlıdır, C++ dilinin uzantılarına değil. anahtar kelime **nin afx_msg,** ön işleme den sonra beyaz alana gider.
+**Afx_msg** anahtar sözcüğü, diğer üye işlevlerinden işleyicileri ayırt ederek C++ **sanal** anahtar sözcüğünün etkisini önerir `CWnd` . Ancak, bu işlevlerin gerçekten sanal olmadığına not edin; Bunlar bunun yerine ileti haritaları aracılığıyla uygulanır. İleti haritaları, C++ dilinin uzantılarına değil yalnızca standart Önişlemci makrolarına bağımlıdır. **Afx_msg** anahtar sözcüğü, ön işlemden sonra boşluk olarak çözümlenmektedir.
 
-Taban sınıfta tanımlanan bir işleyiciyi geçersiz kılmak için, türemiş sınıfınızda aynı prototipe sahip bir işlev tanımlayın ve işleyici için bir ileti eşlemi girişi yapın. İşleyiciniz, sınıfınızın temel sınıflarından herhangi birinde aynı adı taşıyan herhangi bir işleyiciyi "geçersiz kılar".
+Temel sınıfta tanımlanan bir işleyiciyi geçersiz kılmak için, türetilmiş sınıfınıza aynı prototipi içeren bir işlev tanımlamanız ve işleyici için bir ileti eşleme girişi yapmanız yeterlidir. İşleyiciniz, sınıfınızın temel sınıflarından birinde aynı ada sahip herhangi bir işleyiciyi geçersiz kılar.
 
-Bazı durumlarda, işleyiciniz taban sınıf(es) ve Windows'un iletiüzerinde çalışabilmesi için alt sınıftaki geçersiz kılınan işleyiciyi çağırmalıdır. Geçersiz kılmada taban sınıf işleyiciyi çağırdığınız yer koşullara bağlıdır. Bazen taban sınıf işleyicisini ilk ve bazen son olarak aramanız gerekir. İletiyi kendiniz işlememeyi seçerseniz, bazen taban sınıf işleyicisini koşullu olarak çağırırsınız. Bazen taban sınıf işleyicisini aramalı, ardından taban sınıf işleyicisi tarafından döndürülen değer e veya duruma bağlı olarak kendi işleyici kodunuzu koşullu olarak çalıştırmalısınız.
+Bazı durumlarda işleyiciniz temel sınıfta geçersiz kılınan işleyiciyi çağırmalıdır, böylece temel sınıf (ler) ve Windows ileti üzerinde çalışabilir. Geçersiz kılmada temel sınıf işleyicisini çağırdığınızda, koşullara göre değişir. Bazen temel sınıf işleyicisini önce ve bazen son olarak çağırmanız gerekir. Bazen iletiyi kendiniz işleyememesi tercih ediyorsanız, temel sınıf işleyicisini koşullu olarak çağırabilirsiniz. Bazen temel sınıf işleyicisini çağırmanız ve temel sınıf işleyici tarafından döndürülen değere veya duruma bağlı olarak kendi işleyici kodunuzu koşullu olarak yürütmeniz gerekir.
 
 > [!CAUTION]
-> Bir taban sınıf işleyicisine geçirmek niyetindeyseniz, işleyiciye geçirilen bağımsız değişkenleri değiştirmek güvenli değildir. Örneğin, `OnChar` işleyicinin *nChar* bağımsız değişkenini değiştirmek isteyebilirsiniz (örneğin büyük harfe dönüştürmek için). Bu davranış oldukça belirsizdir, ancak bu etkiyi `CWnd` gerçekleştirmeniz `SendMessage` gerekiyorsa, bunun yerine üye işlevi kullanın.
+> Bir temel sınıf işleyicisine geçirmek istiyorsanız, bir işleyiciye geçirilen bağımsız değişkenlerin değiştirilmesi güvenli değildir. Örneğin, işleyicinin *nchar* bağımsız değişkenini `OnChar` (örneğin, büyük harfe dönüştürülecek şekilde) değiştirmeyi düşünebilirsiniz. Bu davranış oldukça gizdir, ancak bu etkiyi gerçekleştirmeniz gerekiyorsa, `CWnd` bunun yerine Member işlevini kullanın `SendMessage` .
 
-Sınıf [Sihirbazı](reference/mfc-class-wizard.md) belirli bir ileti için işleyici işlevinin iskeletini yazdığında belirli bir iletiyi geçersiz kılmanın uygun yolunu nasıl belirlersiniz - örneğin `OnCreate` **WM_CREATE**için bir işleyici - önerilen geçersiz kılınan üye işlev biçiminde çizim yapar. Aşağıdaki örnek, işleyicinin önce taban sınıf işleyicisini aramasını ve yalnızca -1'i döndürmemesi koşuluyla devam etmesini önerir.
+[Sınıf Sihirbazı](reference/mfc-class-wizard.md) belirli bir ileti için işleyici işlevinin iskelet 'i (WM_CREATE için bir işleyici) yazdığında, belirli bir iletiyi geçersiz kılmak için uygun şekilde nasıl belirlenir `OnCreate` , örneğin, önerilen **WM_CREATE**geçersiz kılınan üye işlev biçiminde bir taslak oluşturur. Aşağıdaki örnek, işleyicinin temel sınıf işleyicisini ilk kez çağırmasını ve yalnızca-1 döndürmediğinden önce devam etmesini önerir.
 
-[!code-cpp[NVC_MFCMessageHandling#3](../mfc/codesnippet/cpp/handlers-for-standard-windows-messages_1.cpp)]
+[!code-cpp[NVC_MFCMessageHandling#3](codesnippet/cpp/handlers-for-standard-windows-messages_1.cpp)]
 
-Kural olarak, bu işleyicilerin adları "A) öneki yle başlar. Bu işleyicilerin bazıları hiçbir argüman almak, diğerleri birkaç alır. Bazıları da **boşluk**dışında bir dönüş türü var. Tüm **WM_** iletilerinin varsayılan işleyicileri *MFC Başvurusu'nda* adları "A) ile başlayan sınıfın `CWnd` üye işlevleri olarak belgelenir. Üye işlev bildirimleri `CWnd` **afx_msg**ile önceden belirlenmiştir.
+Kurala göre, bu işleyicilerin adları "açık" önekiyle başlar. Bu işleyicilerden bazıları bağımsız değişken almaz, diğerleri birkaç işlem sürer. Bazıları **void**dışında bir dönüş türüne de sahiptir. Tüm **WM_** iletiler için varsayılan Işleyiciler *MFC başvurusunda* `CWnd` adı "on" ile başlayan sınıfın üye işlevleri olarak belgelenmiştir. İçindeki üye işlev bildirimlerine `CWnd` **afx_msg**ön eki eklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İleti İşleyici İşlevlerini Bildirme](../mfc/declaring-message-handler-functions.md)
+[İleti İşleyici İşlevlerini Bildirme](declaring-message-handler-functions.md)

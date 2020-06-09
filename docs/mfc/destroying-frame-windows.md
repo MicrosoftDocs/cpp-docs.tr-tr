@@ -15,25 +15,25 @@ helpviewer_keywords:
 - OnClose method [MFC]
 - PostNcDestroy method [MFC]
 ms.assetid: 5affca77-1999-4507-a2b2-9aa226611b4b
-ms.openlocfilehash: b64298bd2b0f14c30c824d78947a17628adec8b5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4bc7945ecd9aee9021ce97fa3ea05f512c58fe20
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394643"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84621927"
 ---
 # <a name="destroying-frame-windows"></a>Çerçeve Pencerelerini Yok Etme
 
-Pencere yok etme ve bunun yanı sıra oluşturmak için bu pencerelerde framework belgeler ve görünümler ile ilişkili MFC çerçevesi yönetir. Ek windows oluşturursanız, bu yok etme için sorumlu olursunuz.
+MFC çerçevesi, pencere yok etme ve çerçeve belgeleri ve görünümleriyle ilişkili pencereler için oluşturma işlemlerini yönetir. Ek pencereler oluşturursanız, bunları yok etmek sizin sorumluluğunuzdadır.
 
-Kullanıcı, pencerenin varsayılan çerçeve penceresi kapandığında Framework'teki [OnClose](../mfc/reference/cwnd-class.md#onclose) işleyicisi çağrılarını [DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow). Windows penceresini yok edildiğinde adlı son bir üye işlevidir [OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy), bazı temizleme işlemleri yapar, çağıran [varsayılan](../mfc/reference/cwnd-class.md#default) üye Windows temizleme işlemini gerçekleştirmek için işlevi ve son olarak çağırır sanal üye işlevi [PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy). [CFrameWnd](../mfc/reference/cframewnd-class.md) uygulaması `PostNcDestroy` C++ pencere nesnesi siler. C++ hiçbir zaman kullanmalısınız **Sil** bir çerçeve penceresinde işleci. Bunun yerine `DestroyWindow` kullanın.
+Çerçevede, Kullanıcı çerçeve penceresini kapattığında, pencerenin varsayılan [OnClose](reference/cwnd-class.md#onclose) Işleyicisi, [DestroyWindow](reference/cwnd-class.md#destroywindow)'u çağırır. Windows penceresi yok edildiğinde çağrılan son üye işlevi [OnNcDestroy](reference/cwnd-class.md#onncdestroy), bazı temizleme işlemleri yapar, Windows CleanUp işlemini gerçekleştirmek için [varsayılan](reference/cwnd-class.md#default) üye işlevini çağırır ve son olarak [PostNcDestroy](reference/cwnd-class.md#postncdestroy)sanal üye işlevini çağırır. ' In [CFrameWnd](reference/cframewnd-class.md) uygulamasının `PostNcDestroy` C++ pencere nesnesini silmesi. Bir çerçeve penceresinde C++ **Delete** işlecini asla kullanmamalısınız. Bunun yerine `DestroyWindow` kullanın.
 
-Ana pencere kapandığında uygulamayı kapatır. Kaydedilmemiş belgeler var. değişiklik yapılırsa, framework belgeleri kaydedilen istemek için bir ileti kutusu görüntüler ve ilgili belgelere gerekirse kaydedilmesini sağlar.
+Ana pencere kapandığında uygulama kapanır. Kaydedilmemiş belgeler varsa, çerçeve, belgelerin kaydedilip kaydedilmemesini istemek için bir ileti kutusu görüntüler ve gerekirse uygun belgelerin kaydedilmesini sağlar.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Belge çerçeve pencereleri oluşturma](../mfc/creating-document-frame-windows.md)
+- [Belge çerçeve pencereleri oluşturma](creating-document-frame-windows.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
+[Çerçeve pencerelerini kullanma](using-frame-windows.md)

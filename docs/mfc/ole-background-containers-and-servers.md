@@ -1,5 +1,5 @@
 ---
-title: 'OLE arka planı: Kapsayıcılar ve sunucular'
+title: 'OLE Arka Planı: Kapsayıcılar ve Sunucular'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE full-server applications [MFC]
@@ -14,30 +14,30 @@ helpviewer_keywords:
 - containers [MFC], OLE container applications
 - server applications [MFC]
 ms.assetid: dafbb31d-096c-4654-b774-12900d832919
-ms.openlocfilehash: c154562e58cf8f37d77df61556fe25b19ca54c70
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 7c3130ab9d8dff6551ef0ecbec43e5422dbdc4c4
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346105"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84617905"
 ---
-# <a name="ole-background-containers-and-servers"></a>OLE arka planı: Kapsayıcılar ve sunucular
+# <a name="ole-background-containers-and-servers"></a>OLE Arka Planı: Kapsayıcılar ve Sunucular
 
-Bir kapsayıcı uygulaması kendi belgelerine gömülü veya bağlantılı öğeleri içeren bir uygulamadır. Yönetilen bir kapsayıcı uygulama tarafından belgeleri depolamak ve OLE belge bileşenlerinin yanı sıra uygulama tarafından oluşturulan verileri görüntülemek kurabilmesi gerekir. Kapsayıcılı bir uygulama kullanıcıların yeni öğeler eklemek veya mevcut öğeleri sunucu uygulamaları gerektiğinde etkinleştirerek düzenlemek de izin vermeniz gerekir. Bir kapsayıcı uygulaması kullanıcı arabirimi gereksinimlerini makalesinde listelenen [kapsayıcıları: Kullanıcı arabirimi sorunları](../mfc/containers-user-interface-issues.md).
+Kapsayıcı uygulama, katıştırılmış veya bağlantılı öğeleri kendi belgelerine birleştiresağlayan bir uygulamadır. Bir kapsayıcı uygulaması tarafından yönetilen belgeler, OLE belge bileşenlerinin yanı sıra uygulamanın kendisi tarafından oluşturulan verileri de depolayıp görüntüleyebilmelidir. Bir kapsayıcı uygulama, kullanıcıların gerektiğinde sunucu uygulamalarını etkinleştirerek yeni öğe eklemesine veya varolan öğeleri düzenlemesine izin vermelidir. Bir kapsayıcı uygulamasının Kullanıcı arabirimi gereksinimleri, makale [kapsayıcıları: Kullanıcı arabirimi sorunları](containers-user-interface-issues.md)bölümünde listelenmiştir.
 
-Sunucu uygulama veya bileşen uygulama kapsayıcı uygulamalar tarafından kullanılmak OLE belge bileşenleri oluşturan bir uygulamadır. Sunucu uygulamaları, genellikle sürükleyin ve bırakın veya bir kapsayıcı uygulaması verileri gömülü veya bağlantılı bir öğe olarak ekleyebilirsiniz. böylece kendi verilerini panoya kopyalanırken destekler. Bir uygulama bir kapsayıcı hem bir sunucu olabilir.
+Sunucu uygulaması veya bileşen uygulaması, kapsayıcı uygulamaları tarafından kullanılmak üzere OLE belge bileşenleri oluşturabileceğiniz bir uygulamadır. Sunucu uygulamaları genellikle, bir kapsayıcı uygulamanın verileri katıştırılmış veya bağlantılı bir öğe olarak ekleyebilmesi için verileri sürükleyip Pano 'ya kopyalamayı destekler. Bir uygulama hem kapsayıcı hem de sunucu olabilir.
 
-Çoğu sunucuları, tek başına uygulamalar veya tam sunucuları olan; Bunlar, ya da tek başına uygulamalar olarak çalıştırılabilir veya bir kapsayıcı uygulama tarafından başlatılabilir. Bir miniserver, yalnızca bir kapsayıcı tarafından başlatılabilen sunucu uygulaması özel türüdür. Tek başına bir uygulama olarak çalıştırılamaz. Microsoft Draw ve Microsoft Graph sunucuları miniservers örnekleridir.
+Çoğu sunucu tek başına uygulamalardır veya tam sunuculardır; Bunlar, tek başına uygulamalar olarak çalıştırılabilir veya bir kapsayıcı uygulaması tarafından başlatılabilir. Minıver, yalnızca bir kapsayıcı tarafından başlatılabilen özel bir tür sunucu uygulamasıdır. Tek başına bir uygulama olarak çalıştırılamaz. Microsoft Draw ve Microsoft Graph sunucular, minıse örnekleri örneğidir.
 
-Kapsayıcılar ve sunucular doğrudan iletişim kurmaz. Bunun yerine, OLE Sistem dinamik bağlantı kitaplıklarını (DLL) iletişim kurarlar. Bu DLL'leri kapsayıcılar ve sunucular çağıran İşlevler, ve kapsayıcılar ve sunucular DLL'leri Çağırma geri çağırma işlevleri sağlar.
+Kapsayıcılar ve sunucular doğrudan iletişim kurmaz. Bunun yerine, OLE sistemi dinamik bağlantı kitaplıkları (DLL) üzerinden iletişim kurar. Bu dll 'Ler kapsayıcıları ve sunucuları çağıran işlevleri sağlar ve kapsayıcılar ve sunucular dll 'Lerin çağırdığını geri çağırma işlevlerini sağlar.
 
-Bunun anlamı iletişimi kullanarak, bir kapsayıcı sunucu uygulamasının uygulama ayrıntıları bilmeniz gerekmez. Sunucu ile çalışabilir türlerini tanımlamak zorunda kalmadan herhangi bir sunucu tarafından oluşturulan öğeler kabul etmek bir kapsayıcı sağlar. Sonuç olarak, bir kapsayıcı uygulamasının kullanıcı gelecekteki uygulamalar ve veri biçimleri yararlanabilirsiniz. Bu yeni uygulamalar OLE bileşenleri, bileşik bir belgeye bu uygulamaları tarafından oluşturulan öğeleri dahil etmek mümkün olacaktır.
+Bu iletişim bu şekilde kullanıldığında, bir kapsayıcının sunucu uygulamasının uygulama ayrıntılarını bilmeleri gerekmez. Bir kapsayıcının, üzerinde çalıştığı sunucu türlerini tanımlamak zorunda kalmadan herhangi bir sunucu tarafından oluşturulan öğeleri kabul etmesine izin verir. Sonuç olarak, bir kapsayıcı uygulamasının kullanıcısı gelecekteki uygulamalardan ve veri biçimlerinden faydalanabilir. Bu yeni uygulamalar OLE bileşenleriniz ise, bileşik bir belge bu uygulamalar tarafından oluşturulan öğeleri birleştirebilecektir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE Arka Planı](../mfc/ole-background.md)<br/>
-[OLE Arka Planı: MFC Uygulama](../mfc/ole-background-mfc-implementation.md)<br/>
-[Kapsayıcılar](../mfc/containers.md)<br/>
-[Sunucular](../mfc/servers.md)<br/>
-[Kapsayıcılar: İstemci Öğeleri](../mfc/containers-client-items.md)<br/>
-[Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)
+[OLE arka planı](ole-background.md)<br/>
+[OLE Arka Planı: MFC Uygulaması](ole-background-mfc-implementation.md)<br/>
+[Kapsayıcılar](containers.md)<br/>
+[Sunucular](servers.md)<br/>
+[Kapsayıcılar: İstemci Öğeleri](containers-client-items.md)<br/>
+[Sunucular: Sunucu Öğeleri](servers-server-items.md)

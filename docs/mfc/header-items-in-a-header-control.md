@@ -7,29 +7,29 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC], header items in
 - controls [MFC], header
 ms.assetid: ac79ef1f-a671-4ab2-93e9-b1aa016a48bf
-ms.openlocfilehash: 31b6bcb134b62fc11df78a846b3c256a2ef69c14
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a70d1d9225d2ac8ef2f7ed3ad9f603a64a937bc7
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62240003"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84620099"
 ---
 # <a name="header-items-in-a-header-control"></a>Üstbilgi Denetimindeki Üstbilgi Öğeleri
 
-Görünümünü ve davranışını bir üst bilgi denetimini oluşturan üstbilgi öğeleri üzerinde önemli ölçüde denetiminiz ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)). Her üst öğesi, bir dize, bir bit eşlemli görüntüsü, bir görüntüden ilişkili görüntü listesi veya ilişkili bir uygulama tanımlı 32-bit değeri olabilir. Dize, bit eşlem ya da görüntü başlık öğesinde görüntülenir.
+Üst bilgi denetimi oluşturan üst bilgi öğelerinin görünümü ve davranışı üzerinde önemli bir denetiminiz vardır ([CHeaderCtrl](reference/cheaderctrl-class.md)). Her üst bilgi öğesinde bir dize, bir bit eşlenmiş görüntü, ilişkili görüntü listesinden bir resim veya onunla ilişkili uygulama tanımlı 32 bitlik bir değer olabilir. Dize, bit eşlem veya görüntü üstbilgi öğesinde görüntülenir.
 
-Bir çağrı yaparak oluşturulduğunda, yeni öğe içeriği ve görünümü özelleştirebilirsiniz [CHeaderCtrl::InsertItem](../mfc/reference/cheaderctrl-class.md#insertitem) veya çağrısı ile var olan bir öğe değiştirerek [CHeaderCtrl::GetItem](../mfc/reference/cheaderctrl-class.md#getitem) ve [ CHeaderCtrl::SetItem](../mfc/reference/cheaderctrl-class.md#setitem).
+Yeni öğelerin görünümünü ve içeriğini bir çağrı [CHeaderCtrl:: InsertItem](reference/cheaderctrl-class.md#insertitem) yaparak ya da var olan bir öğeyi değiştirerek, [CHeaderCtrl:: GetItem](reference/cheaderctrl-class.md#getitem) ve [CHeaderCtrl:: SetItem](reference/cheaderctrl-class.md#setitem)çağrısıyla özelleştirebilirsiniz.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Üstbilgi öğesinin görünümünü özelleştirme](../mfc/customizing-the-header-item-s-appearance.md)
+- [Üstbilgi öğesinin görünümünü özelleştirme](customizing-the-header-item-s-appearance.md)
 
-- [Üstbilgi denetimindeki öğeleri sıralama](../mfc/ordering-items-in-the-header-control.md)
+- [Üstbilgi denetimindeki öğeleri sıralama](ordering-items-in-the-header-control.md)
 
-- [Üstbilgi öğeleri için sürükle ve bırak desteği sağlama](../mfc/providing-drag-and-drop-support-for-header-items.md)
+- [Üst bilgi öğeleri için sürükle ve bırak desteği sağlama](providing-drag-and-drop-support-for-header-items.md)
 
-- [Üstbilgi denetimleriyle görüntü listeleri kullanma](../mfc/using-image-lists-with-header-controls.md)
+- [Başlık denetimleriyle birlikte görüntü listeleri kullanma](using-image-lists-with-header-controls.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CHeaderCtrl Kullanma](../mfc/using-cheaderctrl.md)
+[CHeaderCtrl Kullanma](using-cheaderctrl.md)

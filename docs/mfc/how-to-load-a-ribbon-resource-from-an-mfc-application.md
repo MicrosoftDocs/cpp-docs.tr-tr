@@ -1,29 +1,29 @@
 ---
-title: 'Nasıl yapılır: Bir MFC uygulamasından Şerit kaynağı yükleme'
+title: 'Nasıl yapılır: Bir MFC Uygulamasından Şerit Kaynağı Yükleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ribbon resource [MFC], loading
 ms.assetid: 1c76bb8f-6345-414a-9f3f-128815ceadc5
-ms.openlocfilehash: b7691d4168101209b0e2d2500012a2b4a8e47788
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 47a3b94bbcb14c6c2923524db1f6a83b687e50e8
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160334"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84626410"
 ---
-# <a name="how-to-load-a-ribbon-resource-from-an-mfc-application"></a>Nasıl yapılır: Bir MFC uygulamasından Şerit kaynağı yükleme
+# <a name="how-to-load-a-ribbon-resource-from-an-mfc-application"></a>Nasıl yapılır: Bir MFC Uygulamasından Şerit Kaynağı Yükleme
 
-Şerit kaynağını kullanmak için Şerit kaynağı yükleme için değiştirin.
+Uygulamanızda şerit kaynağını kullanmak için, şerit kaynağını yüklemek üzere uygulamayı değiştirin.
 
-### <a name="to-load-a-ribbon-resource"></a>Bir Şerit kaynağı yükleme için
+### <a name="to-load-a-ribbon-resource"></a>Şerit kaynağı yüklemek için
 
-1. Bildirme `Ribbon Control` nesnesine `CMainFrame` sınıfı.
+1. `Ribbon Control`Sınıfında nesnesini bildirin `CMainFrame` .
 
 ```
     CMFCRibbonBar m_wndRibbonBar;
 ```
 
-1. İçinde `CMainFrame::OnCreate`, oluşturun ve Şerit denetimi başlatılamıyor.
+1. İçinde `CMainFrame::OnCreate` , şerit denetimini oluşturun ve başlatın.
 
 ```
     if (!m_wndRibbonBar.Create (this))
@@ -39,4 +39,4 @@ ms.locfileid: "62160334"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md)
+[Şerit Tasarımcısı (MFC)](ribbon-designer-mfc.md)

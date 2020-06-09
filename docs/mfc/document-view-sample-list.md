@@ -2,34 +2,34 @@
 title: Belge-görünüm örnek listesi
 ms.date: 11/04/2016
 ms.assetid: 6f087ce8-2f46-433c-b674-4c110743b289
-ms.openlocfilehash: ae7104478fb643701c1f659136a33dd3cd69f6e1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 89098381e20e91d3e1653d01a4f4ee749442cd0d
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62240653"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84624738"
 ---
 # <a name="documentview-sample-list"></a>Belge/Görünüm Örnek Listesi
 
-MFC'nin belge/görünüm mimarisi ilginç şekillerde kullanarak gösteren aşağıdaki örnek programlardan bakın:
+MFC 'nin belge/görünüm mimarisini ilginç yollarla kullanmayı gösteren aşağıdaki örnek programlara bakın:
 
-*Belge/görünüm farklılıkları*
+*Belge/görünüm çeşitlemeleri*
 
-- [MDI](../overview/visual-cpp-samples.md)
+- [ÜSTÜNE](../overview/visual-cpp-samples.md)
 
-- [KARALAMA](../overview/visual-cpp-samples.md)
+- [ÇIZGILERININ](../overview/visual-cpp-samples.md)
 
 - [VIEWEX](../overview/visual-cpp-samples.md)
 
-*Belge/görünüm iletişim kutusu arabirimi değiştirir*
+*İletişim kutusu arabirimi belgedeki/görünümün yerini alır*
 
 - [CMNCTRL1](../overview/visual-cpp-samples.md)
 
 - [CMNCTRL2](../overview/visual-cpp-samples.md)
 
-*COleDocument ve türetilmiş sınıflarının kullanma*
+*Cotadocument ve türetilen sınıflarını kullanma*
 
-- [KAPSAYICI](../overview/visual-cpp-samples.md)
+- [KAPSAYıCı](../overview/visual-cpp-samples.md)
 
 - [HIERSVR](../overview/visual-cpp-samples.md)
 
@@ -37,4 +37,4 @@ MFC'nin belge/görünüm mimarisi ilginç şekillerde kullanarak gösteren aşa�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
+[Belge/görünüm mimarisi](document-view-architecture.md)

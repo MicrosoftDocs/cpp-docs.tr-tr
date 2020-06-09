@@ -4,48 +4,48 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], optimizing
 ms.assetid: 29ff985d-9bf5-4678-b62d-aad12def75fb
-ms.openlocfilehash: 354ec1678747be57d387673f2611d526df8dfb47
-ms.sourcegitcommit: 0ad35b26e405bbde17dc0bd0141e72f78f0a38fb
+ms.openlocfilehash: 17cb7318e667fe4e16416d51e7e7fba02553cfe6
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194729"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84621011"
 ---
 # <a name="optimizing-control-drawing"></a>Denetim Çizimini İyileştirme
 
-Denetim kendisini bir kapsayıcı tarafından sağlanan cihaz bağlamına çizmek için istendiğinde, genellikle cihaz bağlamına (örneğin, kalemler, fırçaları ve yazı tipleri) GDI nesneleri seçer, çizim işlemlerini gerçekleştirir ve önceki GDI nesnelerini geri yükler. Denetimleri daha önce seçilen nesneleri ayrı ayrı geri yüklemezseniz aynı cihaz bağlamına çizilecek olan birden çok denetim kapsayıcısı içerir ve her denetim gerektiren GDI nesneleri seçer, zaman kaydedilebilir. Tüm denetimleri çizilmiş sonra kapsayıcı otomatik olarak özgün nesneleri geri yükleyebilirsiniz.
+Bir denetimin kendisini kapsayıcı tarafından sağlanan bir cihaz bağlamına çizmesi istendiğinde, genellikle GDI nesnelerini (örneğin, kalemler, fırçalar ve yazı tipleri) cihaz bağlamına seçer, çizim işlemlerini gerçekleştirir ve önceki GDI nesnelerini geri yükler. Kapsayıcıda aynı cihaz bağlamına çizilmek üzere birden çok denetim varsa ve her denetim gereken GDI nesnelerini seçerse, denetimler önceden seçili nesneleri tek tek geri yüklemediyseniz, zaman kaydedilebilir. Tüm denetimler çizildikten sonra kapsayıcı özgün nesneleri otomatik olarak geri yükleyebilir.
 
-Bir kapsayıcı bu tekniği destekleyip desteklemediğini algılamak için bir denetim çağırabilirsiniz [COleControl::IsOptimizedDraw](../mfc/reference/colecontrol-class.md#isoptimizeddraw) üye işlevi. Bu işlev döndürürse **TRUE**, denetimin önceden seçilen nesneleri geri yüklemek için normal adımını atlayabilirsiniz.
+Bir kapsayıcının bu tekniği destekleyip desteklemediğini algılamak için, bir denetim [Colicontrol:: IsOptimizedDraw](reference/colecontrol-class.md#isoptimizeddraw) üye işlevini çağırabilir. Bu işlev **true**değerini döndürürse denetim, daha önce seçilen nesneleri geri yüklemenin normal adımını atlayabilir.
 
-Aşağıdaki (iyileştirilmemiş) içeren bir denetim göz önünde bulundurun `OnDraw` işlevi:
+Aşağıdaki (iyileştirilmemiş) işleve sahip bir denetim düşünün `OnDraw` :
 
-[!code-cpp[NVC_MFC_AxOpt#15](../mfc/codesnippet/cpp/optimizing-control-drawing_1.cpp)]
+[!code-cpp[NVC_MFC_AxOpt#15](codesnippet/cpp/optimizing-control-drawing_1.cpp)]
 
-Bu örnekte fırça ve Kalem kendi yıkıcıları çağrılacaktır, bunlar kapsam dışına çıkmadan, yani, yerel değişkenler olan (zaman `OnDraw` işlev sona erer). Yıkıcılar, karşılık gelen GDI nesneleri silin dener. Ancak bunları döndürme bağlı cihaz bağlamına seçili bırakın planlıyorsanız, bunlar silinmemelidir `OnDraw`.
+Bu örnekteki kalem ve fırça yerel değişkenlerdir, yani Yıkıcılar kapsam dışına çıkar ( `OnDraw` işlev sona erdiğinde) çağrılır. Yok ediciler ilgili GDI nesnelerini silmeye çalışır. Ancak, ' den geri dönme sırasında onları cihaz bağlamında bırakmayı planlıyorsanız silinmemelidir `OnDraw` .
 
-Önlemek için [CPen](../mfc/reference/cpen-class.md) ve [CBrush](../mfc/reference/cbrush-class.md) zaman yok ediliyor nesnelerin `OnDraw` tamamlandığında, üye değişkenlerine yerel değişkenler yerine bunları depolayın. Denetimin sınıf bildiriminde bildirimleri için iki yeni üye değişkenleri ekleyin:
+Tamamlandığında, [CPen](reference/cpen-class.md) ve [CBrush](reference/cbrush-class.md) nesnelerinin yok edilmesi için `OnDraw` bunları yerel değişkenler yerine üye değişkenlerde saklayın. Denetimin sınıf bildiriminde, iki yeni üye değişkeni için bildirim ekleyin:
 
-[!code-cpp[NVC_MFC_AxOpt#16](../mfc/codesnippet/cpp/optimizing-control-drawing_2.h)]
-[!code-cpp[NVC_MFC_AxOpt#17](../mfc/codesnippet/cpp/optimizing-control-drawing_3.h)]
+[!code-cpp[NVC_MFC_AxOpt#16](codesnippet/cpp/optimizing-control-drawing_2.h)]
+[!code-cpp[NVC_MFC_AxOpt#17](codesnippet/cpp/optimizing-control-drawing_3.h)]
 
-Ardından, `OnDraw` işlevi yazılan gibi:
+Sonra, `OnDraw` işlev aşağıdaki şekilde yeniden yazılabilir:
 
-[!code-cpp[NVC_MFC_AxOpt#18](../mfc/codesnippet/cpp/optimizing-control-drawing_4.cpp)]
+[!code-cpp[NVC_MFC_AxOpt#18](codesnippet/cpp/optimizing-control-drawing_4.cpp)]
 
-Bu yaklaşım her seferinde oluşturma fırça ve Kalem önler `OnDraw` çağrılır. Hızlı geliştirme, ek örneği veri sürdürme karşılığında sunulur.
+Bu yaklaşım her seferinde kalemin ve fırçanın oluşturulmasını önler `OnDraw` . Hız geliştirmesi, ek örnek verilerinin bakımının maliyetiyle gelir.
 
-ForeColor ya da BackColor özelliği değişirse, kalem veya fırça yeniden oluşturulması gerekir. Bunu yapmak için geçersiz kılma [OnForeColorChanged](../mfc/reference/colecontrol-class.md#onforecolorchanged) ve [OnBackColorChanged](../mfc/reference/colecontrol-class.md#onbackcolorchanged) üye işlevler:
+ForeColor veya BackColor özelliği değişirse, kalemin veya fırçanın yeniden oluşturulması gerekir. Bunu yapmak için [OnForeColorChanged](reference/colecontrol-class.md#onforecolorchanged) ve [OnBackColorChanged](reference/colecontrol-class.md#onbackcolorchanged) üye işlevlerini geçersiz kılın:
 
-[!code-cpp[NVC_MFC_AxOpt#19](../mfc/codesnippet/cpp/optimizing-control-drawing_5.cpp)]
+[!code-cpp[NVC_MFC_AxOpt#19](codesnippet/cpp/optimizing-control-drawing_5.cpp)]
 
-Son olarak, gereksiz ortadan kaldırmak için `SelectObject` çağrıları değiştirme `OnDraw` gibi:
+Son olarak, gereksiz çağrıları ortadan kaldırmak için `SelectObject` `OnDraw` aşağıdaki gibi değiştirin:
 
-[!code-cpp[NVC_MFC_AxOpt#20](../mfc/codesnippet/cpp/optimizing-control-drawing_6.cpp)]
+[!code-cpp[NVC_MFC_AxOpt#20](codesnippet/cpp/optimizing-control-drawing_6.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)<br/>
-[COleControl Sınıfı](../mfc/reference/colecontrol-class.md)<br/>
-[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md)<br/>
-[MFC ActiveX Denetimleri: ActiveX Denetimi Boyama](../mfc/mfc-activex-controls-painting-an-activex-control.md)
+[MFC ActiveX Denetimleri: İyileştirme](mfc-activex-controls-optimization.md)<br/>
+[Coelcontrol sınıfı](reference/colecontrol-class.md)<br/>
+[MFC ActiveX denetimleri](mfc-activex-controls.md)<br/>
+[MFC ActiveX Denetim Sihirbazı](reference/mfc-activex-control-wizard.md)<br/>
+[MFC ActiveX Denetimleri: ActiveX Denetimini Boyama](mfc-activex-controls-painting-an-activex-control.md)
