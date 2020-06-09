@@ -10,55 +10,55 @@ helpviewer_keywords:
 - CTabCtrl class [MFC], creating
 - TCS_EX_FLATSEPARATORS extended style
 ms.assetid: 3a9c2d64-f5f4-41ea-84ab-fceb73c3dbdc
-ms.openlocfilehash: 4627009e2e07d1c5692d83d8d6262a9fcd37977e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6d5aa6873966ecb4c845f1c503b24c07b6c0c7a3
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62241968"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619616"
 ---
 # <a name="creating-the-tab-control"></a>Sekme Denetimi Oluşturma
 
-Sekme denetiminin nasıl oluşturulduğunu denetimi bir iletişim kutusunu kullanarak veya bir nondialog penceresinde oluşturma bağlıdır.
+Sekme denetiminin nasıl oluşturulduğu, denetimi bir iletişim kutusunda kullanıp kullanmayacağınızı veya iletişim kutusu olmayan bir pencerede oluşturmayı gösterir.
 
-### <a name="to-use-ctabctrl-directly-in-a-dialog-box"></a>CTabCtrl doğrudan iletişim kutusunda kullanmak için
+### <a name="to-use-ctabctrl-directly-in-a-dialog-box"></a>CTabCtrl ' i doğrudan bir iletişim kutusunda kullanmak için
 
-1. İletişim kutusu Düzenleyicisi'nde iletişim şablonu kaynağınıza Sekme denetimine ekleyin. Denetim kimliğini belirtin
+1. İletişim kutusu düzenleyicisinde iletişim kutusu şablonu kaynağına bir sekme denetimi ekleyin. Denetim KIMLIĞINI belirtin.
 
-1. Kullanım [üye değişkeni Ekleme Sihirbazı'nı](../ide/adding-a-member-variable-visual-cpp.md) türündeki üye değişkeni eklemek için [CTabCtrl](../mfc/reference/ctabctrl-class.md) denetimi özelliğine sahip. Bu üye çağırmak için kullanabileceğiniz `CTabCtrl` üye işlevleri.
+1. Denetim özelliğiyle [CTabCtrl](reference/ctabctrl-class.md) türünde bir üye değişkeni eklemek Için [üye değişkeni Ekleme Sihirbazı](../ide/adding-a-member-variable-visual-cpp.md) ' nı kullanın. Bu üyeyi, üye işlevlerini çağırmak için kullanabilirsiniz `CTabCtrl` .
 
-1. İşleyici işlevleri işlemeniz gereken sekme denetimi bildirim iletileri için iletişim kutusu sınıfında eşleyin. Daha fazla bilgi için [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md).
+1. İşlemek için gerekli olan herhangi bir sekme denetimi bildirim iletisi için İletişim sınıfındaki işleyici işlevlerini eşleştirin. Daha fazla bilgi için bkz. [Iletileri IŞLEVLERE eşleme](reference/mapping-messages-to-functions.md).
 
-1. İçinde [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), stillerini ayarlama `CTabCtrl`.
+1. [OnInitDialog](reference/cdialog-class.md#oninitdialog)' da, için stilleri ayarlayın `CTabCtrl` .
 
-### <a name="to-use-ctabctrl-in-a-nondialog-window"></a>CTabCtrl nondialog penceresinde kullanmak için
+### <a name="to-use-ctabctrl-in-a-nondialog-window"></a>İletişim kutusu olmayan bir pencerede CTabCtrl kullanma
 
-1. Denetim görünüm veya pencere sınıfı tanımlayın.
+1. Görünümü veya pencere sınıfında denetimi tanımlayın.
 
-1. Denetimin çağrı [Oluştur](../mfc/reference/ctabctrl-class.md#create) üye işlev, büyük olasılıkla buna [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), büyük olasılıkla, ana pencerenin olabildiğince erken [OnCreate](../mfc/reference/cwnd-class.md#oncreate) (kullanıcısıysanız işleyici işlevi denetimini alt sınıf yapma). Denetimi için stiller ayarlayın.
+1. Denetimin üye [Oluştur](reference/ctabctrl-class.md#create) işlevini, büyük olasılıkla üst pencerenin [OnCreate](reference/cwnd-class.md#oncreate) Handler işlevi (denetim Altsınıflama kullanıyorsanız) olarak [OnInitialUpdate](reference/cview-class.md#oninitialupdate)içinde çağırın. Denetimin stillerini ayarlayın.
 
-Sonra `CTabCtrl` nesnesi oluşturuldu, ayarlama veya genişletilmiş stiller aşağıdaki temizleyin:
+`CTabCtrl`Nesne oluşturulduktan sonra, aşağıdaki genişletilmiş stilleri ayarlayabilir veya temizleyebilirsiniz:
 
-- **TCS_EX_FLATSEPARATORS** sekme denetimi ayırıcıları arasında sekme öğeleri çizer. Sahip denetimlerini etkiler sekmesinde yalnızca bu genişletilmiş stili **TCS_BUTTONS** ve **TCS_FLATBUTTONS** stilleri. Sekme denetimi ile varsayılan olarak, oluşturma **TCS_FLATBUTTONS** stilini ayarlar bu genişletilmiş stili.
+- **TCS_EX_FLATSEPARATORS** Sekme denetimi, sekme öğeleri arasında ayırıcılar çizecek. Bu genişletilmiş stil yalnızca **TCS_BUTTONS** ve **TCS_FLATBUTTONS** stilleri olan sekme denetimlerini etkiler. Varsayılan olarak, **TCS_FLATBUTTONS** stili ile sekme denetiminin oluşturulması bu genişletilmiş stili belirler.
 
-- **TCS_EX_REGISTERDROP** sekme denetimi oluşturur **TCN_GETOBJECT** bildirim iletileri bir bırakma hedefi istemek için bir nesne denetimin sekme öğeler üzerinden sürüklendiğinde nesne.
+- **TCS_EX_REGISTERDROP** Sekme denetimi, bir nesne denetimdeki sekme öğelerinin üzerine sürüklendiğinde bir bırakma hedefi nesnesi istemek için **TCN_GETOBJECT** bildirim iletileri oluşturur.
 
     > [!NOTE]
-    >  Almaya **TCN_GETOBJECT** bildirimi çağrısıyla OLE kitaplıklarının başlatmak gerekir [Afxoleınit](../mfc/reference/ole-initialization.md#afxoleinit).
+    >  **TCN_GETOBJECT** bildirimi almak IÇIN, OLE kitaplıklarını [AfxOleInit](reference/ole-initialization.md#afxoleinit)çağrısıyla başlatmalısınız.
 
-Bu stiller alınır ve ayarlama, Denetim, ilgili çağrılarıyla oluşturulduktan sonra [GetExtendedStyle](../mfc/reference/ctabctrl-class.md#getextendedstyle) ve [SetExtendedStyle](../mfc/reference/ctabctrl-class.md#setextendedstyle) üye işlevleri.
+Bu stiller, Denetim oluşturulduktan sonra, [Getil dedstyle](reference/ctabctrl-class.md#getextendedstyle) ve [Setil dedstyle](reference/ctabctrl-class.md#setextendedstyle) üye işlevlerine yapılan çağrılar ile alınabilir ve ayarlanabilir.
 
-Örneğin, ayarlayın **TCS_EX_FLATSEPARATORS** aşağıdaki kod satırlarını stili:
+Örneğin, **TCS_EX_FLATSEPARATORS** stilini aşağıdaki kod satırlarıyla ayarlayın:
 
-[!code-cpp[NVC_MFCControlLadenDialog#33](../mfc/codesnippet/cpp/creating-the-tab-control_1.cpp)]
+[!code-cpp[NVC_MFCControlLadenDialog#33](codesnippet/cpp/creating-the-tab-control_1.cpp)]
 
-NET **TCS_EX_FLATSEPARATORS** gelen stili bir `CTabCtrl` aşağıdaki kod satırlarını nesnesiyle:
+**TCS_EX_FLATSEPARATORS** `CTabCtrl` Aşağıdaki kod satırlarına sahip bir nesneden TCS_EX_FLATSEPARATORS stilini temizleyin:
 
-[!code-cpp[NVC_MFCControlLadenDialog#34](../mfc/codesnippet/cpp/creating-the-tab-control_2.cpp)]
+[!code-cpp[NVC_MFCControlLadenDialog#34](codesnippet/cpp/creating-the-tab-control_2.cpp)]
 
-Bu düğmeler arasında görünür ayırıcılar kaldırır, `CTabCtrl` nesne.
+Bu işlem, nesnenizin düğmeleri arasında görünen ayırıcıları kaldırır `CTabCtrl` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CTabCtrl Kullanma](../mfc/using-ctabctrl.md)<br/>
-[Denetimler](../mfc/controls-mfc.md)
+[CTabCtrl Kullanma](using-ctabctrl.md)<br/>
+[Denetimler](controls-mfc.md)

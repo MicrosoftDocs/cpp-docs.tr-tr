@@ -8,16 +8,16 @@ helpviewer_keywords:
 - classes [MFC], MFC class design
 - Windows API [MFC], and MFC
 ms.assetid: e6861ae0-1581-4d9c-9ddf-63f9afcdb913
-ms.openlocfilehash: 34a173802e3fa43615c05da4ce747592f851228f
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: cfad635c2a826c6f57e2e1513d753a4083494dee
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441194"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84618778"
 ---
 # <a name="general-class-design-philosophy"></a>Genel Sınıf Tasarımı Felsefesi
 
-Microsoft Windows, C++ dilin popüler hale gelmeden önce uzun süredir tasarlandı. Binlerce uygulama C-dil Windows uygulama programlama arabirimini (API) kullandığından, bu arabirim, daha sonra öngörülebilir bir şekilde tutulacaktır. Bu C++ nedenle, herhangi bir Windows arabiriminin, yordamsal C dili API 'sinin üzerine oluşturulması gerekir. Bu, uygulamaların C++ C uygulamalarıyla birlikte bir arada bulunabilebilmesini güvence altına alır.
+Microsoft Windows, C++ dili popüler hale gelmeden önce uzun süredir tasarlandı. Binlerce uygulama C-dil Windows uygulama programlama arabirimini (API) kullandığından, bu arabirim, daha sonra öngörülebilir bir şekilde tutulacaktır. Bu nedenle, herhangi bir C++ Windows arabiriminin, yordamsal C-dil API 'sinin üzerine oluşturulması gerekir. Bu, C++ uygulamalarının C uygulamalarıyla birlikte bir arada bulunabilebilmesini güvence altına alır.
 
 Microsoft Foundation Class Kitaplığı, Windows için aşağıdaki tasarım hedeflerini karşılayan nesne yönelimli bir arabirimdir:
 
@@ -29,22 +29,22 @@ Microsoft Foundation Class Kitaplığı, Windows için aşağıdaki tasarım hed
 
 - Herhangi bir Windows C işlevini doğrudan çağırma özelliği.
 
-- Var olan C uygulamalarının ' ye C++daha kolay dönüştürülmesi.
+- Mevcut C uygulamalarının C++ ' ya daha kolay dönüştürülmesi.
 
 - C dili Windows programlama deneyiminin var olan temel öğesinden faydalanabilir.
 
-- C ile C++ sürümünden daha kolay Windows API kullanımı.
+- C++ ile C ile kıyasla Windows API 'sinin daha kolay kullanımı.
 
 - ActiveX denetimleri, veritabanı desteği, yazdırma, araç çubukları ve durum çubukları gibi karmaşık özellikler, daha kolay soyutlamadır.
 
-- Etkin olarak dil özelliklerini C++ kullanan C++ doğru Windows API 'si.
+- C++ dil özelliklerini etkin bir şekilde kullanan C++ için doğru Windows API 'SI.
 
 MFC kitaplığının tasarımı hakkında daha fazla bilgi için bkz.:
 
-- [Uygulama çerçevesi](../mfc/application-framework.md)
+- [Uygulama çerçevesi](application-framework.md)
 
-- [C Dili API'sına yönelik ilişki](../mfc/relationship-to-the-c-language-api.md)
+- [C dili API 'siyle ilişki](relationship-to-the-c-language-api.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](class-library-overview.md)

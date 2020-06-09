@@ -7,29 +7,29 @@ helpviewer_keywords:
 - applications [MFC]
 - MFC, application development
 ms.assetid: 883f0f19-866f-4221-8a3d-5607941dc8d0
-ms.openlocfilehash: 989aecdfafc0d57bfb28874ee84dbf40f8fefc30
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2c171b223892c8bca1b32e18c57c09027558c192
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385342"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619728"
 ---
 # <a name="building-on-the-framework"></a>Framework'te Derleme
 
-MFC çerçevesi ile bir uygulama yapılandırma, uygulamaya özgü kaynak kodu sağlamak ve hangi iletiler ve komutlar için yanıt tanımlayarak bileşenlerine bağlanmak için rolüdür. Bu sınıf kitaplığı tarafından sağlanan kendi uygulamaya özgü sınıfların türetilmesi için ve geçersiz kılmak ve temel sınıfın davranışını genişletmek için C++ dili ve standart C++ tekniklerini kullanın.
+MFC çerçevesi ile uygulama yapılandırma rolünüzde, uygulamaya özgü kaynak kodu sağlamak ve hangi iletileri ve komutları yanıtlayacakları tanımlayarak bileşenleri bağlamak. C++ dilini ve standart C++ tekniklerini kullanarak, sınıf kitaplığı tarafından sağlananlardan uygulamaya özgü sınıfları türetebilir ve temel sınıfın davranışını geçersiz kılabileceğiniz ve artdırabilirsiniz.
 
-İlgili konularda, aşağıdaki tabloda genel dizi işlemleri genellikle izler ve framework'ün sorumlulukları karşı sizin Sorumluluklarınız açıklanmaktadır:
+İlgili konularda aşağıdaki tablolarda, genellikle izleyeceğiniz işlemlerin genel sırası ve sorumluluklarınız Framework sorumluluklarına göre tanımlanacaktır:
 
-- [Framework ile uygulama oluşturma sırası](../mfc/sequence-of-operations-for-building-mfc-applications.md)
+- [Framework ile uygulama oluşturmaya yönelik sıra](sequence-of-operations-for-building-mfc-applications.md)
 
-- [OLE Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-ole-applications.md)
+- [OLE uygulamaları oluşturmak için Işlem dizisi](sequence-of-operations-for-creating-ole-applications.md)
 
-- [ActiveX Denetimleri Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-activex-controls.md)
+- [ActiveX Denetimleri Oluşturmak için İşlem Dizisi](sequence-of-operations-for-creating-activex-controls.md)
 
-- [Veritabanı Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-database-applications.md)
+- [Veritabanı uygulamaları oluşturmak için Işlem dizisi](sequence-of-operations-for-creating-database-applications.md)
 
-Çoğunlukla, adımlardan bazıları diğer seçenekleri olsa da bu tablolar bir MFC uygulaması oluşturma adımları öğesinin bir dizisi olarak izleyebilirsiniz. Örneğin, çoğu uygulama, kullanılabilir birkaç türlerinden görünüm sınıfı bir türünü kullanın.
+Çoğu bölüm için, bu tabloları bir MFC uygulaması oluşturmak için bir adım dizisi olarak takip edebilirsiniz, ancak bazı adımlar alternatif seçeneklerdir. Örneğin, çoğu uygulama kullanılabilir çeşitli türlerden bir görünüm sınıfı türü kullanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel MFC Konuları](../mfc/general-mfc-topics.md)
+[Genel MFC Konuları](general-mfc-topics.md)

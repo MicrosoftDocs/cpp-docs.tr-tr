@@ -13,22 +13,22 @@ helpviewer_keywords:
 - Internet applications [MFC], security
 - Web application security [MFC], Internet security approaches
 ms.assetid: bf0da697-81bc-41f0-83fa-d7f82ed83df8
-ms.openlocfilehash: 184c8edf3e4a81be1f8b2a282a0db9758a75253f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ce044014c5c2e13528cea8b982227b0ec8bc03fc
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310909"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84621532"
 ---
 # <a name="internet-security-c"></a>Internet Güvenliği (C++)
 
-Kod güvenliği geliştiriciler ve kullanıcılar Internet uygulamaları için önemli bir sorun var. Riskleri vardır: kötü amaçlı kod, üzerinde oynanmış kod ve bilinmeyen siteleri veya yazarlar koddan.
+Kod güvenliği, geliştiriciler ve Internet uygulamaları kullanıcılarına yönelik önemli bir sorundur. Riskler vardır: kötü amaçlı kod, üzerinde oynanmış kod ve bilinmeyen sitelerden veya yazarların kodu.
 
-İnternet'e geliştirirken güvenlik için iki temel yaklaşım vardır. İlk "korumalı alana alma." olarak adlandırılır Bu yaklaşımda, bir uygulama belirli bir API kümesi için kısıtlı ve potansiyel olarak tehlikeli olabilecek olanlar gibi bir program, verileri bir kullanıcının bilgisayarında nereye yok edebilir ve dosya g/ç dışında tutulması. İkincisi, dijital imzalar kullanılarak uygulanır. Bu yaklaşım için "shrinkwrap" İnternet'e adlandırılır. Kod doğrulanır ve özel anahtarı/genel anahtar teknolojisi kullanılarak imzalanmış. Kod çalıştırmadan önce kodu bilinen bir kimliği doğrulanmış kaynaktan olduğunu ve imzalanmış olduğundan'ın kodunu değiştirilmediğinden emin olmak için dijital imzasını doğrulandı.
+Internet için geliştirme sırasında güvenliğe yönelik iki temel yaklaşım vardır. Birincisi "korumalı alana alma" olarak adlandırılır. Bu yaklaşımda, bir uygulama belirli bir API kümesiyle kısıtlıdır ve bir programın bir kullanıcının bilgisayarında verileri bozmasına neden olabilecek dosya g/ç gibi tehlikeli olabilir. İkincisi, dijital imzalar kullanılarak uygulanır. Bu yaklaşım, Internet için "shrınkwrap" olarak adlandırılır. Kod doğrulanır ve özel anahtar/ortak anahtar teknolojisi kullanılarak imzalandı. Kod çalıştırılmadan önce, kodun bilinen kimliği doğrulanmış bir kaynaktan olduğundan ve kodun imzalandıktan sonra değiştirilmediğinden emin olmak için dijital imzası doğrulanır.
 
-Bu durumda, uygulamanın herhangi bir zarar yapmaz ve uygulama kaynağı güven güven. İkinci, dijital imzalar, orjinalliği doğrulamak için kullanılır. Dijital imza tanımlamak ve kod yayımcısı ayrıntılarını sağlamak için kullanılan bir endüstri standardıdır. Bu teknoloji, RSA ve X.509 dahil olmak üzere standartlarını temel alır. Tarayıcılar, genellikle bunlar indirip bilinmeyen kaynaklardan gelen kodu çalıştırmak isteyip istemediklerini açmasına imkan tanıyın.
+İlk durumda, uygulamanın herhangi bir zarar yapamayacak ve uygulamanın kaynağına güveneceğinizdeki güvenirsiniz. İkinci olarak, dijital imzalar özgünlük doğrulaması için kullanılır. Dijital imzalama, kodun yayıncısı hakkındaki ayrıntıları belirlemek ve sağlamak için kullanılan bir sektör standardıdır. Teknolojisi, RSA ve X. 509.440 dahil standartlara dayanır. Tarayıcılar genellikle kullanıcıların bilinmeyen kaynak kodunu indirmek ve çalıştırmak istediklerinde seçmesine izin verir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
-[MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
+[MFC Internet Programlama Görevleri](mfc-internet-programming-tasks.md)<br/>
+[MFC Internet Programlama Temelleri](mfc-internet-programming-basics.md)

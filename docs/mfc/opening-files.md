@@ -16,40 +16,40 @@ helpviewer_keywords:
 - opening files [MFC]
 - exception handling [MFC], opening files
 ms.assetid: a991b8ec-b04a-4766-b47e-7485b5dd0b01
-ms.openlocfilehash: 6119bf922b05c30a14d8421800e3931c4a038779
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 73407eba802b7640e880b821144954fa6442f177
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375955"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84622159"
 ---
 # <a name="opening-files"></a>Dosyaları Açma
 
-MFC'de, dosyayı açmanın en yaygın yolu iki aşamalı bir işlemdir.
+MFC 'de, bir dosyayı açmak için en yaygın yol iki aşamalı bir işlemdir.
 
-#### <a name="to-open-a-file"></a>Dosyayı açmak için
+#### <a name="to-open-a-file"></a>Dosya açmak için
 
-1. Bir yol veya izin bayrakları belirtmeden dosya nesnesini oluşturun.
+1. Dosya nesnesini bir yol veya izin bayrakları belirtmeden oluşturun.
 
-   Genellikle yığın çerçevesi üzerinde bir [CFile](../mfc/reference/cfile-class.md) değişkeni beyan ederek bir dosya nesnesi oluşturursunuz.
+   Genellikle yığın çerçevesinde bir [CFile](reference/cfile-class.md) değişkeni bildirerek bir dosya nesnesi oluşturursunuz.
 
-1. Bir yol ve izin bayrakları sağlayarak dosya nesnesi için [Açık](../mfc/reference/cfile-class.md#open) üye işlevini çağırın.
+1. Dosya nesnesi için [Açık](reference/cfile-class.md#open) üye işlevini çağırın ve bir yol ve izin bayrakları sağlayarak.
 
-   Belirtilen dosya `Open` açılmazsa dosya başarıyla açılırsa için iade değeri sıfırsız veya 0 olacaktır. `Open` Üye işlev aşağıdaki gibi prototiplenir:
+   `Open`Dosya başarıyla açıldıysa veya belirtilen dosya açılamadığı takdirde 0 ' ın dönüş değeri sıfır dışı olacaktır. `Open`Üye işlevi prototipi şöyle yazılır:
 
    `virtual BOOL Open( LPCTSTR lpszFileName, UINT nOpenFlags, CFileException* pError = NULL );`
 
-   Açık bayraklar, yalnızca okunur gibi dosya için istediğiniz izinleri belirtir. Olası bayrak değerleri `CFile` sınıf içinde numaralandırılmış sabitler olarak tanımlanır, bu`CFile::`nedenle " `CFile::modeRead`" ile niteliklidir . Dosyayı `CFile::modeCreate` oluşturmak istiyorsanız bayrağı kullanın.
+   Açık bayraklar, salt okuma gibi hangi izinlerin dosya için istediğinizi belirtir. Olası bayrak değerleri `CFile` , sınıfının içinde olduğu gibi "" ile nitelendirildikleri şekilde, sınıfında numaralandırılmış sabitler olarak tanımlanmıştır `CFile::` `CFile::modeRead` . `CFile::modeCreate`Dosyayı oluşturmak istiyorsanız bayrağını kullanın.
 
-Aşağıdaki örnek, okuma/yazma izniyle yeni bir dosyanın nasıl oluşturulduğunu gösterir (önceki herhangi bir dosyayı aynı yolla değiştirme):
+Aşağıdaki örnek, okuma/yazma izniyle yeni bir dosya oluşturmayı gösterir (önceki tüm dosyaları aynı yolla değiştirme):
 
 [!code-cpp[NVC_MFCFiles#1](../atl-mfc-shared/reference/codesnippet/cpp/opening-files_1.cpp)]
 
 > [!NOTE]
-> Bu örnek bir dosya oluşturur ve açar. Sorun varsa, `Open` arama burada gösterildiği `CFileException` gibi, son parametresinde bir nesneyi döndürebilir. TRACE makrosu hem dosya adını hem de hata nedenini belirten bir kodu yazdırır. Daha ayrıntılı `AfxThrowFileException` hata raporlaması gerektiriyorsanız işlevi arayabilirsiniz.
+> Bu örnek bir dosya oluşturur ve açar. Sorun varsa, `Open` çağrı `CFileException` burada gösterildiği gibi son parametresinde bir nesne döndürebilir. TRACE makrosu hem dosya adını hem de hatanın nedenini belirten bir kodu yazdırır. `AfxThrowFileException`Daha ayrıntılı hata raporlama gerekiyorsa, işlevini çağırabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CFile Sınıfı](../mfc/reference/cfile-class.md)<br/>
-[CFile::Aç](../mfc/reference/cfile-class.md#open)<br/>
-[Dosyalar](../mfc/files-in-mfc.md)
+[CFile sınıfı](reference/cfile-class.md)<br/>
+[CFile:: Open](reference/cfile-class.md#open)<br/>
+[Dosyalar](files-in-mfc.md)

@@ -11,43 +11,43 @@ helpviewer_keywords:
 - stack collections
 - collections, queue
 ms.assetid: 3c7bc198-35f0-4fc3-aaed-6005a0f22638
-ms.openlocfilehash: 5b3427f7bb2e46435ddf2768bcbb816f9d7e5c1a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5db90422f78fc6ca3bc2a182f9569c33db56cad1
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371601"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84623215"
 ---
 # <a name="creating-stack-and-queue-collections"></a>Yığın ve Kuyruk Koleksiyonları Oluşturma
 
-Bu makalede, MFC liste sınıflarından [yığınlar](#_core_stacks) ve [kuyruklar](#_core_queues)gibi diğer veri yapıları nasıl oluşturulacak açıklanmaktadır. `CList`Örnekler, türetilen sınıfları kullanır, `CList` ancak işlevsellik eklemeniz gerekmedikçe doğrudan kullanabilirsiniz.
+Bu makalede, MFC liste sınıflarından [yığınlar](#_core_stacks) ve [Kuyruklar](#_core_queues)gibi diğer veri yapılarının nasıl oluşturulduğu açıklanmaktadır. Örnekler, ' den türetilen sınıfları kullanır `CList` , ancak `CList` işlevsellik eklemeniz gerekmiyorsa doğrudan kullanabilirsiniz.
 
-## <a name="stacks"></a><a name="_core_stacks"></a>Yığın
+## <a name="stacks"></a><a name="_core_stacks"></a>Lara
 
-Standart liste koleksiyonunun hem kafası hem de kuyruğu olduğundan, son gelen ilk çıkış yığınının davranışını taklit eden türetilmiş bir liste koleksiyonu oluşturmak kolaydır. Yığın, kafeteryadaki tepsi yığını gibidir. Tepsiler yığına eklendikçe, yığının üstüne giderler. Eklenen son tepsi ilk çıkarılacak. Liste toplama üye `AddHead` `RemoveHead` işlevleri ve eklemek ve özellikle listenin başından öğeleri kaldırmak için kullanılabilir; böylece, en son eklenen öğe ilk kaldırılan öğedir.
+Standart liste koleksiyonunda hem baş hem de kuyruk olduğundan, bir son ilk çıkar yığınının davranışını taklit eden bir türetilmiş liste koleksiyonu oluşturmak kolaydır. Bir yığın, Cafeteria 'daki tepsilerden oluşan bir yığın gibidir. Yığına tepsi eklendikçe, yığının en üstüne gitirler. Eklenen son tepsi, kaldırılacak ilkdir. Liste koleksiyonu üyesi işlevleri, `AddHead` `RemoveHead` özellikle listenin baş bir yanındaki öğeleri eklemek ve kaldırmak için kullanılabilir; Bu nedenle, en son eklenen öğe kaldırılacak ilk öğedir.
 
 #### <a name="to-create-a-stack-collection"></a>Yığın koleksiyonu oluşturmak için
 
-1. Varolan MFC liste sınıflarından birinden yeni bir liste sınıfı türetin ve yığın işlemlerinin işlevselliğini desteklemek için daha fazla üye işlev ekleyin.
+1. Mevcut MFC liste sınıflarından birinden yeni bir liste sınıfı türetirsiniz ve yığın işlemlerinin işlevlerini desteklemek için daha fazla üye işlevi ekleyin.
 
-   Aşağıdaki örnek, öğeleri yığına itmek, yığının üst öğesini gözetlemek ve üst öğeyi yığından çıkarmak için üye işlevlerin nasıl ekleyeceğini gösterir:
+   Aşağıdaki örnek, yığın üzerinde öğelerine gönderme yapmak için üye işlevlerinin nasıl ekleneceğini, yığının en üst öğesine nasıl göz atmayı ve yığından en üstteki öğeyi eklemeyi gösterir:
 
-   [!code-cpp[NVC_MFCCollections#20](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_1.h)]
+   [!code-cpp[NVC_MFCCollections#20](codesnippet/cpp/creating-stack-and-queue-collections_1.h)]
 
-Bu yaklaşımın temel `CObList` sınıfı ortaya çıkardığını unutmayın. Kullanıcı, bir `CObList` yığın için mantıklı olsun veya olmasın, herhangi bir üye işlevi arayabilir.
+Bu yaklaşımın temel sınıfı kullanıma sunduğunu unutmayın `CObList` . Kullanıcı herhangi `CObList` bir üye işlevi çağırabilir, bu, yığın için anlamlı hale getirir.
 
-## <a name="queues"></a><a name="_core_queues"></a>Sıra
+## <a name="queues"></a><a name="_core_queues"></a>Klarında
 
-Standart liste koleksiyonunun hem kafası hem de kuyruğu olduğundan, ilk çıkan ilk sıranın davranışını taklit eden türetilmiş bir liste koleksiyonu oluşturmak da kolaydır. Sıra, kafeteryadaki bir sıra gibi. Sırada ilk kişi servis edilen ilk kişidir. Daha fazla insan geldikçe sıralarını beklemek için sıranın sonuna giderler. Liste toplama üye `AddTail` `RemoveHead` işlevleri ve eklemek ve özellikle listenin baş veya kuyruk öğeleri kaldırmak için kullanılabilir; böylece, en son eklenen öğe her zaman kaldırılacak son öğedir.
+Standart liste koleksiyonunda hem baş hem de kuyruk olduğundan, ilk çıkar sırasının davranışını taklit eden bir türetilmiş liste koleksiyonu oluşturmak da kolaydır. Kuyruk, Cafeteria 'daki bir kişi satırı gibidir. Satırdaki ilk kişi, sunulacak ilk kişidir. Daha fazla kişi geldiklerinde, onların dönmesini beklemek için satırın sonuna gider. Liste koleksiyonu üyesi işlevleri, `AddTail` `RemoveHead` özellikle de listenin baş veya kuyruklu öğeleri eklemek ve kaldırmak için kullanılabilir; Bu nedenle, en son eklenen öğe her zaman kaldırılacak en son öğedir.
 
-#### <a name="to-create-a-queue-collection"></a>Sıra koleksiyonu oluşturmak için
+#### <a name="to-create-a-queue-collection"></a>Kuyruk koleksiyonu oluşturmak için
 
-1. Microsoft Hazırlık Sınıfı Kitaplığı ile sağlanan önceden tanımlanmış liste sınıflarından birinden yeni bir liste sınıfı türetin ve sıra işlemlerinin anlambilimini desteklemek için daha fazla üye işlev ekleyin.
+1. Microsoft Foundation Class Kitaplığı ile birlikte sunulan önceden tanımlanmış liste sınıflarından birinden yeni bir liste sınıfı türetebilir ve sıra işlemlerinin semantiğini desteklemek için daha fazla üye işlevi ekleyin.
 
-   Aşağıdaki örnek, sıranın sonuna bir öğe eklemek ve öğeyi sıranın önünden almak için üye işlevleri nasıl ekleyebileceğinizi gösterir.
+   Aşağıdaki örnek, sıranın sonuna bir öğesi eklemek ve sıranın önüne öğe almak için üye işlevlerinin nasıl ekleneceğini gösterir.
 
-   [!code-cpp[NVC_MFCCollections#21](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_2.h)]
+   [!code-cpp[NVC_MFCCollections#21](codesnippet/cpp/creating-stack-and-queue-collections_2.h)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Koleksiyonlar](../mfc/collections.md)
+[Koleksiyonlar](collections.md)

@@ -32,36 +32,36 @@ helpviewer_keywords:
 - drawing [MFC], directly into windows
 - painting and device context
 ms.assetid: d0cd51f1-f778-4c7e-bf50-d738d10433c7
-ms.openlocfilehash: d5337e8d8b83a641458a15612803feeec3b6361c
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a5be2e57302e597e9c65b7bc966a5ff0ecaf855a
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69508662"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84620360"
 ---
 # <a name="device-contexts"></a>Cihaz Bağlamları
 
 Cihaz bağlamı, bir cihazın görüntü veya yazıcı gibi çizim öznitelikleri hakkında bilgi içeren bir Windows veri yapısıdır. Tüm çizim çağrıları, çizgi, şekil ve metin çizmek için Windows API 'Lerini kapsülleyen bir cihaz bağlamı nesnesi aracılığıyla yapılır. Cihaz bağlamları Windows 'da cihazdan bağımsız çizime izin verir. Cihaz bağlamları, ekrana, yazıcıya veya bir dosya dosyasına çizim yapmak için kullanılabilir.
 
-[CPaintDC](../mfc/reference/cpaintdc-class.md) nesneleri, Windows 'un ortak deyim sayısını kapsüllemek, `BeginPaint` işlevi çağırmak, sonra cihaz bağlamında çizim yapmak ve sonra `EndPaint` işlevi çağırmak. Oluşturucu sizin için ve yok edicisi çağırır `EndPaint`. `CPaintDC` `BeginPaint` Basitleştirilmiş işlem, [CDC](../mfc/reference/cdc-class.md) nesnesini oluşturmak, çizmek ve sonra `CDC` nesneyi yok etmek. Çerçevesinde, bu işlem de otomatikleştirilmiştir. Özellikle, işleviniz `OnDraw` `CPaintDC` zaten hazırlanmış (aracılığıyla `OnPrepareDC`) olarak geçirilir ve yalnızca içine çizersiniz. Framework tarafından yok edilir ve işlevinizin `OnDraw` çağrısından geri dönerek temeldeki cihaz bağlamı Windows 'ta serbest bırakılır.
+[CPaintDC](reference/cpaintdc-class.md) nesneleri, Windows 'un ortak deyim sayısını kapsüllemek, `BeginPaint` işlevi çağırmak, sonra cihaz bağlamında çizim yapmak ve sonra `EndPaint` işlevi çağırmak. `CPaintDC`Oluşturucu `BeginPaint` sizin için ve yok edicisi çağırır `EndPaint` . Basitleştirilmiş işlem, [CDC](reference/cdc-class.md) nesnesini oluşturmak, çizmek ve sonra nesneyi yok etmek `CDC` . Çerçevesinde, bu işlem de otomatikleştirilmiştir. Özellikle, `OnDraw` işleviniz `CPaintDC` zaten hazırlanmış (aracılığıyla `OnPrepareDC` ) olarak geçirilir ve yalnızca içine çizersiniz. Framework tarafından yok edilir ve işlevinizin çağrısından geri dönerek temeldeki cihaz bağlamı Windows 'ta serbest bırakılır `OnDraw` .
 
-[CClientDC](../mfc/reference/cclientdc-class.md) nesneleri, yalnızca bir pencerenin istemci alanını temsil eden bir cihaz bağlamı ile çalışmayı kapsüller. `CClientDC` Oluşturucu işlevini`GetDC` çağırır`ReleaseDC` ve yıkıcı işlevi çağırır. [CWindowDC](../mfc/reference/cwindowdc-class.md) nesneleri, çerçevesini dahil olmak üzere tüm pencereyi temsil eden bir cihaz bağlamını kapsüller.
+[CClientDC](reference/cclientdc-class.md) nesneleri, yalnızca bir pencerenin istemci alanını temsil eden bir cihaz bağlamı ile çalışmayı kapsüller. `CClientDC`Oluşturucu `GetDC` işlevini çağırır ve yıkıcı işlevi çağırır `ReleaseDC` . [CWindowDC](reference/cwindowdc-class.md) nesneleri, çerçevesini dahil olmak üzere tüm pencereyi temsil eden bir cihaz bağlamını kapsüller.
 
-[CMetaFileDC](../mfc/reference/cmetafiledc-class.md) nesneleri, çizimi bir Windows meta dosyasına kapsüller. `CPaintDC` Geçirilen öğesine`OnDraw`karşılık olarak, bu örnekte, [onhazırlık EDC](../mfc/reference/cview-class.md#onpreparedc) çağrısı yapmanız gerekir.
+[CMetaFileDC](reference/cmetafiledc-class.md) nesneleri, çizimi bir Windows meta dosyasına kapsüller. Geçirilen öğesine karşılık olarak `CPaintDC` `OnDraw` , bu örnekte, [Onhazırlık EDC](reference/cview-class.md#onpreparedc) çağrısı yapmanız gerekir.
 
 ## <a name="mouse-drawing"></a>Fare çizimi
 
-Çerçeve programında çoğu çizim — ve bu nedenle çoğu cihaz bağlamı işi — görünümün `OnDraw` üye işlevinde yapılır. Ancak, diğer amaçlar için hala cihaz bağlamı nesnelerini kullanabilirsiniz. Örneğin, bir görünümde fare hareketiyle ilgili izleme geri bildirimi sağlamak için, çağrılabilir olmadan `OnDraw` doğrudan görünüme bir çizim yapmanız gerekir.
+Çerçeve programında çoğu çizim — ve bu nedenle çoğu cihaz bağlamı işi — görünümün `OnDraw` üye işlevinde yapılır. Ancak, diğer amaçlar için hala cihaz bağlamı nesnelerini kullanabilirsiniz. Örneğin, bir görünümde fare hareketiyle ilgili izleme geri bildirimi sağlamak için, çağrılabilir olmadan doğrudan görünüme bir çizim yapmanız gerekir `OnDraw` .
 
-Böyle bir durumda, bir [CClientDC](../mfc/reference/cclientdc-class.md) cihaz bağlamı nesnesini kullanarak doğrudan görünüme çizim yapabilirsiniz.
+Böyle bir durumda, bir [CClientDC](reference/cclientdc-class.md) cihaz bağlamı nesnesini kullanarak doğrudan görünüme çizim yapabilirsiniz.
 
 ### <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Cihaz bağlamları (tanım)](/windows/win32/gdi/device-contexts)
 
-- [Bir Görünümde Çizim Yapma](../mfc/drawing-in-a-view.md)
+- [Bir görünümde çizim yapma](drawing-in-a-view.md)
 
-- [Bir Görünümü Kullanarak Kullanıcı Girişini Yorumlama](../mfc/interpreting-user-input-through-a-view.md)
+- [Bir görünüm aracılığıyla Kullanıcı girişini yorumlama](interpreting-user-input-through-a-view.md)
 
 - [Çizgiler ve eğriler](/windows/win32/gdi/lines-and-curves)
 
@@ -75,4 +75,4 @@ Böyle bir durumda, bir [CClientDC](../mfc/reference/cclientdc-class.md) cihaz b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pencere Nesneleri](../mfc/window-objects.md)
+[Pencere nesneleri](window-objects.md)

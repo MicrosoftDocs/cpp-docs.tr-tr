@@ -12,30 +12,30 @@ helpviewer_keywords:
 - child windows [MFC]
 - MDI [MFC], frame windows
 ms.assetid: 1828d96e-a561-48ae-a661-ba9701de6bee
-ms.openlocfilehash: d4b4a4876f47452361b13837b0279f5bf98f8658
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6e8e3d0aa51eeea112597485a9221dcba4feda87
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279347"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84618369"
 ---
 # <a name="managing-mdi-child-windows"></a>MDI Alt Öğe Pencerelerini Yönetme
 
-MDI ana çerçeve pencereleri (uygulama başına bir adet) MDICLIENT penceresi olarak adlandırılan özel alt pencere içerir. Ana çerçeve penceresinin istemci alanına MDICLIENT penceresi yönetir ve kendini alt öğe pencerelerini belirtiyor: türetilen belge pencereleri `CMDIChildWnd`. Belge pencereleri çerçeve pencereleri kendilerini (MDI alt pencereleri) olduğundan, kendi alt öğeleri'ne de sağlayabilirsiniz. Bu durumların tümünde, ana pencereyi, kendi alt pencereleri yönetir ve onlara bazı komutlar iletir.
+MDI ana çerçeve pencereleri (uygulama başına bir tane) MDıCLıENT penceresi adlı özel bir alt pencere içerir. MDıCLıENT penceresi, ana çerçeve penceresinin istemci alanını yönetir ve kendi alt pencereleri vardır: belge pencereleri, öğesinden türetilir `CMDIChildWnd` . Belge pencereleri, çerçeve pencerelerinin (MDI alt pencereleri) olduğu için kendi alt öğelerine de sahip olabilirler. Bu durumların tümünde, üst pencere alt pencerelerini yönetir ve bazı komutları bunlara iletir.
 
-Bir MDI çerçeve penceresinin çerçeve penceresi, Denetim çubuklarını birlikte yeniden konumlandırma MDICLIENT penceresi yönetir. MDICLIENT penceresi tüm MDI alt çerçeve pencereleri sırayla yönetir. Aşağıdaki şekilde bir MDI çerçeve penceresinin, kendi MDICLIENT penceresi ve onun alt belge çerçeve pencereleri arasındaki ilişki gösterilmektedir.
+Bir MDI çerçevesi penceresinde, çerçeve penceresi MDıCLıENT penceresini yönetir ve denetim çubuklarıyla birlikte yeniden konumlandırın. MDıCLıENT penceresi, sırasıyla tüm MDI alt çerçeve pencerelerini yönetir. Aşağıdaki şekilde, bir MDI çerçevesi penceresi, MDıCLıENT penceresi ve onun alt belge çerçeve pencereleri arasındaki ilişki gösterilmektedir.
 
-![Bir MDI çerçeve penceresinin alt windows](../mfc/media/vc37gb1.gif "bir MDI çerçeve penceresinin içinde alt pencereler") <br/>
-MDI çerçeve Windows ve alt öğeleri
+![MDI çerçeve penceresinde alt pencereler](../mfc/media/vc37gb1.gif "MDI çerçeve penceresinde alt pencereler") <br/>
+MDI çerçeve pencereleri ve alt öğeleri
 
-Varsa bir MDI çerçeve penceresinin de geçerli MDI alt penceresi ile birlikte çalışır. Kendisini işlemek denemeden önce MDI çerçeve penceresinin MDI alt komut iletileri atar.
+Bir MDI çerçevesi penceresi, varsa geçerli MDI alt penceresiyle birlikte da kullanılabilir. MDI çerçevesi penceresi, kendisini işlemesini denemeden önce MDI alt öğesine komut iletileri devreder.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Belge çerçeve pencereleri oluşturma](../mfc/creating-document-frame-windows.md)
+- [Belge çerçeve pencereleri oluşturma](creating-document-frame-windows.md)
 
-- [Çerçeve pencere stilleri](../mfc/frame-window-styles-cpp.md)
+- [Çerçeve pencere stilleri](frame-window-styles-cpp.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
+[Çerçeve pencerelerini kullanma](using-frame-windows.md)

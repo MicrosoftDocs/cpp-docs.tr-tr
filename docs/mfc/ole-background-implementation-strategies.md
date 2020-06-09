@@ -1,43 +1,43 @@
 ---
-title: 'OLE arka planı: Uygulama stratejileri'
+title: 'OLE Arka Planı: Uygulama Stratejileri'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE [MFC], development strategy
 - OLE applications [MFC], implementing OLE
 - applications [OLE], implementing OLE
 ms.assetid: 0875ddae-99df-488c-82c6-164074a81058
-ms.openlocfilehash: 83a1089ecaaaa9bd0dd1d928cd3d1869e5017a4a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90517f9b37872dd7de0ce1a2d08da94c93e6f8f8
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62186871"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619893"
 ---
-# <a name="ole-background-implementation-strategies"></a>OLE arka planı: Uygulama stratejileri
+# <a name="ole-background-implementation-strategies"></a>OLE Arka Planı: Uygulama Stratejileri
 
-Uygulamanızın bağlı olarak, dört olası uygulama stratejileri OLE desteği ekleme vardır:
+Uygulamanıza bağlı olarak OLE desteği eklemek için dört olası uygulama stratejisi vardır:
 
-- Yeni bir uygulama yazıyorsunuz.
+- Yeni bir uygulama yazıyor.
 
-   Bu durum genellikle en az gerektirir çalışır. MFC Uygulama Sihirbazı'nı çalıştırın ve Gelişmiş Özellikler veya bileşik belge desteği iskelet bir uygulama oluşturulacağını seçin. Bu seçeneklerin ve ne hakkında daha fazla bilgi için bkz [bir MFC EXE Program oluşturma](../mfc/reference/mfc-application-wizard.md).
+   Bu durum genellikle en az iş gerektirir. Bir çatı uygulaması oluşturmak için MFC Uygulama Sihirbazı 'Nı çalıştırın ve gelişmiş özellikler ya da bileşik belge desteği ' ni seçin. Bu seçenekler ve ne yaptıkları hakkında daha fazla bilgi için, [MFC exe programı oluşturma](reference/mfc-application-wizard.md)makalesine bakın.
 
-- Microsoft Foundation Class Kitaplığı ile sürüm 2.0 veya üstü OLE desteklemiyor bir program var.
+- Microsoft Foundation Class Kitaplığı sürüm 2,0 veya sonraki bir sürümü ile yazılmış bir programınız var ve OLE 'yi desteklemez.
 
-   MFC Uygulama Sihirbazı daha önce belirtildiği gibi yeni bir uygulama oluşturun ve daha sonra kopyalayın ve yeni uygulama kodunu mevcut uygulamanıza yapıştırın. Bu sunucular, kapsayıcıları veya otomatik uygulamalar için çalışır. MFC bkz [KARALAMA](../overview/visual-cpp-samples.md) örnek bu strateji ilişkin bir örnek.
+   Daha önce belirtildiği gibi MFC Uygulama Sihirbazı ile yeni bir uygulama oluşturun ve ardından yeni uygulamadan kodu kopyalayıp mevcut uygulamanıza yapıştırın. Bu, sunucular, kapsayıcılar veya otomatikleştirilmiş uygulamalar için çalışacaktır. Bu stratejinin bir örneği için bkz. MFC [karalama](../overview/visual-cpp-samples.md) örneği.
 
-- OLE sürüm 1.0 desteği uygulayan Microsoft Foundation Class Kitaplığı programı var.
+- OLE sürüm 1,0 desteğini uygulayan bir Microsoft Foundation Class Kitaplığı programınız vardır.
 
-   Bkz: [MFC Teknik Notu 41](../mfc/tn041-mfc-ole1-migration-to-mfc-ole-2.md) bu dönüştürme stratejisi.
+   Bu dönüştürme stratejisi için bkz. [MFC teknik notunun 41](tn041-mfc-ole1-migration-to-mfc-ole-2.md) .
 
-- Sahip olduğunuz bir uygulama, Microsoft Foundation sınıfları kullanarak yazılmadı ve olabilir veya OLE desteği uygulanmadı.
+- Microsoft Foundation Sınıfları kullanılarak yazılmayan ve OLE desteği uygulanmamış veya uygulamamamış bir uygulamanız var.
 
-   Bu durum, en fazla iş gerektirir. Bir ilk strateji, olduğu gibi yeni bir uygulama oluşturun ve ardından kopyalayıp mevcut kod içine bir yaklaşımdır. Mevcut kodunuzu C yazılmışsa, C++ kodu olarak derle şekilde değiştirmeniz gerekebilir. Ardından, C kodu Windows API çağırırsa, Microsoft Foundation sınıfları kullanmak için değiştirmeniz gerekmez. Büyük olasılıkla bu yaklaşım bazı sürümleri 2.0 ve üzeri Microsoft Foundation sınıfları tarafından kullanılan belge/görünüm mimarisi desteği için programınızın alanlarını yeniden yapılandırma gerektirir. Bu mimari hakkında daha fazla bilgi için bkz. [Teknik Not 25](../mfc/tn025-document-view-and-frame-creation.md).
+   Bu durum, en çok iş gerektirir. Bir yaklaşım, İlk stratejide olduğu gibi yeni bir uygulama oluşturmak ve ardından var olan kodunuzu kopyalayıp içine yapıştırmaktır. Mevcut kodunuz C dilinde yazılmışsa, C++ kodu olarak derlemek için onu değiştirmeniz gerekebilir. C kodunuz Windows API 'sini çağırırsa, Microsoft Foundation sınıflarını kullanmak için bunu değiştirmeniz gerekmez. Bu yaklaşım büyük olasılıkla, 2,0 ve Microsoft Foundation Sınıfları üzeri sürümleri tarafından kullanılan belge/görünüm mimarisini desteklemek için programınızı yeniden yapılandırma gerektirir. Bu mimari hakkında daha fazla bilgi için bkz. [teknik nota 25](tn025-document-view-and-frame-creation.md).
 
-Bir stratejisi verdikten sonra her iki okuma gereken [kapsayıcıları](../mfc/containers.md) veya [sunucuları](../mfc/servers.md) makaleler (yazdığınız uygulama türünü bağlı olarak) veya örnek programlardan veya her ikisi de inceleyin. MFC OLE örnekleri [OCLIENT](../overview/visual-cpp-samples.md) ve [HIERSVR](../overview/visual-cpp-samples.md) nasıl kapsayıcılar ve sunucular, çeşitli yönlerini sırasıyla uygulandığını göstermektedir. Bu makaleler boyunca çeşitli noktalarda belirli işlevlere Bu örnekte açıklanan teknikleri örnekleri olarak anılacaktır.
+Bir stratejiye karar verdikten sonra [kapsayıcıları](containers.md) veya [sunucu](servers.md) makalelerini (yazmakta olduğunuz uygulamanın türüne bağlı olarak) veya örnek programları ya da her ikisini birden okumanız gerekir. MFC OLE örnekleri [Oclient](../overview/visual-cpp-samples.md) ve [hiersvr](../overview/visual-cpp-samples.md) , kapsayıcılar ve sunucuların çeşitli yönlerini sırasıyla nasıl uygulanacağını gösterir. Bu makalelerin tamamında çeşitli noktalarda, ele alınan tekniklerin örnekleri olarak bu örneklerde belirli işlevlere bahsedilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE Arka Planı](../mfc/ole-background.md)<br/>
-[Kapsayıcılar: Bir kapsayıcı uygulama](../mfc/containers-implementing-a-container.md)<br/>
-[Sunucular: Sunucu uygulama](../mfc/servers-implementing-a-server.md)<br/>
-[MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md)
+[OLE arka planı](ole-background.md)<br/>
+[Kapsayıcılar: Bir Kapsayıcı Uygulama](containers-implementing-a-container.md)<br/>
+[Sunucular: Sunucu Uygulama](servers-implementing-a-server.md)<br/>
+[MFC Uygulama Sihirbazı](reference/mfc-application-wizard.md)

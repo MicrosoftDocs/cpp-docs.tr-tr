@@ -8,46 +8,46 @@ helpviewer_keywords:
 - controlling progress controls [MFC]
 - CProgressCtrl class [MFC], using
 ms.assetid: 9af561d1-980b-4003-a6da-ff79be15bf23
-ms.openlocfilehash: c9da6f8048adf1c7da184570ff7f94deee7441e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3e3521a82854a85062f9b06bc33eb268d4b9c7a6
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279196"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84622429"
 ---
 # <a name="manipulating-the-progress-control"></a>İlerleme Durumu Denetimini Düzenleme
 
-İlerleme denetimi konumunu değiştirmek için üç yol vardır ([CProgressCtrl](../mfc/reference/cprogressctrl-class.md)).
+İlerleme denetiminin geçerli konumunu değiştirmek için üç yol vardır ([CProgressCtrl](reference/cprogressctrl-class.md)).
 
-- Konumu, bir önayarlı artışı miktarda değiştirilebilir.
+- Konum, önceden ayarlanmış bir artış miktarı ile değiştirilebilir.
 
-- Konumu rastgele bir miktarda değiştirilebilir.
+- Konum, rastgele bir miktar ile değiştirilebilir.
 
-- Belirli bir değere konumu değiştirilebilir.
+- Konum belirli bir değere değiştirilebilir.
 
-### <a name="to-change-the-position-by-a-preset-amount"></a>Önceden oluşturulmuş bir miktarda konumunu değiştirmek için
+### <a name="to-change-the-position-by-a-preset-amount"></a>Konumu önceden ayarlanmış bir miktara göre değiştirmek için
 
-1. Kullanım [SetStep](../mfc/reference/cprogressctrl-class.md#setstep) artışı ayarlama üye işlevi. Varsayılan olarak, bu değer 10'dur. Bu değer genellikle Denetim ve ilk ayarları biri olarak ayarlayın. Adım değeri negatif olabilir.
+1. Artış miktarını ayarlamak için [SetStep](reference/cprogressctrl-class.md#setstep) member işlevini kullanın. Varsayılan olarak, bu değer 10 ' dur. Bu değer genellikle denetimin ilk ayarlarından biri olarak ayarlanır. Adım değeri negatif olabilir.
 
-1. Kullanım [StepIt](../mfc/reference/cprogressctrl-class.md#stepit) konumu artırmak için üye işlevi. Bu, denetimin çizilmeyi neden olur.
-
-    > [!NOTE]
-    >  `StepIt` kaydırmak için konumun neden olur. Örneğin, bir aralık 1 -100, 20 bir adım ve 90, konumunu, verilen `StepIt` konumu 10'a ayarlanır.
-
-### <a name="to-change-the-position-by-an-arbitrary-amount"></a>Rastgele bir miktarda konumunu değiştirmek için
-
-1. Kullanım [OffsetPos](../mfc/reference/cprogressctrl-class.md#offsetpos) konumunu değiştirmek için üye işlevi. `OffsetPos` negatif değerler kabul eder.
+1. Konumu artırmak için [Stepit](reference/cprogressctrl-class.md#stepit) üye işlevini kullanın. Bu, denetimin kendisini yeniden çizmesine neden olur.
 
     > [!NOTE]
-    >  `OffsetPos`, farklı `StepIt`, konumu desteklemez. Yeni konumunu aralıkta kalması için ayarlanır.
+    >  `StepIt`, konumun kaydırılmasına neden olur. Örneğin, bir 1 -100 aralığı, bir adım 20 ve 90 konumu verildiğinde, `StepIt` Konum 10 olarak ayarlanır.
 
-### <a name="to-change-the-position-to-a-specific-value"></a>Belirli bir değere konumunu değiştirmek için
+### <a name="to-change-the-position-by-an-arbitrary-amount"></a>Konumu rastgele bir miktara göre değiştirmek için
 
-1. Kullanım [SetPos](../mfc/reference/cprogressctrl-class.md#setpos) konumu belirli bir değere ayarlamak için üye işlevi. Gerekirse, yeni konumunu aralığında olacak şekilde ayarlanır.
+1. Konumu değiştirmek için [OffsetPos](reference/cprogressctrl-class.md#offsetpos) member işlevini kullanın. `OffsetPos`negatif değerleri kabul eder.
 
-Genellikle, ilerleme durumu denetimini yalnızca çıktı için kullanılır. Yeni bir değer belirtmeden geçerli konumunu almak için kullanın [GetPos](../mfc/reference/cprogressctrl-class.md#getpos).
+    > [!NOTE]
+    >  `OffsetPos`, aksine `StepIt` konumu kaydıramaz. Yeni konum, Aralık içinde kalacak şekilde ayarlanır.
+
+### <a name="to-change-the-position-to-a-specific-value"></a>Konumu belirli bir değere değiştirmek için
+
+1. Konumu belirli bir değere ayarlamak için [SetPos](reference/cprogressctrl-class.md#setpos) üye işlevini kullanın. Gerekirse, yeni konum Aralık dahilinde olacak şekilde ayarlanır.
+
+Genellikle, ilerleme denetimi yalnızca çıkış için kullanılır. Yeni bir değer belirtmeden geçerli konumu almak için [GetPos](reference/cprogressctrl-class.md#getpos)kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CProgressCtrl Kullanma](../mfc/using-cprogressctrl.md)<br/>
-[Denetimler](../mfc/controls-mfc.md)
+[CProgressCtrl Kullanma](using-cprogressctrl.md)<br/>
+[Denetimler](controls-mfc.md)

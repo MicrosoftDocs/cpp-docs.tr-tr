@@ -11,31 +11,31 @@ helpviewer_keywords:
 - printing [MFC], headers and footers
 - page footers [MFC]
 ms.assetid: b0be9c53-5773-4955-a777-3c15da745128
-ms.openlocfilehash: 1e2e57331ccbc7f0afd7b82dc035410af495abd8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7024c57dbe41a579582d409d0536db0ca0bc46d6
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62297235"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84620103"
 ---
 # <a name="headers-and-footers"></a>Üstbilgiler ve Altbilgiler
 
-Bu makalede, üstbilgiler ve altbilgiler yazdırılmış bir belgeye ekleme açıklanmaktadır.
+Bu makalede, yazdırılan bir belgeye üst bilgilerin ve altbilgilerin nasıl ekleneceği açıklanmaktadır.
 
-Ekranda bir belgeye baktığınızda, belge ve belgedeki konumunuzu adı genellikle görüntülenir başlık çubuğu ve durum çubuğu. Bir belgenin basılı kopya aranırken bir üstbilgisinde veya altbilgisinde gösterilen ad ve sayfa numarası kullanışlıdır. Bu, hangi bile WYSIWYG içinde nasıl yazdırma ve ekran görüntüsünü gerçekleştirdikleri içinde programlar farklı genel bir yoludur.
+Ekrandaki bir belgeye baktığınızda, belgenin adı ve belgedeki geçerli konumunuz genellikle başlık çubuğunda ve durum çubuğunda görüntülenir. Belgenin yazdırılmış bir kopyasına baktığınızda, bir üst bilgi veya alt bilgide gösterilen ad ve sayfa numarası olması yararlı olur. Bu, hatta WYSıWYG programlarının yazdırma ve ekran görüntüleme gerçekleştirdiklerinde farklılık gösterdiği yaygın bir yoldur.
 
-[OnPrint](../mfc/reference/cview-class.md#onprint) üye işlev, her sayfa için çağrıldığından ve ekran için değil, yazdırma işlemi için yalnızca çağrıldığından üstbilgilerinde veya altbilgilerinde yazdırmak için uygun bir yerde. Üstbilgisindeki veya altbilgisindeki yazdırmak için ayrı bir fonksiyon tanımlayın ve yazıcı cihaz bağlamdan geçirmek `OnPrint`. Pencere başlangıç nebo mez çağırmadan önce ayarlamanız gerekebilir [OnDraw](../mfc/reference/cview-class.md#ondraw) sayfa üstbilgisinde veya altbilgisinde çakışma gövdesi olmamasına özen gösterin. Değiştirmeniz gerekebilir `OnDraw` sayfasında uygun belge miktarını azaltılabilir olduğundan.
+[OnPrint](reference/cview-class.md#onprint) üye işlevi, her sayfa için çağrıldığı ve yalnızca yazdırma için çağrılmakta olduğu için, ekran görüntüsü için değil, üst bilgileri veya altbilgileri yazdırmak için uygun bir yerdir. Üst bilgi veya alt bilgi yazdırmak için ayrı bir işlev tanımlayabilir ve yazıcı cihazı bağlamını ' den geçirebilirsiniz `OnPrint` . Sayfa gövdesinin üst bilgi veya altbilgiyle örtüşmesini önlemek için [OnDraw](reference/cview-class.md#ondraw) çağrılmadan önce pencere kaynağını veya kapsamını ayarlamanız gerekebilir. Ayrıca, `OnDraw` sayfaya sığan belge miktarı azaltılamadığından değiştirmeniz gerekebilir.
 
-Üstbilginin veya altbilginin tarafından gerçekleştirilen alan kullanmak için dengelemek için tek yönlü **m_rectDraw** üyesi [Cprintınfo](../mfc/reference/cprintinfo-structure.md). Her zaman bir sayfa yazdırıldığında, bu üye sayfa kullanılabilir alanı ile başlatılır. Üstbilgisindeki veya altbilgisindeki sayfasının gövdesi yazdırmadan önce baskı, depolanan dikdörtgen boyutunu azaltabilirsiniz **m_rectDraw** üstbilgisindeki veya altbilgisindeki tarafından gerçekleştirilen alan hesaba. Ardından `OnPrint` başvurabilir **m_rectDraw** sayfasının gövdesi yazdırmak için ne kadar alan kalır kullanıma bulunacak.
+Üst bilgi veya alt bilgi tarafından alınan alanı telafi etmenin bir yolu, [CPrintInfo](reference/cprintinfo-structure.md) **m_rectDraw** üyesini kullanmaktır. Sayfanın her yazdırılışında, bu üye sayfanın kullanılabilir alanıyla başlatılır. Sayfanın gövdesini yazdırmadan önce bir üst bilgi veya alt bilgi yazdırırsanız, üst bilgi veya alt bilgi tarafından alınan alana **m_rectDraw** için depolanan dikdörtgenin boyutunu azaltabilirsiniz. Ardından `OnPrint` , sayfanın gövdesini yazdırmak için ne kadar alan kaldığını öğrenmek için **m_rectDraw** 'ye başvurabilirsiniz.
 
-Bir üst bilgi veya alanından başka bir şey yazdıramıyorum [OnPrepareDC](../mfc/reference/cview-class.md#onpreparedc), önce çağrıldığından `StartPage` üye işlevinin [CDC](../mfc/reference/cdc-class.md) çağrıldı. Bu noktada, yazıcı cihaz bağlamı bir sayfa sınırında olarak kabul edilir. Yazdırma yalnızca gerçekleştirebileceğiniz `OnPrint` üye işlevi.
+[Onhazırlık EDC](reference/cview-class.md#onpreparedc)'den bir üst bilgiyi ya da başka bir şeyi yazdıramazsınız çünkü `StartPage` [CDC](reference/cdc-class.md) üye işlevi çağrılmadan önce çağrılır. Bu noktada, yazıcı cihaz bağlamı sayfa sınırında olduğu kabul edilir. Yalnızca `OnPrint` üye işlevden yazdırma yapabilirsiniz.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Birden çok belge yazdırma](../mfc/multipage-documents.md)
+- [Çok sayfalı belgeleri yazdırma](multipage-documents.md)
 
-- [Yazdırma için GDI kaynaklarını ayırma](../mfc/allocating-gdi-resources.md)
+- [Yazdırma için GDI kaynaklarını ayırma](allocating-gdi-resources.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yazdırma](../mfc/printing.md)
+[Yazdırma](printing.md)

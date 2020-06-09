@@ -10,31 +10,31 @@ helpviewer_keywords:
 - document frame windows [MFC], creating
 - MFC, frame windows
 ms.assetid: 8671e239-b76f-4dea-afa8-7024e6e58ff5
-ms.openlocfilehash: 66a951994a75cbd99debeb2c6511739411cdd470
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e15a2a6bc016bf23bc0decf529b4c3ffeecc3a4c
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62174035"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84621957"
 ---
 # <a name="creating-document-frame-windows"></a>Belge Çerçeve Pencereleri Oluşturma
 
-[Belge/görünüm oluşturma](../mfc/document-view-creation.md) gösterir nasıl [CDocTemplate](../mfc/reference/cdoctemplate-class.md) çerçeve penceresi, belge ve görünüm oluşturma ve bunları tüm birbirine bağlama nesnesi düzenler. Üç [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) bağımsız değişkenleri `CDocTemplate` Oluşturucusu belirtin çerçeve penceresi, belge ve görünüm sınıfları, belge şablonunu yanıt olarak yeni dosya komutu gibi kullanıcı komutları dinamik olarak oluşturur. menü veya bir MDI Pencere menüsünden Yeni bir pencere komutu. Bir görünümü ve belge çerçeve penceresi oluşturduğunda, belge şablonunu bu bilgiler daha sonra kullanmak için depolar.
+[Belge/görünüm oluşturma](document-view-creation.md) , [CDocTemplate](reference/cdoctemplate-class.md) nesnesinin çerçeve penceresi, belge ve görüntüleme ve bunların tümünü birlikte nasıl oluşturup birbirine bağlama şeklini gösterir. Oluşturucuya yapılan üç [CRuntimeClass](reference/cruntimeclass-structure.md) bağımsız değişkeni, `CDocTemplate` belge şablonunun Dosya menüsündeki yeni komut veya bir MDI Pencere menüsünde yeni pencere komutu gibi Kullanıcı komutlarına yanıt olarak dinamik olarak oluşturduğu çerçeve penceresini, belge ve görünüm sınıflarını belirler. Belge şablonu, bir görünüm ve belge için bir çerçeve penceresi oluşturduğunda bu bilgileri daha sonra kullanmak üzere depolar.
 
-İçin [RUNTIME_CLASS](../mfc/reference/run-time-object-model-services.md#runtime_class) mekanizması düzgün türetilmiş çalışmaya çerçeve penceresi sınıfları ile bildirilmelidir [DECLARE_DYNCREATE](../mfc/reference/run-time-object-model-services.md#declare_dyncreate) makrosu. Belge çerçeve pencereleri sınıfın dinamik oluşturma mekanizması kullanarak oluşturmak framework gerekli olmasıdır `CObject`.
+[RUNTIME_CLASS](reference/run-time-object-model-services.md#runtime_class) mekanizmanın doğru çalışması için, türetilmiş çerçeve pencere sınıflarınız [DECLARE_DYNCREATE](reference/run-time-object-model-services.md#declare_dyncreate) makroyla bildirilmelidir. Bunun nedeni, Framework 'ün sınıfının dinamik oluşturma mekanizmasını kullanarak belge çerçevesi pencerelerini oluşturması gereksinimidir `CObject` .
 
-Kullanıcı bir belgeyi oluşturur bir komutu seçtiğinde framework görünümde görüntülenecek çerçeve penceresi belge nesnesi ve onun görünümü oluşturmak için belge şablonunu çağırır. Belge çerçeve penceresi oluşturur, belge şablonunu uygun sınıfın bir nesnesi oluşturur — öğesinden türetilmiş bir sınıf [CFrameWnd](../mfc/reference/cframewnd-class.md) bir SDI uygulaması veya gelen [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) MDI için uygulama. Framework ardından çerçeve pencere çağıran [LoadFrame](../mfc/reference/cframewnd-class.md#loadframe) kaynaklardan oluşturma bilgileri edinin ve Windows penceresi oluşturmak için üye işlevi. Çerçeve pencere tanıtıcısı çerçeve pencere nesnesine iliştirir. Ardından belge çerçevesi penceresinin alt pencere olarak görünümü oluşturur.
+Kullanıcı bir belge oluşturan bir komut seçtiğinde, çerçeve belge şablonunu, görünümünü ve görünümünü görüntüleyen çerçeve penceresini oluşturmak için belge şablonu üzerinde çağırır. Belge çerçevesi penceresi oluşturduğunda, belge şablonu bir SDI uygulaması için [CFrameWnd](reference/cframewnd-class.md) 'den türetilmiş bir sınıf veya bir MDI uygulaması Için [Cmdictepdwnd](reference/cmdichildwnd-class.md) öğesinden bir nesne oluşturur. Daha sonra Framework, kaynaklardan oluşturma bilgilerini almak ve Windows penceresini oluşturmak için çerçeve pencere nesnesinin [LoadFrame](reference/cframewnd-class.md#loadframe) üye işlevini çağırır. Framework pencere tanıtıcısını çerçeve pencere nesnesine iliştirir. Ardından, görünümü belge çerçevesi penceresinin alt penceresi olarak oluşturur.
 
-Karar dikkatli olun [başlatılacağı zaman](../mfc/when-to-initialize-cwnd-objects.md) , `CWnd`-türetilmiş bir nesneye.
+Türetilmiş nesnenizin [ne zaman başlatılacağını seçerken](when-to-initialize-cwnd-objects.md) dikkatli olun `CWnd` .
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [(Kendi dinamik oluşturma mekanizması) CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md)
+- [CObject 'ten sınıf türetme (dinamik oluşturma mekanizması)](deriving-a-class-from-cobject.md)
 
-- [Belge/görünüm oluşturma (şablon ve çerçeve penceresi oluşturma)](../mfc/document-view-creation.md)
+- [Belge/görünüm oluşturma (Şablonlar ve çerçeve penceresi oluşturma)](document-view-creation.md)
 
-- [Çerçeve pencerelerini yok etme](../mfc/destroying-frame-windows.md)
+- [Çerçeve pencerelerini yok etme](destroying-frame-windows.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
+[Çerçeve pencerelerini kullanma](using-frame-windows.md)

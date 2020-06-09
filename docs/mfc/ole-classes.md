@@ -9,47 +9,47 @@ helpviewer_keywords:
 - OLE classes [MFC]
 - OLE [MFC], classes
 ms.assetid: 4c2b2bca-fafb-4d2d-8498-9ed1e04011d2
-ms.openlocfilehash: 69eb604b3a343fd135c76a4bb3c17245ece62092
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 039f60f98a9109ca578b52db7d087a22d0440808
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62186410"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84617848"
 ---
 # <a name="ole-classes"></a>OLE Sınıfları
 
-OLE sınıfları ActiveX programlarınızın kullanıcılarınıza ActiveX gücünü sağlamak için kolay bir yol vererek API kolay erişim sağlamak için diğer uygulama framework sınıfları ile çalışır. ActiveX kullanarak şunları yapabilirsiniz:
+OLE sınıfları, ActiveX API 'sine kolay erişim sağlamak için diğer uygulama çerçevesi sınıflarıyla birlikte çalışarak, programlarınıza ActiveX 'in kullanıcılarınıza yönelik gücünü sağlamak için kolay bir yol sağlar. ActiveX kullanarak şunları yapabilirsiniz:
 
-- Metin, grafik, elektronik tablolar, ses, birden çok uygulama tarafından oluşturulan veriler içeren belgeleri oluşturmak ve düzenlemek kullanıcıların bileşik belgeler veya diğer veri türleri oluşturun.
+- Kullanıcıların metin, grafik, elektronik tablolar, ses veya diğer veri türleri gibi birden çok uygulama tarafından oluşturulan verileri içeren belgeler oluşturmalarına ve düzenlemesine olanak sağlayan bileşik belgeler oluşturun.
 
-- Bileşik belgelerinde katıştırılmış OLE nesnelerine oluşturun.
+- Bileşik belgelere katıştırılabilen OLE nesneleri oluşturun.
 
-- OLE sürükle ve bırak uygulamalar arasında veri kopyalamak için kullanın.
+- Uygulamalar arasında veri kopyalamak için OLE sürükle ve bırak kullanın.
 
-- Otomasyon ile başka bir program denetlemek için kullanın.
+- Bir programı başka bir programla denetlemek için Otomasyon kullanın.
 
-- ActiveX denetimleri ve ActiveX denetim kapsayıcıları (OLE denetimleri ve OLE denetimi kapsayıcıları, sırasıyla adıysa) oluşturun.
+- ActiveX denetimleri ve ActiveX denetim kapsayıcıları (eski adıyla OLE denetimleri ve OLE denetim kapsayıcıları olarak adlandırılır) oluşturun.
 
-ActiveX sınıfları aşağıdaki kategorileri destekler:
+Aşağıdaki sınıf kategorileri ActiveX 'i destekler:
 
-- [OLE Kapsayıcı Sınıfları](../mfc/ole-container-classes.md)
+- [OLE kapsayıcı sınıfları](ole-container-classes.md)
 
-- [OLE Sunucu Sınıfları](../mfc/ole-server-classes.md)
+- [OLE sunucu sınıfları](ole-server-classes.md)
 
-- [OLE Sürükle/Bırak ve Veri Aktarımı Sınıfları](../mfc/ole-drag-and-drop-and-data-transfer-classes.md)
+- [OLE sürükle ve bırak ve Veri Aktarımı sınıfları](ole-drag-and-drop-and-data-transfer-classes.md)
 
-- [OLE Ortak İletişim Kutusu Sınıfları](../mfc/ole-common-dialog-classes.md)
+- [OLE Ortak İletişim Kutusu Sınıfları](ole-common-dialog-classes.md)
 
-- [OLE Otomasyon Sınıfları](../mfc/ole-automation-classes.md)
+- [OLE Otomasyon Sınıfları](ole-automation-classes.md)
 
-- [OLE Denetim Sınıfları](../mfc/ole-control-classes.md)
+- [OLE Denetim Sınıfları](ole-control-classes.md)
 
-- [Etkin Belge Sınıfları](../mfc/active-document-classes.md)
+- [Etkin Belge Sınıfları](active-document-classes.md)
 
-- [OLE İle İlgili Sınıflar](../mfc/ole-related-classes.md)
+- [OLE ile Ilgili sınıflar](ole-related-classes.md)
 
-Bir sınıfın kalıtımını görmek için [sınıf hiyerarşisi grafiği](../mfc/hierarchy-chart.md).
+Bir sınıfın devralınmasını görmek için [sınıf hiyerarşisi grafiğini](hierarchy-chart.md)kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](class-library-overview.md)

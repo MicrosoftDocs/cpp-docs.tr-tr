@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: Uygulama düğmesini özelleştirme'
+title: 'Nasıl yapılır: Uygulama Düğmesini Özelleştirme'
 ms.date: 09/07/2019
 helpviewer_keywords:
 - application button [MFC], customizing
 ms.assetid: ebb11180-ab20-43df-a234-801feca9eb38
-ms.openlocfilehash: 3a1d1625e80e6c6f4440864629a5123bed5744c7
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: 9160e602848adf8dc95c840d702e0b1a1b2f9049
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907797"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84620036"
 ---
-# <a name="how-to-customize-the-application-button"></a>Nasıl yapılır: Uygulama düğmesini özelleştirme
+# <a name="how-to-customize-the-application-button"></a>Nasıl yapılır: Uygulama Düğmesini Özelleştirme
 
 Uygulama düğmesine tıkladığınızda bir komut menüsü görüntülenir. Genellikle, menü **açma**, **kaydetme**, **yazdırma**ve **Çıkış**gibi dosyayla ilgili komutlar içerir.
 
@@ -34,13 +34,13 @@ Aşağıdaki tablo, uygulama düğmesinin özelliklerini tanımlar.
 |Özellik|Tanım|
 |--------------|----------------|
 |**Düğmeler**|Uygulama menüsünün sağ alt köşesinde görüntülenen en fazla üç düğme koleksiyonunu içerir.|
-|**Başlığını**|Denetimin metnini belirtir. Diğer şerit öğelerinden farklı olarak, uygulama düğmesi açıklamalı alt yazı metnini görüntülemez. Bunun yerine, metin erişilebilirlik için kullanılır.|
+|**Başlık**|Denetimin metnini belirtir. Diğer şerit öğelerinden farklı olarak, uygulama düğmesi açıklamalı alt yazı metnini görüntülemez. Bunun yerine, metin erişilebilirlik için kullanılır.|
 |**HDPı resmi**|İnç başına yüksek nokta (HDPı) uygulaması düğme simgesinin tanımlayıcısını belirtir. Uygulama yüksek DPı monitörde çalıştığında, **görüntü**yerine **HDPI görüntüsü** kullanılır.|
 |**HDPI büyük görüntüler**|Yüksek DPı büyük görüntülerinin tanımlayıcısını belirtir. Uygulama yüksek DPı bir monitörde çalıştırıldığında, **büyük görüntüler**yerine **hdpi büyük görüntüleri** kullanılır.|
 |**HDPI küçük görüntüler**|Yüksek DPı küçük görüntülerinin tanımlayıcısını belirtir. Uygulama yüksek DPı monitörde çalıştığında, **küçük görüntüler**yerine **hdpi küçük görüntüler** kullanılır.|
 |**ID**|Denetimin tanımlayıcısını belirtir.|
-|**Görüntü**|Uygulama düğmesi simgesinin tanımlayıcısını belirtir. Simge, Alfa saydamlığına sahip 32 bitlik bir 26x26 bit eşlemdir. Simgenin saydam kısımları, uygulama düğmesine tıklandığında veya üzerine gelindiğinde vurgulanacaktır.|
-|**Belirlenmesine**|Anahtar ipucu gezintisi etkinleştirildiğinde görüntülenen dizeyi belirtir. ALT tuşuna bastığınızda anahtar ipucu gezintisi etkinleştirilir.|
+|**Görüntüyle**|Uygulama düğmesi simgesinin tanımlayıcısını belirtir. Simge, Alfa saydamlığına sahip 32 bitlik bir 26x26 bit eşlemdir. Simgenin saydam kısımları, uygulama düğmesine tıklandığında veya üzerine gelindiğinde vurgulanacaktır.|
+|**Anahtarlar**|Anahtar ipucu gezintisi etkinleştirildiğinde görüntülenen dizeyi belirtir. ALT tuşuna bastığınızda anahtar ipucu gezintisi etkinleştirilir.|
 |**Büyük görüntüler**|Bir dizi 32x32 simgesini içeren görüntünün tanımlayıcısını belirtir. Simgeler, ana öğeler koleksiyonundaki düğmeler tarafından kullanılır.|
 |**Ana öğeler**|Uygulama menüsünde görünen bir menü öğeleri koleksiyonu içerir.|
 |**MRU başlığı**|Son kullanılan liste panelinde görüntülenen metni belirtir.|
@@ -56,4 +56,4 @@ Uygulama menüsü tasarım yüzeyinde görünmez. Bunu görüntülemek için, ş
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md)
+[Şerit Tasarımcısı (MFC)](ribbon-designer-mfc.md)

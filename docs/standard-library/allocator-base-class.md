@@ -38,18 +38,18 @@ helpviewer_keywords:
 - stdext::allocator_base [C++], destroy
 - stdext::allocator_base [C++], max_size
 ms.assetid: f920b45f-2a88-4bb0-8ead-b6126b426ed4
-ms.openlocfilehash: f93c8ff53452fc98415e194966960254e7b44143
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b55a7ec92787cb6b3103bf71b65d137d24ffff04
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364992"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84617582"
 ---
 # <a name="allocator_base-class"></a>allocator_base Sınıfı
 
-Eşitleme filtresinden kullanıcı tanımlı bir ayırıcı oluşturmak için gereken taban sınıf ve ortak işlevleri tanımlar.
+Bir eşitleme filtresinden Kullanıcı tanımlı bir ayırıcı oluşturmak için gereken temel sınıfı ve ortak işlevleri tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Type, class Sync>
@@ -61,48 +61,48 @@ class allocator_base
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*Tür*|Ayırıcı tarafından ayrılan öğelerin türü.|
-|*Eşitle*|[Sınıf,](../standard-library/sync-none-class.md) [sync_per_container Sınıfı](../standard-library/sync-per-container-class.md), [sync_per_thread Sınıfı](../standard-library/sync-per-thread-class.md)veya sync_shared [Sınıfı](../standard-library/sync-shared-class.md)sync_none olan ayırıcı için eşitleme ilkesi.|
+|*Eşitle*|Ayırıcı için [Sync_none Class](sync-none-class.md), [Sync_per_container Class](sync-per-container-class.md) [sync_per_thread Class](sync-per-thread-class.md)veya [sync_shared sınıfı](sync-shared-class.md)olan eşitleme ilkesi.|
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[allocator_base](#allocator_base)|Türünde `allocator_base`bir nesne oluşturuyor.|
+|[allocator_base](#allocator_base)|Türünde bir nesne oluşturur `allocator_base` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[Const_pointer](#const_pointer)|Ayırıcı tarafından yönetilen nesne türüne sabit bir işaretçi sağlayan bir tür.|
+|[const_pointer](#const_pointer)|Ayırıcı tarafından yönetilen nesne türüne sabit bir işaretçi sağlayan bir tür.|
 |[const_reference](#const_reference)|Ayırıcı tarafından yönetilen nesne türüne sabit bir başvuru sağlayan bir tür.|
-|[difference_type](#difference_type)|Ayırıcı tarafından yönetilen nesne türüne işaretçilerin değerleri arasındaki farkı temsil eden imzalı bir integral türü.|
+|[difference_type](#difference_type)|Ayırıcı tarafından yönetilen nesne türüne yönelik işaretçilerin değerleri arasındaki farkı temsil eden, işaretli bir tamsayı türü.|
 |[pointer](#pointer)|Ayırıcı tarafından yönetilen nesne türüne işaretçi sağlayan bir tür.|
-|[Başvuru](#reference)|Ayırıcı tarafından yönetilen nesne türüne başvuru sağlayan bir tür.|
-|[size_type](#size_type)|Bir tür `allocator_base` nesnenin ayırabileceği herhangi bir dizinin uzunluğunu temsil eden imzalanmamış bir integral türü.|
+|[başvurunun](#reference)|Ayırıcı tarafından yönetilen nesne türüne başvuru sağlayan bir tür.|
+|[size_type](#size_type)|Türünde bir nesnenin ayırabilecek herhangi bir dizinin uzunluğunu temsil eden işaretsiz bir tamsayı türü `allocator_base` .|
 |[value_type](#value_type)|Ayırıcı tarafından yönetilen bir tür.|
 
-### <a name="member-functions"></a>Üye işlevler
+### <a name="member-functions"></a>Üye işlevleri
 
-|Üye fonksiyonu|Açıklama|
+|Üye işlevi|Açıklama|
 |-|-|
-|[_Charalloc](#charalloc)|Bir dizi **tür char**için depolama ayırır.|
-|[_Chardealloc](#chardealloc)|Tür **char**öğeleriiçeren dizi için depolama boşaltıyor.|
-|[Adres](#address)|Değeri belirtilen bir nesnenin adresini bulur.|
-|[allocate](#allocate)|En az bazı belirli sayıda öğeyi depolayacak kadar büyük bir bellek bloğu ayırır.|
-|[Oluşturmak](#construct)|Belirli bir değerle başharfe bürünen belirli bir adreste belirli bir nesne türü oluşturuyor.|
-|[Ayırması](#deallocate)|Belirli bir konumdan başlayarak belirli sayıda nesneyi depolamadan serbest sağlar.|
-|[destroy](#destroy)|Nesnenin depolandığı belleği ayırmadan nesneleri yıkıcı çağırır.|
-|[max_size](#max_size)|Serbest bellek kullanılmadan önce sınıf ayırıcıbir nesne tarafından ayrılabilecek *tür türü* öğelerinin sayısını döndürür.|
+|[_Charalloc](#charalloc)|**Char**türünde bir dizi için depolamayı ayırır.|
+|[_Chardealloc](#chardealloc)|**Char**türünde öğeleri içeren dizi için depolamayı boşaltır.|
+|[adrestir](#address)|Değeri belirtilen bir nesnenin adresini bulur.|
+|[allocate](#allocate)|En az bazı sayıda öğe depolamak için yeterince büyük bir bellek bloğu ayırır.|
+|[oluşturma](#construct)|Belirtilen bir değer ile başlatılan belirli bir adreste belirli bir nesne türü oluşturur.|
+|[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
+|[kaldırılır](#destroy)|Nesnenin depolandığı belleği ayırmayı kaldırmadan bir nesne yıkıcısı çağırır.|
+|[max_size](#max_size)|Boş bellek kullanılmadan önce sınıf ayırıcı nesnesi tarafından *ayrılabilecek tür türünde* öğelerin sayısını döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<tahsisörler>
+**Üst bilgi:**\<allocators>
 
 **Ad alanı:** stdext
 
-## <a name="allocator_base_charalloc"></a><a name="charalloc"></a>allocator_base:_Charalloc
+## <a name="allocator_base_charalloc"></a><a name="charalloc"></a>allocator_base:: _Charalloc
 
-Bir dizi **tür char**için depolama ayırır.
+**Char**türünde bir dizi için depolamayı ayırır.
 
 ```cpp
 char *_Charalloc(size_type count);
@@ -112,19 +112,19 @@ char *_Charalloc(size_type count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Sayısı*|Dizideki ayrılacak öğe sayısı.|
+|*biriktirme*|Ayrılacak dizideki öğelerin sayısı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan nesneye işaretçi.
+Ayrılan nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, rebind derleyemeyen bir derleyici ile derlendiğinde kapsayıcılar tarafından kullanılır. Eşitleme `_Charalloc` filtresinin `allocate` işlevine bir çağrının sonucunu döndürerek kullanıcı tanımlı ayırıcı için uygular.
+Bu üye işlevi, yeniden bağlama Derlenemeyen bir derleyici ile derlendikleri zaman kapsayıcı tarafından kullanılır. `_Charalloc`Eşitleme filtresinin işlevine yapılan çağrının sonucunu döndürerek Kullanıcı tanımlı ayırıcıyı uygular `allocate` .
 
-## <a name="allocator_base_chardealloc"></a><a name="chardealloc"></a>allocator_base::_Chardealloc
+## <a name="allocator_base_chardealloc"></a><a name="chardealloc"></a>allocator_base:: _Chardealloc
 
-Tür **char**öğeleriiçeren dizi için depolama boşaltıyor.
+**Char**türünde öğeleri içeren dizi için depolamayı boşaltır.
 
 ```cpp
 void _Chardealloc(void* ptr, size_type count);
@@ -134,14 +134,14 @@ void _Chardealloc(void* ptr, size_type count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Ptr*|Depolamadan ayrılacak ilk nesneye işaretçi.|
-|*Sayısı*|Depolamadan ayrılacak nesne sayısı.|
+|*ptr*|Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.|
+|*biriktirme*|Depolamadan serbest bırakmak için nesne sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, rebind derleyemeyen bir derleyici ile derlendiğinde kapsayıcılar tarafından kullanılır. Senkronizasyon `_Chardealloc` filtresinin `deallocate` işlevini çağırarak kullanıcı tanımlı ayırıcı için uygular. İşaretçi ptr daha önce aynı boyut `_Charalloc` ve türde bir dizi `*this`nesnesi ayıran eşit karşılaştırır bir ayırıcı nesne için bir çağrı tarafından döndürülmüş olması gerekir. `_Chardealloc`asla bir istisna atmaz.
+Bu üye işlevi, yeniden bağlama Derlenemeyen bir derleyici ile derlendikleri zaman kapsayıcı tarafından kullanılır. `_Chardealloc`Eşitleme filtresinin işlevini çağırarak Kullanıcı tanımlı ayırıcıyı uygular `deallocate` . İşaretçi PTR, `_Charalloc` `*this` aynı boyut ve türden bir dizi nesnesi ayırarak, buna eşit olarak karşılaştırdığı bir ayırıcı nesnesi için çağrısı tarafından daha önce döndürülmüş olmalıdır. `_Chardealloc`hiçbir koşulda özel durum oluşturmaz.
 
-## <a name="allocator_baseaddress"></a><a name="address"></a>allocator_base::adres
+## <a name="allocator_baseaddress"></a><a name="address"></a>allocator_base:: adres
 
 Değeri belirtilen bir nesnenin adresini bulur.
 
@@ -153,20 +153,20 @@ const_pointer address(const_reference val);
 
 ### <a name="parameters"></a>Parametreler
 
-*Val*\
+*Acil*\
 Adresi aranmakta olan nesnenin const veya nonconst değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bulunan nesneye const veya nonconst işaretçisi, sırasıyla, const veya nonconst değeri.
+, Sırasıyla const veya nonconst değeri bulunan nesnenin const veya nonconst bir işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, kullanıcı tarafından tanımlanan ayırıcı `&val`için döndürülerek uygulanır.
+Bu üye işlevi, dönerek Kullanıcı tanımlı ayırıcı için uygulanır `&val` .
 
-## <a name="allocator_baseallocate"></a><a name="allocate"></a>allocator_base::allocate
+## <a name="allocator_baseallocate"></a><a name="allocate"></a>allocator_base:: ayır
 
-En az bazı belirli sayıda öğeyi depolayacak kadar büyük bir bellek bloğu ayırır.
+En az bazı sayıda öğe depolamak için yeterince büyük bir bellek bloğu ayırır.
 
 ```cpp
 template <class Other>
@@ -179,20 +179,20 @@ pointer allocate(size_type _Nx);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*_Nx*|Dizideki ayrılacak öğe sayısı.|
+|*_Nx*|Ayrılacak dizideki öğelerin sayısı.|
 |*_Hint*|Bu parametre yoksayıldı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan nesneye işaretçi.
+Ayrılan nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, kullanıcı tanımlı ayırıcı için bellek ayırma yı uygular, `allocate` eğer `*` `_Nx == 1`türünde eşitleme filtresi işlevine bir çağrının sonucunu döndürerek , `*`aksi takdirde türüne `operator new(_Nx * sizeof(Type))` döküm için bir çağrının sonucunu döndürerek .
+Üye işlevi, `allocate` `*` `_Nx == 1` , aksi takdirde tür türüne dönüştürme çağrısının sonucunu döndürerek Kullanıcı `operator new(_Nx * sizeof(Type))` tanımlı ayırıcı için bir çağrının sonucunu döndürerek Kullanıcı tanımlı ayırıcı için bellek ayırmayı uygular `*` .
 
-## <a name="allocator_baseallocator_base"></a><a name="allocator_base"></a>allocator_base::allocator_base
+## <a name="allocator_baseallocator_base"></a><a name="allocator_base"></a>allocator_base:: allocator_base
 
-Türünde `allocator_base`bir nesne oluşturuyor.
+Türünde bir nesne oluşturur `allocator_base` .
 
 ```cpp
 allocator_base();
@@ -205,13 +205,13 @@ allocator_base(const allocator_base<Other, Sync>& right);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Doğru*|Kopyalanacak ayırıcı nesne.|
+|*Right*|Kopyalanacak ayırıcı nesne.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk oluşturucu [allocator_base](../standard-library/allocator-base-class.md) bir örnek oluşturuyor. İkinci oluşturucu, herhangi `allocator_base` `allocator_base<Type, _Sync>` bir örnek `a`için `allocator_base<Type, Sync>(allocator_base<Other, Sync>(a)) == a`, .
+İlk Oluşturucu bir [allocator_base](allocator-base-class.md) örneği oluşturur. İkinci Oluşturucu `allocator_base` , her örnek için gibi bir örnek oluşturur `allocator_base<Type, _Sync>` `a` `allocator_base<Type, Sync>(allocator_base<Other, Sync>(a)) == a` .
 
-## <a name="allocator_baseconst_pointer"></a><a name="const_pointer"></a>allocator_base:const_pointer
+## <a name="allocator_baseconst_pointer"></a><a name="const_pointer"></a>allocator_base:: const_pointer
 
 Ayırıcı tarafından yönetilen nesne türüne sabit bir işaretçi sağlayan bir tür.
 
@@ -219,7 +219,7 @@ Ayırıcı tarafından yönetilen nesne türüne sabit bir işaretçi sağlayan 
 typedef const Type *const_pointer;
 ```
 
-## <a name="allocator_baseconst_reference"></a><a name="const_reference"></a>allocator_base:const_reference
+## <a name="allocator_baseconst_reference"></a><a name="const_reference"></a>allocator_base:: const_reference
 
 Ayırıcı tarafından yönetilen nesne türüne sabit bir başvuru sağlayan bir tür.
 
@@ -227,9 +227,9 @@ Ayırıcı tarafından yönetilen nesne türüne sabit bir başvuru sağlayan bi
 typedef const Type& const_reference;
 ```
 
-## <a name="allocator_baseconstruct"></a><a name="construct"></a>allocator_base::yapı
+## <a name="allocator_baseconstruct"></a><a name="construct"></a>allocator_base:: yapı
 
-Belirli bir değerle başharfe bürünen belirli bir adreste belirli bir nesne türü oluşturuyor.
+Belirtilen bir değer ile başlatılan belirli bir adreste belirli bir nesne türü oluşturur.
 
 ```cpp
 void construct(pointer ptr, const Type& val);
@@ -239,16 +239,16 @@ void construct(pointer ptr, const Type& val);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Ptr*|Nesnenin oluşturulacağı konuma işaretçi.|
-|*Val*|Oluşturulmakta olan nesnenin değeri başharfe atılmalıdır.|
+|*ptr*|Nesnenin oluşturulması gereken konuma yönelik bir işaretçi.|
+|*Acil*|Oluşturulan nesnenin başlatılacağı değer.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, kullanıcı tanımlı ayırıcı `new((void*)ptr Type(val)`için .
+Bu üye işlevi, çağırarak Kullanıcı tanımlı ayırıcı için uygulanır `new((void*)ptr Type(val)` .
 
-## <a name="allocator_basedeallocate"></a><a name="deallocate"></a>allocator_base::d
+## <a name="allocator_basedeallocate"></a><a name="deallocate"></a>allocator_base::d eallocate
 
-Belirli bir konumdan başlayarak belirli sayıda nesneyi depolamadan serbest sağlar.
+Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.
 
 ```cpp
 void deallocate(pointer ptr, size_type _Nx);
@@ -258,16 +258,16 @@ void deallocate(pointer ptr, size_type _Nx);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Ptr*|Depolamadan ayrılacak ilk nesneye işaretçi.|
-|*_Nx*|Depolamadan ayrılacak nesne sayısı.|
+|*ptr*|Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.|
+|*_Nx*|Depolamadan serbest bırakmak için nesne sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, kullanıcı tanımlı ayırıcı `deallocate(ptr)` için senkronizasyon `Sync` filtresini `_Nx == 1`çağırarak `operator delete(_Nx * ptr)`uygulanır, aksi takdirde .
+Bu üye işlevi, `deallocate(ptr)` `Sync` `_Nx == 1` Aksi takdirde çağırarak, eşitleme filtresini çağırarak Kullanıcı tanımlı ayırıcı için uygulanır `operator delete(_Nx * ptr)` .
 
-## <a name="allocator_basedestroy"></a><a name="destroy"></a>allocator_base::destroy
+## <a name="allocator_basedestroy"></a><a name="destroy"></a>allocator_base::d estroy
 
-Nesnenin depolandığı belleği ayırmadan nesneleri yıkıcı çağırır.
+Nesnenin depolandığı belleği ayırmayı kaldırmadan bir nesne yıkıcısı çağırır.
 
 ```cpp
 void destroy(pointer ptr);
@@ -277,23 +277,23 @@ void destroy(pointer ptr);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Ptr*|Yok edilecek nesnenin adresini atanan bir işaretçi.|
+|*ptr*|Yok edilecek nesnenin adresini atayarak bir işaretçi.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, kullanıcı tanımlı ayırıcı `ptr->~Type()`için .
+Bu üye işlevi, çağırarak Kullanıcı tanımlı ayırıcı için uygulanır `ptr->~Type()` .
 
-## <a name="allocator_basedifference_type"></a><a name="difference_type"></a>allocator_base::difference_type
+## <a name="allocator_basedifference_type"></a><a name="difference_type"></a>allocator_base::d ifference_type
 
-Ayırıcı tarafından yönetilen nesne türüne işaretçilerin değerleri arasındaki farkı temsil eden imzalı bir integral türü.
+Ayırıcı tarafından yönetilen nesne türüne yönelik işaretçilerin değerleri arasındaki farkı temsil eden, işaretli bir tamsayı türü.
 
 ```cpp
 typedef std::ptrdiff_t difference_type;
 ```
 
-## <a name="allocator_basemax_size"></a><a name="max_size"></a>allocator_base:max_size
+## <a name="allocator_basemax_size"></a><a name="max_size"></a>allocator_base:: max_size
 
-Boş bellek kullanılmadan `Type` önce sınıf ayırıcıbir nesne tarafından ayrılabilecek tür öğelerinin sayısını verir.
+`Type`Boş bellek kullanılmadan önce sınıf ayırıcı nesnesi tarafından ayrılabilecek türdeki öğe sayısını döndürür.
 
 ```cpp
 size_type max_size() const;
@@ -301,13 +301,13 @@ size_type max_size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılabilecek öğelerin sayısı.
+Ayrılabilen öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev kullanıcı tanımlı ayırıcı için `(size_t)-1 / sizeof(Type)` döndürülerek `1`uygulanır, aksi takdirde `0 < (size_t)-1 / sizeof(Type)`.
+Bu üye işlevi `(size_t)-1 / sizeof(Type)` `0 < (size_t)-1 / sizeof(Type)` , tersi durumda, Kullanıcı tanımlı ayırıcı için uygulanır `1` .
 
-## <a name="allocator_basepointer"></a><a name="pointer"></a>allocator_base::pointer
+## <a name="allocator_basepointer"></a><a name="pointer"></a>allocator_base::p oınter
 
 Ayırıcı tarafından yönetilen nesne türüne işaretçi sağlayan bir tür.
 
@@ -315,7 +315,7 @@ Ayırıcı tarafından yönetilen nesne türüne işaretçi sağlayan bir tür.
 typedef Type *pointer;
 ```
 
-## <a name="allocator_basereference"></a><a name="reference"></a>allocator_base::referans
+## <a name="allocator_basereference"></a><a name="reference"></a>allocator_base:: Reference
 
 Ayırıcı tarafından yönetilen nesne türüne başvuru sağlayan bir tür.
 
@@ -323,15 +323,15 @@ Ayırıcı tarafından yönetilen nesne türüne başvuru sağlayan bir tür.
 typedef Type& reference;
 ```
 
-## <a name="allocator_basesize_type"></a><a name="size_type"></a>allocator_base::size_type
+## <a name="allocator_basesize_type"></a><a name="size_type"></a>allocator_base:: size_type
 
-Bir tür `allocator_base` nesnenin ayırabileceği herhangi bir dizinin uzunluğunu temsil eden imzalanmamış bir integral türü.
+Türünde bir nesnenin ayırabilecek herhangi bir dizinin uzunluğunu temsil eden işaretsiz bir tamsayı türü `allocator_base` .
 
 ```cpp
 typedef std::size_t size_type;
 ```
 
-## <a name="allocator_basevalue_type"></a><a name="value_type"></a>allocator_base::value_type
+## <a name="allocator_basevalue_type"></a><a name="value_type"></a>allocator_base:: value_type
 
 Ayırıcı tarafından yönetilen bir tür.
 
@@ -341,4 +341,4 @@ typedef Type value_type;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<tahsisat>](../standard-library/allocators-header.md)
+[\<allocators>](allocators-header.md)

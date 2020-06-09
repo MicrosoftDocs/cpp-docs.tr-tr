@@ -7,29 +7,29 @@ helpviewer_keywords:
 - command handling [MFC], calling handlers and code in MFC
 - command routing [MFC], MFC
 ms.assetid: d79bceba-4ff6-417a-9d52-6b6af62a909d
-ms.openlocfilehash: b48d8ac93ca33bd80f9a8a8369291f63fc623f5b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3fcfcbdd224db66550e7f0ff27de6313c85f856a
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254014"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84618523"
 ---
 # <a name="how-the-framework-calls-a-handler"></a>Framework'ün İşleyici Çağırması
 
-Aşağıdaki konularda ilk komutları framework tarafından nasıl yönlendirdiği inceleyin ve ardından diğer iletiler ve denetim bildirimleri için windows nasıl gönderileceğini inceleyin:
+Aşağıdaki konularda, Framework 'ün komutları nasıl yönlendirdiğini incelemektir ve diğer ileti ve denetim bildirimlerinin Windows 'a nasıl gönderileceğini inceleyebilirsiniz:
 
-- [İleti gönderme ve alma](../mfc/message-sending-and-receiving.md)
+- [İleti gönderme ve alma](message-sending-and-receiving.md)
 
-- [Komut dışı iletilerin işleyicilerine erişmesi nasıl](../mfc/how-noncommand-messages-reach-their-handlers.md)
+- [Komut olmayan iletilerin işleyicilerine erişmesi](how-noncommand-messages-reach-their-handlers.md)
 
-- [Komut yönlendirme](../mfc/command-routing.md)
+- [Komut yönlendirme](command-routing.md)
 
-- [Komut Yönlendirme Çizimi](../mfc/command-routing-illustration.md)
+- [Komut Yönlendirme Çizimi](command-routing-illustration.md)
 
-- [OnCmdMsg işleyicisi](../mfc/oncmdmsg-handler.md)
+- [OnCmdMsg Işleyicisi](oncmdmsg-handler.md)
 
-- [Standart Komut Yönlendirmeyi Geçersiz Kılma](../mfc/overriding-the-standard-command-routing.md)
+- [Standart Komut Yönlendirmeyi Geçersiz Kılma](overriding-the-standard-command-routing.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)
+[İleti İşleme ve Eşleme](message-handling-and-mapping.md)

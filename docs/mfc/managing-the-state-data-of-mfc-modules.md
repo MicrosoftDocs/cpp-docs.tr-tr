@@ -12,38 +12,38 @@ helpviewer_keywords:
 - multiple modules [MFC]
 - module state restored [MFC]
 ms.assetid: 81889c11-0101-4a66-ab3c-f81cf199e1bb
-ms.openlocfilehash: c8e79f54ed586201a7d82327662643a9a241b8f4
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 64888b8ab53ebd80f328e1efe79df6256f30f9b6
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81357275"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84622580"
 ---
 # <a name="managing-the-state-data-of-mfc-modules"></a>MFC Modüllerinin Durum Verisini Yönetme
 
-Bu makalede, MFC modüllerinin durum verileri ve yürütme akışı (yol kodu yürütücürken bir uygulama üzerinden alır) bir modül girer ve ayrıldığında bu durum nasıl güncelleştirilir tartışır. Modül durumlarının AFX_MANAGE_STATE ve METHOD_PROLOGUE makrolarla değiştirilmesi de tartışılır.
+Bu makalede, MFC modüllerinin durum verileri ve yürütme akışı (yürütülürken yol kodu bir uygulamadan geçer) bir modüle girdiğinde ve ayrıldığında bu durumun nasıl güncelleştirildiği açıklanır. Modül durumlarının AFX_MANAGE_STATE ve METHOD_PROLOGUE makrolarıyla değiştirilmesi de ele alınmıştır.
 
 > [!NOTE]
-> Buradaki "modül" terimi, yürütülebilir bir programa veya uygulamanın geri kalanından bağımsız olarak çalışan, ancak MFC DLL'nin paylaşılan bir kopyasını kullanan bir DLL (veya DL kümesi) anlamına gelir. ActiveX denetimi, bir modülün tipik bir örneğidir.
+> Burada "Module" terimi, uygulamanın geri kalanından bağımsız olarak çalışan, ancak MFC DLL 'inin paylaşılan bir kopyasını kullanan bir çalıştırılabilir programa veya DLL 'ye (veya dll kümesine) başvurur. Bir ActiveX denetimi bir modülün tipik bir örneğidir.
 
-Aşağıdaki şekilde gösterildiği gibi, MFC bir uygulamada kullanılan her modül için durum verilerine sahiptir. Bu verilere örnek olarak Windows örnek tanıtıcıları (kaynakları yüklemek `CWinApp` `CWinThread` için kullanılır), bir uygulamanın geçerli ve nesnelerine işaretçiler, OLE modülü başvuru sayıları ve Windows nesne tutamaçları ile Ilgili MFC nesneleri arasındaki bağlantıları koruyan çeşitli haritalar verilebilir. Ancak, bir uygulama birden çok modül kullandığında, her modülün durum verileri uygulama genişliğinde değildir. Bunun yerine, her modülün MFC'nin durum verilerinin kendi özel kopyası vardır.
+Aşağıdaki şekilde gösterildiği gibi, MFC bir uygulamada kullanılan her modül için durum verileri içerir. Bu verilere örnek olarak, Windows örnek tutamaçları (kaynak yükleme için kullanılır), `CWinApp` bir uygulamanın geçerli ve nesnelerine yönelik işaretçiler, `CWinThread` OLE modülü başvuru sayıları ve Windows nesne tutamaçları ile buna KARŞıLıK gelen MFC nesnelerinin örnekleri arasındaki bağlantıları koruyacak çeşitli haritalar sayılabilir. Ancak, bir uygulama birden çok modül kullandığında, her modülün durum verileri uygulama genelinde değildir. Bunun yerine, her modülün kendi özel MFC durum verileri kopyası vardır.
 
-![Tek bir modülün &#40;uygulama&#41;devlet verileri](../mfc/media/vc387n1.gif "Tek bir modülün devlet verileri &#40;uygulama&#41;") <br/>
-Tek Modülün Devlet Verileri (Uygulama)
+![Tek bir modülün uygulama&#41;durum verileri &#40;](../mfc/media/vc387n1.gif "Tek bir modülün uygulama&#41; durum verileri &#40;") <br/>
+Tek bir modülün durum verileri (uygulama)
 
-Bir modülün durum verileri bir yapıda bulunur ve her zaman bu yapıya işaretçi aracılığıyla kullanılabilir. Yürütme akışı aşağıdaki şekilde gösterildiği gibi belirli bir modüle girdiğinde, bu modülün durumu "geçerli" veya "etkili" durum olmalıdır. Bu nedenle, her iş parçacığı nesnesi bu uygulamanın etkili durum yapısıiçin bir işaretçi vardır. Bu işaretçiyi her zaman güncel tutmak, uygulamanın genel durumunu yönetmek ve her modülün durumunun bütünlüğünü korumak için çok önemlidir. Genel durum yanlış yönetimi öngörülemeyen uygulama davranışına yol açabilir.
+Modülün durum verileri bir yapıda bulunur ve her zaman bu yapıya yönelik bir işaretçi aracılığıyla kullanılabilir. Yürütmenin akışı, aşağıdaki şekilde gösterildiği gibi belirli bir modüle girdiğinde, söz konusu modülün durumu "geçerli" veya "etkin" durum olmalıdır. Bu nedenle, her iş parçacığı nesnesinin, uygulamanın etkin durum yapısına yönelik bir işaretçisi vardır. Bu işaretçinin her zaman güncel tutulması, uygulamanın genel durumunu yönetmek ve her modülün durumunun bütünlüğünü sürdürmek için önemlidir. Genel durumun yanlış yönetimi öngörülemeyen uygulama davranışına neden olabilir.
 
 ![Birden çok modülün durum verileri](../mfc/media/vc387n2.gif "Birden çok modülün durum verileri") <br/>
-Birden Çok Modülün Durum Verileri
+Birden çok modülün durum verileri
 
-Başka bir deyişle, her modül tüm giriş noktalarında modül durumları arasında doğru geçiş yapmakla yükümlüdür. "Giriş noktası", yürütme akışının modülün kodunu girebileceği herhangi bir yerdir. Giriş noktaları şunlardır:
+Diğer bir deyişle, her modül tüm giriş noktalarında modül durumları arasında doğru geçiş yapmaktan sorumludur. "Giriş noktası", yürütme akışının modülün kodunu girebileceği bir yerdir. Giriş noktaları şunları içerir:
 
-- [Bir DLL'de dışa aktarılan işlevler](../mfc/exported-dll-function-entry-points.md)
+- [DLL 'de aktarılmış işlevler](exported-dll-function-entry-points.md)
 
-- [COM arabirimlerinin üye işlevleri](../mfc/com-interface-entry-points.md)
+- [COM arabirimlerinin üye işlevleri](com-interface-entry-points.md)
 
-- [Pencere yordamları](../mfc/window-procedure-entry-points.md)
+- [Pencere yordamları](window-procedure-entry-points.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel MFC Konuları](../mfc/general-mfc-topics.md)
+[Genel MFC Konuları](general-mfc-topics.md)

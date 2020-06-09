@@ -6,28 +6,28 @@ helpviewer_keywords:
 - lists [MFC], image
 - CImageList class [MFC], manipulating
 ms.assetid: 043418f8-077e-4dce-b8bb-2b7b0d7b5156
-ms.openlocfilehash: 1e86961980c91ade47a3d6510dec5c04ac36cffb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb7376241febd6bd1545cd183147e14a15313820
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262794"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84622456"
 ---
 # <a name="manipulating-image-lists"></a>Resim Listelerini Düzenleme
 
-[Değiştirin](../mfc/reference/cimagelist-class.md#replace) üye işlevi bir görüntü listesi görüntüde değiştirir ([Cımagelist](../mfc/reference/cimagelist-class.md)) ile yeni bir görüntüsü. Bu işlev, ayrıca dinamik olarak bir görüntü listesi nesne görüntülerdeki sayısını artırmanız gerekiyorsa yararlıdır. [SetImageCount](../mfc/reference/cimagelist-class.md#setimagecount) işlevi, depolanan görüntü listesinden görüntü sayısını dinamik olarak değişir. Görüntü listesi boyutunu artırmak için çağrı `Replace` görüntüleri için yeni görüntü yuva eklemek için. Görüntü listesi boyutu azaltırsanız, yeni boyut ötesinde görüntüleri kurtulurlar.
+[Değiştirme](reference/cimagelist-class.md#replace) üyesi işlevi bir görüntü listesindeki görüntünün ([CImageList](reference/cimagelist-class.md)) yeni bir görüntüyle yerini alır. Bu işlev, bir görüntü listesi nesnesindeki görüntü sayısını dinamik olarak artırmanız gerekiyorsa de kullanışlıdır. [SetImageCount](reference/cimagelist-class.md#setimagecount) işlevi, görüntü listesinde depolanan görüntü sayısını dinamik olarak değiştirir. Görüntü listesinin boyutunu artırdıysanız, `Replace` yeni görüntü yuvalarına görüntü ekleme ' yi çağırın. Görüntü listesinin boyutunu azaltırsanız, yeni boyuttan daha fazla görüntü serbest bırakılır.
 
-[Kaldır](../mfc/reference/cimagelist-class.md#remove) üye işlevi, görüntü listesinden görüntü kaldırır. [Kopyalama](../mfc/reference/cimagelist-class.md#copy) üye işlevi kopyalayabilir veya takas görüntü listesi içinde görüntüler. Bu işlev, kaynak görüntüyü hedef dizine kopyalanmalıdır ya da kaynak ve hedef görüntüleri takas belirtmenize olanak sağlar.
+[Remove](reference/cimagelist-class.md#remove) member işlevi bir görüntüyü görüntü listesinden kaldırır. [Kopya](reference/cimagelist-class.md#copy) üye işlevi bir görüntü listesi içindeki görüntüleri kopyalayabilir veya değiştirebilir. Bu işlev, kaynak görüntünün hedef dizine kopyalanıp kopyalanmayacağını belirtmenize veya kaynak ve hedef görüntülerin değiştirilip değiştirilmelidir.
 
-İki görüntü listeleri birleştirerek yeni bir görüntü listesi oluşturmak için uygun aşırı yüklemesini kullanın. [Oluştur](../mfc/reference/cimagelist-class.md#create) üye işlevi. Bu aşırı yüklemesini `Create` birleştirmeleri mevcut görüntü ilk görüntüsü listeler, sonuçta elde edilen görüntü yeni bir görüntü listesi nesnesi içinde depolamak. Yeni görüntü, ikinci görüntü şeffaf bir şekilde ilk çizim tarafından oluşturulur. Yeni görüntü için bit maskeleri mantıksal OR işleminde için iki var olan görüntülerden gerçekleştirmenin sonucunun maskesidir.
+İki resim listesini birleştirerek yeni bir görüntü listesi oluşturmak için, [Create](reference/cimagelist-class.md#create) member işlevinin uygun aşırı yüklemesini kullanın. ' Nin bu aşırı yüklemesi `Create` , sonuçta elde edilen görüntüyü yeni bir görüntü listesi nesnesinde depolayarak var olan görüntü listelerinin ilk görüntüsünü birleştirir. Yeni görüntü, ikinci resim saydam olarak ilk üzerine çizerek oluşturulur. Yeni görüntü için maske, var olan iki görüntünün maske bitleri üzerinde mantıksal veya bir işlem gerçekleştirme sonucudur.
 
-Tüm görüntüleri birleştirilir ve yeni görüntüyü Liste nesnesine eklenen kadar yinelenir.
+Bu, tüm görüntüler birleştirilene ve yeni görüntü listesi nesnesine eklenene kadar yinelenir.
 
-Çağırarak arşive görüntü bilgileri yazabilirsiniz [yazma](../mfc/reference/cimagelist-class.md#write) üye işlevine ve geri çağrı yaparak okuma [okuma](../mfc/reference/cimagelist-class.md#read) üye işlevi.
+Görüntü bilgilerini, [yazma](reference/cimagelist-class.md#write) üyesi işlevini çağırarak bir arşive yazabilir ve [Oku](reference/cimagelist-class.md#read) üye işlevini çağırarak geri okuyabilirsiniz.
 
-[GetSafeHandle](../mfc/reference/cimagelist-class.md#getsafehandle), [iliştirme](../mfc/reference/cimagelist-class.md#attach), ve [ayırma](../mfc/reference/cimagelist-class.md#detach) üye işlevleri bağlı görüntü listesinin tanıtıcı değiştirmenize izin `CImageList` nesnesi sırada [DeleteImageList](../mfc/reference/cimagelist-class.md#deleteimagelist) üye işlevini, yok etme olmadan görüntü listesi siler `CImageList` nesne.
+[GetSafeHandle](reference/cimagelist-class.md#getsafehandle), [Attach](reference/cimagelist-class.md#attach)ve [Detach](reference/cimagelist-class.md#detach) üye işlevleri, nesnesine eklenen görüntü listesinin tanıtıcısını değiştirmenize izin verir `CImageList` , ancak [DeleteImageList](reference/cimagelist-class.md#deleteimagelist) üye işlevi nesneyi yok etmek zorunda kalmadan görüntü listesini siler `CImageList` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CImageList Kullanma](../mfc/using-cimagelist.md)<br/>
-[Denetimler](../mfc/controls-mfc.md)
+[CImageList Kullanma](using-cimagelist.md)<br/>
+[Denetimler](controls-mfc.md)

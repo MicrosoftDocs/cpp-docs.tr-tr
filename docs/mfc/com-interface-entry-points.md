@@ -9,24 +9,24 @@ helpviewer_keywords:
 - MFC, managing state data
 - COM interfaces, entry points
 ms.assetid: 9e7421dc-0731-4748-9e1b-90acbaf26d77
-ms.openlocfilehash: eb8fc425d6b9849f6367d9b207e5181652386be3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 132dd7394119081dcaeb098c2088782ff5d40ae4
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62207858"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619337"
 ---
 # <a name="com-interface-entry-points"></a>COM Arabirimi Giriş Noktaları
 
-COM arabirimi üye işlevleri için kullanmak `METHOD_PROLOGUE` dışarı aktarılan arabirimin yöntemleri çağrılırken uygun genel durumunu korumak üzere makrosu.
+Bir COM arabiriminin üye işlevleri için, bir `METHOD_PROLOGUE` içe aktarılmış arabirimin yöntemlerini çağırırken doğru genel durumu korumak için makrosunu kullanın.
 
-Genellikle, uygulanan arabirimlerin üye işlevleri tarafından `CCmdTarget`-türetilmiş nesneler zaten kullanıyorsanız bu makroyu otomatik başlatma sağlamak `pThis` işaretçi. Örneğin:
+Genellikle, türetilmiş nesneler tarafından uygulanan arabirimlerin üye işlevleri `CCmdTarget` , işaretçinin otomatik olarak başlatılmasını sağlamak için bu makroyu zaten kullanır `pThis` . Örnek:
 
-[!code-cpp[NVC_MFCConnectionPoints#5](../mfc/codesnippet/cpp/com-interface-entry-points_1.cpp)]
+[!code-cpp[NVC_MFCConnectionPoints#5](codesnippet/cpp/com-interface-entry-points_1.cpp)]
 
-Ek bilgi için bkz: [Teknik Not 38](../mfc/tn038-mfc-ole-iunknown-implementation.md) üzerinde MFC/OLE `IUnknown` uygulaması.
+Daha fazla bilgi için bkz. MFC/OLE uygulamasında [Teknik dekont 38](tn038-mfc-ole-iunknown-implementation.md) `IUnknown` .
 
-`METHOD_PROLOGUE` Makro olarak tanımlanır:
+`METHOD_PROLOGUE`Makro şöyle tanımlanır:
 
 ```cpp
 #define METHOD_PROLOGUE(theClass, localClass) \
@@ -35,12 +35,12 @@ Ek bilgi için bkz: [Teknik Not 38](../mfc/tn038-mfc-ole-iunknown-implementation
     AFX_MANAGE_STATE(pThis->m_pModuleState) \
 ```
 
-Genel durum yönetilmesiyle makrosu bölümüdür:
+Makronun genel durumu yönetmeyle ilgili bölümü:
 
 `AFX_MANAGE_STATE( pThis->m_pModuleState )`
 
-Bu ifadede *m_pModuleState* bir üye değişkeni kapsayan nesnenin olduğu varsayılır. Tarafından uygulanan `CCmdTarget` temel sınıfı ve uygun değere göre başlatılan `COleObjectFactory`, nesnesi örneği oluşturulduğunda.
+Bu ifadede, *m_pModuleState* kapsayan nesnenin üye değişkeni olduğu varsayılır. `CCmdTarget`Temel sınıf tarafından uygulanır ve nesnesi örneği oluşturulduğunda, tarafından uygun değere başlatılır `COleObjectFactory` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Modüllerinin Durum Verisini Yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)
+[MFC modüllerinin durum verilerini yönetme](managing-the-state-data-of-mfc-modules.md)

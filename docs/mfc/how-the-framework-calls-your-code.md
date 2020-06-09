@@ -12,25 +12,25 @@ helpviewer_keywords:
 - application-specific events [MFC]
 - command routing [MFC], MFC
 ms.assetid: 39e68189-a580-40d0-9e35-bf5cd24a8ecf
-ms.openlocfilehash: 81b0749167391a841badff5494023a2ca5d3147e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 318ca9558d705ca483d41867a1fe2ad46c36666f
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407958"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84622601"
 ---
 # <a name="how-the-framework-calls-your-code"></a>Framework'ün Kodunuzu Çağırması
 
-Kaynak kodunuzu ve MFC çerçevesi kodda arasındaki ilişkiyi anlamak önemlidir. Uygulamanız çalışırken, denetim akışı çoğunu framework'ün kodda yer alıyor. Kullanıcı komutları seçer ve bir görünümdeki veriler düzenler, Windows iletileri alır ileti döngüsü framework yönetir. Framework, tek başına işleyebileceği olayları kodunuz üzerinde hiç güvenmeyin. Örneğin, çerçeve pencereleri kapatın ve yanıt kullanıcı komutları için uygulamadan çıkın bilir. Bu görevleri işler gibi framework fırsatlar de bu olaylara yanıt vermek için ileti işleyicileri ve C++ sanal işlevleri kullanır. Kodunuz denetiminde değildir, ancak:; çerçevedir.
+Kaynak kodunuz ve MFC çerçevesindeki kod arasındaki ilişkiyi anlamak çok önemlidir. Uygulamanız çalıştırıldığında, denetim akışının çoğu Framework kodunda bulunur. Framework, kullanıcının komutları seçtiği ve bir görünümdeki verileri düzenlediğini Windows 'dan iletileri alan ileti döngüsünü yönetir. Framework 'ün kendisi tarafından işleyebileceği olaylar, kodunuza hiçbir şekilde güvenmez. Örneğin Framework, Windows 'un nasıl kapatılmasını ve Kullanıcı komutlarına yanıt olarak uygulamadan nasıl çıkacağını bilir. Bu görevleri işlediği için Framework, size bu olaylara yanıt vermek için ileti işleyicileri ve C++ sanal işlevlerini kullanır. Kodunuz denetimde değil; ancak Framework.
 
-Framework, uygulamaya özgü olaylar için kodunuzu çağırır. Örneğin, kullanıcı bir menü komutu seçtiğinde framework komut C++ nesnelerinin bir dizisi boyunca yönlendirir: Geçerli Görünüm ve çerçeve penceresi, görünüm, belgenin belge şablonu ve uygulama nesnesi ile ilişkili belge. Bu nesnelerden birini komutu işleyebilir, bunu mu uygun ileti işleyicisi işlevini çağırarak. Verilen komutlardan herhangi birine, çağrılan kodu size ait olabileceğini veya framework'ün olabilir.
+Çerçeve uygulamaya özgü olaylar için kodunuzu çağırır. Örneğin, Kullanıcı bir menü komutu seçtiğinde, Framework komutu bir C++ nesneleri dizisi boyunca yönlendirir: geçerli görünüm ve çerçeve penceresi, görünümle ilişkili belge, belgenin belge şablonu ve uygulama nesnesi. Bu nesnelerden biri komutu işleyebiliyorsanız, uygun ileti işleyicisi işlevini çağırarak bunu yapar. Verilen herhangi bir komut için, çağrılan kod sizinki olabilir veya Framework 'ün olabilir.
 
-Bu düzenleme Windows için geleneksel programlama veya olay kaynaklı programlama ile karşılaşmış programcıları için biraz bilgi sahibi olur.
+Bu düzenleme, Windows veya olay odaklı programlama için geleneksel programlama ile karşılaşılan programcılar için biraz tanıdık gelecektir.
 
-İlgili konulardaki ne framework olarak başlatır ve uygulamayı çalıştırır ve ardından uygulama sonlanana olarak temizler okur. Ayrıca, yazdığınız kodun nereye sığacak anlayacaksınız.
+İlgili konularda, Framework 'ün ne yaptığını okur ve uygulamayı çalıştırır ve ardından uygulama sonlandırıldığında temizler. Yazdığınız kodun nerede olduğunu da anlayacaksınız.
 
-Daha fazla bilgi için [CWinApp sınıfı: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md) ve [belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md).
+Daha fazla bilgi için bkz. [sınıf CWinApp: uygulama sınıfı](cwinapp-the-application-class.md) ve [Belge şablonları ve belge/görünüm oluşturma işlemi](document-templates-and-the-document-view-creation-process.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'te Derleme](../mfc/building-on-the-framework.md)
+[Framework'te Derleme](building-on-the-framework.md)

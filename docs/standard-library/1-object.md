@@ -8,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - _1 object
 ms.assetid: 30c3c480-ff31-4708-94be-7d0d65f243c9
-ms.openlocfilehash: 1c1f13d40e02ec6e099ef1e2c20fe1cac4a4ef93
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 8fdb53ea03031f2bf1634a105275c72263ee20e3
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246545"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84620922"
 ---
-# <a name="1-object"></a>_1 Nesnesi
+# <a name="_1-object"></a>_1 Nesnesi
 
-Değiştirilebilir bağımsız değişkenleri için yer tutucu.
+Değiştirilebilen bağımsız değişkenler için yer tutucular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 namespace placeholders {
@@ -29,9 +29,9 @@ namespace placeholders {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesneleri `_1, _2, ... _M` olan yer tutucuları belirleme birinci, ikinci,..., ay bağımsız değişkeni tarafından döndürülen bir nesneye yönelik işlev çağrısında sırasıyla [bağlama](../standard-library/functional-functions.md#bind). Kullandığınız `_N` bağlama ifadesi değerlendirilirken n sayılı bağımsız değişkenin ekleneceği yeri belirtmek için.
+Nesneler, `_1, _2, ... _M` [bağlama](functional-functions.md#bind)tarafından döndürülen bir nesne için bir işlev çağrısında sırasıyla birinci, ikinci,..., MTH bağımsız değişkenini tasartutuculardır. `_N`Bağlama ifadesi değerlendirildiğinde nth bağımsız değişkeninin nereye ekleneceğini belirtmek için kullanırsınız.
 
-Bu uygulamada değeri, `M` 20'dir.
+Bu uygulamada, değeri 20 ' `M` dir.
 
 ## <a name="example"></a>Örnek
 

@@ -12,20 +12,20 @@ helpviewer_keywords:
 - MFC, documents
 - tables [MFC], objects each MFC object creates
 ms.assetid: bda14f41-ed50-439d-af9e-591174e7dd64
-ms.openlocfilehash: b5f9b783e8e14744a816fd63b327ed95d9da8e8a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5441827188f5bff98638cc85cd29e2efd79f8ae8
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62240799"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84620335"
 ---
 # <a name="documentview-creation"></a>Belge/Görünüm Oluşturma
 
-Framework uygulamalarında kaynakları **yeni** ve **açık** komutları (diğerlerinin arasında) üzerinde **dosya** menüsü. Yeni bir belge ve ilişkili görünüm ve çerçeve penceresi oluşturma, uygulama nesnesi, bir belge şablonu, yeni oluşturulan belge ve yeni oluşturulan çerçeve penceresi arasında işbirliği yapan bir işlemdir. Aşağıdaki tabloda, hangi nesnelerin ne oluşturma özetlenmektedir.
+Framework, **Dosya** menüsünde **Yeni** ve **Açık** komutların (diğerleri arasında) uygulamalarını sağlar. Yeni bir belge ve onunla ilişkili görünüm ve çerçeve penceresi oluşturma, uygulama nesnesi, belge şablonu, yeni oluşturulan belge ve yeni oluşturulan çerçeve penceresi arasındaki bir yardımcı çaba. Aşağıdaki tabloda hangi nesnelerin ne yaptığını özetlenmektedir.
 
 ### <a name="object-creators"></a>Nesne oluşturucuları
 
-|Oluşturucu|Oluşturur|
+|Oluşturucu|Oluşturduğundan|
 |-------------|-------------|
 |Uygulama nesnesi|Belge şablonu|
 |Belge şablonu|Belge|
@@ -34,7 +34,7 @@ Framework uygulamalarında kaynakları **yeni** ve **açık** komutları (diğer
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
-[Belge Şablonu Oluşturma](../mfc/document-template-creation.md)<br/>
-[FC Nesneleri Arasındaki İlişki](../mfc/relationships-among-mfc-objects.md)<br/>
-[Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
+[Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi](document-templates-and-the-document-view-creation-process.md)<br/>
+[Belge Şablonu Oluşturma](document-template-creation.md)<br/>
+[MFC Nesneleri Arasındaki İlişki](relationships-among-mfc-objects.md)<br/>
+[Yeni belgeler, pencereler ve görünümler oluşturma](creating-new-documents-windows-and-views.md)

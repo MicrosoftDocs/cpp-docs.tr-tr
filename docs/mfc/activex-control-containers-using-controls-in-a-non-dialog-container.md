@@ -1,5 +1,5 @@
 ---
-title: 'ActiveX denetim kapsayıcıları: Bir iletişim kutusu dışındaki kapsayıcılarda denetimleri kullanma'
+title: 'ActiveX Denetim Kapsayıcıları: İletişim Kutusu Dışındaki Kapsayıcılarda Denetimleri Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Create method [MFC], ActiveX controls
@@ -8,59 +8,59 @@ helpviewer_keywords:
 - ActiveX control containers [MFC], non-dialog containers
 - ActiveX control containers [MFC], inserting controls
 ms.assetid: 46f195b0-b8ca-4409-8cca-fbfaf2c9ab9f
-ms.openlocfilehash: 70a67a6952d5361177b89e3ba514d7036b5799b6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b010c35f32462810cbdb008e5688d4b41254fad1
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394877"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84620769"
 ---
-# <a name="activex-control-containers-using-controls-in-a-non-dialog-container"></a>ActiveX denetim kapsayıcıları: Bir iletişim kutusu dışındaki kapsayıcılarda denetimleri kullanma
+# <a name="activex-control-containers-using-controls-in-a-non-dialog-container"></a>ActiveX Denetim Kapsayıcıları: İletişim Kutusu Dışındaki Kapsayıcılarda Denetimleri Kullanma
 
-Bazı gibi bir SDI uygulamaları veya MDI uygulaması, bir uygulama penceresinde bir denetim eklemek isteyeceksiniz. **Oluştur** Visual C++ tarafından eklenen sarmalayıcı sınıfının üye işlevinde bir örneğini oluşturabilirsiniz denetimi dinamik olarak bir iletişim kutusu gerek kalmadan.
+SDI veya MDI uygulaması gibi bazı uygulamalarda, uygulamanın bir penceresinde bir denetim eklemek isteyeceksiniz. Sarmalayıcı sınıfının üye **Oluştur** işlevi, Visual C++ tarafından, bir iletişim kutusu gerekmeden, denetimin bir örneğini dinamik bir şekilde oluşturabilir.
 
-**Oluştur** üye işlevi aşağıdaki parametrelere sahiptir:
+**Create** member işlevi aşağıdaki parametrelere sahiptir:
 
 *lpszWindowName*<br/>
-Bir işaretçi (varsa) denetimin metin veya resim yazısı özelliğini görüntülenecek metin.
+Denetimin metin veya başlık özelliğinde (varsa) görüntülenecek metin için bir işaretçi.
 
 *dwStyle*<br/>
-Windows stilleri. Tam bir listesi için bkz. [CWnd::CreateControl](../mfc/reference/cwnd-class.md#createcontrol).
+Windows stilleri. Tüm liste için bkz. [CWnd:: CreateControl](reference/cwnd-class.md#createcontrol).
 
 *Rect*<br/>
 Denetimin boyutunu ve konumunu belirtir.
 
 *pParentWnd*<br/>
-Denetiminin üst penceresine, genellikle belirtir bir `CDialog`. Değil olmalıdır **NULL**.
+Denetimin üst penceresini (genellikle a) belirtir `CDialog` . **Null**olmaması gerekir.
 
-*nID*<br/>
-Denetim Kimliği belirtir ve kapsayıcı tarafından denetime başvurmak için kullanılabilir.
+*NID*<br/>
+Denetim KIMLIĞINI belirtir ve kapsayıcı tarafından denetime başvurmak için kullanılabilir.
 
-ActiveX denetimi dinamik olarak oluşturmak için bu işlevi kullanarak bir örnek, bir SDI uygulaması form görünümünde olacaktır. Daha sonra denetimi örneği oluşturabilirsiniz `WM_CREATE` uygulamasının işleyicisi.
+Bir ActiveX denetimi dinamik olarak oluşturmak için bu işlevi kullanmanın bir örneği, SDI uygulamasının form görünümünde olabilir. Daha sonra uygulamanın işleyicisinde denetimin bir örneğini oluşturabilirsiniz `WM_CREATE` .
 
-Bu örnekte, `CMyView` ana görünüm sınıfı `CCirc` CIRC. ve sarmalayıcı sınıfı H ise üst bilgisi (. H) dosyası sarmalayıcı sınıf.
+Bu örnekte, `CMyView` ana görünüm sınıfı, `CCirc` sarmalayıcı sınıfı ve Circ olur. H üst bilgi (. H) sarmalayıcı sınıfının dosyası.
 
-Bu özelliği uygulamak dört adımlık bir işlemdir.
+Bu özelliğin uygulanması dört adımlı bir işlemdir.
 
-### <a name="to-dynamically-create-an-activex-control-in-a-non-dialog-window"></a>Dinamik olarak bir iletişim kutusu dışındaki penceresinde bir ActiveX denetimi oluşturmak için
+### <a name="to-dynamically-create-an-activex-control-in-a-non-dialog-window"></a>İletişim kutusu olmayan bir pencerede dinamik olarak ActiveX denetimi oluşturmak için
 
-1. CIRC. Ekle CMYVIEW H. H, hemen önce `CMyView` sınıf tanımını:
+1. CIRC ekleyin. CMYVIEW içinde H. H, `CMyView` sınıf tanımından hemen önce:
 
-   [!code-cpp[NVC_MFC_AxCont#12](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_1.h)]
+   [!code-cpp[NVC_MFC_AxCont#12](codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_1.h)]
 
-1. Üye değişkeni ekleme (tür `CCirc`) korumalı bölümüne `CMyView` sınıf tanımını CMYVIEW içinde bulunur. Y:
+1. `CCirc` `CMyView` CMYVIEW içinde bulunan sınıf tanımının korumalı bölümüne üye değişken (türünden) ekleyin. Olsun
 
-   [!code-cpp[NVC_MFC_AxCont#13](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_2.h)]
-    [!code-cpp[NVC_MFC_AxCont#14](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_3.h)]
+   [!code-cpp[NVC_MFC_AxCont#13](codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_2.h)]
+    [!code-cpp[NVC_MFC_AxCont#14](codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_3.h)]
 
-1. Ekleme bir `WM_CREATE` sınıfı için ileti işleyicisi `CMyView`.
+1. Sınıfa bir `WM_CREATE` ileti işleyicisi ekleyin `CMyView` .
 
-1. İşleyici işlevindeki `CMyView::OnCreate`, denetimin çağrı yapmak `Create` kullanarak bu işlevi **bu** işaretçi üst pencere olarak:
+1. İşleyici işlevinde, `CMyView::OnCreate` `Create` **Bu** işaretçiyi üst pencere olarak kullanarak denetimin işlevine bir çağrı yapın:
 
-   [!code-cpp[NVC_MFC_AxCont#15](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_4.cpp)]
+   [!code-cpp[NVC_MFC_AxCont#15](codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_4.cpp)]
 
-1. Projeyi yeniden derleyin. Uygulamanın görünümü oluşturulduğunda Dai denetimi dinamik olarak oluşturulur.
+1. Projeyi yeniden derleyin. Uygulamanın görünümü oluşturulduğunda bir Circ denetimi dinamik olarak oluşturulur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
+[ActiveX denetim kapsayıcıları](activex-control-containers.md)

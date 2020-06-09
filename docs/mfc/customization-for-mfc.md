@@ -4,40 +4,40 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - customizations, MFC Extensions
 ms.assetid: 3b1b7532-8cc9-48dc-9bbe-7fd4060530b5
-ms.openlocfilehash: 42f4b21fb257646d4d505427760a8fe1c7056e77
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b7597c3709ed700e82af94c78450ee5aff2d99b
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62241699"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84622971"
 ---
 # <a name="customization-for-mfc"></a>MFC için Özelleştirme
 
-Bu konuda, bir MFC uygulaması özelleştirmek için ipuçları verilmektedir.
+Bu konu, bir MFC uygulamasını özelleştirmek için ipuçları sağlar.
 
-## <a name="general-customizations"></a>Genel özelleştirme
+## <a name="general-customizations"></a>Genel özelleştirmeler
 
-Kaydet ve kayıt defterine uygulamanızın durumu yükle. Bu seçeneği etkinleştirdiğinizde, uygulamanızın başlangıç durumunu kayıt defterinden yükleyin. Uygulamanız için ilk yerleştirme düzeni değişirse, uygulamanız için kayıt defteri verileri temizlemek gerekir. Aksi takdirde, kayıt defteri verileri ilk düzeninde yapılan değişiklikleri geçersiz kılar.
+Uygulamanızın durumunu kaydedebilir ve kayıt defterine yükleyebilirsiniz. Bu seçeneği etkinleştirdiğinizde, uygulamanız ilk durumunu kayıt defterinden yükler. Uygulamanızın ilk yerleştirme yerleşimini değiştirirseniz, uygulamanız için kayıt defteri verilerini temizlemeniz gerekir. Aksi takdirde, kayıt defterindeki veriler, ilk düzende yaptığınız tüm değişiklikleri geçersiz kılar.
 
-## <a name="class-specific-customizations"></a>Sınıf özgü özelleştirmeler
+## <a name="class-specific-customizations"></a>Sınıfa özgü özelleştirmeler
 
-Ek özelleştirme ipuçları aşağıdaki konularda bulunabilir:
+Aşağıdaki konularda ek özelleştirme ipuçları bulabilirsiniz:
 
-- [CBasePane Sınıfı](../mfc/reference/cbasepane-class.md)
+- [CBasePane sınıfı](reference/cbasepane-class.md)
 
-- [CDockablePane Sınıfı](../mfc/reference/cdockablepane-class.md)
+- [CDockablePane sınıfı](reference/cdockablepane-class.md)
 
-- [CDockingManager Sınıfı](../mfc/reference/cdockingmanager-class.md)
+- [CDockingManager sınıfı](reference/cdockingmanager-class.md)
 
-- [CMFCBaseTabCtrl Sınıfı](../mfc/reference/cmfcbasetabctrl-class.md)
+- [CMFCBaseTabCtrl sınıfı](reference/cmfcbasetabctrl-class.md)
 
-## <a name="additional-customization-tips"></a>Ek özelleştirme ipuçları
+## <a name="additional-customization-tips"></a>Ek özelleştirme Ipuçları
 
-[Klavye ve Fare Özelleştirmesi](../mfc/keyboard-and-mouse-customization.md)
+[Klavye ve Fare Özelleştirmesi](keyboard-and-mouse-customization.md)
 
-[Kullanıcı Tanımlı Araçlar](../mfc/user-defined-tools.md)
+[Kullanıcı tanımlı araçlar](user-defined-tools.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Masaüstü Uygulamaları](../mfc/mfc-desktop-applications.md)<br/>
-[Özelleştirmenin Güvenlikle İlgili Etkileri](../mfc/security-implications-of-customization.md)
+[MFC masaüstü uygulamaları](mfc-desktop-applications.md)<br/>
+[Özelleştirmenin güvenlik etkileri](security-implications-of-customization.md)

@@ -8,19 +8,19 @@ helpviewer_keywords:
 - menus [MFC], manipulating during execution
 - menus during execution
 ms.assetid: 722c7c00-4be2-4967-877d-f96aaa604396
-ms.openlocfilehash: 00d045932a4b196e23a2853e87fe42f7722cfadd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0b7da3871cae21da45fbb449e703ff6d8bc5f0e7
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365240"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84622449"
 ---
 # <a name="manipulating-menus-during-program-execution"></a>Program Yürütülmesi Sırasında Menüleri Düzenleme
 
-Bir sınıf kullanma `CMenu` menüleri ve menü öğeleri hareket halindeyken işlemek için. `CMenu` bir Windows HMENU tanıtıcı kapsüller ve menülerle çalışma üye işlevlerini sağlar.
+`CMenu`Menüleri ve menü öğelerini anında işlemek için sınıfını kullanın. `CMenu`bir Windows HMENU tutamacı kapsüller ve menülerle çalışma için üye işlevleri sağlar.
 
-Genel sınıf için [CMenu](../mfc/reference/cmenu-class.md) Ayrıntılar için.
+Ayrıntılar için bkz. sınıf [CMenu](reference/cmenu-class.md) 'e genel bakış.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Menüler](../mfc/menus-mfc.md)
+[Menüler](menus-mfc.md)
