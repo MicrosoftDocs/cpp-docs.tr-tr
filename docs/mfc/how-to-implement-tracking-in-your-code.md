@@ -1,58 +1,58 @@
 ---
-title: 'Nasıl yapılır: Kodunuzda izleme uygulama'
+title: 'Nasıl yapılır: Kodunuzda İzleme Uygulama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CRectTracker class [MFC], implementing trackers
 ms.assetid: baaeca2c-5114-485f-bf58-8807db1bc973
-ms.openlocfilehash: 0f037480e83b8ca1ba12af56904afe25a33e4d6c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3d71543261021c7e20041d317401b7b7b8d0616e
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160308"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84621665"
 ---
-# <a name="how-to-implement-tracking-in-your-code"></a>Nasıl yapılır: Kodunuzda izleme uygulama
+# <a name="how-to-implement-tracking-in-your-code"></a>Nasıl yapılır: Kodunuzda İzleme Uygulama
 
-OLE öğesini izlemek için öğeye tıklandığında veya belgenin görünümünü güncelleştirme gibi öğesine ilgili belirli olayları işlemesi gerekir. Her durumda, geçici bir bildirmek yeterli [CRectTracker](../mfc/reference/crecttracker-class.md) yoluyla bu nesnesi nesne ve öğe.
+Bir OLE öğesini izlemek için öğe ile ilgili belirli olayları (öğeyi tıklatmak veya belge görünümünü güncelleştirmek) işlemeniz gerekir. Her durumda, geçici bir [CRectTracker](reference/crecttracker-class.md) nesnesi bildirmek ve öğeyi bu nesnenin yoluyla işlemek yeterlidir.
 
-Bir kullanıcı bir öğeyi seçer veya bir menü komutu ile bir nesne ekler OLE öğesinin durumunu göstermek için uygun stilleri izleyiciyle başlatmanız gerekir. Aşağıdaki tabloda OCLIENT örnek tarafından kullanılan kuralları açıklar. Bu stiller hakkında daha fazla bilgi için bkz. `CRectTracker`.
+Bir Kullanıcı bir öğe seçtiğinde veya bir menü komutuyla bir nesne eklediğinde, OLE öğesinin durumunu göstermek için izleyici 'yi uygun stillerle başlatmalısınız. Aşağıdaki tabloda OCLIENT örneği tarafından kullanılan kurallar özetlenmektedir. Bu stiller hakkında daha fazla bilgi için bkz `CRectTracker` ..
 
-### <a name="container-styles-and-states-of-the-ole-item"></a>Kapsayıcı stilleri ve OLE öğesinin durumları
+### <a name="container-styles-and-states-of-the-ole-item"></a>OLE öğesinin kapsayıcı stilleri ve durumları
 
-|Görüntülenen stili|OLE öğesinin durumu|
+|Stil görüntülendi|OLE öğesinin durumu|
 |---------------------|-----------------------|
-|Noktalı kenarlığı|Öğesi bağlandı|
-|Düz kenarlık|Öğesi, belgeye eklenir|
-|Yeniden boyutlandırma tutamaçları|Şu anda seçili öğe|
-|Taranmış kenarlık|Öğe şu anda yerinde etkin olduğu|
-|Tarama desen yer paylaşımları öğesi|Öğenin sunucu Aç|
+|Noktalı kenarlık|Öğe bağlı|
+|Düz kenarlık|Öğe belgenize eklenmiş|
+|Yeniden boyutlandırma tutamaçları|Öğe şu anda seçili|
+|Taranmış kenarlık|Öğe şu anda yerinde etkin|
+|Tarama deseninin yer paylaşımı öğesi|Öğenin sunucusu açık|
 
-OLE öğesi durumunu denetler ve uygun stilleri ayarlayan bir yordamı kullanarak kolayca bu başlatma başa çıkabilir. `SetupTracker` OCLIENT örnekte bulunan işlevi İzleyicisi başlatma gösterir. Bu işlev, İzleyici adresini parametreleridir *pTracker*; bir alt İzleyici için ilgili istemci öğesi işaretçisi *pItem*; ve bir dikdörtgen bir işaretçiye *pTrueRect* . Bu işlevin daha eksiksiz bir örnek için bkz. MFC OLE örnek [OCLIENT](../overview/visual-cpp-samples.md).
+Bu başlatmayı OLE öğesinin durumunu denetleyen ve uygun stilleri ayarlayan bir yordam kullanarak kolayca işleyebilirsiniz. `SetupTracker`OCLIENT örneğinde bulunan işlevi izleyici başlatmasını gösterir. Bu işlevin parametreleri, izleyici 'nin adresidir, *pTracker*; izleyici, *Pitem*; ile ilgili istemci öğesine yönelik bir işaretçi ve bir dikdörtgen işaretçisi, *pTrueRect*. Bu işlevin daha kapsamlı bir örneği için bkz. MFC OLE örnek [Oclient](../overview/visual-cpp-samples.md).
 
-**SetupTracker** kod örneği, tek bir işlev sunar; işlev satırlarını tartışma işlevin özellikleri ile interspersed:
+**SetupTracker** kod örneği tek bir işlev gösterir; işlevin satırları işlevin özelliklerinin tartışmasına göre yapılır:
 
-[!code-cpp[NVC_MFCOClient#1](../mfc/codesnippet/cpp/how-to-implement-tracking-in-your-code_1.cpp)]
+[!code-cpp[NVC_MFCOClient#1](codesnippet/cpp/how-to-implement-tracking-in-your-code_1.cpp)]
 
-İzleyici, en düşük boyut ayarlama ve temizleme İzleyici stilini başlatılır.
+İzleyici, en küçük boyut ayarlanarak ve izleyici stilini temizleyerek başlatılır.
 
-[!code-cpp[NVC_MFCOClient#2](../mfc/codesnippet/cpp/how-to-implement-tracking-in-your-code_2.cpp)]
+[!code-cpp[NVC_MFCOClient#2](codesnippet/cpp/how-to-implement-tracking-in-your-code_2.cpp)]
 
-Aşağıdaki satırları öğe şu anda seçili olduğundan ve öğe belgeye bağlantılı veya katıştırılmış olup olmadığını kontrol edin. Yeniden boyutlandırma tutamaçları üzerinde kenarlığı içinde bulunan öğesi seçili belirten stiline eklenir. Öğe belgenize bağlıysa, noktalı kenarlık stili kullanılır. Öğe eklendiyse düz bir kenarlık kullanılır.
+Aşağıdaki satırlar, öğenin şu anda seçili olup olmadığını ve öğenin belgeye bağlanıp bağlanmadığını ve bu öğeye gömülü olduğunu denetler. Kenarlığın içinde bulunan yeniden boyutlandırma tutamaçları, öğenin şu anda seçili olduğunu belirten stile eklenir. Öğe belgenize bağlıysa, noktalı kenarlık stili kullanılır. Öğe katıştırılmışsa, düz bir kenarlık kullanılır.
 
-[!code-cpp[NVC_MFCOClient#3](../mfc/codesnippet/cpp/how-to-implement-tracking-in-your-code_3.cpp)]
+[!code-cpp[NVC_MFCOClient#3](codesnippet/cpp/how-to-implement-tracking-in-your-code_3.cpp)]
 
-Aşağıdaki kod paylaşımı öğe öğe şu anda ise taranmış bir desen ile açın.
+Aşağıdaki kod, öğe şu anda açıksa, öğe bir hagesle birlikte yer açar.
 
-[!code-cpp[NVC_MFCOClient#4](../mfc/codesnippet/cpp/how-to-implement-tracking-in-your-code_4.cpp)]
+[!code-cpp[NVC_MFCOClient#4](codesnippet/cpp/how-to-implement-tracking-in-your-code_4.cpp)]
 
-İzleyici görüntülenecek olduğunda daha sonra bu işlevi çağırabilirsiniz. Örneğin, bu işlevden çağırma `OnDraw` işlevi, görünüm sınıfı. Görünümü yeniden çizilmesini olduğunda bu İzleyici'nın görünümünü güncelleştirir. Tam bir örnek için bkz. `CMainView::OnDraw` MFC OLE örnek işlevi [OCLIENT](../overview/visual-cpp-samples.md).
+Daha sonra izleyici her görüntülendiğinde bu işlevi çağırabilirsiniz. Örneğin, bu işlevi `OnDraw` Görünüm sınıfınızın işlevinden çağırın. Bu, görünüm yeniden boyandiğinde izleyici görünümünü güncelleştirir. Tüm örnek için, `CMainView::OnDraw` MFC OLE örnek [oclient](../overview/visual-cpp-samples.md)işlevine bakın.
 
-Uygulamanızda, yeniden boyutlandırma, taşıma veya isabet algılama gibi İzleyicisi kod gerektiren olayları ortaya çıkar. Bu Eylemler, genellikle girişiminde alın veya öğeyi taşı için yapılan gösterir. Bu gibi durumlarda, ne yakaladı karar vermeniz gerekir: bir yeniden boyutlandırma tutamacı ya da bir kısmını arasındaki kenarlığın yeniden boyutlandırma tutamaçları. `OnLButtonDown` İleti işleyicisi öğesi ile ilgili olarak farenin konumunun test etmek için iyi bir yerdir. Çağrı yapmak `CRectTracker::HitTest`. Test yanı sıra bir şey döndürürse `CRectTracker::hitOutside`, öğeyi yeniden boyutlandırılabilir veya taşınmış olan. Bu nedenle, çağrı yapmak `Track` üye işlevi. Bkz: `CMainView::OnLButtonDown` işlevi MFC OLE örnekte bulunan [OCLIENT](../overview/visual-cpp-samples.md) tam bir örnek.
+Uygulamanızda, yeniden boyutlandırma, taşıma veya isabet algılama gibi izleyici kodu gerektiren olaylar meydana gelir. Bu eylemler genellikle öğeyi almak veya taşımak için bir deneme yapıldığını gösterir. Bu gibi durumlarda, nelerin boyutlandırılacağını belirlemeniz gerekir: bir yeniden boyutlandırma tutamacı veya yeniden boyutlandırma tutamaçları arasındaki kenarlığın bir bölümü. `OnLButtonDown`İleti işleyicisi, fare konumunu öğeyle bağlantılı olarak test etmek için uygun bir yerdir. İçin bir çağrısı yapın `CRectTracker::HitTest` . Test bir şeyi geri döndürürse `CRectTracker::hitOutside` , öğe yeniden boyutlandırılıyor veya taşınıyor. Bu nedenle, üye işlevine bir çağrı yapmanız gerekir `Track` . `CMainView::OnLButtonDown`Tüm örnek IÇIN MFC OLE örnek [oclient](../overview/visual-cpp-samples.md) içinde bulunan işleve bakın.
 
-`CRectTracker` Sınıfı bir taşıma, yeniden boyutlandırmak veya sürükleyin işlemi sürüyor yeri belirtmek için kullanılan birkaç farklı işaretçi şekilleri sağlar. Bu olayı işlemek için öğe fareyi altında şu anda seçili olup olmadığını denetleyin. İse, çağrı yapmak `CRectTracker::SetCursor`, veya varsayılan işleyici arayın. Aşağıdaki örnek, MFC OLE örnekten [OCLIENT](../overview/visual-cpp-samples.md):
+`CRectTracker`Sınıfı, bir taşıma, yeniden boyutlandırma veya sürükleme işleminin yapılıp yapılmayacağını göstermek için kullanılan birkaç farklı imleç şekli sağlar. Bu olayı işlemek için, fare altında bulunan öğenin seçili olup olmadığını denetleyin. Varsa, için bir çağrı yapın `CRectTracker::SetCursor` veya varsayılan işleyiciyi çağırın. Aşağıdaki örnek MFC OLE örnek [Oclient](../overview/visual-cpp-samples.md)örneğidir:
 
-[!code-cpp[NVC_MFCOClient#5](../mfc/codesnippet/cpp/how-to-implement-tracking-in-your-code_5.cpp)]
+[!code-cpp[NVC_MFCOClient#5](codesnippet/cpp/how-to-implement-tracking-in-your-code_5.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzleyiciler: OLE uygulamanızda izleyicileri uygulama](../mfc/trackers-implementing-trackers-in-your-ole-application.md)
+[İzleyiciler: OLE Uygulamanızda İzleyicileri Uygulama](trackers-implementing-trackers-in-your-ole-application.md)

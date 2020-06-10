@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Common Controls (MFC), build requirements
 - Common Controls (MFC)
 ms.assetid: 025f7d55-55a2-4dcd-8f62-02424e3dcc04
-ms.openlocfilehash: 9ea90f95ba8e704cba5b22c5e7338659f0c5f033
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: cf2139e04d2f72feb7951010caa351d67ccc5a93
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630854"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619735"
 ---
 # <a name="build-requirements-for-windows-common-controls"></a>Windows ortak denetimleri için derleme gereksinimleri
 
@@ -18,7 +18,7 @@ Microsoft Foundation Class (MFC) kitaplığı [Windows ortak denetimlerini](/win
 
 ## <a name="compilation-requirements"></a>Derleme gereksinimleri
 
-### <a name="supported-versions"></a>Desteklenen sürümler
+### <a name="supported-versions"></a>Desteklenen Sürümler
 
 MFC ortak denetimlerin tüm sürümlerini destekler. Windows ortak denetimler sürümleri hakkında daha fazla bilgi için bkz. [ortak denetim sürümleri](/windows/win32/controls/common-control-versions).
 
@@ -52,6 +52,6 @@ Windows ortak denetimleri kullanan yeni bir MFC uygulaması oluşturmak için Vi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel MFC Konuları](../mfc/general-mfc-topics.md)<br/>
-[Hiyerarşi Grafiği](../mfc/hierarchy-chart.md)<br/>
-[Kullanım Dışı ANSI API'leri](../mfc/deprecated-ansi-apis.md)
+[Genel MFC Konuları](general-mfc-topics.md)<br/>
+[Hiyerarşi Grafiği](hierarchy-chart.md)<br/>
+[Kullanım Dışı ANSI API'ları](deprecated-ansi-apis.md)

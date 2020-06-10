@@ -7,24 +7,24 @@ helpviewer_keywords:
 - communications, tree controls
 - tree controls
 ms.assetid: 680ad9ee-b11f-452d-93fa-501ca7d7e069
-ms.openlocfilehash: 920608724ebb362b91efdcb3eab50b80acd20474
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f480cdad2fce53f830b8067083a8a4be4b4e4848
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62151265"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619655"
 ---
 # <a name="communicating-with-a-tree-control"></a>Ağaç Denetimi ile İletişim
 
-Arayan üye işlevleri için farklı yöntemler kullanma bir [CTreeCtrl](../mfc/reference/ctreectrl-class.md) nesne nasıl oluşturulduğuna bağlı olarak nesnesi:
+Nesnenin oluşturulma şekline bağlı olarak bir [Ctreeci](reference/ctreectrl-class.md) nesnesinde üye işlevleri çağırmak için farklı yöntemler kullanırsınız:
 
-- Ağaç denetimi iletişim kutusunda, bir üye değişkeni türü kullanın `CTreeCtrl` , iletişim kutusu sınıfı oluşturma.
+- Ağaç denetimi bir iletişim kutusunda ise, `CTreeCtrl` iletişim kutusu sınıfında oluşturduğunuz türünde bir üye değişkeni kullanın.
 
-- Ağaç denetimi alt pencere ise kullanın `CTreeCtrl` nesnesi (veya işaretçi), kullanılan nesneyi oluşturmak için.
+- Ağaç denetimi bir alt pencere ise, `CTreeCtrl` nesneyi oluşturmak için kullandığınız nesneyi (veya işaretçiyi) kullanın.
 
-- Kullanıyorsanız, bir `CTreeView` nesne, işlevini [CTreeView::GetTreeCtrl](../mfc/reference/ctreeview-class.md#gettreectrl) ağaç denetimi bir başvuru almak için. Bu değere sahip başka bir başvuruyu başlatmak veya adresine yapılan başvurunun bir `CTreeCtrl` işaretçi.
+- Bir `CTreeView` nesnesi kullanıyorsanız, ağaç denetimine bir başvuru almak Için [CTreeView:: Gettreecini](reference/ctreeview-class.md#gettreectrl) işlevini kullanın. Bu değerle başka bir başvuru başlatabilir veya başvurunun adresini bir `CTreeCtrl` işaretçiye atayabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CTreeCtrl Kullanma](../mfc/using-ctreectrl.md)<br/>
-[Denetimler](../mfc/controls-mfc.md)
+[CTreeCtrl Kullanma](using-ctreectrl.md)<br/>
+[Denetimler](controls-mfc.md)
