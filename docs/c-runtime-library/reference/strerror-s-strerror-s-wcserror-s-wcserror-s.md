@@ -1,6 +1,6 @@
 ---
 title: strerror_s, _strerror_s, _wcserror_s, __wcserror_s
-ms.date: 4/2/2020
+ms.date: 06/09/2020
 api_name:
 - __wcserror_s
 - _strerror_s
@@ -46,38 +46,38 @@ helpviewer_keywords:
 - wcserror_s function
 - error messages, getting
 ms.assetid: 9e5b15a0-efe1-4586-b7e3-e1d7c31a03d6
-ms.openlocfilehash: b7361f626708672af5539dd3b3b9c0cf83fcd2d2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 91be8803a0695670e7afe673b25b54fccde40a9c
+ms.sourcegitcommit: 8167c67d76de58a7c2df3b4dcbf3d53e3b151b77
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918392"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84664332"
 ---
 # <a name="strerror_s-_strerror_s-_wcserror_s-__wcserror_s"></a>strerror_s, _strerror_s, _wcserror_s, __wcserror_s
 
-Bir sistem hata iletisi (**strerror_s**, **_wcserror_s**) veya Kullanıcı tarafından sağlanan bir hata iletisi (**_strerror_s**, **__wcserror_s**) alın. Bu sürümler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [, _strerror, _wcserror \__wcserror](strerror-strerror-wcserror-wcserror.md) .
+Bir sistem hata iletisi (**strerror_s**, **_wcserror_s**) veya Kullanıcı tarafından sağlanan bir hata iletisi (**_strerror_s**, **__wcserror_s**) alın. Bu sürümler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [, _strerror, _wcserror \_ _wcserror](strerror-strerror-wcserror-wcserror.md) .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 errno_t strerror_s(
    char *buffer,
-   size_t numberOfElements,
+   size_t sizeInBytes,
    int errnum
 );
 errno_t _strerror_s(
    char *buffer,
-   size_t numberOfElements,
+   size_t sizeInBytes,
    const char *strErrMsg
 );
 errno_t _wcserror_s(
    wchar_t *buffer,
-   size_t numberOfElements,
+   size_t sizeInWords,
    int errnum
 );
 errno_t __wcserror_s(
    wchar_t *buffer,
-   size_t numberOfElements,
+   size_t sizeInWords,
    const wchar_t *strErrMsg
 );
 template <size_t size>
@@ -107,8 +107,11 @@ errno_t __wcserror_s(
 *arabelleğin*<br/>
 Hata dizesini tutan arabellek.
 
-*numberOfElements*<br/>
-Arabelleğin boyutu.
+*sizeInBytes*<br/>
+Arabellekteki bayt sayısı.
+
+*sizeInWords*<br/>
+Arabellekteki sözcüklerin sayısı.
 
 *errnum*<br/>
 Hata numarası.
@@ -122,10 +125,10 @@ Başarılıysa sıfır, hata durumunda hata kodu.
 
 ### <a name="error-condtions"></a>Hata onayları
 
-|*arabelleğin*|*numberOfElements*|*strErrMsg*|*Arabelleğin* içeriği|
+|*arabelleğin*|*sizeInBytes/sizeInWords*|*strErrMsg*|*Arabelleğin* içeriği|
 |--------------|------------------------|-----------------|--------------------------|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|yok|
-|kaydedilmemiş|0|kaydedilmemiş|değiştirilmedi|
+|**DEĞER**|herhangi biri|herhangi biri|yok|
+|herhangi biri|0|herhangi biri|değiştirilmedi|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -141,7 +144,7 @@ if (( _access( "datafile",2 )) == -1 )
 
 *StrErrMsg* **null**ise **_strerror_s** , bir hata üreten son kitaplık çağrısının sistem hata iletisini içeren *arabellekte* bir dize döndürür. Hata iletisi dizesi yeni satır karakteri (' \n ') tarafından sona erdirildi. *StrErrMsg* , **null**değerine eşit değilse, **_strerror_s** dize iletinizi, iki nokta üst üste, bir boşluk, bir hata üreten son kitaplık çağrısının sistem hata iletisini ve yeni satır *karakterini içeren bir* dize döndürür. Dize iletiniz en fazla 94 karakter uzunluğunda olabilir.
 
-Bu işlevler, uzunluğu *numberOfElements* -1 ' i aşarsa hata iletisini keser. *Arabellekte* elde edilen dize her zaman null ile sonlandırılır.
+Bu işlevler, uzunluğu buffer-1 boyutunu aşarsa hata iletisini keser. *Arabellekte* elde edilen dize her zaman null olarak sonlandırılır.
 
 **_Strerror_s** için gerçek hata numarası [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)değişkeninde depolanır. Sistem hata iletilerine, hata numarasına göre sıralanmış bir ileti dizisi olan [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)değişken aracılığıyla erişilir. **_strerror_s** , **_sys_errlist**değişkenine dizin olarak **errno** değeri kullanarak uygun hata iletisine erişir. [_Sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) değişkeninin değeri, **_sys_errlist** dizisindeki en fazla öğe sayısı olarak tanımlanır. Doğru sonuçlar oluşturmak için, bir kitaplık yordamı hata ile çağrıldıktan hemen sonra **_strerror_s** çağırın. Aksi takdirde, **strerror_s** veya **_strerror_s** sonraki çağrıları **errno** değerinin üzerine yazabilir.
 
@@ -167,8 +170,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strerror_s**, **_strerror_s**|\<String. h>|
-|**_wcserror_s**, **__wcserror_s**|\<String. h> veya \<wchar. h>|
+|**strerror_s**, **_strerror_s**|\<string.h>|
+|**_wcserror_s**, **__wcserror_s**|\<string.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

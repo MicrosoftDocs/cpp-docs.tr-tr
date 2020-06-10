@@ -1,6 +1,6 @@
 ---
 title: CFileException Sınıfı
-ms.date: 11/04/2016
+ms.date: 06/09/2020
 f1_keywords:
 - CFileException
 - AFX/CFileException
@@ -24,18 +24,18 @@ helpviewer_keywords:
 - CFileException [MFC], m_lOsError
 - CFileException [MFC], m_strFileName
 ms.assetid: f6491bb9-bfbc-42fd-a952-b33f9b62323f
-ms.openlocfilehash: 2d1025ca33d5641982ba52f1ac539db85df3bfd5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f58ba02862e9c0f0c0c0d24797be939276ca8035
+ms.sourcegitcommit: 8167c67d76de58a7c2df3b4dcbf3d53e3b151b77
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373889"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84664345"
 ---
 # <a name="cfileexception-class"></a>CFileException Sınıfı
 
-Dosyayla ilgili özel durum koşulunu temsil eder.
+Dosya ile ilgili özel durum koşulunu temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 class CFileException : public CException
@@ -45,49 +45,49 @@ class CFileException : public CException
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Name|Description|
 |----------|-----------------|
-|[CFileException::CFileException](#cfileexception)|Bir `CFileException` nesne inşa eder.|
+|[CFileException:: CFileException](#cfileexception)|Bir `CFileException` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Name|Description|
 |----------|-----------------|
-|[CFileException::ErrnoToException](#errnotoexception)|Çalışma zamanı hata numarasına karşılık gelen neden kodunu döndürür.|
-|[CFileException::GetErrorMessage](#geterrormessage)|Özel bir durumu açıklayan iletiyi alır.|
-|[CfileException::OsErrortoException](#oserrortoexception)|İşletim sistemi hata koduna karşılık gelen bir neden kodu verir.|
-|[CFileException::ThrowErrno](#throwerrno)|Çalışma zamanı hata numarasını temel alan bir dosya özel durum oluşturur.|
-|[CFileException::throwoserror](#throwoserror)|İşletim sistemi hata numarasını temel alan bir dosya özel durum oluşturur.|
+|[CFileException:: Errnotoözel durumu](#errnotoexception)|Çalışma zamanı hata numarasına karşılık gelen nedeni kodu döndürür.|
+|[CFileException:: GetErrorMessage](#geterrormessage)|Özel durumu açıklayan iletiyi alır.|
+|[CFileException:: OsErrorToException](#oserrortoexception)|Bir işletim sistemi hata koduna karşılık gelen bir neden kodu döndürür.|
+|[CFileException:: ThrowErrno](#throwerrno)|Çalışma zamanı hata numarasına göre bir dosya özel durumu oluşturur.|
+|[CFileException:: ThrowOsError](#throwoserror)|Bir işletim sistemi hata numarasına göre bir dosya özel durumu oluşturur.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Name|Description|
 |----------|-----------------|
-|[CFileException::m_cause](#m_cause)|Özel durum nedenine karşılık gelen taşınabilir kodu içerir.|
-|[CFileException::m_lOsError](#m_loserror)|İlgili işletim sistemi hata numarasını içerir.|
-|[CFileException::m_strFileName](#m_strfilename)|Bu özel durum için dosyanın adını içerir.|
+|[CFileException:: m_cause](#m_cause)|Özel durum nedenine karşılık gelen taşınabilir kodu içerir.|
+|[CFileException:: m_lOsError](#m_loserror)|İlgili işletim sistemi hata numarasını içerir.|
+|[CFileException:: m_strFileName](#m_strfilename)|Bu özel durum için dosyanın adını içerir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf, `CFileException` taşınabilir neden kodunu ve işletim sistemine özgü hata numarasını tutan ortak veri üyelerini içerir. Sınıf ayrıca dosya özel durumlarını atmak ve hem işletim sistemi hataları hem de C çalışma zamanı hataları için neden kodlarını döndürmek için statik üye işlevler de sağlar.
+`CFileException`Sınıfı, taşınabilir neden kodunu ve işletim sistemine özgü hata numarasını tutan ortak veri üyelerini içerir. Sınıfı ayrıca, dosya özel durumları oluşturmak için statik üye işlevleri ve hem işletim sistemi hataları hem de C çalışma zamanı hataları için neden kodları döndürüyor.
 
-`CFileException`nesneler, üye işlevlerde `CFile` ve türemiş sınıfların üye işlevlerinde oluşturulur ve atılır. Catch **ifadesi** kapsamında bu nesnelere erişebilirsiniz. Taşınabilirlik için, bir özel durum nedenini almak için yalnızca neden kodunu kullanın. Özel durumlar hakkında daha fazla bilgi için [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md)makalesine bakın.
+`CFileException`nesneler, `CFile` üye işlevlerinde ve türetilmiş sınıfların üye işlevlerinde oluşturulur ve oluşturulur. Bu nesnelere bir **catch** ifadesinin kapsamı içinde erişebilirsiniz. Taşınabilirlik için, bir özel durumun nedenini almak üzere yalnızca neden kodunu kullanın. Özel durumlar hakkında daha fazla bilgi için bkz. [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Cexception](../../mfc/reference/cexception-class.md)
+[CException](../../mfc/reference/cexception-class.md)
 
 `CFileException`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afx.h
+**Üstbilgi:** AFX. h
 
-## <a name="cfileexceptioncfileexception"></a><a name="cfileexception"></a>CFileException::CFileException
+## <a name="cfileexceptioncfileexception"></a><a name="cfileexception"></a>CFileException:: CFileException
 
-Nesnede `CFileException` neden kodu ve işletim sistemi kodunu depolayan bir nesne oluşturuyor.
+`CFileException`Nesnenin neden kodunu ve işletim sistemi kodunu depolayan bir nesne oluşturur.
 
 ```
 CFileException(
@@ -98,25 +98,25 @@ CFileException(
 
 ### <a name="parameters"></a>Parametreler
 
-*Neden*<br/>
-Özel durum nedenini gösteren numaralandırılmış bir tür değişkeni. Bkz. [CFileException::m_cause](#m_cause) olası değerlerin listesi için.
+*sağlamak*<br/>
+Özel durumun nedenini gösteren numaralandırılmış tür değişkeni. Olası değerlerin listesi için bkz. [CFileException:: m_cause](#m_cause) .
 
 *lOsError*<br/>
-Varsa, özel durum için işletim sistemine özgü bir neden. *lOsError* parametresi *nedenden* daha fazla bilgi sağlar.
+Özel durum varsa, işletim sistemine özgü bir neden. *LOsError* parametresi, *neden olmasına* göre daha fazla bilgi sağlar.
 
 *lpszArchiveName*<br/>
-Özel durum neden `CFile` nesnenin adını içeren bir dize işaret eder.
+Özel duruma neden olan nesnenin adını içeren bir dizeye işaret eder `CFile` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu oluşturucuyu doğrudan kullanmayın, daha çok global işlevi [AfxThrowFileException'ı](exception-processing.md#afxthrowfileexception)arayın.
+Bu oluşturucuyu doğrudan kullanmayın, ancak [AfxThrowFileException](exception-processing.md#afxthrowfileexception)genel işlevini çağırın.
 
 > [!NOTE]
-> Değişken *lOsError* yalnızca ve `CFile` `CStdioFile` nesneler için geçerlidir. Sınıf `CMemFile` bu hata kodunu işlemez.
+> *LOsError* değişkeni yalnızca `CFile` ve nesneleri için geçerlidir `CStdioFile` . `CMemFile`Sınıf bu hata kodunu işlemez.
 
-## <a name="cfileexceptionerrnotoexception"></a><a name="errnotoexception"></a>CFileException::ErrnoToException
+## <a name="cfileexceptionerrnotoexception"></a><a name="errnotoexception"></a>CFileException:: Errnotoözel durumu
 
-Belirli bir çalışma zamanı kitaplığı hata `CFileException` değerini numaralandırılmış bir hata değerine dönüştürür.
+Verilen bir çalışma zamanı kitaplığı hata değerini `CFileException` numaralandırılmış bir hata değerine dönüştürür.
 
 ```
 static int PASCAL ErrnoToException(int nErrno);
@@ -125,21 +125,21 @@ static int PASCAL ErrnoToException(int nErrno);
 ### <a name="parameters"></a>Parametreler
 
 *nErrno*<br/>
-Çalışma süresinde tanımlandığı gibi bir bir hata kodu dosya ERRNO içerir. H.
+Çalışma zamanı içerme dosyası ERRNO 'da tanımlanan bir tamsayı hata kodu. Olsun.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirli bir çalışma zamanı kitaplığı hata değerine karşılık gelen numaralandırılmış değer.
+Belirli bir çalışma zamanı kitaplığı hata değerine karşılık gelen Enum değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Bkz. CFileException::m_cause](#m_cause) olası numaralandırılmış değerlerin listesi için.
+Olası numaralandırılmış değerlerin listesi için bkz. [CFileException:: m_cause](#m_cause) .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCFiles#26](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_1.cpp)]
 
-## <a name="cfileexceptiongeterrormessage"></a><a name="geterrormessage"></a>CFileException::GetErrorMessage
+## <a name="cfileexceptiongeterrormessage"></a><a name="geterrormessage"></a>CFileException:: GetErrorMessage
 
 Özel durumu açıklayan metni alır.
 
@@ -152,32 +152,32 @@ virtual BOOL GetErrorMessage(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszHata*<br/>
-[içinde, dışarı] Hata iletisi alan bir arabellek için işaretçi.
+*lpszError*<br/>
+[in, out] Bir hata iletisi alan arabelleğin işaretçisi.
 
-*nMaxHatası*<br/>
-[içinde] Belirtilen arabellek tutabilir karakter maksimum sayısı. Bu sonlandırıcı null karakteri içerir.
+*nMaxError*<br/>
+'ndaki Belirtilen arabelleğin tutabilecek en fazla karakter sayısı. Bu, Sonlandırıcı null karakterini içerir.
 
 *pnHelpContext*<br/>
-[içinde, dışarı] Yardım bağlamı kimliğini alan imzasız bir alıcıyı işaretçi. `NULL`, kimlik döndürülmezse.
+[in, out] Yardım bağlamı KIMLIĞINI alan işaretsiz tamsayıya yönelik işaretçi. İse `NULL` kimlik döndürülmez.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olsaydı DOĞRU; aksi takdirde YANLIŞ.
+Yöntem başarılı olduysa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen arabellek çok küçükse, hata iletisi kesilir.
+Belirtilen arabellek çok küçükse hata iletisi kesilir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekkullanır. `CFileException::GetErrorMessage`
+Aşağıdaki örnek kullanılmıştır `CFileException::GetErrorMessage` .
 
 [!code-cpp[NVC_MFCExceptions#22](../../mfc/codesnippet/cpp/cfileexception-class_2.cpp)]
 
-## <a name="cfileexceptionm_cause"></a><a name="m_cause"></a>CFileException::m_cause
+## <a name="cfileexceptionm_cause"></a><a name="m_cause"></a>CFileException:: m_cause
 
-Numaralandırılmış bir `CFileException` tür tarafından tanımlanan değerleri içerir.
+Numaralandırılmış bir tür tarafından tanımlanan değerleri içerir `CFileException` .
 
 ```
 int m_cause;
@@ -185,49 +185,37 @@ int m_cause;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu veri üyesi, **int**türünden genel bir değişkendir. Sayısallaştırıcılar ve anlamları aşağıdaki gibidir:
+Bu veri üyesi **int**türünde ortak bir değişkendir. Numaralandırıcılar ve anlamları aşağıdaki gibidir:
 
-- `CFileException::none`0: Hata oluşmadı.
-
-- `CFileException::genericException`1: Belirtilmeyen bir hata oluştu.
-
-- `CFileException::fileNotFound`2: Dosya bulunamadı.
-
-- `CFileException::badPath`3: Yolun tamamı veya bir kısmı geçersizdir.
-
-- `CFileException::tooManyOpenFiles`4: İzin verilen açık dosya sayısı aşıldı.
-
-- `CFileException::accessDenied`5: Dosyaya erişilenemedi.
-
-- `CFileException::invalidFile`6: Geçersiz bir dosya tanıtıcısı kullanma girişimi oldu.
-
-- `CFileException::removeCurrentDir`7: Geçerli çalışma dizini kaldırılamaz.
-
-- `CFileException::directoryFull`8: Artık dizin girişi yok.
-
-- `CFileException::badSeek`9: Dosya işaretçisini ayarlamaya çalışan bir hata oluştu.
-
-- `CFileException::hardIO`10: Bir donanım hatası oluştu.
-
-- `CFileException::sharingViolation`11: PAYLAŞ. EXE yüklü değildi veya paylaşılan bir bölge kilitlendi.
-
-- `CFileException::lockViolation`12: Zaten kilitli olan bir bölgeyi kilitleme girişimi yapıldı.
-
-- `CFileException::diskFull`14: Disk dolu.
-
-- `CFileException::endOfFile`15: Dosyanın sonuna ulaşıldı.
+| Hata | Değer ve anlamı |
+|--|--|
+| `CFileException::none` | 0: hata oluştu. |
+| `CFileException::genericException` | 1: belirtilmeyen bir hata oluştu. |
+| `CFileException::fileNotFound` | 2: dosya bulunamadı. |
+| `CFileException::badPath` | 3: yolun tamamı veya bir kısmı geçersiz. |
+| `CFileException::tooManyOpenFiles` | 4: izin verilen açık dosya sayısı aşıldı. |
+| `CFileException::accessDenied` | 5: dosyaya erişilemedi. |
+| `CFileException::invalidFile` | 6: geçersiz bir dosya tanıtıcısı kullanma girişimi vardı. |
+| `CFileException::removeCurrentDir` | 7: geçerli çalışma dizini kaldırılamıyor. |
+| `CFileException::directoryFull` | 8: başka dizin girdisi yok. |
+| `CFileException::badSeek` | 9: dosya işaretçisi ayarlanmaya çalışılırken bir hata oluştu. |
+| `CFileException::hardIO` | 10: bir donanım hatası vardı. |
+| `CFileException::sharingViolation` | 11: SHARE.EXE yüklenmedi veya paylaşılan bir bölge kilitli. |
+| `CFileException::lockViolation` | 12: zaten kilitli olan bir bölgeyi kilitleme girişimi vardı. |
+| `CFileException::diskFull` | 13: disk dolu. |
+| `CFileException::endOfFile` | 14: dosya sonuna ulaşıldı. |
 
     > [!NOTE]
-    >  Bu `CFileException` neden sayısallaştırıcılar `CArchiveException` neden sayısalatörler farklıdır.
+    >  These `CFileException` cause enumerators are distinct from the `CArchiveException` cause enumerators.
 
     > [!NOTE]
-    > `CArchiveException::generic`amortismana lı. Bunun yerine `genericException` kullanın. **Genel bir** uygulamada kullanılır ve /clr ile oluşturulmuşsa, ortaya çıkan sözdizimi hatalarını çözmek kolay değildir.
+    > `CArchiveException::generic` is deprecated. Use `genericException` instead. If **generic** is used in an application and built with /clr, the resulting syntax errors are not easy to decipher.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCFiles#30](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_3.cpp)]
 
-## <a name="cfileexceptionm_loserror"></a><a name="m_loserror"></a>CFileException::m_lOsError
+## <a name="cfileexceptionm_loserror"></a><a name="m_loserror"></a>CFileException:: m_lOsError
 
 Bu özel durum için işletim sistemi hata kodunu içerir.
 
@@ -237,19 +225,19 @@ LONG m_lOsError;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata kodlarının listesi için işletim sistemi teknik kılavuzuna bakın. Bu veri üyesi, UZUN türünde ortak bir değişkendir.
+Hata kodlarının listelenmesi için işletim sistemi teknik kılavuzuna bakın. Bu veri üyesi LONG türünde ortak bir değişkendir.
 
-## <a name="cfileexceptionm_strfilename"></a><a name="m_strfilename"></a>CFileException::m_strFileName
+## <a name="cfileexceptionm_strfilename"></a><a name="m_strfilename"></a>CFileException:: m_strFileName
 
-Bu özel durum koşulu için dosyanın adını içerir.
+Bu özel durum koşulunun dosya adını içerir.
 
 ```
 CString m_strFileName;
 ```
 
-## <a name="cfileexceptionoserrortoexception"></a><a name="oserrortoexception"></a>CfileException::OsErrortoException
+## <a name="cfileexceptionoserrortoexception"></a><a name="oserrortoexception"></a>CFileException:: OsErrorToException
 
-Belirli bir *lOsError* değerine karşılık gelen bir sayısallaştırıcı döndürür. Hata kodu bilinmiyorsa, işlev `CFileException::generic`döndürür.
+Verilen *lOsError* değerine karşılık gelen bir Numaralandırıcı döndürür. Hata kodu bilinmiyorsa, işlev döndürür `CFileException::generic` .
 
 ```
 static int PASCAL OsErrorToException(LONG lOsError);
@@ -262,15 +250,15 @@ static int PASCAL OsErrorToException(LONG lOsError);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirli bir işletim sistemi hata değerine karşılık gelen numaralandırılmış değer.
+Belirli bir işletim sistemi hata değerine karşılık gelen Enum değeri.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCFiles#27](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_4.cpp)]
 
-## <a name="cfileexceptionthrowerrno"></a><a name="throwerrno"></a>CFileException::ThrowErrno
+## <a name="cfileexceptionthrowerrno"></a><a name="throwerrno"></a>CFileException:: ThrowErrno
 
-Belirli bir `CFileException` *nErrno* değerine karşılık gelen bir nesne oluşturur, sonra özel durum atar.
+`CFileException`Belirli bir *nErrno* değeri ile eşleşen bir nesne oluşturur, sonra özel durumu oluşturur.
 
 ```
 static void PASCAL ThrowErrno(int nErrno, LPCTSTR lpszFileName = NULL);
@@ -279,18 +267,18 @@ static void PASCAL ThrowErrno(int nErrno, LPCTSTR lpszFileName = NULL);
 ### <a name="parameters"></a>Parametreler
 
 *nErrno*<br/>
-Çalışma süresinde tanımlandığı gibi bir bir hata kodu dosya ERRNO içerir. H.
+Çalışma zamanı içerme dosyası ERRNO 'da tanımlanan bir tamsayı hata kodu. Olsun.
 
 *lpszFileName*<br/>
-Varsa, özel durum neden dosyanın adını içeren dize için bir işaretçi.
+Varsa, özel duruma neden olan dosyanın adını içeren dizeye yönelik bir işaretçi.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCFiles#28](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_5.cpp)]
 
-## <a name="cfileexceptionthrowoserror"></a><a name="throwoserror"></a>CFileException::throwoserror
+## <a name="cfileexceptionthrowoserror"></a><a name="throwoserror"></a>CFileException:: ThrowOsError
 
-Belirli bir `CFileException` *lOsError* değerine karşılık gelen atar. Hata kodu bilinmiyorsa, işlev ' in '' `CFileException::generic`olarak kodlanmış bir özel durum atışı
+`CFileException`Verilen *lOsError* değerine karşılık gelen bir oluşturur. Hata kodu bilinmiyorsa, işlev olarak kodlanmış bir özel durum oluşturur `CFileException::generic` .
 
 ```
 static void PASCAL ThrowOsError(LONG lOsError, LPCTSTR lpszFileName = NULL);
@@ -302,7 +290,7 @@ static void PASCAL ThrowOsError(LONG lOsError, LPCTSTR lpszFileName = NULL);
 İşletim sistemine özgü bir hata kodu.
 
 *lpszFileName*<br/>
-Varsa, özel durum neden dosyanın adını içeren dize için bir işaretçi.
+Varsa, özel duruma neden olan dosyanın adını içeren dizeye yönelik bir işaretçi.
 
 ### <a name="example"></a>Örnek
 
