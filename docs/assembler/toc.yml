@@ -1,365 +1,78 @@
 - name: Derleyici iç bilgileri ve derleme dili
-  href: ../intrinsics/compiler-intrinsics-and-assembly-language.md
+  href: ../intrinsics/index.yml
 - name: Derleyici iç bilgileri
-  expanded: false
-  items:
-    - name: Derleyici iç bilgileri
-      href: ../intrinsics/compiler-intrinsics.md
-    - name: ARM iç bilgileri
-      href: ../intrinsics/arm-intrinsics.md
-    - name: ARM64 iç bilgileri
-      href: ../intrinsics/arm64-intrinsics.md
-    - name: x86 iç bilgi listesi
-      href: ../intrinsics/x86-intrinsics-list.md
-    - name: x64 (amd64) iç bilgi listesi
-      href: ../intrinsics/x64-amd64-intrinsics-list.md
-    - name: Tüm mimarilerde kullanılabilen iç bilgiler
-      href: ../intrinsics/intrinsics-available-on-all-architectures.md
-    - name: İç işlevlerin alfabetik listesi
-      expanded: false
-      items:
-        - name: İç işlevlerin alfabetik listesi
-          href: ../intrinsics/alphabetical-listing-of-intrinsic-functions.md
-        - name: '__addfsbyte, __addfsword, __addfsdword'
-          href: ../intrinsics/addfsbyte-addfsword-addfsdword.md
-        - name: '__addgsbyte, __addgsword, __addgsdword, __addgsqword'
-          href: ../intrinsics/addgsbyte-addgsword-addgsdword-addgsqword.md
-        - name: _AddressOfReturnAddress
-          href: ../intrinsics/addressofreturnaddress.md
-        - name: __assume
-          href: ../intrinsics/assume.md
-        - name: '_BitScanForward, _BitScanForward64'
-          href: ../intrinsics/bitscanforward-bitscanforward64.md
-        - name: '_BitScanReverse, _BitScanReverse64'
-          href: ../intrinsics/bitscanreverse-bitscanreverse64.md
-        - name: '_bittest, _bittest64'
-          href: ../intrinsics/bittest-bittest64.md
-        - name: '_bittestandcomplement, _bittestandcomplement64'
-          href: ../intrinsics/bittestandcomplement-bittestandcomplement64.md
-        - name: '_bittestandreset, _bittestandreset64'
-          href: ../intrinsics/bittestandreset-bittestandreset64.md
-        - name: '_bittestandset, _bittestandset64'
-          href: ../intrinsics/bittestandset-bittestandset64.md
-        - name: '__cpuid, __cpuidex'
-          href: ../intrinsics/cpuid-cpuidex.md
-        - name: __debugbreak
-          href: ../intrinsics/debugbreak.md
-        - name: _disable
-          href: ../intrinsics/disable.md
-        - name: _div128
-          href: ../intrinsics/div128.md
-        - name: _div64
-          href: ../intrinsics/div64.md
-        - name: '__emul, __emulu'
-          href: ../intrinsics/emul-emulu.md
-        - name: _enable
-          href: ../intrinsics/enable.md
-        - name: __fastfail
-          href: ../intrinsics/fastfail.md
-        - name: __faststorefence
-          href: ../intrinsics/faststorefence.md
-        - name: __getcallerseflags
-          href: ../intrinsics/getcallerseflags.md
-        - name: __halt
-          href: ../intrinsics/halt.md
-        - name: _InterlockedAdd İç İşlevleri
-          href: ../intrinsics/interlockedadd-intrinsic-functions.md
-        - name: _InterlockedAddLargeStatistic
-          href: ../intrinsics/interlockedaddlargestatistic.md
-        - name: _InterlockedAnd İç İşlevleri
-          href: ../intrinsics/interlockedand-intrinsic-functions.md
-        - name: _interlockedbittestandreset İç İşlevleri
-          href: ../intrinsics/interlockedbittestandreset-intrinsic-functions.md
-        - name: _interlockedbittestandset İç İşlevleri
-          href: ../intrinsics/interlockedbittestandset-intrinsic-functions.md
-        - name: _InterlockedCompareExchange İç İşlevleri
-          href: ../intrinsics/interlockedcompareexchange-intrinsic-functions.md
-        - name: _InterlockedCompareExchange128
-          href: ../intrinsics/interlockedcompareexchange128.md
-        - name: _InterlockedCompareExchangePointer İç İşlevleri
-          href: ../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md
-        - name: _InterlockedDecrement İç İşlevleri
-          href: ../intrinsics/interlockeddecrement-intrinsic-functions.md
-        - name: _InterlockedExchange İç İşlevleri
-          href: ../intrinsics/interlockedexchange-intrinsic-functions.md
-        - name: _InterlockedExchangeAdd İç İşlevleri
-          href: ../intrinsics/interlockedexchangeadd-intrinsic-functions.md
-        - name: _InterlockedExchangePointer İç İşlevleri
-          href: ../intrinsics/interlockedexchangepointer-intrinsic-functions.md
-        - name: _InterlockedIncrement İç İşlevleri
-          href: ../intrinsics/interlockedincrement-intrinsic-functions.md
-        - name: _InterlockedOr İç İşlevleri
-          href: ../intrinsics/interlockedor-intrinsic-functions.md
-        - name: _InterlockedXor İç İşlevleri
-          href: ../intrinsics/interlockedxor-intrinsic-functions.md
-        - name: __inbyte
-          href: ../intrinsics/inbyte.md
-        - name: __inbytestring
-          href: ../intrinsics/inbytestring.md
-        - name: '__incfsbyte, __incfsword, __incfsdword'
-          href: ../intrinsics/incfsbyte-incfsword-incfsdword.md
-        - name: '__incgsbyte, __incgsword, __incgsdword, __incgsqword'
-          href: ../intrinsics/incgsbyte-incgsword-incgsdword-incgsqword.md
-        - name: __indword
-          href: ../intrinsics/indword.md
-        - name: __indwordstring
-          href: ../intrinsics/indwordstring.md
-        - name: __int2c
-          href: ../intrinsics/int2c.md
-        - name: __invlpg
-          href: ../intrinsics/invlpg.md
-        - name: __inword
-          href: ../intrinsics/inword.md
-        - name: __inwordstring
-          href: ../intrinsics/inwordstring.md
-        - name: __lidt
-          href: ../intrinsics/lidt.md
-        - name: __ll_lshift
-          href: ../intrinsics/ll-lshift.md
-        - name: __ll_rshift
-          href: ../intrinsics/ll-rshift.md
-        - name: '__lzcnt16, __lzcnt, __lzcnt64'
-          href: ../intrinsics/lzcnt16-lzcnt-lzcnt64.md
-        - name: _mm_cvtsi64x_ss
-          href: ../intrinsics/mm-cvtsi64x-ss.md
-        - name: _mm_cvtss_si64x
-          href: ../intrinsics/mm-cvtss-si64x.md
-        - name: _mm_cvttss_si64x
-          href: ../intrinsics/mm-cvttss-si64x.md
-        - name: '_mm_extract_si64, _mm_extracti_si64'
-          href: ../intrinsics/mm-extract-si64-mm-extracti-si64.md
-        - name: '_mm_insert_si64, _mm_inserti_si64'
-          href: ../intrinsics/mm-insert-si64-mm-inserti-si64.md
-        - name: _mm_stream_sd
-          href: ../intrinsics/mm-stream-sd.md
-        - name: _mm_stream_si64x
-          href: ../intrinsics/mm-stream-si64x.md
-        - name: _mm_stream_ss
-          href: ../intrinsics/mm-stream-ss.md
-        - name: __movsb
-          href: ../intrinsics/movsb.md
-        - name: __movsd
-          href: ../intrinsics/movsd.md
-        - name: __movsq
-          href: ../intrinsics/movsq.md
-        - name: __movsw
-          href: ../intrinsics/movsw.md
-        - name: __mul128
-          href: ../intrinsics/mul128.md
-        - name: __mulh
-          href: ../intrinsics/mulh.md
-        - name: __noop
-          href: ../intrinsics/noop.md
-        - name: __nop
-          href: ../intrinsics/nop.md
-        - name: __outbyte
-          href: ../intrinsics/outbyte.md
-        - name: __outbytestring
-          href: ../intrinsics/outbytestring.md
-        - name: __outdword
-          href: ../intrinsics/outdword.md
-        - name: __outdwordstring
-          href: ../intrinsics/outdwordstring.md
-        - name: __outword
-          href: ../intrinsics/outword.md
-        - name: __outwordstring
-          href: ../intrinsics/outwordstring.md
-        - name: '__popcnt16, __popcnt, __popcnt64'
-          href: ../intrinsics/popcnt16-popcnt-popcnt64.md
-        - name: __rdtsc
-          href: ../intrinsics/rdtsc.md
-        - name: __rdtscp
-          href: ../intrinsics/rdtscp.md
-        - name: _ReadBarrier
-          href: ../intrinsics/readbarrier.md
-        - name: __readcr0
-          href: ../intrinsics/readcr0.md
-        - name: __readcr2
-          href: ../intrinsics/readcr2.md
-        - name: __readcr3
-          href: ../intrinsics/readcr3.md
-        - name: __readcr4
-          href: ../intrinsics/readcr4.md
-        - name: __readcr8
-          href: ../intrinsics/readcr8.md
-        - name: __readdr
-          href: ../intrinsics/readdr.md
-        - name: __readeflags
-          href: ../intrinsics/readeflags.md
-        - name: '__readfsbyte, __readfsdword, __readfsqword, __readfsword'
-          href: ../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md
-        - name: '__readgsbyte, __readgsdword, __readgsqword, __readgsword'
-          href: ../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md
-        - name: __readmsr
-          href: ../intrinsics/readmsr.md
-        - name: __readpmc
-          href: ../intrinsics/readpmc.md
-        - name: _ReadWriteBarrier
-          href: ../intrinsics/readwritebarrier.md
-        - name: _ReturnAddress
-          href: ../intrinsics/returnaddress.md
-        - name: '_rotl8, _rotl16'
-          href: ../intrinsics/rotl8-rotl16.md
-        - name: '_rotr8, _rotr16'
-          href: ../intrinsics/rotr8-rotr16.md
-        - name: __segmentlimit
-          href: ../intrinsics/segmentlimit.md
-        - name: __shiftleft128
-          href: ../intrinsics/shiftleft128.md
-        - name: __shiftright128
-          href: ../intrinsics/shiftright128.md
-        - name: __sidt
-          href: ../intrinsics/sidt.md
-        - name: __stosb
-          href: ../intrinsics/stosb.md
-        - name: __stosd
-          href: ../intrinsics/stosd.md
-        - name: __stosq
-          href: ../intrinsics/stosq.md
-        - name: __stosw
-          href: ../intrinsics/stosw.md
-        - name: __svm_clgi
-          href: ../intrinsics/svm-clgi.md
-        - name: __svm_invlpga
-          href: ../intrinsics/svm-invlpga.md
-        - name: __svm_skinit
-          href: ../intrinsics/svm-skinit.md
-        - name: __svm_stgi
-          href: ../intrinsics/svm-stgi.md
-        - name: __svm_vmload
-          href: ../intrinsics/svm-vmload.md
-        - name: __svm_vmrun
-          href: ../intrinsics/svm-vmrun.md
-        - name: __svm_vmsave
-          href: ../intrinsics/svm-vmsave.md
-        - name: __ud2
-          href: ../intrinsics/ud2.md
-        - name: _udiv128
-          href: ../intrinsics/udiv128.md
-        - name: _udiv64
-          href: ../intrinsics/udiv64.md
-        - name: __ull_rshift
-          href: ../intrinsics/ull-rshift.md
-        - name: _umul128
-          href: ../intrinsics/umul128.md
-        - name: __umulh
-          href: ../intrinsics/umulh.md
-        - name: __vmx_off
-          href: ../intrinsics/vmx-off.md
-        - name: __vmx_on
-          href: ../intrinsics/vmx-on.md
-        - name: __vmx_vmclear
-          href: ../intrinsics/vmx-vmclear.md
-        - name: __vmx_vmlaunch
-          href: ../intrinsics/vmx-vmlaunch.md
-        - name: __vmx_vmptrld
-          href: ../intrinsics/vmx-vmptrld.md
-        - name: __vmx_vmptrst
-          href: ../intrinsics/vmx-vmptrst.md
-        - name: __vmx_vmread
-          href: ../intrinsics/vmx-vmread.md
-        - name: __vmx_vmresume
-          href: ../intrinsics/vmx-vmresume.md
-        - name: __vmx_vmwrite
-          href: ../intrinsics/vmx-vmwrite.md
-        - name: __wbinvd
-          href: ../intrinsics/wbinvd.md
-        - name: _WriteBarrier
-          href: ../intrinsics/writebarrier.md
-        - name: __writecr0
-          href: ../intrinsics/writecr0.md
-        - name: __writecr3
-          href: ../intrinsics/writecr3.md
-        - name: __writecr4
-          href: ../intrinsics/writecr4.md
-        - name: __writecr8
-          href: ../intrinsics/writecr8.md
-        - name: __writedr
-          href: ../intrinsics/writedr.md
-        - name: __writeeflags
-          href: ../intrinsics/writeeflags.md
-        - name: '__writefsbyte, __writefsdword, __writefsqword, __writefsword'
-          href: ../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md
-        - name: '__writegsbyte, __writegsdword, __writegsqword, __writegsword'
-          href: ../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md
-        - name: __writemsr
-          href: ../intrinsics/writemsr.md
-- name: ARM Assembler başvurusu
-  expanded: false
-  items:
-    - name: ARM Assembler başvurusu
-      href: ../assembler/arm/arm-assembler-reference.md
-    - name: ARM Assembler komut satırı başvurusu
-      href: ../assembler/arm/arm-assembler-command-line-reference.md
-    - name: ARM Assembler tanılama iletileri
-      href: ../assembler/arm/arm-assembler-diagnostic-messages.md
-    - name: ARM Assembler yönergeleri
-      href: ../assembler/arm/arm-assembler-directives.md
-- name: MSVC'de satır içi derleme
-  expanded: false
+  href: ../intrinsics/compiler-intrinsics.md
+- name: Microsoft C/C++ x86 satır içi derlemesi
   items:
     - name: MSVC'de satır içi derleme
       href: ../assembler/inline/inline-assembler.md
-    - name: Satır İçi Derleyiciye Genel Bakış
+    - name: Satır içi assembler’a genel bakış
       href: ../assembler/inline/inline-assembler-overview.md
-    - name: Satır İçi Derleme Avantajları
+    - name: Satır içi derleme avantajları
       href: ../assembler/inline/advantages-of-inline-assembly.md
     - name: __asm
       href: ../assembler/inline/asm.md
-    - name: __asm Bloklarında Derleme Dili Kullanma
-      expanded: false
+    - name: __asm bloklarında derleme dili kullanma
       items:
-        - name: __asm Bloklarında Derleme Dili Kullanma
+        - name: __asm bloklarında derleme dili kullanma
           href: ../assembler/inline/using-assembly-language-in-asm-blocks.md
-        - name: Satır İçi Derleme için Yönerge Kümesi
+        - name: Satır içi derleme için yönerge kümesi
           href: ../assembler/inline/instruction-set-for-inline-assembly.md
-        - name: Satır İçi Derlemedeki MASM İfadeleri
+        - name: Satır içi derlemedeki MASM ifadeleri
           href: ../assembler/inline/masm-expressions-in-inline-assembly.md
-        - name: Satır İçi Derlemede Veri Yönergeleri ve İşleçler
+        - name: Satır içi derlemede veri yönergeleri ve işleçler
           href: ../assembler/inline/data-directives-and-operators-in-inline-assembly.md
-        - name: EVEN ve ALIGN Yönergeleri
+        - name: EVEN ve ALIGN yönergeleri
           href: ../assembler/inline/even-and-align-directives.md
-        - name: Satır İçi Derlemedeki MASM Makro Yönergeleri
+        - name: Satır içi derlemedeki MASM makro yönergeleri
           href: ../assembler/inline/masm-macro-directives-in-inline-assembly.md
-        - name: Satır İçi Derlemede Segment Başvurusu
+        - name: Satır içi derlemede segment başvurusu
           href: ../assembler/inline/segment-references-in-inline-assembly.md
-        - name: Satır İçi Derlemede Tür ve Değişken Boyutları
+        - name: Satır içi derlemede tür ve değişken boyutları
           href: ../assembler/inline/type-and-variable-sizes-in-inline-assembly.md
-        - name: Assembly Dili Açıklamaları
+        - name: Assembly dili açıklamaları
           href: ../assembler/inline/assembly-language-comments.md
-        - name: _emit Sözde Yönerge
+        - name: _emit sözde yönerge
           href: ../assembler/inline/emit-pseudoinstruction.md
-        - name: Satır İçi Derleme için Hata Ayıklama ve Listeleme
+        - name: Satır içi derleme için hata ayıklama ve listeleme
           href: ../assembler/inline/debugging-and-listings-for-inline-assembly.md
-        - name: Intel'in MMX Yönerge Kümesi
+        - name: Intel’in MMX yönerge kümesi
           href: ../assembler/inline/intel-s-mmx-instruction-set.md
     - name: __asm Bloklarında C veya C++ Kullanma
-      expanded: false
       items:
-        - name: __asm Bloklarında C veya C++ Kullanma
+        - name: __asm bloklarında C veya C++ kullanma
           href: ../assembler/inline/using-c-or-cpp-in-asm-blocks.md
-        - name: __asm Bloklarında İşleçler Kullanma
+        - name: __asm bloklarında işleçler kullanma
           href: ../assembler/inline/using-operators-in-asm-blocks.md
-        - name: __asm Bloklarında C veya C++ Simgelerini Kullanma
+        - name: __asm bloklarında C veya C++ simgelerini kullanma
           href: ../assembler/inline/using-c-or-cpp-symbols-in-asm-blocks.md
-        - name: __asm Bloklarında C veya C++ Verilerine Erişme
+        - name: __asm bloklarında C veya C++ verilerine erişme
           href: ../assembler/inline/accessing-c-or-cpp-data-in-asm-blocks.md
-        - name: Satır İçi Derlemeyle İşlevler Yazma
+        - name: Satır içi derlemeyle işlevler yazma
           href: ../assembler/inline/writing-functions-with-inline-assembly.md
-    - name: Bir Satır İçi Derlemede Kayıtları Kullanma ve Koruma
+    - name: Bir satır içi derlemede kayıtları kullanma ve koruma
       href: ../assembler/inline/using-and-preserving-registers-in-inline-assembly.md
-    - name: İç Derlemede Etiketlere Atlama
+    - name: İç derlemede etiketlere atlama
       href: ../assembler/inline/jumping-to-labels-in-inline-assembly.md
-    - name: Satır İçi Derlemede C İşlevlerini Çağırma
+    - name: Satır içi derlemede C işlevlerini çağırma
       href: ../assembler/inline/calling-c-functions-in-inline-assembly.md
-    - name: Satır İçi Derlemede C++ İşlevlerini Çağırma
+    - name: Satır içi derlemede C++ işlevlerini çağırma
       href: ../assembler/inline/calling-cpp-functions-in-inline-assembly.md
-    - name: __asm Bloklarını C Makroları olarak tanımlama
+    - name: __asm bloklarını C makroları olarak tanımlama
       href: ../assembler/inline/defining-asm-blocks-as-c-macros.md
-    - name: Satır İçi Derlemeyi En İyi Duruma Getirme
+    - name: Satır içi derlemeyi en iyi duruma getirme
       href: ../assembler/inline/optimizing-inline-assembly.md
-- name: Microsoft Macro Assembler (MASM) başvurusu
-  expanded: false
+- name: ARM ve ARM64 assembler başvurusu
+  items:
+    - name: ARM ve ARM64 assembler başvurusu
+      href: ../assembler/arm/arm-assembler-reference.md
+    - name: ARM ve ARM64 assembler komut satırı başvurusu
+      href: ../assembler/arm/arm-assembler-command-line-reference.md
+    - name: ARM ve ARM64 assembler tanılama iletileri
+      href: ../assembler/arm/arm-assembler-diagnostic-messages.md
+    - name: ARM ve ARM64 assembler yönergeleri
+      href: ../assembler/arm/arm-assembler-directives.md
+- name: x86 ve x64 assembler başvurusu
   items:
     - name: Microsoft Macro Assembler (MASM) başvurusu
       href: ../assembler/masm/microsoft-macro-assembler-reference.md
@@ -368,7 +81,6 @@
     - name: ML ve ML64 komut satırı başvurusu
       href: ../assembler/masm/ml-and-ml64-command-line-reference.md
     - name: Yönergeler başvurusu (MASM)
-      expanded: false
       items:
         - name: Yönergeler başvurusu (MASM)
           href: ../assembler/masm/directives-reference.md
@@ -705,7 +417,6 @@
         - name: YMMWORD
           href: ../assembler/masm/ymmword.md
     - name: Semboller başvurusu
-      expanded: false
       items:
         - name: Semboller başvurusu
           href: ../assembler/masm/symbols-reference.md
@@ -768,12 +479,10 @@
     - name: İşlemci üreticisi programlama kılavuzları
       href: ../assembler/masm/processor-manufacturer-programming-manuals.md
     - name: İşleçler başvurusu
-      expanded: false
       items:
         - name: İşleçler başvurusu
           href: ../assembler/masm/operators-reference.md
         - name: İşleçler (MASM)
-          expanded: false
           items:
             - name: + işleci
               href: ../assembler/masm/operator-add.md
@@ -884,7 +593,6 @@
             - name: XOR işleci
               href: ../assembler/masm/operator-xor.md
         - name: Çalışma zamanı işleçleri (MASM)
-          expanded: false
           items:
             - name: == işleci (MASM çalışma zamanı)
               href: ../assembler/masm/operator-equal-masm-run-time.md
@@ -916,13 +624,11 @@
               href: ../assembler/masm/operator-sign-q.md
             - name: ZERO? işleci
               href: ../assembler/masm/operator-zero-q.md
-    - name: ML hata iletileri (MASM)
-      expanded: false
+    - name: ML ve ML64 hata iletileri (MASM)
       items:
         - name: ML hata iletileri (MASM)
           href: ../assembler/masm/ml-error-messages.md
         - name: ML önemli hataları
-          expanded: false
           items:
             - name: ML önemli hatası A1000
               href: ../assembler/masm/ml-fatal-error-a1000.md
@@ -943,10 +649,8 @@
             - name: ML önemli hatası A1017
               href: ../assembler/masm/ml-fatal-error-a1017.md
         - name: ML önemli olmayan hatalar
-          expanded: false
           items:
             - name: ML önemli olmayan hataları A2000-A2049
-              expanded: false
               items:
                 - name: ML önemli olmayan hatası A2004
                   href: ../assembler/masm/ml-nonfatal-error-a2004.md
@@ -975,7 +679,6 @@
                 - name: ML önemli olmayan hatası A2047
                   href: ../assembler/masm/ml-nonfatal-error-a2047.md
             - name: ML önemli olmayan hataları A2050-A2099
-              expanded: false
               items:
                 - name: ML önemli olmayan hatası A2050
                   href: ../assembler/masm/ml-nonfatal-error-a2050.md
@@ -1016,7 +719,6 @@
                 - name: ML önemli olmayan hatası A2097
                   href: ../assembler/masm/ml-nonfatal-error-a2097.md
             - name: ML önemli olmayan hataları A2100-A2149
-              expanded: false
               items:
                 - name: ML önemli olmayan hatası A2107
                   href: ../assembler/masm/ml-nonfatal-error-a2107.md
@@ -1027,19 +729,16 @@
                 - name: ML önemli olmayan hatası A2137
                   href: ../assembler/masm/ml-nonfatal-error-a2137.md
             - name: ML önemli olmayan hataları A2150-A2199
-              expanded: false
               items:
                 - name: ML önemli olmayan hatası A2189
                   href: ../assembler/masm/ml-nonfatal-error-a2189.md
             - name: ML önemli olmayan hataları A2200-A2901
-              expanded: false
               items:
                 - name: ML önemli olmayan hatası A2206
                   href: ../assembler/masm/ml-nonfatal-error-a2206.md
                 - name: ML önemli olmayan hatası A2219
                   href: ../assembler/masm/ml-nonfatal-error-a2219.md
         - name: ML uyarıları
-          expanded: false
           items:
             - name: ML uyarısı A4004
               href: ../assembler/masm/ml-warning-a4004.md

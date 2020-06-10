@@ -1,4 +1,4 @@
-- name: Visual Studio’da C++
+- name: Visual Studio‘da Microsoft C/C++
   expanded: false
   items:
     - name: Visual Studio’da C++
@@ -40,7 +40,7 @@
       href: /windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game
 - name: Projeler ve derleme sistemleri
   href: ../build/projects-and-build-systems-cpp.md
-- name: Visual Studio'da C++ kodu okuma ve yazma
+- name: Visual Studio’da kod okuma ve yazma
   href: ../ide/read-and-understand-code-cpp.md
 - name: Windows masaüstü geliştirme
   href: ../windows/overview-of-windows-programming-in-cpp.md
@@ -123,6 +123,5 @@
           href: ../mfc/mfc-and-atl.md
         - name: Paralel kitaplıklar
           href: ../parallel/
-          items: null
         - name: Veri erişimi kitaplıkları
           href: ../data/
