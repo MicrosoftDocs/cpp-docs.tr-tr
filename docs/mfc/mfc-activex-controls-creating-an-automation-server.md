@@ -1,52 +1,52 @@
 ---
-title: 'MFC ActiveX denetimleri: Otomasyon sunucusu oluşturma'
+title: 'MFC ActiveX Denetimleri: Otomasyon Sunucusu Oluşturma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Automation servers [MFC], MFC ActiveX controls
 - ActiveX controls [MFC], Automation server
 - MFC ActiveX controls [MFC], Automation server
 ms.assetid: e0c24ed2-d61c-49ad-a4fa-4e1098d1d39b
-ms.openlocfilehash: 01f0162e124c5c49d45ce4a90f5243c88b09b5a0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2c941e43e810845560b4c35c558ec70248c21ed
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62225261"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84622377"
 ---
-# <a name="mfc-activex-controls-creating-an-automation-server"></a>MFC ActiveX denetimleri: Otomasyon sunucusu oluşturma
+# <a name="mfc-activex-controls-creating-an-automation-server"></a>MFC ActiveX Denetimleri: Otomasyon Sunucusu Oluşturma
 
-MFC ActiveX denetimi programlı olarak başka bir uygulamada söz konusu denetim ekleme ve uygulamadan denetimi metotları çağırma amacıyla Otomasyon sunucusu olarak geliştirebilirsiniz. Bu tür bir denetim bir ActiveX denetimi kapsayıcısı içinde barındırılması kullanılabilir olacaktır.
+Bu denetimi başka bir uygulamada programlı bir şekilde katıştırma ve denetimdeki yöntemleri uygulamadan çağırmak amacıyla bir Otomasyon sunucusu olarak MFC ActiveX denetimi geliştirebilirsiniz. Bu tür bir denetim, ActiveX denetim kapsayıcısında barındırılmak için kullanılabilir olmaya devam eder.
 
-### <a name="to-create-a-control-as-an-automation-server"></a>Otomasyon sunucusu bir denetim oluşturmak için
+### <a name="to-create-a-control-as-an-automation-server"></a>Otomasyon sunucusu olarak bir denetim oluşturmak için
 
-1. [Oluşturma](../mfc/reference/mfc-activex-control-wizard.md) denetimi.
+1. Denetimi [oluşturun](reference/mfc-activex-control-wizard.md) .
 
-1. [Yöntemler](../mfc/mfc-activex-controls-methods.md).
+1. [Yöntem ekleyin](mfc-activex-controls-methods.md).
 
-1. Geçersiz kılma [IsInvokeAllowed](../mfc/reference/colecontrol-class.md#isinvokeallowed).
+1. Geçersiz kılma [IsInvokeAllowed](reference/colecontrol-class.md#isinvokeallowed).
 
 1. Denetimi oluşturun.
 
-### <a name="to-programmatically-access-the-methods-in-an-automation-server"></a>Otomasyon sunucusu yöntemlere programlı olarak erişmek için
+### <a name="to-programmatically-access-the-methods-in-an-automation-server"></a>Otomasyon sunucusundaki yöntemlere programlı olarak erişmek için
 
-1. Örneğin bir uygulama oluşturun, bir [MFC exe](../mfc/reference/mfc-application-wizard.md).
+1. Bir uygulama oluşturun (örneğin, [MFC exe](reference/mfc-application-wizard.md)).
 
-1. Başında `InitInstance` işlev, aşağıdaki satırı ekleyin:
+1. `InitInstance`İşlevin başlangıcında aşağıdaki satırı ekleyin:
 
-   [!code-cpp[NVC_MFC_AxCont#17](../mfc/codesnippet/cpp/mfc-activex-controls-creating-an-automation-server_1.cpp)]
+   [!code-cpp[NVC_MFC_AxCont#17](codesnippet/cpp/mfc-activex-controls-creating-an-automation-server_1.cpp)]
 
-1. Sınıf Görünümü'nde proje düğümüne sağ tıklayıp **typelib'den sınıf ekleme** tür kitaplığını içeri aktarmak için.
+1. Sınıf Görünümü, proje düğümüne sağ tıklayın ve tür kitaplığını içeri aktarmak için **TypeLib 'ten Sınıf Ekle** ' yi seçin.
 
-   Bu dosya adı uzantıları .h ve .cpp dosyaları projeye ekler.
+   Bu, dosya adı uzantıları. h ve. cpp olan dosyaları projeye ekler.
 
-1. Burada, çağrılacak bir veya daha fazla yöntemi ActiveX denetimi üstbilgi dosyasında sınıfın, aşağıdaki satırı ekleyin: `#include filename.h`burada dosya adı tür kitaplığını içeri aktardığınızda oluşturduğunuz üstbilgi dosyasının adıdır.
+1. ActiveX denetimindeki bir veya daha fazla yöntemi çağırabileceğiniz sınıfın üstbilgi dosyasında şu satırı ekleyin: `#include filename.h` , burada dosya adı, tür kitaplığını içeri aktardığınızda oluşturulan üst bilgi dosyasının adıdır.
 
-1. İşlevi burada bir çağrı bir yöntemde bir ActiveX denetimi yapılmaz, denetimin sarmalayıcı sınıfın bir nesnesi oluşturan kodu ekleyin ve ActiveX nesnesi oluşturun. Örneğin, aşağıdaki MFC kodu örnekleyen bir `CCirc` denetimi, resim yazısı özelliğini alır ve bir iletişim kutusunda Tamam düğmesine tıklandığında edilen sonucu gösterir:
+1. ActiveX denetimindeki bir yönteme çağrı yapılacak işlevde, denetimin sarmalayıcı sınıfının bir nesnesini oluşturan ve ActiveX nesnesini oluşturan bir kod ekleyin. Örneğin, aşağıdaki MFC kodu bir `CCirc` denetim oluşturur, Caption özelliğini alır ve bir iletişim kutusunda Tamam düğmesine tıklandığında sonucu görüntüler:
 
-   [!code-cpp[NVC_MFC_AxCont#18](../mfc/codesnippet/cpp/mfc-activex-controls-creating-an-automation-server_2.cpp)]
+   [!code-cpp[NVC_MFC_AxCont#18](codesnippet/cpp/mfc-activex-controls-creating-an-automation-server_2.cpp)]
 
-Bir uygulamada kullandıktan sonra ActiveX denetimine yöntemleri eklerseniz, tür kitaplığı içeri aktarıldığında, oluşturulan dosyaları silerek uygulama denetimi en son sürümünü kullanarak başlayabilirsiniz. Ardından tür kitaplığı yeniden içeri aktarın.
+Bir uygulamada kullandıktan sonra ActiveX denetimine Yöntemler eklerseniz, tür kitaplığını içeri aktardığınızda oluşturulan dosyaları silerek, uygulamada denetimin en son sürümünü kullanmaya başlayabilirsiniz. Sonra tür kitaplığını yeniden içeri aktarın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
+[MFC ActiveX denetimleri](mfc-activex-controls.md)

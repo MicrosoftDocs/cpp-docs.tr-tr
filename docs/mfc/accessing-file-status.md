@@ -8,27 +8,27 @@ helpviewer_keywords:
 - file status [MFC]
 - status of files [MFC]
 ms.assetid: 1b8891d6-eb0f-4037-a837-4928fe595222
-ms.openlocfilehash: 26c263b2d7e4e0243444925cb9416cb337dcd79d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23c626940e700d3e9827ef6a7cf849d970e40d5d
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392966"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619786"
 ---
 # <a name="accessing-file-status"></a>Dosya Durumuna Erişme
 
-`CFile` Ayrıca dosya durumunu, dosyanın var olup olmadığını da dahil olmak üzere, oluşturma ve değiştirme tarih ve saat, mantıksal boyutu ve yolu alma destekler.
+`CFile`Ayrıca dosyanın mevcut, oluşturma ve değiştirme tarihleri ve saatleri, mantıksal boyut ve yol dahil olmak üzere dosya durumunu almayı da destekler.
 
 ### <a name="to-get-file-status"></a>Dosya durumunu almak için
 
-1. Kullanım [CFile](../mfc/reference/cfile-class.md) almak ve bir dosya hakkında bilgi ayarlamak için sınıf. Faydalı bir uygulama kullanmaktır `CFile` statik üye işlevini **GetStatus** bir dosyanın var olup olmadığını belirlemek için. **GetStatus** belirtilen dosya yoksa, 0 döndürür.
+1. Bir dosya hakkında bilgi almak ve ayarlamak için [CFile](reference/cfile-class.md) sınıfını kullanın. Kullanışlı bir uygulama, `CFile` bir dosyanın var olup olmadığını anlamak Için **GetStatus** statik üye işlevini kullanmaktır. **GetStatus** , belirtilen dosya mevcut değilse 0 değerini döndürür.
 
-Bu nedenle, sonucunu kullanabilirsiniz **GetStatus** kullanılıp kullanılmayacağını belirleme **CFile::modeCreate** bayrak bir dosyayı açtığınızda aşağıdaki örnekte gösterildiği gibi:
+Bu nedenle, aşağıdaki örnekte gösterildiği gibi, bir dosya açılırken **CFile:: modeCreate** bayrağını kullanıp kullanmayacağınızı öğrenmek için **GetStatus** sonucunu kullanabilirsiniz:
 
 [!code-cpp[NVC_MFCFiles#3](../atl-mfc-shared/reference/codesnippet/cpp/accessing-file-status_1.cpp)]
 
-İlgili bilgiler için bkz. [serileştirme](../mfc/serialization-in-mfc.md).
+İlgili bilgiler için bkz. [serileştirme](serialization-in-mfc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosyalar](../mfc/files-in-mfc.md)
+[Dosyalar](files-in-mfc.md)

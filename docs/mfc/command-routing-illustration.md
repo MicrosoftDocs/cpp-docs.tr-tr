@@ -6,29 +6,29 @@ helpviewer_keywords:
 - command handling [MFC], routing commands
 - command routing [MFC], OnCmdMsg handler
 ms.assetid: 4b7b4741-565f-4878-b076-fd85c670f87f
-ms.openlocfilehash: 56d131151f2284f12a3b46a9acd3cfbd3c8b0f47
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d362cfe54a9b5a562237c7bb9632edae6e58228b
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62164884"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84622918"
 ---
 # <a name="command-routing-illustration"></a>Komut Yönlendirme Çizimi
 
-Göstermek için Tümünü Temizle'yi menü öğesi MDI uygulamanın Düzen menüsündeki komutu iletiden göz önünde bulundurun. Bu komut işleyici işlevi uygulamanın belge sınıfının üye işlevinde özelleştirmede varsayalım. Kullanıcı menü öğesini seçtikten sonra bu komut, işleyici nasıl ulaştığında aşağıda verilmiştir:
+Göstermek için bir MDI uygulamasının düzenleme menüsündeki bir tümünü temizle menü öğesinden bir komut iletisi düşünün. Bu komutun işleyici işlevinin, uygulamanın belge sınıfının bir üye işlevi olacağını varsayalım. Kullanıcı menü öğesini seçtikten sonra bu komutun işleyicisine nasıl ulaşıyorsa aşağıda verilmiştir:
 
-1. Ana çerçeve penceresinin ilk komut iletiyi alır.
+1. Ana çerçeve penceresi önce komut iletisini alır.
 
-1. Ana MDI çerçevesi penceresi etkin MDI alt penceresi komutunu işlemek için bir şans verir.
+1. Ana MDI çerçevesi penceresi, şu anda etkin olan MDI alt penceresine komutu işlemek için bir şans sağlar.
 
-1. Standart bir MDI alt çerçeve penceresi yönlendirme, görünüm şansı komut kendi ileti eşlemesi denetlemeden önce sağlar.
+1. Bir MDI alt çerçeve penceresinin standart yönlendirmesi, kendi ileti eşlemesini denetlemeden önce komutta bir şans sağlar.
 
-1. Görünüm kendi ileti eşlemesi ilk denetler ve hiçbir işleyicisi bulma sonraki komut, ilişkili belge için yönlendirir.
+1. Görünüm, kendi ileti eşlemesini denetler ve hiçbir işleyici bulmuyor, sonra komutu ilişkili belgesine yönlendirir.
 
-1. Belge, ileti eşlemesi denetler ve bir işleyici bulur. Bu belge üye işlevi çağrılan ve yönlendirmeyi durdurur.
+1. Belge, ileti eşlemesini denetler ve bir işleyici bulur. Bu belge üyesi işlevi çağrıldı ve yönlendirme durdu.
 
-Belgenin bir işleyici değilse, bu komutu, belge şablonuna sonraki rota. Ardından komutu, Görünüm ve ardından çerçeve penceresi döndürecektir. Son olarak, çerçeve penceresinin kendi ileti eşlemesi denetler. Bu onay de başarısız olursa komutu ana MDI çerçevesi penceresi dönün ve ardından uygulama nesnesi yönlendirilirdi — işlenmemiş komutları ultimate hedefi.
+Belgenin bir işleyicisi yoksa, daha sonra komutu belge şablonuna yönlendirmenize olanak sağlar. Ardından komut, görünüme ve sonra çerçeve penceresine geri döner. Son olarak, çerçeve penceresi ileti haritasını denetleyebilir. Bu denetim de başarısız olursa, komut ana MDI çerçevesi penceresine ve ardından Uygulama nesnesine (işlenmemiş komutların en son hedefi) yönlendirilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
+[Çerçeve bir Işleyiciyi nasıl çağırır](how-the-framework-calls-a-handler.md)

@@ -1,38 +1,38 @@
 ---
-title: 'Nasıl yapılır: Şerit denetimleri ve olay işleyicileri ekleme'
+title: 'Nasıl yapılır: Şerit Denetimleri ve Olay İşleyicileri Ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - event handlers [MFC], adding
 - ribbon controls [MFC], adding
 ms.assetid: b31f25bc-ede7-49c3-9e3c-dffe4e174a69
-ms.openlocfilehash: c21e8b86962ebf37ca1a06bae056d09b9a9dbb2f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 560524c36dbf57faec3b4b6372cade047f9fe7de
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389521"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84618480"
 ---
-# <a name="how-to-add-ribbon-controls-and-event-handlers"></a>Nasıl yapılır: Şerit denetimleri ve olay işleyicileri ekleme
+# <a name="how-to-add-ribbon-controls-and-event-handlers"></a>Nasıl yapılır: Şerit Denetimleri ve Olay İşleyicileri Ekleme
 
-Şerit öğeleri, düğmeler ve panel için eklediğiniz birleşik giriş kutuları gibi denetimleridir. Panel bir ilgili denetimlerin grubunu görüntüleyen Şerit çubuğu alanlardır.
+Şerit denetimleri, panellere eklediğiniz düğmeler ve Birleşik giriş kutuları gibi öğelerdir. Paneller, bir ilişkili denetimler grubunu görüntüleyen şerit çubuğunun alanlarıdır.
 
-Bu konu başlığında, Şerit Tasarımcısını açmanın, bir düğme ekleyin ve "Hello World iletisini" gösteren bir olay bağlayın.
+Bu konu başlığında, Şerit Tasarımcısını açacak, bir düğme ekleyecek ve ardından "Merhaba Dünya" görüntüleyen bir olayı bağlayacaksınız.
 
-### <a name="to-open-the-ribbon-designer"></a>Şerit Tasarımcısını açmak için
+### <a name="to-open-the-ribbon-designer"></a>Şerit tasarımcısını açmak için
 
-1. Visual Studio'da üzerinde **görünümü** menüsünde tıklatın **kaynak görünümü**.
+1. Visual Studio 'da, **Görünüm** menüsünde **kaynak görünümü**' a tıklayın.
 
-1. İçinde **kaynak görünümü**, tasarım yüzeyinde görüntülemek için Şerit kaynağını çift tıklayın.
+1. **Kaynak görünümü**, şerit kaynağına çift tıklayarak tasarım yüzeyinde görüntüleyin.
 
-### <a name="to-add-a-button-and-an-event-handler"></a>Bir düğme ve bir olay işleyicisi eklemek için
+### <a name="to-add-a-button-and-an-event-handler"></a>Bir düğme ve olay Işleyicisi eklemek için
 
-1. Gelen **araç**, tıklayın **düğmesi** ve tasarım yüzeyine panelinde açın sürükleyin.
+1. **Araç çubuğundan** **düğme** ' ye tıklayın ve tasarım yüzeyinde bir panele sürükleyin.
 
-1. Düğme sağ tıklayın ve **olay işleyici Ekle**.
+1. Düğmeye sağ tıklayın ve **olay Işleyicisi Ekle**' ye tıklayın.
 
-1. İçinde **olay işleyici Sihirbazı**, varsayılan ayarları onaylayın ve tıklayın **ekleme ve düzenleme**. Daha fazla bilgi için [olay işleyici Sihirbazı](../ide/event-handler-wizard.md).
+1. **Olay Işleyicisi sihirbazında**, varsayılan ayarları onaylayın ve **Ekle ve Düzenle**' ye tıklayın. Daha fazla bilgi için bkz. [olay Işleyicisi Sihirbazı](../ide/event-handler-wizard.md).
 
-1. Kod Düzenleyicisi'nde aşağıdaki kodu işleyici işleve ekleyin:
+1. Kod Düzenleyicisi 'nde, aşağıdaki kodu işleyici işlevine ekleyin:
 
 ```
     MessageBox((LPCTSTR)L"Hello World");
@@ -40,5 +40,5 @@ Bu konu başlığında, Şerit Tasarımcısını açmanın, bir düğme ekleyin 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[RibbonGadgets örneği: Şerit araçları uygulaması](../overview/visual-cpp-samples.md)<br/>
-[Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md)
+[Ribbonaraçları örneği: şerit araçları uygulaması](../overview/visual-cpp-samples.md)<br/>
+[Şerit Tasarımcısı (MFC)](ribbon-designer-mfc.md)

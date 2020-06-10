@@ -7,18 +7,18 @@ helpviewer_keywords:
 - add_volatile class
 - add_volatile
 ms.assetid: cde57277-d764-402d-841e-97611ebaab14
-ms.openlocfilehash: becea4ff52342a79d0b87ffe0022e2cf84c47949
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 1a4ad8a86b88cdfa98f043bb49ba6eeff8b090c9
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456526"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619212"
 ---
-# <a name="addvolatile-class"></a>add_volatile Sınıfı
+# <a name="add_volatile-class"></a>add_volatile Sınıfı
 
 Belirtilen türden **geçici** bir tür yapar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Ty>
@@ -30,12 +30,12 @@ using add_volatile_t = typename add_volatile<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*Şı*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir örneğinin `add_volatile<T>` bir başvuru, bir işlev veya geçici nitelenmiş bir tür, aksi durumda **geçici** bir tür *olması halinde* *t* olan bir üye **typedef** `type` öğesi *vardır.* Diğer ad `add_volatile_t` , **typedef** `type`üyesine erişmek için bir kısayoldur.
+Bir örneğinin bir `add_volatile<T>` **typedef** `type` başvuru, bir işlev veya geçici nitelenmiş bir *T* tür, aksi durumda **geçici** *T*bir tür olması halinde *t* olan bir üye typedef öğesi vardır. Diğer ad, `add_volatile_t` **typedef** üyesine erişmek için bir kısayoldur `type` .
 
 ## <a name="example"></a>Örnek
 
@@ -61,11 +61,11 @@ add_volatile<int> == int
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[remove_volatile Sınıfı](../standard-library/remove-volatile-class.md)
+[<type_traits>](type-traits.md)\
+[remove_volatile sınıfı](remove-volatile-class.md)

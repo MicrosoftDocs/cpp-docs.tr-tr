@@ -6,61 +6,61 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], methods
 - DoClick method [MFC]
 ms.assetid: bc4fad78-cabd-4cc0-a798-464b1a682f0b
-ms.openlocfilehash: ec59ccc0cbd48fc3114eb2dc0833dd3dd65691de
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 42d8dfecd32b4aecd0daa4034497ec9abff6d11a
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364677"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619936"
 ---
 # <a name="mfc-activex-controls-adding-stock-methods"></a>MFC ActiveX Denetimleri: Stok Yöntemler Ekleme
 
-Stok yöntemi, [coleControl](../mfc/reference/colecontrol-class.md)sınıfı tarafından zaten uygulandığı için özel bir yöntemden farklıdır. Örneğin, `COleControl` denetiminiz için Yenileme yöntemini destekleyen önceden tanımlanmış bir üye işlev içerir. Bu stok yöntemi için sevk haritası girişi DISP_STOCKFUNC_REFRESH.
+Bir stok yöntemi, sınıf [Colet denetimi](reference/colecontrol-class.md)tarafından zaten uygulanmış olan özel bir yöntemden farklıdır. Örneğin, `COleControl` denetiminiz Için Refresh metodunu destekleyen önceden tanımlanmış bir üye işlevi içerir. Bu stok yöntemi için dağıtım Haritası girişi DISP_STOCKFUNC_REFRESH.
 
 >[!IMPORTANT]
-> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
+> ActiveX, yeni geliştirme için kullanılması gereken eski bir teknolojidir. ActiveX 'in yerini alan modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimleri](activex-controls.md).
 
-`COleControl`iki stok yöntemini destekler: DoClick ve Refresh. Yenileme, denetimin görünümünü hemen güncelleştirmek için denetimin kullanıcısı tarafından çağrılır; DoClick, denetimin Click etkinliğini ateşlemek için çağrılır.
+`COleControl`iki stok yöntemini destekler: Dotıkla ve Yenile. Yenileme denetimin kullanıcı tarafından denetimin görünümünü hemen güncelleştirmek için çağrılır; Denetimin Click olayını harekete geçmek için DoClick çağrılır.
 
-|Yöntem|Sevkiyat haritası girişi|Açıklama|
+|Yöntem|Dağıtım eşleme girişi|Yorum|
 |------------|------------------------|-------------|
-|`DoClick`|**DISP_STOCKPROP_DOCLICK ( )**|Bir Tıklama olayını ateşler.|
-|`Refresh`|**DISP_STOCKPROP_REFRESH ( )**|Denetimin görünümünü hemen güncelleştirir.|
+|`DoClick`|**DISP_STOCKPROP_DOCLICK ()**|Bir tıklama olayı tetikler.|
+|`Refresh`|**DISP_STOCKPROP_REFRESH ()**|Denetimin görünümünü hemen güncelleştirir.|
 
-## <a name="adding-a-stock-method-using-the-add-method-wizard"></a><a name="_core_adding_a_stock_method_using_classwizard"></a>Ekle Yöntemi Sihirbazı'nı Kullanarak Stok Yöntemi Ekleme
+## <a name="adding-a-stock-method-using-the-add-method-wizard"></a><a name="_core_adding_a_stock_method_using_classwizard"></a>Yöntem Ekleme Sihirbazı 'Nı kullanarak stok yöntemi ekleme
 
-Stok yöntemi ekleme yöntemi [sihirbazı](../ide/add-method-wizard.md)kullanılarak basittir. Aşağıdaki yordam, MFC ActiveX Denetim Sihirbazı kullanılarak oluşturulan denetime Yenileme yönteminin eklenmesini gösterir.
+Bir stok yöntemi ekleme [yöntemi ekleme Sihirbazı](../ide/add-method-wizard.md)kullanılarak basittir. Aşağıdaki yordamda, MFC ActiveX Denetim Sihirbazı kullanılarak oluşturulan bir denetime yenileme yönteminin eklenmesi gösterilmektedir.
 
-#### <a name="to-add-the-stock-refresh-method-using-the-add-method-wizard"></a>Ekle Yöntemi Sihirbazı'nı kullanarak stok Yenileme yöntemini eklemek için
+#### <a name="to-add-the-stock-refresh-method-using-the-add-method-wizard"></a>Yöntem Ekleme Sihirbazı 'Nı kullanarak hisse senedi yenileme yöntemi eklemek için
 
 1. Denetiminizin projesini yükleyin.
 
-1. Sınıf Görünümü'nde, denetiminizin kitaplık düğümunu genişletin.
+1. Sınıf Görünümü, denetiminizin kitaplık düğümünü genişletin.
 
-1. Kısayol menüsünü açmak için denetiminiz için arabirim düğümüne (kitaplık düğümünün ikinci düğümü) sağ tıklayın.
+1. Kısayol menüsünü açmak için denetiminizin arabirim düğümüne (kitaplık düğümünün ikinci düğümü) sağ tıklayın.
 
-1. Kısayol menüsünden **Ekle'yi** tıklatın ve ardından **Yöntem Ekle'yi**tıklatın.
+1. Kısayol menüsünde, **Ekle** ' ye ve ardından **Yöntem Ekle**' ye tıklayın.
 
-   Bu, Yöntem Ekle Sihirbazı'nı açar.
+   Bu, yöntem ekleme Sihirbazı ' nı açar.
 
-1. Yöntem **Adı** **kutusunda, Yenile'yi**tıklatın.
+1. **Yöntem adı** kutusunda **Yenile**' ye tıklayın.
 
 1. **Son**'a tıklayın.
 
-## <a name="add-method-wizard-changes-for-stock-methods"></a><a name="_core_classwizard_changes_for_stock_methods"></a>Stok Yöntemleri için Yöntem Sihirbazı Değişiklikleri Ekle
+## <a name="add-method-wizard-changes-for-stock-methods"></a><a name="_core_classwizard_changes_for_stock_methods"></a>Stok yöntemleri için yöntem ekleme Sihirbazı değişiklikleri
 
-Stok Yenileme yöntemi denetimin taban sınıfı tarafından desteklendirilmesin, **Yöntem Ekle Sihirbazı** denetimin sınıf bildirimini hiçbir şekilde değiştirmez. Yöntem için bir giriş ekler denetimin sevkiyat haritasına ve onun . IDL dosyası. Aşağıdaki satır, denetimin uygulanmasında bulunan sevk haritasına eklenir (. CPP) dosyası:
+Stok yenileme yöntemi denetimin temel sınıfı tarafından desteklendiğinden, **Yöntem Ekleme Sihirbazı** denetimin sınıf bildirimini hiçbir şekilde değiştirmez. Bir yöntemi, denetimin dağıtım eşlemesine ve öğesine bir giriş ekler. IDL dosyası. Aşağıdaki satır, denetimin dağıtım eşlemesine, uygulamasında bulunur (. CPP) dosyası:
 
-[!code-cpp[NVC_MFC_AxUI#16](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-methods_1.cpp)]
+[!code-cpp[NVC_MFC_AxUI#16](codesnippet/cpp/mfc-activex-controls-adding-stock-methods_1.cpp)]
 
-Bu, Yenileme yöntemini denetimkullanıcılarının kullanımına sunar.
+Bu, yenileme yöntemini denetimin kullanıcıları için kullanılabilir hale getirir.
 
-Aşağıdaki satır denetimin. IDL dosyası:
+Aşağıdaki satır denetimin öğesine eklenir. IDL dosyası:
 
-[!code-cpp[NVC_MFC_AxUI#17](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-methods_2.idl)]
+[!code-cpp[NVC_MFC_AxUI#17](codesnippet/cpp/mfc-activex-controls-adding-stock-methods_2.idl)]
 
-Bu satır, Yenileme yöntemine belirli bir kimlik numarası atar.
+Bu satır, yenileme yöntemine belirli bir KIMLIK numarası atar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)
+[MFC ActiveX denetimleri](mfc-activex-controls.md)

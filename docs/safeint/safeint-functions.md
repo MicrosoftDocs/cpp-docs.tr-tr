@@ -31,46 +31,46 @@ helpviewer_keywords:
 - SafeNotEquals function
 - SafeSubtract function
 ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
-ms.openlocfilehash: c1c5593aee19254d4348d4e8658ffe9c3f0cf1b2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 585fd30715ff3520245210badc0fde2e2f87ae13
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368245"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84622068"
 ---
 # <a name="safeint-functions"></a>SafeInt İşlevleri
 
-SafeInt kitaplığı, [SafeInt sınıfının](../safeint/safeint-class.md)bir örneğini oluşturmadan kullanabileceğiniz çeşitli işlevler sağlar. Tek bir matematiksel işlemi tamsayı taşmasına karşı korumak istiyorsanız, bu işlevleri kullanabilirsiniz. Birden çok matematiksel işlemi korumak istiyorsanız, `SafeInt` nesneler oluşturmanız gerekir. Nesneleri oluşturmak, `SafeInt` bu işlevleri birden çok kez kullanmaktan daha verimlidir.
+SafeInt Kitaplığı, [SafeInt sınıfının](safeint-class.md)bir örneğini oluşturmadan kullanabileceğiniz çeşitli işlevler sağlar. Tek bir matematik işlemini tamsayı taşmadan korumak istiyorsanız, bu işlevleri kullanabilirsiniz. Birden çok matematik işlemini korumak istiyorsanız nesneler oluşturmanız gerekir `SafeInt` . `SafeInt`Bu işlevleri birden çok kez kullanmak yerine nesneleri oluşturmak daha etkilidir.
 
-Bu işlevler, önce aynı türe dönüştürmek zorunda kalmadan iki farklı türde parametre üzerinde matematiksel işlemleri karşılaştırmanızı veya gerçekleştirmenizi sağlar.
+Bu işlevler, bu parametreleri ilk olarak aynı türe dönüştürmek zorunda kalmadan iki farklı parametre türü üzerinde karşılaştırmanıza veya gerçekleştirmenize olanak tanır.
 
-Bu işlevlerin her biri `T` iki `U`şablon türü vardır: ve. Bu türlerin her biri boolean, karakter veya integral türü olabilir. İntegral türleri imzalanabilir veya imzasız olabilir ve 8 bitten 64 bit'e kadar herhangi bir boyut.
+Bu işlevlerin her biri iki şablon türüne sahiptir: `T` ve `U` . Bu türlerin her biri bir Boole, karakter veya integral türü olabilir. Integral türleri imzalanabilir veya imzasız ve 8 bitten 64 bite kadar herhangi bir boyutta olabilir.
 
 > [!NOTE]
-> Bu kitaplığın en son sürümü [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt).
+> Bu kitaplığın en son sürümü konumunda bulunur [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt) .
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
 İşlev                      | Açıklama
 ----------------------------- | --------------------------------------------------------------
-[SafeAdd](#safeadd)           | İki sayı ekler ve taşmalara karşı korur.
-[SafeCast](#safecast)         | Bir parametre türünü başka bir türe atar.
-[SafeDivide](#safedivide)     | İki sayıyı böler ve sıfıra bölmeye karşı korur.
-[SafeEquals](#safeequals), [SafeGreaterThan](#safegreaterthan), [SafeGreaterThanEquals](#safegreaterthanequals), [SafeLessThan](#safelessthan), [SafeLessThanEquals](#safelessthanequals), [SafeNotEquals](#safenotequals) | İki sayıyı karşılaştırır. Bu işlevler, türlerini değiştirmeden iki farklı sayı türünü karşılaştırmanızı sağlar.
-[SafeModulus](#safemodulus)   | Modül işlemini iki sayı üzerinde gerçekleştirir.
-[SafeMultiply](#safemultiply) | İki sayıyı bir araya getirir ve taşmalara karşı korur.
-[SafeSubtract](#safesubtract) | İki sayı çıkarır ve taşmalara karşı korur.
+[SafeAdd](#safeadd)           | İki sayı ekler ve taşmaya karşı koruma sağlar.
+[SafeCast](#safecast)         | Bir parametre türünü başka bir türe yayınlar.
+[SafeDivide](#safedivide)     | İki sayıyı böler ve sıfıra bölmek için koruma sağlar.
+[SafeEquals](#safeequals), [SafeGreaterThan](#safegreaterthan), [SafeGreaterThanEquals](#safegreaterthanequals), [SafeLessThan](#safelessthan), [safelessmon eşittir](#safelessthanequals), [SafeNotEquals](#safenotequals) | İki sayıyı karşılaştırır. Bu işlevler, iki farklı sayıyı türlerini değiştirmeden karşılaştırmanızı sağlar.
+[SafeModulus](#safemodulus)   | İki sayı üzerinde mod işlemini gerçekleştirir.
+[SafeMultiply](#safemultiply) | İki sayıyı birlikte çarpar ve taşmaya karşı koruma sağlar.
+[SafeSubtract](#safesubtract) | İki sayıyı çıkartır ve taşmaya karşı korur.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 Section                                                  | Açıklama
 -------------------------------------------------------- | ----------------------------------------------------
-[Safeınt](../safeint/safeint-class.md)                   | Sınıf. `SafeInt`
-[SafeIntException](../safeint/safeintexception-class.md) | SafeInt kitaplığına özgü özel özel sınıf.
+[SafeInt](safeint-class.md)                   | `SafeInt`Sınıfı.
+[SafeIntException](safeintexception-class.md) | SafeInt kitaplığına özgü özel durum sınıfı.
 
-## <a name="safeadd"></a><a name="safeadd"></a>Güvenli Ekle
+## <a name="safeadd"></a><a name="safeadd"></a>SafeAdd
 
-Taşmalara karşı koruyacak şekilde iki sayı ekler.
+Taşmaya karşı koruyan bir şekilde iki sayı ekler.
 
 ```cpp
 template<typename T, typename U>
@@ -83,22 +83,22 @@ inline bool SafeAdd (
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-[içinde] Eklenecek ilk sayı. Bu T tipi olmalı.
+*şı*<br/>
+'ndaki Eklenecek ilk sayı. Bu T türünde olmalıdır.
 
-*U*<br/>
-[içinde] Eklenecek ikinci sayı. Bu U tipi olmalı.
+*larınız*<br/>
+'ndaki Eklenecek ikinci sayı. Bu, U türünde olmalıdır.
 
-*Sonuç*<br/>
-[çıkış] Sonucu depoladığı `SafeAdd` parametre.
+*kaynaklanan*<br/>
+dışı `SafeAdd`Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hata yoksa **doğrudur;** bir hata oluşursa **yanlış** olur.
+hata oluşursa **doğru** ; bir hata oluşursa **false** .
 
 ## <a name="safecast"></a><a name="safecast"></a>SafeCast
 
-Bir sayı türünü başka bir türe atar.
+Bir sayı türünü başka bir türe yayınlar.
 
 ```cpp
 template<typename T, typename U>
@@ -111,18 +111,18 @@ inline bool SafeCast (
 ### <a name="parameters"></a>Parametreler
 
 *Kaynak*<br/>
-[içinde] Dönüştürülecek kaynak numarası. Bu tür `T`olmalı.
+'ndaki Dönüştürülecek kaynak numara. Bu, türünde olmalıdır `T` .
 
 *Hedef*<br/>
-[çıkış] Yeni sayı türüne bir başvuru. Bu tür `U`olmalı.
+dışı Yeni sayı türüne bir başvuru. Bu, türünde olmalıdır `U` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hata yoksa **doğrudur;** bir hata oluşursa **yanlış** olur.
+hata oluşursa **doğru** ; bir hata oluşursa **false** .
 
-## <a name="safedivide"></a><a name="safedivide"></a>Güvenli Bölme
+## <a name="safedivide"></a><a name="safedivide"></a>SafeDivide
 
-İki sayıyı sıfıra bölmeye karşı koruyacak şekilde böler.
+İki sayıyı sıfıra bölmek için koruyan bir şekilde böler.
 
 ```cpp
 template<typename T, typename U>
@@ -135,22 +135,22 @@ inline bool SafeDivide (
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-[içinde] Bölücü. Bu T tipi olmalı.
+*şı*<br/>
+'ndaki Bölen. Bu T türünde olmalıdır.
 
-*U*<br/>
-[içinde] Temettü. Bu U tipi olmalı.
+*larınız*<br/>
+'ndaki Bölünen. Bu, U türünde olmalıdır.
 
-*Sonuç*<br/>
-[çıkış] Sonucu depoladığı `SafeDivide` parametre.
+*kaynaklanan*<br/>
+dışı `SafeDivide`Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hata yoksa **doğrudur;** bir hata oluşursa **yanlış** olur.
+hata oluşursa **doğru** ; bir hata oluşursa **false** .
 
-## <a name="safeequals"></a><a name="safeequals"></a>Güvenli Eşitler
+## <a name="safeequals"></a><a name="safeequals"></a>SafeEquals
 
-Eşit olup olmadıklarını belirlemek için iki sayıyı karşılaştırır.
+Eşit olup olmadığını anlamak için iki sayıyı karşılaştırır.
 
 ```cpp
 template<typename T, typename U>
@@ -162,19 +162,19 @@ inline bool SafeEquals (
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-[içinde] Karşılaştırılacak ilk sayı. Bu T tipi olmalı.
+*şı*<br/>
+'ndaki Karşılaştırılacak ilk sayı. Bu T türünde olmalıdır.
 
-*U*<br/>
-[içinde] Karşılaştırılacak ikinci sayı. Bu U tipi olmalı.
+*larınız*<br/>
+'ndaki Karşılaştırılacak ikinci sayı. Bu, U türünde olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*t* ve *u* eşitse **doğrudur;** aksi takdirde **yanlış**.
+*t* ve *u* eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntem, iki `==` `SafeEquals` farklı sayı türünü karşılaştırmanızı sağladığından geliştirir.
+Yöntemi geliştirir, `==` çünkü `SafeEquals` iki farklı sayı türünü karşılaştırmanızı sağlar.
 
 ## <a name="safegreaterthan"></a><a name="safegreaterthan"></a>SafeGreaterThan
 
@@ -190,21 +190,21 @@ inline bool SafeGreaterThan (
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-[içinde] Karşılaştırılacak ilk sayı. Bu tür `T`olmalı.
+*şı*<br/>
+'ndaki Karşılaştırılacak ilk sayı. Bu, türünde olmalıdır `T` .
 
-*U*<br/>
-[içinde] Karşılaştırılacak ikinci sayı. Bu tür `U`olmalı.
+*larınız*<br/>
+'ndaki Karşılaştırılacak ikinci sayı. Bu, türünde olmalıdır `U` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*t* *u'dan*büyükse **doğrudur** ; aksi takdirde **yanlış**.
+*t* , *u*'dan büyükse **doğru** , Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SafeGreaterThan`iki farklı sayı türünü karşılaştırmanızı sağlayarak normal karşılaştırma işlecigenişlet.
+`SafeGreaterThan`iki farklı sayı türünü karşılaştırmanızı sağlayarak normal karşılaştırma işlecini genişletir.
 
-## <a name="safegreaterthanequals"></a><a name="safegreaterthanequals"></a>SafeGreaterThanEşitler
+## <a name="safegreaterthanequals"></a><a name="safegreaterthanequals"></a>SafeGreaterThanEquals
 
 İki sayıyı karşılaştırır.
 
@@ -218,23 +218,23 @@ inline bool SafeGreaterThanEquals (
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-[içinde] Karşılaştırılacak ilk sayı. Bu tür `T`olmalı.
+*şı*<br/>
+'ndaki Karşılaştırılacak ilk sayı. Bu, türünde olmalıdır `T` .
 
-*U*<br/>
-[içinde] Karşılaştırılacak ikinci sayı. Bu tür `U`olmalı.
+*larınız*<br/>
+'ndaki Karşılaştırılacak ikinci sayı. Bu, türünde olmalıdır `U` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*t* *u'dan*büyük veya eşitse **doğrudur;** aksi takdirde **yanlış**.
+*t* , *u*'den büyük veya buna eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SafeGreaterThanEquals`iki farklı sayı türünü karşılaştırmanızı sağladığından standart karşılaştırma işlecigeliştirir.
+`SafeGreaterThanEquals`iki farklı sayı türünü karşılaştırmanızı sağladığından Standart karşılaştırma işlecini geliştirir.
 
-## <a name="safelessthan"></a><a name="safelessthan"></a>SafelessThan
+## <a name="safelessthan"></a><a name="safelessthan"></a>SafeLessThan
 
-Bir sayının diğerinden küçük olup olmadığını belirler.
+Bir sayının diğerinden daha küçük olup olmadığını belirler.
 
 ```cpp
 template<typename T, typename U>
@@ -246,19 +246,19 @@ inline bool SafeLessThan (
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-[içinde] İlk numara. Bu tür `T`olmalı.
+*şı*<br/>
+'ndaki İlk sayı. Bu, türünde olmalıdır `T` .
 
-*U*<br/>
-[içinde] İkinci sayı. Bu tür `U`olmalı.
+*larınız*<br/>
+'ndaki İkinci numer. Bu, türünde olmalıdır `U` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*t* *u'dan*küçükse **doğrudur** ; aksi takdirde **yanlış**.
+*t* , *u*'den küçükse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, iki farklı `SafeLessThan` sayı türünü karşılaştırmanızı sağladığından standart karşılaştırma işlecigeliştirir.
+Bu yöntem, `SafeLessThan` iki farklı türden sayıyı karşılaştırmanızı sağladığından Standart karşılaştırma işlecini geliştirir.
 
 ## <a name="safelessthanequals"></a><a name="safelessthanequals"></a>SafeLessThanEquals
 
@@ -274,23 +274,23 @@ inline bool SafeLessThanEquals (
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-[içinde] Karşılaştırılacak ilk sayı. Bu tür `T`olmalı.
+*şı*<br/>
+'ndaki Karşılaştırılacak ilk sayı. Bu, türünde olmalıdır `T` .
 
-*U*<br/>
-[içinde] Karşılaştırılacak ikinci sayı. Bu tür `U`olmalı.
+*larınız*<br/>
+'ndaki Karşılaştırılacak ikinci sayı. Bu, türünde olmalıdır `U` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*t* *u'dan*küçük veya eşitse **doğrudur** ; aksi takdirde **yanlış**.
+*t* , *u*'den küçük veya ona eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SafeLessThanEquals`iki farklı sayı türünü karşılaştırmanızı sağlayarak normal karşılaştırma işlecigenişlet.
+`SafeLessThanEquals`iki farklı sayı türünü karşılaştırmanızı sağlayarak normal karşılaştırma işlecini genişletir.
 
-## <a name="safemodulus"></a><a name="safemodulus"></a>GüvenliModulus
+## <a name="safemodulus"></a><a name="safemodulus"></a>SafeModulus
 
-Modül işlemini iki sayı üzerinde gerçekleştirir.
+İki sayı üzerinde mod işlemini gerçekleştirir.
 
 ```cpp
 template<typename T, typename U>
@@ -303,22 +303,22 @@ inline bool SafeModulus (
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-[içinde] Bölücü. Bu tür `T`olmalı.
+*şı*<br/>
+'ndaki Bölen. Bu, türünde olmalıdır `T` .
 
-*U*<br/>
-[içinde] Temettü. Bu tür `U`olmalı.
+*larınız*<br/>
+'ndaki Bölünen. Bu, türünde olmalıdır `U` .
 
-*Sonuç*<br/>
-[çıkış] Sonucu depoladığı `SafeModulus` parametre.
+*kaynaklanan*<br/>
+dışı `SafeModulus`Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hata yoksa **doğrudur;** bir hata oluşursa **yanlış** olur.
+hata oluşursa **doğru** ; bir hata oluşursa **false** .
 
-## <a name="safemultiply"></a><a name="safemultiply"></a>Güvenli Çarpma
+## <a name="safemultiply"></a><a name="safemultiply"></a>SafeMultiply
 
-İki sayıyı taşmalara karşı koruyacak şekilde çarpar.
+İki sayıyı taşmayı koruyan bir şekilde birbiriyle çarpar.
 
 ```cpp
 template<typename T, typename U>
@@ -331,18 +331,18 @@ inline bool SafeMultiply (
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-[içinde] Çarpılacak ilk sayı. Bu tür `T`olmalı.
+*şı*<br/>
+'ndaki Çarpılacak ilk sayı. Bu, türünde olmalıdır `T` .
 
-*U*<br/>
-[içinde] Çarpılacak ikinci sayı. Bu tür `U`olmalı.
+*larınız*<br/>
+'ndaki Çarpılacak ikinci sayı. Bu, türünde olmalıdır `U` .
 
-*Sonuç*<br/>
-[çıkış] Sonucu depoladığı `SafeMultiply` parametre.
+*kaynaklanan*<br/>
+dışı `SafeMultiply`Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true`hata yoksa; `false` bir hata oluşursa.
+`true`bir hata oluşursa; `false`bir hata oluşursa.
 
 ## <a name="safenotequals"></a><a name="safenotequals"></a>SafeNotEquals
 
@@ -358,23 +358,23 @@ inline bool SafeNotEquals (
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-[içinde] Karşılaştırılacak ilk sayı. Bu tür `T`olmalı.
+*şı*<br/>
+'ndaki Karşılaştırılacak ilk sayı. Bu, türünde olmalıdır `T` .
 
-*U*<br/>
-[içinde] Karşılaştırılacak ikinci sayı. Bu tür `U`olmalı.
+*larınız*<br/>
+'ndaki Karşılaştırılacak ikinci sayı. Bu, türünde olmalıdır `U` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*t* ve *u* eşit değilse **doğrudur;** aksi takdirde **yanlış**.
+*t* ve *u* eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntem, iki `!=` `SafeNotEquals` farklı sayı türünü karşılaştırmanızı sağladığından geliştirir.
+Yöntemi geliştirir, `!=` çünkü `SafeNotEquals` iki farklı sayı türünü karşılaştırmanızı sağlar.
 
-## <a name="safesubtract"></a><a name="safesubtract"></a>Güvenli Altlık
+## <a name="safesubtract"></a><a name="safesubtract"></a>SafeSubtract
 
-İki sayıyı taşmalara karşı koruyacak şekilde çıkarır.
+İki sayıyı taşmayı koruyacak şekilde çıkartır.
 
 ```cpp
 template<typename T, typename U>
@@ -387,15 +387,15 @@ inline bool SafeSubtract (
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-[içinde] Çıkarmadaki ilk sayı. Bu tür `T`olmalı.
+*şı*<br/>
+'ndaki Çıkarma sırasında ilk sayı. Bu, türünde olmalıdır `T` .
 
-*U*<br/>
-[içinde] *T'den*çıkarılabilen sayı. Bu tür `U`olmalı.
+*larınız*<br/>
+'ndaki *T*'den çıkarılacak sayı. Bu, türünde olmalıdır `U` .
 
-*Sonuç*<br/>
-[çıkış] Sonucu depoladığı `SafeSubtract` parametre.
+*kaynaklanan*<br/>
+dışı `SafeSubtract`Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hata yoksa **doğrudur;** bir hata oluşursa **yanlış** olur.
+hata oluşursa **doğru** ; bir hata oluşursa **false** .

@@ -3,29 +3,29 @@ title: MFC ve ATL
 ms.date: 01/24/2018
 ms.assetid: 31b1a3a8-4154-4c4a-af10-fafc23ecdc5c
 ms.topic: overview
-ms.openlocfilehash: 3a58e68925fd77d002400bfe9d1f2bd28c60f78c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2fd109792bde0717c88222d5d53be3a26df95239
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214337"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619927"
 ---
 # <a name="mfc-and-atl"></a>MFC ve ATL
 
-Microsoft Foundation Sınıfları (MFC), Yerel Masaüstü C++ uygulamalarının hızlı geliştirmesi için Win32 üzerinde nesne odaklı bir sarmalayıcı sağlar. Etkin Şablon kitaplığı (ATL), COM geliştirmeyi kolaylaştıran ve ActiveX denetimleri oluşturmak için yaygın olarak kullanılan bir sarmalayıcı kitaplığıdır.
+Microsoft Foundation Sınıfları (MFC), yerel masaüstü uygulamalarının hızlı geliştirmesi için Win32 üzerinde C++ nesne odaklı bir sarmalayıcı sağlar. Etkin Şablon kitaplığı (ATL), COM geliştirmeyi kolaylaştıran ve ActiveX denetimleri oluşturmak için yaygın olarak kullanılan bir sarmalayıcı kitaplığıdır.
 
 Visual Studio Community Edition veya üzeri ile MFC veya ATL programları oluşturabilirsiniz. Express sürümleri MFC veya ATL 'yi desteklemez.
 
-Visual Studio 2015 ' de, C++ Visual, isteğe bağlı bir BILEŞENDIR ve MFC ve ATL bileşenleri, görsel C++altında isteğe bağlı alt bileşenlerdir. Visual Studio 'Yu ilk kez yüklediğinizde bu bileşenleri seçmezseniz, bir MFC veya ATL projesi oluşturmaya veya açmaya çalıştığınızda ilk kez yüklemeniz istenir.
+Visual Studio 2015 ' de Visual C++ isteğe bağlı bir bileşendir ve MFC ve ATL bileşenleri Visual C++ altında isteğe bağlı alt bileşenlerdir. Visual Studio 'Yu ilk kez yüklediğinizde bu bileşenleri seçmezseniz, bir MFC veya ATL projesi oluşturmaya veya açmaya çalıştığınızda ilk kez yüklemeniz istenir.
 
-Visual Studio 2017 ve üzeri sürümlerde, MFC ve ATL, Visual Studio yükleyicisi programdaki iş yüküne  **C++ sahip masaüstü geliştirme** kapsamında isteğe bağlı alt bileşenlerdir. MFC olmadan ATL desteği veya birleştirilmiş MFC ve ATL desteği (MFC, ATL 'ye bağlıdır) yükleyebilirsiniz. İş yükleri ve bileşenler hakkında daha fazla bilgi için bkz. [Visual Studio 'Yu yükler](/visualstudio/install/install-visual-studio).
+Visual Studio 2017 ve üzeri sürümlerde, MFC ve ATL, Visual Studio Yükleyicisi programındaki C++ iş yüküne **sahip masaüstü geliştirme** kapsamında isteğe bağlı alt bileşenlerdir. MFC olmadan ATL desteği veya birleştirilmiş MFC ve ATL desteği (MFC, ATL 'ye bağlıdır) yükleyebilirsiniz. İş yükleri ve bileşenler hakkında daha fazla bilgi için bkz. [Visual Studio 'Yu yükler](/visualstudio/install/install-visual-studio).
 
 ## <a name="related-articles"></a>İlgili Makaleler
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[MFC Masaüstü Uygulamaları](../mfc/mfc-desktop-applications.md)|Microsoft Foundation Sınıfları, ' de C++GUI uygulamalarının hızlı bir şekilde geliştirilmesini sağlamak için Win32 üzerinde ince nesne odaklı bir sarmalayıcı sağlar.|
-|[ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)|ATL, ' de C++com nesnelerinin oluşturulmasını basitleştirmek için sınıf şablonları ve diğer kullanım yapıları sağlar.|
+|[MFC masaüstü uygulamaları](mfc-desktop-applications.md)|Microsoft Foundation Sınıfları, C++ üzerinde GUI uygulamalarının hızla geliştirilmesini sağlamak için Win32 üzerinde ince nesne odaklı bir sarmalayıcı sağlar.|
+|[ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)|ATL, C++ ' ta COM nesneleri oluşturmayı basitleştirmek için sınıf şablonları ve diğer kullanım yapıları sağlar.|
 |[ATL/MFC paylaşılan sınıfları](../atl-mfc-shared/atl-mfc-shared-classes.md)|[CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md) ve MFC ve ATL tarafından paylaşılan diğer sınıflar için başvurular.|
 |[Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)|Kaynak Düzenleyicisi, dizeler, görüntüler ve iletişim kutuları gibi kullanıcı arabirimi kaynaklarını düzenlemenize olanak tanır.|
-|[Visual Studio’da C++](../overview/visual-cpp-in-visual-studio.md)|MSDN kitaplığındaki tüm C++ içerikler için üst konu.|
+|[Visual Studio’da C++](../overview/visual-cpp-in-visual-studio.md)|MSDN kitaplığındaki tüm C++ içeriği için üst konu.|

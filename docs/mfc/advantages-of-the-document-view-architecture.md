@@ -5,37 +5,37 @@ helpviewer_keywords:
 - views [MFC], advantages
 - document/view architecture [MFC], advantages of
 ms.assetid: 0bc27071-e120-4889-939c-ce1e61fb9cb3
-ms.openlocfilehash: e250630bf3c9714fc01ff66b66fba3ac0d5b1cc1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 80f7141ec62d509defdea361586399bd375df0d1
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394734"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84623273"
 ---
 # <a name="advantages-of-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Avantajları
 
-MFC belge/görünüm mimarisi kullanarak en önemli avantajı mimarisi birden çok görünüm aynı belgede, özellikle de desteklemesidir. (Birden çok görünüm gerekmez ve belge/görünüm küçük yükü uygulamanızda aşırı ise, mimari önleyebilirsiniz. [Belge/görünüm mimarisinin alternatifleri](../mfc/alternatives-to-the-document-view-architecture.md).)
+MFC belge/görünüm mimarisini kullanmanın önemli avantajı, mimarinin aynı belgenin birçok görünümünü özellikle de desteklediğinden emin olur. (Birden çok görünüme ihtiyacınız yoksa ve belge/görünüm küçük ek yükü uygulamanızda daha fazla ise, mimariden kaçınabilirsiniz. [Belge/görünüm mimarisinin alternatifleri](alternatives-to-the-document-view-architecture.md).)
 
-Uygulamanızı elektronik biçimde ya da grafik biçimde sayısal veri görüntüleme olanağı varsayalım. Bir kullanıcı aynı anda hem ham verileri, elektronik tablo form ve verilerden sonuçları bir grafik görmek isteyebilirsiniz. Bu ayrı görünümleri, ayrı bir çerçeve pencereleri veya tek bir pencere Bölümlendirici bölmelerini görüntüler. Artık kullanıcı görmek ve elektronik tablo verileri düzenleyebilir varsayalım değişiklikleri anında grafiğe yansıtılır.
+Uygulamanızın, kullanıcıların elektronik tablo biçiminde veya grafik biçiminde sayısal verileri görüntülemesine izin sağladığını varsayalım. Kullanıcı aynı anda hem ham verileri, hem de elektronik tablo formunu ve verilerin sonucu olan bir grafiği görmek isteyebilir. Bu ayrı görünümleri tek bir pencere içinde ayrı çerçeve pencereleri veya ayırıcı bölmelerde görüntüleyebilirsiniz. Artık kullanıcının elektronik tablodaki verileri düzenleyebildiğini ve değişiklikleri grafiğe anında yansıttığını varsayalım.
 
-MFC içinde elektronik tablo ve grafik görünümünde CView türetilen farklı sınıflara temel. Her iki görünümde bir tek belge nesnesi ile ilişkilendirilmiş olabilir. Belge verileri depoları (veya belki de bir veritabanından alır). Her iki görünümde belgeye erişmek ve ondan alma verileri görüntüleyin.
+MFC 'de, elektronik tablo görünümü ve grafik görünümü CView 'dan türetilmiş farklı sınıflara göre yapılır. Her iki görünüm de tek bir belge nesnesiyle ilişkilendirilir. Belge verileri saklar (veya belki bir veritabanından edinir). Her iki görünüm de belgeye erişir ve aldıkları verileri görüntüler.
 
-Ne zaman bir kullanıcı güncelleştirmeleri nesne çağrıları görüntülemek görünümlerden birine `CDocument::UpdateAllViews`. Bu işlev tüm belgenin görünümlerinin bildirir ve her görünüm kendisi belgeyi en son verileri güncelleştirir. Tek çağrısı `UpdateAllViews` farklı görünümleri eşitler.
+Bir Kullanıcı görünümlerden birini güncelleştirdiğinde, bu görünüm nesnesi çağırır `CDocument::UpdateAllViews` . Bu işlev tüm belge görünümlerini bildirir ve her görünüm, belgenin en son verilerini kullanarak kendisini güncelleştirir. `UpdateAllViews`Farklı görünümleri eşitleyen tek çağrı.
 
-Bu senaryo, özellikle veri görünümleri depolanırsa görünümünden zor kod olmadan veri ayrımı olacaktır. Belge/görünüm ile kolaydır. Framework koordinasyon işin çoğunu sizin için halleder.
+Bu senaryo, özellikle de verilerin kendisi depolanıyorsa, görünümden veri ayrımı olmadan kod kadar zor olabilir. Belge/görünüm sayesinde bu oldukça kolaydır. Framework, düzenleme işinin çoğunu sizin için işler.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Belge/görünüm için alternatifleri](../mfc/alternatives-to-the-document-view-architecture.md)
+- [Belge/görünüm alternatifleri](alternatives-to-the-document-view-architecture.md)
 
-- [CDocument](../mfc/reference/cdocument-class.md)
+- [CDocument](reference/cdocument-class.md)
 
-- [CView](../mfc/reference/cview-class.md)
+- [CView](reference/cview-class.md)
 
-- [CDocument::UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews)
+- [CDocument:: UpdateAllViews](reference/cdocument-class.md#updateallviews)
 
-- [CView::GetDocument](../mfc/reference/cview-class.md#getdocument)
+- [CView:: GetDocument](reference/cview-class.md#getdocument)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
+[Belge/görünüm mimarisi](document-view-architecture.md)

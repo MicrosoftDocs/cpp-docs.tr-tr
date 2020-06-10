@@ -5,67 +5,67 @@ helpviewer_keywords:
 - architecture [MFC], MFC Feature Pack
 - MFC Feature Pack, architecture
 ms.assetid: eead6827-9602-40a3-8038-8986e8207385
-ms.openlocfilehash: fa6dc78c95717f9201e18346f1cbe573fa3c48d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d4d81287cb30a7d3608025085cdb3f9a208147a
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153581"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619986"
 ---
 # <a name="interface-elements"></a>Arabirim Öğeleri
 
-Bu belge, Visual Studio 2008 SP1'de tanıtılan arabirimi öğelerini açıklar ve ayrıca Kitaplığı'nın önceki sürümünü farklılıklar açıklanmaktadır.
+Bu belge, Visual Studio 2008 SP1 'de tanıtılan arabirim öğelerini açıklar ve ayrıca kitaplığın önceki sürümüyle farkları açıklar.
 
-Aşağıda yeni arabirim öğeleri kullanılarak oluşturulan bir uygulama gösterilmektedir.
+Aşağıdaki çizimde, yeni arabirim öğeleri kullanılarak oluşturulan bir uygulama gösterilmektedir.
 
-![MFC özellik paketi örnek uygulama](../mfc/media/mfc_featurepack.png "MFC özellik paketi örnek uygulaması")
+![MFC özellik paketi örnek uygulaması](../mfc/media/mfc_featurepack.png "MFC özellik paketi örnek uygulaması")
 
-## <a name="window-docking"></a>Yerleştirme penceresi
+## <a name="window-docking"></a>Pencere yerleştirme
 
-Pencere yerleştirme işlevleri Visual Studio grafik kullanıcı arabirimi kullandığını yerleştirme penceresi benzer.
+Pencere yerleştirme işlevselliği, Visual Studio Grafik Kullanıcı arabiriminin kullandığı pencere yerleştirme işlevine benzer.
 
-## <a name="control-bars-are-now-panes"></a>Denetim çubukları artık bölmeleri bulunur
+## <a name="control-bars-are-now-panes"></a>Denetim çubukları artık Bölmelerdir
 
-Denetim çubukları artık panolar olarak bilinir ve türetilmiş [CBasePane sınıfı](../mfc/reference/cbasepane-class.md). Denetim çubukları temel sınıfını MFC önceki sürümlerde olduğu `CControlBar`.
+Denetim çubukları artık bölmeler olarak bilinir ve [CBasePane sınıfından](reference/cbasepane-class.md)türetilir. MFC 'nin önceki sürümlerinde denetim çubuklarının temel sınıfı idi `CControlBar` .
 
-Uygulamanın ana çerçeve penceresinin genellikle tarafından temsil edilen [CFrameWndEx sınıfı](../mfc/reference/cframewndex-class.md) veya [Cmdıframewndex sınıfı](../mfc/reference/cmdiframewndex-class.md). Ana çerçeve adlı *site dock*. Bölmeleri üst öğeyi üç türlerden biri olabilir: bir dock sitesine, bir dock çubuğu veya mini çerçevenin.
+Uygulama ana çerçevesi penceresi genellikle [CFrameWndEx sınıfı](reference/cframewndex-class.md) veya [CMDIFrameWndEx sınıfı](reference/cmdiframewndex-class.md)tarafından temsil edilir. Ana çerçeveye *Dock sitesi*denir. Bölmeler üç tür üst türden birine sahip olabilir: bir dock sitesi, Dock çubuğu veya bir mini çerçeve penceresi.
 
-Bölmeleri iki tür vardır: yeniden boyutlandırılabilir olmayan ve yeniden boyutlandırılabilir. Durum çubukları ve araç çubukları gibi yeniden boyutlandırılabilir bölmeleri ayırıcılar veya kaydırıcıları kullanarak yeniden boyutlandırılabilir. Yeniden boyutlandırılabilir bölmeleri (bir başka bir bölüme, bunlar arasında bir ayırıcı oluşturmak için yerleştirilmiş olabilir) bir kapsayıcı oluşturabilir. Ancak, yeniden boyutlandırılabilir bölmeleri çubukları sabitlemek için (yerleşik) eklenemiyor.
+İki tür bölme vardır: yeniden boyutlandırılabilir ve yeniden boyutlandırılabilir. Durum çubukları ve araç çubukları gibi yeniden boyutlandırılabilir bölmeler, bölümlendiricileri veya kaydırıcıları kullanarak yeniden boyutlandırılabilir. Yeniden boyutlandırılabilir bölmeler kapsayıcı oluşturabilir (bir bölme başka bir bölmeye yerleştirilebilir, aralarında bir bölme oluşturulabilir). Ancak, yeniden boyutlandırılabilir bölmeler, yerleştirme çubuklarına iliştirilemez (sabitlenemez).
 
-Uygulamanızı yeniden boyutlandırılabilir olmayan bölmeleri kullanıyorsa, onlardan türetilen [CPane sınıfı](../mfc/reference/cpane-class.md).  Uygulamanızı yeniden boyutlandırılabilir bölmeleri kullanıyorsa, onlardan türetilen [CDockablePane sınıfı](../mfc/reference/cdockablepane-class.md)
+Uygulamanız yeniden boyutlandırılabilir bölmeler kullanıyorsa [CPane sınıfından](reference/cpane-class.md)türetirsiniz.  Uygulamanız yeniden boyutlandırılabilir bölmeler kullanıyorsa [CDockablePane sınıfından](reference/cdockablepane-class.md) türet
 
-## <a name="dock-site"></a>Dock sitesiyle
+## <a name="dock-site"></a>Siteyi yerleştir
 
-Dock sitesiyle (veya ana çerçeve penceresinin) tüm bölmeleri ve uygulama kısa çerçeve pencerelerinde sahip olur. Dock sitesiyle içeren bir [CDockingManager](../mfc/reference/cdockingmanager-class.md) üyesi. Bu üye, dock sitesine ait tüm bölmeleri listesini tutar. Dock sitesiyle dış kenarları sırasında oluşturulan bölmeleri listenin başında konumlandırılır böylece Liste sıralanmıştır. Dock sitesiyle framework yeniden çizer, bu liste üzerinde döngü ve her bölmede dock sitesine geçerli sınırlayıcı dikdörtgenini içerecek şekilde düzenini ayarlar. Çağırabilirsiniz `AdjustDockingLayout` veya `RecalcLayout` zaman yerleştirme düzeni ayarlamak sahip ve yerleştirme Yöneticisi bu çağrı framework yönlendirir.
+Dock sitesi (veya ana çerçeve penceresi), bir uygulamadaki tüm bölmelere ve mini çerçeve pencerelere sahip olur. Dock sitesi bir [CDockingManager](reference/cdockingmanager-class.md) üyesi içeriyor. Bu üye, Dock sitesine ait olan tüm bölmelerin bir listesini tutar. Liste, dock sitesinin dış kenarlarındaki oluşturulan bölmelerin listenin başlangıcında konumlandırılması için sıralanır. Framework dock sitesini yeniden çizer, bu liste üzerinde döngü yapar ve her bölmenin yerleşimini dock sitesinin geçerli sınırlayıcı dikdörtgenini içerecek şekilde ayarlar. `AdjustDockingLayout` `RecalcLayout` Takma düzeni ayarlamanız gerektiğinde veya ' yi çağırabilir ve Framework bu çağrıyı yerleştirme Yöneticisi 'ne yönlendirir.
 
-## <a name="dock-bars"></a>Dock çubukları
+## <a name="dock-bars"></a>Yerleştirme çubukları
 
-Her bir ana çerçeve penceresinin konumlandırabilirsiniz *çubukları yerleştirme* kenarlıkları boyunca. Bir dock çubuğudur ait bir bölme bir [CDockSite sınıfı](../mfc/reference/cdocksite-class.md). Dock çubukları öğesinden türetilen nesneler kabul edebilir [CPane](../mfc/reference/cpane-class.md), araç çubukları gibi. Ana çerçeve penceresinin başlatıldığında dock çubukları oluşturmak için arama `EnableDocking`. Otomatik Gizle çubuklarını etkinleştirmek için çağrı `EnableAutoHideBars`. `EnableAutoHideBars` oluşturur [CAutoHideDockSite](../mfc/reference/cautohidedocksite-class.md) nesneleri ve bunları her dock çubuğunun yanında yerleştirir.
+Her bir ana çerçeve penceresi, çizgi *çubuklarının* kenarlıklarını üzerinde konumlandırabilirsiniz. Takma çubuğu, [CDockSite sınıfına](reference/cdocksite-class.md)ait olan bir bölmesidir. Yerleştirme çubukları, [CPane](reference/cpane-class.md)'dan türetilmiş ve araç çubukları gibi nesneleri kabul edebilir. Ana çerçeve penceresi başlatıldığında yerleştirme çubukları oluşturmak için çağırın `EnableDocking` . Otomatik gizleme çubuklarını etkinleştirmek için çağrısı yapın `EnableAutoHideBars` . `EnableAutoHideBars`[CAutoHideDockSite](reference/cautohidedocksite-class.md) nesneleri oluşturur ve her bir dock çubuğunun yanına konumlandırır.
 
-Her bir dock çubuğun dock satırlara ayrılmıştır. Dock satırları tarafından temsil edilir [CDockingPanesRow sınıfı](../mfc/reference/cdockingpanesrow-class.md). Her dock satır araç çubukları listesini içerir. Bir kullanıcı bir araç çubuğu docks ya da araç bir satırdan aynı dock çubuğu içinde diğerine taşır. framework yeni bir satır oluşturur ve dock çubuğu buna göre yeniden boyutlandırır veya mevcut bir satırı üzerinde araç yerleştirir.
+Her Dock çubuğu, Dock satırlarına bölünmüştür. Dock satırları [CDockingPanesRow sınıfı](reference/cdockingpanesrow-class.md)tarafından temsil edilir. Her dock Satırı araç çubuklarının bir listesini içerir. Bir Kullanıcı bir araç çubuğunu veya araç çubuğunu aynı yuva çubuğunda bir satırdan diğerine taşıdığında, çerçeve yeni bir satır oluşturur ve Dock çubuğunu uygun şekilde yeniden boyutlandırır ya da araç çubuğunu varolan bir satıra konumlandırır.
 
-## <a name="mini-frame-windows"></a>Windows mini çerçeve
+## <a name="mini-frame-windows"></a>Mini çerçeve pencereleri
 
-Bir kayan bölme başlığının bir mini çerçeve penceresinde bulunur. Mini çerçeve pencereleri iki sınıf tarafından temsil edilir: [Cmdıtabınfo sınıfı](../mfc/reference/cmditabinfo-class.md) (yalnızca bir bölme içerebilir) ve [CMultiPaneFrameWnd sınıfı](../mfc/reference/cmultipaneframewnd-class.md) (birkaç bölmeleri içerebilir). Kodunuzda bir bölme kaydırmak için çağrı [CBasePane::FloatPane](../mfc/reference/cbasepane-class.md#floatpane). Bir bölme gezinen sonra framework otomatik olarak bir mini çerçeve penceresi oluşturur ve bu Mini çerçeve kayan bölme üst olur. Kayan bölme noktalarını, üst çerçeve sıfırlar ve bir dock çubuğu (için araç çubukları) veya bir dock sitesine (yeniden boyutlandırılabilir bölmeleri için) kayan bölme başlığının olur.
+Kayan bölme bir mini çerçeve penceresinde bulunur. Mini çerçeve pencereleri iki sınıf tarafından temsil edilir: [Cmditabınfo sınıfı](reference/cmditabinfo-class.md) (yalnızca bir bölme içerebilir) ve [Cmultipane framewnd sınıfı](reference/cmultipaneframewnd-class.md) (çeşitli bölmeler içerebilen). Kodunuzda bir bölmeyi kaydırmak için [CBasePane:: FloatPane](reference/cbasepane-class.md#floatpane)' ı çağırın. Bir bölme üstten sonra çerçeve otomatik olarak bir mini çerçeve penceresi oluşturur ve bu mini çerçeve penceresi kayan bölmenin üst öğesi olur. Kayan bölme noktaları, çerçeve üst öğesini sıfırlar ve kayan bölme bir yuva çubuğu (araç çubukları için) veya bir dock sitesi (yeniden boyutlandırılabilir bölmeler için) olur.
 
-## <a name="pane-dividers"></a>Bölücü bölmesi
+## <a name="pane-dividers"></a>Bölme bölücüleri
 
-Bölmesinde Bölücü (kaydırıcıları veya ayırıcılar da adlandırılır) tarafından temsil edilir [CPaneDivider sınıfı](../mfc/reference/cpanedivider-class.md). Bir kullanıcı bir bölme docks, framework bölmesinde Bölücü, bölmesinin dock sitesine veya başka bir bölme yerleştirildiğini bağımsız olarak oluşturur. Bir bölme dock sitesine noktaları çalıştırdığınızda bölmesinde ayırıcı olarak adlandırılır *bölmesinde ayırıcı varsayılan*. Varsayılan bölmesinde ayırıcı dock sitedeki tüm yerleştirme bölmesine düzenini sorumludur. Dock Yöneticisi'ni varsayılan bölmesinde Bölücü listesini ve bölmeleri listesini tutar. Dock yöneticileri için tüm yerleştirme bölmesine düzenini sorumludur.
+Bölme bölücüleri (kaydırıcıları veya bölümlendiricileri de adlandırılır) [CPaneDivider sınıfı](reference/cpanedivider-class.md)tarafından temsil edilir. Bir Kullanıcı bir bölmeyi oluşturduğunda, bölmenin yerleştirme sitesine veya başka bir bölmeye yerleştirilmiş olmasına bakılmaksızın çerçeve bölme bölücüleri oluşturur. Dock sitesine bir bölme noktaları, bölme ayracına *varsayılan bölme etiketi*olarak adlandırılır. Varsayılan bölme bölücü, Dock sitesindeki tüm yerleştirme bölmelerinin düzeninden sorumludur. Dock Manager, varsayılan bölme bölücülerin ve bir bölme listesinin bir listesini tutar. Dock yöneticileri, tüm yerleştirme bölmelerinin düzeninden sorumludur.
 
 ## <a name="containers"></a>Kapsayıcılar
 
-Birbiriyle yerleştirildiğinde tüm yeniden boyutlandırılabilir bölmeleri kapsayıcılarda korunur. Kapsayıcıları tarafından temsil edilir [CPaneContainer sınıfı](../mfc/reference/cpanecontainer-class.md). Her kapsayıcı, sol ve sağ parçaları arasında işaretçileri, sol bölmede, sağ bölmede, sol alt kapsayıcıda, sağ alt kapsayıcısı ve bölme vardır. (*Sol* ve *doğru* fiziksel kenarlara atıfta bulunmayan, ancak bunun yerine bir ağaç yapısı dalları belirleyin.) Bu şekilde size bölme ve ayırıcılar ağacının oluşturun ve bu nedenle birlikte yeniden boyutlandırılabilir bölme karmaşık düzenleri elde etmek. `CPaneContainer` Sınıfı kapsayıcılar ağacı tutar; ayrıca bölmeleri ve bu ağacında bulunan kaydırıcıları iki listelerini tutar. Bölmesinde kapsayıcı yöneticileri genellikle varsayılan kaydırıcıları ve birden fazla bölme taşıyan Mini çerçeve pencereleri gömülür.
+Birbirine yerleştirilmiş olan tüm yeniden boyutlandırılabilir bölmeler kapsayıcılar içinde tutulur. Kapsayıcılar [Cbölmesi kapsayıcı sınıfı](reference/cpanecontainer-class.md)tarafından temsil edilir. Her kapsayıcının sol bölmesi, sağ bölmesi, sol alt kapsayıcı, sağ alt kapsayıcı ve sol ve sağ parçalar arasındaki Bölümlendirici işaretçileri vardır. (*Sol* ve *sağ* , fiziksel kenarlara başvurmayın, bunun yerine bir ağaç yapısının dallarını belirler.) Bu şekilde, bir dizi bölme ve bölümlendiricileri derleyebilir ve bu nedenle birlikte yeniden boyutlandırılabileceğiniz karmaşık bölme düzenlerine ulaşabilirsiniz. `CPaneContainer`Sınıfı kapsayıcı ağacını korur; Ayrıca bu ağaçta bulunan bölme ve kaydırıcıların iki listesini de korur. Bölme kapsayıcısı yöneticileri, genellikle birden çok bölme gerçekleştiren varsayılan kaydırıcılar ve mini çerçeve pencereleri içine gömülür.
 
-## <a name="auto-hide-control-bars"></a>Otomatik gizleme denetim çubukları
+## <a name="auto-hide-control-bars"></a>Denetim çubuklarını otomatik gizle
 
-Varsayılan olarak, her `CDockablePane` otomatik gizleme özelliğini destekler. Bir kullanıcı, açıklamalı alt yazısı üzerinde görünen pin düğmesini tıkladığında `CDockablePane`, framework bölmesinde otomatik gizleme moduna geçer. Öğesini işlemek için çerçeve oluşturur. bir [CMFCAutoHideBar sınıfı](../mfc/reference/cmfcautohidebar-class.md) ve [CMFCAutoHideButton sınıfı](../mfc/reference/cmfcautohidebutton-class.md) ilişkili `CMFCAutoHideBar` nesne. Framework yeni koyar `CMFCAutoHideBar` üzerinde [CAutoHideDockSite](../mfc/reference/cautohidedocksite-class.md). Framework ayrıca ekler `CMFCAutoHideButton` araç. [CDockingManager sınıfı](../mfc/reference/cdockingmanager-class.md) tutar `CDockablePane`.
+Varsayılan olarak, her biri `CDockablePane` otomatik gizleme özelliğini destekler. Bir Kullanıcı öğesinin açıklamalı alt yazısının sabitleme düğmesine tıkladığında `CDockablePane` Framework, bölmeyi otomatik gizleme moduna geçirir. Tıklama, tıklamak için bir [CMFCAutoHideBar sınıfı](reference/cmfcautohidebar-class.md) ve nesneyle Ilişkili bir [CMFCAutoHideButton sınıfı](reference/cmfcautohidebutton-class.md) oluşturur `CMFCAutoHideBar` . Framework, `CMFCAutoHideBar` [CAutoHideDockSite](reference/cautohidedocksite-class.md)üzerine yeni bir koyar. Çerçeve araç çubuğuna da ekler `CMFCAutoHideButton` . [CDockingManager sınıfı](reference/cdockingmanager-class.md) , öğesini saklar `CDockablePane` .
 
-## <a name="tabbed-control-bars-and-outlook-bars"></a>Denetim çubuklarını sekmeli ve Outlook Çubuğu
+## <a name="tabbed-control-bars-and-outlook-bars"></a>Sekmeli denetim çubukları ve Outlook çubukları
 
-[CMFCBaseTabCtrl sınıfı](../mfc/reference/cmfcbasetabctrl-class.md) sekmeli pencere çıkarılabilir sekmeler içeren temel işlevselliğini uygular. Kullanılacak bir `CMFCBaseTabCtrl` nesne, başlatmak bir [CBaseTabbedPane sınıfı](../mfc/reference/cbasetabbedpane-class.md) uygulamanızdaki. `CBaseTabbedPane` türetilen `CDockablePane` ve bir işaretçi tutar bir `CMFCBaseTabCtrl` nesne. `CBaseTabbedPane` Dock ve sekmeli denetim çubukları yeniden boyutlandırmak kullanıcıların sağlar. Kullanım [CDockablePane::AttachToTabWnd](../mfc/reference/cdockablepane-class.md#attachtotabwnd) yerleştirilmiş ve sekmeli denetim çubukları dinamik olarak oluşturmak için.
+[CMFCBaseTabCtrl sınıfı](reference/cmfcbasetabctrl-class.md) , bir sekmeli pencerenin temel işlevlerini çıkarılabilir sekmelerle uygular. Bir nesnesi kullanmak için `CMFCBaseTabCtrl` , uygulamanızda bir [CBaseTabbedPane sınıfı](reference/cbasetabbedpane-class.md) başlatın. `CBaseTabbedPane`, öğesinden türetilir `CDockablePane` ve bir nesneye yönelik bir işaretçi tutar `CMFCBaseTabCtrl` . , `CBaseTabbedPane` Kullanıcıların sekmeli Denetim çubuklarını yerleştirmeyi ve yeniden boyutlandırmasını sağlar. Yerleştirilmiş ve sekmeli Denetim çubuklarını dinamik olarak oluşturmak için [CDockablePane:: AttachToTabWnd](reference/cdockablepane-class.md#attachtotabwnd) kullanın.
 
-Outlook çubuğu denetimini de sekmeli çubuklara dayalıdır. [CMFCOutlookBar sınıfı](../mfc/reference/cmfcoutlookbar-class.md) türetilir `CBaseTabbedPane`. Outlook Çubuğu kullanma hakkında daha fazla bilgi için bkz. [CMFCOutlookBar sınıfı](../mfc/reference/cmfcoutlookbar-class.md).
+Outlook çubuğu denetimi de sekmeli çubuklara dayalıdır. [CMFCOutlookBar sınıfı](reference/cmfcoutlookbar-class.md) öğesinden türetilir `CBaseTabbedPane` . Outlook çubuğu kullanma hakkında daha fazla bilgi için bkz. [CMFCOutlookBar sınıfı](reference/cmfcoutlookbar-class.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../mfc/mfc-concepts.md)
+[Kavramlar](mfc-concepts.md)

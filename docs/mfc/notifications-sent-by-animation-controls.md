@@ -7,20 +7,20 @@ helpviewer_keywords:
 - controls [MFC], animation
 - animation controls [MFC], notifications
 ms.assetid: 584f5824-446b-4a1a-85f7-ef61842c8186
-ms.openlocfilehash: 68ede3bc55669a29eef192d38b29b8c1ab433e4b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: e9e5b94736de44d5cfeef81f5b78a759df3b8aa0
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69508026"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619904"
 ---
 # <a name="notifications-sent-by-animation-controls"></a>Animasyon Denetimlerinin Gönderdiği Bildirimler
 
-Animasyon denetimi ([CAnimateCtrl](../mfc/reference/canimatectrl-class.md)) iki farklı tür bildirim iletisi gönderir. Bildirimler [WM_COMMAND](/windows/win32/menurc/wm-command) iletileri biçiminde gönderilir.
+Animasyon denetimi ([CAnimateCtrl](reference/canimatectrl-class.md)) iki farklı tür bildirim iletisi gönderir. Bildirimler [WM_COMMAND](/windows/win32/menurc/wm-command) iletileri biçiminde gönderilir.
 
-[Acn_start](/windows/win32/Controls/acn-start) iletisi, animasyon denetimi bir klibi yürütmeye başladığında gönderilir. [ACN_STOP](/windows/win32/Controls/acn-stop) iletisi, animasyon denetimi bir klibi yürütmeyi bitirdiğinde veya durdurulduğunda gönderilir.
+[Acn_start](/windows/win32/Controls/acn-start) ileti, animasyon denetimi bir klibi yürütmeye başladığında gönderilir. [ACN_STOP](/windows/win32/Controls/acn-stop) ileti, animasyon denetimi bir klibi yürütmeyi bitirdiğinde veya durdurulduğunda gönderilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CAnimateCtrl Kullanma](../mfc/using-canimatectrl.md)<br/>
-[Denetimler](../mfc/controls-mfc.md)
+[CAnimateCtrl Kullanma](using-canimatectrl.md)<br/>
+[Denetimler](controls-mfc.md)

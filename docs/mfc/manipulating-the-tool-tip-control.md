@@ -5,36 +5,36 @@ helpviewer_keywords:
 - CToolTipCtrl class [MFC], manipulating tool tip attributes
 - tool tips [MFC], attributes
 ms.assetid: 3600afe5-712a-4b56-8456-96e85fe879af
-ms.openlocfilehash: d8c994748239871f17b878dd8ea7505a2a8a0b65
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61bc35e8b19ba7645736b939acac6cdaa6cb7316
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62226163"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84622419"
 ---
 # <a name="manipulating-the-tool-tip-control"></a>Araç İpucunu Denetimini Düzenleme
 
-Sınıf `CToolTipCtrl` bir Grup üyesinin çeşitli özniteliklerini denetleyen işlevleri sağlayan `CToolTipCtrl` nesne ve araç ipucu penceresi.
+Sınıfı, `CToolTipCtrl` `CToolTipCtrl` nesne ve araç ipucu penceresinin çeşitli özniteliklerini denetleyen bir üye işlevleri grubu sağlar.
 
-Başlangıç, açılan ve araç ipucu windows ayarlamak ve çağrı alınan süreleri reshow [GetDelayTime](../mfc/reference/ctooltipctrl-class.md#getdelaytime) ve [SetDelayTime](../mfc/reference/ctooltipctrl-class.md#setdelaytime).
+Araç ipucu pencerelerinin ilk, açılan ve resme süreleri [GetDelayTime](reference/ctooltipctrl-class.md#getdelaytime) ve [SetDelayTime](reference/ctooltipctrl-class.md#setdelaytime)çağrılarıyla ayarlanabilir ve geri alınabilir.
 
-Aşağıdaki işlevleri ile araç ipucu windows görünümünü değiştirin:
+Araç ipucu pencerelerinin görünüşünü aşağıdaki işlevlerle değiştirin:
 
-- [GetMargin](../mfc/reference/ctooltipctrl-class.md#getmargin) ve [SetMargin](../mfc/reference/ctooltipctrl-class.md#setmargin) alır ve ayarlar araç ipucu kenarlığı ve aracı arasındaki genişliği İpucu metni.
+- [GetMargin](reference/ctooltipctrl-class.md#getmargin) ve [SetMargin](reference/ctooltipctrl-class.md#setmargin) , araç ipucu kenarlığı ve araç ipucu metni arasındaki genişliği alır ve ayarlar.
 
-- [GetMaxTipWidth](../mfc/reference/ctooltipctrl-class.md#getmaxtipwidth) ve [SetMaxTipWidth](../mfc/reference/ctooltipctrl-class.md#setmaxtipwidth) aracı en fazla genişliğini alır ve ayarlar penceresi ipucu.
+- [Getmaxtıpwidth](reference/ctooltipctrl-class.md#getmaxtipwidth) ve [SetMaxTipWidth](reference/ctooltipctrl-class.md#setmaxtipwidth) , araç ipucu penceresinin en büyük genişliğini alır ve ayarlar.
 
-- [GetTipBkColor](../mfc/reference/ctooltipctrl-class.md#gettipbkcolor) ve [SetTipBkColor](../mfc/reference/ctooltipctrl-class.md#settipbkcolor) alır ve ayarlar arka plan rengi araç ipucu penceresi.
+- [GetTipBkColor](reference/ctooltipctrl-class.md#gettipbkcolor) ve [SetTipBkColor](reference/ctooltipctrl-class.md#settipbkcolor) araç ipucu penceresinin arka plan rengini alır ve ayarlar.
 
-- [GetTipTextColor](../mfc/reference/ctooltipctrl-class.md#gettiptextcolor) ve [SetTipTextColor](../mfc/reference/ctooltipctrl-class.md#settiptextcolor) alır ve ayarlar penceresi ipucu aracının metin rengi.
+- [GetTipTextColor](reference/ctooltipctrl-class.md#gettiptextcolor) ve [SetTipTextColor](reference/ctooltipctrl-class.md#settiptextcolor) , araç ipucu penceresinin metin rengini alır ve ayarlar.
 
-Araç ipucunu denetimini WM_LBUTTONXXX iletileri gibi önemli iletilerinin bildirim almak için sırayla, araç ipucu denetimi için iletileri düzenlemeniz gerekir. Bir çağrı yapmak için bu geçiş için en iyi yöntem olan [CToolTipCtrl::RelayEvent](../mfc/reference/ctooltipctrl-class.md#relayevent), `PreTranslateMessage` sahibi penceresinin işlevi. Aşağıdaki örnekte, olası bir yöntem gösterilmektedir (araç ipucunu denetimini varsayılarak çağrılır `m_ToolTip`):
+Araç ipucu denetimine WM_LBUTTONXXX iletileri gibi önemli mesajlar bildirilmeye yönelik iletileri araç ipucu denetimine geçirmeli. Bu geçiş için en iyi yöntem, sahip penceresinin işlevinde [CToolTipCtrl:: RelayEvent](reference/ctooltipctrl-class.md#relayevent)için bir çağrı yapmak içindir `PreTranslateMessage` . Aşağıdaki örnek, olası bir yöntemi gösterir (araç ipucu denetiminin çağrıldığı varsayılarak `m_ToolTip` ):
 
-[!code-cpp[NVC_MFCControlLadenDialog#41](../mfc/codesnippet/cpp/manipulating-the-tool-tip-control_1.cpp)]
+[!code-cpp[NVC_MFCControlLadenDialog#41](codesnippet/cpp/manipulating-the-tool-tip-control_1.cpp)]
 
-Hemen bir araç ipucu penceresi kaldırmak için çağrı [Pop](../mfc/reference/ctooltipctrl-class.md#pop) üye işlevi.
+Bir araç ipucu penceresini hemen kaldırmak için, [pop](reference/ctooltipctrl-class.md#pop) üye işlevini çağırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CToolTipCtrl Kullanma](../mfc/using-ctooltipctrl.md)<br/>
-[Denetimler](../mfc/controls-mfc.md)
+[CToolTipCtrl Kullanma](using-ctooltipctrl.md)<br/>
+[Denetimler](controls-mfc.md)

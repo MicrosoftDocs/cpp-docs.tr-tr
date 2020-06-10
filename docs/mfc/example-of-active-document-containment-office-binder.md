@@ -1,5 +1,5 @@
 ---
-title: 'Etkin belge kapsama örneği: Office Binder'
+title: 'Etkin Belge Kapsama Örneği: Office Binder'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - active documents [MFC], containers
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - Office Binder [MFC]
 - MFC COM, active document containment
 ms.assetid: 70dd8568-e8bc-44ac-bf5e-678767efe8e3
-ms.openlocfilehash: b06bc0f22ee71c8afbbc8feadca68895fc24a50b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe9ccb5b78d9a60c5b8b2a19fe0818a8e1682f00
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358870"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84623118"
 ---
-# <a name="example-of-active-document-containment-office-binder"></a>Etkin belge kapsama örneği: Office Binder
+# <a name="example-of-active-document-containment-office-binder"></a>Etkin Belge Kapsama Örneği: Office Binder
 
-Microsoft Office Binder etkin belge kapsayıcı örneğidir. Kapsayıcılar genellikle yaptığınız gibi bir Office Binder birincil iki bölme içerir. Sol bölmede, etkin bağlayıcı belgeleri karşılık gelen simgeler içerir. Her belge olarak adlandırılan bir *bölümü* içinde bağlayıcı. Örneğin, bir bağlayıcı Word belgeleri, PowerPoint dosyaları, Excel elektronik tabloları vb. içerebilir.
+Microsoft Office Bağlayıcısı etkin belge kapsayıcısına bir örnektir. Office Ciltçi, kapsayıcılar genellikle olduğu için iki birincil bölme içerir. Sol bölmede, Ciltçideki etkin belgelere karşılık gelen simgeler bulunur. Her belgeye bağlayıcı içinde *bölüm* denir. Örneğin, bir Ciltçi Word belgeleri, PowerPoint dosyaları, Excel elektronik tabloları vb. içerebilir.
 
-Sol bölmede bir simgeye tıklayarak karşılık gelen etkin belgeyi etkinleştirir. Bağlayıcı sağ bölmesinde, daha sonra şu anda seçili etkin belgenin içeriğini görüntüler.
+Sol bölmedeki bir simgeye tıklamak ilgili etkin belgeyi etkinleştirir. Cildin sağ bölmesi daha sonra seçili etkin olan belgenin içeriğini görüntüler.
 
-Açın ve bir Word belgesinde bir bağlayıcı etkinleştirmek, Word menü çubuğu ve araç çubuklarını görünümü çerçevenin üst kısmında görünür ve belge içeriğini herhangi bir sözcük komut veya araç kullanarak düzenleyebilirsiniz. Ancak, menü çubuğunda bir menü çubukları bağlayıcı'nın ve Word'ün birleşimidir. Bağlayıcı hem sözcük olduğundan **yardımcı** menüler, ilgili menüleri içeriğini birleştirilir. Etkin belge kapsayıcıları Office Binder gibi otomatik olarak sağlamak **yardımcı** menüsü birleştirme; daha fazla bilgi için bkz. [Yardım menüsü birleştirme](../mfc/help-menu-merging.md).
+Bir ciltçide Word belgesi açar ve etkinleştirirseniz, sözcük menü çubuğu ve araç çubukları görünüm çerçevesinin üst kısmında görünür ve belgenin içeriğini herhangi bir kelime komutunu veya aracı kullanarak düzenleyebilirsiniz. Ancak, menü çubuğu, cildin ve sözcüğünün menü çubuklarının bir birleşimidir. Hem Ciltçi hem de Word **Yardım** menülerini içerdiğinden, ilgili menülerin içeriği birleştirilir. Office Ciltçi gibi etkin belge kapsayıcıları otomatik olarak **Yardım** menüsü birleştirme sağlar; daha fazla bilgi için bkz. [Yardım menüsü birleştirme](help-menu-merging.md).
 
-Etkin belge başka bir uygulama türü, etkin belgenin uygulama türü, uyum sağlamak için bağlayıcı'nın arabirimi değişiklikleri seçtiğinizde. Örneğin, bir bağlayıcı bir Excel elektronik tablosu içeriyorsa, Excel elektronik tablosundaki bölüm seçtiğinizde bağlayıcı menülerde değiştirme gözlemleyeceksiniz.
+Başka bir uygulama türündeki etkin bir belgeyi seçtiğinizde, cildin arabirimi etkin belgenin uygulama türüne uyacak şekilde değişir. Örneğin, bir Ciltçi Excel elektronik tablosu içeriyorsa, Excel elektronik tablosu bölümünü seçtiğinizde Ciltçideki menülerin değiştiğini gözlemleyeceksiniz.
 
-Elbette, kapsayıcıların bağlayıcıları yanındaki diğer olası türü vardır. Dosya Gezgini'nde, sol bölmede bir ağaç denetimi sağ bölmede yer alan dosyalar şu anda seçili dizin görüntülerken bir sürücü veya ağ dizinleri hiyerarşik bir listesini görüntülemek için kullanma tipik bölmesinde çift arabirim kullanır. Bir Internet tarayıcısı türü bir çift bölmesinde arabirimi kullanarak yerine (örneğin, Microsoft Internet Explorer) kapsayıcı, genellikle tek bir çerçeveye sahiptir ve köprüler kullanarak gezinme sağlar.
+Tabii ki, ciltler yanında diğer olası kapsayıcı türleri vardır. Dosya Gezgini, sol bölmenin bir sürücü veya ağdaki bir dizin hiyerarşik listesini göstermek için ağaç denetimi kullandığı tipik çift bölgeli arabirimi kullanır, sağ bölmede ise o anda seçili olan dizinde bulunan dosyalar görüntülenir. Çift bölenden oluşan bir Internet tarayıcısı türü (Microsoft Internet Explorer gibi), genellikle tek bir kareye sahiptir ve köprüler aracılığıyla gezinme sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Etkin Belge Kapsaması](../mfc/active-document-containment.md)
+[Etkin belge kapsama](active-document-containment.md)

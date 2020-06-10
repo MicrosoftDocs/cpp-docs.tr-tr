@@ -16,61 +16,61 @@ helpviewer_keywords:
 - prerequisites, Internet client classes [MFC]
 - Gopher client applications [MFC]
 ms.assetid: c51d1dfe-260c-4228-8100-e4efd90e9599
-ms.openlocfilehash: 6246db7dfb2837f5d94fa51f8433b46722c43663
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aaf5756df69728e8ae89fb278bc0671bfc6840b7
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62218812"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84619827"
 ---
 # <a name="prerequisites-for-internet-client-classes"></a>Internet İstemci Sınıfları için Önkoşullar
 
-Bir Internet istemcisi (örneğin dosya okuma) tarafından gerçekleştirilen bazı eylemler önkoşul eylemlerinde (Internet bağlantısı oluşturma bu durumda). Aşağıdaki tablolar, bazı istemci eylemleri için önkoşulları listeler.
+Bir Internet istemcisi tarafından gerçekleştirilen bazı eylemler (örneğin, bir dosyayı okumak) önkoşul eylemlerine sahiptir (Bu durumda, bir Internet bağlantısı kurmak). Aşağıdaki tablolarda bazı istemci eylemlerinin önkoşulları listelenmektedir.
 
-### <a name="general-internet-url-ftp-gopher-or-http"></a>Genel Internet URL (FTP, Gopher veya HTTP)
+### <a name="general-internet-url-ftp-gopher-or-http"></a>Genel Internet URL 'SI (FTP, Gopher veya HTTP)
 
 |Eylem|Önkoşul|
 |------------|------------------|
-|Bağlantı kurun.|Oluşturma bir [Cınternetsession](../mfc/reference/cinternetsession-class.md) Internet istemci uygulaması temeli oluşturmak için.|
-|Bir URL'yi açabilir.|Bağlantı kurun. Çağrı [CInternetSession::OpenURL](../mfc/reference/cinternetsession-class.md#openurl). `OpenURL` İşlevi bir salt okunur kaynak nesnesi döndürür.|
-|Veri okuma URL'si.|URL'yi açın. Çağrı [CInternetFile::Read](../mfc/reference/cinternetfile-class.md#read).|
-|Internet'seçeneğini ayarlayın.|Bağlantı kurun. Çağrı [CInternetSession::SetOption](../mfc/reference/cinternetsession-class.md#setoption).|
-|Durum bilgileri ile çağrılacak bir işlev olarak ayarlayın.|Bağlantı kurun. Çağrı [CInternetSession::EnableStatusCallback](../mfc/reference/cinternetsession-class.md#enablestatuscallback). Geçersiz kılma [CInternetSession::OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) çağrıları işlemek için.|
+|Bir bağlantı kurun.|Bir Internet istemci uygulamasının temelini oluşturmak için bir [CInternetSession](reference/cinternetsession-class.md) oluşturun.|
+|URL 'YI açın.|Bir bağlantı kurun. [CInternetSession:: OpenURL 'yi](reference/cinternetsession-class.md#openurl)çağırın. `OpenURL`İşlev, salt okunurdur kaynak nesne döndürür.|
+|URL verilerini okuyun.|URL 'YI açın. [CInternetFile:: Read](reference/cinternetfile-class.md#read)öğesini çağırın.|
+|Internet seçeneğini ayarlayın.|Bir bağlantı kurun. [CInternetSession:: SetOption](reference/cinternetsession-class.md#setoption)çağrısı yapın.|
+|Durum bilgileriyle çağrılacak bir işlev ayarlayın.|Bir bağlantı kurun. [CInternetSession:: EnableStatusCallback](reference/cinternetsession-class.md#enablestatuscallback)öğesini çağırın. Çağrıları işlemek için [CInternetSession:: OnStatusCallback](reference/cinternetsession-class.md#onstatuscallback) öğesini geçersiz kılın.|
 
 ### <a name="ftp"></a>FTP
 
 |Eylem|Önkoşul|
 |------------|------------------|
-|Bir FTP bağlantı kurun.|Oluşturma bir [Cınternetsession](../mfc/reference/cinternetsession-class.md) bu Internet istemci uygulaması temeli olarak. Çağrı [CInternetSession::GetFtpConnection](../mfc/reference/cinternetsession-class.md#getftpconnection) oluşturmak için bir [CFtpConnection](../mfc/reference/cftpconnection-class.md) nesne.|
-|İlk kaynak bulun.|Bir FTP bağlantı kurun. Oluşturma bir [CFtpFileFind](../mfc/reference/cftpfilefind-class.md) nesne. Çağrı [CFtpFileFind::FindFile](../mfc/reference/cftpfilefind-class.md#findfile).|
-|Tüm kullanılabilir kaynakları numaralandırılamadı.|İlk dosyayı bulun. Çağrı [CFtpFileFind::FindNextFile](../mfc/reference/cftpfilefind-class.md#findnextfile) kadar false değerini döndürür.|
-|Bir FTP dosyasını açın.|Bir FTP bağlantı kurun. Çağrı [CFtpConnection::OpenFile](../mfc/reference/cftpconnection-class.md#openfile) oluşturmak ve açmak için bir [Cınternetfile](../mfc/reference/cinternetfile-class.md) nesne.|
-|Bir FTP dosyasını okuyun.|Bir FTP dosyasını okuma erişimi ile açın. Çağrı [CInternetFile::Read](../mfc/reference/cinternetfile-class.md#read).|
-|Bir FTP dosyasına yazar.|Bir FTP dosyası yazma erişimi ile açın. Çağrı [CInternetFile::Write](../mfc/reference/cinternetfile-class.md#write).|
-|Sunucusundaki istemcinin dizinine değiştirin.|Bir FTP bağlantı kurun. Çağrı [CFtpConnection::SetCurrentDirectory](../mfc/reference/cftpconnection-class.md#setcurrentdirectory).|
-|İstemcinin geçerli dizin sunucusundaki alın.|Bir FTP bağlantı kurun. Çağrı [CFtpConnection::GetCurrentDirectory](../mfc/reference/cftpconnection-class.md#getcurrentdirectory).|
+|FTP bağlantısı kurun.|Bu Internet istemci uygulamasının temeli olarak bir [CInternetSession](reference/cinternetsession-class.md) oluşturun. [CInternetSession:: GetFtpConnection](reference/cinternetsession-class.md#getftpconnection) öğesini çağırıp [CFtpConnection](reference/cftpconnection-class.md) nesnesi oluşturun.|
+|İlk kaynağı bulun.|FTP bağlantısı kurun. [CFtpFileFind](reference/cftpfilefind-class.md) nesnesi oluşturun. [CFtpFileFind:: FindFile](reference/cftpfilefind-class.md#findfile)öğesini çağırın.|
+|Tüm kullanılabilir kaynakları numaralandırın.|İlk dosyayı bulun. FALSE değerini alıncaya kadar [CFtpFileFind:: FindNextFile](reference/cftpfilefind-class.md#findnextfile) öğesini çağırın.|
+|Bir FTP dosyası açın.|FTP bağlantısı kurun. [CInternetFile](reference/cinternetfile-class.md) nesnesi oluşturup açmak Için [CFtpConnection:: OpenFile](reference/cftpconnection-class.md#openfile) öğesini çağırın.|
+|FTP dosyası okuyun.|Okuma erişimi olan bir FTP dosyası açın. [CInternetFile:: Read](reference/cinternetfile-class.md#read)öğesini çağırın.|
+|FTP dosyasına yazın.|Yazma erişimi olan bir FTP dosyası açın. [CInternetFile:: Write](reference/cinternetfile-class.md#write)öğesini çağırın.|
+|Sunucuda istemcinin dizinini değiştirin.|FTP bağlantısı kurun. [CFtpConnection:: SetCurrentDirectory](reference/cftpconnection-class.md#setcurrentdirectory)öğesini çağırın.|
+|İstemcinin geçerli dizinini sunucuda alın.|FTP bağlantısı kurun. [CFtpConnection:: GetCurrentDirectory](reference/cftpconnection-class.md#getcurrentdirectory)öğesini çağırın.|
 
 ### <a name="http"></a>HTTP
 
 |Eylem|Önkoşul|
 |------------|------------------|
-|Bir HTTP bağlantısı kurun.|Oluşturma bir [Cınternetsession](../mfc/reference/cinternetsession-class.md) bu Internet istemci uygulaması temeli olarak. Çağrı [CInternetSession::GetHttpConnection](../mfc/reference/cinternetsession-class.md#gethttpconnection) oluşturmak için bir [CHttpConnection](../mfc/reference/chttpconnection-class.md) nesne.|
-|HTTP dosyasını açın.|Bir HTTP bağlantısı kurun. Çağrı [CHttpConnection::OpenRequest](../mfc/reference/chttpconnection-class.md#openrequest) oluşturmak için bir [CHttpFile](../mfc/reference/chttpfile-class.md) nesne. Çağrı [CHttpFile::AddRequestHeaders](../mfc/reference/chttpfile-class.md#addrequestheaders). Çağrı [CHttpFile::SendRequest](../mfc/reference/chttpfile-class.md#sendrequest).|
-|HTTP dosyasını okuyun.|HTTP dosyasını açın. Çağrı [CInternetFile::Read](../mfc/reference/cinternetfile-class.md#read).|
-|Bir HTTP isteği hakkında bilgi alın.|Bir HTTP bağlantısı kurun. Çağrı [CHttpConnection::OpenRequest](../mfc/reference/chttpconnection-class.md#openrequest) oluşturmak için bir [CHttpFile](../mfc/reference/chttpfile-class.md) nesne. Çağrı [CHttpFile::QueryInfo](../mfc/reference/chttpfile-class.md#queryinfo).|
+|HTTP bağlantısı kurun.|Bu Internet istemci uygulamasının temeli olarak bir [CInternetSession](reference/cinternetsession-class.md) oluşturun. [CHttpConnection](reference/chttpconnection-class.md) nesnesi oluşturmak Için [CInternetSession:: GetHttpConnection](reference/cinternetsession-class.md#gethttpconnection) öğesini çağırın.|
+|Bir HTTP dosyası açın.|HTTP bağlantısı kurun. [CHttpFile](reference/chttpfile-class.md) nesnesi oluşturmak için [CHttpConnection:: OpenRequest](reference/chttpconnection-class.md#openrequest) çağırın. [CHttpFile:: AddRequestHeaders](reference/chttpfile-class.md#addrequestheaders)öğesini çağırın. [CHttpFile:: SendRequest](reference/chttpfile-class.md#sendrequest)öğesini çağırın.|
+|Bir HTTP dosyası okuyun.|Bir HTTP dosyası açın. [CInternetFile:: Read](reference/cinternetfile-class.md#read)öğesini çağırın.|
+|Bir HTTP isteği hakkında bilgi alın.|HTTP bağlantısı kurun. [CHttpFile](reference/chttpfile-class.md) nesnesi oluşturmak için [CHttpConnection:: OpenRequest](reference/chttpconnection-class.md#openrequest) çağırın. [CHttpFile:: QueryInfo](reference/chttpfile-class.md#queryinfo)çağırın.|
 
 ### <a name="gopher"></a>Gopher
 
 |Eylem|Önkoşul|
 |------------|------------------|
-|Bir gopher bağlantı kurun.|Oluşturma bir [Cınternetsession](../mfc/reference/cinternetsession-class.md) bu Internet istemci uygulaması temeli olarak. Çağrı [CInternetSession::GetGopherConnection](../mfc/reference/cinternetsession-class.md#getgopherconnection) oluşturmak için bir [CGopherConnection](../mfc/reference/cgopherconnection-class.md).|
-|İlk dosyayı geçerli dizinde bulun.|Bir gopher bağlantı kurun. Oluşturma bir [CGopherFileFind](../mfc/reference/cgopherfilefind-class.md) nesne. Çağrı [CGopherConnection::CreateLocator](../mfc/reference/cgopherconnection-class.md#createlocator) oluşturmak için bir [CGopherLocator](../mfc/reference/cgopherlocator-class.md) nesne. Bulucu için geçirmek [CGopherFileFind::FindFile](../mfc/reference/cgopherfilefind-class.md#findfile). Çağrı [CGopherFileFind::GetLocator](../mfc/reference/cgopherfilefind-class.md#getlocator) daha sonra ihtiyacınız varsa, bir dosyanın Bulucu almak için.|
-|Tüm kullanılabilir dosyaları sıralar.|İlk dosyayı bulun. Çağrı [CGopherFileFind::FindNextFile](../mfc/reference/cgopherfilefind-class.md#findnextfile) kadar false değerini döndürür.|
-|Bir gopher dosyasını açın.|Bir gopher bağlantı kurun. Bir gopher ile Bulucu [CGopherConnection::CreateLocator](../mfc/reference/cgopherconnection-class.md#createlocator) veya bulma ile bir Bulucu [CGopherFileFind::GetLocator](../mfc/reference/cgopherfilefind-class.md#getlocator). Çağrı [CGopherConnection::OpenFile](../mfc/reference/cgopherconnection-class.md#openfile).|
-|Bir gopher dosyasını okuyun.|Bir gopher dosyasını açın. Kullanım [CGopherFile](../mfc/reference/cgopherfile-class.md).|
+|Gopher bağlantısı kurun.|Bu Internet istemci uygulamasının temeli olarak bir [CInternetSession](reference/cinternetsession-class.md) oluşturun. [CInternetSession:: GetGopherConnection](reference/cinternetsession-class.md#getgopherconnection) öğesini çağırıp bir [CGopherConnection](reference/cgopherconnection-class.md)oluşturun.|
+|Geçerli dizindeki ilk dosyayı bulun.|Gopher bağlantısı kurun. Bir [CGopherFileFind](reference/cgopherfilefind-class.md) nesnesi oluşturun. Bir [CGopherLocator](reference/cgopherlocator-class.md) nesnesi oluşturmak Için [CGopherConnection:: CreateLocator](reference/cgopherconnection-class.md#createlocator) öğesini çağırın. Bulucuyu [CGopherFileFind:: FindFile](reference/cgopherfilefind-class.md#findfile)öğesine geçirin. Daha sonra ihtiyacınız varsa, bir dosyanın Konumlandırıcı 'sını almak için [CGopherFileFind:: GetLocator](reference/cgopherfilefind-class.md#getlocator) öğesini çağırın.|
+|Kullanılabilir tüm dosyaları numaralandırın.|İlk dosyayı bulun. FALSE değerini alıncaya kadar [CGopherFileFind:: FindNextFile](reference/cgopherfilefind-class.md#findnextfile) öğesini çağırın.|
+|Bir gopher dosyası açın.|Gopher bağlantısı kurun. [CGopherConnection:: CreateLocator](reference/cgopherconnection-class.md#createlocator) ile bir Gopher Bulucu oluşturun veya [CGopherFileFind:: GetLocator](reference/cgopherfilefind-class.md#getlocator)ile bir bulucu bulun. [CGopherConnection:: OpenFile](reference/cgopherconnection-class.md#openfile)çağrısı yapın.|
+|Bir gopher dosyası okuyun.|Bir gopher dosyası açın. [CGopherFile](reference/cgopherfile-class.md)kullanın.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[Internet İstemci Uygulamaları Oluşturmak için MFC Sınıfları](../mfc/mfc-classes-for-creating-internet-client-applications.md)<br/>
-[MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+[Win32 Internet Uzantıları (Winınet)](win32-internet-extensions-wininet.md)<br/>
+[Internet Istemci uygulamaları oluşturmak için MFC sınıfları](mfc-classes-for-creating-internet-client-applications.md)<br/>
+[MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](writing-an-internet-client-application-using-mfc-wininet-classes.md)

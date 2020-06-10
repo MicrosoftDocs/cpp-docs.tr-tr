@@ -15,84 +15,84 @@ helpviewer_keywords:
 - versioning ActiveX controls
 - wVerMajor global constant
 ms.assetid: 9d57c290-dd8c-4853-b552-6f17f15ebedd
-ms.openlocfilehash: d804486b612906f537b6ed1665dfc0cec5149826
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c06299f2fc7409476e4f5e5744ea11c962e3b173
+ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364543"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84621196"
 ---
 # <a name="mfc-activex-controls-serializing"></a>MFC ActiveX Denetimleri: Seri Hale Getirme
 
-Bu makalede, ActiveX denetiminin nasıl serileştirilen anlatılmaktadır. Serileştirme, disk dosyası gibi kalıcı bir depolama ortamına okuma veya yazma işlemidir. Microsoft Hazırlık Sınıfı (MFC) Kitaplığı, sınıfta `CObject`serileştirme için yerleşik destek sağlar. `COleControl`bu desteği bir özellik değiştirme mekanizması kullanarak ActiveX denetimlerine genişletir.
+Bu makalede bir ActiveX denetiminin serileştirilme yöntemi anlatılmaktadır. Serileştirme, disk dosyası gibi kalıcı bir depolama ortamını okuma veya yazma işlemidir. Microsoft Foundation Class (MFC) kitaplığı, sınıfında serileştirme için yerleşik destek sağlar `CObject` . `COleControl`Özellik değişim mekanizması kullanılarak bu desteği ActiveX denetimlerine genişletir.
 
 >[!IMPORTANT]
-> ActiveX, yeni geliştirme için kullanılmaması gereken eski bir teknolojidir. ActiveX'in yerini alabilecek modern teknolojiler hakkında daha fazla bilgi için [ActiveX Denetimleri'ne](activex-controls.md)bakın.
+> ActiveX, yeni geliştirme için kullanılması gereken eski bir teknolojidir. ActiveX 'in yerini alan modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimleri](activex-controls.md).
 
-ActiveX denetimleri için serileştirme [COleControl::DoPropExchange](../mfc/reference/colecontrol-class.md#dopropexchange)geçersiz kılınarak uygulanır. Denetim nesnesinin yüklenmesi ve kaydedilmesi sırasında çağrılan bu işlev, uygulanan tüm özellikleri bir üye değişken veya değişiklik bildirimi ile bir üye değişkenle depolar.
+ActiveX denetimleri için serileştirme, [Coelcontrol::D oPropExchange](reference/colecontrol-class.md#dopropexchange)tarafından geçersiz kılınarak uygulanır. Denetim nesnesinin yüklenmesi ve kaydedilmesi sırasında çağrılan bu işlev, bir üye değişkeni veya değişiklik bildirimi olan bir üye değişkeni ile uygulanan tüm özellikleri depolar.
 
-Aşağıdaki konular ActiveX denetiminin serileştirilmesiyle ilgili temel konuları kapsamaktadır:
+Aşağıdaki konularda bir ActiveX denetiminin serileştirilmesi ile ilgili başlıca sorunlar ele alınmaktadır:
 
-- Denetim `DoPropExchange` nesnenizi seri hale getirmek için işlev uygulama
+- `DoPropExchange`Denetim nesneniz seri hale getirmek için işlev uygulama
 
-- [Serileştirme İşlemini Özelleştirme](#_core_customizing_the_default_behavior_of_dopropexchange)
+- [Serileştirme Işlemini özelleştirme](#_core_customizing_the_default_behavior_of_dopropexchange)
 
-- [Sürüm Desteği Uygulama](#_core_implementing_version_support)
+- [Sürüm desteğini uygulama](#_core_implementing_version_support)
 
-## <a name="implementing-the-dopropexchange-function"></a><a name="_core_implementing_the_dopropexchange_function"></a>DoPropExchange Fonksiyonunun Uygulanması
+## <a name="implementing-the-dopropexchange-function"></a><a name="_core_implementing_the_dopropexchange_function"></a>DoPropExchange Işlevini uygulama
 
-Denetim projesini oluşturmak için ActiveX Denetim Sihirbazı'nı kullandığınızda, [COleControl::DoPropExchange'in](../mfc/reference/colecontrol-class.md#dopropexchange)varsayılan uygulaması da dahil olmak üzere denetim sınıfına otomatik olarak birkaç varsayılan işleyici işlevi eklenir. Aşağıdaki örnekte ActiveX Denetim Sihirbazı ile oluşturulan sınıflara eklenen kod gösterilmektedir:
+Denetim projesini oluşturmak için ActiveX Denetim Sihirbazı 'Nı kullandığınızda, [COleControl::D oPropExchange](reference/colecontrol-class.md#dopropexchange)'in varsayılan uygulanması dahil olmak üzere, çeşitli varsayılan işleyici işlevleri denetim sınıfına otomatik olarak eklenir. Aşağıdaki örnek, ActiveX Denetim Sihirbazı ile oluşturulan sınıflara eklenen kodu gösterir:
 
-[!code-cpp[NVC_MFC_AxUI#43](../mfc/codesnippet/cpp/mfc-activex-controls-serializing_1.cpp)]
+[!code-cpp[NVC_MFC_AxUI#43](codesnippet/cpp/mfc-activex-controls-serializing_1.cpp)]
 
-Bir özelliği kalıcı hale getirmek `DoPropExchange` istiyorsanız, özellik değişimi işlevine bir çağrı ekleyerek değiştirin. Aşağıdaki örnek, CircleShape özelliğinin **VARSAYıLAN TRUE**değerine sahip olduğu özel bir Boolean CircleShape özelliğinin serileştirilmesini gösterir:
+Bir özelliği kalıcı hale getirmek istiyorsanız, `DoPropExchange` Özellik değişim işlevine bir çağrı ekleyerek değiştirin. Aşağıdaki örnek, bir özel Boolean CircleShape özelliğinin serileştirmesini gösterir; burada, CircleShape özelliğinin varsayılan değeri **true 'dur**:
 
-[!code-cpp[NVC_MFC_AxSer#1](../mfc/codesnippet/cpp/mfc-activex-controls-serializing_2.cpp)]
-[!code-cpp[NVC_MFC_AxSer#2](../mfc/codesnippet/cpp/mfc-activex-controls-serializing_3.cpp)]
+[!code-cpp[NVC_MFC_AxSer#1](codesnippet/cpp/mfc-activex-controls-serializing_2.cpp)]
+[!code-cpp[NVC_MFC_AxSer#2](codesnippet/cpp/mfc-activex-controls-serializing_3.cpp)]
 
-Aşağıdaki tablo, denetimin özelliklerini seri hale getirmek için kullanabileceğiniz olası özellik değişimi işlevlerini listeler:
+Aşağıdaki tabloda, denetimin özelliklerini seri hale getirmek için kullanabileceğiniz olası Özellik değişim işlevleri listelenmektedir:
 
-|Özellik değiştirme işlevleri|Amaç|
+|Özellik değişim işlevleri|Amaç|
 |---------------------------------|-------------|
-|**PX_Blob ( )**|Bir tür İkili Büyük Nesne (BLOB) veri özelliğini serileştirir.|
-|**PX_Bool ( )**|Boolean türüne serileştirir.|
-|**PX_Color( )**|Bir tür renk özelliğini seri hale leştirir.|
-|**PX_Currency ( )**|**Cy** (para birimi) özelliğini seri hale leştirir.|
-|**PX_Double ( )**|Seri bir tür **çift** özelliği.|
-|**PX_Font ( )**|Yazı Tipi türü özelliğini seri hale leştirir.|
-|**PX_Float ( )**|Bir tür **float** özelliğini seri hale leştirir.|
-|**PX_IUnknown ( )**|Türünde `LPUNKNOWN`bir özelliği serileştirir.|
-|**PX_Long ( )**|Bir tür **uzun** özelliği serializes.|
-|**PX_Picture ( )**|Bir tür Resim özelliğini seri hale leştirir.|
-|**PX_Short ( )**|Bir tür **kısa** özelliğiserializes.|
-|**PXstring( )**|Bir tür `CString` özelliğini seri hale leştirir.|
-|**PX_ULong ( )**|Bir Tür **ULONG** özelliğini seri hale leştirir.|
-|**PX_UShort ( )**|Bir Tür **USHORT** özelliğini seri hale leştirir.|
+|**PX_Blob ()**|Tür Ikili büyük nesne (BLOB) veri özelliğini seri hale getirir.|
+|**PX_Bool ()**|Bir tür Boolean özelliğini seri hale getirir.|
+|**PX_Color ()**|Bir tür rengi özelliğini seri hale getirir.|
+|**PX_Currency ()**|Bir tür **Cy** (para birimi) özelliğini seri hale getirir.|
+|**PX_Double ()**|Bir tür **Double** özelliğini seri hale getirir.|
+|**PX_Font ()**|Yazı tipi türü özelliğini seri hale getirir.|
+|**PX_Float ()**|Bir tür **float** özelliğini seri hale getirir.|
+|**PX_IUnknown ()**|Türünde bir özelliği seri hale getirir `LPUNKNOWN` .|
+|**PX_Long ()**|Tür **Long** özelliğini seri hale getirir.|
+|**PX_Picture ()**|Bir tür resim özelliğini seri hale getirir.|
+|**PX_Short ()**|Bir tür **Short** özelliğini seri hale getirir.|
+|**PXstring ()**|Bir tür özelliğini seri hale getirir `CString` .|
+|**PX_ULong ()**|Bir tür **ulong** özelliği seri hale getirir.|
+|**PX_UShort ()**|Bir tür **ushort** özelliğini seri hale getirir.|
 
-Bu özellik değiştirme işlevleri hakkında daha fazla bilgi için, *MFC Başvurusu'nda* [OLE Denetimlerinin Kalıcılığı'na](../mfc/reference/persistence-of-ole-controls.md) bakın.
+Bu özellik değişim işlevleri hakkında daha fazla bilgi için bkz. *MFC başvurusunda* [OLE denetimlerinin kalıcılığı](reference/persistence-of-ole-controls.md) .
 
-## <a name="customizing-the-default-behavior-of-dopropexchange"></a><a name="_core_customizing_the_default_behavior_of_dopropexchange"></a>DoPropExchange'in Varsayılan Davranışını Özelleştirme
+## <a name="customizing-the-default-behavior-of-dopropexchange"></a><a name="_core_customizing_the_default_behavior_of_dopropexchange"></a>DoPropExchange 'in varsayılan davranışını özelleştirme
 
-Varsayılan uygulama `DoPropertyExchange` (önceki konuda gösterildiği gibi) taban sınıfa `COleControl`bir çağrı yapar. `COleControl`Bu, yalnızca denetimin özel özelliklerini serihale etmekten daha fazla depolama alanı kullanan, otomatik olarak desteklenen özellikler kümesini seri hale leştirir. Bu çağrıyı kaldırmak, nesnenizin yalnızca önemli olduğunu düşündüğünüz özellikleri seri hale leştirmesine olanak tanır. Denetimin uyguladığı herhangi bir stok özelliği, denetim nesnesini kaydederken veya yüklerken, onlar için **açıkça PX_** çağrıları eklemediğiniz sürece serileştirilmez.
+Varsayılan uygulamasının `DoPropertyExchange` (önceki konu başlığında gösterildiği gibi) temel sınıfa bir çağrı yapar `COleControl` . Bu, tarafından otomatik olarak desteklenen özellikler kümesini serileştirerek `COleControl` , yalnızca denetimin özel özelliklerini serileştirilenden daha fazla depolama alanı kullanır. Bu çağrıyı kaldırmak, nesnenizin yalnızca önemli olduğunu düşündüğünüz özellikleri serileştirmek için izin verir. Tüm hisse senedi özellik durumları, bu denetim nesnesi için açıkça **px_** çağrılar eklemediğiniz takdirde denetim nesnesi kaydedilirken veya yüklenirken serileştirilmez.
 
-## <a name="implementing-version-support"></a><a name="_core_implementing_version_support"></a>Sürüm Desteği Uygulama
+## <a name="implementing-version-support"></a><a name="_core_implementing_version_support"></a>Sürüm desteğini uygulama
 
-Sürüm desteği, yeni kalıcı özellikler eklemek için gözden geçirilmiş bir ActiveX denetimi sağlar ve denetimin önceki bir sürümü tarafından oluşturulan kalıcı durumu algılamak ve yüklemek için de kullanılabilir. Bir denetimsürümünü kalıcı verilerinin bir parçası olarak kullanılabilir hale getirmek için, denetimin `DoPropExchange` işlevinde [COleControl::ExchangeVersion'u](../mfc/reference/colecontrol-class.md#exchangeversion) arayın. ActiveX Denetim Sihirbazı kullanılarak ActiveX denetimi oluşturulduysa, bu çağrı otomatik olarak eklenir. Sürüm desteği gerekmese kaldırılabilir. Ancak, sürüm desteğinin sağladığı ek esneklik için denetim boyutundaki maliyet çok küçüktür (4 bayt).
+Sürüm desteği, düzeltilmiş bir ActiveX denetiminin yeni kalıcı özellikler eklemesine olanak sağlar ve denetimin önceki bir sürümü tarafından oluşturulan kalıcı durumu tespit edebilir ve yükleyebilir. Bir denetimin sürümünü kalıcı verilerin bir parçası olarak kullanılabilir hale getirmek için, denetimin işlevinde [Cotacontrol:: ExchangeVersion](reference/colecontrol-class.md#exchangeversion) öğesini çağırın `DoPropExchange` . ActiveX denetimi ActiveX denetimi Sihirbazı kullanılarak oluşturulduysa bu çağrı otomatik olarak eklenir. Sürüm desteği gerekmiyorsa kaldırılabilir. Ancak, Denetim boyutu maliyeti, sürüm desteğinin sağladığı ek esneklik için çok küçüktür (4 bayt).
 
-Denetim ActiveX Denetim Sihirbazı ile oluşturulmamadıysa, `COleControl::ExchangeVersion` işlevinizin `DoPropExchange` başına aşağıdaki satırı ekleyerek (aramadan `COleControl::DoPropExchange`önce):
+Denetim ActiveX Denetim Sihirbazı ile oluşturulmadıysa, `COleControl::ExchangeVersion` işlevinizin başına aşağıdaki satırı ekleyerek öğesine bir çağrı ekleyin `DoPropExchange` (çağrısından önce `COleControl::DoPropExchange` ):
 
-[!code-cpp[NVC_MFC_AxSer#1](../mfc/codesnippet/cpp/mfc-activex-controls-serializing_2.cpp)]
-[!code-cpp[NVC_MFC_AxSer#3](../mfc/codesnippet/cpp/mfc-activex-controls-serializing_4.cpp)]
+[!code-cpp[NVC_MFC_AxSer#1](codesnippet/cpp/mfc-activex-controls-serializing_2.cpp)]
+[!code-cpp[NVC_MFC_AxSer#3](codesnippet/cpp/mfc-activex-controls-serializing_4.cpp)]
 
-Herhangi bir **DWORD'u** sürüm numarası olarak kullanabilirsiniz. ActiveX Denetim Sihirbazı tarafından `_wVerMinor` `_wVerMajor` oluşturulan projeler varsayılan olarak. Bunlar, projenin ActiveX denetim sınıfının uygulama dosyasında tanımlanan genel sabitlerdir. İşlevinizin `DoPropExchange` geri kalanında, kaydettiğiniz veya aldığınız sürümü almak için istediğiniz zaman [CPropExchange::GetVersion'u](../mfc/reference/cpropexchange-class.md#getversion) arayabilirsiniz.
+Sürüm numarası olarak herhangi bir **DWORD** kullanabilirsiniz. ActiveX Denetim Sihirbazı tarafından oluşturulan projeler `_wVerMinor` `_wVerMajor` Varsayılan olarak ve kullanır. Bunlar, projenin ActiveX denetim sınıfının uygulama dosyasında tanımlanan genel sabitlerdir. `DoPropExchange`İşlevinizin geri kalanında, kaydettiğiniz veya aldığınız sürümü almak için istediğiniz zaman [CPropExchange:: GetVersion](reference/cpropexchange-class.md#getversion) çağrısı yapabilirsiniz.
 
-Aşağıdaki örnekte, bu örnek denetiminin sürüm 1 yalnızca bir "ReleaseDate" özelliği vardır. Sürüm 2 bir "OriginalDate" özelliği ekler. Denetim, kalıcı durumu eski sürümden yüklemesi için talimat vereliyse, yeni özellik için üye değişkeni varsayılan bir değere başolarak alır.
+Aşağıdaki örnekte, bu örnek denetimin 1. sürümünde yalnızca bir "ReleaseDate" özelliği bulunur. Sürüm 2 bir "OriginalDate" özelliği ekler. Denetimin kalıcı durumu eski sürümden yüklemesi istenirse, yeni özelliğin üye değişkenini varsayılan bir değere başlatır.
 
-[!code-cpp[NVC_MFC_AxSer#4](../mfc/codesnippet/cpp/mfc-activex-controls-serializing_5.cpp)]
-[!code-cpp[NVC_MFC_AxSer#3](../mfc/codesnippet/cpp/mfc-activex-controls-serializing_4.cpp)]
+[!code-cpp[NVC_MFC_AxSer#4](codesnippet/cpp/mfc-activex-controls-serializing_5.cpp)]
+[!code-cpp[NVC_MFC_AxSer#3](codesnippet/cpp/mfc-activex-controls-serializing_4.cpp)]
 
-Varsayılan olarak, bir denetim eski verileri en son biçime "dönüştürür". Örneğin, bir denetimin sürüm 2 sürümü, sürüm 1 tarafından kaydedilen verileri yüklerse, yeniden kaydedildiğinde sürüm 2 biçimini yazar. Denetimin son okuma biçiminde veri kaydetmesini istiyorsanız, ararken `ExchangeVersion` **FALSE'u** üçüncü bir parametre olarak geçirin. Bu üçüncü parametre isteğe bağlıdır ve varsayılan olarak **TRUE'dur.**
+Varsayılan olarak, bir denetim "eski verileri en son biçime dönüştürür". Örneğin, bir denetimin 2. sürümü sürüm 1 tarafından kaydedilen verileri yüklerse, yeniden kaydedildiğinde sürüm 2 biçimini yazar. Denetimin verileri son okuma biçiminde kaydetmesini istiyorsanız, çağrılırken üçüncü parametre olarak **yanlış** geçirin `ExchangeVersion` . Bu üçüncü parametre isteğe bağlıdır ve varsayılan olarak **true** 'dur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Kontrolleri](../mfc/mfc-activex-controls.md)
+[MFC ActiveX denetimleri](mfc-activex-controls.md)
