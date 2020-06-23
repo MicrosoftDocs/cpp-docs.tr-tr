@@ -1,21 +1,21 @@
 ---
 title: WINVER ve _WIN32_WINNT güncelleştirmesi
-description: Yükseltilen Visual Studio C++ projelerindeki WINVER ve _WIN32_WINNT makrolarını güncelleştirme ve güncelleştirme.
-ms.date: 01/22/2020
+description: Yükseltilen Visual Studio C++ projelerinde WINVER ve _WIN32_WINNT makrolarını güncelleştirme ve güncelleştirme.
+ms.date: 06/19/2020
 helpviewer_keywords:
 - WINVER in an upgraded Visual Studio C++ project
 - _WIN32_WINNT in an upgraded Visual Studio C++ project
 ms.assetid: 6a1f1d66-ae0e-48a7-81c3-524d8e8f3447
-ms.openlocfilehash: b81c7967732c7b0c23ff0eb73d2a866a9b33713b
-ms.sourcegitcommit: b67b08472b6f1ee8f1c5684bba7056d3e0fc745f
+ms.openlocfilehash: a0faed612517bf26cd89473e1aef248fb9e7b33e
+ms.sourcegitcommit: 493fd8747f832e1facb9a76c437a25a5c9fb55f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76725702"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85141060"
 ---
 # <a name="update-winver-and-_win32_winnt"></a>WINVER ve _WIN32_WINNT güncelleştirmesi
 
-Windows SDK kullandığınızda, kodunuzun hangi Windows sürümlerini çalıştırabileceği belirtebilirsiniz. Önişlemci makroları **WINVER** ve **_WIN32_WINNT** kodunuzun desteklediği en düşük işletim sistemi sürümünü belirtir. Visual Studio ve Microsoft C++ derleyicisi, WINDOWS 7 SP1 ve üstünü hedeflemesini destekler. Daha eski araç kümeleri Windows XP SP4, Windows Server 2003 SP4, Vista ve Windows Server 2008 için destek içerir. Windows 95, Windows 98, Windows ME, Windows NT ve Windows 2000 desteklenmez.
+Windows SDK kullandığınızda, kodunuzun hangi Windows sürümlerini çalıştırabileceği belirtebilirsiniz. Önişlemci makroları **WINVER** ve **_WIN32_WINNT** kodunuzun desteklediği en düşük işletim sistemi sürümünü belirtir. Visual Studio ve Microsoft C++ derleyicisi, Windows 7 SP1 ve üstünü hedeflemesini destekler. Daha eski araç kümeleri Windows XP SP2, Windows Server 2003 SP1, Vista ve Windows Server 2008 için destek içerir. Windows 95, Windows 98, Windows ME, Windows NT ve Windows 2000 desteklenmez.
 
 Eski bir projeyi yükselttiğinizde, **WINVER** veya **_WIN32_WINNT** makrolarınızı güncelleştirmeniz gerekebilir. Windows 'un desteklenmeyen bir sürümü için değerler atanırsa, bu makrolarla ilgili derleme hataları görebilirsiniz.
 
@@ -92,10 +92,10 @@ Baktığınız *SDKDDKVer. h* dosyasında listelenen bu Windows sürümlerinin t
 > [!NOTE]
 > Uygulamanıza iç MFC üstbilgileri eklerseniz, değerlerin çalışması garanti edilmez.
 
-Ayrıca, bu makroyu `/D` derleyici seçeneğini kullanarak da tanımlayabilirsiniz. Daha fazla bilgi için bkz. [/d (Önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md).
+Bu makroyu derleyici seçeneğini kullanarak da tanımlayabilirsiniz `/D` . Daha fazla bilgi için bkz. [/d (Önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md).
 
 Bu makroların anlamları hakkında daha fazla bilgi için bkz. [Windows üst bilgilerini kullanma](/windows/win32/WinProg/using-the-windows-headers).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Görsel C++ değişiklik geçmişi](../porting/visual-cpp-change-history-2003-2015.md)
+[Visual C++ değişiklik geçmişi](../porting/visual-cpp-change-history-2003-2015.md)
