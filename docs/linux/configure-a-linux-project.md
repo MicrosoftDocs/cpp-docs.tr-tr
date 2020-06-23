@@ -1,13 +1,13 @@
 ---
 title: Visual Studio 'da C++ Linux projesi yapılandırma
-ms.date: 06/11/2019
+ms.date: 06/22/2020
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: c60fd678caef20d8b5a715b0e40bba6a37407709
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 6bc38e925e366804c8fe37604066b7cc20e04f15
+ms.sourcegitcommit: f9344b09a734e8b05a7494415991a22b7aec5ae8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623590"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85269747"
 ---
 # <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
 
@@ -78,7 +78,7 @@ Bu bölüm, WSL hedeflenirken uygulanmaz.
 
 Uzak sistemlerde derlerken, geliştirme BILGISAYARıNıZDAKI kaynak dosyaları Linux bilgisayara kopyalanır ve burada derlenir. Varsayılan olarak, Visual Studio projesindeki tüm kaynaklar yukarıdaki ayarlarda ayarlanan konumlara kopyalanır. Ancak, ek kaynaklar da listeye eklenebilir veya kaynakları kopyalama işlemi, derleme görevleri dosyası projesi için varsayılan olan tamamen kapatılabilir.
 
-- **Kopyalanacak kaynaklar** , uzak bilgisayara hangi kaynakların kopyalanacağını belirler. Varsayılan olarak, ** \@ (sourcestocopyuzaktan)** , projedeki tüm kaynak kod dosyalarını varsayılan olarak alır, ancak resimler gibi herhangi bir varlık/kaynak dosyası içermez.
+- **Kopyalanacak kaynaklar** , uzak bilgisayara hangi kaynakların kopyalanacağını belirler. Varsayılan olarak, ** \@ (sourcestocopyuzaktan)** , projedeki tüm kaynak kodu dosyaları için varsayılan olarak, ancak görüntü gibi herhangi bir varlık/kaynak dosyası içermez.
 
 - Kaynak dosyaların uzak bilgisayara kopyalanmasını etkinleştirmek ve devre dışı bırakmak için **kaynakları Kopyala** özelliği açık ve kapalı olabilir.
 
@@ -122,6 +122,10 @@ Sorunları gidermeye yardımcı olmak için günlüğü etkinleştirebilirsiniz:
 ![Uzaktan günlüğe kaydetme](media/remote-logging-vs2019.png)
 
 ::: moniker-end
+
+## <a name="linux-target-locale"></a><a name="locale"></a>Linux hedef yerel ayarı
+
+Visual Studio yüklü paketleri yönetmediğinden veya yapılandırmadığından, Visual Studio dil ayarları Linux hedeflerine yayılmaz. Derleme hataları gibi **Çıkış** penceresinde gösterilen Iletiler, Linux hedefinin dili ve yerel ayarı kullanılarak gösterilir. Linux hedeflerinizi istenen yerel ayar için yapılandırmanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

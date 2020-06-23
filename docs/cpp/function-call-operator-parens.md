@@ -1,6 +1,6 @@
 ---
-title: 'İşlev Çağırma İşleci: ()'
-ms.date: 11/04/2016
+title: 'İşlev çağırma işleci: ()'
+ms.date: 06/11/2020
 helpviewer_keywords:
 - ( ) function call operator
 - function calls, C++ functions
@@ -10,51 +10,57 @@ helpviewer_keywords:
 - functions [C++], function-call operator
 - function call operator ()
 ms.assetid: 50c92e59-a4bf-415a-a6ab-d66c679ee80a
-ms.openlocfilehash: 08c60ff261e944ed5b54b51a013a6d331f212154
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+no-loc:
+- opt
+ms.openlocfilehash: 59fd36a5ae135c55813019f04b0f5df4be2800b3
+ms.sourcegitcommit: 2d7550d0f375aafa428ef0fb2e3962e4232be28e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179776"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84777311"
 ---
 # <a name="function-call-operator-"></a>İşlev Çağırma İşleci: ()
 
-Bir sonek ifadesi ve ardından işlev çağrısı işleci **()** , bir işlev çağrısını belirtir.
+İşlev çağrısı, *`postfix-expression`* bir işlevi ve ardından işlev çağrısı işleci tarafından izlenen bir ifadeye göre biçimlendirilmiş bir türüdür **`()`** . Bir nesne `operator ()` , nesne için işlev çağrısı semantiğini sağlayan bir işlev bildirebilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-```
-postfix-expression
-( [argument-expression-list ] )
-```
+> *`postfix-expression`*:\
+> &nbsp;&nbsp;&nbsp;&nbsp;*`postfix-expression`* **`(`** *`argument-expression-list`* <sub>opt</sub> **`)`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev çağrısı işlecinin bağımsız değişkenleri, virgülle ayrılmış olarak sıfır veya daha fazla ifade (işlevin gerçek bağımsız değişkenleri).
+İşlev çağrısı işlecinin bağımsız değişkenleri *`argument-expression-list`* , virgülle ayrılmış bir ifade listesinden gelir. Bu ifadelerin değerleri bağımsız değişken olarak işleve geçirilir. *Bağımsız değişken-ifade listesi* boş olabilir. C++ 17 öncesi, işlev ifadesinin ve bağımsız değişken ifadelerinin değerlendirilme sırası belirtilmemiş ve herhangi bir sırada gerçekleşebilir. C++ 17 ve üzeri sürümlerde, işlev ifadesi herhangi bir bağımsız değişken ifadeden veya varsayılan bağımsız değişkenlerden önce değerlendirilir. Bağımsız değişken ifadeleri belirsiz bir sırayla değerlendirilir.
 
-*Sonek ifadesi* bir işlev adresi (örneğin, bir işlev tanımlayıcısı veya bir işlev işaretçisinin değeri) olarak değerlendirilmelidir ve *bağımsız değişken-ifade listesi* , değerleri (bağımsız değişkenler) işlevine geçilen ifadelerin (virgülle ayrılmış) bir listesidir. *Bağımsız değişken-ifade listesi* bağımsız değişkeni boş olabilir.
+*`postfix-expression`* Çağrısı yapılacak işlevi tanımlar. Bir işlev adresi olarak değerlendirilmelidir. Bu, birkaç formdan herhangi birini alabilir:
 
-*Sonek ifadesi* şu türlerden biri olmalıdır:
+- işlev veya işlev nesnesi adı veya işaretçisi,
+- bir işlev veya işlev nesnesine başvuran bir lvalue ifadesi,
+- açık veya zımni bir üye işlev erişimcisi.
 
-- İşlev türü döndüren işlev `T`. Örnek bir bildirim
+Tarafından belirtilen işlev, *`postfix-expression`* aşırı yüklenmiş bir işlev olabilir. Aşırı yükleme çözümlemesi için normal kurallar, çağrılacak gerçek işlevi belirlemektir.
 
-    ```cpp
-    T func( int i )
-    ```
+Bazı örnek bildirimler:
 
-- `T`türü döndüren işlevin işaretçisi. Örnek bir bildirim
-
-    ```cpp
-    T (*func)( int i )
-    ```
-
-- `T`türü döndüren bir işleve başvuru. Örnek bir bildirim
+- İşlevin türü döndürüyor `T` . Örnek bir bildirim
 
     ```cpp
-    T (&func)(int i)
+    T func( int i );
     ```
 
-- Üye işaretçisi işlev başvurusu `T`türü döndürüyor. Örnek işlev çağrıları
+- Tür döndüren bir işlevin işaretçisi `T` . Örnek bir bildirim
+
+    ```cpp
+    T (*func)( int i );
+    ```
+
+- Tür döndüren bir işleve başvuru `T` . Örnek bir bildirim
+
+    ```cpp
+    T (&func)(int i);
+    ```
+
+- Üye işaretçisi işlevine başvuru döndüren tür `T` . Örnek işlev çağrıları
 
     ```cpp
     (pObject->*pmf)();
@@ -63,7 +69,7 @@ postfix-expression
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, üç bağımsız değişkenle `strcat_s` Standart Kitaplık işlevini çağırır:
+Aşağıdaki örnek, standart kitaplık işlevini `strcat_s` üç bağımsız değişkenle çağırır:
 
 ```cpp
 // expre_Function_Call_Operator.cpp
@@ -97,7 +103,7 @@ Welcome to C++
 
 ## <a name="function-call-results"></a>İşlev çağrısı sonuçları
 
-İşlev bir başvuru türü olarak bildirilemediği sürece, bir işlev çağrısı r-değeri olarak değerlendirilir. Başvuru dönüş türü olan işlevler, l değerleri olarak değerlendirilir ve atama ifadesinin sol tarafında aşağıdaki gibi kullanılabilir:
+İşlev bir başvuru türü olarak bildirilemediği sürece bir işlev çağrısı rvalue olarak değerlendirilir. Başvuru dönüş türleri olan işlevler lvalues olarak değerlendirilir. Bu işlevler, burada görüldüğü gibi, atama ifadesinin sol tarafında kullanılabilir:
 
 ```cpp
 // expre_Function_Call_Results.cpp
@@ -129,9 +135,9 @@ int main()
 }
 ```
 
-Önceki kod, *x* ve *y* koordinatlarını temsil eden özel veri nesneleri içeren `Point`adlı bir sınıfı tanımlar. Bu veri nesnelerinin değiştirilmesi ve değerlerinin alınması gerekir. Bu program, böyle bir sınıf için yalnızca birkaç tasarımdan biridir; `GetX` ve `SetX` veya `GetY` kullanımı ve `SetY` işlevleri başka bir olası tasarımdır.
+Önceki kod `Point` , *x* ve *y* koordinatlarını temsil eden özel veri nesnelerini içeren adlı bir sınıfı tanımlar. Bu veri nesnelerinin değiştirilmesi ve değerlerinin alınması gerekir. Bu program, böyle bir sınıf için yalnızca birkaç tasarımdan biridir; `GetX`ve ya da işlevlerinin kullanımı, `SetX` `GetY` `SetY` başka bir tasarıma sahiptir.
 
-Sınıf türleri, sınıf türlerine işaretçiler veya sınıf türlerine yapılan başvurular döndüren işlevler, üye seçim işleçleri için sol işlenen olarak kullanılabilir. Bu nedenle, aşağıdaki kod geçerlidir:
+Sınıf türleri, sınıf türlerine işaretçiler veya sınıf türlerine yapılan başvurular döndüren işlevler, üye seçim işleçleri için sol işlenen olarak kullanılabilir. Aşağıdaki kod geçerlidir:
 
 ```cpp
 // expre_Function_Results2.cpp
@@ -178,6 +184,6 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Son Ek İfadeleri](../cpp/postfix-expressions.md)<br/>
-[C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[İşlev Çağrısı](../c-language/function-call-c.md)
+[Sonek ifadeleri](../cpp/postfix-expressions.md)<br/>
+[C++ yerleşik işleçleri, önceliği ve ilişkilendirilebilirlik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[İşlev çağrısı](../c-language/function-call-c.md)

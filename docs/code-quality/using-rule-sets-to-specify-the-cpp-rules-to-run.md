@@ -4,20 +4,20 @@ ms.date: 04/28/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-ms.openlocfilehash: 5cf0f88c6937f4c1609a29fd618af0fdadad4437
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: 233a5f8a549e33f63350115d90c7e7e6b5f6937b
+ms.sourcegitcommit: f9344b09a734e8b05a7494415991a22b7aec5ae8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77418720"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85269721"
 ---
-# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Çalıştırılacak C++ kuralları belirtmek Için kural kümelerini kullanma
+# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Çalıştırılacak C++ Kurallarını Belirtmek için Kural Kümeleri Kullanma
 
-Visual Studio 'da, kod analizi ile ilişkili belirli proje ihtiyaçlarını karşılamak için özel bir *kural kümesi* oluşturabilir ve değiştirebilirsiniz. Varsayılan kural kümeleri `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`depolanır.
+Visual Studio 'da, kod analizi ile ilişkili belirli proje ihtiyaçlarını karşılamak için özel bir *kural kümesi* oluşturabilir ve değiştirebilirsiniz. Varsayılan kural kümeleri içinde depolanır `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets` .
 
 **Visual Studio 2017 sürüm 15,7 ve üzeri:** Herhangi bir metin düzenleyicisini kullanarak özel kural kümeleri oluşturabilir ve bunları, hangi yapı sistemini kullandığınıza bağımsız olarak komut satırı yapılarına uygulayabilirsiniz. Daha fazla bilgi için bkz. [/Analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
 
-Visual Studio 'da özel C++ bir kural kümesi oluşturmak Için VISUAL Studio IDE 'deC++ bir C/Project açık olmalıdır. Daha sonra kural kümesi düzenleyicisinde bir standart kural kümesi açıp, belirli kuralları ekleyip kaldırarak ve isteğe bağlı olarak, kod analizi bir kuralın ihlal edildiğini belirlediğinde oluşan eylemi değiştirirsiniz.
+Visual Studio 'da özel bir C++ kural kümesi oluşturmak için Visual Studio IDE 'de bir C/C++ projesi açık olmalıdır. Daha sonra kural kümesi düzenleyicisinde bir standart kural kümesi açıp, belirli kuralları ekleyip kaldırarak ve isteğe bağlı olarak, kod analizi bir kuralın ihlal edildiğini belirlediğinde oluşan eylemi değiştirirsiniz.
 
 Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu dosyayı kaydedersiniz. Özel kural kümesi projeye otomatik olarak atanır.
 
@@ -31,9 +31,9 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
 
    - Özelleştirmek istediğiniz kural kümesini seçin.
 
-     \- veya-
+     \-veya
 
-   - **\<gözatmaya seç...** listede olmayan var olan bir kural kümesini belirtmek için >.
+   - **\<Browse...>** Listede olmayan var olan bir kural kümesini belirtmeyi seçin.
 
 1. Kural kümesi düzenleyicisinde kuralları göstermek için **Aç** ' ı seçin.
 
@@ -61,7 +61,7 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
 
 - Tüm gruplardaki kuralları daraltmak için **Tümünü Daralt**' ı seçin.
 
-- Kuralların gruplandırıldığı alanı değiştirmek için **Gruplandırma ölçütü** listesinden alanı seçin. Gruplandırılmamış kuralları göstermek için **\<yok >** seçin.
+- Kuralların gruplandırıldığı alanı değiştirmek için **Gruplandırma ölçütü** listesinden alanı seçin. Gruplandırılmamış kuralları göstermek için öğesini seçin **\<None>** .
 
 - Kural sütunlarındaki alanları eklemek veya kaldırmak için **sütun seçenekleri**' yi seçin.
 
@@ -77,7 +77,7 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
 
 ## <a name="to-create-a-rule-set-in-a-text-editor"></a>Bir metin düzenleyicisinde bir kural kümesi oluşturmak için
 
-Bir metin düzenleyicisinde özel bir kural kümesi oluşturabilir, `.ruleset` uzantısı olan herhangi bir konumda saklayabilir ve [/Analyze: RuleSet](/cpp/build/reference/analyze-code-analysis) derleyici seçeneğiyle ' de uygulayabilirsiniz.
+Bir metin düzenleyicisinde özel bir kural kümesi oluşturabilir, bunu bir uzantıya sahip herhangi bir yerde saklayabilir `.ruleset` ve [/Analyze: RuleSet](/cpp/build/reference/analyze-code-analysis) derleyici seçeneğiyle uygulayabilirsiniz.
 
 Aşağıdaki örnek, başlangıç noktası olarak kullanabileceğiniz temel bir kural kümesi dosyasını gösterir:
 
@@ -108,3 +108,145 @@ Aşağıdaki örnek, başlangıç noktası olarak kullanabileceğiniz temel bir 
 ```
 
 ::: moniker-end
+
+## <a name="ruleset-schema"></a>RuleSet şeması
+
+Aşağıdaki RuleSet şeması bir RuleSet dosyasının XML şemasını açıklar. RuleSet şeması içinde depolanır `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd` . Kendi kural kümelerinizi programlama yoluyla yazmak veya özel RuleSets 'in doğru biçime bağlı olup olmadığını doğrulamak için bunu kullanabilirsiniz. Daha fazla bilgi için bkz. [nasıl yapılır: xsd şemasını temel alan XML belgesi oluşturma](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema?view=vs-2019).
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+            Visual Studio Code Analysis Rule Set Schema Definition Language.
+            Copyright (c) Microsoft Corporation. All rights reserved.
+        </xs:documentation>
+  </xs:annotation>
+
+  <!-- Every time this file changes, be sure to change the Validate method for the corresponding object in the code -->
+
+  <xs:element name="RuleSet" type="TRuleSet">
+  </xs:element>
+
+  <xs:complexType name="TLocalization">
+    <xs:all>
+      <xs:element name="Name" type="TName" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Description" type="TDescription" minOccurs="0" maxOccurs="1" />
+    </xs:all>
+    <xs:attribute name="ResourceAssembly" type="TNonEmptyString" use="required" />
+    <xs:attribute name="ResourceBaseName" type="TNonEmptyString" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TRuleHintPaths">
+    <xs:sequence>
+      <xs:element name="Path" type="TNonEmptyString" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="TName">
+    <xs:attribute name="Resource" type="TNonEmptyString" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TDescription">
+    <xs:attribute name="Resource" type="TNonEmptyString" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TInclude">
+    <xs:attribute name="Path" type="TNonEmptyString" use="required" />
+    <xs:attribute name="Action" type="TIncludeAction" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TIncludeAll">
+    <xs:attribute name="Action" type="TIncludeAllAction" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TRule">
+    <xs:attribute name="Id" type="TNonEmptyString" use="required" />
+    <xs:attribute name="Action" type="TRuleAction" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TRules">
+    <xs:sequence>
+      <xs:element name="Rule" type="TRule" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="AnalyzerId" type="TNonEmptyString" use="required" />
+    <xs:attribute name="RuleNamespace" type="TNonEmptyString" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TRuleSet">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:element name="Localization" type="TLocalization" minOccurs="0" maxOccurs="1" />
+      <xs:element name="RuleHintPaths" type="TRuleHintPaths" minOccurs="0" maxOccurs="1" />
+      <xs:element name="IncludeAll" type="TIncludeAll" minOccurs="0" maxOccurs="1" />
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Include" type="TInclude" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="Rules" type="TRules" minOccurs="0" maxOccurs="unbounded">
+          <xs:unique name="UniqueRuleName">
+            <xs:selector xpath="Rule" />
+            <xs:field xpath="@Id" />
+          </xs:unique>
+        </xs:element>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="Name" type="TNonEmptyString" use="required" />
+    <xs:attribute name="Description" type="xs:string" use="optional" />
+    <xs:attribute name="ToolsVersion" type="TNonEmptyString" use="required" />
+  </xs:complexType>
+
+  <xs:simpleType name="TRuleAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Error"/>
+      <xs:enumeration value="Warning"/>
+      <xs:enumeration value="Info"/>
+      <xs:enumeration value="Hidden"/>
+      <xs:enumeration value="None"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TIncludeAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Error"/>
+      <xs:enumeration value="Warning"/>
+      <xs:enumeration value="Info"/>
+      <xs:enumeration value="Hidden"/>
+      <xs:enumeration value="None"/>
+      <xs:enumeration value="Default"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TIncludeAllAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Error"/>
+      <xs:enumeration value="Warning"/>
+      <xs:enumeration value="Info"/>
+      <xs:enumeration value="Hidden"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TNonEmptyString">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>
+
+```
+
+Şema öğesi ayrıntıları:
+
+- Tyerelleştirme: RuleSet dosyasının adı, RuleSet dosyasının açıklaması, yerelleştirilmiş kaynağı içeren kaynak derlemesinin adı ve yerelleştirilmiş kaynağın temel adı dahil olmak üzere yerelleştirme bilgileri.
+- TRuleHintPaths: RuleSet dosyalarını aramak için ipuçları olarak kullanılan dosya yolları.
+- TName: geçerli RuleSet dosyasının adı.
+- TDescription: geçerli RuleSet dosyasının açıklaması.
+- TInclude: kural eylemiyle dahil edilen bir RuleSet 'in yolu.
+- TIncludeAll: tüm kurallar için kural eylemi.
+- TRule: Rule eylemi ile kural KIMLIĞI.
+- TRules: bir veya daha fazla kural koleksiyonu.
+- Trutaset: ruleset dosya biçimi yerelleştirme bilgileri, kural ipucu yolları, tüm bilgileri, içerme bilgilerini, kural bilgilerini, ad, açıklama ve Araçlar sürüm bilgilerini içerir.
+- Trutaaction: hata, uyarı, bilgi, gizli veya hiçbiri gibi bir kural eylemini açıklayan sabit listesi.
+- TIncludeAction: hata, uyarı, bilgi, gizli, yok veya varsayılan gibi bir kural eylemini açıklayan sabit listesi.
+- TIncludeAllAction: hata, uyarı, bilgi veya gizli gibi bir kural eylemini açıklayan sabit listesi.
+
+Bir RuleSet örneğine bir örnek görmek için bkz. [bir metin düzenleyicisinde bir kural kümesi oluşturmak için](#to-create-a-rule-set-in-a-text-editor)veya içinde depolanan varsayılan RuleSets 'ler `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets` .
