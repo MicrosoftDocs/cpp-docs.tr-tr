@@ -1,6 +1,6 @@
 ---
 title: SafeInt İşlevleri
-ms.date: 10/22/2018
+ms.date: 06/23/2020
 ms.topic: reference
 f1_keywords:
 - SafeInt functions
@@ -31,12 +31,12 @@ helpviewer_keywords:
 - SafeNotEquals function
 - SafeSubtract function
 ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
-ms.openlocfilehash: 585fd30715ff3520245210badc0fde2e2f87ae13
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9af34e7dcb13f54b824088fa81b6d5a7145c6ae5
+ms.sourcegitcommit: 8645408c7929558b8162f781776d0908d790a41c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622068"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85334916"
 ---
 # <a name="safeint-functions"></a>SafeInt İşlevleri
 
@@ -63,7 +63,7 @@ Bu işlevlerin her biri iki şablon türüne sahiptir: `T` ve `U` . Bu türlerin
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-Section                                                  | Açıklama
+Section                                                  | Description
 -------------------------------------------------------- | ----------------------------------------------------
 [SafeInt](safeint-class.md)                   | `SafeInt`Sınıfı.
 [SafeIntException](safeintexception-class.md) | SafeInt kitaplığına özgü özel durum sınıfı.
@@ -136,10 +136,10 @@ inline bool SafeDivide (
 ### <a name="parameters"></a>Parametreler
 
 *şı*<br/>
-'ndaki Bölen. Bu T türünde olmalıdır.
+'ndaki Bölünen. Bu T türünde olmalıdır.
 
 *larınız*<br/>
-'ndaki Bölünen. Bu, U türünde olmalıdır.
+'ndaki Bölen. Bu, U türünde olmalıdır.
 
 *kaynaklanan*<br/>
 dışı `SafeDivide`Sonucu depolayan parametre.
@@ -250,7 +250,7 @@ inline bool SafeLessThan (
 'ndaki İlk sayı. Bu, türünde olmalıdır `T` .
 
 *larınız*<br/>
-'ndaki İkinci numer. Bu, türünde olmalıdır `U` .
+'ndaki İkinci sayı. Bu, türünde olmalıdır `U` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
