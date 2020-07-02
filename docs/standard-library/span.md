@@ -5,16 +5,16 @@ f1_keywords:
 - <span>
 helpviewer_keywords:
 - span header
-ms.openlocfilehash: ebd0a30c677ea44f95e64e2d2ba010bc99cb412b
-ms.sourcegitcommit: 1a8fac06478da8bee1f6d70e25afbad94144af1a
+ms.openlocfilehash: 27f27acfa84a3ccc42586593747e4657146cbe39
+ms.sourcegitcommit: 83ea5df40917885e261089b103d5de3660314104
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "84226106"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85813541"
 ---
 # <a name="ltspangt"></a>&lt;kapsamı&gt;
 
-`span`, Bitişik nesne dizisi üzerinde bir görünümdedir. Hızlı ve sınırlara güvenli erişim sağlar. Ya da aksine `vector` `array` , erişimi sağladığı öğeleri "sahip" değildir. 
+`span`, Bitişik nesne dizisi üzerinde bir görünümdedir. Hızlı ve sınırlara güvenli erişim sağlar. Ya da aksine `vector` `array` , erişimi sağladığı öğeleri "sahip" değildir.
 
 Ayrıntılı bilgi için bkz. [Span sınıfı](span-class.md) . Bu, bir yayılma alanının nasıl kullanılacağına ilişkin bir örnek aşağıda verilmiştir:
 

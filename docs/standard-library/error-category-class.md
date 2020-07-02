@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::error_category::message
 - std::error_category::name
 ms.assetid: e0a71e14-852d-4905-acd6-5f8ed426706d
-ms.openlocfilehash: 3ed2eceb60c2efa78181faea58a256b0e35d489f
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 136320ba3be36ec20fc08e0d83b1ce3274ed08ff
+ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076607"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85737567"
 ---
 # <a name="error_category-class"></a>error_category Sınıfı
 
@@ -39,7 +39,7 @@ error_category(const error_category&) = delete
 
 ## <a name="remarks"></a>Açıklamalar
 
-Önceden tanımlanmış iki nesne `error_category`uygular: [generic_category](../standard-library/system-error-functions.md#generic_category) ve [system_category](../standard-library/system-error-functions.md#system_category).
+Önceden tanımlanmış iki nesne `error_category` şunları uygular: [generic_category](../standard-library/system-error-functions.md#generic_category) ve [system_category](../standard-library/system-error-functions.md#system_category).
 
 ## <a name="members"></a>Üyeler
 
@@ -56,7 +56,7 @@ error_category(const error_category&) = delete
 |[default_error_condition](#default_error_condition)|Hata durumu nesnesi için hata kodu değerini depolar.|
 |[değerinin](#equivalent)|Hata nesnelerinin eşdeğer olup olmadığını belirten bir değer döndürür.|
 |[generic_category](#generic)||
-|[message](#message)|Belirtilen hata kodunun adını döndürür.|
+|[İleti](#message)|Belirtilen hata kodunun adını döndürür.|
 |[ada](#name)|Kategorinin adını döndürür.|
 |[system_category](#system)||
 
@@ -65,9 +65,9 @@ error_category(const error_category&) = delete
 |||
 |-|-|
 |[işleç =](#op_as)||
-|[işleç = =](#op_eq_eq)|`error_category` nesneleri arasındaki eşitlik için sınar.|
-|[operator!=](#op_neq)|`error_category` nesneleri arasındaki eşitsizlik için test eder.|
-|[işleç <](#op_lt)|[Error_category](../standard-library/error-category-class.md) nesnenin karşılaştırma için geçirilen `error_category` nesnesinden küçük olup olmadığını sınar.|
+|[işleç = =](#op_eq_eq)|Nesneler arasındaki eşitlik için testler `error_category` .|
+|[işleç! =](#op_neq)|Nesneler arasında eşitsizlik için testler `error_category` .|
+|[işleç<](#op_lt)|[Error_category](../standard-library/error-category-class.md) nesnenin `error_category` karşılaştırma için geçirilen nesneden daha az olup olmadığını sınar.|
 
 ## <a name="default_error_condition"></a><a name="default_error_condition"></a>default_error_condition
 
@@ -79,7 +79,7 @@ virtual error_condition default_error_condition(int _Errval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Errval*\
+`_Errval`\
 [Error_condition](../standard-library/error-condition-class.md)depolanacak hata kodu değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -117,9 +117,9 @@ Kategori ve değer eşitse **true** ; Aksi takdirde, **false**.
 
 #### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi `*this == _Cond.category() && _Cond.value() == _Errval`döndürür.
+İlk üye işlevi döndürür `*this == _Cond.category() && _Cond.value() == _Errval` .
 
-İkinci üye işlevi `*this == _Code.category() && _Code.value() == _Errval`döndürür.
+İkinci üye işlevi döndürür `*this == _Code.category() && _Code.value() == _Errval` .
 
 ### <a name="generic_category"></a><a name="generic"></a>generic_category
 
@@ -137,12 +137,12 @@ virtual string message(error_code::value_type val) const = 0;
 
 #### <a name="parameters"></a>Parametreler
 
-*val*\
+*Acil*\
 Betimleyen hata kodu değeri.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Kategorinin hata kodu *Val* ' nin açıklayıcı bir adını döndürür.
+Kategorinin hata kodu *Val* ' nin açıklayıcı bir adını döndürür. Hata kodu tanınmazsa, döndürür `"unknown error"` .
 
 #### <a name="remarks"></a>Açıklamalar
 
@@ -166,7 +166,7 @@ error_category& operator=(const error_category&) = delete;
 
 ### <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
-`error_category` nesneleri arasındaki eşitlik için sınar.
+Nesneler arasındaki eşitlik için testler `error_category` .
 
 ```cpp
 bool operator==(const error_category& right) const;
@@ -174,7 +174,7 @@ bool operator==(const error_category& right) const;
 
 #### <a name="parameters"></a>Parametreler
 
-*sağ*\
+*Right*\
 Eşitlik için sınanacak nesne.
 
 #### <a name="return-value"></a>Dönüş Değeri
@@ -183,11 +183,11 @@ nesneler eşitse **true** ; nesneler eşitse **false** .
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu üye işleci `this == &right`döndürür.
+Bu üye işleci döndürür `this == &right` .
 
 ### <a name="operator"></a><a name="op_neq"></a>işleç! =
 
-`error_category` nesneleri arasındaki eşitsizlik için test eder.
+Nesneler arasında eşitsizlik için testler `error_category` .
 
 ```cpp
 bool operator!=(const error_category& right) const;
@@ -195,20 +195,20 @@ bool operator!=(const error_category& right) const;
 
 #### <a name="parameters"></a>Parametreler
 
-*sağ*\
+*Right*\
 Eşitsizlik için test edilecek nesne.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-`error_category` nesnesi *sağda*geçirilen `error_category` nesneye eşit değilse **true** ; Aksi halde **yanlış**.
+**true** `error_category` nesne sağa geçirilen nesneye eşit değilse true, `error_category` Aksi takdirde **false**. *right*
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işleci `(!*this == right)`döndürür.
+Üye işleci döndürür `(!*this == right)` .
 
-### <a name="operatorlt"></a><a name="op_lt"></a>işleç&lt;
+### <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
 
-[Error_category](../standard-library/error-category-class.md) nesnenin karşılaştırma için geçirilen `error_category` nesnesinden küçük olup olmadığını sınar.
+[Error_category](../standard-library/error-category-class.md) nesnenin `error_category` karşılaştırma için geçirilen nesneden daha az olup olmadığını sınar.
 
 ```cpp
 bool operator<(const error_category& right) const;
@@ -216,16 +216,16 @@ bool operator<(const error_category& right) const;
 
 #### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Karşılaştırılacak `error_category` nesnesi.
+*Right*\
+`error_category`Karşılaştırılacak nesne.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-`error_category` nesnesi karşılaştırma için geçirilen `error_category` nesneden küçükse **true** ; Aksi takdirde, **false**.
+**true** `error_category` nesne `error_category` karşılaştırma için geçirilen nesneden küçükse true; Aksi takdirde, **false**.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işleci `this < &right`döndürür.
+Üye işleci döndürür `this < &right` .
 
 ### <a name="system_category"></a><a name="system"></a>system_category
 

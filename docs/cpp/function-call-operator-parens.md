@@ -12,33 +12,34 @@ helpviewer_keywords:
 ms.assetid: 50c92e59-a4bf-415a-a6ab-d66c679ee80a
 no-loc:
 - opt
-ms.openlocfilehash: 59fd36a5ae135c55813019f04b0f5df4be2800b3
-ms.sourcegitcommit: 2d7550d0f375aafa428ef0fb2e3962e4232be28e
+ms.openlocfilehash: 5bb87795d3e91d853dc0d269ee9d2aa3ba025c0e
+ms.sourcegitcommit: 83ea5df40917885e261089b103d5de3660314104
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84777311"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85813556"
 ---
 # <a name="function-call-operator-"></a>İşlev Çağırma İşleci: ()
 
-İşlev çağrısı, *`postfix-expression`* bir işlevi ve ardından işlev çağrısı işleci tarafından izlenen bir ifadeye göre biçimlendirilmiş bir türüdür **`()`** . Bir nesne `operator ()` , nesne için işlev çağrısı semantiğini sağlayan bir işlev bildirebilir.
+İşlev çağrısı, *`postfix-expression`* bir işlev veya çağrılabilir bir nesne ve ardından işlev çağrısı işleci tarafından değerlendirilen bir ifade tarafından oluşturulan bir türüdür **`()`** . Bir nesne `operator ()` , nesne için işlev çağrısı semantiğini sağlayan bir işlev bildirebilir.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 > *`postfix-expression`*:\
-> &nbsp;&nbsp;&nbsp;&nbsp;*`postfix-expression`* **`(`** *`argument-expression-list`* <sub>opt</sub> **`)`**
+> &emsp;*`postfix-expression`* **`(`** *`argument-expression-list`* <sub>opt</sub> **`)`**
 
 ## <a name="remarks"></a>Açıklamalar
 
 İşlev çağrısı işlecinin bağımsız değişkenleri *`argument-expression-list`* , virgülle ayrılmış bir ifade listesinden gelir. Bu ifadelerin değerleri bağımsız değişken olarak işleve geçirilir. *Bağımsız değişken-ifade listesi* boş olabilir. C++ 17 öncesi, işlev ifadesinin ve bağımsız değişken ifadelerinin değerlendirilme sırası belirtilmemiş ve herhangi bir sırada gerçekleşebilir. C++ 17 ve üzeri sürümlerde, işlev ifadesi herhangi bir bağımsız değişken ifadeden veya varsayılan bağımsız değişkenlerden önce değerlendirilir. Bağımsız değişken ifadeleri belirsiz bir sırayla değerlendirilir.
 
-*`postfix-expression`* Çağrısı yapılacak işlevi tanımlar. Bir işlev adresi olarak değerlendirilmelidir. Bu, birkaç formdan herhangi birini alabilir:
+*`postfix-expression`* Çağrısı yapılacak işlev olarak değerlendirilir. Bu, birkaç formdan herhangi birini alabilir:
 
-- işlev veya işlev nesnesi adı veya işaretçisi,
-- bir işlev veya işlev nesnesine başvuran bir lvalue ifadesi,
-- açık veya zımni bir üye işlev erişimcisi.
+- bir işlev tanımlayıcısı, geçerli kapsamda veya belirtilen işlev bağımsız değişkenlerinin herhangi birinin kapsamında görünür,
+- bir işlev, bir işlev işaretçisi, çağrılabilir nesne veya bir başvurusu için değerlendirilen bir ifade
+- açık veya zımni bir üye işlev erişimcisi
+- bir üye işlevine başvuru yapılan bir işaretçiye başvurduğunu.
 
-Tarafından belirtilen işlev, *`postfix-expression`* aşırı yüklenmiş bir işlev olabilir. Aşırı yükleme çözümlemesi için normal kurallar, çağrılacak gerçek işlevi belirlemektir.
+*`postfix-expression`* Aşırı yüklenmiş bir işlev tanımlayıcısı veya aşırı yüklenmiş üye işlev erişimcisi olabilir. Aşırı yükleme çözümlemesi kuralları, çağrılacak gerçek işlevi belirleyebilir. Üye işlevi sanal ise, çağrılacak işlev çalışma zamanında belirlenir.
 
 Bazı örnek bildirimler:
 

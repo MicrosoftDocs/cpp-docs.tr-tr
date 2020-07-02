@@ -10,19 +10,19 @@ helpviewer_keywords:
 - SafeInt class
 - SafeInt class, constructor
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
-ms.openlocfilehash: a7c0de8b5fd64fb9746f4c503189fcad409f1e85
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 0445901f935dbf16872dfeca40ca8d9808dd774e
+ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620948"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85737577"
 ---
 # <a name="safeint-class"></a>SafeInt Sınıfı
 
 Tamsayı taşmasını önlemeye yardımcı olmak için tamsayı temel öğelerini genişletir ve farklı tamsayılar türlerini karşılaştırmanızı sağlar.
 
 > [!NOTE]
-> Bu kitaplığın en son sürümü konumunda bulunur [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt) .
+> SafeInt Kitaplığı 'nın en son sürümü konumunda bulunur [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt) . SafeInt kitaplığını kullanmak için depoyu kopyalayın ve`#include "SafeInt.hpp"`
 
 ## <a name="syntax"></a>Söz dizimi
 
@@ -55,7 +55,7 @@ class SafeInt;
 
 ### <a name="assignment-operators"></a>Atama İşleçleri
 
-| Name  |  Söz dizimi |
+| Name  |  Sözdizimi |
 |----|---------|
 | =     |  `template<typename U>`<br />`SafeInt<T,E>& operator= (const U& rhs)` |
 | =     |  `SafeInt<T,E>& operator= (const T& rhs) throw()` |
@@ -64,7 +64,7 @@ class SafeInt;
 
 ### <a name="casting-operators"></a>Atama İşleçleri
 
-| Name              |  Söz dizimi |
+| Name              |  Sözdizimi |
 |------|---------------------------------|
 | bool              |  `operator bool() throw()` |
 | char              |  `operator char() const` |
@@ -82,7 +82,7 @@ class SafeInt;
 
 ### <a name="comparison-operators"></a>Karşılaştırma İşleçleri
 
-| Name  |  Söz dizimi |
+| Name  |  Sözdizimi |
 |----|----------------|
 | \<     |  `template<typename U>`<br /><br /> `bool operator< (U rhs) const throw()` |
 | \<     |  `bool operator< (SafeInt<T,E> rhs) const throw()` |
@@ -101,7 +101,7 @@ class SafeInt;
 
 ### <a name="arithmetic-operators"></a>Aritmetik İşleçler
 
-| Name  |  Söz dizimi |
+| Name  |  Sözdizimi |
 |----|--------------|
 | +     |  `const SafeInt<T,E>& operator+ () const throw()` |
 | -     |  `SafeInt<T,E> operator- () const` |
@@ -134,7 +134,7 @@ class SafeInt;
 
 ### <a name="logical-operators"></a>Mantıksal İşleçler
 
-| Name     |  Söz dizimi |
+| Name     |  Sözdizimi |
 |------|--------------|
 | !        |  `bool operator !() const throw()` |
 | ~        |  `SafeInt<T,E> operator~ () const throw()` |
@@ -168,26 +168,26 @@ class SafeInt;
 
 `SafeInt`Sınıfı, aritmetik bir taşın mi oluştuğunu yoksa kodun sıfıra bölmeye mi çalışacağını denetler. Her iki durumda da, sınıf olası sorunun programını uyarmak için hata işleyicisini çağırır.
 
-Bu sınıf aynı zamanda, nesneler oldukları sürece iki farklı türden tamsayıları karşılaştırmanıza imkan tanır `SafeInt` . Genellikle, bir karşılaştırma gerçekleştirdiğinizde, önce sayıları aynı tür olacak şekilde dönüştürmeniz gerekir. Bir sayıyı başka bir türe atama genellikle veri kaybı olmadığından emin olmak için denetimler gerektirir.
+Bu sınıf aynı zamanda, nesneler oldukları sürece iki farklı türden tamsayıları karşılaştırmanıza imkan tanır `SafeInt` . Genellikle, bir karşılaştırma yaptığınızda, önce sayıları aynı tür olacak şekilde dönüştürmeniz gerekir. Bir sayıyı başka bir türe atama genellikle veri kaybı olmadığından emin olmak için denetimler gerektirir.
 
 Bu konudaki operatörler tablosunda, sınıfının desteklediği matematik ve karşılaştırma işleçleri listelenmiştir `SafeInt` . Çoğu matematik işleci türünde bir `SafeInt` nesne döndürür `T` .
 
 `SafeInt`Ve integral türü arasındaki karşılaştırma işlemleri her iki yönde de gerçekleştirilebilir. Örneğin, `SafeInt<int>(x) < y` ve `y> SafeInt<int>(x)` geçerli olur ve aynı sonucu döndürür.
 
-Birçok ikili işleç iki farklı tür kullanmayı desteklemez `SafeInt` . Bu bir örneği `&` işleçtir. `SafeInt<T, E> & int`desteklenir, ancak `SafeInt<T, E> & SafeInt<U, E>` değildir. İkinci örnekte, derleyici döndürülecek parametre türünü bilmez. Bu soruna yönelik bir çözüm ikinci parametreyi temel türe dönüştürmek olur. Aynı parametreleri kullanarak bu, ile yapılabilir `SafeInt<T, E> & (U)SafeInt<U, E>` .
+Birçok ikili işleç iki farklı tür kullanmayı desteklemez `SafeInt` . Bu bir örneği `&` işleçtir. `SafeInt<T, E> & int`desteklenir, ancak `SafeInt<T, E> & SafeInt<U, E>` değil. İkinci örnekte, derleyici döndürülecek parametre türünü bilmez. Bu soruna yönelik bir çözüm ikinci parametreyi temel türe dönüştürmek olur. Aynı parametreleri kullanarak bu, ile yapılabilir `SafeInt<T, E> & (U)SafeInt<U, E>` .
 
 > [!NOTE]
 > Bit düzeyinde işlemler için, iki farklı parametre aynı boyutta olmalıdır. Boyutlar farklıysa, derleyici bir [onaylama](../mfc/reference/diagnostic-services.md#assert) özel durumu oluşturur. Bu işlemin sonuçlarının doğru olması garanti edilemez. Bu sorunu çözmek için, daha küçük parametreyi, daha büyük parametreyle aynı boyuta gelene kadar dönüştürün.
 
 Kaydırma işleçleri için, şablon türü için varolandan daha fazla bit kaydırma bir onaylama özel durumu oluşturur. Bu, yayın modunda hiçbir etkiye sahip olmayacaktır. İki tür SafeInt parametresi, dönüş türü özgün türle aynı olduğundan, kaydırma işleçleri için mümkündür. İşlecin sağ tarafındaki sayı yalnızca kaydırılacak bit sayısını gösterir.
 
-SafeInt nesnesiyle mantıksal bir karşılaştırma gerçekleştirdiğinizde, karşılaştırma kesin olarak aritmetik olur. Örneğin, şu ifadeleri göz önünde bulundurun:
+SafeInt nesnesiyle mantıksal bir karşılaştırma yaptığınızda karşılaştırma kesin olarak aritmetik olur. Örneğin, şu ifadeleri göz önünde bulundurun:
 
 - `SafeInt<uint>((uint)~0) > -1`
 
 - `((uint)~0) > -1`
 
-İlk ifade **true**olarak çözümlenir, ancak ikinci ifade olarak çözümlenir `false` . 0 bit düzeyinde Olumsuzlaştırma değeri 0xFFFFFFFF ' dir. İkinci ifadede, varsayılan karşılaştırma işleci 0xFFFFFFFF ile 0xFFFFFFFF arasında karşılaştırır ve bunların eşit olduğunu varsayar. Sınıf için karşılaştırma işleci `SafeInt` ikinci parametrenin negatif olduğunu, ancak ilk parametre imzasız olduğunu gösterir. Bu nedenle, bit temsili özdeş olsa da, `SafeInt` mantıksal işleç işaretsiz tamsayının-1 ' den büyük olduğunu farkettir.
+İlk ifade **true**olarak çözümlenir, ancak ikinci ifade olarak çözümlenir `false` . 0 bit düzeyinde Olumsuzlaştırma değeri 0xFFFFFFFF ' dir. İkinci ifadede, varsayılan karşılaştırma işleci 0xFFFFFFFF ile 0xFFFFFFFF arasında karşılaştırır ve bunların eşit olduğunu varsayar. Sınıfın karşılaştırma operatörü `SafeInt` ikinci parametrenin negatif olduğunu, ancak ilk parametre işaretsiz olduğunu gösterir. Bu nedenle, bit temsili özdeş olsa da, `SafeInt` mantıksal işleç işaretsiz tamsayının-1 ' den büyük olduğunu farkettir.
 
 `SafeInt`Sınıfını Üçlü işleçle birlikte kullanırken dikkatli olun `?:` . Aşağıdaki kod satırını göz önünde bulundurun.
 
@@ -225,9 +225,28 @@ Hata ilkesini özelleştirmek için iki seçenek vardır. İlk seçenek, oluştu
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** SafeInt. h
+**Üst bilgi:** SafeInt. hpp
+> [!NOTE]
+> Bu kitaplığın en son sürümü konumunda bulunur [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt) . Kitaplığı kopyalayın ve SafeInt. hpp ' i kullanarak SafeInt kitaplığını kullanın.
+> Bu GitHub deposunun SafeInt. h> <için tercih edin. Bu, az sayıda hata düzeltmesi içeren <SafeInt. h> modern bir sürümüdür, C++ ' ın modern özelliklerini kullanarak daha verimli bir koda neden olur ve GCC, Clang ya da Intel derleyicileri kullanan herhangi bir platforma taşınabilir.
 
-**Ad alanı:** MSL:: Utilities
+### <a name="example"></a>Örnek
+
+```c
+#include "SafeInt.hpp" // set path to your clone of the SafeInt GitHub repo (https://github.com/dcleblanc/SafeInt)
+
+int main()
+{
+    int divisor = 3;
+    int dividend = 6;
+    int result;
+
+    bool success = SafeDivide(dividend, divisor, result); // result = 2
+    success = SafeDivide(dividend, 0, result); // expect fail. result isn't modified.
+}
+```
+
+**Ad alanı:** yok
 
 ## <a name="safeintsafeint"></a><a name="safeint"></a>SafeInt:: SafeInt
 
@@ -236,42 +255,34 @@ Bir `SafeInt` nesnesi oluşturur.
 ```cpp
 SafeInt() throw
 
-SafeInt (
-   const T& i
-) throw ()
+SafeInt (const T& i) throw ()
 
-SafeInt (
-   bool b
-) throw ()
+SafeInt (bool b) throw ()
 
 template <typename U>
-SafeInt (
-   const SafeInt <U, E>& u
-)
+SafeInt (const SafeInt <U, E>& u)
 
 I template <typename U>
-SafeInt (
-   const U& i
-)
+SafeInt (const U& i)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*i*<br/>
+`i`<br/>
 'ndaki Yeni `SafeInt` nesnenin değeri. Oluşturucuya bağlı olarak bu, T veya U türünde bir parametre olmalıdır.
 
-*kenarı*<br/>
+`b`<br/>
 'ndaki Yeni nesnenin Boole değeri `SafeInt` .
 
-*larınız*<br/>
+`u`<br/>
 'ndaki `SafeInt`U türünde bir. Yeni `SafeInt` nesne *u*ile aynı değere sahip olacaktır, ancak T türünde olacaktır.
 
-U içinde depolanan veri türü `SafeInt` . Bu bir Boolean, karakter ya da tamsayı türü olabilir. Bir tamsayı türü ise, imzalanmış veya imzasız olabilir ve 8 ile 64 bit arasında olabilir.
+`U`İçinde depolanan verilerin türü `SafeInt` . Bu bir Boolean, karakter ya da tamsayı türü olabilir. Bir tamsayı türü ise, imzalanmış veya imzasız olabilir ve 8 ile 64 bit arasında olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 *I* veya *u*oluşturucusunun giriş parametresi bir Boolean, karakter veya tamsayı türü olmalıdır. Başka bir parametre türü ise, `SafeInt` sınıfı geçersiz bir giriş parametresini göstermek için [static_assert](../cpp/static-assert.md) çağırır.
 
-Şablon türünü kullanan oluşturucular, `U` giriş parametresini otomatik olarak belirtilen türe dönüştürür `T` . `SafeInt`Sınıfı veri kaybı olmadan verileri dönüştürür. Verileri `E` veri kaybı olmadan türe dönüştüremediğinden hata işleyicisine rapor bildirir `T` .
+Şablon türünü kullanan oluşturucular, `U` giriş parametresini otomatik olarak belirtilen türe dönüştürür `T` . `SafeInt`Sınıfı veri kaybı olmadan verileri dönüştürür. Verileri `E` veri kaybı olmadan türüne dönüştüremediğinden hata işleyicisine rapor bildirir `T` .
 
 Bir `SafeInt` Boolean parametresinden bir oluşturursanız, değeri hemen başlatmalısınız. Kodu kullanarak bir oluşturamazsınız `SafeInt` `SafeInt<bool> sb;` . Bu, bir derleme hatası oluşturur.

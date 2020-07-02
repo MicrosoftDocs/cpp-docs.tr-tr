@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: ac141c6ce9e4cce37b72808de488df7f94d116f7
-ms.sourcegitcommit: 426e327c9f7c3a3b02300e3f924f9786d62958e9
+ms.openlocfilehash: 1b084cab0e985f9ab8c593e22d972913130e4380
+ms.sourcegitcommit: 83ea5df40917885e261089b103d5de3660314104
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84206212"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85813615"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: geleneksel Windows masaüstü uygulaması oluşturma (C++)
 
@@ -389,7 +389,7 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
    ```
 
    `HDC`kodda, pencerenin istemci alanında çizmek için kullanılan bir cihaz bağlamı tanıtıcıdır. `BeginPaint`Ve işlevlerini kullanarak, `EndPaint` istemci alanında çizimi hazırlayın ve doldurun. `BeginPaint`istemci alanında çizim için kullanılan görüntüleme cihazı bağlamına yönelik bir tanıtıcı döndürür; `EndPaint`boyama isteğini sonlandırır ve cihaz bağlamını yayınlar.
-   
+
 1. Bir uygulama genellikle diğer birçok iletiyi işler. Örneğin, bir pencere ilk oluşturulduğunda [WM_CREATE](/windows/win32/winmsg/wm-create) ve pencere kapatıldığında [WM_DESTROY](/windows/win32/winmsg/wm-destroy) . Aşağıdaki kod, temel ancak tamamlanmış bir `WndProc` işlevi gösterir.
 
    ```cpp

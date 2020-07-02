@@ -1,6 +1,6 @@
 ---
 title: strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
-ms.date: 4/2/2020
+ms.date: 6/24/2020
 api_name:
 - _mbstok_l
 - _mbstok
@@ -53,12 +53,12 @@ helpviewer_keywords:
 - _tcstok_l function
 - strtok_l function
 ms.assetid: 904cb734-f0d7-4d77-ba81-4791ddf461ae
-ms.openlocfilehash: 7d8f0d889d58fe776e53f78955fff7fd1cdfa40f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: bf59d34c17165f9f5165a5a4bdb82ad5a82c737e
+ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912632"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85737516"
 ---
 # <a name="strtok-_strtok_l-wcstok-_wcstok_l-_mbstok-_mbstok_l"></a>strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 
@@ -67,7 +67,7 @@ Geçerli yerel ayarı veya geçirilen belirtilen yerel ayarı kullanarak bir diz
 > [!IMPORTANT]
 > **_mbstok** ve **_mbstok_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 char *strtok(
@@ -82,6 +82,11 @@ char *strtok_l(
 wchar_t *wcstok(
    wchar_t *strToken,
    const wchar_t *strDelimit
+);
+wchar_t *wcstok(
+   wchar_t *strToken,
+   const wchar_t *strDelimit,
+   wchar_t **context
 );
 wchar_t *wcstok_l(
    wchar_t *strToken,
@@ -107,8 +112,11 @@ Belirteç veya belirteçleri içeren dize.
 *Strsınırlandırın*<br/>
 Sınırlayıcı karakter kümesi.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
+
+*bağlam*<br/>
+Ayrıştırıcısının, **wcstok**'yi çağırdığınızda bir sonraki sefer ayrıldıktan sonra devam edebilmesi için, ayrıştırıcısının iç durumunu depolamak için kullanılan belleği işaret eder.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -117,6 +125,8 @@ Kullanılacak yerel ayar.
 ## <a name="remarks"></a>Açıklamalar
 
 **Strtok** Işlevi, *strToken*'daki bir sonraki belirteci bulur. *Strsınırlandıran* karakter kümesi, geçerli çağrıda *strToken* içinde bulunan belirtecin olası sınırlayıcılarını belirtir. **wcstok** ve **_mbstok** , **strtok**öğesinin geniş karakterli ve çok baytlı karakter sürümleridir. **Wcstok** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbstok** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
+
+**Wcstok** 'nin iki bağımsız değişken sürümü standart değildir. Bu sürümü kullanmanız gerekiyorsa, `_CRT_NON_CONFORMING_WCSTOK` `#include <wchar.h>` (veya) önce tanımlamanız gerekir `#include <string.h>` .
 
 > [!IMPORTANT]
 > Bu işlevler, bir arabellek taşması sorunu ile ilgili olası bir tehdit doğurur. Arabellek taşması sorunları, sistem saldırılarına karşı sık kullanılan bir yöntemdir ve bu da garanti edilmemiş ayrıcalık yükselmesine neden olur. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -143,9 +153,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strtok**|\<String. h>|
-|**wcstok**|\<String. h> veya \<wchar. h>|
-|**_mbstok**, **_mbstok_l**|\<mbstring. h>|
+|**strtok**|\<string.h>|
+|**wcstok**|\<string.h> veya \<wchar.h>|
+|**_wcstok_l**|<Tchar. h>|
+|**_mbstok**, **_mbstok_l**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -198,7 +209,7 @@ tokens
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

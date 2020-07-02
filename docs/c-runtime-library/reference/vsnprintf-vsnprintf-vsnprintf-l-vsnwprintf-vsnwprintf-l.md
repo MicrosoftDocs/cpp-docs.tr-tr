@@ -1,6 +1,6 @@
 ---
 title: vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
-ms.date: 11/04/2016
+ms.date: 06/24/2020
 api_name:
 - _vsnprintf
 - _vsnprintf_l
@@ -55,18 +55,18 @@ helpviewer_keywords:
 - formatted text [C++]
 - vsnwprintf function
 ms.assetid: a97f92df-c2f8-4ea0-9269-76920d2d566a
-ms.openlocfilehash: abe34dc0f3baf9bdc63e0314ac70af3783d2bd9a
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 1cbb41d63669644f51b4d951d5b5507f64cf3da1
+ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857716"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85737585"
 ---
 # <a name="vsnprintf-_vsnprintf-_vsnprintf_l-_vsnwprintf-_vsnwprintf_l"></a>vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 
 Bağımsız değişken listesi için bir işaretçi kullanarak biçimli çıktı yazın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int vsnprintf(
@@ -145,14 +145,14 @@ int _vsnwprintf_l(
 *arabelleğin*<br/>
 Çıktı için depolama konumu.
 
-*count*<br/>
+*biriktirme*<br/>
 Yazılacak maksimum karakter sayısı.
 
-*format*<br/>
+*formatını*<br/>
 Biçim belirtimi.
 
 *argptr*<br/>
-Bağımsız değişkenler listesine işaretçi.
+Bağımsız değişken listesi işaretçisi.
 
 *ayarlar*<br/>
 Kullanılacak yerel ayar.
@@ -161,23 +161,25 @@ Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Vsnprintf** işlevi, sonlandıran null karakteri saymayan yazılan karakter sayısını döndürür. *Count* tarafından belirtilen arabellek boyutu, *Format* ve *argptr*tarafından belirtilen çıktıyı içermesi için yeterince büyük değilse, **vsnprintf** dönüş değeri yazılacak karakter sayısıdır, *sayı* yeterince büyükse null karakteri saymaz. Dönüş değeri *sayı* -1 ' den büyükse, çıkış fazlalıkları kesilir. -1 ' in dönüş değeri bir kodlama hatası oluştuğunu gösterir.
+**Vsnprintf** işlevi, sonlandıran null karakteri saymayan yazılan karakter sayısını döndürür. *Count* tarafından belirtilen arabellek boyutu, *Format* ve *argptr*tarafından belirtilen çıktıyı içermesi için yeterince büyük değilse **vsnprintf** dönüş değeri yazılacak karakter sayısıdır, *sayı* yeterince büyükse null karakteri saymaz. Dönüş değeri *sayı* -1 ' den büyükse, çıkış fazlalıkları kesilir. -1 ' in dönüş değeri bir kodlama hatası oluştuğunu gösterir.
 
-Hem **_vsnprintf** hem de **_vsnwprintf** işlevleri, yazılacak karakter *sayısı sayı '* den küçük veya buna eşit olduğunda yazılan karakter sayısını döndürür; yazılacak karakter *sayısı sayı değerinden büyükse, bu*işlevler çıktının kesilmediğini belirten-1 döndürür.
+**_Vsnprintf** ve **_vsnwprintf** işlevleri, yazılacak karakter sayısı sayıdan küçük veya buna eşit olduğunda yazılan karakter sayısını *döndürür.* Yazılacak karakter *sayısı sayı değerinden büyükse, bu*işlevler çıktının kesilmediğini belirten-1 döndürür.
 
-Tüm bu işlevler tarafından döndürülen değer, yazılmış veya olmayan bir Sonlandırıcı null değeri içermez. *Count* değeri sıfır olduğunda döndürülen değer, işlevin yazacağı karakter sayısı, hiçbir Sonlandırıcı null dahil edilmez. Bu sonucu, dize için yeterli arabellek alanı ve onun Sonlandırıcı null ayırmak için kullanabilir ve sonra, arabelleği dolduracak şekilde işlevi yeniden çağırabilir.
+Bu işlevlerin döndürdüğü değer Sonlandırıcı null, bir tane yazılıp yazılmadığını içermez.
 
-*Biçim* **null**ise veya *arabellek* **null** ise ve *sayı* sıfıra eşit değilse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+- *Count* değeri sıfırsa ve *buffer* **null**ise, döndürülen değer işlevlerin yazacağı karakter sayısıdır. Değer, bir Sonlandırıcı **null**değeri hesaba almıyor. Bu sonucu, dize için yeterli arabellek alanı ve onun Sonlandırıcı null ayırmak için kullanabilir ve sonra, arabelleği dolduracak şekilde işlevi yeniden çağırabilir.
+- *Count* değeri sıfırsa ancak *buffer* **null**değilse, hiçbir şey yazılmaz ve işlev döndürülür `-1` .
+- *Biçim* **null**ise veya *arabellek* **null** ise ve *sayı* sıfıra eşit değilse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır, ardından verileri biçimlendirir ve *arabelleğe*göre işaret eden belleğe *sayı* karakteri yazar. **Vsnprintf** işlevi, çıktıyı kesen bile her zaman bir null Sonlandırıcı yazar. **_Vsnprintf** ve **_vsnwprintf**kullanılırken, yalnızca sonda yer varsa (yani, yazılacak *karakter sayısı sayıdan küçükse),* arabellek null olarak sonlandırılır.
+Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır, ardından verileri biçimlendirir ve *arabelleğe*göre işaret eden belleğe *sayı* karakteri yazar. **Vsnprintf** işlevi, çıktıyı kesen bile her zaman bir null Sonlandırıcı yazar. **_Vsnprintf** ve **_vsnwprintf**kullanılırken, arabellek yalnızca sonda yer alıyorsa (yani, yazılacak *karakter sayısı sayıdan küçükse) null*olarak sonlandırılır.
 
 > [!IMPORTANT]
 > Belirli güvenlik riskleri türlerini engellemek için, *biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 > [!NOTE]
-> **_Vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** ve **_vsnwprintf_l**çağrılırken, Sonlandırıcı null değeri olduğundan emin olmak için, *Count* 'un arabellek uzunluğundan kesinlikle daha az olduğundan emin olun ve işlevi çağırmadan önce arabelleği null olarak başlatın.
+> **_Vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** ve **_vsnwprintf_l**çağrılırken, Sonlandırıcı null için yer olduğundan emin olmak için, *Count* 'un arabellek uzunluğundan kesinlikle daha az olduğundan emin olun ve işlevi çağırmadan önce arabelleği null olarak başlatın.
 >
 > **Vsnprintf** her zaman Sonlandırıcı null değerini yazdığından, *Count* parametresi arabelleğin boyutuna eşit olabilir.
 
@@ -185,7 +187,7 @@ Visual Studio 2015 ve Windows 10 ' da UıCRT ile başlayarak, **vsnprintf** art�
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
-C++ dilinde, bu işlevlerin daha yeni ve güvenli karşıtlarını başlatan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -196,10 +198,10 @@ C++ dilinde, bu işlevlerin daha yeni ve güvenli karşıtlarını başlatan şa
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgiC++()|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------------|-------------------------------|
-|**vsnprintf**, **_vsnprintf** **_vsnprintf_l**|\<stdio. h >|\<stdio. h > veya \<cstdio >|
-|**_vsnwprintf**, **_vsnwprintf_l**|\<stdio. h > veya \<wchar. h >|\<stdio. h >, \<wchar. h >, \<cstdio > veya \<cwchar >|
+|**vsnprintf**, **_vsnprintf** **_vsnprintf_l**|\<stdio.h>|\<stdio.h> veya \<cstdio>|
+|**_vsnwprintf**, **_vsnwprintf_l**|\<stdio.h> veya \<wchar.h>|\<stdio.h>, \<wchar.h> , \<cstdio> veya\<cwchar>|
 
 **_Vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** ve **_vsnwprintf_l** işlevleri Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -283,10 +285,10 @@ nSize: 10, buff: Hi there!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
-[vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
-[Biçim Belirtim Sözdizimi: printf ve wprintf İşlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
+[vprintf Işlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
+[Biçim belirtimi sözdizimi: printf ve wprintf Işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>

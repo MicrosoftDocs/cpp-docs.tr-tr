@@ -28,12 +28,12 @@ helpviewer_keywords:
 - processor time used
 - calculating processor time used
 ms.assetid: 3e1853dd-498f-49ba-b06a-f2315f20904e
-ms.openlocfilehash: 836d0c6448adb4c99a251a0e97aa642e30362dcb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 660c97882151127cc6c1caa64bb27f5728f169fb
+ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939124"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85737469"
 ---
 # <a name="clock"></a>saat
 
@@ -47,19 +47,19 @@ clock_t clock( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlemin başlangıcında, saniye başına **CLOCKS_PER_SEC** birim cınsınden ölçülen CRT başlatmasından bu yana geçen süre. Geçen süre kullanılamıyorsa veya bir **clock_t** türü olarak kaydedilebilen en uzun pozitif süreyi aşarsa, işlev değeri `(clock_t)(-1)`döndürür.
+İşlemin başlangıcında, saniye başına **CLOCKS_PER_SEC** birim cınsınden ölçülen CRT başlatmasından bu yana geçen süre. Geçen süre kullanılamıyorsa veya **clock_t** türü olarak kaydedilebilen en uzun pozitif süreyi aşarsa, işlev değeri döndürür `(clock_t)(-1)` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Clock** işlevi, işlem BAŞLANGıCı sırasında CRT başlatmadan bu yana ne kadar duvar saati saati geçtiğini söyler. Bu işlevin, dönüş değeri olarak net CPU süresini belirten ISO C 'ye kesinlikle uyumlu olmadığına unutmayın. CPU sürelerini almak için Win32 [GetProcessTimes](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getprocesstimes) işlevini kullanın. Geçen süreyi saniye cinsinden öğrenmek için, **saat** işlevi tarafından döndürülen değeri Macro **CLOCKS_PER_SEC**ile bölün.
+**Clock** işlevi, işlem BAŞLANGıCı sırasında CRT başlatmadan bu yana ne kadar duvar saati saati geçtiğini söyler. Bu işlevin, dönüş değeri olarak net CPU süresini belirten ISO C 'ye kesinlikle uyumlu olmadığına unutmayın. CPU sürelerini almak için Win32 [GetProcessTimes](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getprocesstimes) işlevini kullanın. Geçen süreyi saniye cinsinden öğrenmek için, makro **CLOCKS_PER_SEC** **saat** işlevi tarafından döndürülen değeri bölün.
 
-Yeterli zaman verildiğinde, **saat** tarafından döndürülen değer **clock_t**en fazla pozitif değerini aşabilir. İşlem daha uzun süre çalıştığında, ISO C99 Standard (7.23.2.1 ) ve ISO `(clock_t)(-1)`C11 standardı (7.27.2.1) tarafından belirtilen şekilde saat tarafından döndürülen değer her zaman olur. Microsoft, **clock_t** 'i **uzun**, imzalanmış 32 bitlik bir tamsayı ve **CLOCKS_PER_SEC** makrosu 1000 olarak tanımlanır. Bu, 2147483,647 saniyelik bir maksimum **saat** işlevi dönüş değeri veya yaklaşık 24,8 gün verir. Bu süreden daha uzun süredir çalışan işlemlerde **saatin** döndürdüğü değere güvenmeyin. Birkaç yıla ait işlem geçen süreleri kaydetmek için 64 bit [zaman](time-time32-time64.md) Işlevini veya Windows [QueryPerformanceCounter](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) işlevini kullanabilirsiniz.
+Yeterli zaman verildiğinde, **saat** tarafından döndürülen değer **clock_t**en büyük pozitif değeri aşabilir. İşlem daha uzun süre çalıştığında, **clock** `(clock_t)(-1)` ISO C99 Standard (7.23.2.1) ve ISO C11 standardı (7.27.2.1) tarafından belirtilen şekilde saat tarafından döndürülen değer her zaman olur. Microsoft **clock_t** **uzun**, imzalanmış 32 bitlik bir tamsayı ve **CLOCKS_PER_SEC** makro 1000 olarak tanımlanır. Bu, 2147483,647 saniyelik bir maksimum **saat** işlevi dönüş değeri veya yaklaşık 24,8 gün verir. Bu süreden daha uzun süredir çalışan işlemlerde **saatin** döndürdüğü değere güvenmeyin. Birkaç yıla ait işlem geçen süreleri kaydetmek için 64 bit [zaman](time-time32-time64.md) Işlevini veya Windows [QueryPerformanceCounter](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) işlevini kullanabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**clock**|\<Time. h >|
+|**saat**|\<time.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -75,7 +75,7 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 #include <stdlib.h>
 #include <time.h>
 
-// Pauses for a specified number of milliseconds.
+// Pauses for a specified number of clock cycles.
 void do_sleep( clock_t wait )
 {
    clock_t goal;
