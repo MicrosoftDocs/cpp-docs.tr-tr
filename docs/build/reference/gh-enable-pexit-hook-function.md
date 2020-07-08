@@ -1,6 +1,7 @@
 ---
-title: /GH (_pexit Kanca İşlevini Etkinleştir)
-ms.date: 11/04/2016
+title: /GH (_pexit kanca işlevini etkinleştir)
+description: Yerel bir _pexit Kanca işlevi ayarlamak için/GH derleyici seçeneğini açıklar.
+ms.date: 07/06/2020
 f1_keywords:
 - _pexit
 helpviewer_keywords:
@@ -9,44 +10,41 @@ helpviewer_keywords:
 - _pexit function
 - -Gh compiler option [C++]
 ms.assetid: 93181453-2676-42e5-bf63-3b19e07299b6
-ms.openlocfilehash: 5382ba90f490aaa12e9e55767fdf15170a69ced5
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
-ms.translationtype: MT
+ms.openlocfilehash: b8fc355503055af8b928874ced39cb8224901d3e
+ms.sourcegitcommit: 85d96eeb1ce41d9e1dea947f65ded672e146238b
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81749231"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86058613"
 ---
-# <a name="gh-enable-_pexit-hook-function"></a>/GH (_pexit Kanca İşlevini Etkinleştir)
+# <a name="gh-enable-_pexit-hook-function"></a>/GH (_pexit kanca işlevini etkinleştir)
 
-Her `_pexit` yöntemin veya işlevin sonundaki işlevi çağırır.
+`_pexit`Her yöntemin veya işlevin sonundaki işlevi çağırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-```
-/GH
-```
+> **`/GH`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev `_pexit` herhangi bir kitaplığın bir parçası değildir ve `_pexit`bir tanım sağlamak size kalmış.
+`_pexit`İşlev herhangi bir kitaplığın parçası değil. İçin bir tanım sağlamanız gerekir `_pexit` .
 
-Açıkça aramayı `_pexit`planlamadığınız sürece, bir prototip sağlamanız gerekmez. İşlev aşağıdaki prototipe sahipmiş gibi görünmelidir ve girişteki tüm kayıtların içeriğini itmeli ve çıkışta değişmemiş içeriği patlatmalıdır:
+Açıkça çağırmanız planlanmadığınız takdirde `_pexit` , prototip sağlamanız gerekmez. İşlev, girişte tüm Yazmaçların içeriğini itmeli ve çıkışta değiştirilmeyen içeriği bir pencerede döndürmelidir. Aşağıdaki prototiple sahip gibi görünmelidir:
 
 ```cpp
 void __declspec(naked) __cdecl _pexit( void );
 ```
 
-`_pexit`benzer; `_penter` bir `_pexit` işlevin nasıl yazılalabildiğini görmek için [/Gh (Enable _penter Hook Function)](gh-enable-penter-hook-function.md) bölümüne bakın.
+Bu bildirim 64-bit projeler için kullanılamaz.
+
+`_pexit`Şuna benzerdir `_penter` ; bir işlevin nasıl yazılacağını gösteren bir örnek için bkz. [ `/Gh` (_penter Kanca işlevini etkinleştir)](gh-enable-penter-hook-function.md) `_penter` .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **C/C++** klasörünü tıklatın.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** özellik sayfasını açın.
 
-1. Komut **Satırı** özelliği sayfasını tıklatın.
-
-1. **Ek Seçenekler** kutusuna derleyici seçeneğini yazın.
+1. **Ek seçenekler** kutusunda derleyici seçeneğini girin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -54,5 +52,6 @@ void __declspec(naked) __cdecl _pexit( void );
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyicisi seçenekleri](compiler-options.md)<br/>
+[MSVC derleyicisi komut satırı söz dizimi](compiler-command-line-syntax.md)<br/>
+[`/Gh`(_Penter Kanca işlevini etkinleştir)](gh-enable-penter-hook-function.md)
