@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 1510a082-8a0e-486e-a309-6add814b494f
 ms.openlocfilehash: 96597d964e6a341aa25f4d52d34974949eb7b096
 ms.sourcegitcommit: 85d96eeb1ce41d9e1dea947f65ded672e146238b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "86058588"
@@ -20,7 +21,7 @@ ms.locfileid: "86058588"
 
 `_penter`Her yöntemin veya işlevin başlangıcında işleve bir çağrı oluşmasına neden olur.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 > **`/Gh`**
 

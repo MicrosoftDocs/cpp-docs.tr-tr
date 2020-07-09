@@ -8,15 +8,15 @@ helpviewer_keywords:
 - C4996
 ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
 ms.openlocfilehash: 98662dc0b5439c1f8857e4f2ad259793a4d03e41
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.sourcegitcommit: e17cc8a478b51739d67304d7d82422967b35f716
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
+ms.lasthandoff: 07/08/2020
 ms.locfileid: "79419380"
 ---
 # <a name="compiler-warning-level-3-c4996"></a>Derleyici Uyarısı (düzey 3) C4996
 
-Kodunuz, *kullanım dışı*olarak işaretlenmiş bir işlev, sınıf üyesi, değişken veya typedef kullanır. Semboller [__declspec (kullanım dışı)](../../cpp/deprecated-cpp.md) değiştirici kullanılarak kullanımdan kaldırılmıştır veya c++ 14 [\[\[\]\]özniteliği kullanımdan kaldırılmıştır](../../cpp/attributes.md) . Gerçek C4996 uyarı iletisi `deprecated` değiştirici veya bildirimin özniteliği tarafından belirtilir.
+Kodunuz, *kullanım dışı*olarak işaretlenmiş bir işlev, sınıf üyesi, değişken veya typedef kullanır. Semboller [__declspec (kullanım dışı)](../../cpp/deprecated-cpp.md) değiştiricisi veya c++ 14 [ \[ \[ kullanım dışı \] \] ](../../cpp/attributes.md) özniteliği kullanılarak kullanımdan kaldırılmıştır. Gerçek C4996 uyarı iletisi `deprecated` bildirimin değiştirici veya özniteliğiyle belirtilir.
 
 > [!IMPORTANT]
 > Bu uyarı, simgeyi bildiren üstbilgi dosyasının yazarından her zaman bir bilinçli iletisidir. Kullanılmayan sembolü sonuçları anlayamaksızın kullanmayın.
@@ -29,9 +29,9 @@ Visual Studio kitaplıklarında birçok işlev, üye işlevi, Şablon işlevleri
 
 Bir C4996 sorununu onarmak için genellikle kodunuzun değiştirilmesini öneririz. Bunun yerine önerilen işlevleri ve genel değişkenleri kullanın. Taşınabilirlik nedenleriyle mevcut işlevleri veya değişkenleri kullanmanız gerekiyorsa, uyarıyı kapatabilirsiniz.
 
-Belirli bir kod satırı uyarısını kapatmak için, `#pragma warning(suppress : 4996)`[Uyarı](../../preprocessor/warning.md) pragmasını kullanın.
+Belirli bir kod satırıyla ilgili uyarıyı kapatmak için, [Uyarı](../../preprocessor/warning.md) pragmasını kullanın `#pragma warning(suppress : 4996)` .
 
-Bir dosya içindeki uyarıyı kapatmak için, `#pragma warning(disable : 4996)`uyarı pragmasını kullanın.
+Bir dosya içindeki uyarıyı kapatmak için, uyarı pragmasını kullanın `#pragma warning(disable : 4996)` .
 
 Komut satırı Derlemeleriyle uyarı genel olarak devre dışı bırakmak için [/wd4996](../../build/reference/compiler-option-warning-level.md) komut satırı seçeneğini kullanın.
 
@@ -39,9 +39,9 @@ Visual Studio IDE 'deki bir projenin tamamına yönelik uyarıyı kapatmak için
 
 1. Projeniz için **Özellik sayfaları** iletişim kutusunu açın. Özellik sayfaları iletişim kutusunu kullanma hakkında daha fazla bilgi için bkz. [Özellik sayfaları](../../build/reference/property-pages-visual-cpp.md).
 
-1. **Yapılandırma özellikleri** > **C/C++**  > **Gelişmiş** sayfası ' nı seçin.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **Gelişmiş** sayfasını seçin.
 
-1. `4996`eklemek için **belirli uyarıları devre dışı bırak** özelliğini düzenleyin. Değişikliklerinizi uygulamak için **Tamam ' ı** seçin.
+1. Eklemek için **belirli uyarıları devre dışı bırak** özelliğini düzenleyin `4996` . Değişikliklerinizi uygulamak için **Tamam ' ı** seçin.
 
 Ayrıca, kitaplıklarda kullanılan belirli bir kullanımdan kaldırma uyarılarını devre dışı bırakmak için Önişlemci makrolarını de kullanabilirsiniz. Bu makrolar aşağıda açıklanmıştır.
 
@@ -49,45 +49,45 @@ Visual Studio 'da bir önişlemci makrosu tanımlamak için:
 
 1. Projeniz için **Özellik sayfaları** iletişim kutusunu açın. Özellik sayfaları iletişim kutusunu kullanma hakkında daha fazla bilgi için bkz. [Özellik sayfaları](../../build/reference/property-pages-visual-cpp.md).
 
-1. **Yapılandırma özellikleri > CC++ /> Önişlemci**' yi genişletin.
+1. **Yapılandırma özellikleri > C/C++ > Önişlemci**' yi genişletin.
 
 1. Ön **Işlemci tanımları** özelliğinde makro adını ekleyin. Kaydetmek için **Tamam** ' ı seçin ve ardından projenizi yeniden derleyin.
 
-Yalnızca belirli kaynak dosyalarında bir makro tanımlamak için, üstbilgi dosyası içeren herhangi bir satırdan önce `#define EXAMPLE_MACRO_NAME` gibi bir satır ekleyin.
+Yalnızca belirli kaynak dosyalarında bir makro tanımlamak için, `#define EXAMPLE_MACRO_NAME` bir başlık dosyası içeren herhangi bir satırdan önce gibi bir satır ekleyin.
 
 C4996 uyarı ve hataların yaygın kaynaklarından bazıları şunlardır:
 
 ## <a name="posix-function-names"></a>POSIX işlev adları
 
-**Bu öğenin POSIX adı kullanım dışıdır. Bunun yerine, ISO C ve C++ uyumlu adı kullanın:** *New-Name*. **Ayrıntılar için çevrimiçi yardıma bakın.**
+**Bu ÖĞENIN POSIX adı kullanım dışıdır. Bunun yerine, ISO C ve C++ uyumlu adı kullanın:** *New-Name*. **Ayrıntılar için çevrimiçi yardıma bakın.**
 
 Microsoft, ayrılmış ve genel uygulama tanımlı adlarla C99 ve C++ 03 kısıtlamalarına uyum sağlamak için CRT 'daki bazı POSIX ve Microsoft 'a özgü kitaplık işlevlerini yeniden adlandırdı. *İşlevlerin kendisi değil, yalnızca adlar kullanım dışıdır*. Çoğu durumda, uygun bir ad oluşturmak için işlev adına bir öncü alt çizgi eklenmiştir. Derleyici, özgün işlev adı için kullanımdan kaldırma uyarısı verir ve tercih edilen adı önerir.
 
 Bu sorunu onarmak için genellikle kodunuzu önerilen işlev adlarını kullanacak şekilde değiştirmenizi öneririz. Ancak, güncelleştirilmiş adlar Microsoft 'a özgüdür. Taşınabilirlik nedenleriyle var olan işlev adlarını kullanmanız gerekiyorsa, bu uyarıları devre dışı bırakabilirsiniz. İşlevler, kitaplıkta orijinal adları altında hala kullanılabilir.
 
-Bu işlevler için kullanımdan kaldırma uyarılarını kapatmak için,\_ön işlemci makrosunu **\_bir\_uyarı\_olmayan CRT**' ı tanımlayın. Bu makroyu komut satırında, `/D_CRT_NONSTDC_NO_WARNINGS`seçeneğini ekleyerek tanımlayabilirsiniz.
+Bu işlevlere yönelik kullanımdan kaldırma uyarılarını kapatmak için, ön işlemci makrosunu ** \_ CRT olmayan bir \_ \_ \_ uyarı yok**tanımlayın. Bu makroyu komut satırında, seçeneğini ekleyerek tanımlayabilirsiniz `/D_CRT_NONSTDC_NO_WARNINGS` .
 
 ## <a name="unsafe-crt-library-functions"></a>Güvenli olmayan CRT kitaplığı işlevleri
 
-**Bu işlev veya değişken güvenli olmayabilir.** Bunun yerine *güvenli sürüm* kullanmayı düşünün **. Kullanımdan kaldırmayı devre dışı bırakmak için \_CRT\_GÜVENLI\_\_uyarı olmadan kullanın.  Ayrıntılar için çevrimiçi yardıma bakın.**
+**Bu işlev veya değişken güvenli olmayabilir. **Bunun yerine *güvenli sürüm* kullanmayı düşünün **. Kullanımdan kaldırmayı devre dışı bırakmak için \_ CRT \_ güvenli \_ uyarı yok ' u kullanın \_ .  Ayrıntılar için çevrimiçi yardıma bakın.**
 
-Daha güvenli sürümler kullanılabilir olduğundan C++ , MICROSOFT bazı CRT ve standart kitaplık işlevlerini ve genellerini kullanımdan kaldırılmıştır. Kullanım dışı bırakılan işlevlerin çoğu arabelleklere denetlenmeyen okuma veya yazma erişimine izin verir. Kötüye kullanımı ciddi güvenlik sorunlarına neden olabilir. Derleyici bu işlevler için kullanımdan kaldırma uyarısı verir ve tercih edilen işlevi önerir.
+Daha güvenli sürümler mevcut olduğundan Microsoft bazı CRT ve C++ standart kitaplık işlevlerini ve genel kullanım dışı bırakıldı. Kullanım dışı bırakılan işlevlerin çoğu arabelleklere denetlenmeyen okuma veya yazma erişimine izin verir. Kötüye kullanımı ciddi güvenlik sorunlarına neden olabilir. Derleyici bu işlevler için kullanımdan kaldırma uyarısı verir ve tercih edilen işlevi önerir.
 
 Bu sorunu onarmak için bunun yerine işlevi veya değişkeni *güvenli sürüm* kullanmanız önerilir. Bazen taşınabilirlik veya geriye doğru uyumluluk nedenleriyle yapamazsınız. Kodunuzda bir arabellek üzerine yazma veya aşırı okuma için mümkün olmadığından emin olun. Ardından, uyarıyı devre dışı bırakabilirsiniz.
 
-CRT 'daki bu işlevler için kullanımdan kaldırma uyarılarını kapatmak için, **\_crt\_güvenli\_\_uyarı olmadan**tanımlayın.
+CRT 'daki bu işlevler için kullanımdan kaldırma uyarılarını kapatmak için, ** \_ CRT \_ güvenli \_ \_ uyarı yok**' u tanımlayın.
 
-Kullanım dışı bırakılan Global değişkenlerle ilgili uyarıları kapatmak için, **\_CRT\_güvenli\_tanımlayın\_uyarı\_genel**.
+Kullanım dışı bırakılan Global değişkenlerle ilgili uyarıları kapatmak için ** \_ CRT \_ güvenli \_ olmayan \_ Uyarı \_ genel**değerleri tanımlayın.
 
-Kullanım dışı bırakılan bu işlevler ve Globals hakkında daha fazla bilgi için bkz. CRT ve güvenli kitaplıklarda [güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md) [ C++ : standart kitaplık](../../standard-library/safe-libraries-cpp-standard-library.md).
+Kullanım dışı bırakılan bu işlevler ve Globals hakkında daha fazla bilgi için bkz. CRT ve güvenli kitaplıklarda [güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md) [: C++ standart kitaplığı](../../standard-library/safe-libraries-cpp-standard-library.md).
 
 ## <a name="unsafe-standard-library-functions"></a>Güvenli olmayan standart kitaplık işlevleri
 
-__' std::__ *function_name* __::\_işaretlenmeyen\_yineleyiciler::\_güvenli olmayan parametrelerle ' std::__ *function_name* çağrısı kaldırıldı **-Bu çağrı, geçilen değerlerin doğru olup olmadığını denetlemek için çağrıyı yapana bağımlıdır. Bu uyarıyı devre dışı bırakmak için-D\_SCL\_GÜVENLI\_\_uyarı olmadan kullanın. Görsel C++ ' denetlenen yineleyiciler ' kullanma hakkında belgelere bakın**
+__' std::__*function_name*__:: \_ işaretlenmeyen \_ yineleyiciler:: \_ ' std:: function_name çağrısı__*function_name* **güvenli olmayabilecek parametrelerle-bu çağrı, geçirilen değerlerin doğru olup olmadığını denetlemek için çağrıyı yapana bağımlıdır. Bu uyarıyı devre dışı bırakmak için-D \_ SCL \_ güvenli \_ uyarı yok ' u kullanın \_ . ' Denetlenen yineleyiciler ' Visual C++ kullanımı hakkındaki belgelere bakın**
 
-Bu uyarı, bazı C++ standart kitaplık şablonu işlevleri doğruluk için parametreleri denetlemediğinden, hata ayıklama yapılarında görüntülenir. Genellikle bu durum, işlevin kapsayıcı sınırlarını denetlemek için yeterli bilgi olmadığı için kullanılır. Ya da yineleyiciler işlevle yanlış bir şekilde kullanılabilir. Bu uyarı, programınızda önemli güvenlik delikleri kaynağı olabileceğinden, bu işlevleri belirlemenize yardımcı olur. Daha fazla bilgi için bkz. [Checked Iterators](../../standard-library/checked-iterators.md).
+Bu uyarı, bazı C++ standart kitaplık şablonu işlevleri doğruluğu için parametreleri denetlemediğinden, hata ayıklama yapılarında görüntülenir. Genellikle bu durum, işlevin kapsayıcı sınırlarını denetlemek için yeterli bilgi olmadığı için kullanılır. Ya da yineleyiciler işlevle yanlış bir şekilde kullanılabilir. Bu uyarı, programınızda önemli güvenlik delikleri kaynağı olabileceğinden, bu işlevleri belirlemenize yardımcı olur. Daha fazla bilgi için bkz. [Checked Iterators](../../standard-library/checked-iterators.md).
 
-Örneğin, düz dizi yerine `std::copy`bir öğe işaretçisi geçirirseniz, bu uyarı hata ayıklama modunda görüntülenir. Bu sorunu giderecek şekilde, uygun şekilde tanımlanmış bir dizi kullanın, böylece kitaplık dizi kapsamlarını denetleyebilir ve sınır denetimi yapabilir.
+Örneğin, düz dizi yerine öğesine bir öğe işaretçisi geçirirseniz, bu uyarı hata ayıklama modunda görüntülenir `std::copy` . Bu sorunu giderecek şekilde, uygun şekilde tanımlanmış bir dizi kullanın, böylece kitaplık dizi kapsamlarını denetleyebilir ve sınır denetimi yapabilir.
 
 ```cpp
 // C4996_copyarray.cpp
@@ -208,11 +208,11 @@ int main()
 }
 ```
 
-Kodunuzun arabellek taşması hatası olmadığını doğruladıysanız, bu uyarıyı devre dışı bırakabilirsiniz. Bu işlevlere yönelik uyarıları kapatmak için, **\_uyarı olmadan\_SCL\_güvenli\_** tanımlayın.
+Kodunuzun arabellek taşması hatası olmadığını doğruladıysanız, bu uyarıyı devre dışı bırakabilirsiniz. Bu işlevlere yönelik uyarıları kapatmak için, ** \_ SCL \_ güvenli \_ \_ uyarı yok**' u tanımlayın.
 
 ## <a name="checked-iterators-enabled"></a>İşaretli yineleyiciler etkin
 
-C4996, `_ITERATOR_DEBUG_LEVEL` 1 veya 2 olarak tanımlandığında denetlenen Yineleyici kullanmıyorsanız da oluşabilir. Hata ayıklama modu derlemeleri için varsayılan olarak 2 ' ye ve perakende derlemeler için 0 ' a ayarlanır. Daha fazla bilgi için bkz. [Checked Iterators](../../standard-library/checked-iterators.md).
+C4996, denetlenen Yineleyici kullanmıyorsanız `_ITERATOR_DEBUG_LEVEL` 1 veya 2 olarak tanımlandığında da oluşabilir. Hata ayıklama modu derlemeleri için varsayılan olarak 2 ' ye ve perakende derlemeler için 0 ' a ayarlanır. Daha fazla bilgi için bkz. [Checked Iterators](../../standard-library/checked-iterators.md).
 
 ```cpp
 // C4996_checked.cpp
@@ -244,19 +244,19 @@ Bu uyarıları gösterme hakkında daha fazla bilgi için bkz. [_AFX_SECURE_NO_W
 
 ## <a name="obsolete-crt-functions-and-variables"></a>Eski CRT işlevleri ve değişkenleri
 
-**Bu işlevin veya değişkenin yerini yeni kitaplık veya işletim sistemi işlevselliği almıştır.**  *new_item* **Bunun yerine new_item kullanmayı düşünün. Ayrıntılar için çevrimiçi yardıma bakın.**
+**Bu işlevin veya değişkenin yerini yeni kitaplık veya işletim sistemi işlevselliği almıştır. ** *new_item* **Bunun yerine new_item kullanmayı düşünün. Ayrıntılar için çevrimiçi yardıma bakın.**
 
 Bazı kitaplık işlevleri ve genel değişkenler kullanımdan kaldırılmıştır. Bu işlevler ve değişkenler, kitaplığın gelecek bir sürümünde kaldırılabilir. Derleyici bu öğeler için kullanımdan kaldırma uyarısı verir ve tercih edilen alternatifi önerir.
 
 Bu sorunu gidermeye yönelik olarak, kodunuzu önerilen işlevi veya değişkeni kullanacak şekilde değiştirmenizi öneririz.
 
-Bu öğeler için kullanımdan kaldırma uyarılarını kapatmak için, **\_uyarı\_kullanılmayan\_CRT\_** tanımlayın. Daha fazla bilgi için, kullanım dışı işlev veya değişken için belgelere bakın.
+Bu öğeler için kullanımdan kaldırma uyarılarını kapatmak için, ** \_ CRT olmayan bir \_ \_ \_ uyarı yok**tanımlayın. Daha fazla bilgi için, kullanım dışı işlev veya değişken için belgelere bakın.
 
 ## <a name="marshaling-errors-in-clr-code"></a>CLR kodundaki hataları sıralama
 
-C4996, CLR sıralama kitaplığını kullandığınızda da oluşabilir. Bu durumda, C4996 bir uyarı değil, bir hatadır. [Marshal_context sınıfı](../../dotnet/marshal-context-class.md)gerektiren iki veri türü arasında dönüştürmek için [marshal_as](../../dotnet/marshal-as.md) kullandığınızda hata oluşur. Sıralama kitaplığı bir dönüştürmeyi desteklemiyorsa da bu hatayı alabilirsiniz. Sıralama kitaplığı hakkında daha fazla bilgi için bkz. [' de C++sıralamaya genel bakış ](../../dotnet/overview-of-marshaling-in-cpp.md).
+C4996, CLR sıralama kitaplığını kullandığınızda da oluşabilir. Bu durumda, C4996 bir uyarı değil, bir hatadır. [Marshal_context sınıfı](../../dotnet/marshal-context-class.md)gerektiren iki veri türü arasında dönüştürmek için [marshal_as](../../dotnet/marshal-as.md) kullandığınızda hata oluşur. Sıralama kitaplığı bir dönüştürmeyi desteklemiyorsa da bu hatayı alabilirsiniz. Sıralama kitaplığı hakkında daha fazla bilgi için bkz. [C++ ' da sıralamaya genel bakış](../../dotnet/overview-of-marshaling-in-cpp.md).
 
-Bu örnek C4996 oluşturur çünkü sıralama kitaplığı bir `System::String` bir `const char *`dönüştürmek için bağlam gerektirir.
+Bu örnek, C4996 oluşturur, çünkü sıralama kitaplığı bir ' dan ' a dönüştürmek için bağlam gerektirir `System::String` `const char *` .
 
 ```cpp
 // C4996_Marshal.cpp

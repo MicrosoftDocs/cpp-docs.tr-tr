@@ -1,36 +1,36 @@
 ---
 title: noalias
-ms.date: 02/09/2018
+ms.date: 07/07/2020
 f1_keywords:
 - noalias_cpp
 helpviewer_keywords:
 - noalias __declspec keyword
 - __declspec keyword [C++], noalias
 ms.assetid: efafa8b0-7f39-4edc-a81e-d287ae882c9b
-ms.openlocfilehash: 2eceffd10f97615859918991320ceebf577d094c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 70c1f4e8bfa426e858014a78febc424b473a89ae
+ms.sourcegitcommit: e17cc8a478b51739d67304d7d82422967b35f716
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377445"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86127868"
 ---
-# <a name="noalias"></a>noalias
+# `noalias`
 
 **Microsoft'a özgü**
 
-**noalias** bir işlev çağrısı değiştirmeyin veya başvuru görünür genel durumu, anlamına gelir ve yalnızca işaret edilen bellek değiştirir *doğrudan* işaretçi parametrelerini (birinci düzey yöneltmeye) tarafından.
+**`noalias`** bir işlev çağrısının görünür genel durumu değiştirmediği veya başvurmayacağı ve yalnızca işaretçi *parametrelerine göre işaret* edilen belleği değiştirmeyeceği anlamına gelir (ilk düzey inyönler).
 
-Bir işlev olarak eklenmişse **noalias**, iyileştirici parametrelerinin kendilerini ek olarak, yalnızca ilk düzeyi yöneltmeye işaretçi parametrelerinin başvurulan veya işlev içinde değiştirilen, kabul edilebilir. Görünür genel durum değil tanımlanan veya başvurulan derleme kapsamı dışında tüm veri kümesidir ve kendi adres değil alınır. Tüm kaynak dosyaları derleme kapsamıdır ([/LTCG (bağlama zamanı kodu oluşturma)](../build/reference/ltcg-link-time-code-generation.md) oluşturur) veya tek bir kaynak dosyası (olmayan **/LTCG** oluşturun).
+Bir işleve olarak ek açıklama eklendiğinde **`noalias`** , iyileştirici yalnızca parametrelerin kendileri ve işaretçi parametrelerinin yalnızca birinci düzeyindeki yönlere başvurulduğunu veya işlevin içinde değiştirildiğini varsayabilir.
 
-**Noalias** ek açıklama yalnızca açıklamalı işlevinin gövdesi içinde geçerlidir. Bir işlev olarak işaretleme **__declspec(noalias)** işaretçiler işlev tarafından döndürülen yumuşatma etkilemez.
+**`noalias`** Ek açıklama yalnızca açıklamalı işlevin gövdesinde geçerlidir. İşlevin olarak işaretlenmesi **`__declspec(noalias)`** , işlev tarafından döndürülen işaretçilerin diğer adını etkilemez.
 
-Diğer ad kullanımı etkileyebilir başka bir açıklama için bkz. [__declspec(restrict)](../cpp/restrict.md).
+Diğer ad ve diğer açıklamaları etkileyebilecek diğer bir açıklama için bkz [`__declspec(restrict)`](../cpp/restrict.md) ..
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, kullanımını gösterir **__declspec(noalias)**.
+Aşağıdaki örnek öğesinin kullanımını gösterir **`__declspec(noalias)`** .
 
-İşlev `multiply` erişimleri bellek açıklanıyor **__declspec(noalias)**, bu işlev işaretçileri, parametre listesindeki aracılığıyla dışında genel durumunu değiştirmez derleyiciye bildirir.
+`multiply`Belleğe erişen işleve ek açıklama eklendiğinde **`__declspec(noalias)`** , derleyiciye bu işlevin parametre listesindeki işaretçiler dışında genel durumu değiştirmediğini söyler.
 
 ```C
 // declspec_noalias.c
@@ -100,6 +100,6 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__declspec](../cpp/declspec.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[__declspec(restrict)](../cpp/restrict.md)
+[`__declspec`](../cpp/declspec.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[`__declspec(restrict)`](../cpp/restrict.md)

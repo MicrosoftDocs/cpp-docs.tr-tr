@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 585c1dc4-5184-4f01-98f4-80c1909744d7
 ms.openlocfilehash: 7b671cfdf5d5ce43024ac3e038c214396ac8679c
 ms.sourcegitcommit: 85d96eeb1ce41d9e1dea947f65ded672e146238b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "86058626"
@@ -19,7 +20,7 @@ ms.locfileid: "86058626"
 
 **#Line** yönergesi Önişlemci 'ya, satır numarası ve dosya adı için derleyicinin bildirilen değerlerini belirli bir satır numarasına ve dosya adına ayarlamaya bildirir.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 > **`#line`***basamak sırası* ["*dosya adı*"]
 

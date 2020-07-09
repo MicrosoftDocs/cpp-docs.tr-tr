@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 93181453-2676-42e5-bf63-3b19e07299b6
 ms.openlocfilehash: b8fc355503055af8b928874ced39cb8224901d3e
 ms.sourcegitcommit: 85d96eeb1ce41d9e1dea947f65ded672e146238b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "86058613"
@@ -20,7 +21,7 @@ ms.locfileid: "86058613"
 
 `_pexit`Her yöntemin veya işlevin sonundaki işlevi çağırır.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 > **`/GH`**
 
