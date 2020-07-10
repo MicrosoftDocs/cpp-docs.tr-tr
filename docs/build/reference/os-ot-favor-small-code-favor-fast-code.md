@@ -1,6 +1,7 @@
 ---
 title: /Os, /Ot (Küçük Koda Ayrıcalık Tanı, Hızlı Koda Ayrıcalık Tanı)
-ms.date: 11/04/2016
+description: MSVC derleyici seçenekleri/OS ve/ot kodu iyileştirirken boyut veya hız için kullanılıp kullanılmayacağını belirtir.
+ms.date: 07/08/2020
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.FavorSizeOrSpeed
 - /os
@@ -17,43 +18,39 @@ helpviewer_keywords:
 - Os compiler option [C++]
 - -Os compiler option [C++]
 ms.assetid: 9a340806-fa15-4308-892c-355d83cac0f2
-ms.openlocfilehash: 0eda9461b3ef730e0e0a832aa94a688e03c7e1bb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 384019ddf7b80b8dd4e00197d73d1e4ac536634c
+ms.sourcegitcommit: 80c8a512b361bd84e38958beb1a1bf6db7434021
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81336181"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86180831"
 ---
-# <a name="os-ot-favor-small-code-favor-fast-code"></a>/Os, /Ot (Küçük Koda Ayrıcalık Tanı, Hızlı Koda Ayrıcalık Tanı)
+# <a name="os-ot-favor-small-code-favor-fast-code"></a>`/Os`, `/Ot` (Küçük koda öncelik ver, hızlı koda tercih et)
 
-EX'lerin ve DL'lerin boyutunu en aza indirir veya en üst düzeye çıkarır.
+EXEs ve DLL 'Lerin boyutunu en aza indirir veya en üst düzeye çıkarır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-/Os
-/Ot
-```
+> **`/Os`**\
+> **`/Ot`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Os** (Favor Small Code), derleyiciye boyutu hızdan daha fazla tercih etmesi için talimat vererek EX'lerin ve DL'lerin boyutunu en aza indirir. Derleyici birçok C ve C++ yapısını işlevsel olarak benzer makine kodu dizilerine indirgeyebilir. Bazen bu farklılıklar boyut karşı hız tradeoffs sunuyoruz. **/Os** ve **/Ot** seçenekleri, biri için bir tercihi diğerinden daha belirtmenize olanak sağlar:
+**`/Os`**(Küçük koda öncelik ver), derleyicisini hız üzerinden kullanmayı tercih etmek üzere karşılaştırarak, EXEs ve DLL 'Lerin boyutunu en aza indirir. Derleyici, çok sayıda C ve C++ yapısını işlevsel bir makine kodu sırası ile azaltabilir. Bu farklılıklar bazen boyut ve hız açısından bir denge sağlar. **`/Os`** Ve seçenekleri, diğerinin **`/Ot`** yerine bir tercih belirtmenizi sağlar:
 
-**/Ot** (Favor Fast Code), derleyiciye boyutun üzerindeki hızı tercih etmesini öğreterek EX'lerin ve DL'lerin hızını en üst düzeye çıkarır. (Bu varsayılandır.) Derleyici birçok C ve C++ yapısını işlevsel olarak benzer makine kodu dizilerine indirgeyebilir. Bazen, bu farklılıklar boyut karşı hız tradeoffs sunuyoruz. **/Ot** seçeneği Maksimum Hız ([/O2](o1-o2-minimize-size-maximize-speed.md)) seçeneği ile ima edilir. **/O2** seçeneği, çok hızlı kod üretmek için çeşitli seçenekleri birleştirir.
-
-**/Os** veya **/Ot**kullanıyorsanız, kodu optimize etmek için [/Og'yi](og-global-optimizations.md) de belirtmeniz gerekir.
+**`/Ot`**(Hızlı kodu tercih et), derleyicisini boyut hızının hızını tercih etmek üzere karşılaştırarak, EXEs ve DLL 'Lerin hızını en üst düzeye çıkarır. **`/Ot`**, iyileştirmeler etkinleştirildiğinde varsayılandır. Derleyici, çok sayıda C ve C++ yapısını işlevsel bir makine kodu sırası ile azaltabilir. Bazen, bu farklılıklar boyut ve hız açısından avantajları sunar. **`/Ot`** Seçeneği [`/O2`](o1-o2-minimize-size-maximize-speed.md) (en yüksek hız) seçeneği tarafından kapsanır. **`/O2`** Seçeneği, daha hızlı kod oluşturmak için birkaç seçeneği birleştirir.
 
 > [!NOTE]
-> Profil oluşturma testi çalıştıran bilgiler, **/Ob**, **/Os**, veya **/Ot**belirtirseniz, aksi takdirde geçerli olacak optimizasyonları geçersiz kılar. Daha fazla bilgi için Profil [Destekli Optimizasyonlar.](../profile-guided-optimizations.md)
+> Profil oluşturma test çalıştırmalarından toplanan bilgiler,, veya belirtirseniz, aksi takdirde geçerli olacak tüm iyileştirmeleri geçersiz kılar **`/Ob`** **`/Os`** **`/Ot`** . Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md).
 
-**x86 Özel**
+### <a name="x86-specific-example"></a>x86 özgü örnek
 
-Aşağıdaki örnek kod, Favor Small Code (**/Os**) seçenekleri ile Favor Fast Code (**/Ot**) seçeneği arasındaki farkı gösterir:
+Aşağıdaki örnek kod, **`/Os`** (küçük koda öncelik ver) seçeneği ve **`/Ot`** (hızlı kodu tercih et) seçeneği arasındaki farkı gösterir:
 
 > [!NOTE]
-> /Os veya **/Ot** **/Os** kullanırken beklenen davranışı aşağıda açıklar. Ancak, derleyici davranışı sürüm den serbest bırakılması için aşağıdaki kod için farklı optimizasyonlar neden olabilir.
+> Bu örnek, veya kullanırken beklenen davranışı açıklar **`/Os`** **`/Ot`** . Ancak, sürümden sürüme olan derleyici davranışı aşağıdaki koda yönelik farklı iyileştirmelere neden olabilir.
 
-```
+```c
 /* differ.c
   This program implements a multiplication operator
   Compile with /Os to implement multiply explicitly as multiply.
@@ -65,16 +62,16 @@ int differ(int x)
 }
 ```
 
-Aşağıdaki makine kodu parçasında gösterildiği gibi, DIFFER.c boyut **(/Os)** için derlendiğinde, derleyici kısa ama daha yavaş bir kod dizisi oluşturmak için dönüş deyimindeki çarpma ifadesini açıkça çarpma olarak uygular:
+Aşağıdaki makine kodu parçasında gösterildiği gibi, *`differ.c`* size () için derlendiği zaman **`/Os`** , derleyici kısa ancak daha yavaş bir kod dizisi oluşturmak için dönüş deyimindeki çarpma ifadesini bir çarpma olarak uygular:
 
-```
+```asm
 mov    eax, DWORD PTR _x$[ebp]
 imul   eax, 71                  ; 00000047H
 ```
 
-Alternatif olarak, DIFFER.c hız **(/Ot)** için derlendiğinde, derleyici dönüş deyimindeki çarpma ifadesini `LEA` hızlı ama daha uzun bir kod dizisi üretmek için bir dizi kaydırma ve yönerge olarak uygular:
+Alternatif olarak, *`differ.c`* Hız () için derlendiğinde **`/Ot`** , derleyici, dönüş deyimindeki çarpma ifadesini, `LEA` hızlı ancak daha uzun bir kod sırası oluşturmak için bir dizi SHIFT ve yönergeler olarak uygular:
 
-```
+```asm
 mov    eax, DWORD PTR _x$[ebp]
 mov    ecx, eax
 shl    eax, 3
@@ -82,17 +79,13 @@ lea    eax, DWORD PTR [eax+eax*8]
 sub    eax, ecx
 ```
 
-**END x86 Özel**
-
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **C/C++** klasörünü tıklatın.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **iyileştirme** özellik sayfasını seçin.
 
-1. **Optimizasyon** özelliği sayfasını tıklatın.
-
-1. **İyilik Boyutu veya Hız** özelliğini değiştirin.
+1. **Tercih boyutu veya hız** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -100,6 +93,6 @@ sub    eax, ecx
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/O Seçenekler (Kodu İyileştir)](o-options-optimize-code.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[/O seçenekler (Kodu iyileştir)](o-options-optimize-code.md)<br/>
+[MSVC derleyicisi seçenekleri](compiler-options.md)<br/>
+[MSVC derleyicisi komut satırı söz dizimi](compiler-command-line-syntax.md)

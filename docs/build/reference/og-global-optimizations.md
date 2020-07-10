@@ -1,6 +1,7 @@
 ---
 title: /Og (Global İyileştirmeler)
-ms.date: 09/22/2017
+description: Önceden genel iyileştirmeleri etkinleştirmek için kullanılan/OG kullanım dışı MSVC derleyici seçeneğini tanımlar.
+ms.date: 07/08/2020
 f1_keywords:
 - VC.Project.VCCLCompilerTool.GlobalOptimizations
 - /og
@@ -13,30 +14,30 @@ helpviewer_keywords:
 - common subexpression elimination
 - Og compiler option [C++]
 ms.assetid: d10630cc-b9cf-4e97-bde3-8d7ee79e9435
-ms.openlocfilehash: 5e45273b6b609f1bf78504a519c1fb98e2147f76
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1cab53ccb391bd7d6ca7660e2750f53aa7c72e4
+ms.sourcegitcommit: 80c8a512b361bd84e38958beb1a1bf6db7434021
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320298"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86180857"
 ---
-# <a name="og-global-optimizations"></a>/Og (Global İyileştirmeler)
+# <a name="og-global-optimizations"></a>`/Og`(Global Iyileştirmeler)
 
-Kullanım dışı. Yerel ve genel iyileştirmelerini sağlayıp otomatik kaydını ayırma ve döngü en iyi duruma getirme. Ya da kullanmanızı öneririz [/O1 (boyutu en aza)](o1-o2-minimize-size-maximize-speed.md) veya [/O2 (hız en üst düzeye)](o1-o2-minimize-size-maximize-speed.md) yerine.
+Kullanım dışı. Yerel ve genel iyileştirmeler, otomatik kayıt ayırma ve döngü iyileştirmesi sağlar. Bunun yerine [ `/O1` (boyutu en aza indir)](o1-o2-minimize-size-maximize-speed.md) ya da [ `/O2` (hızı en üst düzeye çıkarın)](o1-o2-minimize-size-maximize-speed.md) kullanmanızı öneririz.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> /Og
+> **`/Og`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Og** kullanım dışı bırakılmıştır. Bu iyileştirmeleri artık genel olarak varsayılan olarak etkindir. En iyi duruma getirme hakkında daha fazla bilgi için bkz. [/O1, / O2 (boyutu en aza indirmek, hızı en üst düzeye)](o1-o2-minimize-size-maximize-speed.md) veya [/Ox (etkinleştirme en hız iyileştirmelerini)](ox-full-optimization.md).
+**`/Og`** kullanım dışıdır. Bu iyileştirmeler, artık herhangi bir iyileştirme etkinleştirildiğinde varsayılan olarak etkindir. İyileştirmeler hakkında daha fazla bilgi için bkz. [ `/O1` , `/O2` (boyutu en aza indir, hızı Büyüt)](o1-o2-minimize-size-maximize-speed.md)veya [ `/Ox` (çoğu hız iyileştirmelerini etkinleştir)](ox-full-optimization.md).
 
-Aşağıdaki en iyi duruma getirme altında kullanılabilir **/Og**:
+Aşağıdaki iyileştirmeler aşağıda verilmiştir **`/Og`** :
 
-- Yerel ve genel Genel alt ifade ortadan kaldırma
+- Yerel ve genel sık kullanılan alt ifade eleme
 
-   Bu iyileştirme, ortak bir alt ifade değerini kere hesaplanır. Aşağıdaki örnekte, değerlerini `b` ve `c` arasında üç ifadesinden değiştirmeyin, derleyici hesaplanması atayabilirsiniz `b + c` geçici bir değişkene ve değişken için yerine `b + c`:
+   Bu iyileştirmede, ortak bir alt ifadenin değeri bir kez hesaplanır. Aşağıdaki örnekte, değerleri, `b` ve `c` üç ifade arasında değişmezseniz, derleyici hesaplamasını `b + c` geçici bir değişkene atayabilir ve bu değişkeni için kullanabilirsiniz `b + c` :
 
     ```C
     a = b + c;
@@ -44,15 +45,15 @@ Aşağıdaki en iyi duruma getirme altında kullanılabilir **/Og**:
     e = b + c;
     ```
 
-   Yerel Genel alt ifade iyileştirme için derleyici kısa bölümlerini ortak alt ifadeler için kodu inceler. Genel Genel alt ifade iyileştirmek için tüm işlevler için ortak bir alt ifadeler derleyici arar.
+   Yerel ortak alt ifade iyileştirmesi için, derleyici ortak alt ifadeler için kodun kısa kısımlarını inceler. Genel sık kullanılan alt ifade iyileştirmesi için, derleyici tüm işlevleri ortak alt ifadeler için arar.
 
-- Otomatik yazmaç ayırma
+- Otomatik kayıt ayırma
 
-   Bu en iyi duruma getirme deposu sık kullanılan değişkenlerin ve alt ifadeler derleyicinin kayıtlara izin verir; `register` anahtar sözcüğünü sayılır.
+   Bu iyileştirme, derleyicinin kayıtlarda sık kullanılan değişkenleri ve alt ifadeleri depolamasına olanak sağlar; `register`anahtar sözcüğü yoksayıldı.
 
-- Döngü en iyi duruma getirme
+- Döngü iyileştirmesi
 
-   Bu iyileştirme, bir döngü gövdesinden sabit alt ifadeler kaldırır. En iyi bir döngü yalnızca döngünün her yürütülmesi değerleri değiştirme ifadeleri içerir. Aşağıdaki örnekte, ifade `x + y` döngü gövdesinde değiştirmez:
+   Bu iyileştirme, bir döngü gövdesinin sabit alt ifadelerini kaldırır. En iyi döngü, yalnızca değerleri döngünün her yürütülmesinde değişen ifadeleri içerir. Aşağıdaki örnekte, ifadesi `x + y` döngü gövdesinde değişmez:
 
     ```C
     i = -100;
@@ -61,7 +62,7 @@ Aşağıdaki en iyi duruma getirme altında kullanılabilir **/Og**:
     }
     ```
 
-   En iyi duruma getirme sonra `x + y` döngü yürütüldüğünde bir kez her zaman yerine hesaplanır:
+   İyileştirmeden sonra, `x + y` döngü her yürütüldüğünde değil bir kez hesaplanır:
 
     ```C
     i = -100;
@@ -71,22 +72,20 @@ Aşağıdaki en iyi duruma getirme altında kullanılabilir **/Og**:
     }
     ```
 
-   Döngü iyileştirmesi olduğunda çok daha etkili bir derleyici ile ayarladığınız hiçbir diğer ad varsayabilirsiniz [__restrict](../../cpp/extension-restrict.md), [noalias](../../cpp/noalias.md), veya [kısıtlama](../../cpp/restrict.md).
+   Derleyici bir diğer ad belirtmede, veya ile ayarladığınız zaman döngü iyileştirmesi çok daha etkilidir [`__restrict`](../../cpp/extension-restrict.md) [`noalias`](../../cpp/noalias.md) [`restrict`](../../cpp/restrict.md) .
 
    > [!NOTE]
-   > Etkinleştirebilir veya bir işlev tarafından işlevi olarak kullanarak genel iyileştirmeyi devre dışı `optimize` pragma ile birlikte `g` seçeneği.
+   > Seçeneğini seçeneğiyle birlikte kullanarak bir işlev işlevi temelinde, genel iyileştirmeyi etkinleştirebilir veya devre dışı bırakabilirsiniz `optimize` `g` .
 
-İlgili bilgiler için bkz. [(iç işlevler Oluştur) /Oi](oi-generate-intrinsic-functions.md) ve [/Ox (etkinleştirme en hız iyileştirmelerini)](ox-full-optimization.md).
+İlgili bilgiler için bkz. [ `/Oi` (iç işlevler oluşturma)](oi-generate-intrinsic-functions.md) ve [ `/Ox ` (çoğu hız iyileştirmelerini etkinleştir)](ox-full-optimization.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. Tıklayın **komut satırı** özellik sayfası.
-
-1. Derleyici seçeneğini girin **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusunda derleyici seçeneğini girin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -94,4 +93,4 @@ Aşağıdaki en iyi duruma getirme altında kullanılabilir **/Og**:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

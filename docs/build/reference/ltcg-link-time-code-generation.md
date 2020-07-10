@@ -1,6 +1,7 @@
 ---
-title: /LTCG (Bağlama Zamanı Kodu Üretme)
-ms.date: 05/16/2019
+title: /LTCG (Bağlama zamanı kodu üretme)
+description: MSVC bağlayıcı seçeneği/LTCG, tüm program iyileştirmesi için bağlantı zamanı kod oluşturmayı mümkün hale getirmenizi.
+ms.date: 07/08/2020
 f1_keywords:
 - VC.Project.VCLinkerTool.LinkTimeCodeGeneration
 - VC.Project.VCConfiguration.WholeProgramOptimization
@@ -13,138 +14,138 @@ helpviewer_keywords:
 - -LTCG linker option
 - LTCG linker option
 ms.assetid: 788c6f52-fdb8-40c2-90af-4026ea2cf2e2
-ms.openlocfilehash: 1e33d62694fe782b1a1719fa3c5a36c6fb04670a
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: c954794d6d0fd087eee74ebb7e86d77b89a9a8fc
+ms.sourcegitcommit: 80c8a512b361bd84e38958beb1a1bf6db7434021
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400625"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86180805"
 ---
-# <a name="ltcg-link-time-code-generation"></a>/LTCG (Bağlama Zamanı Kodu Üretme)
+# <a name="ltcg-link-time-code-generation"></a>`/LTCG`(Bağlama zamanı kodu oluşturma)
 
-Kullanım **/LTCG** tüm programı iyileştirme gerçekleştirmek için veya profil temelli iyileştirme (PGO) araçları, eğitim gerçekleştirmek, oluşturup profil temelli oluşturmak en iyi duruma getirilmiş derlemeleri.
+**`/LTCG`** Tam program iyileştirmesi gerçekleştirmek veya profil temelli iyileştirme (PGO) araçları oluşturmak, eğitim gerçekleştirmek ve profil temelli iyileştirilmiş derlemeler oluşturmak için kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ LTCG**[ **:** {**ARTIMLI**|**NOSTATUS**|**DURUMU** | **OFF**}]
+> **`/LTCG`**[**`:`**{**`INCREMENTAL`**|**`NOSTATUS`**|**`STATUS`**|**`OFF`**}]
 
-Bu seçenekler, Visual Studio 2015'ten başlayarak kullanım dışı bırakılmıştır:
+Bu seçenekler, Visual Studio 2015 ' den itibaren kullanım dışıdır:
 
-> **/LTCG:** {**PGINSTRUMENT**|**PGOPTIMIZE**|**PGUPDATE**}
+> **`/LTCG:`**{**`PGINSTRUMENT`**|**`PGOPTIMIZE`**|**`PGUPDATE`**}
 
 ### <a name="arguments"></a>Arguments
 
-**ARTIMLI**<br/>
-(İsteğe bağlı) Bağlayıcı yalnızca bütün program iyileştirmesi veya bağlama sırasında kod oluşturma (LTCG) projenin tamamı yerine bir düzenleme tarafından etkilenen dosya kümesi için geçerli olduğunu belirtir. Varsayılan olarak, ne zaman bu bayrağı ayarlanmamış **/LTCG** belirtilen ve tüm proje bütün program iyileştirmesi kullanarak bağlanır.
+**`INCREMENTAL`**<br/>
+Seçim Bağlayıcının tüm proje iyileştirme veya bağlantı zamanı kodu oluşturma (LTCG) öğesinin tamamı yerine bir düzenleme tarafından etkilenen dosyalara uygulandığını belirtir. Varsayılan olarak, bu bayrak **`/LTCG`** belirtildiğinde ayarlanır ve tüm proje, tüm program iyileştirmesi kullanılarak bağlanır.
 
-**NOSTATUS** &#124; **STATUS**<br/>
-(İsteğe bağlı) Bağlayıcı bağlantıyı yüzde tamamlandıktan gösteren bir İlerleme göstergesi görüntülenip görüntülenmeyeceğini belirtir. Varsayılan olarak, bu durum bilgisi görüntülenmez.
+**`NOSTATUS`**&#124;**`STATUS`**<br/>
+Seçim Bağlayıcının bağlantının yüzdesini gösteren bir ilerleme göstergesi görüntüleyip görüntülemediğini belirtir. Varsayılan olarak, bu durum bilgileri gösterilmez.
 
-**KAPALI**<br/>
-(İsteğe bağlı) Bağlama zamanı kod oluşturmayı devre dışı bırakır. Bu ne zaman aynı, davranıştır **/LTCG** komut satırında belirtilmemiş.
+**`OFF`**<br/>
+Seçim Bağlama sırasında kod oluşturmayı devre dışı bırakır. Bu davranış, **`/LTCG`** komut satırında belirtilmediğinde ile aynıdır.
 
-**PGINSTRUMENT**<br/>
-(İsteğe bağlı) Bu seçenek, Visual Studio 2015'ten başlayarak kullanım dışı bırakılmıştır. Bunun yerine, **/LTCG** ve [/genprofıle veya fastgenprofıle](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) profil temelli iyileştirme için izleme eklenmiş bir yapı oluşturmak için. İzleme eklenmiş çalıştırmalardan toplanan veriler, iyileştirilmiş görüntü oluşturmak için kullanılır. Daha fazla bilgi için [permutasyonları iyileştirmeleri](../profile-guided-optimizations.md). Bu seçeneğin kısa form **/LTCG:PGI**.
+**`PGINSTRUMENT`**<br/>
+Seçim Bu seçenek, Visual Studio 2015 ' den itibaren kullanım dışıdır. Bunun yerine, **`/LTCG`** `[/GENPROFILE` Profil temelli `/FASTGENPROFILE` iyileştirme için bir belgelenmiş derleme oluşturmak üzere ve veya] (genprofile-fastgenprofile-Generate-profiling-instrumented-Build.MD) kullanın. Belgelenmiş çalışmalardan toplanan veriler, iyileştirilmiş bir görüntü oluşturmak için kullanılır. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md). Bu seçeneğin kısa biçimi, **`/LTCG:PGI`** .
 
-**PGOPTIMIZE**<br/>
-(İsteğe bağlı) Bu seçenek, Visual Studio 2015'ten başlayarak kullanım dışı bırakılmıştır. Bunun yerine, **/LTCG** ve [/USEPROFILE](useprofile.md) iyileştirilmiş görüntü oluşturmak için. Daha fazla bilgi için [permutasyonları iyileştirmeleri](../profile-guided-optimizations.md). Bu seçeneğin kısa form **/LTCG:PGO**.
+**`PGOPTIMIZE`**<br/>
+Seçim Bu seçenek, Visual Studio 2015 ' den itibaren kullanım dışıdır. Bunun yerine, **`/LTCG`** [`/USEPROFILE`](useprofile.md) en iyi duruma getirilmiş bir görüntü oluşturmak için ve kullanın. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md). Bu seçeneğin kısa biçimi, **`/LTCG:PGO`** .
 
-**PGUPDATE**<br/>
-(İsteğe bağlı) Bu seçenek, Visual Studio 2015'ten başlayarak kullanım dışı bırakılmıştır. Bunun yerine, **/LTCG** ve **/USEPROFILE** en iyi duruma getirilmiş bir görüntüsünü yeniden oluşturmak için. Daha fazla bilgi için [permutasyonları iyileştirmeleri](../profile-guided-optimizations.md). Bu seçeneğin kısa form **/LTCG:PGU**.
+**`PGUPDATE`**<br/>
+Seçim Bu seçenek, Visual Studio 2015 ' den itibaren kullanım dışıdır. Bunun yerine, **`/LTCG`** **`/USEPROFILE`** iyileştirilmiş bir görüntüyü yeniden derlemek için ve kullanın. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md). Bu seçeneğin kısa biçimi, **`/LTCG:PGU`** .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/LTCG** seçeneği bağlayıcıya derleyici çağırın ve bütün program iyileştirmesi gerçekleştirme. Bunu da yapabilirsiniz profil temelli iyileştirme. Daha fazla bilgi için [permutasyonları iyileştirmeleri](../profile-guided-optimizations.md).
+**`/LTCG`** Seçeneği bağlayıcının derleyiciye çağrı yapmasını ve tam program iyileştirmesi gerçekleştirmesini söyler. Profil temelli iyileştirme de yapabilirsiniz. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md).
 
-Aşağıdaki istisnalar, bağlayıcı seçenekleri için PGO birleşimi ekleyemezsiniz **/LTCG** ve **/USEPROFILE** önceki PGO başlatma birleşimi içinde belirtilmemiş  **/ LTCG** ve **/genprofıle** seçenekleri:
+Aşağıdaki özel durumlarla birlikte bağlayıcı seçeneklerini, ve **`/LTCG`** **`/USEPROFILE`** seçeneklerinin önceki PGO başlatma birleşimine belirtilmeyen ve ' ın PGO birleşimine ekleyemezsiniz **`/LTCG`** **`/GENPROFILE`** :
 
-- [/ BASE](base-base-address.md)
+- [`/BASE`](base-base-address.md)
 
-- [/ FIXED](fixed-fixed-base-address.md)
+- [`/FIXED`](fixed-fixed-base-address.md)
 
-- **/LTCG**
+- **`/LTCG`**
 
-- [/MAP](map-generate-mapfile.md)
+- [`/MAP`](map-generate-mapfile.md)
 
-- [/ MAPINFO](mapinfo-include-information-in-mapfile.md)
+- [`/MAPINFO`](mapinfo-include-information-in-mapfile.md)
 
-- [/ NOLOGO](nologo-suppress-startup-banner-linker.md)
+- [`/NOLOGO`](nologo-suppress-startup-banner-linker.md)
 
-- [/ OUT](out-output-file-name.md)
+- [`/OUT`](out-output-file-name.md)
 
-- [/ PGD](pgd-specify-database-for-profile-guided-optimizations.md)
+- [`/PGD`](pgd-specify-database-for-profile-guided-optimizations.md)
 
-- [/PDB](pdb-use-program-database.md)
+- [`/PDB`](pdb-use-program-database.md)
 
-- [/ PDBSTRIPPED](pdbstripped-strip-private-symbols.md)
+- [`/PDBSTRIPPED`](pdbstripped-strip-private-symbols.md)
 
-- [/ STUB](stub-ms-dos-stub-file-name.md)
+- [`/STUB`](stub-ms-dos-stub-file-name.md)
 
-- [/ VERBOSE](verbose-print-progress-messages.md)
+- [`/VERBOSE`](verbose-print-progress-messages.md)
 
-İle birlikte belirtilen herhangi bir bağlayıcı seçenekleri **/LTCG** ve **/genprofıle** PGO başlatmak için seçenekleri kullanarak oluşturduğunuzda belirtilmesi gerekmez **/LTCG** ve **/USEPROFILE**; bunlar kapsanan.
+**`/LTCG`** **`/GENPROFILE`** Ve kullanarak oluşturduğunuzda, PGO 'yu başlatmak için ve seçenekleriyle birlikte belirtilen tüm bağlayıcı seçeneklerinin belirtilmesi gerekmez **`/LTCG`** **`/USEPROFILE`** ; ancak bunlar kapsanıyor.
 
-Bu makalenin geri kalanında anlatılmaktadır **/LTCG** açısından bağlama zamanı kodu oluşturma.
+Bu makalenin geri kalanında, tarafından gerçekleştirilen bağlantı zamanı kod üretimi ele alınmaktadır **`/LTCG`** .
 
-**/ LTCG** ile örtük [/GL](gl-whole-program-optimization.md).
+**`/LTCG`**, ile birlikte kapsanıyor [`/GL`](gl-whole-program-optimization.md) .
 
-Kullanılarak derlenmiş bir modül iletilmezse, bağlama sırasında kod oluşturma bağlayıcı çağırır **/GL** veya bir MSIL Modülü (bkz [bağlayıcı girişi olarak .netmodule dosyaları](netmodule-files-as-linker-input.md)). Açıkça belirtmezseniz **/LTCG** gönderdiğinizde **/GL** veya MSIL modüllerine bağlayıcı sonunda bağlayıcı bunu algılar ve bağlantıyı kullanarak yeniden **/LTCG**. Açıkça belirtmeniz **/LTCG** gönderdiğinizde **/GL** ve MSIL modüllerine bağlayıcı için en hızlı olası performans oluşturun.
+Bağlayıcı, veya MSIL Modülü kullanılarak derlenen bir modül geçirildiğinde bağlantı sırasında kod oluşturmayı çağırır **`/GL`** (bkz. [ `.netmodule` dosyaları bağlayıcı girişi olarak](netmodule-files-as-linker-input.md)görüntüle). **`/LTCG`** Bağlayıcıya bir veya MSIL modülleri geçirdiğinizde açıkça belirtmezseniz **`/GL`** , bağlayıcı sonunda bu durumu algılar ve kullanarak bağlantıyı yeniden başlatır **`/LTCG`** . Mümkün olan **`/LTCG`** **`/GL`** en hızlı yapı performansına yönelik olarak BAĞLAYıCıYA ve MSIL modüllerini bağlayıcıya geçirdiğinizde belirtin.
 
-Daha hızlı performans için **/LTCG: ARTIMLI**. Bu seçenek yalnızca projenin tamamı yerine bir kaynak dosya değişikliği etkilenen dosya kümesini yeniden iyileştirmek için söyler. Bu durum, gerekli bağlantı süresi önemli ölçüde azaltabilir. Bu, artımlı bağlamayı olarak aynı seçenek değildir.
+Daha da hızlı performans için kullanın **`/LTCG:INCREMENTAL`** . Bu seçenek, bağlayıcının tüm proje yerine yalnızca kaynak dosya değişikliğinden etkilenen dosyaları yeniden iyileştirmasını söyler. Bu seçenek, gereken bağlantı süresini önemli ölçüde azaltabilir. Bu seçenek [artımlı bağlama](incremental-link-incrementally.md)ile aynı seçenek değildir.
 
-**/ LTCG** ile kullanım için geçerli değil [/INCREMENTAL](incremental-link-incrementally.md).
+**`/LTCG`** ile kullanım için geçerli değildir [`/INCREMENTAL`](incremental-link-incrementally.md) .
 
-Zaman **/LTCG** kullanılarak derlenmiş modüller bağlantı için kullanılan [/Og](og-global-optimizations.md), [/O1](o1-o2-minimize-size-maximize-speed.md), [/O2](o1-o2-minimize-size-maximize-speed.md), veya [/Ox](ox-full-optimization.md), Aşağıdaki en iyi duruma getirme gerçekleştirilir:
+**`/LTCG`**,, Veya kullanılarak derlenen modülleri bağlamak için kullanıldığında [`/Og`](og-global-optimizations.md) [`/O1`](o1-o2-minimize-size-maximize-speed.md) [`/O2`](o1-o2-minimize-size-maximize-speed.md) [`/Ox`](ox-full-optimization.md) , aşağıdaki iyileştirmeler gerçekleştirilir:
 
-- Çapraz-modül inlining'i
+- Modüller arası satır içi
 
-- İnterprocedural yazmaç ayırma (yalnızca 64 bit işletim sistemleri)
+- Interyordamla kayıt ayırma (yalnızca 64 bitlik işletim sistemleri)
 
 - Özel çağırma kuralı (yalnızca x86)
 
-- Küçük TLS öteleme (yalnızca x86)
+- Küçük TLS değiştirme (yalnızca x86)
 
-- Yığın çift hizalama (yalnızca x86)
+- Yığın çift hizalaması (yalnızca x86)
 
-- Geliştirilmiş bellek Kesinleştirme (Genel değişkenler ve giriş parametreleri için daha iyi girişim bilgileri)
-
-> [!NOTE]
-> Bağlayıcı, her işlevin derlemek için hangi iyileştirmeleri kullanılan belirler ve bağlantı zamanında aynı iyileştirmeleri uygular.
-
-Kullanarak **/LTCG** ve **/Ogt** çift hizalama iyileştirme neden olur.
-
-Varsa **/LTCG** ve **/Ogs** belirtilirse, çift hizalama gerçekleştirilmez. Bir uygulamada işlevlerin çoğunu hız, boyutu için derlenmiş birkaç işlevleri ile derlenir, (kullanarak örneğin, [en iyi duruma getirme](../../preprocessor/optimize.md) pragma), derleyici çift bunlar çağırırsanız, boyutu için iyileştirilen işlevleri hizalar çift hizalama gerektiren işlevleri.
-
-Derleyicinin tüm işlev çağrı sitelerini mevcutsa, derleyici bir işlevi açıkça çağırma kuralı değiştiricisi var yoksayar ve işlev çağırma kuralı iyileştirmek çalışır:
-
-- yazmaçlarda Parametreler
-
-- hizalama için parametreleri yeniden Sırala
-
-- kullanılmayan parametreleri Kaldır
-
-Bir işlev işaretçisi çağrılan bir işlev veya bir işlev kullanılarak derlenmiş bir modül dışında çağrılır **/GL**, derleyici işlev çağırma kuralı iyileştirmek çalışmaz.
+- İyileştirilmiş bellek Kesinleştirme (genel değişkenler ve giriş parametreleri için daha iyi girişim bilgileri)
 
 > [!NOTE]
-> Kullanırsanız **/LTCG** ve bulunabileceğini `mainCRTStartup`, uygulamanızın genel nesneler başlatılmadan önce yürüten kullanıcı kodu ilişkili öngörülemeyen davranışlara sahip olabilir. Bu sorunu gidermek için üç yolu vardır: değil bulunabileceğini `mainCRTStartup`, içeren dosyayı derlenmiyor `mainCRTStartup` kullanarak **/LTCG**, veya statik olarak genel değişkenleri ve nesneleri başlatılamadı.
+> Bağlayıcı, her işlevi derlemek için hangi iyileştirmelerin kullanıldığını belirler ve bağlantı zamanında aynı iyileştirmeleri uygular.
 
-### <a name="ltcg-and-msil-modules"></a>/ LTCG ve MSIL modülleri
+**`/LTCG`**' I kullanarak **`/O2`** çift hizalama iyileştirmesine neden olur.
 
-Kullanılarak derlenmiş modüller [/GL](gl-whole-program-optimization.md) ve [/CLR](clr-common-language-runtime-compilation.md) bağlayıcı giriş olarak kullanılabilir olduğunda **/LTCG** belirtilir.
+**`/LTCG`** Ve **`/O1`** belirtilirse, çift hizalama yapılmaz. Bir uygulamadaki işlevlerin çoğu hız için derlenirse (örneğin, pragma kullanılarak), boyut için derlenmiş birkaç işlev ile [`optimize`](../../preprocessor/optimize.md) derleyici, çift hizalama gerektiren işlevleri çağırdıklarında boyut için iyileştirilmiş işlevleri çift hizalar.
 
-- **/ LTCG** yerel nesne dosyaları kabul edebilir ve karma yerel/Yönetilen Nesne dosyaları (kullanılarak derlenmiş **/CLR**). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 ve sonraki sürümlerde desteklenmiyor.
+Derleyici bir işlevin tüm çağrı sitelerini tanımlayabiliyorsanız, derleyici bir işlev üzerinde açık çağırma kuralı değiştiricilerini yoksayar ve işlevin çağırma kuralını iyileştirmenize çalışır:
 
-- **/LTCG:PGI** kullanılarak derlenmiş yerel modülleri kabul etmiyor **/GL** ve   **/CLR**
+- kayıtlarda parametreleri geçirme
+
+- hizalama için parametreleri yeniden sırala
+
+- Kullanılmayan parametreleri Kaldır
+
+Bir işlev bir işlev işaretçisi aracılığıyla çağrılırsa veya bir işlev kullanılarak derlenen bir modülün dışından çağrılırsa, **`/GL`** derleyici işlevin çağırma kuralını en iyi hale getirmeyi denemez.
+
+> [!NOTE]
+> **`/LTCG`** Ve yeniden tanımlama kullanırsanız `mainCRTStartup` , uygulamanız genel nesneler başlatılmadan önce yürütülen Kullanıcı koduyla ilişkili öngörülemeyen davranışlara sahip olabilir. Bu sorunu gidermek için üç yol vardır: ' i yeniden tanımlama `mainCRTStartup` , kullanarak içeren dosyayı derleme `mainCRTStartup` **`/LTCG`** veya genel değişkenleri ve nesneleri statik olarak başlatma.
+
+### <a name="ltcg-and-msil-modules"></a>`/LTCG`ve MSIL modülleri
+
+Ve kullanılarak derlenen modüller [`/GL`](gl-whole-program-optimization.md) [`/clr`](clr-common-language-runtime-compilation.md) , belirtildiğinde bağlayıcı için giriş olarak kullanılabilir **`/LTCG`** .
+
+- **`/LTCG`** yerel nesne dosyalarını ve karma yerel/yönetilen nesne dosyalarını kabul edebilir (kullanılarak derlenir **`/clr`** ). **`/clr:pure`** Ve **`/clr:safe`** derleyici seçenekleri visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ve sonrasında desteklenmez.
+
+- **`/LTCG:PGI`** ve kullanılarak derlenen yerel modülleri kabul etmez **`/GL`****`/clr`**
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Bkz: [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Proje **Özellik sayfaları** iletişim kutusunu açın. Bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **genel** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **genel** özellik sayfasını seçin.
 
-1. Değiştirme **tüm Program iyileştirmesi** özelliği.
+1. **Tüm program iyileştirme** özelliğini değiştirin.
 
-Ayrıca uygulayabilirsiniz **/LTCG** seçerek belirli derlemelerde **derleme** > **profil temelli iyileştirme** profili birini seçerek veya menü çubuğunda Proje için kısayol menüsündeki Kılavuzlu iyileştirme seçenekleri.
+Ayrıca **`/LTCG`** **Build**  >  , menü çubuğunda**Profil temelli iyileştirme** oluştur ' u seçerek veya projenin kısayol menüsündeki profil temelli iyileştirme seçeneklerinden birini seçerek belirli yapılar için de uygulayabilirsiniz.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -152,5 +153,5 @@ Ayrıca uygulayabilirsiniz **/LTCG** seçerek belirli derlemelerde **derleme** >
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [MSVC bağlayıcı başvurusu](linking.md)
-- [MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)\
+[MSVC bağlayıcı seçenekleri](linker-options.md)
