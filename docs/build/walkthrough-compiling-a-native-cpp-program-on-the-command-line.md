@@ -9,12 +9,12 @@ helpviewer_keywords:
 - compiling programs [C++]
 - command-line applications [C++], native
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
-ms.openlocfilehash: c24fdfdaef612059d5c2fbaaa58f10d83f5fe3a8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8af104598f56aa6c8eb5a9a87905324700da3d37
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335240"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373677"
 ---
 # <a name="walkthrough-compiling-a-native-c-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında Yerel C++ Programı Derleme
 
@@ -24,7 +24,7 @@ Bu kılavuzda, bir metin düzenleyicisi kullanarak temel, "Merhaba, Dünya" stil
 
 Bu kılavuzda, gösterilen birini yazmak yerine kendi C++ programınızı kullanabilirsiniz. Ya da başka bir yardım makalesindeki C++ kod örneğini kullanabilirsiniz.
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 Bu yönergeyi tamamlamak için, Visual Studio 'Yu ve C++ iş yükünde isteğe bağlı **Masaüstü geliştirmeyi** ya da Visual Studio için komut satırı derleme araçlarını yüklemiş olmanız gerekir.
 
@@ -58,18 +58,18 @@ Komut satırında bir C veya C++ programı oluşturabilmeniz için önce araçla
    Geçerli dizin veya sürüm numaralarında farklılıklar olabilir. Bu değerler, Visual C++ sürümüne ve yüklü tüm güncelleştirmelere bağlıdır. Yukarıdaki çıkış, gördüklerinize benziyorsa, komut satırında C veya C++ programları oluşturmaya hazırsınız demektir.
 
    > [!NOTE]
-   > "' CL ' gibi bir hata alırsanız, bir iç veya dış komut, çalıştırılabilir program veya toplu iş dosyası," hata C1034 veya hata LNK1104 " **`cl`** komutu çalıştırdığınızda, bir geliştirici komut istemi kullanmıyorsanız veya Visual C++ yüklemenizde bir sorun oluştu. Devam edebilmeniz için bu sorunu çözmeniz gerekir.
+   > "' CL ' gibi bir hata alırsanız, bir iç veya dış komut, çalıştırılabilir program veya toplu iş dosyası," hata C1034 veya hata LNK1104 "komutu çalıştırdığınızda, **`cl`** bir geliştirici komut istemi kullanmıyorsanız veya Visual C++ yüklemenizde bir sorun oluştu. Devam edebilmeniz için bu sorunu çözmeniz gerekir.
 
-   Geliştirici komut istemi kısayolunu bulamazsanız veya girdiğinizde `cl`bir hata iletisi alırsanız Visual C++ yüklemenizin bir sorunu olabilir. Visual C++ bileşenini Visual Studio 'da yeniden yüklemeyi deneyin veya Microsoft Visual C++ derleme araçlarını yeniden yükleyin. **`cl`** Komut çalışana kadar bir sonraki bölüme gitmeyin. Visual C++ yükleme ve sorun giderme hakkında daha fazla bilgi için bkz. [Visual Studio 'Yu yükleme](/visualstudio/install/install-visual-studio).
+   Geliştirici komut istemi kısayolunu bulamazsanız veya girdiğinizde bir hata iletisi alırsanız `cl` Visual C++ yüklemenizin bir sorunu olabilir. Visual C++ bileşenini Visual Studio 'da yeniden yüklemeyi deneyin veya Microsoft Visual C++ derleme araçlarını yeniden yükleyin. Komut çalışana kadar bir sonraki bölüme gitmeyin **`cl`** . Visual C++ yükleme ve sorun giderme hakkında daha fazla bilgi için bkz. [Visual Studio 'Yu yükleme](/visualstudio/install/install-visual-studio).
 
    > [!NOTE]
    > Bilgisayardaki Windows sürümüne ve sistem güvenlik yapılandırmasına bağlı olarak, geliştirici komut istemi kısayolunun kısayol menüsünü açmak için sağ tıklayıp **yönetici olarak çalıştır** ' ı seçerek bu yönergeyi izleyerek oluşturduğunuz programı başarıyla oluşturup çalıştırın.
 
 ### <a name="create-a-visual-c-source-file-and-compile-it-on-the-command-line"></a>Bir Visual C++ kaynak dosyası oluşturun ve komut satırında derleyin
 
-1. Geliştirici komut istemi penceresinde bir dizin oluşturmak için `md c:\hello` girin ve ardından bu dizine geçmek için girin `cd c:\hello` . Bu dizin, kaynak dosyanızın ve derlenmiş programın içinde oluşturulduğu yerdir.
+1. Geliştirici komut istemi penceresinde `md c:\hello` bir dizin oluşturmak için girin ve ardından `cd c:\hello` Bu dizine geçmek için girin. Bu dizin, kaynak dosyanızın ve derlenmiş programın içinde oluşturulduğu yerdir.
 
-1. Komut `notepad hello.cpp` istemi penceresine girin.
+1. `notepad hello.cpp`Komut istemi penceresine girin.
 
    Not defteri bir dosya oluşturmanızı isterse, **Evet** ' i seçin. Bu adım, kodunuzu Hello. cpp adlı bir dosyaya girmenize yönelik boş bir not defteri penceresi açar.
 
@@ -90,7 +90,7 @@ Komut satırında bir C veya C++ programı oluşturabilmeniz için önce araçla
 
    Tebrikler, derleme için hazırlamış olan bir C++ kaynak dosyası (Hello. cpp) oluşturdunuz.
 
-1. Geliştirici komut istemi penceresine geri dönün. C:\Hello dizininin içeriğini listelemek için komut istemine yazın `dir` . Dizin listesinde Hello. cpp kaynak dosyasını görmeniz gerekir, bu durum şöyle görünür:
+1. Geliştirici komut istemi penceresine geri dönün. `dir`C:\Hello dizininin içeriğini listelemek için komut istemine yazın. Dizin listesinde Hello. cpp kaynak dosyasını görmeniz gerekir, bu durum şöyle görünür:
 
    ```Output
    c:\hello>dir
@@ -107,11 +107,11 @@ Komut satırında bir C veya C++ programı oluşturabilmeniz için önce araçla
 
    ```
 
-   Tarihler ve diğer ayrıntılar bilgisayarınızda farklı olacaktır. Kaynak kodu dosyanızı ( *Hello. cpp*) görmüyorsanız, oluşturduğunuz *\\c: Merhaba* dizinine değiştirdiğinizden emin olun. Not defteri 'nde, kaynak dosyanızı bu dizine kaydettiğinizden emin olun. Ayrıca, kaynak kodunu *`.cpp`* *`.txt`* uzantı değil, bir dosya adı uzantısıyla kaydettiğinizden emin olun.
+   Tarihler ve diğer ayrıntılar bilgisayarınızda farklı olacaktır. Kaynak kodu dosyanızı ( *Hello. cpp*) görmüyorsanız, oluşturduğunuz *c: \\ Merhaba* dizinine değiştirdiğinizden emin olun. Not defteri 'nde, kaynak dosyanızı bu dizine kaydettiğinizden emin olun. Ayrıca, kaynak kodunu *`.cpp`* uzantı değil, bir dosya adı uzantısıyla kaydettiğinizden emin olun *`.txt`* .
 
-1. Geliştirici komut isteminde, programınızı derlemek için `cl /EHsc hello.cpp` yazın.
+1. Geliştirici komut isteminde, `cl /EHsc hello.cpp` programınızı derlemek için yazın.
 
-   CL. exe derleyicisi, derlenen kodu içeren bir. obj dosyası oluşturur ve ardından, Hello. exe adlı bir yürütülebilir program oluşturmak için bağlayıcıyı çalıştırır. Bu ad, derleyicinin görüntülediği çıkış bilgileri satırlarında görüntülenir. Derleyicinin çıkışı aşağıdakine benzer görünmelidir:
+   cl.exe derleyici, derlenen kodu içeren bir. obj dosyası oluşturur ve sonra hello.exe adlı yürütülebilir bir program oluşturmak için bağlayıcıyı çalıştırır. Bu ad, derleyicinin görüntülediği çıkış bilgileri satırlarında görüntülenir. Derleyicinin çıkışı aşağıdakine benzer görünmelidir:
 
    ```Output
    c:\hello>cl /EHsc hello.cpp
@@ -130,9 +130,9 @@ Komut satırında bir C veya C++ programı oluşturabilmeniz için önce araçla
    > "' CL" iç veya dış komut, çalıştırılabilir programı veya toplu iş dosyası, "hata C1034 veya hata LNK1104" gibi bir hata alırsanız, geliştirici komut isteminize doğru şekilde ayarlanmamaktadır. Bu sorunu giderme hakkında daha fazla bilgi için, **Geliştirici komut istemi** bölümüne geri dönün.
 
    > [!NOTE]
-   > Farklı bir derleyici veya bağlayıcı hatası ya da uyarısı alırsanız, hataları düzeltmek için kaynak kodunuzu gözden geçirin, sonra dosyayı kaydedin ve derleyiciyi yeniden çalıştırın. Belirli hatalar hakkında daha fazla bilgi için bu MSDN sayfasındaki arama kutusunu kullanarak hata numarasını arayın.
+   > Farklı bir derleyici veya bağlayıcı hatası ya da uyarısı alırsanız, hataları düzeltmek için kaynak kodunuzu gözden geçirin, sonra dosyayı kaydedin ve derleyiciyi yeniden çalıştırın. Belirli hatalar hakkında daha fazla bilgi için arama kutusunu kullanarak hata numarasını arayın.
 
-1. Hello. exe programını çalıştırmak için komut isteminde yazın `hello`.
+1. hello.exe programını çalıştırmak için komut isteminde yazın `hello` .
 
    Program bu metni görüntüler ve çıkar:
 
@@ -146,15 +146,15 @@ Komut satırında bir C veya C++ programı oluşturabilmeniz için önce araçla
 
 Bu "Hello, World" örneği, C++ programının alabilir kadar basit bir işlemdir. Gerçek dünyada programlar genellikle başlık dosyalarına, daha fazla kaynak dosyasına ve kitaplıklara bağlantı sağlar.
 
-Gösterilen örnek kodu yazmak yerine kendi C++ kodunuzu oluşturmak için bu yönergedeki adımları kullanabilirsiniz. Bu adımlar, başka bir yerde bulduğunuz birçok C++ kod örnek programı oluşturmanıza da imkan tanır. Kaynak kodunuzu yerleştirebilir ve uygulamalarınızı herhangi bir yazılabilir dizine oluşturabilirsiniz. Varsayılan olarak, Visual Studio IDE, bir *kaynak\\deposu* alt klasöründe, Kullanıcı klasörünüzde projeler oluşturur. Daha eski sürümler, projeleri bir *belgeler\\Visual \<Studio sürüm>\\ *projeleri * klasörüne yerleştirebilir.
+Gösterilen örnek kodu yazmak yerine kendi C++ kodunuzu oluşturmak için bu yönergedeki adımları kullanabilirsiniz. Bu adımlar, başka bir yerde bulduğunuz birçok C++ kod örnek programı oluşturmanıza da imkan tanır. Kaynak kodunuzu yerleştirebilir ve uygulamalarınızı herhangi bir yazılabilir dizine oluşturabilirsiniz. Varsayılan olarak, Visual Studio IDE, bir *kaynak \\ deposu* alt klasöründe, Kullanıcı klasörünüzde projeler oluşturur. Daha eski sürümler, projeleri bir *belgeler \\ Visual Studio \<version> \\ *projeleri * klasörüne yerleştirebilir.
 
 Ek kaynak kodu dosyaları olan bir programı derlemek için, bunları komut satırına şu şekilde girin:
 
 `cl /EHsc file1.cpp file2.cpp file3.cpp`
 
-`/EHsc` Komut satırı seçeneği derleyiciye standart C++ özel durum işleme davranışını etkinleştirmesini söyler. Bu olmadan, oluşturulan özel durumlar, yok etme nesnelerinin ve kaynak sızıntılarına neden olabilir. Daha fazla bilgi için bkz. [/Eh (özel durum Işleme modeli)](reference/eh-exception-handling-model.md).
+`/EHsc`Komut satırı seçeneği derleyiciye standart C++ özel durum işleme davranışını etkinleştirmesini söyler. Bu olmadan, oluşturulan özel durumlar, yok etme nesnelerinin ve kaynak sızıntılarına neden olabilir. Daha fazla bilgi için bkz. [/Eh (özel durum Işleme modeli)](reference/eh-exception-handling-model.md).
 
-Ek kaynak dosyaları sağlarsanız, derleyici program adını oluşturmak için ilk giriş dosyasını kullanır. Bu durumda, FILE1. exe adlı bir program çıkışı verir. Adı Program1. exe olarak değiştirmek için, bir [/Out](reference/out-output-file-name.md) bağlayıcı seçeneği ekleyin:
+Ek kaynak dosyaları sağlarsanız, derleyici program adını oluşturmak için ilk giriş dosyasını kullanır. Bu durumda, file1.exe adlı bir program çıkışı verir. Adı program1.exe değiştirmek için, bir [/Out](reference/out-output-file-name.md) bağlayıcı seçeneği ekleyin:
 
 `cl /EHsc file1.cpp file2.cpp file3.cpp /link /out:program1.exe`
 
@@ -162,11 +162,11 @@ Otomatik olarak daha fazla programlama hatası yakalamak için [/w3](reference/c
 
 `cl /W4 /EHsc file1.cpp file2.cpp file3.cpp /link /out:program1.exe`
 
-, CL. exe ' nin birçok daha fazla seçeneği vardır. Kodunuzu derlemek, iyileştirmek, hatalarını ayıklamak ve analiz etmek için uygulayabilirsiniz. Hızlı bir liste için, Geliştirici `cl /?` komut istemine yazın. Ayrıca, ayrı olarak derleyip bağlayabilir ve bağlayıcı seçeneklerini daha karmaşık derleme senaryolarında uygulayabilirsiniz. Derleyici ve bağlayıcı seçenekleri ve kullanımı hakkında daha fazla bilgi için bkz. [C/C++ oluşturma başvurusu](reference/c-cpp-building-reference.md).
+cl.exe derleyicisinin birçok daha fazla seçeneği vardır. Kodunuzu derlemek, iyileştirmek, hatalarını ayıklamak ve analiz etmek için uygulayabilirsiniz. Hızlı bir liste için, `cl /?` Geliştirici komut istemine yazın. Ayrıca, ayrı olarak derleyip bağlayabilir ve bağlayıcı seçeneklerini daha karmaşık derleme senaryolarında uygulayabilirsiniz. Derleyici ve bağlayıcı seçenekleri ve kullanımı hakkında daha fazla bilgi için bkz. [C/C++ oluşturma başvurusu](reference/c-cpp-building-reference.md).
 
 Komut satırında daha karmaşık projeler yapılandırmak ve derlemek için NMAKE ve makefiles, MSBuild ve proje dosyaları ya da CMake kullanabilirsiniz. Bu araçları kullanma hakkında daha fazla bilgi için bkz. Visual Studio 'da [NMAKE Başvurusu](reference/nmake-reference.md), [MSBuild](msbuild-visual-cpp.md)ve [CMake projeleri](cmake-projects-in-visual-studio.md).
 
-C ve C++ dilleri benzerdir, ancak aynı değildir. MSVC derleyicisi, kodunuzu derlediğinde hangi dilin kullanılacağını belirleyen basit bir kural kullanır. Varsayılan olarak, MSVC derleyicisi, C kaynak kodu *`.c`* olarak biten dosyaları ve C++ kaynak kodu *`.cpp`* olarak biten dosyaları değerlendirir. Derleyicinin dosya adı uzantısından bağımsız olarak tüm dosyaları kabul etmeye zorlamak için [/TP](reference/tc-tp-tc-tp-specify-source-file-type.md) derleyici seçeneğini kullanın.
+C ve C++ dilleri benzerdir, ancak aynı değildir. MSVC derleyicisi, kodunuzu derlediğinde hangi dilin kullanılacağını belirleyen basit bir kural kullanır. Varsayılan olarak, MSVC derleyicisi, *`.c`* C kaynak kodu olarak biten dosyaları ve *`.cpp`* C++ kaynak kodu olarak biten dosyaları değerlendirir. Derleyicinin dosya adı uzantısından bağımsız olarak tüm dosyaları kabul etmeye zorlamak için [/TP](reference/tc-tp-tc-tp-specify-source-file-type.md) derleyici seçeneğini kullanın.
 
 MSVC derleyicisi, küçük özel durumlarla ISO C99 standardına uyan bir C çalışma zamanı kitaplığı (CRT) içerir. Taşınabilir kod genellikle, beklenen şekilde derlenir ve çalışır. Bazı eski kitaplık işlevleri ve birkaç POSIX işlev adı, MSVC derleyicisi tarafından kullanım dışıdır. İşlevler desteklenir, ancak tercih edilen adlar değişmiştir. Daha fazla bilgi için bkz. CRT ve derleyici uyarısında [güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md) [(düzey 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
 
@@ -174,4 +174,4 @@ MSVC derleyicisi, küçük özel durumlarla ISO C99 standardına uyan bir C çal
 
 [C++ dil başvurusu](../cpp/cpp-language-reference.md)<br/>
 [Projeler ve derleme sistemleri](projects-and-build-systems-cpp.md)<br/>
-[MSVC Derleyicisi Seçenekleri](reference/compiler-options.md)
+[MSVC derleyici seçenekleri](reference/compiler-options.md)

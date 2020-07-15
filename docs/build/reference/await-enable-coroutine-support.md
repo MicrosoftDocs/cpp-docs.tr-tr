@@ -9,24 +9,24 @@ helpviewer_keywords:
 - -await enable coroutine support [C++]
 - await enable coroutine support [C++]
 ms.assetid: 302c8e69-09b6-4c58-bcdd-0a6a8713a8df
-ms.openlocfilehash: eeab3f4a1afc73e341f04222a55c8ce429490742
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 53a6cf4b3d14ee97a324fa01f83c0d0fee61180b
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078442"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373703"
 ---
 # <a name="await-enable-coroutine-support"></a>/await (Eş yordam desteğini etkinleştir)
 
 Eş yordamları için derleyici desteğini etkinleştirmek üzere **/await** derleyici seçeneğini kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > /await
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Await** derleyici seçeneği, eş değerleri ve C++ **co_await**, **co_yield**ve **co_return**anahtar kelimeleri için derleyici desteği sunar. Bu seçenek varsayılan olarak kapalıdır. Visual Studio 'da eş yordamlar için destek hakkında bilgi için bkz. [Visual Studio Ekip Blogu](https://blogs.msdn.microsoft.com/vcblog/category/coroutine/). Eş standart teklif hakkında daha fazla bilgi için bkz. [N4628 çalışma taslağı, eş için Uzantılar Için C++ teknik belirtim](https://wg21.link/n4628).
+**/Await** derleyici seçeneği, C++ eş değerleri için derleyici desteğini ve **co_await**, **co_yield**ve **co_return**anahtar sözcüklerini sunar. Bu seçenek varsayılan olarak kapalıdır. Visual Studio 'da eş yordamlar için destek hakkında bilgi için bkz. [Visual Studio Ekip Blogu](https://devblogs.microsoft.com/cppblog/category/coroutine/). Eş standart teklif hakkında daha fazla bilgi için bkz. [N4628 çalışma taslağı, eş yordamın C++ uzantıları Için Teknik belirtim](https://wg21.link/n4628).
 
 **/Await** seçeneği Visual Studio 2015 ' den başlayarak kullanılabilir.
 
@@ -34,7 +34,7 @@ Eş yordamları için derleyici desteğini etkinleştirmek üzere **/await** der
 
 1. Projenizin **Özellik sayfaları** iletişim kutusunu açın.
 
-1. **Yapılandırma özellikleri**altında **CC++ /** klasörünü genişletin ve **komut satırı** özellik sayfasını seçin.
+1. **Yapılandırma özellikleri**altında **C/C++** klasörünü genişletin ve **komut satırı** özellik sayfasını seçin.
 
 1. **Ek seçenekler** kutusuna **/await** derleyici seçeneğini girin. Değişikliklerinizi kaydetmek için **Tamam ' ı** veya **Uygula** ' yı seçin.
 
@@ -44,5 +44,5 @@ Eş yordamları için derleyici desteğini etkinleştirmek üzere **/await** der
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

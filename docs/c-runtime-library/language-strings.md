@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - language strings
 ms.assetid: bbee63b1-af0b-4e44-9eaf-dd3e265c05fd
-ms.openlocfilehash: 18a94d33f9ca382bb6c7cd77a4f2b33ed800f2c6
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 7713fe3f7cff4b80ce72927fa970e03914f94346
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438255"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373610"
 ---
 # <a name="language-strings"></a>Dil Dizeleri
 
-[Setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) ve [_Create_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md) işlevleri, Unicode kod sayfasını kullanmayan işletim sistemlerinde Windows nls API 'si tarafından desteklenen dilleri kullanabilir. İşletim sistemi sürümüne göre desteklenen dillerin listesi için bkz. [ek a:](https://msdn.microsoft.com/library/cc233982.aspx) [MS-LCID] Içinde ürün davranışı: Windows dil kodu tanımlayıcısı (LCID) başvurusu. Dil dizesi, desteklenen diller listesinin **dil** ve **Dil etiketi** sütunlarındaki değerlerden herhangi biri olabilir. Kullanılabilir yerel ayar adlarını ve ilgili değerleri gösteren bir kod örneği için bkz. [NLS: ad tabanlı API 'Ler örneği](/windows/win32/intl/nls--name-based-apis-sample).
+[Setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) ve [_Create_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md) işlevleri, Unicode kod sayfasını kullanmayan işletim sistemlerinde Windows nls API 'si tarafından desteklenen dilleri kullanabilir. İşletim sistemi sürümüne göre desteklenen dillerin listesi için bkz. [ek a:](https://docs.microsoft.com/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c) \[ MS-LCID 'de ürün davranışı]: Windows dil kodu tanımlayıcısı (LCID) başvurusu. Dil dizesi, desteklenen diller listesinin **dil** ve **Dil etiketi** sütunlarındaki değerlerden herhangi biri olabilir. Kullanılabilir yerel ayar adlarını ve ilgili değerleri gösteren bir kod örneği için bkz. [NLS: ad tabanlı API 'Ler örneği](/windows/win32/intl/nls--name-based-apis-sample).
 
 ## <a name="additional-supported-language-strings"></a>Desteklenen ek dil dizeleri
 
@@ -24,9 +24,9 @@ Microsoft C çalışma zamanı kitaplığı uygulamasında da bu dil dizeleri de
 |İngilizcesi|tr-TR|
 |Amerikan İngilizcesi|tr-TR|
 |Amerikan-İngilizce|tr-TR|
-|ticari|tr-AU|
+|ticari|En-AU|
 |Belçika|nl-|
-|alı|CA tr|
+|alı|en-CA|
 |CHH|zh-HK|
 |kikare dağılımı|zh-SG|
 |Çince|zh|
@@ -36,13 +36,13 @@ Microsoft C çalışma zamanı kitaplığı uygulamasında da bu dil dizeleri de
 |Çince-Geleneksel|zh-TW|
 |Felemenkçe-Belçika|nl-|
 |İngilizce-American|tr-TR|
-|İngilizce-Avustralya|tr-AU|
+|İngilizce-Avustralya|En-AU|
 |İngilizce-Belize|En-BZ|
-|İngilizce-can|CA tr|
+|İngilizce-can|en-CA|
 |İngilizce-Karayipler|En-029|
-|İngilizce-ire|IE tr|
+|İngilizce-ire|en-IE|
 |İngilizce-Jamaika|En-JM|
-|İngilizce-NZ|tr NZ|
+|İngilizce-NZ|En-NZ|
 |İngilizce-Güney Afrika|En-ZA|
 |İngilizce-Trinidad y Tobago|En-TT|
 |İngilizce-UK|en-GB|
@@ -51,15 +51,15 @@ Microsoft C çalışma zamanı kitaplığı uygulamasında da bu dil dizeleri de
 |Fransızca-Belçika|fr-of|
 |Fransızca-Kanada|fr-CA|
 |Fransızca-Lüksemburg|fr-LU|
-|Fransızca-İsviçre|FR-CH|
-|Almanca-Avusturya|de-AT|
+|Fransızca-İsviçre|fr-CH|
+|Almanca-Avusturya|de|
 |Almanca-Lichtenstein|de LI|
 |Almanca-Lüksemburg|de-LU|
-|Almanca-İsviçre|de-CH|
-|İrlanda Dili-İngilizce|IE tr|
+|Almanca-İsviçre|devre dışı|
+|İrlanda Dili-İngilizce|en-IE|
 |İtalyanca-İsviçre|It-CH|
 |Norveç dili|hayır|
-|Norveççe-Bokmal|NB-yok|
+|Norveççe-Bokmal|nb-NO|
 |Norveççe-Nynorsk|nn-Hayır|
 |Portekizce-Brezilya|pt-BR|
 |İspanyolca-Arjantin|es-AR|
@@ -82,7 +82,7 @@ Microsoft C çalışma zamanı kitaplığı uygulamasında da bu dil dizeleri de
 |İspanyolca-Uruguay|es-UY|
 |İspanyolca-Venezuela|es-VE|
 |İsveççe-Finlandiya|ZF-FI|
-|Alman|de-CH|
+|Alman|devre dışı|
 |tr|en-GB|
 |ABD|tr-TR|
 |ABD|tr-TR|

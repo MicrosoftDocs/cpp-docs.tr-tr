@@ -8,20 +8,20 @@ helpviewer_keywords:
 - /DYNAMICBASE linker option
 - DYNAMICBASE linker option
 ms.assetid: 6c0ced8e-fe9c-4b63-b956-eb8a55fbceb2
-ms.openlocfilehash: 66d6232ed43f9c842ebbb0e22b57c509cf610afa
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 206c054f383418e176e00f4155f9f6a25a37e253
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170065"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373716"
 ---
 # <a name="dynamicbase-use-address-space-layout-randomization"></a>/DYNAMICBASE (Adres boşluğu düzeni rastgele seçimini kullan)
 
 Windows Vista 'da ilk olarak bulunan Windows 'un adres alanı düzeni rastgele seçme (ASLR) özelliğini kullanarak yükleme zamanında rastgele bir şekilde yeniden temellenebilir bir yürütülebilir görüntü oluşturulup oluşturulmayacağını belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/DynamicBase**[ **: No**]
+> **/DynamicBase**[**: No**]
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -31,9 +31,9 @@ Varsayılan olarak, **/DynamicBase** etkindir. Bu seçeneği devre dışı bıra
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio 'da bu bağlayıcı seçeneğini ayarlamak için
 
-1. Proje **Özellik sayfaları** iletişim kutusunu açın. Daha fazla bilgi için bkz [. C++ Visual Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Proje **Özellik sayfaları** iletişim kutusunu açın. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > **bağlayıcı** > **Gelişmiş** Özellik sayfası ' nı seçin.
+1. **Yapılandırma özellikleri**  >  **Bağlayıcısı**  >  **Gelişmiş** özellik sayfasını seçin.
 
 1. **Rastgele temel adres** özelliğini değiştirin.
 
@@ -44,6 +44,6 @@ Varsayılan olarak, **/DynamicBase** etkindir. Bu seçeneği devre dışı bıra
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [MSVC bağlayıcı başvurusu](linking.md)
-- [MSVC Bağlayıcı Seçenekleri](linker-options.md)
-- [/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md)
-- [Windows ISV yazılım güvenliği savunmaları](https://msdn.microsoft.com/library/bb430720.aspx)
+- [MSVC bağlayıcı seçenekleri](linker-options.md)
+- [/HıGHENTROPYVA](highentropyva-support-64-bit-aslr.md)
+- [Windows ISV yazılım güvenliği savunmaları](https://docs.microsoft.com/previous-versions/bb430720(v=msdn.10))

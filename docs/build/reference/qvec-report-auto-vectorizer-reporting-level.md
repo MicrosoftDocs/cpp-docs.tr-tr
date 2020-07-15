@@ -2,18 +2,18 @@
 title: /Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)
 ms.date: 11/04/2016
 ms.assetid: 4778c9a3-0692-4085-9b05-1bfeadf4c74a
-ms.openlocfilehash: 655be3581eee4b23a8d0f2bcfaea7d07c8b1b07c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 260cf89d50110f960eb6f320dccbb4a1d80f65bc
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319258"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373820"
 ---
 # <a name="qvec-report-auto-vectorizer-reporting-level"></a>/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)
 
-Raporlama özelliği derleyicinin sağlar [otomatik vektör hale getirici](../../parallel/auto-parallelization-and-auto-vectorization.md) ve derleme sırasında bilgi iletilerini çıktı düzeyini belirtir.
+Derleyici [Otomatik Vektörleştirici](../../parallel/auto-parallelization-and-auto-vectorization.md) 'in raporlama özelliğini sunar ve derleme sırasında çıkış için bilgi iletilerinin düzeyini belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /Qvec-report:{1}{2}
@@ -21,29 +21,29 @@ Raporlama özelliği derleyicinin sağlar [otomatik vektör hale getirici](../..
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/ Qvec-report: 1**<br/>
-Bir bilgi iletisidir vektörleştirildi döngüler için çıkarır.
+**/Qvec-report: 1**<br/>
+Vektörleştirilmiş döngüler için bilgilendirici bir ileti verir.
 
-**/ Qvec-report: 2**<br/>
-Bir bilgi iletisidir ve, bir neden kodu ile birlikte vektörleştirilmedi döngüler vektörleştirildi döngüler için çıkarır.
+**/Qvec-report: 2**<br/>
+Vektörleştirilmiş döngüler için ve bir neden koduyla birlikte vektörleştirilmiş döngüler için bilgilendirici bir ileti verir.
 
-Neden kodları ve iletiler hakkında daha fazla bilgi için bkz. [vektör yapıcı ve paralel hale getirici iletileri](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).
+Neden kodları ve iletileri hakkında bilgi için bkz. [Vektörtorizer ve paralelleştirme iletileri](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).
 
-### <a name="to-set-the-qvec-report-compiler-option-in-visual-studio"></a>Visual Studio'da /Qvec-report derleyici seçeneğini ayarlamak için
+### <a name="to-set-the-qvec-report-compiler-option-in-visual-studio"></a>Visual Studio 'da/Qvec-report derleyici seçeneğini ayarlamak için
 
-1. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **özellikleri**.
+1. **Çözüm Gezgini**' de, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
 
-1. İçinde **özellik sayfaları** iletişim kutusunun **C/C++** seçin **komut satırı**.
+1. **Özellik sayfaları** iletişim kutusundaki **C/C++** altında **komut satırı**' nı seçin.
 
-1. İçinde **ek seçenekler** kutusuna `/Qvec-report:1` veya `/Qvec-report:2`.
+1. **Ek seçenekler** kutusuna `/Qvec-report:1` veya yazın `/Qvec-report:2` .
 
-### <a name="to-set-the-qvec-report-compiler-option-programmatically"></a>/Qvec-report derleyici seçeneğini program üzerinden ayarlamak için
+### <a name="to-set-the-qvec-report-compiler-option-programmatically"></a>/Qvec-report derleyici seçeneğini programlı olarak ayarlamak için
 
-- Aşağıdaki kod örneğinde kullanmak <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- İçindeki kod örneğini kullanın <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A> .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Q Seçenekler (Düşük Düzey İşlemler)](q-options-low-level-operations.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
-[Yerel kodda paralel programlama](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)
+[/Q seçenekler (düşük düzey Işlemler)](q-options-low-level-operations.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[Visual Studio 'da yerel kod vektörleştirme](https://docs.microsoft.com/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)

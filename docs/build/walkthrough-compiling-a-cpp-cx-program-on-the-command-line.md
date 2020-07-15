@@ -2,26 +2,26 @@
 title: 'İzlenecek Yol: Komut Satırında C++/CX Programı Derleme'
 ms.date: 04/23/2019
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
-ms.openlocfilehash: 83369fc7b458463ea1f44a347bbcd0ca4eb32224
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 456373fc9009920b734243f6a6c1af3d2c0301d4
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078202"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373690"
 ---
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında C++/CX Programı Derleme
 
 > [!NOTE]
 > Yeni UWP uygulamaları ve bileşenleri için, Windows Çalışma Zamanı API 'Leri için standart bir C++ 17 dil projeksiyonu olan [c++/Wınrt](/windows/uwp/cpp-and-winrt-apis/)kullanmanızı öneririz. C++/Wınrt, sürüm 1803 ' den Windows 10 SDK ' da kullanılabilir. C++/Wınrt tamamen başlık dosyalarında uygulanır ve modern Windows API 'sine ilk sınıf erişim sağlamak için tasarlanmıştır.
 
-Microsoft C++ derleyicisi (MSVC), Windows Çalışma Zamanı programlama modelini hedeflemek için ek tür ve işleçlere sahip C++ Bileşen Uzantıları 'nı (C++/CX) destekler. C++/CX kullanarak Evrensel Windows Platformu (UWP) ve Windows Masaüstü için uygulamalar oluşturabilirsiniz. Daha fazla bilgi için bkz. [çalışma zamanı platformları Için](../extensions/component-extensions-for-runtime-platforms.md) [C++/CX](https://msdn.microsoft.com/magazine/dn166929.aspx) ve bileşen uzantıları turu.
+Microsoft C++ derleyicisi (MSVC), Windows Çalışma Zamanı programlama modelini hedeflemek için ek tür ve işleçlere sahip C++ Bileşen Uzantıları 'nı (C++/CX) destekler. C++/CX kullanarak Evrensel Windows Platformu (UWP) ve Windows Masaüstü için uygulamalar oluşturabilirsiniz. Daha fazla bilgi için bkz. [çalışma zamanı platformları Için](../extensions/component-extensions-for-runtime-platforms.md) [C++/CX](https://docs.microsoft.com/archive/msdn-magazine/2013/april/component-extensions-a-tour-of-c-cx) ve bileşen uzantıları turu.
 
 Bu kılavuzda, temel bir C++/CX programı oluşturmak ve ardından komut satırında derlemek için bir metin düzenleyicisi kullanın. (Gösterilen birini yazmak yerine kendi C++/CX programınızı kullanabilir ya da başka bir yardım makalesindeki C++/CX kod örneğini kullanabilirsiniz. Bu teknik, Kullanıcı arabirimi öğeleri olmayan küçük modüller oluşturmak ve test etmek için kullanışlıdır.)
 
 > [!NOTE]
 > C++/CX programlarını derlemek için Visual Studio IDE 'yi de kullanabilirsiniz. IDE, komut satırında kullanılamayan tasarım, hata ayıklama, öykünme ve dağıtım desteği içerdiğinden, Evrensel Windows Platformu (UWP) uygulamaları oluşturmak için IDE 'yi kullanmanızı öneririz. Daha fazla bilgi için bkz. [C++ ' da UWP uygulaması oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 C++ dilinin temellerini anlamış olursunuz.
 
@@ -50,13 +50,13 @@ C++/CX için derlemeyi etkinleştirmek üzere [/ZW](reference/zw-windows-runtime
     }
     ```
 
-1. Menü çubuğunda **Dosya** > **Kaydet**' i seçin.
+1. Menü çubuğunda **Dosya**  >  **Kaydet**' i seçin.
 
    Windows Çalışma Zamanı [Platform ad](../cppcx/platform-namespace-c-cx.md) alanı ad alanını kullanan bir C++ kaynak dosyası oluşturdunuz.
 
-1. Komut isteminde **cl/EHsc/ZW basiccx. cpp/LINK/SUBSYSTEM: Console**yazın. CL. exe derleyicisi, kaynak kodu bir. obj dosyasına derler ve ardından, basiccx. exe adlı bir yürütülebilir program oluşturmak için bağlayıcıyı çalıştırır. ( [/EHsc](reference/eh-exception-handling-model.md) derleyici seçeneği C++ özel durum işleme modelini belirtir ve [/Link](reference/link-pass-options-to-linker.md) bayrağı bir konsol uygulaması belirtir.)
+1. Komut isteminde **cl/EHsc/ZW basiccx. cpp/LINK/SUBSYSTEM: Console**yazın. cl.exe derleyicisi, kaynak kodu bir. obj dosyasına derler ve sonra basiccx.exe adlı yürütülebilir bir program oluşturmak için bağlayıcıyı çalıştırır. ( [/EHsc](reference/eh-exception-handling-model.md) derleyici seçeneği C++ özel durum işleme modelini belirtir ve [/Link](reference/link-pass-options-to-linker.md) bayrağı bir konsol uygulaması belirtir.)
 
-1. Basiccx. exe programını çalıştırmak için komut isteminde **basiccx**yazın.
+1. basiccx.exe programını çalıştırmak için komut isteminde **basiccx**yazın.
 
    Program bu metni görüntüler ve çıkar:
 
@@ -67,4 +67,4 @@ C++/CX için derlemeyi etkinleştirmek üzere [/ZW](reference/zw-windows-runtime
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Projeler ve derleme sistemleri](projects-and-build-systems-cpp.md)<br/>
-[MSVC Derleyicisi Seçenekleri](reference/compiler-options.md)
+[MSVC derleyici seçenekleri](reference/compiler-options.md)

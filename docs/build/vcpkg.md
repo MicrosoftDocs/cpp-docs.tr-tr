@@ -4,11 +4,12 @@ description: vcpkg, Windows, macOS ve Linux 'ta açık kaynaklı C++ kitaplıkla
 ms.date: 07/06/2020
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: 2a179a25a7332a93486d42750f06f18658991b30
-ms.sourcegitcommit: 85d96eeb1ce41d9e1dea947f65ded672e146238b
+ms.openlocfilehash: 7131f301a22b2834b04ef932f3cee426b04dc7e5
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86058652"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373638"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux ve macOS için C++ Paket Yöneticisi
 
@@ -166,7 +167,7 @@ Bir kitaplığın, etkin vcpkg örneğindeki sürümden farklı olan belirli bir
 
 ## <a name="target-linux-from-windows-via-wsl"></a>WSL aracılığıyla Windows 'dan Linux 'u hedefleyin
 
-Linux için Windows alt sistemini veya WSL 'yi kullanarak bir Windows makinesinde Linux ikilileri oluşturabilirsiniz. [Windows 10 ' da WSL 'Yi ayarlamak](/windows/wsl/install-win10)için yönergeleri izleyin. Ardından, [Linux Için Visual Studio uzantısıyla](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/)yapılandırın. Windows ve Linux için tüm yerleşik kitaplıklarınızı aynı klasöre yerleştirmekle sorunsuz. Bunlar hem Windows hem de WSL 'den erişilebilir.
+Linux için Windows alt sistemini veya WSL 'yi kullanarak bir Windows makinesinde Linux ikilileri oluşturabilirsiniz. [Windows 10 ' da WSL 'Yi ayarlamak](/windows/wsl/install-win10)için yönergeleri izleyin. Ardından, [Linux Için Visual Studio uzantısıyla](https://devblogs.microsoft.com/cppblog/targeting-windows-subsystem-for-linux-from-visual-studio/)yapılandırın. Windows ve Linux için tüm yerleşik kitaplıklarınızı aynı klasöre yerleştirmekle sorunsuz. Bunlar hem Windows hem de WSL 'den erişilebilir.
 
 ## <a name="export-compiled-binaries-and-headers"></a><a name="export_binaries_per_project"></a>Derlenmiş ikili dosyaları ve üstbilgileri dışarı aktarma
 
@@ -248,7 +249,7 @@ Vcpkg örneğinin içeriği şunlardır:
 
 ## <a name="command-line-reference"></a>Komut satırı başvurusu
 
-|Komut|Açıklama|
+|Komut|Description|
 |---------|---------|
 |**`vcpkg search [pat]`**|Yüklemek için kullanılabilir paketleri ara|
 |**`vcpkg install <pkg>...`**|Paket yükler|

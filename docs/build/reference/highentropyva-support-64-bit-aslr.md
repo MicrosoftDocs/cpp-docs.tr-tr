@@ -2,41 +2,41 @@
 title: /HIGHENTROPYVA (64 Bit ASLR Destekle)
 ms.date: 06/12/2018
 ms.assetid: fe35f9f7-d28e-4694-9aeb-a79db06168e0
-ms.openlocfilehash: 5ecbbf8bbd8e74f80f2f5b2d7df0d2ef544112fc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8f8601d89e8456461aac3d91f9fd2cfda216d7f5
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62291606"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373846"
 ---
 # <a name="highentropyva-support-64-bit-aslr"></a>/HIGHENTROPYVA (64 Bit ASLR Destekle)
 
-Yürütülebilir resmin yüksek entropili 64-bit rastgele adres alanı düzenini (ASLR) destekleyip desteklemediğini belirtir.
+Yürütülebilir resmin yüksek entrolebilir 64 bit adres alanı düzeni rastgele seçimini (ASLR) destekleyip desteklemediğini belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/ HIGHENTROPYVA**[**: NO**]
+> **/highentropyva**[**: No**]
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/ HIGHENTROPYVA** üstbilgisi değiştiren bir *yürütülebilir görüntü*, bir .dll dosyasının veya .exe dosyası, tüm 64 bit adres ASLR kullanıp kullanamayacağını göstermek için. Bu seçenek yürütülebilir olarak ve tüm bağımlı modüllerini ayarlandığında, 64 bit ASLR destekleyen bir işletim sistemi yürütülebilir resmin parçalarını yükleme zamanında bir 64 bit sanal adres alanında rastgele adresler kullanarak ReBase işlemi yapabilirsiniz. Bu geniş adres alanı bir saldırganın belirli bir bellek bölgesinin konumunu tahmin edilmesi daha zor hale getirir.
+**/Highentropyva** , ASLR 'in tüm 64-bit adres alanını kullanıp kullanamayacağını göstermek için *yürütülebilir bir görüntünün*, bir. dll dosyasının veya. exe dosyasının üst bilgisini değiştirir. Bu seçenek, bir yürütülebilir dosya ve bağımlı olduğu tüm modüller üzerinde ayarlandığında, 64 bitlik ASLR destekleyen bir işletim sistemi, bir 64 bit sanal adres alanında rastgele adresler kullanarak, yükleme zamanında yürütülebilir görüntünün segmentlerini yeniden temellendirebilirler. Bu büyük adres alanı, bir saldırganın belirli bir bellek bölgesinin konumunu tahmin etmesini zorlaştırır.
 
-Varsayılan olarak, **/highentropyva** 64-bit yürütülebilir resimler için etkinleştirilir. Bu seçenek gerektirir [/largeaddressaware](largeaddressaware-handle-large-addresses.md), ayrıca etkin olan 64-bit görüntüleri için varsayılan olarak. **/ HIGHENTROPYVA** nerede bağlayıcı seçeneğini yoksayar 32-bit yürütülebilir resimler için geçerli değildir. Açıkça bu seçeneği devre dışı bırakma, **/HIGHENTROPYVA:NO**.
+Varsayılan olarak, **/highentropyva** , 64 bitlik yürütülebilir görüntüler için etkinleştirilmiştir. Bu seçenek, 64 bit görüntüler için varsayılan olarak da etkinleştirilen [/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md)gerektirir. **/Highentropyva** , bağlayıcının seçeneği yoksaydığı 32 bitlik yürütülebilir görüntüler için geçerli değildir. Bu seçeneği açıkça devre dışı bırakmak için **/highentropyva: No**komutunu kullanın.
 
-İçin **/highentropyva** yükleme zamanında bir etkiye sahip olma [dynamıcbase](dynamicbase-use-address-space-layout-randomization.md) etkinleştirilmiş olması da gerekir. **/ DYNAMICBASE** varsayılan olarak etkindir ve Windows Vista ve sonraki işletim sistemlerinde ASLR etkinleştirmek için gereklidir. Önceki Windows sürümlerinde bu bayrağı yoksayın.
+**/Highentropyva** 'nın yükleme zamanında bir etkisi olması için [/DynamicBase](dynamicbase-use-address-space-layout-randomization.md) de etkinleştirilmelidir. **/DynamicBase** varsayılan olarak etkindir ve Windows Vista ve sonraki IŞLETIM sistemlerinde ASLR etkinleştirmesi için gereklidir. Windows 'un önceki sürümleri bu bayrağı yoksayar.
 
-### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio'da bu bağlayıcı seçeneğini ayarlamak için
+### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio 'da bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Proje **Özellik sayfaları** iletişim kutusunu açın. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **komut satırı** özellik sayfasını seçin.
 
-1. İçinde **ek seçenekler**, girin `/HIGHENTROPYVA` veya `/HIGHENTROPYVA:NO`.
+1. **Ek seçenekler**' de, `/HIGHENTROPYVA` veya girin `/HIGHENTROPYVA:NO` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [MSVC bağlayıcı başvurusu](linking.md)
-- [MSVC Bağlayıcı Seçenekleri](linker-options.md)
+- [MSVC bağlayıcı seçenekleri](linker-options.md)
 - [/DYNAMICBASE](dynamicbase-use-address-space-layout-randomization.md)
 - [/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md)
-- [ISV yazılım güvenlik Savunmaları Windows](https://msdn.microsoft.com/library/bb430720.aspx)
+- [Windows ISV yazılım güvenliği savunmaları](https://docs.microsoft.com/previous-versions/bb430720(v=msdn.10))

@@ -8,20 +8,20 @@ helpviewer_keywords:
 - DYNAMICBASE editbin option
 - /DYNAMICBASE editbin option
 ms.assetid: edb3df90-7b07-42fb-a94a-f5a4c1d325d6
-ms.openlocfilehash: ab7682c8344d6fc36ded03e7ef885c83d2f19ab7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 54644d9df546299be3b688f9745a121592938df6
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169051"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373625"
 ---
 # <a name="dynamicbase"></a>/DYNAMICBASE
 
 Windows Vista 'da ilk olarak bulunan Windows 'un adres alanı düzeni rastgele seçme (ASLR) özelliğini kullanarak yükleme zamanında rastgele bir şekilde yeniden temellenebilir bir yürütülebilir görüntü oluşturulup oluşturulmayacağını belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/DynamicBase**[ **: No**]
+> **/DynamicBase**[**: No**]
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -31,5 +31,5 @@ Varsayılan olarak, **/DynamicBase** etkindir. Bu seçeneği devre dışı bıra
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [EDITBIN Seçenekleri](editbin-options.md)
-- [Windows ISV yazılım güvenliği savunmaları](https://msdn.microsoft.com/library/bb430720.aspx)
+- [EDITBIN seçenekleri](editbin-options.md)
+- [Windows ISV yazılım güvenliği savunmaları](https://docs.microsoft.com/previous-versions/bb430720(v=msdn.10))

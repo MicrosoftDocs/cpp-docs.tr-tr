@@ -2,18 +2,18 @@
 title: /Qpar-rapor (Otomatik Paralel Hale Getirici Raporlama Düzeyi)
 ms.date: 11/04/2016
 ms.assetid: 562673b9-02da-4bf8-bb64-70bc25ef4651
-ms.openlocfilehash: 25732900fa201258331dcb8eee96af9ba97a6def
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ea3e430dec61d35b8540792773b5519e64cedaef
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319960"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373794"
 ---
 # <a name="qpar-report-auto-parallelizer-reporting-level"></a>/Qpar-rapor (Otomatik Paralel Hale Getirici Raporlama Düzeyi)
 
-Derleyicinin uygulamasının raporlama özelliğini etkinleştirir [otomatik paralel hale getirici](../../parallel/auto-parallelization-and-auto-vectorization.md) ve derleme sırasında bilgi iletilerini çıktı düzeyini belirtir.
+Derleyicinin [Otomatik paralelleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) raporlama özelliğini sunar ve derleme sırasında çıkış için bilgilendirici ileti düzeyini belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /Qpar-report:{1}{2}
@@ -21,29 +21,29 @@ Derleyicinin uygulamasının raporlama özelliğini etkinleştirir [otomatik par
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/ Qpar-report: 1**<br/>
-Bir bilgi iletisidir paralel döngüler için çıkarır.
+**/Qpar-report: 1**<br/>
+Paralelleştirilmiş döngüler için bilgilendirici bir ileti verir.
 
-**/ Qpar-report: 2**<br/>
-Bir bilgi iletisidir paralel döngüler için ve ayrıca, bir neden kodu ile birlikte paralelleştirilmedi döngüler çıkarır.
+**/Qpar-report: 2**<br/>
+Paralelleştirilmiş döngüler için, bir neden kodu ile birlikte paralelleştirilmiş döngüler için bilgilendirici bir ileti verir.
 
-İletiler stdout raporlanır. Hiçbir bilgi iletilerini bildirilen, ardından hiçbir döngüler kodunu içerir ya da raporlama düzeyine paralel rapor döngüler için ayarlanmadı. Neden kodları ve iletiler hakkında daha fazla bilgi için bkz. [vektör yapıcı ve paralel hale getirici iletileri](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).
+İletiler stdout 'a bildirilir. Bilgilendirici bir ileti bildirilmezse, kod döngü içermez ya da raporlama düzeyi paralelleştirilmiş olarak rapor döngüleri olarak ayarlanmadı. Neden kodları ve iletileri hakkında daha fazla bilgi için bkz. [Vektörtorizer ve paralelleştirme iletileri](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).
 
-### <a name="to-set-the-qpar-report-compiler-option-in-visual-studio"></a>Visual Studio'da /Qpar-report derleyici seçeneğini ayarlamak için
+### <a name="to-set-the-qpar-report-compiler-option-in-visual-studio"></a>Visual Studio 'da/Qpar-report derleyici seçeneğini ayarlamak için
 
-1. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **özellikleri**.
+1. **Çözüm Gezgini**' de, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
 
-1. İçinde **özellik sayfaları** iletişim kutusunun **C/C++** seçin **komut satırı**.
+1. **Özellik sayfaları** iletişim kutusundaki **C/C++** altında **komut satırı**' nı seçin.
 
-1. İçinde **ek seçenekler** kutusuna `/Qpar-report:1` veya `/Qpar-report:2`.
+1. **Ek seçenekler** kutusuna `/Qpar-report:1` veya yazın `/Qpar-report:2` .
 
-### <a name="to-set-the-qpar-report-compiler-option-programmatically"></a>/Qpar-report derleyici seçeneğini program üzerinden ayarlamak için
+### <a name="to-set-the-qpar-report-compiler-option-programmatically"></a>/Qpar-report derleyici seçeneğini programlı olarak ayarlamak için
 
-- Aşağıdaki kod örneğinde kullanmak <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- İçindeki kod örneğini kullanın <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A> .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Q Seçenekler (Düşük Düzey İşlemler)](q-options-low-level-operations.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
-[Yerel kodda paralel programlama](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)
+[/Q seçenekler (düşük düzey Işlemler)](q-options-low-level-operations.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[Visual Studio 'da yerel kod vektörleştirme](https://docs.microsoft.com/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)

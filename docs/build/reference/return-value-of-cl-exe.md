@@ -4,12 +4,12 @@ ms.date: 09/05/2018
 helpviewer_keywords:
 - cl.exe compiler, return value
 ms.assetid: 7c2d7f33-ee0d-4199-8ef4-75fe2b007670
-ms.openlocfilehash: 1617208a8d99e3c5643330f75faf9beed9ce5f1b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 627d20a85b8f31ab881588533840a888334e9847
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319024"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373781"
 ---
 # <a name="return-value-of-clexe"></a>cl.exe Dönüş Değeri
 
@@ -17,9 +17,9 @@ cl.exe başarı durumunda (hatasız) sıfır, aksi halde sıfır olmayan değer 
 
 cl.exe'nin dönüş değeri script, powershell, .cmd veya .bat dosyasından derleme yapıyorsanız kullanışlı olabilir. Hatalar ya da uyarılar olması durumunda, onları giderebilmeniz için, derleyicinin çıktısını yakalamanızı öneririz.
 
-cl.exe'nin tamamı listelenemeyecek kadar çok olası hata çıkış kodu var. Bir hata kodu arayabilir veya ntstatus.h dosyalarından % ProgramFiles (x86) %\Windows Windows Yazılım Geliştirme Seti de Setleri\\<em>sürüm</em>\Include\shared\ dizin. Ondalık olarak döndürülen hata kodları, arama için onaltılık olarak dönüştürülmelidir. Örneğin, -1073741620 hata kodu ondalık olarak dönüştürüldüğünde 0xC00000CC olur. Bu hata ntstatus.h dosyasında bulundu ve ilgili ileti "Belirtilen paylaşım adı uzak sunucuda bulunamıyor" şeklindedir. Windows hata kodlarının indirilebilir listesi için bkz: [ &#91;MS-ERREF&#93;: Windows hata kodlarının](https://msdn.microsoft.com/library/cc231196).
+cl.exe'nin tamamı listelenemeyecek kadar çok olası hata çıkış kodu var. % ProgramFiles (x86)% \ Windows Kits \\ <em>sürümü</em>\ ınclude\shared\ dizinine Windows yazılım geliştirme seti 'nde bulunan winerror. h veya ntstatus. h dosyalarında bir hata kodu arayabilirsiniz. Ondalık olarak döndürülen hata kodları, arama için onaltılık olarak dönüştürülmelidir. Örneğin, -1073741620 hata kodu ondalık olarak dönüştürüldüğünde 0xC00000CC olur. Bu hata ntstatus.h dosyasında bulundu ve ilgili ileti "Belirtilen paylaşım adı uzak sunucuda bulunamıyor" şeklindedir. İndirilebilir bir Windows hata kodları listesi için bkz. [&#91;MS-ERREF&#93;: Windows hata kodları](https://docs.microsoft.com/openspecs/windows_protocols/MS-ERREF).
 
-Derleyici hata iletisinin anlamını bulmak için Visual Studio'da hata arama yardımcı programını da kullanabilirsiniz. Visual Studio komut kabuğunda girin **errlook.exe** yardımcı programı veya Visual Studio IDE'de menü çubuğunda, seçmek için **Araçları**, **hata arama**. Hatayla ilişkili açıklayıcı metni bulmak için hata değerini girin. Daha fazla bilgi için [ERRLOOK başvurusu](errlook-reference.md).
+Derleyici hata iletisinin anlamını bulmak için Visual Studio'da hata arama yardımcı programını da kullanabilirsiniz. Visual Studio komut kabuğu 'nda, yardımcı programı başlatmak için **errlook.exe** girin; Visual Studio IDE ' de, menü çubuğunda **Araçlar**, **hata arama**' yı seçin. Hatayla ilişkili açıklayıcı metni bulmak için hata değerini girin. Daha fazla bilgi için bkz. [ERRLOOK başvurusu](errlook-reference.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -51,4 +51,4 @@ cl /W4 t.cpp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

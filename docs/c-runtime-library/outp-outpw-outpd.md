@@ -41,22 +41,22 @@ helpviewer_keywords:
 - _outpw function
 - _outp function
 ms.assetid: c200fe22-41f6-46fd-b0be-ebb805b35181
-ms.openlocfilehash: 3d0342ae94276c7875bcb737b0d1a64aabafd235
-ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
+ms.openlocfilehash: 0d28511cdf7487226635c0317b7c0ba21ab1d1be
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82825934"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373482"
 ---
 # <a name="outp-outpw-_outp-_outpw-_outpd"></a>outp, outpw, _outp, _outpw _outpd
 
-Bir bağlantı noktasında, bir bayt`outp`(, `_outp`), bir sözcüğe (`outpw`, `_outpw`) veya bir çift sözcüğe (`_outpd`) çıkış verir.
+Bir bağlantı noktasında, bir bayt ( `outp` , `_outp` ), bir sözcüğe ( `outpw` , `_outpw` ) veya bir çift sözcüğe ( `_outpd` ) çıkış verir.
 
 > [!IMPORTANT]
 > Bu işlevler artık kullanılmıyor. Visual Studio 2015 ' den başlayarak bu dosyalar CRT 'da kullanılamaz. \
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 int _outp(
@@ -87,19 +87,19 @@ Bağlantı noktası numarası.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_outp`, `_outpw`Ve `_outpd` işlevleri, belirtilen çıkış bağlantı noktasına sırasıyla bir bayt, bir sözcük ve bir çift sözcük yazar. *Bağlantı noktası* bağımsız değişkeni 0-65.535; aralığında işaretsiz bir tamsayı olabilir. *databayttan* 0-255 aralığında herhangi bir tamsayı olabilir; ve *dataword* , sırasıyla bir tamsayı, işaretsiz kısa tamsayı ve işaretsiz uzun tamsayı aralığında herhangi bir değer olabilir.
+`_outp`, `_outpw` Ve işlevleri, `_outpd` belirtilen çıkış bağlantı noktasına sırasıyla bir bayt, bir sözcük ve bir çift sözcük yazar. *Bağlantı noktası* bağımsız değişkeni 0-65.535; aralığında işaretsiz bir tamsayı olabilir. *databayttan* 0-255 aralığında herhangi bir tamsayı olabilir; ve *dataword* , sırasıyla bir tamsayı, işaretsiz kısa tamsayı ve işaretsiz uzun tamsayı aralığında herhangi bir değer olabilir.
 
-Bu işlevler doğrudan bir g/ç bağlantı noktasına yazdıklarından, Kullanıcı kodunda kullanılamaz. Bu işletim sistemlerinde g/ç bağlantı noktalarını kullanma hakkında daha fazla bilgi için, MSDN 'de "Win32 'de seri Iletişim" araması yapın.
+Bu işlevler doğrudan bir g/ç bağlantı noktasına yazdıklarından, Kullanıcı modu Windows kodunda kullanılamaz. Windows işletim sisteminde g/ç bağlantı noktalarını kullanma hakkında daha fazla bilgi için bkz. [seri iletişimler](https://docs.microsoft.com/previous-versions/ff802693(v=msdn.10)).
 
-`outp` Ve `outpw` adları, `_outp` ve `_outpw` işlevleri için eski, kullanım dışı adlardır. Daha fazla bilgi için bkz. [POSIX işlev adları](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names).
+`outp`Ve `outpw` adları, ve işlevleri için eski, kullanım dışı adlardır `_outp` `_outpw` . Daha fazla bilgi için bkz. [POSIX işlev adları](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`_outp`|\<conio. h>|
-|`_outpw`|\<conio. h>|
-|`_outpd`|\<conio. h>|
+|`_outp`|\<conio.h>|
+|`_outpw`|\<conio.h>|
+|`_outpd`|\<conio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 

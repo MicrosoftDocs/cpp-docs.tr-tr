@@ -1,21 +1,21 @@
 ---
 title: Çalıştırılacak C++ Kurallarını Belirtmek için Kural Kümeleri Kullanma
-ms.date: 04/28/2018
+ms.date: 07/13/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-ms.openlocfilehash: 233a5f8a549e33f63350115d90c7e7e6b5f6937b
-ms.sourcegitcommit: f9344b09a734e8b05a7494415991a22b7aec5ae8
+ms.openlocfilehash: 8b6d3fe8c8e441d4b233f2f4008d8aae9225726f
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85269721"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373859"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Çalıştırılacak C++ Kurallarını Belirtmek için Kural Kümeleri Kullanma
 
 Visual Studio 'da, kod analizi ile ilişkili belirli proje ihtiyaçlarını karşılamak için özel bir *kural kümesi* oluşturabilir ve değiştirebilirsiniz. Varsayılan kural kümeleri içinde depolanır `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets` .
 
-**Visual Studio 2017 sürüm 15,7 ve üzeri:** Herhangi bir metin düzenleyicisini kullanarak özel kural kümeleri oluşturabilir ve bunları, hangi yapı sistemini kullandığınıza bağımsız olarak komut satırı yapılarına uygulayabilirsiniz. Daha fazla bilgi için bkz. [/Analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 sürüm 15,7 ve üzeri:** Herhangi bir metin düzenleyicisini kullanarak özel kural kümeleri oluşturabilir ve bunu, hangi yapı sistemini kullandığınıza bağımsız olarak komut satırı yapılarına uygulayabilirsiniz. Daha fazla bilgi için bkz. [/Analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
 
 Visual Studio 'da özel bir C++ kural kümesi oluşturmak için Visual Studio IDE 'de bir C/C++ projesi açık olmalıdır. Daha sonra kural kümesi düzenleyicisinde bir standart kural kümesi açıp, belirli kuralları ekleyip kaldırarak ve isteğe bağlı olarak, kod analizi bir kuralın ihlal edildiğini belirlediğinde oluşan eylemi değiştirirsiniz.
 
@@ -236,17 +236,19 @@ Aşağıdaki RuleSet şeması bir RuleSet dosyasının XML şemasını açıklar
 
 Şema öğesi ayrıntıları:
 
-- Tyerelleştirme: RuleSet dosyasının adı, RuleSet dosyasının açıklaması, yerelleştirilmiş kaynağı içeren kaynak derlemesinin adı ve yerelleştirilmiş kaynağın temel adı dahil olmak üzere yerelleştirme bilgileri.
-- TRuleHintPaths: RuleSet dosyalarını aramak için ipuçları olarak kullanılan dosya yolları.
-- TName: geçerli RuleSet dosyasının adı.
-- TDescription: geçerli RuleSet dosyasının açıklaması.
-- TInclude: kural eylemiyle dahil edilen bir RuleSet 'in yolu.
-- TIncludeAll: tüm kurallar için kural eylemi.
-- TRule: Rule eylemi ile kural KIMLIĞI.
-- TRules: bir veya daha fazla kural koleksiyonu.
-- Trutaset: ruleset dosya biçimi yerelleştirme bilgileri, kural ipucu yolları, tüm bilgileri, içerme bilgilerini, kural bilgilerini, ad, açıklama ve Araçlar sürüm bilgilerini içerir.
-- Trutaaction: hata, uyarı, bilgi, gizli veya hiçbiri gibi bir kural eylemini açıklayan sabit listesi.
-- TIncludeAction: hata, uyarı, bilgi, gizli, yok veya varsayılan gibi bir kural eylemini açıklayan sabit listesi.
-- TIncludeAllAction: hata, uyarı, bilgi veya gizli gibi bir kural eylemini açıklayan sabit listesi.
+| Şema öğesi | Description |
+|--------------------|--------------|
+| `TLocalization` | RuleSet dosyasının adı, RuleSet dosyasının açıklaması, yerelleştirilmiş kaynağı içeren kaynak derlemesinin adı ve yerelleştirilmiş kaynağın temel adı dahil olmak üzere yerelleştirme bilgileri |
+| `TRuleHintPaths` | Kural kümesi dosyalarını aramak için ipuçları olarak kullanılan dosya yolları |
+| `TName` | Geçerli RuleSet dosyasının adı |
+| `TDescription` | Geçerli RuleSet dosyasının açıklaması |
+| `TInclude` | Kural eylemiyle dahil edilen bir RuleSet 'in yolu |
+| `TIncludeAll` | Tüm kurallar için kural eylemi |
+| `TRule` | Kural KIMLIĞI, kural eylemi |
+| `TRules` | Bir veya daha fazla kural koleksiyonu |
+| `TRuleSet` | Kural ipucu yollarından oluşan ruleset dosya biçimi, tüm bilgileri, içerme bilgilerini, kural bilgilerini, ad, açıklama ve Araçlar sürüm bilgilerini içerir |
+| `TRuleAction` | Hata, uyarı, bilgi, gizli veya hiçbiri gibi bir kural eylemini açıklayan sabit listesi |
+| `TIncludeAction` | Hata, uyarı, bilgi, gizli, yok veya varsayılan gibi bir kural eylemini açıklayan sabit listesi |
+| `TIncludeAllAction` | Hata, uyarı, bilgi veya gizli gibi bir kural eylemini açıklayan sabit listesi |
 
 Bir RuleSet örneğine bir örnek görmek için bkz. [bir metin düzenleyicisinde bir kural kümesi oluşturmak için](#to-create-a-rule-set-in-a-text-editor)veya içinde depolanan varsayılan RuleSets 'ler `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets` .

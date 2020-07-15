@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -TSAWARE linker option
 - TSAWARE linker option
 ms.assetid: fe1c1846-de5b-4839-b562-93fbfe36cd29
-ms.openlocfilehash: 0b3fa8bcfd973949e73fdf701db2adb6c58be687
-ms.sourcegitcommit: 2f9ff2041d70c406df76c5053151192aad3937ea
+ms.openlocfilehash: 135d919278c8e969dc3a31381d5abbd1058c8663
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82587387"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373898"
 ---
 # <a name="tsaware-create-terminal-server-aware-application"></a>/TSAWARE (Terminal Sunucusu Algılayan Uygulama Oluştur)
 
@@ -57,6 +57,6 @@ Bir uygulama/T saware ile bağlanmışsa, DUMPBIN [/Headers](headers.md) bu etki
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
 [Kullanıcıya özgü bilgileri depolama](/windows/win32/TermServ/storing-user-specific-information)<br/>
-[Terminal Hizmetleri ortamındaki eski uygulamalar](https://msdn.microsoft.com/library/aa382957.aspx)
+[Terminal Hizmetleri ortamındaki eski uygulamalar](https://docs.microsoft.com/previous-versions//aa382957(v=vs.85))

@@ -8,29 +8,29 @@ helpviewer_keywords:
 - -HIGHENTROPYVA editbin option
 - /HIGHENTROPYVA editbin option
 ms.assetid: ef4b7c63-440d-40ca-b39d-edefb3217505
-ms.openlocfilehash: 90d3c868eaab85e3b1a2a416c9aa14b0e27ec8f9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2ff9929de74d99fbc45e4f4ff38fd6b939697bc
+ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62270230"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373833"
 ---
 # <a name="highentropyva"></a>/HIGHENTROPYVA
 
-Yürütülebilir resmin yüksek entropili 64-bit rastgele adres alanı düzenini (ASLR) destekleyip desteklemediğini belirtir.
+Yürütülebilir resmin yüksek entrolebilir 64 bit adres alanı düzeni rastgele seçimini (ASLR) destekleyip desteklemediğini belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/ HIGHENTROPYVA**[**: NO**]
+> **/highentropyva**[**: No**]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek üstbilgisi değiştirir bir *yürütülebilir görüntü*, bir .dll dosyasının veya .exe dosyası, 64 bit adresli aslr desteği olup olmadığını belirtmek için. Bu seçenek yürütülebilir olarak ve tüm bağımlı modüllerini ayarlandığında, 64 bit ASLR destekleyen bir işletim sistemi yürütülebilir resmin parçalarını yükleme zamanında bir 64 bit sanal adres alanında rastgele adresler kullanarak ReBase işlemi yapabilirsiniz. Bu geniş adres alanı bir saldırganın belirli bir bellek bölgesinin konumunu tahmin edilmesi daha zor hale getirir.
+Bu seçenek, 64 bitlik adresler içeren ASLR 'in desteklenip desteklenmediğini göstermek için bir. dll dosyası veya. exe dosyası olan *yürütülebilir bir görüntünün*üst bilgisini değiştirir. Bu seçenek, bir yürütülebilir dosya ve bağımlı olduğu tüm modüller üzerinde ayarlandığında, 64 bitlik ASLR destekleyen bir işletim sistemi, bir 64 bit sanal adres alanında rastgele adresler kullanarak, yükleme zamanında yürütülebilir görüntünün segmentlerini yeniden temellendirebilirler. Bu büyük adres alanı, bir saldırganın belirli bir bellek bölgesinin konumunu tahmin etmesini zorlaştırır.
 
-Bağlayıcı varsayılan olarak etkinleştirir **/highentropyva** 64-bit yürütülebilir resimler için. Bu seçenek gerektirir [/largeaddressaware](largeaddressaware.md), ayrıca etkin olan 64-bit görüntüleri için varsayılan olarak. **/ HIGHENTROPYVA** nerede seçenek göz ardı edilir 32-bit yürütülebilir resimler için geçerli değildir. Açıkça bu seçeneği devre dışı bırakma, **/HIGHENTROPYVA:NO**. Bu seçeneğin bir etkiye sahip olma [dynamıcbase](dynamicbase.md) seçeneği de ayarlanması gerekir.
+Varsayılan olarak, bağlayıcı 64 bitlik yürütülebilir görüntüler için **/highentropyva** 'yı mümkün bir şekilde sunar. Bu seçenek, 64 bit görüntüler için varsayılan olarak da etkinleştirilen [/LARGEADDRESSAWARE](largeaddressaware.md)gerektirir. **/Highentropyva** , seçeneğin yoksayıldığı 32 bitlik yürütülebilir görüntüler için geçerli değildir. Bu seçeneği açıkça devre dışı bırakmak için **/highentropyva: No**komutunu kullanın. Bu seçeneğin bir etkisi olması için [/DynamicBase](dynamicbase.md) seçeneğinin de ayarlanmış olması gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [EDITBIN Seçenekleri](editbin-options.md)
+- [EDITBIN seçenekleri](editbin-options.md)
 - [/DYNAMICBASE](dynamicbase.md)
-- [ISV yazılım güvenlik Savunmaları Windows](https://msdn.microsoft.com/library/bb430720.aspx)
+- [Windows ISV yazılım güvenliği savunmaları](https://docs.microsoft.com/previous-versions/bb430720(v=msdn.10))
